@@ -1,0 +1,14 @@
+
+{{ range . }}
+{{ $color := .color | default "white" }}
+<a class="btn text-light" style="background-color: {{ .color }}">
+    {{ with .icon }}
+    <span class="icon">
+      <i class="{{ . }}"></i>
+    </span>
+    {{ end }}
+    {{ with .name }}
+      {{ . }}
+    {{ end }}
+  </a>
+{{ end }}

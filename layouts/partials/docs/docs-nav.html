@@ -1,0 +1,7 @@
+{{ $hastoc := .Params.toc }}
+{{ $toc := .TableOfContents }}
+
+<p> On this page:</p>
+{{ if ($hastoc) }}
+  {{ $toc }}
+{{ end }}

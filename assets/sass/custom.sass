@@ -1,0 +1,100 @@
+// Custom.scss
+@charset "utf-8"
+
+{{ $extraColors := site.Params.colors.extra }}
+{{ $fontAwesomeVersion := site.Params.font_awesome_version }}
+{{ $fonts := site.Params.fonts }}
+
+{{ with $fontAwesomeVersion }}
+{{ $fontAwesomeUrl := printf "https://use.fontawesome.com/releases/v%s/css/all.css" . }}
+@import url("{{ $fontAwesomeUrl }}")
+{{ end }}
+
+{{ if $fonts }}
+{{ $fontSlice := (slice) }}
+{{ range $fonts }}
+{{ $fontSlice = $fontSlice | append (printf "%s:%s" (replace .name " " "+") (delimit .sizes ",")) }}
+{{ end }}
+{{ $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
+@import url("{{ $fontsUrl }}")
+{{ end }}
+
+
+// Required
+@import "bootstrap/scss/functions" 
+@import "bootstrap/scss/variables" 
+@import "bootstrap/scss/mixins" 
+@import "bootstrap/scss/root" 
+
+//Optional
+@import "bootstrap/scss/reboot" 
+@import "bootstrap/scss/type" 
+@import "bootstrap/scss/images" 
+@import "bootstrap/scss/code" 
+@import "bootstrap/scss/grid" 
+@import "bootstrap/scss/tables" 
+@import "bootstrap/scss/forms" 
+@import "bootstrap/scss/buttons" 
+@import "bootstrap/scss/transitions" 
+@import "bootstrap/scss/dropdown" 
+//@import "bootstrap/scss/button-group" 
+//@import "bootstrap/scss/input-group" 
+//@import "bootstrap/scss/custom-forms" 
+@import "bootstrap/scss/nav" 
+@import "bootstrap/scss/navbar" 
+//@import "bootstrap/scss/card" 
+//@import "bootstrap/scss/breadcrumb" 
+//@import "bootstrap/scss/pagination" 
+//@import "bootstrap/scss/badge" 
+@import "bootstrap/scss/jumbotron" 
+//@import "bootstrap/scss/alert" 
+//@import "bootstrap/scss/progress" 
+//@import "bootstrap/scss/media" 
+//@import "bootstrap/scss/list-group" 
+//@import "bootstrap/scss/close" 
+//@import "bootstrap/scss/toasts" 
+//@import "bootstrap/scss/modal" 
+//@import "bootstrap/scss/tooltip" 
+//@import "bootstrap/scss/popover" 
+//@import "bootstrap/scss/carousel" 
+//@import "bootstrap/scss/spinners" 
+@import "bootstrap/scss/utilities" 
+//@import "bootstrap/scss/print" 
+
+
+// Custom
+
+$font-family-headers: "Fira Sans" 
+
+.breadcrumb 
+  li
+    list-style: none
+    display: inline
+  ul
+    padding-left: 0
+
+.hashlink 
+  font-size: smaller !important
+
+.highlight pre 
+  padding: 0.5rem
+  border-radius: 5px 
+
+.content 
+  table 
+    @extend .table
+ 
+  img 
+    @extend .img-fluid
+
+h1, h2, h3, h4, h5, h6 
+  font-family: $font-family-headers
+  scroll-margin-top: 5rem
+  margin-top: 1.8rem
+
+nav 
+  ul 
+    list-style-type: none
+    padding-left: 0
+    ul
+      padding-left: 1.5rem

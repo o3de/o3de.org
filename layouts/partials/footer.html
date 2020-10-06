@@ -1,0 +1,10 @@
+{{ with site.Copyright }}
+{{ $year := now.Year }}
+<footer class="footer">
+  <div class="container">
+    <p>
+      &copy; {{ $year }} {{ . }}
+    </p>
+  </div>
+</footer>
+{{ end }}
