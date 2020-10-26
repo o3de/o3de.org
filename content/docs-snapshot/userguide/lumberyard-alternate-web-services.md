@@ -1,0 +1,3 @@
+# Alternate Web Services<a name="lumberyard-alternate-web-services"></a>
+
+For purposes of the [Lumberyard Service Terms](http://aws.amazon.com/service-terms/), "Alternate Web Service" means any non\-AWS compute, database, storage, or container service that is similar to or can act as a replacement for the following services: Amazon EC2, Amazon Lambda, Amazon DynamoDB, Amazon RDS, Amazon S3, Amazon EBS, Amazon EC2 Container Service, or Amazon GameLift\.

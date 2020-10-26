@@ -1,0 +1,7 @@
+# Shader Rendering Pipeline<a name="mat-shaders-custom-dev-pipeline"></a>
+
+Lumberyard has a fixed rendering pipeline that is set up in the renderer code\. Lumberyard is almost fully deferred and only does forward for hair, eyes, glass, transparencies, and water reflections\. Lumberyard makes use of two elements: effects that define parameterized shader code, and materials that customize the shader parameters for a specific mesh\.
+
+First, Lumberyard fills the off\-screen buffers like reflection buffers and shadow maps\. After that, it writes the scene depth to the frame buffer and additionally to a render target\. Having access to scene depth is essential for some subsequent rendering steps like screen space ambient occlusion or fog rendering\. After the depth is written, Lumberyard does the forward lighting\. The shadow contributions are written in a separate step to a texture that combines the shadowing result from several light sources \(deferred shadowing\)\. Finally, translucent objects are drawn in a back\-to\-front order\.
+
+When Lumberyard tries to render an object it will first check if a compiled shader is available\. If the shader is not available, Lumberyard will try to load it from the global shader cache\. If the shader cannot be found in the cache, the rendering thread will issue a request to stream the shader in from disk and will block until the streaming load is complete\. This can cause severe stalls due to the relatively long time needed load data from disk\.

@@ -1,0 +1,5 @@
+# Cloud Canvas Gem<a name="gems-system-gem-aws"></a>
+
+The Cloud Canvas Gem enables you to use Cloud Canvas visual scripting to AWS services\. With Cloud Canvas you can build connected game features that use Amazon DynamoDB \(DynamoDB\), Amazon Lambda, Amazon Simple Storage Service \(Amazon S3\), Amazon Cognito, Amazon Simple Notification Service \(Amazon SNS\), and Amazon Simple Queue Service \(Amazon SQS\)\. You can also create cloud\-hosted features such as daily gifts, in\-game messages, leaderboards, notifications, server\-side combat resolution, and asynchronous multiplayer gameplay \(e\.g\. card games, word games, ghost racers, etc\.\)\. Cloud Canvas eliminates the need for you to acquire, configure, or operate host servers yourself, and reduces or eliminates the need to write server code for your connected gameplay features\.
+
+AWS services accessed via Cloud Canvas may be subject to separate charges and additional terms\. For more information, see [Implementing Connected Features with Cloud Canvas](cloud-canvas-intro.md)\.

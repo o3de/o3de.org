@@ -1,0 +1,7 @@
+# Task Manager<a name="network-replicas-manager-task-manager"></a>
+
+The replica manager holds two task manager instances: one for updating and one for marshaling replicas\. Updating tasks are executed within the replica manager's `UpdateFromReplica` step, while marshaling tasks are executed in the `Marshal` step\. Tasks can execute other tasks while running\. `TaskManager::Add` queues the tasks in an ordered list\. `TaskManager::Wait` executes a task and waits until it finishes\. When an event fires in the replica system, replica manager adds the corresponding task into `TaskSystem`\.
+
+Here are few examples of this behavior:
++ A user changes a dataset's value within a replica\. The change needs to be marshaled to other peers\. The `OnReplicaChanged` event is called on `ReplicaManager`, and `ReplicaMarshalTask` is queued for execution\. Because replicas must be sent in the order of their creation, the task's priority is based on the replica's creation time\. The queued task is executed at the appropriate time within the `Marshal` step\.
++ A new proxy replica is unmarshaled\. When this happens, `OnReplicaUnmarshaled()` is called and `ReplicaUpdateTask` is queued\. This task's priority is always zero because the order of execution is not important\. `UpdateFromReplica` is called to notify the user of the new replica's data\.
