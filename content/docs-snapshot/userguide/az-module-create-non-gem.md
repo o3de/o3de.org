@@ -1,7 +1,11 @@
 # Creating an AZ Module That Is Not a Gem<a name="az-module-create-non-gem"></a>
 
+
 ****  
-AZ modules are in preview release and subject to change\. 
+
+|  | 
+| --- |
+| AZ modules are in preview release and subject to change\.  | 
 
 Beginning with Lumberyard 1\.5, gems are AZ modules, so the preferred way to build an AZ module is to simply create a new gem\. However, if your project requires an AZ module that must not be built as a gem, follow the steps provided here\.
 

@@ -1,7 +1,11 @@
 # Cloud Gem Framework<a name="cloud-canvas-cloud-gem-framework-intro"></a>
 
+
 ****  
-The Cloud Gem Framework and this documentation are in preview release and are subject to change\. More topics are planned\.
+
+|  | 
+| --- |
+| The Cloud Gem Framework and this documentation are in preview release and are subject to change\. More topics are planned\. | 
 
 The Lumberyard Cloud Gem Framework makes it easy to build popular cloud\-connected features, such as dynamic content, leaderboards, and daily messages\. The Cloud Gem Framework has two components:
 + **Cloud Gem Portal** – A web application for visually managing and administering your cloud features \(like scheduling messages, releasing dynamic content, or deleting a fraudulent leaderboard score\)

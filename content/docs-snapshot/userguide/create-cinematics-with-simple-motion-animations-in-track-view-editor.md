@@ -90,7 +90,9 @@ The **Blend In Time** and **Blend Out Time** parameters affect the bone weight t
    1. For **Motion**, click the folder icon and specify the next motion, such as the `jack_strafe_run_forwards.motion` file\.
 
    1. Specify the parameters that you want, such as the **Start Time** and **End Time**\. For **Blend In Time**, enter `0.33`\. This allows enough time to overlap with the previous motion\.  
-**Example**    
+**Example**  
+
+     
 ![\[Key properties for the second motion for blending.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-track-view-simple-motion-component-8.png)
 
 1. Select and drag the second key so that overlaps with the first motion track\. 

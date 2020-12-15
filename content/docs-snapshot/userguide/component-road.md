@@ -16,6 +16,8 @@ The **Road** requires the **[Spline](component-spline.md)** component to shape i
 **Note**  
 You can rebuild roads at runtime by modifying the spline\. However, this method can be slow\. We recommended that you avoid modifying the spline continuously at runtime\.
 
+
+
 **Topics**
 + [Road Properties](#road-properties)
 + [Creating a Road](#creating-a-road)

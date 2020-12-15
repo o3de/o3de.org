@@ -1,5 +1,10 @@
 # Get started with Amazon Lumberyard<a name="wg-getstarted"></a>
 
+
+|  | 
+| --- |
+|  This **Get started** guide is a work in progress and is undergoing continual improvement\. Please leave feedback using the **Feedback** link at the top of the web page\. More tutorials are coming soon\!  | 
+
 Often times, the best way to learn is *to do*\. Amazon Lumberyard was designed and created to help you make games, not read docs, so let’s make your first game\!
 
 We’ve designed a very simple game that can be built in a few hours with Amazon Lumberyard\. As you work through the tutorials in order, you’ll learn about the different features and workflows in Lumberyard, and build comfort with the Lumberyard Editor interface\.
@@ -14,13 +19,13 @@ If you don’t want to read at all, check out [the video playlist for this tutor
 Have you installed and configured Amazon Lumberyard yet? Nope?
 
 To get started "getting started", you will need the following on your local computer:
-+ Amazon Lumberyard 1\.26 or greater
++ Amazon Lumberyard 1\.27 or greater
 + Visual Studio 2017 \(version 15\.9\.27\+\) or 2019 \(version 16\.7\.3\+\), including the Community Edition
 + The **WelcomeGuideTutorials** game project\.
 + A basic understanding of the concepts used in developing 3D games
 
 **Important**  
-We’ve provided a Lumberyard project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.0\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.0.zip) 
+We’ve provided a Lumberyard project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) 
 
 Need some help setting up Lumberyard for the first time? [Start here\!](wg-install.md) 
 
@@ -32,18 +37,18 @@ Are you good? If so, let’s go over the basic bits we provide you to get starte
 
 ## Assets<a name="getstarted-bits"></a>
 
-We’ve provided a small project game containing assets for this tutorial series\. Assets include meshes, textures, scripts, and complete levels for the end of each chapter\.
+We’ve provided a small project game containing assets for this tutorial series\. Assets include meshes, textures, scripts, and complete levels for the end of each tutorial chapter\.
 
-The asset package [WelcomeGuideTutorials\-v1\.0\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.0.zip) contains the following directories \(among others\):
-+ \\WelcomeGuideTutorials \(root\)
-  + \\Actors — Contains the `.fbx` and `.mtl` files for the "chicken" asset\. The `.fbx` files contain meshes and a skeleton\. The `.mtl` files are material files containing surface properties that define the look of the chicken\.
-  + \\InputBindings — Contains the input configuration files for the tutorial game\.
-  + \\Levels — Contains the data for each chapter’s level configuration\.
-  + \\ScriptCanvas — Contains the scripts you’ll work with for each chapter\.
-  + \\Slices — Contains the assembled slices \(prefabs\) for the chicken and other assets used in the tutorials\.
-  + \\Textures — Contains the texture images used in the tutorials\.
+The asset package [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) contains the following directories \(among others\):
++  `\WelcomeGuideTutorials` \(root\)
+  +  `\Actors` — Contains the `.fbx` and `.mtl` files for the "chicken" asset\. The `.fbx` files contain meshes and a skeleton\. The `.mtl` files are material files containing surface properties that define the look of the chicken\.
+  +  `\InputBindings` — Contains the input configuration files for the tutorial game\.
+  +  `\Levels` — Contains the data for each chapter’s level configuration\.
+  +  `\ScriptCanvas` — Contains the scripts you’ll work with for each chapter\.
+  +  `\Slices` — Contains the assembled slices \(prefabs\) for the chicken and other assets used in the tutorials\.
+  +  `\Textures` — Contains the texture images used in the tutorials\.
 
-Open the ZIP file and place the contents in under the \\dev directory in your Amazon Lumberyard installation path\. \(For example, C:\\Program Files\\Amazon Lumberyard\\dev\.\) We provided levels for each "chapter" of the larger tutorial series, so you can just pick a chapter you’re interested in, load the *final* level for the preceding chapter, and start there\. Or, you can start from chapter 1 and build each level on your own\. Your time; your call\!
+Open the ZIP file and place the folder and its contents under the \\dev directory in your Amazon Lumberyard installation path\. \(For example, C:\\Program Files\\Amazon Lumberyard\\dev\.\) We provided levels for each "chapter" of the larger tutorial series, so you can just pick a chapter you’re interested in, load the *final* level for the preceding chapter, and start there\. Or, you can start from chapter 1 and build each level on your own\. Your time; your call\!
 
 ## About the tutorial game<a name="about-the-tutorial-game"></a>
 
@@ -66,4 +71,4 @@ In this series of tutorials, you’ll develop a game we called "Flyin' the Coop"
 |   [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md)   |  Learn how to create a simple 3rd person follow camera for the player character\.  | 
 |   [Tutorial Seven: Create terrain](tutor-ch07-create-terrain.md)   |  Learn how to create more detailed terrain in your level\.  | 
 |   [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md)   |  Learn how to create props for you level with White Box meshes and *dynamic slices*\.  | 
-|   [Tutorial Nine: Package and build a release](tutor-ch09-build-and-release.md)   |  Learn how to export your level and create a stand\-alone package of your game\.  | 
+|   [Final step: Package and release a build](tutor-final-package-distribute.md)   |  Learn how to export your level and create a stand\-alone package of your game\.  | 

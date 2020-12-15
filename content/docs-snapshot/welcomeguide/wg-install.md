@@ -1,8 +1,6 @@
 # Installing Amazon Lumberyard<a name="wg-install"></a>
 
-Use the download link below to get the latest **Lumberyard Installer** application\.
-
-![\[download button\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/download-button.png)
+Download the latest [Lumberyard Installer](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)\.
 
 ## Run the Lumberyard installer<a name="lumberyard-installer"></a>
 
@@ -21,17 +19,17 @@ The installer displays an **Installation Successfully Completed** message\. Clic
 
  `LumberyardInstaller.exe` creates shortcuts on the desktop and in the Start Menu for three applications:
 
- [Configuring your Amazon Lumberyard environment with Setup Assistant](wg-setup-assistant.md)   
+ [Setup Assistant](wg-setup-assistant.md)   
 + Setup Assistant configures Lumberyard’s environment according to your development needs, and downloads and installs additional software and SDKS\. You can use Setup Assistant at any time to add development features to your Lumberyard environment\.
 
   SetupAssistant\.exe is located in `lumberyard_version\dev\Tools\LmbrSetup\Win`\.
 
- [Manage Lumberyard projects with Project Configurator](wg-project-configurator.md)   
+ [Project Configurator](wg-project-configurator.md)   
 + With Project Configurator, you create, configure, set, and build projects\. When you run Project Configurator for the first time, you see several sample projects that are available to help you learn Lumberyard’s features\.
 
   ProjectConfigurator\.exe is located in `lumberyard_version` `\dev\Bin64vc141_or_vc142`\.
 
- [Introduction to the Lumberyard Editor](wg-editor.md)   
+ [Lumberyard Editor](wg-editor.md)   
 + Lumberyard Editor is Lumberyard’s core application\. In Lumberyard Editor, you create levels, assets, and interactions for your projects\.
 
   Editor\.exe is located in `lumberyard_version` `\dev\Bin64vc141_or_vc142`\.

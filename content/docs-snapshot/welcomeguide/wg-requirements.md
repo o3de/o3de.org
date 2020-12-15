@@ -7,12 +7,15 @@ Lumberyard has a minimum set of system requirements for development, as outlined
 If your system is capable of running a modern real\-time 3D game with good performance you should be set, however, review these detailed requirements to be certain\.
 
 Lumberyard requires Windows 10\.
+
+Minimum hardware requirements include the following:
 + 3 GHz quad\-core processor
 + 8 GB RAM
 + 2 GB VRAM DirectX 11 or later compatible video card
   + NVIDIA GeForce GTX 660 Ti with driver version 368\.81 or later
   + AMD Radeon HD 8730M with driver version 16\.15\.2211 or later
 + 60 GB of free disk space
++ 1366 x 768 px screen resolution
 
 **Note**  
 If you select options to build the engine, editor, or tools in **Setup Assistant**, 14 GB RAM is required for compilation\.  
@@ -21,9 +24,9 @@ Required free disk space is dependent on the options that you select when instal
 
 ## Prerequisites<a name="development-environment"></a>
 
-You can use the Lumberyard Editor and tools without installing additional software\. To create new projects or use advanced development features in Lumberyard, you need a developer environment\. One of the following versions of Microsoft Visual Studio is required:
-+ Microsoft Visual Studio 2019 version **16\.2\.4** or later\.
-+ Microsoft Visual Studio 2017 version **15\.9\.14** or later\.
+You can use the Lumberyard Editor and tools without installing additional software\. To create new projects or use advanced development features in Lumberyard, you need a developer environment that includes Microsoft Visual Studio\. The following versions are supported:
++ \(Recommended\) Microsoft Visual Studio 2019 version **16\.2\.4** thru version **16\.8\.x**\.
++ Microsoft Visual Studio 2017 version **15\.9\.14** thru version **15\.9\.x**\.
 
 Microsoft offers Visual Studio Community edition free to individual developers\. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal\.
 
@@ -39,10 +42,11 @@ The default Visual Studio installation might not include all of the features tha
    + Select **Game development with C\+\+**\.
      + In the **Installation details** panel on the right, select at least one **Windows 10 SDK**\.
    + Select **Desktop development with C\+\+**\.
-     + On the **Individual components** tab, under **Compilers, build tools, and runtime**, make sure that a **VC\+\+ toolset** that corresponds to the installed version of Visual Studio has been selected:
-   +  **Visual Studio 2017**: Select at least one version of the **VC\+\+ 2017 toolset**\.
-   +  **Visual Studio 2019**: Select at least one version of the **MSVC v142 \- VS 2019 C\+\+ x64/x86 build tool**\.
-     + \(Optional\) To build with the Visual Studio 2017 toolset, select **MSVC v141 \- VS 2017 C\+\+ x64/x86 build tools**\.
+
+1.  On the **Individual components** tab, under **Compilers, build tools, and runtime**, make sure that a **VC\+\+ toolset** that corresponds to the installed version of Visual Studio has been selected: 
+   + If using **Visual Studio 2017**: Select at least one version of the **VC\+\+ 2017 toolset**\.
+   + If using **Visual Studio 2019**: Select at least one version of the **MSVC v142 \- VS 2019 C\+\+ x64/x86 build tool**\.
+     + \(Optional\) To build with the Visual Studio 2017 toolset in Visual Studio 2019, select **MSVC v141 \- VS 2017 C\+\+ x64/x86 build tools**\.
 
 ## Visual C\+\+ redistributable packages<a name="visual-studio-redistributable-requirements"></a>
 

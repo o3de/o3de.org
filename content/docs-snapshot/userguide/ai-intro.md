@@ -9,3 +9,4 @@ The selection strip at the bottom of Lumberyard Editor features controls to enab
 For information on AI Navigation, see [Navigation](component-navigation.md)\.
 
 For information on AI Behavior Tree, see [Behavior Tree](component-behavior-tree.md)\.
+

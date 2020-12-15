@@ -215,6 +215,7 @@ Next, set up the manipulator for the component\.
    m_pointMaxDistanceManipulator = AzToolsFramework::LinearManipulator::MakeShared>(worldFromLocal);
    ```
 **Note**  
+  
 The naming `worldFromLocal` is chosen to indicate how this transform is modifying a position\. For example, if you have a position in the local space of the entity, this transform takes it from local to world space\. The naming style helps debug the multiplication order of transforms and vectors\. Lumberyard uses column major ordering, which is a matrix multiplication that occurs right to left\.  
 For example, if you have the vector, `localPosition` and the transform `worldFromLocal`, multiplying `worldFromLocal` \* `localPosition` has the correct output because the `local` identifiers are next to each other\. This transforms the `localPosition` to its position in world space\.
 

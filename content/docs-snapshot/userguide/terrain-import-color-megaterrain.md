@@ -7,6 +7,8 @@ Although you can import data for individual tiles, a more common workflow is to 
 **Note**  
 Lumberyard doesn't match or fix tile edges\. Ensure that your tile data is authored so that adjacent tile edges match\. Otherwise, your level may render with visible seams\. Lumberyard supports the BMP image file type only for megatexture terrains\.
 
+
+
 **To import a megaterrain texture**
 
 1. In Lumberyard Editor, choose **Tools**, **Terrain Editor**\.

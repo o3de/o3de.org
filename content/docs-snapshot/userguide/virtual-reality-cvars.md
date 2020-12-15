@@ -7,6 +7,8 @@ You must set the following console variable to enable your project's capability 
 **output\_to\_hmd = 1**  
 Enables output to head\-mounted display \(HMD\)\. Allows users to toggle stereoscopic output while playing the game\. With this variable enabled, the height and width resolution for the connected headset is detected and set automatically\.
 
+
+
 Set the following console variables to 0 in order to turn them off\. These features are either unnecessary for virtual reality or too resource\-intensive for a virtual reality environment\.
 
 **r\_DepthOfField = 0**  

@@ -6,6 +6,8 @@ The following conventions apply when working with slices in the **UI Editor**:
 + If you select an entity that is part of a slice instance, the **Properties** pane highlights in orange any properties that are different between the selected entity and the slice to which it belongs\.
 + A UI slice can't contain references to any entities not within the slice\. A UI slice can only contain reference to entities within the slice\.
 
+
+
 In the **Hierarchy** pane, elements that are part of a slice appear in blue\. Elements that appear in bold blue indicate that the element is the root of the slice\. Within the slice's root, elements that appear in italic indicate a child slice\.
 
 **Example**  

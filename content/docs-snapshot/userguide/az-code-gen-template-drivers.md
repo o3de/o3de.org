@@ -1,7 +1,11 @@
 # Template Drivers<a name="az-code-gen-template-drivers"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 Template drivers are Python scripts that process the intermediate JSON data and route it into the Jinja2 output templates\. The scripts preprocess the data from the Clang front end, execute the template rendering, and control where the generated output is written to disk\.
 

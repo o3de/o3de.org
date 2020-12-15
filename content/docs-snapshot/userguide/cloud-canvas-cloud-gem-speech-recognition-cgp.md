@@ -1,7 +1,11 @@
 # Speech Recognition Cloud Gem Portal \(Preview\)<a name="cloud-canvas-cloud-gem-speech-recognition-cgp"></a>
 
+
 ****  
-This feature is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| This feature is in preview release and is subject to change\. | 
 
 You can use the Speech Recognition Cloud Gem Portal to import, export, and publish Amazon Lex bots\. For information about bots, see [Speech Recognition Cloud Gem](cloud-canvas-cloud-gem-speech-recognition-intro.md)\.
 

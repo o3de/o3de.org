@@ -1,7 +1,11 @@
 # Code Generation Templates<a name="az-code-gen-templates"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine for Python to render its output\. The Jinja template engine outputs plain text with embedded variable and logic statements\.
 

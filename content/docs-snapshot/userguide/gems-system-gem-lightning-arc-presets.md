@@ -12,6 +12,8 @@ You can customize your lightning arc entity using the presets in the `lightninga
 
    For example, enter **ExtendedArc** or **KickSparks**, which are existing names of presets as shown in the following `lightningarceffects.xml` file\. This sample shows only the partial contents; open the file on your computer to view the full contents of the file\.
 
+   
+
    ```
       <LightningArc>
    
@@ -84,6 +86,8 @@ You can customize your lightning arc entity using the presets in the `lightninga
 1. Replace the **Arc name** with your own custom preset name, then modify the following parameters to fit your needs\.
 
 The following table lists definitions for the parameters in the `lightningarceffects.xml` file\.
+
+ 
 
 
 **Lightning Arc Entity Properties**  

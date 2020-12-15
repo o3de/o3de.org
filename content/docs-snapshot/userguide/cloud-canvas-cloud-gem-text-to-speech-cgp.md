@@ -78,7 +78,9 @@ After you create a character, you can edit it with the following steps\.
 
    1. Use the **Advanced Settings** dialog box to adjust the **Volume**, **Rate**, **Pitch**, and **Timbre** of the voice\. 
 
-   1. Use the **Language Override** option to override the **Native Language** setting and have the character speak with a rendered accent\.   
+   1. Use the **Language Override** option to override the **Native Language** setting and have the character speak with a rendered accent\. 
+
+     
 ![\[Advanced settings for changing a character's voice in the Cloud Gem Portal.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-5-new.png)
 
 Now you are ready to add a speech line to give the character something to say\.

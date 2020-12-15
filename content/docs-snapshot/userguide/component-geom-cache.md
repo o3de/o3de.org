@@ -16,6 +16,8 @@ The **Geometry Cache** component renders mesh data and can play vertex\-based an
 Use the following parameters to customize your geometry cache\.
 
 
+
+
 **Geom Cache Parameters**  
 
 | Parameter | Description | 

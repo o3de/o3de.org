@@ -34,21 +34,22 @@ With **Custom Install**, you specify how you would like to use Lumberyard\. Setu
    +  **Compile the Lumberyard Editor and tools**\* \- Select this option if you intend to make changes to Lumberyard Editor or other tools\.
    +  **Compile for Android devices**\*
    +  **Setup for Linux Dedicated Server**\*
-
 **Note**  
 If you select any of these options, you might need to perform additional tasks, such as installing Microsoft Visual Studio and installing additional required SDKs\. These tasks display on the **Install software** and **Install required SDKs** pages\.
 
-Select **Visual Studio 2017**, **Visual Studio 2019**, or both\.
-
+1.  Select **Visual Studio 2017** or **Visual Studio 2019**\. 
+**Note**  
+We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.
 **Important**  
 The version\(s\) of Visual Studio selected here will be enabled as build platforms, and Visual Studio Solutions will be generated\.
-+ Once you are satisfied with your selections, choose **Next** to install required software and SDKs\.
 
-  1.  The **Install software** and **Install required SDKs** pages display a red icon if a requirement cannot be found and a green checkmark for installed requirements\. Missing optional software and SDKs display a yellow icon\. Follow the instructions on each page to install the required software and SDKS\.   
+1.  Once you are satisfied with your selections, choose **Next** to install required software and SDKs\. 
+
+1.  The **Install software** and **Install required SDKs** pages display a red icon if a requirement cannot be found and a green checkmark for installed requirements\. Missing optional software and SDKs display a yellow icon\. Follow the instructions on each page to install the required software and SDKS\.   
 ![\[Lumberyard Setup Assistant install required sdks.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-sa-install-sdks-1.23.png)
 **Note**  
 Ensure the **Third\-party path** on the **Install required SDKs** page is correct for your Lumberyard installation\.
 
-  1.  Install desired *optional* software and SDKs on the **Install software**, **Install optional SDKs**, and **Install plugins** pages by following the instructions on each page\. 
+1.  Install desired *optional* software and SDKs on the **Install software**, **Install optional SDKs**, and **Install plugins** pages by following the instructions on each page\. 
 
-  1.  When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you’d like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. 
+1.  When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you’d like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. 

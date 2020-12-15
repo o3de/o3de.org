@@ -75,9 +75,14 @@ Begin this tutorial either with the level you created in [Tutorial Seven: Create
 1.  Click and drag on the top and side of the `fence_section1` slice to create a wall that is 3 units high and 5 units long\. The checkerboard texture can be used to size the white box mesh\. Each square in the texture is a half unit\.   
 ![\[Lumberyard edit a white box mesh\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/anim-wb-edit-mesh-instance-2-1.26.gif)
 
+**Tip**  
+To make more precise modifications, enable the **Snap To Grid** button in the **Lumberyard Editor** and set the snap grid value to 1\.0\. Then enter White Box edit mode and extrude by 1 unit measurements\.
+
 1.  In **Entity Inspector**, in the **White Box** component, choose **Done** to exit White Box edit mode\. 
 
 1.  Select either fence section slice and use the move tool \(**2** key\) and the rotate tool \(**3** key\) to position the fence sections at a slight angle and overlapping each other a bit\.   
 ![\[Lumberyard use transform tools to arrange fence section slices\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-arrange-fence-slices-1.26.png)
 
 If you press the **Play** button, or **Control \+ G**, to enter play mode, the chicken will be able to jump over the fence if you press jump repeatedly\. For extra credit, see if you can limit the number of times the player can press jump to prevent the chicken from clearing the fence\. Hint: use the **Get Tick Delta Time** node to create a timer\.
+
+When you’re ready, try [Tutorial Nine: Add sound effects and background audio](tutor-ch09-sound-effects-and-background-audio.md)\.

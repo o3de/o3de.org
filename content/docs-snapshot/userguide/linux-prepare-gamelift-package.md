@@ -39,7 +39,7 @@ Before packaging and pushing your GameLift server, make sure that you complete t
        --region us-west-2
    ```
 **Note**  
- If you want your servers to be hosted in a different AWS Region, replace the `us-west-2` argument value with the appropriate [region identifier](https://docs.aws.amazon.com/https://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region)\. 
+ If you want your servers to be hosted in a different AWS Region, replace the `us-west-2` argument value with the appropriate [region identifier](https://docs.aws.amazon.com/general/latest/gr/rande.html)\. 
 
 ## Next steps<a name="linux-prepare-gamelift-package-next-steps"></a>
 

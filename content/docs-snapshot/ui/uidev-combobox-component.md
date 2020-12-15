@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI combobox component<a name="uidev-combobox-component"></a>
 
 Use comboboxes to offer users a list of options from a dropdown menu\. You define whether or not the input box is editable\. An editable input box allows the user to type in a value *or* select a value from the dropdown menu\.

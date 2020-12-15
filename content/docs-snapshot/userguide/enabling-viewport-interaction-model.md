@@ -14,6 +14,6 @@ By default, the Viewport Interaction Model isn't enabled for the editor\. You ca
 
 1. In the viewport, select an entity\. A manipulator appears on the entity\. The entity is locked for editing\. If you click another entity in the viewport, the first entity remains selected\.
 
-   The following are shortcuts to select and deselect entities\.<a name="group-selection-shortcuts"></a>  
+   Use the following shortcuts on a selected entity\.<a name="group-selection-shortcuts"></a>  
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/enabling-viewport-interaction-model.html)

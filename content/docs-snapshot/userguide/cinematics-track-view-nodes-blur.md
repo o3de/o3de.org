@@ -12,6 +12,8 @@ You can use the **Radial Blur** node to blur the animation radially outward from
 
 1.  Double\-click the green marker, and under **Key Properties**, enter a value for **Value**\.
 
+ 
+
 
 **Radial Blur Node Key Properties**  
 

@@ -15,6 +15,8 @@ Lumberyard includes the following physically\-based rendering \(PBR\) shaders, w
 **Note**  
 Some shader parameters become available \(are visible\) only if an associated shader generation parameter is first enabled\. This is also true for certain texture map slots \(file paths\) under **Texture Maps**\. 
 
+ 
+
 
 ****  
 

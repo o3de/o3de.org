@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI spinbox component<a name="uidev-spinbox-component"></a>
 
 Use a spinbox as a number edit component to enable users to use a variety of controls to "spin" up or down a numeric value in an input box\. The value is changed by the amount specified in the step value\.

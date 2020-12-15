@@ -8,6 +8,8 @@ You can configure the properties for the lightning arc entity to make the lightn
 
 1. Beneath [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html) and **Entity Properties**, select or clear check boxes for the preferred effects\.
 
+ 
+
 
 **Lightning Arc Entity Properties**  
 

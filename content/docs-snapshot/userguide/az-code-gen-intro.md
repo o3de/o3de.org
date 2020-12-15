@@ -1,7 +1,11 @@
 # Automating boilerplate with AZ Code Generator<a name="az-code-gen-intro"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 AZ Code Generator is a command line utility that generates source code \(or any data or text\) from specially tagged source code\. You can use it when the structure of the intended code is known in advance so that templates can be made for it\. For example, you could generate boilerplate code for serialization or reflection\. 
 

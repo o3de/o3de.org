@@ -20,7 +20,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 ## PhysX Ragdoll Component Properties<a name="physx-ragdoll-component-properties"></a>
 
-![\[PhysX Ragdoll component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/physx-ragdoll-component-properties.png)
+![\[PhysX Ragdoll component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
 
 
 ****  

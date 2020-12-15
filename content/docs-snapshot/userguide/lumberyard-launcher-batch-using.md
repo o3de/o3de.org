@@ -20,6 +20,8 @@ You can also use the batch file to create, enable, and disable capabilities, and
 
 ## Commands<a name="lumberyard-launcher-batch-commands"></a>
 
+ 
+
 
 ****  
 

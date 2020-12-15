@@ -1,7 +1,11 @@
 # Input Management Framework Gem<a name="gems-system-gem-input"></a>
 
+
 ****  
- The Input Management Framework Gem is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\. 
+
+|  | 
+| --- |
+|  The Input Management Framework Gem is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
 The Input Management Framework gem provides a framework for managing cross\-platform game input such as keyboard, controller, and touch in Lumberyard with the component entity system\. 
 

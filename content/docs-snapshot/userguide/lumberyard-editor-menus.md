@@ -233,6 +233,8 @@ In the **Prefabs** menu, you can modify CryEntities defined in the prefab librar
 **Note**  
 We recommend that you use slices instead\. For more information, see [Working with Slices](component-slices.md)\.
 
+
+
 ![\[Lumberyard Editor Prefabs submenu of the Game menu.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-menusgame-prefabs.png)
 
 
@@ -380,7 +382,7 @@ In the **Help** menu, you can search the Lumberyard documentation, open Lumberya
 | Search documentation | Type keywords to search the Lumberyard documentation\. | 
 | Getting Started | Open the [Amazon Lumberyard Getting Started Guide](https://docs.aws.amazon.com/lumberyard/latest/gettingstartedguide/)\. | 
 | Tutorials | Open the Amazon GameDev Tutorials website to view written and video tutorials\. | 
-| Documentation |  Select the following documentation:  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html)  | 
+| Documentation |  Select the following documentation:  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html)   | 
 | GameDev Resources |  Select the following resources:  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html)  | 
 | Give Us Feedback | Send feedback to the Lumberyard email alias\. | 
 | About Lumberyard | View copyright, build, and version information for Lumberyard Editor\. | 

@@ -85,4 +85,4 @@ For more information, see [Working with Slices](component-slices.md)\.
 **Virtual File System \(VFS\)**  
 This system is designed for non\-PC platforms to handle game assets for live reloading\. The virtual file system streams and loads your assets from your development machine as needed\. You do not have to load your entire level or game to the device ahead of time and you can avoid deploying assets to a target device\. When you make a change on your development machine, live reloading automatically updates the asset in Lumberyard Editor and for the target device\.  
 For example, if you want to run your game on an iOS device and you change an asset, Asset Processor uses the virtual file system to stream the updated asset from your development machine to the iOS device\.   
-For more information, see [Live Reloading and VFS](asset-pipeline-live-reloading.md) and [Using the Virtual File System](using-the-virtual-filing-system-vfs.md)\.
+For more information, see [Live Reloading and VFS](asset-pipeline-live-reloading.md) and [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs)\.

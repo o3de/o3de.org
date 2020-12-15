@@ -1,7 +1,11 @@
 # Managing Slot Types<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types"></a>
 
+
 ****  
-This feature is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| This feature is in preview release and is subject to change\. | 
 
 You can use the **Slot Types** tab on the main Speech Recognition page to create and manage slot types\. 
 

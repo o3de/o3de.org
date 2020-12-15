@@ -10,6 +10,8 @@ Use the **Comment** node to add comments to your track view sequence\. This is m
 
 1. To position a key, double\-click the preferred location on its highlighted row in the timeline\. Double\-click the green marker, and then under **Key Properties** enter a value for **Value**\.
 
+ 
+
 
 **Comment Node Key Properties**  
 

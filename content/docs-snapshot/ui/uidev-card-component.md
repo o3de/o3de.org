@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI card component<a name="uidev-card-component"></a>
 
 Use cards to display information in highly interactive, flexible containers\. Users can easily stack, reorder, and collapse these containers\. All content within a card should relate to only one idea\. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class\.

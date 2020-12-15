@@ -1,7 +1,11 @@
 # Managing Intents<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents"></a>
 
+
 ****  
-This feature is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| This feature is in preview release and is subject to change\. | 
 
 Use the **Intents** tab on the **Speech Recognition** page to create and manage intents\. The intents that you create here must be manually added to the bots for which you want to use the intents\.
 

@@ -7,4 +7,4 @@ Use the Scene Processing gem to specify the default settings for processing scen
 **Note**  
 The Scene Processing gem is required and enabled by default for Lumberyard projects\.
 
-For information about working with file types and settings, see [FBX Soft Naming Conventions](char-fbx-importer-soft-naming.md)\.
+For information about working with file types and settings, see [Customize FBX asset export with FBX Settings](fbx-intro.md)\.

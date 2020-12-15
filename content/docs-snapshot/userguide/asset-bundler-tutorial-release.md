@@ -1,12 +1,5 @@
 # Build and bundle assets for release in Lumberyard<a name="asset-bundler-tutorial-release"></a>
 
-
-****  
-
-|  | 
-| --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of Lumberyard 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  | 
-
  This tutorial guides you through the process of building the code and assets to release a Lumberyard project, using the [Starter Game sample project](sample-level-starter-game.md)\. You'll learn how to:
 + Create a release build of your game's executable\.
 + Set up the directory structure of a release build\.
@@ -18,8 +11,8 @@
 ## Prerequisites<a name="asset-bundler-tutorial-release-prerequisites"></a>
 
 To complete the procedures in this tutorial, you need the following: 
-+ Amazon Lumberyard v1\.24 or later installed\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
-+ Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2017 and marks them clearly\. If you use Visual Studio 2019, change these commands to use your version of Visual Studio and the Microsoft C\+\+ compiler\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
++ Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
++ Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](asset-bundler-concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
 ## Configure Lumberyard to build the Starter Game project<a name="asset-bundler-tutorial-release-create-project"></a>
@@ -44,7 +37,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Create a profile build using the **all** build spec\. Depending on your hardware, this can take a while\.
 
    ```
-   lmbr_waf build_win_x64_vs2017_profile -p all
+   lmbr_waf build_win_x64_vs2019_profile -p all
    ```
 
    This step ensures that your editor, asset processor, asset builders, and other edit\-time content is up to date\. It's also required for shader generation\.
@@ -52,7 +45,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Make a release build with the **game\_and\_engine** build spec\. Depending on your hardware, this can take a while, but should be faster than a full profile build\.
 
    ```
-   lmbr_waf build_win_x64_vs2017_release -p game_and_engine
+   lmbr_waf build_win_x64_vs2019_release -p game_and_engine
    ```
 
 ## Create a directory structure for the game release<a name="asset-bundler-tutorial-release-build-directory"></a>
@@ -76,7 +69,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Copy the contents of the release build into the `StarterGameRelease\release` directory:
 
    ```
-   xcopy /s Bin64vc141.Release %USERPROFILE%\StarterGameRelease\release
+   xcopy /s Bin64vc142.Release %USERPROFILE%\StarterGameRelease\release
    ```
 **Note**  
  Release builds include some metadata like debug symbols in a `.pdb` file\. When releasing your game, make sure to delete any compiler metadata that's copied over that isn't needed for launching or running your game\. 
@@ -128,10 +121,10 @@ To complete the procedures in this tutorial, you need the following:
 1. Generate the game's auxiliary data:
 
    ```
-   Tools\Python\python3 BuildReleaseAuxiliaryContent.py --platforms pc --buildFolder Bin64vc141
+   Tools\Python\python3 BuildReleaseAuxiliaryContent.py --platforms pc --buildFolder Bin64vc142
    ```
 
-   The auxiliary data includes Gem data, configuration information, and level data\.
+   The auxiliary data includes configuration information for the engine and game loading and level data\.
 
 1. Copy the auxiliary data to the release directory:
 
@@ -146,22 +139,27 @@ To complete the procedures in this tutorial, you need the following:
 1. Bundle assets needed by the game engine: 
 
    ```
-   Bin64vc141\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --assetListFile engine.assetlist
-   Bin64vc141\AssetBundlerBatch.exe bundles --assetListFile engine_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\engine.pak
+   Bin64vc142\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --assetListFile engine.assetlist
+   Bin64vc142\AssetBundlerBatch.exe bundles --assetListFile engine_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\engine.pak
    ```
 
-   This generates the `engine_pc.pak` file in your release folder\.
+   This generates the `engine_pc.pak` file in your release folder\. The engine pak contains the assets required by the engine and gems\.
 
 1. Bundle game content and level assets: 
 
    ```
-   Bin64vc141\AssetBundlerBatch.exe assetLists --addSeed Levels\Game\SinglePlayer\level.pak --seedListFile StarterGame\Levels\SeedAssetList.seed --assetListFile startergame.assetlist
-   Bin64vc141\AssetBundlerBatch.exe bundles --assetListFile startergame_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\startergame.pak
+   Bin64vc142\AssetBundlerBatch.exe assetLists ^
+        --addSeed Levels\Game\SinglePlayer\level.pak ^
+        --addSeed project.json ^
+        --addSeed gems.json ^
+        --addSeed scripts/ai/navigation.xml ^
+        --assetListFile startergame.assetlist
+   Bin64vc142\AssetBundlerBatch.exe bundles --assetListFile startergame_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\startergame.pak
    ```
 
    This generates the `startergame_pc.pak` file in your release folder\. 
 **Important**  
-`--addSeed` takes a path relative to your game content folder\. For Starter Game, this is located at `lumberyard_dir\dev\StarterGame`\. Don't use absolute paths or paths relative to the current directory when adding a seed\.
+`--addSeed` takes a path relative to your project folder \(for source assets\) or the asset cache \(for product assets\)\. For Starter Game, project source assets are located in `lumberyard_dir\dev\StarterGame`\. Don't use absolute paths or paths relative to the current directory when adding a seed\.
 
 ## Run your packaged release<a name="asset-bundler-tutorial-release-update-release"></a>
 
@@ -173,7 +171,9 @@ To complete the procedures in this tutorial, you need the following:
    release\StarterGameLauncher.exe +map singleplayer
    ```
 
-If your content bundles are correct, the starter game will load and be playable\. If objects are displayed but textures are missing, it probably means you forgot to export the level before packaging assets or didn't add the `level.pak` file as a seed\.
+If your content bundles are correct, the starter game will load and be playable\. Use **Alt\+F4** to exit the game\.
+
+If objects are displayed but textures are missing, it probably means you forgot to export the level before packaging assets or didn't add the `level.pak` file as a seed\. You could also be missing some shaders \- run through the level and build the shader package again\.
 
 If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](asset-bundler-assets-resolving.md) and [Compiling Shaders for Release Builds](asset-pipeline-shader-compilation.md)\.
 

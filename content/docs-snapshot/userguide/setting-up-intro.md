@@ -1,25 +1,20 @@
-# Setting up Lumberyard<a name="setting-up-intro"></a>
+# Setting up Amazon Lumberyard<a name="setting-up-intro"></a>
 
-In this section, you can learn more about installing, upgrading, and setting up your installation of Lumberyard\. 
+Amazon Lumberyard has a two\-part installation process:
 
-You can use Lumberyard to develop games for the following platforms: 
-+ PC
-+ Android
-+ iOS
-+ macOS
-+ Play​Station 4
-+ X​box One
+1. The installer application downloads, extracts, and installs Lumberyard\.
 
- Some platforms have requirements beyond the scope of this documentation\. 
-+ For console support, see [Developing Games for X​box One](http://www.xbox.com/en-US/developers) and [Become a Registered Developer for Play​Station](https://www.playstation.com/en-us/develop/)\.
-+ For mobile devices, see [Create Android and iOS projects in Lumberyard](mobile-support-intro.md)\.
-+ For macOS, see [Create macOS projects in Lumberyard](osx-intro.md)\.
+1. Setup Assistant configures and installs additional software based on your development needs\. Jump right in to the Lumberyard Editor with an **Express Install** or customize Lumberyard's features for your development needs with a **Custom Install**\.
+**Note**  
+To create and build new projects, or add gems to existing projects, either select **Custom Install** or run Setup Assistant again later to enable this functionality\.
 
-Lumberyard supports dedicated servers for Linux\. For more information, see [Creating Lumberyard Executables for Linux](linux-intro.md)\.
+After Lumberyard is installed, use Project Configurator to select a project or create a new project\. The following sections detail the minimum requirements for Lumberyard and guide you through the installation process\.
+
+![\[Flow chart of the Amazon Lumberyard installation process.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-install-flow-chart.png)
 
 **Topics**
 + [System requirements](setting-up-system-requirements.md)
-+ [Downloading Lumberyard](setting-up-downloading-lumberyard.md)
++ [Installing Lumberyard](setting-up-downloading-lumberyard.md)
 + [Upgrading Lumberyard](lumberyard-upgrading.md)
 + [Using Lumberyard Setup Assistant to Set Up Your Development Environment](lumberyard-launcher-intro.md)
 + [Enabling a Firewall](setting-up-firewall.md)

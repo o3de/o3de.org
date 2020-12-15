@@ -248,36 +248,7 @@ The following settings define whether or not a platform is enabled to build\. Th
 
 #### Android<a name="waf-files-user-settings-platform-specific-options-android"></a>
 
-The following settings for Android are defined in the `lumberyard_version\dev\_WAF_\settings\platforms\common.android.json` file\.
-
-
-**Android Options**  
-
-| Attribute | Override Parameter | Description | Default | 
-| --- | --- | --- | --- | 
-| android\_maven\_force\_http | \-\-android\-maven\-force\-http\-requests | Forces Android Maven library requests to use HTTP instead of HTTPS\. | False | 
-| android\_asset\_mode | \-\-android\-asset\-mode |  Specify one of the following asset packaging modes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/waf-user-options-and-settings.html)  | configuration\_default | 
-
-
-**Android Deploy**  
-
-| Attribute | Override Parameter | Description | Default | 
-| --- | --- | --- | --- | 
-| deploy\_android | \-\-deploy\-android | Deploys to an Android device after a successful package command\. | True | 
-| deploy\_android\_clean\_device | \-\-deploy\-android\-clean\-device | Completely uninstalls the app from the target device\. | True | 
-| deploy\_android\_device\_filter | \-\-deploy\-android\-device\-filter | Comma\-separated list of Android device IDs to deploy to\. If empty, deploys to all connected devices\. |  | 
-| deploy\_android\_executable | \-\-deploy\-android\-executable | Installs the executable \.apk file on the Android device\. | True | 
-| deploy\_android\_install\_options | \-\-deploy\-android\-install\-options | Provides additional options to specify for the install command\. |  | 
-| deploy\_android\_replace\_apk | \-\-deploy\-android\-replace\-apk | When installing the \.apk file to the Android device, uses the \-r option to force the replacement of the package\. | True | 
-
-
-**Android Project Generator**  
-
-| Attribute | Override Parameter | Description | Default | 
-| --- | --- | --- | --- | 
-| android\_studio\_project\_folder | \-\-android\-studio\-project\-folder | Name of the directory in which the generated Android Studio project should be stored\. | Solutions | 
-| android\_studio\_project\_name | \-\-android\-studio\-project\-name | Name of the root Android project directory and Android Studio project name\. | LumberyardAndroidSDK | 
-| generate\_android\_projects\_automatically | \-\-generate\-android\-projects\-automatically | Automatically generates Android Studio projects\. | True | 
+ This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](android-reference.md)\. See [Waf settings](android-reference.md#android-waf-settings)\. 
 
 #### iOS<a name="waf-files-user-settings-platform-specific-options-ios"></a>
 

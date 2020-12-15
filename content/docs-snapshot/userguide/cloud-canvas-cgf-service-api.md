@@ -1,7 +1,11 @@
 # Cloud Gem Framework Service API<a name="cloud-canvas-cgf-service-api"></a>
 
+
 ****  
-This documentation is preliminary and is subject to change\.
+
+|  | 
+| --- |
+| This documentation is preliminary and is subject to change\. | 
 
 **Topics**
 + [Cloud Gem Swagger API Descriptions](#cloud-canvas-cgf-service-api-swagger-descriptions)

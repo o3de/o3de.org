@@ -1,9 +1,11 @@
-# Create Android and iOS projects in Lumberyard<a name="mobile-support-intro"></a>
+# Developing for Android and iOS with Lumberyard<a name="mobile-support-intro"></a>
 
-You can use Lumberyard to build your games for Android devices and iOS devices that use the A8 GPUs\. Lumberyard includes two Android\-supported sample projects and four iOS\-supported sample projects that you can use to learn how to build assets, build shaders using the remote shader compiler, and build the Lumberyard runtime \(Android\) or iOS applications using the Lumberyard build tools\.
+ Amazon Lumberyard comes with support for building and deploying your game to Android and iOS devices\. In this section of the guide, you'll learn how to get your projects up and running on mobile, what are some of the important design considerations for these platforms, and which unique workflows are required\. You'll also learn how to use the Virtual File System \(VFS\) server to serve assets on\-demand to your game that's running on a physical device, and how to get started using Device Farm for large\-scale testing of your mobile project\. 
+
+ Take a deep dive into the Android and iOS documentation to learn about the requirements and configuration to get started with these platforms\. When you're up and running, look through the rest of the topics in this section to finish generic setup and take the next steps to make your Lumberyard project a great experience on mobile\. 
 
 **Topics**
-+ [Android Support](android-intro.md)
++ [Lumberyard Android support](android-intro.md)
 + [iOS Support](ios-intro.md)
 + [Design Considerations for Creating Mobile Games Using Lumberyard](ios-android-design-considerations.md)
 + [Lumberyard Performance Tuning Guidelines for Mobile Devices](ios-android-performance-guidelines.md)

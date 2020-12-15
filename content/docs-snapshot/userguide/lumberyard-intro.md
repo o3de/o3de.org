@@ -6,7 +6,7 @@ Lumberyard offers everything a professional game developer can expect, such as a
 
 Interested? Want to get started?
 + [Download the latest version of the Lumberyard beta](https://aws.amazon.com/lumberyard/downloads/)
-+ [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/gettingstarted/)
++ [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Amazon Lumberyard forums](https://forums.awsgametech.com/)
 
 ![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/starter-game-introduction-1.25.png)
@@ -58,7 +58,7 @@ Real\-time gameplay editing helps you iterate on gameplay and immediately see yo
 
 ### Modular Gems<a name="lumberyard-aaa-engine-gems"></a>
 
-Lumberyard's Modular Gems system gives you a library of prebuilt features with which you can start new projects or prototype ideas quickly\. Modular Gems offer increased control over which technologies to include in your game project\. Create your own modular Gems or use the Gems included with Lumberyard, such as weather effects, a boids\-based ambient creature system, lightning effects, a camera framework, and more\.
+Lumberyard's Modular Gems system gives you a library of prebuilt features with which you can start new projects or prototype ideas quickly\. Modular Gems offer increased control over which technologies to include in your game project\. Create your own modular Gems or use the Gems included with Lumberyard, such as physics, multiplayer, "white box" rapid prototyping tools, and more\.
 
 For more information, see [Add modular features and assets with Gems](gems-system-gems.md)\.
 
@@ -101,12 +101,6 @@ Lumberyard is integrated with Twitch so that you can build games that engage wit
 The Twitch ChatPlay feature within Lumberyard helps you build gameplay that interacts in real time with Twitch viewers\. For example, you can build a game where viewers can vote on game outcomes, gift power\-ups to their favorite players, or change the level based on the number of viewers watching the player\.
 
 For more information, see [Twitch ChatPlay System](chatplay-intro.md)\.
-
-### Twitch JoinIn<a name="lumberyard-aws-joinin"></a>
-
-The Twitch JoinIn feature within Lumberyard helps you build multiplayer games that allow Twitch broadcasters to invite fans to join them side by side in the game\. Once invited, a fan can jump into the broadcaster's game with a single click in the Twitch chat channel, while others continue to watch\.
-
-For more information, see [Twitch JoinIn](chatplay-joinin.md)\.
 
 ## Free with Source<a name="lumberyard-aws-source"></a>
 

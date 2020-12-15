@@ -4,7 +4,7 @@ Cloud Canvas provides the `\dev\lmbr_aws.cmd` command line tool for working with
 
 Notes
 +  Lumberyard 1\.9 renamed some `lmbr_aws` commands\. For a list of the older commands and their newer equivalents, see [Command Reorganization](cloud-canvas-command-line-revision.md)\.
-+ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using lmbr\_aws for Dynamic Content](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\. 
++ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\. 
 + For information on `lmbr_aws` commands for the Cloud Gem Portal and the cloud gem framework, see [Using the Cloud Gem Framework Command Line](cloud-canvas-command-line-cgf.md)\.
 + For information on `lmbr_aws` commands that manage roles and permissions, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](cloud-canvas-rm-security-lmbr-aws.md)\.
 
@@ -647,7 +647,7 @@ The `lmbr_aws project` commands manage Cloud Canvas projects in Lumberyard\.
 Initialize Cloud Canvas resource management for a Lumberyard project\. This includes creating a set of default [Resource Definitions](cloud-canvas-resource-definitions.md) in the `dev\game\AWS` directory and a AWS CloudFormation stack that contains the resources that the Cloud Canvas resource manager uses to manage your game resources\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `project create` command accepts the following arguments:
-+ `--stack {stack-name}`
++ `--stack-name {stack-name}`
 
   Optional\. The name used for the project's AWS CloudFormation stack\. The default is the name of the *\{game\}* directory\.
 + `--confirm-aws-usage` or `-C`
@@ -661,6 +661,12 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   Required\. The AWS region in which the project stack will be created\. 
 **Note**  
 The `region` argument can be used only with the `project create` and `resource-importer list-importable-resources` commands\. To manually override the AWS region in other `lmbr_aws` commands, use the `--region-override` argument\.
++ `--admin-roles`
+
+  Optional\. Creates the `ProjectOwner` and `ProjectAdmin` roles\. The default is to create these roles unless `--no-admin-roles` argument is used\. For more information about these roles, see [Cloud Canvas Built\-In Roles and Policies](cloud-canvas-built-in-roles-and-policies.md)\.
++ `--no-admin-roles`
+
+  Optional\. Turns off the creation of the `ProjectOwner` and `ProjectAdmin` roles\. This is recommended unless you have a need for these roles\.
 
 ##### How `project create` Works<a name="cloud-canvas-command-line-project-create-details"></a>
 

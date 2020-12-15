@@ -12,6 +12,8 @@ Use the **Screen Fader** node to fade the screen in and out in a scene\.
 
 1. Double\-click the green marker, and under **Key Properties**, enter a value for **Value**\.
 
+ 
+
 
 **Screen Fader Node Key Properties**  
 

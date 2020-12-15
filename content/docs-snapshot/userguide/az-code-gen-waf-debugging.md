@@ -1,7 +1,11 @@
 # Waf Debugging with AZ Code Generator<a name="az-code-gen-waf-debugging"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
  You can debug the integration output of Waf's Python scripts by using PyCharm and a few key debugging entry points\. For more information about Waf integration itself, see [AZ Code Generator Integration with Waf ](az-code-gen-waf-integration.md)\. 
 

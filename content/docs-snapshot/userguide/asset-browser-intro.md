@@ -71,7 +71,7 @@ You can also open some files in their respective Lumberyard tool, such as the **
 ![\[Right-click context menu for assets in the Asset Browser\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset-browser-intro-right-click-context.png)
 
 **FBX Files**  
-Some files, such as `.fbx` files, have an additional **Edit Settings** option, which opens the **FBX Settings** tool\. For more information, see [Working with the FBX Settings Tool](char-fbx-importer.md)\.
+Some files, such as `.fbx` files, have an additional **Edit Settings** option, which opens the **FBX Settings** tool\. For more information, see [Customize FBX asset export with FBX Settings](fbx-intro.md)\.
 
 ![\[Right-click context menu for an .fbx file in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset-browser-intro-right-click-context-fbx-tool.png)
 

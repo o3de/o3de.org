@@ -51,10 +51,10 @@ enum ExampleEnum : uint8_t
 
 // Registration with SerializedContext
 serializeContext->Enum<ExampleEnum>()
-    ->Field("Flag1", ExampleEnum::Flag1)
-    ->Field("Flag2", ExampleEnum::Flag2)
-    ->Field("Flag4", ExampleEnum::Flag4)
-    ->Field("Flag2Flag3Combo", ExampleEnum::Flag5)
+    ->Value("Flag1", ExampleEnum::Flag1)
+    ->Value("Flag2", ExampleEnum::Flag2)
+    ->Value("Flag4", ExampleEnum::Flag4)
+    ->Value("Flag2Flag3Combo", ExampleEnum::Flag5)
 
 //------
 

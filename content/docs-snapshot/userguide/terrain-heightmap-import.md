@@ -18,6 +18,7 @@ Lumberyard Editor supports importing only a single heightmap for the entire terr
 If you attempt to import a file with a different resolution than your existing heightmap, Lumberyard prompts you to do one of the following:
 + Clip your imported file to remove any values that are outside the boundary of your existing heightmap\.
 + Resize your imported file to shrink or stretch to fit the heightmap\. Resizing may introduce artifacts that can cause blocky\-looking terrain\. 
++ 
 
 **Note**  
 If your heightmap resolution is greater than your level's resolution, you should downsample your heightmap with an external graphics application before you import it into Lumberyard\.  

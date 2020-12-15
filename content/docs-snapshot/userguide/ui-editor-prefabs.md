@@ -1,7 +1,11 @@
 # Using and Creating UI Prefabs<a name="ui-editor-prefabs"></a>
 
+
 ****  
-This system has been deprecated and will be removed in a future release\.
+
+|  | 
+| --- |
+| This system has been deprecated and will be removed in a future release\. | 
 
 In the **UI Editor**, prefabs are preconfigured UI elements and compound elements that you can add to a canvas\. You can also create custom prefabs\.
 
@@ -24,6 +28,8 @@ In the **UI Editor**, prefabs are preconfigured UI elements and compound element
    + **TextInput**
 
    The new element appears in the **Hierarchy** pane and viewport\.
+
+   
 
 If you have created your own element or modified an existing prefab, you can save it as a custom prefab\.
 

@@ -66,6 +66,8 @@ lmbr_test.cmd scan --dir Bin64vc141.Debug.Test --only CrySystem.dll --integ
 **Note**  
 For best results, run integration tests on a single library or use an allow list \. Scanning the full build might take hours to complete\.
 
+ 
+
 
 ****  
 

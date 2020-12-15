@@ -12,6 +12,8 @@ You will want to familiarize yourself with GameLift concepts found in the [Amazo
 
 ## Implementation<a name="gems-system-gem-gamelift-implementation"></a>
 
+
+
 The GameLift Gem provides server and client code\. Server code interacts with GameLift server SDK, while client code interacts with the GameLift client from the AWS native SDK\.
 
 The GameLift Gem server code is responsible for initializing the server process by initializing the GameLift server SDK and then hosting game sessions for the clients to connect\. If run in custom matchmaking backfill configuration, the server is also responsible for starting and cancelling matchmaking backfill requests\.
@@ -42,6 +44,8 @@ Use the following sample code as a guide when starting and hosting a GameLift se
 
 <a name="gems-system-gem-gamelift-sample-code-start-gameliftserverservice.title"></a>Start GameLiftServerService
 
+ 
+
 ```
 GridMate::GameLiftServerServiceDesc serviceDesc;
 serviceDesc.m_port = settings.m_serverPort;
@@ -54,6 +58,8 @@ m_service = GridMate::StartGridMateService<GridMate::GameLiftServerService>(m_gr
 ```
 
 <a name="gems-system-gem-gamelift-sample-code-host-a-session.title"></a>Host a Session
+
+ 
 
 ```
 GridMate::CarrierDesc carrierDesc;
@@ -70,6 +76,8 @@ EBUS_EVENT_ID_RESULT(session, m_gridMate, GridMate::GameLiftServerServiceBus, Ho
 
 <a name="gems-system-gem-gamelift-sample-code-matchmaking-backfill.title"></a>Start/Stop Matchmaking Backfill
 
+ 
+
 ```
 EBUS_EVENT_ID(m_gridMate, GridMate::GameLiftServerServiceBus, StartMatchmakingBackfill, m_updateGameSession, m_session, checkForAutoBackfill=true);
 EBUS_EVENT_ID(gEnv->pNetwork->GetGridMate(), GridMate::GameLiftServerServiceBus, StopMatchmakingBackfill, m_session, m_ticketId);
@@ -80,6 +88,8 @@ EBUS_EVENT_ID(gEnv->pNetwork->GetGridMate(), GridMate::GameLiftServerServiceBus,
 Use the following sample code as a guide when using the GameLift client service\.
 
 <a name="gems-system-gem-gamelift-sample-code-start-gameliftclientservice.title"></a>Start GameLiftClientService
+
+ 
 
 ```
 GridMate::GameLiftClientServiceDesc serviceDesc;
@@ -92,6 +102,8 @@ m_service = GridMate::StartGridMateService<GridMate::GameLiftClientService>(m_gr
 ```
 
 <a name="gems-system-gem-gamelift-sample-code-send-gameliftsessionrequest.title"></a>Send GameLiftSessionRequest / GameLiftGameSessionPlacementRequest
+
+ 
 
 ```
 GridMate::GameLiftSessionRequestParams reqParams;
@@ -112,6 +124,8 @@ EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, 
 
 <a name="gems-system-gem-gamelift-sample-code-search-active-sessions.title"></a>Search Active Sessions
 
+ 
+
 ```
 GridMate::GameLiftSearchParams searchParams;
 // Only need ONE of the below. Queue gets the highest preference, followed by alias and fleet id.
@@ -123,6 +137,8 @@ EBUS_EVENT_ID_RESULT(m_search, m_gridMate, GridMate::GameLiftClientServiceBus, S
 ```
 
 <a name="gems-system-gem-gamelift-sample-code-join-a-session.title"></a>Join a Session
+
+ 
 
 ```
 GridMate::CarrierDesc carrierDesc;
@@ -136,6 +152,8 @@ EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, 
 ```
 
 <a name="gems-system-gem-gamelift-sample-code-matchmaking.title"></a>Join using FlexMatch Matchmaking
+
+ 
 
 ```
 m_matchmakingConfigName = "MatchmakingConfig";

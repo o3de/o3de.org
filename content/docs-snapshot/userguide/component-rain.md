@@ -67,7 +67,7 @@ The **Rain** component has the following properties:
 | Amount |  Quantity of raindrops\. Default: `0.5` Valid values: `0` to `100`  | 
 | Speed |  Speed of the falling raindrops\. Default: `1.0` Valid values: `0` to `100`  | 
 | Lighting |  Brightness of the raindrops\. Default: `1.0` Valid values: `0` to `100`  | 
-|  The **Rain** component has the following puddle options\.  |   | 
+|  The **Rain** component has the following puddle options\.  |    | 
 | Amount |  Amount of depth and brightness of rain puddles\. Default: `1.5` Valid values: `0` to `10`  | 
 | Mask Amount |  Strength of the puddle mask\. A value of `1` creates puddles of rain between patches of land\. Default: `1` Valid values: `0` to `1`  | 
 | Ripple Amount |  Strength and frequency of the ripples in the rain puddles\. Default: `2` Valid values: `0` to `100`  | 

@@ -8,10 +8,10 @@ If you like, you can follow this chapter in video \(4:53 minutes\) form:
 [![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/q3Qlns_xaN8?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/q3Qlns_xaN8?rel=0)
 
 Before you proceed, you should already have completed the following steps:
-+ Downloaded and unzipped the [WelcomeGuideTutorials](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.0.zip) project into your Lumberyard dev folder\.
++ Downloaded and unzip the [WelcomeGuideTutorials](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) project into your Lumberyard dev folder\.
 + Set the **WelcomeGuideTutorials** project as your default project in **Project Configurator**\.
-+ Configured the project using `lmbr_waf configure` from the command line in the `lumberyard\dev` directory\.
-+ Built the project using a build command such as `lmbr_waf build_win_x64_vs2019_profile -p game_and_engine` from the command line in the `lumberyard\dev` directory\.
++ Configure the project using `lmbr_waf configure` from the command line in the `lumberyard\dev` directory\.
++ Build the project using a build command such as `lmbr_waf build_win_x64_vs2019_profile -p game_and_engine` from the command line in the `lumberyard\dev` directory\. Depending on your hardware, the build may take a while to complete\.
 
 **Note**  
 See [Building Lumberyard projects](https://docs.aws.amazon.com/lumberyard/latest/userguide/game-build-intro.html) for information on command line configuration and build\. Alternatively, you can configure and build the project from **Project Configurator**\. See [Manage Lumberyard projects with Project Configurator](wg-project-configurator.md) for details on using **Project Configurator**\.
@@ -23,10 +23,10 @@ When the basic project has been built, you are ready to continue\. On to your fi
 1.  In the **Welcome to Lumberyard** dialog box, choose **New level…​**\.   
 ![\[Lumberyard Level dialog\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-new-level-1.25.png)
 
-1.  In the **New Level** dialog, give your new level a name\. Ensure the base **Levels/** directory is specified for the **Folder** option, and choose **OK**\.   
+1.  In the **New Level** dialog, give your new level a name\. Ensure the base `Levels/` directory is specified for the **Folder** option, and choose **OK**\. This saves the new level in the existing `Levels` directory\.   
 ![\[Lumberyard New Level dialog\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-new-level-2-1.25.png)
 
-1.  If the **Generate Terrain Texture** dialog appears, select **2048 x 2048** and choose **OK**\. \(If this dialog does not appear, skip to the next step\.\)   
+1.  If the **Generate Terrain Texture** dialog appears, select `2048 x 2048` and choose **OK**\. \(If this dialog does not appear, skip to the next step\.\)   
 ![\[Lumberyard Generate Terrain Texture dialog\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-generate-terrain-texture-1.25.png)
 
    Lumberyard Editor displays your new level in the **Perspective** pane with a default sky, an infinite ocean, and a flat terrain plane with a default grid texture\.
@@ -40,12 +40,12 @@ When the basic project has been built, you are ready to continue\. On to your fi
 1.  The terrain is quite large\. You won’t need all this space\. You can resize the terrain to make it a bit more manageable\. From the **Main Menu** bar, select **Game**, **Terrain** and choose **Resize Terrain**\.   
 ![\[Lumberyard resize terrain\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-resize-terrain-1.25.png)
 
-1.  Complete the fields in the **Resize Terrain** dialog\. For **Heightmap Resolution**, select **128 x 128**\. For **Meters Per Texel**, select **1** and choose **OK**\.   
+1.  Complete the fields in the **Resize Terrain** dialog\. For **Heightmap Resolution**, select `128 x 128`\. For **Meters Per Texel**, select `1` and choose **OK**\.   
 ![\[Lumberyard resize terrain\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-resize-terrain-2-1.25.png)
 
-1.  Because the terrain has been resized, the terrain texture must be regenerated\. The **Generate Terrain Texture** dialog automatically opens after the previous step\. Select **2048 x 2048** and choose **OK**\. 
+1.  Because the terrain has been resized, the terrain texture must be regenerated\. The **Generate Terrain Texture** dialog automatically opens after the previous step\. Select `2048 x 2048` and choose **OK**\. 
 
-1.  The resized terrain might have disappeared in the **Perspective** pane\. You can use the camera controls to find the terrain and bring it back into view\. You can hold the right mouse button and move the mouse to aim the camera, and use the W, A, S, and D keys to fly forward, left, back and right, respectively\. You might want to set the camera speed to `10.0` for this part\. You can changer the camera speed in the lower right of **Perspective**, as shown in the following animated GIF\. If you’re having trouble moving the camera with the **W**, **A**, **S**, and **D** keys, try clicking anywhere in the viewport, which will deselect any entity you have selected\. For more information, see the [Introduction to the Lumberyard Editor](wg-editor.md)\.   
+1.  The resized terrain might have disappeared in the **Perspective** pane\. You can use the camera controls to find the terrain and bring it back into view\. You can hold the right mouse button and move the mouse to aim the camera, and use the W, A, S, and D keys to fly forward, left, back and right, respectively\. You might want to set the camera speed to `10.0` for this part\. You can change the camera speed in the lower right of **Perspective**, as shown in the following animated GIF\. If you’re having trouble moving the camera with the **W**, **A**, **S**, and **D** keys, try clicking anywhere in the viewport, which will deselect any entity you have selected\. For more information, see the [Introduction to the Lumberyard Editor](wg-editor.md)\.   
 ![\[Lumberyard navigation\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/anim-camera-controls-1.25.gif)
 
    Another method to set your perspective is to focus on a selected entity\. Because the **DefaultLevelSetup** entity was set up before you resized the terrain, you must move the entity to center it in the new terrain size\. Use the following steps to move the entity\.

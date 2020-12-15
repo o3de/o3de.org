@@ -4,7 +4,8 @@ You can use the Dynamic Content Cloud Gem and its Dynamic Content Manager to man
 
 **Topics**
 + [Managing Dynamic Content Packages](cloud-canvas-cloud-gem-dc-managing-packages.md)
-+ [Using lmbr\_aws for Dynamic Content](cloud-canvas-cloud-gem-dc-lmbr-aws.md)
++ [Updating Dynamic Content](cloud-canvas-cloud-gem-dc-updating.md)
++ [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)
 + [Testing the Dynamic Content System](cloud-canvas-cloud-gem-dc-testing.md)
 + [Dynamic Content Engineering Details](cloud-canvas-cloud-gem-dc-engineering.md)
 

@@ -5,6 +5,8 @@ Source texture files are converted and compiled in `.DDS` format by the Resource
 + Files with a non\-white \(less than 255\) alpha channel will generate a DXT3\-compressed `.DDS` file\. 
 + Files without an alpha channel will generate DXT1 compressed `.DDS` file\. 
 
+ 
+
 
 **Texture Map Types**  
 

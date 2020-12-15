@@ -47,6 +47,8 @@ Create a spec file called `my_game.json` with the following:
 
 The spec files are located in the `lumberyard_version\dev\_WAF_\specs` directory and have the `.json` file extension\. For more information about Waf spec files, see [Waf Spec Files \(\*\.json\)](waf-files-spec-file.md)\.
 
+ 
+
 
 ****  
 

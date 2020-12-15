@@ -7,41 +7,42 @@
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-Lumberyard Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game\. Lua Editor is a standalone application, but can be opened directly from Lumberyard Editor\.
+Lumberyard Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game\. Lua Editor is a standalone application, but can be opened directly from Lumberyard Editor using the Tools menu\.
 
 ## Tutorial: Using Lua Editor for Debugging with Lumberyard Editor<a name="lua-editor-debugger-tutorial"></a>
 
-This tutorial shows you how to use Lumberyard Editor to create a sample level with a component entity that contains a Lua script component\. You open the script in Lua Editor from Lumberyard Editor and perform some sample debugging steps on the script\.
+This tutorial shows you how to use Lumberyard Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component\. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script\.
 
-**To use Lua Editor for debugging**
+**Debugging Lua scripts using Lua Editor**
 
-1. In Lumberyard Editor, create a new level by performing one of the following steps:
+1. Set the **SamplesProject** as the default project using Project Configurator\.
+
+1. In Lumberyard Editor, create a new level by performing *one* of the following steps:
    + In the **Welcome to Lumberyard Editor** window, click **New level**
    + Click **File**, **New**
    + Press **Ctrl\+N**
 
 1. In the **New Level** dialog box, give the level a name, and then click **OK**\.
 
-1. In the **Generate Terrain Texture** dialog box, click **OK** to accept the defaults\.
+1. In **Asset Browser**, expand **SamplesProject**, **Objects**, and **SamplesAssets**\.
 
-1. Right\-click the Lumberyard Editor viewport and select **Create Entity**\.
-
-1. In **Entity Inspector**, click **Add Component**, and then choose **Rendering**, **Point Light**\.
+1. Drag **mover\_display\_smooth\.cgf** to the perspective viewport\.
 
 1. In **Entity Inspector**, click **Add Component**, and then choose **Scripting**, **Lua Script**\.
 
-1. Scroll down to the bottom of the **Entity Inspector** window and, in the **Lua Script** section, click **\.\.\.** to open the **Pick Lua Script** window\.
+1. In the **Entity Inspector** window, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field\.  
+![\[Open the Pick Lua Script window from the Lua Script component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/lua/lua-component-pick-lua-script.png)
 
-1. In the **Pick Lua Script** window, expand **Samples Project**, **Scripts**,and **Components**\.
+1. In the **Pick Lua Script** window, expand **SamplesProject**, **Scripts**, and **Components**\.
 
-1. Click **lightflicker\.lua**, and then click **OK**\. \(Note: additional sample scripts are located in the Lumberyard directory `\dev\SamplesProject\Scripts`\.\)
+1. Click **ConstantRotation\.lua**, and then click **OK**\.
 
-1. In **Entity Inspector**, in the **Lua Script** section, click the empty braces **\{ \}** to launch Lua Editor\.  
-![\[Launch Lua Editor from Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-open-in-lua-editor.png)
+1. In the **Lua Script** component, click the **Open in Lua Editor** button to launch Lua Editor\.  
+![\[Launch Lua Editor from Lua Script component in Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/lua/lua-component-open-in-lua-editor.png)
 
    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug\. In this tutorial, you connect to Lumberyard Editor\.
 **Note**  
-Connection is facilitated by [Using GridHub](gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\. If for some reason you need to start it manually, you can launch it from `\dev\Bin64\LuaIDE.exe`\.
+Connection is facilitated by [GridHub](gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to Lumberyard Editor\.  
 ![\[Target selector\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-target-editor.png)
@@ -64,7 +65,7 @@ The class reference feature is active only for the default context and component
 
 1. In the Lua Editor toolbar, click the **Breakpoints** icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window\.
 
-1. In Lua Editor, single\-click or double\-click one or more line numbers in the `lightflicker.lua` script to set one or more breakpoints\. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window\.
+1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints\. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window\.
 
 1. In Lumberyard Editor, press **Ctrl\+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts\. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters\.  
 ![\[Debugger stopped on breakpoint\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-stopped-on-breakpoint.png)

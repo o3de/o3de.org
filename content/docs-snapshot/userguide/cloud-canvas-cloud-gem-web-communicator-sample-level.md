@@ -89,6 +89,8 @@ In this step, you send a test from the message AWS IoT console to the Communicat
 1. In the left navigation pane of AWS IoT console, choose **Test**\.  
 ![\[Choose Test in the AWS IoT console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-8.png)
 
+   
+
 1. Navigate to the **Publish** section at the bottom of the page\.  
 ![\[Publishing a test message in the AWS IoT console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-9.png)
 

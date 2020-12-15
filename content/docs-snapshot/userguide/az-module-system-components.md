@@ -41,6 +41,8 @@ The example shows the following:
 + In the `AssetDatabaseComponent` class, the `GetProvidedServices` function reveals that the class provides a service called `AssetDatabaseService`\.
 + In the `AssetCatalogComponent` class, the `GetRequiredServices` function reveals that `AssetCatalogComponent` depends on `AssetDatabaseService`\. Lumberyard understands this dependency and orders the initialization accordingly\. 
 
+ 
+
 For more information about the initialization order of components, see [The AZ Bootstrapping Process](az-module-bootstrap.md)\.
 
 ## Easily Configurable Components<a name="az-module-system-components-easily-configurable"></a>

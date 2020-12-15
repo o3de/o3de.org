@@ -23,15 +23,13 @@ The figure below shows how these 3 components are represented in the Lumberyard 
 
 An FBX mesh can be exported into Lumberyard from many common digital content creation tools, or from an existing \.fbx asset file\. 
 
-For more details on working with FBX meshes in Lumberyard, read [Working with the FBX Settings Tool](char-fbx-importer.md)\.
+For more details on working with FBX meshes in Lumberyard, read [Customize FBX asset export with FBX Settings](fbx-intro.md)\.
 
 ## Cube Collision Proxy Mesh<a name="vegetation-bending-touch-collision-cube"></a>
 
 The cube proxy mesh is a simple primitive used to determine when a collision \(a "touch"\) occurs between the vegetation object and some other physical entity\. You import it as an FBX mesh, and if you name this mesh as **\*\_touchbend** \(for example, **proxy\_touchbend**\) the FBX pipeline will automatically identify this mesh as the trigger volume\.
 
 This mesh is cube\-shaped and big enough to cover the main mesh, and is used at runtime as a trigger volume\. Whenever a physical entity enters this volume during your game's inner loop processing, the Lumberyard engine will trigger the creation of a "skeleton" structure made of dynamic rigid bodies \(segments\) attached to each other via joints \(specifically, D6Joints in PhysX\)\. This structure simulates a terrain\-anchored skeleton that passively reacts to the movement of physical entities pushing through it\. 
-
-For more details on creating physics proxy meshes, read [Creating Physics Proxies for Static Meshes](char-fbx-export-static-meshes-best-practices-physics.md)\.
 
 ## Vegetation Skeleton<a name="vegetation-bending-touch-skeleton"></a>
 
@@ -51,6 +49,8 @@ The joints must follow the naming convention "**branchN\_M**", where N and M are
 The name of the root joint can be postfixed with "\_touchbend" \(for example, "branch1\_touchbend"\) as a convenience to notify the FBX pipeline that this asset is used for touch bending instead of a traditional animated character\.
 
 ## Debugging and Performance Tips<a name="vegetation-bending-touch-debugging-and-perf"></a>
+
+
 
 In the Lumberyard Editor, you can instantiate or paint static touch bendable vegetation using the Rollup Bar \(LEGACY\) UI\. 
 

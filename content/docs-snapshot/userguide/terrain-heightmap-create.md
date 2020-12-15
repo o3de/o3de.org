@@ -44,7 +44,8 @@ Determines the number of times that effect is applied\.
 Determines the degree of random variation for the heightmap\.  
 **Slope Smoothing \(Blur Passes\)**  
 Sets the number of times that smoothing is applied to the noise filter\.  
-**Cover \(Exp\. Substract\)**    
+**Cover \(Exp\. Substract\)**  
+  
 **Sharpness \(Exp\. Base\)**  
 Determines the sharpness of the surface\.  
 **Sharpness \(Freq\. Step\)**  

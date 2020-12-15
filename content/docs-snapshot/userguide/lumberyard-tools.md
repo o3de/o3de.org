@@ -36,7 +36,7 @@ Displays the ID and name for component entity system objects\.
 [Entity Outliner](component-entity-outliner.md)  
 Displays all component entities used for a level\.
 
-[FBX Settings](char-fbx-importer.md)  
+[FBX Settings](fbx-intro.md)  
 Imports single static meshes and materials from FBX\.
 
 [Layers](component-entity-outliner-layers.md)  

@@ -1,7 +1,11 @@
 # Setting Up PyCharm for Debugging Waf<a name="az-code-gen-pycharm"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 PyCharm is an integrated development environment for Python which includes a graphical debugger that is useful for debugging Waf\. 
 

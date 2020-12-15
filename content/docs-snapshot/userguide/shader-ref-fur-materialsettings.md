@@ -35,6 +35,8 @@ Default fur **Shader Params** are as follows:
 When you enable **Fur Color Data** under **Shader Generation Params**, the following additional parameters appear:
 
 
+
+
 ****  
 
 | Parameter Name | Value Range | Description | 
@@ -44,6 +46,8 @@ When you enable **Fur Color Data** under **Shader Generation Params**, the follo
 | Wind Scale | \[0\.0, 1\.0\] | Scale of local wind speed to apply to the fur\. | 
 
 When you enable **Wind bending** under **Shader Generation Param**, the following additional parameters appear in **Shader Params**:
+
+
 
 
 ****  

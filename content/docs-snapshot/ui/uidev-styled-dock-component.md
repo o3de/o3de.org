@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI styled dock widget<a name="uidev-styled-dock-component"></a>
 
 Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in Lumberyard called "fancy docking", which provides users with a variety of options for arranging their window layout\.

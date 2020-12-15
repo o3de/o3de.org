@@ -1,7 +1,11 @@
 # AZ Code Generator Parameters<a name="az-code-gen-parameters"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 For best results, pass the options for AZ Code Generator in to the Waf build system\. However, you can also specify the parameters for `AzCodeGenerator.exe` on the command line\.
 

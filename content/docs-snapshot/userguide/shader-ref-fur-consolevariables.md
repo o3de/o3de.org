@@ -1,6 +1,8 @@
 # Fur Console Variables<a name="shader-ref-fur-consolevariables"></a>
 
 
+
+
 ****  
 
 | Console Variable Name | Value Range | Description | 

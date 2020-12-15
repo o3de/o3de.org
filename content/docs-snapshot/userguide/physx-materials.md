@@ -106,7 +106,7 @@ There is a known issue where switching physics material libraries between collid
 
 Static entities that have PhysX collider triangle mesh assets can have physics materials assigned per face\. You define physics material placement by assigning placeholder materials to the faces of the triangle collision mesh in a content creation application\. The names of placeholder materials become physics material properties of the collider component\. 
 
-For more information on creating PhysX collider mesh assets, see [Export PhysX collider mesh assets](physx-export-physx-mesh-asset.md)\.
+For more information on creating PhysX collider mesh assets, see [FBX Settings PhysX export](fbx-physx-export.md)\.
 
 **Note**  
 You can use the names of the placeholder materials to automate material assignment in Lumberyard by using an `_` in the placeholder material name\. The FBX exporter parses placeholder material names found on PhysX collider mesh assets as `PropertyName_PhysicsMaterialName`\.   

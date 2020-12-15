@@ -35,7 +35,9 @@ In Lumberyard version 1\.23 and later, if you intend to create new projects, the
 
    You can also create, enable, and disable these capabilities from the command line\. For more information, see [Using Lumberyard Setup Assistant Batch](lumberyard-launcher-batch-using.md) and [Lmbr\.exe](lmbr-exe.md)\.
 
-1. Select **Visual Studio 2017**, **Visual Studio 2019**, or both\.  
+1. Select **Visual Studio 2017** or **Visual Studio 2019**\.
+**Note**  
+We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.  
 ![\[Use Lumberyard Setup Assistant to configure Lumberyard, and install software and plugins.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/setup/ui-setup-assistant-1.24.png)
 **Note**  
 Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](waf-user-options-and-settings.md)\.
@@ -46,6 +48,4 @@ For more information about installing and configuring Visual Studio for Lumberya
 
 1. Follow the instructions on each page\.
 
-1. When you have the required software and SDKs installed, click **Configure project** or **Launch Editor**\. For more information about configuring your project, see [Creating Lumberyard projects](configurator-intro.md)\.
-
-1. Log in your existing Amazon account or create an account to use the editor\.
+1. When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. For more information about configuring your project, see [Creating Lumberyard projects](configurator-intro.md)\.

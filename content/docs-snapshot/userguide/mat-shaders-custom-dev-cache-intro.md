@@ -124,6 +124,8 @@ lumberyard_version\dev\cache\your_game\platform\user\shaders\cache\<platform>\st
 
 You can find the build platform subfolders listed in the following table in the `lumberyard_version\dev\Cache\your_game\platform\user\cache\shaders\` directory\.
 
+ 
+
 
 ****  
 

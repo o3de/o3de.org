@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI radio button style<a name="uidev-radio-button-component"></a>
 
 Use radio buttons to enable users to select from two or more options, when users must select exactly one choice\. Choosing a radio button deselects the previously selected button\.

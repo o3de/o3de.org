@@ -41,7 +41,7 @@ You can adjust the manipulator independent of the entity to create a custom refe
 
 1. In the viewport, select an entity\. 
 
-1. Press and hold **Ctrl** and scroll the middle mouse button to select a manipulator mode, such as translation\.
+1. Select a manipulator mode, such as translation\.
 
 1. Press and hold **Ctrl** and **Alt** and click a target entity in the viewport\. This matches the manipulator to the translation or orientation of the target entity\.  
 **Example**  

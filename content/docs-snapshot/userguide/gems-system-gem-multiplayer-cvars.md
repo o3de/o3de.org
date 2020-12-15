@@ -20,8 +20,8 @@ Disconnects the local client from its active `GridSession`, if any\.
 Sets the GridMate version number\.
 
 **gm\_netsec\_enable**  
-Specifies whether encryption is used for connections\. The default is `false`\.  
-If encryption parameters are not present or invalid, the connection for the session is not encrypted\.
+Specifies whether network level encryption is used for connections\. A value of `0` disables encryption and a value of `1` enables encryption\. The default for the multiplayer gem is `0` \(disabled\)\.  
+In the **Multiplayer Sample**, this value is overridden to be enabled in `game.cfg`\.
 
 **gm\_netsec\_private\_key**  
 Specifies the private key file \(PEM format\) for a secure network connection when `FileDataSource` is used as a certificate manager\. This setting overrides any previously configured values in `FileDataSource`\. If network encryption is enabled, this value must be set on the host of a `GridSession` when the session is created\. This setting is disabled in release builds\.
@@ -33,10 +33,10 @@ Specifies the private key file \(PEM format\) for a secure network connection wh
 Specifies the CA Certificate file \(PEM format\) for a secure network connection when the `FileDataSoruce` is used as a certificate manager\. This setting overrides any previously configured values in `FileDataSource`\. This value must be set on the client when trying to join a `GridSession` using encryption\. This setting is disabled in release builds\.
 
 **gm\_netsec\_verify\_client**  
-Enables client verification\. If not enabled, only the server is authenticated\. Must be set on the host of a `GridSession`\. The default is `false`\.
+Enables client verification\. If not enabled, only the server is authenticated\. Must be set on the host of a `GridSession`\. The default is `0`, disabled\.
 
 **gm\_disconnectDetection**  
-Sets whether disconnect detection is enabled for a particular `GridSession`\. Must be set on the host of `GridSession`\. If disconnect detection is enabled, clients that do not respond to inquiries within the timeout window are disconnected\. The default is `true`\.
+Sets whether disconnect detection is enabled for a particular `GridSession`\. Must be set on the host of `GridSession`\. If disconnect detection is enabled, clients that do not respond to inquiries within the timeout window are disconnected\. The default is `1`, enabled\.
 
 **gm\_disconnectDetectionRttThreshold**  
 A RTT threshold, in milliseconds, that specifies the time after which a connection is dropped when there is no response\. The default is `500`\.
@@ -105,3 +105,7 @@ Configures the server process to start matchmaking backfill on players removed a
 
 **gamelift\_flexmatch\_start\_delay**  
 Delay to add to start matchmaking backfill on new game session create\.
+
+**gm\_netsec\_enable**  
+Specifies whether network level encryption is used for connections\. A value of `0` disables encryption and a value of `1` enables encryption\. The default for the multiplayer gem is `0` \(disabled\)\.  
+In the **Multiplayer Sample**, this value is overridden to be enabled in `game.cfg`\.

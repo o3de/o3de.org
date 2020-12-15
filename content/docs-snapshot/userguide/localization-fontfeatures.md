@@ -1,5 +1,7 @@
 # Font Features<a name="localization-fontfeatures"></a>
 
+
+
 ## Language\-Specific Font Assets<a name="localization-fontfeatures-assets"></a>
 
 You can group [Font Family XML](ui-fonts-create-font-families.md) definitions by using a `lang` attribute\. This attribute tells the localization system to load font assets only for the currently actively language\. To see an example, open the **[Samples Project](sample-project-samples.md)** and, in the [**UI Editor**](ui-editor-using.md), open `dev/Gems/LyShineExamples/Assets/UI/Fonts/LyShineExamples/NotoSans/NotoSans.fontfamily`\.

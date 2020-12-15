@@ -1,7 +1,11 @@
 # Managing Bots<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots"></a>
 
+
 ****  
-This feature is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| This feature is in preview release and is subject to change\. | 
 
 You use the **Bots** tab to manage your Amazon Lex bots\.
 

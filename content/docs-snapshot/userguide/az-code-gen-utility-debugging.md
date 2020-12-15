@@ -1,7 +1,11 @@
 # Debugging the AZ Code Generator Utility<a name="az-code-gen-utility-debugging"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 When using Waf and the AZ Code Generator utility, you might need to [debug Waf Python scripts](az-code-gen-waf-debugging.md) and your [template drivers](az-cod-gen-template-driver-debugging.md)\. You can also debug the AZ Code Generator utility itself, although it is less likely to be necessary\. You can debug the AZ Code Generator utility by using Visual Studio in Windows or Xcode in macOS\.
 

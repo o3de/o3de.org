@@ -32,7 +32,7 @@ Compile the Lumberyard Editor and tools
 
    Depending on your hardware, the build may take a while to complete\.
 
-To learn the general steps for creating a release build in Lumberyard, see [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md)\. For more information about creating release builds for Android and iOS, see [Create Android and iOS projects in Lumberyard](mobile-support-intro.md)\.
+To learn the general steps for creating a release build in Lumberyard, see [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md)\. For more information about creating release builds for Android and iOS, see [Developing for Android and iOS with Lumberyard](mobile-support-intro.md)\.
 
 ## Topics<a name="game-build-intro-topics"></a>
 

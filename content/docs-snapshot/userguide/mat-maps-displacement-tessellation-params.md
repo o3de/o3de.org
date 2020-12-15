@@ -12,6 +12,8 @@ To apply tessellation to an object and set parameter values, complete this proce
 
 1. Under **Shader Params**, adjust the values of the following parameters\.
 
+ 
+
 
 **Tessellation Parameters**  
 

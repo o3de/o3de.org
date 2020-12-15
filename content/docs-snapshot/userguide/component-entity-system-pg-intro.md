@@ -13,6 +13,8 @@ Lumberyard’s components have a simple lifecycle\. When an entity is activated,
 **Note**  
 A component can be activated and deactivated many times before it is deleted\. For example, it might be deactivated temporarily while it is being streamed out\.
 
+
+
 The remaining API operations of a component should be established by the EBus that it implements\.
 
 Components can depend on services\. Such services usually have a one\-to\-one relationship with EBuses\. If a component declares that it depends on \(requires\) a service, any entity that uses the component must also contain a component that provides the required services\.

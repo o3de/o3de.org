@@ -1,57 +1,82 @@
-# Troubleshooting for Android<a name="troubleshoot-android"></a>
+# Troubleshooting Lumberyard issues on Android<a name="troubleshoot-android"></a>
 
-This section shows common issues when building for Android, and steps to help resolve them\.
+ Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Amazon Lumberyard to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\. 
 
-If you run your app and see a black screen, try to debug your app by doing the following\.
+For information on how to design assets and configure renderer settings to improve performance, see [Lumberyard Performance Tuning Guidelines for Mobile Devices](ios-android-performance-guidelines.md)\. 
 
-**To debug your app**
+ All of the advice in this section is specific to issues you'll encounter when building with the Lumberyard tools, or when you're running a project on a device and see obvious errors caused by the engine itself\. For general advice and instructions on debugging your Lumberyard project for Android, see the [Android Studio Debugger documentation](https://developer.android.com/studio/debug)\. 
 
-1. Inspect the device log by using `"adb logcat -s LMBR"`\. See if the runtime reports show any errors\.
+ If you have a question that isn't answered here, try checking in with the Lumberyard community using one of these resources: 
++ [The Lumberyard forums](https://forums.awsgametech.com/)
++ [The unofficial Lumberyard Discord server](https://discord.gg/tWrJ68)
 
-1. Set the name of the level load for your game project in the `autoexec.cfg`\. This file is located in your game projects directory, such as the `lumberyard_version/dev/SamplesProject`\) directory\.
+**Topics**
++ [Black screen when launching on a device](#troubleshoot-android-black-screen)
++ [Maven repository warnings](#troubleshoot-maven-warnings)
++ [Debug release APKs](#troubleshoot-android-debug-release)
 
-1. Check your computer to see if traffic over port 61453 is allowed\. The runtime needs to connect to the shader compiler to allow your game to display\.
+## Black screen when launching on a device<a name="troubleshoot-android-black-screen"></a>
 
-1. If your shader compiler is already running, shut it down\. Then delete the directories that the compiler creates alongside the executable, and restart it\.
-
-1. Delete the app from your device and use the build command to build and deploy it\.
-
-The shaders for Lumberyard are written in HLSL\. At runtime, the engine selects different versions, or permutations, of the shaders to use based on materials and current rendering state\. The exact HLSL source code is known but needs to be translated to GLSL for the shader to work on Android devices\. The remote shader compiler translates HLSL to GLSL and returns the GLSL shader source to the engine, which then compiles it through OpenGL calls to create the final shader to use\. The GLSL source is also cached on the device\. This way, in the future, the engine can read the cached shader from the device instead of connecting to the remote shader compiler to get it\.
-
-By default, the Lumberyard build tools strip debugging information from the release APK\. This makes it impossible to trace the code under a debugger\. If you need to debug this build, make the following changes\.
-
-**To debug a release APK**
-
-1. Navigate to the `lumberyard_version\dev\Tools\build\waf-1.7.13\lmbrwaflib` directory\.
-
-1. In a text editor, open the `compile_settings_android.py`\.
-
-1. Add the following line to the `load_release_android_settings` section\.
-
-   ```
-   env['ANDROID_DEBUG_MODE'] = '--debug-mode'
-   ```
-
-If you're using Visual Studio to debug, do the following\.
-
-1. Navigate to the `lumberyard_version\dev\Tools\build\waf-1.7.13\lmbrwaflib` directory\.
-
-1. In a text editor, open the `compile_settings_android_armv8.py` file\.
-
-1. Add the following code to the `load_release_android_armv8_settings` section\.
-
-   ```
-   	// for armv8
-       conf.env['EXT_LIBS'] += [
-           conf.add_to_android_cache(os.path.join(conf.env['ANDROID_NDK_HOME'], 'prebuilt', 'android-arm64', 'gdbserver', 'gdbserver'))
-       ]
-   ```
-
-1. Rebuild your app, and you should be able to debug afterward, as you would with any other build\. Be aware that the compiler optimizes your variables, so it might be difficult to see their values unless you disassemble the code and inspect CPU registers and memory\.
-
-**To determine if a device supports ARMv8**
-+ Open a command line prompt and enter the following\.
+ Oftentimes, launching a build and seeing a black screen means that either a map failed to load, or shaders are missing\. You can diagnose and resolve the problem by trying the following actions: 
++  Inspect logs from `adb`\. Log messages from the Lumberyard engine include the string `LMBR`, and you can filter the output from `adb logcat` to display only these messages\. Use the following command in a Windows command prompt to get the current device logs: 
 
   ```
-  adb [-s <deivce_id>] shell getprop ro.product.cpu.abi
+  adb logcat -s LMBR
   ```
+
+   For more information on `adb logcat` and how to improve filtering and which messages are displayed, see the [official Android logcat command\-line tool documentation](https://developer.android.com/studio/command-line/logcat)\. 
++ Make sure that a map is being loaded upon the application launch by following these steps:
+
+  1. Open the file `lumberyard_install_dir/dev/project-name/autoexec.cfg` in a text editor\.
+
+  1. Check the file for a `map` command\. If the map is missing, or references an incorrect map name, add the following line or change the `map` value:
+
+     ```
+     map level-to-load
+     ```
++  Check to make sure that the device is allowed to connect to the shader compiler\. Run through the following steps to check your configuration and make sure that everything is correctly enabled: 
+
+  1.  If the Shader Compiler is on a remote host, make sure that inbound traffic to the shader compiler's port on the host is allowed\. By default, this port is **61453**\. See also [Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md) for full information on configuring to connect to a remote shader compiler\. 
+
+  1.  If the Shader Compiler is running on the same machine with the Android device connected to it, make sure that port forwarding is set up to send traffic to the host from the Android device\. By default, the Shader Compiler's port is **61453**\. Configure device port forwarding by running the following command in a Windows command prompt\. 
+
+     ```
+     adb reverse tcp:shader-compiler-port tcp:shader-compiler-port
+     ```
+
+  1.  Close the Shader Compiler, delete any produced assets, and restart it\. Shader Compiler assets for Android are placed in `lumberyard_install_dir\dev\Cache\project-name\es3\user\cache\shaders`\. 
+
+  1. Delete the application from your device, rebuild, and re\-deploy\.
+
+   To run through the full process of setting up a connection from your device to the Shader Compiler, see [Connect to the Shader Compiler](android-build-deploy.md#running-the-shader-compiler-for-android) or [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs)\. 
+
+## Maven repository warnings<a name="troubleshoot-maven-warnings"></a>
+
+ As part of a Lumberyard build or configure, you might see some warnings similar to the following\. 
+
+```
+[WARN] Failed to connect to https://maven.google.com/androidx/compose/ui/group-index.xml.  Access to Google's main Maven repository may be incomplete.
+[WARN] Failed to connect to https://maven.google.com/androidx/core/group-index.xml.  Access to Google's main Maven repository may be incomplete.
+```
+
+ Behind the scenes, `lmbr_waf` is invoking the Android build tools, which use the Gradle build system\. Gradle pulls up\-to\-date libraries and does some versioning dependency checks by pulling information from Google's Maven repositories\. These warnings aren't fatal and shouldn't prevent you from producing a build, but you can remove them by updating the Gradle version for the Android Studio project generated by `lmbr_waf configure`\. 
+
+**To remove Maven repository errors**
+
+1.  Import the project located at `lumberyard_install_dir/dev/Solutions/LumberyardAndroidSDK` into Android Studio\. See [Import a Gradle project to Android Studio](https://developer.android.com/studio/intro/migrate#import_a_gradle-based_intellij_project)\. 
+
+1.  Wait for the project to load and for the initial Gradle configure to complete\. 
+
+1.  At a certain point during the configuration, Android Studio will report that the Gradle plugin is ready to update by displaying a popup notification\. Select **update** in this notification\.   
+![\[A popup notification from Android Studio. The blue text at the far right, "update", is a call to action for the user to select.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/platforms/android/gradle-update.png)
+
+1.  Another dialog box will appear, informing you of the version to update to and giving you the option to see release notes\. Select the **Update** button in this dialog to update the Gradle plugin and remove build warnings\. 
+
+**Note**  
+ If you ever regenerate your Android Studio project, you'll need to perform these steps again\. As long as the project isn't overwritten, you can safely run `lmbr_waf configure` without needing to make more changes\. 
+
+## Debug release APKs<a name="troubleshoot-android-debug-release"></a>
+
+ As part of building for release, debugging symbols are stripped from the final executable\. Whether you're trying to diagnose issues before release or working on something reported by a user in your Google Play Store release, the solution is the same\. Android uses special metadata associated with the APK to determine whether or not the Android debugger is allowed to connect to a release binary\. 
+
+ This setting is controlled through the Gradle build system\. See the Android Studio documentation on [enabling debugging](https://developer.android.com/studio/debug#enable-debug) for build variants, and [debugging pre\-build APKs](https://developer.android.com/studio/debug/apk-debugger)\. This documentation has a full set of instructions on how to use debug symbols generated by earlier builds with release APKs\. 

@@ -1,6 +1,6 @@
-# Downloading Lumberyard<a name="setting-up-downloading-lumberyard"></a>
+# Installing Lumberyard<a name="setting-up-downloading-lumberyard"></a>
 
-**Download the latest version of Lumberyard Editor**  
+**Download the latest version of Lumberyard Installer**  
 [https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)
 
 You can also download earlier versions of Lumberyard and assets from the [Amazon Lumberyard Downloads](https://aws.amazon.com/gamedev/lumberyard/downloads) page\.
@@ -27,13 +27,12 @@ If you get file errors during extraction about `AssetProcessor.exe`, `AssetProce
 
 **To use the Lumberyard installer**
 
-1. If you haven't already, on the [Lumberyard Downloads](https://aws.amazon.com/gamedev/lumberyard/downloads) page, click **Download Now**\. If your download is interrupted, the installer automatically resumes the download\. 
-
 1. Navigate to your download directory and run the Lumberyard Installer executable file: `LumberyardInstaller.exe`
 
 1. **\(Optional\)** Change the location of the installation by selecting **Options**\. The default installation location is `C:\Amazon`\. 
 
-1. On the **Welcome** page of the installer, click **Install**\.
+1. On the **Welcome** page of the installer, click **Install**\.  
+![\[Lumberyard Installer.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-installer-1.23.png)
 **Note**  
 In some situations, the Lumberyard Installer can stop responding and refuse to progress\. The only known remedy at this time is to forcibly terminate the installer through the Windows Task Manager and reboot, then retry the installation\.
 
@@ -65,6 +64,3 @@ After you install Lumberyard, the Lumberyard root directory includes the followi
 + `3rdParty`
   + Third\-party software required to use or compile Lumberyard
   + `3rdParty.txt` – System file used by other third\-party tools to verify the directory\.
-+ `docs`
-  + PDF of the [Amazon Lumberyard Release Notes](https://docs.aws.amazon.com/lumberyard/latest/releasenotes/)\.
-  + PDF of the [Amazon Lumberyard Getting Started Guide](https://docs.aws.amazon.com/lumberyard/latest/gettingstartedguide/)\.

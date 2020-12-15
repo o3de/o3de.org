@@ -1,7 +1,11 @@
 # AZ Code Generator Integration with Waf<a name="az-code-gen-waf-integration"></a>
 
+
 ****  
-AZ Code Generator is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| AZ Code Generator is in preview release and is subject to change\. | 
 
 AZ Code Generator is fully accessible for any Waf target as the feature `az_code_gen`\. The `dev\Tools\Build\waf-<version_number>\lmbrwaflib\az_code_generator.py` file contains the core of the Waf integration code\. It includes the `az_code_gen` feature that can be used by any `wscript` file\.
 

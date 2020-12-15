@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI sliders<a name="uidev-sliders-component"></a>
 
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.

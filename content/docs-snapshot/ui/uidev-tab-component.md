@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI tab component<a name="uidev-tab-component"></a>
 
 Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application\.

@@ -44,5 +44,3 @@ OIT requires the following:
 1. Under the `[Windows Options]` section, set `win_vs2017_winkit` to your version of the Windows 10 SDK \(for example, *10\.1\.17134\.12*\)\. 
 
 1. Build your game project\. For more information, see [Building Lumberyard projects](game-build-intro.md)\.
-**Note**  
-Windows 7 does not support OIT\. However, if you build your game project on Windows 7 with an installed and configured version of the Windows 10 SDK, this generates a binary file that can support OIT on Windows 10\. This allows you to use older versions of Windows to build DirectX 11\.3 features\.

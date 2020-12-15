@@ -29,4 +29,6 @@ Interested? Read on to learn what’s in the box\.
 
  [Create with Amazon Lumberyard](wg-create-intro.md) \- A quick introduction to Lumberyard’s workflows and core tools\.
 
- [Additional Lumberyard resources](wg-resources-intro.md) \- Links to video tutorials, documentation, and Lumberyard online communities\.
+ [Get started with Amazon Lumberyard tutorials](wg-getstarted.md) \- Step\-by\-step tutorials to get you hands\-on experience with Lumberyard’s workflows and core tools\.
+
+ [Additional Lumberyard Resources](wg-resources-intro.md) \- Links to video tutorials, documentation, and Lumberyard online communities\.

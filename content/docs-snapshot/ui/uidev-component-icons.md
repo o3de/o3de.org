@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard component icons<a name="uidev-component-icons"></a>
 
 This page contains an organized collection of icons currently used by Lumberyard component cards\. Use the following chart to help you find an icon\.

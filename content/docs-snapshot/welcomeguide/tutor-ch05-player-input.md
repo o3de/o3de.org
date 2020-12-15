@@ -58,9 +58,9 @@ The chicken entity is set to use a different `.inputbindings` than the one you c
 1.  Place an **On Held** node to the right of **Create Input Event Notification ID** in the graph\. The **On Held** node is in an **Input** container\. The **Input** container may also have on pressed and on released events in the same network\.   
 ![\[Lumberyard setting up a Turn event handler in Script Canvas\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-script-canvas-turn-input-a-1.26.png)
 
-1.  Click the **Create Input Event Notification ID** node to select it\. Set the **actionName** property to `Turn` either by typing in the field on the node, or in the **Node Inspector** to the right\. This sets the script to respond the `Turn` event you created in the input bindings\. 
+1.  Click the **Create Input Event Notification ID** node to select it\. Set the **actionName** property to `Turn` either by typing in the field on the node, or in the **Node Inspector** to the right\. This sets the script to respond to the `Turn` event you created in the input bindings\. 
 
-1.  Click the **On Held** node to select it\. In the node inspector to the right, enable the **Display Connection Controls** property\. This exposes some input connection pins on the **Input** node, and enables the node to be wired into a network\. Most often, event nodes like **On Held** begin a network, so their input connections pins are hidden by default\. 
+1.  Click the **Input** node to select it\. In the node inspector to the right, enable the **Display Connection Controls** property\. This exposes some input connection pins on the **Input** node, and enables the node to be wired into a network\. Most often, event nodes like **On Held** begin a network, so their input connections pins are hidden by default\. 
 
 1.  Wire up the following pins by clicking and dragging from the *first pin* to the *second pin*: 
 
@@ -110,7 +110,7 @@ Select the chicken by clicking it in **Perspective**\. In **Entity Inspector**, 
 ![\[Lumberyard chicken turn example\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/anim-chicken-turn-1.26.gif)
 
 **Note**  
-This tutorial implements a very simple approach to handling turn input\. The result of this tutorial is not framerate independent\. The chicken will turn slower or faster depending on framerate\. In `ch05_chicken_movement_final.scriptcanvas` you can examine a better implementation that multiplies the input buy a `turnMaxVelocity` and puts the result in a `turnVelocity` variable\. The turn is computed **On Tick** using `Delta` \(the elapsed time between ticks\) to make the rate the chicken turns consistent regardless of framerate\.
+This tutorial implements a very simple approach to handling turn input\. The result of this tutorial is not framerate independent\. The chicken will turn slower or faster depending on framerate\. In `ch05_chicken_movement_final.scriptcanvas` you can examine a better implementation that multiplies the input by a `turnMaxVelocity` and puts the result in a `turnVelocity` variable\. The turn is computed **On Tick** using `Delta` \(the elapsed time between ticks\) to make the rate the chicken turns consistent regardless of framerate\.
 
 For extra credit, try adding a new event generator to the input bindings\. Create a small graph in Script Canvas that uses a **DrawTextOnScreen** node to display a message, variable, or value on screen when a key is pressed\. Hint: use a **BuildString** Script Canvas node to create a string from a numerical value\.
 

@@ -7,6 +7,8 @@ A device scale is computed by using the ratio of the authored canvas size to the
 The following **Scale to Device** settings are available:
 
 
+
+
 ****  
 
 | Property | Description | 
@@ -54,6 +56,8 @@ The background image is a texture with simple [settings](#ui-editor-transform-sc
 The elements that make up the UI are all contained in a parent element and has the following settings\.
 
 
+
+
 **Parent UI element settings**  
 
 | Property | Values | 
@@ -72,6 +76,8 @@ In this uniform scale to fit Y example, the layout column and its buttons are un
 The background image is a texture with simple [settings](#ui-editor-transform-scale-uniform)\.
 
 The elements that make up the buttons are contained in a layout column element\. The layout column element contains the UI buttons and has the following settings\.
+
+
 
 
 **Layout Column element settings for uniform scaling to fit Y**  

@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard Qt control gallery tool<a name="uidev-control-gallery"></a>
 
 Use the **Amazon Qt Control Gallery** tool to see the Amazon Lumberyard custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
@@ -8,13 +14,12 @@ Use the **Amazon Qt Control Gallery** tool to see the Amazon Lumberyard custom Q
 
 Before you begin, make sure that you have Lumberyard 1\.25 or later installed on your machine\.
 
-Open File Explorer and go to your build directory\. \(For example, `C:\{your-lumberyard-installation-path}\{version}\dev\Bin64vc142\` or `Bin64vc141\`\.\)
+1.  Open File Explorer and go to your build directory\. \(For example, `C:\{your-lumberyard-installation-path}\{version}\dev\Bin64vc142\` or `Bin64vc141\`\.\) 
 
-Double\-click on `AmazonQtControlGallery.exe` to launch the **Amazon Qt Control Gallery** tool\.
-
+1.  Double\-click on `AmazonQtControlGallery.exe` to launch the **Amazon Qt Control Gallery** tool\.   
 ![\[image\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/amazon-qt-control-gallery-file.png)
 
-Use the main dropdown menu to navigate through the pages\. For each component, the right column shows a live example of how the widget looks and works\. In the left column, you will find sample code related to each component\.
+1.  Use the main dropdown menu to navigate through the pages\. For each component, the right column shows a live example of how the widget looks and works\. In the left column, you will find sample code related to each component\. 
 
 **Note**  
 The gallery does not cover how to set up a window for your tool, or the basics of how the Qt library works\. Its primary objective is to illustrate the styles and features of the components in the library\.

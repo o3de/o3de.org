@@ -150,7 +150,9 @@ In order to begin managing a Cloud Canvas project, you add the IAM user credenti
 
 1. In the **Add profile** dialog box, enter the following information:
    + For **Profile name**, enter a name of your choice \(for example, **CloudCanvasAdmin**\)\.
-   + For **AWS access key** and **AWS secret key**, enter the access key and secret key\.  
+   + For **AWS access key** and **AWS secret key**, enter the access key and secret key\.
+
+      
 ![\[Enter profile information for your AWS account in Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-credentials-manager-add-profile-dialog-box.png)
 **Important**  
 Do not share these credentials with anyone, and do not check them into source control\. These credentials grant control over your AWS account, and a malicious user could incur charges\.

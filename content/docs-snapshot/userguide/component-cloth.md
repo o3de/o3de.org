@@ -1,165 +1,221 @@
-# Cloth<a name="component-cloth"></a>
+# Cloth component<a name="component-cloth"></a>
 
 
 ****  
 
 |  | 
 | --- |
-| This feature is an [experimental](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#experimental) release and is subject to change\.  | 
+| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-The **Cloth** component treats the vertices of any mesh that it references as particles and applies physical properties, forces, and constraints to simulate the behavior of cloth\. You can add this component to any entity that has **Mesh** or **Actor** components\. 
-+ [Cloth Component Properties](#component-cloth-properties) 
-+ [Debug Visualization](#component-cloth-debug-visualization) 
-+ [References](#component-cloth-references) 
+The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth\. You can add this component to any entity that has **Mesh** or **Actor** components\. You can add multiple cloth components to an entity\. 
 
-## Cloth Component Properties<a name="component-cloth-properties"></a>
+The **Cloth** component is provided by the [NVIDIA Cloth gem](nvidia-cloth.md)\. 
 
-### Base Properties<a name="component-cloth-base-properties"></a>
+For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](nvidia-cloth-intro.md)\. 
 
-Set the core behavior of the cloth simulation\.
+**Contents**
++ [Base properties](#component-cloth-base-properties)
++ [Motion constraints properties](#component-cloth-motion-constraints-properties)
++ [Backstop properties](#component-cloth-backstop-properties)
++ [Damping properties](#component-cloth-damping-properties)
++ [Inertia properties](#component-cloth-inertia-properties)
++ [Wind properties](#component-cloth-wind-properties)
++ [Collision properties](#component-cloth-collision-properties)
++ [Self Collision properties](#component-cloth-self-collision-properties)
++ [Fabric stiffness properties](#component-cloth-fabric-stiffness-properties)
++ [Fabric compression properties](#component-cloth-fabric-compression-properties)
++ [Fabric stretch properties](#component-cloth-fabric-stretch-properties)
++ [Tether constraints properties](#component-cloth-tether-constraints-properties)
++ [Quality properties](#component-cloth-quality-properties)
 
-![\[Base properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-A-1.23.png)
+## Base properties<a name="component-cloth-base-properties"></a>
+
+![\[Base properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-A-1.27.png)
+
+**Simulate in editor**  
+Enable to simulate cloth in editor\. 
 
 **Mesh node**  
-A list of meshes to simulate as cloth\. The meshes available in the list that have **Cloth** modifiers applied in the **Scene Settings** tool\. 
+The mesh node to simulate as cloth\. The meshes available in the list have **Cloth** modifiers applied in **FBX Settings**\. 
 
 **Mass**  
-Scale multiplier applied to the mass of all particles associated with this cloth component\. Setting this parameter to **0\.0** makes all particles static\. 
+Scale multiplier applied to the mass of all cloth particles\. A value of **0\.0** in this property makes all cloth particles static\. 
 
 **Custom Gravity**  
-Enable to override global gravity and set a custom gravity value for this cloth modifier\. 
+Enable to override global gravity and set a custom gravity value for this cloth\. 
 
 **Gravity**  
-With **Custom Gravity** enabled, this value is used for gravity for this cloth simulation\. The default, **\-9\.81** on the Z axis, is standard gravity\. 
+Set gravity for this cloth\. The default, **\-9\.81** on the **Z** axis, is standard gravity\.   
+The **Gravity** property is enabled by the **Custom Gravity** property\. 
 
 **Gravity Scale**  
-Scale multiplier applied to the gravity of all particles\.
-
-**Animation Blending**  
-Blend factor for cloth applied to meshes that also have skinned animation\.   
-**0\.0**: Cloth mesh is fully simulated\.   
-**1\.0**: Cloth mesh is fully animated\.   
-This property is available only when the **Cloth** component is applied to an **Entity** containing an **Actor** component\. 
+Scale multiplier applied to the gravity of cloth particles\.
 
 **Stiffness frequency**  
-An exponent that adjusts the overall stiffness of the cloth simulation\. This exponent is applied per second to the damping, damping linear and angular drag, wind drag and lift, self collision stiffness, fabric stiffness, fabric compression, fabric stretch and tether constraint stiffness properties described in the following sections\.
+Stiffness exponent that adjusts the overall stiffness of the cloth simulation\. This exponent is applied per second to these properties:   
++ **Damping**
++ **Damping \- Linear drag**
++ **Damping \- Angular drag**
++ **Wind \- Air drag coefficient**
++ **Wind \- Air lift coefficient**
++ **Self collision \- Stiffness**
++ **Fabric stiffness**
++ **Fabric compression**
++ **Fabric stretch**
++ **Tether \- Stretch**
 
-### Damping Properties Group<a name="component-cloth-damping-properties"></a>
+## Motion constraints properties<a name="component-cloth-motion-constraints-properties"></a>
 
-Adjust the decay of particle velocities over time\.
+![\[Motion constraints properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-B-1.27.png)
 
-![\[Damping properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-B-1.23.png)
+**Max distance**  
+Maximum distance limit in meters for cloth particle movement\. 
+
+**Scale**  
+Scale value applied to all motion constraints\.   
+**0\.0**: Motion constraints have no effect\.   
+**1\.0**: Motion constraints are fully applied\. 
+
+**Bias**  
+Bias value in meters added to all motion constraints\. Valid values range from **\-Infinity** to **Infinity**\. 
+
+**Stiffness**  
+Stiffness for motion constraints\.   
+**0\.0**: Stiffness is not applied to motion constraints\.   
+**1\.0**: Stiffness is fully applied to motion constraints\. 
+
+## Backstop properties<a name="component-cloth-backstop-properties"></a>
+
+![\[Backstop properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-C-1.27.png)
+
+**Note**  
+Backstop properties are only available when a **Backstop** vertex color stream is specified in the **Cloth** modifier for the selected **Mesh node** in **FBX Settings**\. 
+
+**Radius**  
+The radius in meters of the backstop sphere\. 
+
+**Back offset**  
+The offset in meters for backstop spheres behind the cloth\. 
+
+**Front offset**  
+The offset in meters for backstop spheres in front of the cloth\. 
+
+## Damping properties<a name="component-cloth-damping-properties"></a>
+
+![\[Damping properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-D-1.27.png)
 
 **Damping**  
-Damps particle velocity\.   
+Damping of cloth particle velocity\.   
 **0\.0**: Velocity is unaffected\.   
 **1\.0**: Velocity is zeroed\. 
 
 **Linear Drag**  
-Portion of velocity applied to particles\.   
-**0\.0**: Particles are unaffected\.   
-**1\.0**: Global particle velocity is damped\. 
+Portion of velocity applied to cloth particles\.   
+**0\.0**: Cloth particles are unaffected\.   
+**1\.0**: Damped global cloth particle velocity\. 
 
 **Angular Drag**  
-Portion of angular velocity applied to turning particles\.   
-**0\.0**: Particles are unaffected\.   
-**1\.0**: Global particle angular velocity is damped\. 
+Portion of angular velocity applied to turning cloth particles\.   
+**0\.0**: Cloth particles are unaffected\.   
+**1\.0**: Damped global cloth particle angular velocity\. 
 
-### Inertia Properties Group<a name="component-cloth-inertia-properties"></a>
+## Inertia properties<a name="component-cloth-inertia-properties"></a>
 
-Adjust particle acceleration\. 
-
-![\[Inertia properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-C-1.23.png)
+![\[Inertia properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-E-1.27.png)
 
 **Linear**  
-Portion of linear acceleration applied to particles\.   
-**0\.0**: Particles are unaffected\.   
+Portion of linear acceleration applied to cloth particles\.   
+**0\.0**: Cloth particles are unaffected\.   
 **1\.0**: Physically correct linear acceleration\. 
 
 **Angular**  
-Portion of angular acceleration applied to turning particles\.   
-**0\.0**: Particles are unaffected\.   
+Portion of angular acceleration applied to turning cloth particles\.   
+**0\.0**: Cloth particles are unaffected\.   
 **1\.0**: Physically correct angular acceleration\. 
 
 **Centrifugal**  
-Portion of angular velocity applied to turning particles\.   
-**0\.0**: Particles are unaffected\.   
+Portion of angular velocity applied to turning cloth particles\.   
+**0\.0**: Cloth particles are unaffected\.   
 **1\.0**: Physically correct angular velocity\. 
 
-### Wind Properties Group<a name="component-cloth-wind-properties"></a>
+## Wind properties<a name="component-cloth-wind-properties"></a>
 
-Create a wind force to act on the cloth simulation\. 
+**Note**  
+The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](wind-provider.md)\. 
 
-![\[Wind properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-D-1.23.png)
+![\[Wind properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-F-1.27.png)
 
-**Velocity**  
+**Note**  
+Wind is disabled when both the below **Air drag** and **Air lift** coefficients are **0\.0**\. 
+
+**Enable local wind velocity**  
+Enable to set a wind **Local velocity** for this cloth\. When disabled, the velocity from Physics::WindBus will be used\. 
+
+**Local velocity**  
 Wind vector \(direction and magnitude\) in world coordinates\. A greater magnitude applies a stronger wind force\.   
-The wind **Velocity** property is disabled when both the below air drag and lift coefficients are **0\.0**\. 
+The wind **Local velocity** property is enabled by the **Enable local wind velocity** property\. 
 
 **Air drag coefficient**  
-Specifies how much drag air applies to the particles\.
+Specifies how much drag air applies to the cloth particles\.
 
 **Air lift coefficient**  
-Specifies how much lift air applies to the particles\.
+Specifies how much lift air applies to the cloth particles\.
 
-**Air Density**  
+**Air density**  
 The density of air used for drag and lift calculations\.
 
-### Collision Properties Group<a name="component-cloth-collision-properties"></a>
+## Collision properties<a name="component-cloth-collision-properties"></a>
 
-Adjust the effect of collisions with other PhysX colliders\.
-
-![\[Collision properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-E-1.23.png)
+![\[Collision properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-G-1.27.png)
 
 **Friction**  
-Controls the amount of friction between particles and colliders\.   
+Controls the amount of friction between cloth particles and colliders\.   
 **0\.0**: **Friction** disabled\. 
 
 **Mass scale**  
-Controls how quickly particle mass is increased during collisions\.   
+Controls how quickly cloth particle mass is increased during collisions\.   
 **0\.0**: **Mass scale** disabled\. 
 
 **Continuous detection**  
 Continuous collision detection improves collision by computing the time of impact between cloth particles and colliders\.   
 The increase in quality can impact performance\. We recommend that you use **Continuous detection** only when necessary\. 
 
-### Self Collision Properties Group<a name="component-cloth-self-collision-properties"></a>
+**Affects static cloth particles**  
+Enable to allow colliders to move static cloth particles\. Static cloth particles have a **0\.0** inverse mass\. 
 
-Enable and adjust the effect of the cloth colliding with itself\.
+## Self Collision properties<a name="component-cloth-self-collision-properties"></a>
 
-![\[Self collision properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-F-1.23.png)
+![\[Self collision properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-H-1.27.png)
 
 **Distance**  
-The minimum distance that the colliding particles must maintain from each other in meters\.   
+The minimum distance that the colliding cloth particles must maintain from each other in meters\.  
 **0\.0**: **Self collision** disabled\. 
 
 **Stiffness**  
 Stiffness for the self collision constraints\.   
 **0\.0**: **Self collision** disabled\. 
 
-### Fabric Stiffness Properties Group<a name="component-cloth-fabric-stiffness-properties"></a>
+## Fabric stiffness properties<a name="component-cloth-fabric-stiffness-properties"></a>
 
-Adjust the stiffness of the cloth\. As values for these properties approach **1\.0**, the more heavy and stiff the cloth appears\. 
-
-![\[Fabric stiffness properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-G-1.23.png)
+![\[Fabric stiffness properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-I-1.27.png)
 
 **Horizontal**  
-Stiffness value for horizontal constraints\. This value defines how much a cloth stretches and compresses horizontally\.   
-**0\.0**: No horizontal compression and stretch constraints\. 
+Stiffness value for horizontal stretch and compression constraints\.   
+**0\.0**: No horizontal stretch and compression constraints\. 
 
 **Horizontal multiplier**  
-Scale value for horizontal compression and stretch constraints\.   
-**0\.0**: No horizontal compression and stretch limits applied\.   
-**1\.0**: Fully apply horizontal compression and stretch limits\. 
+Scale value for horizontal stretch and compression constraints\.   
+**0\.0**: No horizontal stretch and compression constraints applied\.   
+**1\.0**: Fully apply horizontal stretch and compression constraints\. 
 
 **Vertical**  
-Stiffness value for vertical constraints\. This value defines how much a cloth stretches and compresses vertically\.   
-**0\.0**: No vertical compression and stretch constraints\. 
+Stiffness value for vertical stretch and compression constraints\.   
+**0\.0**: No vertical stretch and compression constraints\. 
 
 **Vertical multiplier**  
-Scale value for vertical compression and stretch constraints\.   
-**0\.0**: No horizontal compression and stretch limits applied\.   
-**1\.0**: Fully apply horizontal compression and stretch limits\. 
+Scale value for vertical stretch and compression constraints\.   
+**0\.0**: No horizontal stretch and compression constraints applied\.   
+**1\.0**: Fully apply horizontal stretch and compression constraints\. 
 
 **Bending**  
 Stiffness value for bending constraints\. This value defines how easily a cloth folds on itself\.   
@@ -167,23 +223,21 @@ Stiffness value for bending constraints\. This value defines how easily a cloth 
 
 **Bending multiplier**  
 Scale value for bending constraints\.   
-**0\.0**: No bending limits applied\.   
-**1\.0**: Fully apply bending limits\. 
+**0\.0**: No bending constraints applied\.   
+**1\.0**: Fully apply bending constraints\. 
 
 **Shearing**  
 Stiffness value for shearing constraints\. This value defines how easily a cloth twists\.   
 **0\.0**: No shearing constraints\. 
 
-**Shearing multiplie**  
+**Shearing multiplier**  
 Scale value for shearing constraints\.   
-**0\.0**: No shearing limits applied\.   
-**1\.0**: Fully apply shearing limits\. 
+**0\.0**: No shearing constraints applied\.   
+**1\.0**: Fully apply shearing constraints\. 
 
-### Fabric Compression Properties Group<a name="component-cloth-fabric-compression-properties"></a>
+## Fabric compression properties<a name="component-cloth-fabric-compression-properties"></a>
 
-Set the compression limits for fabric\.
-
-![\[Fabric Compression properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-H-1.23.png)
+![\[Fabric Compression properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-J-1.27.png)
 
 **Horizontal limit**  
 Compression limit for horizontal constraints\. This property is affected by **Horizontal multiplier** in the **Fabric stiffness** property group\.   
@@ -201,14 +255,12 @@ Compression limit for bending constraints\. This property is affected by **Bendi
 Compression limit for shearing constraints\. This property is affected by **Shearing multiplier** in the **Fabric stiffness** property group\.   
 **0\.0**: Shearing compression disabled\. 
 
-### Fabric Stretch Properties Group<a name="component-cloth-fabric-stretch-properties"></a>
-
-Set the stretch limits for fabric\.
+## Fabric stretch properties<a name="component-cloth-fabric-stretch-properties"></a>
 
 **Note**  
-For these properties, reduce **Stiffness** of **Tether constraints** or increase its **Scale** to allow cloth to stretch\. 
+For **Fabric stretch** properties, reduce **Stiffness** of **Tether constraints** or increase its **Scale** to allow cloth to stretch\. 
 
-![\[Fabric stretch properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-I-1.23.png)
+![\[Fabric stretch properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-K-1.27.png)
 
 **Horizontal limit**  
 Stretch limit for horizontal constraints\. This property is affected by **Horizontal multiplier** in the **Fabric stiffness** property group\.   
@@ -226,11 +278,9 @@ Stretch limit for bending constraints\. This property is affected by **Bending m
 Stretch limit for shearing constraints\. This property is affected by **Shearing multiplier** in the **Fabric stiffness** property group\.   
 **0\.0**: Shearing stretch disabled\. 
 
-### Tether Constraints Properties Group<a name="component-cloth-tether-constraints-properties"></a>
+## Tether constraints properties<a name="component-cloth-tether-constraints-properties"></a>
 
-Adjust the stiffness for tether constraints between particles with mass values and static particles\.
-
-![\[Tether constraints properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-J-1.23.png)
+![\[Tether constraints properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-L-1.27.png)
 
 **Stiffness**  
 Stiffness for tether constraints\.   
@@ -240,11 +290,9 @@ Stiffness for tether constraints\.
 **Scale**  
 Scale factor for tether constraint **Stiffness** 
 
-### Quality Properties Group<a name="component-cloth-quality-properties"></a>
+## Quality properties<a name="component-cloth-quality-properties"></a>
 
-Set the overall quality of the cloth simulation\.
-
-![\[Quality properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-K-1.23.png)
+![\[Quality properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-M-1.27.png)
 
 **Solver frequency**  
 Target solver iterations per second\. The executed number of iterations per second may vary dependent on many performance factors\. However, at least one iteration per frame is solved regardless of the value set\. 
@@ -252,36 +300,5 @@ Target solver iterations per second\. The executed number of iterations per seco
 **Acceleration filter iterations**  
 Number of iterations to average the delta time factor used for gravity and external acceleration\. 
 
-## Debug Visualization<a name="component-cloth-debug-visualization"></a>
-
-![\[Debug visualization of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/nvidiacloth/ui-cloth-component-debug-1.23.png)
-
-To enable the debug visualization of cloth, use these CVARs in the Editor Console 
-
-*cloth\_debugDraw*  
-Draw the cloth mesh wireframe\.   
-**0**: Disable wireframe display\.   
-**1**: Enable wireframe display\. 
-
-*cloth\_DebugDrawNormals*  
-Draw the cloth mesh normals\.   
-**0**: Disable normals display\.   
-**1**: Enable normals display\.   
-**2**: Enable normals, tangents and bitangents display\. 
-
-*cloth\_DebugDrawColliders*  
-Draw the cloth colliders\.   
-**0**: Disable collider display\.   
-**1**: Enable collider display\. 
-
-## References<a name="component-cloth-references"></a>
-
- [Nvidia NvCloth Documentation](https://gameworksdocs.nvidia.com/NvCloth/1.1/index.html) 
-
-**Topics**
-+ [Cloth Component Properties](#component-cloth-properties)
-+ [Debug Visualization](#component-cloth-debug-visualization)
-+ [References](#component-cloth-references)
-+ [Cloth Simulation](tutorial-cloth-simulation.md)
-+ [Create Cloth for Environments](tutorial-cloth-environment.md)
-+ [Create Cloth for Characters](tutorial-cloth-characters.md)
+**Remove static triangles**  
+Enable to remove triangles composed of static cloth particles\. Enabling this property improves performance, however the removed static cloth particles will not be present for collision and self collision calculations\. 

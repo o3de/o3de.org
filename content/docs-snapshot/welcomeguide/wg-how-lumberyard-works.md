@@ -14,7 +14,7 @@ The engine itself is really just a collection of components and modules, called 
 
 Think of Lumberyard as a collection of discrete elements: code, scripts, various GUI\-based editors, and command line tools\. When you compile a game project, Lumberyard’s build scripts pull in all the pieces specified in your project’s configuration to build your game\. The parts of the engine that go into your game are only those you’ve configured your project to use, and there’s very little functionality included in the final compiled code that you didn’t ask to have in it\. Likewise, the asset bundling and management tools make sure you only ship with the assets you actually use in your game\.
 
-You can build a game in Lumberyard just using the Lumberyard Editor, but you will be constrained to the Gems and tools provided \(along with the assets and scripts you create\)\. If your ambitions are greaterif you want to evolve Lumberyard to support features and systems we haven’t provided in the boxread on\.
+You can build a game in Lumberyard just using the Lumberyard Editor, but you will be constrained to the Gems and tools provided \(along with the assets and scripts you create\)\. If your ambitions are greater—​if you want to evolve Lumberyard to support features and systems we haven’t provided in the box—​read on\.
 
 ## Overview of the Lumberyard framework<a name="how-ly-works-overview"></a>
 
@@ -49,7 +49,7 @@ Lumberyard also provides two command\-line tools, `Lmbr.exe` and `Lmbr_waf.exe`,
 +  `Lmbr.exe`\-\-Provides a set of commands for managing and tracking Gems, capabilities, and 3rd party tools and packages\.
 +  `Lmbe_waf.exe`\-\-Provides a set of commands for automating the building and packaging of game projects with [the Waf build automation framework](https://waf.io/book/)\.
 
-All of these partsplus some not listed heredefine Lumberyard, and can be used to construct your game\. As you incorporate Lumberyard systems and develop your own, you will want to communicate across them\. For that, we have EBus\.
+All of these parts—​plus some not listed here—​define Lumberyard, and can be used to construct your game\. As you incorporate Lumberyard systems and develop your own, you will want to communicate across them\. For that, we have EBus\.
 
 ## Working with Gems<a name="how-ly-works-extending"></a>
 
@@ -119,7 +119,7 @@ A slice, like an entity, is a container with a transform behavior\. Instead of c
 
 Behaviors applied to a slice can potentially cascade down to all of the entities it contains, and then down to the components of that entity\. However, the reverse is not true, as it would make no sense for a window shattering to apply to a door latch\.
 
-Once you’ve internalized the slice entity component hierarchy, consider how you would use these concepts to develop the various elements potentially populating your game levels and world\.
+Once you’ve internalized the slice > entity > component hierarchy, consider how you would use these concepts to develop the various elements potentially populating your game levels and world\.
 
 ## The Lumberyard Asset Pipeline<a name="how-ly-works-assets"></a>
 

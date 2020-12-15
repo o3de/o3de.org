@@ -5,6 +5,8 @@ The **Track Editor** displays all the tracks in your current animation sequence\
 + Change the timeline of the animation
 + Control the animation preview range
 
+
+
 **To display the Track Editor**
 + In the [**Animation Editor**](ui-animation.md), choose **View**, **Track Editor** or **View**, **Both**\.
 

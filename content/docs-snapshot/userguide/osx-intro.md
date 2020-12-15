@@ -27,7 +27,7 @@ To build games for macOS or iOS, Lumberyard requires the following on your Mac:
 + macOS Mojave or later
 
 **Note**  
-Lumberyard Editor requires Windows 7 or later to edit levels\. You must have access to a PC with Lumberyard installed and be able to navigate and run commands from Terminal on your Mac\.
+Lumberyard Editor requires Windows 10 to edit levels\. You must have access to a PC with Lumberyard installed and be able to navigate and run commands from Terminal on your Mac\.
 
 ## Setting Up Your Mac<a name="osx-setting-up"></a>
 

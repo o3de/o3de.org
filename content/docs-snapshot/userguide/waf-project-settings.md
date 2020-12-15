@@ -10,7 +10,7 @@ The following table provides the valid attributes for the different build module
 | Attribute | Description | Target to Platform or Configuration | 
 | --- | --- | --- | 
 | additional\_manifests | Additional manifests to add to MSVC applications | Y | 
-| additional\_settings | Container that groups compile settings and acts upon them recursively; useful for specifying options for particular files in a project For example, you can disable precompiled headers for a specific file using the following: <pre>...<br />additional_settings = Settings ( files = 'my_file.cpp', disable_pch=True )</pre> | Y | 
+| additional\_settings | Container that groups compile settings and acts upon them recursively; useful for specifying options for particular files in a project For example, you can disable precompiled headers for a specific file using the following:  <pre>...<br />additional_settings = Settings ( files = 'my_file.cpp', disable_pch=True )</pre> | Y | 
 | build\_in\_dedicated | True by default; if False, the module will not be built when building in dedicated server mode | N | 
 | cflags | Additional C flags to pass to the compiler | Y | 
 | cxxflags | Additional CXX flags to pass to the compiler | Y | 

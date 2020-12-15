@@ -3,7 +3,7 @@
 If you build game projects with Lumberyard, shaders for release builds should be compiled and packaged into `.pak` files\. 
 
 **Mobile devices** – On mobile devices, runtime shader compilation is not supported for release builds\. Shaders will compile at run time only if you are running in profile mode or debug mode and can connect to a [remote shader compiler server](mat-shaders-custom-dev-remote-compiler.md)\. For more information, see the following:
-+ [Running the Remote Shader Compiler](building-your-android-game.md#running-the-shader-compiler-for-android)
++ [Connect to the Shader Compiler](android-build-deploy.md#running-the-shader-compiler-for-android)
 + [Creating a Release App](ios-creating-release-app.md)
 + [Running the Shader Compiler on Amazon EC2](ios-android-running-shader-compiler-amazon-EC2.md)
 
@@ -15,6 +15,8 @@ The following shader `.pak` files are required for release builds:
 + `Shaders.pak` – Required only if you want to support runtime compilation\. Source shaders are located in the `lumberyard_version\dev\Engine\Shaders\` directory\. 
 + `ShaderCache.pak` – Compiled shaders of all possible combinations that Lumberyard uses\.
 + `ShaderCacheStartup.pak` – Compiled shaders that are used during start\.
+
+
 
 ## Generating Shader \.pak Files<a name="generating-shader-pak-files"></a>
 

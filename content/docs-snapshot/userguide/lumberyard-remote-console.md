@@ -23,7 +23,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 1. After you update the `.cfg` file, deploy the game to mobile devices\.
 
-   For more information, see [Running the Deployment Tool](run-the-deployment-tool.md) and [Creating a Release App](ios-creating-release-app.md)\.
+   For more information, see [Deploy with Lumberyard Editor](android-build-deploy.md#run-the-deployment-tool) and [Creating a Release App](ios-creating-release-app.md)\.
 
 1. If the game is already running, restart it\.
 

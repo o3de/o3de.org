@@ -28,6 +28,8 @@ For example, blue light penetrates farther in the water, giving the ocean its bl
 
 In Lumberyard, various elements such as sunlight, reflections, and environment probes contribute to how the ocean surface renders\. These elements approximate how light is scattered and absorbed in the ocean\. 
 
+
+
 **Topics**
 + [Adding the Infinite Ocean Component](#adding-the-infinite-ocean-component)
 + [Understanding Water Properties](infinite-ocean-component-water-properties-examples.md)

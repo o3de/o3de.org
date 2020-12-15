@@ -4,6 +4,8 @@ Also known as luminous flux density, illuminance is the total amount of visible 
 
 The following table lists real\-world illuminance values, expressed in luminous flux \(lux\)\. Lux is the unit of illuminance and luminous emittance, measuring lux per unit area, and equal to one lumen per square meter\.
 
+ 
+
 
 **Illuminance Values**  
 

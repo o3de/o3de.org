@@ -123,10 +123,7 @@ enum class ResultCode {Success, FuelSDKNotInitialized, FuelNoSession, FuelNoAppl
 
 **Error Code Descriptions**
 + `Success` – The call was successful\.
-+ `FuelSDKNotInitialized` – The Twitch Commerce SDK could not initialize\. This can result from a bad application ID, inability to find the SDK DLLs during initialization, or errors with Twitch\. If you continue to receive this error, please contact the help forums\.
-+ `FuelNoSession` – The Twitch Commerce SDK was initialized but session information was not returned\.
 + `FuelNoApplicationID` – The application ID was not set correctly or contains invalid characters\.
-+ `FuelNoIAPClient` – The Twitch Commerce SDK was not initialized successfully\.
 + `FuelMissingCredentials` – Twitch did not return the credentials\.
 + `InvalidParam` – An invalid parameter was passed\.
 + `TwitchRESTError` – An internal REST error occurred\.
@@ -511,77 +508,5 @@ struct CommunityInfo
     AZStd::string       Rules;
     AZStd::string       RulesHTML;
     AZStd::string       Summary;
-};
-```
-
-## CommerceInfo<a name="twitch-api-ebus-data-elements-commerce-info"></a>
-
-The following is the definition for the `CommerceInfo` struct:
-
-```
-using FuelSku = AZStd::string;
-using FuelSkuList = AZStd::list<FuelSku>;
-
-enum class FuelProductType { Consumable, Entitlement, Subscription, Unknown, Undefined };
-enum class FulfillmentResult { Fulfilled, Unavailable, Undefined };
- 
-struct ProductInfo
-{
-	ProductInfo() : ProductType(FuelProductType::Unknown) { }
-
-	FuelSku             Sku;
-	AZStd::string       Description;
-    AZStd::string       Price;
-    AZStd::string       SmallIconUrl;
-    AZStd::string       Title;
-    FuelProductType     ProductType;
-};
-
-using ProductInfoList = AZStd::list<ProductInfo>;
-
-struct ProductData
-{
-	ProductInfoList         ProductList;
-	FuelSkuList             UnavailableSkus;
-};
- 
-/*
-** Represents the purchase of consumable content, entitlement content or
-** subscription content, as well as the renewal of a subscription. All strings
-** are UTF-8.
-*/
- 
-struct PurchaseReceipt
-{
-	PurchaseReceipt() : PurchaseDate(0), CancelDate(0), Type(FuelProductType::Unknown)  { }
-        
-	FuelSku             Sku;
-	AZStd::string       ReceiptId;
-	AZ::u64             PurchaseDate;
-	AZ::u64             CancelDate;
-	FuelProductType     Type;
-};
-
-
-using PurchaseReceiptList = AZStd::list<PurchaseReceipt>;
-
-/*
-** Initiates a request to retrieve updates about items the customer has purchased or canceled.
-** The request includes a sync token, an opaque string that the backend services created and use to
-** determine which purchase updates were synced. The first time GetPurchaseUpdates is called, a empty 
-** sync token should be used. The response contains a new sync token that you can use in the
-** request of the next call to GetPurchaseUpdates. In each subsequent call to GetPurchaseUpdates, 
-** you can use the sync token that is returned in the request for the next.
-**
-** After you have all the receipts, you can fulfill or revoke the orders if you have
-** not done so previously. Then you should mark the order as fulfilled or unavailable,
-** using NotifyFulfillment. After a consumable order is marked as fulfilled, it no longer is returned
-** by GetPurchaseUpdates.
-**/
-
-struct PurchaseUpdate
-{
-	AZStd::string           SyncToken;
-	PurchaseReceiptList     Products;
 };
 ```

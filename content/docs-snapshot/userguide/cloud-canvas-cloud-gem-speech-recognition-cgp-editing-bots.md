@@ -1,7 +1,11 @@
 # Editing Bots<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots"></a>
 
+
 ****  
-This feature is in preview release and is subject to change\.
+
+|  | 
+| --- |
+| This feature is in preview release and is subject to change\. | 
 
 You can edit speech\-recognition bots in the Cloud Gem Portal\.
 
@@ -115,7 +119,8 @@ Choose **Error handling** from the left navigation pane to add clarification pro
 You can manage aliases and general information for a bot on the **Settings** tab to the right of the **Editor** tab\. 
 
 **Note**  
-The **Settings** tab for general information and aliases is available when the **Editor** tab is active\. The [Settings](cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console.md) tab that contains a link to the Amazon Lex console is available when the main **Speech Recognition** page is active\. 
+The **Settings** tab for general information and aliases is available when the **Editor** tab is active\. The [Settings](cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console.md) tab that contains a link to the Amazon Lex console is available when the main **Speech Recognition** page is active\.   
+ 
 
 ### Aliases<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-settings-aliases"></a>
 

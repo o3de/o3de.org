@@ -1,3 +1,9 @@
+--------
+
+This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
+
+--------
+
 # Lumberyard UI button styles<a name="uidev-button-component"></a>
 
 Use buttons to enable users to make selections that cause the UI to take action\. There are four types of button styles in Lumberyard:

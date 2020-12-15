@@ -5,6 +5,8 @@
 **Note**  
 The name of the **Material** node must be the full path of the material that you want to animate, as shown in the **Material Editor**\.
 
+
+
 A recommended workflow is to select the material inside the **Material Editor** that you want to animate\.
 
 **To add a Material node in the Track View**

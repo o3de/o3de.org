@@ -1,7 +1,11 @@
 # Component Entity Lua API Reference<a name="lua-api"></a>
 
+
 ****  
-This documentation is preliminary and subject to change\. 
+
+|  | 
+| --- |
+| This documentation is preliminary and subject to change\.  | 
 
 You can use the Lua API calls in this reference for scripting the component entity system in Lumberyard\. For a tutorial on writing Lua scripts in Lumberyard, see [Writing Lua Scripts](lua-scripting-intro.md)\. For Lua scripting functions that load and unload canvases in Lumberyard Editor, see the [UI Lua Reference](lua-scripting-ces-api-ui.md)\.
 

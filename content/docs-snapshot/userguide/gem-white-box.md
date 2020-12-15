@@ -15,6 +15,8 @@ The White Box Gem provides two tools implemented as components; the **White Box*
 
 In Lumberyard, you create entities with the White Box component, using its edit functionality to rapidly sketch 3D assets to serve as building blocks for a level\. Because you create white box meshes in Lumberyard Editor with the component entity system, the entities can also contain functionality from other components such as scripts\. You can use a rapid build and test iteration cycle to create refined and functional entities before committing to developing production\-ready art assets\. The resulting white box geometry and entities are used as templates for production assets\. This development process is fast, highly iterative, and cost\-effective\. 
 
+ 
+
 ## Enable the White Box Gem<a name="enable-gem-white-box"></a>
 
 To make the **White Box** and **White Box Collision** components available in Lumberyard, you must build and configure your project with the White Box Gem enabled\. 

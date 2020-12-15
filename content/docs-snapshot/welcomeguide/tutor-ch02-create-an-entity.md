@@ -9,7 +9,7 @@ If you like, you can follow this chapter in video \(4:43 minutes\) form:
 
 Begin this tutorial either with the level you created in [Tutorial One: Create a level](tutor-ch01-create-a-level.md), or by opening `ch01_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar, or press **Control \+ O**\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\. **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-default-layout-1.25.png)
 
 1.  Create an entity by right\-clicking in **Entity Outliner** on the left side of the editor and choose **Create entity** from the context menu\. Click on the newly created entity to select it\.   
