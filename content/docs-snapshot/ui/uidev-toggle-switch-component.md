@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI toggle switch component<a name="uidev-toggle-switch-component"></a>
 
 Use a toggle switch to enable users to quickly switch between two states with a minimum of effort\. The state will be clearly reflected back to them and persisted across sessions\.

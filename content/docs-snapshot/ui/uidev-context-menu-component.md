@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI menu component<a name="uidev-context-menu-component"></a>
 
 A context menu \(also called contextual or pop\-up menu\) appears upon user interaction, such as a right\-click mouse operation\. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs\. Typically, the available choices are actions related to the selected object\.

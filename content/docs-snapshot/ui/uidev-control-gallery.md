@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard Qt control gallery tool<a name="uidev-control-gallery"></a>
 
 Use the **Amazon Qt Control Gallery** tool to see the Amazon Lumberyard custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.

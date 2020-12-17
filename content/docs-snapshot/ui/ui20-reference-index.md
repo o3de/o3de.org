@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI Extensions C\+\+ API Reference index<a name="ui20-reference-index"></a>
 
 This table lists the available C\+\+ classes for working with the Lumberyard UI 2\.0 system to extend the editor and tools\. The C\+\+ API reference is hosted outside of the user guide, so use this index to quickly find what you need to look up on the external site\. Each class is also accompanied by a brief description\.

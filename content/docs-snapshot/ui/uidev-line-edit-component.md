@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI line edit component<a name="uidev-line-edit-component"></a>
 
 The **line edit** component is one of several types of input boxes offered by the Qt and Lumberyard UI libraries\. Use the line edit component to enable users to enter free\-form text\. Be mindful of the length of text intended for a field, and always pair with a useful, clear label\.

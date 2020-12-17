@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
 
 Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they’re looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.

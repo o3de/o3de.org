@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
 
 Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user’s current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.

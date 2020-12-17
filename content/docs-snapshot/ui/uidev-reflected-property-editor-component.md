@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI reflected property editor<a name="uidev-reflected-property-editor-component"></a>
 
 A **reflected property editor** automatically lays out controls for user\-editable properties that are reflected using the edit context\. It is frequently used as a content widget to populate [card](uidev-card-component.md) components\.

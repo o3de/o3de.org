@@ -1,8 +1,4 @@
---------
 
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
 
 # Introduction to Lumberyard UI development<a name="ui-dev-intro"></a>
 

@@ -1,9 +1,3 @@
---------
-
-This guide is a work in progress\. Please provide feedback using the **Feedback** link at the top of the web page\. More coverage of the Lumberyard UI component library is coming\!
-
---------
-
 # Lumberyard UI checkbox component<a name="uidev-checkbox-component"></a>
 
 Use checkboxes to enable users to select from a list of choices, when users can select any number of choices \(including zero, one, or several\)\. Each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others\.
