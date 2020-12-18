@@ -10,6 +10,7 @@ As part of Asset Processing, the Asset Processor generates and stores product an
 + [Asset Processor Interface](asset-pipeline-processor-ui.md)
 + [Enabling Asset Processor's Faster Scanning Mode](asset-processor-faster-scanning.md)
 + [Importing Assets into Lumberyard](asset-pipeline-importing.md)
++ [Working with the FBX Settings Tool](char-fbx-importer.md)
 + [Using Resource Compiler](asset-pipeline-rc.md)
 + [Debugging Asset Processor](asset-processor-debugging.md)
 

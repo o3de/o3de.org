@@ -62,15 +62,10 @@ For more information, see [Add modular features and assets with Gems](gems-syste
 The following components support the PhysX system, which is not compatible with the legacy physics system\. You can't use components interchangeably between each system\.
 
 For more information, see [Simulating physics behavior with the PhysX system](physx-intro.md)\.
-+ [PhysX Ball Joint component](component-physx-ball-joint.md)
-+ [Cloth component](component-cloth.md)
-+ [Blast Family component](component-blast-family.md)
-+ [Blast Family Mesh Data component](component-blast-family-mesh-data.md)
++ [Cloth](component-cloth.md)
 + [PhysX Character Controller](component-physx-character-controller.md)
 + [PhysX Collider](component-physx-collider.md)
-+ [PhysX Fixed Joint component](component-physx-fixed-joint.md)
 + [PhysX Force Region](component-physx-force-region.md)
-+ [PhysX Hinge Joint component](component-physx-hinge-joint.md)
 + [PhysX Ragdoll](component-physx-ragdoll.md)
 + [PhysX Rigid Body](component-physx-rigid-body-physics.md)
 + [PhysX Shape Collider](component-physx-shape-collider.md)

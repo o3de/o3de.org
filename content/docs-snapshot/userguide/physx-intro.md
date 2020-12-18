@@ -1,5 +1,12 @@
 # Simulating physics behavior with the PhysX system<a name="physx-intro"></a>
 
+
+****  
+
+|  | 
+| --- |
+| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+
 Lumberyard's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation\. To use the PhysX system, install the [PhysX SDK](https://developer.nvidia.com/gameworks-physx-overview) using the [Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
 
 **Note**  
@@ -14,12 +21,8 @@ Lumberyard's PhysX system acts upon entities to create realistic physical effect
 + [Configuring the PhysX System](physx-configuration.md)
 + [Physics materials](physx-materials.md)
 + [PhysX Scene Queries](physx-scene-queries.md)
-+ [Dynamic joints with PhysX](physx-joint-intro.md)
-+ [Create global or localized wind forces with PhysX](wind-provider.md)
 + [Debugging PhysX](debugging-physx.md)
 + [PhysX Best Practices](physx-best-practices.md)
-+ [Simulated destruction with NVIDIA Blast](nvidia-blast-intro.md)
-+ [Simulate cloth with NVIDIA Cloth](nvidia-cloth-intro.md)
 
 ## PhysX Gems<a name="physx-intro-gems"></a>
 

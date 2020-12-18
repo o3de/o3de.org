@@ -1,6 +1,6 @@
 # Dynamic Content Engineering Details<a name="cloud-canvas-cloud-gem-dc-engineering"></a>
 
-This topic provides programmatic details about the dynamic content update process\. This includes manifest file information, Dynamic Content Cloud Gem EBus events, and Dynamic Content Cloud Gem service API\. For information about the `lmbr_aws` CLI extensions enabled by the Dynamic Content Cloud Gem, see [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\.
+This topic provides programmatic details about the dynamic content update process\. This includes manifest file information, Dynamic Content Cloud Gem EBus events, and Dynamic Content Cloud Gem service API\. For information about the `lmbr_aws` CLI extensions enabled by the Dynamic Content Cloud Gem, see [Using lmbr\_aws for Dynamic Content](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\.
 
 ## Manifest File<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-file"></a>
 
@@ -42,116 +42,14 @@ The following table describes the properties in the manifest file\.
 The Dynamic Content Cloud Gem provides an EBus API and includes calls exposed to Lua\. The basic top\-level update request looks like this:
 
 ```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess,
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestManifest, 
-      manifestName)
+EBUS_EVENT_RESULT(requestSuccess,
+      CloudCanvas::DynamicContent::DynamicContentRequestBus,
+      RequestManifest, manifestName)
 ```
 
 `requestSuccess (bool)` – Specifies whether the request was successfully sent\.
 
-`manifestName (char*)` – Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
-
-**Requesting pak files without using manifest**  
-Use the following API calls to request pak files without using a manifest:
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatusList, 
-      uploadRequests, 
-      autoDownload);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`uploadRequests (AZStd::vector<AZStd::string>)` – List of bucket keys\.
-
-`autoDownload (bool)` – Specify `true` to download files automatically\.
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatus, 
-      fileName, 
-      autoDownload);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`fileName (char*)` – Name of the pak file to request\.
-
-`autoDownload (bool)` – Specify `true` to download files automatically\.
-
-### Versioning Support<a name="cloud-canvas-cloud-gem-dc-engineering-ebus-events-versioning"></a>
-
-**Requesting pak files using versioned manifest**  
-Use the following API calls to request pak files using a manifest when versioning is enabled:
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedManifest, 
-      manifestName, 
-      versionId);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`manifestName (char*)` – Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
-
-`versionId (char*)` – Version ID of the manifest\. Uses the current active \(public\) version if not specified\.
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedFileStatus, 
-      fileName, 
-      outputFile, 
-      versionId);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`fileName (char*)` – Name of the pak file to request\.
-
-`outputFile (char*)` – Name of the output pak file\.
-
-`versionId (char*)` – Version ID of the file\. Uses the current active \(public\) version if not specified\.
-
-**Requesting pak files without using manifest**  
-Use the following API calls to request files without using a manifest when versioning is enabled:
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatusList, 
-      requestMap, 
-      autoDownload);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`requestMap (AZStd::unordered_map<AZStd::string, AZStd::string>)` – Map of file names to file version IDs\.
-
-`autoDownload (bool)` – Specify `true` to download files automatically\.
-
-```
-CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatus, 
-      fileName, 
-      autoDownload, 
-      versionId);
-```
-
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
-
-`fileName (char*)` – Name of the pak file to request\.
-
-`autoDownload (bool)` – Specify `true` to download files automatically\.
-
-`versionId (char*)` – Version ID of the file\. Uses the current active \(public\) version if not specified\.
+`manifestName(char*)` – Specifies the plaintext name of the manifest \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
 
 ### Manifest Received<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-received"></a>
 
@@ -196,9 +94,9 @@ The following table lists the calls for the client\.
 
 | Client API Call | Description | 
 | --- | --- | 
-| /client/content POST | Request presigned URLs for a list of files, based on the provided version IDs\. The active version will be returned if no version ID is specified\. Returns the URLs or a failure message\. | 
+| /client/content POST | Request presigned URLs for a list of files\. Returns the URLs or a failure message\. | 
 
-## Using Amazon CloudFront<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront"></a>
+## Use Amazon CloudFront<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront"></a>
 
 Amazon CloudFront is a fast content delivery network \(CDN\) service that can extend S3 to securely deliver data to customers with low latency and high transfer speeds at an additional cost\. You can take advantage of it when using the DynamicContent gem\. To learn more about Amazon CloudFront, read [the Amazon CloudFront documentation](https://aws.amazon.com/cloudfront/)\.
 
@@ -214,7 +112,7 @@ Using this deployment tag will add a few more AWS resources to your deployment s
 
 ### Create and upload CloudFront key pairs<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront-upload"></a>
 
-Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies—your trusted signers—must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
+Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies—your trusted signers—must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Readthe AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
 
 **Note that IAM users can't create Amazon CloudFront key pairs\. You must log in using root credentials to create key pairs\. To learn more about the root credentials, read [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)\.**
 

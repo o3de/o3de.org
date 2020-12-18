@@ -43,7 +43,7 @@
 
 1. Save the file\.
 
-1.  **If running the Shader Compiler locally:** Open a command prompt and use `adb` to redirect traffic at the Shader Compiler port on the device to the Shader Compiler port on your development machine\. By default, the port for the Shader Compiler is **61453**\. 
+1.  **When running the Shader Compiler locally:** Open a command prompt and use `adb` to redirect traffic at the Shader Compiler port on the device to the Shader Compiler port on your development machine\. By default, the port for the Shader Compiler is **61453**\. 
 
    ```
    adb reverse tcp:shader-port tcp:shader-port

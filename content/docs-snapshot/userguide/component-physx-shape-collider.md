@@ -29,7 +29,7 @@ For more information, see [Simulating physics behavior with the PhysX system](ph
 
 ## PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>
 
-![\[PhysX Shape Collider component interface.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/physx/ui-physx-shape-collider-A-1.27.png)
+![\[PhysX Shape Collider component interface.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/physx/ui-physx-shape-collider-A-1.24.png)
 
 ****Collision Layer****  
 The collision layer that's assigned to this shape collider\. For more information, see [Collision Layers](physx-configuration-collision-layers.md)\. 
@@ -38,14 +38,8 @@ The collision layer that's assigned to this shape collider\. For more informatio
 The collision group containing the layers that this shape collider collides with\. For more information, see [Collision Groups](physx-configuration-collision-groups.md)\. 
 
 ****Trigger****  
-When enabled, this shape collider functions as a trigger\. A trigger performs a quick overlap test and does not apply forces or return contact point information\. Use this to speed up PhysX computations where a simple overlap between colliders is sufficient\.   
+Set this shape collider as a trigger\. A trigger performs a quick overlap test and does not apply forces or return contact point information\. Use this to speed up PhysX computations where a simple overlap between colliders is sufficient\.   
 Trigger Area components are legacy components and cannot be used with PhysX Shape Collider\.
-
-****Simulated****  
-When enabled, this shape collider will be part of the physics simulation\.
-
-****In Scene Queries****  
-When enabled, this shape collider can be queried for raycasts, shapecasts and overlap\.
 
 ****Physics Material \- Library****  
 Set the physics material library for this shape collider\. 
@@ -55,12 +49,6 @@ Choose a material from the physics material library for this shape collider\.
 
 ****Tag****  
 Set a tag for this shape collider\. Tags can be used to quickly identify components in script or code\. 
-
-****Rest offset****  
-PhysX bodies come to rest separated by the sum of their rest offset values\. The **Rest offset** value must be less than the **Contact offset** value\. Valid values rage from **\-Infinity** to **50**\. 
-
-****Contact offset****  
-PhysX bodies generate contacts when they are within the sum of their contact offset values\. The **Contact offset** value must be greater than the **Rest offset** value\. Valid values rage from **0** to **50**\. 
 
 ****Draw collider****  
 Render this shape collider in the viewport\. Enabled by default\. 

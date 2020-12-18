@@ -14,6 +14,9 @@ The Twitch JoinIn feature within Lumberyard helps you build multiplayer games th
 **Twitch C\+\+ API**  
 The Twitch C\+\+ API operations allow you to make calls on the TwitchRequestBus and return a unique ReceiptID object\.
 
+**Twitch ChatPlay Lua**  
+The Lua scripting functions allow you to add Twitch ChatPlay features to your game project\.
+
 ## Prerequisites<a name="gems-system-gem-twitch-prerequisites"></a>
 
 To use the Twitch gem and add Twitch support to your Lumberyard project, you must:
@@ -23,3 +26,4 @@ To use the Twitch gem and add Twitch support to your Lumberyard project, you mus
 + [Prerequisites](#gems-system-gem-twitch-prerequisites)
 + [Twitch ChatPlay System](chatplay-intro.md)
 + [Twitch C\+\+ API Reference for Lumberyard](twitch-api-ebus.md)
++ [Twitch ChatPlay Lua Reference](twitch-chatplay-lua-reference.md)

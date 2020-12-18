@@ -150,7 +150,7 @@ The password for the distribution key\. This argument is required when using the
 
 **`package_name`**  
  Android application package identifier\. Used for generating the project\-specific Java activity class and as part of `AndroidManifest.xml`\. The identifier must be in reverse domain name format\.   
-For more information, see the [Android Application ID documentation](https://developer.android.com/studio/build/application-id.html)\.  
+For more information, see the [Android documentation](https://developer.android.com/studio/build/application-id.html)\.  
 Type: String  
 Default: `"com.lumberyard.sdk"`
 
@@ -166,7 +166,7 @@ Default: `"1.0.0.0"`
 
 **`orientation`**  
 The orientation of the Android app\. Used to set the `"android:screenOrientation"` value of `AndroidManifest.xml`\.  
-For valid values, see the [Android Activity documentation](http://developer.android.com/guide/topics/manifest/activity-element.html#screen)\.  
+For valid values, see the [Android documentation](http://developer.android.com/guide/topics/manifest/activity-element.html#screen)\.  
 Type: String  
 Default: `"landscape"`
 
@@ -179,7 +179,7 @@ Available options:
 + `xhdp` – Extra high \~320 DPI
 + `xxhdpi` – Extra\-extra high \~480 DPI
 + `xxxhdpi` – Extra\-extra\-extra high \~640 DPI
-For more information on Android screen DPI settings, see the [Android screen compatibility documentation](https://developer.android.com/guide/practices/screens_support.html)\.   
+For more information on Android screen DPI settings, see the [Android documentation](https://developer.android.com/guide/practices/screens_support.html)\.   
 
 **Example**  
 
@@ -260,7 +260,7 @@ Type: Integer
 Default: None  
 **`gravity`**  
 The preferred starting location of the window when launched in multi\-window mode\.   
-See the [Android LinearLayout documentation](https://developer.android.com/reference/android/widget/LinearLayout.LayoutParams#xml-attributes_1) for valid values\.  
+See the [Android documentation](https://developer.android.com/reference/android/widget/LinearLayout.LayoutParams#xml-attributes_1) for valid values\.  
 Type: String  
 Default: None
 Type: Dictionary  

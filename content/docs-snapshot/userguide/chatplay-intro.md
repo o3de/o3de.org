@@ -18,3 +18,7 @@ The following diagram illustrates Twitch ChatPlay's server\-side components\.
 The following diagram illustrates Twitch ChatPlay's client\-side components\.
 
 ![\[Twitch ChatPlay client-side components\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/chatplay/chatplay-client.png)
+
+**Topics**
++ [Twitch ChatPlay Console Variables, Classes, and Connection Methods](chatplay-console-variables.md)
++ [Create a Twitch Client ID for use with Twitch ChatPlay in Lumberyard](chatplay-generate-twitch-client-id.md)

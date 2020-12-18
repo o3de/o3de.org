@@ -1,6 +1,6 @@
 # Releasing Lumberyard projects for Android<a name="android-deploy-release"></a>
 
- Setting up to release for Android can be a complicated process because of the number of steps involved, and the restrictions that are required for publishing on the Google Play Store\. For the full and up to date list of requirements, see the [Play Store publishing documentation](https://developer.android.com/studio/publish#publishing-prepare)\. In this topic you'll walk through additional steps needed for distribution, configure to submit an application larger than 100Mb to the Google Play Store, and build your release binaries\. 
+ Setting up to release for Android can be a complicated process because of the number of steps involved, and the restrictions that are required for publishing on the Google Play Store\. For the full and up to date list of requirements, see the [official Android documentation](https://developer.android.com/studio/publish#publishing-prepare)\. In this topic you'll walk through additional steps needed for distribution, configure to submit an application larger than 100Mb to the Google Play Store, and build your release binaries\. 
 
 **Topics**
 + [Configure your signing key](#using-your-signing-key)
@@ -9,7 +9,7 @@
 
 ## Configure your signing key<a name="using-your-signing-key"></a>
 
- As part of submission to the Google Play Store, you're required to sign your application\. The [Android signing documentation](https://developer.android.com/studio/publish/app-signing)discusses setting up your key signing in detail, as well as steps involved in uploading your signing key and signed application to Google Play\. As part of building your APK, the Lumberyard build system takes care of doing the signing for you\. 
+ As part of submission to the Google Play Store, you're required to sign your application\. The [official Android Documentation](https://developer.android.com/studio/publish/app-signing)discusses setting up your key signing in detail, as well as steps involved in uploading your signing key and signed application to Google Play\. As part of building your APK, the Lumberyard build system takes care of doing the signing for you\. 
 
  In order to set up key signing, you'll need to [generate an upload key](https://developer.android.com/studio/publish/app-signing#generate-key)\. 
 
@@ -147,7 +147,7 @@
         />
         ```
 
- The job to create the APK expansion files is only run when building a **release** configuration\. You can always run **debug** or **profile** builds without creating new OBBs\. 
+ The job to create the APK expansion files is only run when building for the **release** profile\. You can always run **debug** or **profile** builds without creating new OBBs\. 
 
 ## Release process<a name="android-release-process"></a>
 
@@ -193,15 +193,7 @@
 
    1. Save and close the file\.
 
-1.  Make sure that the Shader Compiler is running, at the same network address and port used for building shaders during development\. Unlike development builds, **release** uses the `lumberyard_install_dir/dev/shadercachegen.cfg` configuration file to connect to the Shader Compiler during release builds\. 
-
-   To configure shader compiling for release
-
-   1. Open `lumberyard_install_dir/dev/shadercachegen.cfg` in a text editor\.
-
-   1.  Edit the value of `r_ShaderCompilerServer` to set it to the IPv4 address of the shader server used in development\. 
-
-   1.  **When using the shader compiler on localhost \(127\.0\.0\.1\):** Start the Shader Compiler server on your machine by launching it from `lumberyard_install_dir\dev\Tools\CrySCompileServer\x64\profile\CrySCompileServer.exe`\. 
+1.  Make sure that the Shader Compiler is running\. Either check that it's available at the remote endpoint specified in `lumberyard_install_dir\dev\system_android_es3.cfg` as the value of `r_ShaderCompilerServer`, or start the Shader Compiler locally by launching it from `lumberyard_install_dir\Tools\CrySCompileServer\x64\profile\CrySCompileServer.exe`\. 
 
 1.  With everything configured, it's time to build your release\. Build with `lmbr_waf` and supply your distribution key information on the command line\. 
 

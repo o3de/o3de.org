@@ -50,9 +50,9 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
    1. Open the file `lumberyard_install_dir\dev\_WAF_\android\android_settings.json` in a text editor\.
 
-   1.  Change the value of `SDK_VERSION` to `android-apilevel`, and `NDK_VERSION` to `android-ndk-version`\. Use the API level of your development SDK for *apilevel*, and the API version of the NDK for *ndk\-version*\. 
+   1.  Change the value of `SDK_VERSION` to `android-apilevel`, and `NDK_VERSION` to `android-ndk-version`\. Use the API level of your development SDK for *apilevel*, and the major version number of your NDK for *ndk\-version*\. 
 
-       For example, for Android Q \(API level 29\) and NDK API version 21, your configuration file will be similar to the following\. 
+       For example, for Android Q \(API level 29\) and NDK r21, your configuration file will be similar to the following\. 
 
       ```
       {

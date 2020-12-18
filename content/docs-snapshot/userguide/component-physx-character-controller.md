@@ -17,13 +17,15 @@ The **PhysX Character Controller** component requires the [PhysX Characters](gem
 
 To use the **PhysX Character Controller** component, [add it to an entity](component-working-adding.md) that represents a character\.
 
+![\[Using the Entity Inspector to add the PhysX Character Controller component to an entity.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/component-physx-character-controller-2.png)
+
 You can control the character's movement by using Script Canvas, the C\+\+ API, or animation systems that use the C\+\+ API\.
 
 ## PhysX Character Controller Properties<a name="component-physx-character-controller-properties"></a>
 
 You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](component-entity-inspector.md)**\.
 
-![\[PhysX Character Controller component properties in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/ui-physx-character-controller-properties-1.27.png)
+![\[PhysX Character Controller component properties in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/component-physx-character-controller-3.png)
 
 The **PhysX Character Controller** has the following component properties\.
 
@@ -39,7 +41,6 @@ The **PhysX Character Controller** has the following component properties\.
 |  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb\.   | 
 |  **[Step Height](#component-physx-character-controller-step-height)**  |  Height of steps in meters that the character controller can traverse\.   | 
 |  **Minimum Movement Distance**  |  Distance in meters below which the controller doesn't attempt to move\. Used to avoid jittering\.   | 
-|  **Collider Tag**  |  A tag string used to identify the collider associated with the character controller\.  | 
 |  **Slope Behavior**  |  Behavior of the controller on surfaces above the maximum slope\.  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html) The default is **Prevent Climbing**\.  | 
 | [Contact Offset](#component-physx-character-controller-contact-offset) |  Additional distance in meters beyond the controller that is monitored for potential contact\. Used for smoother contact resolution\.   | 
 | Scale |  Scales the size of the collider created in PhysX relative to the dimensions specified for the controller\. A value slightly smaller than `1` is recommended\.  The default is `0.8`\.  | 

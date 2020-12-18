@@ -18,7 +18,7 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 
 ## PhysX Force Region Component Properties<a name="physx-terrain-component-properties"></a>
 
-![\[Force Region component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/ui-physx-force-region-component-properties-1.27.png)
+![\[Force Region component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/physx-force-region-component-properties.png)
 
 
 | Property | Description | 

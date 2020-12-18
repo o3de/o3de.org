@@ -50,9 +50,9 @@ Currently, Lumberyard supports skeletons created with LOD groups only\.
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/using-actor-LODs-optimize-game-performance.html)
 
-   For more information, see [FBX soft naming conventions](fbx-settings-soft-naming.md)\.
+   For more information, see [FBX Soft Naming Conventions](char-fbx-importer-soft-naming.md)\.
 
-1. Follow the instructions in [Customize FBX asset export with FBX Settings](fbx-intro.md) to export the meshes to FBX format so that you can use them in Lumberyard\.
+1. Follow the instructions in [Best Practices for Creating and Exporting Meshes](char-fbx-importer-best-practices.md) to export the meshes to FBX format so that you can use them in Lumberyard\.
 
 **To use LOD groups to create actor LODs**
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.  

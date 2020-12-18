@@ -36,4 +36,4 @@ You can import assets to a directory only in the current game project\.
 
 To learn more about importing your assets, see the following video tutorials:
 + [Tutorials: Importing FBX Files as Actors and Motions](importing-fbx-files-as-actors-motions.md)
-+ [FBX Settings mesh export](fbx-mesh-export.md)
++ [Tutorial: Importing FBX Files as Static Meshes](importing-fbx-files-as-static-meshes.md)
