@@ -7,7 +7,7 @@ title: Using the Bottom Toolbar
 
  Lumberyard Editor includes a bottom toolbar that provides status as well as the features below\.
 
-![\[Image NOT FOUND\]](/images/editor-toolbar-bottom-1.25.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbar-bottom-1.25.png)
 
 ## Status<a name="lumberyard-editor-toolbar-bottom-status"></a>
 
@@ -29,7 +29,7 @@ The **Set Vector** button \(C\) allows you to set the position, rotation or scal
 
 The **Goto Position** button \(D\) opens the **Go to position** dialog box to set a world position and rotation for the perspective view\. You can enter floating point coordinates and rotation, or use the spinners to specify values\. Clicking the **Go To** button immediately moves the viewport to the specified coordinates and rotates the view\.
 
-![\[Image NOT FOUND\]](/images/editor-toolbar-bottom-goto-1.25.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbar-bottom-goto-1.25.png)
 
 ## Lock Selection<a name="lumberyard-editor-toolbar-bottom-lock"></a>
 

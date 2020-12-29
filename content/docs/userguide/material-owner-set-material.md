@@ -11,7 +11,7 @@ Sets an entity's material\. If the material is `Invalid`, this node removes the 
 + [Inputs](#material-owner-set-material-input)
 + [Outputs](#material-owner-set-material-output)
 
-![\[setmaterialnode, setmaterial\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-material-owner-node.png)
+![\[setmaterialnode, setmaterial\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-material-input"></a>
 

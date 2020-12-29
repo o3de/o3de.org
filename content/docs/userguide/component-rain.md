@@ -15,7 +15,7 @@ You can use the **Rain** component to create rain effects, puddles, and ripples 
 
 To enable the **Rain** component, you must enable the Rain gem\. For more information, see [Rain Gem](gems-system-gem-rain.md)\.
 
-![\[Add the Rain component to your entity to enable rain effects in your level.\]](/images/shared-rain-component-animation-example.gif)
+![\[Add the Rain component to your entity to enable rain effects in your level.\]](/images/userguide/shared-rain-component-animation-example.gif)
 
 **Note**  
 If your level has a **[Snow](component-snow.md)** and **Rain** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
@@ -52,7 +52,7 @@ You can edit rain effects only when the **AI/Physics** toggle is disabled\.
 
 ## Rain Component Properties<a name="component-rain-properties"></a>
 
-![\[Rain component properties to customize the rain effects in your level.\]](/images/component/rain-component-properties.png)
+![\[Rain component properties to customize the rain effects in your level.\]](/images/userguide/component/rain-component-properties.png)
 
 The **Rain** component has the following properties:
 

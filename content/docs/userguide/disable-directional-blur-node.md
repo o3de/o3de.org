@@ -13,7 +13,7 @@ To enable the effect, see [Enable Directional Blur](enable-directional-blur-node
 + [Inputs](#disable-directional-blur-note-input)
 + [Outputs](#disable-directional-blur-node-output)
 
-![\[disabledirectionalblur, disabledirectionalblurnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-directional-blur-node.png)
+![\[disabledirectionalblur, disabledirectionalblurnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-directional-blur-node.png)
 
 ## Inputs<a name="disable-directional-blur-note-input"></a>
 

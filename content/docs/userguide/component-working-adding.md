@@ -19,7 +19,7 @@ You can pause on the component name to see a description of that component\.
 1. Specify your settings for the component\.
 
 1. If you add a component that requires another component to function, the **Entity Inspector** displays the following message\.  
-![\[Some components require other components to work.\]](/images/component/component-working-adding.png)
+![\[Some components require other components to work.\]](/images/userguide/component/component-working-adding.png)
 
    For example, the **Ragdoll** component also requires the **Skinned Mesh** component\. Click **Add Required Component** and select the required component\.
 **Note**  

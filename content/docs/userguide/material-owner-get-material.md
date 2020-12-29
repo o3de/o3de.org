@@ -11,7 +11,7 @@ Returns an entity's current material\.
 + [Inputs](#material-owner-get-material-input)
 + [Outputs](#material-owner-get-material-output)
 
-![\[getmaterialnode, getmaterial\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-material-owner-node.png)
+![\[getmaterialnode, getmaterial\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-material-owner-node.png)
 
 **Note**  
 If you use the **[Set Material](material-owner-set-material.md)** node and specify an invalid material and then call the **Get Material** node, **Get Material** returns the entity's default material instead of `Invalid`\.

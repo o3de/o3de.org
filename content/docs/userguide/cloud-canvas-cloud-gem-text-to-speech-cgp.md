@@ -34,11 +34,11 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-sy
 
 In the Cloud Gem Portal, on the **Cloud Gems** page, choose **Text to Speech**\.
 
-![\[Choose Text to Speech in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-1.png)
+![\[Choose Text to Speech in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-1.png)
 
 The initial portal includes a **Speech Library**, **Characters**, and **Generated Packages** tabs\. These are the only tabs that you need to get started\. For information about the other tabs, see [Configuring Runtime Capabilities and Caching](cloud-canvas-cloud-gem-text-to-speech-runtime.md) and [Text\-to\-Speech Troubleshooting Features](cloud-canvas-cloud-gem-text-to-speech-details.md#cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting)\.
 
-![\[Text to Speech Cloud Gem initial screen\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-2.png)
+![\[Text to Speech Cloud Gem initial screen\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-2.png)
 
 You can use the Text to Speech Cloud Gem Portal to create speech character content in a variety of ways\. Use the workflow that suits you best\. The following are some example workflows:
 + You create characters on the **Characters** tab with the voice and language characteristics that you want\. Then use the **Speech Library** tab to create speech lines for the characters\.
@@ -52,7 +52,7 @@ A text\-to\-speech character is defined by a name that you give the character, t
 **To add a character**
 
 1. On the **Characters** tab of the Cloud Gem Portal, choose **New Character** to add a character to the characters table\.   
-![\[Choose New Character in the Cloud Gem Portal\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-3.png)
+![\[Choose New Character in the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-3.png)
 
 1. In the fields that appear, specify the following for the character\.
    + **Name** – By default, the new character is named *NewCharacter\_*<total number of rows in the characters table>**\. Type a name for the character that has meaning in the context of your game\.
@@ -77,16 +77,16 @@ After you create a character, you can edit it with the following steps\.
 **To edit a character**
 
 1. Click an editable field to update it, and then choose **Save**\.  
-![\[Edit fields inline for an existing character in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-editing-a-character-inline.png)
+![\[Edit fields inline for an existing character in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-editing-a-character-inline.png)
 
-1. To alter the character's voice, choose the gear ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared/cloud-canvas-cloud-gem-text-to-speech-cgp-4.png) icon near **Preview**\.
+1. To alter the character's voice, choose the gear ![\[Image NOT FOUND\]](/images/userguide/shared/cloud-canvas-cloud-gem-text-to-speech-cgp-4.png) icon near **Preview**\.
 
    1. Use the **Advanced Settings** dialog box to adjust the **Volume**, **Rate**, **Pitch**, and **Timbre** of the voice\. 
 
    1. Use the **Language Override** option to override the **Native Language** setting and have the character speak with a rendered accent\. 
 
      
-![\[Advanced settings for changing a character's voice in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-5-new.png)
+![\[Advanced settings for changing a character's voice in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-5-new.png)
 
 Now you are ready to add a speech line to give the character something to say\.
 
@@ -99,7 +99,7 @@ You can create speech lines one at a time in the Cloud Gem Portal\.
 1. In the Cloud Gem Portal, choose the **Speech Library** tab\.
 
 1. Choose **New Speech Line\.**  
-![\[Adding a speech line for your character in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-6.png)
+![\[Adding a speech line for your character in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-6.png)
 
 1. Specify the following for the speech line\.
    + **Character** – Choose the character that will speak the speech line\. You can choose from the characters that you created on the **Characters** tab\.
@@ -116,15 +116,15 @@ The next time that you add a speech line, the new line appears first in the spee
 
 ### Filtering Speech Lines<a name="cloud-canvas-cloud-gem-text-to-speech-cgp-filtering-speech-lines"></a>
 
-After you create multiple speech lines, click the filter ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-filter-icon.png) icon for **Character** or **Tags** to filter them\.
+After you create multiple speech lines, click the filter ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-filter-icon.png) icon for **Character** or **Tags** to filter them\.
 
-![\[Character and tag filters for speech lines.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-filters.png)
+![\[Character and tag filters for speech lines.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-filters.png)
 
 In the filter dialog box, select the characters or tags that you want to filter for, and then choose **Apply**\.
 
-![\[Filtering by character\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-7a-character-filter.png)
+![\[Filtering by character\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-7a-character-filter.png)
 
-![\[Filtering by tags\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-7b-tag-filter.png)
+![\[Filtering by tags\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-7b-tag-filter.png)
 
 For the tag filter, you can use the **Match** option to filter for **Any** or **All** of the tags that you select\.
 
@@ -135,12 +135,12 @@ You can delete speech lines one at a time or in multiples\.
 **To delete a single speech line**
 + Click the trash icon for the speech line\. 
 
-![\[Deleting a speech line in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-deleting-speech-lines-single.png)
+![\[Deleting a speech line in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-deleting-speech-lines-single.png)
 
 **To delete a multiple speech lines**
 + Select the speech lines that you want to delete, and then choose **Delete**\.
 
-![\[Deleting multiple speech lines in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-deleting-speech-lines-multiple.png)
+![\[Deleting multiple speech lines in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-deleting-speech-lines-multiple.png)
 
 ### Importing Speech Lines from a \.csv File<a name="cloud-canvas-cloud-gem-text-to-speech-cgp-importing-speech-lines"></a>
 
@@ -169,13 +169,13 @@ See the following steps to import a speech line file\.
 1. On the **Speech Library** tab, choose **Import \.csv**\., and then choose the `.csv` file to import\.
 
 1. In the **Import** window, choose your custom mappings, and then choose **Continue**\.  
-![\[Mapping fields in the speech line .csv file.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-8.png)
+![\[Mapping fields in the speech line .csv file.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-8.png)
 
 1. Select the speech lines that you want to import, or select the check box at the top to import them all\.  
-![\[Choosing speech lines to import from a .csv file.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-9.png)
+![\[Choosing speech lines to import from a .csv file.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-9.png)
 
 1. Choose **Continue**\. The imported lines appear in the speech library, where you can edit them as needed\.  
-![\[Imported speech lines\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-10.png)
+![\[Imported speech lines\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-10.png)
 **Note**  
 If the character for a speech line does not exist, the cloud gem creates one based on the values of the last character that you created\.
 
@@ -186,18 +186,18 @@ After you use the Cloud Gem Portal to create your speech line/character combinat
 **To download speech files**
 
 1. In the Cloud Gem Portal, choose the **Speech Library** tab, select the speech lines that you want to download, and then choose **Download Speech Files \(\.zip\)**\.  
-![\[Downloading speech files in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-11.png)
+![\[Downloading speech files in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-11.png)
 
 1. Enter a name for the `.zip` file, and then choose **Download**\.  
-![\[File name for download\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-12.png)
+![\[File name for download\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-12.png)
 
    To ensure uniqueness, a UUID is added to the file name that you specify\. The final file name format is `<file_name><UUID>.zip`\.
 
-1. If your speech package is large, it can take some time to download\. To check the status of a pending download, choose the cloud icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-13.png) next to **Download Speech Files \(\.zip\)**\.  
-![\[View pending speech file downloads in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-14.png)
+1. If your speech package is large, it can take some time to download\. To check the status of a pending download, choose the cloud icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-13.png) next to **Download Speech Files \(\.zip\)**\.  
+![\[View pending speech file downloads in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-14.png)
 
 1. You can open the `.zip` file to view its contents\. The file contains the voice \(`.pcm`\) files, the speech mark `(.json`\) files, and a `character_mapping.json` file\. It also contains a `speech_line_definitions.csv` file that contains the definitions of the speech lines that you selected\.  
-![\[Viewing downloaded contents of the speech file.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-15.png)
+![\[Viewing downloaded contents of the speech file.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-15.png)
 
    Several speech lines can share a voice file if they use the same voice and speech line\. They can also share a speech marks file if they are using the same voice, speech line, and speech marks\.
 
@@ -205,7 +205,7 @@ After you use the Cloud Gem Portal to create your speech line/character combinat
 
 When you download a speech file, a copy is saved on the **Generated Packages** tab\. This creates a repository of generated packages that you can download again if needed\.
 
-![\[Downloading generated packages\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-16a.png)
+![\[Downloading generated packages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-16a.png)
 
 **To download a generated package**
 + Select the packages that you want, and then choose **Download Generated Packages**\.

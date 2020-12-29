@@ -38,6 +38,6 @@ You are now successfully signed into the AWS Management Console\.
    + Expand **All services** and under **Management Tools**, click **CloudFormation**\.
 
 1. On the **Stacks** page, you can see the individual stacks that have been created for your cloud gems and for your deployment\.  
-![\[AWS CloudFormation stacks visible in the AWS Management Console.\]](/images/cloud_canvas/cloud-canvas-tutorial-cfn-stacks.png)
+![\[AWS CloudFormation stacks visible in the AWS Management Console.\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-cfn-stacks.png)
 **Note**  
-If a stack update operation is still in progress, the stack shows the status **UPDATE\-IN\-PROGRESS**\. Otherwise, the status shows **CREATE\-COMPLETE**\. You can click the **Refresh** icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-tutorial-cfn-stacks-refresh.png) to update the status\.
+If a stack update operation is still in progress, the stack shows the status **UPDATE\-IN\-PROGRESS**\. Otherwise, the status shows **CREATE\-COMPLETE**\. You can click the **Refresh** icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-cfn-stacks-refresh.png) to update the status\.

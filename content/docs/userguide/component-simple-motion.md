@@ -18,7 +18,7 @@ For creating cinematics with the **Simple Motion** component, see [Creating Char
 
 ## Simple Motion Component Properties<a name="component-simple-motion-properties"></a>
 
-![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/component/component-simple-motion-properties.png)
+![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/userguide/component/component-simple-motion-properties.png)
 
 
 ****  

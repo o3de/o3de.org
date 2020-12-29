@@ -13,7 +13,7 @@ To enable the effect, see [Enable Rain Drops](enable-rain-drops-node.md)\.
 + [Inputs](#disable-rain-drops-note-input)
 + [Outputs](#disable-rain-drops-node-output)
 
-![\[disableraindrops, disableraindropsnode, disableraindrops, disablerain\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-rain-drops-node.png)
+![\[disableraindrops, disableraindropsnode, disableraindrops, disablerain\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-rain-drops-node.png)
 
 ## Inputs<a name="disable-rain-drops-note-input"></a>
 

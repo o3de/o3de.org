@@ -9,7 +9,7 @@ Create a custom particle attribute panel so you can quickly access the parameter
 
 When you move a panel to a new location, an indicator appears so you can preview a valid drop location\. If you do not see an indicator, the parameter is inserted at the end of the panel\. The following example shows a custom panel with drop indicators\. 
 
-![\[Image NOT FOUND\]](/images/particles/particle-custom-panel-2.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-custom-panel-2.png)
 
 **To create a custom attribute panel**
 
@@ -20,12 +20,12 @@ When you move a panel to a new location, an indicator appears so you can preview
 1. Do one of the following:
    + Choose **Custom attributes**, **New attribute**\.
    + Choose **Custom attributes**, **Import attribute**\.  
-![\[Image NOT FOUND\]](/images/particles/particle-custom-panel-3.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-custom-panel-3.png)
 
 1. Name your custom attribute or browse to the attribute that you want to import\.
 
 1. Once created, you can right\-click the attribute title bar to rename, empty, or export custom attribute panels\.  
-![\[Image NOT FOUND\]](/images/particles/particle-custom-panel-1.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-custom-panel-1.png)
 
 ## Custom Attributes Panel Menu Options<a name="particle-custom-attributes-menu"></a>
 

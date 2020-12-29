@@ -6,7 +6,7 @@ title: '&ly-editor; Interface'
 
 Lumberyard Editor has the following panels and toolbars in the default layout:
 
-![\[Use the Lumberyard Editor interface to learn about the different panels and tools in the default layout.\]](/images/lumberyard-editor-overall.png)
+![\[Use the Lumberyard Editor interface to learn about the different panels and tools in the default layout.\]](/images/userguide/lumberyard-editor-overall.png)
 
 1. **Entity Outliner** – The **Entity Outliner** lists the component entities that are included in the current level\. For more information, see [Entity Outliner](component-entity-outliner.md)\.
 

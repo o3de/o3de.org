@@ -28,7 +28,7 @@ Do the following to apply a skybox material to a skybox\.
 1. In the **Rollup Bar**, on the **Terrain** tab, click **Environment**\.
 
 1. Under **SkyBox**, click the browse \(**\.\.**\) button to choose a new material for the **Material** parameter\.  
-![\[Image NOT FOUND\]](/images/sky/skybox-material-parameter.png)
+![\[Image NOT FOUND\]](/images/userguide/sky/skybox-material-parameter.png)
 
 1. In the **Material Editor**, choose a material that uses the **Sky** shader\.
 

@@ -22,7 +22,7 @@ When you place a lightning arc entity, you must specify at least one target\. Th
 1. Under **Entity Properties**, ensure that **Active** is selected\.
 
 1. Click **AI/Physics** in the bottom toolbar\. This makes the lightning arc visible in Lumberyard Editor after you place and link the targets\.  
-![\[Image NOT FOUND\]](/images/gems/gems-system-lightning-ai-physics.png)
+![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-lightning-ai-physics.png)
 
 1. To place one or more targets, in the **Rollup Bar**'s **Objects** tab, click **AI**\. Under **Object Type**, click **Tagpoint**\.
 

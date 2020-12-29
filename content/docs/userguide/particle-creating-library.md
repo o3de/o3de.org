@@ -12,10 +12,10 @@ Particle effect data is stored in an XML\-based library file\.
    + Choose **Create new library**\.
    + Choose **File**, **Add library**\.
    + Choose the drop\-down arrow in the **Libraries** panel, and choose **Add library**\.
-   + Choose the ![\[Particle Editor library\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-library-icon.png) icon to the right of the search bar\.
+   + Choose the ![\[Particle Editor library\]](/images/userguide/particles/particle-editor-library-icon.png) icon to the right of the search bar\.
 
         
-![\[Create libraries in the Particle Editor.\]](/images/particles/particle-editor-library-adding.png)
+![\[Create libraries in the Particle Editor.\]](/images/userguide/particles/particle-editor-library-adding.png)
 
 1. In **Libraries**, where the default name is highlighted, enter a name for the library\.
 

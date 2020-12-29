@@ -28,7 +28,7 @@ You can use the **FlipbookAnimation** component to create simple image\-based an
 
 You can add the **FlipbookAnimation** component to elements that also have an [**Image**](ui-editor-components-image.md) component\. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](ui-editor-component-sprite-sheets.md)\.
 
-![\[FlipbookAnimation component and Image component set as sprite/texture asset\]](/images/game_ui_editor/ui-editor-components-other-flipbook-1.png)
+![\[FlipbookAnimation component and Image component set as sprite/texture asset\]](/images/userguide/game_ui_editor/ui-editor-components-other-flipbook-1.png)
 
 **To add and configure a FlipbookAnimation component**
 

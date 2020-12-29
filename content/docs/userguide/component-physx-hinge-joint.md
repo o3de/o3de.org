@@ -8,7 +8,7 @@ With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint t
 
 ## PhysX Hinge Joint component properties<a name="component-physx-hinge-joint-properties"></a>
 
-![\[Properties of the PhysX Hinge Joint component\]](/images/physx/physx/ui-physx-hinge-joint-component-1.27.png)
+![\[Properties of the PhysX Hinge Joint component\]](/images/userguide/physx/physx/ui-physx-hinge-joint-component-1.27.png)
 
 **Local Position**  
 Specify the position of the joint relative to the entity transform\.

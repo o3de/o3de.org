@@ -11,7 +11,7 @@ To gauge the game performance outside of Lumberyard Editor, [create a release bu
 **To preview your virtual reality project**
 
 1. In Lumberyard Editor, click **VR Preview** on the bottom toolbar\.  
-![\[Image NOT FOUND\]](/images/vr/virtual-reality-preview.png)
+![\[Image NOT FOUND\]](/images/userguide/vr/virtual-reality-preview.png)
 
 1. Enter game mode by doing one of the following:
    + Press **Ctrl \+ G**

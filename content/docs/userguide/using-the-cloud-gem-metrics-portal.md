@@ -11,7 +11,7 @@ After you send test events with the Metrics Sample level or the command line, yo
 1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
 
 1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **Game Metrics**\.  
-![\[Choose Game Metrics in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem.png)
+![\[Choose Game Metrics in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem.png)
 
 1. Choose the game metric data that you want to view\. Metrics are automatically updated every five minutes\. You can view the following:
 
@@ -24,23 +24,23 @@ You can view the following metrics:
 **Incoming Game Events**  
 Number of game events that Amazon API Gateway receives from all the connected players\.   
 
-![\[Choose Game Events\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-2.png)
+![\[Choose Game Events\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-2.png)
 
 **Event Bandwidth Consumed**  
 Events represented as bytes that Amazon API Gateway receives from the connected players\.  
 
-![\[Choose Event Bandwidth Consumed\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-3.png)
+![\[Choose Event Bandwidth Consumed\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-3.png)
 
 **Event Duplication Error Rate**  
  Level of event duplication that occurs in the database\. This chart shows the Amazon Athena query to examine the data for any duplicates\. Typically, all events should be unique; there shouldn't be event duplicates\.  
 When you enable the gem for the first time, you may see some duplication in the first hour; however, the amoeba single file generator will remove the duplicates as it combines data files\.
 
-![\[Choose Event Duplication Rate\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-4.png)
+![\[Choose Event Duplication Rate\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-4.png)
 
 **Time To Save Events to S3**  
 Time required for Lambda to aggregate the events in the FIFO consumer and then send the game events to the Amazon S3 bucket\. As more players join your game, this chart will show a gradual increase in time\.  
 
-![\[Choose Time to Save Events To S3\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-5.png)
+![\[Choose Time to Save Events To S3\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-5.png)
 
 ## SQS<a name="game-metrics-sqs"></a>
 
@@ -51,12 +51,12 @@ You can view the following metrics:
 **Processed SQS Messages**  
 Number of SQS messages that are currently in the FIFO queue\.  
 
-![\[Choose Processed SQS Messages\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-6.png)
+![\[Choose Processed SQS Messages\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-6.png)
 
 **Time To Delete SQS Messages**  
 Time required for a FIFO consumer to delete all of the SQS messages after the consumer processes the messages from the FIFO queue\. Typically, this takes a few seconds\.  
 
-![\[Choose Time to Delete SQS Messages\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-7.png)
+![\[Choose Time to Delete SQS Messages\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-7.png)
 
 ## Lambda<a name="game-metrics-lambda"></a>
 
@@ -67,37 +67,37 @@ You can view the following metrics:
 **Producer Lambda Invocations**  
 Number of invokes of the Lambda FIFO producer that actively handle incoming game requests\.  
 
-![\[Choose Producer Lambda Invocations\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-8.png)
+![\[Choose Producer Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-8.png)
 
 **Producer Lambda Errors**  
 Rate of errors that currently occur while the Lambda FIFO producer processes incoming game requests\.  
 
-![\[Choose Producer Lambda Errors\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-9.png)
+![\[Choose Producer Lambda Errors\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-9.png)
 
 **Consumer Lambda Invocations**  
 Number of FIFO consumers that process messages in the SQS queue\. By default, there are three consumers invoked for each SQS FIFO queue, which is triggered every five minutes\.  
 
-![\[Choose Consumer Lambda Invocations\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-10.png)
+![\[Choose Consumer Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-10.png)
 
 **Consumer Lambda Duration**  
 Average time for the FIFO consumer Lambda to process the SQS queue\.  
 
-![\[Choose Consumer Lambda Duration\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-11.png)
+![\[Choose Consumer Lambda Duration\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-11.png)
 
 **Consumer Lambda Errors**  
 Error rate of the FIFO consumers\. Typically, this rate should be zero unless a persistent problem exists in the pipeline\.  
 
-![\[Choose Consumer Lambda Duration\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-12.png)
+![\[Choose Consumer Lambda Duration\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-12.png)
 
 **Amoeba Lambda Invocations**  
 Number of invokes of the amoeba single file generator that occur\.  
 
-![\[Choose Amoeba Lambda Invocations\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-13.png)
+![\[Choose Amoeba Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-13.png)
 
 **Amoeba Errors**  
 Current error rate of the amoeba single file generators\.  
 
-![\[Choose Amoeba Errors\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-14.png)
+![\[Choose Amoeba Errors\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-14.png)
 
 ## DynamoDB<a name="game-metrics-dynamodb"></a>
 
@@ -108,12 +108,12 @@ You can view the following metrics:
 **Reads Consumed/Provisioned**  
 Current DynamoDB read load for the metric pipeline\.  
 
-![\[Choose Reads Consumed/Provisioned\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-15.png)
+![\[Choose Reads Consumed/Provisioned\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-15.png)
 
 **Writes Consumed/Provisioned**  
 Current DynamoDB write load for the metric pipeline\.  
 
-![\[Choose Writes Consumed/Provisioned\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-16.png)
+![\[Choose Writes Consumed/Provisioned\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-16.png)
 
 ## Partitions<a name="game-metrics-partitions"></a>
 
@@ -121,7 +121,7 @@ On the **Partitions** page, you can customize the Amazon S3 directories in which
 
 Based on the partition definition, an S3 key is returned\. The ordering of the partitions matters\.
 
-![\[Choose Partitions\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-17.png)
+![\[Choose Partitions\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-17.png)
 
 See the following pre\-defined partitions:
 
@@ -191,7 +191,7 @@ You can create custom partitions so that Amazon Athena queries your data against
 
 On the **Filtering** page, you can create filters to specify which data you no longer want to collect\. Game clients use these settings to filter the events or attributes\. You can then order the filters to specify the priority\.
 
-![\[Choose Filtering\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-18.png)
+![\[Choose Filtering\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-18.png)
 
 ### Creating Filters for Events<a name="creating-filters-for-game-events"></a>
 
@@ -256,7 +256,7 @@ The game client processes all events \(excluding filtered events\) to a local fi
 
 On the **Settings** page, you can specify the parameters for the metric pipeline\.
 
-![\[Choose Settings\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-19.png)
+![\[Choose Settings\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-19.png)
 
 You can specify the following parameters for game clients\.
 
@@ -301,7 +301,7 @@ You can specify the following for AWS\.
 
 On the **Settings** page, you can do the following\.
 
-![\[Choose Extra Settings under the Settings page.\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-20.png)
+![\[Choose Extra Settings under the Settings page.\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-20.png)
 
 **To enable extra actions**
 

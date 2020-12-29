@@ -31,7 +31,7 @@ local ChickenMannequinControllerSM =
 
 The result is the following **Properties** user interface in Lumberyard Editor:
 
-![\[Properties in Lumberyard Editor defined by the Properties table\]](/images/scripting/lua/lua-scripting-ces-4.png)
+![\[Properties in Lumberyard Editor defined by the Properties table\]](/images/userguide/scripting/lua/lua-scripting-ces-4.png)
 
 The type that you provide as the default value determines how the property is appears in the editor user interface\. You can further customize the representation of the property in the editor by specifying additional attributes in a table format\. All property types support a description field that appears when you pause your mouse on the property name in the editor\.
 
@@ -103,7 +103,7 @@ local ExampleScript = {
 return ExampleScript
 ```
 
-![\[Property array\]](/images/scripting/lua/lua-scripting-ces-properties-types-arrays.png)
+![\[Property array\]](/images/userguide/scripting/lua/lua-scripting-ces-properties-types-arrays.png)
 
 In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time\. You can also use `EntityId()` to make the array elements entity references, as in the following example from the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Scripts\LyShineExamples\Image\ImageFillTypes.lua` file\.
 
@@ -146,7 +146,7 @@ return Test
 
 When rendered in the UI, the property groupings and properties are sorted alphabetically irrespective of their order in the code\.
 
-![\[Grouped properties\]](/images/scripting/lua/lua-scripting-ces-properties-types-arrays-grouped.png)
+![\[Grouped properties\]](/images/userguide/scripting/lua/lua-scripting-ces-properties-types-arrays-grouped.png)
 
 ## Attributes<a name="lua-scripting-ces-properties-attributes"></a>
 

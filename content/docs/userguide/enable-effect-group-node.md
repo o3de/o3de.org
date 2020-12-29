@@ -18,7 +18,7 @@ For more information about effect group files, see [Customizing Post\-Processing
 + [Inputs](#enable-effect-group-node-input)
 + [Outputs](#enable-effect-group-node-output)
 
-![\[enableeffectgroup, enableeffectgroupnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-effect-group-node.png)
+![\[enableeffectgroup, enableeffectgroupnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-effect-group-node.png)
 
 ## Inputs<a name="enable-effect-group-node-input"></a>
 

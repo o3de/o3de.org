@@ -13,4 +13,4 @@ You can enter strings for the following actions:
 + **Pressed**
 + **Release**
 
-![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-actions.png)
+![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-actions.png)

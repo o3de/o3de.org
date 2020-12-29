@@ -28,7 +28,7 @@ You can't modify the **[OccluderArea](component-occluder-area.md)**, **[Portal](
 
 ## VisArea Component Properties<a name="component-vis-area-properties"></a>
 
-![\[The VisArea component properties in Lumberyard Editor.\]](/images/component/vis-area-component-properties.png)
+![\[The VisArea component properties in Lumberyard Editor.\]](/images/userguide/component/vis-area-component-properties.png)
 
 The **VisArea** component has the following properties\.
 
@@ -50,29 +50,29 @@ The **VisArea** component has the following properties\.
 The following example shows two boxes\. One box is inside the visible area, and one is outside\. From outside the visible area, the inside box isn't visible\. The **DisplayFilled** option is enabled so that the visible area appears orange\.  
 You can see the shadow of the box inside the visible area because the **AffectedBySun** option is enabled\.  
 
-![\[The VisArea component hides one box from another.\]](/images/component/component-visarea.png)
+![\[The VisArea component hides one box from another.\]](/images/userguide/component/component-visarea.png)
 
 **Example 2**  
 In the same example, the **DisplayFilled** option is disabled in the visible area\.  
 
-![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/component/component-visarea-2.png)
+![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/userguide/component/component-visarea-2.png)
 
 **Example 3**  
 In the following example, you can see the box inside the visible area, but you can't see the box outside the visible area\.   
 You can see the ocean inside the visible area because the **OceanIsVisible** option is enabled\.  
 
-![\[The VisArea component displays an ocean in the visible area.\]](/images/component/component-visarea-1.png)
+![\[The VisArea component displays an ocean in the visible area.\]](/images/userguide/component/component-visarea-1.png)
 
 **Example : Non\-Planar Legacy Vertices**  
 If you're familiar with the legacy visible areas, you might be used to seeing the legacy visualization\. In the legacy system, if you raise one vertex of the visible area higher than the other vertices, the legacy visualization displays the visible area incorrectly\.  
 The following example is the legacy visualization for a visible area\. One vertex appears higher than the others\.  
 
-![\[Legacy non-planar visible area visualization.\]](/images/component/component-visarea-3.png)
+![\[Legacy non-planar visible area visualization.\]](/images/userguide/component/component-visarea-3.png)
 
 **Example : Planar Vertices with VisArea Component**  
 The following is an example of the **VisArea** component with the same vertices\.  
 
-![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/component-visarea-4.png)
+![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/userguide/component-visarea-4.png)
 
 The second example is correct because the visible area is the volume on the xy\-plane with a z\-position and a height\. This makes it faster to determine whether an object is inside the **VisArea** component\.
 

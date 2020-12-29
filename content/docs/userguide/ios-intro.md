@@ -64,9 +64,9 @@ Lumberyard Editor is currently supported on Windows only\. You must export each 
 
 You will use a Development app throughout most of your development cycle\. Your app must connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor\. Asset Processor generates the Development app executable and its assets, which can be loose files or PAK files\.
 
-![\[The Development app contains the Lumberyard executable and assets.\]](/images/mobile/ios/ios_development_app.png)
+![\[The Development app contains the Lumberyard executable and assets.\]](/images/userguide/mobile/ios/ios_development_app.png)
 
-![\[The Development app connects to the remote shader compiler.\]](/images/mobile/ios/ios_development_scenario_01.png)
+![\[The Development app connects to the remote shader compiler.\]](/images/userguide/mobile/ios/ios_development_scenario_01.png)
 
 ### VFS App<a name="lumberyard-ios-app-anatomy-vfs-app"></a>
 
@@ -74,15 +74,15 @@ You can use the VFS app with the Virtual Filing System \(VFS\)\. While similar t
 
 Your app must also connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor on startup\. You can optionally choose to direct traffic to and from the Remote Compiler through Asset Processor\.
 
-![\[The Virtual Filing System (VFS) app contains the Lumberyard executable, bootstrap.cfg file, and the game.xml file.\]](/images/mobile/ios/ios_vfs_app.png)
+![\[The Virtual Filing System (VFS) app contains the Lumberyard executable, bootstrap.cfg file, and the game.xml file.\]](/images/userguide/mobile/ios/ios_vfs_app.png)
 
-![\[The VFS app connects to the Asset Processor on startup.\]](/images/mobile/ios/ios_development_scenario_02.png)
+![\[The VFS app connects to the Asset Processor on startup.\]](/images/userguide/mobile/ios/ios_development_scenario_02.png)
 
 ### Release App<a name="lumberyard-ios-app-anatomy-release-app"></a>
 
 The Release app contains the executable and all binaries and assets that are required for your app to run\. The assets and shaders must be PAK files because the app will not connect to the Remote Shader Compiler or Asset Processor\.
 
-![\[The Release app contains the Lumberyard binaries, asset .pak files, and shader .pak files.\]](/images/mobile/ios/ios_release_app.png)
+![\[The Release app contains the Lumberyard binaries, asset .pak files, and shader .pak files.\]](/images/userguide/mobile/ios/ios_release_app.png)
 
 **Topics**
 + [Prerequisites](#ios-prerequisites)

@@ -6,7 +6,7 @@ title: Using the Preview Panel
 
 You can use the **Preview** panel in the **Particle Editor** to view the particle effects\.
 
-![\[Particle panel in the Particle Editor.\]](/images/particles/particle-preview-panel.png)
+![\[Particle panel in the Particle Editor.\]](/images/userguide/particles/particle-preview-panel.png)
 
 This panel has the following features:
 

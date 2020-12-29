@@ -13,11 +13,11 @@ The following images show a terrain heightmap and the corresponding generated te
 
 **Example Terrain Heightmap**  
 
-![\[Create a terrain heightmap in Lumberyard\]](/images/terrain/terrain-heightmap-create.png)
+![\[Create a terrain heightmap in Lumberyard\]](/images/userguide/terrain/terrain-heightmap-create.png)
 
 **Example Generated Terrain**  
 
-![\[\]](/images/terrain/terrain-heightmap-create-2.png)
+![\[\]](/images/userguide/terrain/terrain-heightmap-create-2.png)
 
 If you want to create the highest quality terrain heightmap for a 2K world, use the following settings:
 + 2K heightmap

@@ -18,7 +18,7 @@ To make simulations similar to real\-world time, specify a value of `0.0003`\.
 + [Inputs](#set-speed-input)
 + [Outputs](#set-speed-output)
 
-![\[setspeednode, setspeed, settimeofdayspeed\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-speed-node.png)
+![\[setspeednode, setspeed, settimeofdayspeed\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-speed-node.png)
 
 ## Inputs<a name="set-speed-input"></a>
 

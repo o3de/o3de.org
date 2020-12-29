@@ -21,7 +21,7 @@ The **Sky Cloud** component replaces [legacy clouds](https://docs.aws.amazon.com
 
 **Example Sky Cloud Component**  
 
-![\[Example Sky Cloud component in Lumberyard.\]](/images/gems-system-gem-clouds.png)
+![\[Example Sky Cloud component in Lumberyard.\]](/images/userguide/gems-system-gem-clouds.png)
 
 Lumberyard features two variations of cloud rendering:
 
@@ -55,20 +55,20 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 1. [Create an entity\.](creating-entity.md)
 
 1. In the **Entity Outliner**, select the new entity and in the **Entity Inspector**, click **Add Component** and then click the **Sky Cloud** component\.  
-![\[Under Environment, select the Sky Cloud component.\]](/images/component/component-sky-cloud-1.png)
+![\[Under Environment, select the Sky Cloud component.\]](/images/userguide/component/component-sky-cloud-1.png)
 
 1. Click **Add Required Component** to add the **[Box Shape](component-shapes.md)** component\.<a name="adding-loop-box"></a>  
-![\[Click Add Required Component to add the Box Shape component\]](/images/component/component-sky-cloud-2.png)
+![\[Click Add Required Component to add the Box Shape component\]](/images/userguide/component/component-sky-cloud-2.png)
 
 1. In the **Entity Inspector**, at the bottom of the **Sky Cloud** component properties, click **Generate**\. This generates a common cloud that uses sprite\-based shading in the viewport\.  
-![\[At the bottom of the Sky Cloud component box, click Generate to create a cloud in the viewport.\]](/images/component/component-sky-cloud-3.png)
+![\[At the bottom of the Sky Cloud component box, click Generate to create a cloud in the viewport.\]](/images/userguide/component/component-sky-cloud-3.png)
 
 1. To turn the common cloud into a volumetric cloud, select the [**Volumetric Rendering**](#component-sky-cloud-properties-volumetric) property\.  
-![\[Under Volumetric Rendering, select Enabled to create a volumetric cloud.\]](/images/component/component-sky-cloud-4.png)
+![\[Under Volumetric Rendering, select Enabled to create a volumetric cloud.\]](/images/userguide/component/component-sky-cloud-4.png)
 
 ## Sky Cloud Component Properties<a name="component-sky-cloud-properties"></a>
 
-![\[Sky Cloud component properties in Lumberyard Editor.\]](/images/component/component-sky-cloud-properties-1.png)
+![\[Sky Cloud component properties in Lumberyard Editor.\]](/images/userguide/component/component-sky-cloud-properties-1.png)
 
 The **Sky Cloud** component properties are grouped into the following categories\. See the individual sections for detailed descriptions for the available parameters\.
 
@@ -152,10 +152,10 @@ When you add a **Sky Cloud** component to an entity, you also add a **Box Shape*
 1. In the **Entity Inspector**, modify the **[Box Shape](#adding-loop-box)** component\. Set the **Dimensions** values to your preferred loop box size\.
 
    For example, **X** = **500\.00** m, **Y** = **500\.00** m, **Z** = **200\.00** m\.  
-![\[Modify the Box Shape component's Dimension property to specify the size of the cloud's loop box\]](/images/component/component-sky-cloud-loop-box-1.png)
+![\[Modify the Box Shape component's Dimension property to specify the size of the cloud's loop box\]](/images/userguide/component/component-sky-cloud-loop-box-1.png)
 
 1. To see the cloud's movement within the loop box, select **AutoMove** in the **Sky Cloud** component properties\.  
-![\[In the Sky Cloud component's properties, under Movement, select AutoMove to enable cloud movement.\]](/images/component/component-sky-cloud-loop-box-2.png)
+![\[In the Sky Cloud component's properties, under Movement, select AutoMove to enable cloud movement.\]](/images/userguide/component/component-sky-cloud-loop-box-2.png)
 
 ## Setting Fade Distance<a name="component-sky-cloud-fade-distance"></a>
 
@@ -167,7 +167,7 @@ With smaller values, the cloud fades out close to the edge of the loop box\. Wit
 The following images show two clouds\.  
 Cloud \(1\) is near the edge of the loop box but appears solid because of a small fade value\. Cloud \(2\) is equally near the edge but appears faded because of a larger fade value\.  
 
-![\[Example Setting Fade Distance parameter for the Sky Cloud component to make clouds fade as they closer to the loop box.\]](/images/component/component-sky-cloud-fade-distance-1.png)
+![\[Example Setting Fade Distance parameter for the Sky Cloud component to make clouds fade as they closer to the loop box.\]](/images/userguide/component/component-sky-cloud-fade-distance-1.png)
 
 **To set the fade distance**
 
@@ -181,7 +181,7 @@ This value, measured in meters, should not exceed half of the length of the loop
 
 The **Sky Cloud** component's **Display** parameters change how the cloud is displayed in the viewport\. You can use these parameters to visualize aspects of the cloud\.
 
-![\[The Sky Cloud component's available Display parameters include Display Spheres, Display Volumes, and Display Bounds.\]](/images/component/component-sky-cloud-display-1.png)
+![\[The Sky Cloud component's available Display parameters include Display Spheres, Display Volumes, and Display Bounds.\]](/images/userguide/component/component-sky-cloud-display-1.png)
 
 When **Display Spheres** is selected, the viewport displays a sphere for each cloud particle\.
 
@@ -191,7 +191,7 @@ When **Display Spheres** is selected, the viewport displays a sphere for each cl
 
 1. In the **Entity Inspector**, in the **Sky Cloud** component properties, select **Display Spheres**\.   
 **Example**    
-![\[Example Sky Cloud component with the Display Spheres parameter which displays a sphere for each cloud particle.\]](/images/component/component-sky-cloud-display-2.png)
+![\[Example Sky Cloud component with the Display Spheres parameter which displays a sphere for each cloud particle.\]](/images/userguide/component/component-sky-cloud-display-2.png)
 
 When **Display Volumes** is selected, the viewport displays the boxes that make up each part of the cloud volume\. For more information, see [Setting Up Cloud Generation Areas](#component-sky-cloud-generation-area)\.
 
@@ -201,7 +201,7 @@ When **Display Volumes** is selected, the viewport displays the boxes that make 
 
 1. In the **Entity Inspector**, in the **Sky Cloud** component properties, select **Display Volumes**\.  
 **Example**    
-![\[Example Sky Cloud component with the Display Volumes which displays the box for each volume that is part of the cloud.\]](/images/component/component-sky-cloud-display-3.png)
+![\[Example Sky Cloud component with the Display Volumes which displays the box for each volume that is part of the cloud.\]](/images/userguide/component/component-sky-cloud-display-3.png)
 
 When **Display Bounds** is selected, the viewport displays a box that includes all areas of the cloud\.
 
@@ -211,13 +211,13 @@ When **Display Bounds** is selected, the viewport displays a box that includes a
 
 1. In the **Entity Inspector**, in the **Sky Cloud** component properties, select **Display Bounds**\.  
 **Example**    
-![\[Example Sky Cloud component with the Display Bounds which displays a box that contains all areas of the cloud.\]](/images/component/component-sky-cloud-display-4.png)
+![\[Example Sky Cloud component with the Display Bounds which displays a box that contains all areas of the cloud.\]](/images/userguide/component/component-sky-cloud-display-4.png)
 
 ## Setting Up Cloud Generation Areas<a name="component-sky-cloud-generation-area"></a>
 
 You can set up cloud generation areas to customize the shape of your cloud\. To define these areas, add **Box Shape** components to child entities under the main parent entity\.
 
-![\[Create child entities and add Box Shape components to define the size and shape of the cloud.\]](/images/component/component-sky-cloud-generation-area-1.png)
+![\[Create child entities and add Box Shape components to define the size and shape of the cloud.\]](/images/userguide/component/component-sky-cloud-generation-area-1.png)
 
 **To define cloud generation areas**
 
@@ -230,17 +230,17 @@ You can set up cloud generation areas to customize the shape of your cloud\. To 
 1. In the **Entity Inspector**, for the **Sky Cloud** component, clear the **Fill by Loopbox** check box\.
 
    Clearing this option makes the clouds render inside the child entities rather than in the current entity's box shape\.  
-![\[Clear the Fill By Loopbox option.\]](/images/component/component-sky-cloud-generation-area-clearloopbox.png)
+![\[Clear the Fill By Loopbox option.\]](/images/userguide/component/component-sky-cloud-generation-area-clearloopbox.png)
 
 1. Create another entity with a descriptive name, such as **CloudVolume1**, and then add the **Box Shape** component\.
 
 1. Modify the dimensions and position of the **Box Shape** component to accommodate a cloud that you want to create\.
 
 1. Repeat the previous two steps, adding new entities until you achieve the configuration that you want for your clouds\.  
-![\[Position the box shapes to form the cloud's shape and volume\]](/images/component/component-sky-cloud-generation-area-configure.png)
+![\[Position the box shapes to form the cloud's shape and volume\]](/images/userguide/component/component-sky-cloud-generation-area-configure.png)
 
 1. To parent all of the entities to the **CloudGenerator** entity, select all of the entities and drag it to the parent entity\.  
-![\[Parent the CloudVolume entities by selecting and dragging them to the CloudGenerator entity.\]](/images/component/component-sky-cloud-generation-area-parent.png)
+![\[Parent the CloudVolume entities by selecting and dragging them to the CloudGenerator entity.\]](/images/userguide/component/component-sky-cloud-generation-area-parent.png)
 
 1. Select the parent entity and in the **Entity Inspector**, for the **Sky Cloud** component, click **Generate**\.  
-![\[Click Generate to create the clouds.\]](/images/component/component-sky-cloud-generation-area-generate.png)
+![\[Click Generate to create the clouds.\]](/images/userguide/component/component-sky-cloud-generation-area-generate.png)

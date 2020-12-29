@@ -23,7 +23,7 @@ Raycast queries are the most common scene query\. A raycast query takes a point 
 **Example**  
 The raycast query intersects the pentagon only\.  
 
-![\[Raycast query example in PhysX world.\]](/images/physx/physx-raycast-shape-cast-queries-2.png)
+![\[Raycast query example in PhysX world.\]](/images/userguide/physx/physx-raycast-shape-cast-queries-2.png)
 
 To perform a raycast query, use the `WorldRequestBus`\.
 
@@ -81,7 +81,7 @@ A shapecast query is similar to a raycast query except that a shapecast query ta
 **Example**  
 The shapecast query is in the shape of a sphere and intersects with the rectangle and pentagon entities\.  
 
-![\[Shapecast query example in PhysX.\]](/images/physx/physx-raycast-shape-cast-queries-3.png)
+![\[Shapecast query example in PhysX.\]](/images/userguide/physx/physx-raycast-shape-cast-queries-3.png)
 
 To perform a shapecast query, use the `WorldRequestBus`\.
 
@@ -126,7 +126,7 @@ Overlap queries are simpler, as they don't take a direction or distance\. Overla
 **Example**  
 The overlap query is a sphere shape that intersects with both entities\.   
 
-![\[Overlap query example in PhysX.\]](/images/physx/physx-raycast-shape-cast-queries-4.png)
+![\[Overlap query example in PhysX.\]](/images/userguide/physx/physx-raycast-shape-cast-queries-4.png)
 
 **Example Overlap Closest**  
 

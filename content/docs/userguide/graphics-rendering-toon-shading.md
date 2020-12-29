@@ -17,14 +17,14 @@ For more information, see [Configuring Console Variables](console-intro.md#confi
 
 The following example level does not have toon shading enabled \(`r_AlphaBlendLayerCount=0`\)\.
 
-![\[Image NOT FOUND\]](/images/graphics-rendering-toon-shading-02.png)
+![\[Image NOT FOUND\]](/images/userguide/graphics-rendering-toon-shading-02.png)
 
 The following example level has toon shading enabled \(`r_AlphaBlendLayerCount=1`\)\.
 
-![\[Image NOT FOUND\]](/images/graphics-rendering-toon-shading-01.png)
+![\[Image NOT FOUND\]](/images/userguide/graphics-rendering-toon-shading-01.png)
 
 See additional examples of toon shading enabled:
 
-![\[Image NOT FOUND\]](/images/graphics-rendering-toon-shading-03.gif)
+![\[Image NOT FOUND\]](/images/userguide/graphics-rendering-toon-shading-03.gif)
 
-![\[Image NOT FOUND\]](/images/graphics-rendering-toon-shading-04.gif)
+![\[Image NOT FOUND\]](/images/userguide/graphics-rendering-toon-shading-04.gif)

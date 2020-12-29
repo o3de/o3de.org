@@ -19,7 +19,7 @@ For information about Waf build system, see [Using the Waf Build System](waf-int
 **Note**  
 Before you can run the Project Configurator, you must first run [Lumberyard Setup Assistant](lumberyard-launcher-using.md) and close Lumberyard Editor\.
 
-![\[Image NOT FOUND\]](/images/configurator/setup/ui-project-configurator-1.25.png)
+![\[Image NOT FOUND\]](/images/userguide/configurator/setup/ui-project-configurator-1.25.png)
 
 **Topics**
 + [Creating and Switching Game Projects](configurator-projects.md)

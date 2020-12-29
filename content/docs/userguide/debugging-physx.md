@@ -75,7 +75,7 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 
 1. Click **PhysX Debug**\.   
 **Example**    
-![\[PhysX Debug menu in gameplay mode.\]](/images/physx/physx-debugger-imgui-tool.png)
+![\[PhysX Debug menu in gameplay mode.\]](/images/userguide/physx/physx-debugger-imgui-tool.png)
 
 1. You can make the following changes\.  
 ****    

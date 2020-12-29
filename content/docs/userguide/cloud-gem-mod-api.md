@@ -7,7 +7,7 @@ title: Cloud Gem Message of the Day API Calls
 
 The game client and Cloud Gem Portal use Amazon API Gateway to securely invoke service API Lambda functions\. The game client can read messages while the Cloud Gem Portal can add, list, edit, and delete messages\.
 
-![\[Game client and Cloud Gem Portal call Lambda functions through API Gateway\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-details-diag.png)
+![\[Game client and Cloud Gem Portal call Lambda functions through API Gateway\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-details-diag.png)
 
 ## The Game Client Service API Calls: /player/messages<a name="cloud-canvas-cloud-gem-mod-api-game-client"></a>
 

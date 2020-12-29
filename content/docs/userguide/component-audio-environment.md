@@ -7,7 +7,7 @@ title: Audio Environment
 
 The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](audio-default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
 
-![\[Image NOT FOUND\]](/images/component/audio/component-audio-environment1.png)
+![\[Image NOT FOUND\]](/images/userguide/component/audio/component-audio-environment1.png)
 
 ## Audio Environment Properties<a name="component-audio-environment-properties"></a>
 

@@ -9,7 +9,7 @@ Disables a specific effect group of settings that was enabled with the **[Enable
 
 For more information about effect group files, see [Customizing Post\-Processing Effects](effect-groups-customizing-intro.md)\.
 
-![\[disableeffectgroupnode, disableeffectgroup\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-effect-group-node.png)
+![\[disableeffectgroupnode, disableeffectgroup\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-effect-group-node.png)
 
 ## Inputs<a name="disable-effect-group-node-input"></a>
 

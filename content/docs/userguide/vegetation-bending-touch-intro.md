@@ -16,7 +16,7 @@ For a specific vegetation element, you must have:
 
 The figure below shows how these 3 components are represented in the Lumberyard user interface after you have imported the main vegetation object mesh \(as FBX\)\.
 
-![\[How touch bending vegetation is managed within Lumberyard\]](/images/vegetation/vegetation/vegetation-touch-bending-cube-primitive1.png)
+![\[How touch bending vegetation is managed within Lumberyard\]](/images/userguide/vegetation/vegetation/vegetation-touch-bending-cube-primitive1.png)
 
 **Topics**
 + [Vegetation FBX Mesh](#vegetation-bending-touch-fbx)
@@ -48,7 +48,7 @@ The skeleton cannot have more than 128 joints\.
 
 The joints must follow the naming convention "**branchN\_M**", where N and M are positive integers starting from number 1\. Here is an example showing joint structure and naming:
 
-![\[Defining and managing a tree of joints for touch bending behaviors\]](/images/vegetation/vegetation/vegetation-touch-bending-skeleton1.png)
+![\[Defining and managing a tree of joints for touch bending behaviors\]](/images/userguide/vegetation/vegetation/vegetation-touch-bending-skeleton1.png)
 
 **Note**  
 The name of the root joint can be postfixed with "\_touchbend" \(for example, "branch1\_touchbend"\) as a convenience to notify the FBX pipeline that this asset is used for touch bending instead of a traditional animated character\.
@@ -59,7 +59,7 @@ The name of the root joint can be postfixed with "\_touchbend" \(for example, "b
 
 In the Lumberyard Editor, you can instantiate or paint static touch bendable vegetation using the Rollup Bar \(LEGACY\) UI\. 
 
-![\[Painting Touch Bendable Vegetation with Lumberyard\]](/images/vegetation/vegetation/vegetation-touch-bending-debugging1.png)
+![\[Painting Touch Bendable Vegetation with Lumberyard\]](/images/userguide/vegetation/vegetation/vegetation-touch-bending-debugging1.png)
 
 The steps shown above are no different from painting regular vegetation objects\. Just make sure that the chosen CGF file comes from an FBX asset exported as Touch Bendable Geometry\.
 
@@ -78,4 +78,4 @@ There is a set of CVARs that can be used to fine\-tune the performance of touch 
 |  **e\_FoliageBranchesTimeout**  | Lifetime, in seconds, of touch bending physics simulation after the last time a vegetation object was touched by another physical entity\. The default value is 4 seconds\. | 
 |  **physx\_Debug**  | Set this CVAR to 1 to enable the drawing of PhysX rigid bodies and trigger volumes when debugging\. This allows you to view the interactions during run time and check for unexpected behaviors during object interactions\. The example pictures below show the trigger volume at the time it is first touched by a spherical collider\. In the next frame, a tree of capsules is created dynamically and its realtime movement is fed into the renderer for skinning\. This tree of capsules will remain alive in PhysX memory for **e\_FoliageBranchesTimeout** seconds unless another collision occurs during that window, in which case the window will reset\.  | 
 
-![\[Enabling PhysX rigid bodies and trigger volumes for debugging\]](/images/vegetation/vegetation/vegetation-touch-bending-debugging2.png)
+![\[Enabling PhysX rigid bodies and trigger volumes for debugging\]](/images/userguide/vegetation/vegetation/vegetation-touch-bending-debugging2.png)

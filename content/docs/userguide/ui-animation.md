@@ -15,6 +15,6 @@ The UI **Animation Editor** has the following features:
 
 **To show the **Animation Editor** if it is not already visible**
 + From the [**UI Editor**](ui-editor-using.md) menu, choose **View**, **Animation Editor**\.  
-![\[Image NOT FOUND\]](/images/ui-animation-window.png)
+![\[Image NOT FOUND\]](/images/userguide/ui-animation-window.png)
 
 To create an animation sequence, you first create a new sequence, assign one or more UI elements to it, and then record changes you make to the UI element\(s\)—this becomes the animation sequence\. You can then edit the animation sequence\(s\) using the **Animation Editor**\. These processes are described in greater detail in the following sections\.

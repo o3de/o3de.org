@@ -13,7 +13,7 @@ To see an example of using the **UI Canvas Proxy Ref** component, open the **UiI
 
 The following picture shows three entities that share the same loaded canvas\. The curved plane entity has a **UI Canvas Asset Ref** component and the egg and the sphere both have **UI Canvas Proxy Ref** components:
 
-![\[Image NOT FOUND\]](/images/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
+![\[Image NOT FOUND\]](/images/userguide/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
 
 ## UI Canvas Proxy Ref Component Properties<a name="component-ui-canvas-proxy-ref-properties"></a>
 

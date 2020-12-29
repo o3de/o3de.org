@@ -7,7 +7,7 @@ title: RadioButtonGroup
 
 You can use the **RadioButtonGroup** component to manage radio buttons\. This component handles selecting and clearing the radio buttons in the group when appropriate\. It also ensures that only one radio button is selected at one time\. You typically use this component on an element with children radio buttons, which are part of the radio button group\.
 
-![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-radiobuttongroup.png)
+![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-radiobuttongroup.png)
 
 To see in\-game examples of completed canvases with the **RadioButtonGroup** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**\. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game\.
 

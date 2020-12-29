@@ -17,7 +17,7 @@ Complete the following procedures for setting decal mapping parameters\.
 
 Most decal parameters are in the Rollup Bar on the **Objects** tab, under **Misc**, **Decal**\.
 
-![\[Image NOT FOUND\]](/images/materials/maps/mat-maps-decal-params-rollupbar.png)
+![\[Image NOT FOUND\]](/images/userguide/materials/maps/mat-maps-decal-params-rollupbar.png)
 
 **To set decal parameters in the Rollup Bar**
 
@@ -34,7 +34,7 @@ Most decal parameters are in the Rollup Bar on the **Objects** tab, under **Misc
 
 Some decal parameters are set in the Material Editor under **Shader Params**\.
 
-![\[Image NOT FOUND\]](/images/materials/maps/mat-maps-decal-params-shader.png)
+![\[Image NOT FOUND\]](/images/userguide/materials/maps/mat-maps-decal-params-shader.png)
 
 **To set decal mapping parameters**
 

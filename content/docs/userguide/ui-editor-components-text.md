@@ -65,16 +65,16 @@ To use the text styling markup feature, you must use a font family `*.fontfamily
 You can use the following tags and attributes when styling text with markup:    
 **Bold** tag: <b>  
 
-![\[Example that uses a Text component to add bold in the UI Editor.\]](/images/game_ui_editor/this-text-bold.png)  
+![\[Example that uses a Text component to add bold in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-bold.png)  
 **Italic** tag: <i>  
 
-![\[Example that uses a Text component to add italics in the UI Editor.\]](/images/game_ui_editor/this-text-italic.png)  
+![\[Example that uses a Text component to add italics in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-italic.png)  
 **Font color** tag: <font color>  
 
-![\[Example that uses a Text component to add font color in the UI Editor.\]](/images/game_ui_editor/this-text-red.png)  
+![\[Example that uses a Text component to add font color in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-red.png)  
 **Font face** tag: <font face>  
 
-![\[Example that uses a Text component to add different fonts in the UI Editor.\]](/images/game_ui_editor/this-text-font.png)
+![\[Example that uses a Text component to add different fonts in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-font.png)
 
 ### Image Tag and Attributes<a name="ui-editor-component-text-attributes-images"></a>
 

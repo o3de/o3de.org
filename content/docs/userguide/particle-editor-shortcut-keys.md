@@ -21,4 +21,4 @@ Records a new keyboard shortcut when you click the shortcut\. Clears the keyboar
 
 The **Particle Editor** uses the following keyboard shortcuts\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-editor-hotkey-list.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-editor-hotkey-list.png)

@@ -11,7 +11,7 @@ Returns a material's color parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-color-node-input)
 + [Outputs](#material-owner-get-param-color-node-output)
 
-![\[getparamcolor, getparamcolornode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-color-material-owner-node.png)
+![\[getparamcolor, getparamcolornode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-color-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-color-node-input"></a>
 

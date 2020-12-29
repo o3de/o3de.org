@@ -19,7 +19,7 @@ The console found inside `AzCore` is a console and cvar system intended to repla
 + Flexible and expandable type support\. You can add support for new cvar types without altering the console code directly\.
 + Support for the legacy CryEngine console, specifically to reduce user confusion\. For users of the in\-game console, legacy cvars and `AZ_CVAR` cvars appear identical\.
 
-![\[Image NOT FOUND\]](/images/az/az-console-1.png)
+![\[Image NOT FOUND\]](/images/userguide/az/az-console-1.png)
 
 **Important**  
 As of Amazon Lumberyard version 1\.24, AZ::Console does not support the following features present in the CryEngine console:  

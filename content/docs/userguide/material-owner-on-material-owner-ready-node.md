@@ -11,7 +11,7 @@ This node is triggered when the material owner finishes loading its assets\. We 
 + [Inputs](#material-owner-on-material-owner-ready-node-input)
 + [Outputs](#material-owner-on-material-owner-ready-node-output)
 
-![\[onmaterialownerreadynode, onmaterialownerready\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-ready-material-owner-node.png)
+![\[onmaterialownerreadynode, onmaterialownerready\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-ready-material-owner-node.png)
 
 ## Inputs<a name="material-owner-on-material-owner-ready-node-input"></a>
 

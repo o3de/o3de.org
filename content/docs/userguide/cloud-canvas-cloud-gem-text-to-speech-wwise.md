@@ -32,10 +32,10 @@ To create a Wwise sound project and its associated directories, you use the Wwis
 1. [Run the Wwise LTX tool](audio-wwise-using.md#audio-setting-wwise-authoring-tool)\.
 
 1. In the **Project Launcher** dialog box, click **New**\.  
-![\[Click new\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-1.png)
+![\[Click new\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-1.png)
 
 1. In the **New Project** dialog box, specify the directory for the sound project files\. Lumberyard requires that your sound project files \(`.wproj` file and subdirectories\) be placed in the `dev\game_project\Sounds\wwise_project\` directory\.  
-![\[Specify the sound project directory\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-2.png)
+![\[Specify the sound project directory\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-2.png)
 
 1. Click **OK**\. Your project appears in the `wwwise_project` directory that you specified\.
 
@@ -46,15 +46,15 @@ To create a sound, you use the **Audio** tab of the Wwise authoring tool\.
 **To create a sound in the Wwise project**
 
 1. In the Wwise **Project Explorer** panel, create a directory under **Actor\-Mixer Hierarchy**\. Right\-click **Default Work Unit,** and then choose **New Child**, **Virtual Folder**\.  
-![\[Create a virtual directory\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-3.png)
+![\[Create a virtual directory\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-3.png)
 
 1. Give the directory a name\.  
-![\[Name the directory\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-4.png)
+![\[Name the directory\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-4.png)
 
 1. Create a sound object\. Right\-click the directory that you created, and then choose **New Child**, **Sound SFX**\.
 
 1. Give the sound a name\.  
-![\[Create and name a sound object\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-5.png)
+![\[Create and name a sound object\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-5.png)
 
 ## Create an Event to Trigger the Sound<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-create-an-event"></a>
 
@@ -65,13 +65,13 @@ After you create a sound, you create an event with which you can trigger the sou
 1. Under **Actor\-Mixer Hierarchy**, select your new sound\.
 
 1. In the project view **Contents Editor** pane, click **Add Source**, and then select **Wwise Audio Input**\.  
-![\[Add the Wwise audio input source\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-6.png)
+![\[Add the Wwise audio input source\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-6.png)
 
 1. Right\-click the sound that you created\. Choose **New Event**, **Play** to create an event that can trigger the sound\.  
-![\[Create an event\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-7.png)
+![\[Create an event\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-7.png)
 
    A new event is created with the default name of `Play_{sound-name}_{nn}`\. You can specify a different name if you want\. The event ID appears on the upper right\.  
-![\[Created sound event\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-8.png)
+![\[Created sound event\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-8.png)
 
 ## Generate the Soundbank File and Save the Wwise Project<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-generate-soundbank-file-and-save-wwise-project"></a>
 
@@ -80,7 +80,7 @@ After you have created an event for the sound, you generate a soundbank file and
 **To generate the soundbank and save the project**
 
 1. In Wwise LTX, click **Generate Soundbank**\.  
-![\[Generate soundbank file\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-generate-soundbank-file.png)
+![\[Generate soundbank file\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-generate-soundbank-file.png)
 
    If the **Generate Soundbank** button is not available in the version of Wwise that you are using, perform the following steps:
 
@@ -104,18 +104,18 @@ Now you are ready to use Lumberyard's Audio Controls Editor to integrate your Ww
 
 **To integrate the Wwise sound project with your Lumberyard game project**
 
-1. In Lumberyard Editor, choose **Tools**, **Other**, **Audio Controls Editor**\. Alternatively, click the headphone ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-9.png) icon\.
+1. In Lumberyard Editor, choose **Tools**, **Other**, **Audio Controls Editor**\. Alternatively, click the headphone ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-9.png) icon\.
 
 1. In the left panel of Audio Controls Editor, create a new directory\. This example creates a directory called `wwise`\.
 
 1. In the **Wwise Controls** middleware pane \(the default location is on the far right\) you should see an item for each event that you created and a `.bnk` file\. The `.bnk` file is the soundbank file that you generated\.  
-![\[Generated sound files\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-10.png)
+![\[Generated sound files\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-10.png)
 
    Drag these items from the **Wwise Controls** pane to the directory that you created on the left\. This step alerts your game to the presence of the Wwise objects\.
 
 1. Click the item on the left that was created from the `.bnk` file\. The **Inspector** panel inspects the object\.
 
 1. If the list under **Preloaded Soundbanks** is empty, drag the `.bnk` file from the **Wwise Controls** panel into the list of preloaded soundbanks\.  
-![\[Drag the soundbank file\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-11.png)
+![\[Drag the soundbank file\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-11.png)
 
 1. In the **Audio Controls Editor**, choose **File**, **Save All**\.

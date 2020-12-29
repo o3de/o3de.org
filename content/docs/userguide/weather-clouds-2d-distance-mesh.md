@@ -8,7 +8,7 @@ Distance clouds are two\-dimensional clouds that are placed at a great distance,
 
 **Example Distance Clouds**  
 
-![\[Example distance clouds in Lumberyard.\]](/images/weather/weather-clouds-2d-distance-mesh-1.png)
+![\[Example distance clouds in Lumberyard.\]](/images/userguide/weather/weather-clouds-2d-distance-mesh-1.png)
 
 **To place distance clouds**
 
@@ -17,7 +17,7 @@ Distance clouds are two\-dimensional clouds that are placed at a great distance,
 1. [Add](component-working-adding.md) the [**Mesh**](component-static-mesh.md) component to the entity\.
 
 1. In the **Mesh** component, for **Mesh asset**, click \(**…**\)\.  
-![\[Add a mesh asset to the Mesh component.\]](/images/weather/weather-clouds-2d-distance-mesh-2.png)
+![\[Add a mesh asset to the Mesh component.\]](/images/userguide/weather/weather-clouds-2d-distance-mesh-2.png)
 
 1. Select a mesh asset file and click **OK**\.  
-![\[Example of a mesh asset for placing distance clouds.\]](/images/weather/weather-clouds-2d-distance-mesh-3.png)
+![\[Example of a mesh asset for placing distance clouds.\]](/images/userguide/weather/weather-clouds-2d-distance-mesh-3.png)

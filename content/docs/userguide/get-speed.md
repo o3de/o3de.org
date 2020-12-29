@@ -11,7 +11,7 @@ Returns the current time of day speed multiplier\. The value is specified in con
 + [Inputs](#get-speed-input)
 + [Outputs](#get-speed-output)
 
-![\[getspeed, getspeednode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-speed-node.png)
+![\[getspeed, getspeednode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-speed-node.png)
 
 ## Inputs<a name="get-speed-input"></a>
 

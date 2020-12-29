@@ -13,7 +13,7 @@ To enable the effect, see [Enable Radial Blur](enable-radial-blur-node.md)\.
 + [Inputs](#disable-radial-blur-note-input)
 + [Outputs](#disable-radial-blur-node-output)
 
-![\[disableradialblur, disableradialblurnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-radial-blur-node.png)
+![\[disableradialblur, disableradialblurnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-radial-blur-node.png)
 
 ## Inputs<a name="disable-radial-blur-note-input"></a>
 

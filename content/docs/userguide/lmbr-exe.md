@@ -27,7 +27,7 @@ title: Managing Game Projects with Lmbr.exe
    ```
 
    The list of possible commands appears\.  
-![\[Lmbr.exe help commands.\]](/images/configurator-lmbr.png)
+![\[Lmbr.exe help commands.\]](/images/userguide/configurator-lmbr.png)
 
 You can also use `-help` on other commands\. For example, to see more information about Lumberyard capabilities, you can enter the following commands: 
 

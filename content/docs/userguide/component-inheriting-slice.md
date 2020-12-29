@@ -15,7 +15,7 @@ For example, suppose that you have a slice called `wheel.slice`, composed of one
 1. Right\-click the parent entity and choose **Create slice**\.
 
 1. The **Create Slice** dialog box will appear giving you a choice of creating a fresh slice or a nested slice\. Choose **Nested Slice**\.  
-![\[Choose Nested Slice in the Create Slice dialog box.\]](/images/component/create-slice-fresh-or-nested.png)
+![\[Choose Nested Slice in the Create Slice dialog box.\]](/images/userguide/component/create-slice-fresh-or-nested.png)
 
 1. Enter a file name for the slice and then save\.
 
@@ -26,7 +26,7 @@ When you create a slice hierarchy, you can select the root slice for that slice\
 1. In the **Entity Outliner**, right\-click a child entity in the slice hierarchy and choose **Select slice root**\.
 
 1. In the dialog menu, view the slice hierarchy for the selected slice\.  
-![\[Select the slice root in the Entity Outliner.\]](/images/component/entity-outliner-select-slice-root.png)
+![\[Select the slice root in the Entity Outliner.\]](/images/userguide/component/entity-outliner-select-slice-root.png)
 
 1. Choose a slice to select that slice in the **Entity Outliner**\.
 

@@ -56,7 +56,7 @@ Enable the Slice Upgrade Pipeline and restart Asset Processor to convert your sl
    1. Restart the project or branch that you are working on\. Asset Processor automatically starts\.
 
 1. On the **Tools** tab in Asset Processor, trigger a **Full Scan** of assets\.\.  
-![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](/images/component/asset-processor-start-scan.png)
+![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](/images/userguide/component/asset-processor-start-scan.png)
 **Note**  
 For more information about using Asset Processor, see [Using Asset Processor](asset-pipeline-processor.md)\.
 

@@ -11,13 +11,13 @@ Game development is an inherently local activity\. You have a local copy of your
 
  **Cloud Canvas Resource Manager** bridges this gap\. It lets you have local *descriptions* of the AWS resources in the cloud that your game needs and provides ways to create and interact with the actual instances of those resources in AWS\. Your resource could be a database table, a file storage bucket, or code that runs in response to an event\. 
 
-![\[Resource Manager\]](/images/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-and-cloud.jpg)
+![\[Resource Manager\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-and-cloud.jpg)
 
  For team projects, the source code and assets that you are using likely come from a source control system\. The changes you make are shared with other people who work on the project through that source control system\. Different people can be working at the same time with different versions \(“branches”\) of the code and with different versions of assets without interfering with each other\. 
 
 When you develop a game that uses cloud resources in AWS, those resources may be shared by different people who work on the game at the same time\. Sometimes you need different versions of those resources to exist in the cloud\. You also want to ensure that the people developing the game use the version of the resources in the cloud that matches the version of the code and assets they are working with\. 
 
-![\[Resource Manager in a team environment\]](/images/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-multiple-deployments.png)
+![\[Resource Manager in a team environment\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-multiple-deployments.png)
 
  After the game is released, the players will use a production copy while your team uses another, private copy to work on bug fixes and new content\. 
 
@@ -35,7 +35,7 @@ When you develop a game that uses cloud resources in AWS, those resources may be
 
  The **Cloud Canvas Resource Manager** integrates the use of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) into the Lumberyard game development environment\. With AWS CloudFormation you can maintain descriptions of the AWS resources you need in text file templates that you can check into your source control system\. These descriptions can be branched and merged along with the rest of your game code and assets\. When you need actual instances of the resources to be created in AWS, **Cloud Canvas ****Resource Manager** passes the descriptions to AWS CloudFormation, which uses the template files to create, update, or delete resources in AWS to match the descriptions\. 
 
-![\[Resource Manager uses AWS CloudFormation to create resources in AWS\]](/images/cloud_canvas/cloud-canvas-ui-rm-overview-cfn-upload-all-resources.jpg)
+![\[Resource Manager uses AWS CloudFormation to create resources in AWS\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-cfn-upload-all-resources.jpg)
 
 You can use resource manager to organize your descriptions into any number of ***resource groups***\. Each group can describe all the resources needed by a game feature, such as a high score tracking system\. For details, see [Resource Definitions](cloud-canvas-resource-definitions.md)\.
 
@@ -43,7 +43,7 @@ With resource manager you can create as many ***deployments*** of the resources 
 
 You can choose the deployment that you want to work with in Lumberyard Editor\. For example, if you create a "QA" deployment and use it to test your game, Lumberyard Editor automatically maps the references to resources in your game code to the "QA" instance of those resources\. 
 
-![\[Choosing your deployment\]](/images/cloud_canvas/cloud-canvas-ui-rm-overview-current-deployment.png)
+![\[Choosing your deployment\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-current-deployment.png)
 
  Similarly, you can also specify the deployment to be used for release builds of the game\. For details, see [Resource Mappings](cloud-canvas-resource-mappings.md)\.
 
@@ -59,7 +59,7 @@ A Cloud Canvas Resource manager project consists of one or more AWS CloudFormati
 
 So, if there are 3 deployments and 4 resource groups, you have a total of 12 resource group stacks, 3 deployment stacks, 3 deployment access stacks, and 1 project stack \(19 stacks total\)\. You'll also have a total of 7 stack templates, one for the project stack, one for all the deployment stacks, one for all the deployment access stacks, and one each for each resource group\. The following image illustrates this scenario\.
 
-![\[A sample set of deployment and resource group stacks\]](/images/cloud_canvas/cloud-canvas-cfn-stacks.png)
+![\[A sample set of deployment and resource group stacks\]](/images/userguide/cloud_canvas/cloud-canvas-cfn-stacks.png)
 
 ## Cloud Canvas Resource Management<a name="cloud-canvas-core-concepts-resource-mgmt"></a>
 

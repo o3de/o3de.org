@@ -7,7 +7,7 @@ title: Starting Point Input Gem
 
 The Starting Point Input gem works with the [Input Management Framework](gems-system-gem-input.md) gem to map low\-level input events to high\-level gameplay actions\. For example, you can specify in your game that pressing the keyboard spacebar results in a gameplay action, such as jump\. 
 
-![\[Enable the Starting Point Input gem to interpret raw input and convert it to input events.\]](/images/gems/starting-point-input-gem.png)
+![\[Enable the Starting Point Input gem to interpret raw input and convert it to input events.\]](/images/userguide/gems/starting-point-input-gem.png)
 
 For information about working with input events, see the **[Input](component-input.md)** component\.
 

@@ -50,7 +50,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 1. Set the cloth data of the actor asset\. 
 
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.   
-![\[Amazon Lumberyard cloth component mesh node select.\]](/images/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
+![\[Amazon Lumberyard cloth component mesh node select.\]](/images/userguide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
 
    1. In the **FBX Settings** window, on the **Actors** tab, and choose **Add Modifier**, **Cloth**\. 
 
@@ -63,14 +63,14 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
       1. When applicable, select the vertex color stream and channel that include the **Motion Constraints** data\. If data is not provided, then cloth defaults to a motion constraint value of 1\.0 for all vertices\. 
 
       1. When applicable, select the vertex color streams and channels that includes the **Backstop Offset** and **Backstop Radius** data\. If data is not provided, then no backstop constraints will be applied in the simulation\.   
-![\[Amazon Lumberyard cloth modifier setup.\]](/images/physx/cloth/ui-cloth-modifier-actor-setup-1.27.png)
+![\[Amazon Lumberyard cloth modifier setup.\]](/images/userguide/physx/cloth/ui-cloth-modifier-actor-setup-1.27.png)
 
    1. Choose the **Update** button\. **Asset Processor** then updates the asset and includes the cloth data\. 
 
 1. Configure the cloth component\. 
 
    1. Select the cloth mesh node from the drop\-down list\.   
-![\[Amazon Lumberyard cloth component.\]](/images/physx/cloth/ui-cloth-component-select-actor-1.27.png)
+![\[Amazon Lumberyard cloth component.\]](/images/userguide/physx/cloth/ui-cloth-component-select-actor-1.27.png)
 
    1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](component-cloth.md)\. 
 
@@ -84,4 +84,4 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\. 
 
-![\[Amazon Lumberyard cloth simulation with the NVIDIA Cloth gem.\]](/images/physx/cloth/anim-actor-cloth.gif)
+![\[Amazon Lumberyard cloth simulation with the NVIDIA Cloth gem.\]](/images/userguide/physx/cloth/anim-actor-cloth.gif)

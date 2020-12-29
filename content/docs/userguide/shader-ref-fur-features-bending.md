@@ -12,6 +12,6 @@ Gravity bending is controlled by adjusting the [shader parameter](shader-ref-fur
 
 For example, the following image shows a fur ball with a very low gravity applied\. The second image shows the same fur ball with a higher maximum gravity applied\.
 
-![\[Example fur sphere with high maximum gravity applied.\]](/images/shaders/shader-ref-fur-11.png)
+![\[Example fur sphere with high maximum gravity applied.\]](/images/userguide/shaders/shader-ref-fur-11.png)
 
-![\[Example fur object with low gravity applied.\]](/images/shaders/shader-ref-fur-12.png)
+![\[Example fur object with low gravity applied.\]](/images/userguide/shaders/shader-ref-fur-12.png)

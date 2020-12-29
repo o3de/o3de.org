@@ -11,7 +11,7 @@ Returns the moon's longitude in the sky\.
 + [Inputs](#get-moon-longitude-node-input)
 + [Outputs](#get-moon-longitude-node-output)
 
-![\[moonlongitude, getmoonlongitude, moonlongitudenode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-moon-longitude-node.png)
+![\[moonlongitude, getmoonlongitude, moonlongitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-moon-longitude-node.png)
 
 ## Inputs<a name="get-moon-longitude-node-input"></a>
 

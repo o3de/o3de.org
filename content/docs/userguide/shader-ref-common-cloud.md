@@ -10,9 +10,9 @@ Common clouds use soft clipping to gradually fade in and out at the near and far
 
 The default **Diffuse** texture map for this shader is `cumulus_01.dds`, which contains images of cloud particles\.
 
-![\[Default diffuse texture map for the common cloud shader\]](/images/shaders/shader-ref-common-cloud-1.png)
+![\[Default diffuse texture map for the common cloud shader\]](/images/userguide/shaders/shader-ref-common-cloud-1.png)
 
-![\[Example image of default diffuse texture map for the common cloud shader.\]](/images/shaders/shader-ref-common-cloud-2.png)
+![\[Example image of default diffuse texture map for the common cloud shader.\]](/images/userguide/shaders/shader-ref-common-cloud-2.png)
 
 ## Shader Parameters<a name="shader-ref-common-cloud-shader-parameters"></a>
 
@@ -24,7 +24,7 @@ Default value: `30`
 **Example**  
 The following examples show a cloud with angular attenuation set to `20` and `100`\.  
 
-![\[Example clouds with angular attenuation.\]](/images/shaders/shader-ref-common-cloud-shader-parameters-1.png)
+![\[Example clouds with angular attenuation.\]](/images/userguide/shaders/shader-ref-common-cloud-shader-parameters-1.png)
 
 **CloudBacklightingScale**  
 Defines how much to scale rim lighting\. Higher values increase the glow of cloud edges\.  
@@ -34,7 +34,7 @@ Default value: `1`
 **Example**  
 The following examples show a cloud with backlighting scale set to `0` and `5`\.  
 
-![\[Example clouds with backlighting.\]](/images/shaders/shader-ref-common-cloud-shader-parameters-2.png)
+![\[Example clouds with backlighting.\]](/images/userguide/shaders/shader-ref-common-cloud-shader-parameters-2.png)
 
 **CloudOutlineSlope**  
 Defines the slope of the ramp function used to blend in rim lighting\. Higher values create harder transitions\.  
@@ -44,7 +44,7 @@ Default value: `1`
 **Example**  
 The following examples show a cloud with outline slope set to `0` and `20`\.  
 
-![\[Example clouds with the cloud outline slope.\]](/images/shaders/shader-ref-common-cloud-shader-parameters-3.png)
+![\[Example clouds with the cloud outline slope.\]](/images/userguide/shaders/shader-ref-common-cloud-shader-parameters-3.png)
 
 **CloudOutlineThreshold**  
 Defines the cloud's opacity threshold value below which the rim lighting effect is applied\. Higher thresholds cause the rim lighting to grow inward\.  
@@ -54,7 +54,7 @@ Default value: `0.4`
 **Example**  
 The following examples show a cloud with outline threshold set to `0.0` and `1.0`\.  
 
-![\[Example clouds with the cloud outline threshold.\]](/images/shaders/shader-ref-common-cloud-shader-parameters-4.png)
+![\[Example clouds with the cloud outline threshold.\]](/images/userguide/shaders/shader-ref-common-cloud-shader-parameters-4.png)
 
 **HDRBrightnessAdjust**  
 Controls brightness of clouds in high dynamic range \(HDR\) image format \(relative to low dynamic range \(LDR\) image format\)\.  

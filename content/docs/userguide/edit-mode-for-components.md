@@ -41,25 +41,25 @@ For components that support this feature, the component is locked when you edit 
 **Example**  
 
    An entity with the **Spline** component appears in the viewport\.  
-![\[Example Spline component in the viewport.\]](/images/componentmode/using-component-mode-1.png)
+![\[Example Spline component in the viewport.\]](/images/userguide/componentmode/using-component-mode-1.png)
 
 1. In the viewport, double\-click the spline or, in the **Entity Inspector**, click **Edit**\.  
-![\[Example Spline component with the Component Mode option.\]](/images/using-component-mode-3.png)  
+![\[Example Spline component with the Component Mode option.\]](/images/userguide/using-component-mode-3.png)  
 **Example**  
 
    The manipulator appears in the viewport\. The vertices turn red\. When you select a vertex, the manipulator appears\.  
-![\[Example Spline component with the component manipulator.\]](/images/componentmode/using-component-mode-2.png)
+![\[Example Spline component with the component manipulator.\]](/images/userguide/componentmode/using-component-mode-2.png)
 
    All other components attached to the entity are dimmed in the **Entity Inspector**, and you can't edit them\.  
-![\[Example Spline component with the Component Mode option enabled and all other components dimmed.\]](/images/using-component-mode-4.png)
+![\[Example Spline component with the Component Mode option enabled and all other components dimmed.\]](/images/userguide/using-component-mode-4.png)
 
 1. Select a vertex and make changes such as adding, moving, or deleting vertices\.  
-![\[Example editing a component directly in the viewport.\]](/images/componentmode/using-component-mode-6.png)
+![\[Example editing a component directly in the viewport.\]](/images/userguide/componentmode/using-component-mode-6.png)
 
 1. When you've finished, press **Esc** or, in the **Entity Inspector**, on the component, click **Done**\. 
 
    The vertices become yellow again\.  
-![\[Modify the component in the viewport using the manipulator in Lumberyard.\]](/images/componentmode/using-component-mode-7.png)
+![\[Modify the component in the viewport using the manipulator in Lumberyard.\]](/images/userguide/componentmode/using-component-mode-7.png)
 
 ## Editing Multiple Components in the Viewport<a name="editing-multiple-component-in-the-viewport"></a>
 
@@ -83,10 +83,10 @@ In some cases, Component Mode supports editing multiple components\. This is use
 **Example**  
 
    The **Transform** component is dimmed, but you can edit the **Spline** and **Tube Shape** components\.  
-![\[Example entity with two components that can be edited at the same time.\]](/images/componentmode/using-component-mode-5.png)
+![\[Example entity with two components that can be edited at the same time.\]](/images/userguide/componentmode/using-component-mode-5.png)
 
    In the following example, a radius for the **Tube Shape** is selected\.  
-![\[Example Tube Shape component that you can edit in Lumberyard.\]](/images/componentmode/using-component-mode-8.png)
+![\[Example Tube Shape component that you can edit in Lumberyard.\]](/images/userguide/componentmode/using-component-mode-8.png)
 
 **Note**  
 The Lumberyard Editor **Edit** menu shows the available actions for the selected component\. You can specify different shortcuts except for the **Save**, **Undo**, and **Redo** actions\.  
@@ -94,4 +94,4 @@ The Lumberyard Editor **Edit** menu shows the available actions for the selected
 **Example**  
 For example, if you select a vertex point for a **Tube Shape** component, the **Edit** menu shows the available shortcuts\.  
 
-![\[Shortcuts in the Edit menu when editing a component in Lumberyard.\]](/images/componentmode/using-component-mode-11.png)
+![\[Shortcuts in the Edit menu when editing a component in Lumberyard.\]](/images/userguide/componentmode/using-component-mode-11.png)

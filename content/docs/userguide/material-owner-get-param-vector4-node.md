@@ -11,7 +11,7 @@ Returns a material's **Vector4** parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-vector4-node-input)
 + [Outputs](#material-owner-get-param-vector4-node-output)
 
-![\[getparamvector4node, getparamvector4\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector4-material-owner-node.png)
+![\[getparamvector4node, getparamvector4\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector4-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-vector4-node-input"></a>
 

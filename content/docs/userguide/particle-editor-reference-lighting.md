@@ -7,7 +7,7 @@ title: Lighting Attribute
 
 In the **Lighting** attribute, specify how to control the particle lighting\.
 
-![\[Lighting attributes in the Particle Editor.\]](/images/particles/particle-editor-lighting.png)
+![\[Lighting attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-lighting.png)
 
 
 **Lighting Attribute Parameters**  

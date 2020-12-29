@@ -11,10 +11,10 @@ If you modify an entity that is part of a slice instance, you create an override
 **Example**  
 In the **Entity Inspector**, for this slice instance, the **Mesh asset** property is different from its source slice, so the component and the property name appears orange\.   
 
-![\[Properties with overrides.\]](/images/shared-modify-slice-overrides-entity-inspector.png)
+![\[Properties with overrides.\]](/images/userguide/shared-modify-slice-overrides-entity-inspector.png)
 In the **Entity Outliner**, the slice instances with overrides appear orange\.  
 
-![\[Entities with overrides.\]](/images/shared-modify-slice-overrides-entity-outliner.png)
+![\[Entities with overrides.\]](/images/userguide/shared-modify-slice-overrides-entity-outliner.png)
 
 You can then choose to save that override to all other slice instances\. 
 
@@ -26,16 +26,16 @@ You can also right\-click the component property in the **Entity Inspector** and
 **Example**  
 
    This shows a slice instance with eight total changes: one removal and seven updates\.  
-![\[Save slice overrides for all slice instances.\]](/images/shared-modify-slice-push-change-overrides.png)
+![\[Save slice overrides for all slice instances.\]](/images/userguide/shared-modify-slice-push-change-overrides.png)
 
 1. To save multiple slice overrides, in the **Entity Outliner** or the viewport, select your entities, right\-click and then choose **Save slice overrides**, **Save slice overrides \(Advanced\)**\.  
-![\[Choose Advanced to save slice overrides for all slice instances.\]](/images/component/modify-slice-push-change-multiple-overrides.png)
+![\[Choose Advanced to save slice overrides for all slice instances.\]](/images/userguide/component/modify-slice-push-change-multiple-overrides.png)
 
 1. In **Save Slice Overrides – Advanced** dialog box, for **Property**, select the changes that you want and then select the target slices to which you want to save the overrides\. You can also select or deselect the following check boxes\.
    +  **Changed** – Overrides to existing entities\.
    + **Added** – Added entities\.
    + **Removed** – Deleted entities\.  
-![\[Select the changes that you want to save to the slice instance.\]](/images/shared-modify-slice-push-change.png)
+![\[Select the changes that you want to save to the slice instance.\]](/images/userguide/shared-modify-slice-push-change.png)
 
 1. When finished, choose **Save Selected Overrides**\.
 

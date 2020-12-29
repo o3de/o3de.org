@@ -25,7 +25,7 @@ You can use an external script editor instead of the **Cloud Canvas Resource Man
 
 **To open a file in an external script editor**
 + Right\-click the file in the navigation pane and choose **Open in script editor**:   
-![\[Image NOT FOUND\]](/images/cloud_canvas/cloud-canvas-ui-rm-text-editing-open-file-external-editor.png)
+![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-text-editing-open-file-external-editor.png)
 
  To copy the path of the template file to the clipboard, right\-click the file in the navigation pane and choose **Copy path to clipboard**\. 
 

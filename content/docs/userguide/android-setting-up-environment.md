@@ -39,14 +39,14 @@ title: Set up your environment to develop for Android with &ALY;
    + Android Studio installation — `C:\Program Files\Android\Android Studio`
    + `ndk-build.cmd` — `C:\Users\username\AppData\Local\Android\Sdk\ndk\version\ndk-build.cmd`
    + `adb.exe` — `C:\Users\username\AppData\Local\Android\Sdk\platform-tools\adb.exe`  
-![\[The Setup Assistant window displaying the paths for the required Android tools. Each path is surrounded by a colored box and is one of the default paths listed above.\]](/images/platforms/android/setup-android-dev-2.png)
+![\[The Setup Assistant window displaying the paths for the required Android tools. Each path is surrounded by a colored box and is one of the default paths listed above.\]](/images/userguide/platforms/android/setup-android-dev-2.png)
 **Tip**  
  If you can't find your Android SDK install in `C:\Users\username\AppData\Local\Android\Sdk`, the SDK location might have been changed in Android Studio\. To find out the location for your Android SDKs, follow these steps in Android Studio 4\.0\.x:   
  Open the **Settings** pane in Android Studio, either by navigating to the **File** > **Settings** menu from an open project, or by selecting **Settings** from the startup window\. 
  In the left navigation pane of the **Settings** window, select **Appearance & Behavior** > **System Settings** > **Android SDK**\. 
 Note the path displayed as the **Android SDK Location**\. Use this as the base path for locating the Android tools\.  
 
-![\[The Android Studio 4.0.1 "Setup" window. The left navigation has the nodes "Appearance & Behavior", "System Settings", and "Android SDK" expanded. Each is surrounded by a colored box. At the top of the main pane, the text field for "Android SDK Location" is surrounded by a colored box.\]](/images/platforms/android/android-sdk-location.png)
+![\[The Android Studio 4.0.1 "Setup" window. The left navigation has the nodes "Appearance & Behavior", "System Settings", and "Android SDK" expanded. Each is surrounded by a colored box. At the top of the main pane, the text field for "Android SDK Location" is surrounded by a colored box.\]](/images/userguide/platforms/android/android-sdk-location.png)
 
    When each Android tool is marked with a green checkmark icon, you can close the Setup Assistant\.
 
@@ -124,7 +124,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 1. Start the Asset Processor to compile any existing assets for use on Android\.
 
    1. Check to see if the Asset Processor is running\. Open the Windows system tray and look for the Asset Processor icon\.  
-![\[The expanded Windows system tray. The icon for the Lumberyard Asset Processor is surrounded by a colored box.\]](/images/platforms/android/ap-tray-icon.png)
+![\[The expanded Windows system tray. The icon for the Lumberyard Asset Processor is surrounded by a colored box.\]](/images/userguide/platforms/android/ap-tray-icon.png)
 
    1. If the Asset Processor is running, double\-click the icon in the tray to bring up the Asset Processor window\.
 

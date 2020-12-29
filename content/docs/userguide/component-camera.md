@@ -9,7 +9,7 @@ The **Camera** component allows an entity to be used as a camera\. To use the **
 
 ## Camera Component Properties<a name="component-camera-properties"></a>
 
-![\[Camera component properties in the Entity Inspector.\]](/images/component/component-camera-properties.png)
+![\[Camera component properties in the Entity Inspector.\]](/images/userguide/component/component-camera-properties.png)
 
 The **Camera** component has the following properties:
 

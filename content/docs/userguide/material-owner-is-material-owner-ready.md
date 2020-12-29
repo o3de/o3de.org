@@ -11,7 +11,7 @@ Indicates whether the material owner finished loading its assets and the materia
 + [Inputs](#material-owner-is-material-owner-ready-input)
 + [Outputs](#material-owner-is-material-owner-ready-output)
 
-![\[isreadynode, isready\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-is-ready-material-owner-node.png)
+![\[isreadynode, isready\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-is-ready-material-owner-node.png)
 
 ## Inputs<a name="material-owner-is-material-owner-ready-input"></a>
 

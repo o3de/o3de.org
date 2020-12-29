@@ -172,7 +172,7 @@ You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\
 
 **Example**  
 
-![\[Specify the server directory instead of the PC directory.\]](/images/materials/shaders/create-paks-server-assets.png)
+![\[Specify the server directory instead of the PC directory.\]](/images/userguide/materials/shaders/create-paks-server-assets.png)
 
 **To create paks for server assets**
 

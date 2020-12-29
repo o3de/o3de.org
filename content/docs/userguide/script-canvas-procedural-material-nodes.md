@@ -35,7 +35,7 @@ The Allegorithmic Substance gem includes a sample procedural material named `bri
 
 See the following example script to enable this effect\.
 
-![\[Example Script Canvas script that shows the erosion for a brick wall.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-procedural-material-example.png)
+![\[Example Script Canvas script that shows the erosion for a brick wall.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-procedural-material-example.png)
 
 1. The **Find by Name and Index** node \(1\) retrieves the `brickWall_04` procedural material and sends the material to all **Set Input Number** nodes \(3, 4, 6, 7\)\.
 

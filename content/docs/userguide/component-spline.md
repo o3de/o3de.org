@@ -22,7 +22,7 @@ A spline is a curve that connects two or more specific points\. This is useful i
 
 ## Spline Properties<a name="component-spline-properties"></a>
 
-![\[Example Spline component with the Component Mode option.\]](/images/using-component-mode-3.png)
+![\[Example Spline component with the Component Mode option.\]](/images/userguide/using-component-mode-3.png)
 
 The **Spline** component has the following properties\.
 
@@ -40,7 +40,7 @@ The **Spline** component has the following properties\.
 
 By default, a **Spline** component has four vertices that are spaced evenly in a line\. The vertex positions are stored in the local space of the entity\.
 
-![\[Default Spline component with the linear type.\]](/images/component/spline-component-1.png)
+![\[Default Spline component with the linear type.\]](/images/userguide/component/spline-component-1.png)
 
 ## Working with Spline Components<a name="working-with-spline-component"></a>
 
@@ -59,7 +59,7 @@ You can move the vertices in the local space of the entity along each axis\. Eac
 **Note**  
 The manipulators follow the grid snap setting that you can specify in Lumberyard Editor toolbar\. For more information, see [Using the Top Toolbar](lumberyard-editor-toolbars.md)\.
 
-![\[Select a vertex and a translation manipulator appears in the Spline component.\]](/images/component/spline-component-2.png)
+![\[Select a vertex and a translation manipulator appears in the Spline component.\]](/images/userguide/component/spline-component-2.png)
 
 **Note**  
 The manipulators behave correctly if the entity is scaled, but the scaling must be uniform so that the x, y, and z values match \(for example, `2.0`, `2,0`, `2.0`\)\. We recommend that you use uniform scaling for entities with a **Spline** component\.
@@ -68,7 +68,7 @@ You can also select multiple vertices\.
 
 **To select multiple vertices on a spline**
 + Hold **Ctrl** and select the vertices\. Selected vertices appear yellow\.  
-![\[Select and move multiple vertices.\]](/images/component/spline-component-3.png)
+![\[Select and move multiple vertices.\]](/images/userguide/component/spline-component-3.png)
 **Note**  
 Currently, you can't click and draw a box around the vertices to select them\.
 
@@ -85,32 +85,32 @@ You can also add vertices to the spline\.
 **To add a vertex to a spline**
 
 1. Pause over a line and hold **Ctrl**\. A preview appears where you can add the vertex\.  
-![\[A green point appears where you can add a vertex to the Spline component.\]](/images/component/spline-component-4.png)
+![\[A green point appears where you can add a vertex to the Spline component.\]](/images/userguide/component/spline-component-4.png)
 
 1. Click to add the vertex to the spline\.  
-![\[Click to add a vertex to the spline. A translation manipulator appears where you add the vertex.\]](/images/component/spline-component-5.png)
+![\[Click to add a vertex to the spline. A translation manipulator appears where you add the vertex.\]](/images/userguide/component/spline-component-5.png)
 
 You can also delete vertices from the spline\.
 
 **To delete a vertex from the spline**
 
 1. Hold **Alt** and pause on a vertex\. The vertex appears gray\.  
-![\[Select the vertex to delete. The vertex color turns gray.\]](/images/component/spline-component-6.png)
+![\[Select the vertex to delete. The vertex color turns gray.\]](/images/userguide/component/spline-component-6.png)
 
 1. Click the vertex to delete it\. You can also select a vertex and press **Delete**\. 
 **Note**  
 Linear and Bézier splines must have a minimum of two vertices\. Catmull\-Rom splines must have a minimum of four vertices\.  
-![\[The deleted vertex is removed from the spline.\]](/images/component/spline-component-7.png)
+![\[The deleted vertex is removed from the spline.\]](/images/userguide/component/spline-component-7.png)
 
 If you change the spline type, the component is updated to represent the new interpolation method\.
 
 **Example Bézier**  
 
-![\[The linear spline changes to a Bézier spline.\]](/images/component/spline-component-8.png)
+![\[The linear spline changes to a Bézier spline.\]](/images/userguide/component/spline-component-8.png)
 
 **Example Catmull\-Rom**  
 
-![\[The linear spline changes to a Catmull-Rom spline.\]](/images/component/spline-component-9.png)
+![\[The linear spline changes to a Catmull-Rom spline.\]](/images/userguide/component/spline-component-9.png)
 
 **Note**  
 The first and last vertices of a Catmull\-Rom spline are only control points\. They don't form part of the curve\. A well\-formed Catmull\-Rom spline must have a minimum of four vertices\. The spline doesn't render if there are fewer than four vertices\.<a name="knot-paramterization-example"></a>
@@ -119,16 +119,16 @@ The following examples show how Catmull\-Rom splines change when you adjust the 
 
 **Example Knot Parameterization = 0**  
 
-![\[Knot Parameterization value is 0 for the Catmull-Rom spline.\]](/images/component/spline-component-10.png)
+![\[Knot Parameterization value is 0 for the Catmull-Rom spline.\]](/images/userguide/component/spline-component-10.png)
 
 **Example Knot Parameterization =1**  
 
-![\[Knot Parameterization value is 1 for the Catmull-Rom spline.\]](/images/component/spline-component-11.png)
+![\[Knot Parameterization value is 1 for the Catmull-Rom spline.\]](/images/userguide/component/spline-component-11.png)
 
 **Example Linear and Bézier Splines**  
 The following examples are linear and Bézier splines with the same vertices but with open and closed loops\.  
 
-![\[Example open and closed Linear and Bézier splines.\]](/images/component/spline-component-12.png)
+![\[Example open and closed Linear and Bézier splines.\]](/images/userguide/component/spline-component-12.png)
 
 ## EBus Request Bus Interface<a name="component-spline-ebus-request"></a>
 

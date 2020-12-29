@@ -27,7 +27,7 @@ You can tear away and redock the **Hierarchy** pane, the **Properties** pane, th
 **To open the UI Editor**
 + In Lumberyard Editor, choose **Tools** and then **UI Editor**\.
 
-![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-using1.png)
+![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-using1.png)
 
 **Topics**
 + [Toolbar](ui-editor-toolbar.md)

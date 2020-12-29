@@ -20,7 +20,7 @@ If your game or Lumberyard Editor is already running, close and reopen it\.
 
 1. Open the Wwise Authoring Tool and open the Wwise project associated with your game\.
 
-1. In the Wwise Authoring Tool, click the **Connect to Remote Platform** icon in the toolbar: ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/audio/audio-wwise-remote-connection.png) 
+1. In the Wwise Authoring Tool, click the **Connect to Remote Platform** icon in the toolbar: ![\[Image NOT FOUND\]](/images/userguide/audio/audio-wwise-remote-connection.png) 
 
    The **Remote Connections** dialog displays a list of computers to which you can connect\.
 

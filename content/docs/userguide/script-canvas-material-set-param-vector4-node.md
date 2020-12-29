@@ -11,7 +11,7 @@ Sets a material parameter with a **Vector4** value\.
 + [Inputs](#script-canvas-material-set-param-vector4-node-input)
 + [Outputs](#script-canvas-material-set-param-vector4-node-output)
 
-![\[setparamvector4, setparamvector4node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector4-node.png)
+![\[setparamvector4, setparamvector4node\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector4-node.png)
 
 ## Inputs<a name="script-canvas-material-set-param-vector4-node-input"></a>
 

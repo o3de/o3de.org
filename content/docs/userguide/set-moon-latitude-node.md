@@ -11,7 +11,7 @@ Sets the moon's latitude in the sky\.
 + [Inputs](#set-moon-latitude-node-input)
 + [Outputs](#set-moon-latitude-node-output)
 
-![\[setmoonlatitude, setmoonlatitudenode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-moon-latitude-node.png)
+![\[setmoonlatitude, setmoonlatitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-moon-latitude-node.png)
 
 ## Inputs<a name="set-moon-latitude-node-input"></a>
 

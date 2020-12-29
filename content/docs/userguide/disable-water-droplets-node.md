@@ -13,7 +13,7 @@ To enable the effect, see [Enable Water Droplets](enable-water-droplets-node.md)
 + [Inputs](#disable-water-droplets-node-input)
 + [Outputs](#disable-water-droplets-node-output)
 
-![\[disablewaterdropletsnode, disablewaterdroplets\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-droplets-node.png)
+![\[disablewaterdropletsnode, disablewaterdroplets\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-droplets-node.png)
 
 ## Inputs<a name="disable-water-droplets-node-input"></a>
 

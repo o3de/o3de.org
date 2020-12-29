@@ -32,13 +32,13 @@ When you launch `Profiler.exe` or `LuaIDE.exe`, GridHub starts automatically and
 **To view and configure GridHub**
 
 1. In the Windows taskbar, right\-click the globe icon and choose **Show**:   
-![\[Click Show\]](/images/gridhub-viewing-and-configuring-show.png)
+![\[Click Show\]](/images/userguide/gridhub-viewing-and-configuring-show.png)
 
    The GridHub window has a configuration bar, a connections pane, and pane for viewing log messages:   
-![\[GridHub window\]](/images/gridhub-viewing-and-configuring-window.png)
+![\[GridHub window\]](/images/userguide/gridhub-viewing-and-configuring-window.png)
 
 1. You can use the configuration toolbar to view or change GridHub configuration:   
-![\[GridHub configuration toolbar\]](/images/gridhub-viewing-and-configuring-toolbar.png)
+![\[GridHub configuration toolbar\]](/images/userguide/gridhub-viewing-and-configuring-toolbar.png)
 
    The toolbar options are as follows: 
 
@@ -59,7 +59,7 @@ The name of the hub must be the neighborhood name to which the `TargetManagement
    **Start/Stop** – Starts or stops GridHub\. When GridHub is off, no connections are discovered or maintained\. 
 
 1. When GridHub and your target application are active, your target application appears in the GridHub **Connections** list:   
-![\[GridHub connections list\]](/images/gridhub-viewing-and-configuring-connections.png)
+![\[GridHub connections list\]](/images/userguide/gridhub-viewing-and-configuring-connections.png)
 
    The columns in the **Connections** list provide the following information: 
 
@@ -76,7 +76,7 @@ The name of the hub must be the neighborhood name to which the `TargetManagement
    **IsReady** – Whether or not the application is ready to handle further connections\. 
 
 1. Use the **Output** window to see the log messages that GridHub generates as it manages connections:   
-![\[GridHub log messages\]](/images/gridhub-viewing-and-configuring-output.png)
+![\[GridHub log messages\]](/images/userguide/gridhub-viewing-and-configuring-output.png)
 
 When GridHub is terminated, the connections it established are also terminated\. 
 

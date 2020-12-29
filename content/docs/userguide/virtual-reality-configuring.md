@@ -26,7 +26,7 @@ Use the **NullVR** Gem to run your level through the HMD framework without a con
    + **Oculus**
    + **OpenVR**
    + **NullVR**  
-![\[Image NOT FOUND\]](/images/vr/virtual-reality-add-gems.png)
+![\[Image NOT FOUND\]](/images/userguide/vr/virtual-reality-add-gems.png)
 
 1. Click **Save**\.
 

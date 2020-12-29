@@ -19,7 +19,7 @@ To enable the **Lightning Arc** component, you must enable the Lightning Arc gem
 **Example**  
 The **Lightning Arc** component is attached to the entity in the center, and the arc randomly jumps between three targets\. This example uses the default lightning material in the Lightning Arc gem and the `Tesla_core` arc preset\. For more information, see [Customizing a Lightning Arc Preset](gems-system-gem-lightning-arc-presets.md)\.  
 
-![\[Add the Lightning Arc component to your entity to create lightning arcs that jump between entities.\]](/images/shared-lightning-arc-component-animation-example.gif)
+![\[Add the Lightning Arc component to your entity to create lightning arcs that jump between entities.\]](/images/userguide/shared-lightning-arc-component-animation-example.gif)
 
 **Topics**
 + [Lightning Arc Component Properties](#component-lightning-arc-properties)

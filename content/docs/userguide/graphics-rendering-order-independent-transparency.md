@@ -7,7 +7,7 @@ title: Order-Independent Transparency
 
 Order\-independent transparency \(OIT\) corrects the display of transparent objects that are drawn out of order\.
 
-![\[OIT example animation for Amazon Lumberyard.\]](/images/shared-OIT-example-animation.gif)
+![\[OIT example animation for Amazon Lumberyard.\]](/images/userguide/shared-OIT-example-animation.gif)
 
 OIT is useful when creating the following:
 + Concave geometry – When you create concave geometry, such as a glass, wine glass, or glass sculpture, some triangles may cover the same pixels and are drawn on top of each other\. OIT solves the out\-of\-order issues that appear from certain angles\.
@@ -22,7 +22,7 @@ To further demonstrate, see the following images\.
 |  |  |  |  | 
 | --- |--- |--- |--- |
 | OIT is not needed in the following example\. Drawing object 1, then object 2, and finally object 3 works\. | OIT is needed in the following example\. Drawing object 1 and then object 2 will not work because certain pixels from object 1 must be in front of pixels from object 2 \(and vice versa\)\. | OIT is needed in the following example\. Object 2 is long and its center point is in front of object 1, but it must draw behind object 1\. | OIT is needed in the following example\. Certain parts of object 1 draw behind other parts of the object, and you cannot control which draws first\. | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/oit_not_needed.png)  |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/oit_needed_01.png)  |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/oit_needed_02.png)  |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/oit_needed_03.png)  | 
+|  ![\[Image NOT FOUND\]](/images/userguide/oit_not_needed.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_01.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_02.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_03.png)  | 
 
 ## Configuring Order\-Independent Transparency for Lumberyard<a name="configuring-order-independent-transparency-for-Amazon-Lumberyard"></a>
 

@@ -18,7 +18,7 @@ A slice can contain any number of entities that have their own transform hierarc
 If you want Lumberyard Editor to add a number to your slices by default \(for example, *NewSlice001*\), you can set this option in the **General Settings**\. For more information, see [General Settings](lumberyard-editor-customizing.md#lumberyard-editor-customizing-preferences-general)\.
 To save multiple entities in a slice, they must have a single transform root\. If they don't, then a **Cannot Create Slice** dialog box appears, giving you the opportunity to fix this issue by creating a root entity\. Select **Yes** to create a root entity while creating the slice\.  
 
-![\[Choose Yes in the Cannot Create Slice dialog box to create a root entity while creating the slice.\]](/images/component/cannot-create-slice-create-root-entity.png)
+![\[Choose Yes in the Cannot Create Slice dialog box to create a root entity while creating the slice.\]](/images/userguide/component/cannot-create-slice-create-root-entity.png)
 
 You also create a slice from another slice\. This creates a new slice and that slice will no longer inherit from its previous source slice\.
 

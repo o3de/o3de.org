@@ -23,7 +23,7 @@ Lumberyard supports the following image file types:
 
 The following diagram represents the general workflow for converting images\.
 
-![\[General workflow for converting images in Lumberyard\]](/images/assets/pipeline/asset-pipeline-images.png)
+![\[General workflow for converting images in Lumberyard\]](/images/userguide/assets/pipeline/asset-pipeline-images.png)
 
 **Topics**
 + [Creating Image Processing Presets](asset-pipeline-creating-image-processing-presets.md)

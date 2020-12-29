@@ -13,7 +13,7 @@ If the input parameter is a `string` type, the node returns the text value\. If 
 + [Inputs](#get-input-string-node-input)
 + [Outputs](#get-input-string-node-output)
 
-![\[GetInputString gets the string value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-string-node.png)
+![\[GetInputString gets the string value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-string-node.png)
 
 ## Inputs<a name="get-input-string-node-input"></a>
 

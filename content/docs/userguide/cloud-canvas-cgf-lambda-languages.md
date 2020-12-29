@@ -137,7 +137,7 @@ Running the sample requires the following prerequisites:
 1. Choose **LambdaLanguage**, and then click **Open**\.
 
 1. Click **Play Game** or press **Ctrl\+G** to switch to gameplay mode\. After a short pause, a message reports success, as seen in the following image\.  
-![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](/images/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
+![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
 
 ### Additional Resources<a name="cloud-canvas-cgf-lambda-languages-additional-resources"></a>
 

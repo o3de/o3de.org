@@ -14,7 +14,7 @@ title: '&whitebox; component'
 
 The **White Box** component is a tool you can use to sketch 3D proxy meshes in Lumberyard Editor\. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity\. 
 
-![\[White Box component interface.\]](/images/component/whitebox/white-box-A-1.25.gif)
+![\[White Box component interface.\]](/images/userguide/component/whitebox/white-box-A-1.25.gif)
 
 Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in Lumberyard Editor before investing the time and effort into building finished models for your entity\. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components\. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets\. 
 
@@ -24,7 +24,7 @@ Because **White Box** is implemented as a component, you can create well\-define
 
 ## White Box properties<a name="component-white-box-properties"></a>
 
-![\[White Box component interface.\]](/images/component/whitebox/ui-white-box-1.25.png)
+![\[White Box component interface.\]](/images/userguide/component/whitebox/ui-white-box-1.25.png)
 
 ****Default Shape****  
 The default primitive shape of the white box mesh\. From the list you can select a primitive shape, or choose to load a saved white box mesh \(`.wbm`\) asset\. The default primitive size is one meter in world space\.   
@@ -41,7 +41,7 @@ When **Custom Mesh Asset** is selected, a **Mesh Asset** file field appears in t
 ****Save as asset****  
 Save the proxy mesh to a white box mesh \(`.wbm`\) asset\. You can load the saved \(`.wbm`\) asset in other **White Box** components\. The `.wbm` file functions like an instance, and any changes made to the mesh propagate to all **White Box** components that use the `.wbm` file\.   
 
-![\[White Box .wbm mesh instancing animation.\]](/images/component/whitebox/white-box-mesh-instancing-1.25.gif)
+![\[White Box .wbm mesh instancing animation.\]](/images/userguide/component/whitebox/white-box-mesh-instancing-1.25.gif)
 
 ****Tint****  
 Set a tint color for the white box mesh\. Choose the swatch to open a color picker, or enter comma separated red, blue, and green 8\-bit values into the field to set a tint color for the **White Box** component\. 
@@ -72,7 +72,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the polygon along its normal\.
 
-![\[White Box move face animation.\]](/images/component/whitebox/white-box-move-face-1.25.gif)
+![\[White Box move face animation.\]](/images/userguide/component/whitebox/white-box-move-face-1.25.gif)
 
 **Move edge**  
 
@@ -82,7 +82,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the edge\.
 
-![\[White Box move edge animation.\]](/images/component/whitebox/white-box-move-edge-1.25.gif)
+![\[White Box move edge animation.\]](/images/userguide/component/whitebox/white-box-move-edge-1.25.gif)
 
 **Move vertex**  
 
@@ -92,7 +92,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the vertex along the edge guides\.
 
-![\[White Box move vertex animation.\]](/images/component/whitebox/white-box-move-vertex-1.26.gif)
+![\[White Box move vertex animation.\]](/images/userguide/component/whitebox/white-box-move-vertex-1.26.gif)
 
 ### Scale<a name="component-white-box-edit-scale"></a>
 
@@ -106,7 +106,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the vertex toward or away from the center of the selected polygon\.
 
-![\[White Box scale face animation.\]](/images/component/whitebox/white-box-scale-face-1.25.gif)
+![\[White Box scale face animation.\]](/images/userguide/component/whitebox/white-box-scale-face-1.25.gif)
 
 ****Scale edge****  
 
@@ -118,7 +118,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the vertex along the length of the selected edge\.
 
-![\[White Box scale edge animation.\]](/images/component/whitebox/white-box-scale-edge-1.25.gif)
+![\[White Box scale edge animation.\]](/images/userguide/component/whitebox/white-box-scale-edge-1.25.gif)
 
 ****Non\-uniform scale edge****  
 
@@ -128,7 +128,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Hold **Alt** and drag the vertex along the length of the selected edge\.
 
-![\[White Box scale edge animation.\]](/images/component/whitebox/white-box-non-uniform-scale-edge-1.25.gif)
+![\[White Box scale edge animation.\]](/images/userguide/component/whitebox/white-box-non-uniform-scale-edge-1.25.gif)
 
 ### Extrude<a name="component-white-box-edit-extrude"></a>
 
@@ -140,7 +140,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the polygon along its normal\.
 
-![\[White Box extrude face animation.\]](/images/component/whitebox/white-box-extrude-face-1.25.gif)
+![\[White Box extrude face animation.\]](/images/userguide/component/whitebox/white-box-extrude-face-1.25.gif)
 
 ****Extrude edge****  
 
@@ -150,7 +150,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the edge\.
 
-![\[White Box extrude edge animation.\]](/images/component/whitebox/white-box-extrude-edge-1.25.gif)
+![\[White Box extrude edge animation.\]](/images/userguide/component/whitebox/white-box-extrude-edge-1.25.gif)
 
 ****Extrude scale****  
 
@@ -168,7 +168,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Drag the polygon along its normal\.
 
-![\[White Box extrude scale animation.\]](/images/component/whitebox/white-box-extrude-scale-1.25.gif)
+![\[White Box extrude scale animation.\]](/images/userguide/component/whitebox/white-box-extrude-scale-1.25.gif)
 
 ### Flip edge<a name="component-white-box-flip-edge"></a>
 
@@ -178,7 +178,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Right click on a hidden edge to flip its orientation\.
 
-![\[White Box flip edge animation.\]](/images/component/whitebox/white-box-flip-edge-1.26.gif)
+![\[White Box flip edge animation.\]](/images/userguide/component/whitebox/white-box-flip-edge-1.26.gif)
 
 ### Hide/Show edge<a name="component-white-box-hide-show-edge"></a>
 
@@ -188,7 +188,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Press **H**\.
 
-![\[White Box hide edge animation.\]](/images/component/whitebox/white-box-hide-edge-1.25.gif)
+![\[White Box hide edge animation.\]](/images/userguide/component/whitebox/white-box-hide-edge-1.25.gif)
 
 ****Show edge****  
 
@@ -196,7 +196,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Select \(left click\) an edge to unhide it\.
 
-![\[White Box extrude edge animation.\]](/images/component/whitebox/white-box-show-edge-1.25.gif)
+![\[White Box extrude edge animation.\]](/images/userguide/component/whitebox/white-box-show-edge-1.25.gif)
 
 ### Hide/Show vertex<a name="component-white-box-hide-show-vertex"></a>
 
@@ -206,7 +206,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 1. Press **H**\.
 
-![\[White Box hide edge animation.\]](/images/component/whitebox/white-box-hide-vertex-1.25.gif)
+![\[White Box hide edge animation.\]](/images/userguide/component/whitebox/white-box-hide-vertex-1.25.gif)
 
 ****Show vertex****  
 

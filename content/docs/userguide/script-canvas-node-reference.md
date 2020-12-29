@@ -21,4 +21,4 @@ Some nodes are hidden from the default **Script Canvas** editor view\.
 1. In the **Script Canvas** editor, choose **Edit**, **Settings**, **Global Preferences**\.
 
 1. In the **Global Preferences** window, choose **Show nodes excluded from preview**\.  
-![\[Global Preferences window in the Script Canvas editor\]](/images/scripting/script-canvas/script-canvas-global-preferences-show-nodes.png)
+![\[Global Preferences window in the Script Canvas editor\]](/images/userguide/scripting/script-canvas/script-canvas-global-preferences-show-nodes.png)

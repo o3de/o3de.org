@@ -7,7 +7,7 @@ title: Visibility Attribute
 
 In the **Visibility** attribute, specify how to control the particle's visibility\.
 
-![\[Visibility attributes in the Particle Editor.\]](/images/particles/particle-editor-visibility.png)
+![\[Visibility attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-visibility.png)
 
 
 **Visibility Attribute Parameters**  

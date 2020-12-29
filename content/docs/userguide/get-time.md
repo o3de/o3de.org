@@ -11,7 +11,7 @@ Returns the current time of day for the level\. Time values are specified as dec
 + [Inputs](#get-time-input)
 + [Outputs](#get-time-output)
 
-![\[gettime gettimenode, gettimeofdaynode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-time-node.png)
+![\[gettime gettimenode, gettimeofdaynode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-time-node.png)
 
 ## Inputs<a name="get-time-input"></a>
 

@@ -143,29 +143,29 @@ In order to begin managing a Cloud Canvas project, you add the IAM user credenti
 **To enter your credentials in Lumberyard Editor**
 
 1. Use one of the following methods to launch Lumberyard Editor:
-   + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-editor-launch.png) 
+   + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Image NOT FOUND\]](/images/userguide/lumberyard-editor-launch.png) 
    + From Lumberyard Setup Assistant, on the **Summary** page, click **Launch Editor**\.
    + For Visual Studio 2017, navigate to the `lumberyard-version\dev\Bin64vc141` directory and double\-click `Editor.exe`\.
 
 1.  In Lumberyard Editor, choose **AWS**, **Credentials manager**\.   
-![\[Open Credentials manager\]](/images/cloud_canvas/cloud-canvas-credentials-manager-open.png)
+![\[Open Credentials manager\]](/images/userguide/cloud_canvas/cloud-canvas-credentials-manager-open.png)
 
 1. In the **Credentials Manager** dialog, click **Add profile**\.  
-![\[Click Add profile\]](/images/cloud_canvas/cloud-canvas-credentials-manager-add-profile.png)
+![\[Click Add profile\]](/images/userguide/cloud_canvas/cloud-canvas-credentials-manager-add-profile.png)
 
 1. In the **Add profile** dialog box, enter the following information:
    + For **Profile name**, enter a name of your choice \(for example, **CloudCanvasAdmin**\)\.
    + For **AWS access key** and **AWS secret key**, enter the access key and secret key\.
 
       
-![\[Enter profile information for your AWS account in Lumberyard Editor\]](/images/cloud_canvas/cloud-canvas-credentials-manager-add-profile-dialog-box.png)
+![\[Enter profile information for your AWS account in Lumberyard Editor\]](/images/userguide/cloud_canvas/cloud-canvas-credentials-manager-add-profile-dialog-box.png)
 **Important**  
 Do not share these credentials with anyone, and do not check them into source control\. These credentials grant control over your AWS account, and a malicious user could incur charges\.
 
 1. Click **Save**\.
 
 1. In **Credentials Manager**, click **OK**\.  
-![\[Profile added in the Credentials Manager.\]](/images/cloud_canvas/cloud-canvas-credentials-manager-profile-added.png)
+![\[Profile added in the Credentials Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-credentials-manager-profile-added.png)
 
 You have now created a profile to administer a Cloud Canvas project\. The profile name is associated with your credentials, and saved locally on your machine in your AWS credentials file\. This file is normally located in your `C:\Users\user_name\.aws\` directory\. As a convenience, other tools such as the [AWS Command Line Interface](https://aws.amazon.com/cli/) or the [AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/) can access these credentials\. 
 
@@ -184,31 +184,31 @@ This is a two\-part process:
 1.  In Lumberyard Editor, choose **AWS**, **Cloud Canvas**, **Resource Manager**\. 
 
 1. In **Resource Manager**, click **Upload all resources**\.  
-![\[Upload all resources in AWS.\]](/images/cloud_canvas/cloud-canvas-tutorial-1.png)
+![\[Upload all resources in AWS.\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-1.png)
 
 1. In the **Initialize Resource Manager** dialog box, click **Yes**\.  
-![\[Initialize Resource Manager\]](/images/cloud_canvas/cloud-canvas-tutorial-2.png)
+![\[Initialize Resource Manager\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-2.png)
 
 1. In the **Initialize Cloud Canvas Resource Manager** dialog box, review the fields provided\.  
-![\[Provide a project stack name, AWS profile, and AWS region\]](/images/cloud_canvas/cloud-canvas-tutorial-3.png)
+![\[Provide a project stack name, AWS profile, and AWS region\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-3.png)
    + **Project stack name** – This name defaults to the name of your project\. You can provide a different name if you want\.
    + **AWS profile** – This is the profile that you prepared in the previous procedure\. You can click **Edit** to edit this profile or **Add profile** to add another profile\.
    + **AWS region** – This defaults to **us\-east\-1**, which supports all Lumberyard cloud gems\. Not all cloud gems are supported in all AWS regions\.
 
 1. Click **Create**\. The **Progress log** indicates **Operation in progress**\. Creating the project stack in AWS takes about 5 to 10 minutes\.  
-![\[Project stack creation in progress\]](/images/cloud_canvas/cloud-canvas-tutorial-4.png)
+![\[Project stack creation in progress\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-4.png)
 
 1. When the operation finishes, the **Cloud Gem Portal Administrator Account Creation** dialog box appears\. 
 
    Copy the temporary credentials to the clipboard\. You can right\-click the dialog box and use the context menu or press **Ctrl\+A** to select the credentials and then press **Ctrl\+C** to copy them\.  
-![\[Copy your temporary credentials for the Cloud Gem Portal\]](/images/cloud_canvas/cloud-canvas-tutorial-5.png)
+![\[Copy your temporary credentials for the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-5.png)
 **Important**  
 You will need these credentials later to use the Cloud Gem Portal, which is the web management interface for the cloud gems\.
 
 1. Click **OK\.**
 
 1. In the **Create deployment** dialog box, which appears at about the same time as the **Cloud Gem Portal Administrator Account Creation** dialog box, enter a name for your deployment \(for example, **dev**, **test**, or **prod**\)\.  
-![\[Enter a deployment name\]](/images/cloud_canvas/cloud-canvas-tutorial-6.png)
+![\[Enter a deployment name\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-6.png)
 
 1. Click **Create**\. The deployment operation takes about 10 minutes\.
 
@@ -219,15 +219,15 @@ Now that your cloud gems have been created, you can manage them in the Cloud Gem
 **To open the Cloud Gem Portal**
 
 1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.  
-![\[Open the Cloud Gem Portal\]](/images/cloud_canvas/cloud-canvas-tutorial-7.png)
+![\[Open the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-7.png)
 
 1. In the **Sign In to the Cloud Gem Portal** box, enter the temporary user name and password that you recorded earlier\.  
-![\[Enter your temporary credentials in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-tutorial-8.png)
+![\[Enter your temporary credentials in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-8.png)
 
 1. As a security measure, you are required to replace your temporary password\. Enter a new password and click **Save Password**\.
 
 1. After you sign in, the **Cloud Gems** page shows the list of cloud gems that are available in your current deployment\.  
-![\[The Cloud Gems page of the Cloud Gem Portal\]](/images/cloud_canvas/cloud-canvas-tutorial-10.png)
+![\[The Cloud Gems page of the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-10.png)
 
 1. Click a cloud gem to see its management page\.
 

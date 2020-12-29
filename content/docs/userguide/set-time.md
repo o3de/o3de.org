@@ -11,7 +11,7 @@ Sets a time value for the time of day system\. Time values are specified as deci
 + [Inputs](#set-time-input)
 + [Outputs](#set-time-output)
 
-![\[settimenode, settime, settimeofdaynode, settimeofday\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-time-node.png)
+![\[settimenode, settime, settimeofdaynode, settimeofday\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-time-node.png)
 
 ## Inputs<a name="set-time-input"></a>
 

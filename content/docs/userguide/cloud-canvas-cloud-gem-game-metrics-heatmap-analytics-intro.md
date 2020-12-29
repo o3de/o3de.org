@@ -7,7 +7,7 @@ title: Using Heatmap Analytics
 
 You can use heatmaps to view data that's generated from the Game Metrics Cloud Gem and for any metric type that a game client sends\. In the Cloud Gem Portal, the heatmap appears as an overlay on an image of the game map\. You can see information such as the majority of player movement and where most player deaths occur\.
 
-![\[Example of a heatmap overlay on an image of a game map in the Amazon Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/heatmap-analytics-cloud-gem-overview.png)
+![\[Example of a heatmap overlay on an image of a game map in the Amazon Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/heatmap-analytics-cloud-gem-overview.png)
 
 You can also expand heatmap functionality to use other gems that provide metrics, such as the Defect Reporter Cloud Gem\. When used with this gem, you can see where bugs are generated\.
 
@@ -38,10 +38,10 @@ After you complete the prerequisites, you can create a heatmap to view your data
 1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
 
 1. In the Cloud Gem Portal, on the **Cloud Gems** page, under **Analytics**, choose **Heatmap**\.  
-![\[Choose Heatmap under Analytics in the Amazon Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/cloud-gem-portal-heatmap-option.png)
+![\[Choose Heatmap under Analytics in the Amazon Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-gem-portal-heatmap-option.png)
 
 1. On the **Heatmaps** page, click **Create Heatmap**\.  
-![\[Click the Create Heatmap button on the Heatmaps page in the Amazon Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/cloud-gem-portal-create-heatmap-button.png)
+![\[Click the Create Heatmap button on the Heatmaps page in the Amazon Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-gem-portal-create-heatmap-button.png)
 
 1. For **Name**, enter a name to identify your heatmap\.
 
@@ -49,7 +49,7 @@ After you complete the prerequisites, you can create a heatmap to view your data
 **Note**  
 Lumberyard includes a sample screenshot in the `lumberyard_version\dev\CloudGemSamples\Levels\MetricsSample\cloud_gem_portal_heatmap_image.png` directory\.  
 You can also create your own screenshot\. For more information, see [Creating Screenshots of Your Level](#cloud-gem-game-metrics-heatmaps-creating-screenshots-of-game-level)\.  
-![\[Example of a top-down screenshot of a level in the gray image box in the Amazon Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-create-heatmap-resize-image.png)
+![\[Example of a top-down screenshot of a level in the gray image box in the Amazon Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-create-heatmap-resize-image.png)
 
 1. For **Max Zoom Scale**, set the minimum and maximum values\. You can adjust these values to change how the aggregated data points appear as heat spots on the map\.
 
@@ -75,7 +75,7 @@ If you're using the Metrics Sample level, the event type is called **translation
 **Example**  
 
    You can filter the search results to show metrics for user IDs that match XYZ \(`uid = 'XYZ'`\) or for iOS devices only \(`platform_identifier = 'iOS'`\)\.  
-![\[Specify SQL filters to show specific metrics on your heatmap in the Amazon Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-heatmap-metrics-custom-filter.png)
+![\[Specify SQL filters to show specific metrics on your heatmap in the Amazon Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-heatmap-metrics-custom-filter.png)
 
 1. Click **Save**\.
 
@@ -88,15 +88,15 @@ You can create a top\-down screenshot of your level to use with the heatmap over
 1. In Lumberyard Editor, open your level\.
 
 1. In the **Entity Outliner**, select your controllable entity\. For example, in the Metrics Sample level, under **Player**, select **followcam**\.  
-![\[Choose the controllable entity's camera in the Lumberyard Entity Outliner.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-player-followcam.png)
+![\[Choose the controllable entity's camera in the Lumberyard Entity Outliner.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-player-followcam.png)
 
 1. In the **Entity Inspector**, do the following:
 
    1. Under **Camera**, click **Be this camera**\.  
-![\[Click Be this camera in the Lumberyard Entity Inspector.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-be-this-camera.png)
+![\[Click Be this camera in the Lumberyard Entity Inspector.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-be-this-camera.png)
 
    1. Under **Transform**, for **Rotate**, set **X** to **270** degrees\. This rotates the camera orthogonal to the level\.  
-![\[For the Rotate parameter, set X to 270 degrees in the Lumberyard Entity Inspector.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-rotate.png)
+![\[For the Rotate parameter, set X to 270 degrees in the Lumberyard Entity Inspector.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-rotate.png)
 
 1. In the viewport, do the following:
 
@@ -111,12 +111,12 @@ You can create a top\-down screenshot of your level to use with the heatmap over
 1. Use your preferred tool to capture and save a screenshot of the viewport\.
 **Note**  
 You'll specify the path to your screenshot on the **Create Heatmap** page in the Cloud Gem Portal\.  
-![\[Example top-down screenshot of the Metrics Sample level in the Amazon Lumberyard viewport.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-viewport-screenshot.png)
+![\[Example top-down screenshot of the Metrics Sample level in the Amazon Lumberyard viewport.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-followcam-viewport-screenshot.png)
 
 1. Pause on the bottom left of the viewport\.
 **Important**  
 The pointer must touch the terrain, not the void space\.  
-![\[Example of the pointer touching the terrain on the bottom left of the Amazon Lumberyard viewport.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-pointer-bottom-left-viewport.png)
+![\[Example of the pointer touching the terrain on the bottom left of the Amazon Lumberyard viewport.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-pointer-bottom-left-viewport.png)
 
 1. In the bottom toolbar, locate the xy coordinates for the bottom left of the viewport\.
 **Note**  
@@ -124,7 +124,7 @@ If the xy coordinates aren't updating as you move the pointer, you can use the r
 **Example**  
 
    The following image shows the pointer at **X: 7\.05**, **Y: 75\.10**\.  
-![\[Locate the xy coordinates for the bottom corners of the viewport for creating your heatmap in the Lumberyard Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-metrics-sample-level-pointer-xy-coordinates.png)
+![\[Locate the xy coordinates for the bottom corners of the viewport for creating your heatmap in the Lumberyard Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-metrics-sample-level-pointer-xy-coordinates.png)
 
 1. Repeat steps 6 and 7 for the bottom right of the viewport\.
 **Note**  

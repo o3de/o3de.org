@@ -13,7 +13,7 @@ For more information, see [Creating Static Skyboxes](sky-skyboxes-intro.md)\.
 + [Input](#set-sky-box-material-input)
 + [Outputs](#set-sky-box-material-output)
 
-![\[sky box material, setskyboxmaterial, setskyboymaterialnode\]](/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-material.png)
+![\[sky box material, setskyboxmaterial, setskyboymaterialnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-material.png)
 
 ## Input<a name="set-sky-box-material-input"></a>
 

@@ -6,7 +6,7 @@ title: Using Particle Libraries
 
 The **Particle Editor** provides a context menu with the following options for you to manage your particle libraries\. Right\-click a library name to access the context menu\.
 
-![\[Manage Particle Editor libraries.\]](/images/particles/particle-editor-library-using.png)
+![\[Manage Particle Editor libraries.\]](/images/userguide/particles/particle-editor-library-using.png)
 
 
 ****  

@@ -13,7 +13,7 @@ To disable the effect, see [Disable Visual Artifacts](disable-visual-artifacts-n
 + [Inputs](#enable-visual-artifacts-note-input)
 + [Outputs](#enable-visual-artifacts-node-output)
 
-![\[enablevisualartifacts, enablevisualartifactsnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-visual-artifacts-node.png)
+![\[enablevisualartifacts, enablevisualartifactsnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-visual-artifacts-node.png)
 
 ## Inputs<a name="enable-visual-artifacts-note-input"></a>
 

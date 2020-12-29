@@ -18,7 +18,7 @@ Only administrators should perform these actions\. If you remove all AWS resourc
 1. In the **Cloud Canvas configuration** navigation pane, expand **Administration \(advanced\)**, and then expand **Deployments**\. The list of the deployments in the project appears\.
 
 1. Select the deployment to delete and click **Delete deployment**\.  
-![\[Image NOT FOUND\]](/images/cloud_canvas/cloud-canvas-ui-rm-delete-test-deployment.png)
+![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-delete-test-deployment.png)
 
 1. When prompted to confirm, click **Yes** to start the process of deleting the deployment’s resources from AWS\. The process might take a few minutes\.
 

@@ -11,7 +11,7 @@ Use Project Configurator to create a new, empty gem\.
 1. Select the project and click **Enable Gems**\.
 
 1. Click **Create a new Gem** on the gems page for the game project that you selected\.  
-![\[Image NOT FOUND\]](/images/gems-system-gems-create-new.png)
+![\[Image NOT FOUND\]](/images/userguide/gems-system-gems-create-new.png)
 
 1. In the **Create a new gem** dialog box:
 
@@ -34,7 +34,7 @@ Use Project Configurator to create a new, empty gem\.
       + **Assets Only** – Contains only assets and no code\.
 
    1. Choose **Create Gem**\.   
-![\[Create your own gems to use for your game project in Lumberyard.\]](/images/gems-system-gems-create-gem.png)
+![\[Create your own gems to use for your game project in Lumberyard.\]](/images/userguide/gems-system-gems-create-gem.png)
 
 1. Close the Project Configurator\.
 

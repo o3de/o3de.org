@@ -10,7 +10,7 @@ For computer monitors, the sRGB \(instead of RGB\) color space is used\. Using s
 
 The Material Editor is the primary tool used to create materials, texture mapping, setting opacity and lighting effects, setting shader parameters, vertex deformations, tessellation, and more, as shown below\. 
 
-![\[Image NOT FOUND\]](/images/material-editor.png)
+![\[Image NOT FOUND\]](/images/userguide/material-editor.png)
 
 **Topics**
 + [Concepts](graphics-concepts.md)

@@ -14,7 +14,7 @@ Instead of manually copying values from one entity's position to another, you ca
 **Example**  
 
    In the following example, the ditto feature shares an entity's orientation with another entity\. Both entities have the same value\.  
-![\[Share the transform data from one entity to another using the ditto feature in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-13.gif)
+![\[Share the transform data from one entity to another using the ditto feature in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-13.gif)
 
    The following is a shortcut to use the ditto feature\.  
 ****    
@@ -32,7 +32,7 @@ You can use the ditto feature for a group of entities\. This makes it easier for
 **Example**  
 
    In the following example, you can select entities \(a group selection of tires\) and use the ditto feature to match a target entity \(the car\)\.  
-![\[Share the transform data from multiple entities to another using the ditto feature in Lumberyard\]](/images/viewportinteractionmodel/viewport-selection-model-14.gif)
+![\[Share the transform data from multiple entities to another using the ditto feature in Lumberyard\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-14.gif)
 
    See the following shortcut to use the ditto feature\.  
 ****    
@@ -50,7 +50,7 @@ You can ditto a group of entities to local space so that you can modify entities
 **Example**  
 
    In the following example, select a group of entities and use the ditto feature to set them to the local space of the target entity\.  
-![\[Use the ditto feature to set the local space for a selection of entities to a target entity in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-15.gif)
+![\[Use the ditto feature to set the local space for a selection of entities to a target entity in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-15.gif)
 
    See the following shortcut to use the ditto feature for a group selection\.  
 ****    

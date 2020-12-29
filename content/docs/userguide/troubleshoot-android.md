@@ -73,7 +73,7 @@ For information on how to design assets and configure renderer settings to impro
 1.  Wait for the project to load and for the initial Gradle configure to complete\. 
 
 1.  At a certain point during the configuration, Android Studio will report that the Gradle plugin is ready to update by displaying a popup notification\. Select **update** in this notification\.   
-![\[A popup notification from Android Studio. The blue text at the far right, "update", is a call to action for the user to select.\]](/images/platforms/android/gradle-update.png)
+![\[A popup notification from Android Studio. The blue text at the far right, "update", is a call to action for the user to select.\]](/images/userguide/platforms/android/gradle-update.png)
 
 1.  Another dialog box will appear, informing you of the version to update to and giving you the option to see release notes\. Select the **Update** button in this dialog to update the Gradle plugin and remove build warnings\. 
 

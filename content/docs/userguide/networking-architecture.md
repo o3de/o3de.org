@@ -20,7 +20,7 @@ title: Networking Architecture
 
  The following diagram shows the major components of the GridMate architecture and their relationships\. 
 
-![\[GridMate architecture\]](/images/networking/network-architecture-gridmate.jpg)
+![\[GridMate architecture\]](/images/userguide/networking/network-architecture-gridmate.jpg)
 
 For more information, see the following pages\.
 + [Carrier](network-carrier.md)

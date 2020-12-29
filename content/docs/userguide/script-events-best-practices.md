@@ -12,7 +12,7 @@ Sending events during entity activation can have undesired results\. Because the
 
 To ensure that all entities that need to listen for and handle a given script event are ready to receive the event, queue the message on the [tick bus](component-entity-system-pg-tick-bus.md)\. One way to implement this strategy in Script Canvas is to connect the **On Graph Start** node to a **Tick Delay** node\. The delay helps to ensure that when a script event message is sent, all entities that could possibly be connected to that script event receive the event\.
 
-![\[Using the Tick Delay node in Script Canvas to ensure that entities are activated before events are sent.\]](/images/script-canvas-script-events-9.png)
+![\[Using the Tick Delay node in Script Canvas to ensure that entities are activated before events are sent.\]](/images/userguide/script-canvas-script-events-9.png)
 
 ## Be Aware of Script Event Asset Versioning<a name="script-events-best-practices-asset-versioning"></a>
 

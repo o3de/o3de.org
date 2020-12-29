@@ -14,7 +14,7 @@ title: Using the Top Toolbar
 
 Lumberyard Editor provides a toolbar that allows you to easily access various editor tools and features\. The toolbar is docked at the top of the editor by default, but you can also dock it vertically on the edges of the editor or undock it from the editor\. To customize the toolbar, right\-click anywhere on the toolbar and select **Customize** from the context menu\. You can choose which toolbars, views, or modes to include\. You can also add commands to a toolbar\.
 
-![\[Image NOT FOUND\]](/images/lumberyard-editor-top-toolbar.png)
+![\[Image NOT FOUND\]](/images/userguide/lumberyard-editor-top-toolbar.png)
 
 You can access Lumberyard tools and features using one of the following methods:
 + Toolbar buttons
@@ -25,7 +25,7 @@ For information about the bottom toolbar, see [Using the Bottom Toolbar](lumbery
 
 ## EditMode Toolbar<a name="lumberyard-editor-toolbars-editmode"></a>
 
-![\[Image NOT FOUND\]](/images/editor-toolbars-editmode.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-editmode.png)
 
 The **EditMode** toolbar includes various tools for general level editing:
 + **A** – Revert or apply the last command
@@ -40,7 +40,7 @@ The **EditMode** toolbar includes various tools for general level editing:
 
 ## Object Toolbar<a name="lumberyard-editor-toolbars-object"></a>
 
-![\[Image NOT FOUND\]](/images/editor-toolbars-object.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-object.png)
 
 The **Object** toolbar includes various tools for object alignment and manipulation:
 + **A** – Go to the selected object
@@ -59,7 +59,7 @@ If you align an object to another object that has modified scale or rotation, th
 
 ## Editors Toolbar<a name="lumberyard-editor-toolbars-dialogs"></a>
 
-![\[Image NOT FOUND\]](/images/editor-toolbars-dialogs.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-dialogs.png)
 
 The **Editors** toolbar allows you to access various editor tools:
 + **A** – Open the **Asset Browser**
@@ -83,4 +83,4 @@ The **Editors** toolbar allows you to access various editor tools:
 
 The **Substance** toolbar includes a button that opens the **Substance Editor**\.
 
-![\[Image NOT FOUND\]](/images/editor-toolbars-substance.png)
+![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-substance.png)

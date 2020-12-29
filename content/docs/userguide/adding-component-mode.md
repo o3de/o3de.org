@@ -16,14 +16,14 @@ Component Mode is an edit\-time only feature\. For more information, see [Editor
 
 By default, you can't edit the **Point Light** component in the viewport\. You can edit its properties only in the **Entity Inspector**\.
 
-![\[Decrease the area of effect of the Point Light component.\]](/images/componentmode/programmers-guide-component-mode-1.png)
+![\[Decrease the area of effect of the Point Light component.\]](/images/userguide/componentmode/programmers-guide-component-mode-1.png)
 
 ------
 #### [ After ]
 
 After you add a Component Mode to a component, you can click and drag the manipulator to adjust the **Point Light** component's area of effect\.
 
-![\[Use manipulators to adjust the Point Light component in the viewport.\]](/images/componentmode/programmers-guide-component-mode.png)
+![\[Use manipulators to adjust the Point Light component in the viewport.\]](/images/userguide/componentmode/programmers-guide-component-mode.png)
 
 For a list of available components, see [Component Reference](component-components.md)\.
 

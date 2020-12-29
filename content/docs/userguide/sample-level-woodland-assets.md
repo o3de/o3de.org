@@ -36,6 +36,6 @@ This package is compatible with Lumberyard 1\.9 and earlier\.
 
 Sample images from the Woodland asset collection:
 
-![\[Image NOT FOUND\]](/images/samples-woodland-1.png)
+![\[Image NOT FOUND\]](/images/userguide/samples-woodland-1.png)
 
-![\[Image NOT FOUND\]](/images/samples-woodland-2.png)
+![\[Image NOT FOUND\]](/images/userguide/samples-woodland-2.png)

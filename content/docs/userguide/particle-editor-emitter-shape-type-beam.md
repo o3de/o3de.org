@@ -10,7 +10,7 @@ The **Beam** emitter spawns a length of connected particles at once, based on th
 
 The following are parameters for the **Beam** emitter \(CPU\)\. 
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-beam.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-beam.png)
 
 
 **Beam Emitter Parameters for CPU Attributes**  

@@ -7,7 +7,7 @@ title: Audio Attribute
 
 In the **Audio** attribute, specify which sounds the particle system emits and when\.
 
-![\[Audio attributes in the Particle Editor.\]](/images/particles/particle-editor-audio.png)
+![\[Audio attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-audio.png)
 
 
 **Audio Attribute Parameters for CPU Emitters**  

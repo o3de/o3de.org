@@ -15,4 +15,4 @@ For more information about working with clouds, including setting cloud shading 
 
 **Example**  
 
-![\[Example clouds from the Sky Clouds gem in Lumberyard.\]](/images/gems-system-gem-clouds.png)
+![\[Example clouds from the Sky Clouds gem in Lumberyard.\]](/images/userguide/gems-system-gem-clouds.png)

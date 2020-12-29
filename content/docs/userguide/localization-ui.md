@@ -10,4 +10,4 @@ For an example, open the **[Samples Project](sample-project-samples.md)**\. In t
 
 You can quickly test a UI canvas that contains localized text\. To change the current language in the [**UI Editor**](ui-editor-using.md), choose **View**, **Set Current Language**\.
 
-![\[In the UI Editor, choose View, Set Current Language\]](/images/localization-ui.png)
+![\[In the UI Editor, choose View, Set Current Language\]](/images/userguide/localization-ui.png)

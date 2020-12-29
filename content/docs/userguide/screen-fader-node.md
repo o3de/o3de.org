@@ -14,17 +14,17 @@ To use the **Screen Fader** node in the Track View, see [Screen Fader Node](cine
 + [Outputs](#screen-fader-output)
 + [ScreenFader EBuses](screen-fader-ebuses.md)
 
-![\[screenfader, screenfadernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
+![\[screenfader, screenfadernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
 
 **Example**  
 In the following script, the screen first fades in, out, and then fades in again\.  
 
-![\[Use the Screen Fader node to fade the screen in and out to black.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-effect-color-correction-example-script.png)
+![\[Use the Screen Fader node to fade the screen in and out to black.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-effect-color-correction-example-script.png)
 
 **Example**  
 See the following screen fading in a game\.  
 
-![\[Use the Screen Fader node to fade the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
+![\[Use the Screen Fader node to fade the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
 
 ## Inputs<a name="screen-fader-input"></a>
 

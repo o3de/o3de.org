@@ -7,7 +7,7 @@ title: Leaderboard Sample Level Implementation Details
 
 An entity named `Leaderboard` contains the `CloudGemLeaderboardClientComponent`\.
 
-![\[CloudGemLeaderboardClientComponent\]](/images/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-client-component.png)
+![\[CloudGemLeaderboardClientComponent\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-client-component.png)
 
 The `CloudGemLeaderboardClientComponent` enables the gem's API to be called from other components on that entity and receives notifications for those calls\.
 

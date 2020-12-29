@@ -9,7 +9,7 @@ This tutorial walks you through the steps to create a simple sphere that you can
 
 **Example**  
 
-![\[Example controllable sphere in Script Canvas.\]](/images/scripting/script-canvas/moving.gif)
+![\[Example controllable sphere in Script Canvas.\]](/images/userguide/scripting/script-canvas/moving.gif)
 
 In addition to node basics, input, movement, and logging, you learn the following key concepts:
 + Adding nodes
@@ -54,12 +54,12 @@ To create a sphere that you can control with keyboard input, you create an entit
 1. In the **Entity Inspector**, do the following:
 
    1. For **Name**, enter **Player**\.  
-![\[Create an entity for the sphere in Script Canvas.\]](/images/scripting/script-canvas/entity-inspector-name-field-player.png)
+![\[Create an entity for the sphere in Script Canvas.\]](/images/userguide/scripting/script-canvas/entity-inspector-name-field-player.png)
 
    1. Click **Add Component** and then choose the **Mesh** component\.
 
    1. In the **Mesh** component, for **Mesh asset**, click the browse \(**\.\.\.**\) button, select the `\SamplesProject\Objects\default\primitive_sphere.cgf` file and then click **OK**\.  
-![\[Select the sphere asset for the Mesh component.\]](/images/scripting/script-canvas/pick-static-mesh-window-primitive-sphere.png)
+![\[Select the sphere asset for the Mesh component.\]](/images/userguide/scripting/script-canvas/pick-static-mesh-window-primitive-sphere.png)
 
 1. In the viewport, use the [**Move** tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode) to select the z\-axis and move the entity off the ground\.
 
@@ -68,7 +68,7 @@ To create a sphere that you can control with keyboard input, you create an entit
    + **Mesh Collider**\.
    + **Input**
 
-1. In the **Input** component, click the **Input Bindings Editor** icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/input-bindings-editor-icon.png)\. This opens the **Asset Editor**\.
+1. In the **Input** component, click the **Input Bindings Editor** icon ![\[Image NOT FOUND\]](/images/userguide/scripting/script-canvas/input-bindings-editor-icon.png)\. This opens the **Asset Editor**\.
 
 1. In the **Asset Editor**, choose **File**, **New**, **Input Bindings** and for **File name**, enter **player** and then click **Save**\.
 
@@ -91,7 +91,7 @@ To create a sphere that you can control with keyboard input, you create an entit
    1. Repeat steps C – E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_D**\. For **Event value multiplier**, use the default value of `1`\.
 
    1. Expand the **keyboard\_key\_alphanumeric\_A** event generator and verify that your settings appear like the following\.  
-![\[Creating the inputbindings for the Input component.\]](/images/scripting/script-canvas/player-inputbindings-editor-move-x.png)
+![\[Creating the inputbindings for the Input component.\]](/images/userguide/scripting/script-canvas/player-inputbindings-editor-move-x.png)
 
 1. In the **Edit Asset** window, do the following:
 
@@ -110,7 +110,7 @@ To create a sphere that you can control with keyboard input, you create an entit
    1. Repeat steps C – E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_S**\. For **Event value multiplier**, enter **\-1**\.
 
    1. Expand **keyboard\_key\_alphanumeric\_W** and verify that your settings appear like the following\.  
-![\[Example player.inputbindings file.\]](/images/scripting/script-canvas/player-inputbindings-editor.png)
+![\[Example player.inputbindings file.\]](/images/userguide/scripting/script-canvas/player-inputbindings-editor.png)
 
    1. Choose **File**, **Save**\.
 
@@ -137,7 +137,7 @@ You can also access the list of nodes by right\-clicking in an empty area on the
 1. Under **Gameplay**, **Input**, drag **Input Handler** from the **Node Palette** to the graph\. **Input Handler** is an event node\. When an event occurs, the event node sends a message to the graph\.
 
 1. For **Event Name**, enter **move\_y**\. This tells the node to listen for the input event\.  
-![\[Example Input Handler node in Script Canvas.\]](/images/scripting/script-canvas/input-handler-node-event-name-move-y.png)
+![\[Example Input Handler node in Script Canvas.\]](/images/userguide/scripting/script-canvas/input-handler-node-event-name-move-y.png)
 
 1. In the **Node Palette**, enter **Print** in the search box\.
 
@@ -152,7 +152,7 @@ Data is always input on the left side of a node and output from the right side o
 For more information, see [Inputs, Outputs, and Connection Types](script-canvas-nodes-understanding.md#script-canvas-pins-and-connections)\.
 
 1. Verify that your `player.scriptcanvas` file looks like the following\.  
-![\[Example Input Handler and Print nodes in Script Canvas.\]](/images/scripting/script-canvas/input-handler-log-script-canvas-example.png)
+![\[Example Input Handler and Print nodes in Script Canvas.\]](/images/userguide/scripting/script-canvas/input-handler-log-script-canvas-example.png)
 
 1. In the **Script Canvas** editor, choose **File**, **Save** or press **Ctrl\+S**\.
 
@@ -176,7 +176,7 @@ The tutorial's keyboard input doesn't work in a remote desktop session\.
 1. Press **Ctrl\+G** to enter game mode\.
 
 1. To trigger your input event, press **W** and then press **S**\. The **Console** pane in Lumberyard Editor outputs the value of the input event when the `move_y` event is triggered\. In this case, the **Console** pane outputs `1` when you press **W** and outputs `-1` when you press **S**\.  
-![\[Console pane outputs 1 when you press W.\]](/images/scripting/script-canvas/script-canvas-console-test-input-event.png)
+![\[Console pane outputs 1 when you press W.\]](/images/userguide/scripting/script-canvas/script-canvas-console-test-input-event.png)
 
 1. When you are done testing your script, press **Esc**\.
 
@@ -189,7 +189,7 @@ Now that you've successfully created your first script, you can add nodes to mov
 1. In the **Script Canvas** editor, in the **Node Palette**, enter **multiply** in the search box\.
 
 1. Under **Math**, drag **Multiply** from the **Node Palette** to the graph\.  
-![\[Example Script Canvas Multiply node.\]](/images/scripting/script-canvas/move-entity-script-canvas-multiply-node.png)
+![\[Example Script Canvas Multiply node.\]](/images/userguide/scripting/script-canvas/move-entity-script-canvas-multiply-node.png)
 
 1. From **Input Handler**, drag the **Held** pin to connect it to the **In** pin of the **Multiply** node\. This connection executes the **Multiply** node after the input handler receives a held event\.
 
@@ -214,7 +214,7 @@ Now that you've successfully created your first script, you can add nodes to mov
 1. From **Create From Values**, drag the **Vector 3** pin to connect it to the **Direction** pin of the **Move Entity** node\.
 
 1. Verify that your `player.scriptcanvas` graph looks like the following\.  
-![\[Example Script Canvas graph to move a sphere across the y-axis.\]](/images/scripting/script-canvas/move-entity-script-canvas-example.png)
+![\[Example Script Canvas graph to move a sphere across the y-axis.\]](/images/userguide/scripting/script-canvas/move-entity-script-canvas-example.png)
 
 1. Save your graph\.
 
@@ -231,7 +231,7 @@ Now that you've converted your input event value to a direction that moves the e
 **To add movement on the x\-axis**
 
 1. In the **Script Canvas** editor, drag on the graph to select the **Input Handler**, **Multiply**, **Create From Values**, and **Move Entity** nodes\. An orange outline appears around the selected nodes\.  
-![\[Example Script Canvas graph to add movement on the x-axis for the sphere.\]](/images/scripting/script-canvas/script-canvas-selected-nodes-highlight.png)
+![\[Example Script Canvas graph to add movement on the x-axis for the sphere.\]](/images/userguide/scripting/script-canvas/script-canvas-selected-nodes-highlight.png)
 
 1. Press **Ctrl\+C** to copy the selected nodes\.
 
@@ -243,16 +243,16 @@ Now that you've converted your input event value to a direction that moves the e
 **Example**  
 
    Your `player.scriptcanvas` graph should look like the following\.  
-![\[Copy the nodes in the Script Canvas graph to move the sphere up and down and side to side.\]](/images/scripting/script-canvas/script-canvas-selected-nodes-copied.png)
+![\[Copy the nodes in the Script Canvas graph to move the sphere up and down and side to side.\]](/images/userguide/scripting/script-canvas/script-canvas-selected-nodes-copied.png)
 
 1. For the duplicate **Multiply** node, move the connection from the **Y** pin to the **X** pin on the duplicate **Create From Values** node\.
 **Note**  
 To disconnect a connection, drag it to an empty part of the canvas\. To delete a connection, press **Alt** and click the connection\.  
-![\[Example Multiply and Create From Values nodes in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-create-from-values-node.png)
+![\[Example Multiply and Create From Values nodes in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-create-from-values-node.png)
 
 1. Verify that your `player.scriptcanvas` file graph looks like the following\.  
 **Example**    
-![\[Example Script Canvas graph to control your sphere movement.\]](/images/scripting/script-canvas/script-canvas-x-axis-movement.png)
+![\[Example Script Canvas graph to control your sphere movement.\]](/images/userguide/scripting/script-canvas/script-canvas-x-axis-movement.png)
 
 1. Save your graph\.
 

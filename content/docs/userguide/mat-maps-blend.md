@@ -9,7 +9,7 @@ Blend layers can be thought of as a layered material\. You can create one materi
 
 Integrate blend layers in the Illum and Vegetation shaders and activate them by setting the blend layer shader generation parameters\.
 
-![\[Image NOT FOUND\]](/images/shared-blend-layer-example.png)
+![\[Image NOT FOUND\]](/images/userguide/shared-blend-layer-example.png)
 
 **Topics**
 + [Shader Generation Parameters](#mat-maps-blend-shader-generation-parameters)

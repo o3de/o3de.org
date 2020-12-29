@@ -14,7 +14,7 @@ Interested? Want to get started?
 + [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Amazon Lumberyard forums](https://forums.awsgametech.com/)
 
-![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/starter-game-introduction-1.25.png)
+![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/userguide/starter-game-introduction-1.25.png)
 
 Image from Starter Game\. For more sample projects and levels, see [Using Lumberyard sample projects and levels](sample-projects-levels-intro.md)\.
 

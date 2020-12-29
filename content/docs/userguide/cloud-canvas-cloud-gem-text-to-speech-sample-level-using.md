@@ -21,7 +21,7 @@ You can use the text\-to\-speech sample level to have the Lumberyard character R
 1. Close **Resource Manager**\.
 
 1. Click **Play Game** or press **Ctrl\+G** to run the text\-to\-speech sample level\. The level shows the character Rin and some text boxes\.  
-![\[Text to speech sample level\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-sample-level-using-1.png)
+![\[Text to speech sample level\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-sample-level-using-1.png)
 
 1. If you just want to try the sample level, you can ignore the **Character \(opt\)** box for now\. To use this setting, you would first have to create a character in the Cloud Gem Portal and import the character's speech files into the sample level\. For information about creating characters, see [Text\-to\-Speech Cloud Gem Portal](cloud-canvas-cloud-gem-text-to-speech-cgp.md)\.
 

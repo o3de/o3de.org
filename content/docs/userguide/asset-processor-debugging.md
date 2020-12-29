@@ -27,7 +27,7 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
    + **Source** – Where the log came from \(for example, Asset Processor\)
    + **Message** – The description of the log  
 **Example**    
-![\[View logs in Asset Processor.\]](/images/asset_processor/logs.png)
+![\[View logs in Asset Processor.\]](/images/userguide/asset_processor/logs.png)
 
 1. To create another log report, click **Add**\.
 
@@ -38,7 +38,7 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
    + **Show warnings** – Displays logs that have warnings\.
    + **Show errors** – Displays logs that have errors\.
    + **Show debug** – Displays logs that have debug issues\.  
-![\[Create a log tab in Asset Processor.\]](/images/asset_processor/create-logging-tab.png)
+![\[Create a log tab in Asset Processor.\]](/images/userguide/asset_processor/create-logging-tab.png)
 
 1. Click **OK**\. Your log report appears as another tab in Asset Processor\.
 

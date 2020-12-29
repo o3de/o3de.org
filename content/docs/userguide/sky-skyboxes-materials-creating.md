@@ -24,15 +24,15 @@ You can use any image editing software to create a skybox texture\. We used Adob
 
 The numbers represent each side of the skybox that the texture is mapped to\. Sides 1 and 2 will become `skybox_12.tif` and sides 3 and 4 will become `skybox_34.tif`\.
 
-![\[Image NOT FOUND\]](/images/sky/static-skybox-setup-1.png)
+![\[Image NOT FOUND\]](/images/userguide/sky/static-skybox-setup-1.png)
 
 The top of the example sky is a separate texture\. The numbers represent which edge of the texture to map to which side\. This is important for you to manage texture seams\. You must name this 2048 x 2048 texture `skybox_5.tif`\.
 
-![\[Image NOT FOUND\]](/images/sky/static-skybox-setup-2.png)
+![\[Image NOT FOUND\]](/images/userguide/sky/static-skybox-setup-2.png)
 
 When you combine sides 1 and 2 into a single texture \(`skybox_12.tif`\), you must flip side 2 horizontally\. When you combine sides 3 and 4 into a single texture \(`skybox_34.tif`\), you must flip side 4 horizontally\. This results in two textures that are 2048 x 2048 each\.
 
-![\[Image NOT FOUND\]](/images/sky/static-skybox-setup-3.png)
+![\[Image NOT FOUND\]](/images/userguide/sky/static-skybox-setup-3.png)
 
 **To prepare the skybox textures for Lumberyard**
 

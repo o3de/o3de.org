@@ -11,7 +11,7 @@ Sets a material parameter with a color value\.
 + [Inputs](#script-canvas-material-set-param-color-node-input)
 + [Outputs](#script-canvas-material-set-param-color-node-output)
 
-![\[setparamcolor, setparamcolornode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-node.png)
+![\[setparamcolor, setparamcolornode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-node.png)
 
 ## Inputs<a name="script-canvas-material-set-param-color-node-input"></a>
 

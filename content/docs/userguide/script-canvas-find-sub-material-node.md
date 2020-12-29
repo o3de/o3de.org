@@ -19,7 +19,7 @@ To access a single material, you can use the **[Find by Name](material-find-by-n
 + [Inputs](#script-canvas-find-sub-material-node-input)
 + [Outputs](#script-canvas-find-sub-material-node-output)
 
-![\[findsubmaterial, findsubmaterial, findsubmaterialnode, findchildmaterial\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-sub-material-node.png)
+![\[findsubmaterial, findsubmaterial, findsubmaterialnode, findchildmaterial\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-sub-material-node.png)
 
 ## Inputs<a name="script-canvas-find-sub-material-node-input"></a>
 

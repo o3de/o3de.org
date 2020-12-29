@@ -110,7 +110,7 @@ To use the Waf artifacts cache, Waf must have the latest build pickle data from 
 
 The following diagram shows this workflow\.
 
-![\[Waf pickle file data loading sequence\]](/images/waf/waf-artifacts-cache-1.png)
+![\[Waf pickle file data loading sequence\]](/images/userguide/waf/waf-artifacts-cache-1.png)
 
 ### Overriding the Task's `uid` and `env` Signatures<a name="waf-artifacts-cache-overriding-task-uid-and-env-signatures"></a>
 
@@ -126,4 +126,4 @@ For example, during the `run` function, the `AzCodeGen` task updates the task's 
 
 The following diagram shows this workflow\.
 
-![\[Waf artifacts cache task execution workflow\]](/images/waf/waf-artifacts-cache-2.png)
+![\[Waf artifacts cache task execution workflow\]](/images/userguide/waf/waf-artifacts-cache-2.png)

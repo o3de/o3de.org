@@ -16,7 +16,7 @@ To disable the effect, see [Disable Volumetric Scattering](disable-volumetric-sc
 + [Inputs](#enable-volumetric-scattering-note-input)
 + [Outputs](#enable-volumetric-scattering-node-output)
 
-![\[enablevolumetricscatttering, enablevolumetricscatteringnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-volumetric-scattering-node.png)
+![\[enablevolumetricscatttering, enablevolumetricscatteringnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-volumetric-scattering-node.png)
 
 ## Inputs<a name="enable-volumetric-scattering-note-input"></a>
 

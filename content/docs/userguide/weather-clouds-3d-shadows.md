@@ -15,7 +15,7 @@ title: Adding 3D Cloud Shadows
 
 **Example 3D Cloud Shadows**  
 
-![\[Example 3D clouds with shadows in Lumberyard.\]](/images/weather/weather-clouds-3d-shadows-1.gif)
+![\[Example 3D clouds with shadows in Lumberyard.\]](/images/userguide/weather/weather-clouds-3d-shadows-1.gif)
 
 **To add 3D cloud shadows**
 
@@ -24,7 +24,7 @@ title: Adding 3D Cloud Shadows
 1. Under **CloudShadows**, click **Cloud shadow texture** and the folder icon\.
 
 1. In **Preview**, select an asset\.  
-![\[Example of an appropriate shadow asset.\]](/images/weather/weather-clouds-3d-shadows-3.png)
+![\[Example of an appropriate shadow asset.\]](/images/userguide/weather/weather-clouds-3d-shadows-3.png)
 
 1. Drag the shadow to the desired location in your level\. 
 
@@ -33,4 +33,4 @@ title: Adding 3D Cloud Shadows
    + **Cloud shadow tiling** – Sets the tiling multiplier of the shadow texture\. 
    + **Cloud shadow brightness** – Sets the brightness level of the shadow\.
    + **Cloud shadow invert** – Enables inverting of the cloud shadow texture\.   
-![\[Example CloudShadows parameters to create shadows for clouds.\]](/images/weather/weather-clouds-3d-shadows-2.png)
+![\[Example CloudShadows parameters to create shadows for clouds.\]](/images/userguide/weather/weather-clouds-3d-shadows-2.png)

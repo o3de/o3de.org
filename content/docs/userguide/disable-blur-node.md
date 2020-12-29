@@ -13,7 +13,7 @@ To enable the effect, see [Enable Blur](enable-blur-node.md)\.
 + [Inputs](#disable-filter-blur-node-input)
 + [Outputs](#disable-blur-node-output)
 
-![\[disablefilterblurnode, disablefilterblur, disablegaussianblur\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-blur-node.png)
+![\[disablefilterblurnode, disablefilterblur, disablegaussianblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-blur-node.png)
 
 ## Inputs<a name="disable-filter-blur-node-input"></a>
 

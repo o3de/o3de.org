@@ -6,7 +6,7 @@ title: AI C++ Class Hierarchy
 
 C\+\+ classes for AI objects are structured as follows\.
 
- ![\[AI objects hierarchy\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ai/ai-class_hierarchy.png)
+ ![\[AI objects hierarchy\]](/images/userguide/ai/ai-class_hierarchy.png)
 
 **CAIObject**  
 Defines basic AI object properties \(entity ID, position, direction, group ID, faction, etc\.\)

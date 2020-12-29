@@ -21,19 +21,19 @@ Slices are saved as `.slice` files within your game project directory\.
 **Example**  
 In the **Entity Outliner**, you can identify different entities by their icon and color\.  
 
-![\[Slices in the Entity Outliner.\]](/images/shared-working_with_slices.png)<a name="identify-slices"></a>
+![\[Slices in the Entity Outliner.\]](/images/userguide/shared-working_with_slices.png)<a name="identify-slices"></a>
 
 
 ****  
 
 | Icon | Description | 
 | --- | --- | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-standalone-entity.png)  |  Entities that are white are standalone\. They are not part of a slice instance\.  | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-source-slice.png)   | Entities that are blue are part of a slice instance\. | 
-| ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-hierarchy-slices.png)  | Entities with lines indicate a hierarchy with a parent and child\. In this example, the parent and child entities are part of a slice instance\. | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-override-slice.png)  |  Entities that are orange have overrides, which means they have different component property values than the source slice\.  | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-dot-parent-slice.png)  | Parent entities that appear with a dot indicate that a child entity has an override\. In this example, the **DoorWay\_Parent** entity has three children, which each have overrides\. | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity-outliner-source-slices-hierarchy.png)  |  Entities that are shaded are the slice roots\. In this example, the **TimerParent** entity and its grandchildren are slice roots\.  | 
+|  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-standalone-entity.png)  |  Entities that are white are standalone\. They are not part of a slice instance\.  | 
+|  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-source-slice.png)   | Entities that are blue are part of a slice instance\. | 
+| ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-hierarchy-slices.png)  | Entities with lines indicate a hierarchy with a parent and child\. In this example, the parent and child entities are part of a slice instance\. | 
+|  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-override-slice.png)  |  Entities that are orange have overrides, which means they have different component property values than the source slice\.  | 
+|  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-dot-parent-slice.png)  | Parent entities that appear with a dot indicate that a child entity has an override\. In this example, the **DoorWay\_Parent** entity has three children, which each have overrides\. | 
+|  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-source-slices-hierarchy.png)  |  Entities that are shaded are the slice roots\. In this example, the **TimerParent** entity and its grandchildren are slice roots\.  | 
 
 **Topics**
 + [Anatomy of a Slice](dynamic-slices-overview-anatomy.md)

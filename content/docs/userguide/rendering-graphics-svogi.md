@@ -20,7 +20,7 @@ Voxel GI provides the following effects:
 
 For every frame, thousands of rays are traced through voxels and shadow maps to gather occlusion and in\-directional lighting\.
 
-![\[Example global illumination enabled and disabled.\]](/images/rendering/SVOGI.gif)
+![\[Example global illumination enabled and disabled.\]](/images/userguide/rendering/SVOGI.gif)
 
 To use this feature, you must [enable](gems-system-using-project-configurator.md) the SVOGI gem for your project\.
 

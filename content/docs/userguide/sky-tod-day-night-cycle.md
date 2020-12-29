@@ -14,7 +14,7 @@ The Time of Day graph shows changes to the selected parameter over time\. When a
 **Example**  
 The following is an example graph in the **Time of Day Editor**\.  
 
-![\[Use the Time of Day Editor to manage a day and night cycle for your game in Lumberyard.\]](/images/sky/sky-tod-day-night-cycle.png)
+![\[Use the Time of Day Editor to manage a day and night cycle for your game in Lumberyard.\]](/images/userguide/sky/sky-tod-day-night-cycle.png)
 
 **To configure a day\-night cycle**
 

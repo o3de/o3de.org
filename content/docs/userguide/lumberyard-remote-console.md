@@ -12,7 +12,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 **To start the Universal Remote Console**
 
 1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`  
-![\[Image NOT FOUND\]](/images/remote-console.png)
+![\[Image NOT FOUND\]](/images/userguide/remote-console.png)
 
 1. To see output from the Lumberyard logging system, click the **Full Log** tab\. 
 

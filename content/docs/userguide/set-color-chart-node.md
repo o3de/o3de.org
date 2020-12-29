@@ -16,7 +16,7 @@ For an example script, see [Example Set Color Chart Script](creating-a-color-cha
 + [Creating a Color Chart](creating-a-color-chart-for-lumberyard.md)
 + [Console Variables for Color Charts](set-color-chart-console-variables.md)
 
-![\[setcolorchartnode, setcolorchart, colorchart, colorgrading, setcolorgrading\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-color-chart-node.png)
+![\[setcolorchartnode, setcolorchart, colorchart, colorgrading, setcolorgrading\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-color-chart-node.png)
 
 ## Inputs<a name="set-color-chart-node-input"></a>
 

@@ -18,11 +18,11 @@ For more information about installing the project that includes the VR TV Room l
 
 You can use the **[Video Playback](component-videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\. 
 
-![\[Video Playback and Script Canvas components for the VR TV Room level.\]](/images/tv-room-level-video-playback-script-canvas-components-example.png)
+![\[Video Playback and Script Canvas components for the VR TV Room level.\]](/images/userguide/tv-room-level-video-playback-script-canvas-components-example.png)
 
 You can use the **Script Canvas** component and graph to set the playback to loop mode and to start playing immediately\.
 
-![\[Example Script Canvas graph for the VR TV Room level.\]](/images/tv-room-level-script-canvas-graph.png)
+![\[Example Script Canvas graph for the VR TV Room level.\]](/images/userguide/tv-room-level-script-canvas-graph.png)
 
 ## Cycling Through Video Playback Options<a name="sample-level-vr-tv-room-cycling-through-video-playback-options"></a>
 

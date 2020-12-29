@@ -15,10 +15,10 @@ You can disable the components that you don't want and reenable them later\. Dis
 1. In the **Entity Inspector**, under **Add Component**, right\-click the component that is associated with the entity\.
 
 1. Choose **Disable component** to disable the component\.  
-![\[You can disable a component on an entity.\]](/images/component/component-context-menu-disabling.png)
+![\[You can disable a component on an entity.\]](/images/userguide/component/component-context-menu-disabling.png)
 
    Disabled components are dimmed with stripes\.  
-![\[Image NOT FOUND\]](/images/component/component-disabled.png)
+![\[Image NOT FOUND\]](/images/userguide/component/component-disabled.png)
 
 1. To reenable a disabled component, right\-click the component and choose **Enable component**\.  
-![\[You can re-enable a disabled component.\]](/images/component/component-enabled.png)
+![\[You can re-enable a disabled component.\]](/images/userguide/component/component-enabled.png)

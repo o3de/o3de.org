@@ -7,7 +7,7 @@ title: Simple State
 
 The **Simple State** component provides a simple state machine\. Each state is represented by a name and zero or more entities\. The entities are activated upon entering the state and deactivated upon exiting it\. A simple state component may be in NullState, which means no state is active\.
 
-![\[Image NOT FOUND\]](/images/component/component-simple-state.png)
+![\[Image NOT FOUND\]](/images/userguide/component/component-simple-state.png)
 
 ## Simple State Component Properties<a name="component-simple-state-properties"></a>
 

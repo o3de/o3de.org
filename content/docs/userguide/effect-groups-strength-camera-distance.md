@@ -24,7 +24,7 @@ You need to use a script to apply this effect group at the specified position fo
 **Example**  
 The following script uses the **Get World Translation** to send the entity's position to the **Apply Effect Group At Position** node; this node then applies the effect group to that specified position\.  
 
-![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](/images/example-script-apply-effect-group-at-position.png)
+![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](/images/userguide/example-script-apply-effect-group-at-position.png)
 
 ## Lua<a name="effect-groups-strength-camera-distance-with-lua"></a>
 

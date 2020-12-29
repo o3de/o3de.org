@@ -34,7 +34,7 @@ For more information, see [Simulating physics behavior with the PhysX system](ph
 
 ## PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>
 
-![\[PhysX Shape Collider component interface.\]](/images/component/physx/physx/ui-physx-shape-collider-A-1.27.png)
+![\[PhysX Shape Collider component interface.\]](/images/userguide/component/physx/physx/ui-physx-shape-collider-A-1.27.png)
 
 ****Collision Layer****  
 The collision layer that's assigned to this shape collider\. For more information, see [Collision Layers](physx-configuration-collision-layers.md)\. 
@@ -74,11 +74,11 @@ Render this shape collider in the viewport\. Enabled by default\.
 
 The [Polygon Prism Shape](component-polygon-prism.md) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX\. The subdivision is automatically updated if the vertices of the polygon prism are modified\. 
 
-![\[A complex polygon prism can't be converted to convex geometry.\]](/images/component/physx/physx/ui-physx-shape-collider-B-1.24.png)
+![\[A complex polygon prism can't be converted to convex geometry.\]](/images/userguide/component/physx/physx/ui-physx-shape-collider-B-1.24.png)
 
 If the vertices are modified so that the polygon prism is no longer a simple polygon, for example, if the polygon prism is self\-intersecting, it isn't possible to subdivide the polygon prism into convex pieces\. An error will display in the Editor Console, as shown in the following example\. 
 
-![\[A complex polygon prism console error.\]](/images/component/physx/physx/ui-physx-shape-collider-C-1.24.png)
+![\[A complex polygon prism console error.\]](/images/userguide/component/physx/physx/ui-physx-shape-collider-C-1.24.png)
 
 ## Colliders as triggers<a name="colliders-as-triggers"></a>
 

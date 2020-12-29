@@ -6,7 +6,7 @@ title: Legacy Terrain &gem;
 
 The Legacy Terrain Gem enables the legacy terrain system in Lumberyard version 1\.24 or later\. With this gem, you can use the **Legacy Terrain** level component in the **Level Inspector** to add terrain to levels\. Levels that were created in Lumberyard versions before 1\.24 that use the legacy terrain system display a warning when they are loaded in Lumberyard version 1\.24 or later, and the new **Legacy Terrain** level component is automatically added to the level\. Newly created levels have the **Legacy Terrain** level component added by default\. 
 
-![\[The Legacy Terrain Gem for Lumberyard.\]](/images/gems/gem-icons/ui-legacy-terrain-gem-1.24.png)
+![\[The Legacy Terrain Gem for Lumberyard.\]](/images/userguide/gems/gem-icons/ui-legacy-terrain-gem-1.24.png)
 
 **Note**  
 In Lumberyard versions 1\.24 and later, the Legacy Terrain Gem is enabled by default for Lumberyard projects and is required to enable the legacy terrain system\.  
@@ -36,7 +36,7 @@ If you are **not** using the Legacy Terrain Gem, you can disable the terrain edi
      ```
      lmbr_waf show_option_dialog
      ```  
-![\[WAF build options for legacy terrain editor.\]](/images/gems/legacyterrain/ui-enable-legacy-terrain-editor-1.24.png)
+![\[WAF build options for legacy terrain editor.\]](/images/userguide/gems/legacyterrain/ui-enable-legacy-terrain-editor-1.24.png)
 
   1. Find the **enable\_legacy\_terrain\_editor** option in the **Build** tab and deselect the check box on the right to disable the terrain editor tools\. 
 

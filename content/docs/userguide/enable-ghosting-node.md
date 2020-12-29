@@ -13,11 +13,11 @@ To disable the effect, see [Disable Ghosting](disable-ghosting-node.md)\.
 + [Inputs](#enable-ghosting-note-input)
 + [Outputs](#enable-ghosting-node-output)
 
-![\[enableghosting, enableghostingnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-ghosting-node.png)
+![\[enableghosting, enableghostingnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-ghosting-node.png)
 
 **Example**  
 
-![\[Use the Enable Ghosting node to add blurriness as you move the camera.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-ghosting-node-example.gif)
+![\[Use the Enable Ghosting node to add blurriness as you move the camera.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-ghosting-node-example.gif)
 
 ## Inputs<a name="enable-ghosting-note-input"></a>
 

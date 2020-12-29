@@ -31,7 +31,7 @@ Each gem has an `Assets` directory that contains models, textures, scripts, and 
 
 The gem icon is a `.jpg`, `.png`, or `.gif` file\. The following example is the icon for the [Lightning Arc Gem](gems-system-gem-lightning-arc.md)\.
 
-![\[Icon file for the Lightning Arc gem.\]](/images/gem-icon-example.png)
+![\[Icon file for the Lightning Arc gem.\]](/images/userguide/gem-icon-example.png)
 
 ## Gem JSON File<a name="gem-json-file"></a>
 

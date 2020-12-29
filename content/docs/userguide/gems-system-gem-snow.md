@@ -17,7 +17,7 @@ The Snow Gem creates realistic snow effects in your levels, including snowflake 
 **Note**  
 Place only a single **Snow** entity in your scene\.
 
-![\[Image NOT FOUND\]](/images/gems/gems-system-gem-snow.png)
+![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-gem-snow.png)
 
 ## Placing Snow<a name="placing-snow"></a>
 
@@ -73,4 +73,4 @@ You can use the following console variables [console variables](console-intro.md
 
 The Snow Sample uses the Snow and Clouds gems to demonstrate how to use the Snow entity as an environment special effects in a level\. The Snow entity shows how snow falls and provides properties that you can set to randomly change the snow fall over time, creating a more dynamic weather experience\.
 
-![\[Image NOT FOUND\]](/images/shared-gem-sample-snow.gif)
+![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-snow.gif)

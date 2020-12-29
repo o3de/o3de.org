@@ -48,14 +48,14 @@ The basic setup for the **Video Playback Bink** component includes the following
 1. Use the [Entity Inspector](component-entity-inspector.md) to add a **[Mesh](component-static-mesh.md)** component to your entity\.
 
 1. For the **Mesh** component, select a **Mesh asset**\. This is the asset that your video renders on\. A cube or plane is a good test mesh\.  
-![\[Mesh component properties in Lumberyard Editor\]](/images/component/component-mesh-component-properties.png)
+![\[Mesh component properties in Lumberyard Editor\]](/images/userguide/component/component-mesh-component-properties.png)
 
 1. Add the **Video Playback Bink** component to the same entity\. 
 
 1.  In the **Video Playback Bink** component, for **Video**, select the video to display\. 
 
 1. For **Texture name**, enter dollar sign \($\) and a name for your texture\. You can enter any name, but it must begin with a $ character to indicate that it's a render target\. For example, **$videotest** is a valid name, but **videotest** isn't\.   
-![\[Video Playback Bink component properties in Lumberyard Editor\]](/images/component/component-videoplayback-bink-videoname.png)
+![\[Video Playback Bink component properties in Lumberyard Editor\]](/images/userguide/component/component-videoplayback-bink-videoname.png)
 
 1. For **Frame queue ahead count**, set the number of frames to buffer\.
 
@@ -66,13 +66,13 @@ The basic setup for the **Video Playback Bink** component includes the following
 1. Open the [Material Editor](mat-intro.md)\.
 
 1. To create a material\. click the**Add New Item** icon\. Enter a descriptive name, such as **myvideomaterial**\.  
-![\[Video Playback component material.\]](/images/component/component-videoplayback-material.png)
+![\[Video Playback component material.\]](/images/userguide/component/component-videoplayback-material.png)
 
 1. Under **Texture Maps**, on the **Diffuse** line, enter the name of your video component's **Texture name** field\. You must include the $ character\.  
-![\[Diffuse property for the texture name.\]](/images/component/component-videoplayback-diffuse.png)
+![\[Diffuse property for the texture name.\]](/images/userguide/component/component-videoplayback-diffuse.png)
 
 1. Close the **Material Editor** and return to the [Entity Inspector](component-entity-inspector.md)\. In the **Mesh** component, for the **Material override** property, select the material that you created\.  
-![\[Select the material override in the Mesh component.\]](/images/component/component-videoplayback-override.png)
+![\[Select the material override in the Mesh component.\]](/images/userguide/component/component-videoplayback-override.png)
 
  You can trigger the video to play at the start of your game using Lua scripting\.
 

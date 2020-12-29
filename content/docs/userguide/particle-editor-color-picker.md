@@ -14,7 +14,7 @@ Use the color picker to apply a color tint and alpha \(opacity\) to your particl
 1. In the **Libraries** panel, select an emitter\.
 
 1. In the **Attributes** panel, under **Particles**, click the color swatch for the **Color** parameter\.  
-![\[Image NOT FOUND\]](/images/particles/color-picker-1.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/color-picker-1.png)
 
 The **Color Picker** includes the following:
 
@@ -38,7 +38,7 @@ The **Color Picker** includes the following:
 
 Create a palette library to save your collection of custom colors\. You can create multiple palette libraries\.
 
-![\[Image NOT FOUND\]](/images/particles/color-picker-2.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/color-picker-2.png)
 
 Use the following actions in the palette library menu\.
 

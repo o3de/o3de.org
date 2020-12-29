@@ -13,11 +13,11 @@ To disable the effect, see [Disable Directional Blur](disable-directional-blur-n
 + [Inputs](#enable-directional-blur-note-input)
 + [Outputs](#enable-directional-blur-node-output)
 
-![\[enabledirectionalblur, directionalblurnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-directional-blur-node.png)
+![\[enabledirectionalblur, directionalblurnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-directional-blur-node.png)
 
 **Example**  
 
-![\[Use the Enable Directional Blur node to enable blur effects at a specific angle on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-directional-blur-node-example.png)
+![\[Use the Enable Directional Blur node to enable blur effects at a specific angle on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-directional-blur-node-example.png)
 
 ## Inputs<a name="enable-directional-blur-note-input"></a>
 

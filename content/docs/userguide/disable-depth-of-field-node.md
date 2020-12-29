@@ -13,7 +13,7 @@ To enable the effect, see [Enable Depth of Field](enable-depth-of-field-node.md)
 + [Inputs](#disable-depth-of-field-note-input)
 + [Outputs](#disable-depth-of-field-note-output)
 
-![\[disabledofnode, disabledof, disabledepthoffield\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-depth-of-field-node.png)
+![\[disabledofnode, disabledof, disabledepthoffield\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-depth-of-field-node.png)
 
 ## Inputs<a name="disable-depth-of-field-note-input"></a>
 

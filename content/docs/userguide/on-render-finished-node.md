@@ -12,11 +12,11 @@ You can use the node to detect when texture updates scheduled by the **[Render A
 **Contents**
 + [Outputs](#on-render-finished-node-output)
 
-![\[OnRenderFinished triggers when the procedural material render finishes.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node.png)
+![\[OnRenderFinished triggers when the procedural material render finishes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node.png)
 
 To verify that the render update is the event that you want, compare the **Render ID** values that the **[Render Asynchronous](render-asynchronous-node.md)** and **On Render Finished** nodes return\. You can use the **Equal To \(==\)** node, such as in the following example\.
 
-![\[Verify the Render ID for the Render Asynchronous and On Render Finished nodes.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node-2.png)
+![\[Verify the Render ID for the Render Asynchronous and On Render Finished nodes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node-2.png)
 
 ## Outputs<a name="on-render-finished-node-output"></a>
 

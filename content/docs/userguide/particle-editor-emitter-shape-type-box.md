@@ -10,11 +10,11 @@ The **Box** emitter enables spawning of particles along the shapes axial coordin
 
 The following is an example of the **Box** emitter in the **Preview** viewport\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-box-1.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-box-1.png)
 
 The following are parameters for the **Box** emitter\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-box-2.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-box-2.png)
 
 
 **Box Emitter Parameters**  

@@ -15,14 +15,14 @@ You can choose to generate dynamic slices at whatever granularity is appropriate
 **To create a dynamic slice**
 
 1. In the **Asset Browser**, right\-click a `.slice` asset and choose **Set Dynamic Slice**\.  
-![\[Set the dynamic slice in the Asset Browser.\]](/images/component/dynamic-slices-set-dynamic-flag.png)
+![\[Set the dynamic slice in the Asset Browser.\]](/images/userguide/component/dynamic-slices-set-dynamic-flag.png)
 
 1. Asset Processor processes the source `.slice` file and generates a `.dynamicslice` file\. In the **Asset Browser**, you can see the `.dynamicslice` file appears as its own asset\.  
-![\[A newly created dynamic slice appears in the Asset Browser.\]](/images/component/dynamic-slices-dynamic-flag-set.png)
+![\[A newly created dynamic slice appears in the Asset Browser.\]](/images/userguide/component/dynamic-slices-dynamic-flag-set.png)
 
 **To remove a dynamic slice**
 + In the **Asset Browser**, right\-click the dynamic file and choose **Unset Dynamic Slice**\.  
-![\[Set the dynamic slice in the Asset Browser.\]](/images/component/dynamic-slices-unset-dynamic-flag.png)
+![\[Set the dynamic slice in the Asset Browser.\]](/images/userguide/component/dynamic-slices-unset-dynamic-flag.png)
 
   Asset Processor deletes the `.dynamicslice` file from the asset cache\.
 

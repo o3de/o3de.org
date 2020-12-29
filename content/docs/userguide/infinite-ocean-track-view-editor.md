@@ -6,7 +6,7 @@ title: Infinite Ocean Component with the Track View Editor
 
 You can add the **Infinite Ocean** component to an entity sequence in the Track View\. This lets you control the component's parameters to be keyframes and changed along the timeline of the sequence\.
 
-![\[Configure the Infinite Ocean component in the Track View.\]](/images/component/infiniteocean/infinite-ocean-component-17.png)
+![\[Configure the Infinite Ocean component in the Track View.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-17.png)
 
 **Note**  
 Some **Infinite Ocean** component parameters are not available in the Track View\. The **Wind Speed** and **Wind Direction** parameters are not supported at this time\.

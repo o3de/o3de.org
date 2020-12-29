@@ -101,30 +101,30 @@ If the downloaded `.pak` file was updated correctly, then the problem might be o
 
 Because `DynamicContent` and `StaticData` are system components, they do not have to be added to the entity in the test level\. Since in most cases the dynamic content that Lumberyard loads would persist longer than any entity, the example here shows you how to use the `SystemComponent`\. The entity in this level contains only Lua script and test logic\.
 
-![\[DynamicContentTest Lua script\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-1.png)
+![\[DynamicContentTest Lua script\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-1.png)
 
 1\. In the script, the example connects to the EBus, loads the canvas, and waits for the button event\.
 
-![\[RequestManifest\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-2.png)
+![\[RequestManifest\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-2.png)
 
 When the button is pressed, the code requests the new manifest\. The content specified by the manifest is automatically retrieved\.
 
 2\. After the content is retrieved, a `NewPakContentReady` event fires\.
 
-![\[NewPakContentReady\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-3.png)
+![\[NewPakContentReady\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-3.png)
 
 In the test example, you already know that the `.pak` file contains game properties data\. In more complex implementations, you might need to query the contents of the file\.
 
 3\. The `UpdateGameProperties()` function requests that the static data system load the `.csv` file\.
 
-![\[UpdateGameProperties\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-4.png)
+![\[UpdateGameProperties\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-4.png)
 
 4\. The file load triggers the `TypeReloaded` event, which calls the `UpdateText()` function\.
 
-![\[UpdateText\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-5.png)
+![\[UpdateText\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-5.png)
 
 At this point, the user interface text has been updated with the new game property value\.
 
 5\. Because the example attached to the `SystemComponent`, and the sample might be running in the editor, the cleanup routine manually removes the dynamic content\.
 
-![\[Cleanup routine\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-6.png)
+![\[Cleanup routine\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-testing-6.png)

@@ -33,10 +33,10 @@ With Lumberyard Editor, you can add a Lambda function resource to the **CloudGem
 1. In Lumberyard Editor, choose **AWS**, **Cloud Canvas**, **Resource Manager**\.
 
 1. Under **Resource Groups**, select **CloudGemAWSScriptBehaviors**\.  
-![\[Select CloudGemAWSScriptBehaviors in Cloud Canvas Resource Manager.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-1.png)
+![\[Select CloudGemAWSScriptBehaviors in Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-1.png)
 
 1. Click **Add resource**, and then choose **Lambda function**\.  
-![\[Click Add resource, and then choose Lambda function in Cloud Canvas Resource Manager.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-2.png)
+![\[Click Add resource, and then choose Lambda function in Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-2.png)
 
 1. In the **Add a Lambda function** dialog box, specify the following values\.
    + **Name** – The name of the Lambda function\.
@@ -44,7 +44,7 @@ With Lumberyard Editor, you can add a Lambda function resource to the **CloudGem
 
       For more information about Lambda function handlers, see [Lambda Function Handler \(Python\)](https://docs.aws.amazon.com/lambda/latest/dg/python-programming-model-handler-types.html) in the *AWS Lambda Developer Guide*\.
    + **Player invokable** – Choose **Yes**\. This option gives the player the permission to invoke the Lambda function\.  
-![\[Add a Lambda function in the Cloud Canvas Resource Manager.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-3.png)
+![\[Add a Lambda function in the Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-3.png)
 
    These properties are added to the `resource-template.json` file in the `lumberyard_version\dev\Gems\CloudGemAWSScriptBehaviors\AWS` directory\.
 
@@ -67,12 +67,12 @@ After you add your Lambda function code to the `main.py` file, you are ready to 
 1. In Cloud Canvas Resource Manager, click **Upload resources** to upload your Lambda function to AWS\.
 
 1. In the **Upload group resources** dialog box, click **Yes** to approve any changes to security, if you agree\.  
-![\[Click Upload resources in the Cloud Canvas Resource Manager.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-4.png)
+![\[Click Upload resources in the Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-4.png)
 
    Cloud Canvas Resource Manager notifies you when the Lambda resources have been created in AWS\.  
-![\[Cloud Canvas Resource Manager shows that the Lambda function has been uploaded.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-5.png)
+![\[Cloud Canvas Resource Manager shows that the Lambda function has been uploaded.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-5.png)
 
    Now when you use **Node Inspector** to add an **AWSLambda Variable** node to a Script Canvas graph, your Lambda function becomes available in the **functionName** box\.  
-![\[Custom Lambda function available in the functionName box in the Script Canvas editor\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-6.png)
+![\[Custom Lambda function available in the functionName box in the Script Canvas editor\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-6.png)
 
 For more information, see [Invoking an AWS Lambda Function from Script Canvas](cloud-canvas-cloud-gem-aws-lambda-sc.md)\.

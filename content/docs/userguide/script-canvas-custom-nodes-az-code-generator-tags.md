@@ -84,4 +84,4 @@ ScriptCanvas_Property(float,
 
 In the **Script Canvas** editor, the node shows the **Time**, **Loop**, **Hold**, and **Elapsed** properties that were defined:
 
-![\[Properties on the Delay node\]](/images/scripting/script-canvas/script-canvas-custom-nodes-2.png)
+![\[Properties on the Delay node\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-2.png)

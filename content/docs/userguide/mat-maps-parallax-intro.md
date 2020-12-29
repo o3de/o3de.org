@@ -8,7 +8,7 @@ Parallax occlusion mapping \(POM\) is an enhancement of the traditional parallax
 
 Parallax occlusion mapping \(POM\) and offset bump mapping \(OBM\) are similar to displacement mapping and tessellation, but their computational requirements are not as demanding\. However, POM is not suitable in every situation\. Use POM only for high\-performance computers and OBM for devices such as consoles\. When you use POM, you must enable both shader generation parameters\. Lumberyard automatically defaults to OBM for setups that cannot run POM\.
 
-![\[Image NOT FOUND\]](/images/shared-parallax-example.gif)
+![\[Image NOT FOUND\]](/images/userguide/shared-parallax-example.gif)
 
 **Topics**
 + [Parallax Mapping Best Practices](mat-maps-parallax-best-practices.md)

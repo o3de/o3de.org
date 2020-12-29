@@ -11,7 +11,7 @@ Returns a material parameter as a numerical value\.
 + [Inputs](#material-get-param-number-node-input)
 + [Outputs](#material-get-param-number-node-output)
 
-![\[getparamnumber, getparamnumbernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-node.png)
+![\[getparamnumber, getparamnumbernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-node.png)
 
 ## Inputs<a name="material-get-param-number-node-input"></a>
 

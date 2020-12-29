@@ -6,7 +6,7 @@ title: '&animation-editor; File Types'
 
 When you import `.fbx` files from your DCC to Lumberyard Editor, Asset Processor creates files that you use in the **Animation Editor**\. The following example shows how the file types are created and modified\. For more information about processing files for character and animations, see [Customize FBX asset export with FBX Settings](fbx-intro.md)\.
 
-![\[See an overview of how Animation Editor files are created and processed in Lumberyard.\]](/images/actor-animation/animation-editor-asset-processor-files.png)
+![\[See an overview of how Animation Editor files are created and processed in Lumberyard.\]](/images/userguide/actor-animation/animation-editor-asset-processor-files.png)
 
 The following are file types used in the **Animation Editor**:
 

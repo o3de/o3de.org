@@ -12,13 +12,13 @@ Lumberyard makes it easy for you to add script functionality to your game entiti
 1. With the **Entity Inspector** view pane visible, select the entity in the viewport\.
 
 1. Click **Add Component**, and then open **Scripting**, **Lua Script**\.  
-![\[Click Add Component\]](/images/scripting/lua/lua-scripting-ces-1.png)
+![\[Click Add Component\]](/images/userguide/scripting/lua/lua-scripting-ces-1.png)
 
 1. Scroll down to the **Scripting** section, and then click **Lua Script**\.  
-![\[Click Lua Script\]](/images/scripting/lua/lua-scripting-ces-2.png)
+![\[Click Lua Script\]](/images/userguide/scripting/lua/lua-scripting-ces-2.png)
 
 1. A **Lua Script** component appears in the inspector\. Use the file selection button \(**\.\.\.**\) to select the Lua script from the file hierarchy that you want to use\.  
-![\[Lua Script component\]](/images/scripting/lua/lua-scripting-ces-3.png)
+![\[Lua Script component\]](/images/userguide/scripting/lua/lua-scripting-ces-3.png)
 
    You can select either a `.lua` file \(a text copy of the original\), or a `.luac` file \(a precompiled version of the script\)\. The functionality should be the same\. The precompiled version is preferable because it loads faster and is usually smaller\. However, you can use`.lua` files if you experience any issues\.
 

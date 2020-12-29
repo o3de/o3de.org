@@ -11,7 +11,7 @@ Sets the direction of the global wind\. The length of the **Wind Direction** vec
 + [Inputs](#set-wind-direction-node-input)
 + [Outputs](#set-wind-direction-node-output)
 
-![\[setwinddirectionnode, setwinddirection\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-wind-direction-node.png)
+![\[setwinddirectionnode, setwinddirection\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-wind-direction-node.png)
 
 ## Inputs<a name="set-wind-direction-node-input"></a>
 

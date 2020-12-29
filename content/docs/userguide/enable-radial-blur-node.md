@@ -13,11 +13,11 @@ To disable the effect, see [Disable Radial Blur](disable-radial-blur-node.md)\.
 + [Inputs](#enable-radial-blur-node-input)
 + [Outputs](#enable-radial-blur-node-output)
 
-![\[enableradialblurnode, enableradialblur\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-radial-blur-node.png)
+![\[enableradialblurnode, enableradialblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-radial-blur-node.png)
 
 **Example**  
 
-![\[Use the Enable Radial Blur node to add blur radius on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-radial-blur-node-example.png)
+![\[Use the Enable Radial Blur node to add blur radius on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-radial-blur-node-example.png)
 
 ## Inputs<a name="enable-radial-blur-node-input"></a>
 

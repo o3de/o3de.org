@@ -11,7 +11,7 @@ Sets the stretch factor, which affects how the skybox stretches vertically\. Str
 + [Inputs](#set-sky-box-stretch-input)
 + [Outputs](#set-sky-box-stretch-output)
 
-![\[sky box node, setskyboxstretch\]](/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-stretch.png)
+![\[sky box node, setskyboxstretch\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-stretch.png)
 
 ## Inputs<a name="set-sky-box-stretch-input"></a>
 

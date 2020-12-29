@@ -33,11 +33,11 @@ These events are illustrated in the following workflow diagrams\.
 
  **GameLift client\-server communication workflow using fleet or queues to create a game session\.**
 
-![\[GameLift client-server communication workflow using fleet or queues to create a game session.\]](/images/gems/game-lift-gem-workflow.png)
+![\[GameLift client-server communication workflow using fleet or queues to create a game session.\]](/images/userguide/gems/game-lift-gem-workflow.png)
 
  **GameLift client\-server communication workflow using FlexMatch, with automatic or custom backfill\.**
 
-![\[GameLift client-server communication workflow using FlexMatch, with automatic or custom backfill.\]](/images/gems/game-lift-gem-workflow-matchmaking.png)
+![\[GameLift client-server communication workflow using FlexMatch, with automatic or custom backfill.\]](/images/userguide/gems/game-lift-gem-workflow-matchmaking.png)
 
 ## Sample Code<a name="gems-system-gem-gamelift-sample-code"></a>
 

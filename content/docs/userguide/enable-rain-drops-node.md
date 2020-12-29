@@ -13,11 +13,11 @@ To disable the effect, see [Disable Rain Drops](disable-rain-drops-node.md)\.
 + [Inputs](#enable-rain-drops-note-input)
 + [Outputs](#enable-rain-drops-node-output)
 
-![\[enableraindrops, enableraindropsnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-rain-drops-node.png)
+![\[enableraindrops, enableraindropsnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-rain-drops-node.png)
 
 **Example**  
 
-![\[Use the Enable Rain Drops node to enable raindrops falling on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-rain-drops-node-example.gif)
+![\[Use the Enable Rain Drops node to enable raindrops falling on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-rain-drops-node-example.gif)
 
 ## Inputs<a name="enable-rain-drops-note-input"></a>
 

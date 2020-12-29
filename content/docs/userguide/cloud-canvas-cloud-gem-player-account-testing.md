@@ -21,55 +21,55 @@ To test the Player Account Cloud Gem, you can use the CloudGemSamples project th
 1. Press **Ctrl\+G** to start the game\.
 
 1. In the main menu of the sample, click **Create Account**\.  
-![\[Create account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-1.png)
+![\[Create account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-1.png)
 **Note**  
 If the **Create Account** option does not appear, click **Sign Out** and try again\. 
 
 1. Enter a user name, password, and an email account to which you have access\.  
-![\[Type test credentials\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-2.png)
+![\[Type test credentials\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-2.png)
 
 1. Click **Create**\.
 
 1. From the email account, copy the confirmation code that you receive\.
 
 1. In Lumberyard, paste the confirmation code into the **Verification Code** box, and then click **Verify**\.  
-![\[Verification code\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-3.png)
+![\[Verification code\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-3.png)
 
 1. Sign in using the password that you specified earlier\. This tests the custom authentication flow\.  
-![\[Sign in\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-4.png)
+![\[Sign in\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-4.png)
 
 1. Click **Manage Account**\.  
-![\[Manage account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-5.png)
+![\[Manage account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-5.png)
 
 1. Click **Edit Account**\.  
-![\[Edit account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-6.png)
+![\[Edit account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-6.png)
 
 1. Type in a name for **Player Name**, and then click **Save**\. This step tests the player service API\.  
-![\[Type a player name\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-7.png)
+![\[Type a player name\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-7.png)
 
    The main menu displays the player name that you specified\.  
-![\[Player name in main menu\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-8.png)
+![\[Player name in main menu\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-8.png)
 
 1. Press **ESC** to stop the game\.
 
 1. In Lumberyard Editor, click **AWS**, **Open Cloud Gem Portal**\.
 
 1. In the Cloud Gem Portal, choose the deployment that you are using for the test\.  
-![\[Choose deployment\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-9.png)
+![\[Choose deployment\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-9.png)
 
 1. Click **Player Account**\.  
-![\[Click Player Account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-10.png)
+![\[Click Player Account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-10.png)
 
 1. The gem displays the account that you created\.  
-![\[Click the account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-11.png)
+![\[Click the account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-11.png)
 
    Click the account so that you can edit its information\. These steps test the administrative service API\.
 
-1. In **Player Account Profile**, click the gear ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-settings-icon.png) icon to edit the player profile\.  
-![\[Click Edit\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-12.png)
+1. In **Player Account Profile**, click the gear ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-settings-icon.png) icon to edit the player profile\.  
+![\[Click Edit\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-12.png)
 
 1. Make a change to the player name, and then click **Save**\.  
-![\[Change the player name\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-13.png)
+![\[Change the player name\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-13.png)
 
 1. Verify the change in the profile for the player\.  
-![\[Verify change\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-14.png)
+![\[Verify change\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-testing-14.png)

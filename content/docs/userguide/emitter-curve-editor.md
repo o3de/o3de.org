@@ -7,7 +7,7 @@ title: Using the Curve Editor in the &particle-editor;
 
 Use the ****Curve Editor**** to edit the attribute values over the emitter and particle lifetimes\. **Strength Over Emitter Life** is active only if you have an emitter lifetime that is greater than zero\.
 
-![\[Curve Editor in the Particle Editor.\]](/images/particles/particle-editor-curves.png)
+![\[Curve Editor in the Particle Editor.\]](/images/userguide/particles/particle-editor-curves.png)
 
 **To edit the curves**
 

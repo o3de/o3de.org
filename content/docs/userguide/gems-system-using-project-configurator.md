@@ -13,14 +13,14 @@ You can enable gems using the Project Configurator or from a command line\. To e
 1. In the Project Configurator, select your active game project and choose **Set as default**\.
 
 1. Click **Enable Gems**\.  
-![\[Image NOT FOUND\]](/images/gems-system-gems-enable-gems.png)
+![\[Image NOT FOUND\]](/images/userguide/gems-system-gems-enable-gems.png)
 
 1. Select the gems that you want to enable\.  
-![\[Gems add assets and features to your game project in Lumberyard.\]](/images/gems-system-gems-select-gems.png)
+![\[Gems add assets and features to your game project in Lumberyard.\]](/images/userguide/gems-system-gems-select-gems.png)
 
 1. Click **Save**\.
 
 1. If you enabled gems labeled **CODE & ASSETS**, you must build your game project to make the gems available in Lumberyard Editor\. If you enabled only gems labeled **ASSETS ONLY**, you do not need to build your game project before opening it in Lumberyard Editor\. 
 
    For more information, see [Building Lumberyard projects](game-build-intro.md)\.  
-![\[Gems that include codes and assets require building your game project. Build your game project using the lmbr_waf build command to enable gems.\]](/images/gems-system-gems-assets-only.png)
+![\[Gems that include codes and assets require building your game project. Build your game project using the lmbr_waf build command to enable gems.\]](/images/userguide/gems-system-gems-assets-only.png)

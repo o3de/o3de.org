@@ -869,15 +869,15 @@ The spilled water volume behaves similarly to the source water volume and can si
 
 The following image shows water volume above a pool that does not allow spilling\.
 
-![\[Example Water Volume component with water that does not spill.\]](/images/component/water-volume-pool-no-spill.png)
+![\[Example Water Volume component with water that does not spill.\]](/images/userguide/component/water-volume-pool-no-spill.png)
 
 The following image shows the water volume spilling 100 units into the pool\.
 
-![\[Example Water Volume component with water spilling at 100 units into the pool.\]](/images/component/water-volume-pool-100-units-spill.png)
+![\[Example Water Volume component with water spilling at 100 units into the pool.\]](/images/userguide/component/water-volume-pool-100-units-spill.png)
 
 The following image shows the water volume spilling 1000 units into the pool\.
 
-![\[Example Water Volume component with water spilling at 1000 units into the pool.\]](/images/component/water-volume-pool-1000-units-spill.png)
+![\[Example Water Volume component with water spilling at 1000 units into the pool.\]](/images/userguide/component/water-volume-pool-1000-units-spill.png)
 
 ## Setting up Wave Simulation<a name="water-volume-setup-wave-simulation"></a>
 

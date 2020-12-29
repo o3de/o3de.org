@@ -21,4 +21,4 @@ For more information, see [Create and animate characters](char-intro.md)\.
 
 Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](configurator-projects.md#creating-a-game-project)\.
 
-![\[Image NOT FOUND\]](/images/gems/animation-editor-render-window.png)
+![\[Image NOT FOUND\]](/images/userguide/gems/animation-editor-render-window.png)

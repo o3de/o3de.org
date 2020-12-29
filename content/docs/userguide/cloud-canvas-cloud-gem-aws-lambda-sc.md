@@ -86,7 +86,7 @@ Next, to see the success or failure of the operation, you add **AWSLambdaHandler
 **Example**  
 
    Your graph should look similar to the following image\.  
-![\[Example Script Canvas graph that invokes a Lambda function\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-1.png)
+![\[Example Script Canvas graph that invokes a Lambda function\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-1.png)
 
 1. Save the file with a name like `MyLambdaFunctionTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

@@ -22,7 +22,7 @@ To enable the **Infinite Ocean** component, you must enable the Water gem\. For 
 
 **Example Infinite Ocean Component**  
 
-![\[Example Infinite Ocean component in Lumberyard.\]](/images/component/infiniteocean/infinite-ocean-component-1.png)
+![\[Example Infinite Ocean component in Lumberyard.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-1.png)
 
 Water rendering in real time is complex due to visual and physical contributing factors\. For example, light behaves differently when it moves from air into water\. Most sunlight reflects off the ocean, but a large amount also penetrates into the water, which absorbs light more strongly than air\. The visible light consists of a rainbow with different wavelengths, which appears as different colors\. 
 

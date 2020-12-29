@@ -13,11 +13,11 @@ To disable the effect, see [Disable Frost](disable-frost-node.md)\.
 + [Inputs](#enable-frost-note-input)
 + [Outputs](#enable-frost-node-output)
 
-![\[enablefrost, enablefrostnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-frost-node.png)
+![\[enablefrost, enablefrostnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-frost-node.png)
 
 **Example**  
 
-![\[Use the Enable Frost node to enable frost on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-frost-node-example.png)
+![\[Use the Enable Frost node to enable frost on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-frost-node-example.png)
 
 ## Inputs<a name="enable-frost-note-input"></a>
 

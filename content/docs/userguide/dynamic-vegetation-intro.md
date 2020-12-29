@@ -9,7 +9,7 @@ title: Dynamic vegetation
 
 For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 
-![\[Example of vegetation landscape that you can achieve by using dynamic vegetation.\]](/images/dynamic-vegetation-intro.png)
+![\[Example of vegetation landscape that you can achieve by using dynamic vegetation.\]](/images/userguide/dynamic-vegetation-intro.png)
 
 Using combinations of components from vegetation and other categories, you can do the following:
 + Create layers of background vegetation and specify local vegetation areas around environmental objects and points of interest such as buildings\.

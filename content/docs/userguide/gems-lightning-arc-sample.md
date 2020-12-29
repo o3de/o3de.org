@@ -6,7 +6,7 @@ title: Using the LightingArc Sample
 
 The LightningArc Sample uses the LightningArc gem to demonstrate the various prescripted arc types\.
 
-![\[Image NOT FOUND\]](/images/shared-gem-sample-lightning-arc-example-animation.gif)
+![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-lightning-arc-example-animation.gif)
 
 **Topics**
 + [Enabling the Lightning Gem](gems-system-gem-lightning-arc-enabling.md)

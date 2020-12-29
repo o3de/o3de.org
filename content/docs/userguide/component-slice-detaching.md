@@ -9,7 +9,7 @@ You can detach entities within a slice or detach the entire slice instance\.
 + When you detach a slice instance, the entities in the slice instance hierarchy no longer inherit changes from the former source slice\. Use this feature if you want this slice instance \(and all its child slices\) to become standalone entities\.
 + This option appears only when you are managing slice hierarchies for a slice instance\. 
 
-![\[Detach the selected entities or all entities in the slice instance.\]](/images/component/modify-slice-detaching-entities.png)
+![\[Detach the selected entities or all entities in the slice instance.\]](/images/userguide/component/modify-slice-detaching-entities.png)
 
 **To detach specific entities within a slice instance**
 

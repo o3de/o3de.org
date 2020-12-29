@@ -17,10 +17,10 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 1. In the navigation pane, select a resource group\.
 
 1. In the detail window, click **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.  
-![\[Import using ARN\]](/images/cloud_canvas/cloud-canvas-resource-importer-using-arn.png)
+![\[Import using ARN\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-using-arn.png)
 
 1. In the **Import using ARN** dialog box, provide the ARN and name of the resource that you are going to import\. Both are required\.  
-![\[Provide the resource name and ARN\]](/images/cloud_canvas/cloud-canvas-resource-importer-using-arn-dialog-box.png)
+![\[Provide the resource name and ARN\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-using-arn-dialog-box.png)
 
    After you have provided both items of information, the **Import** button is enabled\.
 
@@ -33,26 +33,26 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 1. In the navigation pane, select a resource group\.
 
 1. In the detail window, choose **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.  
-![\[Import from list\]](/images/cloud_canvas/cloud-canvas-resource-importer-from-list-dialog-box.png)
+![\[Import from list\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-from-list-dialog-box.png)
 
 1. In the **Import from list** dialog box, choose the AWS Region of the resource for **Region**\. The default value is the region of the project stack if it exists\. Resources start loading in the list as soon as you choose a region that has importable resources\.  
-![\[Choose AWS Region\]](/images/cloud_canvas/cloud-canvas-resource-importer-region-selector.png)
+![\[Choose AWS Region\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-region-selector.png)
 
 1. You can use the AWS service selector to filter the resources by service, and then use the **Search** box to filter resources by name\.  
-![\[Filter by AWS service and resource name\]](/images/cloud_canvas/cloud-canvas-resource-importer-filter-by-name-and-ddb.png)
+![\[Filter by AWS service and resource name\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-filter-by-name-and-ddb.png)
 
 1. Select the check box to the left of each resource that you want to import\.  
-![\[Choose the resources to import\]](/images/cloud_canvas/cloud-canvas-resource-importer-choose-resources.png)
+![\[Choose the resources to import\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-choose-resources.png)
 
 1.  **Configure**\.
 
 1. In the **Configuration** dialog box, provide a reference name for each resource, or accept the default\. The default name is the original name of the resource on AWS\.
 
 1. To delete a selected resource from the list, open the context \(right\-click\) menu for the resource and choose **Delete**\.  
-![\[Delete a resource\]](/images/cloud_canvas/cloud-canvas-resource-importer-delete-selected-resource.png)
+![\[Delete a resource\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-delete-selected-resource.png)
 
 1. When you are ready, click **Import**\. A progress bar displays\. An **Import Error** message informs you of any errors that occur\.  
-![\[Import progress\]](/images/cloud_canvas/cloud-canvas-resource-importer-progress.png)
+![\[Import progress\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-progress.png)
 
 1. Click **X** to close the **Import from list dialog** box\. The resources that you imported are listed in the details pane of Cloud Canvas Resource Manager\.
 

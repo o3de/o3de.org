@@ -11,7 +11,7 @@ Triggers recalculation of cached shadow maps\.
 + [Inputs](#recompute-static-shadows-node-inputs)
 + [Outputs](#recompute-static-shadows-node-outputs)
 
-![\[recompute static shadows, recomputestaticshadows\]](/images/scripting/script-canvas/scriptcanvasnodes/shadows-recompute-static-shadow.png)
+![\[recompute static shadows, recomputestaticshadows\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/shadows-recompute-static-shadow.png)
 
 ## Inputs<a name="recompute-static-shadows-node-inputs"></a>
 

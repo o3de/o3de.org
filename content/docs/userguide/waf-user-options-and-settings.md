@@ -103,7 +103,7 @@ The settings listed can be modified in the file directly, or through the **Lumbe
 lmbr_waf show_option_dialog
 ```
 
-![\[Waf settings dialog box.\]](/images/waf/waf-settings-dialog.png)
+![\[Waf settings dialog box.\]](/images/userguide/waf/waf-settings-dialog.png)
 
 The tables in the following sections describe the options available for override in the `user_settings.options` file\. To override any setting, you can use the **Override Parameter** for the attribute\. For more information, see [Overriding user\_settings\.options Changes](#waf-user-options-and-settings-user-settings-options-file-overriding)\.
 

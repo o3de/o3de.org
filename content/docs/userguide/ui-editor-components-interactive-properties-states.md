@@ -19,7 +19,7 @@ The **state actions**—**Color**, **Alpha**, **Sprite**, and **Font**—each ha
 
 For example, the button [prefab](ui-editor-prefabs.md) has a top element named **Button** that has a visual component to define its color\. It also has a child element with a text component to define the text \(and its color\) of the button\. The top element \(**Button**\) also has the **Interactable** component\. The **Target** for the **color** state action can override either the **Button** element's color or the **Text** element's color, depending on what you select from the list\.
 
-![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-interactive-states.png)
+![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-interactive-states.png)
 
 When you first add an interactive component to an element, no **state actions** are added by default\. You must add state actions to the states that you want to use and modify\.
 
@@ -30,7 +30,7 @@ In the [**UI Editor**](ui-editor-using.md), in the **Properties** pane, under th
 1. Under **Interactable**, **States**, click **Add new element** \(green **\+**\)\.
 
 1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**\.  
-![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-interactive-stateactions.png)
+![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-interactive-stateactions.png)
 
 **To delete a state action**
 + Click **Remove element** \(red x\) next to the state action that you want to delete\.

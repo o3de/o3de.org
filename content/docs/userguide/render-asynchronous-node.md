@@ -23,7 +23,7 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 + [Inputs](#render-asynchronous-node-input)
 + [Outputs](#render-asynchronous-node-output)
 
-![\[RenderAsynchronous node schedule updates for pending changes for a procedural material.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-asynchronous-node.png)
+![\[RenderAsynchronous node schedule updates for pending changes for a procedural material.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-asynchronous-node.png)
 
 ## Inputs<a name="render-asynchronous-node-input"></a>
 

@@ -14,7 +14,7 @@ By default, **Faster Scanning Mode** is enabled\. You can enable or disable this
 1. Open [Asset Processor](asset-pipeline-processor.md)\.
 
 1. Select **Tools** and clear **Faster Scanning Mode**\.   
-![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/asset_processor/faster-scanning.png)
+![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/userguide/asset_processor/faster-scanning.png)
 
 **To perform a full scan**
 + Click **Start Scan**\. This starts a full scan immediately, which checks for files missing from the cache and rebuilds the appropriate source files\.

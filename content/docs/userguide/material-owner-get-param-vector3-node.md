@@ -11,7 +11,7 @@ Returns a material's **Vector3** parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-vector3-node-input)
 + [Outputs](#material-owner-get-param-vector3-node-output)
 
-![\[getparamvector3node, getparamvector3\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-material-owner-node.png)
+![\[getparamvector3node, getparamvector3\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-vector3-node-input"></a>
 

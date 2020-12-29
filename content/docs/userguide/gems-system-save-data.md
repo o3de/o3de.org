@@ -7,7 +7,7 @@ title: SaveData Gem
 
 The SaveData gem encapsulates all the functionality in Lumberyard for saving game and individual user data under a single platform\-agnostic set of API operations\.
 
-![\[The SaveData gem in Project Configurator.\]](/images/gems-system-save-data-1.png)
+![\[The SaveData gem in Project Configurator.\]](/images/userguide/gems-system-save-data-1.png)
 
 To enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 

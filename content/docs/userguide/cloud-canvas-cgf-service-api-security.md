@@ -28,7 +28,7 @@ Configuring access control for a service API involves setting three distinct set
 
 In all three cases, you use the [Cloud Canvas Resource Manager Security](cloud-canvas-rm-security.md) system to configure access\. This involves putting `Permissions` metadata on the `ServiceApi` and `ServiceLambda` resource definitions, as well as on the definitions of resources accessed by the `ServiceLambda` code\. This is illustrated in the following diagram:
 
-![\[Configuring access control\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-3.png)
+![\[Configuring access control\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-3.png)
 
 The permissions granted by `ServiceApi` are described in detail in the next section\. `ServiceLambda` gives `ServiceApi` permission to invoke the Lambda function\. Other resources give `ServiceLambda` the permissions that the Lambda function requires\.
 

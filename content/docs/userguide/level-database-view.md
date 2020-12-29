@@ -25,4 +25,4 @@ Using the **Database View** editor's toolbar, you can load, save, or add new lib
 
 The item browser pane \(A\) shows the groups and items that are available in the current library\. The properties pane \(B\) displays the properties of the item selected in the item browser\. Some tabs also feature a preview pane \(C\)\.
 
-![\[Image NOT FOUND\]](/images/level-database-view.png)
+![\[Image NOT FOUND\]](/images/userguide/level-database-view.png)

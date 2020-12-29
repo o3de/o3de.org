@@ -15,12 +15,12 @@ To disable the effect, see [Disable Color Correction](disable-color-correction-n
 + [Inputs](#enable-color-correction-node-input)
 + [Outputs](#enable-color-correction-node-output)
 
-![\[enableeffectcorrection\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-color-correction-node.png)
+![\[enableeffectcorrection\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-color-correction-node.png)
 
 **Example**  
 In the following example, the **Saturation** value is `2.0`\.  
 
-![\[Use the Enable Color Correction node to change colors for your screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-color-correcton-node-example.png)
+![\[Use the Enable Color Correction node to change colors for your screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-color-correcton-node-example.png)
 
 ## Inputs<a name="enable-color-correction-node-input"></a>
 

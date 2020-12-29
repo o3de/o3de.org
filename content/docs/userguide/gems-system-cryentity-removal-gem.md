@@ -15,7 +15,7 @@ When the gem is enabled, Lumberyard Editor displays only the features and tools 
 
 By default, the gem is disabled\. For more information about enabling gems, see [Add modular features and assets with Gems](gems-system-gems.md)\.
 
-![\[The CryEntity Removal gem disables all legacy features and tools in Lumberyard Editor.\]](/images/gems/gems-system-cryentity-removal-gem.png)
+![\[The CryEntity Removal gem disables all legacy features and tools in Lumberyard Editor.\]](/images/userguide/gems/gems-system-cryentity-removal-gem.png)
 
 **Note**  
 When you enable the gem and open Lumberyard Editor, you are prompted to convert your legacy entities \(CryEntities\) to the new component entity system\. Once an entity is converted, it cannot be converted back to a legacy entity\. For more information about converting your entities, see [Converting Entities with the Legacy Converter](component-entity-data-converter.md)\. 

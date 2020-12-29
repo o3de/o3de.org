@@ -19,7 +19,7 @@ For information on using the **Blast Family Mesh Data** component see [Simulated
 
 ## Blast Family Mesh Data component properties<a name="component-blast-family-mesh-data-properties"></a>
 
-![\[Properties of the Blast Family Mesh Data component\]](/images/physx/blast/ui-blast-family-mesh-data-component-1.27.png)
+![\[Properties of the Blast Family Mesh Data component\]](/images/userguide/physx/blast/ui-blast-family-mesh-data-component-1.27.png)
 
 **Show mesh assets**  
 When enabled, you can manually add mesh assets to this **Blast Family Mesh Data** component\.  

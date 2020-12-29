@@ -35,4 +35,4 @@ To use the Speech Recognition Cloud Gem Portal, you must meet the following requ
 
 To open the Speech Recognition Cloud Gem, choose **Speech Recognition** on the Cloud Gem Portal **Cloud Gems** page\.
 
-![\[Choose Speech Recognition\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-1.png)
+![\[Choose Speech Recognition\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-1.png)

@@ -17,7 +17,7 @@ Use the **Particle Editor** to create, edit, preview, and save particle librarie
 **To open the Particle Editor**
 + In Lumberyard Editor, choose **Tools**, **Particle Editor**\. You can also click the particle editor icon in the Lumberyard Editor toolbar\.
 
-![\[Particle Editor interface\]](/images/particles/particle-editor.png)
+![\[Particle Editor interface\]](/images/userguide/particles/particle-editor.png)
 
 The **Particle Editor** includes the following UI elements:
 + **Libraries** panel – Lists the particle art assets\. You can view and interact with multiple libraries simultaneously\.

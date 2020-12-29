@@ -14,7 +14,7 @@ After you complete the [Prerequisites](cloud-canvas-metrics-gem.md#cloud-canvas-
 1. In Lumberyard Editor, choose **File**, **Open**, select **MetricsSample**, and then click **Open**\.
 
 1. Press **Ctrl\+G** to enter game mode\.  
-![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-metrics-sample-level.png)
+![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-metrics-sample-level.png)
 
 1. To move forward, strafe left, move backward, and strafe right, press the **W**, **A**, **S**, and **D** keys, respectively\. 
 

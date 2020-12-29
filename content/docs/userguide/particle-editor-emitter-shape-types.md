@@ -23,7 +23,7 @@ The Particle Editor provides emitter shape types that you can use to achieve a v
    + **Point**
    + **Sphere**
    + **Trail**  
-![\[Image NOT FOUND\]](/images/particles/particle-editor-emitter-shape-types.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-editor-emitter-shape-types.png)
 
 Most emitters have CPU and GPU particle types\. Each emitter's velocity functions on either world or shape axial coordinates, based on type\. To view the shape XYZ coordinates, right\-click the **Preview** viewport and choose **Show Emitter Shape**\.
 

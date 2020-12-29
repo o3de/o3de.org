@@ -38,10 +38,10 @@ If you instantiate a slice for a track view sequence, ensure that parent entitie
 **Example : Animate Child Entities in a Slice**  
 The **Entity Outliner** shows two **Parent** slices, which have two children entities and a track view sequence\.  
 
-![\[Example slice that has a track view sequence, which has been instantiated.\]](/images/cinematics/cinematics-slice-example-1.png)
+![\[Example slice that has a track view sequence, which has been instantiated.\]](/images/userguide/cinematics/cinematics-slice-example-1.png)
 In the Track View, the **ExampleSequence** animates only the two children entities in the slice\. The **Parent** entity cannot be animated in a slice\.   
 
-![\[Example track view sequence that animates child slices, not the parent.\]](/images/cinematics/cinematics-slice-example-2.png)
+![\[Example track view sequence that animates child slices, not the parent.\]](/images/userguide/cinematics/cinematics-slice-example-2.png)
 
 **Note**  
 The **[Transform](component-transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 

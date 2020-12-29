@@ -18,7 +18,7 @@ The Game Metrics cloud gem is only supported in regions where FIFO is supported\
 **Example Overview**  
 The following illustrates how AWS services process game events so that you can view them in the Cloud Gem Portal\.  
 
-![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-gem-metrics-work-flow-with-aws-services-example.png)
+![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-gem-metrics-work-flow-with-aws-services-example.png)
 
 When events are generated from your game, the following occurs:
 

@@ -127,7 +127,7 @@ The final step is to update enabled\_game\_projects to include or exclusively se
   ```
 
   Click **Game Projects** in the Lumberyard Waf window, and select your new project\. You can select more than one project\.  
-![\[Use the Lumberyard WAF GUI to select your new project.\]](/images/waf/waf-using-game-project-waf-gui.png)
+![\[Use the Lumberyard WAF GUI to select your new project.\]](/images/userguide/waf/waf-using-game-project-waf-gui.png)
 + Build the project with the following command for your version of Visual Studio\. Use `--enabled-game-projects=MyGame` to override every build command\. This does not include the project in the generated solution, but it sets specific game projects to build during the build commands\.
 
   ```

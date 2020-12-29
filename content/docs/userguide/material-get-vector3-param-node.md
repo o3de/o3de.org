@@ -11,7 +11,7 @@ Returns a material parameter as a **Vector3** value\.
 + [Inputs](#material-get-vector3-param-node-input)
 + [Outputs](#material-get-vector3-param-node-output)
 
-![\[getparamvector3, getvector3param, getparamvector3node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-node.png)
+![\[getparamvector3, getvector3param, getparamvector3node\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-node.png)
 
 ## Inputs<a name="material-get-vector3-param-node-input"></a>
 

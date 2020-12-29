@@ -24,11 +24,11 @@ For more information about installing the project that includes the VR Islands l
 
 The VR Islands level is created with the `instantvr` entity, which has the following components:
 + **[Lua Script](component-lua-script.md)** – This component uses the `instantvr.lua` script for VR device tracking and teleportation functionality\. You can find the script in the `lumberyard_version\dev\VirtualRealityProject\Scripts\vr` directory\.  
-![\[Lua Script component that shows the properties for the instantvr entity.\]](/images/instantvr-lua-script-component-example.png)
+![\[Lua Script component that shows the properties for the instantvr entity.\]](/images/userguide/instantvr-lua-script-component-example.png)
 + **[VR Preview](component-vrpreview-component.md)** – This component automatically generates a 50x50 meter navigation area, and a navigation mesh within the navigation area\. The navigation mesh is required for the `instantvr.lua` script to detect valid teleportation locations\. 
 **Note**  
 You must select the **Static** check box on the **[Transform](component-transform.md)** component for all entities in the navigation area\. This ensures that the navigation mesh generates correctly\. The **Static** check box is cleared by default\.  
-![\[Example of the navigation mesh and the navigation area for the instantvr entity.\]](/images/instantvr-navigation-area-navigation-mesh-example.png)
+![\[Example of the navigation mesh and the navigation area for the instantvr entity.\]](/images/userguide/instantvr-navigation-area-navigation-mesh-example.png)
 
 ## Using the HideOcean Entity<a name="sample-level-vr-islands-using-hideocean-entity"></a>
 

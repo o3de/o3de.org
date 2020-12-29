@@ -26,6 +26,6 @@ To ensure that the Beach City project launches, you must use **Lumberyard Setup 
 
 Sample images from the Beach City sample project:
 
-![\[Image NOT FOUND\]](/images/samples-beachcity-1.png)
+![\[Image NOT FOUND\]](/images/userguide/samples-beachcity-1.png)
 
-![\[Image NOT FOUND\]](/images/samples-beachcity-2.png)
+![\[Image NOT FOUND\]](/images/userguide/samples-beachcity-2.png)

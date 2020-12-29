@@ -7,7 +7,7 @@ title: Collision Attribute
 
 In the **Collision** attribute, specify how to control the particle's physical setup\.
 
-![\[Collision attributes in the Particle Editor.\]](/images/particles/particle-editor-collision.png)
+![\[Collision attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-collision.png)
 
 
 **CPU Collision Attribute Parameters**  
@@ -28,7 +28,7 @@ In the **Collision** attribute, specify how to control the particle's physical s
 | Thickness | Controls the fraction of the particle's visible radius to use for the physical radius\. This affects particles that have Physics Type set to Simple Physics and geometry particles that have Physics Type set to Simple Collision\. Valid values: `0+`Default value: `1` | 
 | Density | Controls the particle density in kg/m^3\. An example of a physically correct value is Water = 1000\. This affects only particles that have Physics Type set to Simple Physics or Rigid Body\. Valid values: `0+`Default value: `1000`  | 
 
-![\[Collision attributes for GPU in the Particle Editor.\]](/images/particles/particle-editor-collision-gpu.png)
+![\[Collision attributes for GPU in the Particle Editor.\]](/images/userguide/particles/particle-editor-collision-gpu.png)
 
 
 **GPU Collision Attribute Parameters**  

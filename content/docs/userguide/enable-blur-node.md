@@ -13,11 +13,11 @@ To disable the effect, see [Disable Blur](disable-blur-node.md)\.
 + [Inputs](#enable-blur-node-input)
 + [Outputs](#enable-blur-node-output)
 
-![\[enablefilterblurnode, enablefilterblur\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-blur-node.png)
+![\[enablefilterblurnode, enablefilterblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-blur-node.png)
 
 **Example**  
 
-![\[Use the Enable Blur node to blur the screen for your game.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-blur-node-example.png)
+![\[Use the Enable Blur node to blur the screen for your game.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-blur-node-example.png)
 
 ## Inputs<a name="enable-blur-node-input"></a>
 

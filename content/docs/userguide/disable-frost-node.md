@@ -13,7 +13,7 @@ To enable the effect, see [Enable Frost](enable-frost-node.md)\.
 + [Inputs](#disable-frost-note-input)
 + [Outputs](#disable-frost-node-output)
 
-![\[disablefrost, disablefrostnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-frost-node.png)
+![\[disablefrost, disablefrostnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-frost-node.png)
 
 ## Inputs<a name="disable-frost-note-input"></a>
 

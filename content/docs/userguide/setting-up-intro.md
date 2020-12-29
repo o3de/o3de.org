@@ -14,7 +14,7 @@ To create and build new projects, or add gems to existing projects, either selec
 
 After Lumberyard is installed, use Project Configurator to select a project or create a new project\. The following sections detail the minimum requirements for Lumberyard and guide you through the installation process\.
 
-![\[Flow chart of the Amazon Lumberyard installation process.\]](/images/lumberyard-install-flow-chart.png)
+![\[Flow chart of the Amazon Lumberyard installation process.\]](/images/userguide/lumberyard-install-flow-chart.png)
 
 **Topics**
 + [System requirements](setting-up-system-requirements.md)

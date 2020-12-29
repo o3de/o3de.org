@@ -70,10 +70,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    The `1` argument specifies that missing files are reported as log entries rather than warnings or errors\.
 
 1. Enter game mode\. A list of Missing from bundle errors displays\.  
-![\[Missing from bundle errors in the console window.\]](/images/assetbundler/asset-bundler-bundle-mode-1.png)
+![\[Missing from bundle errors in the console window.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-1.png)
 
 1. Enter the command `loadbundles` to load bundles for the level\.  
-![\[Using the loadbundles command.\]](/images/assetbundler/asset-bundler-bundle-mode-2.png)
+![\[Using the loadbundles command.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-2.png)
 
    There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](asset-bundler-asset-validation-gem.md) seed\-related commands can help find the missing assets\.
 
@@ -84,10 +84,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `listknownassets` command\.  
-![\[Listing known assets in the console.\]](/images/assetbundler/asset-bundler-bundle-mode-3.png)
+![\[Listing known assets in the console.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-3.png)
 
 1. Examine the output\. In the following example, the output shows missing button assets\.  
-![\[Identifying missing assets in the output.\]](/images/assetbundler/asset-bundler-bundle-mode-4.png)
+![\[Identifying missing assets in the output.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-4.png)
 
    In the case of the button assets, the bundle was packaged a while ago and must be repackaged\. However, other assets are also still missing\.
 
@@ -144,6 +144,6 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.  
-![\[All loaded assets are now in bundles.\]](/images/assetbundler/asset-bundler-bundle-mode-5.png)
+![\[All loaded assets are now in bundles.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-5.png)
 
    All the assets loaded when game mode was entered are now in bundles\.

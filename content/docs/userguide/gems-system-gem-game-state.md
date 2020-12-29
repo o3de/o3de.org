@@ -6,7 +6,7 @@ title: GameState Gem
 
 The GameState gem helps you manage and determine, at a high level, the state that the game is in\. Because the GameState gem uses a stack to manage game states, returning to a previous state is straightforward\.
 
-![\[The GameState gem in Project Configurator.\]](/images/gems/gems-system-gem-game-state-1.png)
+![\[The GameState gem in Project Configurator.\]](/images/userguide/gems/gems-system-gem-game-state-1.png)
 
 For information about sample game states and enabling the GameState Samples gem, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 

@@ -7,7 +7,7 @@ title: Advanced Attribute
 
 In the **Advanced** attribute, specify advanced appearance and optimization settings\.
 
-![\[Advanced attributes in the Particle Editor.\]](/images/particles/particle-editor-advanced.png)
+![\[Advanced attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-advanced.png)
 
 
 **Advanced Attribute Parameters**  

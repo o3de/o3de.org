@@ -25,7 +25,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 ## PhysX Ragdoll Component Properties<a name="physx-ragdoll-component-properties"></a>
 
-![\[PhysX Ragdoll component properties.\]](/images/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
+![\[PhysX Ragdoll component properties.\]](/images/userguide/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
 
 
 ****  

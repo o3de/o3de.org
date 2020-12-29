@@ -45,4 +45,4 @@ In Lumberyard, every entity has a unique ID so that it can be referenced in the 
 
 The following diagram shows how the net binding system binds an entity to the network and spawns an entity\. It does this with the same ID that it binds to a proxy replica\.
 
-![\[GirdMate network binding system\]](/images/networking/net-binding-system.png)
+![\[GirdMate network binding system\]](/images/userguide/networking/net-binding-system.png)

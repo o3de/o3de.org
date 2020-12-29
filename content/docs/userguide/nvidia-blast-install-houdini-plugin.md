@@ -75,4 +75,4 @@ The NVIDIA Blast installation for Houdini includes a tool shelf that you can ena
 
 1. From the **Shelf list** choose **Fracture tools for Blast** to add the shelf to the **Toolbar**\. 
 
-![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/physx/blast/ui-blast-houdini-shelf-enable.png)
+![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/userguide/physx/blast/ui-blast-houdini-shelf-enable.png)

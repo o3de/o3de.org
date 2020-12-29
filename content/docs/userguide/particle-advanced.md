@@ -29,7 +29,7 @@ Do the following to emit particles from the parent geometry\.
 
    The child's particles spawn from the mesh of its parent\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-editor-advanced.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-editor-advanced.png)
 
 **Note**  
 Use any **Attach Type** and **AttachForm** for the intended effect\.

@@ -9,7 +9,7 @@ The **Angle** emitter spawns particles in a directional pattern based on the par
 
 The following are parameters for the **Angle** emitter \(CPU\)\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-angle.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-angle.png)
 
 
 **Angle Emitter Parameters for CPU Attributes**  
@@ -27,7 +27,7 @@ The following are parameters for the **Angle** emitter \(CPU\)\.
 
 The following are parameters for the **Angle** emitter \(GPU\)\. 
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-angle-2.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-angle-2.png)
 
 
 **Angle Emitter Parameters for GPU Attributes**  

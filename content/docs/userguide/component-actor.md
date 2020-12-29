@@ -24,7 +24,7 @@ For the **Actor** component to work properly, you must also add one of the follo
 
 ## Actor Component Properties<a name="component-actor-properties"></a>
 
-![\[Actor component properties.\]](/images/component/actor_component_properties.png)
+![\[Actor component properties.\]](/images/userguide/component/actor_component_properties.png)
 
 The **Actor** component has the following properties\.
 

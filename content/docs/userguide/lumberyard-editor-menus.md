@@ -13,7 +13,7 @@ title: Using the Menu Bar
 
 The main menu bar in Lumberyard Editor provides access to the features and tools to design, run, and deploy your game, as well as, work with external tools and find online information\. To access the available features and tools, you can use the menu, the buttons on the toolbars, or the keyboard\. You can pause on the buttons to see tool tips\. Some editors and tools have keyboard shortcuts\. For a comprehensive list, see [Using Keyboard Shortcuts](lumberyard-editor-shortcut-keys.md)\.
 
-![\[Lumberyard Editor main menu bar.\]](/images/lumberyard-editor-menu-bar.png)
+![\[Lumberyard Editor main menu bar.\]](/images/userguide/lumberyard-editor-menu-bar.png)
 
 The main menu bar has the following categories of features and functionality\.
 
@@ -33,7 +33,7 @@ The main menu bar has the following categories of features and functionality\.
 
 In the **File** menu, you can manage your game project such as opening and saving level files, show a log file, and modify your project's settings\.
 
-![\[Lumberyard Editor File menu\]](/images/lumberyard-editor-file-menu.png)
+![\[Lumberyard Editor File menu\]](/images/userguide/lumberyard-editor-file-menu.png)
 
 
 ****  
@@ -57,7 +57,7 @@ In the **File** menu, you can manage your game project such as opening and savin
 
 In the **Edit** menu, you can select and manipulate objects, such as undo and redo actions, and select and hide objects\.
 
-![\[Lumberyard Editor edit menu\]](/images/lumberyard-editor-menus-edit.png)
+![\[Lumberyard Editor edit menu\]](/images/userguide/lumberyard-editor-menus-edit.png)
 
 
 ****  
@@ -88,7 +88,7 @@ In the **Edit** menu, you can select and manipulate objects, such as undo and re
 
 In the **Group** menu, you can apply changes to multiple objects as a set, such as grouping and ungrouping objects\.
 
-![\[Lumberyard Editor Group submenu of the Edit menu.\]](/images/lumberyard-menusedit-group.png)
+![\[Lumberyard Editor Group submenu of the Edit menu.\]](/images/userguide/lumberyard-menusedit-group.png)
 
 
 ****  
@@ -107,7 +107,7 @@ In the **Group** menu, you can apply changes to multiple objects as a set, such 
 
 In the **Modify** menu, you can manipulate attributes and properties of objects and entities, such as height, alignment, and material\.
 
-![\[Lumberyard Editor Modify submenu of the Edit menu\]](/images/lumberyard-menusedit-modify.png)
+![\[Lumberyard Editor Modify submenu of the Edit menu\]](/images/userguide/lumberyard-menusedit-modify.png)
 
 
 ****  
@@ -131,7 +131,7 @@ In the **Modify** menu, you can manipulate attributes and properties of objects 
 
 In the **Editor Settings** menu, you can customize your editing experience\.
 
-![\[Lumberyard Editor Editor Settings of the Edit menu\]](/images/lumberyard-menusedit-config.png)
+![\[Lumberyard Editor Editor Settings of the Edit menu\]](/images/userguide/lumberyard-menusedit-config.png)
 
 
 ****  
@@ -146,7 +146,7 @@ In the **Editor Settings** menu, you can customize your editing experience\.
 
 In the **Game** menu, you can add and test enhancements to your game project\.
 
-![\[Lumberyard Editor Game menu\]](/images/lumberyard-editor-menus-game.png)
+![\[Lumberyard Editor Game menu\]](/images/userguide/lumberyard-editor-menus-game.png)
 
 
 ****  
@@ -173,7 +173,7 @@ In the **Game** menu, you can add and test enhancements to your game project\.
 
 In the **AI** menu, you can manage AI settings such as generating AI navigation and updating the AI system within a level\. For more information, see the **[Navigation Area](component-nav-area.md)** component\.
 
-![\[Lumberyard Editor Artificial Intelligence (AI) submenu of the Game menu\]](/images/lumberyard-menusgame-ai.png)
+![\[Lumberyard Editor Artificial Intelligence (AI) submenu of the Game menu\]](/images/userguide/lumberyard-menusgame-ai.png)
 
 
 ****  
@@ -204,7 +204,7 @@ In the **AI** menu, you can manage AI settings such as generating AI navigation 
 
 In the **Audio** menu, you can stop all sounds or refresh the audio\.
 
-![\[Lumberyard Editor Audio submenu of the Game menu\]](/images/lumberyard-editor-menusgame-audio.png)
+![\[Lumberyard Editor Audio submenu of the Game menu\]](/images/userguide/lumberyard-editor-menusgame-audio.png)
 
 
 ****  
@@ -218,7 +218,7 @@ In the **Audio** menu, you can stop all sounds or refresh the audio\.
 
 In the **Clouds** menu, you can create, open, close, and delete your custom cloud assets\. The project must have the [Sky Clouds Gem](gems-system-gem-cloud.md) enabled\. For more information, see [Sky Clouds Gem](gems-system-gem-cloud.md)\. 
 
-![\[Lumberyard Editor Clouds submenu of the Game menu with Sky Clouds gem enabled.\]](/images/lumberyard-menusgame-clouds.png)
+![\[Lumberyard Editor Clouds submenu of the Game menu with Sky Clouds gem enabled.\]](/images/userguide/lumberyard-menusgame-clouds.png)
 
 
 ****  
@@ -239,7 +239,7 @@ We recommend that you use slices instead\. For more information, see [Working wi
 
 
 
-![\[Lumberyard Editor Prefabs submenu of the Game menu.\]](/images/lumberyard-menusgame-prefabs.png)
+![\[Lumberyard Editor Prefabs submenu of the Game menu.\]](/images/userguide/lumberyard-menusgame-prefabs.png)
 
 
 ****  
@@ -258,7 +258,7 @@ We recommend that you use slices instead\. For more information, see [Working wi
 
 In the **Terrain** menu, you can specify changes that affect the game world and terrain appearance\.
 
-![\[Lumberyard Editor Terrain submenu of the Game menu.\]](/images/lumberyard-menusgame-terrain.png)
+![\[Lumberyard Editor Terrain submenu of the Game menu.\]](/images/userguide/lumberyard-menusgame-terrain.png)
 
 
 ****  
@@ -283,7 +283,7 @@ In the **Terrain** menu, you can specify changes that affect the game world and 
 
 In the **Debugging** menu, you can reload scripts, textures, geometry, and terrain\. Other debugging options include configuring user commands and checking the level for errors\. 
 
-![\[Lumberyard Editor Debug submenu of the Game menu.\]](/images/lumberyard-menusgame-debug.png)
+![\[Lumberyard Editor Debug submenu of the Game menu.\]](/images/userguide/lumberyard-menusgame-debug.png)
 
 
 ****  
@@ -311,13 +311,13 @@ In the **Debugging** menu, you can reload scripts, textures, geometry, and terra
 
 In the **Tools** menu, you can access Lumberyard Editor tools and plugins\. For more information, see [Lumberyard Editors and Tools](lumberyard-tools.md)\.
 
-![\[Lumberyard Editor Tools menu\]](/images/lumberyard-editor-menus-tools.png)
+![\[Lumberyard Editor Tools menu\]](/images/userguide/lumberyard-editor-menus-tools.png)
 
 ## View<a name="lumberyard-editor-menus-view"></a>
 
 In the **View** menu, you can customize the layout and the viewport of Lumberyard Editor\.
 
-![\[Lumberyard Editor View menu\]](/images/lumberyard-editor-menus-view.png)
+![\[Lumberyard Editor View menu\]](/images/userguide/lumberyard-editor-menus-view.png)
 
 
 ****  
@@ -335,7 +335,7 @@ In the **View** menu, you can customize the layout and the viewport of Lumberyar
 
 In the **Viewport** menu, you can change settings that affect the display for level design, entity placement, and object manipulation\. For more information, see [Using the Viewport](lumberyard-editor-viewport.md)\.
 
-![\[Lumberyard Editor Viewport submenu of the View menu.\]](/images/lumberyard-editors-menusview-viewport.png)
+![\[Lumberyard Editor Viewport submenu of the View menu.\]](/images/userguide/lumberyard-editors-menusview-viewport.png)
 
 
 ****  
@@ -358,7 +358,7 @@ In the **Viewport** menu, you can change settings that affect the display for le
 
 In the **AWS** menu, you can sign up for an Amazon Web Services \(AWS\) account, set up services using Cloud Canvas and Amazon GameLift, and open the **Cloud Gem Portal**\.
 
-![\[Lumberyard Editor Amazon Web Services (AWS) menu.\]](/images/lumberyard-editors-menu-AWS.png)
+![\[Lumberyard Editor Amazon Web Services (AWS) menu.\]](/images/userguide/lumberyard-editors-menu-AWS.png)
 
 
 ****  
@@ -376,7 +376,7 @@ In the **AWS** menu, you can sign up for an Amazon Web Services \(AWS\) account,
 
 In the **Help** menu, you can search the Lumberyard documentation, open Lumberyard tutorials and resources, and view information about Lumberyard Editor\.
 
-![\[Help menu\]](/images/lumberyard-editor-menus-help.png)
+![\[Help menu\]](/images/userguide/lumberyard-editor-menus-help.png)
 
 
 ****  

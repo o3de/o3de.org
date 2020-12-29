@@ -7,7 +7,7 @@ title: Movement Attribute
 
 In the **Movement** attribute, specify how to control the particle's movement\.
 
-![\[Movement attributes in the Particle Editor.\]](/images/particles/particle-editor-reference-movement.png)
+![\[Movement attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-reference-movement.png)
 
 For the **Air Resistance**, **Gravity Scale**, **Turbulence 3D Speed**, **Turbulence Size**, and **Turbulence Speed** parameters, you can set a **Random** value and **Strength Over Emitter Lifetime** and **Strength Over Particle Lifetime** curves\.
 

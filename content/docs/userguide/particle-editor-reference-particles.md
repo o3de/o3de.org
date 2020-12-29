@@ -10,7 +10,7 @@ In the **Particles** attribute, specify how to control the particle's basic appe
 **Note**  
 We recommend that you set up the **Particles** attribute first because it includes the **Texture** file, which is used for most particles\.
 
-![\[Particles attribute in the Particle Editor.\]](/images/particles/particle-editor-particles.png)
+![\[Particles attribute in the Particle Editor.\]](/images/userguide/particles/particle-editor-particles.png)
 
 
 **Particles Attribute Parameters**  
@@ -34,6 +34,6 @@ We recommend that you set up the **Particles** attribute first because it includ
 | Soft Particles | Applies rendering that softens the intersection between sprites and nearby objects to prevent unnatural seams\. Use sparingly on particles that need it, such as smoke, because this is slightly more expensive\. Use the Softness parameter to define the amount of rendering to apply\.Default value: false | 
 | Motion Blur | \(GPU only\) Simulates motion blur on GPU particles\. Use Blur Strength to set the strength of the blur effect\. | 
 | Geometry | \(CPU only\) Opens the Asset Browser window to select a 3D object to use for the particles\. Default value: empty | 
-| Geometry in Pieces | \(CPU only\) Emits the geometry in pieces, originating at each piece's location in the asset\. This applies only if the Geometry asset contains multiple subobjects\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-reference-particles.html)Default value: **Whole**This parameter requires that you provide specific names for the nodes in the Maya outliner\. The following show examples of acceptable node names:![\[Node names in the Maya outliner.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/geometry_in_pieces_01.png)In these examples, the groups and individual nodes have a `_group` suffix\. As a result, the Maya exporter assumes there is no geometry\. If you receive a "group has no geometry" error, you can safely ignore it\. | 
+| Geometry in Pieces | \(CPU only\) Emits the geometry in pieces, originating at each piece's location in the asset\. This applies only if the Geometry asset contains multiple subobjects\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-reference-particles.html)Default value: **Whole**This parameter requires that you provide specific names for the nodes in the Maya outliner\. The following show examples of acceptable node names:![\[Node names in the Maya outliner.\]](/images/userguide/particles/geometry_in_pieces_01.png)In these examples, the groups and individual nodes have a `_group` suffix\. As a result, the Maya exporter assumes there is no geometry\. If you receive a "group has no geometry" error, you can safely ignore it\. | 
 | Geometry No Offset | \(CPU only\) Uses the geometry pivot for centering geometry particles\. Default value: false | 
 | Octagonal Shape | \(CPU only\) Renders sprites as octagons instead of quads, reducing pixel cost\. Only use with textures that fit within an octagon; otherwise clipping occurs\. Default value: false | 

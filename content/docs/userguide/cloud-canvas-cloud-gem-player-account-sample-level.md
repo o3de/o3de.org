@@ -21,4 +21,4 @@ Note that in the sample, UI canvases do not include functionality for displaying
 
 The following diagram shows how the UI canvases are connected\. For more information on the Amazon Cognito user pool signup process, see the [Signing Up and Confirming User Accounts](https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up-users-in-your-app.html) page in the [Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)\.
 
-![\[Player sign in workflow\]](/images/cloud_canvas/cloud-canvas-player-account-gem-ui-canvases-connection.png)
+![\[Player sign in workflow\]](/images/userguide/cloud_canvas/cloud-canvas-player-account-gem-ui-canvases-connection.png)

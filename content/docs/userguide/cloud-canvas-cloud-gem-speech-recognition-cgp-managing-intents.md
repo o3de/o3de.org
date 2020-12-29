@@ -26,7 +26,7 @@ Use the **Intents** tab on the **Speech Recognition** page to create and manage 
 
 1. Click the **Intents** tab\.
 
-![\[Managing intents\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-numbered.png)
+![\[Managing intents\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-numbered.png)
 
 1. To create an intent, click **Create Intent**\. You must enter a unique name for the intent\.
 
@@ -41,28 +41,28 @@ Use the **Intents** tab on the **Speech Recognition** page to create and manage 
 **To edit an intent**
 
 1. In the list of intents, click the name of the intent that you want to edit\.  
-![\[Click the name of the intent\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-click-name.png)
+![\[Click the name of the intent\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-click-name.png)
 
    Note the following restrictions:
    + For custom intents, you must provide at least one utterance\.
    + For intents based on built\-in intents, you cannot modify the utterances or slots\. You can use the **Lambda initialization and validation** and **Confirmation prompt** features [as usual](cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots.md)\.
 
 1. A slot can have multiple prompts\. To view all the prompts for a slot, click the gear icon in the **Prompt** column\.   
-![\[See all prompts for a slot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-gear-icon.png)
+![\[See all prompts for a slot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-gear-icon.png)
 
    The following image shows sample prompts for the **MapLocation** slot\.  
-![\[Multiple prompts for one slot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-multiple-slot-prompts.png)
+![\[Multiple prompts for one slot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-multiple-slot-prompts.png)
 
 1. To set the slot type version, choose the version from the menu in the **Slot type and version** column\.   
-![\[Choose slot version\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-version.png)
+![\[Choose slot version\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-version.png)
 
 1. To change the slot priority, click the up or down arrow in the row for the slot\.  
-![\[Change slot priority\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-priority.png)
+![\[Change slot priority\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-priority.png)
 
 **To add intents to a bot**
 
 1. Select the check boxes for the intents that you want to add to the bot\. Then on the upper right, click **Add to bot**\.  
-![\[Adding intents to a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-choosing-intents-for-bot.png)
+![\[Adding intents to a bot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-choosing-intents-for-bot.png)
 
 1. From the list of existing bots, choose the bot for the intents, and then click **Add**\.  
-![\[Choose bot for the intents\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-add-to-bot.png)
+![\[Choose bot for the intents\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-add-to-bot.png)

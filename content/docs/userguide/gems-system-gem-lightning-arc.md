@@ -9,4 +9,4 @@ The Lightning Arc Gem creates realistic electric arcing and sparking effects bet
 
 While active, the entity sparks a new electrical arc to the assigned target entities randomly\. The entity is able to trigger new sparks in either game mode or in **AI/Physics** mode\.
 
-![\[Add the Lightning Arc gem to your game to enable lightning effects.\]](/images/gems/gems-system-gem-lightning-arc-new.png)
+![\[Add the Lightning Arc gem to your game to enable lightning effects.\]](/images/userguide/gems/gems-system-gem-lightning-arc-new.png)

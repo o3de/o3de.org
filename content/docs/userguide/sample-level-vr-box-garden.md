@@ -34,7 +34,7 @@ The level's playspace includes the following:
 + Posts – Spawns at runtime from the `Playspace_Posts` entity\. This entity uses a Lua script to calculate the number and position of posts, and spawn the posts along the playspace edges at a fixed interval\.
 + Corners – Uses a Lua script to locate the corner position and move to the correct position\. There are four entities, one for each corner\. You can use the Lua script to assign a number for each corner\.
 
-![\[Example of the playspace area in the VR Box Garden level.\]](/images/vr-box-garden-level-playspace-example.png)
+![\[Example of the playspace area in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-playspace-example.png)
 
 ## Procedurally\-Spawned Stacking Boxes<a name="sample-level-vr-box-garden-spawned-stacking-boxes"></a>
 
@@ -42,10 +42,10 @@ The level uses six `Box Spawner` entities with the `random_spawner.lua` script t
 
 You can modify the following parameters in the **Spawner** component to affect random generation\.
 
-![\[Spawner component parameters in the VR Box Garden level.\]](/images/vr-box-garden-level-spawner-parameters.png)
+![\[Spawner component parameters in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-spawner-parameters.png)
 
 For more information, see [Spawner Component Properties](component-spawner.md#component-spawner-properties)\.
 
 To enable triggering spawn events, you can add a **Lua Script** component to the entity with the **Spawner** component attached\. The spawned box uses a dynamic slice called `greybox.slice`\.
 
-![\[Lua Script component parameters to trigger spawn events.\]](/images/vr-box-garden-level-lua-script-spawn-entity.png)
+![\[Lua Script component parameters to trigger spawn events.\]](/images/userguide/vr-box-garden-level-lua-script-spawn-entity.png)

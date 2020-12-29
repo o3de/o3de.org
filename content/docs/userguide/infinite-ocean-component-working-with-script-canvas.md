@@ -52,7 +52,7 @@ The **Sin** node returns values that are –/\+\. Negative numbers cause errors 
    1. Drag the **Result** pin to connect it to the **Number:0** pin of the **SetAnimationWavesSize** node\.
 
    Your script should look like the following:  
-![\[Example Script Canvas script for working with the Infinite Ocean component.\]](/images/component/infiniteocean/infinite-ocean-component-example-script.png)
+![\[Example Script Canvas script for working with the Infinite Ocean component.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-example-script.png)
 
 1. Save your script\.
 

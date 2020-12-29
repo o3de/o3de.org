@@ -24,7 +24,7 @@ You can open the **Animation Editor** from Lumberyard Editor\.
 **To open the Animation Editor**
 + From Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](/images/actor-animation/animation-editor-jack-user-interface.png)
+![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](/images/userguide/actor-animation/animation-editor-jack-user-interface.png)
 
 On the **Animation Editor**, you can do the following:
 

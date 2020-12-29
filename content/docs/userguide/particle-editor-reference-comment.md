@@ -7,4 +7,4 @@ title: Comment Attribute
 
 Save or edit comments about an emitter in the **Comment** text box\.
 
-![\[Comment attributes in the Particle Editor.\]](/images/particles/particle-editor-comment.png)
+![\[Comment attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-comment.png)

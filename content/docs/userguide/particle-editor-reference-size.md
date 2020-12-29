@@ -7,7 +7,7 @@ title: Size Attribute
 
 In the **Size** attribute, specify how to control the particle's size and shape\.
 
-![\[Size attributes in the Particle Editor.\]](/images/particles/particle-editor-size.png)
+![\[Size attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-size.png)
 
 For the **Size**, **Pivot**, and **Stretch** parameters, you can set a **Random** value and **Strength Over Emitter Lifetime** and **Strength Over Particle Lifetime** curves\.
 

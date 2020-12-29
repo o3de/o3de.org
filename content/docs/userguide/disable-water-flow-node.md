@@ -13,7 +13,7 @@ To enable the effect, see [Enable Water Flow](enable-water-flow-node.md)\.
 + [Inputs](#disable-water-flow-note-input)
 + [Outputs](#disable-water-flow-node-output)
 
-![\[disablewaterflow, disablewaterflownode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-flow-node.png)
+![\[disablewaterflow, disablewaterflownode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-flow-node.png)
 
 ## Inputs<a name="disable-water-flow-note-input"></a>
 

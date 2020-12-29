@@ -27,7 +27,7 @@ e_Fog=0
 
 By default, shadow cascades are disabled for terrain, as the following image shows\.
 
-![\[Shadow cascades disabled.\]](/images/rendering/rendering-graphics-shadows-tuning-1.png)
+![\[Shadow cascades disabled.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-1.png)
 
 To enable cascade shadows from terrain, enter the following command:
 
@@ -37,7 +37,7 @@ e_GsmCastFromTerrain=1
 
 The left side of the cliff in the foreground now has shadows\.
 
-![\[Shadow cascades enabled.\]](/images/rendering/rendering-graphics-shadows-tuning-2.png)
+![\[Shadow cascades enabled.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-2.png)
 
 To disable cascade shadows, set `e_GsmCastFromTerrain` to `0`\.
 
@@ -65,7 +65,7 @@ Cascade 4: Pink
 
 This information is displayed in the viewport, as the following image shows\. Areas that do not have these special colorings do not have shadows\.
 
-![\[Cascades debug mode enabled.\]](/images/rendering/rendering-graphics-shadows-tuning-3.png)
+![\[Cascades debug mode enabled.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-3.png)
 
 ## Step 3: Maximize the Number of Cascades<a name="rendering-graphics-shadows-tuning-maximize-the-number-of-cascades"></a>
 
@@ -97,7 +97,7 @@ The additional cascade numbers and corresponding colors are not listed in the up
 
 The light blue color shows that the shadow range has been extended much further into the distance\.
 
-![\[Increasing the number of cascades.\]](/images/rendering/rendering-graphics-shadows-tuning-4.png)
+![\[Increasing the number of cascades.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-4.png)
 
 ## Step 4: Change the Size of the Root Cascade<a name="rendering-graphics-shadows-tuning-change-the-size-of-the-root-cascade"></a>
 
@@ -111,7 +111,7 @@ e_GsmRange=0.5
 
 The resulting image shows that Cascade 0 \(red\) is not yet visible\. Cascades 1 through 6 \(green, blue, yellow, pink, light blue, and red\-orange\) are successively visible the farther one looks into the distance\. Beyond the last cascade, the mountain has its usual brownish color\.
 
-![\[Root cascade set to 0.5.\]](/images/rendering/rendering-graphics-shadows-tuning-5.png)
+![\[Root cascade set to 0.5.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-5.png)
 
 The following command increases the range of the root cascade to 1 meter\.
 
@@ -121,7 +121,7 @@ e_GsmRange=1.0
 
 At this setting, Cascade 0 is visible in the foreground in red\. The range has increased to include the distant mountain in Cascade 6 \(red\-orange\)\.
 
-![\[Root cascade set to 1 meter.\]](/images/rendering/rendering-graphics-shadows-tuning-6.png)
+![\[Root cascade set to 1 meter.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-6.png)
 
 The following command changes the range of the root cascade to 3 meters, which is the default\.
 
@@ -131,7 +131,7 @@ e_GsmRange=3.0
 
 In the example, this setting expands the area of the red Cascade 0 in the foreground\. The other cascades are pushed farther back\. The mountain in the distance, which was Cascade 6 \(red\-orange\) is now Cascade 5 \(light blue\), and Cascade 6 is no longer visible\.
 
-![\[Root cascade set to the default of 3 meters.\]](/images/rendering/rendering-graphics-shadows-tuning-7.png)
+![\[Root cascade set to the default of 3 meters.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-7.png)
 
 At this point, you can reduce the number of cascades from 7 to 6 with the following command\.
 
@@ -141,7 +141,7 @@ e_GsmLodsNum=6
 
 As the following image shows, the command has no visual impact on the range of shadows\.
 
-![\[Number of cascades set to 6.\]](/images/rendering/rendering-graphics-shadows-tuning-7.png)
+![\[Number of cascades set to 6.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-7.png)
 
 ## Step 5: Change the Step Size<a name="rendering-graphics-shadows-tuning-change-the-step-size"></a>
 
@@ -159,7 +159,7 @@ e_GsmRangeStep=1.5
 
 The following image shows how this significantly reduces the range\. In the example, the number of cascades is still 6 \(`e_GsmLodsNum=6`\) and the root cascade is still at 3 meters \(`e_GsmRange=3.0`\)\. However, the mountains in the distance no longer have shadows\.
 
-![\[Range step size set to 1.5.\]](/images/rendering/rendering-graphics-shadows-tuning-8.png)
+![\[Range step size set to 1.5.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-8.png)
 
 The next example maintains the same settings but changes the range step to 2\.7\.
 
@@ -169,7 +169,7 @@ e_GsmRangeStep=2.7
 
 This scales the cascades out again so that they fall just short of the furthest mountain in the distance\.
 
-![\[Range step size set to 2.7.\]](/images/rendering/rendering-graphics-shadows-tuning-9.png)
+![\[Range step size set to 2.7.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-9.png)
 
 The following example lowers the number of cascades from 6 to 5 but increases the range step to 3\.5\.
 
@@ -181,7 +181,7 @@ e_GsmRangeStep=3.5
 
 Because of the increase in range step, the reduced number of cascades covers approximately the same amount of terrain as in the previous example\. The area which was previously Cascade 5 \(light blue\) is now Cascade 4 \(pink\)\.
 
-![\[Fewer cascades with a greater range step.\]](/images/rendering/rendering-graphics-shadows-tuning-10.png)
+![\[Fewer cascades with a greater range step.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-10.png)
 
 ## Step 6: Enable Shadows Debug Mode<a name="rendering-graphics-shadows-tuning-enable-shadows-debug-mode"></a>
 
@@ -193,7 +193,7 @@ e_ShadowsDebug=1
 
 The following image shows the viewport with shadows debug mode enabled\.
 
-![\[Shadows debug mode enabled\]](/images/rendering/rendering-graphics-shadows-tuning-11.png)
+![\[Shadows debug mode enabled\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-11.png)
 
 The following example in shadows debug mode uses the maximum number of cascades \(7\) but adjusts their reach by tuning the range step to 2\.25\.
 
@@ -204,4 +204,4 @@ e_GsmRange=3.0
 e_GsmRangeStep=2.25
 ```
 
-![\[Shadows debug mode with 7 cascades and a range step of 2.25.\]](/images/rendering/rendering-graphics-shadows-tuning-12.png)
+![\[Shadows debug mode with 7 cascades and a range step of 2.25.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-12.png)

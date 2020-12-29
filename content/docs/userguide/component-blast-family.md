@@ -19,7 +19,7 @@ For information on using the **Blast Family** component see [Simulated destructi
 
 ## Blast Family component properties<a name="component-blast-family-properties"></a>
 
-![\[Properties of the Blast Family component\]](/images/physx/blast/ui-blast-family-component-1.27.png)
+![\[Properties of the Blast Family component\]](/images/userguide/physx/blast/ui-blast-family-component-1.27.png)
 
 **Blast Asset**  
 The blast asset that will be used for the destruction simulation\.

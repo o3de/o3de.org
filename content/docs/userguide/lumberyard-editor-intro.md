@@ -12,7 +12,7 @@ If you receive errors from the `AssetProcessor.exe` or `AssetProcessor_temp.exe`
 
 **To open Lumberyard Editor**
 + After installation, launch Lumberyard Editor with your preferred method:
-  + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Lumberyard Editor desktop icon\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-editor-launch.png) 
+  + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Lumberyard Editor desktop icon\]](/images/userguide/lumberyard-editor-launch.png) 
 **Note**  
 The Lumberyard Editor desktop shortcut points to the `lumberyard_installation\dev\Bin64vcxxx\Editor.exe` file that corresponds to the version of Visual Studio that you chose in Lumberyard Setup Assistant during setup\. If you later change the version of Visual Studio that you use with Lumberyard, this desktop shortcut may no longer be valid\.
   + From Lumberyard Setup Assistant, on the **Summary** page, click **Launch Editor**\.

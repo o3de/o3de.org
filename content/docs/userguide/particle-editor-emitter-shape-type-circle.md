@@ -10,11 +10,11 @@ The **Circle** emitter enables spawning of particles along the shapes axial coor
 
 The following is an example of the **Circle** emitter in the **Preview** viewport\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-circle-1.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-circle-1.png)
 
 The following are parameters for the **Circle** emitter\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-circle-2.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-circle-2.png)
 
 
 **Circle Emitter Parameters**  

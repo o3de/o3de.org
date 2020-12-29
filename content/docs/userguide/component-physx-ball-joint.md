@@ -8,7 +8,7 @@ With the **PhysX Ball Joint** component, you can create a dynamic ball joint tha
 
 ## PhysX Ball Joint component properties<a name="component-physx-ball-joint-properties"></a>
 
-![\[Properties of the PhysX Ball Joint component\]](/images/physx/physx/ui-physx-ball-joint-component-1.27.png)
+![\[Properties of the PhysX Ball Joint component\]](/images/userguide/physx/physx/ui-physx-ball-joint-component-1.27.png)
 
 **Local Position**  
 Specify the position of the joint relative to the entity transform\.

@@ -23,7 +23,7 @@ You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](co
 
 ## OccluderArea Component Properties<a name="component-occluder-area-properties"></a>
 
-![\[The Occluder Area component properties in Lumberyard Editor.\]](/images/component/occluder-area-component-properties.png)
+![\[The Occluder Area component properties in Lumberyard Editor.\]](/images/userguide/component/occluder-area-component-properties.png)
 
 The **OccluderArea** component has the following properties\.
 
@@ -43,4 +43,4 @@ The **OccluderArea** component has the following properties\.
 
 The following example shows two boxes\. One box is hidden behind the occluder area, but you can see its shadow\. The other box is outside the occluder area and appears normally on screen\.
 
-![\[OccluderArea component with two boxes.\]](/images/component-occluderarea.png)
+![\[OccluderArea component with two boxes.\]](/images/userguide/component-occluderarea.png)

@@ -11,7 +11,7 @@ The Virtual Reality Samples Project is a template that you can use to build virt
 + Spatialized audio playback
 + Stereo 360 video playback
 
-![\[Example image from the VR project sample level.\]](/images/virtual_reality_project_sample.jpg)
+![\[Example image from the VR project sample level.\]](/images/userguide/virtual_reality_project_sample.jpg)
 
 **To install the Virtual Reality Samples Project**
 

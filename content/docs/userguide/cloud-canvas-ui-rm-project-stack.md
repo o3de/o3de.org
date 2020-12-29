@@ -7,7 +7,7 @@ title: 'Working with Project Stacks '
 
 When you select the **Project stack** node in the **Cloud Canvas Resource Manager** navigation pane, the detail pane shows information about the AWS CloudFormation stack that Cloud Canvas is using\. 
 
-![\[Project stack\]](/images/cloud_canvas/cloud-canvas-project-stack.png)
+![\[Project stack\]](/images/userguide/cloud_canvas/cloud-canvas-project-stack.png)
 
 Note the following: 
 + If you select a project stack node and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](cloud-canvas-ui-credentials-manager.md)\. 
@@ -37,7 +37,7 @@ This table has the following columns:
 
 Click **Upload resources** to start the process of modifying, creating, or deleting resources in AWS so that they match your local definitions of them\. A dialog box shows the changes that will be applied\.
 
-![\[Upload resources\]](/images/cloud_canvas/cloud-canvas-project-stack-update-dialog.png)
+![\[Upload resources\]](/images/userguide/cloud_canvas/cloud-canvas-project-stack-update-dialog.png)
 
 The table of changes has the same columns as the stack resource status table but also includes a column for **Impacts**\. If a change has the potential to affect the security of your project, the **Impacts** column contains the text **Security**\. Before you can start an operation that has a security impact, you must select the option **It is OK that this will impact resource SECURITY**\. Review any security changes carefully before you apply them\. 
 

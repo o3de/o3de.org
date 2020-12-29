@@ -30,4 +30,4 @@ For the **Filter Stage** property, the **PreProcess** option results in faster p
 **Example**  
 A **Vegetation Altitude Filter** is set to filter out vegetation below 32 meters\. A **Vegetation Position Modifier** is set to shift vegetation left by 5 meters\. The initial **Vegetation Layer Spawner** is placed in a box sitting at 32 meters\. With the **PreProcess** option \(A\), the filter is applied first, and then the modifier shifts vegetation left into the canyon\. With the **PostProcess** option \(B\), the modifier shifts vegetation left into the canyon first\. The filter is then applied, which removes the vegetation below 32 meters\.  
 
-![\[Filter Stage with PreProcess option and PostProcess option.\]](/images/component/vegetation/component-vegetation-layer-spawner-prepostprocess.png)
+![\[Filter Stage with PreProcess option and PostProcess option.\]](/images/userguide/component/vegetation/component-vegetation-layer-spawner-prepostprocess.png)

@@ -9,7 +9,7 @@ The **Infinite Ocean** component is compatible only with a material that uses th
 **Example Water Shader**  
 The following is an example of how you can configure the water shader material in the **Material Editor**\.  
 
-![\[Example Infinite Ocean component with the caustic parameters.\]](/images/component/infiniteocean/infinite-ocean-component-5.png)
+![\[Example Infinite Ocean component with the caustic parameters.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-5.png)
 
 **Note**  
 When you set up water materials for the ocean, disable the **Water Volume** parameter\.  

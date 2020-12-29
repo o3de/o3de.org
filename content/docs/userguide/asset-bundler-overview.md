@@ -38,7 +38,7 @@ Generating a platform\-specific \(for an iOS\-specific release, or a console\-sp
 
    The following diagram illustrates the relationships and process for bundling assets with the Asset Bundler\.
 
-![\[The steps used in the general process for bundling assets with Lumberyard.\]](/images/assetbundler/asset-bundler-overview.png)
+![\[The steps used in the general process for bundling assets with Lumberyard.\]](/images/userguide/assetbundler/asset-bundler-overview.png)
 
 In this example, the seeds are the assets Level1\.pak and Level2\.pak\. These `.pak` files reference Lumberyard slice files, which reference the entity meshes they contain, which in turn reference the material and texture files for those entities\.
 
@@ -68,27 +68,27 @@ Product dependencies generate asset lists from seed lists\. This simplifies the 
 
 For example, you have a game that has one level for your release build\. Your game contains a single tree\. You also have a separate test level that you don't need to ship, which contains a single rock\.
 
-![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/assetbundler/asset-bundler-simple-game-files.png)
+![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/userguide/assetbundler/asset-bundler-simple-game-files.png)
 
 In the asset bundling workflow in versions of Lumberyard prior to version 1\.22, each file had to be tracked and added to the game package\. This was generally done by specifying wildcards\. It worked for simple builds\. However, this process became hard to use when a game was split into multiple bundles\. The multiple bundles accomodated content being downloaded on demand, or the hard upper limit on package size because of platform package restrictions\. It also became difficult to safely manage excluded content, such as when your game project had assets that could not appear in your release build\.
 
 Based on the file layout in the previous example, here's a simple diagram of the workflow in Lumberyard versions prior to 1\.22:
 
-![\[A diagram of the legacy asset bundling workflow in Lumberyard.\]](/images/assetbundler/legacy-asset-bundler-flowchart-simple.png)
+![\[A diagram of the legacy asset bundling workflow in Lumberyard.\]](/images/userguide/assetbundler/legacy-asset-bundler-flowchart-simple.png)
 
 For more complex game projects, the asset bundling workflow can look more like this:
 
-![\[A diagram showing a more complex workflow for legacy asset bundling.\]](/images/assetbundler/legacy-asset-bundler-flowchart.png)
+![\[A diagram showing a more complex workflow for legacy asset bundling.\]](/images/userguide/assetbundler/legacy-asset-bundler-flowchart.png)
 
 The bundling workflow in Lumberyard version 1\.22 has fewer steps, fewer loopbacks, and less complex steps than prior versions\.
 
 The following example shows a basic workflow for a simple game with assets that emits dependencies correctly\.
 
-![\[New Asset Bundler dependency workflow.\]](/images/assetbundler/new-asset-bundler-flowchart-simple.png)
+![\[New Asset Bundler dependency workflow.\]](/images/userguide/assetbundler/new-asset-bundler-flowchart-simple.png)
 
 For more complex game projects, with file loads implemented in C\+\+ and custom asset builders, the asset bundling workflow can look more like this:
 
-![\[New Asset Bundler workflow for complex projects.\]](/images/assetbundler/new-asset-bundler-flowchart.png)
+![\[New Asset Bundler workflow for complex projects.\]](/images/userguide/assetbundler/new-asset-bundler-flowchart.png)
 
 In the previous bundling method, it was necessary to learn how each asset worked to find asset references in Lumberyard's tools\. With the new asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](asset-bundler-assets-verifying.md)\. You also have opportunities earlier in development to verify that you are bundling the correct assets\. This is unlike the previous method that offered verification tools only for a bundled release build\.
 

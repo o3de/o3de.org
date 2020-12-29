@@ -11,7 +11,7 @@ Sets the sun's longitude in the sky\.
 + [Inputs](#set-sun-longitude-node-input)
 + [Outputs](#set-sun-longitude-node-output)
 
-![\[setsunlongitudenode, setsunlongitude\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-sun-longitude-node.png)
+![\[setsunlongitudenode, setsunlongitude\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-sun-longitude-node.png)
 
 ## Inputs<a name="set-sun-longitude-node-input"></a>
 

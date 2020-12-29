@@ -91,7 +91,7 @@ Next, you add nodes to display the success or failure of the GET operation\.
 1. Connect the **Out** pins of the **OnError** and **OnSuccess** nodes to the **In** pin of the new **Print** node\.
 
 1. Connect the **String** pins of the **OnError** and **OnSuccess** nodes to the **Value** pin of the new **Print** node\. Your canvas should look similar to the following image:  
-![\[A Script Canvas graph that performs an HTTP GET operation\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-http-get-sc-1.png)
+![\[A Script Canvas graph that performs an HTTP GET operation\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-http-get-sc-1.png)
 
 1. Save the canvas with a name like `MyHttpGetTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

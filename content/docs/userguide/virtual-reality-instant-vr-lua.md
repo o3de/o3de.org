@@ -6,7 +6,7 @@ title: InstantVR Lua Script Properties
 
 You can view **instantVR**'s assets in the **Entity Outliner**\. The **instantVR** slice contains a Lua script called `instantVR`, which includes many of the child entities that add controller tracking and provide teleport support\.
 
-![\[Image NOT FOUND\]](/images/vr/virtual-reality-instant-vr-outliner.png)
+![\[Image NOT FOUND\]](/images/userguide/vr/virtual-reality-instant-vr-outliner.png)
 
 The `instantVR` Lua script has the following properties:
 

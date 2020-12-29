@@ -27,7 +27,7 @@ The Cloud Gem Framework is a collection of tools and API operations that support
 
 The following diagram shows a high\-level view of the Cloud Gem Framework architecture\.
 
-![\[Cloud Gem Framework architecture\]](/images/cloud_canvas/cloud-canvas-cgf-architecture.png)
+![\[Cloud Gem Framework architecture\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-architecture.png)
 
 The Cloud Gem Framework contains the following major components:
 + [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) – A web application for operating and managing cloud gems\.

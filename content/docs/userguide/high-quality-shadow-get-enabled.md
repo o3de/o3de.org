@@ -12,7 +12,7 @@ Returns whether an entity's **[High Quality Shadow](component-high-quality-shado
 + [Inputs](#high-quality-shadow-get-enabled-input)
 + [Outputs](#high-quality-shadow-get-enabled-output)
 
-![\[getenabled, highqualityshadow, highqualityshadownode\]](/images/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-get-enabled.png)
+![\[getenabled, highqualityshadow, highqualityshadownode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-get-enabled.png)
 
 ## Inputs<a name="high-quality-shadow-get-enabled-input"></a>
 

@@ -24,7 +24,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Open the Amazon Lumberyard Project Configurator\.
 
 1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.  
-![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/assetbundler/asset-bundler-project-configurator-1.25.png)
+![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/userguide/assetbundler/asset-bundler-project-configurator-1.25.png)
 
 1. Open a command prompt and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
 

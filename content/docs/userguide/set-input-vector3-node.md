@@ -16,7 +16,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#set-input-vector3-node-input)
 + [Outputs](#set-input-vector3-node-output)
 
-![\[SetInputVector3 sets the Vector3 value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector3-node.png)
+![\[SetInputVector3 sets the Vector3 value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector3-node.png)
 
 ## Inputs<a name="set-input-vector3-node-input"></a>
 

@@ -18,17 +18,17 @@ To use the Dynamic Content Cloud Gem, you must meet these requirements:
 **To view packages in the Dynamic Content Gem Portal**
 
 1. On the welcome page of the Cloud Gem Portal, click **Cloud Gems** or **View all Cloud Gems**\.  
-![\[Cloud Gem Portal welcome page\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-1.png)
+![\[Cloud Gem Portal welcome page\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-1.png)
 
 1. In the list of enabled cloud gems, pause on the thumbnail for the Dynamic Content Gem\.  
-![\[Dynamic Content Gem\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-2.png)
+![\[Dynamic Content Gem\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-2.png)
 
    The thumbnail shows the number of files in the gem and the status of the cloud API \(**Online** or **Offline**\)\. The online status comes from an API Gateway call to the Dynamic Content Cloud Gem\. 
 
 1. Click the thumbnail\. The dynamic content might take a few seconds to appear as AWS resources load\.
 
    The loaded page shows the packages \(`.pak` files\) that you added when you used **Dynamic Content Manager**\.  
-![\[List of dynamic content packages\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-3.png)
+![\[List of dynamic content packages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-3.png)
 
 ## Dynamic Content Package Stages<a name="cloud-canvas-cloud-gem-dc-managing-packages-stages"></a>
 
@@ -43,7 +43,7 @@ You can use these stages to add an additional layer of protection against inadve
 
 Each stage includes entries for your manifests and packages\. Packages are nested according to the hierarchy that you determine when you create them\. In the following example, the two root\-level manifest packages highlighted in yellow have one child asset package each, which are highlighted in gold\.
 
-![\[Nested packages\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-4.png)
+![\[Nested packages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-4.png)
 
 The icons next to the package names show the actions available for the packages\.
 
@@ -52,18 +52,18 @@ The icons next to the package names show the actions available for the packages\
 
 | Icon | Description | 
 | --- | --- | 
-| ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-5.png)  | You can edit or delete root level packages\. | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-6.png)  | You can only delete child packages\. | 
+| ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-5.png)  | You can edit or delete root level packages\. | 
+|  ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-6.png)  | You can only delete child packages\. | 
 
 ## Editing Packages<a name="cloud-canvas-cloud-gem-dc-managing-packages-editing"></a>
 
 Editing is triggered when you drag and drop a root\-level package from one stage to another\.
 
-![\[Changing package stages\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-7.png)
+![\[Changing package stages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-7.png)
 
 When you edit a package, you can alter its **Transition**, **Scheduling**, and **Package Children**, as the following image shows\.
 
-![\[Editing a package\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-8.png)
+![\[Editing a package\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-8.png)
 + **Transition** – Choose the target stage that you want to move the package to\.
 + **Scheduling** – Set packages to `scheduled` or `indefinite`\. Packages that you place in the public stage cannot have a date; they are always indefinite\.
 +  **Package Children** – Select which children of the root package you would like to include in this transition\.
@@ -74,12 +74,12 @@ When you edit a package, you can alter its **Transition**, **Scheduling**, and *
 
 Deleting a root package causes its child packages to become orphans that are no longer visible to the game client\. Accordingly, when you delete a package, the following confirmation message appears\.
 
-![\[Deleting a package\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-9.png)
+![\[Deleting a package\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-9.png)
 
 ## Displaying Package Metadata<a name="cloud-canvas-cloud-gem-dc-managing-packages-displaying-metadata"></a>
 
 To display the metadata for a package, click the space next to the package name\. The metadata for the package appears at the bottom of the browser\.
 
-![\[Click to display metadata\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-10.png)
+![\[Click to display metadata\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-10.png)
 
-![\[Package metadata\]](/images/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-11.png)
+![\[Package metadata\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-11.png)

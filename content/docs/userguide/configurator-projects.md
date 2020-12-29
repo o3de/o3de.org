@@ -84,7 +84,7 @@ In Lumberyard version 1\.23, if you intend to create new projects, the following
 **Compile the engine and asset pipeline**\* – Compile the engine code and asset pipeline to include any changes that you have made
 **Compile the Lumberyard Editor and tools**\* – Compile Lumberyard tools to include any changes that you have made
 \*If you select any of these options, you may need to perform additional tasks, such as installing Microsoft Visual Studio\. If so, these tasks display on the **Install software** and **Required SDKs** pages\. Follow the instructions in Lumberyard Setup Assistant to obtain the software and third\-party SDKs that aren't installed\.  
-![\[Create a new game project with Project Configurator and Lumberyard Setup Assistant.\]](/images/configurator/setup/ui-create-new-project-A-1.25.png)
+![\[Create a new game project with Project Configurator and Lumberyard Setup Assistant.\]](/images/userguide/configurator/setup/ui-create-new-project-A-1.25.png)
 
 1. In the **Create a new project** window, do the following:
 
@@ -95,7 +95,7 @@ In Lumberyard version 1\.23, if you intend to create new projects, the following
    1. Choose one of the following: **Default** or **Empty**\.
 
    1. Click **Create project**\.  
-![\[Create a new project in the Project Configurator.\]](/images/configurator/setup/ui-create-new-project-B-1.22.png)
+![\[Create a new project in the Project Configurator.\]](/images/userguide/configurator/setup/ui-create-new-project-B-1.22.png)
 
 1. When your project is created, click **Continue**\.
 
@@ -175,7 +175,7 @@ Use the Project Configurator to set default game project that opens in Lumberyar
    + Open the Lumberyard Project Configurator, located at `lumberyard-version\dev\Bin64BuildPlatform\ProjectConfigurator.exe`\. For example, when using Visual Studio 2017 as your build platform, the Project Configurator is located at `lumberyard-version\dev\Bin64vc141\ProjectConfigurator.exe`\.
 
 1. On the **Summary** page, select the project and click **Set as default**\.  
-![\[Choose a new default project in the Project Configurator.\]](/images/configurator/setup/ui-set-default-project-1.25.png)
+![\[Choose a new default project in the Project Configurator.\]](/images/userguide/configurator/setup/ui-set-default-project-1.25.png)
 
 1. \(Optional\) Click **Enable Gems** and select the additional features and assets that you want available to design your game\. If you select a gem labeled with **Code & Assets**, you must build your project from a command line\. 
 
@@ -206,7 +206,7 @@ When you switch projects, you can specify the following:
 **To switch game projects**
 
 1. In Lumberyard Editor, choose **File**, **Project Settings**, **Switch Projects**\.  
-![\[Switch projects option on the Project Settings sub menu of the File menu in Lumberyard Editor\]](/images/configurator/setup/ui-editor-switch-project-1.22.png)
+![\[Switch projects option on the Project Settings sub menu of the File menu in Lumberyard Editor\]](/images/userguide/configurator/setup/ui-editor-switch-project-1.22.png)
 
 1. You must close Lumberyard Editor before you can open the Project Configurator\. In the dialog box, choose **Save**\.
 

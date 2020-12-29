@@ -49,7 +49,7 @@ When using Allegorithmic’s Substance Designer to export textures to Lumberyard
 
 Using Substance Editor, you can edit Substance material properties and visualize substances on objects in real\-time\. Substance Editor also has the ability to generate and export static textures from Substances\.
 
-![\[\]](/images/mat-substance-editor.png)
+![\[\]](/images/userguide/mat-substance-editor.png)
 
 Here are some things to keep in mind when working with Substances in Substance Editor:
 + The Substance Gem needs to be enabled first for the project using [Creating Lumberyard projects](configurator-intro.md)\. For more information on Gems, see [Add modular features and assets with Gems](gems-system-gems.md)\.

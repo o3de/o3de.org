@@ -15,7 +15,7 @@ The node does not perform any range conversion\. For example, if an `Integer4` s
 + [Inputs](#get-input-color-node-input)
 + [Outputs](#get-input-color-node-output)
 
-![\[GetInputColor gets the color value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-color-node.png)
+![\[GetInputColor gets the color value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-color-node.png)
 
 ## Inputs<a name="get-input-color-node-input"></a>
 

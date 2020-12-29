@@ -38,7 +38,7 @@ This tutorial uses the Message of the Day cloud gem, but you can apply the same 
 1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **Message of the Day**\.
 
 1. Click the **REST Explorer** tab\.  
-![\[Click the REST Explorer tab in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-1.png)
+![\[Click the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-1.png)
 
    The initial **REST Explorer** fields are as follows:
    + **Host** – Name of the API Gateway host\.
@@ -58,16 +58,16 @@ In the **REST Explorer** tab, you start by choosing a path and then a verb\. In 
 **To select a path and verb**
 
 1. For **Path**, click **Select**, and then select **/admin/messages**\.  
-![\[Select a path in the REST Explorer tab in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-2.png)
+![\[Select a path in the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-2.png)
 
 1. After you select the value for **Path**, the **Verb** field appears\. Click **Select** to see the request methods that are available for the path\. To post a message, select **post**\.  
-![\[Select a verb in the REST Explorer tab in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-3.png)
+![\[Select a verb in the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-3.png)
 
    A description of the action that will be taken for your specified path and verb combination appears under the verb\.  
-![\[Description of the action to be taken\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-4.png)
+![\[Description of the action to be taken\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-4.png)
 
 1. To see the swagger definition for the path and verb, click **Show Path Swagger**\. The swagger code defines the action that will be taken \(in this example, the posting of a message to a message table\)\.  
-![\[View the Path swagger JSON in the REST Explorer tab in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-5.png)
+![\[View the Path swagger JSON in the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-5.png)
 
 1. Click **Hide Path Swagger** to close the swagger definition\.
 
@@ -80,7 +80,7 @@ After you select a path and a verb, enter values for any parameters that are req
 **Example**  
 The **/admin/messages** path and the **post** verb combination requires the following parameters\. For each parameter, a box shows the data type of the value to be entered\.  
 
-![\[Body parameters for a POST verb and an /admin/messages path.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-6.png)
+![\[Body parameters for a POST verb and an /admin/messages path.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-6.png)
 
 #### Parameter Categories<a name="cloud-canvas-cloud-gem-portal-rest-explorer-parameter-categories"></a>
 
@@ -91,7 +91,7 @@ Parameters can be in one of three categories:
 
 The **Parameters** section groups parameters into their corresponding categories\. For example, the path and verb combination `/admin/messages/{msg_id}`/`put` has both **Path** and **Body** parameters:
 
-![\[Parameter categories in the REST Explorer tab in the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-7.png)
+![\[Parameter categories in the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-7.png)
 
 #### Viewing Parameter Descriptions<a name="cloud-canvas-cloud-gem-portal-rest-explorer-viewing-parameter-descriptions"></a>
 
@@ -99,20 +99,20 @@ You can view parameter descriptions and identify which parameters are required a
 
 **To view parameter descriptions**
 + For the **Parameters** section, pause your pointer on the question mark icon for the parameter\.  
-![\[View summary information in the tooltips for each parameter\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-8.png)
+![\[View summary information in the tooltips for each parameter\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-8.png)
 
 #### Required and Optional Parameters<a name="cloud-canvas-cloud-gem-portal-rest-explorer-required-and-optional-parameters"></a>
 
 You can also identify whether parameters are required or optional, as shown by their boxes\.
 + Optional parameters have boxes with dotted lines:  
-![\[An optional parameter in the REST Explorer tab\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-9.png)
+![\[An optional parameter in the REST Explorer tab\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-9.png)
 + Required parameters have boxes with solid lines:  
-![\[A required parameter in the REST Explorer tab.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-10.png)
+![\[A required parameter in the REST Explorer tab.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-10.png)
 
 **Example**  
 In the following example for the **/admin/messages/\{msg\_id\}** path and the **put** verb, only the **msg\_id** and **message** parameters are required\.  
 
-![\[Required parameters have boxes with solid lines\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-11.png)
+![\[Required parameters have boxes with solid lines\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-11.png)
 
 ### Sending a POST Request<a name="cloud-canvas-cloud-gem-portal-rest-explorer-sending-a-post-request"></a>
 
@@ -121,13 +121,13 @@ After you enter any required parameter information for the path and verb combina
 **To send a test request**
 
 1. For the **Body** **message** parameter, enter some text, and then click **Send**\.  
-![\[Send example text in a parameter for a test request in the REST Explorer tab.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-12.png)
+![\[Send example text in a parameter for a test request in the REST Explorer tab.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-12.png)
 
 1. If you specified the required parameters, you can view the request and response under the **Send** button\.  
-![\[Text of a POST request and response\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-14.png)
+![\[Text of a POST request and response\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-14.png)
 
    If you send a request without specifying the required parameters, the **REST Explorer** returns an error\.  
-![\[Missing parameter error for a request in the REST Explorer tab.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-13.png)
+![\[Missing parameter error for a request in the REST Explorer tab.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-13.png)
 
 ### Sending a GET Request<a name="cloud-canvas-cloud-gem-portal-rest-explorer-sending-a-get-request"></a>
 
@@ -138,10 +138,10 @@ You can send a GET request to retrieve information from a specific location\. Th
 1. On the **REST Explorer** tab for the Message of the Day cloud gem, ensure that the path **/admin/messages** is selected\.
 
 1. For **Verb**, select **get**\.  
-![\[Choose the get verb in the REST Explorer tab.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-15.png)
+![\[Choose the get verb in the REST Explorer tab.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-15.png)
 
    The **Query** parameters for the GET request appear\.  
-![\[Query parameters\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-16.png)
+![\[Query parameters\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-16.png)
 
 1. Enter the values in the following table\.  
 ****    
@@ -150,7 +150,7 @@ You can send a GET request to retrieve information from a specific location\. Th
 1. Click **Send**\. The request and response appear in a scrollable box\. 
 **Note**  
 The query string in the GET request has the parameters that you specified\.  
-![\[Text of a GET request and response\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-17.png)
+![\[Text of a GET request and response\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-17.png)
 
 ### Linking to the API Gateway Console<a name="cloud-canvas-cloud-gem-portal-rest-explorer-linking-to-the-api-gateway-console"></a>
 
@@ -159,9 +159,9 @@ For further investigation and troubleshooting, you can navigate directly from th
 **To navigate to the API Gateway console endpoint**
 
 1. On the **REST Explorer** tab, click the pop\-out icon for **Host**\. The console opens in a new browser window\.  
-![\[Click the pop-out icon for Host to navigate to the API Gateway console.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-18.png)
+![\[Click the pop-out icon for Host to navigate to the API Gateway console.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-18.png)
 
 1. Sign in to the AWS Management Console if you are not already signed in\. The API Gateway console displays the endpoint that you chose\.
 
    For more information API Gateway, see the [API Gateway Developer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/)\.  
-![\[Endpoint in the API Gateway console\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-19.png)
+![\[Endpoint in the API Gateway console\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-19.png)

@@ -24,7 +24,7 @@ void IsNull::OnInit()
 
 When the node is initialized, the added slots appear in the Script Canvas editor\.
 
-![\[Slots added to the Is Null node\]](/images/scripting/script-canvas/script-canvas-custom-nodes-3.png)
+![\[Slots added to the Is Null node\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-3.png)
 
 ## Receiving Input Signals<a name="script-canvas-custom-nodes-receiving-input-signals"></a>
 
@@ -38,7 +38,7 @@ To get the ID of the input signal, AZ Code Generator provides some convenient he
 
 As an example, in the **Delay** node two input slots can be signaled: **In** and **Reset**\.
 
-![\[Delay node In and Reset input slots\]](/images/scripting/script-canvas/script-canvas-custom-nodes-4.png)
+![\[Delay node In and Reset input slots\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-4.png)
 
 In the following code, the **Delay** node's **In** and **Reset** slots use the generated helper functions `CountdownProperty::GetInSlotId(this)`; and `CountdownProperty::GetResetSlotId(this)`; to get their IDs\. The source code is from `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Time\Countdown.cpp`\.
 
@@ -66,7 +66,7 @@ You can use these IDs to determine what action the node should take\.
 
 After the **Delay** node is finished, it uses the `SignalOutput(outSlot)` function to signal the output slot that execution is ready to continue\.
 
-![\[The Delay node Out slot\]](/images/scripting/script-canvas/script-canvas-custom-nodes-5.png)
+![\[The Delay node Out slot\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-5.png)
 
 To call the function, you must know the output slot ID to pass\. The following example is from `Duration.cpp`\.
 
@@ -83,7 +83,7 @@ If your node is connected to one or more buses during its lifetime, ensure that 
 
 The **Delay** node example has the inbound data slots **Time**, **Loop**, and **Hold**\.
 
-![\[Delay node inbound data slots\]](/images/scripting/script-canvas/script-canvas-custom-nodes-6.png)
+![\[Delay node inbound data slots\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-6.png)
 
 Script Canvas properties that specify the `ScriptCanvas_Property::Input` attribute can be queried by the node to do necessary processing\. To do this, use the code\-generated convenience helpers `CountdownProperty::Get{PropertyName}(this);`\. The following source code is in `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Time\Countdown.cpp`\.
 
@@ -99,7 +99,7 @@ You can often use these properties on the stack; you do not have to assign these
 
 Many nodes might want to return a value or push forward data as a result of a computation\. In the **Delay** node example, the **Elapsed** slot outputs the elapsed time\.
 
-![\[Delay node Elapsed slot\]](/images/scripting/script-canvas/script-canvas-custom-nodes-7.png)
+![\[Delay node Elapsed slot\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-7.png)
 
 To output the elapsed time, the node gets the ID of the **Elapsed** slot and then pushes a data value into it \(`dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Time\Countdown.cpp`\)\.
 

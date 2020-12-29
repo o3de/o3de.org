@@ -9,7 +9,7 @@ You can create terrain texture layers and paint them to enhance your environment
 
 The primary tool for creating and managing terrain texture layers in your level is the Terrain Texture Layers editor\.
 
-![\[Image NOT FOUND\]](/images/terrain/terrain-texture-layers-editor.png)
+![\[Image NOT FOUND\]](/images/userguide/terrain/terrain-texture-layers-editor.png)
 
 **For information about working with splat maps, see [Importing Splat Maps](terrain-splat-maps.md)\.**
 + [Adding a Terrain Texture Layer](terrain-texture-layers-add.md)

@@ -21,10 +21,10 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
 1. Drag the **Pose Subtract** node into the animation graph\.  
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Pose Subtract into the animation graph.\]](/images/actor-animation/char-animation-editor-blendposes-animgraphpalette-posesubtract.png)
+![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Pose Subtract into the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-animgraphpalette-posesubtract.png)
 
 1.   
-![\[Pose Subtract node on the animation graph with inputs and outputs exposed.\]](/images/actor-animation/char-animation-editor-blendposes-inoutputs-posesubtract.png)
+![\[Pose Subtract node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs-posesubtract.png)
 
    Connect nodes to the following inputs and output:
    + **Pose 1** – The base pose\.
@@ -35,4 +35,4 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 For attribute settings that are shared among the blend node types, see [Blend Node Attributes](animation-editor-blending-poses.md#animation-editor-blending-attributes)\.
 
-![\[Pose Subtract node attributes.\]](/images/actor-animation/animation-editor-blending-posesubtract-attributes.png)
+![\[Pose Subtract node attributes.\]](/images/userguide/actor-animation/animation-editor-blending-posesubtract-attributes.png)

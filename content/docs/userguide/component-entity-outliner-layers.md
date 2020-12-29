@@ -25,10 +25,10 @@ When you create a layer, you can add entities to that layer\. This helps you org
 1. In Lumberyard Editor, choose **Tools**, **Entity Outliner**\.
 
 1. In the **Entity Outliner**, right\-click and choose **Create layer**\.  
-![\[Right-click in the Entity Outliner and choose Create layer.\]](/images/component/entity_system/creating-layers.png)
+![\[Right-click in the Entity Outliner and choose Create layer.\]](/images/userguide/component/entity_system/creating-layers.png)
 
 1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**\.  
-![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/component/entity_system/modifying-layers-inspector.png)  
+![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/userguide/component/entity_system/modifying-layers-inspector.png)  
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-outliner-layers.html)
 
@@ -43,7 +43,7 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 1. You can do the following in the context menu\. 
 
    Actions highlighted in yellow affect the selected layer\. The other options are standard context menu actions that don't affect the selected layer\.  
-![\[Right-click a layer to expose its context menu.\]](/images/component/entity_system/modifying-layers.png)
+![\[Right-click a layer to expose its context menu.\]](/images/userguide/component/entity_system/modifying-layers.png)
 
    The following options in the context menu perform actions on the selected layer\.  
 ****    
@@ -53,7 +53,7 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 
 You can nest layers within other layers\. This is useful if you want to organize the enitites in your level\. This behavior is similar to creating hierarchies for parent and child entities\.
 
-![\[A layer nested within another layer.\]](/images/component/entity_system/layer-hierarchies.png)
+![\[A layer nested within another layer.\]](/images/userguide/component/entity_system/layer-hierarchies.png)
 
 **Note**  
 You can't make a layer a child of a non\-layer entity and you can't save a layer in a slice\.
@@ -79,11 +79,11 @@ Lumberyard layers are saved as `.layer` files in the `level_name/layers` directo
 
 When a layer contains unsaved changes, an asterisk \(\*\) appears next to the layer name\. After you save the level or the layer, the asterisk is removed\.
 
-![\[Asterisk (*) next to a layer with unsaved information.\]](/images/shared-saving-layers.png)
+![\[Asterisk (*) next to a layer with unsaved information.\]](/images/userguide/shared-saving-layers.png)
 
 Layer names at the same hierarchy level must be unique\. Layers at the same hierarchy level with duplicate names display a warning \(**\!**\) and can't be saved until you rename them\.
 
-![\[Layer at the same hierarchy level must have unique names.\]](/images/component/entity_system/saving-layers-duplicate.png)
+![\[Layer at the same hierarchy level must have unique names.\]](/images/userguide/component/entity_system/saving-layers-duplicate.png)
 
 **To save your level and all layers**
 + In Lumberyard Editor, choose **File**, **Save** or press **Ctrl\+S**\.

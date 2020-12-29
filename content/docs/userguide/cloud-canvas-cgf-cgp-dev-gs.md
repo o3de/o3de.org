@@ -86,27 +86,27 @@ Now you are ready to create an administrator account so that you can sign in on 
    ```
 
    These commands create an administrator account so that you can sign in\. It also generates a project settings JSON string and an HTTPS URL\. The project settings string is the text between the `{}` braces, as you can see in the following example\.  
-![\[Sample project settings string\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-1a.png)
+![\[Sample project settings string\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-1a.png)
 
    Before you can sign in with your administrator credentials, you must copy this project settings string to a file in your Cloud Gem Portal code\.
 
 1. Open the `\dev\Gems\CloudGemFramework\v<N>\Website\CloudGemPortal\cgp_bootstrap.js` file for editing in a text editor\.
 
 1. Set the variable `cgpBootstrap` to the project settings JSON string that you generated, as in the following example\.  
-![\[Set cgpBootstrap to your project settings string\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-2.png)
+![\[Set cgpBootstrap to your project settings string\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-2.png)
 **Note**  
 The HTTPS URL that was generated is not required\. Be sure not to paste it into the `cgp_bootstrap.js` file\. 
 
 1. Save your changes\.
 
 1. With your browser open to `http://localhost:3000`, sign in with the temporary administrator credentials that were generated\.  
-![\[Sign in to the Cloud Gem Portal\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-3.png)
+![\[Sign in to the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-3.png)
 
 1. Your password is temporary, so create a new one\.  
-![\[Change password\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-4.png)
+![\[Change password\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-4.png)
 
    After you change the administrator password, you are automatically logged in and redirected to the cloud gems page, which lists your active gems\.  
-![\[List of cloud gems\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-5.png)
+![\[List of cloud gems\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-5.png)
 
 Now you can start editing your code\. Your changes should appear when you reload the site\.
 
@@ -127,7 +127,7 @@ Perform the following steps to configure Visual Studio to work with Node\.js\.
 1. In the navigation bar, click **Tools**, **Options**, **Projects and Solutions**, **External Web Tools**\.
 
 1. Add your `nodejs` and `node_modules\.bin` directories to the external tools configuration so that Visual Studio can find them\. The ordering of the paths is important\. Move your `nodejs` and `.node_modules/.bin` paths above the defaut Visual Studio paths, as shown in the following image\.  
-![\[Expose Node.js directories to Visual Studio\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-6.png)
+![\[Expose Node.js directories to Visual Studio\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-6.png)
 
 #### Tools and Extensions Setup<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-tools-and-extensions"></a>
 
@@ -143,7 +143,7 @@ Next, you must install TypeScript\-related extensions for Visual Studio\.
    + **jquery\.TypeScript\.DefinitelyTyped**
 
       
-![\[Install NuGet packages\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-7.png)
+![\[Install NuGet packages\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-7.png)
 
    After you install these packages, you can create cloud gems in Visual Studio\.
 
@@ -160,7 +160,7 @@ To run the gulp task, you can use [Task Runner Explorer](https://visualstudiogal
 1. To start a task, double\-click the task\.
 
 1. To start a server, run **default** or **gulp serve** in the list of gulp **Tasks**\.  
-![\[Run the default gulp task to start a server\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-8.png)
+![\[Run the default gulp task to start a server\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-8.png)
 
 #### Troubleshooting<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-troubleshooting"></a>
 
@@ -334,7 +334,7 @@ import { Observable } from 'rxjs/rx'
 export class MessageOfTheDayThumbnailComponent implements AbstractCloudGemThumbnailComponent{
     @Input() context: any
     @Input() displayName: string = "Your first Cloud Gem";
-    @Input() srcIcon: string = "https://m.media-amazon.com/images/G/01/cloudcanvas/images/message_of_the_day._V536715120_.png"
+    @Input() srcIcon: string = "https://m.media-amazon.com/images/userguide/G/01/cloudcanvas/images/userguide/message_of_the_day._V536715120_.png"
                
     public state: TackableStatus = new TackableStatus();
     public metric: TackableMeasure = new TackableMeasure();
@@ -401,7 +401,7 @@ export * from './cloudgemmessageoftheday.module
 
 After your setup of the `.ts` files is complete, you can test the results\. If you are running your local server with `gulp serve` or `gulp serve-watch`, navigate to `localhost:3000`\. Your new gem should appear in the **Cloud Gems** section\.
 
-![\[Your cloud gem in the portal\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-12.png)
+![\[Your cloud gem in the portal\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-12.png)
 
 If you click the gem thumbnail, the page that appears is blank, but that's expected at this point\.
 
@@ -415,7 +415,7 @@ You can verify that your gem is working by adding a header like the following to
 
 If you reload the Cloud Gem Portal page and navigate to your gem, your new text appears\.
 
-![\[HTML header showing\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-13.png)
+![\[HTML header showing\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-13.png)
 
 #### Creating Dynamic Content<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-dynamic-content"></a>
 
@@ -449,7 +449,7 @@ export class Motd extends DynamicGem {
 
 The following image shows what happens when the button is clicked\.
 
-![\[Test button\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-14-anim.gif)
+![\[Test button\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-14-anim.gif)
 
 ### Creating a CSS File<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-a-css-file"></a>
 
@@ -478,7 +478,7 @@ Before you upload your cloud gem to AWS, make sure you have you added your new c
 1. Under **Administration**, **Deployments**, click your active deployment\. If you don't have a deployment, create one first\.
 
 1. Click **Upload All Resources**\.  
-![\[Upload all resources\]](/images/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-16.png)
+![\[Upload all resources\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-16.png)
 
 1. After the upload has completed, click **AWS**, **Open Cloud Gem Portal** in Lumberyard Editor to access the Cloud Gem Portal that you uploaded\. Your changes should be visible on the live website\.
 

@@ -11,7 +11,7 @@ Sets a material's numerical parameter for the specified entity\.
 + [Inputs](#material-owner-set-param-number-input)
 + [Outputs](#material-owner-set-param-number-output)
 
-![\[setparamnumber, setparamnumbernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-material-owner-node.png)
+![\[setparamnumber, setparamnumbernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-number-input"></a>
 

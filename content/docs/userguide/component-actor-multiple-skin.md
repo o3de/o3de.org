@@ -40,14 +40,14 @@ When you use a single FBX file embedded with multiple meshes, you must create an
    You should already have one actor for your character\. The additional actors that you add are the attachments, such as articles of clothing\.
 
 1. For the **Actor** group, enter the actor name such as *cowboy\_hat* and then click the mesh icon to select the mesh that you want as an attachment\.  
-![\[Click the mesh icon to select a mesh in FBX Settings.\]](/images/component/component-actor-single-fbx-2.png)
+![\[Click the mesh icon to select a mesh in FBX Settings.\]](/images/userguide/component/component-actor-single-fbx-2.png)
 
 1. In the **Select nodes** dialog box, select the mesh, and then click **Select**\.  
-![\[Select the appropriate nodes in FBX Settings.\]](/images/component/component-actor-single-fbx-3.png)
+![\[Select the appropriate nodes in FBX Settings.\]](/images/userguide/component/component-actor-single-fbx-3.png)
 
    Your **Actor** groups should look like the following\.  
 **Example**    
-![\[Create multiple actor groups from a single FBX file in the FBX Settings tool.\]](/images/component/component-actor-single-fbx-1.png)
+![\[Create multiple actor groups from a single FBX file in the FBX Settings tool.\]](/images/userguide/component/component-actor-single-fbx-1.png)
 
 1. Click **Update** to save your settings and close the **FBX Settings** tool\.
 
@@ -55,7 +55,7 @@ When you use a single FBX file embedded with multiple meshes, you must create an
 **Example**  
 
    In the **Asset Browser**, a single FBX file contains the primary actor and the attachments\.  
-![\[View actor files in the Asset Browser.\]](/images/component/component-actor-component-entity-setup-1.png)
+![\[View actor files in the Asset Browser.\]](/images/userguide/component/component-actor-component-entity-setup-1.png)
 
 ## Using Multiple FBX Files<a name="component-actor-multiple-fbx"></a>
 
@@ -64,4 +64,4 @@ When you use an FBX file for each skin attachment, Asset Processor automatically
 **Example**  
 In the **Asset Browser**, multiple FBX files each contain a separate actor file\.  
 
-![\[View actor files in the Asset Browser.\]](/images/component/component-actor-multiple-fbx-files.png)
+![\[View actor files in the Asset Browser.\]](/images/userguide/component/component-actor-multiple-fbx-files.png)

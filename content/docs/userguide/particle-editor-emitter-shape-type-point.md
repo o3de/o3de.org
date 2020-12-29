@@ -9,7 +9,7 @@ The **Point** emitter spawns particles in a spherical distribution from the orig
 
 The following are parameters for the **Point** emitter\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-point.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-point.png)
 
 
 **Point Emitter Parameters**  

@@ -34,7 +34,7 @@ The **Shape** component includes the following shapes and properties:
 
 As a best practice, when you scale a shape, adjust the shape component's properties, such as its **Dimensions**, **Height**, and **Radius**\.
 
-![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/component/component-shape-scaling-2.png)
+![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/userguide/component/component-shape-scaling-2.png)
 
 **Tip**  
 Modify the shape component's properties instead using the [Scale tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](component-transform.md)** component\. 
@@ -48,12 +48,12 @@ See the following examples for the different scaling:
 
 1. In uniform normalized scaling, all of the scale values are `1`\. 
 
-![\[Nonuniform scaling (1), where X, Y, and Z have different values. Uniform scaling (2), where X, Y, and Z values are the same (in this case, 4). Uniform normalized scaling (3), where X, Y, and Z values are all 1.\]](/images/component/component-shape-scaling-1.png)
+![\[Nonuniform scaling (1), where X, Y, and Z have different values. Uniform scaling (2), where X, Y, and Z values are the same (in this case, 4). Uniform normalized scaling (3), where X, Y, and Z values are all 1.\]](/images/userguide/component/component-shape-scaling-1.png)
 If an entity has been scaled nonuniformly, rendering and intersection tests use the largest component of the scale vector\. Although this can work, the best practice is to keep a uniform and, ideally, normalized \(`1`, `1`, `1`\) transform scale, as shown in the third example\.
 
 ## Box Shape Component Properties<a name="box-shape-component-properties"></a>
 
-![\[The box shape component properties in Lumberyard Editor.\]](/images/component/box-shape-component-properties.png)
+![\[The box shape component properties in Lumberyard Editor.\]](/images/userguide/component/box-shape-component-properties.png)
 
 The **Box Shape** component has the following properties\.
 
@@ -70,11 +70,11 @@ The **Box Shape** component has the following properties\.
 
 The **Box Shape** component also has its own Component Mode with several linear manipulators for each axis\. 
 
-![\[Box Shape component in the viewport.\]](/images/component/component-box-shape.png)
+![\[Box Shape component in the viewport.\]](/images/userguide/component/component-box-shape.png)
 
 ## Capsule Shape Component Properties<a name="capsule-shape-component-properties"></a>
 
-![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/component/capsule-shape-component-properties.png)
+![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/userguide/component/capsule-shape-component-properties.png)
 
 The **Capsule Shape**component has the following properties\.
 
@@ -91,7 +91,7 @@ The **Capsule Shape**component has the following properties\.
 
 ## Compound Shape Component Properties<a name="compound-shape-component-properties"></a>
 
-![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/component/compound-shape-component-properties.png)
+![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/userguide/component/compound-shape-component-properties.png)
 
 With the **Compound Shape** component, you can combine shapes to create a complex object to generate a physics collider, trigger shape, or any other application of shapes\. The individual shapes might or might not be children of the entity with the **Compound Shape** component\. 
 
@@ -111,7 +111,7 @@ See the following **Compound Shape** properties\.
 
 ## Cylinder Shape Component Properties<a name="cylinder-shape-component-properties"></a>
 
-![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/component/cylinder-shape-component-properties.png)
+![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/userguide/component/cylinder-shape-component-properties.png)
 
 The **Cylinder Shape** component has the following properties\.
 
@@ -128,7 +128,7 @@ The **Cylinder Shape** component has the following properties\.
 
 ## Disk Shape Component Properties<a name="disk-shape-component-properties"></a>
 
-![\[See the disk shape component properties in Lumberyard Editor.\]](/images/component/disk-shape-component-properties.png)
+![\[See the disk shape component properties in Lumberyard Editor.\]](/images/userguide/component/disk-shape-component-properties.png)
 
 See the following **Disk Shape** properties\.
 
@@ -144,7 +144,7 @@ See the following **Disk Shape** properties\.
 
 ## Sphere Shape Component Properties<a name="sphere-shape-component-properties"></a>
 
-![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/component/sphere-shape-component-properties.png)
+![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/userguide/component/sphere-shape-component-properties.png)
 
 See the following **Sphere Shape** properties\.
 

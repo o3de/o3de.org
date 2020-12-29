@@ -57,7 +57,7 @@ For more information about creating iOS apps, see [iOS Support](ios-intro.md)\.
       + On macOS: `lumberyard_version\dev\BinMac64\`
 
    1. In Asset Processor, verify that the **Status** is **Idle**\.  
-![\[Idle status in Asset Processor.\]](/images/mobile/ios/asset-processor-status-idle.png)
+![\[Idle status in Asset Processor.\]](/images/userguide/mobile/ios/asset-processor-status-idle.png)
 
 1. In a command line or Terminal window, do the following:
 

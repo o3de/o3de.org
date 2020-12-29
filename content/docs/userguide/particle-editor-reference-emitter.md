@@ -7,7 +7,7 @@ title: Emitter Attribute
 
 In the **Emitter** attribute, specify how to control the location and spawning attributes of the particle and emitter shape\. The parameters are updated based on the type that you select\. 
 
-![\[Emitter attributes in the Particle Editor.\]](/images/particles/particle-editor-emitter.png)
+![\[Emitter attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-emitter.png)
 
 
 **Emitter Attribute Parameters**  

@@ -50,7 +50,7 @@ The following table lists the additional console variables that you can configur
 
 The following images illustrate the range of graphics quality that you can achieve depending on which antialiasing setting you use\.
 
-![\[Image NOT FOUND\]](/images/shared-bistro-bar-example.gif)
+![\[Image NOT FOUND\]](/images/userguide/shared-bistro-bar-example.gif)
 
 ## Temporal Antialiasing Limitations<a name="graphics-rendering-anti-aliasing-limitations"></a>
 

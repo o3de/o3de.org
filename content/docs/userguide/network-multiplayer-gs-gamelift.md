@@ -72,10 +72,10 @@ To use CVARs to set the client side configuration, enter the following console c
 **To use the multiplayer sample user interface to configure Amazon GameLift**
 
 1. By default, the multiplayer sample loads the **Game Lobby** map\. To add or modify the CVARs, choose **Amazon GameLift**\.  
-![\[Click Amazon GameLift\]](/images/networking/network-multiplayer-gs-gamelift-choose-gamelift.png)
+![\[Click Amazon GameLift\]](/images/userguide/networking/network-multiplayer-gs-gamelift-choose-gamelift.png)
 
 1. Fill in the details of the GameLift configuration and choose **Connect**\.  
-![\[Fill in the details of the GameLift configuration and choose Connect\]](/images/networking/network-multiplayer-gs-gamelift-connect.png)
+![\[Fill in the details of the GameLift configuration and choose Connect\]](/images/userguide/networking/network-multiplayer-gs-gamelift-connect.png)
 
 1. To **create** a game session and join automatically, select the **Create Server** radio button and do the following:
 
@@ -84,7 +84,7 @@ To use CVARs to set the client side configuration, enter the following console c
    1. Enter the **Queue Name**, **Fleet ID**, or **Alias ID**\.
 
    1. Choose the **Create Server** button\.  
-![\[Specify server name and map. Enter queue name, fleet ID, or alias ID. Choose Create Server to create a game session and join automatically.\]](/images/networking/network-multiplayer-gs-gamelift-create-session.png)
+![\[Specify server name and map. Enter queue name, fleet ID, or alias ID. Choose Create Server to create a game session and join automatically.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-create-session.png)
 
 1. To **search** for and **join** an active game session, select the **Join Server** radio button and do the following:
 
@@ -93,14 +93,14 @@ To use CVARs to set the client side configuration, enter the following console c
    1. Choose **Refresh**\. Active game sessions will be listed\.
 
    1. Select a session and choose **Join**\.  
-![\[Specify the Queue Name, Fleet ID, or Alias ID. Choose Refresh to search for active game sessions. Select an active session and choose Join to join a session.\]](/images/networking/network-multiplayer-gs-gamelift-join-session.png)
+![\[Specify the Queue Name, Fleet ID, or Alias ID. Choose Refresh to search for active game sessions. Select an active session and choose Join to join a session.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-join-session.png)
 
 1. To use **matchmaking** to get placed in a game session, select the **FlexMatch** radio button and do the following:
 
    1. Specify the matchmaking **Config Name**\.
 
    1. Choose **Start Matchmaking**\.  
-![\[Specify the matchmaking Config Name. Choose Start Matchmaking.\]](/images/networking/network-multiplayer-gs-gamelift-matchmaking-session.png)
+![\[Specify the matchmaking Config Name. Choose Start Matchmaking.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-matchmaking-session.png)
 
 ## Create an Amazon GameLift Package<a name="network-multiplayer-gs-gamelift-create-gamelift-package"></a>
 

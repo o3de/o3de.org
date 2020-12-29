@@ -13,7 +13,7 @@ To enable the effect, see [Enable Color Correction](enable-color-correction-node
 + [Inputs](#disable-color-correction-node-input)
 + [Outputs](#disable-color-correction-node-output)
 
-![\[disablecolorcorrection, disablecolorcorrectionnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-color-correction-node.png)
+![\[disablecolorcorrection, disablecolorcorrectionnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-color-correction-node.png)
 
 ## Inputs<a name="disable-color-correction-node-input"></a>
 

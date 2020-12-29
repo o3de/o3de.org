@@ -18,7 +18,7 @@ To work with inputs, you must enable the [Input Management Framework](gems-syste
 
 ## Input Properties<a name="component-input-configuration-properties"></a>
 
-![\[\]](/images/component/input-component-properties.png)
+![\[\]](/images/userguide/component/input-component-properties.png)
 
 The **Input** component has the following properties\.
 

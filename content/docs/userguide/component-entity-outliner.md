@@ -11,7 +11,7 @@ The **Entity Outliner** shows all the entities and slices in the level\. You can
 1. In Lumberyard Editor, choose **Tools**, **Entity Outliner**\.
 
 1. In the **Entity Outliner**, you can create, select, search, and filter for entities\.  
-![\[Use the Entity Outliner to view all the entities in your level.\]](/images/shared-component-entity-outliner-1.png)
+![\[Use the Entity Outliner to view all the entities in your level.\]](/images/userguide/shared-component-entity-outliner-1.png)
 
    You can select multiple entities by doing one of the following in the **Entity Outliner**:
    + Use **CTRL** \+ **Left Mouse Click** to select multiple entities one at a time to be part of a multi\-selection\.

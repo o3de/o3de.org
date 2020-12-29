@@ -18,7 +18,7 @@ Fur rendering supports the following textures:
 | Specular | Specularity of the mesh\. | 
 | Fur Heightmap | A grayscale texture that specifies how fur fades out at different frequencies over the mesh\. Without this texture, fur appears blurry and without definition to strands\. | 
 
-![\[Example shader parameters for fur rendering.\]](/images/shaders/shader-ref-fur-13-1.png)
+![\[Example shader parameters for fur rendering.\]](/images/userguide/shaders/shader-ref-fur-13-1.png)
 
 Default fur **Shader Params** are as follows:
 

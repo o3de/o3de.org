@@ -14,7 +14,7 @@ You can compress your gem to make it distributable to other Lumberyard game deve
 1. Select the contents of this directory and use your preferred zip tool to zip them\.
 **Note**  
 Don't include your gem's top level directory as part of the zip file\. Select the files and directories inside the *my\_gem* directory to zip\.  
-![\[Compressing your directory to create a gem.\]](/images/gems-system-gems-creating.png)
+![\[Compressing your directory to create a gem.\]](/images/userguide/gems-system-gems-creating.png)
 
 1. After the \.`zip` file is created, remove the \.`zip` extension and rename it to \.`crate`\.
 

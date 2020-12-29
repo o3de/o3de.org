@@ -9,7 +9,7 @@ You can use the **Particle** component to place a single particle emitter on an 
 
 ## Particle Component Properties<a name="component-particle-properties"></a>
 
-![\[Particle component properties\]](/images/component/component-particle-properties.png)
+![\[Particle component properties\]](/images/userguide/component/component-particle-properties.png)
 
 The **Particle** component has the following properties:
 

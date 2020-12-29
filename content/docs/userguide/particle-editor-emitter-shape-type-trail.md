@@ -9,7 +9,7 @@ The **Trail** emitter connects particles together to create a trailing effect as
 
 The following are parameters for the **Trail** emitter\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-trail.jpg)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-trail.jpg)
 
 
 **Trail Emitter Parameters**  
@@ -33,7 +33,7 @@ Trail segments are drawn when the distance between the start and end of a segmen
 
 The following are movement parameters for the **Trail** emitter\.
 
-![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-trail-movement.png)
+![\[Image NOT FOUND\]](/images/userguide/particles/particle-emitter-type-trail-movement.png)
 
 
 **Related Movement Attributes**  

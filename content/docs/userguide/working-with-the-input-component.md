@@ -25,8 +25,8 @@ Follow these steps to create an `.inputbindings` file\.
 
 1. In the **Entity Inspector**, click **Add Component**, and add the **Input** component\.
 
-1. In the [**Entity Inspector**](component-entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-input-edit-icon.png) to open the **Asset Editor**\.  
-![\[\]](/images/component/input-component-properties-1.png)
+1. In the [**Entity Inspector**](component-entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![\[Image NOT FOUND\]](/images/userguide/component/component-input-edit-icon.png) to open the **Asset Editor**\.  
+![\[\]](/images/userguide/component/input-component-properties-1.png)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Input Bindings**\.
 
@@ -39,10 +39,10 @@ After you create your `.inputbindings` file, you can add input event groups for 
 **To add an input event group**
 
 1. In the **Asset Editor**, for your `.inputbindings` file, click the **\+** icon\.  
-![\[\]](/images/component/input-component-properties-2.png)
+![\[\]](/images/userguide/component/input-component-properties-2.png)
 
 1. For **Event Name**, enter a name for your event, such as *Action*\.  
-![\[\]](/images/component/input-component-properties-3.png)
+![\[\]](/images/userguide/component/input-component-properties-3.png)
 
 ## Creating Event Generators<a name="event-generators"></a>
 
@@ -60,7 +60,7 @@ After you create your input event group, you can add event generators to the gro
 **Example**  
 
    The following `.inputbindings` file specifies a keyboard for the device type and the spacebar for the input name\.  
-![\[Input bindings configuration example in the Asset Editor.\]](/images/component/input-configuration-properties-2.png)
+![\[Input bindings configuration example in the Asset Editor.\]](/images/userguide/component/input-configuration-properties-2.png)
 
 1. Save your `.inputbindings` file\.
 
@@ -84,7 +84,7 @@ You can create a Script Canvas graph that maps to your input events\. For more i
 **Example Script Canvas Graph**  
 
    In the following graph, the **Input Handler** node maps the **Event Name** `Action` to the `.inputbindings` file\.  
-![\[Example Script Canvas graph for the Input component.\]](/images/component/input-configuration-script-canvas-example.png)
+![\[Example Script Canvas graph for the Input component.\]](/images/userguide/component/input-configuration-script-canvas-example.png)
 
 ### Using a Lua Script for Input<a name="component-input-lua-script"></a>
 
@@ -153,6 +153,6 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. Press the keyboard spacebar so that your entity rotates on the local z\-axis\.  
 **Example**    
-![\[Input bindings configuration example in the Asset Editor.\]](/images/component/input-configuration-example-gamemode.gif)
+![\[Input bindings configuration example in the Asset Editor.\]](/images/userguide/component/input-configuration-example-gamemode.gif)
 
 1.  To exit gameplay mode, press **Esc**

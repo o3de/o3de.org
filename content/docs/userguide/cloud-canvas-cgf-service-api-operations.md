@@ -13,7 +13,7 @@ Service API operations are implemented in the `ServiceLambda` AWS Lambda functio
 
 The following diagram illustrates both request and upload processing\.
 
-![\[Request and upload processing operations\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-2.png)
+![\[Request and upload processing operations\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-2.png)
 
 **Topics**
 + [Default Request Mapping](#cloud-canvas-cgf-service-api-operations-default-request-mapping)

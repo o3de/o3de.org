@@ -7,6 +7,6 @@ title: Image Processing
 
 The Image Processing gem enables the Texture Settings Editor, which you can use to customize and process image files and textures\.
 
-![\[Enable the Image Processing gem to use the Texture Settings Editor.\]](/images/gems/gems-system-gem-image-processing.png)
+![\[Enable the Image Processing gem to use the Texture Settings Editor.\]](/images/userguide/gems/gems-system-gem-image-processing.png)
 
 For more information, see [Texture Settings Editor](texture-settings-editor.md)\.

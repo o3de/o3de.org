@@ -43,7 +43,7 @@ In Lumberyard version 1\.23 and later, if you intend to create new projects, the
 1. Select **Visual Studio 2017** or **Visual Studio 2019**\.
 **Note**  
 We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.  
-![\[Use Lumberyard Setup Assistant to configure Lumberyard, and install software and plugins.\]](/images/setup/ui-setup-assistant-1.24.png)
+![\[Use Lumberyard Setup Assistant to configure Lumberyard, and install software and plugins.\]](/images/userguide/setup/ui-setup-assistant-1.24.png)
 **Note**  
 Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](waf-user-options-and-settings.md)\.
 **Note**  

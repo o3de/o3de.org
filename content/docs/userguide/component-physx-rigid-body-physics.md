@@ -29,7 +29,7 @@ For more information, see [Simulating physics behavior with the PhysX system](ph
 
 ## PhysX Rigid Body component properties<a name="component-physx-rigid-body-physics-properties"></a>
 
-![\[PhysX Rigid Body component properties.\]](/images/component/physx/component-physx-rigid-body-1.27.png)
+![\[PhysX Rigid Body component properties.\]](/images/userguide/component/physx/component-physx-rigid-body-1.27.png)
 
 The **PhysX Rigid Body** component has the following properties\.
 
@@ -125,6 +125,6 @@ A PhysX entity that is dynamic can move and collide with other entities\.
 **Example**  
 
    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached\. Because the object is dynamic, it falls and then collides with the **PhysX Terrain** component\.  
-![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/shared/physx-creating-dynamic-object-1.gif)
+![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/userguide/shared/physx-creating-dynamic-object-1.gif)
 **Note**  
 For the **[Transform](component-transform.md)** component, clear the **Static** property\. This ensures that the mesh moves with the physics simulation\. 

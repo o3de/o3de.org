@@ -11,7 +11,7 @@ Sets a material's color parameter value for the specified entity\.
 + [Inputs](#material-owner-set-param-color-input)
 + [Outputs](#material-owner-set-param-color-output)
 
-![\[setparamcolornode, setparamcolor\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-material-owner-node.png)
+![\[setparamcolornode, setparamcolor\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-color-input"></a>
 

@@ -10,7 +10,7 @@ The **Comment** component allows you to add long\-form text comments for compone
 + Describe how everything in a level ties together
 + Send descriptions, instructions, or notes to team members
 
-![\[Image NOT FOUND\]](/images/component/comment-component.png)
+![\[Image NOT FOUND\]](/images/userguide/component/comment-component.png)
 
 ## Comment Properties<a name="component-comment-properties"></a>
 

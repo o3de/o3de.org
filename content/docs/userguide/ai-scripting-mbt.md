@@ -25,7 +25,7 @@ Behaviors are constructed by building trees of nodes\. These are a collection of
 
 An action node represents some sort of simple action\. Action nodes might cause the AI agent to speak, play an animation, or move to a different location\. 
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_action_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_action_node.png)
 
 ### Composite Nodes<a name="ai-scripting-mbt-common-node-patterns-composite"></a>
 
@@ -34,18 +34,18 @@ A composite node represents a series of actions to be performed in a certain ord
 **Sequential node**  
 This composite pattern describes child nodes that are processed consecutively in a specified sequence\. All child nodes are processed regardless of whether the previous child node succeeded or failed\. For example, a sequential node might cause an AI monster to point at the player, roar, and then run toward the player\. In this pattern, each child node in the sequence must succeed for the next child node to start processing; if any child node fails, the parent node immediately fails and processing is stopped\.   
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_sequence_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_sequence_node.png)
 
 **Selector node**  
 This composite pattern describes child nodes that are processed consecutively and in sequence only until one succeeds\. As soon as one child node succeeds, the parent node succeeds immediately and stops processing child nodes\. If all child nodes are attempted and all fail, the parent node fails\. This pattern is useful for setting up AI agents to try multiple different tactics, or for creating fallback behaviors to handle unexpected outcomes\.  
 Imagine, for example, that we want our AI monster to chase the player, but if it can't reach the player it should scream “Come and fight me, you coward\!” To implement this scenario, a selector parent node is set up with two children, one for each possible action\. The parent node first processes the “chase player” child node\. If it succeeds, then the selector node stops there\. However, if the “chase player node fails, then the parent node continues and processes the “taunt player” child node\.   
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_selector_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_selector_node.png)
 
 **Parallel node**  
 This composite pattern describes child nodes that are processed concurrently\. In this scenario, Imagine we want our AI monster to scream and chase the player at the same time rather than one after the other\.   
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_parallel_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_parallel_node.png)
 
 ### Decorator Nodes<a name="ai-scripting-mbt-common-node-patterns-decorator"></a>
 
@@ -54,14 +54,14 @@ A decorator node represents some sort of functionality that can be added to anot
 **Looping**  
 Looping functionality can be used to process any other node multiple times\. Rather than creating custom nodes every time you want to repeat a task, you can wrap any node in a parent loop decorator node\. By setting a parameter for the loop node, you can dictate the number of times the child nodes will be processed\. Each time the child node succeeds, the loop node count is updated and the child node is re\-processed\. Once the loop count meets the set parameter, the loop node succeeds\.  
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_loop_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_loop_node.png)
 
 **Limiting concurrent users**  
 This functionality lets you specify how many users should be allowed to concurrently use a specified node\. It is a good way to ensure variations in behavior among a group of AI agents\. A typical scenario illustrating this function is as follows: The player is spotted by a group of three monsters\. You want one monster to sound an alarm while the others chase the player\.  
 Limiting concurrent users works with a selector node, which steps through a sequence of child nodes until one succeeds\. By wrapping one of a selector node’s child nodes in a limit decorator node, you can cause the child node to fail due to concurrent users, which in turn causes the selector node to move to the next child\.   
 To handle the scenario described, the selector node would have two child nodes, “sound alarm” and “chase player”\. The “sound alarm” node is wrapped in a limit node, with the user limit set to 1\. Monster \#1 flows through the selector node to the limit node; as there is no one currently using the “sound alarm” node, the Monster \#1 takes this action\. The limit node records that one AI agent is processing the child node, so effectively locks the door to it\. Monsters \#2 and \#3 also flow through the selector node to the limit node, but because the limit node has reached its limit of user, it reports a failure\. Consequently, the selector node moves on to the next child node in the sequence, which is “chase player”\. So monsters \#2 and \#3 chase the player\.  
 
-![\[Image NOT FOUND\]](/images/ai/ai_scripting_mbt_limit_node.png)
+![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_limit_node.png)
 
 ## Describing Behavior Trees in XML<a name="ai-scripting-mbt-describing"></a>
 

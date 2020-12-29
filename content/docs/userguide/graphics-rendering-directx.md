@@ -50,7 +50,7 @@ Copy the Windows 10 SDK version\. In Windows, you can find this value in **Progr
    ```
 
 1. Start your game with the launcher\. You can verify that your game has enabled DX12 in the top\-right of the viewport\.  
-![\[You can find the DirectX 12 setting in information level on the top-right of the game.\]](/images/starter-game-example-directx-12.png)
+![\[You can find the DirectX 12 setting in information level on the top-right of the game.\]](/images/userguide/starter-game-example-directx-12.png)
 **Note**  
 If the DirectX version doesn't appear in the viewport, verify that the `r_DisplayInfo` console variable is set to `1` or `2`\. For more information, see [Using the Console Window](console-intro.md)\.
 Currently, Lumberyard Editor does not support DirectX 12\. If you open the game in the editor, the editor defaults to DirectX 11\. 

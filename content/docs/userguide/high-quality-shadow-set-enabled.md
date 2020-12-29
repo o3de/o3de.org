@@ -12,7 +12,7 @@ Indicates whether the entity's **[High Quality Shadow](component-high-quality-sh
 + [Inputs](#high-quality-shadow-set-enabled-input)
 + [Outputs](#high-quality-shadow-set-enabled-output)
 
-![\[setenabled, highqualityshadow\]](/images/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-set-enabled.png)
+![\[setenabled, highqualityshadow\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-set-enabled.png)
 
 ## Inputs<a name="high-quality-shadow-set-enabled-input"></a>
 

@@ -23,7 +23,7 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 
 ## PhysX Force Region Component Properties<a name="physx-terrain-component-properties"></a>
 
-![\[Force Region component properties.\]](/images/component/physx/ui-physx-force-region-component-properties-1.27.png)
+![\[Force Region component properties.\]](/images/userguide/component/physx/ui-physx-force-region-component-properties-1.27.png)
 
 
 | Property | Description | 
@@ -144,20 +144,20 @@ You can create a force region so that force applies to another entity that enter
    1. For **Magnitude**, enter a value such as **20**\.
 
       Blue arrows appear on the entity that indicate the direction of the force\.  
-![\[Direction of the PhysX Force Region.\]](/images/component/physx/physx-force-region-component-local-force.png)
+![\[Direction of the PhysX Force Region.\]](/images/userguide/component/physx/physx-force-region-component-local-force.png)
 
 1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Collider** and **PhysX Rigid Body Physics** components\. These components enable the entity to interact with other PhysX entities\.
 
 1. \(Optional\) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`\.
 
 1. Select and drag the **Sphere** entity so that it's above the force region\.  
-![\[An entity entering the force region.\]](/images/component/physx/physx-force-region-component-local-force-2.png)
+![\[An entity entering the force region.\]](/images/userguide/component/physx/physx-force-region-component-local-force-2.png)
 
 1. After you create your dynamic entity, press **Ctrl**\+**G** to enter gameplay mode\.  
 **Example**  
 
    The sphere falls and collides with the force region\. The force region applies force and pushes the sphere in the opposite direction\.  
-![\[PhysX Force Region component animation.\]](/images/component/physx/animation-force-region-component.gif)
+![\[PhysX Force Region component animation.\]](/images/userguide/component/physx/animation-force-region-component.gif)
 
 1. To leave gameplay mode, press **Esc**\.
 **Note**  

@@ -13,7 +13,7 @@ For more information, see [Creating Static Skyboxes](sky-skyboxes-intro.md)\.
 + [Inputs](#set-sky-box-angle-input)
 + [Outputs](#set-sky-box-angle-output)
 
-![\[setskyboxanglenode, setskyboxangle\]](/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-angle.png)
+![\[setskyboxanglenode, setskyboxangle\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-angle.png)
 
 ## Inputs<a name="set-sky-box-angle-input"></a>
 

@@ -11,7 +11,7 @@ Sets a material's **Vector3** parameter value for the specified entity\.
 + [Inputs](#material-owner-set-param-vector3-input)
 + [Outputs](#material-owner-set-param-vector3-output)
 
-![\[setparamvector3, setparamvector3node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-material-owner-node.png)
+![\[setparamvector3, setparamvector3node\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-vector3-input"></a>
 

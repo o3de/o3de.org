@@ -16,7 +16,7 @@ The Rain Gem creates realistic rain effects in your levels, including rain drops
 
 This gem is a game object extension\. On initialization, it preloads all textures listed in the `raintextures.xml` file\.
 
-![\[Image NOT FOUND\]](/images/gems/gems-system-gem-rain.png)
+![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-gem-rain.png)
 
 **Note**  
 Place only a single Rain entity in your scene\.
@@ -78,4 +78,4 @@ You can use the following console variables for the rain entity\.
 
 The Rain Sample uses the Rain, Clouds, and LightningArc gems to demonstrate how to use rain as an environment special effects \(FX\) in a level\. The Lightning entity \(from the LightningArc gem\) shows how the lightning FX can enhance a rain storm with flashes of light and random strikes of lightning on the ground\. The clouds are enabled to show how they can fill a scene\.
 
-![\[Image NOT FOUND\]](/images/shared-gem-sample-rain.gif)
+![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-rain.gif)

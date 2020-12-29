@@ -18,13 +18,13 @@ GridMate is Lumberyard's networking system\. Interest manager is Lumberyard's so
 
 Interest manager is an optional feature that controls the sending of replicas in large\-scale network game applications\. [Replica Manager](network-replicas-replica-manager.md) works without interest manager\. However, replica manager sends replicas to all peers\. Thus, all associated entities with the Network Binding component on them appear on all peers\. When the Interest Manager component is created and initialized, it tells the replica manager to no longer broadcast all replicas to all peers\. Interest manager acts as an overseer of replica manager and coordinates replicas and peers\.
 
-![\[Replica manager and interest manager\]](/images/networking/network-interest-manager-large-scale-worlds-1.png)
+![\[Replica manager and interest manager\]](/images/userguide/networking/network-interest-manager-large-scale-worlds-1.png)
 
 ## Interest Manager<a name="network-interest-manager-large-scale-worlds-interest-manager"></a>
 
 Broadcasting all replicas to all peers is not feasible for large\-scale networked worlds\. For these applications, you can use interest manager to control which replicas are broadcast to which peers and under what conditions\. The following diagram shows the relationship between interest manager, clients, and replicas\.
 
-![\[Interest manager, clients, and replicas\]](/images/networking/network-interest-manager-large-scale-worlds-2.png)
+![\[Interest manager, clients, and replicas\]](/images/userguide/networking/network-interest-manager-large-scale-worlds-2.png)
 
 In this arrangement, replicas have *attributes*\. Each peer can have *rules* that define the conditions under which attributes are matched and sent to or removed from that peer\. Your server or authoritative peer can have several *rule handlers* that match rules to attributes\. Interest manager does the work of matching and merging results and sending or removing replicas from the appropriate peers\.
 
@@ -159,7 +159,7 @@ void GamePlayerNetInterest::OnTick(float deltaTime, AZ::ScriptTimePoint time)
 
 The Proximity Net Interest component describes the attribute for the entity to which it is attached\. The component listens to the transform changes of the entity and updates its internal attribute accordingly\. This allows interest manager to control the entity's presence on peers based on the peers' game player net interest\. In the **Entity Inspector**, the name of this component is **Proximity Interest attribute**\.
 
-![\[Proximity Interest attribute in the Entity Inspector\]](/images/networking/network-interest-manager-large-scale-worlds-3.png)
+![\[Proximity Interest attribute in the Entity Inspector\]](/images/userguide/networking/network-interest-manager-large-scale-worlds-3.png)
 
 Entities that are filtered by interest manager have the Proximity Net Interest component attached\. This component listens to transform changes of `TransformComponent` and updates its GridMate attribute accordingly\. The following is the related code snippet from `\dev\MultiplayerSample\Gem\Code\Source\Components\Networking\ProximityNetInterest.cpp`\.
 

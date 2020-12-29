@@ -49,7 +49,7 @@ To view live asset memory allocation, enable the **ImGUI** overlay during gamepl
 
 1. Choose **Asset Memory Analyzer** from the top of the **ImGUI** overlay window\. 
 
-![\[The ImGUI overlay dispalying the Asset Memory Analyzer.\]](/images/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-A-1.22.png)
+![\[The ImGUI overlay dispalying the Asset Memory Analyzer.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-A-1.22.png)
 
 Each recorded asset is displayed along with the number of allocations and total size in kilobytes for both heap and VRAM\. Use the selections at the top of the **ImGUI** overlay window to sort the table by heap size, heap count, VRAM size, VRAM count or by asset label alphabetically\. 
 
@@ -58,13 +58,13 @@ The asset label is the full path for each asset from the root of the project fol
 
 Click the **arrow** to the left of an asset to expand it and view individual allocations and references belonging to the asset\. 
 
-![\[Expanded view of an asset in the Asset Memory Analyzer.\]](/images/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-B-1.22.png)
+![\[Expanded view of an asset in the Asset Memory Analyzer.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-B-1.22.png)
 
 ## Export an Asset Memory Analysis Snapshot to a File<a name="export-asset-memory-analysis-to-file"></a>
 
 Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files through three methods: 
 + Click **Asset Memory Analyzer** in the **ImGUI** overlay window and choose **Export JSON** or **Export CSV**\.   
-![\[Snapshot output options for the Asset Memory Analyzer.\]](/images/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-C-1.22.png)
+![\[Snapshot output options for the Asset Memory Analyzer.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-C-1.22.png)
 + Use the console commands **assetmem\_export\_json** or **assetmem\_export\_csv** in the Editor Console to generate the file\. 
 + Call `ExportJSONFile` or `ExportCSVFile` on the `AssetMemoryAnalyzerRequestBus` in C\+\+, with `nullptr` as the parameter, to generate the file in the default location\. 
 
@@ -81,7 +81,7 @@ Due to the limitations of the `CSV` format, only a top\-level overview of assets
 
 `JSON` snapshots can be viewed in a browser with a web viewer provided with Lumberyard\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\. 
 
-![\[The Asset Memory Viewer displaying a JSON snapshot in a browser.\]](/images/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-D-1.22.png)
+![\[The Asset Memory Viewer displaying a JSON snapshot in a browser.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-D-1.22.png)
 
 **Note**  
 Chromium based browsers are most reliable\. 
@@ -95,7 +95,7 @@ Expanding assets will display individual allocations belonging to the asset and 
 
 The fields at the top of the table can be used to filter the assets by their label on a number of conditions, including regular expressions\. 
 
-![\[The Asset Memory Viewer filtering a JSON snapshot in a browser by keyword.\]](/images/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-E-1.22.png)
+![\[The Asset Memory Viewer filtering a JSON snapshot in a browser by keyword.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-E-1.22.png)
 
 ## Instrumenting Code for Asset Memory Analysis<a name="instrumenting-code"></a>
 

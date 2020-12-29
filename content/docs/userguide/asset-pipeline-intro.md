@@ -12,7 +12,7 @@ The Asset Processor \(AP\) is a service that runs in the background and monitors
 **Note**  
 The asset cache should not be added to your source control\.
 
-![\[Understand the Asset Pipeline and how it processes files for your game project in Amazon Lumberyard.\]](/images/assets/pipeline/asset-pipeline-diagram.png)
+![\[Understand the Asset Pipeline and how it processes files for your game project in Amazon Lumberyard.\]](/images/userguide/assets/pipeline/asset-pipeline-diagram.png)
 
 The Asset Processor detects changes in the directories that contain input assets, with the game directory being the highest priority\. Therefore, if you put assets in the game directory, those assets override assets with the same path in Lumberyard or other directories with lower priority\.
 

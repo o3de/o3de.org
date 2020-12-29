@@ -11,7 +11,7 @@ Loads a time of day preset `XML` file `file_name.xml` and then updates the sky\.
 + [Inputs](#load-definition-file-input)
 + [Outputs](#load-definition-file-output)
 
-![\[loaddefinitionfile, timeofdaypresetfile, loadtimeofdayfile\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-definition-file-node.png)
+![\[loaddefinitionfile, timeofdaypresetfile, loadtimeofdayfile\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-definition-file-node.png)
 
 ## Inputs<a name="load-definition-file-input"></a>
 

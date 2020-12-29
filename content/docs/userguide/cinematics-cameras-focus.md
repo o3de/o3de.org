@@ -20,7 +20,7 @@ DoF is rendered only for a single view pane layout \(the default\) in the viewpo
 1. In Lumberyard Editor, right\-click the **Perspective** title bar in the viewport and choose **Configure Layout**
 
 1. In the **Layout Configuration** dialog box, select the single view pane and then click **OK**\.  
-![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/cinematics-cameras-focus-layout-configuration.png)
+![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/userguide/cinematics-cameras-focus-layout-configuration.png)
 
 1. Right\-click the **Perspective** title bar again and choose **Sequence Camera**\.
 

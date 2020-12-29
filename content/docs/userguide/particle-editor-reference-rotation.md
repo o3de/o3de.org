@@ -7,7 +7,7 @@ title: Rotation Attribute
 
 In the **Rotation** attribute, specify how to control the particle's rotation\.
 
-![\[Rotation attributes in the Particle Editor.\]](/images/particles/particle-editor-rotation.png)
+![\[Rotation attributes in the Particle Editor.\]](/images/userguide/particles/particle-editor-rotation.png)
 
 
 **Rotation Attribute Parameters**  

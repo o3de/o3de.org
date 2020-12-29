@@ -13,7 +13,7 @@ To enable the effect, see [Enable Sharpen](enable-sharpen-node.md)\.
 + [Inputs](#disable-sharpen-note-input)
 + [Outputs](#disable-sharpen-node-output)
 
-![\[disablesharpenfilter, disablesharpenfnode, disablesharpen\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-sharpen-node.png)
+![\[disablesharpenfilter, disablesharpenfnode, disablesharpen\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-sharpen-node.png)
 
 ## Inputs<a name="disable-sharpen-note-input"></a>
 

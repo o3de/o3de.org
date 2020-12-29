@@ -15,7 +15,7 @@ As of Lumberyard 1\.11, separate mappings are exported for the player game clien
   + Right click the name of a deployment name the list, and then select **Export Mapping** from the context menu\.
 
   The following image shows both options\.  
-![\[Export Mapping\]](/images/cloud_canvas/cloud-canvas-rm-export-mapping.png)
+![\[Export Mapping\]](/images/userguide/cloud_canvas/cloud-canvas-rm-export-mapping.png)
 
 **To export a mapping from the command line**
 + Enter the following command, where *<name>* is the name of your deployment\.

@@ -6,7 +6,7 @@ title: Global Configuration
 
 On the **Global Configuration** tab, you can configure world settings and editor settings\.
 
-![\[PhysX Global Configuration tab\]](/images/physx/physx-configuration-1.png)
+![\[PhysX Global Configuration tab\]](/images/userguide/physx/physx-configuration-1.png)
 
 ## World Configuration<a name="physx-configuration-global-world"></a>
 

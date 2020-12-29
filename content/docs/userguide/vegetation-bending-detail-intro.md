@@ -32,7 +32,7 @@ Once you have painted all of the channels, export your asset as an `.fbx` file\.
 
 **Example**  
 
-![\[Example of painted channels final image.\]](/images/vegetation/vegetation-bending-channels.png)
+![\[Example of painted channels final image.\]](/images/userguide/vegetation/vegetation-bending-channels.png)
 
 ## Setting the Detail Bending Parameter<a name="vegetation-bending-detail-params"></a>
 
@@ -44,12 +44,12 @@ For more information, see, [Adding Global Wind](weather-wind-global.md)\.
 
 1. In Lumberyard Editor, choose **Tools**, **Terrain Tool** and then choose **Vegetation**\.
 
-1. In the **Vegetation** section, click the first icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vegetation/vegetation-editor-object-icon.png) to add a vegetation object\.
+1. In the **Vegetation** section, click the first icon ![\[Image NOT FOUND\]](/images/userguide/vegetation/vegetation-editor-object-icon.png) to add a vegetation object\.
 
 1. In the dialog box, select your vegetation object and click **OK**\.
 
 1. In the **Vegetation** section, select the asset that you want to modify, and then set the **Bending** parameter from `0.0` to `100`\.  
-![\[Example of a tree object with detail bending parameter set.\]](/images/vegetation/vegetation-editor-object-select.png)
+![\[Example of a tree object with detail bending parameter set.\]](/images/userguide/vegetation/vegetation-editor-object-select.png)
 
 1. Select your vegetation object, click **Paint Objects**, and then in the viewport, click to place the vegetation object\. 
 

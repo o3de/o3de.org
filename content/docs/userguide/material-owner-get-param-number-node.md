@@ -11,7 +11,7 @@ Returns a material's numerical parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-number-node-input)
 + [Outputs](#material-owner-get-param-number-node-output)
 
-![\[getparamnumbernode, getparamnumber\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-material-owner-node.png)
+![\[getparamnumbernode, getparamnumber\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-number-node-input"></a>
 
