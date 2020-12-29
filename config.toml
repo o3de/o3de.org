@@ -44,8 +44,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Docs Snapshot"
-url ="/docs-snapshot/"
+name = "Documentation"
+url ="/docs/"
 weight = 2
 
 [[menu.main]]
