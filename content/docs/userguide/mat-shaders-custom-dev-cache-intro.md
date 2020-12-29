@@ -1,3 +1,8 @@
+description: ' Improve performance by using a shader cache to store parsed and precompiled
+  shaders in &ALYlong;. '
+slug: mat-shaders-custom-dev-cache-intro
+title: Shader Cache and Generation
+---
 # Shader Cache and Generation<a name="mat-shaders-custom-dev-cache-intro"></a>
 
 This section discusses the shader cache and how to generate shader cache `.pak` files\.

@@ -1,3 +1,8 @@
+description: ' Use the DropdownOption component to make an element an option in a
+  drop-down menu in the &ALYlong; &ui-canvas-editor;. '
+slug: ui-editor-components-dropdownoption
+title: DropdownOption
+---
 # DropdownOption<a name="ui-editor-components-dropdownoption"></a>
 
 You can use the **DropdownOption** component to make an element an option in a drop\-down menu\. When using the **DropdownOption** component, note the following:

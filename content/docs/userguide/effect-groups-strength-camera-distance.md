@@ -1,3 +1,7 @@
+description: ' Set effect strength based on camera distance. '
+slug: effect-groups-strength-camera-distance
+title: Setting Effect Strength Based on Camera Distance
+---
 # Setting Effect Strength Based on Camera Distance<a name="effect-groups-strength-camera-distance"></a>
 
 You can use the **fadeDistance** attribute to set the effect strength based on the distance from the camera\.
@@ -20,7 +24,7 @@ You need to use a script to apply this effect group at the specified position fo
 **Example**  
 The following script uses the **Get World Translation** to send the entity's position to the **Apply Effect Group At Position** node; this node then applies the effect group to that specified position\.  
 
-![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/example-script-apply-effect-group-at-position.png)
+![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](/images/example-script-apply-effect-group-at-position.png)
 
 ## Lua<a name="effect-groups-strength-camera-distance-with-lua"></a>
 

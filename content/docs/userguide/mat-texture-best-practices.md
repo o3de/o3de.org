@@ -1,3 +1,7 @@
+description: ' See the following best practices for textures in &ALYlong;. '
+slug: mat-texture-best-practices
+title: Texture Best Practices
+---
 # Texture Best Practices<a name="mat-texture-best-practices"></a>
 
 When creating textures, consider the following best practices and guidelines: 

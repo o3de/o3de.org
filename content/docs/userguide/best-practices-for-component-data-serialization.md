@@ -1,3 +1,8 @@
+description: ' Learn about ways to help avoid losing data when serializing component
+  data in &ALYlong;. '
+slug: best-practices-for-component-data-serialization
+title: Avoiding Data Loss when Serializing Component Data
+---
 # Avoiding Data Loss when Serializing Component Data<a name="best-practices-for-component-data-serialization"></a>
 
 There are ways that you can avoid data loss when serializing component data\. This topic describes how to deal with slice data patch issues when using version converters, and provides some best practices for avoiding data loss\.

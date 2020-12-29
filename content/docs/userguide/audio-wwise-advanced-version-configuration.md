@@ -1,3 +1,7 @@
+description: ' Use a different version of Wwise for &ALYlong;. '
+slug: audio-wwise-advanced-version-configuration
+title: Using a Different Wwise Version
+---
 # Using a Different Wwise Version<a name="audio-wwise-advanced-version-configuration"></a>
 
 Lumberyard officially supports Wwise LTX version 2018\.1\.2\.6762 and Wwise full version 2018\.1\.4\.6807\.

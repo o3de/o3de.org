@@ -1,8 +1,13 @@
+description: ' Use the Navigation component to enable an entity to find and follow
+  paths in &ALYlong;. '
+slug: component-navigation
+title: Navigation
+---
 # Navigation<a name="component-navigation"></a>
 
 The **Navigation** component provides path\-finding and path\-following functionality for AI movement, typically on a navigation mesh\. 
 
-![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-navigation-path.png)
+![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/component/component-navigation-path.png)
 
 **Topics**
 + [Navigation Component Properties](#component-navigation-properties)
@@ -14,7 +19,7 @@ The **Navigation** component provides path\-finding and path\-following function
 
 The **Navigation** component has the following properties:
 
-![\[Navigation component properties\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-navigation-properties.png)
+![\[Navigation component properties\]](/images/component/component-navigation-properties.png)
 
 **Agent Type**  
 Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](component-nav-area.md) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.  

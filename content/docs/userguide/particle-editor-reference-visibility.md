@@ -1,8 +1,13 @@
+description: ' Use the Visibility attribute in the &ALYlong; &particle-editor; to
+  control the visibility of the particles. '
+slug: particle-editor-reference-visibility
+title: Visibility Attribute
+---
 # Visibility Attribute<a name="particle-editor-reference-visibility"></a>
 
 In the **Visibility** attribute, specify how to control the particle's visibility\.
 
-![\[Visibility attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-visibility.png)
+![\[Visibility attributes in the Particle Editor.\]](/images/particles/particle-editor-visibility.png)
 
 
 **Visibility Attribute Parameters**  

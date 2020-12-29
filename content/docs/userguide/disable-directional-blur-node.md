@@ -1,3 +1,8 @@
+description: ' Use the Disable Directional Blur node in the &ALYlong; &script-canvas;
+  editor to disable the directional blur. '
+slug: disable-directional-blur-node
+title: Disable Directional Blur
+---
 # Disable Directional Blur<a name="disable-directional-blur-node"></a>
 
 Disables the directional blur filter\.
@@ -8,7 +13,7 @@ To enable the effect, see [Enable Directional Blur](enable-directional-blur-node
 + [Inputs](#disable-directional-blur-note-input)
 + [Outputs](#disable-directional-blur-node-output)
 
-![\[disabledirectionalblur, disabledirectionalblurnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-directional-blur-node.png)
+![\[disabledirectionalblur, disabledirectionalblurnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-directional-blur-node.png)
 
 ## Inputs<a name="disable-directional-blur-note-input"></a>
 

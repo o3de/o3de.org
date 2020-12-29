@@ -1,3 +1,8 @@
+description: ' Use the Legacy Game Sample project to learn about &ALYlong; features
+  such as CryAction and CryAISystem. '
+slug: sample-project-legacy
+title: Legacy Sample Project (GameSDK)
+---
 # Legacy Sample Project \(GameSDK\)<a name="sample-project-legacy"></a>
 
 Lumberyard provides a package named Legacy Game Sample that demonstrates how to use Lumberyard features such as CryAction and CryAISystem\. The fully functional game implements the necessary pieces that allow a game to communicate with some of Lumberyard's low\-level systems\. If you are familiar with CryEngine, the legacy game sample is a repurposed version of the GameSDK project\.

@@ -1,3 +1,8 @@
+description: ' Use metadata operations to get metadata from your &cloud; in-game surveys
+  in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations
+title: Metadata Operations
+---
 # Metadata Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations"></a>
 
 You can use metadata operations to get metadata from your Cloud Canvas in\-game surveys\.

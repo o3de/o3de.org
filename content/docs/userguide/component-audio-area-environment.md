@@ -1,3 +1,8 @@
+description: ' Use the Audio Area Environment component in &ALY; to apply an environment
+  effect to sounds that an entity triggers. '
+slug: component-audio-area-environment
+title: Audio Area Environment
+---
 # Audio Area Environment<a name="component-audio-area-environment"></a>
 
 Using the **Audio Area Environment** component, you can apply environment effects to sounds that an entity triggers\. You must also add a shape component to use the audio area environment component\.

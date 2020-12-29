@@ -1,3 +1,7 @@
+description: ' Use Lua scripting to control the UI particle emitter component in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uiparticleemittercomponent
+title: UIParticleEmitterComponent
+---
 # UIParticleEmitterComponent<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent"></a>
 
 Controls the emission of two dimensional particles\. The source code location is `\dev\Gems\LyShine\Code\Source\UiParticleEmitterComponent.*`\.

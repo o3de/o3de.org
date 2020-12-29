@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Sky Highlight component to add bursts of light to
+  the sky. '
+slug: component-sky-highlight
+title: Sky Highlight
+---
 # Sky Highlight<a name="component-sky-highlight"></a>
 
 
@@ -17,7 +22,7 @@ You can add multiple **Sky Highlight** components to your entities in a level, b
 **Example**  
 The following is a sky highlight effect in the distance\.  
 
-![\[Add the Sky Highlight component to your entity to enable flashes of light in the sky, such lightning.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/sky-highlight-component-example.png)
+![\[Add the Sky Highlight component to your entity to enable flashes of light in the sky, such lightning.\]](/images/component/sky-highlight-component-example.png)
 
 **Contents**
 + [Sky Highlight Component Properties](#component-sky-highlight-properties)

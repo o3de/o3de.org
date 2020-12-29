@@ -1,3 +1,7 @@
+description: ' See the HumanSkin shader to render skin in &ALYlong;. '
+slug: shader-ref-humanskin
+title: HumanSkin Shader
+---
 # HumanSkin Shader<a name="shader-ref-humanskin"></a>
 
 The HumanSkin shader is used to render skin and its various physical properties including color, oiliness, pores, stubble, and wrinkles\.

@@ -1,3 +1,8 @@
+description: ' Use the virtual reality samples project to build VR applications for
+  any device for &ALYlong;. '
+slug: sample-project-virtual-reality
+title: Virtual Reality Samples Project
+---
 # Virtual Reality Samples Project<a name="sample-project-virtual-reality"></a>
 
 The Virtual Reality Samples Project is a template that you can use to build virtual reality \(VR\) applications for any supported device\. The sample is configured with the base set of gems \(HMD Framework, Oculus, and OpenVR\) that you need for VR and demonstrates the following essential VR features:
@@ -6,7 +11,7 @@ The Virtual Reality Samples Project is a template that you can use to build virt
 + Spatialized audio playback
 + Stereo 360 video playback
 
-![\[Example image from the VR project sample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/virtual_reality_project_sample.jpg)
+![\[Example image from the VR project sample level.\]](/images/virtual_reality_project_sample.jpg)
 
 **To install the Virtual Reality Samples Project**
 

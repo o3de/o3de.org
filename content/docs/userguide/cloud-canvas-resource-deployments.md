@@ -1,3 +1,8 @@
+description: ' Use &CFN; stacks to deploy resources and use &ALY; tools to create
+  and manage the stacks. '
+slug: cloud-canvas-resource-deployments
+title: Resource Deployments
+---
 # Resource Deployments<a name="cloud-canvas-resource-deployments"></a>
 
 You implement deployments using [AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html)\. You create and manage the stacks using tools provided by Lumberyard\.

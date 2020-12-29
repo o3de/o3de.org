@@ -1,3 +1,8 @@
+description: ' Use the Set Input Vector2 node in the &ALYlong; &script-canvas; editor
+  to set the value of a procedural material input parameter as a Vector2. '
+slug: set-input-vector2-node
+title: Set Input Vector2
+---
 # Set Input Vector2<a name="set-input-vector2-node"></a>
 
 Sets the value of an input parameter as a Vector2\. Use this node with the `Float2` and `Integer2` substance data types\. 
@@ -11,7 +16,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#set-input-vector2-node-input)
 + [Outputs](#set-input-vector2-node-output)
 
-![\[SetInputVector2 sets the Vector2 value for a procedural material input parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector2-node.png)
+![\[SetInputVector2 sets the Vector2 value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector2-node.png)
 
 ## Inputs<a name="set-input-vector2-node-input"></a>
 

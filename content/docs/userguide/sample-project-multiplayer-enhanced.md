@@ -1,3 +1,8 @@
+description: ' Use the Multiplayer sample in &ALYlong; to learn how to build and structure
+  multiplayer games that use the GridMate networking library. '
+slug: sample-project-multiplayer-enhanced
+title: Multiplayer Sample
+---
 # Multiplayer Sample<a name="sample-project-multiplayer-enhanced"></a>
 
 The Multiplayer sample shows you how to build and structure multiplayer games that use the various features of the [GridMate networking](network-intro.md) library\. The new preview attempts to incorporate as many GridMate features as possible but is not comprehensive\. Instead it is intended as a living snapshot of the current state of the networking library\. Consequently, as the sample evolves, features might be added to enhance functionality or removed to keep the sample concise\.

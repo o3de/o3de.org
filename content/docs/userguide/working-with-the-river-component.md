@@ -1,3 +1,7 @@
+description: null
+slug: working-with-the-river-component
+title: Working with the River Component
+---
 # Working with the River Component<a name="working-with-the-river-component"></a>
 
 See the following procedures to create a river and modify its appearance\.
@@ -35,17 +39,17 @@ You can also paint the river bottom with a different texture than the surroundin
 **Example**  
 A river on the ground before a riverbed has been carved out\.  
 
-![\[River on the ground before carving a riverbed.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/carving-riverbed-1.png)
+![\[River on the ground before carving a riverbed.\]](/images/component/carving-riverbed-1.png)
 A river with a **Border width** of `5.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.  
 
-![\[Example river with a smaller embankment and border width.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/carving-riverbed-2.png)
+![\[Example river with a smaller embankment and border width.\]](/images/component/carving-riverbed-2.png)
 A river with a **Border width** of `10.0`, **Embankment** of `3.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.  
 
-![\[Example river with a larger border width and embankment.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/carving-riverbed-3.png)
+![\[Example river with a larger border width and embankment.\]](/images/component/carving-riverbed-3.png)
 You can also lower the river below the ground level and carve the riverbed\. This achieves a different type of terrain deformation\.  
 A river with a **Border width** of `10.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\. This river is positioned below ground level\.  
 
-![\[Example river that is below ground level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/carving-riverbed-4.png)
+![\[Example river that is below ground level.\]](/images/component/carving-riverbed-4.png)
 
 ## Modifying the River Width<a name="modifying-river-width"></a>
 
@@ -53,7 +57,7 @@ You can use the **Global width** parameter to adjust the river's width\. This pa
 
 For more refined control over the river's width, you can adjust the individual points with the **Per\-Vertex Width Modifiers** parameter\.
 
-![\[Per-Vertex Width Modifications with four Elements\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/modifying-road-width-1.png)
+![\[Per-Vertex Width Modifications with four Elements\]](/images/component/modifying-road-width-1.png)
 
 **To adjust the width of individual points**
 + In the **River** component, specify a negative or positive number for the element that you want to modify\.
@@ -62,7 +66,7 @@ For more refined control over the river's width, you can adjust the individual p
 **Example**  
 
   The global width of this river is 2, and the width at the selected point is set to `5`\. That means the total width at the selected point is `7`\.  
-![\[River with one vertex widened\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/modifying-river-width-2.png)
+![\[River with one vertex widened\]](/images/component/modifying-river-width-2.png)
 
 ## Erasing River Vegetation<a name="erasing-river-vegetation"></a>
 
@@ -84,6 +88,6 @@ The road material must use the [WaterVolume Shader](shader-ref-watervolume.md)\.
 
 1. Select the **defaultRiver** or other appropriate river material\.
 
-![\[WaterVolume Shader parameters\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/setting-river-materials-1.png)
+![\[WaterVolume Shader parameters\]](/images/component/setting-river-materials-1.png)
 
 For information about the **WaterVolume Shader** properties, see [WaterVolume Shader](shader-ref-watervolume.md)\.

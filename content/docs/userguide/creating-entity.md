@@ -1,3 +1,7 @@
+description: ' Create an entity with the &entity-outliner; in &ALYlong;. '
+slug: creating-entity
+title: Creating an Entity
+---
 # Creating an Entity<a name="creating-entity"></a>
 
 [Entities](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#entity) are objects with which the player interacts\.

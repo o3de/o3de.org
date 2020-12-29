@@ -1,10 +1,14 @@
+description: ' Learn how to use the Cloud Gem Framework to generate game client code. '
+slug: cloud-canvas-cgf-service-api-game-clients
+title: Game Clients
+---
 # Game Clients<a name="cloud-canvas-cgf-service-api-game-clients"></a>
 
 The Cloud Gem Framework can generate game clients for your service API\.
 
 The game client can call some API operations on behalf of the player\. Other operations are callable only by other roles for use in the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) or other tools\. By default, the client uses the AWS credentials by assuming the `Player` role through an Amazon Cognito identity pool\. This process, described in detail in [Player Identity](cloud-canvas-rm-security-player-identity.md), is illustrated in the following diagram\.
 
-![\[Client assumes the Player role\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-service-api-4.png)
+![\[Client assumes the Player role\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-4.png)
 
 ## Generating a Game Client<a name="cloud-canvas-cgf-service-api-game-clients-generating"></a>
 

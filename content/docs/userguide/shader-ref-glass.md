@@ -1,3 +1,8 @@
+description: ' Enable glass shaders to render windows and glass objects with effects
+  such as fog and tint for &ALYlong;. '
+slug: shader-ref-glass
+title: Glass Shader
+---
 # Glass Shader<a name="shader-ref-glass"></a>
 
 The Glass shader renders windows and other glass objects, imparting refractive, tint, fog, and cracking effects for both breakable and non\-breakable glass objects\. Use the [Illum Shader](shader-ref-illum.md) instead if you require non\-refractive effects for non\-breakable glass objects\. 

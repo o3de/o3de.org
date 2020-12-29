@@ -1,3 +1,8 @@
+description: ' Use the Enable Sharpen node in the &ALYlong; &script-canvas; editor
+  to configure the sharpen filter effect. '
+slug: enable-sharpen-node
+title: Enable Sharpen
+---
 # Enable Sharpen<a name="enable-sharpen-node"></a>
 
 Applies a sharpen filter\. You can specify a negative value to blur the screen\.
@@ -8,11 +13,11 @@ To disable the effect, see [Disable Sharpen](disable-sharpen-node.md)\.
 + [Inputs](#enable-sharpen-note-input)
 + [Outputs](#enable-sharpen-node-output)
 
-![\[enablesharpennode, enablesharpen\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-sharpen-node.png)
+![\[enablesharpennode, enablesharpen\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-sharpen-node.png)
 
 **Example**  
 
-![\[Use the Enable Sharpen node to sharpen the game details.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-sharpen-node-example.png)
+![\[Use the Enable Sharpen node to sharpen the game details.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-sharpen-node-example.png)
 
 ## Inputs<a name="enable-sharpen-note-input"></a>
 

@@ -1,10 +1,15 @@
+description: ' Use the Navigation Seed component to generate a color-coded markup
+  that indicates where your AI can travel in &ALYlong;. '
+slug: component-nav-seed
+title: Navigation Seed
+---
 # Navigation Seed<a name="component-nav-seed"></a>
 
 The **Navigation Seed** component marks chunks of the [**Navigation Area**](component-nav-area.md) that are accessible to AI agents\. Game developers can use this component as a visual aid to determine where AI agents can go\. 
 
 The **[Navigation Area](component-nav-area.md)** component can generate a complex\-looking mesh with disconnected islands\. If this happens, it can be difficult to determine the precise places that your AI can reach\. In this case, use the **Navigation Seed** component**** to render a color\-coded map\. The blue chunks are accessible to AI and the red chunks are inaccessible\.
 
-![\[Example Navigation Seed component with red and blue chunks.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-navigation-mesh-seed-enabled.png)
+![\[Example Navigation Seed component with red and blue chunks.\]](/images/component/component-navigation-mesh-seed-enabled.png)
 
 For example, [static objects](component-nav-area.md#component-nav-area-static-entities), [exclusion areas](component-nav-area.md#component-nav-area-exclusion), or terrain features can divide a [navigation area](component-nav-area.md) into multiple chunks\. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\)\. You might have multiple navigation areas in one location, such as for different [agent types](component-navigation.md#component-navigation-properties)\. In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](component-nav-area.md#component-nav-area-properties-agent-types) or a specific agent type in the chunk where you placed the navigation seed\.
 

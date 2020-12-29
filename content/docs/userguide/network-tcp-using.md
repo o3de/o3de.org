@@ -1,3 +1,8 @@
+description: ' Specify connection parameters to use the TCP stream socket driver in
+  &ALYlong; 1.10 and later. '
+slug: network-tcp-using
+title: Using the TCP Stream Driver
+---
 # Using the TCP Stream Driver<a name="network-tcp-using"></a>
 
 To use the TCP stream socket driver, you specify connection parameters for internal buffers, a listening port, and the maximum number of connections\.

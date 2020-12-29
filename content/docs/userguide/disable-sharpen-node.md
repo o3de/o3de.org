@@ -1,3 +1,8 @@
+description: ' Use the Disable Sharpen node in the &ALYlong; &script-canvas; editor
+  to disable the sharpen filter. '
+slug: disable-sharpen-node
+title: Disable Sharpen
+---
 # Disable Sharpen<a name="disable-sharpen-node"></a>
 
 Disables the sharpen filter\.
@@ -8,7 +13,7 @@ To enable the effect, see [Enable Sharpen](enable-sharpen-node.md)\.
 + [Inputs](#disable-sharpen-note-input)
 + [Outputs](#disable-sharpen-node-output)
 
-![\[disablesharpenfilter, disablesharpenfnode, disablesharpen\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-sharpen-node.png)
+![\[disablesharpenfilter, disablesharpenfnode, disablesharpen\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-sharpen-node.png)
 
 ## Inputs<a name="disable-sharpen-note-input"></a>
 

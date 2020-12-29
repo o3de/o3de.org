@@ -1,3 +1,8 @@
+description: ' Use the Gameplay Bus to end contextual messages between the visual
+  scripting, scripting, and code parts of your game '
+slug: component-entity-system-gameplay-bus
+title: Gameplay Bus
+---
 # Gameplay Bus<a name="component-entity-system-gameplay-bus"></a>
 
 

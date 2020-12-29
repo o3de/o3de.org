@@ -1,3 +1,8 @@
+description: ' Modify the export properties of your .fbx files with FBX Settings in
+  &ALYlong;. '
+slug: fbx-properties
+title: FBX Settings export properties
+---
 # FBX Settings export properties<a name="fbx-properties"></a>
 
 
@@ -19,11 +24,11 @@
 
 With **FBX Settings** you can customize how **Asset Processor** exports your `.fbx` files as runtime assets\. **FBX Settings** presents options based on the contents of the selected `.fbx` file\. 
 
-![\[The FBX Settings tool interface.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-A-1.25.png)
+![\[The FBX Settings tool interface.\]](/images/fbx/ui-fbx-settings-A-1.25.png)
 
 Your `.fbx` files can contain any number of assets\. You can create a single `.fbx` file that contains multiple characters, with LoDs, and animations, or a single `.fbx` file containing all the vegetation assets required for a level\. When these assets are processed they appear as children of the `.fbx` file in **Asset Browser**\. 
 
-![\[Processed FBX assets in Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-asset-browser-1.27.png)
+![\[Processed FBX assets in Asset Browser.\]](/images/fbx/ui-fbx-asset-browser-1.27.png)
 
 ## Modify FBX Settings<a name="fbx-properties-modify"></a>
 
@@ -32,7 +37,7 @@ Your `.fbx` files can contain any number of assets\. You can create a single `.f
 Enter **fbx** into **Asset Browser**'s search bar to find `.fbx` files\. 
 
 1. Right\-click the `.fbx` file and then choose **Edit Settings**\.   
-![\[Right click to open FBX Settings.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-open-1.27.png)
+![\[Right click to open FBX Settings.\]](/images/fbx/ui-fbx-settings-open-1.27.png)
 
 1. There are four possible tabs in **FBX Settings**\. The available tabs depend on the contents of the `.fbx` file: 
    + **Meshes** \- In the **Meshes** tab, you can create groups and modify export settings for meshes\. Exported mesh data is stored in a `.cgf` file\. 

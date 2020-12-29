@@ -1,3 +1,8 @@
+description: ' Enable the Watervolume shader to render bodies of water such as lakes,
+  pools, and so on in &ALYlong;. '
+slug: shader-ref-watervolume
+title: WaterVolume Shader
+---
 # WaterVolume Shader<a name="shader-ref-watervolume"></a>
 
 The Watervolume shader is used for rendering volumetric bodies of water including lakes, pools, and rivers and imparts various reflection, ripple, and foam effects\. For the ocean, use the [Water Shader](shader-ref-water.md) instead\. Here are a few notes regarding usage of this shader:

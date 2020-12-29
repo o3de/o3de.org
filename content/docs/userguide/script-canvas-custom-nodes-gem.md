@@ -1,3 +1,7 @@
+description: ' Create custom &script-canvas; nodes in a gem for &ALYlong;. '
+slug: script-canvas-custom-nodes-gem
+title: Creating Custom &script-canvas; Nodes in a Gem
+---
 # Creating Custom Script Canvas Nodes in a Gem<a name="script-canvas-custom-nodes-gem"></a>
 
 To have a gem support custom Script Canvas nodes, you must configure it to take a dependency on Script Canvas and then configure Waf\. The following procedure uses the Starting Point Input Gem as an example\.

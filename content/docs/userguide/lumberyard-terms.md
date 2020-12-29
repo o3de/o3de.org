@@ -1,3 +1,7 @@
+description: ' Learn more about terms and key concepts for &ALYlong;. '
+slug: lumberyard-terms
+title: Key &ALY; Terminology
+---
 # Key Lumberyard Terminology<a name="lumberyard-terms"></a>
 
 If you are new to working with Lumberyard, see the following list to learn about key terms and concepts for Lumberyard\. For more information, see the additional topics for in\-depth descriptions and procedures\.
@@ -8,7 +12,7 @@ An actor is an entity that you create for characters in your game\. You can then
 **Example Actor**  
 The entity in the Lumberyard Editor viewport has an **Actor** component attached\.  
 
-![\[You can add an Actor component to an entity to create a character for your game.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terms/example-actor-entity-and-component.png)
+![\[You can add an Actor component to an entity to create a character for your game.\]](/images/terms/example-actor-entity-and-component.png)
 For more information, see [Create and animate characters](char-intro.md)\.
 
 **Asset Builder API**  
@@ -21,7 +25,7 @@ This utility is a background service that monitors changes to your source files 
 **Example Importing Assets**  
 When you import assets into your game project, Asset Processor automatically detects the change and processes them\.  
 
-![\[You can import assets for your game with Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assets/pipeline/asset-pipeline-importing.png)
+![\[You can import assets for your game with Asset Processor.\]](/images/assets/pipeline/asset-pipeline-importing.png)
 For more information, see [Working with the Asset Pipeline and asset files](asset-pipeline-intro.md)\.
 
 **AZ Code Generator**  
@@ -30,7 +34,7 @@ For example, you can use the AZ Code Generator feature to create a component tha
 
 **Example AZ Code Generator Process**  
 
-![\[You can create your own components with the AZ Code Generator.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/az-code-gen-workflow.png)
+![\[You can create your own components with the AZ Code Generator.\]](/images/az-code-gen-workflow.png)
 For more information, see [Automating boilerplate with AZ Code Generator](az-code-gen-intro.md)\.
 
 **Behavior Context**  
@@ -46,7 +50,7 @@ An entity is a game object with a unique ID and a container\. An entity contains
 **Example Entities and Components**  
 You can see entities in the **Entity Outliner** and the components attached to that entity in the **Entity Inspector**\.  
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/component-entity-inspector.png)
+![\[Image NOT FOUND\]](/images/component/entity_system/component-entity-inspector.png)
 For more information about entities and components, see [Working with component entities](component-intro.md)\.
 
 **Event Bus System**  
@@ -66,7 +70,7 @@ For more information, see [Creating a Gem](gems-system-gems.md)\.
 **Example Gems**  
 You can enable gems for your game project with the Project Configurator\.  
 
-![\[Gems provide your project with packages of assets and code.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems-system-gems-select-gems.png)
+![\[Gems provide your project with packages of assets and code.\]](/images/gems-system-gems-select-gems.png)
 
 **GridMate Networking System**  
 GridMate is the Lumberyard networking library for hosting multiplayer gameplay on client\-server or peer\-to\-peer architectures\. You can enable the Multiplayer gem to include this library and the NetBindable interface for your project\.   
@@ -79,7 +83,7 @@ Slices contain entities, including their components and properties, and may also
 **Example Slice**  
 **Simple\_JackLocomotion** is a slice that contains two entities – **Jack** and **Camera**\. You can find this slice in the [Samples Project](sample-project-samples.md)\.  
 
-![\[A slice shown in the viewport and in the Entity Outliner.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terms/term-slice-cube-outliner.png)
+![\[A slice shown in the viewport and in the Entity Outliner.\]](/images/terms/term-slice-cube-outliner.png)
 For more information, see [Working with Slices](component-slices.md)\.
 
 **Virtual File System \(VFS\)**  

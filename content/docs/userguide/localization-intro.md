@@ -1,3 +1,7 @@
+description: Learn about &ALYlong;'s localization system.
+slug: localization-intro
+title: Localizing Game Projects
+---
 # Localizing Game Projects<a name="localization-intro"></a>
 
 You can create multiple\-language, region\-specific versions of your game using Lumberyard's localization system\. 

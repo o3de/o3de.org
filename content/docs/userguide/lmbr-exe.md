@@ -1,3 +1,8 @@
+description: ' Use lmbr.exe to modify your &ALYlong; project capabilities, create
+  new projects, save active projects, and enable, disable, or create gems. '
+slug: lmbr-exe
+title: Managing Game Projects with Lmbr.exe
+---
 # Managing Game Projects with Lmbr\.exe<a name="lmbr-exe"></a>
 
 
@@ -22,7 +27,7 @@
    ```
 
    The list of possible commands appears\.  
-![\[Lmbr.exe help commands.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/configurator-lmbr.png)
+![\[Lmbr.exe help commands.\]](/images/configurator-lmbr.png)
 
 You can also use `-help` on other commands\. For example, to see more information about Lumberyard capabilities, you can enter the following commands: 
 

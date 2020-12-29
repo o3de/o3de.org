@@ -1,3 +1,8 @@
+description: ' Use material nodes in &ly-editor;''s &trackview-editor; to animate
+  commonly used material properties. '
+slug: cinematics-track-view-nodes-material
+title: Material Node
+---
 # Material Node<a name="cinematics-track-view-nodes-material"></a>
 
 **Material** nodes help you animate commonly used material properties that you would normally set in the **Material Editor**\. You can add **Material** nodes through a sequence or from the **Director** node\.
@@ -16,7 +21,7 @@ A recommended workflow is to select the material inside the **Material Editor** 
 1. Navigate to the material that you want to animate\.
 
 1. Right\-click the selected material and choose **Copy Path to Clipboard**\. If the material is in a material group, select the group and copy the group name to the clipboard\.  
-![\[Copy the material name path in the Material Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-track-view-nodes-material-4.png)
+![\[Copy the material name path in the Material Editor.\]](/images/cinematics/cinematics-track-view-nodes-material-4.png)
 
 1. Choose **Tools**, **Track View**\. 
 

@@ -1,3 +1,7 @@
+description: ' Use AzTest and AZ Test Scanner to perform automated testing in &ALYlong;. '
+slug: testing-aztest-writing-tests
+title: Writing Tests for AzTest
+---
 # Writing Tests for AzTest<a name="testing-aztest-writing-tests"></a>
 
 Automated testing is important for any game project\. To perform automated testing in Lumberyard, you can use AzTest and the AZ test scanner\. This document shows you how to write the tests to build and run\. For information on building and running unit and integration tests, see [Using AZ Test Scanner](testing-aztestscanner.md)\.

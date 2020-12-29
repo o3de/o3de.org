@@ -1,3 +1,8 @@
+description: ' Use ShowMouseCursor to toggle the visibility of the mouse cursor in
+  &ALYlong;. '
+slug: lua-scripting-ces-api-ui-showmousecursor
+title: LyShineLua.ShowMouseCursor
+---
 # LyShineLua\.ShowMouseCursor<a name="lua-scripting-ces-api-ui-showmousecursor"></a>
 
 Controls the visibility of the mouse cursor\. `1` specifies that the mouse cursor is displayed; `0` specifies that it is hidden\.

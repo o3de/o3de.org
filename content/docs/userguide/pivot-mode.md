@@ -1,3 +1,7 @@
+description: ' Use pivot mode to set a center point of reference for entities in &ALYlong;. '
+slug: pivot-mode
+title: Using Pivot Mode
+---
 # Using Pivot Mode<a name="pivot-mode"></a>
 
 You can use pivot mode to use the default pivot or the entity's center as the manipulator point of reference\. This feature is useful if you want to modify multiple entities using a central point of reference\. 
@@ -13,4 +17,4 @@ Currently, this is a global toggle and doesn't support mixed use cases, such as 
 **Example**  
 
    In the following example, the selected entities pivot around the manipulator\.   
-![\[Modify entities using pivot mode in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/viewportinteractionmodel/viewport-selection-model-16.gif)
+![\[Modify entities using pivot mode in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-16.gif)

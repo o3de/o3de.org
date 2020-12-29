@@ -1,3 +1,8 @@
+description: ' Learn about versioning of &LAM; code and custom resource instances
+  in &ALYlong;. '
+slug: cloud-canvas-cgf-adding-aws-resources-versioning
+title: Versioning of Custom Resources
+---
 # Versioning of Custom Resources<a name="cloud-canvas-cgf-adding-aws-resources-versioning"></a>
 
 In Lumberyard 1\.15 and earlier versions, the most recent version of Lambda code was used to process custom resource instance events\. This caused rollback issues when existing resources were processed by newer versions of the same code\.

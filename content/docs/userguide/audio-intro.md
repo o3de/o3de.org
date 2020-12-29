@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s audio translation layer (ATL) to develop your game
+  audio without affecting game logic. '
+slug: audio-intro
+title: Adding Audio and Sound Effects
+---
 # Adding Audio and Sound Effects<a name="audio-intro"></a>
 
 Lumberyard uses an audio translation layer \(ATL\) to interface between Lumberyard and third\-party audio middleware, so you can develop and change your audio implementation without affecting the game logic\. The game logic interacts with ATL controls, which map to their audio middleware equivalents through the Audio Controls Editor\. For example, to play a sound, the game executes an ATL trigger, which is mapped to a 'Play' event in the audio middleware\.

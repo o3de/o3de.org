@@ -1,3 +1,7 @@
+description: ' Add tags for &script-canvas; nodes in &ALYlong;. '
+slug: script-canvas-custom-nodes-az-code-generator-tags
+title: '&script-canvas; Tags for AZ Code Generator'
+---
 # Script Canvas Tags for AZ Code Generator<a name="script-canvas-custom-nodes-az-code-generator-tags"></a>
 
 Script Canvas provides a variety of tags that AZ Code Generator uses\. These tags can be found in the source code location `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\. Because the tags are well documented in the code, this guide focuses on showing how to use them rather than on covering each one in detail\.
@@ -80,4 +84,4 @@ ScriptCanvas_Property(float,
 
 In the **Script Canvas** editor, the node shows the **Time**, **Loop**, **Hold**, and **Elapsed** properties that were defined:
 
-![\[Properties on the Delay node\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-custom-nodes-2.png)
+![\[Properties on the Delay node\]](/images/scripting/script-canvas/script-canvas-custom-nodes-2.png)

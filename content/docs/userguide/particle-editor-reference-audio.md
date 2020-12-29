@@ -1,8 +1,13 @@
+description: ' Use the Audio attribute in the &ALYlong; &particle-editor; to specify
+  which sounds the particle system emits and when. '
+slug: particle-editor-reference-audio
+title: Audio Attribute
+---
 # Audio Attribute<a name="particle-editor-reference-audio"></a>
 
 In the **Audio** attribute, specify which sounds the particle system emits and when\.
 
-![\[Audio attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-audio.png)
+![\[Audio attributes in the Particle Editor.\]](/images/particles/particle-editor-audio.png)
 
 
 **Audio Attribute Parameters for CPU Emitters**  

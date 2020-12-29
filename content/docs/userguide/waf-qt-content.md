@@ -1,3 +1,7 @@
+description: ' Add Qt 5 content to the Waf build system in &ALYlong;. '
+slug: waf-qt-content
+title: Adding Qt 5 Content to Waf
+---
 # Adding Qt 5 Content to Waf<a name="waf-qt-content"></a>
 
 You can add Qt 5 content into the Waf build system\. Typically you use an IDE \(integrated development environment\) tool such as Qt Designer to create and edit the Qt source file\. As with all files that are processed through the Waf build system, the Qt source file must be included in the corresponding `*.waf_files` file for each project\.

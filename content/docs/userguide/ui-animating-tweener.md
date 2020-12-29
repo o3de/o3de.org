@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s Scripted Tweener Entity system to create animations
+  in your game''s UI. '
+slug: ui-animating-tweener
+title: Scripted Tweener Entity System
+---
 # Scripted Tweener Entity System<a name="ui-animating-tweener"></a>
 
 Lumberyard's Scripted Tweener Entity system is a script\-driven animation system that creates powerful and flexible animations\. To use this system, [enable](gems-system-using-project-configurator.md) the [Scripted Tweener Entity](gems-system-gem-scripted-tweener.md) gem\. In the [Samples Project](sample-project-samples.md), this gem is enabled by default\.

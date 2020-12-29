@@ -1,3 +1,8 @@
+description: ' Learn the startup sequence for compiled &ALYlong; games and how to
+  create the bootstrap.cfg file. '
+slug: asset-pipeline-game-sequence
+title: Game Startup Sequence
+---
 # Game Startup Sequence<a name="asset-pipeline-game-sequence"></a>
 
 Compiled Lumberyard games start up in the following sequence:

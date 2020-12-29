@@ -1,3 +1,8 @@
+description: ' Use the Get Input Vector4 node in the &ALYlong; &script-canvas; editor
+  to return the value of a procedural material input parameter as a Vector4. '
+slug: get-input-vector4-node
+title: Get Input Vector4
+---
 # Get Input Vector4<a name="get-input-vector4-node"></a>
 
 Returns the value of an input parameter as a Vector4\. Use this node with the `Float4` and `Integer4` substance data types\. 
@@ -9,7 +14,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#get-input-vector4-node-input)
 + [Outputs](#get-input-vector4-node-output)
 
-![\[GetInputVector4 gets the Vector4 value for a procedural material's parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector4-node.png)
+![\[GetInputVector4 gets the Vector4 value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector4-node.png)
 
 ## Inputs<a name="get-input-vector4-node-input"></a>
 

@@ -1,3 +1,7 @@
+description: ' Move an entity in a scene &ALYlong;. '
+slug: cinematics-animation-char-move
+title: Moving an Entity in a Scene
+---
 # Moving an Entity in a Scene<a name="cinematics-animation-char-move"></a>
 
 You can use the Track View to move or rotate any entity in a scene\.

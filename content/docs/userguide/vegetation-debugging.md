@@ -1,3 +1,7 @@
+description: ' Learn how to debug vegetation issues in your &ALY; game project. '
+slug: vegetation-debugging
+title: Vegetation Debugging
+---
 # Vegetation Debugging<a name="vegetation-debugging"></a>
 
 Branches and tree trunks can be broken upon collision\.

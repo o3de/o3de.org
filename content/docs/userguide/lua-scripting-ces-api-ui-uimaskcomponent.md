@@ -1,3 +1,8 @@
+description: ' Use the UIMaskComponent to show only part of the content of a component''s
+  child elements in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uimaskcomponent
+title: UIMaskComponent
+---
 # UIMaskComponent<a name="lua-scripting-ces-api-ui-uimaskcomponent"></a>
 
 You can add a mask component to an element to show only a part of the content of its child elements \(for example, example, image or text\)\.

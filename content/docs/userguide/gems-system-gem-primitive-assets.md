@@ -1,3 +1,8 @@
+description: ' Use the Primitive Assets Gem in your &ALY; project to add primitive
+  objects with physics enabled. '
+slug: gems-system-gem-primitive-assets
+title: Primitive Assets Gem
+---
 # Primitive Assets Gem<a name="gems-system-gem-primitive-assets"></a>
 
 The Primitive Assets Gem provides primitive objects that are physics enabled and unit size \(1x1x1\), with a gray checkerboard texture\. The checkerboard texture is RGB middle gray \(127,127,127\) and sRGB middle gray \(187,187,187\)\. Diffuse, normal, and specular maps are included\. The primitive object models have import settings, a material, and a slice\. Each slice contains the object mesh and the appropriate **Shape** and **Rigid Body Physics** components\. You can use these to add the cube, sphere, and cylinder objects to your level and manipulate the objects, create a placeholder, or test Lumberyard Editor features\.
@@ -10,4 +15,4 @@ You can add the primitive objects to your game project by doing either of the fo
 
 For more information, see [Creating a Game Project in Lumberyard](configurator-projects.md#creating-a-game-project)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/project-template-default-simple-level.png)
+![\[Image NOT FOUND\]](/images/gems/project-template-default-simple-level.png)

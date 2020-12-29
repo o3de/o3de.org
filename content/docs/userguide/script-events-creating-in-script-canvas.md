@@ -1,3 +1,7 @@
+description: null
+slug: script-events-creating-in-script-canvas
+title: Creating Script Events in &script-canvas;
+---
 # Creating Script Events in Script Canvas<a name="script-events-creating-in-script-canvas"></a>
 
 In Lumberyard Editor, you can create script events by using the Asset Editor\.
@@ -5,13 +9,13 @@ In Lumberyard Editor, you can create script events by using the Asset Editor\.
 **To create a script event**
 
 1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\.  
-![\[Choose Tools, Asset Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/script-canvas-script-events-1.png)
+![\[Choose Tools, Asset Editor.\]](/images/script-canvas-script-events-1.png)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Script Events**\.  
-![\[Choose File, New, Script Events in the Asset Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/script-canvas-script-events-2.png)
+![\[Choose File, New, Script Events in the Asset Editor.\]](/images/script-canvas-script-events-2.png)
 
 1. In the **Asset Editor**, enter the information that defines the script event\.  
-![\[Creating a script event in the Asset Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/script-canvas-script-events-3.png)  
+![\[Creating a script event in the Asset Editor.\]](/images/script-canvas-script-events-3.png)  
 **Script Event Properties**    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/script-events-creating-in-script-canvas.html)  
 **Event Properties**    

@@ -1,3 +1,8 @@
+description: Use the lmbr gems command to list, disable, enable, and create &ALY;
+  Gems.
+slug: lmbr-exe-gem
+title: Gems Commands
+---
 # Gems Commands<a name="lmbr-exe-gem"></a>
 
 Use the following commands to create gems and modify a project's use of gems\.

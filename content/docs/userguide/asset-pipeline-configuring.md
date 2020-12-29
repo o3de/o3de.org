@@ -1,3 +1,8 @@
+description: ' Configure the Asset Pipeline to customize the processing of assets
+  in &ALYlong;. '
+slug: asset-pipeline-configuring
+title: Configuring the Asset Pipeline
+---
 # Configuring the Asset Pipeline<a name="asset-pipeline-configuring"></a>
 
 **Important**  

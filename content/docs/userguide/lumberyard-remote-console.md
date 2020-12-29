@@ -1,3 +1,8 @@
+description: ' Use console commands to modify and configure the &ALYlong; runtime
+  application. '
+slug: lumberyard-remote-console
+title: '&remote-console;'
+---
 # Universal Remote Console<a name="lumberyard-remote-console"></a>
 
 You can use **Console** commands to modify and configure the Lumberyard runtime application\. On a PC, the **Console** is available from Lumberyard Editor or the game\. But for mobile platforms you must use a separate Windows\-based application called the Universal Remote Console\. With the Universal Remote Console you can use the IP address of the machine running the Lumberyard game to connect to a remote instance of Lumberyard\.
@@ -7,7 +12,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 **To start the Universal Remote Console**
 
 1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/remote-console.png)
+![\[Image NOT FOUND\]](/images/remote-console.png)
 
 1. To see output from the Lumberyard logging system, click the **Full Log** tab\. 
 

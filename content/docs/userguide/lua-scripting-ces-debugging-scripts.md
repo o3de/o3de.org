@@ -1,3 +1,7 @@
+description: ' Learn about debugging Lua scripts in &ALYlong;. '
+slug: lua-scripting-ces-debugging-scripts
+title: ' Debugging Lua Scripts'
+---
 # Debugging Lua Scripts<a name="lua-scripting-ces-debugging-scripts"></a>
 
 Lumberyard provides Lua scripts with several functions to make debugging easier\.

@@ -1,3 +1,8 @@
+description: ' Use the cloud gem cross-communication feature in &ALYlong; to enable
+  a cloud gem to provide a service to other cloud gems on the backend. '
+slug: cloud-canvas-cgf-service-api-cross-gem-communication
+title: Cross-Gem Communication
+---
 # Cross\-Gem Communication<a name="cloud-canvas-cgf-service-api-cross-gem-communication"></a>
 
 Cloud gems can use the cross\-communication feature to expose their API operations to one another and use each other's backend services\. For example, Lumberyard's [Player Account Cloud Gem](cloud-canvas-cloud-gem-player-account.md) provides a banned player service that the [Leaderboard Cloud Gem](cloud-canvas-cloud-gem-leaderboard.md) uses to limit fraudulent scores\. You can also use cloud gem cross\-communication to notify multiple gems when an event occurs\.

@@ -1,3 +1,8 @@
+description: ' Create a canvas in the &ui-canvas-editor; to use as an invisible backdrop
+  for your game user interface elements in &ALYlong;. '
+slug: ui-editor-creating-canvases
+title: Working with UI Canvases
+---
 # Working with UI Canvases<a name="ui-editor-creating-canvases"></a>
 
 The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements\. Once you create a canvas, you can add elements such as images, text, and buttons\.
@@ -29,4 +34,4 @@ From the **UI Editor**'s **File** menu, in addition to the basic open, close, an
 + Close all open canvases
 + Close all but the active canvas
 
-![\[UI Editor File menu\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-creating-canvases-1.png)
+![\[UI Editor File menu\]](/images/game_ui_editor/ui-editor-creating-canvases-1.png)

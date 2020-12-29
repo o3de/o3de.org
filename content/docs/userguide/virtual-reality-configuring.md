@@ -1,3 +1,8 @@
+description: ' Use the &project-configurator; to add the Virtual Reality Gem(s) to
+  enable support for head-mounted display (HMD) in your project. '
+slug: virtual-reality-configuring
+title: Configuring your Project for Virtual Reality
+---
 # Configuring your Project for Virtual Reality<a name="virtual-reality-configuring"></a>
 
 Add one or more Virtual Reality gems available in Lumberyard Editor to enable virtual reality for supported head\-mounted displays \(HMDs\)\. You can add the gem\(s\) to new or existing projects\. If you add more than one gem, the system automatically detects which HMD is connected, and uses the appropriate gem code to control the specific HMD and any associated virtual reality \(VR\) controllers\. 
@@ -21,7 +26,7 @@ Use the **NullVR** Gem to run your level through the HMD framework without a con
    + **Oculus**
    + **OpenVR**
    + **NullVR**  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vr/virtual-reality-add-gems.png)
+![\[Image NOT FOUND\]](/images/vr/virtual-reality-add-gems.png)
 
 1. Click **Save**\.
 

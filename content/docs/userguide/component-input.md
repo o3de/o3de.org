@@ -1,3 +1,7 @@
+description: ' Use the Input component to bind raw input to events in &ALYlong;. '
+slug: component-input
+title: Input
+---
 # Input<a name="component-input"></a>
 
 You can use the **Input** component to bind raw input to events in your game\. The **Input** component references an `.inputbindings` file, which binds a set of inputs \(such as from a mouse, keyboard, game controller, and so on\) to an event\. 
@@ -14,7 +18,7 @@ To work with inputs, you must enable the [Input Management Framework](gems-syste
 
 ## Input Properties<a name="component-input-configuration-properties"></a>
 
-![\[\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/input-component-properties.png)
+![\[\]](/images/component/input-component-properties.png)
 
 The **Input** component has the following properties\.
 

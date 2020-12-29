@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; console variables (CVARs) to debug your cinematic
+  scenes. '
+slug: cinematics-debugging
+title: Debugging Cinematic Scenes with Console Variables
+---
 # Debugging Cinematic Scenes with Console Variables<a name="cinematics-debugging"></a>
 
 You can specify the following console variables when profiling a scene\. For more information, see [Using the Console Window](console-intro.md)\.

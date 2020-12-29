@@ -1,3 +1,7 @@
+description: ' See the following decal projection types in &ALYlong;. '
+slug: mat-maps-decal-types
+title: Decal Projection Types
+---
 # Decal Projection Types<a name="mat-maps-decal-types"></a>
 
 Decals have several different projection types\. To change projection type, select the decal and change the **ProjectionType** value\.

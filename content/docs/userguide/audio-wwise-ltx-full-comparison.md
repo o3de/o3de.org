@@ -1,3 +1,8 @@
+description: ' See the differences between Wwise Full and Wwise LTX, which are sound
+  implementations used in &ALYlong;. '
+slug: audio-wwise-ltx-full-comparison
+title: Comparing Wwise Full to Wwise LTX
+---
 # Comparing Wwise Full to Wwise LTX<a name="audio-wwise-ltx-full-comparison"></a>
 
 The following comparison table summarizes the differences in features between Wwise LTX and Wwise Full\.

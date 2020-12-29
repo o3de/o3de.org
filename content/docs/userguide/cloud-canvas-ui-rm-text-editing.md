@@ -1,3 +1,8 @@
+description: ' Use the &cloud; Resource Manager UI or an external editor to edit the
+  &cloud; text files in your &ALYlong; project. '
+slug: cloud-canvas-ui-rm-text-editing
+title: Editing Resource Manager Files
+---
 # Editing Resource Manager Files<a name="cloud-canvas-ui-rm-text-editing"></a>
 
 The navigation pane in the **Cloud Canvas Resource Manager** dialog contains a number of nodes that represent text files that are stored on disk\. The [resource\-template\.json ](cloud-canvas-ui-rm-json-file-nodes.md#cloud-canvas-ui-rm-resource-template-json) node is one example\. 
@@ -20,7 +25,7 @@ You can use an external script editor instead of the **Cloud Canvas Resource Man
 
 **To open a file in an external script editor**
 + Right\-click the file in the navigation pane and choose **Open in script editor**:   
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-text-editing-open-file-external-editor.png)
+![\[Image NOT FOUND\]](/images/cloud_canvas/cloud-canvas-ui-rm-text-editing-open-file-external-editor.png)
 
  To copy the path of the template file to the clipboard, right\-click the file in the navigation pane and choose **Copy path to clipboard**\. 
 

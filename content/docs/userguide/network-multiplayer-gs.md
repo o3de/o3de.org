@@ -1,3 +1,7 @@
+description: ' Create a simple multiplayer test game level in &ALYlong;. '
+slug: network-multiplayer-gs
+title: ' Tutorial: Getting Started with Multiplayer'
+---
 # Tutorial: Getting Started with Multiplayer<a name="network-multiplayer-gs"></a>
 
 This tutorial walks you through the steps to create a simple multiplayer test game level\. These steps include binding an entity to the network and connecting a client to the host\. At the end of the tutorial, you should have a level with a simple network bound entity that is ready for a multiplayer game\.
@@ -34,7 +38,7 @@ Your first step is to create a level and prepare a simple sphere and box shape s
 1. In the Lumberyard Project Configurator, select a project that has the Multiplayer gem enabled, and then click **Set as default**\.
 
 1. Open Lumberyard Editor, create a level, and enter a name\.  
-![\[Create a level in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-1.png)
+![\[Create a level in Lumberyard Editor.\]](/images/networking/network-multiplayer-gs-1.png)
 
 1. In the Lumberyard Editor viewport, right\-click and choose **Create entity**\.
 
@@ -43,20 +47,20 @@ Your first step is to create a level and prepare a simple sphere and box shape s
 1. Click **Add Component**\.
 
 1. Select the **Camera** component to attach it to the entity\.  
-![\[Attach a Camera component to the camera entity.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-2.png)
+![\[Attach a Camera component to the camera entity.\]](/images/networking/network-multiplayer-gs-2.png)
 
 1. In the Lumberyard Editor viewport, right\-click and choose **Create entity**\.
 
 1. With the entity selected, use the **Entity Inspector** to name the entity **SphereEntity**\.
 
 1. In the **Entity Inspector**, click **Add Component**, **Rendering**, **Mesh** to attach a **Mesh** component to the **SphereEntity**\.  
-![\[Adding a Mesh component to the SphereEntity.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-3.png)
+![\[Adding a Mesh component to the SphereEntity.\]](/images/networking/network-multiplayer-gs-3.png)
 
 1. In the **Mesh** component, click the \(**…**\) icon next to **Mesh asset**\.  
-![\[Click the ellipsis next to Mesh asset\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-4-mesh-asset-ellipsis.png)
+![\[Click the ellipsis next to Mesh asset\]](/images/networking/network-multiplayer-gs-4-mesh-asset-ellipsis.png)
 
 1. In the **Pick Static Mesh** window, expand **Engine**, **Objects**, **default**, and select **`primitive_sphere.cgf`**\.  
-![\[In the Pick Static Mesh window, choose primitive_sphere.cgf.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-4-pick-static-mesh.png)
+![\[In the Pick Static Mesh window, choose primitive_sphere.cgf.\]](/images/networking/network-multiplayer-gs-4-pick-static-mesh.png)
 
 1. Click **OK**\.
 
@@ -73,12 +77,12 @@ Your first step is to create a level and prepare a simple sphere and box shape s
 1. Click **OK**\.
 
 1. In the viewport, select the **SphereEntity**\. In the **Entity Inspector**, click **Add Component**, **Physics**, **Rigid Body Physics**\.  
-![\[Choose the Rigid Body Physics component for the sphere entity\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-sphere-entity-rigid-body-physics.png)
+![\[Choose the Rigid Body Physics component for the sphere entity\]](/images/networking/network-multiplayer-gs-sphere-entity-rigid-body-physics.png)
 
 1. Select the **BoxEntity**\. In the **Entity Inspector**, click **Add Component**, **Physics**, **Rigid Body Physics**\.
 
 1. Select the **SphereEntity**\. In the **Entity Inspector**, click **Add Component**, **Physics**, **Mesh Collider**\.  
-![\[Choose the Mesh Collider component for the sphere entity\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-sphere-entity-mesh-collider.png)
+![\[Choose the Mesh Collider component for the sphere entity\]](/images/networking/network-multiplayer-gs-sphere-entity-mesh-collider.png)
 
 1. Select the **BoxEntity**\. In the **Entity Inspector**, click **Add Component**, **Physics**, **Mesh Collider**\.
 
@@ -95,7 +99,7 @@ Your first step is to create a level and prepare a simple sphere and box shape s
    1. In the viewport, drag the item up vertically\.
 
 1. In the **Entity Inspector**, **Rigid Body Physics** component, ensure that **At rest initially** is unchecked\. This allows the sphere and box to begin simulating after the level is loaded\.  
-![\[Ensure that the At rest initially property is unchecked\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-5.png)
+![\[Ensure that the At rest initially property is unchecked\]](/images/networking/network-multiplayer-gs-5.png)
 
 You now have two simple component entities with rigid body physics in the level that you created\.
 
@@ -108,10 +112,10 @@ After you create the initial level with the sphere and the box, you bind the sph
 1. Select the sphere entity\. 
 
 1. In the **Entity Inspector**, click **Add Component**, **Networking**, **Network Binding**\. Adding the **NetBinding** component to the entity allows the host to replicate the **Transform** component of the sphere to all clients\.  
-![\[Add a Network Binding component to an entity.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-6.png)
+![\[Add a Network Binding component to an entity.\]](/images/networking/network-multiplayer-gs-6.png)
 
 1. With the sphere entity selected, in the **Transform** component, ensure that the **Network Sync**, **Sync to replicas** property is enabled\.  
-![\[Ensure that Sync to replicas property is enabled\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-sync-to-replicas.png)
+![\[Ensure that Sync to replicas property is enabled\]](/images/networking/network-multiplayer-gs-sync-to-replicas.png)
 
 You have now created a server authoritative sphere entity that enables changes to the sphere to replicate over the network\. However, you didn't bind the box to the network, so changes in the box will remain unreplicated\.
 
@@ -132,10 +136,10 @@ This step shows you how to connect a client to the server instance and then obse
 1. Press the **`** key \(above the **Tab** key\) to open the console\.
 
 1. Run the command map *MultiplayerTutorial* where *MultiplayerTutorial* is the name of the level to load\.  
-![\[Run the map command\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-7.png)
+![\[Run the map command\]](/images/networking/network-multiplayer-gs-7.png)
 
 1. Press the **`** key to open the console\. Run the command mphost to make your client host a network session\.  
-![\[Run the mphost command\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-8.png)
+![\[Run the mphost command\]](/images/networking/network-multiplayer-gs-8.png)
 
 1. Move the first launcher window to one side so that you will be able to see the second launcher window\. Use the launcher again to open a second instance of the game\. Press the **`** key to open the second console\.
 
@@ -144,7 +148,7 @@ This step shows you how to connect a client to the server instance and then obse
 On a single computer, only one process is allowed to bind to a particular port\. Therefore, to run more than one game process on the same computer \(as in this multiplayer sample\), you must use ephemeral ports\. The `sv_port` console variable defines the UDP port on the local machine for the multiplayer sample, and the setting of `0` specifies the ephemeral port\. This allows two clients on the same computer to talk to each other\.
 
 1. Run the command mpjoin to join to the host game\. You should see the sphere synchronized by location on the client\. However, the box will be desynchronized and have different locations on the client and host\.  
-![\[Synchronized sphere\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-multiplayer-gs-9.png)
+![\[Synchronized sphere\]](/images/networking/network-multiplayer-gs-9.png)
 
 You have successfully created a simple networked level\. You can now use the **Network Binding** component to connect clients to servers and synchronize transforms of entities\.
 

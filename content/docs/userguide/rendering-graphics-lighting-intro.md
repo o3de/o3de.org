@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s physically-based lighting and shading models to add
+  global illumination and lighting for your game project. '
+slug: rendering-graphics-lighting-intro
+title: Adding lighting and shadows
+---
 # Adding lighting and shadows<a name="rendering-graphics-lighting-intro"></a>
 
 Lumberyard uses physically\-based lighting and shading models to implement global illumination and lighting\. 

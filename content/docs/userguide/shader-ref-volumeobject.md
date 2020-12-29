@@ -1,3 +1,7 @@
+description: null
+slug: shader-ref-volumeobject
+title: VolumeObject Shader
+---
 # VolumeObject Shader<a name="shader-ref-volumeobject"></a>
 
 Use Amazon Lumberyard's VolumeObject shader to render volumetric clouds with realistic shading and self\-shadowing effects\.

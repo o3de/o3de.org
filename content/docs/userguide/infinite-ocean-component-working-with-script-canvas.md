@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Infinite Ocean component with the &script-canvas;
+  editor to change the component parameters at run time. '
+slug: infinite-ocean-component-working-with-script-canvas
+title: Using the Infinite Ocean Component with &script-canvas;
+---
 # Using the Infinite Ocean Component with Script Canvas<a name="infinite-ocean-component-working-with-script-canvas"></a>
 
 You can use the **Infinite Ocean** component with the **Script Canvas** editor to change the component parameters at run time, using a visual scripting workflow\. In the following example, the Script Canvas script changes the size of the ocean waves over time\.
@@ -47,7 +52,7 @@ The **Sin** node returns values that are –/\+\. Negative numbers cause errors 
    1. Drag the **Result** pin to connect it to the **Number:0** pin of the **SetAnimationWavesSize** node\.
 
    Your script should look like the following:  
-![\[Example Script Canvas script for working with the Infinite Ocean component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-example-script.png)
+![\[Example Script Canvas script for working with the Infinite Ocean component.\]](/images/component/infiniteocean/infinite-ocean-component-example-script.png)
 
 1. Save your script\.
 

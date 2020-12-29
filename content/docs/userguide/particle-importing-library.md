@@ -1,3 +1,7 @@
+description: ' Use the &ALY; &particle-editor; to import a particle library. '
+slug: particle-importing-library
+title: Importing Particle Libraries
+---
 # Importing Particle Libraries<a name="particle-importing-library"></a>
 
 Particle effect data is stored in an XML\-based library file\. You can import a particle library for your game\.

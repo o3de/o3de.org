@@ -1,3 +1,8 @@
+description: ' Create third-party library configuration files for the &waf-system;
+  in &ALYlong;. '
+slug: waf-third-party-library-configurations
+title: Creating Third-Party Library Configuration Files for &waf;
+---
 # Creating Third\-Party Library Configuration Files for Waf<a name="waf-third-party-library-configurations"></a>
 
 Lumberyard's Waf build system has the ability to incorporate third\-party libraries\. Waf's `uselib` mechanism can apply the proper dependency injection of a third\-party library into any project or module\. In the `wscript` file, the `uselib` attribute specifies all\-caps identifiers that represent the third\-party libraries\. The identifiers are defined in the `.json` configuration files that can exist either in the global `_WAF_\3rdParty` directory or in the gem\-specific `3rdParty` directory\. These configuration files provide details for the library, including include paths, library paths, and linkage information\. The files also specify whether the library is shared, dynamic, or header\-only\.

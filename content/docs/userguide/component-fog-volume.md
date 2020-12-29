@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; Fog Volume to create a fog volume in your game. '
+slug: component-fog-volume
+title: Fog Volume
+---
 # Fog Volume<a name="component-fog-volume"></a>
 
 
@@ -16,7 +20,7 @@ The **Fog Volume** component must have a **[Box Shape](component-shapes.md)** co
 
 You can also change global fog properties in the **Time of Day** editor\. For more information, see [Setting Global \(Time of Day\) Fog](weather-fog-global.md)\.
 
-![\[Fog Volume component example.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/fog-component-example.png)
+![\[Fog Volume component example.\]](/images/component/fog-component-example.png)
 
 **Contents**
 + [Fog Volume Properties](#component-fog-volume-properties)
@@ -174,12 +178,12 @@ Enables the light to affect volumetric fog and not affect other objects, such as
 **Example**  
 In the following example, the parameter **Volumetric Fog On** is enabled for the light component\.  
 
-![\[Fog Volume component and light component where Volumetric Fog is enabled.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/fog-component-example-4.png)
+![\[Fog Volume component and light component where Volumetric Fog is enabled.\]](/images/component/fog-component-example-4.png)
 
 **Example**  
 In the following example, the parameter **Volumetric Fog** is disabled for the light component\.  
 
-![\[Fog Volume component and light component where Volumetric Fog is disabled.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fog-component-example-5.png)
+![\[Fog Volume component and light component where Volumetric Fog is disabled.\]](/images/fog-component-example-5.png)
 
 For more information about light components, see [Rendering](component-components.md#component-entity-rendering)\.
 
@@ -188,12 +192,12 @@ For more information about light components, see [Rendering](component-component
 **Example**  
 In the following example, the value for **Latitude** is `0`\. The fall off appears on the left side of the fog volume, along the x\-axis\.  
 
-![\[Fog Volume component example with fall off on one side, or 0 degrees latitude.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/fog-component-example-2.png)
+![\[Fog Volume component example with fall off on one side, or 0 degrees latitude.\]](/images/component/fog-component-example-2.png)
 
 **Example**  
 In the following example, the value for the **Latitude** is `90`\. The fall off appears on the top for the fog volume\.  
 
-![\[Fog Volume component example fall off on the top of the volume, or 90 degrees latitude.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/fog-component-example-3.png)
+![\[Fog Volume component example fall off on the top of the volume, or 90 degrees latitude.\]](/images/component/fog-component-example-3.png)
 
 **Note**  
 For the **Fog Volume** component, the **Latitude** and **Longitude** parameters work in the world space\. Local transform changes do not affect these parameters\. The **Latitude** and **Longitude** parameters orient the fog volume on the xy\-plane\. You can specify different values to orient the fog volume in any direction\.

@@ -1,3 +1,8 @@
+description: ' Use the River component to carve riverbeds into the terrain and fill
+  them with moving water in &ALYlong;. '
+slug: component-river
+title: River
+---
 # River<a name="component-river"></a>
 
 
@@ -13,7 +18,7 @@ The **River** component requires the **[Spline](component-spline.md)** component
 
 To use the **River** component, you must [enable](gems-system-using-project-configurator.md) the **Roads and Rivers** gem\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 
-![\[Example animation of the River component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-component-river.gif)
+![\[Example animation of the River component.\]](/images/shared-component-river.gif)
 
 **Topics**
 + [River Properties](#component-river-properties)
@@ -22,7 +27,7 @@ To use the **River** component, you must [enable](gems-system-using-project-conf
 
 ## River Properties<a name="component-river-properties"></a>
 
-![\[River component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-river-properties.png)
+![\[River component properties.\]](/images/component/component-river-properties.png)
 
 See the following **River** component properties\.
 

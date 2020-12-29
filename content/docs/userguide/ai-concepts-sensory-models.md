@@ -1,3 +1,7 @@
+description: ' Learn more about modelling for the AI system in &ALYlong;. '
+slug: ai-concepts-sensory-models
+title: Sensory Models
+---
 # Sensory Models<a name="ai-concepts-sensory-models"></a>
 
 ## Overview<a name="ai-concepts-sensory-overview"></a>

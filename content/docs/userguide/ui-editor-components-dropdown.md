@@ -1,3 +1,8 @@
+description: ' Use the Dropdown component to make an element behave like a drop-down
+  menu in the &ALYlong; &ui-canvas-editor;. '
+slug: ui-editor-components-dropdown
+title: Dropdown
+---
 # Dropdown<a name="ui-editor-components-dropdown"></a>
 
 You can use the **Dropdown** component to make an element behave like a drop\-down menu\. Use this component with child elements that contain content\. The child elements provide the contents of the drop\-down menu\.
@@ -14,7 +19,7 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 You can add a prebuilt **Dropdown** element from the slice library\. When you do this, a drop\-down menu, three options, and their image elements are automatically created in your **Hierarchy** pane\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
 
 **To add a Dropdown element from the slice library**
 + In the [**UI Editor**](ui-editor-using.md), choose **New**, **Element from Slice Library**, **Dropdown**\.

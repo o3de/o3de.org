@@ -1,3 +1,8 @@
+description: ' Modify a UI slice and push the changes in &ALYlong;''s &ui-canvas-editor;
+  . '
+slug: ui-editor-working-slices-modifying
+title: Modifying a UI Slice and Pushing Changes
+---
 # Modifying a UI Slice and Pushing Changes<a name="ui-editor-working-slices-modifying"></a>
 
 In the **UI Editor**, you modify UI slices and push changes similarly to the way that you do in the main Lumberyard Editor For more information on pushing changes in Lumberyard's component entity system, see [Working with Slices](component-slices.md)\.
@@ -14,7 +19,7 @@ In the **Hierarchy** pane, elements that are part of a slice appear in blue\. El
 + The element **Background** is not in a slice\.
 + **FontRenderingButton** is a root element and its child element, **Text**, is an element within `submenubutton.slice`\.
 
-![\[The UI Editor's Hierarchy pane displays in blue any elements that are part of a slice.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-modifying-slices-submenubutton.png)
+![\[The UI Editor's Hierarchy pane displays in blue any elements that are part of a slice.\]](/images/game_ui_editor/ui-editor-modifying-slices-submenubutton.png)
 
 You can locally change an instantiated slice's name, which obscures the name of the slice from which it instantiated\.
 

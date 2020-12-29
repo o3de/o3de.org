@@ -1,3 +1,8 @@
+description: ' Use the Audio Listener component to add a virtual microphone in the
+  &ALYlong; environment. '
+slug: component-audio-listener
+title: Audio Listener
+---
 # Audio Listener<a name="component-audio-listener"></a>
 
 With the **Audio Listener** component, you can place a virtual microphone in the environment\. An audio listener acts as a sink for sound sources in the virtual world, and 3D audio rendering is processed with respect to the listener's world transform\. You can specify the audio listener's position and rotation independently\.

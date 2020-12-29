@@ -1,10 +1,15 @@
+description: ' Use the Trail emitter in the &ALYlong; &particle-editor; to connect
+  particles together to create a trailing effect. '
+slug: particle-editor-emitter-shape-type-trail
+title: Trail Emitter (CPU)
+---
 # Trail Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-trail"></a>
 
 The **Trail** emitter connects particles together to create a trailing effect as the system moves through space\.
 
 The following are parameters for the **Trail** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-trail.jpg)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-trail.jpg)
 
 
 **Trail Emitter Parameters**  
@@ -28,7 +33,7 @@ Trail segments are drawn when the distance between the start and end of a segmen
 
 The following are movement parameters for the **Trail** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-trail-movement.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-trail-movement.png)
 
 
 **Related Movement Attributes**  

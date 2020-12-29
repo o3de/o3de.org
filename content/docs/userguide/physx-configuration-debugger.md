@@ -1,3 +1,7 @@
+description: ' Configure debugging for the PhysX system in &ALYlong;. '
+slug: physx-configuration-debugger
+title: Debugger Configuration
+---
 # Debugger Configuration<a name="physx-configuration-debugger"></a>
 
 In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger \(PVD\)\. The PVD is a third\-party application that records your PhysX data from Lumberyard Editor\. You can then review this data to see how your physics effects appear\.
@@ -21,7 +25,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 1. Click the **Debugger** tab\.
 
 1. You can specify the following settings\.  
-![\[PhysX Visual Debugger settings.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-debugger-1.png)  
+![\[PhysX Visual Debugger settings.\]](/images/physx/physx-configuration-debugger-1.png)  
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/physx-configuration-debugger.html)
 
@@ -33,7 +37,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 
 1. Open the PhysX Visual Debugger to view the recorded information\.   
 **Example**    
-![\[Review the recorded data from Lumberyard Editor in the PhysX Visual Debugger.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-debugger-2.png)
+![\[Review the recorded data from Lumberyard Editor in the PhysX Visual Debugger.\]](/images/physx/physx-configuration-debugger-2.png)
 
 1. You can also manually connect or disconnect from the PVD using the following console variable commands\.
 

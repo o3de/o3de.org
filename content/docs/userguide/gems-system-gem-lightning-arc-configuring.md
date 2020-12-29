@@ -1,3 +1,8 @@
+description: ' Get custom lightning effects by configure the lightning arc entity
+  in &ALY;. '
+slug: gems-system-gem-lightning-arc-configuring
+title: Configuring the Lightning Arc
+---
 # Configuring the Lightning Arc<a name="gems-system-gem-lightning-arc-configuring"></a>
 
 You can configure the properties for the lightning arc entity to make the lightning arc show outside only, toggle wind effects, add delays and variations between arcs, and more\. You can also carefully customize your lightning arcs by selecting different presets for the type of arc generated\.

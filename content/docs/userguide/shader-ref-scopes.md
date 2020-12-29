@@ -1,3 +1,7 @@
+description: ' Use the scopes shader to render optical effects in &ALYlong;. '
+slug: shader-ref-scopes
+title: Scopes Shader
+---
 # Scopes Shader<a name="shader-ref-scopes"></a>
 
 The Scopes shader is used to render various optical effects for binoculars, telescopes, and weapon sight scopes\.

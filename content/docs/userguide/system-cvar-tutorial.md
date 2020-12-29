@@ -1,3 +1,8 @@
+description: ' Use the console variable (CVAR) tutorial to modify and create console
+  variables in &ALYlong;. '
+slug: system-cvar-tutorial
+title: Console Variable Tutorial
+---
 # Console Variable Tutorial<a name="system-cvar-tutorial"></a>
 
 This tutorial shows you how to modify existing and create console variables \(CVARs\)\. CVARs can be used to control many configurable behaviors in Lumberyard\. You can also use them in your game\.

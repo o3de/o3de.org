@@ -1,3 +1,7 @@
+description: ' Use advanced particle techniques in the &ALYlong; &particle-editor;. '
+slug: particle-advanced
+title: Advanced Particle Techniques
+---
 # Advanced Particle Techniques<a name="particle-advanced"></a>
 
 
@@ -25,7 +29,7 @@ Do the following to emit particles from the parent geometry\.
 
    The child's particles spawn from the mesh of its parent\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-advanced.png)
+![\[Image NOT FOUND\]](/images/particles/particle-editor-advanced.png)
 
 **Note**  
 Use any **Attach Type** and **AttachForm** for the intended effect\.

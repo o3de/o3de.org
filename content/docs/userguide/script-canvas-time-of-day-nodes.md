@@ -1,3 +1,8 @@
+description: ' Use Time of Day nodes in the &ALYlong; &script-canvas; editor to configure
+  the time of day in your level. '
+slug: script-canvas-time-of-day-nodes
+title: Time of Day Nodes
+---
 # Time of Day Nodes<a name="script-canvas-time-of-day-nodes"></a>
 
 You can use time of day nodes in the **Script Canvas** editor to set the current time, change the speed of time progression, and load predefined time of day configuration files\. 

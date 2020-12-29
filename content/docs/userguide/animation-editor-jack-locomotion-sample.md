@@ -1,3 +1,9 @@
+description: ' Use the Simple Jack Locomotion sample level to learn how the &ALY;
+  &animation-editor; uses actors, motion sets, and animation graphs to control character
+  behavior. '
+slug: animation-editor-jack-locomotion-sample
+title: Simple_JackLocomotion Sample
+---
 # Simple\_JackLocomotion Sample<a name="animation-editor-jack-locomotion-sample"></a>
 
 
@@ -25,8 +31,8 @@ You can also use a controller connected to your computer:
 + To toggle the character aim on and off, press the right trigger\.
 + To toggle the **LookAt** node on and off during the idle animation, press the left trigger\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-jack-sample-01.png)
+![\[Image NOT FOUND\]](/images/actor-animation/animation-editor-jack-sample-01.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-jack-sample-02.png)
+![\[Image NOT FOUND\]](/images/actor-animation/animation-editor-jack-sample-02.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-jack-sample-03.png)
+![\[Image NOT FOUND\]](/images/actor-animation/animation-editor-jack-sample-03.png)

@@ -1,3 +1,7 @@
+description: ' Edit component properties that are attached to your entities in &ALYlong;. '
+slug: editing-component-properties
+title: Editing Component Properties
+---
 # Editing Component Properties<a name="editing-component-properties"></a>
 
 You can edit properties for your components such as changing the mesh asset file for the **Mesh** component\.
@@ -29,13 +33,13 @@ In the **Entity Inspector**, you can copy an asset reference from one component 
 1. Choose **Copy asset reference**\.
 
 1. Select another component, right\-click the asset reference field, and choose **Paste asset reference**\.  
-![\[Copy and paste asset references between components.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-entity-inspector-assetref.png)
+![\[Copy and paste asset references between components.\]](/images/component/component-entity-inspector-assetref.png)
 
 ## Creating Custom Component Help Topics<a name="component-entity-inspector-help"></a>
 
 If you have created your own components, you can point the component header's help icon to your own documentation\.
 
-![\[Component helper icon.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-entity-inspector-help.png)
+![\[Component helper icon.\]](/images/component/component-entity-inspector-help.png)
 
 To do this, add the `HelpPageURL` attribute to your component reflection\.
 

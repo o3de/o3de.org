@@ -1,3 +1,8 @@
+description: ' Use the UiTransformBus to control positioning, scaling, rotation, anchor,
+  and offset settings for UI elements in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uitransform2dcomponent
+title: UITransform2dComponent
+---
 # UITransform2dComponent<a name="lua-scripting-ces-api-ui-uitransform2dcomponent"></a>
 
 Controls positioning, scaling, rotation, anchor, and offset settings for UI elements\.

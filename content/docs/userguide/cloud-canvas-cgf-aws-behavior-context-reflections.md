@@ -1,3 +1,8 @@
+description: ' Use the CloudGemAWSScriptBehaviors gem in &ALYlong; to access &AWS;
+  services from your scripts. '
+slug: cloud-canvas-cgf-aws-behavior-context-reflections
+title: '&AWS; Behavior Context Reflections'
+---
 # AWS Behavior Context Reflections<a name="cloud-canvas-cgf-aws-behavior-context-reflections"></a>
 
 The CloudGemAWSScriptBehaviors gem uses the behavior context to expose AWS services such as [Amazon Cognito](https://aws.amazon.com/cognito/), [AWS Lambda](https://aws.amazon.com/lambda/), [Amazon S3](https://aws.amazon.com/s3/), and HTTP utilities to script\. The`\dev\CloudGemSamples\Scripts` directory has sample Lua code for each reflection\. To try the samples, run the AWSBehaviorExamples level in the CloudGemSamples project\.

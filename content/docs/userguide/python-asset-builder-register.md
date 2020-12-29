@@ -1,3 +1,7 @@
+description: ' Register your Python Asset Builder for your &ALYlong; project. '
+slug: python-asset-builder-register
+title: Register a Python Asset Builder
+---
 # Register a Python Asset Builder<a name="python-asset-builder-register"></a>
 
  A Python Asset Builder script must register a file pattern and unique builder ID for the asset builder\. To describe the asset builder, use `azlmbr.asset.builder.AssetBuilderDesc`\. To bind the script to the asset building process, use `azlmbr.asset.builder.PythonAssetBuilderRequestBus`\. You can register the asset builder by a file extension pattern such as `*.myasset` or by a folder and file regular expression pattern such as `^[a-zA-Z]:\\MyAssets[\\\S|*\S]?.*$)`\. 

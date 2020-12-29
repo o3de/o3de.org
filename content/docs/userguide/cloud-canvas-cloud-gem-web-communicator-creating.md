@@ -1,3 +1,8 @@
+description: ' Use the Web Communicator cloud gem in &ALYlong; to send messages to
+  game editors and clients. '
+slug: cloud-canvas-cloud-gem-web-communicator-creating
+title: Communicating to Clients from a Cloud Gem
+---
 # Communicating to Clients from a Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator-creating"></a>
 
 To send messages to the Web Communicator service, your cloud gem can use the default channel that the Web Communicator cloud gem provides or a channel that you define\. Web Communicator can validate the message type and pass the message to AWS IoT for distribution to one or more clients\.

@@ -1,8 +1,13 @@
+description: ' Use keyboard, mouse, or menu to navigate the &ui-canvas-editor; viewport
+  in &ALYlong;. '
+slug: ui-editor-navigating-viewport
+title: Navigating the Viewport
+---
 # Navigating the Viewport<a name="ui-editor-navigating-viewport"></a>
 
 The **UI Editor** features a rectangle with a checkerboard pattern on a dark gray background\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-checkerboard.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-checkerboard.png)
 
 The checkerboard pattern represents empty space within the UI canvas, and the dark gray represents the space outside of the canvas\. Anything within the UI canvas space is visible when the canvas is loaded\.
 

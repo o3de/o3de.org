@@ -1,8 +1,13 @@
+description: ' Use the Advanced attribute in the &ALYlong; &particle-editor; to modify
+  advanced appearance and optimization settings. '
+slug: particle-editor-reference-advanced
+title: Advanced Attribute
+---
 # Advanced Attribute<a name="particle-editor-reference-advanced"></a>
 
 In the **Advanced** attribute, specify advanced appearance and optimization settings\.
 
-![\[Advanced attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-advanced.png)
+![\[Advanced attributes in the Particle Editor.\]](/images/particles/particle-editor-advanced.png)
 
 
 **Advanced Attribute Parameters**  

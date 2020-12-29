@@ -1,16 +1,21 @@
+description: ' Use the draggable component in the &ALYlong; &ui-canvas-editor; to
+  make UI elements movable. '
+slug: ui-editor-components-draggable
+title: Draggable
+---
 # Draggable<a name="ui-editor-components-draggable"></a>
 
 You can use the **Draggable** component to make a UI element movable from one location to another on screen\. Use the **Draggable** component in combination with the **DropTarget** component so that dragging can start on the draggable element and end on the drop target element\. Drag\-and\-drop is a common operation in UI screens, such as an inventory system\.
 
 Because drag\-and\-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C\+\+ to define actions that result from the drag and the drop\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-draggable.gif)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-draggable.gif)
 
 To add the draggable component to a UI element, use the **Add Component** menu in the **Properties** pane\. 
 
 The following picture shows an example of a **Draggable** component, where color has been added to the state actions for **Drag States**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
 
 The **Draggable** component is an interactive component\. It has the standard [interactive properties](ui-editor-components-interactive-properties.md)\.
 

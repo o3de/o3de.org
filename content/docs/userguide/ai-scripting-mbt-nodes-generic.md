@@ -1,3 +1,7 @@
+description: ' See the following generic nodes for the AI system in &ALYlong;. '
+slug: ai-scripting-mbt-nodes-generic
+title: Generic Nodes
+---
 # Generic Nodes<a name="ai-scripting-mbt-nodes-generic"></a>
 
 These nodes provide the basic functionality of MBT\.

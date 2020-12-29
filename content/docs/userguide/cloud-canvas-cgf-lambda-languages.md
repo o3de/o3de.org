@@ -1,3 +1,7 @@
+description: ' Create &LAM; deployment packages to use with &cloud; in &ALYlong;. '
+slug: cloud-canvas-cgf-lambda-languages
+title: '&LAM; Language Support in the Cloud Gem Framework'
+---
 # Lambda Language Support in the Cloud Gem Framework<a name="cloud-canvas-cgf-lambda-languages"></a>
 
 Lumberyard has support for Lambda deployment packages that include Lambda functions written in Node\.js, Python 3\.7 or later, Java, Go, or the \.NET framework\.
@@ -133,7 +137,7 @@ Running the sample requires the following prerequisites:
 1. Choose **LambdaLanguage**, and then click **Open**\.
 
 1. Click **Play Game** or press **Ctrl\+G** to switch to gameplay mode\. After a short pause, a message reports success, as seen in the following image\.  
-![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
+![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](/images/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
 
 ### Additional Resources<a name="cloud-canvas-cgf-lambda-languages-additional-resources"></a>
 

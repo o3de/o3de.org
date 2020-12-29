@@ -1,3 +1,7 @@
+description: ' See the operating systems and compilers that Waf supports for &ALYlong;. '
+slug: waf-platforms-compilers
+title: Waf Supported Operating Systems and Compilers
+---
 # Waf Supported Operating Systems and Compilers<a name="waf-platforms-compilers"></a>
 
 This topic provides information about the operating systems and compilers that Waf supports\. For more information about supported configurations, see [Waf Commands and Options](waf-commands.md)\.

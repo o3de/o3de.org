@@ -1,3 +1,8 @@
+description: Configure font properties such as asset path and effects for your game
+  UI in &ALYlong;.
+slug: ui-fonts-properties
+title: Configuring Font Properties
+---
 # Configuring Font Properties<a name="ui-fonts-properties"></a>
 
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage\.

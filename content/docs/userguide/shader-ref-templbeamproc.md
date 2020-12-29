@@ -1,3 +1,8 @@
+description: ' Ise the TemplBeamProc shader to create fog-like light beam effects
+  in &ALYlong;. '
+slug: shader-ref-templbeamproc
+title: TemplBeamProc Shader
+---
 # TemplBeamProc Shader<a name="shader-ref-templbeamproc"></a>
 
 The TemplBeamProc shader is used to create inexpensive fog\-like light beam effects, enabling control over beam size and blending\.

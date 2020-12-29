@@ -1,3 +1,7 @@
+description: ' Use the waterfall shader for waterfall effects in &ALYlong;. '
+slug: shader-ref-waterfall
+title: Waterfall Shader
+---
 # Waterfall Shader<a name="shader-ref-waterfall"></a>
 
 The Waterfall shader is used for waterfalls exclusively, and provides layering, tiling, and motion effects\.

@@ -1,3 +1,7 @@
+description: ' Enable a LAN firewall to protect your &ALYlong; environment '
+slug: setting-up-firewall
+title: Enabling a Firewall
+---
 # Enabling a Firewall<a name="setting-up-firewall"></a>
 
 You can help protect your environment by enabling the firewall settings on all computers running the Asset Processor or Lumberyard Editor to do the following: 

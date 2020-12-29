@@ -1,3 +1,8 @@
+description: ' Create sequences for animations using the &trackview-editor;''s toolbars
+  in &ALYlong;. '
+slug: cinematics-track-view-editor-toolbars
+title: Track View Editor Toolbars
+---
 # Track View Editor Toolbars<a name="cinematics-track-view-editor-toolbars"></a>
 
 See the following main sections of the Track View:
@@ -17,4 +22,4 @@ See the following main sections of the Track View:
 **Note**  
 You can pause over buttons in the Track View to view their descriptions\.
 
-![\[Track View toolbar.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-trackview-editor.png)
+![\[Track View toolbar.\]](/images/cinematics/cinematics-trackview-editor.png)

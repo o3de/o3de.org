@@ -1,3 +1,8 @@
+description: ' Use the &ly-launcher; batch file or command line version to install
+  required third-party software, SDKs, and plugins. '
+slug: lumberyard-launcher-batch-using
+title: Using &ly-launcher; Batch
+---
 # Using Lumberyard Setup Assistant Batch<a name="lumberyard-launcher-batch-using"></a>
 
 The command line version of Lumberyard Setup Assistant is useful for server and build administrators who want to create a batch file to run the same configuration on multiple machines\.

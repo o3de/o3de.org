@@ -1,3 +1,8 @@
+description: ' Upgrade &ALYlong; with or without source control and upgrade your game
+  project. '
+slug: lumberyard-upgrading
+title: Upgrading &ALY;
+---
 # Upgrading Lumberyard<a name="lumberyard-upgrading"></a>
 
 If you have an existing version of Lumberyard installed on your computer, you have several options for upgrading: 

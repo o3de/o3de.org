@@ -1,3 +1,8 @@
+description: ' Use the &AWS; Script Behaviors cloud gem to implement &AWS; features
+  in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-script-behavior-intro
+title: Using the &AWS; Script Behaviors Cloud Gem
+---
 # Using the AWS Script Behaviors Cloud Gem<a name="cloud-canvas-cloud-gem-aws-script-behavior-intro"></a>
 
 You can use the AWS Script Behaviors cloud gem in Amazon Lumberyard to implement some common AWS behaviors for your game\. To implement these behaviors, you can use Script Canvas or Lua script\. These behaviors include decoding URLs, performing HTTP GET operations, transferring files to and from Amazon S3, and invoking AWS Lambda functions\. For programmatic information regarding the AWS Script Behaviors cloud gem, see [AWS Behavior Context Reflections](cloud-canvas-cgf-aws-behavior-context-reflections.md)\.

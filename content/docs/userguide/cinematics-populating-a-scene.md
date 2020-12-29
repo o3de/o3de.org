@@ -1,3 +1,8 @@
+description: ' Create scenes in a track view sequence in the &trackview-editor; in
+  &ALYlong;. '
+slug: cinematics-populating-a-scene
+title: Populating a Scene
+---
 # Populating a Scene<a name="cinematics-populating-a-scene"></a>
 
 Cinematic scenes, also known as sequences, consist of multiple nodes, tracks, and track events\. When you create a sequence, the sequence name is always the top \(parent\) node in the node browser\.

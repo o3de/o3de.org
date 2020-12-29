@@ -1,3 +1,8 @@
+description: ' Use &ALY;''s Animation Editor''s Node Pane, Track Editor, and Curve
+  Editor to edit animation sequences. '
+slug: ui-animation-editing
+title: Editing Animation Data
+---
 # Editing Animation Data<a name="ui-animation-editing"></a>
 
 After you create your sequence\(s\) and record animation data to them, you can use the **Node Pane**, **Track Editor**, and **Curve Editor** in the **Animation Editor** to modify your sequences\.
@@ -9,7 +14,7 @@ You can use the toolbar to select a sequence to display and edit\.
 
 **To select an animation sequence to edit**
 + In **Animation Editor**, click the arrow next to the name of the current sequence in the toolbar to display a list of active sequences available to edit\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animation-selecting.png)
+![\[Image NOT FOUND\]](/images/ui-animation-selecting.png)
 
 **Topics**
 + [Using the Node Pane](ui-animation-using-node-pane.md)

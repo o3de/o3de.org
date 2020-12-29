@@ -1,8 +1,13 @@
+description: ' Use the Audio Environment component to set up a default environment
+  for an entity in &ALYlong;. '
+slug: component-audio-environment
+title: Audio Environment
+---
 # Audio Environment<a name="component-audio-environment"></a>
 
 The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](audio-default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/audio/component-audio-environment1.png)
+![\[Image NOT FOUND\]](/images/component/audio/component-audio-environment1.png)
 
 ## Audio Environment Properties<a name="component-audio-environment-properties"></a>
 

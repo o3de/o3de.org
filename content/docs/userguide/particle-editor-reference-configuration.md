@@ -1,8 +1,13 @@
+description: ' Use the Configuration attribute in the &ALYlong; &particle-editor;
+  to specify the minimum and maximum specs for your particle emitters. '
+slug: particle-editor-reference-configuration
+title: Configuration Attribute
+---
 # Configuration Attribute<a name="particle-editor-reference-configuration"></a>
 
 In the **Configuration** attribute, specify the minimum and maximum specs for your particle emitters\.
 
-![\[Configuration attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-configuration.png)
+![\[Configuration attributes in the Particle Editor.\]](/images/particles/particle-editor-configuration.png)
 
 
 **Configuration Attribute Parameters for CPU Emitters**  

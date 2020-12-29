@@ -1,3 +1,7 @@
+description: ' Run a macOS game using the &ALY; build tools. '
+slug: osx-game-deploying
+title: Running macOS Games
+---
 # Running macOS Games<a name="osx-game-deploying"></a>
 
 
@@ -25,4 +29,4 @@ Before you can run your game on a macOS computer, you must ensure the shader com
    + Switch between cameras by selecting the buttons in the lower right corner of the screen\.
    + Move Rin in the Character Controller view by using the mouse or keyboard \(**WASD**\)\.
    + Jump in the Character Controller view by pressing the **Space** key\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/platforms/macos/advanced-rin-locomotion-mobile.jpg)
+![\[Image NOT FOUND\]](/images/platforms/macos/advanced-rin-locomotion-mobile.jpg)

@@ -1,3 +1,8 @@
+description: ' Use the CommunicatorSample level to test the Web Communicator cloud
+  gem in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-web-communicator-sample-level
+title: Testing the Web Communicator Cloud Gem
+---
 # Testing the Web Communicator Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator-sample-level"></a>
 
 To perform a simple test of the Web Communicator cloud gem, you can use the CommunicatorSample level that is included with Lumberyard\.
@@ -48,25 +53,25 @@ In this step, register and connect a Websocket that can receive messages from AW
 1. In the **Open a Level** dialog box, choose **CommunicatorSample**, and then click **Open**\. If you are using a launcher and need to restart, your authenticated identity should be found on startup\.
 
 1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.  
-![\[The CommunicatorSample level\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-1.png)
+![\[The CommunicatorSample level\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-1.png)
 
 1. Click **Register WebSocket**\.  
-![\[Registering a WebSocket\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-2.png)
+![\[Registering a WebSocket\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-2.png)
 
    The status changes to **Registered**\.  
-![\[Registered WebSocket\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-3.png)
+![\[Registered WebSocket\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-3.png)
 
 1. Click **Connect WebSocket**\.  
-![\[Connecting a WebSocket\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-4.png)
+![\[Connecting a WebSocket\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-4.png)
 
    The status changes to **Connected**\.  
-![\[Connected WebSocket\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-5.png)
+![\[Connected WebSocket\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-5.png)
 
 1. Click **Request List**\.  
-![\[Request channel list\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-6.png)
+![\[Request channel list\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-6.png)
 
    Your test channels are listed in the sample level user interface\.  
-![\[The list of communication channels\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-7.png)
+![\[The list of communication channels\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-7.png)
 
 1. Leave the CommunicatorSample level running\.
 
@@ -87,12 +92,12 @@ In this step, you send a test from the message AWS IoT console to the Communicat
 1. Choose **Services**, **Internet of Things**, **IoT Core** to open the [AWS IoT](https://console.aws.amazon.com/iot/) console\.
 
 1. In the left navigation pane of AWS IoT console, choose **Test**\.  
-![\[Choose Test in the AWS IoT console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-8.png)
+![\[Choose Test in the AWS IoT console.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-8.png)
 
    
 
 1. Navigate to the **Publish** section at the bottom of the page\.  
-![\[Publishing a test message in the AWS IoT console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-9.png)
+![\[Publishing a test message in the AWS IoT console.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-9.png)
 
 1. In the **Publish** section, enter the following information:
 
@@ -112,4 +117,4 @@ In this step, you send a test from the message AWS IoT console to the Communicat
 1. Return to the CommunicatorSample level to see the results\. If you are on the same computer, press **Alt\+Tab** to return to Lumberyard Editor\.
 
    The sample level shows the message that you sent from AWS IoT\.  
-![\[Test message received in the CommunicatorSample level that is sent from the AWS IoT console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-10.png)
+![\[Test message received in the CommunicatorSample level that is sent from the AWS IoT console.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-10.png)

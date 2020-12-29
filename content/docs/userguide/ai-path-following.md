@@ -1,3 +1,7 @@
+description: ' Learn more about path following in &ALYlong;. '
+slug: ai-path-following
+title: Path Following
+---
 # Path Following<a name="ai-path-following"></a>
 
 This topic provides some high\-level insight on how path following is done in Lumberyard\. To illustrate some concepts, we'll use the relatively simplistic example of Racing HMMWVs, which is a good representation of classic path following as presented in many AI texts\.

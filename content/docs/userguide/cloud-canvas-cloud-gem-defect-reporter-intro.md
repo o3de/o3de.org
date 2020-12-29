@@ -1,3 +1,8 @@
+description: ' Gather defect reports from within your &ALYlong; game and manage them
+  in the &cgp;. '
+slug: cloud-canvas-cloud-gem-defect-reporter-intro
+title: Defect Reporter Cloud Gem
+---
 # Defect Reporter Cloud Gem<a name="cloud-canvas-cloud-gem-defect-reporter-intro"></a>
 
 The Defect Reporter cloud gem makes it easy for you and your developers and testers to gather, view, and manage defect reports from your game\. The Defect Reporter cloud gem offers the following advantages:

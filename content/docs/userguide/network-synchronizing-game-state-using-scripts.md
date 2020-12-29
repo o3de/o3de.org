@@ -1,3 +1,7 @@
+description: ' Learn about using scripts in &ALYlong; to synchronize game state. '
+slug: network-synchronizing-game-state-using-scripts
+title: Synchronizing Game State Using Scripts
+---
 # Synchronizing Game State Using Scripts<a name="network-synchronizing-game-state-using-scripts"></a>
 
 You can synchronize game state by using the Lua `ScriptComponent`\. The initial steps of synchronizing game state using the Lua `ScriptComponent` are similar to any other component\. There are two main steps:

@@ -1,8 +1,13 @@
+description: ' Use the Clone material node in the &script-canvas; editor in &ALYlong;
+  to create a copy of a material file. '
+slug: material-clone-node
+title: Clone
+---
 # Clone<a name="material-clone-node"></a>
 
 Creates a copy of the specified material\. The material must already be loaded into memory, so that the node can find the material\. If the material is not found, the node returns `Invalid`\.
 
-![\[materialclone, clonematerial, materialclonenode, clonematerialnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-clone-node.png)
+![\[materialclone, clonematerial, materialclonenode, clonematerialnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-clone-node.png)
 
 In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](script-canvas-variable-material-node.md)**\.
 

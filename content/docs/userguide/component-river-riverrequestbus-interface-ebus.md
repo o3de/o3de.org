@@ -1,3 +1,7 @@
+description: null
+slug: component-river-riverrequestbus-interface-ebus
+title: River Request Bus Interface
+---
 # River Request Bus Interface<a name="component-river-riverrequestbus-interface-ebus"></a>
 
 The **River** component uses two event bus \(EBus\) interfaces, the `RiverRequestBus` and the `RoadsandRiversGeometryRequestsBus`, which is shared with the **Road** component\.

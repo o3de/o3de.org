@@ -1,8 +1,13 @@
+description: ' Use a slider component to make an element behave like a slider in &ALY;''s
+  &ui-canvas-editor;. '
+slug: ui-editor-slider-components
+title: Slider
+---
 # Slider<a name="ui-editor-slider-components"></a>
 
 You can use the **Slider** component to make an element behave like a slider\. This component is typically applied to an element with three visual child elements: one immediate child, called **Track**, and two child elements of the track, called **Fill** and **Handle**\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-slider-components.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-slider-components.png)
 
 To see in\-game examples of completed canvases with the **Slider** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **Slider**\. You can view examples of different slider behavior and positioning\. Press **Esc** to exit the game\.
 

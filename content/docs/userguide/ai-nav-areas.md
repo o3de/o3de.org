@@ -1,3 +1,7 @@
+description: ' Add a navigation area to your level in &ALYlong;. '
+slug: ai-nav-areas
+title: Creating Navigation Areas
+---
 # Creating Navigation Areas<a name="ai-nav-areas"></a>
 
 

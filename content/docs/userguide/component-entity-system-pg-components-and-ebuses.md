@@ -1,3 +1,7 @@
+description: ' Learn about the relationship between components and EBuses in &ALYlong;. '
+slug: component-entity-system-pg-components-and-ebuses
+title: Components and EBuses
+---
 # Components and EBuses<a name="component-entity-system-pg-components-and-ebuses"></a>
 
 EBuses are not required for components, nor are they directly bound to components in any way\. But because they form the backbone of communication among all Lumberyard components, EBuses offer many benefits\. We highly recommend that you learn how to use them in your game, systems, and components\. For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.

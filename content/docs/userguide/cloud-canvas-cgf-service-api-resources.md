@@ -1,3 +1,7 @@
+description: ' Learn about the resources in the Cloud Gem Framework in &ALYlong;. '
+slug: cloud-canvas-cgf-service-api-resources
+title: Resources
+---
 # Resources<a name="cloud-canvas-cgf-service-api-resources"></a>
 
 A cloud gem's service API is implemented based on the resources that are defined in the cloud gem's [resource\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-resource-template) file\. The following are the key resources for a cloud gem:

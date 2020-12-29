@@ -1,3 +1,7 @@
+description: ' How JSON types convert to internal &ALY; data types. '
+slug: serialization-json-data-types
+title: Data types in serialized JSON
+---
 # Data types in serialized JSON<a name="serialization-json-data-types"></a>
 
  In addition to primitive C\+\+ types that map directly to JSON types, Lumberyard supports serializing many `AZStd` library objects\. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type\. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](serialization-json-serialize-deserialize.md#serialization-json-serialize)\. 

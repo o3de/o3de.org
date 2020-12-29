@@ -1,3 +1,8 @@
+description: ' Use the Enable Volumetric Scattering node in the &ALYlong; &script-canvas;
+  editor to add volumetric effects. '
+slug: enable-volumetric-scattering-node
+title: Enable Volumetric Scattering
+---
 # Enable Volumetric Scattering<a name="enable-volumetric-scattering-node"></a>
 
 Adds a volumetric effect for simulating fog, snow, or other environments\. You can specify the color, speed, and amount for each effect, so that you can simulate various environments, such as lava\.
@@ -11,7 +16,7 @@ To disable the effect, see [Disable Volumetric Scattering](disable-volumetric-sc
 + [Inputs](#enable-volumetric-scattering-note-input)
 + [Outputs](#enable-volumetric-scattering-node-output)
 
-![\[enablevolumetricscatttering, enablevolumetricscatteringnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-volumetric-scattering-node.png)
+![\[enablevolumetricscatttering, enablevolumetricscatteringnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-volumetric-scattering-node.png)
 
 ## Inputs<a name="enable-volumetric-scattering-note-input"></a>
 

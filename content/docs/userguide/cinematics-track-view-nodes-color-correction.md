@@ -1,3 +1,8 @@
+description: ' Use the Color Correction node in &ALY;''s &trackview-editor; to change
+  the CMYK, brightness, contrast, saturation, and hue in a scene in &ALY;. '
+slug: cinematics-track-view-nodes-color-correction
+title: Color Correction Node
+---
 # Color Correction Node<a name="cinematics-track-view-nodes-color-correction"></a>
 
 You use the **Color Correction** node to change the CMYK, brightness, contrast, saturation, and hue in a scene\. Most color correction properties don't update smoothly\. For this reason, you should hide stronger color correction changes should by cuts or fading between scenes\.

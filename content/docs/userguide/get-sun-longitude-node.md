@@ -1,3 +1,8 @@
+description: ' Use the Sun Longitude node in the &ALYlong; &script-canvas; editor
+  to return the sun longitude. '
+slug: get-sun-longitude-node
+title: Get Sun Longitude
+---
 # Get Sun Longitude<a name="get-sun-longitude-node"></a>
 
 Returns the sun's longitude in the sky\.
@@ -6,7 +11,7 @@ Returns the sun's longitude in the sky\.
 + [Inputs](#get-sun-longitude-node-input)
 + [Outputs](#get-sun-longitude-node-output)
 
-![\[getsunlongitude, sunlongitudenode, getsunlongitudenode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-longitude-node.png)
+![\[getsunlongitude, sunlongitudenode, getsunlongitudenode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-longitude-node.png)
 
 ## Inputs<a name="get-sun-longitude-node-input"></a>
 

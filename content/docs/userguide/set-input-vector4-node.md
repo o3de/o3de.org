@@ -1,3 +1,8 @@
+description: ' Use the Set Input Vector4 node in the &ALYlong; &script-canvas; editor
+  to set the value of a procedural material input parameter as a Vector4. '
+slug: set-input-vector4-node
+title: Set Input Vector4
+---
 # Set Input Vector4<a name="set-input-vector4-node"></a>
 
 Sets the value of an input parameter as a Vector4\. Use this node with the `Float4` and `Integer4` substance data types\. 
@@ -11,7 +16,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#set-input-vector4-node-input)
 + [Outputs](#set-input-vector4-node-output)
 
-![\[SetInputVector4 sets the Vector4 value for a procedural material input parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector4-node.png)
+![\[SetInputVector4 sets the Vector4 value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector4-node.png)
 
 ## Inputs<a name="set-input-vector4-node-input"></a>
 

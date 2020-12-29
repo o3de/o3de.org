@@ -1,3 +1,7 @@
+description: ' Learn about how &ALYlong; uses system components. '
+slug: az-module-system-components
+title: System Components
+---
 # System Components<a name="az-module-system-components"></a>
 
 A traditional game engine contains many singleton classes, each in charge of a major system\. In Lumberyard, these singletons are built using the same [component entity system](component-intro.md) that powers gameplay entities\. When an application starts, a *system entity* is created\. Components added to this entity are known as *system components*\. The system entity always has the ID `AZ::SystemEntityId (0)`\. 

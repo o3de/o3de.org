@@ -1,3 +1,7 @@
+description: ' Troubleshoot issues for &ALYlong; terrain. '
+slug: terrain-troubleshoot
+title: Terrain FAQs
+---
 # Terrain FAQs<a name="terrain-troubleshoot"></a>
 
 See the following troubleshooting tips to resolve issues for your Lumberyard terrains\.

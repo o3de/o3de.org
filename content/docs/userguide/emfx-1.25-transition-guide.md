@@ -1,3 +1,8 @@
+description: ' Information for developers on changes to EMotion FX in &ALY; version
+  1.25. '
+slug: emfx-1.25-transition-guide
+title: EMotion FX transition guide version 1.25
+---
 # EMotion FX transition guide version 1\.25<a name="emfx-1.25-transition-guide"></a>
 
 Lumberyard version 1\.25 introduces deferred initialization for unique datas in anim graphs\. Rather than preallocating unique datas for the whole anim graph upfront, allocation is deferred until the objects are used the first time\. For example, when transitioning into a given state, the unique data of the transition target isallocated and initialized right before the transition starts blending\. This decreases instantiation time and makes spawning new characters that run an anim graph faster\. The bigger the anim graph, the greater the speed improvement\. 

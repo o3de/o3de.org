@@ -1,3 +1,7 @@
+description: null
+slug: gems-system-gems-creating-a-new-gem-cmdline
+title: Creating a Gem from the Command Line
+---
 # Creating a Gem from the Command Line<a name="gems-system-gems-creating-a-new-gem-cmdline"></a>
 
 You can also use the command line to create a gem\. You can do this in either the command line or the [Project Configurator](gems-system-gems-creating-a-new-gem-projconf.md)\.

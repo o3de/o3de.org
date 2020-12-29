@@ -1,3 +1,8 @@
+description: ' Use &landscape-canvas; &gem; to author dynamic vegetation &ALYlong;
+  project. '
+slug: gem-landscape-canvas
+title: '&landscape-canvas; &gem;'
+---
 # Landscape Canvas Gem<a name="gem-landscape-canvas"></a>
 
 
@@ -9,7 +14,7 @@
 
 The Landscape Canvas Gem provides the Landscape Canvas Editor; a node\-based graph tool for authoring dynamic vegetation workflows to drive vegetation areas\. This is a great improvement over the previous component based dynamic vegetation system because you can now manage an edit all of the inputs in one place, and easily visualize the data flow when you build dynamic vegetation\. The Landscape Canvas Editor uses the same UI and UX principles as Script Canvas, making Landscape Canvas intuitive and familiar\. 
 
-![\[White Box component interface.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/landscape-canvas-demo.gif)
+![\[White Box component interface.\]](/images/gems/landscape-canvas-demo.gif)
 
 **Note**  
 Landscape Canvas is backwards compatible\. Any Dynamic Vegetation content you have previously authored is automatically parsed and a graph is built for you from your existing levels\. 

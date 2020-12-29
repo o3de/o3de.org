@@ -1,3 +1,8 @@
+description: ' Learn how &ALYlong;''s Cloud Gem Framework swagger extension object
+  facilitates the use of &ABP; for use with &LAMlong;. '
+slug: cloud-canvas-cgf-service-api-cgf-extension-object
+title: Cloud Gem Framework Extension Object
+---
 # Cloud Gem Framework Extension Object<a name="cloud-canvas-cgf-service-api-cgf-extension-object"></a>
 
 The swagger specification allows tools like the Cloud Gem Framework and API Gateway to define [extension objects](http://swagger.io/specification/#vendorExtensions)\. These objects allow the `swagger.json` file to provide custom configuration data for the tool\. The extension object that the Cloud Gem Framework uses is `x-amazon-cloud-canvas-lambda-dispatch`\. This extension object simplifies the configuration of API Gateway for use with an AWS Lambda function\.

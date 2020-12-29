@@ -1,3 +1,7 @@
+description: ' Set up a Wwise project in &ALYlong;. '
+slug: audio-wwise-project-setting-up
+title: Setting up a Wwise Project
+---
 # Setting up a Wwise Project<a name="audio-wwise-project-setting-up"></a>
 
 The **Audio Controls Editor** looks for Wwise project files in the `lumberyard_version\dev\game_project\Sounds\wwise_project\` directory\.

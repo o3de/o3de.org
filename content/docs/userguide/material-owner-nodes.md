@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; &script-canvas; editor to access and manipulate materials
+  on a specific entity. '
+slug: material-owner-nodes
+title: Material Owner Nodes
+---
 # Material Owner Nodes<a name="material-owner-nodes"></a>
 
 You can use the **Script Canvas** editor to interact with materials in two ways\. The following section describes how to manipulate materials on a single entity\. When you apply changes to the entity that owns the material, the entity's material is automatically cloned\. The changes don't affect other entities that have the same material\.

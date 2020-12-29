@@ -1,3 +1,8 @@
+description: ' Use the Enable Water Droplet node in the &ALYlong; &script-canvas;
+  editor to enable water droplets. '
+slug: enable-water-droplets-node
+title: Enable Water Droplets
+---
 # Enable Water Droplets<a name="enable-water-droplets-node"></a>
 
 Apply a water effect that appears from various sources on the screen\. Unlike the **[Enable Rain Drops](enable-rain-drops-node.md)** node, this node simulates a splash of water thrown on the screen\. For example, you can use this node when the camera leaves the water\.
@@ -8,11 +13,11 @@ To disable the effect, see [Disable Water Droplets](disable-water-droplets-node.
 + [Inputs](#enable-water-droplets-node-input)
 + [Outputs](#enable-water-droplets-node-output)
 
-![\[enablewaterdropletsnode, enablewaterdroplets\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-water-droplets-node.png)
+![\[enablewaterdropletsnode, enablewaterdroplets\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-water-droplets-node.png)
 
 **Example**  
 
-![\[Use the Enable Water Droplets node to have water wash down the screen.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-water-droplets-node-example.gif)
+![\[Use the Enable Water Droplets node to have water wash down the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-water-droplets-node-example.gif)
 
 ## Inputs<a name="enable-water-droplets-node-input"></a>
 

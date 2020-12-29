@@ -1,3 +1,7 @@
+description: ' Learn about the tactical point system (TPS) in &ALYlong;. '
+slug: ai-tactical-point-overview
+title: Tactical Point System Overview
+---
 # Tactical Point System Overview<a name="ai-tactical-point-overview"></a>
 
 

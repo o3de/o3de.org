@@ -1,8 +1,13 @@
+description: ' Use the Emitter Attribute in the &ALY; &particle-editor; to control
+  the location and spawning attributes of the particle and emitter shape. '
+slug: particle-editor-reference-emitter
+title: Emitter Attribute
+---
 # Emitter Attribute<a name="particle-editor-reference-emitter"></a>
 
 In the **Emitter** attribute, specify how to control the location and spawning attributes of the particle and emitter shape\. The parameters are updated based on the type that you select\. 
 
-![\[Emitter attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-emitter.png)
+![\[Emitter attributes in the Particle Editor.\]](/images/particles/particle-editor-emitter.png)
 
 
 **Emitter Attribute Parameters**  

@@ -1,3 +1,8 @@
+description: ' Use the Curve Editor in &trackview-editor; to manage animations in
+  &ALYlong;. '
+slug: cinematics-track-view-editor-animation-curves
+title: Using Animation Curves
+---
 # Using Animation Curves<a name="cinematics-track-view-editor-animation-curves"></a>
 
 The **Curve Editor** displays animations as function curves\. Each track's curves represent an animation of a property value, such as anchor, offset, color, or any property of a UI element\.
@@ -21,7 +26,7 @@ A curve has the following three parts:
 
 1. Tangent handles for the keys\.
 
-![\[Elements of a curve in Track View for the Curve Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-track-view-editor-curves.png)
+![\[Elements of a curve in Track View for the Curve Editor\]](/images/cinematics/cinematics-track-view-editor-curves.png)
 
 **To edit elements in a curve**
 

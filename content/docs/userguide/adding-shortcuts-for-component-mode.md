@@ -1,3 +1,7 @@
+description: ' Add shortcuts for your component in &ALYlong;. '
+slug: adding-shortcuts-for-component-mode
+title: 'Step 4: Add Shortcuts for &CM;'
+---
 # Step 4: Add Shortcuts for Component Mode<a name="adding-shortcuts-for-component-mode"></a>
 
 In the following procedure, create shortcuts that are specific to the component that you're editing\. For example, if you're editing a **Spline** component and want to add shortcuts for working with vertices, you can create a shortcut such as **Ctrl**\+**D** to duplicate a point or **Delete** to remove it\. When adding shortcuts, note the following changes in your code:

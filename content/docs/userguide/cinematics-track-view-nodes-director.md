@@ -1,3 +1,7 @@
+description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
+slug: cinematics-track-view-nodes-director
+title: Director (Scene) Node
+---
 # Director \(Scene\) Node<a name="cinematics-track-view-nodes-director"></a>
 
 The **Director \(Scene\)** node includes a camera track that specifies the active camera for a track view sequence\. You can add sequence\-specific nodes \(for example, **Depth of Field** or **Comment**\) under the **Director** node to override the same nodes that were set at the sequence level\.
@@ -13,7 +17,7 @@ The **Director \(Scene\)** node includes a camera track that specifies the activ
 1. Right\-click your sequence and choose **Add Director \(Scene\) Node**\.
 
 1. Right\-click the **Director** node and click **Add Track**\.  
-![\[Add the Director node in the Track View to manage your track view sequence.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-trackview-nodes-director.png)
+![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/cinematics/cinematics-trackview-nodes-director.png)
 
 1. Select the track and double\-click to position the key on its highlighted row in the timeline\.
 

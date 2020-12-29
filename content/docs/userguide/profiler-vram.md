@@ -1,3 +1,8 @@
+description: ' Use the VRAM profiler in &ALYlong; to determine which resources are
+  contributing most to runtime video memory usage in your game. '
+slug: profiler-vram
+title: Using Profiler for VRAM
+---
 # Using Profiler for VRAM<a name="profiler-vram"></a>
 
 ****  
@@ -25,7 +30,7 @@ The VRAM profiler has the following attributes:
 
 The following image shows how your saved `.csv` file appears in a spreadsheet application: 
 
-![\[Captured data\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/profiler-vram-captured-data.png)
+![\[Captured data\]](/images/profiler-vram-captured-data.png)
 
 The captured data contains essentially two tables of information: an overview of memory allocation and usage \(divided between texture and buffer assets\), and a list of resources with the amount of VRAM that was allocated for each during the capture\. 
 
@@ -54,17 +59,17 @@ The size, in bytes, of the allocation\.
 
 When you first open the spreadsheet, the data is unordered\. To sort the data, you can use a spreadsheet application: 
 
-![\[Custom sort\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/profiler-vram-sort-custom.png)
+![\[Custom sort\]](/images/profiler-vram-sort-custom.png)
 
 To quickly and easily identify the largest offending assets or runtime resources, sort by **VRAM Allocation Size** in descending order, or by **Resource Name** from A to Z: 
 
-![\[VRAM sort descending\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/profiler-vram-sort-descending.png)
+![\[VRAM sort descending\]](/images/profiler-vram-sort-descending.png)
 
 ### Negative VRAM Allocation Sizes<a name="profiler-vram-negative-allocation-sizes"></a>
 
  Some fields may have a negative number for **VRAM Allocation Size**, as in the following image: 
 
-![\[Negative VRAM allocation size\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/profiler-vram-negative-allocation.png)
+![\[Negative VRAM allocation size\]](/images/profiler-vram-negative-allocation.png)
 
 These important occurrences show that a VRAM deallocation event occurred during the capture\. If you observe a large number of deallocation entries over a short time period, your game might be experiencing a significance decrease in performance\. To improve your game's performance across all operating systems, you should aim to have as few idle per\-frame VRAM allocations and deallocations as possible\. 
 

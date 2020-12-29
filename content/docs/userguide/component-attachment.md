@@ -1,10 +1,15 @@
+description: ' Use the Attachment component to attach an entity''s bone to a bone
+  on the skeleton of another entity in &ALYlong;. '
+slug: component-attachment
+title: Attachment
+---
 # Attachment<a name="component-attachment"></a>
 
 The **Attachment** component lets an entity attach to a bone on the skeleton of another entity\.
 
 ## Attachment Component Properties<a name="component-attachment-properties"></a>
 
-![\[Attachment component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/attachment-component-properties.png)
+![\[Attachment component properties.\]](/images/component/attachment-component-properties.png)
 
 The **Attachment** component has the following properties\.
 

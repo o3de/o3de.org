@@ -1,3 +1,8 @@
+description: ' Use the UIImageComponent to control sprites, images, and textures in
+  &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uiimagecomponent
+title: UIImageComponent
+---
 # UIImageComponent<a name="lua-scripting-ces-api-ui-uiimagecomponent"></a>
 
 Controls sprites, images, and textures\.

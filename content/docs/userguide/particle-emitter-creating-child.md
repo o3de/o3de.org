@@ -1,3 +1,9 @@
+description: Create a child emitter by setting the parent effect and attaching the
+  child emitter to the parent particles. A particle effect can have any number of
+  child effects (subeffects).
+slug: particle-emitter-creating-child
+title: Creating Child Emitters
+---
 # Creating Child Emitters<a name="particle-emitter-creating-child"></a>
 
 To create a child emitter, you first set the parent effect and then attach the child emitter to the parent particles\. You can attach multiple child emitters to the parent particle\. A particle effect can have any number of child effects \(also called subeffects\), which you can nest in a library by dragging and dropping where needed\.

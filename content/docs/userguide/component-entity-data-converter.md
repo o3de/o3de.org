@@ -1,3 +1,8 @@
+description: ' Use the &entity-converter; tool to convert entities from the legacy
+  entities (CryEntities) to the new &component-system; in &ALYlong;. '
+slug: component-entity-data-converter
+title: Converting Entities with the &entity-converter;
+---
 # Converting Entities with the Legacy Converter<a name="component-entity-data-converter"></a>
 
 
@@ -28,10 +33,10 @@ The CryEntity Removal gem disables all legacy features in Lumberyard Editor\. Fo
 1. The dialog box shows the number of legacy entities in your level\. Choose **Convert Entities**\. 
 
    A progress bar appears that shows the number of entities that the Legacy Converter is processing\. The conversion takes several seconds to complete\.  
-![\[The conversion log shows which entities were converted and which were not in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-entities-detected.png)
+![\[The conversion log shows which entities were converted and which were not in Lumberyard.\]](/images/component/entity_system/legacy-converter-entities-detected.png)
 
 1. After the conversion completes, the dialog box shows the number of converted and unconverted entities\. See the **Status** and **Message** columns for more information\. Choose **OK**\.  
-![\[The conversion log shows that entities converted and which did not in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-conversion.png)
+![\[The conversion log shows that entities converted and which did not in Lumberyard.\]](/images/component/entity_system/legacy-converter-conversion.png)
 **Note**  
 If the Legacy Converter can't convert an entity, a **Conversion Error** dialog box appears that shows the number of entities that were not converted\. If the CryEntity Removal gem is enabled, unconverted entities remain in your level but cannot be edited\. For more information, choose **View Log**\. You can also choose **Export Log** to save the conversion log as a `.csv` file\.
 
@@ -120,7 +125,7 @@ The camera target entity is converted to an empty component entity\.
 
 A Comment entity is converted to a component entity that is attached with a **[ Comment  Use the Comment component in Amazon Lumberyard to add text comments for component entities\.   The **Comment** component allows you to add long\-form text comments for component entities\. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter\. The following examples demonstrate how you can use the comment text box:  Explain how the scripts or components on an entity interact with other scripts or components Describe how everything in a level ties together Send descriptions, instructions, or notes to team members  
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/comment-component.png) Comment Properties The **Comment** component has the following property:  
+![\[Image NOT FOUND\]](/images/component/comment-component.png) Comment Properties The **Comment** component has the following property:  
 
 **Comment text box**  
 Stores the user comment for the component entity\.  
@@ -199,16 +204,16 @@ The Legacy Converter converts the original shape of designer objects into `.cgf`
 **Example**  
 
 1. You have a legacy designer object named *Designer1* shaped as a sphere\.   
-![\[Legacy designer object before conversion.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-conversion-designer-object-1.png)
+![\[Legacy designer object before conversion.\]](/images/component/entity_system/legacy-converter-conversion-designer-object-1.png)
 
 1. With the Legacy Converter, you convert the object into a entity with the **Mesh**, **Static Physics**, and **Mesh Collider** components attached\.  
-![\[The log shows that converted legacy designer object.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-conversion-designer-object-2.png)
+![\[The log shows that converted legacy designer object.\]](/images/component/entity_system/legacy-converter-conversion-designer-object-2.png)
 
 1. The Legacy Converter creates a `.cgf` file and saves it to the `lumberyard_version\dev\game-project\Objects\DesignerConversion\level-name\` directory\.   
-![\[The converted designer object is a mesh asset file.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-conversion-designer-object-4.png)
+![\[The converted designer object is a mesh asset file.\]](/images/component/entity_system/legacy-converter-conversion-designer-object-4.png)
 
 1. In the **Mesh** component, the **Mesh asset** property specifies this `Designer1.cgf` file\. The entity has the same shape as the original designer object\.  
-![\[The converted designer object is a mesh asset file.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/legacy-converter-conversion-designer-object-3.png)
+![\[The converted designer object is a mesh asset file.\]](/images/component/entity_system/legacy-converter-conversion-designer-object-3.png)
 
 **Note**  
 You cannot edit a designer object after it is converted into a component entity\. You can use the legacy **Designer Tool** to create your object and convert it again\. For more information, see [Using the Designer Tool](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-designer-tool.html) in the *Amazon Lumberyard Legacy Reference*\.

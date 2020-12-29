@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; Snow component to add snow effects to your game. '
+slug: component-snow
+title: Snow
+---
 # Snow<a name="component-snow"></a>
 
 
@@ -11,7 +15,7 @@ You can use the **Snow** component to create snowfall effects and create patches
 
 To enable the **Snow** component, you must enable the Snow gem\. For more information, see [Snow Gem](gems-system-gem-snow.md)\.
 
-![\[Add the Snow component to your entity to enable snow effects in your level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-snow-component-animation-example.gif)
+![\[Add the Snow component to your entity to enable snow effects in your level.\]](/images/shared-snow-component-animation-example.gif)
 
 **Note**  
 If your level has a **Snow** and **[Rain](component-rain.md)** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
@@ -48,7 +52,7 @@ You can edit snow effects only when the **AI/Physics** toggle is disabled\.
 
 ## Snow Component Properties<a name="component-snow-properties"></a>
 
-![\[Snow component properties to customize the snow effects in your level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/snow-component-properties.png)
+![\[Snow component properties to customize the snow effects in your level.\]](/images/component/snow-component-properties.png)
 
 The **Snow** component has the following properties:
 

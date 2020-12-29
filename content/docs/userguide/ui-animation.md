@@ -1,3 +1,8 @@
+description: ' Use &ALY;''s UI Animation Editor to animate elements in your game''s
+  UI. '
+slug: ui-animation
+title: UI Animation Editor
+---
 # UI Animation Editor<a name="ui-animation"></a>
 
 You can use animation sequences to animate UI elements in your game's UI\. A UI canvas can contain many named animation sequences\.
@@ -10,6 +15,6 @@ The UI **Animation Editor** has the following features:
 
 **To show the **Animation Editor** if it is not already visible**
 + From the [**UI Editor**](ui-editor-using.md) menu, choose **View**, **Animation Editor**\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animation-window.png)
+![\[Image NOT FOUND\]](/images/ui-animation-window.png)
 
 To create an animation sequence, you first create a new sequence, assign one or more UI elements to it, and then record changes you make to the UI element\(s\)—this becomes the animation sequence\. You can then edit the animation sequence\(s\) using the **Animation Editor**\. These processes are described in greater detail in the following sections\.

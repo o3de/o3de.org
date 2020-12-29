@@ -1,3 +1,8 @@
+description: ' See the following tips on writing handlers to gather defect reporting
+  data in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-defect-reporter-handler-writing
+title: Writing Data Gathering Handlers
+---
 # Writing Data Gathering Handlers<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing"></a>
 
 Client\-side data gathering can be performed by EBus request handlers\.

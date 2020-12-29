@@ -1,3 +1,8 @@
+description: ' Edit and update default dependency files to ensure that game-wide assets
+  are always packaged as part of a bundle. '
+slug: asset-bundler-default-dependencies
+title: Default dependencies for &ALY; projects
+---
 # Default dependencies for Lumberyard projects<a name="asset-bundler-default-dependencies"></a>
 
  Throughout your Lumberyard project you'll use assets across multiple levels, or find those that need to be included whether or not they're a strict dependency\. To handle these use cases, Lumberyard supports *default dependency files* which define assets that are always required when bundling your project\. Default dependencies are also used by Gems to make sure their own critical assets are always included\. 

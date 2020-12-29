@@ -1,3 +1,8 @@
+description: Use the Vegetation Layer Spawner component to create vegetation entities
+  in &ALYlong;.
+slug: vegetation-layer-spawner-properties
+title: Vegetation Layer Spawner Properties
+---
 # Vegetation Layer Spawner Properties<a name="vegetation-layer-spawner-properties"></a>
 
 The **Vegetation Layer Spawner** component has the following properties:
@@ -25,4 +30,4 @@ For the **Filter Stage** property, the **PreProcess** option results in faster p
 **Example**  
 A **Vegetation Altitude Filter** is set to filter out vegetation below 32 meters\. A **Vegetation Position Modifier** is set to shift vegetation left by 5 meters\. The initial **Vegetation Layer Spawner** is placed in a box sitting at 32 meters\. With the **PreProcess** option \(A\), the filter is applied first, and then the modifier shifts vegetation left into the canyon\. With the **PostProcess** option \(B\), the modifier shifts vegetation left into the canyon first\. The filter is then applied, which removes the vegetation below 32 meters\.  
 
-![\[Filter Stage with PreProcess option and PostProcess option.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/vegetation/component-vegetation-layer-spawner-prepostprocess.png)
+![\[Filter Stage with PreProcess option and PostProcess option.\]](/images/component/vegetation/component-vegetation-layer-spawner-prepostprocess.png)

@@ -1,3 +1,7 @@
+description: ' Learn more about game nodes for MBT features in &ALYlong;. '
+slug: ai-scripting-mbt-nodes-game
+title: Game Nodes
+---
 # Game Nodes<a name="ai-scripting-mbt-nodes-game"></a>
 
 These nodes offer game\-specific MBT functionality\. These allow a game with multiple character types to trigger specific logic and perform actions involving each type's peculiarities\. Game\-specific nodes not likely to be good for "general use" will probably need customization for each game\. 

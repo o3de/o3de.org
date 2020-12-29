@@ -1,3 +1,8 @@
+description: ' Use the &tod-editor; parameters to customize sun, fog, and shadow settings
+  in your &ALYlong; environment. '
+slug: sky-tod-parameters
+title: Time of Day Parameters
+---
 # Time of Day Parameters<a name="sky-tod-parameters"></a>
 
 Set the following parameters to customize your sun, fog, and shadow settings\.

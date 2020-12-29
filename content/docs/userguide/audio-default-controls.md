@@ -1,3 +1,8 @@
+description: ' Create sound effects for your game project with the &audio-controls-browser;
+  in &ALYlong;. '
+slug: audio-default-controls
+title: ATL Controls
+---
 # ATL Controls<a name="audio-default-controls"></a>
 
 The game uses Audio Translation Layer \(ATL\) controls to communicate with the audio middleware\. ATL controls are mapped to various data authored in the middleware's authoring tool\. This abstraction layer provides you the flexibility to change mappings quickly without updating the game's integration of controls\.
@@ -8,7 +13,7 @@ To see the list of audio control types, see [ATL Controls Pane](audio-atl-editor
 
 The **Audio Controls Editor** automatically creates the following ATL controls by default\. You can find the controls in the `default_controls` folder\.
 
-![\[ATL controls that the Audio Controls Editor automatically creates by default.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/audio/audio-atl-editor-default.png)
+![\[ATL controls that the Audio Controls Editor automatically creates by default.\]](/images/audio/audio-atl-editor-default.png)
 
 
 **Default ATL Controls**  

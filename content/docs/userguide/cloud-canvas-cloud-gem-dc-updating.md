@@ -1,3 +1,8 @@
+description: ' Learn how to update dynamic content and use dynamic content versioning
+  for your &ALYlong; dynamic content packages. '
+slug: cloud-canvas-cloud-gem-dc-updating
+title: Updating Dynamic Content
+---
 # Updating Dynamic Content<a name="cloud-canvas-cloud-gem-dc-updating"></a>
 
 To update dynamic content you can use either the Dynamic Content Manager user interface or the `lmbr_aws` CLI to upload new manifest content\. We recommend that you enable dynamic content versioning to pre\-stage and schedule the release of new versions so that players can still download previous versions while new content is uploaded\. Dynamic content versioning also enables rollback to previous versions without having to re\-upload the previous content\.

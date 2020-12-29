@@ -1,8 +1,12 @@
+description: ' Use the Preview panel to view your particle effect in the &ALY; &particle-editor;. '
+slug: particle-editor-preview-panel
+title: Using the Preview Panel
+---
 # Using the Preview Panel<a name="particle-editor-preview-panel"></a>
 
 You can use the **Preview** panel in the **Particle Editor** to view the particle effects\.
 
-![\[Particle panel in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-preview-panel.png)
+![\[Particle panel in the Particle Editor.\]](/images/particles/particle-preview-panel.png)
 
 This panel has the following features:
 

@@ -1,3 +1,9 @@
+description: ' Use the Set Enabled &endash; High Quality Shadow node in the &ALYlong;
+  &script-canvas; editor to check whether an entity''s High Quality Shadow component
+  is enabled. '
+slug: high-quality-shadow-set-enabled
+title: Set Enabled
+---
 # Set Enabled<a name="high-quality-shadow-set-enabled"></a>
 
 Indicates whether the entity's **[High Quality Shadow](component-high-quality-shadow.md)** component is enabled\.
@@ -6,7 +12,7 @@ Indicates whether the entity's **[High Quality Shadow](component-high-quality-sh
 + [Inputs](#high-quality-shadow-set-enabled-input)
 + [Outputs](#high-quality-shadow-set-enabled-output)
 
-![\[setenabled, highqualityshadow\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-set-enabled.png)
+![\[setenabled, highqualityshadow\]](/images/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-set-enabled.png)
 
 ## Inputs<a name="high-quality-shadow-set-enabled-input"></a>
 

@@ -1,3 +1,7 @@
+description: ' Use Lua scripting in &ALYlong; to automate your game project. '
+slug: lua-scripting-intro
+title: Writing Lua Scripts
+---
 # Writing Lua Scripts<a name="lua-scripting-intro"></a>
 
 **Topics**

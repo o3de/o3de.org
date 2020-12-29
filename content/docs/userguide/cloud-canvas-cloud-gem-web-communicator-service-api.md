@@ -1,3 +1,8 @@
+description: ' Learn about the &cloud; Web Communicator Cloud Gem API calls that the
+  Cloud Gem Portal uses to send messages to connected clients in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-web-communicator-service-api
+title: Web Communicator Cloud Gem Service API
+---
 # Web Communicator Cloud Gem Service API<a name="cloud-canvas-cloud-gem-web-communicator-service-api"></a>
 
 The Web Communicator cloud gem service API contains the following general requests, client requests, and portal requests\. These calls are exposed on the client by the code in `lumberyard_version\dev\Gems\CloudGemWebCommunicator\Code\AWS\ServiceApi\CloudGemWebCommunicatorClientComponent.*` and are used by the Cloud Gem Portal\. You do not have to manage these calls directly on the client or portal\. 

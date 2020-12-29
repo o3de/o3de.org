@@ -1,3 +1,9 @@
+description: ' Use &ALYlong;''s instantVR slice as a starting point from which you
+  can quickly create a virtual reality level with scripts and assets that provide
+  VR functionality. '
+slug: virtual-reality-instant-vr
+title: Using the InstantVR Slice
+---
 # Using the InstantVR Slice<a name="virtual-reality-instant-vr"></a>
 
 
@@ -19,7 +25,7 @@ The **instantVR** slice is part of the Virtual Reality Project sample level\. Fo
 **To use the **instantVR** slice**
 
 1. In the [**Asset Browser**](asset-browser-intro.md), navigate to `dev\VirtualRealityProject\slices\`\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vr/virtual-reality-instant-vr-ab.png)
+![\[Image NOT FOUND\]](/images/vr/virtual-reality-instant-vr-ab.png)
 
 1. Drag `instantvr.slice` into the viewport\.
 
@@ -29,6 +35,6 @@ The **instantVR** slice is part of the Virtual Reality Project sample level\. Fo
 
    You can use the trigger buttons on your controllers to teleport around the space\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vr/virtual-reality-instant-vr-1.png)
+![\[Image NOT FOUND\]](/images/vr/virtual-reality-instant-vr-1.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vr/virtual-reality-instant-vr-2.png)
+![\[Image NOT FOUND\]](/images/vr/virtual-reality-instant-vr-2.png)

@@ -1,3 +1,7 @@
+description: ' See the following best practices for normal maps in &ALYlong;. '
+slug: mat-maps-normal-intro
+title: Working with Normal Maps
+---
 # Working with Normal Maps<a name="mat-maps-normal-intro"></a>
 
 The illusion of extra depth and detail to objects is achieved by using normal maps, which are a type of bump map\. Bump maps and normal maps both add detail without increasing the number of polygons\. As such, they are used to "fake" depth and details such as wrinkles, scratches and beveled edges\. Unlike displacement mapping, normal maps affect shading and not the surface itself\. The surface remains flat when seen from an angle\. 

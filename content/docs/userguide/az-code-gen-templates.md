@@ -1,3 +1,8 @@
+description: ' Learn about the Jinja2 templates that AZ Code Generator uses to generate
+  code in &ALYlong;. '
+slug: az-code-gen-templates
+title: Code Generation Templates
+---
 # Code Generation Templates<a name="az-code-gen-templates"></a>
 
 

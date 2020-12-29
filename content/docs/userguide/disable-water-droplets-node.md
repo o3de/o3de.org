@@ -1,3 +1,8 @@
+description: ' Use the Disable Water Droplet node in the &ALYlong; &script-canvas;
+  editor to disable water droplets. '
+slug: disable-water-droplets-node
+title: Disable Water Droplets
+---
 # Disable Water Droplets<a name="disable-water-droplets-node"></a>
 
 Disables water droplet effects\.
@@ -8,7 +13,7 @@ To enable the effect, see [Enable Water Droplets](enable-water-droplets-node.md)
 + [Inputs](#disable-water-droplets-node-input)
 + [Outputs](#disable-water-droplets-node-output)
 
-![\[disablewaterdropletsnode, disablewaterdroplets\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-droplets-node.png)
+![\[disablewaterdropletsnode, disablewaterdroplets\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-droplets-node.png)
 
 ## Inputs<a name="disable-water-droplets-node-input"></a>
 

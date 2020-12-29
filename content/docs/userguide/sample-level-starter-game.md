@@ -1,8 +1,13 @@
+description: ' Use the Starter Game sample and its free character, game, and environment
+  assets to build your own gameplay space in &ALYlong;. '
+slug: sample-level-starter-game
+title: Starter Game Sample
+---
 # Starter Game Sample<a name="sample-level-starter-game"></a>
 
 You can use the Starter Game sample to see how Lumberyard systems work together to make a game\. Starter Game is a small, third\-person game that is built with the Lumberyard component entity system\. In addition to component entities, Starter Game demonstrates bipedal locomotion, the Dynamic Vegetation system, the Script Canvas visual scripting system, use of PhysX as the physics system, and more\. In this sample, you play as Valena, a human who has crashed on a distant planet\. Valena can explore the world and must defend herself against enemy robots that occupy the planet\.
 
-![\[Starter Game sample for Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/starter-game-combat-1.25.png)
+![\[Starter Game sample for Lumberyard.\]](/images/starter-game-combat-1.25.png)
 
 Starter Game is included in the Lumberyard installation package\. It runs on PC and supported consoles, but is not supported for MacOS and mobile devices\.
 

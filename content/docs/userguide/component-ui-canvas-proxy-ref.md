@@ -1,3 +1,8 @@
+description: ' Use the UI Canvas Proxy Ref component in &ALYlong; to place a UI canvas
+  on a 3D mesh that a player can interact with. '
+slug: component-ui-canvas-proxy-ref
+title: UI Canvas Proxy Ref
+---
 # UI Canvas Proxy Ref<a name="component-ui-canvas-proxy-ref"></a>
 
 With the UI Canvas Proxy Ref component, you can associate a component entity in a level with another component entity that is managing a UI canvas\. Use this component in conjunction with the [**UI Canvas on Mesh**](component-ui-canvas-on-mesh.md) component if you want to place a UI canvas on a 3D mesh that a player can interact with in several places in the 3D world\.
@@ -8,7 +13,7 @@ To see an example of using the **UI Canvas Proxy Ref** component, open the **UiI
 
 The following picture shows three entities that share the same loaded canvas\. The curved plane entity has a **UI Canvas Asset Ref** component and the egg and the sphere both have **UI Canvas Proxy Ref** components:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
+![\[Image NOT FOUND\]](/images/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
 
 ## UI Canvas Proxy Ref Component Properties<a name="component-ui-canvas-proxy-ref-properties"></a>
 

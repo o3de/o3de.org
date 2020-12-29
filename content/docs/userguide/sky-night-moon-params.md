@@ -1,3 +1,7 @@
+description: ' Define how the moon appears in &ALYlong;. '
+slug: sky-night-moon-params
+title: Setting Moon Parameters
+---
 # Setting Moon Parameters<a name="sky-night-moon-params"></a>
 
 You can define how the moon appears in the nighttime sky\.

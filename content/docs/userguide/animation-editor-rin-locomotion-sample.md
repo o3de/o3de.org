@@ -1,3 +1,8 @@
+description: ' Use the Rin Locomotion sample level to learn how the &ALY; &animation-editor;
+  uses actors, motion sets, and animation graphs to control character behavior. '
+slug: animation-editor-rin-locomotion-sample
+title: Advanced_RinLocomotion Sample
+---
 # Advanced\_RinLocomotion Sample<a name="animation-editor-rin-locomotion-sample"></a>
 
 
@@ -28,8 +33,8 @@ You can also use a controller connected to your computer:
 + To zoom out the camera, press the left trigger\.
 + To snap the camera to the back of the character, press the right joystick\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/advanced-rin-locomotion-sample-01.png)
+![\[Image NOT FOUND\]](/images/actor-animation/advanced-rin-locomotion-sample-01.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/advanced-rin-locomotion-sample-02.png)
+![\[Image NOT FOUND\]](/images/actor-animation/advanced-rin-locomotion-sample-02.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/advanced-rin-locomotion-sample-03.png)
+![\[Image NOT FOUND\]](/images/actor-animation/advanced-rin-locomotion-sample-03.png)

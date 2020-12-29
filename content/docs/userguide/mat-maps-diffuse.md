@@ -1,3 +1,7 @@
+description: ' See the best practices for working with diffuse maps in &ALYlong;. '
+slug: mat-maps-diffuse
+title: Working with Diffuse Maps
+---
 # Working with Diffuse Maps<a name="mat-maps-diffuse"></a>
 
 When light hits a surface, it splits into two directions: some is reflected immediately off the surface while the rest enters the surface and gets refracted\. The refracted light can be absorbed or scattered underneath the surface and exit again at a different angle\. This absorbed and refracted light is the diffuse color of an object\. 

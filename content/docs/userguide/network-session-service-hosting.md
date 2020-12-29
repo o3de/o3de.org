@@ -1,3 +1,7 @@
+description: ' Learn how to host a GridMate session in &ALYlong;. '
+slug: network-session-service-hosting
+title: Hosting a Session
+---
 # Hosting a Session<a name="network-session-service-hosting"></a>
 
 A session can be hosted by calling `IGridMate::HostSession()` after the session service has been started\. The session settings and configuration are set in the `GridMate::SessionParams` argument, which acts as a base class for certain implementations of `GridMate::SessionService.`

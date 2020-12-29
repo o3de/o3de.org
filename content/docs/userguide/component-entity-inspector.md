@@ -1,3 +1,8 @@
+description: ' Use the &entity-inspector; to add components to entities and modify
+  their properties in &ALYlong;. '
+slug: component-entity-inspector
+title: Entity Inspector
+---
 # Entity Inspector<a name="component-entity-inspector"></a>
 
 The **Entity Inspector** manages all the components for each entity\. Select an entity in the **Entity Outliner** or the viewport to see the attached components in the **Entity Inspector**\. 
@@ -14,7 +19,7 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
    + **Status** – Active status of the entity\. When the level starts, the entity can be active, inactive, or active but only in editor mode\.
    + **Entity ID** – If this entity ID is called out in messages, errors, or asserts, you can find the entity by searching for it in the **Entity Outliner**\.
    + Components attached to the entity appear below\.  
-![\[Find entities and its attached components in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/component-entity-inspector.png)
+![\[Find entities and its attached components in the Entity Inspector.\]](/images/component/entity_system/component-entity-inspector.png)
 
 Use the **Entity Inspector** to do the following:
 + [Add components to entities](component-working-adding.md)

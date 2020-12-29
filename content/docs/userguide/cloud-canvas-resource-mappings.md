@@ -1,3 +1,8 @@
+description: ' Use resource mappings to map the friendly names used in a game''s resource
+  definitions to the actual names of resources in &ALYlong;. '
+slug: cloud-canvas-resource-mappings
+title: Resource Mappings
+---
 # Resource Mappings<a name="cloud-canvas-resource-mappings"></a>
 
 Resource mappings map the friendly names used in a game's [Resource Definitions](cloud-canvas-resource-definitions.md) to the actual names of the resources created for one or more specific [Resource Deployments](cloud-canvas-resource-deployments.md)\. For example, a DynamoDB table name like `LeaderboardTable` would get mapped to a name like the following:

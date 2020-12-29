@@ -1,3 +1,7 @@
+description: ' Use levels of detail (LODs) to optimize game performance in &ALYlong;. '
+slug: using-actor-LODs-optimize-game-performance
+title: Using Actor LODs to Optimize Game Performance
+---
 # Using Actor LODs to Optimize Game Performance<a name="using-actor-LODs-optimize-game-performance"></a>
 
 You can use levels of detail \([LODs](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#lod)\) to optimize the rendering performance of games\. This is especially true for large in\-game worlds, which are constrained by hardware, frame rate, and the real\-time rendering limits\. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera\. To further reduce draw calls, lower LODs have multiple textures combined into one texture\.
@@ -56,7 +60,7 @@ Currently, Lumberyard supports skeletons created with LOD groups only\.
 
 **To use LOD groups to create actor LODs**
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.  
-![\[Skeleton created as an LOD group\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/character-fbx-settings-lod-optimize-0.png)
+![\[Skeleton created as an LOD group\]](/images/character-fbx-settings-lod-optimize-0.png)
 
 ## Using the FBX Settings Tool to Check LODs<a name="using-fbx-settings-tool-to-check-lods-character-fbx-settings"></a>
 
@@ -68,7 +72,7 @@ After you export your `.fbx` file to Lumberyard, do the following:
 
 1. Right click the `.fbx` file and choose **Edit Settings**\. The **FBX Settings** tool shows a **Level of Detail** modifier that lists the additional LOD meshes\.
 
-![\[LOD entries in the FBX Settings tool\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/character-fbx-settings-lod-optimize-1.png)
+![\[LOD entries in the FBX Settings tool\]](/images/character-fbx-settings-lod-optimize-1.png)
 
 You can use the **FBX Settings** tool to verify that your LODs were imported correctly\. Currently, you can also unselect a mesh or skeleton for each LOD, but you can't move a mesh or skeleton across a level or add a new mesh or skeleton to a level\.
 
@@ -86,7 +90,7 @@ After you import your LODs into Lumberyard Editor, you can add an actor LOD to a
 
 **Example**  
 
-![\[LOD material file in the Actor component in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/character-fbx-settings-lod-optimize-2.png)
+![\[LOD material file in the Actor component in the Entity Inspector.\]](/images/character-fbx-settings-lod-optimize-2.png)
 
 ### Notes<a name="character-fbx-settings-lod-optimize-notes"></a>
 + Lumberyard supports only one material group for each actor\.

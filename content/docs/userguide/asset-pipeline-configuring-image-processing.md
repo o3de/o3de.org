@@ -1,3 +1,8 @@
+description: ' Configure how &ALYlong; processes your images or textures to make them
+  game-ready. '
+slug: asset-pipeline-configuring-image-processing
+title: Configuring Image Processing
+---
 # Configuring Image Processing<a name="asset-pipeline-configuring-image-processing"></a>
 
 Images or textures are automatically processed by Asset Processor, which makes them ready for Lumberyard game creation\. When you place an image file anywhere within your Lumberyard directory, Asset Processor detects and converts the file to a game\-ready asset\. Lumberyard has several configuration files that specify settings for the conversion process, such as the colorspace to use, texture size, [whether to generate mip maps](asset-pipeline-generating-mipmaps.md), and so on\. 
@@ -18,7 +23,7 @@ Lumberyard supports the following image file types:
 
 The following diagram represents the general workflow for converting images\.
 
-![\[General workflow for converting images in Lumberyard\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assets/pipeline/asset-pipeline-images.png)
+![\[General workflow for converting images in Lumberyard\]](/images/assets/pipeline/asset-pipeline-images.png)
 
 **Topics**
 + [Creating Image Processing Presets](asset-pipeline-creating-image-processing-presets.md)

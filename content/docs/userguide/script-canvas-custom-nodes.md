@@ -1,3 +1,7 @@
+description: ' Create a custom node that you can use in &ALY;''s &script-canvas;. '
+slug: script-canvas-custom-nodes
+title: Creating Custom Nodes in &script-canvas;
+---
 # Creating Custom Nodes in Script Canvas<a name="script-canvas-custom-nodes"></a>
 
 Script Canvas uses the [behavior context](component-entity-system-reflection-behavior-context.md)\. The preferred way to expose functionality in Script Canvas is through behavior context bindings\. Behavior context bindings make functionality available to any scripting solution \(such as Lua\) that also uses the behavior context\. However, if you want to create Script Canvas–specific functionality or customized visual scripting experiences, you can use the Script Canvas custom node API\.
@@ -8,7 +12,7 @@ Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ 
 
 The following diagram shows the AZ Code Generator process for Script Canvas\.
 
-![\[AZ Code Generator and Script Canvas\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-custom-nodes-1.png)
+![\[AZ Code Generator and Script Canvas\]](/images/scripting/script-canvas/script-canvas-custom-nodes-1.png)
 
 In **Step 1**, AZ Code Generator processes `MyNode.h` and looks for code generation tags \(source code location: `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\)\. After processing, AZ Code Generator creates a file called `MyNode.generated.h`\.
 

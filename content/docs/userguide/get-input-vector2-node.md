@@ -1,3 +1,8 @@
+description: ' Use the Get Input Vector2 node in the &ALYlong; &script-canvas; editor
+  to return the value of a procedural material input parameter as a Vector2. '
+slug: get-input-vector2-node
+title: Get Input Vector2
+---
 # Get Input Vector2<a name="get-input-vector2-node"></a>
 
 Returns the value of an input parameter as a Vector2\. Use this node with the `Float2` and `Integer2` substance data types\. 
@@ -9,7 +14,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#get-input-vector2-node-input)
 + [Outputs](#get-input-vector2-node-output)
 
-![\[GetInputVector2 gets the Vector2 value for a procedural material's parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector2-node.png)
+![\[GetInputVector2 gets the Vector2 value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector2-node.png)
 
 ## Inputs<a name="get-input-vector2-node-input"></a>
 

@@ -1,3 +1,8 @@
+description: ' Enable the LightBeam shader to create fog-like conditions for light
+  beams in &ALYlong;. '
+slug: shader-ref-lightbeam
+title: LightBeam Shader
+---
 # LightBeam Shader<a name="shader-ref-lightbeam"></a>
 
 The LightBeam shader creates various fog\-like volumetric and atmospheric effects for light beams\. The shader can only be applied to light entities\. To use the LightBeam shader, create a Projector Light component and assign the shader to the material slot\.

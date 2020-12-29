@@ -1,3 +1,7 @@
+description: ' Add speech recognition to your &ALYlong; game. '
+slug: cloud-canvas-cloud-gem-speech-recognition-intro
+title: Speech Recognition Cloud Gem
+---
 # Speech Recognition Cloud Gem<a name="cloud-canvas-cloud-gem-speech-recognition-intro"></a>
 
 You can use the Speech Recognition Cloud Gem to add speech recognition and natural language processing to your Lumberyard game\. The Speech Recognition Cloud Gem uses the [Amazon Lex service](https://aws.amazon.com/lex/), which recognizes the intent of spoken player input so that your game can react accordingly\. Your players can use natural language and do not have to memorize or use specific phrases to initiate commands\.

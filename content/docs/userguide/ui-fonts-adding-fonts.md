@@ -1,3 +1,7 @@
+description: Add new font assets to your &ALYlong; game UI.
+slug: ui-fonts-adding-fonts
+title: Adding New Fonts
+---
 # Adding New Fonts<a name="ui-fonts-adding-fonts"></a>
 
 For each new font to add, you need the following files:

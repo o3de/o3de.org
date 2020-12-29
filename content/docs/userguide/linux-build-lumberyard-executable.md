@@ -1,3 +1,8 @@
+description: ' Build, deploy, and run an &ALYlong; multiplayer project''s dedicated
+  server to a host running Linux. '
+slug: linux-build-lumberyard-executable
+title: Deploy a &ALY; multiplayer project's server on Linux
+---
 # Deploy a Lumberyard multiplayer project's server on Linux<a name="linux-build-lumberyard-executable"></a>
 
 

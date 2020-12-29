@@ -1,3 +1,8 @@
+description: ' Use the &ALY; &particle-editor; to create, edit, preview, manage, and
+  save particle libraries and emitters that are used with entities in your level. '
+slug: particle-editor
+title: Using the &particle-editor;
+---
 # Using the Particle Editor<a name="particle-editor"></a>
 
 
@@ -12,7 +17,7 @@ Use the **Particle Editor** to create, edit, preview, and save particle librarie
 **To open the Particle Editor**
 + In Lumberyard Editor, choose **Tools**, **Particle Editor**\. You can also click the particle editor icon in the Lumberyard Editor toolbar\.
 
-![\[Particle Editor interface\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor.png)
+![\[Particle Editor interface\]](/images/particles/particle-editor.png)
 
 The **Particle Editor** includes the following UI elements:
 + **Libraries** panel – Lists the particle art assets\. You can view and interact with multiple libraries simultaneously\.

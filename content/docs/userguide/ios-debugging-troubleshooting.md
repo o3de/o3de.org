@@ -1,3 +1,8 @@
+description: ' Debug your iOS application using Xcode and &ALY; source code. Troubleshoot
+  the various steps to build assets, shaders, and your iOS application. '
+slug: ios-debugging-troubleshooting
+title: iOS Debugging and Troubleshooting
+---
 # iOS Debugging and Troubleshooting<a name="ios-debugging-troubleshooting"></a>
 
 Lumberyard provides full access to the source code, which allows you to debug your iOS application using Xcode without additional Lumberyard\-specific steps to follow\. For information about debugging and profiling your iOS application, see [Debugging](https://developer.apple.com/support/debugging/) in the official Apple developer documentation\.

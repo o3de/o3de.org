@@ -1,3 +1,8 @@
+description: ' Learn more about the hardware, operating system, and software requirements
+  for installing &ALYlong;. '
+slug: setting-up-system-requirements
+title: System requirements
+---
 # System requirements<a name="setting-up-system-requirements"></a>
 
 Lumberyard has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\. If you have already installed Lumberyard, you can use Lumberyard Setup Assistant to see the requirements for the tools and features that you want for your Lumberyard development environment\. Lumberyard Setup Assistant provides information about installing third\-party software and SDKs on your computer\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](lumberyard-launcher-intro.md)\. 

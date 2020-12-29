@@ -1,3 +1,8 @@
+description: ' Keep these best practices in mind when you create and implement your
+  texture maps for displacement for &ALYlong;. '
+slug: mat-maps-displacement-best-practices
+title: Displacement Mapping Best Practices
+---
 # Displacement Mapping Best Practices<a name="mat-maps-displacement-best-practices"></a>
 
 For best results, use the following best practices when creating displacement maps\.

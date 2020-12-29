@@ -1,3 +1,8 @@
+description: ' Learn how marshalers read and write data to and from buffers in a &ALYlong;
+  GridMate network session. '
+slug: network-marshalling
+title: Marshalling
+---
 # Marshalling<a name="network-marshalling"></a>
 
 Data is written to the network using `WriteBuffer`, and data received is read using `ReadBuffer`\. Each buffer specifies the [endianness](https://en.wikipedia.org/wiki/Endianness) used\.

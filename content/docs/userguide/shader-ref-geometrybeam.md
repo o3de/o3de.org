@@ -1,3 +1,7 @@
+description: ' See the GeometryBeam shader to create volumetric light beams for &ALYlong;. '
+slug: shader-ref-geometrybeam
+title: GeometryBeam Shader
+---
 # GeometryBeam Shader<a name="shader-ref-geometrybeam"></a>
 
 Use the GeometryBeam shader to create volumetric light beams that feature dust and turbulence effects\. 

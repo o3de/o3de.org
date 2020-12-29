@@ -1,3 +1,8 @@
+description: ' Use the &audio-controls-browser; ''s ATL Control pane to add new audio
+  controls and to select and edit audio controls in &ALYlong;. '
+slug: audio-atl-editor-atl-controls
+title: ATL Controls Pane
+---
 # ATL Controls Pane<a name="audio-atl-editor-atl-controls"></a>
 
 The **ATL Control** pane has the following control types\. The associated icon designates the type of control\. You can customize the name of the control\.
@@ -18,11 +23,11 @@ The **ATL Control** pane has the following control types\. The associated icon d
 1. In the **Audio Controls Editor**, click **Filters**\.
 
 1. Select or clear control types\.  
-![\[Select or clear the control types.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/audio/audio-atl-editor-filter.png)
+![\[Select or clear the control types.\]](/images/audio/audio-atl-editor-filter.png)
 
 **To add a new control**
 
 1. Click **Add**\.
 
 1. Select the type of control that you want to add\.  
-![\[Select the type of control you want to add.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/audio/audio-atl-editor-add.png)
+![\[Select the type of control you want to add.\]](/images/audio/audio-atl-editor-add.png)

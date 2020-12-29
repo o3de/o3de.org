@@ -1,3 +1,8 @@
+description: ' Use the Get Param Vector4 node in the &ALYlong; &script-canvas; editor
+  to return a material parameter as a Vector4 value. '
+slug: script-canvas-material-get-vector4-param-node
+title: Get Param Vector4
+---
 # Get Param Vector4<a name="script-canvas-material-get-vector4-param-node"></a>
 
 Returns a material parameter as a **Vector4** value\.
@@ -6,7 +11,7 @@ Returns a material parameter as a **Vector4** value\.
 + [Inputs](#script-canvas-material-get-vector4-param-node-input)
 + [Outputs](#script-canvas-material-get-vector4-param-node-output)
 
-![\[getparamvector4, getparamvector4node\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector4-node.png)
+![\[getparamvector4, getparamvector4node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector4-node.png)
 
 ## Inputs<a name="script-canvas-material-get-vector4-param-node-input"></a>
 

@@ -1,3 +1,8 @@
+description: ' Use the Particles attribute in the &ALYlong; &particle-editor; to control
+  the basic appearance of the particle. '
+slug: particle-editor-reference-particles
+title: ' Particles Attribute'
+---
 # Particles Attribute<a name="particle-editor-reference-particles"></a>
 
 In the **Particles** attribute, specify how to control the particle's basic appearance\. 
@@ -5,7 +10,7 @@ In the **Particles** attribute, specify how to control the particle's basic appe
 **Note**  
 We recommend that you set up the **Particles** attribute first because it includes the **Texture** file, which is used for most particles\.
 
-![\[Particles attribute in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-particles.png)
+![\[Particles attribute in the Particle Editor.\]](/images/particles/particle-editor-particles.png)
 
 
 **Particles Attribute Parameters**  

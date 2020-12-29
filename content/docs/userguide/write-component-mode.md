@@ -1,3 +1,7 @@
+description: ' Write a &CM; for your component in &ALYlong;. '
+slug: write-component-mode
+title: 'Step 3: Write a New &CM;'
+---
 # Step 3: Write a New Component Mode<a name="write-component-mode"></a>
 
 Now that you've updated the header and implementation file, this procedure shows you how to write a new Component Mode\. To do so, you create a `EditorPointLightComponentMode.h` file, which is the interface for Component Mode\.

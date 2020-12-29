@@ -1,3 +1,8 @@
+description: ' The Input Enabled setting determines whether the component can be interacted
+  with in &ALY;. '
+slug: ui-editor-components-interactive-properties-input
+title: Input Enabled
+---
 # Input Enabled<a name="ui-editor-components-interactive-properties-input"></a>
 
 The **Input Enabled** setting, selected by default, determines whether the component can be interacted with\.

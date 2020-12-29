@@ -1,3 +1,7 @@
+description: ' Create a variety of game builds in &ALYlong; for different purposes. '
+slug: game-build-intro
+title: Building &ALY; projects
+---
 # Building Lumberyard projects<a name="game-build-intro"></a>
 
 Building your Amazon Lumberyard game is the most important part of the development process \- it's how you debug, test, and distribute\. In this section of the guide, you'll learn how to configure your Lumberyard builds, get started with your first build, see which build types are available and what they offer, and how to use the Waf build system\. 

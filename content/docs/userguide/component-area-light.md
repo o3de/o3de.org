@@ -1,3 +1,7 @@
+description: ' Use the Area Light component on an entity to light an area in &ALYlong;. '
+slug: component-area-light
+title: Area Light
+---
 # Area Light<a name="component-area-light"></a>
 
 Use the **Area Light** component on an entity to light an area\.

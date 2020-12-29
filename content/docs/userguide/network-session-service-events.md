@@ -1,3 +1,7 @@
+description: ' Learn how to react to GridMate session service events in &ALYlong;. '
+slug: network-session-service-events
+title: Reacting to Session Events
+---
 # Reacting to Session Events<a name="network-session-service-events"></a>
 
 Much of the session functionality is asynchronous because functions can be called, but the response is often not immediately available\. For example, messages may be slowed by network transfer time, server processing, or the required response time\.

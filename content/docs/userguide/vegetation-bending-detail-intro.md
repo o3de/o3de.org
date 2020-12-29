@@ -1,3 +1,8 @@
+description: ' Add detail bending effects to the vegetation in your &ALYlong; game
+  project. '
+slug: vegetation-bending-detail-intro
+title: Adding Detail Bending Effects
+---
 # Adding Detail Bending Effects<a name="vegetation-bending-detail-intro"></a>
 
 Detail bending refers to the procedural movement of larger foliage caused by wind or other similar effects\. You control the motion by the use of vertex colors in your DCC tool\. 
@@ -27,7 +32,7 @@ Once you have painted all of the channels, export your asset as an `.fbx` file\.
 
 **Example**  
 
-![\[Example of painted channels final image.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vegetation/vegetation-bending-channels.png)
+![\[Example of painted channels final image.\]](/images/vegetation/vegetation-bending-channels.png)
 
 ## Setting the Detail Bending Parameter<a name="vegetation-bending-detail-params"></a>
 
@@ -44,7 +49,7 @@ For more information, see, [Adding Global Wind](weather-wind-global.md)\.
 1. In the dialog box, select your vegetation object and click **OK**\.
 
 1. In the **Vegetation** section, select the asset that you want to modify, and then set the **Bending** parameter from `0.0` to `100`\.  
-![\[Example of a tree object with detail bending parameter set.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vegetation/vegetation-editor-object-select.png)
+![\[Example of a tree object with detail bending parameter set.\]](/images/vegetation/vegetation-editor-object-select.png)
 
 1. Select your vegetation object, click **Paint Objects**, and then in the viewport, click to place the vegetation object\. 
 

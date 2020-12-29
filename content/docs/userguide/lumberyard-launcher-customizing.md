@@ -1,3 +1,7 @@
+description: ' Use a JSON file to customize &ly-launcher; for your project in &ALYlong;. '
+slug: lumberyard-launcher-customizing
+title: Customizing &ly-launcher;
+---
 # Customizing Lumberyard Setup Assistant<a name="lumberyard-launcher-customizing"></a>
 
 You can use the `SetupAssistantConfig.json` configuration file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to customize Lumberyard Setup Assistant for your project\. The settings in this file are prioritized above internal default settings\.

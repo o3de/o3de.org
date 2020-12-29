@@ -1,3 +1,8 @@
+description: ' Learn the asset identifiers and file paths that game engineers need
+  for porting older game code to &ALYlong; or developing new code or tools. '
+slug: asset-pipeline-developers
+title: Asset IDs and File Paths
+---
 # Asset IDs and File Paths<a name="asset-pipeline-developers"></a>
 
 Consult this section if you are a game engineer who needs to port older game code or develop new code or tools\.

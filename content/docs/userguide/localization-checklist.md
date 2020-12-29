@@ -1,3 +1,7 @@
+description: ' See the following checklist for localization in &ALYlong;. '
+slug: localization-checklist
+title: Localization Checklist
+---
 # Localization Checklist<a name="localization-checklist"></a>
 
 To use localization in your game, verify that you have done the following:

@@ -1,3 +1,8 @@
+description: ' Send game events with the Metrics Sample level in &ALYlong; and view
+  them in the &cgp;. '
+slug: send-test-events-for-the-cloud-canvas-game-metrics-gem
+title: Sending Test Metrics with the Metrics Sample Level
+---
 # Sending Test Metrics with the Metrics Sample Level<a name="send-test-events-for-the-cloud-canvas-game-metrics-gem"></a>
 
 After you complete the [Prerequisites](cloud-canvas-metrics-gem.md#cloud-canvas-cloud-gem-metrics-prerequisites), you can send test metrics with the Metrics Sample level\. You can then view these metrics in the Cloud Gem Portal\.
@@ -9,7 +14,7 @@ After you complete the [Prerequisites](cloud-canvas-metrics-gem.md#cloud-canvas-
 1. In Lumberyard Editor, choose **File**, **Open**, select **MetricsSample**, and then click **Open**\.
 
 1. Press **Ctrl\+G** to enter game mode\.  
-![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-game-metrics-gem-metrics-sample-level.png)
+![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-canvas-game-metrics-gem-metrics-sample-level.png)
 
 1. To move forward, strafe left, move backward, and strafe right, press the **W**, **A**, **S**, and **D** keys, respectively\. 
 

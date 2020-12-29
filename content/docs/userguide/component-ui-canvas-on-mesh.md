@@ -1,3 +1,9 @@
+description: ' Use the UI Canvas on Mesh component in &ALYlong; to place a UI canvas
+  on a component entity in the 3D world that a player can interact with using ray
+  casts. '
+slug: component-ui-canvas-on-mesh
+title: UI Canvas on Mesh
+---
 # UI Canvas on Mesh<a name="component-ui-canvas-on-mesh"></a>
 
 With the **UI Canvas on Mesh** component, you can place a UI canvas on a component entity in the 3D world that a player can interact with via ray casts\. Use this component in conjunction with the [**UI Canvas Asset Ref**](component-ui-canvas-asset-ref.md) component\.
@@ -12,4 +18,4 @@ The UI Canvas on Mesh component has the following properties:
 For simple cases, you can leave this property blank\. The UI canvas specifies a render target, and that render target can be used as a texture name for the material on the 3D mesh\.  
 You can use the **Render target override** property when you want to load two unique instances of the same UI canvas that the user can set to different states\. This example case is demonstrated in the **UiIn3DWorld** level in the **Samples Project**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/ui_canvas/component-ui-canvas-on-mesh-properties2.png)
+![\[Image NOT FOUND\]](/images/component/ui_canvas/component-ui-canvas-on-mesh-properties2.png)

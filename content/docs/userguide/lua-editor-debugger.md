@@ -1,3 +1,7 @@
+description: ' Use the Lua Editor to author, debug, and edit Lua scripts in &ALYlong;. '
+slug: lua-editor-debugger
+title: Lua Editor
+---
 # Lua Editor<a name="lua-editor-debugger"></a>
 
 
@@ -31,33 +35,33 @@ This tutorial shows you how to use Lumberyard Editor to create a sample level in
 1. In **Entity Inspector**, click **Add Component**, and then choose **Scripting**, **Lua Script**\.
 
 1. In the **Entity Inspector** window, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field\.  
-![\[Open the Pick Lua Script window from the Lua Script component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/lua/lua-component-pick-lua-script.png)
+![\[Open the Pick Lua Script window from the Lua Script component\]](/images/scripting/lua/lua-component-pick-lua-script.png)
 
 1. In the **Pick Lua Script** window, expand **SamplesProject**, **Scripts**, and **Components**\.
 
 1. Click **ConstantRotation\.lua**, and then click **OK**\.
 
 1. In the **Lua Script** component, click the **Open in Lua Editor** button to launch Lua Editor\.  
-![\[Launch Lua Editor from Lua Script component in Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/lua/lua-component-open-in-lua-editor.png)
+![\[Launch Lua Editor from Lua Script component in Lumberyard Editor\]](/images/scripting/lua/lua-component-open-in-lua-editor.png)
 
    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug\. In this tutorial, you connect to Lumberyard Editor\.
 **Note**  
 Connection is facilitated by [GridHub](gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to Lumberyard Editor\.  
-![\[Target selector\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-target-editor.png)
+![\[Target selector\]](/images/lua-editor-debugger-target-editor.png)
 **Note**  
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps\.
 
 1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context\. The default setting is good for debugging component entity scripts such as the one in this tutorial\. The **Cry** context option is for debugging legacy scripts such as those associated with Cry entities or the Game SDK\.  
-![\[Context selector\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-context-choose.png)
+![\[Context selector\]](/images/lua-editor-debugger-context-choose.png)
 
 1. The **Debugging** icon turns green to show that Lua Editor and Lumberyard Editor are connected:  
-![\[Lua Editor connected to Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-connected-icon.png)
+![\[Lua Editor connected to Lumberyard Editor\]](/images/lua-editor-debugger-connected-icon.png)
 
    Click **Classes** in the **Class Reference** to show the available Lua libraries\. You can do the same for **EBuses** and **Globals**\.  
-![\[Classes Reference\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-class-reference-pane.png)  
-![\[Classes\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-class-reference-pane-open.png)
+![\[Classes Reference\]](/images/lua-editor-debugger-class-reference-pane.png)  
+![\[Classes\]](/images/lua-editor-debugger-class-reference-pane-open.png)
 **Note**  
 The class reference feature is active only for the default context and component entity scripts\. This feature is not active in the Cry context, which exists only for backward compatibility\.
 
@@ -68,7 +72,7 @@ The class reference feature is active only for the default context and component
 1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints\. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window\.
 
 1. In Lumberyard Editor, press **Ctrl\+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts\. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters\.  
-![\[Debugger stopped on breakpoint\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-stopped-on-breakpoint.png)
+![\[Debugger stopped on breakpoint\]](/images/lua-editor-debugger-stopped-on-breakpoint.png)
 
    When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes\.
 
@@ -83,7 +87,7 @@ The class reference feature is active only for the default context and component
 For greater convenience, you can float or dock these windows\.
 
 1. To detach from debugging, click **Debugging**\.  
-![\[Click to detach from debugging\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-detach-icon.png)
+![\[Click to detach from debugging\]](/images/lua-editor-debugger-detach-icon.png)
 
 1. In Lumberyard Editor, Press **Esc** to stop the game\.
 
@@ -111,10 +115,10 @@ In addition to the usual search capabilities, the **Find** feature can display t
 **To maintain separate search results**
 
 1. Click the **Find** icon ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-find-results-icon.png) or press **Ctrl\+F** to perform searches in the currently open file, or in all open files\.  
-![\[Lua Editor Find dialog\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-find-dialog.png)
+![\[Lua Editor Find dialog\]](/images/lua-editor-debugger-find-dialog.png)
 
 1. Before starting a search, choose **Find 1**, **Find 2**, **Find 3**, or **Find 4** to choose the window in which you want to see the results\. You can maintain the results of four searches separately in the tabbed windows\. The search results in the other windows remain unchanged\.  
-![\[Find Results\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-find-results-window.png)
+![\[Find Results\]](/images/lua-editor-debugger-find-results-window.png)
 
 1. To go directly to the line in the code which a search result was found, double\-click the line in the search results\.
 **Note**  
@@ -161,10 +165,10 @@ The following table summarizes the options available while editing and debugging
 
 Lua Editor includes Perforce integration features\. When you open a file from your Perforce environment, Lua Editor displays the file's status in the top right of the text editing window\.
 
-![\[Not Checked Out\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-p4-not-checked-out.png)
+![\[Not Checked Out\]](/images/lua-editor-debugger-p4-not-checked-out.png)
 
-![\[Checked Out By You\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-p4-checked-out-by-you.png)
+![\[Checked Out By You\]](/images/lua-editor-debugger-p4-checked-out-by-you.png)
 
 The **Source Control** menu offers **Check Out/Check In** functionality\.
 
-![\[Source Control Menu\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lua-editor-debugger-check-out-icon.png)
+![\[Source Control Menu\]](/images/lua-editor-debugger-check-out-icon.png)

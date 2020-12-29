@@ -1,3 +1,8 @@
+description: ' Use the Actions properties in &ALY; &ui-canvas-editor; to trigger an
+  event when one of the listed actions occur. '
+slug: ui-editor-components-actions
+title: Actions
+---
 # Actions<a name="ui-editor-components-actions"></a>
 
 You can use the **Actions** properties to trigger a particular event when one of the listed actions occur\. Type a string for one of the actions\. When the listed action occurs \(for example, when a game player starts to pause on the element\), the listed string is sent as an action\.
@@ -8,4 +13,4 @@ You can enter strings for the following actions:
 + **Pressed**
 + **Release**
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-actions.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-actions.png)

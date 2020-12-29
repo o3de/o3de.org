@@ -1,10 +1,15 @@
+description: ' Use the Particle component in &ALYlong; to add a single particle emitter
+  on an entity. '
+slug: component-particle
+title: Particle
+---
 # Particle<a name="component-particle"></a>
 
 You can use the **Particle** component to place a single particle emitter on an entity\. An entity can have multiple **Particle** components\.
 
 ## Particle Component Properties<a name="component-particle-properties"></a>
 
-![\[Particle component properties\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-particle-properties.png)
+![\[Particle component properties\]](/images/component/component-particle-properties.png)
 
 The **Particle** component has the following properties:
 

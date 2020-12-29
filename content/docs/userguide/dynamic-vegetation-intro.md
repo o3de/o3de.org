@@ -1,10 +1,15 @@
+description: ' Use Dynamic Vegetation to place natural-looking vegetation and customize
+  where and how it grows in &ALYlong;. '
+slug: dynamic-vegetation-intro
+title: Dynamic vegetation
+---
 # Dynamic vegetation<a name="dynamic-vegetation-intro"></a>
 
  The dynamic vegetation system uses vegetation components to customize vegetation coverage for worlds of any size\. To use the dynamic vegetation system, you must enable the **Vegetation** gem for your game project\. 
 
 For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 
-![\[Example of vegetation landscape that you can achieve by using dynamic vegetation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/dynamic-vegetation-intro.png)
+![\[Example of vegetation landscape that you can achieve by using dynamic vegetation.\]](/images/dynamic-vegetation-intro.png)
 
 Using combinations of components from vegetation and other categories, you can do the following:
 + Create layers of background vegetation and specify local vegetation areas around environmental objects and points of interest such as buildings\.

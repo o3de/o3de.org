@@ -1,3 +1,8 @@
+description: ' See the best practices for exporting skinned meshes for actors for
+  the &animation-editor; in &ALYlong;. '
+slug: char-fbx-importer-export-actors-motons
+title: Exporting Actors and Motions
+---
 # Exporting Actors and Motions<a name="char-fbx-importer-export-actors-motons"></a>
 
 Use the following best practices when you export your skinned meshes using the **FBX Settings** tool\.
@@ -29,7 +34,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export settings for \.actor files**
 + Use the **Model** tab to export your `.fbx` files\.  
-![\[Models tab in the Maya Game Exporter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/fbx-settings-actors-model-tab.png)
+![\[Models tab in the Maya Game Exporter.\]](/images/actor-animation/fbx-settings-actors-model-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop\-down list\.
   + Select the **Skinning** check box\.
@@ -42,7 +47,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export settings for \.motion files \(Animation Clips tab\)**
 + Use the **Animation Clips** tab to export your `.fbx` files\.  
-![\[Animation Clips tab in the Maya Game Exporter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/fbx-settings-motions-animation-clips-tab.png)
+![\[Animation Clips tab in the Maya Game Exporter.\]](/images/actor-animation/fbx-settings-motions-animation-clips-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop\-down list\.
   + Click the **\+** button to add an animation clip\.
@@ -57,7 +62,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export Settings for \.motion files \(Time Editor tab\)**
 + Use the **Time Editor** tab to export your `.fbx` files\.  
-![\[Time Editor tab in the Maya Game Exporter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/fbx-settings-motions-time-editor-tab.png)
+![\[Time Editor tab in the Maya Game Exporter.\]](/images/actor-animation/fbx-settings-motions-time-editor-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop\-down list\.
   + Select the clip that you want to export from the **Time Editor Clips** drop\-down list\.

@@ -1,3 +1,8 @@
+description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; editor
+  to set a material''s Vector3 parameter value for the specified entity. '
+slug: material-owner-set-param-vector3
+title: Set Param Vector3
+---
 # Set Param Vector3<a name="material-owner-set-param-vector3"></a>
 
 Sets a material's **Vector3** parameter value for the specified entity\. 
@@ -6,7 +11,7 @@ Sets a material's **Vector3** parameter value for the specified entity\.
 + [Inputs](#material-owner-set-param-vector3-input)
 + [Outputs](#material-owner-set-param-vector3-output)
 
-![\[setparamvector3, setparamvector3node\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-material-owner-node.png)
+![\[setparamvector3, setparamvector3node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-vector3-input"></a>
 

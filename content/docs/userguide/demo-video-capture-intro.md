@@ -1,3 +1,7 @@
+description: ' Learn more about demo and video capture in &ALYlong;. '
+slug: demo-video-capture-intro
+title: Demo and Video Capture
+---
 # Demo and Video Capture<a name="demo-video-capture-intro"></a>
 
 This section contains information about recording videos for benchmarking\. Capturing audio and video is also discussed, using either the **Perspective** viewport in Lumberyard Editor or in game mode using the launcher\.

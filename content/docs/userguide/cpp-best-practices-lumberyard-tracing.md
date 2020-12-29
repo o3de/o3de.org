@@ -1,3 +1,7 @@
+description: ' Learn best practices for debug tracing in &ALYlong;. '
+slug: cpp-best-practices-lumberyard-tracing
+title: Tracing
+---
 # Tracing<a name="cpp-best-practices-lumberyard-tracing"></a>
 
 **Recommended**: For code tracing needs, use `AZ_*` tracing macros\.

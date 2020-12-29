@@ -1,3 +1,8 @@
+description: ' Use localized wind in &ALY; to simulate wind from a specific object,
+  such as a fan or jet exhaust. '
+slug: weather-wind-local
+title: Adding Localized Wind
+---
 # Adding Localized Wind<a name="weather-wind-local"></a>
 
 

@@ -1,3 +1,7 @@
+description: ' Use the auto-disable feature in &ALYlong; to control updates. '
+slug: ai-auto-disable
+title: Auto-Disable
+---
 # Auto\-Disable<a name="ai-auto-disable"></a>
 
  You can save CPU time by not updating distant AI agents\. Use the auto\-disable feature to controlled updates either on a per\-AI basis or globally\.

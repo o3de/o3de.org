@@ -1,3 +1,7 @@
+description: ' See the layout of the &script-canvas; editor in &ly-editor;. '
+slug: script-canvas-editor-interface
+title: '&script-canvas; Editor Interface'
+---
 # Script Canvas Editor Interface<a name="script-canvas-editor-interface"></a>
 
 You can open the **Script Canvas** editor from Lumberyard Editor\.
@@ -8,7 +12,7 @@ You can open the **Script Canvas** editor from Lumberyard Editor\.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas\.
 
-![\[Use the Script Canvas editor in Lumberyard to create connections for nodes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-user-interface.png)
+![\[Use the Script Canvas editor in Lumberyard to create connections for nodes.\]](/images/scripting/script-canvas/script-canvas-user-interface.png)
 
 In the **Script Canvas** editor, you can do the following:
 

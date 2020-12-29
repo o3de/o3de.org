@@ -1,3 +1,7 @@
+description: ' Learn to set &cloud; access permissions for your project. '
+slug: cloud-canvas-setting-access-permissions
+title: Controlling Access to Resources
+---
 # Controlling Access to Resources<a name="cloud-canvas-setting-access-permissions"></a>
 
 Setting access permissions correctly is key to ensuring that Cloud Canvas Resource Manager manages your project's cloud\-connected features securely\.
@@ -6,7 +10,7 @@ Setting access permissions correctly is key to ensuring that Cloud Canvas Resour
 
 Cloud Canvas Resource Manager requires that the following access scenarios be supported\. Additional roles with more nuanced permissions can be created, but the table below describes the core access requirements\.
 
-![\[Cloud Canvas core access requirement\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-setting-access-permissions-core-access-reqs.png)
+![\[Cloud Canvas core access requirement\]](/images/cloud_canvas/cloud-canvas-setting-access-permissions-core-access-reqs.png)
 
 A project team member must be able to create resource group stacks that contain arbitrary resources, but not be able to create or modify roles and policies\. This introduces a significant complexity\. Some resources like Lambda functions require that the game developer also provide a role that is assumed by the resource\. The game developer must be able to create such roles and manage their policies\. However, granting IAM permissions such as these directly to team members would effectively make them administrators\.
 
@@ -14,7 +18,7 @@ To enable the required functionality while still limiting what a project team me
 
 For example, the `Custom::AccessControl` resource, described in detail later in this document, is responsible for managing inline policies on various roles\. It can perform these actions on the project team member's behalf\. However, the `Custom::AccessControl` handler also must know what to put into these policies\. It can't trust the project team member to provide this information directly\. Instead, it must construct the information from trusted sources\. To do this, `AccessControl` uses metadata on resource definitions from AWS CloudFormation\. It also constructs ARNs for the stack's resources identified by AWS CloudFormation\. In this way, only a user with permission to update the stack can influence the policies that are constructed for the resources in that stack\.
 
-![\[Cloud Canvas flow of permissions\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-setting-access-permissions-flow.png)
+![\[Cloud Canvas flow of permissions\]](/images/cloud_canvas/cloud-canvas-setting-access-permissions-flow.png)
 
 ## Using the Custom::AccessControl Resource<a name="cloud-canvas-setting-access-permissions-access-control"></a>
 
@@ -33,7 +37,7 @@ This section describes the data used by the `Custom::AccessControl` resource han
 
 This process is illustrated in the following diagram\. The diagram shows the metadata that is read and roles that are updated when a resource group stack, deployment access stack, or project stack is updated\.
 
-![\[Configuration of project roles\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-setting-access-permissions-project-role-cfg.png)
+![\[Configuration of project roles\]](/images/cloud_canvas/cloud-canvas-setting-access-permissions-project-role-cfg.png)
 
 ### Custom::AccessControl Resource Definitions<a name="cloud-canvas-setting-access-permissions-custom-access-control-resource-definitions"></a>
 

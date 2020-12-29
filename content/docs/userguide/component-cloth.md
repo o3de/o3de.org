@@ -1,3 +1,7 @@
+description: ' The &ALYlong; Cloth component. '
+slug: component-cloth
+title: Cloth component
+---
 # Cloth component<a name="component-cloth"></a>
 
 
@@ -30,7 +34,7 @@ For information on using the **Cloth** component see [Simulate cloth with NVIDIA
 
 ## Base properties<a name="component-cloth-base-properties"></a>
 
-![\[Base properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-A-1.27.png)
+![\[Base properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-A-1.27.png)
 
 **Simulate in editor**  
 Enable to simulate cloth in editor\. 
@@ -66,7 +70,7 @@ Stiffness exponent that adjusts the overall stiffness of the cloth simulation\. 
 
 ## Motion constraints properties<a name="component-cloth-motion-constraints-properties"></a>
 
-![\[Motion constraints properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-B-1.27.png)
+![\[Motion constraints properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-B-1.27.png)
 
 **Max distance**  
 Maximum distance limit in meters for cloth particle movement\. 
@@ -86,7 +90,7 @@ Stiffness for motion constraints\.
 
 ## Backstop properties<a name="component-cloth-backstop-properties"></a>
 
-![\[Backstop properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-C-1.27.png)
+![\[Backstop properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-C-1.27.png)
 
 **Note**  
 Backstop properties are only available when a **Backstop** vertex color stream is specified in the **Cloth** modifier for the selected **Mesh node** in **FBX Settings**\. 
@@ -102,7 +106,7 @@ The offset in meters for backstop spheres in front of the cloth\.
 
 ## Damping properties<a name="component-cloth-damping-properties"></a>
 
-![\[Damping properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-D-1.27.png)
+![\[Damping properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-D-1.27.png)
 
 **Damping**  
 Damping of cloth particle velocity\.   
@@ -121,7 +125,7 @@ Portion of angular velocity applied to turning cloth particles\.
 
 ## Inertia properties<a name="component-cloth-inertia-properties"></a>
 
-![\[Inertia properties of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-E-1.27.png)
+![\[Inertia properties of the NVIDIA Cloth component\]](/images/physx/cloth/ui-cloth-component-E-1.27.png)
 
 **Linear**  
 Portion of linear acceleration applied to cloth particles\.   
@@ -143,7 +147,7 @@ Portion of angular velocity applied to turning cloth particles\.
 **Note**  
 The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](wind-provider.md)\. 
 
-![\[Wind properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-F-1.27.png)
+![\[Wind properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-F-1.27.png)
 
 **Note**  
 Wind is disabled when both the below **Air drag** and **Air lift** coefficients are **0\.0**\. 
@@ -166,7 +170,7 @@ The density of air used for drag and lift calculations\.
 
 ## Collision properties<a name="component-cloth-collision-properties"></a>
 
-![\[Collision properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-G-1.27.png)
+![\[Collision properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-G-1.27.png)
 
 **Friction**  
 Controls the amount of friction between cloth particles and colliders\.   
@@ -185,7 +189,7 @@ Enable to allow colliders to move static cloth particles\. Static cloth particle
 
 ## Self Collision properties<a name="component-cloth-self-collision-properties"></a>
 
-![\[Self collision properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-H-1.27.png)
+![\[Self collision properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-H-1.27.png)
 
 **Distance**  
 The minimum distance that the colliding cloth particles must maintain from each other in meters\.  
@@ -197,7 +201,7 @@ Stiffness for the self collision constraints\.
 
 ## Fabric stiffness properties<a name="component-cloth-fabric-stiffness-properties"></a>
 
-![\[Fabric stiffness properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-I-1.27.png)
+![\[Fabric stiffness properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-I-1.27.png)
 
 **Horizontal**  
 Stiffness value for horizontal stretch and compression constraints\.   
@@ -237,7 +241,7 @@ Scale value for shearing constraints\.
 
 ## Fabric compression properties<a name="component-cloth-fabric-compression-properties"></a>
 
-![\[Fabric Compression properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-J-1.27.png)
+![\[Fabric Compression properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-J-1.27.png)
 
 **Horizontal limit**  
 Compression limit for horizontal constraints\. This property is affected by **Horizontal multiplier** in the **Fabric stiffness** property group\.   
@@ -260,7 +264,7 @@ Compression limit for shearing constraints\. This property is affected by **Shea
 **Note**  
 For **Fabric stretch** properties, reduce **Stiffness** of **Tether constraints** or increase its **Scale** to allow cloth to stretch\. 
 
-![\[Fabric stretch properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-K-1.27.png)
+![\[Fabric stretch properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-K-1.27.png)
 
 **Horizontal limit**  
 Stretch limit for horizontal constraints\. This property is affected by **Horizontal multiplier** in the **Fabric stiffness** property group\.   
@@ -280,7 +284,7 @@ Stretch limit for shearing constraints\. This property is affected by **Shearing
 
 ## Tether constraints properties<a name="component-cloth-tether-constraints-properties"></a>
 
-![\[Tether constraints properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-L-1.27.png)
+![\[Tether constraints properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-L-1.27.png)
 
 **Stiffness**  
 Stiffness for tether constraints\.   
@@ -292,7 +296,7 @@ Scale factor for tether constraint **Stiffness**
 
 ## Quality properties<a name="component-cloth-quality-properties"></a>
 
-![\[Quality properties of the Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-M-1.27.png)
+![\[Quality properties of the Cloth component\]](/images/physx/cloth/ui-cloth-component-M-1.27.png)
 
 **Solver frequency**  
 Target solver iterations per second\. The executed number of iterations per second may vary dependent on many performance factors\. However, at least one iteration per frame is solved regardless of the value set\. 

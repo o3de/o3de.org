@@ -1,10 +1,15 @@
+description: ' Use the Point emitter in the &ALYlong; &particle-editor; to spawn particles
+  in a spherical distribution from the origin. '
+slug: particle-editor-emitter-shape-type-point
+title: Point Emitter (CPU and GPU)
+---
 # Point Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-point"></a>
 
 The **Point** emitter spawns particles in a spherical distribution from the origin\. This allows you to control the spread angle to create complex conical and spherical effects\.
 
 The following are parameters for the **Point** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-point.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-point.png)
 
 
 **Point Emitter Parameters**  

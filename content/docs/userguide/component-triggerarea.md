@@ -1,3 +1,8 @@
+description: ' Use the Trigger Area component to set up an area that triggers an action
+  upon entering or exiting in &ALYlong;. '
+slug: component-triggerarea
+title: Trigger Area
+---
 # Trigger Area<a name="component-triggerarea"></a>
 
 The **Trigger Area** component provides generic triggering services by using [Shape](component-shapes.md) components as its bounds\. 

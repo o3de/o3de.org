@@ -1,3 +1,7 @@
+description: ' Learn how to search for a GridMate session in &ALYlong;. '
+slug: network-session-service-searching
+title: Searching for a Session
+---
 # Searching for a Session<a name="network-session-service-searching"></a>
 
 You search for a session by calling `GridMate::StartGridSearch()` after the session service has been started\. The session settings and configuration are set in the `GridMate::SearchParams`, which acts as a base class for certain implementations of `GridMate::SessionService`\.

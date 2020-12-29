@@ -1,3 +1,8 @@
+description: ' Use cloud gems to provide cloud-connected features to your games in
+  &ALYlong;. '
+slug: cloud-canvas-overview-cloud-gems
+title: Cloud Gems Overview
+---
 # Cloud Gems Overview<a name="cloud-canvas-overview-cloud-gems"></a>
 
 A Lumberyard [gem](gems-system-gems.md) is an individual package of specific functionality and assets\. The gem includes everything required for you to include that functionality in your project\.

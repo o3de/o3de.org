@@ -1,3 +1,8 @@
+description: ' Use the Comment component in &ALYlong; to add text comments for component
+  entities. '
+slug: component-comment
+title: Comment
+---
 # Comment<a name="component-comment"></a>
 
 The **Comment** component allows you to add long\-form text comments for component entities\. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter\. The following examples demonstrate how you can use the comment text box:
@@ -5,7 +10,7 @@ The **Comment** component allows you to add long\-form text comments for compone
 + Describe how everything in a level ties together
 + Send descriptions, instructions, or notes to team members
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/comment-component.png)
+![\[Image NOT FOUND\]](/images/component/comment-component.png)
 
 ## Comment Properties<a name="component-comment-properties"></a>
 

@@ -1,3 +1,9 @@
+description: ' View and update the soft naming conventions for assets such as LoDs
+  for &ALYlong; when you author assets in your content creation tools, such as Autodesk
+  3ds Max or Maya. '
+slug: fbx-settings-soft-naming
+title: FBX soft naming conventions
+---
 # FBX soft naming conventions<a name="fbx-settings-soft-naming"></a>
 
 You can use soft naming conventions when authoring assets in your content creation tools, such as Autodesk 3ds Max or Maya\. Soft naming conventions are prefixes or suffixes that you add to either nodes in your scene or the `.fbx` file name\. In Lumberyard, **Asset Processor** recognizes these soft naming conventions and then applies an action based on the specified soft naming convention\. 
@@ -37,7 +43,7 @@ You can use the System Entity Editor to view the current soft naming conventions
 1. Expand the **Scene Processing Config** section to find the soft naming conventions\.
 **Note**  
 If the **Scene Processing Config** section doesn't appear, choose **Add Component** and then choose **Scene Processing Config**\.   
-![\[Example System Entity Editor for default soft naming conventions.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-soft-naming-conventions-1.27.png)
+![\[Example System Entity Editor for default soft naming conventions.\]](/images/fbx/ui-fbx-soft-naming-conventions-1.27.png)
 
 ## Soft naming convention parameters<a name="understanding-the-soft-naming-convention-parameters"></a>
 

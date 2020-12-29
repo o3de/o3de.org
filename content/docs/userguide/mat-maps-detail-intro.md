@@ -1,3 +1,7 @@
+description: ' Work with detail maps in the &material-editor; in &ALYlong;. '
+slug: mat-maps-detail-intro
+title: Working with Detail Maps
+---
 # Working with Detail Maps<a name="mat-maps-detail-intro"></a>
 
 Detail mapping is a simple technique to add macro surface detail at relatively low cost, memory and performance wise\. The following best practices should be taken into consideration:

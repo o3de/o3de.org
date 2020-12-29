@@ -1,3 +1,8 @@
+description: ' Use the Find Sub-Material node in the &ALYlong; &script-canvas; editor
+  to find and return a submaterial with the specified name and submaterial ID. '
+slug: script-canvas-find-sub-material-node
+title: Find Sub-Material
+---
 # Find Sub\-Material<a name="script-canvas-find-sub-material-node"></a>
 
 Finds and returns the submaterial with the specified name and submaterial ID\.
@@ -14,7 +19,7 @@ To access a single material, you can use the **[Find by Name](material-find-by-n
 + [Inputs](#script-canvas-find-sub-material-node-input)
 + [Outputs](#script-canvas-find-sub-material-node-output)
 
-![\[findsubmaterial, findsubmaterial, findsubmaterialnode, findchildmaterial\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-sub-material-node.png)
+![\[findsubmaterial, findsubmaterial, findsubmaterialnode, findchildmaterial\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-sub-material-node.png)
 
 ## Inputs<a name="script-canvas-find-sub-material-node-input"></a>
 

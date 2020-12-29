@@ -1,3 +1,7 @@
+description: ' See which resources are used by the Leaderboard Cloud Gem in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-leaderboard-resources
+title: Leaderboard Cloud Gem Resources
+---
 # Leaderboard Cloud Gem Resources<a name="cloud-canvas-cloud-gem-leaderboard-resources"></a>
 
 The following table lists the resources used by the Leaderboard Cloud Gem\.

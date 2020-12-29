@@ -1,3 +1,8 @@
+description: ' Use the Waf artifacts cache feature in &ALYlong; to significantly improve
+  build times. '
+slug: waf-artifacts-cache
+title: Using the Waf Artifacts Cache
+---
 # Using the Waf Artifacts Cache<a name="waf-artifacts-cache"></a>
 
 The Waf artifacts cache is for Waf\-generated files\. The cache speeds up Waf build time by caching previously built artifacts and retrieving them when the task signature hasn't changed\. To calculate the task signature, Lumberyard uses MD5 hashes of the task's run function, source file, dependencies, and build environment\.
@@ -105,7 +110,7 @@ To use the Waf artifacts cache, Waf must have the latest build pickle data from 
 
 The following diagram shows this workflow\.
 
-![\[Waf pickle file data loading sequence\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/waf/waf-artifacts-cache-1.png)
+![\[Waf pickle file data loading sequence\]](/images/waf/waf-artifacts-cache-1.png)
 
 ### Overriding the Task's `uid` and `env` Signatures<a name="waf-artifacts-cache-overriding-task-uid-and-env-signatures"></a>
 
@@ -121,4 +126,4 @@ For example, during the `run` function, the `AzCodeGen` task updates the task's 
 
 The following diagram shows this workflow\.
 
-![\[Waf artifacts cache task execution workflow\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/waf/waf-artifacts-cache-2.png)
+![\[Waf artifacts cache task execution workflow\]](/images/waf/waf-artifacts-cache-2.png)

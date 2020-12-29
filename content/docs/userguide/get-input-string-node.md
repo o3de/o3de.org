@@ -1,3 +1,8 @@
+description: ' Use the Get Input String node in the &ALYlong; &script-canvas; editor
+  to return the value of a procedural material input parameter as a string or image. '
+slug: get-input-string-node
+title: Get Input String
+---
 # Get Input String<a name="get-input-string-node"></a>
 
 Returns the value of an input parameter as a string or image\.
@@ -8,7 +13,7 @@ If the input parameter is a `string` type, the node returns the text value\. If 
 + [Inputs](#get-input-string-node-input)
 + [Outputs](#get-input-string-node-output)
 
-![\[GetInputString gets the string value for a procedural material's parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-string-node.png)
+![\[GetInputString gets the string value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-string-node.png)
 
 ## Inputs<a name="get-input-string-node-input"></a>
 

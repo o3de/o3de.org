@@ -1,3 +1,7 @@
+description: ' Programming notes for PhysX worlds in &ALYlong;. '
+slug: physx-configuration-physx-world-programming-notes
+title: PhysX World Programming Notes
+---
 # PhysX World Programming Notes<a name="physx-configuration-physx-world-programming-notes"></a>
 
 For physics objects to be simulated, they must exist inside a world\. Multiple worlds can have uses like the following: 

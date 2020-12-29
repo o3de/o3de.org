@@ -1,3 +1,7 @@
+description: ' Use gems to add third-party libraries to your game in &ALYlong;. '
+slug: waf-adding-third-party-libraries
+title: Adding Third-Party Libraries
+---
 # Adding Third\-Party Libraries<a name="waf-adding-third-party-libraries"></a>
 
 [Gems](gems-system-gems.md) are Lumberyard extensions that can be enabled or disabled for any game project\. This modularity is advantageous when you want to add a third\-party library to specific games\. You can add the third\-party library to a new or existing gem, and then enable the gem for the projects that you want\. This narrows the scope of the library to only the games that use the gem\.

@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; console to customize and create your own console
+  variable commands. '
+slug: system-console
+title: Console in Depth
+---
 # Console in Depth<a name="system-console"></a>
 
 The console is a user interface system which handles console commands and console variables\. It also outputs log messages and stores the input and output history\.

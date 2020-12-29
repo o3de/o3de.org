@@ -1,3 +1,7 @@
+description: ' Create versioned cloud gems and projects in &ALYlong;. '
+slug: cloud-canvas-cgf-rm-versioning
+title: ' Cloud Gem Framework and Resource Manager Versioning'
+---
 # Cloud Gem Framework and Resource Manager Versioning<a name="cloud-canvas-cgf-rm-versioning"></a>
 
 Lumberyard offers a versioning system that makes it easier to update a project from one version of the Cloud Gem Framework and the **Cloud Canvas Resource Manager** to another\. The versioning system has the following advantages:

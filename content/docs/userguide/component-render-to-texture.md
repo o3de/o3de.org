@@ -1,3 +1,7 @@
+description: ' Use the Render to Texture component to create render targets in &ALYlong;. '
+slug: component-render-to-texture
+title: Render to Texture
+---
 # Render to Texture<a name="component-render-to-texture"></a>
 
 
@@ -11,7 +15,7 @@ You can use the **Render to Texture** component to render the scene from a speci
 
 To enable this component, you must enable the [Render to Texture](gems-system-render-to-texture.md) gem\. To enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
 
-![\[Render to Texture gem in the Project Configurator.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared/gem-render-to-texture.png)
+![\[Render to Texture gem in the Project Configurator.\]](/images/shared/gem-render-to-texture.png)
 
 **Topics**
 + [Adding the Render to Texture Component in a Scene](#adding-render-to-texture-to-scene)
@@ -26,7 +30,7 @@ To enable this component, you must enable the [Render to Texture](gems-system-re
 **Example**  
 Entity \(**1**\) has a **[Camera](component-camera.md)** component and a **Render to Texture** component\. This entity faces a game object, entity \(**2**\)\. In entity \(**1**\), the **Render to Texture** component specifies a render target\. A material file references that render target as its diffuse texture\. The material is then added to entity \(**3**\), so that the render target appears in the viewport\.  
 
-![\[Render to Texture component in the viewport.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-render-to-texture-1.png)
+![\[Render to Texture component in the viewport.\]](/images/component/component-render-to-texture-1.png)
 
 **To use the Render to Texture component**
 
@@ -65,7 +69,7 @@ For more information, see [Visual Components](ui-editor-components-visual.md)\.
 **Example**  
 A camera entity \(**1**\) faces the **Render to Texture** entity \(**2**\), which has a **Render to Texture** component attached\. The **Texture name** is `$rendertarget`\.  
 
-![\[Add the render target for the UI Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-render-to-texture-UI-example.png)
+![\[Add the render target for the UI Editor.\]](/images/component/component-render-to-texture-UI-example.png)
 
 **To add a render target to a UI Image component**
 
@@ -82,11 +86,11 @@ A camera entity \(**1**\) faces the **Render to Texture** entity \(**2**\), whic
 1. For **Render target name**, enter the same texture name in the **Render to Texture** component, such as `$rendertarget`\. 
 
    The UI **Image** component displays the render target in the **UI Editor**\.  
-![\[Add the render target to the Render target name in an Image component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-render-to-texture-UI-element.png)
+![\[Add the render target to the Render target name in an Image component.\]](/images/component/component-render-to-texture-UI-element.png)
 
 ## Render to Texture Properties<a name="component-render-to-texture-properties"></a>
 
-![\[Render to Texture component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-render-to-texture-2.png)
+![\[Render to Texture component properties.\]](/images/component/component-render-to-texture-2.png)
 
 The **Render to Texture** component has the following properties\.
 

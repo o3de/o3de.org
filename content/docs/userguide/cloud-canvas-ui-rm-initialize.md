@@ -1,8 +1,12 @@
+description: ' Learn how to initialize &cloud; Resource Manager . '
+slug: cloud-canvas-ui-rm-initialize
+title: Initializing &cloud; Resource Manager
+---
 # Initializing Cloud Canvas Resource Manager<a name="cloud-canvas-ui-rm-initialize"></a>
 
 When you perform an operation that requires an AWS account, and no account has been associated with your Lumberyard project, the **Initialize Cloud Canvas Resource Manager** dialog prompts you for the required information\. 
 
-![\[Initialize Cloud Canvas Resource Manager\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-initialize.png)
+![\[Initialize Cloud Canvas Resource Manager\]](/images/cloud_canvas/cloud-canvas-ui-rm-initialize.png)
 
 **To initialize **Cloud Canvas Resource Manager****
 

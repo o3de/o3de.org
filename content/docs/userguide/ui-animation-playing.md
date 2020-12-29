@@ -1,3 +1,7 @@
+description: ' Play animation sequences from Animation Editor. '
+slug: ui-animation-playing
+title: Playing Animation Sequences
+---
 # Playing Animation Sequences<a name="ui-animation-playing"></a>
 
 You can play back the animation in the **Animation Editor** to preview what it will look like in your game\. Playing the animation sequence animates the UI elements in the **UI Editor**\.

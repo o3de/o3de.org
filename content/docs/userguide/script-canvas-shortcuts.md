@@ -1,3 +1,8 @@
+description: ' Learn keyboard and mouse shortcuts for the &script-canvas; editor in
+  &ALYlong;. '
+slug: script-canvas-shortcuts
+title: '&script-canvas; Editor Shortcuts'
+---
 # Script Canvas Editor Shortcuts<a name="script-canvas-shortcuts"></a>
 
 The following table shows the keyboard shortcuts that you can use in the Script Canvas editor\.

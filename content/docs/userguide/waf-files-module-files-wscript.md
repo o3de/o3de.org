@@ -1,3 +1,8 @@
+description: ' Use Waf module files (wscript) to specify a fixed name and defined
+  rules for your &ALYlong; game project folder. '
+slug: waf-files-module-files-wscript
+title: Waf Module Files (wscript)
+---
 # Waf Module Files \(wscript\)<a name="waf-files-module-files-wscript"></a>
 
 Wscript files are Python source files that have a fixed name and defined rules for the project folder\. Waf picks up and processes the wscript file in each folder\. Files can recurse into one or more subdirectories, define the build script for one or more modules, or both\.

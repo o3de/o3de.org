@@ -1,3 +1,8 @@
+description: ' Use the Video Playback component to display a video in a level loading
+  screen or on a texture in a game created with &ALYlong;. '
+slug: component-videoplayback
+title: Video Playback
+---
 # Video Playback<a name="component-videoplayback"></a>
 
 You can use the **Video Playback** component to play a video on an entity in your Lumberyard level\. For example, you can use a flat or plane entity to simulate a movie screen\. You add the video playback component to the entity and specify a video file to display\.
@@ -63,7 +68,7 @@ You must name the directory `3.2`, regardless of the FFmpeg version that you're 
 1. Copy the `bin`, `include`, and `lib` folders to the `lumberyard_version/3rdParty/FFmpeg/3.2` directory\.
 
 1. Run Lumberyard Setup Assistant and, on the **Install optional SDKs** page, verify that Lumberyard detects FFmpeg\.  
-![\[Verify FFmpeg installation in Lumberyard Setup Assistant.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-setup-ffmpeg.png)
+![\[Verify FFmpeg installation in Lumberyard Setup Assistant.\]](/images/component/component-videoplayback-setup-ffmpeg.png)
 
 ### Installing LibAV<a name="install-libav"></a>
 
@@ -91,7 +96,7 @@ To open and extract `.7z` files, you must use a 7z application, such as 7\-Zip\.
    + `md5sum`
 
 1. Run Lumberyard Setup Assistant and, on the **Install optional SDKs** page, verify that Lumberyard detects LibAV\.  
-![\[Verify LibAV installation in Lumberyard Setup Assistant.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-setup-libav.png)
+![\[Verify LibAV installation in Lumberyard Setup Assistant.\]](/images/component/component-videoplayback-setup-libav.png)
 
 ## Using the Video Playback Component<a name="component-videoplayback-instructions"></a>
 
@@ -124,14 +129,14 @@ The basic setup for the **Video Playback** component includes the following:
 1. Use the [Entity Inspector](component-entity-inspector.md) to add a **[Mesh](component-static-mesh.md)** component to your entity\.
 
 1. For the **Mesh** component, select a **Mesh asset**\. This is the asset that your video renders on\. A cube or plane is a good test mesh\.  
-![\[Mesh component properties in Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-mesh-component-properties.png)
+![\[Mesh component properties in Lumberyard Editor\]](/images/component/component-mesh-component-properties.png)
 
 1. Add the **Video Playback** component to the same entity\. 
 
 1.  In the **Video Playback** component, for **Video**, select the video to display\. 
 
 1. For **Texture name**, enter dollar sign \($\) and a name for your texture\. You can enter any name, but it must begin with a $ character to indicate that it's a render target\. For example, **$videotest** is a valid name, but **videotest** isn't\.   
-![\[Video Playback component properties in Lumberyard Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-videoname.png)
+![\[Video Playback component properties in Lumberyard Editor\]](/images/component/component-videoplayback-videoname.png)
 
 1. For **Frame queue ahead count**, set the number of frames to buffer\.
 
@@ -142,13 +147,13 @@ The basic setup for the **Video Playback** component includes the following:
 1. Open the [Material Editor](mat-intro.md)\.
 
 1. To create a material\. click the **Add New Item** icon\. Enter a descriptive name, such as **myvideomaterial**\.  
-![\[Video Playback component material.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-material.png)
+![\[Video Playback component material.\]](/images/component/component-videoplayback-material.png)
 
 1. Under **Texture Maps**, on the **Diffuse** line, enter the name of your video component's **Texture name** field\. You must include the $ character\.  
-![\[Diffuse property for the texture name.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-diffuse.png)
+![\[Diffuse property for the texture name.\]](/images/component/component-videoplayback-diffuse.png)
 
 1. Close the **Material Editor** and return to the [Entity Inspector](component-entity-inspector.md)\. In the **Mesh** component, for the **Material override** property, select the material that you created\.  
-![\[Select the material override in the Mesh component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-override.png)
+![\[Select the material override in the Mesh component.\]](/images/component/component-videoplayback-override.png)
 
  You can trigger the video to play at the start of your game using Lua scripting\.
 
@@ -166,7 +171,7 @@ To set up stereo video playback, follow the instructions in [Using the Video Pla
 
   All supported video files should have their stereo layout written into their metadata\. This, however, is not a requirement and may not have been inserted by your encoder\. If you would like to inject stereo metadata into your video, see [https://support\.google\.com/jump/answer/7044297?hl=en](https://support.google.com/jump/answer/7044297?hl=en)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-videoplayback-stereo-layout.png)
+![\[Image NOT FOUND\]](/images/component/component-videoplayback-stereo-layout.png)
 
 When you enter game mode \(using **Ctrl G**\), you should see the left eye of your video play\. If you do not see this, try changing your **Stereo layout** setting\. 
 

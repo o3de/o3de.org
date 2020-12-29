@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s AZ Code Generator to generate source code (such as
+  boilerplate code) from specially tagged source code. '
+slug: az-code-gen-intro
+title: Automating boilerplate with AZ Code Generator
+---
 # Automating boilerplate with AZ Code Generator<a name="az-code-gen-intro"></a>
 
 
@@ -13,7 +18,7 @@ AZ Code Generator is a command line utility that generates source code \(or any 
 
 The templates provide the format for the code that is generated\. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code\. When a template is updated, all related generated code is regenerated in the next build\. This removes the need to update the glue code manually or to use error\-prone find\-and\-replace operations\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/az-code-gen-workflow.png)
+![\[Image NOT FOUND\]](/images/az-code-gen-workflow.png)
 
 **Topics**
 + [Workflow Summary](#az-code-gen-intro-workflow-summary)

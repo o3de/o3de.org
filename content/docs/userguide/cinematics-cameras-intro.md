@@ -1,3 +1,7 @@
+description: ' See the following topics for working with cinematic cameras in &ALYlong;. '
+slug: cinematics-cameras-intro
+title: Adding a Camera
+---
 # Adding a Camera<a name="cinematics-cameras-intro"></a>
 
 You can add a camera to a sequence so that it presents the sequence from a particular point of view\. This helps you control what is being displayed in the animation and how\. 

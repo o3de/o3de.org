@@ -1,3 +1,8 @@
+description: ' Use the Set Param Vector node in the &ALYlong; &script-canvas; editor
+  to set a material parameter with a Vector4 value. '
+slug: script-canvas-material-set-param-vector4-node
+title: Set Param Vector4
+---
 # Set Param Vector4<a name="script-canvas-material-set-param-vector4-node"></a>
 
 Sets a material parameter with a **Vector4** value\.
@@ -6,7 +11,7 @@ Sets a material parameter with a **Vector4** value\.
 + [Inputs](#script-canvas-material-set-param-vector4-node-input)
 + [Outputs](#script-canvas-material-set-param-vector4-node-output)
 
-![\[setparamvector4, setparamvector4node\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector4-node.png)
+![\[setparamvector4, setparamvector4node\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector4-node.png)
 
 ## Inputs<a name="script-canvas-material-set-param-vector4-node-input"></a>
 

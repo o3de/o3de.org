@@ -1,3 +1,7 @@
+description: null
+slug: dynamic-vegetation-procedures-saving-slice
+title: Saving the Vegetation Area as a Slice
+---
 # Saving the Vegetation Area as a Slice<a name="dynamic-vegetation-procedures-saving-slice"></a>
 
 Save your vegetation area as a slice so that you can easily place it in other locations or levels and further customize it\.
@@ -18,12 +22,12 @@ For more information, see [Working with Slices](component-slices.md)\.
 **Example**  
 
    Two slice instances in the viewport have the same vegetation assets and configuration\.  
-![\[Use slice instances to replicate vegetation areas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vegetation/dynamic/create-new-vegetation-reference-area-slice-1.png)
+![\[Use slice instances to replicate vegetation areas.\]](/images/vegetation/dynamic/create-new-vegetation-reference-area-slice-1.png)
 
 1. Select the new instance of the **BasicCoverage** entity\.
 
 1. On the **Vegetation Asset List** component, click the **Mesh Asset** and select a yellow flower asset\.   
-![\[In the slice instance that you placed, select a yellow flower for the Mesh Asset.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vegetation/dynamic/create-new-vegetation-reference-area-slice-2.png)
+![\[In the slice instance that you placed, select a yellow flower for the Mesh Asset.\]](/images/vegetation/dynamic/create-new-vegetation-reference-area-slice-2.png)
 **Note**  
 A property that appears orange has an override\. An override is a component change that is different than its source slice\. For more information, see [Modifying a Slice and Saving Changes](component-slice-push-changes.md)\.
 

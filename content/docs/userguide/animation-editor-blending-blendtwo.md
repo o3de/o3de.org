@@ -1,3 +1,8 @@
+description: ' Use the Blend Two node in &ALYlong; &animation-editor; to blend two
+  nodes that do not need additive blending. '
+slug: animation-editor-blending-blendtwo
+title: Blend Two Node
+---
 # Blend Two Node<a name="animation-editor-blending-blendtwo"></a>
 
 With the **Blend Two** node, you can blend between two input poses based on a weight value\. For example, the **Blend Two** node can blend smoothly between a walk and a run based on the character's speed\.
@@ -15,10 +20,10 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
 1. Drag the **Blend Two** node into the animation graph\.  
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two into the animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/char-animation-editor-blendposes-animgraphpalette-blendtwo.png)
+![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two into the animation graph.\]](/images/actor-animation/char-animation-editor-blendposes-animgraphpalette-blendtwo.png)
 
 1.   
-![\[Blend Two node on the animation graph with inputs and outputs exposed.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/char-animation-editor-blendposes-inoutputs-blendtwo.png)
+![\[Blend Two node on the animation graph with inputs and outputs exposed.\]](/images/actor-animation/char-animation-editor-blendposes-inoutputs-blendtwo.png)
 
    Connect nodes to the following inputs and output:
    + **Pose 1** – The first pose\.

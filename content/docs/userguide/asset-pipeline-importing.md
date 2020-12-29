@@ -1,3 +1,8 @@
+description: ' You can manually import your asset files into &ALYlong; or use the
+  Import option in the editor. '
+slug: asset-pipeline-importing
+title: Importing Assets into &ALY;
+---
 # Importing Assets into Lumberyard<a name="asset-pipeline-importing"></a>
 
 You can import assets into your Lumberyard game project directory with one of the following\.
@@ -27,10 +32,10 @@ You can import assets even if Lumberyard isn't running\. You can do this at any 
 You can import assets to a directory only in the current game project\.
 
 1. Select whether you want to **Copy Files** from their original location or **Move Files** and then click **Import**\. If you copy the files, Asset Processor doesn't monitor changes to the original files\.  
-![\[In Lumberyard Editor, import assets directly to your game project directory.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assets/pipeline/asset-pipeline-importing.png)
+![\[In Lumberyard Editor, import assets directly to your game project directory.\]](/images/assets/pipeline/asset-pipeline-importing.png)
 
 1. In the **Processing asset** dialog box, click **View status** to check the status of your assets\.  
-![\[Track the progress of Asset Processor processing your assets.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assets/pipeline/asset-pipeline-importing-processing-status.png)
+![\[Track the progress of Asset Processor processing your assets.\]](/images/assets/pipeline/asset-pipeline-importing-processing-status.png)
 
 ## Tutorials: Importing Assets into Lumberyard<a name="impoting-assets-into-lumberyard-tutorials"></a>
 

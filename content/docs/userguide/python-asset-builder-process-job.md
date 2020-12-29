@@ -1,3 +1,8 @@
+description: ' Process jobs in Python Asset Builder to create custom asset builders
+  for your &ALYlong; project. '
+slug: python-asset-builder-process-job
+title: Process job with Python Asset Builder
+---
 # Process job with Python Asset Builder<a name="python-asset-builder-process-job"></a>
 
 **Asset Processor** calls the registered callback when it has a job for the builder to begin processing\. The callback processes the source asset file, performs all the work inside the temporary directory, creates at least one product asset file, registers the product asset files via a `JobProduct` entry inside a `ProcessJobResponse` instance, and returns a success value inside the `ProcessJobResponse`\. 

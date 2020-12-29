@@ -1,8 +1,12 @@
+description: ' Use the &ALYlong; &script-canvas; editor to add bookmarks to your script. '
+slug: script-canvas-bookmarks
+title: Adding Bookmarks for &script-canvas;
+---
 # Adding Bookmarks for Script Canvas<a name="script-canvas-bookmarks"></a>
 
 A bookmark is a shortcut that you can add to a specific location on your Script Canvas graph\. You can then use keyboard shortcuts to move quickly to that location\. For example, you may have a complex script for a massive character controller that includes sections for movement, camera, and each attack\. You can add a bookmark to each section and then press the keyboard shortcut to move the graph view to the specified section\.
 
-![\[Simple Script Canvas script with bookmarks added to various nodes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-bookmarks-example.png)
+![\[Simple Script Canvas script with bookmarks added to various nodes.\]](/images/scripting/script-canvas/script-canvas-bookmarks-example.png)
 
 **To add a bookmark**
 

@@ -1,3 +1,8 @@
+description: ' Use the &ALY; Text-to-Speech (TTS) Cloud Gem to enhance gameplay and
+  workflows with synthesized speech. '
+slug: cloud-canvas-cloud-gem-text-to-speech-intro
+title: Text to Speech Cloud Gem (Using Amazon Polly)
+---
 # Text to Speech Cloud Gem \(Using Amazon Polly\)<a name="cloud-canvas-cloud-gem-text-to-speech-intro"></a>
 
 You can use the Text\-to\-Speech \(TTS\) Cloud Gem to enhance your gameplay and workflows with synthesized speech\. The Cloud Canvas Text\-to\-Speech \(TTS\) Cloud Gem uses [Amazon Polly](https://aws.amazon.com/polly/), which is a text\-to\-speech service that turns text into lifelike speech\. Amazon Polly offers dozens of lifelike voices in a variety of languages\. The service also creates lip synchronization from the text that you provide\. You can import the generated audio and [speech mark](https://docs.aws.amazon.com/polly/latest/dg/speechmarks.html) files into your dialogue system\. Currently, the Text\-to\-Speech Gem supports playback of PCM \([pulse\-code modulation](https://en.wikipedia.org/wiki/Pulse-code_modulation)\) files\.

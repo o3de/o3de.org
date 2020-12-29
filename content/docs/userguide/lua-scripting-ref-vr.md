@@ -1,3 +1,7 @@
+description: ' Use Lua to interact with head mounted display virtual reality devices. '
+slug: lua-scripting-ref-vr
+title: VR Lua Functions
+---
 # VR Lua Functions<a name="lua-scripting-ref-vr"></a>
 
 You can use Lua bindings to interact programmatically with head\-mounted display \(HMD\) devices that provide Virtual Reality \(VR\) experiences\.

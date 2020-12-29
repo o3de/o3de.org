@@ -1,3 +1,8 @@
+description: ' Understand the workflow of &ALYlong;''s runtime asset system and learn
+  how to load prebuilt assets into a running instance of the engine. '
+slug: asset-pipeline-asset-system-programming
+title: Programming the &ALY; AZCore Runtime Asset System
+---
 # Programming the Lumberyard AZCore Runtime Asset System<a name="asset-pipeline-asset-system-programming"></a>
 
 The Lumberyard Editor and Lumberyard runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.

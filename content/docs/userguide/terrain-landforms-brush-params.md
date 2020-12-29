@@ -1,3 +1,8 @@
+description: ' Use common brush settings to adjust the rise/lower, smooth, and flatten
+  brushes in &ALY;. '
+slug: terrain-landforms-brush-params
+title: Terrain Brush Parameters
+---
 # Terrain Brush Parameters<a name="terrain-landforms-brush-params"></a>
 
 A number of settings apply to multiple terrain brushes\. Use the following parameters to adjust the rise/lower, smooth, and flatten brushes\.

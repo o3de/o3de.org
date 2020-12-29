@@ -1,3 +1,7 @@
+description: ' Change skybox parameters to create a static sky in &ALYlong;. '
+slug: sky-skyboxes-params
+title: Changing Skybox Parameters
+---
 # Changing Skybox Parameters<a name="sky-skyboxes-params"></a>
 
 Do the following to modify the parameters of the dynamic sky in your level\.

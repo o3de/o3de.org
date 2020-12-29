@@ -1,3 +1,7 @@
+description: ' Create a managed group of &IAM; users for &cloud; in &ALYlong;. '
+slug: cloud-canvas-tutorial-team-admin
+title: Create &IAM; Users and Groups to Administer &cloud; Teams
+---
 # Create IAM Users and Groups to Administer Cloud Canvas Teams<a name="cloud-canvas-tutorial-team-admin"></a>
 
 To manage your team members' access to AWS resources, you create IAM users, a group for the users, and then attach the appropriate Cloud Canvas customer managed policies to the group\. The policies that Cloud Canvas creates for your IAM users are more restrictive than those for an administrator\. You can use these policies so that your team members do not inadvertently incur charges without administrator approval\.

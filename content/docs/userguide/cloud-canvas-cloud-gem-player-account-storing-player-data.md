@@ -1,3 +1,8 @@
+description: ' Use the Player Account Cloud Gem in &ALYlong; and &COG; to store player
+  account data. '
+slug: cloud-canvas-cloud-gem-player-account-storing-player-data
+title: Storing Data Associated with a Player Account
+---
 # Storing Data Associated with a Player Account<a name="cloud-canvas-cloud-gem-player-account-storing-player-data"></a>
 
 Each player account has a randomly generated account ID\. When you store data associated with a player, use this ID instead of the identifiers provided by the Amazon Cognito user and identity pools\. You should do this for the following reasons:

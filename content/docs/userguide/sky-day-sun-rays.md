@@ -1,3 +1,7 @@
+description: ' Use the Sun Rays Effect in &ALYlong; to simulate shafts of sunlight. '
+slug: sky-day-sun-rays
+title: Adding Sun Rays
+---
 # Adding Sun Rays<a name="sky-day-sun-rays"></a>
 
 You can create a sun rays effect, which simulates the shafts of light that the sun produces under certain atmospheric conditions\.

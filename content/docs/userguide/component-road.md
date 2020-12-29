@@ -1,3 +1,8 @@
+description: ' Use the Road component to create paths and align the terrain to roads
+  in &ALYlong;. '
+slug: component-road
+title: Road
+---
 # Road<a name="component-road"></a>
 
 
@@ -30,7 +35,7 @@ You can rebuild roads at runtime by modifying the spline\. However, this method 
 
 ## Road Properties<a name="road-properties"></a>
 
-![\[Road component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/road-properties-1.png)
+![\[Road component properties.\]](/images/component/road-properties-1.png)
 
 See the following **Road** properties:
 
@@ -67,7 +72,7 @@ See the following **Road** properties:
 
 The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](component-spline.md#spline-type-bezier) **Spline Type**\.
 
-![\[Basic road with default road material and four vertices placed with Linear Spline Type.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/creating-a-road.png)
+![\[Basic road with default road material and four vertices placed with Linear Spline Type.\]](/images/component/creating-a-road.png)
 
 ## Modifying Road Width<a name="modifying-road-width"></a>
 
@@ -75,7 +80,7 @@ You can modify the road's width by adjusting the road's **Global width** propert
 
 For more granular control over the road's width, you can adjust individual points with the **Per\-Vertex Width Modifiers** property\.
 
-![\[Per-Vertex Width Modifications with four Elements\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/modifying-road-width-1.png)
+![\[Per-Vertex Width Modifications with four Elements\]](/images/component/modifying-road-width-1.png)
 
 **To adjust the width of individual points**
 + In the **Road** component properties, enter a negative or positive number for the property that you want to modify\.
@@ -84,7 +89,7 @@ For more granular control over the road's width, you can adjust individual point
 **Example**  
 
   The global width of this road is `2`, and the width at the selected point is set to `5`\. The total width at the selected point is `7`\.  
-![\[Road with one vertex widened\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/modifying-road-width-2.png)
+![\[Road with one vertex widened\]](/images/component/modifying-road-width-2.png)
 
 ## Setting Road Material Properties<a name="setting-road-materials"></a>
 
@@ -102,12 +107,12 @@ Activates a blend fadeout at each end of the road\. This is a 100% to 0% fadeout
 ****Decal****  
 Enables alpha blending on the sides of the road, which comes from the diffuse texture's alpha channel\.
 
-![\[Road with one vertex widened.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/setting-road-materials-1.png)
+![\[Road with one vertex widened.\]](/images/component/setting-road-materials-1.png)
 
 **Example**  
 In the left image, **Vertex Colors** is enabled\. In the right image, the parameter is disabled\.  
 
-![\[Road with Vertex Color enabled and disabled.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/setting-road-materials-2.png)
+![\[Road with Vertex Color enabled and disabled.\]](/images/component/setting-road-materials-2.png)
 
 ## Using Roads to Modify Terrain<a name="using-roads-to-modify-terrain"></a>
 
@@ -126,17 +131,17 @@ You can use roads to modify the shape of the terrain\.
 **Example**  
 The following image shows a road that has been created and shaped, but not yet aligned\.  
 
-![\[Road not yet aligned with terrain.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/using-roads-to-modify-terrain-1.png)
+![\[Road not yet aligned with terrain.\]](/images/component/using-roads-to-modify-terrain-1.png)
 
 **Example**  
 The following image shows the road and terrain after alignment with a **Border width** of `5`\.  
 
-![\[Road aligned with terrain with Border width of 5.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/using-roads-to-modify-terrain-2.png)
+![\[Road aligned with terrain with Border width of 5.\]](/images/component/using-roads-to-modify-terrain-2.png)
 
 **Example**  
 The following image shows the road and terrain after alignment with a **Border width** of `20`\.  
 
-![\[Road aligned with terrain with Border width of 5.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/using-roads-to-modify-terrain-3.png)
+![\[Road aligned with terrain with Border width of 5.\]](/images/component/using-roads-to-modify-terrain-3.png)
 
 ## Erasing Vegetation<a name="erasing-road-vegetation"></a>
 
@@ -151,17 +156,17 @@ You can erase vegetation around the road's borders\.
 **Example**  
 The following image shows the road with no vegetation erased\.  
 
-![\[Road with no vegetation erased.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/erasing-road-vegetation-1.png)
+![\[Road with no vegetation erased.\]](/images/component/erasing-road-vegetation-1.png)
 
 **Example**  
 The following image shows the road with **Erase width** set to `0`\.  
 
-![\[Road with Erase width set to 0.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/erasing-road-vegetation-2.png)
+![\[Road with Erase width set to 0.\]](/images/component/erasing-road-vegetation-2.png)
 
 **Example**  
 The following image shows the road with **Erase width** set to `1` and **Erase variance** set to `5`\.  
 
-![\[Road with Erase width set to 1 and Erase variance set to 5.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-erasing-road-vegetation-3.png)
+![\[Road with Erase width set to 1 and Erase variance set to 5.\]](/images/shared-erasing-road-vegetation-3.png)
 
 ## RoadRequestBus Interface<a name="component-road-ebus-request"></a>
 

@@ -1,10 +1,14 @@
+description: ' Lean to use the &ALYlong; PhysX Hinge Joint component. '
+slug: component-physx-hinge-joint
+title: PhysX Hinge Joint component
+---
 # PhysX Hinge Joint component<a name="component-physx-hinge-joint"></a>
 
 With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x\-axis of the joint\. 
 
 ## PhysX Hinge Joint component properties<a name="component-physx-hinge-joint-properties"></a>
 
-![\[Properties of the PhysX Hinge Joint component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx/ui-physx-hinge-joint-component-1.27.png)
+![\[Properties of the PhysX Hinge Joint component\]](/images/physx/physx/ui-physx-hinge-joint-component-1.27.png)
 
 **Local Position**  
 Specify the position of the joint relative to the entity transform\.

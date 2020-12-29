@@ -1,3 +1,8 @@
+description: ' Use these AZ APIs to access infrastructure functionality in the &ALYlong;
+  engine from your game. '
+slug: systems-intro
+title: Working with &ALYlong; systems APIs
+---
 # Working with Amazon Lumberyard systems APIs<a name="systems-intro"></a>
 
 Amazon Lumberyard provides a number of APIs to access and invoke key parts of the Lumberyard engine from your game, including a new in\-game console and a new event management system\.

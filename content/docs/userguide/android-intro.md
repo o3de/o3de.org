@@ -1,3 +1,7 @@
+description: ' Develop &ALYlong; projects for use on Android devices. '
+slug: android-intro
+title: '&ALY; Android support'
+---
 # Lumberyard Android support<a name="android-intro"></a>
 
  In this section, you'll learn about the system requirements for Android\. You will also learn how to set up your Amazon Lumberyard installation for Android builds, configure your project for Android support, and build and deploy to devices\. When you finish your development cycle and are ready to release, that's covered here too\. Along the way, you'll want to use the troubleshooting guide and reference materials to help resolve any issues you might find\. 

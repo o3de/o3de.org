@@ -1,3 +1,8 @@
+description: ' Use the On Render Finished node in the &ALYlong; &script-canvas; editor
+  to trigger when a procedural material update finishes. '
+slug: on-render-finished-node
+title: On Render Finished
+---
 # On Render Finished<a name="on-render-finished-node"></a>
 
 This node is triggered when an update for a procedural material finishes rendering\.
@@ -7,11 +12,11 @@ You can use the node to detect when texture updates scheduled by the **[Render A
 **Contents**
 + [Outputs](#on-render-finished-node-output)
 
-![\[OnRenderFinished triggers when the procedural material render finishes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node.png)
+![\[OnRenderFinished triggers when the procedural material render finishes.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node.png)
 
 To verify that the render update is the event that you want, compare the **Render ID** values that the **[Render Asynchronous](render-asynchronous-node.md)** and **On Render Finished** nodes return\. You can use the **Equal To \(==\)** node, such as in the following example\.
 
-![\[Verify the Render ID for the Render Asynchronous and On Render Finished nodes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node-2.png)
+![\[Verify the Render ID for the Render Asynchronous and On Render Finished nodes.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node-2.png)
 
 ## Outputs<a name="on-render-finished-node-output"></a>
 

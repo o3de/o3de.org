@@ -1,3 +1,8 @@
+description: ' Learn how to program cloud gems by using the Cloud Gem Framework Service
+  API. '
+slug: cloud-canvas-cgf-service-api
+title: Cloud Gem Framework Service API
+---
 # Cloud Gem Framework Service API<a name="cloud-canvas-cgf-service-api"></a>
 
 
@@ -23,7 +28,7 @@ Lumberyard cloud gems provide services like the [Cloud Gem Portal](cloud-canvas-
 
 The following diagram shows how the Cloud Gem Framework service API interacts with the game client, the Cloud Gem Portal, AWS Lambda, and API Gateway\.
 
-![\[Service API interactions\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-service-api-1.png)
+![\[Service API interactions\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-1.png)
 
 ## Cloud Gem Swagger API Descriptions<a name="cloud-canvas-cgf-service-api-swagger-descriptions"></a>
 

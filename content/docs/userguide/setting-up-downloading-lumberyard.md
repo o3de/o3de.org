@@ -1,3 +1,8 @@
+description: ' Download and install &ALYlong;, which includes folders and files for
+  WAF, code, gems, &ly-editor;, assets, and samples. '
+slug: setting-up-downloading-lumberyard
+title: Installing &ALY;
+---
 # Installing Lumberyard<a name="setting-up-downloading-lumberyard"></a>
 
 **Download the latest version of Lumberyard Installer**  
@@ -32,7 +37,7 @@ If you get file errors during extraction about `AssetProcessor.exe`, `AssetProce
 1. **\(Optional\)** Change the location of the installation by selecting **Options**\. The default installation location is `C:\Amazon`\. 
 
 1. On the **Welcome** page of the installer, click **Install**\.  
-![\[Lumberyard Installer.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-installer-1.23.png)
+![\[Lumberyard Installer.\]](/images/lumberyard-installer-1.23.png)
 **Note**  
 In some situations, the Lumberyard Installer can stop responding and refuse to progress\. The only known remedy at this time is to forcibly terminate the installer through the Windows Task Manager and reboot, then retry the installation\.
 

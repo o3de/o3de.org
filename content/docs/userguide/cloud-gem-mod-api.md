@@ -1,8 +1,13 @@
+description: ' Learn about the API calls that the &ALYlong; Message of the Day Cloud
+  Gem uses. '
+slug: cloud-gem-mod-api
+title: Cloud Gem Message of the Day API Calls
+---
 # Cloud Gem Message of the Day API Calls<a name="cloud-gem-mod-api"></a>
 
 The game client and Cloud Gem Portal use Amazon API Gateway to securely invoke service API Lambda functions\. The game client can read messages while the Cloud Gem Portal can add, list, edit, and delete messages\.
 
-![\[Game client and Cloud Gem Portal call Lambda functions through API Gateway\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-mod-details-diag.png)
+![\[Game client and Cloud Gem Portal call Lambda functions through API Gateway\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-details-diag.png)
 
 ## The Game Client Service API Calls: /player/messages<a name="cloud-canvas-cloud-gem-mod-api-game-client"></a>
 

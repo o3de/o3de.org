@@ -1,3 +1,8 @@
+description: ' Use common resources in &cloud; project, deployment, and resource group
+  &CFN; template files similar to library functions in &ALYlong;. '
+slug: cloud-canvas-custom-resources
+title: Custom Resources
+---
 # Custom Resources<a name="cloud-canvas-custom-resources"></a>
 
 Cloud Canvas provides a number of [AWS CloudFormation custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that can be used in the AWS CloudFormation template files for the project, deployment, and resource group\. These custom resources are implemented by the Lambda function code found in the `dev\{game}\AWS\project-code` directory and the `ProjectResourceHandler` resource defined in the `dev\{game}\AWS\project-template.json` file\. Rather than static entities, these resources act more like library functions\. Each custom resource has input and output properties\.

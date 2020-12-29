@@ -1,8 +1,13 @@
+description: ' Use the Size attribute in the &ALYlong; &particle-editor; to control
+  the size and shape of the sprite. '
+slug: particle-editor-reference-size
+title: Size Attribute
+---
 # Size Attribute<a name="particle-editor-reference-size"></a>
 
 In the **Size** attribute, specify how to control the particle's size and shape\.
 
-![\[Size attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-size.png)
+![\[Size attributes in the Particle Editor.\]](/images/particles/particle-editor-size.png)
 
 For the **Size**, **Pivot**, and **Stretch** parameters, you can set a **Random** value and **Strength Over Emitter Lifetime** and **Strength Over Particle Lifetime** curves\.
 

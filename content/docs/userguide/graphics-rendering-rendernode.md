@@ -1,3 +1,7 @@
+description: ' Visualize objects in a world with render nodes in &ALYlong;. '
+slug: graphics-rendering-rendernode
+title: Render Nodes
+---
 # Render Nodes<a name="graphics-rendering-rendernode"></a>
 
 To visualize objects in a world, Lumberyard defines the concepts of the render node and render element\. Render nodes represent general objects in the 3D engine\. Among other things, they are used to build a hierarchy for visibility culling, allow physics interactions \(optional\), and rendering\.

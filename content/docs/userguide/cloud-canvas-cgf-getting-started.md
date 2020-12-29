@@ -1,3 +1,8 @@
+description: ' Learn about cloud gems, the Cloud Gem Framework, and how to create
+  your own cloud gem to implement cloud-connected game functionality in &ALYlong;. '
+slug: cloud-canvas-cgf-getting-started
+title: Getting Started with the Cloud Gem Framework
+---
 # Getting Started with the Cloud Gem Framework<a name="cloud-canvas-cgf-getting-started"></a>
 
 Lumberyard cloud gems make it easy to create cloud\-connected functionality for your games\. You can use the cloud gems included with Lumberyard, or use Lumberyard's Cloud Gem Framework to create your own cloud gems\.
@@ -22,7 +27,7 @@ The Cloud Gem Framework is a collection of tools and API operations that support
 
 The following diagram shows a high\-level view of the Cloud Gem Framework architecture\.
 
-![\[Cloud Gem Framework architecture\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-architecture.png)
+![\[Cloud Gem Framework architecture\]](/images/cloud_canvas/cloud-canvas-cgf-architecture.png)
 
 The Cloud Gem Framework contains the following major components:
 + [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) – A web application for operating and managing cloud gems\.

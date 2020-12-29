@@ -1,10 +1,15 @@
+description: ' Add mountains, valleys, lakes, rivers, roads, and other realistic terrain
+  elements to your &ALYlong; level. '
+slug: terrain-intro
+title: Creating Terrain
+---
 # Creating Terrain<a name="terrain-intro"></a>
 
 You can add realistic elements such as mountains, valleys, lakes, rivers, and roads to your terrain for your environment levels\.
 
 One of the primary tools used to first create a terrain is the Terrain Editor, as the following shows:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-editor.png)
+![\[Image NOT FOUND\]](/images/terrain/terrain-editor.png)
 
 **Topics**
 + [Creating High Quality Terrain](terrain-high-quality.md)

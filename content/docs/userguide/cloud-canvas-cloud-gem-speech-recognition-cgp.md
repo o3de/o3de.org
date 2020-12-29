@@ -1,3 +1,8 @@
+description: ' Use the Speech Recognition Cloud Gem Portal to import, export, and
+  publish &LEX; bots in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-speech-recognition-cgp
+title: Speech Recognition Cloud Gem Portal (Preview)
+---
 # Speech Recognition Cloud Gem Portal \(Preview\)<a name="cloud-canvas-cloud-gem-speech-recognition-cgp"></a>
 
 
@@ -30,4 +35,4 @@ To use the Speech Recognition Cloud Gem Portal, you must meet the following requ
 
 To open the Speech Recognition Cloud Gem, choose **Speech Recognition** on the Cloud Gem Portal **Cloud Gems** page\.
 
-![\[Choose Speech Recognition\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-1.png)
+![\[Choose Speech Recognition\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-1.png)

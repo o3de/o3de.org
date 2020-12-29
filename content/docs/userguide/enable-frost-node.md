@@ -1,3 +1,8 @@
+description: ' Use the Enable Frost node in the &ALYlong; &script-canvas; editor to
+  display frost on the screen. '
+slug: enable-frost-node
+title: Enable Frost
+---
 # Enable Frost<a name="enable-frost-node"></a>
 
 Display spots of frost on the screen\.
@@ -8,11 +13,11 @@ To disable the effect, see [Disable Frost](disable-frost-node.md)\.
 + [Inputs](#enable-frost-note-input)
 + [Outputs](#enable-frost-node-output)
 
-![\[enablefrost, enablefrostnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-frost-node.png)
+![\[enablefrost, enablefrostnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-frost-node.png)
 
 **Example**  
 
-![\[Use the Enable Frost node to enable frost on the screen.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-frost-node-example.png)
+![\[Use the Enable Frost node to enable frost on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-frost-node-example.png)
 
 ## Inputs<a name="enable-frost-note-input"></a>
 

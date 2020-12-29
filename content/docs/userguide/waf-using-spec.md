@@ -1,3 +1,8 @@
+description: ' Use a Waf spec system template to create Visual Studio solutions for
+  your &ALYlong; game. '
+slug: waf-using-spec
+title: Adding a Spec
+---
 # Adding a Spec<a name="waf-using-spec"></a>
 
 The Waf spec system provides a template to create Visual Studio solutions and describes a build filter that determines which modules to build for particular platforms and configurations\. The nature of the generic Waf build system is to be all projects that are defined through the wscript system, which acts recursively on the root directory structure\. If no spec is specified when you execute a build or clean command, the Waf build system system attempts to build all modules that are supported by the selected target platform and configuration\. The platform and configuration support is defined in each of the module's wscript definitions\. For more information, see [Adding a Build Module](waf-using-module.md)\.

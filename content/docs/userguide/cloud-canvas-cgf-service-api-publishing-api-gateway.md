@@ -1,3 +1,8 @@
+description: ' Learn how you can publish your API so that other programmers can use
+  it. '
+slug: cloud-canvas-cgf-service-api-publishing-api-gateway
+title: Publishing Your API
+---
 # Publishing Your API<a name="cloud-canvas-cgf-service-api-publishing-api-gateway"></a>
 
 Service API operations are implemented by [API Gateway](https://aws.amazon.com/api-gateway/), which has an open source serverless web application that you can use to create your own developer portal\. A developer portal on API Gateway empowers you to do the following:

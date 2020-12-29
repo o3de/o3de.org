@@ -1,3 +1,9 @@
+description: ' Use the tools in &ALYlong;''s &component-system; to create entities,
+  add components to entities, remove and reorder components, find an entity, and edit
+  component properties. '
+slug: component-working
+title: Working with Components
+---
 # Working with Components<a name="component-working"></a>
 
 You can use the component entity system tools to create entities and add components to them\. Before you can work with components, you must [create an entity](creating-entity.md)\.

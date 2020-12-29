@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; Tube Shape component to create tube-like volumes. '
+slug: component-tube-shape
+title: Tube Shape
+---
 # Tube Shape<a name="component-tube-shape"></a>
 
 
@@ -18,11 +22,11 @@ The **Tube Shape** component requires the **[Spline](component-spline.md)** comp
 
 **Example Tube Shape Component**  
 
-![\[Example Tube Shape component in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-component-tube-shape-example.png)
+![\[Example Tube Shape component in Lumberyard Editor.\]](/images/shared-component-tube-shape-example.png)
 
 ## Tube Shape Properties<a name="tube-shape-properties"></a>
 
-![\[The Tube Shape component and its properties in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-tube-shape.png)
+![\[The Tube Shape component and its properties in Lumberyard Editor.\]](/images/component/component-tube-shape.png)
 
 The **Tube Shape** component has the following properties\.
 

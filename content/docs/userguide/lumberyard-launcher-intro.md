@@ -1,3 +1,8 @@
+description: ' Verify that you have the required third-party software, SDKs, and plugins
+  to run &ALYlong; with the &ly-launcher;. '
+slug: lumberyard-launcher-intro
+title: Using &ly-launcher; to Set Up Your Development Environment
+---
 # Using Lumberyard Setup Assistant to Set Up Your Development Environment<a name="lumberyard-launcher-intro"></a>
 
 Use the Lumberyard Setup Assistant application to validate that you have installed the third\-party software required to run Lumberyard\.

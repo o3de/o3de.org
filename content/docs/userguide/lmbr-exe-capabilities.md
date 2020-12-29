@@ -1,3 +1,8 @@
+description: Use the lmbr capabilities command to list, create, disable, and enable
+  &ALY; capabilities.
+slug: lmbr-exe-capabilities
+title: Capabilities Commands
+---
 # Capabilities Commands<a name="lmbr-exe-capabilities"></a>
 
 Use the following commands to create and modify Lumberyard capabilities\.

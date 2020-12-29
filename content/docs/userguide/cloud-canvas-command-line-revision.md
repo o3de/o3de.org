@@ -1,3 +1,7 @@
+description: ' Learn the new versions of &cloud; lmbr_aws commands in &ALYlong;. '
+slug: cloud-canvas-command-line-revision
+title: Command Reorganization
+---
 # Command Reorganization<a name="cloud-canvas-command-line-revision"></a>
 
 As of Lumberyard 1\.9, the commands made available by the `lmbr_aws` command line tool have been reorganized\. The previous commands are still functional but are subject to removal in a future release\.

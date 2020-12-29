@@ -1,3 +1,7 @@
+description: ' Learn how to start and stop the GridMate session service in &ALYlong;. '
+slug: network-session-service-start-stop
+title: Starting and Stopping the Session Service
+---
 # Starting and Stopping the Session Service<a name="network-session-service-start-stop"></a>
 
 The session service is responsible for hosting or joining sessions and is represented by the `GridMate::SessionService` abstract class\.

@@ -1,3 +1,7 @@
+description: ' Learn more about TrueType fonts in &ALYlong;. '
+slug: graphics-rendering-truetype
+title: TrueType Fonts
+---
 # TrueType Fonts<a name="graphics-rendering-truetype"></a>
 
 CryFont is used to generate font textures that are required to render text on the screen\. The various features of font rendering can be seen by using the `r_DebugFontRendering` console variable\. For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.

@@ -1,3 +1,8 @@
+description: ' Use the RAD Telemetry gem to enable instrumentation-based profiling
+  and performance visualization in &ALYlong;. '
+slug: gems-system-gem-rad-telemetry
+title: RAD Telemetry Gem
+---
 # RAD Telemetry Gem<a name="gems-system-gem-rad-telemetry"></a>
 
 RAD Telemetry 3 is an instrumentation\-based profiling and performance visualization middleware product created by [RAD Game Tools](http://www.radgametools.com/telemetry.htm)\. The RAD Telemetry Gem provides a RAD Telemetry 3 integration for Lumberyard for those who have licensed RAD Telemetry\.

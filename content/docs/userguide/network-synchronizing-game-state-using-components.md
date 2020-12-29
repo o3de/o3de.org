@@ -1,3 +1,8 @@
+description: ' Learn how to synchronize game state by using &ALY;''s component entity
+  system. '
+slug: network-synchronizing-game-state-using-components
+title: Synchronizing Game State Using Components
+---
 # Synchronizing Game State Using Components<a name="network-synchronizing-game-state-using-components"></a>
 
 The network binding API in the AZ framework provides a way for components to synchronize their states over the network\.
@@ -40,4 +45,4 @@ In Lumberyard, every entity has a unique ID so that it can be referenced in the 
 
 The following diagram shows how the net binding system binds an entity to the network and spawns an entity\. It does this with the same ID that it binds to a proxy replica\.
 
-![\[GirdMate network binding system\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/net-binding-system.png)
+![\[GirdMate network binding system\]](/images/networking/net-binding-system.png)

@@ -1,3 +1,8 @@
+description: ' Use the Sprite Editor to configure your images and textures in &ALYlong;''s
+  &ui-canvas-editor; . '
+slug: ui-editor-sprite-editor
+title: Sprite Editor
+---
 # Sprite Editor<a name="ui-editor-sprite-editor"></a>
 
 The **Sprite Editor** configures the following sprite configurations:
@@ -14,11 +19,11 @@ You open the **Sprite Editor** from the **Image** component's properties\.
 
 1. To the right of **Sprite path**, click the arrow ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-button-1.png) icon\.
 
-![\[To open the Sprite Editor, click the arrow button next to Sprite path.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-sprite-editor-1.png)
+![\[To open the Sprite Editor, click the arrow button next to Sprite path.\]](/images/game_ui_editor/ui-editor-sprite-editor-1.png)
 
 The **Sprite Editor** has the following features:
 
-![\[Sprite Editor UI.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-sprite-editor-2.png)
+![\[Sprite Editor UI.\]](/images/game_ui_editor/ui-editor-sprite-editor-2.png)
 + **Sprite viewport** – Displays sprite image\.
 + **Border manipulators** – Sets border properties for sliced image types\. To adjust the borders, drag the dotted lines, which are called manipulator positions\. Changing these positions updates the corresponding **Border Properties** values\.
 + **Properties**

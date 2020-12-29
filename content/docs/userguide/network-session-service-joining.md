@@ -1,3 +1,7 @@
+description: ' Learn how to join a GridMate session in &ALYlong;. '
+slug: network-session-service-joining
+title: Joining a Session
+---
 # Joining a Session<a name="network-session-service-joining"></a>
 
 You have two ways to join a session:

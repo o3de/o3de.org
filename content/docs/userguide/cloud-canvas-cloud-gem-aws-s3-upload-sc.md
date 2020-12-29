@@ -1,3 +1,7 @@
+description: ' Use &script-canvas; to upload a file to &S3; in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-s3-upload-sc
+title: Uploading a File to &S3; with &script-canvas;
+---
 # Uploading a File to Amazon S3 with Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc"></a>
 
 You can use the **AWSBehaviorS3Upload** node in Script Canvas to upload a file from your computer to the Amazon S3 bucket that you specify\. If the object that you specify already exists, it is overwritten\.
@@ -57,7 +61,7 @@ Next, to see the success or failure of the operation, add **AWSBehaviorS3UploadN
 1. Connect the **Out** pins of the **AWSBehaviorS3UploadNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
 1. Connect the **String** pins of the **AWSBehaviorS3UploadNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
-![\[A Script Canvas graph that uploads a file to Amazon S3\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-upload-sc-1.png)
+![\[A Script Canvas graph that uploads a file to Amazon S3\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-upload-sc-1.png)
 
 1. Save the canvas with a name like `MyS3UploadTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

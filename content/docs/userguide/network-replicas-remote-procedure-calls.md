@@ -1,3 +1,8 @@
+description: ' Use remote procedure calls (RPCs) to send events or requests through
+  replicas in &ALYlong;. '
+slug: network-replicas-remote-procedure-calls
+title: Remote Procedure Calls (RPCs)
+---
 # Remote Procedure Calls \(RPCs\)<a name="network-replicas-remote-procedure-calls"></a>
 
 RPCs allow games to send events or requests to remote nodes through replicas\. They can be used to send messages to a specific node, or to route function calls to the authoritative node\. For example, you can use RPCs to implement functions that change the position of an object\. This ensures that changes happen only at the node that owns the object\. For server\-authoritative games, reliable RPCs can be used for sending frequent client input commands\.

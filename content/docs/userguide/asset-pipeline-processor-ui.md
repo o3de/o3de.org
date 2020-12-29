@@ -1,12 +1,17 @@
+description: ' Learn the functions of each area of the &asset-processor; interface
+  in &ALYlong;. '
+slug: asset-pipeline-processor-ui
+title: '&asset-processor; Interface'
+---
 # Asset Processor Interface<a name="asset-pipeline-processor-ui"></a>
 
 The Asset Processor interface provides areas containing detailed information about the assets that it processes\. These areas are shown in the following example\.
 
-![\[The main window of the Lumberyard Asset Processor. The window is annotated with markers that identify the visual components and features described below.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/asset-processor-ui.png)
+![\[The main window of the Lumberyard Asset Processor. The window is annotated with markers that identify the visual components and features described below.\]](/images/asset_processor/asset-processor-ui.png)
 
 
 
-![\[The top of the Lumberyard Asset Processor window after the processing completes. The window displays the total time to scan, analyze, and build. The time is annotated with the identifier "I".\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/asset-processor-timer.png)
+![\[The top of the Lumberyard Asset Processor window after the processing completes. The window displays the total time to scan, analyze, and build. The time is annotated with the identifier "I".\]](/images/asset_processor/asset-processor-timer.png)
 
 
 
@@ -51,7 +56,7 @@ The columns in the **Asset Status** table display the following information abou
 + **Platform** – Game platform
 + **Job Key** – Specific job process
 
-![\[The Asset Status table displays specific information about assets in each column.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/asset-status-table.png)
+![\[The Asset Status table displays specific information about assets in each column.\]](/images/asset_processor/asset-status-table.png)
 
 #### Status Column<a name="status-column"></a>
 
@@ -89,7 +94,7 @@ To view all assets with a particular status, do one of the following:
 
 Filters that you apply remain active until you remove them\. You can either clear the status type box, or click the X next to the filter's label\.
 
-![\[Filter the Asset Status table using keywords or regular expressions. Remove filters by clearing the status type box or removing the label.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/keyword-status-filtering.png)
+![\[Filter the Asset Status table using keywords or regular expressions. Remove filters by clearing the status type box or removing the label.\]](/images/asset_processor/keyword-status-filtering.png)
 
 #### Using a Row's Context Menu<a name="row-asset-context-menu"></a>
 
@@ -110,7 +115,7 @@ Opens the most recent log file for the asset, if one has been made\. File copies
 **Open folder with log file**  
 Opens the directory with the log file for the asset\.
 
-![\[Right-click on a row to expose the context menu in the Asset Table.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/row-asset-context-menu.png)
+![\[Right-click on a row to expose the context menu in the Asset Table.\]](/images/asset_processor/row-asset-context-menu.png)
 
 ### Event Log Details<a name="event-log-details-table"></a>
 
@@ -134,27 +139,27 @@ The **Message** column displays information related to the processing details of
 **Note**  
 The **Message** column occasionally prefixes **Errors** with **E:** and warnings with **W:**\.
 
-![\[Event log details table.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/event-log-details-table.png)
+![\[Event log details table.\]](/images/asset_processor/event-log-details-table.png)
 
 The **Event Log Details** table also features a context menu to perform copy actions\. You can copy the following to the clipboard:
 + **Copy Line** – Selected line of the log
 + **Copy Line With Details** – Selected line and any related details that appear in the **Event log line details** table
 + **Copy All** – All log lines and any hidden details for each item
 
-![\[Event log details table context menu actions.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/event-log-details-context.png)
+![\[Event log details table context menu actions.\]](/images/asset_processor/event-log-details-context.png)
 
 #### Event Log Line Details<a name="event-log-line-details"></a>
 
 The **Event Log Line Details** table displays when you enable the **Context Details** option\. This table displays any additional information about the selected line in the **Event Log Details** table\. These details and additional information is generally useful only when debugging issues with a particular asset\.
 
-![\[Event Log Line Details table with Context Details enabled.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/event-log-details-context-on.png)
+![\[Event Log Line Details table with Context Details enabled.\]](/images/asset_processor/event-log-details-context-on.png)
 
 The **Event Log Line Details** table also features a context menu to perform copy actions\. You can copy the following to the clipboard:
 + **Copy Selected Key** – Text in the **Key** column of the selected row
 + **Copy Selected Value** – Text in the **Value** column of the selected row
 + **Copy All Values** – All keys and values in the table
 
-![\[Event Log Line Details table context menu.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/event-log-line-details-context.png)
+![\[Event Log Line Details table context menu.\]](/images/asset_processor/event-log-line-details-context.png)
 
 ## Assets<a name="assets-tab"></a>
 
@@ -164,7 +169,7 @@ The **Event Log Line Details** table also features a context menu to perform cop
 
  Using the **Source Assets** view of the **Assets** tab shows you the assets picked up during asset processing and lets you investigate their dependencies, products, associated jobs, and force asset rebuilds\. 
 
-![\[The Asset Processor with the Assets tab selected, and the Source Assets view visible. The view is annotated with red markers calling out each individual section.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/assets-source.png)
+![\[The Asset Processor with the Assets tab selected, and the Source Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/asset_processor/assets-source.png)
 
 A – Search bar  
  Search for assets\. The search bar is visible in both the Source Assets and Product Assets views\. The search will match partial file names and supports regular expressions\. Search bar functionality is the same between **Source Assets** and **Product Assets** views\. 
@@ -186,7 +191,7 @@ F – Incoming source dependencies
 
 ### Product assets<a name="assets-tab-product"></a>
 
-![\[The Asset Processor with the Assets tab selected, and the Product Assets view visible. The view is annotated with red markers calling out each individual section.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/assets-product.png)
+![\[The Asset Processor with the Assets tab selected, and the Product Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/asset_processor/assets-product.png)
 
 A – Product asset list  
  The list of all product assets which match the current search filter\. When the search is empty, shows all of the available products\. 
@@ -210,11 +215,11 @@ F – Missing dependency scanner
 
 The **Logs** tab displays events for the internal operation of the Asset Processor\. This area doesn't display logs for the processing of individual assets\. The information in these logs is helpful for troubleshooting the Asset Processor if an issue occurs\. 
 
-![\[Logs tab in Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/logs.png)
+![\[Logs tab in Asset Processor.\]](/images/asset_processor/logs.png)
 
 Right\-click to access the **Logs** context menu\.
 
-![\[Logs tab context menu in Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/logs-context.png)
+![\[Logs tab context menu in Asset Processor.\]](/images/asset_processor/logs-context.png)
 
 ## Shaders<a name="shaders-tab"></a>
 
@@ -226,14 +231,14 @@ The **Connections** tab displays devices and programs that the Asset Processor i
 
 In the **Active Connections** table's **Enabled** column, automatic connections are labeled as **Auto**\. This means that it's a connection that the Asset Processor created\. One example of such a connection is Asset Builder connections\. User\-created connections show a check box\. If you select the check box, the Asset Processor continually attempts to reconnect to those connections\. You can use these custom connections for specialized cases, such as when connecting to mobile devices outside of a company's internal network\.
 
-![\[Connections tab in the Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/connections-tab.png)
+![\[Connections tab in the Asset Processor.\]](/images/asset_processor/connections-tab.png)
 
 You can edit or remove a user\-created connection, or add a connection\.
 
-![\[Edit a user-created connection in Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/edit-connection.png)
+![\[Edit a user-created connection in Asset Processor.\]](/images/asset_processor/edit-connection.png)
 
 ## Tools<a name="tools-tab"></a>
 
 On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](asset-processor-faster-scanning.md)\.
 
-![\[Tools tab in Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/faster-scanning.png)
+![\[Tools tab in Asset Processor.\]](/images/asset_processor/faster-scanning.png)

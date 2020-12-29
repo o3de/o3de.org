@@ -1,3 +1,7 @@
+description: ' Use C++ macros for error management and troubleshooting in &ALYlong;. '
+slug: script-canvas-errors-and-troubleshooting
+title: '&script-canvas; Errors and Troubleshooting'
+---
 # Script Canvas Errors and Troubleshooting<a name="script-canvas-errors-and-troubleshooting"></a>
 
 Script Canvas provides a mechanism to detect and report errors\. Errors in Script Canvas are generally caused by invalid conditions\.
@@ -20,4 +24,4 @@ Runtime execution errors are reported to the **Event Handler** node\. You can us
 
 You can also raise and handle errors within a graph's execution\. The following simple example shows how you could use **Error** and **Error Handler** nodes to provide notification of an error in data validation\. This helps to rectify the solution to ensure that the graph remains stable\.
 
-![\[Example that notifies users of errors in data validation\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)
+![\[Example that notifies users of errors in data validation\]](/images/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)

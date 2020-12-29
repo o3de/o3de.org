@@ -1,3 +1,8 @@
+description: ' Use the Set Skybox Stretch node in the &ALYlong; &script-canvas; editor
+  to stretch the skybox vertically. '
+slug: set-sky-box-stretch
+title: Set Skybox Stretch
+---
 # Set Skybox Stretch<a name="set-sky-box-stretch"></a>
 
 Sets the stretch factor, which affects how the skybox stretches vertically\. Stretching the skybox lowers the horizon line\.
@@ -6,7 +11,7 @@ Sets the stretch factor, which affects how the skybox stretches vertically\. Str
 + [Inputs](#set-sky-box-stretch-input)
 + [Outputs](#set-sky-box-stretch-output)
 
-![\[sky box node, setskyboxstretch\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-stretch.png)
+![\[sky box node, setskyboxstretch\]](/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-stretch.png)
 
 ## Inputs<a name="set-sky-box-stretch-input"></a>
 

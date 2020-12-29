@@ -1,3 +1,7 @@
+description: ' Create motion events for your game project in &ALYlong;. '
+slug: char-animation-editor-custom-events-parameters-creating-motion-events
+title: Creating Motion Events
+---
 # Creating Motion Events<a name="char-animation-editor-custom-events-parameters-creating-motion-events"></a>
 
 The `EMotionFX::MotionEvent` class inherits `EMotionFX::Event` and describes an event that happens at a specified time or range of time during a motion\.

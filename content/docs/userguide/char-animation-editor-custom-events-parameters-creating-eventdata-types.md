@@ -1,3 +1,8 @@
+description: ' Use EventData types to create custom parameters for motion events in
+  &ALYlong;. '
+slug: char-animation-editor-custom-events-parameters-creating-eventdata-types
+title: Creating EventData Types
+---
 # Creating EventData Types<a name="char-animation-editor-custom-events-parameters-creating-eventdata-types"></a>
 
 You can create `EventData` types in a separate gem or directly in a game project's code\. Each parameterized motion event can contain more than one `EventData` object\. This makes it possible for users to attach an arbitrary number of `EventData` objects to a single event\.

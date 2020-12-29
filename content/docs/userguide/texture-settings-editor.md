@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; &texture-settings; to work with texture assets. '
+slug: texture-settings-editor
+title: '&texture-settings;'
+---
 # Texture Settings Editor<a name="texture-settings-editor"></a>
 
 You can use the Texture Settings Editor to edit the texture settings for individual images\. This is useful if you are customizing your images for different platforms, such as PC and Android\. For example, you can specify compression scheme, mipmap generation parameters, alpha map combinations, and so on for images\. When you edit your texture settings for an image, the Texture Settings Editor generates a `.imagesettings` file to save your settings\. 
@@ -47,7 +51,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
 1. In Lumberyard Editor, choose **Tools**, **Asset Browser**\.
 
 1. In the **Asset Browser**, navigate and select a source file, such as a `.tif` file\.  
-![\[Select and preview the source file in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-1.png)
+![\[Select and preview the source file in the Asset Browser.\]](/images/texture-pipeline-editor-1.png)
 
    You can preview the texture, its file size, dimensions, and select the drop\-down menu to preview the texture with the following channels:
    + **RGB**
@@ -55,7 +59,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
    + **RGBA**
 
 1. To view more information, expand the arrow icon, and select the texture file that appears below the source file\.  
-![\[Select and preview the texture file in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-2.png)
+![\[Select and preview the texture file in the Asset Browser.\]](/images/texture-pipeline-editor-2.png)
 
    See the following information about the texture:
    + Compiled texture
@@ -68,7 +72,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
    + Image flag
 
 1. To open the Texture Settings Editor, right\-click the source file, and choose **Edit Texture Settings**\.  
-![\[Open the source file in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-3.png)
+![\[Open the source file in the Texture Settings Editor.\]](/images/texture-pipeline-editor-3.png)
 
 1. In the Texture Settings Editor, you can view the following:
 
@@ -89,7 +93,7 @@ Click the **?** icon to open the texture documentation\.
 
 In the preview panel, you can do the following:
 
-![\[Open the texture file in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-texture-pipeline-editor-4.png)
+![\[Open the texture file in the Texture Settings Editor.\]](/images/shared-texture-pipeline-editor-4.png)
 
 1. Click the drop\-down menu to preview the texture in the following channels:
    + **RGB** – Displays the RGB color channels \(default\)\.
@@ -115,7 +119,7 @@ In the preview panel, you can do the following:
 
  In the **Texture presets**, you can do the following:
 
-![\[Set the texture presets for the file in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-5.png)
+![\[Set the texture presets for the file in the Texture Settings Editor.\]](/images/texture-pipeline-editor-5.png)
 + **Active preset** – Click the drop\-down menu to view the presets that you can assign to a texture\. The texture using the preset values automatically appears in the preview panel\. Texture properties are also updated\.
 **Note**  
 The Texture Settings Editor supports different presets that specify the options that are applied when an image asset is compiled\. When you open the Texture Settings Editor, it loads the main settings and presets from the game project folder at the following file:  
@@ -124,7 +128,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 `lumberyard_version\dev\Gems\ImageProcessing\Code\Source\ImageBuilderDefaultPresets.settings`
 + Click the reset icon to reset all texture properties to the default values of the current preset\.
 + Click the info icon to display a pop\-up window for the current settings\.  
-![\[View the preset info for the texture in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-6.png)
+![\[View the preset info for the texture in the Texture Settings Editor.\]](/images/texture-pipeline-editor-6.png)
 + **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](mat-texture-types.md)\.
 + **Suppress spec reduction** – By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
 
@@ -134,7 +138,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 
  In the **Platform**, you can specify the following\. 
 
-![\[Set the platform settings in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-7.png)
+![\[Set the platform settings in the Texture Settings Editor.\]](/images/texture-pipeline-editor-7.png)
 
 
 ****  
@@ -150,7 +154,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 
  In the **Mipmap Settings**, you can specify the following\.
 
-![\[Set the Mipmap Settings in the Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/texture-pipeline-editor-8.png)
+![\[Set the Mipmap Settings in the Texture Settings Editor.\]](/images/texture-pipeline-editor-8.png)
 
 
 ****  

@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Environment Probe components to blend visual affects
+  for your game. '
+slug: level-blending-environment-probe
+title: Blending Environment Probes
+---
 # Blending Environment Probes<a name="level-blending-environment-probe"></a>
 
 You can use an **[Environment Probe](component-environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\. 
@@ -22,7 +27,7 @@ To add an environment probe to your scene, see [Working with Components](compone
 
 The following example scenario demonstrates how to dim a lamp\. The room has a dimmer lamp and a night light\. As the lamp dims, the ambient lighting provided by the environment probes must dim as well\. The room does not completely darken, because of the night light\.
 
-![\[Example dimmer and night light scene with Environment Probe components.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-environment-probe-nightlight.gif)
+![\[Example dimmer and night light scene with Environment Probe components.\]](/images/level-environment-probe-nightlight.gif)
 
 **To set up the lights, environment probes, and script**
 
@@ -97,7 +102,7 @@ To create the script file, copy and paste the code into a text file\. Rename the
    You can also use the **Entity Outliner** to select the **probe\_light** entity\.
 
    The **Lua Script** component should look like the following example:  
-![\[Lua Script component has LightEntity set to lamp, and ProbeEntity set to probe_light.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-environment-probe-5.png)<a name="room-light-example-script"></a>
+![\[Lua Script component has LightEntity set to lamp, and ProbeEntity set to probe_light.\]](/images/level-environment-probe-5.png)<a name="room-light-example-script"></a>
 
 **Example**  
 See the following `RoomLights.lua` script\.  
@@ -186,7 +191,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 1. After you set the time of day and generate \(bake\) the cubemap for every probe, create another entity named **probe\_set**\.
 
 1. Select and move the probes into the **probe\_set** entity\.  
-![\[Move all the environment probes into the parent entity, probe_set.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-environment-probe-daynight-1.png)
+![\[Move all the environment probes into the parent entity, probe_set.\]](/images/level-environment-probe-daynight-1.png)
 
 1. In the **Entity Outliner**, do the following:
 
@@ -199,12 +204,12 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 To create the script file, copy and paste the code into a text file\. Rename the file extension to `.lua` and save it in your project directory\.
 
 1. In the **Lua Script** component, for **Probes**, click **\+** until the number of **EntityId** slots equals the number of probes that you have\.  
-![\[Create EntityID slots to match the number of environment probes in the Lua Script component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-environment-probe-daynight-2.png)
+![\[Create EntityID slots to match the number of environment probes in the Lua Script component.\]](/images/level-environment-probe-daynight-2.png)
 
 1. Assign each of your probes to one of the script's **EntityId** probe slots\. In the **Entity Inspector**, click the target icon ![\[Target picker icon\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/picker.png) next to an empty slot\. In the **Entity Outliner**, select a probe\. Repeat until all slots are filled\.
 
    In the following example, all of the empty slots are filled\. When they are not yet selected, the **EntityId** boxes are blank\.  
-![\[Lua Script component with all probes selected.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-environment-probe-daynight-3.png)<a name="probe-blending-example-script"></a>
+![\[Lua Script component with all probes selected.\]](/images/level-environment-probe-daynight-3.png)<a name="probe-blending-example-script"></a>
 
 **Example**  
 See the following `ProbeBlending.lua` script\. To use this script, you must be in the StarterGame project\.  

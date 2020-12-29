@@ -1,3 +1,8 @@
+description: ' Learn how to use &AGS; Local to test your &AGS; integration in your
+  &ALYlong; game projects. '
+slug: network-gamelift-testing-integration
+title: Testing your &AGSlong; Integration
+---
 # Testing your Amazon GameLift Integration<a name="network-gamelift-testing-integration"></a>
 
 Before you make your first Amazon GameLift fleet, verify your integration using **GameLift Local**\. GameLift Local is included as part of the GameLift Server SDK download\. It is run as a Java process\.

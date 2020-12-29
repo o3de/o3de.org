@@ -1,3 +1,8 @@
+description: ' Use the Speech Recognition Cloud Gem Portal API to manage slot types
+  in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-speech-recognition-api-slots
+title: Slot Types
+---
 # Slot Types<a name="cloud-canvas-cloud-gem-speech-recognition-api-slots"></a>
 
 You can use the following operations to manage slot types\.

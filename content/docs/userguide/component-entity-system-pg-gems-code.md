@@ -1,3 +1,7 @@
+description: ' Use gems to add C++ code to a game project in &ALYlong;. '
+slug: component-entity-system-pg-gems-code
+title: Adding C++ Code to a &ALY; Game with Gems
+---
 # Adding C\+\+ Code to a Lumberyard Game with Gems<a name="component-entity-system-pg-gems-code"></a>
 
 To add C\+\+ code or assets to your Lumberyard game, use a [gem](gems-system-gems.md)\. This document shows you how to create a gem and the various techniques that you can use to add code to it\.

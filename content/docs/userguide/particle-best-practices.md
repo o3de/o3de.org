@@ -1,3 +1,8 @@
+description: ' Follow these best practices for creating and using particle effects
+  in the &ALY; Particle Editor. '
+slug: particle-best-practices
+title: Particle Effects Best Practices
+---
 # Particle Effects Best Practices<a name="particle-best-practices"></a>
 
 The total number of particles in a scene is not a critical factor when considering best practices for working with particles\. Total fill\-rate, physics, and \(to some extent\) spawn rate are more important\. Following are some best practices for working with particles:

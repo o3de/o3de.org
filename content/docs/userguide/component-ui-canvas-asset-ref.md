@@ -1,3 +1,8 @@
+description: ' Use the UI Canvas Asset Ref component in &ALYlong; to associate a UI
+  canvas with a component entity in a level. '
+slug: component-ui-canvas-asset-ref
+title: UI Canvas Asset Ref
+---
 # UI Canvas Asset Ref<a name="component-ui-canvas-asset-ref"></a>
 
 With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a component entity in a level\. 

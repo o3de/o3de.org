@@ -1,8 +1,13 @@
+description: ' Use the PhysX Characters gem to provide physics for your characters
+  in your &ALYlong; level. '
+slug: gems-system-gem-physx-characters
+title: PhysX Characters
+---
 # PhysX Characters<a name="gems-system-gem-physx-characters"></a>
 
 The PhysX Characters gem provides physics for your characters in your game\. The gem integrates with the EMotion FX **Animation Editor** system\. 
 
-![\[PhysX Characters gem in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/physx/gems-system-physx-characters.png)
+![\[PhysX Characters gem in Lumberyard.\]](/images/gems/physx/gems-system-physx-characters.png)
 
 **Note**  
 To enable the PhysX Characters gem, you must first enable the [PhysX](gems-system-gem-physx.md) gem\.

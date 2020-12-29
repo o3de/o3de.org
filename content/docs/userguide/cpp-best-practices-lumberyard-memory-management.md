@@ -1,3 +1,7 @@
+description: ' Learn best practices for memory management in &ALYlong;. '
+slug: cpp-best-practices-lumberyard-memory-management
+title: Memory Management
+---
 # Memory Management<a name="cpp-best-practices-lumberyard-memory-management"></a>
 
 When managing memory in Lumberyard, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.

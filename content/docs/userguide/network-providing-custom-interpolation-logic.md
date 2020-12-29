@@ -1,3 +1,8 @@
+description: ' Provide your own interpolation logic for the Transform component in
+  &ALYlong;. '
+slug: network-providing-custom-interpolation-logic
+title: Providing Your Own Interpolation Logic for the Transform Component
+---
 # Providing Your Own Interpolation Logic for the Transform Component<a name="network-providing-custom-interpolation-logic"></a>
 
 You can add your own interpolation logic for the Transform component by using a common framework available in C\+\+\. This topic shows you how to use C\+\+, serialization, and the Lumberyard Editor UI to write your own interpolation mode\.
@@ -11,7 +16,7 @@ You can add your own interpolation logic for the Transform component by using a 
 
 You can start from the user interface in the editor for the Transform component — specifically, with the interpolation options\. The following image shows the Transform component's **None** or **Linear** interpolation options in the Entity Inspector\.
 
-![\[Position interpolation options for the Transform component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-providing-custom-interpolation-logic-1.png)
+![\[Position interpolation options for the Transform component\]](/images/networking/network-providing-custom-interpolation-logic-1.png)
 
 Seeing how these options are implemented in the code can help you understand the changes that are required to add your own options\.
 

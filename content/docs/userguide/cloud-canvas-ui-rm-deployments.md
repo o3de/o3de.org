@@ -1,3 +1,7 @@
+description: ' Learn how to work with &cloud; deployments in &cloud; Resource Manager. '
+slug: cloud-canvas-ui-rm-deployments
+title: Working with Deployments
+---
 # Working with Deployments<a name="cloud-canvas-ui-rm-deployments"></a>
 
 **Topics**
@@ -11,7 +15,7 @@
 
 A deployment is an independent copy of the AWS resources that your game uses\. Deployments are useful for maintaining a safe separation among game lifecycle phases such as development, test, and production\. In the resource manager navigation pane, the **Deployments** node shows you the status of your project’s deployments\. You can also use it to create a new deployment\. 
 
-![\[Deployments\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-deployments-node.png)
+![\[Deployments\]](/images/cloud_canvas/cloud-canvas-ui-rm-deployments-node.png)
 
  **Note**: If the **Deployments** node is selected when no AWS profile is configured, Lumberyard prompts you to provide a profile\. The status of the project’s deployments cannot be displayed unless a profile is provided\. For more information, see [Managing Cloud Canvas Profiles](cloud-canvas-ui-credentials-manager.md)\. 
 
@@ -19,11 +23,11 @@ A deployment is an independent copy of the AWS resources that your game uses\. D
 
 Click **Create deployment** to start the creation of a deployment: 
 
-![\[Create deployment\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-create-deployment-simple.png)
+![\[Create deployment\]](/images/cloud_canvas/cloud-canvas-ui-rm-create-deployment-simple.png)
 
 When uploading resources for the first time, you may see this version of the dialog: 
 
-![\[Create deployment message\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-create-deployment-must.png)
+![\[Create deployment message\]](/images/cloud_canvas/cloud-canvas-ui-rm-create-deployment-must.png)
 
 Provide a name for **Deployment name**\. Lumberyard appends this name to the project stack name to create an AWS CloudFormation stack for the deployment\. 
 
@@ -37,7 +41,7 @@ The **Deployment status** table shows the status of the AWS CloudFormation stack
 
 The child nodes of the **Deployment** node each represent one of the Lumberyard project’s deployments\. When a **Deployment** node is selected, the detail pane shows the current status of the selected deployment\. 
 
-![\[Deployment detail pane\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-dev-deployment-node.png)
+![\[Deployment detail pane\]](/images/cloud_canvas/cloud-canvas-ui-rm-dev-deployment-node.png)
 
 **Note**  
 If a **Deployment** node is selected when no AWS profile is configured, Lumberyard prompts you to provide a profile\. The status of the project’s deployments cannot be displayed unless a profile is provided\. For more information, see [Managing Cloud Canvas Profiles](cloud-canvas-ui-credentials-manager.md)\. 
@@ -54,7 +58,7 @@ Click **Upload all resources** to start the process of modifying, creating, or d
 
 Click **Delete deployment** to start the process of deleting the deployment’s resources from AWS\. The resources defined by all resource groups will be deleted\. 
 
-![\[Delete deployment\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-delete-deployment.png)
+![\[Delete deployment\]](/images/cloud_canvas/cloud-canvas-ui-rm-delete-deployment.png)
 
 For more information about deleting deployments, see [Deleting Cloud Canvas Deployments and Their Resources](cloud-canvas-how-to-delete-deployments.md)\.
 

@@ -1,3 +1,8 @@
+description: ' Use &ALY;''s &database-view; editor to create libraries of entities,
+  prefabs, vegetation, particles, and game tokens. '
+slug: level-database-view
+title: Working with Database Libraries
+---
 # Working with Database Libraries<a name="level-database-view"></a>
 
 
@@ -20,4 +25,4 @@ Using the **Database View** editor's toolbar, you can load, save, or add new lib
 
 The item browser pane \(A\) shows the groups and items that are available in the current library\. The properties pane \(B\) displays the properties of the item selected in the item browser\. Some tabs also feature a preview pane \(C\)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/level-database-view.png)
+![\[Image NOT FOUND\]](/images/level-database-view.png)

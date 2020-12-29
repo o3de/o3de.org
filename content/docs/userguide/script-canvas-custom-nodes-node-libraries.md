@@ -1,3 +1,7 @@
+description: ' Create your custom &script-canvas; node libraries in &ALYlong;. '
+slug: script-canvas-custom-nodes-node-libraries
+title: Node Libraries
+---
 # Node Libraries<a name="script-canvas-custom-nodes-node-libraries"></a>
 
 Nodes in a gem are typically stored in node libraries\. These libraries aid in the registration of the nodes with the Script Canvas Gem\. They also help organize the nodes within the Script Canvas editor's **Node Palette**\.

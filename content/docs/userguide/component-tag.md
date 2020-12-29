@@ -1,3 +1,7 @@
+description: ' Use the Tag component to apply labels to entities in &ALYlong;. '
+slug: component-tag
+title: Tag
+---
 # Tag<a name="component-tag"></a>
 
 Use the **Tag** component to apply one or more labels, or tags, to an entity such as **burning** or **player**\. You can use these tags to find or filter entities with particular traits\. For example, you can set a weapon to inflict double damage to entities tagged as **burning**\.

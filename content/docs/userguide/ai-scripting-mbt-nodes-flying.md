@@ -1,3 +1,7 @@
+description: ' See the following flying nodes for the AI system in &ALYlong;. '
+slug: ai-scripting-mbt-nodes-flying
+title: Flying Nodes
+---
 # Flying Nodes<a name="ai-scripting-mbt-nodes-flying"></a>
 
 

@@ -1,3 +1,7 @@
+description: ' Learn how to work efficiently with &script-canvas; nodes in &ALYlong;. '
+slug: script-canvas-working-with-nodes
+title: Working with Nodes
+---
 # Working with Nodes<a name="script-canvas-working-with-nodes"></a>
 
 Games are often built with complex logic, and complex logic can produce a large number of nodes and connections\. Script Canvas provides some specialized tools to help you manage this complexity\.

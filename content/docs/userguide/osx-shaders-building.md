@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s remote shader compiler to build shaders for your macOS
+  games. '
+slug: osx-shaders-building
+title: Building Shaders for macOS Games
+---
 # Building Shaders for macOS Games<a name="osx-shaders-building"></a>
 
 

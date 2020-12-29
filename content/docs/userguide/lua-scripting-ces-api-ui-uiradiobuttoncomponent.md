@@ -1,3 +1,7 @@
+description: ' Use UiRadioButtonComponent to implement a UI radio button in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uiradiobuttoncomponent
+title: UiRadioButtonComponent
+---
 # UiRadioButtonComponent<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent"></a>
 
 You can use `UiRadioButtonComponent` to implement a UI radio button in Amazon Lumberyard\.

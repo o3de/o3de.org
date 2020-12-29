@@ -1,3 +1,8 @@
+description: ' Use the Twitch Chat Gem to add &chatplay; support to your &ALYlong;
+  game and trigger events based on Twitch chat activity. '
+slug: gem-twitch-chatplay
+title: Twitch Chat &gem;
+---
 # Twitch Chat Gem<a name="gem-twitch-chatplay"></a>
 
 The Twitch Chat Gem provides a flexible framework to create customized game interactions between streamers and spectators on Twitch, the world’s leading social video platform and community for gamers\. By adding Twitch ChatPlay to your project, you can quickly and easily connect to Twitch IRC via WebSocket\.

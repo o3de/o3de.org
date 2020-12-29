@@ -1,3 +1,8 @@
+description: ' Use the Load by Name node in the &ALYlong; &script-canvas; editor to
+  find and return a material with the specified name. '
+slug: material-load-by-name-node
+title: Load by Name
+---
 # Load by Name<a name="material-load-by-name-node"></a>
 
 Finds and returns the material with the specified name\. Loads the material if the material is not already loaded\.
@@ -6,7 +11,7 @@ Finds and returns the material with the specified name\. Loads the material if t
 + [Inputs](#material-load-by-name-node-input)
 + [Outputs](#material-load-by-name-node-output)
 
-![\[loadbynamenode, loadbyname\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-by-name-node.png)
+![\[loadbynamenode, loadbyname\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-by-name-node.png)
 
 In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](script-canvas-variable-material-node.md)**\.
 

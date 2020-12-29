@@ -1,3 +1,8 @@
+description: ' Verify that the assets in your &ALY; project are properly bundled and
+  referenced. '
+slug: asset-bundler-assets-verifying
+title: Verifying that Bundles Contain Required Assets
+---
 # Verifying that Bundles Contain Required Assets<a name="asset-bundler-assets-verifying"></a>
 
 When your team generates a release build that has bundled game assets, you want to verify that the bundles contain everything required to ship your game\. Use the tools of the Lumberyard asset bundling system throughout the game development process to verify that your asset bundles contain the required assets\.

@@ -1,3 +1,7 @@
+description: ' Learn about the different parts of an AZ module. '
+slug: az-module-parts
+title: Parts of an AZ Module, Explained
+---
 # Parts of an AZ Module, Explained<a name="az-module-parts"></a>
 
 An AZ module has three key components: a class that inherits from `AZ::Module`, one or more public facing event buses, and a system component class\. 

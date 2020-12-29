@@ -1,3 +1,7 @@
+description: ' Use UiCursorBus to manipulate the cursor in a game in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uicursorbus
+title: UiCursorBus
+---
 # UiCursorBus<a name="lua-scripting-ces-api-ui-uicursorbus"></a>
 
 The `UiCursorBus` contains functions for manipulating the cursor in the game UI\.

@@ -1,3 +1,8 @@
+description: ' Enable the Gestures gem for your game project to detect common gesture-based
+  input actions in &ALYlong;. '
+slug: gems-system-gem-gestures
+title: Gestures Gem
+---
 # Gestures Gem<a name="gems-system-gem-gestures"></a>
 
 You can use the Gestures gem to recognize common gesture\-based input, which includes the following:
@@ -10,7 +15,7 @@ You can use the Gestures gem to recognize common gesture\-based input, which inc
 
 Single\-touch gestures \(such as tap, drag, hold, and swipe\) can be detected with touch or mouse input\. However, multiple\-touch gestures \(such as pinch and rotate\) can only be recognized on multi\-touch enabled devices such as iOS or Android\. You can extend the underlying C\+\+ gesture recognition framework to support your custom gesture recognizers\.
 
-![\[Enable the Gestures gem to detect common gesture input actions.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gestures-gem.png)
+![\[Enable the Gestures gem to detect common gesture input actions.\]](/images/gems/gestures-gem.png)
 
 To enable the Gestures gem for your project, see [Add modular features and assets with Gems](gems-system-gems.md)\.
 
@@ -29,7 +34,7 @@ You can configure gesture recognizers with C\+\+ and the **Gestures** system com
 1. In the **System Entity Editor**, click **Add Component**, and then expand **Gestures**\.
 
 1. For each gesture recognizer, specify your preferred values\. For example, if you want to change the **Min Clicks or Taps** for a double press gesture, specify a new value\.  
-![\[Use the System Entity Editor to manage the gesture settings.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gestures-system-entity-editor-settings.png)
+![\[Use the System Entity Editor to manage the gesture settings.\]](/images/gems/gestures-system-entity-editor-settings.png)
 **Note**  
 Pause on the gesture recognizer to see a description and the valid values\.
 

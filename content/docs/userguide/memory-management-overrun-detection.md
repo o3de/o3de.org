@@ -1,3 +1,7 @@
+description: ' Use overrun detection to detect illegal memory writes in &ALYlong;. '
+slug: memory-management-overrun-detection
+title: Overrun Detection
+---
 # Overrun Detection<a name="memory-management-overrun-detection"></a>
 
 Overrun detection is an experimental feature available starting in Lumberyard version 1\.21\. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.

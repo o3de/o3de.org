@@ -1,3 +1,8 @@
+description: ' Use the &curve-editor; in &ALYlong;''s UI Animation editor to change
+  the way floating point values vary over time. '
+slug: ui-animation-curve-editor
+title: Using the &curve-editor; in the UI Animation Editor.
+---
 # Using the **Curve Editor** in the UI Animation Editor\.<a name="ui-animation-curve-editor"></a>
 
 The ****Curve Editor**** displays animations as function curves\. Each track's curves represent an animation of a property value \(such as anchor, offset, color, or any property of a UI element\)\.
@@ -10,7 +15,7 @@ The ****Curve Editor**** displays animations as function curves\. Each track's c
 
 1. Tangent handles
 
-![\[Example elements of a curve in the Curve Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animation-curve-editor.png)
+![\[Example elements of a curve in the Curve Editor.\]](/images/ui-animation-curve-editor.png)
 
 The path of the curve represents the transition of the value between the keyframes\. If the value changes in a straight line between each keyframe \(linear\), transitions between keyframes will not be smooth\. The default curve causes the value to smoothly ease in and ease out\. Each key has an in tangent and an out tangent\. Depending on the preferred effect, you can use the toolbar icons to switch the tangents to auto, zero, step, or linear\. You can also manually drag the tangent handles\.
 

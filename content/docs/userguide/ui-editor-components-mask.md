@@ -1,3 +1,8 @@
+description: ' Add the Mask component to an element to reveal parts of the child element
+  in &ALYlong;. '
+slug: ui-editor-components-mask
+title: Mask
+---
 # Mask<a name="ui-editor-components-mask"></a>
 
 You can add a **Mask** component to an element to reveal only those parts of the child elements \(for example, image or text\) that are within the mask visual\. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements\.

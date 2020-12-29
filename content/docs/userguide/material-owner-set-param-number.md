@@ -1,3 +1,8 @@
+description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; editor
+  to specify a material''s numerical parameter for the specified entity. '
+slug: material-owner-set-param-number
+title: Set Param Number
+---
 # Set Param Number<a name="material-owner-set-param-number"></a>
 
 Sets a material's numerical parameter for the specified entity\.
@@ -6,7 +11,7 @@ Sets a material's numerical parameter for the specified entity\.
 + [Inputs](#material-owner-set-param-number-input)
 + [Outputs](#material-owner-set-param-number-output)
 
-![\[setparamnumber, setparamnumbernode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-material-owner-node.png)
+![\[setparamnumber, setparamnumbernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-number-input"></a>
 

@@ -1,3 +1,7 @@
+description: null
+slug: fbx-settings-motions-tab
+title: FBX Settings Motions tab
+---
 # FBX Settings Motions tab<a name="fbx-settings-motions-tab"></a>
 
 
@@ -25,7 +29,7 @@ For more information, see [Animation Editor File Types](char-animation-editor-fi
 
 ## Motions tab properties<a name="fbx-settings-motions-tab-properties"></a>
 
-![\[The FBX Settings Motions tab.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-motions-tab-1.25.png)
+![\[The FBX Settings Motions tab.\]](/images/fbx/ui-fbx-settings-motions-tab-1.25.png)
 
 ****Add another motion****  
 Add an animation to export as a `.motion` from the `.fbx` file\.
@@ -47,7 +51,7 @@ Modifiers add specialized options for processing assets\. Choose the **Add Modif
 
 ## Additive motion modifier<a name="w31aac15b9c11c15c15"></a>
 
-![\[The FBX Settings Motion tab Additive motion modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-motion-modifier-additive-motion-1.25.png)
+![\[The FBX Settings Motion tab Additive motion modifier.\]](/images/fbx/ui-fbx-settings-motion-modifier-additive-motion-1.25.png)
 
 Export the animation as an additive motion\. Additive motions can be layered on top of base motions without affecting the base motion functionality\. 
 
@@ -58,13 +62,13 @@ For more information, see
 
 ## Comment modifier<a name="w31aac15b9c11c15c17"></a>
 
-![\[The FBX Settings Motion tab Comment modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
+![\[The FBX Settings Motion tab Comment modifier.\]](/images/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\. 
 
 ## Compression Settings modifier<a name="w31aac15b9c11c15c19"></a>
 
-![\[The FBX Settings Motions tab Compression settings modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-motion-modifier-compression-settings-1.25.png)
+![\[The FBX Settings Motions tab Compression settings modifier.\]](/images/fbx/ui-fbx-settings-motion-modifier-compression-settings-1.25.png)
 
 Reduce asset size by compressing animation\. The **Compression settings** modifier sets tolerances for keyframe values on each transform type\. If the change in a keyframe's value from the preceding keyframe is smaller than the tolerance value set in this modifier, the keyframe is removed\. 
 
@@ -79,13 +83,13 @@ Specify the maximum error tolerance allowed in scale\. Valid values range from a
 
 ## Coordinate system change modifier<a name="w31aac15b9c11c15c21"></a>
 
-![\[The FBX Settings Motions tab Coordinate system change modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
+![\[The FBX Settings Motions tab Coordinate system change modifier.\]](/images/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
 
 Modify the coordinate system of the motion\. Third\-party content creation applications and game engines use varying coordinate systems with content applications often rotating the direction of the forward axis\. The **Facing direction** property can be set to rotate the motion 180 degrees around its up axis to account for this difference\. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged\. 
 
 ## Motion range modifier<a name="w31aac15b9c11c15c23"></a>
 
-![\[The FBX Settings Motions tab Motion range modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-motion-modifier-motion-range-1.25.png)
+![\[The FBX Settings Motions tab Motion range modifier.\]](/images/fbx/ui-fbx-settings-motion-modifier-motion-range-1.25.png)
 
 Set the range of the animation to be exported from the `.fbx` file\. 
 
@@ -97,6 +101,6 @@ Specify the end keyframe of the animation to export\.
 
 ## Scale motion modifier<a name="w31aac15b9c11c15c25"></a>
 
-![\[The FBX Settings Motions tab Scale motion modifier.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
+![\[The FBX Settings Motions tab Scale motion modifier.\]](/images/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
 
 The **Scale factor** modifier sets a uniform scale for the **Motion**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than Lumberyard\. 

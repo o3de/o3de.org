@@ -1,3 +1,7 @@
+description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-speech-recognition-api-bots
+title: Bots
+---
 # Bots<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots"></a>
 
 Use the following API commands to manage bots\.

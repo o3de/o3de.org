@@ -1,8 +1,13 @@
+description: ' Use the Movement attribute in the &ALYlong; &particle-editor; to control
+  the movement of the particle. '
+slug: particle-editor-reference-movement
+title: Movement Attribute
+---
 # Movement Attribute<a name="particle-editor-reference-movement"></a>
 
 In the **Movement** attribute, specify how to control the particle's movement\.
 
-![\[Movement attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-reference-movement.png)
+![\[Movement attributes in the Particle Editor.\]](/images/particles/particle-editor-reference-movement.png)
 
 For the **Air Resistance**, **Gravity Scale**, **Turbulence 3D Speed**, **Turbulence Size**, and **Turbulence Speed** parameters, you can set a **Random** value and **Strength Over Emitter Lifetime** and **Strength Over Particle Lifetime** curves\.
 

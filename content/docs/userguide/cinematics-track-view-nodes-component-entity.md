@@ -1,3 +1,7 @@
+description: ' Create a component entity node to add to a track in &ALYlong;''s &trackview-editor;. '
+slug: cinematics-track-view-nodes-component-entity
+title: Component Entities and Component Nodes
+---
 # Component Entities and Component Nodes<a name="cinematics-track-view-nodes-component-entity"></a>
 
 **Topics**
@@ -12,7 +16,7 @@ When you add an animation using the Track View, the animation track is applied t
 **Example**  
 The component entity **GameObject** contains **Transform**, **Mesh**, and **Point Light** components\. When you add the **GameObject** component entity to a sequence in the Track View, you can see all the components in the node browser\. The component entity node is a reference to which components are animated in the sequence\.  
 
-![\[Track View and the Entity Inspector with the same component entities.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
+![\[Track View and the Entity Inspector with the same component entities.\]](/images/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
 
 Component nodes that can be animated are nested as children under the associated entity node\. You can add animation tracks to any of these component nodes\. 
 
@@ -24,7 +28,7 @@ Component nodes that can be animated are nested as children under the associated
 
 Not all components can be animated in the Track View\. For example, you can add the **Visibility** track only for the **Mesh** component\. The **Point Light** component has multiple tracks that you can add to the sequence\. In the following example, the **Color**, **DiffuseMultiplier**, and **Visible** tracks are added to the sequence\.
 
-![\[Add tracks from component entity nodes\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
+![\[Add tracks from component entity nodes\]](/images/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
 
 For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](component-entity-system-track-view.md)\.
 
@@ -34,7 +38,7 @@ Lumberyard uses entity IDs to identify component entities, which means that you 
 
 **Example**  
 
-![\[Duplicate entities in the node browser have numbers appended to the name.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
+![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
 If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing\. For more information, see [Working with Slices and Sequences](working-with-slices-cinematic-sequences.md)\.
 

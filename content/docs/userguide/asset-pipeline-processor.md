@@ -1,3 +1,8 @@
+description: ' Use &asset-processor; in &ALYlong; to detect and process new or modified
+  asset files. '
+slug: asset-pipeline-processor
+title: Using &asset-processor;
+---
 # Using Asset Processor<a name="asset-pipeline-processor"></a>
 
 Asset Processor is a utility that runs in the background to detect changes to your asset files\. When Asset Processor detects new or updated asset files, it launches the Resource Compiler \(`Rc.exe` for FBX and ABC files, `AssetBuilder.exe` for all other types\), processes the assets, and then places them in the cache\. Asset Processor then notifies all running game or tool instances that the assets are updated\. The game can then reload the updated assets\.
@@ -29,7 +34,7 @@ Use a unique cache directory\. Do not share the cache directory with a Windows s
 
  You can open the Asset Processor options from the notification area on the taskbar\.
 
-![\[Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assets/pipeline/asset-pipeline-processor-options.png)
+![\[Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.\]](/images/assets/pipeline/asset-pipeline-processor-options.png)
 
 You don't need to close Asset Processor when you get the latest updates from source control\. You can start Lumberyard Editor while Asset Processor is still processing your assets\.
 

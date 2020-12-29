@@ -1,3 +1,7 @@
+description: ' See the following texture map types in &ALYlong;. '
+slug: mat-texture-types
+title: Texture Map Types
+---
 # Texture Map Types<a name="mat-texture-types"></a>
 
 Source texture files are converted and compiled in `.DDS` format by the Resource Compiler \(RC\)\. If you do not specify presets for the source file, the Resource Compiler will do the following: 

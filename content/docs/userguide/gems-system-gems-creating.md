@@ -1,3 +1,7 @@
+description: ' Create a gem for &ALYlong;. '
+slug: gems-system-gems-creating
+title: Creating a Gem
+---
 # Creating a Gem<a name="gems-system-gems-creating"></a>
 
 You can create your own gems by packaging your assets into the Lumberyard gem format\. This makes your package distributable, shareable between projects, and easy for game developers to enable or disable as needed\.

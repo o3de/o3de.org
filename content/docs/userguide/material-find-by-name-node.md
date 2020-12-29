@@ -1,3 +1,8 @@
+description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor to
+  find a material. '
+slug: material-find-by-name-node
+title: Find by Name
+---
 # Find by Name<a name="material-find-by-name-node"></a>
 
 Finds and returns the material with the specified name\. The material must be loaded into memory in order to be found\.
@@ -20,7 +25,7 @@ In some cases, you might need to store the material for later use\. For more inf
 + [Inputs](#material-find-by-name-node-input)
 + [Outputs](#material-find-by-name-node-output)
 
-![\[findbymaterialname, findbymaterialnamdenode, findbynamenode, findbyname\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-node.png)
+![\[findbymaterialname, findbymaterialnamdenode, findbynamenode, findbyname\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-node.png)
 
 ## Inputs<a name="material-find-by-name-node-input"></a>
 

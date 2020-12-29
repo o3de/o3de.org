@@ -1,3 +1,7 @@
+description: ' Learn how to mark a deployment as protected. '
+slug: cloud-canvas-protected-deployments
+title: 'Using Protected Deployments '
+---
 # Using Protected Deployments<a name="cloud-canvas-protected-deployments"></a>
 
 You can use Cloud Canvas to mark specific deployments as protected\. Protected status makes it more difficult for users like programmers, testers, or game developers to inadvertently connect a development game client to live resources\. 

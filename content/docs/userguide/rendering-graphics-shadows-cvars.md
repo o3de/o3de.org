@@ -1,3 +1,8 @@
+description: ' Use console variables (CVARs) in &ALYlong; to configure terrain and
+  cascade shadow maps. '
+slug: rendering-graphics-shadows-cvars
+title: Using CVARs to Configure Terrain and Cascade Shadow Maps
+---
 # Using CVARs to Configure Terrain and Cascade Shadow Maps<a name="rendering-graphics-shadows-cvars"></a>
 
 You can use console variables \(CVARs\) in Amazon Lumberyard to configure terrain and cascade shadow maps \(also known as gradient shadow maps, or GSMs\)\. This topic provides a list of key shadow\-related console variables and shows you how to save your changes to them\. It also shows you how to learn about other related console variables\.
@@ -119,14 +124,14 @@ You can use the Lumberyard Editor console window to search for additional shadow
 1. In Lumberyard Editor, choose **Tools**, **Console**\.
 
 1. In the console window, do one of the following to open the **Console Variables** search window\.  
-![\[Lumberyard Editor console window\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/rendering/rendering-graphics-shadows-cvars-1.png)
+![\[Lumberyard Editor console window\]](/images/rendering/rendering-graphics-shadows-cvars-1.png)
 
    1. Click the **X** icon next to the command entry area\.
 
    1. Right\-click the command entry area\.
 
 1. In the **Console Variables** window, for **Search**, enter **shadow** or **gsm**\.  
-![\[Searching for console variables by keyword for shadow or gsm\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/rendering/rendering-graphics-shadows-cvars-2.png)
+![\[Searching for console variables by keyword for shadow or gsm\]](/images/rendering/rendering-graphics-shadows-cvars-2.png)
 
 1. To learn more about a console variable, pause your pointer on the variable name\.
 

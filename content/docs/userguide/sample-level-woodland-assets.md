@@ -1,3 +1,8 @@
+description: ' Use the Woodland asset package to create a forest scene or add vegetation
+  and natural features to your &ALY; game project. '
+slug: sample-level-woodland-assets
+title: Woodland Asset Package &endash; Legacy
+---
 # Woodland Asset Package – Legacy<a name="sample-level-woodland-assets"></a>
 
 
@@ -31,6 +36,6 @@ This package is compatible with Lumberyard 1\.9 and earlier\.
 
 Sample images from the Woodland asset collection:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/samples-woodland-1.png)
+![\[Image NOT FOUND\]](/images/samples-woodland-1.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/samples-woodland-2.png)
+![\[Image NOT FOUND\]](/images/samples-woodland-2.png)

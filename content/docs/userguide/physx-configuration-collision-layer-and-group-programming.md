@@ -1,3 +1,7 @@
+description: ' Create layers and groups programatically in &ALYlong;. '
+slug: physx-configuration-collision-layer-and-group-programming
+title: Creating Collision Layers and Groups Programmatically
+---
 # Creating Collision Layers and Groups Programmatically<a name="physx-configuration-collision-layer-and-group-programming"></a>
 
 The API for collision layers and groups is defined in the `Collision.h` and `CollisionBus.h` headers\. The following code shows example include statements\.

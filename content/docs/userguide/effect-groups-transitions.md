@@ -1,3 +1,7 @@
+description: ' Specify a blend cube for smooth transitions in &ALYlong;. '
+slug: effect-groups-transitions
+title: Specifying a Blend Curve for Smooth Effect Transitions
+---
 # Specifying a Blend Curve for Smooth Effect Transitions<a name="effect-groups-transitions"></a>
 
 You can use `BlendIn` and `BlendOut` tags to specify a blend curve that enables smooth transitions between effects\.

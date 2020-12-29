@@ -1,3 +1,8 @@
+description: ' Use the &waf-system; to switch build pipelines and build only what
+  you need for your &ALY; game project. '
+slug: waf-intro
+title: Using the &waf; Build System
+---
 # Using the Waf Build System<a name="waf-intro"></a>
 
 Lumberyard uses the Waf build system to allow you to switch between various build pipelines and to ensure you build only what is needed\. You can use extensions, such as automatic project generation, or a simple GUI to modify the command line base system for your project requirements\. 

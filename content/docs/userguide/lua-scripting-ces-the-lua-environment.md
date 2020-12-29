@@ -1,3 +1,8 @@
+description: ' Learn about adding ScriptContext instances and using common code in
+  the &ALYlong; Lua environment. '
+slug: lua-scripting-ces-the-lua-environment
+title: The Lua Environment (Advanced)
+---
 # The Lua Environment \(Advanced\)<a name="lua-scripting-ces-the-lua-environment"></a>
 
 By default, the Lumberyard component entity Lua environment is a single Lua environment \(or `lua_State`\)\. This environment is bound to the `BehaviorContext` that is owned by the `ComponentApplication`\. Because of this, it has access to all API operations that are reflected on startup\.

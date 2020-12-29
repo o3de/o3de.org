@@ -1,3 +1,7 @@
+description: ' Learn how &cloud; can help you use the power of the &AWS; cloud. '
+slug: cloud-canvas-overview
+title: '&cloud; Overview'
+---
 # Cloud Canvas Overview<a name="cloud-canvas-overview"></a>
 
 Cloud Canvas helps you manage cloud resources and connect your game with the AWS cloud\. Understanding its concepts will benefit anyone on your team who interacts with the cloud\-connected components of your game, including designers, programmers, and testers\.

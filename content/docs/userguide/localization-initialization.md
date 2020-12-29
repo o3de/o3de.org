@@ -1,3 +1,7 @@
+description: ' Initialize the localization system in &ALYlong;. '
+slug: localization-initialization
+title: Localization Initialization
+---
 # Localization Initialization<a name="localization-initialization"></a>
 
 Initializing the localization system requires the following:

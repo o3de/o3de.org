@@ -1,3 +1,8 @@
+description: ' Use EnvState settings to define how sun shadows appear in your &ALYlong;
+  level. '
+slug: sky-day-sun-shadows-params
+title: Setting Sun Shadow Settings
+---
 # Setting Sun Shadow Settings<a name="sky-day-sun-shadows-params"></a>
 
 You can define how sun shadows appear in your level\.

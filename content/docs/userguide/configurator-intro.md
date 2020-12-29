@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s &project-configurator; to create new projects, save
+  active projects, and enable, disable, or create new gems. '
+slug: configurator-intro
+title: Creating &ALY; projects
+---
 # Creating Lumberyard projects<a name="configurator-intro"></a>
 
 
@@ -14,7 +19,7 @@ For information about Waf build system, see [Using the Waf Build System](waf-int
 **Note**  
 Before you can run the Project Configurator, you must first run [Lumberyard Setup Assistant](lumberyard-launcher-using.md) and close Lumberyard Editor\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/configurator/setup/ui-project-configurator-1.25.png)
+![\[Image NOT FOUND\]](/images/configurator/setup/ui-project-configurator-1.25.png)
 
 **Topics**
 + [Creating and Switching Game Projects](configurator-projects.md)

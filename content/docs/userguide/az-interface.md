@@ -1,3 +1,8 @@
+description: ' Use the AZ::Interface&lt;T&gt; template class to create global message
+  request buses for &ALYlong; game code. '
+slug: az-interface
+title: AZ::Interface&lt;T&gt;
+---
 # AZ::Interface<T><a name="az-interface"></a>
 
 Use the `AZ::Interface<T>` template class to create global or application lifetime message request buses that support systems of `type T`\. This template class is used to implement access for registered singletons across module boundaries\. In this case, a singleton is an instance of a type that inherits `AZ::Interface::Registrar`\. Once the singleton instance is registered, you can access the environment variables through code implemented on the instance\. You can also make changes to the envirovnment variables that can be viewed by other parts of your game's components\. 

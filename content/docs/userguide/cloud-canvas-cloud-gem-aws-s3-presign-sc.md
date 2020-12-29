@@ -1,3 +1,8 @@
+description: ' Generate a presigned URL for an &S3; object with &script-canvas; in
+  &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-s3-presign-sc
+title: Generating an &S3; Presigned URL With Script Canvas
+---
 # Generating an Amazon S3 Presigned URL With Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc"></a>
 
 You can use [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html) to share Amazon S3 objects with others\. The **Presign** node in Script Canvas generates a presigned URL that links to an Amazon S3 object that you specify\.
@@ -51,7 +56,7 @@ Next, to see the success or failure of the operation, you add **AWSBehaviorS3Pre
 1. Connect the **Out** pins of the **AWSBehaviorS3PresignNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
 1. Connect the **String** pins of the **AWSBehaviorS3PresignNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
-![\[A Script Canvas graph that presigns a URL for an object in Amazon S3\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-presign-sc-1.png)
+![\[A Script Canvas graph that presigns a URL for an object in Amazon S3\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-presign-sc-1.png)
 
 1. Save the canvas with a name like `MyS3PresignTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

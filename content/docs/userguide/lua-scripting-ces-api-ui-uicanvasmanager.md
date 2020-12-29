@@ -1,3 +1,8 @@
+description: ' Use the UICanvasManager component to load, unload, and find UI canvases
+  in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uicanvasmanager
+title: UICanvasManager
+---
 # UICanvasManager<a name="lua-scripting-ces-api-ui-uicanvasmanager"></a>
 
 Contains functions for loading, unloading, and finding UI canvases\.

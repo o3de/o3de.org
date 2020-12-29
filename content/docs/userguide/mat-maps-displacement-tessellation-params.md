@@ -1,3 +1,7 @@
+description: ' Set tessellation parameters in the &material-editor; in &ALYlong;. '
+slug: mat-maps-displacement-tessellation-params
+title: Setting Tessellation Parameters
+---
 # Setting Tessellation Parameters<a name="mat-maps-displacement-tessellation-params"></a>
 
 To apply tessellation to an object and set parameter values, complete this procedure\.

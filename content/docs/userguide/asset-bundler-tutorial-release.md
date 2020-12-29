@@ -1,3 +1,7 @@
+description: ' Bundle assets and release your &ALYlong; project. '
+slug: asset-bundler-tutorial-release
+title: Build and bundle assets for release in &ALY;
+---
 # Build and bundle assets for release in Lumberyard<a name="asset-bundler-tutorial-release"></a>
 
  This tutorial guides you through the process of building the code and assets to release a Lumberyard project, using the [Starter Game sample project](sample-level-starter-game.md)\. You'll learn how to:
@@ -20,7 +24,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Open the Amazon Lumberyard Project Configurator\.
 
 1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.  
-![\[Setting the Starter Game as the default project from the Project Configurator.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-project-configurator-1.25.png)
+![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/assetbundler/asset-bundler-project-configurator-1.25.png)
 
 1. Open a command prompt and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
 

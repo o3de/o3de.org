@@ -1,3 +1,8 @@
+description: ' Use the Get Sun Latitude node in the &ALYlong; &script-canvas; editor
+  to return the sun latitude. '
+slug: get-sun-latitude-node
+title: Get Sun Latitude
+---
 # Get Sun Latitude<a name="get-sun-latitude-node"></a>
 
 Returns the sun's latitude in the sky\.
@@ -6,7 +11,7 @@ Returns the sun's latitude in the sky\.
 + [Inputs](#get-sun-latitude-node-input)
 + [Outputs](#get-sun-latitude-node-output)
 
-![\[getsunlatitude, getsunlatitudenode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-latitude-node.png)
+![\[getsunlatitude, getsunlatitudenode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-latitude-node.png)
 
 ## Inputs<a name="get-sun-latitude-node-input"></a>
 

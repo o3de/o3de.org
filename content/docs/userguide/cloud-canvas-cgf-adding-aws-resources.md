@@ -1,3 +1,7 @@
+description: ' Add &AWS; or custom resources to cloud gems in &ALYlong;. '
+slug: cloud-canvas-cgf-adding-aws-resources
+title: ' Adding &AWS; Resources to a Cloud Gem'
+---
 # Adding AWS Resources to a Cloud Gem<a name="cloud-canvas-cgf-adding-aws-resources"></a>
 
 Cloud Canvas cloud gems can be used out of the box, without interacting with the code and the [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md) that powers them\. However, you might be interested in modifying existing cloud gems and creating your own cloud gems, possibly for distribution to others\. If so, you might need to add support for additional AWS CloudFormation types beyond the ones natively supported by Cloud Canvas\. This topic provides information on how to do that\.

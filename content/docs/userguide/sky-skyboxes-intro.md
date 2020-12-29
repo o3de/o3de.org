@@ -1,3 +1,7 @@
+description: ' Use a skybox to create a static sky for your &ALY; level. '
+slug: sky-skyboxes-intro
+title: Creating Static Skyboxes
+---
 # Creating Static Skyboxes<a name="sky-skyboxes-intro"></a>
 
 Static skies use the [Sky Shader](shader-ref-sky.md) and a skybox, which is a cube that has textures on five sides \(excluding the bottom\)\. This allows you to simulate the sky in your level\. Static skies cannot use dynamic or animated **Time of Day** effects, HDR settings, and sun or moon parameters\.

@@ -1,8 +1,12 @@
+description: ' Use the &ALY; &particle-editor; to manage your particle libraries. '
+slug: particle-using-library
+title: Using Particle Libraries
+---
 # Using Particle Libraries<a name="particle-using-library"></a>
 
 The **Particle Editor** provides a context menu with the following options for you to manage your particle libraries\. Right\-click a library name to access the context menu\.
 
-![\[Manage Particle Editor libraries.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-library-using.png)
+![\[Manage Particle Editor libraries.\]](/images/particles/particle-editor-library-using.png)
 
 
 ****  

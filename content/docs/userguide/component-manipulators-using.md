@@ -1,3 +1,8 @@
+description: ' Use manipulators to adjust various component properties in the viewport
+  in &ALYlong;. '
+slug: component-manipulators-using
+title: Using Manipulators
+---
 # Using Manipulators<a name="component-manipulators-using"></a>
 
 

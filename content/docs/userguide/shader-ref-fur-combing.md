@@ -1,8 +1,13 @@
+description: ' Use fur combing to render fur with a more controlled look in &ALYlong;''s
+  &material-editor;. '
+slug: shader-ref-fur-combing
+title: Fur Combing
+---
 # Fur Combing<a name="shader-ref-fur-combing"></a>
 
 You can apply fur to any mesh\. But by authoring your meshes specifically for fur, you can achieve a more controlled look\. 
 
-![\[Example of applying shader generation parameters to a mesh object.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-4.png)
+![\[Example of applying shader generation parameters to a mesh object.\]](/images/shaders/shader-ref-fur-4.png)
 
 To use fur combing, in **Shader Generation Params**, enable **Fur Color Data**\. With this parameter enabled, the engine uses the mesh's vertex color to control the fur direction and length\. The RGB channels correspond to an XYZ combing direction, and the alpha channel scales the fur length\.
 

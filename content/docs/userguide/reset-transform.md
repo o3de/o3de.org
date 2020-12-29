@@ -1,3 +1,7 @@
+description: ' Reset the transform properties for entities in &ALYlong;. '
+slug: reset-transform
+title: Resetting the Transform
+---
 # Resetting the Transform<a name="reset-transform"></a>
 
 You can reset the transform for an entity, so that you return the entity to its previous location\.
@@ -13,4 +17,4 @@ You can reset the transform for an entity, so that you return the entity to its 
 **Example**  
 
   In the following example, you can reset the transform as the entity transforms are changing and return them to their original transform\.  
-![\[Modify entities and reset their transform in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/viewportinteractionmodel/viewport-selection-model-reset-transform-1.gif)
+![\[Modify entities and reset their transform in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-reset-transform-1.gif)

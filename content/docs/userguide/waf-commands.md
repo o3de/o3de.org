@@ -1,3 +1,8 @@
+description: ' Use the configure command to process configuration settings before
+  you build a &ALYlong; project with &waf;. '
+slug: waf-commands
+title: '&waf; Commands and Options'
+---
 # Waf Commands and Options<a name="waf-commands"></a>
 
 **Contents**

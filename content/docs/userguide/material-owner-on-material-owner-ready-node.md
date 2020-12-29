@@ -1,3 +1,8 @@
+description: ' Use the On Ready node in the &ALYlong; &script-canvas; to indicate
+  when the material owner finishes loading its assets. '
+slug: material-owner-on-material-owner-ready-node
+title: On Ready
+---
 # On Ready<a name="material-owner-on-material-owner-ready-node"></a>
 
 This node is triggered when the material owner finishes loading its assets\. We recommend that you use this event to trigger functions for the **Get Param\*** and **Set Param\*** nodes \(for example, the **[Get Param Color](material-owner-get-param-color-node.md)** and **[Set Param Color](material-owner-set-param-color.md)** nodes\)\. Otherwise, the material asset might not be available when the script is first activated\. For example, a **[Mesh](component-static-mesh.md)** component does not load its mesh until at least one frame after the script starts\.
@@ -6,7 +11,7 @@ This node is triggered when the material owner finishes loading its assets\. We 
 + [Inputs](#material-owner-on-material-owner-ready-node-input)
 + [Outputs](#material-owner-on-material-owner-ready-node-output)
 
-![\[onmaterialownerreadynode, onmaterialownerready\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-ready-material-owner-node.png)
+![\[onmaterialownerreadynode, onmaterialownerready\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-ready-material-owner-node.png)
 
 ## Inputs<a name="material-owner-on-material-owner-ready-node-input"></a>
 

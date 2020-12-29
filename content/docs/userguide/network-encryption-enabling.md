@@ -1,3 +1,7 @@
+description: ' Enable encryption with OpenSSL in a GridMate session in &ALYlong;. '
+slug: network-encryption-enabling
+title: Enabling Encryption
+---
 # Enabling Encryption<a name="network-encryption-enabling"></a>
 
 To enable encryption with OpenSSL in a GridMate session, perform the following steps\.

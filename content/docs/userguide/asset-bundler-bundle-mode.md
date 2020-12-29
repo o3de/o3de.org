@@ -1,3 +1,8 @@
+description: ' Use bundle mode to ensure that your asset bundles have the required
+  assets for your &ALY; game. '
+slug: asset-bundler-bundle-mode
+title: Using Bundle Mode to Test Bundles
+---
 # Using Bundle Mode to Test Bundles<a name="asset-bundler-bundle-mode"></a>
 
 Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\. 
@@ -65,10 +70,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    The `1` argument specifies that missing files are reported as log entries rather than warnings or errors\.
 
 1. Enter game mode\. A list of Missing from bundle errors displays\.  
-![\[Missing from bundle errors in the console window.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-bundle-mode-1.png)
+![\[Missing from bundle errors in the console window.\]](/images/assetbundler/asset-bundler-bundle-mode-1.png)
 
 1. Enter the command `loadbundles` to load bundles for the level\.  
-![\[Using the loadbundles command.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-bundle-mode-2.png)
+![\[Using the loadbundles command.\]](/images/assetbundler/asset-bundler-bundle-mode-2.png)
 
    There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](asset-bundler-asset-validation-gem.md) seed\-related commands can help find the missing assets\.
 
@@ -79,10 +84,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `listknownassets` command\.  
-![\[Listing known assets in the console.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-bundle-mode-3.png)
+![\[Listing known assets in the console.\]](/images/assetbundler/asset-bundler-bundle-mode-3.png)
 
 1. Examine the output\. In the following example, the output shows missing button assets\.  
-![\[Identifying missing assets in the output.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-bundle-mode-4.png)
+![\[Identifying missing assets in the output.\]](/images/assetbundler/asset-bundler-bundle-mode-4.png)
 
    In the case of the button assets, the bundle was packaged a while ago and must be repackaged\. However, other assets are also still missing\.
 
@@ -139,6 +144,6 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.  
-![\[All loaded assets are now in bundles.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-bundle-mode-5.png)
+![\[All loaded assets are now in bundles.\]](/images/assetbundler/asset-bundler-bundle-mode-5.png)
 
    All the assets loaded when game mode was entered are now in bundles\.

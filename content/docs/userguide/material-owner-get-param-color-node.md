@@ -1,3 +1,8 @@
+description: ' Use the Get Param Color node in the &ALYlong; &script-canvas; editor
+  to return a material''s color parameter. '
+slug: material-owner-get-param-color-node
+title: Get Param Color
+---
 # Get Param Color<a name="material-owner-get-param-color-node"></a>
 
 Returns a material's color parameter value for the specified entity\.
@@ -6,7 +11,7 @@ Returns a material's color parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-color-node-input)
 + [Outputs](#material-owner-get-param-color-node-output)
 
-![\[getparamcolor, getparamcolornode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-color-material-owner-node.png)
+![\[getparamcolor, getparamcolornode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-color-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-color-node-input"></a>
 

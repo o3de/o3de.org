@@ -1,10 +1,14 @@
+description: ' The &ALYlong; PhysX Ball Joint component. '
+slug: component-physx-ball-joint
+title: PhysX Ball Joint component
+---
 # PhysX Ball Joint component<a name="component-physx-ball-joint"></a>
 
 With the **PhysX Ball Joint** component, you can create a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y\- and z\-axes of the joint\. 
 
 ## PhysX Ball Joint component properties<a name="component-physx-ball-joint-properties"></a>
 
-![\[Properties of the PhysX Ball Joint component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx/ui-physx-ball-joint-component-1.27.png)
+![\[Properties of the PhysX Ball Joint component\]](/images/physx/physx/ui-physx-ball-joint-component-1.27.png)
 
 **Local Position**  
 Specify the position of the joint relative to the entity transform\.

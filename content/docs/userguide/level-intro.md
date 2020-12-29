@@ -1,3 +1,8 @@
+description: ' Use levels and environments to organize the setting of your &ALYlong;
+  game. '
+slug: level-intro
+title: Creating levels and adding environment effects
+---
 # Creating levels and adding environment effects<a name="level-intro"></a>
 
 A level, also known as world or map, represents the space or area available to the player during the course of completing a discrete game objective\. Most games consist of multiple levels through which a player can advance to or move through, although usually only a single level is loaded at a time\. Each level can be grouped into multiple layers, which you use to logically group types of objects\.

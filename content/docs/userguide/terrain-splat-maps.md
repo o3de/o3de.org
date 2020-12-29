@@ -1,10 +1,15 @@
+description: ' Add weight information to &ALY; terrain maps by importing splat maps
+  created in a DCC tool. '
+slug: terrain-splat-maps
+title: Importing Splat Maps
+---
 # Importing Splat Maps<a name="terrain-splat-maps"></a>
 
 Splat maps are 8\-bit monochrome bitmap `.bmp` files that contain weight information for each vertex in a terrain map\. Splat maps are generated using a DCC tool such as World Machine's Splat Converter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-splat-map-2.png)
+![\[Image NOT FOUND\]](/images/terrain/terrain-splat-map-2.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-splat-map-1.png)
+![\[Image NOT FOUND\]](/images/terrain/terrain-splat-map-1.png)
 
 All splat map operations in Lumberyard are done using the **Terrain Texture Layers** editor\.
 

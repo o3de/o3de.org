@@ -1,3 +1,8 @@
+description: ' Use the Enable Rain Drops node in the &ALYlong; &script-canvas; editor
+  to configure raindrops on the screen. '
+slug: enable-rain-drops-node
+title: Enable Rain Drops
+---
 # Enable Rain Drops<a name="enable-rain-drops-node"></a>
 
 Apply raindrops on the screen\.
@@ -8,11 +13,11 @@ To disable the effect, see [Disable Rain Drops](disable-rain-drops-node.md)\.
 + [Inputs](#enable-rain-drops-note-input)
 + [Outputs](#enable-rain-drops-node-output)
 
-![\[enableraindrops, enableraindropsnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-rain-drops-node.png)
+![\[enableraindrops, enableraindropsnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-rain-drops-node.png)
 
 **Example**  
 
-![\[Use the Enable Rain Drops node to enable raindrops falling on the screen.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-rain-drops-node-example.gif)
+![\[Use the Enable Rain Drops node to enable raindrops falling on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-rain-drops-node-example.gif)
 
 ## Inputs<a name="enable-rain-drops-note-input"></a>
 

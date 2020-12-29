@@ -1,3 +1,7 @@
+description: ' Learn how to use asserts in &ALYlong; to debug your game code. '
+slug: debugging-using-asserts
+title: Using the sys_asserts Console Variable (CVAR)
+---
 # Using the `sys_asserts` Console Variable \(CVAR\)<a name="debugging-using-asserts"></a>
 
 Manage assert notifications in Lumberyard with the `sys_asserts` console variable\. The following table shows the possible values and their meanings\.
@@ -27,7 +31,7 @@ e:\dev\Code\CryEngine\Cry3DEngine\Particle.cpp(1289): (68792) 'void __cdecl CPar
 
 `sys_asserts=2` opens a dialog box like the following:
 
-![\[Assert dialog box\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/debugging-using-asserts-1.png)
+![\[Assert dialog box\]](/images/debugging-using-asserts-1.png)
 
 The following table describes the options for the **Assert** dialog box\.
 
@@ -57,13 +61,13 @@ sys_asserts=2
 
 You can set the `sys_asserts` console variable at runtime in the console window\. The following image shows an example\.
 
-![\[Setting the sys_asserts console variable at runtime.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/debugging-using-asserts-2.png)
+![\[Setting the sys_asserts console variable at runtime.\]](/images/debugging-using-asserts-2.png)
 
 ## Setting the Assert Level for Mobile Devices<a name="debugging-using-asserts-mobile-devices"></a>
 
 When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](lumberyard-remote-console.md) to set the assert level in the command\-line window of the application\.
 
-![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/debugging-using-asserts-3.png)
+![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/debugging-using-asserts-3.png)
 
 ## **Setting an Assert in Source Code**<a name="debugging-using-asserts-setting-in-source-code"></a>
 

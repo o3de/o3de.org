@@ -1,3 +1,8 @@
+description: ' Use Waf files to specify the files to include in your &ALYlong; game
+  build. '
+slug: waf-files-filelist
+title: Waf File Lists (*.waf_files)
+---
 # Waf File Lists \(\*\.waf\_files\)<a name="waf-files-filelist"></a>
 
 In standard Waf, the source files to include for a build is specified directly as a list of files using the keyword `Source`\. However, the list of source files does not provide support for the following features in Lumberyard:

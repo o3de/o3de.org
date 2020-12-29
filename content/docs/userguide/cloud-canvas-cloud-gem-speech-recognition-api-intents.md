@@ -1,3 +1,8 @@
+description: ' Use the Speech Recognition Cloud Gem Portal API to manage intents in
+  &ALYlong;. '
+slug: cloud-canvas-cloud-gem-speech-recognition-api-intents
+title: Intents
+---
 # Intents<a name="cloud-canvas-cloud-gem-speech-recognition-api-intents"></a>
 
 Use the following API commands to manage intents\.

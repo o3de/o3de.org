@@ -1,3 +1,7 @@
+description: ' Understand the basic concepts &ALYlong;''s networking architecture. '
+slug: networking-architecture
+title: Networking Architecture
+---
 # Networking Architecture<a name="networking-architecture"></a>
 
 ## Fundamental Concepts<a name="networking-architecture-fundamental-concepts"></a>
@@ -16,7 +20,7 @@
 
  The following diagram shows the major components of the GridMate architecture and their relationships\. 
 
-![\[GridMate architecture\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-architecture-gridmate.jpg)
+![\[GridMate architecture\]](/images/networking/network-architecture-gridmate.jpg)
 
 For more information, see the following pages\.
 + [Carrier](network-carrier.md)

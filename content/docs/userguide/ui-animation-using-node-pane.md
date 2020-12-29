@@ -1,3 +1,8 @@
+description: ' Use &ALY;''s UI Animation editor''s Node Pane to add or remove UI elements
+  in an animation sequence. '
+slug: ui-animation-using-node-pane
+title: Using the Node Pane
+---
 # Using the Node Pane<a name="ui-animation-using-node-pane"></a>
 
 The **Node Pane** in the [Animation Editor](ui-animation.md) displays all the nodes in the selected animation sequence\. Each item listed in the **Node Pane** is considered a node, though they represent different parts of the sequence\. You can use the **Node Pane** to add or delete UI element nodes\. Track nodes appear beneath its UI element when you record a track\.
@@ -10,7 +15,7 @@ The animation sequence node, at the top level, contains a list of its UI element
 
 1. **Track** nodes
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animation-node-pane.png)
+![\[Image NOT FOUND\]](/images/ui-animation-node-pane.png)
 
 **To add a new UI element node**
 
@@ -36,4 +41,4 @@ You can also use the **Edit Sequence** tool to edit the properties of the sequen
 **To open the Edit Sequence tool**
 + In the **Animation Editor**, click the **Edit Sequence** icon\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animation-edit-sequence.png)
+![\[Image NOT FOUND\]](/images/ui-animation-edit-sequence.png)

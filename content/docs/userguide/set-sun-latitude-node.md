@@ -1,3 +1,8 @@
+description: ' Use the Set Sun Latitude node in the &ALYlong; &script-canvas; editor
+  to set the sun latitude. '
+slug: set-sun-latitude-node
+title: Set Sun Latitude
+---
 # Set Sun Latitude<a name="set-sun-latitude-node"></a>
 
 Sets the sun's latitude in the sky\.
@@ -6,7 +11,7 @@ Sets the sun's latitude in the sky\.
 + [Inputs](#set-sun-latitude-node-input)
 + [Outputs](#set-sun-latitude-node-output)
 
-![\[setsunlatitudenode, setsunlatitude\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-sun-latitude-node.png)
+![\[setsunlatitudenode, setsunlatitude\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-sun-latitude-node.png)
 
 ## Inputs<a name="set-sun-latitude-node-input"></a>
 

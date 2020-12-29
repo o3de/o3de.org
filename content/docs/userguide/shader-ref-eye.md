@@ -1,3 +1,7 @@
+description: ' See the eye shader to render realistic eyes in &ALYlong;. '
+slug: shader-ref-eye
+title: Eye Shader
+---
 # Eye Shader<a name="shader-ref-eye"></a>
 
 The Eye shader is used to render realistic eyes that take sclera, cornea, iris, and eye moisture properties into account\.

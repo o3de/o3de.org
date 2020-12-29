@@ -1,3 +1,8 @@
+description: ' Use this procedure to uninstall &ALY; and remove its components from
+  your computer. '
+slug: uninstalling-amazon-lumberyard
+title: Uninstalling &ALYlong;
+---
 # Uninstalling Amazon Lumberyard<a name="uninstalling-amazon-lumberyard"></a>
 
 If you want to uninstall Lumberyard, you can remove it with Windows Control Panel\. The uninstall removes the Lumberyard Setup Assistant, Project Configurator, and Lumberyard Editor \.

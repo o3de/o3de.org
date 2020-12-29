@@ -1,3 +1,7 @@
+description: ' Use console variables and commands to debug UI canvases in &ALYlong;. '
+slug: ui-editor-debugging-ui-canvases
+title: Debugging UI Canvases
+---
 # Debugging UI Canvases<a name="ui-editor-debugging-ui-canvases"></a>
 
 You can use the following console commands and console variables to display debug information for the UI when your game is running\.
@@ -27,7 +31,7 @@ Displays canvas data for enabled or loaded canvases\.
 
 The following example displays data for five loaded UI canvases\.
 
-![\[Canvas data for five loaded UI canvases.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-debugging-ui-canvases-1.png)
+![\[Canvas data for five loaded UI canvases.\]](/images/game_ui_editor/ui-editor-debugging-ui-canvases-1.png)
 
 The following table describes each column\.
 
@@ -69,7 +73,7 @@ Displays the number of draw calls used to render UI canvases\. This variable is 
 
 The following example data shows draw call information for four UI canvases\.
 
-![\[Draw call information for four UI canvases.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-debugging-ui-canvases-2.png)
+![\[Draw call information for four UI canvases.\]](/images/game_ui_editor/ui-editor-debugging-ui-canvases-2.png)
 
 The following table describes each column\.
 
@@ -101,7 +105,7 @@ If you have several enabled UI canvases and want to see the rectangular bounds f
 
 The following example shows the rectangular bounds of nested scrollboxes\.
 
-![\[Rectangular bounds displayed for nested scrollboxes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-debugging-ui-canvases-3.png)
+![\[Rectangular bounds displayed for nested scrollboxes.\]](/images/game_ui_editor/ui-editor-debugging-ui-canvases-3.png)
 
 ## ui\_DisplayTextureData<a name="ui-editor-debugging-ui-canvases-display-texture-data"></a>
 
@@ -111,7 +115,7 @@ The display shows the dimensions, data size, texture format, and pathname of eac
 
 The following example shows data for 13 unique textures in the current frame\.
 
-![\[Data for 13 unique textures in the current frame.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-debugging-ui-canvases-4.png)
+![\[Data for 13 unique textures in the current frame.\]](/images/game_ui_editor/ui-editor-debugging-ui-canvases-4.png)
 
 ## ui\_ReportDrawCalls<a name="ui-editor-debugging-ui-canvases-report-draw-calls"></a>
 
@@ -119,7 +123,7 @@ Writes a report of draw calls to a log file\.
 
 The command output displays the location of the log file, as in the following example\.
 
-![\[Entering the ui_ReportDrawCalls command.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-debugging-ui-canvases-5.png)
+![\[Entering the ui_ReportDrawCalls command.\]](/images/game_ui_editor/ui-editor-debugging-ui-canvases-5.png)
 
 The log file is written to `lumberyard_version\dev\Cache\project_name\pc\user\log\LyShine\drawcallreport.txt`\.
 

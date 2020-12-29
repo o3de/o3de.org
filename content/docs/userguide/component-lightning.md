@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Lightning component to add lightning effects to your
+  game. '
+slug: component-lightning
+title: Lightning
+---
 # Lightning<a name="component-lightning"></a>
 
 
@@ -22,7 +27,7 @@ The **Lightning** component does not produce visual effects on its own\. The com
 **Example**  
 The **Lightning** component randomly spawns in a small area\.  
 
-![\[Add the Lightning component to your entity to enable lightning effects in your level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-lightning-component-animation-example.gif)
+![\[Add the Lightning component to your entity to enable lightning effects in your level.\]](/images/shared-lightning-component-animation-example.gif)
 
 **Contents**
 + [Lightning Component Properties](#component-lightning-properties)

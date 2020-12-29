@@ -1,3 +1,7 @@
+description: ' Learn how to create &ALY; components in C++. '
+slug: component-entity-system-create-component
+title: Creating a Component
+---
 # Creating a Component<a name="component-entity-system-create-component"></a>
 
 A component in Lumberyard is a simple class that inherits from Lumberyard's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create Lumberyard components programmatically\. For information about adding and customizing the components available in Lumberyard Editor, see [Working with component entities](component-intro.md)\.

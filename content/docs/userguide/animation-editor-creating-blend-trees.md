@@ -1,3 +1,7 @@
+description: ' Learn how to create blend trees in the &ALY; &animation-editor;. '
+slug: animation-editor-creating-blend-trees
+title: Creating Blend Trees
+---
 # Creating Blend Trees<a name="animation-editor-creating-blend-trees"></a>
 
 
@@ -20,13 +24,13 @@ A blend tree is a collection of nodes with input and output ports that are color
 1. Click the **Save** icon\. Navigate to the directory where you want to save your animation graph\. Type a name for your file and then click **Save**\.
 
 1. In the center pane, on the **Anim Graph** tab, right\-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/anim-graph-blend-tree-node.png)
+![\[Image NOT FOUND\]](/images/actor-animation/anim-graph-blend-tree-node.png)
 
    Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/anim-graph-palette-blend-tree-node.png)
+![\[Image NOT FOUND\]](/images/actor-animation/anim-graph-palette-blend-tree-node.png)
 
 1. Double\-click the blend tree node that you created\. When you double\-click the node, a new link appears above the animation graph with the node name\. The **Final Node** also appears\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/anim-graph-node-path.png)
+![\[Image NOT FOUND\]](/images/actor-animation/anim-graph-node-path.png)
 
 1. Do the following to add nodes and connections:
 

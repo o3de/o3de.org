@@ -1,3 +1,8 @@
+description: ' Use the Environment Probe component to achieve proper lighting for
+  materials in &ALYlong;. '
+slug: component-environment-probe
+title: Environment Probe
+---
 # Environment Probe<a name="component-environment-probe"></a>
 
 Use the **Environment Probe** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\.

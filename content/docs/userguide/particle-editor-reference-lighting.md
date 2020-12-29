@@ -1,8 +1,13 @@
+description: ' Use the Lighting attribute in the &ALYlong; &particle-editor; to control
+  the lighting of the particle. '
+slug: particle-editor-reference-lighting
+title: Lighting Attribute
+---
 # Lighting Attribute<a name="particle-editor-reference-lighting"></a>
 
 In the **Lighting** attribute, specify how to control the particle lighting\.
 
-![\[Lighting attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-lighting.png)
+![\[Lighting attributes in the Particle Editor.\]](/images/particles/particle-editor-lighting.png)
 
 
 **Lighting Attribute Parameters**  

@@ -1,3 +1,8 @@
+description: ' Use the Set Input String node in the &ALYlong; &script-canvas; editor
+  to set the value of a procedural material input parameter as a string or image. '
+slug: set-input-string-node
+title: Set Input String
+---
 # Set Input String<a name="set-input-string-node"></a>
 
 Sets the value for an input parameter as a string or an image\.
@@ -8,7 +13,7 @@ If the input parameter is a `string` type, the node sets the text value that the
 + [Inputs](#set-input-string-node-input)
 + [Outputs](#set-input-string-node-output)
 
-![\[GetInputString sets the string value for a procedural material input parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-string-node.png)
+![\[GetInputString sets the string value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-string-node.png)
 
 ## Inputs<a name="set-input-string-node-input"></a>
 

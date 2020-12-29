@@ -1,3 +1,8 @@
+description: ' Modify your WAF build script (wscript) in &ALYlong; to take advantage
+  of GridMate encryption support. '
+slug: network-encryption-building
+title: Building with Encryption
+---
 # Building with Encryption<a name="network-encryption-building"></a>
 
 When you include the GridMate library in your project, encryption support is automatically provided\. However, because the GridMate library is statically linked, you must first make some modifications to the [WAF build script](waf-using-module.md) \(wscript\) that uses GridMate\. 

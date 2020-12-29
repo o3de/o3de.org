@@ -1,3 +1,8 @@
+description: ' Use the Terrain tab on the &rollup-bar; in &ly-editor; to rotate a
+  terrain heightmap. '
+slug: terrain-heightmap-rotate
+title: Rotating a Terrain Heightmap
+---
 # Rotating a Terrain Heightmap<a name="terrain-heightmap-rotate"></a>
 
 

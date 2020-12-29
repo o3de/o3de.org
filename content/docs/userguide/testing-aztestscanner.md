@@ -1,3 +1,8 @@
+description: ' Use the AZ test scanner tool to run unit tests that are built into
+  &ALY; libraries and executables. '
+slug: testing-aztestscanner
+title: Using AZ Test Scanner
+---
 # Using AZ Test Scanner<a name="testing-aztestscanner"></a>
 
 The AZ test scanner is a tool for running unit tests that are built into Lumberyard libraries and executables\. This tool simplifies testing by automatically finding libraries and executables to test\. It also provides flexibility for programmers to focus on testing the parts of Lumberyard that they care about\.

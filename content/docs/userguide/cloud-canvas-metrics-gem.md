@@ -1,3 +1,7 @@
+description: ' Use the Game Metrics cloud gem to collect and view player data in &ALYlong;. '
+slug: cloud-canvas-metrics-gem
+title: Game Metrics Cloud Gem
+---
 # Game Metrics Cloud Gem<a name="cloud-canvas-metrics-gem"></a>
 
 You can use the Game Metrics cloud gem to collect event data on player behaviors, which you can then analyze or trigger event actions\. This gem uses a service API with the Cloud Gem Framework for event submission, Amazon S3 for data storage, Amazon Athena as the query engine, Amazon QuickSight as the data visualizer, and the Cloud Gem Portal for administration and as a telemetry dashboard\.
@@ -14,7 +18,7 @@ The Game Metrics cloud gem is only supported in regions where FIFO is supported\
 **Example Overview**  
 The following illustrates how AWS services process game events so that you can view them in the Cloud Gem Portal\.  
 
-![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-gem-metrics-work-flow-with-aws-services-example.png)
+![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/cloud_canvas/cloud-gem-metrics-work-flow-with-aws-services-example.png)
 
 When events are generated from your game, the following occurs:
 

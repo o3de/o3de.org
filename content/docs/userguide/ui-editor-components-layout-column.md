@@ -1,3 +1,8 @@
+description: ' Use a layout column component in the &ALYlong; &ui-canvas-editor; to
+  organize child elements into a column. '
+slug: ui-editor-components-layout-column
+title: LayoutColumn
+---
 # LayoutColumn<a name="ui-editor-components-layout-column"></a>
 
 You can use a **LayoutColumn** component to organize child elements into a column\. To use this feature, add the **LayoutColumn** component to an element and then add child elements\. The UI system positions the child elements within the column, from top to bottom or bottom to top, depending on the order you choose in the component properties\. The child elements can contain a texture or image, a button, a check box, text, columns, rows, grids, and so on\. 
@@ -17,11 +22,11 @@ The layout column can also give varying space to each child depending on its con
 
 In the first image, **Ignore Default Cells** is selected\. The layout column gives each child the same amount of space regardless of their contents\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-layout-column-ignore.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-layout-column-ignore.png)
 
 In the second image, **Ignore Default Cells** is cleared\. The layout column calculates its children's space based on their contents\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-layout-column-clear.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-layout-column-clear.png)
 
 To see an example of a completed canvas with the layout column component, open `SimpleColumn.uicanvas` in the LyShineExamples Gem \(`\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\`\)\.
 

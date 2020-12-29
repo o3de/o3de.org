@@ -1,3 +1,8 @@
+description: ' Use the lmbr_aws command line tool to assume a role or to manage roles,
+  permissions, and role mappings in &ALYlong;. '
+slug: cloud-canvas-rm-security-lmbr-aws
+title: Using the &cloud; Command Line to Manage Roles and Permissions
+---
 # Using the Cloud Canvas Command Line to Manage Roles and Permissions<a name="cloud-canvas-rm-security-lmbr-aws"></a>
 
 You can use the `lmbr_aws` command line tool to manage Cloud Canvas Resource Manager access control\. For example, you can use the tool to assume a role when you run a command, or to manage roles, permissions, and role mappings\.

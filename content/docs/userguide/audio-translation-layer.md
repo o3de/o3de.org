@@ -1,3 +1,7 @@
+description: ' Learn about the &ALYlong; audio translation layer. '
+slug: audio-translation-layer
+title: Audio Translation Layer
+---
 # Audio Translation Layer<a name="audio-translation-layer"></a>
 
 The Audio Translation Layer \(ATL\) manages the state of the audio system and relays game requests to the underlying audio middleware\. The ATL is a generic layer that doesn't contain middleware\-specific code, which makes it possible to use different audio middleware implementations\. The ATL manages audio objects and their states, as well as any loaded audio files, such as soundbanks\.

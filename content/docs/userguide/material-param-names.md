@@ -1,3 +1,8 @@
+description: ' Use the &material-editor; to find material parameter names to reference
+  for nodes in the &ALYlong; &script-canvas; editor. '
+slug: material-param-names
+title: Finding the Material Parameter Name
+---
 # Finding the Material Parameter Name<a name="material-param-names"></a>
 
 You can specify material parameter names for some **Script Canvas** editor nodes\. In the **Material Editor**, you can find the material parameter names in the following sections:
@@ -7,7 +12,7 @@ You can specify material parameter names for some **Script Canvas** editor nodes
 
 You can find common parameters in the **Opacity Settings** and **Lighting Settings** sections\. You can find parameters that are specific to the selected shader in the **Shader Params** section\.
 
-![\[Find material parameter names in the Material Editor in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-opacity-lighting-settings-material-params.png)
+![\[Find material parameter names in the Material Editor in Lumberyard Editor.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-opacity-lighting-settings-material-params.png)
 
 **To find the material parameter name**
 
@@ -19,11 +24,11 @@ You can find common parameters in the **Opacity Settings** and **Lighting Settin
 **Example**  
 
    For **Diffuse Color \(Tint\)**, the script parameter name is **diffuse**\.  
-![\[Find script parameter names in the Material Editor in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-script-param-name-diffuse.png)  
+![\[Find script parameter names in the Material Editor in Lumberyard Editor.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-script-param-name-diffuse.png)  
 **Example**  
 
    For **Emittance Map Gamma**, the script parameter name is **EmmitanceMapGamma**\.  
-![\[Find shader-specific script parameter names in the Material Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-custom-param-name.png)
+![\[Find shader-specific script parameter names in the Material Editor.\]](/images/scripting/script-canvas/script-canvas-custom-param-name.png)
 
 The following parameter names are commonly available and built in all materials\.
 

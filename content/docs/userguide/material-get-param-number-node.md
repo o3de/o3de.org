@@ -1,3 +1,8 @@
+description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; editor
+  to return a material parameter as a numerical value. '
+slug: material-get-param-number-node
+title: Get Param Number
+---
 # Get Param Number<a name="material-get-param-number-node"></a>
 
 Returns a material parameter as a numerical value\.
@@ -6,7 +11,7 @@ Returns a material parameter as a numerical value\.
 + [Inputs](#material-get-param-number-node-input)
 + [Outputs](#material-get-param-number-node-output)
 
-![\[getparamnumber, getparamnumbernode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-node.png)
+![\[getparamnumber, getparamnumbernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-node.png)
 
 ## Inputs<a name="material-get-param-number-node-input"></a>
 

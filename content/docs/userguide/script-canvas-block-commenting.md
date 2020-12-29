@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; &script-canvas; editor to add comments to your script. '
+slug: script-canvas-block-commenting
+title: Commenting Nodes
+---
 # Commenting Nodes<a name="script-canvas-block-commenting"></a>
 
 You can add comments to your script to describe how it works\. 
@@ -18,7 +22,7 @@ A **Comment** node is a floating block of text that you can move in the **Script
    + Right\-click your script and choose **Add Comment**\.
 
 1. Double\-click the node and then enter a description\.  
-![\[Use the Comment node to add useful notes about your script.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/comment-node.png)
+![\[Use the Comment node to add useful notes about your script.\]](/images/scripting/script-canvas/scriptcanvasnodes/comment-node.png)
 
 1. To delete a **Comment** node, do one of the following:
    + Select the node and press **Delete**\.
@@ -43,7 +47,7 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 **Example**  
 
    The following **Block Comment** node contains other nodes as a group\.  
-![\[Use the Block Comment node to organize the nodes in your script.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/block-comment-node.png)
+![\[Use the Block Comment node to organize the nodes in your script.\]](/images/block-comment-node.png)
 
 1. To move your nodes together, drag the **Block Comment** node header\. All nodes inside the **Block Comment** node move together\.
 
@@ -66,7 +70,7 @@ You can change the font settings in comment nodes to label and organize your scr
    + For a **Block Comment** node, select the header\. 
 
 1. In the **Node Inspector**, you can make the following changes:  
-![\[Use the Node Inspector to change font settings for comment nodes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
+![\[Use the Node Inspector to change font settings for comment nodes.\]](/images/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
    + **Comment** – Type the comment for the node\.
    + **Font Color** – Type a value or use the **Color Picker** to select a color\.
    + **Font Family** – Type a font family name, such as Arial\.

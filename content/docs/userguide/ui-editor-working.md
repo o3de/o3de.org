@@ -1,3 +1,8 @@
+description: Learn how to add and delete components, reference UI elements as component
+  properties, and manage components in &ALYlong;'s &ui-canvas-editor; .
+slug: ui-editor-working
+title: Working with UI Components
+---
 # Working with UI Components<a name="ui-editor-working"></a>
 
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components\.
@@ -35,7 +40,7 @@ You can add or delete components in the [UI Editor](ui-editor-using.md)\.
 
 You can specify a UI element for some properties on components\. For example, you can specify UI elements for **Lua Script** properties\. 
 
-![\[Properties in a Lua Script component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-referencing-ui-elements-1.png)
+![\[Properties in a Lua Script component.\]](/images/game_ui_editor/ui-editor-referencing-ui-elements-1.png)
 
 You can specify elements as properties either by dragging the element into the property field or by using the pick object button\.
 
@@ -45,7 +50,7 @@ You can specify elements as properties either by dragging the element into the p
 **To use the pick object button to reference a UI element**
 
 1. In the **Properties** panel, next to the property to specify an element for, click the pick object button\.  
-![\[Properties in a Lua Script component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-referencing-ui-elements-2.png)
+![\[Properties in a Lua Script component.\]](/images/game_ui_editor/ui-editor-referencing-ui-elements-2.png)
 
 1. Select the element that you want from either the viewport or the **Hierarchy** panel\.
 

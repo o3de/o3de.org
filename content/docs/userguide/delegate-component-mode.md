@@ -1,3 +1,7 @@
+description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
+slug: delegate-component-mode
+title: 'Step 2: Add a ComponentModeDelegate'
+---
 # Step 2: Add a ComponentModeDelegate<a name="delegate-component-mode"></a>
 
 To add this feature to the **Point Light** component, you must update the component so that it can detect the intent to begin editing a component and manage the creation of a Component Mode\. To do so, add a new type called a `ComponentModeDelegate` to your existing component\.

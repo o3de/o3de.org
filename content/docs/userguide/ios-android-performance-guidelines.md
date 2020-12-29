@@ -1,3 +1,8 @@
+description: ' Follow these guidelines to generate art assets and tune &ALYlong; performance
+  for mobile devices. '
+slug: ios-android-performance-guidelines
+title: '&ALY; Performance Tuning Guidelines for Mobile Devices'
+---
 # Lumberyard Performance Tuning Guidelines for Mobile Devices<a name="ios-android-performance-guidelines"></a>
 
 See the following guidelines for generating art assets for mobile games with Lumberyard and how to tune Lumberyard performance for mobile devices\.
@@ -27,7 +32,7 @@ Follow these guidelines when creating geometry for your mobile game:
 **Example**  
 
     The following is an LOD setup in Maya\.  
-![\[Example level of detail (LOD) setup in Maya.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/mobile/geometry-level-of-detail-setup-example-maya.png)
+![\[Example level of detail (LOD) setup in Maya.\]](/images/mobile/geometry-level-of-detail-setup-example-maya.png)
   + Do the following to tune the LOD:
 
     1. In Lumberyard Editor, select an entity in your level that has a **[Mesh](component-static-mesh.md)** component\.
@@ -60,7 +65,7 @@ Follow these guidelines when adding lighting to your mobile game:
 **Example**  
 
   The following scene uses non\-shadow casting lights to simulate global illumination \(GI\) bounce\.  
-![\[Example scene that uses non-shadow casting lights to simulate global illumination (GI) bounce.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/mobile/lighting-global-illumination-simulation-example.png)
+![\[Example scene that uses non-shadow casting lights to simulate global illumination (GI) bounce.\]](/images/mobile/lighting-global-illumination-simulation-example.png)
 
 ### Cascade Shadow Map Guidelines<a name="ios-android-performance-art-guidelines-cascade-shadow-maps"></a>
 
@@ -70,7 +75,7 @@ Lumberyard uses console variables to specify how to generate cascade shadow maps
 **Example**  
 The following global shadow map \(GSM\) has the `e_ShadowsCascadesDebug` console variable set to **1**\.  
 
-![\[Example of a global shadow map (GSM) with the e_ShadowsCascadesDebug console variable set to 1.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/mobile/global-shadow-map-example.png)
+![\[Example of a global shadow map (GSM) with the e_ShadowsCascadesDebug console variable set to 1.\]](/images/mobile/global-shadow-map-example.png)
 
 Use the following console variables to specify the size and how to generate shadow cascades:
 + `e_GsmLodsNum` – Specifies the number of shadow cascades to use\. The default value is `5`\.
@@ -127,7 +132,7 @@ You can also edit the configuration files in the **Graphics Settings** window in
    1. For the preferred configuration file, adjust the values for the various console variables\. For example, if you select **iOS**, console variables and values for each configuration file appear \(`ios_low.cfg`, `ios_medium.cfg`, `ios_high.cfg`, and `ios_veryhigh.cfg`\)\.
 
    When you edit the console variables for the configuration file, the renderer displays onscreen how the level may look on a mobile device\.  
-![\[Example of the Graphics Settings window in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/mobile/graphics-settings-window-ios-example.png)
+![\[Example of the Graphics Settings window in Lumberyard Editor.\]](/images/mobile/graphics-settings-window-ios-example.png)
 
 ### Using android\_models\.xml and ios\_models\.xml Files<a name="ios-android-performance-engineering-guidelines-models-xml-files"></a>
 

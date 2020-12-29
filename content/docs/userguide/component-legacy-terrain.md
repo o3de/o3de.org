@@ -1,3 +1,7 @@
+description: ' Use the Legacy Terrain level component to add level terrain in &ALYlong;. '
+slug: component-legacy-terrain
+title: Legacy Terrain level component
+---
 # Legacy Terrain level component<a name="component-legacy-terrain"></a>
 
 The **Legacy Terrain** level component enables the legacy terrain system\. This component works as a switch\. When the **Legacy Terrain** level component is added to a level, terrain is displayed and can be edited\. When the **Legacy Terrain** level component is removed from the level, terrain is not displayed and cannot be edited\. Adding or removing the Legacy Terrain level component is a non\-destructive operation\. Existing terrain heightmap and texture data remains intact when the **Legacy Terrain** level component is removed from the level\. 
@@ -5,7 +9,7 @@ The **Legacy Terrain** level component enables the legacy terrain system\. This 
 **Note**  
 The **Legacy Terrain** component is a *level component* and is added to the level through the **Level Inspector**\. 
 
-![\[The Legacy Terrain level component for Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/legacyterrain/ui-legacy-terrain-component-1.24.png)
+![\[The Legacy Terrain level component for Lumberyard.\]](/images/component/legacyterrain/ui-legacy-terrain-component-1.24.png)
 
 **To enable the Legacy Terrain system in a level**
 
@@ -22,7 +26,7 @@ The **Legacy Terrain** level component has no properties because it is a switch 
 
 Terrain size is defined by a *heightmap*, which is a gray scale texture that contains elevation information, and a *meters per texel* property\. The meters per texel property sets the relationship between texels in the heightmap and the terrain size in world space\. A **1024** x **1024** heightmap with **1** meter per texel creates a terrain that's 1\.024 square kilometers in size\. Each texel in the heightmap defines one square meter of the terrain\. 
 
-![\[Resize Terrain options in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/legacyterrain/ui-resize-terrain-1.24.png)
+![\[Resize Terrain options in Lumberyard.\]](/images/component/legacyterrain/ui-resize-terrain-1.24.png)
 
 **To resize terrain**
 
@@ -36,7 +40,7 @@ Terrain size is defined by a *heightmap*, which is a gray scale texture that con
 
 Terrain textures for the legacy terrain system are generated within Lumberyard Editor\. 
 
-![\[Generate Terrain Texture options in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/legacyterrain/ui-generate-terrain-texture-1.24.png)
+![\[Generate Terrain Texture options in Lumberyard.\]](/images/component/legacyterrain/ui-generate-terrain-texture-1.24.png)
 
 **To generate a legacy terrain texture**
 
@@ -52,7 +56,7 @@ If your project uses legacy physics components, interactions between the terrain
 
 If your project uses the PhysX system, you must add a **PhysX Terrain** level component to enable PhysX entities to interact with the terrain\. The **PhysX Terrain** level component is added in the **Level Inspector** with the **Legacy Terrain** level component\. 
 
-![\[Add a PhysX Terrain component in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/legacyterrain/ui-legacy-terrain-and-physx-1.24.png)
+![\[Add a PhysX Terrain component in Lumberyard.\]](/images/component/legacyterrain/ui-legacy-terrain-and-physx-1.24.png)
 
 **To enable PhysX with the Legacy Terrain system in a level**
 

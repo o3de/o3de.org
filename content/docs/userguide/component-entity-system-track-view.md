@@ -1,3 +1,8 @@
+description: ' Learn how to expose custom components and their properties to the &trackview-editor;
+  for animation in &ALYlong;. '
+slug: component-entity-system-track-view
+title: Exposing Custom Components to Track View for Animation
+---
 # Exposing Custom Components to Track View for Animation<a name="component-entity-system-track-view"></a>
 
 To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to Lumberyard’s Track View and **Entity Inspector**\. To expose a custom component and its properties, you must perform three steps:
@@ -133,7 +138,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    ```
 
    **Track View** then uses a color track for the property, as the following image shows\.  
-![\[Color picker in Track View\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
+![\[Color picker in Track View\]](/images/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
    Other units can be found in the file `dev\Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. As of Lumberyard release 1\.8, these units are the following\.
 
@@ -150,8 +155,8 @@ Now you can view how the example component and property appear in the **Entity I
 
 In the following **Entity Inspector** image, `EditContext` reflection has exposed the **ImaginaryTarget** component and its **Imaginary Target Pos** property\.
 
-![\[ImaginaryTarget component in Entity Inspector\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/exposing-custom-components-to-track-view-for-animation-entity-inspector.jpg)
+![\[ImaginaryTarget component in Entity Inspector\]](/images/component/entity_system/exposing-custom-components-to-track-view-for-animation-entity-inspector.jpg)
 
 In the following **Track View** image, `BehaviorContext` reflection has exposed the **ImaginaryTarget** component and the **ImaginaryPosition** track from the corresponding virtual property\.
 
-![\[ImaginaryTarget component in the Track View\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/exposing-custom-components-to-track-view-for-animation-track-view.jpg)
+![\[ImaginaryTarget component in the Track View\]](/images/component/entity_system/exposing-custom-components-to-track-view-for-animation-track-view.jpg)

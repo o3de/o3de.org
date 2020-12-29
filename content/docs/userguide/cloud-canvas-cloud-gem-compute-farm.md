@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Compute Farm cloud gem to divide and conquer large-scale
+  tasks for processing on a fleet of &EC2; instances. '
+slug: cloud-canvas-cloud-gem-compute-farm
+title: Compute Farm Cloud Gem
+---
 # Compute Farm Cloud Gem<a name="cloud-canvas-cloud-gem-compute-farm"></a>
 
 The Compute Farm cloud gem is a tool for large\-scale divide and conquer tasks that can be processed on a fleet of Amazon EC2 instances\. This cloud gem is particularly suited for heavy\-duty, computationally intensive Windows tasks like nav mesh generation, static lightmap baking, and terrain generation\. In general, the Compute Farm cloud gem is designed for tasks that can be highly parallelized with recursive subdivision\.

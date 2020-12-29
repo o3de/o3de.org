@@ -1,3 +1,7 @@
+description: ' Learn how to register a component during application startup in &ALYlong;. '
+slug: component-entity-system-pg-registering-your-component
+title: Registering Your Component
+---
 # Registering Your Component<a name="component-entity-system-pg-registering-your-component"></a>
 
 You register a component during application startup\. You implement the registration in the `AZ::Module class` of the module in which the component is written\.

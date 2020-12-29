@@ -1,3 +1,8 @@
+description: ' See the following &animation-editor; nodes when creating your animation
+  graph in &ALYlong;. '
+slug: animation-editor-node
+title: '&animation-editor; Nodes'
+---
 # Animation Editor Nodes<a name="animation-editor-node"></a>
 
 See the following nodes available in the Animation Editor\.

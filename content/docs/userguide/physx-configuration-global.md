@@ -1,8 +1,12 @@
+description: ' Configure global settings for the PhysX system in &ALYlong;. '
+slug: physx-configuration-global
+title: Global Configuration
+---
 # Global Configuration<a name="physx-configuration-global"></a>
 
 On the **Global Configuration** tab, you can configure world settings and editor settings\.
 
-![\[PhysX Global Configuration tab\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-1.png)
+![\[PhysX Global Configuration tab\]](/images/physx/physx-configuration-1.png)
 
 ## World Configuration<a name="physx-configuration-global-world"></a>
 

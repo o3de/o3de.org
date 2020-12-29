@@ -1,3 +1,8 @@
+description: ' Use the UITextComponent to control the text and formatting of a text
+  element in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uitextcomponent
+title: UITextComponent
+---
 # UITextComponent<a name="lua-scripting-ces-api-ui-uitextcomponent"></a>
 
 Controls the text and formatting of a text element\.

@@ -1,3 +1,8 @@
+description: ' Learn the resource definitions in &CFN; templates that determine which
+  &AWS; resources will be created for your game in &ALY;. '
+slug: cloud-canvas-resource-definitions
+title: Resource Definitions
+---
 # Resource Definitions<a name="cloud-canvas-resource-definitions"></a>
 
 Resource definitions for your game project are AWS CloudFormation template files that determine the resources \(for example, DynamoDB databases, Lambda functions, and access control information\) that will be created in AWS for the game\. Game code uses AWS resources and expect those resources to exist and to be configured in a specific way\. The resource definitions determine this architecture and configuration\.

@@ -1,3 +1,7 @@
+description: ' Set navigation exclusion areas for an AI agent in &ALYlong;. '
+slug: ai-nav-areas-exclusion
+title: Setting Navigation Exclusion Areas
+---
 # Setting Navigation Exclusion Areas<a name="ai-nav-areas-exclusion"></a>
 
 If you don't want an AI agent to navigate through certain areas, you can set exclusion areas within the navigation mesh, as follows:

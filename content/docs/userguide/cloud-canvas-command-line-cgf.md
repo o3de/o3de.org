@@ -1,3 +1,8 @@
+description: ' Use the &cloud; lmbr_aws.cmd cloud-gem-framework command line for working
+  with the Cloud Gem Portal in &ALYlong;. '
+slug: cloud-canvas-command-line-cgf
+title: Using the Cloud Gem Framework Command Line
+---
 # Using the Cloud Gem Framework Command Line<a name="cloud-canvas-command-line-cgf"></a>
 
 You can use the `lmbr_aws cloud-gem-framework` command line for working with Cloud Canvas [Cloud Gems](cloud-canvas-cloud-gems-intro.md), the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md), and the [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md)\. 

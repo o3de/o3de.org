@@ -1,3 +1,7 @@
+description: ' Use the SkyHDR shader to render dynamic sky effects in &ALYlong;. '
+slug: shader-ref-skyhdr
+title: SkyHDR Shader
+---
 # SkyHDR Shader<a name="shader-ref-skyhdr"></a>
 
 The SkyHDR shader is used to render realistic dynamic sky effects that change based on the time of day in a level\.

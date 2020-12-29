@@ -1,3 +1,8 @@
+description: ' Use procedural material nodes in the &ALYlong; &script-canvas; editor
+  for scripting. '
+slug: script-canvas-procedural-material-nodes
+title: Procedural Material Nodes
+---
 # Procedural Material Nodes<a name="script-canvas-procedural-material-nodes"></a>
 
 Lumberyard supports [Allegorithmic Substance](https://www.allegorithmic.com/) for working with procedurally\-generated materials\. Procedural materials are materials in which you can modify their textures during runtime\.
@@ -30,7 +35,7 @@ The Allegorithmic Substance gem includes a sample procedural material named `bri
 
 See the following example script to enable this effect\.
 
-![\[Example Script Canvas script that shows the erosion for a brick wall.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-procedural-material-example.png)
+![\[Example Script Canvas script that shows the erosion for a brick wall.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-procedural-material-example.png)
 
 1. The **Find by Name and Index** node \(1\) retrieves the `brickWall_04` procedural material and sends the material to all **Set Input Number** nodes \(3, 4, 6, 7\)\.
 

@@ -1,3 +1,7 @@
+description: ' Restore the default layout for your &ly-editor; workspace. '
+slug: lumberyard-editor-default-settings
+title: Restoring the Default Layout for &ly-editor;
+---
 # Restoring the Default Layout for Lumberyard Editor<a name="lumberyard-editor-default-settings"></a>
 
 If you customized your workspace, you can reset Lumberyard Editor to use the default layout\. This restores your editors, tools, and windows to the default view that you see when you open Lumberyard Editor for the first time\. You can restore the default layout at any time\. 
@@ -16,7 +20,7 @@ The component entity layout is the default view for Lumberyard Editor\. If you c
   + Click **View**, **Layouts**, **Restore Default Layout**\.
 
   The following example shows the component entity layout in Lumberyard Editor:  
-![\[Component entity layout in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-editor-component-entity-layout.png)
+![\[Component entity layout in Lumberyard Editor.\]](/images/lumberyard-editor-component-entity-layout.png)
 
 **Note**  
 Resetting Lumberyard Editor to the default layout does not reset the layout for individual tools, such as the **Script Canvas** editor or the **Particle Editor**\.
@@ -30,7 +34,7 @@ If you don't enable the CryEntity Removal gem, you can switch back to the legacy
 + In Lumberyard Editor, click **View**, **Layouts**, **Legacy Layout**\.
 
   The following example shows the legacy layout in Lumberyard Editor:  
-![\[Legacy layout in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-editor-legacy-layout.png)
+![\[Legacy layout in Lumberyard Editor.\]](/images/lumberyard-editor-legacy-layout.png)
 
 If you require more granular control to restore Lumberyard Editor settings, you can delete the relevant keys in the Windows registry\.
 

@@ -1,3 +1,7 @@
+description: ' Learn about support for Audiokinetic Wwise in &ALYlong;. '
+slug: audio-wwise
+title: Audiokinetic Wwise
+---
 # Audiokinetic Wwise<a name="audio-wwise"></a>
 
 Lumberyard supports two flavors of Audiokinetic's Wwise audio middleware technology:

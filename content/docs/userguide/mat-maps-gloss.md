@@ -1,3 +1,7 @@
+description: ' Enable gloss maps to define the roughness of surfaces in &ALYlong;. '
+slug: mat-maps-gloss
+title: Working with Gloss Maps
+---
 # Working with Gloss Maps<a name="mat-maps-gloss"></a>
 
 Gloss defines the roughness of a surface\. A low gloss value means that the surface is rough while a high value means the surface is smooth and shiny\. The roughness influences the size and the intensity of specular highlights\. The smoother and glossier a surface is, the smaller the specular highlight will be\. A smaller highlight will at the same time be brighter in order to obey to the rules of energy conservation\. 

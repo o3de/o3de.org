@@ -1,3 +1,8 @@
+description: ' Use the UILayoutRowComponent to control the grid layout of rows in
+  &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uilayoutrowcomponent
+title: UILayoutRowComponent
+---
 # UILayoutRowComponent<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent"></a>
 
 Controls the grid layout of rows\.

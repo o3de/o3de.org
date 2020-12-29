@@ -1,3 +1,8 @@
+description: ' Use the &cloud; Credentials Manager to manage one or more of your &AWS;
+  profiles. '
+slug: cloud-canvas-ui-credentials-manager
+title: Managing &cloud; Profiles
+---
 # Managing Cloud Canvas Profiles<a name="cloud-canvas-ui-credentials-manager"></a>
 
 Use the **Credentials Manager** in Lumberyard Editor or the command line to manage one or more AWS profiles that provide the credentials required to access your AWS account\.
@@ -13,11 +18,11 @@ Do not share these credentials with anyone, and do not check them into source co
 +  To open **Credentials Manager**, do one of the following:
   +  In Lumberyard Editor, click **AWS**, **Credentials manager**\.
   + In **Cloud Canvas Resource Manager**, click the name of the current profile in the Resource Manager toolbar:  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-current-profile.png)
+![\[Image NOT FOUND\]](/images/cloud_canvas/cloud-canvas-ui-rm-current-profile.png)
 
  You can use the **Credentials Manager** to select an existing AWS profile, edit an AWS profile, or add a new AWS profile\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-ui-rm-credentials-manager.png)
+![\[Image NOT FOUND\]](/images/cloud_canvas/cloud-canvas-ui-rm-credentials-manager.png)
 
 To edit an existing AWS profile, click **Edited selected profile**\. To add an AWS profile, click **Add profile**\.
 

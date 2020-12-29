@@ -1,3 +1,8 @@
+description: ' Learn how to control session workflow when using the &AGSlong; &gem;
+  for &ALYlong;. '
+slug: gems-system-gem-gamelift
+title: '&AGS; Gem'
+---
 # GameLift Gem<a name="gems-system-gem-gamelift"></a>
 
 Amazon GameLift is an AWS service for deploying, operating, and scaling session\-based multiplayer games\. With Amazon GameLift, you can quickly scale high\-performance game servers up and down to meet player demand without any additional engineering effort or upfront costs\.
@@ -28,11 +33,11 @@ These events are illustrated in the following workflow diagrams\.
 
  **GameLift client\-server communication workflow using fleet or queues to create a game session\.**
 
-![\[GameLift client-server communication workflow using fleet or queues to create a game session.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/game-lift-gem-workflow.png)
+![\[GameLift client-server communication workflow using fleet or queues to create a game session.\]](/images/gems/game-lift-gem-workflow.png)
 
  **GameLift client\-server communication workflow using FlexMatch, with automatic or custom backfill\.**
 
-![\[GameLift client-server communication workflow using FlexMatch, with automatic or custom backfill.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/game-lift-gem-workflow-matchmaking.png)
+![\[GameLift client-server communication workflow using FlexMatch, with automatic or custom backfill.\]](/images/gems/game-lift-gem-workflow-matchmaking.png)
 
 ## Sample Code<a name="gems-system-gem-gamelift-sample-code"></a>
 

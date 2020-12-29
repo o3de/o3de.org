@@ -1,3 +1,8 @@
+description: ' Use the features of the Python Editor Bindings gem to automate actions
+  and tasks inside of the &ly-editor;. '
+slug: editor-automation
+title: Automating the &ly-editor; with the Python Editor Bindings gem
+---
 # Automating the Lumberyard Editor with the Python Editor Bindings gem<a name="editor-automation"></a>
 
  Some tasks in the Lumberyard Editor are tedious or could easily be automated, and to support that, Lumberyard has support for scripting the editor through Python bindings to the underlying editor implementation\. These bindings are enabled with the **PythonEditorBindings** gem, and interacted with through a Python 3 library embedded within the editor\. You can access a Python REPL through an in\-editor console, or launch the editor with an argument that loads and runs a Python script on boot\. 

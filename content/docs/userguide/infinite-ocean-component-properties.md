@@ -1,3 +1,8 @@
+description: ' Use the Infinite Ocean component in &ALYlong; to change how you want
+  the ocean to appear. '
+slug: infinite-ocean-component-properties
+title: Infinite Ocean Component Properties
+---
 # Infinite Ocean Component Properties<a name="infinite-ocean-component-properties"></a>
 
 Use the following parameters for the **Infinite Ocean** component to change how the ocean appears\.
@@ -80,12 +85,12 @@ Default value: `1`, `7`, `5`
 **Example Low Density**  
 In the following example, the value for the **Density** parameter is low\. This makes the water more transparent, so that you can see the legs of the pier and the sand\.  
 
-![\[Example Infinite Ocean component with low fog density.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-3.png)
+![\[Example Infinite Ocean component with low fog density.\]](/images/component/infiniteocean/infinite-ocean-component-3.png)
 
 **Example High Density**  
 In the following example, the value for the **Density** parameter is high\. This makes the water appear cloudier and obscures details like the legs of the pier and sand\.  
 
-![\[Example Infinite Ocean component with high fog density.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-4.png)
+![\[Example Infinite Ocean component with high fog density.\]](/images/component/infiniteocean/infinite-ocean-component-4.png)
 
 ## Caustic<a name="infinite-ocean-component-properties-caustic"></a>
 
@@ -120,7 +125,7 @@ Valid values: `0` to `100.0`
 **Example Caustics**  
 The following is an example of how light interacts with the water below the surface\.  
 
-![\[Example Infinite Ocean component with the caustic parameters.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-2.png)
+![\[Example Infinite Ocean component with the caustic parameters.\]](/images/component/infiniteocean/infinite-ocean-component-2.png)
 
 ## Reflection<a name="infinite-ocean-component-properties-reflection"></a>
 
@@ -175,30 +180,30 @@ We recommend that you set and configure the **Tessellation** parameter once to a
 
 **Example Tessellation = 10, low setting**  
 
-![\[Example Infinite Ocean component with low value for tessellation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-8.png)
+![\[Example Infinite Ocean component with low value for tessellation.\]](/images/component/infiniteocean/infinite-ocean-component-8.png)
 At lower settings, there is a noticeable impact on the visual quality\.   
 
-![\[Example Infinite Ocean component with low value for tessellation as it renders in-game.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-11.png)
+![\[Example Infinite Ocean component with low value for tessellation as it renders in-game.\]](/images/component/infiniteocean/infinite-ocean-component-11.png)
 In the following example, the lower visual quality is more noticeable with higher values for **Waves Size** parameter\. There are fewer vertices to displace in the simulation, so the waves are not well\-defined\.  
 
-![\[ExampleInfinite Ocean component with low tessellation and waves.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-14.png)
+![\[ExampleInfinite Ocean component with low tessellation and waves.\]](/images/component/infiniteocean/infinite-ocean-component-14.png)
 
 **Example Tessellation = 85, default setting**  
 
-![\[Example Infinite Ocean component with default value for tessellation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-9.png)
+![\[Example Infinite Ocean component with default value for tessellation.\]](/images/component/infiniteocean/infinite-ocean-component-9.png)
 In most cases, the default settings for the **Tessellation** parameter are sufficient\.  
 
-![\[Example Infinite Ocean component with default value for tessellation as it renders in-game.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-12.png)
+![\[Example Infinite Ocean component with default value for tessellation as it renders in-game.\]](/images/component/infiniteocean/infinite-ocean-component-12.png)
 Specifying lower values for the **Waves Amount** parameter works better with higher values on the **Waves Size** parameter, but the higher tessellation smooths out the ocean surface\.  
 
-![\[Example Infinite Ocean component with default values for tessellation and waves.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-15.png)
+![\[Example Infinite Ocean component with default values for tessellation and waves.\]](/images/component/infiniteocean/infinite-ocean-component-15.png)
 
 **Example Tessellation = 500, high setting**  
 
-![\[Example Infinite Ocean component with high value for tessellation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-10.png)
+![\[Example Infinite Ocean component with high value for tessellation.\]](/images/component/infiniteocean/infinite-ocean-component-10.png)
 In the following example, higher values for the **Tessellation** parameter minimally impact the visual quality\.  
 
-![\[Example Infinite Ocean component with high value for tessellation as it renders in-game.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-13.png)
+![\[Example Infinite Ocean component with high value for tessellation as it renders in-game.\]](/images/component/infiniteocean/infinite-ocean-component-13.png)
 Specifying a high value for the **Waves Amount** parameter creates a choppier ocean surface, so it's helpful to increase the value for the **Tessellation** parameter\.  
 
-![\[Example Infinite Ocean component with high value for tessellation and waves.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/infiniteocean/infinite-ocean-component-16.png)
+![\[Example Infinite Ocean component with high value for tessellation and waves.\]](/images/component/infiniteocean/infinite-ocean-component-16.png)

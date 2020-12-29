@@ -1,8 +1,13 @@
+description: ' Use the &audio-controls-browser; ''s Inspector pane to edit the properties
+  of the currently selected control in &ALYlong;. '
+slug: audio-atl-editor-inspector
+title: Inspector Pane
+---
 # Inspector Pane<a name="audio-atl-editor-inspector"></a>
 
 In the **Inspector** pane, you can edit the properties of the control that you selected in the **ATL Controls** pane\. You can modify the control's **Name**, select a **Scope**, and modify the **Connected Controls**\.
 
-![\[Modify controls in the Inspector pane of the Audio Controls Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/audio/audio-atl-editor-inspector.png)
+![\[Modify controls in the Inspector pane of the Audio Controls Editor.\]](/images/audio/audio-atl-editor-inspector.png)
 
  The following table describes the properties that you can modify in the **Inspector** pane\. 
 

@@ -1,3 +1,8 @@
+description: ' Install the Project N.E.M.O sample level to learn and experience the
+  benefits of &ALYlong;''s &script-canvas; visual scripting system. '
+slug: script-canvas-nemo-sample
+title: Installing the Project N.E.M.O. Sample
+---
 # Installing the Project N\.E\.M\.O\. Sample<a name="script-canvas-nemo-sample"></a>
 
 Project N\.E\.M\.O \(Nautical Emergency Maneuvers and Operations\) is a complete sample game level that showcases some of the key capabilities of Script Canvas\. The sample level creates a short underwater navigation experience in which the player maneuvers a mini sub through obstacles and collects pickups\. The sample level uses Script Canvas and script events to implement submarine functionality, mines and squid behavior, HUD display, pickups, world space UI, and game end\. 

@@ -1,3 +1,8 @@
+description: ' Learn to animate characters in &ALYlong; with &emotionfx; &animation-editor;
+  . '
+slug: char-intro
+title: Create and animate characters
+---
 # Create and animate characters<a name="char-intro"></a>
 
 Most game projects require an animated character to move around in the environment\. This may be a character that the player controls, or an AI\-driven entity that interacts with the level\.

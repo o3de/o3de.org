@@ -1,3 +1,8 @@
+description: ' Customize your lightning arc effect entity by copying or modifying
+  presets in &ALY;''s lightningarceffects.xml file. '
+slug: gems-system-gem-lightning-arc-presets
+title: Customizing a Lightning Arc Preset
+---
 # Customizing a Lightning Arc Preset<a name="gems-system-gem-lightning-arc-presets"></a>
 
 You can customize your lightning arc entity using the presets in the `lightningarceffects.xml` file\. You can also copy and modify existing presets to create your own customized lightning arc presets\.

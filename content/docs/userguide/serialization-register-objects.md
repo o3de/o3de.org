@@ -1,3 +1,7 @@
+description: ' Register objects int the &ALY; engine for JSON or XML serialization. '
+slug: serialization-register-objects
+title: Register objects for serialization
+---
 # Register objects for serialization<a name="serialization-register-objects"></a>
 
  Serialization in Lumberyard is done by registering classes with a *serialization context*, which takes information about the provided class and uses reflection mechanisms to determine which class members to emit and their types\. Serialization is controlled through the `AZ::SerializeContext` class, declared in `AZCore/Serialization/SerializeContext.h` as part of the `AzCore` library\. 

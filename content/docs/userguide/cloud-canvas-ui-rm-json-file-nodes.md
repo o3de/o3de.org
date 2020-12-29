@@ -1,3 +1,8 @@
+description: ' Learn how to work with &cloud; JSON files in the &cloud; Resource Manager
+  in &ALYlong;. '
+slug: cloud-canvas-ui-rm-json-file-nodes
+title: Working with JSON Files
+---
 # Working with JSON Files<a name="cloud-canvas-ui-rm-json-file-nodes"></a>
 
 Some of the nodes in the **Cloud Canvas Resource Manager** navigation pane represent JSON template or settings files for your project\. The content of these files is described in detail in [Resource Definitions](cloud-canvas-resource-definitions.md)\. When you select one of these nodes in the navigation pane, the detail pane shows the contents of that file\. You can edit the file directly in the resource manager or use an external editor\. For more information, see [Editing Resource Manager Files](cloud-canvas-ui-rm-text-editing.md)\. 

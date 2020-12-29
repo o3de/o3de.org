@@ -1,3 +1,8 @@
+description: ' &ALYlong; is a free, cross-platform, cloud-connected game engine that
+  you can use to build games. '
+slug: lumberyard-intro
+title: What is &ALY;?
+---
 # What is Lumberyard?<a name="lumberyard-intro"></a>
 
 Amazon Lumberyard is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With Lumberyard, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
@@ -9,7 +14,7 @@ Interested? Want to get started?
 + [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Amazon Lumberyard forums](https://forums.awsgametech.com/)
 
-![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/starter-game-introduction-1.25.png)
+![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/starter-game-introduction-1.25.png)
 
 Image from Starter Game\. For more sample projects and levels, see [Using Lumberyard sample projects and levels](sample-projects-levels-intro.md)\.
 

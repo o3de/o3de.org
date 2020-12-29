@@ -1,3 +1,7 @@
+description: ' Use the PhysX Terrain component to create a physics collider in &ALYlong;. '
+slug: component-physx-terrain
+title: PhysX Terrain
+---
 # PhysX Terrain<a name="component-physx-terrain"></a>
 
 **Important**  
@@ -15,7 +19,7 @@ For more information about using PhysX components, see [Simulating physics behav
 
 ## PhysX Terrain Component Properties<a name="physx-terrain-component-properties"></a>
 
-![\[PhysX Terrain component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/ui-phsx-terrain-component-properties-1.27.png)
+![\[PhysX Terrain component properties.\]](/images/component/physx/ui-phsx-terrain-component-properties-1.27.png)
 
 
 | Property | Description | 

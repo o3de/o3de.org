@@ -1,3 +1,8 @@
+description: ' See the following best practices when working with slices and sequences
+  in &ALYlong;. '
+slug: working-with-slices-cinematic-sequences
+title: Working with Slices and Sequences
+---
 # Working with Slices and Sequences<a name="working-with-slices-cinematic-sequences"></a>
 
 When you create a track view sequence that has entities contained in slices or add a track view sequence in a slice, the process is the same as creating a track view sequence in a level\. The workflow is identical\. However, see the following best practices when working with slices and track view sequences\.
@@ -33,10 +38,10 @@ If you instantiate a slice for a track view sequence, ensure that parent entitie
 **Example : Animate Child Entities in a Slice**  
 The **Entity Outliner** shows two **Parent** slices, which have two children entities and a track view sequence\.  
 
-![\[Example slice that has a track view sequence, which has been instantiated.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-slice-example-1.png)
+![\[Example slice that has a track view sequence, which has been instantiated.\]](/images/cinematics/cinematics-slice-example-1.png)
 In the Track View, the **ExampleSequence** animates only the two children entities in the slice\. The **Parent** entity cannot be animated in a slice\.   
 
-![\[Example track view sequence that animates child slices, not the parent.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/cinematics-slice-example-2.png)
+![\[Example track view sequence that animates child slices, not the parent.\]](/images/cinematics/cinematics-slice-example-2.png)
 
 **Note**  
 The **[Transform](component-transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 

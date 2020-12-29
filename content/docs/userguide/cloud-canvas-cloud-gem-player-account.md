@@ -1,3 +1,8 @@
+description: ' Use the Player Account Cloud Gem to provide a standalone player authentication
+  and management system in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-player-account
+title: Player Account Cloud Gem Portal
+---
 # Player Account Cloud Gem Portal<a name="cloud-canvas-cloud-gem-player-account"></a>
 
 The Player Account Cloud Gem provides a standalone player authentication and management solution that uses Amazon Cognito\. The cloud gem includes a player registration API, built\-in two\-step verification, and support for both anonymous and authenticated players\. You can use your Cloud Gem Portal to administer players and manually register, delete, ban, and update their accounts\.
@@ -20,7 +25,7 @@ You are responsible for \(a\) providing legally adequate privacy notices to your
 
 To open the Player Account Cloud Gem Portal, click **Player Account** on the **Cloud Gems** page\.
 
-![\[Click Player Account\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-1.png)
+![\[Click Player Account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-1.png)
 
 ### Adding Players<a name="cloud-canvas-cloud-gem-player-account-adding-users"></a>
 
@@ -29,13 +34,13 @@ The first screen is the **Player Account** page, which lists the player accounts
 **To add a player to your game**
 
 1. Click **Add Account** to add a player\.  
-![\[Click Add Account\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-button.png)
+![\[Click Add Account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-button.png)
 
 1. In the **Add Account** dialog box, fill in the appropriate information\. Only the **Username** and **Email** fields are required\.  
-![\[Add account dialog box\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-dialog-box.png)
+![\[Add account dialog box\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-dialog-box.png)
 
    After you fill in the information, the player appears in the list of player accounts\.  
-![\[Player Account page\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-2.png)
+![\[Player Account page\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-2.png)
 
    Each player entry has the following fields:
    + **User Name** – The Amazon Cognito user name\.
@@ -53,21 +58,21 @@ The first screen is the **Player Account** page, which lists the player accounts
      + **Unknown** – The account is in an unknown state\. Use the Amazon Cognito console to investigate further\.
 
 1. You can use the box and filter on the upper right of the **Player Account** page to search the list of player accounts\.  
-![\[Filter options\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-3.png)
+![\[Filter options\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-3.png)
 
 ### Viewing and Editing Account Details<a name="cloud-canvas-cloud-gem-player-account-viewing-and-editing-account-details"></a>
 
 To view the details of an account, click the account\. The **Player Account Profile** page shows additional account details\.
 
-![\[Player account profile\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-4.png)
+![\[Player account profile\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-4.png)
 
 To edit the player's information, click the settings ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-settings-icon.png) icon in the **Player Account Profile** box\.
 
-![\[Edit player account profile\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-5.png)
+![\[Edit player account profile\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-5.png)
 
 All fields are editable except **Account ID** and **Username**\.
 
-![\[Edit player account\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-6.png)
+![\[Edit player account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-6.png)
 
 ### Confirming an Account<a name="cloud-canvas-cloud-gem-player-account-confirming-an-account"></a>
 
@@ -88,12 +93,12 @@ Accounts that you ban no longer can log in to the game\.
 **To ban an account**
 
 1. On the **Player Account** page, click the ban ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon next to the player\.  
-![\[Banning an account\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-8.png)
+![\[Banning an account\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-8.png)
 
 1. In the **Ban Player Account** confirmation dialog box, click **Save**\. The account disappears from the **Accounts** tab\.
 
 1. Click the **Banned Players** tab\. The banned account has been added to the banned players list\.  
-![\[Banned players list\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
+![\[Banned players list\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
 
 ### Removing a Ban<a name="cloud-canvas-cloud-gem-player-account-removing-a-ban"></a>
 
@@ -102,10 +107,10 @@ Removing a ban from an account is similar to adding one\.
 **To remove an ban from an account**
 
 1. On the **Player Account** page, click the **Banned Players** tab\.  
-![\[Banned players list\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
+![\[Banned players list\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
 
 1. Click the ban ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon for the account that you want to reinstate\.  
-![\[Remove ban\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-remove-ban.png)
+![\[Remove ban\]](/images/cloud_canvas/cloud-canvas-cloud-gem-player-account-remove-ban.png)
 
 1. In the confirmation dialog box, click **Save**\. 
 

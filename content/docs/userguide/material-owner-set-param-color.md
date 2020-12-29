@@ -1,3 +1,8 @@
+description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; editor
+  to specify a material''s color parameter value for the specified entity. '
+slug: material-owner-set-param-color
+title: Set Param Color
+---
 # Set Param Color<a name="material-owner-set-param-color"></a>
 
 Sets a material's color parameter value for the specified entity\.
@@ -6,7 +11,7 @@ Sets a material's color parameter value for the specified entity\.
 + [Inputs](#material-owner-set-param-color-input)
 + [Outputs](#material-owner-set-param-color-output)
 
-![\[setparamcolornode, setparamcolor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-material-owner-node.png)
+![\[setparamcolornode, setparamcolor\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-material-owner-node.png)
 
 ## Inputs<a name="material-owner-set-param-color-input"></a>
 

@@ -1,3 +1,8 @@
+description: ' Add a layout fitter component to an element in the &ALYlong; &ui-canvas-editor;
+  to make the element fit its content. '
+slug: ui-editor-components-layout-fitter
+title: LayoutFitter
+---
 # LayoutFitter<a name="ui-editor-components-layout-fitter"></a>
 
 You can use the **LayoutFitter** component to make an element resize itself to fit its content\. Use this component with other components that provide cell sizing information, such as the **Text** component, the **Image** component \(with **ImageType** set to **Fixed**\), or the **Layout** components \(**Cell**, **Row**, **Column**, **Grid**\)\. 
@@ -6,7 +11,7 @@ To see an in\-game example of a completed canvas with the **LayoutFitter** compo
 
 To view that same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Layout` directory and open the `\fitter.uicanvas` file\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-component-layout-fitter-canvas.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-component-layout-fitter-canvas.png)
 
 **To edit a layout fitter component**  
 In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **LayoutFitter** and do the following, as appropriate:    

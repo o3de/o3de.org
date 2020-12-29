@@ -1,3 +1,8 @@
+description: ' Use the edit context to expose parameters for editing in &ALYlong;''s
+  &ly-editor;. '
+slug: component-entity-system-reflection-edit-context
+title: Edit Context
+---
 # Edit Context<a name="component-entity-system-reflection-edit-context"></a>
 
 The Lumberyard edit context is a utility context that relies on the [Serialization Context](component-entity-system-reflection-serialization-context.md)\. You can use the edit context to expose parameters of serialized data for editing in Lumberyard Editor\. However, the edit context is an abstract container for edit data\. As such, it is not directly tied to any specific editor\. Any editor can query the data in the edit context and implement its own visualization and editing controls\.

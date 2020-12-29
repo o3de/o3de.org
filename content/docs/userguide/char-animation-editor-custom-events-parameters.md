@@ -1,3 +1,7 @@
+description: ' Create custom events and parameters for use in &ALYlong;''s &animation-editor;. '
+slug: char-animation-editor-custom-events-parameters
+title: Creating Custom Motion Events and Parameters Using C++
+---
 # Creating Custom Motion Events and Parameters Using C\+\+<a name="char-animation-editor-custom-events-parameters"></a>
 
 You can author custom event classes with custom parameters and reflect them to the edit context for use in Animation Editor\. By creating predefined motion events with known parameters, you minimize the performance impact of complex parameters and reduce the risk of human error\.

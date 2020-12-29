@@ -1,3 +1,8 @@
+description: ' Use the UITextInputComponent to provide player text input capability
+  in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uitextinputcomponent
+title: UITextInputComponent
+---
 # UITextInputComponent<a name="lua-scripting-ces-api-ui-uitextinputcomponent"></a>
 
 You can use a text input component to provide player text input capability\.

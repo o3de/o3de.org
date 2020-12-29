@@ -1,3 +1,7 @@
+description: ' Debug AI navigation with console variables in &ALYlong;. '
+slug: ai-nav-debug
+title: Debugging AI Navigation
+---
 # Debugging AI Navigation<a name="ai-nav-debug"></a>
 
 In addition to using the AI Debug Recorder and AI Debug Viewer, you can also use specific console variables to debug AI agent navigation issues\.

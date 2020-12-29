@@ -1,3 +1,8 @@
+description: ' How to use Amazon Elastic Compute Cloud (Amazon EC2) to run the &ALYlong;
+  shader compiler for mobile and macOS development. '
+slug: ios-android-running-shader-compiler-amazon-EC2
+title: Running the Shader Compiler on Amazon EC2
+---
 # Running the Shader Compiler on Amazon EC2<a name="ios-android-running-shader-compiler-amazon-EC2"></a>
 
 Amazon Elastic Compute Cloud \(Amazon EC2\) provides a [GPU instance](https://aws.amazon.com/blogs/aws/build-3d-streaming-applications-with-ec2s-new-g2-instance-type/) that you can use to run the Lumberyard shader compiler for mobile \(Android and iOS\) and macOS development\. For example, you can use the AWS device farm to test a build rather than hosting a PC on a public IP address\. Amazon EC2 also provides a G2 instance type that supports advanced rendering features such as texturing, shadows, and anti\-aliasing\. For more information, see [Amazon EC2 Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Instances.html)\.

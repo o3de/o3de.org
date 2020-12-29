@@ -1,3 +1,8 @@
+description: ' Use the serialization context to provide persistence for C++ objects
+  or &ALY; types in &ALYlong;. '
+slug: component-entity-system-reflection-serialization-context
+title: Serialization Context
+---
 # Serialization Context<a name="component-entity-system-reflection-serialization-context"></a>
 
 You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C\+\+ objects or any Lumberyard type\. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:

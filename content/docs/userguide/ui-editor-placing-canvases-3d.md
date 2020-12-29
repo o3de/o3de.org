@@ -1,3 +1,7 @@
+description: ' Place a UI canvas on an object in the 3d world in &ALYlong;. '
+slug: ui-editor-placing-canvases-3d
+title: Placing UI Canvases in the 3D World
+---
 # Placing UI Canvases in the 3D World<a name="ui-editor-placing-canvases-3d"></a>
 
 You can place a UI canvas directly on an object in the 3D world, as opposed to showing it in screen space\. To do this, you render a UI canvas to a texture, and then use that texture in a material on a 3D mesh\.
@@ -24,4 +28,4 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 1. Add a **UI Canvas on Mesh** component\. Type a canvas name in the **Render target override** property if you want to load several instances of the UI canvas on different meshes and have them display different states\. Otherwise, leave this property blank\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-placing-canvases-3d.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-placing-canvases-3d.png)

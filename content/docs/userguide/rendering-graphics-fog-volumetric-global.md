@@ -1,3 +1,9 @@
+description: ' Use global volumetric fog in your &ALYlong; level to realistically
+  simulate particles distributed uniformly along the ground and falling off with height
+  above sea level. '
+slug: rendering-graphics-fog-volumetric-global
+title: Setting Global (Time of Day) Volumetric Fog
+---
 # Setting Global \(Time of Day\) Volumetric Fog<a name="rendering-graphics-fog-volumetric-global"></a>
 
 You can use global volumetric fog to simulate particles that are distributed uniformly along the ground and fall off exponentially with height above sea level\. Global volumetric fog accurately accounts for time of day lighting and for scattered sunlight rays to produce halos around the sun\.

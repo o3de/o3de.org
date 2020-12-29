@@ -1,3 +1,8 @@
+description: ' Use the behavior context in &ALYlong; to make runtime code accessible
+  to scripting languages like Lua or scripting environments like &ALY;''s &script-canvas;. '
+slug: component-entity-system-reflection-behavior-context
+title: Behavior Context
+---
 # Behavior Context<a name="component-entity-system-reflection-behavior-context"></a>
 
 You can use the behavior context to reflect runtime code to make it accessible to scripting languages like Lua or scripting environments like Lumberyard's Script Canvas\. The behavior context provides bindings that invoke runtime C\+\+ code\.

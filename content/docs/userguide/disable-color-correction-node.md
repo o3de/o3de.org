@@ -1,3 +1,8 @@
+description: ' Use the Disable Color Correction node in the &ALYlong; &script-canvas;
+  editor to disable color correction parameters. '
+slug: disable-color-correction-node
+title: Disable Color Correction
+---
 # Disable Color Correction<a name="disable-color-correction-node"></a>
 
 Disables color correction parameters\.
@@ -8,7 +13,7 @@ To enable the effect, see [Enable Color Correction](enable-color-correction-node
 + [Inputs](#disable-color-correction-node-input)
 + [Outputs](#disable-color-correction-node-output)
 
-![\[disablecolorcorrection, disablecolorcorrectionnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-color-correction-node.png)
+![\[disablecolorcorrection, disablecolorcorrectionnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-color-correction-node.png)
 
 ## Inputs<a name="disable-color-correction-node-input"></a>
 

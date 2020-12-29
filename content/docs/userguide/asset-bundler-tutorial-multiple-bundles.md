@@ -1,3 +1,8 @@
+description: ' Learn how to create separate asset bundles for a release build with
+  multiple game levels in &ALY;. '
+slug: asset-bundler-tutorial-multiple-bundles
+title: Creating Multiple Asset Bundles
+---
 # Creating Multiple Asset Bundles<a name="asset-bundler-tutorial-multiple-bundles"></a>
 
 
@@ -27,21 +32,21 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
  In this section of the tutorial, you'll create a new level for the Starter Game that displays a static scene containing a single entity\. 
 
 1. Launch the editor, and create a second level\. Name it **level2**\.  
-![\[Creating a new level in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/01.png)
+![\[Creating a new level in Lumberyard Editor.\]](/images/assetbundler/tutorial-multiple-bundles/01.png)
 
 1. Create a camera\. Right\-click on the viewport and choose **Create camera entity from view**\.  
-![\[Choose Create camera entity from current view.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/02.png)
+![\[Choose Create camera entity from current view.\]](/images/assetbundler/tutorial-multiple-bundles/02.png)
 
 1. Create an object in front of the camera\. To make sure that the object you create is located correctly, you may need to pull the perspective in the viewport back a bit so that you can clearly see the view frustum of the camera and know where the place the object\.
 
    1. Create a new entity in the level by right\-clicking in the viewport somewhere within the camera frustum, and selecting **Create entity**\.  
-![\[Right-clicking in the Lumberyard Editor viewport to create a new entity.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/03.png)
+![\[Right-clicking in the Lumberyard Editor viewport to create a new entity.\]](/images/assetbundler/tutorial-multiple-bundles/03.png)
 
    1. In the Asset Browser view, search for the **am\_rock\_boulder\_01\.cgf** mesh\.  
-![\[Select the search bar in the Asset Browser view to search for the mesh, and then select the am_rock_boulder_01.cgf result.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/04.png)
+![\[Select the search bar in the Asset Browser view to search for the mesh, and then select the am_rock_boulder_01.cgf result.\]](/images/assetbundler/tutorial-multiple-bundles/04.png)
 
    1. Drag the boulder mesh on to the entity you created\.  
-![\[Assigning the boulder mesh to an entity with drag-and-drop.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/05.png)
+![\[Assigning the boulder mesh to an entity with drag-and-drop.\]](/images/assetbundler/tutorial-multiple-bundles/05.png)
 
 1. Make sure that the boulder is visible from the camera position by running your game in the editor\. Select **Game** > **Play Game** \(Ctrl\-G\)\. If you can't see the boulder, adjust its position with the editor's **Move** tool and make sure it appears within the camera's view\.
 
@@ -105,7 +110,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
 
 If everything works, you should see a scene similar to the following:
 
-![\[A static level scene displaying a single boulder mesh located in front of the camera.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-multiple-bundles/06.png)
+![\[A static level scene displaying a single boulder mesh located in front of the camera.\]](/images/assetbundler/tutorial-multiple-bundles/06.png)
 
 ## Conclusion<a name="asset-bundler-tutorial-multiple-bundles-conclusion"></a>
 

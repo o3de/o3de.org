@@ -1,8 +1,13 @@
+description: ' Use a button component to make an element behave like a button in the
+  &ALY; &ui-canvas-editor;. '
+slug: ui-editor-components-button
+title: Button
+---
 # Button<a name="ui-editor-components-button"></a>
 
 You can use a **Button** component to make an element behave like a button\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-button.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-button.png)
 
 To see an in\-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**\. You can view the different types of buttons you can create\. Press **Esc** to exit the game\.
 

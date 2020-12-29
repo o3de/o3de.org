@@ -1,3 +1,8 @@
+description: ' Use the UIFlipbookAnimationComponent to animate the display of a range
+  of cells in a sprite sheet image in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uiflipbookanimationcomponent
+title: UIFlipbookAnimationComponent
+---
 # UIFlipbookAnimationComponent<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent"></a>
 
 The `UIFlipbookAnimationComponent` animates the display of a range of cells in a sprite sheet image\. You must use an **Image** component along with the **UIFlipbookAnimationComponent** component\.

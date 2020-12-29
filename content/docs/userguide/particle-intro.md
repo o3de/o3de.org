@@ -1,3 +1,8 @@
+description: ' Use the &particle-editor; in &ALYlong; to create and manage particles
+  in your game, such as explosions, smoke, water, and so on. '
+slug: particle-intro
+title: Adding particle effects
+---
 # Adding particle effects<a name="particle-intro"></a>
 
 Lumberyard includes an advanced particle effects system that you can use to simulate explosions, fire, smoke, sparks, water spray, fog, snow, rain, and other effects\. Use the **Particle Editor** to create and manage particle effects in your game\. You can place particle emitters in your level, link them to an object, set up a material to define a custom effect, and control these effects from **Script Canvas** and the Track View\.

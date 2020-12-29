@@ -1,3 +1,8 @@
+description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see tweeners
+  in action. '
+slug: ui-animating-tweener-sample
+title: Tweener Sample Level
+---
 # Tweener Sample Level<a name="ui-animating-tweener-sample"></a>
 
 You can use the [Samples Project](sample-project-samples.md) to see an example level that uses tweeners\.
@@ -5,10 +10,10 @@ You can use the [Samples Project](sample-project-samples.md) to see an example l
 **To see example Scripted Entity Tweeners in action**
 
 1. In Lumberyard Editor, in the [Samples Project](sample-project-samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.  
-![\[Example level that uses Scripted Entity Tweener.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animating-tweener-level.png)
+![\[Example level that uses Scripted Entity Tweener.\]](/images/ui-animating-tweener-level.png)
 
 1. To switch to gameplay mode, press **Ctrl\+G**\. The header, list items, earth, stars, and spaceship use tweeners for their animation\.  
-![\[Animated demonstration of the Sample Level for Tweeners\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animating-tweener-uisample.gif)
+![\[Animated demonstration of the Sample Level for Tweeners\]](/images/ui-animating-tweener-uisample.gif)
 
 1. Press **Esc** to exit\.
 
@@ -25,7 +30,7 @@ You can use the [Samples Project](sample-project-samples.md) to see an example l
 1. In the **Hierarchy** pane, select **MenuSample**\.
 
 1. In the **Properties** pane, under the **Lua Script** component, for **Script**, click the **\{ \}** icon\. This opens the `samplescreenanimation` script in the **Lua Editor**\.  
-![\[Select the Lua script for the sample tweener code.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/ui-animating-tweener-sample-1.png)
+![\[Select the Lua script for the sample tweener code.\]](/images/ui-animating-tweener-sample-1.png)
 
 1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](ui-animating-tweener-parameters.md)\.
 

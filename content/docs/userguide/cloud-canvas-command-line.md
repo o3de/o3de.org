@@ -1,3 +1,8 @@
+description: ' Use the &cloud; lmbr_aws.cmd command line tool for working with &AWS;
+  resources. '
+slug: cloud-canvas-command-line
+title: Using the &cloud; Command Line
+---
 # Using the Cloud Canvas Command Line<a name="cloud-canvas-command-line"></a>
 
 Cloud Canvas provides the `\dev\lmbr_aws.cmd` command line tool for working with AWS resources\. The tool invokes Python code that is located in the `\dev\Tools\lmbr_aws` directory\.

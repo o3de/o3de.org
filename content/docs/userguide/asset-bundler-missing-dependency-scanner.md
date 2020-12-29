@@ -1,3 +1,8 @@
+description: ' Use the missing dependency scanner in &ALY; to identify missing asset
+  references. '
+slug: asset-bundler-missing-dependency-scanner
+title: Using the Missing Dependency Scanner
+---
 # Using the Missing Dependency Scanner<a name="asset-bundler-missing-dependency-scanner"></a>
 
 Use the `AssetProcessorBatch.exe` tool to scan your files for patterns that look like missing dependencies\. To perform a scan, run the `AssetProcessorBatch.exe` command using the `dependencyScanPattern` \(or `dsp`\) flag\. Because the command performs a SQL query, use search strings compatible with SQL syntax; for example, the wildcard character is `%`, not `*`\.
@@ -50,7 +55,7 @@ The following procedures show you how to create an XML file that has a missing d
    ```
 
    The following image shows sample asset database output\.  
-![\[Sample output from an asset scan in the asset database.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-missing-dependency-scanner-1.png)
+![\[Sample output from an asset scan in the asset database.\]](/images/assetbundler/asset-bundler-missing-dependency-scanner-1.png)
 
 Next, create a schema to match this file and output, or *emit*, the dependency\.
 
@@ -59,7 +64,7 @@ Next, create a schema to match this file and output, or *emit*, the dependency\.
 1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\. 
 
 1. In the **Asset Editor**, choose **File**, **New**, **XML Schema**\.  
-![\[Creating a new schema file in the Asset Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-missing-dependency-scanner-2.png)
+![\[Creating a new schema file in the Asset Editor.\]](/images/assetbundler/asset-bundler-missing-dependency-scanner-2.png)
 
 1. For **Matching** Rules, click the plus \(**\+**\) icon to add a rule\.
 
@@ -82,7 +87,7 @@ Next, create a schema to match this file and output, or *emit*, the dependency\.
 1. Save the `missingdependency.xml` again to force it to reprocess\.
 
 1. Verify that the dependency now appears correctly in the asset database, as the following images show:  
-![\[Dependency appearing correctly in the asset database.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-missing-dependency-scanner-3.png)
+![\[Dependency appearing correctly in the asset database.\]](/images/assetbundler/asset-bundler-missing-dependency-scanner-3.png)
 
 1. Run the missing dependency scanner again, using syntax, as shown in the following example:
 

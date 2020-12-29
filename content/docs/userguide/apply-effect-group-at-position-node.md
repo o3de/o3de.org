@@ -1,3 +1,8 @@
+description: ' Use the Apply Effect Group at Position node in the &ALYlong; &script-canvas;
+  editor to apply an effect group file. '
+slug: apply-effect-group-at-position-node
+title: Apply Effect Group At Position
+---
 # Apply Effect Group At Position<a name="apply-effect-group-at-position-node"></a>
 
 Applies an effect group at a specific position in the world\. You must use this node instead of the **[Enable Effect Group](enable-effect-group-node.md)** node for effect group `xml` files that include the **fadeDistance** parameter\.
@@ -10,7 +15,7 @@ For more information, see [Setting Effect Strength Based on Camera Distance](eff
 + [Inputs](#apply-effect-group-at-position-node-input)
 + [Outputs](#apply-effect-group-at-position-node-output)
 
-![\[applyeffectgroupatposition, applyefffectgroupatpositionnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-apply-effect-group-at-position-node.png)
+![\[applyeffectgroupatposition, applyefffectgroupatpositionnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-apply-effect-group-at-position-node.png)
 
 ## Inputs<a name="apply-effect-group-at-position-node-input"></a>
 

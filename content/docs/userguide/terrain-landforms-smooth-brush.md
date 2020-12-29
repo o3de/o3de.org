@@ -1,3 +1,8 @@
+description: ' Use the smooth brush to average out terrain heights to provide a smoother
+  surface to your &ALY; terrain. '
+slug: terrain-landforms-smooth-brush
+title: Using the Smooth Brush
+---
 # Using the Smooth Brush<a name="terrain-landforms-smooth-brush"></a>
 
 

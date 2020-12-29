@@ -1,3 +1,8 @@
+description: ' Use the Scale to Device setting in the &ui-canvas-editor; to scale
+  game UIs to different resolutions in &ALYlong;. '
+slug: ui-editor-transform-scale
+title: Scale to Device
+---
 # Scale to Device<a name="ui-editor-transform-scale"></a>
 
 The **Scale to Device** property helps build game UIs that can display on multiple screen resolutions\. You can preview your canvas at different resolutions in the UI Editor in **Preview Mode**\.
@@ -67,7 +72,7 @@ The elements that make up the UI are all contained in a parent element and has t
 | Width and Height | Matches the authored canvas size \(for example, 1280x720\) | 
 | Scale to device | Scale to fit \(uniformly\) | 
 
-![\[Scale to fit uniformly example.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-transform-scale-1.gif)
+![\[Scale to fit uniformly example.\]](/images/game_ui_editor/ui-editor-transform-scale-1.gif)
 
 ### Scale to Fit Y<a name="ui-editor-transform-scale-fit-y"></a>
 
@@ -88,7 +93,7 @@ The elements that make up the buttons are contained in a layout column element\.
 | Pivot | Default settings: X = 0\.5, Y = 0\.5 | 
 | Scale to device | Scale to fit Y \(uniformly\) | 
 
-![\[Scale to fit Y uniformly example.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-transform-scale-2.gif)
+![\[Scale to fit Y uniformly example.\]](/images/game_ui_editor/ui-editor-transform-scale-2.gif)
 
 ## Uniform Scaling While Maintaining Relative Position<a name="ui-editor-transform-scale-uniform-position"></a>
 
@@ -123,4 +128,4 @@ The following images show how the health bar and speed indicator scales based on
 **Note**  
 The indicated resolutions are not shown to scale\.
 
-![\[Example of scaling elements while maintaining relative positions.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-transform-scale-uniform-position.png)
+![\[Example of scaling elements while maintaining relative positions.\]](/images/game_ui_editor/ui-editor-transform-scale-uniform-position.png)

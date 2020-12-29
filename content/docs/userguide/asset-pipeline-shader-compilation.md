@@ -1,3 +1,8 @@
+description: ' Precompile shaders for release builds of &ALYlong; projects into .pak
+  files. '
+slug: asset-pipeline-shader-compilation
+title: Compiling Shaders for Release Builds
+---
 # Compiling Shaders for Release Builds<a name="asset-pipeline-shader-compilation"></a>
 
 If you build game projects with Lumberyard, shaders for release builds should be compiled and packaged into `.pak` files\. 

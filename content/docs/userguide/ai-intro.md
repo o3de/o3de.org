@@ -1,3 +1,7 @@
+description: ' Employ artificial intelligence in &ALYlong;. '
+slug: ai-intro
+title: Employing artificial intelligence
+---
 # Employing artificial intelligence<a name="ai-intro"></a>
 
 In the context of a game, AI refers to the technology or system used to endow seemingly\-intelligent actions and behaviors to an agent or character, called the AI agent\.

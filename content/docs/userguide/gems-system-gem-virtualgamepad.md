@@ -1,3 +1,8 @@
+description: ' Use the Virtual Gamepad gem in &ALYlong; to provide your game''s UI
+  with touch screen controls on mobile devices. '
+slug: gems-system-gem-virtualgamepad
+title: Virtual Gamepad Gem
+---
 # Virtual Gamepad Gem<a name="gems-system-gem-virtualgamepad"></a>
 
 Use the Virtual Gamepad gem to provide your game's UI with touch screen capabilities on mobile devices\. After you enable the Virtual Gamepad gem, you can add the virtual gamepad components to your game's UI in the **UI Editor**\.
@@ -14,7 +19,7 @@ There is no limit for the number of active UI canvases that can contain virtual 
 **Example**  
 To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](animation-editor-rin-locomotion-sample.md) level from the [Samples Project](sample-project-samples.md) on a device with touch screen support\.  
 
-![\[Provide your game with touch screen capabilities when played on a mobile device.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-gems-system-gem-virtualgamepad-1.png)
+![\[Provide your game with touch screen capabilities when played on a mobile device.\]](/images/shared-gems-system-gem-virtualgamepad-1.png)
 
 You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](ui-editor-creating-canvases.md)\. 
 
@@ -28,13 +33,13 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 1. For each component, select an **Input Channel**\.
 
-![\[Input Channel selection for the VirtualGamepadButton\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-virtualgamepad-2.png)
+![\[Input Channel selection for the VirtualGamepadButton\]](/images/gems/gems-system-gem-virtualgamepad-2.png)
 
 For more information about input in Lumberyard, see [Input in Amazon Lumberyard](input-intro.md)\.
 
 To modify the list of available virtual gamepad input channels, use the Project Configurator to edit the virtual gamepad's system component \. For more information, see [Configuring Advanced Settings](configurator-advanced.md)\.
 
-![\[Use the Project Configurator to modify the list of available virtual gamepad input channels.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-virtualgamepad-3.png)
+![\[Use the Project Configurator to modify the list of available virtual gamepad input channels.\]](/images/gems/gems-system-gem-virtualgamepad-3.png)
 
 ## Virtual Gamepad Component Properties<a name="gems-system-gem-virtualgamepad-properties"></a>
 
@@ -43,12 +48,12 @@ The Virtual Gamepad gem features two components that you can use to customize in
 ****VirtualGamepadButton****  
 **VirtualGamepadButton** has one property, **Input Channel**\. Select the appropriate input\.  
 
-![\[Input Channel selection for the VirtualGamepadButton.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-virtualgamepad-properties-1.png)
+![\[Input Channel selection for the VirtualGamepadButton.\]](/images/gems/gems-system-gem-virtualgamepad-properties-1.png)
 
 ****VirtualGamepadThumbstick****  
 **VirtualGamepadThumbstick** has the following properties:  
 
-![\[VirutalGamepadThumbStick component properties\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-virtualgamepad-properties-2.png)  
+![\[VirutalGamepadThumbStick component properties\]](/images/gems/gems-system-gem-virtualgamepad-properties-2.png)  
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-gem-virtualgamepad.html)
 

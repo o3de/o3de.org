@@ -1,8 +1,12 @@
+description: ' View the InstantVR Lua script properties in &ALYlong;. '
+slug: virtual-reality-instant-vr-lua
+title: InstantVR Lua Script Properties
+---
 # InstantVR Lua Script Properties<a name="virtual-reality-instant-vr-lua"></a>
 
 You can view **instantVR**'s assets in the **Entity Outliner**\. The **instantVR** slice contains a Lua script called `instantVR`, which includes many of the child entities that add controller tracking and provide teleport support\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/vr/virtual-reality-instant-vr-outliner.png)
+![\[Image NOT FOUND\]](/images/vr/virtual-reality-instant-vr-outliner.png)
 
 The `instantVR` Lua script has the following properties:
 

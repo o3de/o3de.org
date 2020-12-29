@@ -1,3 +1,8 @@
+description: ' Use the Beach City sample project to create your own levels in your
+  &ALY; game project. '
+slug: sample-level-beach-city-night-assets
+title: Beach City Sample Project &endash; Legacy
+---
 # Beach City Sample Project – Legacy<a name="sample-level-beach-city-night-assets"></a>
 
 The Beach City sample project includes free assets that you can use to create your own levels\. Although the Beach City sample project is intended to be a visual demo and is not a playable demo, you can add player controls to the level if you wish to make it playable\.
@@ -21,6 +26,6 @@ To ensure that the Beach City project launches, you must use **Lumberyard Setup 
 
 Sample images from the Beach City sample project:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/samples-beachcity-1.png)
+![\[Image NOT FOUND\]](/images/samples-beachcity-1.png)
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/samples-beachcity-2.png)
+![\[Image NOT FOUND\]](/images/samples-beachcity-2.png)

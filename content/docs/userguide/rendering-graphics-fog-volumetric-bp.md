@@ -1,3 +1,8 @@
+description: ' Use the following best practices when working with volumetric fog in
+  &ALY;. '
+slug: rendering-graphics-fog-volumetric-bp
+title: Best Practices for Volumetric Fog
+---
 # Best Practices for Volumetric Fog<a name="rendering-graphics-fog-volumetric-bp"></a>
 
 See the following best practices for working with volumetric fog\.

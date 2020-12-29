@@ -1,3 +1,7 @@
+description: ' Use shared code for your cloud gem framework in &ALYlong;. '
+slug: cloud-canvas-cgf-shared-code
+title: Using Shared Code
+---
 # Using Shared Code<a name="cloud-canvas-cgf-shared-code"></a>
 
 The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](cloud-canvas-command-line-cgf.md#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Prior to Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.

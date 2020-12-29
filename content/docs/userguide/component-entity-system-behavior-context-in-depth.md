@@ -1,3 +1,8 @@
+description: ' Learn programming details of &ALYlong;''s behavior context and its
+  reflection API. '
+slug: component-entity-system-behavior-context-in-depth
+title: Behavior Context in Depth
+---
 # Behavior Context in Depth<a name="component-entity-system-behavior-context-in-depth"></a>
 
 In Lumberyard 1\.8, the *behavior context* replaces *script context*\. The behavior context works with *serialize context*, *edit context*, and *network context* to provide rich C\+\+ reflection\. The behavior context focuses on the runtime aspects of C\+\+ code and allows you to manipulate C\+\+ code and objects while they are being created\. All script bindings, including Lua, use this reflection\. Reflection is also used for modification of objects while in running state \(such as animating object properties\) and reading of current properties for component state transitions\. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts in order to implement reloading\. At a high level, the behavior context uses only a few primitives on which to build: properties, methods, classes, EBuses and attributes\.

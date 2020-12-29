@@ -1,3 +1,9 @@
+description: ' Use volumetric fog in your &ALY; level for fog that supports regular
+  light and sunlight with dynamic shadows, environment probes, ambient light, as well
+  as variations in fog density. '
+slug: rendering-graphics-fog-volumetric
+title: Volumetric Fog
+---
 # Volumetric Fog<a name="rendering-graphics-fog-volumetric"></a>
 
 Volumetric fog uses volume textures as a view\-frustum\-shaped [voxel](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#voxel) buffer to store incoming light and its properties\. Volumetric fog supports regular light and sunlight with dynamic shadows, environment probes, ambient light, as well as variations in fog density\. It also supports the application of volumetric fog with respect to opaque and transparent materials\.
@@ -5,12 +11,12 @@ Volumetric fog uses volume textures as a view\-frustum\-shaped [voxel](https://d
 **Example**  
 In the following example, volumetric fog is disabled\.  
 
-![\[Volumetric fog disabled\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/rendering/rendering-graphics-volumetric-fog-disabled.png)
+![\[Volumetric fog disabled\]](/images/rendering/rendering-graphics-volumetric-fog-disabled.png)
 
 **Example**  
 In the following example, volumetric fog is enabled\.  
 
-![\[Volumetric fog enabled\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/rendering/rendering-graphics-volumetric-fog-enabled.png)
+![\[Volumetric fog enabled\]](/images/rendering/rendering-graphics-volumetric-fog-enabled.png)
 
 You can add the **Fog Volume** component to an entity to create fog effects\. For more information, see the **[Fog Volume](component-fog-volume.md)** component\.
 

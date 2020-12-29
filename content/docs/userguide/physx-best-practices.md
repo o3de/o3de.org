@@ -1,3 +1,7 @@
+description: ' See the following best practices for working with PhysX in &ALYlong;. '
+slug: physx-best-practices
+title: PhysX Best Practices
+---
 # PhysX Best Practices<a name="physx-best-practices"></a>
 
 See the following best practices when working with PhysX\.

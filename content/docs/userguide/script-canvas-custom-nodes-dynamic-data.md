@@ -1,3 +1,8 @@
+description: ' Use dynamic data slots to enable a single node to process a variety
+  of data types in &script-canvas;, &ALYlong;''s visual scripting system. '
+slug: script-canvas-custom-nodes-dynamic-data
+title: Dynamic Data Slots
+---
 # Dynamic Data Slots<a name="script-canvas-custom-nodes-dynamic-data"></a>
 
 There are cases where a single node can function on multiple different input types \(for example, the **Lerp Between** node can function on numbers and vector objects\)\. To reduce the number of unique nodes, you can use dynamic data slots\. Dynamic data slots enable a single node to handle a variety of data types\. At the same time, they allow restrictions on the data types that can be connected\.
@@ -34,7 +39,7 @@ When dynamic types are connected, the receiving slot takes on the data type and 
 
 **Example**  
 
-![\[Create a dynamically chained node.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-chained-dynamic-types.gif)
+![\[Create a dynamically chained node.\]](/images/scripting/script-canvas/script-canvas-chained-dynamic-types.gif)
 
 Like dynamic groups, any pair of dynamically typed nodes that are linked share the same restrictions\. This includes any restrictions from the node group\. Additionally, the slots are usually in the most unrestricted state as possible\. Unless a display type gives a set of dynamically typed slots a type, the slots remain untyped\.
 

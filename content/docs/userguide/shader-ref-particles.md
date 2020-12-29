@@ -1,3 +1,7 @@
+description: ' Use the particles shader to render particle effects in &ALYlong;. '
+slug: shader-ref-particles
+title: Particles Shader
+---
 # Particles Shader<a name="shader-ref-particles"></a>
 
 The Particles shader is used to render particle effects for fire, smoke, lightning, sparks, and fog that are affected by light, and as such cast shadows and cause reflections\.

@@ -1,3 +1,7 @@
+description: ' Use Lua script to configure network binding of properties in &ALYlong;. '
+slug: lua-script-networking-binding
+title: Network Binding Properties
+---
 # Network Binding Properties<a name="lua-script-networking-binding"></a>
 
 For network binding features to function, you must have a [Creating a NetBindable Component](network-replicas-binding.md)\.

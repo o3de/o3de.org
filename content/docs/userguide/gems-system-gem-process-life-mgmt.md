@@ -1,8 +1,14 @@
+description: ' Use the Process Life Management gem to respond to various application
+  lifecycle events dispatched by the &ALYlong; engine, such as to pause your game,
+  display a modal splash screen, and so on. '
+slug: gems-system-gem-process-life-mgmt
+title: Process Life Management Gem
+---
 # Process Life Management Gem<a name="gems-system-gem-process-life-mgmt"></a>
 
 The Process Life Management gem demonstrates how you can respond to various application lifecycle events dispatched by the Lumberyard engine, in order to pause your game, display a modal splash screen, or anything else you may need to do when your application loses/regains focus\.
 
-![\[Use the Process Life Mangement gem to respond to different application lifecyle events.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-processlifemgmt.jpg)
+![\[Use the Process Life Mangement gem to respond to different application lifecyle events.\]](/images/gems/gems-system-gem-processlifemgmt.jpg)
 
 You can access all system\-specific events from C\+\+ \(even without enabling the Process Life Management gem\) by connecting to the appropriate EBus\. Lumberyard also generates platform\-agnostic events so that you can handle these events for all supported platforms\.
 

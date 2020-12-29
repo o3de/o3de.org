@@ -1,3 +1,8 @@
+description: ' Use the Screen Fader node in the &ALYlong; &script-canvas; editor to
+  control fading the screen to a color and/or texture. '
+slug: screen-fader-node
+title: Screen Fader
+---
 # Screen Fader<a name="screen-fader-node"></a>
 
 Controls fading the screen to a color and/or a texture\. You can use this node to script cinematic transitions, such as fading to black or fading to a loading screen texture\. The fade is a screen overlay that is rendered on top of the scene\. The size and position of this overlay can be adjusted to a different size than full screen\. This is useful if you want to draw letter boxes at the top and bottom of the screen\. If you use custom positioning with a texture, you can use this node as a quick way to draw decorative borders around the frame\.
@@ -9,17 +14,17 @@ To use the **Screen Fader** node in the Track View, see [Screen Fader Node](cine
 + [Outputs](#screen-fader-output)
 + [ScreenFader EBuses](screen-fader-ebuses.md)
 
-![\[screenfader, screenfadernode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
+![\[screenfader, screenfadernode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
 
 **Example**  
 In the following script, the screen first fades in, out, and then fades in again\.  
 
-![\[Use the Screen Fader node to fade the screen in and out to black.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-effect-color-correction-example-script.png)
+![\[Use the Screen Fader node to fade the screen in and out to black.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-effect-color-correction-example-script.png)
 
 **Example**  
 See the following screen fading in a game\.  
 
-![\[Use the Screen Fader node to fade the screen.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
+![\[Use the Screen Fader node to fade the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
 
 ## Inputs<a name="screen-fader-input"></a>
 

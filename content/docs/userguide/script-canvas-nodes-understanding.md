@@ -1,8 +1,13 @@
+description: ' Learn about the nodes in &script-canvas;, &ALYlong;''s visual scripting
+  system. '
+slug: script-canvas-nodes-understanding
+title: Understanding &script-canvas; Nodes
+---
 # Understanding Script Canvas Nodes<a name="script-canvas-nodes-understanding"></a>
 
 A node in Script Canvas consists of a title bar, inputs, and outputs\.
 
-![\[Anatomy of a node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-1.png)
+![\[Anatomy of a node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-1.png)
 
 **Title Bar** – The title bar of a node is in a colored band at the top of the node\. A title bar can include a subtitle, but not all nodes have subtitles\.
 
@@ -38,9 +43,9 @@ Connections can be made only between pins of the same type\. For example, logic 
 
 Variable nodes enable Script Canvas to read from or write to specific variables\.
 
-![\[Variable node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-4.png)
+![\[Variable node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-4.png)
 
-![\[Variable node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-5.png)
+![\[Variable node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-5.png)
 
 Another way to read or write a variable is to use variable references on a node data pin\.
 
@@ -61,13 +66,13 @@ The following example uses Light events to create a sender node\.
 **To create a sender node**
 
 1. In the **Node Palette** search box, type **Light**\. The results show nodes related to light\.  
-![\[Light-related nodes in the Script Canvas Node Palette.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-6.png)
+![\[Light-related nodes in the Script Canvas Node Palette.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-6.png)
 
    In the **Node Palette**, sender events are the dark blue entries\. All Light\-related sender events provide a way to communicate with, configure, or alter the behavior of a given Light component\. You can send any of the Light\-related sender events to an entity that has a Light component\. If the entity that owns the Script Canvas graph also has a Light component, it can send the event to itself\.
 
 1. Drag **Turn On** or **Turn Off** onto the canvas to create a sender node\.  
-![\[Light component Turn On sender node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-7.png)  
-![\[Light component Turn Off sender node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-8.png)
+![\[Light component Turn On sender node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-7.png)  
+![\[Light component Turn Off sender node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-8.png)
 
    The **Source** pin of the sender node refers to the entity that sends the event\. The default is **Self**, which means that it sends Light events for the same entity that the Script Canvas component is on\. However, you can change the source to any entity in the game world\.
 
@@ -84,10 +89,10 @@ The following example creates a receiver node for a Light event\.
 1. In the **Node Palette** search box, type **Turn**\.
 
    In the list of results, event receivers like **Turned Off** and **Turned On** have a light blue icon\.  
-![\[Some event receiver nodes in the Script Canvas Node Palette.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-9.png)
+![\[Some event receiver nodes in the Script Canvas Node Palette.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-9.png)
 
 1. Drag **Turned On** onto the canvas to create a receiver node\.  
-![\[A Light component Turned On event receiver node.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-10.png)
+![\[A Light component Turned On event receiver node.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-10.png)
 
    The **Source** pin of the receiver node refers to the entity from which the event is received\. The default is **Self**, which means the node receives Light events for the same entity that the Script Canvas component is on\. You can change the target to any entity in the game world\.
 
@@ -96,12 +101,12 @@ The following example creates a receiver node for a Light event\.
 1. Click **Add/Remove Events**\.
 
    Because receiver nodes are usually containers for multiple events, you can click **Add/Remove Events** to view and add any of the available event receivers for a given component\. In this case, the Light component exposes two events: **Turned Off** and **Turned On**\.  
-![\[Adding an event to a receiver node in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-11.png)
+![\[Adding an event to a receiver node in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-11.png)
 
 1. Select the **Turned Off** check box to add the **Turned Off** event to the receiver node\.
 
    A second blue band in the node appears\. The node is now listening for both the **Turned On** and **Turned Off** events\.  
-![\[A receiver node with two events in Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-12.png)
+![\[A receiver node with two events in Script Canvas.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-12.png)
 
 1. Click **Add/Remove Events** again, and clear the **Turned Off** check box\. The **Turned Off** event is removed from the receiver node\.
 
@@ -116,13 +121,13 @@ The following example uses the Light component **Turned On** event node\.
 1. Ensure that **Node Inspector** is visible\. In Script Canvas editor, choose **View**, **Node Inspector**, or press **Ctrl\+Shift\+I**\.
 
 1. Click the Light **Turned On** node to select it\.  
-![\[Click to select a node in Script Canvas editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-13.png)
+![\[Click to select a node in Script Canvas editor.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-13.png)
 
 1. In **Node Inspector**, select **Display Connection Controls**\.  
-![\[Select Display Connection Controls in the Node Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-14.png)
+![\[Select Display Connection Controls in the Node Inspector.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-14.png)
 
    The Light component **Turned On** receiver node expands to provide connection\-related pins\.  
-![\[Expanded receiver node with connection controls.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-15.png)
+![\[Expanded receiver node with connection controls.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-15.png)
    + **Connect** and **Disconnect** – Use the **Disconnect** pin to prevent the receiver node from connecting\. When the event should be connected and available to receive events, use the **Connect** pin\.
 
      The **Connect** and **Disconnect** pins are especially useful when working with the **On Tick** event\. For example, if you have a complex operation that you do not want processed for every tick of the game, you can disconnect the **On Tick event** until it is required\.
@@ -135,4 +140,4 @@ When you enable a receiver node's **Display Connection Controls** property, the 
 **Example**  
 In the following example, **Display Connection Controls** is enabled for the **On Tick** event receiver node\. The **Tick** event is disconnected at the start of the graph's lifetime\. When the light is turned on, the example changes the light's color randomly for every tick\.  
 
-![\[Controlling the On Tick event by using connection controls.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-nodes-understanding-16.png)
+![\[Controlling the On Tick event by using connection controls.\]](/images/scripting/script-canvas/script-canvas-nodes-understanding-16.png)

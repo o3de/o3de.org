@@ -1,3 +1,8 @@
+description: ' Use the console window in &ly-editor; to update the value for console
+  variables or type commands. '
+slug: console-intro
+title: Using the Console Window
+---
 # Using the Console Window<a name="console-intro"></a>
 
 In Lumberyard Editor, the console window shows a running list of all editor commands, processes, and output\. For example, when you delete an entity, the console shows the action and the output\. You can use the console to enter or modify console variables \(CVARs\)\. Console variables are a type of variable that you can manipulate in Lumberyard Editor\.
@@ -18,10 +23,10 @@ You can enter commands directly in the console window or search and edit console
 1. In Lumberyard Editor, choose **Tools**, **Console**\. 
 
 1. Click the **X** icon in the left corner to open the **Console Variables** window\. The **Console Variables** window lists all available console variables\.   
-![\[View all available console variables in the console window.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/console-x-window.png)
+![\[View all available console variables in the console window.\]](/images/console-x-window.png)
 
 1. Enter a name to search for a specific console variable\. To learn more about the console variable, pause on the name\.  
-![\[View console variables in the console window.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/console-variables.png)
+![\[View console variables in the console window.\]](/images/console-variables.png)
 
 ## Exporting All Console Commands and Variables<a name="exporting-console-variables-cvars"></a>
 
@@ -35,7 +40,7 @@ You can retrieve a complete list of console commands and variables, including th
 **Example**  
 
     You can see the available commands and variables in the file\.  
-![\[Open the consolecommandandvars.txt file to see all console commands and variables.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/console-variables-test-file.png)
+![\[Open the consolecommandandvars.txt file to see all console commands and variables.\]](/images/console-variables-test-file.png)
 
 1. You can specify a sub\-string parameter to restrict the results that you want\. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`\.
 

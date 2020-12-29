@@ -1,3 +1,8 @@
+description: ' Use the Find by Name and Index node in the &ALYlong; &script-canvas;
+  editor to find the substance material and graph index. '
+slug: find-by-name-and-index-node
+title: Find by Name and Index
+---
 # Find by Name and Index<a name="find-by-name-and-index-node"></a>
 
 Finds a procedural material by the substance file name and the index of a graph\. All substance files contain one or more graphs, and these graphs correspond to a procedural material\. 
@@ -6,7 +11,7 @@ Finds a procedural material by the substance file name and the index of a graph\
 + [Inputs](#find-by-name-and-index-node-input)
 + [Outputs](#find-by-name-and-index-node-output)
 
-![\[FindbyNameandIndex finds the substance name and graph index for a procedural material.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-and-index-node.png)
+![\[FindbyNameandIndex finds the substance name and graph index for a procedural material.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-and-index-node.png)
 
 **To find the substance name**
 
@@ -16,7 +21,7 @@ Finds a procedural material by the substance file name and the index of a graph\
 **Example**  
 
    The substance material path is `materials/substance/brickwall_04.sbsar` and the graph name `BrickWall_04` appears in the tab\.  
-![\[Finding the substance material name and graph index in the Substance Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-procedural-material-node-2.png)
+![\[Finding the substance material name and graph index in the Substance Editor.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-procedural-material-node-2.png)
 
 1. Copy the substance material path and in the **Find by Name and Index** node, do the following:
 

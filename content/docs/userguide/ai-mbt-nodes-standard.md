@@ -1,3 +1,7 @@
+description: ' See the following standard Modular Behavior Tree (MBT) nodes in &ALYlong;. '
+slug: ai-mbt-nodes-standard
+title: Standard MBT Nodes
+---
 # Standard MBT Nodes<a name="ai-mbt-nodes-standard"></a>
 
 The following standard Modular Behavior Tree nodes are supported\. These nodes can be found at `Code\CryEngine\CryCommon\BehaviorTree\`\.

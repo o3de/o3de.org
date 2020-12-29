@@ -1,3 +1,8 @@
+description: ' Use texture atlases on UI canvases for quicker rendering of textures
+  in &ALYlong;. '
+slug: ui-editor-texture-atlases
+title: Using Texture Atlases
+---
 # Using Texture Atlases<a name="ui-editor-texture-atlases"></a>
 
 To reduce draw calls, you can add individual textures to a texture atlas and then add one or more texture atlases to a UI canvas\.

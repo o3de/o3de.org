@@ -1,3 +1,7 @@
+description: ' Use the &ALYlong; &script-canvas; editor to switch the skybox. '
+slug: sky-skyboxes-switch
+title: Switching Skyboxes with the &script-canvas; Editor
+---
 # Switching Skyboxes with the Script Canvas Editor<a name="sky-skyboxes-switch"></a>
 
 You can use the **Script Canvas** editor to create a script that switches the skybox material \.
@@ -23,7 +27,7 @@ You can use the **Script Canvas** editor to create a script that switches the sk
 
    1. Select the **Material** pin for **Load By Name** and drag to connect it to the **Material** pin for **Set Skybox Material**\.  
 **Example**    
-![\[Switch the skybox material with the Script Canvas editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/sky/scriptcanvasnodes/set-skybox-material-example-script.png)
+![\[Switch the skybox material with the Script Canvas editor.\]](/images/sky/scriptcanvasnodes/set-skybox-material-example-script.png)
 
 1. Save the script and attach it to an entity with the **[Script Canvas](component-script-canvas.md)** component\. 
 

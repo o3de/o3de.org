@@ -1,3 +1,7 @@
+description: ' Use the &ALY; &particle-editor; to create or add a new particle library. '
+slug: particle-creating-library
+title: Adding Particle Libraries
+---
 # Adding Particle Libraries<a name="particle-creating-library"></a>
 
 Particle effect data is stored in an XML\-based library file\.
@@ -11,7 +15,7 @@ Particle effect data is stored in an XML\-based library file\.
    + Choose the ![\[Particle Editor library\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-library-icon.png) icon to the right of the search bar\.
 
         
-![\[Create libraries in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-library-adding.png)
+![\[Create libraries in the Particle Editor.\]](/images/particles/particle-editor-library-adding.png)
 
 1. In **Libraries**, where the default name is highlighted, enter a name for the library\.
 

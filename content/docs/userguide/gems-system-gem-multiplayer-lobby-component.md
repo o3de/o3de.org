@@ -1,3 +1,8 @@
+description: ' Add the MultiplayerLobbyComponent to a component entity to manage game
+  sessions in &ALYlong;. '
+slug: gems-system-gem-multiplayer-lobby-component
+title: The Multiplayer Lobby Component
+---
 # The Multiplayer Lobby Component<a name="gems-system-gem-multiplayer-lobby-component"></a>
 
 You can use the self\-contained lobby from Lumberyard's component entity system and add the `MultiplayerLobbyComponent` to a component entity in a scene\. The `MultiplayerLobbyComponent` provides a basic lobby that can perform the following tasks:
@@ -37,7 +42,7 @@ This component does not handle the initialization of encryption, but utilizes en
 
 The following image shows a sample LAN lobby and its details\.
 
-![\[Sample lobby displaying a server result\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-multiplayer-lobby-component.png)
+![\[Sample lobby displaying a server result\]](/images/gems/gems-system-gem-multiplayer-lobby-component.png)
 
 1. **Return** – Exits the current lobby and returns to the `SessionService` selection screen\.
 
@@ -57,7 +62,7 @@ The following image shows a sample LAN lobby and its details\.
 
 The following image shows a sample GameLift lobby and its details\.
 
-![\[Sample GameLift lobby create window\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-multiplayer-gamelift-lobby-create-component.png)
+![\[Sample GameLift lobby create window\]](/images/gems/gems-system-gem-multiplayer-gamelift-lobby-create-component.png)
 
 1. **Return** – Exits the current lobby and returns to the `SessionService` selection screen\.
 
@@ -74,7 +79,7 @@ The following image shows a sample GameLift lobby and its details\.
 
 1. **Create Server** – Attempts to create a `GameLiftSession` in the selected GameLift fleet or queue\.
 
-![\[Sample GameLift lobby join window\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-multiplayer-gamelift-lobby-join-component.png)
+![\[Sample GameLift lobby join window\]](/images/gems/gems-system-gem-multiplayer-gamelift-lobby-join-component.png)
 
 1. Need to fill only one of the below:
    + **Queue Name** – Queue to use to join a server game session \(First priority\)\.
@@ -87,7 +92,7 @@ The following image shows a sample GameLift lobby and its details\.
 
 1. **Join** – Attempts to join the currently selected session in the session list\. If an error occurs, an error message is displayed\. If no `GridSession` has been selected, this option is disabled\.
 
-![\[Sample GameLift lobby FlexMatch matchmaking window\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/gems/gems-system-gem-multiplayer-gamelift-lobby-match-component.png)
+![\[Sample GameLift lobby FlexMatch matchmaking window\]](/images/gems/gems-system-gem-multiplayer-gamelift-lobby-match-component.png)
 
 1. **Config Name** – Matchmaking configuration to use to start GameLift matchmaking\.
 

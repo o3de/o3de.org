@@ -1,3 +1,7 @@
+description: ' Create collision groups for the PhysX system in &ALYlong;. '
+slug: physx-configuration-collision-groups
+title: Collision Groups
+---
 # Collision Groups<a name="physx-configuration-collision-groups"></a>
 
 Use collision groups to define the layers that a collider interacts with\. A collision group is similar to a mask with specific bits set in which each bit corresponds to a collision layer\.
@@ -11,7 +15,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. Click the **Collision Groups** tab\. The layers that are configured on the **Layers** tab appear here as columns\.
 
 1. Click **Add**, and then enter the name of the group into the text box\.  
-![\[Adding Collision Groups in the PhysX Configuration tool.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-4.png)
+![\[Adding Collision Groups in the PhysX Configuration tool.\]](/images/physx/physx-configuration-4.png)
 
 1. Select or clear the check boxes to specify the layers to include in each collision group\.
 
@@ -22,7 +26,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. In the Lumberyard Editor viewport, select the entity that has the collider\.
 
 1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop\-down list\.  
-![\[Choosing a collision group for the PhysX Collider component in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-5.png)
+![\[Choosing a collision group for the PhysX Collider component in the Entity Inspector.\]](/images/physx/physx-configuration-5.png)
 
 ## Example Collision Group Configuration<a name="physx-configuration-collision-groups-example"></a>
 
@@ -32,7 +36,7 @@ The following example defines **Player**, **Enemy**, **Bullet**, **Foliage**, an
 + **TerrainCollision** – Collides with **Player**, **Enemy**, **Bullet**, and **Terrain**\.
 + **PlayerCollision** – Collides with **Enemy**, **Bullet**, and **Terrain**\.
 
-![\[An example collision group configuration.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx-configuration-6.png)
+![\[An example collision group configuration.\]](/images/physx/physx-configuration-6.png)
 
 A bullet fired by the player has the following layer and group:
 + Layer: **Bullet**

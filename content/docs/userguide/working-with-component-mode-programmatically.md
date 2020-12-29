@@ -1,3 +1,7 @@
+description: ' Use &CM; to edit programmatically components in &ALYlong;. '
+slug: working-with-component-mode-programmatically
+title: Programmer's Guide to &CM;
+---
 # Programmer's Guide to Component Mode<a name="working-with-component-mode-programmatically"></a>
 
 

@@ -1,3 +1,8 @@
+description: ' Use AZ::Console to set console variables and functors for your &ALY;
+  game. '
+slug: az-console
+title: AZ::Console
+---
 # AZ::Console<a name="az-console"></a>
 
 The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in\-game variables and processes\. Use the macros defined in this class to set the console variables \(cvars\) and functors \(cfuncs\) for your game, and then access them through the Lumberyard console\.
@@ -14,7 +19,7 @@ The console found inside `AzCore` is a console and cvar system intended to repla
 + Flexible and expandable type support\. You can add support for new cvar types without altering the console code directly\.
 + Support for the legacy CryEngine console, specifically to reduce user confusion\. For users of the in\-game console, legacy cvars and `AZ_CVAR` cvars appear identical\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/az/az-console-1.png)
+![\[Image NOT FOUND\]](/images/az/az-console-1.png)
 
 **Important**  
 As of Amazon Lumberyard version 1\.24, AZ::Console does not support the following features present in the CryEngine console:  

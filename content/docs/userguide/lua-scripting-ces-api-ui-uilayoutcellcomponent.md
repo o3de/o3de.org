@@ -1,3 +1,8 @@
+description: ' Use the UiLayoutCellComponent operation to provide cell layout features
+  in &ALYlong; '
+slug: lua-scripting-ces-api-ui-uilayoutcellcomponent
+title: UiLayoutCellComponent
+---
 # UiLayoutCellComponent<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent"></a>
 
 Overrides default layout cell values\.

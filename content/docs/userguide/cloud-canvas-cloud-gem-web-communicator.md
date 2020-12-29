@@ -1,10 +1,15 @@
+description: ' Use the &ALYlong; Web Communicator cloud gem to notify your game''s
+  clients, editors, and servers about events from other cloud gems. '
+slug: cloud-canvas-cloud-gem-web-communicator
+title: Web Communicator Cloud Gem
+---
 # Web Communicator Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator"></a>
 
 You can use the Web Communicator cloud gem to inform your game's connected clients, editors, or servers of events from other cloud gems\. Your game clients, editors, or servers can use this information to take action \(such as updating themselves\) without restarting or polling AWS services for updates\.
 
 The following diagram shows how the Web Communicator cloud gem connects cloud gems like Dynamic Content to the receivers of the events\. 
 
-![\[Web Communicator connects cloud gems to game clients, editors, or servers\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-1.png)
+![\[Web Communicator connects cloud gems to game clients, editors, or servers\]](/images/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-1.png)
 
 Cloud gems like Dynamic Content send events through Lumberyard's [cross\-gem communication system](cloud-canvas-cgf-service-api-cross-gem-communication.md) to the Web Communicator cloud gem\. The Web Communicator cloud gem sends the event to the client through [AWS IoT](https://aws.amazon.com/iot-core), which maintains a persistent socket connection with the client\. Your game can use this channel of communication to notify the client that new content is available\. The client can then download the new content or update itself as needed\.
 

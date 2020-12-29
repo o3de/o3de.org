@@ -1,3 +1,8 @@
+description: ' Update your &ALYlong; projects and cloud gems to version 1.0.0 of the
+  Cloud Gem framework. '
+slug: cloud-canvas-cgf-updating-projects-gems
+title: Updating Projects and Cloud Gems to Version 1.0.0 of the Cloud Gem Framework
+---
 # Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework<a name="cloud-canvas-cgf-updating-projects-gems"></a>
 
 A cloud gem is a gem that depends on the [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md)\. Starting in Lumberyard 1\.10 \(and Cloud Gem Framework 1\.0\.0\), [gem versioning support](cloud-canvas-cgf-rm-versioning.md) makes the work of updating Lumberyard cloud gem projects much easier\. However, manual steps are required to update projects and gems that were created before Cloud Gem Framework version 1\.0\.0\.

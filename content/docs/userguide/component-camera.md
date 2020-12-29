@@ -1,10 +1,15 @@
+description: ' Use the Camera component to allow an entity to be used as a camera
+  in &ALYlong;. '
+slug: component-camera
+title: Camera
+---
 # Camera<a name="component-camera"></a>
 
 The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](gems-system-gem-camera.md)\.
 
 ## Camera Component Properties<a name="component-camera-properties"></a>
 
-![\[Camera component properties in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-camera-properties.png)
+![\[Camera component properties in the Entity Inspector.\]](/images/component/component-camera-properties.png)
 
 The **Camera** component has the following properties:
 

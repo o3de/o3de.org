@@ -1,3 +1,8 @@
+description: ' Learn about the comparison operations used in bundling assets with
+  &ALYlong;. '
+slug: asset-bundler-list-operations
+title: '&ALYlong; Asset List Comparison Operations'
+---
 # Amazon Lumberyard Asset List Comparison Operations<a name="asset-bundler-list-operations"></a>
 
 Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list\. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files\. The following operations are available to use from the Asset Bundler tool:
@@ -28,7 +33,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the delta comparison operation\. 
 
-![\[Diagram showing the inputs and results of a delta comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/delta-comparison-operator.png)
+![\[Diagram showing the inputs and results of a delta comparison operation.\]](/images/assetbundler/delta-comparison-operator.png)
 
 ## Asset List Union Comparison Operation<a name="asset-bundler-list-operations-union"></a>
 
@@ -46,7 +51,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the union comparison operation\.
 
-![\[Diagram showing the inputs and results of a union comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/union-comparison-operator.png)
+![\[Diagram showing the inputs and results of a union comparison operation.\]](/images/assetbundler/union-comparison-operator.png)
 
 ## Asset List Intersection Comparison Operation<a name="asset-bundler-list-operations-intersection"></a>
 
@@ -64,7 +69,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the intersection comparison operation\.
 
-![\[Diagram showing the inputs and results of a intersection comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/intersection-comparison-operator.png)
+![\[Diagram showing the inputs and results of a intersection comparison operation.\]](/images/assetbundler/intersection-comparison-operator.png)
 
 ## Asset List Intersection Count Comparison Operation<a name="asset-bundler-list-operations-intersectioncount"></a>
 
@@ -82,7 +87,7 @@ AssetBundlerBatch.exe intersectionCount ^
 
 The following diagram shows the intersection comparison operation\.
 
-![\[Diagram showing the inputs and results of a intersection count comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/intersection-comparison-count-operator.png)
+![\[Diagram showing the inputs and results of a intersection count comparison operation.\]](/images/assetbundler/intersection-comparison-count-operator.png)
 
 ## Asset List Complement Comparison Operation<a name="asset-bundler-list-operations-complement"></a>
 
@@ -100,7 +105,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the intersection comparison operation\.
 
-![\[Diagram showing the inputs and results of a intersection comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/complement-comparison-operator.png)
+![\[Diagram showing the inputs and results of a intersection comparison operation.\]](/images/assetbundler/complement-comparison-operator.png)
 
 ## Asset List File Pattern Operation<a name="asset-bundler-list-operations-filepattern"></a>
 
@@ -123,7 +128,7 @@ The previous command looks for files that have the `.xml` suffix for inclusion\.
 
 The following diagram shows the file pattern comparison operation\.
 
-![\[Diagram showing the inputs and results of a file pattern comparison operation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/file-pattern-operation.png)
+![\[Diagram showing the inputs and results of a file pattern comparison operation.\]](/images/assetbundler/file-pattern-operation.png)
 
 ## How to Perform Multiple Asset List Comparison Operations<a name="how-to-perform-list-comparison"></a>
 
@@ -131,7 +136,7 @@ The following guidance shows the process of creating an asset list for a game pa
 
 The following diagram shows the comparison process and the outputs for this example\.
 
-![\[Diagram that shows the use of multiple comparison rules to include only specific assets in your release bundle.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/patch-bundle-example.png)
+![\[Diagram that shows the use of multiple comparison rules to include only specific assets in your release bundle.\]](/images/assetbundler/patch-bundle-example.png)
 
 ### Prerequisites<a name="how-to-perform-list-comparisons-prereqs"></a>
 

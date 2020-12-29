@@ -1,3 +1,8 @@
+description: ' Set up simulated object colliders so that the actor''s body interacts
+  with the tassel in &ALYlong;. '
+slug: set-up-simulated-object-collider
+title: Setting Up Simulated Object Colliders
+---
 # Setting Up Simulated Object Colliders<a name="set-up-simulated-object-collider"></a>
 
  In the following procedure, add a collider to the spine and left arm to reduce the tassel’s movement\. This ensures that the tassel has something to collide with, which prevents it from moving through the actor's body\.
@@ -10,7 +15,7 @@
 **Example**  
 
    You can also add a sphere if that shape fits your actor better\.  
-![\[Add a capsule shape to create a collider area for your skeleton.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-14.png)
+![\[Add a capsule shape to create a collider area for your skeleton.\]](/images/actor-animation/simulated-objects-14.png)
 
    In the **Skeleton Outliner**, a simulated object collider ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-20.png) icon appears next to the joint\. 
 
@@ -20,7 +25,7 @@
 **Example**  
 
    By default, the name of the joint \(`C_spine_04_JNT`\) is also the name of the collider\.  
-![\[Create a simulated object collider for the spine and make changes, so that it's slightly larger than the actor's shape.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-15.png)
+![\[Create a simulated object collider for the spine and make changes, so that it's slightly larger than the actor's shape.\]](/images/actor-animation/simulated-objects-15.png)
 
 1. Repeat **Step 1** to add the `L_arm_JNT` joint\. This creates another simulated object collider to the upper\-left arm\.
 
@@ -35,7 +40,7 @@
 **Example**  
 
    By default, the name of the joint \(`L_arm_JNT`\) is also the name of the collider\.  
-![\[Create a simulated object collider for the arm and make changes, so that it's slightly larger than the actor's shape.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-16.png)
+![\[Create a simulated object collider for the arm and make changes, so that it's slightly larger than the actor's shape.\]](/images/actor-animation/simulated-objects-16.png)
 
 1.  In the **Skeleton Outliner**, select the joints where the simulated object colliders are attached\. 
 **Tip**  
@@ -45,12 +50,12 @@ In the render window, deselect the first icon \(**Solid**\) and select the secon
    In the render window, the colliders appear purple\. If you deselect the joint, the collider appears gray\. 
 
    Now that you added the simulated objects to the spine and arm, add these colliders to the simulated object\.  
-![\[View the capsule colliders that you attached to the joints of the actor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-17.png)
+![\[View the capsule colliders that you attached to the joints of the actor.\]](/images/actor-animation/simulated-objects-17.png)
 
 1. In the **Simulated Objects** panel, select the simulated object\.
 
 1. In the **Simulated Object Inspector**, for **Collides with**, select the available colliders\. This enables the simulated object joints \(the tassel\) to collide with the actor's body \(the spine and left arm\)\.  
 **Example**    
-![\[Enable the tassel to collide with the actor's body during an animation.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-18.gif)
+![\[Enable the tassel to collide with the actor's body during an animation.\]](/images/actor-animation/simulated-objects-18.gif)
 
 1. In the **Actor Manager**, save the actor\. You might have to wait for Asset Processor to finish processing your changes\.

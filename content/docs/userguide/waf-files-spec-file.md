@@ -1,3 +1,8 @@
+description: ' Use Waf spec files to specify which modules to include in your build
+  configuration in &ALYlong;. '
+slug: waf-files-spec-file
+title: Waf Spec Files (*.json)
+---
 # Waf Spec Files \(\*\.json\)<a name="waf-files-spec-file"></a>
 
 You use Waf spec files to specify which modules to include in a build configuration\. All settings are mandatory if not explicitly stated otherwise\. 

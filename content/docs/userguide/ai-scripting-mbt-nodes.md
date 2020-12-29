@@ -1,3 +1,7 @@
+description: ' See the modular behavior tree (MBT) node types for &ALYlong;. '
+slug: ai-scripting-mbt-nodes
+title: Modular Behavior Tree Node Reference
+---
 # Modular Behavior Tree Node Reference<a name="ai-scripting-mbt-nodes"></a>
 
 This section contains reference information on modular behavior tree \(MBT\) node types\. MBT node types are organized here based on the system they are defined into\.

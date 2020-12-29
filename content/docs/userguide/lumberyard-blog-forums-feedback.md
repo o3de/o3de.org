@@ -1,3 +1,7 @@
+description: ' Submit feedback and suggestions for &ALYlong;. '
+slug: lumberyard-blog-forums-feedback
+title: '&ALY; Blog, Forums, and Feedback'
+---
 # Lumberyard Blog, Forums, and Feedback<a name="lumberyard-blog-forums-feedback"></a>
 
 As we continue to improve Lumberyard, we want to thank everyone in our game developer community\. Without your participation in the forums, your messages, and your bug reports, Lumberyard wouldn't be as strong as it is\.

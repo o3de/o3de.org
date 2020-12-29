@@ -1,3 +1,8 @@
+description: ' Build, deploy, test, and troubleshoot &ALY; projects for Android and
+  iOS devices. '
+slug: mobile-support-intro
+title: Developing for Android and iOS with &ALY;
+---
 # Developing for Android and iOS with Lumberyard<a name="mobile-support-intro"></a>
 
  Amazon Lumberyard comes with support for building and deploying your game to Android and iOS devices\. In this section of the guide, you'll learn how to get your projects up and running on mobile, what are some of the important design considerations for these platforms, and which unique workflows are required\. You'll also learn how to use the Virtual File System \(VFS\) server to serve assets on\-demand to your game that's running on a physical device, and how to get started using Device Farm for large\-scale testing of your mobile project\. 

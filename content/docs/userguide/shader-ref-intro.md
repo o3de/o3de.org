@@ -1,3 +1,7 @@
+description: ' See the available shader reference for game object materials in &ALYlong;. '
+slug: shader-ref-intro
+title: Shader Reference
+---
 # Shader Reference<a name="shader-ref-intro"></a>
 
 Lumberyard includes the following physically\-based rendering \(PBR\) shaders, which use real\-world physical rules and properties to describe how light interacts with the surface of objects\. This means that game object materials look realistic under all lighting conditions\.

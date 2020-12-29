@@ -1,3 +1,7 @@
+description: ' Use Microsoft Registered I/O (RIO) socket interface in &ALYlong; networking. '
+slug: network-carrier-rio
+title: Using Windows Registered I/O with GridMate
+---
 # Using Windows Registered I/O with GridMate<a name="network-carrier-rio"></a>
 
 Starting in Lumberyard version 1\.16, GridMate carrier supports Microsoft’s [registered I/O \(RIO\) socket interface](https://docs.microsoft.com/en-us/windows/desktop/WinSock/winsock-functions)\. RIO is a network traffic processing interface that provides lower latency and higher throughput to the Windows operating system kernel\. Lumberyard implements RIO support in the `GridMate::RIOPlatformSocketDriver` class, which is fully contained in the carrier `SocketDriver` class\.

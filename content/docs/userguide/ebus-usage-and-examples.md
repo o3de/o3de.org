@@ -1,3 +1,7 @@
+description: ' Learn how to use &ALYlong;''s EBus from examples. '
+slug: ebus-usage-and-examples
+title: Usage and Examples
+---
 # Usage and Examples<a name="ebus-usage-and-examples"></a>
 
 This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](lua-scripting-ces-using-ebuses.md)\.

@@ -1,3 +1,8 @@
+description: ' Use the Get Speed node in the &ALYlong; &script-canvas; editor to return
+  the speed multiplier for the time of day. '
+slug: get-speed
+title: Get Speed
+---
 # Get Speed<a name="get-speed"></a>
 
 Returns the current time of day speed multiplier\. The value is specified in conversion units of hours per second\. For example, a value of `1` runs through an entire time of day cycle in 24 seconds\.
@@ -6,7 +11,7 @@ Returns the current time of day speed multiplier\. The value is specified in con
 + [Inputs](#get-speed-input)
 + [Outputs](#get-speed-output)
 
-![\[getspeed, getspeednode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-speed-node.png)
+![\[getspeed, getspeednode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-speed-node.png)
 
 ## Inputs<a name="get-speed-input"></a>
 

@@ -1,3 +1,8 @@
+description: ' Learn how GridMate''s task manager controls the updating and marshaling
+  of replicas in &ALYlong;. '
+slug: network-replicas-manager-task-manager
+title: Task Manager
+---
 # Task Manager<a name="network-replicas-manager-task-manager"></a>
 
 The replica manager holds two task manager instances: one for updating and one for marshaling replicas\. Updating tasks are executed within the replica manager's `UpdateFromReplica` step, while marshaling tasks are executed in the `Marshal` step\. Tasks can execute other tasks while running\. `TaskManager::Add` queues the tasks in an ordered list\. `TaskManager::Wait` executes a task and waits until it finishes\. When an event fires in the replica system, replica manager adds the corresponding task into `TaskSystem`\.

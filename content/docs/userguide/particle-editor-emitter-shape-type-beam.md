@@ -1,10 +1,16 @@
+description: ' Use the Beam emitter in the &ALYlong; &particle-editor; to spawn a
+  length of connected particles at once, based on the origin and specified target
+  position. '
+slug: particle-editor-emitter-shape-type-beam
+title: Beam Emitter (CPU)
+---
 # Beam Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-beam"></a>
 
 The **Beam** emitter spawns a length of connected particles at once, based on the origin and specified target position\. You can also set wave form attributes to shape or animate the beam\.
 
 The following are parameters for the **Beam** emitter \(CPU\)\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-beam.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-beam.png)
 
 
 **Beam Emitter Parameters for CPU Attributes**  

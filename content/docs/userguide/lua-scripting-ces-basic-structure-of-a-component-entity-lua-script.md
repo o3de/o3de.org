@@ -1,3 +1,8 @@
+description: ' Learn about the structure of Lua scripts that are used as components
+  in &ALYlong;. '
+slug: lua-scripting-ces-basic-structure-of-a-component-entity-lua-script
+title: Basic Structure of a Component Entity Lua Script
+---
 # Basic Structure of a Component Entity Lua Script<a name="lua-scripting-ces-basic-structure-of-a-component-entity-lua-script"></a>
 
 Scripts to be used as components contain a table \(referred to as the script table\), which provides the functionality for the script\. In Lua, this table is treated like a class\. The script table generally consists of the following:

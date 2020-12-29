@@ -1,3 +1,8 @@
+description: ' Learn how replicas are used by GridMate peers to synchronize a replicas
+  state across a &ALYlong; session. '
+slug: network-replicas-replica
+title: Replica
+---
 # Replica<a name="network-replicas-replica"></a>
 
 Replicas are core components of GridMate's replication system that are created by network\-connected GridMate peers\. When a peer creates a replica, GridMate propagates the replica over the network to synchronize the replica's state across the session\. A locally created and owned replica is called a *primary replica*\. The copy of the primary replica that connected peers receive is called a *proxy replica*\. The synchronization and instantiation of replicas is handled by [Replica Manager](network-replicas-replica-manager.md)\. 

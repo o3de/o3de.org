@@ -1,3 +1,8 @@
+description: ' Use the TCP socket driver in &ALYlong; 1.10 and later for direct connections
+  and an event bus that detects stream connect and disconnect events. '
+slug: network-tcp
+title: The TCP Stream Driver
+---
 # The TCP Stream Driver<a name="network-tcp"></a>
 
 Starting with Lumberyard version 1\.10, the GridMate library offers a TCP socket driver in addition to its existing UDP driver\. Unlike UDP, the TCP protocol uses direct connections, which require a listening port and established server endpoint that clients can use\. The GridMate library also adds an event bus that detects stream connect and disconnect events for TCP\.

@@ -1,3 +1,8 @@
+description: ' Import and export &ALYlong; terrain data such as heightmaps, color
+  maps, terrain blocks, and splat maps. '
+slug: terrain-import-data
+title: Importing and Exporting Terrain Data
+---
 # Importing and Exporting Terrain Data<a name="terrain-import-data"></a>
 
 You can import and export terrain data such as color maps, terrain blocks, and splat maps\.

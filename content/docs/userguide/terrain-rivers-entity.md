@@ -1,3 +1,8 @@
+description: ' Use the river tool to place the river in your &ALY; environment level
+  and adjust the underlying terrain with the Align Height Map. '
+slug: terrain-rivers-entity
+title: Creating the River Entity
+---
 # Creating the River Entity<a name="terrain-rivers-entity"></a>
 
 
@@ -11,7 +16,7 @@ After you have prepared the riverbed, you next create and place the River entity
 
 When performing this procedure, you may notice that parts of the river disappear into the terrain\. The **Align Height Map** step resolves this by stretching the terrain height to match the path of the river based on its shape and on **BorderWidth** parameter\. For information on **BorderWidth** and related settings, see [River Entity](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-entity-river.html)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-rivers-entity.png)
+![\[Image NOT FOUND\]](/images/terrain/terrain-rivers-entity.png)
 
 **To create and place the River entity**
 

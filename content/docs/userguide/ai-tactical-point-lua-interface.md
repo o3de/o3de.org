@@ -1,3 +1,7 @@
+description: ' Query TPS with Lua scripts in &ALYlong;. '
+slug: ai-tactical-point-lua-interface
+title: TPS Querying with Lua
+---
 # TPS Querying with Lua<a name="ai-tactical-point-lua-interface"></a>
 
 In Lua, there are two ways to use the TPS: 

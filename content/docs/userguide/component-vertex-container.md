@@ -1,3 +1,7 @@
+description: ' Use vertex containers in &ALYlong; to access, update, and remove vertices. '
+slug: component-vertex-container
+title: Vertex Containers
+---
 # Vertex Containers<a name="component-vertex-container"></a>
 
 `VertexContainer` is a concrete type and an interface that is used by several Lumberyard component buses\. It is implemented directly by the **[Polygon Prism Shape](component-polygon-prism.md)** component and the **[Spline](component-spline.md)** component and used indirectly by the **[Navigation Area](component-nav-area.md)** component\.

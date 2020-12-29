@@ -1,3 +1,8 @@
+description: ' Use the Get Wind Direction node in the &ALYlong; &script-canvas; editor
+  to return the global wind direction. '
+slug: get-wind-direction-node
+title: Get Wind Direction
+---
 # Get Wind Direction<a name="get-wind-direction-node"></a>
 
 Returns the direction of the global wind\. The length of the **Wind Direction** vector indicates the strength of the wind\.
@@ -6,7 +11,7 @@ Returns the direction of the global wind\. The length of the **Wind Direction** 
 + [Inputs](#get-wind-direction-node-input)
 + [Outputs](#get-wind-direction-node-output)
 
-![\[getwinddirection, winddirectionnode, getwinddirectionnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-wind-direction-node.png)
+![\[getwinddirection, winddirectionnode, getwinddirectionnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-wind-direction-node.png)
 
 ## Inputs<a name="get-wind-direction-node-input"></a>
 

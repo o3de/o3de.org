@@ -1,3 +1,7 @@
+description: ' Manage the camera space for viewing your entities in &ALYlong;. '
+slug: camera-space
+title: Using the Camera Space
+---
 # Using the Camera Space<a name="camera-space"></a>
 
 A camera space manipulator is built into the rotation manipulator\. You can rotate entities based on the editor’s camera view\.
@@ -14,4 +18,4 @@ A camera space manipulator is built into the rotation manipulator\. You can rota
 **Example**  
 
    In the following example, you can adjust the camera space so that your selected entity remains the center of focus in the viewport\.  
-![\[Rotate the camera view around a selected entity in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/viewportinteractionmodel/viewport-selection-model-5.gif)
+![\[Rotate the camera view around a selected entity in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-5.gif)

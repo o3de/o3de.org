@@ -1,3 +1,8 @@
+description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener
+  system for &ALYlong;. '
+slug: ui-animating-tweener-parameters
+title: Tweener Parameters
+---
 # Tweener Parameters<a name="ui-animating-tweener-parameters"></a>
 
 Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations\. Use the parameters with a [timeline](ui-animating-tweener-timeline.md) for a variety of possibilities\.

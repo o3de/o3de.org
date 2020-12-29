@@ -1,3 +1,7 @@
+description: ' Motion constraints for NVIDIA Cloth in &ALYlong;. '
+slug: nvidia-cloth-constraints
+title: Cloth simulation constraints
+---
 # Cloth simulation constraints<a name="nvidia-cloth-constraints"></a>
 
 
@@ -25,7 +29,7 @@ If no vertex color stream is present, then a default value of **1\.0** is used f
 
  The diagram below visualizes Motion constraints\. 
 
-![\[Motion constraint diagram for cloth simulation\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/cloth-motion-constraints-diagram.png)
+![\[Motion constraint diagram for cloth simulation\]](/images/physx/cloth/cloth-motion-constraints-diagram.png)
 
 ## Backstop<a name="cloth-backstop-diagram"></a>
 
@@ -45,4 +49,4 @@ The Backstop Radius vertex color channel has values in the range of **0\.0** to 
 
  The diagram below visualizes Backstop\. 
 
-![\[Backstop diagram for cloth simulation\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/cloth-backstop-diagram.png)
+![\[Backstop diagram for cloth simulation\]](/images/physx/cloth/cloth-backstop-diagram.png)

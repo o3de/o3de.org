@@ -1,3 +1,8 @@
+description: ' Move your assets into &ALY;''s root directory to import and prepare
+  your assets to be packaged as a gem. '
+slug: gems-system-gems-packaging
+title: Packaging Your Assets
+---
 # Packaging Your Assets<a name="gems-system-gems-packaging"></a>
 
 Before you can include your assets in your new gem, you must place them within your Lumberyard's game project root directory\. This way, they will be imported by Lumberyard Asset Pipeline and converted into assets that Lumberyard can use\. After you move and import your assets, you must test them in Lumberyard to ensure that they still work as intended\. You then move the verified assets into the gem directory structure that was created when you created a new gem\.

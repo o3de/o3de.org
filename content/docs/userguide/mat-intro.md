@@ -1,3 +1,7 @@
+description: ' Apply shaders and materials for objects in &ALYlong;. '
+slug: mat-intro
+title: Working with shaders and materials
+---
 # Working with shaders and materials<a name="mat-intro"></a>
 
 There is a close relationship between materials, textures and shaders\. For a material, you select a shader and then specify the material's properties and attributes such as color, specularity, and texture that are used by the shader for rendering the object\. In this way, the shader entirely defines how the object looks\. Lumberyard uses physically\-based rendering \(PBR\) shaders, which use real\-world physical rules and properties to describe how light interacts with the surface of objects\. This means that game object materials look realistic under all lighting conditions\. For more information, see [Shader Rendering System](mat-shaders-intro.md)\. 
@@ -6,7 +10,7 @@ For computer monitors, the sRGB \(instead of RGB\) color space is used\. Using s
 
 The Material Editor is the primary tool used to create materials, texture mapping, setting opacity and lighting effects, setting shader parameters, vertex deformations, tessellation, and more, as shown below\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/material-editor.png)
+![\[Image NOT FOUND\]](/images/material-editor.png)
 
 **Topics**
 + [Concepts](graphics-concepts.md)

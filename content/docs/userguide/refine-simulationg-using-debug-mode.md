@@ -1,3 +1,7 @@
+description: ' Use debug mode to refine the simulated object''s movement in &ALYlong;. '
+slug: refine-simulationg-using-debug-mode
+title: 'Using Debug Mode to Refine the Simulation '
+---
 # Using Debug Mode to Refine the Simulation<a name="refine-simulationg-using-debug-mode"></a>
 
 In the following procedure, use the debug mode to refine the simulated object's movement\.
@@ -8,11 +12,11 @@ In the following procedure, use the debug mode to refine the simulated object's 
 **Example**  
 
    Use the speed slider to reduce the speed of the animation\. Note that the tassel moves through the neck and arm of the actor\.   
-![\[Slow down the animation to see how the simulated object moves with the actor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-21.gif)
+![\[Slow down the animation to see how the simulated object moves with the actor.\]](/images/actor-animation/simulated-objects-21.gif)
 
 1. In the **SimulatedObject0** node, click the right\-corner box\. This enables debug rendering for the node\.  
 **Example**    
-![\[Enable debug mode for the simulated object in the anim graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-19.gif)
+![\[Enable debug mode for the simulated object in the anim graph.\]](/images/actor-animation/simulated-objects-19.gif)
 
 1. In debug mode, you can do the following\.
 
@@ -27,7 +31,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
    + Joint collision radius – The size of the collision radius on a joint\. The radius appears in dark gray\.
 
     In the render window, you can click the first icon to toggle the actor geometry and see only simulated objects\.  
-![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/simulated-objects-22.gif)
+![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](/images/actor-animation/simulated-objects-22.gif)
 
 1. To fix the simulated object \(tassel\) movement, do the following\.
 
@@ -57,4 +61,4 @@ In the following procedure, use the debug mode to refine the simulated object's 
 **Example**  
 
    The following animation is the finished debugged version of the actor running\. Note that the tassel no longer passes through the actor's body\.  
-![\[View the final animation of the actor and the simulated object.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/simulated-objects-23.gif)
+![\[View the final animation of the actor and the simulated object.\]](/images/simulated-objects-23.gif)

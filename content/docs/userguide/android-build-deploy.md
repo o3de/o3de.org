@@ -1,3 +1,7 @@
+description: ' Compile assets and build your Android project with &ALYlong;. '
+slug: android-build-deploy
+title: Build and deploy your project for Android
+---
 # Build and deploy your project for Android<a name="android-build-deploy"></a>
 
  Once you've [set up your environment]() and [configured your project](), it's time to build your Amazon Lumberyard project for Android and get it running on a device\. In this section, you'll set up an attached device to use the [Shader Compiler](), build your project with `lmbr_waf` or Android Studio, and deploy to a device\. You'll also learn how to configure the Lumberyard build system to activate or deactivate automatically deploying to a device whenever you build\. 

@@ -1,3 +1,7 @@
+description: ' See the following console variables for AI debugging in &ALYlong;. '
+slug: ai-concepts-example-multilayered-navigation
+title: AI Multi-Layered Navigation
+---
 # AI Multi\-Layered Navigation<a name="ai-concepts-example-multilayered-navigation"></a>
 
 Useful AI debug draw:

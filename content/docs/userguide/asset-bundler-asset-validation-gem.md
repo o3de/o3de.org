@@ -1,3 +1,8 @@
+description: ' Use the Asset Validation gem''s seed mode in &ALY; to ensure that your
+  game assets are properly bundled. '
+slug: asset-bundler-asset-validation-gem
+title: Using the Asset Validation Gem to Verify Seeds
+---
 # Using the Asset Validation Gem to Verify Seeds<a name="asset-bundler-asset-validation-gem"></a>
 
 After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds\. The Asset Validation gem adds a set of seed\-related commands to the Lumberyard console command window\. You can use these commands to ensure that you have seeds for all assets that you want to bundle\.
@@ -51,14 +56,14 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
    ```
 
 1. Enter game mode\. In the console, seed mode reports multiple Asset not found in seed graph errors\.  
-![\[Asset not found in seed graph errors in the Lumberyard console window.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-asset-validation-gem-1.png)
+![\[Asset not found in seed graph errors in the Lumberyard console window.\]](/images/assetbundler/asset-bundler-asset-validation-gem-1.png)
 
 1. Exit game mode\.
 
 1. Enter the `addseedpath` command to add the missing asset file\. This example uses the command `addseedpath levels\milestone2\level.pak`\.
 
 1. Enter game mode\. The Asset not found errors no longer appear\.  
-![\[Using the addseedpath command in the Lumberyard console window.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-asset-validation-gem-2.png)
+![\[Using the addseedpath command in the Lumberyard console window.\]](/images/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
 ### Handling Missing Asset Errors<a name="asset-bundler-asset-validation-gem-using-seed-mode-handling-missing"></a>
 

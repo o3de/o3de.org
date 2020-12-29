@@ -1,3 +1,7 @@
+description: null
+slug: ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls
+title: Using Texture Atlases to Reduce UI Draw Calls
+---
 # Using Texture Atlases to Reduce UI Draw Calls<a name="ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls"></a>
 
 The UI shader can combine draw calls that use up to a maximum of 16 textures\. If this limit is exceeded, you can use texture atlases to reduce the number of draw calls\.
@@ -19,7 +23,7 @@ To gather data to make these determinations, you can use the Lumberyard Editor c
    ```
 
 1. In the last column in the display of draw call information, note the values under **XTex**\. The **XTex** column shows the number of draw calls when the shader supported maximum of 16 textures is reached\. To reduce the number of draw calls, use a texture atlas\.  
-![\[Location of the XTex column in the draw call information output.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-texture-atlases-8.png)
+![\[Location of the XTex column in the draw call information output.\]](/images/game_ui_editor/ui-editor-texture-atlases-8.png)
 
 1. In the Lumberyard Editor console, enter the `ui_ReportDrawCalls` console command\. This command outputs a report of the draw calls for all active canvases into a text file\.
 

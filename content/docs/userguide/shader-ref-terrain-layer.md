@@ -1,3 +1,8 @@
+description: ' Paint and blend terrain layers in a level with the Terrain.Layer shader
+  in &ALYlong;. '
+slug: shader-ref-terrain-layer
+title: Terrain.Layer Shader
+---
 # Terrain\.Layer Shader<a name="shader-ref-terrain-layer"></a>
 
 The Terrain\.Layer shader is used for painting and blending terrain texture layers in a level\. Besides needing a bump map and high\-passed diffuse map, the Terrain\.Layer shader also requires a height map with either offset bump mapping \(OBM\) or parallax occlusion mapping \(POM\) enabled\. Blending uses the height map to determine how the materials blend together\. For example, if you have pebbles on one material and dirt as another, you may want the pebbles to accurately stand out from the dirt\.

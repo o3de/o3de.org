@@ -1,3 +1,7 @@
+description: ' Learn more about the TPS query language reference in &ALYlong;. '
+slug: ai-tactical-point-query-language
+title: TPS Query Language Reference
+---
 # TPS Query Language Reference<a name="ai-tactical-point-query-language"></a>
 
 There are ways to define a query in both C\+\+ and Lua \(and potentially in XML\), but the same core syntax is used\. This page formally defines the TPS query language, with query components expressed in Generation, Conditions or Weights, and defines and discusses the query language semantics\. 

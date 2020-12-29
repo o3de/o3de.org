@@ -1,3 +1,8 @@
+description: ' Create a cloud gem to add connected features to your &ALYlong; game
+  project. '
+slug: cloud-canvas-cgf-getting-started-create-gem
+title: Creating a Cloud Gem
+---
 # Creating a Cloud Gem<a name="cloud-canvas-cgf-getting-started-create-gem"></a>
 
 Lumberyard includes some cloud gems, such as leaderboards and dynamic content distribution, that provide full\-featured services\. You can use these gems in your games with a minimum of effort\. Because the full source code for these cloud gems is included with Lumberyard, you can customize them or use them as examples for developing your own cloud gems\.

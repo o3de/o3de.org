@@ -1,3 +1,8 @@
+description: ' Learn how AZ Code Generator is integrated with the Waf build system
+  in &ALYlong;. '
+slug: az-code-gen-waf-integration
+title: 'AZ Code Generator Integration with Waf '
+---
 # AZ Code Generator Integration with Waf<a name="az-code-gen-waf-integration"></a>
 
 

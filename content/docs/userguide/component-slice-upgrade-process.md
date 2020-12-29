@@ -1,3 +1,8 @@
+description: ' Enable the &slice-upgrader; to convert slice data patches to the new
+  file format. '
+slug: component-slice-upgrade-process
+title: Converting Slices with the &slice-upgrader;
+---
 # Converting Slices with the Slice Upgrade Pipeline<a name="component-slice-upgrade-process"></a>
 
 In v1\.23, Amazon Lumberyard introduced a new file format for component slices\. Specifically, the override data found in data patches is now stored in a readable XML format instead of a hexadecimal byte stream\. This is useful when performing diff and merge operations on your slice files, and enables a more robust versioning system for your serialized components\. Use the Slice Upgrade Pipeline to automatically convert slice files to the latest slice file format\.
@@ -51,7 +56,7 @@ Enable the Slice Upgrade Pipeline and restart Asset Processor to convert your sl
    1. Restart the project or branch that you are working on\. Asset Processor automatically starts\.
 
 1. On the **Tools** tab in Asset Processor, trigger a **Full Scan** of assets\.\.  
-![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/asset-processor-start-scan.png)
+![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](/images/component/asset-processor-start-scan.png)
 **Note**  
 For more information about using Asset Processor, see [Using Asset Processor](asset-pipeline-processor.md)\.
 

@@ -1,3 +1,8 @@
+description: ' Learn about security best practices when you use the Cloud Gem Framework
+  in &ALYlong;. '
+slug: cloud-canvas-cgf-service-api-security
+title: Security
+---
 # Security<a name="cloud-canvas-cgf-service-api-security"></a>
 
 When you make APIs available on the Internet, you must be concerned with security\. A best practice is to limit API access to only the people who require it\. However, some APIs must be called by the game client\. These APIs can be called by any game player or potentially anyone on the Internet\.
@@ -23,7 +28,7 @@ Configuring access control for a service API involves setting three distinct set
 
 In all three cases, you use the [Cloud Canvas Resource Manager Security](cloud-canvas-rm-security.md) system to configure access\. This involves putting `Permissions` metadata on the `ServiceApi` and `ServiceLambda` resource definitions, as well as on the definitions of resources accessed by the `ServiceLambda` code\. This is illustrated in the following diagram:
 
-![\[Configuring access control\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-service-api-3.png)
+![\[Configuring access control\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-3.png)
 
 The permissions granted by `ServiceApi` are described in detail in the next section\. `ServiceLambda` gives `ServiceApi` permission to invoke the Lambda function\. Other resources give `ServiceLambda` the permissions that the Lambda function requires\.
 

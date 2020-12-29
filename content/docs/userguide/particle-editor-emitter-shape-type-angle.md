@@ -1,10 +1,15 @@
+description: ' Use the Angle emitter in the &ALYlong; &particle-editor; to spawn particles
+  in a directional pattern based on parameters and control the angle of emission. '
+slug: particle-editor-emitter-shape-type-angle
+title: Angle Emitter (CPU and GPU)
+---
 # Angle Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-angle"></a>
 
 The **Angle** emitter spawns particles in a directional pattern based on the parameters\. This is done to control the angle of emission from its source\.
 
 The following are parameters for the **Angle** emitter \(CPU\)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-angle.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-angle.png)
 
 
 **Angle Emitter Parameters for CPU Attributes**  
@@ -22,7 +27,7 @@ The following are parameters for the **Angle** emitter \(CPU\)\.
 
 The following are parameters for the **Angle** emitter \(GPU\)\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-angle-2.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-angle-2.png)
 
 
 **Angle Emitter Parameters for GPU Attributes**  

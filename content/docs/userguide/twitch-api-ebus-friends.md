@@ -1,3 +1,8 @@
+description: ' Learn about the Friends C++ API operations for Twitch that you can
+  use for your &ALY; game project. '
+slug: twitch-api-ebus-friends
+title: Friends
+---
 # Friends<a name="twitch-api-ebus-friends"></a>
 
 Friends APIs for Twitch

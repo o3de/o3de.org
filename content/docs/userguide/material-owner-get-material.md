@@ -1,3 +1,8 @@
+description: ' Use the Get Material node in the &ALYlong; &script-canvas; editor to
+  find an entity''s current material file. '
+slug: material-owner-get-material
+title: Get Material
+---
 # Get Material<a name="material-owner-get-material"></a>
 
 Returns an entity's current material\.
@@ -6,7 +11,7 @@ Returns an entity's current material\.
 + [Inputs](#material-owner-get-material-input)
 + [Outputs](#material-owner-get-material-output)
 
-![\[getmaterialnode, getmaterial\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-material-owner-node.png)
+![\[getmaterialnode, getmaterial\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-material-owner-node.png)
 
 **Note**  
 If you use the **[Set Material](material-owner-set-material.md)** node and specify an invalid material and then call the **Get Material** node, **Get Material** returns the entity's default material instead of `Invalid`\.

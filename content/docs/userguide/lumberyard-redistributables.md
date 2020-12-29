@@ -1,3 +1,8 @@
+description: ' List of &ALY; materials that are allowed to be redistributed in &ALY;
+  projects. '
+slug: lumberyard-redistributables
+title: '&ALY; Redistributables'
+---
 # Lumberyard Redistributables<a name="lumberyard-redistributables"></a>
 
 For purposes of the [Lumberyard Service Terms](https://aws.amazon.com/service-terms/), the Lumberyard materials in the directories listed below are designated as "Lumberyard Redistributables\." Unless subdirectories of a directory are specified, all files in the directory listed are deemed Lumberyard Redistributables\.

@@ -1,3 +1,8 @@
+description: ' Use cinematic lighting for track view sequences in the &trackview-editor;
+  in &ALYlong;. '
+slug: cinematics-adding-lighting-to-scenes
+title: Adding Lighting
+---
 # Adding Lighting<a name="cinematics-adding-lighting-to-scenes"></a>
 
 

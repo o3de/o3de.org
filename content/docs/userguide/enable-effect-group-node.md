@@ -1,3 +1,8 @@
+description: ' Use the Enable Effect Group node in the &ALYlong; &script-canvas; editor
+  to enable a group of effects. '
+slug: enable-effect-group-node
+title: Enable Effect Group
+---
 # Enable Effect Group<a name="enable-effect-group-node"></a>
 
 Enables a specific group of effects setting that are defined in an `xml` file\. 
@@ -13,7 +18,7 @@ For more information about effect group files, see [Customizing Post\-Processing
 + [Inputs](#enable-effect-group-node-input)
 + [Outputs](#enable-effect-group-node-output)
 
-![\[enableeffectgroup, enableeffectgroupnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-effect-group-node.png)
+![\[enableeffectgroup, enableeffectgroupnode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-effect-group-node.png)
 
 ## Inputs<a name="enable-effect-group-node-input"></a>
 

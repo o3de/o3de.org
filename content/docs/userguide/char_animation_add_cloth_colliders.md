@@ -1,3 +1,7 @@
+description: ' Add colliders to actors in &ALYlong; for NVIDIA Cloth simulations. '
+slug: char_animation_add_cloth_colliders
+title: Add Cloth Colliders to actors
+---
 # Add Cloth Colliders to actors<a name="char_animation_add_cloth_colliders"></a>
 
 
@@ -22,11 +26,11 @@ For more information, see the [NVIDIA Cloth Gem documentation](nvidia-cloth.md)\
 1. In the **Skeleton Outliner**, select the joint that you want to add the cloth collider to\. 
 
 1. Right\-click the selected joint, and then choose **Cloth**, **Add collider**\. You can add colliders \(capsules or spheres\)\. You can also copy them from Hit Detection, Ragdolls or Simulated Objects\.   
-![\[Add cloth collider to character.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/nvidiacloth/ui-cloth-add-collider-1.23.png)
+![\[Add cloth collider to character.\]](/images/actor-animation/nvidiacloth/ui-cloth-add-collider-1.23.png)
 
 1. The **Cloth Colliders** tab shows you the list of cloth colliders of the selected joint\. 
 
 1. Adjust the dimensions, offset, and rotation of cloth colliders\.   
-![\[Adjust cloth collider added to character.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/nvidiacloth/ui-cloth-adjust-collider-1.23.png)
+![\[Adjust cloth collider added to character.\]](/images/actor-animation/nvidiacloth/ui-cloth-adjust-collider-1.23.png)
 
 1. Choose **File**, **Save Selected Actors**\. 

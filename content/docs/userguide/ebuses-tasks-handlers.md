@@ -1,3 +1,7 @@
+description: ' Use EBuses to implement some common game programming tasks. '
+slug: ebuses-tasks-handlers
+title: Common Tasks, EBuses, and Handlers
+---
 # Common Tasks, EBuses, and Handlers<a name="ebuses-tasks-handlers"></a>
 
 The following are some common game programming tasks and the EBuses and handlers that you can use to implement them\.

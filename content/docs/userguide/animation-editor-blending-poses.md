@@ -1,3 +1,8 @@
+description: ' Learn how to blend poses using blend nodes in the &ALYlong; &animation-editor;
+  . '
+slug: animation-editor-blending-poses
+title: Blending Poses with Blend Nodes
+---
 # Blending Poses with Blend Nodes<a name="animation-editor-blending-poses"></a>
 
 
@@ -24,7 +29,7 @@ The blend nodes feature a set of attributes that control different aspects of ho
 
 The **Sync Mode** attribute determines the method of synchronizing motion clips to keep the feet synchronized\.
 
-![\[Blend node attributes: Sync Mode.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-blending-attributes-1.png)
+![\[Blend node attributes: Sync Mode.\]](/images/actor-animation/animation-editor-blending-attributes-1.png)
 
 
 ****  
@@ -53,7 +58,7 @@ The **Event Filter Mode** attribute determines which node's events are emitted\.
 
 The **Extraction Mode** attribute controls how the motion extraction behaves when blending\. For example, for transitions inside state machines, you can use this node to ensure that a 180 degree turn completes\.
 
-![\[Blend node attributes: Extraction Mode.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-blending-attributes-3.png)
+![\[Blend node attributes: Extraction Mode.\]](/images/actor-animation/animation-editor-blending-attributes-3.png)
 
 
 ****  

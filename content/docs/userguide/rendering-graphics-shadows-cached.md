@@ -1,3 +1,8 @@
+description: ' Control the degree to which &ALYlong; caches shadows to optimize performance
+  and memory use. '
+slug: rendering-graphics-shadows-cached
+title: Cached Shadows
+---
 # Cached Shadows<a name="rendering-graphics-shadows-cached"></a>
 
 Shadow caching is an effective optimization method to reduce the number of shadow drawcalls and to increase the shadow casting and receiving range\. 

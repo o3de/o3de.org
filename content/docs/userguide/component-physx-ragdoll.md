@@ -1,3 +1,8 @@
+description: ' Use the PhysX Ragdoll component to create a physical representation
+  of a character in the &ALYlong; &animation-editor; . '
+slug: component-physx-ragdoll
+title: PhysX Ragdoll
+---
 # PhysX Ragdoll<a name="component-physx-ragdoll"></a>
 
 You can use the **PhysX Ragdoll** component to create a physical representation of a character in the animation system and to simulate certain behaviors, such as hit reactions and character death\. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints\. You can adjust the ragdoll settings as needed for physical plausibility and performance\.
@@ -20,7 +25,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 ## PhysX Ragdoll Component Properties<a name="physx-ragdoll-component-properties"></a>
 
-![\[PhysX Ragdoll component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
+![\[PhysX Ragdoll component properties.\]](/images/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
 
 
 ****  

@@ -1,3 +1,8 @@
+description: ' Use the Pose Subtract node in &ALYlong; &animation-editor; to subtract
+  one pose from another. '
+slug: animation-editor-blending-posesubtract
+title: Pose Subtract Node
+---
 # Pose Subtract Node<a name="animation-editor-blending-posesubtract"></a>
 
 The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**\. The output of a **Pose Subtract** node is the delta between them \(**Pose 1** – **Pose 2**\)\.
@@ -16,10 +21,10 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
 1. Drag the **Pose Subtract** node into the animation graph\.  
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Pose Subtract into the animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/char-animation-editor-blendposes-animgraphpalette-posesubtract.png)
+![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Pose Subtract into the animation graph.\]](/images/actor-animation/char-animation-editor-blendposes-animgraphpalette-posesubtract.png)
 
 1.   
-![\[Pose Subtract node on the animation graph with inputs and outputs exposed.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/char-animation-editor-blendposes-inoutputs-posesubtract.png)
+![\[Pose Subtract node on the animation graph with inputs and outputs exposed.\]](/images/actor-animation/char-animation-editor-blendposes-inoutputs-posesubtract.png)
 
    Connect nodes to the following inputs and output:
    + **Pose 1** – The base pose\.
@@ -30,4 +35,4 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 For attribute settings that are shared among the blend node types, see [Blend Node Attributes](animation-editor-blending-poses.md#animation-editor-blending-attributes)\.
 
-![\[Pose Subtract node attributes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-blending-posesubtract-attributes.png)
+![\[Pose Subtract node attributes.\]](/images/actor-animation/animation-editor-blending-posesubtract-attributes.png)

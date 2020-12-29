@@ -1,3 +1,8 @@
+description: ' Use script events to enable entities to communicate with each other
+  in &ALYlong;. '
+slug: script-events
+title: Using Script Events
+---
 # Using Script Events<a name="script-events"></a>
 
 Scripting in Lumberyard is designed around event driven paradigms\. Rather than directly accessing information from a given entity or one of its components, you use events to send and receive information and take action in a decoupled environment\.

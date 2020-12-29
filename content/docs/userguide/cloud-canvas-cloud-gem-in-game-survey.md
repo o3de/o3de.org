@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; In-Game Survey Cloud Gem Portal to create surveys
+  for your game and test them in InGameSurveySample. '
+slug: cloud-canvas-cloud-gem-in-game-survey
+title: In-Game Survey Cloud Gem Portal
+---
 # In\-Game Survey Cloud Gem Portal<a name="cloud-canvas-cloud-gem-in-game-survey"></a>
 
 You can use the In\-Game Survey Cloud Gem Portal to create surveys for your game and test them in the **InGameSurveySample**\. Your players can see active surveys and submit answers to them\. You can view survey results and manage your surveys in the Cloud Gem Portal\. 
@@ -31,18 +36,18 @@ When you create a survey in the Cloud Gem Portal, you add the questions that you
 **To create a survey**
 
 1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **In Game Survey**\.  
-![\[Choose In Game Survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-1.png)
+![\[Choose In Game Survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-1.png)
 
 1. On the **Overview** tab of the Cloud Gem Portal, choose **Create New Survey\.**  
-![\[Choose Create New Survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-2.png)
+![\[Choose Create New Survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-2.png)
 
 1. In the **Create New Survey** dialog box, enter a name for the survey\. Because the cloud gem automatically generates a unique ID for each survey, the name doesn't have to be unique\.
 
 1. On the **Questions** tab, choose **Add New Question** to add a question to the survey\.  
-![\[Choose Add New Question\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-4.png)
+![\[Choose Add New Question\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-4.png)
 
 1. In the **Add New Question** dialog box, choose a question type: multiple choice with check boxes, multiple choice with radio buttons, slider, or text\.  
-![\[Choose question type\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-5.png)
+![\[Choose question type\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-5.png)
 
 1. Provide the information for the question type that you selected\. The information requested depends on the question type\.
    + For **Title**, enter the text of the question\.
@@ -51,7 +56,7 @@ When you create a survey in the Cloud Gem Portal, you add the questions that you
    + For a text question, enter a number for **Character Limit** to specify the maximum number of characters that can be typed into the text box for the question\.
 
    After you add your questions, the **Questions** tab shows a preview of your survey\.  
-![\[A survey preview\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-6.png)
+![\[A survey preview\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-6.png)
 
 1. To change the order of a question in the survey, drag the question to its new position\. You can also use the icons on the right of each entry to delete or disable a question\.
 
@@ -64,16 +69,16 @@ When you publish a survey, you schedule a start and end time and date\. You can 
 **To publish a survey**
 
 1. To publish the survey, click **Publish Survey** at the bottom of the survey preview\.  
-![\[Click Publish Survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-7.png)
+![\[Click Publish Survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-7.png)
 
 1. For **Scheduling**, specify a start and end time and date for the survey, or specify **No Start** and **No End** to make the survey ongoing\. **No Start** and **No End** are selected by default\.  
-![\[Schedule the survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-8.png)
+![\[Schedule the survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-8.png)
 
 1. Click **Publish Survey**\. On the **Questions** tab, the survey status is now **Active**\.  
-![\[Active survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-9.png)
+![\[Active survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-9.png)
 
 1. Choose **Back to Survey List Page**\. The **Overview** tab shows the active survey, its scheduling, and the number of responses received\.  
-![\[Active survey information on the Overview tab\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-10.png)
+![\[Active survey information on the Overview tab\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-10.png)
 
 ## Testing a Survey with the Sample Level<a name="cloud-canvas-cloud-gem-in-game-survey-testing"></a>
 
@@ -82,13 +87,13 @@ To test your survey you can use the in\-game survey sample that is included with
 **To test the survey**
 
 1. In Lumberyard Editor, run the **InGameSurveySample** level and provide some sample answers in the test interface\. Use the **Next** and **Back** buttons provided to move between answers\.  
-![\[Multiple-choice question with check boxes\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-11.png)  
-![\[Multiple-choice question with radio buttons\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-12.png)  
-![\[Question with a range of values\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-13.png)  
-![\[Text question\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-14.png)
+![\[Multiple-choice question with check boxes\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-11.png)  
+![\[Multiple-choice question with radio buttons\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-12.png)  
+![\[Question with a range of values\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-13.png)  
+![\[Text question\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-14.png)
 
 1. When you are finished, choose **Submit**\.  
-![\[Submit survey answers\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-15.png)
+![\[Submit survey answers\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-15.png)
 
    When you choose **Submit**, you return to Lumberyard Editor viewport\.
 
@@ -101,30 +106,30 @@ In the Cloud Gem Portal, you can see aggregate and individual response data for 
 **To view survey results**
 
 1. Return to the Cloud Gem Portal\. On the **Overview** tab, click the refresh icon to update the results\.  
-![\[Refresh the portal to update the number of responses\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-16.png)
+![\[Refresh the portal to update the number of responses\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-16.png)
 
    The value for **Responses** changes to show the number of surveys that were completed\.
 
 1. On the **Overview** tab, click the name of your survey, and then choose the **Results** tab\.  
-![\[Choose the Results tab\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-17.png)
+![\[Choose the Results tab\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-17.png)
 
 1. Scroll down to view the results\. Each nontext question has a table of aggregated results and a corresponding bar chart\.
 
 1. To see a pie chart view of the results, choose the pie chart ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-18.png) icon\. To see the bar chart again, choose the bar chart ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-19.png) icon\.  
-![\[Choose chart type\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-20.png)
+![\[Choose chart type\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-20.png)
 
 1. To view the answers for a text question, click **View Answers**\.  
-![\[For text questions, choose View Answers\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-21.png)  
-![\[Verbatim answers to a text question\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-22.png)
+![\[For text questions, choose View Answers\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-21.png)  
+![\[Verbatim answers to a text question\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-22.png)
 
 1. To see a list of individual response entries, click the **Individual Responses** tab\.  
-![\[Choose Individual Responses\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-23.png)
+![\[Choose Individual Responses\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-23.png)
 
 1. You can choose **Export to CSV** on the **Individual Responses** tab to export all submissions to a `.csv` file\. This option is useful if you want to import the results into third\-party tools for analysis\.
 
 1. In the list of submissions, choose an entry to see a set of answers from an individual respondent\.  
-![\[Choose an individual survey submission\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-24.png)  
-![\[A set of answers from an individual submission\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-25.png)
+![\[Choose an individual survey submission\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-24.png)  
+![\[A set of answers from an individual submission\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-25.png)
 
 ## Editing an Active Survey<a name="cloud-canvas-cloud-gem-in-game-survey-editing-active"></a>
 
@@ -133,12 +138,12 @@ You can edit an active survey, but you should do so with caution\. For example, 
 **To edit an active survey**
 
 1. On the **Overview** tab, click the survey name\. Then on the **Questions** tab, click the edit ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-30.png) icon for the survey\.  
-![\[Choose Edit\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-26.png)
+![\[Choose Edit\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-26.png)
 
 1. At the warning prompt, choose **Edit Active Survey** to continue\.
 
 1. To edit the survey, choose the **Move** ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-28.png), **Delete**![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-29.png), **Edit**![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-30.png), or **Disable Question** options from the menu for the questions that you want to change\.  
-![\[Choose survey editing option\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-31.png)
+![\[Choose survey editing option\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-31.png)
 
    When you disable or delete a question, you are warned about the following:
    + If you disable a question, it no longer appears in the survey and responses to it are not collected\. Existing responses are preserved\.
@@ -153,10 +158,10 @@ Follow the steps here to modify the schedule for an active survey\. For a nonact
 1. On the **Overview** tab, choose the active survey whose schedule you want to change\.
 
 1. On the **Questions** tab, choose **Edit Scheduling** from the menu for the survey\.  
-![\[Choose Edit Scheduling\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-32.png)
+![\[Choose Edit Scheduling\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-32.png)
 
 1. In the **Edit Activation Period** dialog box, edit the schedule, and then choose **Modify**\.  
-![\[Edit the schedule\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-33.png)
+![\[Edit the schedule\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-33.png)
 
    The new schedule appears on the **Overview** tab in the entry for the survey \.
 
@@ -167,15 +172,15 @@ You can clone a survey from another survey regardless of the original survey's s
 **To clone a survey**
 
 1. On the **Overview** or **Questions** tab, choose **Clone** from the menu for the survey that you want to clone\.  
-![\[Choose Clone\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-34.png)
+![\[Choose Clone\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-34.png)
 
 1. In the **Clone Survey** dialog box, enter a name for the cloned survey\. The cloned survey appears on the **Overview** tab\. Its status is **Draft**\.  
-![\[Cloned survey\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-35.png)
+![\[Cloned survey\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-35.png)
 
 1. Click the cloned survey to edit it\. Follow the same process as you would to edit and publish a new survey\.
 
 1. After you have more than one survey, you can filter them on the **Overview** tab by status: **Active**, **Draft**, and/or **Scheduled**\.  
-![\[Filter surveys by status\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-36.png)
+![\[Filter surveys by status\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-36.png)
 
 ## Ending a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-ending"></a>
 
@@ -186,7 +191,7 @@ When you end a survey, the survey and its results are available in your survey h
 1. On the **Overview** or **Questions** tab of the Cloud Gem Portal, choose **End** from the menu options for the survey\. Then choose **End Survey** in the confirmation dialog box\. The survey disappears from the **Overview** tab\.
 
 1. Click the **History** tab\. The survey is present with the status of **Closed**\.  
-![\[Closed survey on the History tab\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-37.png)
+![\[Closed survey on the History tab\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-37.png)
 
    On the **History** tab, you can perform the normal operations of deleting, editing, or cloning closed surveys from the menu options for each survey\.
 
@@ -199,7 +204,7 @@ When you end a survey, the survey and its results are available in your survey h
 1. On the **History** tab, select the survey that you want to reopen\.
 
 1. On the **Questions** tab, choose **Reopen** from the menu options for the survey\.  
-![\[Choose Reopen\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-38.png)
+![\[Choose Reopen\]](/images/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-38.png)
 
 1. In the **Edit Activation Period** dialog box, configure the schedule for the survey that you are reopening\. Then choose **Modify**\.
 

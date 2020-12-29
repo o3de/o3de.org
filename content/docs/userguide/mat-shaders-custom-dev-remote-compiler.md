@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s remote shade compiler for game consoles that can''t
+  compile shaders locally. '
+slug: mat-shaders-custom-dev-remote-compiler
+title: Remote Shader Compiler
+---
 # Remote Shader Compiler<a name="mat-shaders-custom-dev-remote-compiler"></a>
 
 Lumberyard's remote shader compiler application provides a convenient way to compile shaders during development\. You can install the shader compiler on a PC or Mac local network server that can communicate over TCP\. The server receives the shader source file from a computer running Lumberyard, compiles it, and sends back the shader\. Almost all renderers require a remote shader compiler\. The exception is a PC running DX11, for which a remote shader compiler is optional for local development\.
@@ -167,7 +172,7 @@ You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\
 
 **Example**  
 
-![\[Specify the server directory instead of the PC directory.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/materials/shaders/create-paks-server-assets.png)
+![\[Specify the server directory instead of the PC directory.\]](/images/materials/shaders/create-paks-server-assets.png)
 
 **To create paks for server assets**
 

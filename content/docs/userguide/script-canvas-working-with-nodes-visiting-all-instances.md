@@ -1,3 +1,8 @@
+description: ' Learn how to navigate &script-canvas; graphs in &ALYlong; to visit
+  all nodes. '
+slug: script-canvas-working-with-nodes-visiting-all-instances
+title: Navigating Graphs
+---
 # Navigating Graphs<a name="script-canvas-working-with-nodes-visiting-all-instances"></a>
 
 If you want to visit all nodes of the same type on a graph – for example, to check their configuration – use the following procedure\.
@@ -13,4 +18,4 @@ If you want to visit all nodes of the same type on a graph – for example, to c
 1. To scroll to the left, starting at the rightmost node occurence, press **F7**\.
 
 1. To return to the beginning or end of the cycle, press **F7** or **F8** again\.  
-![\[Visiting all instances of a node in a graph in the Script Canvas editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-working-with-nodes-22.gif)
+![\[Visiting all instances of a node in a graph in the Script Canvas editor.\]](/images/scripting/script-canvas/script-canvas-working-with-nodes-22.gif)

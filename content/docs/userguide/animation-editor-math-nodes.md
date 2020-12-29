@@ -1,3 +1,8 @@
+description: ' Use the &animation-editor; ''s math nodes to perform math operations
+  in &ALYlong;. '
+slug: animation-editor-math-nodes
+title: Using Math Nodes
+---
 # Using Math Nodes<a name="animation-editor-math-nodes"></a>
 
 Lumberyard's **Animation Editor** features a set of math nodes that perform math operations on various types of input\. The math nodes pass on the result\(s\) of the operation as output\.
@@ -14,7 +19,7 @@ With the **Rotation Math 2** node, you can apply math operations to input rotati
 
 This node multiplies the input rotation and the specified **Default Value** to express an output rotation\. The **Default Value** specifies the rotation of an unconnected input\. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\)\. 
 
-![\[Example of the Rotation Math 2 node in an animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/rotation-math.png)
+![\[Example of the Rotation Math 2 node in an animation graph.\]](/images/actor-animation/rotation-math.png)
 
 **To use the Rotation Math 2 node**
 
@@ -32,11 +37,11 @@ Multiplies the **x** input with the inverse of the **y** input\. You can also us
 
 ## Rotation Limit Node<a name="rotation-limit"></a>
 
-![\[Figure of Rin in the Animation Editor with a rotated foot.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/rotation-limit-figure.png)
+![\[Figure of Rin in the Animation Editor with a rotated foot.\]](/images/actor-animation/rotation-limit-figure.png)
 
 With the **Rotation Limit** node, you can limit an input rotation\. To do this, the node decomposes the rotations of the quaternion along relevant axes and limits their angles to a range\. You define the minimum and the maximum possible angle values to remove ambiguity between the shortest or longest path angle defined by two values\.
 
-![\[Example of the Rotation Limit node in an animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/rotation-limit-graph.png)
+![\[Example of the Rotation Limit node in an animation graph.\]](/images/actor-animation/rotation-limit-graph.png)
 
 **To use the **Rotation Limit** node**
 
@@ -52,7 +57,7 @@ The **Min angle** can't exceed the **Max angle**\. If it does, the error is disp
 
    The **Twist axis** specifies which axis the **Rotation Limit** node is to decompose and apply edited constraints\.
 
-![\[Rotation Limit attributes panel.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/rotation-limit-properties.png)
+![\[Rotation Limit attributes panel.\]](/images/actor-animation/rotation-limit-properties.png)
 
 ## Vector Decompose Nodes<a name="vector-conversion"></a>
 
@@ -61,7 +66,7 @@ Using **Vector Decompose** nodes, you can output one or more specific values of 
 **Example**  
 You have a 3D vector XYZ that indicates a position in a 3D world, but you only need its height \(Z\) for a computation\. You would input your vector into a **Vector3Decompose** node and use only the Z output for your calculation\.  
 
-![\[Example of the Vector Decompose nodes in an animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/vector-decompose.png)
+![\[Example of the Vector Decompose nodes in an animation graph.\]](/images/actor-animation/vector-decompose.png)
 
 You don't need to use **Vector Decompose** nodes if you are simply adding or subtracting one of the X, Y, Z, or W positions\. For typical **Vector3** to **Vector2** \(and vice versa\) conversion, or **Vector3** to **Vector4** \(and vice versa\) conversion, the **Animation Editor** automatically converts vectors in the following way:
 + **Vector2** to **Vector3** – Adds the **Z** component set to `0`\.
@@ -75,11 +80,11 @@ Using the **Boolean Logic** node, you can apply a function to two boolean inputs
 
 When choosing an output type, you can output from the **Float** output or the **Bool** output\. The **Bool** output passes on a `0` or `1`\. The **Float** output passes on a float value that you specify in the attributes\.
 
-![\[Example of a Boolean Logic node in an animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/boolean-logic-node.png)
+![\[Example of a Boolean Logic node in an animation graph.\]](/images/actor-animation/boolean-logic-node.png)
 
 ### Boolean Logic Node Attributes<a name="boolean-logic-node-attributes"></a>
 
-![\[Boolean Logic node attributes pane.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/boolean-logic-node-attributes.png)
+![\[Boolean Logic node attributes pane.\]](/images/actor-animation/boolean-logic-node-attributes.png)
 
 The **Boolean Logic** node features a set of attributes that performs operations on boolean values\.
 
@@ -94,4 +99,4 @@ The **Boolean Logic** node features a set of attributes that performs operations
 |  **Float Result When True**  |  Sets a float value to output when the result of the boolean function is true \(`1`\)\. You must also use the **Float** output connector to output this value\.  | 
 |  **Float Result When False**  |  Sets a float value to output when the result of the boolean function is false \(`0`\)\. You must also use the **Float** output connector to output this value\.  | 
 
-![\[Example of the Boolean Logic nodes in an animation graph.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/boolean-logic-node-attributes-1.png)
+![\[Example of the Boolean Logic nodes in an animation graph.\]](/images/actor-animation/boolean-logic-node-attributes-1.png)

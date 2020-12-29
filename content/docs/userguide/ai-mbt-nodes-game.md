@@ -1,3 +1,7 @@
+description: ' Learn more about the AI MBT nodes in &ALYlong;. '
+slug: ai-mbt-nodes-game
+title: Game AI Modular Behavior Tree (MBT) Nodes
+---
 # Game AI Modular Behavior Tree \(MBT\) Nodes<a name="ai-mbt-nodes-game"></a>
 
 Game AI Modular Behavior Tree nodes are mostly used to offer specific game functionality\. Each type of game may have multiple character types and each type may need to trigger specific logic to perform action in the game\. Game\-specific nodes are generally not suitable for general use and may need to be tweaked to fit the needs of your game\.

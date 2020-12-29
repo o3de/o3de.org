@@ -1,3 +1,7 @@
+description: ' Learn about the Player Account Sample Level in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-player-account-sample-level
+title: The Player Account Sample Level
+---
 # The Player Account Sample Level<a name="cloud-canvas-cloud-gem-player-account-sample-level"></a>
 
 The CloudGemSamples project contains a sample level named `PlayerAccountSample`\. The player account sample level provides a menu from which players can create an account, verify their email addresses, sign in and out of their accounts, and recover their passwords by email\.
@@ -17,4 +21,4 @@ Note that in the sample, UI canvases do not include functionality for displaying
 
 The following diagram shows how the UI canvases are connected\. For more information on the Amazon Cognito user pool signup process, see the [Signing Up and Confirming User Accounts](https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up-users-in-your-app.html) page in the [Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)\.
 
-![\[Player sign in workflow\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-player-account-gem-ui-canvases-connection.png)
+![\[Player sign in workflow\]](/images/cloud_canvas/cloud-canvas-player-account-gem-ui-canvases-connection.png)

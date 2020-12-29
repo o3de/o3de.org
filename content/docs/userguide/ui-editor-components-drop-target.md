@@ -1,3 +1,8 @@
+description: ' Use the DropTarget component with the Draggable component to implement
+  drag-and-drop behavior in the &ALYlong; &ui-canvas-editor;. '
+slug: ui-editor-components-drop-target
+title: DropTarget
+---
 # DropTarget<a name="ui-editor-components-drop-target"></a>
 
 You can use the **DropTarget** component to implement drag\-and\-drop behavior with the **Draggable** component\.
@@ -8,7 +13,7 @@ To add the **DropTarget** component to a UI element, use the **Add Component** m
 
 The following picture shows an example of a **DropTarget** component, where color has been added to the state actions for **Drop States**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-drag-drop-droptarget.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-drag-drop-droptarget.png)
 
 The **DropTarget** component shares properties with interactive components, such as state actions and navigation settings\.
 

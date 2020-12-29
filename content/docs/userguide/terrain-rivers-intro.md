@@ -1,3 +1,8 @@
+description: ' Follow these best practices when creating rivers in your &ALY; environment
+  level. '
+slug: terrain-rivers-intro
+title: Creating Rivers
+---
 # Creating Rivers<a name="terrain-rivers-intro"></a>
 
 You can add realistic rivers, complete with waterfalls, to your terrain in your environment level\.

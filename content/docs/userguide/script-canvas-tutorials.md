@@ -1,3 +1,8 @@
+description: ' Use the &script-canvas; tutorials to learn about &ALYlong;''s visual
+  scripting system. '
+slug: script-canvas-tutorials
+title: '&script-canvas; Tutorials'
+---
 # Script Canvas Tutorials<a name="script-canvas-tutorials"></a>
 
 Use the following **Script Canvas** tutorials to learn about the Lumberyard visual scripting system\.

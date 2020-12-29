@@ -1,3 +1,7 @@
+description: ' Validate &script-canvas; node slots with node contracts in &ALYlong;. '
+slug: script-canvas-custom-nodes-node-contracts
+title: Node Contracts
+---
 # Node Contracts<a name="script-canvas-custom-nodes-node-contracts"></a>
 
 Script Canvas uses contracts to validate which node's slots are permitted to connect to other slots\. These contracts have validation rules that prevent runtime connections between invalid configurations\. The Script Canvas editor uses these contracts to prevent users from creating invalid operations\.

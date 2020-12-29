@@ -1,3 +1,7 @@
+description: ' Generate a .dat file for sky rendering in &ALYlong;. '
+slug: graphics-rendering-stars
+title: Generating Stars .dat File
+---
 # Generating Stars \.dat File<a name="graphics-rendering-stars"></a>
 
 The Stars `.dat` file contains star data that is used in sky rendering\. This topic provides information you'll need if you want to modify the data in this file\. It assumes you have some familiarity with generating binary files\.

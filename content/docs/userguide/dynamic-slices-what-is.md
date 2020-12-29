@@ -1,3 +1,7 @@
+description: ' Use dynamic slices in &ALYlong;. '
+slug: dynamic-slices-what-is
+title: Working with Dynamic Slices
+---
 # Working with Dynamic Slices<a name="dynamic-slices-what-is"></a>
 
 Slices are a powerful tool for organizing entity data in your worlds\. In the editor, you can choose to cascade slices and organize entity data in any desired granularity and still receive the benefits of data sharing and inheritance throughout the hierarchy\. A level\-based game, for example, implements each level as its own slice asset that contains instances of many other slices\. These slices can potentially cascade many levels deep\. You can choose to create slices from other slices and inherit only the elements that you want\. 
@@ -11,14 +15,14 @@ You can choose to generate dynamic slices at whatever granularity is appropriate
 **To create a dynamic slice**
 
 1. In the **Asset Browser**, right\-click a `.slice` asset and choose **Set Dynamic Slice**\.  
-![\[Set the dynamic slice in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/dynamic-slices-set-dynamic-flag.png)
+![\[Set the dynamic slice in the Asset Browser.\]](/images/component/dynamic-slices-set-dynamic-flag.png)
 
 1. Asset Processor processes the source `.slice` file and generates a `.dynamicslice` file\. In the **Asset Browser**, you can see the `.dynamicslice` file appears as its own asset\.  
-![\[A newly created dynamic slice appears in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/dynamic-slices-dynamic-flag-set.png)
+![\[A newly created dynamic slice appears in the Asset Browser.\]](/images/component/dynamic-slices-dynamic-flag-set.png)
 
 **To remove a dynamic slice**
 + In the **Asset Browser**, right\-click the dynamic file and choose **Unset Dynamic Slice**\.  
-![\[Set the dynamic slice in the Asset Browser.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/dynamic-slices-unset-dynamic-flag.png)
+![\[Set the dynamic slice in the Asset Browser.\]](/images/component/dynamic-slices-unset-dynamic-flag.png)
 
   Asset Processor deletes the `.dynamicslice` file from the asset cache\.
 

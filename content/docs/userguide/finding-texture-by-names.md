@@ -1,3 +1,8 @@
+description: ' Find the texture file name to reference for nodes in the &ALYlong;
+  &script-canvas; editor. '
+slug: finding-texture-by-names
+title: Finding the Texture Name
+---
 # Finding the Texture Name<a name="finding-texture-by-names"></a>
 
 

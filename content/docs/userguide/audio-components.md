@@ -1,3 +1,7 @@
+description: ' Use the Audio components in &ALYlong; to add sounds to your level. '
+slug: audio-components
+title: Audio Components
+---
 # Audio Components<a name="audio-components"></a>
 
 Use the following audio components to add and configure sounds in your level:

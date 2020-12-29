@@ -1,3 +1,7 @@
+description: ' See the C++ interfaces for TPS querying in &ALYlong;. '
+slug: ai-tactical-point-cpp-interface
+title: TPS Querying with C++
+---
 # TPS Querying with C\+\+<a name="ai-tactical-point-cpp-interface"></a>
 
 These C\+\+ interfaces allow you to use TPS from other C\+\+ code and within goalops\. Lua queries are translated through it\. 

@@ -1,3 +1,8 @@
+description: ' Use the VR TV Room level in &ALYlong; to demonstrate a simple VR level
+  setup for playing 2D video, 3D video, and 360 video on a VR device. '
+slug: sample-level-vr-tv-room
+title: VR TV Room Level
+---
 # VR TV Room Level<a name="sample-level-vr-tv-room"></a>
 
 The VR TV Room level demonstrates a simple VR level that is set up to play 2D video, 3D video, and 360 video on a VR device\. This level contains the following:
@@ -13,11 +18,11 @@ For more information about installing the project that includes the VR TV Room l
 
 You can use the **[Video Playback](component-videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\. 
 
-![\[Video Playback and Script Canvas components for the VR TV Room level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/tv-room-level-video-playback-script-canvas-components-example.png)
+![\[Video Playback and Script Canvas components for the VR TV Room level.\]](/images/tv-room-level-video-playback-script-canvas-components-example.png)
 
 You can use the **Script Canvas** component and graph to set the playback to loop mode and to start playing immediately\.
 
-![\[Example Script Canvas graph for the VR TV Room level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/tv-room-level-script-canvas-graph.png)
+![\[Example Script Canvas graph for the VR TV Room level.\]](/images/tv-room-level-script-canvas-graph.png)
 
 ## Cycling Through Video Playback Options<a name="sample-level-vr-tv-room-cycling-through-video-playback-options"></a>
 

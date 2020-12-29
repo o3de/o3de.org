@@ -1,3 +1,8 @@
+description: ' Use the Set Moon Longitude node in the &ALYlong; &script-canvas; editor
+  to set the moon latitude. '
+slug: set-moon-longitude-node
+title: Set Moon Longitude
+---
 # Set Moon Longitude<a name="set-moon-longitude-node"></a>
 
 Sets the moon's longitude in the sky\.
@@ -6,7 +11,7 @@ Sets the moon's longitude in the sky\.
 + [Inputs](#set-moon-longitude-node-input)
 + [Outputs](#set-moon-longitude-node-output)
 
-![\[setmoonlongitude, setmoonlongitudenode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-moon-longitude-node.png)
+![\[setmoonlongitude, setmoonlongitudenode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-moon-longitude-node.png)
 
 ## Inputs<a name="set-moon-longitude-node-input"></a>
 

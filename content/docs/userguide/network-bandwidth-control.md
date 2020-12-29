@@ -1,3 +1,7 @@
+description: ' Use GridMate to control the bandwidth that your game uses in &ALYlong;. '
+slug: network-bandwidth-control
+title: Controlling Bandwidth Usage
+---
 # Controlling Bandwidth Usage<a name="network-bandwidth-control"></a>
 
 [GridMate](network-intro.md) provides several ways to control the bandwidth that your game uses, including bandwidth throttling and the prioritization of [replica](network-replicas-replica.md) updates\.

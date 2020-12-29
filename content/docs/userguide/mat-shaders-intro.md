@@ -1,3 +1,8 @@
+description: ' Use shaders to specify how light interacts with objects for your game
+  in &ALYlong;. '
+slug: mat-shaders-intro
+title: Shader Rendering System
+---
 # Shader Rendering System<a name="mat-shaders-intro"></a>
 
 Lumberyard uses physically\-based rendering \(PBR\) shaders that use real\-world physical rules and properties to describe how incoming light interacts with objects\. This means that object materials look more convincing under different lighting conditions\. A basic understanding of how light interacts with objects in the real world can be very helpful when setting up materials\.

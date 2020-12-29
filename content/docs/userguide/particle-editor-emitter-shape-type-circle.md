@@ -1,14 +1,20 @@
+description: ' Use the Circle emitter in the &ALYlong; &particle-editor; to enable
+  spawning of particles along the shapes axial coordinate system and to achieve circular
+  and cylindrical effects. '
+slug: particle-editor-emitter-shape-type-circle
+title: Circle Emitter (CPU and GPU)
+---
 # Circle Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-circle"></a>
 
 The **Circle** emitter enables spawning of particles along the shapes axial coordinate system \(see diagram below\)\. This allows you to create complex circular and cylindrical effects\.
 
 The following is an example of the **Circle** emitter in the **Preview** viewport\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-circle-1.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-circle-1.png)
 
 The following are parameters for the **Circle** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-circle-2.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-circle-2.png)
 
 
 **Circle Emitter Parameters**  

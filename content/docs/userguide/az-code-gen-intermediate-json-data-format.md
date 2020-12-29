@@ -1,3 +1,8 @@
+description: ' Examine the syntax of the intermediate JSON data format used by &ALYlong;''s
+  AZ Code Generator. '
+slug: az-code-gen-intermediate-json-data-format
+title: Intermediate JSON Data Format
+---
 # Intermediate JSON Data Format<a name="az-code-gen-intermediate-json-data-format"></a>
 
 

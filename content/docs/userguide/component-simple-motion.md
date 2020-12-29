@@ -1,3 +1,8 @@
+description: ' Use the Simple Motion component to add motion effects to your actor
+  in &ALYlong;. '
+slug: component-simple-motion
+title: Simple Motion
+---
 # Simple Motion<a name="component-simple-motion"></a>
 
 
@@ -13,7 +18,7 @@ For creating cinematics with the **Simple Motion** component, see [Creating Char
 
 ## Simple Motion Component Properties<a name="component-simple-motion-properties"></a>
 
-![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/component-simple-motion-properties.png)
+![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/component/component-simple-motion-properties.png)
 
 
 ****  

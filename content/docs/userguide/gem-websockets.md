@@ -1,3 +1,8 @@
+description: ' Use the Websockets Gem to add support for the WebSocket protocol to
+  your &ALYlong; project. '
+slug: gem-websockets
+title: Websockets &gem;
+---
 # Websockets Gem<a name="gem-websockets"></a>
 
 The Websockets Gem provides an easy way to create WebSocket clients for your Lumberyard games and projects\. With this gem, you can connect to WebSocket servers and take advantage of the full\-duplex communication that they provide\.

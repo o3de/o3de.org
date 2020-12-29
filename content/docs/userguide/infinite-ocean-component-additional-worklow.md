@@ -1,3 +1,8 @@
+description: ' See additional information when working with the &ALYlong; Infinite
+  Ocean component. '
+slug: infinite-ocean-component-additional-worklow
+title: Additional Workflow
+---
 # Additional Workflow<a name="infinite-ocean-component-additional-worklow"></a>
 
 See the following when working with the **Infinite Ocean** component\.

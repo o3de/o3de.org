@@ -1,3 +1,8 @@
+description: ' Use sun and light-scattering settings to create dynamic day time sky
+  and atmospheric effects in &ALY;. '
+slug: sky-day-atmosphere
+title: Setting Daytime Atmospheric Effects
+---
 # Setting Daytime Atmospheric Effects<a name="sky-day-atmosphere"></a>
 
 To create dynamic daytime sky atmospheric effects, you modify sun and light\-scattering setting that affect the appearance of distant objects, which shift in color due to atmospheric interference\. These settings do not directly affect the rendering of objects or environment lighting colors and intensities\.

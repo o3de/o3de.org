@@ -1,3 +1,8 @@
+description: ' Customize vegetation behavior with the Vegetation panel under Terrain
+  in the &ALY; &rollup-bar;. '
+slug: vegetation-params-ref
+title: 'Vegetation Parameters '
+---
 # Vegetation Parameters<a name="vegetation-params-ref"></a>
 
 

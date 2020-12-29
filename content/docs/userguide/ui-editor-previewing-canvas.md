@@ -1,3 +1,9 @@
+description: ' Preview your game UI canvas in &ALYlong; to visualize how it might
+  look at different screen resolutions and to see how the interactive elements change
+  state. '
+slug: ui-editor-previewing-canvas
+title: Previewing Canvases
+---
 # Previewing Canvases<a name="ui-editor-previewing-canvas"></a>
 
 You can preview your game UI canvas to visualize how it might look at different screen resolutions and to see how the interactive elements change states\.
@@ -16,7 +22,7 @@ The **UI Editor** **Preview** consists of the following:
 
 1. [**Action Log**](ui-editor-previewing-behavior.md#action-log) – Record of actions triggered by the canvas's interactable elements\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-preview-overview.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-preview-overview.png)
 
 **To open UI canvas **Preview****
 

@@ -1,3 +1,9 @@
+description: ' Use the Render Asynchronous node in the &ALYlong; &script-canvas; editor
+  to regenerate the texture maps for all procedural materials that have pending parameter
+  changes. '
+slug: render-asynchronous-node
+title: Render Asynchronous
+---
 # Render Asynchronous<a name="render-asynchronous-node"></a>
 
 Schedules all procedural materials that have pending parameter changes to regenerate their texture maps\. This update is done asynchronously, so that the textures are updated within a few frames\. Use this node \(instead of the **[Render Synchronous](render-synchronous-node.md)** node\) for changes made during gameplay\.
@@ -17,7 +23,7 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 + [Inputs](#render-asynchronous-node-input)
 + [Outputs](#render-asynchronous-node-output)
 
-![\[RenderAsynchronous node schedule updates for pending changes for a procedural material.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-asynchronous-node.png)
+![\[RenderAsynchronous node schedule updates for pending changes for a procedural material.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-asynchronous-node.png)
 
 ## Inputs<a name="render-asynchronous-node-input"></a>
 

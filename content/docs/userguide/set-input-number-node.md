@@ -1,3 +1,8 @@
+description: ' Use the Set Input Number node in the &ALYlong; &script-canvas; editor
+  to set the value of a procedural material input parameter as a number. '
+slug: set-input-number-node
+title: Set Input Number
+---
 # Set Input Number<a name="set-input-number-node"></a>
 
 Sets the value of an input parameter as a number\. You can use this node with the `Float1` and `Integer1` substance data types\. 
@@ -11,7 +16,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#set-input-number-node-input)
 + [Outputs](#set-input-number-node-output)
 
-![\[SetInputNumber sets the numeric value for a procedural material input parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-number-node.png)
+![\[SetInputNumber sets the numeric value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-number-node.png)
 
 ## Inputs<a name="set-input-number-node-input"></a>
 

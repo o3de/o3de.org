@@ -1,3 +1,7 @@
+description: ' Debug the &project-configurator; in &ALYlong;. '
+slug: configurator-debugging
+title: Troubleshooting
+---
 # Troubleshooting<a name="configurator-debugging"></a>
 
 
@@ -32,6 +36,6 @@ If the project or gem still does not show up in Visual Studio, ensure that the `
 **Wrong project gets loaded in Lumberyard Editor**  
 Ensure that the `lumberyard_version\dev\bootstrap.cfg` is editable\. Then, open the Project Configurator, select the project to open, and choose **Set as default**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/asset-bundler-project-configurator-1.25.png)
+![\[Image NOT FOUND\]](/images/assetbundler/asset-bundler-project-configurator-1.25.png)
 
 Also ensure that the `sys_game_folder` field in the `lumberyard_version\dev\bootstrap.cfg` file is set to the name of your project\.

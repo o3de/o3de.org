@@ -1,3 +1,7 @@
+description: ' Use the Actor component to add an actor file to your entity in &ALYlong;. '
+slug: component-actor
+title: Actor
+---
 # Actor<a name="component-actor"></a>
 
 
@@ -20,7 +24,7 @@ For the **Actor** component to work properly, you must also add one of the follo
 
 ## Actor Component Properties<a name="component-actor-properties"></a>
 
-![\[Actor component properties.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/actor_component_properties.png)
+![\[Actor component properties.\]](/images/component/actor_component_properties.png)
 
 The **Actor** component has the following properties\.
 

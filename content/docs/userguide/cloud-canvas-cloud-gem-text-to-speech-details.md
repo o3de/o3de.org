@@ -1,3 +1,8 @@
+description: ' Learn about the Text-to-Speech Gem''s runtime speech generation, resources,
+  TextToSpeech component, and troubleshooting. '
+slug: cloud-canvas-cloud-gem-text-to-speech-details
+title: Text-to-Speech Gem Implementation Details
+---
 # Text\-to\-Speech Gem Implementation Details<a name="cloud-canvas-cloud-gem-text-to-speech-details"></a>
 
 This topic provides information about the Text\-to\-Speech Gem's runtime speech generation, resources, `TextToSpeech` component, and troubleshooting\.
@@ -12,7 +17,7 @@ This topic provides information about the Text\-to\-Speech Gem's runtime speech 
 
 In runtime speech generation, the game client invokes the synthesized speech API to generate speech\. For improved performance, the game client checks two levels of cache to see if the speech is available locally before it invokes the Amazon Polly service\. The following diagram illustrates this process\.
 
-![\[Speech generation workflow\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-details-1.png)
+![\[Speech generation workflow\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-details-1.png)
 
 If the speech files are not available locally, Amazon Polly generates the speech files, stores them in an Amazon S3 bucket, and provides the client with a presigned URL to the bucket location\. The client downloads the files and uses [https://en.wikipedia.org/wiki/Audiokinetic_Wwise](https://en.wikipedia.org/wiki/Audiokinetic_Wwise) to play the speech audio\. The `SpeechComponent` uses the speech mark files to perform lip synchronization by calling the `SimpleAnimationComponent`, which plays the associated animations\.
 
@@ -49,6 +54,6 @@ Starting in version 1\.12, Lumberyard uses [Animation Editor](char-intro.md) to 
 
 The Cloud Gem Portal **REST Explorer** and **Log** tabs offer troubleshooting capabilities\.
 
-![\[REST explorer and logging features\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-details-2.png)
+![\[REST explorer and logging features\]](/images/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-details-2.png)
 
 For information about the paths that you can use in REST explorer, see [Text\-to\-Speech Cloud Gem Service API Reference](cloud-canvas-cloud-gem-text-to-speech-service-api.md)\.

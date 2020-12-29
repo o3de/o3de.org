@@ -1,3 +1,8 @@
+description: ' Learn the following primary concepts about working with &ALY;''s graphic
+  tools. '
+slug: graphics-concepts
+title: Concepts
+---
 # Concepts<a name="graphics-concepts"></a>
 
 ## Materials<a name="graphics-concepts-materials"></a>

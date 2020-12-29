@@ -1,3 +1,7 @@
+description: ' Enable hair shaders to render hair and fur in &ALYlong;. '
+slug: shader-ref-hair
+title: Hair Shader
+---
 # Hair Shader<a name="shader-ref-hair"></a>
 
 The Hair shader is a dedicated shader for rendering hair and fur, imparting different color, stranding, and animation effects\. Hair rendering is a relatively difficult task to achieve in real\-time with high\-quality results due to the very fine geometry and specific lighting behavior\. Depending on the hairstyle, either a simple scalp plane or a more complex shape that defines the volume of the hairstyle is needed\. In some cases, breaking up a hairstyle into multiple large patches makes more sense\. 

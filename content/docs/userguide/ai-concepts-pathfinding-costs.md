@@ -1,3 +1,7 @@
+description: ' Learn more about pathfinding costs in &ALYlong;. '
+slug: ai-concepts-pathfinding-costs
+title: Pathfinding Costs
+---
 # Pathfinding Costs<a name="ai-concepts-pathfinding-costs"></a>
 
 For agents to behave in a believable way, they need to find paths that are appropriate for their current state\. Sometimes these paths will take the most direct route; other times they will be longer paths to maximize use of roads, cover, or other properties of the environment\. The current system needs to be extended to support this\. The pathfinding system uses A\* to find minimal\-cost paths\. 

@@ -1,3 +1,7 @@
+description: ' Assign materials to your texture layers in &ly-editor;. '
+slug: terrain-texture-layers-material
+title: Applying a Texture Layer Material
+---
 # Applying a Texture Layer Material<a name="terrain-texture-layers-material"></a>
 
 All terrain texture layer materials use the [Terrain\.Layer Shader](shader-ref-terrain-layer.md)\. All terrain materials should be "high\-passed" in your DCC tool in order for them to work correctly with this shader\.

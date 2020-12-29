@@ -1,10 +1,15 @@
+description: ' Use blend layers in &ALYlong; to create one material with a second
+  set of per-pixel functions, such as texture maps, UV tiling and offset. '
+slug: mat-maps-blend
+title: Working with Blend Layers
+---
 # Working with Blend Layers<a name="mat-maps-blend"></a>
 
 Blend layers can be thought of as a layered material\. You can create one material with a second set of per\-pixel functions, including texture maps, UV tiling and offset, rotation and oscillation animation, second UV set, diffuse and specular color tinting, smoothness, and blend masking\.
 
 Integrate blend layers in the Illum and Vegetation shaders and activate them by setting the blend layer shader generation parameters\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-blend-layer-example.png)
+![\[Image NOT FOUND\]](/images/shared-blend-layer-example.png)
 
 **Topics**
 + [Shader Generation Parameters](#mat-maps-blend-shader-generation-parameters)

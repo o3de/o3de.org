@@ -1,3 +1,7 @@
+description: ' Debug HPHA allocator memory issues in &ALYlong;. '
+slug: memory-management-debugging-hpha
+title: HPHA Memory Debugging
+---
 # HPHA Memory Debugging<a name="memory-management-debugging-hpha"></a>
 
 In Lumberyard 1\.16 and later versions, the HPHA memory allocator provides memory debugging features to detect and trace common memory issues\.

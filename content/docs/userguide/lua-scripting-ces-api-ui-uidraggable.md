@@ -1,3 +1,8 @@
+description: ' Use UIDraggableComponent to enable drag and drop behavior for a UI
+  element in &ALYlong;. '
+slug: lua-scripting-ces-api-ui-uidraggable
+title: UIDraggableComponent
+---
 # UIDraggableComponent<a name="lua-scripting-ces-api-ui-uidraggable"></a>
 
 You can use a draggable component to make an element draggable for drag\-and\-drop behavior\.

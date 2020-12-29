@@ -1,3 +1,8 @@
+description: ' Identify and fix common issues seen during Android development with
+  &ALYlong;. '
+slug: troubleshoot-android
+title: Troubleshooting &ALY; issues on Android
+---
 # Troubleshooting Lumberyard issues on Android<a name="troubleshoot-android"></a>
 
  Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Amazon Lumberyard to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\. 
@@ -68,7 +73,7 @@ For information on how to design assets and configure renderer settings to impro
 1.  Wait for the project to load and for the initial Gradle configure to complete\. 
 
 1.  At a certain point during the configuration, Android Studio will report that the Gradle plugin is ready to update by displaying a popup notification\. Select **update** in this notification\.   
-![\[A popup notification from Android Studio. The blue text at the far right, "update", is a call to action for the user to select.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/platforms/android/gradle-update.png)
+![\[A popup notification from Android Studio. The blue text at the far right, "update", is a call to action for the user to select.\]](/images/platforms/android/gradle-update.png)
 
 1.  Another dialog box will appear, informing you of the version to update to and giving you the option to see release notes\. Select the **Update** button in this dialog to update the Gradle plugin and remove build warnings\. 
 

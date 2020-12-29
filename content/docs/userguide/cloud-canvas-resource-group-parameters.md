@@ -1,3 +1,8 @@
+description: ' Use &CFN; template parameters to customize your &cloud; Resource Manager
+  resource groups in &ALYlong;. '
+slug: cloud-canvas-resource-group-parameters
+title: Resource Manager Resource Group Parameters
+---
 # Resource Manager Resource Group Parameters<a name="cloud-canvas-resource-group-parameters"></a>
 
 Cloud Canvas Resource Manager uses AWS CloudFormation templates to describe the AWS resources needed for a project\. AWS CloudFormation templates can have parameters\. You provide the values for these parameters when a template creates or updates a stack\.

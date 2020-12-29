@@ -1,8 +1,13 @@
+description: ' Use the &ui-canvas-editor; in &ALYlong; to manage UI elements like
+  strings, text input fields, images, buttons or containers. '
+slug: ui-editor-elements
+title: UI Elements
+---
 # UI Elements<a name="ui-editor-elements"></a>
 
 UI elements are entities that you can attach multiple components to\. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on\. Or you can [add an existing pre\-fabricated \(prefab\) element](ui-editor-prefabs.md), such as a scroll box, which is an element with components already attached\. You can also [create your own prefab elements](ui-editor-prefabs.md)\.
 
-![\[UI element properties\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-elements.png)
+![\[UI element properties\]](/images/game_ui_editor/ui-editor-elements.png)
 
 Every UI element has the following two required components that are added automatically:
 + The **Element** component identifies the element **Id** and presents the option to start in a disabled state\.

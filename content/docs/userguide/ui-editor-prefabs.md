@@ -1,3 +1,8 @@
+description: ' Use prefabs in &ALY;''s &ui-canvas-editor; to create or add preconfigured
+  elements to your canvas. '
+slug: ui-editor-prefabs
+title: Using and Creating UI Prefabs
+---
 # Using and Creating UI Prefabs<a name="ui-editor-prefabs"></a>
 
 

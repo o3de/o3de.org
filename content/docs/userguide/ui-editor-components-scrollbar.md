@@ -1,3 +1,7 @@
+description: ' Use a scroll bar component to add a scroll bar in the &ALYlong; &ui-canvas-editor;. '
+slug: ui-editor-components-scrollbar
+title: ScrollBar
+---
 # ScrollBar<a name="ui-editor-components-scrollbar"></a>
 
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box\. 
@@ -11,15 +15,15 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/horizontal-scrollbar.gif)
+![\[Image NOT FOUND\]](/images/game_ui_editor/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/scrollbar-scrollbox.gif)
+![\[Image NOT FOUND\]](/images/game_ui_editor/scrollbar-scrollbox.gif)
 
 In Lumberyard version 1\.24 and later, the scroll bar can also fade automatically when not in use:
 
-![\[Example of auto fade scroll bar.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-scrollbar-autofade.gif)
+![\[Example of auto fade scroll bar.\]](/images/game_ui_editor/ui-scrollbar-autofade.gif)
 
 You can add a prefabricated horizontal or vertical scroll bar element\. When you do this, a handle is automatically created and nested in your **Hierarchy** pane\.
 

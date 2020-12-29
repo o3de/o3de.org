@@ -1,14 +1,20 @@
+description: ' Use the Sphere emitter in the &ALYlong; &particle-editor; to spawn
+  particles along the shapes axial coordinate system and create complex spherical
+  effects. '
+slug: particle-editor-emitter-shape-type-sphere
+title: Sphere Emitter (CPU and GPU)
+---
 # Sphere Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-sphere"></a>
 
 The **Sphere** emitter enables spawning of particles along the shapes axial coordinate system \(see diagram below\)\. This allows you to create complex spherical effects\.
 
 The following is an example of the **Sphere** emitter in the **Preview** viewport\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-sphere-1.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-sphere-1.png)
 
 The following are parameters for the **Sphere** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-sphere-2.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-sphere-2.png)
 
 
 **Sphere Emitter Parameters**  

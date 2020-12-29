@@ -1,3 +1,8 @@
+description: ' Use the rise/lower brush to create macro-terrain landforms like mountains,
+  hills, cliffs, valleys, and riverbeds in &ALY;. '
+slug: terrain-landforms-rise-lower-brush
+title: Using the Rise/Lower Brush
+---
 # Using the Rise/Lower Brush<a name="terrain-landforms-rise-lower-brush"></a>
 
 

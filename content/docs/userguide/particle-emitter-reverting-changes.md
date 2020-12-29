@@ -1,3 +1,7 @@
+description: Learn how to revert changes to an emitter's parameters or attributes.
+slug: particle-emitter-reverting-changes
+title: Reverting Changes to Emitter Attributes
+---
 # Reverting Changes to Emitter Attributes<a name="particle-emitter-reverting-changes"></a>
 
 Emitters have a list of attributes or property types that are categorized for easier identification\. You can reorder and rearrange the categories, including combining categories into a tabbed view\. 

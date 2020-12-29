@@ -1,3 +1,8 @@
+description: ' Learn about implementation details for the Player Account Cloud Gem
+  in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-player-account-details
+title: Player Account Cloud Gem Implementation Details
+---
 # Player Account Cloud Gem Implementation Details<a name="cloud-canvas-cloud-gem-player-account-details"></a>
 
 You can use the API operations described on this page to manage player accounts with the [Player Account Cloud Gem Portal](cloud-canvas-cloud-gem-player-account.md)\.

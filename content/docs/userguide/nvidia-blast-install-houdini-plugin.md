@@ -1,3 +1,8 @@
+description: ' Install Houdini plug-ins to create destruction assets for simulations
+  in &ALYlong; with NVIDIA Blast. '
+slug: nvidia-blast-install-houdini-plugin
+title: Install SideFX Houdini plug-ins for NVIDIA Blast
+---
 # Install SideFX Houdini plug\-ins for NVIDIA Blast<a name="nvidia-blast-install-houdini-plugin"></a>
 
 
@@ -70,4 +75,4 @@ The NVIDIA Blast installation for Houdini includes a tool shelf that you can ena
 
 1. From the **Shelf list** choose **Fracture tools for Blast** to add the shelf to the **Toolbar**\. 
 
-![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/blast/ui-blast-houdini-shelf-enable.png)
+![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/physx/blast/ui-blast-houdini-shelf-enable.png)

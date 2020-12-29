@@ -1,3 +1,8 @@
+description: ' Paint with a texture layer to quickly add grass to a large area of
+  your &ALY; terrain. '
+slug: vegetation-grass-procedural
+title: 'Painting to Add Grass '
+---
 # Painting to Add Grass<a name="vegetation-grass-procedural"></a>
 
 

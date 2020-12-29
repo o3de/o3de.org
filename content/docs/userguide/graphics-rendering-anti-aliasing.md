@@ -1,3 +1,8 @@
+description: ' Use temporal antialiasing (TAA) to reduce ghosting artifacts in motion
+  and set the amount of antialiasing needed for your graphics in &ALYlong;. '
+slug: graphics-rendering-anti-aliasing
+title: Temporal Antialiasing and Supersampling
+---
 # Temporal Antialiasing and Supersampling<a name="graphics-rendering-anti-aliasing"></a>
 
 Supersampling is a method of antialiasing that attempts to reduce jagged, pixelated edges \(aliasing\) in images\. It works by sampling a higher resolution version of the image to get the average color of a pixel before reducing it to the intended size\. The averaged color values create smoother transitions along an edge of colors, reducing the jagged look\.
@@ -45,7 +50,7 @@ The following table lists the additional console variables that you can configur
 
 The following images illustrate the range of graphics quality that you can achieve depending on which antialiasing setting you use\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-bistro-bar-example.gif)
+![\[Image NOT FOUND\]](/images/shared-bistro-bar-example.gif)
 
 ## Temporal Antialiasing Limitations<a name="graphics-rendering-anti-aliasing-limitations"></a>
 

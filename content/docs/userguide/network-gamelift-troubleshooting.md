@@ -1,3 +1,8 @@
+description: ' Find solutions to common &AGS; integration errors in your &ALYlong;
+  game projects. '
+slug: network-gamelift-troubleshooting
+title: Troubleshooting &AGSlong; integration
+---
 # Troubleshooting Amazon GameLift integration<a name="network-gamelift-troubleshooting"></a>
 
 Use the following information to help you diagnose and fix common problems that you might encounter while working with Amazon GameLift\.

@@ -1,3 +1,7 @@
+description: ' Learn more about the point generation and evaluation in &ALYlong;. '
+slug: ai-tactical-point-generation-evaluation
+title: Point Generation and Evaluation
+---
 # Point Generation and Evaluation<a name="ai-tactical-point-generation-evaluation"></a>
 
 An AI agent makes a TPS point generation query in order to generate a set of points for consideration\. Once generated, each point can be evaluated based on its position and any available metadata\.

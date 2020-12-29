@@ -1,3 +1,7 @@
+description: ' Integrate with the modular behavior tree (MBT) system in &ALYlong;. '
+slug: ai-tactical-point-mbt
+title: Integration with the Modular Behavior Tree System
+---
 # Integration with the Modular Behavior Tree System<a name="ai-tactical-point-mbt"></a>
 
 From inside the Modular Behavior Tree \(MBT\), the **<QueryTPS>** node can be used to call pre\-defined TPS queries by name\. The **<QueryTPS>** node will return either success or failure\. 

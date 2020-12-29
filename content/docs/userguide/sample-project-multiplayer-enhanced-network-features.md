@@ -1,3 +1,7 @@
+description: ' Learn the networking features of the &ALYlong; Multiplayer sample game. '
+slug: sample-project-multiplayer-enhanced-network-features
+title: Multiplayer Sample Network Features
+---
 # Multiplayer Sample Network Features<a name="sample-project-multiplayer-enhanced-network-features"></a>
 
 The Multiplayer sample offers the following features\.

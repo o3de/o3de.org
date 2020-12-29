@@ -1,3 +1,8 @@
+description: ' Use &resource-compiler; in &ALYlong; to convert certain source files
+  into game-ready assets. '
+slug: asset-pipeline-rc
+title: Using &resource-compiler;
+---
 # Using Resource Compiler<a name="asset-pipeline-rc"></a>
 
 Resource Compiler converts certain assets into a format that Lumberyard can use\. Resource Compiler stores the converted, game\-ready assets in a cache that mirrors your project directory\. This cache is located in the `\lumberyard_version\dev\Cache` directory\. Resource Compiler can also create PAK files\.

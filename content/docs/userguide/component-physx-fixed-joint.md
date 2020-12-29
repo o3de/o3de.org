@@ -1,10 +1,14 @@
+description: ' The &ALYlong; PhysX Fixed Joint component. '
+slug: component-physx-fixed-joint
+title: PhysX Fixed Joint component
+---
 # PhysX Fixed Joint component<a name="component-physx-fixed-joint"></a>
 
 With the **PhysX Fixed Joint** component, you can create a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis\. 
 
 ## PhysX Fixed Joint component properties<a name="component-physx-fixed-joint-properties"></a>
 
-![\[Properties of the PhysX Fixed Joint component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/physx/ui-physx-fixed-joint-component-1.27.png)
+![\[Properties of the PhysX Fixed Joint component\]](/images/physx/physx/ui-physx-fixed-joint-component-1.27.png)
 
 **Local Position**  
 Specify the position of the joint relative to the entity transform\.

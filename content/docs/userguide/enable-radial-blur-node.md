@@ -1,3 +1,8 @@
+description: ' Use the Enable Radial Blur node in the &ALYlong; &script-canvas; editor
+  to configure radial blur filters. '
+slug: enable-radial-blur-node
+title: Enable Radial Blur
+---
 # Enable Radial Blur<a name="enable-radial-blur-node"></a>
 
  Enables the radial blur filter around a defined 2D position on the screen\. To enable this feature, you must enable the `r_MotionBlur` console variable\. For more information, see [Using the Console Window](console-intro.md)\.
@@ -8,11 +13,11 @@ To disable the effect, see [Disable Radial Blur](disable-radial-blur-node.md)\.
 + [Inputs](#enable-radial-blur-node-input)
 + [Outputs](#enable-radial-blur-node-output)
 
-![\[enableradialblurnode, enableradialblur\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-radial-blur-node.png)
+![\[enableradialblurnode, enableradialblur\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-radial-blur-node.png)
 
 **Example**  
 
-![\[Use the Enable Radial Blur node to add blur radius on the screen.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/enable-radial-blur-node-example.png)
+![\[Use the Enable Radial Blur node to add blur radius on the screen.\]](/images/scripting/script-canvas/scriptcanvasnodes/enable-radial-blur-node-example.png)
 
 ## Inputs<a name="enable-radial-blur-node-input"></a>
 

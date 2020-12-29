@@ -1,3 +1,8 @@
+description: ' Use the Comment node in &ALY;''s &trackview-editor; to add comments
+  to your track view sequence. '
+slug: cinematics-track-view-nodes-comment
+title: Comment Node
+---
 # Comment Node<a name="cinematics-track-view-nodes-comment"></a>
 
 Use the **Comment** node to add comments to your track view sequence\. This is mostly used for production purposes and is not rendered in the game\.

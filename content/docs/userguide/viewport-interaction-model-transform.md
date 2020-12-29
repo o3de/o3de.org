@@ -1,3 +1,7 @@
+description: ' Modify the transform for entities using the &VIM; in &ALYlong;. '
+slug: viewport-interaction-model-transform
+title: Modifying the Transform
+---
 # Modifying the Transform<a name="viewport-interaction-model-transform"></a>
 
 When you move the manipulator to another location in the viewport, you can modify the scale, rotation, or translation of the entity\. This feature makes it easier for you to manage your entities\. 
@@ -14,7 +18,7 @@ When you move the manipulator to another location in the viewport, you can modif
 **Example**  
 
    In the following example, the manipulator is moved away from the car, switches to rotate mode, and rotates the car\.  
-![\[Move and rotate an entity using a manipulator in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/viewportinteractionmodel/viewport-selection-model-3.gif)
+![\[Move and rotate an entity using a manipulator in Lumberyard.\]](/images/viewportinteractionmodel/viewport-selection-model-3.gif)
 
     The following are shortcuts to switch between the different manipulator modes\.  
 ****    

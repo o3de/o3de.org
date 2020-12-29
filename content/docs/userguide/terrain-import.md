@@ -1,3 +1,8 @@
+description: ' Import or export terrain areas into your &ALY; level to save time and
+  work. '
+slug: terrain-import
+title: Importing and Exporting Terrain Blocks
+---
 # Importing and Exporting Terrain Blocks<a name="terrain-import"></a>
 
 You can import and export terrain areas or blocks\. When importing or exporting, you should also import or export the associated terrain texture layers\.

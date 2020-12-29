@@ -1,3 +1,8 @@
+description: ' Configure your &ALYlong; project to compile assets for Android and
+  correctly declare which device resources it uses. '
+slug: android-configure-project
+title: Configure &ALY; projects for Android
+---
 # Configure Lumberyard projects for Android<a name="android-configure-project"></a>
 
  In addition to the [system\-wide configuration requirements](android-setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\. 

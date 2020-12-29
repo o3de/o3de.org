@@ -1,3 +1,7 @@
+description: ' Use vertex colors for materials in &ALYlong;. '
+slug: mat-vertex-colors
+title: Using Vertex Colors
+---
 # Using Vertex Colors<a name="mat-vertex-colors"></a>
 
 Vertex color, or vcolor, is just a color with RGB and alpha channel values stored for each vertex of a mesh\. Vertex color and alpha can be used for multi\-texturing, transparency, or fake ambient occlusion\. 

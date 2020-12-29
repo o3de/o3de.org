@@ -1,3 +1,8 @@
+description: ' Share the assets for your &ALYlong; iOS game between your macOS and
+  Windows computers. '
+slug: ios-sharing-assets-between-mac-pc
+title: Sharing Assets Between Windows and macOS
+---
 # Sharing Assets Between Windows and macOS<a name="ios-sharing-assets-between-mac-pc"></a>
 
 You can build your assets on a Windows computer and then use them in an iOS build\. To do so, you must set up sharing between your Windows and macOS computers\.

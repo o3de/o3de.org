@@ -1,3 +1,7 @@
+description: ' Customize the &particle-editor; UI in &ALYlong;. '
+slug: particle-editor-customizing
+title: Customizing the &particle-editor; UI
+---
 # Customizing the Particle Editor UI<a name="particle-editor-customizing"></a>
 
 The **Particle Editor** has a customizable interface so you can set up your workspace in different layouts\. All panels are moveable\. You can undock panels to become floating windows, or you can dock panels in new locations to rearrange the look and feel\. Save your custom layouts to access later or to share with others\.

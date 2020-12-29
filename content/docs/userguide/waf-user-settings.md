@@ -1,3 +1,8 @@
+description: ' Add new user settings and define utility functions for your &ALYlong;
+  Waf configuration. '
+slug: waf-user-settings
+title: Adding User Settings to Waf
+---
 # Adding User Settings to Waf<a name="waf-user-settings"></a>
 
 You can add a new user setting to the `default_settings.json` file in the `Waf` folder located at the root\. Use the standards established in this file and customize as needed\. After you have added a user setting, you need to add a minimum of three utility functions for the GUI and console to validate your new setting\. 

@@ -1,3 +1,8 @@
+description: ' Create a terrain heightmap in &ALY; by specifying the resolution and
+  grid spacing to determine the heightmap size. '
+slug: terrain-heightmap-create
+title: Creating a Terrain Heightmap
+---
 # Creating a Terrain Heightmap<a name="terrain-heightmap-create"></a>
 
 The first step in creating the heightmap using Lumberyard Editor is to specify the resolution and grid spacing, both of which define the terrain size\. Terrain size is determined by multiplying heightmap resolution by meters per texel\. This value should not exceed 4096 x 4096 kilometers\.
@@ -8,11 +13,11 @@ The following images show a terrain heightmap and the corresponding generated te
 
 **Example Terrain Heightmap**  
 
-![\[Create a terrain heightmap in Lumberyard\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-heightmap-create.png)
+![\[Create a terrain heightmap in Lumberyard\]](/images/terrain/terrain-heightmap-create.png)
 
 **Example Generated Terrain**  
 
-![\[\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-heightmap-create-2.png)
+![\[\]](/images/terrain/terrain-heightmap-create-2.png)
 
 If you want to create the highest quality terrain heightmap for a 2K world, use the following settings:
 + 2K heightmap

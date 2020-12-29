@@ -1,3 +1,7 @@
+description: ' Learn about using &cloud; cloud gems. '
+slug: gems-system-gem-aws-cloud-gems
+title: '&cloud; Cloud Gems'
+---
 # Cloud Canvas Cloud Gems<a name="gems-system-gem-aws-cloud-gems"></a>
 
 A Cloud Canvas cloud gem includes everything required for you to include AWS cloud\-connected functionality in your project\. A cloud gem is a package of specific cloud\-connected functionality, assets and AWS resource definitions\.

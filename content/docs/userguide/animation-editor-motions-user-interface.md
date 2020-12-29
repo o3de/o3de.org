@@ -1,8 +1,13 @@
+description: ' Learn more about the user interface for the Motions pane in the &animation-editor;
+  . '
+slug: animation-editor-motions-user-interface
+title: Motions Interface
+---
 # Motions Interface<a name="animation-editor-motions-user-interface"></a>
 
 Use the motions pane to add and manage motion files in a motion set\.
 
-![\[View and manage motions in the Animation Editor\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-motions-user-interface.png)
+![\[View and manage motions in the Animation Editor\]](/images/actor-animation/animation-editor-motions-user-interface.png)
 
 In the **Motions** pane, you can do the following:
 

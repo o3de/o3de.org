@@ -1,3 +1,7 @@
+description: ' Learn &ALYlong; build commands and settings for the Android platform. '
+slug: android-reference
+title: Reference for Android
+---
 # Reference for Android<a name="android-reference"></a>
 
  This section is a reference for commands and build settings used by Lumberyard when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\. 

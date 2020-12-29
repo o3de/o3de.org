@@ -1,3 +1,8 @@
+description: ' See the following AI Modular Behavior Tree (MBT) nodes for flying vehicles
+  in &ALYlong;. '
+slug: ai-mbt-nodes-flying
+title: Helicopter AI MBT Nodes
+---
 # Helicopter AI MBT Nodes<a name="ai-mbt-nodes-flying"></a>
 
 

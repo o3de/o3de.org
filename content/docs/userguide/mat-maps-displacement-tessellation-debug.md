@@ -1,3 +1,7 @@
+description: ' Fix tessellation seams in &ALYlong;. '
+slug: mat-maps-displacement-tessellation-debug
+title: Fixing Tessellation Seams
+---
 # Fixing Tessellation Seams<a name="mat-maps-displacement-tessellation-debug"></a>
 
 There are two types of seams or cracks that can become noticeable when using tessellation\.

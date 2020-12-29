@@ -1,3 +1,7 @@
+description: ' Configure settings for the PhysX system in &ALYlong;. '
+slug: physx-configuration
+title: Configuring the PhysX System
+---
 # Configuring the PhysX System<a name="physx-configuration"></a>
 
 The [PhysX](gems-system-gem-physx.md) gem can be configured for each project for your game\. Your settings are saved in your project's `lumberyard_version\dev\project_name\default.physxconfiguration` file\. If you use a version control system, include this file\.

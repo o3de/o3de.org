@@ -1,3 +1,7 @@
+description: ' Use &COG; identity pools to provide players with unique identities. '
+slug: cloud-canvas-rm-security-player-identity
+title: Player Identity
+---
 # Player Identity<a name="cloud-canvas-rm-security-player-identity"></a>
 
 A Lumberyard cloud\-connected game must use AWS credentials that grant the desired access when calling AWS APIs \(using either the C\+\+ AWS SDK or the AWS flow nodes\)\. Cloud Canvas uses an [Amazon Cognito identity pool](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) to get these credentials\.

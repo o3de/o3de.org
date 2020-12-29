@@ -1,3 +1,8 @@
+description: ' Use the &ALYlong; Infinite Ocean component with the EBus interface
+  to set the parameters with Lua. '
+slug: infinite-ocean-component-request-bus-interface
+title: Infinite Ocean Component Request Bus Interface
+---
 # Infinite Ocean Component Request Bus Interface<a name="infinite-ocean-component-request-bus-interface"></a>
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.

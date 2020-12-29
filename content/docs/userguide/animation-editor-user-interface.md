@@ -1,3 +1,7 @@
+description: ' View the &animation-editor; interface in &ALYlong;. '
+slug: animation-editor-user-interface
+title: '&animation-editor; User Interface'
+---
 # Animation Editor User Interface<a name="animation-editor-user-interface"></a>
 
 
@@ -20,7 +24,7 @@ You can open the **Animation Editor** from Lumberyard Editor\.
 **To open the Animation Editor**
 + From Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/actor-animation/animation-editor-jack-user-interface.png)
+![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](/images/actor-animation/animation-editor-jack-user-interface.png)
 
 On the **Animation Editor**, you can do the following:
 

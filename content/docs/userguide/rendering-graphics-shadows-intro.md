@@ -1,3 +1,8 @@
+description: ' Learn how to minimize the performance impact of rendering shadows in
+  &ALY;. '
+slug: rendering-graphics-shadows-intro
+title: Environment Shadows
+---
 # Environment Shadows<a name="rendering-graphics-shadows-intro"></a>
 
 Lumberyard supports shadow casting from all light sources and shadow receiving on all deferred and most forward\-rendered geometry\. Traditional shadow mapping is used for shadow generation\. Light sources can be directional, such as from the sun and moon, or from point and area light sources\.

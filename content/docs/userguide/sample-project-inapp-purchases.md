@@ -1,3 +1,8 @@
+description: ' Use the In-App Purchases sample to learn how to use the In-App Purchases
+  (IAP) Gem for a &ALYlong; application running on an Android or iOS mobile device. '
+slug: sample-project-inapp-purchases
+title: In-App Purchases Sample
+---
 # In\-App Purchases Sample<a name="sample-project-inapp-purchases"></a>
 
 The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP\) Gem for a Lumberyard application that runs on a mobile device\. For more information about this gem, see [In\-App Purchases Gem](gems-system-gem-inapp-purchases.md)\.

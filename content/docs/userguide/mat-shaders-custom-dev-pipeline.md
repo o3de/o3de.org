@@ -1,3 +1,7 @@
+description: ' Learn more about the shader rendering pipeline in &ALYlong;. '
+slug: mat-shaders-custom-dev-pipeline
+title: Shader Rendering Pipeline
+---
 # Shader Rendering Pipeline<a name="mat-shaders-custom-dev-pipeline"></a>
 
 Lumberyard has a fixed rendering pipeline that is set up in the renderer code\. Lumberyard is almost fully deferred and only does forward for hair, eyes, glass, transparencies, and water reflections\. Lumberyard makes use of two elements: effects that define parameterized shader code, and materials that customize the shader parameters for a specific mesh\.

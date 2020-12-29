@@ -1,3 +1,7 @@
+description: ' Manage users and administrators of your Cloud Gem Portal in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-portal-user-management
+title: User Management in the Cloud Gem Portal
+---
 # User Management in the Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal-user-management"></a>
 
 
@@ -33,7 +37,7 @@ To manage users of your Cloud Gem Portal, use the **User Administration** page\.
 1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\. If this is your first time, follow the steps in [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md) to sign in with your temporary administrator account credentials\. You must change your password immediately after you sign in\.
 
 1. Click **Administration** or its gear ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared/cloud-canvas-cloud-gem-text-to-speech-cgp-4.png) icon in the left navigation pane of the Cloud Gem Portal to open the **User Administration** page\.  
-![\[User Administration page\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-1.png)
+![\[User Administration page\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-1.png)
 
 The page shows the current list of users that have access to your project's portal\. The Cloud Gem Portal has two roles: **Portal Admin** and **User**\. Administrators have access to the **Admin** page and can add and remove users\. Nonadministrative users do not see the **Admin** page but have access to cloud gems\.
 
@@ -44,10 +48,10 @@ To add a user to your project, you can use the **Admin** page or the Amazon Cogn
 **To add a user to the Cloud Gem Portal**
 
 1. Click **Add New User**\.  
-![\[Add a user\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-2.png)
+![\[Add a user\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-2.png)
 
 1. Fill in the fields, which have the restrictions noted\.  
-![\[Type user information\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-3.png)
+![\[Type user information\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-3.png)
 + **Username** – The user name is case sensitive and must not contain spaces\. It cannot be changed after it is assigned\. Each user name must be unique\.
 + **Email** – Because new users are sent temporary passwords by email, you must provide a valid email address\.
 + **Temporary Password** – A random temporary password is provided by default, but you can change this\. The password must have eight characters and include at least one uppercase letter, one lowercase letter, one number, and one special \(nonalphanumeric\) character\.
@@ -59,7 +63,7 @@ After you create the user, the user is sent an email with the temporary password
 
 To delete a user, click the delete icon for the user on the **User Administrator** page\.
 
-![\[Delete a user\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-4.png)
+![\[Delete a user\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-4.png)
 
 After you confirm the deletion at the confirmation prompt, the user account is removed and the user is no longer able to sign in\.
 
@@ -67,4 +71,4 @@ After you confirm the deletion at the confirmation prompt, the user account is r
 
 To reset a user's password, click the arrow next to the delete icon for the user, and then click **Reset Password**\.
 
-![\[Reset a password\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-5.png)
+![\[Reset a password\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-5.png)

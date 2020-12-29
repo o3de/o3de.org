@@ -1,3 +1,8 @@
+description: ' Choose components to add to your entities and enhance your level with
+  &ALYlong;''s &component-system;. '
+slug: component-components
+title: Component Reference
+---
 # Component Reference<a name="component-components"></a>
 
 You can use the **Entity Inspector** to add the following components to you entities\. 

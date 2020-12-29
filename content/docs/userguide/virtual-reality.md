@@ -1,3 +1,8 @@
+description: ' Add virtual reality to your &ALY; project to simulate a user''s presence
+  in the gaming environment. '
+slug: virtual-reality
+title: Create virtual reality projects in &ALY;
+---
 # Create virtual reality projects in Lumberyard<a name="virtual-reality"></a>
 
 Lumberyard's [virtual reality](ly-glos-chap.md#virtual_reality) system integrates the use of the OculusRift and HTC Vive head\-mounted displays \(HMD\) on PC gaming systems\. Before using these head\-mounted displays, read each manufacturer's safety guide:

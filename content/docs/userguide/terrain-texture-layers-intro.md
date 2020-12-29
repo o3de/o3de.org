@@ -1,10 +1,15 @@
+description: ' Use terrain texture layers and paint them to create your environment
+  level in the &ly-editor;. '
+slug: terrain-texture-layers-intro
+title: Using &terrain-textures;
+---
 # Using Terrain Texture Layers<a name="terrain-texture-layers-intro"></a>
 
 You can create terrain texture layers and paint them to enhance your environment level\.
 
 The primary tool for creating and managing terrain texture layers in your level is the Terrain Texture Layers editor\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/terrain/terrain-texture-layers-editor.png)
+![\[Image NOT FOUND\]](/images/terrain/terrain-texture-layers-editor.png)
 
 **For information about working with splat maps, see [Importing Splat Maps](terrain-splat-maps.md)\.**
 + [Adding a Terrain Texture Layer](terrain-texture-layers-add.md)

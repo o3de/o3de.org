@@ -1,3 +1,8 @@
+description: ' Use the Behavior Tree component to load and run a behavior tree for
+  the attached entity in &ALYlong;. '
+slug: component-behavior-tree
+title: Behavior Tree
+---
 # Behavior Tree<a name="component-behavior-tree"></a>
 
 Use the **Behavior Tree** component to load and run a [Modular Behavior Tree Node Reference](ai-scripting-mbt-nodes.md) for the attached entity\.

@@ -1,3 +1,8 @@
+description: ' For better shadow quality, use object shadows to assign custom shadow
+  maps to selected objects in &ALYlong;. '
+slug: rendering-graphics-shadows-object
+title: Object Shadows
+---
 # Object Shadows<a name="rendering-graphics-shadows-object"></a>
 
 With object shadows, you can assign custom shadow maps to selected objects, resulting in increased shadow quality due to higher world space shadow texel \(texture element\) density and reduced depth range\.

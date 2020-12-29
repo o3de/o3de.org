@@ -1,3 +1,7 @@
+description: ' Bind &ALYlong; components to the network by adding the NetBindingComponent. '
+slug: network-replicas-binding
+title: Creating a NetBindable Component
+---
 # Creating a NetBindable Component<a name="network-replicas-binding"></a>
 
 For a Lumberyard component to share data on the network, it must include the `NetBindingComponent`\. The `NetBindingComponent` creates a [replica](network-replicas-replica.md) for the component and can bind any [replica chunk](network-replicas-chunks.md) that a component creates to the replica\.

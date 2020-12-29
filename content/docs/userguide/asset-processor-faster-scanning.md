@@ -1,3 +1,8 @@
+description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup time
+  in &ALYlong;. '
+slug: asset-processor-faster-scanning
+title: Enabling &asset-processor;'s Faster Scanning Mode
+---
 # Enabling Asset Processor's Faster Scanning Mode<a name="asset-processor-faster-scanning"></a>
 
 Asset Processor's **Faster Scanning Mode** speeds up Lumberyard's startup scan by disabling checking for cache changes that occurred while Asset Processor was not running\. This can save you time when processing many assets in your project\.
@@ -9,7 +14,7 @@ By default, **Faster Scanning Mode** is enabled\. You can enable or disable this
 1. Open [Asset Processor](asset-pipeline-processor.md)\.
 
 1. Select **Tools** and clear **Faster Scanning Mode**\.   
-![\[Disable Faster Scanning Mode in Asset Processor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/asset_processor/faster-scanning.png)
+![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/asset_processor/faster-scanning.png)
 
 **To perform a full scan**
 + Click **Start Scan**\. This starts a full scan immediately, which checks for files missing from the cache and rebuilds the appropriate source files\.

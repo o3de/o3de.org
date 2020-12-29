@@ -1,3 +1,7 @@
+description: ' Learn more about the AI navigation system in &ALYlong;. '
+slug: ai-nav-intro
+title: AI Navigation
+---
 # AI Navigation<a name="ai-nav-intro"></a>
 
 Lumberyard has a robust set of tools and methods for moving AI agents around – from simple point\-to\-point navigation to complex sets of scripted navigation behaviors\.

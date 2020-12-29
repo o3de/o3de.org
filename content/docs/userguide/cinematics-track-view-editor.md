@@ -1,3 +1,8 @@
+description: ' Use the &trackview-editor; to create and manage cinematic sequences
+  in &ALYlong;. '
+slug: cinematics-track-view-editor
+title: Using the Track View Editor
+---
 # Using the Track View Editor<a name="cinematics-track-view-editor"></a>
 
 The Track View is the primary tool to create and manage cinematic sequences\. A *[sequence](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#sequence)* is the content generated from the Track View for cutscenes or other canned animation triggers\. When you create a sequence, this creates a component entity in the level\. The component entity stores all of the animation key data that you specified in the Track View\.
@@ -17,7 +22,7 @@ If you want to generate cutscenes for games or create a script to trigger an ani
 1. Enter a sequence name, such as *Example Sequence* and click **OK**\.
 
 1. In the **Entity Outliner**, a component entity appears with the same name as your sequence\. This component entity has a **Sequence** component that stores your sequence data from the Track View\.  
-![\[Sequence component entity in the Entity Outliner.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cinematics/track-view-editor-sequence-entity.png)
+![\[Sequence component entity in the Entity Outliner.\]](/images/cinematics/track-view-editor-sequence-entity.png)
 
 After you create a sequence, you can add properties to it\. Any part of the sequence is considered a *node*\. Nodes can be a reference to existing component entities or added to a sequence\. For example, if you want to include an active camera for your sequence, you can add the **Director** node\. Each node can have one or more tracks, depending your animation sequence\. A *track* displays animation keys on a timeline in relation to the property that is animated on a node\.
 

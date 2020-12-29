@@ -1,3 +1,7 @@
+description: ' Regenerate the entire mesh or a portion of it in &ALYlong;. '
+slug: ai-nav-mesh-regen
+title: Regenerating the Navigation Mesh
+---
 # Regenerating the Navigation Mesh<a name="ai-nav-mesh-regen"></a>
 
 

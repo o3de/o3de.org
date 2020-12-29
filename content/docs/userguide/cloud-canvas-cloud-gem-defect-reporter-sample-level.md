@@ -1,3 +1,8 @@
+description: ' Use the DefectReporterSample level to test the Defect Reporter cloud
+  gem in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-defect-reporter-sample-level
+title: Using the Defect Reporter Cloud Gem Sample Level
+---
 # Using the Defect Reporter Cloud Gem Sample Level<a name="cloud-canvas-cloud-gem-defect-reporter-sample-level"></a>
 
 You can use the DefectReporterSample level that is included with Lumberyard to generate sample defect reports\. The sample includes a number of preset data collection fields\. For information on creating custom fields for the sample level, see [Creating Custom Data Collection Fields](cloud-canvas-cloud-gem-defect-reporter-cgp.md#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
@@ -33,18 +38,18 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 1. Choose **DefectReporterSample**, and then click **Open**\.
 
 1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.  
-![\[DefectReporterSample level\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-1.png)
+![\[DefectReporterSample level\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-1.png)
 
 1. To generate a defect report, press **F1**\. A status box in the lower left of the screen informs you that data collection is in progress\.  
-![\[Report collection in progress in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-2.png)
+![\[Report collection in progress in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-2.png)
 
    Data collection takes a few moments\. When it is completed, the status box informs you that the report is available to view and annotate\.  
-![\[Defect report available in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-3.png)
+![\[Defect report available in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-3.png)
 
 1. Press **F1** to generate a few more reports\.
 
 1. To view and annotate the reports, click the status box or press **F5**\. This opens the Defect Report Editor\.  
-![\[Defect Report Editor in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-4.png)
+![\[Defect Report Editor in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-4.png)
 
    The Defect Report Editor has the following fields:
 
@@ -55,15 +60,15 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
    1. **Custom Field** – Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](cloud-canvas-cloud-gem-defect-reporter-cgp.md#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
 
    1. **Error Message** – A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.  
-![\[Box for contextual information about the error in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-5.png)
+![\[Box for contextual information about the error in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-5.png)
 
    1.  **Screenshot** – Shows a screenshot of the level at the time that the error occurred\. 
 
 1. To switch reports, click the navigation arrows at the bottom of the editor\.  
-![\[Navigation arrows in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-6.png)
+![\[Navigation arrows in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-6.png)
 
 1. To manage the reports, use the buttons under the screenshot\.  
-![\[Deleting a report in the DefectReporterSample level.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-7.png)
+![\[Deleting a report in the DefectReporterSample level.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-7.png)
 
    1. **Delete** – Deletes the report\.
 
@@ -76,7 +81,7 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 1. For this tutorial, click **Submit All** to submit the reports that you generated\.
 
    The editor informs you of the success or failure of the operation\.   
-![\[Report sent successfully\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-9.png)
+![\[Report sent successfully\]](/images/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-9.png)
 
 1.  Click **Close** to close the Defect Report Editor\. When you have more than one issue but submit just one, the Defect Reporter remains open\.
 

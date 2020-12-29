@@ -1,3 +1,8 @@
+description: ' Use the &ALY; &particle-editor; to create, duplicate, edit, manage,
+  and organize emitters for particle effects. '
+slug: particle-emitter-creating
+title: Creating and Managing Particle Emitters
+---
 # Creating and Managing Particle Emitters<a name="particle-emitter-creating"></a>
 
 You can create, edit, and manage emitters for particle effects in the **Particle Editor**\. For more information about emitter attributes and parameters displayed in the **Attributes** panel, see [Particles Attributes Reference](particle-editor-reference.md)\.

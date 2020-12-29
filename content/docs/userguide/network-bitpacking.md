@@ -1,3 +1,7 @@
+description: ' Use bit packing to optimize network payloads in &ALYlong;. '
+slug: network-bitpacking
+title: Using Bit Packing in &ALY; Networking
+---
 # Using Bit Packing in Lumberyard Networking<a name="network-bitpacking"></a>
 
 Most built\-in C\+\+ types use more than one byte in memory\. Even a Boolean value uses one byte\. On some operating systems, it can use more\. However, the Lumberyard networking system, GridMate, optimizes networking traffic by tightly packing your data into the network payload\.

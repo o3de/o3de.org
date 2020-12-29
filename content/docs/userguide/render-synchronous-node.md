@@ -1,3 +1,9 @@
+description: ' Use the Render Synchronous node in the &ALYlong; &script-canvas; editor
+  to regenerate the texture maps for all procedural materials that have pending parameter
+  changes. '
+slug: render-synchronous-node
+title: Render Synchronous
+---
 # Render Synchronous<a name="render-synchronous-node"></a>
 
 Regenerates the texture maps for all procedural materials that have pending parameter changes\. This update is done synchronously, so that the textures are updated by the time the node completes\. In general, use this node in cases where the frame rate isn't a concern and you want to avoid the complexity of the **[Render Asynchronous](render-asynchronous-node.md)** node\.
@@ -9,7 +15,7 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 + [Inputs](#render-synchronous-node-input)
 + [Outputs](#render-synchronous-node-output)
 
-![\[RenderSynchronousNode generates the texture map for all materials with parameter changes.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-synchronous-node.png)
+![\[RenderSynchronousNode generates the texture map for all materials with parameter changes.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-synchronous-node.png)
 
 ## Inputs<a name="render-synchronous-node-input"></a>
 

@@ -1,3 +1,7 @@
+description: ' Use AI paths for navigation in &ALYlong;. '
+slug: ai-nav-off-mesh-paths
+title: Using AI Paths for Navigation
+---
 # Using AI Paths for Navigation<a name="ai-nav-off-mesh-paths"></a>
 
 

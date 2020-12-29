@@ -1,3 +1,8 @@
+description: ' Use the Get Input Number node in the &ALYlong; &script-canvas; editor
+  to return the value of a procedural material input parameter as a number. '
+slug: get-input-number-node
+title: Get Input Number
+---
 # Get Input Number<a name="get-input-number-node"></a>
 
 Returns the value of an input parameter as a number\. Use this node with the `Float1` and `Integer1` substance data types\.
@@ -9,7 +14,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 + [Inputs](#get-input-number-node-input)
 + [Outputs](#get-input-number-node-output)
 
-![\[GetInputNumber gets the numeric value for a procedural material's parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-number-node.png)
+![\[GetInputNumber gets the numeric value for a procedural material's parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-number-node.png)
 
 ## Inputs<a name="get-input-number-node-input"></a>
 

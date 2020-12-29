@@ -1,3 +1,8 @@
+description: ' Prepare your &ALYlong; iOS games for store deployment (distribution)
+  by packing the assets and cached binary shaders. '
+slug: ios-creating-release-app
+title: Creating a Release App
+---
 # Creating a Release App<a name="ios-creating-release-app"></a>
 
 Once you have finished your Lumberyard iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:

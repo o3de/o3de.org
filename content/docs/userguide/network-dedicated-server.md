@@ -1,3 +1,7 @@
+description: ' Learn about creating dedicated game servers in &ALYlong;. '
+slug: network-dedicated-server
+title: Creating Dedicated Servers
+---
 # Creating Dedicated Servers<a name="network-dedicated-server"></a>
 
 In Lumberyard, you can create a build of your game that runs on a headless dedicated server\. A dedicated server build omits the packages and modules that a headless server does not require and has a smaller compiled size\.

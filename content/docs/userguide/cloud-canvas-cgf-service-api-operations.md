@@ -1,3 +1,8 @@
+description: ' Learn about cloud gem request and response mapping, request execution,
+  and error handling operations for &ALYlong;. '
+slug: cloud-canvas-cgf-service-api-operations
+title: Operations
+---
 # Operations<a name="cloud-canvas-cgf-service-api-operations"></a>
 
 A cloud gem's service API can implement multiple distinct operations\. You define operations in the `swagger.json` file by adding [http://swagger.io/specification/#operationObject](http://swagger.io/specification/#operationObject) instances to a [http://swagger.io/specification/#pathItemObject](http://swagger.io/specification/#pathItemObject)\. For each operation, you can define the input data that the operation requires and the output data that it produces\. The input data can include path, query, and body parameters\. For more information on using swagger to define APIs, see [http://swagger\.io/](http://swagger.io/) \.
@@ -8,7 +13,7 @@ Service API operations are implemented in the `ServiceLambda` AWS Lambda functio
 
 The following diagram illustrates both request and upload processing\.
 
-![\[Request and upload processing operations\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cgf-service-api-2.png)
+![\[Request and upload processing operations\]](/images/cloud_canvas/cloud-canvas-cgf-service-api-2.png)
 
 **Topics**
 + [Default Request Mapping](#cloud-canvas-cgf-service-api-operations-default-request-mapping)

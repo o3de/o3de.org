@@ -1,3 +1,8 @@
+description: ' Use the &script-canvas; Basic Sample to learn basic gameplay functions
+  in &ALYlong;. '
+slug: script-canvas-basic-sample
+title: '&script-canvas; Basic Sample'
+---
 # Script Canvas Basic Sample<a name="script-canvas-basic-sample"></a>
 
 The Script Canvas Basic Sample contains a collection of five Script Canvas scripts that demonstrate the following gameplay functions:
@@ -7,7 +12,7 @@ The Script Canvas Basic Sample contains a collection of five Script Canvas scrip
 + Light that toggles based on a trigger volume
 + Flickering light
 
-![\[Use the Script Canvas Basic Sample level to get started with gameplay functions.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/tank3.png)
+![\[Use the Script Canvas Basic Sample level to get started with gameplay functions.\]](/images/scripting/script-canvas/tank3.png)
 
 **To see the Script Canvas graphs**
 
@@ -37,6 +42,6 @@ Do the following:
 + To turn the light on, drive away from the light\.
 + To exit the level, press **Esc**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-tank-script-canvas-example.gif)
+![\[Image NOT FOUND\]](/images/shared-tank-script-canvas-example.gif)
 
 For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](script-canvas-intro.md)\.

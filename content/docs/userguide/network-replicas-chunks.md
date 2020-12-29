@@ -1,3 +1,8 @@
+description: ' Use replica chunks in &ALYlong; to store data sets and remote procedure
+  calls. '
+slug: network-replicas-chunks
+title: Replica Chunks
+---
 # Replica Chunks<a name="network-replicas-chunks"></a>
 
  A replica chunk is a user extendable network object\. One or more `ReplicaChunk` objects can be owned by a [replica](network-replicas-replica.md), which is both a container and manager for replica chunks\. A replica is owned by a primary peer and is propagated to other network nodes as a proxy replica\. The data that a replica chunk contains should generally be related to the other data stored within it\. Since multiple chunks can be attached to a replica, unrelated data can be stored in other chunks within the same replica\. 

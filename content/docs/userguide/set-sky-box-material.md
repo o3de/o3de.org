@@ -1,3 +1,8 @@
+description: ' Use the Set Skybox Material node in the &ALYlong; &script-canvas; editor
+  to apply a specified material to the skybox. '
+slug: set-sky-box-material
+title: Set Skybox Material
+---
 # Set Skybox Material<a name="set-sky-box-material"></a>
 
 Apply a specified material to the skybox to give the sky a different look\. The material must be a skybox material\. 
@@ -8,7 +13,7 @@ For more information, see [Creating Static Skyboxes](sky-skyboxes-intro.md)\.
 + [Input](#set-sky-box-material-input)
 + [Outputs](#set-sky-box-material-output)
 
-![\[sky box material, setskyboxmaterial, setskyboymaterialnode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-material.png)
+![\[sky box material, setskyboxmaterial, setskyboymaterialnode\]](/images/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-material.png)
 
 ## Input<a name="set-sky-box-material-input"></a>
 

@@ -1,3 +1,7 @@
+description: ' Download a file from &S3; with &script-canvas; in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-s3-download-sc
+title: Downloading a File from &S3; with &script-canvas;
+---
 # Downloading a File from Amazon S3 with Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-download-sc"></a>
 
 You can use the **AWSBehaviorS3Download** node in Script Canvas to download a file from an Amazon S3 bucket\.
@@ -81,7 +85,7 @@ Next, to see the success or failure of the operation, you add **AWSBehaviorS3Dow
 1. Connect the **Out** pins of the **AWSBehaviorS3DownloadNotificationBus** **OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
 1. Connect the **String** pins of the **AWSBehaviorS3DownloadNotificationBus** **OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
-![\[A Script Canvas graph that downloads a file from Amazon S3\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-download-sc-1.png)
+![\[A Script Canvas graph that downloads a file from Amazon S3\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-download-sc-1.png)
 
 1. Save the canvas with a name like `MyS3DownloadTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

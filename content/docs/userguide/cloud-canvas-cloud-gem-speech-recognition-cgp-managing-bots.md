@@ -1,3 +1,8 @@
+description: ' Use the Speech Recognition Cloud Gem Portal to manage the &LEX; bots
+  for your game in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots
+title: Managing Bots
+---
 # Managing Bots<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots"></a>
 
 
@@ -20,7 +25,7 @@ You use the **Bots** tab to manage your Amazon Lex bots\.
 1. On the **Cloud Gems** page, click **Speech Recognition**\.
 
 1. Click the **Bots** tab\.  
-![\[Click Create Bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-bots-tab.png)
+![\[Click Create Bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-bots-tab.png)
 
 This example uses the sample bot located at `\dev\CloudGemSamples\Levels\CloudGemSpeechRecogintionSample\lex_test.json`\.
 
@@ -31,7 +36,7 @@ This example uses the sample bot located at `\dev\CloudGemSamples\Levels\CloudGe
 
 Click **Create Bot** on the Bots tab to create a bot\.
 
-![\[Creating a bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-2a.png)
+![\[Creating a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-2a.png)
 
 The **Bot name**, **Session timeout**, and **COPPA** settings are required\. 
 
@@ -42,7 +47,7 @@ Although it is easier to create and edit bots with the Cloud Gem Portal, you can
 
 To import an Amazon Lex bot from a local `.json` file, click **Import Bot** on the **Bots** tab\.
 
-![\[Importing a bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-bots-tab-import-bot.png)
+![\[Importing a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-bots-tab-import-bot.png)
 
 Use the file browser to choose the file\. When you do so, Amazon Lex automatically builds a machine learning model for the bot\. The build can take some time to finish\.
 
@@ -50,7 +55,7 @@ Use the file browser to choose the file\. When you do so, Amazon Lex automatical
 
 To build a bot manually, choose **Build** from the menu for the bot on the **Bots** tab\.
 
-![\[Build a bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-build-bot.png)
+![\[Build a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-build-bot.png)
 
 Amazon Lex builds a machine learning model for the bot\. The build can take some time to finish\.
 
@@ -58,7 +63,7 @@ Amazon Lex builds a machine learning model for the bot\. The build can take some
 
 Amazon Lex supports publishing versions of bots, intents, and slot types so that you can control the implementation that your client applications use\. To publish a bot, choose **Publish** from the menu for the bot\.
 
-![\[Provide a bot alias\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-4.png)
+![\[Provide a bot alias\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-4.png)
 
 You must provide an Amazon Lex alias to publish a bot\. An `alias` is a pointer to a specific version of a bot with which you can easily update the version that your client application uses\. For more information about versioning and aliases, see [Versioning and Aliases](https://docs.aws.amazon.com/lex/latest/dg/versioning-aliases.html) in the [Amazon Lex Developer Guide](https://docs.aws.amazon.com/lex/latest/dg/)\.
 
@@ -66,16 +71,16 @@ You must provide an Amazon Lex alias to publish a bot\. An `alias` is a pointer 
 
 To view the versions of a bot, click the arrow to the left of the bot name to expand the version list\.
 
-![\[Viewing bot versions\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-viewing-bot-versions.png)
+![\[Viewing bot versions\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-viewing-bot-versions.png)
 
 ## Exporting a Bot<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-exporting-a-bot"></a>
 
 To export a bot, use the **Bots** tab\. Choose **Export** from the menu for the bot\. This action downloads a `.json` file that contains the bot definition\.
 
-![\[Exporting a bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-export-bot.png)
+![\[Exporting a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-export-bot.png)
 
 ## Deleting a Bot<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-removing-a-bot"></a>
 
 To delete all versions of a bot, click the delete icon for the bot on the main Speech Recognition page\.
 
-![\[Deleting a bot\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-removing-a-bot.png)
+![\[Deleting a bot\]](/images/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-removing-a-bot.png)

@@ -1,3 +1,7 @@
+description: ' Specify permissions metadata for &cloud; resource definitions in &ALYlong;. '
+slug: permissions-metadata-for-resource-definitions
+title: Permissions Metadata for Resource Definitions
+---
 # Permissions Metadata for Resource Definitions<a name="permissions-metadata-for-resource-definitions"></a>
 
 To determine what permissions should go into a policy, the `Custom::AccessControl` resource looks for Cloud Canvas permissions metadata on resource definitions in resource group stacks\. In the following example, the metadata on the `Messages` resource gives the `SayHello` AWS Lambda function permission to put items into a Amazon DynamoDB table\. The metadata on the `SayHello` resource gives players permission to invoke the `SayHello` Lambda function\.

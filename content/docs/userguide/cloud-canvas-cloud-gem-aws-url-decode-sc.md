@@ -1,3 +1,7 @@
+description: ' Use &script-canvas; to decode URLs in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-url-decode-sc
+title: Decoding a URL with &script-canvas;
+---
 # Decoding a URL with Script Canvas<a name="cloud-canvas-cloud-gem-aws-url-decode-sc"></a>
 
 You can use the **AWSBehaviorURL** **Decode** node in Script Canvas to decode an encoded URL, as in the following example:
@@ -64,7 +68,7 @@ At this point, if you saved the graph and started the level, the **Get Variable*
 1. Connect the **Out** pins of the **AWSBehaviorURLNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
 1. Connect the **String** pins of the **AWSBehaviorURLNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
-![\[A Script Canvas graph that decodes a URL\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-aws-url-decode-sc-1.png)
+![\[A Script Canvas graph that decodes a URL\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-url-decode-sc-1.png)
 
 1. Save the canvas with a name like `MyUrlDecoder.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

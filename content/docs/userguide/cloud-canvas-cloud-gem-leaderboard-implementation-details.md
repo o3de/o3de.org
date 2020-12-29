@@ -1,8 +1,13 @@
+description: ' Learn the implementation details for the Leaderboard Sample Level in
+  &ALYlong;. '
+slug: cloud-canvas-cloud-gem-leaderboard-implementation-details
+title: Leaderboard Sample Level Implementation Details
+---
 # Leaderboard Sample Level Implementation Details<a name="cloud-canvas-cloud-gem-leaderboard-implementation-details"></a>
 
 An entity named `Leaderboard` contains the `CloudGemLeaderboardClientComponent`\.
 
-![\[CloudGemLeaderboardClientComponent\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-client-component.png)
+![\[CloudGemLeaderboardClientComponent\]](/images/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-client-component.png)
 
 The `CloudGemLeaderboardClientComponent` enables the gem's API to be called from other components on that entity and receives notifications for those calls\.
 

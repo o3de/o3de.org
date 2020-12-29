@@ -1,3 +1,7 @@
+description: ' Use visual debugging in &ALYlong; for NVIDIA Cloth. '
+slug: nvidia-cloth-debugging
+title: Cloth visual debugger
+---
 # Cloth visual debugger<a name="nvidia-cloth-debugging"></a>
 
 
@@ -7,7 +11,7 @@
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-![\[Debug visualization of the NVIDIA Cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/cloth/ui-cloth-component-debug-1.23.png)
+![\[Debug visualization of the NVIDIA Cloth component\]](/images/physx/cloth/ui-cloth-component-debug-1.23.png)
 
 To enable debug cloth visualization, use the following console variables \(CVARs\) in the editor console\.
 

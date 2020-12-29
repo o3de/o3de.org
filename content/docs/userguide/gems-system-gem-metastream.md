@@ -1,3 +1,8 @@
+description: ' Use the Twitch Metastream feature to customize game streams with overlays
+  of statistics and events for &ALYlong;. '
+slug: gems-system-gem-metastream
+title: Metastream Gem
+---
 # Metastream Gem<a name="gems-system-gem-metastream"></a>
 
 Twitch Metastream is a feature that allows broadcasters to customize their streams with overlays of statistics and events from their game session\. Using any web authoring tool, such as Dreamweaver or CoffeeCup, broadcasters can create custom HTML5 pages to control the information, graphics, layout, and behavior of each unique overlay\. With Metastream, broadcasters can create more polished, interactive viewing experiences on any of their favorite streaming services, similar to what you see in professional Esports and TV broadcasts\.

@@ -1,3 +1,8 @@
+description: ' Use the Disable Visual Artifacts node in the &ALYlong; &script-canvas;
+  editor to disable visual artifact effects. '
+slug: disable-visual-artifacts-node
+title: Disable Visual Artifacts
+---
 # Disable Visual Artifacts<a name="disable-visual-artifacts-node"></a>
 
 Disables the visual artifact effects\.
@@ -8,7 +13,7 @@ To enable the effect, see [Enable Visual Artifacts](enable-visual-artifacts-node
 + [Inputs](#disable-visual-artifacts-note-input)
 + [Outputs](#disable-visual-artifacts-node-output)
 
-![\[disablevisualartifactsnode, disableartifactsnode, disablevisualartiffacts\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-visual-artifacts-node.png)
+![\[disablevisualartifactsnode, disableartifactsnode, disablevisualartiffacts\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-visual-artifacts-node.png)
 
 ## Inputs<a name="disable-visual-artifacts-note-input"></a>
 

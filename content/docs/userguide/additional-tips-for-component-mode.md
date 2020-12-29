@@ -1,3 +1,7 @@
+description: ' See the following tips for working with a &CM; in &ALYlong;. '
+slug: additional-tips-for-component-mode
+title: Tips for Working with &CM;
+---
 # Tips for Working with Component Mode<a name="additional-tips-for-component-mode"></a>
 
 See the following tips for adding a Component Mode to your component\.

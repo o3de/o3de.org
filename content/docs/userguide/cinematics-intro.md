@@ -1,3 +1,7 @@
+description: ' Learn how &ALYlong; supports cinematics and scripted event sequences. '
+slug: cinematics-intro
+title: Create cinematic sequences
+---
 # Create cinematic sequences<a name="cinematics-intro"></a>
 
 Cinematics, also known as sequences or cutscenes, are interactive movie animations with time\-dependent control over objects and events\. You can use Lumberyard to add cutscenes to your game\.

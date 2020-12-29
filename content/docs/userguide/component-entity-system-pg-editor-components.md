@@ -1,3 +1,7 @@
+description: ' Learn about editor components in &ALYlong;. '
+slug: component-entity-system-pg-editor-components
+title: Editor Components
+---
 # Editor Components<a name="component-entity-system-pg-editor-components"></a>
 
 Some components in Lumberyard have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. Lumberyard uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.

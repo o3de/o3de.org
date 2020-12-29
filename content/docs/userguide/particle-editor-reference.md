@@ -1,3 +1,8 @@
+description: ' Use the particle parameters and attributes to modify how emitters and
+  particles look and behave in the &ALYlong; &particle-editor; . '
+slug: particle-editor-reference
+title: Particles Attributes Reference
+---
 # Particles Attributes Reference<a name="particle-editor-reference"></a>
 
 

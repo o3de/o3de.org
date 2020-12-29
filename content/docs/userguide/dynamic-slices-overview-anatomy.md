@@ -1,8 +1,13 @@
+description: ' Understand the anatomy of a slice and the slice data patch format in
+  &ALYlong;. '
+slug: dynamic-slices-overview-anatomy
+title: Anatomy of a Slice
+---
 # Anatomy of a Slice<a name="dynamic-slices-overview-anatomy"></a>
 
 The following diagram illustrates an example slice A, which contains references to two other slices B and C\. Slice A has two instances each of B and C: 
 
-![\[Anatomy of an example slice\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/dynamic-slices-anatomy.png)
+![\[Anatomy of an example slice\]](/images/component/dynamic-slices-anatomy.png)
 
 Each instance contains a data patch, which may be empty if no changes or overrides are present\. If the instantiation of slice B in slice A has been modified in comparison with the source asset B, the data patch contains the differences\. When slice A is instantiated again, it contains instances of slice B, but with the modifications applied\. Any nonoverridden fields propagate through the hierarchy\. If you change a property value in the slice B asset on disk, the instance of B contained in slice A will reflect that change — if the property for that instance has not already been overridden, as reflected in the instance's data patch\. 
 

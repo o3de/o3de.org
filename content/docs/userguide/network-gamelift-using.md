@@ -1,3 +1,7 @@
+description: ' Use &AGS; to host your &ALYlong; game in the cloud. '
+slug: network-gamelift-using
+title: ' Using &AGSlong;'
+---
 # Using Amazon GameLift<a name="network-gamelift-using"></a>
 
 Lumberyard supports hosting dedicated servers on the cloud by using Amazon GameLift\. GameLift is a managed AWS service for deploying, operating, and scaling session\-based multiplayer games\. GameLift is built on AWS’s highly available cloud infrastructure and allows you to quickly scale high\-performance game servers up and down to meet player demand – without any additional engineering effort or upfront costs\. It reduces the time required to build a multiplayer backend from thousands of hours to just minutes\.

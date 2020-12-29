@@ -1,3 +1,7 @@
+description: ' Learn how to install and set up &ALYlong; for the first time. '
+slug: setting-up-intro
+title: Setting up &ALYlong;
+---
 # Setting up Amazon Lumberyard<a name="setting-up-intro"></a>
 
 Amazon Lumberyard has a two\-part installation process:
@@ -10,7 +14,7 @@ To create and build new projects, or add gems to existing projects, either selec
 
 After Lumberyard is installed, use Project Configurator to select a project or create a new project\. The following sections detail the minimum requirements for Lumberyard and guide you through the installation process\.
 
-![\[Flow chart of the Amazon Lumberyard installation process.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/lumberyard-install-flow-chart.png)
+![\[Flow chart of the Amazon Lumberyard installation process.\]](/images/lumberyard-install-flow-chart.png)
 
 **Topics**
 + [System requirements](setting-up-system-requirements.md)

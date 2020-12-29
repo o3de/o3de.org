@@ -1,3 +1,7 @@
+description: ' Describes GridMate''s messaging system. '
+slug: network-carrier
+title: Carrier
+---
 # Carrier<a name="network-carrier"></a>
 
 Carrier is GridMate's messaging API\. GridMate's reliable UDP implementation supports both reliable and unreliable messages\. There is no out\-of\-order delivery\. Out\-of\-order messages are queued if sent reliably, or discarded if sent unreliably\. 

@@ -1,3 +1,8 @@
+description: ' Learn about the policies that control user access to the Web Communicator
+  cloud gem and &IoT; in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-web-communicator-policies
+title: Web Communicator Cloud Gem Authentication and &AWS; Policies
+---
 # Web Communicator Cloud Gem Authentication and AWS Policies<a name="cloud-canvas-cloud-gem-web-communicator-policies"></a>
 
 The default Web Communicator authentication system uses authenticated Amazon Cognito users with AWS Signature Version 4\. For more information, see [Authenticating Requests \(AWS Signature Version 4\)](https://docs.aws.amazon.com/general/latest/gr/sig-v4-authenticating-requests.html) in the *AWS General Reference*\.

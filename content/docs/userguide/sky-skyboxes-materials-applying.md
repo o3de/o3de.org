@@ -1,3 +1,7 @@
+description: ' Learn how to apply a skybox material to a skybox in your &ALY; level. '
+slug: sky-skyboxes-materials-applying
+title: Applying Skybox Materials to a Skybox
+---
 # Applying Skybox Materials to a Skybox<a name="sky-skyboxes-materials-applying"></a>
 
 
@@ -24,7 +28,7 @@ Do the following to apply a skybox material to a skybox\.
 1. In the **Rollup Bar**, on the **Terrain** tab, click **Environment**\.
 
 1. Under **SkyBox**, click the browse \(**\.\.**\) button to choose a new material for the **Material** parameter\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/sky/skybox-material-parameter.png)
+![\[Image NOT FOUND\]](/images/sky/skybox-material-parameter.png)
 
 1. In the **Material Editor**, choose a material that uses the **Sky** shader\.
 

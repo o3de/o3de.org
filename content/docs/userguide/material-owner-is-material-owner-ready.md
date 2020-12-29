@@ -1,3 +1,8 @@
+description: ' Use the Is Ready node in the &ALYlong; &script-canvas; editor to learn
+  whether the material owner finished loading its assets and the material is ready. '
+slug: material-owner-is-material-owner-ready
+title: Is Ready
+---
 # Is Ready<a name="material-owner-is-material-owner-ready"></a>
 
 Indicates whether the material owner finished loading its assets and the material is ready\.
@@ -6,7 +11,7 @@ Indicates whether the material owner finished loading its assets and the materia
 + [Inputs](#material-owner-is-material-owner-ready-input)
 + [Outputs](#material-owner-is-material-owner-ready-output)
 
-![\[isreadynode, isready\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-is-ready-material-owner-node.png)
+![\[isreadynode, isready\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-is-ready-material-owner-node.png)
 
 ## Inputs<a name="material-owner-is-material-owner-ready-input"></a>
 

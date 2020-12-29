@@ -1,3 +1,8 @@
+description: ' Use the Water Volume component to create small and medium bodies of
+  water in your &ALYlong; level. '
+slug: component-water-volume
+title: Water Volume
+---
 # Water Volume<a name="component-water-volume"></a>
 
 
@@ -864,15 +869,15 @@ The spilled water volume behaves similarly to the source water volume and can si
 
 The following image shows water volume above a pool that does not allow spilling\.
 
-![\[Example Water Volume component with water that does not spill.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/water-volume-pool-no-spill.png)
+![\[Example Water Volume component with water that does not spill.\]](/images/component/water-volume-pool-no-spill.png)
 
 The following image shows the water volume spilling 100 units into the pool\.
 
-![\[Example Water Volume component with water spilling at 100 units into the pool.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/water-volume-pool-100-units-spill.png)
+![\[Example Water Volume component with water spilling at 100 units into the pool.\]](/images/component/water-volume-pool-100-units-spill.png)
 
 The following image shows the water volume spilling 1000 units into the pool\.
 
-![\[Example Water Volume component with water spilling at 1000 units into the pool.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/water-volume-pool-1000-units-spill.png)
+![\[Example Water Volume component with water spilling at 1000 units into the pool.\]](/images/component/water-volume-pool-1000-units-spill.png)
 
 ## Setting up Wave Simulation<a name="water-volume-setup-wave-simulation"></a>
 

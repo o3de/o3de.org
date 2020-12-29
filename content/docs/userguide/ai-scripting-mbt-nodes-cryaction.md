@@ -1,3 +1,7 @@
+description: ' See the following &cryaction; nodes in &ALYlong;. '
+slug: ai-scripting-mbt-nodes-cryaction
+title: '&cryaction; Nodes'
+---
 # CryAction Nodes<a name="ai-scripting-mbt-nodes-cryaction"></a>
 
 These nodes provide MBT functionality for CryAction features\.

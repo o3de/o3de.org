@@ -1,3 +1,7 @@
+description: ' Learn best engineering practices for &script-canvas; in &ALYlong;. '
+slug: script-canvas-best-practices
+title: '&script-canvas; Best Practices'
+---
 # Script Canvas Best Practices<a name="script-canvas-best-practices"></a>
 
 Best practices for Script Canvas include using an event\-driven approach and using custom nodes to simplify your graphs\.
@@ -20,4 +24,4 @@ Sending events during entity activation can have undesired results\. Because the
 
 In order to ensure that all entities that need to listen for and handle a given script event are ready to receive the event, it is best to queue the message on the tick bus\. To implement this strategy, use a **Once** node connected to the **On Tick** message, as the following image shows\. This practice guarantees that when the message is sent, all entities that might be connected to that script event receive it\.
 
-![\[The Once node connected to the On Tick message\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-best-practices-activation-order.png)
+![\[The Once node connected to the On Tick message\]](/images/scripting/script-canvas/script-canvas-best-practices-activation-order.png)

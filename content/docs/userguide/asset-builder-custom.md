@@ -1,3 +1,8 @@
+description: ' Create an asset builder to process your custom asset type source files
+  into game-ready files in &ALYlong;. '
+slug: asset-builder-custom
+title: Creating a Custom Asset Builder
+---
 # Creating a Custom Asset Builder<a name="asset-builder-custom"></a>
 
 The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with Lumberyard\.

@@ -1,3 +1,7 @@
+description: ' You can manage your components with the &entity-outliner; in &ALYlong;. '
+slug: creating-adding-components
+title: Managing Components
+---
 # Managing Components<a name="creating-adding-components"></a>
 
 You can also use the context menu in the **Entity Inspector** to remove, copy, and reorder components\.

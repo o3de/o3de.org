@@ -1,3 +1,8 @@
+description: ' Use voxel octree global illumination or voxel GI in &ALYlong; to provide
+  dynamic indirect light and shadows bouncing from static objects. '
+slug: rendering-graphics-svogi
+title: Voxel-based Global Illumination (SVOGI)
+---
 # Voxel\-based Global Illumination \(SVOGI\)<a name="rendering-graphics-svogi"></a>
 
 
@@ -15,7 +20,7 @@ Voxel GI provides the following effects:
 
 For every frame, thousands of rays are traced through voxels and shadow maps to gather occlusion and in\-directional lighting\.
 
-![\[Example global illumination enabled and disabled.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/rendering/SVOGI.gif)
+![\[Example global illumination enabled and disabled.\]](/images/rendering/SVOGI.gif)
 
 To use this feature, you must [enable](gems-system-using-project-configurator.md) the SVOGI gem for your project\.
 

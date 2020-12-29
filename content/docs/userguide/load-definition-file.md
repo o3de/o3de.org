@@ -1,3 +1,8 @@
+description: ' Use the Load Definition File node in the &ALYlong; &script-canvas;
+  editor to load the time of day preset file and update the sky. '
+slug: load-definition-file
+title: Load Definition File
+---
 # Load Definition File<a name="load-definition-file"></a>
 
 Loads a time of day preset `XML` file `file_name.xml` and then updates the sky\. For example, the preset file can be named `Time_Of_Day.xml`\.
@@ -6,7 +11,7 @@ Loads a time of day preset `XML` file `file_name.xml` and then updates the sky\.
 + [Inputs](#load-definition-file-input)
 + [Outputs](#load-definition-file-output)
 
-![\[loaddefinitionfile, timeofdaypresetfile, loadtimeofdayfile\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-definition-file-node.png)
+![\[loaddefinitionfile, timeofdaypresetfile, loadtimeofdayfile\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-definition-file-node.png)
 
 ## Inputs<a name="load-definition-file-input"></a>
 

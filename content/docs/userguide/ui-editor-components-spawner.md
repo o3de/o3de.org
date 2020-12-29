@@ -1,8 +1,13 @@
+description: ' Use the &ALYlong; UISpawner component to spawn a runtime dynamic slice
+  at an entity''s location with an optional offset. '
+slug: ui-editor-components-spawner
+title: UISpawner Component
+---
 # UISpawner Component<a name="ui-editor-components-spawner"></a>
 
 Use the **UISpawner** component to spawn a runtime dynamic [slice](ui-editor-working-slices.md) \(\*\.`dynamicslice`\) at an entity's location with an optional offset\. In combination with scripting, you can use the **UISpawner** component to spawn any dynamic slice at any time and to spawn multiple instances of the same dynamic slice\.
 
-![\[UISpawner component with an example slice file.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-uispawner.png)
+![\[UISpawner component with an example slice file.\]](/images/game_ui_editor/ui-editor-components-uispawner.png)
 
 **Contents**
 + [Example UISpawner Component](#ui-spawner-component-example)

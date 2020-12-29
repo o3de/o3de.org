@@ -1,3 +1,8 @@
+description: ' Create asset bundles that can be distributed to patch and update a
+  live &ALY; game, while also making a new distribution for later downloads. '
+slug: asset-bundler-tutorial-content-patches
+title: Create content patches with &ALY;
+---
 # Create content patches with Lumberyard<a name="asset-bundler-tutorial-content-patches"></a>
 
 
@@ -25,10 +30,10 @@ To complete this tutorial, you should have completed the [Build and bundle asset
 For this tutorial you'll modify the `level2` level created in the previous tutorial\. You'll also be adding a new asset\-only gem to the Starter Game project, to demonstrate how to update auxiliary content in addition to pushing direct changes to a bundle\.
 
 1. Launch the Project Configurator, make sure that the Starter Game is selected, and select **Enable Gems**\.  
-![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-content-patches/ui-project-configutator-create-1.25.png)
+![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](/images/assetbundler/tutorial-content-patches/ui-project-configutator-create-1.25.png)
 
 1. Search for the term *primitive* in the search bar\. The **Primitive Assets** gem should appear in the results list\. Select the checkbox to include it as part of the Starter Game, and then select **Save**\.  
-![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-content-patches/02.png)
+![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](/images/assetbundler/tutorial-content-patches/02.png)
 **Note**  
 The **Primitive Assets** gem is an asset\-only gem, so you aren't required to recompile any code for your game\. If you were adding a gem with a code component, you would also need to rebuild both the **profile** and **release** portions of your game and distribute the new binaries as part of the patch\. See the [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md) for build instructions and where the release binaries need to be located\. 
 
@@ -126,7 +131,7 @@ Now you're ready to simulate two scenarios: users who have v1 of your game but u
    ```
 
    If the content patch was applied successfully, you should see a scene similar to the following:  
-![\[A static scene displaying a boulder and an untextured 1x1 box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/assetbundler/tutorial-content-patches/03.png)
+![\[A static scene displaying a boulder and an untextured 1x1 box.\]](/images/assetbundler/tutorial-content-patches/03.png)
 
 ### Simulate the v2 download experience<a name="asset-bundler-tutorial-content-patches-simulating-the-v2-download-experience"></a>
 

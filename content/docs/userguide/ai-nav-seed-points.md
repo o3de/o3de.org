@@ -1,3 +1,7 @@
+description: ' Add navigation seed points for AI agents in &ALYlong;. '
+slug: ai-nav-seed-points
+title: Adding Navigation Seed Points
+---
 # Adding Navigation Seed Points<a name="ai-nav-seed-points"></a>
 
 Navigation seed points are specific accessible locations within navigation meshes that are normally inaccessible due to terrain or other obstructions\. Seed points notify the Lumberyard pathfinding system that these locations are accessible for AI agent navigation\. For example, an AI agent located on an island could “teleport” to a seed point on an adjacent mountainous island\.

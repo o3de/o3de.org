@@ -1,10 +1,15 @@
+description: ' Use a layout row component in the &ALYlong; &ui-canvas-editor; to organize
+  child elements into a row. '
+slug: ui-editor-components-layout-row
+title: LayoutRow
+---
 # LayoutRow<a name="ui-editor-components-layout-row"></a>
 
 You can use a **LayoutRow** component to organize child elements into a row\. To use this feature, you add the **LayoutRow** component to an element and then add child elements\. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose\. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on\. To control the sizes of specific, or all, children, add the [layout cell](ui-editor-components-layout-cell.md) component to those children\. 
 
 Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property\. For more information, see [LayoutColumn](ui-editor-components-layout-column.md)\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-layout-row.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-layout-row.png)
 
 To see an in\-game example of a completed canvas with the **Layout Row** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Row**\. You can view examples of different child sizes within a row\. Press **Esc** to exit the game\.
 

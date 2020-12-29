@@ -1,3 +1,8 @@
+description: ' The following topics will guide you through creating and managing projects
+  in &ALY;. '
+slug: lumberyard-projects-intro
+title: Working with &ALY; projects
+---
 # Working with Lumberyard projects<a name="lumberyard-projects-intro"></a>
 
 ## Working with projects in Lumberyard<a name="ly-projects-intro"></a>

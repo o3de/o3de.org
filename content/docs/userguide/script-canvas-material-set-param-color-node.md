@@ -1,3 +1,8 @@
+description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; editor
+  to set a material parameter with a color value. '
+slug: script-canvas-material-set-param-color-node
+title: Set Param Color
+---
 # Set Param Color<a name="script-canvas-material-set-param-color-node"></a>
 
 Sets a material parameter with a color value\.
@@ -6,7 +11,7 @@ Sets a material parameter with a color value\.
 + [Inputs](#script-canvas-material-set-param-color-node-input)
 + [Outputs](#script-canvas-material-set-param-color-node-output)
 
-![\[setparamcolor, setparamcolornode\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-node.png)
+![\[setparamcolor, setparamcolornode\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-node.png)
 
 ## Inputs<a name="script-canvas-material-set-param-color-node-input"></a>
 

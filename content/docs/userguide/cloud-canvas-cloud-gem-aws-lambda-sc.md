@@ -1,3 +1,7 @@
+description: ' Invoke an &LAMlong; function with &script-canvas; in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-aws-lambda-sc
+title: Invoking an &LAMlong; Function from &script-canvas;
+---
 # Invoking an AWS Lambda Function from Script Canvas<a name="cloud-canvas-cloud-gem-aws-lambda-sc"></a>
 
 You can use the **InvokeAWSLambda** node to invoke an AWS Lambda function\. 
@@ -82,7 +86,7 @@ Next, to see the success or failure of the operation, you add **AWSLambdaHandler
 **Example**  
 
    Your graph should look similar to the following image\.  
-![\[Example Script Canvas graph that invokes a Lambda function\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-1.png)
+![\[Example Script Canvas graph that invokes a Lambda function\]](/images/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-1.png)
 
 1. Save the file with a name like `MyLambdaFunctionTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
 

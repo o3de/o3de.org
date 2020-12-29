@@ -1,3 +1,7 @@
+description: ' Learn about the &ALYlong; Blast Family component. '
+slug: component-blast-family
+title: Blast Family component
+---
 # Blast Family component<a name="component-blast-family"></a>
 
 
@@ -15,7 +19,7 @@ For information on using the **Blast Family** component see [Simulated destructi
 
 ## Blast Family component properties<a name="component-blast-family-properties"></a>
 
-![\[Properties of the Blast Family component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/blast/ui-blast-family-component-1.27.png)
+![\[Properties of the Blast Family component\]](/images/physx/blast/ui-blast-family-component-1.27.png)
 
 **Blast Asset**  
 The blast asset that will be used for the destruction simulation\.

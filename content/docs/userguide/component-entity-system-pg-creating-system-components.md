@@ -1,3 +1,7 @@
+description: ' Learn how to create system components in &ALYlong;. '
+slug: component-entity-system-pg-creating-system-components
+title: Creating System Components
+---
 # Creating System Components<a name="component-entity-system-pg-creating-system-components"></a>
 
 System components are similar to other components in Lumberyard's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](az-module-system-components.md) in the [AZ Modules](az-modules-intro.md) section\.
@@ -203,6 +207,6 @@ After you create the code for your component, add it to your project's system en
    The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list\. The `Category` field specifies the group in which the component appears\. In this case, no category is specified, so the group is **Miscellaneous** by default\. 
 
    The following image shows the result in the System Entity Editor\.  
-![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
+![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](/images/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
 
    For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](az-module-system-entities-configuring.md)\. 

@@ -1,3 +1,7 @@
+description: ' Capture video and audio in &ALYlong;. '
+slug: demo-video-capture-av
+title: Capturing Video and Audio
+---
 # Capturing Video and Audio<a name="demo-video-capture-av"></a>
 
 This tutorial explains how to set up Lumberyard editor \(or game\) to capture video\. Lumberyard outputs video as single frames\. If required, it can also output stereo or 5\.1 surround sound audio in `.wav` file format\. You can edit the output with commonly available video editing software\.

@@ -1,3 +1,8 @@
+description: ' Remove unneeded &AWS; resources when you develop cloud-connected features
+  in &ALYlong;. '
+slug: cloud-canvas-administration-aws-resource-cleanup
+title: Freeing Up &AWS; Resources
+---
 # Freeing Up AWS Resources<a name="cloud-canvas-administration-aws-resource-cleanup"></a>
 
 After a time of intensively testing or developing Lumberyard game projects that use Cloud Canvas, your attempts to create resources in AWS might fail or result in rollback loops\. For example, you might receive error messages like the following:

@@ -1,3 +1,8 @@
+description: ' How to configure the Perforce Plugin to use Perforce as the source
+  control solution to use with &ALY;. '
+slug: setting-up-lumberyard-perforce-plugin
+title: Using the Perforce Plugin with &ALY;
+---
 # Using the Perforce Plugin with Lumberyard<a name="setting-up-lumberyard-perforce-plugin"></a>
 
 Lumberyard integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.

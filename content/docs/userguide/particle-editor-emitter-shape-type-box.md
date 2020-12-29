@@ -1,14 +1,20 @@
+description: ' Use the Box emitter in the &ALYlong; &particle-editor; to enable spawning
+  of particles along the shapes axial coordinate system and achieve planar and rectangular
+  effects. '
+slug: particle-editor-emitter-shape-type-box
+title: Box Emitter (CPU and GPU)
+---
 # Box Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-box"></a>
 
 The **Box** emitter enables spawning of particles along the shapes axial coordinate system\. This allows you to create complex planar and rectangular effects\.
 
 The following is an example of the **Box** emitter in the **Preview** viewport\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-box-1.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-box-1.png)
 
 The following are parameters for the **Box** emitter\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-emitter-type-box-2.png)
+![\[Image NOT FOUND\]](/images/particles/particle-emitter-type-box-2.png)
 
 
 **Box Emitter Parameters**  

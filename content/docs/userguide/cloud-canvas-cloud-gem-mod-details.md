@@ -1,3 +1,8 @@
+description: ' Learn the implementation details of the &ALYlong; Message of the Day
+  Cloud Gem. '
+slug: cloud-canvas-cloud-gem-mod-details
+title: Cloud Gem Message of the Day Implementation Details
+---
 # Cloud Gem Message of the Day Implementation Details<a name="cloud-canvas-cloud-gem-mod-details"></a>
 
 This section describes the entity, component, Lua script, and resources used by the Message of the Day Cloud Gem\.
@@ -6,7 +11,7 @@ This section describes the entity, component, Lua script, and resources used by 
 
 The Message of the Day sample uses an entity called `MOTDMenu` that contains the `CloudGemMessageOfTheDayClientComponent`\.
 
-![\[Message of the day entity and client component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-mod-testing-client-component.png)
+![\[Message of the day entity and client component\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-testing-client-component.png)
 
 The `CloudGemMessageOfTheDayClientComponent` component gives the entity access to the game client API operations so that it can receive callback results\.
 

@@ -1,3 +1,8 @@
+description: ' Use visual debugging on destruction simulations in &ALYlong; with NVIDIA
+  Blast. '
+slug: nvidia-blast-debug
+title: NVIDIA Blast visual debugger
+---
 # NVIDIA Blast visual debugger<a name="nvidia-blast-debug"></a>
 
 
@@ -23,4 +28,4 @@
 
 In the below example, as the rabbit drops, the bonds between the fractured chunks are shown as green lines\. On impact, the bonds change to orange as they weaken and red when they break\. 
 
-![\[Debug visualization for NVIDIA Blast.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/physx/blast/anim-nvidia-blast-debug.gif)
+![\[Debug visualization for NVIDIA Blast.\]](/images/physx/blast/anim-nvidia-blast-debug.gif)

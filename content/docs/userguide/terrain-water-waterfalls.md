@@ -1,3 +1,8 @@
+description: ' Create waterfalls where rivers change their course or elevation to
+  enhance the realism of cliffs in your &ALY; level. '
+slug: terrain-water-waterfalls
+title: Adding Waterfalls
+---
 # Adding Waterfalls<a name="terrain-water-waterfalls"></a>
 
 A waterfall is a natural feature to add to cliffs or when a river changes elevation or course\. Waterfalls are placed as 2D decals in the terrain\. 

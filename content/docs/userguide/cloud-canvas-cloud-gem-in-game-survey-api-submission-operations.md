@@ -1,3 +1,8 @@
+description: ' Use answer submission operations to manage answer submissions to your
+  &cloud; in-game surveys in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-in-game-survey-api-submission-operations
+title: Answer Submission Operations
+---
 # Answer Submission Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-submission-operations"></a>
 
 You can use answer submission operations to manage answer submissions to your Cloud Canvas in\-game surveys\.

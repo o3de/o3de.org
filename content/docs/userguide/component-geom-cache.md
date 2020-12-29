@@ -1,3 +1,8 @@
+description: ' Use the GeomCache or geometry cache component to render mesh data and
+  play vertex-based animation in &ALYlong;. '
+slug: component-geom-cache
+title: Geom Cache
+---
 # Geom Cache<a name="component-geom-cache"></a>
 
 
@@ -9,7 +14,7 @@
 
 The **Geometry Cache** component renders mesh data and can play vertex\-based animations from [Alembic](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-export-maya-lumberyard-tools-alembic-cache.html) files\. With this, you can simulate highly complex geometry effects that might otherwise be unachievable\.
 
-![\[Example of a Geom Cache component.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shared-geom-cache-example-animation.gif)
+![\[Example of a Geom Cache component.\]](/images/shared-geom-cache-example-animation.gif)
 
 ## Geom Cache Parameters<a name="component-geom-cache-params"></a>
 

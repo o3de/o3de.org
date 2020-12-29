@@ -1,3 +1,7 @@
+description: ' Learn more about an MNM mesh in &ALYlong;. '
+slug: ai-nav-mesh
+title: Multi-Layer Navigation Mesh (MNM)
+---
 # Multi\-Layer Navigation Mesh \(MNM\)<a name="ai-nav-mesh"></a>
 
 An MNM mesh is automatically created for each navigation area that is added to a level\. During the mesh generation process, the terrain, voxels, static objects, and rigid bodies with zero mass are all accounted for in determining whether an AI agent can move through or must move around something\.

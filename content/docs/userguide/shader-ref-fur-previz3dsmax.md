@@ -1,6 +1,10 @@
+description: ' Use the 3DSMax fur previsualization in &ALYlong;. '
+slug: shader-ref-fur-previz3dsmax
+title: 3DSMax &endash; Fur Previsualization
+---
 # 3DSMax – Fur Previsualization<a name="shader-ref-fur-previz3dsmax"></a>
 
-![\[Example of using 3DSMax fur previsualization.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-21.png)
+![\[Example of using 3DSMax fur previsualization.\]](/images/shaders/shader-ref-fur-21.png)
 
 **To visualize fur on a mesh**
 
@@ -9,20 +13,20 @@
    1. Open the **Preference Settings** dialog\. To do this, navigate to **Customize**, **Preferences**\.
 
    1. Select the **Viewports** tab\. Under **Display Drivers**, view the currently installed driver\.  
-![\[Example selecting the driver to visualize fur for a mesh.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-22.png)
+![\[Example selecting the driver to visualize fur for a mesh.\]](/images/shaders/shader-ref-fur-22.png)
 
    1. If it does not display **Direct3D 9\.0**, click **Choose Driver**\. From the drop\-down menu, choose **Legacy Direct3D**\. Click **OK**\.  
-![\[Example for displaying driver selection.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-23.png)
+![\[Example for displaying driver selection.\]](/images/shaders/shader-ref-fur-23.png)
 
 1. Open the **Material Editor**\. To do this, navigate to **Rendering**, **Material Editor**, **Compact Material Editor**\.
 
 1. Select a material that you want to set for fur, and click the button to the right of the submaterial drop\-down menu \(the button might display “Standard”\)\.
 
    Choose **DirectX Shader**, and choose to discard the old material\.  
-![\[Example of selecting a material to set for the fur.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-24.png)
+![\[Example of selecting a material to set for the fur.\]](/images/shaders/shader-ref-fur-24.png)
 
 1. Click in filename box\. Navigate to your Lumberyard install folder, and select `dev\Tools\maxscript\fx\Fur.fx`\.  
-![\[Example of selecting the fur file name.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-25.png)
+![\[Example of selecting the fur file name.\]](/images/shaders/shader-ref-fur-25.png)
 
 1. In the **Fur\.cgfx Parameters** section, specify the following, at a minimum:
    + **Enable Fur Combing** \(disabled/unselected if you haven't prepared your mesh with vertex colors for fur combing\)
@@ -31,12 +35,12 @@
    + **Fur Heightmap**
 
 1. In the viewport, select your mesh or sub\-mesh\. In the **Material Editor**, click **Assign Material to Selection**\.  
-![\[Select the mesh or sub-mesh material picker.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-26.png)
+![\[Select the mesh or sub-mesh material picker.\]](/images/shaders/shader-ref-fur-26.png)
 
 **To apply vertex colors on a mesh**
 
 1. With your object selected, go to the **Modify** panel\. From the **Modifier List** drop\-down menu, select **VertexPaint**\.  
-![\[Example apply vertex colors for a mesh.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-27.png)
+![\[Example apply vertex colors for a mesh.\]](/images/shaders/shader-ref-fur-27.png)
 
 1. To adjust fur combing, set the **Channel** to **Vertex Color**\.
 

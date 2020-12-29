@@ -1,3 +1,8 @@
+description: ' Use components to synchronize the state of animations across a network
+  in &ALYlong;. '
+slug: network-synchronizing-animation
+title: Synchronizing Animations Across a Network
+---
 # Synchronizing Animations Across a Network<a name="network-synchronizing-animation"></a>
 
 You can use the **[AnimGraph](component-animgraph.md)** component to add an animation graph and motion set to a character\. To synchronize the **AnimGraph** component's parameters \(its EMotion FX animation state\) across the network, use these two components:
@@ -31,12 +36,12 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 1. Choose **Tools**, **Entity Inspector**\.
 
 1. In the viewport, zoom in and select the Rin character\.  
-![\[Select the Rin character in the viewport.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-synchronizing-animation-1.png)
+![\[Select the Rin character in the viewport.\]](/images/networking/network-synchronizing-animation-1.png)
 
 1. In the **Entity Inspector**, ensure that **Rin** appears in the **Name** field\.
 
 1. In the **Entity Inspector** search box, enter **anim**\.  
-![\[AnimGraph component properties for the Rin character in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-synchronizing-animation-2.png)
+![\[AnimGraph component properties for the Rin character in the Entity Inspector.\]](/images/networking/network-synchronizing-animation-2.png)
 
    The **AnimGraph** component for Rin has four parameters:
    + `movement_speed`
@@ -51,17 +56,17 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 1. In the **Entity Inspector** search box, enter **Network**\.
 
 1. Choose **Network Binding**\.  
-![\[Adding the Network Binding component in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-synchronizing-animation-3.png)
+![\[Adding the Network Binding component in the Entity Inspector.\]](/images/networking/network-synchronizing-animation-3.png)
 
 1. In the **Entity Inspector**, click **Add Component**\.
 
 1. In the **Entity Inspector** search box, enter **anim**\.
 
 1. Choose **Anim Graph Net Sync**\.  
-![\[Adding the Anim Graph Net Sync component in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-synchronizing-animation-4.png)
+![\[Adding the Anim Graph Net Sync component in the Entity Inspector.\]](/images/networking/network-synchronizing-animation-4.png)
 
    The **Anim Graph Net Sync** component is added to the **Rin** entity\.  
-![\[The Anim Graph Net Sync component properties in the Entity Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-synchronizing-animation-5.png)
+![\[The Anim Graph Net Sync component properties in the Entity Inspector.\]](/images/networking/network-synchronizing-animation-5.png)
 
    By default, the **Anim Graph Net Sync** component synchronizes only the animation parameters\. For greater precision, you can also choose to synchronize **active nodes** and **motion nodes**, which uses more network bandwidth\.
 

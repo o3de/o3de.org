@@ -1,8 +1,13 @@
+description: ' Use the Curve Editor in the &ALYlong;''s &particle-editor; to change
+  attribute values. '
+slug: emitter-curve-editor
+title: Using the Curve Editor in the &particle-editor;
+---
 # Using the Curve Editor in the Particle Editor<a name="emitter-curve-editor"></a>
 
 Use the ****Curve Editor**** to edit the attribute values over the emitter and particle lifetimes\. **Strength Over Emitter Life** is active only if you have an emitter lifetime that is greater than zero\.
 
-![\[Curve Editor in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-curves.png)
+![\[Curve Editor in the Particle Editor.\]](/images/particles/particle-editor-curves.png)
 
 **To edit the curves**
 

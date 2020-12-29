@@ -1,3 +1,7 @@
+description: ' Use the material settings for the fur rendering in &ALYlong;. '
+slug: shader-ref-fur-materialsettings
+title: Material Settings
+---
 # Material Settings<a name="shader-ref-fur-materialsettings"></a>
 
 Using fur material parameters, you can fine\-tune the look of the fur\. 
@@ -14,7 +18,7 @@ Fur rendering supports the following textures:
 | Specular | Specularity of the mesh\. | 
 | Fur Heightmap | A grayscale texture that specifies how fur fades out at different frequencies over the mesh\. Without this texture, fur appears blurry and without definition to strands\. | 
 
-![\[Example shader parameters for fur rendering.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/shaders/shader-ref-fur-13-1.png)
+![\[Example shader parameters for fur rendering.\]](/images/shaders/shader-ref-fur-13-1.png)
 
 Default fur **Shader Params** are as follows:
 

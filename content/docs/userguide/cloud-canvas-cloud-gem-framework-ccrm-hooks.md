@@ -1,3 +1,7 @@
+description: ' Add custom features to &cloud; Resource Manager. '
+slug: cloud-canvas-cloud-gem-framework-ccrm-hooks
+title: Cloud Gem Framework Resource Manager Hooks
+---
 # Cloud Gem Framework Resource Manager Hooks<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks"></a>
 
 The Cloud Canvas Resource Manager ensures that the AWS resources that the game uses match the definitions of those resources in the game's source code\. However, you might need to add functionality to these processes\. For example, for the Dynamic Content Cloud Gem, you must upload any default packages for the project immediately after you create a new deployment\.

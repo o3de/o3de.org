@@ -1,3 +1,8 @@
+description: ' Use the emitter shape types in &ALYlong;''s &particle-editor; to achieve
+  a variety of effects. '
+slug: particle-editor-emitter-shape-types
+title: Working with Emitter Shape Types
+---
 # Working with Emitter Shape Types<a name="particle-editor-emitter-shape-types"></a>
 
 The Particle Editor provides emitter shape types that you can use to achieve a variety of effects, such as using the **Beam** emitter to create fire effects\.
@@ -18,7 +23,7 @@ The Particle Editor provides emitter shape types that you can use to achieve a v
    + **Point**
    + **Sphere**
    + **Trail**  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-emitter-shape-types.png)
+![\[Image NOT FOUND\]](/images/particles/particle-editor-emitter-shape-types.png)
 
 Most emitters have CPU and GPU particle types\. Each emitter's velocity functions on either world or shape axial coordinates, based on type\. To view the shape XYZ coordinates, right\-click the **Preview** viewport and choose **Show Emitter Shape**\.
 

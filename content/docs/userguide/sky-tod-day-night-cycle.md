@@ -1,3 +1,8 @@
+description: ' Use &tod-editor; to make settings change over time to mimic a day-night
+  lighting cycle in your &ALYlong; environment. '
+slug: sky-tod-day-night-cycle
+title: Setting a Day-Night Cycle
+---
 # Setting a Day\-Night Cycle<a name="sky-tod-day-night-cycle"></a>
 
 You can use the Time of Day Editor to configure changes to environment parameters over time to mimic a day\-night lighting cycle\. The Time of Day Editor uses a 24\-hour timeline graph and a recording function to store changing environment parameter values in an XML file\. 
@@ -9,7 +14,7 @@ The Time of Day graph shows changes to the selected parameter over time\. When a
 **Example**  
 The following is an example graph in the **Time of Day Editor**\.  
 
-![\[Use the Time of Day Editor to manage a day and night cycle for your game in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/sky/sky-tod-day-night-cycle.png)
+![\[Use the Time of Day Editor to manage a day and night cycle for your game in Lumberyard.\]](/images/sky/sky-tod-day-night-cycle.png)
 
 **To configure a day\-night cycle**
 

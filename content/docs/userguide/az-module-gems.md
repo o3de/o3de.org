@@ -1,3 +1,7 @@
+description: ' Learn about the advantages of gems that are built as AZ modules. '
+slug: az-module-gems
+title: Gems and AZ Modules
+---
 # Gems and AZ Modules<a name="az-module-gems"></a>
 
 The gems system was developed to make it easy to share code between projects\. Gems are reusable packages of module code and assets which can be easily added to or removed from a Lumberyard game\. Gems also promote writing code in a way that is more modular than that found in legacy libraries\. For example, each gem has its own include folder for its public interface code files\. Gems also come with package management metadata such as semantic versioning and the ability to state dependencies on other gems\. 

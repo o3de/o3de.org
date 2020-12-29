@@ -1,3 +1,7 @@
+description: ' Import a megaterrain texture, also known as a color map, into &ALYlong;. '
+slug: terrain-import-color-megaterrain
+title: Importing a Megaterrain Texture
+---
 # Importing a Megaterrain Texture<a name="terrain-import-color-megaterrain"></a>
 
 A megaterrain texture, also known as a color map, is a texture that covers part of or the entire terrain\. This texture is visible from a distance and presents sweeping vistas\. As the camera moves closer to the terrain, the megaterrain texture is replaced by more detailed terrain textures\.

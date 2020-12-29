@@ -1,3 +1,7 @@
+description: ' Specify resource types in &cloud; for &ALYlong;. '
+slug: cloud-canvas-cgf-adding-aws-resources-resource-type-specification
+title: Resource Type Specification
+---
 # Resource Type Specification<a name="cloud-canvas-cgf-adding-aws-resources-resource-type-specification"></a>
 
 Resource types are specified in a Cloud Canvas `project-template.json` file\. For types that Cloud Canvas natively supports, the file is located at `Gems\CloudGemFramework\version\AWS\project-template.json`\. The existing resource is named `CoreResourceTypes`\.

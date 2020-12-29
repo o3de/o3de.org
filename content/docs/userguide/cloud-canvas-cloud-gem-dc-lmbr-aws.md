@@ -1,3 +1,7 @@
+description: ' Use the lmbr_aws CLI to manage dynamic content for your &ALYlong; game. '
+slug: cloud-canvas-cloud-gem-dc-lmbr-aws
+title: Using the Dynamic Content Command Line
+---
 # Using the Dynamic Content Command Line<a name="cloud-canvas-cloud-gem-dc-lmbr-aws"></a>
 
 When you enable the Dynamic Content Cloud Gem, associated commands become available in the `lmbr_aws` CLI\. You can use these commands to update dynamic content and perform operations on manifest files and buckets\.

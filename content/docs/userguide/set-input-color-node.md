@@ -1,3 +1,8 @@
+description: ' Use the Set Input Color node in the &ALYlong; &script-canvas; editor
+  to set the value for a procedural material input parameter as a color. '
+slug: set-input-color-node
+title: Set Input Color
+---
 # Set Input Color<a name="set-input-color-node"></a>
 
 Sets the value of an input parameter as a color\. The color channels are assumed to be floating point, including an alpha channel\. Use this node with the `Float4` substance data type\. 
@@ -10,7 +15,7 @@ If the input parameter is an `integer` type, the numbers that you specify are ro
 + [Inputs](#set-input-color-node-input)
 + [Outputs](#set-input-color-node-output)
 
-![\[SetInputColor sets the color value for a procedural material input parameter.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-color-node.png)
+![\[SetInputColor sets the color value for a procedural material input parameter.\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-color-node.png)
 
 ## Inputs<a name="set-input-color-node-input"></a>
 

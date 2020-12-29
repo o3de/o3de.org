@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s &ui-canvas-editor; to create and customize various
+  user interface elements and components such as menus, buttons, and heads-up displays. '
+slug: ui-editor-using
+title: Using the &ui-canvas-editor;
+---
 # Using the UI Editor<a name="ui-editor-using"></a>
 
 You can use the **UI Editor** to create, customize, and animate various game user interface elements and components such as menus, buttons, and heads\-up displays \(HUDs\)\.
@@ -22,7 +27,7 @@ You can tear away and redock the **Hierarchy** pane, the **Properties** pane, th
 **To open the UI Editor**
 + In Lumberyard Editor, choose **Tools** and then **UI Editor**\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-using1.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-using1.png)
 
 **Topics**
 + [Toolbar](ui-editor-toolbar.md)

@@ -1,3 +1,8 @@
+description: ' Use &lighting-tool; settings to create dawn and dusk effects for your
+  &ALYlong; environment. '
+slug: sky-tod-params
+title: Setting Dawn and Dusk Effects
+---
 # Setting Dawn and Dusk Effects<a name="sky-tod-params"></a>
 
 You can simulate the changing lighting effects that are caused by the sun moving across a dynamic sky\. You can set sunrise time, duration of dawn, sunset time, duration of dusk, current time, and the path of the sun\.

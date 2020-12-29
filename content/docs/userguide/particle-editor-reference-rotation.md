@@ -1,8 +1,13 @@
+description: ' Use the Rotation attribute in the &ALYlong; &particle-editor; to control
+  the rotation of the particle. '
+slug: particle-editor-reference-rotation
+title: Rotation Attribute
+---
 # Rotation Attribute<a name="particle-editor-reference-rotation"></a>
 
 In the **Rotation** attribute, specify how to control the particle's rotation\.
 
-![\[Rotation attributes in the Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/particles/particle-editor-rotation.png)
+![\[Rotation attributes in the Particle Editor.\]](/images/particles/particle-editor-rotation.png)
 
 
 **Rotation Attribute Parameters**  

@@ -1,3 +1,8 @@
+description: ' Use &ALYlong;''s physically-based rendering shaders to create screen
+  effects for your game project. '
+slug: rendering-graphics-screen-effects-intro
+title: Create screen effects
+---
 # Create screen effects<a name="rendering-graphics-screen-effects-intro"></a>
 
 Lumberyard's rendering technology starts with a modern, physically\-based shading core that renders materials based on real world physical parameters \(such as base color, metallicity, smoothness, and specularity\), allowing you to achieve realistic results using the same physically\-based parameters used in the highest end film rendering pipelines\.

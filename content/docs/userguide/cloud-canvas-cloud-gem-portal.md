@@ -1,3 +1,7 @@
+description: ' Use a &cgp; to manage the data in &AWS; for your game. '
+slug: cloud-canvas-cloud-gem-portal
+title: '&cgp;'
+---
 # Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal"></a>
 
 
@@ -13,7 +17,7 @@ A [cloud gem](cloud-canvas-overview-cloud-gems.md) is a gem in Lumberyard whose 
 
 Cloud gem portals use Amazon Web Services to implement their functionality, as shown in the following diagram\.
 
-![\[Understand the cloud gem workflow in Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-portal.png)
+![\[Understand the cloud gem workflow in Lumberyard.\]](/images/cloud_canvas/cloud-canvas-cloud-gem-portal.png)
 
 [Amazon S3](https://aws.amazon.com/s3/) stores a Cloud Gem Portal as a web application\. [AWS Lambda](https://aws.amazon.com/lambda/) functions implement the required server\-side logic\. JavaScript code that runs in the web browser accesses the Lambda functions through the [Amazon API Gateway](https://aws.amazon.com/api-gateway/)\. The configuration for the API Gateway is handled by the Cloud Canvas [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md)\.
 

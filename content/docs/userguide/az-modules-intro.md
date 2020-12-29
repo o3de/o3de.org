@@ -1,3 +1,7 @@
+description: ' Introduces &ALY; AZ modules and compares them with legacy modules. '
+slug: az-modules-intro
+title: Using AZ Modules to Initialize Gems
+---
 # Using AZ Modules to Initialize Gems<a name="az-modules-intro"></a>
 
 AZ modules are code libraries designed to plug into Lumberyard games and tools\. An AZ module is a collection of C\+\+ code built as a static or dynamic library \(`.lib` or `.dll` file\) that implements specific initialization functions\. When a Lumberyard application starts, it loads each module and calls these initialization functions\. These initialization functions allow the module to connect to core technologies such as reflection, serialization, [event buses](ebus-intro.md), and the [Working with component entities](component-intro.md)\.

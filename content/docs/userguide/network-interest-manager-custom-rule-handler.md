@@ -1,3 +1,8 @@
+description: ' Write your own interest manager rule handlers for networked games in
+  &ALYlong;. '
+slug: network-interest-manager-custom-rule-handler
+title: Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C++
+---
 # Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+<a name="network-interest-manager-custom-rule-handler"></a>
 
 You can freely extend the GridMate interest manager system with your own logic\. To create a custom rule handler, inherit and implement the `GridMate::BaseRulesHandler` C\+\+ interface\. The following snippet shows the code for the `BaseRulesHandler` class\.

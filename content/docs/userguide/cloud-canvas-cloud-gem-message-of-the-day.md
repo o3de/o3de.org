@@ -1,3 +1,8 @@
+description: ' Use the Message of the Day Cloud Gem to send scheduled messages to
+  the users of your &ALYlong; game. '
+slug: cloud-canvas-cloud-gem-message-of-the-day
+title: Message Of The Day Cloud Gem Portal
+---
 # Message Of The Day Cloud Gem Portal<a name="cloud-canvas-cloud-gem-message-of-the-day"></a>
 
 **Topics**
@@ -25,7 +30,7 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-sy
 **To customize the Message of the Day Cloud Gem**
 
 1. In the Cloud Gem Portal, click **Message of the day**\.  
-![\[Message of the day\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-mod-2.png)
+![\[Message of the day\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-2.png)
 
 1. Click **Add Message of the Day** to create a new message\.
 
@@ -34,10 +39,10 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-sy
    + For **Scheduling**, clear the **No Start** and/or **No End** check boxes and specify the **Start** and/or **End** time during which players see the message\. Currently, all times are in UTC\.** **The message is shown to players that have a game clock that is between –12 hours or \+12 hours of the set UTC time\.
    + To make the message permanent, specify both **No Start** and **No End**\.
    + If you have more than one message, you can use the **Priority** option to specify the priority of each\. By default, 0 is the highest priority\. The game client determines how to use the priority value\. If you have only one active message, the priority has no effect\.  
-![\[Add message\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-mod-3.png)
+![\[Add message\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-3.png)
 
 1. Click **Save**\. The portal shows your new message in the **Active** category\.  
-![\[Message categories\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-canvas-cloud-gem-mod-4.png)
+![\[Message categories\]](/images/cloud_canvas/cloud-canvas-cloud-gem-mod-4.png)
 
    The message of the day dashboard has three categories: **Active Messages**, **Planned Messages**, and **Expired Messages**\.
    + **Active Messages** – The currently active messages that are returned by the game client\.

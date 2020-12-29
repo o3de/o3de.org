@@ -1,3 +1,8 @@
+description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; editor
+  to return a material''s Vector3 parameter value for the specified entity. '
+slug: material-owner-get-param-vector3-node
+title: Get Param Vector3
+---
 # Get Param Vector3<a name="material-owner-get-param-vector3-node"></a>
 
 Returns a material's **Vector3** parameter value for the specified entity\.
@@ -6,7 +11,7 @@ Returns a material's **Vector3** parameter value for the specified entity\.
 + [Inputs](#material-owner-get-param-vector3-node-input)
 + [Outputs](#material-owner-get-param-vector3-node-output)
 
-![\[getparamvector3node, getparamvector3\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-material-owner-node.png)
+![\[getparamvector3node, getparamvector3\]](/images/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-material-owner-node.png)
 
 ## Inputs<a name="material-owner-get-param-vector3-node-input"></a>
 

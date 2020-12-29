@@ -1,3 +1,8 @@
+description: ' Use the console variable node to use and animate console variables
+  in a track view sequence of a &ALY; game. '
+slug: cinematics-track-view-nodes-cvar
+title: Console Variable Node
+---
 # Console Variable Node<a name="cinematics-track-view-nodes-cvar"></a>
 
 Use the **Console Variable** node to use and animate console variables in a track view sequence\.

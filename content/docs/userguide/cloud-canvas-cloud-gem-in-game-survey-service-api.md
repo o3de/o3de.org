@@ -1,3 +1,7 @@
+description: ' Learn to use the &cloud; In-Game Survey Cloud Gem API in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-in-game-survey-service-api
+title: In-Game Survey Cloud Gem Service API Reference
+---
 # In\-Game Survey Cloud Gem Service API Reference<a name="cloud-canvas-cloud-gem-in-game-survey-service-api"></a>
 
 You can use API operations on the Cloud Canvas in\-game survey service to manage survey, question, answer submission, and metadata operations\. Requests that succeed return an HTTP 200 response\.

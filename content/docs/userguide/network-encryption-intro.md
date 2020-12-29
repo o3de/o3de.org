@@ -1,3 +1,8 @@
+description: ' Encrypt traffic among clients and servers in a GridMate session in
+  &ALYlong;. '
+slug: network-encryption-intro
+title: Using Encryption
+---
 # Using Encryption<a name="network-encryption-intro"></a>
 
 GridMate uses the [OpenSSL](https://www.openssl.org/) implementation of [Datagram Transport Layer Security](https://tools.ietf.org/html/rfc6347) \(DTLS\) to support encryption of all UDP traffic sent between clients and servers\. 

@@ -1,3 +1,8 @@
+description: ' Use dynamic components together with the layout components and scroll
+  box components to display dynamic content in a game UI in &ALY;. '
+slug: ui-editor-components-dynamic
+title: Dynamic Components
+---
 # Dynamic Components<a name="ui-editor-components-dynamic"></a>
 
 Dynamic components work together with [ Layout](ui-editor-components-layout.md) components and the [Scroll Box](ui-editor-components-scrollbox.md) component to display dynamic content in the user interface\.
@@ -10,7 +15,7 @@ To use the **DynamicLayout** component, you place it on an element that also has
 
 The layout element \(1\) dynamically resizes to fit its child elements\. The first child \(2\) of the layout element acts as the prototype element\. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-dynamic-child.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-dynamic-child.png)
 
 The automatic resizing of the layout element depends on the layout type\. 
 
@@ -18,7 +23,7 @@ For [**LayoutColumn**](ui-editor-components-layout-column.md) and [**LayoutRow**
 
 For a [**LayoutGrid**](ui-editor-components-layout-grid.md) element, the cell size of the **LayoutGrid** component determines the size of the child elements\. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings\. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row\. If set to **vertical**, the initial height is used to determine how many children fit in each column\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
 
 **To use a dynamic layout component**
 

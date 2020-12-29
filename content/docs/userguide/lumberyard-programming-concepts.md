@@ -1,3 +1,7 @@
+description: ' Learn the key concepts and discover resources for programming in &ALYlong;. '
+slug: lumberyard-programming-concepts
+title: '&ALY; Programming Concepts and Resources'
+---
 # Lumberyard Programming Concepts and Resources<a name="lumberyard-programming-concepts"></a>
 
 This topic provides brief explanations of some important Lumberyard programming concepts and resources\. More information links are provided\.

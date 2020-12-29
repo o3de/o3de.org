@@ -1,3 +1,8 @@
+description: ' Use the Screen Fader node to fade the screen in and out in a &ALYlong;
+  track view sequence. '
+slug: cinematics-track-view-nodes-screen-fader
+title: Screen Fader Node
+---
 # Screen Fader Node<a name="cinematics-track-view-nodes-screen-fader"></a>
 
 Use the **Screen Fader** node to fade the screen in and out in a scene\.

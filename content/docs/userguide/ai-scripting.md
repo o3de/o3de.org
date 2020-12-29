@@ -1,3 +1,7 @@
+description: ' Learn more about AI scripting in &ALYlong;. '
+slug: ai-scripting
+title: AI Scripting
+---
 # AI Scripting<a name="ai-scripting"></a>
 
 

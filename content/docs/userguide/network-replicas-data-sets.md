@@ -1,3 +1,7 @@
+description: ' Use DataSet objects in &ALY; to synchronize a state across the network. '
+slug: network-replicas-data-sets
+title: Datasets
+---
 # Datasets<a name="network-replicas-data-sets"></a>
 
 You can use `DataSet` objects to synchronize the state of a session across the network\. When a value in the dataset changes, the updates are propagated automatically\. Datasets can be of any type, but they must support the assignment and comparison operators\. Your `DataSet` declaration can specify a custom marshaler\. If you do not specify a marshaler, the `DataSet` object uses `GridMate::Marshaler<T>`\.

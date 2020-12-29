@@ -1,3 +1,7 @@
+description: ' Describes how track file access during game runtime in &ALYlong;. '
+slug: tracking-file-access
+title: Tracking File Access
+---
 # Tracking File Access<a name="tracking-file-access"></a>
 
 It's possible to track invalid file reads that occur during game run time\. The error message `Invalid File Access` occurs when an attempt is made to read or open files from a thread that is not the streaming thread\. These file access operations can cause stalls that can be quite severe\.

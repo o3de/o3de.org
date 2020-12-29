@@ -1,3 +1,8 @@
+description: ' Learn about the relationship between &script-canvas; and the behavior
+  context in &ALYlong;. '
+slug: script-canvas-behavior-context
+title: '&script-canvas; and the Behavior Context'
+---
 # Script Canvas and the Behavior Context<a name="script-canvas-behavior-context"></a>
 
 **Topics**
@@ -10,7 +15,7 @@ You can use Script Canvas to expose runtime code in a visual authoring environme
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Amazon Lumberyard\.
 
-![\[Script Canvas code architecture\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-code-architecture-1.png)
+![\[Script Canvas code architecture\]](/images/scripting/script-canvas/script-canvas-code-architecture-1.png)
 
 The core Script Canvas code is built as a static library that is linked into the dependent gem and editor gem\. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph\. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs\.
 
@@ -57,11 +62,11 @@ behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestB
 
 When Script Canvas examines the behavior context, it finds these bindings and automatically generates the corresponding nodes for you\.
 
-![\[Light component nodes in Script Canvas\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-1.png)
+![\[Light component nodes in Script Canvas\]](/images/scripting/script-canvas/script-canvas-behavior-context-1.png)
 
 You use EBuses to communicate with an entity's components\. To do so, you need an address\. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`\. For this reason, all nodes from a component EBus have an entry slot for an `EntityID`\. The presence of `Self` in the `EntityID` field refers to the `EntityID` of the entity that owns the Script Canvas graph\. However, this ID can be assigned to another entity, or even changed to an invalid entity ID\.
 
-![\[Self EntityID\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-2.png)
+![\[Self EntityID\]](/images/scripting/script-canvas/script-canvas-behavior-context-2.png)
 
 The other bus that the Light component reflects to the behavior context is `LightComponentNotificationBus`\. The following source code is also in the file `dev\Gems\LmbrCentral\Code\Source\Rendering\LightComponent.cpp`\.
 
@@ -96,7 +101,7 @@ public:
 
 Script Canvas has a node that gives you access to all the events for EBus\. You can handle the events that you are interested in\.
 
-![\[Light notification bus\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-3.png)
+![\[Light notification bus\]](/images/scripting/script-canvas/script-canvas-behavior-context-3.png)
 
 ## Objects: The PhysicsComponent Example<a name="script-canvas-behavior-context-physicscomponent"></a>
 
@@ -124,11 +129,11 @@ During the preview release of Script Canvas, properties must provide both getter
 
 Most object variables are set as a result of an event\. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event\.
 
-![\[Collision variable\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-4.png)
+![\[Collision variable\]](/images/scripting/script-canvas/script-canvas-behavior-context-4.png)
 
 You can use the following graph to set the collision variable:
 
-![\[Setting the Collision variable\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-5.png)
+![\[Setting the Collision variable\]](/images/scripting/script-canvas/script-canvas-behavior-context-5.png)
 
 ## Displaying EBus Event Parameter Names in Script Canvas Nodes<a name="script-canvas-behavior-context-parameter-names"></a>
 
@@ -136,7 +141,7 @@ To display parameter names correctly for your EBus events, ensure that you speci
 
 If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
 
-![\[Default parameter names displayed\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
+![\[Default parameter names displayed\]](/images/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
 
 The following code produced the event node in the image:
 
@@ -166,7 +171,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 
 In the node palette window, the parameter names appear as specified:
 
-![\[Specified parameter names displayed\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
+![\[Specified parameter names displayed\]](/images/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
 
 **Alternate Syntax**  
 You can also use the following alternate syntax to create parameter override instances before passing them to the `Event` function:

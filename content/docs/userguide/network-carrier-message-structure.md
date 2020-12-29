@@ -1,3 +1,8 @@
+description: ' Learn about the Carrier message structure in GridMate, &ALYlong;''s
+  networking system. '
+slug: network-carrier-message-structure
+title: Carrier Message Structure
+---
 # Carrier Message Structure<a name="network-carrier-message-structure"></a>
 
 This topic describes the message structure used by the `CarrierImpl` networking class found in the `Carrier.cpp` file in the GridMate source code\. 

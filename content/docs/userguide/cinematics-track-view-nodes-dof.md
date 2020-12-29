@@ -1,3 +1,8 @@
+description: ' Use the Depth of Field node in &ALYlong;''s &trackview-editor; to add
+  realism to scenes by limiting the area that is in focus. '
+slug: cinematics-track-view-nodes-dof
+title: Adding a Depth of Field Node
+---
 # Adding a Depth of Field Node<a name="cinematics-track-view-nodes-dof"></a>
 
 You can use the **Depth of Field** \(DOF\) node to add realism to scenes to simulate the way a real\-world camera works\. You can use a broad depth of field to focus on the entire scene, or use a shallow depth of field to have sharp focus only on objects that are a specific distance from the camera\.

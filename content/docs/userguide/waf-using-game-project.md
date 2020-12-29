@@ -1,3 +1,7 @@
+description: ' Add a game project to the &ALYlong; Waf build system. '
+slug: waf-using-game-project
+title: Adding a Game Project
+---
 # Adding a Game Project<a name="waf-using-game-project"></a>
 
 The simplest and recommended method to add a game project to the Lumberyard Waf build system is to use the Project Configurator\. The Project Configurator is a standalone application for telling the Waf build system which game projects and assets to include in a game build\. For more information, see [Creating Lumberyard projects](configurator-intro.md)\.
@@ -123,7 +127,7 @@ The final step is to update enabled\_game\_projects to include or exclusively se
   ```
 
   Click **Game Projects** in the Lumberyard Waf window, and select your new project\. You can select more than one project\.  
-![\[Use the Lumberyard WAF GUI to select your new project.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/waf/waf-using-game-project-waf-gui.png)
+![\[Use the Lumberyard WAF GUI to select your new project.\]](/images/waf/waf-using-game-project-waf-gui.png)
 + Build the project with the following command for your version of Visual Studio\. Use `--enabled-game-projects=MyGame` to override every build command\. This does not include the project in the generated solution, but it sets specific game projects to build during the build commands\.
 
   ```

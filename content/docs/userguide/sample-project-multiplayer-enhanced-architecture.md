@@ -1,3 +1,8 @@
+description: ' Get a conceptual introduction to the architecture of the &ALYlong;
+  Multiplayer sample game. '
+slug: sample-project-multiplayer-enhanced-architecture
+title: Multiplayer Sample Gameplay Architecture
+---
 # Multiplayer Sample Gameplay Architecture<a name="sample-project-multiplayer-enhanced-architecture"></a>
 
 The Multiplayer sample consists of five main entities and an equal number of supporting gameplay systems\. The following overview provides a conceptual introduction to the architecture of the Multiplayer sample\.

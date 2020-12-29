@@ -1,3 +1,8 @@
+description: ' Use the right texture map with the type of vegetation you add to &ALY;
+  for best results. '
+slug: terrain-vegetation-trees
+title: Vegetation Texture Mapping
+---
 # Vegetation Texture Mapping<a name="terrain-vegetation-trees"></a>
 
 Vegetation gets its appearance from texture mapping\. Trees use two different sets of textures maps, one for leaves and branches and one for the trunk\. Normal and specular maps can have a gloss map in the alpha channel\.

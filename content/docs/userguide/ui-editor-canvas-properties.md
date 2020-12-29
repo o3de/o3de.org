@@ -1,8 +1,12 @@
+description: ' Set canvas properties for UI canvases in &ui-editor; in &ALYlong;. '
+slug: ui-editor-canvas-properties
+title: Configuring Canvas Properties
+---
 # Configuring Canvas Properties<a name="ui-editor-canvas-properties"></a>
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/game_ui_editor/ui-editor-canvas-properties.png)
+![\[Image NOT FOUND\]](/images/game_ui_editor/ui-editor-canvas-properties.png)
 
 ## Rendering Properties<a name="rendering-properties"></a>
 

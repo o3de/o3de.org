@@ -1,3 +1,8 @@
+description: ' Use the interpolation options for the Transform component in &ALYlong;
+  to smooth movement of entities under poor network conditions. '
+slug: network-transform-component-interpolation
+title: Transform Component Interpolation
+---
 # Transform Component Interpolation<a name="network-transform-component-interpolation"></a>
 
 The **[Transform](component-transform.md)** component supports local interpolation of its position and rotation values when it is synchronized over the network\.
@@ -6,7 +11,7 @@ You can use the interpolation of transform values to smooth changes in the movem
 
 In Lumberyard Editor, you can use the Entity Inspector to alter these settings in the Transform component's **Network Sync** section\.
 
-![\[Network Sync options in the Entity Inspector for the Transform component\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/networking/network-transform-component-interpolation-1.png)
+![\[Network Sync options in the Entity Inspector for the Transform component\]](/images/networking/network-transform-component-interpolation-1.png)
 
 To have your entity synchronized across the network, your entity must have the Network Binding component, and you must enable **Sync to replicas**\. The interpolation mode settings have no effect if your entity does not have the network binding component\.
 

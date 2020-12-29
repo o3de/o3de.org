@@ -1,3 +1,8 @@
+description: ' Use the Audio Trigger component to set up play and stop triggers in
+  your game in &ALY;. '
+slug: component-audio-trigger
+title: Audio Trigger
+---
 # Audio Trigger<a name="component-audio-trigger"></a>
 
 The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](audio-default-controls.md) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.

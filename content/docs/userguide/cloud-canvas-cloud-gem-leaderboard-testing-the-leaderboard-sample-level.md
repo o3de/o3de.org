@@ -1,3 +1,7 @@
+description: ' Test the Leaderboard Sample Level in &ALYlong;. '
+slug: cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level
+title: Testing the Leaderboard Sample Level
+---
 # Testing the Leaderboard Sample Level<a name="cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level"></a>
 
 The `CloudGemLeaderboard` Cloud Gem is included in the LeaderboardSample level, which is located in the `dev\CloudGemSamples\Levels\LeaderboardSample` directory\. The LeaderboardSample level contains a UI canvas with multiple buttons that you can use to test the Leaderboard system\.
@@ -12,7 +16,7 @@ By default, the Lambda function that processes score records is on a 10\-minute 
 1. Open the Cloud Gem Portal \(CGP\) and add a statistic to the leaderboard\. This creates a description of a statistic to track \(if no definitions exist, you cannot submit a score\)\. The default properties in the test level expect a statistic called `score`\.
 
 1. Press **Ctrl\+G** to start the level\. The test user interface appears\.  
-![\[Leaderboard sample\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cloud_canvas/cloud-gem-leaderboard-testing-ui.png)
+![\[Leaderboard sample\]](/images/cloud_canvas/cloud-gem-leaderboard-testing-ui.png)
 
 1. Click **Submit Batch** to populate the leaderboard with data\. You can click the button multiple times to simulate a larger population\. Messages in the editor logs show whether the submissions were successful\.
 
