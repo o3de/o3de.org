@@ -1,3 +1,8 @@
+---
+description: ' Build a simple game to familiarize yourself with Amazon Lumberyard. '
+slug: wg-getstarted
+title: Get started with Amazon Lumberyard
+---
 # Get started with Amazon Lumberyard<a name="wg-getstarted"></a>
 
 
@@ -52,7 +57,7 @@ Open the ZIP file and place the folder and its contents under the \\dev director
 
 ## About the tutorial game<a name="about-the-tutorial-game"></a>
 
-![\[coop logo\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/coop_logo.png)
+![\[coop logo\]](/images/welcomeguide/coop_logo.png)
 
 In this series of tutorials, you’ll develop a game we called "Flyin' the Coop"\. \(You can name it whatever you like\! Tech writers only *think* they’re clever\.\) This is a simple game where you control a nameless, lonely chicken as they attempt to escape the coop that imprisons them\. Across each chapter, you’ll develop a little experience with the different features of Lumberyard as they related to specific game development tasks, in an order that builds upon prior learning\. Each chapter is relatively short and is designed to help you get over that first hurdle when working with a new tool: getting comfortable with the different features, tools, terms, and workflows\.
 

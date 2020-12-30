@@ -1,3 +1,8 @@
+---
+description: ' Learn about the tools used to create content in Amazon Lumberyard. '
+slug: wg-tools
+title: Tools available in Amazon Lumberyard
+---
 # Tools available in Amazon Lumberyard<a name="wg-tools"></a>
 
 The default **Lumberyard Editor** layout contains tools common to most development workflows, but there are a lot of additional tools available\. Depending on your development role, these may not always be the tools you need \- or even the right tools for your job\. The **Lumberyard Editor** supports custom layout options so that you can add all of the tools you need to use most frequently right where you need them\. Some tools that have multiple panes, such as the **Animation Editor**, can have their own custom and preset layouts\.
@@ -6,7 +11,7 @@ These tools are available in the **Tools** menu of the **Lumberyard Editor**\.
 
 ## Animation Editor<a name="tool-animation-editor"></a>
 
-![\[Lumberyard Animation Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-animation-editor-1.25.png)
+![\[Lumberyard Animation Editor.\]](/images/welcomeguide/ui-animation-editor-1.25.png)
 
 With **Animation Editor**, build animated *behaviors* for your *actors*\.
 
@@ -14,7 +19,7 @@ Use the Animation Editor to build animation loops and set up smooth transitions 
 
 ## FBX Settings<a name="tool-fbx-settings-editor"></a>
 
-![\[Lumberyard FBX Settings.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-fbx-settings-editor-1.25.png)
+![\[Lumberyard FBX Settings.\]](/images/welcomeguide/ui-fbx-settings-editor-1.25.png)
 
 The **FBX Settings** tool converts static `.fbx` meshes, actors, PhysX meshes, and motions into Lumberyard assets\.
 
@@ -24,7 +29,7 @@ To customize `.fbx` settings, find the asset in **Asset Browser**\. Right\-click
 
 ## Texture Settings Editor<a name="tool-texture-settings-editor"></a>
 
-![\[Lumberyard Texture Settings Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-texture-settings-editor-1.25.png)
+![\[Lumberyard Texture Settings Editor.\]](/images/welcomeguide/ui-texture-settings-editor-1.25.png)
 
  **Texture Settings Editor** converts image files into Lumberyard assets\.
 
@@ -42,7 +47,7 @@ To customize the texture settings, find the image asset in **Asset Browser**\. R
 
 ## Asset Editor<a name="tool-asset-editor"></a>
 
-![\[Lumberyard Asset Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-asset-editor-1.25.png)
+![\[Lumberyard Asset Editor.\]](/images/welcomeguide/ui-asset-editor-1.25.png)
 
 Create and edit Lumberyard\-specific assets in **Asset Editor**\.
 
@@ -50,7 +55,7 @@ Lumberyard has a small number of specialized assets such as *script events* that
 
 ## Level Inspector<a name="tool-level-inspector"></a>
 
-![\[Lumberyard Level Inspector.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-level-inspector-1.25.png)
+![\[Lumberyard Level Inspector.\]](/images/welcomeguide/ui-level-inspector-1.25.png)
 
 Add and modify level components in **Level Inspector**\.
 
@@ -58,7 +63,7 @@ Add and modify level components in **Level Inspector**\.
 
 ## Material Editor<a name="tool-material-editor"></a>
 
-![\[Lumberyard Material Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-material-editor-1.25.png)
+![\[Lumberyard Material Editor.\]](/images/welcomeguide/ui-material-editor-1.25.png)
 
 Create and edit the appearance of the entities in your project with **Material Editor**\.
 
@@ -66,7 +71,7 @@ A material has a set of properties that determines how its surface reacts to phy
 
 ## Particle Editor<a name="tool-particle-editor"></a>
 
-![\[Lumberyard Particle Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-particle-editor-1.25.png)
+![\[Lumberyard Particle Editor.\]](/images/welcomeguide/ui-particle-editor-1.25.png)
 
 Build layered, dynamic visual effects with **Particle Editor**\.
 
@@ -74,7 +79,7 @@ Lumberyard includes an advanced particle effects system that you can use to simu
 
 ## PhysX Configuration<a name="tool-physx-configuration"></a>
 
-![\[Lumberyard PhysX Configuration.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-physx-configuration-1.25.png)
+![\[Lumberyard PhysX Configuration.\]](/images/welcomeguide/ui-physx-configuration-1.25.png)
 
 Set the global PhysX properties for your project with **PhysX Configuration**\.
 
@@ -82,7 +87,7 @@ Lumberyard integrates NVIDIA PhysX for real\-time physics simulation\. With **Ph
 
 ## Script Canvas<a name="tool-script-canvas"></a>
 
-![\[Lumberyard Script Canvas.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-script-canvas-1.25.png)
+![\[Lumberyard Script Canvas.\]](/images/welcomeguide/ui-script-canvas-1.25.png)
 
 Program logic and behaviors visually with **Script Canvas**\.
 
@@ -90,7 +95,7 @@ Program logic and behaviors visually with **Script Canvas**\.
 
 ## Terrain Editor<a name="tool-terrain-editor"></a>
 
-![\[Lumberyard Terrain Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-terrain-editor-1.25.png)
+![\[Lumberyard Terrain Editor.\]](/images/welcomeguide/ui-terrain-editor-1.25.png)
 
 Create terrain with **Terrain Editor**\.
 
@@ -98,7 +103,7 @@ With **Terrain Editor**, you can paint heightmaps to create peaks and valleys in
 
 ## Terrain Tool<a name="tool-terrain-tool"></a>
 
-![\[Lumberyard Terrain Tool.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-terrain-tool-1.25.png)
+![\[Lumberyard Terrain Tool.\]](/images/welcomeguide/ui-terrain-tool-1.25.png)
 
 Add fine detail to terrain with **Terrain Tool**\.
 
@@ -106,7 +111,7 @@ With **Terrain Tool**, you can sculpt accurate details on your terrain and paint
 
 ## Track View<a name="tool-track-view"></a>
 
-![\[Lumberyard Track View.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-track-view-1.25.png)
+![\[Lumberyard Track View.\]](/images/welcomeguide/ui-track-view-1.25.png)
 
 Create cinematic sequences with **Track View**\.
 
@@ -114,7 +119,7 @@ Create cinematic sequences with **Track View**\.
 
 ## UI Editor<a name="tool-ui-editor"></a>
 
-![\[Lumberyard UI Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-ui-editor-1.25.png)
+![\[Lumberyard UI Editor.\]](/images/welcomeguide/ui-ui-editor-1.25.png)
 
 Design dynamic user interfaces with **UI Editor**\.
 
@@ -122,7 +127,7 @@ You can use **UI Editor** to create, customize, and animate various game user in
 
 ## Audio Controls Editor<a name="tool-audio-controls-editor"></a>
 
-![\[Lumberyard Audio Controls Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-audio-controls-editor-1.25.png)
+![\[Lumberyard Audio Controls Editor.\]](/images/welcomeguide/ui-audio-controls-editor-1.25.png)
 
 Map audio controls in **Audio Controls Editor**\.
 
@@ -130,7 +135,7 @@ Your project communicates all actions, events, and parameters to the audio syste
 
 ## Console Variables Editor<a name="tool-console-variables"></a>
 
-![\[Lumberyard Console Variables Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-console-variables-1.25.png)
+![\[Lumberyard Console Variables Editor.\]](/images/welcomeguide/ui-console-variables-1.25.png)
 
 Find and set console variables in **Console Variables Editor**\.
 
@@ -138,13 +143,13 @@ Lumberyard has many console variables,or *CVARs*, that control all aspects of th
 
 ## Lens Flare Editor<a name="tool-lens-flare-editor"></a>
 
-![\[Lumberyard Lens Flare Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-lens-flare-editor-1.25.png)
+![\[Lumberyard Lens Flare Editor.\]](/images/welcomeguide/ui-lens-flare-editor-1.25.png)
 
 Design unique lens flare effects for specific lights in **Lens Flare Editor**\.
 
 ## Sun Trajectory Tool<a name="tool-sun-trajectory-tool"></a>
 
-![\[Lumberyard Sun Trajectory Tool.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-sun-trajectory-tool-1.25.png)
+![\[Lumberyard Sun Trajectory Tool.\]](/images/welcomeguide/ui-sun-trajectory-tool-1.25.png)
 
 Create dynamic time\-of\-day lighting with the **Sun Trajectory Tool**\.
 
@@ -152,7 +157,7 @@ With **Sun Trajectory Tool**, you define the current time, sunrise and sunset, a
 
 ## Terrain Texture Layers<a name="tool-terrain-texture-layers"></a>
 
-![\[Lumberyard Terrain Texture Layers.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-terrain-texture-layers-1.25.png)
+![\[Lumberyard Terrain Texture Layers.\]](/images/welcomeguide/ui-terrain-texture-layers-1.25.png)
 
 Build realistic natural terrain with **Terrain Texture Layers**\.
 
@@ -160,7 +165,7 @@ Texture layers are used to create natural\-looking terrain that transitions betw
 
 ## Time of Day Editor<a name="tool-time-of-day"></a>
 
-![\[Lumberyard Time of Day Editor.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-time-of-day-editor-1.25.png)
+![\[Lumberyard Time of Day Editor.\]](/images/welcomeguide/ui-time-of-day-editor-1.25.png)
 
 Create natural lighting and atmosphere transitions over time with **Time of Day Editor**\.
 

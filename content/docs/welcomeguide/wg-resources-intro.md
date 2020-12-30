@@ -1,3 +1,8 @@
+---
+description: ' Amazon Lumberyard resources and links. '
+slug: wg-resources-intro
+title: Additional Lumberyard resources
+---
 # Additional Lumberyard resources<a name="wg-resources-intro"></a>
 
 After setting up Amazon Lumberyard, learn how to use the platform with our Getting Started video series\. This series covers all the basics of working with Lumberyard and is a terrific foundation for moving on to intermediate and advanced topics\.

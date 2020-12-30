@@ -1,3 +1,9 @@
+---
+description: ' Learn about Lumberyard assets and how to create a player character
+  slice from an entity and components. '
+slug: tutor-ch03-build-a-player-character
+title: 'Tutorial Three: Build a player character'
+---
 # Tutorial Three: Build a player character<a name="tutor-ch03-build-a-player-character"></a>
 
 In this tutorial, you will build a player character from various components and create a slice for your player character\. You will also learn about Lumberyard’s asset pipeline\.
@@ -10,13 +16,13 @@ If you like, you can follow this chapter in video \(2:48 minutes\) form:
 Begin this tutorial either with the level you created in [Tutorial Two: Create an entity with White Box](tutor-ch02-create-an-entity.md), or by opening `ch02_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
 1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
-![\[Lumberyard select default layout\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-default-layout-1.25.png)
+![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Create a player character entity\. In **Asset Browser** on the left side of the editor, find `ch03_chicken_start.fbx` in the **Actors** directory\. This asset was created in a third\-party application and saved as a `.fbx` file for import into Lumberyard\.   
-![\[Lumberyard actor in asset browser\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-chicken-start-actor-1.25.png)
+![\[Lumberyard actor in asset browser\]](/images/welcomeguide/ui-chicken-start-actor-1.25.png)
 
 1.  Click and drag `ch03_chicken_start.fbx` into the **Perspective** pane\. Drop it somewhere in front of the **feed\_locker** entity\. This creates an entity for the chicken player character from the `ch03_chicken_start.actor` asset\.   
-![\[Lumberyard drag actor to create entity\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/anim-entity-from-actor-1.25.gif)
+![\[Lumberyard drag actor to create entity\]](/images/welcomeguide/anim-entity-from-actor-1.25.gif)
 
 1.  Press the **Z** key to focus on the chicken entity, or use the mouse and keyboard navigation controls to get a good view of the chicken asset\. 
 
@@ -25,25 +31,25 @@ Begin this tutorial either with the level you created in [Tutorial Two: Create a
    1.  Right\-click `ch03_chicken_start.fbx` in **Asset Browser** and choose **Edit Settings** to view the **FBX Settings** for the chicken\. 
 
        **FBX Settings** should open to the **Actors** tab displaying one **Actor group**\. This group will output one actor asset from the `.fbx`\. The `.actor` asset contains meshes and a skeleton that are selected in the actor group\. The actor group is mostly set up\. You must make a couple of edits to import the chicken’s mohawk as a cloth object\.  
-![\[Lumberyard open FBX Settings\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-fbx-edit-settings-1.25.png)
+![\[Lumberyard open FBX Settings\]](/images/welcomeguide/ui-fbx-edit-settings-1.25.png)
 
    1.  In the `ch03_chicken_start` actor group, choose the **Hierarchy** button to the right of **Select base meshes**\. 
 
    1.  To import the mohawk mesh, in the **Select nodes** window, choose **chicken\_mohawk** from the list to add the mohawk mesh to the mesh group\. Choose the **Select** button to close the window\.   
-![\[Lumberyard add mesh to actor group\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-add-mohawk-mesh-1.25.png)
+![\[Lumberyard add mesh to actor group\]](/images/welcomeguide/ui-add-mohawk-mesh-1.25.png)
 
    1.  To add cloth data to the mohawk, in **FBX Settings** choose **Add Modifier** and select **Cloth** from the modifier list\.   
-![\[Lumberyard add cloth modifier\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-add-cloth-modifier-1.25.png)
+![\[Lumberyard add cloth modifier\]](/images/welcomeguide/ui-add-cloth-modifier-1.25.png)
 
    1.  In the cloth modifier, for **Select Cloth Mesh**, choose `RootNode.chicken.chicken_mohawk` to add the chicken’s mohawk as a cloth object\. 
 
    1.  In the cloth modifier, for **Cloth Inverse Masses** choose `Cd` from the list to use chicken\_mohawk’s vertex color stream to set the mass values for the cloth object\. The vertex colors applied to the chicken’s mohawk were pre\-painted in a 3rd\-party application\. Mass will be generated per vertex on the mohawk based on the red value contained in the `Cd` vertex color stream\. for more information on Cloth, see [Cloth Simulation](https://docs.aws.amazon.com/lumberyard/latest/userguide/tutorial-cloth-simulation.html)\.   
-![\[Lumberyard cloth modifier settings\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-cloth-modifier-settings-1.25.png)
+![\[Lumberyard cloth modifier settings\]](/images/welcomeguide/ui-cloth-modifier-settings-1.25.png)
 
    1.  Choose **Update** at the bottom of the **FBX Settings** window\. 
 
    1.  In the **Progress** window, choose **Ok**\. The window closes and the `.fbx` file is quickly processed with the new settings\. The mohawk mesh appears in **Perspective** on the chicken entity\.   
-![\[Lumberyard cloth mesh mohawk processed\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-chicken-mohawk-1.25.png)
+![\[Lumberyard cloth mesh mohawk processed\]](/images/welcomeguide/ui-chicken-mohawk-1.25.png)
 
    1.  Close the **FBX Settings** window\. 
 **Note**  
@@ -52,19 +58,19 @@ When you close the **FBX Settings** window, you might see a window stating there
 1.  In **Entity Outliner**, click the `ch03_chicken_start` entity to select it\. 
 
 1.  In **Entity Inspector** on the right of the editor, rename the entity\. Click in the field next to **Name** and enter `player_chicken`\.   
-![\[Lumberyard rename chicken entity\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-rename-chicken-entity-1.25.png)
+![\[Lumberyard rename chicken entity\]](/images/welcomeguide/ui-rename-chicken-entity-1.25.png)
 
 1.  The mohawk has been imported and has cloth data applied, but to get the mohawk to simulate as a cloth object at run\-time, you need to add a **Cloth** component to the `player_chicken` entity\. In **Entity Inspector**, choose **Add Component** to open the component list\. Enter `cl` in the search field to filter the list by name and choose **Cloth** from the filtered results to add a **Cloth** component\.   
-![\[Lumberyard add cloth component\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-add-cloth-component-1.25.png)
+![\[Lumberyard add cloth component\]](/images/welcomeguide/ui-add-cloth-component-1.25.png)
 
 1.  In the **Cloth** component that has been added to the entity, for **Mesh node**, choose `chicken_mohawk` from the list\.   
-![\[Lumberyard cloth component mesh node\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-cloth-component-mesh-node-1.25.png)
+![\[Lumberyard cloth component mesh node\]](/images/welcomeguide/ui-cloth-component-mesh-node-1.25.png)
 
 1.  Click the **Simulate** button in the bottom toolbar of the **Perspective** pane, or press **Control \+ P** to test the cloth simulation\. The chicken’s mohawk should flop over like cloth\. Press **Control \+ P** to exit simulation mode\.   
-![\[Lumberyard simulate mohawk as cloth\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/anim-cloth-simulate-1.25.gif)
+![\[Lumberyard simulate mohawk as cloth\]](/images/welcomeguide/anim-cloth-simulate-1.25.gif)
 
 1.  Create a slice from the `player_chicken` entity\. Right\-click the **player\_chicken** entity in **Entity Outliner**, and choose **Create slice…​**\. Save the entity as a `.slice` in the `Slices` directory as `player_chicken.slice`\. Slices are reusable and can be instanced, each instance having unique property settings\. You can create complex slices using collections of simple entities\.   
-![\[Lumberyard save chicken actor as a slice\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-save-actor-slice-1.25.png)
+![\[Lumberyard save chicken actor as a slice\]](/images/welcomeguide/ui-save-actor-slice-1.25.png)
 
 For extra credit, play with the settings in the **Cloth** component and test the simulation in **Perspective** to fine\-tune the mohawk behavior\. See the [Cloth](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-cloth.html) component documentation for more info\. Save your changes to the `player_chicken.slice`\.
 

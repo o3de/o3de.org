@@ -1,8 +1,15 @@
+---
+description: ' Amazon Lumberyard is a free, cross-platform, cloud-connected real-time
+  3D creation engine that you can use to build games, experiences, visualizations,
+  and applications. '
+slug: wg-welcome
+title: Welcome to Amazon Lumberyard
+---
 # Welcome to Amazon Lumberyard<a name="wg-welcome"></a>
 
 Amazon Lumberyard is a *free* high\-performance *3D engine* with a professional suite of tools, editors, and libraries that enable you to create captivating real\-time graphics, immersive experiences, awe\-inspiring virtual worlds, and dynamic visualizations\. Lumberyard brings the capabilities of Amazon Web Services and the community of Twitch to connect your ideas to players, customers, and viewers around the world\.
 
-![\[Landscape created with Amazon Lumberyard.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/wg-welcome-page-1.24.png)
+![\[Landscape created with Amazon Lumberyard.\]](/images/welcomeguide/wg-welcome-page-1.24.png)
 
 **What does "free" mean?**  
 Lumberyard is free\. There are no seat licenses, no site licenses, no subscriptions, no support contracts, no revenue share\. Just free\. If you choose to use AWS services in your project, you’ll be responsible for fees associated with those services\. Amazon Lumberyard is always free to use and you can customize the tools and source code to suit your needs\.

@@ -1,3 +1,9 @@
+---
+description: ' Learn how to configure a Lumberyard environment and install third-party
+  software with Amazon Lumberyard Setup Assistant. '
+slug: wg-setup-assistant
+title: Configuring your Amazon Lumberyard environment with Setup Assistant
+---
 # Configuring your Amazon Lumberyard environment with Setup Assistant<a name="wg-setup-assistant"></a>
 
 Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you’re continuing from [Installing Amazon Lumberyard](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
@@ -8,7 +14,7 @@ Lumberyard Setup Assistant performs several important functions:
 + Provides plugins for detected content applications such as Photoshop and Maya\.
 + Validates registry settings, paths, and libraries\.
 
-![\[Lumberyard Setup Assistant.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-sa-install-options-1.23.png)
+![\[Lumberyard Setup Assistant.\]](/images/welcomeguide/ui-sa-install-options-1.23.png)
 
 On first run, Lumberyard Setup Assistant presents two options, **Express Install** and **Custom Install**\. If you’re a content creator, such as a designer or artist, and won’t be compiling code, or if you want to jump right in and use the Lumberyard Editor and tools, select **Express Install**\. You can always revisit Setup Assistant to add development features\. If you’d like to set up Lumberyard for code development, select **Custom Install**\.
 
@@ -22,7 +28,7 @@ Some Setup Assistant options require the installation of third\-party software a
 With **Custom Install**, you specify how you would like to use Lumberyard\. Setup Assistant downloads third\-party software and validates that the environment is properly configured based on your choices\.
 
 1.  Custom installation begins with specifying how you intend to use Lumberyard\.   
-![\[Lumberyard Setup Assistant Get Started selection.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-sa-get-started-1.24.png)
+![\[Lumberyard Setup Assistant Get Started selection.\]](/images/welcomeguide/ui-sa-get-started-1.24.png)
 
 1.  Verify the **Path** is correct for your Lumberyard installation\. 
 
@@ -46,7 +52,7 @@ The version\(s\) of Visual Studio selected here will be enabled as build platfor
 1.  Once you are satisfied with your selections, choose **Next** to install required software and SDKs\. 
 
 1.  The **Install software** and **Install required SDKs** pages display a red icon if a requirement cannot be found and a green checkmark for installed requirements\. Missing optional software and SDKs display a yellow icon\. Follow the instructions on each page to install the required software and SDKS\.   
-![\[Lumberyard Setup Assistant install required sdks.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-sa-install-sdks-1.23.png)
+![\[Lumberyard Setup Assistant install required sdks.\]](/images/welcomeguide/ui-sa-install-sdks-1.23.png)
 **Note**  
 Ensure the **Third\-party path** on the **Install required SDKs** page is correct for your Lumberyard installation\.
 

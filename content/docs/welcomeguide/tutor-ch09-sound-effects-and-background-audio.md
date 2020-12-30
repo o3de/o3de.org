@@ -1,3 +1,8 @@
+---
+description: ' Learn how to add sound effects and background audio in Amazon Lumberyard. '
+slug: tutor-ch09-sound-effects-and-background-audio
+title: 'Tutorial Nine: Add sound effects and background audio'
+---
 # Tutorial Nine: Add sound effects and background audio<a name="tutor-ch09-sound-effects-and-background-audio"></a>
 
 In this tutorial, you will add a squawking chicken sound effect to the player jump action, and ambient farm noises that will loop in the background\. You will learn how to use **Wwise** to import sound from wav files, create sound events, and generate a soundbank with these events for use in Lumberyard\. Then you will use the **Audio Controls Editor** in Lumberyard to map controls to your sound events\. Finally, you will create audio triggers in **Lumberyard Editor** to play the sounds in response to game events\.
@@ -39,10 +44,10 @@ For detailed instructions on how to perform those tasks, continue with the follo
 1.  Choose the **Audio** tab, then open the **Actor\-Mixer Hierarchy** folder, the **Default Work Unit** category, and the **SFX** virtual folder\. You will see two Wwise "random containers": **Chicken\_Squawk** and **Farm\_Background**\. Random containers enable you to group a series of sounds and configure how they are selected randomly upon playback\. 
 
 1.  Open the **Farm\_Background** container to see two sounds: **Farm1** and **Farm2**\.   
-![\[Wwise tutorial audio\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/wwise-ui-tutorial-audio.png)
+![\[Wwise tutorial audio\]](/images/welcomeguide/wwise-ui-tutorial-audio.png)
 
    You can listen to these sound effects using the playback controls in the **Transport Control** view at the bottom of the Wwise editor\. To do this, select a container or a specific sound and click the **Play** button\.  
-![\[Wwise Transport Control view\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/wwise-ui-transport-control.png)
+![\[Wwise Transport Control view\]](/images/welcomeguide/wwise-ui-transport-control.png)
 
    You might also want to peruse the settings that define how these ambient background sounds are selected during playback:
 
@@ -57,7 +62,7 @@ For detailed instructions on how to perform those tasks, continue with the follo
 1.  Right\-click the **Chicken\_Squawk** container so that we can import a new variation of the squawking sound\. 
 
 1.  Choose **Import Audio Files…​**\.   
-![\[Wwise container context menu\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/wwise-ui-import-audio-files.png)
+![\[Wwise container context menu\]](/images/welcomeguide/wwise-ui-import-audio-files.png)
 
 1.  In the **Audio File Importer** dialog box, choose **Add Files…​**\. 
 
@@ -76,7 +81,7 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
    1.  Choose the **Events** tab\. You should now have a **Play\_Chicken\_Squawk** and a **Stop\_Chicken\_Squawk** event listed under the **Default Work Unit** in this tab\. 
 
       For organizational purposes, feel free to drag and drop these two events to the **SFX** folder if you would like\.  
-![\[Wwise tutorial sound events\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/wwise-ui-tutorial-events.png)
+![\[Wwise tutorial sound events\]](/images/welcomeguide/wwise-ui-tutorial-events.png)
 
    We’ve imported a new sound and created new sound events for the container\. Now we need to save the project and then regenerate the sound bank so that our Lumberyard game can find them\.
 
@@ -97,19 +102,19 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
 Begin the Lumberyard part of this tutorial either with the level you created in [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md), or by opening `ch08_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
 1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
-![\[Lumberyard select default layout\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-default-layout-1.25.png)
+![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Open the **Tools** menu, highlight **Other**, and choose the **Audio Controls Editor**\. 
 
    The Audio Controls Editor \(ACE\) maps Audio Translation Layer \(ATL\) controls to sound event controls in your audio engine\. The ACE editor and the ATL specification are modules that are part of the **Audio System** gem, and are designed to be flexible with your choice of audio engine\. To use an audio engine with the ACE, you must have a gem that integrates support for it using the ATL specification\. Support for the Wwise audio engine is included with Lumberyard using the **Wwise Audio Integration** gem\. In this tutorial we have added both the **Audio System** gem and the **Wwise Audio Integration** gem to the project configuration to enable support for Wwise\.
 
    We have already added control mappings for the background sound, the default events, and the preload of the soundbank that you updated earlier in this tutorial\. Open the folders under **ATL Controls** to see these mappings\.  
-![\[Audio Controls Editor current mappings\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-audio-incomplete-atl-mapping-1.27.png)
+![\[Audio Controls Editor current mappings\]](/images/welcomeguide/ui-audio-incomplete-atl-mapping-1.27.png)
 
    You can learn more about the default events and the Wwise soundbank preload in the User Guide section on [Setting up a Wwise project](https://docs.aws.amazon.com/lumberyard/latest/userguide/audio-wwise-project-setting-up.html)\.
 
 1.  To play the chicken squawking sound, you need to add new mappings to the corresponding *play* and *stop* sound events that were defined in Wwise\. To map ATL controls to these events, drag both the **Play\_Chicken\_Squawk** event and the **Stop\_Chicken\_Squawk** event from the **Wwise Controls** column to the **SFX** folder in the **ATL Controls** column\.   
-![\[Audio Controls Editor completed mappings\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-audio-completed-atl-mapping-1.27.png)
+![\[Audio Controls Editor completed mappings\]](/images/welcomeguide/ui-audio-completed-atl-mapping-1.27.png)
 
 1.  Open the **File** menu and choose **Save All** to save your updated ATL mappings\. You can also close the Audio Controls Editor, since the remainder of this tutorial will be using the Lumberyard Editor\. 
 
@@ -120,7 +125,7 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 1.  Find the **On Pressed** event in the **Input** node that’s responding to the chicken’s jump input event\. Click and drag from its **Out** pin and then release to open a menu that will enable you to create another node after this event that will execute when a jump starts\. 
 
 1.  Type `play` in the search box of the menu and scroll if needed to find the **Play** node under **Audio \- Audio Trigger**\. Click on the **Play** node to create it\.   
-![\[Creating a Play audio trigger node in Script Canvas\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-script-canvas-create-play-audio-node-1.27.gif)
+![\[Creating a Play audio trigger node in Script Canvas\]](/images/welcomeguide/ui-script-canvas-create-play-audio-node-1.27.gif)
 
 1.  Press **Control \+ S** to save the graph, and close the **Script Canvas** window\. 
 
@@ -129,7 +134,7 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 1.  In the **Audio Trigger** component, click the folder icon by the **Default 'play' Trigger** field to open the **Choose Trigger…​** dialog box\. 
 
 1.  Open the **SFX** folder and choose the **Play\_Chicken\_Squawk** control\. Click **OK**\.   
-![\[Lumberyard audio trigger\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-audio-trigger-chicken-1.27.png)
+![\[Lumberyard audio trigger\]](/images/welcomeguide/ui-audio-trigger-chicken-1.27.png)
 
 1.  Run the game using **Control \+ G** to try it out\! Jump a few times and listen for the two squawk variations\. Press **Esc** to return control to the Editor when you’re ready to proceed\. 
 

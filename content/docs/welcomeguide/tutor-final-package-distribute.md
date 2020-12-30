@@ -1,3 +1,9 @@
+---
+description: ' Learn the process for building and packaging a release of your Lumberyard
+  project. '
+slug: tutor-final-package-distribute
+title: 'Final step: Package and release a build'
+---
 # Final step: Package and release a build<a name="tutor-final-package-distribute"></a>
 
 In this tutorial, you will learn the final steps to take now that you’ve got a finished game and are ready to release it\! You will create a release build, process and package your final assets, and create an indepdendent distribution outside of the **Lumberyard Editor** for everyone to play and enjoy\.
@@ -8,7 +14,7 @@ Most of what you’ll be doing in this tutorial takes place outside of the Lumbe
 
 For those parts that do take place in the editor, this tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout you’re using\. To set this layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
 
-![\[Lumberyard select default layout\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-default-layout-1.25.png)
+![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 All set up? Let’s get started\!
 
@@ -41,7 +47,7 @@ All set up? Let’s get started\!
 1.  When your game is running, move the chicken around the world and look at stuff\! As the game renders, the engine picks up which shaders are used in the level and marks them for the shader compiler to process later\. When you’ve seen all of the level geometry, exit game mode by pressing **Esc**\. 
 
 1.  Export the level as a bundled resource package, which is called a *pak file* \(`.pak`\)\. This exports level geometry and information about the entities in the level \- but doesn’t bundle any resources *used* in the level\. You’ll take that step later\. Access the menu bar and select **Game** > **Export to Engine** or press **Ctrl\-E**\.   
-![\[Lumberyard level export\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-export-level.png)
+![\[Lumberyard level export\]](/images/welcomeguide/ui-export-level.png)
 
 1.  \(Optional\) Close the Lumberyard Editor\. You’re done with it for now \- the rest of this tutorial is done on the command line\. 
 
@@ -137,20 +143,20 @@ Now that you have your release built and ready to go, it’s time to put it all 
 1.  Start by creating a new empty folder anywhere on your PC, and name it what you want\. In all of the following screenshots, we’re using a folder named **Flyin' the Coop**\. 
 
 1.  Using Windows Explorer or the command line, copy the directory `Bin64vc142.Release` to the folder you’ve created\. This folder can be renamed to anything you like \- in the following image, it’s been named **GameEngine**\.   
-![\[Release folder containing the release build as 'GameEngine'.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/release-folder-1.png)
+![\[Release folder containing the release build as 'GameEngine'.\]](/images/welcomeguide/release-folder-1.png)
 
 1.  Copy the **contents** of the `welcomeguidetutorials_pc_paks` directory to your release folder\.   
-![\[Release folder containing the engine bootstrapping and base assets dir\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/release-folder-2.png)
+![\[Release folder containing the engine bootstrapping and base assets dir\]](/images/welcomeguide/release-folder-2.png)
 
 1.  Copy the following files from your Lumberyard `dev` directory into the `welcomeguidetutorials` folder in your release\. 
    +  `game_pc.pak` 
    +  `engine_pc.pak` 
 
      After copying the files, rename them to `game.pak` and `engine.pak` respectively\.  
-![\[Assets folder containing the game.pak and engine.pak files\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/release-folder-3.png)
+![\[Assets folder containing the game.pak and engine.pak files\]](/images/welcomeguide/release-folder-3.png)
 
 1.  Copy the **contents** of the `build\pc\WelcomeGuideTutorials` directory into the `welcomeguidetutorials` folder in your release\.   
-![\[Assets folder containing the shadercache.pak and shadercachestartup.pak files\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/release-folder-4.png)
+![\[Assets folder containing the shadercache.pak and shadercachestartup.pak files\]](/images/welcomeguide/release-folder-4.png)
 
 1.  There are several levels in the **Levels** directory\. During a release process for a commerical game, you’ll normally create a bootstrapper that sets the level to load on launch\. For Flyin' the Coop, the easiest way to load the right level is by launching from the command line\. 
 
@@ -162,7 +168,7 @@ Now that you have your release built and ready to go, it’s time to put it all 
 
    If you’re using a map other than `ch08_barnyard_final`, change the map name in this command\.
 
-![\[The final map of the Flyin' the Coop tutorial\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/final-level-running.png)
+![\[The final map of the Flyin' the Coop tutorial\]](/images/welcomeguide/final-level-running.png)
 
 Congratulations\! You’ve built an independent, releasable package for your game\!
 

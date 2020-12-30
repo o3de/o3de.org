@@ -1,3 +1,8 @@
+---
+description: ' Learn how to install Amazon Lumberyard. '
+slug: wg-install
+title: Installing Amazon Lumberyard
+---
 # Installing Amazon Lumberyard<a name="wg-install"></a>
 
 Download the latest [Lumberyard Installer](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)\.
@@ -6,7 +11,7 @@ Download the latest [Lumberyard Installer](https://d1a5h15s88ekwk.cloudfront.net
 
 Navigate to your `Downloads` directory and run `LumberyardInstaller.exe` to download, extract, and install Lumberyard\.
 
-![\[LumberyardInstaller.exe.\]](http://docs.aws.amazon.com/lumberyard/latest/welcomeguide/images/ui-installer-1.23.png)
+![\[LumberyardInstaller.exe.\]](/images/welcomeguide/ui-installer-1.23.png)
 
 The default Lumberyard installation path is `C:\Amazon\Lumberyard\`\. To set a different installation path, choose the **Options** button\. Choose the **Install** button to begin installation\. The process can take some time, depending on your internet connection speed\.
 

@@ -1,3 +1,8 @@
+---
+description: ' Features overview for Amazon Lumberyard. '
+slug: wg-features-intro
+title: Lumberyard features
+---
 # Lumberyard features<a name="wg-features-intro"></a>
 
 Lumberyard is packed with features that enable you to create beautiful worlds, engaging characters, and dynamic simulations\. With Lumberyard’s deep integration to Amazon Web Services and Twitch, you can add cloud\-connected features and connect players and customers around the world\.
