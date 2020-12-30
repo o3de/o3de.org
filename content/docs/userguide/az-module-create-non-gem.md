@@ -1,3 +1,4 @@
+---
 description: ' Describes how to create a &ALYlong; AZ module that is not a gem. '
 slug: az-module-create-non-gem
 title: Creating an AZ Module That Is Not a Gem

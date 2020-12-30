@@ -1,3 +1,4 @@
+---
 description: ' Use pivot mode to set a center point of reference for entities in &ALYlong;. '
 slug: pivot-mode
 title: Using Pivot Mode

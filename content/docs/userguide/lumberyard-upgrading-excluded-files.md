@@ -1,3 +1,4 @@
+---
 description: ' File types to exclude when upgrading &ALY; with source control. '
 slug: lumberyard-upgrading-excluded-files
 title: Files to Exclude When Upgrading &ALY;

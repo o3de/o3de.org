@@ -1,3 +1,4 @@
+---
 description: ' The &ALYlong; PhysX Ball Joint component. '
 slug: component-physx-ball-joint
 title: PhysX Ball Joint component

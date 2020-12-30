@@ -1,3 +1,4 @@
+---
 description: ' Use the auto-disable feature in &ALYlong; to control updates. '
 slug: ai-auto-disable
 title: Auto-Disable

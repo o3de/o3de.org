@@ -1,3 +1,4 @@
+---
 description: ' See the DistanceClouds shader for 2D clouds in &ALYlong;. '
 slug: shader-ref-distanceclouds
 title: DistanceClouds Shader

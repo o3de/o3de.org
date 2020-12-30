@@ -1,3 +1,4 @@
+---
 description: ' Test the &cloud; Dynamic Content Cloud Gem. '
 slug: cloud-canvas-cloud-gem-dc-testing
 title: Testing the Dynamic Content System

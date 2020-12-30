@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; &script-canvas; editor to switch the skybox. '
 slug: sky-skyboxes-switch
 title: Switching Skyboxes with the &script-canvas; Editor

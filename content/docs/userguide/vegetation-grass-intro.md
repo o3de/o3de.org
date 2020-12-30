@@ -1,3 +1,4 @@
+---
 description: ' Add grass to your &ALY; level either with the quick drag method or
   the more accurate manual method. '
 slug: vegetation-grass-intro

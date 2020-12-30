@@ -1,3 +1,4 @@
+---
 description: ' Change skybox parameters to create a static sky in &ALYlong;. '
 slug: sky-skyboxes-params
 title: Changing Skybox Parameters

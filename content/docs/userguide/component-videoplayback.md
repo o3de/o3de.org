@@ -1,3 +1,4 @@
+---
 description: ' Use the Video Playback component to display a video in a level loading
   screen or on a texture in a game created with &ALYlong;. '
 slug: component-videoplayback

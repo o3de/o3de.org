@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALY; &particle-editor; to import a particle library. '
 slug: particle-importing-library
 title: Importing Particle Libraries

@@ -1,3 +1,4 @@
+---
 description: ' Use terrain texture layers and paint them to create your environment
   level in the &ly-editor;. '
 slug: terrain-texture-layers-intro

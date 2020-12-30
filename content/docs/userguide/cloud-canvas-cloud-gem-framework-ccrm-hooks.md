@@ -1,3 +1,4 @@
+---
 description: ' Add custom features to &cloud; Resource Manager. '
 slug: cloud-canvas-cloud-gem-framework-ccrm-hooks
 title: Cloud Gem Framework Resource Manager Hooks

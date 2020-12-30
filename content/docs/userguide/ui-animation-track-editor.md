@@ -1,3 +1,4 @@
+---
 description: ' Use the Animation Editor''s Track Editor to preview an animation, change
   the timeline, and work with keys in &ALYlong;. '
 slug: ui-animation-track-editor

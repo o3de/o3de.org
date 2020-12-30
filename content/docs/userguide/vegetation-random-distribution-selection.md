@@ -1,3 +1,4 @@
+---
 description: ' Create random distribution by using weight-based random selection in
   &ALYlong; dynamic vegetation. '
 slug: vegetation-random-distribution-selection

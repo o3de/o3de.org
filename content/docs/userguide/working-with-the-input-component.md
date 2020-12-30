@@ -1,3 +1,4 @@
+---
 description: ' Work with the Input component in &ALYlong;. '
 slug: working-with-the-input-component
 title: Working with the Input Component

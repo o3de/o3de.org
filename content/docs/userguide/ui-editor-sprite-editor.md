@@ -1,3 +1,4 @@
+---
 description: ' Use the Sprite Editor to configure your images and textures in &ALYlong;''s
   &ui-canvas-editor; . '
 slug: ui-editor-sprite-editor

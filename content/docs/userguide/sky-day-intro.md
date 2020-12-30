@@ -1,3 +1,4 @@
+---
 description: ' Use sun settings, atmospheric properties, sun ray effects, and sun
   shadows to create a dynamic daytime sky. '
 slug: sky-day-intro

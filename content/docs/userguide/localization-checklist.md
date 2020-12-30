@@ -1,3 +1,4 @@
+---
 description: ' See the following checklist for localization in &ALYlong;. '
 slug: localization-checklist
 title: Localization Checklist

@@ -1,3 +1,4 @@
+---
 description: ' Use a check box component to make an element behave like a check box
   in &ALY;''s &ui-canvas-editor;. '
 slug: ui-editor-checkbox-components

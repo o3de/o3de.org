@@ -1,3 +1,4 @@
+---
 description: ' Upload resources to and view the status of your &ALYlong; project stack
   in &AWS;. '
 slug: cloud-canvas-ui-rm-project-stack

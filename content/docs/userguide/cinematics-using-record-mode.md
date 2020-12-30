@@ -1,3 +1,4 @@
+---
 description: ' Use Record mode for a sequence in the &trackview-editor; in &ALYlong;. '
 slug: cinematics-using-record-mode
 title: Using Record Mode

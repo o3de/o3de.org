@@ -1,3 +1,4 @@
+---
 description: ' Get familiar with the common tasks and best practices associated with
   &script-canvas;, including troubleshooting and debugging. '
 slug: script-canvas-common-tasks

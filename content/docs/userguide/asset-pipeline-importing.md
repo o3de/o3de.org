@@ -1,3 +1,4 @@
+---
 description: ' You can manually import your asset files into &ALYlong; or use the
   Import option in the editor. '
 slug: asset-pipeline-importing

@@ -1,3 +1,4 @@
+---
 description: ' Use visual debugging in &ALYlong; for NVIDIA Cloth. '
 slug: nvidia-cloth-debugging
 title: Cloth visual debugger

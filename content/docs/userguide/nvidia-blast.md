@@ -1,3 +1,4 @@
+---
 description: ' Use the NVIDIA Blast gem to simulate destruction in your &ALYlong;
   project. '
 slug: nvidia-blast

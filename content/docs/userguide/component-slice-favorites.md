@@ -1,3 +1,4 @@
+---
 description: ' Make slices easier to instantiate by flagging them as favorites in
   &ALYlong;''s &component-system;. '
 slug: component-slice-favorites

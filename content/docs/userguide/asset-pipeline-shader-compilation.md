@@ -1,3 +1,4 @@
+---
 description: ' Precompile shaders for release builds of &ALYlong; projects into .pak
   files. '
 slug: asset-pipeline-shader-compilation

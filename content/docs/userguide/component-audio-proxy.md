@@ -1,3 +1,4 @@
+---
 description: ' Use the Audio Proxy component in &ALY; to provide a method of communication
   between multiple audio components. '
 slug: component-audio-proxy

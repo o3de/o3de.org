@@ -1,3 +1,4 @@
+---
 description: ' Use the Apply Effect Group at Position node in the &ALYlong; &script-canvas;
   editor to apply an effect group file. '
 slug: apply-effect-group-at-position-node

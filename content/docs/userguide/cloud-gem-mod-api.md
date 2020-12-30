@@ -1,3 +1,4 @@
+---
 description: ' Learn about the API calls that the &ALYlong; Message of the Day Cloud
   Gem uses. '
 slug: cloud-gem-mod-api

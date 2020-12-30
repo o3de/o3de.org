@@ -1,3 +1,4 @@
+---
 description: null
 slug: component-entity-system-pg-components-ebuses-questions-and-answers
 title: 'Components and EBuses: Questions and Answers'

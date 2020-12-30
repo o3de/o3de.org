@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use &cloud; Resource Manager effectively when programming
   your cloud-connected game project. '
 slug: cloud-canvas-resource-manager-in-depth

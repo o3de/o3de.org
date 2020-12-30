@@ -1,3 +1,4 @@
+---
 description: ' Create realistic simulated cloth and fabric in &ALYlong; with NVIDIA
   Cloth. '
 slug: nvidia-cloth-intro

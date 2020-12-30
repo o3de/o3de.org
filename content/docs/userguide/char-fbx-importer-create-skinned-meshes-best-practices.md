@@ -1,3 +1,4 @@
+---
 description: ' See the best practices for working with skinned meshes actors for the
   &animation-editor; in &ALYlong;. '
 slug: char-fbx-importer-create-skinned-meshes-best-practices

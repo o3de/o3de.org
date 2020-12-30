@@ -1,3 +1,4 @@
+---
 description: ' The &ALYlong; Cloth component. '
 slug: component-cloth
 title: Cloth component

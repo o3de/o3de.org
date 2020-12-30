@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; HttpRequestor gem to make asynchronous HTTP/HTTPS
   requests and return data through a call back function that you provide. '
 slug: http-requestor-gem

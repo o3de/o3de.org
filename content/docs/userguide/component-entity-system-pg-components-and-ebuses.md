@@ -1,3 +1,4 @@
+---
 description: ' Learn about the relationship between components and EBuses in &ALYlong;. '
 slug: component-entity-system-pg-components-and-ebuses
 title: Components and EBuses

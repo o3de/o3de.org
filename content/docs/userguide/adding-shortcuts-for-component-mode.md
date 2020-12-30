@@ -1,3 +1,4 @@
+---
 description: ' Add shortcuts for your component in &ALYlong;. '
 slug: adding-shortcuts-for-component-mode
 title: 'Step 4: Add Shortcuts for &CM;'

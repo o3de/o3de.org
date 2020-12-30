@@ -1,3 +1,4 @@
+---
 description: ' Use bundle mode to ensure that your asset bundles have the required
   assets for your &ALY; game. '
 slug: asset-bundler-bundle-mode

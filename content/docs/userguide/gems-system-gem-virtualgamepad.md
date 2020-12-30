@@ -1,3 +1,4 @@
+---
 description: ' Use the Virtual Gamepad gem in &ALYlong; to provide your game''s UI
   with touch screen controls on mobile devices. '
 slug: gems-system-gem-virtualgamepad

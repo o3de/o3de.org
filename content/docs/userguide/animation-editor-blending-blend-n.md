@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use the Blend N node in &ALYlong; &animation-editor; to
   customize input weights when blending a number of input nodes. '
 slug: animation-editor-blending-blend-n

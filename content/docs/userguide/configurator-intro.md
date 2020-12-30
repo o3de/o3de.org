@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong;''s &project-configurator; to create new projects, save
   active projects, and enable, disable, or create new gems. '
 slug: configurator-intro

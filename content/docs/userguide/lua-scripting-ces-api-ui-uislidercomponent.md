@@ -1,3 +1,4 @@
+---
 description: ' Use the UISliderComponent to control the value of a slider in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uislidercomponent
 title: UISliderComponent

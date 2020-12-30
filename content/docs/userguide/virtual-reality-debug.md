@@ -1,3 +1,4 @@
+---
 description: ' Turn on debugging in &ALY; to display virtual reality debugging information
   in a supported head-mounted display. '
 slug: virtual-reality-debug

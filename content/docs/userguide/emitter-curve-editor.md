@@ -1,3 +1,4 @@
+---
 description: ' Use the Curve Editor in the &ALYlong;''s &particle-editor; to change
   attribute values. '
 slug: emitter-curve-editor

@@ -1,3 +1,4 @@
+---
 description: ' Use the Sky Cloud component to create realistic and detailed cloud
   effects in your &ALYlong; game levels. '
 slug: component-sky-cloud

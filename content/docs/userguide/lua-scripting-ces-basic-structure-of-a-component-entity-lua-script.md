@@ -1,3 +1,4 @@
+---
 description: ' Learn about the structure of Lua scripts that are used as components
   in &ALYlong;. '
 slug: lua-scripting-ces-basic-structure-of-a-component-entity-lua-script

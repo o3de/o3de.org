@@ -1,3 +1,4 @@
+---
 description: ' Use the Audio attribute in the &ALYlong; &particle-editor; to specify
   which sounds the particle system emits and when. '
 slug: particle-editor-reference-audio

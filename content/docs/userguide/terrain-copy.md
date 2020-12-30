@@ -1,3 +1,4 @@
+---
 description: ' Copy, rotate, or move sections of your &ALY; terrain, including vegetation,
   water, and other objects. '
 slug: terrain-copy

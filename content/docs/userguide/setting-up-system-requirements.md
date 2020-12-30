@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the hardware, operating system, and software requirements
   for installing &ALYlong;. '
 slug: setting-up-system-requirements

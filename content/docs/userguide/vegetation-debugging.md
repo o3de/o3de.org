@@ -1,3 +1,4 @@
+---
 description: ' Learn how to debug vegetation issues in your &ALY; game project. '
 slug: vegetation-debugging
 title: Vegetation Debugging

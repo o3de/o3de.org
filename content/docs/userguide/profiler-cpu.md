@@ -1,3 +1,4 @@
+---
 description: ' Use the CPU profiler in &ALYlong; to examine CPU usage in your game
   application. '
 slug: profiler-cpu

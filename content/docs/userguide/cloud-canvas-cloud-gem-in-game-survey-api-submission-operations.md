@@ -1,3 +1,4 @@
+---
 description: ' Use answer submission operations to manage answer submissions to your
   &cloud; in-game surveys in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-in-game-survey-api-submission-operations

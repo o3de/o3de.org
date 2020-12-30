@@ -1,3 +1,4 @@
+---
 description: ' Use the Cloud Gem Framework to enable your game code to make HTTP requests
   for &ALYlong;. '
 slug: cloud-canvas-cgf-http-requests

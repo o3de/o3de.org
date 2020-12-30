@@ -1,3 +1,4 @@
+---
 description: ' Learn how to work efficiently with &script-canvas; nodes in &ALYlong;. '
 slug: script-canvas-working-with-nodes
 title: Working with Nodes

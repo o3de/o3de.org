@@ -1,3 +1,4 @@
+---
 description: ' Drag and drop assets from the &ly-editor;''s &ast-browser; into the
   &ui-editor; as a convenient way to create new entities and assets in the &ui-editor;
   . '

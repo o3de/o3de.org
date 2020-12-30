@@ -1,3 +1,4 @@
+---
 description: Use the opacity settings in &ALYlong;'s &material-editor; to switch between
   alpha blend and alpha test modes. You can also set the Additive parameter.
 slug: mat-opacity

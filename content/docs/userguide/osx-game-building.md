@@ -1,3 +1,4 @@
+---
 description: ' Build a macOS game using the &ALY; build tools. '
 slug: osx-game-building
 title: Building macOS Games

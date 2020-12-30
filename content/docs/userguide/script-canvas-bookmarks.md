@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; &script-canvas; editor to add bookmarks to your script. '
 slug: script-canvas-bookmarks
 title: Adding Bookmarks for &script-canvas;

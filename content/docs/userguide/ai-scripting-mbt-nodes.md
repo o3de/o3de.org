@@ -1,3 +1,4 @@
+---
 description: ' See the modular behavior tree (MBT) node types for &ALYlong;. '
 slug: ai-scripting-mbt-nodes
 title: Modular Behavior Tree Node Reference

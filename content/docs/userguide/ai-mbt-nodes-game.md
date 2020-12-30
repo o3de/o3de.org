@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the AI MBT nodes in &ALYlong;. '
 slug: ai-mbt-nodes-game
 title: Game AI Modular Behavior Tree (MBT) Nodes

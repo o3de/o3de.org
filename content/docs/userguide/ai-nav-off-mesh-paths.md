@@ -1,3 +1,4 @@
+---
 description: ' Use AI paths for navigation in &ALYlong;. '
 slug: ai-nav-off-mesh-paths
 title: Using AI Paths for Navigation

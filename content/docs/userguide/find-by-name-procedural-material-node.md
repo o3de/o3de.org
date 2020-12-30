@@ -1,3 +1,4 @@
+---
 description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor to
   return the substance material file. '
 slug: find-by-name-procedural-material-node

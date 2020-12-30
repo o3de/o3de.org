@@ -1,3 +1,4 @@
+---
 description: ' Use the Comment component in &ALYlong; to add text comments for component
   entities. '
 slug: component-comment

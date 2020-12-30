@@ -1,3 +1,4 @@
+---
 description: ' Use volumetric fog in your &ALY; level for fog that supports regular
   light and sunlight with dynamic shadows, environment probes, ambient light, as well
   as variations in fog density. '

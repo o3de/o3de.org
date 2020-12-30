@@ -1,3 +1,4 @@
+---
 description: ' Compile your &ALYlong; game project with IncrediBuild, QT, or Microsoft
   Visual Studio. '
 slug: waf-extensions

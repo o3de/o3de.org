@@ -1,3 +1,4 @@
+---
 description: ' Slice reloading in &ly-editor;. '
 slug: component-slice-reloading
 title: Slice Reloading

@@ -1,3 +1,4 @@
+---
 description: ' Use Blast materials to set destruction properties in &ALYlong; with
   NVIDIA Blast. '
 slug: nvidia-blast-materials

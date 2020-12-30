@@ -1,3 +1,4 @@
+---
 description: ' Create a terrain heightmap in &ALY; by specifying the resolution and
   grid spacing to determine the heightmap size. '
 slug: terrain-heightmap-create

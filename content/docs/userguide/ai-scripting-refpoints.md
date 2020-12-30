@@ -1,3 +1,4 @@
+---
 description: ' Specify a position and a direction with refpoints in &ALYlong;. '
 slug: ai-scripting-refpoints
 title: Refpoints

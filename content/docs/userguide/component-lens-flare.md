@@ -1,3 +1,4 @@
+---
 description: ' Use the Lens Flare component in &ALYlong; to place a lens flare on
   an entity. '
 slug: component-lens-flare

@@ -1,3 +1,4 @@
+---
 description: ' Use the &trackview-editor; to create and manage cinematic sequences
   in &ALYlong;. '
 slug: cinematics-track-view-editor

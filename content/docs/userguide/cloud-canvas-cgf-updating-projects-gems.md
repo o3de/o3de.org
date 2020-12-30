@@ -1,3 +1,4 @@
+---
 description: ' Update your &ALYlong; projects and cloud gems to version 1.0.0 of the
   Cloud Gem framework. '
 slug: cloud-canvas-cgf-updating-projects-gems

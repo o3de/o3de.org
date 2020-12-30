@@ -1,3 +1,4 @@
+---
 description: ' Reset the transform properties for entities in &ALYlong;. '
 slug: reset-transform
 title: Resetting the Transform

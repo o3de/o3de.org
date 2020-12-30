@@ -1,3 +1,4 @@
+---
 description: null
 slug: ui-editor-components-other-flipbook
 title: Flipbook Animation

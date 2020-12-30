@@ -1,3 +1,4 @@
+---
 description: ' Use the &script-canvas; tutorials to learn about &ALYlong;''s visual
   scripting system. '
 slug: script-canvas-tutorials

@@ -1,3 +1,4 @@
+---
 description: ' Use the configure command to process configuration settings before
   you build a &ALYlong; project with &waf;. '
 slug: waf-commands

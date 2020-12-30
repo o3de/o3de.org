@@ -1,3 +1,4 @@
+---
 description: ' Learn how to minimize the performance impact of rendering shadows in
   &ALY;. '
 slug: rendering-graphics-shadows-intro

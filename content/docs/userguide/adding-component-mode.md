@@ -1,3 +1,4 @@
+---
 description: ' Choose a component to add a &CM; to in &ALYlong;. '
 slug: adding-component-mode
 title: 'Step 1: Choose a Component'

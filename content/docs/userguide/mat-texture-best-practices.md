@@ -1,3 +1,4 @@
+---
 description: ' See the following best practices for textures in &ALYlong;. '
 slug: mat-texture-best-practices
 title: Texture Best Practices

@@ -1,3 +1,4 @@
+---
 description: ' Use AutoMerged settings to define how grass responds to wind in your
   &ALY; environment. '
 slug: vegetation-bending-automerged-intro

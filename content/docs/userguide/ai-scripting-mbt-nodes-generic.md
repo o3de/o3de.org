@@ -1,3 +1,4 @@
+---
 description: ' See the following generic nodes for the AI system in &ALYlong;. '
 slug: ai-scripting-mbt-nodes-generic
 title: Generic Nodes

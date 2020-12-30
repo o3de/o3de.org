@@ -1,3 +1,4 @@
+---
 description: ' Build UIs that display on multiple screen resolutions using the Scale
   to Device property in the &ALYlong; &ui-canvas-editor;. '
 slug: ui-editor-scaling-device-resolution

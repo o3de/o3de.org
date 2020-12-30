@@ -1,3 +1,4 @@
+---
 description: ' Learn how to create &ALY; components in C++. '
 slug: component-entity-system-create-component
 title: Creating a Component

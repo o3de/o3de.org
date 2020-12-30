@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the point generation and evaluation in &ALYlong;. '
 slug: ai-tactical-point-generation-evaluation
 title: Point Generation and Evaluation

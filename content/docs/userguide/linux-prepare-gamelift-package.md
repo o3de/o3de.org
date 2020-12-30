@@ -1,3 +1,4 @@
+---
 description: ' Prepare a &AGS; package to deploy your game servers using &AWS;. '
 slug: linux-prepare-gamelift-package
 title: Preparing the &AGSlong; Package

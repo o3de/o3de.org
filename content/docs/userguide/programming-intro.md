@@ -1,3 +1,4 @@
+---
 description: ' The following topics will guide you through programming with and for
   &ALY;. '
 slug: programming-intro

@@ -1,3 +1,4 @@
+---
 description: ' Use &cloud; Resource Manager to manage profiles, make deployments active,
   test mappings, and use protected deployments. '
 slug: cloud-canvas-gpg-rm

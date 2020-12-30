@@ -1,3 +1,4 @@
+---
 description: ' Use the Point Light component on an entity to create a point of light
   in &ALY;. '
 slug: component-point-light

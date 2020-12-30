@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; console to customize and create your own console
   variable commands. '
 slug: system-console

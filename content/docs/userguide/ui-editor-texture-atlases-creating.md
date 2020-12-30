@@ -1,3 +1,4 @@
+---
 description: null
 slug: ui-editor-texture-atlases-creating
 title: Creating a Texture Atlas

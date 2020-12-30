@@ -1,3 +1,4 @@
+---
 description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see tweeners
   in action. '
 slug: ui-animating-tweener-sample

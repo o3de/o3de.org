@@ -1,3 +1,4 @@
+---
 description: ' Detach entities and slice instances in &ly-editor;. '
 slug: component-slice-detaching
 title: Detaching Entities and Slice Instances

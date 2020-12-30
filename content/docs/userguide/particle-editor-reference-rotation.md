@@ -1,3 +1,4 @@
+---
 description: ' Use the Rotation attribute in the &ALYlong; &particle-editor; to control
   the rotation of the particle. '
 slug: particle-editor-reference-rotation

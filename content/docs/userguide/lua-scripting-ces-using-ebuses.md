@@ -1,3 +1,4 @@
+---
 description: ' Write Lua scripts that use the EBus to communicate between components
   in &ALYlong;. '
 slug: lua-scripting-ces-using-ebuses

@@ -1,3 +1,4 @@
+---
 description: ' Learn about each &script-canvas; menu option and tool in the Editor
   Reference. '
 slug: script-canvas-editor-reference

@@ -1,3 +1,4 @@
+---
 description: ' Create realistic partial destruction simulations in &ALYlong; with
   NVIDIA Blast. '
 slug: nvidia-blast-static-chunks

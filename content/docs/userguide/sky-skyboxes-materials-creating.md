@@ -1,3 +1,4 @@
+---
 description: ' Learn how to create skybox materials for a static sky in your &ALY;
   level. '
 slug: sky-skyboxes-materials-creating

@@ -1,3 +1,4 @@
+---
 description: ' Use event buses to dispatch messages safely and efficiently in your
   gaming application for &ALYlong;. '
 slug: ebus-intro

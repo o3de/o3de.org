@@ -1,3 +1,4 @@
+---
 description: ' Use extendable nodes to allow users to add as many slots as they require
   to a node in &script-canvas;, &ALYlong;''s visual scripting system. '
 slug: script-canvas-custom-nodes-extendable

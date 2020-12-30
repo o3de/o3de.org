@@ -1,3 +1,4 @@
+---
 description: ' &ALYlong;''s UI system uses slices, a cascaded data management system
   for entities. '
 slug: ui-editor-working-slices

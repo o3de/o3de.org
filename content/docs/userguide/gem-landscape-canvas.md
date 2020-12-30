@@ -1,3 +1,4 @@
+---
 description: ' Use &landscape-canvas; &gem; to author dynamic vegetation &ALYlong;
   project. '
 slug: gem-landscape-canvas

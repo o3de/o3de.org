@@ -1,3 +1,4 @@
+---
 description: ' The following topics will guide you through character animation, visual
   effects, and cinematic animation in &ALY;. '
 slug: animation-intro

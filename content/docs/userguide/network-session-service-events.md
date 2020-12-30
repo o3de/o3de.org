@@ -1,3 +1,4 @@
+---
 description: ' Learn how to react to GridMate session service events in &ALYlong;. '
 slug: network-session-service-events
 title: Reacting to Session Events

@@ -1,3 +1,4 @@
+---
 description: ' Use the &audio-controls-browser; ''s Inspector pane to edit the properties
   of the currently selected control in &ALYlong;. '
 slug: audio-atl-editor-inspector

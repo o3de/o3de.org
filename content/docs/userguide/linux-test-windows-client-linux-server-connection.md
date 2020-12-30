@@ -1,3 +1,4 @@
+---
 description: ' Test the connection between the Windows client and the Linux server
   for &ALYlong;. '
 slug: linux-test-windows-client-linux-server-connection

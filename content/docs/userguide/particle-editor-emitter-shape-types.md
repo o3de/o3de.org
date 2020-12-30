@@ -1,3 +1,4 @@
+---
 description: ' Use the emitter shape types in &ALYlong;''s &particle-editor; to achieve
   a variety of effects. '
 slug: particle-editor-emitter-shape-types

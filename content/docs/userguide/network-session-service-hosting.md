@@ -1,3 +1,4 @@
+---
 description: ' Learn how to host a GridMate session in &ALYlong;. '
 slug: network-session-service-hosting
 title: Hosting a Session

@@ -1,3 +1,4 @@
+---
 description: ' Get the behind-the-scenes architectural overview of &script-canvas;
   and learn how to create custom nodes. '
 slug: script-canvas-advanced-topics

@@ -1,3 +1,4 @@
+---
 description: ' Use the features of the Python Editor Bindings gem to automate actions
   and tasks inside of the &ly-editor;. '
 slug: editor-automation

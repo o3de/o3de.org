@@ -1,3 +1,4 @@
+---
 description: ' Play a video file in a loading screen or on textures in &ALYlong;. '
 slug: gems-system-gem-videoplayback
 title: Video Playback Gem

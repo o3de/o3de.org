@@ -1,3 +1,4 @@
+---
 description: ' Learn more about demo and video capture in &ALYlong;. '
 slug: demo-video-capture-intro
 title: Demo and Video Capture

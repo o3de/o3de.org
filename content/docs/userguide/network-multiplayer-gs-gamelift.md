@@ -1,3 +1,4 @@
+---
 description: ' Configure &ALYlong;''s GridMate multiplayer sample for use with &AGSlong;. '
 slug: network-multiplayer-gs-gamelift
 title: Configuring the Multiplayer Sample for &AGSlong;

@@ -1,3 +1,4 @@
+---
 description: ' Use the &audio-controls-browser; ''s Wwise Controls pane to filter
   and select a middleware-specific control to assign to an ATL control in &ALYlong;. '
 slug: audio-atl-editor-middleware

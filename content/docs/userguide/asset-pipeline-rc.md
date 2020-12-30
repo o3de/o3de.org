@@ -1,3 +1,4 @@
+---
 description: ' Use &resource-compiler; in &ALYlong; to convert certain source files
   into game-ready assets. '
 slug: asset-pipeline-rc

@@ -1,3 +1,4 @@
+---
 description: ' Learn how to disconnect &script-canvas; nodes in &ALYlong;. '
 slug: script-canvas-working-with-nodes-disconnecting
 title: Disconnecting Nodes

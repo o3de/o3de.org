@@ -1,3 +1,4 @@
+---
 description: ' Capture video and audio in &ALYlong;. '
 slug: demo-video-capture-av
 title: Capturing Video and Audio

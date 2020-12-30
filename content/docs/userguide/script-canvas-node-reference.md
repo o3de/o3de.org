@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong; &script-canvas; editor nodes for your scripts. '
 slug: script-canvas-node-reference
 title: '&script-canvas; Node Reference'

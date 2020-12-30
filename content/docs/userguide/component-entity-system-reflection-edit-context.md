@@ -1,3 +1,4 @@
+---
 description: ' Use the edit context to expose parameters for editing in &ALYlong;''s
   &ly-editor;. '
 slug: component-entity-system-reflection-edit-context

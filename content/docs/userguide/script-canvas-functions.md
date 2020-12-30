@@ -1,3 +1,4 @@
+---
 description: ' Create reusable functions in &script-canvas; that can be inserted into
   other graphs as nodes. '
 slug: script-canvas-functions

@@ -1,3 +1,4 @@
+---
 description: ' Use a layout row component in the &ALYlong; &ui-canvas-editor; to organize
   child elements into a row. '
 slug: ui-editor-components-layout-row

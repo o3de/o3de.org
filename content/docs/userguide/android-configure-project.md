@@ -1,3 +1,4 @@
+---
 description: ' Configure your &ALYlong; project to compile assets for Android and
   correctly declare which device resources it uses. '
 slug: android-configure-project

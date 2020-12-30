@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; editor
   to get a material''s numerical parameter value for the specified entity. '
 slug: material-owner-get-param-number-node

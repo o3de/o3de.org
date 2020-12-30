@@ -1,3 +1,4 @@
+---
 description: ' Integrate the Player Account Cloud Gem into an existing &ALYlong; project. '
 slug: cloud-canvas-cloud-gem-player-account-integrating-existing-project
 title: Integrating the Player Account Cloud Gem into an Existing Project

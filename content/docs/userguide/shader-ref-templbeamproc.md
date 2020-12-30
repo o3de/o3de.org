@@ -1,3 +1,4 @@
+---
 description: ' Ise the TemplBeamProc shader to create fog-like light beam effects
   in &ALYlong;. '
 slug: shader-ref-templbeamproc

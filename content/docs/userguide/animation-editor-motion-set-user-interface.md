@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the user interface for motion sets in the &animation-editor;
   . '
 slug: animation-editor-motion-set-user-interface

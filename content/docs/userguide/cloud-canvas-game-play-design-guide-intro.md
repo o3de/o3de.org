@@ -1,3 +1,4 @@
+---
 description: ' Learn how to design and engineer &cloud; deployments, resource groups,
   and cloud gems to create cloud connected features for your game. '
 slug: cloud-canvas-game-play-design-guide-intro

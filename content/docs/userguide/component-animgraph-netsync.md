@@ -1,3 +1,4 @@
+---
 description: ' Use the Anim Graph Net Sync component to synchronize animation graph
   parameters in &ALYlong;. '
 slug: component-animgraph-netsync

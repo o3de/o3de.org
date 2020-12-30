@@ -1,3 +1,4 @@
+---
 description: ' Use the sliced image type to intelligently resize parts of your game
   UI in &ALYlong;''s &ui-canvas-editor; . '
 slug: ui-editor-component-9-sliced

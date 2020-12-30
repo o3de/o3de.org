@@ -1,3 +1,4 @@
+---
 description: ' Restore the default layout for your &ly-editor; workspace. '
 slug: lumberyard-editor-default-settings
 title: Restoring the Default Layout for &ly-editor;

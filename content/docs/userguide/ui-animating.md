@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY;''s Scripted Entity Tweener gem or the UI System''s Animation
   Editor to animate game UI elements. '
 slug: ui-animating

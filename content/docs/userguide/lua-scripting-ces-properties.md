@@ -1,3 +1,4 @@
+---
 description: ' Specify the properties of a Lua script component that appear in &ly-editor;
   in &ALYlong;. '
 slug: lua-scripting-ces-properties

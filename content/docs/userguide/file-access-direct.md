@@ -1,3 +1,4 @@
+---
 description: ' Directly access files for special use cases like streaming in &ALYlong;. '
 slug: file-access-direct
 title: Raw File Access in &ALY;

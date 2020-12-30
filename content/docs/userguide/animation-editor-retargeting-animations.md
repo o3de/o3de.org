@@ -1,3 +1,4 @@
+---
 description: ' Retarget motions and animations from one actor to another actor in
   the &ALYlong; &animation-editor; . '
 slug: animation-editor-retargeting-animations

@@ -1,3 +1,4 @@
+---
 description: ' The Input Enabled setting determines whether the component can be interacted
   with in &ALY;. '
 slug: ui-editor-components-interactive-properties-input

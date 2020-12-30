@@ -1,3 +1,4 @@
+---
 description: ' Use ShowMouseCursor to toggle the visibility of the mouse cursor in
   &ALYlong;. '
 slug: lua-scripting-ces-api-ui-showmousecursor

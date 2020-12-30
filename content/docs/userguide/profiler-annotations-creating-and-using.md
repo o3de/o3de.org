@@ -1,3 +1,4 @@
+---
 description: ' Use annotations in Profiler to flag per-frame log information from
   the data you captured from your &ALYlong; application. '
 slug: profiler-annotations-creating-and-using

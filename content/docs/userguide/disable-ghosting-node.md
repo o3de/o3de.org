@@ -1,3 +1,4 @@
+---
 description: ' Use the Disable Ghosting node in the &ALYlong; &script-canvas; editor
   to disable ghosting effects. '
 slug: disable-ghosting-node

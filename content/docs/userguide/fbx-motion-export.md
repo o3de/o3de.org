@@ -1,3 +1,4 @@
+---
 description: ' Export motions from .fbx files with FBX Settings to &ALYlong;. '
 slug: fbx-motion-export
 title: FBX Settings motion export

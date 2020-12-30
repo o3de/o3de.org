@@ -1,3 +1,4 @@
+---
 description: ' Use the &material-editor; to find material parameter names to reference
   for nodes in the &ALYlong; &script-canvas; editor. '
 slug: material-param-names

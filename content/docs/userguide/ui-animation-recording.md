@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY;''s Animation Editor to record a new animation after you have
   created a new sequence. '
 slug: ui-animation-recording

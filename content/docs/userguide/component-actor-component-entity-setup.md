@@ -1,3 +1,4 @@
+---
 description: ' Set up actor entities with multiple or a single FBX file in &ALYlong;. '
 slug: component-actor-component-entity-setup
 title: Setting Up Actor Entities

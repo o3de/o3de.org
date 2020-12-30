@@ -1,3 +1,4 @@
+---
 description: ' Use High Quality Shadow nodes to configure shadow effects in the &ALYlong;
   &script-canvas; editor. '
 slug: script-canvas-high-quality-shadow-nodes

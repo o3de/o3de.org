@@ -1,3 +1,4 @@
+---
 description: ' Add a Radial Blur node to blur the animation outward in a radial pattern
   in &ALYlong;''s &trackview-editor;. '
 slug: cinematics-track-view-nodes-blur

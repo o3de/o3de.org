@@ -1,3 +1,4 @@
+---
 description: ' Manage your entities with the &entity-outliner; in &ALYlong;. '
 slug: component-entity-outliner-layers
 title: Working with Layers

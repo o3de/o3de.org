@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; editor
   to return a material parameter as a Vector3 value. '
 slug: material-get-vector3-param-node

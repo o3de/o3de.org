@@ -1,3 +1,4 @@
+---
 description: ' Learn more about image-based lighting in &ALYlong;. '
 slug: mat-shaders-image-lighting
 title: Image-Based Lighting

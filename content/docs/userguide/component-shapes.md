@@ -1,3 +1,4 @@
+---
 description: ' Use shape components in &ALYlong; to provide shape facilities for trigger
   volumes, collision volumes, audio area ambiances, and audio areas. '
 slug: component-shapes

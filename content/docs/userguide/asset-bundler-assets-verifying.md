@@ -1,3 +1,4 @@
+---
 description: ' Verify that the assets in your &ALY; project are properly bundled and
   referenced. '
 slug: asset-bundler-assets-verifying

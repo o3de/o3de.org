@@ -1,3 +1,4 @@
+---
 description: ' Send game events with the Metrics Sample level in &ALYlong; and view
   them in the &cgp;. '
 slug: send-test-events-for-the-cloud-canvas-game-metrics-gem

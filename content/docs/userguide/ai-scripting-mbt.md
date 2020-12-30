@@ -1,3 +1,4 @@
+---
 description: ' Understand core concepts for the Modular Behavior Tree (MBT) in &ALYlong;. '
 slug: ai-scripting-mbt
 title: Modular Behavior Tree

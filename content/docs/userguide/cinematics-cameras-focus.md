@@ -1,3 +1,4 @@
+---
 description: ' Set the camera focus for cinematic sequences in &ALYlong;. '
 slug: cinematics-cameras-focus
 title: Animating Depth of Field

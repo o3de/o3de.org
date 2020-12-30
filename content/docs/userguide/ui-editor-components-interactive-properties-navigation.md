@@ -1,3 +1,4 @@
+---
 description: ' Use the Navigation group of properties to specify how the arrow keys
   or gamepad navigates between interactive elements in &ALY;. '
 slug: ui-editor-components-interactive-properties-navigation

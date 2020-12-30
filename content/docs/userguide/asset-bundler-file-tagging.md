@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; &asset-editor; to create file tag rules for including
   and excluding files in your asset bundles for processing by the &asset-bundler;.
   Rules are composed of pattern matching logic and file tag strings. '

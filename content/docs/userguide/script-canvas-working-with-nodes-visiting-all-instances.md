@@ -1,3 +1,4 @@
+---
 description: ' Learn how to navigate &script-canvas; graphs in &ALYlong; to visit
   all nodes. '
 slug: script-canvas-working-with-nodes-visiting-all-instances

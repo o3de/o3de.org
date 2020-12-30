@@ -1,3 +1,4 @@
+---
 description: ' Use the UITextInputComponent to provide player text input capability
   in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uitextinputcomponent

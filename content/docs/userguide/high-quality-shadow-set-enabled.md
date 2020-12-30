@@ -1,3 +1,4 @@
+---
 description: ' Use the Set Enabled &endash; High Quality Shadow node in the &ALYlong;
   &script-canvas; editor to check whether an entity''s High Quality Shadow component
   is enabled. '

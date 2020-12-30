@@ -1,3 +1,4 @@
+---
 description: ' Use the Comment attribute in the &ALYlong; &particle-editor; to add
   or edit comments about an emitter. '
 slug: particle-editor-reference-comment

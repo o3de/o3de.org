@@ -1,3 +1,4 @@
+---
 description: ' Learn about the Carrier message structure in GridMate, &ALYlong;''s
   networking system. '
 slug: network-carrier-message-structure

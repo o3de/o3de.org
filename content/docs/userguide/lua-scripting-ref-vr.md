@@ -1,3 +1,4 @@
+---
 description: ' Use Lua to interact with head mounted display virtual reality devices. '
 slug: lua-scripting-ref-vr
 title: VR Lua Functions

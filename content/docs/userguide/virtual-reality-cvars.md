@@ -1,3 +1,4 @@
+---
 description: ' Configure console variables (CVARs) to activate and modify configurable
   features of &ALYlong;''s virtual reality system, such as resolution and performance
   specifications. '

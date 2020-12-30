@@ -1,3 +1,4 @@
+---
 description: ' Learn how to expose custom components and their properties to the &trackview-editor;
   for animation in &ALYlong;. '
 slug: component-entity-system-track-view

@@ -1,3 +1,4 @@
+---
 description: ' Verify that you have the required third-party software, SDKs, and plugins
   to run &ALYlong; with the &ly-launcher;. '
 slug: lumberyard-launcher-intro

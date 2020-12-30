@@ -1,3 +1,4 @@
+---
 description: ' Browse a list of additional learning opportunities on the subject of
   &script-canvas; and follow the links that interest you. '
 slug: script-canvas-learning-opportunities

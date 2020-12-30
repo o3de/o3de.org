@@ -1,3 +1,4 @@
+---
 description: ' Create areas where you don''t want vegetation to appear in &ALYlong;. '
 slug: dynamic-vegetation-procedures-vegetation-blockers
 title: Blocking Vegetation in Select Areas

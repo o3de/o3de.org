@@ -1,3 +1,4 @@
+---
 description: ' Use the Set Color Chart node in the &ALYlong; &script-canvas; editor
   to apply a color chart texture for color grading. '
 slug: set-color-chart-node

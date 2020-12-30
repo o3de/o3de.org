@@ -1,3 +1,4 @@
+---
 description: ' View status, lock selection, cursor position and transform status,
   and so on with the bottom toolbar in &ALYlong;. '
 slug: lumberyard-editor-toolbar-bottom

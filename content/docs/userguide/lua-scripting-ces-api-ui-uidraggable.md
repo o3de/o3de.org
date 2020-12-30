@@ -1,3 +1,4 @@
+---
 description: ' Use UIDraggableComponent to enable drag and drop behavior for a UI
   element in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uidraggable

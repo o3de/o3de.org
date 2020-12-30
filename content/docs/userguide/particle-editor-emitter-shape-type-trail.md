@@ -1,3 +1,4 @@
+---
 description: ' Use the Trail emitter in the &ALYlong; &particle-editor; to connect
   particles together to create a trailing effect. '
 slug: particle-editor-emitter-shape-type-trail

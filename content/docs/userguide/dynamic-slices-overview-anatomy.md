@@ -1,3 +1,4 @@
+---
 description: ' Understand the anatomy of a slice and the slice data patch format in
   &ALYlong;. '
 slug: dynamic-slices-overview-anatomy

@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Directional Blur node in the &ALYlong; &script-canvas;
   editor to configure directional blur effects. '
 slug: enable-directional-blur-node

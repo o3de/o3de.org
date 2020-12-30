@@ -1,3 +1,4 @@
+---
 description: ' Use the &script-canvas; Basic Sample to learn basic gameplay functions
   in &ALYlong;. '
 slug: script-canvas-basic-sample

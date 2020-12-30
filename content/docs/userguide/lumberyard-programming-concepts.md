@@ -1,3 +1,4 @@
+---
 description: ' Learn the key concepts and discover resources for programming in &ALYlong;. '
 slug: lumberyard-programming-concepts
 title: '&ALY; Programming Concepts and Resources'

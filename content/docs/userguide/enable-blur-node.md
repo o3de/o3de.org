@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Blur node in the &ALYlong; &script-canvas; editor to
   set the blur (Gaussian blur) filter. '
 slug: enable-blur-node

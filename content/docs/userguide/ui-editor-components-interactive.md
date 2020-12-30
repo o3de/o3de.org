@@ -1,3 +1,4 @@
+---
 description: ' Use interactive components in the &ALYlong; &ui-canvas-editor;. '
 slug: ui-editor-components-interactive
 title: Interactive Components

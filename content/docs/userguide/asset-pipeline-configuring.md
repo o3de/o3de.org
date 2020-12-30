@@ -1,3 +1,4 @@
+---
 description: ' Configure the Asset Pipeline to customize the processing of assets
   in &ALYlong;. '
 slug: asset-pipeline-configuring

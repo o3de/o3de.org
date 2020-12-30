@@ -1,3 +1,4 @@
+---
 description: ' Animate characters in scenes for &ALYlong; with the &trackview-editor;. '
 slug: cinematics-animation-intro
 title: Animating Characters in Scenes

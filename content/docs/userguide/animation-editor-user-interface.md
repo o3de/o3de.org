@@ -1,3 +1,4 @@
+---
 description: ' View the &animation-editor; interface in &ALYlong;. '
 slug: animation-editor-user-interface
 title: '&animation-editor; User Interface'

@@ -1,3 +1,4 @@
+---
 description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
 slug: nvidia-blast-intro
 title: Simulated destruction with NVIDIA Blast

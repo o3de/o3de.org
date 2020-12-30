@@ -1,3 +1,4 @@
+---
 description: ' Use the Sphere emitter in the &ALYlong; &particle-editor; to spawn
   particles along the shapes axial coordinate system and create complex spherical
   effects. '

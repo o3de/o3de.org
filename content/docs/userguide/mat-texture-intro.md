@@ -1,3 +1,4 @@
+---
 description: ' Enable color, depth, and details for textures in &ALYlong;. '
 slug: mat-texture-intro
 title: Working with Textures

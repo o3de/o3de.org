@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use the tick bus in &ALYlong;. '
 slug: component-entity-system-pg-tick-bus
 title: Tick Bus and Components

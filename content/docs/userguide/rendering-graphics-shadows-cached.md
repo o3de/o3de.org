@@ -1,3 +1,4 @@
+---
 description: ' Control the degree to which &ALYlong; caches shadows to optimize performance
   and memory use. '
 slug: rendering-graphics-shadows-cached

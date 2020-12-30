@@ -1,3 +1,4 @@
+---
 description: ' Use the Particles attribute in the &ALYlong; &particle-editor; to control
   the basic appearance of the particle. '
 slug: particle-editor-reference-particles

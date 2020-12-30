@@ -1,3 +1,4 @@
+---
 description: ' Use console variables to control the &ALY; audio system. '
 slug: audio-console-commands
 title: Audio Console Variables

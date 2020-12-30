@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong;''s PhysX system to create realistic physical effects
   such as collision detection and rigid body dynamics simulation. '
 slug: physx-intro

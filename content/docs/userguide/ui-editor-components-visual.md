@@ -1,3 +1,4 @@
+---
 description: ' Use visual components (image or text) to give an element color and
   texture, or text in &ALYlong;''s &ui-canvas-editor; . '
 slug: ui-editor-components-visual

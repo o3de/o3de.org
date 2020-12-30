@@ -1,3 +1,4 @@
+---
 description: ' Create a basic vegetation layer in &ALYlong;. '
 slug: dynamic-vegetation-procedures-create-vegetation-layer
 title: Creating a Vegetation Layer

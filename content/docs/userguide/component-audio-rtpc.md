@@ -1,3 +1,4 @@
+---
 description: ' Use the Audio RTPC component to set values at runtime that produce
   real-time tweaking of sounds in &ALYlong;. '
 slug: component-audio-rtpc

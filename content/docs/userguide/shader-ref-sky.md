@@ -1,3 +1,4 @@
+---
 description: ' Use the sky shader to render performance-optimized static sky effects
   in &ALYlong;. '
 slug: shader-ref-sky

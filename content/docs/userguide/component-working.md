@@ -1,3 +1,4 @@
+---
 description: ' Use the tools in &ALYlong;''s &component-system; to create entities,
   add components to entities, remove and reorder components, find an entity, and edit
   component properties. '

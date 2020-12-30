@@ -1,3 +1,4 @@
+---
 description: ' Use replicas to synchronize game states in &ALYlong;. '
 slug: network-replicas
 title: Replicas

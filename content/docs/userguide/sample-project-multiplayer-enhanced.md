@@ -1,3 +1,4 @@
+---
 description: ' Use the Multiplayer sample in &ALYlong; to learn how to build and structure
   multiplayer games that use the GridMate networking library. '
 slug: sample-project-multiplayer-enhanced

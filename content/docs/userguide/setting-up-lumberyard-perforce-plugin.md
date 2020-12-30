@@ -1,3 +1,4 @@
+---
 description: ' How to configure the Perforce Plugin to use Perforce as the source
   control solution to use with &ALY;. '
 slug: setting-up-lumberyard-perforce-plugin

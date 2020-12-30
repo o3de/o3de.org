@@ -1,3 +1,4 @@
+---
 description: ' Use the &whitebox; component to quickly sketch geometry for entities
   and levels in &ALYlong;. '
 slug: component-white-box

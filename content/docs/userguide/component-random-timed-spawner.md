@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; Random Timed Spawner component to spawn a specified
   dynamic slice at a given interval. '
 slug: component-random-timed-spawner

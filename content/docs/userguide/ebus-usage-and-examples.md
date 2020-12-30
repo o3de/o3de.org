@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use &ALYlong;''s EBus from examples. '
 slug: ebus-usage-and-examples
 title: Usage and Examples

@@ -1,3 +1,4 @@
+---
 description: ' Move an entity in a scene &ALYlong;. '
 slug: cinematics-animation-char-move
 title: Moving an Entity in a Scene

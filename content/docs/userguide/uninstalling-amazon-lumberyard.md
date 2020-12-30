@@ -1,3 +1,4 @@
+---
 description: ' Use this procedure to uninstall &ALY; and remove its components from
   your computer. '
 slug: uninstalling-amazon-lumberyard

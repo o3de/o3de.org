@@ -1,3 +1,4 @@
+---
 description: ' Move your assets into &ALY;''s root directory to import and prepare
   your assets to be packaged as a gem. '
 slug: gems-system-gems-packaging

@@ -1,3 +1,4 @@
+---
 description: ' Use a JSON file to customize &ly-launcher; for your project in &ALYlong;. '
 slug: lumberyard-launcher-customizing
 title: Customizing &ly-launcher;

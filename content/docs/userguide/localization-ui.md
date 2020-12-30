@@ -1,3 +1,4 @@
+---
 description: ' Enable the UI system localization feature in &ALYlong;. '
 slug: localization-ui
 title: UI System Localization Features

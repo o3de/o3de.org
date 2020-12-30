@@ -1,3 +1,4 @@
+---
 description: ' Get started with &ALYlong;''s &script-canvas;, a visual scripting environment
   to implement game logic without needing to write code. '
 slug: script-canvas-intro

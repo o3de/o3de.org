@@ -1,3 +1,4 @@
+---
 description: ' Register your Python Asset Builder for your &ALYlong; project. '
 slug: python-asset-builder-register
 title: Register a Python Asset Builder

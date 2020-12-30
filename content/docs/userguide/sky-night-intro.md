@@ -1,3 +1,4 @@
+---
 description: ' Set horizon, moon, and star options to create a dynamic sky in &ALY;. '
 slug: sky-night-intro
 title: Creating a Dynamic Night Sky

@@ -1,3 +1,4 @@
+---
 description: ' Query TPS with Lua scripts in &ALYlong;. '
 slug: ai-tactical-point-lua-interface
 title: TPS Querying with Lua

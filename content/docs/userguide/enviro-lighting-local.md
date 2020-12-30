@@ -1,3 +1,4 @@
+---
 description: ' Use local cubemaps in &ALY; to light smaller areas more accurately
   . '
 slug: enviro-lighting-local

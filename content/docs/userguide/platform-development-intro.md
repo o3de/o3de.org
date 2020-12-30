@@ -1,3 +1,4 @@
+---
 description: ' Develop for platforms other than Windows 10 with &ALYlong;. '
 slug: platform-development-intro
 title: Platform development in &ALY;

@@ -1,3 +1,4 @@
+---
 description: ' Create a controllable character with &script-canvas;, &ALYlong;''s
   visual scripting system. '
 slug: script-canvas-tutorial-controllable-character

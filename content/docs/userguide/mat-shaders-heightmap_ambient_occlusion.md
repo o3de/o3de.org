@@ -1,3 +1,4 @@
+---
 description: ' Enable height map ambient occlusion in your &ALY; level to efficiently
   determine the exposure of ambient light to each point in a scene. '
 slug: mat-shaders-heightmap_ambient_occlusion

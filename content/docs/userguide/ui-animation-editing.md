@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY;''s Animation Editor''s Node Pane, Track Editor, and Curve
   Editor to edit animation sequences. '
 slug: ui-animation-editing

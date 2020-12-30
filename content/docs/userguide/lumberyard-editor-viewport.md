@@ -1,3 +1,4 @@
+---
 description: ' Use the perspective viewport in &ly-editor; to place objects, edit
   terrain, test your game, and create assets in &ALYlong;. '
 slug: lumberyard-editor-viewport

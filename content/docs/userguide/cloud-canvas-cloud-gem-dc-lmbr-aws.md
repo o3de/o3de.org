@@ -1,3 +1,4 @@
+---
 description: ' Use the lmbr_aws CLI to manage dynamic content for your &ALYlong; game. '
 slug: cloud-canvas-cloud-gem-dc-lmbr-aws
 title: Using the Dynamic Content Command Line

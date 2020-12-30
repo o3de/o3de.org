@@ -1,3 +1,4 @@
+---
 description: ' Use voxel octree global illumination or voxel GI in &ALYlong; to provide
   dynamic indirect light and shadows bouncing from static objects. '
 slug: rendering-graphics-svogi

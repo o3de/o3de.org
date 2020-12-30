@@ -1,3 +1,4 @@
+---
 description: ' Some useful examples for the Python Editor Bindings gem, used to automate
   actions in the &ly-editor;. '
 slug: editor-automation-examples

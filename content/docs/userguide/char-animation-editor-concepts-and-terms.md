@@ -1,3 +1,4 @@
+---
 description: null
 slug: char-animation-editor-concepts-and-terms
 title: '&animation-editor; Concepts and Terms'

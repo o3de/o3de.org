@@ -1,3 +1,4 @@
+---
 description: ' Enhance your &ALY; environment with various realistic weather effects. '
 slug: weather-intro
 title: Adding Weather Effects

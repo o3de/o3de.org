@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Water Droplet node in the &ALYlong; &script-canvas;
   editor to enable water droplets. '
 slug: enable-water-droplets-node

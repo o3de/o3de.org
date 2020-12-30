@@ -1,3 +1,4 @@
+---
 description: ' Control the playhead in the &trackview-editor; in &ALYlong;. '
 slug: cinematics-controlling-the-playhead
 title: Controlling the Playhead

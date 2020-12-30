@@ -1,3 +1,4 @@
+---
 description: ' Learn how to migrate your existing &ALYlong; game project to use the
   &asset-bundler; system. '
 slug: asset-bundler-migrating

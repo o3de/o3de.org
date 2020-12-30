@@ -1,3 +1,4 @@
+---
 description: ' Learn how to mark a deployment as protected. '
 slug: cloud-canvas-protected-deployments
 title: 'Using Protected Deployments '

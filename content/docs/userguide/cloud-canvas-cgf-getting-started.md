@@ -1,3 +1,4 @@
+---
 description: ' Learn about cloud gems, the Cloud Gem Framework, and how to create
   your own cloud gem to implement cloud-connected game functionality in &ALYlong;. '
 slug: cloud-canvas-cgf-getting-started

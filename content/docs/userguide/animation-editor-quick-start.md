@@ -1,3 +1,4 @@
+---
 description: ' Use the &animation-editor; quick start to animate a character in &ALYlong;. '
 slug: animation-editor-quick-start
 title: Getting Started with the &animation-editor;

@@ -1,3 +1,4 @@
+---
 description: ' Learn more about path following in &ALYlong;. '
 slug: ai-path-following
 title: Path Following

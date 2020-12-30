@@ -1,3 +1,4 @@
+---
 description: ' Use a Waf spec system template to create Visual Studio solutions for
   your &ALYlong; game. '
 slug: waf-using-spec

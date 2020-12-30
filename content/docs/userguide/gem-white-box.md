@@ -1,3 +1,4 @@
+---
 description: ' Use the &whitebox; gem to add &whitebox; rapid design components to
   your &ALYlong; project. '
 slug: gem-white-box

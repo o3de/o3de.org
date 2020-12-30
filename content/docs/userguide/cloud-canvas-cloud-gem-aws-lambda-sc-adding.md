@@ -1,3 +1,4 @@
+---
 description: ' Make a custom &LAM; function available to &script-canvas; in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-aws-lambda-sc-adding
 title: Making a Custom &LAM; Function Available to &script-canvas;

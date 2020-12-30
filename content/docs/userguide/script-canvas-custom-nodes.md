@@ -1,3 +1,4 @@
+---
 description: ' Create a custom node that you can use in &ALY;''s &script-canvas;. '
 slug: script-canvas-custom-nodes
 title: Creating Custom Nodes in &script-canvas;

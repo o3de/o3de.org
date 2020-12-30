@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; High Quality Shadow component to give an entity its
   own shadow map. '
 slug: component-high-quality-shadow

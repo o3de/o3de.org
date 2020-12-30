@@ -1,3 +1,4 @@
+---
 description: ' Use Microsoft Registered I/O (RIO) socket interface in &ALYlong; networking. '
 slug: network-carrier-rio
 title: Using Windows Registered I/O with GridMate

@@ -1,3 +1,4 @@
+---
 description: ' Control the Defect Reporter cloud gem programmatically in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces
 title: Defect Reporter EBus Interfaces

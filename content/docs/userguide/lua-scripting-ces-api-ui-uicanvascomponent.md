@@ -1,3 +1,4 @@
+---
 description: ' Use the UICanvasComponent in &ALYlong; to control UI canvases and animation. '
 slug: lua-scripting-ces-api-ui-uicanvascomponent
 title: UICanvasComponent

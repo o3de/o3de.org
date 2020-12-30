@@ -1,3 +1,4 @@
+---
 description: ' Use the Render to Texture gem to add the Render to Texture component
   in &ALYlong;. '
 slug: gems-system-render-to-texture

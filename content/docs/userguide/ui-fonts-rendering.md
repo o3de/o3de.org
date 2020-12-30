@@ -1,3 +1,4 @@
+---
 description: ' Specify how fonts render in &ALYlong;''s UI system. '
 slug: ui-fonts-rendering
 title: Configuring Font Rendering Quality

@@ -1,3 +1,4 @@
+---
 description: ' Create custom events and parameters for use in &ALYlong;''s &animation-editor;. '
 slug: char-animation-editor-custom-events-parameters
 title: Creating Custom Motion Events and Parameters Using C++

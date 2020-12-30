@@ -1,3 +1,4 @@
+---
 description: ' Apply displacement mapping and tessellation for an object in &ALYlong;. '
 slug: mat-maps-displacement-intro
 title: Displacement Maps and Tessellation

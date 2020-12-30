@@ -1,3 +1,4 @@
+---
 description: ' Use spline parameters to split a river apart or merge two rivers together
   in your &ALY; level. '
 slug: terrain-rivers-split-merge

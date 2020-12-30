@@ -1,3 +1,4 @@
+---
 description: ' Learn best practices for memory management in &ALYlong;. '
 slug: cpp-best-practices-lumberyard-memory-management
 title: Memory Management

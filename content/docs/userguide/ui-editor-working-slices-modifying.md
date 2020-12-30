@@ -1,3 +1,4 @@
+---
 description: ' Modify a UI slice and push the changes in &ALYlong;''s &ui-canvas-editor;
   . '
 slug: ui-editor-working-slices-modifying

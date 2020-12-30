@@ -1,3 +1,4 @@
+---
 description: ' Work with detail maps in the &material-editor; in &ALYlong;. '
 slug: mat-maps-detail-intro
 title: Working with Detail Maps

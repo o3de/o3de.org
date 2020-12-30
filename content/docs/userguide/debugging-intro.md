@@ -1,3 +1,4 @@
+---
 description: ' Debug and fix performance issues for &ALYlong;. '
 slug: debugging-intro
 title: Debugging Issues

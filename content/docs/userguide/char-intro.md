@@ -1,3 +1,4 @@
+---
 description: ' Learn to animate characters in &ALYlong; with &emotionfx; &animation-editor;
   . '
 slug: char-intro

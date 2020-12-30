@@ -1,3 +1,4 @@
+---
 description: ' Use global fog to simulate fog along the ground in your &ALYlong; level. '
 slug: weather-fog-global
 title: Setting Global (Time of Day) Fog

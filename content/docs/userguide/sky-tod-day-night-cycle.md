@@ -1,3 +1,4 @@
+---
 description: ' Use &tod-editor; to make settings change over time to mimic a day-night
   lighting cycle in your &ALYlong; environment. '
 slug: sky-tod-day-night-cycle

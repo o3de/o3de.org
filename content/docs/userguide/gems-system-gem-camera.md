@@ -1,3 +1,4 @@
+---
 description: ' Use the Camera Framework Gem to build complex camera systems for your
   &ALY; game project. '
 slug: gems-system-gem-camera

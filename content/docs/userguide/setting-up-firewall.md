@@ -1,3 +1,4 @@
+---
 description: ' Enable a LAN firewall to protect your &ALYlong; environment '
 slug: setting-up-firewall
 title: Enabling a Firewall

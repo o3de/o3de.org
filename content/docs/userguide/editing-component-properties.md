@@ -1,3 +1,4 @@
+---
 description: ' Edit component properties that are attached to your entities in &ALYlong;. '
 slug: editing-component-properties
 title: Editing Component Properties

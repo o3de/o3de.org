@@ -1,3 +1,4 @@
+---
 description: ' Upgrade &ALYlong; with or without source control and upgrade your game
   project. '
 slug: lumberyard-upgrading

@@ -1,3 +1,4 @@
+---
 description: ' Learn programming details of &ALYlong;''s behavior context and its
   reflection API. '
 slug: component-entity-system-behavior-context-in-depth

@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use and configure GridHub, the &ALYlong; connection hub
   for debugging. '
 slug: gridhub-intro

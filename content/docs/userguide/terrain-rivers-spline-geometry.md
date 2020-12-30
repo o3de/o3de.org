@@ -1,3 +1,4 @@
+---
 description: ' Make precise changes to the geometry of a river in your &ALY; level
   by adjusting the spline points and parameters '
 slug: terrain-rivers-spline-geometry

@@ -1,3 +1,4 @@
+---
 description: ' Learn the startup sequence for compiled &ALYlong; games and how to
   create the bootstrap.cfg file. '
 slug: asset-pipeline-game-sequence

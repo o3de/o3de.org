@@ -1,3 +1,4 @@
+---
 description: ' Use Leaderboard Cloud Gem service API calls to post, get, and delete
   leaderboard scores in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-leaderboard-cloud-gem-service-api

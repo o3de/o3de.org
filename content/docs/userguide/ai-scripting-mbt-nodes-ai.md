@@ -1,3 +1,4 @@
+---
 description: ' See the following AI nodes for the AI system in &ALYlong;. '
 slug: ai-scripting-mbt-nodes-ai
 title: AI Nodes

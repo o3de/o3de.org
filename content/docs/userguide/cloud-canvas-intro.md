@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; tools in &cloud; to create connected gaming experiences
   using AWS resources like &DDBlong; tables, &LAMlong; functions, or &S3; buckets. '
 slug: cloud-canvas-intro

@@ -1,3 +1,4 @@
+---
 description: ' &ALYlong;. '
 slug: vegetation-layer-spawner-ebus
 title: Ebus Request Bus Interface

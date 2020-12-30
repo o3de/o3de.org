@@ -1,3 +1,4 @@
+---
 description: ' Debug HPHA allocator memory issues in &ALYlong;. '
 slug: memory-management-debugging-hpha
 title: HPHA Memory Debugging

@@ -1,3 +1,4 @@
+---
 description: ' Set effect strength based on camera distance. '
 slug: effect-groups-strength-camera-distance
 title: Setting Effect Strength Based on Camera Distance

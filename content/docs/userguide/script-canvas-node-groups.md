@@ -1,3 +1,4 @@
+---
 description: ' Group &script-canvas; nodes for improved manageability of your visual
   scripts in &ALYlong;. '
 slug: script-canvas-node-groups

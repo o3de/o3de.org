@@ -1,3 +1,4 @@
+---
 description: ' Describes GridMate''s messaging system. '
 slug: network-carrier
 title: Carrier

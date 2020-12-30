@@ -1,3 +1,4 @@
+---
 description: ' Use a global environment probe and its cubemap to control the lighting
   of an entire level. '
 slug: enviro-lighting-global

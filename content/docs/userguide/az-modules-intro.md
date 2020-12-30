@@ -1,3 +1,4 @@
+---
 description: ' Introduces &ALY; AZ modules and compares them with legacy modules. '
 slug: az-modules-intro
 title: Using AZ Modules to Initialize Gems

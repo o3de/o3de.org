@@ -1,3 +1,4 @@
+---
 description: ' Place non-tiling textures as decals to create realistic water puddles
   and water rifts in your &ALY; level. '
 slug: terrain-water-puddles

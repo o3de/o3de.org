@@ -1,3 +1,4 @@
+---
 description: ' Use the &audio-controls-browser; ''s ATL Control pane to add new audio
   controls and to select and edit audio controls in &ALYlong;. '
 slug: audio-atl-editor-atl-controls

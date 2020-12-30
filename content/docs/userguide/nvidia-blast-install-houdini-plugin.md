@@ -1,3 +1,4 @@
+---
 description: ' Install Houdini plug-ins to create destruction assets for simulations
   in &ALYlong; with NVIDIA Blast. '
 slug: nvidia-blast-install-houdini-plugin

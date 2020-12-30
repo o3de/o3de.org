@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the PhysX Rigid Body component in &ALYlong;. '
 slug: component-physx-rigid-body-physics
 title: PhysX Rigid Body

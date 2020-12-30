@@ -1,3 +1,4 @@
+---
 description: ' Learn the basic procedures to create realistic-looking dynamic vegetation
   in &ALYlong;. '
 slug: dynamic-vegetation-procedures

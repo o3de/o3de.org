@@ -1,3 +1,4 @@
+---
 description: ' Use the Box emitter in the &ALYlong; &particle-editor; to enable spawning
   of particles along the shapes axial coordinate system and achieve planar and rectangular
   effects. '

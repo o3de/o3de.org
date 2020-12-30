@@ -1,3 +1,4 @@
+---
 description: ' Use bending for fur materials in &ALYlong;. '
 slug: shader-ref-fur-features-bending
 title: Bending

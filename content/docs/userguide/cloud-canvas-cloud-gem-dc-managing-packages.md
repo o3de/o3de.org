@@ -1,3 +1,4 @@
+---
 description: ' Manage dynamic content game packages in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-dc-managing-packages
 title: Managing Dynamic Content Packages

@@ -1,3 +1,4 @@
+---
 description: ' Use the Audio Switch component to set up a default switch and switch
   states for an entity in &ALY;. '
 slug: component-audio-switch

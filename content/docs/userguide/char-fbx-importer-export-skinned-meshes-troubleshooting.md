@@ -1,3 +1,4 @@
+---
 description: ' You can troubleshoot your skinned meshes for &ALYlong;. '
 slug: char-fbx-importer-export-skinned-meshes-troubleshooting
 title: Troubleshooting Skinned Meshes

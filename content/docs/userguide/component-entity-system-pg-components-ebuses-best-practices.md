@@ -1,3 +1,4 @@
+---
 description: ' Learn about best practices for components and EBuses in &ALYlong;. '
 slug: component-entity-system-pg-components-ebuses-best-practices
 title: 'Components and EBuses: Best Practices'

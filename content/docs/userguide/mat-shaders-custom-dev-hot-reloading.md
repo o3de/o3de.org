@@ -1,3 +1,4 @@
+---
 description: ' Learn more about hot reloading of shaders in &ALYlong;. '
 slug: mat-shaders-custom-dev-hot-reloading
 title: Hot Reloading of Shaders

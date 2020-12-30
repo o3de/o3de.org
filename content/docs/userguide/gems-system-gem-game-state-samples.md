@@ -1,3 +1,4 @@
+---
 description: ' Use the game states in the GameState Samples gem to control the flow
   of your game in &ALYlong;. '
 slug: gems-system-gem-game-state-samples

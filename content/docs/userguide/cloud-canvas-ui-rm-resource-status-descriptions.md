@@ -1,3 +1,4 @@
+---
 description: ' Provides a description of the status codes that appear in &cloud; resource
   operations. '
 slug: cloud-canvas-ui-rm-resource-status-descriptions

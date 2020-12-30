@@ -1,3 +1,4 @@
+---
 description: ' Learn more about off-mesh AI navigation in &ALYlong;. '
 slug: ai-nav-off_mesh_intro
 title: Off-Mesh AI Navigation

@@ -1,3 +1,4 @@
+---
 description: ' Use metadata operations to get metadata from your &cloud; in-game surveys
   in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations

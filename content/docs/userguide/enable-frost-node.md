@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Frost node in the &ALYlong; &script-canvas; editor to
   display frost on the screen. '
 slug: enable-frost-node

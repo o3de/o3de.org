@@ -1,3 +1,4 @@
+---
 description: ' Use these best practices when working with material shaders. '
 slug: material-shaders-custom-development-best-practices
 title: Shader Development Best Practices

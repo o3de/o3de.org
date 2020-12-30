@@ -1,3 +1,4 @@
+---
 description: ' Initialize the localization system in &ALYlong;. '
 slug: localization-initialization
 title: Localization Initialization

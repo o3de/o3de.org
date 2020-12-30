@@ -1,3 +1,4 @@
+---
 description: ' Set decal parameters in &ALYlong;. '
 slug: mat-maps-decal-creating
 title: Setting Decal Parameters

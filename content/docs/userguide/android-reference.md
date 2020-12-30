@@ -1,3 +1,4 @@
+---
 description: ' Learn &ALYlong; build commands and settings for the Android platform. '
 slug: android-reference
 title: Reference for Android

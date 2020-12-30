@@ -1,3 +1,4 @@
+---
 description: null
 slug: gems-lightning-arc-sample
 title: Using the LightingArc Sample

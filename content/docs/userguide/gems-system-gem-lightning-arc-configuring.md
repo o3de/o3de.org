@@ -1,3 +1,4 @@
+---
 description: ' Get custom lightning effects by configure the lightning arc entity
   in &ALY;. '
 slug: gems-system-gem-lightning-arc-configuring

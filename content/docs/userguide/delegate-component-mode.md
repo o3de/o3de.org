@@ -1,3 +1,4 @@
+---
 description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
 slug: delegate-component-mode
 title: 'Step 2: Add a ComponentModeDelegate'

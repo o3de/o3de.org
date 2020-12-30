@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the TPS query language reference in &ALYlong;. '
 slug: ai-tactical-point-query-language
 title: TPS Query Language Reference

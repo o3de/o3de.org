@@ -1,3 +1,4 @@
+---
 description: ' Use the Lighting attribute in the &ALYlong; &particle-editor; to control
   the lighting of the particle. '
 slug: particle-editor-reference-lighting

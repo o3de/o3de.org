@@ -1,3 +1,4 @@
+---
 description: ' Write your own interest manager rule handlers for networked games in
   &ALYlong;. '
 slug: network-interest-manager-custom-rule-handler

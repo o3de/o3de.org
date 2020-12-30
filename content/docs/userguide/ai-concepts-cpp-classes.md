@@ -1,3 +1,4 @@
+---
 description: ' See the following C++ classes for AI objects in &ALYlong;. '
 slug: ai-concepts-cpp-classes
 title: AI C++ Class Hierarchy

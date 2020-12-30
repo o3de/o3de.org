@@ -1,3 +1,4 @@
+---
 description: ' Use the UIScrollBarComponent to control scroll bar characteristics
   in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uiscrollbarcomponent

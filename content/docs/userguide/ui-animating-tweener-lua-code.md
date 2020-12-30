@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use Lua scripting to animate your entities with the Scripted
   Entity Tweener system in &ALYlong;. '
 slug: ui-animating-tweener-lua-code

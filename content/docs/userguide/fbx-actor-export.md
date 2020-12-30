@@ -1,3 +1,4 @@
+---
 description: ' Export actors from .fbx files with FBX Settings to &ALYlong;. '
 slug: fbx-actor-export
 title: FBX Settings actor export

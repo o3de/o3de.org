@@ -1,3 +1,4 @@
+---
 description: ' Use the Sun Rays Effect in &ALYlong; to simulate shafts of sunlight. '
 slug: sky-day-sun-rays
 title: Adding Sun Rays

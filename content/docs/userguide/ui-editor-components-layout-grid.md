@@ -1,3 +1,4 @@
+---
 description: ' Use a layout grid component in the &ALYlong; &ui-canvas-editor; to
   organize child elements into a uniform grid. '
 slug: ui-editor-components-layout-grid

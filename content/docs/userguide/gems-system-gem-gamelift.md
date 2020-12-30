@@ -1,3 +1,4 @@
+---
 description: ' Learn how to control session workflow when using the &AGSlong; &gem;
   for &ALYlong;. '
 slug: gems-system-gem-gamelift

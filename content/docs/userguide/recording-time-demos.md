@@ -1,3 +1,4 @@
+---
 description: ' Record time demos for player input and camera movement in &ALYlong;. '
 slug: recording-time-demos
 title: Recording Time Demos

@@ -1,3 +1,4 @@
+---
 description: ' Use remote procedure calls (RPCs) to send events or requests through
   replicas in &ALYlong;. '
 slug: network-replicas-remote-procedure-calls

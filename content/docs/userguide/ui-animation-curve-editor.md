@@ -1,3 +1,4 @@
+---
 description: ' Use the &curve-editor; in &ALYlong;''s UI Animation editor to change
   the way floating point values vary over time. '
 slug: ui-animation-curve-editor

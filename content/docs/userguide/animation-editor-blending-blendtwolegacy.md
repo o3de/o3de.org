@@ -1,3 +1,4 @@
+---
 description: ' Use the Blend Two (Legacy) node for backward compatibility in &ALYlong;
   &animation-editor; to blend two nodes. '
 slug: animation-editor-blending-blendtwolegacy

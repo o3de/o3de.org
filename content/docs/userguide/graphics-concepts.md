@@ -1,3 +1,4 @@
+---
 description: ' Learn the following primary concepts about working with &ALY;''s graphic
   tools. '
 slug: graphics-concepts

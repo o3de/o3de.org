@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong;''s audio translation layer (ATL) to develop your game
   audio without affecting game logic. '
 slug: audio-intro

@@ -1,3 +1,4 @@
+---
 description: ' Use the In-App Purchases Gem to add in-app purchases in your Android
   and iOS games. '
 slug: gems-system-gem-inapp-purchases

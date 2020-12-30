@@ -1,3 +1,4 @@
+---
 description: ' Connect Wwise to &ly-editor; and the game for &ALYlong;. '
 slug: audio-wwise-connecting-editor-game
 title: Connecting Wwise to the Editor and Game

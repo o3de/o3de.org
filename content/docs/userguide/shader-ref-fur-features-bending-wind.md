@@ -1,3 +1,4 @@
+---
 description: ' Use wind bending for fur materials in &ALYlong;. '
 slug: shader-ref-fur-features-bending-wind
 title: Wind Bending

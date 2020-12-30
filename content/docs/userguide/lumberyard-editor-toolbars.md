@@ -1,3 +1,4 @@
+---
 description: ' Use the top toolbar in &ly-editor; to access editor tools and features
   in &ALYlong;. '
 slug: lumberyard-editor-toolbars

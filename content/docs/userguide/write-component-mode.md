@@ -1,3 +1,4 @@
+---
 description: ' Write a &CM; for your component in &ALYlong;. '
 slug: write-component-mode
 title: 'Step 3: Write a New &CM;'

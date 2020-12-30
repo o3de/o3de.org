@@ -1,3 +1,4 @@
+---
 description: ' Use the Mesh component to add visual geometry to entities in &ALYlong;. '
 slug: component-static-mesh
 title: Mesh

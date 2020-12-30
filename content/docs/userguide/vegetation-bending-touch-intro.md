@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong;''s touch bending effect to simulate a player touching
   or brushing against vegetation. '
 slug: vegetation-bending-touch-intro

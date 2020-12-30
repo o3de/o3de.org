@@ -1,3 +1,4 @@
+---
 description: ' Use the UIDropTargetComponent to make UI elements targets for drag
   and drop behavior in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uidroptarget

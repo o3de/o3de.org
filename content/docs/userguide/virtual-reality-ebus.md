@@ -1,3 +1,4 @@
+---
 description: ' Use EBus request bus functions for virtual reality in &ALYlong;. '
 slug: virtual-reality-ebus
 title: Using EBus Request Bus Interface for Virtual Reality

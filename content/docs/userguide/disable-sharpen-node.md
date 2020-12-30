@@ -1,3 +1,4 @@
+---
 description: ' Use the Disable Sharpen node in the &ALYlong; &script-canvas; editor
   to disable the sharpen filter. '
 slug: disable-sharpen-node

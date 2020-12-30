@@ -1,3 +1,4 @@
+---
 description: ' Add component entities in the &trackview-editor; in &ALYlong;. '
 slug: cinematics-adding-component-entities
 title: Adding Component Entities

@@ -1,3 +1,4 @@
+---
 description: ' Learn best practices for using the C++ programming language in &ALYlong;. '
 slug: cpp-best-practices-lumberyard
 title: C++ Best Practices for &ALYlong;

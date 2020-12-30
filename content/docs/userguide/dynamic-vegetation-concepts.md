@@ -1,3 +1,4 @@
+---
 description: ' Learn about dynamic vegetation concepts and ideas in &ALYlong;. '
 slug: dynamic-vegetation-concepts
 title: Dynamic Vegetation Concepts

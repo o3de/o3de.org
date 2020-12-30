@@ -1,3 +1,4 @@
+---
 description: ' Use advanced particle techniques in the &ALYlong; &particle-editor;. '
 slug: particle-advanced
 title: Advanced Particle Techniques

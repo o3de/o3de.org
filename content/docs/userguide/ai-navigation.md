@@ -1,3 +1,4 @@
+---
 description: ' Learn more about FAQs for AI navigation in &ALYlong;. '
 slug: ai-navigation
 title: Navigation Q &amp; A

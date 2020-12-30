@@ -1,3 +1,4 @@
+---
 description: ' Use the AZ::Event template class to subscribe to and publish messages
   across game components. '
 slug: az-event

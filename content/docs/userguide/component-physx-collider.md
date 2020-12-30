@@ -1,3 +1,4 @@
+---
 description: ' Use the &physx-collider; component to define where collision detection
   and response occur in &ALYlong;. '
 slug: component-physx-collider

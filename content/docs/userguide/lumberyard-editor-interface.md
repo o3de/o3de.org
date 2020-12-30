@@ -1,3 +1,4 @@
+---
 description: ' See an overview of the &ly-editor; interface. '
 slug: lumberyard-editor-interface
 title: '&ly-editor; Interface'

@@ -1,3 +1,4 @@
+---
 description: ' Create an animation graph and simulate your PhysX ragdoll in the &ALYlong;
   &animation-editor; . '
 slug: animation-editor-creating-and-simulating-physx-ragdoll

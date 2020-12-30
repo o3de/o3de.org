@@ -1,3 +1,4 @@
+---
 description: ' Generate a .dat file for sky rendering in &ALYlong;. '
 slug: graphics-rendering-stars
 title: Generating Stars .dat File

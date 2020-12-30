@@ -1,3 +1,4 @@
+---
 description: ' See the following best practices when working with slices and sequences
   in &ALYlong;. '
 slug: working-with-slices-cinematic-sequences

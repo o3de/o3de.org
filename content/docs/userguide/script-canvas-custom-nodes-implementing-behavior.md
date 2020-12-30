@@ -1,3 +1,4 @@
+---
 description: null
 slug: script-canvas-custom-nodes-implementing-behavior
 title: Implementing Node Behavior

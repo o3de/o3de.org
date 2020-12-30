@@ -1,3 +1,4 @@
+---
 description: Use the lmbr capabilities command to list, create, disable, and enable
   &ALY; capabilities.
 slug: lmbr-exe-capabilities

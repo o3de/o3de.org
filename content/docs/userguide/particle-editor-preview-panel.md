@@ -1,3 +1,4 @@
+---
 description: ' Use the Preview panel to view your particle effect in the &ALY; &particle-editor;. '
 slug: particle-editor-preview-panel
 title: Using the Preview Panel

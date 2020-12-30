@@ -1,3 +1,4 @@
+---
 description: ' Adjust horizon, moon, and starfield settings to create a dynamic nighttime
   atmospheric effects in &ALYlong;. '
 slug: sky-night-atmosphere

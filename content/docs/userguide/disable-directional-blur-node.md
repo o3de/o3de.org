@@ -1,3 +1,4 @@
+---
 description: ' Use the Disable Directional Blur node in the &ALYlong; &script-canvas;
   editor to disable the directional blur. '
 slug: disable-directional-blur-node

@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong;''s Scripted Tweener Entity system to create animations
   in your game''s UI. '
 slug: ui-animating-tweener

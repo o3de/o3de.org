@@ -1,3 +1,4 @@
+---
 description: ' Use the UIElementComponent to provide functionality for UI elements
   in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uielementcomponent

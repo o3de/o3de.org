@@ -1,3 +1,4 @@
+---
 description: ' Visualize objects in a world with render nodes in &ALYlong;. '
 slug: graphics-rendering-rendernode
 title: Render Nodes

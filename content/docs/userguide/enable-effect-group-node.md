@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Effect Group node in the &ALYlong; &script-canvas; editor
   to enable a group of effects. '
 slug: enable-effect-group-node

@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Param Color node in the &ALYlong; &script-canvas; editor
   to return a material''s color parameter. '
 slug: material-owner-get-param-color-node

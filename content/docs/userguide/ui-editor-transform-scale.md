@@ -1,3 +1,4 @@
+---
 description: ' Use the Scale to Device setting in the &ui-canvas-editor; to scale
   game UIs to different resolutions in &ALYlong;. '
 slug: ui-editor-transform-scale

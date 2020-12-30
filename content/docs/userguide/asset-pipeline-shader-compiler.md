@@ -1,3 +1,4 @@
+---
 description: ' Use the shader compiler proxy component in &ALYlong; to forward shader
   compiler requests through the &asset-processor; connection. '
 slug: asset-pipeline-shader-compiler

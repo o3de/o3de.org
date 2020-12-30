@@ -1,3 +1,4 @@
+---
 description: ' See the following example for individual AI for tactical points in
   &ALYlong;. '
 slug: ai-concepts-example-dynamic-tactical-points

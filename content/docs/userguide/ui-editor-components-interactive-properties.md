@@ -1,3 +1,4 @@
+---
 description: ' Work with the input enabled, states, navigation, and action properties
   of the &ui-canvas-editor; in &ALY;. '
 slug: ui-editor-components-interactive-properties

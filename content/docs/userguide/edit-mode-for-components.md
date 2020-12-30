@@ -1,3 +1,4 @@
+---
 description: ' You can use component edit mode so that you can specifically edit one
   component at a time in &ALYlong;. '
 slug: edit-mode-for-components

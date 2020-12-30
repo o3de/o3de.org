@@ -1,3 +1,4 @@
+---
 description: ' Use EventData types to create custom parameters for motion events in
   &ALYlong;. '
 slug: char-animation-editor-custom-events-parameters-creating-eventdata-types

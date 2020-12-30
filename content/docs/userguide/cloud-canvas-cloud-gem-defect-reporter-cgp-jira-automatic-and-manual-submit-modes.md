@@ -1,3 +1,4 @@
+---
 description: null
 slug: cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-and-manual-submit-modes
 title: Automatic and Manual Submit Modes

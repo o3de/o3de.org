@@ -1,3 +1,4 @@
+---
 description: ' Use the CloudGemAWSScriptBehaviors gem in &ALYlong; to access &AWS;
   services from your scripts. '
 slug: cloud-canvas-cgf-aws-behavior-context-reflections

@@ -1,3 +1,4 @@
+---
 description: ' Use the Set Skybox Stretch node in the &ALYlong; &script-canvas; editor
   to stretch the skybox vertically. '
 slug: set-sky-box-stretch

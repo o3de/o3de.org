@@ -1,3 +1,4 @@
+---
 description: ' Use the Advanced attribute in the &ALYlong; &particle-editor; to modify
   advanced appearance and optimization settings. '
 slug: particle-editor-reference-advanced

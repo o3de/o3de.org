@@ -1,3 +1,4 @@
+---
 description: ' Use &ly-editor; keyboard shortcuts (hot keys or hotkeys). '
 slug: lumberyard-editor-shortcut-keys
 title: Using Keyboard Shortcuts

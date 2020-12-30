@@ -1,3 +1,4 @@
+---
 description: ' Customize your lightning arc effect entity by copying or modifying
   presets in &ALY;''s lightningarceffects.xml file. '
 slug: gems-system-gem-lightning-arc-presets

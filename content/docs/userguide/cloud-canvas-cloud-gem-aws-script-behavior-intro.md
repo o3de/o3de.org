@@ -1,3 +1,4 @@
+---
 description: ' Use the &AWS; Script Behaviors cloud gem to implement &AWS; features
   in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-aws-script-behavior-intro

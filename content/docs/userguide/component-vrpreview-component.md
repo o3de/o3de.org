@@ -1,3 +1,4 @@
+---
 description: ' Use the VR Preview component to instantly explore a space in virtual
   reality. '
 slug: component-vrpreview-component

@@ -1,3 +1,4 @@
+---
 description: ' Use console variables and commands to debug UI canvases in &ALYlong;. '
 slug: ui-editor-debugging-ui-canvases
 title: Debugging UI Canvases

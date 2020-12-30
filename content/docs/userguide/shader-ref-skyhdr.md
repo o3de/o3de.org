@@ -1,3 +1,4 @@
+---
 description: ' Use the SkyHDR shader to render dynamic sky effects in &ALYlong;. '
 slug: shader-ref-skyhdr
 title: SkyHDR Shader

@@ -1,3 +1,4 @@
+---
 description: ' Invoke an &LAMlong; function with &script-canvas; in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-aws-lambda-sc
 title: Invoking an &LAMlong; Function from &script-canvas;

@@ -1,3 +1,4 @@
+---
 description: ' Use tooltip components to give an element a tool tip when hovering
   over it, and configure its display properties in &ALY;''s &ui-canvas-editor;. '
 slug: ui-editor-components-tooltips

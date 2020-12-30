@@ -1,3 +1,4 @@
+---
 description: ' Import a megaterrain texture, also known as a color map, into &ALYlong;. '
 slug: terrain-import-color-megaterrain
 title: Importing a Megaterrain Texture

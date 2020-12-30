@@ -1,3 +1,4 @@
+---
 description: ' Select an AI navigation type in &ALYlong;. '
 slug: ai-nav-agent-types
 title: Selecting an AI Navigation Type

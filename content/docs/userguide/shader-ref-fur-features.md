@@ -1,3 +1,4 @@
+---
 description: ' Use the fur features for fur materials in &ALY;. '
 slug: shader-ref-fur-features
 title: Fur Features

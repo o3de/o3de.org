@@ -1,3 +1,4 @@
+---
 description: ' Use the UIFlipbookAnimationComponent to animate the display of a range
   of cells in a sprite sheet image in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uiflipbookanimationcomponent

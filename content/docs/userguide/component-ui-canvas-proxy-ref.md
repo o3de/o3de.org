@@ -1,3 +1,4 @@
+---
 description: ' Use the UI Canvas Proxy Ref component in &ALYlong; to place a UI canvas
   on a 3D mesh that a player can interact with. '
 slug: component-ui-canvas-proxy-ref

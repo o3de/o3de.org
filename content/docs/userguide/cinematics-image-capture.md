@@ -1,3 +1,4 @@
+---
 description: ' Capture image frames in &ALYlong; with render output, a capture track,
   or console variables. '
 slug: cinematics-image-capture

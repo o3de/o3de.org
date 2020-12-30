@@ -1,3 +1,4 @@
+---
 description: ' Enable the Visibility gem to add the Vis Area component to your game
   project in &ALYlong;. '
 slug: gems-system-gem-visibility

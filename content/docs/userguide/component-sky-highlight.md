@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; Sky Highlight component to add bursts of light to
   the sky. '
 slug: component-sky-highlight

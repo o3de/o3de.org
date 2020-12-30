@@ -1,3 +1,4 @@
+---
 description: ' Learn about the asset data file types that &ALYlong; supports. '
 slug: lumberyard-file-types
 title: '&ALY; Asset File Types'

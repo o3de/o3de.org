@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Sun Latitude node in the &ALYlong; &script-canvas; editor
   to return the sun latitude. '
 slug: get-sun-latitude-node

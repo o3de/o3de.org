@@ -1,3 +1,4 @@
+---
 description: ' The &ALYlong; &asset-bundler; is a tool that you use to package and
   deploy the actual assets that are used in your game. This tool also provides timelier
   and more efficient content updates and patches. '

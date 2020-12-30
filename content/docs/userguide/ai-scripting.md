@@ -1,3 +1,4 @@
+---
 description: ' Learn more about AI scripting in &ALYlong;. '
 slug: ai-scripting
 title: AI Scripting

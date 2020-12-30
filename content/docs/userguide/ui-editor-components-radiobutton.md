@@ -1,3 +1,4 @@
+---
 description: ' Use a RadioButton component to make an element behave like a radio
   button in &ALY;''s &ui-canvas-editor;. '
 slug: ui-editor-components-radiobutton

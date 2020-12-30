@@ -1,3 +1,4 @@
+---
 description: null
 slug: create-cinematics-with-simple-motion-animations-in-track-view-editor
 title: Creating Character Animations with the Simple Motion Component

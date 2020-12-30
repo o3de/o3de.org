@@ -1,3 +1,4 @@
+---
 description: ' Specify decal parameters for materials in &ALYlong;. '
 slug: mat-maps-decal-intro
 title: Working with Decals

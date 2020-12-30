@@ -1,3 +1,4 @@
+---
 description: ' See the following controller nodes in &ALYlong;. '
 slug: animation-editor-controller-nodes
 title: Controller Nodes

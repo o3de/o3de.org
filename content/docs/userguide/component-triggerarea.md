@@ -1,3 +1,4 @@
+---
 description: ' Use the Trigger Area component to set up an area that triggers an action
   upon entering or exiting in &ALYlong;. '
 slug: component-triggerarea

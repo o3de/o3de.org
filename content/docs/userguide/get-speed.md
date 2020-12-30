@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Speed node in the &ALYlong; &script-canvas; editor to return
   the speed multiplier for the time of day. '
 slug: get-speed

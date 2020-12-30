@@ -1,3 +1,4 @@
+---
 description: ' Use the missing dependency scanner in &ALY; to identify missing asset
   references. '
 slug: asset-bundler-missing-dependency-scanner

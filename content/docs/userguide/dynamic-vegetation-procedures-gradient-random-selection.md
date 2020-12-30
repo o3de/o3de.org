@@ -1,3 +1,4 @@
+---
 description: ' Link gradient entities to vegetation entities to create random distribution
   in &ALYlong; dynamic vegetation. '
 slug: dynamic-vegetation-procedures-gradient-random-selection

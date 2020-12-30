@@ -1,3 +1,4 @@
+---
 description: ' Set navigation exclusion areas for an AI agent in &ALYlong;. '
 slug: ai-nav-areas-exclusion
 title: Setting Navigation Exclusion Areas

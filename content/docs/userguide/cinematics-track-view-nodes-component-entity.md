@@ -1,3 +1,4 @@
+---
 description: ' Create a component entity node to add to a track in &ALYlong;''s &trackview-editor;. '
 slug: cinematics-track-view-nodes-component-entity
 title: Component Entities and Component Nodes

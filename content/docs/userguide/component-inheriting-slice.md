@@ -1,3 +1,4 @@
+---
 description: ' Create nested slices in &ly-editor;. '
 slug: component-inheriting-slice
 title: Creating Nested Slices

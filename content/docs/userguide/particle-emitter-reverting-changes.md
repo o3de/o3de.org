@@ -1,3 +1,4 @@
+---
 description: Learn how to revert changes to an emitter's parameters or attributes.
 slug: particle-emitter-reverting-changes
 title: Reverting Changes to Emitter Attributes

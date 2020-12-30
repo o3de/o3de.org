@@ -1,3 +1,4 @@
+---
 description: ' Set up a simulated object such as a tassel for your actor in &ALYlong;. '
 slug: set-up-a-simulated-object
 title: Setting Up a Simulated Object

@@ -1,3 +1,4 @@
+---
 description: ' Use the Audio Area Environment component in &ALYlong; to apply an environment
   effect to sounds that an entity triggers. '
 slug: component-audio-preload

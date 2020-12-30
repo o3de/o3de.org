@@ -1,3 +1,4 @@
+---
 description: ' Create sequences for animations using the &trackview-editor;''s toolbars
   in &ALYlong;. '
 slug: cinematics-track-view-editor-toolbars

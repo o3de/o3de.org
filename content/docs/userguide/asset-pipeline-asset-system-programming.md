@@ -1,3 +1,4 @@
+---
 description: ' Understand the workflow of &ALYlong;''s runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
 slug: asset-pipeline-asset-system-programming

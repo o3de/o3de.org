@@ -1,3 +1,4 @@
+---
 description: ' Enable or disable effect groups with the &script-canvas; editor or
   in Lua. '
 slug: effect-groups-enabling-disabling

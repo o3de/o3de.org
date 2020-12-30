@@ -1,3 +1,4 @@
+---
 description: ' Learn about the &ALYlong; Blast Family component. '
 slug: component-blast-family
 title: Blast Family component

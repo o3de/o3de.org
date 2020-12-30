@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use blend spaces in the &animation-editor;. '
 slug: animation-editor-blend-spaces
 title: Creating and Visualizing Blend Spaces

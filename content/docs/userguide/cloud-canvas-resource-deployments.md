@@ -1,3 +1,4 @@
+---
 description: ' Use &CFN; stacks to deploy resources and use &ALY; tools to create
   and manage the stacks. '
 slug: cloud-canvas-resource-deployments

@@ -1,3 +1,4 @@
+---
 description: ' See the following potential areas to develop TPS in &ALYlong;. '
 slug: ai-tactical-point-future
 title: Future Plans and Possibilities

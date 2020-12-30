@@ -1,3 +1,4 @@
+---
 description: Organize and create relationships between your emitters. Use folders
   and groups in a library, or create single emitters and emitters with various child
   hierarchies.

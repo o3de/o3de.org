@@ -1,3 +1,4 @@
+---
 description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup time
   in &ALYlong;. '
 slug: asset-processor-faster-scanning

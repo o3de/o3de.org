@@ -1,3 +1,4 @@
+---
 description: ' Create a game project in the &ALYlong; &project-configurator; or from
   a command line. '
 slug: configurator-projects

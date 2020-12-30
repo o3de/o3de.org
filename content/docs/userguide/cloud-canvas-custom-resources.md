@@ -1,3 +1,4 @@
+---
 description: ' Use common resources in &cloud; project, deployment, and resource group
   &CFN; template files similar to library functions in &ALYlong;. '
 slug: cloud-canvas-custom-resources

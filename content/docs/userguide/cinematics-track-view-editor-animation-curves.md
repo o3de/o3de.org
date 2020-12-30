@@ -1,3 +1,4 @@
+---
 description: ' Use the Curve Editor in &trackview-editor; to manage animations in
   &ALYlong;. '
 slug: cinematics-track-view-editor-animation-curves

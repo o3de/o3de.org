@@ -1,3 +1,4 @@
+---
 description: ' Use &script-canvas; to upload a file to &S3; in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-aws-s3-upload-sc
 title: Uploading a File to &S3; with &script-canvas;

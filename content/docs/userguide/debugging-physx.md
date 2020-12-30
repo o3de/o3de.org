@@ -1,3 +1,4 @@
+---
 description: ' Debug PhysX issues for your game in &ALYlong;. '
 slug: debugging-physx
 title: Debugging PhysX

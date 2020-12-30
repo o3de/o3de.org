@@ -1,3 +1,4 @@
+---
 description: ' Use material nodes to work with material assets in the &ALYlong; &script-canvas;
   editor. '
 slug: script-canvas-materials-nodes

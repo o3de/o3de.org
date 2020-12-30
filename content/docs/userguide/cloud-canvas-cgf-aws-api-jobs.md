@@ -1,3 +1,4 @@
+---
 description: ' Use the Cloud Gem Framework to run &AWS; API jobs. '
 slug: cloud-canvas-cgf-aws-api-jobs
 title: 'Running AWS API Jobs Using the Cloud Gem Framework '

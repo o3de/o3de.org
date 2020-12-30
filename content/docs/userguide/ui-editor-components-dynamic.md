@@ -1,3 +1,4 @@
+---
 description: ' Use dynamic components together with the layout components and scroll
   box components to display dynamic content in a game UI in &ALY;. '
 slug: ui-editor-components-dynamic

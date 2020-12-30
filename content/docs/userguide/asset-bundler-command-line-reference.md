@@ -1,3 +1,4 @@
+---
 description: ' Command reference for the &ALYlong; &asset-bundler; command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '

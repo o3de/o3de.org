@@ -1,3 +1,4 @@
+---
 description: ' Learn how marshalers read and write data to and from buffers in a &ALYlong;
   GridMate network session. '
 slug: network-marshalling

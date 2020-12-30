@@ -1,3 +1,4 @@
+---
 description: ' Use the &ui-canvas-editor; to create and customize various user interface
   elements in &ALYlong;. '
 slug: ui-editor-intro

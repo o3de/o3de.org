@@ -1,3 +1,4 @@
+---
 description: ' Create a slice in &ly-editor;. '
 slug: component-slices-creating
 title: Creating a Slice

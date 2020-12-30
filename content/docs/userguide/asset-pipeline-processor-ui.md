@@ -1,3 +1,4 @@
+---
 description: ' Learn the functions of each area of the &asset-processor; interface
   in &ALYlong;. '
 slug: asset-pipeline-processor-ui

@@ -1,3 +1,4 @@
+---
 description: ' Learn about how &ALYlong; uses system components. '
 slug: az-module-system-components
 title: System Components

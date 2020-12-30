@@ -1,3 +1,4 @@
+---
 description: ' See the layout of the &script-canvas; editor in &ly-editor;. '
 slug: script-canvas-editor-interface
 title: '&script-canvas; Editor Interface'

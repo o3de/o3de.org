@@ -1,3 +1,4 @@
+---
 description: ' Set up simulated object colliders so that the actor''s body interacts
   with the tassel in &ALYlong;. '
 slug: set-up-simulated-object-collider

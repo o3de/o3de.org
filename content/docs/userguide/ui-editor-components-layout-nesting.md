@@ -1,3 +1,4 @@
+---
 description: ' Nest layout components within other layout components in the &ALYlong;
   &ui-canvas-editor;. '
 slug: ui-editor-components-layout-nesting

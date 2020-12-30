@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; &texture-settings; to work with texture assets. '
 slug: texture-settings-editor
 title: '&texture-settings;'

@@ -1,3 +1,4 @@
+---
 description: ' Add detail bending effects to the vegetation in your &ALYlong; game
   project. '
 slug: vegetation-bending-detail-intro

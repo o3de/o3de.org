@@ -1,3 +1,4 @@
+---
 description: ' Use dynamic slices in &ALYlong;. '
 slug: dynamic-slices-what-is
 title: Working with Dynamic Slices

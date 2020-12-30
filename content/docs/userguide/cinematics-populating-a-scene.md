@@ -1,3 +1,4 @@
+---
 description: ' Create scenes in a track view sequence in the &trackview-editor; in
   &ALYlong;. '
 slug: cinematics-populating-a-scene

@@ -1,3 +1,4 @@
+---
 description: ' Compile assets and build your Android project with &ALYlong;. '
 slug: android-build-deploy
 title: Build and deploy your project for Android

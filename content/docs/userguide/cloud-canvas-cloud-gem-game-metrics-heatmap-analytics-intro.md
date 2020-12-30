@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; Game Metrics Cloud Gem and heatmap overlay to view
   generated data and any metric type that a game client sends. '
 slug: cloud-canvas-cloud-gem-game-metrics-heatmap-analytics-intro

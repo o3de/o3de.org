@@ -1,3 +1,4 @@
+---
 description: ' The &ALYlong; PhysX Fixed Joint component. '
 slug: component-physx-fixed-joint
 title: PhysX Fixed Joint component

@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; &asset-pipeline; to convert your source art and other
   assets into game ready data. '
 slug: asset-pipeline-intro

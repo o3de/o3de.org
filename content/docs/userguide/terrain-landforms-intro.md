@@ -1,3 +1,4 @@
+---
 description: ' Use a variety of brushes to add realistic mountains, valleys, and other
   landforms to your &ALY; terrain. '
 slug: terrain-landforms-intro

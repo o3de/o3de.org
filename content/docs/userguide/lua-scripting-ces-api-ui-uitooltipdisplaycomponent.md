@@ -1,3 +1,4 @@
+---
 description: ' Use the UITooltipDisplayComponent to control the display behavior of
   a tooltip in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uitooltipdisplaycomponent

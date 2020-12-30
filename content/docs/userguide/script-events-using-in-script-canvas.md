@@ -1,3 +1,4 @@
+---
 description: null
 slug: script-events-using-in-script-canvas
 title: Using Script Events in &script-canvas;

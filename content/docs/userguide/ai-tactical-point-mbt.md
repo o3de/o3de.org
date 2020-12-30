@@ -1,3 +1,4 @@
+---
 description: ' Integrate with the modular behavior tree (MBT) system in &ALYlong;. '
 slug: ai-tactical-point-mbt
 title: Integration with the Modular Behavior Tree System

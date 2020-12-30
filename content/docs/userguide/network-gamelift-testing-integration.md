@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use &AGS; Local to test your &AGS; integration in your
   &ALYlong; game projects. '
 slug: network-gamelift-testing-integration

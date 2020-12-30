@@ -1,3 +1,4 @@
+---
 description: ' Use the event node to trigger and send values to &script-canvas; in
   &ALYlong;. '
 slug: cinematics-track-view-nodes-event

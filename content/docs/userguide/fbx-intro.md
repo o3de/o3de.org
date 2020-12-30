@@ -1,3 +1,4 @@
+---
 description: ' Use FBX Settings to customize how static meshes, actors, PhysX colliders,
   and motions stored in .fbx files are exported for &ALYlong;. '
 slug: fbx-intro

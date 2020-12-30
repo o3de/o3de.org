@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the &AWS; features behind the Defect Reporter cloud
   gem in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-defect-reporter-implementation-details

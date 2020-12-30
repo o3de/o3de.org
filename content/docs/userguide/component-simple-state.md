@@ -1,3 +1,4 @@
+---
 description: ' Use the Simple State component in &ALYlong; to provide a simple state
   machine. '
 slug: component-simple-state

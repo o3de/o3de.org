@@ -1,3 +1,4 @@
+---
 description: ' Use the scopes shader to render optical effects in &ALYlong;. '
 slug: shader-ref-scopes
 title: Scopes Shader

@@ -1,3 +1,4 @@
+---
 description: ' Learn about the relationship between &script-canvas; and the behavior
   context in &ALYlong;. '
 slug: script-canvas-behavior-context

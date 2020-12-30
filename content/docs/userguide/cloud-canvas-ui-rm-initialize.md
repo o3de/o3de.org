@@ -1,3 +1,4 @@
+---
 description: ' Learn how to initialize &cloud; Resource Manager . '
 slug: cloud-canvas-ui-rm-initialize
 title: Initializing &cloud; Resource Manager

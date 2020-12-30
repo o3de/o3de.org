@@ -1,3 +1,4 @@
+---
 description: ' Learn more about parallax occlusion mapping (POM) in &ALYlong;. '
 slug: mat-maps-parallax-intro
 title: Parallax Mapping

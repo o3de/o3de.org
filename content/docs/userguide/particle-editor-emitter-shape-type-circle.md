@@ -1,3 +1,4 @@
+---
 description: ' Use the Circle emitter in the &ALYlong; &particle-editor; to enable
   spawning of particles along the shapes axial coordinate system and to achieve circular
   and cylindrical effects. '

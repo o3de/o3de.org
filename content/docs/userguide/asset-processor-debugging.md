@@ -1,3 +1,4 @@
+---
 description: ' Debug &asset-processor; issues in &ALYlong; '
 slug: asset-processor-debugging
 title: Debugging &asset-processor;

@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY; &particle-editor; keyboard shortcuts (hot keys or hotkeys).
   You can also edit the keyboard shortcuts. '
 slug: particle-editor-shortcut-keys

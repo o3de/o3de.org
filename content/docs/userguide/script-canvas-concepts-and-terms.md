@@ -1,3 +1,4 @@
+---
 description: null
 slug: script-canvas-concepts-and-terms
 title: '&script-canvas; Concepts and Terms'

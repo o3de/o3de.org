@@ -1,3 +1,4 @@
+---
 description: Create a child emitter by setting the parent effect and attaching the
   child emitter to the parent particles. A particle effect can have any number of
   child effects (subeffects).

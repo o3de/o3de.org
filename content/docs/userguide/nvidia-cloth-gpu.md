@@ -1,3 +1,4 @@
+---
 description: ' Simulate cloth on a GPU in &ALYlong; with NVIDIA Cloth and NVIDIA CUDA. '
 slug: nvidia-cloth-gpu
 title: GPU cloth simulation with NVIDIA CUDA

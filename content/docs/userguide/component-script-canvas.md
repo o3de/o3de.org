@@ -1,3 +1,4 @@
+---
 description: ' Use the &script-canvas; component to add a script to an entity in &ALYlong;. '
 slug: component-script-canvas
 title: Script Canvas

@@ -1,3 +1,4 @@
+---
 description: ' Identify and fix common issues seen during Android development with
   &ALYlong;. '
 slug: troubleshoot-android

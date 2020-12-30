@@ -1,3 +1,4 @@
+---
 description: ' Learn the resource definitions in &CFN; templates that determine which
   &AWS; resources will be created for your game in &ALY;. '
 slug: cloud-canvas-resource-definitions

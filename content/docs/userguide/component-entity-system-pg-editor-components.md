@@ -1,3 +1,4 @@
+---
 description: ' Learn about editor components in &ALYlong;. '
 slug: component-entity-system-pg-editor-components
 title: Editor Components

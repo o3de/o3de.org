@@ -1,3 +1,4 @@
+---
 description: ' Set tessellation parameters in the &material-editor; in &ALYlong;. '
 slug: mat-maps-displacement-tessellation-params
 title: Setting Tessellation Parameters

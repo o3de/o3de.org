@@ -1,3 +1,4 @@
+---
 description: ' Resize a terrain heightmap in &ALY; by changing its resolution. '
 slug: terrain-heightmap-resize
 title: Resizing a Terrain Heightmap

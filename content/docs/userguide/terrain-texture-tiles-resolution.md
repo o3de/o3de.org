@@ -1,3 +1,4 @@
+---
 description: ' Divide &ALY; texture layers into smaller sections to increase the resolution
   of heavily viewed areas. '
 slug: terrain-texture-tiles-resolution

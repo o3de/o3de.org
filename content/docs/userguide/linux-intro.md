@@ -1,3 +1,4 @@
+---
 description: ' Use &ALYlong; to compile a dedicated Linux server for a multiplayer
   game, prepare your server for game hosting, and integrate with &AGS;. '
 slug: linux-intro

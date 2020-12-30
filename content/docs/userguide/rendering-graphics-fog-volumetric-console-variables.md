@@ -1,3 +1,4 @@
+---
 description: ' Use console variables to control volumetric fog in &ALYlong;. '
 slug: rendering-graphics-fog-volumetric-console-variables
 title: Console Variables for Volumetric Fog

@@ -1,3 +1,4 @@
+---
 description: ' Learn about the Dynamic Cloud Gem manifest files, EBus events, and
   service API in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-dc-engineering

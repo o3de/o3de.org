@@ -1,3 +1,4 @@
+---
 description: ' Paint with a texture layer to quickly add grass to a large area of
   your &ALY; terrain. '
 slug: vegetation-grass-procedural

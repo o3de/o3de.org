@@ -1,3 +1,4 @@
+---
 description: ' See additional information when working with the &ALYlong; Infinite
   Ocean component. '
 slug: infinite-ocean-component-additional-worklow

@@ -1,3 +1,4 @@
+---
 description: ' Keep these best practices in mind when you create and implement your
   texture maps for parallax lighting in &ALYlong;. '
 slug: mat-maps-parallax-best-practices

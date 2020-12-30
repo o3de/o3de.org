@@ -1,3 +1,4 @@
+---
 description: ' Use &ly-launcher; to install required third-party software, SDKs, and
   plugins. '
 slug: lumberyard-launcher-using

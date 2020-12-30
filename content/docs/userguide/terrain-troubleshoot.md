@@ -1,3 +1,4 @@
+---
 description: ' Troubleshoot issues for &ALYlong; terrain. '
 slug: terrain-troubleshoot
 title: Terrain FAQs

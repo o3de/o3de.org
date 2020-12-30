@@ -1,3 +1,4 @@
+---
 description: ' Use the UIScrollBoxComponent to control the characteristics of a scroll
   box in &ALYlong;. '
 slug: lua-scripting-ces-api-ui-uiscrollboxcomponent

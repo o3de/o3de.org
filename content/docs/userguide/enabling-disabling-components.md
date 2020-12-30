@@ -1,3 +1,4 @@
+---
 description: ' Enable and disable components for entities in &ALYlong;. '
 slug: enabling-disabling-components
 title: Disabling and Enabling Components on Entities

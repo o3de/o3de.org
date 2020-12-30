@@ -1,3 +1,4 @@
+---
 description: ' Use keyboard, mouse, or menu to navigate the &ui-canvas-editor; viewport
   in &ALYlong;. '
 slug: ui-editor-navigating-viewport

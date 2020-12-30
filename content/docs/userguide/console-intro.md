@@ -1,3 +1,4 @@
+---
 description: ' Use the console window in &ly-editor; to update the value for console
   variables or type commands. '
 slug: console-intro

@@ -1,3 +1,4 @@
+---
 description: ' Use the material settings for the fur rendering in &ALYlong;. '
 slug: shader-ref-fur-materialsettings
 title: Material Settings

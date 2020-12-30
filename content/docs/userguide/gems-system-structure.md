@@ -1,3 +1,4 @@
+---
 description: ' Learn how &ALYlong; gems are structured and the files that you can
   modify to customize gems for your game. '
 slug: gems-system-structure

@@ -1,3 +1,4 @@
+---
 description: ' Create a &ALYlong; terrain that features 2k height and 16k megaterrain
   color. '
 slug: terrain-high-quality

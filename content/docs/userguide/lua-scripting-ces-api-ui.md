@@ -1,3 +1,4 @@
+---
 description: ' Legacy script UI functionality in &ALYlong; using the Lua scripting
   language. '
 slug: lua-scripting-ces-api-ui

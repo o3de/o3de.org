@@ -1,3 +1,4 @@
+---
 description: ' Use the VRAM profiler in &ALYlong; to determine which resources are
   contributing most to runtime video memory usage in your game. '
 slug: profiler-vram

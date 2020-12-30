@@ -1,3 +1,4 @@
+---
 description: ' Learn how to create and reflect components in C++ using the &ALY; Component
   Entity System. '
 slug: component-entity-system-pg-intro

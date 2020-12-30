@@ -1,3 +1,4 @@
+---
 description: ' Use the manual method to add grass for more control and lower memory
   usage. '
 slug: vegetation-grass-manual

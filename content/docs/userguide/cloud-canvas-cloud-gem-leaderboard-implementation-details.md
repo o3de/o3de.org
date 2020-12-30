@@ -1,3 +1,4 @@
+---
 description: ' Learn the implementation details for the Leaderboard Sample Level in
   &ALYlong;. '
 slug: cloud-canvas-cloud-gem-leaderboard-implementation-details

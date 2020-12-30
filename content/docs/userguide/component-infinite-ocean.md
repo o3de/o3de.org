@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; Infinite Ocean component to add an ocean surface
   to your level. '
 slug: component-infinite-ocean

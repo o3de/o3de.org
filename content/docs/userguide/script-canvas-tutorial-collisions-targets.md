@@ -1,3 +1,4 @@
+---
 description: ' Create a sphere that shoots projectiles at a target with &script-canvas;,
   &ALYlong;''s visual scripting system. '
 slug: script-canvas-tutorial-collisions-targets

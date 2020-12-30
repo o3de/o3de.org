@@ -1,3 +1,4 @@
+---
 description: ' Use the Collision attribute in the &ALYlong; &particle-editor; to control
   the physical setup for the particles. '
 slug: particle-editor-reference-collision

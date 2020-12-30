@@ -1,3 +1,4 @@
+---
 description: null
 slug: dynamic-vegetation-procedures-saving-slice
 title: Saving the Vegetation Area as a Slice

@@ -1,3 +1,4 @@
+---
 description: ' Create a custom particle attribute panel in &ALYlong; &particle-editor;
   to quickly access the parameters you use most. '
 slug: particle-custom-attributes

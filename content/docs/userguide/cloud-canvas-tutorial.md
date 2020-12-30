@@ -1,3 +1,4 @@
+---
 description: ' Sign up for an &AWS; account, get &AWS; credentials, and initialize
   and administer an &AWS;-enabled &ALY; project in this step-by-step tutorial. '
 slug: cloud-canvas-tutorial

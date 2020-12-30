@@ -1,3 +1,4 @@
+---
 description: ' Learn how to select &script-canvas; nodes in &ALYlong; using hotkeys. '
 slug: script-canvas-working-with-nodes-selecting-using-hotkeys
 title: Selecting Nodes Using Hot Keys

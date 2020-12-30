@@ -1,3 +1,4 @@
+---
 description: ' Understand how tweeners in &ALYlong; Scripted Entity Tweener system
   interprets movements between two frames based on the tweener type. '
 slug: ui-animating-tweener-understanding

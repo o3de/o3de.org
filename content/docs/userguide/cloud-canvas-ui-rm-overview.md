@@ -1,3 +1,4 @@
+---
 description: ' Learn how &cloud; Resource Manager provisions your game''s connection
   to &AWS;. '
 slug: cloud-canvas-ui-rm-overview

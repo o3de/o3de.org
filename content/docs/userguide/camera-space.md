@@ -1,3 +1,4 @@
+---
 description: ' Manage the camera space for viewing your entities in &ALYlong;. '
 slug: camera-space
 title: Using the Camera Space

@@ -1,3 +1,4 @@
+---
 description: ' Set up an anim graph for the simulated object in &ALYlong;. '
 slug: set-up-simulated-object-anim-graph-node
 title: Setting Up the Simulated Object Anim Graph Node

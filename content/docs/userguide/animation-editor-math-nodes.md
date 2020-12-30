@@ -1,3 +1,4 @@
+---
 description: ' Use the &animation-editor; ''s math nodes to perform math operations
   in &ALYlong;. '
 slug: animation-editor-math-nodes

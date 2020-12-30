@@ -1,3 +1,4 @@
+---
 description: ' Information for developers on changes to EMotion FX in &ALY; version
   1.25. '
 slug: emfx-1.25-transition-guide

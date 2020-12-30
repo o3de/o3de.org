@@ -1,3 +1,4 @@
+---
 description: ' This topic provides brief descriptions of the main menu bar in &ly-editor;. '
 slug: lumberyard-editor-menus
 title: Using the Menu Bar

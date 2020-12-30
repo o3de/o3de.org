@@ -1,3 +1,4 @@
+---
 description: ' Use the ScreenFader EBuses in the &ALYlong; &script-canvas; editor
   to provide the Lua scripting equivalent to the Screen Fader node. '
 slug: screen-fader-ebuses

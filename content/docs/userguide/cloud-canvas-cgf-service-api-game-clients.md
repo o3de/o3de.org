@@ -1,3 +1,4 @@
+---
 description: ' Learn how to use the Cloud Gem Framework to generate game client code. '
 slug: cloud-canvas-cgf-service-api-game-clients
 title: Game Clients

@@ -1,3 +1,4 @@
+---
 description: ' Map different materials to the faces of a mesh file before exporting
   to &ALY;. '
 slug: mat-3dsmax-material-id-mapping

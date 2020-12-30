@@ -1,3 +1,4 @@
+---
 description: ' Create motion events for your game project in &ALYlong;. '
 slug: char-animation-editor-custom-events-parameters-creating-motion-events
 title: Creating Motion Events

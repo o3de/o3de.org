@@ -1,3 +1,4 @@
+---
 description: ' Use the Player Account Cloud Gem in &ALYlong; and &COG; to store player
   account data. '
 slug: cloud-canvas-cloud-gem-player-account-storing-player-data

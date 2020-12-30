@@ -1,3 +1,4 @@
+---
 description: ' Use the Infinite Ocean component in &ALYlong; to change how you want
   the ocean to appear. '
 slug: infinite-ocean-component-properties

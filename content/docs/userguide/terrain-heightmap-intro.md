@@ -1,3 +1,4 @@
+---
 description: ' Use the heightmap as the base of your terrain in your &ALY; level. '
 slug: terrain-heightmap-intro
 title: Using the Terrain Heightmap

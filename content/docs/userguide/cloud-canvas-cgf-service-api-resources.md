@@ -1,3 +1,4 @@
+---
 description: ' Learn about the resources in the Cloud Gem Framework in &ALYlong;. '
 slug: cloud-canvas-cgf-service-api-resources
 title: Resources

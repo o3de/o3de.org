@@ -1,3 +1,4 @@
+---
 description: ' Configure toon shading in &ALYlong; to implement a toon shader visual
   look. '
 slug: graphics-rendering-toon-shading

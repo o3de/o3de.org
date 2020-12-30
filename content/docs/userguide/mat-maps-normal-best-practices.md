@@ -1,3 +1,4 @@
+---
 description: ' Keep these best practices in mind when you create your texture maps
   for normal lighting in &ALYlong;. '
 slug: mat-maps-normal-best-practices

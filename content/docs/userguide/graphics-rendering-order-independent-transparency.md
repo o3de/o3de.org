@@ -1,3 +1,4 @@
+---
 description: ' Configure order-independent transparency (OIT) in &ALY; so that transparent
   objects that are drawn out-of-order can display correctly. '
 slug: graphics-rendering-order-independent-transparency

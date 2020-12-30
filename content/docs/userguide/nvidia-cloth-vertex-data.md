@@ -1,3 +1,4 @@
+---
 description: ' Add per vertex properties to fine tune your NVIDIA Cloth simulations
   in &ALYlong;. '
 slug: nvidia-cloth-vertex-data

@@ -1,3 +1,4 @@
+---
 description: ' Find solutions to common &AGS; integration errors in your &ALYlong;
   game projects. '
 slug: network-gamelift-troubleshooting

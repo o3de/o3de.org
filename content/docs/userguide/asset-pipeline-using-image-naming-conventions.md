@@ -1,3 +1,4 @@
+---
 description: ' Learn how to rename your image files to make use of existing or customized
   image processing presets in &ALYlong;. '
 slug: asset-pipeline-using-image-naming-conventions

@@ -1,3 +1,4 @@
+---
 description: ' Develop DirectX 12 supported applications in &ALYlong;. '
 slug: graphics-rendering-directx
 title: Building DirectX 12 Supported Applications

@@ -1,3 +1,4 @@
+---
 description: ' &ALYlong; provides tools for bundling assets and managing product and
   source dependencies so you never need to ship assets you don''t use. '
 slug: asset-bundler-intro

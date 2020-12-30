@@ -1,3 +1,4 @@
+---
 description: Learn about &ALYlong;'s localization system.
 slug: localization-intro
 title: Localizing Game Projects

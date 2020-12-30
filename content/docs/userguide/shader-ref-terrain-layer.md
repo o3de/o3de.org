@@ -1,3 +1,4 @@
+---
 description: ' Paint and blend terrain layers in a level with the Terrain.Layer shader
   in &ALYlong;. '
 slug: shader-ref-terrain-layer

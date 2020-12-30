@@ -1,3 +1,4 @@
+---
 description: ' Set up global wind to create wind and breezes that affect everything
   in your &ALY; level. '
 slug: weather-wind-global

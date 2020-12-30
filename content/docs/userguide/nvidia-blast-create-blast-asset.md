@@ -1,3 +1,4 @@
+---
 description: ' Create NVIDIA Blast assets in Houdini for &ALYlong;. '
 slug: nvidia-blast-create-blast-asset
 title: Create assets for NVIDIA Blast

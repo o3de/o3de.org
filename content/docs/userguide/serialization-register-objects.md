@@ -1,3 +1,4 @@
+---
 description: ' Register objects int the &ALY; engine for JSON or XML serialization. '
 slug: serialization-register-objects
 title: Register objects for serialization

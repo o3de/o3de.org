@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; console variables (CVARs) to debug your cinematic
   scenes. '
 slug: cinematics-debugging

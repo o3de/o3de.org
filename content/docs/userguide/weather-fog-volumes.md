@@ -1,3 +1,4 @@
+---
 description: ' Use fog volumes to define an area where fog appears in your &ALYlong;
   level. '
 slug: weather-fog-volumes

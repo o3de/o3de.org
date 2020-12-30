@@ -1,3 +1,4 @@
+---
 description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; editor
   to set a material parameter with a color value. '
 slug: script-canvas-material-set-param-color-node

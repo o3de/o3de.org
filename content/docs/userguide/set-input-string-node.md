@@ -1,3 +1,4 @@
+---
 description: ' Use the Set Input String node in the &ALYlong; &script-canvas; editor
   to set the value of a procedural material input parameter as a string or image. '
 slug: set-input-string-node

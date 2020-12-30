@@ -1,3 +1,4 @@
+---
 description: ' Use the GeomCache or geometry cache component to render mesh data and
   play vertex-based animation in &ALYlong;. '
 slug: component-geom-cache

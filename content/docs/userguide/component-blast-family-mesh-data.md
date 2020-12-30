@@ -1,3 +1,4 @@
+---
 description: ' Learn about the &ALYlong; Blast Family Mesh Data component. '
 slug: component-blast-family-mesh-data
 title: Blast Family Mesh Data component

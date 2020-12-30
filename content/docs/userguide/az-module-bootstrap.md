@@ -1,3 +1,4 @@
+---
 description: ' Lists the steps that occur when an AZ framework application initializes. '
 slug: az-module-bootstrap
 title: The AZ Bootstrapping Process

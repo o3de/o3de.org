@@ -1,3 +1,4 @@
+---
 description: ' Use the First Focus Element property to determine which element receives
   first focus when a canvas is first loaded in &ALY;. '
 slug: ui-editor-components-firstfocus

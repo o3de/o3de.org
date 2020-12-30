@@ -1,3 +1,4 @@
+---
 description: ' Get a conceptual introduction to the architecture of the &ALYlong;
   Multiplayer sample game. '
 slug: sample-project-multiplayer-enhanced-architecture

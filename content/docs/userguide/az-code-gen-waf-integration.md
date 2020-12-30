@@ -1,3 +1,4 @@
+---
 description: ' Learn how AZ Code Generator is integrated with the Waf build system
   in &ALYlong;. '
 slug: az-code-gen-waf-integration

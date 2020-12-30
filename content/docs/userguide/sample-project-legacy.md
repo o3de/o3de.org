@@ -1,3 +1,4 @@
+---
 description: ' Use the Legacy Game Sample project to learn about &ALYlong; features
   such as CryAction and CryAISystem. '
 slug: sample-project-legacy

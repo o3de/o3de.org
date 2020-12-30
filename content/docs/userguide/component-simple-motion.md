@@ -1,3 +1,4 @@
+---
 description: ' Use the Simple Motion component to add motion effects to your actor
   in &ALYlong;. '
 slug: component-simple-motion

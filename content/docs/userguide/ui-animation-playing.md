@@ -1,3 +1,4 @@
+---
 description: ' Play animation sequences from Animation Editor. '
 slug: ui-animation-playing
 title: Playing Animation Sequences

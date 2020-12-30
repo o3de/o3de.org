@@ -1,3 +1,4 @@
+---
 description: ' Create OpenSSL users that can receive messages from your game in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-web-communicator-cgp
 title: Web Communicator Cloud Gem Portal

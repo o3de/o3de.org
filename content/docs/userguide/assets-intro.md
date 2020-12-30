@@ -1,3 +1,4 @@
+---
 description: ' The following topics will guide you through organizing, managing, processing,
   and packaging your game assets with &ALY;. '
 slug: assets-intro

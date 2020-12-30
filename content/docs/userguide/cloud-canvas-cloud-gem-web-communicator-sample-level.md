@@ -1,3 +1,4 @@
+---
 description: ' Use the CommunicatorSample level to test the Web Communicator cloud
   gem in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-web-communicator-sample-level

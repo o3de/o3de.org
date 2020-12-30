@@ -1,3 +1,4 @@
+---
 description: ' See the following decal projection types in &ALYlong;. '
 slug: mat-maps-decal-types
 title: Decal Projection Types

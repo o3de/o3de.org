@@ -1,3 +1,4 @@
+---
 description: null
 slug: gems-system-gems-creating-a-new-gem-cmdline
 title: Creating a Gem from the Command Line

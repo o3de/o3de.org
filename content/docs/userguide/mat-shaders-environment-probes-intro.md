@@ -1,3 +1,4 @@
+---
 description: ' Learn more about environment probes and cubemaps for material shaders
   in &ALYlong;. '
 slug: mat-shaders-environment-probes-intro

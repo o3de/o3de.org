@@ -1,3 +1,4 @@
+---
 description: ' Configure how &ALYlong; processes your images or textures to make them
   game-ready. '
 slug: asset-pipeline-configuring-image-processing

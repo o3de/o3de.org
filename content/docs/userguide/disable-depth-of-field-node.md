@@ -1,3 +1,4 @@
+---
 description: ' Use the Disable Depth of Field node in the &ALYlong; &script-canvas;
   editor to disable the depth of field. '
 slug: disable-depth-of-field-node

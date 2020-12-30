@@ -1,3 +1,4 @@
+---
 description: ' Learn detailed information about EBuses in &ALYlong;. '
 slug: ebus-in-depth
 title: Event Buses in Depth

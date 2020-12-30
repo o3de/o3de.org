@@ -1,3 +1,4 @@
+---
 description: ' Create wind areas in &ALY; to determine where objects experience wind. '
 slug: weather-wind-areas
 title: Creating Wind Areas

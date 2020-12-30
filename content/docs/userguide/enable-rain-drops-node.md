@@ -1,3 +1,4 @@
+---
 description: ' Use the Enable Rain Drops node in the &ALYlong; &script-canvas; editor
   to configure raindrops on the screen. '
 slug: enable-rain-drops-node

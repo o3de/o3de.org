@@ -1,3 +1,4 @@
+---
 description: ' Give a UI element additional properties by adding components in &ALYlong;''s
   &ui-canvas-editor; . '
 slug: ui-editor-components

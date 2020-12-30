@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY;''s standard fog system to create various types of fog for
   your game project. '
 slug: rendering-graphics-fog

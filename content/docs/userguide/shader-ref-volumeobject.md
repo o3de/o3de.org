@@ -1,3 +1,4 @@
+---
 description: null
 slug: shader-ref-volumeobject
 title: VolumeObject Shader

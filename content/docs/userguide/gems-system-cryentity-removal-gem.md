@@ -1,3 +1,4 @@
+---
 description: ' Use the CryEntity Removal gem to disable all legacy features in &ly-editor;. '
 slug: gems-system-cryentity-removal-gem
 title: CryEntity Removal Gem

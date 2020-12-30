@@ -1,3 +1,4 @@
+---
 description: ' Use the Web Communicator cloud gem in &ALYlong; to send messages to
   game editors and clients. '
 slug: cloud-canvas-cloud-gem-web-communicator-creating

@@ -1,3 +1,4 @@
+---
 description: ' Use the Visibility attribute in the &ALYlong; &particle-editor; to
   control the visibility of the particles. '
 slug: particle-editor-reference-visibility

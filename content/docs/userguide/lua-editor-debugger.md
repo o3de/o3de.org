@@ -1,3 +1,4 @@
+---
 description: ' Use the Lua Editor to author, debug, and edit Lua scripts in &ALYlong;. '
 slug: lua-editor-debugger
 title: Lua Editor

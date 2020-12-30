@@ -1,3 +1,4 @@
+---
 description: ' Learn about implementation details for the Player Account Cloud Gem
   in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-player-account-details

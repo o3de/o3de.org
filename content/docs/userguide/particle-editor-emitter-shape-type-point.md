@@ -1,3 +1,4 @@
+---
 description: ' Use the Point emitter in the &ALYlong; &particle-editor; to spawn particles
   in a spherical distribution from the origin. '
 slug: particle-editor-emitter-shape-type-point

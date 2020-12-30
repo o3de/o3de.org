@@ -1,3 +1,4 @@
+---
 description: ' Create custom &script-canvas; nodes in a gem for &ALYlong;. '
 slug: script-canvas-custom-nodes-gem
 title: Creating Custom &script-canvas; Nodes in a Gem

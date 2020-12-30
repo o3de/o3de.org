@@ -1,3 +1,4 @@
+---
 description: ' Learn how to register a component during application startup in &ALYlong;. '
 slug: component-entity-system-pg-registering-your-component
 title: Registering Your Component

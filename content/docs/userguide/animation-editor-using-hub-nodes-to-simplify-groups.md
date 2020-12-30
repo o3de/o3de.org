@@ -1,3 +1,4 @@
+---
 description: ' Use Hub nodes in &ALYlong;''s &animation-editor; to simplify transitions
   between groups of nodes in an animation graph. '
 slug: animation-editor-using-hub-nodes-to-simplify-groups

@@ -1,3 +1,4 @@
+---
 description: ' Use the &ALYlong; Infinite Ocean component with the console variables
   (CVARs) to set advanced parameters. '
 slug: infinite-ocean-component-console-variables

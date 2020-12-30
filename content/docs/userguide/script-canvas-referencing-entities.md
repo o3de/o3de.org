@@ -1,3 +1,4 @@
+---
 description: ' Reference entities as targets from &script-canvas; nodes. '
 slug: script-canvas-referencing-entities
 title: Setting Entity Targets

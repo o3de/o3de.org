@@ -1,3 +1,4 @@
+---
 description: ' Set canvas properties for UI canvases in &ui-editor; in &ALYlong;. '
 slug: ui-editor-canvas-properties
 title: Configuring Canvas Properties

@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the user interface for the Motions pane in the &animation-editor;
   . '
 slug: animation-editor-motions-user-interface

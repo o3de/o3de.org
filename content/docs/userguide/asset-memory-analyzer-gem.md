@@ -1,3 +1,4 @@
+---
 description: ' Learn to profile memory usage in &ALYlong; projects with the &astmem;. '
 slug: asset-memory-analyzer-gem
 title: Asset Memory Analyzer Gem

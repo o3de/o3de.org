@@ -1,3 +1,4 @@
+---
 description: ' Learn about &ALY; &asset-bundler; terms and concepts. The &asset-bundler;
   helps make the process of bundling the necessary assets for a game release more
   efficient. '

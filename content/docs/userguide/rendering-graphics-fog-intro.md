@@ -1,3 +1,4 @@
+---
 description: ' Use &ALY;''s standard fog system or voxel-based volumetric fog system
   to create fog for your game project. '
 slug: rendering-graphics-fog-intro

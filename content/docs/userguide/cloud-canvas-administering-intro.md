@@ -1,3 +1,4 @@
+---
 description: ' Administer your &ALYlong;''s project use of the &AWS; cloud. '
 slug: cloud-canvas-administering-intro
 title: Administering &cloud;

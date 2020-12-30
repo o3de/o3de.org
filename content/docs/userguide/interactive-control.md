@@ -1,3 +1,4 @@
+---
 description: ' Use interactive element controls to control an element while it has
   focus in &ALY;. '
 slug: interactive-control

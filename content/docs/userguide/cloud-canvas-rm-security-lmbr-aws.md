@@ -1,3 +1,4 @@
+---
 description: ' Use the lmbr_aws command line tool to assume a role or to manage roles,
   permissions, and role mappings in &ALYlong;. '
 slug: cloud-canvas-rm-security-lmbr-aws

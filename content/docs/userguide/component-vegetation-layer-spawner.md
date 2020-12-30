@@ -1,3 +1,4 @@
+---
 description: ' Use the Vegetation Layer Spawner component to define areas and rules
   for procedurally placing dynamic vegetation or other static meshes in &ALYlong;. '
 slug: component-vegetation-layer-spawner

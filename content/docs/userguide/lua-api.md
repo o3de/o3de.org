@@ -1,3 +1,4 @@
+---
 description: ' Learn about Lua API calls that you can use with &ALY;. '
 slug: lua-api
 title: Component Entity Lua API Reference

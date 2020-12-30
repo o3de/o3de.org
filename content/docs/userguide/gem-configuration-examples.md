@@ -1,3 +1,4 @@
+---
 description: ' See gem.json file and wscript examples in &ALYlong;. '
 slug: gem-configuration-examples
 title: Gem Configuration Examples

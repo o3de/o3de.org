@@ -1,3 +1,4 @@
+---
 description: ' Learn how to debug and troubleshoot Waf in &ALYlong;. '
 slug: waf-debug
 title: Debugging Waf

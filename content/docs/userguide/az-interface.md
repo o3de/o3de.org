@@ -1,3 +1,4 @@
+---
 description: ' Use the AZ::Interface&lt;T&gt; template class to create global message
   request buses for &ALYlong; game code. '
 slug: az-interface

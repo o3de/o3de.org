@@ -1,3 +1,4 @@
+---
 description: ' See the following best practices for normal maps in &ALYlong;. '
 slug: mat-maps-normal-intro
 title: Working with Normal Maps

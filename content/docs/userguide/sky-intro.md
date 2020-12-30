@@ -1,3 +1,4 @@
+---
 description: ' Create realistic skies by setting sun, moon, atmospheric, and time-of-day
   effects in &ALY;''s Time of Day editor or Sun Trajectory Tool. '
 slug: sky-intro

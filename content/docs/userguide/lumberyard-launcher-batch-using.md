@@ -1,3 +1,4 @@
+---
 description: ' Use the &ly-launcher; batch file or command line version to install
   required third-party software, SDKs, and plugins. '
 slug: lumberyard-launcher-batch-using

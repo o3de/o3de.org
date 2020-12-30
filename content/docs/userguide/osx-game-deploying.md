@@ -1,3 +1,4 @@
+---
 description: ' Run a macOS game using the &ALY; build tools. '
 slug: osx-game-deploying
 title: Running macOS Games

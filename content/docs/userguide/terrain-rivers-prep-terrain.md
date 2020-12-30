@@ -1,3 +1,4 @@
+---
 description: ' Use the rise/lower terrain brush to create a realistic riverbed and
   walls for your river in &ALY;. '
 slug: terrain-rivers-prep-terrain

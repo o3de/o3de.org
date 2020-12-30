@@ -1,3 +1,4 @@
+---
 description: ' Use the Player Account Cloud Gem to provide a standalone player authentication
   and management system in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-player-account

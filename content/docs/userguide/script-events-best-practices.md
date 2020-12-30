@@ -1,3 +1,4 @@
+---
 description: ' Learn best practices for using script events in &ALYlong;. '
 slug: script-events-best-practices
 title: Script Events Best Practices

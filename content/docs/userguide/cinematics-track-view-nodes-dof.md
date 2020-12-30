@@ -1,3 +1,4 @@
+---
 description: ' Use the Depth of Field node in &ALYlong;''s &trackview-editor; to add
   realism to scenes by limiting the area that is in focus. '
 slug: cinematics-track-view-nodes-dof

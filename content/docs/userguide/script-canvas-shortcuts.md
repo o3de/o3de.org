@@ -1,3 +1,4 @@
+---
 description: ' Learn keyboard and mouse shortcuts for the &script-canvas; editor in
   &ALYlong;. '
 slug: script-canvas-shortcuts

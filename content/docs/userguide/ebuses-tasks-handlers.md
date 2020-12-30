@@ -1,3 +1,4 @@
+---
 description: ' Use EBuses to implement some common game programming tasks. '
 slug: ebuses-tasks-handlers
 title: Common Tasks, EBuses, and Handlers

@@ -1,3 +1,4 @@
+---
 description: ' Set up parameters to customize the animation of the simulated object
   in &ALYlong;. '
 slug: use-parameters-to-adjust-animation-during-runtime

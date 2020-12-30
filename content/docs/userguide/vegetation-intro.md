@@ -1,3 +1,4 @@
+---
 description: ' Add realistic trees, bushes, grasses, and other vegetation to your
   &ALYlong; terrain. '
 slug: vegetation-intro

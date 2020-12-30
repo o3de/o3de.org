@@ -1,3 +1,4 @@
+---
 description: ' Apply shaders and materials for objects in &ALYlong;. '
 slug: mat-intro
 title: Working with shaders and materials

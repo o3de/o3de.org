@@ -1,3 +1,4 @@
+---
 description: ' Use the Behavior Tree component to load and run a behavior tree for
   the attached entity in &ALYlong;. '
 slug: component-behavior-tree

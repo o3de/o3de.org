@@ -1,3 +1,4 @@
+---
 description: ' Use the &whitebox; Collider component to add PhysX collision to white
   box meshes in &ALYlong;. '
 slug: component-white-box-collider

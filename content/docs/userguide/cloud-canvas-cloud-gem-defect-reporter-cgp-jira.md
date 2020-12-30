@@ -1,3 +1,4 @@
+---
 description: ' Use the Defect Reporter to create Jira tickets in &ALYlong;. '
 slug: cloud-canvas-cloud-gem-defect-reporter-cgp-jira
 title: Using Defect Reporter to Create Jira Tickets

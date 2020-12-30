@@ -1,3 +1,4 @@
+---
 description: ' Use the PhysX Force Region component to specify a region that applies
   physical force to entities. '
 slug: component-physx-force-region

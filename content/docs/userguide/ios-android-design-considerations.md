@@ -1,3 +1,4 @@
+---
 description: ' Design considerations for authoring iOS and Android games using &ALYlong;. '
 slug: ios-android-design-considerations
 title: Design Considerations for Creating Mobile Games Using &ALY;

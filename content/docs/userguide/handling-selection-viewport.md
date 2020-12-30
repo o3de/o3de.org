@@ -1,3 +1,4 @@
+---
 description: ' Update your component so that it knows how to handle selection in the
   &ALYlong; viewport. '
 slug: handling-selection-viewport

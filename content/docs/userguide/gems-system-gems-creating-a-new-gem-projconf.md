@@ -1,3 +1,4 @@
+---
 description: null
 slug: gems-system-gems-creating-a-new-gem-projconf
 title: Creating a Gem with the &project-configurator;

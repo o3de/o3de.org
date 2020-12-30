@@ -1,3 +1,4 @@
+---
 description: ' Create asset bundles that can be distributed to patch and update a
   live &ALY; game, while also making a new distribution for later downloads. '
 slug: asset-bundler-tutorial-content-patches

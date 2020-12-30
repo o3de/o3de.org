@@ -1,3 +1,4 @@
+---
 description: ' Use the ParticleImposter shader to create particle effects not affected
   by light in &ALYlong;. '
 slug: shader-ref-particleimposter

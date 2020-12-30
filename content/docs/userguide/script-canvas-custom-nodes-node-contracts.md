@@ -1,3 +1,4 @@
+---
 description: ' Validate &script-canvas; node slots with node contracts in &ALYlong;. '
 slug: script-canvas-custom-nodes-node-contracts
 title: Node Contracts

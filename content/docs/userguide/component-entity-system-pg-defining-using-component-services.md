@@ -1,3 +1,4 @@
+---
 description: ' Learn how to define and use component services in &ALYlong;. '
 slug: component-entity-system-pg-defining-using-component-services
 title: Defining and Using Component Services

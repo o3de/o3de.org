@@ -1,3 +1,4 @@
+---
 description: ' Use virtual file system on non-PC platforms in order to live reload
   assets in &ALYlong;.s '
 slug: asset-pipeline-live-reloading

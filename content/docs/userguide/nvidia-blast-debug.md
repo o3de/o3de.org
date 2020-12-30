@@ -1,3 +1,4 @@
+---
 description: ' Use visual debugging on destruction simulations in &ALYlong; with NVIDIA
   Blast. '
 slug: nvidia-blast-debug

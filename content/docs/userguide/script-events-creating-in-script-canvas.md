@@ -1,3 +1,4 @@
+---
 description: null
 slug: script-events-creating-in-script-canvas
 title: Creating Script Events in &script-canvas;

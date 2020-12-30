@@ -1,3 +1,4 @@
+---
 description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor to
   find a material. '
 slug: material-find-by-name-node

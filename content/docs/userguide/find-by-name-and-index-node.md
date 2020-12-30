@@ -1,3 +1,4 @@
+---
 description: ' Use the Find by Name and Index node in the &ALYlong; &script-canvas;
   editor to find the substance material and graph index. '
 slug: find-by-name-and-index-node

@@ -1,3 +1,4 @@
+---
 description: ' Create an asset builder to process your custom asset type source files
   into game-ready files in &ALYlong;. '
 slug: asset-builder-custom

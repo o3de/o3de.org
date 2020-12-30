@@ -1,3 +1,4 @@
+---
 description: ' How to add IP addresses for external devices (Android and iOS) to connect
   to the &asset-processor; or allow remote console access to a running game instance. '
 slug: ios-android-adding-ip-addresses

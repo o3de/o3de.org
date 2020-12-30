@@ -1,3 +1,4 @@
+---
 description: ' Resolve missing assets in your &ALY; game project. '
 slug: asset-bundler-assets-resolving
 title: Resolving Missing Assets

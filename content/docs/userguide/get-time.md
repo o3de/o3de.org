@@ -1,3 +1,4 @@
+---
 description: ' Use the Get Time node in the &ALYlong; &script-canvas; editor tor return
   the current time value. '
 slug: get-time

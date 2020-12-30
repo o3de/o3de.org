@@ -1,3 +1,4 @@
+---
 description: ' Send test metrics with the command line in &ALYlong;. '
 slug: command-line-options-for-the-cloud-gem-metrics
 title: Sending Test Metrics with the Command Line

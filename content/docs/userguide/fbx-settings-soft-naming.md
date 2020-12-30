@@ -1,3 +1,4 @@
+---
 description: ' View and update the soft naming conventions for assets such as LoDs
   for &ALYlong; when you author assets in your content creation tools, such as Autodesk
   3ds Max or Maya. '

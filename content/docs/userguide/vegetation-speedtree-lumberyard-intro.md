@@ -1,3 +1,4 @@
+---
 description: ' Create plants, trees, bushes, and other foliage with SpeedTree 8 for
   &ALYlong;. '
 slug: vegetation-speedtree-lumberyard-intro

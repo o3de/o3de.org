@@ -1,3 +1,4 @@
+---
 description: ' Use the serialization context to provide persistence for C++ objects
   or &ALY; types in &ALYlong;. '
 slug: component-entity-system-reflection-serialization-context

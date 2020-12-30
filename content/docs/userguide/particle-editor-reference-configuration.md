@@ -1,3 +1,4 @@
+---
 description: ' Use the Configuration attribute in the &ALYlong; &particle-editor;
   to specify the minimum and maximum specs for your particle emitters. '
 slug: particle-editor-reference-configuration

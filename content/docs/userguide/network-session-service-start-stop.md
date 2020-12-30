@@ -1,3 +1,4 @@
+---
 description: ' Learn how to start and stop the GridMate session service in &ALYlong;. '
 slug: network-session-service-start-stop
 title: Starting and Stopping the Session Service

@@ -1,3 +1,4 @@
+---
 description: ' Work with substances in &ALYlong;. '
 slug: mat-substances
 title: Working with Substances

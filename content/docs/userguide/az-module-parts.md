@@ -1,3 +1,4 @@
+---
 description: ' Learn about the different parts of an AZ module. '
 slug: az-module-parts
 title: Parts of an AZ Module, Explained

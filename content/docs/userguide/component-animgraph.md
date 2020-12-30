@@ -1,3 +1,4 @@
+---
 description: ' Use the AnimGraph component to adds an animation graph and motion set
   to your character. '
 slug: component-animgraph

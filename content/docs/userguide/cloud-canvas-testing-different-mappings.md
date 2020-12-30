@@ -1,3 +1,4 @@
+---
 description: ' Learn how to export mappings for testing with game clients. '
 slug: cloud-canvas-testing-different-mappings
 title: Testing Different Mappings

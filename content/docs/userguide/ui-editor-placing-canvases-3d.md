@@ -1,3 +1,4 @@
+---
 description: ' Place a UI canvas on an object in the 3d world in &ALYlong;. '
 slug: ui-editor-placing-canvases-3d
 title: Placing UI Canvases in the 3D World

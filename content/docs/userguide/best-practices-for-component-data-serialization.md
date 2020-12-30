@@ -1,3 +1,4 @@
+---
 description: ' Learn about ways to help avoid losing data when serializing component
   data in &ALYlong;. '
 slug: best-practices-for-component-data-serialization

@@ -1,3 +1,4 @@
+---
 description: ' Learn best engineering practices for &script-canvas; in &ALYlong;. '
 slug: script-canvas-best-practices
 title: '&script-canvas; Best Practices'

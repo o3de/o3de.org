@@ -1,3 +1,4 @@
+---
 description: ' Use smart objects for AI agents to interact with other objects in &ALYlong;. '
 slug: ai-nav-off-mesh-smart-objects
 title: Using Smart Objects for AI Navigation

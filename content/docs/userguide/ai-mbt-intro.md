@@ -1,3 +1,4 @@
+---
 description: ' Learn about the AI Modular Behavior Tree (MBT) in &ALYlong;. '
 slug: ai-mbt-intro
 title: AI Modular Behavior Tree

@@ -1,3 +1,4 @@
+---
 description: ' Use the &emotionfx; Animation gem in your &ALY; project to enable the
   node-based character animation system. '
 slug: gems-system-gem-emotionfx-animation

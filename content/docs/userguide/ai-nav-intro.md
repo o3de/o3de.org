@@ -1,3 +1,4 @@
+---
 description: ' Learn more about the AI navigation system in &ALYlong;. '
 slug: ai-nav-intro
 title: AI Navigation

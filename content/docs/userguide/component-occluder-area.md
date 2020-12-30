@@ -1,3 +1,4 @@
+---
 description: ' Use the OccluderArea component to create a custom shaped occlusion
   plane with four vertices in &ALYlong;. '
 slug: component-occluder-area

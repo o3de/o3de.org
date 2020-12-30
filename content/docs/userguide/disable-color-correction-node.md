@@ -1,3 +1,4 @@
+---
 description: ' Use the Disable Color Correction node in the &ALYlong; &script-canvas;
   editor to disable color correction parameters. '
 slug: disable-color-correction-node

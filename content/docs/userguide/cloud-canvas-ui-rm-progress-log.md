@@ -1,3 +1,4 @@
+---
 description: ' Learn about the progress log in &cloud; Resource Manager . '
 slug: cloud-canvas-ui-rm-progress-log
 title: Viewing the &cloud; Progress Log

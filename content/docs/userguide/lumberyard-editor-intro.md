@@ -1,3 +1,4 @@
+---
 description: ' Launch &ly-editor; and understand the viewport, &asset-browser; , &entity-outliner;
   , &entity-inspector; , and console. '
 slug: lumberyard-editor-intro

@@ -1,3 +1,4 @@
+---
 description: ' Use texture atlases on UI canvases for quicker rendering of textures
   in &ALYlong;. '
 slug: ui-editor-texture-atlases

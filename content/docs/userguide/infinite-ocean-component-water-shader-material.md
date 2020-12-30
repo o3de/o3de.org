@@ -1,3 +1,4 @@
+---
 description: ' Use the water shader material with the &ALYlong; Infinite Ocean component. '
 slug: infinite-ocean-component-water-shader-material
 title: Water Shader Material for the Infinite Ocean Component

@@ -1,3 +1,4 @@
+---
 description: ' Use custom state machines to control motions in the &animation-editor;
   for &ALYlong;. '
 slug: animation-editor-customizing-state-machines-with-sparse-motion-sets

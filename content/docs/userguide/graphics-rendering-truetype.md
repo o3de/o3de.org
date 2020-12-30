@@ -1,3 +1,4 @@
+---
 description: ' Learn more about TrueType fonts in &ALYlong;. '
 slug: graphics-rendering-truetype
 title: TrueType Fonts
