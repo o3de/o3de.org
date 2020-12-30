@@ -1,3 +1,9 @@
+---
+description: ' Use the Lumberyard UI 2.0 browse edit component to enable users to
+  choose one or more values from a list or directory. '
+slug: uidev-browse-edit-component
+title: Lumberyard UI browse edit component
+---
 # Lumberyard UI browse edit component<a name="uidev-browse-edit-component"></a>
 
 The **browse edit** component is one of several types of input boxes offered by the Qt and Lumberyard UI libraries\. Use the browse edit component to enable users to choose one or more values from a selection window\. Typical uses include selecting a file from a directory, or one or more items from a list \- for example: choosing motions from a collection of animation assets\. The selection window is opened using either a button along the right edge, or a double\-click in the input box\. Chosen values can be cleared using the clear button, if this button has been enabled\.
@@ -9,7 +15,7 @@ Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a pr
 
  **Browse edit** widgets have several customization options\. Standard features including the following elements:
 
-![\[component browse edit anatomy\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-anatomy.png)
+![\[component browse edit anatomy\]](/images/tools-ui/component-browse-edit-anatomy.png)
 
 1.  **Label** 
 
@@ -34,12 +40,12 @@ When using a custom icon not provided by Lumberyard, the icon should be a multip
 1.  **Tooltip** 
 
    \(Optional\) If you set tooltip text for the widget, it will appear near where the user hovers\.  
-![\[component browse edit anatomy clear\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-anatomy-clear.png)
+![\[component browse edit anatomy clear\]](/images/tools-ui/component-browse-edit-anatomy-clear.png)
 
 1.  **Clear button** 
 
    \(Optional\) If you enable the clear button for the widget, it will appear when the input box is not empty\. When users choose the clear button, the input box returns to an empty value\.  
-![\[component browse edit anatomy error state\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-anatomy-error-state.png)
+![\[component browse edit anatomy error state\]](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
 
 1.  **Error state indicator** 
 
@@ -51,7 +57,7 @@ When using a custom icon not provided by Lumberyard, the icon should be a multip
 
 ## Basic browse edit<a name="browse-edit-basic"></a>
 
-![\[component browse edit basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-basic.png)
+![\[component browse edit basic\]](/images/tools-ui/component-browse-edit-basic.png)
 
 A simple example of this component includes the browse edit widget and an attached button handler\. In this example, we enable the user to pick a file from the file browser, and have chosen to enable the clear button\.
 
@@ -85,7 +91,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 
 ## Browse edit with custom icon and placeholder text<a name="browse-edit-icon-and-placeholder"></a>
 
-![\[component browse edit icon and placeholder\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-icon-and-placeholder.png)
+![\[component browse edit icon and placeholder\]](/images/tools-ui/component-browse-edit-icon-and-placeholder.png)
 
 The following example shows how to replace the default button icon with your own, and how to add placeholder text that appears when the value is empty\.
 
@@ -120,7 +126,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 
 ## Browse edit with tooltips and validator<a name="browse-edit-tooltips-and-validator"></a>
 
-![\[component browse edit error state\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-error-state.png)
+![\[component browse edit error state\]](/images/tools-ui/component-browse-edit-error-state.png)
 
 In the following example, both a standard tooltip and an error tooltip have been defined\. The standard tooltip appears when a mouse hovers over the widget\. The error tooltip appears when a mouse hovers over the widget while an error state exists\.
 
@@ -166,7 +172,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 
 ## Disabled browse edit<a name="browse-edit-disabled"></a>
 
-![\[component browse edit disabled\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-browse-edit-disabled.png)
+![\[component browse edit disabled\]](/images/tools-ui/component-browse-edit-disabled.png)
 
 In the following example, the widget and its features have been disabled in code\.
 

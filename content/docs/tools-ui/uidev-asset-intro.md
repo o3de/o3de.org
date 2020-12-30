@@ -1,3 +1,9 @@
+---
+description: ' Browse the library of icon assets used in the Lumberyard UI 2.0 development
+  environment. '
+slug: uidev-asset-intro
+title: Lumberyard UI assets
+---
 # Lumberyard UI assets<a name="uidev-asset-intro"></a>
 
 Browse the library of icons used in the Lumberyard development environment in the following pages\.

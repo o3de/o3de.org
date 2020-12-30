@@ -1,8 +1,14 @@
+---
+description: ' Learn how to apply the Lumberyard UI 2.0 toggle switch style to a checkbox
+  component in Lumberyard gems and tools. '
+slug: uidev-toggle-switch-component
+title: Lumberyard UI toggle switch component
+---
 # Lumberyard UI toggle switch component<a name="uidev-toggle-switch-component"></a>
 
 Use a toggle switch to enable users to quickly switch between two states with a minimum of effort\. The state will be clearly reflected back to them and persisted across sessions\.
 
-![\[component toggle switch style\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-toggle-switch-style.png)
+![\[component toggle switch style\]](/images/tools-ui/component-toggle-switch-style.png)
 
 ## Usage guidelines<a name="toggle-switch-usage"></a>
 
@@ -20,7 +26,7 @@ Avoid these design choices when using toggle switches:
 
 ## Basic toggle switch<a name="toggle-switch-basic"></a>
 
-![\[component toggle switch basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-toggle-switch-basic.png)
+![\[component toggle switch basic\]](/images/tools-ui/component-toggle-switch-basic.png)
 
 Toggle switches are implemented using the **QCheckBox** Qt class\. The toggle switch style is then applied using the static function, `AzQtComponents::CheckBox::applyToggleSwitchStyle()`\.
 

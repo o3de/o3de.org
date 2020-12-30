@@ -1,3 +1,9 @@
+---
+description: ' Learn how to use the Lumberyard UI 2.0 filtered search widget to give
+  users advanced search options in your Lumberyard tools and gems. '
+slug: uidev-filtered-search-component
+title: Lumberyard UI filtered search widget
+---
 # Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
 
 Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they’re looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
@@ -6,7 +12,7 @@ Use the **filtered search** widget to give users advanced search options in your
 
 Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we’re looking for all entities with Script Canvas components\.
 
-![\[component filtered search anatomy\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-filtered-search-anatomy.png)
+![\[component filtered search anatomy\]](/images/tools-ui/component-filtered-search-anatomy.png)
 
 1.  **Search field** 
 
@@ -40,7 +46,7 @@ Entity Outliner in the Lumberyard Editor uses multiple filter categories in a fi
 
 ## Basic filtered search<a name="filtered-search-basic"></a>
 
-![\[component filtered search basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-filtered-search-basic.png)
+![\[component filtered search basic\]](/images/tools-ui/component-filtered-search-basic.png)
 
 The following example demonstrates how to create a simple filtered search widget\.
 
@@ -74,7 +80,7 @@ connect(filteredSearchWidget, &AzQtComponents::FilteredSearchWidget::TypeFilterC
 
 ## Filtered search with filter type icons<a name="filtered-search-filter-type-icons"></a>
 
-![\[component filtered search filter type icons\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-filtered-search-filter-type-icons.png)
+![\[component filtered search filter type icons\]](/images/tools-ui/component-filtered-search-filter-type-icons.png)
 
 Add optional icons to your filter types using the `extraIconFilename` property of the `AzQtComponents::SearchTypeFilter`\.
 
@@ -99,7 +105,7 @@ for (const auto& filterType : filterTypes)
 
 ## Limiting the width of the search field<a name="filtered-search-width"></a>
 
-![\[component filtered search width\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-filtered-search-width.png)
+![\[component filtered search width\]](/images/tools-ui/component-filtered-search-width.png)
 
 Use `setTextFilterFillsWidth(false)` to limit the width of the search field and prevent it from expanding to the full width of the widget\.
 

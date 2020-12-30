@@ -1,3 +1,9 @@
+---
+description: ' Get a high level overview of the concepts pertaining to Lumberyard
+  UI 2.0 component development using the custom Qt widget library. '
+slug: uidev-component-development-guidelines
+title: Lumberyard UI component development guidelines
+---
 # Lumberyard UI component development guidelines<a name="uidev-component-development-guidelines"></a>
 
 For many of the basic components \(such as check boxes, push buttons, and line edits\), you will use the base Qt widgets \(such as `QCheckBox`, `QPushButton`, `QLineEdit`\) and the custom styling and behavior is applied automatically\. Components that require extended functionality, or are unique to Lumberyard, are custom classes that can be subclassed and can include a combination of Qt widgets\. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.` 

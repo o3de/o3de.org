@@ -1,3 +1,9 @@
+---
+description: ' Learn how to use the Lumberyard UI 2.0 tree view component to give
+  users a file or list navigation interface in Lumberyard tools and gems. '
+slug: uidev-tree-view-component
+title: Lumberyard UI tree view component
+---
 # Lumberyard UI tree view component<a name="uidev-tree-view-component"></a>
 
 With the **tree view** component, users can navigate file system directories or a list of hierarchical data in Lumberyard\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
@@ -8,7 +14,7 @@ The **tree view** component is often used in the following scenarios:
 
 Example from Lumberyard **Asset Browser**:
 
-![\[component tree view example\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-tree-view-example.png)
+![\[component tree view example\]](/images/tools-ui/component-tree-view-example.png)
 
 ## Usage guidelines<a name="tree-view-usage"></a>
 
@@ -18,7 +24,7 @@ Follow these guidelines as you design your UI with tree views:
 
 ## Basic tree view<a name="tree-view-basic"></a>
 
-![\[component tree view basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-tree-view-basic.png)
+![\[component tree view basic\]](/images/tools-ui/component-tree-view-basic.png)
 
 Create a simple tree view, with support for showing branch lines\.
 

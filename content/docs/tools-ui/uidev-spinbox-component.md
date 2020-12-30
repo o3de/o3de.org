@@ -1,3 +1,9 @@
+---
+description: ' Learn about the Lumberyard UI 2.0 style of spinboxes, including the
+  spinbox and double spinbox components. '
+slug: uidev-spinbox-component
+title: Lumberyard UI spinbox component
+---
 # Lumberyard UI spinbox component<a name="uidev-spinbox-component"></a>
 
 Use a spinbox as a number edit component to enable users to use a variety of controls to "spin" up or down a numeric value in an input box\. The value is changed by the amount specified in the step value\.
@@ -11,7 +17,7 @@ In scenarios where you would use the spinbox, also consider using the [slider co
 
 Spinboxes provide the user with a variety of controls for entering or changing their numerical value\.
 
-![\[component spinbox anatomy\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-spinbox-anatomy.png)
+![\[component spinbox anatomy\]](/images/tools-ui/component-spinbox-anatomy.png)
 
 1.  **Input box value** 
 
@@ -31,7 +37,7 @@ Spinboxes provide the user with a variety of controls for entering or changing t
 
 ## Basic spinbox<a name="spinbox-basic"></a>
 
-![\[component spinbox basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-spinbox-basic.png)
+![\[component spinbox basic\]](/images/tools-ui/component-spinbox-basic.png)
 
 The following example demonstrates the creation of a simple, double spinbox\.
 

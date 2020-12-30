@@ -1,10 +1,17 @@
+---
+description: ' Use the Lumberyard UI 2.0 breadcrumbs component as a navigational tool
+  to show users where they are along a hierarchical path. Breadcrumbs also enable
+  users to jump to a different point in the path. '
+slug: uidev-breadcrumbs-component
+title: Lumberyard UI breadcrumb navigation component
+---
 # Lumberyard UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
 
 Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user’s current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
 
 For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the Lumberyard **Animation Editor**\.
 
-![\[component breadcrumbs navigation example\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-breadcrumbs-navigation-example.gif)
+![\[component breadcrumbs navigation example\]](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
 
 In an **Anim Graph** breadcrumb, the graph’s name is displayed as the top level of navigation\. Each node that you open appears as a clickable hyperlink\.
 
@@ -12,7 +19,7 @@ In an **Anim Graph** breadcrumb, the graph’s name is displayed as the top leve
 
 Breadcrumbs have several customization options\. The standard, horizontal layout includes the following features:
 
-![\[component breadcrumbs anatomy\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-breadcrumbs-anatomy.png)
+![\[component breadcrumbs anatomy\]](/images/tools-ui/component-breadcrumbs-anatomy.png)
 
 1.  **Path history navigation** 
 
@@ -25,7 +32,7 @@ Breadcrumbs have several customization options\. The standard, horizontal layout
 1.  **Browse button** 
 
    \(Optional\) Technically not part of the breadcrumb\. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path\. You push the new path to your breadcrumbs widget in your browse button handler code\.  
-![\[component breadcrumbs truncation menu\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-breadcrumbs-truncation-menu.png)
+![\[component breadcrumbs truncation menu\]](/images/tools-ui/component-breadcrumbs-truncation-menu.png)
 
 1.  **Truncation menu** 
 
@@ -33,7 +40,7 @@ Breadcrumbs have several customization options\. The standard, horizontal layout
 
 ## Basic breadcrumb<a name="breadcrumbs-basic"></a>
 
-![\[component breadcrumbs basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-breadcrumbs-basic.png)
+![\[component breadcrumbs basic\]](/images/tools-ui/component-breadcrumbs-basic.png)
 
 The simplest breadcrumb example includes the **breadcrumbs** widget and an optional, initial path\. Your code can react to path changes by connecting to the `pathChanged` signal\. Alternatively, you can call `pushPath` to set the breadcrumb state to match the current state of your project\.
 
@@ -64,7 +71,7 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 
 ## Breadcrumb with path navigation and browse<a name="breadcrumbs-navigation-and-browse"></a>
 
-![\[component breadcrumbs navigation and browse\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-breadcrumbs-navigation-and-browse.png)
+![\[component breadcrumbs navigation and browse\]](/images/tools-ui/component-breadcrumbs-navigation-and-browse.png)
 
 In some scenarios, it’s useful for users to be able to navigate back and forth in their navigation history\. In addition, you might want to offer a browse button to select a new path\.
 

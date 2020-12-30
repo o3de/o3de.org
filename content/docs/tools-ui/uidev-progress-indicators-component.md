@@ -1,8 +1,14 @@
+---
+description: ' Learn about the Lumberyard UI 2.0 progress indicators, including the
+  spinner and progress bar components. '
+slug: uidev-progress-indicators-component
+title: Lumberyard UI progress indicators
+---
 # Lumberyard UI progress indicators<a name="uidev-progress-indicators-component"></a>
 
 Use progress and status indicators to communicate to users that the Lumberyard application is working on a process, and what the result of that process is when it’s finished\. Indicators should be employed when there’s a chance the user could be left wondering whether or not a process is working or hung\.
 
-![\[component progress indicators style\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-progress-indicators-style.png)
+![\[component progress indicators style\]](/images/tools-ui/component-progress-indicators-style.png)
 
 ## Usage guidelines<a name="progress-indicators-usage"></a>
 
@@ -22,7 +28,7 @@ Avoid these design choices when using progress indicators:
 
 ## Basic progress bar<a name="progress-bar-basic"></a>
 
-![\[component progress bar determinate\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-progress-bar-determinate.png)
+![\[component progress bar determinate\]](/images/tools-ui/component-progress-bar-determinate.png)
 
 Display determinate progress as a linear progress bar, to show a process or a task that has a definite start and end\. In this scenario, the system is aware of how many steps are taken, and a likelihood of time for completion\.
 
@@ -59,7 +65,7 @@ progressBar->setTextVisible(false);
 
 ## Basic progress spinner<a name="progress-spinner-basic"></a>
 
-![\[component progress spinner basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-progress-spinner-basic.gif)
+![\[component progress spinner basic\]](/images/tools-ui/component-progress-spinner-basic.gif)
 
 Use spinners when it’s unclear when the process will finish\.
 

@@ -1,14 +1,20 @@
+---
+description: ' Learn how to use the Lumberyard UI 2.0 styled dock widget with the
+  dock main window component, to enable fancy docking in Lumberyard tools and gems. '
+slug: uidev-styled-dock-component
+title: Lumberyard UI styled dock widget
+---
 # Lumberyard UI styled dock widget<a name="uidev-styled-dock-component"></a>
 
 Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in Lumberyard called "fancy docking", which provides users with a variety of options for arranging their window layout\.
 
 Fancy docking provides four docking drop zones around the edge of a target, and one in the center that’s used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing Lumberyard Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-customizing.html)\.
 
-![\[component fancy docking editor\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-fancy-docking-editor.gif)
+![\[component fancy docking editor\]](/images/tools-ui/component-fancy-docking-editor.gif)
 
 ## Fancy docking using the styled dock widget<a name="styled-dock-basic"></a>
 
-![\[component fancy docking example\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-fancy-docking-example.png)
+![\[component fancy docking example\]](/images/tools-ui/component-fancy-docking-example.png)
 
 Fancy docking can use up to five styled dock widgets added to a `DockMainWindow`\. Setup involves the following implementation steps:
 

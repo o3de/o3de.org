@@ -1,15 +1,21 @@
+---
+description: ' Learn how to use the Lumberyard UI 2.0 table view component to present
+  columns of structured data in Lumberyard tools and gems. '
+slug: uidev-table-view-component
+title: Lumberyard UI table view component
+---
 # Lumberyard UI table view component<a name="uidev-table-view-component"></a>
 
 Use the **table view** component to present multiple columns of structured data in a table format\. By default, this component employs sortable columns and "zebra striping" \- where the background color of rows alternate \- to help you create an easily readable, scannable, and sortable presentation of data\.
 
-![\[component table view example\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-table-view-example.png)
+![\[component table view example\]](/images/tools-ui/component-table-view-example.png)
 
 **Note**  
  `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows\.
 
 ## Basic table view<a name="table-view-basic"></a>
 
-![\[component table view basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-table-view-basic.png)
+![\[component table view basic\]](/images/tools-ui/component-table-view-basic.png)
 
 Create a simple logging table view\.
 

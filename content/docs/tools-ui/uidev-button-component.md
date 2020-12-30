@@ -1,3 +1,9 @@
+---
+description: ' Learn how to apply the Lumberyard UI 2.0 styles for push buttons and
+  tool buttons in Lumberyard gems and tools. '
+slug: uidev-button-component
+title: Lumberyard UI button styles
+---
 # Lumberyard UI button styles<a name="uidev-button-component"></a>
 
 Use buttons to enable users to make selections that cause the UI to take action\. There are four types of button styles in Lumberyard:
@@ -6,7 +12,7 @@ Use buttons to enable users to make selections that cause the UI to take action\
 + Dropdown button
 + Icon button
 
-![\[component button types\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-button-types.png)
+![\[component button types\]](/images/tools-ui/component-button-types.png)
 
 ## Usage guidelines<a name="button-usage"></a>
 

@@ -1,10 +1,16 @@
+---
+description: ' Use the Lumberyard UI 2.0 card component as a container to organize
+  component property settings and actions together. '
+slug: uidev-card-component
+title: Lumberyard UI card component
+---
 # Lumberyard UI card component<a name="uidev-card-component"></a>
 
 Use cards to display information in highly interactive, flexible containers\. Users can easily stack, reorder, and collapse these containers\. All content within a card should relate to only one idea\. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class\.
 
 For example, a card might include common properties, action buttons, advanced settings, and a context menu for additional actions:
 
-![\[component card concept\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-concept.png)
+![\[component card concept\]](/images/tools-ui/component-card-concept.png)
 
 To make it easier for users to scan a card, make the content layout consistent\. This includes using the same font size, style, and spacing for headings and content\. Be consistent with your use of images and icons, and primary and secondary actions \(if required\)\. Card titles are key to allowing users to easily scan the content, so make sure the titles are highly visible\.
 
@@ -12,7 +18,7 @@ To make it easier for users to scan a card, make the content layout consistent\.
 
 Cards allow for a certain amount of customization\. The basic layout of a card includes the following features:
 
-![\[component card anatomy\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-anatomy.png)
+![\[component card anatomy\]](/images/tools-ui/component-card-anatomy.png)
 
 1.  **Expander** and **header bar** 
 
@@ -58,7 +64,7 @@ An SVG for everywhere else in the editor, without a background box\.
 
 ## Basic card<a name="card-basic"></a>
 
-![\[component card basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-basic.png)
+![\[component card basic\]](/images/tools-ui/component-card-basic.png)
 
 The simplest card consists of these components:
 + Card header
@@ -94,7 +100,7 @@ card->setContentWidget(new QWidget());
 
 ## Card with context menu and help icon<a name="card-context-and-help"></a>
 
-![\[component card context and help\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-context-and-help.png)
+![\[component card context and help\]](/images/tools-ui/component-card-context-and-help.png)
 
 Display a help icon on the card to redirect users to a webpage for documentation\.
 
@@ -122,7 +128,7 @@ connect(ui->basicCard, &AzQtComponents::Card::contextMenuRequested, this, [](con
 
 ## Card with secondary content<a name="card-secondary-content"></a>
 
-![\[component card secondary content\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-secondary-content.png)
+![\[component card secondary content\]](/images/tools-ui/component-card-secondary-content.png)
 
 Display a secondary content widget\. Its title is customizable\.
 
@@ -138,7 +144,7 @@ card->setSecondaryContentWidget(new QWidget());
 
 ## Card with modified content<a name="card-content-modified"></a>
 
-![\[component card content modified\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-content-modified.png)
+![\[component card content modified\]](/images/tools-ui/component-card-content-modified.png)
 
 Configure the care title to change color when the content is edited, different from the parent slice, or has not been saved yet\. We recommend enabling this functionality on all cards\.
 
@@ -151,7 +157,7 @@ card->header()->setContentModified(true);
 
 ## Disabled card<a name="card-disabled"></a>
 
-![\[component card disabled\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-disabled.png)
+![\[component card disabled\]](/images/tools-ui/component-card-disabled.png)
 
 Fully disable the card, including header bar icons and child widgets\.
 
@@ -167,7 +173,7 @@ card->setEnabled(false);
 
 ## Mock disabled card<a name="card-mock-disabled"></a>
 
-![\[component card mock disabled\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-mock-disabled.png)
+![\[component card mock disabled\]](/images/tools-ui/component-card-mock-disabled.png)
 
 Disable primary and secondary widgets on the card, but keep the header bar enabled\. The following card features remain functional:
 + Expand/collapse
@@ -183,7 +189,7 @@ card->mockDisabledState(true);
 
 ## Card with warning state<a name="card-warning-state"></a>
 
-![\[component card warning state\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-warning-state.png)
+![\[component card warning state\]](/images/tools-ui/component-card-warning-state.png)
 
 Set a warning state on the card header\.
 
@@ -199,7 +205,7 @@ card->header()->setWarning(true);
 
 ## Card with notification<a name="card-notification"></a>
 
-![\[component card notification\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-card-notification.png)
+![\[component card notification\]](/images/tools-ui/component-card-notification.png)
 
 Add notifications to indicate misconfigurations and other errors\. Remove the notification when the issue is resolved\.
 

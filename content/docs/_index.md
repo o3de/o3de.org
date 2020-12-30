@@ -10,4 +10,4 @@ identifying subpages.
 
 - [User guide snapshot](userguide)
 - [Welcome guide snapshot](welcomeguide)
-- [UI guide snapshot](ui)
+- [Tools UI guide snapshot](tools-ui)

@@ -1,3 +1,9 @@
+---
+description: ' Browse a library of icon assets used by Lumberyard UI 2.0 component
+  cards. '
+slug: uidev-component-icons
+title: Lumberyard component icons
+---
 # Lumberyard component icons<a name="uidev-component-icons"></a>
 
 This page contains an organized collection of icons currently used by Lumberyard component cards\. Use the following chart to help you find an icon\.
@@ -6,4 +12,4 @@ The component icons have been categorized into color categories to help you unde
 
 Please note that all component icons need to fit within one of the 14 component categories\. When requesting an icon, indicate which category your new icon should belong to\. If your feature creates an entirely new category, consult with the [Lumberyard UX team](mailto:lumberyard-ux@amazon.com) to find color variations that fit within the color schema\.
 
-![\[Lumberyard Component Icons\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/icons-component.png)
+![\[Lumberyard Component Icons\]](/images/tools-ui/icons-component.png)

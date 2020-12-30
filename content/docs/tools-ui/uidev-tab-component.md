@@ -1,14 +1,20 @@
+---
+description: ' Learn how to use the Lumberyard UI 2.0 tab widget component to create
+  tabs and tab action bars in Lumberyard tools and gems. '
+slug: uidev-tab-component
+title: Lumberyard UI tab component
+---
 # Lumberyard UI tab component<a name="uidev-tab-component"></a>
 
 Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application\.
 
 Tabs are also used in the widget headers\. When there is more than one widget docked together, the widget headers are shown as tabs\. Users can drag the tab/widget header to move it around and dock it elsewhere\.
 
-![\[component tab style\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-tab-style.png)
+![\[component tab style\]](/images/tools-ui/component-tab-style.png)
 
 A tab can also display an action toolbar, where action buttons can be added and removed as needed\.
 
-![\[component tab action bar\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-tab-action-bar.png)
+![\[component tab action bar\]](/images/tools-ui/component-tab-action-bar.png)
 
 ## Usage guidelines<a name="tab-usage"></a>
 
@@ -20,7 +26,7 @@ Follow these guidelines as you design your UI with tabs:
 
 ## Basic tab<a name="tab-basic"></a>
 
-![\[component tab basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-tab-basic.png)
+![\[component tab basic\]](/images/tools-ui/component-tab-basic.png)
 
 Create a simple tab widget with movable, closeable tabs and an action in the action toolbar\.
 

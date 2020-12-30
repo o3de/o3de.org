@@ -1,8 +1,14 @@
+---
+description: ' Learn how to use Lumberyard UI 2.0 checkboxes in Lumberyard gems and
+  tools. '
+slug: uidev-checkbox-component
+title: Lumberyard UI checkbox component
+---
 # Lumberyard UI checkbox component<a name="uidev-checkbox-component"></a>
 
 Use checkboxes to enable users to select from a list of choices, when users can select any number of choices \(including zero, one, or several\)\. Each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others\.
 
-![\[component checkbox style\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-checkbox-style.png)
+![\[component checkbox style\]](/images/tools-ui/component-checkbox-style.png)
 
 ## Usage guidelines<a name="checkbox-usage"></a>
 
@@ -22,7 +28,7 @@ Avoid these design choices when using checkboxes:
 
 ## Basic checkbox<a name="checkbox-basic"></a>
 
-![\[component checkbox basic\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-checkbox-basic.png)
+![\[component checkbox basic\]](/images/tools-ui/component-checkbox-basic.png)
 
 Set up and control checkboxes in Qt Designer or in code\.
 

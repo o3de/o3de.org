@@ -1,3 +1,9 @@
+---
+description: ' Learn about the Lumberyard UI 2.0 customizations to the scrollbar style
+  in Lumberyard tools and gems. '
+slug: uidev-scrollbar-component
+title: Lumberyard UI scrollbar styles
+---
 # Lumberyard UI scrollbar styles<a name="uidev-scrollbar-component"></a>
 
 Lumberyard provides several style choices for your scrollbars\. With the default style, the scrollbar is always visible\. However, you have the option to set the scrollbar display mode so that it only appears when users hover over the scroll area\.
@@ -8,7 +14,7 @@ The following examples demonstrate how to apply these styles\.
 
 ## Scrollbar display modes<a name="scrollbar-display-modes"></a>
 
-![\[component scrollbar display modes\]](http://docs.aws.amazon.com/lumberyard/latest/ui/images/component-scrollbar-display-modes.gif)
+![\[component scrollbar display modes\]](/images/tools-ui/component-scrollbar-display-modes.gif)
 
 Use `AzQtComponents::ScrollBar::setDisplayMode` to set the scrollbar display mode\. The default mode is `AlwaysShow`\.
 
