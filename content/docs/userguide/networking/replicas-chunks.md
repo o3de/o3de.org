@@ -6,9 +6,9 @@ title: Replica Chunks
 ---
 # Replica Chunks<a name="network-replicas-chunks"></a>
 
- A replica chunk is a user extendable network object\. One or more `ReplicaChunk` objects can be owned by a [replica](network-replicas-replica.md), which is both a container and manager for replica chunks\. A replica is owned by a primary peer and is propagated to other network nodes as a proxy replica\. The data that a replica chunk contains should generally be related to the other data stored within it\. Since multiple chunks can be attached to a replica, unrelated data can be stored in other chunks within the same replica\. 
+ A replica chunk is a user extendable network object\. One or more `ReplicaChunk` objects can be owned by a [replica](/docs/userguide/networking/replicas-replica.md), which is both a container and manager for replica chunks\. A replica is owned by a primary peer and is propagated to other network nodes as a proxy replica\. The data that a replica chunk contains should generally be related to the other data stored within it\. Since multiple chunks can be attached to a replica, unrelated data can be stored in other chunks within the same replica\. 
 
- A replica chunk can contain [Datasets](network-replicas-data-sets.md) and/or [Remote Procedure Calls \(RPCs\)](network-replicas-remote-procedure-calls.md)\. Data sets store arbitrary data, which only the primary replica is able to modify\. Any changes are propagated to the chunks in proxy replicas on the other nodes\. RPCs are methods that can be executed on remote nodes\. They are first invoked on the primary, which decides whether the invocation will be propagated to the proxies\. 
+ A replica chunk can contain [Datasets](/docs/userguide/networking/replicas-data-sets.md) and/or [Remote Procedure Calls \(RPCs\)](/docs/userguide/networking/replicas-remote-procedure-calls.md)\. Data sets store arbitrary data, which only the primary replica is able to modify\. Any changes are propagated to the chunks in proxy replicas on the other nodes\. RPCs are methods that can be executed on remote nodes\. They are first invoked on the primary, which decides whether the invocation will be propagated to the proxies\. 
 
 ## Replica Chunk Requirements and Limitations<a name="network-replicas-chunks-limitations"></a>
 
@@ -102,7 +102,7 @@ public:
 
 ### Registering Chunk Type<a name="network-replicas-chunks-new-type-registering"></a>
 
- Every user\-defined replica chunk type should be registered with `ReplicaChunkDescriptorTable` to create the factory required by the [Replica Manager](network-replicas-replica-manager.md)\.
+ Every user\-defined replica chunk type should be registered with `ReplicaChunkDescriptorTable` to create the factory required by the [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md)\.
 
 To register replica chunks, use this call: 
 

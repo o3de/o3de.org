@@ -5,7 +5,7 @@ title: Flipbook Animation
 ---
 # Flipbook Animation<a name="ui-editor-components-other-flipbook"></a>
 
-You can use the **FlipbookAnimation** component to create simple image\-based animations by animating the frames or cells of a [sprite sheet](ui-editor-component-sprite-sheets.md)\.
+You can use the **FlipbookAnimation** component to create simple image\-based animations by animating the frames or cells of a [sprite sheet](/docs/userguide/ui/editor/component-sprite-sheets.md)\.
 
 **To see in\-game examples of completed canvases with a FlipbookAnimation component**
 
@@ -27,15 +27,15 @@ You can use the **FlipbookAnimation** component to create simple image\-based an
 
 1. Open `Flipbook.uicanvas`\.
 
-You can add the **FlipbookAnimation** component to elements that also have an [**Image**](ui-editor-components-image.md) component\. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](ui-editor-component-sprite-sheets.md)\.
+You can add the **FlipbookAnimation** component to elements that also have an [**Image**](/docs/userguide/ui/editor/components-image.md) component\. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](/docs/userguide/ui/editor/component-sprite-sheets.md)\.
 
 ![\[FlipbookAnimation component and Image component set as sprite/texture asset\]](/images/userguide/game_ui_editor/ui-editor-components-other-flipbook-1.png)
 
 **To add and configure a FlipbookAnimation component**
 
-1. If you have not already done so, create a [sprite sheet](ui-editor-component-sprite-sheets.md) for your animation image\.
+1. If you have not already done so, create a [sprite sheet](/docs/userguide/ui/editor/component-sprite-sheets.md) for your animation image\.
 
-1. Add an [**Image**](ui-editor-components-image.md) component\. 
+1. Add an [**Image**](/docs/userguide/ui/editor/components-image.md) component\. 
 
    For the **SpriteType**, choose **Sprite/Texture asset**\.
 

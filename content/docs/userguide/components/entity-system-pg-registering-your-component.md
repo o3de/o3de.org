@@ -21,4 +21,4 @@ MyModule::MyModule()
 }
 ```
 
-For more information, see the [The Module Class](az-module-parts.md#az-module-parts-module-class) section of the [Using AZ Modules to Initialize Gems](az-modules-intro.md)\.
+For more information, see the [The Module Class](az-module-parts.md#az-module-parts-module-class) section of the [Using AZ Modules to Initialize Gems](/docs/userguide/modules/s-intro.md)\.

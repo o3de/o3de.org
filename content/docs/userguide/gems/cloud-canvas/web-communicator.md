@@ -12,7 +12,7 @@ The following diagram shows how the Web Communicator cloud gem connects cloud ge
 
 ![\[Web Communicator connects cloud gems to game clients, editors, or servers\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-1.png)
 
-Cloud gems like Dynamic Content send events through Lumberyard's [cross\-gem communication system](cloud-canvas-cgf-service-api-cross-gem-communication.md) to the Web Communicator cloud gem\. The Web Communicator cloud gem sends the event to the client through [AWS IoT](https://aws.amazon.com/iot-core), which maintains a persistent socket connection with the client\. Your game can use this channel of communication to notify the client that new content is available\. The client can then download the new content or update itself as needed\.
+Cloud gems like Dynamic Content send events through Lumberyard's [cross\-gem communication system](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md) to the Web Communicator cloud gem\. The Web Communicator cloud gem sends the event to the client through [AWS IoT](https://aws.amazon.com/iot-core), which maintains a persistent socket connection with the client\. Your game can use this channel of communication to notify the client that new content is available\. The client can then download the new content or update itself as needed\.
 
 **Note**  
 You can publish and receive from your game client, editor, or server\. However, to reduce potential expenses, the default implementation on all channels is receive only\.
@@ -35,13 +35,13 @@ The Web Communicator cloud gem can use [WebSocket](https://en.wikipedia.org/wiki
 
 Web Communicator uses WebSocket connections and [Amazon Cognito](https://aws.amazon.com/cognito/) identities by default\. WebSocket connections, which use [Message Queuing Telemetry Transport \(MQTT\)](https://en.wikipedia.org/wiki/MQTT) clients and AWS Signature Version 4, attach the AWS IoT policy to the Amazon Cognito Identity of the user\. AWS Signature Version 4 is a protocol for authenticating inbound API requests to AWS services over WebSocket connections\. For more information, see [Authenticating Requests \(AWS Signature Version 4\)](https://docs.aws.amazon.com/general/latest/gr/sig-v4-authenticating-requests.html) in the *AWS General Reference*\.
 
-For samples of Amazon Cognito and AWS IoT policies that Web Communicator creates, see [Web Communicator Cloud Gem Authentication and AWS Policies](cloud-canvas-cloud-gem-web-communicator-policies.md)\.
+For samples of Amazon Cognito and AWS IoT policies that Web Communicator creates, see [Web Communicator Cloud Gem Authentication and AWS Policies](/docs/userguide/gems/cloud-canvas/web-communicator-policies.md)\.
 
 ### OpenSSL Connections<a name="cloud-canvas-cloud-gem-web-communicator-openssl-connections"></a>
 
 OpenSSL connections, which are commonly used for embedded devices, use the MQTT protocol and certificate authentication\. In OpenSSL connections, each device has a certificate and a private key that are used for encrypted communications\. 
 
-You can use the [Web Communicator Cloud Gem Portal](cloud-canvas-cloud-gem-web-communicator-cgp.md) to generate the certificates and keys that OpenSSL requires\. The client can connect through OpenSSL after the certificates and keys are installed in the `@user@\certs\aws` directory\. The Web Communicator service attaches the appropriate policy to the certificate\. The certificate and private key are returned to the client and cached on the client\.
+You can use the [Web Communicator Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/web-communicator-cgp.md) to generate the certificates and keys that OpenSSL requires\. The client can connect through OpenSSL after the certificates and keys are installed in the `@user@\certs\aws` directory\. The Web Communicator service attaches the appropriate policy to the certificate\. The certificate and private key are returned to the client and cached on the client\.
 
 **Note**  
 By default, only WebSocket connections can be registered directly from the client\. This behavior can be changed in the `client_request.py` `request_registration` call\.
@@ -55,8 +55,8 @@ AWS IoT prices connectivity per million minutes of connection or per device per 
 + [User ID and Status Table](#cloud-canvas-cloud-gem-web-communicator-user-id-and-status-table)
 + [Connection Types](#cloud-canvas-cloud-gem-web-communicator-connection-types)
 + [AWS IoT Pricing](#cloud-canvas-cloud-gem-web-communicator-aws-iot-pricing)
-+ [Web Communicator Cloud Gem Portal](cloud-canvas-cloud-gem-web-communicator-cgp.md)
-+ [Testing the Web Communicator Cloud Gem](cloud-canvas-cloud-gem-web-communicator-sample-level.md)
-+ [Communicating to Clients from a Cloud Gem](cloud-canvas-cloud-gem-web-communicator-creating.md)
-+ [Web Communicator Cloud Gem Authentication and AWS Policies](cloud-canvas-cloud-gem-web-communicator-policies.md)
-+ [Web Communicator Cloud Gem Service API](cloud-canvas-cloud-gem-web-communicator-service-api.md)
++ [Web Communicator Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/web-communicator-cgp.md)
++ [Testing the Web Communicator Cloud Gem](/docs/userguide/gems/cloud-canvas/web-communicator-sample-level.md)
++ [Communicating to Clients from a Cloud Gem](/docs/userguide/gems/cloud-canvas/web-communicator-creating.md)
++ [Web Communicator Cloud Gem Authentication and AWS Policies](/docs/userguide/gems/cloud-canvas/web-communicator-policies.md)
++ [Web Communicator Cloud Gem Service API](/docs/userguide/gems/cloud-canvas/web-communicator-service-api.md)

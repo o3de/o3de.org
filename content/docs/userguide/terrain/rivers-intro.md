@@ -19,8 +19,8 @@ The following are best practices and guidelines to keep in mind when creating ri
 For information on the river entity see [River Entity](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-entity-river.html)\.
 
 **Topics**
-+ [Preparing the River Terrain](terrain-rivers-prep-terrain.md)
-+ [Creating the River Entity](terrain-rivers-entity.md)
-+ [Applying a River Material](terrain-rivers-material.md)
-+ [Adjusting River Spline Geometry](terrain-rivers-spline-geometry.md)
-+ [Splitting and Merging Rivers](terrain-rivers-split-merge.md)
++ [Preparing the River Terrain](/docs/userguide/terrain/rivers-prep-terrain.md)
++ [Creating the River Entity](/docs/userguide/terrain/rivers-entity.md)
++ [Applying a River Material](/docs/userguide/terrain/rivers-material.md)
++ [Adjusting River Spline Geometry](/docs/userguide/terrain/rivers-spline-geometry.md)
++ [Splitting and Merging Rivers](/docs/userguide/terrain/rivers-split-merge.md)

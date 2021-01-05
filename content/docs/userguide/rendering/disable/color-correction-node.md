@@ -8,7 +8,7 @@ title: Disable Color Correction
 
 Disables color correction parameters\.
 
-To enable the effect, see [Enable Color Correction](enable-color-correction-node.md)\.
+To enable the effect, see [Enable Color Correction](/docs/userguide/rendering/enable/color-correction-node.md)\.
 
 **Contents**
 + [Inputs](#disable-color-correction-node-input)

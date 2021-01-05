@@ -78,4 +78,4 @@ The preview version of the speech recognition gem does not have a wake word\.
    As before, if you type only "ping" without specifying a location, you are prompted for one\.  
 ![\[Follow-up question\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-sample-level-7.png)
 
-To learn more about the Cloud Gem Speech Recognition Cloud Gem Portal, see [Speech Recognition Cloud Gem Portal \(Preview\)](cloud-canvas-cloud-gem-speech-recognition-cgp.md)\.
+To learn more about the Cloud Gem Speech Recognition Cloud Gem Portal, see [Speech Recognition Cloud Gem Portal \(Preview\)](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp.md)\.

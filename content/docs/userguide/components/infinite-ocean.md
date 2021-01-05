@@ -19,7 +19,7 @@ You can use the **Infinite Ocean** component to add an ocean surface to your lev
 + On higher\-end machines, vertex displacement is used and supports additional water interaction, such as buoyancy and floating objects\.
 
 **Note**  
-To enable the **Infinite Ocean** component, you must enable the Water gem\. For more information, see [Add modular features and assets with Gems](gems-system-gems.md)\.
+To enable the **Infinite Ocean** component, you must enable the Water gem\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
 **Example Infinite Ocean Component**  
 
@@ -38,15 +38,15 @@ In Lumberyard, various elements such as sunlight, reflections, and environment p
 
 **Topics**
 + [Adding the Infinite Ocean Component](#adding-the-infinite-ocean-component)
-+ [Understanding Water Properties](infinite-ocean-component-water-properties-examples.md)
-+ [Infinite Ocean Component Properties](infinite-ocean-component-properties.md)
-+ [Water Shader Material for the Infinite Ocean Component](infinite-ocean-component-water-shader-material.md)
-+ [Best Practices Working with the Infinite Ocean Component](infinite-ocean-component-best-practices.md)
-+ [Additional Workflow](infinite-ocean-component-additional-worklow.md)
-+ [Console Variables for the Infinite Ocean Component](infinite-ocean-component-console-variables.md)
++ [Understanding Water Properties](/docs/userguide/components/ocean/water-properties-examples.md)
++ [Infinite Ocean Component Properties](/docs/userguide/components/ocean/properties.md)
++ [Water Shader Material for the Infinite Ocean Component](/docs/userguide/components/ocean/water-shader-material.md)
++ [Best Practices Working with the Infinite Ocean Component](/docs/userguide/components/ocean/best-practices.md)
++ [Additional Workflow](/docs/userguide/components/ocean/additional-worklow.md)
++ [Console Variables for the Infinite Ocean Component](/docs/userguide/components/ocean/console-variables.md)
 + [Infinite Ocean Component with the Track View Editor](infinite-ocean-track-view-editor.md)
-+ [Infinite Ocean Component Request Bus Interface](infinite-ocean-component-request-bus-interface.md)
-+ [Using the Infinite Ocean Component with Script Canvas](infinite-ocean-component-working-with-script-canvas.md)
++ [Infinite Ocean Component Request Bus Interface](/docs/userguide/components/ocean/request-bus-interface.md)
++ [Using the Infinite Ocean Component with Script Canvas](/docs/userguide/components/ocean/working-with-script-canvas.md)
 
 ## Adding the Infinite Ocean Component<a name="adding-the-infinite-ocean-component"></a>
 
@@ -56,4 +56,4 @@ In Lumberyard, various elements such as sunlight, reflections, and environment p
 
 1. In the **Entity Inspector**, click **Add Component**, and then choose the **Infinite Ocean** component\. 
 
-   For more information, see [Working with Components](component-working.md)\.
+   For more information, see [Working with Components](/docs/userguide/components/working.md)\.

@@ -17,7 +17,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes and EBus interfaces to execut
 
 **To enable your game code to make HTTP requests**
 
-1. In the [Project Configurator](configurator-intro.md), enable the **Cloud Canvas Common** and **Cloud Gem Framework** gems for your project\.
+1. In the [Project Configurator](/docs/userguide/configurator/intro.md), enable the **Cloud Canvas Common** and **Cloud Gem Framework** gems for your project\.
 
 1. In Lumberyard Editor, in **Entity Inspector**, click **Add Component**\.
 
@@ -32,7 +32,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes and EBus interfaces to execut
      local json_body = "{}"
      HttpClientComponentRequestBus.Event.MakeHttpRequest(self.entityId, url, http_method, json_body)
      ```
-   + From C\+\+, use Lumberyard's [EBus](ebus-intro.md), as in the following example\.
+   + From C\+\+, use Lumberyard's [EBus](/docs/userguide/programming/ebus/intro.md), as in the following example\.
 
      ```
      AZStd::string url = "https://my.url.com"

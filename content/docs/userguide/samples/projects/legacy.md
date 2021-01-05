@@ -25,7 +25,7 @@ To ensure that the GameSDK project launches, you must use Lumberyard Setup Assis
 
 1. Click **Set as default** and then close the Project Configurator\.
 
-1. [Rebuild](gems-system-gems.md) the GameSDK project\.
+1. [Rebuild](/docs/userguide/gems/builtin/s.md) the GameSDK project\.
 
 1. Open Lumberyard Setup Assistant\. On the **Summary** page, click **Launch editor**\.
 

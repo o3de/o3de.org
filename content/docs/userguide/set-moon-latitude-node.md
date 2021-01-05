@@ -23,7 +23,7 @@ Sets the moon's latitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 | Latitude | Number | Moon latitude value to specify\. | 
-| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the moon position\. For more information, see [Environment Nodes](script-canvas-environment-nodes.md)\.  | 
+| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the moon position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
 
 ## Outputs<a name="set-moon-latitude-node-output"></a>
 

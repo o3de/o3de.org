@@ -6,9 +6,9 @@ title: Disable Effect Group
 ---
 # Disable Effect Group<a name="disable-effect-group-node"></a>
 
-Disables a specific effect group of settings that was enabled with the **[Enable Effect Group](enable-effect-group-node.md)** node\. The **Group Name** must match the same name specified in the **[Enable Effect Group](enable-effect-group-node.md)** node\.
+Disables a specific effect group of settings that was enabled with the **[Enable Effect Group](/docs/userguide/rendering/enable/effect-group-node.md)** node\. The **Group Name** must match the same name specified in the **[Enable Effect Group](/docs/userguide/rendering/enable/effect-group-node.md)** node\.
 
-For more information about effect group files, see [Customizing Post\-Processing Effects](effect-groups-customizing-intro.md)\.
+For more information about effect group files, see [Customizing Post\-Processing Effects](/docs/userguide/rendering/effect-groups/customizing-intro.md)\.
 
 ![\[disableeffectgroupnode, disableeffectgroup\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-effect-group-node.png)
 

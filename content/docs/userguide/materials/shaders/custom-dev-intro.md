@@ -24,8 +24,8 @@ The easiest way to create new shaders is with a text editor\.
 1. Restart the **Material Editor**\. The new shader appears and you can assign it to a material\.
 
 **Topics**
-+ [Shader Development Best Practices](material-shaders-custom-development-best-practices.md)
-+ [Shader Rendering Pipeline](mat-shaders-custom-dev-pipeline.md)
-+ [Hot Reloading of Shaders](mat-shaders-custom-dev-hot-reloading.md)
-+ [Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md)
-+ [Generating Shader Combinations](mat-shaders-custom-dev-combinations.md)
++ [Shader Development Best Practices](/docs/userguide/materials/shaders-custom-development-best-practices.md)
++ [Shader Rendering Pipeline](/docs/userguide/materials/shaders/custom-dev-pipeline.md)
++ [Hot Reloading of Shaders](/docs/userguide/materials/shaders/custom-dev-hot-reloading.md)
++ [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)
++ [Generating Shader Combinations](/docs/userguide/materials/shaders/custom-dev-combinations.md)

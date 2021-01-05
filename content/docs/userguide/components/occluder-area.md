@@ -16,7 +16,7 @@ title: OccluderArea
 You can use the **OccluderArea** component to create a custom\-shaped occlusion plane with four vertices\. This is useful if you don't want Lumberyard to render everything that is behind the **OccluderArea** component\. This can result in better performance in areas where automatic occlusion doesn't work well\. For example, if you have many objects behind a wall, you can add an occluder area behind the wall so that those objects don't appear\.
 
 **Note**  
-You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](component-portal.md)**, and **[VisArea](component-vis-area.md)** components at runtime\. 
+You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](/docs/userguide/components/vis-area.md)** components at runtime\. 
 
 **Topics**
 + [OccluderArea Component Properties](#component-occluder-area-properties)

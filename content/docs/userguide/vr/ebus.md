@@ -7,7 +7,7 @@ title: Using EBus Request Bus Interface for Virtual Reality
 
 Use the following request function with the StereoRendererBus event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ## IsRenderingToHMD<a name="virtual-reality-ebus-isrenderingtohmd"></a>
 

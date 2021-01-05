@@ -6,7 +6,7 @@ title: Adding a Spec
 ---
 # Adding a Spec<a name="waf-using-spec"></a>
 
-The Waf spec system provides a template to create Visual Studio solutions and describes a build filter that determines which modules to build for particular platforms and configurations\. The nature of the generic Waf build system is to be all projects that are defined through the wscript system, which acts recursively on the root directory structure\. If no spec is specified when you execute a build or clean command, the Waf build system system attempts to build all modules that are supported by the selected target platform and configuration\. The platform and configuration support is defined in each of the module's wscript definitions\. For more information, see [Adding a Build Module](waf-using-module.md)\.
+The Waf spec system provides a template to create Visual Studio solutions and describes a build filter that determines which modules to build for particular platforms and configurations\. The nature of the generic Waf build system is to be all projects that are defined through the wscript system, which acts recursively on the root directory structure\. If no spec is specified when you execute a build or clean command, the Waf build system system attempts to build all modules that are supported by the selected target platform and configuration\. The platform and configuration support is defined in each of the module's wscript definitions\. For more information, see [Adding a Build Module](/docs/userguide/waf/using-module.md)\.
 
 Project spec files are a collection of modules and definitions for a specific build pipeline\. These files are useful for including existing modules or adding new ones as part of the build dependencies for your game project\.
 
@@ -51,7 +51,7 @@ Create a spec file called `my_game.json` with the following:
 }
 ```
 
-The spec files are located in the `lumberyard_version\dev\_WAF_\specs` directory and have the `.json` file extension\. For more information about Waf spec files, see [Waf Spec Files \(\*\.json\)](waf-files-spec-file.md)\.
+The spec files are located in the `lumberyard_version\dev\_WAF_\specs` directory and have the `.json` file extension\. For more information about Waf spec files, see [Waf Spec Files \(\*\.json\)](/docs/userguide/waf/files-spec-file.md)\.
 
  
 

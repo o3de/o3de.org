@@ -13,11 +13,11 @@ GridMate is Lumberyard's networking system\. Interest manager is Lumberyard's so
 + [Slice Caching and Entity Lifecycle Management](#network-interest-manager-large-scale-worlds-caching)
 + [Multiplayer Sample Implementation](#network-interest-manager-large-scale-worlds-multiplayer-sample-implementation)
 + [Proximity Net Interest Component](#network-interest-manager-large-scale-worlds-proximity-net-interest-component)
-+ [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](network-interest-manager-custom-rule-handler.md)
++ [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](/docs/userguide/networking/interest-manager-custom-rule-handler.md)
 
 ## The Relationship Between Replica Manager and Interest Manager<a name="network-interest-manager-large-scale-worlds-replica-manager-and-interest-manager"></a>
 
-Interest manager is an optional feature that controls the sending of replicas in large\-scale network game applications\. [Replica Manager](network-replicas-replica-manager.md) works without interest manager\. However, replica manager sends replicas to all peers\. Thus, all associated entities with the Network Binding component on them appear on all peers\. When the Interest Manager component is created and initialized, it tells the replica manager to no longer broadcast all replicas to all peers\. Interest manager acts as an overseer of replica manager and coordinates replicas and peers\.
+Interest manager is an optional feature that controls the sending of replicas in large\-scale network game applications\. [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md) works without interest manager\. However, replica manager sends replicas to all peers\. Thus, all associated entities with the Network Binding component on them appear on all peers\. When the Interest Manager component is created and initialized, it tells the replica manager to no longer broadcast all replicas to all peers\. Interest manager acts as an overseer of replica manager and coordinates replicas and peers\.
 
 ![\[Replica manager and interest manager\]](/images/userguide/networking/network-interest-manager-large-scale-worlds-1.png)
 
@@ -39,7 +39,7 @@ GridMate::ProximityInterestRule
 GridMate::ProximityInterestHandler
 ```
 
-The [Multiplayer Sample](sample-project-multiplayer-enhanced.md) that is included with Lumberyard contains a practical implementation of these\. For detailed information on writing your own attributes, rules, and rule handlers, see [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](network-interest-manager-custom-rule-handler.md)\.
+The [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md) that is included with Lumberyard contains a practical implementation of these\. For detailed information on writing your own attributes, rules, and rule handlers, see [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](/docs/userguide/networking/interest-manager-custom-rule-handler.md)\.
 
 ## Slice Caching and Entity Lifecycle Management<a name="network-interest-manager-large-scale-worlds-caching"></a>
 
@@ -66,7 +66,7 @@ The `InterestManagerComponent` initializes both the interest manager and the fol
 + Proximity rule handler \(`GridMate::ProximityInterestHandler`\) – Use the proximity rule handler to specify, based on their spatial proximity, which entities appear in each of your peers\. The rule handler uses axis\-aligned bounding boxes\.
 + Bitmask rule handler \(`GridMate::BitmaskInterestHandler`\) – Use the bitmask rule handler to filter out replicas based on their bit mask value\. This is useful for entities whose presence is determined by custom grouping\.
 
-To register `InterestManagerComponent` as a system component, override `AZ:: Module:: GetRequiredSystemComponents()`\. As a system component, the `InterestManagerComponent` is initialized before any other nonsystem entities and nonsystem components\. For more information, see [System Components](az-module-system-components.md)\.
+To register `InterestManagerComponent` as a system component, override `AZ:: Module:: GetRequiredSystemComponents()`\. As a system component, the `InterestManagerComponent` is initialized before any other nonsystem entities and nonsystem components\. For more information, see [System Components](/docs/userguide/modules/system-components.md)\.
 
 For reference, see the following code\. The source file is `\dev\MultiplayerSample\Gem\Code\Source\MultiplayerSampleModule.cpp`\.
 

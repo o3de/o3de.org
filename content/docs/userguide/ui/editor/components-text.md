@@ -10,7 +10,7 @@ You can use a **Text** component to add a text string to an element\.
 
 **To see in\-game examples of completed canvases with text components**
 
-1. In Lumberyard Editor, in the [Samples Project](sample-project-samples.md), open the UiFeatures level\.
+1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
 
 1. Press **Ctrl\+G** to play the game and then choose in order **Components**, **Visual Components**, and **Text**\. The level has examples of text alignment, color and alpha, styling markup, overflow and wrapping, and character and line spacing\.
 
@@ -36,7 +36,7 @@ Use the **Properties** pane of the [UI Editor](https://docs.aws.amazon.com/lumbe
 | Enable markup |  If selected, the text string is parsed for markup tags\. For more information, see [Text Markup](#ui-editor-component-text-styling-markup)\.  | 
 | Color |  Click the color swatch to select a different color\.  | 
 | Alpha |  Use the slider to choose an alpha value between **0** and **1**\.  | 
-| Font path |  Click the button and select a font `.font` file\. For more information, see [Adding New Fonts](ui-fonts-adding-fonts.md)\.  | 
+| Font path |  Click the button and select a font `.font` file\. For more information, see [Adding New Fonts](/docs/userguide/ui/fonts/adding-fonts.md)\.  | 
 | Font size |  Enter a font size and press **Enter**\.  | 
 | Font effect |  Select an effect from the list\. The available font effects are dictated by the font `.font` file\.  | 
 | Horizontal text alignment |  Select **Left**, **Center**, or **Right** to align the text with the element's left and right borders\.  | 
@@ -50,11 +50,11 @@ You can customize the appearance of the text in your game UI with bold and itali
 
 To do this, enter specific tags directly into the **Text** box, along with your string\. The simple markup language is loosely based on HTML\.
 
-To use the text styling markup feature, you must use a font family `*.fontfamily` asset file in the **Font path** setting \(rather than an individual `.font` asset file\)\. For more information about adding font families to your projects, see [Implementing New Fonts](ui-fonts.md)\.
+To use the text styling markup feature, you must use a font family `*.fontfamily` asset file in the **Font path** setting \(rather than an individual `.font` asset file\)\. For more information about adding font families to your projects, see [Implementing New Fonts](/docs/userguide/ui/fonts/_index.md)\.
 
 **To use text styling markup**
 
-1. In the [**UI Editor**](ui-editor-using.md), add a **Text** component to an element on your canvas \(or modify an existing component\)\.
+1. In the [**UI Editor**](/docs/userguide/ui/editor/using.md), add a **Text** component to an element on your canvas \(or modify an existing component\)\.
 
 1. With the element selected, in the **Properties** pane, set the **Font path** property to a `*.fontfamily` file\.
 

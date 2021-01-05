@@ -8,13 +8,13 @@ title: Invoking an &LAMlong; Function from &script-canvas;
 You can use the **InvokeAWSLambda** node to invoke an AWS Lambda function\. 
 
 **Note**  
-This tutorial uses an example Lambda function that is included with Lumberyard\. For information on using your own Lambda function, see [Making a Custom Lambda Function Available to Script Canvas](cloud-canvas-cloud-gem-aws-lambda-sc-adding.md)\.
+This tutorial uses an example Lambda function that is included with Lumberyard\. For information on using your own Lambda function, see [Making a Custom Lambda Function Available to Script Canvas](/docs/userguide/gems/cloud-canvas/aws-lambda-sc-adding.md)\.
 
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-aws-lambda-sc-prerequisites)
 + [Step 1: Add Nodes to Invoke an AWS Lambda Function](#cloud-canvas-cloud-gem-aws-lambda-sc-step-1-add-nodes)
 + [Step 2: Add Nodes to Display the Result](#cloud-canvas-cloud-gem-aws-lambda-sc-step-2-display-the-result)
-+ [Making a Custom Lambda Function Available to Script Canvas](cloud-canvas-cloud-gem-aws-lambda-sc-adding.md)
++ [Making a Custom Lambda Function Available to Script Canvas](/docs/userguide/gems/cloud-canvas/aws-lambda-sc-adding.md)
 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-aws-lambda-sc-prerequisites"></a>
 
@@ -103,7 +103,7 @@ Now you are ready to attach the Script Canvas graph to an entity and test the sc
 
 1. In the **Entity Inspector**, click **Add Component**\.
 
-1. Under **Scripting**, click **Script Canvas** to add a **[Script Canvas](component-script-canvas.md)** component to the entity\.
+1. Under **Scripting**, click **Script Canvas** to add a **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to the entity\.
 
 1. Under **Script Canvas**, click the browse button \(**\.\.\.**\)\.
 

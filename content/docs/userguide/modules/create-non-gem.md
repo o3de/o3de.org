@@ -16,7 +16,7 @@ Beginning with Lumberyard 1\.5, gems are AZ modules, so the preferred way to bui
 
 ## A\. Start with a Gem<a name="az-module-create-non-gem-start"></a>
 
-Because gems have all the required code for an AZ module, it's easier to create a gem first and then modify it not to be a gem\. As an added convenience, the new gem names the code for you in an intuitive way\. For an explanation of the code that you get in a new gem, see [Parts of an AZ Module, Explained](az-module-parts.md)\.
+Because gems have all the required code for an AZ module, it's easier to create a gem first and then modify it not to be a gem\. As an added convenience, the new gem names the code for you in an intuitive way\. For an explanation of the code that you get in a new gem, see [Parts of an AZ Module, Explained](/docs/userguide/modules/parts.md)\.
 
 **To create and modify a gem**
 
@@ -89,7 +89,7 @@ If your module does not access code from CryEngine \(for example, it does not ac
 
 ## D\. Modify the Wscript and Waf Spec Files<a name="az-module-create-non-gem-modify-wscript-waf"></a>
 
-Next, you must modify the default wscript file to remove gem\-specific commands, add your module directory to the wscript file, and add your module to the appropriate [waf spec files](waf-files-spec-file.md)\.
+Next, you must modify the default wscript file to remove gem\-specific commands, add your module directory to the wscript file, and add your module to the appropriate [waf spec files](/docs/userguide/waf/files-spec-file.md)\.
 
 **To modify the wscript and waf spec files**
 

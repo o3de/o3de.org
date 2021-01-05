@@ -13,7 +13,7 @@ title: Creating Multiple Asset Bundles
 | --- |
 | This tutorial is out of date for the new Starter Game project that shipped as part of Lumberyard 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  | 
 
-The [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md) tutorial gets you started with using the asset bundling system to produce a game release\. However, it doesn't represent what most games require\. In this tutorial, you learn the bundling process for a common use case: Games that download additional content after the player launches the game\. The tutorial shows you how to create a release build with multiple game levels in separate asset bundles that have the contents of the base game removed\.
+The [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial gets you started with using the asset bundling system to produce a game release\. However, it doesn't represent what most games require\. In this tutorial, you learn the bundling process for a common use case: Games that download additional content after the player launches the game\. The tutorial shows you how to create a release build with multiple game levels in separate asset bundles that have the contents of the base game removed\.
 
 This topic covers the following points:
 + Adding a new level and basic content to the Starter Game project\.
@@ -22,11 +22,11 @@ This topic covers the following points:
 
 ## Prerequisites<a name="asset-bundler-tutorial-multiple-bundles-prerequisites"></a>
 
-This tutorial requires completing [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md)\. After finishing that tutorial, you should have:
+This tutorial requires completing [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)\. After finishing that tutorial, you should have:
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
 + The `startergame_pc.assetlist` and `engine_pc.assetlist` asset list files used to generate the starter game asset bundles\.
 
-It's also useful to be familiar with the [Amazon Lumberyard Asset List Comparison Operations](asset-bundler-list-operations.md) for this tutorial\.
+It's also useful to be familiar with the [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for this tutorial\.
 
 ## Create a second level<a name="asset-bundler-tutorial-multiple-bundles-create-a-second-level"></a>
 
@@ -59,7 +59,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
 
 ## Generate the new content bundle<a name="asset-bundler-tutorial-multiple-bundles-generate-bundles"></a>
 
- In the [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in Lumberyard Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\. 
+ In the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in Lumberyard Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\. 
 
  This section of the tutorial walks you through creating a new asset list based on the `level2.pak` dependencies, removing duplicate entries that already appear in `startergame_pc.pak`, and bundling the level for distribution\. 
 
@@ -81,7 +81,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
        --output dlc_level2.assetlist
    ```
 **Important**  
- The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` — not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](asset-bundler-list-operations.md) for all of the details\. 
+ The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` — not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for all of the details\. 
 
 1. Get the *complement* of the assets between `engine_pc.assetlist` from the previous tutorial and l`dlc_level2_pc.assetlist`\. This removes engine\-specific content from the `level2` assets\.
 
@@ -119,4 +119,4 @@ You now have a working example of a release build of a PC game on Lumberyard tha
 
 ## Next Steps<a name="asset-bundler-tutorial-multiple-bundles-next-steps"></a>
 
-Learn how to bundle patch updates instead of all\-new content with the next tutorial in this series: [Create content patches with Lumberyard](asset-bundler-tutorial-content-patches.md)\.
+Learn how to bundle patch updates instead of all\-new content with the next tutorial in this series: [Create content patches with Lumberyard](/docs/userguide/assets/bundle/tutorial-content-patches.md)\.

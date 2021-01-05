@@ -39,7 +39,7 @@ Once you have painted all of the channels, export your asset as an `.fbx` file\.
 
 Once you define the vertex colors, you must set the **Bending** parameter for detail bending\. This value controls the procedural bending for vegetation\. Its value ranges from `0` to `100`\. A value of `0` means no bending effect\. A value of `100` indicates the maximum effect when receiving environmental wind\. 
 
-For more information, see, [Adding Global Wind](weather-wind-global.md)\.
+For more information, see, [Adding Global Wind](/docs/userguide/weather/wind-global.md)\.
 
 **To set the vegetation detail bending parameter**
 
@@ -56,7 +56,7 @@ For more information, see, [Adding Global Wind](weather-wind-global.md)\.
 
 1. To modify the vegetation material, in the **Vegetation** section, right\-click the asset and choose **Go To Object Material**\. 
 
-   This opens the **Material Editor**, where you can edit the material and its [Vegetation Shader](shader-ref-vegetation.md)\.
+   This opens the **Material Editor**, where you can edit the material and its [Vegetation Shader](/docs/userguide/shaders/vegetation.md)\.
 
 1. In the **Material Editor**, select the material that is applied to the asset on which you painted vertex colors in your DCC\. 
 

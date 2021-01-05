@@ -12,7 +12,7 @@ Parallax occlusion mapping \(POM\) and offset bump mapping \(OBM\) are similar t
 ![\[Image NOT FOUND\]](/images/userguide/shared-parallax-example.gif)
 
 **Topics**
-+ [Parallax Mapping Best Practices](mat-maps-parallax-best-practices.md)
-+ [Applying Parallax Occlusion Mapping \(POM\)](mat-maps-parallax-pom.md)
-+ [Applying Silhouette Parallax Occlusion Mapping \(SPOM\)](mat-maps-parallax-spom.md)
-+ [Using Blend Layers for Parallax Mapping](mat-maps-parallax-blending.md)
++ [Parallax Mapping Best Practices](/docs/userguide/materials/maps/parallax-best-practices.md)
++ [Applying Parallax Occlusion Mapping \(POM\)](/docs/userguide/materials/maps/parallax-pom.md)
++ [Applying Silhouette Parallax Occlusion Mapping \(SPOM\)](/docs/userguide/materials/maps/parallax-spom.md)
++ [Using Blend Layers for Parallax Mapping](/docs/userguide/materials/maps/parallax-blending.md)

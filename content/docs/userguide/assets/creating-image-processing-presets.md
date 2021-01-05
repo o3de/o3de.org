@@ -59,7 +59,7 @@ The `rc.ini` file \(located in the `lumberyard_version\dev\Bin64vc141\rc` direct
 + Naming convention presets: Image suffixes such as `_diff`, `spec/refl`, `_disp`, `_ddna`, `_ddn`, `_bump`, `cm/cubemap`, `detail`, and so on\.
 
 **Example**  
-The following snippet from the `rc.ini` file defines `NormalsFromDisplacement`\. It includes pixel formats for each operating system, maximum texture size, [mip map settings](asset-pipeline-generating-mipmaps.md), colorspace, and so on\.  
+The following snippet from the `rc.ini` file defines `NormalsFromDisplacement`\. It includes pixel formats for each operating system, maximum texture size, [mip map settings](/docs/userguide/assets/generating-mipmaps.md), colorspace, and so on\.  
 
 ```
 ...

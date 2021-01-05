@@ -20,7 +20,7 @@ Do the following to emit particles from the parent geometry\.
 
 **To emit particles from geometry**
 
-1. Create a parent emitter with a `.cgf` mesh asset that is assigned in the **Geometry** input under **Particles**\. For more information, see [Creating and Managing Particle Emitters](particle-emitter-creating.md)\.
+1. Create a parent emitter with a `.cgf` mesh asset that is assigned in the **Geometry** input under **Particles**\. For more information, see [Creating and Managing Particle Emitters](/docs/userguide/particles/emitter/creating.md)\.
 
 1. Create a new emitter as a child of the first emitter\.
 

@@ -8,7 +8,7 @@ title: Disable Directional Blur
 
 Disables the directional blur filter\.
 
-To enable the effect, see [Enable Directional Blur](enable-directional-blur-node.md)\.
+To enable the effect, see [Enable Directional Blur](/docs/userguide/rendering/enable/directional-blur-node.md)\.
 
 **Contents**
 + [Inputs](#disable-directional-blur-note-input)

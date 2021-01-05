@@ -12,7 +12,7 @@ title: Polygon Prism Shape
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-You can use the **Polygon Prism Shape** component to define a volume\. A right polygonal prism is a 3D prism made from two translated polygons connected by rectangles\. The **Polygon Prism Shape** component is defined by one polygon and a height property\. All vertices lie on the local plane, where z = `0`\. The polygon is defined in the xy\-plane of the entity\. All vertices are in the local space of the entity\. You can use the **Polygon Prism Shape** component with the **[Trigger Area](component-triggerarea.md)** component to create a volume for the trigger area bounds\.
+You can use the **Polygon Prism Shape** component to define a volume\. A right polygonal prism is a 3D prism made from two translated polygons connected by rectangles\. The **Polygon Prism Shape** component is defined by one polygon and a height property\. All vertices lie on the local plane, where z = `0`\. The polygon is defined in the xy\-plane of the entity\. All vertices are in the local space of the entity\. You can use the **Polygon Prism Shape** component with the **[Trigger Area](/docs/userguide/components/triggerarea.md)** component to create a volume for the trigger area bounds\.
 
 **Note**  
 The **Polygon Prism Shape** component supports only simple polygons\. It can't have self\-intersecting sides\. Parallelogram sides aren't supported\. 
@@ -105,9 +105,9 @@ You can also delete vertices from the polygon prism\.
 
 ## EBus Request Bus Interface<a name="component-polygon-prism-ebus-request"></a>
 
-Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game\. The **Polygon Prism Shape** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](component-vertex-container.md)\.
+Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game\. The **Polygon Prism Shape** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

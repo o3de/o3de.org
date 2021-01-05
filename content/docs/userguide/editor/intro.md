@@ -20,17 +20,17 @@ The Lumberyard Editor desktop shortcut points to the `lumberyard_installation\de
   + For Visual Studio 2017, navigate to the `lumberyard_version\dev\Bin64vc141` directory and double\-click `Editor.exe`\.
   + For Visual Studio 2019, navigate to the `lumberyard_version\dev\Bin64vc142` directory and double\-click `Editor.exe`\.
 
-After the first launch and each time you change projects, Asset Processor runs in the background using the project configuration settings to populate the **Asset Browser**\. Messages appear with status information before the editor opens\. For more information about Asset Processor, see [Using Asset Processor](asset-pipeline-processor.md)\.
+After the first launch and each time you change projects, Asset Processor runs in the background using the project configuration settings to populate the **Asset Browser**\. Messages appear with status information before the editor opens\. For more information about Asset Processor, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
 
 **Topics**
-+ [Lumberyard Editor Interface](lumberyard-editor-interface.md)
-+ [Using the Menu Bar](lumberyard-editor-menus.md)
-+ [Using the Top Toolbar](lumberyard-editor-toolbars.md)
-+ [Using the Bottom Toolbar](lumberyard-editor-toolbar-bottom.md)
-+ [Using Keyboard Shortcuts](lumberyard-editor-shortcut-keys.md)
-+ [Using the Viewport](lumberyard-editor-viewport.md)
++ [Lumberyard Editor Interface](/docs/userguide/editor/interface.md)
++ [Using the Menu Bar](/docs/userguide/editor/menus.md)
++ [Using the Top Toolbar](/docs/userguide/editor/toolbars.md)
++ [Using the Bottom Toolbar](/docs/userguide/editor/toolbar-bottom.md)
++ [Using Keyboard Shortcuts](/docs/userguide/editor/shortcut-keys.md)
++ [Using the Viewport](/docs/userguide/editor/viewport.md)
 + [Using the Console Window](console-intro.md)
 + [Automating the Lumberyard Editor with the Python Editor Bindings gem](editor-automation.md)
 + [Demo and Video Capture](demo-video-capture-intro.md)
-+ [Customizing Lumberyard Editor](lumberyard-editor-customizing.md)
-+ [Restoring the Default Layout for Lumberyard Editor](lumberyard-editor-default-settings.md)
++ [Customizing Lumberyard Editor](/docs/userguide/editor/customizing.md)
++ [Restoring the Default Layout for Lumberyard Editor](/docs/userguide/editor/default-settings.md)

@@ -19,7 +19,7 @@ For example, you can ensure an element remains full screen regardless of the scr
 
 **To configure an element's anchors**
 
-1. In the **Hierarchy** pane of the [**UI Editor**](ui-editor-using.md), select the element whose anchors you want to modify\.
+1. In the **Hierarchy** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), select the element whose anchors you want to modify\.
 
 1. In the **Properties** pane, under **Transform2D**, choose from the selection of commonly used anchor placements\.
 
@@ -80,7 +80,7 @@ The element rotates around, resizes from, and calculates position from its pivot
 In the following example, anchors are used to resize the element relative to its parent\. The layout column of buttons is resized as needed to stay on the screen\. Because the layout column of buttons does not use the **Scale to Device** setting, the button text does not change size along with its parent button\.
 
 **Note**  
-You can [configure the text element](ui-editor-components-text.md) separately\.
+You can [configure the text element](/docs/userguide/ui/editor/components-text.md) separately\.
 
 The layout column of buttons has the following settings\.
 

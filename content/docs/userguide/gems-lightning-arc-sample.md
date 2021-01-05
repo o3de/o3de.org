@@ -10,7 +10,7 @@ The LightningArc Sample uses the LightningArc gem to demonstrate the various pre
 ![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-lightning-arc-example-animation.gif)
 
 **Topics**
-+ [Enabling the Lightning Gem](gems-system-gem-lightning-arc-enabling.md)
-+ [Placing Lightning Arc](gems-system-gem-lightning-arc-placing.md)
-+ [Configuring the Lightning Arc](gems-system-gem-lightning-arc-configuring.md)
-+ [Customizing a Lightning Arc Preset](gems-system-gem-lightning-arc-presets.md)
++ [Enabling the Lightning Gem](/docs/userguide/gems/builtin/lightning-arc-enabling.md)
++ [Placing Lightning Arc](/docs/userguide/gems/builtin/lightning-arc-placing.md)
++ [Configuring the Lightning Arc](/docs/userguide/gems/builtin/lightning-arc-configuring.md)
++ [Customizing a Lightning Arc Preset](/docs/userguide/gems/builtin/lightning-arc-presets.md)

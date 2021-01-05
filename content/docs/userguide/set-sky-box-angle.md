@@ -8,7 +8,7 @@ title: Set Skybox Angle
 
 Sets the rotation angle for the skybox\. This rotates the skybox around the z\-axis\.
 
-For more information, see [Creating Static Skyboxes](sky-skyboxes-intro.md)\.
+For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxes-intro.md)\.
 
 **Contents**
 + [Inputs](#set-sky-box-angle-input)

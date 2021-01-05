@@ -8,7 +8,7 @@ title: Disable Blur
 
 Disables the blur filter\.
 
-To enable the effect, see [Enable Blur](enable-blur-node.md)\.
+To enable the effect, see [Enable Blur](/docs/userguide/rendering/enable/blur-node.md)\.
 
 **Contents**
 + [Inputs](#disable-filter-blur-node-input)

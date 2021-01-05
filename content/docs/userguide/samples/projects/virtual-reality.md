@@ -41,7 +41,7 @@ The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled
    + For Visual Studio 2019, use the `lumberyard_version\dev\Bin64vc142` directory\.
 
 **Topics**
-+ [VR Islands Level](sample-level-vr-islands.md)
-+ [VR TV Room Level](sample-level-vr-tv-room.md)
-+ [VR Xylophone Level](sample-level-vr-xylophone.md)
-+ [VR Box Garden Level](sample-level-vr-box-garden.md)
++ [VR Islands Level](/docs/userguide/samples/levels/vr-islands.md)
++ [VR TV Room Level](/docs/userguide/samples/levels/vr-tv-room.md)
++ [VR Xylophone Level](/docs/userguide/samples/levels/vr-xylophone.md)
++ [VR Box Garden Level](/docs/userguide/samples/levels/vr-box-garden.md)

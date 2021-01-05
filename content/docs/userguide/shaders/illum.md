@@ -142,7 +142,7 @@ You must add vertex colors to the geometry in the DCC tool\.
 Applies a decal appearance when enabled for a material\. Decal planes are normally placed close to other geometry\.  
 Use this parameter to prevent flickering and [z\-fighting](ly-glos-chap.md#z_fighting) when faces are close to each other\.
 
-**[Parallax occlusion mapping](mat-maps-parallax-blending.md)**  
+**[Parallax occlusion mapping](/docs/userguide/materials/maps/parallax-blending.md)**  
 Enables parallax occlusion mapping\. This option requires a heightmap, which you can select for the **Normal Map** option under the **Texture Maps** heading\.
 
 **Displacement mapping**  
@@ -157,7 +157,7 @@ Enables the rough approximation of smooth surface subdivision\.
 **Blendlayer**  
 Enables the blending of the normal\-mapped diffuse layer on top of the base material\.
 
-**Use UV set 2 for [blendlayer](mat-maps-blend.md) maps**  
+**Use UV set 2 for [blendlayer](/docs/userguide/materials/maps/blend.md) maps**  
 Enables a second UV channel, if available, for blend layer texture maps and blend mask\.
 
 **Use UV set 2 for emittance map**  
@@ -166,7 +166,7 @@ Enables a second UV channel, if available, for emittance map\.
 **DetailMap mask in Diffuse alpha**  
 Enables diffuse map alpha for masking detail maps\. With this option you can use the alpha channel in the RGBA texture map to mask the decal\.
 
-**[Silhouette POM](mat-maps-parallax-spom.md)**  
+**[Silhouette POM](/docs/userguide/materials/maps/parallax-spom.md)**  
 Enables parallax occlusion mapping with silhouettes\. This option requires a heightmap, which you can select for the **Normal Map** option under the **Texture Maps** heading\.
 
 **Depth Fixup**  

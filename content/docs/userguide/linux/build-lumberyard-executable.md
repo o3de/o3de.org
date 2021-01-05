@@ -104,4 +104,4 @@ Compressed with **gzip**: **tar \-xzvf *YYYY\-MM\-DD\_HH\-mm\-ss*\.tar\.gz**
        build_linux_x64_profile_dedicated -p game_and_engine
    ```
 **Note**  
- To create a different type of build, such as a debug or release, change *profile* to the appropriate build type\. For all of the available Linux server build types, see [Waf Commands and Options](waf-commands.md)\. 
+ To create a different type of build, such as a debug or release, change *profile* to the appropriate build type\. For all of the available Linux server build types, see [Waf Commands and Options](/docs/userguide/waf/commands.md)\. 

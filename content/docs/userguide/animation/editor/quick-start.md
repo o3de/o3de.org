@@ -19,7 +19,7 @@ In this procedure, you do the following:
 + Create a basic animation graph using nodes\.
 + Create a blend tree to combine the motions and use a slider to control character movement from idle to walking and then running\.
 
-You can use the Samples Project to find the files used in this procedure\. For more information, see [Samples Project](sample-project-samples.md)\. 
+You can use the Samples Project to find the files used in this procedure\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\. 
 
 The files for this procedure are located in the following directory: 
 

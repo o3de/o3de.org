@@ -5,13 +5,13 @@ title: Creating System Components
 ---
 # Creating System Components<a name="component-entity-system-pg-creating-system-components"></a>
 
-System components are similar to other components in Lumberyard's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](az-module-system-components.md) in the [AZ Modules](az-modules-intro.md) section\.
+System components are similar to other components in Lumberyard's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](/docs/userguide/modules/system-components.md) in the [AZ Modules](/docs/userguide/modules/s-intro.md) section\.
 
-Like any Lumberyard [component](component-entity-system-create-component.md), a system component can provide services and can depend on or require other system component services\. Lumberyard provides precise control over the order of engine initialization and system dependencies\.
+Like any Lumberyard [component](/docs/userguide/components/entity-system-create-component.md), a system component can provide services and can depend on or require other system component services\. Lumberyard provides precise control over the order of engine initialization and system dependencies\.
 
 When you author system components, follow the best practices for component authoring\. For example, your system components should use the following:
-+ [Working with the Event Bus \(EBus\) system](ebus-intro.md) to expose their interfaces\.
-+ [Reflection](component-entity-system-reflect-component.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](az-module-system-entities-configuring.md)\.
++ [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md) to expose their interfaces\.
++ [Reflection](/docs/userguide/components/entity-system-reflect-component.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/userguide/modules/system-entities-configuring.md)\.
 + The same [AZ::Component Functions](component-entity-system-create-component.md#component-entity-system-create-component-az-functions) for activation and deactivation\.
 
 **Important**  
@@ -23,7 +23,7 @@ Just like game components, system components often provide request and notificat
 
 ## Creating a System Component in a Gem<a name="component-entity-system-pg-creating-system-components-gem"></a>
 
-Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](az-module-gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\. 
+Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\. 
 
 When you create a system component as part of a gem, note the following requirements:
 + Your gem’s `GetRequiredSystemComponents()` function must return the system component\.
@@ -210,4 +210,4 @@ After you create the code for your component, add it to your project's system en
    The following image shows the result in the System Entity Editor\.  
 ![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](/images/userguide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
 
-   For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](az-module-system-entities-configuring.md)\. 
+   For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](/docs/userguide/modules/system-entities-configuring.md)\. 

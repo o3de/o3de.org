@@ -14,7 +14,7 @@ title: Render to Texture
 
 You can use the **Render to Texture** component to render the scene from a specific camera to a texture\. You can use this feature to create rear\-view mirrors, security camera screens, and draw 3D models in the viewport\. 
 
-To enable this component, you must enable the [Render to Texture](gems-system-render-to-texture.md) gem\. To enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To enable this component, you must enable the [Render to Texture](/docs/userguide/gems/render-to-texture.md) gem\. To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 ![\[Render to Texture gem in the Project Configurator.\]](/images/userguide/shared/gem-render-to-texture.png)
 
@@ -29,7 +29,7 @@ To enable this component, you must enable the [Render to Texture](gems-system-re
 ## Adding the Render to Texture Component in a Scene<a name="adding-render-to-texture-to-scene"></a>
 
 **Example**  
-Entity \(**1**\) has a **[Camera](component-camera.md)** component and a **Render to Texture** component\. This entity faces a game object, entity \(**2**\)\. In entity \(**1**\), the **Render to Texture** component specifies a render target\. A material file references that render target as its diffuse texture\. The material is then added to entity \(**3**\), so that the render target appears in the viewport\.  
+Entity \(**1**\) has a **[Camera](/docs/userguide/components/camera.md)** component and a **Render to Texture** component\. This entity faces a game object, entity \(**2**\)\. In entity \(**1**\), the **Render to Texture** component specifies a render target\. A material file references that render target as its diffuse texture\. The material is then added to entity \(**3**\), so that the render target appears in the viewport\.  
 
 ![\[Render to Texture component in the viewport.\]](/images/userguide/component/component-render-to-texture-1.png)
 
@@ -65,7 +65,7 @@ The `$` character tells Lumberyard that the texture will not be loaded from disk
 
 You can also specify the render target in an **Image** component for a UI element\. For example, you can add the render target to appear in a button or object that a user can select in a UI menu\. 
 
-For more information, see [Visual Components](ui-editor-components-visual.md)\.
+For more information, see [Visual Components](/docs/userguide/ui/editor/components-visual.md)\.
 
 **Example**  
 A camera entity \(**1**\) faces the **Render to Texture** entity \(**2**\), which has a **Render to Texture** component attached\. The **Texture name** is `$rendertarget`\.  
@@ -105,7 +105,7 @@ The **Render to Texture** component has the following properties\.
 |  **Max FPS**  |  Maximum frames per second at which this view updates\.  | 
 |  **Width**  |  Width of the render texture, in pixels\.  | 
 |  **Height**  |  Height of the render texture, in pixels\.  | 
-|  **Apply Gamma**  |  Enables gamma application to the texture\. If you want to use this texture with a material inside the main view, leave this property disabled, because gamma will be applied to the entire scene during post\-processing\.   As a best practice, if you are using render targets in the UI, clear the **Apply Gamma** property and don’t select the **Render Target sRGB** property in the UI **[Image](ui-editor-components-image.md)** component\. However, if the texture appears too dark, you can set either property\.   | 
+|  **Apply Gamma**  |  Enables gamma application to the texture\. If you want to use this texture with a material inside the main view, leave this property disabled, because gamma will be applied to the entire scene during post\-processing\.   As a best practice, if you are using render targets in the UI, clear the **Apply Gamma** property and don’t select the **Render Target sRGB** property in the UI **[Image](/docs/userguide/ui/editor/components-image.md)** component\. However, if the texture appears too dark, you can set either property\.   | 
 |  **Alpha Mode**  |  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-render-to-texture.html) [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-render-to-texture.html)  | 
 |  **Enable Ocean**  |  Enables drawing the ocean in the render target\.  | 
 |  **Enable Terrain**  |  Enables drawing terrain in the render target\.  | 
@@ -122,7 +122,7 @@ The **Render to Texture** component has the following properties\.
 
 You can use the event bus \(EBus\) interface to communicate with other components in your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  
@@ -140,7 +140,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](ebus-intr
 
 You can use the event bus \(EBus\) interface to communicate with other components in your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

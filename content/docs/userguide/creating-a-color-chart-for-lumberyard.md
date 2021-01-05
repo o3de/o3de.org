@@ -33,7 +33,7 @@ You can use any image as a reference, such as screenshot from your game\.
 You do not need to include the `_cch` suffix for the image file\.  
 **Example default color chart image**  
 
-   The following image is from [Starter Game Sample](sample-level-starter-game.md) and includes the color chart in the bottom right\.  
+   The following image is from [Starter Game Sample](/docs/userguide/samples/levels/starter-game.md) and includes the color chart in the bottom right\.  
 ![\[Color chart example reference for the Set Color Chart node in Script Canvas.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/set-color-chart-reference-image.png)
 
 1. Make a copy of the image and then do the following: 
@@ -62,7 +62,7 @@ You can install the plugin in Lumberyard Setup Assistant\. For more information,
 **Note**  
 You can clear the **Tiled** option to preview the image correctly\. This option does not affect your color chart\.
 To see more information about **ColorChart** settings, click **Show preset info**\. You can find these settings in the `rc.ini` file, located in the `lumberyard_version\dev\Bin64vc141\rc\` directory\.   
-For more information, see [Using the Resource Compiler Image Tool](asset-pipeline-images-using-resourcecompiler-image-tool.md)\.
+For more information, see [Using the Resource Compiler Image Tool](/docs/userguide/assets/images-using-resourcecompiler-image-tool.md)\.
 
 1. Repeat steps 5 and 6 for all your color chart images\.
 
@@ -78,7 +78,7 @@ For more information, see [Using the Resource Compiler Image Tool](asset-pipelin
    1. During the next five seconds, the **Set Color Chart** node fades the screen to the color chart with the `saturation_cch.tif` file\.  
 ![\[Example Set Color Chart node with the default color chart image specified and the new color chart.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/set-color-chart-on-graph-example.png)
 
-1. Attach the **[Script Canvas](component-script-canvas.md)** component to an entity and specify the script\. For more information, see [Working with Components](component-working.md)\. 
+1. Attach the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to an entity and specify the script\. For more information, see [Working with Components](/docs/userguide/components/working.md)\. 
 
 1. To test your script in game mode, press **Ctrl\+G**\.  
 **Example**  

@@ -18,8 +18,8 @@ With Lumberyard's **Database View** editor, you can organize and work within the
 The **Database View** editor displays the following categories of libraries on its tabs:
 + **[Entity](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-entity-library.html) Library**
 + **[Prefabs](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-prefabs-intro.html) Library**
-+ **[Vegetation](vegetation-intro.md)**
-+ **[Particles](particle-library.md)**
++ **[Vegetation](/docs/userguide/vegetation/intro.md)**
++ **[Particles](/docs/userguide/particles/library.md)**
 + **[GameTokens](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/fg-tokens.html)**
 
 Using the **Database View** editor's toolbar, you can load, save, or add new libraries, or remove a library\. The drop\-down menu features a list of libraries that you've already opened; select an open library from this list\. Use the **Add new item** tool \(1\) to add items to your library, **Clone library item** \(2\) to create a duplicate of an existing item, and **Remove item** \(3\) to delete the item from the library\. Use **Assign item to selected objects** \(4\) to assign the selected item to objects currently selected in your viewport\. Use **Get properties from selection** \(5\) to use the properties of the object selected in the viewport and apply those properties to the item selected in the item browser\.

@@ -15,7 +15,7 @@ You can use the **Script Canvas** editor to create a script that switches the sk
 
 1. Right\-click the canvas, search and then select the following nodes: 
    + **On Graph Start**
-   + **[Load by Name](material-load-by-name-node.md)**
+   + **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**
    + **[Set Skybox Material](set-sky-box-material.md)**
 
 1. For your script, do the following:
@@ -30,6 +30,6 @@ You can use the **Script Canvas** editor to create a script that switches the sk
 **Example**    
 ![\[Switch the skybox material with the Script Canvas editor.\]](/images/userguide/sky/scriptcanvasnodes/set-skybox-material-example-script.png)
 
-1. Save the script and attach it to an entity with the **[Script Canvas](component-script-canvas.md)** component\. 
+1. Save the script and attach it to an entity with the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\. 
 
 1. Close the **Script Canvas** editor\.

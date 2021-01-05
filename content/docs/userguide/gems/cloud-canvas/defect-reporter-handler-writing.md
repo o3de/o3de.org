@@ -129,7 +129,7 @@ The following workflow shows the functions that are called to gather user input 
 
 For source code, see `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\Code\Include\CloudGemDefectReporter\CloudGemDefectReporterBus.h`
 
-For information about the DefectReporterSample level and the Defect Report Editor, see [Using the Defect Reporter Cloud Gem Sample Level](cloud-canvas-cloud-gem-defect-reporter-sample-level.md)\.
+For information about the DefectReporterSample level and the Defect Report Editor, see [Using the Defect Reporter Cloud Gem Sample Level](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md)\.
 
 ## Upload Limitations<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-upload-limitations"></a>
 

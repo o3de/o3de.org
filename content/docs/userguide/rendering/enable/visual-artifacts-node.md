@@ -8,7 +8,7 @@ title: Enable Visual Artifacts
 
 Applies effects associated with old television sets, such as grain, vsync, and interlacing\. You can mask the effect with a texture or apply it to the entire screen\.
 
-To disable the effect, see [Disable Visual Artifacts](disable-visual-artifacts-node.md)\.
+To disable the effect, see [Disable Visual Artifacts](/docs/userguide/rendering/disable/visual-artifacts-node.md)\.
 
 **Contents**
 + [Inputs](#enable-visual-artifacts-note-input)

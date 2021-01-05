@@ -5,7 +5,7 @@ title: ' Adding &AWS; Resources to a Cloud Gem'
 ---
 # Adding AWS Resources to a Cloud Gem<a name="cloud-canvas-cgf-adding-aws-resources"></a>
 
-Cloud Canvas cloud gems can be used out of the box, without interacting with the code and the [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md) that powers them\. However, you might be interested in modifying existing cloud gems and creating your own cloud gems, possibly for distribution to others\. If so, you might need to add support for additional AWS CloudFormation types beyond the ones natively supported by Cloud Canvas\. This topic provides information on how to do that\.
+Cloud Canvas cloud gems can be used out of the box, without interacting with the code and the [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md) that powers them\. However, you might be interested in modifying existing cloud gems and creating your own cloud gems, possibly for distribution to others\. If so, you might need to add support for additional AWS CloudFormation types beyond the ones natively supported by Cloud Canvas\. This topic provides information on how to do that\.
 
 Cloud Canvas gems provide AWS CloudFormation templates that specify the AWS resources that the gem requires\. AWS CloudFormation templates support AWS resource types, which are prefixed with `AWS::`\. They also support `AWS::CloudFormation::CustomResource` custom resource types or any resource type prefixed with `Custom::`\.
 
@@ -19,6 +19,6 @@ While AWS CloudFormation templates support a large catalog of AWS resource types
   Custom resources are a good way to integrate your in\-house services and access AWS services that are not directly supported\.
 
 **Topics**
-+ [Resource Type Specification](cloud-canvas-cgf-adding-aws-resources-resource-type-specification.md)
-+ [Adding Support for New AWS:: and Custom:: Types](cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types.md)
-+ [Versioning of Custom Resources](cloud-canvas-cgf-adding-aws-resources-versioning.md)
++ [Resource Type Specification](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-resource-type-specification.md)
++ [Adding Support for New AWS:: and Custom:: Types](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types.md)
++ [Versioning of Custom Resources](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-versioning.md)

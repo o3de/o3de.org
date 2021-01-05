@@ -6,7 +6,7 @@ title: Multiplayer Sample
 ---
 # Multiplayer Sample<a name="sample-project-multiplayer-enhanced"></a>
 
-The Multiplayer sample shows you how to build and structure multiplayer games that use the various features of the [GridMate networking](network-intro.md) library\. The new preview attempts to incorporate as many GridMate features as possible but is not comprehensive\. Instead it is intended as a living snapshot of the current state of the networking library\. Consequently, as the sample evolves, features might be added to enhance functionality or removed to keep the sample concise\.
+The Multiplayer sample shows you how to build and structure multiplayer games that use the various features of the [GridMate networking](/docs/userguide/networking/intro.md) library\. The new preview attempts to incorporate as many GridMate features as possible but is not comprehensive\. Instead it is intended as a living snapshot of the current state of the networking library\. Consequently, as the sample evolves, features might be added to enhance functionality or removed to keep the sample concise\.
 
 ## Building and Running the Sample<a name="sample-project-multiplayer-enhanced-building-and-running"></a>
 
@@ -201,7 +201,7 @@ The following are some connection troubleshooting tips\.
   + Run the command `lmbr_waf configure` to generate a set of certificates\.
   + In the `MultiplayerSample/certificates` directory, provide your own appropriately named certificates\.
 
-  For more information about self\-signed certificates, see **Encryption** in the [Multiplayer Sample Network Features](sample-project-multiplayer-enhanced-network-features.md) section and [About Self\-Signed Certificates in the Multiplayer Sample](#sample-project-multiplayer-enhanced-self-signed-certificates)\.
+  For more information about self\-signed certificates, see **Encryption** in the [Multiplayer Sample Network Features](/docs/userguide/samples/projects/multiplayer-enhanced-network-features.md) section and [About Self\-Signed Certificates in the Multiplayer Sample](#sample-project-multiplayer-enhanced-self-signed-certificates)\.
 
 **Topics**
 + [Building and Running the Sample](#sample-project-multiplayer-enhanced-building-and-running)
@@ -213,5 +213,5 @@ The following are some connection troubleshooting tips\.
 + [Supported Platforms](#sample-project-multiplayer-enhanced-supported-platforms)
 + [About Self\-Signed Certificates in the Multiplayer Sample](#sample-project-multiplayer-enhanced-self-signed-certificates)
 + [Troubleshooting](#sample-project-multiplayer-enhanced-troubleshooting)
-+ [Multiplayer Sample Gameplay Architecture](sample-project-multiplayer-enhanced-architecture.md)
-+ [Multiplayer Sample Network Features](sample-project-multiplayer-enhanced-network-features.md)
++ [Multiplayer Sample Gameplay Architecture](/docs/userguide/samples/projects/multiplayer-enhanced-architecture.md)
++ [Multiplayer Sample Network Features](/docs/userguide/samples/projects/multiplayer-enhanced-network-features.md)

@@ -6,24 +6,24 @@ title: Navigation Area
 ---
 # Navigation Area<a name="component-nav-area"></a>
 
-The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System\. You use this component with the **[Polygon Prism Shape](component-polygon-prism.md)** component, which defines the volume of the navigation area\.
+The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System\. You use this component with the **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)** component, which defines the volume of the navigation area\.
 
 **Note**  
 When you add a **Navigation Area** component, you must also add the **Polygon Prism Shape** component\. 
 
-For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](component-polygon-prism.md)\.
+For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)\.
 
 When you create a **Navigation Area**, all areas that are traversable by the specified AI [**Agent Type**](#component-nav-area-properties) show as blue when you [render the navigation mesh](#render-navigation-mesh)\. Any areas that are not traversable render as blank areas, such as deep pits and steep slopes\. Exclusion areas and areas around static objects also render as blank areas\. Even if your navigation area is divided into separate pieces by static objects, terrain features, and exclusion areas, each traversable area renders blue\.
 
 ![\[Navigation Area\]](/images/userguide/component/component-navigation-mesh.png)
 
-You can use a **[Navigation Seed](component-nav-seed.md)** component to fine\-tune AI accessibility\.
+You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** component to fine\-tune AI accessibility\.
 
 **To add a Navigation Area**<a name="create-navigation-area"></a>
 
 1. In the Viewport, near where you want to create your navigation area, right\-click and choose **Create entity**\.
 
-1. With your new entity selected in the **Entity Outliner**, [add](component-working-adding.md) the **Navigation Area** component to it\.  
+1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it\.  
 ![\[Navigation Area component properties.\]](/images/userguide/component/component-nav-area-1.png)
 
 1. In the **Navigation Area** component, next to **Agent Types**, click **\+**\.
@@ -60,7 +60,7 @@ The **Navigation Area** component has the following properties:<a name="componen
 **Agent Types**  
 Specifies the types of AI that can traverse this navigation area\. These agent types are defined in `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml`\. To specify multiple agent types for this area, click the **\+** icon\.   
 You use this property to restrict which agents can navigate within that area\. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles\.  
-To define an agent type on your AI, see the [Navigation](component-navigation.md) component\.
+To define an agent type on your AI, see the [Navigation](/docs/userguide/components/navigation.md) component\.
 
 **Exclusion**  
 When selected, creates a subtractive navigation area\. This creates a cutout within an existing navigation mesh\. For more information, see [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)\.
@@ -73,7 +73,7 @@ When Lumberyard creates the navigation mesh, it can automatically exclude areas 
 
 1. In the **Entity Outliner**, select the entity\. This can be a tree, boulder, building, or any object that you don't want the AI to walk through\.
 
-1. In the **[Transform](component-transform.md)** component, select the **Static** property\.
+1. In the **[Transform](/docs/userguide/components/transform.md)** component, select the **Static** property\.
 
    The following example shows a navigation mesh around a boulder when the **Static** property is not selected\.
 
@@ -123,7 +123,7 @@ When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer is
 
 Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game\. 
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)
 
 ### RefreshArea<a name="component-nav-area-ebus-refresharea"></a>
 
@@ -139,4 +139,4 @@ None
 No
 
 **Note**  
-The Navigation Area component depends on the Polygon Prism component, which also uses `VertexContainer` functions\. For more information, see [Vertex Containers](component-vertex-container.md)\.
+The Navigation Area component depends on the Polygon Prism component, which also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.

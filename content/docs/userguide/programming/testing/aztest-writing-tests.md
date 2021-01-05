@@ -5,7 +5,7 @@ title: Writing Tests for AzTest
 ---
 # Writing Tests for AzTest<a name="testing-aztest-writing-tests"></a>
 
-Automated testing is important for any game project\. To perform automated testing in Lumberyard, you can use AzTest and the AZ test scanner\. This document shows you how to write the tests to build and run\. For information on building and running unit and integration tests, see [Using AZ Test Scanner](testing-aztestscanner.md)\.
+Automated testing is important for any game project\. To perform automated testing in Lumberyard, you can use AzTest and the AZ test scanner\. This document shows you how to write the tests to build and run\. For information on building and running unit and integration tests, see [Using AZ Test Scanner](/docs/userguide/programming/testing/aztestscanner.md)\.
 
 Lumberyard and AzTest use the [GoogleTest](https://github.com/google/googletest) and [GoogleMock](https://github.com/google/googletest/blob/master/googlemock/README.md) frameworks for unit and integration tests\. When you write your tests, we recommend that you consult the corresponding documentation\.
 
@@ -15,7 +15,7 @@ Testing code with AzTest has three steps: Configure your module for testing, wri
 
 If you want to add tests to a module or a gem that is included with Lumberyard, the configuration has already been done for you and you can skip this step\. If you want to add tests to non\-Lumberyard modules, projects, or tools, then you must configure them to use AzTest\.
 
-All modules and libraries in Lumberyard must be configured for use with Waf\. If you are unfamiliar with configuring build modules in Waf, see [Adding a Build Module](waf-using-module.md) before continuing\.
+All modules and libraries in Lumberyard must be configured for use with Waf\. If you are unfamiliar with configuring build modules in Waf, see [Adding a Build Module](/docs/userguide/waf/using-module.md) before continuing\.
 
 **To configure your module for Waf**
 

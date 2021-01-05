@@ -14,19 +14,19 @@ The **UI Editor** uses the concept of a canvas as an invisible backdrop for your
 
    The **UI Editor** automatically creates an empty canvas\.
 
-1. In the **UI Editor**, add [elements](ui-editor-elements.md), [components](ui-editor-components.md), [slices](ui-editor-working-slices.md), and [prefabs](ui-editor-prefabs.md)\.
+1. In the **UI Editor**, add [elements](/docs/userguide/ui/editor/elements.md), [components](/docs/userguide/ui/editor/components.md), [slices](/docs/userguide/ui/editor/working-slices.md), and [prefabs](/docs/userguide/ui/editor/prefabs.md)\.
 
 1. Click **File**, **Save As**\. Name the canvas with a `.uicanvas` file extension, and then click **Save**\.
 
 **Topics**
-+ [Navigating the Viewport](ui-editor-navigating-viewport.md)
-+ [Changing the Canvas Size](ui-editor-changing-size.md)
-+ [Previewing Canvases](ui-editor-previewing-canvas.md)
-+ [Configuring Canvas Properties](ui-editor-canvas-properties.md)
-+ [Loading Canvases in Lua](ui-editor-loading-canvases-lua.md)
-+ [Placing UI Canvases in the 3D World](ui-editor-placing-canvases-3d.md)
-+ [Using Texture Atlases](ui-editor-texture-atlases.md)
-+ [Debugging UI Canvases](ui-editor-debugging-ui-canvases.md)
++ [Navigating the Viewport](/docs/userguide/ui/editor/navigating-viewport.md)
++ [Changing the Canvas Size](/docs/userguide/ui/editor/changing-size.md)
++ [Previewing Canvases](/docs/userguide/ui/editor/previewing-canvas.md)
++ [Configuring Canvas Properties](/docs/userguide/ui/editor/canvas-properties.md)
++ [Loading Canvases in Lua](/docs/userguide/ui/editor/loading-canvases-lua.md)
++ [Placing UI Canvases in the 3D World](/docs/userguide/ui/editor/placing-canvases-3d.md)
++ [Using Texture Atlases](/docs/userguide/ui/editor/texture-atlases.md)
++ [Debugging UI Canvases](/docs/userguide/ui/editor/debugging-ui-canvases.md)
 
 You can open multiple canvases in the **UI Editor**\. For each open canvas, a tab appears in the tab bar\. The active canvas is highlighted in the tab bar\. Its content is displayed in the viewport and its elements and properties are displayed in the hierarchy and properties panes\.
 

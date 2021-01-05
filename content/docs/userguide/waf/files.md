@@ -16,9 +16,9 @@ The Waf build file system can be grouped into three categories:
 + Project and compilation files such as \*\.h, \*\.cpp, and so on
 
 **Topics**
-+ [Waf File Lists \(\*\.waf\_files\)](waf-files-filelist.md)
-+ [Waf Branch Spec \(waf\_branch\_spec\.py\)](waf-files-branch-spec.md)
-+ [Waf Projects File \(project\.json\)](waf-files-projects-file.md)
-+ [Waf Spec Files \(\*\.json\)](waf-files-spec-file.md)
-+ [Waf Module Files \(wscript\)](waf-files-module-files-wscript.md)
-+ [Waf User Options and Settings](waf-user-options-and-settings.md)
++ [Waf File Lists \(\*\.waf\_files\)](/docs/userguide/waf/files-filelist.md)
++ [Waf Branch Spec \(waf\_branch\_spec\.py\)](/docs/userguide/waf/files-branch-spec.md)
++ [Waf Projects File \(project\.json\)](/docs/userguide/waf/files-projects-file.md)
++ [Waf Spec Files \(\*\.json\)](/docs/userguide/waf/files-spec-file.md)
++ [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)
++ [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)

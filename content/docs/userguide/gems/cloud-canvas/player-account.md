@@ -12,11 +12,11 @@ The Player Account Cloud Gem provides a standalone player authentication and man
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has **Cloud Gem Player Account** enabled\.
-+ You have created a project stack in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You have created a project stack in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 + You have a deployment stack with Player Account Cloud Gem resources in Cloud Canvas Resource Manager\.
 + You have opened the Cloud Gem Portal \(in Lumberyard Editor, choose **AWS**, **Cloud Gem Portal**\.\)
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Player Account** in the Project Configurator\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Player Account** in the Project Configurator\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ### Legal Restrictions<a name="cloud-canvas-cloud-gem-player-account-legal-restrictions"></a>
 

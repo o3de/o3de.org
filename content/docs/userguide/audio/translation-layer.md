@@ -17,5 +17,5 @@ The ATL controls support a flexible workflow for a project, such as the followin
 
 **Topics**
 + [Audio Controls Editor](#audio-architecture-ace)
-+ [Using the Audio Controls Editor](audio-atl-editor.md)
-+ [ATL Controls](audio-default-controls.md)
++ [Using the Audio Controls Editor](/docs/userguide/audio/atl-editor.md)
++ [ATL Controls](/docs/userguide/audio/default-controls.md)

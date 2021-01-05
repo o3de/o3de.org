@@ -16,4 +16,4 @@ Observe these best practices when creating fog volumes
 + To avoid inaccurate rendering, don't apply nonuniform scaling to fog volumes\.
 + When using shadow maps inside fog volumes, make sure the environment **VolFogShadows** parameter is disabled\.
 
-You can add the **Fog Volume** component to an entity to create fog effects\. For more information, see the **[Fog Volume](component-fog-volume.md)** component\.
+You can add the **Fog Volume** component to an entity to create fog effects\. For more information, see the **[Fog Volume](/docs/userguide/components/fog-volume.md)** component\.

@@ -15,17 +15,17 @@ title: Cloud Gem Framework Service API
 
 **Topics**
 + [Cloud Gem Swagger API Descriptions](#cloud-canvas-cgf-service-api-swagger-descriptions)
-+ [Resources](cloud-canvas-cgf-service-api-resources.md)
-+ [Operations](cloud-canvas-cgf-service-api-operations.md)
-+ [Security](cloud-canvas-cgf-service-api-security.md)
-+ [Cloud Gem Framework Extension Object](cloud-canvas-cgf-service-api-cgf-extension-object.md)
-+ [Cross\-Gem Communication](cloud-canvas-cgf-service-api-cross-gem-communication.md)
-+ [Game Clients](cloud-canvas-cgf-service-api-game-clients.md)
-+ [Generated Game Client Code Example](cloud-canvas-cgf-service-api-generated-game-client-code-example.md)
-+ [Calling a Game API](cloud-canvas-cgf-service-api-calling-apis.md)
-+ [Publishing Your API](cloud-canvas-cgf-service-api-publishing-api-gateway.md)
++ [Resources](/docs/userguide/gems/cloud-canvas/cgf-service-api-resources.md)
++ [Operations](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations.md)
++ [Security](/docs/userguide/gems/cloud-canvas/cgf-service-api-security.md)
++ [Cloud Gem Framework Extension Object](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md)
++ [Cross\-Gem Communication](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md)
++ [Game Clients](/docs/userguide/gems/cloud-canvas/cgf-service-api-game-clients.md)
++ [Generated Game Client Code Example](/docs/userguide/gems/cloud-canvas/cgf-service-api-generated-game-client-code-example.md)
++ [Calling a Game API](/docs/userguide/gems/cloud-canvas/cgf-service-api-calling-apis.md)
++ [Publishing Your API](/docs/userguide/gems/cloud-canvas/cgf-service-api-publishing-api-gateway.md)
 
-Lumberyard cloud gems provide services like the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) \(CGP\) that configure and manage a game's operation\. The services are implemented by [AWS Lambda](https://aws.amazon.com/lambda/) function resources\. The game and tools access these services through the [Amazon API Gateway](https://aws.amazon.com/api-gateway/)\. The code that you provide runs in a Lambda function\. API Gateway manages access to the service, provides caching for frequently used results, and supports request throttling\.
+Lumberyard cloud gems provide services like the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md) \(CGP\) that configure and manage a game's operation\. The services are implemented by [AWS Lambda](https://aws.amazon.com/lambda/) function resources\. The game and tools access these services through the [Amazon API Gateway](https://aws.amazon.com/api-gateway/)\. The code that you provide runs in a Lambda function\. API Gateway manages access to the service, provides caching for frequently used results, and supports request throttling\.
 
 The following diagram shows how the Cloud Gem Framework service API interacts with the game client, the Cloud Gem Portal, AWS Lambda, and API Gateway\.
 
@@ -298,4 +298,4 @@ The following is an example `swagger.json` file\.
 }
 ```
 
-Cloud Canvas uses these API descriptions to generate Lumberyard engine components that execute service APIs for the game\. The [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) web application also uses the API descriptions when it makes service requests\. In addition, the API descriptions are used to configure [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-api-using-import-export-api.html) to work with your service\.
+Cloud Canvas uses these API descriptions to generate Lumberyard engine components that execute service APIs for the game\. The [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md) web application also uses the API descriptions when it makes service requests\. In addition, the API descriptions are used to configure [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-api-using-import-export-api.html) to work with your service\.

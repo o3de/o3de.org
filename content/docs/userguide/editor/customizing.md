@@ -145,7 +145,7 @@ You can change the general Lumberyard Editor settings and file settings\.
 
 | Parameter | Description | 
 | --- | --- | 
-| Append numeric value to slices |  Automatically adds a number to the slice file name\. For example, if you create a slice from an entity named *NewSlice*, the slice will be named `NewSlice001.slice`\.  For more information, see [Creating a Slice](component-slices-creating.md)\.  | 
+| Append numeric value to slices |  Automatically adds a number to the slice file name\. For example, if you create a slice from an entity named *NewSlice*, the slice will be named `NewSlice001.slice`\.  For more information, see [Creating a Slice](/docs/userguide/components/slices-creating.md)\.  | 
 | Backup on Save |  Creates a backup file when you save\.  | 
 | Maximum Save Backups |  Specifies the maximum number of saved backups\.  | 
 | Standard Temporary Directory |  Specifies the default temporary directory to use\. Default = `[root]\Temp`  | 

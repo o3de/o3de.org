@@ -8,7 +8,7 @@ title: Troubleshooting &ALY; issues on Android
 
  Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Amazon Lumberyard to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\. 
 
-For information on how to design assets and configure renderer settings to improve performance, see [Lumberyard Performance Tuning Guidelines for Mobile Devices](ios-android-performance-guidelines.md)\. 
+For information on how to design assets and configure renderer settings to improve performance, see [Lumberyard Performance Tuning Guidelines for Mobile Devices](/docs/userguide/mobile/performance-guidelines.md)\. 
 
  All of the advice in this section is specific to issues you'll encounter when building with the Lumberyard tools, or when you're running a project on a device and see obvious errors caused by the engine itself\. For general advice and instructions on debugging your Lumberyard project for Android, see the [Android Studio Debugger documentation](https://developer.android.com/studio/debug)\. 
 
@@ -42,7 +42,7 @@ For information on how to design assets and configure renderer settings to impro
      ```
 +  Check to make sure that the device is allowed to connect to the shader compiler\. Run through the following steps to check your configuration and make sure that everything is correctly enabled: 
 
-  1.  If the Shader Compiler is on a remote host, make sure that inbound traffic to the shader compiler's port on the host is allowed\. By default, this port is **61453**\. See also [Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md) for full information on configuring to connect to a remote shader compiler\. 
+  1.  If the Shader Compiler is on a remote host, make sure that inbound traffic to the shader compiler's port on the host is allowed\. By default, this port is **61453**\. See also [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md) for full information on configuring to connect to a remote shader compiler\. 
 
   1.  If the Shader Compiler is running on the same machine with the Android device connected to it, make sure that port forwarding is set up to send traffic to the host from the Android device\. By default, the Shader Compiler's port is **61453**\. Configure device port forwarding by running the following command in a Windows command prompt\. 
 

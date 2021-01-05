@@ -16,5 +16,5 @@ Tangent space normal maps are independent of the underlying geometry which means
 An advantage of tangent space normal maps is that the normals are always pointing outwards, so assuming unit length, the normal z coordinate can be reconstructed from the x and y components\. After the coordinate expansion from 0\.\.1 to the \-1\.\.1 range, the z component can be computed in the shader with this formula: z = sqrt\(1 \- x\*x \+ y\*y\)\. This makes it possible to use two\-channel textures \(2 bytes per texel\) to store normal maps\. 
 
 **Topics**
-+ [Normal Mapping Best Practices](mat-maps-normal-best-practices.md)
-+ [Using Normals with Gloss Maps](mat-maps-normal-gloss.md)
++ [Normal Mapping Best Practices](/docs/userguide/materials/maps/normal-best-practices.md)
++ [Using Normals with Gloss Maps](/docs/userguide/materials/maps/normal-gloss.md)

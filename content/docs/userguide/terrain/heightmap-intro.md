@@ -11,9 +11,9 @@ The heightmap is the base of the terrain in your level\. You have three options 
 + Importing an existing heightmap
 
 **Topics**
-+ [Creating a Terrain Heightmap](terrain-heightmap-create.md)
-+ [Setting Heightmap Properties](terrain-editor-ref.md)
-+ [Importing a Terrain Heightmap](terrain-heightmap-import.md)
-+ [Exporting a Terrain Heightmap](terrain-heightmap-export.md)
-+ [Resizing a Terrain Heightmap](terrain-heightmap-resize.md)
-+ [Rotating a Terrain Heightmap](terrain-heightmap-rotate.md)
++ [Creating a Terrain Heightmap](/docs/userguide/terrain/heightmap-create.md)
++ [Setting Heightmap Properties](/docs/userguide/terrain/editor-ref.md)
++ [Importing a Terrain Heightmap](/docs/userguide/terrain/heightmap-import.md)
++ [Exporting a Terrain Heightmap](/docs/userguide/terrain/heightmap-export.md)
++ [Resizing a Terrain Heightmap](/docs/userguide/terrain/heightmap-resize.md)
++ [Rotating a Terrain Heightmap](/docs/userguide/terrain/heightmap-rotate.md)

@@ -12,7 +12,7 @@ title: Using the Menu Bar
 | --- |
 | This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
 
-The main menu bar in Lumberyard Editor provides access to the features and tools to design, run, and deploy your game, as well as, work with external tools and find online information\. To access the available features and tools, you can use the menu, the buttons on the toolbars, or the keyboard\. You can pause on the buttons to see tool tips\. Some editors and tools have keyboard shortcuts\. For a comprehensive list, see [Using Keyboard Shortcuts](lumberyard-editor-shortcut-keys.md)\.
+The main menu bar in Lumberyard Editor provides access to the features and tools to design, run, and deploy your game, as well as, work with external tools and find online information\. To access the available features and tools, you can use the menu, the buttons on the toolbars, or the keyboard\. You can pause on the buttons to see tool tips\. Some editors and tools have keyboard shortcuts\. For a comprehensive list, see [Using Keyboard Shortcuts](/docs/userguide/editor/shortcut-keys.md)\.
 
 ![\[Lumberyard Editor main menu bar.\]](/images/userguide/lumberyard-editor-menu-bar.png)
 
@@ -51,7 +51,7 @@ In the **File** menu, you can manage your game project such as opening and savin
 | Save Modified External Layers | Save only the external layers that have been modified since the last save\. | 
 | Project Settings | Launch other file management tools:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html)  | 
 | Show Log File | Show the log file that contains all text printed in the console to a \.log file in the project's directory\. | 
-| Upgrade Legacy Entities | Launch the Legacy Converter tool to convert your legacy entities to components that you can edit in Lumberyard Editor\. For more information, see [Converting Entities with the Legacy Converter](component-entity-data-converter.md)\. | 
+| Upgrade Legacy Entities | Launch the Legacy Converter tool to convert your legacy entities to components that you can edit in Lumberyard Editor\. For more information, see [Converting Entities with the Legacy Converter](/docs/userguide/components/entity-data-converter.md)\. | 
 | Exit | Close Lumberyard Editor\. At the prompt, you can save any changes made since the last save was performed\. | 
 
 ## Edit<a name="lumberyard-editor-menus-edit"></a>
@@ -121,7 +121,7 @@ In the **Modify** menu, you can manipulate attributes and properties of objects 
 | Constrain | Limit the movement of an object to the XYZ axes, XY planes, or to the surface of the terrain and objects\. | 
 | Snap | Place an object on the grid or a rotational increment\. | 
 | Transform Mode | Displays a submenu to apply the following changes to an object:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html) | 
-| Convert to | Change the selected object to another type of entity: brush, geometry entity, designer object, static entity, game volume, or component entity\. For more information, see the [Converting Entities with the Legacy Converter](component-entity-data-converter.md)\. | 
+| Convert to | Change the selected object to another type of entity: brush, geometry entity, designer object, static entity, game volume, or component entity\. For more information, see the [Converting Entities with the Legacy Converter](/docs/userguide/components/entity-data-converter.md)\. | 
 | Fast Rotate | Quickly spin the selected object on the specified axis or with the degree value that you set for Rotate Angle\. | 
 | Sub Object Mode | If the Edit Mesh function is enabled, select and edit the geometry components of the object\. | 
 | Save Object\(s\) | Update the file with the changes made to the selected objects\. | 
@@ -155,7 +155,7 @@ In the **Game** menu, you can add and test enhancements to your game project\.
 | Game Menu Item | Description | 
 | --- | --- | 
 | Play Game | Switch to game mode \(runtime\)\. To return to edit mode, press Esc\. | 
-| Enable Physics/AI | Toggle physics and AI in your level to use the PhysX system if the event bus and handlers are not specified\. For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\. | 
+| Enable Physics/AI | Toggle physics and AI in your level to use the PhysX system if the event bus and handlers are not specified\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\. | 
 | Export to Engine | Export the level data to a level\.pak file in order to play the level in game mode\. | 
 | Export Selected Objects | Save the selected geometry to an \.obj or \.fbx file to make it available for use with other entities\. | 
 | Export Occlusion Mesh | Save the occlusion mesh for application to other entities\. | 
@@ -172,7 +172,7 @@ In the **Game** menu, you can add and test enhancements to your game project\.
 
 ### AI<a name="lumberyard-editor-menus-ai"></a>
 
-In the **AI** menu, you can manage AI settings such as generating AI navigation and updating the AI system within a level\. For more information, see the **[Navigation Area](component-nav-area.md)** component\.
+In the **AI** menu, you can manage AI settings such as generating AI navigation and updating the AI system within a level\. For more information, see the **[Navigation Area](/docs/userguide/components/nav-area.md)** component\.
 
 ![\[Lumberyard Editor Artificial Intelligence (AI) submenu of the Game menu\]](/images/userguide/lumberyard-menusgame-ai.png)
 
@@ -217,7 +217,7 @@ In the **Audio** menu, you can stop all sounds or refresh the audio\.
 
 ### Clouds<a name="lumberyard-editor-menus-clouds"></a>
 
-In the **Clouds** menu, you can create, open, close, and delete your custom cloud assets\. The project must have the [Sky Clouds Gem](gems-system-gem-cloud.md) enabled\. For more information, see [Sky Clouds Gem](gems-system-gem-cloud.md)\. 
+In the **Clouds** menu, you can create, open, close, and delete your custom cloud assets\. The project must have the [Sky Clouds Gem](/docs/userguide/gems/builtin/cloud.md) enabled\. For more information, see [Sky Clouds Gem](/docs/userguide/gems/builtin/cloud.md)\. 
 
 ![\[Lumberyard Editor Clouds submenu of the Game menu with Sky Clouds gem enabled.\]](/images/userguide/lumberyard-menusgame-clouds.png)
 
@@ -236,7 +236,7 @@ In the **Clouds** menu, you can create, open, close, and delete your custom clou
 In the **Prefabs** menu, you can modify CryEntities defined in the prefab library\. 
 
 **Note**  
-We recommend that you use slices instead\. For more information, see [Working with Slices](component-slices.md)\.
+We recommend that you use slices instead\. For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 
 
@@ -334,7 +334,7 @@ In the **View** menu, you can customize the layout and the viewport of Lumberyar
 
 ### Viewport<a name="lumberyard-editor-menus-viewport"></a>
 
-In the **Viewport** menu, you can change settings that affect the display for level design, entity placement, and object manipulation\. For more information, see [Using the Viewport](lumberyard-editor-viewport.md)\.
+In the **Viewport** menu, you can change settings that affect the display for level design, entity placement, and object manipulation\. For more information, see [Using the Viewport](/docs/userguide/editor/viewport.md)\.
 
 ![\[Lumberyard Editor Viewport submenu of the View menu.\]](/images/userguide/lumberyard-editors-menusview-viewport.png)
 
@@ -367,11 +367,11 @@ In the **AWS** menu, you can sign up for an Amazon Web Services \(AWS\) account,
 | AWS Menu Item | Description | 
 | --- | --- | 
 | Credentials manager | Add or edit an AWS profile\. | 
-| Cloud Canvas | Select a deployment or see more information in [Understanding Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md) or [Using Dynamic Content Manager](cloud-canvas-cloud-gem-dc-manager.md)\. | 
+| Cloud Canvas | Select a deployment or see more information in [Understanding Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) or [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md)\. | 
 | Commerce | Learn how to submit your game to Amazon's Digital Software store using [Merch by Amazon](https://merch.amazon.com/landing) or [Publishing on Amazon](https://developer.amazon.com/appsandservices/solutions/platforms/mac-pc)\. | 
 | GameLift | Access the Amazon GameLift console or learn more about the game server hosting and matchmaking solution built on AWS\. | 
 | Open AWS Console | Open the AWS Management Console and access Amazon Cognito, user management services; Amazon DynamoDB, NoSQL database service; Amazon S3, cloud storage; and AWS Lambda, serverless computing\. | 
-| Open Cloud Gem Portal | Open the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md), a gem specifying the configuration to the API Gateway to AWS Lambda\. | 
+| Open Cloud Gem Portal | Open the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md), a gem specifying the configuration to the API Gateway to AWS Lambda\. | 
 
 ## Help<a name="lumberyard-editor-menus-help"></a>
 

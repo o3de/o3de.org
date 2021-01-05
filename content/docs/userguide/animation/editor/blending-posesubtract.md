@@ -15,7 +15,7 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. Create a [blend tree](animation-editor-creating-blend-trees.md)\.
+1. Create a [blend tree](/docs/userguide/animation/editor/creating-blend-trees.md)\.
 
 1. Double\-click the blend tree node that you created\.
 

@@ -5,7 +5,7 @@ title: Adding a Director (Scene) Node
 ---
 # Adding a Director \(Scene\) Node<a name="cinematics-adding-a-director-scene-node"></a>
 
-To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](cinematics-track-view-nodes-director.md)\. 
+To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\. 
 
 **To add a Director node in the Track View**
 
@@ -20,7 +20,7 @@ To determine what camera you want your sequence to use, you must add a [Director
 
 By default, the **Camera** track appears on the **Director \(Scene\) Node** to control which camera is active for the sequence\. This is the only track that is needed to assign and switch between cameras\. 
 
-For more information about other tracks that you can add, see the [Director \(Scene\) Node](cinematics-track-view-nodes-director.md)\.
+For more information about other tracks that you can add, see the [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\.
 
 ![\[Add the Camera track in the Track View\]](/images/userguide/cinematics/cinematics-track-view-editor-adding-director-node-2.png)
 

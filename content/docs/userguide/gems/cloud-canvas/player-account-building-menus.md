@@ -17,4 +17,4 @@ To build the menus, use the code for `CloudGemPlayerAccountRequestBus` and `Clou
    
 + The act of signing in also caches the player's credentials inside the gem's system component\.
 
-For information about Player Account Cloud Gem functions for creating accounts, password recovery, signing in and out, and account management, see [Player Account Cloud Gem Implementation Details](cloud-canvas-cloud-gem-player-account-details.md)\.
+For information about Player Account Cloud Gem functions for creating accounts, password recovery, signing in and out, and account management, see [Player Account Cloud Gem Implementation Details](/docs/userguide/gems/cloud-canvas/player-account-details.md)\.

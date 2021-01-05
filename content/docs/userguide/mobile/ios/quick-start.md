@@ -6,7 +6,7 @@ title: 'Quick Start: Running the Samples Project on iOS Devices'
 ---
 # Quick Start: Running the Samples Project on iOS Devices<a name="ios-quick-start"></a>
 
-You can use this quick start to learn how to run the [Samples Project](sample-project-samples.md) on your iOS device from a macOS computer\.
+You can use this quick start to learn how to run the [Samples Project](/docs/userguide/samples/projects/samples.md) on your iOS device from a macOS computer\.
 
 This topic assumes that you have:
 + Xcode installed on your macOS computer
@@ -15,7 +15,7 @@ This topic assumes that you have:
 + Lumberyard installed on a Windows computer
 + Remote Shader Compiler running on your Windows or macOS computer
 
-For more information about creating iOS apps, see [iOS Support](ios-intro.md)\.
+For more information about creating iOS apps, see [iOS Support](/docs/userguide/mobile/ios/intro.md)\.
 
 **To run the Samples Project on an iOS device**
 

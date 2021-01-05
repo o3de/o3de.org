@@ -16,12 +16,12 @@ You define where and how an AI agent moves around in the navigation mesh using n
 AI agents can also move along defined paths between navigation meshes \- this is called off\-mesh navigation\.
 
 **Topics**
-+ [Multi\-Layer Navigation Mesh \(MNM\)](ai-nav-mesh.md)
-+ [Creating Navigation Areas](ai-nav-areas.md)
-+ [Selecting an AI Navigation Type](ai-nav-agent-types.md)
-+ [Setting Navigation Exclusion Areas](ai-nav-areas-exclusion.md)
-+ [Adding Navigation Seed Points](ai-nav-seed-points.md)
-+ [Regenerating the Navigation Mesh](ai-nav-mesh-regen.md)
-+ [Off\-Mesh AI Navigation](ai-nav-off_mesh_intro.md)
-+ [Debugging AI Navigation](ai-nav-debug.md)
-+ [Navigation Q & A](ai-navigation.md)
++ [Multi\-Layer Navigation Mesh \(MNM\)](/docs/userguide/ai/nav-mesh.md)
++ [Creating Navigation Areas](/docs/userguide/ai/nav-areas.md)
++ [Selecting an AI Navigation Type](/docs/userguide/ai/nav-agent-types.md)
++ [Setting Navigation Exclusion Areas](/docs/userguide/ai/nav-areas-exclusion.md)
++ [Adding Navigation Seed Points](/docs/userguide/ai/nav-seed-points.md)
++ [Regenerating the Navigation Mesh](/docs/userguide/ai/nav-mesh-regen.md)
++ [Off\-Mesh AI Navigation](/docs/userguide/ai/nav-off_mesh_intro.md)
++ [Debugging AI Navigation](/docs/userguide/ai/nav-debug.md)
++ [Navigation Q & A](/docs/userguide/ai/navigation.md)

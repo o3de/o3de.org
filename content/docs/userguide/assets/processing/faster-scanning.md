@@ -12,7 +12,7 @@ By default, **Faster Scanning Mode** is enabled\. You can enable or disable this
 
 **To disable Faster Scanning Mode**
 
-1. Open [Asset Processor](asset-pipeline-processor.md)\.
+1. Open [Asset Processor](/docs/userguide/assets/processor.md)\.
 
 1. Select **Tools** and clear **Faster Scanning Mode**\.   
 ![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/userguide/asset_processor/faster-scanning.png)
@@ -34,7 +34,7 @@ When you enable the feature you can also use console mode `stdout` as well as op
 ~~Debug~~5303 files reported from scanner.  2903 unchanged files skipped, 2400 files processed
 ```
 
-For more information, see [Configuring the Asset Pipeline](asset-pipeline-configuring.md)\.
+For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 ## Performing a Full Scan<a name="asset-processor-full-scan"></a>
 

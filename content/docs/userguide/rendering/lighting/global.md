@@ -19,7 +19,7 @@ Environment probes control many aspects of the physically based lighting in Lumb
 
 When placing environment probes in a level, pay attention to how probes are layered and sorted going from global to local probes\.
 
-Every level should have a global environment probe\. Global probes provide the entire level with ambient lighting, which is calculated from the probe's location\. In addition to a global probe, a level may have one or more local probes\. For more information about local probes, see [Local Environment Lighting](enviro-lighting-local.md)\.
+Every level should have a global environment probe\. Global probes provide the entire level with ambient lighting, which is calculated from the probe's location\. In addition to a global probe, a level may have one or more local probes\. For more information about local probes, see [Local Environment Lighting](/docs/userguide/rendering/lighting/local.md)\.
 
 As shown in the following table, the probe has several configurable properties, which you can adjust in the **Rollup Bar**\.
 

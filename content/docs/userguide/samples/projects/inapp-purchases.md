@@ -6,7 +6,7 @@ title: In-App Purchases Sample
 ---
 # In\-App Purchases Sample<a name="sample-project-inapp-purchases"></a>
 
-The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP\) Gem for a Lumberyard application that runs on a mobile device\. For more information about this gem, see [In\-App Purchases Gem](gems-system-gem-inapp-purchases.md)\.
+The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP\) Gem for a Lumberyard application that runs on a mobile device\. For more information about this gem, see [In\-App Purchases Gem](/docs/userguide/gems/builtin/inapp-purchases.md)\.
 
 **Topics**
 + [Prerequisites](#sample-project-inapp-purchases-prerequisites)
@@ -16,7 +16,7 @@ The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP
 ## Prerequisites<a name="sample-project-inapp-purchases-prerequisites"></a>
 
 To use the In\-App Purchases sample, you must have the following:
-+ An understanding of how to build a Lumberyard application and deploy to a mobile device\. For more information, see [Developing for Android and iOS with Lumberyard](mobile-support-intro.md)\.
++ An understanding of how to build a Lumberyard application and deploy to a mobile device\. For more information, see [Developing for Android and iOS with Lumberyard](/docs/userguide/mobile/support-intro.md)\.
 + Access to iTunes Connect to properly configure the sample for an iOS device\.
 + Access to the Google Play Developer Console to properly configure the sample for an Android device\.
 

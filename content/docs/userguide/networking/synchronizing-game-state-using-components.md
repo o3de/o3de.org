@@ -20,13 +20,13 @@ To enable network synchronization for a component, you must do the following:
 + [Unbinding Process](#network-synchronizing-unbinding-process)
 + [NetBindable Component Flexibility](#network-synchronizing-netbindable-flexibility)
 + [Entity IDs](#network-synchronizing-entity-ids)
-+ [Synchronizing Animations Across a Network](network-synchronizing-animation.md)
-+ [Creating a NetBindable Component](network-replicas-binding.md)
-+ [Transform Component Interpolation](network-transform-component-interpolation.md)
++ [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md)
++ [Creating a NetBindable Component](/docs/userguide/networking/replicas-binding.md)
++ [Transform Component Interpolation](/docs/userguide/networking/transform-component-interpolation.md)
 
 ## Synchronizing an Entity with a NetBindingComponent<a name="network-synchronizing-netbindingcomponent"></a>
 
-Because a special `NetBindingComponent` is responsible for the actual binding process, entities that need to be synchronized must have a `NetBindingComponent` added to them\. When a game enters a multiplayer session, the `NetBindingComponent` collects replica chunks from the `NetBindable` instances on the entity and adds them to a [Replica](network-replicas-replica.md) primary\. A special `NetBindingChunk` captures and stores spawning and other binding information for the entity\. `NetBindingComponent` instances activated during a multiplayer session automatically start the binding process\.
+Because a special `NetBindingComponent` is responsible for the actual binding process, entities that need to be synchronized must have a `NetBindingComponent` added to them\. When a game enters a multiplayer session, the `NetBindingComponent` collects replica chunks from the `NetBindable` instances on the entity and adds them to a [Replica](/docs/userguide/networking/replicas-replica.md) primary\. A special `NetBindingChunk` captures and stores spawning and other binding information for the entity\. `NetBindingComponent` instances activated during a multiplayer session automatically start the binding process\.
 
 ## Binding Process on Remote Nodes<a name="network-synchronizing-binding-process-remote"></a>
 

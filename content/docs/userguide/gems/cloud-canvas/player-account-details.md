@@ -6,11 +6,11 @@ title: Player Account Cloud Gem Implementation Details
 ---
 # Player Account Cloud Gem Implementation Details<a name="cloud-canvas-cloud-gem-player-account-details"></a>
 
-You can use the API operations described on this page to manage player accounts with the [Player Account Cloud Gem Portal](cloud-canvas-cloud-gem-player-account.md)\.
+You can use the API operations described on this page to manage player accounts with the [Player Account Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/player-account.md)\.
 
 ## Functions and Callbacks<a name="cloud-canvas-cloud-gem-player-account-details-functions-and-callbacks"></a>
 
-Most functions for the Player Account Cloud Gem have a corresponding callback that supplies the results of the call\. The results contain the information gathered or error information\. To make calls to and receive responses from player registration and login component API operations, you use the [EBus](ebus-intro.md)\.
+Most functions for the Player Account Cloud Gem have a corresponding callback that supplies the results of the call\. The results contain the information gathered or error information\. To make calls to and receive responses from player registration and login component API operations, you use the [EBus](/docs/userguide/programming/ebus/intro.md)\.
 
 The callbacks use this naming convention: For every function `X`, the corresponding callback function is named `OnXComplete`\. For example, when a response to an EBus call of `SignUp()` is ready, the response is sent through the EBus to `OnSignUpComplete()`\. For more examples, see `dev\Gems\CloudGemPlayerAccount\Code\Include\CloudGemPlayerAccount\CloudGemPlayerAccountBus.h`\.
 
@@ -140,4 +140,4 @@ Phone numbers must follow these formatting rules:
 
 ## Resource Group<a name="cloud-canvas-cloud-gem-player-account-details-resource-group"></a>
 
-The Player Account Cloud Gem uses an Amazon Cognito user pool that contains all registered players\. It is set as an authentication provider with `PlayerAccessIdentityPool`\. For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+The Player Account Cloud Gem uses an Amazon Cognito user pool that contains all registered players\. It is set as an authentication provider with `PlayerAccessIdentityPool`\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.

@@ -14,8 +14,8 @@ To use fur combing, in **Shader Generation Params**, enable **Fur Color Data**\.
 
 For example, a material might have a vertex color of `1`, `0.5`, `0.5`, `0.25` \(X, Y, Z, alpha\)\. These values specify that the fur combs in the positive X direction\. The alpha channel, set at `0.25`, defines the fur length at that vertex as one fourth of the value specified in the material's **Fur Length \(cm\)**\.
 
-Lumberyard provides shaders for [Maya](shader-ref-fur-previzmaya.md) and [3DSMax](shader-ref-fur-previz3dsmax.md)\. These shaders simplify the process of specifying the vertex color data on your mesh\. 
+Lumberyard provides shaders for [Maya](/docs/userguide/shaders/fur-previzmaya.md) and [3DSMax](/docs/userguide/shaders/fur-previz3dsmax.md)\. These shaders simplify the process of specifying the vertex color data on your mesh\. 
 
 For information on how to use these shaders, see the following topics:
-+ [Maya – Fur Previsualization](shader-ref-fur-previzmaya.md)
-+ [3DSMax – Fur Previsualization](shader-ref-fur-previz3dsmax.md)
++ [Maya – Fur Previsualization](/docs/userguide/shaders/fur-previzmaya.md)
++ [3DSMax – Fur Previsualization](/docs/userguide/shaders/fur-previz3dsmax.md)

@@ -23,8 +23,8 @@ The **Navigation** component has the following properties:
 ![\[Navigation component properties\]](/images/userguide/component/component-navigation-properties.png)
 
 **Agent Type**  
-Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](component-nav-area.md) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.  
-To define an agent type on your navigation area, see the **[Navigation Area](component-nav-area.md)** component\.
+Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/userguide/components/nav-area.md) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.  
+To define an agent type on your navigation area, see the **[Navigation Area](/docs/userguide/components/nav-area.md)** component\.
 
 **Agent Speed**  
 Sets the speed of the agent while navigating when using the Transform or Physics movement methods\.  
@@ -57,7 +57,7 @@ Default value: `false`
 
 Use the following request functions with the `NavigationComponentRequestBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### FindPath<a name="navigation-ebus-findpath"></a>
 
@@ -167,7 +167,7 @@ Yes
 
 Use the following notification functions with the `NavigationComponentNotificationBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### OnSearchingForPath<a name="navigation-ebus-onsearchingforpath"></a>
 

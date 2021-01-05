@@ -5,7 +5,7 @@ title: Working with Slices
 ---
 # Working with Slices<a name="component-slices"></a>
 
-A slice is a collection of configured [entities](component-intro.md) that is stored as a single unit in a reusable asset\. You can use slices to conveniently group entities and other slices for reuse\. Slices are similar to [prefabs](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-prefabs-intro.html) but are part of the new component entity system\. Slices can contain component entities, whereas prefabs cannot\. Unlike prefabs, slices can be nested into a fully cascading hierarchy\. For example, a level, a house, a car, and an entire world are all slices that depend on \(cascade\) from a number of other slices\.
+A slice is a collection of configured [entities](/docs/userguide/components/intro.md) that is stored as a single unit in a reusable asset\. You can use slices to conveniently group entities and other slices for reuse\. Slices are similar to [prefabs](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-prefabs-intro.html) but are part of the new component entity system\. Slices can contain component entities, whereas prefabs cannot\. Unlike prefabs, slices can be nested into a fully cascading hierarchy\. For example, a level, a house, a car, and an entire world are all slices that depend on \(cascade\) from a number of other slices\.
 
 You can generate a slice asset that contains any number of entities that you have placed and configured\. These entities can have arbitrary relationships\. For example, they can exist in a parent/child transform hierarchy, although this is not required\.
 
@@ -38,16 +38,16 @@ In the **Entity Outliner**, you can identify different entities by their icon an
 
 **Topics**
 + [Anatomy of a Slice](dynamic-slices-overview-anatomy.md)
-+ [Creating a Slice](component-slices-creating.md)
-+ [Instantiating a Slice](component-instantiating-slice.md)
-+ [Creating Nested Slices](component-inheriting-slice.md)
-+ [Modifying a Slice and Saving Changes](component-slice-push-changes.md)
-+ [Detaching Entities and Slice Instances](component-slice-detaching.md)
-+ [Reverting and Forcing Overrides](component-slice-override.md)
-+ [Slice Reloading](component-slice-reloading.md)
++ [Creating a Slice](/docs/userguide/components/slices-creating.md)
++ [Instantiating a Slice](/docs/userguide/components/instantiating-slice.md)
++ [Creating Nested Slices](/docs/userguide/components/inheriting-slice.md)
++ [Modifying a Slice and Saving Changes](/docs/userguide/components/slice-push-changes.md)
++ [Detaching Entities and Slice Instances](/docs/userguide/components/slice-detaching.md)
++ [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)
++ [Slice Reloading](/docs/userguide/components/slice-reloading.md)
 + [Working with Dynamic Slices](dynamic-slices-what-is.md)
-+ [Slice Favorites](component-slice-favorites.md)
-+ [Converting Slices with the Slice Upgrade Pipeline](component-slice-upgrade-process.md)
++ [Slice Favorites](/docs/userguide/components/slice-favorites.md)
++ [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)
 
 The sections in this chapter use the following terminology to describe working with slices\.
 
@@ -69,19 +69,19 @@ Entities that are owned by a slice are called slice entities\. A slice entity in
 **Saving Slice Overrides**  
 Saving slice overrides means to commit entity modifications from an instance to a source slice\. When you use the **Save slice overrides** command, Lumberyard prompts you to choose which modifications or overrides to save\. For a nested slice, you can also choose which slice in the hierarchy receives the overrides\.  
 After you save overrides, Lumberyard automatically updates all instances of that slice\. If any of those slice instances have unsaved overrides or modifications, it does not accept updates to those overrides\. You can revert a slice's entities and properties to resync to the source slice\.   
-For more information, see [Modifying a Slice and Saving Changes](component-slice-push-changes.md)\.  
+For more information, see [Modifying a Slice and Saving Changes](/docs/userguide/components/slice-push-changes.md)\.  
 Lumberyard does not save the **Translate** value in the **Transform** component to the slice\. This value determines an entity's position in the level and as such is excluded from affecting other slice instances\.
 
 **Overriding**  
 Changing any part of a slice, such as adding a component or modifying a property, results in an override or modification\. This means that the slice instance is different from the source slice\. Overrides to component properties are marked in a bold orange font in the **Entity Inspector** to distinguish it from properties that haven't changed\.  
 If you save those overrides, they are saved to all the slice instances\. This means they are no longer overrides and the font returns to normal\. Overrides that you don't save to the slice are maintained for that instance even when other changes are received from the source slice\.  
 You can also force an override for a property that you haven't yet modified, as well as revert overrides to an entity, component, or property\.   
-For more information, see [Reverting and Forcing Overrides](component-slice-override.md)\.
+For more information, see [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)\.
 
 **Detaching**  
 You can detach an entity within a slice\. This removes it from that slice instance, and that entity no longer receives updates when changes are saved to the source slice\.  
 You can also detach any slice instance\. This means that it no longer receives any changes saved to the slice\.  
-For more information, see [Detaching Entities and Slice Instances](component-slice-detaching.md)\. 
+For more information, see [Detaching Entities and Slice Instances](/docs/userguide/components/slice-detaching.md)\. 
 
 **Nesting**  
 When a slice instance is nested, that means that it is a child of another slice instance\.  

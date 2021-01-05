@@ -6,7 +6,7 @@ title: Behavior Tree
 ---
 # Behavior Tree<a name="component-behavior-tree"></a>
 
-Use the **Behavior Tree** component to load and run a [Modular Behavior Tree Node Reference](ai-scripting-mbt-nodes.md) for the attached entity\.
+Use the **Behavior Tree** component to load and run a [Modular Behavior Tree Node Reference](/docs/userguide/ai/scripting/mbt-nodes.md) for the attached entity\.
 
 ## Behavior Tree Component Properties<a name="component-behavior-tree-properties"></a>
 
@@ -22,7 +22,7 @@ When selected, the behavior tree is loaded and activated with the entity\.
 
 Use the following request functions with the event bus \(EBus\) interface, `BehaviorTreeComponentRequestBus`, to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### StartBehaviorTree<a name="navigation-ebus-startbehaviortree"></a>
 

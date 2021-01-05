@@ -14,9 +14,9 @@ title: Blast Family component
 
 With the **Blast Family** component, you can enable destruction simulation using the NVIDIA Blast library, and set properties for the simulation\. The **Blast Family** component is used with the **Blast Family Mesh Data** component\. This topic describes the properties of the **Blast Family** component\. 
 
-The **Blast Family** component is provided by the [NVIDIA Blast gem](nvidia-blast.md)\. 
+The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/userguide/nvidia/blast/_index.md)\. 
 
-For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](nvidia-blast-intro.md)\. 
+For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/intro.md)\. 
 
 ## Blast Family component properties<a name="component-blast-family-properties"></a>
 
@@ -26,7 +26,7 @@ For information on using the **Blast Family** component see [Simulated destructi
 The blast asset that will be used for the destruction simulation\.
 
 **Blast Material**  
-A blast material from the blast material library\. Blast materials define how much damage various forces cause to the bonds holding the fractured asset together, and how much damage is required to trigger destruction\. For more information, see [Specify destruction properties with Blast materials](nvidia-blast-materials.md)\. 
+A blast material from the blast material library\. Blast materials define how much damage various forces cause to the bonds holding the fractured asset together, and how much damage is required to trigger destruction\. For more information, see [Specify destruction properties with Blast materials](/docs/userguide/nvidia/blast/materials.md)\. 
 
 **Physics Material**  
 The physics material for the blast asset\. Physics materials define physical properties such as friction\.

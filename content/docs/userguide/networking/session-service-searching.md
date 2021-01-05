@@ -51,7 +51,7 @@ To query the size of the array, use `GridMate::GridSearch::NumResults()`\.
 
 To query individual results, use `GridMate::GridSearch::GetResult()`\.
 
-The `GridMate::SearchInfo` object contains more details about the session \(for example, the number of used and free player slots\) and can be used when [Joining a Session](network-session-service-joining.md)\.
+The `GridMate::SearchInfo` object contains more details about the session \(for example, the number of used and free player slots\) and can be used when [Joining a Session](/docs/userguide/networking/session-service-joining.md)\.
 
 ## Events<a name="network-session-service-searching-events"></a>
 

@@ -6,9 +6,9 @@ title: Configure &ALY; projects for Android
 ---
 # Configure Lumberyard projects for Android<a name="android-configure-project"></a>
 
- In addition to the [system\-wide configuration requirements](android-setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\. 
+ In addition to the [system\-wide configuration requirements](/docs/userguide/mobile/android/setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\. 
 
- This section covers the basics of configuring your project so that you can work with Android\. For all of the available settings, see [Reference for Android](android-reference.md)\. 
+ This section covers the basics of configuring your project so that you can work with Android\. For all of the available settings, see [Reference for Android](/docs/userguide/mobile/android/reference.md)\. 
 
 **Important**  
  Because project settings impact how your application communicates with some services on the Asset Processor host and modify the Android manifest, changing any settings for your project will require a rebuild\. 
@@ -125,7 +125,7 @@ android_asset_mode = apk_paks
 + The file must be named `AndroidManifest.xml` and conform to the [Android manifest format](https://developer.android.com/guide/topics/manifest/manifest-intro#filec)\.
 +  The gem or module's `wscript` build file must include `android_manifest_path` as a key in the gem definition that's passed to the build system\. The value of this key should be the **absolute** path to the directory containing the manifest\. 
 
- For example, the [microphone gem](gems-system-gem-microphone.md) uses an Android manifest to give your project access to the microphone\. Below is a portion of the microphone gem's `wscript` that defines how to locate the Android manifest file\. This snippet sets up the gem to use the manifest at `lumberyard_install_dir\dev\Gems\Microphone\Code\Source\Android\AndroidManifest.xml`\.
+ For example, the [microphone gem](/docs/userguide/gems/builtin/microphone.md) uses an Android manifest to give your project access to the microphone\. Below is a portion of the microphone gem's `wscript` that defines how to locate the Android manifest file\. This snippet sets up the gem to use the manifest at `lumberyard_install_dir\dev\Gems\Microphone\Code\Source\Android\AndroidManifest.xml`\.
 
 ```
 def build(bld):
@@ -142,4 +142,4 @@ def build(bld):
     )
 ```
 
-To learn more about the gem building system and using `wscript`files, see [Gem Structure](gems-system-structure.md) and [Waf Module Files \(wscript\)](waf-files-module-files-wscript.md)\. For more information on Android manifests, their purpose, and how to structure their contents, see the [official Android documentation](https://developer.android.com/guide/topics/manifest/manifest-intro)\. 
+To learn more about the gem building system and using `wscript`files, see [Gem Structure](/docs/userguide/gems/structure.md) and [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)\. For more information on Android manifests, their purpose, and how to structure their contents, see the [official Android documentation](https://developer.android.com/guide/topics/manifest/manifest-intro)\. 

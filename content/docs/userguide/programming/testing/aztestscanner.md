@@ -16,7 +16,7 @@ The AZ test scanner has two components:
 
 Unit and integration tests are not included in Lumberyard builds by default as they increase the overall size of a game project\. Test code can also have unexpected effects on performance\. To build components with tests included, you can use a special test variant that works with each configuration\.
 
-To create test builds, use the [Waf build system](waf-intro.md) in the same way that you create regular builds\. The only difference is that you add `test` to the platform\. You can create a test build on Windows using one of the following examples:
+To create test builds, use the [Waf build system](/docs/userguide/waf/intro.md) in the same way that you create regular builds\. The only difference is that you add `test` to the platform\. You can create a test build on Windows using one of the following examples:
 
 ```
 // Build with tests using debug configuration. Outputs to the \Bin64vc141.Debug.Test folder.
@@ -35,7 +35,7 @@ lmbr_waf.bat build_win_x64_vs2019_profile_test -p all
 **Note**  
 Only Windows debug and profile builds are supported for testing\. Other platforms are not supported\. Release builds are not supported either\.
 
-For more information on writing tests, see [Writing Tests for AzTest](testing-aztest-writing-tests.md)\.
+For more information on writing tests, see [Writing Tests for AzTest](/docs/userguide/programming/testing/aztest-writing-tests.md)\.
 
 ## Running Unit and Integration Test Builds<a name="testing-aztestscanner-running"></a>
 

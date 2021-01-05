@@ -9,7 +9,7 @@ Lumberyard contains a basic level called **DynamicContentTest** that you can use
 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-dc-testing-prerequisites"></a>
 
-To test any cloud gem, you must have a deployment with the necessary resources\. These resources are created through the **Cloud Canvas Resource Manager**\. For detailed instructions on creating these resources, see [Initializing Cloud Canvas Resource Manager](cloud-canvas-ui-rm-initialize.md)\.
+To test any cloud gem, you must have a deployment with the necessary resources\. These resources are created through the **Cloud Canvas Resource Manager**\. For detailed instructions on creating these resources, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md)\.
 
 For the test, you are likely to play the role of both content creator and game client\. Because the editor prefers loose files to `.pak` files, you might want to run the engine in game client mode instead of editor mode\. When you run the engine in editor mode, updated data does not take precedence during run time\. If you do want to run the test in editor mode, you can change this setting by entering the console command `sys_PakPriority=1` before you start the test\. After testing, if you want the editor to return to preferring loose files \(the default\), enter the console command `sys_PakPriority=0`\.
 

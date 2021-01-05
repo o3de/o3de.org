@@ -39,7 +39,7 @@ You, or someone on your team, is an administrator\. The administrator creates th
 
 ### Lumberyard, Cloud Canvas, and Cloud Gems<a name="cloud-canvas-core-concepts-cc-ly-fg"></a>
 
-Cloud Canvas is a Lumberyard Gem \(extension\) that enables your Lumberyard games to communicate with AWS resources\. To integrate the communication with Amazon Web Services directly into your game logic, you can use [cloud gems](cloud-canvas-cloud-gems-intro.md)\.
+Cloud Canvas is a Lumberyard Gem \(extension\) that enables your Lumberyard games to communicate with AWS resources\. To integrate the communication with Amazon Web Services directly into your game logic, you can use [cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md)\.
 
 For example, you can use cloud gems to create leaderboards, messages of the day, in\-game surveys, and speech recognition and text\-to\-speech capabilities for your game\.
 

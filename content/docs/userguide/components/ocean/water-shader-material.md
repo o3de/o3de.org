@@ -16,6 +16,6 @@ The following is an example of how you can configure the water shader material i
 When you set up water materials for the ocean, disable the **Water Volume** parameter\.  
 When you set up water material for other types of water volumes, such as lakes and rivers, enable the **Water Volume** parameter\.
 
-For more information, see [Water Shader](shader-ref-water.md)\.
+For more information, see [Water Shader](/docs/userguide/shaders/water.md)\.
 
-For lakes, rivers, and other bodies of water, use the [WaterVolume Shader](shader-ref-watervolume.md)\.
+For lakes, rivers, and other bodies of water, use the [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\.

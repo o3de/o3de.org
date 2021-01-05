@@ -13,4 +13,4 @@ The LyShine gem enables Lumberyard's in\-game UI system\. With the UI system, yo
 **Note**  
 The LyShine gem is required and enabled by default in new Lumberyard projects\.
 
-For more information, see [Creating and Customizing Project User Interfaces](ui-editor-intro.md)\.
+For more information, see [Creating and Customizing Project User Interfaces](/docs/userguide/ui/editor/intro.md)\.

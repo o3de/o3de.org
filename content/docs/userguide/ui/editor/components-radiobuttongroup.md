@@ -19,10 +19,10 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **RadioButtonGroup** element from the slice library\. When you do this, a group of three radio buttons is automatically created in your **Hierarchy** pane\.
 
 **To add a RadioButtonGroup element from the slice library**
-+ In the [**UI Editor**](ui-editor-using.md), choose **New**, **Element from Slice Library**, **RadioButtonGroup**\.
++ In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **RadioButtonGroup**\.
 
 **To edit a RadioButtonGroup component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **RadioButtonGroup** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButtonGroup** and do the following, as appropriate:    
 **Settings**, **Allow uncheck**  
 Select to enable the clearing or unchecking of selected radio buttons\.  
 **Actions**, **Change**  

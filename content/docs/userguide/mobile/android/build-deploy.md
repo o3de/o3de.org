@@ -20,7 +20,7 @@ title: Build and deploy your project for Android
  During development, your Lumberyard project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs) to configure VFS\. 
 
 **Important**  
- The Shader Compiler only runs on Windows PCs\. If you're using another environment to develop your Android game, you'll need access to a server with the Shader Compiler running and accessible through a firewall\. One option is to run a [Windows GPU\-based EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instances)\. For more information on running a dedicated Shader Compiler service, see [Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md)\. 
+ The Shader Compiler only runs on Windows PCs\. If you're using another environment to develop your Android game, you'll need access to a server with the Shader Compiler running and accessible through a firewall\. One option is to run a [Windows GPU\-based EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instances)\. For more information on running a dedicated Shader Compiler service, see [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\. 
 
 **To connect to the Shader Compiler**
 
@@ -54,7 +54,7 @@ title: Build and deploy your project for Android
    adb reverse tcp:shader-port tcp:shader-port
    ```
 **Important**  
- This step relies on the `adb` command being in the `PATH` environment variable\. Follow the instructions in [Set up your environment to develop for Android with Lumberyard](android-setting-up-environment.md) to add Android tools to your `PATH`\. 
+ This step relies on the `adb` command being in the `PATH` environment variable\. Follow the instructions in [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md) to add Android tools to your `PATH`\. 
 
  Whether or not you need to manually start the Shader Compiler is dependent upon whether you use the deployment tool\. If you're using the Deployment Tool, the Asset Processor automatically starts a Shader Compiler in the background for you\. Otherwise, you need to start the Shader Compiler manually for a deployment\. See [Running the Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch) to learn more\. 
 
@@ -69,7 +69,7 @@ title: Build and deploy your project for Android
 
  When using `lmbr_waf`, Android builds use the `android_armv8_clang` platform\. When building for Android, all of the usual tasks, options, build configurations, and specs are available with `lmbr_waf`\. For example, to build the game and engine for Android in profiling mode, use the command `lmbr_waf build_android_armv8_clang_profile -p game_and_engine`\. 
 
- For more information about the Lumberyard build system, see [Using the Waf Build System](waf-intro.md)\. For information on the Android\-specific build settings and `lmbr_waf` command\-line options, see the [Reference for Android](android-reference.md)\. 
+ For more information about the Lumberyard build system, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\. For information on the Android\-specific build settings and `lmbr_waf` command\-line options, see the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. 
 
 ### Build with Android Studio<a name="android-build-project-studio"></a>
 
@@ -146,7 +146,7 @@ lmbr_waf build_android_armv8_clang_profile -p all ^
 
  Using this feature with the `deploy_android_armv8_clang_profile` build command is useful when you don't want to replace the executable on the device, but do need to deploy changed assets\. 
 
- For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](android-reference.md)\. 
+ For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. 
 
 ### Manual deploy during build<a name="deploying-your-app-and-assets-flag"></a>
 
@@ -161,7 +161,7 @@ lmbr_waf build_android_armv8_clang_profile -p game_and_engine ^
 
  During early testing and development, you'll want to always push to a device only when you've confirmed that all of your asset settings, device network configuration, and other build configurations are appropriate for your project\. You only need to push new APKs when updating configurations, making code changes, or adding gems\. 
 
- For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](android-reference.md)\. 
+ For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. 
 
 ### Deploy with `lmbr_waf`<a name="android-deploy-only"></a>
 
@@ -176,12 +176,12 @@ lmbr_waf deploy_android_armv8_clang_profile -p all ^
     --deploy-android-replace-apk=False
 ```
 
- For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](android-reference.md)\. 
+ For a full description of all of the available Android deployment options and their effects, see the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. 
 
 ## Next steps<a name="android-build-next-steps"></a>
 
 Now that you have your Lumberyard project building and running on an Android device, learn more about mobile\-specific design considerations and releasing to the Google Play Store\.
-+ [Design Considerations for Creating Mobile Games Using Lumberyard](ios-android-design-considerations.md)
-+ [Lumberyard Performance Tuning Guidelines for Mobile Devices](ios-android-performance-guidelines.md)
-+ [Updating Graphics Settings for Android and iOS](ios-android-updating-graphics-settings.md)
-+ [Releasing Lumberyard projects for Android](android-deploy-release.md)
++ [Design Considerations for Creating Mobile Games Using Lumberyard](/docs/userguide/mobile/design-considerations.md)
++ [Lumberyard Performance Tuning Guidelines for Mobile Devices](/docs/userguide/mobile/performance-guidelines.md)
++ [Updating Graphics Settings for Android and iOS](/docs/userguide/mobile/updating-graphics-settings.md)
++ [Releasing Lumberyard projects for Android](/docs/userguide/mobile/android/deploy-release.md)

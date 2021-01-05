@@ -8,7 +8,7 @@ title: Debugging PhysX
 The PhysX system has the following features that you can use to debug issues\. 
 
 **Note**  
-You must first enable the [PhysX Debug](gems-system-gem-physx-debug.md) gem\. 
+You must first enable the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md) gem\. 
 
 **Topics**
 + [PhysX Debug Console Variables](#debugging-physx-console-variables)
@@ -47,13 +47,13 @@ Adjusts the culling box size to **100**\. Enter **0** to disable culling\.
 physx_CullingBoxSize 100
 ```
 
-Connects to the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](physx-configuration-debugger.md)\.
+Connects to the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.
 
 ```
 physx_PvdConnect
 ```
 
-Disconnects from the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](physx-configuration-debugger.md)\.
+Disconnects from the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.
 
 ```
 physx_PvdDisconnect
@@ -66,7 +66,7 @@ For more information, see [Using the Console Window](console-intro.md)\.
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface \(**ImGui**\) tool\.
 
 **Note**  
-You must enable the ImGui gem to access this tool\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+You must enable the ImGui gem to access this tool\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **To debug with the ImGui tool**
 
@@ -84,4 +84,4 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 
 ## Debug Options in the PhysX Configuration<a name="physx-debugging-configuration"></a>
 
-You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](physx-configuration-debugger.md)\.
+You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.

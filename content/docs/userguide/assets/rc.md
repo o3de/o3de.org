@@ -22,7 +22,7 @@ Legacy geometry format
 Legacy animation format
 
 **TIF, BMP, JPG, PNG**  
-[Image files](asset-pipeline-configuring-image-processing.md)
+[Image files](/docs/userguide/assets/configuring-image-processing.md)
 
 **FBX**  
 Geometry \(static mesh\) only\. Doesn't convert new EMotion FX characters or animations\.
@@ -30,7 +30,7 @@ Geometry \(static mesh\) only\. Doesn't convert new EMotion FX characters or ani
 **Note**  
  All other types, such as characters and animation, are converted by the BuilderSDK system\. For more information, see [Creating a Custom Asset Builder](asset-builder-custom.md)\.
 
-You can customize how resources are converted by modifying the `AssetProcessorPlatformConfig.ini`\. For more information, see [Configuring the Asset Pipeline](asset-pipeline-configuring.md)\.
+You can customize how resources are converted by modifying the `AssetProcessorPlatformConfig.ini`\. For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 You can access a full list of arguments available for use in `AssetProcessorPlatformConfig.ini`\. 
 

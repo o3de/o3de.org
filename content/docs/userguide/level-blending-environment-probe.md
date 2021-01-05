@@ -6,7 +6,7 @@ title: Blending Environment Probes
 ---
 # Blending Environment Probes<a name="level-blending-environment-probe"></a>
 
-You can use an **[Environment Probe](component-environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\. 
+You can use an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\. 
 
 Each environment probe in a scene represents ambient lighting information\. The probe data does not change even when other lights in the scene move or change in brightness\. This can result in an unnatural appearance\. For example, the sun sets but objects are still brightly lit by an environment probe used for daytime lighting\.
 
@@ -18,7 +18,7 @@ To achieve convincing transitions in lighting:
 
 Environment probes have a **Probe Fade** property that fades out the environment probe\. You can change the **Probe Fade** property with Script Canvas, Lua, and the Track View\. For this property, you can specify a value between `0.0` and `1.0`, which represents a percentage of ambient lighting\. For example, in a scenario with two overlapping environment probes, the higher priority probe \(Probe A\) normally hides the lower priority probe \(Probe B\)\. Only Probe A lights objects in that area\. However, if you set Probe A's **Probe Fade** value to **0\.5**, then 50% of the ambient lighting comes from Probe A and the rest comes from Probe B\.
 
-To add an environment probe to your scene, see [Working with Components](component-working.md) and [Environment Probe](component-environment-probe.md)\. You can also find detailed, step\-by\-step instructions at [Lighting the Environment](https://docs.aws.amazon.com/lumberyard/latest/gettingstartedguide/lighting.html) in the *Amazon Lumberyard Getting Started Guide*\.
+To add an environment probe to your scene, see [Working with Components](/docs/userguide/components/working.md) and [Environment Probe](/docs/userguide/components/environment-probe.md)\. You can also find detailed, step\-by\-step instructions at [Lighting the Environment](https://docs.aws.amazon.com/lumberyard/latest/gettingstartedguide/lighting.html) in the *Amazon Lumberyard Getting Started Guide*\.
 
 **Topics**
 + [Dimmer and Night Light Example](#level-environment-probe-nightlight)
@@ -36,7 +36,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
    1.  [Create an entity](creating-entity.md) named **lamp**\.
 
-   1. Add the **[Point Light](component-point-light.md)** component to the entity\.
+   1. Add the **[Point Light](/docs/userguide/components/point-light.md)** component to the entity\.
 
    1.  To assign a high brightness, specify the following property values:
       + **Cast shadow spec**: `Low`
@@ -45,14 +45,14 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
 1. Create another entity named **nightlight** and do the following:
 
-   1. Add the **[Point Light](component-point-light.md)** component to the entity\.
+   1. Add the **[Point Light](/docs/userguide/components/point-light.md)** component to the entity\.
 
    1.  To assign a low brightness, specify the following property values:
       + **Cast shadow spec**: `Low`
       + **Diffuse multiplier**: **1**
       + **Max Distance**: **10**
 
-1. Create two [environment probes](component-environment-probe.md)\. Put them at the same location and make them the same size\. Name one **probe\_light** and the other **probe\_dark**\.
+1. Create two [environment probes](/docs/userguide/components/environment-probe.md)\. Put them at the same location and make them the same size\. Name one **probe\_light** and the other **probe\_dark**\.
 
    1. For **probe\_light**, specify the [**Sort Priority**](component-environment-probe.md#component-environment-probe-settings) property to **1**\. This is the environment probe that fades in and out\.
 
@@ -88,7 +88,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
 1. Create an entity and do the following:
 
-   1. Add the **[Lua Script](component-lua-script.md)** component to the entity\.
+   1. Add the **[Lua Script](/docs/userguide/components/lua-script.md)** component to the entity\.
 
    1. In the **Lua Script** component, for the **Script** property, click the \(**\.\.\.**\) icon, and then navigate and select the `RoomLights.lua` file\. See [`RoomLights.lua`](#room-light-example-script)\.
 **Note**  
@@ -171,7 +171,7 @@ The following scenario is a more complex but commonly used example to develop a 
 **Note**  
 You can name these probes whatever you like, but they must end with the 4\-digit time designation\. The script that you apply later in this procedure looks for entities that end with four digits corresponding to the time\.
 
-1. [Add](component-working-adding.md) an **[Environment Probe](component-environment-probe.md)**component to each entity\.
+1. [Add](/docs/userguide/components/working-adding.md) an **[Environment Probe](/docs/userguide/components/environment-probe.md)**component to each entity\.
 
 1. [Hide](component-entity-outliner-entities.md#component-entity-outliner-hiding) the probes so that their outputs are not captured in each other's baked lighting\.
 
@@ -179,7 +179,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 
    1. Select an environment probe\. You do not need to show \(unhide\) it for the baking process\.
 
-   1. Open the **[Time Of Day](sky-tod-day-night-cycle.md)** editor\.
+   1. Open the **[Time Of Day](/docs/userguide/sky/tod-day-night-cycle.md)** editor\.
 
    1. Set the **Current Time** to the time that corresponds to the probe name\. Close the **Time of Day** editor\.
 
@@ -198,7 +198,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 
    1. Select the **probe\_set** entity\.
 
-   1. Add the **[Lua Script](component-lua-script.md)** component to the entity\.
+   1. Add the **[Lua Script](/docs/userguide/components/lua-script.md)** component to the entity\.
 
    1. In the **Lua Script** component, for the **Script** property, click \(**\.\.\.**\) and then navigate and select the `ProbeBlending.lua` file\. See [`ProbeBlending.lua`](#probe-blending-example-script)\.
 **Note**  

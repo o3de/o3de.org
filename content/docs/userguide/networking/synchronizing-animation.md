@@ -6,11 +6,11 @@ title: Synchronizing Animations Across a Network
 ---
 # Synchronizing Animations Across a Network<a name="network-synchronizing-animation"></a>
 
-You can use the **[AnimGraph](component-animgraph.md)** component to add an animation graph and motion set to a character\. To synchronize the **AnimGraph** component's parameters \(its EMotion FX animation state\) across the network, use these two components:
-+ **[Network Binding](component-network-binding.md)**
-+ **[Anim Graph Net Sync](component-animgraph-netsync.md)**
+You can use the **[AnimGraph](/docs/userguide/components/animgraph.md)** component to add an animation graph and motion set to a character\. To synchronize the **AnimGraph** component's parameters \(its EMotion FX animation state\) across the network, use these two components:
++ **[Network Binding](/docs/userguide/components/network-binding.md)**
++ **[Anim Graph Net Sync](/docs/userguide/components/animgraph-netsync.md)**
 
-The **Anim Graph Net Sync** component, which is included with the [**EMotion FX Animation**](gems-system-gem-emotionfx-animation.md) gem, requires the **Network Binding** component\. You can add the **Anim Graph Net Sync** component to any entity that has the **Anim Graph** component\.
+The **Anim Graph Net Sync** component, which is included with the [**EMotion FX Animation**](/docs/userguide/gems/builtin/emotionfx-animation.md) gem, requires the **Network Binding** component\. You can add the **Anim Graph Net Sync** component to any entity that has the **Anim Graph** component\.
 
 **Topics**
 + [Adding Animation Synchronization to an Entity](#network-synchronizing-animation-adding-to-an-entity)
@@ -18,7 +18,7 @@ The **Anim Graph Net Sync** component, which is included with the [**EMotion FX 
 
 ## Adding Animation Synchronization to an Entity<a name="network-synchronizing-animation-adding-to-an-entity"></a>
 
-The following procedure shows how to add the **Network Binding** and **Anim Graph Net Sync** components to the Rin character in the [Advanced\_RinLocomotion Sample](animation-editor-rin-locomotion-sample.md) level of the [Samples Project](sample-project-samples.md)\.
+The following procedure shows how to add the **Network Binding** and **Anim Graph Net Sync** components to the Rin character in the [Advanced\_RinLocomotion Sample](/docs/userguide/animation/editor/rin-locomotion-sample.md) level of the [Samples Project](/docs/userguide/samples/projects/samples.md)\.
 
 **To add animation synchronization to an entity**
 
@@ -26,9 +26,9 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 
    1. Follow the steps in [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set the **SamplesProject** as your default project\.
 
-   1. Follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to enable the **Multiplayer** gem for the Samples Project\.
+   1. Follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to enable the **Multiplayer** gem for the Samples Project\.
 
-1. Close the **Project Configurator**, and then [launch Lumberyard Editor](lumberyard-editor-intro.md)\.
+1. Close the **Project Configurator**, and then [launch Lumberyard Editor](/docs/userguide/editor/intro.md)\.
 
 1. In Lumberyard Editor, choose **File**, **Open Level**, or press **Ctrl\+O**\.
 

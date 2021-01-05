@@ -58,7 +58,7 @@ You can move the vertices in the local space of the entity along each axis\. Eac
    + Select a vertex on the component and drag the yellow point \(surface manipulator\) to move the vertex\.
 
 **Note**  
-The manipulators follow the grid snap setting that you can specify in Lumberyard Editor toolbar\. For more information, see [Using the Top Toolbar](lumberyard-editor-toolbars.md)\.
+The manipulators follow the grid snap setting that you can specify in Lumberyard Editor toolbar\. For more information, see [Using the Top Toolbar](/docs/userguide/editor/toolbars.md)\.
 
 ![\[Select a vertex and a translation manipulator appears in the Spline component.\]](/images/userguide/component/spline-component-2.png)
 
@@ -133,9 +133,9 @@ The following examples are linear and Bézier splines with the same vertices but
 
 ## EBus Request Bus Interface<a name="component-spline-ebus-request"></a>
 
-Use the following request functions with the `SplineComponentRequestBus` EBus interface to communicate with other components of your game\. The **Spline** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](component-vertex-container.md)\.
+Use the following request functions with the `SplineComponentRequestBus` EBus interface to communicate with other components of your game\. The **Spline** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

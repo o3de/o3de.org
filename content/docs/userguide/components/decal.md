@@ -55,7 +55,7 @@ Minimum spec for the decal to be active\.
 
 Use the following request function with the EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### SetVisibility<a name="decal-ebus-setvisibility"></a>
 

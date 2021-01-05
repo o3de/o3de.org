@@ -94,7 +94,7 @@ Consider the following when deciding to make functions public or private\.
 ## Additional Resources<a name="component-entity-system-pg-components-ebuses-best-practices-additional-resources"></a>
 
 For more information on components and EBuses, consult the following resources\.
-+ For examples of EBus usage, see [Usage and Examples](ebus-usage-and-examples.md)\. 
-+ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](ebus-in-depth.md)\. 
-+ For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](component-entity-system-pg-components-ebuses-questions-and-answers.md)\.
++ For examples of EBus usage, see [Usage and Examples](/docs/userguide/programming/ebus/usage-and-examples.md)\. 
++ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/userguide/programming/ebus/in-depth.md)\. 
++ For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md)\.
 + For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.

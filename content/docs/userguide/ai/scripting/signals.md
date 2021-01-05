@@ -16,7 +16,7 @@ The Lumberyard AI system includes a fully customizable Signal system that enable
 
 This topic describes how to send and receive signals between AI agents\. 
 
-[Signals Reference](ai-scripting-signals-reference.md)
+[Signals Reference](/docs/userguide/ai/scripting/signals-reference.md)
 
 ## Sending Signals<a name="ai-scripting-signals-sending"></a>
 

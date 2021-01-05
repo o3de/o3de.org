@@ -12,10 +12,10 @@ title: Tube Shape
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-Create tube\-like volumes along a spline by using the **Tube Shape** component\. To create a tube shape, add the **[Spline](component-spline.md)** component to an entity to define its shape\. In the **Tube Shape** component, define a radius to control its volume\. You can specify a different tube radius at each vertex in the spline\.
+Create tube\-like volumes along a spline by using the **Tube Shape** component\. To create a tube shape, add the **[Spline](/docs/userguide/components/spline.md)** component to an entity to define its shape\. In the **Tube Shape** component, define a radius to control its volume\. You can specify a different tube radius at each vertex in the spline\.
 
 **Note**  
-The **Tube Shape** component requires the **[Spline](component-spline.md)** component\.
+The **Tube Shape** component requires the **[Spline](/docs/userguide/components/spline.md)** component\.
 
 **Topics**
 + [Tube Shape Properties](#tube-shape-properties)
@@ -45,7 +45,7 @@ The **Tube Shape** component has the following properties\.
 
 ## EBus Request Bus Interface<a name="tube-shape-ebus-request-bus-interface"></a>
 
-You can use the event bus \(EBus\) interface to communicate with other components in your game\. For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+You can use the event bus \(EBus\) interface to communicate with other components in your game\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

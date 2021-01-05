@@ -42,5 +42,5 @@ GridMate uses the following single OpenSSL cipher for all encrypted connections:
 + [Limitations](#network-encryption-intro-limitations)
 + [Implementation Support](#network-encryption-intro-implementation-support)
 + [Cipher](#network-encryption-intro-cipher)
-+ [Building with Encryption](network-encryption-building.md)
-+ [Enabling Encryption](network-encryption-enabling.md)
++ [Building with Encryption](/docs/userguide/networking/encryption-building.md)
++ [Enabling Encryption](/docs/userguide/networking/encryption-enabling.md)

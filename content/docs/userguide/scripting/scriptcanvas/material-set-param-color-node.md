@@ -23,7 +23,7 @@ Sets a material parameter with a color value\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 | Material | Material |  The material to modify\.  | 
-| Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](material-param-names.md)\.  | 
+| Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Color | Color |  The new value to apply\.  | 
 
 ## Outputs<a name="script-canvas-material-set-param-color-node-output"></a>

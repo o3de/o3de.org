@@ -32,7 +32,7 @@ Twitch Metastream is supported on Windows only\.
 
 Enable the Metastream gem in your project to turn on the local HTTP Metastream server that is included with Lumberyard\.
 
-To enable the Metastream gem, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To enable the Metastream gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 ## Setting Options for the HTTP Server<a name="gems-system-metastream-http-server-options"></a>
 

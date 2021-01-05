@@ -22,7 +22,7 @@ Lumberyard has two main types of localization XML assets:
 + [Tag definition XML](#localization-configuring-tagxml)
 + [Localized text XML](#localization-configuring-localizedxml)
 
-After you prepare your assets and place them in the preferred location, see the [Localization System](localization-initialization.md) documentation to ensure that your game is ready to use your assets\.
+After you prepare your assets and place them in the preferred location, see the [Localization System](/docs/userguide/localization/initialization.md) documentation to ensure that your game is ready to use your assets\.
 
 English is the default language for a game project\. To change languages, see [Console Variables](localization-initialization.md#localization-initialization-cvars)\.
 
@@ -46,7 +46,7 @@ The following is an example of how the tag definition XML file appears:
 </localization>
 ```
 
-This file should reside within your game project directory\. For example, in the Samples Project, this file is located at `dev/SamplesProject/libs/Localization/localization.xml`\. However, its specific location is inconsequential as long as the localization manager can load it at runtime\. For more information, see [Localization Initialization](localization-initialization.md)\.
+This file should reside within your game project directory\. For example, in the Samples Project, this file is located at `dev/SamplesProject/libs/Localization/localization.xml`\. However, its specific location is inconsequential as long as the localization manager can load it at runtime\. For more information, see [Localization Initialization](/docs/userguide/localization/initialization.md)\.
 
 ### Localized text XML<a name="localization-configuring-localizedxml"></a>
 

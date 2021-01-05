@@ -124,10 +124,10 @@ The CloudGemSamples project cloud gem includes a sample level named LambdaLangua
 
 Running the sample requires the following prerequisites:
 + You are using Lumberyard version 1\.16 or later\.
-+ Your Lumberyard project has the CloudGemSamples project enabled \(in the [Project Configurator](configurator-intro.md), choose **CloudGemSamples**\)\.
-+ You used the [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md) or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
-  + A [project stack](cloud-canvas-ui-rm-project-stack.md) for your project\.
-  + A [deployment](cloud-canvas-ui-rm-deployments.md) for your project that includes the **AWSLambdaLanguageDemo** resource group\.
++ Your Lumberyard project has the CloudGemSamples project enabled \(in the [Project Configurator](/docs/userguide/configurator/intro.md), choose **CloudGemSamples**\)\.
++ You used the [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
+  + A [project stack](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) for your project\.
+  + A [deployment](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md) for your project that includes the **AWSLambdaLanguageDemo** resource group\.
 
 **To run the LambdaLanguage sample level**
 

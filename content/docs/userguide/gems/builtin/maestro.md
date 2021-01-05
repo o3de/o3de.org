@@ -13,4 +13,4 @@ The Maestro gem enables Lumberyard's cinematic sequence system\. With the cinema
 **Note**  
 The Maestro gem is required and enabled by default in new Lumberyard projects\.
 
-For more information, see [Create cinematic sequences](cinematics-intro.md)\.
+For more information, see [Create cinematic sequences](/docs/userguide/cinematics/intro.md)\.

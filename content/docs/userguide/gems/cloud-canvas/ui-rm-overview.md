@@ -38,17 +38,17 @@ When you develop a game that uses cloud resources in AWS, those resources may be
 
 ![\[Resource Manager uses AWS CloudFormation to create resources in AWS\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-cfn-upload-all-resources.jpg)
 
-You can use resource manager to organize your descriptions into any number of ***resource groups***\. Each group can describe all the resources needed by a game feature, such as a high score tracking system\. For details, see [Resource Definitions](cloud-canvas-resource-definitions.md)\.
+You can use resource manager to organize your descriptions into any number of ***resource groups***\. Each group can describe all the resources needed by a game feature, such as a high score tracking system\. For details, see [Resource Definitions](/docs/userguide/gems/cloud-canvas/resource-definitions.md)\.
 
-With resource manager you can create as many ***deployments*** of the resources as you need\. You could have a deployment for the dev team, another for the QA team, and another for the released game, or any other arrangement that suits your needs\. Each deployment contains a complete and independent instance of all of the project's resources\. Deployments are implemented using AWS CloudFormation ***stack*** resources\. For details, see [Resource Deployments](cloud-canvas-resource-deployments.md)\.
+With resource manager you can create as many ***deployments*** of the resources as you need\. You could have a deployment for the dev team, another for the QA team, and another for the released game, or any other arrangement that suits your needs\. Each deployment contains a complete and independent instance of all of the project's resources\. Deployments are implemented using AWS CloudFormation ***stack*** resources\. For details, see [Resource Deployments](/docs/userguide/gems/cloud-canvas/resource-deployments.md)\.
 
 You can choose the deployment that you want to work with in Lumberyard Editor\. For example, if you create a "QA" deployment and use it to test your game, Lumberyard Editor automatically maps the references to resources in your game code to the "QA" instance of those resources\. 
 
 ![\[Choosing your deployment\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-current-deployment.png)
 
- Similarly, you can also specify the deployment to be used for release builds of the game\. For details, see [Resource Mappings](cloud-canvas-resource-mappings.md)\.
+ Similarly, you can also specify the deployment to be used for release builds of the game\. For details, see [Resource Mappings](/docs/userguide/gems/cloud-canvas/resource-mappings.md)\.
 
-Each deployment comes with an AWS managed policy and an AWS role that you can use to grant specific AWS users and groups access to that deployment\. For example, players are granted access to specific resources within a deployment\. For details, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\. 
+Each deployment comes with an AWS managed policy and an AWS role that you can use to grant specific AWS users and groups access to that deployment\. For example, players are granted access to specific resources within a deployment\. For details, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
 ### A Closer Look at AWS CloudFormation Stacks<a name="cloud-canvas-overview-rm-cfn-stacks"></a>
 
@@ -100,4 +100,4 @@ You can use permissions to specify exactly who is allowed to do what to the AWS 
 
 Like features, you can define permissions through AWS CloudFormation templates\. The permissions are applied any time that you update your cloud resources using the Cloud Canvas resource management tools\.
 
-For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.

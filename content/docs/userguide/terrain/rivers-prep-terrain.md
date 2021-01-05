@@ -25,6 +25,6 @@ To create a realistic\-looking riverbed and walls, make sure that the walls of t
 
 1. Adjust the **Height slider** to a negative value for the depth of the riverbed\.
 
-1. Adjust the other terrain brush settings as needed to fine\-tune the look of the riverbed\. See [Terrain Brush Parameters](terrain-landforms-brush-params.md) for more information\.
+1. Adjust the other terrain brush settings as needed to fine\-tune the look of the riverbed\. See [Terrain Brush Parameters](/docs/userguide/terrain/landforms-brush-params.md) for more information\.
 
 1. In your level, position the mouse at the start of river, and then drag to define the direction and course of the river\. Release the mouse at the end of the river\.

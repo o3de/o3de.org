@@ -22,7 +22,7 @@ The `e_VolumetricFog` console variable is currently not compatible with the **In
   This allows you to have multiple **Infinite Ocean** components, each with a different look and feel, set their starting states \(activate one and disable the others\), and then toggle the active state during run time to control which ocean is rendered\.
 
 ## Parent and Child Entities<a name="infinite-ocean-component-working-with-parent-child-entities"></a>
-+ You can use the entity's **[Transform](component-transform.md)** component to control the surface height of the **Infinite Ocean** component\.
++ You can use the entity's **[Transform](/docs/userguide/components/transform.md)** component to control the surface height of the **Infinite Ocean** component\.
 + Specify the z\-axis of the **Transform** component to set the **Infinite Ocean** component's height\.
 + The **Infinite Ocean** component respects the hierarchical transforms, so if the entity is a child nested within a hierarchy, the parent transform above it contributes to the height of the **Infinite Ocean** component\.
 

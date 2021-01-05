@@ -8,7 +8,7 @@ title: Disable Depth of Field
 
 Disables the depth of field effect\.
 
-To enable the effect, see [Enable Depth of Field](enable-depth-of-field-node.md)\.
+To enable the effect, see [Enable Depth of Field](/docs/userguide/rendering/enable/depth-of-field-node.md)\.
 
 **Contents**
 + [Inputs](#disable-depth-of-field-note-input)

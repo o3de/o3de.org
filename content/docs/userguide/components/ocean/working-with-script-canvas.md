@@ -14,7 +14,7 @@ You can use the **Infinite Ocean** component with the **Script Canvas** editor t
 
 1. In the Entity Inspector, for **Wave Size**, enter `0`\. This creates a flat ocean, so you can see how the **Script Canvas** editor interacts with the component\.
 
-1. Click **Add Component** and then click the **[Script Canvas](component-script-canvas.md)** component\.
+1. Click **Add Component** and then click the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\.
 
 1. In the **Script Canvas** component, click the icon to open the **Script Canvas** editor\.
 

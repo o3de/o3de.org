@@ -10,6 +10,6 @@ The Graphics Scripting gem enables graphics features in your scripts\. With the 
 
 ![\[Enable the Graphics Scripting gem to add support for Script Canvas nodes.\]](/images/userguide/gems/gem-system-graphics-scripting.png)
 
-To use the Graphics Scripting gem, you must also enable the [Script Canvas](gems-system-gem-script-canvas.md) gem\. The [LmbrCentral Gem](gems-system-gem-lmbr-central.md) gem, which is also required, is enabled by default and includes material scripting controls and the **[High Quality Shadow](component-high-quality-shadow.md)** component\.
+To use the Graphics Scripting gem, you must also enable the [Script Canvas](/docs/userguide/gems/builtin/script-canvas.md) gem\. The [LmbrCentral Gem](/docs/userguide/gems/builtin/lmbr-central.md) gem, which is also required, is enabled by default and includes material scripting controls and the **[High Quality Shadow](/docs/userguide/components/high-quality-shadow.md)** component\.
 
-To enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.

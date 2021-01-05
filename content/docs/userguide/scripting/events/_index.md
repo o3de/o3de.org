@@ -14,11 +14,11 @@ To author script events, use the Asset Editor or Lua\. Script Canvas and Lua can
 
 ## Prerequisites<a name="script-events-prerequisites"></a>
 
-To use script events, you must enable the **Script Events** gem in your project\. For information about enabling gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To use script events, you must enable the **Script Events** gem in your project\. For information about enabling gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Topics**
 + [Prerequisites](#script-events-prerequisites)
-+ [Creating Script Events in Script Canvas](script-events-creating-in-script-canvas.md)
-+ [Using Script Events in Script Canvas](script-events-using-in-script-canvas.md)
-+ [Using Script Events in Lua](script-events-lua.md)
-+ [Script Events Best Practices](script-events-best-practices.md)
++ [Creating Script Events in Script Canvas](/docs/userguide/scripting/events/creating-in-script-canvas.md)
++ [Using Script Events in Script Canvas](/docs/userguide/scripting/events/using-in-script-canvas.md)
++ [Using Script Events in Lua](/docs/userguide/scripting/events/lua.md)
++ [Script Events Best Practices](/docs/userguide/scripting/events/best-practices.md)

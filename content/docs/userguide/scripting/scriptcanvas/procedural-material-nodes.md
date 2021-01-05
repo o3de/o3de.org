@@ -10,9 +10,9 @@ Lumberyard supports [Allegorithmic Substance](https://www.allegorithmic.com/) fo
 
 You can use the Allegorithmic Substance Designer to author procedural materials and then import them into Lumberyard Editor\. You can then use the **Script Canvas** editor or Lua to modify the procedural material's textures at runtime\. 
 
-To enable this feature, you must enable the Allegorithmic Substance gem\. For more information, see [Add modular features and assets with Gems](gems-system-gems.md)\.
+To enable this feature, you must enable the Allegorithmic Substance gem\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
-For more information, see [Working with Substances](mat-substances.md) and [Lumberyard Substance Integration](https://aws.amazon.com/blogs/gametech/lumberyard-substance-integration)\.
+For more information, see [Working with Substances](/docs/userguide/materials/substances.md) and [Lumberyard Substance Integration](https://aws.amazon.com/blogs/gametech/lumberyard-substance-integration)\.
 
 **To work with procedural materials in scripts**
 

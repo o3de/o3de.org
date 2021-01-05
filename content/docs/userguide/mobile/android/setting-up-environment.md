@@ -5,7 +5,7 @@ title: Set up your environment to develop for Android with &ALY;
 ---
 # Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>
 
- This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](android-intro.md#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](android-configure-project.md) and [Build and deploy your project for Android](android-build-deploy.md)\. 
+ This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](android-intro.md#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md) and [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)\. 
 
 **Topics**
 + [Lumberyard environment setup](#android-setting-up-environment-steps)
@@ -136,5 +136,5 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 ## Next steps<a name="android-setting-up-next-steps"></a>
 
 Now that you have your Lumberyard environment configured for Android, configure, build, and deploy your project to a device to test\.
-+ [Configure Lumberyard projects for Android](android-configure-project.md)
-+ [Build and deploy your project for Android](android-build-deploy.md)
++ [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md)
++ [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)

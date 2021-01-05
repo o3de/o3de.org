@@ -6,9 +6,9 @@ title: Creating and Managing Particle Emitters
 ---
 # Creating and Managing Particle Emitters<a name="particle-emitter-creating"></a>
 
-You can create, edit, and manage emitters for particle effects in the **Particle Editor**\. For more information about emitter attributes and parameters displayed in the **Attributes** panel, see [Particles Attributes Reference](particle-editor-reference.md)\.
+You can create, edit, and manage emitters for particle effects in the **Particle Editor**\. For more information about emitter attributes and parameters displayed in the **Attributes** panel, see [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\.
 
-Before you can create or edit emitters, you must first set up a particle library\. For more information, see [Adding Particle Libraries](particle-creating-library.md)\.
+Before you can create or edit emitters, you must first set up a particle library\. For more information, see [Adding Particle Libraries](/docs/userguide/particles/creating-library.md)\.
 
 ## Creating Emitters<a name="particle-emitter-creating-creating"></a>
 
@@ -52,6 +52,6 @@ Do the following to duplicate an emitter\. This will also duplicate any associat
 + [Creating Emitters](#particle-emitter-creating-creating)
 + [Editing Emitters](#particle-emitter-editing)
 + [Duplicating Emitters](#particle-emitter-creating-duplicating)
-+ [Creating Child Emitters](particle-emitter-creating-child.md)
-+ [Organizing Emitters in a Library](particle-emitter-organizing.md)
-+ [Reverting Changes to Emitter Attributes](particle-emitter-reverting-changes.md)
++ [Creating Child Emitters](/docs/userguide/particles/emitter/creating-child.md)
++ [Organizing Emitters in a Library](/docs/userguide/particles/emitter/organizing.md)
++ [Reverting Changes to Emitter Attributes](/docs/userguide/particles/emitter/reverting-changes.md)

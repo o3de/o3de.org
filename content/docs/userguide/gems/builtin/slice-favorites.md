@@ -11,4 +11,4 @@ After you create a slice favorite, you can easily access and instantiate it into
 
 ![\[Use the Project Configurator to enable the Slice Favorites gem.\]](/images/userguide/gems/gems-system-gem-slice-favorites.png)
 
-For more information, see [Slice Favorites](component-slice-favorites.md)\.
+For more information, see [Slice Favorites](/docs/userguide/components/slice-favorites.md)\.

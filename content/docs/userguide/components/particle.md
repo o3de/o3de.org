@@ -22,7 +22,7 @@ The **Particle** component has the following properties:
 | Visible |  If set, renders the emitter\.  | 
 | Enable |  If set, activates the particle effect\.  | 
 | Particle effect library |  Specifies the particle effect library\. The **Particle** component uses the effects from an XML file\.  | 
-| Emitters |  Select an emitter from the list after specifying a particle effect library\. If emitters are not listed, you can create emitters in the [**Particle Editor**](particle-editor.md)\.  | 
+| Emitters |  Select an emitter from the list after specifying a particle effect library\. If emitters are not listed, you can create emitters in the [**Particle Editor**](/docs/userguide/particles/editor/_index.md)\.  | 
 | Color tint |  Select the color of the effect with the color swatch\.  | 
 | Pre\-Roll |  If set, the emitter behaves as though it has been running indefinitely\.  | 
 | Count scale |  Sets the multiplier for the particle count\. Valid values: `0` to `1000` Default value: `1`  | 
@@ -39,17 +39,17 @@ The **Particle** component has the following properties:
 | Not attached |  If set, ignores the entity's position\. The emitter does not follow its entity\.  | 
 | Register by bounding box |  If set, uses the bounding box instead of the entity's position to appear in the visible area\.  | 
 | Use LOD |  If cleared, ignores the emitter's level of detail \([LOD](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#lod)\)\.  | 
-| Target Entity |  Uses the specified target entity for emitters with the **Target Attraction** parameter or similar features enabled\. For more information, see [Movement Attribute](particle-editor-reference-movement.md)\.  | 
+| Target Entity |  Uses the specified target entity for emitters with the **Target Attraction** parameter or similar features enabled\. For more information, see [Movement Attribute](/docs/userguide/particles/editor/reference-movement.md)\.  | 
 | View distance multiplier |  Adjusts the maximum view distance\. If the value is `1`, the default is used\. If the value is `1.1`, the view distance would be 10% further than the default\.  Set the value to `100` for infinite visibility\. Valid values: `0` to `100`  | 
 | Use VisAreas | Allow visible areas to control this component's visibility\. | 
 | Enable audio |  If set, enables audio\.  | 
-| Audio RTPC |  Select the audio [Real\-Time Parameter Control \(RTPC\)](audio-default-controls.md) that the particle effect instance drives\.  | 
+| Audio RTPC |  Select the audio [Real\-Time Parameter Control \(RTPC\)](/docs/userguide/audio/default-controls.md) that the particle effect instance drives\.  | 
 
 ## EBus Request Bus Interface<a name="component-particle-ebusrequest"></a>
 
 Use the following request function with the EBus \(event bus\) interface to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

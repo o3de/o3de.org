@@ -6,9 +6,9 @@ title: Cross-Gem Communication
 ---
 # Cross\-Gem Communication<a name="cloud-canvas-cgf-service-api-cross-gem-communication"></a>
 
-Cloud gems can use the cross\-communication feature to expose their API operations to one another and use each other's backend services\. For example, Lumberyard's [Player Account Cloud Gem](cloud-canvas-cloud-gem-player-account.md) provides a banned player service that the [Leaderboard Cloud Gem](cloud-canvas-cloud-gem-leaderboard.md) uses to limit fraudulent scores\. You can also use cloud gem cross\-communication to notify multiple gems when an event occurs\.
+Cloud gems can use the cross\-communication feature to expose their API operations to one another and use each other's backend services\. For example, Lumberyard's [Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account.md) provides a banned player service that the [Leaderboard Cloud Gem](/docs/userguide/gems/cloud-canvas/leaderboard.md) uses to limit fraudulent scores\. You can also use cloud gem cross\-communication to notify multiple gems when an event occurs\.
 
-To implement cross\-gem communication, you define, implement, and use a [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md) web service interface\.
+To implement cross\-gem communication, you define, implement, and use a [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) web service interface\.
 
 **Topics**
 + [Defining an Interface](#cloud-canvas-cgf-service-api-cross-gem-communication-defining-an-interface)
@@ -90,7 +90,7 @@ The resulting swagger is something like the following:
 
 Currently, you must manually implement the interface in the service code, although tooling that simplifies the implementation is planned for a future release\.
 
-To implement the interface, use the `@service.api` annotated methods that you use for other [service API operations](cloud-canvas-cgf-service-api-operations.md#cloud-canvas-cgf-service-api-operations-request-execution)\. To implement the API, the functions in your modules must use the names specified by the [`x-amazon-cloud-canvas-lambda-dispatch`](cloud-canvas-cgf-service-api-cgf-extension-object.md) extension object\. To override the defaults, put `x-amazon-cloud-canvas-lambda-dispatch` extension objects that include module and function properties in your interface definition\.
+To implement the interface, use the `@service.api` annotated methods that you use for other [service API operations](cloud-canvas-cgf-service-api-operations.md#cloud-canvas-cgf-service-api-operations-request-execution)\. To implement the API, the functions in your modules must use the names specified by the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) extension object\. To override the defaults, put `x-amazon-cloud-canvas-lambda-dispatch` extension objects that include module and function properties in your interface definition\.
 
 In the preceding example, extension objects were not used to override the defaults, so the code that implements the interface would have the following structure:
 

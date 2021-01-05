@@ -13,7 +13,7 @@ title: Using Manipulators
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-With manipulators, you can edit certain component properties directly in the viewport instead of the component's property window\. Manipulators help you visualize and achieve the results that you want for your components\. For example, you can add, move, and delete vertices on a **[Spline](component-spline.md)** component to create the exact curvature that you want for your level\.
+With manipulators, you can edit certain component properties directly in the viewport instead of the component's property window\. Manipulators help you visualize and achieve the results that you want for your components\. For example, you can add, move, and delete vertices on a **[Spline](/docs/userguide/components/spline.md)** component to create the exact curvature that you want for your level\.
 
 By default, some components support manipulators\.When you author new components, you can also manually add manipulator support\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.
 
@@ -59,11 +59,11 @@ Determines the location on a spline over which the mouse is hovering to insert a
 You can provide a streamlined editing experience by creating a system that manages manipulators across components with similar requirements\.
 
 For example, you can edit the vertex positions for the following components in the viewport\.
-+ **[OccluderArea](component-occluder-area.md)**
-+ **[Polygon Prism Shape](component-polygon-prism.md)**
-+ **[Portal](component-portal.md)**
-+ **[Spline](component-spline.md)**
-+ **[VisArea](component-vis-area.md)**
++ **[OccluderArea](/docs/userguide/components/occluder-area.md)**
++ **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)**
++ **[Portal](/docs/userguide/components/portal.md)**
++ **[Spline](/docs/userguide/components/spline.md)**
++ **[VisArea](/docs/userguide/components/vis-area.md)**
 
 `EditorVertexSelection` is an example of a component that encapsulates manipulator behavior that can be shared by multiple components – in this case, all components that require vertex editing\.
 
@@ -103,7 +103,7 @@ Adding new manipulators is often unnecessary\. The existing set provides most of
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### Manipulator Manager Requests<a name="component-manipulators-ebus-requestbus-manipulator-manager-requests"></a>
 

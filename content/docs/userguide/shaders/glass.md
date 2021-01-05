@@ -6,7 +6,7 @@ title: Glass Shader
 ---
 # Glass Shader<a name="shader-ref-glass"></a>
 
-The Glass shader renders windows and other glass objects, imparting refractive, tint, fog, and cracking effects for both breakable and non\-breakable glass objects\. Use the [Illum Shader](shader-ref-illum.md) instead if you require non\-refractive effects for non\-breakable glass objects\. 
+The Glass shader renders windows and other glass objects, imparting refractive, tint, fog, and cracking effects for both breakable and non\-breakable glass objects\. Use the [Illum Shader](/docs/userguide/shaders/illum.md) instead if you require non\-refractive effects for non\-breakable glass objects\. 
 
 Here are a few things to keep in mind when using the Glass shader:
 + Ambient diffuse lighting from cube maps isn't taken into account\.

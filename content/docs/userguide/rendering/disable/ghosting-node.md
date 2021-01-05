@@ -8,7 +8,7 @@ title: Disable Ghosting
 
 Disables ghosting effects\.
 
-To enable the effect, see [Enable Ghosting](enable-ghosting-node.md)\.
+To enable the effect, see [Enable Ghosting](/docs/userguide/rendering/enable/ghosting-node.md)\.
 
 **Contents**
 + [Inputs](#disable-ghosting-note-input)

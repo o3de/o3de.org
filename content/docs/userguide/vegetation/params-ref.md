@@ -45,7 +45,7 @@ Controls the placement of objects on brushes\.
 Controls the placement of objects on terrain\. Useful if you want them placed only on brushes\.
 
 **AutoMerged**  
-Enables AutoMerged system on this object\. For more information, see [Using AutoMerged Wind Bending Effects](vegetation-bending-automerged-intro.md)\. 
+Enables AutoMerged system on this object\. For more information, see [Using AutoMerged Wind Bending Effects](/docs/userguide/vegetation/bending-automerged-intro.md)\. 
 
 **Stiffness**  
 Controls the stiffness of selected vegetation and how much it reacts to physics for AutoMerged vegetation\.

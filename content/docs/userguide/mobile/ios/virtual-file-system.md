@@ -98,7 +98,7 @@ Run the VFS build on your macOS computer\.
 
       1. Set `ios_wait_for_connect` to **1**\.
 
-1. Build and launch your game for iOS with Xcode\. For instructions, see [Creating a Release App](ios-creating-release-app.md)\.
+1. Build and launch your game for iOS with Xcode\. For instructions, see [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
 
 1. Verify that Asset Processor displays an iOS connection on the **Connections** tab, and that your game runs on the device\.
 **Note**  

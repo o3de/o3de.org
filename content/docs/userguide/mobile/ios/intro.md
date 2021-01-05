@@ -5,9 +5,9 @@ title: iOS Support
 ---
 # iOS Support<a name="ios-intro"></a>
 
-You can use Lumberyard to create applications for [iOS devices](mobile-support-intro.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
+You can use Lumberyard to create applications for [iOS devices](/docs/userguide/mobile/support-intro.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
 
-Lumberyard includes four iOS\-supported sample projects that you can use to learn how to build assets for iOS games using Asset Processor, build shaders using the remote shader compiler, and build and deploy iOS apps using the Lumberyard build tools\. For more information, see [Using Lumberyard sample projects and levels](sample-projects-levels-intro.md)\.
+Lumberyard includes four iOS\-supported sample projects that you can use to learn how to build assets for iOS games using Asset Processor, build shaders using the remote shader compiler, and build and deploy iOS apps using the Lumberyard build tools\. For more information, see [Using Lumberyard sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 
 Lumberyard has the following minimum requirements for iOS:
 
@@ -89,11 +89,11 @@ The Release app contains the executable and all binaries and assets that are req
 + [Prerequisites](#ios-prerequisites)
 + [Lumberyard Binaries](#ios-support-lumberyard-binaries)
 + [Anatomy of a Lumberyard iOS App](#ios-support-lumberyard-ios-app-anatomy)
-+ [Quick Start: Running the Samples Project on iOS Devices](ios-quick-start.md)
-+ [Building Your iOS App](ios-game-building.md)
-+ [Creating a Release App](ios-creating-release-app.md)
-+ [Using Virtual File System with iOS](ios-virtual-file-system.md)
++ [Quick Start: Running the Samples Project on iOS Devices](/docs/userguide/mobile/ios/quick-start.md)
++ [Building Your iOS App](/docs/userguide/mobile/ios/game-building.md)
++ [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)
++ [Using Virtual File System with iOS](/docs/userguide/mobile/ios/virtual-file-system.md)
 + [Universal Remote Console](lumberyard-remote-console.md)
-+ [Sharing Assets Between Windows and macOS](ios-sharing-assets-between-mac-pc.md)
-+ [Add iOS Frameworks to a Lumberyard project](ios-custom-frameworks.md)
-+ [iOS Debugging and Troubleshooting](ios-debugging-troubleshooting.md)
++ [Sharing Assets Between Windows and macOS](/docs/userguide/mobile/ios/sharing-assets-between-mac-pc.md)
++ [Add iOS Frameworks to a Lumberyard project](/docs/userguide/mobile/ios/custom-frameworks.md)
++ [iOS Debugging and Troubleshooting](/docs/userguide/mobile/ios/debugging-troubleshooting.md)

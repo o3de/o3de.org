@@ -6,10 +6,10 @@ title: Using the Cloud Gem Framework Command Line
 ---
 # Using the Cloud Gem Framework Command Line<a name="cloud-canvas-command-line-cgf"></a>
 
-You can use the `lmbr_aws cloud-gem-framework` command line for working with Cloud Canvas [Cloud Gems](cloud-canvas-cloud-gems-intro.md), the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md), and the [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md)\. 
+You can use the `lmbr_aws cloud-gem-framework` command line for working with Cloud Canvas [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md), the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md), and the [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md)\. 
 
 **Note**  
-For general information on the `lmbr_aws` command line tool, including common syntax, configuration, and arguments, see [Using the Cloud Canvas Command Line](cloud-canvas-command-line.md)\.
+For general information on the `lmbr_aws` command line tool, including common syntax, configuration, and arguments, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\.
 
 ## Commands<a name="cloud-canvas-command-line-cgf-commands"></a>
 
@@ -27,7 +27,7 @@ The `add-service-api-resources` command accepts the following arguments:
 
   Optional\. Forces the replacement of existing resource definitions\. By default, existing resource definitions with the same names are not changed\.
 
-For more information about the `add-service-api-resources` command, see [Resources](cloud-canvas-cgf-service-api-resources.md) in the [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md) documentation and [Getting Started with the Cloud Gem Framework](cloud-canvas-cgf-getting-started.md)\.
+For more information about the `add-service-api-resources` command, see [Resources](/docs/userguide/gems/cloud-canvas/cgf-service-api-resources.md) in the [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) documentation and [Getting Started with the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-getting-started.md)\.
 
 ### create\-portal\-administrator<a name="cloud-canvas-command-line-cgf-create-portal-administrator"></a>
 
@@ -76,7 +76,7 @@ The `generate-service-api-code` command accepts the following arguments:
   }
   ```
 
-For more information about the `generate-service-api-code` command, see [Generating a Game Client](cloud-canvas-cgf-service-api-game-clients.md#cloud-canvas-cgf-service-api-game-clients-generating) and [Getting Started with the Cloud Gem Framework](cloud-canvas-cgf-getting-started.md) For more information about Waf, see [Using the Waf Build System](waf-intro.md)\.
+For more information about the `generate-service-api-code` command, see [Generating a Game Client](cloud-canvas-cgf-service-api-game-clients.md#cloud-canvas-cgf-service-api-game-clients-generating) and [Getting Started with the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-getting-started.md) For more information about Waf, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
 ### open\-cloud\-gem\-portal, open\-portal, cloud\-gem\-portal<a name="cloud-canvas-command-line-cgf-open-cloud-gem-portal"></a>
 
@@ -123,7 +123,7 @@ The `service-api-process-swagger` command accepts the following arguments:
 
   Optional\. The file to which the processed swagger JSON is written\. By default, the output is written to `stdout` \(the command line console window\)\.
 
-For more information about the `service-api-process-swagger` command, see [Cloud Gem Framework Extension Object](cloud-canvas-cgf-service-api-cgf-extension-object.md)\.
+For more information about the `service-api-process-swagger` command, see [Cloud Gem Framework Extension Object](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md)\.
 
 ### upload\-cloud\-gem\-portal, upload\-portal<a name="cloud-canvas-command-line-cgf-upload-cloud-gem-portal"></a>
 

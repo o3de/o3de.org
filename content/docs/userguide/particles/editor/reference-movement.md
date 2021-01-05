@@ -17,8 +17,8 @@ For the **Air Resistance**, **Gravity Scale**, **Turbulence 3D Speed**, **Turbul
 
 | Name | Description | 
 | --- | --- | 
-| Min visible segment length | [Trail Emitter \(CPU\)](particle-editor-emitter-shape-type-trail.md) only\) Tail particles are visible only when they have moved the specified distance\. Default value: false | 
-| Min visible distance | [Trail Emitter \(CPU\)](particle-editor-emitter-shape-type-trail.md) only\) Specifies the minimum distance between the start and end of a trail segment\. Segments that are smaller than this value become transparent\. Valid values: `0+`Default value: `0` | 
+| Min visible segment length | [Trail Emitter \(CPU\)](/docs/userguide/particles/editor/emitter-shape-type-trail.md) only\) Tail particles are visible only when they have moved the specified distance\. Default value: false | 
+| Min visible distance | [Trail Emitter \(CPU\)](/docs/userguide/particles/editor/emitter-shape-type-trail.md) only\) Specifies the minimum distance between the start and end of a trail segment\. Segments that are smaller than this value become transparent\. Valid values: `0+`Default value: `0` | 
 | Speed | Specifies the initial speed of particles\. You can set a Random value and Strength Over Emitter Lifetime curve\. Valid values: anyDefault value: `5` | 
 | Acceleration | XYZ values define the constant acceleration that is applied to particles in world space\. Valid values: anyDefault value: `0`, `0`, `0`  | 
 | Inherit Velocity | Specifies the fraction of initial velocity that is inherited from the particle's parent\. For indirect particles, the parent particle's velocity is inherited\. For direct particles, the emitter's velocity is inherited\. Valid values: anyDefault value: `0` | 

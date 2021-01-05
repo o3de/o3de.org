@@ -120,7 +120,7 @@ private:
 
 ## Template Data<a name="az-code-gen-templates-template-data"></a>
 
-The data that is available to the template is fully controlled by the Python [template driver](az-code-gen-template-drivers.md)\.
+The data that is available to the template is fully controlled by the Python [template driver](/docs/userguide/codegen/template-drivers.md)\.
 
 The following table lists the variables that are automatically added to the Jinja environment\.
 
@@ -134,7 +134,7 @@ The following table lists the variables that are automatically added to the Jinj
 | json\_object | Python object that contains the decoded intermediate JSON after it has been processed by the template driver\. | 
 | json\_str | String that contains the encoded intermediate JSON after it has been processed by the template driver\. | 
 
-For information about the intermediate output, see  [Intermediate JSON Data Format](az-code-gen-intermediate-json-data-format.md)\.
+For information about the intermediate output, see  [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)\.
 
 **Note**  
-Because Jinja contains a limited feature set, attempting to do complex data transformations in Jinja templates produces overly complicated and generally unreadable templates\. For this reason, we recommend that you perform any major data manipulation in the template driver before it is passed into the Jinja template engine\. For more information, see [Template Drivers](az-code-gen-template-drivers.md)\.
+Because Jinja contains a limited feature set, attempting to do complex data transformations in Jinja templates produces overly complicated and generally unreadable templates\. For this reason, we recommend that you perform any major data manipulation in the template driver before it is passed into the Jinja template engine\. For more information, see [Template Drivers](/docs/userguide/codegen/template-drivers.md)\.

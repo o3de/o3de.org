@@ -46,7 +46,7 @@ When you drag an asset from the **Asset Browser** into the viewport, Lumberyard 
 + Assigns the asset for that component's property\.
 
 **Example**  
-You can drag the `brokenrobot05.cgf` file to the viewport, which creates a new entity, adds a **[Mesh](component-static-mesh.md)** component, and assigns the asset into the **Mesh asset** property in the **Entity Inspector**\.  
+You can drag the `brokenrobot05.cgf` file to the viewport, which creates a new entity, adds a **[Mesh](/docs/userguide/components/static-mesh.md)** component, and assigns the asset into the **Mesh asset** property in the **Entity Inspector**\.  
 
 ![\[Dragging an asset from the Asset Browser into the viewport automatically creates an entity and assigns a Mesh asset.\]](/images/userguide/asset-browser-intro-2.png)
 
@@ -77,7 +77,7 @@ You can also open some files in their respective Lumberyard tool, such as the **
 ![\[Right-click context menu for assets in the Asset Browser\]](/images/userguide/asset-browser-intro-right-click-context.png)
 
 **FBX Files**  
-Some files, such as `.fbx` files, have an additional **Edit Settings** option, which opens the **FBX Settings** tool\. For more information, see [Customize FBX asset export with FBX Settings](fbx-intro.md)\.
+Some files, such as `.fbx` files, have an additional **Edit Settings** option, which opens the **FBX Settings** tool\. For more information, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
 ![\[Right-click context menu for an .fbx file in the Asset Browser.\]](/images/userguide/asset-browser-intro-right-click-context-fbx-tool.png)
 
@@ -88,7 +88,7 @@ The following additional options appear for slices:
 + **Open in Slice Relationship View** – Show the dependencies and dependent members of the slice in a hierarchical view\.  
 **Example**  
 
-  The following image shows the **Slice Relationship View** for the **Maze\_Decor\_Interior** slice from the Starter Game\. For more information, see [Working with Slices](component-slices.md)\.  
+  The following image shows the **Slice Relationship View** for the **Maze\_Decor\_Interior** slice from the Starter Game\. For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.  
 ![\[Slice Relationship View dialog box.\]](/images/userguide/slice-relationship-view.png)
 
 **Source Control**  

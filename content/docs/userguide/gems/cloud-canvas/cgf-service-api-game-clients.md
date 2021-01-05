@@ -7,7 +7,7 @@ title: Game Clients
 
 The Cloud Gem Framework can generate game clients for your service API\.
 
-The game client can call some API operations on behalf of the player\. Other operations are callable only by other roles for use in the [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) or other tools\. By default, the client uses the AWS credentials by assuming the `Player` role through an Amazon Cognito identity pool\. This process, described in detail in [Player Identity](cloud-canvas-rm-security-player-identity.md), is illustrated in the following diagram\.
+The game client can call some API operations on behalf of the player\. Other operations are callable only by other roles for use in the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md) or other tools\. By default, the client uses the AWS credentials by assuming the `Player` role through an Amazon Cognito identity pool\. This process, described in detail in [Player Identity](/docs/userguide/gems/cloud-canvas/rm-security-player-identity.md), is illustrated in the following diagram\.
 
 ![\[Client assumes the Player role\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-4.png)
 
@@ -40,5 +40,5 @@ For a gem, the default location of the generated header file does not make it ac
 
 **Notes**
 + To use the generated client, add the generated file to your gem or project's WAF file list, and then [build the gem or project](game-build-intro.md)\.
-+ You can use the generated client component to invoke the API from C\+\+ or Lua\. For more information, see [ Calling a Game API](cloud-canvas-cgf-service-api-calling-apis.md)\.
-+ For sample code, see [Generated Game Client Code Example](cloud-canvas-cgf-service-api-generated-game-client-code-example.md)\.
++ You can use the generated client component to invoke the API from C\+\+ or Lua\. For more information, see [ Calling a Game API](/docs/userguide/gems/cloud-canvas/cgf-service-api-calling-apis.md)\.
++ For sample code, see [Generated Game Client Code Example](/docs/userguide/gems/cloud-canvas/cgf-service-api-generated-game-client-code-example.md)\.

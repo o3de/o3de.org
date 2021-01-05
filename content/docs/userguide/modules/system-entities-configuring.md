@@ -6,7 +6,7 @@ title: Configuring System Entities
 ---
 # Configuring System Entities<a name="az-module-system-entities-configuring"></a>
 
-A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](az-module-system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](component-entity-inspector.md)**\.
+A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)**\.
 
 **To configure system entities**
 

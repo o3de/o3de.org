@@ -22,8 +22,8 @@ To use heatmaps in the Cloud Gem Portal, you must generate events with positiona
 ## Prerequisites<a name="cloud-gem-game-metrics-heatmap-analytics-prerequisites"></a>
 
 This tutorial assumes the following:
-+ You are using a Lumberyard project that has the **Cloud Gem Game Metrics** enabled\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
-+ You have created a project stack and deployment stack in the [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You are using a Lumberyard project that has the **Cloud Gem Game Metrics** enabled\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
++ You have created a project stack and deployment stack in the [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 + You have sent test events with the Metrics Sample level or your level\. You can find the Metrics Sample level in the `lumberyard_version\dev\CloudGemSamples\Levels` directory\.
   + Use the WASD keys to move the controllable entity around the level\.
   + Click **Send Position** to record the coordinates of the controllable entity\.

@@ -11,8 +11,8 @@ In order for displacement mapping to work correctly, tessellation is also requir
 
 **PN triangle tessellation** is similar to Phong tessellation and is slower, but with better approximation\. 
 
-Tessellation is only supported for the [Illum Shader](shader-ref-illum.md) and [HumanSkin Shader](shader-ref-humanskin.md)\. 
+Tessellation is only supported for the [Illum Shader](/docs/userguide/shaders/illum.md) and [HumanSkin Shader](/docs/userguide/shaders/humanskin.md)\. 
 
 **Topics**
-+ [Setting Tessellation Parameters](mat-maps-displacement-tessellation-params.md)
-+ [Fixing Tessellation Seams](mat-maps-displacement-tessellation-debug.md)
++ [Setting Tessellation Parameters](/docs/userguide/materials/maps/displacement-tessellation-params.md)
++ [Fixing Tessellation Seams](/docs/userguide/materials/maps/displacement-tessellation-debug.md)

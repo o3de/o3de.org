@@ -23,9 +23,9 @@ To have your cloud gem send events through Web Communicator to connected clients
 
 ## 1\. \(Optional\) Define Broadcast and/or Private Channels<a name="cloud-canvas-cloud-gem-web-communicator-creating-define-broadcast-andor-private-channels"></a>
 
-You can optionally define your own channels in your cloud gem's `lumberyard_version\dev\Gems\gem_name\AWS\resource-group-settings.json` file\. A channel consists of a unique name, a type \(`BROADCAST` or `PRIVATE`\) and an optional `CommunicationChannel`\. To reduce the number of subscriptions required on the server, the communication channel system allows your channel to make use of a base channel by embedding your actual channel name in the message\. When messages are broadcast from other cloud gems as [EBus](ebus-intro.md) events, the channel name is embedded in the message and parsed on the client\.
+You can optionally define your own channels in your cloud gem's `lumberyard_version\dev\Gems\gem_name\AWS\resource-group-settings.json` file\. A channel consists of a unique name, a type \(`BROADCAST` or `PRIVATE`\) and an optional `CommunicationChannel`\. To reduce the number of subscriptions required on the server, the communication channel system allows your channel to make use of a base channel by embedding your actual channel name in the message\. When messages are broadcast from other cloud gems as [EBus](/docs/userguide/programming/ebus/intro.md) events, the channel name is embedded in the message and parsed on the client\.
 
-To declare broadcast and/or private channels, add them to your cloud gem's `resource-group-settings.json` file in the `GemSettings`, `CloudGemWebCommunicator`, `Channels` section\. The following example is from the [Dynamic Content](cloud-canvas-cloud-gem-dc-manager.md) cloud gem\.
+To declare broadcast and/or private channels, add them to your cloud gem's `resource-group-settings.json` file in the `GemSettings`, `CloudGemWebCommunicator`, `Channels` section\. The following example is from the [Dynamic Content](/docs/userguide/gems/cloud-canvas/dc-manager.md) cloud gem\.
 
 ```
 {
@@ -59,7 +59,7 @@ The relevant fields are as follows\.
 
 ## 2\. Add the Web Communcator Service Interface ID to Your Gem's resource\-template\.json File<a name="cloud-canvas-cloud-gem-web-communicator-creating-add-the-web-communcator-service-interface-id-to-your-gems-resource-template.json-file"></a>
 
-The request API between your cloud gem and the Web Communicator gem is built on the [cross\-gem communication system](cloud-canvas-cgf-service-api-cross-gem-communication.md)\. The interface for the Web Communicator's `broadcast` and `send` API operations are defined in the `lumberyard_version\dev\Gems\CloudGemWebCommunicator\AWS\api-defintion\sendmessage_1_0_0.json` file\.
+The request API between your cloud gem and the Web Communicator gem is built on the [cross\-gem communication system](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md)\. The interface for the Web Communicator's `broadcast` and `send` API operations are defined in the `lumberyard_version\dev\Gems\CloudGemWebCommunicator\AWS\api-defintion\sendmessage_1_0_0.json` file\.
 
 To make this interface callable from your cloud gem's service Lambda function, you add an `InterfaceID` property to the `lumberyard_version\dev\Gems\gem_name\AWS\resource-template.json` file\.
 
@@ -241,7 +241,7 @@ void SomeHandler::MessageReceived(const AZStd::string& channelName, const AZStd:
 ## Resources<a name="cloud-canvas-cloud-gem-web-communicator-creating-resources"></a>
 
 For more information, see the following:
-+ For a sample level, see the [CommunicatorSample](cloud-canvas-cloud-gem-web-communicator-sample-level.md) sample level in the **CloudGemSamples** project\.
-+ For more information about cross\-gem communication in Cloud Canvas, see [Cross\-Gem Communication](cloud-canvas-cgf-service-api-cross-gem-communication.md)\.
-+ For the Web Communicator cloud gem API, see [Web Communicator Cloud Gem Service API](cloud-canvas-cloud-gem-web-communicator-service-api.md)\.
++ For a sample level, see the [CommunicatorSample](/docs/userguide/gems/cloud-canvas/web-communicator-sample-level.md) sample level in the **CloudGemSamples** project\.
++ For more information about cross\-gem communication in Cloud Canvas, see [Cross\-Gem Communication](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md)\.
++ For the Web Communicator cloud gem API, see [Web Communicator Cloud Gem Service API](/docs/userguide/gems/cloud-canvas/web-communicator-service-api.md)\.
 + For the Web Communicator cloud gem source code, see the files in the `lumberyard_version\dev\Gems\CloudGemWebCommunicator\Code\` directory and its subdirectories\.

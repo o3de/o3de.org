@@ -41,7 +41,7 @@ If you apply decals to an object that can be moved by a player, the decal will n
 
    1. In Lumberyard Editor, in the **Rollup Bar**, under **Objects**, click **Misc**, **Decal**\.
 
-   1. Under **Decal Params**, select the **Deferred** check box\. For information about projection types, see [Decal Projection Types](mat-maps-decal-types.md)\.
+   1. Under **Decal Params**, select the **Deferred** check box\. For information about projection types, see [Decal Projection Types](/docs/userguide/materials/maps/decal-types.md)\.
 
 1. Enable the `r_deferredDecalsOnDynamicObjects` console variable so the decal appears on the vegetation:
 

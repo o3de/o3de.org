@@ -11,12 +11,12 @@ title: Implementing Connected Features with &cloud;
 + [Example Uses](#cloud-canvas-overview-example-uses)
 + [Tools](#cloud-canvas-overview-tools)
 + [Knowledge Prerequisites](#cloud-canvas-overview-prereq-knowledge)
-+ [Cloud Canvas Overview](cloud-canvas-overview.md)
-+ [Cloud Gems](cloud-canvas-cloud-gems-intro.md)
-+ [Cloud Canvas Gameplay Design and Engineering Guide](cloud-canvas-game-play-design-guide-intro.md)
-+ [Cloud Canvas Software Engineering Guide](cloud-canvas-soft-eng-intro.md)
-+ [Administering Cloud Canvas](cloud-canvas-administering-intro.md)
-+ [Using the Cloud Canvas Command Line](cloud-canvas-command-line.md)
++ [Cloud Canvas Overview](/docs/userguide/gems/cloud-canvas/overview.md)
++ [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md)
++ [Cloud Canvas Gameplay Design and Engineering Guide](/docs/userguide/gems/cloud-canvas/game-play-design-guide-intro.md)
++ [Cloud Canvas Software Engineering Guide](/docs/userguide/gems/cloud-canvas/soft-eng-intro.md)
++ [Administering Cloud Canvas](/docs/userguide/gems/cloud-canvas/administering-intro.md)
++ [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)
 
 Deeply integrated with AWS, Cloud Canvas is a suite of tools and solutions \(cloud gems, resource groups, script canvas nodes\) designed to achieve two main goals:
 
@@ -29,10 +29,10 @@ With Cloud Canvas, you can add a cloud\-connected feature to your game in as lit
 ## Features<a name="cloud-canvas-overview-features"></a>
 
 Cloud Canvas offers a wide range of helpful features:
-+ [Cloud gems](cloud-canvas-cloud-gems-intro.md) that provide cloud\-connected features such as Message of the Day, Leaderboards, and Dynamic Content\. These cloud gems can be used in a few clicks as is, or as samples to fuel your custom developments and ideas\. 
-+ The [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md), on top of which cloud gems are built, allows you to add pre\-packaged, cloud\-connected features in a few clicks\. You can use the Cloud Gem Framework to [build your own cloud gems](cloud-canvas-cgf-getting-started-create-gem.md)\.
++ [Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) that provide cloud\-connected features such as Message of the Day, Leaderboards, and Dynamic Content\. These cloud gems can be used in a few clicks as is, or as samples to fuel your custom developments and ideas\. 
++ The [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md), on top of which cloud gems are built, allows you to add pre\-packaged, cloud\-connected features in a few clicks\. You can use the Cloud Gem Framework to [build your own cloud gems](/docs/userguide/gems/cloud-canvas/cgf-getting-started-create-gem.md)\.
 + Tools to enable a team to build a game with cloud\-connected features\.
-+ A [CloudGemAWSScriptBehaviors](cloud-canvas-cgf-aws-behavior-context-reflections.md) gem that exposes AWS services such as Amazon S3, Amazon Cognito, AWS Lambda, and HTTP utilities to script\. 
++ A [CloudGemAWSScriptBehaviors](/docs/userguide/gems/cloud-canvas/cgf-aws-behavior-context-reflections.md) gem that exposes AWS services such as Amazon S3, Amazon Cognito, AWS Lambda, and HTTP utilities to script\. 
 + Tools to manage AWS resources and permissions that determine how game developers and players access them\.
 + Management of AWS deployments so that development, test, and live resources are maintained separately\.
 + Methods for players to be authenticated \(anonymous and authenticated\)\. Players can be authenticated from a variety of devices and access their game data by logging in with an Amazon, Facebook, or Google account\.
@@ -46,15 +46,15 @@ Consider the many ways you can use Amazon Web Services for connected games:
 + Employ a daily gift system that tracks player visits and rewards frequent visits: [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/), [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/)
 + Present a message of the day or news ticker that provides updates on in\-game events: [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) 
 
-For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md) and [Lumberyard Tutorials](https://gamedev.amazon.com/forums/tutorials)\.
+For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md) and [Lumberyard Tutorials](https://gamedev.amazon.com/forums/tutorials)\.
 
 ## Tools<a name="cloud-canvas-overview-tools"></a>
 
  You can access Cloud Canvas functionality by using any of the following:
-+  **[Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md)** – A web application that makes backend administration and management accessible to everyone\. 
++  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** – A web application that makes backend administration and management accessible to everyone\. 
 +  **Cloud Canvas C\+\+ APIs** – For software development\.
-+ **[Using the Cloud Canvas Command Line](cloud-canvas-command-line.md)** – For managing resource groups, mappings, deployments, and projects\. 
-+  **[Cloud Canvas Tools in Lumberyard Editor](cloud-canvas-ui-intro.md)** – For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
++ **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** – For managing resource groups, mappings, deployments, and projects\. 
++  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** – For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
 
 ## Knowledge Prerequisites<a name="cloud-canvas-overview-prereq-knowledge"></a>
 

@@ -11,7 +11,7 @@ Adds a volumetric effect for simulating fog, snow, or other environments\. You c
 **Note**  
 This effect has high performance impact and can negatively affect the frame rate\.
 
-To disable the effect, see [Disable Volumetric Scattering](disable-volumetric-scattering-node.md)\.
+To disable the effect, see [Disable Volumetric Scattering](/docs/userguide/rendering/disable/volumetric-scattering-node.md)\.
 
 **Contents**
 + [Inputs](#enable-volumetric-scattering-note-input)

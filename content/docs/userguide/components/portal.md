@@ -12,12 +12,12 @@ title: Portal
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-Use the **Portal** component to create efficient indoor areas with the **[VisArea](component-vis-area.md)** component\. You can use portals to specify areas where you can look out of a visible area and see beyond it, such as windows or doors between visible areas\.
+Use the **Portal** component to create efficient indoor areas with the **[VisArea](/docs/userguide/components/vis-area.md)** component\. You can use portals to specify areas where you can look out of a visible area and see beyond it, such as windows or doors between visible areas\.
 
 To use the **Portal** component, its volume must overlap at least two or more visible areas\.
 
 **Note**  
-You can't modify the **[OccluderArea](component-occluder-area.md)**, **[Portal](#component-portal)**, and **[VisArea](component-vis-area.md)** components at runtime\. 
+You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.md)**, **[Portal](#component-portal)**, and **[VisArea](/docs/userguide/components/vis-area.md)** components at runtime\. 
 
 **Topics**
 + [Portal Component Properties](#component-portal-properties)

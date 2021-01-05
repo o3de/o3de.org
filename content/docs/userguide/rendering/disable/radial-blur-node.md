@@ -8,7 +8,7 @@ title: Disable Radial Blur
 
 Disables the radial blur effect\.
 
-To enable the effect, see [Enable Radial Blur](enable-radial-blur-node.md)\.
+To enable the effect, see [Enable Radial Blur](/docs/userguide/rendering/enable/radial-blur-node.md)\.
 
 **Contents**
 + [Inputs](#disable-radial-blur-note-input)

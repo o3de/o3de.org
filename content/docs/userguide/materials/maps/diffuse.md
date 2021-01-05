@@ -11,7 +11,7 @@ The diffuse color defines how bright a surface is when lit directly by a white l
 
 Texture mapping the diffuse color is like applying an image to the surface of the object\. For example, if you want a wall object to be made out of brick, you can choose an image file with a photograph of bricks\. A diffuse map is always required for objects\. 
 
-The diffuse map should not contain any lighting, shading or shadowing information, as all this gets added dynamically by Lumberyard\. In certain cases, pre\-baked ambient occlusion \(AO\) is required, which is stored in a dedicated AO map in the diffuse channel of the Detail Map\. For more information, see [Working with Detail Maps](mat-maps-detail-intro.md) \.
+The diffuse map should not contain any lighting, shading or shadowing information, as all this gets added dynamically by Lumberyard\. In certain cases, pre\-baked ambient occlusion \(AO\) is required, which is stored in a dedicated AO map in the diffuse channel of the Detail Map\. For more information, see [Working with Detail Maps](/docs/userguide/materials/maps/detail-intro.md) \.
 
 Diffuse maps can be combined with other texture maps, such as ambient occlusion maps and cavity maps, to create more definition\. 
 

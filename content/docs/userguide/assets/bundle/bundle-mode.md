@@ -76,7 +76,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 1. Enter the command `loadbundles` to load bundles for the level\.  
 ![\[Using the loadbundles command.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-2.png)
 
-   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](asset-bundler-asset-validation-gem.md) seed\-related commands can help find the missing assets\.
+   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/userguide/assets/bundle/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
 
 1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle\.
 
@@ -94,7 +94,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 
 1. Add the missing assets to the seed list for the level\.
 
-1. Run the [bundling commands](asset-bundler-command-line-reference.md) for the level\.
+1. Run the [bundling commands](/docs/userguide/assets/bundle/command-line-reference.md) for the level\.
 
 1. Drop the bundles into the `Bundles` directory\.
 

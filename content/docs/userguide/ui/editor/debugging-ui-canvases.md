@@ -96,7 +96,7 @@ The following table describes each column\.
 | XBlnd | The number of draw calls caused by a change in blend mode\. | 
 | XSrgb | The number of draw calls caused by a change in Srgb write\. This data point appears only for render targets \(for example, playing video\)\. | 
 | XMaxV | The number of draw calls caused by a render node that requires more than 65536 vertices or 16384 quads\. This case is uncommon\. For example, more than 16000 characters of text would be required for a value to appear\. | 
-| XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached\. To reduce the number of these calls, you can use a texture atlas\. For more information, see [Using Texture Atlases](ui-editor-texture-atlases.md)\. | 
+| XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached\. To reduce the number of these calls, you can use a texture atlas\. For more information, see [Using Texture Atlases](/docs/userguide/ui/editor/texture-atlases.md)\. | 
 
 ## ui\_DisplayElemBounds<a name="ui-editor-debugging-ui-canvases-display-elem-bounds"></a>
 
@@ -130,4 +130,4 @@ The log file is written to `lumberyard_version\dev\Cache\project_name\pc\user\lo
 
 The log file lists all of the draw calls for each enabled canvas\. The report can be useful for determining how to reduce the number of draw calls\.
 
-For more information, see [Using Texture Atlases to Reduce UI Draw Calls](ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls.md)\.
+For more information, see [Using Texture Atlases to Reduce UI Draw Calls](/docs/userguide/ui/editor/texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls.md)\.

@@ -15,7 +15,7 @@ title: Building Game Assets for macOS Games
 When you build a macOS game using Lumberyard, you must first build the assets that are included with the application\. All built assets are located in the `cache` folder of your Lumberyard installation\. For example, when you build the Samples Project, the assets are saved to the `lumberyard_version\dev\cache\SamplesProject\osx_gl` directory\. The initial build of the Samples Project assets may take up to an hour to process, but incremental changes should process almost instantly\.
 
 **Note**  
-If you make changes to your game in Lumberyard Editor on your PC, you must copy the updated assets to your Mac using your preferred method\. For example, you can use source control\. For information, see [Using the Perforce Plugin with Lumberyard](setting-up-lumberyard-perforce-plugin.md)\.
+If you make changes to your game in Lumberyard Editor on your PC, you must copy the updated assets to your Mac using your preferred method\. For example, you can use source control\. For information, see [Using the Perforce Plugin with Lumberyard](/docs/userguide/setup/lumberyard-perforce-plugin.md)\.
 
 **To build macOS game assets on your Mac**
 

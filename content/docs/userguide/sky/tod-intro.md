@@ -14,5 +14,5 @@ You can use the **Time of Day** editor and **Sun Trajectory Tool** to achieve th
 All properties and parameters in the following topics are ignored when using a static sky \(SkyBox\)\.
 
 **Topics**
-+ [Setting Dawn and Dusk Effects](sky-tod-params.md)
-+ [Setting a Day\-Night Cycle](sky-tod-day-night-cycle.md)
++ [Setting Dawn and Dusk Effects](/docs/userguide/sky/tod-params.md)
++ [Setting a Day\-Night Cycle](/docs/userguide/sky/tod-day-night-cycle.md)

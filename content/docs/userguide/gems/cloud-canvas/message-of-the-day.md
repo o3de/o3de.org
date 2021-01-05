@@ -10,8 +10,8 @@ title: Message Of The Day Cloud Gem Portal
 + [Prerequisites](#cloud-canvas-cloud-gem-message-of-the-day-prerequisites)
 + [Accessing and Using the Message of the Day Cloud Cloud Gem](#cloud-canvas-cloud-gem-message-of-the-day-accessing-and-using)
 + [Other Cloud Gems](#cloud-canvas-cloud-gem-message-of-the-day-other-cloud-gems)
-+ [Testing the Message of the Day Sample Level](cloud-canvas-cloud-gem-mod-testing.md)
-+ [Cloud Gem Message of the Day Implementation Details](cloud-canvas-cloud-gem-mod-details.md)
++ [Testing the Message of the Day Sample Level](/docs/userguide/gems/cloud-canvas/mod-testing.md)
++ [Cloud Gem Message of the Day Implementation Details](/docs/userguide/gems/cloud-canvas/mod-details.md)
 + [Cloud Gem Message of the Day API Calls](cloud-gem-mod-api.md)
 
 You can use the Message of the Day Cloud Gem to schedule messages that your game consumes\. You can customize your project's message of the day using the Cloud Gem Portal\.
@@ -20,11 +20,11 @@ You can use the Message of the Day Cloud Gem to schedule messages that your game
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Message of the Day Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Message of the Day**\)\.
-+ You have created a project stack in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You have created a project stack in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 + You have created a deployment stack in resource manager\.
 + You have opened the cloud gem portal\. In Lumberyard Editor, click **AWS**, **Open Cloud Gem Portal**\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Message of the Day** in the Project Configurator\. For information on creating a deployment stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Message of the Day** in the Project Configurator\. For information on creating a deployment stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Accessing and Using the Message of the Day Cloud Cloud Gem<a name="cloud-canvas-cloud-gem-message-of-the-day-accessing-and-using"></a>
 
@@ -55,5 +55,5 @@ You can now use the message in your game\.
 ## Other Cloud Gems<a name="cloud-canvas-cloud-gem-message-of-the-day-other-cloud-gems"></a>
 
 Visit the following links for other cloud gems that might interest you\.
-+ Leaderboard Cloud Gem: [Leaderboard Cloud Gem Portal](cloud-canvas-cloud-gem-leaderboard.md)
-+ Dynamic Content Cloud Gem: [Using Dynamic Content Manager](cloud-canvas-cloud-gem-dc-manager.md)
++ Leaderboard Cloud Gem: [Leaderboard Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/leaderboard.md)
++ Dynamic Content Cloud Gem: [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md)

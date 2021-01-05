@@ -8,9 +8,9 @@ title: Enable Color Correction
 
 Sets color correction parameters\. You can use this node to specify the CMYK, brightness, contrast, saturation, and hue in a scene\. Most color correction properties aren't updated smoothly, so it's recommended that you hide stronger color correction changes with cuts or fading between scenes\.
 
-You can also apply color correction in the Track View\. See [Color Correction Node](cinematics-track-view-nodes-color-correction.md)\.
+You can also apply color correction in the Track View\. See [Color Correction Node](/docs/userguide/cinematics/track-view/nodes-color-correction.md)\.
 
-To disable the effect, see [Disable Color Correction](disable-color-correction-node.md)\.
+To disable the effect, see [Disable Color Correction](/docs/userguide/rendering/disable/color-correction-node.md)\.
 
 **Contents**
 + [Inputs](#enable-color-correction-node-input)

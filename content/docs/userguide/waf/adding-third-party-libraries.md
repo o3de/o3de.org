@@ -5,7 +5,7 @@ title: Adding Third-Party Libraries
 ---
 # Adding Third\-Party Libraries<a name="waf-adding-third-party-libraries"></a>
 
-[Gems](gems-system-gems.md) are Lumberyard extensions that can be enabled or disabled for any game project\. This modularity is advantageous when you want to add a third\-party library to specific games\. You can add the third\-party library to a new or existing gem, and then enable the gem for the projects that you want\. This narrows the scope of the library to only the games that use the gem\.
+[Gems](/docs/userguide/gems/builtin/s.md) are Lumberyard extensions that can be enabled or disabled for any game project\. This modularity is advantageous when you want to add a third\-party library to specific games\. You can add the third\-party library to a new or existing gem, and then enable the gem for the projects that you want\. This narrows the scope of the library to only the games that use the gem\.
 
 Adding a third\-party library to a gem includes the following steps:
 
@@ -96,7 +96,7 @@ Create a `.json` definition file for the third\-party library\. Using the direct
 The `source` key contains an alias called `@GEM@`\. The `@GEM@` alias represents the root path of the current gem\. The `source` key specifies the base of the third\-party library directory on which the other paths specified by keys like `includes` and `libpath` are based\.
 The `platform` key sections describe the locations of platform\-specific library files based on the library identifier\. 
 
-For more information, see [Creating Third\-Party Library Configuration Files for Waf](waf-third-party-library-configurations.md)\.
+For more information, see [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
 ## Step 3\. Apply the Library to Modules or Gems That Require It<a name="waf-adding-third-party-libraries-apply-the-library-to-modules-or-gems-that-require-it"></a>
 
@@ -143,7 +143,7 @@ def build(bld):
 
 ## Step 4\. Configure and Validate the Library Definition<a name="waf-adding-third-party-libraries-configure-and-validate-the-library-definition"></a>
 
-Now you can test your definitions by using the Waf `configure` command, which processes third\-party definitions\. Before you begin, use the Project Configurator to ensure that the gem that has the third\-party library is enabled for the game project\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+Now you can test your definitions by using the Waf `configure` command, which processes third\-party definitions\. Before you begin, use the Project Configurator to ensure that the gem that has the third\-party library is enabled for the game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 From the engine root path, run the configure command:
 

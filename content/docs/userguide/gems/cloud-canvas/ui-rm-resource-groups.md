@@ -12,8 +12,8 @@ You can use the **Cloud Canvas Resource Manager** to manage resource groups coll
 ## Managing Resource Groups<a name="cloud-canvas-ui-rm-resource-groups-detail-pane"></a>
 
 To see the status of the resource groups that belong to your project's current deployment, click **Resource Groups** in the **Cloud Canvas configuration** navigation pane \. Note the following: 
-+ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](cloud-canvas-ui-credentials-manager.md)\. 
-+ If you select **Resource Groups** and deployments exist but no deployment is active, Lumberyard prompts you to select one\. For more information, see [Making a Cloud Canvas Deployment Active](cloud-canvas-ui-select-deployment.md)\. 
++ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
++ If you select **Resource Groups** and deployments exist but no deployment is active, Lumberyard prompts you to select one\. For more information, see [Making a Cloud Canvas Deployment Active](/docs/userguide/gems/cloud-canvas/ui-select-deployment.md)\. 
 
 The **Resource Groups **detail pane lists the resource groups in your current deployment: 
 
@@ -26,7 +26,7 @@ Starts the process of modifying your resources in AWS as needed to match all the
 
 ![\[Upload all resources\]](/images/userguide/cloud_canvas/cloud-canvas-upload-all-resources.png)
 Note the following:   
-+ If you have not yet initialized your Lumberyard project with an AWS account for the resources that you want to upload, Lumberyard prompts you to do so\. To prepare your Lumberyard project for use with AWS, you must be an administrator of the AWS account that you use\. For more information, see [Initializing Cloud Canvas Resource Manager](cloud-canvas-ui-rm-initialize.md)\. 
++ If you have not yet initialized your Lumberyard project with an AWS account for the resources that you want to upload, Lumberyard prompts you to do so\. To prepare your Lumberyard project for use with AWS, you must be an administrator of the AWS account that you use\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md)\. 
 + After you have initialized the project, Lumberyard prompts you to create a deployment for it\. A deployment creates all the AWS resources that are specified in your resource group definition\.  
 ![\[Create deployment\]](/images/userguide/cloud_canvas/cloud-canvas-resource-groups-create-deployment.png)
 
@@ -46,10 +46,10 @@ Provide the following information:
     
 
 **Resource group status**  
-Shows the status of the AWS CloudFormation stack of each resource group in the active deployment\. **Resource group** shows the resource group name\. For descriptions of the remaining fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](cloud-canvas-ui-rm-project-stack.md) section\.
+Shows the status of the AWS CloudFormation stack of each resource group in the active deployment\. **Resource group** shows the resource group name\. For descriptions of the remaining fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\.
 
 **Progress log**  
-Shows the progress of AWS CloudFormation stack updates\. For more information, see [Viewing the Cloud Canvas Progress Log](cloud-canvas-ui-rm-progress-log.md)\.
+Shows the progress of AWS CloudFormation stack updates\. For more information, see [Viewing the Cloud Canvas Progress Log](/docs/userguide/gems/cloud-canvas/ui-rm-progress-log.md)\.
 
 ## Managing Individual Resource Groups<a name="cloud-canvas-ui-rm-individual-resource-group"></a>
 
@@ -65,7 +65,7 @@ When you create a resource group, the group does not yet have any AWS resource d
 
 #### Importing Resources<a name="cloud-canvas-ui-rm-adding-resources-new-resource-group-importing-resources"></a>
 
-You can also click **Import resource** to import an AWS resource that already exists in your AWS account\. For more information, see [ Importing Resource Definitions into Cloud Canvas](cloud-canvas-ui-rm-resource-importer.md)\.
+You can also click **Import resource** to import an AWS resource that already exists in your AWS account\. For more information, see [ Importing Resource Definitions into Cloud Canvas](/docs/userguide/gems/cloud-canvas/ui-rm-resource-importer.md)\.
 
 #### Creating Resources in AWS<a name="cloud-canvas-ui-rm-adding-resources-new-resource-group-creating-resources"></a>
 
@@ -107,11 +107,11 @@ When you click **Delete resources**, Lumberyard prompts you to confirm the delet
 After you click **Yes**, the deletion operation might take several minutes to complete\. 
 
 **Stack resources**  
-The **Stack resources** table shows the status of each of the AWS resources that you defined for the resource group\. For descriptions of the fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](cloud-canvas-ui-rm-project-stack.md) section\. 
+The **Stack resources** table shows the status of each of the AWS resources that you defined for the resource group\. For descriptions of the fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\. 
 
 ## resource\-template\.json<a name="cloud-canvas-ui-rm-resource-template-json-link"></a>
 
-For information about this node, see [Working with JSON Files](cloud-canvas-ui-rm-json-file-nodes.md)\. 
+For information about this node, see [Working with JSON Files](/docs/userguide/gems/cloud-canvas/ui-rm-json-file-nodes.md)\. 
 
 ## lambda\-function\-code<a name="cloud-canvas-ui-rm-lambda-function-code"></a>
 
@@ -119,4 +119,4 @@ The **lambda\-function\-code** node and its child nodes correspond to the `lambd
 
 ## project\-code<a name="cloud-canvas-ui-rm-project-code"></a>
 
-This node is located at the bottom of the **Administration \(advanced\)** section in the resource manager navigation tree\. The `project-code` directory contains the code that implements the AWS Lambda function resources that **Cloud Canvas Resource Manager** uses\. For more information, see [The project\-code Directory](cloud-canvas-resource-definitions.md#cloud-canvas-project-code-subdirectory)\. The **project\-code** node contains file and directory child nodes\. Click a file node to see or edit its contents in the detail pane\. For more information, see [Editing Resource Manager Files](cloud-canvas-ui-rm-text-editing.md)\. 
+This node is located at the bottom of the **Administration \(advanced\)** section in the resource manager navigation tree\. The `project-code` directory contains the code that implements the AWS Lambda function resources that **Cloud Canvas Resource Manager** uses\. For more information, see [The project\-code Directory](cloud-canvas-resource-definitions.md#cloud-canvas-project-code-subdirectory)\. The **project\-code** node contains file and directory child nodes\. Click a file node to see or edit its contents in the detail pane\. For more information, see [Editing Resource Manager Files](/docs/userguide/gems/cloud-canvas/ui-rm-text-editing.md)\. 

@@ -24,8 +24,8 @@ title: Networking Architecture
 ![\[GridMate architecture\]](/images/userguide/networking/network-architecture-gridmate.jpg)
 
 For more information, see the following pages\.
-+ [Carrier](network-carrier.md)
-+ [Marshalling](network-marshalling.md)
-+ [Sessions](network-session-service.md)
-+ [Replicas](network-replicas.md)
-+ [Replica Manager](network-replicas-replica-manager.md)
++ [Carrier](/docs/userguide/networking/carrier.md)
++ [Marshalling](/docs/userguide/networking/marshalling.md)
++ [Sessions](/docs/userguide/networking/session-service.md)
++ [Replicas](/docs/userguide/networking/replicas.md)
++ [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md)

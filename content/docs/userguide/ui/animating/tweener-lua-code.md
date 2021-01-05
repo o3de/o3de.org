@@ -6,7 +6,7 @@ title: Tweener Lua Script
 ---
 # Tweener Lua Script<a name="ui-animating-tweener-lua-code"></a>
 
-You must have a minimum set of code to play an animation in the Scripted Entity Tweener system\. As described in [Tweener Sample Level](ui-animating-tweener-sample.md), you add this code to a Lua script\. You can copy and paste the code into a text file, and then change the file name extension to `.lua`\. You use this script as part of a **Lua script** component\. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](lua-scripting-intro-add-script-to-component.md)\.
+You must have a minimum set of code to play an animation in the Scripted Entity Tweener system\. As described in [Tweener Sample Level](/docs/userguide/ui/animating/tweener-sample.md), you add this code to a Lua script\. You can copy and paste the code into a text file, and then change the file name extension to `.lua`\. You use this script as part of a **Lua script** component\. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/userguide/scripting/lua/intro-add-script-to-component.md)\.
 
 In the following example, the entity's opacity is linearly tweened to `0.5` over `5` seconds\.
 
@@ -60,4 +60,4 @@ self.ScriptedEntityTweener:StartAnimation
 	}
 ```
 
-For the parameter descriptions, see [Tweener Supported Components](ui-animating-tweener-components.md)\.
+For the parameter descriptions, see [Tweener Supported Components](/docs/userguide/ui/animating/tweener-components.md)\.

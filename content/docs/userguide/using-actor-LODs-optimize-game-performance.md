@@ -55,9 +55,9 @@ Currently, Lumberyard supports skeletons created with LOD groups only\.
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/using-actor-LODs-optimize-game-performance.html)
 
-   For more information, see [FBX soft naming conventions](fbx-settings-soft-naming.md)\.
+   For more information, see [FBX soft naming conventions](/docs/userguide/fbx/settings-soft-naming.md)\.
 
-1. Follow the instructions in [Customize FBX asset export with FBX Settings](fbx-intro.md) to export the meshes to FBX format so that you can use them in Lumberyard\.
+1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md) to export the meshes to FBX format so that you can use them in Lumberyard\.
 
 **To use LOD groups to create actor LODs**
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.  
@@ -85,7 +85,7 @@ After you import your LODs into Lumberyard Editor, you can add an actor LOD to a
 
 1. In Lumberyard Editor, choose **Tools**, **Asset Browser**\.
 
-1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](component-actor.md)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
+1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](/docs/userguide/components/actor.md)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component\.
 

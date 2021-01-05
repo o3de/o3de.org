@@ -8,7 +8,7 @@ title: Programmer's Guide to Entities and Components
 
 This guide provides engine and game programmers with examples and best practices for creating and reflecting custom Lumberyard components in C\+\+\. 
 
-For information on using the component entity system in Lumberyard Editor, see [Working with component entities](component-intro.md)\. 
+For information on using the component entity system in Lumberyard Editor, see [Working with component entities](/docs/userguide/components/intro.md)\. 
 
 For C\+\+ API reference documentation on the component entity system, see the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
@@ -30,14 +30,14 @@ Components are always activated in order of their dependency\. For this reason, 
 Entities are never allowed to be in a state in which one of their component dependencies is missing, even during authoring\. In Lumberyard's editing tools, this means that components whose dependencies are missing are actually removed from the entity and stored in a temporary list\. When all of the component's dependencies become available, the component is restored to the entity\.
 
 **Topics**
-+ [Creating a Component](component-entity-system-create-component.md)
-+ [Registering Your Component](component-entity-system-pg-registering-your-component.md)
-+ [Reflecting a Component for Serialization and Editing](component-entity-system-reflect-component.md)
-+ [Defining and Using Component Services](component-entity-system-pg-defining-using-component-services.md)
-+ [Editor Components](component-entity-system-pg-editor-components.md)
-+ [Creating System Components](component-entity-system-pg-creating-system-components.md)
++ [Creating a Component](/docs/userguide/components/entity-system-create-component.md)
++ [Registering Your Component](/docs/userguide/components/entity-system-pg-registering-your-component.md)
++ [Reflecting a Component for Serialization and Editing](/docs/userguide/components/entity-system-reflect-component.md)
++ [Defining and Using Component Services](/docs/userguide/components/entity-system-pg-defining-using-component-services.md)
++ [Editor Components](/docs/userguide/components/entity-system-pg-editor-components.md)
++ [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)
 + [Programmer's Guide to Component Mode](working-with-component-mode-programmatically.md)
-+ [Components and EBuses](component-entity-system-pg-components-and-ebuses.md)
-+ [Tick Bus and Components](component-entity-system-pg-tick-bus.md)
-+ [Exposing Custom Components to Track View for Animation](component-entity-system-track-view.md)
-+ [Components and EBuses: Best Practices](component-entity-system-pg-components-ebuses-best-practices.md)
++ [Components and EBuses](/docs/userguide/components/entity-system-pg-components-and-ebuses.md)
++ [Tick Bus and Components](/docs/userguide/components/entity-system-pg-tick-bus.md)
++ [Exposing Custom Components to Track View for Animation](/docs/userguide/components/entity-system-track-view.md)
++ [Components and EBuses: Best Practices](/docs/userguide/components/entity-system-pg-components-ebuses-best-practices.md)

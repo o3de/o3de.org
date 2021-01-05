@@ -33,9 +33,9 @@ title: FBX Settings mesh export
 
    You can choose **Add another mesh** to create additional mesh groups\. A runtime `.cgf` asset will be produced for each mesh group\. A mesh group can contain any number of meshes from the **Select meshes** list\. 
 
-1. Set the properties for each mesh group and add modifiers to each mesh group as required\. For information on **Mesh group** properties and modifiers, see [FBX Settings Meshes tab](fbx-settings-meshes-tab.md)\. 
+1. Set the properties for each mesh group and add modifiers to each mesh group as required\. For information on **Mesh group** properties and modifiers, see [FBX Settings Meshes tab](/docs/userguide/fbx/settings-meshes-tab.md)\. 
 
-1. **Optional** \- Set up PhysX colliders for your meshes\. For more information, see [FBX Settings PhysX export](fbx-physx-export.md) 
+1. **Optional** \- Set up PhysX colliders for your meshes\. For more information, see [FBX Settings PhysX export](/docs/userguide/fbx/physx-export.md) 
 
 1. Choose the **Update** button at the bottom right of the **FBX Settings** window\. A **File progress** window opens to display information about asset processing\. Choose **OK** to close the **File progress** window\. This step creates or updates the `.assetinfo` file\. **Asset Processor** automatically processes the `.fbx` file and generates the runtime `.cgf` files for meshes, `.pxmesh` files for PhysX, and `.mtl` files for materials\. 
 

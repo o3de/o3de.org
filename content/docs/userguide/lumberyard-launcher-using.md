@@ -46,7 +46,7 @@ In Lumberyard version 1\.23 and later, if you intend to create new projects, the
 We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.  
 ![\[Use Lumberyard Setup Assistant to configure Lumberyard, and install software and plugins.\]](/images/userguide/setup/ui-setup-assistant-1.24.png)
 **Note**  
-Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](waf-user-options-and-settings.md)\.
+Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)\.
 **Note**  
 For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](setting-up-system-requirements.md#lumberyard-visual-studio-requirement)\.
 
@@ -54,4 +54,4 @@ For more information about installing and configuring Visual Studio for Lumberya
 
 1. Follow the instructions on each page\.
 
-1. When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. For more information about configuring your project, see [Creating Lumberyard projects](configurator-intro.md)\.
+1. When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. For more information about configuring your project, see [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\.

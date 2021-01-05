@@ -15,10 +15,10 @@ Lumberyard's rendering engine is tightly integrated with Lumberyard Editor, so t
 The Lumberyard rendering technology is designed to take maximum advantage of today's high\-end PC and console operating systems, while maintaining compatibility with older hardware by scaling down graphical features and fidelity without compromising the core visual elements of your scene\.
 
 **Topics**
-+ [Working with camera screen effects](rendering-graphics-cameras.md)
-+ [Temporal Antialiasing and Supersampling](graphics-rendering-anti-aliasing.md)
-+ [Voxel\-based Global Illumination \(SVOGI\)](rendering-graphics-svogi.md)
-+ [Fog Systems](rendering-graphics-fog-intro.md)
-+ [Render Nodes](graphics-rendering-rendernode.md)
-+ [Generating Stars \.dat File](graphics-rendering-stars.md)
-+ [Building DirectX 12 Supported Applications](graphics-rendering-directx.md)
++ [Working with camera screen effects](/docs/userguide/rendering/cameras.md)
++ [Temporal Antialiasing and Supersampling](/docs/userguide/rendering/anti-aliasing.md)
++ [Voxel\-based Global Illumination \(SVOGI\)](/docs/userguide/rendering/svogi.md)
++ [Fog Systems](/docs/userguide/rendering/fog-intro.md)
++ [Render Nodes](/docs/userguide/rendering/rendernode.md)
++ [Generating Stars \.dat File](/docs/userguide/rendering/stars.md)
++ [Building DirectX 12 Supported Applications](/docs/userguide/rendering/directx.md)

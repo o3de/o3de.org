@@ -13,7 +13,7 @@ Supported HMDs include:
 + **OpenVR** – HTC Vive HMD
 
 **Note**  
-Use the **NullVR** Gem to run your level through the HMD framework without a connected VR device\. This is useful for VR graphics debugging\. For more information about this Gem, see [NullVR Gem](gems-system-gem-nullvr.md)\.
+Use the **NullVR** Gem to run your level through the HMD framework without a connected VR device\. This is useful for VR graphics debugging\. For more information about this Gem, see [NullVR Gem](/docs/userguide/gems/builtin/nullvr.md)\.
 
 **To add the Virtual Reality Gem\(s\)**
 

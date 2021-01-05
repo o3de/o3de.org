@@ -14,15 +14,15 @@ title: Debugging Issues
 
 Lumberyard provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
 + [Character skeleton debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-model-debugging.html) – Use the `p_draw_helpers` console variable to debug character skeleton issues\.
-+ [Cinematics debugging](cinematics-debugging.md) – Debug cinematics issues\.
++ [Cinematics debugging](/docs/userguide/cinematics/debugging.md) – Debug cinematics issues\.
 + [Mannequin debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/mannequin-debugging-intro.html) – Debug Mannequin system issues\.
-+ [Particle debugging](particle-debugging.md) – Debug particles\.
-+ [Vegetation debugging](vegetation-debugging.md) – Debug vegetation objects\.
++ [Particle debugging](/docs/userguide/particles/debugging.md) – Debug particles\.
++ [Vegetation debugging](/docs/userguide/vegetation/debugging.md) – Debug vegetation objects\.
 
 **Topics**
 + [Crash logging](#debugging-crash-logging)
 + [Using Console Debug Views](#debugging-debug-views)
-+ [Using the `sys_asserts` Console Variable \(CVAR\)](debugging-using-asserts.md)
++ [Using the `sys_asserts` Console Variable \(CVAR\)](/docs/userguide/debugging/using-asserts.md)
 
 ## Crash logging<a name="debugging-crash-logging"></a>
 

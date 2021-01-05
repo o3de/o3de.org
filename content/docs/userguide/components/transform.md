@@ -41,7 +41,7 @@ Entities that can't be moved at run time\. Some systems in Lumberyard treat stat
 The **Transform** component has following network sync options:
 
 **Sync to replicas**  
-Transform component syncs in a networked game\. If you enable this option, you must also add the [Network Binding](component-network-binding.md) component\. Otherwise, the entity is not replicated and the interpolation options don't apply\. 
+Transform component syncs in a networked game\. If you enable this option, you must also add the [Network Binding](/docs/userguide/components/network-binding.md) component\. Otherwise, the entity is not replicated and the interpolation options don't apply\. 
 
 **Position Interpolation**  
 The smoothing of position between network updates and interruptions\. This is useful if your objects change location and you notice visual jitter or sudden changes in orientation due to network conditions\. 
@@ -56,7 +56,7 @@ Scale interpolation is not supported in the **Transform** component\.
 
 **TransformBus** is the request bus for the **Transform** component\. An entity's transform is the translation, rotation, and scale information\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
@@ -540,7 +540,7 @@ Boolean
 
 **TransformNotificationBus** is the notification bus for the **Transform** component\. Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### OnTransformChanged<a name="on-transform-changed"></a>
 

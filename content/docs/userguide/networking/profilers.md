@@ -13,7 +13,7 @@ You can use the Lumberyard Profiler tool to examine how your game uses network b
 
 ## Prerequisites<a name="network-profilers-knowledge-prerequisites"></a>
 
-This topic assumes familiarity with Lumberyard networking and the Lumberyard Profiler tool\. For information on Lumberyard networking, see [Using Lumberyard Networking](network-intro.md)\. For an introduction to the Profiler tool, see [Profiler](profiler-intro.md)\.
+This topic assumes familiarity with Lumberyard networking and the Lumberyard Profiler tool\. For information on Lumberyard networking, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\. For an introduction to the Profiler tool, see [Profiler](/docs/userguide/debugging/profiling/intro.md)\.
 
 **Topics**
 + [Prerequisites](#network-profilers-knowledge-prerequisites)

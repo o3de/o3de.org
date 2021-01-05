@@ -20,9 +20,9 @@ Lumberyard Editor provides a toolbar that allows you to easily access various ed
 You can access Lumberyard tools and features using one of the following methods:
 + Toolbar buttons
 + Tools menu
-+ [Keyboard shortcuts](lumberyard-editor-shortcut-keys.md)
++ [Keyboard shortcuts](/docs/userguide/editor/shortcut-keys.md)
 
-For information about the bottom toolbar, see [Using the Bottom Toolbar](lumberyard-editor-toolbar-bottom.md)\.
+For information about the bottom toolbar, see [Using the Bottom Toolbar](/docs/userguide/editor/toolbar-bottom.md)\.
 
 ## EditMode Toolbar<a name="lumberyard-editor-toolbars-editmode"></a>
 

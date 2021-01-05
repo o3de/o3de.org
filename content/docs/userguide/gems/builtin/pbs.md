@@ -5,7 +5,7 @@ title: Physically Based Shaders (PBS) Gem
 ---
 # Physically Based Shaders \(PBS\) Gem<a name="gems-system-gem-pbs"></a>
 
-The Physically Based Shader \(PBS\) Reference Gem is a simple collection of 32 example materials that you can apply to a **[Mesh](component-static-mesh.md#component-static-mesh-properties)** component\. They demonstrate a wide range of surface material types that make use of the [Illum Shader](shader-ref-illum.md)\. These materials range from matte to shiny and metallic or reflective\. For more information about rendering physically based materials, see [Shader Rendering System](mat-shaders-intro.md)\.
+The Physically Based Shader \(PBS\) Reference Gem is a simple collection of 32 example materials that you can apply to a **[Mesh](component-static-mesh.md#component-static-mesh-properties)** component\. They demonstrate a wide range of surface material types that make use of the [Illum Shader](/docs/userguide/shaders/illum.md)\. These materials range from matte to shiny and metallic or reflective\. For more information about rendering physically based materials, see [Shader Rendering System](/docs/userguide/materials/shaders/intro.md)\.
 
 The PBS Reference Gem is enabled by default in new projects and is also enabled in the default **Samples Project**\. You use the **Material Editor** to preview, modify, and apply a material to a mesh\.
 
@@ -17,9 +17,9 @@ The following procedure describes a very simple example work flow for applying a
 
 1. [Create a new entity](creating-entity.md)\.
 
-1. [Add](component-working-adding.md) a [Mesh](component-static-mesh.md#component-static-mesh-properties) component to your entity\.
+1. [Add](/docs/userguide/components/working-adding.md) a [Mesh](component-static-mesh.md#component-static-mesh-properties) component to your entity\.
 
-1. In the [**Entity Inspector**](component-entity-inspector.md), in the **Mesh** component, next to the **Mesh Asset** property, click '**…**' to specify an asset\. 
+1. In the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md), in the **Mesh** component, next to the **Mesh Asset** property, click '**…**' to specify an asset\. 
 
    In the **Pick Static Mesh** dialog, browse to `\SamplesProject\Objects\Primitives`\. Pick one of the `.cgf` files in that directory\. Click **OK**\.  
 ![\[The file cylinder_001.cgf is selected in the Pick Static Mesh dialog\]](/images/userguide/gems/gems-system-gem-pbs-1.png)

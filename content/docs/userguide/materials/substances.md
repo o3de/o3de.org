@@ -53,7 +53,7 @@ Using Substance Editor, you can edit Substance material properties and visualize
 ![\[\]](/images/userguide/mat-substance-editor.png)
 
 Here are some things to keep in mind when working with Substances in Substance Editor:
-+ The Substance Gem needs to be enabled first for the project using [Creating Lumberyard projects](configurator-intro.md)\. For more information on Gems, see [Add modular features and assets with Gems](gems-system-gems.md)\.
++ The Substance Gem needs to be enabled first for the project using [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\. For more information on Gems, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 + When importing substance files, you must restart Lumberyard Editor before substance textures are rendered correctly\.
 + A `.smtl` \(substance material\) file and a `.sub` \(substance texture\) file are generated in the same directory location as the imported `.sbsar` for applying the substance material or substance textures to objects\.
 + By default, an `.smtl` file will inherit the `.sub` files in the appropriately matching channels based on the outputs in the published `.sbsar` from Substance Designer\. For example, a diffuse output texture will map into the diffuse channel for the `.smtl` file\.

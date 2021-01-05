@@ -38,7 +38,7 @@ The following file formats are used for static geometry:
 
 **Material and Texture File Types**
 
-The following files are used for the **Material Editor**\. For more information, see [Working with shaders and materials](mat-intro.md)\.
+The following files are used for the **Material Editor**\. For more information, see [Working with shaders and materials](/docs/userguide/materials/intro.md)\.
 
 
 ****  
@@ -51,7 +51,7 @@ The following files are used for the **Material Editor**\. For more information,
 
 **Animation File Types**
 
-The following file types are used for the **Animation Editor**\. For more information, see [Animation Editor File Types](char-animation-editor-file-types.md)\. 
+The following file types are used for the **Animation Editor**\. For more information, see [Animation Editor File Types](/docs/userguide/animation/character-editor/file-types.md)\. 
 
 
 ****  
@@ -66,7 +66,7 @@ The following file types are used for the **Animation Editor**\. For more inform
 
 **Audio Asset File Types**
 
-The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](audio-intro.md)\.
+The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](/docs/userguide/audio/intro.md)\.
 
 
 ****  

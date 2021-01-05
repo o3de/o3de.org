@@ -75,7 +75,7 @@ The `CollectibleManagerComponent` spawns collectibles in response to the destruc
 
 ### Spawn Manager<a name="sample-project-multiplayer-enhanced-architecture-spawn-manager"></a>
 
-The `SpawnManagerComponent` is a wrapper for the **[Spawner](component-spawner.md)** that allows the sample to spawn objects in complex ways without requiring the use of multiple spawner components\. The spawn manager facilitates the automation of variation among spawned entities\. For example, when an asteroid is spawned, a general type can be specified and the specific type randomly selected in the spawn manager from the supported types\. This removes the need to manually specify a type with each spawn request\.
+The `SpawnManagerComponent` is a wrapper for the **[Spawner](/docs/userguide/components/spawner.md)** that allows the sample to spawn objects in complex ways without requiring the use of multiple spawner components\. The spawn manager facilitates the automation of variation among spawned entities\. For example, when an asteroid is spawned, a general type can be specified and the specific type randomly selected in the spawn manager from the supported types\. This removes the need to manually specify a type with each spawn request\.
 
 This approach also promotes ease of maintenance because it enables a single object to handle all objects of a single type\. For example, all asteroids are defined in a single place and are identified by a specific tag \(`SmallAsteroid`, `MediumAsteroid`, or `LargeAsteroid`\)\. This limits the number of interactions required among the objects and the amount of information that must be exchanged\.
 
@@ -89,7 +89,7 @@ The sample uses a server\-authoritative architecture\. In the sample, client\-si
 
 When each client joins the session, it creates an object on the server that represents the player\. The object provides information relevant to player configuration\. The client maintains full control over player configuration, which the server reads from the object\. The player object consists of a `GamePlayerComponent` and a related `GamePlayerChunk`\.
 + `GamePlayerComponent` – The `GamePlayerComponent` represents the player on the server\. The component is owned by the client and replicated to the server\. This component handles local player configuration such as the player's name and the ship to spawn\. The user can change this information during gameplay\. These changes must be reflected to the server\.
-+ `GamePlayerChunk` – The [Replica Chunks](network-replicas-chunks.md) that represents player information on the server\. The `GamePlayerChunk` specifies the display name of the player and the ship that the player wants to spawn\.
++ `GamePlayerChunk` – The [Replica Chunks](/docs/userguide/networking/replicas-chunks.md) that represents player information on the server\. The `GamePlayerChunk` specifies the display name of the player and the ship that the player wants to spawn\.
 
 ### Ship Object<a name="sample-project-multiplayer-enhanced-architecture-network-ship-object"></a>
 
@@ -99,4 +99,4 @@ The ship object consists of a `ShipComponent` and a related `ShipComponentReplic
 
 ### See Also<a name="sample-project-multiplayer-enhanced-architecture-network-see-also"></a>
 
-For more information about networking in the Multiplayer sample, see [Multiplayer Sample Network Features](sample-project-multiplayer-enhanced-network-features.md)\.
+For more information about networking in the Multiplayer sample, see [Multiplayer Sample Network Features](/docs/userguide/samples/projects/multiplayer-enhanced-network-features.md)\.

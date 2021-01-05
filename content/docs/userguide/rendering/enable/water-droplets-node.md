@@ -6,9 +6,9 @@ title: Enable Water Droplets
 ---
 # Enable Water Droplets<a name="enable-water-droplets-node"></a>
 
-Apply a water effect that appears from various sources on the screen\. Unlike the **[Enable Rain Drops](enable-rain-drops-node.md)** node, this node simulates a splash of water thrown on the screen\. For example, you can use this node when the camera leaves the water\.
+Apply a water effect that appears from various sources on the screen\. Unlike the **[Enable Rain Drops](/docs/userguide/rendering/enable/rain-drops-node.md)** node, this node simulates a splash of water thrown on the screen\. For example, you can use this node when the camera leaves the water\.
 
-To disable the effect, see [Disable Water Droplets](disable-water-droplets-node.md)\.
+To disable the effect, see [Disable Water Droplets](/docs/userguide/rendering/disable/water-droplets-node.md)\.
 
 **Contents**
 + [Inputs](#enable-water-droplets-node-input)

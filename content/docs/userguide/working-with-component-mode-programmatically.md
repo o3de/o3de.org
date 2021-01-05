@@ -29,4 +29,4 @@ For more information, see [Editing Components in the Viewport](edit-mode-for-com
 + [Tips for Working with Component Mode](additional-tips-for-component-mode.md)
 
 **Note**  
-Before you start, you should be familiar with the component entity framework and have written a component\. For more information, see the [Programmer's Guide to Entities and Components](component-entity-system-pg-intro.md)\.
+Before you start, you should be familiar with the component entity framework and have written a component\. For more information, see the [Programmer's Guide to Entities and Components](/docs/userguide/components/entity-system-pg-intro.md)\.

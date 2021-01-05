@@ -10,6 +10,6 @@ The Script Canvas gem enables Lumberyard's visual scripting environment\. With t
 
 ![\[Enable the Script Canvas gem for your game project to enable the Script Canvas editor.\]](/images/userguide/gems/gem-system-gem-script-canvas.png)
 
-To enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](script-canvas-intro.md)\.
+For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)\.

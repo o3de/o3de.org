@@ -13,7 +13,7 @@ title: Simple Motion
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-You can use the **Simple Motion** component to play a motion without an animation graph\. Add this component to the **[Actor](component-actor.md)** component to use a single motion for your actor\. For complex motions, see the **[AnimGraph](component-animgraph.md)** component\.
+You can use the **Simple Motion** component to play a motion without an animation graph\. Add this component to the **[Actor](/docs/userguide/components/actor.md)** component to use a single motion for your actor\. For complex motions, see the **[AnimGraph](/docs/userguide/components/animgraph.md)** component\.
 
 For creating cinematics with the **Simple Motion** component, see [Creating Character Animations with the Simple Motion Component](create-cinematics-with-simple-motion-animations-in-track-view-editor.md)\.
 

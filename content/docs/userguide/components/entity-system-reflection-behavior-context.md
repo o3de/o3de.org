@@ -15,7 +15,7 @@ You can use the behavior context to bind the following C\+\+ constructs for scri
 + [Constants](#component-entity-system-reflection-behavior-context-constants)
 + [Enums](#component-entity-system-reflection-behavior-context-enums)
 
-In addition to the bindings for C\+\+ constructs, the behavior context provides bindings for Lumberyard's [EBus](ebus-intro.md)\.
+In addition to the bindings for C\+\+ constructs, the behavior context provides bindings for Lumberyard's [EBus](/docs/userguide/programming/ebus/intro.md)\.
 + [EBus](#component-entity-system-reflection-behavior-context-ebus)
 + [Event Handlers](#component-entity-system-reflection-behavior-context-ebus-event-handlers)
 + [Events](#component-entity-system-reflection-behavior-context-ebus-events)
@@ -199,7 +199,7 @@ behaviorContext->Enum<(int)GlobalClassEnum::Value2>("Value2");
 
 The ability to bind an EBus to the behavior context enables scripting to become driven and modular\. The two main use cases for reflecting EBuses to the behavior context are event handlers and events\.
 
-Because EBuses are highly configurable, the features that become available depend on how the EBus was created\. For more information, see the [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+Because EBuses are highly configurable, the features that become available depend on how the EBus was created\. For more information, see the [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### Event Handlers<a name="component-entity-system-reflection-behavior-context-ebus-event-handlers"></a>
 
@@ -289,6 +289,6 @@ behaviorContext.EBus<TestBus>("TestBus")->
 local result = TestBus.Broadcast.GetSum1(1)
 ```
 
-For information on addressing EBuses, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For information on addressing EBuses, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-For more information about the behavior context, see [Behavior Context in Depth](component-entity-system-behavior-context-in-depth.md)\.
+For more information about the behavior context, see [Behavior Context in Depth](/docs/userguide/components/entity-system-behavior-context-in-depth.md)\.

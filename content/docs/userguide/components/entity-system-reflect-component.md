@@ -94,9 +94,9 @@ if (edit)
 ```
 
 Lumberyard has reflection contexts for different purposes, including the following:
-+ [Serialization Context](component-entity-system-reflection-serialization-context.md) – Contains reflection data for serialization and construction of objects\.
-+ [Edit Context](component-entity-system-reflection-edit-context.md) – Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
-+ [Behavior Context](component-entity-system-reflection-behavior-context.md) – Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](script-canvas-intro.md), or other external sources\.
++ [Serialization Context](/docs/userguide/components/entity-system-reflection-serialization-context.md) – Contains reflection data for serialization and construction of objects\.
++ [Edit Context](/docs/userguide/components/entity-system-reflection-edit-context.md) – Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
++ [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md) – Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md), or other external sources\.
 + `NetworkContext` – Contains reflection for networking purposes, including marshaling, quantization, and extrapolation\.
 
 **Note**  

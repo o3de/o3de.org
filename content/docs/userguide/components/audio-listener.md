@@ -40,7 +40,7 @@ Only one audio listener is supported in a game\. You can add the **Audio Listene
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### SetRotationEntity<a name="audio-listener-ebus-setrotationentity"></a>
 

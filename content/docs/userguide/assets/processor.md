@@ -8,16 +8,16 @@ title: Using &asset-processor;
 
 Asset Processor is a utility that runs in the background to detect changes to your asset files\. When Asset Processor detects new or updated asset files, it launches the Resource Compiler \(`Rc.exe` for FBX and ABC files, `AssetBuilder.exe` for all other types\), processes the assets, and then places them in the cache\. Asset Processor then notifies all running game or tool instances that the assets are updated\. The game can then reload the updated assets\.
 
-As part of Asset Processing, the Asset Processor generates and stores product and source dependencies \. In this context, a dependency defines how a one product or source asset depends on another asset\. A given asset may have 0 or more dependencies, and these dependencies are used by features such as the [Asset Bundler](asset-bundler-intro.md) in order to determine which assets must be included when you bundle your game for release\.
+As part of Asset Processing, the Asset Processor generates and stores product and source dependencies \. In this context, a dependency defines how a one product or source asset depends on another asset\. A given asset may have 0 or more dependencies, and these dependencies are used by features such as the [Asset Bundler](/docs/userguide/assets/bundle/intro.md) in order to determine which assets must be included when you bundle your game for release\.
 
 **Topics**
 + [Modifying the Asset Processor Configuration File](#asset-pipeline-processor-config)
 + [Using the Asset Processor Batch Program](#asset-pipeline-processor-batch-processing)
-+ [Asset Processor Interface](asset-pipeline-processor-ui.md)
-+ [Enabling Asset Processor's Faster Scanning Mode](asset-processor-faster-scanning.md)
-+ [Importing Assets into Lumberyard](asset-pipeline-importing.md)
-+ [Using Resource Compiler](asset-pipeline-rc.md)
-+ [Debugging Asset Processor](asset-processor-debugging.md)
++ [Asset Processor Interface](/docs/userguide/assets/processor-ui.md)
++ [Enabling Asset Processor's Faster Scanning Mode](/docs/userguide/assets/processing/faster-scanning.md)
++ [Importing Assets into Lumberyard](/docs/userguide/assets/importing.md)
++ [Using Resource Compiler](/docs/userguide/assets/rc.md)
++ [Debugging Asset Processor](/docs/userguide/assets/processing/debugging.md)
 
 Asset Processor enables games to run on other platforms without deploying assets to that platform\. Instead, the assets are accessed from the asset cache on a connected Windows or macOS system\. With Asset Processor, you can also run games that use someone else's assets\.
 
@@ -41,7 +41,7 @@ You don't need to close Asset Processor when you get the latest updates from sou
 
 However, if you aren't using the game or Lumberyard Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar\.
 
-Asset Processor can also serve files directly to running console games so that the assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](asset-pipeline-live-reloading.md)\.
+Asset Processor can also serve files directly to running console games so that the assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md)\.
 
 ## Modifying the Asset Processor Configuration File<a name="asset-pipeline-processor-config"></a>
 
@@ -54,7 +54,7 @@ Use the `AssetProcessorPlatformConfig.ini` configuration file \(located in the `
 
 To add game\-specific overrides, you can add a file named `AssetProcessorGamePlatformConfig.ini` to your game assets directory\. This file is read after the root configuration file and can have additional game\-specific settings for the ignore list, platforms, and file types\.
 
-For more information about these configuration files, see [Configuring the Asset Pipeline](asset-pipeline-configuring.md)\.
+For more information about these configuration files, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 ## Using the Asset Processor Batch Program<a name="asset-pipeline-processor-batch-processing"></a>
 

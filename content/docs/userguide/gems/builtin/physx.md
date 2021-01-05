@@ -10,4 +10,4 @@ Lumberyard's PhysX system acts upon entities to create realistic physical effect
 
 ![\[PhysX gem in Lumberyard.\]](/images/userguide/gems/gems-system-physx.png)
 
-For more information, see [Simulating physics behavior with the PhysX system](physx-intro.md)\.
+For more information, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.

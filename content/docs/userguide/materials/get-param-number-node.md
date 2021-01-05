@@ -23,7 +23,7 @@ Returns a material parameter as a numerical value\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 | Material | Material |  The material to query\.  | 
-| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](material-param-names.md)\.  | 
+| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 
 ## Outputs<a name="material-get-param-number-node-output"></a>
 

@@ -16,13 +16,13 @@ title: Lightning
 You can use the **Lightning** component to create a single lightning bolt effect\. In Lumberyard Editor, you can add the **Lightning** component to entities and trigger them later from Lua or Script Canvas\. For best results, use the **Lightning** component as part of a dynamic slice along with a spawning system\. After the **Lightning** component finishes its effect, the entity is automatically destroyed\. This makes it easier for you to spawn entities with a **Lightning** component, without needing manually to manage the lifetime of each entity\.
 
 **Note**  
-To enable the **Lightning** component, you must enable the Lightning gem\. For more information, see [Lightning Arc Gem](gems-system-gem-lightning-arc.md)\.
+To enable the **Lightning** component, you must enable the Lightning gem\. For more information, see [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md)\.
 
 The **Lightning** component does not produce visual effects on its own\. The component schedules timings with a specified set of entities\. You can use the following components to create the lightning bolt effect:
-+  **[Particle](component-particle.md)** component emitter to create the lightning bolt\.
-+ A **Light** component for the dynamic lighting and shadowing\. You can use any of the light components, but the **[Point Light](component-point-light.md)** component is recommended\.
-+ **[Sky Highlight](component-sky-highlight.md)** component for the bright flash in the sky\.
-+ **[Audio Trigger](component-audio-trigger.md)** and **[Audio Proxy](component-audio-proxy.md)** components for the rumbling of thunder\.
++  **[Particle](/docs/userguide/components/particle.md)** component emitter to create the lightning bolt\.
++ A **Light** component for the dynamic lighting and shadowing\. You can use any of the light components, but the **[Point Light](/docs/userguide/components/point-light.md)** component is recommended\.
++ **[Sky Highlight](/docs/userguide/components/sky-highlight.md)** component for the bright flash in the sky\.
++ **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** and **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** components for the rumbling of thunder\.
 + The **Lightning** component to manage the lifetimes and intensities of the other entities to create a flash of lightning\.
 
 **Example**  
@@ -81,7 +81,7 @@ The particle effect lasts for the specified duration; the lighting effects can f
 The **Lightning** component has the following lightning bolt options:
 
 **Particle Entity**  
-\(Optional\) An entity with a **[Particle](component-particle.md)** component that creates a lightning bolt effect\. This particle can be emitted multiple times depending on the duration of the effect\.
+\(Optional\) An entity with a **[Particle](/docs/userguide/components/particle.md)** component that creates a lightning bolt effect\. This particle can be emitted multiple times depending on the duration of the effect\.
 
 **Size Variation**  
 Specifies how much of the particle entity's global size parameter is randomly modified\. For more information, see [SetParticleSizeVariation](#lightning-ebus-set-particle-size-variation)\.
@@ -99,7 +99,7 @@ The **Lightning** component has following light options:
 
 **Light Entity**  
 \(Optional\) An entity with a **Light** component that creates dynamic lightning\. The properties of the **Light** component are the same, but its intensity and radius are modified\.   
-\(**[Point Light](component-point-light.md) is recommended\)**
+\(**[Point Light](/docs/userguide/components/point-light.md) is recommended\)**
 
 **Radius Variation**  
 Specifies how much the light's radius is randomly modified\. For more information, see [SetLightRadiusVariation](#lightning-ebus-set-light-radius-variation)\.
@@ -112,7 +112,7 @@ Specifies how much the light's intensity is randomly modified\. For more informa
 The **Lightning** component has following audio options:
 
 **Audio Entity**  
-An entity with the **[Audio Trigger](component-audio-trigger.md)** and **[Audio Proxy](component-audio-proxy.md)** components attached\. These components are required if you want to enable audio\. You can also add an optional **[Audio Rtpc](component-audio-rtpc.md)** component\. The audio components plays the audio, depending on the distance away from the listener\.
+An entity with the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** and **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** components attached\. These components are required if you want to enable audio\. You can also add an optional **[Audio Rtpc](/docs/userguide/components/audio-rtpc.md)** component\. The audio components plays the audio, depending on the distance away from the listener\.
 
 **Speed of Sound Scale**  
 Specifies how long it takes for audio to arrive at the listener, in seconds\. For more information, see [SetSpeedOfSoundScale](#lightning-ebus-set-speed-of-sound-scale)\.
@@ -121,7 +121,7 @@ Specifies how long it takes for audio to arrive at the listener, in seconds\. Fo
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Lightning** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### StartEffect<a name="lightning-ebus-start-effect"></a>
 
@@ -193,7 +193,7 @@ Yes
 
 ### SetLightningParticleEntity<a name="lightning-ebus-set-lightning-particle-entity"></a>
 
-Sets the entity that contains the **[Particle](component-particle.md)** component that is used for the lightning particle\.
+Sets the entity that contains the **[Particle](/docs/userguide/components/particle.md)** component that is used for the lightning particle\.
 
 The entity is destroyed when the effect finishes\.
 
@@ -208,7 +208,7 @@ Yes
 
 ### GetLightningParticleEntity<a name="lightning-ebus-get-lightning-particle-entity"></a>
 
-Returns the entity that contains the **[Particle](component-particle.md)** component\.
+Returns the entity that contains the **[Particle](/docs/userguide/components/particle.md)** component\.
 
 **Parameters**  
 None
@@ -279,7 +279,7 @@ Yes
 
 Sets the entity that has the audio component for this effect\.
 
-To enable audio, the entity must have the **[Audio Trigger](component-audio-trigger.md)** and **[Audio Proxy](component-audio-proxy.md)** components and an optional **[Audio Rtpc](component-audio-rtpc.md)** component\. If an audio component is missing, the lightning effect may not work as expected\.
+To enable audio, the entity must have the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** and **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** components and an optional **[Audio Rtpc](/docs/userguide/components/audio-rtpc.md)** component\. If an audio component is missing, the lightning effect may not work as expected\.
 
 The entity is destroyed when the effect finishes\.
 
@@ -398,7 +398,7 @@ Yes
 
 Sets the amount of random variation to apply to the particle's size\.
 
-This variation is a percentage of the **[Particle](component-particle.md)** component's **Global size scale** parameter\. A value of `0.2` means that between –20% and 20% of the particle's global size value is added back to the size of the emitted particles\.
+This variation is a percentage of the **[Particle](/docs/userguide/components/particle.md)** component's **Global size scale** parameter\. A value of `0.2` means that between –20% and 20% of the particle's global size value is added back to the size of the emitted particles\.
 
 For example, the particle size is `1.0`, and variation is `0.5`; the range of the light radius is: 1\.0 \+/– \(1\.0 \* 0\.5\) or 1\.0 \+/– 50% of 1\.0\.
 

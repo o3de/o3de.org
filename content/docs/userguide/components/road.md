@@ -15,9 +15,9 @@ title: Road
 
 Use the **Road** component to create paths in Lumberyard Editor\. You can create roads that follow the curvature of existing terrain by applying a texture over the terrain texture\. You can also use the **Align heightmap** feature with the **Road** component to shape the terrain to the height and curvature of the road you placed\.
 
-To enable the **Road** component, you must enable the **Roads and Rivers** gem\. For more information, see [Add modular features and assets with Gems](gems-system-gems.md)\.
+To enable the **Road** component, you must enable the **Roads and Rivers** gem\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
-The **Road** requires the **[Spline](component-spline.md)** component to shape its path along the X, Y, and Z axes\. After you place a road, you can edit the points in the road's spline\.
+The **Road** requires the **[Spline](/docs/userguide/components/spline.md)** component to shape its path along the X, Y, and Z axes\. After you place a road, you can edit the points in the road's spline\.
 
 **Note**  
 You can rebuild roads at runtime by modifying the spline\. However, this method can be slow\. We recommended that you avoid modifying the spline continuously at runtime\.
@@ -65,11 +65,11 @@ See the following **Road** properties:
 
 1. [Create an entity\.](creating-entity.md)
 
-1. [Add](component-working-adding.md) the **Road** component\.
+1. [Add](/docs/userguide/components/working-adding.md) the **Road** component\.
 
-1. Add the **[Spline](component-spline.md)** component\.
+1. Add the **[Spline](/docs/userguide/components/spline.md)** component\.
 
-   The **Spline** component defines the path and shape of the road\. For information about how to add, remove, and edit individual points, see [Spline](component-spline.md)\.
+   The **Spline** component defines the path and shape of the road\. For information about how to add, remove, and edit individual points, see [Spline](/docs/userguide/components/spline.md)\.
 
 The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](component-spline.md#spline-type-bezier) **Spline Type**\.
 
@@ -94,9 +94,9 @@ For more granular control over the road's width, you can adjust individual point
 
 ## Setting Road Material Properties<a name="setting-road-materials"></a>
 
-Roads are [Decals](component-decal.md) placed along a spline\. This makes the material setup of a road similar to that of decals\.
+Roads are [Decals](/docs/userguide/components/decal.md) placed along a spline\. This makes the material setup of a road similar to that of decals\.
 
-The road material must use the [Illum Shader](shader-ref-illum.md) and should also enable the **Decal** and **Vertex Colors** parameters in the **Shader Generation Params**\.
+The road material must use the [Illum Shader](/docs/userguide/shaders/illum.md) and should also enable the **Decal** and **Vertex Colors** parameters in the **Shader Generation Params**\.
 
 **To open the **Material Editor****
 
@@ -123,7 +123,7 @@ You can use roads to modify the shape of the terrain\.
 
 1. [Create a road\.](#creating-a-road)
 
-1. Manipulate the individual vertices to shape the road\. For more information, see [Spline](component-spline.md)\.
+1. Manipulate the individual vertices to shape the road\. For more information, see [Spline](/docs/userguide/components/spline.md)\.
 
 1. In the **Road** component's properties, under **Terrain Editing**, set the **Border width**\. This parameter defines the width of the slope at the edges of the road\.
 
@@ -173,7 +173,7 @@ The following image shows the road with **Erase width** set to `1` and **Erase v
 
 Use the following request functions with the `RoadRequestBus` EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  
@@ -187,7 +187,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Use the following request functions with the `RoadsAndRiversGeometryRequestsBus` EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

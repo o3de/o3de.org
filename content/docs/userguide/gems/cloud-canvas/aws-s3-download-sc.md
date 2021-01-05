@@ -102,7 +102,7 @@ Now you are ready to attach the script canvas to an entity and test it\.
 
 1. In **Entity Inspector**, click **Add Component**\.
 
-1. Under **Scripting**, click **Script Canvas** to add a **[Script Canvas](component-script-canvas.md)** component to the entity\.
+1. Under **Scripting**, click **Script Canvas** to add a **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to the entity\.
 
 1. Under **Script Canvas**, click the browse button \(**\.\.\.**\)\.
 

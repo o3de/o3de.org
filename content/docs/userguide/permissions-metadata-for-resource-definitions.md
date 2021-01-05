@@ -81,4 +81,4 @@ Each Cloud Canvas `Permission` metadata object can have the following properties
 
 ## See Also<a name="cloud-canvas-resource-definitions-permissions-metadata-see-also"></a>
 
-For an overview of security in Cloud Canvas Resource Manager, see [Understanding the Resource Manager Security System](cloud-canvas-rm-security.md)\.
+For an overview of security in Cloud Canvas Resource Manager, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.

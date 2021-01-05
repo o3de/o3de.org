@@ -8,7 +8,7 @@ title: Set Skybox Material
 
 Apply a specified material to the skybox to give the sky a different look\. The material must be a skybox material\. 
 
-For more information, see [Creating Static Skyboxes](sky-skyboxes-intro.md)\.
+For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxes-intro.md)\.
 
 **Contents**
 + [Input](#set-sky-box-material-input)

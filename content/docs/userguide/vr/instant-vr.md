@@ -21,7 +21,7 @@ The VR functionality provided in this slice includes:
 + Teleportation using a navigation mesh to define a valid area
 + Generation of a starting navigation area
 
-The **instantVR** slice is part of the Virtual Reality Project sample level\. Follow the instructions in [VirtualRealityProject](sample-project-virtual-reality.md) to download, install, and select the Virtual Reality Project before performing the following procedure\.
+The **instantVR** slice is part of the Virtual Reality Project sample level\. Follow the instructions in [VirtualRealityProject](/docs/userguide/samples/projects/virtual-reality.md) to download, install, and select the Virtual Reality Project before performing the following procedure\.
 
 **To use the **instantVR** slice**
 

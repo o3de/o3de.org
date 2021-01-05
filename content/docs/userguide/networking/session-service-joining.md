@@ -6,7 +6,7 @@ title: Joining a Session
 # Joining a Session<a name="network-session-service-joining"></a>
 
 You have two ways to join a session:
-+ By [Searching for a Session](network-session-service-searching.md) and using a `GridMate::SearchInfo` object from the results\.
++ By [Searching for a Session](/docs/userguide/networking/session-service-searching.md) and using a `GridMate::SearchInfo` object from the results\.
 + Directly to an existing game session by using a `GridMate::SessionIdIffo` object\.
 
 Regardless of the method, a session is joined using one of the overloaded `IGridMate::JoinSession()` functions after the session service has been started\.

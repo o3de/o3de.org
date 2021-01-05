@@ -30,7 +30,7 @@ A Text\-to\-Speech Gem resource group contains the following resources\.
 
 **characterdefs \(Amazon S3 bucket\)** – An Amazon S3 bucket that contains `.json` character definition files\. A character is a logical grouping of settings \(including language and voice\) that is referenced when using Amazon Polly on data submitted to `SpeechLibTable`\.
 
-**Service API** \- An Amazon API Gateway that the game client interacts with\. Only two API operations are accessible by game clients: one for generating speech audio, and one for generating speech marks for lip synchronization\. The remaining API operations are accessible only from the Cloud Gem Portal and generate speech on Amazon Polly\. To avoid generating text\-to\-speech content at run time, you can add the speech files to your game's asset directory\. For a listing of service API operations, see [Text\-to\-Speech Cloud Gem Service API Reference](cloud-canvas-cloud-gem-text-to-speech-service-api.md)\.
+**Service API** \- An Amazon API Gateway that the game client interacts with\. Only two API operations are accessible by game clients: one for generating speech audio, and one for generating speech marks for lip synchronization\. The remaining API operations are accessible only from the Cloud Gem Portal and generate speech on Amazon Polly\. To avoid generating text\-to\-speech content at run time, you can add the speech files to your game's asset directory\. For a listing of service API operations, see [Text\-to\-Speech Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/text-to-speech-service-api.md)\.
 
 **ttscache** – An Amazon S3 bucket that holds all previously generated speech from Amazon Polly\. All speech generation requests check for a matching file in this cache before they call the Amazon Polly service\.
 
@@ -49,7 +49,7 @@ The `SpeechComponent` \(`SpeechComponent.h`\) implements the `TextToSpeechPlayba
 The `CloudGemTextToSpeechClientComponent` \(`CloudGemTextToSpeechClientComponent.h`\) enables the client to communicate with the AWS infrastructure and services\.
 
 **Note**  
-Starting in version 1\.12, Lumberyard uses [Animation Editor](char-intro.md) to implement lip synchronization\. For details, see [Lip Synchronization with EMotion FX](cloud-canvas-cloud-gem-text-to-speech-emotionfx.md)\.
+Starting in version 1\.12, Lumberyard uses [Animation Editor](char-intro.md) to implement lip synchronization\. For details, see [Lip Synchronization with EMotion FX](/docs/userguide/gems/cloud-canvas/text-to-speech-emotionfx.md)\.
 
 ## Text\-to\-Speech Troubleshooting Features<a name="cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting"></a>
 
@@ -57,4 +57,4 @@ The Cloud Gem Portal **REST Explorer** and **Log** tabs offer troubleshooting ca
 
 ![\[REST explorer and logging features\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-details-2.png)
 
-For information about the paths that you can use in REST explorer, see [Text\-to\-Speech Cloud Gem Service API Reference](cloud-canvas-cloud-gem-text-to-speech-service-api.md)\.
+For information about the paths that you can use in REST explorer, see [Text\-to\-Speech Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/text-to-speech-service-api.md)\.

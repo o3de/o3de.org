@@ -8,7 +8,7 @@ title: Setting up Wwise LTX
 
 Lumberyard includes Audiokinetic Wwise LTX, which is an exclusive, free version of the Audiokinetic Wwise audio middleware\. Sound designers and composers can use Wwise LTX to work independently from the engineering team and author rich soundscapes for your games\.
 
-If your game requires advanced features, you can upgrade to the full version of Wwise\. For more information, see [Upgrading Wwise LTX to the Full Version](audio-wwise-upgrade.md)\.
+If your game requires advanced features, you can upgrade to the full version of Wwise\. For more information, see [Upgrading Wwise LTX to the Full Version](/docs/userguide/audio/wwise-upgrade.md)\.
 
 **Topics**
 + [Installing Wwise LTX Authoring Tool](#audio-installing-wwise)
@@ -59,7 +59,7 @@ To run the Wwise LTX Authoring Tool, you must first open or create a project\. T
 
 1. Alternatively, if you are not using the Samples Project or the Starter Game project, you can choose **New** in the **Project Launcher** dialog box to create a Wwise LTX project\.
 
-   For more information about setting up Wwise for your game project, see [Setting up a Wwise Project](audio-wwise-project-setting-up.md)\.
+   For more information about setting up Wwise for your game project, see [Setting up a Wwise Project](/docs/userguide/audio/wwise-project-setting-up.md)\.
 
 ## Accessing Wwise LTX Documentation<a name="audio-wwise-using-documentation"></a>
 

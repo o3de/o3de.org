@@ -23,7 +23,7 @@ Sets the sun's longitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 | Longitude | Number |  Sun longitude value to specify\.  | 
-| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this input to make sudden changes to the sun position\. For more information, see [Environment Nodes](script-canvas-environment-nodes.md)\.  | 
+| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this input to make sudden changes to the sun position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
 
 ## Outputs<a name="set-sun-longitude-node-output"></a>
 

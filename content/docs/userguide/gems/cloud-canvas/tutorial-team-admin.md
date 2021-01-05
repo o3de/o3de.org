@@ -9,7 +9,7 @@ To manage your team members' access to AWS resources, you create IAM users, a gr
 
 **To create IAM users and a user group with managed policies**
 
-1. Sign in to the AWS Management Console with your *CloudCanvasAdmin* credentials\. See [Inspect Your Resources in AWS](cloud-canvas-tutorial-inspect.md)\.
+1. Sign in to the AWS Management Console with your *CloudCanvasAdmin* credentials\. See [Inspect Your Resources in AWS](/docs/userguide/gems/cloud-canvas/tutorial-inspect.md)\.
 
 1. Do one of the following:
    + In the **AWS services** search box, enter **IAM**, and then click **IAM**\.

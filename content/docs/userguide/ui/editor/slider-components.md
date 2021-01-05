@@ -19,12 +19,12 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **Slider** element from the slice library\. When you do this, the slider's track, fill, and handle are automatically created in your **Hierarchy** pane\.
 
 **To add a Slider element from the slice library**
-+ In the [**UI Editor**](ui-editor-using.md), choose **New**, **Element from Slice Library**, **Slider**\.
++ In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **Slider**\.
 
 **To edit a slider component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **Slider** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Slider** and do the following, as appropriate:    
 **Interactable**  
-See [Properties](ui-editor-components-interactive-properties.md) to edit the common interactive component settings\.  
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
 **Elements**, **Track**  
 Select an element from the list to provide the background of the slider and to limit the movement of the manipulator\.  
 **Elements**, **Fill**  

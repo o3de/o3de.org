@@ -27,7 +27,7 @@ The level library is no longer updated\. You can import particle data stored in 
 We recommended that you update all entities that reference the level library emitters to use this newly created library\.
 
 **Topics**
-+ [Adding Particle Libraries](particle-creating-library.md)
-+ [Importing Particle Libraries](particle-importing-library.md)
-+ [Saving Particle Libraries](particle-saving-library.md)
-+ [Using Particle Libraries](particle-using-library.md)
++ [Adding Particle Libraries](/docs/userguide/particles/creating-library.md)
++ [Importing Particle Libraries](/docs/userguide/particles/importing-library.md)
++ [Saving Particle Libraries](/docs/userguide/particles/saving-library.md)
++ [Using Particle Libraries](/docs/userguide/particles/using-library.md)

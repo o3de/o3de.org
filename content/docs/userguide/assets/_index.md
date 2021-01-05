@@ -20,13 +20,13 @@ The Asset Processor detects changes in the directories that contain input assets
 Each output directory in the asset cache represents a full image of all files \(except for executables and related files\) needed to run the game\. The Asset Processor curates the directory to keep it up to date, ensuring that new files are ready to use in the game and Lumberyard Editor as soon as possible\. Game runtimes load assets only from the asset cache and never directly from your input source folders\.
 
 **Topics**
-+ [Using Asset Processor](asset-pipeline-processor.md)
-+ [Configuring the Asset Pipeline](asset-pipeline-configuring.md)
-+ [Configuring Image Processing](asset-pipeline-configuring-image-processing.md)
-+ [Live Reloading and VFS](asset-pipeline-live-reloading.md)
-+ [Compiling Shaders for Release Builds](asset-pipeline-shader-compilation.md)
-+ [Shader Compiler Proxy](asset-pipeline-shader-compiler.md)
-+ [Shader Cache and Generation](mat-shaders-custom-dev-cache-intro.md)
-+ [Game Startup Sequence](asset-pipeline-game-sequence.md)
++ [Using Asset Processor](/docs/userguide/assets/processor.md)
++ [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)
++ [Configuring Image Processing](/docs/userguide/assets/configuring-image-processing.md)
++ [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md)
++ [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)
++ [Shader Compiler Proxy](/docs/userguide/assets/shader-compiler.md)
++ [Shader Cache and Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md)
++ [Game Startup Sequence](/docs/userguide/assets/game-sequence.md)
 + [Asset Browser](asset-browser-intro.md)
-+ [Programming the Lumberyard AZCore Runtime Asset System](asset-pipeline-asset-system-programming.md)
++ [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)

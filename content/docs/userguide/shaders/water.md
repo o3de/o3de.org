@@ -5,7 +5,7 @@ title: Water Shader
 ---
 # Water Shader<a name="shader-ref-water"></a>
 
-The Water shader is a dedicated shader used to render the ocean exclusively, and imparts various reflection, ripple, and foam effects\. For lakes, rivers, and other bodies of water, use the [VolumeObject Shader](shader-ref-volumeobject.md) instead\.
+The Water shader is a dedicated shader used to render the ocean exclusively, and imparts various reflection, ripple, and foam effects\. For lakes, rivers, and other bodies of water, use the [VolumeObject Shader](/docs/userguide/shaders/volumeobject.md) instead\.
 
 ## Shader Parameters<a name="shader-ref-water-shader-parameters"></a>
 

@@ -63,6 +63,6 @@ Assuming the key `@ui_Hello` is localized for the current language, the contents
 
 ### UiTextComponent<a name="localization-initialization-text-uitextcomponent"></a>
 
-Lumberyard's [UI System](ui-editor-intro.md), contained in the LyShine Gem and installed by default, features a [text](ui-editor-components-text.md) component with built\-in support for automatically localizing text for you\. When you enter a valid localized text key \(such as `@ui_Hello` as shown in the [previous example](#localization-initialization-text)\), the engine replaces the contents of the rendered string with the localized text\. That key must be localized for the current language\.
+Lumberyard's [UI System](/docs/userguide/ui/editor/intro.md), contained in the LyShine Gem and installed by default, features a [text](/docs/userguide/ui/editor/components-text.md) component with built\-in support for automatically localizing text for you\. When you enter a valid localized text key \(such as `@ui_Hello` as shown in the [previous example](#localization-initialization-text)\), the engine replaces the contents of the rendered string with the localized text\. That key must be localized for the current language\.
 
 To see the source code for examples of calls to the localization manager, open `ui/Gems/LyShine/Code/Source/UiTextComponent.cpp`\.

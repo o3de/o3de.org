@@ -25,7 +25,7 @@ The component entity layout is the default view for Lumberyard Editor\. If you c
 
 **Note**  
 Resetting Lumberyard Editor to the default layout does not reset the layout for individual tools, such as the **Script Canvas** editor or the **Particle Editor**\.
-You can enable the CryEntity Removal gem to disable all [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy) features from Lumberyard Editor\. Legacy features will eventually be removed\. If you enable this gem, the legacy layout view is removed from Lumberyard Editor\. For more information, see [CryEntity Removal Gem](gems-system-cryentity-removal-gem.md)\.
+You can enable the CryEntity Removal gem to disable all [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy) features from Lumberyard Editor\. Legacy features will eventually be removed\. If you enable this gem, the legacy layout view is removed from Lumberyard Editor\. For more information, see [CryEntity Removal Gem](/docs/userguide/gems/cryentity-removal-gem.md)\.
 
 ## Restoring the Legacy Layout<a name="lumberyard-editor-restore-legacy-layout"></a>
 

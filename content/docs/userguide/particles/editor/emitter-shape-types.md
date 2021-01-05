@@ -29,10 +29,10 @@ The Particle Editor provides emitter shape types that you can use to achieve a v
 Most emitters have CPU and GPU particle types\. Each emitter's velocity functions on either world or shape axial coordinates, based on type\. To view the shape XYZ coordinates, right\-click the **Preview** viewport and choose **Show Emitter Shape**\.
 
 **Topics**
-+ [Angle Emitter \(CPU and GPU\)](particle-editor-emitter-shape-type-angle.md)
-+ [Beam Emitter \(CPU\)](particle-editor-emitter-shape-type-beam.md)
-+ [Box Emitter \(CPU and GPU\)](particle-editor-emitter-shape-type-box.md)
-+ [Circle Emitter \(CPU and GPU\)](particle-editor-emitter-shape-type-circle.md)
-+ [Point Emitter \(CPU and GPU\)](particle-editor-emitter-shape-type-point.md)
-+ [Sphere Emitter \(CPU and GPU\)](particle-editor-emitter-shape-type-sphere.md)
-+ [Trail Emitter \(CPU\)](particle-editor-emitter-shape-type-trail.md)
++ [Angle Emitter \(CPU and GPU\)](/docs/userguide/particles/editor/emitter-shape-type-angle.md)
++ [Beam Emitter \(CPU\)](/docs/userguide/particles/editor/emitter-shape-type-beam.md)
++ [Box Emitter \(CPU and GPU\)](/docs/userguide/particles/editor/emitter-shape-type-box.md)
++ [Circle Emitter \(CPU and GPU\)](/docs/userguide/particles/editor/emitter-shape-type-circle.md)
++ [Point Emitter \(CPU and GPU\)](/docs/userguide/particles/editor/emitter-shape-type-point.md)
++ [Sphere Emitter \(CPU and GPU\)](/docs/userguide/particles/editor/emitter-shape-type-sphere.md)
++ [Trail Emitter \(CPU\)](/docs/userguide/particles/editor/emitter-shape-type-trail.md)

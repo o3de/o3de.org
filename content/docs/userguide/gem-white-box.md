@@ -45,10 +45,10 @@ The White Box Gem has no dependencies\. However, if you intend to use the **Whit
    lmbr_waf build_win_x64_vs2019_profile -p all --progress
    ```
 
-For more information on Gems, see the [Gems documentation](gems-system-gems.md)\. 
+For more information on Gems, see the [Gems documentation](/docs/userguide/gems/builtin/s.md)\. 
 
 ## White Box component information<a name="white-box-component-topics"></a>
 
-For information on the **White Box** component, see [White Box component](component-white-box.md)\. 
+For information on the **White Box** component, see [White Box component](/docs/userguide/components/white-box.md)\. 
 
-For information on the **White Box Collision** component, see [White Box Collider component](component-white-box-collider.md)\. 
+For information on the **White Box Collision** component, see [White Box Collider component](/docs/userguide/components/white-box-collider.md)\. 

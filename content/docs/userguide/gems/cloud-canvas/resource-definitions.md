@@ -106,7 +106,7 @@ The content of each of these template files can be supplemented with a correspon
 
 ### project\-template\.json<a name="cloud-canvas-project-template"></a>
 
-The `project-template.json` file is an [AWS CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) that defines project\-wide resources that support the Cloud Canvas resource management system\. For information about Cloud Canvas Resource Manager, see [Understanding Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\. For security\-related information, see [Understanding the Resource Manager Security System](cloud-canvas-rm-security.md)\.
+The `project-template.json` file is an [AWS CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) that defines project\-wide resources that support the Cloud Canvas resource management system\. For information about Cloud Canvas Resource Manager, see [Understanding Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\. For security\-related information, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.
 
 ### deployment\-template\.json<a name="cloud-canvas-deployment-template"></a>
 
@@ -114,7 +114,7 @@ In versions of Lumberyard prior to 1\.10, the project's copy of the `deployment-
 
 ### deployment\-access\-template\.json<a name="cloud-canvas-deployment-access-template"></a>
 
-The `deployment-access-template.json` file is an [AWS CloudFormation Template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) that defines the resources used to secure a deployment\. For information about Cloud Canvas Resource Manager, see [Understanding Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\. For security\-related information, see [Understanding the Resource Manager Security System](cloud-canvas-rm-security.md)\.
+The `deployment-access-template.json` file is an [AWS CloudFormation Template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) that defines the resources used to secure a deployment\. For information about Cloud Canvas Resource Manager, see [Understanding Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\. For security\-related information, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.
 
 #### Parameters<a name="cloud-canvas-deployment-access-template-parameters"></a>
 
@@ -130,25 +130,25 @@ The `Player` resource describes the [IAM role](https://docs.aws.amazon.com/IAM/l
 
 The role's policies are determined by the `PlayerAccess` metadata elements found on resources in the project's resource templates \(see [resource\-template\.json](#cloud-canvas-resource-template)\)\. The role's policies are updated by the `PlayerAccess` custom resources that appear in the [deployment\-access\-template\.json](#cloud-canvas-deployment-access-template) and in the [resource\-template\.json](#cloud-canvas-resource-template) files\. The `PlayerAccessIdentityPool` [Amazon Cognito identity pool](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) resource allows players to assume this role\.
 
-For more information, see [PlayerAccessIdentityPool](#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) and [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+For more information, see [PlayerAccessIdentityPool](#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ##### PlayerLoginRole<a name="cloud-canvas-deployment-access-template-player-login-role-resource"></a>
 
 The `PlayerLoginRole` resources describes the [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that is temporarily assumed by the player as part of the login process\.
 
-For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ##### PlayerLoginIdentityPool<a name="cloud-canvas-deployment-access-template-player-login-identity-pool-resource"></a>
 
 The `PlayerLoginIdentityPool` resource describes the [Amazon Cognito identity pool](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) that provides the player with a temporary identity during the login process\.
 
-For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ##### PlayerAccessIdentityPool<a name="cloud-canvas-deployment-access-template-player-access-identity-pool-resource"></a>
 
 The `PlayerAccessIdentityPool` resource describes the [Amazon Cognito identity pool](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) that provides the player with a temporary identity during the login process\.
 
-For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### Template Extension Files<a name="cloud-canvas-template-extension-files"></a>
 
@@ -180,7 +180,7 @@ In the base \(nonextension\) template files, the `Custom::AccessControl` resourc
 
 ## Code Directories<a name="cloud-canvas-cgf-code-directories"></a>
 
-The location and naming of code directories has changed in Lumberyard 1\.10\. For more information, see [ Cloud Gem Framework and Resource Manager Versioning](cloud-canvas-cgf-rm-versioning.md)\.
+The location and naming of code directories has changed in Lumberyard 1\.10\. For more information, see [ Cloud Gem Framework and Resource Manager Versioning](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md)\.
 
 ### Lambda Code Directories<a name="cloud-canvas-resource-definitions-lambda-code-directory"></a>
 
@@ -188,10 +188,10 @@ Starting in Lumberyard 1\.10, we recommend that you put your Lambda code in `AWS
 
 In versions of Lumberyard prior to 1\.10, the code for a resource group's Lambda functions was kept in an `AWS\lambda-function-code` directory\. As of Lumberyard 1\.10, the use of `AWS\lambda-function-code` and `AWS\<lambda-name>-lambda-code` directories is no longer recommended\. Support for them will be removed in a future release\. Instead, we recommend that you put your Lambda code in `AWS\lambda-code\<lambda-name>` directories\.
 
-In addition, the use of the `shared-lambda-code` directory is no longer recommended\. Support for it will also be removed in a future release\. Instead, use the more flexible `common-code` directory\. For more information, see [Using Shared Code](cloud-canvas-cgf-shared-code.md)\. For information about upgrading your projects and cloud gems to version 1\.0\.0 of the Cloud Gem framework, see [Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework](cloud-canvas-cgf-updating-projects-gems.md)\.
+In addition, the use of the `shared-lambda-code` directory is no longer recommended\. Support for it will also be removed in a future release\. Instead, use the more flexible `common-code` directory\. For more information, see [Using Shared Code](/docs/userguide/gems/cloud-canvas/cgf-shared-code.md)\. For information about upgrading your projects and cloud gems to version 1\.0\.0 of the Cloud Gem framework, see [Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-updating-projects-gems.md)\.
 
 ### The project\-code Directory<a name="cloud-canvas-project-code-subdirectory"></a>
 
-The `dev\Gems\CloudGemFramework\vN\AWS\project-code` subdirectory contains the source code for the [AWS CloudFormation Custom Resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) handler that is used in the project's AWS CloudFormation templates\. For information about custom resources, see [Custom Resources](cloud-canvas-custom-resources.md)\.
+The `dev\Gems\CloudGemFramework\vN\AWS\project-code` subdirectory contains the source code for the [AWS CloudFormation Custom Resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) handler that is used in the project's AWS CloudFormation templates\. For information about custom resources, see [Custom Resources](/docs/userguide/gems/cloud-canvas/custom-resources.md)\.
 
-It also contains the code that implements the token exchange step of the player login process\. For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+It also contains the code that implements the token exchange step of the player login process\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.

@@ -6,7 +6,7 @@ title: Audio Environment
 ---
 # Audio Environment<a name="component-audio-environment"></a>
 
-The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](audio-default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
+The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](/docs/userguide/audio/default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
 
 ![\[Image NOT FOUND\]](/images/userguide/component/audio/component-audio-environment1.png)
 
@@ -21,7 +21,7 @@ Enter the name of the audio environment to use by default when setting amounts\.
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### SetAmount<a name="environ-audio-ebus-setamount"></a>
 

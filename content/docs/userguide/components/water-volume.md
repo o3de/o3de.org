@@ -15,7 +15,7 @@ title: Water Volume
 
 You can use the **Water Volume** component to add small and medium bodies of water to your level\. Use the following properties to adjust the water volume's physical attributes, aesthetic, and complex interactions\.
 
-To use the **Water Volume** component, you must enable the Water gem for your game project and then rebuild the project\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+To use the **Water Volume** component, you must enable the Water gem for your game project and then rebuild the project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Topics**
 + [Water Volume Component Properties](#component-water-volume-properties)
@@ -168,7 +168,7 @@ Range: `0.0` to `∞`
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Water Volume** component attached\. The EBus is available at game time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### SetSurfaceUScale<a name="water-volume-ebus-setsurfaceuscale"></a>
 

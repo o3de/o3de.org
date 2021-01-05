@@ -10,7 +10,7 @@ Lumberyard cloud gems make it easy to create cloud\-connected functionality for 
 
 ## Cloud Gems<a name="cloud-canvas-cgf-getting-started-cloud-gems"></a>
 
-Cloud gems are Lumberyard gems that use [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md) \(CCRM\) to define AWS resources that support their operation\. CCRM provides the infrastructure needed to create, configure, and access AWS resources\. A cloud gem defines resources and implements the required operations to create a complete game subsystem\.
+Cloud gems are Lumberyard gems that use [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) \(CCRM\) to define AWS resources that support their operation\. CCRM provides the infrastructure needed to create, configure, and access AWS resources\. A cloud gem defines resources and implements the required operations to create a complete game subsystem\.
 
 Cloud gems use general purpose AWS features that operate in your AWS account\. They are not game\-specific services operated by Amazon\. Cloud gems follow a [serverless](https://aws.amazon.com/blogs/compute/microservices-without-the-servers/) [microservice](https://en.wikipedia.org/wiki/Microservices) architecture that makes use of [AWS Lambda](https://aws.amazon.com/lambda) functions for computation, and [Amazon DynamoDB](https://aws.amazon.com/dynamodb), [Amazon RDS](https://aws.amazon.com/rds), and [Amazon S3](https://aws.amazon.com/s3) for data storage\. However, a cloud gem can use any AWS service\.
 
@@ -31,7 +31,7 @@ The following diagram shows a high\-level view of the Cloud Gem Framework archit
 ![\[Cloud Gem Framework architecture\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-architecture.png)
 
 The Cloud Gem Framework contains the following major components:
-+ [Cloud Gem Portal](cloud-canvas-cloud-gem-portal.md) – A web application for operating and managing cloud gems\.
-+ [Cloud Gem Framework Service API](cloud-canvas-cgf-service-api.md) – An API that provides a secure interface to a cloud gem's functionality\.
-+ [AWS API Jobs](cloud-canvas-cgf-aws-api-jobs.md) – Integrates the AWS API with the Lumberyard job execution systems \(not illustrated\)\.
-+ [HTTP Request Job](cloud-canvas-cgf-http-requests.md) – A Lumberyard job for executing HTTP requests \(not illustrated\)\.
++ [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md) – A web application for operating and managing cloud gems\.
++ [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) – An API that provides a secure interface to a cloud gem's functionality\.
++ [AWS API Jobs](/docs/userguide/gems/cloud-canvas/cgf-aws-api-jobs.md) – Integrates the AWS API with the Lumberyard job execution systems \(not illustrated\)\.
++ [HTTP Request Job](/docs/userguide/gems/cloud-canvas/cgf-http-requests.md) – A Lumberyard job for executing HTTP requests \(not illustrated\)\.

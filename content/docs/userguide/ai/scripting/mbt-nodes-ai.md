@@ -198,7 +198,7 @@ The node SUCCEEDS if the time condition is true, and FAILS if it is false\. If t
 
 ## Bubble<a name="ai-scripting-mbt-nodes-ai-bubble"></a>
 
-Displays a message in a speech bubble above the AI agent\. See [AI Bubbles System](ai-bubbles-system.md)\.
+Displays a message in a speech bubble above the AI agent\. See [AI Bubbles System](/docs/userguide/ai/bubbles-system.md)\.
 
 ### Parameters<a name="ai-scripting-mbt-nodes-ai-bubble-parameters"></a>
 
@@ -504,7 +504,7 @@ The node SUCCEEDS when the condition is satisfied\.
 
 ## Move<a name="ai-scripting-mbt-nodes-ai-move"></a>
 
-Moves the AI agent from its current position to a specified destination\. If the destination is a target, then the end position is updated if it is not reached when the target moves\. See [Movement System](ai-movement.md)\.
+Moves the AI agent from its current position to a specified destination\. If the destination is a target, then the end position is updated if it is not reached when the target moves\. See [Movement System](/docs/userguide/ai/movement.md)\.
 
 ### Parameters<a name="ai-scripting-mbt-nodes-ai-move-parameters"></a>
 
@@ -627,7 +627,7 @@ The node always SUCCEEDS\.
 
 ## QueryTPS<a name="ai-scripting-mbt-nodes-ai-querytps"></a>
 
-Performs a TPS query to find a tactical position for the AI agent, and waits for a result\. See [AI Tactical Point System](ai-tactical-point-system.md)\. 
+Performs a TPS query to find a tactical position for the AI agent, and waits for a result\. See [AI Tactical Point System](/docs/userguide/ai/tactical-point-system.md)\. 
 
 ### Parameters<a name="ai-scripting-mbt-nodes-ai-querytps-parameters"></a>
 
@@ -798,7 +798,7 @@ The node SUCCEEDS if it executes for the specified duration\. The node FAILS if 
 
 ## Signal<a name="ai-scripting-mbt-nodes-ai-signal"></a>
 
-Sends a signal to the AI system\. See [Signals](ai-scripting-signals.md)\.
+Sends a signal to the AI system\. See [Signals](/docs/userguide/ai/scripting/signals.md)\.
 
 ### Parameters<a name="ai-scripting-mbt-nodes-ai-signal-parameters"></a>
 
@@ -873,7 +873,7 @@ The node always SUCCEEDS\.
 
 ## StopMovement<a name="ai-scripting-mbt-nodes-ai-stopmovement"></a>
 
-Sends a request to the Movement system to stop all movements\. See [Movement System](ai-movement.md)\. 
+Sends a request to the Movement system to stop all movements\. See [Movement System](/docs/userguide/ai/movement.md)\. 
 
 **Note**  
 This may not immediately stop the AI agent The Movement system may be dependent on animations and physics that dictate a 'natural' stop rather than an immediate cessation of movement\. 

@@ -14,9 +14,9 @@ title: '&animation-editor; User Interface'
 
 **Topics**
 + [Opening Animation Editor](#opening-animation-editor-)
-+ [Anim Graph Interface](animation-editor-animation-graph-user-interface.md)
-+ [Motion Sets Interface](animation-editor-motion-set-user-interface.md)
-+ [Motions Interface](animation-editor-motions-user-interface.md)
++ [Anim Graph Interface](/docs/userguide/animation/editor/animation-graph-user-interface.md)
++ [Motion Sets Interface](/docs/userguide/animation/editor/motion-set-user-interface.md)
++ [Motions Interface](/docs/userguide/animation/editor/motions-user-interface.md)
 
 ## Opening Animation Editor<a name="opening-animation-editor-"></a>
 

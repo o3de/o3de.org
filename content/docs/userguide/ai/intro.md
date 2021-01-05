@@ -11,7 +11,7 @@ Specifically, an AI agent is a game entity that can use information to make deci
 
 The selection strip at the bottom of Lumberyard Editor features controls to enable AI\. The **Simulate** button toggles AI simulation on and off: ![\[Image NOT FOUND\]](/images/userguide/ai/simulate-ai-physics-1.25.png)
 
-For information on AI Navigation, see [Navigation](component-navigation.md)\.
+For information on AI Navigation, see [Navigation](/docs/userguide/components/navigation.md)\.
 
-For information on AI Behavior Tree, see [Behavior Tree](component-behavior-tree.md)\.
+For information on AI Behavior Tree, see [Behavior Tree](/docs/userguide/components/behavior-tree.md)\.
 

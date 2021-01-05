@@ -8,7 +8,7 @@ title: Disable Sharpen
 
 Disables the sharpen filter\.
 
-To enable the effect, see [Enable Sharpen](enable-sharpen-node.md)\.
+To enable the effect, see [Enable Sharpen](/docs/userguide/rendering/enable/sharpen-node.md)\.
 
 **Contents**
 + [Inputs](#disable-sharpen-note-input)

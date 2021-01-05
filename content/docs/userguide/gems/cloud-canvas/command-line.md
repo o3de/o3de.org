@@ -9,10 +9,10 @@ title: Using the &cloud; Command Line
 Cloud Canvas provides the `\dev\lmbr_aws.cmd` command line tool for working with AWS resources\. The tool invokes Python code that is located in the `\dev\Tools\lmbr_aws` directory\.
 
 Notes
-+  Lumberyard 1\.9 renamed some `lmbr_aws` commands\. For a list of the older commands and their newer equivalents, see [Command Reorganization](cloud-canvas-command-line-revision.md)\.
-+ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\. 
-+ For information on `lmbr_aws` commands for the Cloud Gem Portal and the cloud gem framework, see [Using the Cloud Gem Framework Command Line](cloud-canvas-command-line-cgf.md)\.
-+ For information on `lmbr_aws` commands that manage roles and permissions, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](cloud-canvas-rm-security-lmbr-aws.md)\.
++  Lumberyard 1\.9 renamed some `lmbr_aws` commands\. For a list of the older commands and their newer equivalents, see [Command Reorganization](/docs/userguide/gems/cloud-canvas/command-line-revision.md)\.
++ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)\. 
++ For information on `lmbr_aws` commands for the Cloud Gem Portal and the cloud gem framework, see [Using the Cloud Gem Framework Command Line](/docs/userguide/gems/cloud-canvas/command-line-cgf.md)\.
++ For information on `lmbr_aws` commands that manage roles and permissions, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md)\.
 
 ## Syntax<a name="cloud-canvas-command-line-syntax"></a>
 
@@ -148,7 +148,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
    Optional\. Converts audio files to `.wav` file format when they are extracted\.
 
-For more information on downloading and importing speech files, see [Text\-to\-Speech Cloud Gem Portal](cloud-canvas-cloud-gem-text-to-speech-cgp.md)\.
+For more information on downloading and importing speech files, see [Text\-to\-Speech Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/text-to-speech-cgp.md)\.
 
 ### `deployment` Commands<a name="cloud-canvas-command-line-deployment-commands"></a>
 
@@ -245,7 +245,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
 #### deployment protect<a name="cloud-canvas-command-line-deployment-protect"></a>
 
-Marks a deployment as protected and issues a warning when a user \(for example, a game developer, programmer, or tester\) attempts to connected a development game client to live resources\. For more information, see [Using Protected Deployments ](cloud-canvas-protected-deployments.md)\.
+Marks a deployment as protected and issues a warning when a user \(for example, a game developer, programmer, or tester\) attempts to connected a development game client to live resources\. For more information, see [Using Protected Deployments ](/docs/userguide/gems/cloud-canvas/protected-deployments.md)\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `deployment protect` command accepts the following arguments:
 + `--set {deployment-name}`
@@ -396,7 +396,7 @@ The `lmbr_aws login-provider` commands add, remove, and update social network lo
 
 #### login\-provider add<a name="cloud-canvas-command-line-login-provider-add"></a>
 
-Add a player login provider to the Amazon Cognito identity pool configuration\. Login providers allow your game's players to log in using their social network identity, such as Facebook or using their Amazon identity\. For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+Add a player login provider to the Amazon Cognito identity pool configuration\. Login providers allow your game's players to log in using their social network identity, such as Facebook or using their Amazon identity\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `login-provider add` command accepts the following arguments:
 + `--provider {provider-name}`
@@ -443,7 +443,7 @@ You must run `lmbr_aws project upload` after running this command so that the [P
 
 #### login\-provider update<a name="cloud-canvas-command-line-login-provider-update"></a>
 
-Update a player login provider in the Amazon Cognito identity pool configuration\. Login providers allow your game's players to log in using their social network identity, such as Facebook, or using their Amazon identity\. For more information, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+Update a player login provider in the Amazon Cognito identity pool configuration\. Login providers allow your game's players to log in using their social network identity, such as Facebook, or using their Amazon identity\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `login-provider update` command accepts the following arguments:
 + `--provider {provider-name}`
@@ -650,7 +650,7 @@ The `lmbr_aws project` commands manage Cloud Canvas projects in Lumberyard\.
 
 #### project create<a name="cloud-canvas-command-line-project-create"></a>
 
-Initialize Cloud Canvas resource management for a Lumberyard project\. This includes creating a set of default [Resource Definitions](cloud-canvas-resource-definitions.md) in the `dev\game\AWS` directory and a AWS CloudFormation stack that contains the resources that the Cloud Canvas resource manager uses to manage your game resources\.
+Initialize Cloud Canvas resource management for a Lumberyard project\. This includes creating a set of default [Resource Definitions](/docs/userguide/gems/cloud-canvas/resource-definitions.md) in the `dev\game\AWS` directory and a AWS CloudFormation stack that contains the resources that the Cloud Canvas resource manager uses to manage your game resources\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `project create` command accepts the following arguments:
 + `--stack-name {stack-name}`
@@ -669,7 +669,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 The `region` argument can be used only with the `project create` and `resource-importer list-importable-resources` commands\. To manually override the AWS region in other `lmbr_aws` commands, use the `--region-override` argument\.
 + `--admin-roles`
 
-  Optional\. Creates the `ProjectOwner` and `ProjectAdmin` roles\. The default is to create these roles unless `--no-admin-roles` argument is used\. For more information about these roles, see [Cloud Canvas Built\-In Roles and Policies](cloud-canvas-built-in-roles-and-policies.md)\.
+  Optional\. Creates the `ProjectOwner` and `ProjectAdmin` roles\. The default is to create these roles unless `--no-admin-roles` argument is used\. For more information about these roles, see [Cloud Canvas Built\-In Roles and Policies](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md)\.
 + `--no-admin-roles`
 
   Optional\. Turns off the creation of the `ProjectOwner` and `ProjectAdmin` roles\. This is recommended unless you have a need for these roles\.

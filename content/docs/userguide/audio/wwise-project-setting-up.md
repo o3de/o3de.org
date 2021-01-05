@@ -73,7 +73,7 @@ Wwise uses the name of your project to create a directory with the same name\. H
 
 1. Ensure that the soundbank generation succeeded\. To do this, navigate to the `lumberyard_version\dev\game_project\Sounds\wwise` directory and verify that you have an `Init.bnk` file and other `.bnk` or `.wem` files\.
 
-For information on how to map soundbanks to ATL preloads so that Lumberyard can load them, see [Using the Audio Controls Editor](audio-atl-editor.md)\.
+For information on how to map soundbanks to ATL preloads so that Lumberyard can load them, see [Using the Audio Controls Editor](/docs/userguide/audio/atl-editor.md)\.
 
 ## Creating Wwise Events for the Default ATL Controls<a name="audio-wwise-creating-events-default-atl-controls"></a>
 

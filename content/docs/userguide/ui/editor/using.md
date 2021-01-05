@@ -31,7 +31,7 @@ You can tear away and redock the **Hierarchy** pane, the **Properties** pane, th
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-using1.png)
 
 **Topics**
-+ [Toolbar](ui-editor-toolbar.md)
-+ [Rulers and Guides](ui-editor-rulers-guides.md)
-+ [Asset Drag and Drop](ui-editor-asset-drag-and-drop.md)
-+ [Sprite Editor](ui-editor-sprite-editor.md)
++ [Toolbar](/docs/userguide/ui/editor/toolbar.md)
++ [Rulers and Guides](/docs/userguide/ui/editor/rulers-guides.md)
++ [Asset Drag and Drop](/docs/userguide/ui/editor/asset-drag-and-drop.md)
++ [Sprite Editor](/docs/userguide/ui/editor/sprite-editor.md)

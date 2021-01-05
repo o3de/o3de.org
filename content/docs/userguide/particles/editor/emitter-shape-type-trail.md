@@ -25,8 +25,8 @@ The following are parameters for the **Trail** emitter\.
 
 **Note**  
 When there is a single light source, some or all particles for **Trail** emitters can appear unlit \(black\)\. This is most apparent when the sun is the only light source and the time and day setting is noon\. To address this:  
-Add an Environment Probe to the scene to create indirect lighting\. For more information, see [Environment Probe](component-environment-probe.md)\.
-Enable Environment Probe Lighting on the particle system by specifying a value for the Environment Probe Lighting parameter\. For example, a value of `0.5` applies light from the Environment Probe at half intensity\. For more information, see [Lighting Attribute](particle-editor-reference-lighting.md)\.
+Add an Environment Probe to the scene to create indirect lighting\. For more information, see [Environment Probe](/docs/userguide/components/environment-probe.md)\.
+Enable Environment Probe Lighting on the particle system by specifying a value for the Environment Probe Lighting parameter\. For example, a value of `0.5` applies light from the Environment Probe at half intensity\. For more information, see [Lighting Attribute](/docs/userguide/particles/editor/reference-lighting.md)\.
 
 ## Particle Trail Visibility<a name="particle-emitter-type-trail-movement"></a>
 

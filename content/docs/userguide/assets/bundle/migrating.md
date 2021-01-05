@@ -15,31 +15,31 @@ If you already have an existing Lumberyard project, and you want to use the new 
 The Asset Bundler relies on accurate and complete product dependency information to ensure that all assets that are needed for runtime are included in the asset bundle\. This procedure shows how to use new and existing Lumberyard tools to find and fix missing product dependencies\.
 
 1. Identify missing product dependencies in your project\. The missing dependency scanner tool is useful for finding missing product dependencies in projects that don't currently use asset bundling\.
-   + [Using the Missing Dependency Scanner](asset-bundler-missing-dependency-scanner.md)
-   + [Resolving Missing Assets](asset-bundler-assets-resolving.md)
+   + [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md)
+   + [Resolving Missing Assets](/docs/userguide/assets/bundle/assets-resolving.md)
 
 1. Update your custom asset builders to output product dependencies\. Be sure to add false positive results to the exclusion list using the file tagging system\.
    + [Implement the Callback for ProcessJobFunction](asset-builder-custom.md#asset-builder-custom-create-builder-class-processjob-callback)
-   + [Using the File Tagging System to Include or Exclude Assets](asset-bundler-file-tagging.md)
+   + [Using the File Tagging System to Include or Exclude Assets](/docs/userguide/assets/bundle/file-tagging.md)
 
 1. Create a seed list and add your required assets as seeds\. You can create a dependencies XML file \(such as `Check Engine/Engine_Dependencies.xml`\) to include optional assets or add multiple seeds using wildcards\. Include the dependencies XML file in the seed list\. 
-   + [What is the Amazon Lumberyard Asset Bundler?](asset-bundler-overview.md)
+   + [What is the Amazon Lumberyard Asset Bundler?](/docs/userguide/assets/bundle/overview.md)
 
 1. After you add missing product dependencies and create seed lists, check that product dependencies are being emitted correctly using the Asset Validation Gem with seed mode enabled\.
-   + [Using the Asset Validation Gem to Verify Seeds](asset-bundler-asset-validation-gem.md)
+   + [Using the Asset Validation Gem to Verify Seeds](/docs/userguide/assets/bundle/asset-validation-gem.md)
 
 1. Generate asset bundles using the Asset Bundler command line tools\.
-   + [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md)
-   + [Lumberyard Asset Bundler Command\-Line Tool Reference](asset-bundler-command-line-reference.md)
+   + [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)
+   + [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/userguide/assets/bundle/command-line-reference.md)
 
 1. Have the system load up the bundles that you created in Step 5\. Then, use bundle mode to identify any missing assets in the bundle\. Ideally, you don't want to see any missing dependencies, but there is no requirement to resolve them all\.
-   + [Using Bundle Mode to Test Bundles](asset-bundler-bundle-mode.md)
+   + [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)
 
 ## Create Release Build with New Asset Bundling System<a name="asset-bundler-migrating-replace-bundles"></a>
 
 After you generate asset bundles to deliver with your game, switch your release build process to use the new asset bundling system\. Use the following instructions to generate content including asset bundles for a release build\. 
 
-1. Configure your game project and set it as the active project\. Go to the starter game walkthrough \([Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md)\) and follow Steps 1 through 4\. Be sure to specify your own game project name instead of "StartGame\." The instructions provided in the walkthrough are for PC builds\. If your game uses another operating system, such as macOS, iOS, or Android, specify the correct profile in your `lmbr_waf` and `lmbr_pak_shaders` calls\.
+1. Configure your game project and set it as the active project\. Go to the starter game walkthrough \([Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)\) and follow Steps 1 through 4\. Be sure to specify your own game project name instead of "StartGame\." The instructions provided in the walkthrough are for PC builds\. If your game uses another operating system, such as macOS, iOS, or Android, specify the correct profile in your `lmbr_waf` and `lmbr_pak_shaders` calls\.
 
 1. If your game runs on the PC operating system, you are ready to create the release build for your game\. You can do this by using command line calls, as described in Steps 5 through 6 of the starter game walkthrough\. Alternatively, create custom scripts to generate your asset bundles and make `.pak` files for your content\. You can customize the samples described in the next section\.
 

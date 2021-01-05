@@ -6,7 +6,7 @@ title: Dynamic Content Engineering Details
 ---
 # Dynamic Content Engineering Details<a name="cloud-canvas-cloud-gem-dc-engineering"></a>
 
-This topic provides programmatic details about the dynamic content update process\. This includes manifest file information, Dynamic Content Cloud Gem EBus events, and Dynamic Content Cloud Gem service API\. For information about the `lmbr_aws` CLI extensions enabled by the Dynamic Content Cloud Gem, see [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)\.
+This topic provides programmatic details about the dynamic content update process\. This includes manifest file information, Dynamic Content Cloud Gem EBus events, and Dynamic Content Cloud Gem service API\. For information about the `lmbr_aws` CLI extensions enabled by the Dynamic Content Cloud Gem, see [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)\.
 
 ## Manifest File<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-file"></a>
 

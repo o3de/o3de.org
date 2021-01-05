@@ -8,9 +8,9 @@ title: PhysX Ragdoll
 
 You can use the **PhysX Ragdoll** component to create a physical representation of a character in the animation system and to simulate certain behaviors, such as hit reactions and character death\. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints\. You can adjust the ragdoll settings as needed for physical plausibility and performance\.
 
-The **PhysX Ragdoll** component requires the [PhysX Characters](gems-system-gem-physx-characters.md) gem\.
+The **PhysX Ragdoll** component requires the [PhysX Characters](/docs/userguide/gems/builtin/physx-characters.md) gem\.
 
-For more information about the PhysX system, see [Simulating physics behavior with the PhysX system](physx-intro.md)\.
+For more information about the PhysX system, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
 
 ## Using the PhysX Ragdoll Component<a name="physx-ragdoll-using-the-component"></a>
 
@@ -18,11 +18,11 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 **To use the PhysX Ragdoll component**
 
-1. In Lumberyard Editor, add the **PhysX Ragdoll** component to an entity that represents a character\. For more information, see [Adding Components to an Entity](component-working-adding.md)\.
+1. In Lumberyard Editor, add the **PhysX Ragdoll** component to an entity that represents a character\. For more information, see [Adding Components to an Entity](/docs/userguide/components/working-adding.md)\.
 
 1. Choose **Tools**, **Animation Editor**\.
 
-1. Use the **Animation Editor** to create and control the physical representation of the ragdoll\. For more information, see [Creating and Simulating a PhysX Ragdoll](animation-editor-creating-and-simulating-physx-ragdoll.md)\.
+1. Use the **Animation Editor** to create and control the physical representation of the ragdoll\. For more information, see [Creating and Simulating a PhysX Ragdoll](/docs/userguide/animation/editor/creating-and-simulating-physx-ragdoll.md)\.
 
 ## PhysX Ragdoll Component Properties<a name="physx-ragdoll-component-properties"></a>
 

@@ -10,13 +10,13 @@ Lumberyard uses an audio translation layer \(ATL\) to interface between Lumberya
 
 Lumberyard supports Audiokinetic Wave Works Interactive Sound Engine \(Wwise\), an audio pipeline solution with which you can create compelling soundscapes for your game\. Lumberyard comes pre\-configured with Wwise LTX, a free, compact version of Wwise\. 
 
-For more information, see [Setting up Wwise LTX](audio-wwise-using.md)\.
+For more information, see [Setting up Wwise LTX](/docs/userguide/audio/wwise-using.md)\.
 
 Wwise is an industry standard audio middleware, but the full\-featured software is not free\. For licensing and pricing details, see [http://www\.audiokinetic\.com/pricing](http://www.audiokinetic.com/pricing)\.
 
 **Topics**
-+ [Audio System Overview](audio-architecture.md)
-+ [Audio Translation Layer](audio-translation-layer.md)
-+ [Audiokinetic Wwise](audio-wwise.md)
-+ [Audio Components](audio-components.md)
-+ [Audio Console Variables](audio-console-commands.md)
++ [Audio System Overview](/docs/userguide/audio/architecture.md)
++ [Audio Translation Layer](/docs/userguide/audio/translation-layer.md)
++ [Audiokinetic Wwise](/docs/userguide/audio/wwise.md)
++ [Audio Components](/docs/userguide/audio/components.md)
++ [Audio Console Variables](/docs/userguide/audio/console-commands.md)

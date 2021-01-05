@@ -13,11 +13,11 @@ One of these commands, *seedmode*, makes a seed mode active\. When seed mode is 
 During development, use seed mode to ensure that as assets get added they're properly bundled and included in the shipping version of the game\.
 
 **Note**  
-If you already have bundles to test, you can use *bundle mode* instead of seed mode\. For more information, see [Using Bundle Mode to Test Bundles](asset-bundler-bundle-mode.md)\.
+If you already have bundles to test, you can use *bundle mode* instead of seed mode\. For more information, see [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)\.
 
 ## Prerequisites<a name="asset-bundler-asset-validation-gem-prerequisites"></a>
 
-[Enable](gems-system-using-project-configurator.md) the Asset Validation gem in your game project, and then [build](game-build-intro.md) your game project\.
+[Enable](/docs/userguide/gems/using-project-configurator.md) the Asset Validation gem in your game project, and then [build](game-build-intro.md) your game project\.
 
 ## Seed Mode Commands<a name="asset-bundler-asset-validation-gem-seed-mode-commands"></a>
 

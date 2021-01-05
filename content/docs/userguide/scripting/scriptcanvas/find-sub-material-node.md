@@ -14,7 +14,7 @@ Lumberyard has two types of material assets:
 
 You can use the **Find Sub\-Material** node to access a submaterial that is inside a multimaterial\. To access the submaterial, specify the name of the multimaterial and the ID of one of its submaterials\. Material IDs range from the number of available submaterials\. For example, if a multimaterial has five submaterials, you can specify a value from `1` to`5`\.
 
-To access a single material, you can use the **[Find by Name](material-find-by-name-node.md)** node\.
+To access a single material, you can use the **[Find by Name](/docs/userguide/materials/find-by-name-node.md)** node\.
 
 **Contents**
 + [Inputs](#script-canvas-find-sub-material-node-input)

@@ -10,7 +10,7 @@ You can use environment nodes in the **Script Canvas** to configure sky elements
 
 Some environment nodes \(for example, **[Set Sun Latitude](set-sun-latitude-node.md)**\) have a **Force Update** parameter\. You can use this parameter to make sudden changes to the sky appearance\. Since time normally passes slowly with only gradual changes in sky appearance, Lumberyard updates only a portion of the sky for each frame, for better performance\. When the sky appearance changes gradually, players are unlikely to notice this optimization\. However, if the sky appearance suddenly changes by a large amount, players can notice unusual effects\. To avoid this, specify `True` for the **Force Update** parameter to update the entire sky in a single frame\.
 
-You can use the time of day system to manage high\-level control for automatically updating the appearance of the sky\. For more information, see [Adding Sky Effects](sky-intro.md) and [Time of Day Nodes](script-canvas-time-of-day-nodes.md)\.
+You can use the time of day system to manage high\-level control for automatically updating the appearance of the sky\. For more information, see [Adding Sky Effects](/docs/userguide/sky/intro.md) and [Time of Day Nodes](/docs/userguide/scripting/scriptcanvas/time-of-day-nodes.md)\.
 
 **Topics**
 + [Get Moon Latitude](get-moon-latitude-node.md)

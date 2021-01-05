@@ -46,7 +46,7 @@ Use the **Intents** tab on the **Speech Recognition** page to create and manage 
 
    Note the following restrictions:
    + For custom intents, you must provide at least one utterance\.
-   + For intents based on built\-in intents, you cannot modify the utterances or slots\. You can use the **Lambda initialization and validation** and **Confirmation prompt** features [as usual](cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots.md)\.
+   + For intents based on built\-in intents, you cannot modify the utterances or slots\. You can use the **Lambda initialization and validation** and **Confirmation prompt** features [as usual](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-editing-bots.md)\.
 
 1. A slot can have multiple prompts\. To view all the prompts for a slot, click the gear icon in the **Prompt** column\.   
 ![\[See all prompts for a slot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents-slot-gear-icon.png)

@@ -11,11 +11,11 @@ The following sections describe the automatic and manual submit modes in greater
 
 Automatic Jira ticket submit mode has the following workflow:
 
-1. The game client sends defect reports to the [Game Metrics cloud gem](cloud-canvas-metrics-gem.md)\.
+1. The game client sends defect reports to the [Game Metrics cloud gem](/docs/userguide/gems/cloud-canvas/metrics-gem.md)\.
 
 1. The Game Metrics cloud gem Lambda function adds the reports to Amazon Simple Queue Service \(Amazon SQS\)\.
 
-1. The consumer Lambda function of the Game Metrics cloud gem reads from Amazon SQS every five minutes and uses [cross\-gem communication](cloud-canvas-cgf-service-api-cross-gem-communication.md) to send events to the Defect Reporter cloud gem\.
+1. The consumer Lambda function of the Game Metrics cloud gem reads from Amazon SQS every five minutes and uses [cross\-gem communication](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md) to send events to the Defect Reporter cloud gem\.
 
 1. The service Lambda function of the Defect Reporter cloud gem checks whether automatic submit mode is enabled\.
 

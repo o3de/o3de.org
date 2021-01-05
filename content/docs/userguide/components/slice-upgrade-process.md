@@ -29,7 +29,7 @@ Currently, this pipeline does not update your slices when changing your componen
 
 It is important to upgrade your slice assets as soon as possible, because:
 + You can read, edit, and merge data patches more efficiently in upgraded slice assets\.
-+ Upgrading your slices lets you use the new TypeChange and NameChange class builders when versioning your components\. For more information about the component versioning system, see [Versioning your Component Serialization](component-entity-system-versioning.md)\.
++ Upgrading your slices lets you use the new TypeChange and NameChange class builders when versioning your components\. For more information about the component versioning system, see [Versioning your Component Serialization](/docs/userguide/components/entity-system-versioning.md)\.
 + Delaying the upgrade puts you at a heightened risk of losing data in the future when changing serialization of your components\. For more information about this risk, see [Avoiding Data Loss when Serializing Component Data](best-practices-for-component-data-serialization.md)\.
 
 **Note**  
@@ -59,7 +59,7 @@ Enable the Slice Upgrade Pipeline and restart Asset Processor to convert your sl
 1. On the **Tools** tab in Asset Processor, trigger a **Full Scan** of assets\.\.  
 ![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](/images/userguide/component/asset-processor-start-scan.png)
 **Note**  
-For more information about using Asset Processor, see [Using Asset Processor](asset-pipeline-processor.md)\.
+For more information about using Asset Processor, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
 
 1. Open Asset Processor logs\. Confirm that there are no warning messages about slice files that are out of date or failed to convert\.
 

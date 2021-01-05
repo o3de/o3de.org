@@ -25,10 +25,10 @@ On the **REST Explorer** tab, you can do the following tasks:
 ## Prerequisites<a name="cloud-canvas-cloud-gem-portal-rest-explorer-prerequisites"></a>
 
 This tutorial assumes the following:
-+ Your Lumberyard project has the Message of the Day cloud gem enabled \(in the [Project Configurator](configurator-intro.md), choose **Cloud Gem Message of the Day**\)\.
-+ You used the [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md) or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
-  + A [project stack](cloud-canvas-ui-rm-project-stack.md) for your project\.
-  + A [deployment](cloud-canvas-ui-rm-deployments.md) for your project that includes the **CloudGemMessageOfTheDay** resource group\.
++ Your Lumberyard project has the Message of the Day cloud gem enabled \(in the [Project Configurator](/docs/userguide/configurator/intro.md), choose **Cloud Gem Message of the Day**\)\.
++ You used the [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
+  + A [project stack](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) for your project\.
+  + A [deployment](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md) for your project that includes the **CloudGemMessageOfTheDay** resource group\.
 
 ## Opening the REST Explorer<a name="cloud-canvas-cloud-gem-portal-rest-explorer-using-the-rest-explorer"></a>
 

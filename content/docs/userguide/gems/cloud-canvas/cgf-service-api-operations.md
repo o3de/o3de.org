@@ -8,7 +8,7 @@ title: Operations
 
 A cloud gem's service API can implement multiple distinct operations\. You define operations in the `swagger.json` file by adding [http://swagger.io/specification/#operationObject](http://swagger.io/specification/#operationObject) instances to a [http://swagger.io/specification/#pathItemObject](http://swagger.io/specification/#pathItemObject)\. For each operation, you can define the input data that the operation requires and the output data that it produces\. The input data can include path, query, and body parameters\. For more information on using swagger to define APIs, see [http://swagger\.io/](http://swagger.io/) \.
 
-API Gateway routes API requests to the cloud gem's Lambda function\. When you upload the cloud gem's resources to AWS, the cloud gem's `swagger.json` file is processed\. This processing creates the request and response mappings that API Gateway uses to call the cloud gem's Lambda function\. This configuration is controlled by the [`x-amazon-cloud-canvas-lambda-dispatch`](cloud-canvas-cgf-service-api-cgf-extension-object.md) extension objects in the `swagger.json` file\.
+API Gateway routes API requests to the cloud gem's Lambda function\. When you upload the cloud gem's resources to AWS, the cloud gem's `swagger.json` file is processed\. This processing creates the request and response mappings that API Gateway uses to call the cloud gem's Lambda function\. This configuration is controlled by the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) extension objects in the `swagger.json` file\.
 
 Service API operations are implemented in the `ServiceLambda` AWS Lambda function resource\. The code for the Lambda function comes from the cloud gem's `lambda-function-code` directory\. The Cloud Gem Framework provides a service request dispatch module\. For more information, see [Request Execution](#cloud-canvas-cgf-service-api-operations-request-execution)\.
 
@@ -40,7 +40,7 @@ The default module name is derived from the operation path\. A path like `/playe
 
 The default function name is the operation name like `GET`, `POST`, or `PUT`\.
 
-These defaults can be overridden by specifying the module and/or function properties of an `x-amazon-cloud-canvas-lambda-dispatch` extension object\. For more information, see [Cloud Gem Framework Extension Object](cloud-canvas-cgf-service-api-cgf-extension-object.md)\.
+These defaults can be overridden by specifying the module and/or function properties of an `x-amazon-cloud-canvas-lambda-dispatch` extension object\. For more information, see [Cloud Gem Framework Extension Object](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md)\.
 
 Parameter names are taken from the parameter definitions in the `swagger.json` file\. Path, query, and body parameter types are supported\.
 
@@ -71,7 +71,7 @@ In both the `HTTP 400` and `HTTP 500` cases, no other information \(such as a st
 
 ## Request Execution<a name="cloud-canvas-cgf-service-api-operations-request-execution"></a>
 
-The Cloud Gem Framework has built\-in support for service API Lambda functions that are implemented in Python\. No built\-in support is provided for Node\.js or Java Lambda functions\. To support these languages, implement the Lambda function handler to look for the `module` and `function` properties on the event object that the Lambda function provides\. You also might need to override the default values generated for the [`x-amazon-cloud-canvas-lambda-dispatch`](cloud-canvas-cgf-service-api-cgf-extension-object.md) `module` and `function` properties during the `swagger.json` file processing\.
+The Cloud Gem Framework has built\-in support for service API Lambda functions that are implemented in Python\. No built\-in support is provided for Node\.js or Java Lambda functions\. To support these languages, implement the Lambda function handler to look for the `module` and `function` properties on the event object that the Lambda function provides\. You also might need to override the default values generated for the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) `module` and `function` properties during the `swagger.json` file processing\.
 
 A `service.py` module file is provided for you in the service's AWS Lambda function\. This module's `dispatch` function uses the `module` and `function` properties of the `event` object to dispatch the request to the service code that you provide\. These properties are set by the request mapping that configures API Gateway\.
 

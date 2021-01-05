@@ -6,11 +6,11 @@ title: Replica
 ---
 # Replica<a name="network-replicas-replica"></a>
 
-Replicas are core components of GridMate's replication system that are created by network\-connected GridMate peers\. When a peer creates a replica, GridMate propagates the replica over the network to synchronize the replica's state across the session\. A locally created and owned replica is called a *primary replica*\. The copy of the primary replica that connected peers receive is called a *proxy replica*\. The synchronization and instantiation of replicas is handled by [Replica Manager](network-replicas-replica-manager.md)\. 
+Replicas are core components of GridMate's replication system that are created by network\-connected GridMate peers\. When a peer creates a replica, GridMate propagates the replica over the network to synchronize the replica's state across the session\. A locally created and owned replica is called a *primary replica*\. The copy of the primary replica that connected peers receive is called a *proxy replica*\. The synchronization and instantiation of replicas is handled by [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md)\. 
 
 ## Replica Chunks<a name="network-replicas-replica-chunks"></a>
 
-Every replica holds a collection of user\-defined [`ReplicaChunk`](network-replicas-chunks.md) objects that are synchronized with all the peers in the current session\. A replica chunk is a container for user\-defined [DataSet](network-replicas-data-sets.md) objects and [Remote Procedure Calls \(RPCs\)](network-replicas-remote-procedure-calls.md)\. Any change to a `DataSet` object or a call to an RPC causes the replica to synchronize its state across the session\. 
+Every replica holds a collection of user\-defined [`ReplicaChunk`](/docs/userguide/networking/replicas-chunks.md) objects that are synchronized with all the peers in the current session\. A replica chunk is a container for user\-defined [DataSet](/docs/userguide/networking/replicas-data-sets.md) objects and [Remote Procedure Calls \(RPCs\)](/docs/userguide/networking/replicas-remote-procedure-calls.md)\. Any change to a `DataSet` object or a call to an RPC causes the replica to synchronize its state across the session\. 
 
 ### Limitations<a name="network-replicas-replica-chunk-limitations"></a>
 
@@ -38,11 +38,11 @@ GridMate::CreateAndAttachReplicaChunk<MyReplicaChunk>(replica, ...);
 replica->AttachReplicaChunk(myChunk);
 ```
 
-For more information about the creation and propagation of replica chunks, see [Replica Chunks](network-replicas-chunks.md)\.
+For more information about the creation and propagation of replica chunks, see [Replica Chunks](/docs/userguide/networking/replicas-chunks.md)\.
 
 ### Binding a Replica to the Session Replica Manager<a name="network-replicas-replica-binding"></a>
 
-In order for a replica to be synchronized, it must be bound to the session replica manager\. After you create a replica and attach chunks to it, get the replica manager from the [GridMate session](network-session-service.md)\. Then, bind the replica to it as follows: 
+In order for a replica to be synchronized, it must be bound to the session replica manager\. After you create a replica and attach chunks to it, get the replica manager from the [GridMate session](/docs/userguide/networking/session-service.md)\. Then, bind the replica to it as follows: 
 
 ```
 GridMate::ReplicaManager* replicaManager = session->GetReplicaMgr();
@@ -57,7 +57,7 @@ When a peer creates a replica and binds it to the session replica manager, that 
 
 ### Changing Ownership<a name="network-replicas-replica-ownership-changing"></a>
 
-Replica ownership can be transferred from one peer to another, but the current owner of the replica must agree to the transfer\. For information on how a replica owner can prevent transfer of ownership, see [Replica Chunks](network-replicas-chunks.md)\.
+Replica ownership can be transferred from one peer to another, but the current owner of the replica must agree to the transfer\. For information on how a replica owner can prevent transfer of ownership, see [Replica Chunks](/docs/userguide/networking/replicas-chunks.md)\.
 
 Ownership transfer happens automatically when a session performs host migration on a peer\-to\-peer network\. You can also request it explicitly by invoking the following method: 
 

@@ -16,9 +16,9 @@ To see an in\-game example of a completed canvas with the **DropdownOption** com
 To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Dropdown` directory and open the `UsingUi.uicanvas` file\. This canvas features a drop\-down menu with a scroll box, image, check box, slider, and radio buttons\.
 
 **To edit a DropdownOption component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **DropdownOption** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **DropdownOption** and do the following, as appropriate:    
 **Interactable**  
-See [Properties](ui-editor-components-interactive-properties.md) to edit the common interactive component settings\.  
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
 **Elements, Owning Dropdown**  
 Select an element from the list that has the **DropdWown** component\. This is the element to be modified when this option is selected\.  
 **Elements, Text Element**  

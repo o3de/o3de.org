@@ -15,10 +15,10 @@ title: Lighting Arc
 
 You can use the **Lightning Arc** component to create short arcs \(also called sparks\) between an emitter and a series of target entities\. When an arc is emitted, the arc jumps between the center of the entity to which the **Lightning Arc** component is attached and the center of the target entity\.
 
-To enable the **Lightning Arc** component, you must enable the Lightning Arc gem\. For more information, see [Lightning Arc Gem](gems-system-gem-lightning-arc.md)\.
+To enable the **Lightning Arc** component, you must enable the Lightning Arc gem\. For more information, see [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md)\.
 
 **Example**  
-The **Lightning Arc** component is attached to the entity in the center, and the arc randomly jumps between three targets\. This example uses the default lightning material in the Lightning Arc gem and the `Tesla_core` arc preset\. For more information, see [Customizing a Lightning Arc Preset](gems-system-gem-lightning-arc-presets.md)\.  
+The **Lightning Arc** component is attached to the entity in the center, and the arc randomly jumps between three targets\. This example uses the default lightning material in the Lightning Arc gem and the `Tesla_core` arc preset\. For more information, see [Customizing a Lightning Arc Preset](/docs/userguide/gems/builtin/lightning-arc-presets.md)\.  
 
 ![\[Add the Lightning Arc component to your entity to create lightning arcs that jump between entities.\]](/images/userguide/shared-lightning-arc-component-animation-example.gif)
 
@@ -38,7 +38,7 @@ Specifies whether the **Lightning Arc** component emits arcs\.
 The collection of targets to which the **Lightning Arc** component emits arcs\. 
 
 **Material**  
-The lightning arc material\. This parameter does not require a specific type of material, but it's recommended that you use the [Illum shader](shader-ref-illum.md) and a texture with opacity\.   
+The lightning arc material\. This parameter does not require a specific type of material, but it's recommended that you use the [Illum shader](/docs/userguide/shaders/illum.md) and a texture with opacity\.   
 You can find the default files in the following directory: `Gems\LightningArc\Assets\materials\effects`  
 Default value: None
 
@@ -135,7 +135,7 @@ Variation in time between emitted arcs\. For more information, see [SetDelayVari
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Lightning Arc** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 **Contents**
 + [Enable](#lightning-arc-ebus-enable)
@@ -778,7 +778,7 @@ end
 
 Use the following notification functions with the **Lightning Arc** component notification EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### OnSpark<a name="lightning-arc-component-notification-bus-on-spark"></a>
 

@@ -20,10 +20,10 @@ Manages character animations, attachments, and physics simulations along with bl
 [Asset Browser](asset-browser-intro.md)  
 Displays all game assets available for use\.
 
-[Asset Processor](asset-pipeline-processor.md)  
+[Asset Processor](/docs/userguide/assets/processor.md)  
 Runs in the background when you launch Lumberyard Editor, monitoring input directories for changes in source files and automatically generating platform\-specific game assets as they change\.
 
-[Audio Controls Editor](audio-atl-editor.md)  
+[Audio Controls Editor](/docs/userguide/audio/atl-editor.md)  
 Manages audio translation layer \(ATL\) controls and events for the audio system\.
 
 [Animation Editor](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-editor.html) \(Legacy\)  
@@ -35,34 +35,34 @@ Runs editor commands and lists available console variables\.
 [Database View](level-database-view.md)  
 Displays various object libraries such as entities, particles, and prefabs\.
 
-[Entity Inspector](component-entity-inspector.md)  
+[Entity Inspector](/docs/userguide/components/entity-inspector.md)  
 Displays the ID and name for component entity system objects\.
 
-[Entity Outliner](component-entity-outliner.md)  
+[Entity Outliner](/docs/userguide/components/entity-outliner.md)  
 Displays all component entities used for a level\.
 
-[FBX Settings](fbx-intro.md)  
+[FBX Settings](/docs/userguide/fbx/intro.md)  
 Imports single static meshes and materials from FBX\.
 
-[Layers](component-entity-outliner-layers.md)  
+[Layers](/docs/userguide/components/entity-outliner-layers.md)  
 Organizes level data into discrete files\.
 
 Lens Flare Editor  
 Creates and manages camera lens flare effects\.
 
-[Sun Trajectory Tool](sky-intro.md)  
+[Sun Trajectory Tool](/docs/userguide/sky/intro.md)  
 Creates and manages dynamic sky lighting effects\.
 
 LOD Generator  
 Generates geometry and material level of detail \(LOD\)\.
 
-[Lumberyard Editor](lumberyard-editor-intro.md)  
+[Lumberyard Editor](/docs/userguide/editor/intro.md)  
 Acts as the main workspace editor and game viewport; loads the **Rollup Bar** and console by default\.
 
 [Lumberyard Setup Assistant](lumberyard-launcher-intro.md)  
 Ensures that you have the necessary runtime software and SDKs installed to successfully run Lumberyard\.
 
-[Material Editor](mat-intro.md)  
+[Material Editor](/docs/userguide/materials/intro.md)  
 Applies final material setup, texture mapping, and shader parameters\.
 
 Measurement System Tool  
@@ -71,19 +71,19 @@ Measures the length of segmented objects like roads, rivers, and paths\.
 [Missing Asset Resolver](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/missing-asset-resolver.html)  
 Searches for assets that have moved and references their new locations \(legacy\)\.
 
-[Gems System](gems-system-gems.md)  
+[Gems System](/docs/userguide/gems/builtin/s.md)  
 Provides a library of prebuilt features that you can use to quickly start new projects or prototype ideas\.
 
-[Particle Editor](particle-editor.md)  
+[Particle Editor](/docs/userguide/particles/editor/_index.md)  
 Creates and simulates explosions, fire, sparks, and other visual effects\.
 
-[Project Configurator](configurator-intro.md)  
+[Project Configurator](/docs/userguide/configurator/intro.md)  
 Standalone application used to tell the Waf build system which Gems to include in the game build\.
 
-[Resource Compiler](asset-pipeline-processor.md)  
+[Resource Compiler](/docs/userguide/assets/processor.md)  
 Compresses and processes source game asset files and creates package files\.
 
-[Script Canvas](script-canvas-intro.md)  
+[Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)  
 Create game logic and behaviors with Lumberyard's new visual scripting environment\.
 
 Script Terminal  
@@ -95,19 +95,19 @@ Creates and manages smart objects, which can interact with other objects accordi
 Substance Editor  
 Imports substance `.sbsar` files, edits material properties, and exports them as textures\.
 
-[Terrain Editor](terrain-intro.md)  
+[Terrain Editor](/docs/userguide/terrain/intro.md)  
 Generates terrain and sculpts terrain elements in your level\.
 
-[Terrain Texture Layers](terrain-texture-layers-intro.md)  
+[Terrain Texture Layers](/docs/userguide/terrain/texture-layers-intro.md)  
 Creates and paints terrain texture layers in your level\.
 
-[Time of Day Editor](sky-intro.md)  
+[Time of Day Editor](/docs/userguide/sky/intro.md)  
 Creates and manages day–night cycles and other dynamic sky effects\.
 
-[Track View Editor](cinematics-track-view-editor.md)  
+[Track View Editor](/docs/userguide/cinematics/track-view/editor.md)  
 Creates and manages cinematic scenes and sequences; consists of the Track View and **Curves Editor**\.
 
-[UI Editor](ui-editor-intro.md)  
+[UI Editor](/docs/userguide/ui/editor/intro.md)  
 Creates, manages, and simulates user interface elements for your game, such as menus and heads\-up displays \(HUD\)\.
 
 [Universal Remote Console](lumberyard-remote-console.md)  

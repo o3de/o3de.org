@@ -62,7 +62,7 @@ On the client side, you must configure the following CVARs:
 
 `gamelift_matchmaking_config_name`
 
-You can set these CVARs with a console command or with the multiplayer sample user interface\. For a list of all the supported CVARs in the Multiplayer Gem, see [Multiplayer Gem CVars](gems-system-gem-multiplayer-cvars.md)\.
+You can set these CVARs with a console command or with the multiplayer sample user interface\. For a list of all the supported CVARs in the Multiplayer Gem, see [Multiplayer Gem CVars](/docs/userguide/gems/builtin/multiplayer-cvars.md)\.
 
 To use CVARs to set the client side configuration, enter the following console command\.
 

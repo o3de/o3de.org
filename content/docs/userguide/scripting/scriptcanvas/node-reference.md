@@ -11,7 +11,7 @@ This reference includes the various types of **Script Canvas** editor nodes, the
 On the **Node Palette** or on the node canvas, you can pause on the node name and the node parameters for more information\.
 
 **Topics**
-+ [Rendering Nodes](script-canvas-rendering-nodes.md)
++ [Rendering Nodes](/docs/userguide/scripting/scriptcanvas/rendering-nodes.md)
 
 Some nodes are hidden from the default **Script Canvas** editor view\.
 

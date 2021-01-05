@@ -21,6 +21,6 @@ The Smooth brush softens sharp gradients in the terrain, such as the sides of mo
 
 1. In the level, drag the mouse to create the smoothing effect\.
 
-1. Under **Modify Terrain**, adjust **Brush Settings** and **Noise Settings** parameters as needed\. See [Terrain Brush Parameters](terrain-landforms-brush-params.md) for more information\.
+1. Under **Modify Terrain**, adjust **Brush Settings** and **Noise Settings** parameters as needed\. See [Terrain Brush Parameters](/docs/userguide/terrain/landforms-brush-params.md) for more information\.
 
 1. When done, click **Terrain**, **Modify** or press **Esc**\.

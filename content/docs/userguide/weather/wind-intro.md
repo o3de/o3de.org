@@ -8,7 +8,7 @@ title: Adding Wind Effects
 You can create realistic wind effects in your level environment\.
 
 **Topics**
-+ [Adding Global Wind](weather-wind-global.md)
-+ [Adding Ocean Wind](weather-wind-ocean.md)
-+ [Creating Wind Areas](weather-wind-areas.md)
-+ [Adding Localized Wind](weather-wind-local.md)
++ [Adding Global Wind](/docs/userguide/weather/wind-global.md)
++ [Adding Ocean Wind](/docs/userguide/weather/wind-ocean.md)
++ [Creating Wind Areas](/docs/userguide/weather/wind-areas.md)
++ [Adding Localized Wind](/docs/userguide/weather/wind-local.md)

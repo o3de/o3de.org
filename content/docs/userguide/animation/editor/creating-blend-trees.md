@@ -52,5 +52,5 @@ A blend tree is a collection of nodes with input and output ports that are color
       + Yellow – The connection curve turns yellow in transition states, such as when you drag a connection between ports\.
 
 **Topics**
-+ [Creating and Visualizing Blend Spaces](animation-editor-blend-spaces.md)
-+ [Blending Poses with Blend Nodes](animation-editor-blending-poses.md)
++ [Creating and Visualizing Blend Spaces](/docs/userguide/animation/editor/blend-spaces.md)
++ [Blending Poses with Blend Nodes](/docs/userguide/animation/editor/blending-poses.md)

@@ -12,14 +12,14 @@ title: Fog Volume
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-You can use the **Fog Volume** component to create fog effects in your game\. For more information, see [Volumetric Fog](rendering-graphics-fog-volumetric.md)\.
+You can use the **Fog Volume** component to create fog effects in your game\. For more information, see [Volumetric Fog](/docs/userguide/rendering/fog-volumetric.md)\.
 
-By default, the **Fog Volume** component renders in nonvolumetric mode\. To enable volumetric rendering, you must specify the `e_VolumetricFog` console variable\. For more information, see [Console Variables for Volumetric Fog](rendering-graphics-fog-volumetric-console-variables.md) and [Using the Console Window](console-intro.md)\.
+By default, the **Fog Volume** component renders in nonvolumetric mode\. To enable volumetric rendering, you must specify the `e_VolumetricFog` console variable\. For more information, see [Console Variables for Volumetric Fog](/docs/userguide/rendering/fog-volumetric-console-variables.md) and [Using the Console Window](console-intro.md)\.
 
 **Note**  
-The **Fog Volume** component must have a **[Box Shape](component-shapes.md)** component attached to the entity\. The entity uses the **Box Shape** component to set the area of the fog\.
+The **Fog Volume** component must have a **[Box Shape](/docs/userguide/components/shapes.md)** component attached to the entity\. The entity uses the **Box Shape** component to set the area of the fog\.
 
-You can also change global fog properties in the **Time of Day** editor\. For more information, see [Setting Global \(Time of Day\) Fog](weather-fog-global.md)\.
+You can also change global fog properties in the **Time of Day** editor\. For more information, see [Setting Global \(Time of Day\) Fog](/docs/userguide/weather/fog-global.md)\.
 
 ![\[Fog Volume component example.\]](/images/userguide/component/fog-component-example.png)
 
@@ -37,7 +37,7 @@ You can also change global fog properties in the **Time of Day** editor\. For mo
 The **Fog Volume** component has the following properties: 
 
 **Volume type**  
-Specify the volume shape, which can be an ellipsoid or cuboid\. A **[Box Shape](component-shapes.md)** component attached to the entity defines the boundaries for both shapes\.
+Specify the volume shape, which can be an ellipsoid or cuboid\. A **[Box Shape](/docs/userguide/components/shapes.md)** component attached to the entity defines the boundaries for both shapes\.
 
 **Color**  
 Color of the fog\. Specify a color with the **Color Picker**\.  
@@ -49,7 +49,7 @@ Default: `0`
 Valid values: `0` – `20`
 
 **Use global fog color**  
-If `true`, the **Color** property is ignored, and the global fog color is used instead\. In the **Time of Day** editor, you can specify the global fog color with the **Color \(bottom\)** parameter\. For more information, see [Setting Global \(Time of Day\) Fog](weather-fog-global.md)\.  
+If `true`, the **Color** property is ignored, and the global fog color is used instead\. In the **Time of Day** editor, you can specify the global fog color with the **Color \(bottom\)** parameter\. For more information, see [Setting Global \(Time of Day\) Fog](/docs/userguide/weather/fog-global.md)\.  
 Default: `False`
 
 **Soft edges**  

@@ -13,20 +13,20 @@ title: Waf Debugging with AZ Code Generator
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. | 
 
- You can debug the integration output of Waf's Python scripts by using PyCharm and a few key debugging entry points\. For more information about Waf integration itself, see [AZ Code Generator Integration with Waf ](az-code-gen-waf-integration.md)\. 
+ You can debug the integration output of Waf's Python scripts by using PyCharm and a few key debugging entry points\. For more information about Waf integration itself, see [AZ Code Generator Integration with Waf ](/docs/userguide/codegen/waf-integration.md)\. 
 
 **Topics**
 + [Prerequisites ](#az-code-gen-waf-debugging-prerequisites)
 + [Identifying and Configuring Debug Output](#az-code-gen-waf-debugging-configuring-output)
-+ [Setting Up PyCharm for Debugging Waf](az-code-gen-pycharm.md)
++ [Setting Up PyCharm for Debugging Waf](/docs/userguide/codegen/pycharm.md)
 
 ## Prerequisites <a name="az-code-gen-waf-debugging-prerequisites"></a>
 
- Before you start, follow the instructions for [Setting Up PyCharm for Debugging Waf ](az-code-gen-pycharm.md)\. The PyCharm debugger must be set up to debug `lmbr_waf` before you can continue\. 
+ Before you start, follow the instructions for [Setting Up PyCharm for Debugging Waf ](/docs/userguide/codegen/pycharm.md)\. The PyCharm debugger must be set up to debug `lmbr_waf` before you can continue\. 
 
 ## Identifying and Configuring Debug Output<a name="az-code-gen-waf-debugging-configuring-output"></a>
 
- All AZ Code Generator Waf integration output is prefixed with `az_code_gen`\. To see additional output from both task creation and task execution, add `--zones=az_code_gen` to the Waf command line\. This exposes the commands that invoke AZ Code Generator and are useful for debugging the AZ Code Generator utility itself\. For more information, see [Debugging the AZ Code Generator Utility](az-code-gen-utility-debugging.md)\. 
+ All AZ Code Generator Waf integration output is prefixed with `az_code_gen`\. To see additional output from both task creation and task execution, add `--zones=az_code_gen` to the Waf command line\. This exposes the commands that invoke AZ Code Generator and are useful for debugging the AZ Code Generator utility itself\. For more information, see [Debugging the AZ Code Generator Utility](/docs/userguide/codegen/utility-debugging.md)\. 
 
 ### Debugging Wscript Configuration<a name="az-code-gen-waf-debugging-wscript-configuration"></a>
 

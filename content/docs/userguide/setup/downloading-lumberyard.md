@@ -12,7 +12,7 @@ title: Installing &ALY;
 You can also download earlier versions of Lumberyard and assets from the [Amazon Lumberyard Downloads](https://aws.amazon.com/gamedev/lumberyard/downloads) page\.
 
 **Note**  
-Verify that you have the required hardware and software for Lumberyard\. For more information, see [System requirements](setting-up-system-requirements.md)\.
+Verify that you have the required hardware and software for Lumberyard\. For more information, see [System requirements](/docs/userguide/setup/system-requirements.md)\.
 
 **Topics**
 + [Using the Lumberyard Installer](#download-lumberyard-installer)
@@ -62,9 +62,9 @@ After you install Lumberyard, the Lumberyard root directory includes the followi
   + `Editor` – Editor assets\.
   + `Engine` – Engine assets\.
   + `Gems` – Optional systems and assets\.
-  + `MultiplayerSample` – Multiplayer sample project that demonstrates how to build a multiplayer game with the new component entity system\. For more information, see [Multiplayer Sample](sample-project-multiplayer-enhanced.md)\.
+  + `MultiplayerSample` – Multiplayer sample project that demonstrates how to build a multiplayer game with the new component entity system\. For more information, see [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md)\.
   + `ProjectTemplates` – Configuration files, libraries, and scripts for the empty template\.
-  + `SamplesProject` – Sample project\. For more information, see [Samples Project](sample-project-samples.md)\.
+  + `SamplesProject` – Sample project\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
   + `Tools` – Third\-party tools and plugins\.
   + `engineroot.txt` – System file required by Lumberyard Setup Assistant\.
 + `3rdParty`

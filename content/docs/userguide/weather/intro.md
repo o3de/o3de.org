@@ -8,5 +8,5 @@ title: Adding Weather Effects
 Lumberyard offers a variety of realistic weather effects for your level environment\.
 
 **Topics**
-+ [Adding Wind Effects](weather-wind-intro.md)
-+ [Adding Clouds](weather-clouds-intro.md)
++ [Adding Wind Effects](/docs/userguide/weather/wind-intro.md)
++ [Adding Clouds](/docs/userguide/weather/clouds-intro.md)

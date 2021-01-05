@@ -8,9 +8,9 @@ title: Enable Depth of Field
 
 Configures the depth of field \(DOF\) effect, which gives you control over distance, range, and amount\. You can use the node to add realism to scenes by simulating the way a real\-world camera works\. You can use a broad depth of field to focus on the entire scene, or use a shallow depth of field to have sharp focus only on objects that are a specific distance from the camera\.
 
-To disable the effect, see [Disable Depth of Field](disable-depth-of-field-node.md)\.
+To disable the effect, see [Disable Depth of Field](/docs/userguide/rendering/disable/depth-of-field-node.md)\.
 
-You can also apply depth of field in the Track View\. See [Adding a Depth of Field Node](cinematics-track-view-nodes-dof.md)\.
+You can also apply depth of field in the Track View\. See [Adding a Depth of Field Node](/docs/userguide/cinematics/track-view/nodes-dof.md)\.
 
 **Contents**
 + [Inputs](#enable-depth-of-field-note-input)

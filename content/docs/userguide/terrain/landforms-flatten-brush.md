@@ -21,4 +21,4 @@ The Flatten brush makes any piece of terrain completely flat at a height that yo
 
 1. In the level, drag the mouse to create a flat spot\. The terrain is flattened at the selected **Height** and **Diameter** brush settings\.
 
-1. Under **Modify Terrain**, adjust **Brush Settings** and **Noise Settings** parameters as needed\. See [Terrain Brush Parameters](terrain-landforms-brush-params.md) for more information\.
+1. Under **Modify Terrain**, adjust **Brush Settings** and **Noise Settings** parameters as needed\. See [Terrain Brush Parameters](/docs/userguide/terrain/landforms-brush-params.md) for more information\.

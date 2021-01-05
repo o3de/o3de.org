@@ -9,16 +9,16 @@ title: Using Dynamic Content Manager
 You can use the Dynamic Content Cloud Gem and its Dynamic Content Manager to manage dynamic content updates for your game through AWS\. You can use Dynamic Content Manager to create manifests and packages, add files to the packages, and upload the manifest and packages to the AWS Cloud\. This ensures that your clients have the latest content for your game\.
 
 **Topics**
-+ [Managing Dynamic Content Packages](cloud-canvas-cloud-gem-dc-managing-packages.md)
-+ [Updating Dynamic Content](cloud-canvas-cloud-gem-dc-updating.md)
-+ [Using the Dynamic Content Command Line](cloud-canvas-cloud-gem-dc-lmbr-aws.md)
-+ [Testing the Dynamic Content System](cloud-canvas-cloud-gem-dc-testing.md)
-+ [Dynamic Content Engineering Details](cloud-canvas-cloud-gem-dc-engineering.md)
++ [Managing Dynamic Content Packages](/docs/userguide/gems/cloud-canvas/dc-managing-packages.md)
++ [Updating Dynamic Content](/docs/userguide/gems/cloud-canvas/dc-updating.md)
++ [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)
++ [Testing the Dynamic Content System](/docs/userguide/gems/cloud-canvas/dc-testing.md)
++ [Dynamic Content Engineering Details](/docs/userguide/gems/cloud-canvas/dc-engineering.md)
 
 **Prerequisites**  
 This tutorial assumes the following:
-+ You are using a Lumberyard project that has the Dynamic Cloud Gem enabled \(in the [Project Configurator](configurator-intro.md), choose **Cloud Gem Dynamic Content**\)\.
-+ You have created a project stack and deployment stack in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md) with the `CloudGemDynamicContent` resource group\.
++ You are using a Lumberyard project that has the Dynamic Cloud Gem enabled \(in the [Project Configurator](/docs/userguide/configurator/intro.md), choose **Cloud Gem Dynamic Content**\)\.
++ You have created a project stack and deployment stack in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) with the `CloudGemDynamicContent` resource group\.
 
 **Note**  
 If you do not have a deployment with the `CloudGemDynamicContent` resource group, the **Dynamic Content Manager** interface is disabled\.
@@ -121,4 +121,4 @@ If the files that you selected are not supported by the current manifest or not 
    An animation in the **S3 Status** column indicates the package that is being uploaded\.  
 ![\[Upload process indicator\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-manager-upload-process-animation.png)
 
-   The packages appear in the **Dynamic Content** section of the Cloud Gem Portal\. By default, Lumberyard marks them as **Private**\. When you are ready, you can move the packages to the **Public** stage to make them available for download by game clients\. For more information on this step, see [Managing Dynamic Content Packages](cloud-canvas-cloud-gem-dc-managing-packages.md)\.
+   The packages appear in the **Dynamic Content** section of the Cloud Gem Portal\. By default, Lumberyard marks them as **Private**\. When you are ready, you can move the packages to the **Public** stage to make them available for download by game clients\. For more information on this step, see [Managing Dynamic Content Packages](/docs/userguide/gems/cloud-canvas/dc-managing-packages.md)\.

@@ -17,7 +17,7 @@ You can use the **High Quality Shadow** component to give an entity its own shad
 
 This component can impact performance and memory, and should be used sparingly\. As such, it can be useful to dynamically change the **Enabled** setting as performance needs change during the game\. Use the **[Set Enabled](high-quality-shadow-set-enabled.md)** node to enable or disable the **High Quality Shadow** component in the **Script Canvas** editor\. For example, if your main character has a high quality shadow, you can enable it during cutscenes and disable it during gameplay\. 
 
-For more information, see [Shadow Nodes](script-canvas-shadow-scripting-nodes.md)\.
+For more information, see [Shadow Nodes](/docs/userguide/scripting/scriptcanvas/shadow-scripting-nodes.md)\.
 
 ## High Quality Shadow Component Properties<a name="component-high-quality-shadow-properties"></a>
 

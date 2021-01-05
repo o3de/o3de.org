@@ -10,14 +10,14 @@ The VR TV Room level demonstrates a simple VR level that is set up to play 2D vi
 + 2D video
 + 3D video
 + `Input Configurator` entity – Initiates an input event when you press the trigger button\.
-+ `VideoPlayback_Toggle` entity – Contains a **[Script Canvas](component-script-canvas.md)** component that listens for the input event and then toggles visibility\.
++ `VideoPlayback_Toggle` entity – Contains a **[Script Canvas](/docs/userguide/components/script-canvas.md)** component that listens for the input event and then toggles visibility\.
 + `Screen_Toggle_Sphere` entity – Contains a Lua script that enables the 3D video sphere to follow the VR camera\.
 
-For more information about installing the project that includes the VR TV Room level, see [Virtual Reality Samples Project](sample-project-virtual-reality.md)\.
+For more information about installing the project that includes the VR TV Room level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 
 ## Using Components in the VR TV Room Level<a name="sample-level-vr-tv-room-using-video-playback-script-canvas-components"></a>
 
-You can use the **[Video Playback](component-videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\. 
+You can use the **[Video Playback](/docs/userguide/components/videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\. 
 
 ![\[Video Playback and Script Canvas components for the VR TV Room level.\]](/images/userguide/tv-room-level-video-playback-script-canvas-components-example.png)
 

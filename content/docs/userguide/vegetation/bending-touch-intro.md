@@ -29,7 +29,7 @@ The figure below shows how these 3 components are represented in the Lumberyard 
 
 An FBX mesh can be exported into Lumberyard from many common digital content creation tools, or from an existing \.fbx asset file\. 
 
-For more details on working with FBX meshes in Lumberyard, read [Customize FBX asset export with FBX Settings](fbx-intro.md)\.
+For more details on working with FBX meshes in Lumberyard, read [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
 ## Cube Collision Proxy Mesh<a name="vegetation-bending-touch-collision-cube"></a>
 

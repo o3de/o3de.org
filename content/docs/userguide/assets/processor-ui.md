@@ -210,7 +210,7 @@ E – Incoming product dependencies
  The list of product assets which this product depends on\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](asset-bundler-overview.md#why-use-product-dependencies) for more information on product dependencies\. 
 
 F – Missing dependency scanner  
- Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](asset-bundler-missing-dependency-scanner.md) for more information\. 
+ Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md) for more information\. 
 
 ## Logs<a name="logs-tab"></a>
 
@@ -224,7 +224,7 @@ Right\-click to access the **Logs** context menu\.
 
 ## Shaders<a name="shaders-tab"></a>
 
-The **Shaders** tab displays a table with information related to shader compiler proxies\. Shader failures appear in this table\. For more information, see [Shader Compiler Proxy](asset-pipeline-shader-compiler.md)\.
+The **Shaders** tab displays a table with information related to shader compiler proxies\. Shader failures appear in this table\. For more information, see [Shader Compiler Proxy](/docs/userguide/assets/shader-compiler.md)\.
 
 ## Connections<a name="connections-tab"></a>
 
@@ -240,6 +240,6 @@ You can edit or remove a user\-created connection, or add a connection\.
 
 ## Tools<a name="tools-tab"></a>
 
-On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](asset-processor-faster-scanning.md)\.
+On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](/docs/userguide/assets/processing/faster-scanning.md)\.
 
 ![\[Tools tab in Asset Processor.\]](/images/userguide/asset_processor/faster-scanning.png)

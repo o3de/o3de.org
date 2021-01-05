@@ -5,20 +5,20 @@ title: Fur Features
 ---
 # Fur Features<a name="shader-ref-fur-features"></a>
 
-Using various [Fur Material Settings](shader-ref-fur-materialsettings.md) and [Fur Console Variables](shader-ref-fur-consolevariables.md), the fur shader can give your furry entities realistic highlights, dynamic shadows, responsive movement, and much more\.
+Using various [Fur Material Settings](/docs/userguide/shaders/fur-materialsettings.md) and [Fur Console Variables](/docs/userguide/shaders/fur-consolevariables.md), the fur shader can give your furry entities realistic highlights, dynamic shadows, responsive movement, and much more\.
 
 **Topics**
 + [Anisotropic Specular Highlights](#shader-ref-fur-features-highlights)
 + [Subsurface Scattering](#shader-ref-fur-features-subsurface)
 + [Simulated Self\-Shadowing](#shader-ref-fur-features-simulated)
 + [Fur in Shadows](#shader-ref-fur-features-shadows)
-+ [Bending](shader-ref-fur-features-bending.md)
-+ [Motion Bending](shader-ref-fur-features-bending-motion.md)
-+ [Level of Detail](shader-ref-fur-features-levelofdetail.md)
++ [Bending](/docs/userguide/shaders/fur-features-bending.md)
++ [Motion Bending](/docs/userguide/shaders/fur-features-bending-motion.md)
++ [Level of Detail](/docs/userguide/shaders/fur-features-levelofdetail.md)
 
 ## Anisotropic Specular Highlights<a name="shader-ref-fur-features-highlights"></a>
 
-Anisotropic specular highlights are supported when a mesh provides [fur combing](shader-ref-fur-combing.md) data\. This feature creates highlights that appear "banded" in the direction perpendicular to the fur strands\. Notice the banded highlight from the green light on the bear's fur\.
+Anisotropic specular highlights are supported when a mesh provides [fur combing](/docs/userguide/shaders/fur-combing.md) data\. This feature creates highlights that appear "banded" in the direction perpendicular to the fur strands\. Notice the banded highlight from the green light on the bear's fur\.
 
 ![\[Example anisotropic highlights for fur rendering.\]](/images/userguide/shaders/shader-ref-fur-5.png)
 

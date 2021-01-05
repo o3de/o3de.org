@@ -6,7 +6,7 @@ title: Tweener Parameters
 ---
 # Tweener Parameters<a name="ui-animating-tweener-parameters"></a>
 
-Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations\. Use the parameters with a [timeline](ui-animating-tweener-timeline.md) for a variety of possibilities\.
+Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations\. Use the parameters with a [timeline](/docs/userguide/ui/animating/tweener-timeline.md) for a variety of possibilities\.
 
 Use the following tweener parameters to customize your animation\.
 
@@ -20,7 +20,7 @@ Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is aut
 Specifies a tween to begin at a specified point \(in seconds\)\. For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds\.
 
 **easeMethod **  
-Specifies the [easing type](ui-animating-tweener-understanding-types.md) to apply to the tween\.  
+Specifies the [easing type](/docs/userguide/ui/animating/tweener-understanding-types.md) to apply to the tween\.  
 + `ScriptedEntityTweenerEasingMethod_Linear`
 + `ScriptedEntityTweenerEasingMethod_Quad`
 + `ScriptedEntityTweenerEasingMethod_Cubic`

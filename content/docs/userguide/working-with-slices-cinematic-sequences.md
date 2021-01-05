@@ -8,7 +8,7 @@ title: Working with Slices and Sequences
 
 When you create a track view sequence that has entities contained in slices or add a track view sequence in a slice, the process is the same as creating a track view sequence in a level\. The workflow is identical\. However, see the following best practices when working with slices and track view sequences\.
 
-For more information about slices, see [Working with Slices](component-slices.md)\.
+For more information about slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 ## Avoid External References<a name="avoid-external-references"></a>
 
@@ -45,10 +45,10 @@ In the Track View, the **ExampleSequence** animates only the two children entiti
 ![\[Example track view sequence that animates child slices, not the parent.\]](/images/userguide/cinematics/cinematics-slice-example-2.png)
 
 **Note**  
-The **[Transform](component-transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 
+The **[Transform](/docs/userguide/components/transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 
 
 ## Avoid Setting a Director’s Camera Track in a Sequence in a Slice<a name="avoid-setting-director-camera-track"></a>
 
 You should assume that multiple slices might be instantiated and playing back the slice sequence at the same time\. Therefore, if you have a **Director** node that sets the camera track in a sequence, that track may be playing at different local movie times simultaneously\. Also, the order of slice animation playback may change between ticks\. As a best practice, do not use the **Camera** track in **Director** nodes for sequences in slices\.
 
-For more information, see [Director \(Scene\) Node](cinematics-track-view-nodes-director.md)\.
+For more information, see [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\.

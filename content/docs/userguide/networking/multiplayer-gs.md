@@ -16,8 +16,8 @@ This tutorial guides you through the following tasks:
 
 This tutorial assumes the following:
 + You installed Amazon Lumberyard\.
-+ You created a game project\. For more information, see [Creating and Switching Game Projects](configurator-projects.md)\.
-+ Your game project has the **Multiplayer** gem\. You can enable the gem in Lumberyard's [Project Configurator](configurator-intro.md)\. After enabling the gem, [build your project](game-build-intro.md)\.
++ You created a game project\. For more information, see [Creating and Switching Game Projects](/docs/userguide/configurator/projects.md)\.
++ Your game project has the **Multiplayer** gem\. You can enable the gem in Lumberyard's [Project Configurator](/docs/userguide/configurator/intro.md)\. After enabling the gem, [build your project](game-build-intro.md)\.
 
 **Note**  
 This tutorial uses Visual Studio 2017\.
@@ -28,7 +28,7 @@ This tutorial uses Visual Studio 2017\.
 + [Step 2: Binding Sphere Transform Components to the Network](#network-multiplayer-gs-step-2-binding-sphere-transform-components-to-the-network)
 + [Step 3: Connecting a Client to the Server](#network-multiplayer-gs-step-3-connect-a-client-to-the-server)
 + [Related Tasks and Tutorials](#network-multiplayer-gs-related-tasks-and-tutorials)
-+ [Configuring the Multiplayer Sample for Amazon GameLift](network-multiplayer-gs-gamelift.md)
++ [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md)
 
 ## Step 1: Creating a Level and Adding a Sphere and a Box<a name="network-multiplayer-gs-step-1-create-a-level-and-add-a-sphere-and-a-cube"></a>
 
@@ -156,5 +156,5 @@ You have successfully created a simple networked level\. You can now use the **N
 ## Related Tasks and Tutorials<a name="network-multiplayer-gs-related-tasks-and-tutorials"></a>
 
 You have created a simple networking sample to see the effects of networking in Lumberyard\. See the following to learn more about what else you can add to your game:
-+  [Configuring the Multiplayer Sample for Amazon GameLift](network-multiplayer-gs-gamelift.md) 
++  [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md) 
 + [Using Amazon GameLift](https://docs.aws.amazon.com/lumberyard/latest/userguide/network-gamelift-using.html)

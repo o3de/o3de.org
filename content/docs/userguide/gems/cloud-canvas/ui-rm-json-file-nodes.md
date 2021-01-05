@@ -6,7 +6,7 @@ title: Working with JSON Files
 ---
 # Working with JSON Files<a name="cloud-canvas-ui-rm-json-file-nodes"></a>
 
-Some of the nodes in the **Cloud Canvas Resource Manager** navigation pane represent JSON template or settings files for your project\. The content of these files is described in detail in [Resource Definitions](cloud-canvas-resource-definitions.md)\. When you select one of these nodes in the navigation pane, the detail pane shows the contents of that file\. You can edit the file directly in the resource manager or use an external editor\. For more information, see [Editing Resource Manager Files](cloud-canvas-ui-rm-text-editing.md)\. 
+Some of the nodes in the **Cloud Canvas Resource Manager** navigation pane represent JSON template or settings files for your project\. The content of these files is described in detail in [Resource Definitions](/docs/userguide/gems/cloud-canvas/resource-definitions.md)\. When you select one of these nodes in the navigation pane, the detail pane shows the contents of that file\. You can edit the file directly in the resource manager or use an external editor\. For more information, see [Editing Resource Manager Files](/docs/userguide/gems/cloud-canvas/ui-rm-text-editing.md)\. 
 
 In the navigation pane, some template file nodes have child nodes\. Each of the child nodes represents one section of its parent node template file\. These child nodes make it easier to find and edit the corresponding sections of the parent node template file\. Any changes that you make in a child node are always saved in the corresponding section of the parent template file\. 
 
@@ -32,7 +32,7 @@ The `deployment-template.json` file defines the AWS CloudFormation stack resourc
 
 ## deployment\-access\-template\.json<a name="cloud-canvas-ui-rm-deployment-access-template.json"></a>
 
-The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment’s resources\. For more information, see [deployment\-access\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\. 
+The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment’s resources\. For more information, see [deployment\-access\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
 ## user\-settings\.json<a name="cloud-canvas-ui-rm-user-settings.json"></a>
 

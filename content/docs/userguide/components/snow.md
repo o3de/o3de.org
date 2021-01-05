@@ -14,12 +14,12 @@ title: Snow
 
 You can use the **Snow** component to create snowfall effects and create patches of snow and ice on the terrain\. You can add multiple **Snow** components to your entities in a level, but the level uses only one **Snow** component\. The last **Snow** component to activate takes priority and Lumberyard renders that component\.
 
-To enable the **Snow** component, you must enable the Snow gem\. For more information, see [Snow Gem](gems-system-gem-snow.md)\.
+To enable the **Snow** component, you must enable the Snow gem\. For more information, see [Snow Gem](/docs/userguide/gems/builtin/snow.md)\.
 
 ![\[Add the Snow component to your entity to enable snow effects in your level.\]](/images/userguide/shared-snow-component-animation-example.gif)
 
 **Note**  
-If your level has a **Snow** and **[Rain](component-rain.md)** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
+If your level has a **Snow** and **[Rain](/docs/userguide/components/rain.md)** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
 
 **Contents**
 + [Turning Snow On or Off](#component-snow-enabling-disabling)
@@ -81,7 +81,7 @@ Use the following request functions with the EBus interface to communicate with 
 
 When set, the individual setters on this bus update the snow simulation immediately; this can cause some performance implications if you want to change multiple parameters\. To avoid this, you can set multiple parameters at once with [GetSnowOptions](#get-snow-options) and [SetSnowOptions](#set-snow-options)\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 ****  

@@ -38,8 +38,8 @@ Key features of the AI system include the following:
 + Behavior tree visual editor
 
 **Topics**
-+ [AI System Overview](ai-concepts-overview.md)
-+ [Pathfinding Costs](ai-concepts-pathfinding-costs.md)
-+ [Sensory Models](ai-concepts-sensory-models.md)
-+ [AI C\+\+ Class Hierarchy](ai-concepts-cpp-classes.md)
-+ [AI System Concept Examples](ai-concepts-examples.md)
++ [AI System Overview](/docs/userguide/ai/overview.md)
++ [Pathfinding Costs](/docs/userguide/ai/pathfinding-costs.md)
++ [Sensory Models](/docs/userguide/ai/sensory-models.md)
++ [AI C\+\+ Class Hierarchy](/docs/userguide/ai/cpp-classes.md)
++ [AI System Concept Examples](/docs/userguide/ai/examples.md)

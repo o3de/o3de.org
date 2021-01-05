@@ -11,7 +11,7 @@ It is possible to expose MBT nodes from anywhere in Lumberyard code\. A node can
 
 ## Node Index<a name="ai-scripting-mbt-nodes-index"></a>
 
-### [Generic Nodes](ai-scripting-mbt-nodes-generic.md)<a name="ai-scripting-mbt-nodes-index-generic"></a>
+### [Generic Nodes](/docs/userguide/ai/scripting/mbt-nodes-generic.md)<a name="ai-scripting-mbt-nodes-index-generic"></a>
 + [Loop](ai-scripting-mbt-nodes-generic.md#ai-scripting-mbt-nodes-generic-loop)
 + [LoopUntilSuccess](ai-scripting-mbt-nodes-generic.md#ai-scripting-mbt-nodes-generic-loopuntilsuccess)
 + [Parallel](ai-scripting-mbt-nodes-generic.md#ai-scripting-mbt-nodes-generic-parallel)
@@ -23,7 +23,7 @@ It is possible to expose MBT nodes from anywhere in Lumberyard code\. A node can
 + [Timeout](ai-scripting-mbt-nodes-generic.md#ai-scripting-mbt-nodes-generic-timeout)
 + [Wait](ai-scripting-mbt-nodes-generic.md#ai-scripting-mbt-nodes-generic-wait)
 
-### [AI Nodes](ai-scripting-mbt-nodes-ai.md)<a name="ai-scripting-mbt-nodes-index-ai"></a>
+### [AI Nodes](/docs/userguide/ai/scripting/mbt-nodes-ai.md)<a name="ai-scripting-mbt-nodes-index-ai"></a>
 + [AdjustCoverStance](ai-scripting-mbt-nodes-ai.md#ai-scripting-mbt-nodes-ai-adjustcoverstance)
 + [Aim ](ai-scripting-mbt-nodes-ai.md#ai-scripting-mbt-nodes-ai-aim)
 + [AimAroundWhileUsingAMachingGun ](ai-scripting-mbt-nodes-ai.md#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun)
@@ -62,17 +62,17 @@ It is possible to expose MBT nodes from anywhere in Lumberyard code\. A node can
 + [ThrowGrenade ](ai-scripting-mbt-nodes-ai.md#ai-scripting-mbt-nodes-ai-throwgrenade)
 + [WaitUntilTime ](ai-scripting-mbt-nodes-ai.md#ai-scripting-mbt-nodes-ai-waituntiltime)
 
-### [CryAction Nodes](ai-scripting-mbt-nodes-cryaction.md)<a name="ai-scripting-mbt-nodes-index-cryaction"></a>
+### [CryAction Nodes](/docs/userguide/ai/scripting/mbt-nodes-cryaction.md)<a name="ai-scripting-mbt-nodes-index-cryaction"></a>
 + [AnimateFragment](ai-scripting-mbt-nodes-cryaction.md#ai-scripting-mbt-nodes-cryaction-animatefragment)
 
-### [Game Nodes](ai-scripting-mbt-nodes-game.md)<a name="ai-scripting-mbt-nodes-index-game"></a>
+### [Game Nodes](/docs/userguide/ai/scripting/mbt-nodes-game.md)<a name="ai-scripting-mbt-nodes-index-game"></a>
 + [InflateAgentCollisionRadiusUsingPhysicsTrick](ai-scripting-mbt-nodes-game.md#ai-scripting-mbt-nodes-game-inflateagentcollisionradiususingphysicstrick)
 + [KeepTargetAtADistance](ai-scripting-mbt-nodes-game.md#ai-scripting-mbt-nodes-game-keeptargetatadistance)
 + [Melee](ai-scripting-mbt-nodes-game.md#ai-scripting-mbt-nodes-game-melee)
 + [ScorcherDeploy](ai-scripting-mbt-nodes-game.md#ai-scripting-mbt-nodes-game-scorcherdeploy)
 + [SuppressHitReactions](ai-scripting-mbt-nodes-game.md#ai-scripting-mbt-nodes-game-suppresshitreactions)
 
-### [Flying Nodes](ai-scripting-mbt-nodes-flying.md)<a name="ai-scripting-mbt-nodes-index-flying"></a>
+### [Flying Nodes](/docs/userguide/ai/scripting/mbt-nodes-flying.md)<a name="ai-scripting-mbt-nodes-index-flying"></a>
 + [ Hover](ai-scripting-mbt-nodes-flying.md#ai-scripting-mbt-nodes-flying-hover)
 + [FlyShoot](ai-scripting-mbt-nodes-flying.md#ai-scripting-mbt-nodes-flying-flyshoot)
 + [WaitAlignedWithAttentionTarget](ai-scripting-mbt-nodes-flying.md#ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget)

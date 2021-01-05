@@ -145,7 +145,7 @@ Each transition condition is controlled by a set of parameters\. Your Lumberyard
 
 You can set this up in a game level by adding an **Actor** and an **Animation** component to an entity with the **Entity Inspector**\.
 
-For more information, see [Animation Editor Components](char-animation-editor-components.md)\.
+For more information, see [Animation Editor Components](/docs/userguide/animation/character-editor/components.md)\.
 
 ### Adding Parameters to an Animation Graph<a name="adding-parameters-to-an-animation-graph"></a>
 

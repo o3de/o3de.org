@@ -9,4 +9,4 @@ To create character animations with the Track View, you can add the **Simple Mot
 
 **Topics**
 + [Creating Character Animations with the Simple Motion Component](create-cinematics-with-simple-motion-animations-in-track-view-editor.md)
-+ [Moving an Entity in a Scene](cinematics-animation-char-move.md)
++ [Moving an Entity in a Scene](/docs/userguide/cinematics/animation-char-move.md)

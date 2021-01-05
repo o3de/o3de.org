@@ -19,7 +19,7 @@ The steps to create a `Custom::` type and an `AWS::` type are almost identical\.
    }
    ```
 
-1. Create a new resource in your `project-template.json` file of the type `Custom::ResourceTypes`\. The type should have properties that correspond to the [Resource Type Specification](cloud-canvas-cgf-adding-aws-resources-resource-type-specification.md)\. You can use a single `Custom::ResourceTypes` entry for multiple resource definitions\.
+1. Create a new resource in your `project-template.json` file of the type `Custom::ResourceTypes`\. The type should have properties that correspond to the [Resource Type Specification](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-resource-type-specification.md)\. You can use a single `Custom::ResourceTypes` entry for multiple resource definitions\.
 
 1. To add a resource definition with the `AWS::`\-prefixed typename to the resource, do one of the following:
    + If the ARN is easily computable from the region, account ID, and resource name fields, specify the corresponding formatting pattern in the `ArnFormat` field\.
@@ -29,7 +29,7 @@ The steps to create a `Custom::` type and an `AWS::` type are almost identical\.
 
       `AWS\project-code\lambda-code\lambda-directory-name\resource_types`
 
-   1. In your `Resources` block, add a resource with a custom *<lambda\-resource\-name>* name as the key\. Create the *<lambda\-resource\-definition>* contents following the [Resource Type Specification](cloud-canvas-cgf-adding-aws-resources-resource-type-specification.md)\.
+   1. In your `Resources` block, add a resource with a custom *<lambda\-resource\-name>* name as the key\. Create the *<lambda\-resource\-definition>* contents following the [Resource Type Specification](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-resource-type-specification.md)\.
 
    1. Replace the *lambda\-directory\-name* in the definition with the *lambda\-directory\-name* that you created\.
 
@@ -56,13 +56,13 @@ The steps to create a `Custom::` type and an `AWS::` type are almost identical\.
    }
    ```
 
-1. Create a new resource in your `project-template.json` file of the type `Custom::ResourceTypes`\. The type should have properties that correspond to the [Resource Type Specification](cloud-canvas-cgf-adding-aws-resources-resource-type-specification.md)\. You can use a single `Custom::ResourceTypes` entry for multiple resource definitions\.
+1. Create a new resource in your `project-template.json` file of the type `Custom::ResourceTypes`\. The type should have properties that correspond to the [Resource Type Specification](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-resource-type-specification.md)\. You can use a single `Custom::ResourceTypes` entry for multiple resource definitions\.
 
 1. Create a uniquely named *lambda\-directory\-name* directory for your gem as follows:
 
    `AWS\project-code\lambda-code\lambda-directory-name\resource_types`
 
-1. In your `Resources` block, add a resource with a custom *<lambda\-resource\-name>* name as the key\. Create the *<lambda\-resource\-definition>* contents following the [Resource Type Specification](cloud-canvas-cgf-adding-aws-resources-resource-type-specification.md)\.
+1. In your `Resources` block, add a resource with a custom *<lambda\-resource\-name>* name as the key\. Create the *<lambda\-resource\-definition>* contents following the [Resource Type Specification](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-resource-type-specification.md)\.
 
 1. Replace the *lambda\-directory\-name* in the definition with the *lambda\-directory\-name* that you created\.
 

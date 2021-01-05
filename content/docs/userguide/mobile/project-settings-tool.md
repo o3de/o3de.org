@@ -19,7 +19,7 @@ Currently, only Android and iOS are supported for platform\-specific configurati
 
 ## Settings Files<a name="mobile-project-settings-tool-settings-files"></a>
 
-The **Project Settings Tool** modifies project settings files which are located in their respective project directories\. The main settings file, [`project.json`](waf-files-projects-file.md), is located in the root directory of each project and contains cross\-platform settings for platforms such as PC and Android\. The file also contains platform\-specific settings for PC and Android\.
+The **Project Settings Tool** modifies project settings files which are located in their respective project directories\. The main settings file, [`project.json`](/docs/userguide/waf/files-projects-file.md), is located in the root directory of each project and contains cross\-platform settings for platforms such as PC and Android\. The file also contains platform\-specific settings for PC and Android\.
 
 You can find the project settings for iOS in `project_name\Root\Gem\Resources\PlatformLauncher\Info.plist`\. Plist files have a special format of XML that use dictionaries to store properties\. All plist files have some properties that are common across platforms, yet are stored in each individual file\. 
 

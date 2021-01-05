@@ -8,7 +8,7 @@ title: Infinite Ocean Component Request Bus Interface
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ## Lua Scripting<a name="infinite-ocean-component-request-bus-interface-lua-scripting"></a>
 

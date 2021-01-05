@@ -11,7 +11,7 @@ To integrate the Player Account Cloud Gem into an existing project, you must ena
 
 1. Enable the gem\. In the Project Configurator, click **Cloud Gem Player Account**\.
 
-1. [Create or update the project stack](cloud-canvas-ui-rm-project-stack.md)\.
+1. [Create or update the project stack](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md)\.
 
    The Player Account Cloud Gem uses an Amazon Cognito user pool\. If you created your project using a version of Lumberyard earlier than 1\.9, update it by opening a command prompt window in the \\dev directory and entering the following command\.
 
@@ -19,7 +19,7 @@ To integrate the Player Account Cloud Gem into an existing project, you must ena
    lmbr_aws project update
    ```
 
-1. [Create or update the deployment stack](cloud-canvas-ui-rm-deployments.md)\. Be sure the `CloudGemPlayerAccount` resource group is added to your deployment\. If your deployment doesn't have the `CloudGemPlayerAccount` resource group, make sure that the Cloud Gem Player Account gem is enabled in the Project Configurator\.
+1. [Create or update the deployment stack](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md)\. Be sure the `CloudGemPlayerAccount` resource group is added to your deployment\. If your deployment doesn't have the `CloudGemPlayerAccount` resource group, make sure that the Cloud Gem Player Account gem is enabled in the Project Configurator\.
 
 1. At a command prompt, enter the following command to update the deployment access stack\.
 

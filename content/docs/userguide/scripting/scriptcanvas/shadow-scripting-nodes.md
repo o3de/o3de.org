@@ -9,5 +9,5 @@ title: Shadow Nodes
 You use can use the following shadow nodes in the **Script Canvas** editor to configure shadow effects\.
 
 **Topics**
-+ [High Quality Shadow](script-canvas-high-quality-shadow-nodes.md)
++ [High Quality Shadow](/docs/userguide/scripting/scriptcanvas/high-quality-shadow-nodes.md)
 + [Recompute Static Shadows](recompute-static-shadows-node.md)

@@ -89,6 +89,6 @@ desc.m_certificateAuthorityPEM = myPublicCertPEM;
 client.InitializeSecurity(GridMate::Driver::BSD_AF_INET, nullptr, 0, 1024 * 64, 1024 * 64, desc);
 ```
 
-For more information about cryptographic key and security certificate options, see [Enabling Encryption](network-encryption-enabling.md)\.
+For more information about cryptographic key and security certificate options, see [Enabling Encryption](/docs/userguide/networking/encryption-enabling.md)\.
 
-For more information about using the TCP stream driver, see [Using the TCP Stream Driver](network-tcp-using.md)\.
+For more information about using the TCP stream driver, see [Using the TCP Stream Driver](/docs/userguide/networking/tcp-using.md)\.

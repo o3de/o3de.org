@@ -21,7 +21,7 @@ Where:
   + \(None\) – Built in profile mode\.
   + `Performance` – Built in performance mode\.
   + `Release` – Built in release mode\.
-+ `executable name` – The `executable_name` specified in your [`project.json`](waf-files-projects-file.md) file\. The file name typically mirrors the project name\.
++ `executable name` – The `executable_name` specified in your [`project.json`](/docs/userguide/waf/files-projects-file.md) file\. The file name typically mirrors the project name\.
 
 For example, if your project was configured with the following:
 + Compiler: Visual Studio 2017

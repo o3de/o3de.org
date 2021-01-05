@@ -9,5 +9,5 @@ title: '&cloud; Software Engineering Guide'
 This section provides in\-depth information for Cloud Canvas Resource Manager and the cloud gem framework\.
 
 **Topics**
-+ [Resource Manager in Depth](cloud-canvas-resource-manager-in-depth.md)
-+ [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md)
++ [Resource Manager in Depth](/docs/userguide/gems/cloud-canvas/resource-manager-in-depth.md)
++ [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md)

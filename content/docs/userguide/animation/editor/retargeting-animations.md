@@ -27,7 +27,7 @@ If your retargeted actor has the same bone names and transforms as the original 
 
 **To retarget motions**
 
-1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion\. Then export the file into Lumberyard\. For more information, see [Importing Assets into Lumberyard](asset-pipeline-importing.md)\.
+1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion\. Then export the file into Lumberyard\. For more information, see [Importing Assets into Lumberyard](/docs/userguide/assets/importing.md)\.
 
 1. Open Lumberyard Editor\.
 
@@ -54,7 +54,7 @@ If you receive an error, check the number of keyframes in your motion, and updat
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](animation-editor-animation-graph-user-interface.md)\.
+1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/userguide/animation/editor/animation-graph-user-interface.md)\.
 
 1. In the right pane, on the **Attributes** tab, select the **Retarget** check box\.  
 ![\[Select the Retarget check box for your animation graph in the Lumberyard Animation Editor\]](/images/userguide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)

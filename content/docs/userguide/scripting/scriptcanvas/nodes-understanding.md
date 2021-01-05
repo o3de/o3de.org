@@ -50,13 +50,13 @@ Variable nodes enable Script Canvas to read from or write to specific variables\
 
 Another way to read or write a variable is to use variable references on a node data pin\.
 
-For more information about using variables in Script Canvas, see [Managing Script Canvas Variables](script-canvas-managing-variables.md)\.
+For more information about using variables in Script Canvas, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
-For more information about creating variable references, see [Adding Variable References in Script Canvas Nodes](script-canvas-adding-variable-references.md)\.
+For more information about creating variable references, see [Adding Variable References in Script Canvas Nodes](/docs/userguide/scripting/scriptcanvas/adding-variable-references.md)\.
 
 ## Event Nodes<a name="script-canvas-nodes-understanding-event-nodes"></a>
 
-In Lumberyard's [Event Bus \(EBus\) system](ebus-intro.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes\.
+In Lumberyard's [Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes\.
 
 ### Sender Nodes<a name="script-canvas-nodes-understanding-sender-nodes"></a>
 
@@ -97,7 +97,7 @@ The following example creates a receiver node for a Light event\.
 
    The **Source** pin of the receiver node refers to the entity from which the event is received\. The default is **Self**, which means the node receives Light events for the same entity that the Script Canvas component is on\. You can change the target to any entity in the game world\.
 
-   In Lumberyard v1\.24 and later, you can also specify the target using a [variable reference](script-canvas-adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
+   In Lumberyard v1\.24 and later, you can also specify the target using a [variable reference](/docs/userguide/scripting/scriptcanvas/adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
 
 1. Click **Add/Remove Events**\.
 

@@ -10,6 +10,6 @@ Cube mapping uses the six faces of a cube as the texture for a material\. The cu
 
 Cube maps control shadow color, ambient diffuse, and particle diffuse as well as reflections\. They function as bounce lighting by taking the colors from the surroundings and applying them directly into the diffuse texture of materials inside their specified radius\. 
 
-For information about using environment probes and cubemaps, see [Environment Lighting](enviro-lighting-intro.md)
+For information about using environment probes and cubemaps, see [Environment Lighting](/docs/userguide/rendering/lighting/intro.md)
 
-Cube maps use image\-based lighting\. For more information see [Image\-Based Lighting](mat-shaders-image-lighting.md)\. 
+Cube maps use image\-based lighting\. For more information see [Image\-Based Lighting](/docs/userguide/materials/shaders/image-lighting.md)\. 

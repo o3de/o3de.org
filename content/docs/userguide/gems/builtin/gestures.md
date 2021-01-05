@@ -18,7 +18,7 @@ Single\-touch gestures \(such as tap, drag, hold, and swipe\) can be detected wi
 
 ![\[Enable the Gestures gem to detect common gesture input actions.\]](/images/userguide/gems/gestures-gem.png)
 
-To enable the Gestures gem for your project, see [Add modular features and assets with Gems](gems-system-gems.md)\.
+To enable the Gestures gem for your project, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
 **Topics**
 + [Configuring Gesture Recognizers](#configuring-gesture-recognizers)
@@ -26,7 +26,7 @@ To enable the Gestures gem for your project, see [Add modular features and asset
 
 ## Configuring Gesture Recognizers<a name="configuring-gesture-recognizers"></a>
 
-You can configure gesture recognizers with C\+\+ and the **Gestures** system component in the **System Entity Editor**\. For more information, see [Configuring Advanced Settings](configurator-advanced.md)\.
+You can configure gesture recognizers with C\+\+ and the **Gestures** system component in the **System Entity Editor**\. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
 **To configure gesture recognizers**
 
@@ -45,9 +45,9 @@ Pause on the gesture recognizer to see a description and the valid values\.
 
 Each gesture recognizer that the **Gestures** system component exposes corresponds to a gesture input channel that belongs to a gesture input device\.
 
-You can use gesture input channels in the same way as other input channels with C\+\+, Lua, or Script Canvas\. You can map the gesture input channels to gameplay actions with an **Input** component\. This component is part of the [Input Management Framework](gems-system-gem-input.md) and [Starting Point Input](gems-system-starting-point-input.md) gems\.
+You can use gesture input channels in the same way as other input channels with C\+\+, Lua, or Script Canvas\. You can map the gesture input channels to gameplay actions with an **Input** component\. This component is part of the [Input Management Framework](/docs/userguide/gems/builtin/input.md) and [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gems\.
 
-To add input to an entity, see the **[Input](component-input.md)** component\.
+To add input to an entity, see the **[Input](/docs/userguide/components/input.md)** component\.
 
 **Example Lua Script**  
 The following script listens for and responds to the default double press gesture\.  

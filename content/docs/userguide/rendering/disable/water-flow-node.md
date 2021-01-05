@@ -8,7 +8,7 @@ title: Disable Water Flow
 
 Disables water flow effects\.
 
-To enable the effect, see [Enable Water Flow](enable-water-flow-node.md)\.
+To enable the effect, see [Enable Water Flow](/docs/userguide/rendering/enable/water-flow-node.md)\.
 
 **Contents**
 + [Inputs](#disable-water-flow-note-input)

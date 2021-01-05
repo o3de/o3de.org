@@ -6,12 +6,12 @@ title: Material Variables
 ---
 # Material Variables<a name="script-canvas-variable-material-node"></a>
 
-When you use a node such as **[Find by Name](material-find-by-name-node.md)**, **[Load by Name](material-load-by-name-node.md)**, or **[Clone](material-clone-node.md)**, the script can only use the material for that one frame\. After the frame, the material is then invalid\. If you want to reuse the material in your script, you can store the material in a **Variable Material** node\. You can also use this node when you want to find or load a material only once when the game starts\.
+When you use a node such as **[Find by Name](/docs/userguide/materials/find-by-name-node.md)**, **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**, or **[Clone](/docs/userguide/materials/clone-node.md)**, the script can only use the material for that one frame\. After the frame, the material is then invalid\. If you want to reuse the material in your script, you can store the material in a **Variable Material** node\. You can also use this node when you want to find or load a material only once when the game starts\.
 
-For more information about creating variable nodes, see [Managing Script Canvas Variables](script-canvas-managing-variables.md)\.
+For more information about creating variable nodes, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
 **Note**  
-To use a material variable node, you must assign the variable to a valid material with a node such as **[Find by Name](material-find-by-name-node.md)**, **[Load by Name](material-load-by-name-node.md)**, or **[Clone](material-clone-node.md)**\.
+To use a material variable node, you must assign the variable to a valid material with a node such as **[Find by Name](/docs/userguide/materials/find-by-name-node.md)**, **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**, or **[Clone](/docs/userguide/materials/clone-node.md)**\.
 
 **Contents**
 + [Get Material Variable Node](#get-material-variable-node)
@@ -74,9 +74,9 @@ The following example uses a material variable node to make a material flash red
 
 1. The **Variable Manager** defines a variable material node named *MyMaterial*\.
 
-1. The **[Load by Name](material-load-by-name-node.md)** node specifies the `materials/gettingstartedmaterials/grid` material file and the result of the node is stored in a variable with a **Set MyMaterial** node\.
+1. The **[Load by Name](/docs/userguide/materials/load-by-name-node.md)** node specifies the `materials/gettingstartedmaterials/grid` material file and the result of the node is stored in a variable with a **Set MyMaterial** node\.
 
-1. Every 0\.5 seconds, the **Get MyMaterial** node uses the variable with the **[Set Param Color](script-canvas-material-set-param-color-node.md)** node to change the material's **diffuse** parameter from red to white\.
+1. Every 0\.5 seconds, the **Get MyMaterial** node uses the variable with the **[Set Param Color](/docs/userguide/scripting/scriptcanvas/material-set-param-color-node.md)** node to change the material's **diffuse** parameter from red to white\.
 
 ![\[Example Script Canvas editor script that uses the variable material node.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-variable-node-example.png)
 

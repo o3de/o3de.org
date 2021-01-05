@@ -17,7 +17,7 @@ The Input Management Framework gem provides a framework for managing cross\-plat
 
 ![\[Enable the Input Management Framework gem for the Input component.\]](/images/userguide/gems/input-management-framework-gem.png)
 
-The gem works with the [Starting Point Input](gems-system-starting-point-input.md) gem, which supplies the processed raw input\. The Input Management Framework gem then takes that input and converts it to user\-defined gameplay events with the **[Input](component-input.md)** component\. 
+The gem works with the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem, which supplies the processed raw input\. The Input Management Framework gem then takes that input and converts it to user\-defined gameplay events with the **[Input](/docs/userguide/components/input.md)** component\. 
 
 For an example, see [Working with the Input Component](working-with-the-input-component.md)\.
 

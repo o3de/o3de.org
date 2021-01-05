@@ -29,7 +29,7 @@ If your level has legacy entities, Lumberyard Editor detects them and prompts yo
    + If the CryEntity Removal gem is enabled, and you load a level that contains legacy entities, the Legacy Converter opens by default\. 
    + In Lumberyard Editor, choose **File**, **Upgrade Legacy Entities**\. 
 **Note**  
-The CryEntity Removal gem disables all legacy features in Lumberyard Editor\. For more information, see the [CryEntity Removal Gem](gems-system-cryentity-removal-gem.md)\.
+The CryEntity Removal gem disables all legacy features in Lumberyard Editor\. For more information, see the [CryEntity Removal Gem](/docs/userguide/gems/cryentity-removal-gem.md)\.
 
 1. The dialog box shows the number of legacy entities in your level\. Choose **Convert Entities**\. 
 
@@ -45,7 +45,7 @@ If the Legacy Converter can't convert an entity, a **Conversion Error** dialog b
 
 The Legacy Converter converts each legacy entity to its corresponding component entity\. For a list of legacy entities, see the [Entity Reference](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-entity-library.html) in the *Amazon Lumberyard Legacy Reference*\.
 
-Converted entities keep the same position in the viewport\. For more information, see [Using the Viewport](lumberyard-editor-viewport.md)\. 
+Converted entities keep the same position in the viewport\. For more information, see [Using the Viewport](/docs/userguide/editor/viewport.md)\. 
 
 **Note**  
 Some legacy entities cannot be converted at this time\. 
@@ -71,7 +71,7 @@ See the following tables for the converted component entity\.
 
 ### Area Box Entity<a name="cry-area-box-entity"></a>
 
-An area box entity is converted to a component entity that is attached with a **[Box Shape](component-shapes.md)** component\.
+An area box entity is converted to a component entity that is attached with a **[Box Shape](/docs/userguide/components/shapes.md)** component\.
 
 
 ****  
@@ -84,7 +84,7 @@ An area box entity is converted to a component entity that is attached with a **
 
 ### Area Sphere Entity<a name="cry-area-sphere-entity"></a>
 
-An area sphere entity is converted to a component entity that is attached with a **[Sphere Shape](component-shapes.md)** component\.
+An area sphere entity is converted to a component entity that is attached with a **[Sphere Shape](/docs/userguide/components/shapes.md)** component\.
 
 
 ****  
@@ -95,7 +95,7 @@ An area sphere entity is converted to a component entity that is attached with a
 
 ### Brush, Geom, and Simple Entities<a name="cry-brush-geom-simple-entities"></a>
 
-The brush, geom, and simple entities are converted to a component entity that is attached with a **[Mesh](component-static-mesh.md)** component or **[Skinned Mesh](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-skinned-mesh.html)** component, depending on the asset type\.
+The brush, geom, and simple entities are converted to a component entity that is attached with a **[Mesh](/docs/userguide/components/static-mesh.md)** component or **[Skinned Mesh](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-skinned-mesh.html)** component, depending on the asset type\.
 
 
 ****  
@@ -107,7 +107,7 @@ The brush, geom, and simple entities are converted to a component entity that is
 
 ### Camera Entity<a name="cry-camera-entity"></a>
 
-A camera entity is converted to a component entity that is attached with a **[Camera](component-camera.md)** component\.
+A camera entity is converted to a component entity that is attached with a **[Camera](/docs/userguide/components/camera.md)** component\.
 
 
 ****  
@@ -141,7 +141,7 @@ Default: None   Using the Comment Component You can use this feature by adding t
 
 ### Environment Probe Entity<a name="cry-environment-probe-entity"></a>
 
-The environment probe entity is converted to a component entity that is attached with an **[Environment Probe](component-environment-probe.md)** component\.
+The environment probe entity is converted to a component entity that is attached with an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component\.
 
 
 ****  
@@ -171,7 +171,7 @@ The environment probe entity is converted to a component entity that is attached
 
 ### Decal Entity<a name="cry-decal-entity"></a>
 
-A decal entity is converted to a component entity that is attached with a **[Decal](component-decal.md)** component\.
+A decal entity is converted to a component entity that is attached with a **[Decal](/docs/userguide/components/decal.md)** component\.
 
 
 ****  
@@ -189,7 +189,7 @@ A decal entity is converted to a component entity that is attached with a **[Dec
 ### Designer Objects<a name="cry-designer-objects"></a>
 
 The Legacy Converter converts designer objects to a component entity that is attached with the following components:
-+ **[Mesh](component-static-mesh.md)**
++ **[Mesh](/docs/userguide/components/static-mesh.md)**
 + **[Static Physics](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-static-physics.html)** component\.
 + **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**
 
@@ -241,11 +241,11 @@ If a legacy entity belongs to a layer and a group, the converted component entit
 
 ### Light Entity<a name="cry-light-entity"></a>
 
-A light entity with the **Planar Light** setting specified is converted to a component entity that is attached with a **[Area Light](component-area-light.md)** component\.
+A light entity with the **Planar Light** setting specified is converted to a component entity that is attached with a **[Area Light](/docs/userguide/components/area-light.md)** component\.
 
-A light entity with the **Projector** setting specified to **Texture** is converted to a component entity attached with a **[Projector Light](component-projector-light.md) **component\.
+A light entity with the **Projector** setting specified to **Texture** is converted to a component entity attached with a **[Projector Light](/docs/userguide/components/projector-light.md) **component\.
 
-A light entity with neither the **Planar Light** or **Projector** setting specified to **Texture** is converted to a component entity attached with a **[Point Light](component-point-light.md)** component
+A light entity with neither the **Planar Light** or **Projector** setting specified to **Texture** is converted to a component entity attached with a **[Point Light](/docs/userguide/components/point-light.md)** component
 
 
 ****  
@@ -305,7 +305,7 @@ A light entity with neither the **Planar Light** or **Projector** setting specif
 
 ### Light Entity with Lens Flare<a name="cry-light-entity-with-lens-flare"></a>
 
-A light entity with a lens flare is converted to a component entity that is attached with a **[Lens Flare](component-lens-flare.md)** component and a light component\.
+A light entity with a lens flare is converted to a component entity that is attached with a **[Lens Flare](/docs/userguide/components/lens-flare.md)** component and a light component\.
 
 The lens flare asset that is specified for a light entity is converted to the **Lens Flare** component settings: **Library** and **Lens flare**\.
 
@@ -318,7 +318,7 @@ The lens flare asset that is specified for a light entity is converted to the **
 
 ### Particle Effect Entity<a name="cry-particle-effect-entity"></a>
 
-The particle effect entity is converted to a component entity that is attached with a **[Particle](component-particle.md)** component\.
+The particle effect entity is converted to a component entity that is attached with a **[Particle](/docs/userguide/components/particle.md)** component\.
 
 
 ****  
@@ -336,7 +336,7 @@ The particle effect entity is converted to a component entity that is attached w
 
 ### Proximity Trigger Entity<a name="cry-proximity-trigger"></a>
 
-A proximity trigger entity is converted to a component entity attached with a **[Box Shape](component-shapes.md)** component, and a **[Trigger Area](component-triggerarea.md)** component\.
+A proximity trigger entity is converted to a component entity attached with a **[Box Shape](/docs/userguide/components/shapes.md)** component, and a **[Trigger Area](/docs/userguide/components/triggerarea.md)** component\.
 
 
 ****  

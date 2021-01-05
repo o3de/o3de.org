@@ -19,7 +19,7 @@ lmbr_aws dynamic-content upload-manifest-content --manifest-path <manifest name>
 + *<PUBLIC\|PRIVATE\|WINDOW>* – \(Optional\) Use PUBLIC to release the content immediately\. Use WINDOW with `--start-date` and `--end-date` to specify a range during which the content will be publicly available\. Defaults to PRIVATE\.
 
 **Note**  
-For information on using the Lumberyard user interface to upload content, see [Using Dynamic Content Manager](cloud-canvas-cloud-gem-dc-manager.md) and [Managing Dynamic Content Packages](cloud-canvas-cloud-gem-dc-managing-packages.md)\.
+For information on using the Lumberyard user interface to upload content, see [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md) and [Managing Dynamic Content Packages](/docs/userguide/gems/cloud-canvas/dc-managing-packages.md)\.
 
 ## Dynamic Content Versioning<a name="cloud-canvas-cloud-gem-dc-versioning"></a>
 

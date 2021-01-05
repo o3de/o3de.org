@@ -20,10 +20,10 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Add a servant parameter action to the primary graph to send change events to the secondary graph\.
 
-1. Synchronize the graphs by using Lumberyard's [Event Bus \(EBus\)](ebus-intro.md) system and Lua script\.
+1. Synchronize the graphs by using Lumberyard's [Event Bus \(EBus\)](/docs/userguide/programming/ebus/intro.md) system and Lua script\.
 
 **Note**  
-For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](network-synchronizing-animation.md)\.
+For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md)\.
 
 This topic illustrates this graph synchronization with an example that has two actors, a robot actor \("Jack"\) and a gun actor\. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires\. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire\.
 
@@ -69,10 +69,10 @@ After you set up your entities and components, create a motion set and two anima
 
 **To create a motion set and two animation graphs**
 
-1. Create a motion set\. For information about creating a motion set, see [Getting Started with the Animation Editor](animation-editor-quick-start.md)\. This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`\.  
+1. Create a motion set\. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/userguide/animation/editor/quick-start.md)\. This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`\.  
 ![\[Example motion set.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-2.png)
 
-1. Create a secondary animation graph\. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](animation-editor-quick-start.md)\. The secondary graph controls one or more entities whose actions are determined by the primary graph\.
+1. Create a secondary animation graph\. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/userguide/animation/editor/quick-start.md)\. The secondary graph controls one or more entities whose actions are determined by the primary graph\.
 
    This example's `syncFeature_Gun` secondary graph has a **BindPose0** node and a **Motion0** node\. The **Motion0** node contains the `gunshootanimation` motion\.  
 ![\[Motion node with associated animation.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-3.png)
@@ -226,7 +226,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity\.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in Lumberyard's [Event Bus \(EBus\)](ebus-intro.md) system\.
+The Lua scripts synchonize the two graphs by handling animation graph events in Lumberyard's [Event Bus \(EBus\)](/docs/userguide/programming/ebus/intro.md) system\.
 
 ### Getting Input from the Player<a name="char-animation-editor-sync-graph-get-input-from-the-player"></a>
 
@@ -242,9 +242,9 @@ In the example, the synchronization state of the primary and secondary graphs an
 | S | Fires the gun\. | 1 | 
 | D | Stops the gun from firing\. | \-1 | 
 
-To gather these inputs, the example adds [Input](component-input.md) components to the robot entity and to the gun entity\.
+To gather these inputs, the example adds [Input](/docs/userguide/components/input.md) components to the robot entity and to the gun entity\.
 
-To use the Input component, you must enable the [Input Management Framework](gems-system-gem-input.md) gem and the [Starting Point Input](gems-system-starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
+To use the Input component, you must enable the [Input Management Framework](/docs/userguide/gems/builtin/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
 
 Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in Lumberyard Editor to create an input bindings file\. For more information, see [Working with the Input Component](working-with-the-input-component.md)\.
 
@@ -264,7 +264,7 @@ The following image shows the corresponding input bindings in the **Input Bindin
 
 ### Using a Script on the Secondary Graph to Toggle Synchronization<a name="char-animation-editor-sync-graph-using-a-script-on-the-subordinate-graph-to-toggle-synchronization"></a>
 
-The example uses Lua Script components on both the primary \(robot\) and secondary \(gun\) entities\. The script on the primary entity controls the firing of the gun\. The script on the secondary entity controls the sync mode\. To add a Lua script to an entity, add a [Lua Script component](lua-scripting-intro-add-script-to-component.md) to the entity and then attach the script to the component\.
+The example uses Lua Script components on both the primary \(robot\) and secondary \(gun\) entities\. The script on the primary entity controls the firing of the gun\. The script on the secondary entity controls the sync mode\. To add a Lua script to an entity, add a [Lua Script component](/docs/userguide/scripting/lua/intro-add-script-to-component.md) to the entity and then attach the script to the component\.
 
 The Lua script on the gun entity receives the input from the keyboard to toggle the sync mode\. To synchronize the secondary graph to the primary graph, the script uses the `SyncAnimGraph` EBus event\. In the following example, the `self.entityId` parameter refers to the secondary entity \(the gun\)\. The `self.Properties.PrimaryEntity` parameter refers to the robot\.
 

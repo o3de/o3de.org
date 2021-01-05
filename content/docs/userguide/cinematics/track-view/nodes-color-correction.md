@@ -17,4 +17,4 @@ You use the **Color Correction** node to change the CMYK, brightness, contrast, 
 1. To position a key, double\-click the preferred location on its highlighted row in the timeline\. Double\-click the green marker, and then under **Key Properties** enter an applicable value for **Value**\.
 
 **Note**  
-To have change correction dynamically based on a variable, you can use the **[Enable Color Correction](enable-color-correction-node.md)** node in the **Script Canvas** editor\.
+To have change correction dynamically based on a variable, you can use the **[Enable Color Correction](/docs/userguide/rendering/enable/color-correction-node.md)** node in the **Script Canvas** editor\.

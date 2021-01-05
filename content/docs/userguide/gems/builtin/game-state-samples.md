@@ -6,11 +6,11 @@ title: GameState Samples Gem
 ---
 # GameState Samples Gem<a name="gems-system-gem-game-state-samples"></a>
 
-The GameState Samples gem uses the [GameState Gem](gems-system-gem-game-state.md) to provide a set of sample game states that control the high\-level flow of a game\.
+The GameState Samples gem uses the [GameState Gem](/docs/userguide/gems/builtin/game-state.md) to provide a set of sample game states that control the high\-level flow of a game\.
 
 ![\[The GameState Samples gem in Project Configurator.\]](/images/userguide/gems/gems-system-gem-game-state-samples-1.png)
 
-For information about enabling the GameState Samples gem, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+For information about enabling the GameState Samples gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 ## Game States Included<a name="gems-system-gem-game-state-samples-game-states-included"></a>
 

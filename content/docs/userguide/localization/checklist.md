@@ -17,4 +17,4 @@ To use localization in your game, verify that you have done the following:
 
 1. Initialized the [Localization Manager](localization-initialization.md#localization-initialization-manager) in your game's startup code\.
 
-After completing these steps, you can start localizing text by passing in the localized key string to the localization manager\. Note that some Lumberyard systems, such as the [UI System](localization-ui.md), already [attempt to localize text for you](localization-initialization.md#localization-initialization-text)\.
+After completing these steps, you can start localizing text by passing in the localized key string to the localization manager\. Note that some Lumberyard systems, such as the [UI System](/docs/userguide/localization/ui.md), already [attempt to localize text for you](localization-initialization.md#localization-initialization-text)\.

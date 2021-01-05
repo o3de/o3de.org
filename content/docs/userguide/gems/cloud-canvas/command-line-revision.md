@@ -7,7 +7,7 @@ title: Command Reorganization
 
 As of Lumberyard 1\.9, the commands made available by the `lmbr_aws` command line tool have been reorganized\. The previous commands are still functional but are subject to removal in a future release\.
 
-The following table shows how the previous commands map to the new commands\. In a few cases single commands have been split into two or more commands for clarity and ease of use\. These are commented accordingly\. For information about the commands, see [Using the Cloud Canvas Command Line](cloud-canvas-command-line.md)\.
+The following table shows how the previous commands map to the new commands\. In a few cases single commands have been split into two or more commands for clarity and ease of use\. These are commented accordingly\. For information about the commands, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\.
 
 
 ****  

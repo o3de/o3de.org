@@ -8,16 +8,16 @@ title: VR Box Garden Level
 
 The VR Box Garden level shows you how to use the Lumberyard component entity system to set up a VR playspace, basic VR gameplay, and controller tracking\. You use Script Canvas and Lua for VR device tracking, input events, and corresponding gameplay events\.
 
-For more information about installing the project that includes the VR Box Garden level, see [Virtual Reality Samples Project](sample-project-virtual-reality.md)\.
+For more information about installing the project that includes the VR Box Garden level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 
 ## VR Device Tracking and Controller Gameplay<a name="sample-level-vr-box-garden-vr-device-tracking-controller-gameplay"></a>
 
 The VR Box Garden level uses the following:
 + `Input Configurator` entity – Handles VR device tracking and input events\.
-+ **[Input](component-input.md)** component – Defines input events that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.
-+ **[Lua Script](component-lua-script.md)** component – Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.
++ **[Input](/docs/userguide/components/input.md)** component – Defines input events that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.
++ **[Lua Script](/docs/userguide/components/lua-script.md)** component – Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.
 
-The level uses a `controller_right.slice` for the right controller and a `controller_left.slice` for the left controller\. These controllers listen for input events and spawn projectiles when an event is detected\. The projectile entities use the **[Script Canvas](component-script-canvas.md)** component to move forward\.
+The level uses a `controller_right.slice` for the right controller and a `controller_left.slice` for the left controller\. These controllers listen for input events and spawn projectiles when an event is detected\. The projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
 
 All slices for the VR Box Garden level are located in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 
@@ -25,8 +25,8 @@ The VR Box Garden level uses the following scripts:
 + `vrdevice_tracking` Lua script – Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
 + `input_play_sound` Lua script – Plays a spawning sound when an input event is triggered\. The **Lua Script** component specifies the sound to play\.
 **Note**  
-To play sound correctly, you must add both the **[Audio Proxy](component-audio-proxy.md)** component and the **[Audio Trigger](component-audio-trigger.md)** component on the entity\.
-+ Script Canvas graph – Spawns a projectile\. The **[Spawner](component-spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
+To play sound correctly, you must add both the **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** component and the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** component on the entity\.
++ Script Canvas graph – Spawns a projectile\. The **[Spawner](/docs/userguide/components/spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
 
 ## VR Playspace<a name="sample-level-vr-box-garden-vr-playspace"></a>
 

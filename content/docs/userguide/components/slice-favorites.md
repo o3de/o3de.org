@@ -6,7 +6,7 @@ title: Slice Favorites
 ---
 # Slice Favorites<a name="component-slice-favorites"></a>
 
-You can flag a slice as a favorite to make it easier to access and instantiate into your scenes\. To use the slice favorites feature, enable the [Slice Favorites](gems-system-gem-slice-favorites.md) gem\.
+You can flag a slice as a favorite to make it easier to access and instantiate into your scenes\. To use the slice favorites feature, enable the [Slice Favorites](/docs/userguide/gems/builtin/slice-favorites.md) gem\.
 
 Slice favorites are:
 + Saved per user and per project\.

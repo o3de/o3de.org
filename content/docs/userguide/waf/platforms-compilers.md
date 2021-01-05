@@ -5,7 +5,7 @@ title: Waf Supported Operating Systems and Compilers
 ---
 # Waf Supported Operating Systems and Compilers<a name="waf-platforms-compilers"></a>
 
-This topic provides information about the operating systems and compilers that Waf supports\. For more information about supported configurations, see [Waf Commands and Options](waf-commands.md)\.
+This topic provides information about the operating systems and compilers that Waf supports\. For more information about supported configurations, see [Waf Commands and Options](/docs/userguide/waf/commands.md)\.
 
 
 **Supported operating systems**  

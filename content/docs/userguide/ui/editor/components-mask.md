@@ -36,11 +36,11 @@ When you add a **Mask** component, the default mask is the visual component on t
 
 You can make the mask movable to use in an animation\. To do so without moving all of its children, you can use a special child element as a mask visual in addition to the visual component on the mask element\. This child mask element can have as many children as you need to draw your mask visual\.
 
-Masks are commonly used with a [ScrollBox prefab element](ui-editor-components-scrollbox.md)\.
+Masks are commonly used with a [ScrollBox prefab element](/docs/userguide/ui/editor/components-scrollbox.md)\.
 
 **To add simple mask with an Image component as the visual**
 
-1. In the [**UI Editor**](ui-editor-using.md) toolbar, choose **New**, **Empty Element**\. This is the parent element\.
+1. In the [**UI Editor**](/docs/userguide/ui/editor/using.md) toolbar, choose **New**, **Empty Element**\. This is the parent element\.
 
 1. In the **Properties** pane, choose **Add Component**, **Image** to add an **Image** component\.
 
@@ -61,6 +61,6 @@ Masks are commonly used with a [ScrollBox prefab element](ui-editor-components-s
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**\.
 
 **To edit a Mask component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **Mask** and specify the following parameters, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Mask** and specify the following parameters, as appropriate:    
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-components-mask.html)

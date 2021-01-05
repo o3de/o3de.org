@@ -7,8 +7,8 @@ title: Sprite Editor
 # Sprite Editor<a name="ui-editor-sprite-editor"></a>
 
 The **Sprite Editor** configures the following sprite configurations:
-+ Border values for [sliced image types](ui-editor-component-9-sliced.md)
-+ [Sprite sheets](ui-editor-component-sprite-sheets.md)
++ Border values for [sliced image types](/docs/userguide/ui/editor/component-9-sliced.md)
++ [Sprite sheets](/docs/userguide/ui/editor/component-sprite-sheets.md)
 
 You open the **Sprite Editor** from the **Image** component's properties\. 
 
@@ -31,4 +31,4 @@ The **Sprite Editor** has the following features:
   + **Image resolution** – The size of the image\.
   + **Alias** – A short description of what the cell represents\. Use this setting to improve the readability of sprite\-sheet index values\. You can use the same alias string for multiple sprite sheet cells\.
   + **Top**, **Bottom**, **Left**, **Right** – The number of pixels from the respective edge of the image where the sliced region is situated\.
-+ **Configure Spritesheet** – Available only for sprites that are not currently configured as a sprite sheet\. For more information, see [Configuring Sprite Sheets](ui-editor-component-sprite-sheets.md)\.
++ **Configure Spritesheet** – Available only for sprites that are not currently configured as a sprite sheet\. For more information, see [Configuring Sprite Sheets](/docs/userguide/ui/editor/component-sprite-sheets.md)\.

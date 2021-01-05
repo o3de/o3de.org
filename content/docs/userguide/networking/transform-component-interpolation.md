@@ -6,7 +6,7 @@ title: Transform Component Interpolation
 ---
 # Transform Component Interpolation<a name="network-transform-component-interpolation"></a>
 
-The **[Transform](component-transform.md)** component supports local interpolation of its position and rotation values when it is synchronized over the network\.
+The **[Transform](/docs/userguide/components/transform.md)** component supports local interpolation of its position and rotation values when it is synchronized over the network\.
 
 You can use the interpolation of transform values to smooth changes in the movement and orientation of your entities when they are controlled by your server application\. In Lumberyard, networking is accomplished through replicas that can either be primary replicas or proxy replicas\. Primary replicas are typically server application controllers that set the values directly\. Proxy replicas, typically on client applications, receive regular updates from the primary replicas\. Due to changing network conditions, updates can be delayed or come at varying time intervals\. Under these conditions, interpolation enables your clients to smooth the movement of entities being controlled over the network\. It does this by gradually modifying transform values until they match the last received values from the network\.
 
@@ -31,4 +31,4 @@ Scale interpolation is not supported in the Transform component\.
 
 The Transform component is optimized for network bandwidth\. If your entity is synchronized over the network but only changes position, then only new position values are sent across the network\. This avoids the network cost of sending the entire transform\. The same is true for rotation or scale of the transform\. This is done automatically\. You do not have to change any settings to use this feature\.
 
-For information on providing your own interpolation logic for the Transform component, see [Providing Your Own Interpolation Logic for the Transform Component](network-providing-custom-interpolation-logic.md)\.
+For information on providing your own interpolation logic for the Transform component, see [Providing Your Own Interpolation Logic for the Transform Component](/docs/userguide/networking/providing-custom-interpolation-logic.md)\.

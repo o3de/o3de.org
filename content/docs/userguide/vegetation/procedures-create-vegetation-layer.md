@@ -14,7 +14,7 @@ Creating a vegetation layer is the first and most basic step in creating your dy
    In this example, the entity is named *BasicCoverage*\.  
 ![\[Create an entity and name it BasicCoverage.\]](/images/userguide/vegetation/dynamic/create-vegetation-layer-basic-coverage.png)
 
-1. [Add](component-working-adding.md) the **Vegetation Layer Spawner** component to your entity\.  
+1. [Add](/docs/userguide/components/working-adding.md) the **Vegetation Layer Spawner** component to your entity\.  
 ![\[Add the Vegetation Layer Spawner component to your entity.\]](/images/userguide/vegetation/dynamic/create-vegetation-layer-layer-spawner.png)
 
    The **Vegetation Layer Spawner** component is the core component that initializes the engine that spawns vegetation\.

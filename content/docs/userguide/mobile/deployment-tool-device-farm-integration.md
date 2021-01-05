@@ -7,7 +7,7 @@ title: Using &ATPlong; in &ly-editor;
 
 Use [AWS Device Farm ](https://aws.amazon.com/device-farm/)to test your Android or iOS apps on many different types of devices without needing to have any of them present physically\. Device Farm can help you find and resolve compatibility issues on a large number of devices\. For more information about Device Farm, see the [Device Farm Developer Guide](https://docs.aws.amazon.com/devicefarm/latest/developerguide/)\.
 
-Starting in Lumberyard version 1\.20, you can use the Lumberyard Editor [Deployment Tool](android-build-deploy.md) to make Device Farm a deployment target\.
+Starting in Lumberyard version 1\.20, you can use the Lumberyard Editor [Deployment Tool](/docs/userguide/mobile/android/build-deploy.md) to make Device Farm a deployment target\.
 
 ![\[Lumberyardintegration with AWS Device Farm.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-1.png)
 
@@ -17,7 +17,7 @@ To use Device Farm in Lumberyard Editor, you need the following requirements:
 + The Cloud Gem Framework gem, enabled for your project in the Project Configurator\.  
 ![\[The Cloud Gem Framework gem in Project Configurator.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-2.png)
 
-  For information about using Project Configurator to enable gems, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+  For information about using Project Configurator to enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 + A set of Amazon Web Services \(AWS\) credentials and access keys\.
   + If you do not have an AWS account, complete the following steps to create one\.
 
@@ -30,7 +30,7 @@ To use Device Farm in Lumberyard Editor, you need the following requirements:
        Part of the sign\-up procedure involves receiving a phone call and entering a verification code on the phone keypad\.
   + For more information about access keys, see [How do I create an AWS access key?](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/)\. 
   + For information about the AWS Free Tier, see the [AWS Free Tier](https://aws.amazon.com/free/) page\.
-+ Device Farm requires that you have a shader compiler running on an Amazon Elastic Compute Cloud \(Amazon EC2\) instance\. For more information, see [Running the Shader Compiler on Amazon EC2](ios-android-running-shader-compiler-amazon-EC2.md)\.
++ Device Farm requires that you have a shader compiler running on an Amazon Elastic Compute Cloud \(Amazon EC2\) instance\. For more information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
 ### Creating an AWS Profile in Lumberyard Editor<a name="ios-android-deployment-tool-device-farm-integration-creating-an-aws-profile-in-lumberyard-editor"></a>
 

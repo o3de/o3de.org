@@ -12,7 +12,7 @@ Lumberyard offers a versioning system that makes it easier to update a project f
 + Lumberyard can provide multiple versions of the Cloud Gem Framework and the resource manager at the same time\.
 + Lumberyard can innovate while still supporting gems that depend on early versions of the framework\.
 
-This document describes these changes at an architectural level\. For concrete steps on updating existing projects and gems to use versioning, see [Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework](cloud-canvas-cgf-updating-projects-gems.md)\.
+This document describes these changes at an architectural level\. For concrete steps on updating existing projects and gems to use versioning, see [Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-updating-projects-gems.md)\.
 
 ## Versioning Convention<a name="cloud-canvas-cgf-rm-versioning-convention"></a>
 
@@ -99,4 +99,4 @@ Starting in Lumberyard 1\.10, you can use extension files to add resources to ea
 
 The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](cloud-canvas-command-line-cgf.md#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Before Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.
 
-In version 1\.10, Lumberyard adds a general purpose code sharing mechanism\. You can use this mechanism to include a single copy of the service API dispatch code in all the Lambda functions that require it\. For more information, see [Using Shared Code](cloud-canvas-cgf-shared-code.md)\.
+In version 1\.10, Lumberyard adds a general purpose code sharing mechanism\. You can use this mechanism to include a single copy of the service API dispatch code in all the Lambda functions that require it\. For more information, see [Using Shared Code](/docs/userguide/gems/cloud-canvas/cgf-shared-code.md)\.

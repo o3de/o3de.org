@@ -6,7 +6,7 @@ title: Trigger Area
 ---
 # Trigger Area<a name="component-triggerarea"></a>
 
-The **Trigger Area** component provides generic triggering services by using [Shape](component-shapes.md) components as its bounds\. 
+The **Trigger Area** component provides generic triggering services by using [Shape](/docs/userguide/components/shapes.md) components as its bounds\. 
 
 **To add a trigger component**
 
@@ -50,7 +50,7 @@ A list of tags that exclude an entity from triggering this area\.
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 ### AddRequiredTag<a name="triggerarea-ebus-addrequiredtag"></a>
 
@@ -111,7 +111,7 @@ Yes
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 The **Trigger** component sends notifications to:
 + Entities listening on the TriggerAreaNotificationBus for the entity with the trigger on it\.

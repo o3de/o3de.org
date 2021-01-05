@@ -5,11 +5,11 @@ title: Adding C++ Code to a &ALY; Game with Gems
 ---
 # Adding C\+\+ Code to a Lumberyard Game with Gems<a name="component-entity-system-pg-gems-code"></a>
 
-To add C\+\+ code or assets to your Lumberyard game, use a [gem](gems-system-gems.md)\. This document shows you how to create a gem and the various techniques that you can use to add code to it\.
+To add C\+\+ code or assets to your Lumberyard game, use a [gem](/docs/userguide/gems/builtin/s.md)\. This document shows you how to create a gem and the various techniques that you can use to add code to it\.
 
 ## Creating and Configuring Gems<a name="component-entity-system-pg-gems-code-create-configure"></a>
 
-Creating a gem is straightforward\. To create or enable a gem for your game project, follow the steps in the [Add modular features and assets with Gems](gems-system-gems.md)\. The gem that you create or enable is located in the `\dev\Gems\<gem name>` directory\. The gem's directory structure is similar to the following example\. Your gem might not have all the directories listed\.
+Creating a gem is straightforward\. To create or enable a gem for your game project, follow the steps in the [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\. The gem that you create or enable is located in the `\dev\Gems\<gem name>` directory\. The gem's directory structure is similar to the following example\. Your gem might not have all the directories listed\.
 
 ```
 \3rdParty
@@ -36,13 +36,13 @@ The `\dev\Gems\<gem name>\Code` subdirectory has the following items that Lumber
 
 | **Item** | **Location** | 
 | --- | --- | 
-| An empty [EBus](ebus-intro.md) include file that is named after the gem\. | \\Include\\<gem name>\\<gem name>Bus\.h | 
+| An empty [EBus](/docs/userguide/programming/ebus/intro.md) include file that is named after the gem\. | \\Include\\<gem name>\\<gem name>Bus\.h | 
 | The AZ module for the gem | \\Source\\<gem name>Module\.cpp | 
 | The default systems component files |  `\Source\<gem name>SystemComponent.h` `\Source\<gem name>SystemComponent.cpp`  | 
 | Standard precompiled header files |  `\Source\StdAfx.h` `\Source\StdAfx.cpp`  | 
 | Skeleton unit test source file | \\Tests\\<gem name>Test\.cpp | 
 
-Lumberyard also creates certain [Waf](waf-intro.md)–related files in the `\dev\Gems\<gem name>\Code` subdirectory\. These files specify the source code content and how the gem is defined and built\.
+Lumberyard also creates certain [Waf](/docs/userguide/waf/intro.md)–related files in the `\dev\Gems\<gem name>\Code` subdirectory\. These files specify the source code content and how the gem is defined and built\.
 
 
 ****  
@@ -53,7 +53,7 @@ Lumberyard also creates certain [Waf](waf-intro.md)–related files in the `\dev
 | Manifest file that lists additional files to for test configuration builds \(for example, Tests/<gem name>Test\.cpp\) | <gem name>\_tests\.waf\_files | 
 | Waf build script file that defines the gem | wscript | 
 
-The manifest file that manages the source code uses the Lumberyard Waf `waf_files` schema to define the source files, their Microsoft Visual Studio filter, and [uber](waf-uber-files.md) file grouping\. The default `<gem name>.waf_files` that the Project Configurator generates looks like the following:
+The manifest file that manages the source code uses the Lumberyard Waf `waf_files` schema to define the source files, their Microsoft Visual Studio filter, and [uber](/docs/userguide/waf/uber-files.md) file grouping\. The default `<gem name>.waf_files` that the Project Configurator generates looks like the following:
 
 ```
 {
@@ -91,9 +91,9 @@ To update code in your gem, add a third\-party library, new source code files, s
 
 ### Adding an External Third\-Party Library to a Gem<a name="component-entity-system-pg-gems-code-updating-adding-third-party-library"></a>
 
-A gem can use any Lumberyard third\-party library, including its own private third\-party library\. To register a private third\-party library for a gem, create a third\-party configuration file in the `\3rdParty` directory of the gem\. For more information, see [Adding Third\-Party Libraries](waf-adding-third-party-libraries.md)\.
+A gem can use any Lumberyard third\-party library, including its own private third\-party library\. To register a private third\-party library for a gem, create a third\-party configuration file in the `\3rdParty` directory of the gem\. For more information, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md)\.
 
-When you set the configuration file to an external third\-party library, the library can be added as a gem dependency through the Waf dependency mechanism\. For information about third\-party library configuration files, see [Creating Third\-Party Library Configuration Files for Waf](waf-third-party-library-configurations.md)\.
+When you set the configuration file to an external third\-party library, the library can be added as a gem dependency through the Waf dependency mechanism\. For information about third\-party library configuration files, see [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
 Waf uses two conventions to add dependencies to third\-party libraries: `uselib` and `use`\. The convention `uselib` is a wscript keyword that configures a module to link to a library's include path, library path, and library\. If a gem uses `uselib` to consume its gem\-specific library, then that library is available to the gem only for compiling and linking\.
 
@@ -101,7 +101,7 @@ The convention `use` is similar to the `uselib` keyword, except that the library
 
 ### Adding New Source C\+\+ Files to Gems<a name="component-entity-system-pg-gems-code-updating-adding-code"></a>
 
-To add source code \(for example, C\+\+ or Qt\) to a gem, use the Lumberyard [Using the Waf Build System](waf-intro.md)\. Place internal source files \(that is, files not meant to be exposed outside of the gem\) under the `\Code\Source` directory\. Place header files that can be included in projects or other gems in the `\Code\Include\<gem name>\` directory\. Place additional unit tests in the `\Code\Tests` directory\.
+To add source code \(for example, C\+\+ or Qt\) to a gem, use the Lumberyard [Using the Waf Build System](/docs/userguide/waf/intro.md)\. Place internal source files \(that is, files not meant to be exposed outside of the gem\) under the `\Code\Source` directory\. Place header files that can be included in projects or other gems in the `\Code\Include\<gem name>\` directory\. Place additional unit tests in the `\Code\Tests` directory\.
 
 **To add code files to a gem**
 
@@ -113,7 +113,7 @@ To add source code \(for example, C\+\+ or Qt\) to a gem, use the Lumberyard [Us
 
 ### Adding System Components<a name="component-entity-system-pg-gems-code-updating-adding-system-components"></a>
 
-New gems come with a default system component called **<gem name>*SystemComponent*\. You can modify this system component according to your requirements\. To communicate with the system component, you can define as many EBuses as required\. If you want to add additional components, you must add the component descriptor to the AZ module for the gem \( `\Code\Source\<gem name>Module.cpp`\)\. For more information, see [System Components](az-module-system-components.md) and [Creating System Components](component-entity-system-pg-creating-system-components.md)\.
+New gems come with a default system component called **<gem name>*SystemComponent*\. You can modify this system component according to your requirements\. To communicate with the system component, you can define as many EBuses as required\. If you want to add additional components, you must add the component descriptor to the AZ module for the gem \( `\Code\Source\<gem name>Module.cpp`\)\. For more information, see [System Components](/docs/userguide/modules/system-components.md) and [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)\.
 
 ### Adding Dependencies to a Gem<a name="component-entity-system-pg-gems-code-adding-dependencies"></a>
 
@@ -208,7 +208,7 @@ def build(bld):
  )
 ```
 
-For more information, see [Adding Third\-Party Libraries](waf-adding-third-party-libraries.md) and [Creating Third\-Party Library Configuration Files for Waf](waf-third-party-library-configurations.md)\.
+For more information, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md) and [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
 **Note**  
 Because the recursive nature of `use` can lead to linker errors, especially duplicate symbol errors, `uselib` is a better choice\.

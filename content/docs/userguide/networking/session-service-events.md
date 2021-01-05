@@ -7,7 +7,7 @@ title: Reacting to Session Events
 
 Much of the session functionality is asynchronous because functions can be called, but the response is often not immediately available\. For example, messages may be slowed by network transfer time, server processing, or the required response time\.
 
-The [Working with the Event Bus \(EBus\) system](ebus-intro.md) in Lumberyard is an event bus system that can send out events when asynchronous session functions are complete\. This topic shows you how to set up your application to use the event bus and to connect and disconnect from it\.
+The [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md) in Lumberyard is an event bus system that can send out events when asynchronous session functions are complete\. This topic shows you how to set up your application to use the event bus and to connect and disconnect from it\.
 
 ## Setup<a name="network-session-service-events-setup"></a>
 

@@ -46,7 +46,7 @@ You can edit speech\-recognition bots in the Cloud Gem Portal\.
 
    1. For **Name**, enter a name for the slot\.
 
-   1. For **Slot type and version**, choose a slot type and version from the list\. You can create new slot types on the [Slot Types](cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types.md) tab of the **Speech Recognition** page\.
+   1. For **Slot type and version**, choose a slot type and version from the list\. You can create new slot types on the [Slot Types](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-managing-slot-types.md) tab of the **Speech Recognition** page\.
 
    1. For **Prompt**, enter the text of a question that elicits the information for the slot\. A slot can have multiple prompts\. 
 
@@ -70,7 +70,7 @@ You can use the navigation pane on the left to add an intent to the current bot\
 ![\[Renaming a built-in intent\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-add-intent-rename-built-in.png)
 
 **Note**  
-When you use a bot's **Editor** tab to create an intent, the intent is added to the bot automatically\. When you use the **Speech Recognition** [**Intents**](cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents.md) tab to create an intent, the intent must be added to manually to the bots that you want to use it\.
+When you use a bot's **Editor** tab to create an intent, the intent is added to the bot automatically\. When you use the **Speech Recognition** [**Intents**](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-managing-intents.md) tab to create an intent, the intent must be added to manually to the bots that you want to use it\.
 
 ## Choosing an Intent Version<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-intent-version"></a>
 
@@ -81,7 +81,7 @@ You can configure a bot to use any version of an intent\. Use the menu for the i
 **Note**  
  Only the latest version of an intent can be edited\.
 
-You can also create and manage intents on the [Intents](cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents.md) tab\.
+You can also create and manage intents on the [Intents](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-managing-intents.md) tab\.
 
 ## Removing an Intent<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-removing-an-intent"></a>
 
@@ -92,7 +92,7 @@ To detach \(remove\) an intent from the bot, pause your pointer on the intent na
 **Note**  
 If you are unable to detach intents from a bot and are using the Firefox browser, you can use the **Editor** tab for the bot on the Amazon Lex console at [https://console\.aws\.amazon\.com/lex/](https://console.aws.amazon.com/lex/)\. 
 
-To delete an intent completely, use the [**Intents**](cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents.md) tab of the Cloud Gem Portal\. You must detach an intent from all bots before the intent can be deleted\.
+To delete an intent completely, use the [**Intents**](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-managing-intents.md) tab of the Cloud Gem Portal\. You must detach an intent from all bots before the intent can be deleted\.
 
 ## Editing Slot Types<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-slot-types"></a>
 
@@ -125,7 +125,7 @@ Choose **Error handling** from the left navigation pane to add clarification pro
 You can manage aliases and general information for a bot on the **Settings** tab to the right of the **Editor** tab\. 
 
 **Note**  
-The **Settings** tab for general information and aliases is available when the **Editor** tab is active\. The [Settings](cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console.md) tab that contains a link to the Amazon Lex console is available when the main **Speech Recognition** page is active\.   
+The **Settings** tab for general information and aliases is available when the **Editor** tab is active\. The [Settings](/docs/userguide/gems/cloud-canvas/speech-recognition-cgp-linking-to-the-amazon-lex-console.md) tab that contains a link to the Amazon Lex console is available when the main **Speech Recognition** page is active\.   
  
 
 ### Aliases<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-editing-bots-settings-aliases"></a>

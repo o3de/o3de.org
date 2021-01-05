@@ -99,7 +99,7 @@ Permissions added to `ProjectOwnerAccess` are also granted to `ProjectAdmin` unl
 
 ### ProjectResourceHandlerExecution<a name="cloud-canvas-built-in-roles-projectresourcehandlerexecution"></a>
 
-Grants the `ProjectResourceHandler` Lambda function runtime execution permissions\. This role grants permissions for Cloud Canvas Resource Manager to use AWS CloudFormation custom resources for stack operations\. For more information, see [Access Scenarios and the ProjectResourceHandler](cloud-canvas-setting-access-permissions.md)\. 
+Grants the `ProjectResourceHandler` Lambda function runtime execution permissions\. This role grants permissions for Cloud Canvas Resource Manager to use AWS CloudFormation custom resources for stack operations\. For more information, see [Access Scenarios and the ProjectResourceHandler](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
 
 ****  
@@ -139,7 +139,7 @@ The configuration file in which you define a role determines the resources to wh
 | project\-template\.json | Applies to all resources in all resource groups for all deployments\. Only a single instance of the role is created for the entire project\. | 
 | deployment\-template\.json | Applies to all resources in all resource groups for a specific deployment\. A separate instance of the role is created for each deployment\. | 
 
-You can use the `lmbr_aws` command line tool to manage the role definitions in the `project-template.json` and `deployment-access-template.json` files\. For more information, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](cloud-canvas-rm-security-lmbr-aws.md)\.
+You can use the `lmbr_aws` command line tool to manage the role definitions in the `project-template.json` and `deployment-access-template.json` files\. For more information, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md)\.
 
 ## Implicit Roles<a name="cloud-canvas-rm-security-roles-policies-implicit-roles"></a>
 
@@ -168,7 +168,7 @@ The `ProjectAdmin` and `DeploymentAdmin` roles are granted the same permissions 
 
 The `AbstractRole` property in the `Permission` metadata object does not directly specify the actual role that receives the described permission\. These values must be mapped to actual IAM roles\. This makes it possible to setup roles in whatever way makes sense for your project\. It also removes the need to modify the permissions defined by individual resource groups\.
 
-The ability to map abstract roles to actual IAM roles is important when you use a cloud gem across multiple projects or from a third party\. Cloud gems acquired from a third party might have roles that are different from the roles that you use in your organization\. \(A cloud gem is a [Lumberyard gem](gems-system-gems.md) that uses the AWS resources defined by a Cloud Canvas Resource Group\. For more information, see [Cloud Gems](cloud-canvas-cloud-gems-intro.md)\.\)
+The ability to map abstract roles to actual IAM roles is important when you use a cloud gem across multiple projects or from a third party\. Cloud gems acquired from a third party might have roles that are different from the roles that you use in your organization\. \(A cloud gem is a [Lumberyard gem](/docs/userguide/gems/builtin/s.md) that uses the AWS resources defined by a Cloud Canvas Resource Group\. For more information, see [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md)\.\)
 
 The `Custom::AccessControl` resource looks for CloudCanvas `RoleMappings` metadata on `AWS::IAM::Role` resources to determine which abstract roles map to that physical role\. In the following example, the `CustomerSupport` abstract role from all resource groups is mapped to the `DevOps` physical role\.
 

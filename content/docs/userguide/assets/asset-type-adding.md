@@ -7,7 +7,7 @@ title: Adding an Asset Type to &ALY;
 
 When you develop a game, you might need to add a new kind of asset to Lumberyard\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to Lumberyard\.
 
-For an overview of the Lumberyard asset system, see [Programming the Lumberyard AZCore Runtime Asset System](asset-pipeline-asset-system-programming.md)\.
+For an overview of the Lumberyard asset system, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)\.
 
 **Topics**
 + [Overview](#asset-pipeline-asset-type-adding-overview-of-steps)
@@ -102,7 +102,7 @@ productAssetType={511562BE-65A5-4538-A5F1-AC685366243E}
 version=1
 ```
 
-For more information, see [Configuring the Asset Pipeline](asset-pipeline-configuring.md)\.
+For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 ### Custom\-Built Assets<a name="asset-pipeline-asset-type-adding-custom-built-assets"></a>
 
@@ -163,7 +163,7 @@ An `AssetData`\-derived class contains the asset data that is shared among insta
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type\. Only one such handler generally exists for each type of asset\. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class\. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads\.
 
 **Note**  
-You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a Lumberyard Game](component-entity-system-pg-gems-code.md)\.
+You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a Lumberyard Game](/docs/userguide/components/entity-system-pg-gems-code.md)\.
 
 #### Using the Generic Asset Handler for Structured Data<a name="asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data"></a>
 
@@ -249,7 +249,7 @@ At this point, you can use your custom assets in your structures and components\
    Az::Data::Asset<MyAsset> m_myAsset;
    ```
 
-1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](component-entity-system-reflect-component.md)\.
+1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/userguide/components/entity-system-reflect-component.md)\.
 
 1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior\. For more information, see `m_script` in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file\.
 
@@ -257,7 +257,7 @@ After you perform these steps, your component appears in the component editor\. 
 
 ## C\. Customizing UI Interaction<a name="asset-pipeline-asset-type-adding-customizing-ui-interaction"></a>
 
-\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](ebus-intro.md) to customize your asset's interaction with the **Asset Browser**\.
+\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/userguide/programming/ebus/intro.md) to customize your asset's interaction with the **Asset Browser**\.
 
 ### 1\. Describing Your Asset Type to the UI<a name="asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui"></a>
 

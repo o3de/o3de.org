@@ -20,7 +20,7 @@ This involves several tasks:
 + Add tag filtering
 
 ## Prerequisites<a name="script-canvas-tutorial-collisions-target-prerequisites"></a>
-+ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](script-canvas-tutorial-controllable-character.md) and [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](script-canvas-tutorial-trigger-areas.md)\.
++ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md) and [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/userguide/scripting/scriptcanvas/tutorial-trigger-areas.md)\.
 
 **Topics**
 + [Prerequisites](#script-canvas-tutorial-collisions-target-prerequisites)
@@ -35,7 +35,7 @@ This involves several tasks:
 
 ## Step 1: Set Up a Projectile Entity<a name="script-canvas-tutorial-collisions-targets-step-one"></a>
 
-To create a projectile entity, create an entity and then add the **[Mesh](component-static-mesh.md)**, **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**, and **[Script Canvas](component-script-canvas.md)** components\.
+To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**, and **[Script Canvas](/docs/userguide/components/script-canvas.md)** components\.
 
 **To create a projectile entity**
 
@@ -161,7 +161,7 @@ Now that you've created a slice, you can set up your **Player** entity to spawn 
 
 1. In the **Transform** component, for the **Translate Y** property, enter **1\.0**\. This sets the spawn point 1 meter in front of the parent entity\.
 
-1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](component-spawner.md)** component\.
+1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](/docs/userguide/components/spawner.md)** component\.
 
 1. In the **Spawner** component, for **Dynamic slice**, click the browse \(**\.\.\.**\) icon, select the `projectile.slice` file, and then click **OK**\.  
 ![\[Select the projectile.slice for the Spawner component.\]](/images/userguide/scripting/script-canvas/script-canvas-pick-dynamic-slice-window.png)
@@ -314,7 +314,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
 
    1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\. You can use variables to store and modify persistent values in your graph\. 
 
-      For more information, see [Managing Script Canvas Variables](script-canvas-managing-variables.md)\.
+      For more information, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
    1. Select **Collision**, double\-click **Variable 1** and then rename the variable to **hit**\.
 

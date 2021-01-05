@@ -9,7 +9,7 @@ title: TerrainDataRequestBus API
 
 The `TerrainDataRequestBus` is a single address, single handler EBus\. This means that only one component that provides the service `TerrainService` can be active at any given time\. 
 
-The [Legacy Terrain level component](component-legacy-terrain.md), which is provided by the [Legacy Terrain Gem](gems-system-gem-legacy-terrain.md), is a `TerrainService` provider and can answer to calls made to the `TerrainDataRequestBus`\. 
+The [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md), which is provided by the [Legacy Terrain Gem](/docs/userguide/gems/builtin/legacy-terrain.md), is a `TerrainService` provider and can answer to calls made to the `TerrainDataRequestBus`\. 
 
 The `TerrainDataRequestBus` header file is located here: *`lumberyard_version`*`/Code/Framework/AzFramework/AzFramework/Terrain/TerrainDataRequestBus.h`\. 
 

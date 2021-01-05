@@ -19,7 +19,7 @@ The following picture shows an example of a **DropTarget** component, where colo
 The **DropTarget** component shares properties with interactive components, such as state actions and navigation settings\.
 
 **To edit a DropTarget component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **DropTarget** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **DropTarget** and do the following, as appropriate:    
 **Drop States**  
 Define the color, alpha, sprite, or font of this element and its child elements in a valid or invalid drop state\. By default, the drop state of a drop target is normal, which means that there are no visual overrides\.  
 During a drop, the drop target component can be **Valid** or **Invalid**\. Because the drop target component has no knowledge of what is a valid drag\-and\-drop operation, you use a script or C\+\+ to switch the drop target into the **Normal**, **Valid**, and **Invalid** states\. This is usually accomplished by connecting to the `UiDropTargetNotifications` bus and listening for the `OnDropHoverStart` and `OnDropHoverEnd` notifications\.  

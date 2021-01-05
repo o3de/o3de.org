@@ -16,11 +16,11 @@ title: Blending Poses with Blend Nodes
 You can use **Blend** nodes in animation graphs to create an animation that blends two input poses\. 
 
 **Animation Editor** has the following types of blend nodes, each of which blend poses in different manners:
-+ [Blend N Node](animation-editor-blending-blend-n.md)
-+ [Blend Two Additive Node](animation-editor-blending-blendtwoadditive.md)
-+ [Pose Subtract Node](animation-editor-blending-posesubtract.md)
-+ [Blend Two Node](animation-editor-blending-blendtwo.md)
-+ [Blend Two \(Legacy\) Node](animation-editor-blending-blendtwolegacy.md)
++ [Blend N Node](/docs/userguide/animation/editor/blending-blend-n.md)
++ [Blend Two Additive Node](/docs/userguide/animation/editor/blending-blendtwoadditive.md)
++ [Pose Subtract Node](/docs/userguide/animation/editor/blending-posesubtract.md)
++ [Blend Two Node](/docs/userguide/animation/editor/blending-blendtwo.md)
++ [Blend Two \(Legacy\) Node](/docs/userguide/animation/editor/blending-blendtwolegacy.md)
 
 ## Blend Node Attributes<a name="animation-editor-blending-attributes"></a>
 

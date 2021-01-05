@@ -8,7 +8,7 @@ title: Disable Visual Artifacts
 
 Disables the visual artifact effects\.
 
-To enable the effect, see [Enable Visual Artifacts](enable-visual-artifacts-node.md)\.
+To enable the effect, see [Enable Visual Artifacts](/docs/userguide/rendering/enable/visual-artifacts-node.md)\.
 
 **Contents**
 + [Inputs](#disable-visual-artifacts-note-input)

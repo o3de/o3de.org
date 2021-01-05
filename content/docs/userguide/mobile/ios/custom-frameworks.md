@@ -9,7 +9,7 @@ title: Add iOS Frameworks to a &ALY; project
 
 ## Include frameworks in the launcher's `wscript`<a name="ios-custom-frameworks-wscript"></a>
 
- This section of the guide walks you through configuring your project launcher's `wscript` to support linking and including Frameworks, as well as \. Before reading the rest of this topic, make sure that you're familiar with the general principles behind Waf build scripts in Lumberyard\. For more information, see [Waf Module Files \(wscript\)](waf-files-module-files-wscript.md)\. 
+ This section of the guide walks you through configuring your project launcher's `wscript` to support linking and including Frameworks, as well as \. Before reading the rest of this topic, make sure that you're familiar with the general principles behind Waf build scripts in Lumberyard\. For more information, see [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)\. 
 
 1. Open the file `lumberyard_install_dir/dev/Code/LauncherUnified/wscript` in a text editor\.
 

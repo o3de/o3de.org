@@ -33,12 +33,12 @@ After you create a sequence, you can add properties to it\. Any part of the sequ
 
 1. Select the node to update its properties\.
 
-   For more information, see [Track View Editor Nodes](cinematics-trackview-nodes.md)\.
+   For more information, see [Track View Editor Nodes](/docs/userguide/cinematics/trackview-nodes.md)\.
 
 **Topics**
-+ [Track View Editor Toolbars](cinematics-track-view-editor-toolbars.md)
-+ [Track View Editor Nodes](cinematics-trackview-nodes.md)
++ [Track View Editor Toolbars](/docs/userguide/cinematics/track-view/editor-toolbars.md)
++ [Track View Editor Nodes](/docs/userguide/cinematics/trackview-nodes.md)
 + [Adding and Removing Animation Keys on Tracks](adding-removing-animation-keys-on-tracks.md)
-+ [Controlling the Playhead](cinematics-controlling-the-playhead.md)
-+ [Using Record Mode](cinematics-using-record-mode.md)
-+ [Using Animation Curves](cinematics-track-view-editor-animation-curves.md)
++ [Controlling the Playhead](/docs/userguide/cinematics/controlling-the-playhead.md)
++ [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)
++ [Using Animation Curves](/docs/userguide/cinematics/track-view/editor-animation-curves.md)

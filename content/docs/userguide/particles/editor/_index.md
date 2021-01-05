@@ -24,12 +24,12 @@ The **Particle Editor** includes the following UI elements:
 + **Libraries** panel – Lists the particle art assets\. You can view and interact with multiple libraries simultaneously\.
 + **Preview** panel – Displays the selected, active particle effect\. The preview camera automatically positions to capture the entire particle\. Use the **W**, **A**, **S**, and **D** keys and mouse controls to pan, zoom, and rotate the camera\.
 + **Attributes** panel – Lists the properties for the selected particle\.
-+ **Level of Detail** panel – Displays level of detail \(LOD\) information for added particles\. For more information, see [Managing Particle Level of Detail \(LOD\)](particle-lod.md)\.
++ **Level of Detail** panel – Displays level of detail \(LOD\) information for added particles\. For more information, see [Managing Particle Level of Detail \(LOD\)](/docs/userguide/particles/lod.md)\.
 
 ## Adding a Particle Component<a name="adding-a-particle-component-to-your-level"></a>
 
 **To add a particle component to your level**
 + Do one of the following:
   + Drag a particle emitter from the **Particle Editor** library and drop it into the **Lumberyard Editor** viewport\.
-  + Drag a particle effect asset from the **Asset Browser** into your scene\. Choose the emitter that you want to use from the **Entity Inspector** properties\. For more information, see [Entity Inspector](component-entity-inspector.md)\.
-  + Create a **Particle** component entity and assign the particle effect with the **Particle effect library** parameter\. For more information, see the **[Particle](component-particle.md)** component and [Adding Components to an Entity](component-working-adding.md)\. 
+  + Drag a particle effect asset from the **Asset Browser** into your scene\. Choose the emitter that you want to use from the **Entity Inspector** properties\. For more information, see [Entity Inspector](/docs/userguide/components/entity-inspector.md)\.
+  + Create a **Particle** component entity and assign the particle effect with the **Particle effect library** parameter\. For more information, see the **[Particle](/docs/userguide/components/particle.md)** component and [Adding Components to an Entity](/docs/userguide/components/working-adding.md)\. 

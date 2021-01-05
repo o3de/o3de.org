@@ -78,7 +78,7 @@ The name of the resource group that is defined the `ServiceApi` resource\.
 The name of the deployment that the `ServiceApi` resource is in\.
 
 `RoleArn`  
-The ARN of the role that grants API Gateway the permission to invoke the `ServiceLambda` \(or other permissions configured by the [Cloud Canvas Resource Manager Security System](cloud-canvas-rm-security.md)\)\.
+The ARN of the role that grants API Gateway the permission to invoke the `ServiceLambda` \(or other permissions configured by the [Cloud Canvas Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\)\.
 
 `Region`  
 The AWS [region](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) where the RESTful API resides\.

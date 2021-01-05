@@ -41,7 +41,7 @@ In the **Script Canvas** editor, you can do the following:
 **Script Canvas** editor has the following additional menus and tools\.
 
 **Bookmarks**  
-View and modify your saved bookmarks\. You can use bookmarks to save locations on your script and then use keyboard shortcuts to move to that location\. For more information, see [Adding Bookmarks for Script Canvas](script-canvas-bookmarks.md)\.
+View and modify your saved bookmarks\. You can use bookmarks to save locations on your script and then use keyboard shortcuts to move to that location\. For more information, see [Adding Bookmarks for Script Canvas](/docs/userguide/scripting/scriptcanvas/bookmarks.md)\.
 
 **Comments**  
-You can create floating blocks of text on the Script Canvas editor canvas\. For more information, see [Commenting Nodes](script-canvas-block-commenting.md)\.
+You can create floating blocks of text on the Script Canvas editor canvas\. For more information, see [Commenting Nodes](/docs/userguide/scripting/scriptcanvas/block-commenting.md)\.

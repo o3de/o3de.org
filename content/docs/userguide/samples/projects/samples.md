@@ -18,23 +18,23 @@ The Samples Project includes two collections of sample levels and code that demo
 The Samples Project's level files are located in the `lumberyard_version\dev\SamplesProject\Levels` directory\.
 
 The `Samples` subdirectory contains the following levels:
-+ [Advanced Rin Locomotion](animation-editor-rin-locomotion-sample.md)
++ [Advanced Rin Locomotion](/docs/userguide/animation/editor/rin-locomotion-sample.md)
 + [Audio Sample](#sample-project-samples-audio)
-+ [Fur Technical Sample](shader-ref-fur.md)
-+ [Metastream Sample](gems-system-gem-metastream.md)
-+ [Script Canvas Sample](script-canvas-basic-sample.md)
-+ [Scripted Entity Tweener Sample](ui-animating-tweener.md)
-+ [Simple Jack Locomotion](animation-editor-jack-locomotion-sample.md)
++ [Fur Technical Sample](/docs/userguide/shaders/fur.md)
++ [Metastream Sample](/docs/userguide/gems/builtin/metastream.md)
++ [Script Canvas Sample](/docs/userguide/scripting/scriptcanvas/basic-sample.md)
++ [Scripted Entity Tweener Sample](/docs/userguide/ui/animating/tweener.md)
++ [Simple Jack Locomotion](/docs/userguide/animation/editor/jack-locomotion-sample.md)
 
 The `UI` subdirectory contains the following levels:
-+ UI Features – Demonstrates [UI components](ui-editor-components.md), [UI animation](ui-animation.md), [font rendering](ui-fonts.md), [language support and localization](localization-intro.md), and C\+\+ canvases and custom components\.
-+ [UI in 3D World](ui-editor-placing-canvases-3d.md) – Demonstrates placing game UI on 3D objects\.
-+ [UI Main Menu Lua Sample](ui-editor-loading-canvases-lua.md) – Demonstrates loading a UI canvas using Lua\.
-+ UI Main Menu Script Canvas Sample – Demonstrates loading a UI canvas using the [**Script Canvas** editor](script-canvas-intro.md)\.
++ UI Features – Demonstrates [UI components](/docs/userguide/ui/editor/components.md), [UI animation](/docs/userguide/ui/animation/_index.md), [font rendering](/docs/userguide/ui/fonts/_index.md), [language support and localization](/docs/userguide/localization/intro.md), and C\+\+ canvases and custom components\.
++ [UI in 3D World](/docs/userguide/ui/editor/placing-canvases-3d.md) – Demonstrates placing game UI on 3D objects\.
++ [UI Main Menu Lua Sample](/docs/userguide/ui/editor/loading-canvases-lua.md) – Demonstrates loading a UI canvas using Lua\.
++ UI Main Menu Script Canvas Sample – Demonstrates loading a UI canvas using the [**Script Canvas** editor](/docs/userguide/scripting/scriptcanvas/intro.md)\.
 
 ## Audio Sample<a name="sample-project-samples-audio"></a>
 
-This sample demonstrates how to use the [**Audio Trigger**](component-audio-trigger.md) and [**Audio Rtpc**](component-audio-rtpc.md) components with Lua scripts to associate sounds of a door opening and closing\.
+This sample demonstrates how to use the [**Audio Trigger**](/docs/userguide/components/audio-trigger.md) and [**Audio Rtpc**](/docs/userguide/components/audio-rtpc.md) components with Lua scripts to associate sounds of a door opening and closing\.
 
 This example is fully annotated within the Lua script of the level file\. The following sounds are associated:
 + Sounds
@@ -54,4 +54,4 @@ To play the example, do the following:
 
 To see the Lua script, select the **Door** entity \(a child of **DoorTest**\) and then click the **\{ \}** button next to the script property to open the Lua IDE\.
 
-For more information about audio, setting up sounds and using Wwise LTX, see [Adding Audio and Sound Effects](audio-intro.md)\.
+For more information about audio, setting up sounds and using Wwise LTX, see [Adding Audio and Sound Effects](/docs/userguide/audio/intro.md)\.

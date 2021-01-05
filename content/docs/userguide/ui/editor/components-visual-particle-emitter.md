@@ -10,7 +10,7 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 
 **To see in\-game examples of completed canvases with a **Particle Emitter** component**
 
-1. In Lumberyard Editor, in the [Samples Project](sample-project-samples.md), open the UiFeatures level\.
+1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
 
 1. Press **Ctrl\+G** to play the game and then choose in order **Components**, **Visual Components**, and **Particle Emitter**\. 
 

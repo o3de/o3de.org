@@ -8,7 +8,7 @@ title: Enable Sharpen
 
 Applies a sharpen filter\. You can specify a negative value to blur the screen\.
 
-To disable the effect, see [Disable Sharpen](disable-sharpen-node.md)\.
+To disable the effect, see [Disable Sharpen](/docs/userguide/rendering/disable/sharpen-node.md)\.
 
 **Contents**
 + [Inputs](#enable-sharpen-note-input)

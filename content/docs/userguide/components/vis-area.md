@@ -14,14 +14,14 @@ title: VisArea
 
 A *vis area* \(visible area\) is a shape object that helps you manage visibility and culling in a scene\. When a camera is in a visible area, the camera can see only other objects that are also in the visible area\. You can use the **VisArea** component to define indoor areas and manage overdraw\. Objects are inside a visible area only if their center is inside the area\.
 
-You can also add a **[Portal](component-portal.md)** component to an entity to create windows between visible areas\. This helps you create beautiful areas that render efficiently\.
+You can also add a **[Portal](/docs/userguide/components/portal.md)** component to an entity to create windows between visible areas\. This helps you create beautiful areas that render efficiently\.
 
 Visible areas are only dynamic during editing\. If you modify the **VisArea** component or move the entity that the **VisArea** component is attached to at runtime, the area that the **VisArea** component defines isn't affected\. Also, the **VisArea** component doesn't work if it's spawned as part of a dynamic slice\. 
 
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 **Note**  
-You can't modify the **[OccluderArea](component-occluder-area.md)**, **[Portal](component-portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\. 
+You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.md)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\. 
 
 **Topics**
 + [VisArea Component Properties](#component-vis-area-properties)

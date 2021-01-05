@@ -8,7 +8,7 @@ title: Screen Fader
 
 Controls fading the screen to a color and/or a texture\. You can use this node to script cinematic transitions, such as fading to black or fading to a loading screen texture\. The fade is a screen overlay that is rendered on top of the scene\. The size and position of this overlay can be adjusted to a different size than full screen\. This is useful if you want to draw letter boxes at the top and bottom of the screen\. If you use custom positioning with a texture, you can use this node as a quick way to draw decorative borders around the frame\.
 
-To use the **Screen Fader** node in the Track View, see [Screen Fader Node](cinematics-track-view-nodes-screen-fader.md)\.
+To use the **Screen Fader** node in the Track View, see [Screen Fader Node](/docs/userguide/cinematics/track-view/nodes-screen-fader.md)\.
 
 **Topics**
 + [Inputs](#screen-fader-input)

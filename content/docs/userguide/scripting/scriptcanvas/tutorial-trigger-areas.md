@@ -19,7 +19,7 @@ This involves several tasks:
 + Add variables
 
 ## Prerequisites<a name="script-canvas-tutorial-trigger-area-prerequisites"></a>
-+ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](script-canvas-tutorial-controllable-character.md)\.
++ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md)\.
 
 **Topics**
 + [Prerequisites](#script-canvas-tutorial-trigger-area-prerequisites)
@@ -44,7 +44,7 @@ To create a door and trigger area, create an entity with child entities and then
    1. In the **Entity Inspector**, for **Name**, enter **Door Mesh**\.  
 ![\[Create a child entity named Door Mesh.\]](/images/userguide/scripting/script-canvas/entity-inspector-name-field-door-mesh.png)
 
-   1. For the **Door Mesh** entity, click **Add Component** and then choose the **[Mesh](component-static-mesh.md)** component\.
+   1. For the **Door Mesh** entity, click **Add Component** and then choose the **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
    1. In the **Mesh** component, for **Mesh asset**, click the browse \(…\) icon and select the `SamplesProject\Objects\Primitives\box_1x1.cgf` file\.  
 ![\[Select the mesh file to create a Mesh component for your entity.\]](/images/userguide/scripting/script-canvas/asset-browser-game-objects-primitives-directory.png)
@@ -53,7 +53,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. Click **Add Component** and then choose the **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)** component\. This component defines the collision shape for the **Door Mesh** entity\.
 
-   1. In the **[Transform](component-transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\. 
+   1. In the **[Transform](/docs/userguide/components/transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\. 
 
    1. Verify that your **Door Mesh** entity looks like the following\.  
 **Example**    
@@ -65,7 +65,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. In the **Entity Inspector**, for **Name**, enter **Door Trigger**\.
 
-   1. Click **Add Component** and then choose the **[Trigger Area](component-triggerarea.md)** component\.
+   1. Click **Add Component** and then choose the **[Trigger Area](/docs/userguide/components/triggerarea.md)** component\.
 
    1. With the [**Move** tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode), adjust the **Door Trigger** entity so that its Z position fits the **Door Mesh** entity\.
 
@@ -73,7 +73,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. For the **Box Shape** component, for **Dimensions**, set **X** to **3\.0**, **Y** to **9\.0**, and **Z** to **6\.0**\.
 
-   1. Click **Add Component** and then choose the **[Script Canvas](component-script-canvas.md)** component\.
+   1. Click **Add Component** and then choose the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\.
 
    1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
 
@@ -99,14 +99,14 @@ Now that you've set up your door and trigger area, you can create a script that 
 
 1. In the **Node Palette**, enter **trigger** in the search box and under **Gameplay**, **Trigger Area**, drag **On Area Entered** to the canvas\. 
 **Note**  
-With this event node you can easily use the Lumberyard EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+With this event node you can easily use the Lumberyard EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 1. In the **Trigger Area** node, click **Add/Remove Events** and then select the **On Area Exited** check box\. This exposes the entered and exited events from the **Trigger Area** EBus\.  
 ![\[Add the Trigger Area node in Script Canvas editor.\]](/images/userguide/scripting/script-canvas/trigger-area-node-add-remove-events.png)
 
 1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\. 
 **Note**  
-You can store and modify persistent values in your graph with variable nodes\. For more information, see [Managing Script Canvas Variables](script-canvas-managing-variables.md)\.
+You can store and modify persistent values in your graph with variable nodes\. For more information, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
 1. Select **Vector3**, double\-click **Variable 1** and then rename the variable to **opened\_position**\.
 

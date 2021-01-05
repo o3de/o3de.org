@@ -15,19 +15,19 @@ You can run Waf using the following methods:
 **Note**  
 Waf is compatible with the version of Python 3 that comes bundled with Lumberyard\.
 
-Lumberyard includes the [Project Configurator](configurator-intro.md), a standalone application that allows you to specify to Waf which game templates and assets \(Gems\) to include in the game build\.
+Lumberyard includes the [Project Configurator](/docs/userguide/configurator/intro.md), a standalone application that allows you to specify to Waf which game templates and assets \(Gems\) to include in the game build\.
 
 **Topics**
-+ [Waf File System](waf-files.md)
-+ [Waf Commands and Options](waf-commands.md)
-+ [Waf Supported Operating Systems and Compilers](waf-platforms-compilers.md)
-+ [Waf Project Settings](waf-project-settings.md)
-+ [Using the Waf Artifacts Cache](waf-artifacts-cache.md)
-+ [Adding Third\-Party Libraries](waf-adding-third-party-libraries.md)
-+ [Creating Third\-Party Library Configuration Files for Waf](waf-third-party-library-configurations.md)
-+ [Waf Extensions](waf-extensions.md)
-+ [Using Waf](waf-using-intro.md)
-+ [Adding User Settings to Waf](waf-user-settings.md)
-+ [Adding Qt 5 Content to Waf](waf-qt-content.md)
-+ [Using Uber Files](waf-uber-files.md)
-+ [Debugging Waf](waf-debug.md)
++ [Waf File System](/docs/userguide/waf/files.md)
++ [Waf Commands and Options](/docs/userguide/waf/commands.md)
++ [Waf Supported Operating Systems and Compilers](/docs/userguide/waf/platforms-compilers.md)
++ [Waf Project Settings](/docs/userguide/waf/project-settings.md)
++ [Using the Waf Artifacts Cache](/docs/userguide/waf/artifacts-cache.md)
++ [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md)
++ [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)
++ [Waf Extensions](/docs/userguide/waf/extensions.md)
++ [Using Waf](/docs/userguide/waf/using-intro.md)
++ [Adding User Settings to Waf](/docs/userguide/waf/user-settings.md)
++ [Adding Qt 5 Content to Waf](/docs/userguide/waf/qt-content.md)
++ [Using Uber Files](/docs/userguide/waf/uber-files.md)
++ [Debugging Waf](/docs/userguide/waf/debug.md)

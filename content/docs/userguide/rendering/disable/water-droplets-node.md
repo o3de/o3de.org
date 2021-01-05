@@ -8,7 +8,7 @@ title: Disable Water Droplets
 
 Disables water droplet effects\.
 
-To enable the effect, see [Enable Water Droplets](enable-water-droplets-node.md)\.
+To enable the effect, see [Enable Water Droplets](/docs/userguide/rendering/enable/water-droplets-node.md)\.
 
 **Contents**
 + [Inputs](#disable-water-droplets-node-input)

@@ -33,7 +33,7 @@ Use the following console variables to monitor and debug particle system issues\
 | e\_ParticlesMinDrawAlpha |  Alpha cutoff for rendering particles\.  | Default value: 0\.004 | 
 | e\_ParticlesMinDrawPixels |  Pixel size minimum per particle\. Particles that reach this limit fade out, even if the particle does not reach its lifetime\.   | Default value: 1 | 
 | e\_ParticlesMotionBlur |  Enables motion blur for particles\.   |  `0` = Off `1` = On \(default\) `2` = Force  | 
-| e\_ParticlesObjectCollisions | Enables particle and object collisions for the SimpleCollision parameter\. For more information, see [Collision Attribute](particle-editor-reference-collision.md)\. |  `1` = Against static objects only\. `2` = Against dynamic objects also\. \(default\)  | 
+| e\_ParticlesObjectCollisions | Enables particle and object collisions for the SimpleCollision parameter\. For more information, see [Collision Attribute](/docs/userguide/particles/editor/reference-collision.md)\. |  `1` = Against static objects only\. `2` = Against dynamic objects also\. \(default\)  | 
 | e\_ParticlesPoolSize |  Particle system pool memory size in KB\.  | Default value: 16384 | 
 | e\_ParticlesPreload |  Enables preloading of all particle effects at the beginning\.   | Default value: 0 | 
 | e\_ParticlesProfile | Displays particle information on the screen\. |  `0` = Off \(default\) `1` = Always show the statistics about particle pool usage\. `2` = Disable the warning message when running out of pool memory\.  | 

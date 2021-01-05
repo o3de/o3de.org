@@ -18,8 +18,8 @@ You can also use effect groups to specify the following:
 Creating a new effect requires modifying Lumberyard, while creating a new effect group does not\.
 
 **Topics**
-+ [Post Effect Group XML Files](effect-groups-xml-files.md)
-+ [Enabling and Disabling Effect Groups](effect-groups-enabling-disabling.md)
-+ [Specifying a Blend Curve for Smooth Effect Transitions](effect-groups-transitions.md)
-+ [Setting Effect Strength Based on Camera Distance](effect-groups-strength-camera-distance.md)
-+ [Using the Screen Fader Effect](effect-groups-screen-fader-effect.md)
++ [Post Effect Group XML Files](/docs/userguide/rendering/effect-groups/xml-files.md)
++ [Enabling and Disabling Effect Groups](/docs/userguide/rendering/effect-groups/enabling-disabling.md)
++ [Specifying a Blend Curve for Smooth Effect Transitions](/docs/userguide/rendering/effect-groups/transitions.md)
++ [Setting Effect Strength Based on Camera Distance](/docs/userguide/rendering/effect-groups/strength-camera-distance.md)
++ [Using the Screen Fader Effect](/docs/userguide/rendering/effect-groups/screen-fader-effect.md)

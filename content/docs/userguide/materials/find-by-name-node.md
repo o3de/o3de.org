@@ -17,10 +17,10 @@ In some cases, the **Find by Name** node might not find the material as expected
 1. In your script, you use the **[Find by Name](#material-find-by-name-node)** node to access the `crate.mtl` file\. You want to trigger the node when the graph starts with the **On Graph Start** node\. However, it's possible that the **[Find by Name](#material-find-by-name-node)** node can't load the material immediately\. It might take additional frames before the entity finishes loading the material file\.
 
 1. In this example, you can use one of the following nodes to detect when the `Crate` entity finishes loading the `crate.mtl` file:
-   + Use the **[Load by Name](material-load-by-name-node.md)** node instead of the **[Find by Name](#material-find-by-name-node)** node\.
-   + Use the **[On Ready](material-owner-on-material-owner-ready-node.md)** node instead of the **On Graph Start** node\.
+   + Use the **[Load by Name](/docs/userguide/materials/load-by-name-node.md)** node instead of the **[Find by Name](#material-find-by-name-node)** node\.
+   + Use the **[On Ready](/docs/userguide/materials/owner-on-material-owner-ready-node.md)** node instead of the **On Graph Start** node\.
 
-In some cases, you might need to store the material for later use\. For more information, see **[Material Variables](script-canvas-variable-material-node.md)**\.
+In some cases, you might need to store the material for later use\. For more information, see **[Material Variables](/docs/userguide/scripting/scriptcanvas/variable-material-node.md)**\.
 
 **Contents**
 + [Inputs](#material-find-by-name-node-input)

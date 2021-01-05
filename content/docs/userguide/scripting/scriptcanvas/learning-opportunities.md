@@ -10,8 +10,8 @@ Here are some additional educational opportunities for learning more about Scrip
 
 **Sample Levels**  
 To help you get started with Script Canvas, the following sample levels are available:
-+ For a basic sample level, see [Script Canvas Basic Sample](script-canvas-basic-sample.md), which is included in your Lumberyard setup\. The sample uses a tank to fire a projectile at a target\.
-+ For a more in\-depth sample level, install the [Project N\.E\.M\.O\.](script-canvas-nemo-sample.md) sample level, which uses a third\-person camera to control a mini sub through an underwater mine field\.
++ For a basic sample level, see [Script Canvas Basic Sample](/docs/userguide/scripting/scriptcanvas/basic-sample.md), which is included in your Lumberyard setup\. The sample uses a tank to fire a projectile at a target\.
++ For a more in\-depth sample level, install the [Project N\.E\.M\.O\.](/docs/userguide/scripting/scriptcanvas/nemo-sample.md) sample level, which uses a third\-person camera to control a mini sub through an underwater mine field\.
 
 **Video Tutorials**  
 These video tutorials in the Tutorial Guide are also available to assist in your journey towards becoming a Script Canvas expert:

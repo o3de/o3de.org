@@ -13,10 +13,10 @@ One of the primary tools used to first create a terrain is the Terrain Editor, a
 ![\[Image NOT FOUND\]](/images/userguide/terrain/terrain-editor.png)
 
 **Topics**
-+ [Creating High Quality Terrain](terrain-high-quality.md)
-+ [Importing and Exporting Terrain Data](terrain-import-data.md)
-+ [Using the Terrain Heightmap](terrain-heightmap-intro.md)
-+ [Using Terrain Texture Layers](terrain-texture-layers-intro.md)
-+ [Creating Landforms and Topography](terrain-landforms-intro.md)
-+ [Creating Bodies of water](terrain-water-intro.md)
-+ [Copying and Moving Terrain Areas](terrain-copy.md)
++ [Creating High Quality Terrain](/docs/userguide/terrain/high-quality.md)
++ [Importing and Exporting Terrain Data](/docs/userguide/terrain/import-data.md)
++ [Using the Terrain Heightmap](/docs/userguide/terrain/heightmap-intro.md)
++ [Using Terrain Texture Layers](/docs/userguide/terrain/texture-layers-intro.md)
++ [Creating Landforms and Topography](/docs/userguide/terrain/landforms-intro.md)
++ [Creating Bodies of water](/docs/userguide/terrain/water-intro.md)
++ [Copying and Moving Terrain Areas](/docs/userguide/terrain/copy.md)

@@ -7,9 +7,9 @@ title: Best Practices for Volumetric Fog
 # Best Practices for Volumetric Fog<a name="rendering-graphics-fog-volumetric-bp"></a>
 
 See the following best practices for working with volumetric fog\.
-+ Attach a **[Fog Volume](component-fog-volume.md)** and a **[Box Shape](component-shapes.md)** component to the entity\.
++ Attach a **[Fog Volume](/docs/userguide/components/fog-volume.md)** and a **[Box Shape](/docs/userguide/components/shapes.md)** component to the entity\.
 + Set the `r_DeferredShadingTiled` console variable to a value greater than 0\. The recommended value is `1` to `2`\. This is required to use volumetric fog\. For more information, see [Using the Console Window](console-intro.md)\.
-+ To avoid performance problems, use the default values for the **Ramp Start** and **Ramp End** parameters located in the **Time of Day** editor\. For more information, see [Setting Global \(Time of Day\) Volumetric Fog](rendering-graphics-fog-volumetric-global.md)\. 
++ To avoid performance problems, use the default values for the **Ramp Start** and **Ramp End** parameters located in the **Time of Day** editor\. For more information, see [Setting Global \(Time of Day\) Volumetric Fog](/docs/userguide/rendering/fog-volumetric-global.md)\. 
 + In the **Time of Day Editor**, large values for the **Range** parameter can cause fog flicker and light leaking behind walls\. 
 
   To correct this effect, you can adjust the value for the `r_VolumetricFogTexDepth` console variable accordingly\.  

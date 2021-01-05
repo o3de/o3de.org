@@ -15,7 +15,7 @@ title: AI Scripting
 This collection of topics describes how to handle some key AI capabilities using scripting\.
 
 **Topics**
-+ [Factions](ai-scripting-factions.md)
-+ [Modular Behavior Tree](ai-scripting-mbt.md)
-+ [Refpoints](ai-scripting-refpoints.md)
-+ [Signals](ai-scripting-signals.md)
++ [Factions](/docs/userguide/ai/scripting/factions.md)
++ [Modular Behavior Tree](/docs/userguide/ai/scripting/mbt.md)
++ [Refpoints](/docs/userguide/ai/scripting/refpoints.md)
++ [Signals](/docs/userguide/ai/scripting/signals.md)

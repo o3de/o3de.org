@@ -5,7 +5,7 @@ title: Adding a Game Project
 ---
 # Adding a Game Project<a name="waf-using-game-project"></a>
 
-The simplest and recommended method to add a game project to the Lumberyard Waf build system is to use the Project Configurator\. The Project Configurator is a standalone application for telling the Waf build system which game projects and assets to include in a game build\. For more information, see [Creating Lumberyard projects](configurator-intro.md)\.
+The simplest and recommended method to add a game project to the Lumberyard Waf build system is to use the Project Configurator\. The Project Configurator is a standalone application for telling the Waf build system which game projects and assets to include in a game build\. For more information, see [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\.
 
 You can also add a game project with the following steps:
 + Create the project definition

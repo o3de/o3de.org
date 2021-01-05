@@ -13,7 +13,7 @@ title: Cloth for Actor components
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](nvidia-cloth.md) documentation\. 
+To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/userguide/nvidia/cloth/_index.md) documentation\. 
 
 You can create cloth assets for entities with **Actor** components in the content creation application of your choice and import them into Lumberyard from an `.fbx` file\. The actor asset should have the following: 
 
@@ -23,7 +23,7 @@ One or more meshes that visually represent the actor, skinned to a skeleton, tha
 **Cloth mesh**  
 One or more meshes that will be simulated and rendered as cloth\.   
 + The cloth mesh must be skinned to bones\. The bones do not have to be exclusive to the cloth mesh\. The bones must be part of the actor's skeletal hierarchy\. Because simulation will drive the cloth mesh, we recommend you use few additional bones for the cloth mesh\. 
-+ Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application\. For more information see [Per vertex properties for cloth](nvidia-cloth-vertex-data.md)\. 
++ Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application\. For more information see [Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md)\. 
 
 **Skeleton**  
 A skeleton to drive the actor and cloth meshes\. Cloth meshes may be skinned to their own bones or any bones in the hierarchy\. Bones that drive the cloth meshes must be part of the skeleton's hierarchy\. 
@@ -34,7 +34,7 @@ A **Motion set** and **Anim graph** based on the actor's skeleton\. Keyframe ani
 **Note**  
 Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Chicken/`\. 
 
-For imformation on exporting actor assets, see [FBX Settings actor export](fbx-actor-export.md)
+For imformation on exporting actor assets, see [FBX Settings actor export](/docs/userguide/fbx/actor-export.md)
 
 ## Add Cloth to Actor components<a name="cloth-actor-setup"></a>
 
@@ -73,7 +73,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
    1. Select the cloth mesh node from the drop\-down list\.   
 ![\[Amazon Lumberyard cloth component.\]](/images/userguide/physx/cloth/ui-cloth-component-select-actor-1.27.png)
 
-   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](component-cloth.md)\. 
+   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/userguide/components/cloth.md)\. 
 
    1. You can use the **Motion constraints** properties **Max Distance** and **Scale** to blend between cloth simulation and keyframe animation\. 
 

@@ -13,7 +13,7 @@ Each gem package can contain the following:
 + Code
 
 **To locate Lumberyard Gems**
-+ Navigate to the `lumberyard_version\dev\Gems` directory\. For more information, see [Gems Available in Lumberyard](gems-system-ref.md)\. 
++ Navigate to the `lumberyard_version\dev\Gems` directory\. For more information, see [Gems Available in Lumberyard](/docs/userguide/gems/ref.md)\. 
 
 **Topics**
 + [Gem Assets](#gem-assets-directory)
@@ -30,7 +30,7 @@ Each gem has an `Assets` directory that contains models, textures, scripts, and 
 
 ## Gem Icon File<a name="gem-icon-file"></a>
 
-The gem icon is a `.jpg`, `.png`, or `.gif` file\. The following example is the icon for the [Lightning Arc Gem](gems-system-gem-lightning-arc.md)\.
+The gem icon is a `.jpg`, `.png`, or `.gif` file\. The following example is the icon for the [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md)\.
 
 ![\[Icon file for the Lightning Arc gem.\]](/images/userguide/gem-icon-example.png)
 
@@ -181,7 +181,7 @@ JSON list of all test files for a gem, in the same format as `gemname.waf_files`
 **Include/GemName**  
 Directory contains headers that define the gem's public API\.  
 Other gems can include this directory\. It should not contain implementations nor anything other than virtual function definitions\. The gem template provides a default `GemNameBus.h` that contains a `GemNameRequestBus` interface, which defines public functionality\.   
-For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 **Source**  
 Directory that contains the following generated files:  
@@ -233,7 +233,7 @@ Overriding this value is not recommended\.
 + `pch`: 'StdAfx\.cpp'
 + `use`: All modules that require linking from all dependencies\.
 
-For more information about `waf` and `wscript` files, see [Using the Waf Build System](waf-intro.md)\.
+For more information about `waf` and `wscript` files, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
 ## Gem List File – gems\.json<a name="gems-system-gem-list-file"></a>
 

@@ -9,7 +9,7 @@ You can control a camera's position and rotation to manipulate the facing direct
 
 ## Animating the Camera<a name="animating-the-camera"></a>
 
-As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective\. For more information, see [Using Record Mode](cinematics-using-record-mode.md)\.
+As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective\. For more information, see [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)\.
 
 **Note**  
 You can still manipulate the component entity camera within the level from the default editor camera\. However, this method makes it more difficult to determine where the camera is facing\.

@@ -12,7 +12,7 @@ You can use console variables \(CVARs\) in Amazon Lumberyard to configure terrai
 + [Some Key Shadow\-Related Console Variables](#rendering-graphics-shadows-cvars-list)
 + [Saving Console Variable Changes](#rendering-graphics-shadows-cvars-persisting-console-variable-changes)
 + [Finding Other Shadow\-Related Console Variables](#rendering-graphics-shadows-cvars-finding-additional-shadow-related-console-variables)
-+ [Tutorial: Using Console Variables to Tune Cascade Shadows](rendering-graphics-shadows-tuning.md)
++ [Tutorial: Using Console Variables to Tune Cascade Shadows](/docs/userguide/rendering/shadows-tuning.md)
 
 ## Some Key Shadow\-Related Console Variables<a name="rendering-graphics-shadows-cvars-list"></a>
 

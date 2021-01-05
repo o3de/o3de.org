@@ -11,9 +11,9 @@ The Dynamic Content Cloud Gem provides an easy way for you to update your game c
 
 To use the Dynamic Content Cloud Gem, you must meet these requirements:
 + You must be using a Lumberyard Editor project that has the Dynamic Content Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Dynamic Content**\)\.
-+ You have a project stack created in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You have a project stack created in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 + You have created a deployment stack in Cloud Canvas Resource Manager\.
-+ You have created dynamic content packages that contain the updates\. For more information, see [Using Dynamic Content Manager](cloud-canvas-cloud-gem-dc-manager.md)\.
++ You have created dynamic content packages that contain the updates\. For more information, see [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md)\.
 + You have the Cloud Gem Portal open\. In Lumberyard Editor, click **AWS**, **Open Cloud Gem Portal**\.
 
 **To view packages in the Dynamic Content Gem Portal**

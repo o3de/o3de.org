@@ -16,7 +16,7 @@ All splat map operations in Lumberyard are done using the **Terrain Texture Laye
 
 **To import splat maps**
 
-1. In Lumberyard Editor, choose **Tools**, **Other**, [**Terrain Texture Layers**](terrain-texture-layers-intro.md)\.
+1. In Lumberyard Editor, choose **Tools**, **Other**, [**Terrain Texture Layers**](/docs/userguide/terrain/texture-layers-intro.md)\.
 
 1. In the **Terrain Texture Layers** editor, under **Layer Tasks**, assign each splat map to a texture layer by clicking a layer and then clicking **Assign Splat Map**\.
 

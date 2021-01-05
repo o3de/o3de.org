@@ -17,7 +17,7 @@ Automerged vegetation has physically accurate wind motions that are defined by w
 
 Automerged vegetation reduces the number of draw calls while still allowing you to add any amount or size of grass patches to the terrain\. It merges multiple meshes within several sectors as long as they are using the same material and texture\. You can paint single grass blade objects on the terrain as well as on brushes in different heights independently while they get merged into larger chunks in real time\.
 
-When AutoMerged is enabled, touch bending, vertex colors, and detail bending settings are all ignored, and vegetation movement is defined solely by the AutoMerged parameters\. For more information, see [Adding Touch \(Collision\) Bending Effects](vegetation-bending-touch-intro.md) and [Adding Detail Bending Effects](vegetation-bending-detail-intro.md)\.
+When AutoMerged is enabled, touch bending, vertex colors, and detail bending settings are all ignored, and vegetation movement is defined solely by the AutoMerged parameters\. For more information, see [Adding Touch \(Collision\) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md) and [Adding Detail Bending Effects](/docs/userguide/vegetation/bending-detail-intro.md)\.
 
 **To enable AutoMerged vegetation and set parameters**
 
@@ -30,4 +30,4 @@ When AutoMerged is enabled, touch bending, vertex colors, and detail bending set
    + **Damping** – Specifies the amount of damping on the bending motion
    + **AirResistance**–\- Specifies the amount of bending similar to the **Bending** parameter used for [Setting the Detail Bending Parameter](vegetation-bending-detail-intro.md#vegetation-bending-detail-params)\.
 
-The four AutoMerged parameters together define the amount and type of bending motions the vegetation object displays in reaction to wind and breezes\. For more information, see, [Adding Global Wind](weather-wind-global.md)\.
+The four AutoMerged parameters together define the amount and type of bending motions the vegetation object displays in reaction to wind and breezes\. For more information, see, [Adding Global Wind](/docs/userguide/weather/wind-global.md)\.

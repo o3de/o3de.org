@@ -64,11 +64,11 @@ This tutorial assumes the following:
 + You have created a project stack and a deployment stack in the Cloud Canvas Resource Manager\.
 + You have opened the Cloud Gem Portal\.
 
-If you don't meet the prerequisites, see [Enabling Gems](gems-system-using-project-configurator.md) and [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) and [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-metrics-prerequisites)
 + [Sending Test Metrics with the Metrics Sample Level](send-test-events-for-the-cloud-canvas-game-metrics-gem.md)
 + [Sending Test Metrics with the Command Line](command-line-options-for-the-cloud-gem-metrics.md)
 + [Using the Game Metrics Cloud Gem Portal](using-the-cloud-gem-metrics-portal.md)
-+ [Using Heatmap Analytics](cloud-canvas-cloud-gem-game-metrics-heatmap-analytics-intro.md)
++ [Using Heatmap Analytics](/docs/userguide/gems/cloud-canvas/game-metrics-heatmap-analytics-intro.md)

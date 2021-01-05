@@ -12,7 +12,7 @@ Creating your gem involves placing code, assets, and several other special files
 To structure your assets as a gem, see the following\.
 
 **Topics**
-+ [Creating a New Empty Gem](gems-system-gems-creating-a-new-gem.md)
-+ [Packaging Your Assets](gems-system-gems-packaging.md)
-+ [Testing Your Gem](gems-system-gems-testing.md)
-+ [Compressing Your Gem](gems-system-gems-compressing.md)
++ [Creating a New Empty Gem](/docs/userguide/gems/builtin/s-creating-a-new-gem.md)
++ [Packaging Your Assets](/docs/userguide/gems/builtin/s-packaging.md)
++ [Testing Your Gem](/docs/userguide/gems/builtin/s-testing.md)
++ [Compressing Your Gem](/docs/userguide/gems/builtin/s-compressing.md)

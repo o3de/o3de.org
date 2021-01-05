@@ -340,7 +340,7 @@ In the following example, the `win_x64_vs2017` and `win_x64_vs2019` platforms ar
 
 Path aliasing for the `source` attribute is common within the configuration file\. The alias value is denoted by `@XXXX@`, where the *XXXX* value resolves to an absolute path\. The third\-party configuration file recognizes two different path alias types:
 + `@3P:YYYY@` – This alias refers to a third\-party library that is managed by the Lumberyard Setup Assistant\. These third\-party libraries are globally available to the engine\. Lumberyard Setup Assistant manages the location and version of these libraries independently from the build system\. *YYYY* refers to the SDK identifier used by Lumberyard Setup Assistant and is different from the third\-party `uselib` identifier used by Waf\.
-+ `@GEM@` – This alias is valid only for gem\-defined third\-party libraries and refers to the base path of the gem from which the third\-party library is defined\. For information about putting third\-party libraries in gems, see [Adding Third\-Party Libraries](waf-adding-third-party-libraries.md)\.
++ `@GEM@` – This alias is valid only for gem\-defined third\-party libraries and refers to the base path of the gem from which the third\-party library is defined\. For information about putting third\-party libraries in gems, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md)\.
 
 ## Creating Entries for Multiple Related Libraries<a name="waf-third-party-library-configurations-creating-entries-for-multiple-related-libraries"></a>
 

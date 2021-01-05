@@ -16,13 +16,13 @@ title: Editing Components in the Viewport
 When you're working with components, you can lock a single component for editing\. You can't edit any other components that are attached to the entity\. This feature prevents you from accidentally editing other components that are attached to the entity\. For example, if you have an entity with attached **Spline** and **Mesh** components, you can lock the **Spline** component, make your changes to the spline, and stop editing\.
 
 This feature supports the following components: <a name="supported-components-viewport-interaction-model"></a>
-+ **[Box Shape](component-shapes.md)**
-+ **[OccluderArea](component-occluder-area.md)**
-+ **[Portal](component-portal.md)**
-+ **[Polygon Prism Shape](component-polygon-prism.md)**
-+ **[Spline](component-spline.md)**
-+ **[Tube Shape](component-tube-shape.md)**
-+ **[VisArea](component-vis-area.md)**
++ **[Box Shape](/docs/userguide/components/shapes.md)**
++ **[OccluderArea](/docs/userguide/components/occluder-area.md)**
++ **[Portal](/docs/userguide/components/portal.md)**
++ **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)**
++ **[Spline](/docs/userguide/components/spline.md)**
++ **[Tube Shape](/docs/userguide/components/tube-shape.md)**
++ **[VisArea](/docs/userguide/components/vis-area.md)**
 
 **Topics**
 + [Editing a Single Component in the Viewport](#editing-components-in-viewport)

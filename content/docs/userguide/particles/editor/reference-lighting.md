@@ -26,5 +26,5 @@ In the **Lighting** attribute, specify how to control the particle lighting\.
 
 **Note**  
 When there is a single light source, some or all particles can appear unlit \(black\)\. To address this:  
-Add an environment probe to the scene to create indirect lighting\. For more information, see the **[Environment Probe](component-environment-probe.md)** component\.
+Add an environment probe to the scene to create indirect lighting\. For more information, see the **[Environment Probe](/docs/userguide/components/environment-probe.md)** component\.
 Specify a value for the **Environment Probe Lighting** parameter to enable environment probe lighting on the particle system\. For example, a value of `0.5` applies light from the environment probe at half intensity\.

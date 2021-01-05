@@ -13,12 +13,12 @@ title: Testing the Windows Client to Linux Server Connection
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-After you've [built the Windows client and Linux server](linux-build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\. 
+After you've [built the Windows client and Linux server](/docs/userguide/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\. 
 
 ## Prerequisites<a name="linux-test-windows-client-linux-server-connection-prerequisites"></a>
 
 To test your server setup, complete the following tasks\.
-+ Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](linux-build-lumberyard-executable.md)\.
++ Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](/docs/userguide/linux/build-lumberyard-executable.md)\.
 + Get the *public* IP address \(not DNS name\) of your Linux server\.
 + Get the *public* IP address of your client machine\.
 +  Allow outbound TCP connections on Windows 10 to your Linux server on port `4600`, and outbound UDP connections on port `33435`\. If you're not familiar with how to configure Windows firewall to allow outbound connections, see the [Microsoft Windows Firewall documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)\. 

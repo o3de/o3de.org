@@ -12,11 +12,11 @@ You can use the DefectReporterSample level that is included with Lumberyard to g
 
 This tutorial assumes the following:
 + You have used the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) to set **CloudGemDefectReportSample** as your default project\.
-+ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
++ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A project stack for your project\.
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 
-If you don't meet the prerequisites, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Workflow Steps<a name="cloud-canvas-cloud-gem-defect-reporter-sample-level-test-workflow-steps"></a>
 
@@ -28,7 +28,7 @@ You can use the DefectReporterSample level to do the following:
 
 1. Submit the reports\.
 
-After you submit the reports, you can view them in the [Using the Defect Reporter Cloud Gem Portal](cloud-canvas-cloud-gem-defect-reporter-cgp.md)\.
+After you submit the reports, you can view them in the [Using the Defect Reporter Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp.md)\.
 
 **To use the Defect Reporter cloud gem sample level**
 
@@ -122,4 +122,4 @@ The reports are available in the Cloud Gem Portal in about 10 minutes\. To accel
 
       The AWS GLUE data crawler is READY\. 
 
-To view and manage the reports, see the [Using the Defect Reporter Cloud Gem Portal](cloud-canvas-cloud-gem-defect-reporter-cgp.md)\.
+To view and manage the reports, see the [Using the Defect Reporter Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp.md)\.

@@ -27,7 +27,7 @@ The **Perspective** header includes a search box, field of view \(FOV\), screen 
 
 ## Changing the Field of View \(FOV\)<a name="lumberyard-editor-viewport-view"></a>
 
-You can change the default camera's FOV for the Lumberyard Editor viewport or the FOV for your game's camera\. Follow the steps to change the default camera's FOV\. To change the FOV for your game's camera, see [Camera](component-camera.md)\.
+You can change the default camera's FOV for the Lumberyard Editor viewport or the FOV for your game's camera\. Follow the steps to change the default camera's FOV\. To change the FOV for your game's camera, see [Camera](/docs/userguide/components/camera.md)\.
 
 **To change the default camera's FOV**
 

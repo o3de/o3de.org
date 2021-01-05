@@ -60,13 +60,13 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 Each mesh in the **Mesh group** to simulate as cloth requires its own **Cloth** modifier\.   
 When a **Cloth** modifier is added to a mesh group, the **Merge Meshes** property in the **Mesh \(Advanced\)** modifier will be ignored and treated as disabled\. A cloth mesh needs to be processed independently and cannot be merged with other meshes\. 
 
-For more information, see [Simulate cloth with NVIDIA Cloth](nvidia-cloth-intro.md)\. 
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/userguide/nvidia/cloth/intro.md)\. 
 
 ****Select Cloth Mesh****  
 Select the mesh to have cloth data applied and simulate as a cloth object\. 
 
 **Note**  
-For information on the **Inverse Masses**, **Motion Conrstraints**, and **Backstop** properties below, see [Per vertex properties for cloth](nvidia-cloth-vertex-data.md)\. 
+For information on the **Inverse Masses**, **Motion Conrstraints**, and **Backstop** properties below, see [Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md)\. 
 
 ****Inverse Masses****  
 Select a vertex color stream to apply per vertex inverse mass data for cloth simulation\. If no vertex color stream is selected, an inverse mass value of **1\.0** is assigned to all vertices in the cloth mesh\. 
@@ -175,7 +175,7 @@ Sets the scale offset of the processed mesh\.
 
 The **Touch Bending** modifier sets up mesh assets for touch bending\. Touch bending is a collision effect, typically used on vegetation assets such as plants or tall grass, that causes the asset to bend away from an entity that brushes against it\. You can use this modifier to create a field of wheat, for example, where the wheat parts and bends as a player character passes through\. 
 
-Touch bendable assets require a rig similar to an actor\. For more information on creating touch bendable assets, see [Adding Touch \(Collision\) Bending Effects](vegetation-bending-touch-intro.md)\. 
+Touch bendable assets require a rig similar to an actor\. For more information on creating touch bendable assets, see [Adding Touch \(Collision\) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md)\. 
 
 ****Select root bone****  
 Specify the root bone of the touch bendable mesh\. 

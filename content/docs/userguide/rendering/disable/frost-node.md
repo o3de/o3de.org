@@ -8,7 +8,7 @@ title: Disable Frost
 
 Disables spots of frost on the screen\.
 
-To enable the effect, see [Enable Frost](enable-frost-node.md)\.
+To enable the effect, see [Enable Frost](/docs/userguide/rendering/enable/frost-node.md)\.
 
 **Contents**
 + [Inputs](#disable-frost-note-input)

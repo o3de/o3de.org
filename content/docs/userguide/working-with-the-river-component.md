@@ -17,17 +17,17 @@ See the following procedures to create a river and modify its appearance\.
 
 To create a realistic river, use the **River** component's **Carve River Bed** tool to prepare the surrounding terrain\. This tool carves out a riverbed and creates riverbanks on the edges of the river that are higher than the river's water level\.
 
-You can also paint the river bottom with a different texture than the surrounding area\. This is useful if the water has translucent properties\. For more information on painting the terrain, see [Painting Terrain Texture Layers](terrain-texture-layers-paint.md)\.
+You can also paint the river bottom with a different texture than the surrounding area\. This is useful if the water has translucent properties\. For more information on painting the terrain, see [Painting Terrain Texture Layers](/docs/userguide/terrain/texture-layers-paint.md)\.
 
 **To create a river**
 
 1. [Create an entity\.](creating-entity.md)
 
-1. [Add](component-working-adding.md) the **River** component\.
+1. [Add](/docs/userguide/components/working-adding.md) the **River** component\.
 
-1. Add the **[Spline](component-spline.md)** component\.
+1. Add the **[Spline](/docs/userguide/components/spline.md)** component\.
 
-   The **Spline** component defines the path and shape of the river\. For information about how to add, remove, and edit individual points, see the **[Spline](component-spline.md)** component\.
+   The **Spline** component defines the path and shape of the river\. For information about how to add, remove, and edit individual points, see the **[Spline](/docs/userguide/components/spline.md)** component\.
 
 1. Under **Terrain Editing**, specify values for the following parameters:
    + **Border width** – Sets the width of the slope on the river's sides\.
@@ -81,7 +81,7 @@ You can erase vegetation around the river's borders\.
 
 ## Setting River Material Properties<a name="setting-river-material-properties"></a>
 
-The road material must use the [WaterVolume Shader](shader-ref-watervolume.md)\. 
+The road material must use the [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\. 
 
 **To set the river material**
 
@@ -91,4 +91,4 @@ The road material must use the [WaterVolume Shader](shader-ref-watervolume.md)\.
 
 ![\[WaterVolume Shader parameters\]](/images/userguide/component/setting-river-materials-1.png)
 
-For information about the **WaterVolume Shader** properties, see [WaterVolume Shader](shader-ref-watervolume.md)\.
+For information about the **WaterVolume Shader** properties, see [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\.

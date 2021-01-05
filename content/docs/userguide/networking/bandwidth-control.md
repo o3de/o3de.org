@@ -5,7 +5,7 @@ title: Controlling Bandwidth Usage
 ---
 # Controlling Bandwidth Usage<a name="network-bandwidth-control"></a>
 
-[GridMate](network-intro.md) provides several ways to control the bandwidth that your game uses, including bandwidth throttling and the prioritization of [replica](network-replicas-replica.md) updates\.
+[GridMate](/docs/userguide/networking/intro.md) provides several ways to control the bandwidth that your game uses, including bandwidth throttling and the prioritization of [replica](/docs/userguide/networking/replicas-replica.md) updates\.
 
 ## Controlling the Send Rate<a name="network-bandwidth-control-send-rate"></a>
 
@@ -44,7 +44,7 @@ Bursts in bandwidth usage are allowed for the number of seconds specified, after
 
 ## Prioritization of Replica Updates<a name="network-bandwidth-control-replica-priority"></a>
 
-Every [replica chunk](network-replicas-chunks.md) has a priority that you can assign\. The priority is represented by an integer from `0` through `65534`\. Larger integers represent higher priorities\. Replicas with higher priorities are sent first\. The default is `32768`\. 
+Every [replica chunk](/docs/userguide/networking/replicas-chunks.md) has a priority that you can assign\. The priority is represented by an integer from `0` through `65534`\. Larger integers represent higher priorities\. Replicas with higher priorities are sent first\. The default is `32768`\. 
 
 This prioritization is especially important when you use the bandwidth limiter because you can use it to define which objects are more important and which are less important\. If your game has a bandwidth cap and you have prioritized your replicas appropriately, the objects with higher priority are sent more often\. The objects with lower priority are sent only when there is enough bandwidth to accommodate them\. 
 

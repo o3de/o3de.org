@@ -6,7 +6,7 @@ title: Using Image Naming Conventions
 ---
 # Using Image Naming Conventions<a name="asset-pipeline-using-image-naming-conventions"></a>
 
-You can use any existing or created [image processing presets](asset-pipeline-creating-image-processing-presets.md)\. To do this, append the suffix to the end of the file name before you add it to your Lumberyard directory\.
+You can use any existing or created [image processing presets](/docs/userguide/assets/creating-image-processing-presets.md)\. To do this, append the suffix to the end of the file name before you add it to your Lumberyard directory\.
 
 **Example**  
 If you create an image that you want to use as a decal, add the `_decal` suffix to the file name before the extension\. For example, to convert `scorchmark.tif` as a decal, rename it to `scorchmark_decal.tif`\. You then add it to your Lumberyard directory, so that Asset Processor automatically processes the file\.

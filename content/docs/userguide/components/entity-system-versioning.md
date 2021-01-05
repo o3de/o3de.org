@@ -21,7 +21,7 @@ Successful conversion of serialized data to a newer version requires careful pla
 + [Deprecation](#component-entity-system-versioning-deprecation)
 
 **Important**  
-If you upgraded to Lumberyard v1\.23 or later from a previous version of Lumberyard, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](component-slice-upgrade-process.md)\.
+If you upgraded to Lumberyard v1\.23 or later from a previous version of Lumberyard, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
 **Important**  
 If you are using Lumberyard v1\.22 or earlier, be sure to read important information about [Avoiding Data Loss when Serializing Component Data](best-practices-for-component-data-serialization.md)\.

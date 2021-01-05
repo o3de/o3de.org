@@ -52,4 +52,4 @@ To gather data to make these determinations, you can use the Lumberyard Editor c
 
      Because this limits the number of textures in a texture atlas, having the UI load multiple separate texture atlases is a good practice\.
 
-For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](ui-editor-debugging-ui-canvases.md)\.
+For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](/docs/userguide/ui/editor/debugging-ui-canvases.md)\.

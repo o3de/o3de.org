@@ -27,7 +27,7 @@ Configuring access control for a service API involves setting three distinct set
 
 1. Access to the cloud gem resource, enforced by the resource's AWS service \(for example, Amazon DynamoDB or Amazon S3\.\)
 
-In all three cases, you use the [Cloud Canvas Resource Manager Security](cloud-canvas-rm-security.md) system to configure access\. This involves putting `Permissions` metadata on the `ServiceApi` and `ServiceLambda` resource definitions, as well as on the definitions of resources accessed by the `ServiceLambda` code\. This is illustrated in the following diagram:
+In all three cases, you use the [Cloud Canvas Resource Manager Security](/docs/userguide/gems/cloud-canvas/rm-security.md) system to configure access\. This involves putting `Permissions` metadata on the `ServiceApi` and `ServiceLambda` resource definitions, as well as on the definitions of resources accessed by the `ServiceLambda` code\. This is illustrated in the following diagram:
 
 ![\[Configuring access control\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-3.png)
 
@@ -74,7 +74,7 @@ To grant permission to execute an operation, modify your `resource-template.json
 }
 ```
 
-The `AbstractRole` property determines who has permission to call the API\. Cloud Canvas has built in `Player`, `ProjectOwner`, and `DeploymentOwner` roles\. You can create others as required\. The `abstract` role specified here is mapped to an actual AWS IAM role using metadata on the role definitions\. For details, see [Understanding the Resource Manager Security System](cloud-canvas-rm-security.md)\.
+The `AbstractRole` property determines who has permission to call the API\. Cloud Canvas has built in `Player`, `ProjectOwner`, and `DeploymentOwner` roles\. You can create others as required\. The `abstract` role specified here is mapped to an actual AWS IAM role using metadata on the role definitions\. For details, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.
 
 The `Action` and `ResourceSuffix` are used by the Cloud Canvas Resource Manager access control to generate an AWS IAM policy document statement\. This process is described in [Statement Reference of IAM Policies for Executing API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html#api-gateway-calling-api-permissions)\.
 

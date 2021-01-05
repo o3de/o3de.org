@@ -12,9 +12,9 @@ The environment includes lighting, terrain, bodies of water, vegetation, sky, an
 
 **Topics**
 + [Creating a New Level](level-create.md)
-+ [Creating Terrain](terrain-intro.md)
++ [Creating Terrain](/docs/userguide/terrain/intro.md)
 + [Blending Environment Probes](level-blending-environment-probe.md)
 + [Working with Database Libraries](level-database-view.md)
-+ [Adding Sky Effects](sky-intro.md)
-+ [Adding Weather Effects](weather-intro.md)
-+ [Adding Vegetation](vegetation-intro.md)
++ [Adding Sky Effects](/docs/userguide/sky/intro.md)
++ [Adding Weather Effects](/docs/userguide/weather/intro.md)
++ [Adding Vegetation](/docs/userguide/vegetation/intro.md)

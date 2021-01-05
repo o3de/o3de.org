@@ -5,7 +5,7 @@ title: Web Communicator Cloud Gem Portal
 ---
 # Web Communicator Cloud Gem Portal<a name="cloud-canvas-cloud-gem-web-communicator-cgp"></a>
 
-In the Web Communicator Cloud Gem Portal, you can manage WebSocket and OpenSSL users, send messages to them, and listen to messages from them\. You can create OpenSSL users directly from the Cloud Gem Portal or register a WebSocket user from the [CommunicatorSample](cloud-canvas-cloud-gem-web-communicator-sample-level.md) level\. The Cloud Gem Portal can broadcast and receive on the channels that are available through WebSocket connections to the AWS IoT service\.
+In the Web Communicator Cloud Gem Portal, you can manage WebSocket and OpenSSL users, send messages to them, and listen to messages from them\. You can create OpenSSL users directly from the Cloud Gem Portal or register a WebSocket user from the [CommunicatorSample](/docs/userguide/gems/cloud-canvas/web-communicator-sample-level.md) level\. The Cloud Gem Portal can broadcast and receive on the channels that are available through WebSocket connections to the AWS IoT service\.
 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-web-communicator-cgp-prerequisites"></a>
 
@@ -14,7 +14,7 @@ This tutorial assumes the following:
 + You have used Lumberyard's Cloud Canvas Resource Manager to create a project stack and a deployment stack in AWS\.
 + You have opened the Cloud Gem Portal \(in Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\)\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Web Communicator** in the Project Configurator\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Web Communicator** in the Project Configurator\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 To open the Web Communicator cloud gem, click **Web Communicator** in the Cloud Gem Portal's **Cloud Gems** pane\.
 

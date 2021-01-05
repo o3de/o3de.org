@@ -19,8 +19,8 @@ Optionally, you can also learn how to inspect your resources in AWS, create IAM 
 ## Prerequisites<a name="cloud-canvas-tutorial-prereqs"></a>
 
 Before starting this tutorial, complete the following:
-+ [Install and set up](setting-up-intro.md) Lumberyard\.
-+ Read [Implementing Connected Features with Cloud Canvas](cloud-canvas-intro.md)\.
++ [Install and set up](/docs/userguide/setup/intro.md) Lumberyard\.
++ Read [Implementing Connected Features with Cloud Canvas](/docs/userguide/gems/cloud-canvas/intro.md)\.
 
 ## Step 1: Sign up for AWS<a name="cloud-canvas-tutorial-sign-up"></a>
 
@@ -123,7 +123,7 @@ If you lose your secret access key, you must create a new set of keys\.
 
 ## Step 3: Enable One or More Cloud Gems in Your Project<a name="cloud-canvas-tutorial-enable-gem"></a>
 
-Cloud Canvas functionality is enabled in Lumberyard through [gems](gems-system-gems.md) and [cloud gems](cloud-canvas-cloud-gems-intro.md)\. Gems are extensions that share code and assets among Lumberyard projects\. Cloud gems are gems that use the power of AWS to provide connected features\. To enable gems and cloud gems in your project, you use the [Project Configurator](configurator-intro.md)\. 
+Cloud Canvas functionality is enabled in Lumberyard through [gems](/docs/userguide/gems/builtin/s.md) and [cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md)\. Gems are extensions that share code and assets among Lumberyard projects\. Cloud gems are gems that use the power of AWS to provide connected features\. To enable gems and cloud gems in your project, you use the [Project Configurator](/docs/userguide/configurator/intro.md)\. 
 
 This tutorial uses the Lumberyard CloudGemSamples project, which includes many of the cloud gems that come with Lumberyard\. 
 
@@ -241,10 +241,10 @@ See the following resources\.
 
 | Task | Topic | 
 | --- | --- | 
-| Learn more about each of the cloud gems \(including cloud gems not in the CloudGemSamples project\) | [Cloud Gems](cloud-canvas-cloud-gems-intro.md) | 
-| Add additional gems and cloud gems to a project | [Enabling Gems](gems-system-using-project-configurator.md) | 
-| Use the AWS Management Console to see your resources in AWS | [Inspect Your Resources in AWS](cloud-canvas-tutorial-inspect.md) | 
-| Create security groups for Cloud Canvas team management | [Create IAM Users and Groups to Administer Cloud Canvas Teams](cloud-canvas-tutorial-team-admin.md) | 
-| Manage Cloud Gem Portal users | [User Management in the Cloud Gem Portal](cloud-canvas-cloud-gem-portal-user-management.md) | 
-| Create your own cloud gems and customize the Cloud Gem Portal | [Creating a Cloud Gem](cloud-canvas-cgf-getting-started-create-gem.md)[Getting Started With Game Development on the Cloud Gem Portal](cloud-canvas-cgf-cgp-dev-gs.md) | 
-| Remove the resources that you created in AWS | [Delete Your Cloud Canvas Deployments and Resources](cloud-canvas-how-to-delete-deployments.md) | 
+| Learn more about each of the cloud gems \(including cloud gems not in the CloudGemSamples project\) | [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md) | 
+| Add additional gems and cloud gems to a project | [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) | 
+| Use the AWS Management Console to see your resources in AWS | [Inspect Your Resources in AWS](/docs/userguide/gems/cloud-canvas/tutorial-inspect.md) | 
+| Create security groups for Cloud Canvas team management | [Create IAM Users and Groups to Administer Cloud Canvas Teams](/docs/userguide/gems/cloud-canvas/tutorial-team-admin.md) | 
+| Manage Cloud Gem Portal users | [User Management in the Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal-user-management.md) | 
+| Create your own cloud gems and customize the Cloud Gem Portal | [Creating a Cloud Gem](/docs/userguide/gems/cloud-canvas/cgf-getting-started-create-gem.md)[Getting Started With Game Development on the Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/cgf-cgp-dev-gs.md) | 
+| Remove the resources that you created in AWS | [Delete Your Cloud Canvas Deployments and Resources](/docs/userguide/gems/cloud-canvas/how-to-delete-deployments.md) | 

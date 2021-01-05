@@ -6,7 +6,7 @@ title: HDR Settings
 ---
 # HDR Settings<a name="enviro-lighting-hdr-tone-mapping"></a>
 
-As discussed in [Illuminance and Auto Exposure Key](enviro-lighting-luminance-scene-key.md), the auto exposure key setting controls the amount of scene exposure and determines whether the tone\-mapped image appears relatively bright or dark\. Several other settings also affect the tone mapping of scene\. These are known collectively as HDR \(high dynamic range\) in the **Time of Day Editor**\.
+As discussed in [Illuminance and Auto Exposure Key](/docs/userguide/rendering/lighting/luminance-scene-key.md), the auto exposure key setting controls the amount of scene exposure and determines whether the tone\-mapped image appears relatively bright or dark\. Several other settings also affect the tone mapping of scene\. These are known collectively as HDR \(high dynamic range\) in the **Time of Day Editor**\.
 
 Film curve parameters in the **Time of Day Editor** correspond to analogous parameters that exist for camera film\. A film curve has three distinct regions with different contrast transfer characteristics:
 + The lower part of a film curve that is associated with relatively low exposures is designated the toe, and corresponds to the low\-density portions of an image\. When an image is exposed so that areas fall within the toe region, little or no contrast is transferred to the image\.

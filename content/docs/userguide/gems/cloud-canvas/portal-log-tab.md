@@ -12,7 +12,7 @@ title: Using the &cgp; to View Logs
 | --- |
 |  The Cloud Gem Portal \(CGP\) is deprecated and will be removed in a future version of Lumberyard\.  | 
 
-You can view [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/) for your cloud gems in the **Log** tab of the Cloud Gem Portal\. CloudWatch Logs is an AWS service that monitors log activity related to your application's use of cloud gems\. For example, you can view the [Player Account](cloud-canvas-cloud-gem-player-account.md) cloud gem logs related to a sign up failure\.
+You can view [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/) for your cloud gems in the **Log** tab of the Cloud Gem Portal\. CloudWatch Logs is an AWS service that monitors log activity related to your application's use of cloud gems\. For example, you can view the [Player Account](/docs/userguide/gems/cloud-canvas/player-account.md) cloud gem logs related to a sign up failure\.
 
 CloudWatch Logs arranges logs into log streams and log groups\. A log stream is a sequence of log events that share the same source\. Each separate source of logs into CloudWatch Logs makes up a separate log stream\.
 
@@ -23,10 +23,10 @@ You can use the **Log** tab of the Cloud Gem Portal to view log streams and log 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-portal-log-tab-prerequisites"></a>
 
 This tutorial assumes the following:
-+ You are using a Lumberyard project that has the [Leaderboard](cloud-canvas-cloud-gem-leaderboard.md) and [Message of the Day](cloud-canvas-cloud-gem-message-of-the-day.md) cloud gems enabled\.
-+ You have used Lumberyard's Cloud Canvas Resource Manager or the [`lmbr_aws`](cloud-canvas-command-line.md) command line tool to create a project stack and a deployment stack in AWS\.
++ You are using a Lumberyard project that has the [Leaderboard](/docs/userguide/gems/cloud-canvas/leaderboard.md) and [Message of the Day](/docs/userguide/gems/cloud-canvas/message-of-the-day.md) cloud gems enabled\.
++ You have used Lumberyard's Cloud Canvas Resource Manager or the [`lmbr_aws`](/docs/userguide/gems/cloud-canvas/command-line.md) command line tool to create a project stack and a deployment stack in AWS\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add cloud gems to your project\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add cloud gems to your project\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Viewing Log Information in the Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal-log-tab-viewing-log-information-in-the-cloud-gem-portal"></a>
 

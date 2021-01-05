@@ -50,7 +50,7 @@ Use the following parameters to customize your geometry cache\.
 
 This EBus is used to communicate to an entity with a **Geometry Cache** component\. This is available at runtime and at edit time and can be accessed from C\+\+, Lua and ScriptCanvas\. Some functionality may be restricted to C\+\+ exclusively\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 **GeometryCacheComponentRequests**  
@@ -85,7 +85,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 This EBus is used to react to events that take place in the **Geometry Cache** component\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 
 **GeometryCacheComponentNotifications**  

@@ -44,4 +44,4 @@ The entity table then has the following properties and methods available to it:
 
 ## Built\-in Types and Methods<a name="lua-scripting-ces-built-in-types-and-methods"></a>
 
-The Lumberyard engine provides a number of types and methods that are useful for making games\. Many of the types and methods available are listed in the class view available in Lumberyard's Lua IDE\. For more information on the class view, see [Lua Editor](lua-editor-debugger.md)\.
+The Lumberyard engine provides a number of types and methods that are useful for making games\. Many of the types and methods available are listed in the class view available in Lumberyard's Lua IDE\. For more information on the class view, see [Lua Editor](/docs/userguide/scripting/lua/editor-debugger.md)\.

@@ -8,7 +8,7 @@ title: Enable Water Flow
 
 Draws water flowing down the entire screen\. You can use this node in situations where the player is standing under flowing water, such as a waterfall\.
 
-To disable the effect, see [Disable Water Flow](disable-water-flow-node.md)\.
+To disable the effect, see [Disable Water Flow](/docs/userguide/rendering/disable/water-flow-node.md)\.
 
 **Contents**
 + [Inputs](#enable-water-flow-note-input)

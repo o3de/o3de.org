@@ -23,12 +23,12 @@ You can add a prebuilt **Dropdown** element from the slice library\. When you do
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
 
 **To add a Dropdown element from the slice library**
-+ In the [**UI Editor**](ui-editor-using.md), choose **New**, **Element from Slice Library**, **Dropdown**\.
++ In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **Dropdown**\.
 
 **To edit a Dropdown component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **Dropdown** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Dropdown** and do the following, as appropriate:    
 **Interactable**  
-See [Properties](ui-editor-components-interactive-properties.md) to edit the common interactive component settings\.  
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
 **Elements, Content**  
 Select an element from the list\. This specifies the entity that appears when the drop\-down menu is expanded\.  
 **Elements, Expanded Parent**  

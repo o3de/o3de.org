@@ -5,7 +5,7 @@ title: Common.Cloud Shader
 ---
 # Common\.Cloud Shader<a name="shader-ref-common-cloud"></a>
 
-The Common\.Cloud shader is used exclusively for [common clouds](component-sky-cloud.md)\. The shader uses per\-vertex gradient lighting and takes the sun, cloud, and viewer positions into account\. Gradient lighting interpolates between the bright color, which is calculated from the HDR Sun color multiplier, and the dark color, which is calculated from the HDR Sky color multiplier\. In addition, rim lighting is also applied on a per\-pixel basis to capture the effects of light scattering when looking at clouds that are lit by the sun from behind\.
+The Common\.Cloud shader is used exclusively for [common clouds](/docs/userguide/components/sky-cloud.md)\. The shader uses per\-vertex gradient lighting and takes the sun, cloud, and viewer positions into account\. Gradient lighting interpolates between the bright color, which is calculated from the HDR Sun color multiplier, and the dark color, which is calculated from the HDR Sky color multiplier\. In addition, rim lighting is also applied on a per\-pixel basis to capture the effects of light scattering when looking at clouds that are lit by the sun from behind\.
 
 Common clouds use soft clipping to gradually fade in and out at the near and far clipping plane\. This prevents rendering artifacts in the far distance and flickering due to cloud particles entering and leaving the view cone near the camera during a flythrough\. Additionally, clouds blend softly against opaque scene geometry\.
 

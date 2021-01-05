@@ -6,9 +6,9 @@ title: Serialize and deserialize JSON objects
 ---
 # Serialize and deserialize JSON objects<a name="serialization-json-serialize-deserialize"></a>
 
- Once a class has been [registered with a serialization context](serialization-register-objects.md) objects of that class can be serialized and deserialized\. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function, and deserialized from JSON with `AZ::JsonSerialization::Load()`\. 
+ Once a class has been [registered with a serialization context](/docs/userguide/programming/serialization/register-objects.md) objects of that class can be serialized and deserialized\. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function, and deserialized from JSON with `AZ::JsonSerialization::Load()`\. 
 
- This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from JSON the serializer\. For information on how specific types are serialized, see [Data types in serialized JSON](serialization-json-data-types.md)\. 
+ This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from JSON the serializer\. For information on how specific types are serialized, see [Data types in serialized JSON](/docs/userguide/programming/serialization/json-data-types.md)\. 
 
 ## Serialization<a name="serialization-json-serialize"></a>
 

@@ -7,7 +7,7 @@ title: Previewing your Virtual Reality Project
 
 You can preview your virtual reality project for any project that has one or more of the virtual reality head\-mounted display gems enabled\. As you work in Lumberyard Editor, use your head\-mounted display to preview your virtual reality game\. The preview display inside of Lumberyard Editor is a preview only; it is not a good indicator of how fast the application will perform outside of the editor\.
 
-To gauge the game performance outside of Lumberyard Editor, [create a release build](asset-bundler-tutorial-release.md) to run your game in standalone mode\.
+To gauge the game performance outside of Lumberyard Editor, [create a release build](/docs/userguide/assets/bundle/tutorial-release.md) to run your game in standalone mode\.
 
 **To preview your virtual reality project**
 

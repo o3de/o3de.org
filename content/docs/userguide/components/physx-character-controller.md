@@ -12,7 +12,7 @@ The following diagram shows some of the features of the **PhysX Character Contro
 
 ![\[Contact offset of a PhysX Character Controller component in the Lumberyard Editor viewport.\]](/images/userguide/component/physx/component-physx-character-controller-1.png)
 
-The **PhysX Character Controller** component requires the [PhysX Characters](gems-system-gem-physx-characters.md) gem, which you can [enable](gems-system-using-project-configurator.md) in the Project Configurator\.
+The **PhysX Character Controller** component requires the [PhysX Characters](/docs/userguide/gems/builtin/physx-characters.md) gem, which you can [enable](/docs/userguide/gems/using-project-configurator.md) in the Project Configurator\.
 
 **Topics**
 + [Using the PhysX Character Controller Component](#component-physx-character-controller-using)
@@ -21,13 +21,13 @@ The **PhysX Character Controller** component requires the [PhysX Characters](gem
 
 ## Using the PhysX Character Controller Component<a name="component-physx-character-controller-using"></a>
 
-To use the **PhysX Character Controller** component, [add it to an entity](component-working-adding.md) that represents a character\.
+To use the **PhysX Character Controller** component, [add it to an entity](/docs/userguide/components/working-adding.md) that represents a character\.
 
 You can control the character's movement by using Script Canvas, the C\+\+ API, or animation systems that use the C\+\+ API\.
 
 ## PhysX Character Controller Properties<a name="component-physx-character-controller-properties"></a>
 
-You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](component-entity-inspector.md)**\.
+You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)**\.
 
 ![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/userguide/component/physx/ui-physx-character-controller-properties-1.27.png)
 
@@ -40,7 +40,7 @@ The **PhysX Character Controller** has the following component properties\.
 | --- | --- | 
 |  **Collision Layer**  |  Collision layer assigned to the controller\. The default is **Default**\.  | 
 |  **Collides With**  |  Collision layers that this character controller collides with\. Possible values are those that you define in the collision groups section of the PhysX configuration\.  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)  The collision filters determine whether dynamic objects collide with the controller\. A separate set of filters control what objects can impede the character from moving\. The movement filters are currently hard\-coded so that static objects obstruct character movement\.   | 
-| Material Library |  [PhysX material](physx-materials.md) assigned to this character controller\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)  | 
+| Material Library |  [PhysX material](/docs/userguide/nvidia/physx/materials.md) assigned to this character controller\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)  | 
 | Material Slot |  Specifies a material from the material library\. To select a material from the library, click the drop\-down list\. The default is the first value configured\.  If the material library is empty, this option does not appear and the default material values \(`0.5` and average for all parameters\) are used\.   | 
 |  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb\.   | 
 |  **[Step Height](#component-physx-character-controller-step-height)**  |  Height of steps in meters that the character controller can traverse\.   | 
@@ -85,7 +85,7 @@ You can use character controller collider with the following shapes:
 + Capsule
 + Box
 
-Use the **Shape** property in the **Entity Inspector** to choose the desired shape\. When you do so, the relevant dimensions are displayed for editing\. The dimension settings are identical to the capsule and box options for the **[PhysX Collider](component-physx-collider.md)** component\.
+Use the **Shape** property in the **Entity Inspector** to choose the desired shape\. When you do so, the relevant dimensions are displayed for editing\. The dimension settings are identical to the capsule and box options for the **[PhysX Collider](/docs/userguide/components/physx-collider.md)** component\.
 
 ## Differences Between PhysX and Legacy Character Physics Components<a name="component-physx-character-controller-vs-legacy"></a>
 

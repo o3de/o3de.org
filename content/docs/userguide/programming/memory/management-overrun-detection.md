@@ -15,7 +15,7 @@ Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [
 The following are the prerequisites and limitations for using the Lumberyard overrun detection feature:
 + You must build and run your project for Windows PC in a Debug or Profile build\.
 + Overrun detection is available only on platforms that use the Windows API\.
-+ Only allocations that go through the [Lumberyard allocators](memory-allocators.md) benefit from overrun detection\. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the Lumberyard allocators\.
++ Only allocations that go through the [Lumberyard allocators](/docs/userguide/programming/memory/allocators.md) benefit from overrun detection\. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the Lumberyard allocators\.
 
 ## When to Enable Overrun Detection<a name="memory-management-overrun-detection-when-to-enable"></a>
 

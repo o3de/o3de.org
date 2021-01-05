@@ -13,9 +13,9 @@ title: Sky Cloud
 | --- |
 | This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
 
-The **Sky Cloud** component creates realistic and detailed cloud effects in your game levels\. To use the **Sky Cloud** component, you must enable the [**Sky Clouds**](gems-system-gem-cloud.md) gem in your project\. For more information, see [Add modular features and assets with Gems](gems-system-gems.md)\.
+The **Sky Cloud** component creates realistic and detailed cloud effects in your game levels\. To use the **Sky Cloud** component, you must enable the [**Sky Clouds**](/docs/userguide/gems/builtin/cloud.md) gem in your project\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
-For information about cloud shading settings, placing distance clouds, and adding cloud shadows, see [Adding Clouds](weather-clouds-intro.md)\.
+For information about cloud shading settings, placing distance clouds, and adding cloud shadows, see [Adding Clouds](/docs/userguide/weather/clouds-intro.md)\.
 
 **Note**  
 The **Sky Cloud** component replaces [legacy clouds](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/cloud-effects.html)\.
@@ -34,7 +34,7 @@ This implementation uses advanced shading to create realistic [voxelized](ly-glo
 
 With the **Sky Cloud** component, you can do the following:
 + Randomly generate common and volumetric clouds in controlled areas\.
-+ Control where clouds generate by using entities with **[Box Shape](component-shapes.md)** components\.
++ Control where clouds generate by using entities with **[Box Shape](/docs/userguide/components/shapes.md)** components\.
 + Define the area in which clouds can move with a loop box\.
 + Programmatically manage **Sky Cloud** component properties with the **Script Canvas** editor, Lua scripting, and the **Track Editor**\.
 + Create and use slices that include cloud components\.
@@ -58,7 +58,7 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 1. In the **Entity Outliner**, select the new entity and in the **Entity Inspector**, click **Add Component** and then click the **Sky Cloud** component\.  
 ![\[Under Environment, select the Sky Cloud component.\]](/images/userguide/component/component-sky-cloud-1.png)
 
-1. Click **Add Required Component** to add the **[Box Shape](component-shapes.md)** component\.<a name="adding-loop-box"></a>  
+1. Click **Add Required Component** to add the **[Box Shape](/docs/userguide/components/shapes.md)** component\.<a name="adding-loop-box"></a>  
 ![\[Click Add Required Component to add the Box Shape component\]](/images/userguide/component/component-sky-cloud-2.png)
 
 1. In the **Entity Inspector**, at the bottom of the **Sky Cloud** component properties, click **Generate**\. This generates a common cloud that uses sprite\-based shading in the viewport\.  
@@ -74,10 +74,10 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 The **Sky Cloud** component properties are grouped into the following categories\. See the individual sections for detailed descriptions for the available parameters\.
 
 **Cloud material**  
-Sets the material for [common cloud rendering](shader-ref-common-cloud.md)\. The default material is `baseclouds.mtl`\. To select a different material, click \(**…**\) and choose a material based on the common cloud shader\. 
+Sets the material for [common cloud rendering](/docs/userguide/shaders/common-cloud.md)\. The default material is `baseclouds.mtl`\. To select a different material, click \(**…**\) and choose a material based on the common cloud shader\. 
 
 **[Volumetric Rendering](#component-sky-cloud-properties-volumetric)**  
-Enables [volumetric cloud rendering](shader-ref-volumeobject.md) and specifies the cloud's material and density\.
+Enables [volumetric cloud rendering](/docs/userguide/shaders/volumeobject.md) and specifies the cloud's material and density\.
 
 **[Movement](#component-sky-cloud-properties-movement)**  
 Defines how the clouds move over time\.
@@ -90,15 +90,15 @@ Defines parameters for cloud generation when you click **Generate**\.
 
 ### Volumetric Rendering Parameters<a name="component-sky-cloud-properties-volumetric"></a>
 
-When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](ly-glos-chap.md#voxel) and uses the [Volume Object shader](shader-ref-volumeobject.md)\.
+When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](ly-glos-chap.md#voxel) and uses the [Volume Object shader](/docs/userguide/shaders/volumeobject.md)\.
 
-When **Volumetric Rendering** is not enabled, you create a sprite\-based common cloud, which uses the [Common Cloud shader](shader-ref-common-cloud.md)\.
+When **Volumetric Rendering** is not enabled, you create a sprite\-based common cloud, which uses the [Common Cloud shader](/docs/userguide/shaders/common-cloud.md)\.
 
 
 | Name | Description | 
 | --- | --- | 
 | Enabled | If selected, this cloud is drawn with volumetric rendering\. If not selected, the common cloud shader is used\. | 
-| Volume material | [Volume Object](shader-ref-volumeobject.md) based material used for rendering volumetric clouds\. Volumetric rendering must be enabled for this parameter\. Th default material is volumeClouds\.mtl\. | 
+| Volume material | [Volume Object](/docs/userguide/shaders/volumeobject.md) based material used for rendering volumetric clouds\. Volumetric rendering must be enabled for this parameter\. Th default material is volumeClouds\.mtl\. | 
 | Density | Defines the volumetric cloud's density\. Volumetric rendering must be enabled for this parameter\. | 
 
 ### Movement Parameters<a name="component-sky-cloud-properties-movement"></a>

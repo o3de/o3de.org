@@ -21,7 +21,7 @@ See the following concepts for the Viewport Interaction Model:
 
 **Manipulator**  
 With manipulators, you can edit component properties directly in the viewport instead of the **Entity Inspector**\.  
-For more information, see [Using Manipulators](component-manipulators-using.md)\. 
+For more information, see [Using Manipulators](/docs/userguide/components/manipulators-using.md)\. 
 
 **Custom Reference Target**  
 When you select an entity, you can specify whether to move that entity in relation to another entity\. 
@@ -30,7 +30,7 @@ When you select an entity, you can specify whether to move that entity in relati
 
 This feature has the following limitations:
 + The Viewport Interaction Model supports component entities only and doesn't support legacy entities, such as terrain and vegetation\.
-+ When you enable the Viewport Interaction Model, this feature removes some toolbar options in the [Lumberyard Editor Interface](lumberyard-editor-interface.md), such as vertex snapping\.
++ When you enable the Viewport Interaction Model, this feature removes some toolbar options in the [Lumberyard Editor Interface](/docs/userguide/editor/interface.md), such as vertex snapping\.
 + You can't change or customize shortcuts for the Viewport Interaction Model\.
 
 **Topics**

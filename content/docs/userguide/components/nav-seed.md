@@ -6,21 +6,21 @@ title: Navigation Seed
 ---
 # Navigation Seed<a name="component-nav-seed"></a>
 
-The **Navigation Seed** component marks chunks of the [**Navigation Area**](component-nav-area.md) that are accessible to AI agents\. Game developers can use this component as a visual aid to determine where AI agents can go\. 
+The **Navigation Seed** component marks chunks of the [**Navigation Area**](/docs/userguide/components/nav-area.md) that are accessible to AI agents\. Game developers can use this component as a visual aid to determine where AI agents can go\. 
 
-The **[Navigation Area](component-nav-area.md)** component can generate a complex\-looking mesh with disconnected islands\. If this happens, it can be difficult to determine the precise places that your AI can reach\. In this case, use the **Navigation Seed** component**** to render a color\-coded map\. The blue chunks are accessible to AI and the red chunks are inaccessible\.
+The **[Navigation Area](/docs/userguide/components/nav-area.md)** component can generate a complex\-looking mesh with disconnected islands\. If this happens, it can be difficult to determine the precise places that your AI can reach\. In this case, use the **Navigation Seed** component**** to render a color\-coded map\. The blue chunks are accessible to AI and the red chunks are inaccessible\.
 
 ![\[Example Navigation Seed component with red and blue chunks.\]](/images/userguide/component/component-navigation-mesh-seed-enabled.png)
 
-For example, [static objects](component-nav-area.md#component-nav-area-static-entities), [exclusion areas](component-nav-area.md#component-nav-area-exclusion), or terrain features can divide a [navigation area](component-nav-area.md) into multiple chunks\. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\)\. You might have multiple navigation areas in one location, such as for different [agent types](component-navigation.md#component-navigation-properties)\. In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](component-nav-area.md#component-nav-area-properties-agent-types) or a specific agent type in the chunk where you placed the navigation seed\.
+For example, [static objects](component-nav-area.md#component-nav-area-static-entities), [exclusion areas](component-nav-area.md#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/userguide/components/nav-area.md) into multiple chunks\. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\)\. You might have multiple navigation areas in one location, such as for different [agent types](component-navigation.md#component-navigation-properties)\. In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](component-nav-area.md#component-nav-area-properties-agent-types) or a specific agent type in the chunk where you placed the navigation seed\.
 
 **To use the Navigation Seed component**
 
-1. [Create a navigation area](component-nav-area.md)\.
+1. [Create a navigation area](/docs/userguide/components/nav-area.md)\.
 
 1. Divide the navigation area into multiple chunks using [static objects](component-nav-area.md#component-nav-area-static-entities), [exclusion areas](component-nav-area.md#component-nav-area-exclusion), or terrain\. 
 
-1. [Add](component-working-adding.md) the **Navigation Seed** component to the navigation area entity or to a separate entity\.
+1. [Add](/docs/userguide/components/working-adding.md) the **Navigation Seed** component to the navigation area entity or to a separate entity\.
 
 1. If you want to specify an [agent type](component-navigation.md#component-navigation-properties), select it in the **Navigation Seed** component\.
 

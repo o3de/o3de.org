@@ -30,11 +30,11 @@ distance_from_puppet = -1
 TPS uses a highly efficient method to rank points, keeping expensive operations like raycasts and pathfinding to an absolute minimum\. Queries are optimized automatically\.
 
 **Topics**
-+ [Tactical Point System Overview](ai-tactical-point-overview.md)
-+ [TPS Query Execution Flow](ai-tactical-point-execution-flow.md)
-+ [TPS Querying with C\+\+](ai-tactical-point-cpp-interface.md)
-+ [TPS Querying with Lua](ai-tactical-point-lua-interface.md)
-+ [TPS Query Language Reference](ai-tactical-point-query-language.md)
-+ [Point Generation and Evaluation](ai-tactical-point-generation-evaluation.md)
-+ [Integration with the Modular Behavior Tree System](ai-tactical-point-mbt.md)
-+ [Future Plans and Possibilities](ai-tactical-point-future.md)
++ [Tactical Point System Overview](/docs/userguide/ai/tactical-point-overview.md)
++ [TPS Query Execution Flow](/docs/userguide/ai/tactical-point-execution-flow.md)
++ [TPS Querying with C\+\+](/docs/userguide/ai/tactical-point-cpp-interface.md)
++ [TPS Querying with Lua](/docs/userguide/ai/tactical-point-lua-interface.md)
++ [TPS Query Language Reference](/docs/userguide/ai/tactical-point-query-language.md)
++ [Point Generation and Evaluation](/docs/userguide/ai/tactical-point-generation-evaluation.md)
++ [Integration with the Modular Behavior Tree System](/docs/userguide/ai/tactical-point-mbt.md)
++ [Future Plans and Possibilities](/docs/userguide/ai/tactical-point-future.md)

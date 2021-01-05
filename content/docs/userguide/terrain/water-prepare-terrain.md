@@ -15,7 +15,7 @@ title: Preparing the Terrain
 
 For all water volumes such as lakes, ponds, and reservoirs, the terrain must first be lowered and sculpted to contain the body of water\. To create the bottom and walls of your body of water, you need to consider the depth, shape, and edges of your landform geography\. 
 
-For rivers, see [Preparing the River Terrain](terrain-rivers-prep-terrain.md)\.
+For rivers, see [Preparing the River Terrain](/docs/userguide/terrain/rivers-prep-terrain.md)\.
 
 **To prepare the terrain for bodies of water**
 
@@ -25,6 +25,6 @@ For rivers, see [Preparing the River Terrain](terrain-rivers-prep-terrain.md)\.
 
 1. Adjust the **Height** value to a negative value for the depth of the water volume\.
 
-1. Adjust the other terrain brush settings as needed to fine\-tune the look of the walls\. See [Terrain Brush Parameters](terrain-landforms-brush-params.md) for more information\.
+1. Adjust the other terrain brush settings as needed to fine\-tune the look of the walls\. See [Terrain Brush Parameters](/docs/userguide/terrain/landforms-brush-params.md) for more information\.
 
 1. In your level, drag to define the shape\. Release the mouse button and repeat as needed\.

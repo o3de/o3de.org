@@ -23,7 +23,7 @@ For every frame, thousands of rays are traced through voxels and shadow maps to 
 
 ![\[Example global illumination enabled and disabled.\]](/images/userguide/rendering/SVOGI.gif)
 
-To use this feature, you must [enable](gems-system-using-project-configurator.md) the SVOGI gem for your project\.
+To use this feature, you must [enable](/docs/userguide/gems/using-project-configurator.md) the SVOGI gem for your project\.
 
 You must also enable SVOGI per level\.
 

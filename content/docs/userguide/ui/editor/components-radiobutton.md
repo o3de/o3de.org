@@ -19,9 +19,9 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 + `RadioButton.uicanvas` – Examples of different behaviors and default settings
 
 **To edit a radio button component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **RadioButton** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButton** and do the following, as appropriate:    
 **Interactable**  
-See [Properties](ui-editor-components-interactive-properties.md) to edit the common interactive component settings\.  
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
 **Elements**, **On**  
 Select an element from the list to specify the entity that appears when the radio button state is on \(selected\)\.   
 **Elements**, **Off**  

@@ -8,7 +8,7 @@ title: Shader Rendering System
 
 Lumberyard uses physically\-based rendering \(PBR\) shaders that use real\-world physical rules and properties to describe how incoming light interacts with objects\. This means that object materials look more convincing under different lighting conditions\. A basic understanding of how light interacts with objects in the real world can be very helpful when setting up materials\.
 
-Each shader has a unique set of shader parameters \(**Shader Params**\) and generation parameters \(**Shader Generation Params**\)\. Some shader parameters become available \(are visible\) only if an associated shader generation parameter is first enabled\. This is also true for certain texture map slots \(file paths\) under **Texture Maps**\. For a listing of all shaders, see [Shader Reference](shader-ref-intro.md)\. 
+Each shader has a unique set of shader parameters \(**Shader Params**\) and generation parameters \(**Shader Generation Params**\)\. Some shader parameters become available \(are visible\) only if an associated shader generation parameter is first enabled\. This is also true for certain texture map slots \(file paths\) under **Texture Maps**\. For a listing of all shaders, see [Shader Reference](/docs/userguide/shaders/intro.md)\. 
 
 There are two categories of materials that are relevant for shader rendering: metals such as like iron, gold, copper, and non\-metals such as plastic, stone, wood, skin, glass\. Each has different diffuse and specular reflectance characteristics\. 
 
@@ -31,7 +31,7 @@ As the variation is so little, it is often enough to use a constant specular col
 1. Locate shader\-specific parameters under **Shader Params** and associated **Shader Generation Params**\.
 
 **Topics**
-+ [Image\-Based Lighting](mat-shaders-image-lighting.md)
-+ [Environment Probes and Cubemaps](mat-shaders-environment-probes-intro.md)
-+ [Height Map Ambient Occlusion](mat-shaders-heightmap_ambient_occlusion.md)
-+ [Developing a Custom Shader](mat-shaders-custom-dev-intro.md)
++ [Image\-Based Lighting](/docs/userguide/materials/shaders/image-lighting.md)
++ [Environment Probes and Cubemaps](/docs/userguide/materials/shaders/environment-probes-intro.md)
++ [Height Map Ambient Occlusion](/docs/userguide/materials/shaders/heightmap_ambient_occlusion.md)
++ [Developing a Custom Shader](/docs/userguide/materials/shaders/custom-dev-intro.md)

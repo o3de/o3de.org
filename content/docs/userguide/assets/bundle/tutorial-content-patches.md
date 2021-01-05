@@ -20,7 +20,7 @@ This tutorial demonstrates a bundling process designed to simulate a patch updat
 
 ## Prerequisites<a name="asset-bundler-tutorial-content-patches-prerequisites"></a>
 
-To complete this tutorial, you should have completed the [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md) and [Creating Multiple Asset Bundles](asset-bundler-tutorial-multiple-bundles.md) tutorials\. You should have:
+To complete this tutorial, you should have completed the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) and [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md) tutorials\. You should have:
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
 + The `startergame_pc.assetlist` file used to generate the starter game content bundle\.
 + The `dlc_level2.seed` seed list file used to generate the asset list for the level content bundle\.
@@ -36,9 +36,9 @@ For this tutorial you'll modify the `level2` level created in the previous tutor
 1. Search for the term *primitive* in the search bar\. The **Primitive Assets** gem should appear in the results list\. Select the checkbox to include it as part of the Starter Game, and then select **Save**\.  
 ![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](/images/userguide/assetbundler/tutorial-content-patches/02.png)
 **Note**  
-The **Primitive Assets** gem is an asset\-only gem, so you aren't required to recompile any code for your game\. If you were adding a gem with a code component, you would also need to rebuild both the **profile** and **release** portions of your game and distribute the new binaries as part of the patch\. See the [Build and bundle assets for release in Lumberyard](asset-bundler-tutorial-release.md) for build instructions and where the release binaries need to be located\. 
+The **Primitive Assets** gem is an asset\-only gem, so you aren't required to recompile any code for your game\. If you were adding a gem with a code component, you would also need to rebuild both the **profile** and **release** portions of your game and distribute the new binaries as part of the patch\. See the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) for build instructions and where the release binaries need to be located\. 
 
-1. Open the Lumberyard Editor and then open `level2` that you created in the [previous tutorial\.](asset-bundler-tutorial-multiple-bundles.md)
+1. Open the Lumberyard Editor and then open `level2` that you created in the [previous tutorial\.](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)
 
 1. Create a new entity in the level and assign it the `_box_1x1.fbx` mesh\.
 
@@ -48,7 +48,7 @@ The **Primitive Assets** gem is an asset\-only gem, so you aren't required to re
 
    1. Drag the `_box_1x1.fbx` mesh onto your newly created entity in the level\.
 
-   If you need a visual refresher on the editor UI for these steps, see [Creating Multiple Asset Bundles](asset-bundler-tutorial-multiple-bundles.md)\.
+   If you need a visual refresher on the editor UI for these steps, see [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)\.
 
 1. Save the level by selecting **File** > **Save** \(Ctrl\-S\) from the main menu\.
 

@@ -9,10 +9,10 @@ You can use API operations on the Cloud Canvas in\-game survey service to manage
 
 **Topics**
 + [Get Service Status](#cloud-canvas-cloud-gem-in-game-survey-api-service-status)
-+ [Survey Operations](cloud-canvas-cloud-gem-in-game-survey-api-survey-operations.md)
-+ [Question Operations](cloud-canvas-cloud-gem-in-game-survey-api-question-operations.md)
-+ [Answer Submission Operations](cloud-canvas-cloud-gem-in-game-survey-api-submission-operations.md)
-+ [Metadata Operations](cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations.md)
++ [Survey Operations](/docs/userguide/gems/cloud-canvas/in-game-survey-api-survey-operations.md)
++ [Question Operations](/docs/userguide/gems/cloud-canvas/in-game-survey-api-question-operations.md)
++ [Answer Submission Operations](/docs/userguide/gems/cloud-canvas/in-game-survey-api-submission-operations.md)
++ [Metadata Operations](/docs/userguide/gems/cloud-canvas/in-game-survey-api-metadata-operations.md)
 
 ## Get Service Status<a name="cloud-canvas-cloud-gem-in-game-survey-api-service-status"></a>
 

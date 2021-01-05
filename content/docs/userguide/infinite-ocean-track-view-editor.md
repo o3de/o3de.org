@@ -12,4 +12,4 @@ You can add the **Infinite Ocean** component to an entity sequence in the Track 
 **Note**  
 Some **Infinite Ocean** component parameters are not available in the Track View\. The **Wind Speed** and **Wind Direction** parameters are not supported at this time\.
 
-For more information, see [Using the Track View Editor](cinematics-track-view-editor.md)\.
+For more information, see [Using the Track View Editor](/docs/userguide/cinematics/track-view/editor.md)\.

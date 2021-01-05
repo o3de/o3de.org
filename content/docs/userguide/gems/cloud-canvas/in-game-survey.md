@@ -19,7 +19,7 @@ You can use the In\-Game Survey Cloud Gem Portal to create surveys for your game
 + [Cloning a Survey](#cloud-canvas-cloud-gem-in-game-survey-cloning)
 + [Ending a Survey](#cloud-canvas-cloud-gem-in-game-survey-ending)
 + [Reopening a Survey](#cloud-canvas-cloud-gem-in-game-survey-reopening)
-+ [In\-Game Survey Cloud Gem Service API Reference](cloud-canvas-cloud-gem-in-game-survey-service-api.md)
++ [In\-Game Survey Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/in-game-survey-service-api.md)
 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-in-game-survey-prerequisites"></a>
 
@@ -28,7 +28,7 @@ This tutorial assumes that you have already performed the following steps to set
 + You have created a project stack and a deployment stack in Cloud Canvas Resource Manager\.
 + You have opened the Cloud Gem Portal\. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem In\-Game Survey** in the Project Configurator\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem In\-Game Survey** in the Project Configurator\.
 
 ## Creating a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-creating"></a>
 

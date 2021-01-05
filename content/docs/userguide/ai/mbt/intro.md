@@ -34,7 +34,7 @@ An example tree structure is shown here:
 Each node can have parameters to configure the behavior of its execution\. When passing an unacceptable value the parsing of the node could fail and an error message could be found inside the `Editor.log` or `Game.log` files\.
 
 **Topics**
-+ [Standard MBT Nodes](ai-mbt-nodes-standard.md)
-+ [Common AI MBT Nodes](ai-mbt-nodes-common.md)
-+ [Game AI Modular Behavior Tree \(MBT\) Nodes](ai-mbt-nodes-game.md)
-+ [Helicopter AI MBT Nodes](ai-mbt-nodes-flying.md)
++ [Standard MBT Nodes](/docs/userguide/ai/mbt/nodes-standard.md)
++ [Common AI MBT Nodes](/docs/userguide/ai/mbt/nodes-common.md)
++ [Game AI Modular Behavior Tree \(MBT\) Nodes](/docs/userguide/ai/mbt/nodes-game.md)
++ [Helicopter AI MBT Nodes](/docs/userguide/ai/mbt/nodes-flying.md)

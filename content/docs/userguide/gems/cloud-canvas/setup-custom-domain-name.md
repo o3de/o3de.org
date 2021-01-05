@@ -58,7 +58,7 @@ Use the following steps to create new project and deployment stacks using your c
 
 ## Update Existing Cloud Canvas Stacks Using the Custom Domain Name<a name="cloud-canvas-update-stacks"></a>
 
-Updating your old project and deployment stacks to use the custom domain name requires manual inputs and exposes the stacks to risk of rollback failure\. New versions of custom resource handlers are created when you update the custom domain name, but they are not be used to process events because custom resources are locked by default to the version of the code that you used to create the resources\. For more information, see [Versioning of Custom Resources](cloud-canvas-cgf-adding-aws-resources-versioning.md)\.
+Updating your old project and deployment stacks to use the custom domain name requires manual inputs and exposes the stacks to risk of rollback failure\. New versions of custom resource handlers are created when you update the custom domain name, but they are not be used to process events because custom resources are locked by default to the version of the code that you used to create the resources\. For more information, see [Versioning of Custom Resources](/docs/userguide/gems/cloud-canvas/cgf-adding-aws-resources-versioning.md)\.
 
 If necessary, you can override the locking of a custom resource to the version of the code with which it was created using the following steps\.
 

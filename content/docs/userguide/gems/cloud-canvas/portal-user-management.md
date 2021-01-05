@@ -21,9 +21,9 @@ This feature is not related to the [Login with Amazon](https://developer.amazon.
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Cloud Gem Framework Gem enabled \(in the Project Configurator, select **Cloud Gem Player Framework**\)\.
-+ You have created a project stack in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You have created a project stack in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Framework** in the Project Configurator\. For information on creating a project stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Framework** in the Project Configurator\. For information on creating a project stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ### Legal Restrictions<a name="cloud-canvas-cloud-gem-user-management-legal-restrictions"></a>
 
@@ -35,7 +35,7 @@ To manage users of your Cloud Gem Portal, use the **User Administration** page\.
 
 **To open the User Administration page**
 
-1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\. If this is your first time, follow the steps in [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md) to sign in with your temporary administrator account credentials\. You must change your password immediately after you sign in\.
+1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\. If this is your first time, follow the steps in [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md) to sign in with your temporary administrator account credentials\. You must change your password immediately after you sign in\.
 
 1. Click **Administration** or its gear ![\[Image NOT FOUND\]](/images/userguide/shared/cloud-canvas-cloud-gem-text-to-speech-cgp-4.png) icon in the left navigation pane of the Cloud Gem Portal to open the **User Administration** page\.  
 ![\[User Administration page\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-1.png)

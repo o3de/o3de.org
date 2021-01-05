@@ -40,7 +40,7 @@ The following shows the structure of a sample Waf entry\.
 ]
 ```
 
-For more details on how to specify passes, see [AZ Code Generator Integration with Waf ](az-code-gen-waf-integration.md)\.
+For more details on how to specify passes, see [AZ Code Generator Integration with Waf ](/docs/userguide/codegen/waf-integration.md)\.
 
 ## Creating a Template Driver in Python<a name="az-code-gen-template-drivers-python"></a>
 
@@ -220,4 +220,4 @@ def create_drivers(env):
     return [MyTemplateDriver(env)]
 ```
 
-For information on the contents of the `obj` variable, see [Intermediate JSON Data Format](az-code-gen-intermediate-json-data-format.md)\.
+For information on the contents of the `obj` variable, see [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)\.

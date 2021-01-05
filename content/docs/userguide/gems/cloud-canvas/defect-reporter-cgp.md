@@ -16,19 +16,19 @@ Use the Defect Reporter Cloud Gem Portal to view and manage defect report submis
 + Configure the display of report details\.
 + Create custom data collection fields\.
 
-You can use the [DefectReporterSample](cloud-canvas-cloud-gem-defect-reporter-sample-level.md) level to generate sample reports and then view and manage them in the Cloud Gem Portal\.
+You can use the [DefectReporterSample](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md) level to generate sample reports and then view and manage them in the Cloud Gem Portal\.
 
 ## Prerequisites<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-prerequisites"></a>
 
 This tutorial assumes the following:
 + You are using version 1\.15 or later of Lumberyard\.
 + You have used the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) to set **CloudGemDefectReportSample** as your default project\.
-+ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
++ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A project stack for your project\.
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 + You have opened the Cloud Gem Portal\. 
 
-If you don't meet the prerequisites, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Opening the Defect Reporter Cloud Gem Portal<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-opening"></a>
 
@@ -333,7 +333,7 @@ When you create custom data fields in the Cloud Gem Portal, you can specify valu
 
 ### Viewing and Testing Custom Data Collection Fields<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-viewing-testing"></a>
 
-After you have created one or more custom data fields, you can view and test them in the [DefectReporterSample](cloud-canvas-cloud-gem-defect-reporter-sample-level.md) level\.
+After you have created one or more custom data fields, you can view and test them in the [DefectReporterSample](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md) level\.
 
 **To view custom data fields**
 
@@ -350,5 +350,5 @@ After you have created one or more custom data fields, you can view and test the
 1. For longer fields like nested custom fields, use the scrollbar to move through the feedback items\.  
 ![\[Using the scrollbar to navigate a nested custom field in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-44.png)
 
-1. To submit the report for further testing, click **Submit**\. The report should be available in the Cloud Gem Portal in about 10 minutes\. For more information about the sample level, see [Using the Defect Reporter Cloud Gem Sample Level](cloud-canvas-cloud-gem-defect-reporter-sample-level.md)\.  
+1. To submit the report for further testing, click **Submit**\. The report should be available in the Cloud Gem Portal in about 10 minutes\. For more information about the sample level, see [Using the Defect Reporter Cloud Gem Sample Level](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md)\.  
 ![\[Submitting a report from the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-45.png)

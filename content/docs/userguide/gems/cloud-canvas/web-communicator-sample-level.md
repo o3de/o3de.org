@@ -12,9 +12,9 @@ To perform a simple test of the Web Communicator cloud gem, you can use the Comm
 
 This tutorial assumes the following:
 + Your Lumberyard project has the Web Communicator and Player Account cloud gems enabled \(in the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html), choose **Cloud Gem Web Communicator** and **Cloud Gem Player Account**\)\.
-+ You used the [Cloud Canvas Resource Manager](https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-ui-rm-overview.html) or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following: 
-  + A [*project stack*](cloud-canvas-ui-rm-project-stack.md) for your project\.
-  + A [*deployment*](cloud-canvas-ui-rm-deployments.md) for your project that includes the **CloudGemWebCommunicator** and **CloudGemPlayerAccount** resource groups\.
++ You used the [Cloud Canvas Resource Manager](https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-ui-rm-overview.html) or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following: 
+  + A [*project stack*](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) for your project\.
+  + A [*deployment*](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md) for your project that includes the **CloudGemWebCommunicator** and **CloudGemPlayerAccount** resource groups\.
 + You have an email account for testing\.
 
 ## Test Workflow Summary<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-summary"></a>

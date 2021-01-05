@@ -8,7 +8,7 @@ title: Disable Volumetric Scattering
 
 Disables volumetric effects\.
 
-To enable the effect, see [Enable Volumetric Scattering](enable-volumetric-scattering-node.md)\.
+To enable the effect, see [Enable Volumetric Scattering](/docs/userguide/rendering/enable/volumetric-scattering-node.md)\.
 
 **Contents**
 + [Inputs](#disable-volumetric-scattering-note-input)

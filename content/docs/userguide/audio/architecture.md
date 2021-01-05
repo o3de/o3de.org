@@ -31,7 +31,7 @@ Lumberyard audio Gems feature the following modules:
 
 ## Components<a name="audio-architecture-components"></a>
 
-Core audio components available in Lumberyard Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more\. For a complete list, see [Audio Components](audio-components.md)\.
+Core audio components available in Lumberyard Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more\. For a complete list, see [Audio Components](/docs/userguide/audio/components.md)\.
 
 ## Content<a name="audio-architecture-content"></a>
 

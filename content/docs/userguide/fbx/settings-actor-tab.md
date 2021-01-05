@@ -66,13 +66,13 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 **Note**  
 Each mesh in the **Actor group** to simulate as cloth requires its own **Cloth** modifier\. 
 
-For more information, see [Simulate cloth with NVIDIA Cloth](nvidia-cloth-intro.md)\. 
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/userguide/nvidia/cloth/intro.md)\. 
 
 ****Select Cloth Mesh****  
 Select the mesh to have cloth data applied and simulate as a cloth object\. 
 
 **Note**  
-For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](nvidia-cloth-vertex-data.md)\. 
+For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md)\. 
 
 ****Inverse Masses****  
 Select a vertex color stream to apply per vertex inverse mass data for cloth simulation\. If no vertex color stream is selected, an inverse mass value of **1\.0** is assigned to all vertices in the cloth mesh\. 

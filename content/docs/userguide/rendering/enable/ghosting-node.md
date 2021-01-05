@@ -8,7 +8,7 @@ title: Enable Ghosting
 
 Apply a ghosting effect that overlaps and blurs previous frames together\.
 
-To disable the effect, see [Disable Ghosting](disable-ghosting-node.md)\.
+To disable the effect, see [Disable Ghosting](/docs/userguide/rendering/disable/ghosting-node.md)\.
 
 **Contents**
 + [Inputs](#enable-ghosting-note-input)

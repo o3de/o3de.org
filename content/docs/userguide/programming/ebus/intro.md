@@ -10,9 +10,9 @@ Event buses \(EBuses\) are a general\-purpose communication system that Lumberya
 
 To interact with the engine or other components in Lumberyard, include the component or system's EBus or API header in your code\. Then make calls to the exposed EBuses\. With this approach you can replace engine–level system APIs with implementations that you define in a gem\. For example, you could replace Lumberyard's audio system with your own EBus handler\. This would give you complete control over audio without having to recompile the engine\.
 
-For examples of EBus usage, see [Usage and Examples](ebus-usage-and-examples.md)\. 
+For examples of EBus usage, see [Usage and Examples](/docs/userguide/programming/ebus/usage-and-examples.md)\. 
 
-For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](ebus-in-depth.md)\. 
+For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/userguide/programming/ebus/in-depth.md)\. 
 
 For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 

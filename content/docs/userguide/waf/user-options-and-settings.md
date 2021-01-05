@@ -202,7 +202,7 @@ The following tables describe the options defined in the `default_settings.json`
 | --- | --- | --- | --- | 
 | default\_project | \-\-visual\-studio\-solution\-default\-project | The Visual Studio default project if not set in the solution user options \(\.suo \) file\. | Editor | 
 | msvs\_version | \-\-msvs\-version | Version of the Visual Studio solution to generate when creating a new project with Project Configurator\. | 15 | 
-| specs\_to\_include\_in\_project\_generation | \-\-specs\-to\-include\-in\-project\-generation | List of Waf [spec files](waf-files-spec-file.md) to include in the Visual Studio solution generation\. | all, game, game\_and\_engine | 
+| specs\_to\_include\_in\_project\_generation | \-\-specs\-to\-include\-in\-project\-generation | List of Waf [spec files](/docs/userguide/waf/files-spec-file.md) to include in the Visual Studio solution generation\. | all, game, game\_and\_engine | 
 | visual\_studio\_solution\_folder | \-\-visual\-studio\-solution\-folder | Name of the directory in which the generated Visual Studio solution should be stored\. | Solutions | 
 
 ### Output Folder Options<a name="waf-files-user-settings-output-folder-options"></a>
@@ -253,7 +253,7 @@ The following settings define whether or not a platform is enabled to build\. Th
 
 #### Android<a name="waf-files-user-settings-platform-specific-options-android"></a>
 
- This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](android-reference.md)\. See [Waf settings](android-reference.md#android-waf-settings)\. 
+ This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. See [Waf settings](android-reference.md#android-waf-settings)\. 
 
 #### iOS<a name="waf-files-user-settings-platform-specific-options-ios"></a>
 

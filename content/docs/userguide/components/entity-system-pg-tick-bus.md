@@ -95,4 +95,4 @@ In Lumberyard, a more event\-driven approach is to use the `TransformBus` to mon
 
 When authoring a component, try to anticipate the requirements of components that might depend on yours\. Use a notification bus to expose the appropriate notifications for your component\. This approach enables others to write code that consumes the services of your components in a faster and more scalable way\.
 
-For more best practices, see [Components and EBuses: Best Practices](component-entity-system-pg-components-ebuses-best-practices.md)\.
+For more best practices, see [Components and EBuses: Best Practices](/docs/userguide/components/entity-system-pg-components-ebuses-best-practices.md)\.

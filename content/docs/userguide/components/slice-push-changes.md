@@ -6,7 +6,7 @@ title: Modifying a Slice and Saving Changes
 # Modifying a Slice and Saving Changes<a name="component-slice-push-changes"></a>
 
 If you modify an entity that is part of a slice instance, you create an override for that change\. An override means that the slice instance has different component properties than its source slice\. You can verify that a slice has overrides with the following:
-+ In the **Entity Inspector**, the components and the properties that differ from the source slice appear orange\. For more information, see [Entity Inspector](component-entity-inspector.md)\.
++ In the **Entity Inspector**, the components and the properties that differ from the source slice appear orange\. For more information, see [Entity Inspector](/docs/userguide/components/entity-inspector.md)\.
 + In the **Entity Outliner**, the entity appears orange and has a dot if a child slice has an override\. For more information, see the [Entity Outliner table](component-slices.md#identify-slices)\.
 
 **Example**  

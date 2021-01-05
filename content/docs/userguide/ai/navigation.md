@@ -18,9 +18,9 @@ This problem can only appear in the very initial stages of map development\. Eve
 ## Path Following<a name="ai-navigation-paths"></a>
 
 **Q: How does path following actually work? Where to start?**  
-A: See the topic on [Path Following](ai-path-following.md)\.
+A: See the topic on [Path Following](/docs/userguide/ai/path-following.md)\.
 
 ## Auto\-Disabling<a name="ai-navigation-disabling"></a>
 
 **Q: How do you keep patrols always active, regardless of their distance from the player?**  
-A: See the topic on [Auto\-Disable](ai-auto-disable.md)\.
+A: See the topic on [Auto\-Disable](/docs/userguide/ai/auto-disable.md)\.

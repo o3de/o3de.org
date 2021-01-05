@@ -8,7 +8,7 @@ title: Disable Rain Drops
 
 Disables the raindrop effects\.
 
-To enable the effect, see [Enable Rain Drops](enable-rain-drops-node.md)\.
+To enable the effect, see [Enable Rain Drops](/docs/userguide/rendering/enable/rain-drops-node.md)\.
 
 **Contents**
 + [Inputs](#disable-rain-drops-note-input)

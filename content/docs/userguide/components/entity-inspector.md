@@ -23,13 +23,13 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
 ![\[Find entities and its attached components in the Entity Inspector.\]](/images/userguide/component/entity_system/component-entity-inspector.png)
 
 Use the **Entity Inspector** to do the following:
-+ [Add components to entities](component-working-adding.md)
++ [Add components to entities](/docs/userguide/components/working-adding.md)
 + [Modify component properties](editing-component-properties.md)
 + [Remove, copy, cut, and paste components](creating-adding-components.md)
-+ [Set the entity status](component-entity-inspector-status.md)
-+ [Customize the entity icon](component-entity-inspector-customize-icon.md)
-+ [Pin an entity's inspector](component-entity-inspector-pin.md)
++ [Set the entity status](/docs/userguide/components/entity-inspector-status.md)
++ [Customize the entity icon](/docs/userguide/components/entity-inspector-customize-icon.md)
++ [Pin an entity's inspector](/docs/userguide/components/entity-inspector-pin.md)
 + [Create your own help topic for your custom component](editing-component-properties.md#component-entity-inspector-help)
 
 **Note**  
-For a list and descriptions of available components, see [Component Reference](component-components.md)\. You can also click the **Help** icon ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/entity-inspector-help.png) in the header of each component to open a help topic\.
+For a list and descriptions of available components, see [Component Reference](/docs/userguide/components/components.md)\. You can also click the **Help** icon ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/entity-inspector-help.png) in the header of each component to open a help topic\.

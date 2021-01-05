@@ -24,8 +24,8 @@ You must do the following:
 ## Step 1: Configure a Game Project<a name="ios-configure-your-game-project"></a>
 
 You have two options for configuring a game project:
-+ Use the [Samples Project](sample-projects-levels-intro.md) in the `lumberyard_version\dev\` directory as a foundation for your own game project\.
-+ Create a new game project\. For more information, see [Creating and Switching Game Projects](configurator-projects.md)\.
++ Use the [Samples Project](/docs/userguide/samples/projects/s-levels-intro.md) in the `lumberyard_version\dev\` directory as a foundation for your own game project\.
++ Create a new game project\. For more information, see [Creating and Switching Game Projects](/docs/userguide/configurator/projects.md)\.
 
 **To configure a game project**
 
@@ -33,7 +33,7 @@ You have two options for configuring a game project:
 
 1. In the Project Configurator, do one of the following:
    + Select **SamplesProject** and then click **Set as default**\. Follow the instructions for [switching game projects](configurator-projects.md#project-configurator-different-project)\.
-   + Click **Create new**\. Follow the instructions for [creating a game project](configurator-projects.md)\.
+   + Click **Create new**\. Follow the instructions for [creating a game project](/docs/userguide/configurator/projects.md)\.
 
 1. If you created a new game project, do the following:
 
@@ -41,7 +41,7 @@ You have two options for configuring a game project:
 
    1. In Lumberyard Editor, open your level and then press **Ctrl\+E**\. This will export the levels you have created\.
 
-1. \(Optional\) Configure system components and memory settings for your game project\. For more information, see [Configuring Advanced Settings](configurator-advanced.md)\.
+1. \(Optional\) Configure system components and memory settings for your game project\. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
 ## Step 2: Prepare Your Assets<a name="ios-prepare-your-assets"></a>
 
@@ -112,7 +112,7 @@ Lumberyard uses a versatile shader system to achieve high quality, realistic gra
 When a new shader is compiled, the game waits for the remote shader compiler to compile the binary shader permutation and then send it back to your device\. Once this occurs, the shader is cached on your device until you delete the app\. When you are ready to release your game, you must pack up and include all cached binary shaders\.
 
 **Note**  
-You can also run the remote shader compiler on an Amazon EC2 instance\. For information, see [Running the Shader Compiler on Amazon EC2](ios-android-running-shader-compiler-amazon-EC2.md)\.
+You can also run the remote shader compiler on an Amazon EC2 instance\. For information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
 ### Prerequisites<a name="ios-remote-shader-compiler-prerequisites"></a>
 
@@ -158,7 +158,7 @@ You must modify certain configuration files to allow your iOS app to connect to 
 Configure and build various targets of your app, depending on your mode of development\. You can create a debug, profile, or release build\.
 + Debug – Allows you to see your code running under a debugger\. This build is slowest to run\.
 + Profile – Allows you to debug your code, though some code may be optimized and difficult to trace\. This build runs faster on your iOS device\.
-+ Release – Includes all required asset and shader `.pak` files for a release version of your iOS game\. This build runs the fastest; however, special steps are required to generate the build\. For more information, see [Creating a Release App](ios-creating-release-app.md)\.
++ Release – Includes all required asset and shader `.pak` files for a release version of your iOS game\. This build runs the fastest; however, special steps are required to generate the build\. For more information, see [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
 
 When you build code from a command line, you must take an additional step to run your app on an iOS device\. You use Xcode to open the `LumberyardiOSSDK.xcodeproj` project that is generated in the `lumberyard_version/dev/Solutions/` directory\. Then you select your device, follow the standard procedure to build and run on the device, set breakpoints, and inspect variables\.
 

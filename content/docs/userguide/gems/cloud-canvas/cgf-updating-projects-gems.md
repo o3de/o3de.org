@@ -6,7 +6,7 @@ title: Updating Projects and Cloud Gems to Version 1.0.0 of the Cloud Gem Framew
 ---
 # Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework<a name="cloud-canvas-cgf-updating-projects-gems"></a>
 
-A cloud gem is a gem that depends on the [Cloud Gem Framework](cloud-canvas-cloud-gem-framework-intro.md)\. Starting in Lumberyard 1\.10 \(and Cloud Gem Framework 1\.0\.0\), [gem versioning support](cloud-canvas-cgf-rm-versioning.md) makes the work of updating Lumberyard cloud gem projects much easier\. However, manual steps are required to update projects and gems that were created before Cloud Gem Framework version 1\.0\.0\.
+A cloud gem is a gem that depends on the [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md)\. Starting in Lumberyard 1\.10 \(and Cloud Gem Framework 1\.0\.0\), [gem versioning support](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md) makes the work of updating Lumberyard cloud gem projects much easier\. However, manual steps are required to update projects and gems that were created before Cloud Gem Framework version 1\.0\.0\.
 
 ## Updating Existing Cloud Gem Projects<a name="cloud-canvas-cgf-updating-projects-gems-updating-existing-cloud-gem-projects"></a>
 
@@ -83,7 +83,7 @@ To update an existing cloud gem, you must update the gem's `gem.json` file and e
 
 ### Updating Lambda Code<a name="cloud-canvas-cgf-updating-projects-gems-updating-lambda-code"></a>
 
-Updating Lambda code involves reorganizing your existing Lambda code directories and creating `.import` files as needed\. For information on the reasons for this directory restructuring, see [ Cloud Gem Framework and Resource Manager Versioning](cloud-canvas-cgf-rm-versioning.md)\.
+Updating Lambda code involves reorganizing your existing Lambda code directories and creating `.import` files as needed\. For information on the reasons for this directory restructuring, see [ Cloud Gem Framework and Resource Manager Versioning](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md)\.
 
 **To update your Lambda code**
 
@@ -116,4 +116,4 @@ Updating Lambda code involves reorganizing your existing Lambda code directories
    + If you had code for multiple Lambda functions in the single `lambda-function-code` directory, decide which modules to put into the subdirectory of the `lambda-code` directory, and place them there\.
    + If you have code that is used by multiple Lambda functions, put that code in a `<parent-dir>\common-code\<import-name>` directory\. To include the code with the rest of the Lambda code when it is uploaded, use an `.import` file\.
 
-For more information about these changes, see [ Cloud Gem Framework and Resource Manager Versioning](cloud-canvas-cgf-rm-versioning.md)\.
+For more information about these changes, see [ Cloud Gem Framework and Resource Manager Versioning](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md)\.

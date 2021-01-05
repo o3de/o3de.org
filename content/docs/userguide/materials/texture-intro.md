@@ -16,12 +16,12 @@ Textures are dictated by, and applied by, the shader that is selected for a mate
 Textures used in Lumberyard are usually created with Adobe Photoshop or other DCC tool\. 
 
 **Topics**
-+ [Texture Map Types](mat-texture-types.md)
++ [Texture Map Types](/docs/userguide/materials/texture-types.md)
 + [Texture Settings Editor](texture-settings-editor.md)
-+ [Texture Best Practices](mat-texture-best-practices.md)
-+ [Working with Diffuse Maps](mat-maps-diffuse.md)
-+ [Working with Normal Maps](mat-maps-normal-intro.md)
-+ [Working with Gloss Maps](mat-maps-gloss.md)
-+ [Working with Detail Maps](mat-maps-detail-intro.md)
-+ [Working with Decals](mat-maps-decal-intro.md)
-+ [Displacement Maps and Tessellation](mat-maps-displacement-intro.md)
++ [Texture Best Practices](/docs/userguide/materials/texture-best-practices.md)
++ [Working with Diffuse Maps](/docs/userguide/materials/maps/diffuse.md)
++ [Working with Normal Maps](/docs/userguide/materials/maps/normal-intro.md)
++ [Working with Gloss Maps](/docs/userguide/materials/maps/gloss.md)
++ [Working with Detail Maps](/docs/userguide/materials/maps/detail-intro.md)
++ [Working with Decals](/docs/userguide/materials/maps/decal-intro.md)
++ [Displacement Maps and Tessellation](/docs/userguide/materials/maps/displacement-intro.md)

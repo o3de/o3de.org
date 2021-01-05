@@ -10,11 +10,11 @@ Script Canvas is a visual scripting environment for Amazon Lumberyard that you c
 
 Script Canvas is also an extensible system\. You can build your own reusable Script Canvas functions and, since Script Canvas is based on AzCore, you can create custom Script Canvas nodes that use the serialization, reflection, modularization, and EBus messaging systems\. 
 
-To enable Script Canvas for Lumberyard, you must enable the [Script Canvas](gems-system-gem-script-canvas.md) gem and its dependencies\.
+To enable Script Canvas for Lumberyard, you must enable the [Script Canvas](/docs/userguide/gems/builtin/script-canvas.md) gem and its dependencies\.
 
 **Topics**
-+ [Learning Guide](script-canvas-learning-guide.md)
-+ [Common Tasks](script-canvas-common-tasks.md)
-+ [Editor Reference](script-canvas-editor-reference.md)
-+ [Programmer Guide](script-canvas-advanced-topics.md)
-+ [Script Canvas Node Reference](script-canvas-node-reference.md)
++ [Learning Guide](/docs/userguide/scripting/scriptcanvas/learning-guide.md)
++ [Common Tasks](/docs/userguide/scripting/scriptcanvas/common-tasks.md)
++ [Editor Reference](/docs/userguide/scripting/scriptcanvas/editor-reference.md)
++ [Programmer Guide](/docs/userguide/scripting/scriptcanvas/advanced-topics.md)
++ [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)

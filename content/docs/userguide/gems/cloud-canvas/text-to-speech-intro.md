@@ -15,10 +15,10 @@ You can use the text\-to\-speech service in two ways:
 In the first approach, you prepare voices and dialogues that players require and store them on the client\. This removes the need for the client to connect to the backend to generate and download lines that are known to be necessary\. The trade\-off is that the client must store the files locally\.
 
 **Topics**
-+ [Text\-to\-Speech Cloud Gem Portal](cloud-canvas-cloud-gem-text-to-speech-cgp.md)
-+ [Using the Text\-to\-Speech Sample Level](cloud-canvas-cloud-gem-text-to-speech-sample-level-using.md)
-+ [Creating a Wwise Project for Runtime Text\-to\-Speech](cloud-canvas-cloud-gem-text-to-speech-wwise.md)
-+ [Configuring Runtime Capabilities and Caching](cloud-canvas-cloud-gem-text-to-speech-runtime.md)
-+ [Text\-to\-Speech Gem Implementation Details](cloud-canvas-cloud-gem-text-to-speech-details.md)
-+ [Lip Synchronization with EMotion FX](cloud-canvas-cloud-gem-text-to-speech-emotionfx.md)
-+ [Text\-to\-Speech Cloud Gem Service API Reference](cloud-canvas-cloud-gem-text-to-speech-service-api.md)
++ [Text\-to\-Speech Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/text-to-speech-cgp.md)
++ [Using the Text\-to\-Speech Sample Level](/docs/userguide/gems/cloud-canvas/text-to-speech-sample-level-using.md)
++ [Creating a Wwise Project for Runtime Text\-to\-Speech](/docs/userguide/gems/cloud-canvas/text-to-speech-wwise.md)
++ [Configuring Runtime Capabilities and Caching](/docs/userguide/gems/cloud-canvas/text-to-speech-runtime.md)
++ [Text\-to\-Speech Gem Implementation Details](/docs/userguide/gems/cloud-canvas/text-to-speech-details.md)
++ [Lip Synchronization with EMotion FX](/docs/userguide/gems/cloud-canvas/text-to-speech-emotionfx.md)
++ [Text\-to\-Speech Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/text-to-speech-service-api.md)

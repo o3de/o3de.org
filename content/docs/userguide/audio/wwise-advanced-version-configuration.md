@@ -59,4 +59,4 @@ If you want to switch to later versions of Wwise, use the following procedure\.
 
    You'll notice that the setup instructions Lumberyard Setup Assistant still mention Wwise 2018\.1\.4\.6807\. You can ignore this text\.
 
-1. Complete the steps to upgrade [Wwise](audio-wwise-upgrade.md)\.
+1. Complete the steps to upgrade [Wwise](/docs/userguide/audio/wwise-upgrade.md)\.

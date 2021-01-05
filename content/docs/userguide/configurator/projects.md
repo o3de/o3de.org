@@ -54,7 +54,7 @@ The **Default** template builds on the **Empty** template and enables the follow
 
 To see the gems that enabled for the **Default** template, create a project from that template and choose **Enable Gems**\.
 
-The **Default** template also includes a simple level for you to manipulate components and entities in the editor and experiment with other assets in a neutral, gray environment\. The simple level includes a camera, a single light, an environment probe for reflections, and primitive objects with physics enabled\. The objects are provided by the [Primitive Assets Gem](gems-system-gem-primitive-assets.md)\.
+The **Default** template also includes a simple level for you to manipulate components and entities in the editor and experiment with other assets in a neutral, gray environment\. The simple level includes a camera, a single light, an environment probe for reflections, and primitive objects with physics enabled\. The objects are provided by the [Primitive Assets Gem](/docs/userguide/gems/builtin/primitive-assets.md)\.
 
 **Note**  
 When you create your game project, we recommend the **Default** template and its set of gems\. This template helps you start designing and developing quickly\. Some of the gems in the template are optional\. 
@@ -193,7 +193,7 @@ Use the Project Configurator to set default game project that opens in Lumberyar
 
    After the first launch and each time you change projects, Asset Processor runs in the background\. Asset Processor manages your assets and project files\. While Lumberyard Editor opens, you can see messages appear with status information\. 
 
-   For more information, see [Using Asset Processor](asset-pipeline-processor.md)\.
+   For more information, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
 
 ## Switching Game Projects<a name="project-configurator-different-project"></a>
 

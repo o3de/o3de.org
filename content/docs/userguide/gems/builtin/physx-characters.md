@@ -11,10 +11,10 @@ The PhysX Characters gem provides physics for your characters in your game\. The
 ![\[PhysX Characters gem in Lumberyard.\]](/images/userguide/gems/physx/gems-system-physx-characters.png)
 
 **Note**  
-To enable the PhysX Characters gem, you must first enable the [PhysX](gems-system-gem-physx.md) gem\.
+To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/userguide/gems/builtin/physx.md) gem\.
 
 The PhysX Characters gem adds the following components:
-+  **[PhysX Character Controller](component-physx-character-controller.md)** 
-+  **[PhysX Ragdoll](component-physx-ragdoll.md)** 
++  **[PhysX Character Controller](/docs/userguide/components/physx-character-controller.md)** 
++  **[PhysX Ragdoll](/docs/userguide/components/physx-ragdoll.md)** 
 
-For more information, see [Simulating physics behavior with the PhysX system](physx-intro.md)\.
+For more information, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.

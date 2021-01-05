@@ -64,4 +64,4 @@ The **Mute Audio** button \(K\) mutes audio in both editor and play mode\.
 
 ## VR Preview<a name="lumberyard-editor-toolbar-bottom-vr"></a>
 
-The **VR Preview** button \(L\) previews your project in [virtual reality mode](virtual-reality-preview.md) when a [virtual reality](virtual-reality.md) gem is enabled\.
+The **VR Preview** button \(L\) previews your project in [virtual reality mode](/docs/userguide/vr/preview.md) when a [virtual reality](/docs/userguide/vr/_index.md) gem is enabled\.

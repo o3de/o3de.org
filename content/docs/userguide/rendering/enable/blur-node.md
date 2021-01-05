@@ -8,7 +8,7 @@ title: Enable Blur
 
 Sets the blur filter, which uses Gaussian blur\.
 
-To disable the effect, see [Disable Blur](disable-blur-node.md)\.
+To disable the effect, see [Disable Blur](/docs/userguide/rendering/disable/blur-node.md)\.
 
 **Contents**
 + [Inputs](#enable-blur-node-input)

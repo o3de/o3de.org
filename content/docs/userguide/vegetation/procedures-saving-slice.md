@@ -9,7 +9,7 @@ Save your vegetation area as a slice so that you can easily place it in other lo
 
 Slices enable you to place multiple instances of the vegetation for your level\. If you make a change to a slice, you can save the override to all other instances of the slice\. For example, if you change the vegetation asset type from red to yellow flowers, you can choose to update all instances of the slice so that the vegetation area appears with yellow flowers\.
 
-For more information, see [Working with Slices](component-slices.md)\.
+For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 **To reference vegetation using slices**
 
@@ -30,7 +30,7 @@ For more information, see [Working with Slices](component-slices.md)\.
 1. On the **Vegetation Asset List** component, click the **Mesh Asset** and select a yellow flower asset\.   
 ![\[In the slice instance that you placed, select a yellow flower for the Mesh Asset.\]](/images/userguide/vegetation/dynamic/create-new-vegetation-reference-area-slice-2.png)
 **Note**  
-A property that appears orange has an override\. An override is a component change that is different than its source slice\. For more information, see [Modifying a Slice and Saving Changes](component-slice-push-changes.md)\.
+A property that appears orange has an override\. An override is a component change that is different than its source slice\. For more information, see [Modifying a Slice and Saving Changes](/docs/userguide/components/slice-push-changes.md)\.
 
 1. Right\-click the property, choose **Save field override**, and choose `basiccoverage.slice`\. 
 

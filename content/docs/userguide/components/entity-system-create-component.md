@@ -5,7 +5,7 @@ title: Creating a Component
 ---
 # Creating a Component<a name="component-entity-system-create-component"></a>
 
-A component in Lumberyard is a simple class that inherits from Lumberyard's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create Lumberyard components programmatically\. For information about adding and customizing the components available in Lumberyard Editor, see [Working with component entities](component-intro.md)\.
+A component in Lumberyard is a simple class that inherits from Lumberyard's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create Lumberyard components programmatically\. For information about adding and customizing the components available in Lumberyard Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
 
 ## Component Example<a name="component-entity-system-create-component-example"></a>
 
@@ -85,7 +85,7 @@ Reflect\(\)
 // Required Reflect function.
 static void Reflect(AZ::ReflectContext* context);
 ```
-For more information, see [Reflecting a Component for Serialization and Editing](component-entity-system-reflect-component.md)\.
+For more information, see [Reflecting a Component for Serialization and Editing](/docs/userguide/components/entity-system-reflect-component.md)\.
 
 Logical Services  
 \(Optional\) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with\. To define these logical services, use the following functions:  

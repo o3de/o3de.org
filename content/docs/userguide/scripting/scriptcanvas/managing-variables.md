@@ -15,7 +15,7 @@ The **Variable Manager** shows the variables that are used in your Script Canvas
 + [Creating Get or Set Variable Nodes](#script-canvas-create-get-or-set-nodes)
 + [Creating Value\-Changed Nodes](#script-canvas-create-on-value-changed-nodes)
 + [Deleting Variables](#script-canvas-delete-variable-nodes)
-+ [Using Container Types \(Arrays and Maps\)](script-canvas-containers.md)
++ [Using Container Types \(Arrays and Maps\)](/docs/userguide/scripting/scriptcanvas/containers.md)
 
 ## Adding and Configuring Variables<a name="script-canvas-add-and-configure-variable-nodes"></a>
 
@@ -37,7 +37,7 @@ Common variable types are pinned to the top of the list by default\. You can cus
    + For **Name**, enter a name to identify that color variable\. You can also double\-click the name in the **Variable Manager** to rename the variable\.
    + For **Color**, enter an RGB value or use the color picker\.
    + For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at \-1\.
-   + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](component-script-canvas.md)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph\.
+   + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](/docs/userguide/components/script-canvas.md)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph\.
 **Note**  
 This setting allows you to use the same Script Canvas graph for more than one entity, but customize part of the graph for a specific entity\. When you change the variable value on a component, that value takes precedence over the default value that is specified in the graph\.  
 ![\[Example of Color variable properties in the Script Canvas Node Inspector.\]](/images/userguide/scripting/script-canvas/node-inspector-scope-in-example.png)
@@ -81,7 +81,7 @@ You can use **OnVariableValueChanged** \(value\-changed\) event nodes to react t
 + Do one of the following:
   + Drag the variable from the **Variable Manager** to the canvas, and then choose **On *variable name* Changed**\.  
 ![\[Drag a variable from the Script Canvas Variable Manager to the canvas to create an on-value-changed node.\]](/images/userguide/scripting/script-canvas/variable-manager-create-on-value-changed.gif)
-  + Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button\. For help adding a node to a graph, see [Adding and Connecting Nodes](script-canvas-working-with-nodes-adding-and-connecting.md)\.  
+  + Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button\. For help adding a node to a graph, see [Adding and Connecting Nodes](/docs/userguide/scripting/scriptcanvas/working-with-nodes-adding-and-connecting.md)\.  
 ![\[Set the Source field of an OnVariableValueChanged event node using the field's gear button.\]](/images/userguide/scripting/script-canvas/variable-manager-create-on-value-changed-node.png)
 
 ## Deleting Variables<a name="script-canvas-delete-variable-nodes"></a>

@@ -26,11 +26,11 @@ The following table lists real\-world illuminance values, expressed in luminous 
 | Indirect sunlight \(in shadow\) | 20,000 | 4\.0 | \~ 2\.0 | 
 | Direct sunlight | 100,000 | 20\.0 | \~ 10\.0 | 
 
-The **Auto Exposure Key** setting controls the amount of light exposure and determines whether the tone\-mapped image appears relatively bright or dark\. This setting is calculated automatically from the average scene illuminance, which is why it is important to use standard real\-world illuminance levels\. For other settings that affect the tone mapping of a scene, see [HDR Settings](enviro-lighting-hdr-tone-mapping.md)\.
+The **Auto Exposure Key** setting controls the amount of light exposure and determines whether the tone\-mapped image appears relatively bright or dark\. This setting is calculated automatically from the average scene illuminance, which is why it is important to use standard real\-world illuminance levels\. For other settings that affect the tone mapping of a scene, see [HDR Settings](/docs/userguide/rendering/lighting/hdr-tone-mapping.md)\.
 
 Lumberyard's auto\-exposure mode works in exposure value \(EV\) units and can be enabled using the **r\_HDREyeAdaptationMode** console variable\.
 
-The following settings are used to achieve the desired illuminance in an environment level\. See [Setting Daytime Atmospheric Effects](sky-day-atmosphere.md) for more information\.
+The following settings are used to achieve the desired illuminance in an environment level\. See [Setting Daytime Atmospheric Effects](/docs/userguide/sky/day-atmosphere.md) for more information\.
 + Sun color
 + Sun color multiplier
 + Sun intensity

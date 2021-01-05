@@ -11,5 +11,5 @@ Lumberyard supports a standard fog system as well as a voxel\-based volumetric f
 You can also add realistic\-looking fog above water surfaces, as well as add volumetric fog shadows\.
 
 **Topics**
-+ [Standard Fog](rendering-graphics-fog.md)
-+ [Volumetric Fog](rendering-graphics-fog-volumetric.md)
++ [Standard Fog](/docs/userguide/rendering/fog.md)
++ [Volumetric Fog](/docs/userguide/rendering/fog-volumetric.md)

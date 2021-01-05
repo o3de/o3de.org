@@ -26,5 +26,5 @@ To use the Twitch gem and add Twitch support to your Lumberyard project, you mus
 
 **Topics**
 + [Prerequisites](#gems-system-gem-twitch-prerequisites)
-+ [Twitch ChatPlay System](chatplay-intro.md)
-+ [Twitch C\+\+ API Reference for Lumberyard](twitch-api-ebus.md)
++ [Twitch ChatPlay System](/docs/userguide/gems/builtin/chatplay/intro.md)
++ [Twitch C\+\+ API Reference for Lumberyard](/docs/userguide/gems/twitch/ebus.md)

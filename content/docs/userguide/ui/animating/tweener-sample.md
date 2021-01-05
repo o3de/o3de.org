@@ -6,11 +6,11 @@ title: Tweener Sample Level
 ---
 # Tweener Sample Level<a name="ui-animating-tweener-sample"></a>
 
-You can use the [Samples Project](sample-project-samples.md) to see an example level that uses tweeners\.
+You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) to see an example level that uses tweeners\.
 
 **To see example Scripted Entity Tweeners in action**
 
-1. In Lumberyard Editor, in the [Samples Project](sample-project-samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.  
+1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.  
 ![\[Example level that uses Scripted Entity Tweener.\]](/images/userguide/ui-animating-tweener-level.png)
 
 1. To switch to gameplay mode, press **Ctrl\+G**\. The header, list items, earth, stars, and spaceship use tweeners for their animation\.  
@@ -20,7 +20,7 @@ You can use the [Samples Project](sample-project-samples.md) to see an example l
 
 **To view the sample UI canvas**
 
-1. Open the [**UI Editor**](ui-editor-using.md)\. 
+1. Open the [**UI Editor**](/docs/userguide/ui/editor/using.md)\. 
 
 1. Choose **File**, **Open Canvas**\.
 
@@ -33,7 +33,7 @@ You can use the [Samples Project](sample-project-samples.md) to see an example l
 1. In the **Properties** pane, under the **Lua Script** component, for **Script**, click the **\{ \}** icon\. This opens the `samplescreenanimation` script in the **Lua Editor**\.  
 ![\[Select the Lua script for the sample tweener code.\]](/images/userguide/ui-animating-tweener-sample-1.png)
 
-1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](ui-animating-tweener-parameters.md)\.
+1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](/docs/userguide/ui/animating/tweener-parameters.md)\.
 
    Try the following:
    + Modify the value of the [`easeMethod`](ui-animating-tweener-parameters.md#ui-animating-tweener-easemethod) parameter, especially on the blocks that include `id = self.Properties.CharacterImage`, which represent the spaceship\.

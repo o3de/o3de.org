@@ -44,7 +44,7 @@ az_code_gen = [
 
 The paths given are relative to the target path in both cases\.
 
-Whenever the specified target is compiled, a code generation task passes in the `MySourceFile.h` file to the code generator\. It also invokes the `MyTemplateDriver.py` file to control the output\. For information on how to write a template driver, see [Template Drivers](az-code-gen-template-drivers.md)\.
+Whenever the specified target is compiled, a code generation task passes in the `MySourceFile.h` file to the code generator\. It also invokes the `MyTemplateDriver.py` file to control the output\. For information on how to write a template driver, see [Template Drivers](/docs/userguide/codegen/template-drivers.md)\.
 
 ## Advanced Integration<a name="az-code-gen-waf-integration-advanced"></a>
 
@@ -126,7 +126,7 @@ All command line parameters for the code generation utility can be specified in 
 ],
 ```
 
-For a full list of parameters, see [AZ Code Generator Parameters](az-code-gen-parameters.md)\.
+For a full list of parameters, see [AZ Code Generator Parameters](/docs/userguide/codegen/parameters.md)\.
 
 ## Waf Specific Options<a name="az-code-gen-waf-integration-waf-options"></a>
 

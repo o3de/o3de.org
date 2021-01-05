@@ -19,9 +19,9 @@ In addition to node basics, input, movement, and logging, you learn the followin
 + Adding action nodes
 
 ## Prerequisites<a name="script-canvas-tutorial-controllable-character-prerequisites"></a>
-+ Set the [Samples Project](sample-project-samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects)\.
-+ If your **Node Palette** is missing nodes, you can update your preferences to show hidden nodes\. For more information, see [Script Canvas Node Reference](script-canvas-node-reference.md)\. 
-+ To access diagnostic nodes, including the **Print** node, you must enable the **Script Canvas Diagnostic Library** gem and then build your game project\. For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
++ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects)\.
++ If your **Node Palette** is missing nodes, you can update your preferences to show hidden nodes\. For more information, see [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)\. 
++ To access diagnostic nodes, including the **Print** node, you must enable the **Script Canvas Diagnostic Library** gem and then build your game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Topics**
 + [Prerequisites](#script-canvas-tutorial-controllable-character-prerequisites)
@@ -46,7 +46,7 @@ Before you create a sphere that you can control with keyboard input, you need to
 
 ## Step 2: Create an Entity and Add Components to Create a Controllable Entity<a name="script-canvas-tutorial-controllable-character-step-two"></a>
 
-To create a sphere that you can control with keyboard input, you create an entity and add the **[Mesh](component-static-mesh.md)**, **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**, and **[Input](component-input.md)** components\. You also create an input mapping that converts WASD keyboard input into movement in the x and y directions\.
+To create a sphere that you can control with keyboard input, you create an entity and add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**, and **[Input](/docs/userguide/components/input.md)** components\. You also create an input mapping that converts WASD keyboard input into movement in the x and y directions\.
 
 **To create a controllable entity**
 

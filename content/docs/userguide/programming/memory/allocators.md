@@ -10,7 +10,7 @@ Lumberyard’s memory management system determines how memory is allocated\. In 
 Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
 **Note**  
-For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](cpp-best-practices-lumberyard-memory-management.md)\.
+For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](/docs/userguide/programming/best-practices/lumberyard-memory-management.md)\.
 
 **Topics**
 + [Manually Allocating Memory](#memory-allocators-manually-allocating-memory)
@@ -20,9 +20,9 @@ For best C\+\+ practices for managing memory in Lumberyard, see [Memory Manageme
 + [Creating an Allocator](#memory-allocators-creating-an-allocator)
 + [Static Initialization](#memory-allocators-static-initialization)
 + [Legacy Memory Management](#memory-allocators-legacy-memory-management)
-+ [Code Example: Automatic Unreflection of Module Classes](memory-allocators-example-auto-unreflect.md)
-+ [HPHA Memory Debugging](memory-management-debugging-hpha.md)
-+ [Overrun Detection](memory-management-overrun-detection.md)
++ [Code Example: Automatic Unreflection of Module Classes](/docs/userguide/programming/memory/allocators-example-auto-unreflect.md)
++ [HPHA Memory Debugging](/docs/userguide/programming/memory/management-debugging-hpha.md)
++ [Overrun Detection](/docs/userguide/programming/memory/management-overrun-detection.md)
 
 ## Manually Allocating Memory<a name="memory-allocators-manually-allocating-memory"></a>
 
@@ -98,7 +98,7 @@ AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 
 ### Child Allocator Example<a name="memory-allocators-creating-a-child-allocator-example"></a>
 
- The following code example adds a custom allocator for the [Script Canvas gem](gems-system-gem-script-canvas.md)\.
+ The following code example adds a custom allocator for the [Script Canvas gem](/docs/userguide/gems/builtin/script-canvas.md)\.
 
 **Example**  
 

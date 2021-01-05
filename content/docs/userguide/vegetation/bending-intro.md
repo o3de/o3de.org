@@ -15,6 +15,6 @@ You can use touch and detail bending effects together\. For example, a player ca
 From a performance standpoint, detail bending is the least expensive, touch bending is more expensive, and automerged bending is the most expensive\.
 
 **Topics**
-+ [Adding Touch \(Collision\) Bending Effects](vegetation-bending-touch-intro.md)
-+ [Adding Detail Bending Effects](vegetation-bending-detail-intro.md)
-+ [Using AutoMerged Wind Bending Effects](vegetation-bending-automerged-intro.md)
++ [Adding Touch \(Collision\) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md)
++ [Adding Detail Bending Effects](/docs/userguide/vegetation/bending-detail-intro.md)
++ [Using AutoMerged Wind Bending Effects](/docs/userguide/vegetation/bending-automerged-intro.md)

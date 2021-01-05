@@ -27,7 +27,7 @@ Note that administrative users created for an AWS account normally have permissi
 
 ## Role Management Commands<a name="cloud-canvas-rm-security-lmbr-aws-role-management-commands"></a>
 
-Role management commands manage the [AWS::IAM::Role](cloud-canvas-built-in-roles-and-policies.md) resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+Role management commands manage the [AWS::IAM::Role](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md) resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### lmbr\_aws role add<a name="cloud-canvas-rm-security-lmbr-aws-role-add"></a>
 
@@ -92,7 +92,7 @@ Project    ProjectResourceHandlerExecution
 
 ## Permission Metadata Management<a name="cloud-canvas-rm-security-lmbr-aws-permission-metadata-management"></a>
 
-The permission metadata management commands manage CloudCanvas [`Permissions` metadata](permissions-metadata-for-resource-definitions.md) on resource definitions in the `resource-group-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+The permission metadata management commands manage CloudCanvas [`Permissions` metadata](permissions-metadata-for-resource-definitions.md) on resource definitions in the `resource-group-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### lmbr\_aws permission add<a name="cloud-canvas-rm-security-lmbr-aws-permission-add"></a>
 
@@ -173,7 +173,7 @@ lmbr_aws permission list --role Player
 
 ## Role Mapping Metadata Management<a name="cloud-canvas-rm-security-lmbr-aws-role-mapping-metadata-management"></a>
 
-Role mapping metadata management commands manage CloudCanvas `RoleMappings` metadata on `AWS::IAM:Role` resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](cloud-canvas-setting-access-permissions.md)\.
+Role mapping metadata management commands manage CloudCanvas `RoleMappings` metadata on `AWS::IAM:Role` resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### lmbr\_aws role\-mapping add<a name="cloud-canvas-rm-security-lmbr-aws-role-mapping-add"></a>
 

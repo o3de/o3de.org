@@ -17,5 +17,5 @@ title: Object serialization to JSON format
  This section of the documentation covers serialization and deserialization of data in the JSON format, and how Lumberyard data types are mapped to JSON data types\. 
 
 **Topics**
-+ [Serialize and deserialize JSON objects](serialization-json-serialize-deserialize.md)
-+ [Data types in serialized JSON](serialization-json-data-types.md)
++ [Serialize and deserialize JSON objects](/docs/userguide/programming/serialization/json-serialize-deserialize.md)
++ [Data types in serialized JSON](/docs/userguide/programming/serialization/json-data-types.md)

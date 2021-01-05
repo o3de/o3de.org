@@ -18,12 +18,12 @@ The following picture shows an example of a **Draggable** component, where color
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
 
-The **Draggable** component is an interactive component\. It has the standard [interactive properties](ui-editor-components-interactive-properties.md)\.
+The **Draggable** component is an interactive component\. It has the standard [interactive properties](/docs/userguide/ui/editor/components-interactive-properties.md)\.
 
 **To edit a Draggable component**  
-In the **Properties** pane of the [**UI Editor**](ui-editor-using.md), expand **Draggable** and do the following, as appropriate:    
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Draggable** and do the following, as appropriate:    
 **Interactable**  
-See [Properties](ui-editor-components-interactive-properties.md) to edit the common interactive component settings\.  
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
 **Drag States**  
 Define the color, alpha, sprite, or font of this element and its child elements for a particular drag state\.  
 When it is not being dragged, an element with a draggable component uses the interactable states \(pause on, pressed, and disabled\)\.  

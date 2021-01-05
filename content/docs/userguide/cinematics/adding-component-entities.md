@@ -24,10 +24,10 @@ If there are other components attached to the entity, those may also appear in t
 
 For components that are available, you can right\-click them to see what additional tracks can be added to the sequence\. Some component properties can't be added as a track in a sequence and can't be animated\.
 
-For more information, see [Component Entities and Component Nodes](cinematics-track-view-nodes-component-entity.md)\. 
+For more information, see [Component Entities and Component Nodes](/docs/userguide/cinematics/track-view/nodes-component-entity.md)\. 
 
 See the following topics for working with common component entities in a sequence\.
 
 **Topics**
-+ [Adding Lighting](cinematics-adding-lighting-to-scenes.md)
-+ [Adding a Camera](cinematics-cameras-intro.md)
++ [Adding Lighting](/docs/userguide/cinematics/adding-lighting-to-scenes.md)
++ [Adding a Camera](/docs/userguide/cinematics/cameras-intro.md)

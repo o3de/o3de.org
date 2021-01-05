@@ -6,7 +6,7 @@ title: HttpRequestor Gem
 ---
 # HttpRequestor Gem<a name="http-requestor-gem"></a>
 
-You can use the HttpRequestor gem to make asynchronous HTTP/HTTPS requests and return data through a user\-provided call back function\. This gem uses the EBus for communication and provides all requests asynchronously\. For more information, see [Working with the Event Bus \(EBus\) system](ebus-intro.md)\.
+You can use the HttpRequestor gem to make asynchronous HTTP/HTTPS requests and return data through a user\-provided call back function\. This gem uses the EBus for communication and provides all requests asynchronously\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 **Note**  
 This feature is supported only on Windows and replaces `CryAction::HttpRequest`\.
@@ -22,7 +22,7 @@ To use the HttpRequestor gem, you must enable it in your project\.
 
 **To enable the HttpRequestor gem**
 
-1. In the [Project Configurator](configurator-intro.md), select your project, and then click **Enable Gems**\.
+1. In the [Project Configurator](/docs/userguide/configurator/intro.md), select your project, and then click **Enable Gems**\.
 
 1. In the list of gems, select the check box next to **HttpRequestor**\.
 

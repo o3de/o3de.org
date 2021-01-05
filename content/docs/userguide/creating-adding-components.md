@@ -11,7 +11,7 @@ You can also use the context menu in the **Entity Inspector** to remove, copy, a
 
 1. In the **Entity Outliner** or in the viewport, select the entity\.
 
-1. In the **[Entity Inspector](component-entity-inspector.md)**, right\-click the component, or click the menu button in the header, and then select one of the following:
+1. In the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)**, right\-click the component, or click the menu button in the header, and then select one of the following:
    + **Add component** – Add a component to the entity
    + **Delete component** – Remove a component from an entity
    + **Cut component** – Cut a component from one entity and paste it onto a different entity
@@ -26,5 +26,5 @@ You can also use the context menu in the **Entity Inspector** to remove, copy, a
 
    You can also click and drag individual components into a desired order\. Organize the components for an entity in any order that makes sense to you\. The custom order for your components is saved to the level\. The component order has no significance to its function\. 
 **Note**  
-The **[Transform](component-transform.md)** component is automatically added to an entity and can't be moved from the component list\. 
+The **[Transform](/docs/userguide/components/transform.md)** component is automatically added to an entity and can't be moved from the component list\. 
 Some actions are disabled, depending on the context\. For example, you can't paste a component if you haven't copied one\. 

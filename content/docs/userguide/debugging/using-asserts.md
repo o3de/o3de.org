@@ -78,4 +78,4 @@ To add an assert in source code, use the `AZ_Assert` macro\.
 AZ_Assert(m_useCount >= 0, "AssetData has been deleted")
 ```
 
-For more information, see [Tracing](cpp-best-practices-lumberyard-tracing.md)\.
+For more information, see [Tracing](/docs/userguide/programming/best-practices/lumberyard-tracing.md)\.

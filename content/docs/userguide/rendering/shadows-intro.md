@@ -14,7 +14,7 @@ As shadow generation is resource\-intensive, Lumberyard offers the following fea
 + You can use the **r\_MergeShadowDrawcalls** console variable to merge submaterials during shadow generation, resulting in fewer drawcalls\.
 
 **Topics**
-+ [Cached Shadows](rendering-graphics-shadows-cached.md)
-+ [Object Shadows](rendering-graphics-shadows-object.md)
++ [Cached Shadows](/docs/userguide/rendering/shadows-cached.md)
++ [Object Shadows](/docs/userguide/rendering/shadows-object.md)
 + [Shadow Proxies](rendering_graphics_shadows_proxies.md)
-+ [Using CVARs to Configure Terrain and Cascade Shadow Maps](rendering-graphics-shadows-cvars.md)
++ [Using CVARs to Configure Terrain and Cascade Shadow Maps](/docs/userguide/rendering/shadows-cvars.md)

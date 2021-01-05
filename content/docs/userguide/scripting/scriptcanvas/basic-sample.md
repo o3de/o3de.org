@@ -45,4 +45,4 @@ Do the following:
 
 ![\[Image NOT FOUND\]](/images/userguide/shared-tank-script-canvas-example.gif)
 
-For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](script-canvas-intro.md)\.
+For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)\.

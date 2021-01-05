@@ -18,7 +18,7 @@ The **System Entity Editor** interface has the following tabs:
 
 ## System Entity Editor<a name="configurator-advanced-system-entity-editor"></a>
 
-A single entity, shown in the following picture as `SystemEntity`, makes up the core of every Lumberyard application\. This entity's components, known as [system components](az-module-system-components.md), power major systems within Lumberyard\. Using the **System Entity Editor**, game developers can customize the project's components and configuration settings\.
+A single entity, shown in the following picture as `SystemEntity`, makes up the core of every Lumberyard application\. This entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. Using the **System Entity Editor**, game developers can customize the project's components and configuration settings\.
 
 ![\[Image NOT FOUND\]](/images/userguide/configurator/configurator-advanced-main.png)
 

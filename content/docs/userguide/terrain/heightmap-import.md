@@ -19,7 +19,7 @@ The following file formats are supported but not recommended\. These file format
 + `.bmp` \(8\-bit\)
 + `.tif` \(8\-bit or 16\-bit\)
 
-Lumberyard Editor supports importing only a single heightmap for the entire terrain\. You can, however, import color or texture data to individual tiles within the terrain\. For information about importing color maps, see [Importing a Megaterrain Texture](terrain-import-color-megaterrain.md)\.
+Lumberyard Editor supports importing only a single heightmap for the entire terrain\. You can, however, import color or texture data to individual tiles within the terrain\. For information about importing color maps, see [Importing a Megaterrain Texture](/docs/userguide/terrain/import-color-megaterrain.md)\.
 
 If you attempt to import a file with a different resolution than your existing heightmap, Lumberyard prompts you to do one of the following:
 + Clip your imported file to remove any values that are outside the boundary of your existing heightmap\.

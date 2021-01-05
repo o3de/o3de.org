@@ -12,12 +12,12 @@ You can add realistic mountains, hills, valleys, and other landforms to your ter
 + **Smooth brush** – Smooths over sharp gradients in the terrain\.
 + **Holes brush** – Used to make holes in the terrain for creating areas beneath or inside the terrain such as caves\.
 
-You can also use the Terrain Editor to modify the terrain heightmap, although this method is not as accurate and does not give you the control you get from working directly in the viewport in Lumberyard Editor\. For more information, see [Setting Heightmap Properties](terrain-editor-ref.md)\.
+You can also use the Terrain Editor to modify the terrain heightmap, although this method is not as accurate and does not give you the control you get from working directly in the viewport in Lumberyard Editor\. For more information, see [Setting Heightmap Properties](/docs/userguide/terrain/editor-ref.md)\.
 
 **Topics**
-+ [Using the Rise/Lower Brush](terrain-landforms-rise-lower-brush.md)
-+ [Using the Smooth Brush](terrain-landforms-smooth-brush.md)
-+ [Using the Flatten Brush](terrain-landforms-flatten-brush.md)
-+ [Using the Holes Brush](terrain-landforms-holes-brush.md)
-+ [Terrain Brush Parameters](terrain-landforms-brush-params.md)
-+ [Creating Roads](terrain-roads-intro.md)
++ [Using the Rise/Lower Brush](/docs/userguide/terrain/landforms-rise-lower-brush.md)
++ [Using the Smooth Brush](/docs/userguide/terrain/landforms-smooth-brush.md)
++ [Using the Flatten Brush](/docs/userguide/terrain/landforms-flatten-brush.md)
++ [Using the Holes Brush](/docs/userguide/terrain/landforms-holes-brush.md)
++ [Terrain Brush Parameters](/docs/userguide/terrain/landforms-brush-params.md)
++ [Creating Roads](/docs/userguide/terrain/roads-intro.md)

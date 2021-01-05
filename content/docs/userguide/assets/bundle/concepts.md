@@ -39,7 +39,11 @@ A "leaf" asset is a product asset that has no dependencies on other product asse
 A product asset is game content that is loaded and used in the runtime game\. A product asset is generated from a source asset during asset processing using a builder\. The product asset is often a modified version of the source asset, such as image content that is compressed and otherwise optimized for runtime\. Product assets reference their product dependencies\. See also **Source Asset**\.  
 When running a game using the Lumberyard asset system, only product assets are available\. The source assets are not available\. This includes running the game in the Lumberyard Editor or in a platform\-specific launcher\. When packaging a game using the Asset Bundler, only product assets are bundled\. Product assets are available only from the asset cache or from asset bundles\.   
 When working with slices, keep in mind that only dynamic slices can be used at run\-time\. Non\-dynamic slices, even if they are product assets, should not be included in bundles\. 
+<<<<<<< Updated upstream:content/docs/userguide/assets/bundle/concepts.md
 For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
+=======
+For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
+>>>>>>> Stashed changes:content/docs/userguide/asset-bundler-concepts.md
 
 **Product Dependency**  
 A product dependency occurs when one product asset references another product asset\. When bundling assets, both the referencing asset and the referenced asset should be included in the bundle\. Dependencies are created by referencing the Asset ID of the product asset\. See also **Source Dependency**\.  
@@ -47,7 +51,7 @@ Product dependencies are generally relevant during asset packaging and bundling\
 
 **Root Folder**  
 The root folder concept is inherited from CryEngine\. When a Lumberyard application starts, it loads and initializes a set of modules, or code libraries, to support the application's gems\. Legacy modules, such as `bootstrap.cfg` and `engine.cfg`, are loaded from the root folder\. Newer AZ modules are loaded from the assets folder\.   
-For more information, see [Programming with Gems](gems-system.md)\.
+For more information, see [Programming with Gems](/docs/userguide/gems/_index.md)\.
 
 **Runtime**  
 A standalone game is referred to as the runtime\. It can be run through a platform\-specific launcher, such as a console, or in the Lumberyard Editor\. A runtime uses the Lumberyard asset system to access only those product assets that were bundled with the game\.
@@ -81,4 +85,4 @@ Source assets are associated with a gem, and source GUIDs are unique within a ge
 Some of the Lumberyard tool operations take relative paths as inputs\. There are two types of relative paths:  
 + Cache\-relative paths – Tells various systems where to find pre\-processed assets in your asset cache\. Each Lumberyard tool that uses cache\-relative paths will be relative to a different subdirectory of the asset cache\. For example, a cache\-relative path from the absolute path `C:\Lumberyard\dev\Cache\SamplesProject\pc\samplesproject\levels\samples\advanced_rinlocomotion\level.pak` that does not include the platform and project would be `levels\samples\advanced_rinlocomotion\level.pak`\. 
 + Engine\-root\-relative paths – Specifies files located in directories under `C:\Lumberyard\dev\`\. For example, an engine\-root\-relative path lets you represent the location `C:\Lumberyard\dev\SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif` as `SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif`\.
-For more information, see [Asset IDs and File Paths](asset-pipeline-developers.md)\.
+For more information, see [Asset IDs and File Paths](/docs/userguide/assets/developers.md)\.

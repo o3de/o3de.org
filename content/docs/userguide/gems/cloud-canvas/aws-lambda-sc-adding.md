@@ -7,7 +7,7 @@ title: Making a Custom &LAM; Function Available to &script-canvas;
 
 You can make custom Lambda function available to Script Canvas with the following steps:
 
-1. Use the Project Configurator to add **Cloud Gem AWS Script Behaviors** to your project\. For information on adding gems to your game project, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+1. Use the Project Configurator to add **Cloud Gem AWS Script Behaviors** to your project\. For information on adding gems to your game project, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 1. In Lumberyard Editor, use the Cloud Canvas Resource Manager to add a Lambda resource to the **CloudGemAWSScriptBehaviors** resource group\. When you perform this step, Lumberyard creates a directory named after your function and a placeholder `main.py` code file for you\. The code directory and file look like the following:
 
@@ -76,4 +76,4 @@ After you add your Lambda function code to the `main.py` file, you are ready to 
    Now when you use **Node Inspector** to add an **AWSLambda Variable** node to a Script Canvas graph, your Lambda function becomes available in the **functionName** box\.  
 ![\[Custom Lambda function available in the functionName box in the Script Canvas editor\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-6.png)
 
-For more information, see [Invoking an AWS Lambda Function from Script Canvas](cloud-canvas-cloud-gem-aws-lambda-sc.md)\.
+For more information, see [Invoking an AWS Lambda Function from Script Canvas](/docs/userguide/gems/cloud-canvas/aws-lambda-sc.md)\.

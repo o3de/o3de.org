@@ -36,7 +36,7 @@ Follow these guidelines when creating geometry for your mobile game:
 ![\[Example level of detail (LOD) setup in Maya.\]](/images/userguide/mobile/geometry-level-of-detail-setup-example-maya.png)
   + Do the following to tune the LOD:
 
-    1. In Lumberyard Editor, select an entity in your level that has a **[Mesh](component-static-mesh.md)** component\.
+    1. In Lumberyard Editor, select an entity in your level that has a **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
     1. In the **Entity Inspector**, in the **Mesh** component, under **Options**, adjust the slider for **LOD distance ratio**\. The slider adjusts the distance at which the LOD pops in\.
 

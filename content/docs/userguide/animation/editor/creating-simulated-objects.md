@@ -23,7 +23,7 @@ In this procedure, you'll do the following:
 ## Prerequisites<a name="prerequisites-for-creating-simulated-objects"></a>
 
 Before you begin, you must do the following:
-+ Using Project Configurator, enable the [Samples Project](sample-project-samples.md)\.
++ Using Project Configurator, enable the [Samples Project](/docs/userguide/samples/projects/samples.md)\.
 + In the **Animation Editor**, complete the following:
   + Import your actor, such as the `rinActor.fbx` file
   + Create a motion set

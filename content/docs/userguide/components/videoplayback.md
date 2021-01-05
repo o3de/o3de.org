@@ -8,7 +8,7 @@ title: Video Playback
 
 You can use the **Video Playback** component to play a video on an entity in your Lumberyard level\. For example, you can use a flat or plane entity to simulate a movie screen\. You add the video playback component to the entity and specify a video file to display\.
 
-You can also play a video on a level loading screen\. For more information, see [Defining Game and Level Load Screens](ui-editor-load-screens.md)\.
+You can also play a video on a level loading screen\. For more information, see [Defining Game and Level Load Screens](/docs/userguide/ui/editor/load-screens.md)\.
 
 You can use Script Canvas or Lua scripting to trigger the video to play, pause, or stop, depending on player actions\.
 
@@ -16,7 +16,7 @@ You can use Script Canvas or Lua scripting to trigger the video to play, pause, 
 
 To use the **Video Playback** component, you must do the following:
 + Install either FFmpeg or LibAV\.
-+ Enable the **Video Playback** gem for your game project\. See [Enabling Gems](gems-system-using-project-configurator.md)\.
++ Enable the **Video Playback** gem for your game project\. See [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 + Rebuild your game project\.
 
 **Important**  
@@ -121,13 +121,13 @@ The basic setup for the **Video Playback** component includes the following:
 
 **To use the Video Playback component**
 
-1. If you don't yet have a camera in your scene, place a **[Camera](component-camera.md)** component where your video playback is to be placed\. 
+1. If you don't yet have a camera in your scene, place a **[Camera](/docs/userguide/components/camera.md)** component where your video playback is to be placed\. 
 
    You can use the camera to view your video playback\. Ensure that the camera is facing the direction where you place your video playback component\.
 
 1. Create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
 
-1. Use the [Entity Inspector](component-entity-inspector.md) to add a **[Mesh](component-static-mesh.md)** component to your entity\.
+1. Use the [Entity Inspector](/docs/userguide/components/entity-inspector.md) to add a **[Mesh](/docs/userguide/components/static-mesh.md)** component to your entity\.
 
 1. For the **Mesh** component, select a **Mesh asset**\. This is the asset that your video renders on\. A cube or plane is a good test mesh\.  
 ![\[Mesh component properties in Lumberyard Editor\]](/images/userguide/component/component-mesh-component-properties.png)
@@ -145,7 +145,7 @@ The basic setup for the **Video Playback** component includes the following:
 
    Queueing too many frames to buffer \(for example, a value of **100** frames\) can use too much memory and cause performance issues\.
 
-1. Open the [Material Editor](mat-intro.md)\.
+1. Open the [Material Editor](/docs/userguide/materials/intro.md)\.
 
 1. To create a material\. click the **Add New Item** icon\. Enter a descriptive name, such as **myvideomaterial**\.  
 ![\[Video Playback component material.\]](/images/userguide/component/component-videoplayback-material.png)
@@ -153,7 +153,7 @@ The basic setup for the **Video Playback** component includes the following:
 1. Under **Texture Maps**, on the **Diffuse** line, enter the name of your video component's **Texture name** field\. You must include the $ character\.  
 ![\[Diffuse property for the texture name.\]](/images/userguide/component/component-videoplayback-diffuse.png)
 
-1. Close the **Material Editor** and return to the [Entity Inspector](component-entity-inspector.md)\. In the **Mesh** component, for the **Material override** property, select the material that you created\.  
+1. Close the **Material Editor** and return to the [Entity Inspector](/docs/userguide/components/entity-inspector.md)\. In the **Mesh** component, for the **Material override** property, select the material that you created\.  
 ![\[Select the material override in the Mesh component.\]](/images/userguide/component/component-videoplayback-override.png)
 
  You can trigger the video to play at the start of your game using Lua scripting\.

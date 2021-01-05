@@ -10,7 +10,7 @@ Creates a copy of the specified material\. The material must already be loaded i
 
 ![\[materialclone, clonematerial, materialclonenode, clonematerialnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-clone-node.png)
 
-In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](script-canvas-variable-material-node.md)**\.
+In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](/docs/userguide/scripting/scriptcanvas/variable-material-node.md)**\.
 
 **Warning**  
 Don't trigger this node for every frame\. Each time the **In** event is received, a copy of the material is created\.

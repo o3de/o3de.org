@@ -9,10 +9,10 @@ title: Leaderboard Cloud Gem Portal
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-leaderboard-prerequisites)
 + [Accessing and Using the Leaderboard Cloud Gem Portal](#cloud-canvas-cloud-gem-leaderboard-accessing-using)
-+ [Testing the Leaderboard Sample Level](cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level.md)
-+ [Leaderboard Sample Level Implementation Details](cloud-canvas-cloud-gem-leaderboard-implementation-details.md)
-+ [Leaderboard Cloud Gem Resources](cloud-canvas-cloud-gem-leaderboard-resources.md)
-+ [Leaderboard Cloud Gem Service API](cloud-canvas-cloud-gem-leaderboard-cloud-gem-service-api.md)
++ [Testing the Leaderboard Sample Level](/docs/userguide/gems/cloud-canvas/leaderboard-testing-the-leaderboard-sample-level.md)
++ [Leaderboard Sample Level Implementation Details](/docs/userguide/gems/cloud-canvas/leaderboard-implementation-details.md)
++ [Leaderboard Cloud Gem Resources](/docs/userguide/gems/cloud-canvas/leaderboard-resources.md)
++ [Leaderboard Cloud Gem Service API](/docs/userguide/gems/cloud-canvas/leaderboard-cloud-gem-service-api.md)
 
 You can use the Leaderboard cloud gem portal to create, view, and customize leaderboards by deleting scores, banning players, and removing bans\.
 
@@ -20,10 +20,10 @@ You can use the Leaderboard cloud gem portal to create, view, and customize lead
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Leaderboard Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Leaderboard**\)\.
-+ You have created a project stack in [Cloud Canvas Resource Manager](cloud-canvas-ui-rm-overview.md)\.
++ You have created a project stack in [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
 + You have created a deployment stack in Cloud Canvas Resource Manager\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Leaderboard** in the Project Configurator\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Leaderboard** in the Project Configurator\.
 
 ## Accessing and Using the Leaderboard Cloud Gem Portal<a name="cloud-canvas-cloud-gem-leaderboard-accessing-using"></a>
 

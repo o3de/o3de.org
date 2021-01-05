@@ -44,4 +44,4 @@ SurfaceData
 
    **lmbr\_waf build\_*win\_x64\_vs2019*\_profile \-p all \-\-progress** 
 
-For more information on Gems, see the [Gems documentation](gems-system-gems.md)\. 
+For more information on Gems, see the [Gems documentation](/docs/userguide/gems/builtin/s.md)\. 

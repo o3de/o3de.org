@@ -11,7 +11,7 @@ See the following best practices when working with the **Infinite Ocean** compon
 Changing the `ocean_default.mlt` material affects any level that has an ocean that uses the material\. 
 + You can change the colors that contribute to how the ocean appears\.
   + For the **Infinite Ocean** component, use the **Color** and **Near Fog Color** parameters\. For more information, see [Fog](infinite-ocean-component-properties.md#infinite-ocean-component-properties-fog)\.
-  + For the water material \(`ocean_default.mlt`\), use the **Diffuse Color** and **Specular Color** parameters\. For more information, see [Water Shader Material for the Infinite Ocean Component](infinite-ocean-component-water-shader-material.md)\.
+  + For the water material \(`ocean_default.mlt`\), use the **Diffuse Color** and **Specular Color** parameters\. For more information, see [Water Shader Material for the Infinite Ocean Component](/docs/userguide/components/ocean/water-shader-material.md)\.
 + Use both reflections and the underwater fog to achieve the water appearance that you want\. For more information, see [Reflection](infinite-ocean-component-properties.md#infinite-ocean-component-properties-reflection) and [Fog](infinite-ocean-component-properties.md#infinite-ocean-component-properties-fog)\.
 + If your environment looks dull, you'll get dull reflections in the water\. Create an interesting sky look and skyline gradient\. If you are creating a night scene, use bright spots such as city lights\.
 + Use foam effects sparingly\.

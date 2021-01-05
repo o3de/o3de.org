@@ -10,15 +10,15 @@ You can use the Jira integration feature of the Defect Reporter cloud gem to cre
 ## Prerequisites<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-prerequisites"></a>
 
 This tutorial assumes the following:
-+ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
++ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A project stack for your project\.
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 
-For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Enabling Jira Integration<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-enabling-jira-integration"></a>
 
-Jira integration is not enabled by default\. Use the Cloud Canvas [`lmbr_aws` command line tool](cloud-canvas-command-line.md) to create a deployment that has Jira enabled or to add Jira integration to an existing deployment\.
+Jira integration is not enabled by default\. Use the Cloud Canvas [`lmbr_aws` command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create a deployment that has Jira enabled or to add Jira integration to an existing deployment\.
 
 **To create a new deployment that has Jira integration**
 + Enter the following command:
@@ -82,7 +82,7 @@ After you enable Jira integration, you can configure its settings in the Cloud G
    + **Automatic** – Jira tickets are generated automatically when a defect report is submitted\.
    + **Manual** – Submit tickets manually in the Cloud Gem Portal\. You can submit tickets individually or by group\.
 
-   For more information, see [Automatic and Manual Submit Modes](cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-and-manual-submit-modes.md)\.
+   For more information, see [Automatic and Manual Submit Modes](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp-jira-automatic-and-manual-submit-modes.md)\.
 
 1. For **Project Key**, choose a Jira project from the drop\-down menu\. The projects that are listed are defined on your Jira server instance\.  
 ![\[Choose a Jira project\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-6.png)

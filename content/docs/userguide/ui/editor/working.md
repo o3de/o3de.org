@@ -15,7 +15,7 @@ You can use the **UI Editor** to add and delete components, create references to
 
 ## Adding or Deleting Components<a name="ui-editor-add-delete"></a>
 
-You can add or delete components in the [UI Editor](ui-editor-using.md)\.
+You can add or delete components in the [UI Editor](/docs/userguide/ui/editor/using.md)\.
 
 **To add a component to an element**
 

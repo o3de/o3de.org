@@ -6,7 +6,7 @@ title: Modifying a UI Slice and Pushing Changes
 ---
 # Modifying a UI Slice and Pushing Changes<a name="ui-editor-working-slices-modifying"></a>
 
-In the **UI Editor**, you modify UI slices and push changes similarly to the way that you do in the main Lumberyard Editor For more information on pushing changes in Lumberyard's component entity system, see [Working with Slices](component-slices.md)\.
+In the **UI Editor**, you modify UI slices and push changes similarly to the way that you do in the main Lumberyard Editor For more information on pushing changes in Lumberyard's component entity system, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 The following conventions apply when working with slices in the **UI Editor**:
 + If you select an entity that is part of a slice instance, the **Properties** pane highlights in orange any properties that are different between the selected entity and the slice to which it belongs\.

@@ -14,7 +14,7 @@ Finds and returns the material with the specified name\. Loads the material if t
 
 ![\[loadbynamenode, loadbyname\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-load-by-name-node.png)
 
-In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](script-canvas-variable-material-node.md)**\.
+In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](/docs/userguide/scripting/scriptcanvas/variable-material-node.md)**\.
 
 ## Inputs<a name="material-load-by-name-node-input"></a>
 

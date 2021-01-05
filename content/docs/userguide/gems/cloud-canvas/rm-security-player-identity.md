@@ -49,4 +49,4 @@ The code that implements the authenticated login flow can be found in the `\dev\
 
 ### Configuring a Cognito Identity Provider \(Cognito User Pool\)<a name="cloud-canvas-rm-security-player-cognito-user-pool"></a>
 
-Cloud Canvas provides the [Custom::CognitoUserPool](cloud-canvas-custom-resources.md#cloud-canvas-custom-resources-cognito-identity-pool) resource for adding the Amazon Cognito user pools and linking them to a Amazon Cognito identity pool\. The [Player Account Cloud Gem](cloud-canvas-cloud-gem-player-account.md) uses this custom resource\. It also provides an EBus interface so that you can work with the user pool and the sample level that has an in\-game menu\.
+Cloud Canvas provides the [Custom::CognitoUserPool](cloud-canvas-custom-resources.md#cloud-canvas-custom-resources-cognito-identity-pool) resource for adding the Amazon Cognito user pools and linking them to a Amazon Cognito identity pool\. The [Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account.md) uses this custom resource\. It also provides an EBus interface so that you can work with the user pool and the sample level that has an in\-game menu\.

@@ -48,7 +48,7 @@ For more information about templates, see [Project Templates](configurator-proje
 
 When you enable or disable a gem in a project, the Project Configurator updates the list of enabled gems that is maintained in `lumberyard_version\dev\Game_Project\gems.json`\. 
 
-For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 + Enabling a gem adds that gem name to the list in `gems.json`\.
 + Disabling a gem removes that gem name from the list in `gems.json`\. 
 + Enabling or disabling a gem updates the `Editor.xml` and `Game.xml` files\. You can find these files in the `lumberyard_version\dev\Game_Project\Config` directory\. These files tell Lumberyard to load the required `.dll` files for the gems that you specify\.
@@ -61,4 +61,4 @@ When you use the Project Configurator to create a gem, the following takes place
 + The content of the gem template \(which is part of the Project Configurator resources and is not directly accessible\) is copied into the `lumberyard_version\dev\Gems\Gem_Name` directory\.
 + Strings with the gem name in the copied content are replaced with the name of your gem to make it a valid gem\.
 
-For more information, see [Creating a Gem](gems-system-gems-creating.md)\.
+For more information, see [Creating a Gem](/docs/userguide/gems/builtin/s-creating.md)\.

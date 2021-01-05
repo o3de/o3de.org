@@ -22,7 +22,7 @@ Indicates whether the material owner finished loading its assets and the materia
 | Pin | Type | Description | 
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
-| Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](component-script-canvas.md)** component attaches the current script\. You can also specify another entity\. For more information, see [Setting Entity Targets](script-canvas-referencing-entities.md)\.  | 
+| Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\. You can also specify another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  | 
 
 ## Outputs<a name="material-owner-is-material-owner-ready-output"></a>
 

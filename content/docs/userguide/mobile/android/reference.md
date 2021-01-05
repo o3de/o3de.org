@@ -6,8 +6,8 @@ title: Reference for Android
 # Reference for Android<a name="android-reference"></a>
 
  This section is a reference for commands and build settings used by Lumberyard when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\. 
-+ [Waf Commands and Options](waf-commands.md)
-+ [Waf Project Settings](waf-project-settings.md)
++ [Waf Commands and Options](/docs/userguide/waf/commands.md)
++ [Waf Project Settings](/docs/userguide/waf/project-settings.md)
 
 **Topics**
 + [Build command reference](#android-reference-build)
@@ -58,7 +58,7 @@ Disables debugging and strips debug symbols in the final build\.
 
  The Waf build system settings can be controlled by either setting an attribute value in `lumberyard_install_dir/dev/_WAF_/user_settings.options`, or by passing an argument on the command line\. The configuration file is written in [INI file format](https://en.wikipedia.org/wiki/INI_file)\. Each of the following reference tables are named after their corresponding INI section header\. 
 
- For a full reference of all configurable Waf settings, see [Waf User Options and Settings](waf-user-options-and-settings.md)\. 
+ For a full reference of all configurable Waf settings, see [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)\. 
 
 
 **Android Options**  

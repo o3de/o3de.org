@@ -139,7 +139,7 @@ job->parameters.msg_id = msg_id;
 job->Start();
 ```
 
-To learn about other ways to use the request job class, explore the `ServiceApiRequestJob` class definition and see [Running AWS API Jobs Using the Cloud Gem Framework ](cloud-canvas-cgf-aws-api-jobs.md)\.
+To learn about other ways to use the request job class, explore the `ServiceApiRequestJob` class definition and see [Running AWS API Jobs Using the Cloud Gem Framework ](/docs/userguide/gems/cloud-canvas/cgf-aws-api-jobs.md)\.
 
 ## Using Lua to Call an API<a name="cloud-canvas-cgf-service-api-game-clients-calling-apis-lua"></a>
 

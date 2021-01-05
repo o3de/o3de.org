@@ -6,7 +6,7 @@ title: Resource Mappings
 ---
 # Resource Mappings<a name="cloud-canvas-resource-mappings"></a>
 
-Resource mappings map the friendly names used in a game's [Resource Definitions](cloud-canvas-resource-definitions.md) to the actual names of the resources created for one or more specific [Resource Deployments](cloud-canvas-resource-deployments.md)\. For example, a DynamoDB table name like `LeaderboardTable` would get mapped to a name like the following:
+Resource mappings map the friendly names used in a game's [Resource Definitions](/docs/userguide/gems/cloud-canvas/resource-definitions.md) to the actual names of the resources created for one or more specific [Resource Deployments](/docs/userguide/gems/cloud-canvas/resource-deployments.md)\. For example, a DynamoDB table name like `LeaderboardTable` would get mapped to a name like the following:
 
 ```
 CloudGemSamples-CGSamplesDeployment-CloudGemLeaderboard-78AIXR0N0O4N-LeaderboardTable-1I1ZC6YO7KU7F
@@ -28,7 +28,7 @@ As of Lumberyard 1\.11, the mapping functionality is implemented by a Mappings c
 
 ### The Mappings Component EBus<a name="cloud-canvas-resource-mappings-mappings-component-ebus"></a>
 
-The mappings component implements an [EBus](ebus-intro.md) found at `dev\Code\CryEngine\CryCommon\CloudCanvas\CloudCanvasMappingsBus.h`\. When the Cloud Gem Framework makes calls to a service API, it uses this EBus to translate the service name to the ARN\. This EBus provides access to the mapping calls described in the following code\. 
+The mappings component implements an [EBus](/docs/userguide/programming/ebus/intro.md) found at `dev\Code\CryEngine\CryCommon\CloudCanvas\CloudCanvasMappingsBus.h`\. When the Cloud Gem Framework makes calls to a service API, it uses this EBus to translate the service name to the ARN\. This EBus provides access to the mapping calls described in the following code\. 
 
 ```
 // Given the friendly name of the resource, return the ARN (physical name).
