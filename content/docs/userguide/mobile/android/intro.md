@@ -15,7 +15,7 @@ title: '&ALY; Android support'
 + [Configure Lumberyard projects for Android](android-configure-project.md)
 + [Build and deploy your project for Android](android-build-deploy.md)
 + [Releasing Lumberyard projects for Android](android-deploy-release.md)
-+ [Troubleshooting Lumberyard issues on Android](troubleshoot-android.md)
++ [Troubleshooting Lumberyard issues on Android](/docs/userguide/mobile/android/troubleshooting.md)
 + [Reference for Android](android-reference.md)
 
 ## Minimum device requirements<a name="android-minimum-requirements"></a>

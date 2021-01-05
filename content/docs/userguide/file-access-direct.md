@@ -5,7 +5,7 @@ title: Raw File Access in &ALY;
 ---
 # Raw File Access in Lumberyard<a name="file-access-direct"></a>
 
-This topic describes how to directly access files in Lumberyard for special use cases\. However, it's recommended that you use the Lumberyard Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](asset-pipeline-intro.md)\.
+This topic describes how to directly access files in Lumberyard for special use cases\. However, it's recommended that you use the Lumberyard Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
 
 When you write an `AssetHandler`\-derived class to load assets in Lumberyard, runtime file handling is automatic\. However, some cases might require lower levels of file access at run time\. Scenarios that might require low\-level file access include:
 + Loading raw configuration files from the deployment root during startup before `.pak` files are mounted and available\.

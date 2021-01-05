@@ -27,7 +27,7 @@ This utility is a background service that monitors changes to your source files 
 When you import assets into your game project, Asset Processor automatically detects the change and processes them\.  
 
 ![\[You can import assets for your game with Asset Processor.\]](/images/userguide/assets/pipeline/asset-pipeline-importing.png)
-For more information, see [Working with the Asset Pipeline and asset files](asset-pipeline-intro.md)\.
+For more information, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
 
 **AZ Code Generator**  
 This command line utility accepts a tagged source code file and creates a text, data, or code file\. AZ Code Generator parses through a list of existing C\+\+ source files and/or header files and generates the intermediate data in JSON format\. It passes the intermediate data to a series of templates, which provide the format for the code that is generated\.   

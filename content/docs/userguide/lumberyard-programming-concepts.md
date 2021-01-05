@@ -26,7 +26,7 @@ This topic provides brief explanations of some important Lumberyard programming 
 
 ## Asset System<a name="lumberyard-programming-concepts-asset-system"></a>
 
-The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](asset-pipeline-intro.md) to asynchronously stream and activate assets\.
+The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](/docs/userguide/assets/_index.md) to asynchronously stream and activate assets\.
 
 For information on using the runtime asset system to load already\-built assets into a running instance of the engine, see [Programming the Lumberyard AZCore Runtime Asset System](asset-pipeline-asset-system-programming.md)\. 
 

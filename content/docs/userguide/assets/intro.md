@@ -15,7 +15,7 @@ Learn how to manage, process, and package the assets for your Lumberyard game\. 
 
 | Topic Area | Description | 
 | --- | --- | 
-| [Asset Pipeline](asset-pipeline-intro.md) | Learn about the Lumberyard asset pipeline and asset builders\. Asset builders convert your raw art, shaders, and other materials into game\-ready formats that can be imported straight into the Lumberyard editor\. | 
+| [Asset Pipeline](/docs/userguide/assets/_index.md) | Learn about the Lumberyard asset pipeline and asset builders\. Asset builders convert your raw art, shaders, and other materials into game\-ready formats that can be imported straight into the Lumberyard editor\. | 
 | [Asset Processor](asset-pipeline-processor.md) | Learn how the Lumberyard Asset Processor tool manages and stores asset dependencies\. | 
 | [Custom Asset Builders](asset-pipeline-asset-system-programming.md) | Learn how to create customer asset builders that support new or non\-standard formats\. | 
 | [Asset Browser](asset-browser-intro.md) | Learn how the Lumberyard Asset Browser tool is used to view and interact with your game project assets\. | 

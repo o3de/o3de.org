@@ -37,5 +37,5 @@ If you are using Lumberyard 1\.10 or earlier, you can use the legacy animation s
 + [Creating Additive Animations](char-fbx-importer-motion-additive.md)
 + [Retargeting Motions](animation-editor-retargeting-animations.md)
 + [Creating Simulated Objects](animation-editor-creating-simulated-objects.md)
-+ [Add Cloth Colliders to actors](char_animation_add_cloth_colliders.md)
++ [Add Cloth Colliders to actors](/docs/userguide/animation/character-editor/cloth-colliders.md)
 + [Best Practices for Working with Skinned Meshes for Animation](best-practices-for-working-with-meshes-for-animations.md)

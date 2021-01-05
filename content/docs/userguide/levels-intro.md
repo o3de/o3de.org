@@ -9,4 +9,4 @@ title: Create levels in &ALY;
 
 **Topics**
 + [Creating levels and adding environment effects](level-intro.md)
-+ [Dynamic vegetation](dynamic-vegetation-intro.md)
++ [Dynamic vegetation](/docs/userguide/vegetation/dynamic-intro.md)
