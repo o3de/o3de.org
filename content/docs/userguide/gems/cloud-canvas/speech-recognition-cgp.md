@@ -1,7 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem Portal to import, export, and
   publish &LEX; bots in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-speech-recognition-cgp
 title: Speech Recognition Cloud Gem Portal (Preview)
 ---
 # Speech Recognition Cloud Gem Portal \(Preview\)<a name="cloud-canvas-cloud-gem-speech-recognition-cgp"></a>

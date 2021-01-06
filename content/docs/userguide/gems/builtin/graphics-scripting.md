@@ -1,7 +1,6 @@
 ---
 description: ' Use the Graphics Scripting gem to enable the &ALYlong; graphics features
   with scripting systems such as &script-canvas; and Lua. '
-slug: gems-system-gem-graphics-scripting
 title: Graphics Scripting
 ---
 # Graphics Scripting<a name="gems-system-gem-graphics-scripting"></a>

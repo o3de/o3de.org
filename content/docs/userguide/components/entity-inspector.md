@@ -1,7 +1,6 @@
 ---
 description: ' Use the &entity-inspector; to add components to entities and modify
   their properties in &ALYlong;. '
-slug: component-entity-inspector
 title: Entity Inspector
 ---
 # Entity Inspector<a name="component-entity-inspector"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use the particles shader to render particle effects in &ALYlong;. '
-slug: shader-ref-particles
 title: Particles Shader
 ---
 # Particles Shader<a name="shader-ref-particles"></a>

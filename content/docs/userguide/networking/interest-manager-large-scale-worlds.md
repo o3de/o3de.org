@@ -1,6 +1,5 @@
 ---
 description: ' Use interest manager to control large-scale networked worlds in &ALYlong;. '
-slug: network-interest-manager-large-scale-worlds
 title: Using GridMate for Large-Scale Worlds
 ---
 # Using GridMate for Large\-Scale Worlds<a name="network-interest-manager-large-scale-worlds"></a>

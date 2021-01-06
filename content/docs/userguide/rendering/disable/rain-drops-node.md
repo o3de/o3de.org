@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Rain Drops node in the &ALYlong; &script-canvas; editor
   to disable raindrops. '
-slug: disable-rain-drops-node
 title: Disable Rain Drops
 ---
 # Disable Rain Drops<a name="disable-rain-drops-node"></a>

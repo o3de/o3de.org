@@ -1,6 +1,5 @@
 ---
 description: ' Create a project for your macOS applications using &ALY; tools. '
-slug: osx-game-creating
 title: Creating a Project for Your macOS Games
 ---
 # Creating a Project for Your macOS Games<a name="osx-game-creating"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Lightning component to add lightning effects to your
   game. '
-slug: component-lightning
 title: Lightning
 ---
 # Lightning<a name="component-lightning"></a>

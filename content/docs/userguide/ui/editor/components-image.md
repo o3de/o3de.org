@@ -1,7 +1,6 @@
 ---
 description: Use visual components in &ALYlong;'s &ui-canvas-editor; to add color
   tints or textures to UI elements.
-slug: ui-editor-components-image
 title: Image
 ---
 # Image<a name="ui-editor-components-image"></a>

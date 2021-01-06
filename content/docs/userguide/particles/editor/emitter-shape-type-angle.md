@@ -1,7 +1,6 @@
 ---
 description: ' Use the Angle emitter in the &ALYlong; &particle-editor; to spawn particles
   in a directional pattern based on parameters and control the angle of emission. '
-slug: particle-editor-emitter-shape-type-angle
 title: Angle Emitter (CPU and GPU)
 ---
 # Angle Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-angle"></a>

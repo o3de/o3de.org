@@ -1,7 +1,6 @@
 ---
 description: ' Give a UI element additional properties by adding components in &ALYlong;''s
   &ui-canvas-editor; . '
-slug: ui-editor-components
 title: UI Components
 ---
 # UI Components<a name="ui-editor-components"></a>

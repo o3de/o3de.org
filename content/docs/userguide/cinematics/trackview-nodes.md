@@ -1,6 +1,5 @@
 ---
 description: ' See the following &trackview-editor; nodes in &ALYlong;. '
-slug: cinematics-trackview-nodes
 title: Track View Editor Nodes
 ---
 # Track View Editor Nodes<a name="cinematics-trackview-nodes"></a>

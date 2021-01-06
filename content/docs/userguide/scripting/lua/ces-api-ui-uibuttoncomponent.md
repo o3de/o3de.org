@@ -1,7 +1,6 @@
 ---
 description: ' Use the UIButtonComponent in Lua to implement button functionality
   in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uibuttoncomponent
 title: UIButtonComponent
 ---
 # UIButtonComponent<a name="lua-scripting-ces-api-ui-uibuttoncomponent"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Enable and disable components for entities in &ALYlong;. '
-slug: enabling-disabling-components
 title: Disabling and Enabling Components on Entities
 ---
 # Disabling and Enabling Components on Entities<a name="enabling-disabling-components"></a>

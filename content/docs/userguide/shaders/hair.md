@@ -1,6 +1,5 @@
 ---
 description: ' Enable hair shaders to render hair and fur in &ALYlong;. '
-slug: shader-ref-hair
 title: Hair Shader
 ---
 # Hair Shader<a name="shader-ref-hair"></a>

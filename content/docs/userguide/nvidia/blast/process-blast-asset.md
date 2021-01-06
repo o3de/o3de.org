@@ -1,6 +1,5 @@
 ---
 description: ' Process assets for NVIDIA Blast. '
-slug: nvidia-blast-process-blast-asset
 title: Processing assets for NVIDIA Blast
 ---
 # Processing assets for NVIDIA Blast<a name="nvidia-blast-process-blast-asset"></a>

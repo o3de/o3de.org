@@ -1,6 +1,5 @@
 ---
 description: ' View the InstantVR Lua script properties in &ALYlong;. '
-slug: virtual-reality-instant-vr-lua
 title: InstantVR Lua Script Properties
 ---
 # InstantVR Lua Script Properties<a name="virtual-reality-instant-vr-lua"></a>

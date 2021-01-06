@@ -1,7 +1,6 @@
 ---
 description: ' Change your game UI canvas size to visualize how your canvas might
   look on other displays and devices of varying resolutions in &ALYlong;. '
-slug: ui-editor-changing-size
 title: Changing the Canvas Size
 ---
 # Changing the Canvas Size<a name="ui-editor-changing-size"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use Physics materials to customize how an object reacts when it hits
   a surface in your &ALYlong; project. '
-slug: physx-materials
 title: Physics materials
 ---
 # Physics materials<a name="physx-materials"></a>

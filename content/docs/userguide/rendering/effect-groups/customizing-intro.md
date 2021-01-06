@@ -1,6 +1,5 @@
 ---
 description: ' Customize post-processing effects in &ALYlong;. '
-slug: effect-groups-customizing-intro
 title: Customizing Post-Processing Effects
 ---
 # Customizing Post\-Processing Effects<a name="effect-groups-customizing-intro"></a>

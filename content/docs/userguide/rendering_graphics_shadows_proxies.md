@@ -1,7 +1,6 @@
 ---
 description: ' Assign shadow proxies in &ALY;''s &material-editor; to reduce shadow
   performance problems with minimal visual differences. '
-slug: rendering_graphics_shadows_proxies
 title: Shadow Proxies
 ---
 # Shadow Proxies<a name="rendering_graphics_shadows_proxies"></a>

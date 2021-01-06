@@ -1,6 +1,5 @@
 ---
 description: ' See the following common AI Modular Behavior Tree (MBT) nodes in &ALYlong;. '
-slug: ai-mbt-nodes-common
 title: Common AI MBT Nodes
 ---
 # Common AI MBT Nodes<a name="ai-mbt-nodes-common"></a>

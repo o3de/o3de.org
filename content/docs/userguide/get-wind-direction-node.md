@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Wind Direction node in the &ALYlong; &script-canvas; editor
   to return the global wind direction. '
-slug: get-wind-direction-node
 title: Get Wind Direction
 ---
 # Get Wind Direction<a name="get-wind-direction-node"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use a skybox to create a static sky for your &ALY; level. '
-slug: sky-skyboxes-intro
 title: Creating Static Skyboxes
 ---
 # Creating Static Skyboxes<a name="sky-skyboxes-intro"></a>

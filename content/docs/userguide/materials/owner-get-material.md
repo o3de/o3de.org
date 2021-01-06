@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Material node in the &ALYlong; &script-canvas; editor to
   find an entity''s current material file. '
-slug: material-owner-get-material
 title: Get Material
 ---
 # Get Material<a name="material-owner-get-material"></a>

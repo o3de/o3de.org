@@ -1,6 +1,5 @@
 ---
 description: ' Learn best practices for using the C++ programming language in &ALYlong;. '
-slug: cpp-best-practices-lumberyard
 title: C++ Best Practices for &ALYlong;
 ---
 # C\+\+ Best Practices for Amazon Lumberyard<a name="cpp-best-practices-lumberyard"></a>

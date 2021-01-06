@@ -1,6 +1,5 @@
 ---
 description: ' Export meshes from .fbx files with FBX Settings to &ALYlong;. '
-slug: fbx-mesh-export
 title: FBX Settings mesh export
 ---
 # FBX Settings mesh export<a name="fbx-mesh-export"></a>

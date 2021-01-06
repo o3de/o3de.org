@@ -1,7 +1,6 @@
 ---
 description: ' Enable the Gestures gem for your game project to detect common gesture-based
   input actions in &ALYlong;. '
-slug: gems-system-gem-gestures
 title: Gestures Gem
 ---
 # Gestures Gem<a name="gems-system-gem-gestures"></a>

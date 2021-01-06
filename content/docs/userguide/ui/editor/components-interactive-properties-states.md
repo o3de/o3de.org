@@ -1,7 +1,6 @@
 ---
 description: ' The States group of properties defines the appearance of the interactive
   element and its child UI elements in &ALY;. '
-slug: ui-editor-components-interactive-properties-states
 title: States
 ---
 # States<a name="ui-editor-components-interactive-properties-states"></a>

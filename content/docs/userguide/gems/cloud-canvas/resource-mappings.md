@@ -1,7 +1,6 @@
 ---
 description: ' Use resource mappings to map the friendly names used in a game''s resource
   definitions to the actual names of resources in &ALYlong;. '
-slug: cloud-canvas-resource-mappings
 title: Resource Mappings
 ---
 # Resource Mappings<a name="cloud-canvas-resource-mappings"></a>

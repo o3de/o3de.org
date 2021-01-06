@@ -1,6 +1,5 @@
 ---
 description: ' Use the GameState gem to manage the states in your &ALYlong; game. '
-slug: gems-system-gem-game-state
 title: GameState Gem
 ---
 # GameState Gem<a name="gems-system-gem-game-state"></a>

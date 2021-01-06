@@ -1,6 +1,5 @@
 ---
 description: ' Learn about GridMate network session service events. '
-slug: network-session-service-events-descriptions
 title: Network Session Service Event Descriptions
 ---
 # Network Session Service Event Descriptions<a name="network-session-service-events-descriptions"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Camera component to allow an entity to be used as a camera
   in &ALYlong;. '
-slug: component-camera
 title: Camera
 ---
 # Camera<a name="component-camera"></a>

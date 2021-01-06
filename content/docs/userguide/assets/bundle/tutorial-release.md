@@ -1,6 +1,5 @@
 ---
 description: ' Bundle assets and release your &ALYlong; project. '
-slug: asset-bundler-tutorial-release
 title: Build and bundle assets for release in &ALY;
 ---
 # Build and bundle assets for release in Lumberyard<a name="asset-bundler-tutorial-release"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Particle component in &ALYlong; to add a single particle emitter
   on an entity. '
-slug: component-particle
 title: Particle
 ---
 # Particle<a name="component-particle"></a>

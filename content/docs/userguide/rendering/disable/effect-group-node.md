@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Effect Group node in the &ALYlong; &script-canvas;
   editor to disable effect groups. '
-slug: disable-effect-group-node
 title: Disable Effect Group
 ---
 # Disable Effect Group<a name="disable-effect-group-node"></a>

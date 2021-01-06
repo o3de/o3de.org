@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALY; &particle-editor; to create or add a new particle library. '
-slug: particle-creating-library
 title: Adding Particle Libraries
 ---
 # Adding Particle Libraries<a name="particle-creating-library"></a>

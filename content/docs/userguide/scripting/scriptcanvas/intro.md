@@ -1,7 +1,6 @@
 ---
 description: ' Get started with &ALYlong;''s &script-canvas;, a visual scripting environment
   to implement game logic without needing to write code. '
-slug: script-canvas-intro
 title: Creating Gameplay with &script-canvas;
 ---
 # Creating Gameplay with Script Canvas<a name="script-canvas-intro"></a>

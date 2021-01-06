@@ -1,6 +1,5 @@
 ---
 description: ' See the best practices for working with diffuse maps in &ALYlong;. '
-slug: mat-maps-diffuse
 title: Working with Diffuse Maps
 ---
 # Working with Diffuse Maps<a name="mat-maps-diffuse"></a>

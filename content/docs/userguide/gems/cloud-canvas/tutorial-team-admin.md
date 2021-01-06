@@ -1,6 +1,5 @@
 ---
 description: ' Create a managed group of &IAM; users for &cloud; in &ALYlong;. '
-slug: cloud-canvas-tutorial-team-admin
 title: Create &IAM; Users and Groups to Administer &cloud; Teams
 ---
 # Create IAM Users and Groups to Administer Cloud Canvas Teams<a name="cloud-canvas-tutorial-team-admin"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audio Trigger component to set up play and stop triggers in
   your game in &ALY;. '
-slug: component-audio-trigger
 title: Audio Trigger
 ---
 # Audio Trigger<a name="component-audio-trigger"></a>

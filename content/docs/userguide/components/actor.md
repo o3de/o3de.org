@@ -1,6 +1,5 @@
 ---
 description: ' Use the Actor component to add an actor file to your entity in &ALYlong;. '
-slug: component-actor
 title: Actor
 ---
 # Actor<a name="component-actor"></a>

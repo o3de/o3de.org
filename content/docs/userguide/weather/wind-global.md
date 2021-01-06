@@ -1,7 +1,6 @@
 ---
 description: ' Set up global wind to create wind and breezes that affect everything
   in your &ALY; level. '
-slug: weather-wind-global
 title: Adding Global Wind
 ---
 # Adding Global Wind<a name="weather-wind-global"></a>

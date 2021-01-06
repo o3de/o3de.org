@@ -1,7 +1,6 @@
 ---
 description: ' Use the AZ test scanner tool to run unit tests that are built into
   &ALY; libraries and executables. '
-slug: testing-aztestscanner
 title: Using AZ Test Scanner
 ---
 # Using AZ Test Scanner<a name="testing-aztestscanner"></a>

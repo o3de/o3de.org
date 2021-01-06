@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s &ui-canvas-editor; to create and customize various
   user interface elements and components such as menus, buttons, and heads-up displays. '
-slug: ui-editor-using
 title: Using the &ui-canvas-editor;
 ---
 # Using the UI Editor<a name="ui-editor-using"></a>

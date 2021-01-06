@@ -1,7 +1,6 @@
 ---
 description: ' Enable glass shaders to render windows and glass objects with effects
   such as fog and tint for &ALYlong;. '
-slug: shader-ref-glass
 title: Glass Shader
 ---
 # Glass Shader<a name="shader-ref-glass"></a>

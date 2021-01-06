@@ -1,7 +1,6 @@
 ---
 description: Use the lmbr projects command to create new &ALY; projects and list existing
   projects.
-slug: lmbr-exe-project
 title: Projects Commands
 ---
 # Projects Commands<a name="lmbr-exe-project"></a>

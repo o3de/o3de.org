@@ -2,7 +2,6 @@
 description: ' Use the Get Enabled &endash; High Quality Shadow node in the &ALYlong;
   &script-canvas; editor to learn whether a High Quality Shadow component is enabled
   for a specific entity. '
-slug: high-quality-shadow-get-enabled
 title: Get Enabled
 ---
 # Get Enabled<a name="high-quality-shadow-get-enabled"></a>

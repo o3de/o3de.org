@@ -1,6 +1,5 @@
 ---
 description: ' See the following signals reference for the AI system in &ALYlong;. '
-slug: ai-scripting-signals-reference
 title: Signals Reference
 ---
 # Signals Reference<a name="ai-scripting-signals-reference"></a>

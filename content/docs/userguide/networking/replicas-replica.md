@@ -1,7 +1,6 @@
 ---
 description: ' Learn how replicas are used by GridMate peers to synchronize a replicas
   state across a &ALYlong; session. '
-slug: network-replicas-replica
 title: Replica
 ---
 # Replica<a name="network-replicas-replica"></a>

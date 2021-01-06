@@ -1,7 +1,6 @@
 ---
 description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see tweeners
   in action. '
-slug: ui-animating-tweener-sample
 title: Tweener Sample Level
 ---
 # Tweener Sample Level<a name="ui-animating-tweener-sample"></a>

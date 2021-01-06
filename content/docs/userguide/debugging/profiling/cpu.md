@@ -1,7 +1,6 @@
 ---
 description: ' Use the CPU profiler in &ALYlong; to examine CPU usage in your game
   application. '
-slug: profiler-cpu
 title: Using the Profiler for CPU Usage
 ---
 # Using the Profiler for CPU Usage<a name="profiler-cpu"></a>

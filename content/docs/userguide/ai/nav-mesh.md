@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about an MNM mesh in &ALYlong;. '
-slug: ai-nav-mesh
 title: Multi-Layer Navigation Mesh (MNM)
 ---
 # Multi\-Layer Navigation Mesh \(MNM\)<a name="ai-nav-mesh"></a>

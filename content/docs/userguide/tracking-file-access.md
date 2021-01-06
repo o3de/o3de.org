@@ -1,6 +1,5 @@
 ---
 description: ' Describes how track file access during game runtime in &ALYlong;. '
-slug: tracking-file-access
 title: Tracking File Access
 ---
 # Tracking File Access<a name="tracking-file-access"></a>

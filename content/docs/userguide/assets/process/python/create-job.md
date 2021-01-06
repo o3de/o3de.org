@@ -1,7 +1,6 @@
 ---
 description: ' Create jobs in Python Asset Builder to create custom asset builders
   for your &ALYlong; project. '
-slug: python-asset-builder-create-job
 title: Create jobs with Python Asset Builder
 ---
 # Create jobs with Python Asset Builder<a name="python-asset-builder-create-job"></a>

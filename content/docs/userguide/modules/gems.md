@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the advantages of gems that are built as AZ modules. '
-slug: az-module-gems
 title: Gems and AZ Modules
 ---
 # Gems and AZ Modules<a name="az-module-gems"></a>

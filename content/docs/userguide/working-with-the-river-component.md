@@ -1,6 +1,5 @@
 ---
 description: null
-slug: working-with-the-river-component
 title: Working with the River Component
 ---
 # Working with the River Component<a name="working-with-the-river-component"></a>

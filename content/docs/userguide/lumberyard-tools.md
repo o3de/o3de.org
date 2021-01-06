@@ -1,6 +1,5 @@
 ---
 description: ' This section describes the &ALY;''s editors and tools. '
-slug: lumberyard-tools
 title: '&ALY; Editors and Tools'
 ---
 # Lumberyard Editors and Tools<a name="lumberyard-tools"></a>

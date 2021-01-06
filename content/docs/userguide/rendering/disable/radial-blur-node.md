@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Radial Blur node in the &ALYlong; &script-canvas; editor
   to disable radial blur. '
-slug: disable-radial-blur-node
 title: Disable Radial Blur
 ---
 # Disable Radial Blur<a name="disable-radial-blur-node"></a>

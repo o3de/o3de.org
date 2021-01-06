@@ -1,7 +1,6 @@
 ---
 description: ' Use the Transform2D''s anchors and offset settings to set a UI element''s
   position and size relative to its parent''s edges in &ALY;. '
-slug: ui-editor-anchors
 title: Managing UI Anchors and Offsets
 ---
 # Managing UI Anchors and Offsets<a name="ui-editor-anchors"></a>

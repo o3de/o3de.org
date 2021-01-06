@@ -1,6 +1,5 @@
 ---
 description: ' Instantiate a slice in &ly-editor;. '
-slug: component-instantiating-slice
 title: Instantiating a Slice
 ---
 # Instantiating a Slice<a name="component-instantiating-slice"></a>

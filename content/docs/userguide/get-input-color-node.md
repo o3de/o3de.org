@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Input Color node in the &ALYlong; &script-canvas; editor
   to return the procedural material input parameter as a color. '
-slug: get-input-color-node
 title: Get Input Color
 ---
 # Get Input Color<a name="get-input-color-node"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to control session workflow when using the &AGSlong; &gem;
   for &ALYlong;. '
-slug: gems-system-gem-gamelift
 title: '&AGS; Gem'
 ---
 # GameLift Gem<a name="gems-system-gem-gamelift"></a>

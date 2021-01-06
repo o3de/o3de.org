@@ -1,7 +1,6 @@
 ---
 description: ' Use the &script-canvas; gem to enable the use of &ALYlong;''s &script-canvas;
   editor. '
-slug: gems-system-gem-script-canvas
 title: '&script-canvas; Gem'
 ---
 # Script Canvas Gem<a name="gems-system-gem-script-canvas"></a>

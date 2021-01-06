@@ -1,7 +1,6 @@
 ---
 description: ' Follow these best practices for creating and using particle effects
   in the &ALY; Particle Editor. '
-slug: particle-best-practices
 title: Particle Effects Best Practices
 ---
 # Particle Effects Best Practices<a name="particle-best-practices"></a>

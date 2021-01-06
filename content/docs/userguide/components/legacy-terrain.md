@@ -1,6 +1,5 @@
 ---
 description: ' Use the Legacy Terrain level component to add level terrain in &ALYlong;. '
-slug: component-legacy-terrain
 title: Legacy Terrain level component
 ---
 # Legacy Terrain level component<a name="component-legacy-terrain"></a>

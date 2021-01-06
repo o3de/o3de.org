@@ -1,7 +1,6 @@
 ---
 description: ' Add support for &AWS; and custom resource types in your cloud gem for
   &ALYlong;. '
-slug: cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types
 title: 'Adding Support for New &AWS;:: and Custom:: Types'
 ---
 # Adding Support for New AWS:: and Custom:: Types<a name="cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types"></a>

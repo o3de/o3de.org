@@ -1,7 +1,6 @@
 ---
 description: ' Use blend layers in &ALYlong; to create one material with a second
   set of per-pixel functions, such as texture maps, UV tiling and offset. '
-slug: mat-maps-blend
 title: Working with Blend Layers
 ---
 # Working with Blend Layers<a name="mat-maps-blend"></a>

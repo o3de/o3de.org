@@ -1,6 +1,5 @@
 ---
 description: ' Use survey operations to manage your &cloud; in-game surveys in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-in-game-survey-api-survey-operations
 title: Survey Operations
 ---
 # Survey Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-operations"></a>

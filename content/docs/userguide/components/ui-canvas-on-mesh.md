@@ -2,7 +2,6 @@
 description: ' Use the UI Canvas on Mesh component in &ALYlong; to place a UI canvas
   on a component entity in the 3D world that a player can interact with using ray
   casts. '
-slug: component-ui-canvas-on-mesh
 title: UI Canvas on Mesh
 ---
 # UI Canvas on Mesh<a name="component-ui-canvas-on-mesh"></a>

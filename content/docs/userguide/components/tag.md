@@ -1,6 +1,5 @@
 ---
 description: ' Use the Tag component to apply labels to entities in &ALYlong;. '
-slug: component-tag
 title: Tag
 ---
 # Tag<a name="component-tag"></a>

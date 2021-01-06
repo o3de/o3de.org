@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; Tube Shape component to create tube-like volumes. '
-slug: component-tube-shape
 title: Tube Shape
 ---
 # Tube Shape<a name="component-tube-shape"></a>

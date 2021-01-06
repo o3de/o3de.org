@@ -1,7 +1,6 @@
 ---
 description: ' Use the Sun Longitude node in the &ALYlong; &script-canvas; editor
   to return the sun longitude. '
-slug: get-sun-longitude-node
 title: Get Sun Longitude
 ---
 # Get Sun Longitude<a name="get-sun-longitude-node"></a>

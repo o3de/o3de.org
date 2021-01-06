@@ -1,6 +1,5 @@
 ---
 description: ' Create your custom &script-canvas; node libraries in &ALYlong;. '
-slug: script-canvas-custom-nodes-node-libraries
 title: Node Libraries
 ---
 # Node Libraries<a name="script-canvas-custom-nodes-node-libraries"></a>

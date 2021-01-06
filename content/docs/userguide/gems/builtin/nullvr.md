@@ -1,7 +1,6 @@
 ---
 description: ' Use the NullVR Gem in &ALYlong; to run your level through the HMD Framework
   without having a VR device connected. This gem is useful for VR graphics debugging. '
-slug: gems-system-gem-nullvr
 title: NullVR Gem
 ---
 # NullVR Gem<a name="gems-system-gem-nullvr"></a>

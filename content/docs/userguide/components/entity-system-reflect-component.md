@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to reflect &ALY; components in C++. '
-slug: component-entity-system-reflect-component
 title: Reflecting a Component for Serialization and Editing
 ---
 # Reflecting a Component for Serialization and Editing<a name="component-entity-system-reflect-component"></a>

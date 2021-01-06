@@ -1,7 +1,6 @@
 ---
 description: ' Use a RadioButtonGroup component to manage radio button groups in &ALY;''s
   &ui-canvas-editor;. '
-slug: ui-editor-components-radiobuttongroup
 title: RadioButtonGroup
 ---
 # RadioButtonGroup<a name="ui-editor-components-radiobuttongroup"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the PhysX Character Controller component to implement basic character
   interactions in &ALYlong;. '
-slug: component-physx-character-controller
 title: PhysX Character Controller
 ---
 # PhysX Character Controller<a name="component-physx-character-controller"></a>

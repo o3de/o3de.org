@@ -1,6 +1,5 @@
 ---
 description: ' How JSON types convert to internal &ALY; data types. '
-slug: serialization-json-data-types
 title: Data types in serialized JSON
 ---
 # Data types in serialized JSON<a name="serialization-json-data-types"></a>

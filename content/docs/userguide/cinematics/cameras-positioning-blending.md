@@ -1,6 +1,5 @@
 ---
 description: ' Move a camera in the &trackview-editor; in &ALYlong;. '
-slug: cinematics-cameras-positioning-blending
 title: Positioning a Camera
 ---
 # Positioning a Camera<a name="cinematics-cameras-positioning-blending"></a>

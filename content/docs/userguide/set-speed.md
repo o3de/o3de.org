@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Speed node in the &ALYlong; &script-canvas; editor to set
   the time of day''s current speed multiplier. '
-slug: set-speed
 title: Set Speed
 ---
 # Set Speed<a name="set-speed"></a>

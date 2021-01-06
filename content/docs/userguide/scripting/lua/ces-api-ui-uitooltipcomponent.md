@@ -1,6 +1,5 @@
 ---
 description: ' Use the UITooltipComponent to provide the text of a tooltip in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uitooltipcomponent
 title: UITooltipComponent
 ---
 # UITooltipComponent<a name="lua-scripting-ces-api-ui-uitooltipcomponent"></a>

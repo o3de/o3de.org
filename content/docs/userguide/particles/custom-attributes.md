@@ -1,7 +1,6 @@
 ---
 description: ' Create a custom particle attribute panel in &ALYlong; &particle-editor;
   to quickly access the parameters you use most. '
-slug: particle-custom-attributes
 title: Creating Custom Attribute Panels
 ---
 # Creating Custom Attribute Panels<a name="particle-custom-attributes"></a>

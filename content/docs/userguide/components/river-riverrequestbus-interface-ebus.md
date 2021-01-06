@@ -1,6 +1,5 @@
 ---
 description: null
-slug: component-river-riverrequestbus-interface-ebus
 title: River Request Bus Interface
 ---
 # River Request Bus Interface<a name="component-river-riverrequestbus-interface-ebus"></a>

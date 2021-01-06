@@ -2,7 +2,6 @@
 description: ' Use the Sphere emitter in the &ALYlong; &particle-editor; to spawn
   particles along the shapes axial coordinate system and create complex spherical
   effects. '
-slug: particle-editor-emitter-shape-type-sphere
 title: Sphere Emitter (CPU and GPU)
 ---
 # Sphere Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-sphere"></a>

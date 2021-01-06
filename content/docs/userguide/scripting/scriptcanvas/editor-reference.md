@@ -1,7 +1,6 @@
 ---
 description: ' Learn about each &script-canvas; menu option and tool in the Editor
   Reference. '
-slug: script-canvas-editor-reference
 title: Editor Reference
 ---
 # Editor Reference<a name="script-canvas-editor-reference"></a>

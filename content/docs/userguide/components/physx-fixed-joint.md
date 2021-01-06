@@ -1,6 +1,5 @@
 ---
 description: ' The &ALYlong; PhysX Fixed Joint component. '
-slug: component-physx-fixed-joint
 title: PhysX Fixed Joint component
 ---
 # PhysX Fixed Joint component<a name="component-physx-fixed-joint"></a>

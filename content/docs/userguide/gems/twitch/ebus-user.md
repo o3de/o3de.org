@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the User C++ API operations for Twitch that you can use
   for your &ALY; game project. '
-slug: twitch-api-ebus-user
 title: User
 ---
 # User<a name="twitch-api-ebus-user"></a>

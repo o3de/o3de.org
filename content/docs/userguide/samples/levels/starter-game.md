@@ -1,7 +1,6 @@
 ---
 description: ' Use the Starter Game sample and its free character, game, and environment
   assets to build your own gameplay space in &ALYlong;. '
-slug: sample-level-starter-game
 title: Starter Game Sample
 ---
 # Starter Game Sample<a name="sample-level-starter-game"></a>

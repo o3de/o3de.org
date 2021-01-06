@@ -1,6 +1,5 @@
 ---
 description: ' Create a detached UI slice in &ALYlong;''s &ui-canvas-editor; . '
-slug: ui-editor-working-slices-detached
 title: Creating a Detached UI Slice
 ---
 # Creating a Detached UI Slice<a name="ui-editor-working-slices-detached"></a>

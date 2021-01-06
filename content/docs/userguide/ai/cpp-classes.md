@@ -1,6 +1,5 @@
 ---
 description: ' See the following C++ classes for AI objects in &ALYlong;. '
-slug: ai-concepts-cpp-classes
 title: AI C++ Class Hierarchy
 ---
 # AI C\+\+ Class Hierarchy<a name="ai-concepts-cpp-classes"></a>

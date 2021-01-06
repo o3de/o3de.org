@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Graphics Settings window and configuration files
   to update graphics performance settings for Android and iOS games. '
-slug: ios-android-updating-graphics-settings
 title: Updating Graphics Settings for Android and iOS
 ---
 # Updating Graphics Settings for Android and iOS<a name="ios-android-updating-graphics-settings"></a>

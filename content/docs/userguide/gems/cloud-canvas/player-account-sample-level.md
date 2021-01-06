@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the Player Account Sample Level in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-player-account-sample-level
 title: The Player Account Sample Level
 ---
 # The Player Account Sample Level<a name="cloud-canvas-cloud-gem-player-account-sample-level"></a>

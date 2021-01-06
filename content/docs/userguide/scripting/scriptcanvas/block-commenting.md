@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; &script-canvas; editor to add comments to your script. '
-slug: script-canvas-block-commenting
 title: Commenting Nodes
 ---
 # Commenting Nodes<a name="script-canvas-block-commenting"></a>

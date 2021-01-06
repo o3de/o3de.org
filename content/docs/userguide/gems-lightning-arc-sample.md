@@ -1,6 +1,5 @@
 ---
 description: null
-slug: gems-lightning-arc-sample
 title: Using the LightingArc Sample
 ---
 # Using the LightingArc Sample<a name="gems-lightning-arc-sample"></a>

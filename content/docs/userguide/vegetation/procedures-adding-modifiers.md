@@ -1,7 +1,6 @@
 ---
 description: ' Add scale, rotation, and position modifiers to change the look of your
   dynamic vegetation in &ALYlong;. '
-slug: dynamic-vegetation-procedures-adding-modifiers
 title: Adding Scale, Rotation, and Position Modifiers
 ---
 # Adding Scale, Rotation, and Position Modifiers<a name="dynamic-vegetation-procedures-adding-modifiers"></a>

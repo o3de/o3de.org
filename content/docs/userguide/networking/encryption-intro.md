@@ -1,7 +1,6 @@
 ---
 description: ' Encrypt traffic among clients and servers in a GridMate session in
   &ALYlong;. '
-slug: network-encryption-intro
 title: Using Encryption
 ---
 # Using Encryption<a name="network-encryption-intro"></a>

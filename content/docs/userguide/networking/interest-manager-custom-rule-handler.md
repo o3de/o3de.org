@@ -1,7 +1,6 @@
 ---
 description: ' Write your own interest manager rule handlers for networked games in
   &ALYlong;. '
-slug: network-interest-manager-custom-rule-handler
 title: Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C++
 ---
 # Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+<a name="network-interest-manager-custom-rule-handler"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Turn on debugging in &ALY; to display virtual reality debugging information
   in a supported head-mounted display. '
-slug: virtual-reality-debug
 title: Debugging your Virtual Reality Project
 ---
 # Debugging your Virtual Reality Project<a name="virtual-reality-debug"></a>

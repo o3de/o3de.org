@@ -1,6 +1,5 @@
 ---
 description: ' Specify material surface types for objects in &ALYlong;. '
-slug: mat-surface-types
 title: Selecting Material Surface Type
 ---
 # Selecting Material Surface Type<a name="mat-surface-types"></a>

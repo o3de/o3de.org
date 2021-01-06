@@ -1,7 +1,6 @@
 ---
 description: ' Use Scripted Entity Tweener''s timeline abilities to chain animations
   together and exert fine control over them in &ALYlong;. '
-slug: ui-animating-tweener-timeline
 title: Tweener Timeline
 ---
 # Tweener Timeline<a name="ui-animating-tweener-timeline"></a>

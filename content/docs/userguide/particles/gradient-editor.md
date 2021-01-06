@@ -1,7 +1,6 @@
 ---
 description: ' Use the Gradient Editor in the &ALYlong; &particle-editor; to apply
   color ranges to an emitter. '
-slug: particle-gradient-editor
 title: Using the Gradient Editor
 ---
 # Using the Gradient Editor<a name="particle-gradient-editor"></a>

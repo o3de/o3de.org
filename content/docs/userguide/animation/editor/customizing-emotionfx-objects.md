@@ -1,6 +1,5 @@
 ---
 description: ' Customize &emotionfx; objects in the &ALY; &animation-editor;. '
-slug: animation-editor-customizing-emotionfx-objects
 title: Customizing &emotionfx; Objects
 ---
 # Customizing EMotion FX Objects<a name="animation-editor-customizing-emotionfx-objects"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Generate a presigned URL for an &S3; object with &script-canvas; in
   &ALYlong;. '
-slug: cloud-canvas-cloud-gem-aws-s3-presign-sc
 title: Generating an &S3; Presigned URL With Script Canvas
 ---
 # Generating an Amazon S3 Presigned URL With Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc"></a>

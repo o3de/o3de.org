@@ -1,7 +1,6 @@
 ---
 description: ' Add a layout fitter component to an element in the &ALYlong; &ui-canvas-editor;
   to make the element fit its content. '
-slug: ui-editor-components-layout-fitter
 title: LayoutFitter
 ---
 # LayoutFitter<a name="ui-editor-components-layout-fitter"></a>

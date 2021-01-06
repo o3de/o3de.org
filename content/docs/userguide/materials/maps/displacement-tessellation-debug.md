@@ -1,6 +1,5 @@
 ---
 description: ' Fix tessellation seams in &ALYlong;. '
-slug: mat-maps-displacement-tessellation-debug
 title: Fixing Tessellation Seams
 ---
 # Fixing Tessellation Seams<a name="mat-maps-displacement-tessellation-debug"></a>

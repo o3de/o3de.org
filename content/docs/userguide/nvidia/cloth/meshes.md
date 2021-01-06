@@ -1,7 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Mesh components
   in &ALYlong;. '
-slug: nvidia-cloth-meshes
 title: Cloth for Mesh components
 ---
 # Cloth for Mesh components<a name="nvidia-cloth-meshes"></a>

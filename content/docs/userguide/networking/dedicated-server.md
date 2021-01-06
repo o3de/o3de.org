@@ -1,6 +1,5 @@
 ---
 description: ' Learn about creating dedicated game servers in &ALYlong;. '
-slug: network-dedicated-server
 title: Creating Dedicated Servers
 ---
 # Creating Dedicated Servers<a name="network-dedicated-server"></a>

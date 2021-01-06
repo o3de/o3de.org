@@ -1,6 +1,5 @@
 ---
 description: null
-slug: char-animation-editor-concepts-and-terms
 title: '&animation-editor; Concepts and Terms'
 ---
 # Animation Editor Concepts and Terms<a name="char-animation-editor-concepts-and-terms"></a>

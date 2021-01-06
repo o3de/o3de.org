@@ -1,7 +1,6 @@
 ---
 description: ' List of &ALY; materials that are allowed to be redistributed in &ALY;
   projects. '
-slug: lumberyard-redistributables
 title: '&ALY; Redistributables'
 ---
 # Lumberyard Redistributables<a name="lumberyard-redistributables"></a>

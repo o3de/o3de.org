@@ -1,6 +1,5 @@
 ---
 description: ' Match the transform properties for entities in &ALYlong;. '
-slug: transform-matching
 title: Matching the Transform
 ---
 # Matching the Transform<a name="transform-matching"></a>

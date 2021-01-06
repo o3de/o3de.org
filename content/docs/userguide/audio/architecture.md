@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the &ALYlong; audio system. '
-slug: audio-architecture
 title: Audio System Overview
 ---
 # Audio System Overview<a name="audio-architecture"></a>

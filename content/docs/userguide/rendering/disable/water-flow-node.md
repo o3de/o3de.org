@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Water Flow node in the &ALYlong; &script-canvas; editor
   to disable water flow effects. '
-slug: disable-water-flow-node
 title: Disable Water Flow
 ---
 # Disable Water Flow<a name="disable-water-flow-node"></a>

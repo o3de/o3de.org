@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Input Color node in the &ALYlong; &script-canvas; editor
   to set the value for a procedural material input parameter as a color. '
-slug: set-input-color-node
 title: Set Input Color
 ---
 # Set Input Color<a name="set-input-color-node"></a>

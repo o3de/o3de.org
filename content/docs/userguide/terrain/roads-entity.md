@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s road feature to create and place roads in your environment
   level. '
-slug: terrain-roads-entity
 title: Creating the Road Entity
 ---
 # Creating the Road Entity<a name="terrain-roads-entity"></a>

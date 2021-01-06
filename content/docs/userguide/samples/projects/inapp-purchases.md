@@ -1,7 +1,6 @@
 ---
 description: ' Use the In-App Purchases sample to learn how to use the In-App Purchases
   (IAP) Gem for a &ALYlong; application running on an Android or iOS mobile device. '
-slug: sample-project-inapp-purchases
 title: In-App Purchases Sample
 ---
 # In\-App Purchases Sample<a name="sample-project-inapp-purchases"></a>

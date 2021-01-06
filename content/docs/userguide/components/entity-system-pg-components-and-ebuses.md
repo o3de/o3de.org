@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the relationship between components and EBuses in &ALYlong;. '
-slug: component-entity-system-pg-components-and-ebuses
 title: Components and EBuses
 ---
 # Components and EBuses<a name="component-entity-system-pg-components-and-ebuses"></a>

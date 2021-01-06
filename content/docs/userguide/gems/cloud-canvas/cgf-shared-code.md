@@ -1,6 +1,5 @@
 ---
 description: ' Use shared code for your cloud gem framework in &ALYlong;. '
-slug: cloud-canvas-cgf-shared-code
 title: Using Shared Code
 ---
 # Using Shared Code<a name="cloud-canvas-cgf-shared-code"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Waf artifacts cache feature in &ALYlong; to significantly improve
   build times. '
-slug: waf-artifacts-cache
 title: Using the Waf Artifacts Cache
 ---
 # Using the Waf Artifacts Cache<a name="waf-artifacts-cache"></a>

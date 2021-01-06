@@ -1,6 +1,5 @@
 ---
 description: null
-slug: component-entity-system-pg-components-ebuses-questions-and-answers
 title: 'Components and EBuses: Questions and Answers'
 ---
 # Components and EBuses: Questions and Answers<a name="component-entity-system-pg-components-ebuses-questions-and-answers"></a>

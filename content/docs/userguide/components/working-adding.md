@@ -1,6 +1,5 @@
 ---
 description: ' Add components to your entities with the &entity-inspector; in &ALYlong;. '
-slug: component-working-adding
 title: Adding Components to an Entity
 ---
 # Adding Components to an Entity<a name="component-working-adding"></a>

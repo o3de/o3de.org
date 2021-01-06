@@ -1,7 +1,6 @@
 ---
 description: ' Use the VR Box Garden level to learn how to set up a VR playspace,
   basic VR gameplay, and controller tracking in &ALYlong;. '
-slug: sample-level-vr-box-garden
 title: VR Box Garden Level
 ---
 # VR Box Garden Level<a name="sample-level-vr-box-garden"></a>

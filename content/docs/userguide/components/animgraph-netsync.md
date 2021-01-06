@@ -1,7 +1,6 @@
 ---
 description: ' Use the Anim Graph Net Sync component to synchronize animation graph
   parameters in &ALYlong;. '
-slug: component-animgraph-netsync
 title: Anim Graph Net Sync
 ---
 # Anim Graph Net Sync<a name="component-animgraph-netsync"></a>

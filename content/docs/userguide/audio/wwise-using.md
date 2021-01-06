@@ -1,7 +1,6 @@
 ---
 description: ' Use an exclusive, free version of the Audiokinetic Wwise audio middleware
   for your &ALY; game project. '
-slug: audio-wwise-using
 title: Setting up Wwise LTX
 ---
 # Setting up Wwise LTX<a name="audio-wwise-using"></a>

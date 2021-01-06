@@ -1,6 +1,5 @@
 ---
 description: ' Motion constraints for NVIDIA Cloth in &ALYlong;. '
-slug: nvidia-cloth-constraints
 title: Cloth simulation constraints
 ---
 # Cloth simulation constraints<a name="nvidia-cloth-constraints"></a>

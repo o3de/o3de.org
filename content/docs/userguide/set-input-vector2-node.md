@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Input Vector2 node in the &ALYlong; &script-canvas; editor
   to set the value of a procedural material input parameter as a Vector2. '
-slug: set-input-vector2-node
 title: Set Input Vector2
 ---
 # Set Input Vector2<a name="set-input-vector2-node"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use a &cgp; to manage the data in &AWS; for your game. '
-slug: cloud-canvas-cloud-gem-portal
 title: '&cgp;'
 ---
 # Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal"></a>

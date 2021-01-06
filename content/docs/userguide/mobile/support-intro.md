@@ -1,7 +1,6 @@
 ---
 description: ' Build, deploy, test, and troubleshoot &ALY; projects for Android and
   iOS devices. '
-slug: mobile-support-intro
 title: Developing for Android and iOS with &ALY;
 ---
 # Developing for Android and iOS with Lumberyard<a name="mobile-support-intro"></a>

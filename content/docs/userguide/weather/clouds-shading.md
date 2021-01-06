@@ -1,6 +1,5 @@
 ---
 description: ' Use Cloud Shading parameters to customize your &ALYlong; cloud effects. '
-slug: weather-clouds-shading
 title: Setting Cloud Shading Parameters
 ---
 # Setting Cloud Shading Parameters<a name="weather-clouds-shading"></a>

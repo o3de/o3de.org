@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Sky Highlight component to add bursts of light to
   the sky. '
-slug: component-sky-highlight
 title: Sky Highlight
 ---
 # Sky Highlight<a name="component-sky-highlight"></a>

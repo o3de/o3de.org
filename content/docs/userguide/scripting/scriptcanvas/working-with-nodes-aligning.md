@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to align &script-canvas; nodes in &ALYlong;. '
-slug: script-canvas-working-with-nodes-aligning
 title: Aligning Nodes
 ---
 # Aligning Nodes<a name="script-canvas-working-with-nodes-aligning"></a>

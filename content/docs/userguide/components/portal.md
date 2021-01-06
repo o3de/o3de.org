@@ -1,6 +1,5 @@
 ---
 description: ' Use the Portal component to create efficient indoor spaces in &ALYlong;. '
-slug: component-portal
 title: Portal
 ---
 # Portal<a name="component-portal"></a>

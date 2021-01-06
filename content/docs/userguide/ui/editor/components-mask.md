@@ -1,7 +1,6 @@
 ---
 description: ' Add the Mask component to an element to reveal parts of the child element
   in &ALYlong;. '
-slug: ui-editor-components-mask
 title: Mask
 ---
 # Mask<a name="ui-editor-components-mask"></a>

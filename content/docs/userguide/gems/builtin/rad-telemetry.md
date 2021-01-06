@@ -1,7 +1,6 @@
 ---
 description: ' Use the RAD Telemetry gem to enable instrumentation-based profiling
   and performance visualization in &ALYlong;. '
-slug: gems-system-gem-rad-telemetry
 title: RAD Telemetry Gem
 ---
 # RAD Telemetry Gem<a name="gems-system-gem-rad-telemetry"></a>

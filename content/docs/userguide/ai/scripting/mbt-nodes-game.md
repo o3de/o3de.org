@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about game nodes for MBT features in &ALYlong;. '
-slug: ai-scripting-mbt-nodes-game
 title: Game Nodes
 ---
 # Game Nodes<a name="ai-scripting-mbt-nodes-game"></a>

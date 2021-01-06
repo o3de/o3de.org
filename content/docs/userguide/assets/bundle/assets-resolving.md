@@ -1,6 +1,5 @@
 ---
 description: ' Resolve missing assets in your &ALY; game project. '
-slug: asset-bundler-assets-resolving
 title: Resolving Missing Assets
 ---
 # Resolving Missing Assets<a name="asset-bundler-assets-resolving"></a>

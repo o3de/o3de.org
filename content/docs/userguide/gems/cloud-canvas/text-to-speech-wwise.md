@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audiokinetic Wwise audio system in &ALYlong; to implement features
   of the Text-to-Speech Cloud Gem in your game project. '
-slug: cloud-canvas-cloud-gem-text-to-speech-wwise
 title: Creating a Wwise Project for Runtime Text-to-Speech
 ---
 # Creating a Wwise Project for Runtime Text\-to\-Speech<a name="cloud-canvas-cloud-gem-text-to-speech-wwise"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Input Vector2 node in the &ALYlong; &script-canvas; editor
   to return the value of a procedural material input parameter as a Vector2. '
-slug: get-input-vector2-node
 title: Get Input Vector2
 ---
 # Get Input Vector2<a name="get-input-vector2-node"></a>

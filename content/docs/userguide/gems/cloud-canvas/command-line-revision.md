@@ -1,6 +1,5 @@
 ---
 description: ' Learn the new versions of &cloud; lmbr_aws commands in &ALYlong;. '
-slug: cloud-canvas-command-line-revision
 title: Command Reorganization
 ---
 # Command Reorganization<a name="cloud-canvas-command-line-revision"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; editor
   to set a material parameter with a number value. '
-slug: script-canvas-material-set-param-number-node
 title: Set Param Number
 ---
 # Set Param Number<a name="script-canvas-material-set-param-number-node"></a>

@@ -2,7 +2,6 @@
 description: ' Take a tour of &script-canvas; and begin learning the basics of how
   to use the visual editor using the topics available in the Learning Guide, including
   tutorials and a guide to the sample levels included with &ALYlong;. '
-slug: script-canvas-learning-guide
 title: Learning Guide
 ---
 # Learning Guide<a name="script-canvas-learning-guide"></a>

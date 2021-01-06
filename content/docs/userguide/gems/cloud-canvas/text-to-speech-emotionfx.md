@@ -1,6 +1,5 @@
 ---
 description: ' Learn about lip synchronization in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-text-to-speech-emotionfx
 title: Lip Synchronization with &emotionfx;
 ---
 # Lip Synchronization with EMotion FX<a name="cloud-canvas-cloud-gem-text-to-speech-emotionfx"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Debug your &script-canvas; graphs in &ALYlong;''s visual scripting
   tool. '
-slug: script-canvas-debugging
 title: '&script-canvas; Debugging'
 ---
 # Script Canvas Debugging<a name="script-canvas-debugging"></a>

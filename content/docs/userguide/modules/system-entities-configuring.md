@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use &ALYlong;''s &project-configurator; to configure the
   system entity. '
-slug: az-module-system-entities-configuring
 title: Configuring System Entities
 ---
 # Configuring System Entities<a name="az-module-system-entities-configuring"></a>

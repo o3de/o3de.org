@@ -1,7 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth gem to add cloth simulation to your &ALYlong;
   project. '
-slug: nvidia-cloth
 title: NVIDIA Cloth gem
 ---
 # NVIDIA Cloth gem<a name="nvidia-cloth"></a>

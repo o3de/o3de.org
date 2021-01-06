@@ -1,6 +1,5 @@
 ---
 description: ' Apply displacement mapping for an object in &ALYlong;. '
-slug: mat-maps-displacement-params
 title: Setting Displacement Mapping Parameters
 ---
 # Setting Displacement Mapping Parameters<a name="mat-maps-displacement-params"></a>

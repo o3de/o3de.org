@@ -1,7 +1,6 @@
 ---
 description: ' Use levels and environments to organize the setting of your &ALYlong;
   game. '
-slug: level-intro
 title: Creating levels and adding environment effects
 ---
 # Creating levels and adding environment effects<a name="level-intro"></a>

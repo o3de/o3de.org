@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Sun Longitude node in the &ALYlong; &script-canvas; editor
   to set the sun longitude. '
-slug: set-sun-longitude-node
 title: Set Sun Longitude
 ---
 # Set Sun Longitude<a name="set-sun-longitude-node"></a>

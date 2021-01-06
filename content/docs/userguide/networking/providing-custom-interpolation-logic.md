@@ -1,7 +1,6 @@
 ---
 description: ' Provide your own interpolation logic for the Transform component in
   &ALYlong;. '
-slug: network-providing-custom-interpolation-logic
 title: Providing Your Own Interpolation Logic for the Transform Component
 ---
 # Providing Your Own Interpolation Logic for the Transform Component<a name="network-providing-custom-interpolation-logic"></a>

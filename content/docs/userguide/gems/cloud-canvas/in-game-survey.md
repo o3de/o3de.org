@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; In-Game Survey Cloud Gem Portal to create surveys
   for your game and test them in InGameSurveySample. '
-slug: cloud-canvas-cloud-gem-in-game-survey
 title: In-Game Survey Cloud Gem Portal
 ---
 # In\-Game Survey Cloud Gem Portal<a name="cloud-canvas-cloud-gem-in-game-survey"></a>

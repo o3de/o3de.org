@@ -1,7 +1,6 @@
 ---
 description: ' Enable the &slice-upgrader; to convert slice data patches to the new
   file format. '
-slug: component-slice-upgrade-process
 title: Converting Slices with the &slice-upgrader;
 ---
 # Converting Slices with the Slice Upgrade Pipeline<a name="component-slice-upgrade-process"></a>

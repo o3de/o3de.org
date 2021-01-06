@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about pathfinding costs in &ALYlong;. '
-slug: ai-concepts-pathfinding-costs
 title: Pathfinding Costs
 ---
 # Pathfinding Costs<a name="ai-concepts-pathfinding-costs"></a>

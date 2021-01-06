@@ -1,7 +1,6 @@
 ---
 description: ' Use time of day effects in your &ALYlong; environment to simulate the
   changing light as the sun moves across the sky. '
-slug: sky-tod-intro
 title: Creating Time of Day Sky Effects
 ---
 # Creating Time of Day Sky Effects<a name="sky-tod-intro"></a>

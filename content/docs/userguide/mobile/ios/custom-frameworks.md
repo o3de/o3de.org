@@ -1,6 +1,5 @@
 ---
 description: ' Add iOS Framework libraries to your &ALYlong; Gems. '
-slug: ios-custom-frameworks
 title: Add iOS Frameworks to a &ALY; project
 ---
 # Add iOS Frameworks to a Lumberyard project<a name="ios-custom-frameworks"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Customize the component icon for an entity in &ALYlong;. '
-slug: component-entity-inspector-customize-icon
 title: Customizing the Entity Icon
 ---
 # Customizing the Entity Icon<a name="component-entity-inspector-customize-icon"></a>

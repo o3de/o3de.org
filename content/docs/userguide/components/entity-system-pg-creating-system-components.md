@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to create system components in &ALYlong;. '
-slug: component-entity-system-pg-creating-system-components
 title: Creating System Components
 ---
 # Creating System Components<a name="component-entity-system-pg-creating-system-components"></a>

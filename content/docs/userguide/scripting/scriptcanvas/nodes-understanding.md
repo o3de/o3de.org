@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the nodes in &script-canvas;, &ALYlong;''s visual scripting
   system. '
-slug: script-canvas-nodes-understanding
 title: Understanding &script-canvas; Nodes
 ---
 # Understanding Script Canvas Nodes<a name="script-canvas-nodes-understanding"></a>

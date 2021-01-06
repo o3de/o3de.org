@@ -1,7 +1,6 @@
 ---
 description: ' Use shadow nodes to configure shadow effects in the &ALYlong; &script-canvas;
   editor. '
-slug: script-canvas-shadow-scripting-nodes
 title: Shadow Nodes
 ---
 # Shadow Nodes<a name="script-canvas-shadow-scripting-nodes"></a>

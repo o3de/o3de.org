@@ -1,6 +1,5 @@
 ---
 description: ' Create a variety of game builds in &ALYlong; for different purposes. '
-slug: game-build-intro
 title: Building &ALY; projects
 ---
 # Building Lumberyard projects<a name="game-build-intro"></a>

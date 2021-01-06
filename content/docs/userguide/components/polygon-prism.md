@@ -1,6 +1,5 @@
 ---
 description: ' Use the Polygon Prism Shape component to define a volume in &ALYlong;. '
-slug: component-polygon-prism
 title: Polygon Prism Shape
 ---
 # Polygon Prism Shape<a name="component-polygon-prism"></a>

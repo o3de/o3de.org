@@ -1,7 +1,6 @@
 ---
 description: ' Use components to synchronize the state of animations across a network
   in &ALYlong;. '
-slug: network-synchronizing-animation
 title: Synchronizing Animations Across a Network
 ---
 # Synchronizing Animations Across a Network<a name="network-synchronizing-animation"></a>

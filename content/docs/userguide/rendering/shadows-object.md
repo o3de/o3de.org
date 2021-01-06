@@ -1,7 +1,6 @@
 ---
 description: ' For better shadow quality, use object shadows to assign custom shadow
   maps to selected objects in &ALYlong;. '
-slug: rendering-graphics-shadows-object
 title: Object Shadows
 ---
 # Object Shadows<a name="rendering-graphics-shadows-object"></a>

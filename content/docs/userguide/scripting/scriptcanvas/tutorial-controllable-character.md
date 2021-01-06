@@ -1,7 +1,6 @@
 ---
 description: ' Create a controllable character with &script-canvas;, &ALYlong;''s
   visual scripting system. '
-slug: script-canvas-tutorial-controllable-character
 title: '&script-canvas; Tutorial: Creating a Controllable Entity'
 ---
 # Script Canvas Tutorial: Creating a Controllable Entity<a name="script-canvas-tutorial-controllable-character"></a>

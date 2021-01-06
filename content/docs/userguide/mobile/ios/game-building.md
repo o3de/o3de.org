@@ -1,6 +1,5 @@
 ---
 description: ' Configure and build an iOS game application using the &ALY; build tools. '
-slug: ios-game-building
 title: Building Your iOS App
 ---
 # Building Your iOS App<a name="ios-game-building"></a>

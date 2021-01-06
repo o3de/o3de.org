@@ -1,7 +1,6 @@
 ---
 description: ' Use one of the supported file formats to import a terrain heightmap
   into &ALY;. '
-slug: terrain-heightmap-import
 title: Importing a Terrain Heightmap
 ---
 # Importing a Terrain Heightmap<a name="terrain-heightmap-import"></a>

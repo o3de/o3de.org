@@ -1,7 +1,6 @@
 ---
 description: ' Use the Image Processing gem to customize and process image files and
   textures in &ALYlong;. '
-slug: gems-system-gem-image-processing
 title: Image Processing
 ---
 # Image Processing<a name="gems-system-gem-image-processing"></a>

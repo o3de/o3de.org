@@ -1,7 +1,6 @@
 ---
 description: ' Use the UILayoutGridComponent to control grid layout characteristics
   in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uilayoutgridcomponent
 title: UILayoutGridComponent
 ---
 # UILayoutGridComponent<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the ChatPlay Gem to trigger events based on Twitch chat activity
   in &ALYlong;. '
-slug: gems-system-gem-chatplay
 title: ChatPlay Gem
 ---
 # ChatPlay Gem<a name="gems-system-gem-chatplay"></a>

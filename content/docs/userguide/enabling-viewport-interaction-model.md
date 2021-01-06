@@ -1,6 +1,5 @@
 ---
 description: ' Enable the &VIM; feature in &ly-editor;. '
-slug: enabling-viewport-interaction-model
 title: Enabling &VIM;
 ---
 # Enabling Viewport Interaction Model<a name="enabling-viewport-interaction-model"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Set up parameters to customize the animation of the simulated object
   in &ALYlong;. '
-slug: use-parameters-to-adjust-animation-during-runtime
 title: Using Parameters to Adjust the Animation During Runtime
 ---
 # Using Parameters to Adjust the Animation During Runtime<a name="use-parameters-to-adjust-animation-during-runtime"></a>

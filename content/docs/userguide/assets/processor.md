@@ -1,7 +1,6 @@
 ---
 description: ' Use &asset-processor; in &ALYlong; to detect and process new or modified
   asset files. '
-slug: asset-pipeline-processor
 title: Using &asset-processor;
 ---
 # Using Asset Processor<a name="asset-pipeline-processor"></a>

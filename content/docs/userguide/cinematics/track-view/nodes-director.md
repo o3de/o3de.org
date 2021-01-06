@@ -1,6 +1,5 @@
 ---
 description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
-slug: cinematics-track-view-nodes-director
 title: Director (Scene) Node
 ---
 # Director \(Scene\) Node<a name="cinematics-track-view-nodes-director"></a>

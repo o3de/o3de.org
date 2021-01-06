@@ -1,7 +1,6 @@
 ---
 description: ' Use the Game Effect System Gem to create and manage the visual effects
   of the Lightning Arc Gem for your &ALY; game project. '
-slug: gems-system-gem-game-effect
 title: GameEffect Gem
 ---
 # GameEffect Gem<a name="gems-system-gem-game-effect"></a>

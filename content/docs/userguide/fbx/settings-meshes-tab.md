@@ -1,6 +1,5 @@
 ---
 description: ' &ALYlong; FBX Settings Meshes tab export properties and modifiers. '
-slug: fbx-settings-meshes-tab
 title: FBX Settings Meshes tab
 ---
 # FBX Settings Meshes tab<a name="fbx-settings-meshes-tab"></a>

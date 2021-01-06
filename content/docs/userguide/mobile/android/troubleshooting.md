@@ -1,7 +1,6 @@
 ---
 description: ' Identify and fix common issues seen during Android development with
   &ALYlong;. '
-slug: troubleshoot-android
 title: Troubleshooting &ALY; issues on Android
 ---
 # Troubleshooting Lumberyard issues on Android<a name="troubleshoot-android"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Place a decal in your level in &ALYlong;. '
-slug: mat-maps-decal-placing
 title: Placing a Decal
 ---
 # Placing a Decal<a name="mat-maps-decal-placing"></a>

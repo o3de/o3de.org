@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s physically based lighting and shading models to light
   your environment. '
-slug: enviro-lighting-intro
 title: Environment Lighting
 ---
 # Environment Lighting<a name="enviro-lighting-intro"></a>

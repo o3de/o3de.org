@@ -1,7 +1,6 @@
 ---
 description: ' Use material nodes in &ly-editor;''s &trackview-editor; to animate
   commonly used material properties. '
-slug: cinematics-track-view-nodes-material
 title: Material Node
 ---
 # Material Node<a name="cinematics-track-view-nodes-material"></a>

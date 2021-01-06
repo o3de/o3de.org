@@ -1,6 +1,5 @@
 ---
 description: ' Enable the UI system localization feature in &ALYlong;. '
-slug: localization-ui
 title: UI System Localization Features
 ---
 # UI System Localization Features<a name="localization-ui"></a>

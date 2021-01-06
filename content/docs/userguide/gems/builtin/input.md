@@ -1,7 +1,6 @@
 ---
 description: ' Use the Input Management Framework gem to convert game input into gameplay
   actions in &ALYlong;. '
-slug: gems-system-gem-input
 title: Input Management Framework Gem
 ---
 # Input Management Framework Gem<a name="gems-system-gem-input"></a>

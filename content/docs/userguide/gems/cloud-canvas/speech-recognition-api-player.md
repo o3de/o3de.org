@@ -1,7 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem player API to send audio recordings
   or text to a bot for intent processing. '
-slug: cloud-canvas-cloud-gem-speech-recognition-api-player
 title: Speech Recognition Player API
 ---
 # Speech Recognition Player API<a name="cloud-canvas-cloud-gem-speech-recognition-api-player"></a>

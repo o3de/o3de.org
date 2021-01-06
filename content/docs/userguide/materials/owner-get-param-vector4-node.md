@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Param Vector4 node in the &ALYlong; &script-canvas; editor
   to return a material''s Vector4 parameter value for the specified entity. '
-slug: material-owner-get-param-vector4-node
 title: Get Param Vector4
 ---
 # Get Param Vector4<a name="material-owner-get-param-vector4-node"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Zip your gem''s contents and then change the file extension to .crate
   to make your custom &ALYlong; gem distributable. '
-slug: gems-system-gems-compressing
 title: Compressing Your Gem
 ---
 # Compressing Your Gem<a name="gems-system-gems-compressing"></a>

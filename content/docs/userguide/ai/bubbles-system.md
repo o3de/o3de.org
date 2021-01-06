@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the AI Bubbles system in &ALYlong;. '
-slug: ai-bubbles-system
 title: AI Bubbles System
 ---
 # AI Bubbles System<a name="ai-bubbles-system"></a>

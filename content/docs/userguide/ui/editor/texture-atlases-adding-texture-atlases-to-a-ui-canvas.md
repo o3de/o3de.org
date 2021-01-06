@@ -1,6 +1,5 @@
 ---
 description: null
-slug: ui-editor-texture-atlases-adding-texture-atlases-to-a-ui-canvas
 title: Adding Texture Atlases to a UI Canvas
 ---
 # Adding Texture Atlases to a UI Canvas<a name="ui-editor-texture-atlases-adding-texture-atlases-to-a-ui-canvas"></a>

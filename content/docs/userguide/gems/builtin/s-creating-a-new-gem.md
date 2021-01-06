@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; &project-configurator; to create your own gem to
   use for your game project. '
-slug: gems-system-gems-creating-a-new-gem
 title: Creating a New Empty Gem
 ---
 # Creating a New Empty Gem<a name="gems-system-gems-creating-a-new-gem"></a>

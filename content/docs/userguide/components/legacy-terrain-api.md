@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the TerrainDataRequestBus API in &ALYlong;. '
-slug: component-legacy-terrain-api
 title: TerrainDataRequestBus API
 ---
 # TerrainDataRequestBus API<a name="component-legacy-terrain-api"></a>

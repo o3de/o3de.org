@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the &ALYlong; tools that you can use to test builds, profile
   performance, and debug issues. '
-slug: testing-debugging-intro
 title: Profiling, Testing, and Debugging Game Projects
 ---
 # Profiling, Testing, and Debugging Game Projects<a name="testing-debugging-intro"></a>

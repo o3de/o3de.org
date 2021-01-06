@@ -1,6 +1,5 @@
 ---
 description: ' Use &ALYlong; &script-canvas; editor nodes for your scripts. '
-slug: script-canvas-node-reference
 title: '&script-canvas; Node Reference'
 ---
 # Script Canvas Node Reference<a name="script-canvas-node-reference"></a>

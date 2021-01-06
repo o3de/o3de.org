@@ -1,7 +1,6 @@
 ---
 description: ' Learn how marshalers read and write data to and from buffers in a &ALYlong;
   GridMate network session. '
-slug: network-marshalling
 title: Marshalling
 ---
 # Marshalling<a name="network-marshalling"></a>

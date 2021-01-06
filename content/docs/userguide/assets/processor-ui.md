@@ -1,7 +1,6 @@
 ---
 description: ' Learn the functions of each area of the &asset-processor; interface
   in &ALYlong;. '
-slug: asset-pipeline-processor-ui
 title: '&asset-processor; Interface'
 ---
 # Asset Processor Interface<a name="asset-pipeline-processor-ui"></a>

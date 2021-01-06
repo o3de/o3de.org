@@ -1,6 +1,5 @@
 ---
 description: ' Debug the &project-configurator; in &ALYlong;. '
-slug: configurator-debugging
 title: Troubleshooting
 ---
 # Troubleshooting<a name="configurator-debugging"></a>

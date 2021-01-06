@@ -1,7 +1,6 @@
 ---
 description: ' Prepare your &ALYlong; iOS games for store deployment (distribution)
   by packing the assets and cached binary shaders. '
-slug: ios-creating-release-app
 title: Creating a Release App
 ---
 # Creating a Release App<a name="ios-creating-release-app"></a>

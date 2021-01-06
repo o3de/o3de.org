@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; editor
   to set a material''s Vector3 parameter value for the specified entity. '
-slug: material-owner-set-param-vector3
 title: Set Param Vector3
 ---
 # Set Param Vector3<a name="material-owner-set-param-vector3"></a>

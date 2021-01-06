@@ -1,7 +1,6 @@
 ---
 description: ' Use console variables to specify the fog settings for your &ALYlong;
   game project. '
-slug: rendering-graphics-fog-cvar
 title: Console Variables for Fog
 ---
 # Console Variables for Fog<a name="rendering-graphics-fog-cvar"></a>

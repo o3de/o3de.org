@@ -1,7 +1,6 @@
 ---
 description: ' Create an animation graph and simulate your PhysX ragdoll in the &ALYlong;
   &animation-editor; . '
-slug: animation-editor-creating-and-simulating-physx-ragdoll
 title: Creating and Simulating a PhysX Ragdoll
 ---
 # Creating and Simulating a PhysX Ragdoll<a name="animation-editor-creating-and-simulating-physx-ragdoll"></a>

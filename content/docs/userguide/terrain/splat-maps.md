@@ -1,7 +1,6 @@
 ---
 description: ' Add weight information to &ALY; terrain maps by importing splat maps
   created in a DCC tool. '
-slug: terrain-splat-maps
 title: Importing Splat Maps
 ---
 # Importing Splat Maps<a name="terrain-splat-maps"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Debug the integration output of Waf''s Python scripts with PyCharm
   in &ALYlong;. '
-slug: az-code-gen-waf-debugging
 title: Waf Debugging with AZ Code Generator
 ---
 # Waf Debugging with AZ Code Generator<a name="az-code-gen-waf-debugging"></a>

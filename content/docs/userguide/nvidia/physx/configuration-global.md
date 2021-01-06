@@ -1,6 +1,5 @@
 ---
 description: ' Configure global settings for the PhysX system in &ALYlong;. '
-slug: physx-configuration-global
 title: Global Configuration
 ---
 # Global Configuration<a name="physx-configuration-global"></a>

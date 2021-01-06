@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s touch bending effect to simulate a player touching
   or brushing against vegetation. '
-slug: vegetation-bending-touch-intro
 title: Adding Touch (Collision) Bending Effects
 ---
 # Adding Touch \(Collision\) Bending Effects<a name="vegetation-bending-touch-intro"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use question operations to manage the questions in your &ALY; &cloud;
   in-game surveys. '
-slug: cloud-canvas-cloud-gem-in-game-survey-api-question-operations
 title: Question Operations
 ---
 # Question Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-question-operations"></a>

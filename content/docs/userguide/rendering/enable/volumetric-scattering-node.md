@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Volumetric Scattering node in the &ALYlong; &script-canvas;
   editor to add volumetric effects. '
-slug: enable-volumetric-scattering-node
 title: Enable Volumetric Scattering
 ---
 # Enable Volumetric Scattering<a name="enable-volumetric-scattering-node"></a>

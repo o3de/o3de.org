@@ -1,6 +1,5 @@
 ---
 description: ' Use the Spline component to author lines and curves in &ALYlong;. '
-slug: component-spline
 title: Spline
 ---
 # Spline<a name="component-spline"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Modify the export properties of your .fbx files with FBX Settings in
   &ALYlong;. '
-slug: fbx-properties
 title: FBX Settings export properties
 ---
 # FBX Settings export properties<a name="fbx-properties"></a>

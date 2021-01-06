@@ -1,7 +1,6 @@
 ---
 description: ' Create dynamic joint constraints between entities in &ALYlong; with
   PhysX joints. '
-slug: physx-joint-intro
 title: Dynamic joints with PhysX
 ---
 # Dynamic joints with PhysX<a name="physx-joint-intro"></a>

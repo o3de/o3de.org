@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Sharpen node in the &ALYlong; &script-canvas; editor
   to configure the sharpen filter effect. '
-slug: enable-sharpen-node
 title: Enable Sharpen
 ---
 # Enable Sharpen<a name="enable-sharpen-node"></a>

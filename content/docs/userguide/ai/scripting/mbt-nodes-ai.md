@@ -1,6 +1,5 @@
 ---
 description: ' See the following AI nodes for the AI system in &ALYlong;. '
-slug: ai-scripting-mbt-nodes-ai
 title: AI Nodes
 ---
 # AI Nodes<a name="ai-scripting-mbt-nodes-ai"></a>

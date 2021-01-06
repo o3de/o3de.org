@@ -1,7 +1,6 @@
 ---
 description: ' Use morph targets to deform characters in the &ALYlong; &animation-editor;
   . '
-slug: animation-editor-using-morph-targets-to-deform-characters
 title: Using Morph Targets to Deform Characters
 ---
 # Using Morph Targets to Deform Characters<a name="animation-editor-using-morph-targets-to-deform-characters"></a>

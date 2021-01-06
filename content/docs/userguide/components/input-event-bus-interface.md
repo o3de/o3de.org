@@ -1,6 +1,5 @@
 ---
 description: ' Work with the Input component EBus (event bus) in &ALYlong;. '
-slug: component-input-event-bus-interface
 title: Input Component EBus Interface
 ---
 # Input Component EBus Interface<a name="component-input-event-bus-interface"></a>

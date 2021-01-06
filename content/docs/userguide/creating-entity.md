@@ -1,6 +1,5 @@
 ---
 description: ' Create an entity with the &entity-outliner; in &ALYlong;. '
-slug: creating-entity
 title: Creating an Entity
 ---
 # Creating an Entity<a name="creating-entity"></a>

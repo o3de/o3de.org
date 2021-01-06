@@ -1,7 +1,6 @@
 ---
 description: ' Use the Rin Locomotion sample level to learn how the &ALY; &animation-editor;
   uses actors, motion sets, and animation graphs to control character behavior. '
-slug: animation-editor-rin-locomotion-sample
 title: Advanced_RinLocomotion Sample
 ---
 # Advanced\_RinLocomotion Sample<a name="animation-editor-rin-locomotion-sample"></a>

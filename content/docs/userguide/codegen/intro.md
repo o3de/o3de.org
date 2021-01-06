@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s AZ Code Generator to generate source code (such as
   boilerplate code) from specially tagged source code. '
-slug: az-code-gen-intro
 title: Automating boilerplate with AZ Code Generator
 ---
 # Automating boilerplate with AZ Code Generator<a name="az-code-gen-intro"></a>

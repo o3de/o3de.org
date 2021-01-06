@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALY; &particle-editor; to create, edit, preview, manage, and
   save particle libraries and emitters that are used with entities in your level. '
-slug: particle-editor
 title: Using the &particle-editor;
 ---
 # Using the Particle Editor<a name="particle-editor"></a>

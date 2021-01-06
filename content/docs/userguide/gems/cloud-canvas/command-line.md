@@ -1,7 +1,6 @@
 ---
 description: ' Use the &cloud; lmbr_aws.cmd command line tool for working with &AWS;
   resources. '
-slug: cloud-canvas-command-line
 title: Using the &cloud; Command Line
 ---
 # Using the Cloud Canvas Command Line<a name="cloud-canvas-command-line"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
-slug: delegate-component-mode
 title: 'Step 2: Add a ComponentModeDelegate'
 ---
 # Step 2: Add a ComponentModeDelegate<a name="delegate-component-mode"></a>

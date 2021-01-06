@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Ghosting node in the &ALYlong; &script-canvas; editor
   to enable ghosting effects. '
-slug: enable-ghosting-node
 title: Enable Ghosting
 ---
 # Enable Ghosting<a name="enable-ghosting-node"></a>

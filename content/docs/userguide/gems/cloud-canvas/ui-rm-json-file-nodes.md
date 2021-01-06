@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to work with &cloud; JSON files in the &cloud; Resource Manager
   in &ALYlong;. '
-slug: cloud-canvas-ui-rm-json-file-nodes
 title: Working with JSON Files
 ---
 # Working with JSON Files<a name="cloud-canvas-ui-rm-json-file-nodes"></a>

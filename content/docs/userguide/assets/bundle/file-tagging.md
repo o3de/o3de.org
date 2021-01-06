@@ -2,7 +2,6 @@
 description: ' Use the &ALYlong; &asset-editor; to create file tag rules for including
   and excluding files in your asset bundles for processing by the &asset-bundler;.
   Rules are composed of pattern matching logic and file tag strings. '
-slug: asset-bundler-file-tagging
 title: Using the File Tagging System to Include or Exclude Assets
 ---
 # Using the File Tagging System to Include or Exclude Assets<a name="asset-bundler-file-tagging"></a>

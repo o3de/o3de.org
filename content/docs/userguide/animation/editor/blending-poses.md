@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to blend poses using blend nodes in the &ALYlong; &animation-editor;
   . '
-slug: animation-editor-blending-poses
 title: Blending Poses with Blend Nodes
 ---
 # Blending Poses with Blend Nodes<a name="animation-editor-blending-poses"></a>

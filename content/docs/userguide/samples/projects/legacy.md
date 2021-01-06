@@ -1,7 +1,6 @@
 ---
 description: ' Use the Legacy Game Sample project to learn about &ALYlong; features
   such as CryAction and CryAISystem. '
-slug: sample-project-legacy
 title: Legacy Sample Project (GameSDK)
 ---
 # Legacy Sample Project \(GameSDK\)<a name="sample-project-legacy"></a>

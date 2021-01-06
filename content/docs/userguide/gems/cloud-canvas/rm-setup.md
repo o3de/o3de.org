@@ -1,7 +1,6 @@
 ---
 description: ' Initialize &cloud; Resource Manager and get started working with the
   project stacks that enable the cloud-connected features of your &ALYlong; game project. '
-slug: cloud-canvas-rm-setup
 title: Setting Up a Project to Use Resource Manager
 ---
 # Setting Up a Project to Use Resource Manager<a name="cloud-canvas-rm-setup"></a>

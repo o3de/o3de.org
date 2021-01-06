@@ -1,6 +1,5 @@
 ---
 description: ' Use the Lua scripting language to load and unload UI canvases in &ALYlong;. '
-slug: ui-editor-loading-canvases-lua
 title: Loading Canvases in Lua
 ---
 # Loading Canvases in Lua<a name="ui-editor-loading-canvases-lua"></a>

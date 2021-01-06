@@ -2,7 +2,6 @@
 description: ' Use the tools in &ALYlong;''s &component-system; to create entities,
   add components to entities, remove and reorder components, find an entity, and edit
   component properties. '
-slug: component-working
 title: Working with Components
 ---
 # Working with Components<a name="component-working"></a>

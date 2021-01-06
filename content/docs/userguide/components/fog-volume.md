@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; Fog Volume to create a fog volume in your game. '
-slug: component-fog-volume
 title: Fog Volume
 ---
 # Fog Volume<a name="component-fog-volume"></a>

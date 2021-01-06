@@ -1,7 +1,6 @@
 ---
 description: ' Set up simulated object colliders so that the actor''s body interacts
   with the tassel in &ALYlong;. '
-slug: set-up-simulated-object-collider
 title: Setting Up Simulated Object Colliders
 ---
 # Setting Up Simulated Object Colliders<a name="set-up-simulated-object-collider"></a>

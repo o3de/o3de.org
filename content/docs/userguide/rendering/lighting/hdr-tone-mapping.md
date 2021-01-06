@@ -1,7 +1,6 @@
 ---
 description: ' Use HDR tone mapping settings to control the light and dark values
   in your &ALY; scene. '
-slug: enviro-lighting-hdr-tone-mapping
 title: HDR Settings
 ---
 # HDR Settings<a name="enviro-lighting-hdr-tone-mapping"></a>

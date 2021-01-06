@@ -1,6 +1,5 @@
 ---
 description: ' Process custom assets in &ALYlong; with Python Asset Builder. '
-slug: python-asset-builder-intro
 title: Process custom assets with Python Asset Builder
 ---
 # Process custom assets with Python Asset Builder<a name="python-asset-builder-intro"></a>

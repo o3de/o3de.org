@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to install and set up &ALYlong; for the first time. '
-slug: setting-up-intro
 title: Setting up &ALYlong;
 ---
 # Setting up Amazon Lumberyard<a name="setting-up-intro"></a>

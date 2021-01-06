@@ -1,7 +1,6 @@
 ---
 description: ' Create a custom game icon in &ALYlong; for the title bar window of
   your game. '
-slug: game-build-custom-game-icons
 title: Adding Custom Game Icons
 ---
 # Adding Custom Game Icons<a name="game-build-custom-game-icons"></a>

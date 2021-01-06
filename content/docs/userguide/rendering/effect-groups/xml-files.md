@@ -1,6 +1,5 @@
 ---
 description: ' Manage post effect group XML files in &ALYlong;. '
-slug: effect-groups-xml-files
 title: Post Effect Group XML Files
 ---
 # Post Effect Group XML Files<a name="effect-groups-xml-files"></a>

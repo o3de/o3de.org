@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to host a GridMate session in &ALYlong;. '
-slug: network-session-service-hosting
 title: Hosting a Session
 ---
 # Hosting a Session<a name="network-session-service-hosting"></a>

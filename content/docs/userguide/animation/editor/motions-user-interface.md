@@ -1,7 +1,6 @@
 ---
 description: ' Learn more about the user interface for the Motions pane in the &animation-editor;
   . '
-slug: animation-editor-motions-user-interface
 title: Motions Interface
 ---
 # Motions Interface<a name="animation-editor-motions-user-interface"></a>

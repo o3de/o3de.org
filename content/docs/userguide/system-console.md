@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; console to customize and create your own console
   variable commands. '
-slug: system-console
 title: Console in Depth
 ---
 # Console in Depth<a name="system-console"></a>

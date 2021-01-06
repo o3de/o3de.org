@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Text-to-Speech Gem''s runtime speech generation, resources,
   TextToSpeech component, and troubleshooting. '
-slug: cloud-canvas-cloud-gem-text-to-speech-details
 title: Text-to-Speech Gem Implementation Details
 ---
 # Text\-to\-Speech Gem Implementation Details<a name="cloud-canvas-cloud-gem-text-to-speech-details"></a>

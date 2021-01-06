@@ -1,7 +1,6 @@
 ---
 description: ' Use the Message of the Day Cloud Gem to send scheduled messages to
   the users of your &ALYlong; game. '
-slug: cloud-canvas-cloud-gem-message-of-the-day
 title: Message Of The Day Cloud Gem Portal
 ---
 # Message Of The Day Cloud Gem Portal<a name="cloud-canvas-cloud-gem-message-of-the-day"></a>

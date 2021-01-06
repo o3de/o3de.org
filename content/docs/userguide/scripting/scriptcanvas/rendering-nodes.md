@@ -1,7 +1,6 @@
 ---
 description: ' Add &ALYlong; &script-canvas; rendering nodes to your script to create
   effects, such as blur, shadow, and weather effects. '
-slug: script-canvas-rendering-nodes
 title: Rendering Nodes
 ---
 # Rendering Nodes<a name="script-canvas-rendering-nodes"></a>

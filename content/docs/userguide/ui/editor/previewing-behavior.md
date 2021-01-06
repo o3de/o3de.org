@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong; &ui-canvas-editor; Preview to visualize how the animations
   and elements in your game UI canvas will perform at different resolutions. '
-slug: ui-editor-previewing-behavior
 title: Previewing Canvas Behavior
 ---
 # Previewing Canvas Behavior<a name="ui-editor-previewing-behavior"></a>

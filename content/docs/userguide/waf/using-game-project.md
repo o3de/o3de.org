@@ -1,6 +1,5 @@
 ---
 description: ' Add a game project to the &ALYlong; Waf build system. '
-slug: waf-using-game-project
 title: Adding a Game Project
 ---
 # Adding a Game Project<a name="waf-using-game-project"></a>

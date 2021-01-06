@@ -1,7 +1,6 @@
 ---
 description: ' Use &CFN; stacks to deploy resources and use &ALY; tools to create
   and manage the stacks. '
-slug: cloud-canvas-resource-deployments
 title: Resource Deployments
 ---
 # Resource Deployments<a name="cloud-canvas-resource-deployments"></a>

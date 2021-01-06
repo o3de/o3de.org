@@ -1,7 +1,6 @@
 ---
 description: ' Use interactive element controls to control an element while it has
   focus in &ALY;. '
-slug: interactive-control
 title: Interactive Element Controls
 ---
 # Interactive Element Controls<a name="interactive-control"></a>

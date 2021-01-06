@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; UISpawner component to spawn a runtime dynamic slice
   at an entity''s location with an optional offset. '
-slug: ui-editor-components-spawner
 title: UISpawner Component
 ---
 # UISpawner Component<a name="ui-editor-components-spawner"></a>

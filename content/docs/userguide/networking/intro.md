@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to synchronize game state, use encryption, and perform other
   important networking tasks in &ALYlong;. '
-slug: network-intro
 title: Using &ALY; Networking
 ---
 # Using Lumberyard Networking<a name="network-intro"></a>

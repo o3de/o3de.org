@@ -1,6 +1,5 @@
 ---
 description: ' Create wind areas in &ALY; to determine where objects experience wind. '
-slug: weather-wind-areas
 title: Creating Wind Areas
 ---
 # Creating Wind Areas<a name="weather-wind-areas"></a>

@@ -2,7 +2,6 @@
 description: ' Configure console variables (CVARs) to activate and modify configurable
   features of &ALYlong;''s virtual reality system, such as resolution and performance
   specifications. '
-slug: virtual-reality-cvars
 title: Configuring Required Console Variables
 ---
 # Configuring Required Console Variables<a name="virtual-reality-cvars"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; Snow component to add snow effects to your game. '
-slug: component-snow
 title: Snow
 ---
 # Snow<a name="component-snow"></a>

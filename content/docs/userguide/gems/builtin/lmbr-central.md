@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s LmbrCentral gem to create cinematic sequences for
   your games. '
-slug: gems-system-gem-lmbr-central
 title: LmbrCentral Gem
 ---
 # LmbrCentral Gem<a name="gems-system-gem-lmbr-central"></a>

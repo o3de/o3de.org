@@ -1,7 +1,6 @@
 ---
 description: ' See the best practices for exporting skinned meshes for actors for
   the &animation-editor; in &ALYlong;. '
-slug: char-fbx-importer-export-actors-motons
 title: Exporting Actors and Motions
 ---
 # Exporting Actors and Motions<a name="char-fbx-importer-export-actors-motons"></a>

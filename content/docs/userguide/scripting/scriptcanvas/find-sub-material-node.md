@@ -1,7 +1,6 @@
 ---
 description: ' Use the Find Sub-Material node in the &ALYlong; &script-canvas; editor
   to find and return a submaterial with the specified name and submaterial ID. '
-slug: script-canvas-find-sub-material-node
 title: Find Sub-Material
 ---
 # Find Sub\-Material<a name="script-canvas-find-sub-material-node"></a>

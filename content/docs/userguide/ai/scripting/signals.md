@@ -1,6 +1,5 @@
 ---
 description: ' Send and receive signals between AI agents in &ALYlong;. '
-slug: ai-scripting-signals
 title: Signals
 ---
 # Signals<a name="ai-scripting-signals"></a>

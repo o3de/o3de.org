@@ -1,7 +1,6 @@
 ---
 description: ' Use the &animation-editor; ''s math nodes to perform math operations
   in &ALYlong;. '
-slug: animation-editor-math-nodes
 title: Using Math Nodes
 ---
 # Using Math Nodes<a name="animation-editor-math-nodes"></a>

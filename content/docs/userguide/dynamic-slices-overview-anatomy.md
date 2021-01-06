@@ -1,7 +1,6 @@
 ---
 description: ' Understand the anatomy of a slice and the slice data patch format in
   &ALYlong;. '
-slug: dynamic-slices-overview-anatomy
 title: Anatomy of a Slice
 ---
 # Anatomy of a Slice<a name="dynamic-slices-overview-anatomy"></a>

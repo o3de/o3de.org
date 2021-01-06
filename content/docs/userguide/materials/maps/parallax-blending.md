@@ -1,6 +1,5 @@
 ---
 description: ' Place a blend layer for parallax mapping in &ALYlong;. '
-slug: mat-maps-parallax-blending
 title: Using Blend Layers for Parallax Mapping
 ---
 # Using Blend Layers for Parallax Mapping<a name="mat-maps-parallax-blending"></a>

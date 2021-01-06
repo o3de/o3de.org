@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Moon Longitude node in the &ALYlong; &script-canvas; editor
   to return the moon longitude. '
-slug: get-moon-longitude-node
 title: Get Moon Longitude
 ---
 # Get Moon Longitude<a name="get-moon-longitude-node"></a>

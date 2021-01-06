@@ -1,6 +1,5 @@
 ---
 description: null
-slug: ui-editor-working-slices-instantiating
 title: Instantiating a UI Slice
 ---
 # Instantiating a UI Slice<a name="ui-editor-working-slices-instantiating"></a>

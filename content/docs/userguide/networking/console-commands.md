@@ -1,6 +1,5 @@
 ---
 description: ' Learn useful networking console commands for &ALYlong;. '
-slug: network-console-commands
 title: Useful Console Commands
 ---
 # Useful Console Commands<a name="network-console-commands"></a>

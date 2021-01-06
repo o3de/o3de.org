@@ -1,6 +1,5 @@
 ---
 description: ' Add navigation seed points for AI agents in &ALYlong;. '
-slug: ai-nav-seed-points
 title: Adding Navigation Seed Points
 ---
 # Adding Navigation Seed Points<a name="ai-nav-seed-points"></a>

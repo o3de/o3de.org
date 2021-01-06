@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Channels C++ API operations for Twitch that you can
   use for your &ALY; game project. '
-slug: twitch-api-ebus-channels
 title: Channels
 ---
 # Channels<a name="twitch-api-ebus-channels"></a>

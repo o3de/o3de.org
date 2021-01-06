@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to use asserts in &ALYlong; to debug your game code. '
-slug: debugging-using-asserts
 title: Using the sys_asserts Console Variable (CVAR)
 ---
 # Using the `sys_asserts` Console Variable \(CVAR\)<a name="debugging-using-asserts"></a>

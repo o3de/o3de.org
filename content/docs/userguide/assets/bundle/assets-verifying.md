@@ -1,7 +1,6 @@
 ---
 description: ' Verify that the assets in your &ALY; project are properly bundled and
   referenced. '
-slug: asset-bundler-assets-verifying
 title: Verifying that Bundles Contain Required Assets
 ---
 # Verifying that Bundles Contain Required Assets<a name="asset-bundler-assets-verifying"></a>

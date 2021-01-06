@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; editor
   to return a material''s Vector3 parameter value for the specified entity. '
-slug: material-owner-get-param-vector3-node
 title: Get Param Vector3
 ---
 # Get Param Vector3<a name="material-owner-get-param-vector3-node"></a>

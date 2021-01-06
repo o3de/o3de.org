@@ -1,7 +1,6 @@
 ---
 description: Combine multiple font assets to create a font family group to use in
   your game UI in &ALYlong;.
-slug: ui-fonts-create-font-families
 title: Creating Font Families
 ---
 # Creating Font Families<a name="ui-fonts-create-font-families"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Add colliders to actors in &ALYlong; for NVIDIA Cloth simulations. '
-slug: char_animation_add_cloth_colliders
 title: Add Cloth Colliders to actors
 ---
 # Add Cloth Colliders to actors<a name="char_animation_add_cloth_colliders"></a>

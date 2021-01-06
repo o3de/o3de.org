@@ -1,7 +1,6 @@
 ---
 description: ' Use dynamic data slots to enable a single node to process a variety
   of data types in &script-canvas;, &ALYlong;''s visual scripting system. '
-slug: script-canvas-custom-nodes-dynamic-data
 title: Dynamic Data Slots
 ---
 # Dynamic Data Slots<a name="script-canvas-custom-nodes-dynamic-data"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Blend Two node in &ALYlong; &animation-editor; to blend two
   nodes that do not need additive blending. '
-slug: animation-editor-blending-blendtwo
 title: Blend Two Node
 ---
 # Blend Two Node<a name="animation-editor-blending-blendtwo"></a>

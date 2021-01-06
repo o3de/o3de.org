@@ -1,6 +1,5 @@
 ---
 description: ' Use the Sun Rays Effect in &ALYlong; to simulate shafts of sunlight. '
-slug: sky-day-sun-rays
 title: Adding Sun Rays
 ---
 # Adding Sun Rays<a name="sky-day-sun-rays"></a>

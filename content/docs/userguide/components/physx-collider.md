@@ -1,7 +1,6 @@
 ---
 description: ' Use the &physx-collider; component to define where collision detection
   and response occur in &ALYlong;. '
-slug: component-physx-collider
 title: PhysX Collider
 ---
 # PhysX Collider<a name="component-physx-collider"></a>

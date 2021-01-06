@@ -1,7 +1,6 @@
 ---
 description: ' Use the Open and &AWS; Console or Permissions and &cloud; menus in
   &ly-editor; to work with &cloud;. '
-slug: cloud-canvas-ui-intro
 title: '&cloud; Tools in &ly-editor;'
 ---
 # Cloud Canvas Tools in Lumberyard Editor<a name="cloud-canvas-ui-intro"></a>

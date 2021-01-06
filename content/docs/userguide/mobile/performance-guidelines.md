@@ -1,7 +1,6 @@
 ---
 description: ' Follow these guidelines to generate art assets and tune &ALYlong; performance
   for mobile devices. '
-slug: ios-android-performance-guidelines
 title: '&ALY; Performance Tuning Guidelines for Mobile Devices'
 ---
 # Lumberyard Performance Tuning Guidelines for Mobile Devices<a name="ios-android-performance-guidelines"></a>

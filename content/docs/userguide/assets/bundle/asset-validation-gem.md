@@ -1,7 +1,6 @@
 ---
 description: ' Use the Asset Validation gem''s seed mode in &ALY; to ensure that your
   game assets are properly bundled. '
-slug: asset-bundler-asset-validation-gem
 title: Using the Asset Validation Gem to Verify Seeds
 ---
 # Using the Asset Validation Gem to Verify Seeds<a name="asset-bundler-asset-validation-gem"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use &lighting-tool; settings to create dawn and dusk effects for your
   &ALYlong; environment. '
-slug: sky-tod-params
 title: Setting Dawn and Dusk Effects
 ---
 # Setting Dawn and Dusk Effects<a name="sky-tod-params"></a>

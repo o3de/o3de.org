@@ -1,7 +1,6 @@
 ---
 description: ' Capture image frames in &ALYlong; with render output, a capture track,
   or console variables. '
-slug: cinematics-image-capture
 title: Capturing Image Frames
 ---
 # Capturing Image Frames<a name="cinematics-image-capture"></a>

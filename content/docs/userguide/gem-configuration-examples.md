@@ -1,6 +1,5 @@
 ---
 description: ' See gem.json file and wscript examples in &ALYlong;. '
-slug: gem-configuration-examples
 title: Gem Configuration Examples
 ---
 # Gem Configuration Examples<a name="gem-configuration-examples"></a>

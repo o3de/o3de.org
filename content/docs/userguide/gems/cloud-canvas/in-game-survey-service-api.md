@@ -1,6 +1,5 @@
 ---
 description: ' Learn to use the &cloud; In-Game Survey Cloud Gem API in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-in-game-survey-service-api
 title: In-Game Survey Cloud Gem Service API Reference
 ---
 # In\-Game Survey Cloud Gem Service API Reference<a name="cloud-canvas-cloud-gem-in-game-survey-service-api"></a>

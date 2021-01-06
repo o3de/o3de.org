@@ -1,7 +1,6 @@
 ---
 description: ' Debug your iOS application using Xcode and &ALY; source code. Troubleshoot
   the various steps to build assets, shaders, and your iOS application. '
-slug: ios-debugging-troubleshooting
 title: iOS Debugging and Troubleshooting
 ---
 # iOS Debugging and Troubleshooting<a name="ios-debugging-troubleshooting"></a>

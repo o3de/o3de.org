@@ -1,6 +1,5 @@
 ---
 description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
-slug: nvidia-blast-intro
 title: Simulated destruction with NVIDIA Blast
 ---
 # Simulated destruction with NVIDIA Blast<a name="nvidia-blast-intro"></a>

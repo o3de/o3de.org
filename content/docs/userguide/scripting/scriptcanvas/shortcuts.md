@@ -1,7 +1,6 @@
 ---
 description: ' Learn keyboard and mouse shortcuts for the &script-canvas; editor in
   &ALYlong;. '
-slug: script-canvas-shortcuts
 title: '&script-canvas; Editor Shortcuts'
 ---
 # Script Canvas Editor Shortcuts<a name="script-canvas-shortcuts"></a>

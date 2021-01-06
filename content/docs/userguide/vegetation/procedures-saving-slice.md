@@ -1,6 +1,5 @@
 ---
 description: null
-slug: dynamic-vegetation-procedures-saving-slice
 title: Saving the Vegetation Area as a Slice
 ---
 # Saving the Vegetation Area as a Slice<a name="dynamic-vegetation-procedures-saving-slice"></a>

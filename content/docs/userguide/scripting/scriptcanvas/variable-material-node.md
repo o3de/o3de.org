@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; &script-canvas; editor to create a material variable
   node. '
-slug: script-canvas-variable-material-node
 title: Material Variables
 ---
 # Material Variables<a name="script-canvas-variable-material-node"></a>

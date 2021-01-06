@@ -1,6 +1,5 @@
 ---
 description: ' &ALYlong;''s &ui-canvas-editor; . '
-slug: ui-editor-components-transform
 title: Transform2D Component
 ---
 # Transform2D Component<a name="ui-editor-components-transform"></a>

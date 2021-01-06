@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s Animation Editor''s Node Pane, Track Editor, and Curve
   Editor to edit animation sequences. '
-slug: ui-animation-editing
 title: Editing Animation Data
 ---
 # Editing Animation Data<a name="ui-animation-editing"></a>

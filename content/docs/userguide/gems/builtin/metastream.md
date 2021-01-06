@@ -1,7 +1,6 @@
 ---
 description: ' Use the Twitch Metastream feature to customize game streams with overlays
   of statistics and events for &ALYlong;. '
-slug: gems-system-gem-metastream
 title: Metastream Gem
 ---
 # Metastream Gem<a name="gems-system-gem-metastream"></a>

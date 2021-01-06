@@ -1,7 +1,6 @@
 ---
 description: ' See the following full screen effect nodes in the &trackview-editor;
   in &ALYlong;. '
-slug: cinematics-track-view-nodes-full-screen-intro
 title: Full Screen Effect Nodes
 ---
 # Full Screen Effect Nodes<a name="cinematics-track-view-nodes-full-screen-intro"></a>

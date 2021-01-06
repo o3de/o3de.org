@@ -1,6 +1,5 @@
 ---
 description: ' See the following &cryaction; nodes in &ALYlong;. '
-slug: ai-scripting-mbt-nodes-cryaction
 title: '&cryaction; Nodes'
 ---
 # CryAction Nodes<a name="ai-scripting-mbt-nodes-cryaction"></a>

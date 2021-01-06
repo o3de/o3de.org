@@ -1,7 +1,6 @@
 ---
 description: Use the color picker to apply a color tint and alpha to your particles
   in &ALYlong;'s &particle-editor;. Save palette libraries to share.
-slug: particle-editor-color-picker
 title: Using the Color Picker
 ---
 # Using the Color Picker<a name="particle-editor-color-picker"></a>

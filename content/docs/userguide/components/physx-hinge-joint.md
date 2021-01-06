@@ -1,6 +1,5 @@
 ---
 description: ' Lean to use the &ALYlong; PhysX Hinge Joint component. '
-slug: component-physx-hinge-joint
 title: PhysX Hinge Joint component
 ---
 # PhysX Hinge Joint component<a name="component-physx-hinge-joint"></a>

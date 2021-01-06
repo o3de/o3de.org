@@ -1,7 +1,6 @@
 ---
 description: ' Use the Clone material node in the &script-canvas; editor in &ALYlong;
   to create a copy of a material file. '
-slug: material-clone-node
 title: Clone
 ---
 # Clone<a name="material-clone-node"></a>

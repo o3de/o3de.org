@@ -1,6 +1,5 @@
 ---
 description: ' Create realistic wind effects in your &ALY; level environment. '
-slug: weather-wind-intro
 title: Adding Wind Effects
 ---
 # Adding Wind Effects<a name="weather-wind-intro"></a>

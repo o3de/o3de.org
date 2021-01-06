@@ -1,7 +1,6 @@
 ---
 description: ' Create a color chart texture file to apply color grading changes to
   your game in &ALYlong;. '
-slug: creating-a-color-chart-for-lumberyard
 title: Creating a Color Chart
 ---
 # Creating a Color Chart<a name="creating-a-color-chart-for-lumberyard"></a>

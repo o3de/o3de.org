@@ -1,7 +1,6 @@
 ---
 description: ' Use the behavior context in &ALYlong; to make runtime code accessible
   to scripting languages like Lua or scripting environments like &ALY;''s &script-canvas;. '
-slug: component-entity-system-reflection-behavior-context
 title: Behavior Context
 ---
 # Behavior Context<a name="component-entity-system-reflection-behavior-context"></a>

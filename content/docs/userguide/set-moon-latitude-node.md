@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Moon Latitude node in the &ALYlong; &script-canvas; editor
   to set the moon latitude. '
-slug: set-moon-latitude-node
 title: Set Moon Latitude
 ---
 # Set Moon Latitude<a name="set-moon-latitude-node"></a>

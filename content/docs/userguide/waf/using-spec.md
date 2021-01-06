@@ -1,7 +1,6 @@
 ---
 description: ' Use a Waf spec system template to create Visual Studio solutions for
   your &ALYlong; game. '
-slug: waf-using-spec
 title: Adding a Spec
 ---
 # Adding a Spec<a name="waf-using-spec"></a>

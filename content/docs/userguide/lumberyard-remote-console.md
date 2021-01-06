@@ -1,7 +1,6 @@
 ---
 description: ' Use console commands to modify and configure the &ALYlong; runtime
   application. '
-slug: lumberyard-remote-console
 title: '&remote-console;'
 ---
 # Universal Remote Console<a name="lumberyard-remote-console"></a>

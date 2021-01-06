@@ -1,7 +1,6 @@
 ---
 description: ' Pin an entity''s inspector to have multiple entities available to edit
   in &ALYlong;. '
-slug: component-entity-inspector-pin
 title: Pinning an Entity's Inspector
 ---
 # Pinning an Entity's Inspector<a name="component-entity-inspector-pin"></a>

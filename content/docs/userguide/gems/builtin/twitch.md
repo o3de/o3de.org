@@ -1,7 +1,6 @@
 ---
 description: ' Become an authorized Twitch development partner to use the Twitch Gem
   in &ALYlong;. '
-slug: gems-system-gem-twitch
 title: Twitch Gem
 ---
 # Twitch Gem<a name="gems-system-gem-twitch"></a>

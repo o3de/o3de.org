@@ -1,6 +1,5 @@
 ---
 description: ' Revert overrides in &ly-editor;. '
-slug: component-slice-override
 title: Reverting and Forcing Overrides
 ---
 # Reverting and Forcing Overrides<a name="component-slice-override"></a>

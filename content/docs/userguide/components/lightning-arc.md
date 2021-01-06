@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Lightning Arc component to add lightning arc effects
   to your game. '
-slug: component-lightning-arc
 title: Lighting Arc
 ---
 # Lighting Arc<a name="component-lightning-arc"></a>

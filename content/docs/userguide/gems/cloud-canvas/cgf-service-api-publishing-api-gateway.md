@@ -1,7 +1,6 @@
 ---
 description: ' Learn how you can publish your API so that other programmers can use
   it. '
-slug: cloud-canvas-cgf-service-api-publishing-api-gateway
 title: Publishing Your API
 ---
 # Publishing Your API<a name="cloud-canvas-cgf-service-api-publishing-api-gateway"></a>

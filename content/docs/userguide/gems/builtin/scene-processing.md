@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s Scene Processing gem to specify the default settings
   for processing scene files like .fbx for your games. '
-slug: gems-system-gem-scene-processing
 title: Scene Processing Gem
 ---
 # Scene Processing Gem<a name="gems-system-gem-scene-processing"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Projector Light component on an entity to project a light in
   &ALY;. '
-slug: component-projector-light
 title: Projector Light
 ---
 # Projector Light<a name="component-projector-light"></a>

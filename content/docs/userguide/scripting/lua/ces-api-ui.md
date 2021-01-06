@@ -1,7 +1,6 @@
 ---
 description: ' Legacy script UI functionality in &ALYlong; using the Lua scripting
   language. '
-slug: lua-scripting-ces-api-ui
 title: UI Lua Reference
 ---
 # UI Lua Reference<a name="lua-scripting-ces-api-ui"></a>

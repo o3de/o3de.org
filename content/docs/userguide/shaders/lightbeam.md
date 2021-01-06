@@ -1,7 +1,6 @@
 ---
 description: ' Enable the LightBeam shader to create fog-like conditions for light
   beams in &ALYlong;. '
-slug: shader-ref-lightbeam
 title: LightBeam Shader
 ---
 # LightBeam Shader<a name="shader-ref-lightbeam"></a>

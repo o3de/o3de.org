@@ -1,6 +1,5 @@
 ---
 description: ' Set track view sequence properties in the &trackview-editor; in &ALYlong;. '
-slug: cinematics-sequence-props
 title: Setting Sequence Properties
 ---
 # Setting Sequence Properties<a name="cinematics-sequence-props"></a>

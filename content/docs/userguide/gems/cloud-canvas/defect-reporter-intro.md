@@ -1,7 +1,6 @@
 ---
 description: ' Gather defect reports from within your &ALYlong; game and manage them
   in the &cgp;. '
-slug: cloud-canvas-cloud-gem-defect-reporter-intro
 title: Defect Reporter Cloud Gem
 ---
 # Defect Reporter Cloud Gem<a name="cloud-canvas-cloud-gem-defect-reporter-intro"></a>

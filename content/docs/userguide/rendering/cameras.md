@@ -1,7 +1,6 @@
 ---
 description: ' Use rendering cameras and depth-of-field to define custom views and
   realistic focus in your &ALYlong; level. '
-slug: rendering-graphics-cameras
 title: Working with camera screen effects
 ---
 # Working with camera screen effects<a name="rendering-graphics-cameras"></a>

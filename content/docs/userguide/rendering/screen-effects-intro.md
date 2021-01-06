@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s physically-based rendering shaders to create screen
   effects for your game project. '
-slug: rendering-graphics-screen-effects-intro
 title: Create screen effects
 ---
 # Create screen effects<a name="rendering-graphics-screen-effects-intro"></a>

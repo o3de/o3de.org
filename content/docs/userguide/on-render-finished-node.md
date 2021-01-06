@@ -1,7 +1,6 @@
 ---
 description: ' Use the On Render Finished node in the &ALYlong; &script-canvas; editor
   to trigger when a procedural material update finishes. '
-slug: on-render-finished-node
 title: On Render Finished
 ---
 # On Render Finished<a name="on-render-finished-node"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use direct access to EBus handlers to reduce the amount of EBus traffic. '
-slug: ebus-handlers-direct-access
 title: Direct Access to EBus Handlers
 ---
 # Direct Access to EBus Handlers<a name="ebus-handlers-direct-access"></a>

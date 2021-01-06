@@ -1,7 +1,6 @@
 ---
 description: ' Learn how &ALYlong;''s Cloud Gem Framework swagger extension object
   facilitates the use of &ABP; for use with &LAMlong;. '
-slug: cloud-canvas-cgf-service-api-cgf-extension-object
 title: Cloud Gem Framework Extension Object
 ---
 # Cloud Gem Framework Extension Object<a name="cloud-canvas-cgf-service-api-cgf-extension-object"></a>

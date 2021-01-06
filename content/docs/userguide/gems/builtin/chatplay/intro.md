@@ -1,7 +1,6 @@
 ---
 description: ' Get an overview of the &chatplay; system for interacting with Twitch
   viewers. '
-slug: chatplay-intro
 title: '&chatplay; System'
 ---
 # Twitch ChatPlay System<a name="chatplay-intro"></a>

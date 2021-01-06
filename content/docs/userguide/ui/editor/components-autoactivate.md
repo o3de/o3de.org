@@ -1,7 +1,6 @@
 ---
 description: ' Enable Auto Activate for interactive elements in &ALY; &ui-canvas-editor;
   to set an element to activate automatically. '
-slug: ui-editor-components-autoactivate
 title: Auto Activate
 ---
 # Auto Activate<a name="ui-editor-components-autoactivate"></a>

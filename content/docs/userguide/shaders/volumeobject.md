@@ -1,6 +1,5 @@
 ---
 description: null
-slug: shader-ref-volumeobject
 title: VolumeObject Shader
 ---
 # VolumeObject Shader<a name="shader-ref-volumeobject"></a>

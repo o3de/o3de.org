@@ -1,7 +1,6 @@
 ---
 description: ' Use procedural material nodes in the &ALYlong; &script-canvas; editor
   for scripting. '
-slug: script-canvas-procedural-material-nodes
 title: Procedural Material Nodes
 ---
 # Procedural Material Nodes<a name="script-canvas-procedural-material-nodes"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Deploy your mobile apps to &ATPlong; for testing from &ALYlong;. '
-slug: ios-android-deployment-tool-device-farm-integration
 title: Using &ATPlong; in &ly-editor;
 ---
 # Using AWS Device Farm in Lumberyard Editor<a name="ios-android-deployment-tool-device-farm-integration"></a>

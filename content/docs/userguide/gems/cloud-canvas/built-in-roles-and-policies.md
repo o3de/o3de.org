@@ -1,7 +1,6 @@
 ---
 description: ' Use &cloud; built-in roles and policies to manage resource and deployment
   permissions. '
-slug: cloud-canvas-built-in-roles-and-policies
 title: '&cloud; Built-In Roles and Policies'
 ---
 # Cloud Canvas Built\-In Roles and Policies<a name="cloud-canvas-built-in-roles-and-policies"></a>

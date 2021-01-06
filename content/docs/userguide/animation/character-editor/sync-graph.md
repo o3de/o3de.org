@@ -1,7 +1,6 @@
 ---
 description: ' Use synchronized animation graphs to synchronize animation between
   actors in &ALYlong;. '
-slug: char-animation-editor-sync-graph
 title: 'Synchronizing Animation Graphs: Example'
 ---
 # Synchronizing Animation Graphs: Example<a name="char-animation-editor-sync-graph"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Load Definition File node in the &ALYlong; &script-canvas;
   editor to load the time of day preset file and update the sky. '
-slug: load-definition-file
 title: Load Definition File
 ---
 # Load Definition File<a name="load-definition-file"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Python Asset Builder gem to create custom asset builders for
   your &ALYlong; project. '
-slug: python-asset-builder
 title: Python Asset Builder gem
 ---
 # Python Asset Builder gem<a name="python-asset-builder"></a>

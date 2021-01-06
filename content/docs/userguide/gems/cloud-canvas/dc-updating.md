@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to update dynamic content and use dynamic content versioning
   for your &ALYlong; dynamic content packages. '
-slug: cloud-canvas-cloud-gem-dc-updating
 title: Updating Dynamic Content
 ---
 # Updating Dynamic Content<a name="cloud-canvas-cloud-gem-dc-updating"></a>

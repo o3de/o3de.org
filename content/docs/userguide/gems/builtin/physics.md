@@ -1,7 +1,6 @@
 ---
 description: ' Use the Physics Entities Gem to simulate physical events or to physicalize
   objects in your &ALY; game project. '
-slug: gems-system-gem-physics
 title: Physics Entities Gem
 ---
 # Physics Entities Gem<a name="gems-system-gem-physics"></a>

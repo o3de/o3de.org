@@ -1,6 +1,5 @@
 ---
 description: ' Add Qt 5 content to the Waf build system in &ALYlong;. '
-slug: waf-qt-content
 title: Adding Qt 5 Content to Waf
 ---
 # Adding Qt 5 Content to Waf<a name="waf-qt-content"></a>

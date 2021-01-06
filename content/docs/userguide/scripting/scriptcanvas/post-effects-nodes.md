@@ -1,6 +1,5 @@
 ---
 description: ' Configure post effects in the &ALYlong; &script-canvas; editor. '
-slug: script-canvas-post-effects-nodes
 title: Post Effects Nodes
 ---
 # Post Effects Nodes<a name="script-canvas-post-effects-nodes"></a>

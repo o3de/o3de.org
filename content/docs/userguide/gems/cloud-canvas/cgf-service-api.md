@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to program cloud gems by using the Cloud Gem Framework Service
   API. '
-slug: cloud-canvas-cgf-service-api
 title: Cloud Gem Framework Service API
 ---
 # Cloud Gem Framework Service API<a name="cloud-canvas-cgf-service-api"></a>

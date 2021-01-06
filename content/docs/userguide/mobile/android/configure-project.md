@@ -1,7 +1,6 @@
 ---
 description: ' Configure your &ALYlong; project to compile assets for Android and
   correctly declare which device resources it uses. '
-slug: android-configure-project
 title: Configure &ALY; projects for Android
 ---
 # Configure Lumberyard projects for Android<a name="android-configure-project"></a>

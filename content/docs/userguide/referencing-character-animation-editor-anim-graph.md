@@ -1,7 +1,6 @@
 ---
 description: ' Reference external anim graphs to streamline node-based animation in
   &ALYlong;. '
-slug: referencing-character-animation-editor-anim-graph
 title: Referencing External Anim Graphs
 ---
 # Referencing External Anim Graphs<a name="referencing-character-animation-editor-anim-graph"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the platforms supported by &ALYlong; for developing games
   and simulations. '
-slug: lumberyard-supported-platforms
 title: Supported platforms
 ---
 # Supported platforms<a name="lumberyard-supported-platforms"></a>

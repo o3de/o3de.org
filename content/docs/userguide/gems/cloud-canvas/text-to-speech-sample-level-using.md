@@ -1,6 +1,5 @@
 ---
 description: ' Enable the &ALYlong; character Rin to speak sample text that you type. '
-slug: cloud-canvas-cloud-gem-text-to-speech-sample-level-using
 title: Using the Text-to-Speech Sample Level
 ---
 # Using the Text\-to\-Speech Sample Level<a name="cloud-canvas-cloud-gem-text-to-speech-sample-level-using"></a>

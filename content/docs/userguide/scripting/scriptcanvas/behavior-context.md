@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the relationship between &script-canvas; and the behavior
   context in &ALYlong;. '
-slug: script-canvas-behavior-context
 title: '&script-canvas; and the Behavior Context'
 ---
 # Script Canvas and the Behavior Context<a name="script-canvas-behavior-context"></a>

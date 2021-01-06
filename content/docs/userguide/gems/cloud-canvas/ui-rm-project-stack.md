@@ -1,7 +1,6 @@
 ---
 description: ' Upload resources to and view the status of your &ALYlong; project stack
   in &AWS;. '
-slug: cloud-canvas-ui-rm-project-stack
 title: 'Working with Project Stacks '
 ---
 # Working with Project Stacks<a name="cloud-canvas-ui-rm-project-stack"></a>

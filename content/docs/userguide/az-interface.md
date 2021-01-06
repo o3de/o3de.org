@@ -1,7 +1,6 @@
 ---
 description: ' Use the AZ::Interface&lt;T&gt; template class to create global message
   request buses for &ALYlong; game code. '
-slug: az-interface
 title: AZ::Interface&lt;T&gt;
 ---
 # AZ::Interface<T><a name="az-interface"></a>

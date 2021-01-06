@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Blend Two Additive node in &ALYlong; &animation-editor;
   to additively blend two input poses. '
-slug: animation-editor-blending-blendtwoadditive
 title: Blend Two Additive Node
 ---
 # Blend Two Additive Node<a name="animation-editor-blending-blendtwoadditive"></a>

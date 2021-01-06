@@ -1,6 +1,5 @@
 ---
 description: ' Set up your &ALYlong; environment to build your project for Android. '
-slug: android-setting-up-environment
 title: Set up your environment to develop for Android with &ALY;
 ---
 # Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>

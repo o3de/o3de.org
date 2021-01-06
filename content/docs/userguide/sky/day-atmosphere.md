@@ -1,7 +1,6 @@
 ---
 description: ' Use sun and light-scattering settings to create dynamic day time sky
   and atmospheric effects in &ALY;. '
-slug: sky-day-atmosphere
 title: Setting Daytime Atmospheric Effects
 ---
 # Setting Daytime Atmospheric Effects<a name="sky-day-atmosphere"></a>

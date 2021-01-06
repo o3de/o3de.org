@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the resources in the Cloud Gem Framework in &ALYlong;. '
-slug: cloud-canvas-cgf-service-api-resources
 title: Resources
 ---
 # Resources<a name="cloud-canvas-cgf-service-api-resources"></a>

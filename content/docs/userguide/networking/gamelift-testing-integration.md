@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use &AGS; Local to test your &AGS; integration in your
   &ALYlong; game projects. '
-slug: network-gamelift-testing-integration
 title: Testing your &AGSlong; Integration
 ---
 # Testing your Amazon GameLift Integration<a name="network-gamelift-testing-integration"></a>

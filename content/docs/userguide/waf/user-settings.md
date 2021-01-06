@@ -1,7 +1,6 @@
 ---
 description: ' Add new user settings and define utility functions for your &ALYlong;
   Waf configuration. '
-slug: waf-user-settings
 title: Adding User Settings to Waf
 ---
 # Adding User Settings to Waf<a name="waf-user-settings"></a>

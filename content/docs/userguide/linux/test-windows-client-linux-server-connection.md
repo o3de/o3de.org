@@ -1,7 +1,6 @@
 ---
 description: ' Test the connection between the Windows client and the Linux server
   for &ALYlong;. '
-slug: linux-test-windows-client-linux-server-connection
 title: Testing the Windows Client to Linux Server Connection
 ---
 # Testing the Windows Client to Linux Server Connection<a name="linux-test-windows-client-linux-server-connection"></a>

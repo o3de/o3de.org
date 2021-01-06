@@ -1,6 +1,5 @@
 ---
 description: ' Learn about using scripts in &ALYlong; to synchronize game state. '
-slug: network-synchronizing-game-state-using-scripts
 title: Synchronizing Game State Using Scripts
 ---
 # Synchronizing Game State Using Scripts<a name="network-synchronizing-game-state-using-scripts"></a>

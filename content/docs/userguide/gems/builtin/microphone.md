@@ -1,7 +1,6 @@
 ---
 description: ' The &ALYlong; Microphone Gem is a dependency for the Cloud Gem Speech
   Recognition Gem. '
-slug: gems-system-gem-microphone
 title: Microphone Gem
 ---
 # Microphone Gem<a name="gems-system-gem-microphone"></a>

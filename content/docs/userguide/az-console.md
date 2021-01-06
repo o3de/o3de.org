@@ -1,7 +1,6 @@
 ---
 description: ' Use AZ::Console to set console variables and functors for your &ALY;
   game. '
-slug: az-console
 title: AZ::Console
 ---
 # AZ::Console<a name="az-console"></a>

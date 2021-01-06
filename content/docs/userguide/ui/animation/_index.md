@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s UI Animation Editor to animate elements in your game''s
   UI. '
-slug: ui-animation
 title: UI Animation Editor
 ---
 # UI Animation Editor<a name="ui-animation"></a>

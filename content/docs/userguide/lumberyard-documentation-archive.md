@@ -1,6 +1,5 @@
 ---
 description: ' PDF files are available for earlier versions of &ALYlong; documentation. '
-slug: lumberyard-documentation-archive
 title: Documentation Archive
 ---
 # Documentation Archive<a name="lumberyard-documentation-archive"></a>

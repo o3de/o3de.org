@@ -1,7 +1,6 @@
 ---
 description: ' Get a conceptual introduction to the architecture of the &ALYlong;
   Multiplayer sample game. '
-slug: sample-project-multiplayer-enhanced-architecture
 title: Multiplayer Sample Gameplay Architecture
 ---
 # Multiplayer Sample Gameplay Architecture<a name="sample-project-multiplayer-enhanced-architecture"></a>

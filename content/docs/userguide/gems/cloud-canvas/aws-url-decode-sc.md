@@ -1,6 +1,5 @@
 ---
 description: ' Use &script-canvas; to decode URLs in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-aws-url-decode-sc
 title: Decoding a URL with &script-canvas;
 ---
 # Decoding a URL with Script Canvas<a name="cloud-canvas-cloud-gem-aws-url-decode-sc"></a>

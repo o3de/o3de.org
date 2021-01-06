@@ -1,6 +1,5 @@
 ---
 description: ' Apply silhouette parallax occlusion mapping (SPOM) in &ALYlong;. '
-slug: mat-maps-parallax-spom
 title: Applying Silhouette Parallax Occlusion Mapping (SPOM)
 ---
 # Applying Silhouette Parallax Occlusion Mapping \(SPOM\)<a name="mat-maps-parallax-spom"></a>

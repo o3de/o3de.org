@@ -1,6 +1,5 @@
 ---
 description: ' Expose C++ code for scripting in &ALYlong;. '
-slug: component-entity-system-reflection-intro
 title: Reflecting &ALY; Classes, Methods, and EBus Interfaces
 ---
 # Reflecting Lumberyard Classes, Methods, and EBus Interfaces<a name="component-entity-system-reflection-intro"></a>

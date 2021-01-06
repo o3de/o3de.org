@@ -1,7 +1,6 @@
 ---
 description: ' Use the following &ALYlong; sample projects and levels to start building
   your game: Cloud Gem Samples, Multiplayer Sample, Samples Project, and Starter Game. '
-slug: sample-projects-levels-intro
 title: Using &ALY; sample projects and levels
 ---
 # Using Lumberyard sample projects and levels<a name="sample-projects-levels-intro"></a>

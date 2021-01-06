@@ -1,7 +1,6 @@
 ---
 description: ' Use &CFN; template parameters to customize your &cloud; Resource Manager
   resource groups in &ALYlong;. '
-slug: cloud-canvas-resource-group-parameters
 title: Resource Manager Resource Group Parameters
 ---
 # Resource Manager Resource Group Parameters<a name="cloud-canvas-resource-group-parameters"></a>

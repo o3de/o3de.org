@@ -1,7 +1,6 @@
 ---
 description: ' Use environment nodes in the &ALYlong; &script-canvas; editor to configure
   sky effects. '
-slug: script-canvas-environment-nodes
 title: Environment Nodes
 ---
 # Environment Nodes<a name="script-canvas-environment-nodes"></a>

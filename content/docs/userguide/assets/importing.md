@@ -1,7 +1,6 @@
 ---
 description: ' You can manually import your asset files into &ALYlong; or use the
   Import option in the editor. '
-slug: asset-pipeline-importing
 title: Importing Assets into &ALY;
 ---
 # Importing Assets into Lumberyard<a name="asset-pipeline-importing"></a>

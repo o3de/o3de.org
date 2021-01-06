@@ -1,7 +1,6 @@
 ---
 description: ' Manage the slot types for the &LEX; bots in your game from &ALYlong;''s
   Speech Recognition Cloud Gem Portal. '
-slug: cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types
 title: Managing Slot Types
 ---
 # Managing Slot Types<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types"></a>

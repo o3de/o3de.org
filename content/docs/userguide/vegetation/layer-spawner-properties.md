@@ -1,7 +1,6 @@
 ---
 description: Use the Vegetation Layer Spawner component to create vegetation entities
   in &ALYlong;.
-slug: vegetation-layer-spawner-properties
 title: Vegetation Layer Spawner Properties
 ---
 # Vegetation Layer Spawner Properties<a name="vegetation-layer-spawner-properties"></a>

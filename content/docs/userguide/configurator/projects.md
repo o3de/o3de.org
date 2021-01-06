@@ -1,7 +1,6 @@
 ---
 description: ' Create a game project in the &ALYlong; &project-configurator; or from
   a command line. '
-slug: configurator-projects
 title: Creating and Switching Game Projects
 ---
 # Creating and Switching Game Projects<a name="configurator-projects"></a>

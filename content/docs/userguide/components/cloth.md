@@ -1,6 +1,5 @@
 ---
 description: ' The &ALYlong; Cloth component. '
-slug: component-cloth
 title: Cloth component
 ---
 # Cloth component<a name="component-cloth"></a>

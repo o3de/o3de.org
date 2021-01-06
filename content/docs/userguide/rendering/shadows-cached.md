@@ -1,7 +1,6 @@
 ---
 description: ' Control the degree to which &ALYlong; caches shadows to optimize performance
   and memory use. '
-slug: rendering-graphics-shadows-cached
 title: Cached Shadows
 ---
 # Cached Shadows<a name="rendering-graphics-shadows-cached"></a>

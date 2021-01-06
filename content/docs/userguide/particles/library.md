@@ -1,6 +1,5 @@
 ---
 description: ' Add and manage particle libraries with the &ALY; &particle-editor;. '
-slug: particle-library
 title: Managing Particle Libraries
 ---
 # Managing Particle Libraries<a name="particle-library"></a>

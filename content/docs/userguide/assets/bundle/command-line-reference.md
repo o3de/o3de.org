@@ -2,7 +2,6 @@
 description: ' Command reference for the &ALYlong; &asset-bundler; command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '
-slug: asset-bundler-command-line-reference
 title: '&ALY; &asset-bundler; Command-Line Tool Reference'
 ---
 # Lumberyard Asset Bundler Command\-Line Tool Reference<a name="asset-bundler-command-line-reference"></a>

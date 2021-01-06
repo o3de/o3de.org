@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Depth of Field node in the &ALYlong; &script-canvas;
   editor to configure the depth of field. '
-slug: enable-depth-of-field-node
 title: Enable Depth of Field
 ---
 # Enable Depth of Field<a name="enable-depth-of-field-node"></a>

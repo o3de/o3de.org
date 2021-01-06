@@ -1,6 +1,5 @@
 ---
 description: ' Use the Game Metrics cloud gem to collect and view player data in &ALYlong;. '
-slug: cloud-canvas-metrics-gem
 title: Game Metrics Cloud Gem
 ---
 # Game Metrics Cloud Gem<a name="cloud-canvas-metrics-gem"></a>

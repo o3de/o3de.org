@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Visual Artifacts node in the &ALYlong; &script-canvas;
   editor to disable visual artifact effects. '
-slug: disable-visual-artifacts-node
 title: Disable Visual Artifacts
 ---
 # Disable Visual Artifacts<a name="disable-visual-artifacts-node"></a>

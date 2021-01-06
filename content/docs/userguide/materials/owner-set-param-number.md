@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; editor
   to specify a material''s numerical parameter for the specified entity. '
-slug: material-owner-set-param-number
 title: Set Param Number
 ---
 # Set Param Number<a name="material-owner-set-param-number"></a>

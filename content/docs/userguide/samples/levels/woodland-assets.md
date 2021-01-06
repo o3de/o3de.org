@@ -1,7 +1,6 @@
 ---
 description: ' Use the Woodland asset package to create a forest scene or add vegetation
   and natural features to your &ALY; game project. '
-slug: sample-level-woodland-assets
 title: Woodland Asset Package &endash; Legacy
 ---
 # Woodland Asset Package – Legacy<a name="sample-level-woodland-assets"></a>

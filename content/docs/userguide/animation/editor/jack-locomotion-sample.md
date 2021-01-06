@@ -2,7 +2,6 @@
 description: ' Use the Simple Jack Locomotion sample level to learn how the &ALY;
   &animation-editor; uses actors, motion sets, and animation graphs to control character
   behavior. '
-slug: animation-editor-jack-locomotion-sample
 title: Simple_JackLocomotion Sample
 ---
 # Simple\_JackLocomotion Sample<a name="animation-editor-jack-locomotion-sample"></a>

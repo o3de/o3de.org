@@ -1,7 +1,6 @@
 ---
 description: ' Use a text input component to make an element offer player input in
   &ALY;''s &ui-canvas-editor;. '
-slug: ui-editor-components-textinput
 title: TextInput
 ---
 # TextInput<a name="ui-editor-components-textinput"></a>

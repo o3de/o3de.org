@@ -1,6 +1,5 @@
 ---
 description: null
-slug: script-canvas-concepts-and-terms
 title: '&script-canvas; Concepts and Terms'
 ---
 # Script Canvas Concepts and Terms<a name="script-canvas-concepts-and-terms"></a>

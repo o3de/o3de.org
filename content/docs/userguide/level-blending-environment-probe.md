@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Environment Probe components to blend visual affects
   for your game. '
-slug: level-blending-environment-probe
 title: Blending Environment Probes
 ---
 # Blending Environment Probes<a name="level-blending-environment-probe"></a>

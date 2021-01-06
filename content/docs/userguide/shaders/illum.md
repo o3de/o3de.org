@@ -1,6 +1,5 @@
 ---
 description: ' Use the Illum shader to create a variety of effects in &ALYlong;. '
-slug: shader-ref-illum
 title: Illum Shader
 ---
 # Illum Shader<a name="shader-ref-illum"></a>

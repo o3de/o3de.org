@@ -1,6 +1,5 @@
 ---
 description: ' Use dynamic slices in &ALYlong;. '
-slug: dynamic-slices-what-is
 title: Working with Dynamic Slices
 ---
 # Working with Dynamic Slices<a name="dynamic-slices-what-is"></a>

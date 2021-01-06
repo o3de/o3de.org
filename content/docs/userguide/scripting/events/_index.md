@@ -1,7 +1,6 @@
 ---
 description: ' Use script events to enable entities to communicate with each other
   in &ALYlong;. '
-slug: script-events
 title: Using Script Events
 ---
 # Using Script Events<a name="script-events"></a>

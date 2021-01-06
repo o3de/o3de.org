@@ -1,6 +1,5 @@
 ---
 description: ' See the following texture map types in &ALYlong;. '
-slug: mat-texture-types
 title: Texture Map Types
 ---
 # Texture Map Types<a name="mat-texture-types"></a>

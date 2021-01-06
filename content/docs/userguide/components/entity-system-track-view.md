@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to expose custom components and their properties to the &trackview-editor;
   for animation in &ALYlong;. '
-slug: component-entity-system-track-view
 title: Exposing Custom Components to Track View for Animation
 ---
 # Exposing Custom Components to Track View for Animation<a name="component-entity-system-track-view"></a>

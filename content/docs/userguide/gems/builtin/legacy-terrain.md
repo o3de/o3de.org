@@ -1,6 +1,5 @@
 ---
 description: ' Use &ALYlong;''s Legacy Terrain &gem; to add terrain to your level. '
-slug: gems-system-gem-legacy-terrain
 title: Legacy Terrain &gem;
 ---
 # Legacy Terrain Gem<a name="gems-system-gem-legacy-terrain"></a>
