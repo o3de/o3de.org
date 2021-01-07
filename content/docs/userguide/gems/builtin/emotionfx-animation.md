@@ -17,7 +17,7 @@ The character animation system includes tools for building the following:
 
 The **Animation Editor** is compatible with `.fbx` files and converts these files to the `.actor` and `.motion` formats\.
 
-For more information, see [Create and animate characters](char-intro.md)\.
+For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
 
 Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](configurator-projects.md#creating-a-game-project)\.
 

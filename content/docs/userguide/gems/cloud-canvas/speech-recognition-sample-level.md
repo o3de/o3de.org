@@ -12,7 +12,7 @@ To prepare the sample level, you use the Cloud Gem Portal to import the sample A
 
 **To prepare the sample Level**
 
-1. In the Lumberyard Project Configurator, select the **CloudGemSamples** project as the default project\. If you want to use a different project, ensure that the **Cloud Gem Speech Recognition** and **Cloud Gem Text\-to\-Speech** gems are selected, and then [build your project](game-build-intro.md)\.
+1. In the Lumberyard Project Configurator, select the **CloudGemSamples** project as the default project\. If you want to use a different project, ensure that the **Cloud Gem Speech Recognition** and **Cloud Gem Text\-to\-Speech** gems are selected, and then [build your project](/docs/userguide/game-build-intro.md)\.
 
 1. In Lumberyard Editor, choose **AWS**, **Cloud Canvas**, **Resource Manager**\.
 

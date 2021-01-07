@@ -91,7 +91,7 @@ You can change the general Lumberyard Editor settings and file settings\.
 |  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as \.fbx files\. | 
 |  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode\.  | 
 |  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in Lumberyard Editor\.  | 
-|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](working-with-viewport-interaction-model.md)\.  | 
+|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/userguide/working-with-viewport-interaction-model.md)\.  | 
 
 
 **Messaging**  

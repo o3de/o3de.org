@@ -116,7 +116,7 @@ For in\-game debugging, you use the Script Canvas debugger to connect to a runni
 
 **To debug a running game**
 
-1. Run `GridHub.exe` from the `Bin64vcxxx` directory that corresponds to the version of Visual Studio that you are using \(for example, `lumberyard_version\dev\Bin64vc141\GridHub.exe`\)\. GridHub is the network environment that provides connectivity between Lumberyard and its tools\. For more information, see [Using GridHub](gridhub-intro.md)\.
+1. Run `GridHub.exe` from the `Bin64vcxxx` directory that corresponds to the version of Visual Studio that you are using \(for example, `lumberyard_version\dev\Bin64vc141\GridHub.exe`\)\. GridHub is the network environment that provides connectivity between Lumberyard and its tools\. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
 **Note**  
 GridHub must be active for non\-editor targets to appear in the **Live** tab\.
 

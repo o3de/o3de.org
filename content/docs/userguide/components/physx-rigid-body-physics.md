@@ -109,7 +109,7 @@ A PhysX entity that is dynamic can move and collide with other entities\.
 
 **To create a dynamic PhysX entity**
 
-1. Create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. Create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. In the **Entity Inspector**, choose **Add Component** and then select a **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 

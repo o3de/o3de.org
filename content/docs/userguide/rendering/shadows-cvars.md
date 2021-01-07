@@ -135,4 +135,4 @@ You can use the Lumberyard Editor console window to search for additional shadow
 
 1. To learn more about a console variable, pause your pointer on the variable name\.
 
-For more information about the using the Lumberyard Editor console, see [Using the Console Window](console-intro.md)\.
+For more information about the using the Lumberyard Editor console, see [Using the Console Window](/docs/userguide/console-intro.md)\.

@@ -21,7 +21,7 @@ Each gem package can contain the following:
 + [Gem Code](#gem-code-directory)
 + [Gem List File – gems\.json](#gems-system-gem-list-file)
 + [Accessing Gems in Code](#accessing-gems-in-code)
-+ [Gem Configuration Examples](gem-configuration-examples.md)
++ [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)
 
 ## Gem Assets<a name="gem-assets-directory"></a>
 
@@ -148,7 +148,7 @@ Defines how other gems and game projects should link to this gem:
 
 ### Module Types<a name="gem-module-types"></a>
 
-Following are module types and how to define them\. For examples of gems with module types defined, see [Gem Configuration Examples](gem-configuration-examples.md)\.
+Following are module types and how to define them\. For examples of gems with module types defined, see [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)\.
 
 **GameModule**  
 The most basic type of module\. If you used gems before, your gems produce this type of module by default\. These modules are loaded by Lumberyard Setup Assistant and Lumberyard Editor\.  
@@ -161,7 +161,7 @@ Loaded by Lumberyard Editor\. If an `EditorModule` extends a `GameModule`, the `
 Module type that is useful when your gem requires helper code that is linked to all dependents of your gem, or when your gem provides only statically usable code\. All modules in all gems that require this gem have this `StaticLib` linked against it\.
 
 **Builder**  
-Used by Asset Processor for building assets\. For more information, see [Creating a Custom Asset Builder](asset-builder-custom.md)\.
+Used by Asset Processor for building assets\. For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
 ## Gem Code<a name="gem-code-directory"></a>
 

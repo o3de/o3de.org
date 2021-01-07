@@ -69,4 +69,4 @@ function GestureExample:OnDeactivate()
 end
 ```
 
-For more information, see [Input in Amazon Lumberyard](input-intro.md)\.
+For more information, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\.

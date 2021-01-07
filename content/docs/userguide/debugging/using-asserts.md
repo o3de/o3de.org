@@ -65,7 +65,7 @@ You can set the `sys_asserts` console variable at runtime in the console window\
 
 ## Setting the Assert Level for Mobile Devices<a name="debugging-using-asserts-mobile-devices"></a>
 
-When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](lumberyard-remote-console.md) to set the assert level in the command\-line window of the application\.
+When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md) to set the assert level in the command\-line window of the application\.
 
 ![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/userguide/debugging-using-asserts-3.png)
 

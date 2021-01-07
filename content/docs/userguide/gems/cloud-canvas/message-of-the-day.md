@@ -11,7 +11,7 @@ title: Message Of The Day Cloud Gem Portal
 + [Other Cloud Gems](#cloud-canvas-cloud-gem-message-of-the-day-other-cloud-gems)
 + [Testing the Message of the Day Sample Level](/docs/userguide/gems/cloud-canvas/mod-testing.md)
 + [Cloud Gem Message of the Day Implementation Details](/docs/userguide/gems/cloud-canvas/mod-details.md)
-+ [Cloud Gem Message of the Day API Calls](cloud-gem-mod-api.md)
++ [Cloud Gem Message of the Day API Calls](/docs/userguide/cloud-gem-mod-api.md)
 
 You can use the Message of the Day Cloud Gem to schedule messages that your game consumes\. You can customize your project's message of the day using the Cloud Gem Portal\.
 

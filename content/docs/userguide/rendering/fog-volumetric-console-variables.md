@@ -4,7 +4,7 @@ title: Console Variables for Volumetric Fog
 ---
 # Console Variables for Volumetric Fog<a name="rendering-graphics-fog-volumetric-console-variables"></a>
 
-You can specify the following console variables \(CVARs\) to enable volumetric fog effects\. For more information, see [Using the Console Window](console-intro.md)\.
+You can specify the following console variables \(CVARs\) to enable volumetric fog effects\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
 ****  

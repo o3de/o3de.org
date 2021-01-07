@@ -30,7 +30,7 @@ To update an existing cloud gem project, you must update the project's `gems.jso
    dev\Tools\LmbrSetup\Win\lmbr.exe projects populate-appdescriptors -projects <project-name>
    ```
 
-   For more information about `populate-appdescriptors`, see [Projects Commands](lmbr-exe-project.md) in the documentation for [Managing Game Projects with Lmbr\.exe](lmbr-exe.md)\.
+   For more information about `populate-appdescriptors`, see [Projects Commands](/docs/userguide/lmbr-exe-project.md) in the documentation for [Managing Game Projects with Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
 ### Update the Project's AWS Directory<a name="cloud-canvas-cgf-updating-projects-gems-update-projects-aws-directory"></a>
 

@@ -40,7 +40,7 @@ In the **File** menu, you can manage your game project such as opening and savin
 
 | File Menu Item | Description | 
 | --- | --- | 
-| New | Create a new level\. For more information, see [Creating a New Level](level-create.md)\. | 
+| New | Create a new level\. For more information, see [Creating a New Level](/docs/userguide/level-create.md)\. | 
 | Open | Switch to another level in your project\. | 
 | Open Recent | Open a recently opened level\. | 
 | Save | Update the level file with your changes\. | 
@@ -309,7 +309,7 @@ In the **Debugging** menu, you can reload scripts, textures, geometry, and terra
 
 ## Tools<a name="lumberyard-editor-menus-tools"></a>
 
-In the **Tools** menu, you can access Lumberyard Editor tools and plugins\. For more information, see [Lumberyard Editors and Tools](lumberyard-tools.md)\.
+In the **Tools** menu, you can access Lumberyard Editor tools and plugins\. For more information, see [Lumberyard Editors and Tools](/docs/userguide/lumberyard-tools.md)\.
 
 ![\[Lumberyard Editor Tools menu\]](/images/userguide/lumberyard-editor-menus-tools.png)
 

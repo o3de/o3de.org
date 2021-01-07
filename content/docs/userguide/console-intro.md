@@ -11,8 +11,8 @@ In Lumberyard Editor, the console window shows a running list of all editor comm
 + [Viewing the Console Window](#viewing-the-console-window)
 + [Exporting All Console Commands and Variables](#exporting-console-variables-cvars)
 + [Configuring Console Variables](#configuring-console-variables-cvars)
-+ [Console in Depth](system-console.md)
-+ [Console Variable Tutorial](system-cvar-tutorial.md)
++ [Console in Depth](/docs/userguide/system-console.md)
++ [Console Variable Tutorial](/docs/userguide/system-cvar-tutorial.md)
 
 ## Viewing the Console Window<a name="viewing-the-console-window"></a>
 

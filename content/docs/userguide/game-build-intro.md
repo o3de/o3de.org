@@ -43,7 +43,7 @@ To learn the general steps for creating a release build in Lumberyard, see [Buil
 
 | Topic | Description | 
 | --- | --- | 
-| [Game Build Types in Amazon Lumberyard](game-build-types.md) | Learn about the available types of Amazon Lumberyard builds and when to use them during development\. | 
+| [Game Build Types in Amazon Lumberyard](/docs/userguide/game-build-types.md) | Learn about the available types of Amazon Lumberyard builds and when to use them during development\. | 
 | [Using the Waf Build System](/docs/userguide/waf/intro.md) | Learn about the Waf build system, which is used by Lumberyard to configure and build game code\. | 
 | [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) | Run through a tutorial and learn how to use the Asset Bundler, along with Waf, to create release builds\.  | 
-| [Adding Custom Game Icons](game-build-custom-game-icons.md) | Add a custom icon to display in your game's window as part of a release\. | 
+| [Adding Custom Game Icons](/docs/userguide/game-build-custom-game-icons.md) | Add a custom icon to display in your game's window as part of a release\. | 

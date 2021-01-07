@@ -8,11 +8,11 @@ title: Using the &resource-compiler; Image Tool
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands\.
 
 **Note**  
-You can also use the Texture Settings Editor to manage your texture settings for image files\. For more information, see [Texture Settings Editor](texture-settings-editor.md)\.
+You can also use the Texture Settings Editor to manage your texture settings for image files\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
 
 **To install RC Shell Commands**
 
-1. Open [Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
+1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. On the **Install plugins** page, click **Install**\.  
 ![\[Click Install to install RC Shell Commands in Lumberyard Setup Assistant\]](/images/userguide/assets/pipeline/asset-pipeline-images-resourcecompiler-1.png)

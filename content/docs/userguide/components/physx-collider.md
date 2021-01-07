@@ -108,7 +108,7 @@ A PhysX entity that is static can interact with other entities, but doesn't move
 
 **To create a static PhysX entity**
 
-1. Create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. Create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
@@ -143,7 +143,7 @@ Alternatively, attach multiple **PhysX Collider** components to the entity, and 
 
 **To create a mesh collider**
 
-1. Create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. Create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)**\.
 

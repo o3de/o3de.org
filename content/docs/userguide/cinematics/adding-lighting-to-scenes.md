@@ -18,7 +18,7 @@ See the following recommended guidelines and best practices for cinematics light
 + Disable gameplay and cubemap lights as needed for shots to avoid interference\.
 + For pre\-rendered cinematic scenes, use the console variable `e_timeofday` to trigger the correct time of day\.
 
-  For more information, see [Using the Console Window](console-intro.md)\.
+  For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 + For real\-time cinematics, use a track event node to trigger the correct time of day\. For more information, see [Event Node](/docs/userguide/cinematics/track-view/nodes-event.md)\.
 + For pre\-rendered cinematic scenes, use the [Shadows Setup Node](/docs/userguide/cinematics/track-view/nodes-shadows.md) to enable high quality shadows mode\.
 + For pre\-rendered cinematic scenes, because performance isn't an issue, you should always enable shadow casting and use as many spotlights as needed\. Projector textures should be used as much as possible for spotlights\. The **SpecularMultiplier** value should always be `1`\.

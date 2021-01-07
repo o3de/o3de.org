@@ -58,7 +58,7 @@ Disconnects from the PhysX Visual Debugger\. You must have the PhysX Visual Debu
 physx_PvdDisconnect
 ```
 
-For more information, see [Using the Console Window](console-intro.md)\.
+For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 ## Debugging with the ImGui Tool<a name="imgui-debugging-tool"></a>
 

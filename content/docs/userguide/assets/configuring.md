@@ -6,7 +6,7 @@ title: Configuring the Asset Pipeline
 # Configuring the Asset Pipeline<a name="asset-pipeline-configuring"></a>
 
 **Important**  
-The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline\. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`\. These modules are self configuring\. For instructions and examples on how to write builders that process your own asset types, see the [Creating a Custom Asset Builder](asset-builder-custom.md)\. We recommend that you do not rely on the old `rc.exe` pipeline, although it's still available if you have legacy code\.
+The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline\. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`\. These modules are self configuring\. For instructions and examples on how to write builders that process your own asset types, see the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\. We recommend that you do not rely on the old `rc.exe` pipeline, although it's still available if you have legacy code\.
 
 You can configure the Lumberyard asset pipeline by editing the `\dev\AssetProcessorPlatformConfig.ini` file that `rc.exe` program uses\. You can add your own asset types to it by modifying the sections of the file described in this document\. When you check in your changes to the config file, the version of the assets on your collaborators' computers is updated automatically\. This removes the need for you to manually refresh the cache on each coworker's computer\.
 

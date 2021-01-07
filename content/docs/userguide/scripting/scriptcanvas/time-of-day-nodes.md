@@ -10,8 +10,8 @@ You can use time of day nodes in the **Script Canvas** editor to set the current
 For more information about configuring time of day effects, see [Adding Sky Effects](/docs/userguide/sky/intro.md) and [Creating Time of Day Sky Effects](/docs/userguide/sky/tod-intro.md)\.
 
 **Topics**
-+ [Get Speed](get-speed.md)
-+ [Get Time](get-time.md)
-+ [Load Definition File](load-definition-file.md)
-+ [Set Speed](set-speed.md)
-+ [Set Time](set-time.md)
++ [Get Speed](/docs/userguide/get-speed.md)
++ [Get Time](/docs/userguide/get-time.md)
++ [Load Definition File](/docs/userguide/load-definition-file.md)
++ [Set Speed](/docs/userguide/set-speed.md)
++ [Set Time](/docs/userguide/set-time.md)

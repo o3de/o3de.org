@@ -145,7 +145,7 @@ Portion of angular velocity applied to turning cloth particles\.
 ## Wind properties<a name="component-cloth-wind-properties"></a>
 
 **Note**  
-The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](wind-provider.md)\. 
+The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/userguide/wind-provider.md)\. 
 
 ![\[Wind properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-F-1.27.png)
 

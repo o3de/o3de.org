@@ -55,7 +55,7 @@ Lumberyard Editor is not supported on macOS\. Selecting this option enables the 
 **Note**  
 Select this option if you are developing for Android devices\. You must have the Android SDK installed on your Mac\.
 
-1. Follow the instructions onscreen to complete the installations for any third\-party software or SDKs that you need\. For more information about using Lumberyard Setup Assistant, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](lumberyard-launcher-intro.md)\.
+1. Follow the instructions onscreen to complete the installations for any third\-party software or SDKs that you need\. For more information about using Lumberyard Setup Assistant, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 
 1. Open a command line window and navigate to your Lumberyard `dev` directory\.
 

@@ -35,7 +35,7 @@ For information on using the runtime asset system to load already\-built assets 
 
 For information on adding a custom asset type to Lumberyard, see [Adding an Asset Type to Lumberyard](/docs/userguide/assets/asset-type-adding.md)\.
 
-For information on creating a builder for custom assets, see [Creating a Custom Asset Builder](asset-builder-custom.md)\.
+For information on creating a builder for custom assets, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
 ## AZ Code Generator<a name="lumberyard-programming-concepts-az-code-generator"></a>
 
@@ -47,7 +47,7 @@ For more information, see [Automating boilerplate with AZ Code Generator](/docs/
 
 You can build your Lumberyard projects in *profile* mode, *debug* mode, or *release* mode\.
 
-For more information, see [Building Lumberyard projects](game-build-intro.md)\. 
+For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\. 
 
 ## Cloud Canvas<a name="lumberyard-programming-concepts-cloud-canvas"></a>
 
@@ -109,7 +109,7 @@ For information on creating system components, see [Creating System Components](
 
 Lumberyard provides independent, extensible, and efficient access to input data from supported operating systems and devices\. Lumberyard's AZ framework input interface provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management\. 
 
-For more information, see [Input in Amazon Lumberyard](input-intro.md)\. 
+For more information, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\. 
 
 ## Lua<a name="lumberyard-programming-concepts-lua"></a>
 

@@ -13,7 +13,7 @@ title: Fog Volume
 
 You can use the **Fog Volume** component to create fog effects in your game\. For more information, see [Volumetric Fog](/docs/userguide/rendering/fog-volumetric.md)\.
 
-By default, the **Fog Volume** component renders in nonvolumetric mode\. To enable volumetric rendering, you must specify the `e_VolumetricFog` console variable\. For more information, see [Console Variables for Volumetric Fog](/docs/userguide/rendering/fog-volumetric-console-variables.md) and [Using the Console Window](console-intro.md)\.
+By default, the **Fog Volume** component renders in nonvolumetric mode\. To enable volumetric rendering, you must specify the `e_VolumetricFog` console variable\. For more information, see [Console Variables for Volumetric Fog](/docs/userguide/rendering/fog-volumetric-console-variables.md) and [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 **Note**  
 The **Fog Volume** component must have a **[Box Shape](/docs/userguide/components/shapes.md)** component attached to the entity\. The entity uses the **Box Shape** component to set the area of the fog\.

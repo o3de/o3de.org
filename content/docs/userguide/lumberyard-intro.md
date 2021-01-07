@@ -27,7 +27,7 @@ Lumberyard helps you build rich, engaging, world\-class games through its compre
 The visuals technology of Lumberyard can bring to life any virtual environment\. Your artists get a powerful toolbox to create high quality visual elements, such as physically based shaders, dynamic global illumination, particle effects, lifelike vegetation, real\-time dynamic water caustics, and volumetric fog\. They can also produce cinematic features like color grading, motion blur, depth of field, and integrated HDR lens flares\.
 
 For more information, see the following topics: 
-+ [Creating levels and adding environment effects](level-intro.md)
++ [Creating levels and adding environment effects](/docs/userguide/level-intro.md)
 + [Adding particle effects](/docs/userguide/particles/intro.md)
 + [Create screen effects](/docs/userguide/rendering/screen-effects-intro.md)
 
@@ -49,7 +49,7 @@ For more information, see the following topics:
 
 Artists can use Lumberyard to create believable characters and high\-fidelity performances\. Lumberyard's character tool, Animation Editor, combines animation, attachments, and physics simulations with blend shape, blend space, and animation layering\.
 
-For more information, see [Create and animate characters](char-intro.md)\.
+For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
 
 ### Robust Networking<a name="lumberyard-aaa-engine-networking"></a>
 

@@ -30,7 +30,7 @@ You can easily create your own cloud gem by using the `lmbr_aws cloud-gem create
    ```
 
 1. If your cloud gem will use the [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md), do one of the following:
-   + In [Running Lumberyard Setup Assistant](lumberyard-launcher-using.md), choose **Compile the game code**
+   + In [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md), choose **Compile the game code**
 
      OR
    + From a command prompt window on the `\dev\Tools\LmbrSetup\Win` directory, enter the following command:

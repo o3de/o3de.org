@@ -4,7 +4,7 @@ title: Lip Synchronization with &emotionfx;
 ---
 # Lip Synchronization with EMotion FX<a name="cloud-canvas-cloud-gem-text-to-speech-emotionfx"></a>
 
-Starting in version 1\.12, Lumberyard uses [Animation Editor](char-intro.md) to implement lip synchronization\.
+Starting in version 1\.12, Lumberyard uses [Animation Editor](/docs/userguide/char-intro.md) to implement lip synchronization\.
 
 In the example in the following image, a **Talker** entity has been created that uses Lumberyard's text\-to\-speech feature\. The entity is configured with the **Animation Editor** **AnimGraph**, **Actor**, and **Character Physics** components\. In the example, physics for the talker are specified as `Is Active = false` so that the talking head can remain motionless in space\.
 

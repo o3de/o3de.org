@@ -27,7 +27,7 @@ This tutorial assumes the following:
   + Use the WASD keys to move the controllable entity around the level\.
   + Click **Send Position** to record the coordinates of the controllable entity\.
 
-  For more information, see [Using the Game Metrics Cloud Gem Portal](using-the-cloud-gem-metrics-portal.md) and [Sending Test Metrics with the Metrics Sample Level](send-test-events-for-the-cloud-canvas-game-metrics-gem.md)\.
+  For more information, see [Using the Game Metrics Cloud Gem Portal](/docs/userguide/using-the-cloud-gem-metrics-portal.md) and [Sending Test Metrics with the Metrics Sample Level](/docs/userguide/send-test-events-for-the-cloud-canvas-game-metrics-gem.md)\.
 
 ## Creating Heatmaps with the Heatmap Tool<a name="cloud-gem-game-metrics-creating-heatmaps-with-heatmap-tool"></a>
 

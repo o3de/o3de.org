@@ -11,12 +11,12 @@ title: '&ALY; Android support'
 + [Prerequisites](#android-prerequisites)
 + [Video tutorial](#android-setting-up-environment-video)
 <<<<<<< Updated upstream:content/docs/userguide/mobile/android/intro.md
-+ [Set up your environment to develop for Android with Lumberyard](android-setting-up-environment.md)
-+ [Configure Lumberyard projects for Android](android-configure-project.md)
-+ [Build and deploy your project for Android](android-build-deploy.md)
-+ [Releasing Lumberyard projects for Android](android-deploy-release.md)
++ [Set up your environment to develop for Android with Lumberyard](/docs/userguide/android-setting-up-environment.md)
++ [Configure Lumberyard projects for Android](/docs/userguide/android-configure-project.md)
++ [Build and deploy your project for Android](/docs/userguide/android-build-deploy.md)
++ [Releasing Lumberyard projects for Android](/docs/userguide/android-deploy-release.md)
 + [Troubleshooting Lumberyard issues on Android](/docs/userguide/mobile/android/troubleshooting.md)
-+ [Reference for Android](android-reference.md)
++ [Reference for Android](/docs/userguide/android-reference.md)
 =======
 + [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md)
 + [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md)

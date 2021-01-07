@@ -17,7 +17,7 @@ The Virtual Reality Samples Project is a template that you can use to build virt
 
 1. Download the `vrproject.zip` package at [Lumberyard Downloads](https://aws.amazon.com/lumberyard/downloads/) and extract it in your Lumberyard directory, such as `lumberyard_version\`
 
-1. Open [Lumberyard Setup Assistant](lumberyard-launcher-using.md) and on the **Summary** page, click **Configure project**\.
+1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md) and on the **Summary** page, click **Configure project**\.
 **Note**  
 To ensure that the VR project launches, you must use Lumberyard Setup Assistant to open the Project Configurator\. Lumberyard Setup Assistant copies required SDKs from the `3rdParty` directory into the `dev\VirtualRealityProject` directory\.
 
@@ -33,7 +33,7 @@ The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled
 
 1. Close Lumberyard Setup Assistant\.
 
-1. After completing video playback setup, you must also [build](game-build-intro.md) the virtual reality project\.
+1. After completing video playback setup, you must also [build](/docs/userguide/game-build-intro.md) the virtual reality project\.
 
 1. Start `Editor.exe` from one of the following directories:
    + For Visual Studio 2017, use the `lumberyard_version\dev\Bin64vc141` directory\.

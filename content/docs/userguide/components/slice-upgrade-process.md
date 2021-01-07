@@ -29,7 +29,7 @@ Currently, this pipeline does not update your slices when changing your componen
 It is important to upgrade your slice assets as soon as possible, because:
 + You can read, edit, and merge data patches more efficiently in upgraded slice assets\.
 + Upgrading your slices lets you use the new TypeChange and NameChange class builders when versioning your components\. For more information about the component versioning system, see [Versioning your Component Serialization](/docs/userguide/components/entity-system-versioning.md)\.
-+ Delaying the upgrade puts you at a heightened risk of losing data in the future when changing serialization of your components\. For more information about this risk, see [Avoiding Data Loss when Serializing Component Data](best-practices-for-component-data-serialization.md)\.
++ Delaying the upgrade puts you at a heightened risk of losing data in the future when changing serialization of your components\. For more information about this risk, see [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
 
 **Note**  
 In Lumberyard v1\.23 and later, any slices with data patches still using the old format are updated automatically when changes are pushed to them\. This is regardless of the slice conversion setting\.

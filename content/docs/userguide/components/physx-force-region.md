@@ -121,7 +121,7 @@ You can create a force region so that force applies to another entity that enter
 
 **To create a PhysX Force Region component**
 
-1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. Enter a name for the entity, such as *ForceRegion*\.
 

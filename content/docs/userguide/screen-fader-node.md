@@ -12,7 +12,7 @@ To use the **Screen Fader** node in the Track View, see [Screen Fader Node](/doc
 **Topics**
 + [Inputs](#screen-fader-input)
 + [Outputs](#screen-fader-output)
-+ [ScreenFader EBuses](screen-fader-ebuses.md)
++ [ScreenFader EBuses](/docs/userguide/screen-fader-ebuses.md)
 
 ![\[screenfader, screenfadernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
 
@@ -40,7 +40,7 @@ See the following screen fading in a game\.
 |  Fade Out Time  | Number | Number of seconds when fading out\. | 
 | Color | Color | The color to fade to and from\. The alpha channel is ignored\.The use of this property depends on the value of Use Current Color, and whether you are fading in or fading out\. | 
 |  Use Current Color  | Boolean |  Specify true to continue to use the current color for the fade overlay\. The use of the **Color** property depends on the value of **Use Current Color**, and whether you are fading in or fading out\. **Current Color** is the color that is rendered by the fader, including the alpha channel\. This is generally whatever color is left over from prior fading activity\. The [Color Property Behavior](#color-property-behavior) table in the next section shows the color values that are blended to create the fading transition\.  | 
-| Texture Name | String |  \(Optional\) The name of a texture from or to which to fade\. To use only solid colors for fading, leave this value empty\.  For more information, see [Finding the Texture Name](finding-texture-by-names.md)\.  | 
+| Texture Name | String |  \(Optional\) The name of a texture from or to which to fade\. To use only solid colors for fading, leave this value empty\.  For more information, see [Finding the Texture Name](/docs/userguide/finding-texture-by-names.md)\.  | 
 | Update Always | Boolean |  Continues fading even when the game is paused\.  | 
 | Screen Coordinates | Vector4 |  Sets the screen coordinates \(left, top, right, and bottom\) where the fade overlay is drawn\. The default is full screen \(`0`, `0`, `1`, `1`\)\.  | 
 
@@ -74,4 +74,4 @@ The following table shows the actual color values that are blended to cause the 
 | Current Color | Color | Outputs the current value for the fade overlay color\. | 
 
 **Note**  
-Most **Script Canvas** graphics features are available in Lua\. However, **ScreenFader** is a single node in **Script Canvas**, and an EBus in Lua\. For more information, see the [ScreenFader EBuses](screen-fader-ebuses.md)\.
+Most **Script Canvas** graphics features are available in Lua\. However, **ScreenFader** is a single node in **Script Canvas**, and an EBus in Lua\. For more information, see the [ScreenFader EBuses](/docs/userguide/screen-fader-ebuses.md)\.

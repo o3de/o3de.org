@@ -40,5 +40,5 @@ You can import assets to a directory only in the current game project\.
 ## Tutorials: Importing Assets into Lumberyard<a name="impoting-assets-into-lumberyard-tutorials"></a>
 
 To learn more about importing your assets, see the following video tutorials:
-+ [Tutorials: Importing FBX Files as Actors and Motions](importing-fbx-files-as-actors-motions.md)
++ [Tutorials: Importing FBX Files as Actors and Motions](/docs/userguide/importing-fbx-files-as-actors-motions.md)
 + [FBX Settings mesh export](/docs/userguide/fbx/mesh-export.md)

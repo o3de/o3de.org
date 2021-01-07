@@ -15,7 +15,7 @@ Lumberyard consists of the following major systems that help you develop levels 
   The audio translation layer \(ATL\) provides an interface between Lumberyard and third\-party audio middleware so you can change your audio implementation without affecting the game logic\.
 
    
-+ [Create and animate characters](char-intro.md)
++ [Create and animate characters](/docs/userguide/char-intro.md)
 
   The character animation system combines skeletal\-based deformation of meshes with morph\-based vertex deformation to facilitate complex animation\. You can create realistic character movements by playing and blending animation sequences, controlling facial expressions, and applying damage effects\. Characters can play scripted movements, employ AI navigation\.
 
@@ -35,7 +35,7 @@ Lumberyard consists of the following major systems that help you develop levels 
   Gems are packages that contain code and assets to augment your game projects, such as the ChatPlay and Woodland Asset Collection gems\. You can select gems to include in your project through the Lumberyard [Project Configurator](/docs/userguide/configurator/intro.md) and from the command line\.
 
    
-+ [Creating levels and adding environment effects](level-intro.md)
++ [Creating levels and adding environment effects](/docs/userguide/level-intro.md)
 
   A level, also known as world or map, represents the space or area available to the player while completing a game objective\. A level's environment includes lighting, terrain, bodies of water, vegetation, sky, and weather effects\.
 
@@ -86,7 +86,7 @@ The following Lumberyard tools are outside of the main editor and are used for p
   The Asset Pipeline converts source art and other assets into platform\-specific, game ready data\.
 
    
-+ [Managing Game Projects with Lmbr\.exe](lmbr-exe.md)
++ [Managing Game Projects with Lmbr\.exe](/docs/userguide/lmbr-exe.md)
 
   `Lmbr.exe` is a command\-line tool for managing capabilities, game projects, and gems\.
 

@@ -36,7 +36,7 @@ In the **Entity Outliner**, you can identify different entities by their icon an
 |  ![\[Image NOT FOUND\]](/images/userguide/component/entity-outliner-source-slices-hierarchy.png)  |  Entities that are shaded are the slice roots\. In this example, the **TimerParent** entity and its grandchildren are slice roots\.  | 
 
 **Topics**
-+ [Anatomy of a Slice](dynamic-slices-overview-anatomy.md)
++ [Anatomy of a Slice](/docs/userguide/dynamic-slices-overview-anatomy.md)
 + [Creating a Slice](/docs/userguide/components/slices-creating.md)
 + [Instantiating a Slice](/docs/userguide/components/instantiating-slice.md)
 + [Creating Nested Slices](/docs/userguide/components/inheriting-slice.md)
@@ -44,7 +44,7 @@ In the **Entity Outliner**, you can identify different entities by their icon an
 + [Detaching Entities and Slice Instances](/docs/userguide/components/slice-detaching.md)
 + [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)
 + [Slice Reloading](/docs/userguide/components/slice-reloading.md)
-+ [Working with Dynamic Slices](dynamic-slices-what-is.md)
++ [Working with Dynamic Slices](/docs/userguide/dynamic-slices-what-is.md)
 + [Slice Favorites](/docs/userguide/components/slice-favorites.md)
 + [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)
 

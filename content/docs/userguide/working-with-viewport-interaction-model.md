@@ -14,7 +14,7 @@ The Viewport Interaction Model provides the following benefits:
 + Improves the ability to select your preferred entity, especially for nested hierarchies or levels that have many entities\.
 + Prevents you from accidentally deselecting an entity\. The entity that you select is locked for editing\. 
 + Adds keyboard and mouse actions that you can apply to your selected entities\. For example, you can freely switch between local, parent, and world space to make changes to your selected entities\.
-+ Establishes an editing pattern that matches the Component Mode feature\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.
++ Establishes an editing pattern that matches the Component Mode feature\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.
 
 See the following concepts for the Viewport Interaction Model:
 
@@ -34,11 +34,11 @@ This feature has the following limitations:
 
 **Topics**
 + [Viewport Interaction Model Limitations](#viewport-interaction-model-limits)
-+ [Enabling Viewport Interaction Model](enabling-viewport-interaction-model.md)
-+ [Modifying the Transform](viewport-interaction-model-transform.md)
-+ [Reference Space Model](viewport-interaction-model-reference-space-model.md)
-+ [Using Group Selections and Reference Spaces](group-selections-reference-spaces.md)
-+ [Resetting the Transform](reset-transform.md)
-+ [Matching the Transform](transform-matching.md)
-+ [Using Pivot Mode](pivot-mode.md)
-+ [Using the Camera Space](camera-space.md)
++ [Enabling Viewport Interaction Model](/docs/userguide/enabling-viewport-interaction-model.md)
++ [Modifying the Transform](/docs/userguide/viewport-interaction-model-transform.md)
++ [Reference Space Model](/docs/userguide/viewport-interaction-model-reference-space-model.md)
++ [Using Group Selections and Reference Spaces](/docs/userguide/group-selections-reference-spaces.md)
++ [Resetting the Transform](/docs/userguide/reset-transform.md)
++ [Matching the Transform](/docs/userguide/transform-matching.md)
++ [Using Pivot Mode](/docs/userguide/pivot-mode.md)
++ [Using the Camera Space](/docs/userguide/camera-space.md)

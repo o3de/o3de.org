@@ -48,4 +48,4 @@ To request limit increases, see the [AWS Support Center](https://console.aws.ama
 **Topics**
 + [Workflow Summary](#cloud-canvas-cloud-gem-compute-farm-workflow-summary)
 + [Account Limits](#cloud-canvas-cloud-gem-compute-farm-account-limits)
-+ [Compute Farm Cloud Gem: Walkthrough](compute-farm-cloud-gem-walkthrough.md)
++ [Compute Farm Cloud Gem: Walkthrough](/docs/userguide/compute-farm-cloud-gem-walkthrough.md)

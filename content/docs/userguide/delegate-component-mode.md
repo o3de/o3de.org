@@ -150,7 +150,7 @@ It's possible \(although not often used\) to address an EBus not only by the `En
 
    1. The final argument is a `nullptr`, which is an `EditorComponentSelectionRequestBus::Handler`\. To use this handler, the `EditorComponent` must implement the `EditorComponentSelectionRequestsBus`\. If the EBus was implemented, you can pass `'this'` here, but as you haven't implemented it yet, enter `nullptr` for now\. 
 
-      These changes enable you to double\-click in the viewport to select a component\. You implement the `EditorComponentSelectionRequestBus` in [Step 5: Handle Selection in the Viewport](handling-selection-viewport.md)\.
+      These changes enable you to double\-click in the viewport to select a component\. You implement the `EditorComponentSelectionRequestBus` in [Step 5: Handle Selection in the Viewport](/docs/userguide/handling-selection-viewport.md)\.
 
       For examples, see the `EditorBaseShapeComponent.h` and `EditorSplineComponent.h` files\.
 

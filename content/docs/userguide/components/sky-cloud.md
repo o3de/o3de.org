@@ -52,7 +52,7 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 
 **To create a cloud**
 
-1. [Create an entity\.](creating-entity.md)
+1. [Create an entity\.](/docs/userguide/creating-entity.md)
 
 1. In the **Entity Outliner**, select the new entity and in the **Entity Inspector**, click **Add Component** and then click the **Sky Cloud** component\.  
 ![\[Under Environment, select the Sky Cloud component.\]](/images/userguide/component/component-sky-cloud-1.png)
@@ -221,7 +221,7 @@ You can set up cloud generation areas to customize the shape of your cloud\. To 
 
 **To define cloud generation areas**
 
-1. [Create an entity](creating-entity.md) with a descriptive name, such as **CloudGenerator**\.
+1. [Create an entity](/docs/userguide/creating-entity.md) with a descriptive name, such as **CloudGenerator**\.
 
    This will be the parent entity for your cloud generation areas\.
 

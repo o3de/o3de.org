@@ -142,7 +142,7 @@ def build(bld):
 
 #### Adding a Dependency on Another Gem<a name="component-entity-system-pg-gems-code-adding-dependencies-gem"></a>
 
-You can configure gem A to depend on gem B by modifying gem A's `gem.json` and wscript files\. The following example shows how the Twitch gem, included with Lumberyard, declares a dependency on the [HttpRequestor gem](http-requestor-gem.md)\. This `gems.json` file is located in the `lumberyard_installation\dev\Gems\Twitch\` directory\.
+You can configure gem A to depend on gem B by modifying gem A's `gem.json` and wscript files\. The following example shows how the Twitch gem, included with Lumberyard, declares a dependency on the [HttpRequestor gem](/docs/userguide/http-requestor-gem.md)\. This `gems.json` file is located in the `lumberyard_installation\dev\Gems\Twitch\` directory\.
 
 ```
 {

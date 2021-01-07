@@ -20,13 +20,13 @@ When choosing a source control solution, keep in mind that Lumberyard provides p
 + [Upgrading Lumberyard without an Existing Version in Source Control](#lumberyard-upgrading-version-no-source-control)
 + [Upgrading Lumberyard without Source Control](#lumberyard-upgrading-new-no-source-control)
 + [Upgrading Your Game Projects](#lumberyard-upgrading-game-projects)
-+ [Files to Exclude When Upgrading Lumberyard](lumberyard-upgrading-excluded-files.md)
++ [Files to Exclude When Upgrading Lumberyard](/docs/userguide/lumberyard-upgrading-excluded-files.md)
 
 **To set up Lumberyard in source control**
 
 1. Download and install Lumberyard\. For information, see [Installing Lumberyard](/docs/userguide/setup/downloading-lumberyard.md)\.
 
-1. Check into source control a pristine, unmodified version of Lumberyard\. For information about file types to ignore, see [Files to Exclude When Upgrading Lumberyard](lumberyard-upgrading-excluded-files.md)\. For information about the Lumberyard directory structure, see [Installing Lumberyard](/docs/userguide/setup/downloading-lumberyard.md)\.
+1. Check into source control a pristine, unmodified version of Lumberyard\. For information about file types to ignore, see [Files to Exclude When Upgrading Lumberyard](/docs/userguide/lumberyard-upgrading-excluded-files.md)\. For information about the Lumberyard directory structure, see [Installing Lumberyard](/docs/userguide/setup/downloading-lumberyard.md)\.
 
 1. In source control, create a new branch off the pristine Lumberyard branch to use for development\.
 
@@ -76,7 +76,7 @@ You can upgrade Lumberyard without using source control; however, we do not reco
 
 1. Download and install the latest version of Lumberyard to a location that will not overwrite any previous versions\. For information, see [Installing Lumberyard](/docs/userguide/setup/downloading-lumberyard.md)\.
 
-1. Use Lumberyard Setup Assistant to install the third\-party software and SDKs required to run Lumberyard\. For information, see [Running Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
+1. Use Lumberyard Setup Assistant to install the third\-party software and SDKs required to run Lumberyard\. For information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. Configure and compile the Samples Project to test your build environment\.
 

@@ -40,7 +40,7 @@ You can deploy your asset file by copying if the following are true:
 #### Registering by Creating a Builder<a name="asset-pipeline-asset-type-adding-registering-by-creating-a-builder"></a>
 
 If your asset requires processing, compiling, or optimizing at run time, you can do one of the following:
-+ Create a [BuilderSDK builder](asset-builder-custom.md) to transform your source asset into its compiled form\.
++ Create a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md) to transform your source asset into its compiled form\.
 + If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug\-in\.
 
 #### Copying Versus Creating a Builder<a name="asset-pipeline-asset-type-adding-copying-versus-creating-a-builder"></a>
@@ -50,7 +50,7 @@ It might be inefficient to use your source assets in your game under the followi
 + You want to do verify or error check your files\.
 + You want to optimize your data\.
 
-In these cases, consider writing a [BuilderSDK builder](asset-builder-custom.md) instead of just copying your raw assets, even if it only compresses or converts the assets into binary format\.
+In these cases, consider writing a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md) instead of just copying your raw assets, even if it only compresses or converts the assets into binary format\.
 
 ### B\. Enable the Engine to Load and Stream the Asset<a name="asset-pipeline-asset-type-adding-enable-the-engine-to-load-and-stream-the-asset"></a>
 
@@ -82,7 +82,7 @@ In addition, you can use the thumbnail API to generate thumbnails for your asset
 
 ## A\. Registering Your Asset with the Asset Pipeline<a name="asset-pipeline-asset-type-adding-registering-your-asset-with-the-asset-pipeline"></a>
 
-When you register your asset with the asset pipeline, you define your asset to the asset system and asset processor\. Depending on your asset file type, you can register it by creating a copy rule or by writing a [BuilderSDK builder](asset-builder-custom.md)\.
+When you register your asset with the asset pipeline, you define your asset to the asset system and asset processor\. Depending on your asset file type, you can register it by creating a copy rule or by writing a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md)\.
 
 ### Copying Assets<a name="asset-pipeline-asset-type-adding-copying-assets"></a>
 
@@ -121,7 +121,7 @@ When you write a BuilderSDK builder to create the asset, it should fill in the p
 | SubID | Any u32 integer that disambiguates different outputs from the same source\. If your source files produce only one product, you can use 0\. | 
 | Legacy SubIDs | SubIDs for backward compatibility\. | 
 
-For more information and examples, see the [Asset Builder API](asset-builder-custom.md)\.
+For more information and examples, see the [Asset Builder API](/docs/userguide/asset-builder-custom.md)\.
 
 #### Writing a Scene API Plug\-in<a name="asset-pipeline-asset-type-adding-writing-a-scene-api-plug-in"></a>
 
@@ -129,7 +129,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 ### Registration Versus Integration<a name="asset-pipeline-asset-type-adding-registration-versus-integration"></a>
 
-After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](file-access-direct.md) to load the asset\.
+After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/userguide/file-access-direct.md) to load the asset\.
 
 While simple registration of an asset can be useful in some circumstances, full integration with the Lumberyard asset system offers many advantages, including the following:
 + Automatic live reloading

@@ -25,7 +25,7 @@ The Lumberyard Installer extracts the Lumberyard files and adds shortcuts to you
 + Project Configurator
 + Lumberyard Editor
 
-If you have an existing Lumberyard project and you want to upgrade, see [Upgrading Lumberyard](lumberyard-upgrading.md)\.
+If you have an existing Lumberyard project and you want to upgrade, see [Upgrading Lumberyard](/docs/userguide/lumberyard-upgrading.md)\.
 
 **Note**  
 If you get file errors during extraction about `AssetProcessor.exe`, `AssetProcessor_temp.exe`, or `CrySystem.dll`, verify if your antivirus software is placing these files in quarantine\. If needed, grant exceptions for the affected files\.
@@ -43,7 +43,7 @@ In some situations, the Lumberyard Installer can stop responding and refuse to p
 
 1. Follow the instructions to complete your installation\.
 
-1. On the **Installation Successfully Completed** page, click **Launch Lumberyard Setup Assistant** to install required third\-party software and SDKs\. For more information, see [Running Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
+1. On the **Installation Successfully Completed** page, click **Launch Lumberyard Setup Assistant** to install required third\-party software and SDKs\. For more information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 ## Using GitHub to Download Lumberyard<a name="download-lumberyard-github"></a>
 

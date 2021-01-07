@@ -38,6 +38,6 @@ The directory location of the header file depends on whether *<group>* refers to
 For a gem, the default location of the generated header file does not make it accessible outside of that gem\. Typically, a cloud gem's service API is private to the gem, and the gem exposes its functionality through its own custom component\. If you want to provide direct access to the cloud gem's API from other gems or game code, you can move the generated header file into the gem's `Code\Include` directory\.
 
 **Notes**
-+ To use the generated client, add the generated file to your gem or project's WAF file list, and then [build the gem or project](game-build-intro.md)\.
++ To use the generated client, add the generated file to your gem or project's WAF file list, and then [build the gem or project](/docs/userguide/game-build-intro.md)\.
 + You can use the generated client component to invoke the API from C\+\+ or Lua\. For more information, see [ Calling a Game API](/docs/userguide/gems/cloud-canvas/cgf-service-api-calling-apis.md)\.
 + For sample code, see [Generated Game Client Code Example](/docs/userguide/gems/cloud-canvas/cgf-service-api-generated-game-client-code-example.md)\.

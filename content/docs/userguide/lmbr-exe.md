@@ -40,8 +40,8 @@ lmbr capabilities list -help
 ```
 
 **Topics**
-+ [Projects Commands](lmbr-exe-project.md)
-+ [Gems Commands](lmbr-exe-gem.md)
-+ [Capabilities Commands](lmbr-exe-capabilities.md)
-+ [ThirdPartySDKs Commands](lmbr-exe-thirdpartysdks.md)
-+ [Packages Commands](lmbr-exe-packages.md)
++ [Projects Commands](/docs/userguide/lmbr-exe-project.md)
++ [Gems Commands](/docs/userguide/lmbr-exe-gem.md)
++ [Capabilities Commands](/docs/userguide/lmbr-exe-capabilities.md)
++ [ThirdPartySDKs Commands](/docs/userguide/lmbr-exe-thirdpartysdks.md)
++ [Packages Commands](/docs/userguide/lmbr-exe-packages.md)

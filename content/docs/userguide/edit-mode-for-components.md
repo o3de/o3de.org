@@ -27,7 +27,7 @@ This feature supports the following components: <a name="supported-components-vi
 + [Editing a Single Component in the Viewport](#editing-components-in-viewport)
 + [Editing Multiple Components in the Viewport](#editing-multiple-component-in-the-viewport)
 
-If you want to add this feature to other components, you must make code changes to Lumberyard Editor\. For more information, see the [Programmer's Guide to Component Mode](working-with-component-mode-programmatically.md)\.
+If you want to add this feature to other components, you must make code changes to Lumberyard Editor\. For more information, see the [Programmer's Guide to Component Mode](/docs/userguide/working-with-component-mode-programmatically.md)\.
 
 ## Editing a Single Component in the Viewport<a name="editing-components-in-viewport"></a>
 
@@ -35,7 +35,7 @@ For components that support this feature, the component is locked when you edit 
 
 **To edit a single component in Component Mode**
 
-1. In Lumberyard Editor, create an entity\. See [Creating an Entity](creating-entity.md)\. 
+1. In Lumberyard Editor, create an entity\. See [Creating an Entity](/docs/userguide/creating-entity.md)\. 
 
 1. In the **Entity Inspector**, choose **Add Component** and select the **Spline** component\.  
 **Example**  
@@ -69,7 +69,7 @@ In some cases, Component Mode supports editing multiple components\. This is use
 
 **To edit multiple components in Component Mode**
 
-1. In Lumberyard Editor, create an entity\. See [Creating an Entity](creating-entity.md)\. 
+1. In Lumberyard Editor, create an entity\. See [Creating an Entity](/docs/userguide/creating-entity.md)\. 
 
 1. In the **Entity Inspector**, choose **Add Component** and then select components that have this feature\. See [supported components](#supported-components-viewport-interaction-model)\. 
 

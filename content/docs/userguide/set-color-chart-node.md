@@ -13,8 +13,8 @@ For an example script, see [Example Set Color Chart Script](creating-a-color-cha
 
 **Contents**
 + [Inputs](#set-color-chart-node-input)
-+ [Creating a Color Chart](creating-a-color-chart-for-lumberyard.md)
-+ [Console Variables for Color Charts](set-color-chart-console-variables.md)
++ [Creating a Color Chart](/docs/userguide/creating-a-color-chart-for-lumberyard.md)
++ [Console Variables for Color Charts](/docs/userguide/set-color-chart-console-variables.md)
 
 ![\[setcolorchartnode, setcolorchart, colorchart, colorgrading, setcolorgrading\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-color-chart-node.png)
 
@@ -26,5 +26,5 @@ For an example script, see [Example Set Color Chart Script](creating-a-color-cha
 | Pin | Type | Description | 
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
-| Texture Name | String |  The name of a color chart texture\. For more information, see [Finding the Texture Name](finding-texture-by-names.md)\.  | 
+| Texture Name | String |  The name of a color chart texture\. For more information, see [Finding the Texture Name](/docs/userguide/finding-texture-by-names.md)\.  | 
 | Fade Time | Number |  Number of seconds to fade into the color grading\.  | 

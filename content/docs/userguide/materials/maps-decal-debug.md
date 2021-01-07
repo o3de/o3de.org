@@ -11,7 +11,7 @@ See the following ways you can debug decals\.
 
 The cost of a deferred decal depends on how many objects the decal projects, how expensive the geometry is, and how many overdraws the decal creates\.
 
-You can use the console variable \(CVAR\) `r_deferredDecalsDebug` to show how expensive it is to render a deferred decal\. Specify a value of `1`\. For more information, see [Using the Console Window](console-intro.md)\.
+You can use the console variable \(CVAR\) `r_deferredDecalsDebug` to show how expensive it is to render a deferred decal\. Specify a value of `1`\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 Deferred decals in the Lumberyard Editor viewport render in red, green and blue\. The colors show you the expense for rendering a deferred decal\.
 + Red = expensive

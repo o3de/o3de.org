@@ -91,7 +91,7 @@ Project    ProjectResourceHandlerExecution
 
 ## Permission Metadata Management<a name="cloud-canvas-rm-security-lmbr-aws-permission-metadata-management"></a>
 
-The permission metadata management commands manage CloudCanvas [`Permissions` metadata](permissions-metadata-for-resource-definitions.md) on resource definitions in the `resource-group-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
+The permission metadata management commands manage CloudCanvas [`Permissions` metadata](/docs/userguide/permissions-metadata-for-resource-definitions.md) on resource definitions in the `resource-group-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### lmbr\_aws permission add<a name="cloud-canvas-rm-security-lmbr-aws-permission-add"></a>
 

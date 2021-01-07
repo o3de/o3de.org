@@ -245,7 +245,7 @@ To gather these inputs, the example adds [Input](/docs/userguide/components/inpu
 
 To use the Input component, you must enable the [Input Management Framework](/docs/userguide/gems/builtin/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
 
-Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in Lumberyard Editor to create an input bindings file\. For more information, see [Working with the Input Component](working-with-the-input-component.md)\.
+Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in Lumberyard Editor to create an input bindings file\. For more information, see [Working with the Input Component](/docs/userguide/working-with-the-input-component.md)\.
 
 **Getting Keyboard Input to Control Graph Synchronization**  
 In the example, the gun entity has an Input component\. The Input component uses a `synctest.inputbindings` asset to bind keyboard inputs **1** and **2** to the `SyncControl` event\. The `SyncControl` event controls the sync mode, which determines whether or not the gun fires when the robot fires\.

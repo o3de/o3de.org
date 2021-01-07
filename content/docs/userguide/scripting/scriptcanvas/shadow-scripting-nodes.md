@@ -9,4 +9,4 @@ You use can use the following shadow nodes in the **Script Canvas** editor to co
 
 **Topics**
 + [High Quality Shadow](/docs/userguide/scripting/scriptcanvas/high-quality-shadow-nodes.md)
-+ [Recompute Static Shadows](recompute-static-shadows-node.md)
++ [Recompute Static Shadows](/docs/userguide/recompute-static-shadows-node.md)

@@ -7,7 +7,7 @@ title: Set Speed
 
 Sets the current time of day speed multiplier\. The value is specified in conversion units of hours per second\. 
 
-For example, a value of `0.0` stops automatic time progression, although you can change the time manually with the **[Set Time](set-time.md)** node\. 
+For example, a value of `0.0` stops automatic time progression, although you can change the time manually with the **[Set Time](/docs/userguide/set-time.md)** node\. 
 
 A value of `1.0` runs through an entire time of day cycle in 24 seconds\. 
 

@@ -27,7 +27,7 @@ When compiling a project with the RAD Telemetry Gem enabled, the static `lib` fi
 
 1. Use the [**Project Configurator** to enable](/docs/userguide/gems/builtin/s.md) the RAD Telemetry Gem for your project\. You must enable this gem \(and any other gem\) for each project\. Gems are not globally enabled\.
 
-1. [Build your project](game-build-intro.md)\. You must build using [`profile` \(preferred\) or `debug`](game-build-intro.md) in order to enable RAD Telemetry\.
+1. [Build your project](/docs/userguide/game-build-intro.md)\. You must build using [`profile` \(preferred\) or `debug`](/docs/userguide/game-build-intro.md) in order to enable RAD Telemetry\.
 
 ## Instrumenting Your Code<a name="gems-system-gem-rad-telemetry-instrumenting"></a>
 

@@ -5,7 +5,7 @@ title: Enable Radial Blur
 ---
 # Enable Radial Blur<a name="enable-radial-blur-node"></a>
 
- Enables the radial blur filter around a defined 2D position on the screen\. To enable this feature, you must enable the `r_MotionBlur` console variable\. For more information, see [Using the Console Window](console-intro.md)\.
+ Enables the radial blur filter around a defined 2D position on the screen\. To enable this feature, you must enable the `r_MotionBlur` console variable\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 To disable the effect, see [Disable Radial Blur](/docs/userguide/rendering/disable/radial-blur-node.md)\.
 

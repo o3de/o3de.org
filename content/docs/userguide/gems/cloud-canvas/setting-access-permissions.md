@@ -67,4 +67,4 @@ When you use the AWS CLI to manage roles and permissions, these resources are li
 
 ### Setting Access Permissions<a name="cloud-canvas-setting-access-permissions-metadata-link"></a>
 
-For information on setting `Custom::AccessControl` permissions, see [Permissions Metadata for Resource Definitions](permissions-metadata-for-resource-definitions.md)\.
+For information on setting `Custom::AccessControl` permissions, see [Permissions Metadata for Resource Definitions](/docs/userguide/permissions-metadata-for-resource-definitions.md)\.

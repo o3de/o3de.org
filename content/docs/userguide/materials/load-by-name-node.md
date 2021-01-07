@@ -23,7 +23,7 @@ In some cases, you might need to store the material to use later\. For more info
 | Pin | Type | Description | 
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
-| Material Name | String |  The path name of a material to find and load\. For more information, see [Finding the Material Name](finding-materials-by-name.md)\.  | 
+| Material Name | String |  The path name of a material to find and load\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  | 
 
 ## Outputs<a name="material-load-by-name-node-output"></a>
 

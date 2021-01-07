@@ -5,20 +5,20 @@ title: Scripted Tweener Entity System
 ---
 # Scripted Tweener Entity System<a name="ui-animating-tweener"></a>
 
-Lumberyard's Scripted Tweener Entity system is a script\-driven animation system that creates powerful and flexible animations\. To use this system, [enable](gems-system-using-project-configurator.md) the [Scripted Tweener Entity](gems-system-gem-scripted-tweener.md) gem\. In the [Samples Project](sample-project-samples.md), this gem is enabled by default\.
+Lumberyard's Scripted Tweener Entity system is a script\-driven animation system that creates powerful and flexible animations\. To use this system, [enable](/docs/userguide/gems-system-using-project-configurator.md) the [Scripted Tweener Entity](/docs/userguide/gems-system-gem-scripted-tweener.md) gem\. In the [Samples Project](/docs/userguide/sample-project-samples.md), this gem is enabled by default\.
 
 The Scripted Tweener Entity system primarily animates entities in the **UI Editor**, and also supports the following Lumberyard component entities\. 
-+ [Particle](component-particle.md)
-+ Lights – [Point Light](component-point-light.md), [Area Light](component-area-light.md), and [Projector Light](component-projector-light.md)\.
-+ [Mesh](component-static-mesh.md)
-+ [Transform](component-transform.md)
++ [Particle](/docs/userguide/component-particle.md)
++ Lights – [Point Light](/docs/userguide/component-point-light.md), [Area Light](/docs/userguide/component-area-light.md), and [Projector Light](/docs/userguide/component-projector-light.md)\.
++ [Mesh](/docs/userguide/component-static-mesh.md)
++ [Transform](/docs/userguide/component-transform.md)
 
-For a complete list, see [Tweener Supported Components](ui-animating-tweener-components.md)\.
+For a complete list, see [Tweener Supported Components](/docs/userguide/ui-animating-tweener-components.md)\.
 
 **Topics**
-+ [Understanding Tweeners](ui-animating-tweener-understanding.md)
-+ [Tweener Sample Level](ui-animating-tweener-sample.md)
-+ [Tweener Supported Components](ui-animating-tweener-components.md)
-+ [Tweener Lua Script](ui-animating-tweener-lua-code.md)
-+ [Tweener Parameters](ui-animating-tweener-parameters.md)
-+ [Tweener Timeline](ui-animating-tweener-timeline.md)
++ [Understanding Tweeners](/docs/userguide/ui-animating-tweener-understanding.md)
++ [Tweener Sample Level](/docs/userguide/ui-animating-tweener-sample.md)
++ [Tweener Supported Components](/docs/userguide/ui-animating-tweener-components.md)
++ [Tweener Lua Script](/docs/userguide/ui-animating-tweener-lua-code.md)
++ [Tweener Parameters](/docs/userguide/ui-animating-tweener-parameters.md)
++ [Tweener Timeline](/docs/userguide/ui-animating-tweener-timeline.md)

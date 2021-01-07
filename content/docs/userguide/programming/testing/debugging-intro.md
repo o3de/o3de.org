@@ -12,4 +12,4 @@ Lumberyard includes a number of tools that are used for testing builds, profilin
 + [Using AZ Test Scanner](/docs/userguide/programming/testing/aztestscanner.md)
 + [Writing Tests for AzTest](/docs/userguide/programming/testing/aztest-writing-tests.md)
 + [Debugging Issues](/docs/userguide/debugging/intro.md)
-+ [Tracking File Access](tracking-file-access.md)
++ [Tracking File Access](/docs/userguide/tracking-file-access.md)

@@ -33,7 +33,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
 1. In Lumberyard Editor, do the following:
 
-   1.  [Create an entity](creating-entity.md) named **lamp**\.
+   1.  [Create an entity](/docs/userguide/creating-entity.md) named **lamp**\.
 
    1. Add the **[Point Light](/docs/userguide/components/point-light.md)** component to the entity\.
 
@@ -162,7 +162,7 @@ The following scenario is a more complex but commonly used example to develop a 
 
 **To set up the day\-to\-night cycle probes and script**
 
-1. [Create a set of entities](creating-entity.md) to represent times\. Put them in the same location and make them the same size\. 
+1. [Create a set of entities](/docs/userguide/creating-entity.md) to represent times\. Put them in the same location and make them the same size\. 
 
 1. Name the entities so that they correspond to a time on the 24\-hour clock, such as **probe1200** to represent noon\.
 

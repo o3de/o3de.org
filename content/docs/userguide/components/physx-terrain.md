@@ -35,7 +35,7 @@ As a best practice, create a top\-level entity in your level and add the **PhysX
 
 **To create a PhysX Terrain Collider**
 
-1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. Enter a name for the entity, such as *terrain*\.
 

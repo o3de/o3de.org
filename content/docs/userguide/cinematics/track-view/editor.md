@@ -37,7 +37,7 @@ After you create a sequence, you can add properties to it\. Any part of the sequ
 **Topics**
 + [Track View Editor Toolbars](/docs/userguide/cinematics/track-view/editor-toolbars.md)
 + [Track View Editor Nodes](/docs/userguide/cinematics/trackview-nodes.md)
-+ [Adding and Removing Animation Keys on Tracks](adding-removing-animation-keys-on-tracks.md)
++ [Adding and Removing Animation Keys on Tracks](/docs/userguide/adding-removing-animation-keys-on-tracks.md)
 + [Controlling the Playhead](/docs/userguide/cinematics/controlling-the-playhead.md)
 + [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)
 + [Using Animation Curves](/docs/userguide/cinematics/track-view/editor-animation-curves.md)

@@ -20,7 +20,7 @@ You can also paint the river bottom with a different texture than the surroundin
 
 **To create a river**
 
-1. [Create an entity\.](creating-entity.md)
+1. [Create an entity\.](/docs/userguide/creating-entity.md)
 
 1. [Add](/docs/userguide/components/working-adding.md) the **River** component\.
 

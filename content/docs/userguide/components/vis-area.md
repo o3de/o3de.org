@@ -42,7 +42,7 @@ The **VisArea** component has the following properties\.
 |  **AffectedBySun**  |  Objects in the visible area are affected by the sun\.  | 
 |  **ViewDistRatio**  |  A multiplier on the view distance of the visible area during editing\.  | 
 |  **OceanIsVisible**  |  Renders the ocean outside the visible area\.   | 
-|  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.  | 
+|  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  | 
 
 ## Vis Area Component Examples<a name="component-vis-area-examples"></a>
 

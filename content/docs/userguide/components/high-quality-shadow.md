@@ -14,7 +14,7 @@ title: High Quality Shadow
 
 You can use the **High Quality Shadow** component to give an entity its own shadow map that is a higher resolution than you could achieve with a global shadow map\. This component applies to light from the sun and helps provide crisp, well\-defined shadows\. You can use this on main characters or prominent elements to improve their appearance\. 
 
-This component can impact performance and memory, and should be used sparingly\. As such, it can be useful to dynamically change the **Enabled** setting as performance needs change during the game\. Use the **[Set Enabled](high-quality-shadow-set-enabled.md)** node to enable or disable the **High Quality Shadow** component in the **Script Canvas** editor\. For example, if your main character has a high quality shadow, you can enable it during cutscenes and disable it during gameplay\. 
+This component can impact performance and memory, and should be used sparingly\. As such, it can be useful to dynamically change the **Enabled** setting as performance needs change during the game\. Use the **[Set Enabled](/docs/userguide/high-quality-shadow-set-enabled.md)** node to enable or disable the **High Quality Shadow** component in the **Script Canvas** editor\. For example, if your main character has a high quality shadow, you can enable it during cutscenes and disable it during gameplay\. 
 
 For more information, see [Shadow Nodes](/docs/userguide/scripting/scriptcanvas/shadow-scripting-nodes.md)\.
 

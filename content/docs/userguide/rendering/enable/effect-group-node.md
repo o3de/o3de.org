@@ -8,7 +8,7 @@ title: Enable Effect Group
 Enables a specific group of effects setting that are defined in an `xml` file\. 
 
 **Note**  
-You must use the **[Apply Effect Group At Position](apply-effect-group-at-position-node.md)** node for effect group `xml` files that include the **fadeDistance** parameter\. 
+You must use the **[Apply Effect Group At Position](/docs/userguide/apply-effect-group-at-position-node.md)** node for effect group `xml` files that include the **fadeDistance** parameter\. 
 
 To disable the effect, see [Disable Effect Group](/docs/userguide/rendering/disable/effect-group-node.md)\.
 

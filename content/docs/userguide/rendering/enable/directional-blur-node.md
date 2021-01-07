@@ -5,7 +5,7 @@ title: Enable Directional Blur
 ---
 # Enable Directional Blur<a name="enable-directional-blur-node"></a>
 
-Applies a directional blur filter\. To enable this node, you must enable the `r_MotionBlur` console variable\. For more information, see [Using the Console Window](console-intro.md)\.
+Applies a directional blur filter\. To enable this node, you must enable the `r_MotionBlur` console variable\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 To disable the effect, see [Disable Directional Blur](/docs/userguide/rendering/disable/directional-blur-node.md)\.
 

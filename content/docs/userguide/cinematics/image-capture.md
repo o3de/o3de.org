@@ -55,7 +55,7 @@ You can capture image frames when a sequence is played in game mode\.
 
 ## Capturing Image Frames with Console Variables<a name="cinematics-image-capture-cvar"></a>
 
-Capture image frames with the following console variables\. For more information, see [Using the Console Window](console-intro.md)\.
+Capture image frames with the following console variables\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
 **Capture Image Frames Console Variables**  

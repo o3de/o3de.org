@@ -34,4 +34,4 @@ To debug shaders in applications such as RenderDoc, Nsight, or Pix, it's importa
    The console variable will change the DX11 compile flags in order to disable optimizations \(`/Od`\) and enable debugging information \(`/Zi`\)\.
 
 1. Save the file\. Lumberyard will automatically compile new shaders\.
-You can modify some console variables at runtime\. However, we recommend that you add this console variable to the `system_windows_pc.cfg` file\. For more information, see [Using the Console Window](console-intro.md)\.
+You can modify some console variables at runtime\. However, we recommend that you add this console variable to the `system_windows_pc.cfg` file\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.

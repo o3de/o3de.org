@@ -40,7 +40,7 @@ When you combine sides 1 and 2 into a single texture \(`skybox_12.tif`\), you mu
 
 1. Right\-click each texture and choose **RC Open Image**\.
 **Note**  
-If you do not see **RC Open Image**, you must install RC Shell Commands using the Lumberyard Setup Assistant\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](lumberyard-launcher-intro.md)\.
+If you do not see **RC Open Image**, you must install RC Shell Commands using the Lumberyard Setup Assistant\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 
 1. In the texture dialog box, under **Preset**, choose **SkyboxHDR** from the drop\-down list\. Click **OK**\. This will create a text file \(`imagename.exportsettings`\) that Lumberyard uses to compile the texture correctly\.
 

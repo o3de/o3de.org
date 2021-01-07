@@ -9,7 +9,7 @@ The command line version of Lumberyard Setup Assistant is useful for server and 
 
 You can find the executable file `SetupAssistantBatch.exe` in the `lumberyard version\dev\Tools\LmbrSetup\Win` directory\. This executable uses the `SetupAssistantConfig.json` file to complete its tasks\. 
 
-You can also use the batch file to create, enable, and disable capabilities, and to modify your projects and gems\. For more information, see [Lmbr\.exe](lmbr-exe.md)\.
+You can also use the batch file to create, enable, and disable capabilities, and to modify your projects and gems\. For more information, see [Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
 **To use Lumberyard Setup Assistant Batch**
 

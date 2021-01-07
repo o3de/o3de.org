@@ -13,10 +13,10 @@ title: '&ALY; Editors and Tools'
 
 Lumberyard provides the following suite of applications, editors, and tools for game development\.
 
-[Animation Editor](char-intro.md)  
+[Animation Editor](/docs/userguide/char-intro.md)  
 Manages character animations, attachments, and physics simulations along with blendspace and animation layering\.
 
-[Asset Browser](asset-browser-intro.md)  
+[Asset Browser](/docs/userguide/asset-browser-intro.md)  
 Displays all game assets available for use\.
 
 [Asset Processor](/docs/userguide/assets/processor.md)  
@@ -28,10 +28,10 @@ Manages audio translation layer \(ATL\) controls and events for the audio system
 [Animation Editor](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-editor.html) \(Legacy\)  
 Manages character animations, attachments, and physics simulations along with blendspace and animation layering\.
 
-[Console](console-intro.md)  
+[Console](/docs/userguide/console-intro.md)  
 Runs editor commands and lists available console variables\.
 
-[Database View](level-database-view.md)  
+[Database View](/docs/userguide/level-database-view.md)  
 Displays various object libraries such as entities, particles, and prefabs\.
 
 [Entity Inspector](/docs/userguide/components/entity-inspector.md)  
@@ -58,7 +58,7 @@ Generates geometry and material level of detail \(LOD\)\.
 [Lumberyard Editor](/docs/userguide/editor/intro.md)  
 Acts as the main workspace editor and game viewport; loads the **Rollup Bar** and console by default\.
 
-[Lumberyard Setup Assistant](lumberyard-launcher-intro.md)  
+[Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-intro.md)  
 Ensures that you have the necessary runtime software and SDKs installed to successfully run Lumberyard\.
 
 [Material Editor](/docs/userguide/materials/intro.md)  
@@ -109,5 +109,5 @@ Creates and manages cinematic scenes and sequences; consists of the Track View a
 [UI Editor](/docs/userguide/ui/editor/intro.md)  
 Creates, manages, and simulates user interface elements for your game, such as menus and heads\-up displays \(HUD\)\.
 
-[Universal Remote Console](lumberyard-remote-console.md)  
+[Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)  
 Used to connect to a remote instance of Lumberyard running on mobile devices\.

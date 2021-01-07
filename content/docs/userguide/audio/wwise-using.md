@@ -20,7 +20,7 @@ To author sounds with Wwise LTX for your game, you must first install Wwise LTX 
 
 **To install Audiokinetic Wwise LTX Authoring Tool**
 
-1. Run [Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
+1. Run [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. Choose **Install software**\.
 

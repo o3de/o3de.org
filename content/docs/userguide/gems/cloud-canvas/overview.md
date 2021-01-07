@@ -14,7 +14,7 @@ This section covers the following:
 
 ## Prerequisites<a name="cloud-canvas-core-concepts-prerequisites"></a>
 
-Before reading this topic, you should have a basic understanding of the [Lumberyard engine](lumberyard-intro.md)\.
+Before reading this topic, you should have a basic understanding of the [Lumberyard engine](/docs/userguide/lumberyard-intro.md)\.
 
 ## AWS, Cloud Canvas, and Lumberyard<a name="cloud-canvas-core-concepts-aws-cc-ly"></a>
 

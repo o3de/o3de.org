@@ -42,7 +42,7 @@ By default, the navigation seed visualization system is not enabled\. You must u
   + `ai_DebugDraw`
   + `ai_DebugDrawNavigation`
 
-  For more information, see [Using the Console Window](console-intro.md)\.
+  For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 **Note**  
 The **Navigation Seed **component exists only in Lumberyard Editor\.

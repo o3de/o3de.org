@@ -15,7 +15,7 @@ Where:
 + `compiler`
   + `vc141` – Visual Studio 2017\.
   + `vc142` – Visual Studio 2019\.
-+ [ `build mode`](game-build-intro.md)
++ [ `build mode`](/docs/userguide/game-build-intro.md)
   + `Debug` – Built in debug mode\.
   + \(None\) – Built in profile mode\.
   + `Performance` – Built in performance mode\.

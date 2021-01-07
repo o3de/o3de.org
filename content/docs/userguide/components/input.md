@@ -13,7 +13,7 @@ To work with inputs, you must enable the [Input Management Framework](/docs/user
 
 **Topics**
 + [Input Properties](#component-input-configuration-properties)
-+ [Working with the Input Component](working-with-the-input-component.md)
++ [Working with the Input Component](/docs/userguide/working-with-the-input-component.md)
 + [Input Component EBus Interface](/docs/userguide/components/input-event-bus-interface.md)
 
 ## Input Properties<a name="component-input-configuration-properties"></a>

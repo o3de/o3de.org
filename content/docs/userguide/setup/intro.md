@@ -19,8 +19,8 @@ After Lumberyard is installed, use Project Configurator to select a project or c
 **Topics**
 + [System requirements](/docs/userguide/setup/system-requirements.md)
 + [Installing Lumberyard](/docs/userguide/setup/downloading-lumberyard.md)
-+ [Upgrading Lumberyard](lumberyard-upgrading.md)
-+ [Using Lumberyard Setup Assistant to Set Up Your Development Environment](lumberyard-launcher-intro.md)
++ [Upgrading Lumberyard](/docs/userguide/lumberyard-upgrading.md)
++ [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)
 + [Enabling a Firewall](/docs/userguide/setup/firewall.md)
 + [Using the Perforce Plugin with Lumberyard](/docs/userguide/setup/lumberyard-perforce-plugin.md)
-+ [Uninstalling Amazon Lumberyard](uninstalling-amazon-lumberyard.md)
++ [Uninstalling Amazon Lumberyard](/docs/userguide/uninstalling-amazon-lumberyard.md)

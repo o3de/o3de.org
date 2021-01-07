@@ -9,7 +9,7 @@ You can use the **Infinite Ocean** component with the **Script Canvas** editor t
 
 **To use the **Infinite Ocean** component with the Script Canvas editor**
 
-1. In Lumberyard Editor, [create an entity](creating-entity.md) and attach the **Infinite Ocean** component\. Ensure that the component is positioned correctly in your level\.
+1. In Lumberyard Editor, [create an entity](/docs/userguide/creating-entity.md) and attach the **Infinite Ocean** component\. Ensure that the component is positioned correctly in your level\.
 
 1. In the Entity Inspector, for **Wave Size**, enter `0`\. This creates a flat ocean, so you can see how the **Script Canvas** editor interacts with the component\.
 

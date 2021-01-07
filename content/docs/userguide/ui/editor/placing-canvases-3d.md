@@ -16,9 +16,9 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 1. [Create your UI canvas file](/docs/userguide/ui/editor/creating-canvases.md)\. In the [canvas properties](/docs/userguide/ui/editor/canvas-properties.md), select **Render to texture** and enter a name in the **Render target** text box\. You can enter any name, but the convention is to prefix the name with the `$` character to distinguish it from other texture assets\.
 
-1. In the level, create a [component entity](creating-entity.md)\.
+1. In the level, create a [component entity](/docs/userguide/creating-entity.md)\.
 
-1. In the **Entity Inspector**, [add to this component entity](creating-adding-components.md) a **UI Canvas Asset Ref** to specify the UI canvas and optionally to load it automatically when the level loads\.
+1. In the **Entity Inspector**, [add to this component entity](/docs/userguide/creating-adding-components.md) a **UI Canvas Asset Ref** to specify the UI canvas and optionally to load it automatically when the level loads\.
 
 1. In the [**Material Editor**](/docs/userguide/materials/surface-types.md), create a material that uses the render target texture that is rendered by your canvas\. Under **Texture Maps**, for **Diffuse**, specify the texture file name\. 
 

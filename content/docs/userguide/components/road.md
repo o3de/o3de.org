@@ -62,7 +62,7 @@ See the following **Road** properties:
 
 **To create a road**
 
-1. [Create an entity\.](creating-entity.md)
+1. [Create an entity\.](/docs/userguide/creating-entity.md)
 
 1. [Add](/docs/userguide/components/working-adding.md) the **Road** component\.
 

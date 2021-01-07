@@ -14,7 +14,7 @@ title: Using Manipulators
 
 With manipulators, you can edit certain component properties directly in the viewport instead of the component's property window\. Manipulators help you visualize and achieve the results that you want for your components\. For example, you can add, move, and delete vertices on a **[Spline](/docs/userguide/components/spline.md)** component to create the exact curvature that you want for your level\.
 
-By default, some components support manipulators\.When you author new components, you can also manually add manipulator support\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.
+By default, some components support manipulators\.When you author new components, you can also manually add manipulator support\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.
 
 **Topics**
 + [General Case Manipulators](#component-manipulators-general)

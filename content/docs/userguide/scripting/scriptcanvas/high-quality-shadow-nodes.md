@@ -8,5 +8,5 @@ title: High Quality Shadow
 You use can use the following **High Quality Shadow** nodes in the **Script Canvas** editor to configure effects with the **[High Quality Shadow](/docs/userguide/components/high-quality-shadow.md)** component\.
 
 **Topics**
-+ [Get Enabled](high-quality-shadow-get-enabled.md)
-+ [Set Enabled](high-quality-shadow-set-enabled.md)
++ [Get Enabled](/docs/userguide/high-quality-shadow-get-enabled.md)
++ [Set Enabled](/docs/userguide/high-quality-shadow-set-enabled.md)

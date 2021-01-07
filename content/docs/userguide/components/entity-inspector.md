@@ -23,8 +23,8 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
 
 Use the **Entity Inspector** to do the following:
 + [Add components to entities](/docs/userguide/components/working-adding.md)
-+ [Modify component properties](editing-component-properties.md)
-+ [Remove, copy, cut, and paste components](creating-adding-components.md)
++ [Modify component properties](/docs/userguide/editing-component-properties.md)
++ [Remove, copy, cut, and paste components](/docs/userguide/creating-adding-components.md)
 + [Set the entity status](/docs/userguide/components/entity-inspector-status.md)
 + [Customize the entity icon](/docs/userguide/components/entity-inspector-customize-icon.md)
 + [Pin an entity's inspector](/docs/userguide/components/entity-inspector-pin.md)

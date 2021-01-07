@@ -32,7 +32,7 @@ For more information about creating iOS apps, see [iOS Support](/docs/userguide/
       + **Compile the Lumberyard Editor and tools**
       + **Compile for iOS devices**
 
-   1. Complete the Lumberyard Setup Assistant wizard\. For more information, see [Running Lumberyard Setup Assistant](lumberyard-launcher-using.md)\.
+   1. Complete the Lumberyard Setup Assistant wizard\. For more information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. Configure Asset Processor for iOS\.
 

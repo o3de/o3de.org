@@ -5,7 +5,7 @@ title: ScreenFader EBuses
 ---
 # ScreenFader EBuses<a name="screen-fader-ebuses"></a>
 
-Provides the Lua scripting equivalent to the **[Screen Fader](screen-fader-node.md)** node in **Script Canvas**\. 
+Provides the Lua scripting equivalent to the **[Screen Fader](/docs/userguide/screen-fader-node.md)** node in **Script Canvas**\. 
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
@@ -56,7 +56,7 @@ Sets a texture for the fade overlay\.
 
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| textureName | String |  The name of a texture from or to which to fade\. To clear the texture, specify an empty string\. For more information, see [Finding the Texture Name](finding-texture-by-names.md)\.  | 
+| textureName | String |  The name of a texture from or to which to fade\. To clear the texture, specify an empty string\. For more information, see [Finding the Texture Name](/docs/userguide/finding-texture-by-names.md)\.  | 
 
 ## ScreenFaderRequestBus SetScreenCoordinates<a name="screen-fader-request-bus-set-screen-coordinates"></a>
 

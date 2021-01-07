@@ -15,6 +15,6 @@ Learn about the details of creating, configuring, managing, and building your Lu
 | Topic Area | Description | 
 | --- | --- | 
 | [Create a project](/docs/userguide/configurator/intro.md) | Learn how to create and configure a new Lumberyard game project with Waf\. | 
-| [Manage a project with lmbr\.exe](lmbr-exe.md) | Learn how to manage the configuration and details of your Lumberyard game project\. | 
-| [Build a project](game-build-intro.md) | Learn how to build your Lumberyard game project with Waf\. | 
+| [Manage a project with lmbr\.exe](/docs/userguide/lmbr-exe.md) | Learn how to manage the configuration and details of your Lumberyard game project\. | 
+| [Build a project](/docs/userguide/game-build-intro.md) | Learn how to build your Lumberyard game project with Waf\. | 
 | [Sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md) | Learn about the sample game projects provided in the Lumberyard installation, and discover examples that can accelerate your understanding of Lumberyard and your game's development\. | 

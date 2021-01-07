@@ -16,7 +16,7 @@ If you already have bundles to test, you can use *bundle mode* instead of seed m
 
 ## Prerequisites<a name="asset-bundler-asset-validation-gem-prerequisites"></a>
 
-[Enable](/docs/userguide/gems/using-project-configurator.md) the Asset Validation gem in your game project, and then [build](game-build-intro.md) your game project\.
+[Enable](/docs/userguide/gems/using-project-configurator.md) the Asset Validation gem in your game project, and then [build](/docs/userguide/game-build-intro.md) your game project\.
 
 ## Seed Mode Commands<a name="asset-bundler-asset-validation-gem-seed-mode-commands"></a>
 

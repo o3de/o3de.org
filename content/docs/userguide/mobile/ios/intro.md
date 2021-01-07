@@ -92,7 +92,7 @@ The Release app contains the executable and all binaries and assets that are req
 + [Building Your iOS App](/docs/userguide/mobile/ios/game-building.md)
 + [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)
 + [Using Virtual File System with iOS](/docs/userguide/mobile/ios/virtual-file-system.md)
-+ [Universal Remote Console](lumberyard-remote-console.md)
++ [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)
 + [Sharing Assets Between Windows and macOS](/docs/userguide/mobile/ios/sharing-assets-between-mac-pc.md)
 + [Add iOS Frameworks to a Lumberyard project](/docs/userguide/mobile/ios/custom-frameworks.md)
 + [iOS Debugging and Troubleshooting](/docs/userguide/mobile/ios/debugging-troubleshooting.md)

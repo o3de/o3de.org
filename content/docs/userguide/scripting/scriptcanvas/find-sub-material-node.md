@@ -29,7 +29,7 @@ To access a single material, you can use the **[Find by Name](/docs/userguide/ma
 | Pin | Type | Description | 
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
-| Material Name | String |  The path name of the material to find\. The material must be a multimaterial\. For more information, see [Finding the Material Name](finding-materials-by-name.md)\.  | 
+| Material Name | String |  The path name of the material to find\. The material must be a multimaterial\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  | 
 | Material ID | Number | ID of the submaterial in the multimaterial\. IDs start at 1\. | 
 | Should Load | Boolean | If true, the submaterial is loaded if it is not already available\. | 
 

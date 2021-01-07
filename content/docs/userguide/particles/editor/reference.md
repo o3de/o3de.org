@@ -20,7 +20,7 @@ Some parameters have additional settings:
 + **Strength Over Particle Life** – Controls the alpha strength over the lifetime of an individual particle\. For example, you can use this parameter to make a smoke particle fade to nothing once its lifetime has finished\. The particle fades out earlier or later depending on where you reduce the value to zero\. 
 
 **Topics**
-+ [Using the Curve Editor in the Particle Editor](emitter-curve-editor.md)
++ [Using the Curve Editor in the Particle Editor](/docs/userguide/emitter-curve-editor.md)
 + [Advanced Attribute](/docs/userguide/particles/editor/reference-advanced.md)
 + [Audio Attribute](/docs/userguide/particles/editor/reference-audio.md)
 + [Collision Attribute](/docs/userguide/particles/editor/reference-collision.md)

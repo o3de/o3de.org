@@ -124,7 +124,7 @@ The basic setup for the **Video Playback** component includes the following:
 
    You can use the camera to view your video playback\. Ensure that the camera is facing the direction where you place your video playback component\.
 
-1. Create an entity\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. Create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. Use the [Entity Inspector](/docs/userguide/components/entity-inspector.md) to add a **[Mesh](/docs/userguide/components/static-mesh.md)** component to your entity\.
 

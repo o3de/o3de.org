@@ -31,7 +31,7 @@ When you create a system component as part of a gem, note the following requirem
 
 ### Example: HttpRequestorSystemComponent<a name="component-entity-system-pg-creating-system-components-gem-example"></a>
 
-The [HttpRequestor gem](http-requestor-gem.md) makes asynchronous HTTP/HTTPS requests and returns data through a callback function that you provide\. The HttpRequestor gem uses the EBus for communication and provides all requests asynchronously\. The `HttpRequestorSystemComponent` is part of the HttpRequestor gem\. You can find the source code files for the gem under the `lumberyard_version\dev\Gems\HttpRequestor\Code\` directory\.
+The [HttpRequestor gem](/docs/userguide/http-requestor-gem.md) makes asynchronous HTTP/HTTPS requests and returns data through a callback function that you provide\. The HttpRequestor gem uses the EBus for communication and provides all requests asynchronously\. The `HttpRequestorSystemComponent` is part of the HttpRequestor gem\. You can find the source code files for the gem under the `lumberyard_version\dev\Gems\HttpRequestor\Code\` directory\.
 
 **The HttpRequestor EBus**
 

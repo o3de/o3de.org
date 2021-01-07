@@ -22,7 +22,7 @@ To use the **River** component, you must [enable](/docs/userguide/gems/using-pro
 
 **Topics**
 + [River Properties](#component-river-properties)
-+ [Working with the River Component](working-with-the-river-component.md)
++ [Working with the River Component](/docs/userguide/working-with-the-river-component.md)
 + [River Request Bus Interface](/docs/userguide/components/river-riverrequestbus-interface-ebus.md)
 
 ## River Properties<a name="component-river-properties"></a>
@@ -51,7 +51,7 @@ See the following **River** component properties\.
 | Density | Specifies how dense the fog appears\. Specify higher values for thicker fog\. | 
 | Color | Color of the fog\. | 
 | Affected by Sun | If selected, the value for the Sun color parameter in the [Time of Day Editor](/docs/userguide/sky/day-sun-params.md) affects fog color of the river\. | 
-| Shadowing | Sets the shadow darkness on the surface of the river\. To enable this parameter, set the console variable `r_FogShadowsWater` to `1`\. For more information, see [Using the Console Window](console-intro.md)\. | 
+| Shadowing | Sets the shadow darkness on the surface of the river\. To enable this parameter, set the console variable `r_FogShadowsWater` to `1`\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\. | 
 | Caustics \- Enabled | Enables caustics – Light rays that are reflected or refracted by the water's surface\. | 
 | Intensity | Intensity of normals during caustics generation\. | 
 | Height | Distance above water's surface that caustics are visible\. | 

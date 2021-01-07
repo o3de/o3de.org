@@ -42,7 +42,7 @@ The gradient entity provides the noise signal to reference from the vegetation e
 
 **To create a gradient entity**
 
-1. [Create a child entity](creating-entity.md) under your vegetation area entity and select it\.
+1. [Create a child entity](/docs/userguide/creating-entity.md) under your vegetation area entity and select it\.
 
 1. Rename your new entity to a descriptive name, such as **Gradient**\.  
 ![\[Rename your new entity to a descriptive name, such as Gradient.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-rename-entity.png)

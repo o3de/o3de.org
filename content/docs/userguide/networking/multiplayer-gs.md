@@ -16,7 +16,7 @@ This tutorial guides you through the following tasks:
 This tutorial assumes the following:
 + You installed Amazon Lumberyard\.
 + You created a game project\. For more information, see [Creating and Switching Game Projects](/docs/userguide/configurator/projects.md)\.
-+ Your game project has the **Multiplayer** gem\. You can enable the gem in Lumberyard's [Project Configurator](/docs/userguide/configurator/intro.md)\. After enabling the gem, [build your project](game-build-intro.md)\.
++ Your game project has the **Multiplayer** gem\. You can enable the gem in Lumberyard's [Project Configurator](/docs/userguide/configurator/intro.md)\. After enabling the gem, [build your project](/docs/userguide/game-build-intro.md)\.
 
 **Note**  
 This tutorial uses Visual Studio 2017\.

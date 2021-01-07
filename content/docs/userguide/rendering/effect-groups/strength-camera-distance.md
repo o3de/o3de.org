@@ -19,7 +19,7 @@ Example opening XML tag using the **fadeDistance** attribute:
 
 ## Script Canvas Editor<a name="effect-groups-strength-camera-distance-with-script-canvas"></a>
 
-You need to use a script to apply this effect group at the specified position for each frame\. For more information, see the **[Apply Effect Group At Position](apply-effect-group-at-position-node.md)** node\.
+You need to use a script to apply this effect group at the specified position for each frame\. For more information, see the **[Apply Effect Group At Position](/docs/userguide/apply-effect-group-at-position-node.md)** node\.
 
 **Example**  
 The following script uses the **Get World Translation** to send the entity's position to the **Apply Effect Group At Position** node; this node then applies the effect group to that specified position\.  

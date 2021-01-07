@@ -35,7 +35,7 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 ![\[Input Channel selection for the VirtualGamepadButton\]](/images/userguide/gems/gems-system-gem-virtualgamepad-2.png)
 
-For more information about input in Lumberyard, see [Input in Amazon Lumberyard](input-intro.md)\.
+For more information about input in Lumberyard, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\.
 
 To modify the list of available virtual gamepad input channels, use the Project Configurator to edit the virtual gamepad's system component \. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 

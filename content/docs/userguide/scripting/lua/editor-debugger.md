@@ -46,7 +46,7 @@ This tutorial shows you how to use Lumberyard Editor to create a sample level in
 
    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug\. In this tutorial, you connect to Lumberyard Editor\.
 **Note**  
-Connection is facilitated by [GridHub](gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
+Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to Lumberyard Editor\.  
 ![\[Target selector\]](/images/userguide/lua-editor-debugger-target-editor.png)

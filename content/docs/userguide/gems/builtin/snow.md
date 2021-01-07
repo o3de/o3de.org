@@ -57,7 +57,7 @@ You can configure the snow's properties under [https://docs.aws.amazon.com/lumbe
 
 ## Using Console Variables for Snow<a name="snow-console-variables"></a>
 
-You can use the following console variables [console variables](console-intro.md) for the snow entity\.
+You can use the following console variables [console variables](/docs/userguide/console-intro.md) for the snow entity\.
 
 
 **Snow Entity Console Variables**  

@@ -53,7 +53,7 @@ After you upgrade the SDK, project, and soundbanks, you can open your game in Lu
 
    This instructs the WAF build system to use Wwise instead of Wwise LTX\.
 
-1. Configure WAF and build the project\. For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+1. Configure WAF and build the project\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 ## Upgrading Your Project<a name="audio-wwise-upgrading-project"></a>
 

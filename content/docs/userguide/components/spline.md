@@ -36,7 +36,7 @@ The **Spline** component has the following properties\.
 | Closed |  Specifies whether a spline is a closed or open loop\.  | 
 | Granularity |  This property is available only for Bézier and Catmull\-Rom spline types\. The number of steps for each segment that are in the spline\. A step is one of the many short lines that are arranged to approximate the shape of the curve\. A segment is the part of the spline between two vertices\.   | 
 | Knot Parameterization |  This property is available only for the Catmull\-Rom spline type\. Adjusts the curvature and smoothness of the spline\. Specify a value to support parameterization\.  A value of `0` creates a standard Catmull\-Rom spline\. A value of `1` creates a chordal Catmull\-Rom spline\.  For more information, see [Knot Parameterization examples](#knot-paramterization-example)\.  | 
-|  **Edit**  |  Choose **Edit** and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.  | 
+|  **Edit**  |  Choose **Edit** and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  | 
 
 By default, a **Spline** component has four vertices that are spaced evenly in a line\. The vertex positions are stored in the local space of the entity\.
 
@@ -50,7 +50,7 @@ You can move the vertices in the local space of the entity along each axis\. Eac
 
 1. Do one of the following:
    + In the viewport, double\-click the spline\.
-   + In the **Entity Inspector**, choose **Edit**\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.
+   + In the **Entity Inspector**, choose **Edit**\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.
 
 1.  Do one of the following: 
    + Select a vertex on the component and drag either the blue, green, or red arrow \(linear manipulator\) or the hollow blue, green, or red square \(planar manipulator\) to a position\.

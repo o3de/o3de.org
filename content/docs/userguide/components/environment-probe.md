@@ -7,7 +7,7 @@ title: Environment Probe
 
 Use the **Environment Probe** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\.
 
-For information about how to blend environment probes to create a smooth transition, for example, from day to night, see [Blending Environment Probes](level-blending-environment-probe.md)\.
+For information about how to blend environment probes to create a smooth transition, for example, from day to night, see [Blending Environment Probes](/docs/userguide/level-blending-environment-probe.md)\.
 
 The **Environment Probe** component has the following settings:
 

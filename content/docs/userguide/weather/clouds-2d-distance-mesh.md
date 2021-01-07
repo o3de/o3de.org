@@ -12,7 +12,7 @@ Distance clouds are two\-dimensional clouds that are placed at a great distance,
 
 **To place distance clouds**
 
-1. [Create an entity\.](creating-entity.md)
+1. [Create an entity\.](/docs/userguide/creating-entity.md)
 
 1. [Add](/docs/userguide/components/working-adding.md) the [**Mesh**](/docs/userguide/components/static-mesh.md) component to the entity\.
 

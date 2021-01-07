@@ -44,7 +44,7 @@ The **Portal** component has the following properties\.
 |  **LightBlending**  |  Specify whether to blend light between connected visible areas\.  | 
 |  **LightBlendValue**  |  The amount of light to blend between connected visible areas\.  | 
 |  **Vertices**  |  The vertices that define the floor of the portal\.   | 
-|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\. | 
+|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. | 
 
 ## Portal Component Examples<a name="component-portal-examples"></a>
 

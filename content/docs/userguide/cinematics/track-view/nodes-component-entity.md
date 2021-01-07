@@ -40,7 +40,7 @@ Lumberyard uses entity IDs to identify component entities, which means that you 
 
 ![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
-If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing\. For more information, see [Working with Slices and Sequences](working-with-slices-cinematic-sequences.md)\.
+If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing\. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md)\.
 
 ## Adding or Removing Components from a Component Entity<a name="cinematics-track-view-component-entity-add-remove-components"></a>
 
@@ -65,4 +65,4 @@ Not all components can be animated in the Track View\. For more information abou
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline\. In keyframes, you specify where in the timeline you want to animate the property and edit its properties\.
 
-For more information, see [Adding and Removing Animation Keys on Tracks](adding-removing-animation-keys-on-tracks.md)\.
+For more information, see [Adding and Removing Animation Keys on Tracks](/docs/userguide/adding-removing-animation-keys-on-tracks.md)\.

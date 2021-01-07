@@ -23,6 +23,6 @@ Certain third\-party software may require a license\. Please consult the terms o
 + Certain options require an installation of Microsoft Visual Studio\. For more information, see [System requirements](/docs/userguide/setup/system-requirements.md)\.
 
 **Topics**
-+ [Running Lumberyard Setup Assistant](lumberyard-launcher-using.md)
-+ [Using Lumberyard Setup Assistant Batch](lumberyard-launcher-batch-using.md)
-+ [Customizing Lumberyard Setup Assistant](lumberyard-launcher-customizing.md)
++ [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)
++ [Using Lumberyard Setup Assistant Batch](/docs/userguide/lumberyard-launcher-batch-using.md)
++ [Customizing Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-customizing.md)

@@ -67,7 +67,7 @@ If you don't meet the prerequisites, see [Enabling Gems](/docs/userguide/gems/us
 
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-metrics-prerequisites)
-+ [Sending Test Metrics with the Metrics Sample Level](send-test-events-for-the-cloud-canvas-game-metrics-gem.md)
-+ [Sending Test Metrics with the Command Line](command-line-options-for-the-cloud-gem-metrics.md)
-+ [Using the Game Metrics Cloud Gem Portal](using-the-cloud-gem-metrics-portal.md)
++ [Sending Test Metrics with the Metrics Sample Level](/docs/userguide/send-test-events-for-the-cloud-canvas-game-metrics-gem.md)
++ [Sending Test Metrics with the Command Line](/docs/userguide/command-line-options-for-the-cloud-gem-metrics.md)
++ [Using the Game Metrics Cloud Gem Portal](/docs/userguide/using-the-cloud-gem-metrics-portal.md)
 + [Using Heatmap Analytics](/docs/userguide/gems/cloud-canvas/game-metrics-heatmap-analytics-intro.md)

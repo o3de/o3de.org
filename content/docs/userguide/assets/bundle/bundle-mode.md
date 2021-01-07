@@ -45,7 +45,7 @@ Editor: `lumberyard_version\dev\editor.cfg`
 
 Runtime: `lumberyard_version\dev\project_name\autoexec.cfg`
 
-You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](lumberyard-remote-console.md)\.
+You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)\.
 
 ## Bundle Mode Commands<a name="asset-bundler-bundle-mode-bundle-mode-commands"></a>
 

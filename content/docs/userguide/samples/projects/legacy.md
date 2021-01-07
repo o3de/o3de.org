@@ -16,7 +16,7 @@ The legacy game sample is Windows only and is not supported on console or mobile
 
 1. Download the `GameSDK.zip` package at [Lumberyard Previous Versions](https://aws.amazon.com/lumberyard/downloads/previous-versions/) and extract it in your Lumberyard directory\. For example, `\lumberyard\1.x.0.0`\.
 
-1. Open [Lumberyard Setup Assistant](lumberyard-launcher-using.md) and on the **Summary** page, click **Project Configurator**\.
+1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md) and on the **Summary** page, click **Project Configurator**\.
 **Note**  
 To ensure that the GameSDK project launches, you must use Lumberyard Setup Assistant to open the Project Configurator\. Lumberyard Setup Assistant copies required SDKs from the `3rdParty` directory into the `dev\GameSDK` directory\.
 

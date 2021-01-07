@@ -5,7 +5,7 @@ title: Console Variables for Fog
 ---
 # Console Variables for Fog<a name="rendering-graphics-fog-cvar"></a>
 
-The following console variables can be used to control fog\. For more information, see [Using the Console Window](console-intro.md)\.
+The following console variables can be used to control fog\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
 ****  

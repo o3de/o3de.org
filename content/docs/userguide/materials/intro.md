@@ -13,7 +13,7 @@ The Material Editor is the primary tool used to create materials, texture mappin
 ![\[Image NOT FOUND\]](/images/userguide/material-editor.png)
 
 **Topics**
-+ [Concepts](graphics-concepts.md)
++ [Concepts](/docs/userguide/graphics-concepts.md)
 + [Shader Rendering System](/docs/userguide/materials/shaders/intro.md)
 + [Shader Reference](/docs/userguide/shaders/intro.md)
 + [Selecting Material Surface Type](/docs/userguide/materials/surface-types.md)

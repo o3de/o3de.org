@@ -17,18 +17,18 @@ For more information, see [Working with Substances](/docs/userguide/materials/su
 
 1. **Reference the procedural material file**
 
-   To reference the procedural material, use the **[Find by Name](find-by-name-procedural-material-node.md)** or **[Find by Name and Index](find-by-name-and-index-node.md)** node\.
+   To reference the procedural material, use the **[Find by Name](/docs/userguide/find-by-name-procedural-material-node.md)** or **[Find by Name and Index](/docs/userguide/find-by-name-and-index-node.md)** node\.
 
 1. **Modify the parameter values for the procedural material**
 
    Use the **Set Input <Type>** nodes to modify the parameter values for the procedural material\. The values that you specify in the nodes modify the parameters that update the procedural material's textures\. You can modify parameters for multiple procedural materials in a single frame\. 
 **Note**  
 *Input parameters* are the parameters that you modify for the procedural material\. You can find the parameters for a material in the **Substance Editor**\. For example, the sample procedural material `brickWall_04` has input parameters such as **Age**, **Mortar**, and **Depth**\.   
-To modify these input parameters during runtime, specify the parameter name and its value in a node such as **[Set Input Number](set-input-number-node.md)**\.
+To modify these input parameters during runtime, specify the parameter name and its value in a node such as **[Set Input Number](/docs/userguide/set-input-number-node.md)**\.
 
 1. **Render the procedural materials**
 
-   After you specify the changes that you want, use the **[Render Asynchronous](render-asynchronous-node.md)** or **[Render Synchronous](render-synchronous-node.md)** node to update the procedural material's texture\. The render node applies to all procedural materials in which their parameters have changed, so at most, call a render node once per frame\.
+   After you specify the changes that you want, use the **[Render Asynchronous](/docs/userguide/render-asynchronous-node.md)** or **[Render Synchronous](/docs/userguide/render-synchronous-node.md)** node to update the procedural material's texture\. The render node applies to all procedural materials in which their parameters have changed, so at most, call a render node once per frame\.
 
 **Example**  
 The Allegorithmic Substance gem includes a sample procedural material named `brickWall_04`\. You can import this file into Lumberyard and write a script that dynamically changes the **Age** and **Mortar** input parameter values, so that the wall appears to erode over time\. <a name="example-brick-wall-render-asynchronous-script"></a>
@@ -51,23 +51,23 @@ See the following example script to enable this effect\.
 
 1. With the **Force** parameter enabled, the **Render Asynchronous** node \(8\) applies these changes to the procedural material's textures\.
 **Note**  
-Steps 6 and 7 are not always required, but are examples of how you can use the **Render Asynchronous** node's **Force** parameter to guarantee that a final update is applied\. For more information, see **[Render Asynchronous](render-asynchronous-node.md)**\.
+Steps 6 and 7 are not always required, but are examples of how you can use the **Render Asynchronous** node's **Force** parameter to guarantee that a final update is applied\. For more information, see **[Render Asynchronous](/docs/userguide/render-asynchronous-node.md)**\.
 
 **Topics**
-+ [Find by Name](find-by-name-procedural-material-node.md)
-+ [Find by Name and Index](find-by-name-and-index-node.md)
-+ [Get Input Color](get-input-color-node.md)
-+ [Get Input Number](get-input-number-node.md)
-+ [Get Input String](get-input-string-node.md)
-+ [Get Input Vector2](get-input-vector2-node.md)
-+ [Get Input Vector3](get-input-vector3-node.md)
-+ [Get Input Vector4](get-input-vector4-node.md)
-+ [On Render Finished](on-render-finished-node.md)
-+ [Render Asynchronous](render-asynchronous-node.md)
-+ [Render Synchronous](render-synchronous-node.md)
-+ [Set Input Color](set-input-color-node.md)
-+ [Set Input Number](set-input-number-node.md)
-+ [Set Input String](set-input-string-node.md)
-+ [Set Input Vector2](set-input-vector2-node.md)
-+ [Set Input Vector3](set-input-vector3-node.md)
-+ [Set Input Vector4](set-input-vector4-node.md)
++ [Find by Name](/docs/userguide/find-by-name-procedural-material-node.md)
++ [Find by Name and Index](/docs/userguide/find-by-name-and-index-node.md)
++ [Get Input Color](/docs/userguide/get-input-color-node.md)
++ [Get Input Number](/docs/userguide/get-input-number-node.md)
++ [Get Input String](/docs/userguide/get-input-string-node.md)
++ [Get Input Vector2](/docs/userguide/get-input-vector2-node.md)
++ [Get Input Vector3](/docs/userguide/get-input-vector3-node.md)
++ [Get Input Vector4](/docs/userguide/get-input-vector4-node.md)
++ [On Render Finished](/docs/userguide/on-render-finished-node.md)
++ [Render Asynchronous](/docs/userguide/render-asynchronous-node.md)
++ [Render Synchronous](/docs/userguide/render-synchronous-node.md)
++ [Set Input Color](/docs/userguide/set-input-color-node.md)
++ [Set Input Number](/docs/userguide/set-input-number-node.md)
++ [Set Input String](/docs/userguide/set-input-string-node.md)
++ [Set Input Vector2](/docs/userguide/set-input-vector2-node.md)
++ [Set Input Vector3](/docs/userguide/set-input-vector3-node.md)
++ [Set Input Vector4](/docs/userguide/set-input-vector4-node.md)

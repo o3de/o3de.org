@@ -68,7 +68,7 @@ In the **Asset Browser**, right\-click an asset to display a context menu\. The 
 + **Open in Explorer** – Opens the asset in Windows Explorer\.
 + **Copy Name To Clipboard** – Copies the asset name\.
 + **Copy Path To Clipboard** – Copies the path of the asset\.
-+ **Edit Texture Settings** – Opens the asset in the Texture Settings Editor\. For more information, see [Texture Settings Editor](texture-settings-editor.md)\.
++ **Edit Texture Settings** – Opens the asset in the Texture Settings Editor\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
 
 **Note**  
 You can also open some files in their respective Lumberyard tool, such as the **Lua Editor** for `.lua` files\.  
@@ -82,7 +82,7 @@ Some files, such as `.fbx` files, have an additional **Edit Settings** option, w
 
 **Slices**  
 The following additional options appear for slices:
-+ **Set Dynamic Slice** – Create a runtime version of a slice\. For more information, see [Working with Dynamic Slices](dynamic-slices-what-is.md)\.
++ **Set Dynamic Slice** – Create a runtime version of a slice\. For more information, see [Working with Dynamic Slices](/docs/userguide/dynamic-slices-what-is.md)\.
 + **Unset Dynamic Slice** – Remove a dynamic slice\.
 + **Open in Slice Relationship View** – Show the dependencies and dependent members of the slice in a hierarchical view\.  
 **Example**  

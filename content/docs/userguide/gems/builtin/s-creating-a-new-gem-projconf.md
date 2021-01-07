@@ -81,5 +81,5 @@ If this directory is not present, you can manually add it\. If you don't have an
    + `Code\Tests\gem_nameTest.cpp`
 
 1. Build your game project:
-   + If your gem is a **Code & Assets** gem, you must [build your project](game-build-intro.md)\.
+   + If your gem is a **Code & Assets** gem, you must [build your project](/docs/userguide/game-build-intro.md)\.
    + If your gem is an **Assets Only** gem, you do not need to build your project\.

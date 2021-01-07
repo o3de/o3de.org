@@ -34,7 +34,7 @@ Entity \(**1**\) has a **[Camera](/docs/userguide/components/camera.md)** compon
 
 **To use the Render to Texture component**
 
-1. In Lumberyard Editor, create an entity in the viewport\. For more information, see [Creating an Entity](creating-entity.md)\.
+1. In Lumberyard Editor, create an entity in the viewport\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. In the **Entity Inspector**, click **Add Component**\.
 
@@ -157,7 +157,7 @@ The **Render to Texture** component supports DirectX 11 for Windows\.
 
 Forces the object LOD to update at the beginning of the frame instead of the end of the previous frame\. If you don't set this console variable, you may see LOD flickering\.
 
-For more information about setting console variables, see [Using the Console Window](console-intro.md)\.
+For more information about setting console variables, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 ```
 e_LodForceUpdate=1

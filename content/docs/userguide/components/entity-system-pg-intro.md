@@ -35,7 +35,7 @@ Entities are never allowed to be in a state in which one of their component depe
 + [Defining and Using Component Services](/docs/userguide/components/entity-system-pg-defining-using-component-services.md)
 + [Editor Components](/docs/userguide/components/entity-system-pg-editor-components.md)
 + [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)
-+ [Programmer's Guide to Component Mode](working-with-component-mode-programmatically.md)
++ [Programmer's Guide to Component Mode](/docs/userguide/working-with-component-mode-programmatically.md)
 + [Components and EBuses](/docs/userguide/components/entity-system-pg-components-and-ebuses.md)
 + [Tick Bus and Components](/docs/userguide/components/entity-system-pg-tick-bus.md)
 + [Exposing Custom Components to Track View for Animation](/docs/userguide/components/entity-system-track-view.md)

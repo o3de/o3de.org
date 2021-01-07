@@ -6,7 +6,7 @@ title: Creating a Gem from the Command Line
 
 You can also use the command line to create a gem\. You can do this in either the command line or the [Project Configurator](/docs/userguide/gems/builtin/s-creating-a-new-gem-projconf.md)\.
 
-If you add a **Code & Assets** gem, you must [build your project](game-build-intro.md) after adding the gem\. **Asset Only** gems do not require a rebuild\.
+If you add a **Code & Assets** gem, you must [build your project](/docs/userguide/game-build-intro.md) after adding the gem\. **Asset Only** gems do not require a rebuild\.
 
 **To create a gem with the command line**
 
@@ -70,4 +70,4 @@ If this directory isn't present, you can manually add it\. If you don’t have a
 
 1. If your gem is labeled **Assets Only**, you don't need to build your project\.
 
-   If your gem is labeled **Code & Assets** gem, you must [build your project](game-build-intro.md)\.
+   If your gem is labeled **Code & Assets** gem, you must [build your project](/docs/userguide/game-build-intro.md)\.

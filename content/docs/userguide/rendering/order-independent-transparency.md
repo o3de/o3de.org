@@ -48,4 +48,4 @@ OIT requires the following:
 
 1. Under the `[Windows Options]` section, set `win_vs2017_winkit` to your version of the Windows 10 SDK \(for example, *10\.1\.17134\.12*\)\. 
 
-1. Build your game project\. For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+1. Build your game project\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.

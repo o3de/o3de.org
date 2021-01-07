@@ -37,7 +37,7 @@ The **Polygon Prism Shape** component has the following properties\.
 | Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  | 
 |  **Shape Color**  |  Specifies the color to render the shape\.  | 
 | Height |  The height of the polygon prism shape, in meters\.  | 
-|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\. | 
+|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. | 
 
 By default, when you add the **Polygon Prism Shape** component to an entity, the component has four vertices\.
 

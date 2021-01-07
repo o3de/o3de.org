@@ -24,7 +24,7 @@ The **instantVR** slice is part of the Virtual Reality Project sample level\. Fo
 
 **To use the **instantVR** slice**
 
-1. In the [**Asset Browser**](asset-browser-intro.md), navigate to `dev\VirtualRealityProject\slices\`\.  
+1. In the [**Asset Browser**](/docs/userguide/asset-browser-intro.md), navigate to `dev\VirtualRealityProject\slices\`\.  
 ![\[Image NOT FOUND\]](/images/userguide/vr/virtual-reality-instant-vr-ab.png)
 
 1. Drag `instantvr.slice` into the viewport\.

@@ -20,7 +20,7 @@ To avoid performance issues, debugging features are disabled by default\.
 
 1. Save the file\.
 
-1. Perform a build in debug mode\. For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+1. Perform a build in debug mode\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 ## Characteristics and Limitations<a name="memory-management-debugging-hpha-observations-and-limitations"></a>
 

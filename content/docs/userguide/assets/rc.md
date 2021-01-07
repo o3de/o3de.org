@@ -27,7 +27,7 @@ Legacy animation format
 Geometry \(static mesh\) only\. Doesn't convert new EMotion FX characters or animations\.
 
 **Note**  
- All other types, such as characters and animation, are converted by the BuilderSDK system\. For more information, see [Creating a Custom Asset Builder](asset-builder-custom.md)\.
+ All other types, such as characters and animation, are converted by the BuilderSDK system\. For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
 You can customize how resources are converted by modifying the `AssetProcessorPlatformConfig.ini`\. For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 

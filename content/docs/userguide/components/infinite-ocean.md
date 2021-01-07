@@ -43,7 +43,7 @@ In Lumberyard, various elements such as sunlight, reflections, and environment p
 + [Best Practices Working with the Infinite Ocean Component](/docs/userguide/components/ocean/best-practices.md)
 + [Additional Workflow](/docs/userguide/components/ocean/additional-worklow.md)
 + [Console Variables for the Infinite Ocean Component](/docs/userguide/components/ocean/console-variables.md)
-+ [Infinite Ocean Component with the Track View Editor](infinite-ocean-track-view-editor.md)
++ [Infinite Ocean Component with the Track View Editor](/docs/userguide/infinite-ocean-track-view-editor.md)
 + [Infinite Ocean Component Request Bus Interface](/docs/userguide/components/ocean/request-bus-interface.md)
 + [Using the Infinite Ocean Component with Script Canvas](/docs/userguide/components/ocean/working-with-script-canvas.md)
 
@@ -51,7 +51,7 @@ In Lumberyard, various elements such as sunlight, reflections, and environment p
 
 **To create an infinite ocean in your level**
 
-1. [Create an entity](creating-entity.md) in your level\.
+1. [Create an entity](/docs/userguide/creating-entity.md) in your level\.
 
 1. In the **Entity Inspector**, click **Add Component**, and then choose the **Infinite Ocean** component\. 
 

@@ -18,7 +18,7 @@ For more information, see [Using Animation Curves](/docs/userguide/cinematics/tr
 When moving component entities, we recommend the following workflows:
 + Manipulate the component entity in the level and then manually add your animation keys\. 
 
-  For more information, see [Adding and Removing Animation Keys on Tracks](adding-removing-animation-keys-on-tracks.md)
+  For more information, see [Adding and Removing Animation Keys on Tracks](/docs/userguide/adding-removing-animation-keys-on-tracks.md)
 + Use record mode to set your keys\. For more information, see [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)\.
 
 **To set transform keys with record mode**

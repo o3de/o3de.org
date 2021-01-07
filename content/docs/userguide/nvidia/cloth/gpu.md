@@ -89,4 +89,4 @@ End users do not require the NVIDIA CUDA Toolkit to be installed on their PC in 
 
 Cloth simulations automatically run on the GPU, if a GPU that is compatible with CUDA is present\. If an NVIDIA CUDA compatible GPU is not available, then the simulation defaults to running on the CPU\. 
 
-For more information about release builds, see [Building Lumberyard projects](game-build-intro.md)\. 
+For more information about release builds, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\. 

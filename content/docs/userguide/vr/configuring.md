@@ -30,4 +30,4 @@ Use the **NullVR** Gem to run your level through the HMD framework without a con
 
 1. Click **Save**\.
 
-1. After you enable the gem\(s\), you must [build your project](game-build-intro.md) before they are available in Lumberyard Editor\.
+1. After you enable the gem\(s\), you must [build your project](/docs/userguide/game-build-intro.md) before they are available in Lumberyard Editor\.

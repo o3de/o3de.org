@@ -13,11 +13,11 @@ An actor is an entity that you create for characters in your game\. You can then
 The entity in the Lumberyard Editor viewport has an **Actor** component attached\.  
 
 ![\[You can add an Actor component to an entity to create a character for your game.\]](/images/userguide/terms/example-actor-entity-and-component.png)
-For more information, see [Create and animate characters](char-intro.md)\.
+For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
 
 **Asset Builder API**  
 The Asset Builder API is an interface for creating custom types of assets\. With the Asset Builder API, you create a custom asset, and register the asset in the asset pipeline\. Asset Processor processes the asset like any other file \(for example, `.tif` file to a `.dds` file\), so that you can use it in Lumberyard\. The Asset Builder API lets you leverage all the benefits of the asset pipeline, such as Asset Processor and the **Asset Browser**\.  
-For more information, see [Creating a Custom Asset Builder](asset-builder-custom.md)\. 
+For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\. 
 
 **Asset Processor**  
 This utility is a background service that monitors changes to your source files and updates the cache with any changes\. For example, if you replace an existing mesh asset with a new version of the asset, Asset Processor detects and processes the change for you\.   

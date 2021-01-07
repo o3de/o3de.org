@@ -38,7 +38,7 @@ In Lumberyard version 1\.23 and later, if you intend to create new projects, the
 **Compile the Lumberyard Editor and tools**\* – Compile Lumberyard tools to include any changes that you have made
 \*If you select any of these options, you may need to perform additional tasks, such as installing Microsoft Visual Studio\. If so, these tasks display on the **Install software** and **Required SDKs** pages\. Follow the instructions in Lumberyard Setup Assistant to obtain the software and third\-party SDKs that aren't installed\.
 
-   You can also create, enable, and disable these capabilities from the command line\. For more information, see [Using Lumberyard Setup Assistant Batch](lumberyard-launcher-batch-using.md) and [Lmbr\.exe](lmbr-exe.md)\.
+   You can also create, enable, and disable these capabilities from the command line\. For more information, see [Using Lumberyard Setup Assistant Batch](/docs/userguide/lumberyard-launcher-batch-using.md) and [Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
 1. Select **Visual Studio 2017** or **Visual Studio 2019**\.
 **Note**  

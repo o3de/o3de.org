@@ -19,7 +19,7 @@ Follow these steps to create an `.inputbindings` file\.
 
 **To create an input to event binding asset**
 
-1. [Create](creating-entity.md) an entity\.
+1. [Create](/docs/userguide/creating-entity.md) an entity\.
 
 1.  In the **Perspective** viewport, select the entity\. 
 

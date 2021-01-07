@@ -38,7 +38,7 @@ title: '&ALY; &asset-bundler; Command-Line Tool Reference'
 **Note**  
  All example commands in this reference are executed from the `dev\` folder of a project and assume a build produced with Visual Studio 2017 on Windows\. The executable path and path separators will be different on other platforms\.
 
-See the [Asset Bundler Concepts and Terms](/docs/userguide/assets/bundle/concepts.md) or [Glossary](ly-glos-chap.md) for definitions of terms used in this reference\.
+See the [Asset Bundler Concepts and Terms](/docs/userguide/assets/bundle/concepts.md) or [Glossary](/docs/userguide/ly-glos-chap.md) for definitions of terms used in this reference\.
 
 ## General Use<a name="asset-bundler-command-line-reference-general"></a>
 

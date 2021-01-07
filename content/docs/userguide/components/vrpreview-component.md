@@ -9,7 +9,7 @@ The **VR Preview** component, when added to an entity or spawned from a slice, c
 
 **To use the VR Preview component**
 
-1. [Create a new entity](creating-entity.md)\.
+1. [Create a new entity](/docs/userguide/creating-entity.md)\.
 
 1. Open the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md)\. Add the **VR Preview** component to the entity by clicking **Add Component**, **VR**, **VR Preview**\.
 

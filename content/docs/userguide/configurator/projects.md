@@ -117,7 +117,7 @@ If you selected **Code & Assets** gems, you must build your project\.
 **Note**  
 In Lumberyard version 1\.23, the initial build time for a new project can be lengthy\. It can take approximately one hour on higher end systems\.
 
-      For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+      For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 1. Close the Project Configurator\.
 
@@ -130,7 +130,7 @@ In Lumberyard version 1\.23, the initial build time for a new project can be len
 ------
 #### [ Command Line ]
 
-When you create a game project from a command line, you can enter `lmbr` for a list of all possible commands that you can use with [Lmbr\.exe](lmbr-exe.md)\.
+When you create a game project from a command line, you can enter `lmbr` for a list of all possible commands that you can use with [Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
 **To create a game project from a command line**
 
@@ -160,7 +160,7 @@ When you create a game project from a command line, you can enter `lmbr` for a l
 
 1. Build the game project\. 
 
-   For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+   For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 ------
 
@@ -179,7 +179,7 @@ Use the Project Configurator to set default game project that opens in Lumberyar
 
 1. \(Optional\) Click **Enable Gems** and select the additional features and assets that you want available to design your game\. If you select a gem labeled with **Code & Assets**, you must build your project from a command line\. 
 
-   For more information, see [Building Lumberyard projects](game-build-intro.md)\.
+   For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 1. \(Optional\) Choose **Advanced Settings** and verify that the **System entity** and **Memory** settings are appropriate for your project\.
 

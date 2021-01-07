@@ -11,6 +11,6 @@ For more information, see [Using the Track View Editor](/docs/userguide/cinemati
 
 **Topics**
 + [Setting Sequence Properties](/docs/userguide/cinematics/sequence-props.md)
-+ [Working with Slices and Sequences](working-with-slices-cinematic-sequences.md)
++ [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md)
 + [Adding Component Entities](/docs/userguide/cinematics/adding-component-entities.md)
 + [Moving a Component Entity in a Sequence](/docs/userguide/cinematics/moving-a-component-entity.md)

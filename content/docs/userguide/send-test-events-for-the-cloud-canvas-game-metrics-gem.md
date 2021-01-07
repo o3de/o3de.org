@@ -36,7 +36,7 @@ If you select this option, the time to process events in AWS can increase\. This
 
 1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **Gem Metrics**\.
 
-1. In the **Cloud Gem Metrics Portal**, you can view metrics for your game\. See [Using the Game Metrics Cloud Gem Portal](using-the-cloud-gem-metrics-portal.md)\.
+1. In the **Cloud Gem Metrics Portal**, you can view metrics for your game\. See [Using the Game Metrics Cloud Gem Portal](/docs/userguide/using-the-cloud-gem-metrics-portal.md)\.
 
 ## Examples for Sending Test Metrics<a name="code-examples-to-send-test-metrics"></a>
 

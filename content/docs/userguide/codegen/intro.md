@@ -34,7 +34,7 @@ The templates provide the format for the code that is generated\. Templates make
 + [Template Drivers](/docs/userguide/codegen/template-drivers.md)
 + [Custom Code Generator Annotations](/docs/userguide/codegen/custom-annotations.md)
 + [Waf Debugging with AZ Code Generator](/docs/userguide/codegen/waf-debugging.md)
-+ [Template Driver Debugging](az-cod-gen-template-driver-debugging.md)
++ [Template Driver Debugging](/docs/userguide/az-cod-gen-template-driver-debugging.md)
 + [Debugging the AZ Code Generator Utility](/docs/userguide/codegen/utility-debugging.md)
 + [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)
 

@@ -40,7 +40,7 @@ The **Tube Shape** component has the following properties\.
 |  **Shape Color**  |  Specifies the color to render the shape\.  | 
 |  **Radius**  |  The radius of the tube\.  | 
 |  **Variable Radius**   | Defines the variable radius at each point along the spline\. This value is added to the radius to calculate the final radius of the tube\. | 
-|  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\.  | 
+|  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  | 
 
 ## EBus Request Bus Interface<a name="tube-shape-ebus-request-bus-interface"></a>
 

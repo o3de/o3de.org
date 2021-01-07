@@ -37,7 +37,7 @@ The **OccluderArea** component has the following properties\.
 | UseInIndoors |  The occluder area works inside visible areas\.  | 
 | DoubleSide |  Specifies whether the occluder area works from both sides\.  | 
 | Vertices |  The vertices that define the shape of the occluder area\. Occluder areas always have four vertices\.  | 
-|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](edit-mode-for-components.md)\. | 
+|  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. | 
 
 ## Occluder Area Component Example<a name="component-occluder-area-example"></a>
 

@@ -15,5 +15,5 @@ As shadow generation is resource\-intensive, Lumberyard offers the following fea
 **Topics**
 + [Cached Shadows](/docs/userguide/rendering/shadows-cached.md)
 + [Object Shadows](/docs/userguide/rendering/shadows-object.md)
-+ [Shadow Proxies](rendering_graphics_shadows_proxies.md)
++ [Shadow Proxies](/docs/userguide/rendering_graphics_shadows_proxies.md)
 + [Using CVARs to Configure Terrain and Cascade Shadow Maps](/docs/userguide/rendering/shadows-cvars.md)

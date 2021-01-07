@@ -32,8 +32,8 @@ For more information, see [Step 1: Creating a Motion Set](animation-editor-quick
 
 **Topics**
 + [Prerequisites](#prerequisites-for-creating-simulated-objects)
-+ [Setting Up a Simulated Object](set-up-a-simulated-object.md)
-+ [Setting Up the Simulated Object Anim Graph Node](set-up-simulated-object-anim-graph-node.md)
-+ [Setting Up Simulated Object Colliders](set-up-simulated-object-collider.md)
-+ [Using Debug Mode to Refine the Simulation](refine-simulationg-using-debug-mode.md)
-+ [Using Parameters to Adjust the Animation During Runtime](use-parameters-to-adjust-animation-during-runtime.md)
++ [Setting Up a Simulated Object](/docs/userguide/set-up-a-simulated-object.md)
++ [Setting Up the Simulated Object Anim Graph Node](/docs/userguide/set-up-simulated-object-anim-graph-node.md)
++ [Setting Up Simulated Object Colliders](/docs/userguide/set-up-simulated-object-collider.md)
++ [Using Debug Mode to Refine the Simulation](/docs/userguide/refine-simulationg-using-debug-mode.md)
++ [Using Parameters to Adjust the Animation During Runtime](/docs/userguide/use-parameters-to-adjust-animation-during-runtime.md)

@@ -5,7 +5,7 @@ title: Working with Entities
 # Working with Entities<a name="component-entity-outliner-entities"></a>
 
 **Topics**
-+ [Creating an Entity](creating-entity.md)
++ [Creating an Entity](/docs/userguide/creating-entity.md)
 + [Reordering Entities](#component-entity-outliner-reordering)
 + [Hiding and Showing Entities](#component-entity-outliner-hiding)
 + [Locking Entities](#component-entity-outliner-locking)

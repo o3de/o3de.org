@@ -27,5 +27,5 @@ Each output directory in the asset cache represents a full image of all files \(
 + [Shader Compiler Proxy](/docs/userguide/assets/shader-compiler.md)
 + [Shader Cache and Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md)
 + [Game Startup Sequence](/docs/userguide/assets/game-sequence.md)
-+ [Asset Browser](asset-browser-intro.md)
++ [Asset Browser](/docs/userguide/asset-browser-intro.md)
 + [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)

@@ -11,8 +11,8 @@ The `thirdpartysdks` module manages the installation states of third party SDKs\
 
 The `thirdpartysdks` module has dependencies on the following:
 + `Engines` module
-+ [`Capabilities`](lmbr-exe-capabilities.md) module – Downloads only the SDKs that are required based on the user\-enabled capabilities\.
-+ [`Packages`](lmbr-exe-packages.md) module
++ [`Capabilities`](/docs/userguide/lmbr-exe-capabilities.md) module – Downloads only the SDKs that are required based on the user\-enabled capabilities\.
++ [`Packages`](/docs/userguide/lmbr-exe-packages.md) module
 + `SetupAssistantUserPreferences.ini` – Path specified for the `SDKSearch3rdParty` property\.
 + `SetupAssistantConfig.json` – Parses the SDK required for the engine 
 
@@ -26,7 +26,7 @@ lmbr thirdpartysdks list (-help)
 ```
 
 **setup**  
-Downloads and sets up all Lumberyard third party SDKs based on your current selected [capabilities](lmbr-exe-capabilities.md)\. Does not support software installation such as FBX or Android SDK\.  
+Downloads and sets up all Lumberyard third party SDKs based on your current selected [capabilities](/docs/userguide/lmbr-exe-capabilities.md)\. Does not support software installation such as FBX or Android SDK\.  
 
 ```
 lmbr thirdpartysdks setup (-only <sdk1,sdk2,sdk3>) (-3rdpartypath <path>) (-help)

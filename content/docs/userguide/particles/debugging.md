@@ -4,7 +4,7 @@ title: Particle Debugging with Console Variables
 ---
 # Particle Debugging with Console Variables<a name="particle-debugging"></a>
 
-Use the following console variables to monitor and debug particle system issues\. For more information, see [Using the Console Window](console-intro.md)\.
+Use the following console variables to monitor and debug particle system issues\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
 **Particle Console Variables**  
@@ -17,7 +17,7 @@ Use the following console variables to monitor and debug particle system issues\
 | e\_ParticlesAudio |  Toggles audio for particles\.  |  `0` = Off `1` = On \(default\)  | 
 | e\_ParticlesCullAgainstOcclusionBuffer |  Culls particles against the occlusion buffer\.  |  `0` = Off `1` = On \(default\)  | 
 | e\_ParticlesCullAgainstViewFrustum |  Culls particles against the view frustum\.  |  `0` = Off `1` = On \(default\)  | 
-| e\_ParticlesDebug |  Displays the particle counts on the screen\.  You can also specify the particle debug flags that you want to add or remove\. To add or remove a particle debug flag, you can use the **Console** command line or the `.cfg` files\. Type the console variable followed by the flag and a \+ or –\.  For example, if you want to use the `m` flag to show memory usage, enter the following command: e\_ParticlesDebug b\+ To remove the `m` flag, enter the following command: e\_ParticlesDebug b\- For more information, see [Using the Console Window](console-intro.md)\.  |  `0` = Hide basic stats\. \(default\) `1` = Show basic stats\. `m` = Show memory usage\. `r` = Show reiteration, rejection, and collision stats\. `b` = Draw bounding boxes and labels and show bounding box stats\. `x` = Show bounding box stats\. `d` = Force dynamic bounds and update for all emitters\. `c` = Disable clipping against water and visible area bounds\. `z` = Freeze the particle system\.  | 
+| e\_ParticlesDebug |  Displays the particle counts on the screen\.  You can also specify the particle debug flags that you want to add or remove\. To add or remove a particle debug flag, you can use the **Console** command line or the `.cfg` files\. Type the console variable followed by the flag and a \+ or –\.  For example, if you want to use the `m` flag to show memory usage, enter the following command: e\_ParticlesDebug b\+ To remove the `m` flag, enter the following command: e\_ParticlesDebug b\- For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.  |  `0` = Hide basic stats\. \(default\) `1` = Show basic stats\. `m` = Show memory usage\. `r` = Show reiteration, rejection, and collision stats\. `b` = Draw bounding boxes and labels and show bounding box stats\. `x` = Show bounding box stats\. `d` = Force dynamic bounds and update for all emitters\. `c` = Disable clipping against water and visible area bounds\. `z` = Freeze the particle system\.  | 
 | e\_ParticleDumpMemorAfterMapLoad |  Specify a value of `1` to dump particle memory after map load\.  |  `0` = Off \(default\) `1` = On  | 
 | e\_ParticlesGI |  Applies global illumination to appropriate particle effects\.  |  `0` = Off `1` = On \(default\) `2` = Force  | 
 | e\_ParticleShadowsNumGSMs |  Number of global shadow maps \(GSM\) used for particle shadows\.  |  Default value: `3`  | 

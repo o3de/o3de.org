@@ -14,7 +14,7 @@ This package is compatible with Lumberyard 1\.9 and earlier\.
 
 1. Download the `BeachCity.zip` package at [Lumberyard Previous Versions](https://aws.amazon.com/lumberyard/downloads/previous-versions/) and extract it in your Lumberyard directory\. For example, `\Lumberyard\1.x.0.0`\.
 
-1. Open the [**Lumberyard Setup Assistant**](lumberyard-launcher-using.md)\. On the **Summary** page, click **Project Configurator**\.
+1. Open the [**Lumberyard Setup Assistant**](/docs/userguide/lumberyard-launcher-using.md)\. On the **Summary** page, click **Project Configurator**\.
 **Note**  
 To ensure that the Beach City project launches, you must use **Lumberyard Setup Assistant** to open the **Project Configurator**\. **Lumberyard Setup Assistant** copies required SDKs from the `3rdParty` directory into the `dev\BeachCity` directory\.
 

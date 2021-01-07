@@ -14,7 +14,7 @@ The following procedure describes a very simple example work flow for applying a
 
 1. Open a level in Lumberyard\.
 
-1. [Create a new entity](creating-entity.md)\.
+1. [Create a new entity](/docs/userguide/creating-entity.md)\.
 
 1. [Add](/docs/userguide/components/working-adding.md) a [Mesh](component-static-mesh.md#component-static-mesh-properties) component to your entity\.
 
