@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to add PhysX colliders in Amazon Lumberyard. '
-slug: tutor-ch04-create-physx-colliders
 title: 'Tutorial Four: Create PhysX colliders'
 ---
 # Tutorial Four: Create PhysX colliders<a name="tutor-ch04-create-physx-colliders"></a>

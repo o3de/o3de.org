@@ -1,6 +1,5 @@
 ---
 description: ' Amazon Lumberyard resources and links. '
-slug: wg-resources-intro
 title: Additional Lumberyard resources
 ---
 # Additional Lumberyard resources<a name="wg-resources-intro"></a>

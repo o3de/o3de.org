@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Lumberyard UI 2.0 style of spinboxes, including the
   spinbox and double spinbox components. '
-slug: uidev-spinbox-component
 title: Lumberyard UI spinbox component
 ---
 # Lumberyard UI spinbox component<a name="uidev-spinbox-component"></a>

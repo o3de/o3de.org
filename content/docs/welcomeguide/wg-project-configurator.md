@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Amazon Lumberyard Project Configurator and basic project
   management. '
-slug: wg-project-configurator
 title: Manage Lumberyard projects with Project Configurator
 ---
 # Manage Lumberyard projects with Project Configurator<a name="wg-project-configurator"></a>

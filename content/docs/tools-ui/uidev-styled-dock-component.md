@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 styled dock widget with the
   dock main window component, to enable fancy docking in Lumberyard tools and gems. '
-slug: uidev-styled-dock-component
 title: Lumberyard UI styled dock widget
 ---
 # Lumberyard UI styled dock widget<a name="uidev-styled-dock-component"></a>

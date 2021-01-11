@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to handle player input in Lumberyard. '
-slug: tutor-ch05-player-input
 title: 'Tutorial Five: Handling player input through Script Canvas'
 ---
 # Tutorial Five: Handling player input through Script Canvas<a name="tutor-ch05-player-input"></a>

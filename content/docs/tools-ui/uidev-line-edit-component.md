@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lumberyard UI 2.0 line edit component to capture free-form
   text from the user. '
-slug: uidev-line-edit-component
 title: Lumberyard UI line edit component
 ---
 # Lumberyard UI line edit component<a name="uidev-line-edit-component"></a>

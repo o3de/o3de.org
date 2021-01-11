@@ -2,7 +2,6 @@
 description: ' Use the Lumberyard UI 2.0 breadcrumbs component as a navigational tool
   to show users where they are along a hierarchical path. Breadcrumbs also enable
   users to jump to a different point in the path. '
-slug: uidev-breadcrumbs-component
 title: Lumberyard UI breadcrumb navigation component
 ---
 # Lumberyard UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' An introduction to the Amazon Lumberyard UI 2.0 component library. '
-slug: uidev-component-intro
 title: Lumberyard UI component library
 ---
 # Lumberyard UI component library<a name="uidev-component-intro"></a>

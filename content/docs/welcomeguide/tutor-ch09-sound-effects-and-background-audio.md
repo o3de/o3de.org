@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to add sound effects and background audio in Amazon Lumberyard. '
-slug: tutor-ch09-sound-effects-and-background-audio
 title: 'Tutorial Nine: Add sound effects and background audio'
 ---
 # Tutorial Nine: Add sound effects and background audio<a name="tutor-ch09-sound-effects-and-background-audio"></a>

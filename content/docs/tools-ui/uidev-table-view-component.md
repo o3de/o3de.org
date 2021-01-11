@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 table view component to present
   columns of structured data in Lumberyard tools and gems. '
-slug: uidev-table-view-component
 title: Lumberyard UI table view component
 ---
 # Lumberyard UI table view component<a name="uidev-table-view-component"></a>

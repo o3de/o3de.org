@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lumberyard UI 2.0 context menu component to display a popup
   menu with a list of context-appropriate actions. '
-slug: uidev-context-menu-component
 title: Lumberyard UI menu component
 ---
 # Lumberyard UI menu component<a name="uidev-context-menu-component"></a>

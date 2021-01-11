@@ -1,6 +1,5 @@
 ---
 description: ' Learn to use the terrain and texture layers tools in Lumberyard. '
-slug: tutor-ch07-create-terrain
 title: 'Tutorial Seven: Create terrain'
 ---
 # Tutorial Seven: Create terrain<a name="tutor-ch07-create-terrain"></a>

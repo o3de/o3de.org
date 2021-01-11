@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to configure a Lumberyard environment and install third-party
   software with Amazon Lumberyard Setup Assistant. '
-slug: wg-setup-assistant
 title: Configuring your Amazon Lumberyard environment with Setup Assistant
 ---
 # Configuring your Amazon Lumberyard environment with Setup Assistant<a name="wg-setup-assistant"></a>

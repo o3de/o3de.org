@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use Lumberyard UI 2.0 checkboxes in Lumberyard gems and
   tools. '
-slug: uidev-checkbox-component
 title: Lumberyard UI checkbox component
 ---
 # Lumberyard UI checkbox component<a name="uidev-checkbox-component"></a>

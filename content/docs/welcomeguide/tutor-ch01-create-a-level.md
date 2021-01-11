@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to create a simple level with terrain in Amazon Lumberyard. '
-slug: tutor-ch01-create-a-level
 title: 'Tutorial One: Create a level'
 ---
 # Tutorial One: Create a level<a name="tutor-ch01-create-a-level"></a>

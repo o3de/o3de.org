@@ -1,7 +1,6 @@
 ---
 description: ' Learn about Lumberyard assets and how to create a player character
   slice from an entity and components. '
-slug: tutor-ch03-build-a-player-character
 title: 'Tutorial Three: Build a player character'
 ---
 # Tutorial Three: Build a player character<a name="tutor-ch03-build-a-player-character"></a>

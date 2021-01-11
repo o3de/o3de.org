@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 combobox component in Amazon
   Lumberyard gems and tools. '
-slug: uidev-combobox-component
 title: Lumberyard UI combobox component
 ---
 # Lumberyard UI combobox component<a name="uidev-combobox-component"></a>

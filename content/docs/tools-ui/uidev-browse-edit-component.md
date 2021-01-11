@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lumberyard UI 2.0 browse edit component to enable users to
   choose one or more values from a list or directory. '
-slug: uidev-browse-edit-component
 title: Lumberyard UI browse edit component
 ---
 # Lumberyard UI browse edit component<a name="uidev-browse-edit-component"></a>

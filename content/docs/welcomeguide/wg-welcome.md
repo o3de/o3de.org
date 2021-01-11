@@ -2,7 +2,6 @@
 description: ' Amazon Lumberyard is a free, cross-platform, cloud-connected real-time
   3D creation engine that you can use to build games, experiences, visualizations,
   and applications. '
-slug: wg-welcome
 title: Welcome to Amazon Lumberyard
 ---
 # Welcome to Amazon Lumberyard<a name="wg-welcome"></a>

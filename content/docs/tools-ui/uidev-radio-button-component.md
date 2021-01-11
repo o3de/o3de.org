@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to apply the Lumberyard UI 2.0 style for radio buttons in
   Lumberyard gems and tools. '
-slug: uidev-radio-button-component
 title: Lumberyard UI radio button style
 ---
 # Lumberyard UI radio button style<a name="uidev-radio-button-component"></a>

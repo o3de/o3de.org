@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to install and set up Amazon Lumberyard for the first time. '
-slug: wg-setup-intro
 title: Setting up Amazon Lumberyard
 ---
 # Setting up Amazon Lumberyard<a name="wg-setup-intro"></a>

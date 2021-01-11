@@ -1,6 +1,5 @@
 ---
 description: ' Alternate web services for the purposes of Lumberyard. '
-slug: legal-lumberyard-alternate-web-services
 title: Alternate web services
 ---
 # Alternate web services<a name="legal-lumberyard-alternate-web-services"></a>

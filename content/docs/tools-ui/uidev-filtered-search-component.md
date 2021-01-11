@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 filtered search widget to give
   users advanced search options in your Lumberyard tools and gems. '
-slug: uidev-filtered-search-component
 title: Lumberyard UI filtered search widget
 ---
 # Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
