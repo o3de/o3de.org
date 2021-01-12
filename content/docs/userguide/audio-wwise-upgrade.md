@@ -1,6 +1,5 @@
 ---
 description: ' Upgrade the free version Wwise LTX to the full version for &ALYlong;. '
-slug: audio-wwise-upgrade
 title: Upgrading Wwise LTX to the Full Version
 ---
 # Upgrading Wwise LTX to the Full Version<a name="audio-wwise-upgrade"></a>

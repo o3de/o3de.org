@@ -1,7 +1,6 @@
 ---
 description: ' Use the PhysX Debug gem to debug physics visualization in your &ALYlong;
   level. '
-slug: gems-system-gem-physx-debug
 title: PhysX Debug
 ---
 # PhysX Debug<a name="gems-system-gem-physx-debug"></a>

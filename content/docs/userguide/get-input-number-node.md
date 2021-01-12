@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Input Number node in the &ALYlong; &script-canvas; editor
   to return the value of a procedural material input parameter as a number. '
-slug: get-input-number-node
 title: Get Input Number
 ---
 # Get Input Number<a name="get-input-number-node"></a>

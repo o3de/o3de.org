@@ -1,6 +1,5 @@
 ---
 description: ' Use vertex colors for materials in &ALYlong;. '
-slug: mat-vertex-colors
 title: Using Vertex Colors
 ---
 # Using Vertex Colors<a name="mat-vertex-colors"></a>

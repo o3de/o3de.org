@@ -1,7 +1,6 @@
 ---
 description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup time
   in &ALYlong;. '
-slug: asset-processor-faster-scanning
 title: Enabling &asset-processor;'s Faster Scanning Mode
 ---
 # Enabling Asset Processor's Faster Scanning Mode<a name="asset-processor-faster-scanning"></a>

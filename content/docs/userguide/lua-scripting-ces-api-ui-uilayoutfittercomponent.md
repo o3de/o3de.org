@@ -1,7 +1,6 @@
 ---
 description: ' Use the UILayoutFitterComponent to implement the UI layout fitter in
   &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uilayoutfittercomponent
 title: UILayoutFitterComponent
 ---
 # UILayoutFitterComponent<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent"></a>

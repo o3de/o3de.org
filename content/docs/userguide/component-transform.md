@@ -1,7 +1,6 @@
 ---
 description: ' Use the Transform component to move, rotate, and scale an entity in
   &ALYlong;. '
-slug: component-transform
 title: Transform
 ---
 # Transform<a name="component-transform"></a>

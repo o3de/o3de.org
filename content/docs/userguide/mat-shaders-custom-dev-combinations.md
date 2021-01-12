@@ -1,6 +1,5 @@
 ---
 description: ' Generate shader combinations for &ALYlong;. '
-slug: mat-shaders-custom-dev-combinations
 title: Generating Shader Combinations
 ---
 # Generating Shader Combinations<a name="mat-shaders-custom-dev-combinations"></a>

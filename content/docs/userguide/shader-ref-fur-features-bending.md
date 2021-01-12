@@ -1,6 +1,5 @@
 ---
 description: ' Use bending for fur materials in &ALYlong;. '
-slug: shader-ref-fur-features-bending
 title: Bending
 ---
 # Bending<a name="shader-ref-fur-features-bending"></a>

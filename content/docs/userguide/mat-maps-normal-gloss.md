@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about working with normals for gloss maps in &ALYlong;. '
-slug: mat-maps-normal-gloss
 title: Using Normals with Gloss Maps
 ---
 # Using Normals with Gloss Maps<a name="mat-maps-normal-gloss"></a>

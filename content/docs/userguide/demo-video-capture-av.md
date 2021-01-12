@@ -1,6 +1,5 @@
 ---
 description: ' Capture video and audio in &ALYlong;. '
-slug: demo-video-capture-av
 title: Capturing Video and Audio
 ---
 # Capturing Video and Audio<a name="demo-video-capture-av"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use a button component to make an element behave like a button in the
   &ALY; &ui-canvas-editor;. '
-slug: ui-editor-components-button
 title: Button
 ---
 # Button<a name="ui-editor-components-button"></a>

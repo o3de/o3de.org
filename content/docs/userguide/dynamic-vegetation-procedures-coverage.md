@@ -1,6 +1,5 @@
 ---
 description: ' Expand your vegetation to cover your level in &ALYlong;. '
-slug: dynamic-vegetation-procedures-coverage
 title: Expanding Vegetation Coverage
 ---
 # Expanding Vegetation Coverage<a name="dynamic-vegetation-procedures-coverage"></a>

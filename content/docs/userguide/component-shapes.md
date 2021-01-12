@@ -1,7 +1,6 @@
 ---
 description: ' Use shape components in &ALYlong; to provide shape facilities for trigger
   volumes, collision volumes, audio area ambiances, and audio areas. '
-slug: component-shapes
 title: 'Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound'
 ---
 # Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound<a name="component-shapes"></a>

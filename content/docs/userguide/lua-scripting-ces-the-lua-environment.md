@@ -1,7 +1,6 @@
 ---
 description: ' Learn about adding ScriptContext instances and using common code in
   the &ALYlong; Lua environment. '
-slug: lua-scripting-ces-the-lua-environment
 title: The Lua Environment (Advanced)
 ---
 # The Lua Environment \(Advanced\)<a name="lua-scripting-ces-the-lua-environment"></a>

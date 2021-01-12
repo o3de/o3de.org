@@ -1,6 +1,5 @@
 ---
 description: ' Troubleshoot issues for &ALYlong; terrain. '
-slug: terrain-troubleshoot
 title: Terrain FAQs
 ---
 # Terrain FAQs<a name="terrain-troubleshoot"></a>

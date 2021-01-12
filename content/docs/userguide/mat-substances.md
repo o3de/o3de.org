@@ -1,6 +1,5 @@
 ---
 description: ' Work with substances in &ALYlong;. '
-slug: mat-substances
 title: Working with Substances
 ---
 # Working with Substances<a name="mat-substances"></a>

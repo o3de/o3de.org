@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ui-canvas-editor; to create and customize various user interface
   elements in &ALYlong;. '
-slug: ui-editor-intro
 title: Creating and Customizing Project User Interfaces
 ---
 # Creating and Customizing Project User Interfaces<a name="ui-editor-intro"></a>

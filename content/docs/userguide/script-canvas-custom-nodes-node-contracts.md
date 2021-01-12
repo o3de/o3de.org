@@ -1,6 +1,5 @@
 ---
 description: ' Validate &script-canvas; node slots with node contracts in &ALYlong;. '
-slug: script-canvas-custom-nodes-node-contracts
 title: Node Contracts
 ---
 # Node Contracts<a name="script-canvas-custom-nodes-node-contracts"></a>

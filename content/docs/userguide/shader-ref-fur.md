@@ -1,6 +1,5 @@
 ---
 description: ' Use the Fur shader for real-time fur rendering in &ALYlong;. '
-slug: shader-ref-fur
 title: Fur Shader
 ---
 # Fur Shader<a name="shader-ref-fur"></a>

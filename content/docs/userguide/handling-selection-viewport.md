@@ -1,7 +1,6 @@
 ---
 description: ' Update your component so that it knows how to handle selection in the
   &ALYlong; viewport. '
-slug: handling-selection-viewport
 title: 'Step 5: Handle Selection in the Viewport'
 ---
 # Step 5: Handle Selection in the Viewport<a name="handling-selection-viewport"></a>

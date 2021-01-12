@@ -1,6 +1,5 @@
 ---
 description: ' Debug PhysX issues for your game in &ALYlong;. '
-slug: debugging-physx
 title: Debugging PhysX
 ---
 # Debugging PhysX<a name="debugging-physx"></a>

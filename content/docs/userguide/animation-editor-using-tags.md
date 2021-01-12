@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use tags with animation graphs (AnimGraphs) in the &ALY;
   &animation-editor;. '
-slug: animation-editor-using-tags
 title: Using Tags with Animation Graphs
 ---
 # Using Tags with Animation Graphs<a name="animation-editor-using-tags"></a>

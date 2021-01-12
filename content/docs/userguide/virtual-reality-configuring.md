@@ -1,7 +1,6 @@
 ---
 description: ' Use the &project-configurator; to add the Virtual Reality Gem(s) to
   enable support for head-mounted display (HMD) in your project. '
-slug: virtual-reality-configuring
 title: Configuring your Project for Virtual Reality
 ---
 # Configuring your Project for Virtual Reality<a name="virtual-reality-configuring"></a>

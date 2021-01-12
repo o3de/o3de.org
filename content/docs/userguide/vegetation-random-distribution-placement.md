@@ -1,7 +1,6 @@
 ---
 description: ' Create random distribution by using a noise gradient as a placement
   mask for &ALYlong; dynamic vegetation. '
-slug: vegetation-random-distribution-placement
 title: Random Placement Using the Vegetation Distribution Filter
 ---
 # Random Placement Using the Vegetation Distribution Filter<a name="vegetation-random-distribution-placement"></a>

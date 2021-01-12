@@ -1,7 +1,6 @@
 ---
 description: ' Use the &waf-system; to switch build pipelines and build only what
   you need for your &ALY; game project. '
-slug: waf-intro
 title: Using the &waf; Build System
 ---
 # Using the Waf Build System<a name="waf-intro"></a>

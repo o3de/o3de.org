@@ -1,7 +1,6 @@
 ---
 description: ' Use the UIMaskComponent to show only part of the content of a component''s
   child elements in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uimaskcomponent
 title: UIMaskComponent
 ---
 # UIMaskComponent<a name="lua-scripting-ces-api-ui-uimaskcomponent"></a>

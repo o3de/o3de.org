@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; &script-canvas; editor to access and manipulate materials
   on a specific entity. '
-slug: material-owner-nodes
 title: Material Owner Nodes
 ---
 # Material Owner Nodes<a name="material-owner-nodes"></a>

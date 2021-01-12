@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Spawner component to spawn a design-time or runtime
   dynamic slice at an entity''s location. '
-slug: component-spawner
 title: Spawner
 ---
 # Spawner<a name="component-spawner"></a>

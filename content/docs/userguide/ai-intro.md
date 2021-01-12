@@ -1,6 +1,5 @@
 ---
 description: ' Employ artificial intelligence in &ALYlong;. '
-slug: ai-intro
 title: Employing artificial intelligence
 ---
 # Employing artificial intelligence<a name="ai-intro"></a>

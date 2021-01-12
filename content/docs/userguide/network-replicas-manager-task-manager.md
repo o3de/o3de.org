@@ -1,7 +1,6 @@
 ---
 description: ' Learn how GridMate''s task manager controls the updating and marshaling
   of replicas in &ALYlong;. '
-slug: network-replicas-manager-task-manager
 title: Task Manager
 ---
 # Task Manager<a name="network-replicas-manager-task-manager"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the &project-configurator; to enable the Lightning gem in your
   &ALYlong; level. '
-slug: gems-system-gem-lightning-arc-enabling
 title: Enabling the Lightning Gem
 ---
 # Enabling the Lightning Gem<a name="gems-system-gem-lightning-arc-enabling"></a>

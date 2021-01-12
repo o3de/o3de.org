@@ -1,6 +1,5 @@
 ---
 description: ' Allocate and track memory in &ALYlong;. '
-slug: memory-allocators
 title: Using Memory Allocators in &ALY;
 ---
 # Using Memory Allocators in Lumberyard<a name="memory-allocators"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn about editor components in &ALYlong;. '
-slug: component-entity-system-pg-editor-components
 title: Editor Components
 ---
 # Editor Components<a name="component-entity-system-pg-editor-components"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Modify your WAF build script (wscript) in &ALYlong; to take advantage
   of GridMate encryption support. '
-slug: network-encryption-building
 title: Building with Encryption
 ---
 # Building with Encryption<a name="network-encryption-building"></a>

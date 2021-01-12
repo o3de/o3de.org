@@ -1,7 +1,6 @@
 ---
 description: ' See the following example for individual AI for tactical points in
   &ALYlong;. '
-slug: ai-concepts-example-dynamic-tactical-points
 title: 'Individual AI: Tactical Points'
 ---
 # Individual AI: Tactical Points<a name="ai-concepts-example-dynamic-tactical-points"></a>

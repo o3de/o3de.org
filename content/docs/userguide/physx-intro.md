@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s PhysX system to create realistic physical effects
   such as collision detection and rigid body dynamics simulation. '
-slug: physx-intro
 title: Simulating physics behavior with the PhysX system
 ---
 # Simulating physics behavior with the PhysX system<a name="physx-intro"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Add detail bending effects to the vegetation in your &ALYlong; game
   project. '
-slug: vegetation-bending-detail-intro
 title: Adding Detail Bending Effects
 ---
 # Adding Detail Bending Effects<a name="vegetation-bending-detail-intro"></a>

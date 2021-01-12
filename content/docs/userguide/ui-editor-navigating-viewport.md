@@ -1,7 +1,6 @@
 ---
 description: ' Use keyboard, mouse, or menu to navigate the &ui-canvas-editor; viewport
   in &ALYlong;. '
-slug: ui-editor-navigating-viewport
 title: Navigating the Viewport
 ---
 # Navigating the Viewport<a name="ui-editor-navigating-viewport"></a>

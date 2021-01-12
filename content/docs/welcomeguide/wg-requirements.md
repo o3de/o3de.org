@@ -1,6 +1,5 @@
 ---
 description: ' View the system requirements for Amazon Lumberyard. '
-slug: wg-requirements
 title: Amazon Lumberyard system requirements
 ---
 # Amazon Lumberyard system requirements<a name="wg-requirements"></a>

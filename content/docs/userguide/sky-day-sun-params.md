@@ -1,6 +1,5 @@
 ---
 description: ' Define how the sun appears in the daytime in &ALYlong;. '
-slug: sky-day-sun-params
 title: Setting Sun Parameters and Console Variables
 ---
 # Setting Sun Parameters and Console Variables<a name="sky-day-sun-params"></a>

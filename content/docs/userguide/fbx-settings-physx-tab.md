@@ -1,6 +1,5 @@
 ---
 description: null
-slug: fbx-settings-physx-tab
 title: FBX Settings PhysX tab
 ---
 # FBX Settings PhysX tab<a name="fbx-settings-physx-tab"></a>

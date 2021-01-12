@@ -1,6 +1,5 @@
 ---
 description: ' Reference dynamic vegetation to another area in &ALYlong;. '
-slug: dynamic-vegetation-reusing-in-multiple-areas
 title: Reusing Vegetation in Multiple Areas
 ---
 # Reusing Vegetation in Multiple Areas<a name="dynamic-vegetation-reusing-in-multiple-areas"></a>

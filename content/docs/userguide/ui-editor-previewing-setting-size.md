@@ -2,7 +2,6 @@
 description: ' Set your game UI canvas size in &ALYlong; &ui-canvas-editor; Preview
   to visualize how your canvas might look at different screen resolutions and to see
   how the interactive elements change state. '
-slug: ui-editor-previewing-setting-size
 title: Setting Canvas Size in Preview
 ---
 # Setting Canvas Size in Preview<a name="ui-editor-previewing-setting-size"></a>

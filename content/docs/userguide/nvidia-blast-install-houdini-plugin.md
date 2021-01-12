@@ -1,7 +1,6 @@
 ---
 description: ' Install Houdini plug-ins to create destruction assets for simulations
   in &ALYlong; with NVIDIA Blast. '
-slug: nvidia-blast-install-houdini-plugin
 title: Install SideFX Houdini plug-ins for NVIDIA Blast
 ---
 # Install SideFX Houdini plug\-ins for NVIDIA Blast<a name="nvidia-blast-install-houdini-plugin"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Import your FBX files for animation assets into &ALYlong;. '
-slug: importing-fbx-files-as-actors-motions
 title: 'Tutorials: Importing FBX Files as Actors and Motions'
 ---
 # Tutorials: Importing FBX Files as Actors and Motions<a name="importing-fbx-files-as-actors-motions"></a>

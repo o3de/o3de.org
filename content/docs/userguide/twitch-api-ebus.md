@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Twitch C++ API operations that you can use for your
   &ALY; game project. '
-slug: twitch-api-ebus
 title: Twitch C++ API Reference for &ALY;
 ---
 # Twitch C\+\+ API Reference for Lumberyard<a name="twitch-api-ebus"></a>

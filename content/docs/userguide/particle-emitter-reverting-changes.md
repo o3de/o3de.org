@@ -1,6 +1,5 @@
 ---
 description: Learn how to revert changes to an emitter's parameters or attributes.
-slug: particle-emitter-reverting-changes
 title: Reverting Changes to Emitter Attributes
 ---
 # Reverting Changes to Emitter Attributes<a name="particle-emitter-reverting-changes"></a>

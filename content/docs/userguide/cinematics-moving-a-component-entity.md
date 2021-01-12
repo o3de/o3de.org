@@ -1,7 +1,6 @@
 ---
 description: ' Move a component entity for a sequence in the &trackview-editor; in
   &ALYlong;. '
-slug: cinematics-moving-a-component-entity
 title: Moving a Component Entity in a Sequence
 ---
 # Moving a Component Entity in a Sequence<a name="cinematics-moving-a-component-entity"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Actor components
   in &ALYlong;. '
-slug: nvidia-cloth-actors
 title: Cloth for Actor components
 ---
 # Cloth for Actor components<a name="nvidia-cloth-actors"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use the Input component to bind raw input to events in &ALYlong;. '
-slug: component-input
 title: Input
 ---
 # Input<a name="component-input"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' You can manage your components with the &entity-outliner; in &ALYlong;. '
-slug: creating-adding-components
 title: Managing Components
 ---
 # Managing Components<a name="creating-adding-components"></a>

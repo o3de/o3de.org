@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Lumberyard UI 2.0 progress indicators, including the
   spinner and progress bar components. '
-slug: uidev-progress-indicators-component
 title: Lumberyard UI progress indicators
 ---
 # Lumberyard UI progress indicators<a name="uidev-progress-indicators-component"></a>

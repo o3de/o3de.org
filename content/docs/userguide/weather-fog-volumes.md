@@ -1,7 +1,6 @@
 ---
 description: ' Use fog volumes to define an area where fog appears in your &ALYlong;
   level. '
-slug: weather-fog-volumes
 title: Using Fog Volumes
 ---
 # Using Fog Volumes<a name="weather-fog-volumes"></a>

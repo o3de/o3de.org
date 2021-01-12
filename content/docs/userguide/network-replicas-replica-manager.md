@@ -1,7 +1,6 @@
 ---
 description: ' Learn how each GridMate session''s replica manager manages the primary
   and proxy replicas in a &ALYlong; game session. '
-slug: network-replicas-replica-manager
 title: Replica Manager
 ---
 # Replica Manager<a name="network-replicas-replica-manager"></a>

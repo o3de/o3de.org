@@ -1,7 +1,6 @@
 ---
 description: ' Learn how different Scripted Entity Tweener easing types affect the
   appearance of animations in &ALYlong;. '
-slug: ui-animating-tweener-understanding-types
 title: Supported Tweener Easing Types
 ---
 # Supported Tweener Easing Types<a name="ui-animating-tweener-understanding-types"></a>

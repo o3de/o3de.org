@@ -2,7 +2,6 @@
 description: ' Use &ALY;''s &material-editor; to set lighting and color settings for
   a material: material color, specular reflection, and lighting effects (specularity,
   glossiness, and glow). '
-slug: mat-color-lighting
 title: Setting Material Lighting and Color Settings
 ---
 # Setting Material Lighting and Color Settings<a name="mat-color-lighting"></a>

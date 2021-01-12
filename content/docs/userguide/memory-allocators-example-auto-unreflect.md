@@ -1,7 +1,6 @@
 ---
 description: ' Use a memory allocator in a class in a static variable context to automatically
   unreflect a module''s reflected classes in &ALYlong; '
-slug: memory-allocators-example-auto-unreflect
 title: 'Code Example: Automatic Unreflection of Module Classes'
 ---
 # Code Example: Automatic Unreflection of Module Classes<a name="memory-allocators-example-auto-unreflect"></a>

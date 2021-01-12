@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Lumberyard UI 2.0 customizations to the scrollbar style
   in Lumberyard tools and gems. '
-slug: uidev-scrollbar-component
 title: Lumberyard UI scrollbar styles
 ---
 # Lumberyard UI scrollbar styles<a name="uidev-scrollbar-component"></a>

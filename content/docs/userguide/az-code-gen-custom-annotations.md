@@ -1,7 +1,6 @@
 ---
 description: ' Use source code annotations to pass additional data to the template
   drivers that generate code when using &ALYlong;''s AZ Code Generator. '
-slug: az-code-gen-custom-annotations
 title: Custom Code Generator Annotations
 ---
 # Custom Code Generator Annotations<a name="az-code-gen-custom-annotations"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' You can use gems to add features and assets to your &ALYlong; game
   project. '
-slug: gems-system-gems
 title: Add modular features and assets with &gems;
 ---
 # Add modular features and assets with Gems<a name="gems-system-gems"></a>

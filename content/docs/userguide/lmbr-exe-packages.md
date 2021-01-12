@@ -1,6 +1,5 @@
 ---
 description: ' Use the lmbr packages command to download third party packages to &ALY;. '
-slug: lmbr-exe-packages
 title: Packages Commands
 ---
 # Packages Commands<a name="lmbr-exe-packages"></a>

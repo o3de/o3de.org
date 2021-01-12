@@ -1,6 +1,5 @@
 ---
 description: null
-slug: script-events-using-in-script-canvas
 title: Using Script Events in &script-canvas;
 ---
 # Using Script Events in Script Canvas<a name="script-events-using-in-script-canvas"></a>

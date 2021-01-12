@@ -1,6 +1,5 @@
 ---
 description: ' Use the screen fader effect to manage screen fade properties in &ALYlong;. '
-slug: effect-groups-screen-fader-effect
 title: Using the Screen Fader Effect
 ---
 # Using the Screen Fader Effect<a name="effect-groups-screen-fader-effect"></a>

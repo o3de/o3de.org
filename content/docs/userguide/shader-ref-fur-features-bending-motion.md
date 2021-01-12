@@ -1,6 +1,5 @@
 ---
 description: ' Use motion bending for fur materials in &ALYlong;. '
-slug: shader-ref-fur-features-bending-motion
 title: Motion Bending
 ---
 # Motion Bending<a name="shader-ref-fur-features-bending-motion"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; console variables (CVARs) to debug your cinematic
   scenes. '
-slug: cinematics-debugging
 title: Debugging Cinematic Scenes with Console Variables
 ---
 # Debugging Cinematic Scenes with Console Variables<a name="cinematics-debugging"></a>

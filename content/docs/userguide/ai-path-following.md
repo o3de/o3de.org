@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about path following in &ALYlong;. '
-slug: ai-path-following
 title: Path Following
 ---
 # Path Following<a name="ai-path-following"></a>

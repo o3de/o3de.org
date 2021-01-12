@@ -1,6 +1,5 @@
 ---
 description: ' Use vertex containers in &ALYlong; to access, update, and remove vertices. '
-slug: component-vertex-container
 title: Vertex Containers
 ---
 # Vertex Containers<a name="component-vertex-container"></a>

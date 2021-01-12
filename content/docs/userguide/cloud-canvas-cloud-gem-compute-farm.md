@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Compute Farm cloud gem to divide and conquer large-scale
   tasks for processing on a fleet of &EC2; instances. '
-slug: cloud-canvas-cloud-gem-compute-farm
 title: Compute Farm Cloud Gem
 ---
 # Compute Farm Cloud Gem<a name="cloud-canvas-cloud-gem-compute-farm"></a>

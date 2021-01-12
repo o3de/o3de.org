@@ -1,6 +1,5 @@
 ---
 description: null
-slug: waf-user-options-and-settings
 title: Waf User Options and Settings
 ---
 # Waf User Options and Settings<a name="waf-user-options-and-settings"></a>

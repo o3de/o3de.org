@@ -1,7 +1,6 @@
 ---
 description: ' Add mountains, valleys, lakes, rivers, roads, and other realistic terrain
   elements to your &ALYlong; level. '
-slug: terrain-intro
 title: Creating Terrain
 ---
 # Creating Terrain<a name="terrain-intro"></a>

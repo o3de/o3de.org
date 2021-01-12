@@ -1,6 +1,5 @@
 ---
 description: ' Bind &ALYlong; components to the network by adding the NetBindingComponent. '
-slug: network-replicas-binding
 title: Creating a NetBindable Component
 ---
 # Creating a NetBindable Component<a name="network-replicas-binding"></a>

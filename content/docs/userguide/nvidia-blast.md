@@ -1,7 +1,6 @@
 ---
 description: ' Use the NVIDIA Blast gem to simulate destruction in your &ALYlong;
   project. '
-slug: nvidia-blast
 title: NVIDIA Blast gem
 ---
 # NVIDIA Blast gem<a name="nvidia-blast"></a>

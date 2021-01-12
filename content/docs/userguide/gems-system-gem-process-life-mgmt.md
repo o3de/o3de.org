@@ -2,7 +2,6 @@
 description: ' Use the Process Life Management gem to respond to various application
   lifecycle events dispatched by the &ALYlong; engine, such as to pause your game,
   display a modal splash screen, and so on. '
-slug: gems-system-gem-process-life-mgmt
 title: Process Life Management Gem
 ---
 # Process Life Management Gem<a name="gems-system-gem-process-life-mgmt"></a>

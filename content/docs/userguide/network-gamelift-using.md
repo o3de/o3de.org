@@ -1,6 +1,5 @@
 ---
 description: ' Use &AGS; to host your &ALYlong; game in the cloud. '
-slug: network-gamelift-using
 title: ' Using &AGSlong;'
 ---
 # Using Amazon GameLift<a name="network-gamelift-using"></a>

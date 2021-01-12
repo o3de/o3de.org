@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; component serialization versioning system to validate
   and update the serialized data of your components. '
-slug: component-entity-system-versioning
 title: Versioning your Component Serialization
 ---
 # Versioning your Component Serialization<a name="component-entity-system-versioning"></a>

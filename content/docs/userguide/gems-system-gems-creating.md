@@ -1,6 +1,5 @@
 ---
 description: ' Create a gem for &ALYlong;. '
-slug: gems-system-gems-creating
 title: Creating a Gem
 ---
 # Creating a Gem<a name="gems-system-gems-creating"></a>

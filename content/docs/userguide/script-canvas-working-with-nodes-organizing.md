@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the tools and techniques available in the &script-canvas;
   editor for managing and organizing large graphs. '
-slug: script-canvas-working-with-nodes-organizing
 title: Organizing Nodes
 ---
 # Organizing Nodes<a name="script-canvas-working-with-nodes-organizing"></a>

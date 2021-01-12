@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALY; Profiler to capture, save, and analyze network, CPU,
   and VRAM usage statistics. '
-slug: profiler-intro
 title: Profiler
 ---
 # Profiler<a name="profiler-intro"></a>

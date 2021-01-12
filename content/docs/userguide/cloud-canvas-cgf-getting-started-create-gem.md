@@ -1,7 +1,6 @@
 ---
 description: ' Create a cloud gem to add connected features to your &ALYlong; game
   project. '
-slug: cloud-canvas-cgf-getting-started-create-gem
 title: Creating a Cloud Gem
 ---
 # Creating a Cloud Gem<a name="cloud-canvas-cgf-getting-started-create-gem"></a>

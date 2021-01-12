@@ -1,7 +1,6 @@
 ---
 description: ' Use Profiler''s network features to understand how your game uses network
   bandwidth in &ALYlong;. '
-slug: network-profilers
 title: Using Profiler for Networking
 ---
 # Using Profiler for Networking<a name="network-profilers"></a>

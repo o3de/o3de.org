@@ -1,7 +1,6 @@
 ---
 description: ' Use the Screen Fader node in the &ALYlong; &script-canvas; editor to
   control fading the screen to a color and/or texture. '
-slug: screen-fader-node
 title: Screen Fader
 ---
 # Screen Fader<a name="screen-fader-node"></a>

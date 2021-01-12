@@ -1,7 +1,6 @@
 ---
 description: ' Add the MultiplayerLobbyComponent to a component entity to manage game
   sessions in &ALYlong;. '
-slug: gems-system-gem-multiplayer-lobby-component
 title: The Multiplayer Lobby Component
 ---
 # The Multiplayer Lobby Component<a name="gems-system-gem-multiplayer-lobby-component"></a>

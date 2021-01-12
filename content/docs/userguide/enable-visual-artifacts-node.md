@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Visual Artifacts node in the &ALYlong; &script-canvas;
   editor to enable visual artifact filters such as an old television. '
-slug: enable-visual-artifacts-node
 title: Enable Visual Artifacts
 ---
 # Enable Visual Artifacts<a name="enable-visual-artifacts-node"></a>

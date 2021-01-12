@@ -1,7 +1,6 @@
 ---
 description: ' Create game and level loading screens with &ALYlong;''s &ui-canvas-editor;,
   and then add the canvas file paths to settings in the game.cfg and level.cfg files. '
-slug: ui-editor-load-screens
 title: Defining Game and Level Load Screens
 ---
 # Defining Game and Level Load Screens<a name="ui-editor-load-screens"></a>

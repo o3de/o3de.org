@@ -1,6 +1,5 @@
 ---
 description: null
-slug: fbx-settings-motions-tab
 title: FBX Settings Motions tab
 ---
 # FBX Settings Motions tab<a name="fbx-settings-motions-tab"></a>

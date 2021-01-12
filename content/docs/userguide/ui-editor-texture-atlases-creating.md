@@ -1,6 +1,5 @@
 ---
 description: null
-slug: ui-editor-texture-atlases-creating
 title: Creating a Texture Atlas
 ---
 # Creating a Texture Atlas<a name="ui-editor-texture-atlases-creating"></a>

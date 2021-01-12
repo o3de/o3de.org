@@ -1,7 +1,6 @@
 ---
 description: ' Use the Environment Probe component to achieve proper lighting for
   materials in &ALYlong;. '
-slug: component-environment-probe
 title: Environment Probe
 ---
 # Environment Probe<a name="component-environment-probe"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Edit a UI slice in a new tab in &ALYlong;''s &ui-canvas-editor; . '
-slug: ui-editor-working-slices-newtab
 title: Editing Slices in a New Tab
 ---
 # Editing Slices in a New Tab<a name="ui-editor-working-slices-newtab"></a>

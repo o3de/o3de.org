@@ -1,7 +1,6 @@
 ---
 description: ' Use the Snow Gem to create realistic snow effects in your &ALYlong;
   level. '
-slug: gems-system-gem-snow
 title: Snow Gem
 ---
 # Snow Gem<a name="gems-system-gem-snow"></a>

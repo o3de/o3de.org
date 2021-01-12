@@ -1,7 +1,6 @@
 ---
 description: ' Learn about ways to help avoid losing data when serializing component
   data in &ALYlong;. '
-slug: best-practices-for-component-data-serialization
 title: Avoiding Data Loss when Serializing Component Data
 ---
 # Avoiding Data Loss when Serializing Component Data<a name="best-practices-for-component-data-serialization"></a>

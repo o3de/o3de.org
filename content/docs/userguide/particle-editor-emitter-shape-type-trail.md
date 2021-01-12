@@ -1,7 +1,6 @@
 ---
 description: ' Use the Trail emitter in the &ALYlong; &particle-editor; to connect
   particles together to create a trailing effect. '
-slug: particle-editor-emitter-shape-type-trail
 title: Trail Emitter (CPU)
 ---
 # Trail Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-trail"></a>

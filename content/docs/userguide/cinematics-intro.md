@@ -1,6 +1,5 @@
 ---
 description: ' Learn how &ALYlong; supports cinematics and scripted event sequences. '
-slug: cinematics-intro
 title: Create cinematic sequences
 ---
 # Create cinematic sequences<a name="cinematics-intro"></a>

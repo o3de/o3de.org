@@ -1,6 +1,5 @@
 ---
 description: ' Develop a custom material shader in &ALYlong;. '
-slug: mat-shaders-custom-dev-intro
 title: Developing a Custom Shader
 ---
 # Developing a Custom Shader<a name="mat-shaders-custom-dev-intro"></a>

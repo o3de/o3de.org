@@ -1,7 +1,6 @@
 ---
 description: ' Use the &VIM; to interact with entities in the &ALYlong; viewport.
   Learn about the differences between the new &VIM; and the old interaction model. '
-slug: working-with-viewport-interaction-model
 title: Working with the &VIM;
 ---
 # Working with the Viewport Interaction Model<a name="working-with-viewport-interaction-model"></a>

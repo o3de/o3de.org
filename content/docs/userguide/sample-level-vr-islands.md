@@ -1,7 +1,6 @@
 ---
 description: ' Use the VR Islands level to demonstrate a simple VR level that uses
   the instantvr entity in &ALYlong;. '
-slug: sample-level-vr-islands
 title: VR Islands Level
 ---
 # VR Islands Level<a name="sample-level-vr-islands"></a>

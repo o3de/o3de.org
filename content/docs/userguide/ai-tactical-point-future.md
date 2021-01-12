@@ -1,6 +1,5 @@
 ---
 description: ' See the following potential areas to develop TPS in &ALYlong;. '
-slug: ai-tactical-point-future
 title: Future Plans and Possibilities
 ---
 # Future Plans and Possibilities<a name="ai-tactical-point-future"></a>

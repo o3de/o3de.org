@@ -1,7 +1,6 @@
 ---
 description: ' Import a saved layer to apply materials, textures, and shader settings
   to your &ALY; level all at once. '
-slug: terrain-texture-layers-import
 title: Importing &terrain-textures;
 ---
 # Importing Terrain Texture Layers<a name="terrain-texture-layers-import"></a>

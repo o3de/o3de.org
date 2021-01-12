@@ -1,6 +1,5 @@
 ---
 description: ' Add your existing AWS resources to a &cloud; resource group. '
-slug: cloud-canvas-ui-rm-resource-importer
 title: ' Importing Resource Definitions into &cloud;'
 ---
 # Importing Resource Definitions into Cloud Canvas<a name="cloud-canvas-ui-rm-resource-importer"></a>

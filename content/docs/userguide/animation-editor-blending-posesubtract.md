@@ -1,7 +1,6 @@
 ---
 description: ' Use the Pose Subtract node in &ALYlong; &animation-editor; to subtract
   one pose from another. '
-slug: animation-editor-blending-posesubtract
 title: Pose Subtract Node
 ---
 # Pose Subtract Node<a name="animation-editor-blending-posesubtract"></a>

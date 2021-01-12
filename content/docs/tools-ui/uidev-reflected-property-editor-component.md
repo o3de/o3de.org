@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lumberyard UI 2.0 reflected property editor to automatically
   lay out user-editable properties in Lumberyard tools and gems. '
-slug: uidev-reflected-property-editor-component
 title: Lumberyard UI reflected property editor
 ---
 # Lumberyard UI reflected property editor<a name="uidev-reflected-property-editor-component"></a>

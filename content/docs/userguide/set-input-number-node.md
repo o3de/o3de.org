@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Input Number node in the &ALYlong; &script-canvas; editor
   to set the value of a procedural material input parameter as a number. '
-slug: set-input-number-node
 title: Set Input Number
 ---
 # Set Input Number<a name="set-input-number-node"></a>

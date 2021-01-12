@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Rich Presence C++ API operations for Twitch that you
   can use for your &ALY; game project. '
-slug: twitch-api-ebus-rich-presence
 title: Rich Presence
 ---
 # Rich Presence<a name="twitch-api-ebus-rich-presence"></a>

@@ -2,7 +2,6 @@
 description: ' Get started with the Lumberyard UI 2.0 design guidelines and component
   libraries for building extensions that blend well with the standardized Lumberyard
   user experience. '
-slug: ui-dev-intro
 title: Introduction to Lumberyard UI development
 ---
 

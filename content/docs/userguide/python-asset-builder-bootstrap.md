@@ -1,6 +1,5 @@
 ---
 description: ' Learn to create or modify a bootstrap file for a Python Asset Builder. '
-slug: python-asset-builder-bootstrap
 title: Create or modify a bootstrap script
 ---
 # Create or modify a bootstrap script<a name="python-asset-builder-bootstrap"></a>

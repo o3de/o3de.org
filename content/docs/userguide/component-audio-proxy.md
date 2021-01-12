@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audio Proxy component in &ALY; to provide a method of communication
   between multiple audio components. '
-slug: component-audio-proxy
 title: Audio Proxy
 ---
 # Audio Proxy<a name="component-audio-proxy"></a>

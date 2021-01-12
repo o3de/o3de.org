@@ -1,7 +1,6 @@
 ---
 description: ' Use the sliced image type to intelligently resize parts of your game
   UI in &ALYlong;''s &ui-canvas-editor; . '
-slug: ui-editor-component-9-sliced
 title: Sliced Image Type
 ---
 # Sliced Image Type<a name="ui-editor-component-9-sliced"></a>

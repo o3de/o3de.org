@@ -1,6 +1,5 @@
 ---
 description: ' Create raycast and shape cast queries in &ALYlong;. '
-slug: physx-scene-queries
 title: PhysX Scene Queries
 ---
 # PhysX Scene Queries<a name="physx-scene-queries"></a>

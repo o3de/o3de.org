@@ -1,7 +1,6 @@
 ---
 description: ' Use C++, the client component, a request job, or Lua to call your API
   operations for &ALYlong;. '
-slug: cloud-canvas-cgf-service-api-calling-apis
 title: ' Calling a Game API'
 ---
 # Calling a Game API<a name="cloud-canvas-cgf-service-api-calling-apis"></a>

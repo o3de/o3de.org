@@ -1,6 +1,5 @@
 ---
 description: ' Learn detailed information about EBuses in &ALYlong;. '
-slug: ebus-in-depth
 title: Event Buses in Depth
 ---
 # Event Buses in Depth<a name="ebus-in-depth"></a>

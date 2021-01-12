@@ -2,7 +2,6 @@
 description: ' Use the Variable Manager in the &ALYlong; &script-canvas; editor to
   add or manage variables and create get, set, or value-changed event nodes in your
   &script-canvas; graph. '
-slug: script-canvas-managing-variables
 title: Managing &script-canvas; Variables
 ---
 # Managing Script Canvas Variables<a name="script-canvas-managing-variables"></a>

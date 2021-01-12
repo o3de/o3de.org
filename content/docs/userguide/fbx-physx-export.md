@@ -1,6 +1,5 @@
 ---
 description: ' Export PhysX colliders from .fbx files with FBX Settings to &ALYlong;. '
-slug: fbx-physx-export
 title: FBX Settings PhysX export
 ---
 # FBX Settings PhysX export<a name="fbx-physx-export"></a>

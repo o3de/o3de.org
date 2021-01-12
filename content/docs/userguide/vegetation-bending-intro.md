@@ -1,6 +1,5 @@
 ---
 description: ' Use any of &ALY;''s three bending effects to make vegetation bend naturally. '
-slug: vegetation-bending-intro
 title: Adding Vegetation Bending Effects
 ---
 # Adding Vegetation Bending Effects<a name="vegetation-bending-intro"></a>

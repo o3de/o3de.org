@@ -1,6 +1,5 @@
 ---
 description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
-slug: nvidia-blast-script-canvas
 title: Script Canvas nodes for NVIDIA Blast
 ---
 # Script Canvas nodes for NVIDIA Blast<a name="nvidia-blast-script-canvas"></a>

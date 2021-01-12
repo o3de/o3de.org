@@ -1,7 +1,6 @@
 ---
 description: ' Use specialized shaders and caustics to create realistic bodies of
   water in &ALY;. '
-slug: terrain-water-intro
 title: Creating Bodies of water
 ---
 # Creating Bodies of water<a name="terrain-water-intro"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Apply parallax occlusion mapping (POM) in &ALYlong;. '
-slug: mat-maps-parallax-pom
 title: Applying Parallax Occlusion Mapping (POM)
 ---
 # Applying Parallax Occlusion Mapping \(POM\)<a name="mat-maps-parallax-pom"></a>

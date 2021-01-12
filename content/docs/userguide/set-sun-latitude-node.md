@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Sun Latitude node in the &ALYlong; &script-canvas; editor
   to set the sun latitude. '
-slug: set-sun-latitude-node
 title: Set Sun Latitude
 ---
 # Set Sun Latitude<a name="set-sun-latitude-node"></a>

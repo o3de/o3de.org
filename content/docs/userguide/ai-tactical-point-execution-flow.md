@@ -1,6 +1,5 @@
 ---
 description: ' See the following TPS query execution flow in &ALYlong;. '
-slug: ai-tactical-point-execution-flow
 title: TPS Query Execution Flow
 ---
 # TPS Query Execution Flow<a name="ai-tactical-point-execution-flow"></a>

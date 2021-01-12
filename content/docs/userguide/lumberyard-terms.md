@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about terms and key concepts for &ALYlong;. '
-slug: lumberyard-terms
 title: Key &ALY; Terminology
 ---
 # Key Lumberyard Terminology<a name="lumberyard-terms"></a>

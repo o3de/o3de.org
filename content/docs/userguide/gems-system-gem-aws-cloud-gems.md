@@ -1,6 +1,5 @@
 ---
 description: ' Learn about using &cloud; cloud gems. '
-slug: gems-system-gem-aws-cloud-gems
 title: '&cloud; Cloud Gems'
 ---
 # Cloud Canvas Cloud Gems<a name="gems-system-gem-aws-cloud-gems"></a>

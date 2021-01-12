@@ -1,7 +1,6 @@
 ---
 description: ' Understand the different ways you can participate in AAA-game development
   with Amazon Lumberyard as a technical artist, game designer, or game programmer. '
-slug: wg-create-intro
 title: Create with Amazon Lumberyard
 ---
 # Create with Amazon Lumberyard<a name="wg-create-intro"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Enable a LAN firewall to protect your &ALYlong; environment '
-slug: setting-up-firewall
 title: Enabling a Firewall
 ---
 # Enabling a Firewall<a name="setting-up-firewall"></a>

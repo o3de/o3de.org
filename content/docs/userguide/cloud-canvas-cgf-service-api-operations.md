@@ -1,7 +1,6 @@
 ---
 description: ' Learn about cloud gem request and response mapping, request execution,
   and error handling operations for &ALYlong;. '
-slug: cloud-canvas-cgf-service-api-operations
 title: Operations
 ---
 # Operations<a name="cloud-canvas-cgf-service-api-operations"></a>

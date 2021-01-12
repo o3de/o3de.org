@@ -1,7 +1,6 @@
 ---
 description: ' Use the flatten brush to make terrain completely flat at a height you
   define in &ALY;. '
-slug: terrain-landforms-flatten-brush
 title: Using the Flatten Brush
 ---
 # Using the Flatten Brush<a name="terrain-landforms-flatten-brush"></a>

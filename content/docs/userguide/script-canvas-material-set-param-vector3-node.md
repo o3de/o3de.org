@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; editor
   to set a material parameter with a Vector3 value. '
-slug: script-canvas-material-set-param-vector3-node
 title: Set Param Vector3
 ---
 # Set Param Vector3<a name="script-canvas-material-set-param-vector3-node"></a>

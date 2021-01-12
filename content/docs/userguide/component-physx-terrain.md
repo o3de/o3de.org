@@ -1,6 +1,5 @@
 ---
 description: ' Use the PhysX Terrain component to create a physics collider in &ALYlong;. '
-slug: component-physx-terrain
 title: PhysX Terrain
 ---
 # PhysX Terrain<a name="component-physx-terrain"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to install Amazon Lumberyard. '
-slug: wg-install
 title: Installing Amazon Lumberyard
 ---
 # Installing Amazon Lumberyard<a name="wg-install"></a>

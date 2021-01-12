@@ -1,6 +1,5 @@
 ---
 description: ' Learn about &ALYlong;''s networking capabilities. '
-slug: networking-overview
 title: Overview
 ---
 # Overview<a name="networking-overview"></a>

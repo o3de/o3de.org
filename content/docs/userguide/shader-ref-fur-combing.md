@@ -1,7 +1,6 @@
 ---
 description: ' Use fur combing to render fur with a more controlled look in &ALYlong;''s
   &material-editor;. '
-slug: shader-ref-fur-combing
 title: Fur Combing
 ---
 # Fur Combing<a name="shader-ref-fur-combing"></a>

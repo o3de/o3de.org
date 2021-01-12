@@ -1,6 +1,5 @@
 ---
 description: ' Debug AI navigation with console variables in &ALYlong;. '
-slug: ai-nav-debug
 title: Debugging AI Navigation
 ---
 # Debugging AI Navigation<a name="ai-nav-debug"></a>

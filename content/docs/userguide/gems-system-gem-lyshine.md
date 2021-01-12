@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s LyShine gem to create dynamic UI interfaces for your
   games. '
-slug: gems-system-gem-lyshine
 title: LyShine
 ---
 # LyShine<a name="gems-system-gem-lyshine"></a>

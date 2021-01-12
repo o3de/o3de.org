@@ -1,7 +1,6 @@
 ---
 description: ' Configure Advanced Settings such as system entities and memory settings
   in the &project-configurator;. '
-slug: configurator-advanced
 title: Configuring Advanced Settings
 ---
 # Configuring Advanced Settings<a name="configurator-advanced"></a>

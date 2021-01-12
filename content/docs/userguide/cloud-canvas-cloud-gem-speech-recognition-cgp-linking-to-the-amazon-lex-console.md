@@ -1,7 +1,6 @@
 ---
 description: ' Go directly to the &LEX; console from the Speech Recognition Cloud
   Gem Portal. '
-slug: cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console
 title: Linking to the &LEX; Console
 ---
 # Linking to the Amazon Lex Console<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console"></a>

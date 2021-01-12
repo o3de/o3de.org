@@ -1,6 +1,5 @@
 ---
 description: ' Set the status for an entity while working in the editor for &ALYlong;. '
-slug: component-entity-inspector-status
 title: Setting an Entity Status
 ---
 # Setting an Entity Status<a name="component-entity-inspector-status"></a>

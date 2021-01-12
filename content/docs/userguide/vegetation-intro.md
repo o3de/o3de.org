@@ -1,7 +1,6 @@
 ---
 description: ' Add realistic trees, bushes, grasses, and other vegetation to your
   &ALYlong; terrain. '
-slug: vegetation-intro
 title: Adding Vegetation
 ---
 # Adding Vegetation<a name="vegetation-intro"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Register objects int the &ALY; engine for JSON or XML serialization. '
-slug: serialization-register-objects
 title: Register objects for serialization
 ---
 # Register objects for serialization<a name="serialization-register-objects"></a>

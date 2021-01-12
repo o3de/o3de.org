@@ -1,7 +1,6 @@
 ---
 description: ' Divide &ALY; texture layers into smaller sections to increase the resolution
   of heavily viewed areas. '
-slug: terrain-texture-tiles-resolution
 title: Changing Terrain Tile Resolution
 ---
 # Changing Terrain Tile Resolution<a name="terrain-texture-tiles-resolution"></a>

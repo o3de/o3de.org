@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; editor
   to return a material parameter as a numerical value. '
-slug: material-get-param-number-node
 title: Get Param Number
 ---
 # Get Param Number<a name="material-get-param-number-node"></a>

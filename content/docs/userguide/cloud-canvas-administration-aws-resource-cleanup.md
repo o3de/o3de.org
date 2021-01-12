@@ -1,7 +1,6 @@
 ---
 description: ' Remove unneeded &AWS; resources when you develop cloud-connected features
   in &ALYlong;. '
-slug: cloud-canvas-administration-aws-resource-cleanup
 title: Freeing Up &AWS; Resources
 ---
 # Freeing Up AWS Resources<a name="cloud-canvas-administration-aws-resource-cleanup"></a>

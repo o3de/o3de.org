@@ -1,7 +1,6 @@
 ---
 description: ' Use a variety of brushes to add realistic mountains, valleys, and other
   landforms to your &ALY; terrain. '
-slug: terrain-landforms-intro
 title: Creating Landforms and Topography
 ---
 # Creating Landforms and Topography<a name="terrain-landforms-intro"></a>

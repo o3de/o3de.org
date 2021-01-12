@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALY; &particle-editor; to create, duplicate, edit, manage,
   and organize emitters for particle effects. '
-slug: particle-emitter-creating
 title: Creating and Managing Particle Emitters
 ---
 # Creating and Managing Particle Emitters<a name="particle-emitter-creating"></a>

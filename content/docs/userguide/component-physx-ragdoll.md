@@ -1,7 +1,6 @@
 ---
 description: ' Use the PhysX Ragdoll component to create a physical representation
   of a character in the &ALYlong; &animation-editor; . '
-slug: component-physx-ragdoll
 title: PhysX Ragdoll
 ---
 # PhysX Ragdoll<a name="component-physx-ragdoll"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Create variable references on the data pins of &ALYlong; &script-canvas;
   nodes as a shortcut to getting or setting a variable''s value. '
-slug: script-canvas-adding-variable-references
 title: Adding Variable References in &script-canvas; Nodes
 ---
 # Adding Variable References in Script Canvas Nodes<a name="script-canvas-adding-variable-references"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the VR Xylophone level to learn how to set up basic VR gameplay
   with the &component-system; in &ALYlong;. '
-slug: sample-level-vr-xylophone
 title: VR Xylophone Level
 ---
 # VR Xylophone Level<a name="sample-level-vr-xylophone"></a>

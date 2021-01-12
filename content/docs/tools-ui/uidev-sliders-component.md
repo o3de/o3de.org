@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the Lumberyard UI 2.0 style of sliders, including the slider
   and slider combo components. '
-slug: uidev-sliders-component
 title: Lumberyard UI sliders
 ---
 # Lumberyard UI sliders<a name="uidev-sliders-component"></a>

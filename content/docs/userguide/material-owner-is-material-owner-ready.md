@@ -1,7 +1,6 @@
 ---
 description: ' Use the Is Ready node in the &ALYlong; &script-canvas; editor to learn
   whether the material owner finished loading its assets and the material is ready. '
-slug: material-owner-is-material-owner-ready
 title: Is Ready
 ---
 # Is Ready<a name="material-owner-is-material-owner-ready"></a>

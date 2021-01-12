@@ -1,6 +1,5 @@
 ---
 description: ' Use &ALY; slices as reusable, easily updatable component entity templates. '
-slug: component-slices
 title: Working with Slices
 ---
 # Working with Slices<a name="component-slices"></a>

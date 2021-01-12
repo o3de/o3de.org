@@ -1,6 +1,5 @@
 ---
 description: null
-slug: fbx-settings-actor-tab
 title: FBX Settings Actors tab
 ---
 # FBX Settings Actors tab<a name="fbx-settings-actor-tab"></a>

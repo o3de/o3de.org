@@ -1,6 +1,5 @@
 ---
 description: ' View logs for your cloud gems in &ALYlong; with the &cgp;. '
-slug: cloud-canvas-cloud-gem-portal-log-tab
 title: Using the &cgp; to View Logs
 ---
 # Using the Cloud Gem Portal to View Logs<a name="cloud-canvas-cloud-gem-portal-log-tab"></a>

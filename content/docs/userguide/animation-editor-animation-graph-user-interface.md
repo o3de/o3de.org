@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the user interface for the animation graph. '
-slug: animation-editor-animation-graph-user-interface
 title: Anim Graph Interface
 ---
 # Anim Graph Interface<a name="animation-editor-animation-graph-user-interface"></a>

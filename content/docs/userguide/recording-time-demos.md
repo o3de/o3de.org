@@ -1,6 +1,5 @@
 ---
 description: ' Record time demos for player input and camera movement in &ALYlong;. '
-slug: recording-time-demos
 title: Recording Time Demos
 ---
 # Recording Time Demos<a name="recording-time-demos"></a>

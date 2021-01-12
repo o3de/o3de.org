@@ -1,7 +1,6 @@
 ---
 description: ' Use the Websockets Gem to add support for the WebSocket protocol to
   your &ALYlong; project. '
-slug: gem-websockets
 title: Websockets &gem;
 ---
 # Websockets Gem<a name="gem-websockets"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use the UICheckboxComponent to implement a UI check box in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uicheckboxcomponent
 title: UICheckboxComponent
 ---
 # UICheckboxComponent<a name="lua-scripting-ces-api-ui-uicheckboxcomponent"></a>

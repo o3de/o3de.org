@@ -1,7 +1,6 @@
 ---
 description: ' Learn about security best practices when you use the Cloud Gem Framework
   in &ALYlong;. '
-slug: cloud-canvas-cgf-service-api-security
 title: Security
 ---
 # Security<a name="cloud-canvas-cgf-service-api-security"></a>

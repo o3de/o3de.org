@@ -1,6 +1,5 @@
 ---
 description: ' Specify permissions metadata for &cloud; resource definitions in &ALYlong;. '
-slug: permissions-metadata-for-resource-definitions
 title: Permissions Metadata for Resource Definitions
 ---
 # Permissions Metadata for Resource Definitions<a name="permissions-metadata-for-resource-definitions"></a>

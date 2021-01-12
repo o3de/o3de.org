@@ -1,7 +1,6 @@
 ---
 description: ' Use the lmbr thirdpartysdks command to list and download &ALY; third
   party SDKs. '
-slug: lmbr-exe-thirdpartysdks
 title: ThirdPartySDKs Commands
 ---
 # ThirdPartySDKs Commands<a name="lmbr-exe-thirdpartysdks"></a>

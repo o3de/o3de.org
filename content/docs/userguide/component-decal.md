@@ -1,7 +1,6 @@
 ---
 description: ' Use the Decal component to place decals as components on an entity
   in &ALYlong;. '
-slug: component-decal
 title: Decal
 ---
 # Decal<a name="component-decal"></a>

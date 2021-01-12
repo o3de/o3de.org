@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about FAQs for AI navigation in &ALYlong;. '
-slug: ai-navigation
 title: Navigation Q &amp; A
 ---
 # Navigation Q & A<a name="ai-navigation"></a>

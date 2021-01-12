@@ -1,7 +1,6 @@
 ---
 description: ' Download and install &ALYlong;, which includes folders and files for
   WAF, code, gems, &ly-editor;, assets, and samples. '
-slug: setting-up-downloading-lumberyard
 title: Installing &ALY;
 ---
 # Installing Lumberyard<a name="setting-up-downloading-lumberyard"></a>

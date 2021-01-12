@@ -1,7 +1,6 @@
 ---
 description: ' Create a &ALYlong; terrain that features 2k height and 16k megaterrain
   color. '
-slug: terrain-high-quality
 title: Creating High Quality Terrain
 ---
 # Creating High Quality Terrain<a name="terrain-high-quality"></a>

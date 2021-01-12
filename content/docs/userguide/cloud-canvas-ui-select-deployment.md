@@ -1,7 +1,6 @@
 ---
 description: ' Select and manage the deployments that you want &ly-editor; to work
   with in &ALYlong;. '
-slug: cloud-canvas-ui-select-deployment
 title: Making a &cloud; Deployment Active
 ---
 # Making a Cloud Canvas Deployment Active<a name="cloud-canvas-ui-select-deployment"></a>

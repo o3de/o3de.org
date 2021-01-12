@@ -1,7 +1,6 @@
 ---
 description: ' You can add an action to a state or transition in an &ALYlong; &animation-editor;
   animation graph to trigger a parameter value change. '
-slug: animation-editor-actions
 title: Actions
 ---
 # Actions<a name="animation-editor-actions"></a>

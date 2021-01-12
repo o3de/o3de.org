@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audio Listener component to add a virtual microphone in the
   &ALYlong; environment. '
-slug: component-audio-listener
 title: Audio Listener
 ---
 # Audio Listener<a name="component-audio-listener"></a>

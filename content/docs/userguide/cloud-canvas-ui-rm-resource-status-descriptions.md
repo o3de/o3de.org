@@ -1,7 +1,6 @@
 ---
 description: ' Provides a description of the status codes that appear in &cloud; resource
   operations. '
-slug: cloud-canvas-ui-rm-resource-status-descriptions
 title: Understanding Resource Status Descriptions
 ---
 # Understanding Resource Status Descriptions<a name="cloud-canvas-ui-rm-resource-status-descriptions"></a>

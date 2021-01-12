@@ -1,7 +1,6 @@
 ---
 description: ' Use visual debugging on destruction simulations in &ALYlong; with NVIDIA
   Blast. '
-slug: nvidia-blast-debug
 title: NVIDIA Blast visual debugger
 ---
 # NVIDIA Blast visual debugger<a name="nvidia-blast-debug"></a>

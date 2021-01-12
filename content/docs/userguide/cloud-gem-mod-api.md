@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the API calls that the &ALYlong; Message of the Day Cloud
   Gem uses. '
-slug: cloud-gem-mod-api
 title: Cloud Gem Message of the Day API Calls
 ---
 # Cloud Gem Message of the Day API Calls<a name="cloud-gem-mod-api"></a>

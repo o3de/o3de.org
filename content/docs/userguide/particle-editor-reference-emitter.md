@@ -1,7 +1,6 @@
 ---
 description: ' Use the Emitter Attribute in the &ALY; &particle-editor; to control
   the location and spawning attributes of the particle and emitter shape. '
-slug: particle-editor-reference-emitter
 title: Emitter Attribute
 ---
 # Emitter Attribute<a name="particle-editor-reference-emitter"></a>

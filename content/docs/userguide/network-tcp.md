@@ -1,7 +1,6 @@
 ---
 description: ' Use the TCP socket driver in &ALYlong; 1.10 and later for direct connections
   and an event bus that detects stream connect and disconnect events. '
-slug: network-tcp
 title: The TCP Stream Driver
 ---
 # The TCP Stream Driver<a name="network-tcp"></a>

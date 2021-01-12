@@ -1,6 +1,5 @@
 ---
 description: ' Create custom image processing presets in &ALYlong;. '
-slug: asset-pipeline-creating-image-processing-presets
 title: Creating Image Processing Presets
 ---
 # Creating Image Processing Presets<a name="asset-pipeline-creating-image-processing-presets"></a>

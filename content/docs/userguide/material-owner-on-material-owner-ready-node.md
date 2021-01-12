@@ -1,7 +1,6 @@
 ---
 description: ' Use the On Ready node in the &ALYlong; &script-canvas; to indicate
   when the material owner finishes loading its assets. '
-slug: material-owner-on-material-owner-ready-node
 title: On Ready
 ---
 # On Ready<a name="material-owner-on-material-owner-ready-node"></a>

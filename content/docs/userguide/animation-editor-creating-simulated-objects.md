@@ -1,6 +1,5 @@
 ---
 description: ' Create simulated objects that move with your character (actor) in &ALYlong;. '
-slug: animation-editor-creating-simulated-objects
 title: Creating Simulated Objects
 ---
 # Creating Simulated Objects<a name="animation-editor-creating-simulated-objects"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Configure debugging for the PhysX system in &ALYlong;. '
-slug: physx-configuration-debugger
 title: Debugger Configuration
 ---
 # Debugger Configuration<a name="physx-configuration-debugger"></a>

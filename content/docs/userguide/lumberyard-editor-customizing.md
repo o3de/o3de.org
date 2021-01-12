@@ -1,7 +1,6 @@
 ---
 description: ' Customize &ly-editor; by docking windows and toolbars, customizing
   toolbars and menus, and updating editor settings and global preferences for &ALYlong;. '
-slug: lumberyard-editor-customizing
 title: Customizing &ly-editor;
 ---
 # Customizing Lumberyard Editor<a name="lumberyard-editor-customizing"></a>

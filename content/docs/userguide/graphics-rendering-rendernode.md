@@ -1,6 +1,5 @@
 ---
 description: ' Visualize objects in a world with render nodes in &ALYlong;. '
-slug: graphics-rendering-rendernode
 title: Render Nodes
 ---
 # Render Nodes<a name="graphics-rendering-rendernode"></a>

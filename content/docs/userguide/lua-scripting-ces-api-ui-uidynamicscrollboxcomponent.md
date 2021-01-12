@@ -1,7 +1,6 @@
 ---
 description: ' Use the UIDynamicScrollBoxComponent to set up scrollbox content as
   a horizontal or vertical list of elements in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uidynamicscrollboxcomponent
 title: UIDynamicScrollBoxComponent
 ---
 # UIDynamicScrollBoxComponent<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent"></a>

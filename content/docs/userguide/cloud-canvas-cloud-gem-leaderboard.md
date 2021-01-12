@@ -1,7 +1,6 @@
 ---
 description: ' Use the Leaderboard Cloud Gem Portal to create, view, and customize
   leaderboards. '
-slug: cloud-canvas-cloud-gem-leaderboard
 title: Leaderboard Cloud Gem Portal
 ---
 # Leaderboard Cloud Gem Portal<a name="cloud-canvas-cloud-gem-leaderboard"></a>

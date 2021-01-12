@@ -1,7 +1,6 @@
 ---
 description: ' Use the REST Explorer tab in the &cgp; to test &ABPlong; endpoints
   for cloud gems in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-portal-rest-explorer
 title: Using the &cgp; REST Explorer
 ---
 # Using the Cloud Gem Portal REST Explorer<a name="cloud-canvas-cloud-gem-portal-rest-explorer"></a>

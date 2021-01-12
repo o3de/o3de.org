@@ -1,6 +1,5 @@
 ---
 description: ' Enable the water shader to render the ocean in &ALYlong;. '
-slug: shader-ref-water
 title: Water Shader
 ---
 # Water Shader<a name="shader-ref-water"></a>

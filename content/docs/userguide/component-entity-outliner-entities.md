@@ -1,6 +1,5 @@
 ---
 description: ' Manage your entities with the &entity-outliner; in &ALYlong;. '
-slug: component-entity-outliner-entities
 title: Working with Entities
 ---
 # Working with Entities<a name="component-entity-outliner-entities"></a>

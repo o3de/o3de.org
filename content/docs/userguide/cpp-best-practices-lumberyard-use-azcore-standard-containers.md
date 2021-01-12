@@ -1,6 +1,5 @@
 ---
 description: ' Learn best practices for containers in &ALYlong;. '
-slug: cpp-best-practices-lumberyard-use-azcore-standard-containers
 title: Use AzCore Standard Containers
 ---
 # Use AzCore Standard Containers<a name="cpp-best-practices-lumberyard-use-azcore-standard-containers"></a>

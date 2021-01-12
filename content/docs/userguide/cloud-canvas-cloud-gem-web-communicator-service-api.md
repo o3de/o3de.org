@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the &cloud; Web Communicator Cloud Gem API calls that the
   Cloud Gem Portal uses to send messages to connected clients in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-web-communicator-service-api
 title: Web Communicator Cloud Gem Service API
 ---
 # Web Communicator Cloud Gem Service API<a name="cloud-canvas-cloud-gem-web-communicator-service-api"></a>

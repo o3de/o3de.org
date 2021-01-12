@@ -1,7 +1,6 @@
 ---
 description: ' Create realistic partial destruction simulations in &ALYlong; with
   NVIDIA Blast. '
-slug: nvidia-blast-static-chunks
 title: Partial destruction with NVIDIA Blast
 ---
 # Partial destruction with NVIDIA Blast<a name="nvidia-blast-static-chunks"></a>

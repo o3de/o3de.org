@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to use &ALYlong;''s EBus from examples. '
-slug: ebus-usage-and-examples
 title: Usage and Examples
 ---
 # Usage and Examples<a name="ebus-usage-and-examples"></a>

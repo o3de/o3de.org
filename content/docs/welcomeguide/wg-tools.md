@@ -1,6 +1,5 @@
 ---
 description: ' Learn about the tools used to create content in Amazon Lumberyard. '
-slug: wg-tools
 title: Tools available in Amazon Lumberyard
 ---
 # Tools available in Amazon Lumberyard<a name="wg-tools"></a>

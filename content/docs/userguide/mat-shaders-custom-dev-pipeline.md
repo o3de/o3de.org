@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the shader rendering pipeline in &ALYlong;. '
-slug: mat-shaders-custom-dev-pipeline
 title: Shader Rendering Pipeline
 ---
 # Shader Rendering Pipeline<a name="mat-shaders-custom-dev-pipeline"></a>

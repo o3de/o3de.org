@@ -1,6 +1,5 @@
 ---
 description: ' Add scripts to entities with the &script-canvas; component in &ALYlong;. '
-slug: script-canvas-adding-scripts
 title: Adding Scripts to Entities
 ---
 # Adding Scripts to Entities<a name="script-canvas-adding-scripts"></a>

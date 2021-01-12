@@ -1,7 +1,6 @@
 ---
 description: ' Use &landscape-canvas; &gem; to author dynamic vegetation &ALYlong;
   project. '
-slug: gem-landscape-canvas
 title: '&landscape-canvas; &gem;'
 ---
 # Landscape Canvas Gem<a name="gem-landscape-canvas"></a>

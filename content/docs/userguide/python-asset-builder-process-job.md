@@ -1,7 +1,6 @@
 ---
 description: ' Process jobs in Python Asset Builder to create custom asset builders
   for your &ALYlong; project. '
-slug: python-asset-builder-process-job
 title: Process job with Python Asset Builder
 ---
 # Process job with Python Asset Builder<a name="python-asset-builder-process-job"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Modify a slice and then save changes in &ly-editor;. '
-slug: component-slice-push-changes
 title: Modifying a Slice and Saving Changes
 ---
 # Modifying a Slice and Saving Changes<a name="component-slice-push-changes"></a>

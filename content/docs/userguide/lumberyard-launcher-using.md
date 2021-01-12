@@ -1,7 +1,6 @@
 ---
 description: ' Use &ly-launcher; to install required third-party software, SDKs, and
   plugins. '
-slug: lumberyard-launcher-using
 title: Running &ly-launcher;
 ---
 # Running Lumberyard Setup Assistant<a name="lumberyard-launcher-using"></a>

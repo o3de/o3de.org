@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to apply the Lumberyard UI 2.0 toggle switch style to a checkbox
   component in Lumberyard gems and tools. '
-slug: uidev-toggle-switch-component
 title: Lumberyard UI toggle switch component
 ---
 # Lumberyard UI toggle switch component<a name="uidev-toggle-switch-component"></a>

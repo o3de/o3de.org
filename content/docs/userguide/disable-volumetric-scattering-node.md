@@ -1,7 +1,6 @@
 ---
 description: ' Use the Disable Volumetric Scattering node in the &ALYlong; &script-canvas;
   editor to disable volumetric scattering effects. '
-slug: disable-volumetric-scattering-node
 title: Disable Volumetric Scattering
 ---
 # Disable Volumetric Scattering<a name="disable-volumetric-scattering-node"></a>

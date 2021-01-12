@@ -1,7 +1,6 @@
 ---
 description: ' Launch your &ALYlong; game project after using Waf to configure and
   build it. '
-slug: waf-launching-project
 title: Launching the Game Project
 ---
 # Launching the Game Project<a name="waf-launching-project"></a>

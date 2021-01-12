@@ -1,6 +1,5 @@
 ---
 description: ' Learn about how &ALYlong; uses system components. '
-slug: az-module-system-components
 title: System Components
 ---
 # System Components<a name="az-module-system-components"></a>

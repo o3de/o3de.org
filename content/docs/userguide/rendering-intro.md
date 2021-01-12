@@ -1,7 +1,6 @@
 ---
 description: ' The following topics will guide you through the graphics features and
   rendering effects of &ALY;. '
-slug: rendering-intro
 title: Graphics and Rendering in &ALY;
 ---
 # Graphics and Rendering in Lumberyard<a name="rendering-intro"></a>

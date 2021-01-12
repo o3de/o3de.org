@@ -1,7 +1,6 @@
 ---
 description: ' Learn the process for building and packaging a release of your Lumberyard
   project. '
-slug: tutor-final-package-distribute
 title: 'Final step: Package and release a build'
 ---
 # Final step: Package and release a build<a name="tutor-final-package-distribute"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to migrate your existing &ALYlong; game project to use the
   &asset-bundler; system. '
-slug: asset-bundler-migrating
 title: Migrating a Game Project to the &asset-bundler;
 ---
 # Migrating a Game Project to the Asset Bundler<a name="asset-bundler-migrating"></a>

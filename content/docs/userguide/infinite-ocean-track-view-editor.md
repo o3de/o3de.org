@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; Infinite Ocean component with the &trackview-editor;. '
-slug: infinite-ocean-track-view-editor
 title: Infinite Ocean Component with the Track View Editor
 ---
 # Infinite Ocean Component with the Track View Editor<a name="infinite-ocean-track-view-editor"></a>

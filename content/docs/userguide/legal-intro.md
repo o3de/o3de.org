@@ -1,6 +1,5 @@
 ---
 description: ' Legal information for the use and distribution of &ALY; and &ALY; materials. '
-slug: legal-intro
 title: Legal
 ---
 # Legal<a name="legal-intro"></a>

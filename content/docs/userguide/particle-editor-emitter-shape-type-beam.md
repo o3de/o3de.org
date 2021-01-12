@@ -2,7 +2,6 @@
 description: ' Use the Beam emitter in the &ALYlong; &particle-editor; to spawn a
   length of connected particles at once, based on the origin and specified target
   position. '
-slug: particle-editor-emitter-shape-type-beam
 title: Beam Emitter (CPU)
 ---
 # Beam Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-beam"></a>

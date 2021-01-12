@@ -1,7 +1,6 @@
 ---
 description: ' Play a video file in a loading screen or on textures in &ALYlong; using
   RAD Game Tools'' Bink video codec. '
-slug: gems-system-gem-videoplayback-bink
 title: Video Playback Bink Gem
 ---
 # Video Playback Bink Gem<a name="gems-system-gem-videoplayback-bink"></a>

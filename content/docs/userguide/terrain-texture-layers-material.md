@@ -1,6 +1,5 @@
 ---
 description: ' Assign materials to your texture layers in &ly-editor;. '
-slug: terrain-texture-layers-material
 title: Applying a Texture Layer Material
 ---
 # Applying a Texture Layer Material<a name="terrain-texture-layers-material"></a>

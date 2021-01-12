@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; High Quality Shadow component to give an entity its
   own shadow map. '
-slug: component-high-quality-shadow
 title: High Quality Shadow
 ---
 # High Quality Shadow<a name="component-high-quality-shadow"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' See the HumanSkin shader to render skin in &ALYlong;. '
-slug: shader-ref-humanskin
 title: HumanSkin Shader
 ---
 # HumanSkin Shader<a name="shader-ref-humanskin"></a>

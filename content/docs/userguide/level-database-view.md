@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s &database-view; editor to create libraries of entities,
   prefabs, vegetation, particles, and game tokens. '
-slug: level-database-view
 title: Working with Database Libraries
 ---
 # Working with Database Libraries<a name="level-database-view"></a>

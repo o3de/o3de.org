@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s remote shade compiler for game consoles that can''t
   compile shaders locally. '
-slug: mat-shaders-custom-dev-remote-compiler
 title: Remote Shader Compiler
 ---
 # Remote Shader Compiler<a name="mat-shaders-custom-dev-remote-compiler"></a>

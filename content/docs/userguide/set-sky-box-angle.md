@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Skybox Angle node in the &ALYlong; &script-canvas; editor
   to rotate the skybox around the z-axis. '
-slug: set-sky-box-angle
 title: Set Skybox Angle
 ---
 # Set Skybox Angle<a name="set-sky-box-angle"></a>

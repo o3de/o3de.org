@@ -1,6 +1,5 @@
 ---
 description: ' Directly access files for special use cases like streaming in &ALYlong;. '
-slug: file-access-direct
 title: Raw File Access in &ALY;
 ---
 # Raw File Access in Lumberyard<a name="file-access-direct"></a>

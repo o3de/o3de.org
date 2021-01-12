@@ -1,6 +1,5 @@
 ---
 description: ' Use C++ macros for error management and troubleshooting in &ALYlong;. '
-slug: script-canvas-errors-and-troubleshooting
 title: '&script-canvas; Errors and Troubleshooting'
 ---
 # Script Canvas Errors and Troubleshooting<a name="script-canvas-errors-and-troubleshooting"></a>

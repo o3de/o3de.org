@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lua Script component to add script functionality to your game
   entities in &ALYlong;. '
-slug: lua-scripting-intro-add-script-to-component
 title: Adding Lua Scripts to Component Entities
 ---
 # Adding Lua Scripts to Component Entities<a name="lua-scripting-intro-add-script-to-component"></a>

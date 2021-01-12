@@ -1,6 +1,5 @@
 ---
 description: ' Use the Slice Favorites Gem in &ALYlong; to flag slices as favorites. '
-slug: gems-system-gem-slice-favorites
 title: Slice Favorites
 ---
 # Slice Favorites<a name="gems-system-gem-slice-favorites"></a>

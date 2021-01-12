@@ -1,6 +1,5 @@
 ---
 description: ' Use the virtual file system (VFS) to serve &ALYlong; files to iOS devices. '
-slug: ios-virtual-file-system
 title: Using Virtual File System with iOS
 ---
 # Using Virtual File System with iOS<a name="ios-virtual-file-system"></a>

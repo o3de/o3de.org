@@ -1,7 +1,6 @@
 ---
 description: ' Configure permissions for &cloud; in your &ALYlong; project and learn
   about the Resource Manager security system in depth. '
-slug: cloud-canvas-rm-security
 title: Understanding the Resource Manager Security System
 ---
 # Understanding the Resource Manager Security System<a name="cloud-canvas-rm-security"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' See the best practices for working with skinned meshes actors for the
   &animation-editor; in &ALYlong;. '
-slug: char-fbx-importer-create-skinned-meshes-best-practices
 title: Creating Skinned Meshes for Actors
 ---
 # Creating Skinned Meshes for Actors<a name="char-fbx-importer-create-skinned-meshes-best-practices"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Select an AI navigation type in &ALYlong;. '
-slug: ai-nav-agent-types
 title: Selecting an AI Navigation Type
 ---
 # Selecting an AI Navigation Type<a name="ai-nav-agent-types"></a>

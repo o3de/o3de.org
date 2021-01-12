@@ -1,7 +1,6 @@
 ---
 description: ' Serialize objects from the &ALY; engine to JSON for processing by other
   tools or to load between runtime sessions. '
-slug: serialization-json-intro
 title: Object serialization to JSON format
 ---
 # Object serialization to JSON format<a name="serialization-json-intro"></a>

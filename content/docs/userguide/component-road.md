@@ -1,7 +1,6 @@
 ---
 description: ' Use the Road component to create paths and align the terrain to roads
   in &ALYlong;. '
-slug: component-road
 title: Road
 ---
 # Road<a name="component-road"></a>

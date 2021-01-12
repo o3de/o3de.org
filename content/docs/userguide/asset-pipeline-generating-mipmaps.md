@@ -1,7 +1,6 @@
 ---
 description: ' Use mip maps to optimize images to be viewed at various distances while
   reducing the time and processing power it takes to render them in &ALYlong;. '
-slug: asset-pipeline-generating-mipmaps
 title: Generating Mip Maps
 ---
 # Generating Mip Maps<a name="asset-pipeline-generating-mipmaps"></a>

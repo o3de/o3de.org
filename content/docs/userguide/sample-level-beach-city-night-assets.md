@@ -1,7 +1,6 @@
 ---
 description: ' Use the Beach City sample project to create your own levels in your
   &ALY; game project. '
-slug: sample-level-beach-city-night-assets
 title: Beach City Sample Project &endash; Legacy
 ---
 # Beach City Sample Project – Legacy<a name="sample-level-beach-city-night-assets"></a>

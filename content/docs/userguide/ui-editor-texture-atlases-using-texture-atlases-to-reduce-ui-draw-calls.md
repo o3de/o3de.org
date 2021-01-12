@@ -1,6 +1,5 @@
 ---
 description: null
-slug: ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls
 title: Using Texture Atlases to Reduce UI Draw Calls
 ---
 # Using Texture Atlases to Reduce UI Draw Calls<a name="ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls"></a>

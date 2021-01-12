@@ -1,6 +1,5 @@
 ---
 description: ' Follow these guidelines when using the &ALYlong; Infinite Ocean component. '
-slug: infinite-ocean-component-best-practices
 title: Best Practices Working with the Infinite Ocean Component
 ---
 # Best Practices Working with the Infinite Ocean Component<a name="infinite-ocean-component-best-practices"></a>

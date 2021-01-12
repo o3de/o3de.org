@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Radial Blur node in the &ALYlong; &script-canvas; editor
   to configure radial blur filters. '
-slug: enable-radial-blur-node
 title: Enable Radial Blur
 ---
 # Enable Radial Blur<a name="enable-radial-blur-node"></a>

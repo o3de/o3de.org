@@ -1,6 +1,5 @@
 ---
 description: ' Learn about dynamic vegetation concepts and ideas in &ALYlong;. '
-slug: dynamic-vegetation-concepts
 title: Dynamic Vegetation Concepts
 ---
 # Dynamic Vegetation Concepts<a name="dynamic-vegetation-concepts"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use event buses to dispatch messages safely and efficiently in your
   gaming application for &ALYlong;. '
-slug: ebus-intro
 title: Working with the Event Bus (EBus) system
 ---
 # Working with the Event Bus \(EBus\) system<a name="ebus-intro"></a>

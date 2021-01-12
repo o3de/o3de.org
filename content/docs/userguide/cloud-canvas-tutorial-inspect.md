@@ -1,7 +1,6 @@
 ---
 description: ' Use the &console; to see the &ALYlong; &cloud; resources that you created
   in &AWS;. '
-slug: cloud-canvas-tutorial-inspect
 title: Inspect Your Resources in &AWS;
 ---
 # Inspect Your Resources in AWS<a name="cloud-canvas-tutorial-inspect"></a>

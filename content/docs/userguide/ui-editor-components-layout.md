@@ -1,7 +1,6 @@
 ---
 description: ' Use layout components in &ALY;''s &ui-canvas-editor; to organize child
   elements into columns, rows, or a grid. '
-slug: ui-editor-components-layout
 title: Layout Components
 ---
 # Layout Components<a name="ui-editor-components-layout"></a>

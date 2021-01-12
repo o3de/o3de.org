@@ -1,7 +1,6 @@
 ---
 description: ' Use the console variable (CVAR) tutorial to modify and create console
   variables in &ALYlong;. '
-slug: system-cvar-tutorial
 title: Console Variable Tutorial
 ---
 # Console Variable Tutorial<a name="system-cvar-tutorial"></a>

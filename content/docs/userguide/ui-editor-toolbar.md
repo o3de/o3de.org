@@ -1,7 +1,6 @@
 ---
 description: ' Use the toolbar in &ALYlong;''s &ui-canvas-editor; to manipulate your
   game UI elements. '
-slug: ui-editor-toolbar
 title: Toolbar
 ---
 # Toolbar<a name="ui-editor-toolbar"></a>

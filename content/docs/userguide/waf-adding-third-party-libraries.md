@@ -1,6 +1,5 @@
 ---
 description: ' Use gems to add third-party libraries to your game in &ALYlong;. '
-slug: waf-adding-third-party-libraries
 title: Adding Third-Party Libraries
 ---
 # Adding Third\-Party Libraries<a name="waf-adding-third-party-libraries"></a>

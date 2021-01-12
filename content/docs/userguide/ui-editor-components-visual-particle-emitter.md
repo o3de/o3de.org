@@ -1,7 +1,6 @@
 ---
 description: Use the Particle Emitter component in &ALYlong; to emit two-dimensional
   particles from a UI element.
-slug: ui-editor-components-visual-particle-emitter
 title: Particle Emitter
 ---
 # Particle Emitter<a name="ui-editor-components-visual-particle-emitter"></a>

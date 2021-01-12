@@ -1,6 +1,5 @@
 ---
 description: ' Set navigation exclusion areas for an AI agent in &ALYlong;. '
-slug: ai-nav-areas-exclusion
 title: Setting Navigation Exclusion Areas
 ---
 # Setting Navigation Exclusion Areas<a name="ai-nav-areas-exclusion"></a>

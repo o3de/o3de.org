@@ -1,7 +1,6 @@
 ---
 description: ' Use console variables (CVARs) in &ALYlong; to configure terrain and
   cascade shadow maps. '
-slug: rendering-graphics-shadows-cvars
 title: Using CVARs to Configure Terrain and Cascade Shadow Maps
 ---
 # Using CVARs to Configure Terrain and Cascade Shadow Maps<a name="rendering-graphics-shadows-cvars"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Add two-dimensional distance clouds to your game levels in &ALYlong;. '
-slug: weather-clouds-2d-distance-mesh
 title: Placing Distance Clouds
 ---
 # Placing Distance Clouds<a name="weather-clouds-2d-distance-mesh"></a>

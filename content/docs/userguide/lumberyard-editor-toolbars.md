@@ -1,7 +1,6 @@
 ---
 description: ' Use the top toolbar in &ly-editor; to access editor tools and features
   in &ALYlong;. '
-slug: lumberyard-editor-toolbars
 title: Using the Top Toolbar
 ---
 # Using the Top Toolbar<a name="lumberyard-editor-toolbars"></a>

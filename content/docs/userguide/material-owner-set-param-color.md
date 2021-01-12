@@ -1,7 +1,6 @@
 ---
 description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; editor
   to specify a material''s color parameter value for the specified entity. '
-slug: material-owner-set-param-color
 title: Set Param Color
 ---
 # Set Param Color<a name="material-owner-set-param-color"></a>

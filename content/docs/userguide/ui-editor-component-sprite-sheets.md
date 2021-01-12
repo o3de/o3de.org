@@ -1,7 +1,6 @@
 ---
 description: ' Use sprite sheets to save collections of separate images for your game
   UI in &ALYlong;''s &ui-canvas-editor; . '
-slug: ui-editor-component-sprite-sheets
 title: Sprite Sheets
 ---
 # Sprite Sheets<a name="ui-editor-component-sprite-sheets"></a>

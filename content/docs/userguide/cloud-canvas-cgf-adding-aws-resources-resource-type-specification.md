@@ -1,6 +1,5 @@
 ---
 description: ' Specify resource types in &cloud; for &ALYlong;. '
-slug: cloud-canvas-cgf-adding-aws-resources-resource-type-specification
 title: Resource Type Specification
 ---
 # Resource Type Specification<a name="cloud-canvas-cgf-adding-aws-resources-resource-type-specification"></a>

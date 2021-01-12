@@ -1,6 +1,5 @@
 ---
 description: ' Use &COG; identity pools to provide players with unique identities. '
-slug: cloud-canvas-rm-security-player-identity
 title: Player Identity
 ---
 # Player Identity<a name="cloud-canvas-rm-security-player-identity"></a>

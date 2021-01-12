@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about TrueType fonts in &ALYlong;. '
-slug: graphics-rendering-truetype
 title: TrueType Fonts
 ---
 # TrueType Fonts<a name="graphics-rendering-truetype"></a>

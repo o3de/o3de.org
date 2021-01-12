@@ -1,6 +1,5 @@
 ---
 description: ' Export a &ALY; terrain heightmap to one of eight popular image formats. '
-slug: terrain-heightmap-export
 title: Exporting a Terrain Heightmap
 ---
 # Exporting a Terrain Heightmap<a name="terrain-heightmap-export"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to delete &script-canvas; nodes in &ALYlong;. '
-slug: script-canvas-working-with-nodes-deleting
 title: Deleting Nodes
 ---
 # Deleting Nodes<a name="script-canvas-working-with-nodes-deleting"></a>

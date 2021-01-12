@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the available types of &ALYlong; builds and when to use
   them during development. '
-slug: game-build-types
 title: Game Build Types in &ALYlong;
 ---
 # Game Build Types in Amazon Lumberyard<a name="game-build-types"></a>

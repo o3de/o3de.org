@@ -1,6 +1,5 @@
 ---
 description: ' See the following checklist for localization in &ALYlong;. '
-slug: localization-checklist
 title: Localization Checklist
 ---
 # Localization Checklist<a name="localization-checklist"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use the Lua Script component to add logic to an entity in &ALY;. '
-slug: component-lua-script
 title: Lua Script
 ---
 # Lua Script<a name="component-lua-script"></a>

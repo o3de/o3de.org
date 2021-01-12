@@ -1,6 +1,5 @@
 ---
 description: ' Learn to create create environment props with White Box and slices '
-slug: tutor-ch08-create-props-with-slices
 title: 'Tutorial Eight: Create environment props with White Box and slices'
 ---
 # Tutorial Eight: Create environment props with White Box and slices<a name="tutor-ch08-create-props-with-slices"></a>

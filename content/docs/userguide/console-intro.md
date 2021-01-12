@@ -1,7 +1,6 @@
 ---
 description: ' Use the console window in &ly-editor; to update the value for console
   variables or type commands. '
-slug: console-intro
 title: Using the Console Window
 ---
 # Using the Console Window<a name="console-intro"></a>

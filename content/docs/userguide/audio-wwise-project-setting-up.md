@@ -1,6 +1,5 @@
 ---
 description: ' Set up a Wwise project in &ALYlong;. '
-slug: audio-wwise-project-setting-up
 title: Setting up a Wwise Project
 ---
 # Setting up a Wwise Project<a name="audio-wwise-project-setting-up"></a>

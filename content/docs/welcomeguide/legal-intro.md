@@ -1,7 +1,6 @@
 ---
 description: ' Legal information for the use and distribution of Lumberyard and Lumberyard
   materials. '
-slug: legal-intro
 title: Legal information
 ---
 # Legal information<a name="legal-intro"></a>

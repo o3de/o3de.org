@@ -1,7 +1,6 @@
 ---
 description: ' Use the Starting Point Input gem to manage game input such as keyboard
   and controller in &ALYlong;. '
-slug: gems-system-starting-point-input
 title: Starting Point Input Gem
 ---
 # Starting Point Input Gem<a name="gems-system-starting-point-input"></a>

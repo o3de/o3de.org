@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to apply the Lumberyard UI 2.0 styles for push buttons and
   tool buttons in Lumberyard gems and tools. '
-slug: uidev-button-component
 title: Lumberyard UI button styles
 ---
 # Lumberyard UI button styles<a name="uidev-button-component"></a>

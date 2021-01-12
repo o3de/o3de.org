@@ -1,6 +1,5 @@
 ---
 description: ' Use the VisArea component to manage visibility and culling in &ALYlong;. '
-slug: component-vis-area
 title: VisArea
 ---
 # VisArea<a name="component-vis-area"></a>

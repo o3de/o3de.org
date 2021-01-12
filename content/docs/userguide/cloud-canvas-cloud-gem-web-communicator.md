@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Web Communicator cloud gem to notify your game''s
   clients, editors, and servers about events from other cloud gems. '
-slug: cloud-canvas-cloud-gem-web-communicator
 title: Web Communicator Cloud Gem
 ---
 # Web Communicator Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator"></a>

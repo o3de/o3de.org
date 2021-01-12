@@ -1,7 +1,6 @@
 ---
 description: " Learn how to work with Amazon Lumberyard\u2019s component entity system\
   \ and sketch 3D objects with White Box. "
-slug: tutor-ch02-create-an-entity
 title: 'Tutorial Two: Create an entity with White Box'
 ---
 # Tutorial Two: Create an entity with White Box<a name="tutor-ch02-create-an-entity"></a>

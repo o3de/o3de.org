@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to create trigger areas to open and close doors using &script-canvas;,
   &ALYlong;''s visual scripting system. '
-slug: script-canvas-tutorial-trigger-areas
 title: '&script-canvas; Tutorial: Opening and Closing a Door with Trigger Areas and
   Variables'
 ---

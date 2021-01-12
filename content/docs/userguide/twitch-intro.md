@@ -1,6 +1,5 @@
 ---
 description: ' Engage broadcasters and viewers on Twitch in &ALYlong;. '
-slug: twitch-intro
 title: Engaging Broadcasters and Viewers on Twitch
 ---
 # Engaging Broadcasters and Viewers on Twitch<a name="twitch-intro"></a>

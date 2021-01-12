@@ -1,7 +1,6 @@
 ---
 description: ' Use the level of detail (LOD) system in the &ALYlong; &particle-editor;
   to blend multiple particle emitters. '
-slug: particle-lod
 title: Managing Particle Level of Detail (LOD)
 ---
 # Managing Particle Level of Detail \(LOD\)<a name="particle-lod"></a>

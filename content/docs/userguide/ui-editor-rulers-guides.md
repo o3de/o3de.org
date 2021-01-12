@@ -1,7 +1,6 @@
 ---
 description: ' Use Rulers and Guides in &ALYlong;''s &ui-canvas-editor; to visually
   guide the placement of game UI elements on your UI canvas. '
-slug: ui-editor-rulers-guides
 title: Rulers and Guides
 ---
 # Rulers and Guides<a name="ui-editor-rulers-guides"></a>

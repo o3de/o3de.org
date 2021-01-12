@@ -1,7 +1,6 @@
 ---
 description: ' Use the Navigation component to enable an entity to find and follow
   paths in &ALYlong;. '
-slug: component-navigation
 title: Navigation
 ---
 # Navigation<a name="component-navigation"></a>

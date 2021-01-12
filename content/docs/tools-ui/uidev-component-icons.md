@@ -1,7 +1,6 @@
 ---
 description: ' Browse a library of icon assets used by Lumberyard UI 2.0 component
   cards. '
-slug: uidev-component-icons
 title: Lumberyard component icons
 ---
 # Lumberyard component icons<a name="uidev-component-icons"></a>

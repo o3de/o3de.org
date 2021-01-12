@@ -1,7 +1,6 @@
 ---
 description: ' Study the game client code that the Cloud Gem Framework generates for
   &ALYlong;. '
-slug: cloud-canvas-cgf-service-api-generated-game-client-code-example
 title: Generated Game Client Code Example
 ---
 # Generated Game Client Code Example<a name="cloud-canvas-cgf-service-api-generated-game-client-code-example"></a>

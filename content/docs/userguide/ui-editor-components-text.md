@@ -1,7 +1,6 @@
 ---
 description: Use a Text component in &ALYlong;'s &ui-canvas-editor; to add a text
   string to a UI element.
-slug: ui-editor-components-text
 title: Text
 ---
 # Text<a name="ui-editor-components-text"></a>

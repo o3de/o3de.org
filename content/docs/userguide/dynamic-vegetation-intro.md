@@ -1,7 +1,6 @@
 ---
 description: ' Use Dynamic Vegetation to place natural-looking vegetation and customize
   where and how it grows in &ALYlong;. '
-slug: dynamic-vegetation-intro
 title: Dynamic vegetation
 ---
 # Dynamic vegetation<a name="dynamic-vegetation-intro"></a>

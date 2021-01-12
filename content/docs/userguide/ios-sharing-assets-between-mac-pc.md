@@ -1,7 +1,6 @@
 ---
 description: ' Share the assets for your &ALYlong; iOS game between your macOS and
   Windows computers. '
-slug: ios-sharing-assets-between-mac-pc
 title: Sharing Assets Between Windows and macOS
 ---
 # Sharing Assets Between Windows and macOS<a name="ios-sharing-assets-between-mac-pc"></a>

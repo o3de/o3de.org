@@ -1,7 +1,6 @@
 ---
 description: ' Add networking functionality to your project with the Multiplayer gem
   in &ALYlong;. '
-slug: gems-system-gem-multiplayer
 title: Multiplayer Gem
 ---
 # Multiplayer Gem<a name="gems-system-gem-multiplayer"></a>

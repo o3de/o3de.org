@@ -1,7 +1,6 @@
 ---
 description: ' Use the Rain Gem to create realistic rain effects in your &ALYlong;
   level. '
-slug: gems-system-gem-rain
 title: Rain Gem
 ---
 # Rain Gem<a name="gems-system-gem-rain"></a>

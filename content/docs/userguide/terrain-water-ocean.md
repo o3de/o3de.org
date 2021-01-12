@@ -1,7 +1,6 @@
 ---
 description: ' Use properties and effects to customize the default ocean that &ALY;
   creates for your level. '
-slug: terrain-water-ocean
 title: Setting Ocean Parameters
 ---
 # Setting Ocean Parameters<a name="terrain-water-ocean"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ui-canvas-editor; in &ALYlong; to manage UI elements like
   strings, text input fields, images, buttons or containers. '
-slug: ui-editor-elements
 title: UI Elements
 ---
 # UI Elements<a name="ui-editor-elements"></a>

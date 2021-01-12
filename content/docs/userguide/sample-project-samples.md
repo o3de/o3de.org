@@ -1,7 +1,6 @@
 ---
 description: ' Use the Samples Project to explore sample levels and code that demonstrate
   various &ALYlong; features. '
-slug: sample-project-samples
 title: Samples Project
 ---
 # Samples Project<a name="sample-project-samples"></a>

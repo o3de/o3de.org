@@ -2,7 +2,6 @@
 description: ' Drag and drop assets from the &ly-editor;''s &ast-browser; into the
   &ui-editor; as a convenient way to create new entities and assets in the &ui-editor;
   . '
-slug: ui-editor-asset-drag-and-drop
 title: Asset Drag and Drop
 ---
 # Asset Drag and Drop<a name="ui-editor-asset-drag-and-drop"></a>

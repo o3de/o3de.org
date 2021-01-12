@@ -1,7 +1,6 @@
 ---
 description: ' Use UiDropdownOptionComponent to implement dropdown options for a UI
   element in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uidropdownoptioncomponent
 title: UiDropdownOptionComponent
 ---
 # UiDropdownOptionComponent<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent"></a>

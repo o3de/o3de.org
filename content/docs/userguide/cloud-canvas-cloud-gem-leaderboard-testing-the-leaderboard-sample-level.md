@@ -1,6 +1,5 @@
 ---
 description: ' Test the Leaderboard Sample Level in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level
 title: Testing the Leaderboard Sample Level
 ---
 # Testing the Leaderboard Sample Level<a name="cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level"></a>

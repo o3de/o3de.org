@@ -1,7 +1,6 @@
 ---
 description: " Dive into how Amazon Lumberyard\u2019s tools and systems work together\
   \ to help you create games and immersive experiences. "
-slug: wg-how-lumberyard-works
 title: How Amazon Lumberyard works
 ---
 # How Amazon Lumberyard works<a name="wg-how-lumberyard-works"></a>

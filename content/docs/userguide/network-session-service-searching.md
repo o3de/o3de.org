@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to search for a GridMate session in &ALYlong;. '
-slug: network-session-service-searching
 title: Searching for a Session
 ---
 # Searching for a Session<a name="network-session-service-searching"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Use a JSON file to customize &ly-launcher; for your project in &ALYlong;. '
-slug: lumberyard-launcher-customizing
 title: Customizing &ly-launcher;
 ---
 # Customizing Lumberyard Setup Assistant<a name="lumberyard-launcher-customizing"></a>

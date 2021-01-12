@@ -1,7 +1,6 @@
 ---
 description: ' Use the game states in the GameState Samples gem to control the flow
   of your game in &ALYlong;. '
-slug: gems-system-gem-game-state-samples
 title: GameState Samples Gem
 ---
 # GameState Samples Gem<a name="gems-system-gem-game-state-samples"></a>

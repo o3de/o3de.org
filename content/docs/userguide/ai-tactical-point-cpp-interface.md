@@ -1,6 +1,5 @@
 ---
 description: ' See the C++ interfaces for TPS querying in &ALYlong;. '
-slug: ai-tactical-point-cpp-interface
 title: TPS Querying with C++
 ---
 # TPS Querying with C\+\+<a name="ai-tactical-point-cpp-interface"></a>

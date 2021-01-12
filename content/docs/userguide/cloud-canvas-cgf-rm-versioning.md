@@ -1,6 +1,5 @@
 ---
 description: ' Create versioned cloud gems and projects in &ALYlong;. '
-slug: cloud-canvas-cgf-rm-versioning
 title: ' Cloud Gem Framework and Resource Manager Versioning'
 ---
 # Cloud Gem Framework and Resource Manager Versioning<a name="cloud-canvas-cgf-rm-versioning"></a>

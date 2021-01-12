@@ -1,6 +1,5 @@
 ---
 description: ' Learn the basics of the &ALYlong; Profiler diagnostics tool. '
-slug: profiler-using
 title: Profiler Tutorial
 ---
 # Profiler Tutorial<a name="profiler-using"></a>

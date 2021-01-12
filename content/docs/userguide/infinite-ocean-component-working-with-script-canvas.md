@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; Infinite Ocean component with the &script-canvas;
   editor to change the component parameters at run time. '
-slug: infinite-ocean-component-working-with-script-canvas
 title: Using the Infinite Ocean Component with &script-canvas;
 ---
 # Using the Infinite Ocean Component with Script Canvas<a name="infinite-ocean-component-working-with-script-canvas"></a>

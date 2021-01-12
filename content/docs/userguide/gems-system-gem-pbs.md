@@ -1,6 +1,5 @@
 ---
 description: ' &ALY; '
-slug: gems-system-gem-pbs
 title: Physically Based Shaders (PBS) Gem
 ---
 # Physically Based Shaders \(PBS\) Gem<a name="gems-system-gem-pbs"></a>

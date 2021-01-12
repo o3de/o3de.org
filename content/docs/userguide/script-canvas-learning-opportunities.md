@@ -1,7 +1,6 @@
 ---
 description: ' Browse a list of additional learning opportunities on the subject of
   &script-canvas; and follow the links that interest you. '
-slug: script-canvas-learning-opportunities
 title: More Learning Opportunities with &script-canvas;
 ---
 # More Learning Opportunities with Script Canvas<a name="script-canvas-learning-opportunities"></a>

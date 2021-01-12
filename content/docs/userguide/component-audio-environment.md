@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audio Environment component to set up a default environment
   for an entity in &ALYlong;. '
-slug: component-audio-environment
 title: Audio Environment
 ---
 # Audio Environment<a name="component-audio-environment"></a>

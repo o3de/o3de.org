@@ -1,6 +1,5 @@
 ---
 description: ' Learn about setting up a lobby in &ALYlong;. '
-slug: network-lobby-setup
 title: Setting up a Lobby
 ---
 # Setting up a Lobby<a name="network-lobby-setup"></a>

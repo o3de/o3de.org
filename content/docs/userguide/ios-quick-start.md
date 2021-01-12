@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to run the &ALYlong; Samples Project on your iOS device from
   a macOS computer. '
-slug: ios-quick-start
 title: 'Quick Start: Running the Samples Project on iOS Devices'
 ---
 # Quick Start: Running the Samples Project on iOS Devices<a name="ios-quick-start"></a>

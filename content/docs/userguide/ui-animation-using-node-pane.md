@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALY;''s UI Animation editor''s Node Pane to add or remove UI elements
   in an animation sequence. '
-slug: ui-animation-using-node-pane
 title: Using the Node Pane
 ---
 # Using the Node Pane<a name="ui-animation-using-node-pane"></a>

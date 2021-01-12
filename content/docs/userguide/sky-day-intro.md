@@ -1,7 +1,6 @@
 ---
 description: ' Use sun settings, atmospheric properties, sun ray effects, and sun
   shadows to create a dynamic daytime sky. '
-slug: sky-day-intro
 title: Creating a Dynamic Daytime Sky
 ---
 # Creating a Dynamic Daytime Sky<a name="sky-day-intro"></a>

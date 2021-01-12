@@ -1,6 +1,5 @@
 ---
 description: ' Add &AWS; or custom resources to cloud gems in &ALYlong;. '
-slug: cloud-canvas-cgf-adding-aws-resources
 title: ' Adding &AWS; Resources to a Cloud Gem'
 ---
 # Adding AWS Resources to a Cloud Gem<a name="cloud-canvas-cgf-adding-aws-resources"></a>

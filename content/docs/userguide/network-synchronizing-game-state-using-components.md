@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to synchronize game state by using &ALY;''s component entity
   system. '
-slug: network-synchronizing-game-state-using-components
 title: Synchronizing Game State Using Components
 ---
 # Synchronizing Game State Using Components<a name="network-synchronizing-game-state-using-components"></a>

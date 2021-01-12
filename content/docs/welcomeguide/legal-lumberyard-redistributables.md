@@ -1,7 +1,6 @@
 ---
 description: ' List of Lumberyard materials that are allowed to be redistributed in
   Lumberyard projects. '
-slug: legal-lumberyard-redistributables
 title: Lumberyard redistributables
 ---
 # Lumberyard redistributables<a name="legal-lumberyard-redistributables"></a>

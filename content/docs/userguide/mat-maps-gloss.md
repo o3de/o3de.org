@@ -1,6 +1,5 @@
 ---
 description: ' Enable gloss maps to define the roughness of surfaces in &ALYlong;. '
-slug: mat-maps-gloss
 title: Working with Gloss Maps
 ---
 # Working with Gloss Maps<a name="mat-maps-gloss"></a>

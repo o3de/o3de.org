@@ -1,7 +1,6 @@
 ---
 description: Learn how to add and delete components, reference UI elements as component
   properties, and manage components in &ALYlong;'s &ui-canvas-editor; .
-slug: ui-editor-working
 title: Working with UI Components
 ---
 # Working with UI Components<a name="ui-editor-working"></a>

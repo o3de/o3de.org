@@ -1,7 +1,6 @@
 ---
 description: ' Use the &curve-editor; in &ALYlong;''s UI Animation editor to change
   the way floating point values vary over time. '
-slug: ui-animation-curve-editor
 title: Using the &curve-editor; in the UI Animation Editor.
 ---
 # Using the **Curve Editor** in the UI Animation Editor\.<a name="ui-animation-curve-editor"></a>

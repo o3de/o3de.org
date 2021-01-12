@@ -1,7 +1,6 @@
 ---
 description: ' Use the Get Input String node in the &ALYlong; &script-canvas; editor
   to return the value of a procedural material input parameter as a string or image. '
-slug: get-input-string-node
 title: Get Input String
 ---
 # Get Input String<a name="get-input-string-node"></a>

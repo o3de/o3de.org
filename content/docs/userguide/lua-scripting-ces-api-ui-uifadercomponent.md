@@ -1,7 +1,6 @@
 ---
 description: ' Use the UIFaderComponent fader component to simultaneously adjust the
   transparency of an element and its children in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uifadercomponent
 title: UIFaderComponent
 ---
 # UIFaderComponent<a name="lua-scripting-ces-api-ui-uifadercomponent"></a>

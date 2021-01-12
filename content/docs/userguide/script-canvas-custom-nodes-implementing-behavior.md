@@ -1,6 +1,5 @@
 ---
 description: null
-slug: script-canvas-custom-nodes-implementing-behavior
 title: Implementing Node Behavior
 ---
 # Implementing Node Behavior<a name="script-canvas-custom-nodes-implementing-behavior"></a>

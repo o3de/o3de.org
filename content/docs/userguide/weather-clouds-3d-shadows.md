@@ -1,6 +1,5 @@
 ---
 description: ' Add shadows to 3D clouds in &ALYlong;. '
-slug: weather-clouds-3d-shadows
 title: Adding 3D Cloud Shadows
 ---
 # Adding 3D Cloud Shadows<a name="weather-clouds-3d-shadows"></a>

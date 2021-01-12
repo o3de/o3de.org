@@ -1,6 +1,5 @@
 ---
 description: ' Use the auto-disable feature in &ALYlong; to control updates. '
-slug: ai-auto-disable
 title: Auto-Disable
 ---
 # Auto\-Disable<a name="ai-auto-disable"></a>

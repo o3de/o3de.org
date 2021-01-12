@@ -1,7 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem Portal to manage the &LEX; bots
   for your game in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots
 title: Managing Bots
 ---
 # Managing Bots<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots"></a>

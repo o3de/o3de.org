@@ -1,7 +1,6 @@
 ---
 description: ' &ALYlong; is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
-slug: lumberyard-intro
 title: What is &ALY;?
 ---
 # What is Lumberyard?<a name="lumberyard-intro"></a>

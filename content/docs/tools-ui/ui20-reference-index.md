@@ -1,7 +1,6 @@
 ---
 description: ' List of the C++ classes available for working with the Lumberyard UI
   2.0 system to extend the Lumberyard editor and tools. '
-slug: ui20-reference-index
 title: Lumberyard UI Extensions C++ API Reference index
 ---
 # Lumberyard UI Extensions C\+\+ API Reference index<a name="ui20-reference-index"></a>

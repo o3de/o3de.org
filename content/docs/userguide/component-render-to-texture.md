@@ -1,6 +1,5 @@
 ---
 description: ' Use the Render to Texture component to create render targets in &ALYlong;. '
-slug: component-render-to-texture
 title: Render to Texture
 ---
 # Render to Texture<a name="component-render-to-texture"></a>

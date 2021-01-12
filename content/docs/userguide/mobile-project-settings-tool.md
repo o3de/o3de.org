@@ -1,7 +1,6 @@
 ---
 description: ' Use the &PST; to modify project settings for mobile device games in
   &ALYlong;. '
-slug: mobile-project-settings-tool
 title: Modifying Project Settings for Mobile Device Games
 ---
 # Modifying Project Settings for Mobile Device Games<a name="mobile-project-settings-tool"></a>

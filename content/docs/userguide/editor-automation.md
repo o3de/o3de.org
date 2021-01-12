@@ -1,7 +1,6 @@
 ---
 description: ' Use the features of the Python Editor Bindings gem to automate actions
   and tasks inside of the &ly-editor;. '
-slug: editor-automation
 title: Automating the &ly-editor; with the Python Editor Bindings gem
 ---
 # Automating the Lumberyard Editor with the Python Editor Bindings gem<a name="editor-automation"></a>

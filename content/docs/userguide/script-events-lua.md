@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to use script events in Lua in &ALYlong;. '
-slug: script-events-lua
 title: Using Script Events in Lua
 ---
 # Using Script Events in Lua<a name="script-events-lua"></a>

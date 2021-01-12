@@ -1,7 +1,6 @@
 ---
 description: ' Create new &cloud; cloud gems and resource groups, or modify the ones
   included with &ALYlong;. '
-slug: cloud-canvas-soft-eng-intro
 title: '&cloud; Software Engineering Guide'
 ---
 # Cloud Canvas Software Engineering Guide<a name="cloud-canvas-soft-eng-intro"></a>

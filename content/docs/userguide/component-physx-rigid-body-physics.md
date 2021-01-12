@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the PhysX Rigid Body component in &ALYlong;. '
-slug: component-physx-rigid-body-physics
 title: PhysX Rigid Body
 ---
 # PhysX Rigid Body<a name="component-physx-rigid-body-physics"></a>

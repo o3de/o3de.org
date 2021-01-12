@@ -1,7 +1,6 @@
 ---
 description: ' Write Lua scripts that use the EBus to communicate between components
   in &ALYlong;. '
-slug: lua-scripting-ces-using-ebuses
 title: Using EBuses in Lua
 ---
 # Using EBuses in Lua<a name="lua-scripting-ces-using-ebuses"></a>

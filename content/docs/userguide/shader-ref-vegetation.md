@@ -1,7 +1,6 @@
 ---
 description: ' Use the vegetation shader to render trees, bushes, grass, and other
   vegetation in &ALYlong;. '
-slug: shader-ref-vegetation
 title: Vegetation Shader
 ---
 # Vegetation Shader<a name="shader-ref-vegetation"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use &ALYlong;''s audio translation layer (ATL) to develop your game
   audio without affecting game logic. '
-slug: audio-intro
 title: Adding Audio and Sound Effects
 ---
 # Adding Audio and Sound Effects<a name="audio-intro"></a>

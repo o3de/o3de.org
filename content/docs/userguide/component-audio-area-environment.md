@@ -1,7 +1,6 @@
 ---
 description: ' Use the Audio Area Environment component in &ALY; to apply an environment
   effect to sounds that an entity triggers. '
-slug: component-audio-area-environment
 title: Audio Area Environment
 ---
 # Audio Area Environment<a name="component-audio-area-environment"></a>

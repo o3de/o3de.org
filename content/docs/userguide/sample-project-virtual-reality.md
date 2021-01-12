@@ -1,7 +1,6 @@
 ---
 description: ' Use the virtual reality samples project to build VR applications for
   any device for &ALYlong;. '
-slug: sample-project-virtual-reality
 title: Virtual Reality Samples Project
 ---
 # Virtual Reality Samples Project<a name="sample-project-virtual-reality"></a>

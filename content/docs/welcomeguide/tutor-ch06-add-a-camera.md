@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to add a camera that follows a moving player character in
   Lumberyard. '
-slug: tutor-ch06-add-a-camera
 title: 'Tutorial Six: Add a camera'
 ---
 # Tutorial Six: Add a camera<a name="tutor-ch06-add-a-camera"></a>

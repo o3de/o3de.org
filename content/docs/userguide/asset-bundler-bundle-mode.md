@@ -1,7 +1,6 @@
 ---
 description: ' Use bundle mode to ensure that your asset bundles have the required
   assets for your &ALY; game. '
-slug: asset-bundler-bundle-mode
 title: Using Bundle Mode to Test Bundles
 ---
 # Using Bundle Mode to Test Bundles<a name="asset-bundler-bundle-mode"></a>

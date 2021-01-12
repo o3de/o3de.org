@@ -1,7 +1,6 @@
 ---
 description: ' Use the Movement attribute in the &ALYlong; &particle-editor; to control
   the movement of the particle. '
-slug: particle-editor-reference-movement
 title: Movement Attribute
 ---
 # Movement Attribute<a name="particle-editor-reference-movement"></a>

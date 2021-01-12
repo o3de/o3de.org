@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to setup PyCharm for Waf debugging for use with &ALYlong;''s
   AZ Code Generator. '
-slug: az-code-gen-pycharm
 title: 'Setting Up PyCharm for Debugging Waf '
 ---
 # Setting Up PyCharm for Debugging Waf<a name="az-code-gen-pycharm"></a>

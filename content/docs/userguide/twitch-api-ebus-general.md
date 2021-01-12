@@ -1,7 +1,6 @@
 ---
 description: ' Learn about the general C++ API operations for Twitch that you can
   use for your &ALY; game project. '
-slug: twitch-api-ebus-general
 title: General
 ---
 # General<a name="twitch-api-ebus-general"></a>

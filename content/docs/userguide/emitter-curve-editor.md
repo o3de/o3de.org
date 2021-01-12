@@ -1,7 +1,6 @@
 ---
 description: ' Use the Curve Editor in the &ALYlong;''s &particle-editor; to change
   attribute values. '
-slug: emitter-curve-editor
 title: Using the Curve Editor in the &particle-editor;
 ---
 # Using the Curve Editor in the Particle Editor<a name="emitter-curve-editor"></a>

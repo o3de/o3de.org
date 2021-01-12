@@ -2,7 +2,6 @@
 description: ' The &ALYlong; &asset-bundler; is a tool that you use to package and
   deploy the actual assets that are used in your game. This tool also provides timelier
   and more efficient content updates and patches. '
-slug: asset-bundler-overview
 title: What is the &ALYlong; &asset-bundler;?
 ---
 # What is the Amazon Lumberyard Asset Bundler?<a name="asset-bundler-overview"></a>

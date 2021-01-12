@@ -1,6 +1,5 @@
 ---
 description: ' Use bit packing to optimize network payloads in &ALYlong;. '
-slug: network-bitpacking
 title: Using Bit Packing in &ALY; Networking
 ---
 # Using Bit Packing in Lumberyard Networking<a name="network-bitpacking"></a>

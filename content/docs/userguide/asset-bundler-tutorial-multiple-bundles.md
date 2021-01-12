@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to create separate asset bundles for a release build with
   multiple game levels in &ALY;. '
-slug: asset-bundler-tutorial-multiple-bundles
 title: Creating Multiple Asset Bundles
 ---
 # Creating Multiple Asset Bundles<a name="asset-bundler-tutorial-multiple-bundles"></a>

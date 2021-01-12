@@ -1,7 +1,6 @@
 ---
 description: ' You must build the editor so that your component with &CM; appears
   in &ALYlong;. '
-slug: building-component-mode
 title: 'Step 6: Building &CM;'
 ---
 # Step 6: Building Component Mode<a name="building-component-mode"></a>

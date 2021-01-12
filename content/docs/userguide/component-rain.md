@@ -1,6 +1,5 @@
 ---
 description: ' Use the &ALYlong; Rain component to add rain effects to your game. '
-slug: component-rain
 title: Rain
 ---
 # Rain<a name="component-rain"></a>

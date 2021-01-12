@@ -1,6 +1,5 @@
 ---
 description: ' Use Lua script to configure network binding of properties in &ALYlong;. '
-slug: lua-script-networking-binding
 title: Network Binding Properties
 ---
 # Network Binding Properties<a name="lua-script-networking-binding"></a>

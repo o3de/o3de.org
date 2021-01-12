@@ -1,7 +1,6 @@
 ---
 description: ' Use the UIInteractableComponent to control elements that respond to
   user input in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uiinteractablecomponent
 title: UIInteractableComponent
 ---
 # UIInteractableComponent<a name="lua-scripting-ces-api-ui-uiinteractablecomponent"></a>

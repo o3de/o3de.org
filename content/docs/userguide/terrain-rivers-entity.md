@@ -1,7 +1,6 @@
 ---
 description: ' Use the river tool to place the river in your &ALY; environment level
   and adjust the underlying terrain with the Align Height Map. '
-slug: terrain-rivers-entity
 title: Creating the River Entity
 ---
 # Creating the River Entity<a name="terrain-rivers-entity"></a>

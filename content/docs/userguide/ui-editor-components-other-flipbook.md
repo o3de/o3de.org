@@ -1,6 +1,5 @@
 ---
 description: null
-slug: ui-editor-components-other-flipbook
 title: Flipbook Animation
 ---
 # Flipbook Animation<a name="ui-editor-components-other-flipbook"></a>

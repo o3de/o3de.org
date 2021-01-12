@@ -1,6 +1,5 @@
 ---
 description: ' Enhance the appearance of water volumes in &ALY; swith advanced parameters. '
-slug: terrain-water-params-ref
 title: Advanced Water Volume Parameters
 ---
 # Advanced Water Volume Parameters<a name="terrain-water-params-ref"></a>

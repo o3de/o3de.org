@@ -1,6 +1,5 @@
 ---
 description: ' Specify tessellation parameters for materials in &ALYlong;. '
-slug: mat-maps-displacement-tessellation-intro
 title: Tessellation
 ---
 # Tessellation<a name="mat-maps-displacement-tessellation-intro"></a>

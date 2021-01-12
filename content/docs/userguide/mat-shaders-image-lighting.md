@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about image-based lighting in &ALYlong;. '
-slug: mat-shaders-image-lighting
 title: Image-Based Lighting
 ---
 # Image\-Based Lighting<a name="mat-shaders-image-lighting"></a>

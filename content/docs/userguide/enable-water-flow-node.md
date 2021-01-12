@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Water Flow node in the &ALYlong; &script-canvas; editor
   to enable water flow effects. '
-slug: enable-water-flow-node
 title: Enable Water Flow
 ---
 # Enable Water Flow<a name="enable-water-flow-node"></a>

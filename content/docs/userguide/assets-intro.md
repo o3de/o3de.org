@@ -1,7 +1,6 @@
 ---
 description: ' The following topics will guide you through organizing, managing, processing,
   and packaging your game assets with &ALY;. '
-slug: assets-intro
 title: Working with assets in &ALY;
 ---
 # Working with assets in Lumberyard<a name="assets-intro"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Get custom lightning effects by configure the lightning arc entity
   in &ALY;. '
-slug: gems-system-gem-lightning-arc-configuring
 title: Configuring the Lightning Arc
 ---
 # Configuring the Lightning Arc<a name="gems-system-gem-lightning-arc-configuring"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use local cubemaps in &ALY; to light smaller areas more accurately
   . '
-slug: enviro-lighting-local
 title: Local Environment Lighting
 ---
 # Local Environment Lighting<a name="enviro-lighting-local"></a>

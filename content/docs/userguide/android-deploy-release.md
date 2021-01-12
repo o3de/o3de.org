@@ -1,7 +1,6 @@
 ---
 description: ' Prepare &ALYlong; projects for release and distribution on the Google
   Play Store. '
-slug: android-deploy-release
 title: Releasing &ALY; projects for Android
 ---
 # Releasing Lumberyard projects for Android<a name="android-deploy-release"></a>

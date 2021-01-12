@@ -1,6 +1,5 @@
 ---
 description: ' Add a custom asset type to &ALYlong;. '
-slug: asset-pipeline-asset-type-adding
 title: Adding an Asset Type to &ALY;
 ---
 # Adding an Asset Type to Lumberyard<a name="asset-pipeline-asset-type-adding"></a>

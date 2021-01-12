@@ -1,6 +1,5 @@
 ---
 description: ' Configure settings for the PhysX system in &ALYlong;. '
-slug: physx-configuration
 title: Configuring the PhysX System
 ---
 # Configuring the PhysX System<a name="physx-configuration"></a>

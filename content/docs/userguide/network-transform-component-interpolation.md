@@ -1,7 +1,6 @@
 ---
 description: ' Use the interpolation options for the Transform component in &ALYlong;
   to smooth movement of entities under poor network conditions. '
-slug: network-transform-component-interpolation
 title: Transform Component Interpolation
 ---
 # Transform Component Interpolation<a name="network-transform-component-interpolation"></a>

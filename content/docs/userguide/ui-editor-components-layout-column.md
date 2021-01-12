@@ -1,7 +1,6 @@
 ---
 description: ' Use a layout column component in the &ALYlong; &ui-canvas-editor; to
   organize child elements into a column. '
-slug: ui-editor-components-layout-column
 title: LayoutColumn
 ---
 # LayoutColumn<a name="ui-editor-components-layout-column"></a>

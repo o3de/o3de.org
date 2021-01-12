@@ -1,7 +1,6 @@
 ---
 description: ' Get a high level overview of the concepts pertaining to Lumberyard
   UI 2.0 component development using the custom Qt widget library. '
-slug: uidev-component-development-guidelines
 title: Lumberyard UI component development guidelines
 ---
 # Lumberyard UI component development guidelines<a name="uidev-component-development-guidelines"></a>

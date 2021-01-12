@@ -1,7 +1,6 @@
 ---
 description: ' Use the Particles attribute in the &ALYlong; &particle-editor; to control
   the basic appearance of the particle. '
-slug: particle-editor-reference-particles
 title: ' Particles Attribute'
 ---
 # Particles Attribute<a name="particle-editor-reference-particles"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn the implementation details of the &ALYlong; Message of the Day
   Cloud Gem. '
-slug: cloud-canvas-cloud-gem-mod-details
 title: Cloud Gem Message of the Day Implementation Details
 ---
 # Cloud Gem Message of the Day Implementation Details<a name="cloud-canvas-cloud-gem-mod-details"></a>

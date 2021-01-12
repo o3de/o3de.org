@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener
   system for &ALYlong;. '
-slug: ui-animating-tweener-parameters
 title: Tweener Parameters
 ---
 # Tweener Parameters<a name="ui-animating-tweener-parameters"></a>

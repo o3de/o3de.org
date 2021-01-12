@@ -1,7 +1,6 @@
 ---
 description: ' Edit and update default dependency files to ensure that game-wide assets
   are always packaged as part of a bundle. '
-slug: asset-bundler-default-dependencies
 title: Default dependencies for &ALY; projects
 ---
 # Default dependencies for Lumberyard projects<a name="asset-bundler-default-dependencies"></a>

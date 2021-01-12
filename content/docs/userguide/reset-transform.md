@@ -1,6 +1,5 @@
 ---
 description: ' Reset the transform properties for entities in &ALYlong;. '
-slug: reset-transform
 title: Resetting the Transform
 ---
 # Resetting the Transform<a name="reset-transform"></a>

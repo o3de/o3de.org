@@ -1,7 +1,6 @@
 ---
 description: ' Use GridMate session service for session connectivity and management
   in &ALYlong;. '
-slug: network-session-service
 title: Sessions
 ---
 # Sessions<a name="network-session-service"></a>

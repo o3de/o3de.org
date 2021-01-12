@@ -1,6 +1,5 @@
 ---
 description: ' Learn to use the Lumberyard Editor. '
-slug: wg-editor
 title: Introduction to the Lumberyard Editor
 ---
 # Introduction to the Lumberyard Editor<a name="wg-editor"></a>

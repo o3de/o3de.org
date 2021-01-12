@@ -1,6 +1,5 @@
 ---
 description: ' Use debug mode to refine the simulated object''s movement in &ALYlong;. '
-slug: refine-simulationg-using-debug-mode
 title: 'Using Debug Mode to Refine the Simulation '
 ---
 # Using Debug Mode to Refine the Simulation<a name="refine-simulationg-using-debug-mode"></a>

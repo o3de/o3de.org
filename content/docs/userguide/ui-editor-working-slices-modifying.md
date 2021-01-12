@@ -1,7 +1,6 @@
 ---
 description: ' Modify a UI slice and push the changes in &ALYlong;''s &ui-canvas-editor;
   . '
-slug: ui-editor-working-slices-modifying
 title: Modifying a UI Slice and Pushing Changes
 ---
 # Modifying a UI Slice and Pushing Changes<a name="ui-editor-working-slices-modifying"></a>

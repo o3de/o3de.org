@@ -1,7 +1,6 @@
 ---
 description: ' Use the emitter shape types in &ALYlong;''s &particle-editor; to achieve
   a variety of effects. '
-slug: particle-editor-emitter-shape-types
 title: Working with Emitter Shape Types
 ---
 # Working with Emitter Shape Types<a name="particle-editor-emitter-shape-types"></a>

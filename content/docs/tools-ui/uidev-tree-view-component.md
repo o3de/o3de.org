@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 tree view component to give
   users a file or list navigation interface in Lumberyard tools and gems. '
-slug: uidev-tree-view-component
 title: Lumberyard UI tree view component
 ---
 # Lumberyard UI tree view component<a name="uidev-tree-view-component"></a>

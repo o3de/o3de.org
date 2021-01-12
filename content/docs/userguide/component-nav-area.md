@@ -1,7 +1,6 @@
 ---
 description: ' Use the Navigation Area component with the Polygon Prism Shape component
   to create navigation meshes in &ALYlong;. '
-slug: component-nav-area
 title: Navigation Area
 ---
 # Navigation Area<a name="component-nav-area"></a>

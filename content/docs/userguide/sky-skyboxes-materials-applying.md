@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to apply a skybox material to a skybox in your &ALY; level. '
-slug: sky-skyboxes-materials-applying
 title: Applying Skybox Materials to a Skybox
 ---
 # Applying Skybox Materials to a Skybox<a name="sky-skyboxes-materials-applying"></a>

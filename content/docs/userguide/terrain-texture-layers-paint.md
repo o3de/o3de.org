@@ -1,6 +1,5 @@
 ---
 description: ' Paint a terrain texture layer for your environment in &ALYlong;. '
-slug: terrain-texture-layers-paint
 title: Painting &terrain-textures;
 ---
 # Painting Terrain Texture Layers<a name="terrain-texture-layers-paint"></a>

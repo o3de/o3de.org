@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to use the tick bus in &ALYlong;. '
-slug: component-entity-system-pg-tick-bus
 title: Tick Bus and Components
 ---
 # Tick Bus and Components<a name="component-entity-system-pg-tick-bus"></a>

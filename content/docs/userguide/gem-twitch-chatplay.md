@@ -1,7 +1,6 @@
 ---
 description: ' Use the Twitch Chat Gem to add &chatplay; support to your &ALYlong;
   game and trigger events based on Twitch chat activity. '
-slug: gem-twitch-chatplay
 title: Twitch Chat &gem;
 ---
 # Twitch Chat Gem<a name="gem-twitch-chatplay"></a>

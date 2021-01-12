@@ -1,7 +1,6 @@
 ---
 description: ' Use the &cloud; Resource Manager UI or an external editor to edit the
   &cloud; text files in your &ALYlong; project. '
-slug: cloud-canvas-ui-rm-text-editing
 title: Editing Resource Manager Files
 ---
 # Editing Resource Manager Files<a name="cloud-canvas-ui-rm-text-editing"></a>

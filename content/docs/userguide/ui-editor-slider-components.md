@@ -1,7 +1,6 @@
 ---
 description: ' Use a slider component to make an element behave like a slider in &ALY;''s
   &ui-canvas-editor;. '
-slug: ui-editor-slider-components
 title: Slider
 ---
 # Slider<a name="ui-editor-slider-components"></a>

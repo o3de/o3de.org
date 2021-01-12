@@ -1,7 +1,6 @@
 ---
 description: ' Use the Actions properties in &ALY; &ui-canvas-editor; to trigger an
   event when one of the listed actions occur. '
-slug: ui-editor-components-actions
 title: Actions
 ---
 # Actions<a name="ui-editor-components-actions"></a>

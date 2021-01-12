@@ -1,7 +1,6 @@
 ---
 description: ' Use multiple skin attachments for an Actor component in &ALYlong; to
   create interchangeable parts of your character, such as a hat and belt. '
-slug: component-actor-multiple-skin
 title: Using Multiple Skin Attachments for an Actor
 ---
 # Using Multiple Skin Attachments for an Actor<a name="component-actor-multiple-skin"></a>

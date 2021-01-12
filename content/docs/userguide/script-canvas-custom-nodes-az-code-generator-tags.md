@@ -1,6 +1,5 @@
 ---
 description: ' Add tags for &script-canvas; nodes in &ALYlong;. '
-slug: script-canvas-custom-nodes-az-code-generator-tags
 title: '&script-canvas; Tags for AZ Code Generator'
 ---
 # Script Canvas Tags for AZ Code Generator<a name="script-canvas-custom-nodes-az-code-generator-tags"></a>

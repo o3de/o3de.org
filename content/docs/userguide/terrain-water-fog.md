@@ -1,6 +1,5 @@
 ---
 description: ' Add realistic fog beneath water surfaces in your &ALY; level. '
-slug: terrain-water-fog
 title: Adding Fog Beneath Water
 ---
 # Adding Fog Beneath Water<a name="terrain-water-fog"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn more about the user interface for motion sets in the &animation-editor;
   . '
-slug: animation-editor-motion-set-user-interface
 title: Motion Sets Interface
 ---
 # Motion Sets Interface<a name="animation-editor-motion-set-user-interface"></a>

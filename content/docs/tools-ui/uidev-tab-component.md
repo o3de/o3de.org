@@ -1,7 +1,6 @@
 ---
 description: ' Learn how to use the Lumberyard UI 2.0 tab widget component to create
   tabs and tab action bars in Lumberyard tools and gems. '
-slug: uidev-tab-component
 title: Lumberyard UI tab component
 ---
 # Lumberyard UI tab component<a name="uidev-tab-component"></a>

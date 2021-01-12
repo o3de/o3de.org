@@ -1,7 +1,6 @@
 ---
 description: ' Use the Water Volume component to create small and medium bodies of
   water in your &ALYlong; level. '
-slug: component-water-volume
 title: Water Volume
 ---
 # Water Volume<a name="component-water-volume"></a>

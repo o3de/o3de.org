@@ -1,7 +1,6 @@
 ---
 description: ' Learn to animate characters in &ALYlong; with &emotionfx; &animation-editor;
   . '
-slug: char-intro
 title: Create and animate characters
 ---
 # Create and animate characters<a name="char-intro"></a>

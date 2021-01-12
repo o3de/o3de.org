@@ -1,7 +1,6 @@
 ---
 description: ' Add new fonts to &ALYlong;''s &ui-canvas-editor; by saving the font
   asset to your game project and creating a font XML file that describes the asset. '
-slug: ui-fonts
 title: Implementing New Fonts
 ---
 # Implementing New Fonts<a name="ui-fonts"></a>

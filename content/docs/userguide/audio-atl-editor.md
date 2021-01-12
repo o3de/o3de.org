@@ -1,7 +1,6 @@
 ---
 description: ' Use the &audio-controls-browser; in &ALYlong; to create sound effects
   for your game project. '
-slug: audio-atl-editor
 title: Using the &audio-controls-browser;
 ---
 # Using the Audio Controls Editor<a name="audio-atl-editor"></a>

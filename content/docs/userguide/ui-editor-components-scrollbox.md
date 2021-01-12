@@ -1,7 +1,6 @@
 ---
 description: ' Use a scroll box component to present content, such as images or text,
   within a scrollable area in &ALY;''s &ui-canvas-editor;. '
-slug: ui-editor-components-scrollbox
 title: ScrollBox
 ---
 # ScrollBox<a name="ui-editor-components-scrollbox"></a>

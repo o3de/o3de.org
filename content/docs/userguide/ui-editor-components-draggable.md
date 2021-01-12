@@ -1,7 +1,6 @@
 ---
 description: ' Use the draggable component in the &ALYlong; &ui-canvas-editor; to
   make UI elements movable. '
-slug: ui-editor-components-draggable
 title: Draggable
 ---
 # Draggable<a name="ui-editor-components-draggable"></a>

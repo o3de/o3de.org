@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the point generation and evaluation in &ALYlong;. '
-slug: ai-tactical-point-generation-evaluation
 title: Point Generation and Evaluation
 ---
 # Point Generation and Evaluation<a name="ai-tactical-point-generation-evaluation"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the file types for &animation-editor; . '
-slug: char-animation-editor-file-types
 title: '&animation-editor; File Types'
 ---
 # Animation Editor File Types<a name="char-animation-editor-file-types"></a>

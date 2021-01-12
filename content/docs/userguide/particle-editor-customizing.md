@@ -1,6 +1,5 @@
 ---
 description: ' Customize the &particle-editor; UI in &ALYlong;. '
-slug: particle-editor-customizing
 title: Customizing the &particle-editor; UI
 ---
 # Customizing the Particle Editor UI<a name="particle-editor-customizing"></a>

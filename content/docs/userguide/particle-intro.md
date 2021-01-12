@@ -1,7 +1,6 @@
 ---
 description: ' Use the &particle-editor; in &ALYlong; to create and manage particles
   in your game, such as explosions, smoke, water, and so on. '
-slug: particle-intro
 title: Adding particle effects
 ---
 # Adding particle effects<a name="particle-intro"></a>

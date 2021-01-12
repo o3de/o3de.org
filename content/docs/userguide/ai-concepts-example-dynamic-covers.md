@@ -1,6 +1,5 @@
 ---
 description: ' See the following example for dynamic covers in &ALYlong;. '
-slug: ai-concepts-example-dynamic-covers
 title: 'Individual AI: Dynamic Covers'
 ---
 # Individual AI: Dynamic Covers<a name="ai-concepts-example-dynamic-covers"></a>

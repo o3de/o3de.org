@@ -1,7 +1,6 @@
 ---
 description: ' Use the Waf branch spec file to specify the available operating systems
   and configurations for all &ALY; game projects and specs. '
-slug: waf-files-branch-spec
 title: Waf Branch Spec (waf_branch_spec.py)
 ---
 # Waf Branch Spec \(waf\_branch\_spec\.py\)<a name="waf-files-branch-spec"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to create blend trees in the &ALY; &animation-editor;. '
-slug: animation-editor-creating-blend-trees
 title: Creating Blend Trees
 ---
 # Creating Blend Trees<a name="animation-editor-creating-blend-trees"></a>

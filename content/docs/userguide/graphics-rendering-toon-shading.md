@@ -1,7 +1,6 @@
 ---
 description: ' Configure toon shading in &ALYlong; to implement a toon shader visual
   look. '
-slug: graphics-rendering-toon-shading
 title: Toon Shading (Experimental Feature)
 ---
 # Toon Shading \(Experimental Feature\)<a name="graphics-rendering-toon-shading"></a>

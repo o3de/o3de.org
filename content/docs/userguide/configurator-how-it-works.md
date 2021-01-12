@@ -1,6 +1,5 @@
 ---
 description: ' Learn more about the &project-configurator; for &ALYlong;. '
-slug: configurator-how-it-works
 title: Understanding the &project-configurator;
 ---
 # Understanding the Project Configurator<a name="configurator-how-it-works"></a>

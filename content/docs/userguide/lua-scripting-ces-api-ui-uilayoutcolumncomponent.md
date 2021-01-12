@@ -1,6 +1,5 @@
 ---
 description: ' Use the UILayoutColumnComponent to control column layout in &ALYlong;. '
-slug: lua-scripting-ces-api-ui-uilayoutcolumncomponent
 title: UILayoutColumnComponent
 ---
 # UILayoutColumnComponent<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent"></a>

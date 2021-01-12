@@ -1,6 +1,5 @@
 ---
 description: Learn about &ALYlong;'s localization system.
-slug: localization-intro
 title: Localizing Game Projects
 ---
 # Localizing Game Projects<a name="localization-intro"></a>

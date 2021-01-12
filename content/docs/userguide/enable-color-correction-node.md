@@ -1,7 +1,6 @@
 ---
 description: ' Use the Enable Color Correction node in the &ALYlong; &script-canvas;
   editor to set color correction parameters. '
-slug: enable-color-correction-node
 title: Enable Color Correction
 ---
 # Enable Color Correction<a name="enable-color-correction-node"></a>

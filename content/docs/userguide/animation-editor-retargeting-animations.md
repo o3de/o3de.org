@@ -1,7 +1,6 @@
 ---
 description: ' Retarget motions and animations from one actor to another actor in
   the &ALYlong; &animation-editor; . '
-slug: animation-editor-retargeting-animations
 title: Retargeting Motions
 ---
 # Retargeting Motions<a name="animation-editor-retargeting-animations"></a>

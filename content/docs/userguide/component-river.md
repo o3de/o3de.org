@@ -1,7 +1,6 @@
 ---
 description: ' Use the River component to carve riverbeds into the terrain and fill
   them with moving water in &ALYlong;. '
-slug: component-river
 title: River
 ---
 # River<a name="component-river"></a>

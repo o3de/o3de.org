@@ -1,6 +1,5 @@
 ---
 description: ' Build a simple game to familiarize yourself with Amazon Lumberyard. '
-slug: wg-getstarted
 title: Get started with Amazon Lumberyard
 ---
 # Get started with Amazon Lumberyard<a name="wg-getstarted"></a>

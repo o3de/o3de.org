@@ -1,7 +1,6 @@
 ---
 description: ' Use the Defect Reporter &cgp; to view and manage defect report submissions
   in &ALYlong;. '
-slug: cloud-canvas-cloud-gem-defect-reporter-cgp
 title: Using the Defect Reporter &cgp;
 ---
 # Using the Defect Reporter Cloud Gem Portal<a name="cloud-canvas-cloud-gem-defect-reporter-cgp"></a>

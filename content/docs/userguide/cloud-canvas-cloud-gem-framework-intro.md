@@ -1,7 +1,6 @@
 ---
 description: ' The Cloud Gem Framework is a collection of tools and APIs that support
   the creation and operation of Cloud Gems. '
-slug: cloud-canvas-cloud-gem-framework-intro
 title: Cloud Gem Framework
 ---
 # Cloud Gem Framework<a name="cloud-canvas-cloud-gem-framework-intro"></a>

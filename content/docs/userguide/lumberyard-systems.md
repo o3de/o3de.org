@@ -1,6 +1,5 @@
 ---
 description: ' This section describes the major &ALY; systems. '
-slug: lumberyard-systems
 title: '&ALY; Systems'
 ---
 # Lumberyard Systems<a name="lumberyard-systems"></a>

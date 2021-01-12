@@ -1,6 +1,5 @@
 ---
 description: ' Test the &cloud; Dynamic Content Cloud Gem. '
-slug: cloud-canvas-cloud-gem-dc-testing
 title: Testing the Dynamic Content System
 ---
 # Testing the Dynamic Content System<a name="cloud-canvas-cloud-gem-dc-testing"></a>

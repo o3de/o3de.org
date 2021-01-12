@@ -1,7 +1,6 @@
 ---
 description: ' Use the missing dependency scanner in &ALY; to identify missing asset
   references. '
-slug: asset-bundler-missing-dependency-scanner
 title: Using the Missing Dependency Scanner
 ---
 # Using the Missing Dependency Scanner<a name="asset-bundler-missing-dependency-scanner"></a>

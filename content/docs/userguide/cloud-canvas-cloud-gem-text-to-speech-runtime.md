@@ -1,6 +1,5 @@
 ---
 description: null
-slug: cloud-canvas-cloud-gem-text-to-speech-runtime
 title: Configuring Runtime Capabilities and Caching
 ---
 # Configuring Runtime Capabilities and Caching<a name="cloud-canvas-cloud-gem-text-to-speech-runtime"></a>

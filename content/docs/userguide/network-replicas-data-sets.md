@@ -1,6 +1,5 @@
 ---
 description: ' Use DataSet objects in &ALY; to synchronize a state across the network. '
-slug: network-replicas-data-sets
 title: Datasets
 ---
 # Datasets<a name="network-replicas-data-sets"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Learn about versioning of &LAM; code and custom resource instances
   in &ALYlong;. '
-slug: cloud-canvas-cgf-adding-aws-resources-versioning
 title: Versioning of Custom Resources
 ---
 # Versioning of Custom Resources<a name="cloud-canvas-cgf-adding-aws-resources-versioning"></a>

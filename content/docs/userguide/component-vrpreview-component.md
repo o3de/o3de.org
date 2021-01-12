@@ -1,7 +1,6 @@
 ---
 description: ' Use the VR Preview component to instantly explore a space in virtual
   reality. '
-slug: component-vrpreview-component
 title: VR Preview
 ---
 # VR Preview<a name="component-vrpreview-component"></a>

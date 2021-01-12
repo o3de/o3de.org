@@ -1,7 +1,6 @@
 ---
 description: ' Use the fader and mask components in &ALYlong;''s &ui-canvas-editor;
   to adjust transparency and to mask, or show a portion of content in child elements. '
-slug: ui-editor-components-other
 title: Other Components
 ---
 # Other Components<a name="ui-editor-components-other"></a>

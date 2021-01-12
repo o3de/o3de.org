@@ -1,7 +1,6 @@
 ---
 description: ' Use the Camera Rig component to add and remove behaviors to drive your
   camera entity in &ALYlong;. '
-slug: component-camera-rig
 title: Camera Rig
 ---
 # Camera Rig<a name="component-camera-rig"></a>

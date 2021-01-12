@@ -2,7 +2,6 @@
 description: ' Learn about the Amazon Qt Control Gallery tool that demonstrates the
   Lumberyard UI 2.0 custom Qt widget library in action, and see sample code related
   to each example. '
-slug: uidev-control-gallery
 title: Lumberyard Qt control gallery tool
 ---
 # Lumberyard Qt control gallery tool<a name="uidev-control-gallery"></a>

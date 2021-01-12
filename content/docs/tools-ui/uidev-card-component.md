@@ -1,7 +1,6 @@
 ---
 description: ' Use the Lumberyard UI 2.0 card component as a container to organize
   component property settings and actions together. '
-slug: uidev-card-component
 title: Lumberyard UI card component
 ---
 # Lumberyard UI card component<a name="uidev-card-component"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use console variables to adjust color grading settings when working
   with color charts. '
-slug: set-color-chart-console-variables
 title: Console Variables for Color Charts
 ---
 # Console Variables for Color Charts<a name="set-color-chart-console-variables"></a>

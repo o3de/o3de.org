@@ -1,7 +1,6 @@
 ---
 description: ' Serialize objects to JSON from the ALY; engine and load them back through
   deserialization. '
-slug: serialization-json-serialize-deserialize
 title: Serialize and deserialize JSON objects
 ---
 # Serialize and deserialize JSON objects<a name="serialization-json-serialize-deserialize"></a>

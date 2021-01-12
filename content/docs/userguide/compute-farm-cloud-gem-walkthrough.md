@@ -1,7 +1,6 @@
 ---
 description: ' Use the Compute Farm cloud gem to solve large-scale computing tasks
   in &ALYlong;. '
-slug: compute-farm-cloud-gem-walkthrough
 title: 'Compute Farm Cloud Gem: Walkthrough'
 ---
 # Compute Farm Cloud Gem: Walkthrough<a name="compute-farm-cloud-gem-walkthrough"></a>

@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to add and connect &script-canvas; nodes in &ALYlong;. '
-slug: script-canvas-working-with-nodes-adding-and-connecting
 title: Adding and Connecting Nodes
 ---
 # Adding and Connecting Nodes<a name="script-canvas-working-with-nodes-adding-and-connecting"></a>

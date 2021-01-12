@@ -1,7 +1,6 @@
 ---
 description: ' Use the Load by Name node in the &ALYlong; &script-canvas; editor to
   find and return a material with the specified name. '
-slug: material-load-by-name-node
 title: Load by Name
 ---
 # Load by Name<a name="material-load-by-name-node"></a>

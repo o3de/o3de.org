@@ -1,7 +1,6 @@
 ---
 description: ' Create third-party library configuration files for the &waf-system;
   in &ALYlong;. '
-slug: waf-third-party-library-configurations
 title: Creating Third-Party Library Configuration Files for &waf;
 ---
 # Creating Third\-Party Library Configuration Files for Waf<a name="waf-third-party-library-configurations"></a>

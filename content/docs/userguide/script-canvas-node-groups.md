@@ -1,7 +1,6 @@
 ---
 description: ' Group &script-canvas; nodes for improved manageability of your visual
   scripts in &ALYlong;. '
-slug: script-canvas-node-groups
 title: Grouping Nodes
 ---
 # Grouping Nodes<a name="script-canvas-node-groups"></a>

@@ -1,7 +1,6 @@
 ---
 description: ' Use the Recompute Static Shadows node in the &ALYlong; &script-canvas;
   editor to trigger the recalculation of cached shadow maps. '
-slug: recompute-static-shadows-node
 title: Recompute Static Shadows
 ---
 # Recompute Static Shadows<a name="recompute-static-shadows-node"></a>

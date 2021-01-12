@@ -1,7 +1,6 @@
 ---
 description: ' Use the &ALYlong; &asset-browser; to quickly view and access your game
   project assets. '
-slug: asset-browser-intro
 title: '&asset-browser;'
 ---
 # Asset Browser<a name="asset-browser-intro"></a>

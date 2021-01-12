@@ -1,7 +1,6 @@
 ---
 description: ' Use the &entity-converter; tool to convert entities from the legacy
   entities (CryEntities) to the new &component-system; in &ALYlong;. '
-slug: component-entity-data-converter
 title: Converting Entities with the &entity-converter;
 ---
 # Converting Entities with the Legacy Converter<a name="component-entity-data-converter"></a>

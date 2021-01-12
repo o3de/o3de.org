@@ -1,6 +1,5 @@
 ---
 description: ' Specify a position and a direction with refpoints in &ALYlong;. '
-slug: ai-scripting-refpoints
 title: Refpoints
 ---
 # Refpoints<a name="ai-scripting-refpoints"></a>

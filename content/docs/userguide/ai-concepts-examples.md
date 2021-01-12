@@ -1,6 +1,5 @@
 ---
 description: ' See the following concepts for the AI system in &ALYlong;. '
-slug: ai-concepts-examples
 title: AI System Concept Examples
 ---
 # AI System Concept Examples<a name="ai-concepts-examples"></a>

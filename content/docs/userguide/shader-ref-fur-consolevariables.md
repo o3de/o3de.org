@@ -1,6 +1,5 @@
 ---
 description: ' Use the console variables (CVARs) for the fur rendering in &ALYlong;. '
-slug: shader-ref-fur-consolevariables
 title: Fur Console Variables
 ---
 # Fur Console Variables<a name="shader-ref-fur-consolevariables"></a>

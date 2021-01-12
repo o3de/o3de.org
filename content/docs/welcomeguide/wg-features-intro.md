@@ -1,6 +1,5 @@
 ---
 description: ' Features overview for Amazon Lumberyard. '
-slug: wg-features-intro
 title: Lumberyard features
 ---
 # Lumberyard features<a name="wg-features-intro"></a>

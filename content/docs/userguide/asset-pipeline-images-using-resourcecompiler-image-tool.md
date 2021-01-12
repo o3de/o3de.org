@@ -1,7 +1,6 @@
 ---
 description: ' Use the &resource-compiler; image tool to manually select an image
   processing preset in &ALYlong; and then save the settings to source control. '
-slug: asset-pipeline-images-using-resourcecompiler-image-tool
 title: Using the &resource-compiler; Image Tool
 ---
 # Using the Resource Compiler Image Tool<a name="asset-pipeline-images-using-resourcecompiler-image-tool"></a>

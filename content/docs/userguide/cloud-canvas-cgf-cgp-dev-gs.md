@@ -1,6 +1,5 @@
 ---
 description: ' Learn how to create cloud gem portals with dynamic content. '
-slug: cloud-canvas-cgf-cgp-dev-gs
 title: Getting Started With Game Development on the Cloud Gem Portal
 ---
 # Getting Started With Game Development on the Cloud Gem Portal<a name="cloud-canvas-cgf-cgp-dev-gs"></a>

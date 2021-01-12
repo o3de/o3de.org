@@ -1,7 +1,6 @@
 ---
 description: ' Find material file names to reference for nodes in the &ALYlong; &script-canvas;
   editor. '
-slug: finding-materials-by-name
 title: Finding the Material Name
 ---
 # Finding the Material Name<a name="finding-materials-by-name"></a>
