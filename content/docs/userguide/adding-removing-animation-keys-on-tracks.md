@@ -18,7 +18,7 @@ When you enter record mode, you can update the component entities that are part 
 For example, if you specify a different value for the **Transform** component at three seconds, the key for this update appears in the timeline\.  
 To specify an animation to play over time, move the playhead to different places along the timeline\. Otherwise, you will overwrite the keys at the same location of the timeline as you update the component entities in the level\.  
 To stop recording, click the **Record Mode** icon again\.  
-For more information, see [Using Record Mode](cinematics-using-record-mode.md)\.
+For more information, see [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)\.
 
 You can delete individual keys or click and drag to select multiple animation keys\.
 

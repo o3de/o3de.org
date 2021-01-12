@@ -22,7 +22,7 @@ Sets the sun's latitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node | 
 | Latitude | Number |  Sun latitude value to specify\.  | 
-| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the sun position\. For more information, see [Environment Nodes](script-canvas-environment-nodes.md)\.  | 
+| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the sun position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
 
 ## Outputs<a name="set-sun-latitude-node-output"></a>
 

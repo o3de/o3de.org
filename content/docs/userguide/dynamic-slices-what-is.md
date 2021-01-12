@@ -28,7 +28,7 @@ You can choose to generate dynamic slices at whatever granularity is appropriate
 
 ## Instantiating Dynamic Slices<a name="dynamic-slices-how-to-instantiate"></a>
 
-You can use the [Spawner](component-spawner.md) component to instantiate dynamic slices\. 
+You can use the [Spawner](/docs/userguide/components/spawner.md) component to instantiate dynamic slices\. 
 
 **To instantiate dynamic slices**
 
@@ -42,7 +42,7 @@ You can use the [Spawner](component-spawner.md) component to instantiate dynamic
    SpawnerComponentRequestBus.Event.Spawn(self.entityId)
    ```
 
-   For more information about working with slices, see [Working with Slices](component-slices.md)\.
+   For more information about working with slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 ## Additional Links<a name="dynamic-slices-additional-links"></a>
 + [ Amazon Lumberyard Getting Started series \- Spawning dynamic slices \(video\)](https://www.youtube.com/watch?v=ERL4sqSXpMA&feature=youtu.be&t=1142)

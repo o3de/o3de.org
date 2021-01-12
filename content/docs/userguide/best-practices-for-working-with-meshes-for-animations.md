@@ -8,8 +8,8 @@ title: Best Practices for Working with Skinned Meshes for Animation
 See the following guidelines when working with skinned meshes for the **Animation Editor**\.
 
 **Topics**
-+ [Creating Skinned Meshes for Actors](char-fbx-importer-create-skinned-meshes-best-practices.md)
-+ [Exporting Actors and Motions](char-fbx-importer-export-actors-motons.md)
-+ [Tutorials: Importing FBX Files as Actors and Motions](importing-fbx-files-as-actors-motions.md)
-+ [Troubleshooting Skinned Meshes](char-fbx-importer-export-skinned-meshes-troubleshooting.md)
-+ [Using Actor LODs to Optimize Game Performance](using-actor-LODs-optimize-game-performance.md)
++ [Creating Skinned Meshes for Actors](/docs/userguide/fbx/import/create-skinned-meshes-best-practices.md)
++ [Exporting Actors and Motions](/docs/userguide/fbx/import/export-actors-motons.md)
++ [Tutorials: Importing FBX Files as Actors and Motions](/docs/userguide/importing-fbx-files-as-actors-motions.md)
++ [Troubleshooting Skinned Meshes](/docs/userguide/fbx/import/export-skinned-meshes-troubleshooting.md)
++ [Using Actor LODs to Optimize Game Performance](/docs/userguide/using-actor-LODs-optimize-game-performance.md)

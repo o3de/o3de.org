@@ -12,7 +12,7 @@ There are ways that you can avoid data loss when serializing component data\. Th
 This section provides specific information and best practices for avoiding data loss in versions of Lumberyard up through and including v1\.22\. First, it describes what you need to keep in mind when using version converters, and how to help avoid subsequent data loss in your slice data patches\. Then, it provides a two\-step process for avoiding data loss and maintaining stability\.
 
 **Note**  
-In Lumberyard v1\.23, the issues described in the following topics were addressed with the introduction of the new slice file format and the NameChange and TypeChange class builders\. For more information about these class builders and how to upgrade your slice file format, see [Versioning your Component Serialization](component-entity-system-versioning.md)\.
+In Lumberyard v1\.23, the issues described in the following topics were addressed with the introduction of the new slice file format and the NameChange and TypeChange class builders\. For more information about these class builders and how to upgrade your slice file format, see [Versioning your Component Serialization](/docs/userguide/components/entity-system-versioning.md)\.
 
 **Topics**
 + [The Data Patching Issue](#version-converters-and-data-patches)

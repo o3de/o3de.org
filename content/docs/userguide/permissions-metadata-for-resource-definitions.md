@@ -69,7 +69,7 @@ To determine what permissions should go into a policy, the `Custom::AccessContro
 ...
 ```
 
-You can use the `lmbr_aws` command line tool to manage permissions metadata on the resource definitions in a resource group's `resource-template.json` file\. For more information, see [Permission Metadata Management](cloud-canvas-rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-permission-metadata-management)\.
+You can use the `lmbr_aws` command line tool to manage permissions metadata on the resource definitions in a resource group's `resource-template.json` file\. For more information, see [Permission Metadata Management](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-permission-metadata-management)\.
 
 ## Properties<a name="cloud-canvas-resource-definitions-permissions-metadata-properties"></a>
 
@@ -80,4 +80,4 @@ Each Cloud Canvas `Permission` metadata object can have the following properties
 
 ## See Also<a name="cloud-canvas-resource-definitions-permissions-metadata-see-also"></a>
 
-For an overview of security in Cloud Canvas Resource Manager, see [Understanding the Resource Manager Security System](cloud-canvas-rm-security.md)\.
+For an overview of security in Cloud Canvas Resource Manager, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.

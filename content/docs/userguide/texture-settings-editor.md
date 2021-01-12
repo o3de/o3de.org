@@ -17,7 +17,7 @@ The Texture Settings Editor supports the following image formats:
 + `.tiff`
 
 **Note**  
-The Texture Settings Editor requires the [Image Processing](gems-system-gem-image-processing.md) gem\. By default, this gem is enabled\.
+The Texture Settings Editor requires the [Image Processing](/docs/userguide/gems/builtin/image-processing.md) gem\. By default, this gem is enabled\.
 
 The Texture Settings Editor can also load the previous Resource Compiler \(RC\) generated `.exportsettings` file\. If you make any changes to this file, the Texture Settings Editor deletes this file and generates a new `.imagesettings` file\. If you have Perforce enabled, Perforce tracks the new or modified files\. 
 
@@ -129,10 +129,10 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 + Click the reset icon to reset all texture properties to the default values of the current preset\.
 + Click the info icon to display a pop\-up window for the current settings\.  
 ![\[View the preset info for the texture in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-6.png)
-+ **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](mat-texture-types.md)\.
++ **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
 + **Suppress spec reduction** – By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
 
-  For more information, see [Editor Settings](lumberyard-editor-menus.md#lumberyard-editor-menus-config-spec)\.
+  For more information, see [Editor Settings](/docs/userguide/editor/menus.md#lumberyard-editor-menus-config-spec)\.
 
 ## Platform<a name="texture-platform-resolution"></a>
 

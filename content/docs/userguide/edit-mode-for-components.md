@@ -15,19 +15,19 @@ title: Editing Components in the Viewport
 When you're working with components, you can lock a single component for editing\. You can't edit any other components that are attached to the entity\. This feature prevents you from accidentally editing other components that are attached to the entity\. For example, if you have an entity with attached **Spline** and **Mesh** components, you can lock the **Spline** component, make your changes to the spline, and stop editing\.
 
 This feature supports the following components: <a name="supported-components-viewport-interaction-model"></a>
-+ **[Box Shape](component-shapes.md)**
-+ **[OccluderArea](component-occluder-area.md)**
-+ **[Portal](component-portal.md)**
-+ **[Polygon Prism Shape](component-polygon-prism.md)**
-+ **[Spline](component-spline.md)**
-+ **[Tube Shape](component-tube-shape.md)**
-+ **[VisArea](component-vis-area.md)**
++ **[Box Shape](/docs/userguide/components/shapes.md)**
++ **[OccluderArea](/docs/userguide/components/occluder-area.md)**
++ **[Portal](/docs/userguide/components/portal.md)**
++ **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)**
++ **[Spline](/docs/userguide/components/spline.md)**
++ **[Tube Shape](/docs/userguide/components/tube-shape.md)**
++ **[VisArea](/docs/userguide/components/vis-area.md)**
 
 **Topics**
 + [Editing a Single Component in the Viewport](#editing-components-in-viewport)
 + [Editing Multiple Components in the Viewport](#editing-multiple-component-in-the-viewport)
 
-If you want to add this feature to other components, you must make code changes to Lumberyard Editor\. For more information, see the [Programmer's Guide to Component Mode](working-with-component-mode-programmatically.md)\.
+If you want to add this feature to other components, you must make code changes to Lumberyard Editor\. For more information, see the [Programmer's Guide to Component Mode](/docs/userguide/working-with-component-mode-programmatically.md)\.
 
 ## Editing a Single Component in the Viewport<a name="editing-components-in-viewport"></a>
 
@@ -35,7 +35,7 @@ For components that support this feature, the component is locked when you edit 
 
 **To edit a single component in Component Mode**
 
-1. In Lumberyard Editor, create an entity\. See [Creating an Entity](creating-entity.md)\. 
+1. In Lumberyard Editor, create an entity\. See [Creating an Entity](/docs/userguide/creating-entity.md)\. 
 
 1. In the **Entity Inspector**, choose **Add Component** and select the **Spline** component\.  
 **Example**  
@@ -69,7 +69,7 @@ In some cases, Component Mode supports editing multiple components\. This is use
 
 **To edit multiple components in Component Mode**
 
-1. In Lumberyard Editor, create an entity\. See [Creating an Entity](creating-entity.md)\. 
+1. In Lumberyard Editor, create an entity\. See [Creating an Entity](/docs/userguide/creating-entity.md)\. 
 
 1. In the **Entity Inspector**, choose **Add Component** and then select components that have this feature\. See [supported components](#supported-components-viewport-interaction-model)\. 
 

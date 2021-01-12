@@ -39,7 +39,7 @@ Component names, data types, and version information are readily identifiable in
 ```
 
 **Note**  
-The Slice Upgrade Pipeline introduced in Lumberyard v1\.23 helps you convert your slices to this new format\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](component-slice-upgrade-process.md)\.
+The Slice Upgrade Pipeline introduced in Lumberyard v1\.23 helps you convert your slices to this new format\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
 ### Hexadecimal Data Patch Format \(v1\.22 and earlier\)<a name="slice-data-patch-hexadecimal"></a>
 

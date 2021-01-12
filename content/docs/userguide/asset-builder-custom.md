@@ -31,7 +31,7 @@ This topic draws on the following resources, which are included with Lumberyard:
 
 ## Prerequisites<a name="asset-builder-custom-prerequisites"></a>
 
-This topic assumes that you have a working knowledge of Lumberyard [Gems](gems-system-structure.md), [AZ::Modules](az-module-parts.md), and [AZ::Components](component-entity-system-create-component.md)\. The next section includes a brief overview of asset builders inside gems\.
+This topic assumes that you have a working knowledge of Lumberyard [Gems](/docs/userguide/gems/structure.md), [AZ::Modules](/docs/userguide/modules/parts.md), and [AZ::Components](/docs/userguide/components/entity-system-create-component.md)\. The next section includes a brief overview of asset builders inside gems\.
 
 ## Asset Builders Inside Gems<a name="asset-builder-custom-asset-builders-inside-gems"></a>
 
@@ -39,7 +39,7 @@ Gems contain two kinds of modules:
 + A runtime module: `gem_name.dll`
 + A tools module: `gem_name.Editor.dll`
 
-These modules contain [system components](az-module-system-components.md) and tool components\. When Lumberyard starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
+These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When Lumberyard starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
 
 ## 1\. Create Builder Classes<a name="asset-builder-custom-create-builder-class"></a>
 
@@ -141,7 +141,7 @@ response.m_createJobOutputs.push_back(descriptor);
 
 `CreateJobsRequest` provides helper functions for operations related to the enabled platforms\. These helper functions can be useful for building the output `JobDescriptor` for a specific enabled platform\.
 
-For more information about declaring, enabling, or disabling platforms, see [Configuring the Asset Pipeline](asset-pipeline-configuring.md)\.
+For more information about declaring, enabling, or disabling platforms, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 The following functions are available in the Asset Builder SDK\. For source code, see `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK\AssetBuilderSDK.*`
 + `HasPlatform(const char* platformIdentifier)` – For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.

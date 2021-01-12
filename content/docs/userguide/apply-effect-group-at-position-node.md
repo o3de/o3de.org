@@ -5,11 +5,11 @@ title: Apply Effect Group At Position
 ---
 # Apply Effect Group At Position<a name="apply-effect-group-at-position-node"></a>
 
-Applies an effect group at a specific position in the world\. You must use this node instead of the **[Enable Effect Group](enable-effect-group-node.md)** node for effect group `xml` files that include the **fadeDistance** parameter\.
+Applies an effect group at a specific position in the world\. You must use this node instead of the **[Enable Effect Group](/docs/userguide/rendering/enable/effect-group-node.md)** node for effect group `xml` files that include the **fadeDistance** parameter\.
 
 The strength of the effect depends on the camera's proximity to the specified location\. You can call this node multiple times to apply the same effect group at multiple locations\. The effect strength is cleared for each frame, so the node needs to be triggered every frame\. 
 
-For more information, see [Setting Effect Strength Based on Camera Distance](effect-groups-strength-camera-distance.md)\.
+For more information, see [Setting Effect Strength Based on Camera Distance](/docs/userguide/rendering/effect-groups/strength-camera-distance.md)\.
 
 **Contents**
 + [Inputs](#apply-effect-group-at-position-node-input)

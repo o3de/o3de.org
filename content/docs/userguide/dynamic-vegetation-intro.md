@@ -7,7 +7,7 @@ title: Dynamic vegetation
 
  The dynamic vegetation system uses vegetation components to customize vegetation coverage for worlds of any size\. To use the dynamic vegetation system, you must enable the **Vegetation** gem for your game project\. 
 
-For more information, see [Enabling Gems](gems-system-using-project-configurator.md)\.
+For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 ![\[Example of vegetation landscape that you can achieve by using dynamic vegetation.\]](/images/userguide/dynamic-vegetation-intro.png)
 
@@ -18,7 +18,7 @@ Using combinations of components from vegetation and other categories, you can d
 + Create complex ecological biomes all in one nested slice containing many layers of broad coverage for blending across areas or an entire world\.
 + Configure vegetation to grow only on certain surfaces\. Use components to specify where vegetation can grow such as on a range of ground slope angles or at specified altitudes\.
 
-The dynamic vegetation system interacts in several ways with the [static vegetation system](vegetation-intro.md)\. For example, you can do the following:
+The dynamic vegetation system interacts in several ways with the [static vegetation system](/docs/userguide/vegetation/intro.md)\. For example, you can do the following:
 + Use the same assets in both dynamic and static vegetation systems
 + Configure static vegetation to block dynamic vegetation
 
@@ -50,5 +50,5 @@ Enables surfaces such as terrain or meshes to emit signals, or tags, that commun
 Provides an expressive **FastNoise Gradient** component that generates many procedural noise variations\. In the Lumberyard **Entity Inspector**, the **FastNoise Gradient** component appears in the **Gradient** category\. You use it like any other gradient component\.
 
 **Topics**
-+ [Dynamic Vegetation Concepts](dynamic-vegetation-concepts.md)
-+ [Dynamic Vegetation Procedures](dynamic-vegetation-procedures.md)
++ [Dynamic Vegetation Concepts](/docs/userguide/vegetation/concepts.md)
++ [Dynamic Vegetation Procedures](/docs/userguide/vegetation/procedures.md)

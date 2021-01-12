@@ -11,7 +11,7 @@ This tutorial is a step\-by\-step walkthrough of the Compute Farm cloud gem\. Th
 
 This tutorial assumes the following:
 + You enabled the **Cloud Gem Compute Farm** in the Project Configurator for your Lumberyard project\.
-+ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](cloud-canvas-command-line.md) to create the following:
++ You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A project stack for your project\.
   + A deployment for your project\.
 + You have an installation of Python 3\.6 or later\. Lumberyard Beta 1\.24 and later versions ship with a Python 3 interpreter located at `lumberyard_version/dev/Tools/Python/3.7.5/host_platform`\. If you use the interpreter bundled with Lumberyard, you may need to [install the pip package manager](https://pip.pypa.io/en/stable/installing/)\.
@@ -20,7 +20,7 @@ This tutorial assumes the following:
   **pip install boto3**\.
 + Open the Cloud Gem Portal\. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
 
-If you don't meet the prerequisites, follow the steps in [Enabling Gems](gems-system-using-project-configurator.md) to add **Cloud Gem Compute Farm** to your project\. Note that the CloudGemSamples project does not enable Cloud Gem Compute Farm by default\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](cloud-canvas-tutorial.md)\.
+If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Compute Farm** to your project\. Note that the CloudGemSamples project does not enable Cloud Gem Compute Farm by default\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## 1\. Gather Configuration Information<a name="compute-farm-cloud-gem-walkthrough-gather-configuration-information"></a>
 

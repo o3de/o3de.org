@@ -20,7 +20,7 @@ Because template drivers are run from the AZ Code Generator executable using Pyt
 
 1. Set the working directory to `Bin64\azcg`\. 
 
-1. Enter the arguments for `AzCodeGenerator.exe` into a file with one argument per line\. Or use a Waf\-generated arguments file as described in [Waf Debugging with AZ Code Generator](az-code-gen-waf-debugging.md)\. 
+1. Enter the arguments for `AzCodeGenerator.exe` into a file with one argument per line\. Or use a Waf\-generated arguments file as described in [Waf Debugging with AZ Code Generator](/docs/userguide/codegen/waf-debugging.md)\. 
 
 1. Set the arguments file, prefixed with `@`, as the argument to the script\. 
 
@@ -32,4 +32,4 @@ Because template drivers are run from the AZ Code Generator executable using Pyt
 
 After you have completed the preceding steps, you should be able to launch your debugger and set breakpoints in your driver script\. 
 
-For complete AZ Code Generator parameter information, see [AZ Code Generator Parameters](az-code-gen-parameters.md)\.
+For complete AZ Code Generator parameter information, see [AZ Code Generator Parameters](/docs/userguide/codegen/parameters.md)\.

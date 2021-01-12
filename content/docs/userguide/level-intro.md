@@ -10,10 +10,10 @@ A level, also known as world or map, represents the space or area available to t
 The environment includes lighting, terrain, bodies of water, vegetation, sky, and weather effects\.
 
 **Topics**
-+ [Creating a New Level](level-create.md)
-+ [Creating Terrain](terrain-intro.md)
-+ [Blending Environment Probes](level-blending-environment-probe.md)
-+ [Working with Database Libraries](level-database-view.md)
-+ [Adding Sky Effects](sky-intro.md)
-+ [Adding Weather Effects](weather-intro.md)
-+ [Adding Vegetation](vegetation-intro.md)
++ [Creating a New Level](/docs/userguide/level-create.md)
++ [Creating Terrain](/docs/userguide/terrain/intro.md)
++ [Blending Environment Probes](/docs/userguide/level-blending-environment-probe.md)
++ [Working with Database Libraries](/docs/userguide/level-database-view.md)
++ [Adding Sky Effects](/docs/userguide/sky/intro.md)
++ [Adding Weather Effects](/docs/userguide/weather/intro.md)
++ [Adding Vegetation](/docs/userguide/vegetation/intro.md)

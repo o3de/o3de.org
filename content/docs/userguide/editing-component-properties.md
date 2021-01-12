@@ -18,9 +18,9 @@ You can edit properties for your components such as changing the mesh asset file
 
 **Note**  
 If your entity is part of a slice instance, any properties that you modify from the source slice asset appear in orange in the **Entity Inspector**\.   
-To save a change to a slice, see [Modifying a Slice and Saving Changes](component-slice-push-changes.md)
-To revert an override, see [Reverting and Forcing Overrides](component-slice-override.md)
-For more information about slices, see [Working with Slices](component-slices.md)\.
+To save a change to a slice, see [Modifying a Slice and Saving Changes](/docs/userguide/components/slice-push-changes.md)
+To revert an override, see [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)
+For more information about slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
 ## Copying and Pasting Asset References<a name="component-entity-inspector-assetref"></a>
 
