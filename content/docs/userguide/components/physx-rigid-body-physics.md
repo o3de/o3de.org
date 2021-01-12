@@ -67,7 +67,7 @@ When disabled, the rigid body is dynamic\. The rigid body responds to gravity an
 
 **CCD enabled**  
 When enabled, the rigid body is will have continuous collision detection \(CCD\)\. This property is useful for high speed objects to ensure accurate collision detection\. Enabling continuous collision detection reveals two additional properties, **Min advance coefficient** and **CCD Friction**   
-To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window\. See [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\. 
+To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window\. See [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\. 
 
 **Min advance coefficient**  
 Lower values reduce clipping but can affect motion smoothness\.   

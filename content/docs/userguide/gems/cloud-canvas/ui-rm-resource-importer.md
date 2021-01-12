@@ -58,7 +58,7 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 
 ## Importing Resource Definitions Using the Command Line<a name="cloud-canvas-ui-rm-resource-importer-command-line"></a>
 
-To list and import resources using the Cloud Canvas command line, see [resource\-importer list\-importable\-resources](cloud-canvas-command-line.md#cloud-canvas-command-line-resource-importer-list-importable-resources) and [resource\-importer import\-resource](cloud-canvas-command-line.md#cloud-canvas-command-line-resource-importer-import-resource)\.
+To list and import resources using the Cloud Canvas command line, see [resource\-importer list\-importable\-resources](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-importer-list-importable-resources) and [resource\-importer import\-resource](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-importer-import-resource)\.
 
 ## Understanding Resource Definitions<a name="cloud-canvas-ui-rm-resource-importer-resource-definitions-caveat"></a>
 

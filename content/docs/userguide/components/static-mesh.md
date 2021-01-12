@@ -33,7 +33,7 @@ The **Mesh** component has different advanced properties that depend on whether 
 + A mesh is dynamic when the **Static** property is not set on the **Transform** component\. This is the default setting when you create an entity\. Dynamic meshes do not affect nav meshes\. 
 + A mesh is static when the **Static** property is set on the **Transform** component\. You can use static objects for more optimal paths during rendering and processing\. We recommend that you create static meshes whenever possible\. A static mesh can move or deform only when the **Receive Wind** or **Deformable Mesh** properties are set\. 
 
-For more information, see [Transform Component Properties](component-transform.md#component-transform-properties)\.
+For more information, see [Transform Component Properties](/docs/userguide/components/transform.md#component-transform-properties)\.
 
 #### Advanced Properties for Dynamic Meshes<a name="dynamic-mesh-advanced-properties"></a>
 

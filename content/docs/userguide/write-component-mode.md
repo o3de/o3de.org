@@ -454,7 +454,7 @@ You can add a member to the `EditorPointLightComponentMode` and refer to that in
    });
    ```
 
-1. To see a Component Mode in action, switch back to the `EditorPointLightComponent.h` and remove the comment lines that you added to your code\. See [EditorPointLightComponent\.cpp](delegate-component-mode.md#new-component-mode-example)\.
+1. To see a Component Mode in action, switch back to the `EditorPointLightComponent.h` and remove the comment lines that you added to your code\. See [EditorPointLightComponent\.cpp](/docs/userguide/delegate-component-mode.md#new-component-mode-example)\.
 
    ```
    #include "EditorPointLightComponentMode"

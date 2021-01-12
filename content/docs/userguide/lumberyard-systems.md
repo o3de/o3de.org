@@ -77,11 +77,7 @@ Lumberyard consists of the following major systems that help you develop levels 
    
 
 The following Lumberyard tools are outside of the main editor and are used for project and game development:
-<<<<<<< Updated upstream
-+ [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)
-=======
 + [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)
->>>>>>> Stashed changes
 
   The Asset Pipeline converts source art and other assets into platform\-specific, game ready data\.
 

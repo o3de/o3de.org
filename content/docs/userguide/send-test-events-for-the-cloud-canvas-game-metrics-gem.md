@@ -5,11 +5,11 @@ title: Sending Test Metrics with the Metrics Sample Level
 ---
 # Sending Test Metrics with the Metrics Sample Level<a name="send-test-events-for-the-cloud-canvas-game-metrics-gem"></a>
 
-After you complete the [Prerequisites](cloud-canvas-metrics-gem.md#cloud-canvas-cloud-gem-metrics-prerequisites), you can send test metrics with the Metrics Sample level\. You can then view these metrics in the Cloud Gem Portal\.
+After you complete the [Prerequisites](/docs/userguide/gems/cloud-canvas/metrics-gem.md#cloud-canvas-cloud-gem-metrics-prerequisites), you can send test metrics with the Metrics Sample level\. You can then view these metrics in the Cloud Gem Portal\.
 
 **To send test metrics with the Metrics Sample level**
 
-1. Set the **CloudGemsSamples** as your default project\. For more information, see [Switching Game Projects](configurator-projects.md#project-configurator-different-project)\.
+1. Set the **CloudGemsSamples** as your default project\. For more information, see [Switching Game Projects](/docs/userguide/configurator/projects.md#project-configurator-different-project)\.
 
 1. In Lumberyard Editor, choose **File**, **Open**, select **MetricsSample**, and then click **Open**\.
 

@@ -36,4 +36,4 @@ If your game creates multiple worlds, it must manage the objects that are added 
 
 ## Step Constants<a name="physx-configuring-step-constants"></a>
 
-You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created\. For more information, see [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\.
+You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\.

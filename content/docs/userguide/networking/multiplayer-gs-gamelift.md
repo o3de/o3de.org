@@ -37,7 +37,7 @@ Set the following server CVARs as needed:
 
 `gamelift_flexmatch_start_delay`
 
-For more details on these server CVARs provided by the Multiplayer Gem, see [Server CVars](gems-system-gem-multiplayer-cvars.md#gems-system-gem-multiplayer-cvars-server)\.
+For more details on these server CVARs provided by the Multiplayer Gem, see [Server CVars](/docs/userguide/gems/builtin/multiplayer-cvars.md#gems-system-gem-multiplayer-cvars-server)\.
 
 ## Client\-Side Configuration<a name="network-multiplayer-gs-gamelift-client-side-configuration"></a>
 

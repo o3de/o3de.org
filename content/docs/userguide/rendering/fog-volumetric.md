@@ -20,7 +20,7 @@ In the following example, volumetric fog is enabled\.
 
 You can add the **Fog Volume** component to an entity to create fog effects\. For more information, see the **[Fog Volume](/docs/userguide/components/fog-volume.md)** component\.
 
-You can specify how light components affect volumetric fog\. For more information, see [Light Component Fog Properties](component-fog-volume.md#fog-component-light-property)\.
+You can specify how light components affect volumetric fog\. For more information, see [Light Component Fog Properties](/docs/userguide/components/fog-volume.md#fog-component-light-property)\.
 
 You can also use the **Particle Editor** to place a particle emitter in your level to add fog density to an area\. For more information, see the **Volume Fog** and **Volume Thickness** parameters for the **Advanced Attribute** in the [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\. 
 

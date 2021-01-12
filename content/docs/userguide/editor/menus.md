@@ -138,7 +138,7 @@ In the **Editor Settings** menu, you can customize your editing experience\.
 
 | Editor Settings Menu Item | Description | 
 | --- | --- | 
-| Global Preferences | Modify the global settings for Lumberyard Editor and its tools\. For more information, see [Changing Preferences](lumberyard-editor-customizing.md#lumberyard-editor-customizing-preferences)\. | 
+| Global Preferences | Modify the global settings for Lumberyard Editor and its tools\. For more information, see [Changing Preferences](/docs/userguide/editor/customizing.md#lumberyard-editor-customizing-preferences)\. | 
 | Graphics Performance | Select your preferred display setting: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html) | 
 | Keyboard Customization | Configure toolbars, menus, and keyboard shortcuts\. You can customize your keyboard settings, with the option to import or export saved custom keyboard settings\. | 
 

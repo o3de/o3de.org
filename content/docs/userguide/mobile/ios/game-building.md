@@ -31,7 +31,7 @@ You have two options for configuring a game project:
 1. On your Windows computer, navigate to the `lumberyard_version\dev\Tools\LmbrSetup\Mac\` directory and open the Project Configurator\.
 
 1. In the Project Configurator, do one of the following:
-   + Select **SamplesProject** and then click **Set as default**\. Follow the instructions for [switching game projects](configurator-projects.md#project-configurator-different-project)\.
+   + Select **SamplesProject** and then click **Set as default**\. Follow the instructions for [switching game projects](/docs/userguide/configurator/projects.md#project-configurator-different-project)\.
    + Click **Create new**\. Follow the instructions for [creating a game project](/docs/userguide/configurator/projects.md)\.
 
 1. If you created a new game project, do the following:
@@ -120,7 +120,7 @@ To use the remote shader compiler, you must do the following:
 + Connect the remote shader compiler host computer and iOS device to the same network and configure any firewalls to allow traffic through port 61453\.
 + Set up the system configuration file \(`system_ios_ios.cfg`\) for the mobile device to connect to the remote shader compiler on your computer\.
 
-You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-allow)\.
+You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-allow)\.
 
 ### Enabling a Connection Between the iOS App and the Remote Shader Compiler<a name="ios-enable-connection-between-app-and-shader-compiler"></a>
 

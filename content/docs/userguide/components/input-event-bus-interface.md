@@ -13,7 +13,7 @@ void Activate(const AZ::InputEventNotificationId& channelId) override;
 void Deactivate(const AZ::InputEventNotificationId& channelId) override;
 ```
 
-You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](component-entity-system-gameplay-bus.md#component-entity-system-gameplay-bus-gameplaynotifications)\.
+You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus.md#component-entity-system-gameplay-bus-gameplaynotifications)\.
 
 You can find example Lua scripts and code in the `lumberyard_version\dev\Gems\StartingPointInput\Assets\Scripts\Input` directory\.
 

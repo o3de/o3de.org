@@ -16,6 +16,6 @@ The **Radial blend** parameters blend the **Anisotropy** parameters to create va
 
 1. In Lumberyard Editor, click **Tools**, **Other**, **Time Of Day\.**
 
-1. In the **Parameters** pane, for **Volumetric fog**, adjust the [Volumetric Fog Parameters](sky-tod-parameters.md#volumetric-fog-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Volumetric fog**, adjust the [Volumetric Fog Parameters](/docs/userguide/sky/tod-parameters.md#volumetric-fog-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.

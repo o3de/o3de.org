@@ -8,7 +8,7 @@ title: Converting Slices with the &slice-upgrader;
 In v1\.23, Amazon Lumberyard introduced a new file format for component slices\. Specifically, the override data found in data patches is now stored in a readable XML format instead of a hexadecimal byte stream\. This is useful when performing diff and merge operations on your slice files, and enables a more robust versioning system for your serialized components\. Use the Slice Upgrade Pipeline to automatically convert slice files to the latest slice file format\.
 
 **Note**  
-For more information about this new data patch format, and an example, see [Anatomy of a Slice Data Patch](dynamic-slices-overview-anatomy.md#slice-data-patch-anatomy)\.
+For more information about this new data patch format, and an example, see [Anatomy of a Slice Data Patch](/docs/userguide/dynamic-slices-overview-anatomy.md#slice-data-patch-anatomy)\.
 
 ## When do I use the Slice Upgrade Pipeline?<a name="slice-upgrade-when"></a>
 

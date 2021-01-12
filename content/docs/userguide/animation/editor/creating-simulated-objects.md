@@ -28,7 +28,7 @@ Before you begin, you must do the following:
   + Create a motion set
   + Import your motions, such as the `rin_Run.fbx`
 
-For more information, see [Step 1: Creating a Motion Set](animation-editor-quick-start.md#creating-a-motion-set-with-animation-editor)\.
+For more information, see [Step 1: Creating a Motion Set](/docs/userguide/animation/editor/quick-start.md#creating-a-motion-set-with-animation-editor)\.
 
 **Topics**
 + [Prerequisites](#prerequisites-for-creating-simulated-objects)

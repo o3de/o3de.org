@@ -36,7 +36,7 @@ In the Cloud Gem Portal, on the **Cloud Gems** page, choose **Text to Speech**\.
 
 ![\[Choose Text to Speech in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-1.png)
 
-The initial portal includes a **Speech Library**, **Characters**, and **Generated Packages** tabs\. These are the only tabs that you need to get started\. For information about the other tabs, see [Configuring Runtime Capabilities and Caching](/docs/userguide/gems/cloud-canvas/text-to-speech-runtime.md) and [Text\-to\-Speech Troubleshooting Features](cloud-canvas-cloud-gem-text-to-speech-details.md#cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting)\.
+The initial portal includes a **Speech Library**, **Characters**, and **Generated Packages** tabs\. These are the only tabs that you need to get started\. For information about the other tabs, see [Configuring Runtime Capabilities and Caching](/docs/userguide/gems/cloud-canvas/text-to-speech-runtime.md) and [Text\-to\-Speech Troubleshooting Features](/docs/userguide/gems/cloud-canvas/text-to-speech-details.md#cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting)\.
 
 ![\[Text to Speech Cloud Gem initial screen\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-2.png)
 

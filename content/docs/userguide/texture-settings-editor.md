@@ -132,7 +132,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 + **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
 + **Suppress spec reduction** – By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
 
-  For more information, see [Editor Settings](lumberyard-editor-menus.md#lumberyard-editor-menus-config-spec)\.
+  For more information, see [Editor Settings](/docs/userguide/editor/menus.md#lumberyard-editor-menus-config-spec)\.
 
 ## Platform<a name="texture-platform-resolution"></a>
 

@@ -26,11 +26,7 @@ This utility is a background service that monitors changes to your source files 
 When you import assets into your game project, Asset Processor automatically detects the change and processes them\.  
 
 ![\[You can import assets for your game with Asset Processor.\]](/images/userguide/assets/pipeline/asset-pipeline-importing.png)
-<<<<<<< Updated upstream
-For more information, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
-=======
 For more information, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
->>>>>>> Stashed changes
 
 **AZ Code Generator**  
 This command line utility accepts a tagged source code file and creates a text, data, or code file\. AZ Code Generator parses through a list of existing C\+\+ source files and/or header files and generates the intermediate data in JSON format\. It passes the intermediate data to a series of templates, which provide the format for the code that is generated\.   
@@ -93,4 +89,4 @@ For more information, see [Working with Slices](/docs/userguide/components/slice
 **Virtual File System \(VFS\)**  
 This system is designed for non\-PC platforms to handle game assets for live reloading\. The virtual file system streams and loads your assets from your development machine as needed\. You do not have to load your entire level or game to the device ahead of time and you can avoid deploying assets to a target device\. When you make a change on your development machine, live reloading automatically updates the asset in Lumberyard Editor and for the target device\.  
 For example, if you want to run your game on an iOS device and you change an asset, Asset Processor uses the virtual file system to stream the updated asset from your development machine to the iOS device\.   
-For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md) and [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs)\.
+For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md) and [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project.md#android-vfs)\.

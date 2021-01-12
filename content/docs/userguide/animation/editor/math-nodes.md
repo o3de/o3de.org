@@ -15,7 +15,7 @@ Lumberyard's **Animation Editor** features a set of math nodes that perform math
 
 ## Rotation Math 2 Node<a name="rotation-math"></a>
 
-With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](ly-glos-chap.md#quarternion)\. 
+With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap.md#quarternion)\. 
 
 This node multiplies the input rotation and the specified **Default Value** to express an output rotation\. The **Default Value** specifies the rotation of an unconnected input\. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\)\. 
 

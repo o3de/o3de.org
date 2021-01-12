@@ -11,6 +11,6 @@ To create dynamic daytime sky atmospheric effects, you modify sun and light\-sca
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Time Of Day**\.
 
-1. In the **Parameters** pane, for **Sky Light**, adjust the [Sky Light Parameters](sky-tod-parameters.md#sky-light-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Sky Light**, adjust the [Sky Light Parameters](/docs/userguide/sky/tod-parameters.md#sky-light-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.

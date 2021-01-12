@@ -33,7 +33,7 @@ Each game project must explicitly list the gems that it uses\. When [Using the W
 
 All gems that ship with Lumberyard are built as AZ modules\. When you build a gem as an AZ module, the gem uses the initialization functions expected by the AZ framework\. An AZ module gem has public interfaces that are [event buses](/docs/userguide/programming/ebus/intro.md) and is better integrated with the new [component entity system](/docs/userguide/components/intro.md)\.
 
-When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](az-module-system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date: 
+When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](/docs/userguide/modules/system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date: 
 
 ```
 dev\Tools\LmbrSetup\Win\lmbr.exe projects populate-appdescriptors

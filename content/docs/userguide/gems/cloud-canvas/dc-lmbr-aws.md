@@ -14,7 +14,7 @@ The following `lmbr_aws` CLI commands are enabled by the Dynamic Content Cloud G
 
 Add a given file to the specified `.pak` file\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <file_name>`
 
   File entry to add\.
@@ -34,7 +34,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Adds a file to the content manifest for the project\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   The name of the file, including the local directory \(for example, `staticdata/csv/gameproperties.csv`, where local directory is `staticdata/csv/`\.
@@ -60,7 +60,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Add a new pak entry to the manifest\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -77,7 +77,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Create `.pak` files based on manifest files which have changed\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--all`
 
   \(Optional\) Upload all `.pak` files regardless of the results of the file check\.
@@ -91,7 +91,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Empty the bucket and table content\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--all-versions`
 
   \(Optional\) Remove all versions of the manifest and pak files\.
@@ -106,7 +106,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Compares manifest content to the bucket by checking HEAD metadata\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -122,7 +122,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Create a new manifest\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-name <manifest_name>` 
 
   Name of the new manifest\.
@@ -139,7 +139,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Generate a new public/private key pair for use by the dynamic content system\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--key-name <key_name>`
 
   The name of the key file to use\.
@@ -148,7 +148,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Lists the manifest files in the content bucket\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -164,7 +164,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 List all versions of a manifest or pak file found in the content bucket\. Returns newest to oldest version based on uploaded date\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   \(Optional\) Name of the manifest or pak file\.
@@ -173,7 +173,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Migrate existing staging settings when content versioning is enabled or suspended\. Existing data should be migrated automatically during the deployment update, so you will only need this command if the deployment fails to update\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--deployment-name <deployment name>`
 
   \(Optional\) Name of the deployment for which staging settings should be migrated\.
@@ -184,7 +184,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Removes a file from the content manifest for the project\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
    Removes a file from the content manifest for the project\. The file removed matches the value for `--file-name` that is specified in the `add-manifest-file` command\.
@@ -198,7 +198,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Requests a URL for the specified file\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--file-path <file_path>`
 
   The file in the bucket\.
@@ -207,7 +207,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Sets the staging status of the specified file\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-path <file_path>`
 
   The file in the bucket\.
@@ -238,7 +238,7 @@ There is a risk of a race condition if the staging status of a file is updated w
 
 List all entries in the content manifest\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   \(Optional\) The file entry \(local directory \+ key\) to show\.
@@ -263,7 +263,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Show the signature which would be created for a specified file\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--file-name <file_name>`
 
   \(Optional\) The filename for which to show the signature\.
@@ -274,9 +274,9 @@ Suspend dynamic content versioning\.
 
 Note that suspending versioning will not revert the versioned S3 bucket to an unversioned state\. Existing objects do not change after the suspension, but the S3 bucket will stop accruing new versions of the same object\.
 
-To resume versioning, follow the instructions to [Enabling dynamic content versioning](cloud-canvas-cloud-gem-dc-updating.md#dynamic-content-versioning-enable) on an existing deployment\.
+To resume versioning, follow the instructions to [Enabling dynamic content versioning](/docs/userguide/gems/cloud-canvas/dc-updating.md#dynamic-content-versioning-enable) on an existing deployment\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--deployment-name <deployment name>`
 
   \(Optional\) Name of the deployment for which versioning should be suspended\.
@@ -290,7 +290,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Tests whether a base64 signature is valid for the specified string\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--signature <signature>`
 
   Base64 encoded signature\.
@@ -302,7 +302,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Updates the manifest with current file hashes\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -313,7 +313,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Update the target operating system of a manifest file\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -327,7 +327,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
 
 Updates the manifest and uploads changed manifest content to the content bucket\.
 
-In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -356,7 +356,7 @@ In addition to the [Common Arguments](cloud-canvas-command-line.md#cloud-canvas-
   Defaults to no signature\.
 + `--invalidate-existing-files`
 
-  \(Optional\) Invalidate existing files with the same name in the CloudFront edge cache\. Only effective if dynamic content is delivered via CloudFront\. For details on using this service with dynamic content, see the topic on [Using Amazon CloudFront](cloud-canvas-cloud-gem-dc-engineering.md#cloud-canvas-cloud-gem-dc-engineering-cloudfront)\.
+  \(Optional\) Invalidate existing files with the same name in the CloudFront edge cache\. Only effective if dynamic content is delivered via CloudFront\. For details on using this service with dynamic content, see the topic on [Using Amazon CloudFront](/docs/userguide/gems/cloud-canvas/dc-engineering.md#cloud-canvas-cloud-gem-dc-engineering-cloudfront)\.
 
   Defaults to no invalidation\.
 + `--replace`

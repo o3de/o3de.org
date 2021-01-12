@@ -4,17 +4,18 @@ title: Set up your environment to develop for Android with &ALY;
 ---
 # Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>
 
- This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](android-intro.md#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md) and [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)\. 
+ This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro.md#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md) and [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)\. 
 
 **Topics**
-+ [Lumberyard environment setup](#android-setting-up-environment-steps)
-+ [Add Android tools to `PATH`](#android-setting-up-path)
-+ [Build system setup](#android-setting-build-system)
-+ [Next steps](#android-setting-up-next-steps)
+- [Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>](#set-up-your-environment-to-develop-for-android-with-lumberyard)
+  - [Lumberyard environment setup<a name="android-setting-up-environment-steps"></a>](#lumberyard-environment-setup)
+  - [Add Android tools to `PATH`<a name="android-setting-up-path"></a>](#add-android-tools-to-path)
+  - [Build system setup<a name="android-setting-build-system"></a>](#build-system-setup)
+  - [Next steps<a name="android-setting-up-next-steps"></a>](#next-steps)
 
 ## Lumberyard environment setup<a name="android-setting-up-environment-steps"></a>
 
- After you've [installed the prerequisites](android-intro.md#android-prerequisites), configure your Lumberyard installation to allow Android builds\. 
+ After you've [installed the prerequisites](/docs/userguide/mobile/android/intro.md#android-prerequisites), configure your Lumberyard installation to allow Android builds\. 
 
 **To allow Android builds**
 

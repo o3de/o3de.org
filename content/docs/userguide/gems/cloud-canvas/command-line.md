@@ -106,7 +106,7 @@ From a command prompt window on the `\dev\Tools\LmbrSetup\Win` directory, enter 
     Define a resource group that has a Lambda function resource\.
   + `no-resources` 
 
-    Define a resource group that has no resources \(except [AccessControl](cloud-canvas-setting-access-permissions.md#cloud-canvas-setting-access-permissions-access-control), which is required\)\. This is the default value\.
+    Define a resource group that has no resources \(except [AccessControl](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md#cloud-canvas-setting-access-permissions-access-control), which is required\)\. This is the default value\.
   + `resource-manager-plugin` 
 
     Define a resource manager plugin\.
@@ -425,7 +425,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   This command saves its configuration in a `player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
 **Note**  
-You must run `project upload` after running this command so that the [PlayerAccessIdentityPool](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+You must run `project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
 
 #### login\-provider remove<a name="cloud-canvas-command-line-login-provider-remove"></a>
 
@@ -438,7 +438,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   The `login-provider remove` command saves the configuration in a `/player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
 **Note**  
-You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
 
 #### login\-provider update<a name="cloud-canvas-command-line-login-provider-update"></a>
 
@@ -472,7 +472,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   The `login-provider update` command saves its configuration in a `/player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
 **Note**  
-You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
 
 ### `mappings` Commands<a name="cloud-canvas-command-line-mappings-commands"></a>
 
@@ -504,12 +504,12 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   Optional\. Causes the release mappings to be updated\. By default, only the mappings used when launching the game from inside the editor are updated\.
 
-  The command looks in the [resource\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-resource-template) file for `Metadata.CloudCanvas.PlayerAccess` properties on resource definitions\. It then queries AWS CloudFormation for the physical names of those resources in the current default deployment\. If the `--release` argument is specified, the release deployment is queried\. 
+  The command looks in the [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template) file for `Metadata.CloudCanvas.PlayerAccess` properties on resource definitions\. It then queries AWS CloudFormation for the physical names of those resources in the current default deployment\. If the `--release` argument is specified, the release deployment is queried\. 
 + `--deployment {deployment-name}` or `-d {deployment-name}`
 
   Optional\. Exports client and server mapping files for the specified deployment to the `\dev\project_name\Config` directory in the format `{deployment_name}.player.awsLogicalMappings.json` and `{deployment_name}.server.awsLogicalMappings.json`\. The `{deployment-name}` argument is required and is case\-sensitive\.
 
-  When you run a game launcher such as the one at `dev\Bin64vcNNN\CloudGemSamplesLauncher.exe`, you can use the `-cc_override_resource_map {mappings-name}` argument to choose the mapping\. For more information, see [Selecting a Deployment with a PC Launcher](cloud-canvas-testing-different-mappings.md#cloud-canvas-testing-different-mappings-selecting-a-deployment-pc-launcher)\.
+  When you run a game launcher such as the one at `dev\Bin64vcNNN\CloudGemSamplesLauncher.exe`, you can use the `-cc_override_resource_map {mappings-name}` argument to choose the mapping\. For more information, see [Selecting a Deployment with a PC Launcher](/docs/userguide/gems/cloud-canvas/testing-different-mappings.md#cloud-canvas-testing-different-mappings-selecting-a-deployment-pc-launcher)\.
 
 ### `parameter` Commands<a name="cloud-canvas-command-line-parameter-commands"></a>
 
@@ -587,7 +587,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
 #### profile default<a name="cloud-canvas-command-line-profile-default"></a>
 
-Set, clear, or show the default AWS profile\. The `profile default` command modifies the `DefaultProfile` section of the `[user\-settings\.json](cloud-canvas-resource-definitions.md#cloud-canvas-user-settings)` file\. As of Lumberyard 1\.15, the [Cloud Canvas cleanup tool](cloud-canvas-administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-tool) uses this setting to determine the AWS profile to use\.
+Set, clear, or show the default AWS profile\. The `profile default` command modifies the `DefaultProfile` section of the `[user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-user-settings)` file\. As of Lumberyard 1\.15, the [Cloud Canvas cleanup tool](/docs/userguide/gems/cloud-canvas/administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-tool) uses this setting to determine the AWS profile to use\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `profile default` command accepts the following arguments:
 + `--set {profile-name}`
@@ -679,9 +679,9 @@ The `project create` command performs the following tasks:
 
 ****
 
-1. Creates the project's AWS CloudFormation stack using a bootstrap template that defines only the [Configuration Bucket](cloud-canvas-resource-deployments.md#cloud-canvas-configuration-bucket) resource\.
+1. Creates the project's AWS CloudFormation stack using a bootstrap template that defines only the [Configuration Bucket](/docs/userguide/gems/cloud-canvas/resource-deployments.md#cloud-canvas-configuration-bucket) resource\.
 
-1. Uploads the [project\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-project-template) file and the zipped up contents of the [project\-code subdirectory](cloud-canvas-resource-definitions.md#cloud-canvas-project-code-subdirectory) to the [Configuration Bucket](cloud-canvas-resource-deployments.md#cloud-canvas-configuration-bucket)\.
+1. Uploads the [project\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-template) file and the zipped up contents of the [project\-code subdirectory](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-code-subdirectory) to the [Configuration Bucket](/docs/userguide/gems/cloud-canvas/resource-deployments.md#cloud-canvas-configuration-bucket)\.
 
 1. Uses the uploaded `project-template.json` file to perform an AWS CloudFormation stack update operation\. The `project-code.zip` file is used to create the Lambda function resources defined by the `project-template.json` file\.
 
@@ -718,7 +718,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   AWS CloudFormation cannot delete stacks that define Amazon S3 buckets that contain data\. To allow project stacks to be deleted, the `project-template.json` file specifies a `DeletionPolicy` of `Retain` for the configuration bucket\. This causes AWS CloudFormation to not delete the bucket when the project stack is deleted\. After the project stack has been deleted, the command removes all the objects from the configuration bucket and then deletes the bucket\.
 
 **Note**  
-Before you use the `project delete` command, ensure that the default AWS credentials specified by the `~/.aws/credentials` file on the local file system are the same as the credentials that are specified in the Cloud Canvas **Credentials Manager**\. If the credentials are not the same, the project might not delete properly\. You can use the [Cloud Canvas Cleanup Tool](cloud-canvas-administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool) to remove orphaned resources after a failed project stack deletion\.
+Before you use the `project delete` command, ensure that the default AWS credentials specified by the `~/.aws/credentials` file on the local file system are the same as the credentials that are specified in the Cloud Canvas **Credentials Manager**\. If the credentials are not the same, the project might not delete properly\. You can use the [Cloud Canvas Cleanup Tool](/docs/userguide/gems/cloud-canvas/administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool) to remove orphaned resources after a failed project stack deletion\.
 
 #### project list\-resources<a name="cloud-canvas-command-line-project-list-resources"></a>
 
@@ -740,7 +740,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
 The project update command performs the following tasks:
 
-1. Uploads the [project\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-project-template) file and the zipped up contents of the [project\-code subdirectory](cloud-canvas-resource-definitions.md#cloud-canvas-project-code-subdirectory) to the [Configuration Bucket](cloud-canvas-resource-deployments.md#cloud-canvas-configuration-bucket)\.
+1. Uploads the [project\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-template) file and the zipped up contents of the [project\-code subdirectory](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-code-subdirectory) to the [Configuration Bucket](/docs/userguide/gems/cloud-canvas/resource-deployments.md#cloud-canvas-configuration-bucket)\.
 
 1. Uses the uploaded `project-template.json` file to perform an AWS CloudFormation stack update operation\. The `project-code.zip` file is used to create the Lambda function resources defined by the `project-template.json` file\.
 
@@ -762,7 +762,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   Optional\. Confirms that you know that this command may make security\-related changes\. Specify this argument to disable the related confirmation prompt\.
 
-For more information, see [ Applying Framework Updates to a Project](cloud-canvas-cgf-rm-versioning.md#cloud-canvas-cgf-rm-versioning-applying-framework-updates)\.
+For more information, see [ Applying Framework Updates to a Project](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md#cloud-canvas-cgf-rm-versioning-applying-framework-updates)\.
 
 ### `resource-group` Commands<a name="cloud-canvas-command-line-resource-group-commands"></a>
 

@@ -10,7 +10,7 @@ In the example in the following image, a **Talker** entity has been created that
 
 ![\[Talker entity with Animation Editor components\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-emotionfx-1.png)
 
-Lumberyard uses a simple [animation graph](char-animation-editor-concepts-and-terms.md#understanding-animation-graphs) that blends simple motion and idle animation with the output of a state machine\. The animation graph transitions from state to state and animation pose to animation pose to match the current viseme that is read from the speech marks file\.
+Lumberyard uses a simple [animation graph](/docs/userguide/animation/character-editor/concepts-and-terms.md#understanding-animation-graphs) that blends simple motion and idle animation with the output of a state machine\. The animation graph transitions from state to state and animation pose to animation pose to match the current viseme that is read from the speech marks file\.
 
 ![\[Animation graph\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-emotionfx-2.png)
 

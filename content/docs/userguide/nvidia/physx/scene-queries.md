@@ -46,7 +46,7 @@ WorldRequestBus::BroadcastResult(result, &WorldRequests::RayCastMultiple, reques
 ```
 
 **Note**  
-You can specify the maximum number of hits that can be collected from a `RayCastMultiple` query\. You can specify the **RayCast Buffer Size** property in the **PhysX Configuration** window\. For more information, see [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\.
+You can specify the maximum number of hits that can be collected from a `RayCastMultiple` query\. You can specify the **RayCast Buffer Size** property in the **PhysX Configuration** window\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\.
 
 The following tables describe the properties for the `RayCastRequest` and `RayCastHit` objects\.
 
@@ -104,7 +104,7 @@ WorldRequestBus::BroadcastResult(results, &WorldRequests::ShapeCastMultiple, req
 ```
 
 **Note**  
-You can specify the maximum number of hits that can be collected from a `ShapeCastMultiple` query\. You can specify the **Shapecast Buffer Size** value in the **PhysX Configuration** window\. For more information, see [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\.
+You can specify the maximum number of hits that can be collected from a `ShapeCastMultiple` query\. You can specify the **Shapecast Buffer Size** value in the **PhysX Configuration** window\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\.
 
 
 **ShapeCastRequest Properties**  
@@ -137,7 +137,7 @@ WorldRequestBus::BroadcastResult(results, &WorldRequests::Overlap, request);
 ```
 
 **Note**  
-You can specify the maximum number of hits that can be collected from a `Overlap` query\. You can specify the **Overlap Query Buffer Size** value in the **PhysX Configuration** window\. For more information, see [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\.
+You can specify the maximum number of hits that can be collected from a `Overlap` query\. You can specify the **Overlap Query Buffer Size** value in the **PhysX Configuration** window\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\.
 
 
 **OverlapRequest Properties**  

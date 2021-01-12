@@ -16,7 +16,7 @@ Amazon GameLift splits sessions between client and server, but Lumberyard does n
 
 ## Waf Build Configuration<a name="network-dedicated-server-waf-build-configuration"></a>
 
-To generate a dedicated server build that you can use locally or upload to Amazon GameLift, attach the `_dedicated` label to your build configuration in Waf\. For more information on using Waf to set up the dedicated server, see [Creating a Dedicated Server](sample-project-multiplayer-enhanced.md#sample-project-multiplayer-enhanced-creating-a-dedicated-server)\. The topic is part of the [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md), which includes an example of a dedicated server\.
+To generate a dedicated server build that you can use locally or upload to Amazon GameLift, attach the `_dedicated` label to your build configuration in Waf\. For more information on using Waf to set up the dedicated server, see [Creating a Dedicated Server](/docs/userguide/samples/projects/multiplayer-enhanced.md#sample-project-multiplayer-enhanced-creating-a-dedicated-server)\. The topic is part of the [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md), which includes an example of a dedicated server\.
 
 ## Linux Support<a name="network-dedicated-server-linux-support"></a>
 

@@ -37,7 +37,7 @@ As a best practice, when you scale a shape, adjust the shape component's propert
 ![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/userguide/component/component-shape-scaling-2.png)
 
 **Tip**  
-Modify the shape component's properties instead using the [Scale tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/userguide/components/transform.md)** component\. 
+Modify the shape component's properties instead using the [Scale tool](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/userguide/components/transform.md)** component\. 
 
 **Example**  
 See the following examples for the different scaling:  

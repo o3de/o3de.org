@@ -76,7 +76,7 @@ In the `ServiceLambdaConfiguration` section, under `Properties`, add a `Services
 **Note**  
 If you expect the Web Communicator to be continuously available, set the `Optional` property to `False`\.
 
-For more information, see the [Using an Interface](cloud-canvas-cgf-service-api-cross-gem-communication.md#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface) section of the cross\-gem communication topic\.
+For more information, see the [Using an Interface](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface) section of the cross\-gem communication topic\.
 
 ## 3\. Send the Lambda Request from Your Service<a name="cloud-canvas-cloud-gem-web-communicator-creating-send-the-lambda-request-from-your-service"></a>
 

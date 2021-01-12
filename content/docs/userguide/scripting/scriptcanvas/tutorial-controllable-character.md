@@ -18,18 +18,19 @@ In addition to node basics, input, movement, and logging, you learn the followin
 + Adding action nodes
 
 ## Prerequisites<a name="script-canvas-tutorial-controllable-character-prerequisites"></a>
-+ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects)\.
++ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
 + If your **Node Palette** is missing nodes, you can update your preferences to show hidden nodes\. For more information, see [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)\. 
 + To access diagnostic nodes, including the **Print** node, you must enable the **Script Canvas Diagnostic Library** gem and then build your game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Topics**
-+ [Prerequisites](#script-canvas-tutorial-controllable-character-prerequisites)
-+ [Step 1: Create a Level](#script-canvas-tutorial-controllable-character-step-one)
-+ [Step 2: Create an Entity and Add Components to Create a Controllable Entity](#script-canvas-tutorial-controllable-character-step-two)
-+ [Step 3: Create an Input Script with Script Canvas](#script-canvas-tutorial-controllable-character-step-three)
-+ [Step 4: Assign the Script to Your Entity and Test the Script](#script-canvas-tutorial-controllable-character-step-four)
-+ [Step 5: Create a Script to Move Your Sphere](#script-canvas-tutorial-controllable-character-step-five)
-+ [Step 6: Add Movement on the X\-Axis for Your Sphere](#script-canvas-tutorial-controllable-character-step-six)
+- [Script Canvas Tutorial: Creating a Controllable Entity<a name="script-canvas-tutorial-controllable-character"></a>](#script-canvas-tutorial-creating-a-controllable-entity)
+  - [Prerequisites<a name="script-canvas-tutorial-controllable-character-prerequisites"></a>](#prerequisites)
+  - [Step 1: Create a Level<a name="script-canvas-tutorial-controllable-character-step-one"></a>](#step-1-create-a-level)
+  - [Step 2: Create an Entity and Add Components to Create a Controllable Entity<a name="script-canvas-tutorial-controllable-character-step-two"></a>](#step-2-create-an-entity-and-add-components-to-create-a-controllable-entity)
+  - [Step 3: Create an Input Script with Script Canvas<a name="script-canvas-tutorial-controllable-character-step-three"></a>](#step-3-create-an-input-script-with-script-canvas)
+  - [Step 4: Assign the Script to Your Entity and Test the Script<a name="script-canvas-tutorial-controllable-character-step-four"></a>](#step-4-assign-the-script-to-your-entity-and-test-the-script)
+  - [Step 5: Create a Script to Move Your Sphere<a name="script-canvas-tutorial-controllable-character-step-five"></a>](#step-5-create-a-script-to-move-your-sphere)
+  - [Step 6: Add Movement on the X\-Axis for Your Sphere<a name="script-canvas-tutorial-controllable-character-step-six"></a>](#step-6-add-movement-on-the-x-axis-for-your-sphere)
 
 ## Step 1: Create a Level<a name="script-canvas-tutorial-controllable-character-step-one"></a>
 
@@ -61,7 +62,7 @@ To create a sphere that you can control with keyboard input, you create an entit
    1. In the **Mesh** component, for **Mesh asset**, click the browse \(**\.\.\.**\) button, select the `\SamplesProject\Objects\default\primitive_sphere.cgf` file and then click **OK**\.  
 ![\[Select the sphere asset for the Mesh component.\]](/images/userguide/scripting/script-canvas/pick-static-mesh-window-primitive-sphere.png)
 
-1. In the viewport, use the [**Move** tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode) to select the z\-axis and move the entity off the ground\.
+1. In the viewport, use the [**Move** tool](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode) to select the z\-axis and move the entity off the ground\.
 
 1. In the **Entity Inspector**, click **Add Component** and then add the following components:
    + **Rigid Body Physics**
@@ -149,7 +150,7 @@ You can also access the list of nodes by right\-clicking in an empty area on the
 **Note**  
 Node execution always flows from the left side to the right side of a node\. 
 Data is always input on the left side of a node and output from the right side of the node\.   
-For more information, see [Inputs, Outputs, and Connection Types](script-canvas-nodes-understanding.md#script-canvas-pins-and-connections)\.
+For more information, see [Inputs, Outputs, and Connection Types](/docs/userguide/scripting/scriptcanvas/nodes-understanding.md#script-canvas-pins-and-connections)\.
 
 1. Verify that your `player.scriptcanvas` file looks like the following\.  
 ![\[Example Input Handler and Print nodes in Script Canvas.\]](/images/userguide/scripting/script-canvas/input-handler-log-script-canvas-example.png)

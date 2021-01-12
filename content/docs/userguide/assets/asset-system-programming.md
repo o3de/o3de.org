@@ -8,11 +8,7 @@ title: Programming the &ALY; AZCore Runtime Asset System
 The Lumberyard Editor and Lumberyard runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.
 
 **Note**  
-<<<<<<< Updated upstream:content/docs/userguide/assets/asset-system-programming.md
-For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
-=======
 For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
->>>>>>> Stashed changes:content/docs/userguide/asset-pipeline-asset-system-programming.md
 
 ## Asset System Classes<a name="asset-pipeline-asset-system-programming-asset-system-classes"></a>
 

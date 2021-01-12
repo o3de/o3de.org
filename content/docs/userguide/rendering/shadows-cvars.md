@@ -108,7 +108,7 @@ Changes that you make to CVARs within the console do not automatically save in y
 
 **To save console variable changes**
 + Do one of the following:
-  + Edit and save one of the console variable configuration files\. For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.
+  + Edit and save one of the console variable configuration files\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
   + In a Lua script, use the following syntax to assign a value to the variable at startup:
 
     ```

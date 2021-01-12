@@ -18,9 +18,9 @@ The **UI Editor** **Preview** consists of the following:
 
 1. **Viewport** – Display of the UI canvas as it would appear at the selected resolution\. 
 
-1. [**Animation List**](ui-editor-previewing-behavior.md#animation-list-pane) – List of the animation sequences in the canvas, which you can control using the playback toolbar\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
+1. [**Animation List**](/docs/userguide/ui/editor/previewing-behavior.md#animation-list-pane) – List of the animation sequences in the canvas, which you can control using the playback toolbar\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
 
-1. [**Action Log**](ui-editor-previewing-behavior.md#action-log) – Record of actions triggered by the canvas's interactable elements\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
+1. [**Action Log**](/docs/userguide/ui/editor/previewing-behavior.md#action-log) – Record of actions triggered by the canvas's interactable elements\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-preview-overview.png)
 

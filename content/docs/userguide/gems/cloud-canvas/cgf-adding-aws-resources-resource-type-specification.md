@@ -128,7 +128,7 @@ Optional\. Contains the metadata configuration information for an instance of th
 | Item | Description | 
 | --- | --- | 
 | <action>  | Specifies an [IAM action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html) that instances of the resource type are permitted to have in the role that is created for them\. Wildcards are permitted\. | 
-| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](cloud-canvas-built-in-roles-and-policies.md#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. | 
+| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. | 
 
 ### ArnFormat<a name="cloud-canvas-cgf-adding-aws-resources-arnformat"></a>
 

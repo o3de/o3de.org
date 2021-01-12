@@ -4,7 +4,7 @@ title: Data types in serialized JSON
 ---
 # Data types in serialized JSON<a name="serialization-json-data-types"></a>
 
- In addition to primitive C\+\+ types that map directly to JSON types, Lumberyard supports serializing many `AZStd` library objects\. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type\. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](serialization-json-serialize-deserialize.md#serialization-json-serialize)\. 
+ In addition to primitive C\+\+ types that map directly to JSON types, Lumberyard supports serializing many `AZStd` library objects\. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type\. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize.md#serialization-json-serialize)\. 
 
  This topic is a reference of the types supported by Lumberyard serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C\+\+ types\. 
 
@@ -32,7 +32,7 @@ Deserialization can be conducted from any primitive JSON type to these C\+\+ typ
 
 ## Enums<a name="serialization-json-data-types-enums"></a>
 
- In order to serialize enums, they need to be [registered](serialization-register-objects.md#serialization-register-objects-enums) with the same serialization context as the class being serialized\. How values from an enum are serialized and deserialized depend on the details of the enum registration\. 
+ In order to serialize enums, they need to be [registered](/docs/userguide/programming/serialization/register-objects.md#serialization-register-objects-enums) with the same serialization context as the class being serialized\. How values from an enum are serialized and deserialized depend on the details of the enum registration\. 
 + **Enum value matches the value of a registered field** – The value is serialized as a string containing the field name\.
 + **Enum value can't be represented as ORed registered values** – The value is serialized as an integer\.
 +  **Enum value can be represented as ORed registered values** – The value is serialized to an array containing strings of the field names that were ORed together\. 

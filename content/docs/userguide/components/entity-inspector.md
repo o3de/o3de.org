@@ -28,7 +28,7 @@ Use the **Entity Inspector** to do the following:
 + [Set the entity status](/docs/userguide/components/entity-inspector-status.md)
 + [Customize the entity icon](/docs/userguide/components/entity-inspector-customize-icon.md)
 + [Pin an entity's inspector](/docs/userguide/components/entity-inspector-pin.md)
-+ [Create your own help topic for your custom component](editing-component-properties.md#component-entity-inspector-help)
++ [Create your own help topic for your custom component](/docs/userguide/editing-component-properties.md#component-entity-inspector-help)
 
 **Note**  
 For a list and descriptions of available components, see [Component Reference](/docs/userguide/components/components.md)\. You can also click the **Help** icon ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/entity-inspector-help.png) in the header of each component to open a help topic\.

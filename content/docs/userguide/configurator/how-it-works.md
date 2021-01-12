@@ -41,7 +41,7 @@ When you create a new project in the Project Configurator, several things happen
   `lumberyard_version\dev\NewProjectName`
 + The `EmptyTemplate` is replaced in both new directories with the name of your new project, including file names and file contents\.
 
-For more information about templates, see [Project Templates](configurator-projects.md#project-configurator-templates)\.
+For more information about templates, see [Project Templates](/docs/userguide/configurator/projects.md#project-configurator-templates)\.
 
 ## Enable or Disable Gems<a name="configurator-debugging-enable-disable-gems"></a>
 
@@ -52,7 +52,7 @@ For more information, see [Enabling Gems](/docs/userguide/gems/using-project-con
 + Disabling a gem removes that gem name from the list in `gems.json`\. 
 + Enabling or disabling a gem updates the `Editor.xml` and `Game.xml` files\. You can find these files in the `lumberyard_version\dev\Game_Project\Config` directory\. These files tell Lumberyard to load the required `.dll` files for the gems that you specify\.
 **Note**  
-The `Editor.xml` and `Game.xml` files are only updated when you enable or disable gems where `"LinkType":"Dynamic"` in the `gem.json` file\. For more information, see [Gem JSON File](gems-system-structure.md#gem-json-file)\.
+The `Editor.xml` and `Game.xml` files are only updated when you enable or disable gems where `"LinkType":"Dynamic"` in the `gem.json` file\. For more information, see [Gem JSON File](/docs/userguide/gems/structure.md#gem-json-file)\.
 
 ## Create a New Gem<a name="configurator-debugging-create-new-gem"></a>
 

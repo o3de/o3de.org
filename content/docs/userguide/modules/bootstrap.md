@@ -4,7 +4,7 @@ title: The AZ Bootstrapping Process
 ---
 # The AZ Bootstrapping Process<a name="az-module-bootstrap"></a>
 
-An AZ framework application initializes modules based on the dynamic libraries listed in the [application descriptor file](az-module-system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files), and the static libraries referenced from the `CreateStaticModules()` function\. 
+An AZ framework application initializes modules based on the dynamic libraries listed in the [application descriptor file](/docs/userguide/modules/system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files), and the static libraries referenced from the `CreateStaticModules()` function\. 
 
  When an `AzFramework::Application` starts, the following order of events takes place: 
 

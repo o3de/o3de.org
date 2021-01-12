@@ -36,7 +36,7 @@ Valid values: 0 – 4
 + Specify the value for the `r_AlphaBlendLayerCount` console variable
 + Specify the value for the `level.cfg` file in the `lumberyard_version\dev\project_name\Levels\level_name` directory\.
 
-For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.
+For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
 
 OIT requires the following:
 + Hardware requirements: DirectX 12\_1 feature level compatible graphics card \(NVIDIA Maxwell & Pascal, 4th generation Intel core processors\)\.

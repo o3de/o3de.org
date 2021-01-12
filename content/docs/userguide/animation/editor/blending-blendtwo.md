@@ -35,7 +35,7 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
 
 ## Blend Two Node Attributes<a name="animation-editor-blending-blendtwo-attributes"></a>
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](animation-editor-blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
 
 The **Extraction Mode** for the **Blend Two** node is calculated as follows\.
 + `S` = Source transform delta

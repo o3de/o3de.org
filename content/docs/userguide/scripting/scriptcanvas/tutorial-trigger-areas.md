@@ -66,7 +66,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. Click **Add Component** and then choose the **[Trigger Area](/docs/userguide/components/triggerarea.md)** component\.
 
-   1. With the [**Move** tool](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode), adjust the **Door Trigger** entity so that its Z position fits the **Door Mesh** entity\.
+   1. With the [**Move** tool](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode), adjust the **Door Trigger** entity so that its Z position fits the **Door Mesh** entity\.
 
    1. In the **Trigger Area** component, click **Add Required Component** and choose **Box Shape**\.
 

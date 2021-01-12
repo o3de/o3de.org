@@ -19,7 +19,7 @@ As a best practice, verify that your bundles contain their required assets durin
 
 ## When You Start<a name="asset-bundler-assets-verifying-as-you-start"></a>
 
-As you start building your game, ensure that you create the references to assets that your product requires at runtime\. For information about how to emit product dependencies for your custom asset types, see the [Declare Product Dependencies](asset-builder-custom.md#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md) page\.
+As you start building your game, ensure that you create the references to assets that your product requires at runtime\. For information about how to emit product dependencies for your custom asset types, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom.md#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md) page\.
 
 ## While You Develop Your Game<a name="asset-bundler-assets-verifying-as-you-develop-your-game"></a>
 
@@ -42,10 +42,10 @@ After you've generated bundles for your game, test your game in bundle mode with
 As with development builds, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to find missing asset files in release builds\. For more information, see [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)\.
 
 **Topics**
-+ [When You Start](#asset-bundler-assets-verifying-as-you-start)
-+ [While You Develop Your Game](#asset-bundler-assets-verifying-as-you-develop-your-game)
-+ [In Development Builds](#asset-bundler-assets-verifying-in-development-builds)
-+ [In Release Builds](#asset-bundler-assets-verifying-in-release-builds)
-+ [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md)
-+ [Using the Asset Validation Gem to Verify Seeds](/docs/userguide/assets/bundle/asset-validation-gem.md)
-+ [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)
+- [Verifying that Bundles Contain Required Assets<a name="asset-bundler-assets-verifying"></a>](#verifying-that-bundles-contain-required-assets)
+  - [When You Start<a name="asset-bundler-assets-verifying-as-you-start"></a>](#when-you-start)
+  - [While You Develop Your Game<a name="asset-bundler-assets-verifying-as-you-develop-your-game"></a>](#while-you-develop-your-game)
+    - [Before You Build a Seed List<a name="asset-bundler-assets-verifying-before-you-have-a-seed-list"></a>](#before-you-build-a-seed-list)
+    - [After You Have a Seed List<a name="asset-bundler-assets-verifying-after-you-have-a-seed-list"></a>](#after-you-have-a-seed-list)
+  - [In Development Builds<a name="asset-bundler-assets-verifying-in-development-builds"></a>](#in-development-builds)
+  - [In Release Builds<a name="asset-bundler-assets-verifying-in-release-builds"></a>](#in-release-builds)

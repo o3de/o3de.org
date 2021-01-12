@@ -309,7 +309,7 @@ Connect to the `CloudGemDefectReporterNotificationBus` to handle defect reportin
 
 ### OnCollectDefectReporterData<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-oncollectdefectreporterdata"></a>
 
-Called when the handler is requested to start collecting defect data and report it to the defect reporter\. For more information, see [Defect Reporter and Handler Workflow](cloud-canvas-cloud-gem-defect-reporter-handler-writing.md#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow)\.
+Called when the handler is requested to start collecting defect data and report it to the defect reporter\. For more information, see [Defect Reporter and Handler Workflow](/docs/userguide/gems/cloud-canvas/defect-reporter-handler-writing.md#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow)\.
 
 Available for scripting: Yes
 

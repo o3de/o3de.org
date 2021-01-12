@@ -13,7 +13,7 @@ To enable toon shading, use the console to specify the console variable \(CVAR\)
 
 Valid values: 0 – 1
 
-For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.
+For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
 
 The following example level does not have toon shading enabled \(`r_AlphaBlendLayerCount=0`\)\.
 

@@ -29,7 +29,7 @@ To create a Wwise sound project and its associated directories, you use the Wwis
 
 **To create a Wwise sound project**
 
-1. [Run the Wwise LTX tool](audio-wwise-using.md#audio-setting-wwise-authoring-tool)\.
+1. [Run the Wwise LTX tool](/docs/userguide/audio/wwise-using.md#audio-setting-wwise-authoring-tool)\.
 
 1. In the **Project Launcher** dialog box, click **New**\.  
 ![\[Click new\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-1.png)

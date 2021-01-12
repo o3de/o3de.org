@@ -75,7 +75,7 @@ The `generate-service-api-code` command accepts the following arguments:
   }
   ```
 
-For more information about the `generate-service-api-code` command, see [Generating a Game Client](cloud-canvas-cgf-service-api-game-clients.md#cloud-canvas-cgf-service-api-game-clients-generating) and [Getting Started with the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-getting-started.md) For more information about Waf, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
+For more information about the `generate-service-api-code` command, see [Generating a Game Client](/docs/userguide/gems/cloud-canvas/cgf-service-api-game-clients.md#cloud-canvas-cgf-service-api-game-clients-generating) and [Getting Started with the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-getting-started.md) For more information about Waf, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
 ### open\-cloud\-gem\-portal, open\-portal, cloud\-gem\-portal<a name="cloud-canvas-command-line-cgf-open-cloud-gem-portal"></a>
 

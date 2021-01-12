@@ -9,7 +9,7 @@ Adding the Twitch Chat Gem to your project enables you to connect to the Twitch 
 
 Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.
 
-For gem setup steps, read the [Twitch Chat Gem](/docs/userguide/gems/builtin/chatplay/_index.md) documentation\.
+For gem setup steps, read the [Twitch Chat Gem](/docs/userguide/gem-twitch-chatplay.md) documentation\.
 
 ## Gem Usage<a name="chatplay-gem-usage"></a>
 

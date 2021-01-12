@@ -11,11 +11,11 @@ When managing memory in Lumberyard, use AZ memory management calls and avoid sta
 When allocating memory, use the following recommended practices:
 + Do not use `new`, `malloc`, and similar allocators directly\. Instead, use AZ memory manager calls to `aznew`, `azmalloc`, `azfree`, `azcreate`, and `azdestroy`\.
 + Specify the allocator in each class\.
-+ Use child allocators\. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator\. For an example of creating a child allocator, see [Creating an Allocator](memory-allocators.md#memory-allocators-creating-an-allocator)\.
++ Use child allocators\. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator\. For an example of creating a child allocator, see [Creating an Allocator](/docs/userguide/programming/memory/allocators.md#memory-allocators-creating-an-allocator)\.
 
 **Reason**: Lumberyard's core AZ systems provide a memory managed environment, not a raw system allocator like the managed memory in C\# or Java\. In Lumberyard, the core AZ systems provide speed, safety, and facilities for tracking memory usage\.
 
-For information about Lumberyard's scheme for allocators and new allocators, see [Manually Allocating Memory](memory-allocators.md#memory-allocators-manually-allocating-memory)\.
+For information about Lumberyard's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators.md#memory-allocators-manually-allocating-memory)\.
 
 ## Memory Issues Caused by Static Variables<a name="cpp-best-practices-lumberyard-memory-issues-caused-by-static-variables"></a>
 

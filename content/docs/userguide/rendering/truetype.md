@@ -4,7 +4,7 @@ title: TrueType Fonts
 ---
 # TrueType Fonts<a name="graphics-rendering-truetype"></a>
 
-CryFont is used to generate font textures that are required to render text on the screen\. The various features of font rendering can be seen by using the `r_DebugFontRendering` console variable\. For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.
+CryFont is used to generate font textures that are required to render text on the screen\. The various features of font rendering can be seen by using the `r_DebugFontRendering` console variable\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
 
 The output is not only to test the functionality but also to document how the features can be used\.
 
@@ -46,7 +46,7 @@ CryFont supports the following features:
 
 ## Useful Console Commands<a name="graphics-rendering-truetype-cli"></a>
 
-The following console commands provide information about font rendering\. For more information, see [Configuring Console Variables](console-intro.md#configuring-console-variables-cvars)\.
+The following console commands provide information about font rendering\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
 
 **r\_DebugFontRendering**  
 Provides information on various font rendering features, useful for verifying function and documenting usage\.   

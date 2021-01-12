@@ -18,7 +18,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 
 1. After you install the application, open the PVD\. This application must be running if you want to record data from Lumberyard Editor\.
 
-1. In Lumberyard Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](component-physx-rigid-body-physics.md#example-creating-dynamic-game-entity)\.
+1. In Lumberyard Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics.md#example-creating-dynamic-game-entity)\.
 
 1. In Lumberyard Editor, choose **Tools**, **PhysX Configuration**\.
 

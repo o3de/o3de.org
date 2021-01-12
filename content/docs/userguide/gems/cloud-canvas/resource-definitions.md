@@ -11,7 +11,7 @@ Resource definitions for your game project are AWS CloudFormation template files
 
 A description of the resources required by the game is stored in files under the `dev\{game}\AWS` directory, where `dev` is the Lumberyard installation `\dev` subdirectory and *\{game\}* is the directory identified by the `sys_game_folder` property in the \\`dev\bootstrap.cfg` file\. For example, if your game is the Samples Project, your resource definition path might be `C:\lumberyard_version\dev\SamplesProject\AWS`\. These files should be checked into the project's source control system along with your other game code and data\.
 
-The default *\{game\}*`\AWS` directory contents are created by the `lmbr_aws` [project create](cloud-canvas-command-line.md#cloud-canvas-command-line-project-create) command\.
+The default *\{game\}*`\AWS` directory contents are created by the `lmbr_aws` [project create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-project-create) command\.
 
 In addition, some user\-specific configuration data is kept in the `dev\Cache\{game}\{OS}\user\AWS` directory\. The contents of this directory should not be checked into the project's source control system\.
 
@@ -67,16 +67,16 @@ The `dev\<project name>\AWS\local-project-settings.json` file contains a `Projec
 ```
 
 **Note**  
-Prior to Lumberyard 1\.11, the `local-project-settings.json` file kept a list of *enabled* resource groups\. By default, all of a cloud gem's resource groups are enabled when the cloud gem is enabled\. Listing only the disabled resource groups makes it easier to identify them for debugging\. See [resource\-group disable](cloud-canvas-command-line.md#cloud-canvas-command-line-resource-group-disable)\.
+Prior to Lumberyard 1\.11, the `local-project-settings.json` file kept a list of *enabled* resource groups\. By default, all of a cloud gem's resource groups are enabled when the cloud gem is enabled\. Listing only the disabled resource groups makes it easier to identify them for debugging\. See [resource\-group disable](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-group-disable)\.
 
 **Note**  
-As of Lumberyard 1\.8, the `project-settings.json` file is stored in the project's [Configuration Bucket](cloud-canvas-resource-deployments.md#cloud-canvas-configuration-bucket)\. The bucket is defined by the project's AWS CloudFormation stack template\.
+As of Lumberyard 1\.8, the `project-settings.json` file is stored in the project's [Configuration Bucket](/docs/userguide/gems/cloud-canvas/resource-deployments.md#cloud-canvas-configuration-bucket)\. The bucket is defined by the project's AWS CloudFormation stack template\.
 
 ##### ProjectStackId Property<a name="cloud-canvas-local-project-settings-stackid-property"></a>
 
 The `ProjectStackId` property identifies the [AWS CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) for the project\. This stack contains the resources used by Cloud Canvas to manage your Lumberyard project\. Initially, the `ProjectStackId` property is not present in the `local-project-settings.json` file\. After the project stack is created, the `ProjectStackId` property is written to the file and is the project's AWS CloudFormation stack ID \.
 
-The `ProjectStackId` property is set by the [project create](cloud-canvas-command-line.md#cloud-canvas-command-line-project-create) command\. If for some reason you want to associate the project with an existing project stack, you can use the AWS Management Console to look up the stack's ARN and paste it into the `local-project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
+The `ProjectStackId` property is set by the [project create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-project-create) command\. If for some reason you want to associate the project with an existing project stack, you can use the AWS Management Console to look up the stack's ARN and paste it into the `local-project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
 
 #### user\-settings\.json<a name="cloud-canvas-user-settings"></a>
 
@@ -92,7 +92,7 @@ The `DefaultProfile` section of the `user-settings.json` file contains the AWS p
 lmbr_aws profile default --set profile_name
 ```
 
-For more information, see [profile default](cloud-canvas-command-line.md#cloud-canvas-command-line-profile-default)\.
+For more information, see [profile default](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-profile-default)\.
 
 ## Project Template Files<a name="cloud-canvas-project-template-files"></a>
 
@@ -158,7 +158,7 @@ Starting in Lumberyard 1\.10, you can use the following extension files to add r
 
 You can use the extension files to define new outputs, metadata, and resources\. The addition of template parameters is not supported\.
 
-To create extension files, you can use the `lmbr_aws` [project create\-extension\-template](cloud-canvas-command-line.md#cloud-canvas-command-line-project-create-extension-template) command\. To create a template file of a particular type, use the corresponding argument, as the following examples show\.
+To create extension files, you can use the `lmbr_aws` [project create\-extension\-template](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-project-create-extension-template) command\. To create a template file of a particular type, use the corresponding argument, as the following examples show\.
 + To create a `project-template-extensions.json` file, type:
 
   ```

@@ -5,7 +5,7 @@ title: Editing Resource Manager Files
 ---
 # Editing Resource Manager Files<a name="cloud-canvas-ui-rm-text-editing"></a>
 
-The navigation pane in the **Cloud Canvas Resource Manager** dialog contains a number of nodes that represent text files that are stored on disk\. The [resource\-template\.json ](cloud-canvas-ui-rm-json-file-nodes.md#cloud-canvas-ui-rm-resource-template-json) node is one example\. 
+The navigation pane in the **Cloud Canvas Resource Manager** dialog contains a number of nodes that represent text files that are stored on disk\. The [resource\-template\.json ](/docs/userguide/gems/cloud-canvas/ui-rm-json-file-nodes.md#cloud-canvas-ui-rm-resource-template-json) node is one example\. 
 
 The child nodes of template files each represent one section of the parent node template file\. These child nodes can help you locate and edit the resource definition sections of the parent node template file\. 
 

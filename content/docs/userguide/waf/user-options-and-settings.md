@@ -252,7 +252,7 @@ The following settings define whether or not a platform is enabled to build\. Th
 
 #### Android<a name="waf-files-user-settings-platform-specific-options-android"></a>
 
- This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. See [Waf settings](android-reference.md#android-waf-settings)\. 
+ This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. See [Waf settings](/docs/userguide/mobile/android/reference.md#android-waf-settings)\. 
 
 #### iOS<a name="waf-files-user-settings-platform-specific-options-ios"></a>
 

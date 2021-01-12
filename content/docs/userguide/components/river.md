@@ -37,7 +37,7 @@ See the following **River** component properties\.
 | Name | Description | 
 | --- | --- | 
 | Global width | Sets the width of the river\. | 
-| Per\-Vertex Width Modifiers | Modifies the width at a specific vertex that is added to or subtracted from the Global width\. For more information, see [Modifying the River Width](working-with-the-river-component.md#modifying-river-width)\. | 
+| Per\-Vertex Width Modifiers | Modifies the width at a specific vertex that is added to or subtracted from the Global width\. For more information, see [Modifying the River Width](/docs/userguide/working-with-the-river-component.md#modifying-river-width)\. | 
 | Elements | The river's vertices or points\. Specify a positive or negative value for each vertex\. | 
 | Segment length | Length of each segment\. Smaller segment lengths increase the polycount used for the river curvature\. To create a river with smooth corners, specify lower values\. | 
 | Tile length | Length of the river texture\. Adjust this parameter with Segment Length to avoid stretching textures\. | 
@@ -46,7 +46,7 @@ See the following **River** component properties\.
 | Minimum spec | Specifies the minimum system configuration level for the effect\. If the configuration is lower than the set value, the river will not appear\. Choose from Low, Medium, High, VeryHigh, and Never\.Default value: **Low** | 
 | Tile width | Width of the river texture\. | 
 | Depth | Depth of the river\. | 
-| River material | Material file for the river\. For more information, see [Setting River Material Properties](working-with-the-river-component.md#setting-river-material-properties)\. | 
+| River material | Material file for the river\. For more information, see [Setting River Material Properties](/docs/userguide/working-with-the-river-component.md#setting-river-material-properties)\. | 
 | Cap at Depth | If selected, limit fog rendering to the river's bottom\. If deselected, fog continues to render below the specified depth of the river\. | 
 | Density | Specifies how dense the fog appears\. Specify higher values for thicker fog\. | 
 | Color | Color of the fog\. | 
@@ -62,5 +62,5 @@ See the following **River** component properties\.
 | Embankment height | Defines the height of the slopes on the borders of the river\. If the river is at ground level, specify an embankment height to make the river appear to flow\. | 
 | Depth of the river bed | Defines the depth of the ditch beneath the river\. | 
 | River bed width offset | Defines the width of the riverbed relative to the river's width\. A value of 0 makes the riverbed the same width as the river\. A value of \-1 makes the riverbed one meter narrower, and so on\. | 
-| Erase width |  Distance from the river edges in which the vegetation should be removed\. Set the parameter to `0` to remove only vegetation that is on the river\. Specify positive values to remove vegetation in a wider border from the river's edge\. Specify negative values to leave some vegetation within the borders of the river\.  For more information, see [Erasing River Vegetation](working-with-the-river-component.md#erasing-river-vegetation)\.  | 
+| Erase width |  Distance from the river edges in which the vegetation should be removed\. Set the parameter to `0` to remove only vegetation that is on the river\. Specify positive values to remove vegetation in a wider border from the river's edge\. Specify negative values to leave some vegetation within the borders of the river\.  For more information, see [Erasing River Vegetation](/docs/userguide/working-with-the-river-component.md#erasing-river-vegetation)\.  | 
 | Erase variance | Randomizes the removal of vegetation so that the edge looks more natural\. | 

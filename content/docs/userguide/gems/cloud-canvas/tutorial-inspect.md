@@ -31,7 +31,7 @@ You are now successfully signed into the AWS Management Console\.
 
 **To inspect your resources in AWS**
 
-1. Ensure that the AWS region, which appears on the upper\-right of the console screen, is set to the region that you specified when you had Cloud Canvas deploy its resources in [Step 5](cloud-canvas-tutorial.md#cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment) of the tutorial\. This tutorial uses the US East \(N\. Virginia\) Region\.
+1. Ensure that the AWS region, which appears on the upper\-right of the console screen, is set to the region that you specified when you had Cloud Canvas deploy its resources in [Step 5](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment) of the tutorial\. This tutorial uses the US East \(N\. Virginia\) Region\.
 
 1. Do one of the following:
    + In the **AWS services** search box, enter **CloudFormation**, and then click **CloudFormation**\.

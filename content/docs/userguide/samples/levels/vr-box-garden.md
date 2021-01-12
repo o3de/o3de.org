@@ -44,7 +44,7 @@ You can modify the following parameters in the **Spawner** component to affect r
 
 ![\[Spawner component parameters in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-spawner-parameters.png)
 
-For more information, see [Spawner Component Properties](component-spawner.md#component-spawner-properties)\.
+For more information, see [Spawner Component Properties](/docs/userguide/components/spawner.md#component-spawner-properties)\.
 
 To enable triggering spawn events, you can add a **Lua Script** component to the entity with the **Spawner** component attached\. The spawned box uses a dynamic slice called `greybox.slice`\.
 

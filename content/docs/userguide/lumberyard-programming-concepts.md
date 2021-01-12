@@ -7,29 +7,25 @@ title: '&ALY; Programming Concepts and Resources'
 This topic provides brief explanations of some important Lumberyard programming concepts and resources\. More information links are provided\.
 
 **Topics**
-+ [Asset System](#lumberyard-programming-concepts-asset-system)
-+ [AZ Code Generator](#lumberyard-programming-concepts-az-code-generator)
-+ [Building](#lumberyard-programming-concepts-building)
-+ [Cloud Canvas](#lumberyard-programming-concepts-cloud-canvas)
-+ [Debugging](#lumberyard-programming-concepts-debugging)
-+ [EBuses](#lumberyard-programming-concepts-ebuses)
-+ [Entities and Components](#lumberyard-programming-concepts-entities-and-components)
-+ [Gems and AZ Modules](#lumberyard-programming-concepts-gems-and-modules)
-+ [Input](#lumberyard-programming-concepts-input)
-+ [Lua](#lumberyard-programming-concepts-lua)
-+ [Networking](#lumberyard-programming-concepts-networking)
-+ [Reflection System](#lumberyard-programming-concepts-reflection)
-+ [Script Canvas](#lumberyard-programming-concepts-script-canvas)
-+ [Slices](#lumberyard-programming-concepts-slices)
-+ [C\+\+ Best Practices for Amazon Lumberyard](/docs/userguide/programming/best-practices/lumberyard.md)
+- [Lumberyard Programming Concepts and Resources<a name="lumberyard-programming-concepts"></a>](#lumberyard-programming-concepts-and-resources)
+  - [Asset System<a name="lumberyard-programming-concepts-asset-system"></a>](#asset-system)
+  - [AZ Code Generator<a name="lumberyard-programming-concepts-az-code-generator"></a>](#az-code-generator)
+  - [Building<a name="lumberyard-programming-concepts-building"></a>](#building)
+  - [Cloud Canvas<a name="lumberyard-programming-concepts-cloud-canvas"></a>](#cloud-canvas)
+  - [Debugging<a name="lumberyard-programming-concepts-debugging"></a>](#debugging)
+  - [EBuses<a name="lumberyard-programming-concepts-ebuses"></a>](#ebuses)
+  - [Entities and Components<a name="lumberyard-programming-concepts-entities-and-components"></a>](#entities-and-components)
+  - [Gems and AZ Modules<a name="lumberyard-programming-concepts-gems-and-modules"></a>](#gems-and-az-modules)
+  - [Input<a name="lumberyard-programming-concepts-input"></a>](#input)
+  - [Lua<a name="lumberyard-programming-concepts-lua"></a>](#lua)
+  - [Networking<a name="lumberyard-programming-concepts-networking"></a>](#networking)
+  - [Reflection System<a name="lumberyard-programming-concepts-reflection"></a>](#reflection-system)
+  - [Script Canvas<a name="lumberyard-programming-concepts-script-canvas"></a>](#script-canvas)
+  - [Slices<a name="lumberyard-programming-concepts-slices"></a>](#slices)
 
 ## Asset System<a name="lumberyard-programming-concepts-asset-system"></a>
 
-<<<<<<< Updated upstream
-The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](/docs/userguide/assets/_index.md) to asynchronously stream and activate assets\.
-=======
 The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](/docs/userguide/assets/intro.md) to asynchronously stream and activate assets\.
->>>>>>> Stashed changes
 
 For information on using the runtime asset system to load already\-built assets into a running instance of the engine, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)\. 
 

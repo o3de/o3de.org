@@ -4,11 +4,7 @@ title: Raw File Access in &ALY;
 ---
 # Raw File Access in Lumberyard<a name="file-access-direct"></a>
 
-<<<<<<< Updated upstream
-This topic describes how to directly access files in Lumberyard for special use cases\. However, it's recommended that you use the Lumberyard Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
-=======
 This topic describes how to directly access files in Lumberyard for special use cases\. However, it's recommended that you use the Lumberyard Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
->>>>>>> Stashed changes
 
 When you write an `AssetHandler`\-derived class to load assets in Lumberyard, runtime file handling is automatic\. However, some cases might require lower levels of file access at run time\. Scenarios that might require low\-level file access include:
 + Loading raw configuration files from the deployment root during startup before `.pak` files are mounted and available\.
@@ -162,7 +158,7 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![\[File access in local and remote scenarios\]](/images/userguide/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system \(VFS\) feature \(`RemoteFileIO` in the diagram\) is enabled\. VFS reads assets remotely from non\-PC devices such as [Android](android-configure-project.md#android-vfs) and [iOS](/docs/userguide/mobile/ios/virtual-file-system.md)\. VFS is required for [live reloading of assets](/docs/userguide/assets/live-reloading.md)\. Otherwise, assets would need to be deployed directly onto game devices\. VFS is disabled by default\. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example\.
+The behavior of the **Either/Or** branch depends on whether the virtual file system \(VFS\) feature \(`RemoteFileIO` in the diagram\) is enabled\. VFS reads assets remotely from non\-PC devices such as [Android](/docs/userguide/mobile/android/configure-project.md#android-vfs) and [iOS](/docs/userguide/mobile/ios/virtual-file-system.md)\. VFS is required for [live reloading of assets](/docs/userguide/assets/live-reloading.md)\. Otherwise, assets would need to be deployed directly onto game devices\. VFS is disabled by default\. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example\.
 
 ```
 -- remote_filesystem - enable Virtual File System (VFS)

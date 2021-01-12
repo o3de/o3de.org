@@ -30,7 +30,7 @@ The **Particle** component has the following properties:
 | Global size scale |  Sets the multiplier for all effect sizes\. Valid values: `1` to `100` Default value: `1`  | 
 | Particle size scale x |  Sets the multiplier for the particle size on the x\-axis\. Valid values: `1` to `100`  | 
 | Particle size scale y |  Sets the multiplier for the particle size on the y\-axis\. Valid values: `1` to `100`  | 
-|  **Particle size scale z**  |  Sets the multiplier for the particle size on the z\-axis\. This parameter applies to geometry particles only\. For more information, see the [Geometry](particle-editor-reference-particles.md#geometry-attribute) parameter\. Valid values: `1` to `100`  | 
+|  **Particle size scale z**  |  Sets the multiplier for the particle size on the z\-axis\. This parameter applies to geometry particles only\. For more information, see the [Geometry](/docs/userguide/particles/editor/reference-particles.md#geometry-attribute) parameter\. Valid values: `1` to `100`  | 
 | Particle size scale random |  Randomizes the particle size scale\. Valid values: `0` to `1`  | 
 | Speed scale |  Sets the multiplier for the particle emission speed\. Valid values: `1` to `1000`  | 
 | Strength Curve Time |  Controls all **Strength Over Emitter Life** curves\. The curves will use this **Strength Curve Time** parameter instead of the actual emitter lifetime\. Negative values are ignored\. Valid values: `-1` to `1`  | 

@@ -13,7 +13,7 @@ In standard Waf, the source files to include for a build is specified directly a
 
   The `.waf_files` mechanism also provides a way to declare the source files that are included in a Microsoft Visual Studio filter\. Visual Studio's solution explorer does not always accurately represent the files and their directory hierarchy on disk, so it uses filters\. Cases exist in Lumberyard where multiple projects share a subset of source code outside of individual project directories\. The ability to manually specify filters lets Lumberyard maintain this file sharing\.
 
-The paths to the source files specified in a `.waf_files` file are relative to the location of the `.waf_files` file itself\. It is also possible to use [aliases](waf-third-party-library-configurations.md#waf-third-party-library-configurations-using-aliases) to third\-party directories for situations in which a third\-party library consists of source code\.
+The paths to the source files specified in a `.waf_files` file are relative to the location of the `.waf_files` file itself\. It is also possible to use [aliases](/docs/userguide/waf/third-party-library-configurations.md#waf-third-party-library-configurations-using-aliases) to third\-party directories for situations in which a third\-party library consists of source code\.
 
 ## File Structure<a name="waf-files-filelist-structure"></a>
 

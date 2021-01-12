@@ -66,8 +66,8 @@ EBUS_EVENT_ID_RESULT(targetEntityTransform, targetEntityId, AZ::TransformBus, Ge
 ## EBus Timing<a name="component-entity-system-pg-components-ebuses-best-practices-ebus-timing"></a>
 
 Following are some best practices for the timing of EBus actions\.
-+ In the [Activate()](component-entity-system-create-component.md#component-entity-system-create-component-az-activate) function, make sure that connecting to buses is the last step\.
-+ In the [Deactivate()](component-entity-system-create-component.md#component-entity-system-create-component-az-deactivate) function, make sure that disconnecting from buses is the first step\.
++ In the [Activate()](/docs/userguide/components/entity-system-create-component.md#component-entity-system-create-component-az-activate) function, make sure that connecting to buses is the last step\.
++ In the [Deactivate()](/docs/userguide/components/entity-system-create-component.md#component-entity-system-create-component-az-deactivate) function, make sure that disconnecting from buses is the first step\.
 + In a multithreaded environment, it's possible to receive bus events from the moment that you connect to the bus until the moment you disconnect\. For this reason, make sure of the following:
   + Your component is fully activated before it starts reacting to events\.
   + Your component stops receiving events before it starts deactivation\.

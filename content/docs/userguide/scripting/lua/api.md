@@ -3376,7 +3376,7 @@ void SetTrackingLevel(const AZ::VR::HMDTrackingLevel level)
 
 ### OutputHMDInfo<a name="lua-api-hmddevicerequestbus-outputhmdinfo"></a>
 
-Outputs the information about the currently connected HMD \(contained in the [struct HMDDeviceInfo](lua-scripting-ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo) object\) to the console and log file\.
+Outputs the information about the currently connected HMD \(contained in the [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo) object\) to the console and log file\.
 
 **Syntax**
 
@@ -3394,7 +3394,7 @@ Get the device info object for this particular HMD\.
 HMDDeviceInfo* GetDeviceInfo()
 ```
 
-**Returns:** A pointer to the current HMD's [struct HMDDeviceInfo](lua-scripting-ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo)\.
+**Returns:** A pointer to the current HMD's [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo)\.
 
 **Return Type:** `HMDDeviceInfo*`
 
@@ -3422,7 +3422,7 @@ Provides information about HMD device controllers\.
 
 ### GetTrackingState<a name="lua-api-controllerrequestbusgettrackingstate"></a>
 
-Returns a `TrackingState` object that contains tracking info about a connected controller\. For more information, see [struct TrackingState](lua-scripting-ref-vr.md#lua-scripting-ref-vr-struct-trackingstate)\.
+Returns a `TrackingState` object that contains tracking info about a connected controller\. For more information, see [struct TrackingState](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-trackingstate)\.
 
 **Syntax**
 

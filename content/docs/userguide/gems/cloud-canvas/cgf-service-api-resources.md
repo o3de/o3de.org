@@ -4,10 +4,10 @@ title: Resources
 ---
 # Resources<a name="cloud-canvas-cgf-service-api-resources"></a>
 
-A cloud gem's service API is implemented based on the resources that are defined in the cloud gem's [resource\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-resource-template) file\. The following are the key resources for a cloud gem:
+A cloud gem's service API is implemented based on the resources that are defined in the cloud gem's [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template) file\. The following are the key resources for a cloud gem:
 + `ServiceAPI` – An AWS CloudFormation custom resource provided by the Cloud Gem Framework\. The handler for this resource configures API Gateway to use the cloud gem's `swagger.json` file\.
 + `ServiceLambda` – An AWS Lambda function that implements the cloud gem's functionality\.
-+ `ServiceLambdaConfiguration` – An AWS CloudFormation custom resource provided by Cloud Canvas Resource Manager that [configures](cloud-canvas-custom-resources.md#cloud-canvas-custom-resources-lambda-configuration) the `ServiceLambda` resource\.
++ `ServiceLambdaConfiguration` – An AWS CloudFormation custom resource provided by Cloud Canvas Resource Manager that [configures](/docs/userguide/gems/cloud-canvas/custom-resources.md#cloud-canvas-custom-resources-lambda-configuration) the `ServiceLambda` resource\.
 
 To add definitions for these resources to a `resource-template.json` file, enter the following command\.
 

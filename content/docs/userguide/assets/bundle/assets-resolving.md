@@ -48,7 +48,7 @@ If the source of the generated asset is not obvious, you can use the asset datab
 
 ### Updating the Builder to Emit the Dependency<a name="asset-bundler-assets-resolving-updating-the-builder"></a>
 
-After you've identified the builder which emits the product that is missing the dependency, update the builder\. For more information, see [Declare Product Dependencies](asset-builder-custom.md#asset-builder-custom-create-builder-class-optional-declare-product-dependencies)\.
+After you've identified the builder which emits the product that is missing the dependency, update the builder\. For more information, see [Declare Product Dependencies](/docs/userguide/asset-builder-custom.md#asset-builder-custom-create-builder-class-optional-declare-product-dependencies)\.
 
 ## Hardcoded File Loads<a name="asset-bundler-assets-resolving-hardcoded-file-loads"></a>
 

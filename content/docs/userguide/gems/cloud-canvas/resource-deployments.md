@@ -55,27 +55,27 @@ The structure of the `project-settings.json` file is as follows:
  The *\{key\}* and *\{value\}* pairs represent individual settings\. The pairs at the root apply to the project\. The pairs under *\{deployment\}* apply to that deployment\. The pairs under *\{resource\-group\}* apply to that resource group\. Either or both of *\{deployment\}* and *\{resource\-group\}* can be `*`, to indicate the settings they contain apply to all deployments or resource groups, respectively\. Settings under a named entry take precedence over settings under a `*` entry\.
 
 **Note**  
-As of Lumberyard 1\.8, the `ProjectStackId` property is stored in the `dev\<project name>\AWS\local-project-settings.json` file\. For more information, see [ProjectStackId Property](cloud-canvas-resource-definitions.md#cloud-canvas-local-project-settings-stackid-property)\.
+As of Lumberyard 1\.8, the `ProjectStackId` property is stored in the `dev\<project name>\AWS\local-project-settings.json` file\. For more information, see [ProjectStackId Property](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-local-project-settings-stackid-property)\.
 
 #### DefaultDeployment Property<a name="cloud-canvas-project-settings-default-deployment-property"></a>
 
- The `DefaultDeployment` property identifies the deployment that is to be used by default when working in Lumberyard Editor\. The `DefaultDeployment` property in the [user\-settings\.json](cloud-canvas-resource-definitions.md#cloud-canvas-user-settings) file overrides this setting\. The project and user defaults can be set using the `lmbr_aws` [deployment default](cloud-canvas-command-line.md#cloud-canvas-command-line-deployment-default) command\. The `DefaultDeployment` setting is also used by the `lmbr_aws` [mappings update](cloud-canvas-command-line.md#cloud-canvas-command-line-mappings-update) command\.
+ The `DefaultDeployment` property identifies the deployment that is to be used by default when working in Lumberyard Editor\. The `DefaultDeployment` property in the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-user-settings) file overrides this setting\. The project and user defaults can be set using the `lmbr_aws` [deployment default](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-deployment-default) command\. The `DefaultDeployment` setting is also used by the `lmbr_aws` [mappings update](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-mappings-update) command\.
 
 #### ReleaseDeployment Property<a name="cloud-canvas-project-settings-release-deployment-property"></a>
 
- The `ReleaseDeployment` property identifies the deployment that is to be used in release builds of the game\. The `ReleaseDeployment` setting is used by the `lmbr_aws` [mappings update](cloud-canvas-command-line.md#cloud-canvas-command-line-mappings-update) command\.
+ The `ReleaseDeployment` property identifies the deployment that is to be used in release builds of the game\. The `ReleaseDeployment` setting is used by the `lmbr_aws` [mappings update](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-mappings-update) command\.
 
 #### DeploymentStackId Property, PendingDeploymentStackId<a name="cloud-canvas-project-settings-release-deploymentstackid-property"></a>
 
  The `DeploymentStackId` property identifies the [AWS CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) for a deployment\. The `PendingDeploymentStackId` property identifies a stack whose deployment is pending\. The project's resource groups are children of these stacks\. For more information, see [Resource Deployments](#cloud-canvas-resource-deployments)\.
 
-The `DeploymentStackId` property is set by the [deployment create](cloud-canvas-command-line.md#cloud-canvas-command-line-deployment-create) command\. If for some reason you want to associate the deployment with an existing deployment, you can use the AWS Management Console to look up the stack's ARN and paste it into the `project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
+The `DeploymentStackId` property is set by the [deployment create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-deployment-create) command\. If for some reason you want to associate the deployment with an existing deployment, you can use the AWS Management Console to look up the stack's ARN and paste it into the `project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
 
 #### DeploymentAccessStackId Property<a name="cloud-canvas-project-settings-release-deploymentaccessstackid-property"></a>
 
  The `DeploymentAccessStackId` property identifies the AWS CloudFormation stack for the resources that control access to a deployment\.
 
-The `DeploymentAccessStackId` is set by the [deployment create](cloud-canvas-command-line.md#cloud-canvas-command-line-deployment-create) command\. If for some reason you want to associate the deployment with an existing deployment stack, you can use the AWS Management Console to look up the stack's ARN and paste it into the `project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
+The `DeploymentAccessStackId` is set by the [deployment create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-deployment-create) command\. If for some reason you want to associate the deployment with an existing deployment stack, you can use the AWS Management Console to look up the stack's ARN and paste it into the `project-settings.json` file \(navigate to AWS CloudFormation, select the stack, select **Overview**, and then copy the value of the `Stack Id` property\)\.
 
 #### parameter Property<a name="cloud-canvas-project-settings-parameter-property"></a>
 

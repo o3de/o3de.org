@@ -33,6 +33,6 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 ## Pose Subtract Node Attributes<a name="animation-editor-blending-posesubtract-attributes"></a>
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](animation-editor-blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
 
 ![\[Pose Subtract node attributes.\]](/images/userguide/actor-animation/animation-editor-blending-posesubtract-attributes.png)

@@ -27,7 +27,7 @@ You can use a **Tooltip** component to provide the text of the tooltip\. Add a t
 
 ## TooltipDisplay<a name="ui-editor-components-tooltipsdisplay"></a>
 
-The **TooltipDisplay** component defines the tooltip's display behavior\. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip\. You must also set the [**Tooltip display element**](ui-editor-canvas-properties.md#editor-properties-tooltips) property of the canvas to this element\. For more information, see [Configuring Canvas Properties](/docs/userguide/ui/editor/canvas-properties.md)\.
+The **TooltipDisplay** component defines the tooltip's display behavior\. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip\. You must also set the [**Tooltip display element**](/docs/userguide/ui/editor/canvas-properties.md#editor-properties-tooltips) property of the canvas to this element\. For more information, see [Configuring Canvas Properties](/docs/userguide/ui/editor/canvas-properties.md)\.
 
 **To edit a TooltipDisplay component**
 + In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **TooltipDisplay** and use the following settings, as appropriate:  

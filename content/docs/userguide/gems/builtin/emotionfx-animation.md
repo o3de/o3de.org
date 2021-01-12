@@ -19,6 +19,6 @@ The **Animation Editor** is compatible with `.fbx` files and converts these file
 
 For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
 
-Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](configurator-projects.md#creating-a-game-project)\.
+Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](/docs/userguide/configurator/projects.md#creating-a-game-project)\.
 
 ![\[Image NOT FOUND\]](/images/userguide/gems/animation-editor-render-window.png)

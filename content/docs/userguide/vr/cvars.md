@@ -37,7 +37,7 @@ The following console variables are optional but strongly recommended\. Disablin
 Sets the system configuration specification to medium\. 0 = custom; 1 = low; 2 = medium; 3 = high; 4 = very high\.
 
 **r\_ssdoHalfRes = 3**  
-Applies [screen space directional occlusion \(SSDO\)](ly-glos-chap.md#ssdo) bandwidth optimizations to half resolution output\. 0 = full resolution; 1 = lower resolution; 2 = low res depth \(except for small camera field of views\) to avoid artifacts; 3 = half resolution output\.
+Applies [screen space directional occlusion \(SSDO\)](/docs/userguide/ly-glos-chap.md#ssdo) bandwidth optimizations to half resolution output\. 0 = full resolution; 1 = lower resolution; 2 = low res depth \(except for small camera field of views\) to avoid artifacts; 3 = half resolution output\.
 
 **r\_Refraction = 0**  
 Disables refraction\. 0 = disabled; 1 = enabled\.

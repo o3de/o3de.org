@@ -29,9 +29,9 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
    Next to **\[0\]**, select **MediumSizedCharacters**\. This property defines the [types of agents](#component-nav-area-properties) that can navigate in this area\.
 
-1. Add the **Polygon Prism** component\. [Adjust the size and shape](component-polygon-prism.md#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](component-polygon-prism.md#component-polygon-prism-height-adjustment) if necessary\.
+1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism.md#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism.md#component-polygon-prism-height-adjustment) if necessary\.
 
-   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](lumberyard-editor-toolbars.md#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.  
+   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.  
 ![\[Enable Show Navigation Areas and View Agent Type in Lumberyard Editor.\]](/images/userguide/component/component-nav-area-1.1.png)
 
 **To view the generated Navigation Area mesh**<a name="render-navigation-mesh"></a>
@@ -126,7 +126,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 ### RefreshArea<a name="component-nav-area-ebus-refresharea"></a>
 
-You can use the [PolygonPrismShapeComponentRequestBus](component-polygon-prism.md#component-polygon-prism-ebus-request) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
+You can use the [PolygonPrismShapeComponentRequestBus](/docs/userguide/components/polygon-prism.md#component-polygon-prism-ebus-request) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
 
 **Parameters**  
 None

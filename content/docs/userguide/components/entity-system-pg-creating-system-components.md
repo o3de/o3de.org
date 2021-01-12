@@ -11,7 +11,7 @@ Like any Lumberyard [component](/docs/userguide/components/entity-system-create-
 When you author system components, follow the best practices for component authoring\. For example, your system components should use the following:
 + [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md) to expose their interfaces\.
 + [Reflection](/docs/userguide/components/entity-system-reflect-component.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/userguide/modules/system-entities-configuring.md)\.
-+ The same [AZ::Component Functions](component-entity-system-create-component.md#component-entity-system-create-component-az-functions) for activation and deactivation\.
++ The same [AZ::Component Functions](/docs/userguide/components/entity-system-create-component.md#component-entity-system-create-component-az-functions) for activation and deactivation\.
 
 **Important**  
 Just like game components, system components often provide request and notification buses\. However, because system components are global systems, they should not specify IDs for their buses like game components\. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components\.
@@ -165,7 +165,7 @@ After you create the code for your component, add it to your project's system en
    ...
    ```
 
-1. \(Optional\) Expose the system component to the [System Entity Editor](configurator-advanced.md#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\. 
+1. \(Optional\) Expose the system component to the [System Entity Editor](/docs/userguide/configurator/advanced.md#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\. 
 
    The following example is from `HttpRequestorSystemComponent.cpp`\.
 

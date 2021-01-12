@@ -43,11 +43,11 @@ As a best practice, create a top\-level entity in your level and add the **PhysX
 **Note**  
 The **Transform** component for the entity is ignored and doesn't affect the position of the terrain\.
 
-1. To have an entity interact with the terrain collider, you can create a dynamic entity so that the two entities interact\. For more information, see [Creating a Dynamic PhysX Entity](component-physx-rigid-body-physics.md#example-creating-dynamic-game-entity)\.
+1. To have an entity interact with the terrain collider, you can create a dynamic entity so that the two entities interact\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics.md#example-creating-dynamic-game-entity)\.
 
 1. After you create your dynamic entity, press **Ctrl**\+**G** to enter gameplay mode\. The dynamic entity falls and then collides with the terrain collider\. 
 
 1. Press **Esc** to leave gameplay mode\.
 
 **Note**  
-In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](physx-configuration-global.md#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.
+In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.

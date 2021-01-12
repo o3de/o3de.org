@@ -13,7 +13,7 @@ Before you create a preset based on an existing node comment or node group, cust
 
 ![\[Using Script Canvas Node Inspector to customize node comments and node groups.\]](/images/userguide/scripting/script-canvas/script-canvas-comment-and-group-presets-1.png)
 
-For more information, see [Customizing Groups](script-canvas-node-groups.md#script-canvas-node-groups-customizing)\.
+For more information, see [Customizing Groups](/docs/userguide/scripting/scriptcanvas/node-groups.md#script-canvas-node-groups-customizing)\.
 
 ## Creating and Using Presets<a name="script-canvas-comment-and-group-presets-creating-and-using"></a>
 

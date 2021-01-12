@@ -36,7 +36,7 @@ The VR Islands level includes a `HideOcean` entity that allows you to hide the o
 
 **To hide the ocean**
 
-1. Open the **Console Variables** window\. For instructions, see [Viewing the Console Window](console-intro.md#viewing-the-console-window)\.
+1. Open the **Console Variables** window\. For instructions, see [Viewing the Console Window](/docs/userguide/console-intro.md#viewing-the-console-window)\.
 
 1. In the **Console Variables** window, search for the `e_WaterOcean` console variable\.
 

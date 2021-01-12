@@ -18,7 +18,7 @@ The Asset Bundler relies on accurate and complete product dependency information
    + [Resolving Missing Assets](/docs/userguide/assets/bundle/assets-resolving.md)
 
 1. Update your custom asset builders to output product dependencies\. Be sure to add false positive results to the exclusion list using the file tagging system\.
-   + [Implement the Callback for ProcessJobFunction](asset-builder-custom.md#asset-builder-custom-create-builder-class-processjob-callback)
+   + [Implement the Callback for ProcessJobFunction](/docs/userguide/asset-builder-custom.md#asset-builder-custom-create-builder-class-processjob-callback)
    + [Using the File Tagging System to Include or Exclude Assets](/docs/userguide/assets/bundle/file-tagging.md)
 
 1. Create a seed list and add your required assets as seeds\. You can create a dependencies XML file \(such as `Check Engine/Engine_Dependencies.xml`\) to include optional assets or add multiple seeds using wildcards\. Include the dependencies XML file in the seed list\. 

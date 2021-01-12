@@ -18,7 +18,7 @@ You can use a **Fader** component to simultaneously adjust the transparency of a
 
 **To see in\-game examples of completed canvases with a **Fader** component**
 
-1. [Open the Samples Project](configurator-projects.md#project-configurator-launch-projects)\.
+1. [Open the Samples Project](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
 
 1. When Lumberyard Editor has started, choose **File**, **Open** and open the UiFeatures level\.
 

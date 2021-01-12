@@ -23,7 +23,7 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 
 1. In the **Project Configurator**, do the following:
 
-   1. Follow the steps in [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set the **SamplesProject** as your default project\.
+   1. Follow the steps in [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects) to set the **SamplesProject** as your default project\.
 
    1. Follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to enable the **Multiplayer** gem for the Samples Project\.
 

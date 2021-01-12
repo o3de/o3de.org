@@ -65,7 +65,7 @@ Disables debugging and strips debug symbols in the final build\.
 | Attribute \(config file\) | Parameter \(command line\) | Description | Default | 
 | --- | --- | --- | --- | 
 | android\_maven\_force\_http | \-\-android\-maven\-force\-http\-requests | Forces Android Maven library requests to use HTTP instead of HTTPS\. | False | 
-| android\_asset\_mode | \-\-android\-asset\-mode |  Specify one of the following asset packaging modes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/android-reference.html) For more information on asset modes, see [Handling assets on Android](android-configure-project.md#android-configure-asset-loading)\.  | configuration\_default | 
+| android\_asset\_mode | \-\-android\-asset\-mode |  Specify one of the following asset packaging modes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/android-reference.html) For more information on asset modes, see [Handling assets on Android](/docs/userguide/mobile/android/configure-project.md#android-configure-asset-loading)\.  | configuration\_default | 
 
 
 **Android Deploy**  

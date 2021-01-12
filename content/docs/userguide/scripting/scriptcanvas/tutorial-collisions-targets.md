@@ -246,7 +246,7 @@ Now that you've set up the input binding, you can add logic to the **Player** sc
 
    1. From **Delay**, drag the **Out** pin to connect it to the **Reset** pin of the **Once** node\.
 **Note**  
-Node execution always flows from the left side to the right side of a node\. For more information, see [Inputs, Outputs, and Connection Types](script-canvas-nodes-understanding.md#script-canvas-pins-and-connections)\.
+Node execution always flows from the left side to the right side of a node\. For more information, see [Inputs, Outputs, and Connection Types](/docs/userguide/scripting/scriptcanvas/nodes-understanding.md#script-canvas-pins-and-connections)\.
 
 1. Verify that your `player.scriptcanvas` graph looks like the following\.  
 **Example**    

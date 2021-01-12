@@ -12,4 +12,4 @@ When used for non\-color effects, typically each color channel is treated as a s
 
 Vertex Colors is a Shader Generation parameter that can be enabled using the Material Editor, which is part of Lumberyard Editor\. 
 
-For a good application of vertex colors, see [Defining Vegetation Vertex Colors with a DCC Tool](vegetation-bending-detail-intro.md#vegetation-bending-detail-vertex-colors)\.
+For a good application of vertex colors, see [Defining Vegetation Vertex Colors with a DCC Tool](/docs/userguide/vegetation/bending-detail-intro.md#vegetation-bending-detail-vertex-colors)\.

@@ -47,7 +47,7 @@ We recommend that you select only *one* version of Visual Studio \- the one that
 **Note**  
 Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)\.
 **Note**  
-For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](setting-up-system-requirements.md#lumberyard-visual-studio-requirement)\.
+For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](/docs/userguide/setup/system-requirements.md#lumberyard-visual-studio-requirement)\.
 
 1. Click **Next**\.
 

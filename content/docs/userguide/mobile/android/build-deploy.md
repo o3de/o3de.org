@@ -16,7 +16,7 @@ title: Build and deploy your project for Android
 
 ## Connect to the Shader Compiler<a name="running-the-shader-compiler-for-android"></a>
 
- During development, your Lumberyard project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs) to configure VFS\. 
+ During development, your Lumberyard project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project.md#android-vfs) to configure VFS\. 
 
 **Important**  
  The Shader Compiler only runs on Windows PCs\. If you're using another environment to develop your Android game, you'll need access to a server with the Shader Compiler running and accessible through a firewall\. One option is to run a [Windows GPU\-based EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instances)\. For more information on running a dedicated Shader Compiler service, see [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\. 
@@ -39,7 +39,7 @@ title: Build and deploy your project for Android
 **Important**  
  Make sure that the IPv4 address of the **Android device** is in the allow list for your Shader Compiler\. Connections to the compiler are made from the device, not proxied through the host\. 
 
-1.  Change the value of `r_ShaderCompilerPort` to the port that's used by the Shader Compiler\. By default, the port for the Shader Compiler is **61453**\. To see if you're using another port, examine the [Remote Shader Compiler Configuration](mat-shaders-custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-config) on the Shader Compiler host\. 
+1.  Change the value of `r_ShaderCompilerPort` to the port that's used by the Shader Compiler\. By default, the port for the Shader Compiler is **61453**\. To see if you're using another port, examine the [Remote Shader Compiler Configuration](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-config) on the Shader Compiler host\. 
 
    ```
    r_ShaderCompilerPort=shader-port
@@ -55,14 +55,14 @@ title: Build and deploy your project for Android
 **Important**  
  This step relies on the `adb` command being in the `PATH` environment variable\. Follow the instructions in [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md) to add Android tools to your `PATH`\. 
 
- Whether or not you need to manually start the Shader Compiler is dependent upon whether you use the deployment tool\. If you're using the Deployment Tool, the Asset Processor automatically starts a Shader Compiler in the background for you\. Otherwise, you need to start the Shader Compiler manually for a deployment\. See [Running the Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch) to learn more\. 
+ Whether or not you need to manually start the Shader Compiler is dependent upon whether you use the deployment tool\. If you're using the Deployment Tool, the Asset Processor automatically starts a Shader Compiler in the background for you\. Otherwise, you need to start the Shader Compiler manually for a deployment\. See [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch) to learn more\. 
 
 ## Build your project<a name="android-build-project"></a>
 
  With asset loading and the shader compiler configured, you're ready to build your Lumberyard project for Android\! You can build from the command line, or load the projects created by `lmbr_waf configure` into Android Studio\. This section covers how to build your project from the command line, including information on the available Android targets and build system configuration options that are explicitly for use with Android\. 
 
 **Important**  
- If you've [enabled Incredibuild](waf-extensions.md#waf-extensions-incredibuild), turn the feature off to be able to compile for Android\. Lumberyard doesn't take advantage of the Incredibuild hooks for Android\. 
+ If you've [enabled Incredibuild](/docs/userguide/waf/extensions.md#waf-extensions-incredibuild), turn the feature off to be able to compile for Android\. Lumberyard doesn't take advantage of the Incredibuild hooks for Android\. 
 
 ### Build with `lmbr_waf`<a name="android-build-project-waf"></a>
 
@@ -81,7 +81,7 @@ title: Build and deploy your project for Android
 ## Deployment prerequisites<a name="android-deploy-prerequisites"></a>
 
  In order to deploy to an Android device, you need the following: 
-+  An Android device that meets the [minimum requirements](android-intro.md#android-minimum-requirements) for Lumberyard\. Lumberyard projects won't deploy to an Android emulator\. 
++  An Android device that meets the [minimum requirements](/docs/userguide/mobile/android/intro.md#android-minimum-requirements) for Lumberyard\. Lumberyard projects won't deploy to an Android emulator\. 
 +  The device has developer mode and USB debugging enabled\. See [Configure developer options](https://developer.android.com/studio/debug/dev-options) in the official Android documentation for instructions on how to enable these features\. 
 +  The device is accessible from an Android debug bridge \(*adb*\) server on the host running the deployment tools\. 
 
@@ -103,7 +103,7 @@ title: Build and deploy your project for Android
 
 1.  Check the **Clean device** box to remove any files for your project that are copied to the device, including any installed APKs\. This is recommended if you're doing a large asset update\. 
 
-1.  Under **Asset Options**, select your [asset mode](android-configure-project.md#android-configure-asset-loading)\. Unless you're running the Asset Processor remotely, make sure that the value for **Asset Processor IP address** is **127\.0\.0\.1 \(localhost\)**\. If you'll be building shaders through the Shader Compiler, uncheck the **Use Asset Processor for shaders** checkbox\. 
+1.  Under **Asset Options**, select your [asset mode](/docs/userguide/mobile/android/configure-project.md#android-configure-asset-loading)\. Unless you're running the Asset Processor remotely, make sure that the value for **Asset Processor IP address** is **127\.0\.0\.1 \(localhost\)**\. If you'll be building shaders through the Shader Compiler, uncheck the **Use Asset Processor for shaders** checkbox\. 
 
 1. Select the **Deploy to local device** button\.
 **Note**  

@@ -70,7 +70,7 @@ See the following **Road** properties:
 
    The **Spline** component defines the path and shape of the road\. For information about how to add, remove, and edit individual points, see [Spline](/docs/userguide/components/spline.md)\.
 
-The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](component-spline.md#spline-type-bezier) **Spline Type**\.
+The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](/docs/userguide/components/spline.md#spline-type-bezier) **Spline Type**\.
 
 ![\[Basic road with default road material and four vertices placed with Linear Spline Type.\]](/images/userguide/component/creating-a-road.png)
 

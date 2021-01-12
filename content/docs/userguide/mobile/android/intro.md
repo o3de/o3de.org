@@ -10,21 +10,12 @@ title: '&ALY; Android support'
 + [Minimum device requirements](#android-minimum-requirements)
 + [Prerequisites](#android-prerequisites)
 + [Video tutorial](#android-setting-up-environment-video)
-<<<<<<< Updated upstream:content/docs/userguide/mobile/android/intro.md
-+ [Set up your environment to develop for Android with Lumberyard](/docs/userguide/android-setting-up-environment.md)
-+ [Configure Lumberyard projects for Android](/docs/userguide/android-configure-project.md)
-+ [Build and deploy your project for Android](/docs/userguide/android-build-deploy.md)
-+ [Releasing Lumberyard projects for Android](/docs/userguide/android-deploy-release.md)
-+ [Troubleshooting Lumberyard issues on Android](/docs/userguide/mobile/android/troubleshooting.md)
-+ [Reference for Android](/docs/userguide/android-reference.md)
-=======
 + [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md)
 + [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md)
 + [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)
 + [Releasing Lumberyard projects for Android](/docs/userguide/mobile/android/deploy-release.md)
 + [Troubleshooting Lumberyard issues on Android](/docs/userguide/mobile/android/troubleshooting.md)
 + [Reference for Android](/docs/userguide/mobile/android/reference.md)
->>>>>>> Stashed changes:content/docs/userguide/android-intro.md
 
 ## Minimum device requirements<a name="android-minimum-requirements"></a>
 

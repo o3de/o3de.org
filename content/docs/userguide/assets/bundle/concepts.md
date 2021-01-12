@@ -38,11 +38,7 @@ A "leaf" asset is a product asset that has no dependencies on other product asse
 A product asset is game content that is loaded and used in the runtime game\. A product asset is generated from a source asset during asset processing using a builder\. The product asset is often a modified version of the source asset, such as image content that is compressed and otherwise optimized for runtime\. Product assets reference their product dependencies\. See also **Source Asset**\.  
 When running a game using the Lumberyard asset system, only product assets are available\. The source assets are not available\. This includes running the game in the Lumberyard Editor or in a platform\-specific launcher\. When packaging a game using the Asset Bundler, only product assets are bundled\. Product assets are available only from the asset cache or from asset bundles\.   
 When working with slices, keep in mind that only dynamic slices can be used at run\-time\. Non\-dynamic slices, even if they are product assets, should not be included in bundles\. 
-<<<<<<< Updated upstream:content/docs/userguide/assets/bundle/concepts.md
-For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/_index.md)\.
-=======
 For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
->>>>>>> Stashed changes:content/docs/userguide/asset-bundler-concepts.md
 
 **Product Dependency**  
 A product dependency occurs when one product asset references another product asset\. When bundling assets, both the referencing asset and the referenced asset should be included in the bundle\. Dependencies are created by referencing the Asset ID of the product asset\. See also **Source Dependency**\.  

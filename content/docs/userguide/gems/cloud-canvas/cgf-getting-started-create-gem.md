@@ -48,7 +48,7 @@ You can easily create your own cloud gem by using the `lmbr_aws cloud-gem create
 
   The syntax options are as follows\.
   + `--gem {gem-name}` – Specifies the name of the cloud gem\.
-  + `--initial-content {content-option}` – Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](cloud-canvas-command-line.md#cloud-canvas-command-line-cloud-gem-create)\.
+  + `--initial-content {content-option}` – Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-cloud-gem-create)\.
   + `--enable` – Enables the cloud gem in your project\. 
 
 **Example**  
@@ -65,7 +65,7 @@ Depending on the parameter that you choose for the `--initial-content` option, t
     + A `cgp-resource-code` directory that contains skeleton resource code for your [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)\.
     + A `lambda-code` directory that contains skeleton `ServiceLambda` API code\. `ServiceLambda` is an AWS Lambda function that implements your cloud gem's functionality\.
     + A `swagger.json` file that describes the API for the cloud gem\. For more information about the `swagger.json` file, see [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md)\.
-    + A [resource\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-resource-template) file that defines the initial resources for the cloud gem\. In the `api-lambda` example, the `resource-template.json` file specifies the following: 
+    + A [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template) file that defines the initial resources for the cloud gem\. In the `api-lambda` example, the `resource-template.json` file specifies the following: 
       + `ServiceApi`, `ServiceLambda`, and `ServiceLambdaConfiguration` resources\.
       + An output for the service API URL\.
       + An `AccessControl` resource configured as described in [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.

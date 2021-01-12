@@ -77,7 +77,7 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 
 **To build a shader \.pak file**
 
-1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](mat-shaders-custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch)\. 
+1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch)\. 
 
 1. In a command line window, navigate to the `lumberyard_version\dev\` directory and locate the `lmbr_pak_shaders.sh` file\.
 

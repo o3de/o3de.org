@@ -21,11 +21,12 @@ To enable the **Rain** component, you must enable the Rain gem\. For more inform
 If your level has a **[Snow](/docs/userguide/components/snow.md)** and **Rain** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
 
 **Contents**
-+ [Turning Rain On or Off](#component-rain-enabling-disabling)
-+ [Editing Rain Effects](#component-rain-editing)
-+ [Rain Component Properties](#component-rain-properties)
-+ [EBus Request Bus Interface](#component-rain-ebus-request)
-  + [Request Bus Example Script](#rain-ebus-example-script)
+- [Rain<a name="component-rain"></a>](#rain)
+  - [Turning Rain On or Off<a name="component-rain-enabling-disabling"></a>](#turning-rain-on-or-off)
+  - [Editing Rain Effects<a name="component-rain-editing"></a>](#editing-rain-effects)
+  - [Rain Component Properties<a name="component-rain-properties"></a>](#rain-component-properties)
+  - [EBus Request Bus Interface<a name="component-rain-ebus-request"></a>](#ebus-request-bus-interface)
+    - [Request Bus Example Script<a name="rain-ebus-example-script"></a>](#request-bus-example-script)
 
 ## Turning Rain On or Off<a name="component-rain-enabling-disabling"></a>
 
@@ -63,7 +64,7 @@ The **Rain** component has the following properties:
 | --- | --- | 
 | Enabled |  Specifies whether rain effects are enabled\. Default value: `True`  | 
 |  **Use VisArea**  |  Specifies whether rain appears when the player is inside of a visible area\.  For more information, see the **[VisArea](/docs/userguide/components/vis-area.md)** component\. Default value: `False`  | 
-| Disable Occlusion |  Specifies whether objects will ignore rainfall effects\. You can enable the **Rain occluder** parameter in the **Mesh** component for your objects; rain effects do not affect these objects\.  For more information, see [Mesh Component: Advanced Options](component-static-mesh.md#static-mesh-properties-advanced)\. Default value: `False`  | 
+| Disable Occlusion |  Specifies whether objects will ignore rainfall effects\. You can enable the **Rain occluder** parameter in the **Mesh** component for your objects; rain effects do not affect these objects\.  For more information, see [Mesh Component: Advanced Options](/docs/userguide/components/static-mesh.md#static-mesh-properties-advanced)\. Default value: `False`  | 
 | Radius |  Radius of the area where puddles are created\. Rain continues to affect the screen even outside the specified radius\. Default value: `10000` Valid values: `0` to `10000`  | 
 | Amount |  Amount of rain and other effects that the **Rain** component creates\. Default value: `1` Valid values: `0` to `100`  | 
 | Diffuse Darkening |  Amount of darkening that is applied to surfaces that the rain affects\. Default value: `0.5` Valid values: `0` to `1`  | 
@@ -96,7 +97,7 @@ For more information , see [Working with the Event Bus \(EBus\) system](/docs/us
 | IsEnabled |  Returns `true` if rain effects are enabled\.  | None |  Type: Boolean  | Yes | 
 | SetIgnoreVisAreas |  Specifies whether rain effects ignore visible areas\. If `true`, the rain effects are visible, even inside visible areas\. If `false`, rain does not render in a visible area\.  For more information, see the **[VisArea](/docs/userguide/components/vis-area.md)** component\.  |  Type: Boolean  | None | Yes | 
 | GetIgnoreVisAreas |  Returns `true` if rain effects ignore visible areas\.  | None |  Type: Boolean  | Yes | 
-| SetDisableOcclusion |  Specifies whether rain effects affect objects that are marked as occluders\. You can enable the **Rain occluder** parameter in the **Mesh** component for your objects; rain effects do not affect these objects\. For more information, see [Mesh Component: Advanced Options](component-static-mesh.md#static-mesh-properties-advanced)\. If `true`, objects marked as rain occluders are affected by rain effects\. If `false`, objects marked as rain occluders ignore rain effects\.  |  Type: Boolean  | None | Yes | 
+| SetDisableOcclusion |  Specifies whether rain effects affect objects that are marked as occluders\. You can enable the **Rain occluder** parameter in the **Mesh** component for your objects; rain effects do not affect these objects\. For more information, see [Mesh Component: Advanced Options](/docs/userguide/components/static-mesh.md#static-mesh-properties-advanced)\. If `true`, objects marked as rain occluders are affected by rain effects\. If `false`, objects marked as rain occluders ignore rain effects\.  |  Type: Boolean  | None | Yes | 
 | GetDisableOcclusion |  Returns `true` if rain effects affect objects that are marked as occluders\.  | None |  Type: Boolean  | Yes | 
 | SetRadius |  Sets the radius of rain effects\. The **Rain** component creates puddles inside only the specified radius\. Raindrops always render in the level\.  |  Type: Float  | None | Yes | 
 | GetRadius |  Returns the radius of rain effects\.  | None |  Type: Float  | Yes | 

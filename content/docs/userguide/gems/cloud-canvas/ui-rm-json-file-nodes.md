@@ -13,26 +13,26 @@ The following template is found in each resource group under the **Resource Grou
 
 ## resource\-template\.json<a name="cloud-canvas-ui-rm-resource-template-json"></a>
 
-Each resource group has a **resource\-template\.json** node and a **lambda\-function\-code** child node\. The `resource-template.json` file defines the group’s resources\. For more information, see [resource\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-resource-template)\.  In the navigation pane, each of the nodes under **resource\-template\.json** represents one of the resources defined in a section of the `resource-template.json` file\. 
+Each resource group has a **resource\-template\.json** node and a **lambda\-function\-code** child node\. The `resource-template.json` file defines the group’s resources\. For more information, see [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template)\.  In the navigation pane, each of the nodes under **resource\-template\.json** represents one of the resources defined in a section of the `resource-template.json` file\. 
 
 The following templates are found under the **Administration \(advanced\)** node: 
 
 ## project\-settings\.json<a name="cloud-canvas-ui-rm-project-settings.json"></a>
 
-The `project-settings.json` file contains project configuration data\. For more information, see [**project\-settings\.json**](cloud-canvas-resource-deployments.md#cloud-canvas-project-settings)\.
+The `project-settings.json` file contains project configuration data\. For more information, see [**project\-settings\.json**](/docs/userguide/gems/cloud-canvas/resource-deployments.md#cloud-canvas-project-settings)\.
 
 ## project\-template\.json<a name="cloud-canvas-ui-rm-project-template.json"></a>
 
-The `project-template.json` file defines the resources used by **Cloud Canvas Resource Manager**\. For more information, see [project\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-project-template)\.
+The `project-template.json` file defines the resources used by **Cloud Canvas Resource Manager**\. For more information, see [project\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-template)\.
 
 ## deployment\-template\.json<a name="cloud-canvas-ui-rm-deployment-template.json"></a>
 
-The `deployment-template.json` file defines the AWS CloudFormation stack resources for each of the projects resource groups\. For more information, see [deployment\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-template)\.
+The `deployment-template.json` file defines the AWS CloudFormation stack resources for each of the projects resource groups\. For more information, see [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-template)\.
 
 ## deployment\-access\-template\.json<a name="cloud-canvas-ui-rm-deployment-access-template.json"></a>
 
-The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment’s resources\. For more information, see [deployment\-access\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
+The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment’s resources\. For more information, see [deployment\-access\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
 ## user\-settings\.json<a name="cloud-canvas-ui-rm-user-settings.json"></a>
 
-The `user-settings.json` file contains user specific settings\. For more information, see [user\-settings\.json](cloud-canvas-resource-definitions.md#cloud-canvas-user-settings)\.
+The `user-settings.json` file contains user specific settings\. For more information, see [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-user-settings)\.

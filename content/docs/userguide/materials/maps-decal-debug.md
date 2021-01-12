@@ -24,5 +24,5 @@ We recommend that you place deferred decals so that they display mostly in blue\
 
 If a placed decal is flickering, follow these guidelines to ensure that the decal is correctly set up\.
 + In the **Material Editor**, for the **Shader Generation Params** pane, verify that the **Decal** parameter is selected for all submaterials\.
-+ Check for overlapping layers that have the **Decal** parameter selected\. Use the **Sort Priority** parameter to specify which decal appears on top of the other\. Decals with higher **Sort Priority** values sort on top of decals with lower values\. For more information, see the [Decal Component Properties](component-decal.md#component-decal-properties)\.
++ Check for overlapping layers that have the **Decal** parameter selected\. Use the **Sort Priority** parameter to specify which decal appears on top of the other\. Decals with higher **Sort Priority** values sort on top of decals with lower values\. For more information, see the [Decal Component Properties](/docs/userguide/components/decal.md#component-decal-properties)\.
 + Other than for decals, the mesh shouldn't have overlapping triangles\. Do not offset along the surface normal; this can still break in some situations and introduce floating parallax effects\.

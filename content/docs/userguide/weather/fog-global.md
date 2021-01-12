@@ -10,6 +10,6 @@ You can use global fog to simulate particles that are distributed uniformly alon
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Time Of Day**\.
 
-1. In the **Parameters** pane, for **Fog**, adjust the [Fog Parameters](sky-tod-parameters.md#fog-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Fog**, adjust the [Fog Parameters](/docs/userguide/sky/tod-parameters.md#fog-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.

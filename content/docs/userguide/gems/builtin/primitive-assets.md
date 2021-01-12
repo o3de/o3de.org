@@ -13,6 +13,6 @@ You can add the primitive objects to your game project by doing either of the fo
 + Create a new project from the **Default** template in the Project Configurator\. By default the Primitive Assets Gem is enabled for projects that are created from this template\.
 + Enable the Primitive Assets Gem for your existing project in the Project Configurator\.
 
-For more information, see [Creating a Game Project in Lumberyard](configurator-projects.md#creating-a-game-project)\.
+For more information, see [Creating a Game Project in Lumberyard](/docs/userguide/configurator/projects.md#creating-a-game-project)\.
 
 ![\[Image NOT FOUND\]](/images/userguide/gems/project-template-default-simple-level.png)

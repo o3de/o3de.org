@@ -27,7 +27,7 @@ This tutorial assumes the following:
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 + You have opened the Cloud Gem Portal\. 
 
-If you don't meet the prerequisites, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
 ## Opening the Defect Reporter Cloud Gem Portal<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-opening"></a>
 

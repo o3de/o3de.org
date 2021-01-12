@@ -38,7 +38,7 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
 
 ## Blend Two Additive Node Attributes<a name="animation-editor-blending-blendtwoadditive-attributes"></a>
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](animation-editor-blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
 
 The **Extraction Mode** for the **Blend Two Additive** node features masking and additive blending, which adds complexity over **Extraction Mode** for transitions\.
 

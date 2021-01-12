@@ -19,4 +19,4 @@ The **Entity Outliner** shows all the entities and slices in the level\. You can
 
 **Note**  
 Entities in white are freestanding entities\.
-Entities in blue are part of a [slice](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#slices)\. For more information, see the [slice icons](component-slices.md#identify-slices)\. 
+Entities in blue are part of a [slice](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#slices)\. For more information, see the [slice icons](/docs/userguide/components/slices.md#identify-slices)\. 

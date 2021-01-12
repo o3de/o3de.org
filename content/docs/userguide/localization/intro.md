@@ -23,11 +23,11 @@ Lumberyard has two main types of localization XML assets:
 
 After you prepare your assets and place them in the preferred location, see the [Localization System](/docs/userguide/localization/initialization.md) documentation to ensure that your game is ready to use your assets\.
 
-English is the default language for a game project\. To change languages, see [Console Variables](localization-initialization.md#localization-initialization-cvars)\.
+English is the default language for a game project\. To change languages, see [Console Variables](/docs/userguide/localization/initialization.md#localization-initialization-cvars)\.
 
 ### Tag Definition XML<a name="localization-configuring-tagxml"></a>
 
-The **Tag Definition XML** file groups localized text XML files by tag name\. It must be [loaded in C\+\+ at runtime](localization-initialization.md#localization-initialization-manager), typically at startup\.
+The **Tag Definition XML** file groups localized text XML files by tag name\. It must be [loaded in C\+\+ at runtime](/docs/userguide/localization/initialization.md#localization-initialization-manager), typically at startup\.
 
 The following is an example of how the tag definition XML file appears:
 
@@ -49,7 +49,7 @@ This file should reside within your game project directory\. For example, in the
 
 ### Localized text XML<a name="localization-configuring-localizedxml"></a>
 
-**Localized text XML** files contain the text resources for a specific language\. This way, your game project can reference the localization keys\. This causes the localization system to return the corresponding value for the currently configured language\. For more information, see [Localizing Text](localization-initialization.md#localization-initialization-text)\.
+**Localized text XML** files contain the text resources for a specific language\. This way, your game project can reference the localization keys\. This causes the localization system to return the corresponding value for the currently configured language\. For more information, see [Localizing Text](/docs/userguide/localization/initialization.md#localization-initialization-text)\.
 
 You can edit these files manually, in Microsoft Excel, or in most industry\-standard CAT tools\.
 

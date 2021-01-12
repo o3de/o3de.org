@@ -67,7 +67,7 @@ Note that the dynamic content gem enables you to upload content with or without 
 
 ### Suspending versioning<a name="dynamic-content-versioning-suspend"></a>
 
-To suspend dynamic content versioning, use the `suspend-versioning` CLI command\. For details on the arguments available to this command, see [dynamic\-content suspend\-versioning](cloud-canvas-cloud-gem-dc-lmbr-aws.md#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-suspend-versioning)\.
+To suspend dynamic content versioning, use the `suspend-versioning` CLI command\. For details on the arguments available to this command, see [dynamic\-content suspend\-versioning](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-suspend-versioning)\.
 
 Note that suspending versioning will not revert the versioned S3 bucket to an unversioned state\. Existing objects do not change after the suspension, but the S3 bucket will stop accruing new versions of the same object\.
 

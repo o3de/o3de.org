@@ -128,7 +128,7 @@ The following table lists the variables that are automatically added to the Jinj
 
 | Variable | Description | 
 | --- | --- | 
-| extra\_data | Python object that contains data returned by the [apply\_transformations](az-code-gen-template-drivers.md#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. | 
+| extra\_data | Python object that contains data returned by the [apply\_transformations](/docs/userguide/codegen/template-drivers.md#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. | 
 | extra\_str | String that contains the contents of extra\_data in JSON format\. | 
 | json\_object | Python object that contains the decoded intermediate JSON after it has been processed by the template driver\. | 
 | json\_str | String that contains the encoded intermediate JSON after it has been processed by the template driver\. | 

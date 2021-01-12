@@ -15,7 +15,7 @@ Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics 
 
 1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Performance**\.
 
-1. Choose **Android** or **iOS** and then choose a setting\. For more information, see [Editor Settings](lumberyard-editor-menus.md#lumberyard-editor-menus-config-spec)\.
+1. Choose **Android** or **iOS** and then choose a setting\. For more information, see [Editor Settings](/docs/userguide/editor/menus.md#lumberyard-editor-menus-config-spec)\.
 
 ![\[Lumberyard Editor Graphics Performance menu for Android\]](/images/userguide/mobile/graphics-performance-mobile-settings.png)
 

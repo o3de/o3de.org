@@ -29,7 +29,7 @@ Note the following:
 + After you have initialized the project, Lumberyard prompts you to create a deployment for it\. A deployment creates all the AWS resources that are specified in your resource group definition\.  
 ![\[Create deployment\]](/images/userguide/cloud_canvas/cloud-canvas-resource-groups-create-deployment.png)
 
-  For more information, see [Create Deployment ](cloud-canvas-ui-rm-deployments.md#cloud-canvas-ui-rm-create-deployment)\.
+  For more information, see [Create Deployment ](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md#cloud-canvas-ui-rm-create-deployment)\.
 
    
 
@@ -39,13 +39,13 @@ Clicking **Add resource group** opens the **New resource group** dialog:
 
 ![\[New resource group\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-new-resource-group-w-examples.png)
 Provide the following information:  
-+  **Resource group name** – The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](cloud-canvas-resource-definitions.md#cloud-canvas-deployment-template) file\. 
++  **Resource group name** – The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-deployment-template) file\. 
 +  **Example resources** – \(Optional\) Choose to include example resources in the resource group\. You can study the examples to see how resources are defined in a resource group, or modify the examples to turn them into a feature for your project\. 
 
     
 
 **Resource group status**  
-Shows the status of the AWS CloudFormation stack of each resource group in the active deployment\. **Resource group** shows the resource group name\. For descriptions of the remaining fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\.
+Shows the status of the AWS CloudFormation stack of each resource group in the active deployment\. **Resource group** shows the resource group name\. For descriptions of the remaining fields in this table, see [Stack Resources Table](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\.
 
 **Progress log**  
 Shows the progress of AWS CloudFormation stack updates\. For more information, see [Viewing the Cloud Canvas Progress Log](/docs/userguide/gems/cloud-canvas/ui-rm-progress-log.md)\.
@@ -106,7 +106,7 @@ When you click **Delete resources**, Lumberyard prompts you to confirm the delet
 After you click **Yes**, the deletion operation might take several minutes to complete\. 
 
 **Stack resources**  
-The **Stack resources** table shows the status of each of the AWS resources that you defined for the resource group\. For descriptions of the fields in this table, see [Stack Resources Table](cloud-canvas-ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\. 
+The **Stack resources** table shows the status of each of the AWS resources that you defined for the resource group\. For descriptions of the fields in this table, see [Stack Resources Table](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md#cloud-canvas-ui-rm-stack-resources-table) in the [Working with Project Stacks ](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) section\. 
 
 ## resource\-template\.json<a name="cloud-canvas-ui-rm-resource-template-json-link"></a>
 
@@ -114,8 +114,8 @@ For information about this node, see [Working with JSON Files](/docs/userguide/g
 
 ## lambda\-function\-code<a name="cloud-canvas-ui-rm-lambda-function-code"></a>
 
-The **lambda\-function\-code** node and its child nodes correspond to the `lambda-function-code` directory in your project\. The `lambda-function-code` directory contains the code that implements the AWS Lambda function resources that are defined by your resource group\. For more information, see [The lambda\-function\-code Directory](cloud-canvas-resource-definitions.md#cloud-canvas-lambda-function-code-subdirectory)\. Also see related information for the [project\-code ](#cloud-canvas-ui-rm-project-code) node\. 
+The **lambda\-function\-code** node and its child nodes correspond to the `lambda-function-code` directory in your project\. The `lambda-function-code` directory contains the code that implements the AWS Lambda function resources that are defined by your resource group\. For more information, see [The lambda\-function\-code Directory](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-lambda-function-code-subdirectory)\. Also see related information for the [project\-code ](#cloud-canvas-ui-rm-project-code) node\. 
 
 ## project\-code<a name="cloud-canvas-ui-rm-project-code"></a>
 
-This node is located at the bottom of the **Administration \(advanced\)** section in the resource manager navigation tree\. The `project-code` directory contains the code that implements the AWS Lambda function resources that **Cloud Canvas Resource Manager** uses\. For more information, see [The project\-code Directory](cloud-canvas-resource-definitions.md#cloud-canvas-project-code-subdirectory)\. The **project\-code** node contains file and directory child nodes\. Click a file node to see or edit its contents in the detail pane\. For more information, see [Editing Resource Manager Files](/docs/userguide/gems/cloud-canvas/ui-rm-text-editing.md)\. 
+This node is located at the bottom of the **Administration \(advanced\)** section in the resource manager navigation tree\. The `project-code` directory contains the code that implements the AWS Lambda function resources that **Cloud Canvas Resource Manager** uses\. For more information, see [The project\-code Directory](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-project-code-subdirectory)\. The **project\-code** node contains file and directory child nodes\. Click a file node to see or edit its contents in the detail pane\. For more information, see [Editing Resource Manager Files](/docs/userguide/gems/cloud-canvas/ui-rm-text-editing.md)\. 

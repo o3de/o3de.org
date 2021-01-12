@@ -92,7 +92,7 @@ Combining the clean\_\* and build\_\* commands is the equivalent of performing a
 **Configure command options**  
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/waf-commands.html)
 
-You can set the command options at build time\. These options override the values set in the `user_settings.options` file\. For more information, see [Project Configurator](waf-user-options-and-settings.md#waf-files-user-settings)\.
+You can set the command options at build time\. These options override the values set in the `user_settings.options` file\. For more information, see [Project Configurator](/docs/userguide/waf/user-options-and-settings.md#waf-files-user-settings)\.
 
 Only modules that support each project configuration are built from the project spec\. If a module is defined in the spec that only can be built in debug or profile, building in performance mode excludes that project from compilation\.<a name="build-parameters"></a>
 

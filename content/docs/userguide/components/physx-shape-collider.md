@@ -6,10 +6,10 @@ title: '&physx-shape-collider;'
 # PhysX Shape Collider<a name="component-physx-shape-collider"></a>
 
 The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider geometry based on the shape definition supplied by a **Shape** component\. The PhysX Shape Collider supports the following Shape components: 
-+  [Box](component-shapes.md#box-shape-component-properties) 
-+  [Capsule](component-shapes.md#capsule-shape-component-properties) 
++  [Box](/docs/userguide/components/shapes.md#box-shape-component-properties) 
++  [Capsule](/docs/userguide/components/shapes.md#capsule-shape-component-properties) 
 +  [Polygon Prism](/docs/userguide/components/polygon-prism.md) 
-+  [Sphere](component-shapes.md#sphere-shape-component-properties) 
++  [Sphere](/docs/userguide/components/shapes.md#sphere-shape-component-properties) 
 
 **Note**  
 The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static \(non\-moving\) entity\. To create a dynamic \(moving\) entity, you also must add a [PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md) component\. 
@@ -28,9 +28,10 @@ To use the PhysX Shape Collider component you must enable [PhysX](/docs/userguid
 For more information, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
 
 **Topics**
-+ [PhysX Shape Collider properties](#component-physx-shape-collider-properties)
-+ [Complex polygon prism shapes](#complex-polygon-prism-shapes)
-+ [Colliders as triggers](#colliders-as-triggers)
+- [PhysX Shape Collider<a name="component-physx-shape-collider"></a>](#physx-shape-collider)
+  - [PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>](#physx-shape-collider-properties)
+  - [Complex polygon prism shapes<a name="complex-polygon-prism-shapes"></a>](#complex-polygon-prism-shapes)
+  - [Colliders as triggers<a name="colliders-as-triggers"></a>](#colliders-as-triggers)
 
 ## PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>
 

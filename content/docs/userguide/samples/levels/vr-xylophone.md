@@ -27,7 +27,7 @@ The right and left controllers are set up similarly, except that they spawn diff
 
 ![\[Entities for left and right controllers and projectile entities in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-left-right-controllers-and-projectiles.png)
 
-The projectile entities are also set up similarly, except for size and color\. They use the **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Primitive Collder](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-primitive-collider.html)** and **[Box Shape](component-shapes.md#box-shape-component-properties)** components to collide and interact with the domino entities in a physically realistic way\. Upon spawning, the projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
+The projectile entities are also set up similarly, except for size and color\. They use the **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Primitive Collder](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-primitive-collider.html)** and **[Box Shape](/docs/userguide/components/shapes.md#box-shape-component-properties)** components to collide and interact with the domino entities in a physically realistic way\. Upon spawning, the projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
 
 You can find the `projectile_largebox.slice` and `projectile_smallBox.slice` files in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 

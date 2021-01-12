@@ -8,7 +8,7 @@ Before you can use the Speech Recognition Sample Level, you must prepare the nec
 
 ## Preparing the Sample Level<a name="cloud-canvas-cloud-gem-speech-recognition-sample-level-preparing-the-sample-level"></a>
 
-To prepare the sample level, you use the Cloud Gem Portal to import the sample Amazon Lex bot that is included with Lumberyard\. For more information about bots, see [ Bots, Intents, Slots, and Elicitations](cloud-canvas-cloud-gem-speech-recognition-intro.md#cloud-canvas-cloud-gem-speech-recognition-intro-bots-intents-slots-and-elicitations)\.
+To prepare the sample level, you use the Cloud Gem Portal to import the sample Amazon Lex bot that is included with Lumberyard\. For more information about bots, see [ Bots, Intents, Slots, and Elicitations](/docs/userguide/gems/cloud-canvas/speech-recognition-intro.md#cloud-canvas-cloud-gem-speech-recognition-intro-bots-intents-slots-and-elicitations)\.
 
 **To prepare the sample Level**
 

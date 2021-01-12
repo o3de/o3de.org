@@ -14,7 +14,7 @@ If the **Force** parameter is disabled, the node renders only procedural materia
 
 When the **Force** parameter is enabled, the node is guaranteed to render the changes\. Use this option to make only occasional updates to the procedural material, or if you previously updated the procedural material every frame and you want a final update to guarantee that the update is not missed\.
 
-For an example script with the **Render Asynchronous** node, see the [example script](script-canvas-procedural-material-nodes.md#example-brick-wall-render-asynchronous-script)\.
+For an example script with the **Render Asynchronous** node, see the [example script](/docs/userguide/scripting/scriptcanvas/procedural-material-nodes.md#example-brick-wall-render-asynchronous-script)\.
 
 **Note**  
 If the **Set Input <Type>** nodes don't modify a procedural material, which means the procedural material doesn't have pending parameter changes, the **Render Asynchronous** node ignores the material\.

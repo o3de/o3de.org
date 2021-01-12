@@ -54,7 +54,7 @@ The default Visual Studio installation might not include all of the features tha
      + \(Optional\) To build with the Visual Studio 2017 toolset in Visual Studio 2019, select **MSVC v141 \- VS 2017 C\+\+ x64/x86 build tools**\. 
 
 **Note**  
-Incredibuild users: Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\. For instructions on configuring the agent properly, see [Compiling with IncrediBuild](waf-extensions.md#waf-extensions-incredibuild)\. 
+Incredibuild users: Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\. For instructions on configuring the agent properly, see [Compiling with IncrediBuild](/docs/userguide/waf/extensions.md#waf-extensions-incredibuild)\. 
 
 **Note**  
 Beginning with Visual Studio 2017, Microsoft now releases updates on a more frequent cadence \(in some cases weekly\)\. Lumberyard is tested with the latest version of Visual Studio available during the release cycle\. 

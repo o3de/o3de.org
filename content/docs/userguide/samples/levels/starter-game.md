@@ -41,4 +41,4 @@ All reusable assets and scripts have been placed into the following Asset Gems, 
 
    If you're running Starter Game in the editor and Valena dies, press **Esc** to exit the game\.
 **Note**  
-To toggle debugging information on and off in the viewport when you're in gameplay mode, press the tilde \(**\~**\) key\. For more information, see [Using Console Debug Views](debugging-intro.md#debugging-debug-views)\.
+To toggle debugging information on and off in the viewport when you're in gameplay mode, press the tilde \(**\~**\) key\. For more information, see [Using Console Debug Views](/docs/userguide/debugging/intro.md#debugging-debug-views)\.

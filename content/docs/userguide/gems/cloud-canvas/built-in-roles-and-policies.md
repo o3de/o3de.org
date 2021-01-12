@@ -154,10 +154,10 @@ You can use `AWS::IAM::ManagedPolicy` resources to define permissions that are s
 | Policy | File | Description | 
 | --- | --- | --- | 
 | CloudGemPortalUserAccess | project\-template\.json | Grants user\-only access to the Cloud Gem Portal\. Does not grant access to Cloud Gem Portal administrator features like user management or project logs\. | 
-| ProjectAccess | project\-template\.json | Defines the permissions needed to access the project and deployment configuration that must be read before a project\-wide role can be assumed\. For more information, see [Assuming a Role](cloud-canvas-rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
+| ProjectAccess | project\-template\.json | Defines the permissions needed to access the project and deployment configuration that must be read before a project\-wide role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
 | ProjectOwnerAccess | project\-template\.json | Defines the default permissions granted to the ProjectOwner and ProjectAdmin roles\. | 
 | ProjectAdminRestrictions | project\-template\.json | Defines restrictions to the ProjectOwnerAcess policy that apply only to the ProjectAdmin role\. | 
-| DeploymentAccess | deployment\-access\-template\.json | Defines the permissions needed to access project and deployment configuration that must be read before a deployment\-specific role can be assumed\. For more information, see [Assuming a Role](cloud-canvas-rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
+| DeploymentAccess | deployment\-access\-template\.json | Defines the permissions needed to access project and deployment configuration that must be read before a deployment\-specific role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
 | DeploymentOwnerAccess | deployment\-access\-template\.json | Defines the default permissions granted to the DeploymentOwner and DeploymentAdmin roles\. | 
 | DeploymentAdminRestrictions | deployment\-access\-template\.json | Defines restrictions to the DeploymentOwnerAccess policy that apply only to the DeploymentAdmin role\. | 
 

@@ -5,12 +5,12 @@ title: Making a &cloud; Deployment Active
 ---
 # Making a Cloud Canvas Deployment Active<a name="cloud-canvas-ui-select-deployment"></a>
 
-You can select the deployment that you want Lumberyard Editor to consider active\. The active deployment is the deployment that you work with in Lumberyard Editor\. Lumberyard Editor uses the active deployment's resources when you launch your game\. When you select the [Working with Resource Groups](/docs/userguide/gems/cloud-canvas/ui-rm-resource-groups.md) node or an [Managing Individual Resource Groups](cloud-canvas-ui-rm-resource-groups.md#cloud-canvas-ui-rm-individual-resource-group) node in the **Cloud Canvas ****Resource Manager** navigation pane, the status information that appears corresponds to the active deployment\.
+You can select the deployment that you want Lumberyard Editor to consider active\. The active deployment is the deployment that you work with in Lumberyard Editor\. Lumberyard Editor uses the active deployment's resources when you launch your game\. When you select the [Working with Resource Groups](/docs/userguide/gems/cloud-canvas/ui-rm-resource-groups.md) node or an [Managing Individual Resource Groups](/docs/userguide/gems/cloud-canvas/ui-rm-resource-groups.md#cloud-canvas-ui-rm-individual-resource-group) node in the **Cloud Canvas ****Resource Manager** navigation pane, the status information that appears corresponds to the active deployment\.
 
 You can also select the deployment that you want to be active by default for all team members\.
 
 **Note**  
-To select a deployment, you must have initialized **Cloud Canvas ****Resource Manager** to work with your AWS account and created a deployment\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md) and [Create Deployment ](cloud-canvas-ui-rm-deployments.md#cloud-canvas-ui-rm-create-deployment)\. 
+To select a deployment, you must have initialized **Cloud Canvas ****Resource Manager** to work with your AWS account and created a deployment\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md) and [Create Deployment ](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md#cloud-canvas-ui-rm-create-deployment)\. 
 
 ## Making a Deployment Active<a name="cloud-canvas-ui-select-deployment-active"></a>
 

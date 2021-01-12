@@ -95,7 +95,7 @@ android_asset_mode = apk_paks
    ```
 
 1.  Configure the connection from the device to the shader compiler\. You can either do this by starting the Shader Compiler yourself, or by passing traffic to the Shader Compiler through the Asset Processor\. 
-   +  **Connect directly to shader compiler** – See [Connect to the Shader Compiler](android-build-deploy.md#running-the-shader-compiler-for-android) for instructions\. 
+   +  **Connect directly to shader compiler** – See [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy.md#running-the-shader-compiler-for-android) for instructions\. 
    + **Connect to Asset Processor** – Edit the Android configuration to use the Asset Processor's shader compiler process\.
 
      1. Open the file `lumberyard_install_dir\dev\system_android_es3.cfg` in a text editor\.

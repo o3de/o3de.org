@@ -26,10 +26,10 @@ The **Sky Cloud** component replaces [legacy clouds](https://docs.aws.amazon.com
 Lumberyard features two variations of cloud rendering:
 
 **Common clouds**  
-This sprite\-based rendering path uses simple shading to optimize performance\. Close up, these clouds appear in 3D but once the clouds are a certain configurable distance from the viewer, an [imposter](ly-glos-chap.md#imposter) is substituted\.
+This sprite\-based rendering path uses simple shading to optimize performance\. Close up, these clouds appear in 3D but once the clouds are a certain configurable distance from the viewer, an [imposter](/docs/userguide/ly-glos-chap.md#imposter) is substituted\.
 
 **Volumetric clouds**  
-This implementation uses advanced shading to create realistic [voxelized](ly-glos-chap.md#voxel) 3D clouds but is slower to render\.
+This implementation uses advanced shading to create realistic [voxelized](/docs/userguide/ly-glos-chap.md#voxel) 3D clouds but is slower to render\.
 
 With the **Sky Cloud** component, you can do the following:
 + Randomly generate common and volumetric clouds in controlled areas\.
@@ -89,7 +89,7 @@ Defines parameters for cloud generation when you click **Generate**\.
 
 ### Volumetric Rendering Parameters<a name="component-sky-cloud-properties-volumetric"></a>
 
-When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](ly-glos-chap.md#voxel) and uses the [Volume Object shader](/docs/userguide/shaders/volumeobject.md)\.
+When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](/docs/userguide/ly-glos-chap.md#voxel) and uses the [Volume Object shader](/docs/userguide/shaders/volumeobject.md)\.
 
 When **Volumetric Rendering** is not enabled, you create a sprite\-based common cloud, which uses the [Common Cloud shader](/docs/userguide/shaders/common-cloud.md)\.
 

@@ -29,7 +29,7 @@ To ensure that the VR project launches, you must use Lumberyard Setup Assistant 
 
 1. Download the required SDKs to view video playback for the Virtual Reality Samples Project\. 
 **Important**  
-The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](component-videoplayback.md#component-videoplayback-setup)\. 
+The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](/docs/userguide/components/videoplayback.md#component-videoplayback-setup)\. 
 
 1. Close Lumberyard Setup Assistant\.
 

@@ -38,7 +38,7 @@ If your clients fail to connect to the server, then check the following configur
 + Ensure that the expected server fleet port\(s\) are open in Amazon GameLift\. This can be checked from the fleet console and the CLI\.
 + Ensure that your server is listening on the port reported to GameLift via the `ProcessParameters` object passed to `ProcessReady()`\.
 + Ensure that your clients do not have the `sv_port` cvar set to something unexpected\. We recommend that you leave this at the ephemeral port\.
-+ If you are using **MultiplayerSample** as a basis for your fleets, verify that the server and client have the same self\-signed certificate\. You must use a consistent certificate across clients and server fleets\. For more information about self\-signed certificates, see [About Self\-Signed Certificates in the Multiplayer Sample](sample-project-multiplayer-enhanced.md#sample-project-multiplayer-enhanced-self-signed-certificates)\.
++ If you are using **MultiplayerSample** as a basis for your fleets, verify that the server and client have the same self\-signed certificate\. You must use a consistent certificate across clients and server fleets\. For more information about self\-signed certificates, see [About Self\-Signed Certificates in the Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md#sample-project-multiplayer-enhanced-self-signed-certificates)\.
 + Verify that `gm_netsec_enable` is consistent between your clients and fleets\. It is on by default for the dedicated server, but you can turn it off by passing `+gm_netsec_enable 0` in the startup params\.
 
 ## Additional information<a name="gamelift-troubleshooting-additional-information"></a>
@@ -47,4 +47,4 @@ For additional troubleshooting tips and information, see the following topics:
 + [Debug GameLift fleet issues](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-creating-debug.html)
 + [Accessing GameLift fleet instances remotely](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-remote-access.html)
 + [Testing your GameLift integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html)
-+ [Multiplayer Sample troubleshooting](sample-project-multiplayer-enhanced.md#sample-project-multiplayer-enhanced-troubleshooting)
++ [Multiplayer Sample troubleshooting](/docs/userguide/samples/projects/multiplayer-enhanced.md#sample-project-multiplayer-enhanced-troubleshooting)

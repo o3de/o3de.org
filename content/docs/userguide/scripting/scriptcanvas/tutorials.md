@@ -8,7 +8,7 @@ title: '&script-canvas; Tutorials'
 Use the following **Script Canvas** tutorials to learn about the Lumberyard visual scripting system\.
 
 ## Prerequisites<a name="prerequisites-for-script-canvas-tutorial"></a>
-+ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](configurator-projects.md#project-configurator-launch-projects)\.
++ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
 + If your **Node Palette** is missing nodes, you can update your preferences to show hidden nodes\. For more information, see [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)\. 
 + To access diagnostic nodes, including the **Print** node, you must enable the **Script Canvas Diagnostic Library** gem and then build your game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 

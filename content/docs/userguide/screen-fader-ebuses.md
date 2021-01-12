@@ -30,7 +30,7 @@ Triggers fading out to a solid color\.
 | --- | --- | --- | 
 | color | Color |  The color to fade out to\. The use of the **Color** property depends on the value of **Use Current Color**, and whether you are fading in or fading out\.  | 
 | duration | Float | Duration of the fade out in seconds\. | 
-| useCurrentColor | Boolean | When true, the transition uses the current color for the fade overlay\. When false, the transition begins fully transparent\.**Current Color** is the color that is rendered by the fader, including the alpha channel\. This is generally whatever color is left over from prior fading activity\.The [Color Property Behavior](screen-fader-node.md#color-property-behavior) table shows the color values that are blended to create the fading transition\.  | 
+| useCurrentColor | Boolean | When true, the transition uses the current color for the fade overlay\. When false, the transition begins fully transparent\.**Current Color** is the color that is rendered by the fader, including the alpha channel\. This is generally whatever color is left over from prior fading activity\.The [Color Property Behavior](/docs/userguide/screen-fader-node.md#color-property-behavior) table shows the color values that are blended to create the fading transition\.  | 
 | updateAlways | Boolean |  Continues fading even when the game is paused\.  | 
 
 ## ScreenFaderRequestBus FadeIn<a name="screen-fader-request-bus-fade-in"></a>

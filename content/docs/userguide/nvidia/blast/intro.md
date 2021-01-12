@@ -38,7 +38,7 @@ See the following topics for detailed information about NVIDIA Blast\.
 
 [Blast Family Mesh Data component](/docs/userguide/components/blast-family-mesh-data.md) \- Blast Family Mesh Data component reference\. 
 
-[Install NVIDIA Blast plug\-ins](nvidia-blast-install-houdini-plugin.md#nvidia-blast-plugin-install) \- Install the NVIDIA Blast plug\-ins and Houdini Digital Assets\. 
+[Install NVIDIA Blast plug\-ins](/docs/userguide/nvidia/blast/install-houdini-plugin.md#nvidia-blast-plugin-install) \- Install the NVIDIA Blast plug\-ins and Houdini Digital Assets\. 
 
 [Create assets for NVIDIA Blast](/docs/userguide/nvidia/blast/create-blast-asset.md) \- Fracture meshes in Houdini and export assets for NVIDIA Blast\. 
 

@@ -8,7 +8,7 @@ title: Compiling Shaders for Release Builds
 If you build game projects with Lumberyard, shaders for release builds should be compiled and packaged into `.pak` files\. 
 
 **Mobile devices** – On mobile devices, runtime shader compilation is not supported for release builds\. Shaders will compile at run time only if you are running in profile mode or debug mode and can connect to a [remote shader compiler server](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\. For more information, see the following:
-+ [Connect to the Shader Compiler](android-build-deploy.md#running-the-shader-compiler-for-android)
++ [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy.md#running-the-shader-compiler-for-android)
 + [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)
 + [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)
 
@@ -31,7 +31,7 @@ To generate shader `.pak` files, use the following tools:
   For more information, see [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\. 
 + **`ShaderCacheGen.exe`** – File that populates the local shader cache folder with all the shaders contained in the `ShaderList.txt` file\. 
 
-  For more information, see [ShaderCache\.pak File Generation](mat-shaders-custom-dev-cache-intro.md#mat-shaders-custom-dev-cache-generation)\.
+  For more information, see [ShaderCache\.pak File Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md#mat-shaders-custom-dev-cache-generation)\.
 + **`lmbr_pak_shaders.bat`** – Batch file that generates the `ShaderCache.pak` files\. 
 
-  For more information, see [ShaderCache\.pak File Generation](mat-shaders-custom-dev-cache-intro.md#mat-shaders-custom-dev-cache-generation)\.
+  For more information, see [ShaderCache\.pak File Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md#mat-shaders-custom-dev-cache-generation)\.

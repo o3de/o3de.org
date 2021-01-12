@@ -51,7 +51,7 @@ Prior to Lumberyard version 1\.16, if you deleted a type definition and then upd
 This behavior could result in rollback errors and a potentially unrecoverable stack when you tried to update instances of the resource type\. For this reason, Lambda functions associated with resource types now remain in your account indefinitely and are deleted only when the project is deleted\.
 
 **Note**  
-Lambda functions are deleted in AWS only when you run `lmbr_aws project delete`\. If you delete your project stack locally but not in AWS, the Lambda functions associated with your resource types will remain\. To delete them, you can use the AWS console or the [Cloud Canvas cleanup tool](cloud-canvas-administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-tool)\. Because the cleanup tool can be very destructive, use it with caution, and do not use it on production deployments\.
+Lambda functions are deleted in AWS only when you run `lmbr_aws project delete`\. If you delete your project stack locally but not in AWS, the Lambda functions associated with your resource types will remain\. To delete them, you can use the AWS console or the [Cloud Canvas cleanup tool](/docs/userguide/gems/cloud-canvas/administration-aws-resource-cleanup.md#cloud-canvas-administration-aws-resource-cleanup-tool)\. Because the cleanup tool can be very destructive, use it with caution, and do not use it on production deployments\.
 
 ## Removing Unused Custom Resource Code<a name="cloud-canvas-cgf-adding-aws-resources-versioning-removing-unused-custom-resource-code"></a>
 

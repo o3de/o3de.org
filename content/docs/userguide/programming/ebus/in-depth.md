@@ -185,7 +185,7 @@ Asynchronous messages have the following advantages:
 + The performance of the code that initiates events doesn't rely on the efficiency of the code that handles the events\.
 + In performance\-critical code, asynchronous messages can improve i\-cache and d\-cache performance because they require fewer virtual function calls\.
 
-For information on declaring an EBus for queing and sending messages asynchronously, see [Asynchronous/Queued Buses](ebus-usage-and-examples.md#ebus-usage-and-examples-queued)\.
+For information on declaring an EBus for queing and sending messages asynchronously, see [Asynchronous/Queued Buses](/docs/userguide/programming/ebus/usage-and-examples.md#ebus-usage-and-examples-queued)\.
 
 ## Additional Features<a name="ebus-in-depth-features"></a>
 

@@ -49,7 +49,7 @@ To use the cleanup tool, you must complete the following:
 + Install Lumberyard on your computer\.
 + Set up and configure an AWS admininstrator IAM profile and set an admininstrator profile name as default on your computer\.
 
-  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](cloud-canvas-tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](cloud-canvas-tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 + Install the [AWS CLI](https://aws.amazon.com/cli/), [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/index.html) it with an admininstrator IAM profile, and set it to your preferred region\.
 
   For instructions on how to install the AWS CLI on Windows, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\. The AWS CLI requires Python\. You may use the version of Python distributed as part of Lumberyard, provided that it's available in your system's `PATH`\.
@@ -68,7 +68,7 @@ In the `lumberyard_installation\dev` directory, run the following command\.
      ```
      lmbr_aws profile default --set profile_name
      ```
-This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](cloud-canvas-resource-definitions.md#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.  
+This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.  
 The following example command sets the default Cloud Canvas profile to `CloudCanvasAdmin` for the CloudGemDefectReportSample project in the Lumberyard installation location `C:\Lumberyard\`\.
 
      ```
@@ -219,7 +219,7 @@ You can use the AWS Command Line Interface to remove resources from specific AWS
 To use the AWS CLI, you must complete the following:
 + Set up and configure an AWS admininstrator IAM profile and set an admininstrator profile name as default on your computer\.
 
-  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](cloud-canvas-tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](cloud-canvas-tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 + Install the [AWS CLI](https://aws.amazon.com/cli/), [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/index.html) it with an admininstrator IAM profile, and set it to your preferred region\.
 
   For instructions on how to install the AWS CLI on Windows, Linux, macOS, or Unix, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\. The AWS CLI requires Python\. You may use the version of Python distributed as part of Lumberyard, provided that it's available in your system's `PATH`\.

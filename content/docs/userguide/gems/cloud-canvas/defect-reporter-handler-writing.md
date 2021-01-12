@@ -108,23 +108,23 @@ Attachments can be temporary files\. The temporary files can be handled in one o
 
 The following workflow shows the functions that are called to gather user input from a UI like the Defect Report Editor in the DefectReporterSample level of the CloudGemDefectReportSample project\.
 
-1. The `CloudGemDefectReporterRequests::`[`TriggerUserReportEditing`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting) function is called\.
+1. The `CloudGemDefectReporterRequests::`[`TriggerUserReportEditing`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting) function is called\.
 
-1. The `TriggerUserReportEditing` function broadcasts a `CloudGemDefectReporterUINotificationBus::`[`OnOpenDefectReportEditorUI`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui) event\.
+1. The `TriggerUserReportEditing` function broadcasts a `CloudGemDefectReporterUINotificationBus::`[`OnOpenDefectReportEditorUI`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui) event\.
 
 1. The UI responds to the `OnOpenDefectReportEditorUI` event by opening a UI form to gather input\.
 
-1. The UI calls `CloudGemDefectReporterRequestBus::`[`GetAvailableReportIDs`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids) to request a list of report IDs\.
+1. The UI calls `CloudGemDefectReporterRequestBus::`[`GetAvailableReportIDs`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids) to request a list of report IDs\.
 
-1. The UI gets data for a specific report by calling `CloudGemDefectReporterRequestBus::`[`GetReport`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport) with the report ID\.
+1. The UI gets data for a specific report by calling `CloudGemDefectReporterRequestBus::`[`GetReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport) with the report ID\.
 
 1. The UI shows the report information to the user\. The user can add an annotation and/or provide data for any custom data collection fields that you create\.
 
-1. When the report contents change, the UI calls `CloudGemDefectReporterRequestBus::`[`UpdateReport`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport) with the modified contents\. If the user presses **Delete**, [`RemoveReport`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport) is called\.
+1. When the report contents change, the UI calls `CloudGemDefectReporterRequestBus::`[`UpdateReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport) with the modified contents\. If the user presses **Delete**, [`RemoveReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport) is called\.
 
 1. When the user is done editing reports, the user clicks **Submit**\.
 
-1. The UI calls `CloudGemDefectReporterRequestBus::`[`PostReports`](cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports) to gather, send, and flush the report queue\.
+1. The UI calls `CloudGemDefectReporterRequestBus::`[`PostReports`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports) to gather, send, and flush the report queue\.
 
 For source code, see `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\Code\Include\CloudGemDefectReporter\CloudGemDefectReporterBus.h`
 
