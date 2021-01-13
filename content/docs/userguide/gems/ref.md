@@ -57,7 +57,7 @@ Lumberyard ships with the following Gems that are ready to be enabled:
 + [Snow Gem](/docs/userguide/gems/builtin/snow.md)
 + [Starting Point Input Gem](/docs/userguide/gems/starting-point-input.md)
 + [Twitch Gem](/docs/userguide/gems/builtin/twitch.md)
-+ [Twitch Chat Gem](/docs/userguide/gem-twitch-chatplay.md)
++ [Twitch Chat Gem](/docs/userguide/gems/builtin/chatplay)
 + [UiBasics Gem](/docs/userguide/gems/builtin/uibasics.md)
 + [User Login Default Gem](/docs/userguide/gems/builtin/user-login.md)
 + [Video Playback Gem](/docs/userguide/gems/builtin/videoplayback.md)

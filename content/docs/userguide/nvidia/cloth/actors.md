@@ -78,7 +78,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 ## Add cloth colliders to an actor {#add-char-cloth-colliders}
 
- You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation\. Cloth colliders are added to actors in **Animation Editor**\. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/userguide/char_animation_add_cloth_colliders.md)\. 
+ You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation\. Cloth colliders are added to actors in **Animation Editor**\. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/userguide/animation/character-editor/cloth-colliders.md)\. 
 
 ## View the Cloth Simulation {#view-cloth-simulation}
 

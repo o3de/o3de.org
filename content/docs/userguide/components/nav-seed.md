@@ -11,7 +11,7 @@ The **[Navigation Area](/docs/userguide/components/nav-area.md)** component can 
 
 ![\[Example Navigation Seed component with red and blue chunks.\]](/images/userguide/component/component-navigation-mesh-seed-enabled.png)
 
-For example, [static objects](/docs/userguide/component-nav-area#component-nav-area-static-entities), [exclusion areas](/docs/userguide/components/nav-area#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/userguide/components/nav-area.md) into multiple chunks\. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\)\. You might have multiple navigation areas in one location, such as for different [agent types](/docs/userguide/components/navigation#component-navigation-properties)\. In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](/docs/userguide/components/nav-area#component-nav-area-properties-agent-types) or a specific agent type in the chunk where you placed the navigation seed\.
+For example, [static objects](/docs/userguide/components/nav-area#component-nav-area-static-entities), [exclusion areas](/docs/userguide/components/nav-area#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/userguide/components/nav-area.md) into multiple chunks\. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\)\. You might have multiple navigation areas in one location, such as for different [agent types](/docs/userguide/components/navigation#component-navigation-properties)\. In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](/docs/userguide/components/nav-area#component-nav-area-properties-agent-types) or a specific agent type in the chunk where you placed the navigation seed\.
 
 **To use the Navigation Seed component**
 
@@ -21,9 +21,9 @@ For example, [static objects](/docs/userguide/component-nav-area#component-nav-a
 
 1. [Add](/docs/userguide/components/working-adding.md) the **Navigation Seed** component to the navigation area entity or to a separate entity\.
 
-1. If you want to specify an [agent type](component-navigation#component-navigation-properties), select it in the **Navigation Seed** component\.
+2. If you want to specify an [agent type](/docs/userguide/components/navigation#component-navigation-properties), select it in the **Navigation Seed** component\.
 
-1. [Move](/docs/userguide/lumberyard-editor-toolbars#lumberyard-editor-toolbars-editmode) the seed around\.
+3. [Move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) the seed around\.
 
    If you [turned on visualization](/docs/userguide/components/nav-area#render-navigation-mesh), all AI\-accessible areas render blue in the chunk where you placed the navigation seed\. Inaccessible areas render red\.
 
