@@ -2,7 +2,7 @@
 description: ' Add two-dimensional distance clouds to your game levels in &ALYlong;. '
 title: Placing Distance Clouds
 ---
-# Placing Distance Clouds<a name="weather-clouds-2d-distance-mesh"></a>
+# Placing Distance Clouds {#weather-clouds-2d-distance-mesh}
 
 Distance clouds are two\-dimensional clouds that are placed at a great distance, such as on the horizon or at high altitudes\. Distance clouds are suitable for creating a realistic distant sky scene without causing rendering performance issues\. Distance clouds do not move and cannot be flown through\.
 

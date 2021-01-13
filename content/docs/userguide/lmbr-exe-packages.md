@@ -2,7 +2,7 @@
 description: ' Use the lmbr packages command to download third party packages to &ALY;. '
 title: Packages Commands
 ---
-# Packages Commands<a name="lmbr-exe-packages"></a>
+# Packages Commands {#lmbr-exe-packages}
 
 Before you can use `packages` commands, you must set up your workspace\. To do this, run Lumberyard Setup Assistant and perform each step of the setup process\.
 

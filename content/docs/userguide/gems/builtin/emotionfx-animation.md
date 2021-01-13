@@ -3,7 +3,7 @@ description: ' Use the &emotionfx; Animation gem in your &ALY; project to enable
   node-based character animation system. '
 title: '&emotionfx; Animation Gem'
 ---
-# EMotion FX Animation Gem<a name="gems-system-gem-emotionfx-animation"></a>
+# EMotion FX Animation Gem {#gems-system-gem-emotionfx-animation}
 
 With the EMotion FX Animation gem, you can use the **EMotion FX Animation Editor** character animation system\. The node\-based system provides an intuitive approach to controlling character behavior from animation graphs\. You can visually build hierarchal state machines and blend trees and use parameter controls for interactive testing\. Character motion is controlled through motion extraction\.
 
@@ -19,6 +19,6 @@ The **Animation Editor** is compatible with `.fbx` files and converts these file
 
 For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
 
-Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](/docs/userguide/configurator/projects.md#creating-a-game-project)\.
+Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](/docs/userguide/configurator/projects#creating-a-game-project)\.
 
 ![\[Image NOT FOUND\]](/images/userguide/gems/animation-editor-render-window.png)

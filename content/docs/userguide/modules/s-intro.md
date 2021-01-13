@@ -2,7 +2,7 @@
 description: ' Introduces &ALY; AZ modules and compares them with legacy modules. '
 title: Using AZ Modules to Initialize Gems
 ---
-# Using AZ Modules to Initialize Gems<a name="az-modules-intro"></a>
+# Using AZ Modules to Initialize Gems {#az-modules-intro}
 
 AZ modules are code libraries designed to plug into Lumberyard games and tools\. An AZ module is a collection of C\+\+ code built as a static or dynamic library \(`.lib` or `.dll` file\) that implements specific initialization functions\. When a Lumberyard application starts, it loads each module and calls these initialization functions\. These initialization functions allow the module to connect to core technologies such as reflection, serialization, [event buses](/docs/userguide/programming/ebus/intro.md), and the [Working with component entities](/docs/userguide/components/intro.md)\.
 
@@ -15,7 +15,7 @@ Lumberyard currently supports both legacy modules and AZ modules but going forwa
 **Note**  
 AZ is the namespace of the AZCore C\+\+ library upon which AZ modules are built\. The letters *AZ* refer to Amazon; the term is a preview name that has nothing to do with [Amazon Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/) and may be subject to change\. 
 
-## Comparing AZ Modules to Legacy Modules<a name="az-modules-intro-az-vs-legacy"></a>
+## Comparing AZ Modules to Legacy Modules {#az-modules-intro-az-vs-legacy}
 
 AZ modules have significant advantages over legacy modules, as the following table shows:
 
@@ -33,32 +33,32 @@ AZ modules have significant advantages over legacy modules, as the following tab
 | Initialization functions | Function parameters are specific to CryEngine\. | Function parameters are specific to the AZ framework; for more information, see the following section\.  | 
 | Order of initialization | Singleton code often depends on services offered by other singletons, so modules must be initialized in a very particular order\. However, the order is not obvious\. If someone is unfamiliar with the code in the modules, their loading order is difficult to ascertain\. | Each module explicitly states its dependencies on system components\. After all system components are examined, they are sorted according to these dependencies and initialized in the appropriate order\. Each module is a first\-class citizen\. | 
 
-### A Self\-Aware Method of Initialization<a name="az-modules-intro-az-vs-legacy-initialization-order"></a>
+### A Self\-Aware Method of Initialization {#az-modules-intro-az-vs-legacy-initialization-order}
 
 Legacy modules are loaded in a particular order\. Because `CrySystem` is loaded and initialized before the game module, it must provide all low\-level systems such as logging and file I/O that a subsequent module might depend on\. The game module itself cannot provide such low\-level systems because it’s initialized too late\. 
 
-AZ modules, on the other hand, are all loaded as early as possible, and then initialized in stages\. Because each module explicitly states its dependencies on system components, all system components can be examined beforehand, sorted according to dependencies, and [initialized in the appropriate order](/docs/userguide/modules/system-components.md#az-module-system-components-smart-initialization-order)\. This makes it possible for low\-level functionality \(like a custom logging system\) to be implemented from a game module\. For more information about the initialization order of components, see [The AZ Bootstrapping Process](/docs/userguide/modules/bootstrap.md)\.
+AZ modules, on the other hand, are all loaded as early as possible, and then initialized in stages\. Because each module explicitly states its dependencies on system components, all system components can be examined beforehand, sorted according to dependencies, and [initialized in the appropriate order](/docs/userguide/modules/system-components#az-module-system-components-smart-initialization-order)\. This makes it possible for low\-level functionality \(like a custom logging system\) to be implemented from a game module\. For more information about the initialization order of components, see [The AZ Bootstrapping Process](/docs/userguide/modules/bootstrap.md)\.
 
-## Relationship with the AZ Framework<a name="az-modules-intro-az-fwk"></a>
+## Relationship with the AZ Framework {#az-modules-intro-az-fwk}
 
 AZ modules are designed to work with the AZ framework, which is a collection of Lumberyard technologies such as reflection, serialization, [event buses](/docs/userguide/programming/ebus/intro.md), and the [Working with component entities](/docs/userguide/components/intro.md)\. The AZ framework supports game development but can also be used outside it\. For example, Lumberyard tools like the Lumberyard Setup Assistant, [Using Asset Processor](/docs/userguide/assets/processor.md) and the component entity system use the AZ framework and AZ modules, but contain no game code\. When the Resource Compiler builds slices, it loads AZ modules to extract reflection information about components within them\.
 
 AZ modules are code libraries that are built to use the AZ framework\. When an AZ framework application loads an AZ module, the AZ module knows how to perform tasks such as gathering reflection information about the data types defined within that library\. 
 
-## Smarter Singletons<a name="az-modules-intro-smarter-singletons"></a>
+## Smarter Singletons {#az-modules-intro-smarter-singletons}
 
  AZ modules build their services \(which are singleton classes\) by using the same component entity system that Lumberyard uses to build in\-game entities\. A module simply places a system component on the system entity\. This solves many of the problems associated with singletons in legacy modules\. 
 
  The GUI in Lumberyard Editor uses the reflection system to expose the properties of entities \(gameplay components\) to designers\. In the same way, Lumberyard uses the reflection system to expose the properties of system components so that you can customize your settings for a particular game\. Because system components are really no different from gameplay components, you can [use the Project Configurator to edit the properties of system components](/docs/userguide/modules/system-entities-configuring.md) just as you edit the properties of in\-game components\. 
 
-## Current Lumberyard AZ Modules<a name="az-modules-intro-current-az-modules"></a>
+## Current Lumberyard AZ Modules {#az-modules-intro-current-az-modules}
 
  The [gems](/docs/userguide/modules/gems.md) provided with Lumberyard are all built as AZ modules\. In addition, there are two AZ modules that are not built as Gems\. 
 
-### LmbrCentral<a name="az-modules-intro-current-az-modules-lmbrcentral"></a>
+### LmbrCentral {#az-modules-intro-current-az-modules-lmbrcentral}
 
 `LmbrCentral` contains components that wrap functionality from legacy modules\. For example, the `MeshComponent` utilizes `IRenderNode` under the hood\. `LmbrCentral` is used by game applications\. 
 
-### LmbrCentralEditor<a name="az-modules-intro-current-az-modules-lmbrcentraleditor"></a>
+### LmbrCentralEditor {#az-modules-intro-current-az-modules-lmbrcentraleditor}
 
 Components can have editor\-specific implementations that integrate with technology not available in the game runtime environment\. Therefore, a separate module, `LmbrCentralEditor`, is used by Lumberyard Editor\. This module contains all the code from `LmbrCentral`, plus code that is only for use in tools\. The `LmbrCentralEditor` module is not for use in standalone game applications\. 

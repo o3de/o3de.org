@@ -2,7 +2,7 @@
 description: ' Learn how to define and use component services in &ALYlong;. '
 title: Defining and Using Component Services
 ---
-# Defining and Using Component Services<a name="component-entity-system-pg-defining-using-component-services"></a>
+# Defining and Using Component Services {#component-entity-system-pg-defining-using-component-services}
 
 Components can optionally specify a list of services that they provide, are incompatible with, depend on, or require\. When you create a component, you can use this service specification to define relationships between various components\. The component entity system uses this list for the conditional addition and removal of components at both edit time and at run time\. The service specification also defines the order in which components are activated when an entity is activated\. Specifically, components that provide services that another component depends on are activated first\.
 

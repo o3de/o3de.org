@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; In-Game Survey Cloud Gem Portal to create surve
   for your game and test them in InGameSurveySample. '
 title: In-Game Survey Cloud Gem Portal
 ---
-# In\-Game Survey Cloud Gem Portal<a name="cloud-canvas-cloud-gem-in-game-survey"></a>
+# In\-Game Survey Cloud Gem Portal {#cloud-canvas-cloud-gem-in-game-survey}
 
 You can use the In\-Game Survey Cloud Gem Portal to create surveys for your game and test them in the **InGameSurveySample**\. Your players can see active surveys and submit answers to them\. You can view survey results and manage your surveys in the Cloud Gem Portal\. 
 
@@ -20,7 +20,7 @@ You can use the In\-Game Survey Cloud Gem Portal to create surveys for your game
 + [Reopening a Survey](#cloud-canvas-cloud-gem-in-game-survey-reopening)
 + [In\-Game Survey Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/in-game-survey-service-api.md)
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-in-game-survey-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-in-game-survey-prerequisites}
 
 This tutorial assumes that you have already performed the following steps to set up the Cloud Gem Portal \(CGP\) and the In\-Game Survey Cloud Gem:
 + You are using a Lumberyard Editor project that has the **Cloud Gem In\-Game Survey** enabled\.
@@ -29,7 +29,7 @@ This tutorial assumes that you have already performed the following steps to set
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem In\-Game Survey** in the Project Configurator\.
 
-## Creating a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-creating"></a>
+## Creating a Survey {#cloud-canvas-cloud-gem-in-game-survey-creating}
 
 When you create a survey in the Cloud Gem Portal, you add the questions that you want\. For each question, you choose a question type and provide the text of the question\. In the Cloud Gem Portal, you can see a preview of your survey and change the order of the questions\.
 
@@ -62,7 +62,7 @@ When you create a survey in the Cloud Gem Portal, you add the questions that you
 
 At this point you can use these options freely\. Because they can affect existing results, use them with caution after you publish your survey\.
 
-## Publishing a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-publishing"></a>
+## Publishing a Survey {#cloud-canvas-cloud-gem-in-game-survey-publishing}
 
 When you publish a survey, you schedule a start and end time and date\. You can also choose to have the survey start immediately and/or have no specified end\.
 
@@ -80,7 +80,7 @@ When you publish a survey, you schedule a start and end time and date\. You can 
 1. Choose **Back to Survey List Page**\. The **Overview** tab shows the active survey, its scheduling, and the number of responses received\.  
 ![\[Active survey information on the Overview tab\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-10.png)
 
-## Testing a Survey with the Sample Level<a name="cloud-canvas-cloud-gem-in-game-survey-testing"></a>
+## Testing a Survey with the Sample Level {#cloud-canvas-cloud-gem-in-game-survey-testing}
 
 To test your survey you can use the in\-game survey sample that is included with Lumberyard\.
 
@@ -99,7 +99,7 @@ To test your survey you can use the in\-game survey sample that is included with
 
 1. Press **Esc** to end the game\. To provide more sample survey data, run the level a few more times to answer the survey questions and submit additional answers\.
 
-## Viewing and Downloading Survey Results<a name="cloud-canvas-cloud-gem-in-game-survey-viewing"></a>
+## Viewing and Downloading Survey Results {#cloud-canvas-cloud-gem-in-game-survey-viewing}
 
 In the Cloud Gem Portal, you can see aggregate and individual response data for your survey\. For text questions, you can see the verbatim text of individual responses\.
 
@@ -131,7 +131,7 @@ In the Cloud Gem Portal, you can see aggregate and individual response data for 
 ![\[Choose an individual survey submission\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-24.png)  
 ![\[A set of answers from an individual submission\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-25.png)
 
-## Editing an Active Survey<a name="cloud-canvas-cloud-gem-in-game-survey-editing-active"></a>
+## Editing an Active Survey {#cloud-canvas-cloud-gem-in-game-survey-editing-active}
 
 You can edit an active survey, but you should do so with caution\. For example, if you change the order of options for a multiple\-choice question, the answers already collected in the results tab will be incorrect\.
 
@@ -149,7 +149,7 @@ You can edit an active survey, but you should do so with caution\. For example, 
    + If you disable a question, it no longer appears in the survey and responses to it are not collected\. Existing responses are preserved\.
    + If you delete a question from an active survey, you can no longer view any responses gathered for the question\.
 
-## Modifying an Active Survey Schedule<a name="cloud-canvas-cloud-gem-in-game-survey-schedule-modifying"></a>
+## Modifying an Active Survey Schedule {#cloud-canvas-cloud-gem-in-game-survey-schedule-modifying}
 
 Follow the steps here to modify the schedule for an active survey\. For a nonactive \(draft\) survey, you specify a schedule when you publish the survey\.
 
@@ -165,7 +165,7 @@ Follow the steps here to modify the schedule for an active survey\. For a nonact
 
    The new schedule appears on the **Overview** tab in the entry for the survey \.
 
-## Cloning a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-cloning"></a>
+## Cloning a Survey {#cloud-canvas-cloud-gem-in-game-survey-cloning}
 
 You can clone a survey from another survey regardless of the original survey's status \(**Active**, **Scheduled**, **Draft**, or **Closed**\)\. After you clone a survey, you can edit it just as you would any other survey\.
 
@@ -182,7 +182,7 @@ You can clone a survey from another survey regardless of the original survey's s
 1. After you have more than one survey, you can filter them on the **Overview** tab by status: **Active**, **Draft**, and/or **Scheduled**\.  
 ![\[Filter surveys by status\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-in-game-survey-36.png)
 
-## Ending a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-ending"></a>
+## Ending a Survey {#cloud-canvas-cloud-gem-in-game-survey-ending}
 
 When you end a survey, the survey and its results are available in your survey history\.
 
@@ -195,7 +195,7 @@ When you end a survey, the survey and its results are available in your survey h
 
    On the **History** tab, you can perform the normal operations of deleting, editing, or cloning closed surveys from the menu options for each survey\.
 
-## Reopening a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-reopening"></a>
+## Reopening a Survey {#cloud-canvas-cloud-gem-in-game-survey-reopening}
 
  You can choose a closed survey on the **History** tab and reopen the survey from the menu for the survey\.
 

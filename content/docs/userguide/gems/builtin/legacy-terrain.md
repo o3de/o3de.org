@@ -2,7 +2,7 @@
 description: ' Use &ALYlong;''s Legacy Terrain &gem; to add terrain to your level. '
 title: Legacy Terrain &gem;
 ---
-# Legacy Terrain Gem<a name="gems-system-gem-legacy-terrain"></a>
+# Legacy Terrain Gem {#gems-system-gem-legacy-terrain}
 
 The Legacy Terrain Gem enables the legacy terrain system in Lumberyard version 1\.24 or later\. With this gem, you can use the **Legacy Terrain** level component in the **Level Inspector** to add terrain to levels\. Levels that were created in Lumberyard versions before 1\.24 that use the legacy terrain system display a warning when they are loaded in Lumberyard version 1\.24 or later, and the new **Legacy Terrain** level component is automatically added to the level\. Newly created levels have the **Legacy Terrain** level component added by default\. 
 
@@ -16,7 +16,7 @@ The Legacy Terrain Gem doesn't introduce new tools to edit terrain\. Terrain tex
 
 In addition to the Legacy Terrain Gem, Lumberyard version 1\.24 introduces a new terrain API: [`AzFramework::Terrain::TerrainDataRequestBus`](/docs/userguide/components/legacy-terrain-api.md)\. The legacy terrain system has been refactored to integrate the new terrain API\. This new API makes it easier to seamlessly replace the legacy terrain system with your own terrain system\. The legacy terrain APIs that are present in `I3DEngine.h` and `ITerrain.h` have been marked for deprecation\. If your project uses the legacy terrain APIs, you should migrate your code as soon as possible to use the new `AzFramework::Terrain::TerrainDataRequestBus`\. The legacy terrain APIs will be removed in a future release\. 
 
-## Disable terrain editor tools<a name="disable-terrain-editor-tools"></a>
+## Disable terrain editor tools {#disable-terrain-editor-tools}
 
 Lumberyard builds the terrain editor tools by default\. If the Legacy Terrain Gem is disabled, a WAF configure\-time warning is raised because terrain can't be added to the level, so the terrain editor tools serve no purpose\. 
 
@@ -40,6 +40,6 @@ If you are **not** using the Legacy Terrain Gem, you can disable the terrain edi
 
   1. Find the **enable\_legacy\_terrain\_editor** option in the **Build** tab and deselect the check box on the right to disable the terrain editor tools\. 
 
-## Legacy terrain system<a name="legacy-terrain-gem-topics"></a>
+## Legacy terrain system {#legacy-terrain-gem-topics}
 + [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md)
 + [TerrainDataRequestBus API](/docs/userguide/components/legacy-terrain-api.md)

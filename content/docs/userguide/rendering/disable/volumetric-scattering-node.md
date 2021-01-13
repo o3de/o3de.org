@@ -3,7 +3,7 @@ description: ' Use the Disable Volumetric Scattering node in the &ALYlong; &scri
   editor to disable volumetric scattering effects. '
 title: Disable Volumetric Scattering
 ---
-# Disable Volumetric Scattering<a name="disable-volumetric-scattering-node"></a>
+# Disable Volumetric Scattering {#disable-volumetric-scattering-node}
 
 Disables volumetric effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Volumetric Scattering](/docs/userguide/renderi
 
 ![\[disablevolumetricscattering, disablevolumetricscatteringnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-volumetric-scattering-node.png)
 
-## Inputs<a name="disable-volumetric-scattering-note-input"></a>
+## Inputs {#disable-volumetric-scattering-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Volumetric Scattering](/docs/userguide/renderi
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-volumetric-scattering-node-output"></a>
+## Outputs {#disable-volumetric-scattering-node-output}
 
 
 ****  

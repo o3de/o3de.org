@@ -3,7 +3,7 @@ description: ' Prepare your &ALYlong; iOS games for store deployment (distributi
   by packing the assets and cached binary shaders. '
 title: Creating a Release App
 ---
-# Creating a Release App<a name="ios-creating-release-app"></a>
+# Creating a Release App {#ios-creating-release-app}
 
 Once you have finished your Lumberyard iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:
 
@@ -17,7 +17,7 @@ Once you have finished your Lumberyard iOS game, you can prepare it for the App 
 
 1. [Generate a build](#ios-generating-app-build)\.
 
-## Preparing Your Code<a name="ios-preparing-your-code"></a>
+## Preparing Your Code {#ios-preparing-your-code}
 
 Modify the code in the `IConsole.h` file to enable the creation of mobile release builds\.
 
@@ -40,7 +40,7 @@ Modify the code in the `IConsole.h` file to enable the creation of mobile releas
 
 1. Save the file\.
 
-## Modifying Your Settings<a name="ios-modifying-your-settings"></a>
+## Modifying Your Settings {#ios-modifying-your-settings}
 
 Modify the settings in your system configuration file to disable communication between the iOS device and the remote shader compiler\. For release builds, Lumberyard packages the shaders directly to the iOS device instead of compiling shaders on demand\.
 
@@ -57,7 +57,7 @@ Modify the settings in your system configuration file to disable communication b
 
 1. Save the file\.
 
-## Creating \.Pak Files<a name="ios-creating-pak-files"></a>
+## Creating \.Pak Files {#ios-creating-pak-files}
 
 Lumberyard apps use `.pak` files to include assets and shaders for your app build\. The `.pak` files are required for release apps and must be created manually\.
 
@@ -65,7 +65,7 @@ Lumberyard apps use `.pak` files to include assets and shaders for your app buil
 + [Building Shader \.Pak Files](#ios-shaders-build-pak-files)
 + [Deploying Shader \.Pak Files](#deploying-shader-pak-files-ios)
 
-### Building Shader \.Pak Files<a name="ios-shaders-build-pak-files"></a>
+### Building Shader \.Pak Files {#ios-shaders-build-pak-files}
 
 Use the Remote Shader Compiler to generate the shaders that are packed into your app build\. You must run your app in profile or debug and view every surface in your game level to capture all shader permutations\. Lumberyard supports both GMEM 128 and GMEM 256 and generates shaders on the highest version that a device supports\. As a result, you must run your game on two devices, one that supports GMEM 128 and one that supports GMEM 256\.
 
@@ -77,7 +77,7 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 
 **To build a shader \.pak file**
 
-1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-launch)\. 
+1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-launch)\. 
 
 1. In a command line window, navigate to the `lumberyard_version\dev\` directory and locate the `lmbr_pak_shaders.sh` file\.
 
@@ -94,7 +94,7 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
    lmbr_pak_shaders.sh SamplesProject METAL ios
    ```
 
-### Deploying Shader \.Pak Files<a name="deploying-shader-pak-files-ios"></a>
+### Deploying Shader \.Pak Files {#deploying-shader-pak-files-ios}
 
 When the batch file finishes building the shader `.pak` file for your game project, verify that the following files exist in the `lumberyard_version\dev\Build\ios\game_project_name\` directory:
 + `ShaderCache.pak` – Contains all compiled shaders that are used only when the shader cannot be found in the current level's shader cache\.
@@ -116,7 +116,7 @@ When the batch file finishes building the shader `.pak` file for your game proje
 
 1. Run the `Build<game_project_name>_Paks_iOS.bat` file and wait for the `.pak` files to finish building\.
 
-## Using Shader \.Pak Files<a name="ios-using-shader-pak-files"></a>
+## Using Shader \.Pak Files {#ios-using-shader-pak-files}
 
 Add the shader \.pak files to your Xcode project\.
 
@@ -128,7 +128,7 @@ Add the shader \.pak files to your Xcode project\.
    + If you're sharing the `Cache` directory between your Windows and macOS computers, reopen your Xcode project\. This will add the files to your `Resources` directory\.
    + Copy the `ios_paks` directory and save it in the `lumberyard_version\dev\Cache\game_project_name\` directory on your macOS computer\. Then reopen your Xcode project\.
 
-## Configuring the App Store Settings<a name="ios-configuring-app-store-settings"></a>
+## Configuring the App Store Settings {#ios-configuring-app-store-settings}
 
 Every Lumberyard project includes an `Info.plist` file that contains the default values for the following settings:
 + Display name
@@ -141,7 +141,7 @@ You can access the `Info.plist` file in the `lumberyard_version\dev\Code\game_pr
 
 Verify the `Info.plist` file is writeable and then use Xcode to modify the values for these settings\. For information about modifying these settings in Xcode, see [Configuring Your Xcode Project for Distribution](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html)\.
 
-## Generating a Build<a name="ios-generating-app-build"></a>
+## Generating a Build {#ios-generating-app-build}
 
 After generating all required asset and shader `.pak` files, you can use Xcode to build, deploy, run, and archive the release version of your iOS app\. Use the same method that you would use for any Xcode project\. For more information, see [Prepare for app distribution](http://help.apple.com/xcode/mac/current/#/dev91fe7130a) in the *XCode Help*\.
 

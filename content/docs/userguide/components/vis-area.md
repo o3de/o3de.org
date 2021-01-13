@@ -2,7 +2,7 @@
 description: ' Use the VisArea component to manage visibility and culling in &ALYlong;. '
 title: VisArea
 ---
-# VisArea<a name="component-vis-area"></a>
+# VisArea {#component-vis-area}
 
 
 ****  
@@ -26,7 +26,7 @@ You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.m
 + [VisArea Component Properties](#component-vis-area-properties)
 + [Vis Area Component Examples](#component-vis-area-examples)
 
-## VisArea Component Properties<a name="component-vis-area-properties"></a>
+## VisArea Component Properties {#component-vis-area-properties}
 
 ![\[The VisArea component properties in Lumberyard Editor.\]](/images/userguide/component/vis-area-component-properties.png)
 
@@ -44,7 +44,7 @@ The **VisArea** component has the following properties\.
 |  **OceanIsVisible**  |  Renders the ocean outside the visible area\.   | 
 |  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  | 
 
-## Vis Area Component Examples<a name="component-vis-area-examples"></a>
+## Vis Area Component Examples {#component-vis-area-examples}
 
 **Example 1**  
 The following example shows two boxes\. One box is inside the visible area, and one is outside\. From outside the visible area, the inside box isn't visible\. The **DisplayFilled** option is enabled so that the visible area appears orange\.  

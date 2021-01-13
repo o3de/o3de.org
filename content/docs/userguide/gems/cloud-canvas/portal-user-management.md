@@ -2,7 +2,7 @@
 description: ' Manage users and administrators of your Cloud Gem Portal in &ALYlong;. '
 title: User Management in the Cloud Gem Portal
 ---
-# User Management in the Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal-user-management"></a>
+# User Management in the Cloud Gem Portal {#cloud-canvas-cloud-gem-portal-user-management}
 
 
 ****  
@@ -16,7 +16,7 @@ Starting in Lumberyard 1\.10, the Cloud Gem Portal authentication API requires a
 **Note**  
 This feature is not related to the [Login with Amazon](https://developer.amazon.com/login-with-amazon) feature that Lumberyard itself uses\. Because your Cloud Gem Portal does not exist publicly and is not registered with Login with Amazon, you cannot use your Login with Amazon account with the Cloud Gem Portal\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-user-management-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-user-management-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Cloud Gem Framework Gem enabled \(in the Project Configurator, select **Cloud Gem Player Framework**\)\.
@@ -24,11 +24,11 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Framework** in the Project Configurator\. For information on creating a project stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-### Legal Restrictions<a name="cloud-canvas-cloud-gem-user-management-legal-restrictions"></a>
+### Legal Restrictions {#cloud-canvas-cloud-gem-user-management-legal-restrictions}
 
 You are responsible for \(a\) providing legally adequate privacy notices to your end users; \(b\) obtaining any necessary consent from the end user for the collection, use, transfer, and storage of any name, password, other login information, or personally identifiable information or personal data of any end user that you \(or any third\-party plug\-in or service provider you use\) may access; \(c\) using and authorizing others to access and use the information only for the purposes permitted by the end user; and \(d\) ensuring the information is collected, used, transferred, and stored in accordance with all laws, rules, and regulations applicable in jurisdictions in which your applications are used\.
 
-## Managing Users<a name="cloud-canvas-cloud-gem-portal-user-management-managing-users"></a>
+## Managing Users {#cloud-canvas-cloud-gem-portal-user-management-managing-users}
 
 To manage users of your Cloud Gem Portal, use the **User Administration** page\.
 
@@ -41,7 +41,7 @@ To manage users of your Cloud Gem Portal, use the **User Administration** page\.
 
 The page shows the current list of users that have access to your project's portal\. The Cloud Gem Portal has two roles: **Portal Admin** and **User**\. Administrators have access to the **Admin** page and can add and remove users\. Nonadministrative users do not see the **Admin** page but have access to cloud gems\.
 
-### Adding Users<a name="cloud-canvas-cloud-gem-portal-user-management-adding"></a>
+### Adding Users {#cloud-canvas-cloud-gem-portal-user-management-adding}
 
 To add a user to your project, you can use the **Admin** page or the Amazon Cognito management console\. Using the **Admin** page is easier and ensures that the permissions are correct\.
 
@@ -59,7 +59,7 @@ To add a user to your project, you can use the **Admin** page or the Amazon Cogn
 
 After you create the user, the user is sent an email with the temporary password\. After the new user signs in, the user is required to change passwords\.
 
-### Deleting Users<a name="cloud-canvas-cloud-gem-portal-user-management-deleting"></a>
+### Deleting Users {#cloud-canvas-cloud-gem-portal-user-management-deleting}
 
 To delete a user, click the delete icon for the user on the **User Administrator** page\.
 
@@ -67,7 +67,7 @@ To delete a user, click the delete icon for the user on the **User Administrator
 
 After you confirm the deletion at the confirmation prompt, the user account is removed and the user is no longer able to sign in\.
 
-### Resetting User Passwords<a name="cloud-canvas-cloud-gem-portal-user-management-resetting-passwords"></a>
+### Resetting User Passwords {#cloud-canvas-cloud-gem-portal-user-management-resetting-passwords}
 
 To reset a user's password, click the arrow next to the delete icon for the user, and then click **Reset Password**\.
 

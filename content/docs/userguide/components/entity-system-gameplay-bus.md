@@ -3,7 +3,7 @@ description: ' Use the Gameplay Bus to end contextual messages between the visua
   scripting, scripting, and code parts of your game '
 title: Gameplay Bus
 ---
-# Gameplay Bus<a name="component-entity-system-gameplay-bus"></a>
+# Gameplay Bus {#component-entity-system-gameplay-bus}
 
 
 ****  
@@ -28,7 +28,7 @@ function MyComponent:OnEventBegin(param)
 end
 ```
 
-## GameplayNotificationId<a name="component-entity-system-gameplay-bus-gameplaynotificationid"></a>
+## GameplayNotificationId {#component-entity-system-gameplay-bus-gameplaynotificationid}
 
 The `GameplayNotificationId` is the type used as the ID for the gameplay bus\. Its syntax is as follows\.
 
@@ -38,7 +38,7 @@ GameplayNotificationId(const AZ::EntityId& entityChannel, AZ::Crc32 actionNameCr
 
 This function takes the `entityChannel`, `actionNameCrc`, and `payloadType` parameters and creates a unique ID that you can use to communicate with the bus\.
 
-### entityChannel<a name="component-entity-system-gameplay-bus-entitychannel"></a>
+### entityChannel {#component-entity-system-gameplay-bus-entitychannel}
 
 When you write your events, choose the ID of an entity channel that makes sense in the context of your game\. Components are automatically aware of the following two entity IDs, which you can use for channels\. These IDs do not require an entity reference\.
 
@@ -48,15 +48,15 @@ When you write your events, choose the ID of an entity channel that makes sense 
 
 To communicate directly to a specific entity, use `GetEntityId()`\. To communicate indirectly to a generic audience, use `AZ::EntityId()`\.
 
-### actionNameCrc<a name="component-entity-system-gameplay-bus-actionnamecrc"></a>
+### actionNameCrc {#component-entity-system-gameplay-bus-actionnamecrc}
 
 You can pass the `actionNameCrc` parameter as a string or as the `AZ::Crc32` of that string when you construct the ID\. This parameter should be the name of the event that gives context to the event data\.
 
-### payloadType<a name="component-entity-system-gameplay-bus-payloadtype"></a>
+### payloadType {#component-entity-system-gameplay-bus-payloadtype}
 
 Use the `payloadType` parameter to specify the type that is sent or received\. This parameter is required starting in Lumberyard version 1\.12\.
 
-## GameplayNotifications<a name="component-entity-system-gameplay-bus-gameplaynotifications"></a>
+## GameplayNotifications {#component-entity-system-gameplay-bus-gameplaynotifications}
 
 The `GameplayNotifications` class contains the gameplay bus type traits\. It establishes the `GameplayNotificationId` as the bus ID\. It defines the following events\.
 
@@ -72,7 +72,7 @@ void OnEventUpdate(const AZStd::any& value)
 void OnEventEnd(cosnt AZStd::any& value)
 ```
 
-## Script Examples<a name="component-entity-system-gameplay-bus-script-examples"></a>
+## Script Examples {#component-entity-system-gameplay-bus-script-examples}
 
 The Lua script examples in this section illustrate the use of `GameplayNotificationBus` to control what happens when an entity enters and then exits lava\.
 

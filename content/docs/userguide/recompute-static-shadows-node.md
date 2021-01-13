@@ -3,7 +3,7 @@ description: ' Use the Recompute Static Shadows node in the &ALYlong; &script-ca
   editor to trigger the recalculation of cached shadow maps. '
 title: Recompute Static Shadows
 ---
-# Recompute Static Shadows<a name="recompute-static-shadows-node"></a>
+# Recompute Static Shadows {#recompute-static-shadows-node}
 
 Triggers recalculation of cached shadow maps\.
 
@@ -13,7 +13,7 @@ Triggers recalculation of cached shadow maps\.
 
 ![\[recompute static shadows, recomputestaticshadows\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/shadows-recompute-static-shadow.png)
 
-## Inputs<a name="recompute-static-shadows-node-inputs"></a>
+## Inputs {#recompute-static-shadows-node-inputs}
 
 
 ****  
@@ -24,7 +24,7 @@ Triggers recalculation of cached shadow maps\.
 | Bounds | AABB |  Specifies the area where shadow maps should be recomputed\.  | 
 | Next Cascade Scale | Number | Multiplier for scaling the bounding boxes for subsequent cached cascades\. The bounding boxes are scaled versions of the preceding cascades\. | 
 
-## Outputs<a name="recompute-static-shadows-node-outputs"></a>
+## Outputs {#recompute-static-shadows-node-outputs}
 
 
 ****  

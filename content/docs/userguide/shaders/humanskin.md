@@ -2,11 +2,11 @@
 description: ' See the HumanSkin shader to render skin in &ALYlong;. '
 title: HumanSkin Shader
 ---
-# HumanSkin Shader<a name="shader-ref-humanskin"></a>
+# HumanSkin Shader {#shader-ref-humanskin}
 
 The HumanSkin shader is used to render skin and its various physical properties including color, oiliness, pores, stubble, and wrinkles\.
 
-## Shader Parameters<a name="shader-ref-humanskin-shader-parameters"></a>
+## Shader Parameters {#shader-ref-humanskin-shader-parameters}
 
 **Detail bump scale**  
 Controls the strength of the detail normal map\.  
@@ -60,7 +60,7 @@ Controls strength of the wrinkle map\.
 This parameter requires that the **Wrinkle blending** shader generation parameter is enabled\.  
 Default value: 1\.0
 
-## Shader Generation Parameters<a name="shader-ref-humanskin-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-humanskin-shader-generation-parameters}
 
 **Decal map**  
 Enables the use of a decal map, which is blended on top of the diffuse map\.

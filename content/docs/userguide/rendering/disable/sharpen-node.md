@@ -3,7 +3,7 @@ description: ' Use the Disable Sharpen node in the &ALYlong; &script-canvas; edi
   to disable the sharpen filter. '
 title: Disable Sharpen
 ---
-# Disable Sharpen<a name="disable-sharpen-node"></a>
+# Disable Sharpen {#disable-sharpen-node}
 
 Disables the sharpen filter\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Sharpen](/docs/userguide/rendering/enable/shar
 
 ![\[disablesharpenfilter, disablesharpenfnode, disablesharpen\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-sharpen-node.png)
 
-## Inputs<a name="disable-sharpen-note-input"></a>
+## Inputs {#disable-sharpen-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Sharpen](/docs/userguide/rendering/enable/shar
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-sharpen-node-output"></a>
+## Outputs {#disable-sharpen-node-output}
 
 
 ****  

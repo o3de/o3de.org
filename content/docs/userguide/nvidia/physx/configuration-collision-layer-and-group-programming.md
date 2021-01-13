@@ -2,7 +2,7 @@
 description: ' Create layers and groups programatically in &ALYlong;. '
 title: Creating Collision Layers and Groups Programmatically
 ---
-# Creating Collision Layers and Groups Programmatically<a name="physx-configuration-collision-layer-and-group-programming"></a>
+# Creating Collision Layers and Groups Programmatically {#physx-configuration-collision-layer-and-group-programming}
 
 The API for collision layers and groups is defined in the `Collision.h` and `CollisionBus.h` headers\. The following code shows example include statements\.
 
@@ -20,7 +20,7 @@ using namespace Physics;
 
 For source code, see the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Physics\Collision.*` files\.
 
-## Retrieving Layers and Groups<a name="physx-configuration-programming-creating-layers-and-groups"></a>
+## Retrieving Layers and Groups {#physx-configuration-programming-creating-layers-and-groups}
 
 You can use the `layer(`*layer\_name*`)` and `group(`*group\_name*`)` methods to retrieve instances of collision layers and groups [that you created in Lumberyard Editor](/docs/userguide/nvidia/physx/configuration-collision-groups.md)\. These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool\. If no collision layer is found that matches the name, the default layer \(`0`\) is returned\.
 
@@ -38,7 +38,7 @@ CollisionGroup group;
 CollisionRequestBus::BroadcastResult(group, &Physics::CollisionRequests::GetCollisionGroupByName, groupName);
 ```
 
-## Creating Collision Groups in Code<a name="physx-configuration-programming-adhoc-collision-groups"></a>
+## Creating Collision Groups in Code {#physx-configuration-programming-adhoc-collision-groups}
 
 Unlike the predefined collision groups that you create in Lumberyard Editor, you can use code to create collision groups at runtime\. This is useful when you don’t know the layers involved in advance at therefore must define a collision group at runtime\. 
 

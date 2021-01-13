@@ -3,7 +3,7 @@ description: ' Make precise changes to the geometry of a river in your &ALY; lev
   by adjusting the spline points and parameters '
 title: Adjusting River Spline Geometry
 ---
-# Adjusting River Spline Geometry<a name="terrain-rivers-spline-geometry"></a>
+# Adjusting River Spline Geometry {#terrain-rivers-spline-geometry}
 
 
 ****  

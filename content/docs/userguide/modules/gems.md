@@ -2,11 +2,11 @@
 description: ' Learn about the advantages of gems that are built as AZ modules. '
 title: Gems and AZ Modules
 ---
-# Gems and AZ Modules<a name="az-module-gems"></a>
+# Gems and AZ Modules {#az-module-gems}
 
 The gems system was developed to make it easy to share code between projects\. Gems are reusable packages of module code and assets which can be easily added to or removed from a Lumberyard game\. Gems also promote writing code in a way that is more modular than that found in legacy libraries\. For example, each gem has its own include folder for its public interface code files\. Gems also come with package management metadata such as semantic versioning and the ability to state dependencies on other gems\. 
 
-## Structure of a Gem<a name="az-module-gems-structure-of-a-gem"></a>
+## Structure of a Gem {#az-module-gems-structure-of-a-gem}
 
 A gem's directory contents are organized as follows: 
 
@@ -25,21 +25,21 @@ GemDirectory/
     gem.json (gem metadata)
 ```
 
-## Waf Integration<a name="az-module-gems-waf-integration"></a>
+## Waf Integration {#az-module-gems-waf-integration}
 
 Each game project must explicitly list the gems that it uses\. When [Using the Waf Build System](/docs/userguide/waf/intro.md) runs, it builds only those gems which are actively in use\. Waf also makes a gem’s `include/` directory accessible to any gems or projects that explicitly depend upon the gem\.
 
-## Gems Built as AZ Modules<a name="az-module-gems-as-az-modules"></a>
+## Gems Built as AZ Modules {#az-module-gems-as-az-modules}
 
 All gems that ship with Lumberyard are built as AZ modules\. When you build a gem as an AZ module, the gem uses the initialization functions expected by the AZ framework\. An AZ module gem has public interfaces that are [event buses](/docs/userguide/programming/ebus/intro.md) and is better integrated with the new [component entity system](/docs/userguide/components/intro.md)\.
 
-When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](/docs/userguide/modules/system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date: 
+When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date: 
 
 ```
 dev\Tools\LmbrSetup\Win\lmbr.exe projects populate-appdescriptors
 ```
 
-### About Gem Versioning<a name="az-module-gems-about-versioning"></a>
+### About Gem Versioning {#az-module-gems-about-versioning}
 
 The `GemFormatVersion` value is versioning for how a gem is built\. Gem version numbers like `0.1.0` refer to the gem's API version\. 
 

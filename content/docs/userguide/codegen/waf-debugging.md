@@ -3,7 +3,7 @@ description: ' Debug the integration output of Waf''s Python scripts with PyChar
   in &ALYlong;. '
 title: Waf Debugging with AZ Code Generator
 ---
-# Waf Debugging with AZ Code Generator<a name="az-code-gen-waf-debugging"></a>
+# Waf Debugging with AZ Code Generator {#az-code-gen-waf-debugging}
 
 
 ****  
@@ -19,23 +19,23 @@ title: Waf Debugging with AZ Code Generator
 + [Identifying and Configuring Debug Output](#az-code-gen-waf-debugging-configuring-output)
 + [Setting Up PyCharm for Debugging Waf](/docs/userguide/codegen/pycharm.md)
 
-## Prerequisites <a name="az-code-gen-waf-debugging-prerequisites"></a>
+## Prerequisites  {#az-code-gen-waf-debugging-prerequisites}
 
  Before you start, follow the instructions for [Setting Up PyCharm for Debugging Waf ](/docs/userguide/codegen/pycharm.md)\. The PyCharm debugger must be set up to debug `lmbr_waf` before you can continue\. 
 
-## Identifying and Configuring Debug Output<a name="az-code-gen-waf-debugging-configuring-output"></a>
+## Identifying and Configuring Debug Output {#az-code-gen-waf-debugging-configuring-output}
 
  All AZ Code Generator Waf integration output is prefixed with `az_code_gen`\. To see additional output from both task creation and task execution, add `--zones=az_code_gen` to the Waf command line\. This exposes the commands that invoke AZ Code Generator and are useful for debugging the AZ Code Generator utility itself\. For more information, see [Debugging the AZ Code Generator Utility](/docs/userguide/codegen/utility-debugging.md)\. 
 
-### Debugging Wscript Configuration<a name="az-code-gen-waf-debugging-wscript-configuration"></a>
+### Debugging Wscript Configuration {#az-code-gen-waf-debugging-wscript-configuration}
 
  To debug most configuration problems, it is best to set a breakpoint in the `create_code_generator_tasks` method in `dev\Tools\Build\waf-<version>\lmbrwaflib\az_code_generator.py` \. This method is called for each `wscript` file that uses the `az_code_gen` feature\. It directly interprets the given passes and generates an `az_code_gen` task for each input file in each pass\.  
 
-### Debugging `az_code_gen` Task Creation<a name="az-code-gen-waf-debugging-az-code-gen-task-creation"></a>
+### Debugging `az_code_gen` Task Creation {#az-code-gen-waf-debugging-az-code-gen-task-creation}
 
  The `create_az_code_generator_task` feature creates `az_code_gen` tasks\. It gathers most information and inserts it into the task\. Each task gets added to the `az_code_gen_group` Waf task to ensure it is executed prior to other tasks\. 
 
-### Debugging az\_code\_gen Task Execution<a name="az-code-gen-waf-debugging-az-code-gen-task-execution"></a>
+### Debugging az\_code\_gen Task Execution {#az-code-gen-waf-debugging-az-code-gen-task-execution}
 
  The `run` and `handle_code_generator_output` commands are important points in task execution\.  
 

@@ -3,7 +3,7 @@ description: ' Use the Twitch Metastream feature to customize game streams with 
   of statistics and events for &ALYlong;. '
 title: Metastream Gem
 ---
-# Metastream Gem<a name="gems-system-gem-metastream"></a>
+# Metastream Gem {#gems-system-gem-metastream}
 
 Twitch Metastream is a feature that allows broadcasters to customize their streams with overlays of statistics and events from their game session\. Using any web authoring tool, such as Dreamweaver or CoffeeCup, broadcasters can create custom HTML5 pages to control the information, graphics, layout, and behavior of each unique overlay\. With Metastream, broadcasters can create more polished, interactive viewing experiences on any of their favorite streaming services, similar to what you see in professional Esports and TV broadcasts\.
 
@@ -27,13 +27,13 @@ To enable broadcasters to use Twitch Metastream, you must do the following:
 **Note**  
 Twitch Metastream is supported on Windows only\.
 
-## Adding the Metastream Gem<a name="gems-system-add-metastream-gem"></a>
+## Adding the Metastream Gem {#gems-system-add-metastream-gem}
 
 Enable the Metastream gem in your project to turn on the local HTTP Metastream server that is included with Lumberyard\.
 
 To enable the Metastream gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-## Setting Options for the HTTP Server<a name="gems-system-metastream-http-server-options"></a>
+## Setting Options for the HTTP Server {#gems-system-metastream-http-server-options}
 
 After you enable Metastream, an HTTP server is embedded into the game client and serves as the access point for exposed data\. You can set the following options for the HTTP server\. 
 
@@ -61,13 +61,13 @@ Starts the embedded HTTP server
 `metastream_stop`  
 Stops the embedded HTTP server
 
-## Exposing Data through Metastream<a name="gems-system-metastream-expose-data"></a>
+## Exposing Data through Metastream {#gems-system-metastream-expose-data}
 
 Metastream exposes data through the C\+\+ API\.
 
-### C\+\+ API<a name="gems-system-metastream-expose-data-cplusplus-api"></a>
+### C\+\+ API {#gems-system-metastream-expose-data-cplusplus-api}
 
-#### Controlling the HTTP Server<a name="gems-system-metastream-controlling-server"></a>
+#### Controlling the HTTP Server {#gems-system-metastream-controlling-server}
 
 The Metastream Gem uses the following API to start the HTTP server:
 
@@ -86,11 +86,11 @@ Metastream::MetastreamRequestBus::Broadcast(&Metastream::MetastreamRequests::Sto
 
 If the server is not running, attempting to stop the server has no effect\. 
 
-#### Exposing Data<a name="gems-system-metastream-exposing-data"></a>
+#### Exposing Data {#gems-system-metastream-exposing-data}
 
 The Metastream Gem uses a simple API to expose in\-game data using the EBus system\. See [Accessing Data through the HTTP API](#gems-system-metastream-data-http-api) for these values\. Currently, the Metastream API supports UTF8 strings, bools, Vec3, doubles, signed and unsigned 64\-bit values\. The EBus system requires these calls to be discrete\. This API allows you to add values to objects and/or arrays and the cache\. This allows for a fully flexible system in exposing data to a Web client\.
 
-#### Add to Cache<a name="metastream-add-to-cache"></a>
+#### Add to Cache {#metastream-add-to-cache}
 
 To add an object to the root cache, use the following syntax:
 
@@ -124,7 +124,7 @@ The name of the object to add\. If no object exists, then a NULL object is added
 
 None of the above returns any values\.
 
-#### Add to Array<a name="metastream-add-to-array"></a>
+#### Add to Array {#metastream-add-to-array}
 
 To add an object to an array, use the following syntax:
 
@@ -160,7 +160,7 @@ The name of the object to add to the array\. If no object exists, then a NULL ob
 
 None of the above returns any values\.
 
-#### Add to Object<a name="metastream-add-to-object"></a>
+#### Add to Object {#metastream-add-to-object}
 
 To add an object to an object, use the following syntax:
 
@@ -197,7 +197,7 @@ The name of the object to add\. If no object exists, then a NULL object is added
 
 None of the above returns any values\.
 
-#### Examples<a name="metastream-cplusplus-examples"></a>
+#### Examples {#metastream-cplusplus-examples}
 
 The following example shows how to use the Metastream C\+\+ API in a project: 
 
@@ -238,7 +238,7 @@ Metastream::MetastreamRequestBus::Broadcast(
     kDataBaseName.c_str(),  "systeminfo",  "sysInfo");
 ```
 
-#### Metastream Lua Bindings<a name="metastream-lua-bindings"></a>
+#### Metastream Lua Bindings {#metastream-lua-bindings}
 
 As of Lumberyard 1\.10, Twitch Metastream reflects using the behavior context, which enables you to use Metastream through Script Canvas and Lua\.
 
@@ -277,7 +277,7 @@ MetastreamRequestBus.Broadcast.AddArrayToObject(table, objectName, key, arrayNam
 MetastreamRequestBus.Broadcast.AddObjectToObject(table, objectName, key, objectName);
 ```
 
-## Accessing Data through the HTTP API<a name="gems-system-metastream-data-http-api"></a>
+## Accessing Data through the HTTP API {#gems-system-metastream-data-http-api}
 
 You can access game data that has been exposed through Metastream by using the HTTP API Get requests\. You can then use JavaScript to work with the data\.
 

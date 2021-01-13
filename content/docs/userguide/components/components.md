@@ -3,7 +3,7 @@ description: ' Choose components to add to your entities and enhance your level 
   &ALYlong;''s &component-system;. '
 title: Component Reference
 ---
-# Component Reference<a name="component-components"></a>
+# Component Reference {#component-components}
 
 You can use the **Entity Inspector** to add the following components to you entities\. 
 
@@ -11,20 +11,20 @@ You can use the **Entity Inspector** to add the following components to you enti
 Some components are only available through gems\. For example, you must enable the [Rain](/docs/userguide/gems/builtin/rain.md) gem for your project, so that the **[Rain](/docs/userguide/components/rain.md)** component is available\.  
 For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
-## AI<a name="component-entity-AI"></a>
+## AI {#component-entity-AI}
 + [Behavior Tree](/docs/userguide/components/behavior-tree.md)
 + [Navigation](/docs/userguide/components/navigation.md)
 + [Navigation Area](/docs/userguide/components/nav-area.md)
 + [Navigation Seed](/docs/userguide/components/nav-seed.md)
 
-## Animation<a name="component-entity-animation"></a>
+## Animation {#component-entity-animation}
 + [Actor](/docs/userguide/components/actor.md)
 + [AnimGraph](/docs/userguide/components/animgraph.md)
 +  [Anim Graph Net Sync](/docs/userguide/components/animgraph-netsync.md) 
 + [Attachment](/docs/userguide/components/attachment.md)
 + [Simple Motion](/docs/userguide/components/simple-motion.md)
 
-## Audio<a name="component-entity-audio"></a>
+## Audio {#component-entity-audio}
 + [Audio Area Environment](/docs/userguide/components/audio-area-environment.md)
 + [Audio Environment](/docs/userguide/components/audio-environment.md)
 + [Audio Listener](/docs/userguide/components/audio-listener.md)
@@ -34,14 +34,14 @@ For more information, see [Add modular features and assets with Gems](/docs/user
 + [Audio Switch](/docs/userguide/components/audio-switch.md)
 + [Audio Trigger](/docs/userguide/components/audio-trigger.md)
 
-## Camera<a name="component-entity-camera"></a>
+## Camera {#component-entity-camera}
 + [Camera](/docs/userguide/components/camera.md)
 + [Camera Rig](/docs/userguide/components/camera-rig.md)
 
-## Editor<a name="component-entity-editor"></a>
+## Editor {#component-entity-editor}
 + [Comment](/docs/userguide/components/comment.md)
 
-## Environment<a name="component-entity-environment"></a>
+## Environment {#component-entity-environment}
 + [Fog Volume](/docs/userguide/components/fog-volume.md)
 +  [Infinite Ocean](/docs/userguide/components/infinite-ocean.md) 
 + [Lightning](/docs/userguide/components/lightning.md)
@@ -52,17 +52,17 @@ For more information, see [Add modular features and assets with Gems](/docs/user
 + [Snow](/docs/userguide/components/snow.md)
 +  [Water Volume](/docs/userguide/components/water-volume.md) 
 
-## Gameplay<a name="component-entity-gameplay"></a>
+## Gameplay {#component-entity-gameplay}
 + [Input](/docs/userguide/components/input.md)
 + [Random Timed Spawner](/docs/userguide/components/random-timed-spawner.md)
 + [Simple State](/docs/userguide/components/simple-state.md)
 + [Spawner](/docs/userguide/components/spawner.md)
 + [Tag](/docs/userguide/components/tag.md)
 
-## Network<a name="component-entity-network"></a>
+## Network {#component-entity-network}
 + [Network Binding](/docs/userguide/components/network-binding.md)
 
-## PhysX<a name="component-entity-physx"></a>
+## PhysX {#component-entity-physx}
 
 The following components support the PhysX system, which is not compatible with the legacy physics system\. You can't use components interchangeably between each system\.
 
@@ -81,11 +81,11 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 + [PhysX Shape Collider](/docs/userguide/components/physx-shape-collider.md)
 + [PhysX Terrain](/docs/userguide/components/physx-terrain.md)
 
-## Physics \(Legacy\)<a name="component-entity-physics-legacy"></a>
+## Physics \(Legacy\) {#component-entity-physics-legacy}
 
 The components for the legacy physics system are not compatible with the PhysX system\. For more information, see [Physics](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/physics-intro.html) in the *Amazon Lumberyard Legacy Reference*\.
 
-## Rendering<a name="component-entity-rendering"></a>
+## Rendering {#component-entity-rendering}
 + [Area Light](/docs/userguide/components/area-light.md)
 + [Decal](/docs/userguide/components/decal.md)
 + [Environment Probe](/docs/userguide/components/environment-probe.md)
@@ -101,12 +101,12 @@ The components for the legacy physics system are not compatible with the PhysX s
 + [Render to Texture](/docs/userguide/components/render-to-texture.md)
 + [VisArea](/docs/userguide/components/vis-area.md)
 
-## Scripting<a name="component-entity-scripting"></a>
+## Scripting {#component-entity-scripting}
 + [Lua Script](/docs/userguide/components/lua-script.md)
 +  [Script Canvas](/docs/userguide/components/script-canvas.md) 
 + [Trigger Area](/docs/userguide/components/triggerarea.md)
 
-## Shape<a name="component-entity-shape"></a>
+## Shape {#component-entity-shape}
 + [Box Shape](/docs/userguide/components/shapes.md)
 + [Capsule Shape](/docs/userguide/components/shapes.md)
 + [Compound Shape](/docs/userguide/components/shapes.md)
@@ -118,18 +118,18 @@ The components for the legacy physics system are not compatible with the PhysX s
 +  [White Box component](/docs/userguide/components/white-box.md) 
 +  [White Box Collider component](/docs/userguide/components/white-box-collider.md) 
 
-## Terrain<a name="component-entity-terrain"></a>
+## Terrain {#component-entity-terrain}
 + [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md)
 + [River](/docs/userguide/components/river.md)
 + [Road](/docs/userguide/components/road.md)
 
-## UI<a name="component-entity-UI"></a>
+## UI {#component-entity-UI}
 + [UI Canvas Asset Ref](/docs/userguide/components/ui-canvas-asset-ref.md)
 + [UI Canvas Proxy Ref](/docs/userguide/components/ui-canvas-proxy-ref.md)
 + [UI Canvas on Mesh](/docs/userguide/components/ui-canvas-on-mesh.md)
 
-## VR<a name="component-entity-vr"></a>
+## VR {#component-entity-vr}
 + [VR Preview](/docs/userguide/components/vrpreview-component.md)
 
-## Miscellaneous<a name="component-entity-miscellaneous"></a>
+## Miscellaneous {#component-entity-miscellaneous}
 + [Transform](/docs/userguide/components/transform.md)

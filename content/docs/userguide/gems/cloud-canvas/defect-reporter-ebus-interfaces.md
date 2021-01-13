@@ -2,7 +2,7 @@
 description: ' Control the Defect Reporter cloud gem programmatically in &ALYlong;. '
 title: Defect Reporter EBus Interfaces
 ---
-# Defect Reporter EBus Interfaces<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces"></a>
+# Defect Reporter EBus Interfaces {#cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces}
 
 The Defect Reporter cloud gem includes the following EBus interfaces\.
 
@@ -13,11 +13,11 @@ The Defect Reporter cloud gem includes the following EBus interfaces\.
 
 For the source code, see the `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\Code\Include\CloudGemDefectReporter\CloudGemDefectReporterBus.h` file\.
 
-## CloudGemDefectReporterRequestBus<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporterrequestbus"></a>
+## CloudGemDefectReporterRequestBus {#cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporterrequestbus}
 
 Contains request EBus methods for the defect reporter gem\.
 
-### AddAnnotation<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-addannotation"></a>
+### AddAnnotation {#cloud-canvas-cloud-gem-defect-reporter-ebus-addannotation}
 
 Adds an annotation to a defect report\.
 
@@ -37,7 +37,7 @@ void AddAnnotation(int reportID, AZStd::string annotation)
 | reportID | int | ID of the report to which the annotation is added\. | 
 | annotation | AZStd::string | Comments that the user submitted for the report\. | 
 
-### AddCustomField<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-addcustomfield"></a>
+### AddCustomField {#cloud-canvas-cloud-gem-defect-reporter-ebus-addcustomfield}
 
 Adds a custom data collection field to a report in the form of a key\-value pair\.
 
@@ -58,7 +58,7 @@ void AddCustomField(int reportID, AZStd::string key, AZStd::string value)
 | key | AZStd::string | Key for the custom field\. | 
 | value | AZStd::string | Value for the custom field\. | 
 
-### FlushReports<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-flushreports"></a>
+### FlushReports {#cloud-canvas-cloud-gem-defect-reporter-ebus-flushreports}
 
 Removes all reports from the report queue\.
 
@@ -70,7 +70,7 @@ Available for scripting: Yes
 void FlushReports()
 ```
 
-### GetAvailableReportIDs<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids"></a>
+### GetAvailableReportIDs {#cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids}
 
 Gets a list of the IDs of the currently available reports\. The available reports are the set of reports whose information gathering has been completed\. Before the main thread is called, call `QueueBroadcast` to ensure that you have the state in which all reports have been resolved\.
 
@@ -82,7 +82,7 @@ Available for scripting: Yes
 AZStd::vector<int> GetAvailableReportIDs() 
 ```
 
-### GetClientConfiguration<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-getclientconfiguration"></a>
+### GetClientConfiguration {#cloud-canvas-cloud-gem-defect-reporter-ebus-getclientconfiguration}
 
 Gets the custom user\-created report fields from the Cloud Gem Portal\.
 
@@ -94,7 +94,7 @@ Available for scripting: Yes
 void GetClientConfiguration()
 ```
 
-### GetHandlerID<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-gethandlerid"></a>
+### GetHandlerID {#cloud-canvas-cloud-gem-defect-reporter-ebus-gethandlerid}
 
 Returns a unique handler ID for a handler and registers the intention of the handler to report data at some point\.
 
@@ -116,7 +116,7 @@ int GetHandlerID(int reportID)
 | --- | --- | --- | 
 | reportID | int | ID of the report to which this data belongs\. The report ID is passed in from CollectDefectReporterData\. | 
 
-### GetInputRecord<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-getinputrecord"></a>
+### GetInputRecord {#cloud-canvas-cloud-gem-defect-reporter-ebus-getinputrecord}
 
 Gets the input record of a specific event\.
 
@@ -135,7 +135,7 @@ AZStd::string GetInputRecord(AZStd::string processedEventName)
 | --- | --- | --- | 
 | processedEventName | AZStd::string | Specifies the name of the processed event that corresponds to the record to retrieve\. | 
 
-### GetReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-getreport"></a>
+### GetReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport}
 
 Returns the report that has the specified report ID\.
 
@@ -154,7 +154,7 @@ DefectReport GetReport(int reportID)
 | --- | --- | --- | 
 | reportID | int | ID of the report to return\. | 
 
-### IsSubmittingReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-issubmittingreport"></a>
+### IsSubmittingReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-issubmittingreport}
 
 Disables keyboard input for actions \(like game navigation for the keys A, W, S, and D\) when a user enters an annotation\.
 
@@ -173,7 +173,7 @@ void IsSubmittingReport(bool status)
 | --- | --- | --- | 
 | status | bool | Specify true to disable keyboard input; otherwise, false\. | 
 
-### PostReports<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-postreports"></a>
+### PostReports {#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports}
 
 Uploads the reports and attachments in the specified list\. This method is typically called by the UI to post the reports that the user edited\.
 
@@ -192,7 +192,7 @@ void PostReports(AZStd::vector<int> reportIDs)
 | --- | --- | --- | 
 | reportIDs | AZStd::vector<int> | List of the IDs of the reports to post\. | 
 
-### RemoveReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-removereport"></a>
+### RemoveReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport}
 
 Removes the specified report\. This method is typically called by the UI to remove a queued report\.
 
@@ -211,7 +211,7 @@ void RemoveReport(int reportID)
 | --- | --- | --- | 
 | reportID | int | ID of the report to remove\. | 
 
-### ReportData<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-reportdata"></a>
+### ReportData {#cloud-canvas-cloud-gem-defect-reporter-ebus-reportdata}
 
 Called by a handler when it has gathered the requested data and is ready to add the data to the report\.
 
@@ -234,7 +234,7 @@ void ReportData(int reportID, int handlerID, vector<MetricDesc> metricsData, vec
 | reportID | int | Report ID for this data\. | 
 | handlerID | int | ID of the handler returned by GetHandlerID\. | 
 | metrics | vector<MetricDesc> |  A `MetricDesc` object that contains the metrics attributes for the report\.  For details, see [`MetricDesc`](#metric-desc)\.  | 
-| attachments | vector<AttachmentDesc> |  An `AttachmentDesc` object that contains descriptions \(names, local paths and mime types\) of the attachments to be sent with the report\.  For details, see [`AttachmentDesc`](#attachment-desc)\.  | <a name="metric-desc"></a>
+| attachments | vector<AttachmentDesc> |  An `AttachmentDesc` object that contains descriptions \(names, local paths and mime types\) of the attachments to be sent with the report\.  For details, see [`AttachmentDesc`](#attachment-desc)\.  |  {#metric-desc}
 
 
 **MetricDesc**  
@@ -242,7 +242,7 @@ void ReportData(int reportID, int handlerID, vector<MetricDesc> metricsData, vec
 | Parameter | Type | Description | 
 | --- | --- | --- | 
 | m\_key | string | Unique key for the data returned\. | 
-| m\_data | string | JSON string that contains the metrics data that you specify\. | <a name="attachment-desc"></a>
+| m\_data | string | JSON string that contains the metrics data that you specify\. |  {#attachment-desc}
 
 
 **AttachmentDesc**  
@@ -253,7 +253,7 @@ void ReportData(int reportID, int handlerID, vector<MetricDesc> metricsData, vec
 | m\_type | string | MIME type of the attachment\. For an official list of MIME types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml)\. | 
 | m\_path | string | Local path of the attachment\. | 
 
-### TriggerDefectReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-triggerdefectreport"></a>
+### TriggerDefectReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-triggerdefectreport}
 
 Triggers data gathering from handlers for a defect report\. This is the code entry point for the defect reporter\.
 
@@ -272,7 +272,7 @@ void TriggerDefectReport(bool immediate)
 | --- | --- | --- | 
 | immediate | bool | True if the report dialog shows immediately; false if the report data is queued for later annotation\. | 
 
-### TriggerUserReportEditing<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting"></a>
+### TriggerUserReportEditing {#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting}
 
 Requests that the defect reporter UI be displayed so that the user can edit and annotate the current report queue\.
 
@@ -284,7 +284,7 @@ Available for scripting: Yes
 void TriggerUserReportEditing()
 ```
 
-### UpdateReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport"></a>
+### UpdateReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport}
 
 Sends an updated version of a defect report to the report queue\. `UpdateReport` is typically called by the UI but can be called by other code if required \(for example, for automation purposes\)\.
 
@@ -303,13 +303,13 @@ void UpdateReport(DefectReport report)
 | --- | --- | --- | 
 | report | DefectReport |  Report to send to the report queue\. A `DefectReport` object is a data structure that contains all the information required to create a defect report\. `DefectReport` objects are typically generated and maintained by the defect reporter\. However, `DefectReport` objects are also passed to the UI for display and editing before they are sent back to the defect reporter\.  | 
 
-## CloudGemDefectReporterNotificationBus<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporternotificationbus"></a>
+## CloudGemDefectReporterNotificationBus {#cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporternotificationbus}
 
 Connect to the `CloudGemDefectReporterNotificationBus` to handle defect reporting\.
 
-### OnCollectDefectReporterData<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-oncollectdefectreporterdata"></a>
+### OnCollectDefectReporterData {#cloud-canvas-cloud-gem-defect-reporter-ebus-oncollectdefectreporterdata}
 
-Called when the handler is requested to start collecting defect data and report it to the defect reporter\. For more information, see [Defect Reporter and Handler Workflow](/docs/userguide/gems/cloud-canvas/defect-reporter-handler-writing.md#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow)\.
+Called when the handler is requested to start collecting defect data and report it to the defect reporter\. For more information, see [Defect Reporter and Handler Workflow](/docs/userguide/gems/cloud-canvas/defect-reporter-handler-writing#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow)\.
 
 Available for scripting: Yes
 
@@ -319,7 +319,7 @@ Available for scripting: Yes
 void OnCollectDefectReporterData(int reportID)
 ```
 
-### OnDefectReportUploaded<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportuploaded"></a>
+### OnDefectReportUploaded {#cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportuploaded}
 
 Called when the report has been uploaded so that the handler \(`CloudGemDefectReporterNotificationBehaviorHandler`\) can clean up report artifacts\.
 
@@ -331,11 +331,11 @@ Available for scripting: Yes
 void OnDefectReportUploaded(int reportID)
 ```
 
-## CloudGemDefectReporterUINotificationBus<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporteruinotificationbus"></a>
+## CloudGemDefectReporterUINotificationBus {#cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporteruinotificationbus}
 
 UI handler EBus for processing UI requests from the defect reporter\. This EBus abstracts the defect reporter from the UI so that you can supply your own implementation\.
 
-### OnClientConfigurationAvailable<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onclientconfigurationavailable"></a>
+### OnClientConfigurationAvailable {#cloud-canvas-cloud-gem-defect-reporter-ebus-onclientconfigurationavailable}
 
 Called when the custom client configuration is available\.
 
@@ -347,7 +347,7 @@ Available for scripting: Yes
 virtual void OnClientConfigurationAvailable(const ServiceAPI::ClientConfiguration& clientConfiguration) {} 
 ```
 
-### OnOpenDefectReportEditorUI<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui"></a>
+### OnOpenDefectReportEditorUI {#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui}
 
 Requests that a custom user interface open for report editing and annotation\.
 
@@ -359,7 +359,7 @@ Available for scripting: Yes
 void OnOpenDefectReportEditorUI(vector<DefectReport> reports) 
 ```
 
-### OnDefectReportPostStatus<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportpoststatus"></a>
+### OnDefectReportPostStatus {#cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportpoststatus}
 
 Called when a new defect report is posted\.
 
@@ -371,7 +371,7 @@ Available for scripting: Yes
 void OnDefectReportPostStatus(int currentReport, int totalReports)
 ```
 
-### OnDefectReportPostError<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportposterror"></a>
+### OnDefectReportPostError {#cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportposterror}
 
 Called when an error occurs during the POST operation\.
 
@@ -383,7 +383,7 @@ Available for scripting: Yes
 void OnDefectReportPostError(string error)
 ```
 
-### OnNewReportTriggered<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onnewreporttriggered"></a>
+### OnNewReportTriggered {#cloud-canvas-cloud-gem-defect-reporter-ebus-onnewreporttriggered}
 
 Called when the user initiates a report\.
 
@@ -395,7 +395,7 @@ Available for scripting: Yes
 virtual void OnNewReportTriggered() {}
 ```
 
-### OnNewReportReady<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onnewreportready"></a>
+### OnNewReportReady {#cloud-canvas-cloud-gem-defect-reporter-ebus-onnewreportready}
 
 Called when all the information in a report has been gathered\.
 
@@ -407,7 +407,7 @@ Available for scripting: Yes
 virtual void OnNewReportReady() {}
 ```
 
-### OnReachSoftCap<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onreachsoftcap"></a>
+### OnReachSoftCap {#cloud-canvas-cloud-gem-defect-reporter-ebus-onreachsoftcap}
 
 Called when one of the following configured limits is reached:
 + The maximum number of presigned posts that can be requested per call \(default: 20\)\.
@@ -425,7 +425,7 @@ Available for scripting: Yes
 virtual void OnReachSoftCap() { }
 ```
 
-### OnReportsUpdated<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onreportsupdated"></a>
+### OnReportsUpdated {#cloud-canvas-cloud-gem-defect-reporter-ebus-onreportsupdated}
 
 Called when the number of reports changes\. This can happen when a report is created, deleted, or submitted\. The UI updates to show the number of reports that are available or in process\.
 
@@ -437,7 +437,7 @@ Available for scripting: Yes
 virtual void OnReportsUpdated(int totalAvailableReports, int totalPending) {}
 ```
 
-### OnSubmittingReport<a name="cloud-canvas-cloud-gem-defect-reporter-ebus-onsubmittingreport"></a>
+### OnSubmittingReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-onsubmittingreport}
 
 Called when the keyboard input is enabled or disabled\.
 

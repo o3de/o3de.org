@@ -3,7 +3,7 @@ description: ' Use GridMate session service for session connectivity and managem
   in &ALYlong;. '
 title: Sessions
 ---
-# Sessions<a name="network-session-service"></a>
+# Sessions {#network-session-service}
 
 GridMate session service provides session connectivity and management\. Both hub\-and\-spoke \(client/server\) and P2P full\-mesh topologies are supported\.
 

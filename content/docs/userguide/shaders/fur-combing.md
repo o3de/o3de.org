@@ -3,7 +3,7 @@ description: ' Use fur combing to render fur with a more controlled look in &ALY
   &material-editor;. '
 title: Fur Combing
 ---
-# Fur Combing<a name="shader-ref-fur-combing"></a>
+# Fur Combing {#shader-ref-fur-combing}
 
 You can apply fur to any mesh\. But by authoring your meshes specifically for fur, you can achieve a more controlled look\. 
 

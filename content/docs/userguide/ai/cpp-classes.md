@@ -2,7 +2,7 @@
 description: ' See the following C++ classes for AI objects in &ALYlong;. '
 title: AI C++ Class Hierarchy
 ---
-# AI C\+\+ Class Hierarchy<a name="ai-concepts-cpp-classes"></a>
+# AI C\+\+ Class Hierarchy {#ai-concepts-cpp-classes}
 
 C\+\+ classes for AI objects are structured as follows\.
 

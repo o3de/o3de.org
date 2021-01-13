@@ -2,7 +2,7 @@
 description: ' Use advanced particle techniques in the &ALYlong; &particle-editor;. '
 title: Advanced Particle Techniques
 ---
-# Advanced Particle Techniques<a name="particle-advanced"></a>
+# Advanced Particle Techniques {#particle-advanced}
 
 
 ****  
@@ -13,7 +13,7 @@ title: Advanced Particle Techniques
 
 Use the following advanced techniques in the Particle Editor to emit particles from geometry, create a particle effect that explodes, preview your effects on an animated character, or generate particles from surface properties\.
 
-## Emitting Particles from Geometry<a name="particle-advanced-geometry"></a>
+## Emitting Particles from Geometry {#particle-advanced-geometry}
 
 Do the following to emit particles from the parent geometry\.
 
@@ -34,7 +34,7 @@ Do the following to emit particles from the parent geometry\.
 **Note**  
 Use any **Attach Type** and **AttachForm** for the intended effect\.
 
-## Creating Exploding Geometry Particle Effect<a name="particle-advanced-explosions"></a>
+## Creating Exploding Geometry Particle Effect {#particle-advanced-explosions}
 
 Do the following to create a particle effect that instantly spawns exploding chunks\.
 
@@ -48,7 +48,7 @@ Do the following to create a particle effect that instantly spawns exploding chu
 
 1. Optionally set **Collision** parameters for physicalized pieces\.
 
-## Attaching Particles to Character Animations for Previewing<a name="particle-advanced-animations"></a>
+## Attaching Particles to Character Animations for Previewing {#particle-advanced-animations}
 
 Do the following to preview the effects on an animated character in your level\.
 
@@ -72,7 +72,7 @@ Do the following to preview the effects on an animated character in your level\.
 
 1. In the bottom toolbar, click **AI/Physics**\. Alternatively, press **Ctrl\+G** to start the animation and preview the effect\.
 
-## Generating Particles from Surface Properties<a name="particle-advanced-surface"></a>
+## Generating Particles from Surface Properties {#particle-advanced-surface}
 
 Use the properties for an object's material surface to define the event\-driven effects that can occur when an object experiences an event\. You can specify these events on a render material or on individual pieces or surfaces of a `.cgf` asset\.
 

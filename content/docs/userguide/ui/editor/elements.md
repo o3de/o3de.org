@@ -3,7 +3,7 @@ description: ' Use the &ui-canvas-editor; in &ALYlong; to manage UI elements lik
   strings, text input fields, images, buttons or containers. '
 title: UI Elements
 ---
-# UI Elements<a name="ui-editor-elements"></a>
+# UI Elements {#ui-editor-elements}
 
 UI elements are entities that you can attach multiple components to\. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on\. Or you can [add an existing pre\-fabricated \(prefab\) element](/docs/userguide/ui/editor/prefabs.md), such as a scroll box, which is an element with components already attached\. You can also [create your own prefab elements](/docs/userguide/ui/editor/prefabs.md)\.
 

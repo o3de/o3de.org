@@ -3,7 +3,7 @@ description: ' Use the Audiokinetic Wwise audio system in &ALYlong; to implement
   of the Text-to-Speech Cloud Gem in your game project. '
 title: Creating a Wwise Project for Runtime Text-to-Speech
 ---
-# Creating a Wwise Project for Runtime Text\-to\-Speech<a name="cloud-canvas-cloud-gem-text-to-speech-wwise"></a>
+# Creating a Wwise Project for Runtime Text\-to\-Speech {#cloud-canvas-cloud-gem-text-to-speech-wwise}
 
 You can use the Audiokinetic Wwise audio system in Amazon Lumberyard to implement Text\-to\-Speech Cloud Gem features in your game project\. To use Wwise to integrate sound into your Lumberyard game, you perform the following major steps:
 
@@ -19,17 +19,17 @@ You can use the Audiokinetic Wwise audio system in Amazon Lumberyard to implemen
 
 For the first four steps, you use the Audiokinetic Wwise authoring tool\. For the last step, you use the Audio Controls Editor in Lumberyard Editor\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-text-to-speech-wwise-prerequisites}
 
 Audiokinetic Wwise LTX – Audiokinetic Wwise LTX is an exclusive, free version of the Audiokinetic Wwise audio system for PC games that is included with Lumberyard\. For installation information, see [Setting up Wwise LTX](/docs/userguide/audio/wwise-using.md)\.
 
-## Create a Wwise Sound Project<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-create-a-wwise-sound-project"></a>
+## Create a Wwise Sound Project {#cloud-canvas-cloud-gem-text-to-speech-wwise-create-a-wwise-sound-project}
 
 To create a Wwise sound project and its associated directories, you use the Wwise authoring tool\.
 
 **To create a Wwise sound project**
 
-1. [Run the Wwise LTX tool](/docs/userguide/audio/wwise-using.md#audio-setting-wwise-authoring-tool)\.
+1. [Run the Wwise LTX tool](/docs/userguide/audio/wwise-using#audio-setting-wwise-authoring-tool)\.
 
 1. In the **Project Launcher** dialog box, click **New**\.  
 ![\[Click new\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-1.png)
@@ -39,7 +39,7 @@ To create a Wwise sound project and its associated directories, you use the Wwis
 
 1. Click **OK**\. Your project appears in the `wwwise_project` directory that you specified\.
 
-## Create a Sound in the Wwise Project<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-create-a-sound"></a>
+## Create a Sound in the Wwise Project {#cloud-canvas-cloud-gem-text-to-speech-wwise-create-a-sound}
 
 To create a sound, you use the **Audio** tab of the Wwise authoring tool\.
 
@@ -56,7 +56,7 @@ To create a sound, you use the **Audio** tab of the Wwise authoring tool\.
 1. Give the sound a name\.  
 ![\[Create and name a sound object\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-5.png)
 
-## Create an Event to Trigger the Sound<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-create-an-event"></a>
+## Create an Event to Trigger the Sound {#cloud-canvas-cloud-gem-text-to-speech-wwise-create-an-event}
 
 After you create a sound, you create an event with which you can trigger the sound from the context of your game\.
 
@@ -73,7 +73,7 @@ After you create a sound, you create an event with which you can trigger the sou
    A new event is created with the default name of `Play_{sound-name}_{nn}`\. You can specify a different name if you want\. The event ID appears on the upper right\.  
 ![\[Created sound event\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-wwise-8.png)
 
-## Generate the Soundbank File and Save the Wwise Project<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-generate-soundbank-file-and-save-wwise-project"></a>
+## Generate the Soundbank File and Save the Wwise Project {#cloud-canvas-cloud-gem-text-to-speech-wwise-generate-soundbank-file-and-save-wwise-project}
 
 After you have created an event for the sound, you generate a soundbank file and save the sound project\.
 
@@ -98,7 +98,7 @@ After you have created an event for the sound, you generate a soundbank file and
 
 1. In the Wwise **Project** menu, choose **Save**\.
 
-## Integrate the Wwise Project with Your Game Project<a name="cloud-canvas-cloud-gem-text-to-speech-wwise-integrate-wwise-project-with-game-project"></a>
+## Integrate the Wwise Project with Your Game Project {#cloud-canvas-cloud-gem-text-to-speech-wwise-integrate-wwise-project-with-game-project}
 
 Now you are ready to use Lumberyard's Audio Controls Editor to integrate your Wwise sound project with your Lumberyard game project\.
 

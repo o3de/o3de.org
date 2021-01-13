@@ -2,7 +2,7 @@
 description: null
 title: Waf User Options and Settings
 ---
-# Waf User Options and Settings<a name="waf-user-options-and-settings"></a>
+# Waf User Options and Settings {#waf-user-options-and-settings}
 
 In Lumberyard, the Waf options for configure and build time operations in are determined primarily by the following files in the `lumberyard_version\dev\_WAF_` subdirectory:
 + **default\_settings\.json** – Declares most of the configurable settings that control how Lumberyard and its game projects are built, including the default values\. 
@@ -20,7 +20,7 @@ In Lumberyard, the Waf options for configure and build time operations in are de
 + [user\_settings\.options](#waf-user-options-and-settings-user-settings-options-file)
 + [Waf User Settings \(user\_settings\.options\)](#waf-files-user-settings)
 
-## default\_settings\.json<a name="waf-user-options-and-settings-default-settings-json-file"></a>
+## default\_settings\.json {#waf-user-options-and-settings-default-settings-json-file}
 
 The `default_settings.json` file and the `settings` sections of platform\-specific `.json` files use the following format to organize related settings into groups:
 
@@ -59,7 +59,7 @@ The following example shows the `enabled_game_projects` attribute in the `Game P
 ...
 ```
 
-## user\_settings\.options<a name="waf-user-options-and-settings-user-settings-options-file"></a>
+## user\_settings\.options {#waf-user-options-and-settings-user-settings-options-file}
 
 Use the `user_settings.options` file to override the default values specified in `default_settings.json` and platform\-specific settings `.json` files\. This configuration file is in a standard `.cfg` file format \(not `.json`\) with section names in brackets, as in the following example:
 
@@ -70,7 +70,7 @@ Use the `user_settings.options` file to override the default values specified in
 
 The groupings are defined in the `default_settings.json` file and in the platform\-specific settings `.json` files\. The `user_settings.options` file uses the form of the attribute for each setting as it is defined in the corresponding `.json` file\.
 
-### Overriding Default Values<a name="waf-user-options-and-settings-user-settings-options-file-overriding-default-values"></a>
+### Overriding Default Values {#waf-user-options-and-settings-user-settings-options-file-overriding-default-values}
 
 The default values are commented out with a semi\-colon ';' comment token at the beginning of each line in the `user_settings.options` file\. To override a value, remove the semicolon from the beginning of the line and set the attribute to the value that you want\. For example, the option to use IncrediBuild is off \(`False`\) by default\. If you want to set it to `True`, modify the corresponding section of the `user_settings.options` file to resemble the following:
 
@@ -82,7 +82,7 @@ use_incredibuild = True
 ;incredibuild_profile = Tools/build/waf-1.7.13/profile.xml
 ```
 
-### Overriding user\_settings\.options Changes<a name="waf-user-options-and-settings-user-settings-options-file-overriding"></a>
+### Overriding user\_settings\.options Changes {#waf-user-options-and-settings-user-settings-options-file-overriding}
 
 If you use the the `user_settings.options` file to override a default value like `use_incredibuild`, you can override the change temporarily by using the command line argument defined for the setting, as shown in the following example:
 
@@ -93,7 +93,7 @@ lmbr_waf build_win_x64_vs2017_profile -p all --use-incredibuild=False
 **Note**  
 Using the `lmbr_waf` command to override a value does not update the value in the `user_settings.options` file\.
 
-## Waf User Settings \(user\_settings\.options\)<a name="waf-files-user-settings"></a>
+## Waf User Settings \(user\_settings\.options\) {#waf-files-user-settings}
 
 Global Waf build system settings are specified in the `user_settings.options` file located in the `lumberyard_version\dev\_WAF_` subdirectory\. If the `user_settings.options` file does not exist, Lumberyard uses the `default_settings.json` and platform\-specific `.json` files to create a new one automatically\. Every build that runs refers to this file to get the option values specific to the build\. 
 
@@ -112,7 +112,7 @@ The tables in the following sections describe the options available for override
 + [Output Folder Options](#waf-files-user-settings-output-folder-options)
 + [Platform\-Specific Options](#waf-files-user-settings-platform-specific-options)
 
-### default\_settings\.json Options<a name="waf-files-user-settings-default-settings-json-file-options"></a>
+### default\_settings\.json Options {#waf-files-user-settings-default-settings-json-file-options}
 
 The following tables describe the options defined in the `default_settings.json` file\.
 
@@ -204,7 +204,7 @@ The following tables describe the options defined in the `default_settings.json`
 | specs\_to\_include\_in\_project\_generation | \-\-specs\-to\-include\-in\-project\-generation | List of Waf [spec files](/docs/userguide/waf/files-spec-file.md) to include in the Visual Studio solution generation\. | all, game, game\_and\_engine | 
 | visual\_studio\_solution\_folder | \-\-visual\-studio\-solution\-folder | Name of the directory in which the generated Visual Studio solution should be stored\. | Solutions | 
 
-### Output Folder Options<a name="waf-files-user-settings-output-folder-options"></a>
+### Output Folder Options {#waf-files-user-settings-output-folder-options}
 
 Output folder options determine build output paths and folder name extensions for specific types of builds and environments\.
 
@@ -233,11 +233,11 @@ The following name extensions are appended to the output folder based on the tar
 | output\_folder\_ext\_profile | \-\-output\-folder\-ext\-profile | The output folder name extension for profile builds\. |  | 
 | output\_folder\_ext\_release | \-\-output\-folder\-ext\-release | The output folder name extension for release builds\. | Release | 
 
-### Platform\-Specific Options<a name="waf-files-user-settings-platform-specific-options"></a>
+### Platform\-Specific Options {#waf-files-user-settings-platform-specific-options}
 
 Specific settings for Android, iOS, macOS, and Windows are defined in files located in the `lumberyard_version\dev\_WAF_\settings\platforms\` directory as noted\.
 
-#### All Platforms<a name="waf-files-user-settings-platform-specific-options-platforms"></a>
+#### All Platforms {#waf-files-user-settings-platform-specific-options-platforms}
 
 The following settings define whether or not a platform is enabled to build\. The default value comes from the value of the `enabled` key found in each platform\-specific file in the `lumberyard_version\dev\_WAF_\settings\platforms\` directory\.
 
@@ -250,11 +250,11 @@ The following settings define whether or not a platform is enabled to build\. Th
 | enable\_win\_x64\_vs2017 | \-\-enable\-win64\-vs2017 | Enable the win\_x64\_vs2017 platform to build\. | True | 
 | enable\_win\_x64\_vs2019 | \-\-enable\-win64\-vs2019 | Enable the win\_x64\_vs2019 platform to build\. | True | 
 
-#### Android<a name="waf-files-user-settings-platform-specific-options-android"></a>
+#### Android {#waf-files-user-settings-platform-specific-options-android}
 
- This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. See [Waf settings](/docs/userguide/mobile/android/reference.md#android-waf-settings)\. 
+ This section has been relocated to another part of the Lumberyard documentation, and is now part of the [Reference for Android](/docs/userguide/mobile/android/reference.md)\. See [Waf settings](/docs/userguide/mobile/android/reference#android-waf-settings)\. 
 
-#### iOS<a name="waf-files-user-settings-platform-specific-options-ios"></a>
+#### iOS {#waf-files-user-settings-platform-specific-options-ios}
 
 The following settings for iOS are defined in the `lumberyard_version\dev\_WAF_\settings\platforms\platform.ios.json` file\.
 
@@ -274,7 +274,7 @@ The following settings for iOS are defined in the `lumberyard_version\dev\_WAF_\
 | ios\_project\_name | \-\-ios\-project\-name | Name of the generated iOS project\. | LumberyardiOSSDK | 
 | ios\_project\_folder | \-\-ios\-project\-folder | Name of the directory in which the generated iOS projects should be stored\. | Solutions | 
 
-#### macOS<a name="waf-files-user-settings-platform-specific-options-macos"></a>
+#### macOS {#waf-files-user-settings-platform-specific-options-macos}
 
 The following settings for macOS are defined in the `lumberyard_version\dev\_WAF_\settings\platforms\platfrom.darwin_x64.json` file\.
 
@@ -295,7 +295,7 @@ The following settings for macOS are defined in the `lumberyard_version\dev\_WAF
 | mac\_project\_name | \-\-mac\-project\-name | Name of the generated project\. | LumberyardSDK  | 
 | mac\_project\_folder | \-\-mac\-project\-folder | Name of the directory in which the generated macOS projects should be stored\. | Solutions | 
 
-#### Windows<a name="waf-files-user-settings-platform-specific-options-windows"></a>
+#### Windows {#waf-files-user-settings-platform-specific-options-windows}
 
 The following settings for Visual Studio are defined in the `lumberyard_version\dev\_WAF_\settings\platforms\common.win_msvc.json` file\.
 

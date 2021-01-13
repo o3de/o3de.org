@@ -3,7 +3,7 @@ description: ' Use the Point Light component on an entity to create a point of l
   in &ALY;. '
 title: Point Light
 ---
-# Point Light<a name="component-point-light"></a>
+# Point Light {#component-point-light}
 
 Use the **Point Light** component on an entity to create a point of light\.
 
@@ -15,7 +15,7 @@ Shows the light\.
 **On initially**  
 Specify if the light is on when created\.
 
-## General Settings<a name="component-point-light-general-settings"></a>
+## General Settings {#component-point-light-general-settings}
 
 See the following general settings:
 
@@ -34,7 +34,7 @@ Default value: 1
 **Ambient**  
 Light acts as a multiplier for cubemap values\.
 
-## Point Light Settings<a name="component-point-light-settings"></a>
+## Point Light Settings {#component-point-light-settings}
 
 See the following point light settings:
 
@@ -46,7 +46,7 @@ Default value: 2
 Radius in meters before light falloff begins\.  
 Default value: 0
 
-## Options<a name="component-point-light-options"></a>
+## Options {#component-point-light-options}
 
 See the following options:
 
@@ -80,14 +80,14 @@ Light affects only volumetric fog\.
 **Volumetric fog**  
 Light affects volumetric fog and surrounding area\.
 
-## Shadow Settings<a name="component-point-light-shadow"></a>
+## Shadow Settings {#component-point-light-shadow}
 
 See the following shadow settings:
 
 **Terrain Shadows**  
 Includes the terrain in the shadow casters for this light\.
 
-## Animation<a name="component-point-light-animation"></a>
+## Animation {#component-point-light-animation}
 
 See the following animation settings:
 
@@ -103,10 +103,10 @@ Default value: 1
 Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the animation\. For example, you can use this setting to prevent lights in the same scene, with the same animation, from being animated in unison\.  
 Default value: 0
 
-## EBus Request Bus Interface<a name="component-point-light-ebusrequest"></a>
+## EBus Request Bus Interface {#component-point-light-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light.md#component-light-ebusrequest)\.
+All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light#component-light-ebusrequest)\.

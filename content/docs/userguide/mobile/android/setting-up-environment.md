@@ -2,20 +2,20 @@
 description: ' Set up your &ALYlong; environment to build your project for Android. '
 title: Set up your environment to develop for Android with &ALY;
 ---
-# Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>
+# Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}
 
- This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro.md#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md) and [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)\. 
+ This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md) and [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)\. 
 
 **Topics**
-- [Set up your environment to develop for Android with Lumberyard<a name="android-setting-up-environment"></a>](#set-up-your-environment-to-develop-for-android-with-lumberyard)
-  - [Lumberyard environment setup<a name="android-setting-up-environment-steps"></a>](#lumberyard-environment-setup)
-  - [Add Android tools to `PATH`<a name="android-setting-up-path"></a>](#add-android-tools-to-path)
-  - [Build system setup<a name="android-setting-build-system"></a>](#build-system-setup)
-  - [Next steps<a name="android-setting-up-next-steps"></a>](#next-steps)
+- [Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}](#set-up-your-environment-to-develop-for-android-with-lumberyard)
+  - [Lumberyard environment setup {#android-setting-up-environment-steps}](#lumberyard-environment-setup)
+  - [Add Android tools to `PATH` {#android-setting-up-path}](#add-android-tools-to-path)
+  - [Build system setup {#android-setting-build-system}](#build-system-setup)
+  - [Next steps {#android-setting-up-next-steps}](#next-steps)
 
-## Lumberyard environment setup<a name="android-setting-up-environment-steps"></a>
+## Lumberyard environment setup {#android-setting-up-environment-steps}
 
- After you've [installed the prerequisites](/docs/userguide/mobile/android/intro.md#android-prerequisites), configure your Lumberyard installation to allow Android builds\. 
+ After you've [installed the prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites), configure your Lumberyard installation to allow Android builds\. 
 
 **To allow Android builds**
 
@@ -83,7 +83,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 **Important**  
  At this point, **don't** rebuild your game or engine\. Wait until after you configure your project for Android, so that the Lumberyard tools will pick up those changes\. 
 
-## Add Android tools to `PATH`<a name="android-setting-up-path"></a>
+## Add Android tools to `PATH` {#android-setting-up-path}
 
  When working with Android, it's useful to have access to the SDK tools directly from the command line\. If you're working with build infrastructure or on a development team for your project, we recommend that you add the Android build tools to your `PATH` environment variable\. To set an environment variable on Windows, follow these steps\. 
 
@@ -93,7 +93,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
 1.  Under **User variables**, edit the **PATH** variable to add the **directories** containing the Android tools\. Select the **New** button to add a new value to `PATH`\. The values that you add are the directories containing the `adb.exe` and `ndk-build.cmd` files\. 
 
-## Build system setup<a name="android-setting-build-system"></a>
+## Build system setup {#android-setting-build-system}
 
  Now that you have Android support enabled in Lumberyard, you need to configure the build system to recognize your project and produce Android \(`es3`\) assets\. 
 
@@ -133,7 +133,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
 1.  Wait until the Asset Processor finishes building all of your assets for use with Android\. When assets are finished processing, the Asset Processor status line indicates that the Asset Processor is **Idle**\. 
 
-## Next steps<a name="android-setting-up-next-steps"></a>
+## Next steps {#android-setting-up-next-steps}
 
 Now that you have your Lumberyard environment configured for Android, configure, build, and deploy your project to a device to test\.
 + [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md)

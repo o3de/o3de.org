@@ -3,7 +3,7 @@ description: ' Add a Radial Blur node to blur the animation outward in a radial 
   in &ALYlong;''s &trackview-editor;. '
 title: Radial Blur Node
 ---
-# Radial Blur Node<a name="cinematics-track-view-nodes-blur"></a>
+# Radial Blur Node {#cinematics-track-view-nodes-blur}
 
 You can use the **Radial Blur** node to blur the animation radially outward from a center point\. 
 

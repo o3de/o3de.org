@@ -2,11 +2,11 @@
 description: ' Learn more about the AI MBT nodes in &ALYlong;. '
 title: Game AI Modular Behavior Tree (MBT) Nodes
 ---
-# Game AI Modular Behavior Tree \(MBT\) Nodes<a name="ai-mbt-nodes-game"></a>
+# Game AI Modular Behavior Tree \(MBT\) Nodes {#ai-mbt-nodes-game}
 
 Game AI Modular Behavior Tree nodes are mostly used to offer specific game functionality\. Each type of game may have multiple character types and each type may need to trigger specific logic to perform action in the game\. Game\-specific nodes are generally not suitable for general use and may need to be tweaked to fit the needs of your game\.
 
-## Melee node<a name="ai-mbt-nodes-game-melee"></a>
+## Melee node {#ai-mbt-nodes-game-melee}
 
 The Melee node will trigger a melee attack against an agent target\. The Melee node succeeds irregardless of whether the melee attack is performed and damages the target or not\.
 
@@ -53,7 +53,7 @@ The following table lists the various parameters one can use in the lua file:
 + **impulse**: Defines the amount of the impulse that is applied to the player in case of a successful melee attack\.
 + **angleThreshold**: Threshold between the agent direction and the direction between the agent and the target to allow a melee attack to be attempted\.
 
-## KeepTargetAtADistance node<a name="ai-mbt-nodes-game-keeptargetatadistance"></a>
+## KeepTargetAtADistance node {#ai-mbt-nodes-game-keeptargetatadistance}
 
 This node keeps the live target at a distance by physically pushing the target away if it is within the defined minimum distance\.
 
@@ -73,7 +73,7 @@ The node never succeeds or fails\. Once executed, it is always running until out
 <KeepTargetAtADistance distance="1.8" impulsePower="1.5" />
 ```
 
-## SuppressHitReactions node<a name="ai-mbt-nodes-game-suppresshitreactions"></a>
+## SuppressHitReactions node {#ai-mbt-nodes-game-suppresshitreactions}
 
 This node enables and disables the hit reaction system for the agent during its execution\.
 
@@ -93,7 +93,7 @@ None\.
 </SuppressHitReactions>
 ```
 
-## InflateAgentCollisionRadiusUsingPhysicTricksTrick node<a name="ai-mbt-nodes-game-inflateagentcollisionradiususingphysicstrick"></a>
+## InflateAgentCollisionRadiusUsingPhysicTricksTrick node {#ai-mbt-nodes-game-inflateagentcollisionradiususingphysicstrick}
 
 This node uses a feature of the physics system to inflate the capsule of the agent such that it has one radius for collisions with the player, and a different radius for collisions with the world\.
 
@@ -111,7 +111,7 @@ The node never succeeds or fails but always runs\.
 <InflateAgentCollisionRadiusUsingPhysicsTrick radiusForAgentVsPlayer="1.0" radiusForAgentVsWorld="0.5" />
 ```
 
-## ScorcherDeploy:RunWhileDeploying node<a name="ai-mbt-nodes-game-scorcherdeploying"></a>
+## ScorcherDeploy:RunWhileDeploying node {#ai-mbt-nodes-game-scorcherdeploying}
 
 This node and the following one are special decorator nodes that the Scorcher uses to deploy and undeploy as part of the shooting phase\. These two nodes rely on external Lua scripts and various signals to work properly\. In this way you don't have to explicitly expose more functionality from the AI system libraries\. 
 
@@ -127,7 +127,7 @@ None\.
 
 **Example**
 
-## ScorcherDeploy:RunWhileDeployed node<a name="ai-mbt-nodes-game-scorcherdeployed"></a>
+## ScorcherDeploy:RunWhileDeployed node {#ai-mbt-nodes-game-scorcherdeployed}
 
 This node must contain exactly one child node that controls the actual aiming and firing\.
 
@@ -152,7 +152,7 @@ None\.
 </ScorcherDeploy>
 ```
 
-## HeavyShootMortar node<a name="ai-mbt-nodes-game-heavyshootmortar"></a>
+## HeavyShootMortar node {#ai-mbt-nodes-game-heavyshootmortar}
 
 Used to control the shooting of heavy mortar\. It tries to simplify and to centralize the check of the pre\-condition and the initialization of the weapon plus the re\-selection of the primary weapon\.
 
@@ -173,7 +173,7 @@ Used to control the shooting of heavy mortar\. It tries to simplify and to centr
 <HeavyShootMortar to="RefPoint" fireMode="Charge" aimingTimeBeforeShooting="2" timeout="7" />
 ```
 
-## SquadScope node<a name="ai-mbt-nodes-game-squadscope"></a>
+## SquadScope node {#ai-mbt-nodes-game-squadscope}
 
 Used to enter a squad scope, which is limited by the specified amount of concurrent users\. If the node succeeds to do that, then the child node is executed\.
 
@@ -193,7 +193,7 @@ Used to enter a squad scope, which is limited by the specified amount of concurr
 </SquadScope>
 ```
 
-## SendSquadEvent node<a name="ai-mbt-nodes-game-sendsquadevent"></a>
+## SendSquadEvent node {#ai-mbt-nodes-game-sendsquadevent}
 
 Used to send an event only to the squad members\.
 
@@ -210,7 +210,7 @@ The node succeeds after having sent the event\. The node never fails\.
 <SendSquadEvent name="ANameForTheEvent" />
 ```
 
-## IfSquadCount node<a name="ai-mbt-nodes-game-ifsquadcount"></a>
+## IfSquadCount node {#ai-mbt-nodes-game-ifsquadcount}
 
 This node checks if a squad contains a specific amount of members and if so executes its child\.
 

@@ -3,7 +3,7 @@ description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor
   find a material. '
 title: Find by Name
 ---
-# Find by Name<a name="material-find-by-name-node"></a>
+# Find by Name {#material-find-by-name-node}
 
 Finds and returns the material with the specified name\. The material must be loaded into memory in order to be found\.
 
@@ -27,7 +27,7 @@ In some cases, you might need to store the material for later use\. For more inf
 
 ![\[findbymaterialname, findbymaterialnamdenode, findbynamenode, findbyname\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-by-name-node.png)
 
-## Inputs<a name="material-find-by-name-node-input"></a>
+## Inputs {#material-find-by-name-node-input}
 
 
 ****  
@@ -37,7 +37,7 @@ In some cases, you might need to store the material for later use\. For more inf
 | In | Event | Triggers the node\. | 
 | Material Name | String |  The path name of a material to find\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  | 
 
-## Outputs<a name="material-find-by-name-node-output"></a>
+## Outputs {#material-find-by-name-node-output}
 
 
 ****  

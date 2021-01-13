@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; &asset-pipeline; to convert your source art and
   assets into game ready data. '
 title: Working with the &asset-pipeline; and asset files
 ---
-# Working with the Asset Pipeline and asset files<a name="asset-pipeline-intro"></a>
+# Working with the Asset Pipeline and asset files {#asset-pipeline-intro}
 
 The Asset Pipeline converts source art and other assets into OS\-specific, game ready data\. To prepare your game to ship, build all your game assets with the Asset Pipeline and package them with your game for your supported operating systems\.
 

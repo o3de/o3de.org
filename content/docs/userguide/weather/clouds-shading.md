@@ -2,7 +2,7 @@
 description: ' Use Cloud Shading parameters to customize your &ALYlong; cloud effects. '
 title: Setting Cloud Shading Parameters
 ---
-# Setting Cloud Shading Parameters<a name="weather-clouds-shading"></a>
+# Setting Cloud Shading Parameters {#weather-clouds-shading}
 
 Cloud shading, unlike cloud shadows, affects the brightness and color of clouds in your level\. The environment sky and sun color affect how clouds look\.
 

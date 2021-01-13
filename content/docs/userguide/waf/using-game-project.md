@@ -2,7 +2,7 @@
 description: ' Add a game project to the &ALYlong; Waf build system. '
 title: Adding a Game Project
 ---
-# Adding a Game Project<a name="waf-using-game-project"></a>
+# Adding a Game Project {#waf-using-game-project}
 
 The simplest and recommended method to add a game project to the Lumberyard Waf build system is to use the Project Configurator\. The Project Configurator is a standalone application for telling the Waf build system which game projects and assets to include in a game build\. For more information, see [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\.
 
@@ -27,7 +27,7 @@ When the project is properly defined and all source files are in the correct loc
 + [Creating a Game Module](#add-game-project-game-module)
 + [Updating the User Settings](#add-game-project-user-settings)
 
-## Creating the Project Definition<a name="add-game-project-project-definition"></a>
+## Creating the Project Definition {#add-game-project-project-definition}
 
 In the following procedure you set `Code/MyGame` as the project source folder and `MyGame` as the project folder\. The `code_folder` points to your game's module root and the `project_directory` points to the game\-specific assets\. You can define any number of game projects in this file and you can configure which ones to build\.
 
@@ -50,11 +50,11 @@ In the following procedure you set `Code/MyGame` as the project source folder an
        "sys_dll_game"      : "SamplesProject",
    ```
 
-## Creating a Game Module<a name="add-game-project-game-module"></a>
+## Creating a Game Module {#add-game-project-game-module}
 
 You can create a game module after setting the game project definition\. Game modules include wscript files, source files, and a waf\_files configuration file\. You must create separate folders for the game source code and for the resources\. Both should reside under the `code_folder` specified earlier\. For this example you create folders called **GameSource** and **Resources** under the `Code/MyGame` directory\.
 
-### Create a wscript file<a name="game-module-wscript-file"></a>
+### Create a wscript file {#game-module-wscript-file}
 
 Because Waf searches for and discovers wscript files recursively through other wscript files, you must include a simple wscript file in the `Code/MyGame` folder that recurses to the `GameSource` folder\.
 
@@ -86,11 +86,11 @@ def build(bld):
                	   )
 ```
 
-### Create source files<a name="game-module-source-files"></a>
+### Create source files {#game-module-source-files}
 
 All game projects first need a source file\. If you intend to use pre\-compiled headers you must create standard `StdAfx.h` and `StdAfx.cpp` files\. For this example you create a single C\+\+ file and a corresponding header file \(`MyGameMain.cpp` and `MyGameMain.h`\)\.
 
-### Create a waf\_files configuration file<a name="game-module-waf-files-configuration-file"></a>
+### Create a waf\_files configuration file {#game-module-waf-files-configuration-file}
 
 You use the waf\_files configuration file to include the source files into the game module\. For this example you create a file called `MyGame.waf_files` and specify it for the project\. This file includes the four files you created from the previous step\. 
 
@@ -109,7 +109,7 @@ Create a waf\_files configuration file called `MyGame.waf_files` with the follow
 }
 ```
 
-## Updating the User Settings<a name="add-game-project-user-settings"></a>
+## Updating the User Settings {#add-game-project-user-settings}
 
 The final step is to update enabled\_game\_projects to include or exclusively set the new game project\. You can do this one of the following ways:
 + In a text editor, edit the `user_settings.options` file \(in the `lumberyard_version\dev\_WAF_\` directory\) to set the value for the `enabled_game_projects`\. The following example sets `MyGame` as the only game project generated\. You can use a comma\-separated list to include multiple game projects in the final solution\.

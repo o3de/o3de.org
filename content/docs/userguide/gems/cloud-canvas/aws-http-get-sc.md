@@ -2,7 +2,7 @@
 description: ' Perform HTTP GET operations with &script-canvas; in &ALYlong;. '
 title: Performing HTTP GET with &script-canvas;
 ---
-# Performing HTTP GET with Script Canvas<a name="cloud-canvas-cloud-gem-aws-http-get-sc"></a>
+# Performing HTTP GET with Script Canvas {#cloud-canvas-cloud-gem-aws-http-get-sc}
 
 You can use the **AWSBehaviorHTTP Get** node in Script Canvas to perform an HTTP GET operation on a URL that you specify\.
 
@@ -12,7 +12,7 @@ You can use the **AWSBehaviorHTTP Get** node in Script Canvas to perform an HTTP
 + [Step 3: Add Nodes to Display the Success or Failure of the Operation](#cloud-canvas-cloud-gem-aws-http-get-sc-display-success-or-failure)
 + [Step 4: Perform a Test GET](#cloud-canvas-cloud-gem-aws-http-get-sc-test)
 
-## Step 1: Add Nodes to Perform an HTTP GET Operation<a name="cloud-canvas-cloud-gem-aws-http-get-sc-add-nodes"></a>
+## Step 1: Add Nodes to Perform an HTTP GET Operation {#cloud-canvas-cloud-gem-aws-http-get-sc-add-nodes}
 
 The following procedure shows you how to create a Script Canvas graph that performs an HTTP GET operation\.
 
@@ -44,7 +44,7 @@ The following procedure shows you how to create a Script Canvas graph that perfo
 
 1. Connect the **AWSBehaviorHTTP** pin of the **Get Variable 1** node to the **AWSBehaviorHTTP:0** pin of the **Get** node\.
 
-## Step 2: Add Nodes to Display the Response<a name="cloud-canvas-cloud-gem-aws-http-get-sc-display-response"></a>
+## Step 2: Add Nodes to Display the Response {#cloud-canvas-cloud-gem-aws-http-get-sc-display-response}
 
 To show the response to the HTTP request, you add an **AWSBehaviorHTTPNotificationsBus GetResponse** node, a **ToJSON** node, and **Print** nodes to the graph\. The nodes show you the result in the Lumberyard console window\.
 
@@ -74,7 +74,7 @@ To show the response to the HTTP request, you add an **AWSBehaviorHTTPNotificati
 
 1. Connect the second **String** pin of the **GetResponse** node to the **Value** pin of the fourth **Print** node\. 
 
-## Step 3: Add Nodes to Display the Success or Failure of the Operation<a name="cloud-canvas-cloud-gem-aws-http-get-sc-display-success-or-failure"></a>
+## Step 3: Add Nodes to Display the Success or Failure of the Operation {#cloud-canvas-cloud-gem-aws-http-get-sc-display-success-or-failure}
 
 Next, you add nodes to display the success or failure of the GET operation\.
 
@@ -97,7 +97,7 @@ Next, you add nodes to display the success or failure of the GET operation\.
 
 1. Exit the Script Canvas editor\.
 
-## Step 4: Perform a Test GET<a name="cloud-canvas-cloud-gem-aws-http-get-sc-test"></a>
+## Step 4: Perform a Test GET {#cloud-canvas-cloud-gem-aws-http-get-sc-test}
 
 Now you are ready to attach the script canvas to an entity and then test it\.
 

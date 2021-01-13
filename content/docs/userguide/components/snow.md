@@ -2,7 +2,7 @@
 description: ' Use the &ALYlong; Snow component to add snow effects to your game. '
 title: Snow
 ---
-# Snow<a name="component-snow"></a>
+# Snow {#component-snow}
 
 
 ****  
@@ -27,7 +27,7 @@ If your level has a **Snow** and **[Rain](/docs/userguide/components/rain.md)** 
 + [EBus Request Bus Interface](#component-snow-ebus-request)
   + [Example Snow Component Request Bus](#snow-ebus-example-script)
 
-## Turning Snow On or Off<a name="component-snow-enabling-disabling"></a>
+## Turning Snow On or Off {#component-snow-enabling-disabling}
 
 You can toggle snow on or off in Lumberyard Editor by enabling or disabling **AI/Physics**, or by running or stopping the game\.
 
@@ -38,7 +38,7 @@ You can toggle snow on or off in Lumberyard Editor by enabling or disabling **AI
   + Press **Ctrl\+P**\.
   + Press **Ctrl\+G** to enter gameplay mode\. Press **Esc** to stop the game\.
 
-## Editing Snow Effects<a name="component-snow-editing"></a>
+## Editing Snow Effects {#component-snow-editing}
 
 You can edit snow effects only when the **AI/Physics** toggle is disabled\.
 
@@ -50,7 +50,7 @@ You can edit snow effects only when the **AI/Physics** toggle is disabled\.
 
 1. Enable **AI/Physics**\. After you reenable **AI/Physics**, your changes appear in the viewport\.
 
-## Snow Component Properties<a name="component-snow-properties"></a>
+## Snow Component Properties {#component-snow-properties}
 
 ![\[Snow component properties to customize the snow effects in your level.\]](/images/userguide/component/snow-component-properties.png)
 
@@ -74,7 +74,7 @@ The **Snow** component has the following properties:
 | Turbulence |  Turbulence that is applied to the snowflakes\.  Default: `0.1` Valid values: `0` to `100`  | 
 | Turbulence Frequency |  Turbulence frequency that is applied to the snowflakes\.  Default: `0.1` Valid values: `0` to `100`  | 
 
-## EBus Request Bus Interface<a name="component-snow-ebus-request"></a>
+## EBus Request Bus Interface {#component-snow-ebus-request}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Snow** component attached\. The EB us is available at game time and editing, and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
@@ -117,7 +117,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 | GetSnowOptions |  Returns a data structure that contains all options for the **Snow** component\.  | None | SnowOptions | Yes | 
 | UpdateSnow |  Updates Lumberyard to use the **Snow** component as the base for snow effects\. The last **Snow** component that is called last takes priority; Lumberyard uses that component\.  | None | None | Yes | 
 
-### Example Snow Component Request Bus<a name="snow-ebus-example-script"></a>
+### Example Snow Component Request Bus {#snow-ebus-example-script}
 
 ```
 function example:OnActivate()

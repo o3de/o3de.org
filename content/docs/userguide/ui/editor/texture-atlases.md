@@ -3,11 +3,11 @@ description: ' Use texture atlases on UI canvases for quicker rendering of textu
   in &ALYlong;. '
 title: Using Texture Atlases
 ---
-# Using Texture Atlases<a name="ui-editor-texture-atlases"></a>
+# Using Texture Atlases {#ui-editor-texture-atlases}
 
 To reduce draw calls, you can add individual textures to a texture atlas and then add one or more texture atlases to a UI canvas\.
 
-## Characteristics<a name="ui-editor-texture-atlases-characteristics"></a>
+## Characteristics {#ui-editor-texture-atlases-characteristics}
 
 UI canvases and texture atlases have the following characteristics:
 + Each UI canvas contains a list of texture atlases to be loaded\.
@@ -16,7 +16,7 @@ UI canvases and texture atlases have the following characteristics:
 + UI elements that render textures preferentially use textures from a loaded texture atlas, if available\.
 + The texture atlas is only unloaded when all UI canvases that loaded it are unloaded\.
 
-## Advantages<a name="ui-editor-texture-atlases-advantages"></a>
+## Advantages {#ui-editor-texture-atlases-advantages}
 
 The principle advantages of texture atlases are the following:
 + Draw calls are significantly reduced\.

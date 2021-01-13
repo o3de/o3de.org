@@ -3,7 +3,7 @@ description: ' Use synchronized animation graphs to synchronize animation betwee
   actors in &ALYlong;. '
 title: 'Synchronizing Animation Graphs: Example'
 ---
-# Synchronizing Animation Graphs: Example<a name="char-animation-editor-sync-graph"></a>
+# Synchronizing Animation Graphs: Example {#char-animation-editor-sync-graph}
 
 You can use synchronized animation graphs to synchronize animation between actors\. For example, the animation of one actor might trigger an animation in another actor\. An animation graph can be the primary graph and have multiple secondary graphs\. Likewise, an animation graph can be both a secondary graph of one graph and a primary graph for another graph\.
 
@@ -32,11 +32,11 @@ The robot has a `syncFeature_Jack` animation graph and the gun uses a `syncFeatu
 
 When the sync mode is on, the gun fires in sync with the robot\. When the robot fires, the state of the primary graph's `shoot` parameter is received by secondary graph's `gunTrigger` parameter\. The secondary graph, which is attached to the gun, receives the parameter change event and fires the gun\.
 
-## 1\. Add Required Components<a name="char-animation-editor-sync-graph-components-used"></a>
+## 1\. Add Required Components {#char-animation-editor-sync-graph-components-used}
 
 The first step is to add the required components to the entities that you want to synchronize\. The robot and gun components that are used by the entities in the example are described in the following sections\. 
 
-### Robot Entity Components<a name="char-animation-editor-sync-graph-components-used-robot"></a>
+### Robot Entity Components {#char-animation-editor-sync-graph-components-used-robot}
 
 The robot entity uses the following components:
 + **Transform** 
@@ -49,7 +49,7 @@ The following image shows the configuration of the components for the robot enti
 
 ![\[The components for the robot entity.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-robot-components.png)
 
-### Gun Entity Components<a name="char-animation-editor-sync-graph-components-used-standalone-gun"></a>
+### Gun Entity Components {#char-animation-editor-sync-graph-components-used-standalone-gun}
 
 The gun entity uses the following components:
 + **Transform**
@@ -62,7 +62,7 @@ The following image shows the configuration of the components for the gun entity
 
 ![\[The components for the gun entity in Entity Inspector.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-gun-components.png)
 
-## 2\. Create a Motion Set and Animation Graphs<a name="char-animation-editor-sync-graph-create-a-motion-set-and-animation-graphs"></a>
+## 2\. Create a Motion Set and Animation Graphs {#char-animation-editor-sync-graph-create-a-motion-set-and-animation-graphs}
 
 After you set up your entities and components, create a motion set and two animation graphs\. The motion set contains the motions that your graphs use, and the secondary and primary animation graphs animate and synchronize the entities\.
 
@@ -82,7 +82,7 @@ After you set up your entities and components, create a motion set and two anima
 ![\[Motion node with associated idle motion.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-4.png)  
 ![\[Motion node with associated animation.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-5.png)
 
-## 3\. Add a Parameter to the Secondary Graph<a name="char-animation-editor-sync-graph-add-a-parameter-to-the-subordinate-graph"></a>
+## 3\. Add a Parameter to the Secondary Graph {#char-animation-editor-sync-graph-add-a-parameter-to-the-subordinate-graph}
 
 You are now ready to add a parameter to the secondary graph that receives the parameter change event from the primary graph\. After you add the parameter, add parameter conditions that specify when the animation transitions from one motion to another\.
 
@@ -100,7 +100,7 @@ You are now ready to add a parameter to the secondary graph that receives the pa
 1. Click **Create**\. The **Parameters** list shows the parameter that you created\.  
 ![\[Parameter added to the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-9.png)
 
-### Add Parameter Conditions to the Secondary Graph<a name="char-animation-editor-sync-graph-add-parameter-conditions-to-the-subordinate-graph"></a>
+### Add Parameter Conditions to the Secondary Graph {#char-animation-editor-sync-graph-add-parameter-conditions-to-the-subordinate-graph}
 
 In this section, add parameter conditions on the transition lines that specify when the animation changes\. In the example, the conditions indicate whether the gun trigger has been pressed\.
 
@@ -136,7 +136,7 @@ In this section, add parameter conditions on the transition lines that specify w
 
 Now the secondary animation graph is ready to receive signals from the primary graph\.
 
-## 4\. Add a Parameter and Parameter Conditions to the Primary Graph<a name="char-animation-editor-sync-graph-add-a-parameter-and-parameter-conditions-to-the-main-graph"></a>
+## 4\. Add a Parameter and Parameter Conditions to the Primary Graph {#char-animation-editor-sync-graph-add-a-parameter-and-parameter-conditions-to-the-main-graph}
 
 You add a parameter and parameter conditions to the primary graph just as you did with the secondary graph\. However, you also add secondary \("servant"\) parameter actions to the primary graph\. The actions signal the secondary graph to mimic the animations of the primary graph\.
 
@@ -153,7 +153,7 @@ You add a parameter and parameter conditions to the primary graph just as you di
 
 1. Click **Create**\.
 
-### Add Parameter Conditions to the Primary Graph<a name="char-animation-editor-sync-graph-add-parameter-conditions-to-the-main-graph"></a>
+### Add Parameter Conditions to the Primary Graph {#char-animation-editor-sync-graph-add-parameter-conditions-to-the-main-graph}
 
 Now you add parameter conditions on the transition lines in the primary graph as you did on the secondary graph\.
 
@@ -182,7 +182,7 @@ Now you add parameter conditions on the transition lines in the primary graph as
 
 1. For **Test Value**, use the default value of **0\.0**\.
 
-## 5\. Add Servant Parameter Actions to the Primary Graph<a name="char-animation-editor-sync-graph-add-servant-parameter-actions-to-the-main-graph"></a>
+## 5\. Add Servant Parameter Actions to the Primary Graph {#char-animation-editor-sync-graph-add-servant-parameter-actions-to-the-main-graph}
 
 Now you are ready to add secondary \("servant"\) parameter actions to the primary graph\. A script uses these actions to synchronize the two graphs\.
 
@@ -215,7 +215,7 @@ Now you are ready to add secondary \("servant"\) parameter actions to the primar
 
 Now that the animation graphs are ready, you can perform the next steps: gathering user input and writing Lua scripts to synchronize the graphs\.
 
-## 6\. Synchronize the Primary and Secondary Graphs<a name="char-animation-editor-sync-graph-synchronize-the-main-and-subordinate-graphs"></a>
+## 6\. Synchronize the Primary and Secondary Graphs {#char-animation-editor-sync-graph-synchronize-the-main-and-subordinate-graphs}
 
 Synchronizing the primary and secondary graphs involves the following steps:
 
@@ -227,7 +227,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 The Lua scripts synchonize the two graphs by handling animation graph events in Lumberyard's [Event Bus \(EBus\)](/docs/userguide/programming/ebus/intro.md) system\.
 
-### Getting Input from the Player<a name="char-animation-editor-sync-graph-get-input-from-the-player"></a>
+### Getting Input from the Player {#char-animation-editor-sync-graph-get-input-from-the-player}
 
 In the example, the synchronization state of the primary and secondary graphs and the firing of the gun are controlled by the following keyboard inputs, or keystrokes, from the user\. The Event Value Multiplier is the actual value sent to the input system and to Lua script\.
 
@@ -261,7 +261,7 @@ The following image shows the corresponding input bindings in the **Input Bindin
 
 ![\[Sample input bindings asset for shoot control in the Input Bindings Editor.\]](/images/userguide/actor-animation/char-animation-editor-sync-graph-29.png)
 
-### Using a Script on the Secondary Graph to Toggle Synchronization<a name="char-animation-editor-sync-graph-using-a-script-on-the-subordinate-graph-to-toggle-synchronization"></a>
+### Using a Script on the Secondary Graph to Toggle Synchronization {#char-animation-editor-sync-graph-using-a-script-on-the-subordinate-graph-to-toggle-synchronization}
 
 The example uses Lua Script components on both the primary \(robot\) and secondary \(gun\) entities\. The script on the primary entity controls the firing of the gun\. The script on the secondary entity controls the sync mode\. To add a Lua script to an entity, add a [Lua Script component](/docs/userguide/scripting/lua/intro-add-script-to-component.md) to the entity and then attach the script to the component\.
 
@@ -325,7 +325,7 @@ end
 return syncSample;
 ```
 
-### Using Script on the Primary Graph to Control Shooting<a name="char-animation-editor-sync-graph-using-script-on-the-main-graph-to-control-shooting"></a>
+### Using Script on the Primary Graph to Control Shooting {#char-animation-editor-sync-graph-using-script-on-the-main-graph-to-control-shooting}
 
 The example Lua script on the primary entity \(the robot\) receives the keyboard input that toggles the firing of the gun\. The robot entity's animation graph's `shoot` parameter uses the **Boolean \(checkbox\)** type\. When the gun fires, the `shoot` parameter is true\. Because `shoot` is a named Boolean parameter, the Lua script on the primary entity uses the `SetNamedParameterBool` function on the `AnimGraphComponentBus`\.
 
@@ -370,7 +370,7 @@ end
 return syncGun;
 ```
 
-## The Example in Action<a name="char-animation-editor-sync-graph-finished-example"></a>
+## The Example in Action {#char-animation-editor-sync-graph-finished-example}
 
 The following animated image shows the finished example in action when the sync mode is turned off\. The robot fires, but the gun does not\.
 

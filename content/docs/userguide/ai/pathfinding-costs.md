@@ -2,7 +2,7 @@
 description: ' Learn more about pathfinding costs in &ALYlong;. '
 title: Pathfinding Costs
 ---
-# Pathfinding Costs<a name="ai-concepts-pathfinding-costs"></a>
+# Pathfinding Costs {#ai-concepts-pathfinding-costs}
 
 For agents to behave in a believable way, they need to find paths that are appropriate for their current state\. Sometimes these paths will take the most direct route; other times they will be longer paths to maximize use of roads, cover, or other properties of the environment\. The current system needs to be extended to support this\. The pathfinding system uses A\* to find minimal\-cost paths\. 
 
@@ -14,11 +14,11 @@ The cost of a path link connecting two graph nodes should be determined by two s
 
 In general, the cost of a link is determined by the product of these two factors: the link\-length multiplied by a relative cost\-per\-unit\-length\. The latter is what needs to be determined\.
 
-## Problem: Calculating Costs at Run Time<a name="ai-concepts-pathfinding-costs-problem"></a>
+## Problem: Calculating Costs at Run Time {#ai-concepts-pathfinding-costs-problem}
 
 We want to use the same navigation graph for different kinds of agents\. This means that link cost should be calculated at run time by combining the inherent link properties with the agent properties\.
 
-### Link properties<a name="ai-concepts-pathfinding-costs-problem-links"></a>
+### Link properties {#ai-concepts-pathfinding-costs-problem-links}
 
 Associate these properties with each link:
 
@@ -37,7 +37,7 @@ Fraction of the link that contains deep water \(e\.g\., > 1\.5m\)\.
 **Link\.DestinationDanger**  
 Additional "danger value" associated with the destination node\. A dead body might be 1\. This value can be stored in the destination node itself to save memory\.
 
-### Agent properties<a name="ai-concepts-pathfinding-costs-problem-agents"></a>
+### Agent properties {#ai-concepts-pathfinding-costs-problem-agents}
 
 Associate these properties with each agent \(normally set when the agent is created\):
 
@@ -52,7 +52,7 @@ Associate these properties with an agent if relevant for the link type:
 **Agent\.CanSwim**  
 True/false indicator determining if the agent can swim\.
 
-### Pathfinder request properties<a name="ai-concepts-pathfinding-costs-problem-path-request"></a>
+### Pathfinder request properties {#ai-concepts-pathfinding-costs-problem-path-request}
 
 Associate these properties with each agent pathfinder request: 
 
@@ -88,9 +88,9 @@ Keep in mind that link properties represent the average nature of the environmen
 
 An additional issue to consider: should pathfinding differentiate between variable visibility conditions, such as night vs\. day or fog vs\. clear weather? This would involve splitting the link exposure into terms derived from physical cover and shadow cover\. Given the number of links involved, adding too much information of this type to each link should be considered carefully\. A simpler solution might be to have stealthy agents be less likely to request a stealthy path in these conditions, or to set the agent's ExposureFactor lower\. 
 
-## Solution<a name="ai-concepts-pathfinding-costs-solution"></a>
+## Solution {#ai-concepts-pathfinding-costs-solution}
 
-### Calculating link properties<a name="ai-concepts-pathfinding-costs-solution-calculate-link-properties"></a>
+### Calculating link properties {#ai-concepts-pathfinding-costs-solution-calculate-link-properties}
 
 Because link resistance is only dependant on the actual type of nodes involved in the link, it can be stored in a lookup table\. Here's an example set of resistance values for each node type: 
 
@@ -111,7 +111,7 @@ For links between nodes of different types, the resistance values can be average
 
 The Link\.Exposure value, which is stored in the link, is determined by the environment properties sampled over the length of the link\. For triangular, waypoint and volume navigation regions, this can be done by firing rays from points along the link\. \(This is done by using IPhysicalWorld::RayWorldIntersection and checking for HIT\_COVER \| HIT\_SOFT\_COVER with COVER\_OBJECT\_TYPES\.\) It does not make sense to try to get a really accurate value, because in practice the beautified path will not follow the link directly\.
 
-### Combining link and agent properties<a name="ai-concepts-pathfinding-costs-solution-combining-link-properties"></a>
+### Combining link and agent properties {#ai-concepts-pathfinding-costs-solution-combining-link-properties}
 
 Link cost must account for intersections between link properties and agent properties\. For example: if a link is marked as containing deep water and the agent cannot swim, the link should be treated as impassable\.
 

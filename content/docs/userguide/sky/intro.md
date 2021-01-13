@@ -3,7 +3,7 @@ description: ' Create realistic skies by setting sun, moon, atmospheric, and tim
   effects in &ALY;''s Time of Day editor or Sun Trajectory Tool. '
 title: Adding Sky Effects
 ---
-# Adding Sky Effects<a name="sky-intro"></a>
+# Adding Sky Effects {#sky-intro}
 
 **Topics**
 + [Creating a Dynamic Daytime Sky](/docs/userguide/sky/day-intro.md)

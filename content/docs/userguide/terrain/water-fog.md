@@ -2,7 +2,7 @@
 description: ' Add realistic fog beneath water surfaces in your &ALY; level. '
 title: Adding Fog Beneath Water
 ---
-# Adding Fog Beneath Water<a name="terrain-water-fog"></a>
+# Adding Fog Beneath Water {#terrain-water-fog}
 
 
 ****  

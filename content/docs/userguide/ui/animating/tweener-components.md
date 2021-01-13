@@ -3,7 +3,7 @@ description: ' Learn which entity parameters that &ALYlong; supports in the Scri
   Entity Tweener system. '
 title: Tweener Supported Components
 ---
-# Tweener Supported Components<a name="ui-animating-tweener-components"></a>
+# Tweener Supported Components {#ui-animating-tweener-components}
 
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system\.
 

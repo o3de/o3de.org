@@ -3,15 +3,15 @@ description: ' Use UI world components to control the loading and unloading of c
   in &ALYlong;. '
 title: UI World Components
 ---
-# UI World Components<a name="lua-scripting-ces-api-ui-world-components"></a>
+# UI World Components {#lua-scripting-ces-api-ui-world-components}
 
 Controls the loading and unloading of UI canvases\.
 
-## UiCanvasAssetRefBus<a name="lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus"></a>
+## UiCanvasAssetRefBus {#lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus}
 
 Services messages for the `UiCanvasAssetRefComponent`\.
 
-### LoadCanvas<a name="lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-loadcanvas"></a>
+### LoadCanvas {#lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-loadcanvas}
 
 Loads the UI canvas using the stored asset reference\. Returns the entity ID of the loaded canvas\.
 
@@ -21,7 +21,7 @@ Loads the UI canvas using the stored asset reference\. Returns the entity ID of 
 AZ::EntityId LoadCanvas()
 ```
 
-### UnloadCanvas<a name="lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-unloadcanvas"></a>
+### UnloadCanvas {#lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-unloadcanvas}
 
 Unloads the UI canvas using the stored asset reference\.
 
@@ -31,11 +31,11 @@ Unloads the UI canvas using the stored asset reference\.
 void UnloadCanvas()
 ```
 
-## UiCanvasAssetRefNotificationBus<a name="lua-scripting-ces-api-ui-world-components-uicanvasassetrefnotificationbus"></a>
+## UiCanvasAssetRefNotificationBus {#lua-scripting-ces-api-ui-world-components-uicanvasassetrefnotificationbus}
 
 Handles events sent by the `UiCanvasAssetRefComponent`\.
 
-### OnCanvasLoadedIntoEntity<a name="lua-scripting-ces-api-ui-world-components-uicanvasassetrefnotificationbus-oncanvasloadedintoentity"></a>
+### OnCanvasLoadedIntoEntity {#lua-scripting-ces-api-ui-world-components-uicanvasassetrefnotificationbus-oncanvasloadedintoentity}
 
 Called when the canvas asset reference loads a UI canvas\.
 
@@ -45,11 +45,11 @@ Called when the canvas asset reference loads a UI canvas\.
 void OnCanvasLoadedIntoEntity(AZ::EntityId uiCanvasEntity)
 ```
 
-## UiCanvasProxyRefBus<a name="lua-scripting-ces-api-ui-world-components-uicanvasproxyrefbus"></a>
+## UiCanvasProxyRefBus {#lua-scripting-ces-api-ui-world-components-uicanvasproxyrefbus}
 
 Services messages for the `UiCanvasProxyRefComponent`\.
 
-### SetCanvasRefEntity<a name="lua-scripting-ces-api-ui-world-components-uicanvasproxyrefbus-setcanvasrefentity"></a>
+### SetCanvasRefEntity {#lua-scripting-ces-api-ui-world-components-uicanvasproxyrefbus-setcanvasrefentity}
 
 Sets the entity that manages the UI canvas for this proxy\.
 
@@ -59,11 +59,11 @@ Sets the entity that manages the UI canvas for this proxy\.
 void SetCanvasRefEntity(AZ::EntityId canvasAssetRefEntity)
 ```
 
-## UiCanvasRefBus<a name="lua-scripting-ces-api-ui-world-components-uicanvasrefbus"></a>
+## UiCanvasRefBus {#lua-scripting-ces-api-ui-world-components-uicanvasrefbus}
 
 Services messages for the `UiCanvasAssetRefComponent` and `UiCanvasProxyRefComponent`\.
 
-### GetCanvas<a name="lua-scripting-ces-api-ui-world-components-uicanvasrefbus-getcanvas"></a>
+### GetCanvas {#lua-scripting-ces-api-ui-world-components-uicanvasrefbus-getcanvas}
 
 Returns the UI canvas associated with this entity
 
@@ -73,11 +73,11 @@ Returns the UI canvas associated with this entity
 AZ::EntityId GetCanvas()
 ```
 
-## UiCanvasRefNotificationBus<a name="lua-scripting-ces-api-ui-world-components-uicanvasrefnotificationbus"></a>
+## UiCanvasRefNotificationBus {#lua-scripting-ces-api-ui-world-components-uicanvasrefnotificationbus}
 
 Provides notifications of when the UI canvas reference changes\.
 
-### OnCanvasRefChanged<a name="lua-scripting-ces-api-ui-world-components-uicanvasrefnotificationbus-oncanvasrefchanged"></a>
+### OnCanvasRefChanged {#lua-scripting-ces-api-ui-world-components-uicanvasrefnotificationbus-oncanvasrefchanged}
 
 Called when the canvas referenced by a `UiCanvasAssetRefComponent` has changed\. This can happen when [LoadCanvas](#lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-loadcanvas), [UnloadCanvas](#lua-scripting-ces-api-ui-world-components-uicanvasassetrefbus-unloadcanvas), or [SetCanvasRefEntity](#lua-scripting-ces-api-ui-world-components-uicanvasproxyrefbus-setcanvasrefentity) is called\.
 

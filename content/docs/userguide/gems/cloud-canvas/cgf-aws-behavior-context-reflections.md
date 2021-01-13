@@ -3,15 +3,15 @@ description: ' Use the CloudGemAWSScriptBehaviors gem in &ALYlong; to access &AW
   services from your scripts. '
 title: '&AWS; Behavior Context Reflections'
 ---
-# AWS Behavior Context Reflections<a name="cloud-canvas-cgf-aws-behavior-context-reflections"></a>
+# AWS Behavior Context Reflections {#cloud-canvas-cgf-aws-behavior-context-reflections}
 
 The CloudGemAWSScriptBehaviors gem uses the behavior context to expose AWS services such as [Amazon Cognito](https://aws.amazon.com/cognito/), [AWS Lambda](https://aws.amazon.com/lambda/), [Amazon S3](https://aws.amazon.com/s3/), and HTTP utilities to script\. The`\dev\CloudGemSamples\Scripts` directory has sample Lua code for each reflection\. To try the samples, run the AWSBehaviorExamples level in the CloudGemSamples project\.
 
-## API Service<a name="cloud-canvas-cgf-aws-behavior-context-reflections-api-service"></a>
+## API Service {#cloud-canvas-cgf-aws-behavior-context-reflections-api-service}
 
 API service behavior context reflections include a class and EBus that interact with Amazon API Gateway\.
 
-### AWSBehaviorAPI Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorapi-class"></a>
+### AWSBehaviorAPI Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorapi-class}
 
 Calls methods that are exposed through the Amazon API Gateway service\. The class properly signs requests with appropriate credentials in an HTTP request\. The class translates the logical resource names in Cloud Canvas to physical names\. This makes the class easy to use with other cloud gems\.
 
@@ -31,7 +31,7 @@ Calls methods that are exposed through the Amazon API Gateway service\. The clas
 | --- | --- | 
 | void Execute\(\) | Performs the HTTP request with the specified properties\. | 
 
-#### AWSBehaviorAPINotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorapinotificationsbus"></a>
+#### AWSBehaviorAPINotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorapinotificationsbus}
 
 The `AWSBehaviorAPINotificationsBus` has the following methods\.
 
@@ -44,11 +44,11 @@ The `AWSBehaviorAPINotificationsBus` has the following methods\.
 | void OnError\(string requestBody\) | Called when the API call fails\. The requestBody parameter contains the request body\. | 
 | void OnSuccess\(string resultBody\) | Called when the API call succeeds\. The resultBody parameter contains the request response body\. | 
 
-## Lambda Service<a name="cloud-canvas-cgf-aws-behavior-context-reflections-lambda-service"></a>
+## Lambda Service {#cloud-canvas-cgf-aws-behavior-context-reflections-lambda-service}
 
 Lambda service behavior context reflections include a class and EBus that interact with AWS Lambda\.
 
-### AWSLambda Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awslambda-class"></a>
+### AWSLambda Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awslambda-class}
 
 Invokes an AWS Lambda function\.
 
@@ -67,7 +67,7 @@ Invokes an AWS Lambda function\.
 | --- | --- | 
 | void InvokeAWSLambda\(\) | Invokes the specified Lambda function\. | 
 
-#### AWSLambdaHandler<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awslambdahandler"></a>
+#### AWSLambdaHandler {#cloud-canvas-cgf-aws-behavior-context-reflections-awslambdahandler}
 
 The `AWSLambdaHandler` EBus has the following methods\.
 
@@ -79,11 +79,11 @@ The `AWSLambdaHandler` EBus has the following methods\.
 | void OnError\(string errorBody\) | Called when the Lambda invocation fails\. The errorBody parameter contains the information that was returned in the Lambda error response\. | 
 | void OnSuccess\(string resultBody\) | Called when the Lambda invocation succeeds\. The resultBody parameter contains the information that was returned by the Lambda function, if any\. | 
 
-## S3 Service<a name="cloud-canvas-cgf-aws-behavior-context-reflections-s3-service"></a>
+## S3 Service {#cloud-canvas-cgf-aws-behavior-context-reflections-s3-service}
 
 S3 behavior context reflections include classes and EBuses that interact with Amazon S3\.
 
-### AWSBehaviorS3Upload Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3upload-class"></a>
+### AWSBehaviorS3Upload Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3upload-class}
 
 Uploads a local file to an Amazon S3 bucket\.
 
@@ -104,7 +104,7 @@ Uploads a local file to an Amazon S3 bucket\.
 | --- | --- | 
 | void Upload\(\) | Uploads the file with the specified properties\. | 
 
-#### AWSBehaviorS3UploadNotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3uploadnotificationsbus"></a>
+#### AWSBehaviorS3UploadNotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3uploadnotificationsbus}
 
 The `AWSBehaviorS3UploadNotificationsBus` has the following methods\.
 
@@ -116,7 +116,7 @@ The `AWSBehaviorS3UploadNotificationsBus` has the following methods\.
 | void OnError\(string errorBody\) | Called when the file upload fails\. The errorBody parameter contains the error information returned by Amazon S3, if any\. | 
 | void OnSuccess\(string resultBody\) | Called when the file upload succeeds\. The resultBody parameter contains the information that is returned by Amazon S3, if any\. | 
 
-### AWSBehaviorS3Download Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3download-class"></a>
+### AWSBehaviorS3Download Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3download-class}
 
 Downloads a file from an Amazon S3 bucket to the local file system\.
 
@@ -136,7 +136,7 @@ Downloads a file from an Amazon S3 bucket to the local file system\.
 | --- | --- | 
 | void Download\(\) | Downloads the file with the specified properties\. | 
 
-#### AWSBehaviorS3DownloadNotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3downloadnotificationsbus"></a>
+#### AWSBehaviorS3DownloadNotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3downloadnotificationsbus}
 
 The `AWSBehaviorS3DownloadNotificationsBus` has the following methods\.
 
@@ -148,7 +148,7 @@ The `AWSBehaviorS3DownloadNotificationsBus` has the following methods\.
 | void OnError\(string errorBody\) | Called when the file download fails\. The errorBody parameter contains error information returned by Amazon S3\. | 
 | void OnSuccess\(string resultBody\) | Called when the file download succeeds\. The resultBody parameter contains information returned by Amazon S3\. | 
 
-### AWSBehaviorS3Presign Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3presign-class"></a>
+### AWSBehaviorS3Presign Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3presign-class}
 
 Provides a presigned URL for a specified Amazon S3 file\. This is a URL that can be shared that allows authenticated access to the specified file\.
 
@@ -168,7 +168,7 @@ Provides a presigned URL for a specified Amazon S3 file\. This is a URL that can
 | --- | --- | 
 | void Presign\(\) | Gets a presigned URL for the specified Amazon S3 file\. | 
 
-#### AWSBehaviorS3PresignNotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3presignnotificationsbus"></a>
+#### AWSBehaviorS3PresignNotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviors3presignnotificationsbus}
 
 The `AWSBehaviorS3PresignNotificationsBus` has the following methods\.
 
@@ -180,11 +180,11 @@ The `AWSBehaviorS3PresignNotificationsBus` has the following methods\.
 | void OnError\(string errorBody\) | Called when the operation fails\. The errorBody parameter contains error information returned by Amazon S3\. | 
 | void OnSuccess\(string resultBody\) | Called when the operation succeeds\. The resultBody parameter contains the presigned URL returned by Amazon S3\. | 
 
-## Utilities<a name="cloud-canvas-cgf-aws-behavior-context-reflections-utilities"></a>
+## Utilities {#cloud-canvas-cgf-aws-behavior-context-reflections-utilities}
 
 Utility classes and EBuses provide functionality for HTTP, JSON, URL, and string operations\.
 
-### AWSBehaviorHTTP Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorhttp-class"></a>
+### AWSBehaviorHTTP Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorhttp-class}
 
 The `AWSBehaviorHTTP` class implements a simple general\-purpose HTTP `GET` request\. You can use the class to get any webpage or presigned URL\.
 
@@ -202,7 +202,7 @@ The `AWSBehaviorHTTP` class implements a simple general\-purpose HTTP `GET` requ
 | --- | --- | 
 | void Get\(\) | Gets the URL specified by the URL property\. | 
 
-#### AWSBehaviorHTTPNotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorhttpnotificationsbus"></a>
+#### AWSBehaviorHTTPNotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorhttpnotificationsbus}
 
 The `AWSBehaviorHTTPNotificationsBus` has the following methods\.
 
@@ -215,7 +215,7 @@ The `AWSBehaviorHTTPNotificationsBus` has the following methods\.
 | void OnError\(string errorBody\) | Called when the GET operation fails\. The errorBody parameter contains the error body\. | 
 | void GetResponse\(int responseCode, StringMap headerMap, string contentType, string responseBody\) |  Called when the request returns a response\. The parameters contain the following information: `responseCode` – The HTTP response code\. `headerMap` – Contains all the header information\. It can be passed to a [StringMap](#cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class) `map` property\. `contentType` – Contains the MIME content type for the response data\. `responseBody` – Contains the response data in string format\.  | 
 
-### JSON Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-json-class"></a>
+### JSON Class {#cloud-canvas-cgf-aws-behavior-context-reflections-json-class}
 
 Traverses and parses JSON data\. This class reads but does not write JSON data\. To write JSON data, use the string utilities provided in the language that you are using\.
 
@@ -249,7 +249,7 @@ The `JSON` class has no properties\. The following table lists its methods\.
 
 The JSON class has no corresponding EBus\.
 
-### AWSBehaviorURL Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorurl-class"></a>
+### AWSBehaviorURL Class {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorurl-class}
 
 The `AWSBehaviorURL` class provides "URL decode" functionality\. It removes any escape characters from the specified URL and returns the resulting string\.
 
@@ -267,7 +267,7 @@ The `AWSBehaviorURL` class provides "URL decode" functionality\. It removes any 
 | --- | --- | 
 | void Decode\(\) | Decodes the specified URL\. | 
 
-#### AWSBehaviorURLNotificationsBus<a name="cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorurlnotificationsbus"></a>
+#### AWSBehaviorURLNotificationsBus {#cloud-canvas-cgf-aws-behavior-context-reflections-awsbehaviorurlnotificationsbus}
 
 The `AWSBehaviorURLNotificationsBus` has the following methods\.
 
@@ -279,7 +279,7 @@ The `AWSBehaviorURLNotificationsBus` has the following methods\.
 | void OnError\(string error\) | Called if the URL was not successfully decoded\. The error parameter contains the reasons for the failure\. | 
 | void OnSuccess\(string result\) | Called if the URL was successfully decoded\. The result parameter contains the decoded string\. | 
 
-### StringMap Class<a name="cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class"></a>
+### StringMap Class {#cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class}
 
 A simple mapping of string key–value pairs\. The `StringMap` class is most often used with the HTTP `Get` class but is useful for general string map operations\.
 

@@ -2,7 +2,7 @@
 description: ' Administer your &ALYlong;''s project use of the &AWS; cloud. '
 title: Administering &cloud;
 ---
-# Administering Cloud Canvas<a name="cloud-canvas-administering-intro"></a>
+# Administering Cloud Canvas {#cloud-canvas-administering-intro}
 
 This section provides information for administering your Lumberyard project's AWS account and its use of the AWS cloud\.
 

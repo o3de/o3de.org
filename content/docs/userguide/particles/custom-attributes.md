@@ -3,7 +3,7 @@ description: ' Create a custom particle attribute panel in &ALYlong; &particle-e
   to quickly access the parameters you use most. '
 title: Creating Custom Attribute Panels
 ---
-# Creating Custom Attribute Panels<a name="particle-custom-attributes"></a>
+# Creating Custom Attribute Panels {#particle-custom-attributes}
 
 Create a custom particle attribute panel so you can quickly access the parameters that you frequently use\. You can drag parameters from an existing standard panel to copy the parameters into the custom panel\. Or you can drag parameters from a custom panel to move the parameters to the new custom panel\. If you want to simultaneously add multiple parameters, press **Ctrl** while selecting the parameters\.
 
@@ -27,7 +27,7 @@ When you move a panel to a new location, an indicator appears so you can preview
 1. Once created, you can right\-click the attribute title bar to rename, empty, or export custom attribute panels\.  
 ![\[Image NOT FOUND\]](/images/userguide/particles/particle-custom-panel-1.png)
 
-## Custom Attributes Panel Menu Options<a name="particle-custom-attributes-menu"></a>
+## Custom Attributes Panel Menu Options {#particle-custom-attributes-menu}
 
 Use the following menu options to modify your custom attribute panel\.
 

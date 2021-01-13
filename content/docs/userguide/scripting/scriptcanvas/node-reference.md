@@ -2,7 +2,7 @@
 description: ' Use &ALYlong; &script-canvas; editor nodes for your scripts. '
 title: '&script-canvas; Node Reference'
 ---
-# Script Canvas Node Reference<a name="script-canvas-node-reference"></a>
+# Script Canvas Node Reference {#script-canvas-node-reference}
 
 This reference includes the various types of **Script Canvas** editor nodes, their uses, and their inputs and outputs\.
 

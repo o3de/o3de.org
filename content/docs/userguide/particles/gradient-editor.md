@@ -3,7 +3,7 @@ description: ' Use the Gradient Editor in the &ALYlong; &particle-editor; to app
   color ranges to an emitter. '
 title: Using the Gradient Editor
 ---
-# Using the Gradient Editor<a name="particle-gradient-editor"></a>
+# Using the Gradient Editor {#particle-gradient-editor}
 
 Use the **Gradient Editor** to apply color ranges to an emitter and configure additional subparameters\.
 
@@ -18,7 +18,7 @@ Use the **Gradient Editor** to apply color ranges to an emitter and configure ad
 1. Click the color swatch for the **Strength Over Emitter Lifetime** or **Strength Over Particle Lifetime** parameter\.  
 ![\[Image NOT FOUND\]](/images/userguide/particles/particle-gradient-editor-2.png)
 
-## Gradient Editor UI Options<a name="particle-gradient-editor-ui-options"></a>
+## Gradient Editor UI Options {#particle-gradient-editor-ui-options}
 
 The **Gradient Editor** includes the following:
 + **Location** – Sets the location value range from 0% – 100%\.
@@ -30,7 +30,7 @@ The **Gradient Editor** includes the following:
 + **Default Library**, alpha curve – Provides alpha curves to use as a starting point\.
 + **Default Library**, gradient – Provides gradients to use as a starting point\.
 
-## Working with Color Gradients<a name="particle-gradient-editor-gradient"></a>
+## Working with Color Gradients {#particle-gradient-editor-gradient}
 
 When you select a gradient from the **Default Library**, it displays with the alpha curve in the **Gradient Editor** viewport\. You can do the following when selecting a gradient:
 

@@ -3,15 +3,15 @@ description: ' Use cinematic lighting for track view sequences in the &trackview
   in &ALYlong;. '
 title: Adding Lighting
 ---
-# Adding Lighting<a name="cinematics-adding-lighting-to-scenes"></a>
+# Adding Lighting {#cinematics-adding-lighting-to-scenes}
 
 
 
 You can set up a different lighting scenario in a sequence using light components and/or a time of day settings that are only triggered during the sequence\. You can add light components to the sequence and then add the tracks that you want to animate\. You can then set the [Console Variable Node](/docs/userguide/cinematics/track-view/nodes-cvar.md) to specify the time of day settings\. 
 
-## <a name="cinematics-lighting-animating"></a>
+##  {#cinematics-lighting-animating}
 
-## Cinematic Lighting Best Practices<a name="cinematics-lighting-bp"></a>
+## Cinematic Lighting Best Practices {#cinematics-lighting-bp}
 
 See the following recommended guidelines and best practices for cinematics lighting\.
 + Lights should be turned on and off while in the Track View\. If lights are off by default, they won't accidentally render in game or interfere with a scene shot\. You can animate the **Visible** track for each light to determine when a light should be turned on or off\.
@@ -25,7 +25,7 @@ See the following recommended guidelines and best practices for cinematics light
 + Shadowmap quality from point lights improves greatly when the **ProjectorFOV** value is as low as possible\. To soften shadows, you can increase the **ProjectorFOV** value slightly, but this also decreases the accuracy of the shadowmap\.
 + Don't use ambient lights as they can weaken contrast and illuminate unwanted areas\. Instead, use cubemaps to make the deepest shadow as dark as possible, and then add lights to increase the overall illumination\.
 
-## Light Components and Exposed Tracks<a name="light-components-and-exposed-tracks"></a>
+## Light Components and Exposed Tracks {#light-components-and-exposed-tracks}
 
 See the following light components and their properties that you can add as tracks to animate in a sequence\.
 

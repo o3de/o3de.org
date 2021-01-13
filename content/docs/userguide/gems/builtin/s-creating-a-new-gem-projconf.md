@@ -2,7 +2,7 @@
 description: null
 title: Creating a Gem with the &project-configurator;
 ---
-# Creating a Gem with the Project Configurator<a name="gems-system-gems-creating-a-new-gem-projconf"></a>
+# Creating a Gem with the Project Configurator {#gems-system-gems-creating-a-new-gem-projconf}
 
 Use Project Configurator to create a new, empty gem\.
 

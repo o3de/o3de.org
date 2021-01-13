@@ -2,19 +2,19 @@
 description: ' Use the lmbr_aws CLI to manage dynamic content for your &ALYlong; game. '
 title: Using the Dynamic Content Command Line
 ---
-# Using the Dynamic Content Command Line<a name="cloud-canvas-cloud-gem-dc-lmbr-aws"></a>
+# Using the Dynamic Content Command Line {#cloud-canvas-cloud-gem-dc-lmbr-aws}
 
 When you enable the Dynamic Content Cloud Gem, associated commands become available in the `lmbr_aws` CLI\. You can use these commands to update dynamic content and perform operations on manifest files and buckets\.
 
-## lmbr\_aws Extensions<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions"></a>
+## lmbr\_aws Extensions {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions}
 
 The following `lmbr_aws` CLI commands are enabled by the Dynamic Content Cloud Gem\.
 
-### dynamic\-content add\-file\-to\-pak<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-file-to-pak"></a>
+### dynamic\-content add\-file\-to\-pak {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-file-to-pak}
 
 Add a given file to the specified `.pak` file\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <file_name>`
 
   File entry to add\.
@@ -30,11 +30,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Operating system of the file entry to add\.
 
-### dynamic\-content add\-manifest\-file<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-manifest-file"></a>
+### dynamic\-content add\-manifest\-file {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-manifest-file}
 
 Adds a file to the content manifest for the project\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   The name of the file, including the local directory \(for example, `staticdata/csv/gameproperties.csv`, where local directory is `staticdata/csv/`\.
@@ -56,11 +56,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) The type of operating system to which the asset belongs\. The value defaults to the current operating system\.
 
-### dynamic\-content add\-pak<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-pak"></a>
+### dynamic\-content add\-pak {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-add-pak}
 
 Add a new pak entry to the manifest\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -73,11 +73,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) The operating system type for the `.pak` file\.
 
-### dynamic\-content build\-new\-paks<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-build-new-paks"></a>
+### dynamic\-content build\-new\-paks {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-build-new-paks}
 
 Create `.pak` files based on manifest files which have changed\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--all`
 
   \(Optional\) Upload all `.pak` files regardless of the results of the file check\.
@@ -87,11 +87,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   Defaults to `game\DynamicContent\Manifests\default.json`\.
 
-### dynamic\-content clear\-dynamic\-content<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-clear-dynamic-content"></a>
+### dynamic\-content clear\-dynamic\-content {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-clear-dynamic-content}
 
 Empty the bucket and table content\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--all-versions`
 
   \(Optional\) Remove all versions of the manifest and pak files\.
@@ -102,11 +102,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Confirm that you know this command will delete all the noncurrent versions of files in the content bucket, and that you will not be able to roll back any previous version after this operation\. Useful for automation\.
 
-### dynamic\-content compare\-bucket\-content<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-compare-bucket-content"></a>
+### dynamic\-content compare\-bucket\-content {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-compare-bucket-content}
 
 Compares manifest content to the bucket by checking HEAD metadata\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -118,11 +118,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   Defaults to the latest version\.
 
-### dynamic\-content create\-new\-manifest<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-create-new-manifest"></a>
+### dynamic\-content create\-new\-manifest {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-create-new-manifest}
 
 Create a new manifest\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-name <manifest_name>` 
 
   Name of the new manifest\.
@@ -135,20 +135,20 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Target operating systems for this new manifest \(the default is all supported operating systems and devices\)\.
 
-### dynamic\-content generate\-keys<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-generate-keys"></a>
+### dynamic\-content generate\-keys {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-generate-keys}
 
 Generate a new public/private key pair for use by the dynamic content system\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--key-name <key_name>`
 
   The name of the key file to use\.
 
-### dynamic\-content list\-bucket\-content<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-list-bucket-content"></a>
+### dynamic\-content list\-bucket\-content {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-list-bucket-content}
 
 Lists the manifest files in the content bucket\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -160,31 +160,31 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   Defaults to the latest version\.
 
-### dynamic\-content list\-file\-versions<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-list-file-versions"></a>
+### dynamic\-content list\-file\-versions {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-list-file-versions}
 
 List all versions of a manifest or pak file found in the content bucket\. Returns newest to oldest version based on uploaded date\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   \(Optional\) Name of the manifest or pak file\.
 
-### dynamic\-content migrate\-staging\-settings<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-migrate-staging-settings"></a>
+### dynamic\-content migrate\-staging\-settings {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-migrate-staging-settings}
 
 Migrate existing staging settings when content versioning is enabled or suspended\. Existing data should be migrated automatically during the deployment update, so you will only need this command if the deployment fails to update\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--deployment-name <deployment name>`
 
   \(Optional\) Name of the deployment for which staging settings should be migrated\.
 
   Defaults to the current active deployment\.
 
-### dynamic\-content remove\-manifest\-file<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-remove-manifest-file"></a>
+### dynamic\-content remove\-manifest\-file {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-remove-manifest-file}
 
 Removes a file from the content manifest for the project\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
    Removes a file from the content manifest for the project\. The file removed matches the value for `--file-name` that is specified in the `add-manifest-file` command\.
@@ -194,20 +194,20 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   Defaults to `game\DynamicContent\Manifests\default.json`\.
 
-### dynamic\-content request\-url<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-request-url"></a>
+### dynamic\-content request\-url {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-request-url}
 
 Requests a URL for the specified file\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--file-path <file_path>`
 
   The file in the bucket\.
 
-### dynamic\-content set\-staging\-status<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-set-staging-status"></a>
+### dynamic\-content set\-staging\-status {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-set-staging-status}
 
 Sets the staging status of the specified file\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-path <file_path>`
 
   The file in the bucket\.
@@ -234,11 +234,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 **Warning**  
 There is a risk of a race condition if the staging status of a file is updated while a new version of the same file with a different staging status is uploaded at the same time from a different machine\. The file could end up with an unexpected staging status in this case\. To avoid this issue, specify the version ID when using the `set-staging-status` command\.
 
-### dynamic\-content show\-manifest<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-show-manifest"></a>
+### dynamic\-content show\-manifest {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-show-manifest}
 
 List all entries in the content manifest\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--file-name <filename>`
 
   \(Optional\) The file entry \(local directory \+ key\) to show\.
@@ -259,24 +259,24 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Section to show \(`Paks` or `Files`\)\.
 
-### dynamic\-content show\-signature<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-show-signature"></a>
+### dynamic\-content show\-signature {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-show-signature}
 
 Show the signature which would be created for a specified file\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--file-name <file_name>`
 
   \(Optional\) The filename for which to show the signature\.
 
-### dynamic\-content suspend\-versioning<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-suspend-versioning"></a>
+### dynamic\-content suspend\-versioning {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-suspend-versioning}
 
 Suspend dynamic content versioning\.
 
 Note that suspending versioning will not revert the versioned S3 bucket to an unversioned state\. Existing objects do not change after the suspension, but the S3 bucket will stop accruing new versions of the same object\.
 
-To resume versioning, follow the instructions to [Enabling dynamic content versioning](/docs/userguide/gems/cloud-canvas/dc-updating.md#dynamic-content-versioning-enable) on an existing deployment\.
+To resume versioning, follow the instructions to [Enabling dynamic content versioning](/docs/userguide/gems/cloud-canvas/dc-updating#dynamic-content-versioning-enable) on an existing deployment\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--deployment-name <deployment name>`
 
   \(Optional\) Name of the deployment for which versioning should be suspended\.
@@ -286,11 +286,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Confirms that you know this command will suspend content versioning, and that you need to re\-enable and update the deployment to resume versioning\. Useful for automation\.
 
-### dynamic\-content test\-signature<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-test-signature"></a>
+### dynamic\-content test\-signature {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-test-signature}
 
 Tests whether a base64 signature is valid for the specified string\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--signature <signature>`
 
   Base64 encoded signature\.
@@ -298,22 +298,22 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   The string to sign\.
 
-### dynamic\-content update\-manifest<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-update-manifest"></a>
+### dynamic\-content update\-manifest {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-update-manifest}
 
 Updates the manifest with current file hashes\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following argument:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
 
   Defaults to `game\DynamicContent\Manifests\default.json`\.
 
-### dynamic\-content update\-target\-platforms<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-update-target-platforms"></a>
+### dynamic\-content update\-target\-platforms {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-update-target-platforms}
 
 Update the target operating system of a manifest file\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -323,11 +323,11 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   \(Optional\) Updated target operating systems for this new manifest \(the default is all supported operating systems and devices\)\.
 
-### dynamic\-content upload\-manifest\-content<a name="cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-upload-manifest-content"></a>
+### dynamic\-content upload\-manifest\-content {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-upload-manifest-content}
 
 Updates the manifest and uploads changed manifest content to the content bucket\.
 
-In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
+In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
 + `--manifest-path <manifest_path>`
 
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
@@ -356,7 +356,7 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
   Defaults to no signature\.
 + `--invalidate-existing-files`
 
-  \(Optional\) Invalidate existing files with the same name in the CloudFront edge cache\. Only effective if dynamic content is delivered via CloudFront\. For details on using this service with dynamic content, see the topic on [Using Amazon CloudFront](/docs/userguide/gems/cloud-canvas/dc-engineering.md#cloud-canvas-cloud-gem-dc-engineering-cloudfront)\.
+  \(Optional\) Invalidate existing files with the same name in the CloudFront edge cache\. Only effective if dynamic content is delivered via CloudFront\. For details on using this service with dynamic content, see the topic on [Using Amazon CloudFront](/docs/userguide/gems/cloud-canvas/dc-engineering#cloud-canvas-cloud-gem-dc-engineering-cloudfront)\.
 
   Defaults to no invalidation\.
 + `--replace`

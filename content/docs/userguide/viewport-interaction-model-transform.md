@@ -2,7 +2,7 @@
 description: ' Modify the transform for entities using the &VIM; in &ALYlong;. '
 title: Modifying the Transform
 ---
-# Modifying the Transform<a name="viewport-interaction-model-transform"></a>
+# Modifying the Transform {#viewport-interaction-model-transform}
 
 When you move the manipulator to another location in the viewport, you can modify the scale, rotation, or translation of the entity\. This feature makes it easier for you to manage your entities\. 
 

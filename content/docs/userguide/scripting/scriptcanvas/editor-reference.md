@@ -3,7 +3,7 @@ description: ' Learn about each &script-canvas; menu option and tool in the Edit
   Reference. '
 title: Editor Reference
 ---
-# Editor Reference<a name="script-canvas-editor-reference"></a>
+# Editor Reference {#script-canvas-editor-reference}
 
 The Script Canvas editor provides a visual scripting environment for creating graphs and reusable script functions\. In the following topics, learn more about each menu option and editor tool, as well as valuable keyboard and mouse shortcuts to increase your productivity\.
 

@@ -2,7 +2,7 @@
 description: ' Learn about the Player Account Sample Level in &ALYlong;. '
 title: The Player Account Sample Level
 ---
-# The Player Account Sample Level<a name="cloud-canvas-cloud-gem-player-account-sample-level"></a>
+# The Player Account Sample Level {#cloud-canvas-cloud-gem-player-account-sample-level}
 
 The CloudGemSamples project contains a sample level named `PlayerAccountSample`\. The player account sample level provides a menu from which players can create an account, verify their email addresses, sign in and out of their accounts, and recover their passwords by email\.
 

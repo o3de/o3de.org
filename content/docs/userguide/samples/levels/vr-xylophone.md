@@ -3,13 +3,13 @@ description: ' Use the VR Xylophone level to learn how to set up basic VR gamepl
   with the &component-system; in &ALYlong;. '
 title: VR Xylophone Level
 ---
-# VR Xylophone Level<a name="sample-level-vr-xylophone"></a>
+# VR Xylophone Level {#sample-level-vr-xylophone}
 
 The VR Xylophone level shows you how to create basic VR gameplay with the Lumberyard component entity system\. You use Script Canvas and Lua for VR device tracking, input events, and corresponding gameplay events\.
 
 For more information about installing the project that includes the VR Xylophone level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 
-## VR Device Tracking<a name="sample-level-vr-xylophone-vr-device-tracking"></a>
+## VR Device Tracking {#sample-level-vr-xylophone-vr-device-tracking}
 
 The VR Xylophone level uses the following:
 + `Input Configurator` entity – Handles VR device tracking and input events\.
@@ -19,7 +19,7 @@ The VR Xylophone level uses the following:
 + **[Lua Script](/docs/userguide/components/lua-script.md)** component – Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.  
 ![\[Input and Lua Script components in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-lua-script-component.png)
 
-## VR Controllers and Projectiles<a name="sample-level-vr-xylophone-controllers-and-projectiles"></a>
+## VR Controllers and Projectiles {#sample-level-vr-xylophone-controllers-and-projectiles}
 
 The VR Xylophone level uses a `controller_right.slice` for the right controller and a `controller_left.slice` for the left controller\. You can find these slices in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 
@@ -27,7 +27,7 @@ The right and left controllers are set up similarly, except that they spawn diff
 
 ![\[Entities for left and right controllers and projectile entities in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-left-right-controllers-and-projectiles.png)
 
-The projectile entities are also set up similarly, except for size and color\. They use the **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Primitive Collder](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-primitive-collider.html)** and **[Box Shape](/docs/userguide/components/shapes.md#box-shape-component-properties)** components to collide and interact with the domino entities in a physically realistic way\. Upon spawning, the projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
+The projectile entities are also set up similarly, except for size and color\. They use the **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Primitive Collder](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-primitive-collider.html)** and **[Box Shape](/docs/userguide/components/shapes#box-shape-component-properties)** components to collide and interact with the domino entities in a physically realistic way\. Upon spawning, the projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
 
 You can find the `projectile_largebox.slice` and `projectile_smallBox.slice` files in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 
@@ -39,7 +39,7 @@ The VR Xylophone level uses the following scripts:
   + The **Spawner** component specifies the dynamic slice to spawn\.  
 ![\[Script Canvas graph in the VR Xylophone level to spawn a projectile and play a spawning sound.\]](/images/userguide/vr-xylophone-script-canvas-graph.png)
 
-## Domino Tiles<a name="sample-level-vr-xylophone-domino-tiles"></a>
+## Domino Tiles {#sample-level-vr-xylophone-domino-tiles}
 
 The projectile entities interact with the domino tiles\. These tiles are instances of eight slices, each differing in color, letter, and sound pitch\. The sound pitch occurs when the tile's trigger makes contact with another collider\.
 

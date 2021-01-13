@@ -2,7 +2,7 @@
 description: ' Use the Portal component to create efficient indoor spaces in &ALYlong;. '
 title: Portal
 ---
-# Portal<a name="component-portal"></a>
+# Portal {#component-portal}
 
 
 ****  
@@ -22,7 +22,7 @@ You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.m
 + [Portal Component Properties](#component-portal-properties)
 + [Portal Component Examples](#component-portal-examples)
 
-## Portal Component Properties<a name="component-portal-properties"></a>
+## Portal Component Properties {#component-portal-properties}
 
 ![\[The Portal component properties in Lumberyard Editor.\]](/images/userguide/component/portal-component-properties.png)
 
@@ -46,7 +46,7 @@ The **Portal** component has the following properties\.
 |  **Vertices**  |  The vertices that define the floor of the portal\.   | 
 |  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. | 
 
-## Portal Component Examples<a name="component-portal-examples"></a>
+## Portal Component Examples {#component-portal-examples}
 
 **Example 1**  
 In the following examples, two boxes are inside several visible areas\. The visible areas are connected by the portals, which are green\. The portal lets you see between the visible areas\. The shadows of the boxes inside the visible areas appear because the **AffectedBySun** option is enabled\.  

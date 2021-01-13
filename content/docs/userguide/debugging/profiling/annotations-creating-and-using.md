@@ -3,7 +3,7 @@ description: ' Use annotations in Profiler to flag per-frame log information fro
   the data you captured from your &ALYlong; application. '
 title: Creating and Using Annotations
 ---
-# Creating and Using Annotations<a name="profiler-annotations-creating-and-using"></a>
+# Creating and Using Annotations {#profiler-annotations-creating-and-using}
 
 ****  
 Profiler is in preview release and is subject to change\. 
@@ -15,7 +15,7 @@ In Profiler, annotations are a convenient way of highlighting per\-frame log inf
 + [Creating Annotations](#profiler-annotations-creating)
 + [Viewing Annotations in Trace Messages Profiler](#profiler-annotations-creating-trace-messages-profiler)
 
-## Using Annotations<a name="profiler-annotations-using"></a>
+## Using Annotations {#profiler-annotations-using}
 
 Annotations in the Lumberyard Profiler tool flag frames in your captured data that have associated log information\. By default, annotations are turned off\. 
 
@@ -33,7 +33,7 @@ Annotations in the Lumberyard Profiler tool flag frames in your captured data th
 1. To display details for the annotations that occurred on a frame, pause your pointer on an annotation marker\. In the example image, IP addresses have been redacted out\.  
 ![\[Annotation content\]](/images/userguide/profiler-annotations-using-select.png)
 
-## Creating Annotations<a name="profiler-annotations-creating"></a>
+## Creating Annotations {#profiler-annotations-creating}
 
 To create an annotation, you add one or more lines of C\+\+ logging code to your application\. The added code instructs Lumberyard's logging system to include the logging information that you specify as a part of your capture\. Lumberyard transforms the logged messages into annotations for you\. Then, in Profiler, when you click **Configure Annotations**, you actually choose which system's annotations are displayed \(for example, **GridMate** or **MultiplayerProject**\)\. 
 
@@ -53,7 +53,7 @@ The text displays in Profiler like this:
 
 ![\[Annotation display in Profiler\]](/images/userguide/profiler-annotations-creating-display.png)
 
-### Alternatives to AZ\_TracePrintf<a name="profiler-annotations-creating-alternatives-to-az_traceprintf"></a>
+### Alternatives to AZ\_TracePrintf {#profiler-annotations-creating-alternatives-to-az_traceprintf}
 
 In your code, instead of using `AZ_TracePrintf`, you can use `AZ_Error` or `AZ_Warning`, depending on the degree of severity that you want\. `AZ_TracePrintf` always logs a message, but is of the lowest concern from an inspection viewpoint\. 
 
@@ -76,7 +76,7 @@ else
 
 In the example, if either of the error conditions occur, an annotation is created\. 
 
-## Viewing Annotations in Trace Messages Profiler<a name="profiler-annotations-creating-trace-messages-profiler"></a>
+## Viewing Annotations in Trace Messages Profiler {#profiler-annotations-creating-trace-messages-profiler}
 
 Another way to confirm that your annotations are in place is by using the Trace Messages profiler\.
 

@@ -3,7 +3,7 @@ description: ' Make precise changes to the geometry of a road by adjusting the s
   points and parameters. '
 title: Adjusting Road Spline Geometry
 ---
-# Adjusting Road Spline Geometry<a name="terrain-roads-spline-geometry"></a>
+# Adjusting Road Spline Geometry {#terrain-roads-spline-geometry}
 
 
 ****  

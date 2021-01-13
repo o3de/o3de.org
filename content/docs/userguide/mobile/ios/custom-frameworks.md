@@ -2,11 +2,11 @@
 description: ' Add iOS Framework libraries to your &ALYlong; Gems. '
 title: Add iOS Frameworks to a &ALY; project
 ---
-# Add iOS Frameworks to a Lumberyard project<a name="ios-custom-frameworks"></a>
+# Add iOS Frameworks to a Lumberyard project {#ios-custom-frameworks}
 
  As part of making changes to your core application on iOS, you may need to include bundled libraries for Darwin platforms called [Frameworks](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html)\. Frameworks are versioned bundles of libraries and their headers packaged as a single redistributable, and more common to ship for Darwin\-based platforms rather than independent `.dyld` libraries and header files\. When building for iOS, these frameworks need to be included in your final application bundle and code\-signed like the rest of your binary\. Because headers ship as part of a Framework, you don't need to explicitly export them so that the build system or your code will see the headers\. 
 
-## Include frameworks in the launcher's `wscript`<a name="ios-custom-frameworks-wscript"></a>
+## Include frameworks in the launcher's `wscript` {#ios-custom-frameworks-wscript}
 
  This section of the guide walks you through configuring your project launcher's `wscript` to support linking and including Frameworks, as well as \. Before reading the rest of this topic, make sure that you're familiar with the general principles behind Waf build scripts in Lumberyard\. For more information, see [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)\. 
 
@@ -31,7 +31,7 @@ title: Add iOS Frameworks to a &ALY; project
 
  During the build process, frameworks are copied to the `@executable_path/Frameworks` directory within your application bundle\. 
 
-## Add library search paths<a name="ios-custom-frameworks-rpath"></a>
+## Add library search paths {#ios-custom-frameworks-rpath}
 
  If you've placed Frameworks in a location other than `@executable_path/Frameworks`, you need to add this directory to your project's `rpath`\. iOS uses `rpath` information to find dynamic libraries to load at runtime, meaning that if your framework isn't included as a subdirectory of an `rpath` element, your application won't be able to load the framework library and may crash or experience other serious errors\. 
 

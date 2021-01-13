@@ -2,7 +2,7 @@
 description: ' Process assets for NVIDIA Blast. '
 title: Processing assets for NVIDIA Blast
 ---
-# Processing assets for NVIDIA Blast<a name="nvidia-blast-process-blast-asset"></a>
+# Processing assets for NVIDIA Blast {#nvidia-blast-process-blast-asset}
 
 
 ****  
@@ -21,7 +21,7 @@ Once you have manually edited the `.fbx` asset in **FBX Settings**, a `.assetinf
 + [Process Blast assets automatically](#nvidia-blast-automatic-process)
 + [Process Blast mesh assets manually](#nvidia-blast-manual-process)
 
-## Process Blast assets automatically<a name="nvidia-blast-automatic-process"></a>
+## Process Blast assets automatically {#nvidia-blast-automatic-process}
 
 When blast assets are processed automatically, a blast slice asset is created that adds the blast mesh chunks to the **Blast Family Mesh Data** component\. If you have a blast asset with dozens of chunks, automatic processing with the Python asset builder for NVIDIA Blast can save some time\. 
 
@@ -43,7 +43,7 @@ Automatically processing assets for NVIDIA Blast requires that your project has 
    1. Choose **Reprocess File** from the context menu\.   
 ![\[Automatic process of Blast assets.\]](/images/userguide/physx/blast/ui-blast-process-automatic.png)
 
-## Process Blast mesh assets manually<a name="nvidia-blast-manual-process"></a>
+## Process Blast mesh assets manually {#nvidia-blast-manual-process}
 
 Manually processing blast assets requires you to add a mesh group for each chunk mesh so that **Asset Processor** can generate the run\-time asset\. Manual processing also requires you to add each run\-time mesh to the **Blast Family Mesh Data** component\. If you need to add modifiers to the blast mesh chunks, such as specifying a vertex color stream, you must use this manual process\. 
 

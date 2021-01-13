@@ -3,7 +3,7 @@ description: ' Use the &cloud; Speech Recognition Cloud Gem API to implement spe
   recognition in your &ALY; game. '
 title: Speech Recognition Cloud Gem API
 ---
-# Speech Recognition Cloud Gem API<a name="cloud-canvas-cloud-gem-speech-recognition-api"></a>
+# Speech Recognition Cloud Gem API {#cloud-canvas-cloud-gem-speech-recognition-api}
 
 The Speech Recognition Cloud Gem player API uses [EBus](/docs/userguide/programming/ebus/intro.md) requests and handlers that are mapped to the service API\.
 

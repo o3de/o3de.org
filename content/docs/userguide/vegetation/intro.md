@@ -3,7 +3,7 @@ description: ' Add realistic trees, bushes, grasses, and other vegetation to you
   &ALYlong; terrain. '
 title: Adding Vegetation
 ---
-# Adding Vegetation<a name="vegetation-intro"></a>
+# Adding Vegetation {#vegetation-intro}
 
 You can add realistic trees, bushes, grasses, and other vegetation to your Lumberyard terrain\.
 
@@ -18,7 +18,7 @@ You can add realistic trees, bushes, grasses, and other vegetation to your Lumbe
 + [Vegetation Debugging](/docs/userguide/vegetation/debugging.md)
 + [Using SpeedTree 8 for Lumberyard](/docs/userguide/vegetation/speedtree-lumberyard-intro.md)
 
-## Vegetation Best Practices<a name="vegetation-best-practices"></a>
+## Vegetation Best Practices {#vegetation-best-practices}
 
 Keep in mind the following best practices, recommendations, and guidelines when you add vegetation to your terrain level\.
 + Manually place vegetation to get the most control and best results\.
@@ -31,7 +31,7 @@ Keep in mind the following best practices, recommendations, and guidelines when 
 + Use the automerged method to apply wind bending effects to grass\.
 + Use a maximum of 72 bones per tree for touch bending\.
 
-## Vegetation Recommendations<a name="vegetation-best-recommendations"></a>
+## Vegetation Recommendations {#vegetation-best-recommendations}
 
 The following settings are recommended when creating vegetation in your DCC tool\.
 

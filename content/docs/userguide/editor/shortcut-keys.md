@@ -2,7 +2,7 @@
 description: ' Use &ly-editor; keyboard shortcuts (hot keys or hotkeys). '
 title: Using Keyboard Shortcuts
 ---
-# Using Keyboard Shortcuts<a name="lumberyard-editor-shortcut-keys"></a>
+# Using Keyboard Shortcuts {#lumberyard-editor-shortcut-keys}
 
 Lumberyard supports the following keyboard shortcuts\.
 

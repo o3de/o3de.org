@@ -2,15 +2,15 @@
 description: ' Use the UISliderComponent to control the value of a slider in &ALYlong;. '
 title: UISliderComponent
 ---
-# UISliderComponent<a name="lua-scripting-ces-api-ui-uislidercomponent"></a>
+# UISliderComponent {#lua-scripting-ces-api-ui-uislidercomponent}
 
 Controls the values of a slider\.
 
-## UiSliderBus<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus"></a>
+## UiSliderBus {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus}
 
 Services messages for the `UiSliderComponent`\.
 
-### GetFillEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getfillentity"></a>
+### GetFillEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getfillentity}
 
 Returns the fill element\.
 
@@ -20,7 +20,7 @@ Returns the fill element\.
 AZ::EntityId GetFillEntity()
 ```
 
-### GetManipulatorEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getmanipulatorentity"></a>
+### GetManipulatorEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getmanipulatorentity}
 
 Returns the entity ID of the manipulator element\.
 
@@ -30,7 +30,7 @@ Returns the entity ID of the manipulator element\.
 AZ::EntityId GetManipulatorEntity()
 ```
 
-### GetMaxValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getmaxvalue"></a>
+### GetMaxValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getmaxvalue}
 
 Returns the maximum value of the slider\.
 
@@ -40,7 +40,7 @@ Returns the maximum value of the slider\.
 float GetMaxValue()
 ```
 
-### GetMinValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getminvalue"></a>
+### GetMinValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getminvalue}
 
 Returns the minimum value of the slider\.
 
@@ -50,7 +50,7 @@ Returns the minimum value of the slider\.
 float GetMinValue()
 ```
 
-### GetStepValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getstepvalue"></a>
+### GetStepValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getstepvalue}
 
 Returns the smallest increment allowed between values\. Zero means no restriction\.
 
@@ -60,7 +60,7 @@ Returns the smallest increment allowed between values\. Zero means no restrictio
 float GetStepValue()
 ```
 
-### GetTrackEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-gettrackentity"></a>
+### GetTrackEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-gettrackentity}
 
 Returns the track element\.
 
@@ -70,7 +70,7 @@ Returns the track element\.
 AZ::EntityId GetTrackEntity()
 ```
 
-### GetValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvalue"></a>
+### GetValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvalue}
 
 Returns the value of the slider\.
 
@@ -80,7 +80,7 @@ Returns the value of the slider\.
 float GetValue()
 ```
 
-### GetValueChangedActionName<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvaluechangedactionname"></a>
+### GetValueChangedActionName {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvaluechangedactionname}
 
 Returns the action triggered when the value has finished changing\.
 
@@ -90,7 +90,7 @@ Returns the action triggered when the value has finished changing\.
 const AZStd::string& GetValueChangedActionName() 
 ```
 
-### GetValueChangingActionName<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvaluechangingactionname"></a>
+### GetValueChangingActionName {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvaluechangingactionname}
 
 Returns the name of the action triggered while the value is changing\.
 
@@ -100,7 +100,7 @@ Returns the name of the action triggered while the value is changing\.
 const AZStd::string& GetValueChangingActionName() 
 ```
 
-### SetFillEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setfillentity"></a>
+### SetFillEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setfillentity}
 
 Sets the fill element\.
 
@@ -110,7 +110,7 @@ Sets the fill element\.
 void SetFillEntity(AZ::EntityId entityId)
 ```
 
-### SetManipulatorEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setmanipulatorentity"></a>
+### SetManipulatorEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setmanipulatorentity}
 
 Sets the manipulator element\.
 
@@ -120,7 +120,7 @@ Sets the manipulator element\.
 void SetManipulatorEntity(AZ::EntityId entityId) 
 ```
 
-### SetMaxValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setmaxvalue"></a>
+### SetMaxValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setmaxvalue}
 
 Sets the maximum value of the slider\.
 
@@ -130,7 +130,7 @@ Sets the maximum value of the slider\.
 void SetMaxValue(float value)
 ```
 
-### SetMinValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setminvalue"></a>
+### SetMinValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setminvalue}
 
 Sets the minimum value of the slider\.
 
@@ -140,7 +140,7 @@ Sets the minimum value of the slider\.
 void SetMinValue(float value)
 ```
 
-### SetStepValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setstepvalue"></a>
+### SetStepValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setstepvalue}
 
 Sets the smallest increment allowed between values\. Use zero for no restriction\.
 
@@ -150,7 +150,7 @@ Sets the smallest increment allowed between values\. Use zero for no restriction
 void SetStepValue(float step)
 ```
 
-### SetTrackEntity<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-settrackentity"></a>
+### SetTrackEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-settrackentity}
 
 Sets the track element\.
 
@@ -160,7 +160,7 @@ Sets the track element\.
 void SetTrackEntity(AZ::EntityId entityId)
 ```
 
-### SetValue<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvalue"></a>
+### SetValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvalue}
 
 Sets the value of the slider\.
 
@@ -170,7 +170,7 @@ Sets the value of the slider\.
 void SetValue(float value)
 ```
 
-### SetValueChangedActionName<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvaluechangedactionname"></a>
+### SetValueChangedActionName {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvaluechangedactionname}
 
 Sets the action triggered when the value is done changing\.
 
@@ -180,7 +180,7 @@ Sets the action triggered when the value is done changing\.
 void SetValueChangedActionName(const AZStd::string& actionName)
 ```
 
-### SetValueChangingActionName<a name="lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvaluechangingactionname"></a>
+### SetValueChangingActionName {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setvaluechangingactionname}
 
 Sets the action triggered while the value is changing\.
 
@@ -190,11 +190,11 @@ Sets the action triggered while the value is changing\.
 void SetValueChangingActionName(const AZStd::string& actionName)
 ```
 
-## UiSliderNotificationBus<a name="lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus"></a>
+## UiSliderNotificationBus {#lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus}
 
 Services notifications for the `UiSliderComponent`\.
 
-### OnSliderValueChanged<a name="lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus-onslidervaluechanged"></a>
+### OnSliderValueChanged {#lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus-onslidervaluechanged}
 
 The slider value has finished changing\.
 
@@ -204,7 +204,7 @@ The slider value has finished changing\.
 void OnSliderValueChanged(float value)
 ```
 
-### OnSliderValueChanging<a name="lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus-onslidervaluechanging"></a>
+### OnSliderValueChanging {#lua-scripting-ces-api-ui-uislidercomponent-uislidernotificationbus-onslidervaluechanging}
 
 The slider value is changing\.
 

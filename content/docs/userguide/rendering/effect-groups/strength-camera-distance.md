@@ -2,7 +2,7 @@
 description: ' Set effect strength based on camera distance. '
 title: Setting Effect Strength Based on Camera Distance
 ---
-# Setting Effect Strength Based on Camera Distance<a name="effect-groups-strength-camera-distance"></a>
+# Setting Effect Strength Based on Camera Distance {#effect-groups-strength-camera-distance}
 
 You can use the **fadeDistance** attribute to set the effect strength based on the distance from the camera\.
 
@@ -17,7 +17,7 @@ Example opening XML tag using the **fadeDistance** attribute:
 + When the camera is less than fade distance from the entity, the effects are blended\.
 + When the camera is at least fade distance from the entity, the effects are set to the lower priority values\.
 
-## Script Canvas Editor<a name="effect-groups-strength-camera-distance-with-script-canvas"></a>
+## Script Canvas Editor {#effect-groups-strength-camera-distance-with-script-canvas}
 
 You need to use a script to apply this effect group at the specified position for each frame\. For more information, see the **[Apply Effect Group At Position](/docs/userguide/apply-effect-group-at-position-node.md)** node\.
 
@@ -26,7 +26,7 @@ The following script uses the **Get World Translation** to send the entity's pos
 
 ![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](/images/userguide/example-script-apply-effect-group-at-position.png)
 
-## Lua<a name="effect-groups-strength-camera-distance-with-lua"></a>
+## Lua {#effect-groups-strength-camera-distance-with-lua}
 
 To enable an effect group using Lua, set the position at which to apply the effect by using the following function:
 

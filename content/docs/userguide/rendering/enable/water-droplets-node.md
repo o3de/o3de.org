@@ -3,7 +3,7 @@ description: ' Use the Enable Water Droplet node in the &ALYlong; &script-canvas
   editor to enable water droplets. '
 title: Enable Water Droplets
 ---
-# Enable Water Droplets<a name="enable-water-droplets-node"></a>
+# Enable Water Droplets {#enable-water-droplets-node}
 
 Apply a water effect that appears from various sources on the screen\. Unlike the **[Enable Rain Drops](/docs/userguide/rendering/enable/rain-drops-node.md)** node, this node simulates a splash of water thrown on the screen\. For example, you can use this node when the camera leaves the water\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Water Droplets](/docs/userguide/rendering/di
 
 ![\[Use the Enable Water Droplets node to have water wash down the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-water-droplets-node-example.gif)
 
-## Inputs<a name="enable-water-droplets-node-input"></a>
+## Inputs {#enable-water-droplets-node-input}
 
 
 ****  
@@ -29,7 +29,7 @@ To disable the effect, see [Disable Water Droplets](/docs/userguide/rendering/di
 | In | Event | Triggers the node\. | 
 | Amount | Number | Amount of water\.Default value: `5` | 
 
-## Outputs<a name="enable-water-droplets-node-output"></a>
+## Outputs {#enable-water-droplets-node-output}
 
 
 ****  

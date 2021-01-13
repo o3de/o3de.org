@@ -3,7 +3,7 @@ description: ' Use terrain settings to create the appropriate landform for your 
   of water in your &ALY; level. '
 title: Preparing the Terrain
 ---
-# Preparing the Terrain<a name="terrain-water-prepare-terrain"></a>
+# Preparing the Terrain {#terrain-water-prepare-terrain}
 
 
 ****  

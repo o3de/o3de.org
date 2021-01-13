@@ -3,7 +3,7 @@ description: ' Use &ALY;''s &database-view; editor to create libraries of entiti
   prefabs, vegetation, particles, and game tokens. '
 title: Working with Database Libraries
 ---
-# Working with Database Libraries<a name="level-database-view"></a>
+# Working with Database Libraries {#level-database-view}
 
 
 ****  

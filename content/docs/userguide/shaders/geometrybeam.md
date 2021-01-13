@@ -2,11 +2,11 @@
 description: ' See the GeometryBeam shader to create volumetric light beams for &ALYlong;. '
 title: GeometryBeam Shader
 ---
-# GeometryBeam Shader<a name="shader-ref-geometrybeam"></a>
+# GeometryBeam Shader {#shader-ref-geometrybeam}
 
 Use the GeometryBeam shader to create volumetric light beams that feature dust and turbulence effects\. 
 
-## Shader Parameters<a name="shader-ref-geometrybeam-shader-parameters"></a>
+## Shader Parameters {#shader-ref-geometrybeam-shader-parameters}
 
 **Ambience strength**  
 Controls the general strength of the beam effect\.  
@@ -76,7 +76,7 @@ Controls the volumetric features when shadow receiving is enabled\. This also ha
 This parameter requires that the **Receive Shadows** shader generation parameter is enabled\.  
 Default value: 0\.7
 
-## Shader Generation Parameters<a name="shader-ref-geometrybeam-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-geometrybeam-shader-generation-parameters}
 
 **Dust Turbulence**  
 Enables dust and turbulence overlay\. **Specular** and **Bumpmap** texture map slots also become available under **Texture Maps** to fine\-tune appearance\.

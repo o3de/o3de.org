@@ -3,7 +3,7 @@ description: ' Use the Rain Gem to create realistic rain effects in your &ALYlon
   level. '
 title: Rain Gem
 ---
-# Rain Gem<a name="gems-system-gem-rain"></a>
+# Rain Gem {#gems-system-gem-rain}
 
 
 ****  
@@ -21,7 +21,7 @@ This gem is a game object extension\. On initialization, it preloads all texture
 **Note**  
 Place only a single Rain entity in your scene\.
 
-## Placing Rain<a name="placing-rain"></a>
+## Placing Rain {#placing-rain}
 
 You can place rain and customize it for your level by modifying properties for amount of puddles, strength and frequence of puddle ripples, quantity of rain, size and speed of the rain drops, and more\.
 
@@ -33,7 +33,7 @@ You can place rain and customize it for your level by modifying properties for a
 
 1. Drag the **Rain** entity into your scene\.
 
-## Configuring Rain<a name="configuring-rain"></a>
+## Configuring Rain {#configuring-rain}
 
 You can configure the rain's properties under [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html) and **Entity Properties**\.
 
@@ -56,7 +56,7 @@ You can configure the rain's properties under [https://docs.aws.amazon.com/lumbe
 | RainDropsSpeed | Sets the rate at which rain falls | 
 | SplashesAmount | Sets the degree of splashing on a surface | 
 
-## Using Console Variables for Rain<a name="rain-console-variables"></a>
+## Using Console Variables for Rain {#rain-console-variables}
 
 You can use the following console variables for the rain entity\.
 
@@ -74,7 +74,7 @@ You can use the following console variables for the rain entity\.
 | r\_RainMaxViewDist\_Deferred | Sets maximum distance \(in meters\) at which the deferred rain reflection layer is visible | 
 | r\_RainOccluderSizeThreshold | Blocks rain for objects bigger than this value | 
 
-## Using the Rain Sample<a name="gems-rain-sample"></a>
+## Using the Rain Sample {#gems-rain-sample}
 
 The Rain Sample uses the Rain, Clouds, and LightningArc gems to demonstrate how to use rain as an environment special effects \(FX\) in a level\. The Lightning entity \(from the LightningArc gem\) shows how the lightning FX can enhance a rain storm with flashes of light and random strikes of lightning on the ground\. The clouds are enabled to show how they can fill a scene\.
 

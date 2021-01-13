@@ -3,11 +3,11 @@ description: ' Learn about cloud gems, the Cloud Gem Framework, and how to creat
   your own cloud gem to implement cloud-connected game functionality in &ALYlong;. '
 title: Getting Started with the Cloud Gem Framework
 ---
-# Getting Started with the Cloud Gem Framework<a name="cloud-canvas-cgf-getting-started"></a>
+# Getting Started with the Cloud Gem Framework {#cloud-canvas-cgf-getting-started}
 
 Lumberyard cloud gems make it easy to create cloud\-connected functionality for your games\. You can use the cloud gems included with Lumberyard, or use Lumberyard's Cloud Gem Framework to create your own cloud gems\.
 
-## Cloud Gems<a name="cloud-canvas-cgf-getting-started-cloud-gems"></a>
+## Cloud Gems {#cloud-canvas-cgf-getting-started-cloud-gems}
 
 Cloud gems are Lumberyard gems that use [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md) \(CCRM\) to define AWS resources that support their operation\. CCRM provides the infrastructure needed to create, configure, and access AWS resources\. A cloud gem defines resources and implements the required operations to create a complete game subsystem\.
 
@@ -21,7 +21,7 @@ In this scenario, CCRM performs the following tasks:
 + Protects the integrity of the leaderboard by removing fraudulent scores automatically\.
 + Permits the creation of a user interface that enables an authorized employee to remove fraudulent scores manually\.
 
-## Cloud Gem Framework<a name="cloud-canvas-cgf-getting-started-cloud-gem-framework"></a>
+## Cloud Gem Framework {#cloud-canvas-cgf-getting-started-cloud-gem-framework}
 
 The Cloud Gem Framework is a collection of tools and API operations that support the creation and operation of cloud gems\.
 

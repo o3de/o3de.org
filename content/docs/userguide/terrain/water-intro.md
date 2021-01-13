@@ -3,7 +3,7 @@ description: ' Use specialized shaders and caustics to create realistic bodies o
   water in &ALY;. '
 title: Creating Bodies of water
 ---
-# Creating Bodies of water<a name="terrain-water-intro"></a>
+# Creating Bodies of water {#terrain-water-intro}
 
 You can create realistic\-looking ocean, lakes, rivers, waterfalls, and pools with waves and ripples\. Players and objects interacting with water surfaces also generate waves and ripples\. Water gets its appearance from reflections on the surface and the interaction of light with particles suspended underneath the surface\. You need both to achieve an authentic look\.
 

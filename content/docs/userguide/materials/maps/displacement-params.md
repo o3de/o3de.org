@@ -2,7 +2,7 @@
 description: ' Apply displacement mapping for an object in &ALYlong;. '
 title: Setting Displacement Mapping Parameters
 ---
-# Setting Displacement Mapping Parameters<a name="mat-maps-displacement-params"></a>
+# Setting Displacement Mapping Parameters {#mat-maps-displacement-params}
 
 **To apply displacement mapping to an object**
 

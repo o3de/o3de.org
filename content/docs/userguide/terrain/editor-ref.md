@@ -3,7 +3,7 @@ description: ' Use heightmap properties and settings to change the shape of your
   profile in &ALY;. '
 title: Setting Heightmap Properties
 ---
-# Setting Heightmap Properties<a name="terrain-editor-ref"></a>
+# Setting Heightmap Properties {#terrain-editor-ref}
 
 You can use the Terrain Editor to set various heightmap properties and parameters that affect the shape of the terrain profile\.
 

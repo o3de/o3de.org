@@ -2,7 +2,7 @@
 description: ' Use the Waf projects file to specify &ALY; game project-specific data. '
 title: Waf Projects File (project.json)
 ---
-# Waf Projects File \(project\.json\)<a name="waf-files-projects-file"></a>
+# Waf Projects File \(project\.json\) {#waf-files-projects-file}
 
 The `project.json` file \(located in each game project directory\) is used to store game project\-specific data\. The **enabled\_game\_projects** settings \(`user_settings.options`\) and the **\-\-enable\-game\-projects** build parameter use the project names defined in this file\.
 

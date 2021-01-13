@@ -2,7 +2,7 @@
 description: ' Learn more about hot reloading of shaders in &ALYlong;. '
 title: Hot Reloading of Shaders
 ---
-# Hot Reloading of Shaders<a name="mat-shaders-custom-dev-hot-reloading"></a>
+# Hot Reloading of Shaders {#mat-shaders-custom-dev-hot-reloading}
 
 Lumberyard supports hot reloading of shaders, so whenever you modify and save a shader file, it will get reloaded automatically and the results can be viewed directly in a test level\.
 

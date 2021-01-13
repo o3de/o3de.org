@@ -3,7 +3,7 @@ description: ' Use &ly-launcher; to install required third-party software, SDKs,
   plugins. '
 title: Running &ly-launcher;
 ---
-# Running Lumberyard Setup Assistant<a name="lumberyard-launcher-using"></a>
+# Running Lumberyard Setup Assistant {#lumberyard-launcher-using}
 
 **Note**  
 Before you run Lumberyard Setup Assistant, verify the following:  
@@ -47,7 +47,7 @@ We recommend that you select only *one* version of Visual Studio \- the one that
 **Note**  
 Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)\.
 **Note**  
-For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](/docs/userguide/setup/system-requirements.md#lumberyard-visual-studio-requirement)\.
+For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](/docs/userguide/setup/system-requirements#lumberyard-visual-studio-requirement)\.
 
 1. Click **Next**\.
 

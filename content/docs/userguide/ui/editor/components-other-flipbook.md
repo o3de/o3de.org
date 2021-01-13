@@ -2,13 +2,13 @@
 description: null
 title: Flipbook Animation
 ---
-# Flipbook Animation<a name="ui-editor-components-other-flipbook"></a>
+# Flipbook Animation {#ui-editor-components-other-flipbook}
 
 You can use the **FlipbookAnimation** component to create simple image\-based animations by animating the frames or cells of a [sprite sheet](/docs/userguide/ui/editor/component-sprite-sheets.md)\.
 
 **To see in\-game examples of completed canvases with a FlipbookAnimation component**
 
-1. [Open the Samples Project](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
+1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
 
 1. When Lumberyard Editor has started, choose **File**, **Open** and open the UiFeatures level\.
 

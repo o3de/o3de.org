@@ -2,7 +2,7 @@
 description: ' Download a file from &S3; with &script-canvas; in &ALYlong;. '
 title: Downloading a File from &S3; with &script-canvas;
 ---
-# Downloading a File from Amazon S3 with Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-download-sc"></a>
+# Downloading a File from Amazon S3 with Script Canvas {#cloud-canvas-cloud-gem-aws-s3-download-sc}
 
 You can use the **AWSBehaviorS3Download** node in Script Canvas to download a file from an Amazon S3 bucket\.
 
@@ -12,7 +12,7 @@ You can use the **AWSBehaviorS3Download** node in Script Canvas to download a fi
 + [Step 3: Add Nodes to Display the Result](#cloud-canvas-cloud-gem-aws-s3-download-sc-display-result)
 + [Step 4: Test Download the File from Amazon S3](#cloud-canvas-cloud-gem-aws-s3-download-sc-test)
 
-## Step 1: Prepare a Test File for Download<a name="cloud-canvas-cloud-gem-aws-s3-download-sc-prepare"></a>
+## Step 1: Prepare a Test File for Download {#cloud-canvas-cloud-gem-aws-s3-download-sc-prepare}
 
 The following procedure shows you how to upload a file to Amazon S3 that you can later download with a Script Canvas script\.
 
@@ -36,7 +36,7 @@ The following procedure shows you how to upload a file to Amazon S3 that you can
 
 1. Click **Upload** to upload the `downloadtest.txt` to the bucket that is mapped to `CloudGemAWSScriptBehaviors.s3nodeexamples`\.
 
-## Step 2: Add Nodes to Download a File from Amazon S3<a name="cloud-canvas-cloud-gem-aws-s3-download-sc-add-nodes"></a>
+## Step 2: Add Nodes to Download a File from Amazon S3 {#cloud-canvas-cloud-gem-aws-s3-download-sc-add-nodes}
 
 Now you can create a Script Canvas script that downloads the file\.
 
@@ -68,7 +68,7 @@ Now you can create a Script Canvas script that downloads the file\.
 
 1. Connect the **AWSBehaviorS3Download** pin of the **Get Variable 1** node to the **AWSBehaviorS3Download:0** pin of the **Download** node\.
 
-## Step 3: Add Nodes to Display the Result<a name="cloud-canvas-cloud-gem-aws-s3-download-sc-display-result"></a>
+## Step 3: Add Nodes to Display the Result {#cloud-canvas-cloud-gem-aws-s3-download-sc-display-result}
 
 Next, to see the success or failure of the operation, you add **AWSBehaviorS3DownloadNotificationBus** nodes and a **Print** node to the graph\. The nodes monitor for `AWSBehaviorS3DownloadNotificationBus` events and show you the result in the Lumberyard console window\.
 
@@ -91,7 +91,7 @@ Next, to see the success or failure of the operation, you add **AWSBehaviorS3Dow
 
 1. Exit the **Script Canvas** editor\.
 
-## Step 4: Test Download the File from Amazon S3<a name="cloud-canvas-cloud-gem-aws-s3-download-sc-test"></a>
+## Step 4: Test Download the File from Amazon S3 {#cloud-canvas-cloud-gem-aws-s3-download-sc-test}
 
 Now you are ready to attach the script canvas to an entity and test it\.
 

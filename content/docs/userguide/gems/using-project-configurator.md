@@ -2,7 +2,7 @@
 description: ' Enable gems in &ALYlong; with the &project-configurator; interface. '
 title: Enabling Gems
 ---
-# Enabling Gems<a name="gems-system-using-project-configurator"></a>
+# Enabling Gems {#gems-system-using-project-configurator}
 
 You can enable gems using the Project Configurator or from a command line\. To enable a gem from a command line, see [Gems Commands](/docs/userguide/lmbr-exe-gem.md)\.
 

@@ -3,15 +3,15 @@ description: ' Use the UiLayoutCellComponent operation to provide cell layout fe
   in &ALYlong; '
 title: UiLayoutCellComponent
 ---
-# UiLayoutCellComponent<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent"></a>
+# UiLayoutCellComponent {#lua-scripting-ces-api-ui-uilayoutcellcomponent}
 
 Overrides default layout cell values\.
 
-## UiLayoutCellBus<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-uilayoutcellbus"></a>
+## UiLayoutCellBus {#lua-scripting-ces-api-ui-uilayoutcellcomponent-uilayoutcellbus}
 
 Services messages for the `UiLayoutCellComponent`\.
 
-### GetExtraHeightRatio<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-getextraheightratio"></a>
+### GetExtraHeightRatio {#lua-scripting-ces-api-ui-uilayoutcellcomponent-getextraheightratio}
 
 Returns the overridden extra height ratio for the element\. A value of –1 means that the ratio has not been overridden\.
 
@@ -21,7 +21,7 @@ Returns the overridden extra height ratio for the element\. A value of –1 mean
 float GetExtraHeightRatio()
 ```
 
-### GetExtraWidthRatio<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-getextrawidthratio"></a>
+### GetExtraWidthRatio {#lua-scripting-ces-api-ui-uilayoutcellcomponent-getextrawidthratio}
 
 Returns the overridden extra width ratio for the element\. A value of –1 means that the ratio has not been overridden\.
 
@@ -31,7 +31,7 @@ Returns the overridden extra width ratio for the element\. A value of –1 means
 float GetExtraWidthRatio()
 ```
 
-### GetMinHeight<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-getminheight"></a>
+### GetMinHeight {#lua-scripting-ces-api-ui-uilayoutcellcomponent-getminheight}
 
 Returns the overridden minimum height for the element\. A value of –1 means that the height has not been overridden\.
 
@@ -41,7 +41,7 @@ Returns the overridden minimum height for the element\. A value of –1 means th
 float GetMinHeight()
 ```
 
-### GetMinWidth<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-getminwidth"></a>
+### GetMinWidth {#lua-scripting-ces-api-ui-uilayoutcellcomponent-getminwidth}
 
 Returns the overridden minimum width for the element\. A value of –1 means it has not been overridden\.
 
@@ -51,7 +51,7 @@ Returns the overridden minimum width for the element\. A value of –1 means it 
 float GetMinWidth()
 ```
 
-### GetTargetHeight<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-gettargetheight"></a>
+### GetTargetHeight {#lua-scripting-ces-api-ui-uilayoutcellcomponent-gettargetheight}
 
 Returns the overridden target height for the element\. A value of –1 means that the height has not been overridden\.
 
@@ -61,7 +61,7 @@ Returns the overridden target height for the element\. A value of –1 means tha
 float GetTargetHeight()
 ```
 
-### GetTargetWidth<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-gettargetwidth"></a>
+### GetTargetWidth {#lua-scripting-ces-api-ui-uilayoutcellcomponent-gettargetwidth}
 
 Returns the overridden target width for the element\. \-1 means it has not been overridden\.
 
@@ -71,7 +71,7 @@ Returns the overridden target width for the element\. \-1 means it has not been 
 float GetTargetWidth()
 ```
 
-### SetExtraHeightRatio<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-setextraheightratio"></a>
+### SetExtraHeightRatio {#lua-scripting-ces-api-ui-uilayoutcellcomponent-setextraheightratio}
 
 Sets the overridden extra height ratio for the element\. A value of –1 means don’t override\.
 
@@ -81,7 +81,7 @@ Sets the overridden extra height ratio for the element\. A value of –1 means d
 void SetExtraHeightRatio(float height)
 ```
 
-### SetExtraWidthRatio<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-setextrawidthratio"></a>
+### SetExtraWidthRatio {#lua-scripting-ces-api-ui-uilayoutcellcomponent-setextrawidthratio}
 
 Sets the overridden extra width ratio for the element\. A value of –1 means don’t override\.
 
@@ -91,7 +91,7 @@ Sets the overridden extra width ratio for the element\. A value of –1 means do
 void SetExtraWidthRatio(float width)
 ```
 
-### SetMinHeight<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-setminheight"></a>
+### SetMinHeight {#lua-scripting-ces-api-ui-uilayoutcellcomponent-setminheight}
 
 Sets the overridden minimum height for the element\. A value of –1 means don’t override\.
 
@@ -101,7 +101,7 @@ Sets the overridden minimum height for the element\. A value of –1 means don�
 void SetMinHeight(float height)
 ```
 
-### SetMinWidth<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-setminwidth"></a>
+### SetMinWidth {#lua-scripting-ces-api-ui-uilayoutcellcomponent-setminwidth}
 
 Sets the overridden minimum width for the element\. A value of –1 means don’t override\.
 
@@ -111,7 +111,7 @@ Sets the overridden minimum width for the element\. A value of –1 means don’
 void SetMinWidth(float width)
 ```
 
-### SetTargetHeight<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-settargetheight"></a>
+### SetTargetHeight {#lua-scripting-ces-api-ui-uilayoutcellcomponent-settargetheight}
 
 Sets the overridden target height for the element\. A value of –1 means don’t override\.
 
@@ -121,7 +121,7 @@ Sets the overridden target height for the element\. A value of –1 means don’
 void SetTargetHeight(float height)
 ```
 
-### SetTargetWidth<a name="lua-scripting-ces-api-ui-uilayoutcellcomponent-settargetwidth"></a>
+### SetTargetWidth {#lua-scripting-ces-api-ui-uilayoutcellcomponent-settargetwidth}
 
 Sets the overridden target width for the element\. A value of –1 means don’t override\.
 

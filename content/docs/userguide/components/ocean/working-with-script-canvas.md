@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Infinite Ocean component with the &script-canva
   editor to change the component parameters at run time. '
 title: Using the Infinite Ocean Component with &script-canvas;
 ---
-# Using the Infinite Ocean Component with Script Canvas<a name="infinite-ocean-component-working-with-script-canvas"></a>
+# Using the Infinite Ocean Component with Script Canvas {#infinite-ocean-component-working-with-script-canvas}
 
 You can use the **Infinite Ocean** component with the **Script Canvas** editor to change the component parameters at run time, using a visual scripting workflow\. In the following example, the Script Canvas script changes the size of the ocean waves over time\.
 

@@ -2,7 +2,7 @@
 description: ' Enable color, depth, and details for textures in &ALYlong;. '
 title: Working with Textures
 ---
-# Working with Textures<a name="mat-texture-intro"></a>
+# Working with Textures {#mat-texture-intro}
 
 Textures can be used to provide color, depth, and details to a surface\. For example, a repeating brick\-and\-mortar texture can be used to simulate a brick wall, rather than creating geometry for each individual brick\. 
 

@@ -2,7 +2,7 @@
 description: ' Create versioned cloud gems and projects in &ALYlong;. '
 title: ' Cloud Gem Framework and Resource Manager Versioning'
 ---
-# Cloud Gem Framework and Resource Manager Versioning<a name="cloud-canvas-cgf-rm-versioning"></a>
+# Cloud Gem Framework and Resource Manager Versioning {#cloud-canvas-cgf-rm-versioning}
 
 Lumberyard offers a versioning system that makes it easier to update a project from one version of the Cloud Gem Framework and the **Cloud Canvas Resource Manager** to another\. The versioning system has the following advantages:
 + Cloud gems can have separate versions\.
@@ -13,7 +13,7 @@ Lumberyard offers a versioning system that makes it easier to update a project f
 
 This document describes these changes at an architectural level\. For concrete steps on updating existing projects and gems to use versioning, see [Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-updating-projects-gems.md)\.
 
-## Versioning Convention<a name="cloud-canvas-cgf-rm-versioning-convention"></a>
+## Versioning Convention {#cloud-canvas-cgf-rm-versioning-convention}
 
 Lumberyard gems use a simplified [semantic versioning](http://semver.org/), which defines version numbers in the form *major*\.*minor*\.*revision*\. Lumberyard increments the major version for changes that cause previous code not to work, including any change that breaks the code or configuration that is not directly controlled by the Cloud Gem Framework\.
 
@@ -21,14 +21,14 @@ Every major version change is released by creating a new code base in a new `\de
 
 Minor updates replace the code in the `\dev\Gems\CloudGemFramework\vN` directory\. Earlier major versions of the framework continue to be released with Lumberyard for an unspecified amount of time before they are removed from the release\.
 
-## Multiple Versions of the Cloud Gem Framework Gem<a name="cloud-canvas-cgf-rm-versioning-multiple"></a>
+## Multiple Versions of the Cloud Gem Framework Gem {#cloud-canvas-cgf-rm-versioning-multiple}
 
 The new directory structure in Cloud Gem Framework 1\.0\.0 enables coexistence of multiple versions of the Cloud Gem Framework Gem\. Gem implementation has moved from the `\dev\Gems\CloudGemFramework\` directory to the `\dev\Gems\CloudGemFramework\v<N>\` directory\. The intent is that all nonbreaking changes be made in the `v<Current>` directory\. When breaking changes occur, a `v<Next>` directory is created to contain the updated implementation\. The `v<Current>` directory contents remain either unchanged or updated without breaking changes\. A gem can now have different versions of its `gem.json` file in the `v1` and the `v2` directory, for example\. This enables the gem to specify different versions\. Lumberyard's build and project configuration tools support gems in subdirectories\.
 
 **Note**  
-The **Cloud Canvas Resource Manager** now allows gems to be in directories other than `\Gems\<gem-name>`\. The [resource\-group add](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-group-add) `lmbr_aws resource-group add` command's `--gem` option now takes an optional value that specifies the gem directory path\. The specified directory path can be either relative to the current working directory or a full path\.
+The **Cloud Canvas Resource Manager** now allows gems to be in directories other than `\Gems\<gem-name>`\. The [resource\-group add](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-resource-group-add) `lmbr_aws resource-group add` command's `--gem` option now takes an optional value that specifies the gem directory path\. The specified directory path can be either relative to the current working directory or a full path\.
 
-## Applying Framework Updates to a Project<a name="cloud-canvas-cgf-rm-versioning-applying-framework-updates"></a>
+## Applying Framework Updates to a Project {#cloud-canvas-cgf-rm-versioning-applying-framework-updates}
 
 When Lumberyard releases a new major version of the framework, you can choose when to disable the old framework version and when to enable the new one\.
 
@@ -48,7 +48,7 @@ To update your project infrastructure, use the `lmbr_aws project update-framewor
 
 The project's framework version is updated after all hooks are successfully called and all updates completed\.
 
-### Update Deployments Manually<a name="cloud-canvas-cgf-rm-versioning-applying-framework-updates-deployments"></a>
+### Update Deployments Manually {#cloud-canvas-cgf-rm-versioning-applying-framework-updates-deployments}
 
 The `lmbr_aws project update-framework-version` command never updates deployment, deployment access, or resource group stacks\. The update hooks can make changes to resource templates, Lambda code, and other items\. However, you must perform all deployment, deployment access and resource group stack updates separately after the `project update-framework-version` command completes\.
 
@@ -56,19 +56,19 @@ To help custom tools deal with old stacks, the framework version that is in effe
 
 In the case of a major version change, Lumberyard tools \(including `lmbr_aws`\) can refuse to work with any stack that has not yet been updated\. However, for minor version changes, the tools should continue to work with deployment and resource group stacks that have not yet been updated\.
 
-To update the deployment stack \(and all of its resource group stacks\), you can use the `lmbr_aws` [deployment update](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-deployment-upload) command\. To update the deployment access stack, you can use the [deployment update\-access](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-deployment-update-access) command\.
+To update the deployment stack \(and all of its resource group stacks\), you can use the `lmbr_aws` [deployment update](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-deployment-upload) command\. To update the deployment access stack, you can use the [deployment update\-access](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-deployment-update-access) command\.
 
-## Resource Manager Merged into the Cloud Gem Framework Gem<a name="cloud-canvas-cgf-rm-versioning-resource-manager-cgf-gem-merge"></a>
+## Resource Manager Merged into the Cloud Gem Framework Gem {#cloud-canvas-cgf-rm-versioning-resource-manager-cgf-gem-merge}
 
 In Lumberyard 1\.10, resource manager functionality has been taken over by the Cloud Gem Framework Gem\. Accordingly, and to allow resource manager to be versioned, the contents of the `\dev\tools\lmbr_aws\` directory have moved to the `dev\Gems\CloudGemFramework\v<N>\ResourceManager\` directory, with the following exceptions:
 + The `\dev\tools\lmbr_aws\` directory still contains the `cli.py` and `gui.py` modules\. These modules are loaded by the `lmbr_aws.cmd` file and the resource manager user interface in Lumberyard Editor\. These modules discover which project is current by looking in the `\dev\bootstrap.cfg` file\. They then look in the project's `\dev\project_name\gems.json` file to get the `Version` value for `CloudGemFramework`\. The modules then forward the request to the corresponding `cli.py` or `gui.py` module for the specified version of the framework\. If no version of the framework is enabled, a warning message that the gem must be enabled is displayed\.
 + The `dev\Tools\lmbr_aws\test\` directory still contains the `RunAllTests.cmd`, `cleanup.cmd`, and Python module files that support them\. The `RunAllTests.cmd` file has been updated to run tests from the `CloudGemFramework\v<N>\` directory\. As new releases occur, the file will be updated to include all versions of the framework\.
 
-## Global Project Code Directories and Project Templates<a name="cloud-canvas-cgf-rm-versioning-project-code-directories-project-templates"></a>
+## Global Project Code Directories and Project Templates {#cloud-canvas-cgf-rm-versioning-project-code-directories-project-templates}
 
 In Cloud Gem Framework 1\.0\.0 \(Lumberyard version 1\.10\), the project code directories and project templates have also changed to support versioning\.
 
-### Project Code Directories<a name="cloud-canvas-cgf-rm-versioning-project-code-directories"></a>
+### Project Code Directories {#cloud-canvas-cgf-rm-versioning-project-code-directories}
 
 The `\<project>\AWS\project-code` directory formerly contained code for the following Lambda functions:
 + `ProjectPlayerAccessTokenExchangeHandler`
@@ -82,7 +82,7 @@ This code is now located in the `\Gems\CloudGemFramework\vN\AWS\lambda-code\` di
 **Note**  
 Using a `<gem>\AWS\project-code` or a `resource-group\<resource-group>\project-code` directory to inject code into the project Lambda function is no longer supported\.
 
-### Project Templates<a name="cloud-canvas-cgf-rm-versioning-project-templates"></a>
+### Project Templates {#cloud-canvas-cgf-rm-versioning-project-templates}
 
 The following template files have moved to the `\Gems\CloudGemFramework\vN\ResourceManager\resource_manager\templates` directory\.
 + `deployment-access-template.json`
@@ -92,10 +92,10 @@ The following template files have moved to the `\Gems\CloudGemFramework\vN\Resou
 When the framework updates a stack, it uses these templates as a base to create the project's actual templates\. Then it uploads the templates to AWS CloudFormation\. 
 
 **Note**  
-Starting in Lumberyard 1\.10, you can use extension files to add resources to each of these templates\. For more information, see [Template Extension Files](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-template-extension-files)\.
+Starting in Lumberyard 1\.10, you can use extension files to add resources to each of these templates\. For more information, see [Template Extension Files](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-template-extension-files)\.
 
-## Sharing Code<a name="cloud-canvas-cgf-rm-versioning-sharing-code"></a>
+## Sharing Code {#cloud-canvas-cgf-rm-versioning-sharing-code}
 
-The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](/docs/userguide/gems/cloud-canvas/command-line-cgf.md#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Before Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.
+The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](/docs/userguide/gems/cloud-canvas/command-line-cgf#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Before Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.
 
 In version 1\.10, Lumberyard adds a general purpose code sharing mechanism\. You can use this mechanism to include a single copy of the service API dispatch code in all the Lambda functions that require it\. For more information, see [Using Shared Code](/docs/userguide/gems/cloud-canvas/cgf-shared-code.md)\.

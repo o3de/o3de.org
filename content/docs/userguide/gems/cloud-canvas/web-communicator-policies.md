@@ -3,7 +3,7 @@ description: ' Learn about the policies that control user access to the Web Comm
   cloud gem and &IoT; in &ALYlong;. '
 title: Web Communicator Cloud Gem Authentication and &AWS; Policies
 ---
-# Web Communicator Cloud Gem Authentication and AWS Policies<a name="cloud-canvas-cloud-gem-web-communicator-policies"></a>
+# Web Communicator Cloud Gem Authentication and AWS Policies {#cloud-canvas-cloud-gem-web-communicator-policies}
 
 The default Web Communicator authentication system uses authenticated Amazon Cognito users with AWS Signature Version 4\. For more information, see [Authenticating Requests \(AWS Signature Version 4\)](https://docs.aws.amazon.com/general/latest/gr/sig-v4-authenticating-requests.html) in the *AWS General Reference*\.
 
@@ -16,7 +16,7 @@ Connection to AWS IoT requires two policies, which Web Communicator generates fo
 
 You do not have to make changes to these generated policies to use them\. The following sections provide reference samples of the generated policies if you want to modify them\.
 
-## Amazon Cognito Policy Sample<a name="cloud-canvas-cloud-gem-web-communicator-policies-amazon-cognito-policy-sample"></a>
+## Amazon Cognito Policy Sample {#cloud-canvas-cloud-gem-web-communicator-policies-amazon-cognito-policy-sample}
 
 The following sample Amazon Cognito policy grants the `IotPlayerPermissions1` user permissions to connect, subscribe, and receive\.
 
@@ -35,7 +35,7 @@ The following sample Amazon Cognito policy grants the `IotPlayerPermissions1` us
 }
 ```
 
-## AWS IoT Policy Sample<a name="cloud-canvas-cloud-gem-web-communicator-policies-aws-iot-policy-sample"></a>
+## AWS IoT Policy Sample {#cloud-canvas-cloud-gem-web-communicator-policies-aws-iot-policy-sample}
 
 The following sample AWS IoT policy is attached to a client\. The final AWS IoT policy is an aggregation of channels from the cloud gems that the client uses\.
 

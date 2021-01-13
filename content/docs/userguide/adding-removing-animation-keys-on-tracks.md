@@ -2,7 +2,7 @@
 description: ' Add and remove animation keys on tracks in &ALYlong;''s &trackview-editor;. '
 title: Adding and Removing Animation Keys on Tracks
 ---
-# Adding and Removing Animation Keys on Tracks<a name="adding-removing-animation-keys-on-tracks"></a>
+# Adding and Removing Animation Keys on Tracks {#adding-removing-animation-keys-on-tracks}
 
 You can add a keyframe to a track in the timeline with one of the following:
 

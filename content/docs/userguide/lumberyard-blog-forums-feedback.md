@@ -2,7 +2,7 @@
 description: ' Submit feedback and suggestions for &ALYlong;. '
 title: '&ALY; Blog, Forums, and Feedback'
 ---
-# Lumberyard Blog, Forums, and Feedback<a name="lumberyard-blog-forums-feedback"></a>
+# Lumberyard Blog, Forums, and Feedback {#lumberyard-blog-forums-feedback}
 
 As we continue to improve Lumberyard, we want to thank everyone in our game developer community\. Without your participation in the forums, your messages, and your bug reports, Lumberyard wouldn't be as strong as it is\.
 + Keep sending your feedback to lumberyard\-feedback@amazon\.com\.

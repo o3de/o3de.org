@@ -3,7 +3,7 @@ description: ' Add the MultiplayerLobbyComponent to a component entity to manage
   sessions in &ALYlong;. '
 title: The Multiplayer Lobby Component
 ---
-# The Multiplayer Lobby Component<a name="gems-system-gem-multiplayer-lobby-component"></a>
+# The Multiplayer Lobby Component {#gems-system-gem-multiplayer-lobby-component}
 
 You can use the self\-contained lobby from Lumberyard's component entity system and add the `MultiplayerLobbyComponent` to a component entity in a scene\. The `MultiplayerLobbyComponent` provides a basic lobby that can perform the following tasks:
 + Search for an active game session
@@ -14,11 +14,11 @@ You can use the self\-contained lobby from Lumberyard's component entity system 
 + Determine the map to load into
 + Report errors
 
-## Supported Session Services<a name="gems-system-gem-multiplayer-lobby-component-supported-session-services"></a>
+## Supported Session Services {#gems-system-gem-multiplayer-lobby-component-supported-session-services}
 
 The `MultiplayerLobbyComponent` supports all of Lumberyard's session services, including `LANSessionService` and `GameLiftSessionService`\.
 
-## Configuration Settings<a name="gems-system-gem-multiplayer-lobby-component-configuration-settings"></a>
+## Configuration Settings {#gems-system-gem-multiplayer-lobby-component-configuration-settings}
 
 The `MultiplayerLobbyComponent` has configuration settings that you can use to customize the hosted sessions that the component creates\.
 
@@ -38,7 +38,7 @@ The `MultiplayerLobbyComponent` has configuration settings that you can use to c
 **Note**  
 This component does not handle the initialization of encryption, but utilizes encryption if it is already enabled\. If you want to use encryption with the component, you must configure encryption before you use the component\.
 
-## LAN Lobby Description<a name="gems-system-gem-multiplayer-lobby-component-description"></a>
+## LAN Lobby Description {#gems-system-gem-multiplayer-lobby-component-description}
 
 The following image shows a sample LAN lobby and its details\.
 
@@ -58,7 +58,7 @@ The following image shows a sample LAN lobby and its details\.
 
 1. **Create Server** – Attempts to create a `GridSession` in the selected `SessionService`\.
 
-## GameLift Lobby Description<a name="gems-system-gem-multiplayer-lobby-component-gamelift-description"></a>
+## GameLift Lobby Description {#gems-system-gem-multiplayer-lobby-component-gamelift-description}
 
 The following image shows a sample GameLift lobby and its details\.
 

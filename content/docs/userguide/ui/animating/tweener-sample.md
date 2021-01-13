@@ -3,7 +3,7 @@ description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see
   in action. '
 title: Tweener Sample Level
 ---
-# Tweener Sample Level<a name="ui-animating-tweener-sample"></a>
+# Tweener Sample Level {#ui-animating-tweener-sample}
 
 You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) to see an example level that uses tweeners\.
 
@@ -35,7 +35,7 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](/docs/userguide/ui/animating/tweener-parameters.md)\.
 
    Try the following:
-   + Modify the value of the [`easeMethod`](/docs/userguide/ui/animating/tweener-parameters.md#ui-animating-tweener-easemethod) parameter, especially on the blocks that include `id = self.Properties.CharacterImage`, which represent the spaceship\.
+   + Modify the value of the [`easeMethod`](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easemethod) parameter, especially on the blocks that include `id = self.Properties.CharacterImage`, which represent the spaceship\.
    + Increase or decrease the `duration` parameter\.
    + Change the starting position **\["x"\]** and **\["y"\]**\.
 

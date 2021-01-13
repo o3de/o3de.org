@@ -2,7 +2,7 @@
 description: null
 title: Using the LightingArc Sample
 ---
-# Using the LightingArc Sample<a name="gems-lightning-arc-sample"></a>
+# Using the LightingArc Sample {#gems-lightning-arc-sample}
 
 The LightningArc Sample uses the LightningArc gem to demonstrate the various prescripted arc types\.
 

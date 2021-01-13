@@ -2,11 +2,11 @@
 description: ' Set decal parameters in &ALYlong;. '
 title: Setting Decal Parameters
 ---
-# Setting Decal Parameters<a name="mat-maps-decal-creating"></a>
+# Setting Decal Parameters {#mat-maps-decal-creating}
 
 Complete the following procedures for setting decal mapping parameters\.
 
-## To set decal parameters in the Rollup Bar<a name="mat-maps-decal-params-rollupbar"></a>
+## To set decal parameters in the Rollup Bar {#mat-maps-decal-params-rollupbar}
 
 
 ****  
@@ -30,7 +30,7 @@ Most decal parameters are in the Rollup Bar on the **Objects** tab, under **Misc
    + **SortPriority** – Specify if the decal will appear on top of another decal\.
    + **Projection Depth** – Set the projection depth \(distance\) of the decal from the object\. This can also affect blending of decals\.
 
-## To set shader decal parameters<a name="mat-maps-decal-params-shader"></a>
+## To set shader decal parameters {#mat-maps-decal-params-shader}
 
 Some decal parameters are set in the Material Editor under **Shader Params**\.
 

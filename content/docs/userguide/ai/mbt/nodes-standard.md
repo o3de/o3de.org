@@ -2,11 +2,11 @@
 description: ' See the following standard Modular Behavior Tree (MBT) nodes in &ALYlong;. '
 title: Standard MBT Nodes
 ---
-# Standard MBT Nodes<a name="ai-mbt-nodes-standard"></a>
+# Standard MBT Nodes {#ai-mbt-nodes-standard}
 
 The following standard Modular Behavior Tree nodes are supported\. These nodes can be found at `Code\CryEngine\CryCommon\BehaviorTree\`\.
 
-## Loop node<a name="ai-mbt-nodes-generic-loop"></a>
+## Loop node {#ai-mbt-nodes-generic-loop}
 
 The Loop node runs one child multiple times or until the child fails to run\. If the count is not specified, it is considered infinite\.
 
@@ -25,7 +25,7 @@ The Loop node runs one child multiple times or until the child fails to run\. If
 </Loop>
 ```
 
-## LoopUntilSuccess node<a name="ai-mbt-nodes-generic-loopuntilsuccess"></a>
+## LoopUntilSuccess node {#ai-mbt-nodes-generic-loopuntilsuccess}
 
 The LoopUntilSuccess node runs one child until it succeeds\. A maximum number of attempts can be specified\. If no maximum number of attempts is specified or if it's set to less than or equal to 0 then the node will attempt to run the child repeatedly until the child succeeds\.
 
@@ -44,7 +44,7 @@ The LoopUntilSuccess node runs one child until it succeeds\. A maximum number of
 </LoopUntilSuccess>
 ```
 
-## Parallel node<a name="ai-mbt-nodes-generic-parallel"></a>
+## Parallel node {#ai-mbt-nodes-generic-parallel}
 
 The Parallel node run its children in parallel\. A maximum of 32 children are allowed\. If success and failure limits are reached at the same time, the node will succeed\.
 
@@ -66,7 +66,7 @@ The Parallel node run its children in parallel\. A maximum of 32 children are al
 </Parallel>
 ```
 
-## Selector node<a name="ai-mbt-nodes-generic-selector"></a>
+## Selector node {#ai-mbt-nodes-generic-selector}
 
 The Selector node runs its children one at a time, stopping at the first one that succeeds\.
 
@@ -88,7 +88,7 @@ No parameters
 </Selector>
 ```
 
-## Sequence node<a name="ai-mbt-nodes-generic-sequence"></a>
+## Sequence node {#ai-mbt-nodes-generic-sequence}
 
 The Sequence node runs its children one at a time in order\. A maximum of 255 children are allowed\.
 
@@ -110,7 +110,7 @@ No parameters
 </Sequence>
 ```
 
-## StateMachine node<a name="ai-mbt-nodes-generic-statemachine"></a>
+## StateMachine node {#ai-mbt-nodes-generic-statemachine}
 
 The StateMachine is a composite node allowed to have one or more children\. The children of a StateMachine node must be of the type State\. 
 
@@ -136,7 +136,7 @@ None
 </StateMachine>
 ```
 
-## StateMachine:State node<a name="ai-mbt-nodes-generic-state"></a>
+## StateMachine:State node {#ai-mbt-nodes-generic-state}
 
 The State node is the basic block of a StateMachine node\. Each State node must have a BehaviorTree node and may also have a Transitions block\.
 
@@ -168,7 +168,7 @@ The `Transitions` tag must have the following parameters:
 + `onEvent`: Identifies the string name of the event that could cause the transition to happen
 + `to`: Identifies the state name where transitioning to
 
-## SuppressFailure node<a name="ai-mbt-nodes-generic-suppressfailure"></a>
+## SuppressFailure node {#ai-mbt-nodes-generic-suppressfailure}
 
 The SuppressFailure node owns and runs one child\. It will succeed irregardless of the result of the child's execution\.
 
@@ -187,7 +187,7 @@ None
 </SuppressFailure>
 ```
 
-## Timeout node<a name="ai-mbt-nodes-generic-timeout"></a>
+## Timeout node {#ai-mbt-nodes-generic-timeout}
 
 The Timeout node fails after a certain amount of time has passed\.
 
@@ -203,7 +203,7 @@ The Timeout node fails after a certain amount of time has passed\.
 <Timeout duration=5" />
 ```
 
-## Wait node<a name="ai-mbt-nodes-generic-wait"></a>
+## Wait node {#ai-mbt-nodes-generic-wait}
 
 The Wait node succeeds after a certain amount of time has passed\.
 

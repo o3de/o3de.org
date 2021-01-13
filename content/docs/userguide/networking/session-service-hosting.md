@@ -2,7 +2,7 @@
 description: ' Learn how to host a GridMate session in &ALYlong;. '
 title: Hosting a Session
 ---
-# Hosting a Session<a name="network-session-service-hosting"></a>
+# Hosting a Session {#network-session-service-hosting}
 
 A session can be hosted by calling `IGridMate::HostSession()` after the session service has been started\. The session settings and configuration are set in the `GridMate::SessionParams` argument, which acts as a base class for certain implementations of `GridMate::SessionService.`
 
@@ -13,7 +13,7 @@ A session can be hosted by calling `IGridMate::HostSession()` after the session 
 | --- | --- | 
 | GridMate::LANSessionService | GridMate::LANSessionParams | 
 
-## GridMate::SessionParams<a name="network-session-service-hosting-gridmatesessionparams"></a>
+## GridMate::SessionParams {#network-session-service-hosting-gridmatesessionparams}
 
 The following table shows the supported parameters in `GridMate::SessionParams`\.
 
@@ -27,7 +27,7 @@ The following table shows the supported parameters in `GridMate::SessionParams`\
 | m\_peerToPeerTimeout | No | 10000 | The time without a response, in seconds, after which a peer is disconnected\. | 
 | m\_numPublicSlots | Yes |  | The maximum number of players that can join the session\. | 
 
-## GridMate::LANSessionParams<a name="network-session-service-hosting-gridmatelansessionparams"></a>
+## GridMate::LANSessionParams {#network-session-service-hosting-gridmatelansessionparams}
 
 `GridMate::LANSessionParams` has the following additional parameter\.
 
@@ -38,7 +38,7 @@ The following table shows the supported parameters in `GridMate::SessionParams`\
 | --- | --- | --- | --- | 
 | m\_port | No | 0 | The port to monitor for search requests from other clients\. If 0, this session is hidden to searches\. Otherwise, the port number falls in the range from 1 through 65536\. | 
 
-## Events<a name="network-session-service-hosting-events"></a>
+## Events {#network-session-service-hosting-events}
 
 The following table describes GridMate session service events\.
 
@@ -51,7 +51,7 @@ The following table describes GridMate session service events\.
 | OnMemberJoined | A player has joined the session\. | 
 | OnMemberLeaving | A player has left the session\. | 
 
-## Examples<a name="network-session-service-hosting-examples"></a>
+## Examples {#network-session-service-hosting-examples}
 
 The following example hosts a session\. The example assumes that GridMate has been initialized and a session service registered\.
 

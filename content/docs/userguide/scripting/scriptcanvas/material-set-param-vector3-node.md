@@ -3,7 +3,7 @@ description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; e
   to set a material parameter with a Vector3 value. '
 title: Set Param Vector3
 ---
-# Set Param Vector3<a name="script-canvas-material-set-param-vector3-node"></a>
+# Set Param Vector3 {#script-canvas-material-set-param-vector3-node}
 
 Sets a material parameter with a **Vector3** value\.
 
@@ -13,7 +13,7 @@ Sets a material parameter with a **Vector3** value\.
 
 ![\[set param vector3, setparamvector3\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-node.png)
 
-## Inputs<a name="script-canvas-material-set-param-vector3-node-input"></a>
+## Inputs {#script-canvas-material-set-param-vector3-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Sets a material parameter with a **Vector3** value\.
 | Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Vector3 | Vector3 |  The new value to apply\.  | 
 
-## Outputs<a name="script-canvas-material-set-param-vector3-node-output"></a>
+## Outputs {#script-canvas-material-set-param-vector3-node-output}
 
 
 ****  

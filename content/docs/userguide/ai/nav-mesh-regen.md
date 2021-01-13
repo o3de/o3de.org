@@ -2,7 +2,7 @@
 description: ' Regenerate the entire mesh or a portion of it in &ALYlong;. '
 title: Regenerating the Navigation Mesh
 ---
-# Regenerating the Navigation Mesh<a name="ai-nav-mesh-regen"></a>
+# Regenerating the Navigation Mesh {#ai-nav-mesh-regen}
 
 
 ****  
@@ -17,14 +17,14 @@ Dynamically generating a navigation mesh could also place an AI agent outside of
 
 You can regenerate the entire mesh or a portion of it\.
 
-## Complete Mesh Regeneration<a name="ai-nav-mesh-regen-complete"></a>
+## Complete Mesh Regeneration {#ai-nav-mesh-regen-complete}
 
 If you want to regenerate the entire navigation mesh, do the following:
 
 **To completely regenerate the navigation mesh**
 + In Lumberyard Editor, select the mesh and then click **AI, Request a Full MNM rebuild**\.
 
-## Partial Mesh Regeneration<a name="ai-nav-mesh-regen-partial"></a>
+## Partial Mesh Regeneration {#ai-nav-mesh-regen-partial}
 
 There are two methods for regenerating a portion of a navigation mesh\. Both methods only regenerate the relevant portion of the mesh\. By not regenerating the entire mesh, performance is kept high\.
 

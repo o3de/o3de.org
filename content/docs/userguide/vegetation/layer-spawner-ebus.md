@@ -2,7 +2,7 @@
 description: ' &ALYlong;. '
 title: Ebus Request Bus Interface
 ---
-# Ebus Request Bus Interface<a name="vegetation-layer-spawner-ebus"></a>
+# Ebus Request Bus Interface {#vegetation-layer-spawner-ebus}
 
 The **Vegetation Layer Spawner** component uses `Vegetation::SpawnerRequestBus` and `Vegetation::AreaInfoBus` interfaces\.
 

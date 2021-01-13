@@ -2,7 +2,7 @@
 description: ' Use the Audio components in &ALYlong; to add sounds to your level. '
 title: Audio Components
 ---
-# Audio Components<a name="audio-components"></a>
+# Audio Components {#audio-components}
 
 Use the following audio components to add and configure sounds in your level:
 + [**Audio Area Environment**](/docs/userguide/components/audio-area-environment.md) – Enables entities that are moving around and throughout a shape to have environment effects applied to any sounds that they trigger\. You must also add a shape component to use the audio area environment component\.

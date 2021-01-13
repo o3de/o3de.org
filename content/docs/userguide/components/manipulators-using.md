@@ -3,7 +3,7 @@ description: ' Use manipulators to adjust various component properties in the vi
   in &ALYlong;. '
 title: Using Manipulators
 ---
-# Using Manipulators<a name="component-manipulators-using"></a>
+# Using Manipulators {#component-manipulators-using}
 
 
 ****  
@@ -24,7 +24,7 @@ By default, some components support manipulators\.When you author new components
 + [Creating New Manipulators](#component-manipulators-creating-new)
 + [EBus Request Bus Interface](#component-manipulators-ebus-requestbus)
 
-## General Case Manipulators<a name="component-manipulators-general"></a>
+## General Case Manipulators {#component-manipulators-general}
 
 The following are general case manipulators\.
 
@@ -43,7 +43,7 @@ Aggregate manipulator that combines multiple linear and planar manipulators \(de
 **Selection Manipulator**  
 Performs no movement but provides an interface to detect when part of a component has been clicked\.
 
-## Special Case Manipulators<a name="component-manipulators-special"></a>
+## Special Case Manipulators {#component-manipulators-special}
 
 The following special case manipulators appear only on applicable components\.
 
@@ -53,7 +53,7 @@ Determines the location on a line segment over which the mouse is hovering to in
 **Spline Selection Manipulator**  
 Determines the location on a spline over which the mouse is hovering to insert a new point\.
 
-## Advanced Use Case Manipulators<a name="component-manipulators-advanced"></a>
+## Advanced Use Case Manipulators {#component-manipulators-advanced}
 
 You can provide a streamlined editing experience by creating a system that manages manipulators across components with similar requirements\.
 
@@ -73,13 +73,13 @@ The following core classes are related to `EditorVertexSelection`\.
 + `FixedVertices` \(for when selection and editing of vertices is allowed, but vertices cannot be added or removed\)
 + Many other manipulators such as `Translation`, `LineSegmentSelection`, and `SplineSelection`\.
 
-## Manipulator Appearance<a name="component-manipulators-appearance"></a>
+## Manipulator Appearance {#component-manipulators-appearance}
 
 A manipulator's visual appearance does not determine its behavior\. This means that any manipulator can have any view\. This is abstracted through the `ManipulatorView` class\. Lumberyard provides a number of concrete views, such as `Line`, `Cylinder`, `Cone`, `Box`, `Quad`, and `Billboard`\.
 
 You can choose which view to use with a particular manipulator\. All manipulators delegate their rendering to a `ManipulatorView`\. The view also updates the bounds of the manipulator to handle interaction and picking\. `ManipulatorView` provides several utility functions to make creating views easier\. You can ignore these and create custom implementations if preferred\.
 
-## Creating New Manipulators<a name="component-manipulators-creating-new"></a>
+## Creating New Manipulators {#component-manipulators-creating-new}
 
 To create a manipulator, you must derive from `BaseManipulator`\. By doing so, you can observe how existing manipulators are implemented and follow a similar approach\.
 
@@ -98,13 +98,13 @@ The new manipulator should provide callbacks in the overridden mouse functions s
 **Note**  
 Adding new manipulators is often unnecessary\. The existing set provides most of the behavior that is required\. For example, you can use the manipulator `LinearManipulators` in a variety of scenarios\. This is recommended for most users\.
 
-## EBus Request Bus Interface<a name="component-manipulators-ebus-requestbus"></a>
+## EBus Request Bus Interface {#component-manipulators-ebus-requestbus}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### Manipulator Manager Requests<a name="component-manipulators-ebus-requestbus-manipulator-manager-requests"></a>
+### Manipulator Manager Requests {#component-manipulators-ebus-requestbus-manipulator-manager-requests}
 
 
 ****  

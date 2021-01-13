@@ -2,7 +2,7 @@
 description: ' Engage broadcasters and viewers on Twitch in &ALYlong;. '
 title: Engaging Broadcasters and Viewers on Twitch
 ---
-# Engaging Broadcasters and Viewers on Twitch<a name="twitch-intro"></a>
+# Engaging Broadcasters and Viewers on Twitch {#twitch-intro}
 
 Lumberyard is integrated with Twitch so that you can build games that engage with broadcasters and viewers on Twitch\.
 
@@ -18,7 +18,7 @@ The Twitch JoinIn feature within Lumberyard helps you build multiplayer games th
 **Twitch C\+\+ API**  
 The Twitch C\+\+ API operations allow you to make calls on the TwitchRequestBus and return a unique ReceiptID object\.
 
-## Prerequisites<a name="gems-system-gem-twitch-prerequisites"></a>
+## Prerequisites {#gems-system-gem-twitch-prerequisites}
 
 To use the Twitch gem and add Twitch support to your Lumberyard project, you must:
 + Be authorized as a Twitch development partner\. To register, visit the Twitch Developer Portal at [https://dev\.twitch\.tv/](https://dev.twitch.tv/)\.

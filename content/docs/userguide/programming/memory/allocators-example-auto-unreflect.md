@@ -3,7 +3,7 @@ description: ' Use a memory allocator in a class in a static variable context to
   unreflect a module''s reflected classes in &ALYlong; '
 title: 'Code Example: Automatic Unreflection of Module Classes'
 ---
-# Code Example: Automatic Unreflection of Module Classes<a name="memory-allocators-example-auto-unreflect"></a>
+# Code Example: Automatic Unreflection of Module Classes {#memory-allocators-example-auto-unreflect}
 
 To automatically unreflect a module's reflected classes from the `SerializeContext` when the module unloads, you can create a class that contains an instance of a memory allocator separate from the `SerializeContext`\. 
 

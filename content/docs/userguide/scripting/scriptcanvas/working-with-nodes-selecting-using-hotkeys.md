@@ -2,7 +2,7 @@
 description: ' Learn how to select &script-canvas; nodes in &ALYlong; using hotkeys. '
 title: Selecting Nodes Using Hot Keys
 ---
-# Selecting Nodes Using Hot Keys<a name="script-canvas-working-with-nodes-selecting-using-hotkeys"></a>
+# Selecting Nodes Using Hot Keys {#script-canvas-working-with-nodes-selecting-using-hotkeys}
 
 Use the following hot key combinations to select groups of nodes\.
 + To select all nodes in a graph, press **Ctrl \+ A**\.

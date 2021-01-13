@@ -3,7 +3,7 @@ description: ' Use the Set Speed node in the &ALYlong; &script-canvas; editor to
   the time of day''s current speed multiplier. '
 title: Set Speed
 ---
-# Set Speed<a name="set-speed"></a>
+# Set Speed {#set-speed}
 
 Sets the current time of day speed multiplier\. The value is specified in conversion units of hours per second\. 
 
@@ -20,7 +20,7 @@ To make simulations similar to real\-world time, specify a value of `0.0003`\.
 
 ![\[setspeednode, setspeed, settimeofdayspeed\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-speed-node.png)
 
-## Inputs<a name="set-speed-input"></a>
+## Inputs {#set-speed-input}
 
 
 ****  
@@ -30,7 +30,7 @@ To make simulations similar to real\-world time, specify a value of `0.0003`\.
 | In | Event | Triggers the node\. | 
 | Speed | Number |  The speed multiplier that determines how quickly the time of day changes\. Default value: `0` Valid values: `0.0` to `100.0`  | 
 
-## Outputs<a name="set-speed-output"></a>
+## Outputs {#set-speed-output}
 
 
 ****  

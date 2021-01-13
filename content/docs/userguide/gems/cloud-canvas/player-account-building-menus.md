@@ -2,7 +2,7 @@
 description: ' Build the menus for the Player Account Cloud Gem in &ALYlong;. '
 title: Building the Menus for the Player Account Cloud Gem
 ---
-# Building the Menus for the Player Account Cloud Gem<a name="cloud-canvas-cloud-gem-player-account-building-menus"></a>
+# Building the Menus for the Player Account Cloud Gem {#cloud-canvas-cloud-gem-player-account-building-menus}
 
 To build the menus, use the code for `CloudGemPlayerAccountRequestBus` and `CloudGemPlayerAccountNotificationBusHandler` in the `dev\Gems\CloudGemPlayerAccount\Code\Include\CloudGemPlayerAccount\CloudGemPlayerAccountBus.h` file\. Keep in mind the following points:
 + Most of the EBus events are wrappers for Amazon Cognito user pool API operations\. For the Amazon Cognito API reference, see [Amazon Cognito Identity Provider](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html)\.

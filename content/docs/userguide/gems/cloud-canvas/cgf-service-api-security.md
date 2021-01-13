@@ -3,7 +3,7 @@ description: ' Learn about security best practices when you use the Cloud Gem Fr
   in &ALYlong;. '
 title: Security
 ---
-# Security<a name="cloud-canvas-cgf-service-api-security"></a>
+# Security {#cloud-canvas-cgf-service-api-security}
 
 When you make APIs available on the Internet, you must be concerned with security\. A best practice is to limit API access to only the people who require it\. However, some APIs must be called by the game client\. These APIs can be called by any game player or potentially anyone on the Internet\.
 
@@ -16,7 +16,7 @@ For all APIs, consider the following:
    
 + API Gateway [automatically protects](https://aws.amazon.com/api-gateway/faqs/#security) your backend systems from distributed denial\-of\-service \(DDoS\) attacks, whether attacked with counterfeit requests \(Layer 7\) or SYN floods \(Layer 3\)\. However, this does not protect from less frequent requests that do not trigger API Gateway's protections\. These other requests might still have a significant impact on your operating costs due to excessive I/O or on game performance\. 
 
-## Access Control<a name="cloud-canvas-cgf-service-api-security-access-control"></a>
+## Access Control {#cloud-canvas-cgf-service-api-security-access-control}
 
 Configuring access control for a service API involves setting three distinct sets of permissions:
 
@@ -32,11 +32,11 @@ In all three cases, you use the [Cloud Canvas Resource Manager Security](/docs/u
 
 The permissions granted by `ServiceApi` are described in detail in the next section\. `ServiceLambda` gives `ServiceApi` permission to invoke the Lambda function\. Other resources give `ServiceLambda` the permissions that the Lambda function requires\.
 
-## Service API Permissions<a name="cloud-canvas-cgf-service-api-security-service-api-permissions"></a>
+## Service API Permissions {#cloud-canvas-cgf-service-api-security-service-api-permissions}
 
 You can secure service API operations on an individual basis\. For example, you could give permission to submit high scores to the game, and permission to delete fraudulent high scores to someone who manages operations\.
 
-By default, only valid AWS IAM credentials can execute operations\. This is done using swagger [security requirement](http://swagger.io/specification/#securityRequirementObject) and [security definitions](http://swagger.io/specification/#securityDefinitionsObject) objects that are added to each operation during [upload processing](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md#cloud-canvas-cgf-service-api-cgf-extension-object-upload-processing), unless the swagger operation object already defines a security object\. You can configure API Gateway to use other forms of security, or none at all, by putting security objects in swagger object definitions in your `swagger.json` file\.
+By default, only valid AWS IAM credentials can execute operations\. This is done using swagger [security requirement](http://swagger.io/specification/#securityRequirementObject) and [security definitions](http://swagger.io/specification/#securityDefinitionsObject) objects that are added to each operation during [upload processing](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object#cloud-canvas-cgf-service-api-cgf-extension-object-upload-processing), unless the swagger operation object already defines a security object\. You can configure API Gateway to use other forms of security, or none at all, by putting security objects in swagger object definitions in your `swagger.json` file\.
 
 To grant permission to execute an operation, modify your `resource-template.json` file to include metadata on the `ServiceApi` resource definition, as in the following example\.
 

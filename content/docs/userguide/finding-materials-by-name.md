@@ -3,7 +3,7 @@ description: ' Find material file names to reference for nodes in the &ALYlong; 
   editor. '
 title: Finding the Material Name
 ---
-# Finding the Material Name<a name="finding-materials-by-name"></a>
+# Finding the Material Name {#finding-materials-by-name}
 
 You can specify material names to reference for nodes in the **Script Canvas** editor\. The material name is generally the path that starts at the top asset directory but without the `.mtl` file name extension\.
 

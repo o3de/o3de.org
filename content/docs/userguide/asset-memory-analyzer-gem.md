@@ -2,7 +2,7 @@
 description: ' Learn to profile memory usage in &ALYlong; projects with the &astmem;. '
 title: Asset Memory Analyzer Gem
 ---
-# Asset Memory Analyzer Gem<a name="asset-memory-analyzer-gem"></a>
+# Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}
 
 Resource management is crtitcal, particularly on platforms such as mobile devices and consoles where heap \(system memory\) and VRAM \(video memory\) are limited\. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project\. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs\. It is an indispensable tool to balance memory usage and get the best performance for your project\. 
 
@@ -13,7 +13,7 @@ The **Asset Memory Analyzer** is an Amazon Lumberyard Gem that displays a table 
 + [View a JSON Asset Memory Analysis Snapshot in a Browser](#view-json-snapshot-in-browser) 
 + [Instrumenting Code for Asset Memory Analysis](#instrumenting-code) 
 
-## Enable the **Asset Memory Analyzer**<a name="enable-asset-memory-analyzer"></a>
+## Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}
 
 To use the **Asset Memory Analyzer**, enable asset scope tracking, configure and compile a **profile** build of your project, and enable asset memory analysis\. 
 
@@ -39,7 +39,7 @@ To use the **Asset Memory Analyzer**, enable asset scope tracking, configure and
 
 1. Set the CVAR `assetmem_enabled=1` via the Editor Console to enable asset memory analysis\. To make the setting persistent, add `assetmem_enabled=1` to an appropriate config file such as `/dev/system_windows_pc.cfg`\. 
 
-## View Live Asset Memory Analysis with **ImGUI**<a name="view-live-asset-memory-analysis"></a>
+## View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}
 
 To view live asset memory allocation, enable the **ImGUI** overlay during gameplay and choose **Asset Memory Analyzer** in the **ImGUI** window\. 
 
@@ -60,7 +60,7 @@ Click the **arrow** to the left of an asset to expand it and view individual all
 
 ![\[Expanded view of an asset in the Asset Memory Analyzer.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-B-1.22.png)
 
-## Export an Asset Memory Analysis Snapshot to a File<a name="export-asset-memory-analysis-to-file"></a>
+## Export an Asset Memory Analysis Snapshot to a File {#export-asset-memory-analysis-to-file}
 
 Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files through three methods: 
 + Click **Asset Memory Analyzer** in the **ImGUI** overlay window and choose **Export JSON** or **Export CSV**\.   
@@ -77,7 +77,7 @@ The snapshot file is created in the project log directory located at `dev/Cache/
 **Note**  
 Due to the limitations of the `CSV` format, only a top\-level overview of assets will be written to `CSV`, *without* the hierarchical drill\-down available in the `JSON` file or the **ImGUI** overlay window\. 
 
-## View a JSON Asset Memory Analysis Snapshot in a Browser<a name="view-json-snapshot-in-browser"></a>
+## View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}
 
 `JSON` snapshots can be viewed in a browser with a web viewer provided with Lumberyard\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\. 
 
@@ -97,7 +97,7 @@ The fields at the top of the table can be used to filter the assets by their lab
 
 ![\[The Asset Memory Viewer filtering a JSON snapshot in a browser by keyword.\]](/images/userguide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-E-1.22.png)
 
-## Instrumenting Code for Asset Memory Analysis<a name="instrumenting-code"></a>
+## Instrumenting Code for Asset Memory Analysis {#instrumenting-code}
 
 **Initial Loading of an Asset**  
 The **Asset Memory Analyzer** traps allocations \(heap and VRAM\) that occur during a slice of code execution or scope when an asset is active for recording\. When a system begins loading a new asset, it should use the `AZ_ASSET_NAMED_SCOPE` macro to demarcate the C\+\+ scope in which that asset may be actively making allocations\. For example: 

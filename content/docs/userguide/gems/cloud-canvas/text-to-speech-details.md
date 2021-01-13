@@ -3,7 +3,7 @@ description: ' Learn about the Text-to-Speech Gem''s runtime speech generation, 
   TextToSpeech component, and troubleshooting. '
 title: Text-to-Speech Gem Implementation Details
 ---
-# Text\-to\-Speech Gem Implementation Details<a name="cloud-canvas-cloud-gem-text-to-speech-details"></a>
+# Text\-to\-Speech Gem Implementation Details {#cloud-canvas-cloud-gem-text-to-speech-details}
 
 This topic provides information about the Text\-to\-Speech Gem's runtime speech generation, resources, `TextToSpeech` component, and troubleshooting\.
 
@@ -13,7 +13,7 @@ This topic provides information about the Text\-to\-Speech Gem's runtime speech 
 + [TextToSpeech Component \(TextToSpeech\.h\)](#cloud-canvas-cloud-gem-text-to-speech-details-texttospeech-component)
 + [Text\-to\-Speech Troubleshooting Features](#cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting)
 
-## Runtime Speech Generation<a name="cloud-canvas-cloud-gem-text-to-speech-details-runtime-speech-generation"></a>
+## Runtime Speech Generation {#cloud-canvas-cloud-gem-text-to-speech-details-runtime-speech-generation}
 
 In runtime speech generation, the game client invokes the synthesized speech API to generate speech\. For improved performance, the game client checks two levels of cache to see if the speech is available locally before it invokes the Amazon Polly service\. The following diagram illustrates this process\.
 
@@ -21,7 +21,7 @@ In runtime speech generation, the game client invokes the synthesized speech API
 
 If the speech files are not available locally, Amazon Polly generates the speech files, stores them in an Amazon S3 bucket, and provides the client with a presigned URL to the bucket location\. The client downloads the files and uses [https://en.wikipedia.org/wiki/Audiokinetic_Wwise](https://en.wikipedia.org/wiki/Audiokinetic_Wwise) to play the speech audio\. The `SpeechComponent` uses the speech mark files to perform lip synchronization by calling the `SimpleAnimationComponent`, which plays the associated animations\.
 
-## Resource Group<a name="cloud-canvas-cloud-gem-text-to-speech-details-resource-group"></a>
+## Resource Group {#cloud-canvas-cloud-gem-text-to-speech-details-resource-group}
 
 A Text\-to\-Speech Gem resource group contains the following resources\.
 
@@ -35,7 +35,7 @@ A Text\-to\-Speech Gem resource group contains the following resources\.
 
 **PackageVoiceLines** – This Lambda function puts a list of speech lines from `SpeechLibTable` into a `.zip` file so that it can be downloaded\. The `.zip` file also contains mappings of characters to Amazon Polly voices\. The file is put into an Amazon S3 bucket named `packagedvoicelines`\.
 
-## TextToSpeech Component \(TextToSpeech\.h\)<a name="cloud-canvas-cloud-gem-text-to-speech-details-texttospeech-component"></a>
+## TextToSpeech Component \(TextToSpeech\.h\) {#cloud-canvas-cloud-gem-text-to-speech-details-texttospeech-component}
 
 The `TextToSpeech` component takes input text, converts it to an audio file, optionally creates a speech marks file, and calls `TextToSpeechPlaybackBus` to start playback and lip synchronization\.
 
@@ -50,7 +50,7 @@ The `CloudGemTextToSpeechClientComponent` \(`CloudGemTextToSpeechClientComponent
 **Note**  
 Starting in version 1\.12, Lumberyard uses [Animation Editor](/docs/userguide/char-intro.md) to implement lip synchronization\. For details, see [Lip Synchronization with EMotion FX](/docs/userguide/gems/cloud-canvas/text-to-speech-emotionfx.md)\.
 
-## Text\-to\-Speech Troubleshooting Features<a name="cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting"></a>
+## Text\-to\-Speech Troubleshooting Features {#cloud-canvas-cloud-gem-text-to-speech-details-troubleshooting}
 
 The Cloud Gem Portal **REST Explorer** and **Log** tabs offer troubleshooting capabilities\.
 

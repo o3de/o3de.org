@@ -3,7 +3,7 @@ description: ' Use the Get Moon Latitude node in the &ALYlong; &script-canvas; e
   to return the moon latitude. '
 title: Get Moon Latitude
 ---
-# Get Moon Latitude<a name="get-moon-latitude-node"></a>
+# Get Moon Latitude {#get-moon-latitude-node}
 
 Returns the moon's latitude in the sky\.
 
@@ -13,7 +13,7 @@ Returns the moon's latitude in the sky\.
 
 ![\[getmoonlatitude, getmoonlatitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-moon-latitude-node.png)
 
-## Inputs<a name="get-moon-latitude-node-input"></a>
+## Inputs {#get-moon-latitude-node-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the moon's latitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-moon-latitude-node-output"></a>
+## Outputs {#get-moon-latitude-node-output}
 
 
 ****  

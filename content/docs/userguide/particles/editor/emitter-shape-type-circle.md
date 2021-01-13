@@ -4,7 +4,7 @@ description: ' Use the Circle emitter in the &ALYlong; &particle-editor; to enab
   and cylindrical effects. '
 title: Circle Emitter (CPU and GPU)
 ---
-# Circle Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-circle"></a>
+# Circle Emitter \(CPU and GPU\) {#particle-editor-emitter-shape-type-circle}
 
 The **Circle** emitter enables spawning of particles along the shapes axial coordinate system \(see diagram below\)\. This allows you to create complex circular and cylindrical effects\.
 

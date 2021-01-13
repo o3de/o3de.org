@@ -3,7 +3,7 @@ description: ' Use the Get Input String node in the &ALYlong; &script-canvas; ed
   to return the value of a procedural material input parameter as a string or image. '
 title: Get Input String
 ---
-# Get Input String<a name="get-input-string-node"></a>
+# Get Input String {#get-input-string-node}
 
 Returns the value of an input parameter as a string or image\.
 
@@ -15,7 +15,7 @@ If the input parameter is a `string` type, the node returns the text value\. If 
 
 ![\[GetInputString gets the string value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-string-node.png)
 
-## Inputs<a name="get-input-string-node-input"></a>
+## Inputs {#get-input-string-node-input}
 
 
 ****  
@@ -26,7 +26,7 @@ If the input parameter is a `string` type, the node returns the text value\. If 
 | Procedural Material | Procedural material | The procedural material to query\. | 
 | Input Name | String | The name of the input parameter to return\. | 
 
-## Outputs<a name="get-input-string-node-output"></a>
+## Outputs {#get-input-string-node-output}
 
 
 ****  

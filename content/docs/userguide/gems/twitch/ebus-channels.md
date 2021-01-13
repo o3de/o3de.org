@@ -3,11 +3,11 @@ description: ' Learn about the Channels C++ API operations for Twitch that you c
   use for your &ALY; game project. '
 title: Channels
 ---
-# Channels<a name="twitch-api-ebus-channels"></a>
+# Channels {#twitch-api-ebus-channels}
 
 Channels APIs for Twitch
 
-## GetChannel<a name="twitch-api-ebus-channels-getchannel"></a>
+## GetChannel {#twitch-api-ebus-channels-getchannel}
 
 Retrieves a channel object based on the OAuth token for the active Twitch user\.
 
@@ -86,7 +86,7 @@ Value – The channel information, which includes the following data:
 + NumViews – The total number of views for the channel\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelID<a name="twitch-api-ebus-channels-getchannelid"></a>
+## GetChannelID {#twitch-api-ebus-channels-getchannelid}
 
 Retrieves the specified channel object\.
 
@@ -165,7 +165,7 @@ Value – The channel information, which includes the following data:
 + NumViews – The total number of views for the channel\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## UpdateChannel<a name="twitch-api-ebus-channels-updatechannel"></a>
+## UpdateChannel {#twitch-api-ebus-channels-updatechannel}
 
 Updates the specified properties for the games channel\.
 
@@ -247,7 +247,7 @@ Value – The channel information, which includes the following data:
 + NumViews – The total number of views for the channel\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelEditors<a name="twitch-api-ebus-channels-getchanneleditors"></a>
+## GetChannelEditors {#twitch-api-ebus-channels-getchanneleditors}
 
 Retrieves a list of users who are editors for the specified channel\.
 
@@ -305,7 +305,7 @@ Value – The user information list, which includes the following data:
 + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelFollowers<a name="twitch-api-ebus-channels-getchannelfollowers"></a>
+## GetChannelFollowers {#twitch-api-ebus-channels-getchannelfollowers}
 
 Retrieves a list of users who follow the specified channel and returns a maximum of 100 followers\. The list is sorted by the date that users started following the channel, with newest followers first\. You can use the `offset` and `cursor` parameters to retrieve the next block of followers\.
 
@@ -385,7 +385,7 @@ Value – The result of the FollowerResult call, which includes the following da
     + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelTeams<a name="twitch-api-ebus-channels-getchannelteams"></a>
+## GetChannelTeams {#twitch-api-ebus-channels-getchannelteams}
 
 Retrieves a list of teams that belong to the specified channel\.
 
@@ -447,7 +447,7 @@ Value – The team information list, which includes the following data:
 + UpdatedDate – The date the team was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelSubscribers<a name="twitch-api-ebus-channels-getchannelsubscribers"></a>
+## GetChannelSubscribers {#twitch-api-ebus-channels-getchannelsubscribers}
 
 Retrieves a list of users who subscribe to the specified channel\. The list is sorted by the date that users subscribe to the channel\.
 
@@ -520,7 +520,7 @@ Value – The result of the `Subscription` call, which includes the following da
     + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## CheckChannelSubscriptionbyUser<a name="twitch-api-ebus-channels-checkchannelsubscriptionbyuser"></a>
+## CheckChannelSubscriptionbyUser {#twitch-api-ebus-channels-checkchannelsubscriptionbyuser}
 
 Verifies if the specified user is subscribed to the specified channel\. If the user is subscribed, a subscription object is returned\. This call is for channel owners\.
 
@@ -585,7 +585,7 @@ Value – The subscriber's information, which includes the following data:
   + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelVideos<a name="twitch-api-ebus-channels-getchannelvideos"></a>
+## GetChannelVideos {#twitch-api-ebus-channels-getchannelvideos}
 
 Retrieves a list of videos from the specified channel\.
 
@@ -690,7 +690,7 @@ Value – The result of the `VideoReturn` call, which includes the following dat
     + Mobile – For example, 400 x 226\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## StartChannelCommercial<a name="twitch-api-ebus-channels-startchannelcommercial"></a>
+## StartChannelCommercial {#twitch-api-ebus-channels-startchannelcommercial}
 
 Plays a commercial \(advertisement\) on the specified channel \(Twitch partners only\)\. You can play a commercial once every eight minutes\. You will receive an error response \(422 Unprocessable Entity\) if any of the following occur:
 + You specify an invalid length\.
@@ -748,7 +748,7 @@ Value – The result of the `StartChannelCommercialResult` call, which includes 
 + Message – Optional message or error description\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## ResetChannelStreamKey<a name="twitch-api-ebus-channels-resetchannelstreamkey"></a>
+## ResetChannelStreamKey {#twitch-api-ebus-channels-resetchannelstreamkey}
 
 Deletes the stream key \(also known as authorization key\) for the specified channel\. Once deleted, the stream key automatically resets\. Stream keys uniquely identify streams and are assigned by Twitch\. Each broadcast uses an RTMP URL that includes the stream key\.
 
@@ -831,7 +831,7 @@ Value – The channel information, which includes the following data:
 + NumViews – The total number of views for the channel\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetChannelCommunity<a name="twitch-api-ebus-channels-getchannelcommunity"></a>
+## GetChannelCommunity {#twitch-api-ebus-channels-getchannelcommunity}
 
 Retrieves the community for the specified channel\.
 
@@ -897,7 +897,7 @@ Value – The community information, which includes the following data:
 + Summary – A summary description of the community\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## SetChannelCommunity<a name="twitch-api-ebus-channels-setchannelcommunity"></a>
+## SetChannelCommunity {#twitch-api-ebus-channels-setchannelcommunity}
 
 Adds a specified channel to the specified community\.
 
@@ -945,7 +945,7 @@ No return value\.SetChannelCommunity Callback
 Value – The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## DeleteChannelfromCommunity<a name="twitch-api-ebus-channels-deletechannelfromcommunity"></a>
+## DeleteChannelfromCommunity {#twitch-api-ebus-channels-deletechannelfromcommunity}
 
 Deletes the specified channel from its community\.
 

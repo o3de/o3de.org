@@ -3,7 +3,7 @@ description: ' Create an animation graph and simulate your PhysX ragdoll in the 
   &animation-editor; . '
 title: Creating and Simulating a PhysX Ragdoll
 ---
-# Creating and Simulating a PhysX Ragdoll<a name="animation-editor-creating-and-simulating-physx-ragdoll"></a>
+# Creating and Simulating a PhysX Ragdoll {#animation-editor-creating-and-simulating-physx-ragdoll}
 
 
 ****  
@@ -25,7 +25,7 @@ This topic will teach you how to do the following:
 + [Add the ragdoll to an animation graph\.](#setting-up-a-ragdoll-creating-an-animation-graph)
 + [Simulate a ragdoll in Lumberyard Editor\.](#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode)
 
-## Setting Up a Ragdoll<a name="animation-editor-setting-up-a-ragdoll"></a>
+## Setting Up a Ragdoll {#animation-editor-setting-up-a-ragdoll}
 
 When you set up a ragdoll, you do the following:
 + [Define joints for the ragdoll\.](#setting-up-a-ragdoll-selecting-joints)
@@ -34,7 +34,7 @@ When you set up a ragdoll, you do the following:
 
 In addition, your actor must have a motion extraction node that is a root node\. Your ragdoll must have a root node that is a direct parent of the motion extraction node\. For example, the Rin character uses `root` for its motion extraction node\. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`\.
 
-### Step 1: Define Joints for the Ragdoll<a name="setting-up-a-ragdoll-selecting-joints"></a>
+### Step 1: Define Joints for the Ragdoll {#setting-up-a-ragdoll-selecting-joints}
 
 Do the following to select the joints for your ragdoll\.
 
@@ -70,7 +70,7 @@ If your ragdoll colliders and hit detection colliders are the same size, you may
 1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint\. For example, the rigid body mass, sleeping threshold, and colliders\.  
 ![\[View and modify ragdoll properties for a selected joint on the Ragdoll tab in the Animation Editor\]](/images/userguide/actor-animation/ragdoll-skeleton-ragdoll-tab-properties.png)
 
-### Step 2: Add Ragdoll Colliders<a name="setting-up-a-ragdoll-adding-a-collider"></a>
+### Step 2: Add Ragdoll Colliders {#setting-up-a-ragdoll-adding-a-collider}
 
 The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton\. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect\. If the pair of colliders intersects, they'll collide when the ragdoll is simulated\.
 
@@ -92,7 +92,7 @@ In the following example, the collider for the second spine joint \(highlighted\
 
 1. Choose **File**, **Save Selected Actors**\. This saves the ragdoll data to the `.assetinfo` file for the character\. The Asset Processor then bakes the ragdoll data into the `.actor` file\.
 
-### Step 3: Create a Joint Limit<a name="setting-up-a-ragdoll-creating-a-joint-limit"></a>
+### Step 3: Create a Joint Limit {#setting-up-a-ragdoll-creating-a-joint-limit}
 
 Joint limits are enabled for every joint in your ragdoll\. This allows you to edit the joints and ensure they're set up correctly\.
 
@@ -109,7 +109,7 @@ The following image shows joint limits that are set up correctly\.
 1. Adjust the twist limit value so that the line appears inside the wedge\.  
 ![\[Example that shows the line for the twist limit value in the wedge\]](/images/userguide/actor-animation/ragdoll-joint-limit-twist-limit-value.png)
 
-## Adding Your Ragdoll to an Animation Graph<a name="setting-up-a-ragdoll-creating-an-animation-graph"></a>
+## Adding Your Ragdoll to an Animation Graph {#setting-up-a-ragdoll-creating-an-animation-graph}
 
 When you create an animation graph to control the ragdoll simulation of your character, you do the following:
 + Prepare the actor asset\.
@@ -162,7 +162,7 @@ The animation graph controls the ragdoll simulation of your character\. When you
 
 1. In the animation graph, click the **Motion** node for a preview\.
 
-## Simulating Your Ragdoll<a name="setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode"></a>
+## Simulating Your Ragdoll {#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode}
 
 Once you've created your ragdoll and animation graph, you can simulate the ragdoll in game mode in Lumberyard Editor\.
 

@@ -3,7 +3,7 @@ description: ' Use the Audio attribute in the &ALYlong; &particle-editor; to spe
   which sounds the particle system emits and when. '
 title: Audio Attribute
 ---
-# Audio Attribute<a name="particle-editor-reference-audio"></a>
+# Audio Attribute {#particle-editor-reference-audio}
 
 In the **Audio** attribute, specify which sounds the particle system emits and when\.
 

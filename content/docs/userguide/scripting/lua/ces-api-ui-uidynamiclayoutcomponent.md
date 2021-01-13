@@ -3,15 +3,15 @@ description: ' Use the UIDynamicLayoutComponent to implement clone a prototype U
   element in &ALYlong;. '
 title: UIDynamicLayoutComponent
 ---
-# UIDynamicLayoutComponent<a name="lua-scripting-ces-api-ui-uidynamiclayoutcomponent"></a>
+# UIDynamicLayoutComponent {#lua-scripting-ces-api-ui-uidynamiclayoutcomponent}
 
 Clones a prototype element to achieve the specified number of child elements\.
 
-## UiDynamicLayoutBus<a name="lua-scripting-ces-api-ui-uidynamiclayoutcomponent-uidynamiclayoutbus"></a>
+## UiDynamicLayoutBus {#lua-scripting-ces-api-ui-uidynamiclayoutcomponent-uidynamiclayoutbus}
 
 Services messages for the `UiDynamicLayoutComponent`\.
 
-### SetNumChildElements<a name="lua-scripting-ces-api-ui-uidynamiclayoutcomponent-uidynamiclayoutbus-setnumchildelements"></a>
+### SetNumChildElements {#lua-scripting-ces-api-ui-uidynamiclayoutcomponent-uidynamiclayoutbus-setnumchildelements}
 
 Specifies the number of child elements to be created dynamically\.
 

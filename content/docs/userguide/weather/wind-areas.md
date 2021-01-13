@@ -2,7 +2,7 @@
 description: ' Create wind areas in &ALY; to determine where objects experience wind. '
 title: Creating Wind Areas
 ---
-# Creating Wind Areas<a name="weather-wind-areas"></a>
+# Creating Wind Areas {#weather-wind-areas}
 
 
 ****  

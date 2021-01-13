@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Lightning Arc component to add lightning arc ef
   to your game. '
 title: Lighting Arc
 ---
-# Lighting Arc<a name="component-lightning-arc"></a>
+# Lighting Arc {#component-lightning-arc}
 
 
 ****  
@@ -26,7 +26,7 @@ The **Lightning Arc** component is attached to the entity in the center, and the
 + [EBus Request Bus Interface](#component-lightning-arc-ebus-request)
 + [EBus Notification Bus Interface](#lightning-arc-component-notification-bus-interface)
 
-## Lightning Arc Component Properties<a name="component-lightning-arc-properties"></a>
+## Lightning Arc Component Properties {#component-lightning-arc-properties}
 
 The **Lightning Arc** component has the following properties:
 
@@ -48,7 +48,7 @@ You can find the available arc preset names in the following directory: `Gems\Li
 **Refresh Presets**  
 If you make changes to the `lightningarceffects.xml` file, click **Refresh Presets** to get the most recent arc preset names\.
 
-### Arc Parameters<a name="component-lightning-arc-parameters"></a>
+### Arc Parameters {#component-lightning-arc-parameters}
 
 The **Lightning Arc** component has the following lightning options:
 
@@ -58,7 +58,7 @@ The **Lightning Arc** component has the following lightning options:
 + [Strike](#component-lightning-arc-strike-)
 + [Beam](#component-lightning-arc-beam-)
 
-#### Lightning<a name="component-lightning-arc-parameters-lightning"></a>
+#### Lightning {#component-lightning-arc-parameters-lightning}
 
 **Deviation**  
 Amount of deviation applied to the arcs\. Specify lower values to make the arc appear more smooth\.
@@ -69,7 +69,7 @@ Amount of noise applied to the arcs\.
 **Velocity**  
 Specify how fast an arc drifts upward after it is emitted\.
 
-#### Branch<a name="component-lightning-arc-branch-"></a>
+#### Branch {#component-lightning-arc-branch-}
 
 The **Lightning Arc** component has following branch options:
 
@@ -79,7 +79,7 @@ Maximum number of branches that can spawn from an arc\. For more information, se
 **Probability**  
 Specifies how likely that a child branch spawns from an arc\. For more information, see [SetBranchProbability](#lightning-arc-ebus-set-branch-probability)\.
 
-#### Strike<a name="component-lightning-arc-strike-"></a>
+#### Strike {#component-lightning-arc-strike-}
 
 The **Lightning Arc** component has following strike options:
 
@@ -101,7 +101,7 @@ Number of points for each segment\. Specify more points to increase the noise ef
 **Max Strike Count**  
 Specify how many arcs can be alive at one time from this **Lightning Arc** component\.
 
-#### Beam<a name="component-lightning-arc-beam-"></a>
+#### Beam {#component-lightning-arc-beam-}
 
 The **Lightning Arc** component has following beam options:
 
@@ -120,7 +120,7 @@ Specify how many frames are in the arc's animation\.
 **Tex FPS**  
 Specify how many frames per second are in the arc's animation\.
 
-### Timing<a name="component-lightning-arc-timing-"></a>
+### Timing {#component-lightning-arc-timing-}
 
 The **Lightning Arc** component has following timing options:
 
@@ -130,7 +130,7 @@ Time between emitted arcs, in seconds\.
 **Delay Variation**  
 Variation in time between emitted arcs\. For more information, see [SetDelayVariation](#lightning-arc-ebus-set-delay-variation)\.
 
-## EBus Request Bus Interface<a name="component-lightning-arc-ebus-request"></a>
+## EBus Request Bus Interface {#component-lightning-arc-ebus-request}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Lightning Arc** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
@@ -181,7 +181,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 + [GetBeamTexFPS](#lightning-arc-ebus-get-beam-tex-fps)
 + [Request Bus Example Script](#lightning-arc-ebus-example-script)
 
-### Enable<a name="lightning-arc-ebus-enable"></a>
+### Enable {#lightning-arc-ebus-enable}
 
 Enables the component to emit lightning arcs\.
 
@@ -194,7 +194,7 @@ None
 **Scriptable**  
 Yes
 
-### Disable<a name="lightning-arc-ebus-disable"></a>
+### Disable {#lightning-arc-ebus-disable}
 
 Disables lightning arc emission\.
 
@@ -207,7 +207,7 @@ None
 **Scriptable**  
 Yes
 
-### Toggle<a name="lightning-arc-ebus-toggle"></a>
+### Toggle {#lightning-arc-ebus-toggle}
 
 Toggles lightning arc emission\.
 
@@ -220,7 +220,7 @@ None
 **Scriptable**  
 Yes
 
-### IsEnabled<a name="lightning-arc-ebus-is-enabled"></a>
+### IsEnabled {#lightning-arc-ebus-is-enabled}
 
 Returns whether the **Lightning Arc** component emits lightning arcs\.
 
@@ -233,7 +233,7 @@ Type: Boolean
 **Scriptable**  
 Yes
 
-### SetTargets<a name="lightning-arc-ebus-set-targets"></a>
+### SetTargets {#lightning-arc-ebus-set-targets}
 
 Sets the target entities to which the **Lightning Arc** component emits arcs\.
 
@@ -247,7 +247,7 @@ None
 **Scriptable**  
 Yes
 
-### GetTargets<a name="lightning-arc-ebus-get-targets"></a>
+### GetTargets {#lightning-arc-ebus-get-targets}
 
 Returns the target entities to which the **Lightning Arc** component emits arcs\. 
 
@@ -261,7 +261,7 @@ Type: Vector of entity IDs\.
 **Scriptable**  
 Yes
 
-### SetDelay<a name="lightning-arc-ebus-set-delay"></a>
+### SetDelay {#lightning-arc-ebus-set-delay}
 
 Sets the time between emitted arcs, in seconds\.
 
@@ -274,7 +274,7 @@ None
 **Scriptable**  
 Yes
 
-### GetDelay<a name="lightning-arc-ebus-get-delay"></a>
+### GetDelay {#lightning-arc-ebus-get-delay}
 
 Returns the time between emitted arcs, in seconds\.
 
@@ -287,7 +287,7 @@ Type: Double
 **Scriptable**  
 Yes
 
-### SetDelayVariation<a name="lightning-arc-ebus-set-delay-variation"></a>
+### SetDelayVariation {#lightning-arc-ebus-set-delay-variation}
 
 Sets the variation in time between emitted arcs\.
 
@@ -306,7 +306,7 @@ None
 **Scriptable**  
 Yes
 
-### GetDelayVariation<a name="lightning-arc-ebus-get-delay-variation"></a>
+### GetDelayVariation {#lightning-arc-ebus-get-delay-variation}
 
 Returns the variation in time between emitted arcs\.
 
@@ -319,7 +319,7 @@ Type: Double
 **Scriptable**  
 Yes
 
-### SetStrikeTimeMin<a name="lightning-arc-ebus-set-strike-time-min"></a>
+### SetStrikeTimeMin {#lightning-arc-ebus-set-strike-time-min}
 
 Sets the minimum amount of time that an arc is kept alive\.
 
@@ -332,7 +332,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStrikeTimeMin<a name="lightning-arc-ebus-get-strike-time-min"></a>
+### GetStrikeTimeMin {#lightning-arc-ebus-get-strike-time-min}
 
 Returns the minimum amount of time that an arc is kept alive\.
 
@@ -345,7 +345,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetStrikeTimeMax<a name="lightning-arc-ebus-set-strike-time-max"></a>
+### SetStrikeTimeMax {#lightning-arc-ebus-set-strike-time-max}
 
 Sets the maximum amount of time that an arc is kept alive\.
 
@@ -358,7 +358,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStrikeTimeMax<a name="lightning-arc-ebus-get-strike-time-max"></a>
+### GetStrikeTimeMax {#lightning-arc-ebus-get-strike-time-max}
 
 Returns the maximum amount of time that an arc is kept alive\.
 
@@ -371,7 +371,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetStrikeFadeOut<a name="lightning-arc-ebus-set-strike-fade-out"></a>
+### SetStrikeFadeOut {#lightning-arc-ebus-set-strike-fade-out}
 
 Sets how long it takes for an arc to fade out\.
 
@@ -387,7 +387,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStrikeFadeOut<a name="lightning-arc-ebus-get-strike-fade-out"></a>
+### GetStrikeFadeOut {#lightning-arc-ebus-get-strike-fade-out}
 
 Returns how long it takes for an arc to fade out\.
 
@@ -400,7 +400,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetStrikeSegmentCount<a name="lightning-arc-ebus-set-segment-count"></a>
+### SetStrikeSegmentCount {#lightning-arc-ebus-set-segment-count}
 
 Sets the number of segments in an arc\.
 
@@ -415,7 +415,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStrikeSegmentCount<a name="lightning-arc-ebus-get-segment-count"></a>
+### GetStrikeSegmentCount {#lightning-arc-ebus-get-segment-count}
 
 Returns the number of segments in an arc\.
 
@@ -428,7 +428,7 @@ Type: `AZ::u32`
 **Scriptable**  
 Yes
 
-### SetStrikePointCount<a name="lightning-arc-ebus-set-strike-point-count"></a>
+### SetStrikePointCount {#lightning-arc-ebus-set-strike-point-count}
 
 Sets the number of points for each segment\.
 
@@ -444,7 +444,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStrikePointCount<a name="lightning-arc-ebus-get-strike-point-count"></a>
+### GetStrikePointCount {#lightning-arc-ebus-get-strike-point-count}
 
 Returns the number of points for each segment in an arc\.
 
@@ -457,7 +457,7 @@ Type: `AZ::u32`
 **Scriptable**  
 Yes
 
-### SetLightningDeviation<a name="lightning-arc-ebus-set-lightning-deviation"></a>
+### SetLightningDeviation {#lightning-arc-ebus-set-lightning-deviation}
 
 Sets the amount of deviation applied to the arcs\. 
 
@@ -473,7 +473,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightningDeviation<a name="lightning-arc-ebus-get-lightning-deviation"></a>
+### GetLightningDeviation {#lightning-arc-ebus-get-lightning-deviation}
 
 Returns the amount of deviation applied to the arcs\.
 
@@ -486,7 +486,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetLightningFuzziness<a name="lightning-arc-ebus-set-lightning-fuzziness"></a>
+### SetLightningFuzziness {#lightning-arc-ebus-set-lightning-fuzziness}
 
 Sets the amount of noise applied to the arcs\.
 
@@ -499,7 +499,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightningFuzziness<a name="lightning-arc-ebus-get-lightning-fuzziness"></a>
+### GetLightningFuzziness {#lightning-arc-ebus-get-lightning-fuzziness}
 
 Returns the amount of noise applied to the arcs\.
 
@@ -512,7 +512,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetLightningVelocity<a name="lightning-arc-ebus-set-lightning-velocity"></a>
+### SetLightningVelocity {#lightning-arc-ebus-set-lightning-velocity}
 
 Sets how fast an arc drifts upwards after it emits\.
 
@@ -525,7 +525,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightningVelocity<a name="lightning-arc-ebus-get-lightning-velocity"></a>
+### GetLightningVelocity {#lightning-arc-ebus-get-lightning-velocity}
 
 Returns how fast an arc drifts upwards after it emits\.
 
@@ -538,7 +538,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetBranchProbability<a name="lightning-arc-ebus-set-branch-probability"></a>
+### SetBranchProbability {#lightning-arc-ebus-set-branch-probability}
 
 Sets how likely a branch spawns off of an arc\.
 
@@ -558,7 +558,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBranchProbablity<a name="lightning-arc-ebus-get-branch-probability"></a>
+### GetBranchProbablity {#lightning-arc-ebus-get-branch-probability}
 
 Returns how likely a branch spawns off the parent arc\.
 
@@ -571,7 +571,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetBranchMaxLevel<a name="lightning-arc-ebus-set-branch-max-level"></a>
+### SetBranchMaxLevel {#lightning-arc-ebus-set-branch-max-level}
 
 Sets the maximum number of branches that can spawn off the parent arc\.
 + A value of `0` means branches do not spawn, regardless of branch probability\. 
@@ -586,7 +586,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBranchMaxLevel<a name="lightning-arc-ebus-get-branch-max-level"></a>
+### GetBranchMaxLevel {#lightning-arc-ebus-get-branch-max-level}
 
 Returns the maximum number of branches allowed to spawn off the parent arc\.
 
@@ -599,7 +599,7 @@ Type: `AZ::u32`
 **Scriptable**  
 Yes
 
-### SetMaxStrikeCount<a name="lightning-arc-ebus-set-max-strike-count"></a>
+### SetMaxStrikeCount {#lightning-arc-ebus-set-max-strike-count}
 
 Sets how many arcs can be alive at one time from this **Lightning Arc** component; this includes parent and branch arcs\.
 
@@ -612,7 +612,7 @@ None
 **Scriptable**  
 Yes
 
-### GetMaxStrikeCount<a name="lightning-arc-ebus-get-max-strike-count"></a>
+### GetMaxStrikeCount {#lightning-arc-ebus-get-max-strike-count}
 
 Returns the maximum number of arcs that can be alive at one time from this **Lightning Arc** component\.
 
@@ -625,7 +625,7 @@ Type: `AZ::u32`
 **Scriptable**  
 Yes
 
-### SetBeamSize<a name="lightning-arc-ebus-set-beam-size"></a>
+### SetBeamSize {#lightning-arc-ebus-set-beam-size}
 
 Sets the width of the generated arcs\. Branch arcs be half this size\.
 
@@ -638,7 +638,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBeamSize<a name="lightning-arc-ebus-get-beam-size"></a>
+### GetBeamSize {#lightning-arc-ebus-get-beam-size}
 
 Returns the width of the generated arcs\.
 
@@ -651,7 +651,7 @@ Float
 **Scriptable**  
 Yes
 
-### SetBeamTexTiling<a name="lightning-arc-ebus-set-beam-tex-tiling"></a>
+### SetBeamTexTiling {#lightning-arc-ebus-set-beam-tex-tiling}
 
 Sets the texture tiling based on the world size of the arc beam\.
 + A value of `2.0` means that the texture wraps around twice for each meter\. 
@@ -669,7 +669,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBeamTexTiling<a name="lightning-arc-ebus-get-beam-tex-tiling"></a>
+### GetBeamTexTiling {#lightning-arc-ebus-get-beam-tex-tiling}
 
 Returns the texture tiling parameter for the arc beam\.
 
@@ -682,7 +682,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetBeamTexShift<a name="lightning-arc-ebus-set-beam-tex-shift"></a>
+### SetBeamTexShift {#lightning-arc-ebus-set-beam-tex-shift}
 
 Sets how fast to move through textures in the arc's animation\.
 
@@ -698,7 +698,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBeamTexShift<a name="lightning-arc-ebus-get-beam-tex-shift"></a>
+### GetBeamTexShift {#lightning-arc-ebus-get-beam-tex-shift}
 
 Returns how fast to move through textures in the arc's animation\.
 
@@ -711,7 +711,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetBeamTexFrames<a name="lightning-arc-ebus-set-beam-tex-frames"></a>
+### SetBeamTexFrames {#lightning-arc-ebus-set-beam-tex-frames}
 
 Sets how many frames are in an arc's animation\.
 
@@ -724,7 +724,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBeamTexFrames<a name="lightning-arc-ebus-get-beam-tex-frames"></a>
+### GetBeamTexFrames {#lightning-arc-ebus-get-beam-tex-frames}
 
 Returns the number of frames in an arc's animation\.
 
@@ -737,7 +737,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetBeamTexFPS<a name="lightning-arc-ebus-set-beam-tex-fps"></a>
+### SetBeamTexFPS {#lightning-arc-ebus-set-beam-tex-fps}
 
 Sets how many frames per second are in an arc's animation\.
 
@@ -750,7 +750,7 @@ None
 **Scriptable**  
 Yes
 
-### GetBeamTexFPS<a name="lightning-arc-ebus-get-beam-tex-fps"></a>
+### GetBeamTexFPS {#lightning-arc-ebus-get-beam-tex-fps}
 
 Returns how many frames per second are in an arc's animation\.
 
@@ -763,7 +763,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### Request Bus Example Script<a name="lightning-arc-ebus-example-script"></a>
+### Request Bus Example Script {#lightning-arc-ebus-example-script}
 
 ```
 function example:OnActivate()
@@ -773,13 +773,13 @@ function example:OnActivate()
 end
 ```
 
-## EBus Notification Bus Interface<a name="lightning-arc-component-notification-bus-interface"></a>
+## EBus Notification Bus Interface {#lightning-arc-component-notification-bus-interface}
 
 Use the following notification functions with the **Lightning Arc** component notification EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### OnSpark<a name="lightning-arc-component-notification-bus-on-spark"></a>
+### OnSpark {#lightning-arc-component-notification-bus-on-spark}
 
 Notifies an event that triggers when the specified component fires a spark\.
 
@@ -792,7 +792,7 @@ None
 **Scriptable**  
 Yes
 
-### Notification Bus Example Script<a name="lightning-arc-notification-bus-example-script"></a>
+### Notification Bus Example Script {#lightning-arc-notification-bus-example-script}
 
 ```
 function example:OnActivate()

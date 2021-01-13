@@ -2,7 +2,7 @@
 description: ' Apply displacement mapping and tessellation for an object in &ALYlong;. '
 title: Displacement Maps and Tessellation
 ---
-# Displacement Maps and Tessellation<a name="mat-maps-displacement-intro"></a>
+# Displacement Maps and Tessellation {#mat-maps-displacement-intro}
 
 Displacement mapping allows you to displace the actual surface geometry of an object to give you extra depth and detail than is available using bump mapping, offset bump mapping or parallax occlusion mapping \(POM\) techniques, which all "fake" surface detail\. Displacement mapping results are dependent on how far the camera is from the object\. 
 

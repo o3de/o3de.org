@@ -3,7 +3,7 @@ description: ' The Multi-Touch Input Enabled setting determines whether the comp
   will handle multi-touch events in &ALY;. '
 title: Multi-Touch Input Enabled
 ---
-# Multi\-Touch Input Enabled<a name="ui-editor-components-interactive-properties-multitouch-input"></a>
+# Multi\-Touch Input Enabled {#ui-editor-components-interactive-properties-multitouch-input}
 
 The **Multi\-Touch Input Enabled** check box is selected by default\. This setting determines whether the component will handle all multi\-touch events it receives\. When the check box is unchecked, this interactable will handle only primary touch input events\.
 

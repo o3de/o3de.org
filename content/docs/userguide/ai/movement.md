@@ -2,7 +2,7 @@
 description: ' See the following concepts for the movement system in &ALYlong;. '
 title: Movement System
 ---
-# Movement System<a name="ai-movement"></a>
+# Movement System {#ai-movement}
 
 Key priorities for the AI Movement system include the following features\.
 + Robust and predictable\. Navigation can be very unreliable, with no guarantee that a character will carry out the requested movement and end up at the desired destination\. This is a very organic problem with no clear resolutions\. The AI Movement system solves this by providing more explicit information about failure reasons\.
@@ -12,7 +12,7 @@ Key priorities for the AI Movement system include the following features\.
 **Note**  
 This system is still a work in progress, and it's design was focused on solving some critical problems with an existing code base\. It may not be suitable for all game titles\.
 
-## Using the Movement System<a name="ai-movement-using"></a>
+## Using the Movement System {#ai-movement-using}
 
 Using the movement system is pretty straightforward\. Create a MovementRequest object with information about the destination, style and a callback\. Queue it in MovementSystem and receive a MovementRequestID\. Use this if you want to cancel the request\. Then wait for MovementSystem to process to your request\. Once your request is processed, you'll be notified via the callback\.
 
@@ -28,7 +28,7 @@ Here's what's happening internally to process your request:
 
 1. MovementSystem notifies the requester of success, and moves on to the next request\.
 
-## Potential Improvements<a name="ai-movement-improvements"></a>
+## Potential Improvements {#ai-movement-improvements}
 
 The following areas of improvement or enhancement are under consideration:
 + Change request processing\. Currently there is a request queue, with movement requests processed one at a time, in FIFO order\. Requests are immutable, so it's impossible to change a request once it's been queued; as a result, the only option is to cancel a request and queue a new one\. These issues could be resolved by removing the request queue and allowing only one request at a time\. If a request comes in while one is already being processed, interrupt the current one and report it\.

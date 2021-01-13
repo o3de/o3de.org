@@ -3,7 +3,7 @@ description: ' Use the holes brush in the terrain layer and visual mesh to creat
   sinkholes, craters, and caves in your &ALY; level. '
 title: Using the Holes Brush
 ---
-# Using the Holes Brush<a name="terrain-landforms-holes-brush"></a>
+# Using the Holes Brush {#terrain-landforms-holes-brush}
 
 
 ****  

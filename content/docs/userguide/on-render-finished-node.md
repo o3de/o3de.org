@@ -3,7 +3,7 @@ description: ' Use the On Render Finished node in the &ALYlong; &script-canvas; 
   to trigger when a procedural material update finishes. '
 title: On Render Finished
 ---
-# On Render Finished<a name="on-render-finished-node"></a>
+# On Render Finished {#on-render-finished-node}
 
 This node is triggered when an update for a procedural material finishes rendering\.
 
@@ -18,7 +18,7 @@ To verify that the render update is the event that you want, compare the **Rende
 
 ![\[Verify the Render ID for the Render Asynchronous and On Render Finished nodes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-on-render-finished-node-2.png)
 
-## Outputs<a name="on-render-finished-node-output"></a>
+## Outputs {#on-render-finished-node-output}
 
 
 ****  

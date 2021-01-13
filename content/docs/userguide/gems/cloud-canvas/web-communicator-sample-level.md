@@ -3,11 +3,11 @@ description: ' Use the CommunicatorSample level to test the Web Communicator clo
   gem in &ALYlong;. '
 title: Testing the Web Communicator Cloud Gem
 ---
-# Testing the Web Communicator Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator-sample-level"></a>
+# Testing the Web Communicator Cloud Gem {#cloud-canvas-cloud-gem-web-communicator-sample-level}
 
 To perform a simple test of the Web Communicator cloud gem, you can use the CommunicatorSample level that is included with Lumberyard\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-web-communicator-sample-level-prerequisites}
 
 This tutorial assumes the following:
 + Your Lumberyard project has the Web Communicator and Player Account cloud gems enabled \(in the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html), choose **Cloud Gem Web Communicator** and **Cloud Gem Player Account**\)\.
@@ -16,7 +16,7 @@ This tutorial assumes the following:
   + A [*deployment*](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md) for your project that includes the **CloudGemWebCommunicator** and **CloudGemPlayerAccount** resource groups\.
 + You have an email account for testing\.
 
-## Test Workflow Summary<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-summary"></a>
+## Test Workflow Summary {#cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-summary}
 
 The test workflow uses the PlayerAccountSample level, the CommunicatorSample level, and the AWS IoT management console in the following ways:
 
@@ -26,11 +26,11 @@ The test workflow uses the PlayerAccountSample level, the CommunicatorSample lev
 
 1. **AWS IoT management console** – To publish a test message that appears in the CommunicatorSample level\.
 
-## Test Workflow Steps<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-steps"></a>
+## Test Workflow Steps {#cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-steps}
 
 The following sections describe each of the workflow steps in detail\.
 
-### A\. Using PlayerAccountSample to Create a Player Account<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-playeraccountsample"></a>
+### A\. Using PlayerAccountSample to Create a Player Account {#cloud-canvas-cloud-gem-web-communicator-sample-level-playeraccountsample}
 
 In this step, you use the PlayerAccountSample level to create a player account and sign in with it\.
 
@@ -42,7 +42,7 @@ In this step, you use the PlayerAccountSample level to create a player account a
 
 1. Press **ESC** to exit the level\.
 
-### B\. Using CommunicatorSample to Register and Connect a Websocket<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-communicatorsample"></a>
+### B\. Using CommunicatorSample to Register and Connect a Websocket {#cloud-canvas-cloud-gem-web-communicator-sample-level-communicatorsample}
 
 In this step, register and connect a Websocket that can receive messages from AWS IoT\.
 
@@ -77,7 +77,7 @@ In this step, register and connect a Websocket that can receive messages from AW
 
 Now that you have registered and connected a WebSocket, you are ready to test it\.
 
-### C\. Using the AWS IoT Management Console to Publish a Test Message<a name="cloud-canvas-cloud-gem-web-communicator-sample-level-aws-iot-management-console"></a>
+### C\. Using the AWS IoT Management Console to Publish a Test Message {#cloud-canvas-cloud-gem-web-communicator-sample-level-aws-iot-management-console}
 
 In this step, you send a test from the message AWS IoT console to the CommunicatorSample level\.
 

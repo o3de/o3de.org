@@ -2,7 +2,7 @@
 description: ' See the C++ interfaces for TPS querying in &ALYlong;. '
 title: TPS Querying with C++
 ---
-# TPS Querying with C\+\+<a name="ai-tactical-point-cpp-interface"></a>
+# TPS Querying with C\+\+ {#ai-tactical-point-cpp-interface}
 
 These C\+\+ interfaces allow you to use TPS from other C\+\+ code and within goalops\. Lua queries are translated through it\. 
 
@@ -16,7 +16,7 @@ There are two C\+\+ interfaces:
   + Simpler, not object\-oriented, just as powerful
   + Uses stored queries for efficiency
 
-## Internal Interface Syntax<a name="ai-tactical-point-cpp-interface-codesample"></a>
+## Internal Interface Syntax {#ai-tactical-point-cpp-interface-codesample}
 
 In the example below, some parsing is obviously taking place here\. This is crucial to the generality of the system\.
 
@@ -35,7 +35,7 @@ if ( iQueryId == 0 )
 pTPS->Query( iQueryId, CastToIPuppetSafe( pShooter->GetAI() ),vHidePos, bIsValidHidePos );
 ```
 
-## TPS Syntax Examples<a name="ai-tactical-point-cpp-interface-syntax-examples"></a>
+## TPS Syntax Examples {#ai-tactical-point-cpp-interface-syntax-examples}
 
 The following examples and explanations illustrate the use of TPS query syntax\. For a more detailed discussion of the TPS query language, see the topic on TPS Query Language Syntax and Semantics\. 
 

@@ -3,7 +3,7 @@ description: ' Use the &resource-compiler; image tool to manually select an imag
   processing preset in &ALYlong; and then save the settings to source control. '
 title: Using the &resource-compiler; Image Tool
 ---
-# Using the Resource Compiler Image Tool<a name="asset-pipeline-images-using-resourcecompiler-image-tool"></a>
+# Using the Resource Compiler Image Tool {#asset-pipeline-images-using-resourcecompiler-image-tool}
 
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands\.
 

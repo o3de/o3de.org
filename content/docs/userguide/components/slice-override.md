@@ -2,7 +2,7 @@
 description: ' Revert overrides in &ly-editor;. '
 title: Reverting and Forcing Overrides
 ---
-# Reverting and Forcing Overrides<a name="component-slice-override"></a>
+# Reverting and Forcing Overrides {#component-slice-override}
 
 When you change any part of a slice instance, such as adding a component, removing a component, or modifying a component property, you create an override\. Overrides to component properties are highlighted with bold orange text in the **Entity Inspector**\. You can revert the override to remove the override in order to resume inheriting from the source slice\.
 
@@ -16,15 +16,15 @@ When you change any part of a slice instance, such as adding a component, removi
    + **Entity** – Revert all changes to the entity that you selected, such as added or removed components or changed properties\.  
 ![\[Image NOT FOUND\]](/images/userguide/shared-component-slices-revert-property.png)
 
-## <a name="component-slice-override-reverting"></a>
+##  {#component-slice-override-reverting}
 
 **Note**  
 In the **Entity Inspector**, reverting overrides to a parent entity doesn't revert overrides to its children\. This only affects changes that you made directly to the parent entity\. 
 If you revert overrides to the parent entity in **Entity Outliner**, this change also reverts overrides to its children\.
 
-## <a name="component-slice-override-all-entities"></a>
+##  {#component-slice-override-all-entities}
 
-## Forcing a Property Override<a name="component-slice-force-property-override"></a>
+## Forcing a Property Override {#component-slice-force-property-override}
 
 Unmodified properties inherit changes made to the source slice\. If you don't want a property to inherit changes from the source slice, you can create an override to the property\.
 

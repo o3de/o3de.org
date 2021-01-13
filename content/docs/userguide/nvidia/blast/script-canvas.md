@@ -2,7 +2,7 @@
 description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
 title: Script Canvas nodes for NVIDIA Blast
 ---
-# Script Canvas nodes for NVIDIA Blast<a name="nvidia-blast-script-canvas"></a>
+# Script Canvas nodes for NVIDIA Blast {#nvidia-blast-script-canvas}
 
 
 ****  
@@ -18,7 +18,7 @@ The NVIDIA Blast gem includes several **Script Canvas** nodes to script destruct
 + [BlastFamilyComponentNotificationBus nodes](#blast-family-request-bus-nodes)
 + [BlastFamilyDamageRequestBus nodes](#blast-family-damage-request-bus-nodes)
 
-## BlastFamilyComponentNotificationBus nodes<a name="blast-family-notification-bus-nodes"></a>
+## BlastFamilyComponentNotificationBus nodes {#blast-family-notification-bus-nodes}
 
 **On Actor Created**  
 Event notification that is invoked whenever an actor is created from a destroyed object used in the given entity\. 
@@ -26,12 +26,12 @@ Event notification that is invoked whenever an actor is created from a destroyed
 **On Actor Destroyed**  
 Notification that is invoked whenever an actor is destroyed from a destroyed object used in the given entity\. 
 
-## BlastFamilyComponentNotificationBus nodes<a name="blast-family-request-bus-nodes"></a>
+## BlastFamilyComponentNotificationBus nodes {#blast-family-request-bus-nodes}
 
 **Get Actors Data**  
 Obtains the actor data, such as entity id and whether actor is static or not, from a destructible object used in the given entity\. 
 
-## BlastFamilyDamageRequestBus nodes<a name="blast-family-damage-request-bus-nodes"></a>
+## BlastFamilyDamageRequestBus nodes {#blast-family-damage-request-bus-nodes}
 
 **Capsule Damage**  
 Full damage is dealt to all chunks and bonds that are not farther than **minRadius** from either **position0** or **position1**\. Linearly decreasing damage is applied if the distance is less than **maxRadius**\. 

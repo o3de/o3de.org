@@ -3,17 +3,17 @@ description: ' Serialize objects to JSON from the ALY; engine and load them back
   deserialization. '
 title: Serialize and deserialize JSON objects
 ---
-# Serialize and deserialize JSON objects<a name="serialization-json-serialize-deserialize"></a>
+# Serialize and deserialize JSON objects {#serialization-json-serialize-deserialize}
 
  Once a class has been [registered with a serialization context](/docs/userguide/programming/serialization/register-objects.md) objects of that class can be serialized and deserialized\. Objects are serialized to JSON with the `AZ::JsonSerialization::Store()` function, and deserialized from JSON with `AZ::JsonSerialization::Load()`\. 
 
  This article includes reference for these methods, examples of using serialization and deserialization, and how to interpret result codes from JSON the serializer\. For information on how specific types are serialized, see [Data types in serialized JSON](/docs/userguide/programming/serialization/json-data-types.md)\. 
 
-## Serialization<a name="serialization-json-serialize"></a>
+## Serialization {#serialization-json-serialize}
 
 Serialization into JSON is done with the `static AZ::JsonSerialization::Store()` method\. This method has several overloads, depending on how you want the object to be serialized and what information is available at the time of serialization\. By default, the global serialization context is used\.
 
-### `AZ::JsonSerialization::Store()` overloads<a name="serialization-json-serialize-store"></a>
+### `AZ::JsonSerialization::Store()` overloads {#serialization-json-serialize-store}
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const T& object, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`  
 + `output` – The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
@@ -38,7 +38,7 @@ Serialization into JSON is done with the `static AZ::JsonSerialization::Store()`
 + `objectType` \- The UUID registered with the Lumberyard runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\. 
 + `settings` – Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output provided `defaultObject` is not null\.
 
-### `AZ::JsonSerializerSettings`<a name="serialization-json-serialize-store-settings"></a>
+### `AZ::JsonSerializerSettings` {#serialization-json-serialize-store-settings}
 
 The behavior of the `AZ::JsonSerialization::Store()` methods can be controlled by setting an instance of `AZ::JsonSerializerSettings` as the `settings` argument\.
 
@@ -89,11 +89,11 @@ document.Accept(writer);
 AZ_TracePrintf("Serialization", "SerializableClass as Json:\n%s", buffer.GetString());
 ```
 
-## Deserialization<a name="serialization-json-deserialize"></a>
+## Deserialization {#serialization-json-deserialize}
 
 Deserialization from JSON into an object is done with the `static AZ::JsonSerialization::Load()` method\. This method has two overloads \- one for use when an instance of the deserialized object type is available, and the other using `void*` and RTTI information\.
 
-### `AZ::JsonSerialization::Load()` overloads<a name="serialization-json-deserialize-load"></a>
+### `AZ::JsonSerialization::Load()` overloads {#serialization-json-deserialize-load}
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Load(T& object, const rapidjson::Value& root, AZ::JsonDeserializerSettings settings = AZ::JsonDeserializerSettings{});`   
 + `object` \- The object to load data into\.
@@ -106,7 +106,7 @@ Deserialization from JSON into an object is done with the `static AZ::JsonSerial
 + `root` \- The root of the JSON tree to deserialize from\. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to the type identified by `objectType`\.
 + `settings` \- Configuration for how to treat deserialization\.
 
-### `AZ::JsonDeserializerSettings`<a name="serialization-json-deserialize-load-settings"></a>
+### `AZ::JsonDeserializerSettings` {#serialization-json-deserialize-load-settings}
 
 The behavior of the `AZ::JsonSerialization::Load()` methods can be controlled by setting an instance of `AZ::JsonDeserializerSettings` as the `settings` argument\.
 
@@ -143,7 +143,7 @@ if (result.GetProcessing() == AZ::JsonSerializationResult::Processing::Halted)
 }
 ```
 
-## Result codes<a name="serialization-json-result-codes"></a>
+## Result codes {#serialization-json-result-codes}
 
  The JSON serializer uses the `AZ::JsonSerializationResult::ResultCode` type to report errors, warnings, and successful serialization and deserialization of objects\. Result codes are broken down into three parts: task, processing result, and final outcome\. These values can be obtained with the `GetTask()`, `GetProcessing()`, and `GetOutcome()` methods respectively\. When checking results, you should first start with the processing to see if the task was successfully completed or if an error was encountered\. For non\-`Success` values, the task indicates where in processing the error was encountered, and the outcome reflects why the failure occurred\. 
 

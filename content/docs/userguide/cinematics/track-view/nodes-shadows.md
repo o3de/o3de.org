@@ -3,7 +3,7 @@ description: ' Use the Shadows Setup node in &ALYlong;''s &trackview-editor; to 
   or remove sun shadow maps over several frames. '
 title: Shadows Setup Node
 ---
-# Shadows Setup Node<a name="cinematics-track-view-nodes-shadows"></a>
+# Shadows Setup Node {#cinematics-track-view-nodes-shadows}
 
 You can use the **Shadows Setup** node to add or remove sun shadow maps over several frames in a sequence\.
 

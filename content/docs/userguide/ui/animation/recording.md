@@ -3,7 +3,7 @@ description: ' Use &ALY;''s Animation Editor to record a new animation after you
   created a new sequence. '
 title: Recording Animation Data
 ---
-# Recording Animation Data<a name="ui-animation-recording"></a>
+# Recording Animation Data {#ui-animation-recording}
 
 Recording animation typically involves three steps: 
 

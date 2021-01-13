@@ -2,7 +2,7 @@
 description: ' Use the Legacy Terrain level component to add level terrain in &ALYlong;. '
 title: Legacy Terrain level component
 ---
-# Legacy Terrain level component<a name="component-legacy-terrain"></a>
+# Legacy Terrain level component {#component-legacy-terrain}
 
 The **Legacy Terrain** level component enables the legacy terrain system\. This component works as a switch\. When the **Legacy Terrain** level component is added to a level, terrain is displayed and can be edited\. When the **Legacy Terrain** level component is removed from the level, terrain is not displayed and cannot be edited\. Adding or removing the Legacy Terrain level component is a non\-destructive operation\. Existing terrain heightmap and texture data remains intact when the **Legacy Terrain** level component is removed from the level\. 
 
@@ -22,7 +22,7 @@ The terrain is displayed in the **Perspective** view\.
 **Note**  
 The **Legacy Terrain** level component has no properties because it is a switch that enables the legacy terrain system\. 
 
-## Resize legacy terrain<a name="resize-legacy-terrain"></a>
+## Resize legacy terrain {#resize-legacy-terrain}
 
 Terrain size is defined by a *heightmap*, which is a gray scale texture that contains elevation information, and a *meters per texel* property\. The meters per texel property sets the relationship between texels in the heightmap and the terrain size in world space\. A **1024** x **1024** heightmap with **1** meter per texel creates a terrain that's 1\.024 square kilometers in size\. Each texel in the heightmap defines one square meter of the terrain\. 
 
@@ -36,7 +36,7 @@ Terrain size is defined by a *heightmap*, which is a gray scale texture that con
 
 1. Choose from the lists to set the **Heightmap Resolution** and **Meters Per Texel** properties for the legacy terrain\. 
 
-## Generate a legacy terrain texture<a name="generate-legacy-terrain-texture"></a>
+## Generate a legacy terrain texture {#generate-legacy-terrain-texture}
 
 Terrain textures for the legacy terrain system are generated within Lumberyard Editor\. 
 
@@ -50,7 +50,7 @@ Terrain textures for the legacy terrain system are generated within Lumberyard E
 
 1. Select one of the **Texture Dimensions** options in the **Generate Terrain Texture** window and choose **OK**\. 
 
-## Use PhysX or legacy physics with legacy terrain<a name="legacy-terrain-and-physics"></a>
+## Use PhysX or legacy physics with legacy terrain {#legacy-terrain-and-physics}
 
 If your project uses legacy physics components, interactions between the terrain and physics entities will work without additional steps\. 
 

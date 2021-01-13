@@ -3,7 +3,7 @@ description: ' Keep these best practices in mind when you create your texture ma
   for normal lighting in &ALYlong;. '
 title: Normal Mapping Best Practices
 ---
-# Normal Mapping Best Practices<a name="mat-maps-normal-best-practices"></a>
+# Normal Mapping Best Practices {#mat-maps-normal-best-practices}
 
 To get the best results, use the following best practices when creating normal maps\.
 

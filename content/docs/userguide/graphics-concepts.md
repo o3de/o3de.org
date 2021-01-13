@@ -3,15 +3,15 @@ description: ' Learn the following primary concepts about working with &ALY;''s 
   tools. '
 title: Concepts
 ---
-# Concepts<a name="graphics-concepts"></a>
+# Concepts {#graphics-concepts}
 
-## Materials<a name="graphics-concepts-materials"></a>
+## Materials {#graphics-concepts-materials}
 
 A material has a set of properties that determines how its [surface](/docs/userguide/materials/surface-types.md) reacts to physical actions, other materials, and its environment\. For example, a metal surface is hard, doesn’t shatter, reacts to bullets by generating spark particles, and has a unique sound when struck\. Contrast this with a grass surface, which is soft, responds to wind, generates grass strands and dirt particles when hit, and sounds different than metal\.
 
 Within the definition of a material, you can also change its transparency \([opacity](/docs/userguide/materials/opacity.md)\) level, [color, specular reflections, glossiness, and glow](/docs/userguide/materials/color-lighting.md)\. [Textures](#graphics-concepts-textures) and [shaders](/docs/userguide/materials/shaders/intro.md) are parameters of a material\.
 
-## Textures<a name="graphics-concepts-textures"></a>
+## Textures {#graphics-concepts-textures}
 
 A texture is simply a 2D image\. This image file can be a digital photo or other image file created with Photoshop, paint programs, or other applications\.
 
@@ -43,6 +43,6 @@ Alpha mask used for decal entities\. To use, enable **Decal** under **Shader Gen
 Emittance  
 Multiplies the emissive color with RGB texture\. Emissive alpha mask is contained in alpha channel\.
 
-## Shaders<a name="graphics-concepts-shaders"></a>
+## Shaders {#graphics-concepts-shaders}
 
 [Shaders](/docs/userguide/materials/shaders/intro.md) use real\-world physical rules and properties to describe how incoming light interacts with objects\. This means that object materials look more convincing under different lighting conditions\. The two main types of shaders are metallic and nonmetallic\. Examples of metallic materials include iron, gold, and copper\. Nonmetallic material examples include plastic, stone, wood, skin, and glass\. A shader can also mix metal and nonmetal materials\.

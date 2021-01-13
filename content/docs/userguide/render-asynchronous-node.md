@@ -4,7 +4,7 @@ description: ' Use the Render Asynchronous node in the &ALYlong; &script-canvas;
   changes. '
 title: Render Asynchronous
 ---
-# Render Asynchronous<a name="render-asynchronous-node"></a>
+# Render Asynchronous {#render-asynchronous-node}
 
 Schedules all procedural materials that have pending parameter changes to regenerate their texture maps\. This update is done asynchronously, so that the textures are updated within a few frames\. Use this node \(instead of the **[Render Synchronous](/docs/userguide/render-synchronous-node.md)** node\) for changes made during gameplay\.
 
@@ -14,7 +14,7 @@ If the **Force** parameter is disabled, the node renders only procedural materia
 
 When the **Force** parameter is enabled, the node is guaranteed to render the changes\. Use this option to make only occasional updates to the procedural material, or if you previously updated the procedural material every frame and you want a final update to guarantee that the update is not missed\.
 
-For an example script with the **Render Asynchronous** node, see the [example script](/docs/userguide/scripting/scriptcanvas/procedural-material-nodes.md#example-brick-wall-render-asynchronous-script)\.
+For an example script with the **Render Asynchronous** node, see the [example script](/docs/userguide/scripting/scriptcanvas/procedural-material-nodes#example-brick-wall-render-asynchronous-script)\.
 
 **Note**  
 If the **Set Input <Type>** nodes don't modify a procedural material, which means the procedural material doesn't have pending parameter changes, the **Render Asynchronous** node ignores the material\.
@@ -25,7 +25,7 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 
 ![\[RenderAsynchronous node schedule updates for pending changes for a procedural material.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-render-asynchronous-node.png)
 
-## Inputs<a name="render-asynchronous-node-input"></a>
+## Inputs {#render-asynchronous-node-input}
 
 
 ****  
@@ -35,7 +35,7 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 | In | Event | Triggers the node\. | 
 | Force | Boolean |  Forces the render to be scheduled\. Specify `false` for better performance on high frequency updates\.  | 
 
-## Outputs<a name="render-asynchronous-node-output"></a>
+## Outputs {#render-asynchronous-node-output}
 
 
 ****  

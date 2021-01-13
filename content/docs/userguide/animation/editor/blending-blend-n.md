@@ -3,7 +3,7 @@ description: ' Learn how to use the Blend N node in &ALYlong; &animation-editor;
   customize input weights when blending a number of input nodes. '
 title: Blend N Node
 ---
-# Blend N Node<a name="animation-editor-blending-blend-n"></a>
+# Blend N Node {#animation-editor-blending-blend-n}
 
 The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter to determine which inputs to use and their weights\. You can specify any type of parameter into the **Weight** input of a **Blend N** node\.
 

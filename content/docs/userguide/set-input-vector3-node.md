@@ -3,7 +3,7 @@ description: ' Use the Set Input Vector3 node in the &ALYlong; &script-canvas; e
   to set the value of a procedural material input parameter as a Vector3. '
 title: Set Input Vector3
 ---
-# Set Input Vector3<a name="set-input-vector3-node"></a>
+# Set Input Vector3 {#set-input-vector3-node}
 
 Sets the value of an input parameter as a Vector3\. Use this node with the `Float3` and `Integer3` substance data types\. 
 
@@ -18,7 +18,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 
 ![\[SetInputVector3 sets the Vector3 value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector3-node.png)
 
-## Inputs<a name="set-input-vector3-node-input"></a>
+## Inputs {#set-input-vector3-node-input}
 
 
 ****  
@@ -30,7 +30,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 | Input Name | String | The name of the input parameter to set\. | 
 | Vector3 | Vector3 | The new value to apply\. | 
 
-## Outputs<a name="set-input-vector3-node-output"></a>
+## Outputs {#set-input-vector3-node-output}
 
 
 ****  

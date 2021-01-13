@@ -3,15 +3,15 @@ description: ' Use the UIScrollBarComponent to control scroll bar characteristic
   in &ALYlong;. '
 title: UIScrollBarComponent
 ---
-# UIScrollBarComponent<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent"></a>
+# UIScrollBarComponent {#lua-scripting-ces-api-ui-uiscrollbarcomponent}
 
 Controls scroll bar characteristics\.
 
-## UiScrollBarBus<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus"></a>
+## UiScrollBarBus {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus}
 
 Services messages for the `UiScrollBarComponent`\.
 
-### GetAutoFadeDelay<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getautofadedelay"></a>
+### GetAutoFadeDelay {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getautofadedelay}
 
 Returns the fade delay in seconds\.
 
@@ -23,7 +23,7 @@ Returns the fade delay in seconds\.
 float GetAutoFadeDelay()
 ```
 
-### GetAutoFadeSpeed<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getautofadespeed"></a>
+### GetAutoFadeSpeed {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getautofadespeed}
 
 Returns the fade speed in seconds\.
 
@@ -35,7 +35,7 @@ Returns the fade speed in seconds\.
 float GetAutoFadeSpeed()
 ```
 
-### GetHandleEntity<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-gethandleentity"></a>
+### GetHandleEntity {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-gethandleentity}
 
 Returns the handle entity\.
 
@@ -45,7 +45,7 @@ Returns the handle entity\.
 AZ::EntityId GetHandleEntity()
 ```
 
-### GetHandleSize<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-gethandlesize"></a>
+### GetHandleSize {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-gethandlesize}
 
 Returns the size of the handle relative to the scroll bar \(0 \- 1\)\.
 
@@ -55,7 +55,7 @@ Returns the size of the handle relative to the scroll bar \(0 \- 1\)\.
 float GetHandleSize()
 ```
 
-### GetMinHandlePixelSize<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getminhandlepixelsize"></a>
+### GetMinHandlePixelSize {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-getminhandlepixelsize}
 
 Returns the minimum size of the handle in pixels\.
 
@@ -65,7 +65,7 @@ Returns the minimum size of the handle in pixels\.
 float GetMinHandlePixelSize()
 ```
 
-### IsAutoFadeEnabled<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-isautofadeenabled"></a>
+### IsAutoFadeEnabled {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-isautofadeenabled}
 
 Returns whether auto fade is enabled\.
 
@@ -77,7 +77,7 @@ Returns whether auto fade is enabled\.
 bool IsAutoFadeEnabled()
 ```
 
-### SetAutoFadeDelay<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadedelay"></a>
+### SetAutoFadeDelay {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadedelay}
 
 Sets the fade delay in seconds\.
 
@@ -89,7 +89,7 @@ Sets the fade delay in seconds\.
 void SetAutoFadeDelay(float delay)
 ```
 
-### SetAutoFadeEnabled<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadeenabled"></a>
+### SetAutoFadeEnabled {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadeenabled}
 
 Sets whether auto fade is enabled\.
 
@@ -101,7 +101,7 @@ Sets whether auto fade is enabled\.
 void SetAutoFadeEnabled(bool isEnabled)
 ```
 
-### SetAutoFadeSpeed<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadespeed"></a>
+### SetAutoFadeSpeed {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setautofadespeed}
 
 Sets the fade speed in seconds\.
 
@@ -113,7 +113,7 @@ Sets the fade speed in seconds\.
 void SetAutoFadeSpeed(float speed)
 ```
 
-### SetHandleEntity<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-sethandleentity"></a>
+### SetHandleEntity {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-sethandleentity}
 
 Sets the handle entity\.
 
@@ -123,7 +123,7 @@ Sets the handle entity\.
 void SetHandleEntity(AZ::EntityId entityId)
 ```
 
-### SetHandleSize<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-sethandlesize"></a>
+### SetHandleSize {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-sethandlesize}
 
 Sets the size of the handle relative to the scroll bar \(0 \- 1\)\.
 
@@ -133,7 +133,7 @@ Sets the size of the handle relative to the scroll bar \(0 \- 1\)\.
 void SetHandleSize(float size)
 ```
 
-### SetMinHandlePixelSize<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setminhandlepixelsize"></a>
+### SetMinHandlePixelSize {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollbarbus-setminhandlepixelsize}
 
 Sets the minimum size of the handle in pixels\.
 
@@ -143,11 +143,11 @@ Sets the minimum size of the handle in pixels\.
 void SetMinHandlePixelSize(float size)
 ```
 
-## UiScrollerBus<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus"></a>
+## UiScrollerBus {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus}
 
 Services scrolling for the `UiScrollBarComponent`\.
 
-### GetOrientation<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getorientation"></a>
+### GetOrientation {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getorientation}
 
 Returns the orientation of the scroller\.
 
@@ -167,7 +167,7 @@ enum eUiScrollerOrientation
     };
 ```
 
-### GetValue<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvalue"></a>
+### GetValue {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvalue}
 
 Returns the current value for the scroller \(0 \- 1\)\.
 
@@ -177,7 +177,7 @@ Returns the current value for the scroller \(0 \- 1\)\.
 float GetValue()
 ```
 
-### GetValueChangedActionName<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvaluechangedactionname"></a>
+### GetValueChangedActionName {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvaluechangedactionname}
 
 Returns the name of the action triggered when the value has changed\.
 
@@ -187,7 +187,7 @@ Returns the name of the action triggered when the value has changed\.
 const AZStd::string& GetValueChangedActionName() 
 ```
 
-### GetValueChangingActionName<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvaluechangingactionname"></a>
+### GetValueChangingActionName {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvaluechangingactionname}
 
 Returns the name of the action triggered while the value is changing\.
 
@@ -197,7 +197,7 @@ Returns the name of the action triggered while the value is changing\.
 AZStd::string& GetValueChangingActionName() 
 ```
 
-### SetOrientation<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setorientation"></a>
+### SetOrientation {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setorientation}
 
 Sets the orientation of the scroller\.
 
@@ -209,7 +209,7 @@ SetOrientation(eUiScrollerOrientation orientation)
 
 For possible values for `eUiScrollerOrientation`, see [GetOrientation](#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getorientation)\.
 
-### SetValue<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvalue"></a>
+### SetValue {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvalue}
 
 Sets the value of the scroller \(0 \- 1\)\.
 
@@ -219,7 +219,7 @@ Sets the value of the scroller \(0 \- 1\)\.
 void SetValue(float value)
 ```
 
-### SetValueChangedActionName<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvaluechangedactionname"></a>
+### SetValueChangedActionName {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvaluechangedactionname}
 
 Sets the action triggered when the value has changed\.
 
@@ -229,7 +229,7 @@ Sets the action triggered when the value has changed\.
 void SetValueChangedActionName(const AZStd::string& actionName)
 ```
 
-### SetValueChangingActionName<a name="lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvaluechangingactionname"></a>
+### SetValueChangingActionName {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setvaluechangingactionname}
 
 Sets the name of the action triggered while the value is changing\.
 

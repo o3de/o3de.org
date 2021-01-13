@@ -2,7 +2,7 @@
 description: ' Use &COG; identity pools to provide players with unique identities. '
 title: Player Identity
 ---
-# Player Identity<a name="cloud-canvas-rm-security-player-identity"></a>
+# Player Identity {#cloud-canvas-rm-security-player-identity}
 
 A Lumberyard cloud\-connected game must use AWS credentials that grant the desired access when calling AWS APIs \(using either the C\+\+ AWS SDK or the AWS flow nodes\)\. Cloud Canvas uses an [Amazon Cognito identity pool](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) to get these credentials\.
 
@@ -14,7 +14,7 @@ Authenticated identities are associated with the identity of an player as determ
 
 Cloud Canvas supports both anonymous \(unauthenticated\) and authenticated player identities\. The Player Account Cloud Gem is the easiest way to add authentication\. Authenticated identity support for other providers is more complex and requires additional setup and coding\.
 
-## Anonymous \(Unauthenticated\) Player Login<a name="cloud-canvas-anonymous-unauthenticated-player-login"></a>
+## Anonymous \(Unauthenticated\) Player Login {#cloud-canvas-anonymous-unauthenticated-player-login}
 
 In Lumberyard version 1\.11, the identity system that previously existed in an LmbrAWS CryEngine module \(`\dev\Code\CryEngine\CryCommon\LmbrAWS`\) has been converted into a `CloudCanvasPlayerIdentityComponent` \(`\dev\Gems\CloudGemFramework\vN\Code\Source\PlayerIdentity.*`\)\. This component is implemented as a required system component from the CloudGemFramework Gem\. The Cloud Canvas client configuration system is automatically initialized by the following call:
 
@@ -24,7 +24,7 @@ EBUS_EVENT_RESULT(appliedConfiguration, CloudGemFramework::CloudCanvasPlayerIden
 
 Alternatively, you can use a Cloud Canvas `(AWS):Configuration:ApplyConfiguration` flow node\. An existing anonymous identity is loaded from the local identities cache\. If an anonymous identity is not found in the cache, a new identity is acquired from the pool\. The identity cache is stored in an `.aws/.identities` file in the user's home directory\.
 
-## Authenticated Player Login<a name="cloud-canvas-authenticated-player-login"></a>
+## Authenticated Player Login {#cloud-canvas-authenticated-player-login}
 
 In order to understand how to use Cloud Canvas to implement authenticated player identities for your game, you must be familiar with Amazon Cognito's Enhanced \(Simplified\) Authflow\. For information, see the article [Authentication Flow](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-authentication-flow.html) in the [Amazon Cognito Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)\.
 
@@ -46,6 +46,6 @@ The code that implements the authenticated login flow can be found in the `\dev\
 
    
 
-### Configuring a Cognito Identity Provider \(Cognito User Pool\)<a name="cloud-canvas-rm-security-player-cognito-user-pool"></a>
+### Configuring a Cognito Identity Provider \(Cognito User Pool\) {#cloud-canvas-rm-security-player-cognito-user-pool}
 
-Cloud Canvas provides the [Custom::CognitoUserPool](/docs/userguide/gems/cloud-canvas/custom-resources.md#cloud-canvas-custom-resources-cognito-identity-pool) resource for adding the Amazon Cognito user pools and linking them to a Amazon Cognito identity pool\. The [Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account.md) uses this custom resource\. It also provides an EBus interface so that you can work with the user pool and the sample level that has an in\-game menu\.
+Cloud Canvas provides the [Custom::CognitoUserPool](/docs/userguide/gems/cloud-canvas/custom-resources#cloud-canvas-custom-resources-cognito-identity-pool) resource for adding the Amazon Cognito user pools and linking them to a Amazon Cognito identity pool\. The [Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account.md) uses this custom resource\. It also provides an EBus interface so that you can work with the user pool and the sample level that has an in\-game menu\.

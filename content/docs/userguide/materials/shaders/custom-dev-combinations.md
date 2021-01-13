@@ -2,7 +2,7 @@
 description: ' Generate shader combinations for &ALYlong;. '
 title: Generating Shader Combinations
 ---
-# Generating Shader Combinations<a name="mat-shaders-custom-dev-combinations"></a>
+# Generating Shader Combinations {#mat-shaders-custom-dev-combinations}
 
 Make sure that the [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md) has been set up successfully first\. The remote shader compiler should be accessible by everyone playing the game, especially QA\. Try to have everyone who is working on a certain game project share the same remote shader compiler\.
 

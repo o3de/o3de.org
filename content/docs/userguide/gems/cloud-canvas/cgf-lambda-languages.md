@@ -2,7 +2,7 @@
 description: ' Create &LAM; deployment packages to use with &cloud; in &ALYlong;. '
 title: '&LAM; Language Support in the Cloud Gem Framework'
 ---
-# Lambda Language Support in the Cloud Gem Framework<a name="cloud-canvas-cgf-lambda-languages"></a>
+# Lambda Language Support in the Cloud Gem Framework {#cloud-canvas-cgf-lambda-languages}
 
 Lumberyard has support for Lambda deployment packages that include Lambda functions written in Node\.js, Python 3\.7 or later, Java, Go, or the \.NET framework\.
 
@@ -102,7 +102,7 @@ Lumberyard has support for Lambda deployment packages that include Lambda functi
 
 1. Put the package file \(for example, `DotnetLambda.zip`\) in the `lumberyard_version\dev\Gems\gem_directory\vN\AWS\lambda-code\` directory\.
 
-## Notes<a name="cloud-canvas-cgf-lambda-languages-notes"></a>
+## Notes {#cloud-canvas-cgf-lambda-languages-notes}
 
 When you create non\-Python Lambda functions for use with Cloud Canvas, note the following:
 + The Visual Studio tools for \.NET Lambda functions do not generate a Lambda function deployment package automatically\. For steps, see [\.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html) in the *AWS Lambda Developer Guide*\.
@@ -111,15 +111,15 @@ When you create non\-Python Lambda functions for use with Cloud Canvas, note the
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-cgf-lambda-languages.html)
 
-## Examples and Sample Level<a name="cloud-canvas-cgf-lambda-languages-examples-and-sample-level"></a>
+## Examples and Sample Level {#cloud-canvas-cgf-lambda-languages-examples-and-sample-level}
 
 The AWS Lambda Language Demo cloud gem included with Lumberyard contains skeleton "Hello World" Lambda function examples in Python, Java, \.NET, Go, and node\.js\. You can find the relevant files in the `lumberyard_version\dev\Gems\AWSLambdaLanguageDemo\v1\AWS\lambda-code` directory\.
 
-### Running the Sample Level<a name="cloud-canvas-cgf-lambda-languages-running-the-sample-level"></a>
+### Running the Sample Level {#cloud-canvas-cgf-lambda-languages-running-the-sample-level}
 
 The CloudGemSamples project cloud gem includes a sample level named LambdaLanguage that shows Cloud Canvas support for Lambda languages\.
 
-#### Prerequisites<a name="cloud-canvas-cgf-lambda-languages-sample-level-prerequisites"></a>
+#### Prerequisites {#cloud-canvas-cgf-lambda-languages-sample-level-prerequisites}
 
 Running the sample requires the following prerequisites:
 + You are using Lumberyard version 1\.16 or later\.
@@ -139,7 +139,7 @@ Running the sample requires the following prerequisites:
 1. Click **Play Game** or press **Ctrl\+G** to switch to gameplay mode\. After a short pause, a message reports success, as seen in the following image\.  
 ![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
 
-### Additional Resources<a name="cloud-canvas-cgf-lambda-languages-additional-resources"></a>
+### Additional Resources {#cloud-canvas-cgf-lambda-languages-additional-resources}
 
 For information on how the sample applications were built, see the following topics in the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/)\.
 

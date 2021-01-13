@@ -2,7 +2,7 @@
 description: ' Export actors from .fbx files with FBX Settings to &ALYlong;. '
 title: FBX Settings actor export
 ---
-# FBX Settings actor export<a name="fbx-actor-export"></a>
+# FBX Settings actor export {#fbx-actor-export}
 
 
 ****  
@@ -13,7 +13,7 @@ title: FBX Settings actor export
 
 **Actors** contain geometry that has a skeleton and skinning data\. An **Actor** is not necessarily a character\. Assets that use a skeleton and skinning data to drive animation such as weapons, machines, and foliage, are **Actors**\. **Actors** can be animated through keyframe animation imported as **Motions** or through PhysX simulation and other dynamic solvers such as **Touch Bending**\. 
 
-## Export an actor<a name="fbx-exporting-actors"></a>
+## Export an actor {#fbx-exporting-actors}
 
 1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\. 
 

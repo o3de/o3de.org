@@ -4,7 +4,7 @@ description: ' Use the Process Life Management gem to respond to various applica
   display a modal splash screen, and so on. '
 title: Process Life Management Gem
 ---
-# Process Life Management Gem<a name="gems-system-gem-process-life-mgmt"></a>
+# Process Life Management Gem {#gems-system-gem-process-life-mgmt}
 
 The Process Life Management gem demonstrates how you can respond to various application lifecycle events dispatched by the Lumberyard engine, in order to pause your game, display a modal splash screen, or anything else you may need to do when your application loses/regains focus\.
 

@@ -3,11 +3,11 @@ description: ' Use the sky shader to render performance-optimized static sky eff
   in &ALYlong;. '
 title: Sky Shader
 ---
-# Sky Shader<a name="shader-ref-sky"></a>
+# Sky Shader {#shader-ref-sky}
 
 The Sky shader is used to render performance\-optimized static sky \(SkyBox\) effects\.
 
-## Shader Parameters<a name="shader-ref-sky-shader-parameters"></a>
+## Shader Parameters {#shader-ref-sky-shader-parameters}
 
 **Indirect bounce color**  
 Adds an extra color tint to the reflection\.  

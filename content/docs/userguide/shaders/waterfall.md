@@ -2,11 +2,11 @@
 description: ' Use the waterfall shader for waterfall effects in &ALYlong;. '
 title: Waterfall Shader
 ---
-# Waterfall Shader<a name="shader-ref-waterfall"></a>
+# Waterfall Shader {#shader-ref-waterfall}
 
 The Waterfall shader is used for waterfalls exclusively, and provides layering, tiling, and motion effects\.
 
-## Shader Parameters<a name="shader-ref-waterfall-shader-parameters"></a>
+## Shader Parameters {#shader-ref-waterfall-shader-parameters}
 
 **Alpha blend multiplier**  
 Applies a multiplier amount for alpha blending\.  
@@ -60,7 +60,7 @@ Default value: 0\.01
 Applies a multiplier amount for sun shading\. **Sun shading** shader generation parameter must be enabled first\.  
 Default value: 1
 
-## Shader Generation Parameters<a name="shader-ref-waterfall-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-waterfall-shader-generation-parameters}
 
 **Environment map**  
 Enables the use of an environment map as a separate texture\.

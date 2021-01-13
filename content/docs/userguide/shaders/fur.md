@@ -2,7 +2,7 @@
 description: ' Use the Fur shader for real-time fur rendering in &ALYlong;. '
 title: Fur Shader
 ---
-# Fur Shader<a name="shader-ref-fur"></a>
+# Fur Shader {#shader-ref-fur}
 
 Lumberyard's **Fur** shader renders fur in real time\. You can apply this shader to any mesh and adjust its properties to customize the fur's appearance and behavior\.
 

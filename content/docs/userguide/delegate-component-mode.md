@@ -2,7 +2,7 @@
 description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
 title: 'Step 2: Add a ComponentModeDelegate'
 ---
-# Step 2: Add a ComponentModeDelegate<a name="delegate-component-mode"></a>
+# Step 2: Add a ComponentModeDelegate {#delegate-component-mode}
 
 To add this feature to the **Point Light** component, you must update the component so that it can detect the intent to begin editing a component and manage the creation of a Component Mode\. To do so, add a new type called a `ComponentModeDelegate` to your existing component\.
 
@@ -47,7 +47,7 @@ To add this feature to the **Point Light** component, you must update the compon
    ```
 
 ------
-#### [ After ]<a name="new-component-mode-example"></a>
+#### [ After ] {#new-component-mode-example}
 
    See the following code changes\.
 

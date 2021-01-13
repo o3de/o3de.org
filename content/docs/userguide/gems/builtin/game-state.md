@@ -2,7 +2,7 @@
 description: ' Use the GameState gem to manage the states in your &ALYlong; game. '
 title: GameState Gem
 ---
-# GameState Gem<a name="gems-system-gem-game-state"></a>
+# GameState Gem {#gems-system-gem-game-state}
 
 The GameState gem helps you manage and determine, at a high level, the state that the game is in\. Because the GameState gem uses a stack to manage game states, returning to a previous state is straightforward\.
 
@@ -13,7 +13,7 @@ For information about sample game states and enabling the GameState Samples gem,
 **Note**  
 For a sample implementation of game states, see the [GameState Samples Gem](/docs/userguide/gems/builtin/game-state-samples.md)\. The GameState Samples Gem depends on the GameState gem\. You can customize the game states in the GameState Samples gem to meet the requirements of your game and communicate with your game code\.
 
-## Examining the Code<a name="gems-system-gem-game-state-examining-the-code"></a>
+## Examining the Code {#gems-system-gem-game-state-examining-the-code}
 
 The GameState gem manages a stack \(or [pushdown automaton](https://en.wikipedia.org/wiki/Pushdown_automaton)\) of abstract game states\. The GameState gem includes the following code members:
 + `IGameState` – Abstract interface that all concrete game state classes must be derived from\.
@@ -21,7 +21,7 @@ The GameState gem manages a stack \(or [pushdown automaton](https://en.wikipedia
 + `GameStateNotifications` – EBus interface that other systems use to listen for events related to the game state\.
 + `GameStateSystemComponent` – Implements the `GameStateRequestBus` interface and sends events over the `GameStateNotificationBus`\.
 
-### IGameState<a name="gems-system-gem-game-state-igamestate-interface"></a>
+### IGameState {#gems-system-gem-game-state-igamestate-interface}
 
 `IGameState` is the abstract interface that all concrete game state classes must be derived from\. The interface defines methods that track changes in game state, as seen in the following excerpt from the source code at
 
@@ -44,7 +44,7 @@ virtual void OnExit() {};
 virtual void OnUpdate() {};
 ```
 
-### GameStateRequests<a name="gems-system-gem-game-state-gamestaterequests-ebus"></a>
+### GameStateRequests {#gems-system-gem-game-state-gamestaterequests-ebus}
 
 The methods in the `GameStateRequests` EBus perform essential tasks like creating, pushing, and popping a game state, or getting the active game state or active game state type\. For the complete source code, see the `lumberyard_version\dev\Gems\GameState\Code\Include\GameState\GameStateRequestBus.h` file\.
 
@@ -123,7 +123,7 @@ virtual bool ReplaceActiveGameState(AZStd::shared_ptr<IGameState> newGameState) 
 virtual bool DoesStackContainGameStateOfTypeId(const AZ::TypeId& gameStateTypeId) = 0;
 ```
 
-### GameStateNotifications<a name="gems-system-gem-game-state-gamestatenotifications-ebus"></a>
+### GameStateNotifications {#gems-system-gem-game-state-gamestatenotifications-ebus}
 
 The `GameStateNotificationBus` `OnActiveGameStateChanged` method is called when a transition occurs between a prior game state and a newer game state\. For the source code, see the `lumberyard_version\dev\Gems\GameState\Code\Include\GameState\GameStateNotificationBus.h` file\.
 

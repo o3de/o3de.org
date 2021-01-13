@@ -3,7 +3,7 @@ description: ' Create a color chart texture file to apply color grading changes 
   your game in &ALYlong;. '
 title: Creating a Color Chart
 ---
-# Creating a Color Chart<a name="creating-a-color-chart-for-lumberyard"></a>
+# Creating a Color Chart {#creating-a-color-chart-for-lumberyard}
 
 You can create a color chart to apply color grading to your project\. A color chart uses a reference image that can be an example image from your game or an image that contains a wide variety of color\. You then modify the image, such as changing the hue, saturation, brightness, and so on\. 
 
@@ -65,7 +65,7 @@ For more information, see [Using the Resource Compiler Image Tool](/docs/usergui
 
 1. Repeat steps 5 and 6 for all your color chart images\.
 
-1. In the **Script Canvas** editor, create a script\. In the **[Set Color Chart](/docs/userguide/set-color-chart-node.md)** nodes, specify the path to the color chart files that you created, and the **Fade Time**\.<a name="color-chart-script-example"></a>  
+1. In the **Script Canvas** editor, create a script\. In the **[Set Color Chart](/docs/userguide/set-color-chart-node.md)** nodes, specify the path to the color chart files that you created, and the **Fade Time**\. {#color-chart-script-example}  
 **Example Set Color Chart Script**  
 
    The example script does the following:

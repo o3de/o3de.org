@@ -2,7 +2,7 @@
 description: null
 title: Creating Script Events in &script-canvas;
 ---
-# Creating Script Events in Script Canvas<a name="script-events-creating-in-script-canvas"></a>
+# Creating Script Events in Script Canvas {#script-events-creating-in-script-canvas}
 
 In Lumberyard Editor, you can create script events by using the Asset Editor\.
 

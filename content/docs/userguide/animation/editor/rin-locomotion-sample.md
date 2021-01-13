@@ -3,7 +3,7 @@ description: ' Use the Rin Locomotion sample level to learn how the &ALY; &anima
   uses actors, motion sets, and animation graphs to control character behavior. '
 title: Advanced_RinLocomotion Sample
 ---
-# Advanced\_RinLocomotion Sample<a name="animation-editor-rin-locomotion-sample"></a>
+# Advanced\_RinLocomotion Sample {#animation-editor-rin-locomotion-sample}
 
 
 ****  

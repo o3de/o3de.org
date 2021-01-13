@@ -3,7 +3,7 @@ description: ' Use multiple skin attachments for an Actor component in &ALYlong;
   create interchangeable parts of your character, such as a hat and belt. '
 title: Using Multiple Skin Attachments for an Actor
 ---
-# Using Multiple Skin Attachments for an Actor<a name="component-actor-multiple-skin"></a>
+# Using Multiple Skin Attachments for an Actor {#component-actor-multiple-skin}
 
 You can use multiple skin attachments on an actor or character to add interchangeable parts such as a hat or belt\. The meshes for these additional attachments can be a part of a single FBX file or separated into multiple FBX files\. When deciding whether to use a single FBX file or multiple FBX files, consider the following:
 
@@ -27,7 +27,7 @@ For more information, see [Customize FBX asset export with FBX Settings](/docs/u
 
 To download the assets used in the following sections, see [Amazon Lumberyard Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the Lumberyard characters file\.
 
-## Using a Single FBX File<a name="component-actor-single-fbx"></a>
+## Using a Single FBX File {#component-actor-single-fbx}
 
 When you use a single FBX file embedded with multiple meshes, you must create an actor for each attachment\. For example, a cowboy character would be an actor, while his interchangeable hat and belt must each be added as additional actors\.
 
@@ -57,7 +57,7 @@ When you use a single FBX file embedded with multiple meshes, you must create an
    In the **Asset Browser**, a single FBX file contains the primary actor and the attachments\.  
 ![\[View actor files in the Asset Browser.\]](/images/userguide/component/component-actor-component-entity-setup-1.png)
 
-## Using Multiple FBX Files<a name="component-actor-multiple-fbx"></a>
+## Using Multiple FBX Files {#component-actor-multiple-fbx}
 
 When you use an FBX file for each skin attachment, Asset Processor automatically generates an **Actor** file for each FBX file\. Modify the **FBX Settings** tool only if you want to change the default Asset Processor behavior\.
 

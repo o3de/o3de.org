@@ -2,12 +2,12 @@
 description: ' Learn about the resources in the Cloud Gem Framework in &ALYlong;. '
 title: Resources
 ---
-# Resources<a name="cloud-canvas-cgf-service-api-resources"></a>
+# Resources {#cloud-canvas-cgf-service-api-resources}
 
-A cloud gem's service API is implemented based on the resources that are defined in the cloud gem's [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template) file\. The following are the key resources for a cloud gem:
+A cloud gem's service API is implemented based on the resources that are defined in the cloud gem's [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template) file\. The following are the key resources for a cloud gem:
 + `ServiceAPI` – An AWS CloudFormation custom resource provided by the Cloud Gem Framework\. The handler for this resource configures API Gateway to use the cloud gem's `swagger.json` file\.
 + `ServiceLambda` – An AWS Lambda function that implements the cloud gem's functionality\.
-+ `ServiceLambdaConfiguration` – An AWS CloudFormation custom resource provided by Cloud Canvas Resource Manager that [configures](/docs/userguide/gems/cloud-canvas/custom-resources.md#cloud-canvas-custom-resources-lambda-configuration) the `ServiceLambda` resource\.
++ `ServiceLambdaConfiguration` – An AWS CloudFormation custom resource provided by Cloud Canvas Resource Manager that [configures](/docs/userguide/gems/cloud-canvas/custom-resources#cloud-canvas-custom-resources-lambda-configuration) the `ServiceLambda` resource\.
 
 To add definitions for these resources to a `resource-template.json` file, enter the following command\.
 
@@ -21,7 +21,7 @@ In addition to adding the resources mentioned, the `add-service-api-resources` c
 
 To use the service API resources that you add to a `resource-template.json` file, you must upload those resources to AWS\. To upload them, you can use the `lmbr_aws resource‑group upload` command, the `lmbr_aws deployment upload` command, or click **Upload Resources** in the **Resource Manager** feature in Lumberyard Editor\.
 
-## Custom::ServiceApi Resource<a name="cloud-canvas-cgf-service-api-resources-customserviceapi"></a>
+## Custom::ServiceApi Resource {#cloud-canvas-cgf-service-api-resources-customserviceapi}
 
 The handler for the `Custom::ServiceApi` AWS CloudFormation resource is provided by the Cloud Gem Framework\. This handler creates, updates, and deletes API Gateway REST API, operation, deployment, and stage resources as needed\.
 

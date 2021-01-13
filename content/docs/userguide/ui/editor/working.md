@@ -3,7 +3,7 @@ description: Learn how to add and delete components, reference UI elements as co
   properties, and manage components in &ALYlong;'s &ui-canvas-editor; .
 title: Working with UI Components
 ---
-# Working with UI Components<a name="ui-editor-working"></a>
+# Working with UI Components {#ui-editor-working}
 
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components\.
 
@@ -12,7 +12,7 @@ You can use the **UI Editor** to add and delete components, create references to
 + [Referencing UI Elements](#ui-editor-referencing-ui-elements)
 + [Managing UI Components](#ui-editor-managing)
 
-## Adding or Deleting Components<a name="ui-editor-add-delete"></a>
+## Adding or Deleting Components {#ui-editor-add-delete}
 
 You can add or delete components in the [UI Editor](/docs/userguide/ui/editor/using.md)\.
 
@@ -36,7 +36,7 @@ You can add or delete components in the [UI Editor](/docs/userguide/ui/editor/us
 
 1. In the **Properties** panel, right\-click the component and click **Remove**\.
 
-## Referencing UI Elements<a name="ui-editor-referencing-ui-elements"></a>
+## Referencing UI Elements {#ui-editor-referencing-ui-elements}
 
 You can specify a UI element for some properties on components\. For example, you can specify UI elements for **Lua Script** properties\. 
 
@@ -64,7 +64,7 @@ After you specify a UI element as a property, you can select that element from t
 **To select a UI element from the **Properties** panel**
 + In the **Properties** panel, double\-click the element name\.
 
-## Managing UI Components<a name="ui-editor-managing"></a>
+## Managing UI Components {#ui-editor-managing}
 
 You can use the context menu in the **Properties** panel to add, remove, cut, copy, and paste components\.
 

@@ -3,7 +3,7 @@ description: ' Use procedural material nodes in the &ALYlong; &script-canvas; ed
   for scripting. '
 title: Procedural Material Nodes
 ---
-# Procedural Material Nodes<a name="script-canvas-procedural-material-nodes"></a>
+# Procedural Material Nodes {#script-canvas-procedural-material-nodes}
 
 Lumberyard supports [Allegorithmic Substance](https://www.allegorithmic.com/) for working with procedurally\-generated materials\. Procedural materials are materials in which you can modify their textures during runtime\.
 
@@ -31,7 +31,7 @@ To modify these input parameters during runtime, specify the parameter name and 
    After you specify the changes that you want, use the **[Render Asynchronous](/docs/userguide/render-asynchronous-node.md)** or **[Render Synchronous](/docs/userguide/render-synchronous-node.md)** node to update the procedural material's texture\. The render node applies to all procedural materials in which their parameters have changed, so at most, call a render node once per frame\.
 
 **Example**  
-The Allegorithmic Substance gem includes a sample procedural material named `brickWall_04`\. You can import this file into Lumberyard and write a script that dynamically changes the **Age** and **Mortar** input parameter values, so that the wall appears to erode over time\. <a name="example-brick-wall-render-asynchronous-script"></a>
+The Allegorithmic Substance gem includes a sample procedural material named `brickWall_04`\. You can import this file into Lumberyard and write a script that dynamically changes the **Age** and **Mortar** input parameter values, so that the wall appears to erode over time\.  {#example-brick-wall-render-asynchronous-script}
 
 See the following example script to enable this effect\.
 

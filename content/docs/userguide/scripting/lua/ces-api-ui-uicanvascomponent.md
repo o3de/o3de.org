@@ -2,15 +2,15 @@
 description: ' Use the UICanvasComponent in &ALYlong; to control UI canvases and animation. '
 title: UICanvasComponent
 ---
-# UICanvasComponent<a name="lua-scripting-ces-api-ui-uicanvascomponent"></a>
+# UICanvasComponent {#lua-scripting-ces-api-ui-uicanvascomponent}
 
 Contains buses and notification buses for UI canvas and animation\.
 
-## UiCanvasBus<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus"></a>
+## UiCanvasBus {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus}
 
 Services messages for the `UiCanvasComponent`\.
 
-### FindElementByName<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-findelementbyname"></a>
+### FindElementByName {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-findelementbyname}
 
 Returns the entity ID of the first UI element in this canvas that has the specified name\.
 
@@ -20,7 +20,7 @@ Returns the entity ID of the first UI element in this canvas that has the specif
 AZ::EntityId FindElementByName(const AZStd::string& name)
 ```
 
-### ForceEnterInputEventOnInteractable<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-forceenterinputeventoninteractable"></a>
+### ForceEnterInputEventOnInteractable {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-forceenterinputeventoninteractable}
 
 Forces a specified interactive element to receive an Enter press/release navigation event\. This is useful for automated testing using script, such as simulating a button click\.
 
@@ -30,7 +30,7 @@ Forces a specified interactive element to receive an Enter press/release navigat
 void ForceEnterInputEventOnInteractable(AZ::EntityId entityId)
 ```
 
-### ForceHoverInteractable<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-forcehoverinteractable"></a>
+### ForceHoverInteractable {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-forcehoverinteractable}
 
 Forces a specified interactive element to receive the hover\.
 
@@ -40,7 +40,7 @@ Forces a specified interactive element to receive the hover\.
 void ForceHoverInteractable(AZ::EntityId entityId) 
 ```
 
-### GetChildElement<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getchildelement"></a>
+### GetChildElement {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getchildelement}
 
 Returns the entity ID of the child element that has the specified index\.
 
@@ -50,7 +50,7 @@ Returns the entity ID of the child element that has the specified index\.
 AZ::EntityId GetChildElement(int index)
 ```
 
-### GetChildElements<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getchildelements"></a>
+### GetChildElements {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getchildelements}
 
 Returns a list of entity IDs of the child elements of the canvas\.
 
@@ -60,7 +60,7 @@ Returns a list of entity IDs of the child elements of the canvas\.
 AZStd::vector<AZ::EntityId> GetChildElements() 
 ```
 
-### GetDrawOrder<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getdraworder"></a>
+### GetDrawOrder {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getdraworder}
 
 Returns the draw order on the canvas\.
 
@@ -70,7 +70,7 @@ Returns the draw order on the canvas\.
 int GetDrawOrder()
 ```
 
-### GetEnabled<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getenabled"></a>
+### GetEnabled {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getenabled}
 
 Returns the enabled flag of the canvas\. True if the canvas is enabled; false otherwise\. Enabled canvases are updated and rendered for each frame\.
 
@@ -80,7 +80,7 @@ Returns the enabled flag of the canvas\. True if the canvas is enabled; false ot
 bool GetEnabled()
 ```
 
-### GetHoverInteractable<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-gethoverinteractable"></a>
+### GetHoverInteractable {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-gethoverinteractable}
 
 Returns the entity ID of the interactive element that has the hover\.
 
@@ -90,7 +90,7 @@ Returns the entity ID of the interactive element that has the hover\.
 AZ::EntityId GetHoverInteractable()
 ```
 
-### GetIsNavigationSupported<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getisnavigationsupported"></a>
+### GetIsNavigationSupported {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getisnavigationsupported}
 
 Returns true if the canvas accepts navigation input; false otherwise\.
 
@@ -100,7 +100,7 @@ Returns true if the canvas accepts navigation input; false otherwise\.
 bool GetIsNavigationSupported()
 ```
 
-### GetIsPixelAligned<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getispixelaligned"></a>
+### GetIsPixelAligned {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getispixelaligned}
 
 Returns true if pixel alignment is enabled for this canvas; false otherwise\. If pixel alignment is enabled, then all corners of all elements are rounded to the nearest pixel when they are rendered\.
 
@@ -110,7 +110,7 @@ Returns true if pixel alignment is enabled for this canvas; false otherwise\. If
 bool GetIsPixelAligned()
 ```
 
-### GetIsRenderToTexture<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getisrendertotexture"></a>
+### GetIsRenderToTexture {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getisrendertotexture}
 
 Returns true if the canvas is rendered to a texture instead of the full screen; false otherwise\.
 
@@ -120,7 +120,7 @@ Returns true if the canvas is rendered to a texture instead of the full screen; 
 bool GetIsRenderToTexture()
 ```
 
-### GetKeepLoadedOnLevelUnload<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getkeeploadedonlevelunload"></a>
+### GetKeepLoadedOnLevelUnload {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getkeeploadedonlevelunload}
 
 Returns true if the canvas stays loaded when the level is unloaded; `false` otherwise\.
 
@@ -130,7 +130,7 @@ Returns true if the canvas stays loaded when the level is unloaded; `false` othe
 bool GetKeepLoadedOnLevelUnload()
 ```
 
-### GetNumChildElements<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getnumchildelements"></a>
+### GetNumChildElements {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getnumchildelements}
 
 Returns the number of child elements that the canvas has\.
 
@@ -140,7 +140,7 @@ Returns the number of child elements that the canvas has\.
 int GetNumChildElements()
 ```
 
-### GetRenderTargetName<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getrendertargetname"></a>
+### GetRenderTargetName {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getrendertargetname}
 
 Returns the name of the texture that is created when this canvas is rendered to a texture\.
 
@@ -150,7 +150,7 @@ Returns the name of the texture that is created when this canvas is rendered to 
 AZStd::string GetRenderTargetName()
 ```
 
-### GetTooltipDisplayElement<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-gettooltipdisplayelement"></a>
+### GetTooltipDisplayElement {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-gettooltipdisplayelement}
 
 Returns the entity ID of the tooltip element that is to be displayed when the pointer pauses on an interactable element\.
 
@@ -160,7 +160,7 @@ Returns the entity ID of the tooltip element that is to be displayed when the po
 AZ::EntityId GetTooltipDisplayElement()
 ```
 
-### RecomputeChangedLayouts<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-recomputechangedlayouts"></a>
+### RecomputeChangedLayouts {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-recomputechangedlayouts}
 
 Tells the layout manager for the canvas to recompute the layout\. This happens automatically every frame\. Occasionally a script modifies something that affects the layout \(such as the reparenting of an element\) and tries to query positions in the same frame\. In this case you can call `RecomputeChangedLayouts` to force an immediate recalculation of all layouts on the canvas that have been flagged for recomputing\.
 
@@ -170,7 +170,7 @@ Tells the layout manager for the canvas to recompute the layout\. This happens a
 void RecomputeChangedLayouts()
 ```
 
-### SetDrawOrder<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setdraworder"></a>
+### SetDrawOrder {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setdraworder}
 
 Sets the draw order on the canvas\.
 
@@ -180,7 +180,7 @@ Sets the draw order on the canvas\.
 void SetDrawOrder(int drawOrder)
 ```
 
-### SetEnabled<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setenabled"></a>
+### SetEnabled {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setenabled}
 
 Sets whether the canvas is enabled\. Enabled canvases are updated and rendered for each frame\. Specify true to enable the canvas, false to disable\.
 
@@ -190,7 +190,7 @@ Sets whether the canvas is enabled\. Enabled canvases are updated and rendered f
 void SetEnabled(bool enabled)
 ```
 
-### SetHoverInteractable<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-sethoverinteractable"></a>
+### SetHoverInteractable {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-sethoverinteractable}
 
 Sets the interactable element on the canvas on which the pointer has been paused\.
 
@@ -203,7 +203,7 @@ This action is done automatically, but in unusual situations it can be useful to
 void SetHoverInteractable(AZ::EntityId entityId)
 ```
 
-### SetIsNavigationSupported<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setisnavigationsupported"></a>
+### SetIsNavigationSupported {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setisnavigationsupported}
 
 Specify true to make the canvas accept navigation input; false otherwise\.
 
@@ -213,7 +213,7 @@ Specify true to make the canvas accept navigation input; false otherwise\.
 void SetIsNavigationSupported(bool isSupported) 
 ```
 
-### SetIsPixelAligned<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setispixelaligned"></a>
+### SetIsPixelAligned {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setispixelaligned}
 
 Specify true to enable pixel alignment for this canvas; false otherwise\.
 
@@ -223,7 +223,7 @@ Specify true to enable pixel alignment for this canvas; false otherwise\.
 void SetIsPixelAligned(bool isPixelAligned)
 ```
 
-### SetIsRenderToTexture<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setisrendertotexture"></a>
+### SetIsRenderToTexture {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setisrendertotexture}
 
 Sets whether the canvas is rendered to a texture instead of the full screen\. Specify true to render the canvas to a texture; false otherwise\.
 
@@ -233,7 +233,7 @@ Sets whether the canvas is rendered to a texture instead of the full screen\. Sp
 void SetIsRenderToTexture(bool isRenderToTexture) 
 ```
 
-### SetKeepLoadedOnLevelUnload<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setkeeploadedonlevelunload"></a>
+### SetKeepLoadedOnLevelUnload {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setkeeploadedonlevelunload}
 
 Sets whether the canvas stays loaded when the level is unloaded\. Specify true to keep the canvas loaded on level unload; false otherwise\.
 
@@ -243,7 +243,7 @@ Sets whether the canvas stays loaded when the level is unloaded\. Specify true t
 void SetKeepLoadedOnLevelUnload(bool keepLoaded) 
 ```
 
-### SetRenderTargetName<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setrendertargetname"></a>
+### SetRenderTargetName {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setrendertargetname}
 
 Sets the name of the texture that is created when this canvas is rendered to a texture\.
 
@@ -253,7 +253,7 @@ Sets the name of the texture that is created when this canvas is rendered to a t
 void SetRenderTargetName(const AZStd::string& name)
 ```
 
-### SetTooltipDisplayElement<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-settooltipdisplayelement"></a>
+### SetTooltipDisplayElement {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-settooltipdisplayelement}
 
 Sets the element that is to be displayed when the pointer pauses over an interactable element\.
 
@@ -263,11 +263,11 @@ Sets the element that is to be displayed when the pointer pauses over an interac
 void SetTooltipDisplayElement(AZ::EntityId entityId)
 ```
 
-## UiCanvasInputNotifications<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications"></a>
+## UiCanvasInputNotifications {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications}
 
 Services notifications for the `UiCanvasComponent`\.
 
-### OnCanvasEnterPressed<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasenterpressed"></a>
+### OnCanvasEnterPressed {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasenterpressed}
 
 Called when the “enter” key is pressed\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
 
@@ -277,7 +277,7 @@ Called when the “enter” key is pressed\. Sends the entity that was pressed o
 OnCanvasEnterPressed(AZ::EntityId entityId)
 ```
 
-### OnCanvasEnterReleased<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasenterreleased"></a>
+### OnCanvasEnterReleased {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasenterreleased}
 
 Called when the enter key is released\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
 
@@ -287,7 +287,7 @@ Called when the enter key is released\. Sends the entity that was pressed or an 
 OnCanvasEnterReleased(AZ::EntityId entityId)
 ```
 
-### OnCanvasHoverEnd<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvashoverend"></a>
+### OnCanvasHoverEnd {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvashoverend}
 
 Called when an element ends being hovered\.
 
@@ -297,7 +297,7 @@ Called when an element ends being hovered\.
 OnCanvasHoverEnd(AZ::EntityId entityId)
 ```
 
-### OnCanvasHoverStart<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvashoverstart"></a>
+### OnCanvasHoverStart {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvashoverstart}
 
 Called when an element starts being hovered\.
 
@@ -307,7 +307,7 @@ Called when an element starts being hovered\.
 OnCanvasHoverStart(AZ::EntityId entityId)
 ```
 
-### OnCanvasPrimaryPressed<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasprimarypressed"></a>
+### OnCanvasPrimaryPressed {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasprimarypressed}
 
 Called on a positional input press\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
 
@@ -317,7 +317,7 @@ Called on a positional input press\. Sends the entity that was pressed or an inv
 void OnCanvasPrimaryPressed(AZ::EntityId entityId)
 ```
 
-### OnCanvasPrimaryReleased<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasprimaryreleased"></a>
+### OnCanvasPrimaryReleased {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasprimaryreleased}
 
 Called on a positional input release\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
 
@@ -327,11 +327,11 @@ Called on a positional input release\. Sends the entity that was pressed or an i
 OnCanvasPrimaryReleased(AZ::EntityId entityId)
 ```
 
-## UiCanvasNotificationBus<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasnotificationbus"></a>
+## UiCanvasNotificationBus {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasnotificationbus}
 
 Services notifications for the `UiCanvasComponent`\.
 
-### OnAction<a name="lua-scripting-ces-api-ui-uicanvascomponent-uicanvasnotificationbus-onaction"></a>
+### OnAction {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasnotificationbus-onaction}
 
 Maps the name of an action to the entity ID of a canvas component that triggers the action\.
 
@@ -341,11 +341,11 @@ Maps the name of an action to the entity ID of a canvas component that triggers 
 void OnAction(AZ::EntityId entityId, const AZStd::string& actionName)
 ```
 
-## UiAnimationBus<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus"></a>
+## UiAnimationBus {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus}
 
 Animation messages serviced by the `UiCanvasComponent`\.
 
-### AbortSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-abortsequence"></a>
+### AbortSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-abortsequence}
 
 Aborts the specified sequence\.
 
@@ -355,7 +355,7 @@ Aborts the specified sequence\.
 void AbortSequence (const AZStd::string& sequenceName)
 ```
 
-### GetSequencePlayingSpeed<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-getsequenceplayingspeed"></a>
+### GetSequencePlayingSpeed {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-getsequenceplayingspeed}
 
 Returns the current playing speed of the specified sequence\.
 
@@ -365,7 +365,7 @@ Returns the current playing speed of the specified sequence\.
 float GetSequencePlayingSpeed(const AZStd::string& sequenceName)
 ```
 
-### GetSequencePlayingTime<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-getsequenceplayingtime"></a>
+### GetSequencePlayingTime {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-getsequenceplayingtime}
 
 Returns the current playing time of the specified sequence\.
 
@@ -375,7 +375,7 @@ Returns the current playing time of the specified sequence\.
 float GetSequencePlayingTime(const AZStd::string& sequenceName)
 ```
 
-### IsSequencePlaying<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-issequenceplaying"></a>
+### IsSequencePlaying {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-issequenceplaying}
 
 Returns true if the specified sequence is playing; false otherwise\.
 
@@ -385,7 +385,7 @@ Returns true if the specified sequence is playing; false otherwise\.
 bool IsSequencePlaying(const AZStd::string& sequenceName)
 ```
 
-### PauseSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-pausesequence"></a>
+### PauseSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-pausesequence}
 
 Pauses the specified sequence\.
 
@@ -395,7 +395,7 @@ Pauses the specified sequence\.
 void PauseSequence (const AZStd::string& sequenceName)
 ```
 
-### ResetSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-resetsequence"></a>
+### ResetSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-resetsequence}
 
 Resets the specified sequence to the start\.
 
@@ -405,7 +405,7 @@ Resets the specified sequence to the start\.
 void ResetSequence (const AZStd::string& sequenceName)
 ```
 
-### ResumeSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-resumesequence"></a>
+### ResumeSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-resumesequence}
 
 Causes the specified sequence to resume\.
 
@@ -415,7 +415,7 @@ Causes the specified sequence to resume\.
 void ResumeSequence (const AZStd::string& sequenceName)
 ```
 
-### SetSequencePlayingSpeed<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-setsequenceplayingspeed"></a>
+### SetSequencePlayingSpeed {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-setsequenceplayingspeed}
 
 Sets the current playing speed of the specified sequence\.
 
@@ -425,7 +425,7 @@ Sets the current playing speed of the specified sequence\.
 void SetSequencePlayingSpeed(const AZStd::string& sequenceName, float speed)
 ```
 
-### StartSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-startsequence"></a>
+### StartSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-startsequence}
 
 Starts playing the specified sequence\.
 
@@ -435,7 +435,7 @@ Starts playing the specified sequence\.
 void StartSequence(const AZStd::string& sequenceName)
 ```
 
-### StopSequence<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-stopsequence"></a>
+### StopSequence {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationbus-stopsequence}
 
 Stops playing the specified sequence\.
 
@@ -445,11 +445,11 @@ Stops playing the specified sequence\.
 void StopSequence (const AZStd::string& sequenceName)
 ```
 
-## UiAnimationNotificationBus<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationnotificationbus"></a>
+## UiAnimationNotificationBus {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationnotificationbus}
 
 Services animation notifications for the `UiCanvasComponent`\.
 
-### OnUiAnimationEvent<a name="lua-scripting-ces-api-ui-uicanvascomponent-uianimationnotificationbus-onuianimationevent"></a>
+### OnUiAnimationEvent {#lua-scripting-ces-api-ui-uicanvascomponent-uianimationnotificationbus-onuianimationevent}
 
 Specifies the animation event for the specified sequence\.
 

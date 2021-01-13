@@ -3,7 +3,7 @@ description: ' Use the &cloud; Credentials Manager to manage one or more of your
   profiles. '
 title: Managing &cloud; Profiles
 ---
-# Managing Cloud Canvas Profiles<a name="cloud-canvas-ui-credentials-manager"></a>
+# Managing Cloud Canvas Profiles {#cloud-canvas-ui-credentials-manager}
 
 Use the **Credentials Manager** in Lumberyard Editor or the command line to manage one or more AWS profiles that provide the credentials required to access your AWS account\.
 

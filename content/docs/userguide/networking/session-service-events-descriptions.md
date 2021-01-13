@@ -2,7 +2,7 @@
 description: ' Learn about GridMate network session service events. '
 title: Network Session Service Event Descriptions
 ---
-# Network Session Service Event Descriptions<a name="network-session-service-events-descriptions"></a>
+# Network Session Service Event Descriptions {#network-session-service-events-descriptions}
 
 A description of each session event follows\.
 

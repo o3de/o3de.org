@@ -3,13 +3,13 @@ description: ' Create sound effects for your game project with the &audio-contro
   in &ALYlong;. '
 title: ATL Controls
 ---
-# ATL Controls<a name="audio-default-controls"></a>
+# ATL Controls {#audio-default-controls}
 
 The game uses Audio Translation Layer \(ATL\) controls to communicate with the audio middleware\. ATL controls are mapped to various data authored in the middleware's authoring tool\. This abstraction layer provides you the flexibility to change mappings quickly without updating the game's integration of controls\.
 
 To see the list of audio control types, see [ATL Controls Pane](/docs/userguide/audio/atl-editor-atl-controls.md)\.
 
-## ATL Default Controls<a name="audio-controls-default"></a>
+## ATL Default Controls {#audio-controls-default}
 
 The **Audio Controls Editor** automatically creates the following ATL controls by default\. You can find the controls in the `default_controls` folder\.
 

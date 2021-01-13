@@ -2,7 +2,7 @@
 description: ' Use the water shader material with the &ALYlong; Infinite Ocean component. '
 title: Water Shader Material for the Infinite Ocean Component
 ---
-# Water Shader Material for the Infinite Ocean Component<a name="infinite-ocean-component-water-shader-material"></a>
+# Water Shader Material for the Infinite Ocean Component {#infinite-ocean-component-water-shader-material}
 
 The **Infinite Ocean** component is compatible only with a material that uses the water shader, such as the default `ocean_default.mtl` file\. The water shader is a dedicated shader that Lumberyard uses only to render the ocean, and adds effects such as reflection, ripple, and foam\. 
 

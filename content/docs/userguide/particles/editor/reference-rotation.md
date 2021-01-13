@@ -3,7 +3,7 @@ description: ' Use the Rotation attribute in the &ALYlong; &particle-editor; to 
   the rotation of the particle. '
 title: Rotation Attribute
 ---
-# Rotation Attribute<a name="particle-editor-reference-rotation"></a>
+# Rotation Attribute {#particle-editor-reference-rotation}
 
 In the **Rotation** attribute, specify how to control the particle's rotation\.
 

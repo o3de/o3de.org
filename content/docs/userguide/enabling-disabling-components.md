@@ -2,7 +2,7 @@
 description: ' Enable and disable components for entities in &ALYlong;. '
 title: Disabling and Enabling Components on Entities
 ---
-# Disabling and Enabling Components on Entities<a name="enabling-disabling-components"></a>
+# Disabling and Enabling Components on Entities {#enabling-disabling-components}
 
 After you add components to entities, you can choose to disable and enable them as needed\. This can help you see how different components interact with the entity\. For example, if you create an entity and add the **Area Light**, **Environment Probe**, and **Point Light** components to it, you can see how the different light components interact with the entity\. 
 

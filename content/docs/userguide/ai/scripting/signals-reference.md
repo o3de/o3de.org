@@ -2,7 +2,7 @@
 description: ' See the following signals reference for the AI system in &ALYlong;. '
 title: Signals Reference
 ---
-# Signals Reference<a name="ai-scripting-signals-reference"></a>
+# Signals Reference {#ai-scripting-signals-reference}
 
 A typical signal handler looks something like this: 
 
@@ -16,13 +16,13 @@ Parameters self \(behavior table\) and entity \(entity table\) are passed to eve
 
 See also: `\Game\Scripts\AI\Behaviors\Template.lua`\.
 
-## Perception Signals<a name="ai-scripting-signals-reference-perception"></a>
+## Perception Signals {#ai-scripting-signals-reference-perception}
 
 The following signals are sent to AI agents when perception types of their attention targets change\.
 
 Note that AITHREAT\_SUSPECT < AITHREAT\_INTERESTING < AITHREAT\_THREATENING < AITHREAT\_AGGRESSIVE\.
 
-### No Target<a name="ai-scripting-signals-reference-perception-notarget"></a>
+### No Target {#ai-scripting-signals-reference-perception-notarget}
 
 
 ****  
@@ -31,7 +31,7 @@ Note that AITHREAT\_SUSPECT < AITHREAT\_INTERESTING < AITHREAT\_THREATENING < AI
 | --- | --- | --- | 
 | OnNoTarget |   | Attention target is lost | 
 
-### Sound<a name="ai-scripting-signals-reference-perception-sound"></a>
+### Sound {#ai-scripting-signals-reference-perception-sound}
 
 Sound heard \(no visible target\)\.
 
@@ -45,7 +45,7 @@ Sound heard \(no visible target\)\.
 | OnThreateningSoundHeard |   | Threat is AITHREAT\_THREATENING | 
 | OnEnemyHeard |   | Threat is AITHREAT\_AGGRESSIVE | 
 
-### Memory<a name="ai-scripting-signals-reference-perception-memory"></a>
+### Memory {#ai-scripting-signals-reference-perception-memory}
 
 The target is not visible and is in memory\.
 
@@ -58,7 +58,7 @@ The target is not visible and is in memory\.
 | OnLostSightOfTarget |   | Threat is AITHREAT\_AGGRESSIVE | 
 | OnMemoryMoved |   | Threat is AITHREAT\_AGGRESSIVE and its location or owner has changed | 
 
-### Visual<a name="ai-scripting-signals-reference-perception-visual"></a>
+### Visual {#ai-scripting-signals-reference-perception-visual}
 
 The target is visible\.
 
@@ -75,7 +75,7 @@ The target is visible\.
 | OnExposedToExplosion | data | AI is affected by explosion at data\.point | 
 | OnExplosionDanger |   | Destroyable object explodes | 
 
-### Awareness of Player<a name="ai-scripting-signals-reference-perception-awareness-player"></a>
+### Awareness of Player {#ai-scripting-signals-reference-perception-awareness-player}
 
 
 ****  
@@ -87,7 +87,7 @@ The target is visible\.
 | OnPlayerLookingAway | sender | Player has just stopped looking at the AI | 
 | OnPlayerGoingAway | sender | Player has just stopped staying close to the AI | 
 
-### Awareness of Attention Target<a name="ai-scripting-signals-reference-perception-awareness-target"></a>
+### Awareness of Attention Target {#ai-scripting-signals-reference-perception-awareness-target}
 
 
 ****  
@@ -102,7 +102,7 @@ The target is visible\.
 | OnNoTargetAwareness |   |   | 
 | OnSeenByEnemy | sender | AI is seen by the enemy | 
 
-### Weapon Damage<a name="ai-scripting-signals-reference-perception-weapon-damage"></a>
+### Weapon Damage {#ai-scripting-signals-reference-perception-weapon-damage}
 
 
 ****  
@@ -113,7 +113,7 @@ The target is visible\.
 | OnDamage | sender, data | AI was damaged by another friendly/unknown AI\. data\.id = damaging AI's entity id | 
 | OnEnemyDamage | sender, data | AI was damaged by an enemy AI\. data\.id = damaging enemy's entity id | 
 
-### Proximity<a name="ai-scripting-signals-reference-perception-proximity"></a>
+### Proximity {#ai-scripting-signals-reference-perception-proximity}
 
 
 ****  
@@ -123,7 +123,7 @@ The target is visible\.
 | OnCloseContact |   | enemy gets at a close distance to an AI \(defined by Lua Property "damageRadius" of this AI\) | 
 | OnCloseCollision |   | 
 
-### Vehicles<a name="ai-scripting-signals-reference-perception-vehicles"></a>
+### Vehicles {#ai-scripting-signals-reference-perception-vehicles}
 
 
 ****  
@@ -136,7 +136,7 @@ The target is visible\.
 | OnTargetTooFar | sender, data | attention target is too close for the current weapon range \(it works only if AI is a vehicle\) | 
 | OnTargetDead |   |   | 
 
-### User\-defined<a name="ai-scripting-signals-reference-perception-user-defined"></a>
+### User\-defined {#ai-scripting-signals-reference-perception-user-defined}
 
 Custom signals can be sent when an attention target enters or leaves certain ranges\. This is configured using the following Lua functions:
 
@@ -147,7 +147,7 @@ AI.GetRangeState(entityID, rangeID);
 AI.ChangeRange(entityID, rangeID, distance);
 ```
 
-## Weapon\-Related Signals<a name="ai-scripting-signals-reference-weapons"></a>
+## Weapon\-Related Signals {#ai-scripting-signals-reference-weapons}
 
 
 ****  
@@ -161,9 +161,9 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnReloadDone |   | reload is done | 
 | OnReloaded |   |   | 
 
-## Navigation Signals<a name="ai-scripting-signals-reference-navigation"></a>
+## Navigation Signals {#ai-scripting-signals-reference-navigation}
 
-### Pathfinding<a name="ai-scripting-signals-reference-navigation-pathfinding"></a>
+### Pathfinding {#ai-scripting-signals-reference-navigation-pathfinding}
 
 
 ****  
@@ -176,7 +176,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnBackOffFailed | sender | AI tried to execute a "backoff" goal which failed | 
 | OnPathFound | sender | AI has requested a path and it's been computed successfully | 
 
-### Steering<a name="ai-scripting-signals-reference-navigation-steering"></a>
+### Steering {#ai-scripting-signals-reference-navigation-steering}
 
 
 ****  
@@ -185,7 +185,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | --- | --- | --- | 
 | OnSteerFailed |  |  | 
 
-### Smart Objects<a name="ai-scripting-signals-reference-navigation-smart-objects"></a>
+### Smart Objects {#ai-scripting-signals-reference-navigation-smart-objects}
 
 
 ****  
@@ -196,7 +196,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnLeaveNavSO |  |  | 
 | OnUseSmartObject |  |  | 
 
-### Navigation Shapes<a name="ai-scripting-signals-reference-navigation-shapes"></a>
+### Navigation Shapes {#ai-scripting-signals-reference-navigation-shapes}
 
 
 ****  
@@ -206,9 +206,9 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnShapeEnabled |  |  | 
 | OnShapeDisabled |  |  | 
 
-## Tactics Signals<a name="ai-scripting-signals-reference-tactics"></a>
+## Tactics Signals {#ai-scripting-signals-reference-tactics}
 
-### Tactical Point System<a name="ai-scripting-signals-reference-tactics-tps"></a>
+### Tactical Point System {#ai-scripting-signals-reference-tactics-tps}
 
 
 ****  
@@ -219,7 +219,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnTPSDestFound |  |  | 
 | OnTPSDestReached |  |  | 
 
-### Cover<a name="ai-scripting-signals-reference-tactics-cover"></a>
+### Cover {#ai-scripting-signals-reference-tactics-cover}
 
 
 ****  
@@ -234,7 +234,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnLeaveCover |  |  | 
 | OnCoverCompromised |  |  | 
 
-## Groups Signals<a name="ai-scripting-signals-reference-groups"></a>
+## Groups Signals {#ai-scripting-signals-reference-groups}
 
 
 ****  
@@ -245,7 +245,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnGroupMemberMutilated |  |  | 
 | OnGroupMemberDiedNearest |  |  | 
 
-### Formation<a name="ai-scripting-signals-reference-groups-formation"></a>
+### Formation {#ai-scripting-signals-reference-groups-formation}
 
 
 ****  
@@ -256,7 +256,7 @@ AI.ChangeRange(entityID, rangeID, distance);
 | OnFormationPointReached |   |   | 
 | OnGetToFormationPointFailed |   |   | 
 
-### Group Coordination<a name="ai-scripting-signals-reference-groups-coordination"></a>
+### Group Coordination {#ai-scripting-signals-reference-groups-coordination}
 
 Group target is the most threatening target of the group\.
 
@@ -271,9 +271,9 @@ Group target is the most threatening target of the group\.
 | OnGroupTargetVisual |  |  | 
 | PerformingRole |  |  | 
 
-## Other Signals<a name="ai-scripting-signals-reference-other"></a>
+## Other Signals {#ai-scripting-signals-reference-other}
 
-### Forced Execute<a name="ai-scripting-signals-reference-other-forced-execute"></a>
+### Forced Execute {#ai-scripting-signals-reference-other-forced-execute}
 
 
 ****  
@@ -283,7 +283,7 @@ Group target is the most threatening target of the group\.
 | OnForcedExecute |  |  | 
 | OnForcedExecuteComplete |  |  | 
 
-### Animation<a name="ai-scripting-signals-reference-other-animation"></a>
+### Animation {#ai-scripting-signals-reference-other-animation}
 
 
 ****  
@@ -292,7 +292,7 @@ Group target is the most threatening target of the group\.
 | --- | --- | --- | 
 | AnimationCanceled |  |  | 
 
-### Game<a name="ai-scripting-signals-reference-other-game"></a>
+### Game {#ai-scripting-signals-reference-other-game}
 
 
 ****  
@@ -301,7 +301,7 @@ Group target is the most threatening target of the group\.
 | --- | --- | --- | 
 | OnFallAndPlay |  |  | 
 
-### Vehicle\-related<a name="ai-scripting-signals-reference-other-vehicle"></a>
+### Vehicle\-related {#ai-scripting-signals-reference-other-vehicle}
 
 
 ****  
@@ -310,7 +310,7 @@ Group target is the most threatening target of the group\.
 | --- | --- | --- | 
 | OnActorSitDown | Actor has entered a vehicle |  | 
 
-### Squads<a name="ai-scripting-signals-reference-other-squads"></a>
+### Squads {#ai-scripting-signals-reference-other-squads}
 
 
 ****  

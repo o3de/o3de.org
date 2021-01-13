@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s remote shader compiler to build shaders for your
   games. '
 title: Building Shaders for macOS Games
 ---
-# Building Shaders for macOS Games<a name="osx-shaders-building"></a>
+# Building Shaders for macOS Games {#osx-shaders-building}
 
 
 ****  
@@ -19,7 +19,7 @@ You must connect your PC and macOS computer to the same network and configure an
 
 When a new shader is compiled, the game waits for the binary shader permutation to compile on your PC and be sent back to your macOS computer\. Once this occurs, the shader is cached locally\. When you are ready to release your game, you must pack up and include all cached binary shaders\.
 
-You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-allow)\.
+You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-allow)\.
 
 **To build the shader compiler \(if not already done\)**
 

@@ -3,7 +3,7 @@ description: ' Use the following &ALYlong; sample projects and levels to start b
   your game: Cloud Gem Samples, Multiplayer Sample, Samples Project, and Starter Game. '
 title: Using &ALY; sample projects and levels
 ---
-# Using Lumberyard sample projects and levels<a name="sample-projects-levels-intro"></a>
+# Using Lumberyard sample projects and levels {#sample-projects-levels-intro}
 
 Lumberyard provides a variety of sample projects, levels, and assets, which are located in the `\lumberyard_version\dev` directory\. 
 

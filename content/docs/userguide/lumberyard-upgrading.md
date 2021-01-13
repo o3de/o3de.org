@@ -3,7 +3,7 @@ description: ' Upgrade &ALYlong; with or without source control and upgrade your
   project. '
 title: Upgrading &ALY;
 ---
-# Upgrading Lumberyard<a name="lumberyard-upgrading"></a>
+# Upgrading Lumberyard {#lumberyard-upgrading}
 
 If you have an existing version of Lumberyard installed on your computer, you have several options for upgrading: 
 + Upgrade Lumberyard with an existing version in source control
@@ -32,7 +32,7 @@ When choosing a source control solution, keep in mind that Lumberyard provides p
 
 1. Make changes to the new development branch only\.
 
-## Upgrading Lumberyard with an Existing Version in Source Control<a name="lumberyard-upgrading-version-source-control"></a>
+## Upgrading Lumberyard with an Existing Version in Source Control {#lumberyard-upgrading-version-source-control}
 
 Before you begin upgrading, check into source control the previous pristine version of Lumberyard\.
 
@@ -50,7 +50,7 @@ Before you begin upgrading, check into source control the previous pristine vers
 
 1. Integrate the updated, pristine Lumberyard branch into your development branch\.
 
-## Upgrading Lumberyard without an Existing Version in Source Control<a name="lumberyard-upgrading-version-no-source-control"></a>
+## Upgrading Lumberyard without an Existing Version in Source Control {#lumberyard-upgrading-version-no-source-control}
 
 Follow these steps to prepare your source control to upgrade Lumberyard\.
 
@@ -68,7 +68,7 @@ Follow these steps to prepare your source control to upgrade Lumberyard\.
 
 1. Follow the steps in [Upgrading Lumberyard with an Existing Version in Source Control](#lumberyard-upgrading-version-source-control)\.
 
-## Upgrading Lumberyard without Source Control<a name="lumberyard-upgrading-new-no-source-control"></a>
+## Upgrading Lumberyard without Source Control {#lumberyard-upgrading-new-no-source-control}
 
 You can upgrade Lumberyard without using source control; however, we do not recommend this method\.
 
@@ -80,7 +80,7 @@ You can upgrade Lumberyard without using source control; however, we do not reco
 
 1. Configure and compile the Samples Project to test your build environment\.
 
-## Upgrading Your Game Projects<a name="lumberyard-upgrading-game-projects"></a>
+## Upgrading Your Game Projects {#lumberyard-upgrading-game-projects}
 
 Once you have upgraded Lumberyard, you can upgrade each of your game projects\.
 

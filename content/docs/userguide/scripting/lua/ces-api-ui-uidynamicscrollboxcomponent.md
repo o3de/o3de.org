@@ -3,15 +3,15 @@ description: ' Use the UIDynamicScrollBoxComponent to set up scrollbox content a
   a horizontal or vertical list of elements in &ALYlong;. '
 title: UIDynamicScrollBoxComponent
 ---
-# UIDynamicScrollBoxComponent<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent"></a>
+# UIDynamicScrollBoxComponent {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent}
 
 Dynamically sets up scrollbox content as a horizontal or vertical list of elements that are cloned from a prototype element\. For efficient scrolling, only the minimum number of elements are created\.
 
-## UiDynamicScrollBoxBus<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus"></a>
+## UiDynamicScrollBoxBus {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus}
 
 Services messages for the `UiDynamicScrollBoxComponent`\.
 
-### GetChildElementAtLocationIndex<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-getchildelementatlocationindex"></a>
+### GetChildElementAtLocationIndex {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-getchildelementatlocationindex}
 
 Returns the child element at the specified location index\.
 
@@ -21,7 +21,7 @@ Returns the child element at the specified location index\.
 AZ::EntityId GetChildElementAtLocationIndex(int index) 
 ```
 
-### GetLocationIndexOfChild<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-getlocationindexofchild"></a>
+### GetLocationIndexOfChild {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-getlocationindexofchild}
 
 Returns the location index of the specified child element\. Returns \-1 if not found\.
 
@@ -31,7 +31,7 @@ Returns the location index of the specified child element\. Returns \-1 if not f
 int GetLocationIndexOfChild(AZ::EntityId childElement) 
 ```
 
-### RefreshContent<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-refreshcontent"></a>
+### RefreshContent {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-refreshcontent}
 
 Refreshes the content\. You should call this when the list size or element content has changed\.
 
@@ -41,11 +41,11 @@ Refreshes the content\. You should call this when the list size or element conte
 void RefreshContent()
 ```
 
-## UiDynamicScrollBoxDataBus<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxdatabus"></a>
+## UiDynamicScrollBoxDataBus {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxdatabus}
 
 Create this handler to provide a dynamic scrollbox with the number of elements to display\.
 
-### GetNumElements<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxdatabus-getnumelements"></a>
+### GetNumElements {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxdatabus-getnumelements}
 
 Returns the total number of elements that the dynamic scrollbox is to display\.
 
@@ -55,11 +55,11 @@ Returns the total number of elements that the dynamic scrollbox is to display\.
 int GetNumElements()
 ```
 
-## UiDynamicScrollBoxElementNotificationBus<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-luauidynamicscrollboxelementnotificationbus"></a>
+## UiDynamicScrollBoxElementNotificationBus {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-luauidynamicscrollboxelementnotificationbus}
 
 Create this handler to receive notifications of dynamic scrollbox element state changes, such as when an element is about to scroll into view\.
 
-### OnElementBecomingVisible<a name="lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-luauidynamicscrollboxelementnotificationbus-onelementbecomingvisible"></a>
+### OnElementBecomingVisible {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-luauidynamicscrollboxelementnotificationbus-onelementbecomingvisible}
 
 An element is about to become visible\. Use this event to populate the element with data for display\. Specifies the entity ID of the element that is about to become visible and its location index\.
 

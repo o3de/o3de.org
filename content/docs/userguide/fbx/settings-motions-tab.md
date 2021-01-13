@@ -2,7 +2,7 @@
 description: null
 title: FBX Settings Motions tab
 ---
-# FBX Settings Motions tab<a name="fbx-settings-motions-tab"></a>
+# FBX Settings Motions tab {#fbx-settings-motions-tab}
 
 
 ****  
@@ -27,7 +27,7 @@ For more information, see [Animation Editor File Types](/docs/userguide/animatio
 + [Motion range modifier](#w31aac15b9c11c15c23)
 + [Scale motion modifier](#w31aac15b9c11c15c25)
 
-## Motions tab properties<a name="fbx-settings-motions-tab-properties"></a>
+## Motions tab properties {#fbx-settings-motions-tab-properties}
 
 ![\[The FBX Settings Motions tab.\]](/images/userguide/fbx/ui-fbx-settings-motions-tab-1.25.png)
 
@@ -49,7 +49,7 @@ Modifiers add specialized options for processing assets\. Choose the **Add Modif
 + **Motion range**
 + **Scale motion**
 
-## Additive motion modifier<a name="w31aac15b9c11c15c15"></a>
+## Additive motion modifier {#w31aac15b9c11c15c15}
 
 ![\[The FBX Settings Motion tab Additive motion modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-additive-motion-1.25.png)
 
@@ -60,13 +60,13 @@ Specifies the number of the base frame that contains the reference pose\.
 
 For more information, see  
 
-## Comment modifier<a name="w31aac15b9c11c15c17"></a>
+## Comment modifier {#w31aac15b9c11c15c17}
 
 ![\[The FBX Settings Motion tab Comment modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\. 
 
-## Compression Settings modifier<a name="w31aac15b9c11c15c19"></a>
+## Compression Settings modifier {#w31aac15b9c11c15c19}
 
 ![\[The FBX Settings Motions tab Compression settings modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-compression-settings-1.25.png)
 
@@ -81,13 +81,13 @@ Specify the maximum error tolerance allowed in rotation\. Valid values range fro
 ****Max scale error tolerance****  
 Specify the maximum error tolerance allowed in scale\. Valid values range from a minimum of **0** to a maximum of **0\.01**\. 
 
-## Coordinate system change modifier<a name="w31aac15b9c11c15c21"></a>
+## Coordinate system change modifier {#w31aac15b9c11c15c21}
 
 ![\[The FBX Settings Motions tab Coordinate system change modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
 
 Modify the coordinate system of the motion\. Third\-party content creation applications and game engines use varying coordinate systems with content applications often rotating the direction of the forward axis\. The **Facing direction** property can be set to rotate the motion 180 degrees around its up axis to account for this difference\. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged\. 
 
-## Motion range modifier<a name="w31aac15b9c11c15c23"></a>
+## Motion range modifier {#w31aac15b9c11c15c23}
 
 ![\[The FBX Settings Motions tab Motion range modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-motion-range-1.25.png)
 
@@ -99,7 +99,7 @@ Specify the start keyframe of the animation to export\.
 ****End frame****  
 Specify the end keyframe of the animation to export\. 
 
-## Scale motion modifier<a name="w31aac15b9c11c15c25"></a>
+## Scale motion modifier {#w31aac15b9c11c15c25}
 
 ![\[The FBX Settings Motions tab Scale motion modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
 

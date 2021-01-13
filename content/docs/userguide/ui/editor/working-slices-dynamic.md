@@ -2,7 +2,7 @@
 description: ' Flag dynamic slices in &ALYlong;''s &ui-canvas-editor; . '
 title: Flagging Dynamic Slices
 ---
-# Flagging Dynamic Slices<a name="ui-editor-working-slices-dynamic"></a>
+# Flagging Dynamic Slices {#ui-editor-working-slices-dynamic}
 
 A slice flagged as a dynamic slice can be used like any other slice, but it can also be instantiated at runtime\.
 

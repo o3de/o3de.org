@@ -2,7 +2,7 @@
 description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
 title: Adding a Director (Scene) Node
 ---
-# Adding a Director \(Scene\) Node<a name="cinematics-adding-a-director-scene-node"></a>
+# Adding a Director \(Scene\) Node {#cinematics-adding-a-director-scene-node}
 
 To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\. 
 

@@ -2,11 +2,11 @@
 description: ' Learn about the &ALYlong; audio system. '
 title: Audio System Overview
 ---
-# Audio System Overview<a name="audio-architecture"></a>
+# Audio System Overview {#audio-architecture}
 
 The Lumberyard audio system consists of Gems, components, and content\.
 
-## Gems<a name="audio-architecture-gems"></a>
+## Gems {#audio-architecture-gems}
 
 Lumberyard provides two audio Gems:
 + **AudioSystem**
@@ -28,11 +28,11 @@ Lumberyard audio Gems feature the following modules:
 | Audio Engine Wwise |  Part of the Audio Engine Wwise Gem\. Contains the implementation of `AudioSystemImplementation` interfaces for Wwise\. Contains all Audiokinetic APIs\. This is the only module that links with Wwise SDK\. Can be configured to use Wwise LTX or the full version of Wwise\.  | 
 | Audio Engine Wwise Editor |  A Lumberyard Editor plugin, and part of the Audio Engine Wwise Gem\. This is an additional module that the **Audio Controls Editor** loads when Lumberyard uses Wwise\.  | 
 
-## Components<a name="audio-architecture-components"></a>
+## Components {#audio-architecture-components}
 
 Core audio components available in Lumberyard Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more\. For a complete list, see [Audio Components](/docs/userguide/audio/components.md)\.
 
-## Content<a name="audio-architecture-content"></a>
+## Content {#audio-architecture-content}
 
 Lumberyard audio features the following content:
 

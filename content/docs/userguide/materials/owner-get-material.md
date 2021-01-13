@@ -3,7 +3,7 @@ description: ' Use the Get Material node in the &ALYlong; &script-canvas; editor
   find an entity''s current material file. '
 title: Get Material
 ---
-# Get Material<a name="material-owner-get-material"></a>
+# Get Material {#material-owner-get-material}
 
 Returns an entity's current material\.
 
@@ -16,7 +16,7 @@ Returns an entity's current material\.
 **Note**  
 If you use the **[Set Material](/docs/userguide/materials/owner-set-material.md)** node and specify an invalid material and then call the **Get Material** node, **Get Material** returns the entity's default material instead of `Invalid`\.
 
-## Inputs<a name="material-owner-get-material-input"></a>
+## Inputs {#material-owner-get-material-input}
 
 
 ****  
@@ -26,7 +26,7 @@ If you use the **[Set Material](/docs/userguide/materials/owner-set-material.md)
 | In | Event | Triggers the node\. | 
 | Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\. You can also select another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  | 
 
-## Outputs<a name="material-owner-get-material-output"></a>
+## Outputs {#material-owner-get-material-output}
 
 
 ****  

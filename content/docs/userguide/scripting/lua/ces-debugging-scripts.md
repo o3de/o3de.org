@@ -2,11 +2,11 @@
 description: ' Learn about debugging Lua scripts in &ALYlong;. '
 title: ' Debugging Lua Scripts'
 ---
-# Debugging Lua Scripts<a name="lua-scripting-ces-debugging-scripts"></a>
+# Debugging Lua Scripts {#lua-scripting-ces-debugging-scripts}
 
 Lumberyard provides Lua scripts with several functions to make debugging easier\.
 
-## Logging to the Console<a name="lua-scripting-ces-logging-to-the-console"></a>
+## Logging to the Console {#lua-scripting-ces-logging-to-the-console}
 
 To print text to Lumberyard Editor and the game console, use the `Debug.Log()` function\.
 
@@ -22,7 +22,7 @@ end
 return LoggingTest
 ```
 
-## Using an Assert to Detect Potential Issues<a name="lua-scripting-ces-using-an-assert-to-detect-potential-issues"></a>
+## Using an Assert to Detect Potential Issues {#lua-scripting-ces-using-an-assert-to-detect-potential-issues}
 
 You can use the `assert` function to display an error message in the console when conditions are detected that might result in an execution fault\. The `assert` function takes two arguments: a condition that evaluates to true or false, and a message to display if the condition is false\.
 
@@ -38,7 +38,7 @@ end
 -- [Error] Lua error (2 - [string "q:/lyengine/branches/systems/dev/samplespro..."]:61: Expected a positive value! Got: -5) during call samplescript:DoStuff
 ```
 
-## Communicating Errors<a name="lua-scripting-ces-communicating-errors"></a>
+## Communicating Errors {#lua-scripting-ces-communicating-errors}
 
 You can use the `Debug.Error()` function to display an error in the console and halt execution of the current script function\. This does not halt all execution of the script\. If you have active handlers, they can still be called when the engine posts notifications\. The `Debug.Error()` function takes arguments similar to the `Debug.Assert` function: a condition and a message\. The message is displayed in bright red and execution halts only if the condition is false\.
 
@@ -54,7 +54,7 @@ end
 -- [Error] Error on argument 0: Detected a negative value: -5
 ```
 
-## Displaying a Warning When User Attention Is Required<a name="lua-scripting-ces-displaying-a-warning"></a>
+## Displaying a Warning When User Attention Is Required {#lua-scripting-ces-displaying-a-warning}
 
 A script condition can occur that does not adversely affect the execution of the script but might be useful for the user to know about\. The `Debug.Warning()` function uses arguments similar to those of the `Error` and `Assert` functions but just displays an orange warning message in the console\. It does not halt execution\.
 

@@ -3,7 +3,7 @@ description: ' Provides a description of the status codes that appear in &cloud;
   operations. '
 title: Understanding Resource Status Descriptions
 ---
-# Understanding Resource Status Descriptions<a name="cloud-canvas-ui-rm-resource-status-descriptions"></a>
+# Understanding Resource Status Descriptions {#cloud-canvas-ui-rm-resource-status-descriptions}
 
 The status of AWS resources is displayed in the **Cloud Canvas Resource Manager** in places such as the progress log\. The following list provides descriptions of common resource status codes\. To see the reason for the current status, you can pause your mouse on the status text in the resource manager\.
 

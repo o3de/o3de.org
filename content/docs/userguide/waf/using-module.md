@@ -2,7 +2,7 @@
 description: ' Create a custom build module in the &ALYlong; Waf build system. '
 title: Adding a Build Module
 ---
-# Adding a Build Module<a name="waf-using-module"></a>
+# Adding a Build Module {#waf-using-module}
 
 You can create a custom build module in the Lumberyard Waf build system\. You can use predefined build modules to add any shared library or plugin into the Lumberyard engine SDK\.
 
@@ -20,7 +20,7 @@ Creating a module requires the following steps:
 
 1. Add a project dependency
 
-## Creating a New Module<a name="create-new-module"></a>
+## Creating a New Module {#create-new-module}
 
 You can create and add the following types of modules to the Lumberyard Waf build system:
 
@@ -51,7 +51,7 @@ You can create and add the following types of modules to the Lumberyard Waf buil
 
 In this topic's example you create a CryEngineModule\.
 
-## Build Module Keywords<a name="waf-build-module-keywords"></a>
+## Build Module Keywords {#waf-build-module-keywords}
 
 The following describes the general keywords that are supported by the build modules\. The listed targetable keywords can be specific to a platform or a configuration\. The keyword by itself is used for all supported platforms and configurations, but if you need keywords that are specific to a platform or configuration, you must include the name of the platform or configuration in the name\.
 
@@ -101,7 +101,7 @@ This macro eliminates the need to repeatedly specify certain non\-debug flags\. 
 | enable\_rtti | Flag to enable rtti settings for a project\.  | Yes | 
 | rpath | Additional relative library paths \(Darwin\)\.  | No | 
 
-## Creating a Basic Wscript Module<a name="create-basic-wscript-module"></a>
+## Creating a Basic Wscript Module {#create-basic-wscript-module}
 
 The wscript file specifies the name of the module \(`target`\), `.waf_files` content file \(`file_list`\), Visual Studio filter \(`vs_filter`\), and precompiled headers \(`pch`\)\.
 
@@ -135,7 +135,7 @@ def build(bld):
     bld.recurse(SUBFOLDERS)
 ```
 
-## Creating the \.waf\_files Content File<a name="create-waf-files-content-file"></a>
+## Creating the \.waf\_files Content File {#create-waf-files-content-file}
 
 In the example wscript, you specified a file called `myenginemodule.waf_files` as the project content file\. The project content file can be one of the following:
 + A single file that defines the source files for the project
@@ -167,7 +167,7 @@ The following `myenginemodule.waf_files` example demonstrates a simple module wi
 }
 ```
 
-## Specifying Additional Include Paths and External Library Linking<a name="specify-include-paths-library-link"></a>
+## Specifying Additional Include Paths and External Library Linking {#specify-include-paths-library-link}
 
 To configure the module to link to external modules, you need to update the wscript to specify the include path and link related project settings flags such as includes, lib, libpath, and linkflags\.
 
@@ -205,7 +205,7 @@ def build(bld):
 **Note**  
 The following are duplicated to cover all possible configurations that you specified in the `waf_branch_spec`: `win_x64_profile_libpath`, `win_x64_profile_performance`, and `win_x64_release_libpath`\.
 
-## Adding and Linking to a Project Dependency<a name="add-link-project-dependency"></a>
+## Adding and Linking to a Project Dependency {#add-link-project-dependency}
 
 If you want to link to another module that is built within the system, you can use the `use` parameter for the build\.
 

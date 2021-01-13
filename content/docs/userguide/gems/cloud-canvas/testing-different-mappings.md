@@ -2,7 +2,7 @@
 description: ' Learn how to export mappings for testing with game clients. '
 title: Testing Different Mappings
 ---
-# Testing Different Mappings<a name="cloud-canvas-testing-different-mappings"></a>
+# Testing Different Mappings {#cloud-canvas-testing-different-mappings}
 
 To test your client with different Cloud Canvas resource deployments, you can export mappings by using Cloud Canvas Resource Manager or the `lmbr_aws` command line\. 
 
@@ -29,7 +29,7 @@ As of Lumberyard 1\.11, separate mappings are exported for the player game clien
 **Tip**  
 Using the command line to export mappings makes it easy for you to create scripts for testing or development\.
 
-## Selecting a Deployment with a PC Launcher<a name="cloud-canvas-testing-different-mappings-selecting-a-deployment-pc-launcher"></a>
+## Selecting a Deployment with a PC Launcher {#cloud-canvas-testing-different-mappings-selecting-a-deployment-pc-launcher}
 
 After you have exported one or more mappings, you can choose the mapping to use when you run a game launcher such as the one at `dev\Bin64vcNNN\CloudGemSamplesLauncher.exe`\.
 

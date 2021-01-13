@@ -3,7 +3,7 @@ description: ' Use the Navigation group of properties to specify how the arrow k
   or gamepad navigates between interactive elements in &ALY;. '
 title: Navigation
 ---
-# Navigation<a name="ui-editor-components-interactive-properties-navigation"></a>
+# Navigation {#ui-editor-components-interactive-properties-navigation}
 
 You can use the **Navigation** group of properties to specify how the arrow keys or gamepad navigates between interactive elements\. 
 

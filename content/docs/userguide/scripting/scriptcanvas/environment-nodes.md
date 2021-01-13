@@ -3,7 +3,7 @@ description: ' Use environment nodes in the &ALYlong; &script-canvas; editor to 
   sky effects. '
 title: Environment Nodes
 ---
-# Environment Nodes<a name="script-canvas-environment-nodes"></a>
+# Environment Nodes {#script-canvas-environment-nodes}
 
 You can use environment nodes in the **Script Canvas** to configure sky elements, such as sun position, moon position, and the skybox material\. You can use these nodes to have specific control over the individual elements\.
 

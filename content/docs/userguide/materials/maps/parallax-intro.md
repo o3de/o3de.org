@@ -2,7 +2,7 @@
 description: ' Learn more about parallax occlusion mapping (POM) in &ALYlong;. '
 title: Parallax Mapping
 ---
-# Parallax Mapping<a name="mat-maps-parallax-intro"></a>
+# Parallax Mapping {#mat-maps-parallax-intro}
 
 Parallax occlusion mapping \(POM\) is an enhancement of the traditional parallax mapping technique that creates detail in a texture to add the illusion of depth\. This depth perception changes based on perspective\.
 

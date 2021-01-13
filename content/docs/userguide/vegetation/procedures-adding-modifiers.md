@@ -3,7 +3,7 @@ description: ' Add scale, rotation, and position modifiers to change the look of
   dynamic vegetation in &ALYlong;. '
 title: Adding Scale, Rotation, and Position Modifiers
 ---
-# Adding Scale, Rotation, and Position Modifiers<a name="dynamic-vegetation-procedures-adding-modifiers"></a>
+# Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}
 
 Before you can complete this procedure, you must first [create a vegetation layer](/docs/userguide/vegetation/procedures-create-vegetation-layer.md)\.
 
@@ -20,7 +20,7 @@ Applying modifiers to your vegetation gives it a realistic, natural look\.
 
 ![\[Vegetation area after adding the scale, rotation, and position modifiers.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-after.png)
 
-## Adding a Scale Modifier<a name="dynamic-vegetation-adding-scale-modifier"></a>
+## Adding a Scale Modifier {#dynamic-vegetation-adding-scale-modifier}
 
 A scale modifier varies the size of the vegetation\.
 
@@ -45,7 +45,7 @@ A scale modifier varies the size of the vegetation\.
 
    **Range Min** sets the scale size for the gradient signal's lowest values\. **Range Max** sets the scale size for the gradient signal's highest values\. Because the gradient signal varies in range from black to white, a scale value between the minimum and the maximum is applied to that vegetation instance\.
 
-## Adding a Rotation Modifier<a name="dynamic-vegetation-adding-rotation-modifier"></a>
+## Adding a Rotation Modifier {#dynamic-vegetation-adding-rotation-modifier}
 
 A rotation modifier varies the rotation of the vegetation\.
 
@@ -64,7 +64,7 @@ A rotation modifier varies the rotation of the vegetation\.
 
    The **Gradient Entity Id** field populates with the entity name\.
 
-## Adding a Position Modifier<a name="dynamic-vegetation-adding-position-modifier"></a>
+## Adding a Position Modifier {#dynamic-vegetation-adding-position-modifier}
 
 A position modifier shifts each instance of vegetation by an amount that the gradient determines, which removes the grid\-like appearance of the vegetation\.
 

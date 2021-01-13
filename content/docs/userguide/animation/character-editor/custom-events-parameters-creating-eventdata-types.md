@@ -3,7 +3,7 @@ description: ' Use EventData types to create custom parameters for motion events
   &ALYlong;. '
 title: Creating EventData Types
 ---
-# Creating EventData Types<a name="char-animation-editor-custom-events-parameters-creating-eventdata-types"></a>
+# Creating EventData Types {#char-animation-editor-custom-events-parameters-creating-eventdata-types}
 
 You can create `EventData` types in a separate gem or directly in a game project's code\. Each parameterized motion event can contain more than one `EventData` object\. This makes it possible for users to attach an arbitrary number of `EventData` objects to a single event\.
 
@@ -79,7 +79,7 @@ The `EMotionFX::EventData` class describes a set of parameters and values that i
    ...
    ```
 
-## Example<a name="char-animation-editor-custom-events-parameters-creating-eventdata-types-example"></a>
+## Example {#char-animation-editor-custom-events-parameters-creating-eventdata-types-example}
 
 The following example shows the completed `LeftFootEvent` sample `EventData` subclass and the code to add the event to a motion\.
 
@@ -126,7 +126,7 @@ auto footstepData = GetEMotionFX().GetEventManager()->FindOrCreateEventData<Left
 motion->GetEventTable()->FindTrackByName("Sound")->AddEvent(0.2f, footstepData);
 ```
 
-## More About the Equal Function<a name="char-animation-editor-custom-events-parameters-the-equal-function"></a>
+## More About the Equal Function {#char-animation-editor-custom-events-parameters-the-equal-function}
 
 The `Equal` function tests whether two `EventData` instances are equal\.
 
@@ -144,13 +144,13 @@ The `EventManager` stores a list of the `EventData` instances in use and attempt
 
 When a call to `AnimGraphMotionCondition` tests a motion event, `AnimGraphMotionCondition::TestCondition` calls the `Equal` method with the `ignoreEmptyFields` parameter set to `true`\. The `ignoreEmptyFields` parameter enables partial matching of `EventData` instances\. For example, if one of the fields is a string and the string value is empty in the condition, any value in the field matches\.
 
-## Synchronizing Blended Motions<a name="char-animation-editor-custom-events-parameters-synchronizing-blended-motions"></a>
+## Synchronizing Blended Motions {#char-animation-editor-custom-events-parameters-synchronizing-blended-motions}
 
 The `EMotionFX::EventDataSyncable` class extends the functionality of the base `EventData` class and enables events that drive motion synchronization behavior\. Use the `EventDataSyncable` class to specify parameters for synchronizing blended motions\. The class calls `HashForSyncing` on the sync tracks of two different motions, compares the results, and finds events that are equal based on their hash value\.
 
 For source code, see `lumberyard_version\dev\Gems\EMotionFX\Code\EMotionFX\Source\EventDataSyncable.*`\.
 
-### Mirroring<a name="char-animation-editor-custom-events-parameters-mirroring"></a>
+### Mirroring {#char-animation-editor-custom-events-parameters-mirroring}
 
 You can use `EMotionFX` to mirror motions programmatically\. When a motion is being mirrored, its sync events must also be mirrored\. To signal this mirroring, the `HashForSyncing` method accepts an `isMirror` parameter\.
 

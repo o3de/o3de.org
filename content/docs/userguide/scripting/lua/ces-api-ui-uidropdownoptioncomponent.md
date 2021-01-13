@@ -3,15 +3,15 @@ description: ' Use UiDropdownOptionComponent to implement dropdown options for a
   element in &ALYlong;. '
 title: UiDropdownOptionComponent
 ---
-# UiDropdownOptionComponent<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent"></a>
+# UiDropdownOptionComponent {#lua-scripting-ces-api-ui-uidropdownoptioncomponent}
 
 You can use `UiDropdownOptionComponent` to implement a dropdown options for a UI element in Amazon Lumberyard\.
 
-## UiDropdownOptionBus<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus"></a>
+## UiDropdownOptionBus {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus}
 
 Services messages for the `UiDropdownOptionComponent`\.
 
-### GetOwningDropdown<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-getowningdropdown"></a>
+### GetOwningDropdown {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-getowningdropdown}
 
 Returns the owning dropdown to be modified when this dropdown option is selected\.
 
@@ -21,7 +21,7 @@ Returns the owning dropdown to be modified when this dropdown option is selected
 AZ::EntityId GetOwningDropdown()
 ```
 
-### SetOwningDropdown<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-setowningdropdown"></a>
+### SetOwningDropdown {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-setowningdropdown}
 
 Sets the owning dropdown to be modified when this dropdown option is selected\.
 
@@ -31,7 +31,7 @@ Sets the owning dropdown to be modified when this dropdown option is selected\.
 void SetOwningDropdown(AZ::EntityId owningDropdown)
 ```
 
-### GetTextElement<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-gettextelement"></a>
+### GetTextElement {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-gettextelement}
 
 Returns the text element that is used to display this dropdown option’s text\.
 
@@ -41,7 +41,7 @@ Returns the text element that is used to display this dropdown option’s text\.
 AZ::EntityId GetTextElement()
 ```
 
-### SetTextElement<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-settextelement"></a>
+### SetTextElement {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-settextelement}
 
 Sets the text element that is used to display this dropdown option’s text\.
 
@@ -51,7 +51,7 @@ Sets the text element that is used to display this dropdown option’s text\.
 void SetTextElement(AZ::EntityId textElement)
 ```
 
-### GetIconElement<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-geticonelement"></a>
+### GetIconElement {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-geticonelement}
 
 Returns the icon element that is used to display this dropdown option’s icon\.
 
@@ -61,7 +61,7 @@ Returns the icon element that is used to display this dropdown option’s icon\.
 AZ::EntityId GetIconElement()
 ```
 
-### SetIconElement<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-seticonelement"></a>
+### SetIconElement {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionbus-seticonelement}
 
 Sets the icon element that is used to display this dropdown option’s icon\.
 
@@ -71,11 +71,11 @@ Sets the icon element that is used to display this dropdown option’s icon\.
 void SetIconElement(AZ::EntityId iconElement)
 ```
 
-## UiDropdownOptionNotificationBus<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus"></a>
+## UiDropdownOptionNotificationBus {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus}
 
 Services notifications for the `UiDropdownOptionComponent`\. 
 
-### OnDropdownOptionSelected<a name="lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus-ondropdownoptionselected"></a>
+### OnDropdownOptionSelected {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus-ondropdownoptionselected}
 
 Notifies that this dropdown option was selected\.
 

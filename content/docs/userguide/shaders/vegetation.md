@@ -3,7 +3,7 @@ description: ' Use the vegetation shader to render trees, bushes, grass, and oth
   vegetation in &ALYlong;. '
 title: Vegetation Shader
 ---
-# Vegetation Shader<a name="shader-ref-vegetation"></a>
+# Vegetation Shader {#shader-ref-vegetation}
 
 The Vegetation shader is used to render trees, bushes, grass and other vegetation, as well as imparting various bending motion effects\.
 
@@ -11,7 +11,7 @@ See the following guidelines for best results and performance with this shader:
 + Use an **AlphaTest** value of `50` for opacity\.
 + Use a **Diffuse** color value of `128,128,128` for lighting\.
 
-## Shader Parameters<a name="shader-ref-vegetation-shader-parameters"></a>
+## Shader Parameters {#shader-ref-vegetation-shader-parameters}
 
 **Bending branch amplitude**  
 Defines the movement of blue color in the complex bending setup\.  
@@ -65,7 +65,7 @@ Default value: `0.5`
 Applies color tint for translucency\. **Leaves** or **Grass** shader generation parameter must be enabled first\.  
 Default value: `255`, `255`, `203`
 
-## Shader Generation Parameters<a name="shader-ref-vegetation-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-vegetation-shader-generation-parameters}
 
 **Leaves**  
 Enables leaf shading and leaves animation\. This parameter causes the gaming Lumberyard to use a much more complex \(expensive\) shading, so activate only for leaves rendering\.

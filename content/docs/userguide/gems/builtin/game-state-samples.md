@@ -3,7 +3,7 @@ description: ' Use the game states in the GameState Samples gem to control the f
   of your game in &ALYlong;. '
 title: GameState Samples Gem
 ---
-# GameState Samples Gem<a name="gems-system-gem-game-state-samples"></a>
+# GameState Samples Gem {#gems-system-gem-game-state-samples}
 
 The GameState Samples gem uses the [GameState Gem](/docs/userguide/gems/builtin/game-state.md) to provide a set of sample game states that control the high\-level flow of a game\.
 
@@ -11,7 +11,7 @@ The GameState Samples gem uses the [GameState Gem](/docs/userguide/gems/builtin/
 
 For information about enabling the GameState Samples gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-## Game States Included<a name="gems-system-gem-game-state-samples-game-states-included"></a>
+## Game States Included {#gems-system-gem-game-state-samples-game-states-included}
 
 The GameState Samples gem includes the following game states\. These states commonly occur in the beginning, middle, and end of a game\.
 + **Main menu state** – Enables any level in the project to be loaded from a button click\.
@@ -20,13 +20,13 @@ The GameState Samples gem includes the following game states\. These states comm
 + **Level paused state** – Enables resuming or returning to the main menu to select another level\.
 + **Other states** – Game states that react to user sign\-in and sign out and controller connections and disconnections\.
 
-### Flow of Game States<a name="gems-system-gem-game-state-samples-flow-of-game-states"></a>
+### Flow of Game States {#gems-system-gem-game-state-samples-flow-of-game-states}
 
 The following diagram shows the flow of the default game states in the GameState Samples gem\.
 
 ![\[Flow of game states in the GameState Samples gem.\]](/images/userguide/gems/gems-system-gem-game-state-samples-2.png)
 
-## Possible Uses<a name="gems-system-gem-game-state-samples-possible-uses"></a>
+## Possible Uses {#gems-system-gem-game-state-samples-possible-uses}
 
 The following are some possible ways to use the GameState Samples gem:
 + **Copy** – Copy the gem to your game project to use as a starting point for further customization\. This method offers the most flexibility\. However, you should not enable the GameState Samples gem in Project Configurator\. Instead, copy each class in the gem that inherits from `IGameState` into your game project\. \(For the source code, see the `lumberyard_version\dev\Gems\GameStateSamples\Code\Include\GameStateSamples\` directory\.\) The advantage of this approach over either of the following options is that you can freely modify the samples to fit the specific needs of your game\.

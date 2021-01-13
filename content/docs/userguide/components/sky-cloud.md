@@ -3,7 +3,7 @@ description: ' Use the Sky Cloud component to create realistic and detailed clou
   effects in your &ALYlong; game levels. '
 title: Sky Cloud
 ---
-# Sky Cloud<a name="component-sky-cloud"></a>
+# Sky Cloud {#component-sky-cloud}
 
 
 ****  
@@ -26,10 +26,10 @@ The **Sky Cloud** component replaces [legacy clouds](https://docs.aws.amazon.com
 Lumberyard features two variations of cloud rendering:
 
 **Common clouds**  
-This sprite\-based rendering path uses simple shading to optimize performance\. Close up, these clouds appear in 3D but once the clouds are a certain configurable distance from the viewer, an [imposter](/docs/userguide/ly-glos-chap.md#imposter) is substituted\.
+This sprite\-based rendering path uses simple shading to optimize performance\. Close up, these clouds appear in 3D but once the clouds are a certain configurable distance from the viewer, an [imposter](/docs/userguide/ly-glos-chap#imposter) is substituted\.
 
 **Volumetric clouds**  
-This implementation uses advanced shading to create realistic [voxelized](/docs/userguide/ly-glos-chap.md#voxel) 3D clouds but is slower to render\.
+This implementation uses advanced shading to create realistic [voxelized](/docs/userguide/ly-glos-chap#voxel) 3D clouds but is slower to render\.
 
 With the **Sky Cloud** component, you can do the following:
 + Randomly generate common and volumetric clouds in controlled areas\.
@@ -48,7 +48,7 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 + [Changing the Cloud Display](#component-sky-cloud-display)
 + [Setting Up Cloud Generation Areas](#component-sky-cloud-generation-area)
 
-## Creating a Cloud with the Sky Cloud Component<a name="creating-a-cloud-with-the-sky-cloud-component"></a>
+## Creating a Cloud with the Sky Cloud Component {#creating-a-cloud-with-the-sky-cloud-component}
 
 **To create a cloud**
 
@@ -57,7 +57,7 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 1. In the **Entity Outliner**, select the new entity and in the **Entity Inspector**, click **Add Component** and then click the **Sky Cloud** component\.  
 ![\[Under Environment, select the Sky Cloud component.\]](/images/userguide/component/component-sky-cloud-1.png)
 
-1. Click **Add Required Component** to add the **[Box Shape](/docs/userguide/components/shapes.md)** component\.<a name="adding-loop-box"></a>  
+1. Click **Add Required Component** to add the **[Box Shape](/docs/userguide/components/shapes.md)** component\. {#adding-loop-box}  
 ![\[Click Add Required Component to add the Box Shape component\]](/images/userguide/component/component-sky-cloud-2.png)
 
 1. In the **Entity Inspector**, at the bottom of the **Sky Cloud** component properties, click **Generate**\. This generates a common cloud that uses sprite\-based shading in the viewport\.  
@@ -66,7 +66,7 @@ The following procedure demonstrates how to create a common or volumetric cloud 
 1. To turn the common cloud into a volumetric cloud, select the [**Volumetric Rendering**](#component-sky-cloud-properties-volumetric) property\.  
 ![\[Under Volumetric Rendering, select Enabled to create a volumetric cloud.\]](/images/userguide/component/component-sky-cloud-4.png)
 
-## Sky Cloud Component Properties<a name="component-sky-cloud-properties"></a>
+## Sky Cloud Component Properties {#component-sky-cloud-properties}
 
 ![\[Sky Cloud component properties in Lumberyard Editor.\]](/images/userguide/component/component-sky-cloud-properties-1.png)
 
@@ -87,9 +87,9 @@ Controls which visual aids are displayed when viewing the cloud in Lumberyard Ed
 **[Generation](#component-sky-cloud-properties-generation)**  
 Defines parameters for cloud generation when you click **Generate**\.
 
-### Volumetric Rendering Parameters<a name="component-sky-cloud-properties-volumetric"></a>
+### Volumetric Rendering Parameters {#component-sky-cloud-properties-volumetric}
 
-When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](/docs/userguide/ly-glos-chap.md#voxel) and uses the [Volume Object shader](/docs/userguide/shaders/volumeobject.md)\.
+When you enable **Volumetric Rendering**, you create a realistic\-looking volumetric cloud that is [voxelized](/docs/userguide/ly-glos-chap#voxel) and uses the [Volume Object shader](/docs/userguide/shaders/volumeobject.md)\.
 
 When **Volumetric Rendering** is not enabled, you create a sprite\-based common cloud, which uses the [Common Cloud shader](/docs/userguide/shaders/common-cloud.md)\.
 
@@ -100,7 +100,7 @@ When **Volumetric Rendering** is not enabled, you create a sprite\-based common 
 | Volume material | [Volume Object](/docs/userguide/shaders/volumeobject.md) based material used for rendering volumetric clouds\. Volumetric rendering must be enabled for this parameter\. Th default material is volumeClouds\.mtl\. | 
 | Density | Defines the volumetric cloud's density\. Volumetric rendering must be enabled for this parameter\. | 
 
-### Movement Parameters<a name="component-sky-cloud-properties-movement"></a>
+### Movement Parameters {#component-sky-cloud-properties-movement}
 
 The **Movement** parameters define how the cloud moves within its [loop box](#component-sky-cloud-loop-box)\.
 
@@ -111,7 +111,7 @@ The **Movement** parameters define how the cloud moves within its [loop box](#co
 | Velocity | Velocity in meters per second and cloud movement in the X, Y, and Z axes\. | 
 | FadeDistance | Distance in meters from the loop box edge\. Defines where the cloud begins to fade out before wrapping around to the other side\. | 
 
-### Display Parameters<a name="component-sky-cloud-properties-display"></a>
+### Display Parameters {#component-sky-cloud-properties-display}
 
 Enable **Display** parameters to help visualize the cloud while editing\.
 
@@ -122,7 +122,7 @@ Enable **Display** parameters to help visualize the cloud while editing\.
 | Display Volumes | Displays the box for each volume that is part of the cloud\. Enable this parameter to see the general shape of the cloud\. For more information, see [Setting Up Cloud Generation Areas](#component-sky-cloud-generation-area)\. | 
 | Display Bounds | Displays the bounds of the entire cloud including all particles\. Enable this parameter to help you place clouds\. | 
 
-### Generation Parameters<a name="component-sky-cloud-properties-generation"></a>
+### Generation Parameters {#component-sky-cloud-properties-generation}
 
 The **Generation** parameters define variables to create clouds through procedural generation\.
 
@@ -141,7 +141,7 @@ The **Generation** parameters define variables to create clouds through procedur
 | Fill By Loopbox | Fills the loop box volume \(as opposed to the box volumes on the child entities\)\. | 
 | Generate | Creates a cloud based on the current generation variables\. | 
 
-## Creating a Loop Box<a name="component-sky-cloud-loop-box"></a>
+## Creating a Loop Box {#component-sky-cloud-loop-box}
 
 When you add a **Sky Cloud** component to an entity, you also add a **Box Shape** component to function as a loop box\. The loop box specifies the bounds in which the cloud can move\. When the cloud reaches one side of the loop box, the cloud automatically repositions to the other end so that its movement loops\. 
 
@@ -157,7 +157,7 @@ When you add a **Sky Cloud** component to an entity, you also add a **Box Shape*
 1. To see the cloud's movement within the loop box, select **AutoMove** in the **Sky Cloud** component properties\.  
 ![\[In the Sky Cloud component's properties, under Movement, select AutoMove to enable cloud movement.\]](/images/userguide/component/component-sky-cloud-loop-box-2.png)
 
-## Setting Fade Distance<a name="component-sky-cloud-fade-distance"></a>
+## Setting Fade Distance {#component-sky-cloud-fade-distance}
 
 The **Fade Distance** determines where the cloud begins to fade out as it reaches the edge of the loop box\. This prevents the cloud from popping in and out at the edges of the box\.
 
@@ -177,7 +177,7 @@ Cloud \(1\) is near the edge of the loop box but appears solid because of a smal
 **Note**  
 This value, measured in meters, should not exceed half of the length of the loop box in the direction that the cloud is moving\.
 
-## Changing the Cloud Display<a name="component-sky-cloud-display"></a>
+## Changing the Cloud Display {#component-sky-cloud-display}
 
 The **Sky Cloud** component's **Display** parameters change how the cloud is displayed in the viewport\. You can use these parameters to visualize aspects of the cloud\.
 
@@ -213,7 +213,7 @@ When **Display Bounds** is selected, the viewport displays a box that includes a
 **Example**    
 ![\[Example Sky Cloud component with the Display Bounds which displays a box that contains all areas of the cloud.\]](/images/userguide/component/component-sky-cloud-display-4.png)
 
-## Setting Up Cloud Generation Areas<a name="component-sky-cloud-generation-area"></a>
+## Setting Up Cloud Generation Areas {#component-sky-cloud-generation-area}
 
 You can set up cloud generation areas to customize the shape of your cloud\. To define these areas, add **Box Shape** components to child entities under the main parent entity\.
 

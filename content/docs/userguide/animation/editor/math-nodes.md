@@ -3,7 +3,7 @@ description: ' Use the &animation-editor; ''s math nodes to perform math operati
   in &ALYlong;. '
 title: Using Math Nodes
 ---
-# Using Math Nodes<a name="animation-editor-math-nodes"></a>
+# Using Math Nodes {#animation-editor-math-nodes}
 
 Lumberyard's **Animation Editor** features a set of math nodes that perform math operations on various types of input\. The math nodes pass on the result\(s\) of the operation as output\.
 
@@ -13,9 +13,9 @@ Lumberyard's **Animation Editor** features a set of math nodes that perform math
 + [Vector Decompose Nodes](#vector-conversion)
 + [Boolean Logic Node](#boolean-logic-node)
 
-## Rotation Math 2 Node<a name="rotation-math"></a>
+## Rotation Math 2 Node {#rotation-math}
 
-With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap.md#quarternion)\. 
+With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion)\. 
 
 This node multiplies the input rotation and the specified **Default Value** to express an output rotation\. The **Default Value** specifies the rotation of an unconnected input\. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\)\. 
 
@@ -35,7 +35,7 @@ Multiplies the **x** input with the inverse of the **y** input\. You can also us
 
 1. If only one input rotation exists, specify the unconnected rotation values \(X, Y, Z\) for the **Default Value**\.
 
-## Rotation Limit Node<a name="rotation-limit"></a>
+## Rotation Limit Node {#rotation-limit}
 
 ![\[Figure of Rin in the Animation Editor with a rotated foot.\]](/images/userguide/actor-animation/rotation-limit-figure.png)
 
@@ -59,7 +59,7 @@ The **Min angle** can't exceed the **Max angle**\. If it does, the error is disp
 
 ![\[Rotation Limit attributes panel.\]](/images/userguide/actor-animation/rotation-limit-properties.png)
 
-## Vector Decompose Nodes<a name="vector-conversion"></a>
+## Vector Decompose Nodes {#vector-conversion}
 
 Using **Vector Decompose** nodes, you can output one or more specific values of a vector\. 
 
@@ -74,7 +74,7 @@ You don't need to use **Vector Decompose** nodes if you are simply adding or sub
 + **Vector3** to **Vector4** – Adds the **W** component set to `0`\.
 + **Vector4** to **Vector3** – Ignores the **W** component from **Vector4**\.
 
-## Boolean Logic Node<a name="boolean-logic-node"></a>
+## Boolean Logic Node {#boolean-logic-node}
 
 Using the **Boolean Logic** node, you can apply a function to two boolean inputs\. Boolean values are always `1` or `0` \(true or false\), such as a check box item\. The **Boolean Logic** node sees any non\-zero value as true \(`1`\) and any zero value as false \(`0`\)\. For example, values `0.54`, `10.43` or \-`2.25` are all true \(`1`\)\. Only `0.0` values are false \(`0`\)\.
 
@@ -82,7 +82,7 @@ When choosing an output type, you can output from the **Float** output or the **
 
 ![\[Example of a Boolean Logic node in an animation graph.\]](/images/userguide/actor-animation/boolean-logic-node.png)
 
-### Boolean Logic Node Attributes<a name="boolean-logic-node-attributes"></a>
+### Boolean Logic Node Attributes {#boolean-logic-node-attributes}
 
 ![\[Boolean Logic node attributes pane.\]](/images/userguide/actor-animation/boolean-logic-node-attributes.png)
 

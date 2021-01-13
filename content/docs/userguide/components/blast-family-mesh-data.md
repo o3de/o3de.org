@@ -2,7 +2,7 @@
 description: ' Learn about the &ALYlong; Blast Family Mesh Data component. '
 title: Blast Family Mesh Data component
 ---
-# Blast Family Mesh Data component<a name="component-blast-family-mesh-data"></a>
+# Blast Family Mesh Data component {#component-blast-family-mesh-data}
 
 
 ****  
@@ -17,7 +17,7 @@ The **Blast Family Mesh Data** component is provided by the [NVIDIA Blast gem](/
 
 For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/intro.md)\. 
 
-## Blast Family Mesh Data component properties<a name="component-blast-family-mesh-data-properties"></a>
+## Blast Family Mesh Data component properties {#component-blast-family-mesh-data-properties}
 
 ![\[Properties of the Blast Family Mesh Data component\]](/images/userguide/physx/blast/ui-blast-family-mesh-data-component-1.27.png)
 

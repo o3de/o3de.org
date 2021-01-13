@@ -2,7 +2,7 @@
 description: ' Query TPS with Lua scripts in &ALYlong;. '
 title: TPS Querying with Lua
 ---
-# TPS Querying with Lua<a name="ai-tactical-point-lua-interface"></a>
+# TPS Querying with Lua {#ai-tactical-point-lua-interface}
 
 In Lua, there are two ways to use the TPS: 
 + Scriptbinds allow you to use TPS queries from a Lua behavior and have the results returned as a table without any side\-effects\. This can be useful for higher\-level environmental reasoning, such as: 

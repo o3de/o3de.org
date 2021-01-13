@@ -3,14 +3,14 @@ description: ' Use the In-App Purchases Gem to add in-app purchases in your Andr
   and iOS games. '
 title: In-App Purchases Gem
 ---
-# In\-App Purchases Gem<a name="gems-system-gem-inapp-purchases"></a>
+# In\-App Purchases Gem {#gems-system-gem-inapp-purchases}
 
 The In\-App Purchases Gem enables you to implement in\-app purchases in your Android and iOS games\. Platform\-specific information is handled by the provided API, allowing you to use a single implementation of the In\-App Purchases Gem for both Android and iOS\.
 
 **Note**  
 For Android, you must install the Google Play billing library from the Android SDK Manager\. You can find this option under the extras section\.
 
-## Handling Requests for Queries and Purchases<a name="gem-inapp-purchases-requests-for-queries-purchases"></a>
+## Handling Requests for Queries and Purchases {#gem-inapp-purchases-requests-for-queries-purchases}
 
 You can access the API through code by connecting to the EBus:
 
@@ -78,7 +78,7 @@ Parameters: None
 Use this method to clear the details for purchased products that were cached by the previous call to query details for purchased products\.  
 Parameters: None
 
-## Handling Responses to Queries and Purchases<a name="gem-inapp-purchases-responses-to-queries-purchases"></a>
+## Handling Responses to Queries and Purchases {#gem-inapp-purchases-responses-to-queries-purchases}
 
 When a user makes a query or a purchase, the API sends the request to Apple or Google servers\. Once a response is received, the API broadcasts the response on the `InAppPurchasesResponse` bus\.
 

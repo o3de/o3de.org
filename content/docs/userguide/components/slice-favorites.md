@@ -3,7 +3,7 @@ description: ' Make slices easier to instantiate by flagging them as favorites i
   &ALYlong;''s &component-system;. '
 title: Slice Favorites
 ---
-# Slice Favorites<a name="component-slice-favorites"></a>
+# Slice Favorites {#component-slice-favorites}
 
 You can flag a slice as a favorite to make it easier to access and instantiate into your scenes\. To use the slice favorites feature, enable the [Slice Favorites](/docs/userguide/gems/builtin/slice-favorites.md) gem\.
 
@@ -14,7 +14,7 @@ Slice favorites are:
 + Stored in a directory structure that you can organize and rename to suit your work flow\.
 + Shared by importing or exporting\.
 
-## Opening the Slice Favorites Panel<a name="slice-favorites-panel"></a>
+## Opening the Slice Favorites Panel {#slice-favorites-panel}
 
 Your slice favorites appear in the **Slice Favorites** panel, where you can reorganize and manage them\.
 
@@ -26,7 +26,7 @@ Your slice favorites appear in the **Slice Favorites** panel, where you can reor
   The **Slice Favorites** panel appears in its default location, above the **Entity Inspector**\.  
 ![\[The Slice Favorites panel is displayed above the Entity Inspector.\]](/images/userguide/component/component-slice-favorites-panel2.png)
 
-## Flagging a Slice as a Favorite<a name="flagging-slice-as-favorite"></a>
+## Flagging a Slice as a Favorite {#flagging-slice-as-favorite}
 
 You can flag a slice as a favorite so that your slice appears in the **Slice Favorites** panel\.
 
@@ -35,7 +35,7 @@ You can flag a slice as a favorite so that your slice appears in the **Slice Fav
 + Right\-click a slice and choose **Add as slice favorite**\.
 + Drag a slice to the **Slice Favorites** panel\.
 
-## Removing a Slice Favorite<a name="removing-slice-favorite"></a>
+## Removing a Slice Favorite {#removing-slice-favorite}
 
 You can remove a slice favorite so that it no longer appears in the **Slice Favorites** panel\.
 
@@ -43,7 +43,7 @@ You can remove a slice favorite so that it no longer appears in the **Slice Favo
 + In the **Asset Browser**, right\-click the slice and choose **Remove as slice favorite**\.
 + In the **Slice Favorites** panel, right\-click the slice, choose **Remove selected**, and then confirm the removal in the dialog\.
 
-## Managing Slice Favorites<a name="managing-slice-favorites"></a>
+## Managing Slice Favorites {#managing-slice-favorites}
 
 You can perform a variety of actions to manage your slice favorites in the **Slice Favorites** panel\.To manage slices in **Slice Favorites**, you can do the following
 
@@ -72,7 +72,7 @@ Right\-click the **Slice Favorites** panel and choose **Import slice favorites**
 **Export favorites to an XML file**  
 Right\-click the **Slice Favorites** panel and choose **Export slice favorites**, and then select or create an XML to export\.
 
-## Instantiating a Slice Favorite<a name="instantiating-slice-favorites"></a>
+## Instantiating a Slice Favorite {#instantiating-slice-favorites}
 
 **To instantiate a slice favorite, do one of the following:**
 + Right\-click the viewport or **Entity Outliner**, choose **Slice favorites**, and then navigate to the slice you want to instantiate\.  

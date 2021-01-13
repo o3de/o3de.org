@@ -3,7 +3,7 @@ description: ' Use bundle mode to ensure that your asset bundles have the requir
   assets for your &ALY; game. '
 title: Using Bundle Mode to Test Bundles
 ---
-# Using Bundle Mode to Test Bundles<a name="asset-bundler-bundle-mode"></a>
+# Using Bundle Mode to Test Bundles {#asset-bundler-bundle-mode}
 
 Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\. 
 
@@ -13,7 +13,7 @@ Using bundle mode involves two key tasks:
 
 When reporting is enabled, the `sys_report_files_not_found_in_paks` console variable reports when an asset loads that isn't in any of your bundles\. By selectively loading bundles and using the `sys_report_files_not_found_in_paks` command, you can find assets that need to be included in your bundles\.
 
-## Enabling Bundle Mode<a name="asset-bundler-bundle-mode-enabling-bundle-mode"></a>
+## Enabling Bundle Mode {#asset-bundler-bundle-mode-enabling-bundle-mode}
 
 To enable bundle mode, use the `sys_report_files_not_found_in_paks` console variable and specify a value of `1`,`2`, or `3`\. A value of `1` writes missing files as log entries without issuing warning messages\.
 
@@ -27,7 +27,7 @@ The following list shows valid arguments for the `sys_report_files_not_found_in_
 <Every other value> = Error
 ```
 
-### Log File Entries<a name="asset-bundler-bundle-mode-log-file-entries"></a>
+### Log File Entries {#asset-bundler-bundle-mode-log-file-entries}
 
 Missing files are logged with entries similar to the following:
 
@@ -37,7 +37,7 @@ Missing from bundle: @assets@\levels\milestone2\auto_resourcelist.txt
 
 If you use the `sys_report_files_not_found_in_paks` console variable with the launcher, the error messages are written to a log file in your cache user directory\. On a PC, these are located at `lumberyard_version\dev\Cache\project_name\pc\user\log\logs\pakmissingassets.log`\.
 
-### Setting the Console Variable<a name="asset-bundler-bundle-mode-setting-the-console-variable"></a>
+### Setting the Console Variable {#asset-bundler-bundle-mode-setting-the-console-variable}
 
 Enabling the console variable before running the editor or launcher ensures that all missing assets are reported\. To ensure that the console variable is always active when you run the editor or launcher, modify the following files:
 
@@ -47,7 +47,7 @@ Runtime: `lumberyard_version\dev\project_name\autoexec.cfg`
 
 You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)\.
 
-## Bundle Mode Commands<a name="asset-bundler-bundle-mode-bundle-mode-commands"></a>
+## Bundle Mode Commands {#asset-bundler-bundle-mode-bundle-mode-commands}
 
 Bundle mode has two commands:
 + **loadbundles** *<bundle\_directory>* *<extension>* – Loads all the bundles from the specified directory into the game\. If no arguments are supplied, the directory defaults to `Bundles` and the extension to `.pak`\.
@@ -55,7 +55,7 @@ Bundle mode has two commands:
   For example, if you run the Starter Game project and enter the command `loadbundles` without arguments, Lumberyard loads all source files in the `lumberyard_version\dev\StarterGame\Bundles` directory that have the extension `.pak`\.
 + **unloadbundles** – Unload any bundle that was loaded through the `loadbundles` command\.
 
-## Using Bundle Mode Example<a name="asset-bundler-bundle-mode-using-bundle-mode-example"></a>
+## Using Bundle Mode Example {#asset-bundler-bundle-mode-using-bundle-mode-example}
 
 The following procedure shows how bundle mode works\. In the example, game mode is entered when a bundle is missing\.
 

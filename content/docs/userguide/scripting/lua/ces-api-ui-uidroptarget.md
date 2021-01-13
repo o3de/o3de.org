@@ -3,15 +3,15 @@ description: ' Use the UIDropTargetComponent to make UI elements targets for dra
   and drop behavior in &ALYlong;. '
 title: UIDropTargetComponent
 ---
-# UIDropTargetComponent<a name="lua-scripting-ces-api-ui-uidroptarget"></a>
+# UIDropTargetComponent {#lua-scripting-ces-api-ui-uidroptarget}
 
 You can use a drop target component to make an element a target for drag\-and\-drop behavior\.
 
-## UiDropTargetBus<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus"></a>
+## UiDropTargetBus {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus}
 
 Services messages for the `UiDropTargetComponent`\.
 
-### GetDropState<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-getdropstate"></a>
+### GetDropState {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-getdropstate}
 
 Returns the current drop state of the drop target component\.
 
@@ -32,7 +32,7 @@ enum eUiDropState
     };
 ```
 
-### GetOnDropAction<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-getondropaction"></a>
+### GetOnDropAction {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-getondropaction}
 
 Returns the action triggered when a draggable component is dropped on this drop target\.
 
@@ -42,7 +42,7 @@ Returns the action triggered when a draggable component is dropped on this drop 
 const AZStd::string& GetOnDropAction()
 ```
 
-### SetDropState<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-setdropstate"></a>
+### SetDropState {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-setdropstate}
 
 Sets the current drop state of the drop target component\.
 
@@ -54,7 +54,7 @@ Void SetDropState(eUiDropState dragState)
 
 For possible values for `eUiDropState`, see [GetDropState](#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-getdropstate)\.
 
-### SetOnDropAction<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-setondropaction"></a>
+### SetOnDropAction {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetbus-setondropaction}
 
 Sets the action triggered when a draggable component is dropped on this drop target\.
 
@@ -67,11 +67,11 @@ void SetOnDropAction(const AZStd::string& actionName)
 **Tip**  
 A more flexible way to be notified when a drop occurs is to use the [UiDropTargetNotificationBus](#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus)\.
 
-## UiDropTargetNotificationBus<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus"></a>
+## UiDropTargetNotificationBus {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus}
 
 Services notifications for the `UiDropTargetComponent`\.
 
-### OnDrop<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrop"></a>
+### OnDrop {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrop}
 
 Occurs when a draggable component is dropped on this drop target\. The draggable component is passed in\. Implement the game logic of what should happen on drag and drop here\.
 
@@ -81,7 +81,7 @@ Occurs when a draggable component is dropped on this drop target\. The draggable
 void OnDrop(AZ::EntityId draggable)
 ```
 
-### OnDropHoverEnd<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrophoverend"></a>
+### OnDropHoverEnd {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrophoverend}
 
 Occurs when the focus stops being on this drop target during dragging\. The draggable component that is being dragged is passed into this function\.
 
@@ -91,7 +91,7 @@ Occurs when the focus stops being on this drop target during dragging\. The drag
 void OnDropHoverEnd(AZ::EntityId draggable)
 ```
 
-### OnDropHoverStart<a name="lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrophoverstart"></a>
+### OnDropHoverStart {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus-ondrophoverstart}
 
 Occurs when the focus starts to be on this drop target during dragging\. The draggable component that is being dragged is passed into this function\.
 

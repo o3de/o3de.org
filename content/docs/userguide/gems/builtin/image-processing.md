@@ -3,7 +3,7 @@ description: ' Use the Image Processing gem to customize and process image files
   textures in &ALYlong;. '
 title: Image Processing
 ---
-# Image Processing<a name="gems-system-gem-image-processing"></a>
+# Image Processing {#gems-system-gem-image-processing}
 
 The Image Processing gem enables the Texture Settings Editor, which you can use to customize and process image files and textures\.
 

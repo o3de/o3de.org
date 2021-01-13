@@ -3,7 +3,7 @@ description: ' Create new &cloud; cloud gems and resource groups, or modify the 
   included with &ALYlong;. '
 title: '&cloud; Software Engineering Guide'
 ---
-# Cloud Canvas Software Engineering Guide<a name="cloud-canvas-soft-eng-intro"></a>
+# Cloud Canvas Software Engineering Guide {#cloud-canvas-soft-eng-intro}
 
 This section provides in\-depth information for Cloud Canvas Resource Manager and the cloud gem framework\.
 

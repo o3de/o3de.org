@@ -3,7 +3,7 @@ description: ' Use keyboard, mouse, or menu to navigate the &ui-canvas-editor; v
   in &ALYlong;. '
 title: Navigating the Viewport
 ---
-# Navigating the Viewport<a name="ui-editor-navigating-viewport"></a>
+# Navigating the Viewport {#ui-editor-navigating-viewport}
 
 The **UI Editor** features a rectangle with a checkerboard pattern on a dark gray background\.
 

@@ -3,7 +3,7 @@ description: ' Use the Lighting attribute in the &ALYlong; &particle-editor; to 
   the lighting of the particle. '
 title: Lighting Attribute
 ---
-# Lighting Attribute<a name="particle-editor-reference-lighting"></a>
+# Lighting Attribute {#particle-editor-reference-lighting}
 
 In the **Lighting** attribute, specify how to control the particle lighting\.
 

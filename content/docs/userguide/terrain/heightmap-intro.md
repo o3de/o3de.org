@@ -2,7 +2,7 @@
 description: ' Use the heightmap as the base of your terrain in your &ALY; level. '
 title: Using the Terrain Heightmap
 ---
-# Using the Terrain Heightmap<a name="terrain-heightmap-intro"></a>
+# Using the Terrain Heightmap {#terrain-heightmap-intro}
 
 The heightmap is the base of the terrain in your level\. You have three options for obtaining a terrain heightmap:
 + Create a new heightmap using the Terrain Editor

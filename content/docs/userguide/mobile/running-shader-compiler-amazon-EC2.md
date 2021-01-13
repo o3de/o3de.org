@@ -3,7 +3,7 @@ description: ' How to use Amazon Elastic Compute Cloud (Amazon EC2) to run the &
   shader compiler for mobile and macOS development. '
 title: Running the Shader Compiler on Amazon EC2
 ---
-# Running the Shader Compiler on Amazon EC2<a name="ios-android-running-shader-compiler-amazon-EC2"></a>
+# Running the Shader Compiler on Amazon EC2 {#ios-android-running-shader-compiler-amazon-EC2}
 
 Amazon Elastic Compute Cloud \(Amazon EC2\) provides a [GPU instance](https://aws.amazon.com/blogs/aws/build-3d-streaming-applications-with-ec2s-new-g2-instance-type/) that you can use to run the Lumberyard shader compiler for mobile \(Android and iOS\) and macOS development\. For example, you can use the AWS device farm to test a build rather than hosting a PC on a public IP address\. Amazon EC2 also provides a G2 instance type that supports advanced rendering features such as texturing, shadows, and anti\-aliasing\. For more information, see [Amazon EC2 Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Instances.html)\.
 
@@ -21,14 +21,14 @@ To run the Lumberyard shader compiler, you must do the following:
 + [Installing VNC Software](#ios-android-install-VNC-software)
 + [Connecting to the Shader Compiler](#ios-android-connect-shader-compiler)
 
-## Prerequisites<a name="ios-android-shader-compiler-amazon-EC2-prerequisites"></a>
+## Prerequisites {#ios-android-shader-compiler-amazon-EC2-prerequisites}
 
 To run the Lumberyard shader compiler on Amazon EC2, you must have the following:
 + AWS account
 + Familiarity with the [AWS Management Console](https://console.aws.amazon.com/)
 + Understanding of [Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Instances.html), [VNC](https://www.realvnc.com/docs/), security groups, and the Lumberyard tool chain
 
-## Setting Up the Amazon EC2 Instance<a name="ios-android-set-up-amazon-EC2-instance"></a>
+## Setting Up the Amazon EC2 Instance {#ios-android-set-up-amazon-EC2-instance}
 
 Before you can set up the Amazon EC2 instance, you must request a GPU instance using the [Request to Increase Amazon EC2 Instance Limit](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instance-current-limitations) link\. When you are done, follow the steps below\. For information about Windows GPU instances, see [Windows Accelerated Computing Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html)\.
 
@@ -62,7 +62,7 @@ Before you can set up the Amazon EC2 instance, you must request a GPU instance u
 
 1. A confirmation page lets you know that your instance is launching\. Click **View Instances** to close the confirmation page and return to the console\.
 
-## Installing VNC Software<a name="ios-android-install-VNC-software"></a>
+## Installing VNC Software {#ios-android-install-VNC-software}
 
 Once the Amazon EC2 instance is set up, you can install virtual network computing \(VNC\) software to run the shader compiler on the instance\.
 
@@ -84,7 +84,7 @@ If you are using a Mac, you must download Remote Desktop App from the App Store\
 
 1. Leave the VNC window open and then follow the steps in [Connecting to the Shader Compiler](#ios-android-connect-shader-compiler)\.
 
-## Connecting to the Shader Compiler<a name="ios-android-connect-shader-compiler"></a>
+## Connecting to the Shader Compiler {#ios-android-connect-shader-compiler}
 
 Follow these steps to connect to the shader compiler\.
 

@@ -3,7 +3,7 @@ description: Use visual components in &ALYlong;'s &ui-canvas-editor; to add colo
   tints or textures to UI elements.
 title: Image
 ---
-# Image<a name="ui-editor-components-image"></a>
+# Image {#ui-editor-components-image}
 
 You can use an **Image** component to add a color tint or texture to an element\.
 
@@ -32,7 +32,7 @@ Use the **Properties** pane of the [UI Editor](https://docs.aws.amazon.com/lumbe
 | --- | --- | 
 | SpriteType |  Select one of the following: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-components-image.html)  | 
 | Sprite path |  Click the browse \(**…**\) icon and select a suitable file\. Click the open\-in \(arrow\) icon next to **Sprite path** to open the [Sprite Editor](/docs/userguide/ui/editor/sprite-editor.md)\.  | 
-| Render target name |  Enter a name of a render target and press **Enter**\. For more information, see [Adding a Render Target to a UI Element](/docs/userguide/components/render-to-texture.md#adding-render-target-to-UI-element)\.  | 
+| Render target name |  Enter a name of a render target and press **Enter**\. For more information, see [Adding a Render Target to a UI Element](/docs/userguide/components/render-to-texture#adding-render-target-to-UI-element)\.  | 
 | Index |  The sprite sheet image index that the component will render\.  | 
 | Color |  Click the color swatch to select a different color\.  Displays only if the **SpriteType** is **Sprite/Texture asset** and the image has been configured as a sprite sheet using the [Sprite Editor](/docs/userguide/ui/editor/sprite-editor.md)\.  | 
 | Alpha |  Use the slider to choose an alpha value between **0** and **1**\.  | 

@@ -2,15 +2,15 @@
 description: ' See the following AI nodes for the AI system in &ALYlong;. '
 title: AI Nodes
 ---
-# AI Nodes<a name="ai-scripting-mbt-nodes-ai"></a>
+# AI Nodes {#ai-scripting-mbt-nodes-ai}
 
 These nodes provide MBT functionality for the AI system\.
 
-## AdjustCoverStance<a name="ai-scripting-mbt-nodes-ai-adjustcoverstance"></a>
+## AdjustCoverStance {#ai-scripting-mbt-nodes-ai-adjustcoverstance}
 
 Updates the AI agent's cover stance based on the maximum height at which its current cover is effective\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-adjustcoverstance-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-adjustcoverstance-parameters}
 
 **duration**  
 \(Optional\) Length of time \(in seconds\) the node will execute\. Set to **continuous** to specify an unlimited time span\.
@@ -18,21 +18,21 @@ Updates the AI agent's cover stance based on the maximum height at which its cur
 **variation**  
 \(Optional\) Maximum additional time \(in seconds\) that may be randomly added to the value of `duration`, in the range \[0, `variation`\]\. Setting this value causes the wait time to have random variations between different executions of the node\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-adjustcoverstance-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-adjustcoverstance-success}
 
 The node SUCCEEDS if execution of the child runs the length of the specified duration\. The node FAILS if the child is not in cover\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-adjustcoverstance-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-adjustcoverstance-example}
 
 ```
 <AdjustCoverStance duration="5.0" variation="1.0"/>
 ```
 
-## Aim<a name="ai-scripting-mbt-nodes-ai-aim"></a>
+## Aim {#ai-scripting-mbt-nodes-ai-aim}
 
 Sets a location for the AI agent to aim at, and then clears the location when the node stops executing\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-aim-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-aim-parameters}
 
 **at**  
 Location to aim at\. Allowed values include:   
@@ -45,21 +45,21 @@ Location to aim at\. Allowed values include:
 **durationOnceWithinThreshold**  
 \(Optional\) Amount of time \(in seconds\) to continue aiming\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-aim-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-aim-success}
 
 The node SUCCEEDS after aiming at the desired location for the specified duration, if the location is not valid or if the timeout elapses\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-aim-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-aim-example}
 
 ```
 <Aim at="Target" durationOnceWithinThreshold="2.0" />
 ```
 
-## AimAroundWhileUsingAMachingGun<a name="ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun"></a>
+## AimAroundWhileUsingAMachingGun {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun}
 
 Updates the aim direction of the AI agent when using a mounted machine gun\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-parameters}
 
 **maxAngleRange**  
 \(Optional\) Maximum angle to deviate from the original direction\.
@@ -70,21 +70,21 @@ Updates the aim direction of the AI agent when using a mounted machine gun\.
 **useReferencePointForInitialDirectionAndPivotPosition**  
 Boolean\. 
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-success}
 
 The node does not succeed or fail\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-example}
 
 ```
 <AimAroundWhileUsingAMachingGun minSecondsBeweenUpdates="2.5" maxAngleRange="30" useReferencePointForInitialDirectionAndPivotPosition="1"/>
 ```
 
-## Animate<a name="ai-scripting-mbt-nodes-ai-animate"></a>
+## Animate {#ai-scripting-mbt-nodes-ai-animate}
 
 Sets the AI agent to play an animation\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-animate-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-animate-parameters}
 
 **name**  
 Animation to be played\.
@@ -98,30 +98,30 @@ Animation to be played\.
 **setBodyDirectionTowardsAttentionTarget**  
 \(Optional\) Boolean indicating whether or not to change the AI's body target direction to face the attention target\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-animate-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-animate-success}
 
 The node SUCCEEDS when the animation has finished playing, or if the animation failed to be initialized\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-animate-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-animate-example}
 
 ```
 <Animate name="LookAround" loop="1" />
 ```
 
-## AnimationTagWrapper<a name="ai-scripting-mbt-nodes-ai-animationtagwrapper"></a>
+## AnimationTagWrapper {#ai-scripting-mbt-nodes-ai-animationtagwrapper}
 
 Adds an animation tag to the execution of a child node and clears it at the end\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-animationtagwrapper-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-animationtagwrapper-parameters}
 
 **name**  
 Animation tag to be set\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-animationtagwrapper-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-animationtagwrapper-success}
 
 The node returns the result of the execution of its child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-animationtagwrapper-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-animationtagwrapper-example}
 
 ```
 <AnimationTagWrapper name="ShootFromHip">
@@ -129,49 +129,49 @@ The node returns the result of the execution of its child node\.
 </AnimationTagWrapper>
 ```
 
-## AssertCondition<a name="ai-scripting-mbt-nodes-ai-assertcondition"></a>
+## AssertCondition {#ai-scripting-mbt-nodes-ai-assertcondition}
 
 Checks whether or not a specified condition is satisfied\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-assertcondition-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-assertcondition-parameters}
 
 **condition**  
 Condition to be checked\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-assertcondition-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-assertcondition-success}
 
 The node SUCCEEDS if the condition is true, otherwise it FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-assertcondition-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-assertcondition-example}
 
 ```
 <AssertCondition condition="HasTarget" />
 ```
 
-## AssertLua<a name="ai-scripting-mbt-nodes-ai-assertlua"></a>
+## AssertLua {#ai-scripting-mbt-nodes-ai-assertlua}
 
 Executes a Lua script that returns true/false and translates the return value to success/failure\. The result can be used to build preconditions in the MBT\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-assertlua-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-assertlua-parameters}
 
 **code**  
 Lua script to be executed\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-assertlua-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-assertlua-success}
 
 The node SUCCEEDS if the Lua script returns a value of true, otherwise it FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-assertlua-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-assertlua-example}
 
 ```
 <AssertLua code="return entity:IsClosestToTargetInGroup()" />
 ```
 
-## AssertTime<a name="ai-scripting-mbt-nodes-ai-asserttime"></a>
+## AssertTime {#ai-scripting-mbt-nodes-ai-asserttime}
 
 Checks whether or not a time condition is satisfied\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-asserttime-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-asserttime-parameters}
 
 **since**  
 Name of the time stamp to check for the condition\.
@@ -185,21 +185,21 @@ Condition statement used to test whether the time stamp is less than a specified
 **orNeverBeenSet**  
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-asserttime-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-asserttime-success}
 
 The node SUCCEEDS if the time condition is true, and FAILS if it is false\. If the specified time stamp was not previously set, the node FAILS, unless the parameter `orNeverBeenSet` is true, in which case it SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-asserttime-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-asserttime-example}
 
 ```
 <AssertTime since="GroupLostSightOfTarget" isLessThan="10" orNeverBeenSet="1" />
 ```
 
-## Bubble<a name="ai-scripting-mbt-nodes-ai-bubble"></a>
+## Bubble {#ai-scripting-mbt-nodes-ai-bubble}
 
 Displays a message in a speech bubble above the AI agent\. See [AI Bubbles System](/docs/userguide/ai/bubbles-system.md)\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-bubble-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-bubble-parameters}
 
 **message**  
 Message string to be shown in the speech bubble\.
@@ -213,60 +213,60 @@ Boolean indicating whether or not to display the message in a balloon above the 
 **log**  
 Boolean indicating whether or not to write the message to the general purpose log\. Default is true\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-bubble-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-bubble-success}
 
 The node SUCCEEDS immediately after having queued the message to be displayed\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-bubble-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-bubble-example}
 
 ```
 <Bubble message="MessageToBeDisplayedAndOrLogged" duration="5.0" balloon="true" log="true" />
 ```
 
-## CheckIfTargetCanBeReached<a name="ai-scripting-mbt-nodes-ai-checkiftargetcanbereached"></a>
+## CheckIfTargetCanBeReached {#ai-scripting-mbt-nodes-ai-checkiftargetcanbereached}
 
 Checks whether or not the AI agent's attention target can be reached\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-parameters}
 
 **mode**  
 Target to check for\. Allowed values include:   
 + UseLiveTarget
 + UseAttentionTarget
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-success}
 
 The node SUCCEEDS if the target can be reached, otherwise it FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-example}
 
 ```
 <CheckIfTargetCanBeReached mode="UseLiveTarget" />
 ```
 
-## ClearTargets<a name="ai-scripting-mbt-nodes-ai-cleartargets"></a>
+## ClearTargets {#ai-scripting-mbt-nodes-ai-cleartargets}
 
 Clears the AI agent's targets information\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-cleartargets-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-cleartargets-parameters}
 
 None\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-cleartargets-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-cleartargets-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-cleartargets-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-cleartargets-example}
 
 ```
 <ClearTargets />
 ```
 
-## Communicate<a name="ai-scripting-mbt-nodes-ai-communicate"></a>
+## Communicate {#ai-scripting-mbt-nodes-ai-communicate}
 
 Sends a request to the communication manager to play one of the AI agent's communications\.  
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-communicate-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-communicate-parameters}
 
 **name**  
 The name of the communication to be played\.
@@ -292,40 +292,40 @@ The channel on which the communication is to be set\.
 **ignoreAnim**  
 \(Optional\) Sets the animation component of the communication to be ignored\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-communicate-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-communicate-success}
 
 If the node is set to wait, the node SUCCEEDS when the communication is complete\. Otherwise, it SUCCEEDS once the timeout elapses\. 
 
-### Example<a name="ai-scripting-mbt-nodes-ai-communicate-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-communicate-example}
 
 ```
 <Communicate name="Advancing" channel="Tactic" expiry="1.0" waitUntilFinished="0" />
 ```
 
-## ExecuteLua<a name="ai-scripting-mbt-nodes-ai-executelua"></a>
+## ExecuteLua {#ai-scripting-mbt-nodes-ai-executelua}
 
 Executes a Lua script\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-executelua-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-executelua-parameters}
 
 **code**  
 Script to be executed\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-executelua-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-executelua-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-executelua-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-executelua-example}
 
 ```
 <ExecuteLua code="entity:SetEyeColor(entity.EyeColors.Relaxed)" />
 ```
 
-## GroupScope<a name="ai-scripting-mbt-nodes-ai-groupscope"></a>
+## GroupScope {#ai-scripting-mbt-nodes-ai-groupscope}
 
 Makes execution of a child node conditional on entering the AI agent in a group scope\. Groups allow a limited number of concurrent users\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-groupscope-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-groupscope-parameters}
 
 **name**  
 Name of the group scope to enter\.
@@ -333,11 +333,11 @@ Name of the group scope to enter\.
 **allowedConcurrentUsers**  
 \(Optional\) Maximum number of simultaneous users allowed in the specified group scope\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-groupscope-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-groupscope-success}
 
 The node FAILS if the AI agent cannot enter the group scope; otherwise, it returns the result of executing the child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-groupscope-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-groupscope-example}
 
 ```
 <GroupScope name="DeadBodyInvestigator" allowedConcurrentUsers="1">
@@ -345,20 +345,20 @@ The node FAILS if the AI agent cannot enter the group scope; otherwise, it retur
 </GroupScope>
 ```
 
-## IfCondition<a name="ai-scripting-mbt-nodes-ai-ifcondition"></a>
+## IfCondition {#ai-scripting-mbt-nodes-ai-ifcondition}
 
 Executes a child node if a specified condition is satisfied\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-ifcondition-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-ifcondition-parameters}
 
 **condition**  
 Condition statement to be checked\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-ifcondition-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-ifcondition-success}
 
 If the condition is satisfied, the node returns the result of executing the child node\. If the condition is not satisfied, the node FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-ifcondition-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-ifcondition-example}
 
 ```
 <IfCondition condition="TargetVisible">
@@ -366,11 +366,11 @@ If the condition is satisfied, the node returns the result of executing the chil
 </IfCondition>
 ```
 
-## IfTime<a name="ai-scripting-mbt-nodes-ai-iftime"></a>
+## IfTime {#ai-scripting-mbt-nodes-ai-iftime}
 
 Executes a child node if a time condition is satisfied\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-iftime-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-iftime-parameters}
 
 **since**  
 Name of the time stamp to check for the condition\.
@@ -384,11 +384,11 @@ Condition statement test whether the time stamp is less than a specified value\.
 **orNeverBeenSet**  
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-iftime-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-iftime-success}
 
 If the time condition is true, the node returns the result of executing the child node\. It FAILS if the time condition is false\. If the specified time stamp was not previously set, the node FAILS, unless the parameter `orNeverBeenSet` is true, in which case it SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-iftime-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-iftime-example}
 
 ```
 <IfTime since="FragGrenadeThrownInGroup" isMoreThan="5.0" orNeverBeenSet="1">
@@ -396,30 +396,30 @@ If the time condition is true, the node returns the result of executing the chil
 </IfTime>
 ```
 
-## Log<a name="ai-scripting-mbt-nodes-ai-log"></a>
+## Log {#ai-scripting-mbt-nodes-ai-log}
 
 Adds a message to the AI agent's personal log\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-log-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-log-parameters}
 
 **message**  
 Message to be logged\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-log-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-log-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-log-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-log-example}
 
 ```
 <Log message="Investigating suspicious activity." />
 ```
 
-## Look<a name="ai-scripting-mbt-nodes-ai-look"></a>
+## Look {#ai-scripting-mbt-nodes-ai-look}
 
 Adds a location for the AI agent to look at, and clears it when the node stops executing\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-look-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-look-parameters}
 
 **at**  
 Location to look at\. Allowed values are:   
@@ -427,30 +427,30 @@ Location to look at\. Allowed values are:
 + RefPoint
 + Target
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-look-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-look-success}
 
 This node does not succeed or fail\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-look-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-look-example}
 
 ```
 <Look at="ClosestGroupMember" />
 ```
 
-## LuaGate<a name="ai-scripting-mbt-nodes-ai-luagate"></a>
+## LuaGate {#ai-scripting-mbt-nodes-ai-luagate}
 
 Executes a child node only if the result from running a Lua script is true\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-luagate-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-luagate-parameters}
 
 **code**  
 Lua script to be executed\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-luagate-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-luagate-success}
 
 The node SUCCEEDS if the result of the Lua script is true, and FAILS if the result is not true\. On success, the node returns the result of executing the child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-luagate-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-luagate-example}
 
 ```
 <LuaGate code="return AI.GetGroupScopeUserCount(entity.id, 'DeadBodyInvestigator') == 0">
@@ -458,11 +458,11 @@ The node SUCCEEDS if the result of the Lua script is true, and FAILS if the resu
 </LuaGate>
 ```
 
-## LuaWrapper<a name="ai-scripting-mbt-nodes-ai-luawrapper"></a>
+## LuaWrapper {#ai-scripting-mbt-nodes-ai-luawrapper}
 
 Runs a Lua script before and/or after the execution of a child node\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-luawrapper-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-luawrapper-parameters}
 
 **onEnter**  
 \(Optional\) Script to be executed at the start\.
@@ -470,11 +470,11 @@ Runs a Lua script before and/or after the execution of a child node\.
 **onExit**  
 \(Optional\) Script to be executed at the end\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-luawrapper-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-luawrapper-success}
 
 The node returns the result of executing the child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-luawrapper-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-luawrapper-example}
 
 ```
 <LuaWrapper onEnter="entity:EnableSearchModule()" onExit="entity:DisableSearchModule()">
@@ -482,30 +482,30 @@ The node returns the result of executing the child node\.
 </LuaWrapper>
 ```
 
-## MonitorCondition<a name="ai-scripting-mbt-nodes-ai-monitorcondition"></a>
+## MonitorCondition {#ai-scripting-mbt-nodes-ai-monitorcondition}
 
 Continuously checks the state of a specified condition\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-monitorcondition-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-monitorcondition-parameters}
 
 **condition**  
 Specifies the condition to be checked\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-monitorcondition-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-monitorcondition-success}
 
 The node SUCCEEDS when the condition is satisfied\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-monitorcondition-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-monitorcondition-example}
 
 ```
 <MonitorCondition condition="TargetVisible" />
 ```
 
-## Move<a name="ai-scripting-mbt-nodes-ai-move"></a>
+## Move {#ai-scripting-mbt-nodes-ai-move}
 
 Moves the AI agent from its current position to a specified destination\. If the destination is a target, then the end position is updated if it is not reached when the target moves\. See [Movement System](/docs/userguide/ai/movement.md)\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-move-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-move-parameters}
 
 **speed**  
 Speed of movement\. Allowed values include:  
@@ -565,21 +565,21 @@ Boolean indicating whether or not an AI agent's pathfinder should avoid actors o
 **lengthToTrimFromThePathEnd**  
 Distance that should be trimmed from a pathfinder path\. Use positive values to trim from the path end , or negative values to trim from the path start\. Default is 0\.0\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-move-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-move-success}
 
 The node SUCCEEDS if the destination is reached\. The node FAILS if the destination is deemed unreachable\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-move-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-move-example}
 
 ```
 <Move to="Target" stance="Alerted" fireMode="Aim" speed="Run" stopWithinDistance="3" />
 ```
 
-## Priority & Case<a name="ai-scripting-mbt-nodes-ai-priority"></a>
+## Priority & Case {#ai-scripting-mbt-nodes-ai-priority}
 
 Prioritizes to selects from a set of possible child nodes to execute\. Within a `<Priority>` node, each child node is listed inside a `<Case>` node, which defines a condition statement\. A child node is selected and executed based on \(1\) the first child to have its condition met, and \(2\) in the case of ties, the order the child nodes are listed in\. All but the last child must have a condition statement; the last child listed is the default case, so it's condition must always be true\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-priority-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-priority-parameters}
 
 The `<Priority>` node has no parameters\.
 
@@ -588,11 +588,11 @@ The `<Case>` node has the following parameters:
 **condition**  
 Condition statement used to prioritize a child node\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-priority-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-priority-success}
 
 The node returns the result of the executed child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-priority-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-priority-example}
 
 ```
 <Priority>
@@ -605,30 +605,30 @@ The node returns the result of the executed child node\.
 </Priority>
 ```
 
-## PullDownThreatLevel<a name="ai-scripting-mbt-nodes-ai-pulldownthreatlevel"></a>
+## PullDownThreatLevel {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel}
 
 Lower's the AI agent's perception of the target's threat\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-pulldownthreatlevel-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel-parameters}
 
 **to**  
 
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-pulldownthreatlevel-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-pulldownthreatlevel-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel-example}
 
 ```
 <PullDownThreatLevel to="Suspect" />
 ```
 
-## QueryTPS<a name="ai-scripting-mbt-nodes-ai-querytps"></a>
+## QueryTPS {#ai-scripting-mbt-nodes-ai-querytps}
 
 Performs a TPS query to find a tactical position for the AI agent, and waits for a result\. See [AI Tactical Point System](/docs/userguide/ai/tactical-point-system.md)\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-querytps-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-querytps-parameters}
 
 **name**  
 Name of the TPS query to run\.
@@ -638,30 +638,30 @@ Location to store the result of the TPS query\. Allowed values include:
 + RefPoint
 + Cover \(default\)
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-querytps-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-querytps-success}
 
 The node SUCCEEDS if the TPS returns a tactical position, or FAILS if it does not find a tactical position\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-querytps-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-querytps-example}
 
 ```
 <QueryTPS name="queryName" register="Cover" />
 ```
 
-## RandomGate<a name="ai-scripting-mbt-nodes-ai-randomgate"></a>
+## RandomGate {#ai-scripting-mbt-nodes-ai-randomgate}
 
 Executes a child node \(or not\) based on random chance\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-randomgate-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-randomgate-parameters}
 
 **opensWithChance**  
 Probability to use to determine whether the child node will be executed\. Allowed values include floats 0\.0 to 1\.0\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-randomgate-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-randomgate-success}
 
 The node FAILS if the child node is not executed\. If it is executed, the node SUCCEEDS AND returns the result of the execution of its child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-randomgate-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-randomgate-example}
 
 ```
 <RandomGate opensWithChance="0.5">
@@ -669,49 +669,49 @@ The node FAILS if the child node is not executed\. If it is executed, the node S
 </RandomGate>
 ```
 
-## SendTransitionSignal<a name="ai-scripting-mbt-nodes-ai-sendtransitionsignal"></a>
+## SendTransitionSignal {#ai-scripting-mbt-nodes-ai-sendtransitionsignal}
 
 Sends a signal, destined for a state machine node on the behavior tree, with the explicit intent of causing a change of state\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-sendtransitionsignal-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-sendtransitionsignal-parameters}
 
 **name**  
 Name of the signal to be sent\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-sendtransitionsignal-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-sendtransitionsignal-success}
 
 This node does not succeed or fail\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-sendtransitionsignal-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-sendtransitionsignal-example}
 
 ```
 <SendTransitionSignal name="LeaveSearch" />
 ```
 
-## SetAlertness<a name="ai-scripting-mbt-nodes-ai-setalertness"></a>
+## SetAlertness {#ai-scripting-mbt-nodes-ai-setalertness}
 
 Sets the AI agent's alertness level\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-setalertness-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-setalertness-parameters}
 
 **value**  
 Alertness level\. Allowed values include integers 0 to 2\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-setalertness-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-setalertness-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-setalertness-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-setalertness-example}
 
 ```
 <SetAlertness value="1" />            
 ```
 
-## Shoot<a name="ai-scripting-mbt-nodes-ai-shoot"></a>
+## Shoot {#ai-scripting-mbt-nodes-ai-shoot}
 
 Sets the AI agent to shoot at a target or location\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-shoot-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-shoot-parameters}
 
 **duration**  
 Length of time \(in seconds\) the AI agent should continue shooting\. 
@@ -760,21 +760,21 @@ Body stance while shooting\. Allowed values include:
 **aimObstructedTimeout**  
 \(Optional\) Length of time \(in seconds\) the AI agent's aim can be obstructed before the node will fail\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-shoot-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-shoot-success}
 
 The node SUCCEEDS if it executes for the specified duration\. The node FAILS if the aim is obstructed for longer than the specified timeout\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-shoot-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-shoot-example}
 
 ```
 <Shoot at="Target" stance="Crouch" fireMode="Burst" duration="5" allowedSlopeNormalDeviationFromUpInDegrees="30" stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
-## ShootFromCover<a name="ai-scripting-mbt-nodes-ai-shootfromcover"></a>
+## ShootFromCover {#ai-scripting-mbt-nodes-ai-shootfromcover}
 
 Sets the AI agent to shoot at the target from cover and adjusts its stance accordingly\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-shootfromcover-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-shootfromcover-parameters}
 
 **duration**  
 Length of time \(in seconds\) the node should execute\.
@@ -785,21 +785,21 @@ Firing style\. Allowed values are listed for the [Shoot ](#ai-scripting-mbt-node
 **aimObstructedTimeout**  
 \(Optional\) Length of time \(in seconds\) the AI agent's aim can be obstructed before the node will fail\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-shootfromcover-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-shootfromcover-success}
 
 The node SUCCEEDS if it executes for the specified duration\. The node FAILS if the AI agent is not in cover, if there's no shoot posture, or if the aim is obstructed for longer than the specified timeout\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-shootfromcover-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-shootfromcover-example}
 
 ```
 <ShootFromCover duration="10" fireMode="Burst" aimObstructedTimeout="3" />
 ```
 
-## Signal<a name="ai-scripting-mbt-nodes-ai-signal"></a>
+## Signal {#ai-scripting-mbt-nodes-ai-signal}
 
 Sends a signal to the AI system\. See [Signals](/docs/userguide/ai/scripting/signals.md)\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-signal-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-signal-parameters}
 
 **name**  
 Name of the signal to be sent\.
@@ -807,21 +807,21 @@ Name of the signal to be sent\.
 **filter**  
 \(Optional\) Signal filter to use when sending the signal, which determines which AI agents will receive it\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-signal-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-signal-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-signal-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-signal-example}
 
 ```
 <Signal name="StartedJumpAttack" />
 ```
 
-## SmartObjectStatesWrapper<a name="ai-scripting-mbt-nodes-ai-smartobjectstateswrapper"></a>
+## SmartObjectStatesWrapper {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper}
 
 Sets the states of certain smart objects immediately before and/or after the execution of a child node\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-parameters}
 
 **onEnter**  
 \(Optional\) Smart object states to set at the start\.
@@ -829,11 +829,11 @@ Sets the states of certain smart objects immediately before and/or after the exe
 **onExit**  
 \(Optional\) Smart object states to set at the end\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-success}
 
 The node returns the result of executing the child node\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-example}
 
 ```
 <SmartObjectStatesWrapper onEnter="InSearch" onExit="-InSearch">
@@ -841,11 +841,11 @@ The node returns the result of executing the child node\.
 </SmartObjectStatesWrapper>
 ```
 
-## Stance<a name="ai-scripting-mbt-nodes-ai-stance"></a>
+## Stance {#ai-scripting-mbt-nodes-ai-stance}
 
 Sets the stance of the AI agent\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-stance-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-stance-parameters}
 
 **name**  
 Primary stance style\. Allowed values include:   
@@ -860,24 +860,24 @@ Primary stance style\. Allowed values include:
 **allowedSlopeNormalDeviationFromUpInDegrees**  
 \(Optional\) Maximum allowed steepness \(in degrees of inclination above horizontal\) to set the primary stance\. At positions that exceed this slope, the alternative stance is used\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-stance-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-stance-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-stance-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-stance-example}
 
 ```
 <Stance name="Crouch" allowedSlopeNormalDeviationFromUpInDegrees="30" stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
-## StopMovement<a name="ai-scripting-mbt-nodes-ai-stopmovement"></a>
+## StopMovement {#ai-scripting-mbt-nodes-ai-stopmovement}
 
 Sends a request to the Movement system to stop all movements\. See [Movement System](/docs/userguide/ai/movement.md)\. 
 
 **Note**  
 This may not immediately stop the AI agent The Movement system may be dependent on animations and physics that dictate a 'natural' stop rather than an immediate cessation of movement\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-stopmovement-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-stopmovement-parameters}
 
 **waitUntilStopped**  
 Boolean indicating whether or not the node should wait for the Movement System to finish processing the request\.
@@ -885,39 +885,39 @@ Boolean indicating whether or not the node should wait for the Movement System t
 **waitUntilIdleAnimation**  
 Boolean indicating whether or not the node should wait until the Motion\_Idle animation fragment begins running in Mannequin\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-stopmovement-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-stopmovement-success}
 
 The node SUCCEEDS if the stop request has been completed\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-stopmovement-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-stopmovement-example}
 
 ```
 <StopMovement waitUntilStopped="1" waitUntilIdleAnimation="0" />
 ```
 
-## Teleport<a name="ai-scripting-mbt-nodes-ai-teleport"></a>
+## Teleport {#ai-scripting-mbt-nodes-ai-teleport}
 
 Moves the AI agent when both the destination point and source point are outside the camera view\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-teleport-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-teleport-parameters}
 
 None\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-teleport-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-teleport-success}
 
 The node always SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-teleport-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-teleport-example}
 
 ```
 <Teleport />
 ```
 
-## ThrowGrenade<a name="ai-scripting-mbt-nodes-ai-throwgrenade"></a>
+## ThrowGrenade {#ai-scripting-mbt-nodes-ai-throwgrenade}
 
 Triggers the AI agent to attempt a grenade throw\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-throwgrenade-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-throwgrenade-parameters}
 
 **timeout**  
 Maximum length of time \(in seconds\) to wait for the grenade to be thrown\.
@@ -928,21 +928,21 @@ Grenade type to throw\. Allowed values include:
 + frag
 + smoke
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-throwgrenade-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-throwgrenade-success}
 
 The node SUCCEEDS if a grenade is thrown before it times out, otherwise the node FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-throwgrenade-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-throwgrenade-example}
 
 ```
 <ThrowGrenade type="emp" timeout="3" />
 ```
 
-## WaitUntilTime<a name="ai-scripting-mbt-nodes-ai-waituntiltime"></a>
+## WaitUntilTime {#ai-scripting-mbt-nodes-ai-waituntiltime}
 
 Executes until a time condition is satisfied\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-ai-waituntiltime-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-ai-waituntiltime-parameters}
 
 **since**  
 Name of the time stamp to check for the condition\.
@@ -956,11 +956,11 @@ Condition statement used to test whether the time stamp is less than a specified
 **succeedIfNeverBeenSet**  
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-ai-waituntiltime-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-ai-waituntiltime-success}
 
 The node SUCCEEDS if the time condition is true\. If the specified time stamp was not previously set, the node FAILS, unless the parameter `succeedIfNeverBeenSet` is true, in which case it SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-ai-waituntiltime-example"></a>
+### Example {#ai-scripting-mbt-nodes-ai-waituntiltime-example}
 
 ```
 <WaitUntilTime since="BeingShotAt" isMoreThan="7" />

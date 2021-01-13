@@ -2,7 +2,7 @@
 description: ' Develop DirectX 12 supported applications in &ALYlong;. '
 title: Building DirectX 12 Supported Applications
 ---
-# Building DirectX 12 Supported Applications<a name="graphics-rendering-directx"></a>
+# Building DirectX 12 Supported Applications {#graphics-rendering-directx}
 
 Lumberyard includes a preview of DirectX 12, which provides the framework for you to build DirectX 12 supported applications and develop features\. DirectX 12 provides the following benefits for developing applications:
 + Slightly faster overall GPU performance on NVIDIA cards\.

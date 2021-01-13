@@ -2,7 +2,7 @@
 description: ' See the following example for dynamic covers in &ALYlong;. '
 title: 'Individual AI: Dynamic Covers'
 ---
-# Individual AI: Dynamic Covers<a name="ai-concepts-example-dynamic-covers"></a>
+# Individual AI: Dynamic Covers {#ai-concepts-example-dynamic-covers}
 
 **Example: CoverSurface and HMMWV**
 

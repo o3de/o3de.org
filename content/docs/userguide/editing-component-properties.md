@@ -2,7 +2,7 @@
 description: ' Edit component properties that are attached to your entities in &ALYlong;. '
 title: Editing Component Properties
 ---
-# Editing Component Properties<a name="editing-component-properties"></a>
+# Editing Component Properties {#editing-component-properties}
 
 You can edit properties for your components such as changing the mesh asset file for the **Mesh** component\.
 
@@ -22,7 +22,7 @@ To save a change to a slice, see [Modifying a Slice and Saving Changes](/docs/us
 To revert an override, see [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)
 For more information about slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
-## Copying and Pasting Asset References<a name="component-entity-inspector-assetref"></a>
+## Copying and Pasting Asset References {#component-entity-inspector-assetref}
 
 In the **Entity Inspector**, you can copy an asset reference from one component and paste it into another component\. You can copy assets as scripts, mesh assets, particle effect libraries, cubemap assets, and so on\.
 
@@ -35,7 +35,7 @@ In the **Entity Inspector**, you can copy an asset reference from one component 
 1. Select another component, right\-click the asset reference field, and choose **Paste asset reference**\.  
 ![\[Copy and paste asset references between components.\]](/images/userguide/component/component-entity-inspector-assetref.png)
 
-## Creating Custom Component Help Topics<a name="component-entity-inspector-help"></a>
+## Creating Custom Component Help Topics {#component-entity-inspector-help}
 
 If you have created your own components, you can point the component header's help icon to your own documentation\.
 

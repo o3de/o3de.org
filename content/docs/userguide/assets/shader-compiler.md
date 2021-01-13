@@ -3,7 +3,7 @@ description: ' Use the shader compiler proxy component in &ALYlong; to forward s
   compiler requests through the &asset-processor; connection. '
 title: Shader Compiler Proxy
 ---
-# Shader Compiler Proxy<a name="asset-pipeline-shader-compiler"></a>
+# Shader Compiler Proxy {#asset-pipeline-shader-compiler}
 
 Some mobile devices may be connected via a USB TCP/IP tunnel and may not have direct network access to a shader compiler server\. The shader compiler proxy component in Lumberyard allows such devices to forward shader compiler requests through the Asset Processor connection\.
 

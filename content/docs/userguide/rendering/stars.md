@@ -2,13 +2,13 @@
 description: ' Generate a .dat file for sky rendering in &ALYlong;. '
 title: Generating Stars .dat File
 ---
-# Generating Stars \.dat File<a name="graphics-rendering-stars"></a>
+# Generating Stars \.dat File {#graphics-rendering-stars}
 
 The Stars `.dat` file contains star data that is used in sky rendering\. This topic provides information you'll need if you want to modify the data in this file\. It assumes you have some familiarity with generating binary files\.
 
 Star data is located in `Build\Engine\EngineAssets\Sky\stars.dat`\. This data is loaded in the function `CStars::LoadData`, implemented in the file `CRESky.cpp`\.
 
-## File Format<a name="graphics-rendering-stars-file-format"></a>
+## File Format {#graphics-rendering-stars-file-format}
 
 The Stars `.dat` file uses a simple binary format; it can be easily modified using an editing tool\. The file starts with a header, followed by entries for each star\. The header specifies the number of entries in the file\. 
 

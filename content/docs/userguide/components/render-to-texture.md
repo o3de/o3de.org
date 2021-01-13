@@ -2,7 +2,7 @@
 description: ' Use the Render to Texture component to create render targets in &ALYlong;. '
 title: Render to Texture
 ---
-# Render to Texture<a name="component-render-to-texture"></a>
+# Render to Texture {#component-render-to-texture}
 
 
 ****  
@@ -25,7 +25,7 @@ To enable this component, you must enable the [Render to Texture](/docs/userguid
 + [EBus Notification Bus Interface](#component-render-to-texture-notification-ebus)
 + [Known Limitations](#component-render-to-texture-limitations)
 
-## Adding the Render to Texture Component in a Scene<a name="adding-render-to-texture-to-scene"></a>
+## Adding the Render to Texture Component in a Scene {#adding-render-to-texture-to-scene}
 
 **Example**  
 Entity \(**1**\) has a **[Camera](/docs/userguide/components/camera.md)** component and a **Render to Texture** component\. This entity faces a game object, entity \(**2**\)\. In entity \(**1**\), the **Render to Texture** component specifies a render target\. A material file references that render target as its diffuse texture\. The material is then added to entity \(**3**\), so that the render target appears in the viewport\.  
@@ -60,7 +60,7 @@ The `$` character tells Lumberyard that the texture will not be loaded from disk
 
    The primitive plane entity now shows the texture from the **Render to Texture** component\.
 
-## Adding a Render Target to a UI Element<a name="adding-render-target-to-UI-element"></a>
+## Adding a Render Target to a UI Element {#adding-render-target-to-UI-element}
 
 You can also specify the render target in an **Image** component for a UI element\. For example, you can add the render target to appear in a button or object that a user can select in a UI menu\. 
 
@@ -88,7 +88,7 @@ A camera entity \(**1**\) faces the **Render to Texture** entity \(**2**\), whic
    The UI **Image** component displays the render target in the **UI Editor**\.  
 ![\[Add the render target to the Render target name in an Image component.\]](/images/userguide/component/component-render-to-texture-UI-element.png)
 
-## Render to Texture Properties<a name="component-render-to-texture-properties"></a>
+## Render to Texture Properties {#component-render-to-texture-properties}
 
 ![\[Render to Texture component properties.\]](/images/userguide/component/component-render-to-texture-2.png)
 
@@ -117,7 +117,7 @@ The **Render to Texture** component has the following properties\.
 |  **Display Debug Image**  | Displays debug overlay images in Lumberyard Editor only\. | 
 |  **Update in editor**  |  Enables updating the render target outside of game mode while in Lumberyard Editor\.  | 
 
-## EBus Request Bus Interface<a name="component-render-to-texture-ebus"></a>
+## EBus Request Bus Interface {#component-render-to-texture-ebus}
 
 You can use the event bus \(EBus\) interface to communicate with other components in your game\.
 
@@ -135,7 +135,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 |  `SetMaxFPS`  |  Sets the maximum rate at which this render target updates, in frames per second\.  |  `FPS`  |  None  |  Yes  | 
 |  `SetWriteGamma`  |  Enables or disables gamma application\.  |  `0` = Disable `1`= Enable  |  None  |  Yes  | 
 
-## EBus Notification Bus Interface<a name="component-render-to-texture-notification-ebus"></a>
+## EBus Notification Bus Interface {#component-render-to-texture-notification-ebus}
 
 You can use the event bus \(EBus\) interface to communicate with other components in your game\.
 
@@ -149,11 +149,11 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 |  `OnPreRenderToTexture`  |  Called before rendering to texture begins for each **Render to Texture** component\.  |  None  |  None  |  Yes  | 
 |  `OnPostRenderToTexture`  |  Called after rendering to texture is finished for each **Render to Texture** component\.  | None | None |  Yes  | 
 
-## Known Limitations<a name="component-render-to-texture-limitations"></a>
+## Known Limitations {#component-render-to-texture-limitations}
 
 The **Render to Texture** component supports DirectX 11 for Windows\.
 
-### Prevent Graphical Artifacts When Render to Texture is Active with the Following CVARs<a name="prevent-graphical-artifacts"></a>
+### Prevent Graphical Artifacts When Render to Texture is Active with the Following CVARs {#prevent-graphical-artifacts}
 
 Forces the object LOD to update at the beginning of the frame instead of the end of the previous frame\. If you don't set this console variable, you may see LOD flickering\.
 
@@ -200,7 +200,7 @@ To fix this, increase the value for `r_TexturesStreamPoolSize`, or set the **Max
 **Tip**  
 To verify if the graphics artifacts are a result of streaming thrashing, set `r_TexturesStreamingDebug` to `2`\. This console variable shows the textures that are streamed in and the memory usage\.
 
-### Unsupported Features in the Render Target<a name="unsupported-for-render-to-texture"></a>
+### Unsupported Features in the Render Target {#unsupported-for-render-to-texture}
 
 The following features are not supported for the **Render to Texture** component because they don't work with multiple cameras\.
 + TAA and SMAA

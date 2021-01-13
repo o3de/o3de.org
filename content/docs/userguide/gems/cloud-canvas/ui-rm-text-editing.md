@@ -3,20 +3,20 @@ description: ' Use the &cloud; Resource Manager UI or an external editor to edit
   &cloud; text files in your &ALYlong; project. '
 title: Editing Resource Manager Files
 ---
-# Editing Resource Manager Files<a name="cloud-canvas-ui-rm-text-editing"></a>
+# Editing Resource Manager Files {#cloud-canvas-ui-rm-text-editing}
 
-The navigation pane in the **Cloud Canvas Resource Manager** dialog contains a number of nodes that represent text files that are stored on disk\. The [resource\-template\.json ](/docs/userguide/gems/cloud-canvas/ui-rm-json-file-nodes.md#cloud-canvas-ui-rm-resource-template-json) node is one example\. 
+The navigation pane in the **Cloud Canvas Resource Manager** dialog contains a number of nodes that represent text files that are stored on disk\. The [resource\-template\.json ](/docs/userguide/gems/cloud-canvas/ui-rm-json-file-nodes#cloud-canvas-ui-rm-resource-template-json) node is one example\. 
 
 The child nodes of template files each represent one section of the parent node template file\. These child nodes can help you locate and edit the resource definition sections of the parent node template file\. 
 
-## Using the Internal Editor<a name="cloud-canvas-ui-rm-text-editing-internal-editor"></a>
+## Using the Internal Editor {#cloud-canvas-ui-rm-text-editing-internal-editor}
 
 When you select a text file node in the navigation pane, the file content and text editing options are shown in the detail pane of **Cloud Canvas Resource Manager**\. You can use the detail pane to view and edit the contents of the file\. Use the **Edit**, **Search** menu item to search for text, and the **Previous** and **Next** buttons to navigate from one match to the next\. After you have modified a file, you can save it by clicking **Save** in the toolbar or by choosing **File**, **Save**\. 
 
 **Note**  
 The changes that you make in the template file child nodes are always saved to the parent node template file\. 
 
-## Using an External Editor<a name="cloud-canvas-ui-rm-text-editing-external-editor"></a>
+## Using an External Editor {#cloud-canvas-ui-rm-text-editing-external-editor}
 
 You can use an external script editor instead of the **Cloud Canvas Resource Manager** to edit files\. You can specify which editor to use in Lumberyard Editor\.
 
@@ -29,7 +29,7 @@ You can use an external script editor instead of the **Cloud Canvas Resource Man
 
  To copy the path of the template file to the clipboard, right\-click the file in the navigation pane and choose **Copy path to clipboard**\. 
 
-## Notes<a name="cloud-canvas-ui-rm-text-editing-notes"></a>
+## Notes {#cloud-canvas-ui-rm-text-editing-notes}
 
 Note the following:
 + Opening a child node of a template file in a script editor opens the full \(parent\) file for editing\. 

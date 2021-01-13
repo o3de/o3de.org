@@ -3,21 +3,21 @@ description: ' Learn programming details of &ALYlong;''s behavior context and it
   reflection API. '
 title: Behavior Context in Depth
 ---
-# Behavior Context in Depth<a name="component-entity-system-behavior-context-in-depth"></a>
+# Behavior Context in Depth {#component-entity-system-behavior-context-in-depth}
 
 In Lumberyard 1\.8, the *behavior context* replaces *script context*\. The behavior context works with *serialize context*, *edit context*, and *network context* to provide rich C\+\+ reflection\. The behavior context focuses on the runtime aspects of C\+\+ code and allows you to manipulate C\+\+ code and objects while they are being created\. All script bindings, including Lua, use this reflection\. Reflection is also used for modification of objects while in running state \(such as animating object properties\) and reading of current properties for component state transitions\. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts in order to implement reloading\. At a high level, the behavior context uses only a few primitives on which to build: properties, methods, classes, EBuses and attributes\.
 
 For C\+\+ API reference documentation on the behavior context, see the [BehaviorContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_behavior_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
-## Reflection API<a name="component-entity-system-behavior-context-reflection-api"></a>
+## Reflection API {#component-entity-system-behavior-context-reflection-api}
 
 This section describes how methods, properties, classes, and other primitives are used in the Lumberyard reflection API\.
 
-### Method<a name="component-entity-system-behavior-context-methods"></a>
+### Method {#component-entity-system-behavior-context-methods}
 
 Methods reflect a C\+\+ function\. You can have global or class methods\. Each method must have a unique name for its scope \(global or class\)\. You can also provide default values; this allows you to call reflected methods with fewer arguments\. Default values are used right to left\. You can also provide a debug description for your method\. It's highly recommended that you do so\. The debug description information is provided to users for context when they use the reflection, as is done with `ClassView` in the Lua editor\. The system automatically generates a description that includes result and argument types\. However, adding intent and additional details to your descriptions greatly improves the usability of your reflection\. This is especially important when a method has many attributes\.
 
-### Property<a name="component-entity-system-behavior-context-properties"></a>
+### Property {#component-entity-system-behavior-context-properties}
 
 Properties access data and can be global properties or class properties\. Each property must have a unique name for its scope\. As is customary, a property has getter and setter methods\. If you don't provide a setter method for a property, the property is read only\. If you don't provide a getter method, the property is write only\.
 
@@ -25,15 +25,15 @@ Lumberyard does support global functions, member functions, and Lambda functions
 
 Lumberyard provides macros that you can use to wrap a class value\. You can use `BehaviorValueProperty(&value)` to implement getter and setter methods, or you can implement them individually by using `BehaviorValueGetter` and `BehaviorValueSetter`\. These macros implement Lambda functions for those values\. When the state of your object is modified, you might have to perform operations other than simply setting the value\. For this reason, it is a best practice to always implement your getters and setters\. You can always change your implementation later\.
 
-### Constant<a name="component-entity-system-behavior-context-constants"></a>
+### Constant {#component-entity-system-behavior-context-constants}
 
 Constants are implemented as read\-only properties and can be global or restricted to a class\. A behavior context macro called `BehaviorConstant` implements the Lambda getter for you\.
 
-### Enum<a name="component-entity-system-behavior-context-enum"></a>
+### Enum {#component-entity-system-behavior-context-enum}
 
 Because class enums often require casting, Lumberyard currently treats all enums values as `int`\. Enums are implemented as read\-only `int` properties\.
 
-### Class<a name="component-entity-system-behavior-context-class"></a>
+### Class {#component-entity-system-behavior-context-class}
 
 Reflects a C\+\+ class or struct\. You can provide an optional name\. If you do not provide a name, the class name from `AzTypeInfo` is used\. That name must be unique for the scope\. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality\.
 + **Allocator** \- You can provide a custom allocator/ deallocator for your class\. This allows you to override any existing allocation schema\. If you do not provide a custom allocator, aznew/delete is used \(`AZ_CLASS_ALLOCATOR`\)\.
@@ -45,7 +45,7 @@ Reflects a C\+\+ class or struct\. You can provide an optional name\. If you do 
 + **Enum** \- Enums are int read\-only properties\.
 + **Constant** \- Constants are read\-only properties\.
 
-#### Nested Classes<a name="component-entity-system-behavior-context-nested-classes"></a>
+#### Nested Classes {#component-entity-system-behavior-context-nested-classes}
 
 To bind a nested class to the behavior context, you must do it from within a function on the nested class\. C\+\+ rules about nested class member access from outside scopes make this requirement necessary\.
 
@@ -114,13 +114,13 @@ void Outer::Inner::Reflect(AZ::ReflectContext* context)
 }
 ```
 
-### EBus<a name="component-entity-system-behavior-context-ebus"></a>
+### EBus {#component-entity-system-behavior-context-ebus}
 
 `EBus` Reflects Lumberyard event bus messages\. Depending on your EBus configuration, `Broadcast`, `Event` \(with ID\) and `Queuing` are reflected\. Queuing is a generic function to be executed when the bus messages are consumed\.
 + **Event** \- Reflects an EBus event\. Depending on your EBus configuration, Lumberyard automatically reflects `Broadcast`, `Event`, `QueueBroadCast`, and `QueueEvent.`
 + **Handler** \- Reflects a class that you must implement to forward messages from the EBus to behavior context methods\. You must create a class that can monitor the specified EBus and forward messages to the behavior context\. This is a requirement because the behavior context can not guarantee that there is a handler for each message\. If a message expects a result, you must provide a default result in case the message is not handled by the behavior context user\. Keep in mind that the system creates as many of these handlers as the behavior context requires\. Handlers can also execute in different threads\. As a result, you should avoid static storage for values that change\. The best way to understand this is to examine the example that follows\.
 
-## Example<a name="component-entity-system-behavior-context-example"></a>
+## Example {#component-entity-system-behavior-context-example}
 
 The following code example shows the use of the Lumberyard reflection API\.
 

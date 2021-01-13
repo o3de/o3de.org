@@ -2,11 +2,11 @@
 description: ' Configure &ALYlong;''s GridMate multiplayer sample for use with &AGSlong;. '
 title: Configuring the Multiplayer Sample for &AGSlong;
 ---
-# Configuring the Multiplayer Sample for Amazon GameLift<a name="network-multiplayer-gs-gamelift"></a>
+# Configuring the Multiplayer Sample for Amazon GameLift {#network-multiplayer-gs-gamelift}
 
 To prepare the multiplayer sample for use with Amazon GameLift, follow the required procedures for server\-side and client\-side configuration\.
 
-## Server\-Side Configuration<a name="network-multiplayer-gs-gamelift-server-side-configuration"></a>
+## Server\-Side Configuration {#network-multiplayer-gs-gamelift-server-side-configuration}
 
 On the server side, overwrite the `GridMate::OnSessionStarted()` handler\. In the handler, synchronize the session state and load the corresponding map if the CVAR `sv_map` is set in the `Multiplayer::Utils::SynchronizeSessionState()` function\.
 
@@ -37,9 +37,9 @@ Set the following server CVARs as needed:
 
 `gamelift_flexmatch_start_delay`
 
-For more details on these server CVARs provided by the Multiplayer Gem, see [Server CVars](/docs/userguide/gems/builtin/multiplayer-cvars.md#gems-system-gem-multiplayer-cvars-server)\.
+For more details on these server CVARs provided by the Multiplayer Gem, see [Server CVars](/docs/userguide/gems/builtin/multiplayer-cvars#gems-system-gem-multiplayer-cvars-server)\.
 
-## Client\-Side Configuration<a name="network-multiplayer-gs-gamelift-client-side-configuration"></a>
+## Client\-Side Configuration {#network-multiplayer-gs-gamelift-client-side-configuration}
 
 On the client side, you must configure the following CVARs:
 
@@ -102,7 +102,7 @@ To use CVARs to set the client side configuration, enter the following console c
    1. Choose **Start Matchmaking**\.  
 ![\[Specify the matchmaking Config Name. Choose Start Matchmaking.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-matchmaking-session.png)
 
-## Create an Amazon GameLift Package<a name="network-multiplayer-gs-gamelift-create-gamelift-package"></a>
+## Create an Amazon GameLift Package {#network-multiplayer-gs-gamelift-create-gamelift-package}
 
 To create a Amazon GameLift package, complete the following steps\.
 
@@ -132,7 +132,7 @@ To create a Amazon GameLift package, complete the following steps\.
 
 1. Upload your build and create a fleet from the Amazon GameLift console\. For more information, see [Uploading Your Game to Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-intro.html)\.
 
-## Secured Connection \(Not Amazon GameLift Specific\)<a name="network-multiplayer-gs-gamelift-secured-connection-non-gamelift"></a>
+## Secured Connection \(Not Amazon GameLift Specific\) {#network-multiplayer-gs-gamelift-secured-connection-non-gamelift}
 
 Amazon GameLift uses the OpenSSL\-based secure socket driver to create a secured connection\. However, instead of verifying the server, the secure socket driver can verify the client\.
 

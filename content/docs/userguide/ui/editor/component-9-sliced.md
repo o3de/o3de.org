@@ -3,7 +3,7 @@ description: ' Use the sliced image type to intelligently resize parts of your g
   UI in &ALYlong;''s &ui-canvas-editor; . '
 title: Sliced Image Type
 ---
-# Sliced Image Type<a name="ui-editor-component-9-sliced"></a>
+# Sliced Image Type {#ui-editor-component-9-sliced}
 
 Lumberyard uses slice resizing to resize certain images intelligently\. For example, using regular resizing to widen the following image results in distortion of the corners and edges\.
 

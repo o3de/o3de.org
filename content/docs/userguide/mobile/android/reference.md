@@ -2,7 +2,7 @@
 description: ' Learn &ALYlong; build commands and settings for the Android platform. '
 title: Reference for Android
 ---
-# Reference for Android<a name="android-reference"></a>
+# Reference for Android {#android-reference}
 
  This section is a reference for commands and build settings used by Lumberyard when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\. 
 + [Waf Commands and Options](/docs/userguide/waf/commands.md)
@@ -15,7 +15,7 @@ title: Reference for Android
 + [Other command\-line arguments](#android-command-line-args)
 + [Lumberyard project settings for Android](#android-reference-project-settings)
 
-## Build command reference<a name="android-reference-build"></a>
+## Build command reference {#android-reference-build}
 
  This section contains information on the available build variants and commands that are used to build and deploy Android projects through `lmbr_waf`\. The `lmbr_waf` commands are structured as `command_android_armv8_clang_variant`\. For example, you deploy a debug build to a device with the following command: 
 
@@ -28,7 +28,7 @@ lmbr_waf deploy_android_armv8_clang_debug -p game_and_engine
 
  Valid values for all of these parts of a command are indexed here\. You can also display all available Android build commands by using `lmbr_waf --help` from the command line\. 
 
-### Commands<a name="android-waf-commands"></a>
+### Commands {#android-waf-commands}
 
 **build**  
 Build the currently selected Lumberyard project\.
@@ -42,7 +42,7 @@ Clean local build artifacts\. This command doesn't perform any device cleanup\.
 **package**  
 Package the contents of your project into a single distributable APK\.
 
-### Build variants<a name="android-waf-variants"></a>
+### Build variants {#android-waf-variants}
 
 **debug**  
 Enables debugging\. Does not change or disable any optimizations during compile time\.
@@ -53,7 +53,7 @@ Enables debugging\. Does not change or disable any optimizations during compile 
 **release**  
 Disables debugging and strips debug symbols in the final build\.
 
-## Waf settings<a name="android-waf-settings"></a>
+## Waf settings {#android-waf-settings}
 
  The Waf build system settings can be controlled by either setting an attribute value in `lumberyard_install_dir/dev/_WAF_/user_settings.options`, or by passing an argument on the command line\. The configuration file is written in [INI file format](https://en.wikipedia.org/wiki/INI_file)\. Each of the following reference tables are named after their corresponding INI section header\. 
 
@@ -65,7 +65,7 @@ Disables debugging and strips debug symbols in the final build\.
 | Attribute \(config file\) | Parameter \(command line\) | Description | Default | 
 | --- | --- | --- | --- | 
 | android\_maven\_force\_http | \-\-android\-maven\-force\-http\-requests | Forces Android Maven library requests to use HTTP instead of HTTPS\. | False | 
-| android\_asset\_mode | \-\-android\-asset\-mode |  Specify one of the following asset packaging modes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/android-reference.html) For more information on asset modes, see [Handling assets on Android](/docs/userguide/mobile/android/configure-project.md#android-configure-asset-loading)\.  | configuration\_default | 
+| android\_asset\_mode | \-\-android\-asset\-mode |  Specify one of the following asset packaging modes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/android-reference.html) For more information on asset modes, see [Handling assets on Android](/docs/userguide/mobile/android/configure-project#android-configure-asset-loading)\.  | configuration\_default | 
 
 
 **Android Deploy**  
@@ -88,7 +88,7 @@ Disables debugging and strips debug symbols in the final build\.
 | android\_studio\_project\_name | \-\-android\-studio\-project\-name | Name of the root Android project directory and Android Studio project name\. | LumberyardAndroidSDK | 
 | generate\_android\_projects\_automatically | \-\-generate\-android\-projects\-automatically | Automatically generates Android Studio projects\. | True | 
 
-## Android build configuration file<a name="android-specific-settings"></a>
+## Android build configuration file {#android-specific-settings}
 
  Lumberyard stores some settings for the Android platform in an independent file, `lumberyard_install_dir\dev\_WAF_\android\android_settings.json`\. This file contains a JSON dictionary of build setting names and their values\. 
 
@@ -123,7 +123,7 @@ The default environment, used for daily development\. Building for the Developme
 **Distribution**  
  Build for distribution to the Google Play Store\. This environment requires that you use the `--distro-key-pass` and `--distro-store-pass` arguments to access the distribution key store and your signing key\. 
 
-## Other command\-line arguments<a name="android-command-line-args"></a>
+## Other command\-line arguments {#android-command-line-args}
 
  Android builds use some command\-line arguments that are not stored in a configuration file because they would contain sensitive data, or are best for one\-off use\. There are also some arguments that override some settings that are less commonly changed\. 
 
@@ -148,7 +148,7 @@ The password for the distribution key\. This argument is required when using the
 `--deploy-android-attempt-libs-only`  
  Push only the changed native libraries\. If `deploy_android_executable` is enabled, it takes precedence if the executable was modified\. This option is ignored if `deploy_android_clean_device` is enabled\. This argument only works when deploying to a rooted device\. 
 
-## Lumberyard project settings for Android<a name="android-reference-project-settings"></a>
+## Lumberyard project settings for Android {#android-reference-project-settings}
 
  As part of every Lumberyard project, there is a settings file that describes the application and per\-project build settings\. This file is located at `lumberyard_install_dir/dev/project-name/project.json`\. Within the JSON dictionary contained in this file is the key `android_settings`, with a value of a JSON dictionary that contains the settings used by your project when building and deploying for Android\. 
 

@@ -3,15 +3,15 @@ description: ' Use the UIElementComponent to provide functionality for UI elemen
   in &ALYlong;. '
 title: UIElementComponent
 ---
-# UIElementComponent<a name="lua-scripting-ces-api-ui-uielementcomponent"></a>
+# UIElementComponent {#lua-scripting-ces-api-ui-uielementcomponent}
 
 Provides functionality for UI elements\.
 
-## UiElementBus<a name="lua-scripting-ces-api-ui-uielementcomponent-uielementbus"></a>
+## UiElementBus {#lua-scripting-ces-api-ui-uielementcomponent-uielementbus}
 
 Services messages for the `UiElementComponent`\.
 
-### DestroyElement<a name="lua-scripting-ces-api-ui-uielementcomponent-destroyelement"></a>
+### DestroyElement {#lua-scripting-ces-api-ui-uielementcomponent-destroyelement}
 
 Deletes this element and removes it from its parent element\.
 
@@ -21,7 +21,7 @@ Deletes this element and removes it from its parent element\.
 void DestroyElement()
 ```
 
-### FindChildByName<a name="lua-scripting-ces-api-ui-uielementcomponent-findchildbyname"></a>
+### FindChildByName {#lua-scripting-ces-api-ui-uielementcomponent-findchildbyname}
 
 Returns the first immediate child with the specified name\. Returns `AZ::InvalidEntityId` if no match is found\.
 
@@ -31,7 +31,7 @@ Returns the first immediate child with the specified name\. Returns `AZ::Invalid
 AZ::EntityId FindChildByName(const AZStd::string & name)
 ```
 
-### FindDescendantByName<a name="lua-scripting-ces-api-ui-uielementcomponent-finddescendantbyname"></a>
+### FindDescendantByName {#lua-scripting-ces-api-ui-uielementcomponent-finddescendantbyname}
 
 Returns the first descendent entity with the specified name\. Returns `AZ::InvalidEntityId` if no match is found\.
 
@@ -41,7 +41,7 @@ Returns the first descendent entity with the specified name\. Returns `AZ::Inval
 AZ::EntityId FindDescendantByName(const AZStd::string & name)
 ```
 
-### GetCanvas<a name="lua-scripting-ces-api-ui-uielementcomponent-getcanvas"></a>
+### GetCanvas {#lua-scripting-ces-api-ui-uielementcomponent-getcanvas}
 
 Returns the canvas that contains this element\. Returns `AZ::InvalidEntityId` if the element has no canvas\.
 
@@ -51,7 +51,7 @@ Returns the canvas that contains this element\. Returns `AZ::InvalidEntityId` if
 AZ::EntityId GetCanvas()
 ```
 
-### GetChild<a name="lua-scripting-ces-api-ui-uielementcomponent-getchild"></a>
+### GetChild {#lua-scripting-ces-api-ui-uielementcomponent-getchild}
 
 Returns the child entity ID at the specified index\. The specified index must be less than `GetNumChildElements()`\.
 
@@ -61,7 +61,7 @@ Returns the child entity ID at the specified index\. The specified index must be
 AZ::EntityId GetChild(int index)
 ```
 
-### GetChildren<a name="lua-scripting-ces-api-ui-uielementcomponent-getchildren"></a>
+### GetChildren {#lua-scripting-ces-api-ui-uielementcomponent-getchildren}
 
 Returns the child entity IDs of this element\.
 
@@ -71,7 +71,7 @@ Returns the child entity IDs of this element\.
 AZStd::vector<AZ::EntityId> GetChildren()
 ```
 
-### GetIndexOfChildByEntityId<a name="lua-scripting-ces-api-ui-uielementcomponent-getindexofchildbyentityid"></a>
+### GetIndexOfChildByEntityId {#lua-scripting-ces-api-ui-uielementcomponent-getindexofchildbyentityid}
 
 Returns the index of the specified child element\.
 
@@ -81,7 +81,7 @@ Returns the index of the specified child element\.
 int GetIndexOfChildByEntityId(AZ::EntityId childId) 
 ```
 
-### GetName<a name="lua-scripting-ces-api-ui-uielementcomponent-getname"></a>
+### GetName {#lua-scripting-ces-api-ui-uielementcomponent-getname}
 
 Returns the name of this element\.
 
@@ -91,7 +91,7 @@ Returns the name of this element\.
 AZStd::string GetName()
 ```
 
-### GetNumChildElements<a name="lua-scripting-ces-api-ui-uielementcomponent-getnumchildelements"></a>
+### GetNumChildElements {#lua-scripting-ces-api-ui-uielementcomponent-getnumchildelements}
 
 Returns the number of child elements of this element\.
 
@@ -101,7 +101,7 @@ Returns the number of child elements of this element\.
 int GetNumChildElements()
 ```
 
-### GetParent<a name="lua-scripting-ces-api-ui-uielementcomponent-getparent"></a>
+### GetParent {#lua-scripting-ces-api-ui-uielementcomponent-getparent}
 
 Returns the parent entity ID of this element\. Returns an invalid entity ID if the element has no parent\.
 
@@ -111,7 +111,7 @@ Returns the parent entity ID of this element\. Returns an invalid entity ID if t
 AZ::EntityId GetParent()
 ```
 
-### IsAncestor<a name="lua-scripting-ces-api-ui-uielementcomponent-isancestor"></a>
+### IsAncestor {#lua-scripting-ces-api-ui-uielementcomponent-isancestor}
 
 Returns whether a specified element is an ancestor of this element\.
 
@@ -121,7 +121,7 @@ Returns whether a specified element is an ancestor of this element\.
 bool IsAncestor(AZ::EntityId id)
 ```
 
-### IsEnabled<a name="lua-scripting-ces-api-ui-uielementcomponent-isenabled"></a>
+### IsEnabled {#lua-scripting-ces-api-ui-uielementcomponent-isenabled}
 
 Returns true if the element is enabled; false otherwise\.
 
@@ -131,7 +131,7 @@ Returns true if the element is enabled; false otherwise\.
 bool IsEnabled()
 ```
 
-### Reparent<a name="lua-scripting-ces-api-ui-uielementcomponent-reparent"></a>
+### Reparent {#lua-scripting-ces-api-ui-uielementcomponent-reparent}
 
 Makes this element the child of a different parent\. The element is removed from its current parent and added as a child of the parent specified by `newParent`\. 
 
@@ -149,7 +149,7 @@ void Reparent(AZ::EntityId newParent, AZ::EntityId insertBefore)
 | newParent | Specifies the entity ID of the new parent element\. If newParent is invalid, the element becomes a top\-level element \(that is, the canvas becomes the parent\)\. | 
 | insertBefore | Child element of the new parent before which to insert this element\. If null, the element is put at the end of the child list\. | 
 
-### SetIsEnabled<a name="lua-scripting-ces-api-ui-uielementcomponent-setisenabled"></a>
+### SetIsEnabled {#lua-scripting-ces-api-ui-uielementcomponent-setisenabled}
 
 Sets the enabled state of the element\.
 

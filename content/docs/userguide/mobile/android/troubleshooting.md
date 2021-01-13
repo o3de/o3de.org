@@ -3,7 +3,7 @@ description: ' Identify and fix common issues seen during Android development wi
   &ALYlong;. '
 title: Troubleshooting &ALY; issues on Android
 ---
-# Troubleshooting Lumberyard issues on Android<a name="troubleshoot-android"></a>
+# Troubleshooting Lumberyard issues on Android {#troubleshoot-android}
 
  Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Amazon Lumberyard to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\. 
 
@@ -16,11 +16,12 @@ For information on how to design assets and configure renderer settings to impro
 + [The unofficial Lumberyard Discord server](https://discord.gg/tWrJ68)
 
 **Topics**
-+ [Black screen when launching on a device](#troubleshoot-android-black-screen)
-+ [Maven repository warnings](#troubleshoot-maven-warnings)
-+ [Debug release APKs](#troubleshoot-android-debug-release)
+- [Troubleshooting Lumberyard issues on Android {#troubleshoot-android}](#troubleshooting-lumberyard-issues-on-android-troubleshoot-android)
+  - [Black screen when launching on a device {#troubleshoot-android-black-screen}](#black-screen-when-launching-on-a-device-troubleshoot-android-black-screen)
+  - [Maven repository warnings {#troubleshoot-maven-warnings}](#maven-repository-warnings-troubleshoot-maven-warnings)
+  - [Debug release APKs {#troubleshoot-android-debug-release}](#debug-release-apks-troubleshoot-android-debug-release)
 
-## Black screen when launching on a device<a name="troubleshoot-android-black-screen"></a>
+## Black screen when launching on a device {#troubleshoot-android-black-screen}
 
  Oftentimes, launching a build and seeing a black screen means that either a map failed to load, or shaders are missing\. You can diagnose and resolve the problem by trying the following actions: 
 +  Inspect logs from `adb`\. Log messages from the Lumberyard engine include the string `LMBR`, and you can filter the output from `adb logcat` to display only these messages\. Use the following command in a Windows command prompt to get the current device logs: 
@@ -53,9 +54,9 @@ For information on how to design assets and configure renderer settings to impro
 
   1. Delete the application from your device, rebuild, and re\-deploy\.
 
-   To run through the full process of setting up a connection from your device to the Shader Compiler, see [Connect to the Shader Compiler](android-build-deploy.md#running-the-shader-compiler-for-android) or [Serving assets over the Virtual File System \(VFS\)](android-configure-project.md#android-vfs)\. 
+   To run through the full process of setting up a connection from your device to the Shader Compiler, see [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy#running-the-shader-compiler-for-android) or [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project#android-vfs)\. 
 
-## Maven repository warnings<a name="troubleshoot-maven-warnings"></a>
+## Maven repository warnings {#troubleshoot-maven-warnings}
 
  As part of a Lumberyard build or configure, you might see some warnings similar to the following\. 
 
@@ -80,7 +81,7 @@ For information on how to design assets and configure renderer settings to impro
 **Note**  
  If you ever regenerate your Android Studio project, you'll need to perform these steps again\. As long as the project isn't overwritten, you can safely run `lmbr_waf configure` without needing to make more changes\. 
 
-## Debug release APKs<a name="troubleshoot-android-debug-release"></a>
+## Debug release APKs {#troubleshoot-android-debug-release}
 
  As part of building for release, debugging symbols are stripped from the final executable\. Whether you're trying to diagnose issues before release or working on something reported by a user in your Google Play Store release, the solution is the same\. Android uses special metadata associated with the APK to determine whether or not the Android debugger is allowed to connect to a release binary\. 
 

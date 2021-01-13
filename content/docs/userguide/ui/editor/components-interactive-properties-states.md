@@ -3,7 +3,7 @@ description: ' The States group of properties defines the appearance of the inte
   element and its child UI elements in &ALY;. '
 title: States
 ---
-# States<a name="ui-editor-components-interactive-properties-states"></a>
+# States {#ui-editor-components-interactive-properties-states}
 
 The **States** group of properties defines the appearance of the interactive element and its child UI elements when the element is in the **Hover**, **Pressed**, and **Disabled** states\.
 

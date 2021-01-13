@@ -2,7 +2,7 @@
 description: ' Export motions from .fbx files with FBX Settings to &ALYlong;. '
 title: FBX Settings motion export
 ---
-# FBX Settings motion export<a name="fbx-motion-export"></a>
+# FBX Settings motion export {#fbx-motion-export}
 
 
 ****  
@@ -13,7 +13,7 @@ title: FBX Settings motion export
 
 **Motions** contain keyframe animated sequences that can be sequenced and blended in **Animation Editor** and applied to actors to create behaviors\. Motions must use identical skeleton hierarchies as their actor counterparts\. 
 
-## Export a motion<a name="fbx-exporting-motions"></a>
+## Export a motion {#fbx-exporting-motions}
 
 1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\. 
 

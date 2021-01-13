@@ -3,7 +3,7 @@ description: Use the lmbr projects command to create new &ALY; projects and list
   projects.
 title: Projects Commands
 ---
-# Projects Commands<a name="lmbr-exe-project"></a>
+# Projects Commands {#lmbr-exe-project}
 
 Use the following commands to create and modify game projects\.
 

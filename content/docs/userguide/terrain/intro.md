@@ -3,7 +3,7 @@ description: ' Add mountains, valleys, lakes, rivers, roads, and other realistic
   elements to your &ALYlong; level. '
 title: Creating Terrain
 ---
-# Creating Terrain<a name="terrain-intro"></a>
+# Creating Terrain {#terrain-intro}
 
 You can add realistic elements such as mountains, valleys, lakes, rivers, and roads to your terrain for your environment levels\.
 

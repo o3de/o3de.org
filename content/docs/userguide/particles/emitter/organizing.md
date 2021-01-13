@@ -4,7 +4,7 @@ description: Organize and create relationships between your emitters. Use folder
   hierarchies.
 title: Organizing Emitters in a Library
 ---
-# Organizing Emitters in a Library<a name="particle-emitter-organizing"></a>
+# Organizing Emitters in a Library {#particle-emitter-organizing}
 
 All particle emitters are listed in the **Libraries** panel\. You can organize and create relationships between your emitters\. For example, you can have single emitters or emitters with various child hierarchies\. You can also create directories and groups in each library to organize your particle effects\. This relationship is displayed in a tree hierarchy in the **Libraries** panel\.
 

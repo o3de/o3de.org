@@ -3,7 +3,7 @@ description: ' Learn about the relationship between &script-canvas; and the beha
   context in &ALYlong;. '
 title: '&script-canvas; and the Behavior Context'
 ---
-# Script Canvas and the Behavior Context<a name="script-canvas-behavior-context"></a>
+# Script Canvas and the Behavior Context {#script-canvas-behavior-context}
 
 **Topics**
 + [The Light Component and Script Canvas](#script-canvas-behavior-context-light-component)
@@ -27,7 +27,7 @@ The behavior context for Script Canvas includes the following benefits:
 + Script Canvas can use any functionality that is exposed to the behavior context, even if it comes from other gems\. Therefore, when code is reflected to the behavior context, gems can enhance Script Canvas\.
 + Reflecting gems to the behavior context removes any need to add gem dependencies to Script Canvas\.
 
-## The Light Component and Script Canvas<a name="script-canvas-behavior-context-light-component"></a>
+## The Light Component and Script Canvas {#script-canvas-behavior-context-light-component}
 
 So that you can better understand the relationship between the behavior context and Script Canvas, this section discusses the fairly simple Light component\. The example shows how its behavior context reflection translates into Script Canvas nodes\.
 
@@ -103,7 +103,7 @@ Script Canvas has a node that gives you access to all the events for EBus\. You 
 
 ![\[Light notification bus\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-3.png)
 
-## Objects: The PhysicsComponent Example<a name="script-canvas-behavior-context-physicscomponent"></a>
+## Objects: The PhysicsComponent Example {#script-canvas-behavior-context-physicscomponent}
 
 Objects that are reflected to the behavior context are also available in Script Canvas\. Objects become available in the form of variables\.
 
@@ -135,7 +135,7 @@ You can use the following graph to set the collision variable:
 
 ![\[Setting the Collision variable\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-5.png)
 
-## Displaying EBus Event Parameter Names in Script Canvas Nodes<a name="script-canvas-behavior-context-parameter-names"></a>
+## Displaying EBus Event Parameter Names in Script Canvas Nodes {#script-canvas-behavior-context-parameter-names}
 
 To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context\. 
 
@@ -188,7 +188,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 }
 ```
 
-## Common Programming Problems<a name="script-canvas-behavior-context-common-programming-problems"></a>
+## Common Programming Problems {#script-canvas-behavior-context-common-programming-problems}
 
 The following are some common problems that occur when programming with Script Canvas and the behavior context\.
 

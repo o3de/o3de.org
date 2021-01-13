@@ -3,7 +3,7 @@ description: ' Learn how AZ Code Generator is integrated with the Waf build syst
   in &ALYlong;. '
 title: 'AZ Code Generator Integration with Waf '
 ---
-# AZ Code Generator Integration with Waf<a name="az-code-gen-waf-integration"></a>
+# AZ Code Generator Integration with Waf {#az-code-gen-waf-integration}
 
 
 ****  
@@ -24,7 +24,7 @@ The minimum required information is a list of the files to pass into the code ge
 + [Command Line Parameters](#az-code-gen-waf-integration-command-line-parameters)
 + [Waf Specific Options](#az-code-gen-waf-integration-waf-options)
 
-## Basic Integration<a name="az-code-gen-waf-integration-basic"></a>
+## Basic Integration {#az-code-gen-waf-integration-basic}
 
 In the `wscript` file for the target requiring generated code, add the `az_code_gen` feature as follows\.
 
@@ -45,7 +45,7 @@ The paths given are relative to the target path in both cases\.
 
 Whenever the specified target is compiled, a code generation task passes in the `MySourceFile.h` file to the code generator\. It also invokes the `MyTemplateDriver.py` file to control the output\. For information on how to write a template driver, see [Template Drivers](/docs/userguide/codegen/template-drivers.md)\.
 
-## Advanced Integration<a name="az-code-gen-waf-integration-advanced"></a>
+## Advanced Integration {#az-code-gen-waf-integration-advanced}
 
 The AZ Code Generator Waf integration uses passes to define the code generator tasks that must be run during build time\. Each pass determines the set of files, drivers, and environment settings with which to run the code generator\. Currently, all passes are run in parallel without any dependency checking between passes\.
 
@@ -70,7 +70,7 @@ This example generates the following two code generation tasks\.
 
 1. Pass in `MyOtherCode/MyOtherSourceFile.h` to the code generator and invoke `MyOtherCode/MyOtherTemplateDriver.py` to control the output\.
 
-## Input Files<a name="az-code-gen-waf-integration-input-files"></a>
+## Input Files {#az-code-gen-waf-integration-input-files}
 
 Each pass provides a list of files that will be used as input to the code generator\. This list can also contain string paths, nodes, and lists\. Top\-level string paths and nodes are passed individually to the code generator\. Note the following:
 + If you provide a list, all files or nodes in that list are used by the code generator at the same time\. This allows for maximum flexibility, but typical usage is one input per task\.
@@ -99,7 +99,7 @@ The following example shows several input file specifications\.
 ]
 ```
 
-## Template Drivers<a name="az-code-gen-waf-integration-template-drivers"></a>
+## Template Drivers {#az-code-gen-waf-integration-template-drivers}
 
 To specify template drivers to use for each code generation pass, provide a list of string paths, relative to the target path, as in the following example\.
 
@@ -112,7 +112,7 @@ To specify template drivers to use for each code generation pass, provide a list
 ],
 ```
 
-## Command Line Parameters<a name="az-code-gen-waf-integration-command-line-parameters"></a>
+## Command Line Parameters {#az-code-gen-waf-integration-command-line-parameters}
 
 All command line parameters for the code generation utility can be specified in each code generation pass\. To do this, provide a list of arguments, as in the following example\.
 
@@ -127,7 +127,7 @@ All command line parameters for the code generation utility can be specified in 
 
 For a full list of parameters, see [AZ Code Generator Parameters](/docs/userguide/codegen/parameters.md)\.
 
-## Waf Specific Options<a name="az-code-gen-waf-integration-waf-options"></a>
+## Waf Specific Options {#az-code-gen-waf-integration-waf-options}
 
 The Waf integration provides additional options that can be specified in a list for each code generation pass, as in the following example\.
 

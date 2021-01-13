@@ -2,9 +2,9 @@
 description: ' Record time demos for player input and camera movement in &ALYlong;. '
 title: Recording Time Demos
 ---
-# Recording Time Demos<a name="recording-time-demos"></a>
+# Recording Time Demos {#recording-time-demos}
 
-## Overview<a name="recordingtimedemos-overview"></a>
+## Overview {#recordingtimedemos-overview}
 
 Lumberyard Editor can record and play back player input and camera movement\.
 
@@ -23,7 +23,7 @@ Average Tri/Sec: 14037316, Tri/Frame: 278071
 Recorded/Played Tris ratio: 0.99
 ```
 
-## Recording Controls<a name="recordingtimedemos-recordingcontrols"></a>
+## Recording Controls {#recordingtimedemos-recordingcontrols}
 
 
 **Optional Title**  
@@ -35,7 +35,7 @@ Recorded/Played Tris ratio: 0.99
 | Start Playback | Shift \+ PrintScreen | demo | 
 | Stop Playback | Ctrl \+ Break | stopdemo | 
 
-## Related Console Variables<a name="recordingtimedemos-relatedconsolevariables"></a>
+## Related Console Variables {#recordingtimedemos-relatedconsolevariables}
 + `stopdemo` – Stops playing a time demo\.
 + `demo demoname` – Plays the time demo from the specified file\.
 + `demo_fixed_timestep` – Specifies the number of updates per second\.

@@ -3,7 +3,7 @@ description: ' Serialize objects from the &ALY; engine to XML or JSON for proces
   by other tools or to load between runtime sessions. '
 title: Object serialization
 ---
-# Object serialization<a name="serialization-intro"></a>
+# Object serialization {#serialization-intro}
 
  The Lumberyard engine offers of object serialization to persist objects between sessions, transmit them between clients, or work with objects between the editor and the engine\. The JSON\-based serialization system is designed to be human\-readable and \-editable, while the XML system is used by many existing Lumberyard tools\. Lumberyard also offers binary serialization, used internally by the Asset Processor\. 
 

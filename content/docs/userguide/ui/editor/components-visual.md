@@ -3,7 +3,7 @@ description: ' Use visual components (image or text) to give an element color an
   texture, or text in &ALYlong;''s &ui-canvas-editor; . '
 title: Visual Components
 ---
-# Visual Components<a name="ui-editor-components-visual"></a>
+# Visual Components {#ui-editor-components-visual}
 
 You can add one visual component to an element: **Image**, **Particle Emitter**, or **Text**\.
 

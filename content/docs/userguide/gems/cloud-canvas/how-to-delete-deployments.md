@@ -2,7 +2,7 @@
 description: ' Delete &cloud; deployments and their resources from your project. '
 title: Deleting &cloud; Deployments and Their Resources
 ---
-# Deleting Cloud Canvas Deployments and Their Resources<a name="cloud-canvas-how-to-delete-deployments"></a>
+# Deleting Cloud Canvas Deployments and Their Resources {#cloud-canvas-how-to-delete-deployments}
 
 To remove Cloud Canvas functionality from your Lumberyard project and the AWS resources related to it, you can use **Cloud Canvas Resource Manager** or the Cloud Canvas command line\. 
 

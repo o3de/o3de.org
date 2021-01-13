@@ -3,7 +3,7 @@ description: ' You can use component edit mode so that you can specifically edit
   component at a time in &ALYlong;. '
 title: Editing Components in the Viewport
 ---
-# Editing Components in the Viewport<a name="edit-mode-for-components"></a>
+# Editing Components in the Viewport {#edit-mode-for-components}
 
 
 ****  
@@ -14,7 +14,7 @@ title: Editing Components in the Viewport
 
 When you're working with components, you can lock a single component for editing\. You can't edit any other components that are attached to the entity\. This feature prevents you from accidentally editing other components that are attached to the entity\. For example, if you have an entity with attached **Spline** and **Mesh** components, you can lock the **Spline** component, make your changes to the spline, and stop editing\.
 
-This feature supports the following components: <a name="supported-components-viewport-interaction-model"></a>
+This feature supports the following components:  {#supported-components-viewport-interaction-model}
 + **[Box Shape](/docs/userguide/components/shapes.md)**
 + **[OccluderArea](/docs/userguide/components/occluder-area.md)**
 + **[Portal](/docs/userguide/components/portal.md)**
@@ -29,7 +29,7 @@ This feature supports the following components: <a name="supported-components-vi
 
 If you want to add this feature to other components, you must make code changes to Lumberyard Editor\. For more information, see the [Programmer's Guide to Component Mode](/docs/userguide/working-with-component-mode-programmatically.md)\.
 
-## Editing a Single Component in the Viewport<a name="editing-components-in-viewport"></a>
+## Editing a Single Component in the Viewport {#editing-components-in-viewport}
 
 For components that support this feature, the component is locked when you edit its properties in the viewport\.
 
@@ -61,7 +61,7 @@ For components that support this feature, the component is locked when you edit 
    The vertices become yellow again\.  
 ![\[Modify the component in the viewport using the manipulator in Lumberyard.\]](/images/userguide/componentmode/using-component-mode-7.png)
 
-## Editing Multiple Components in the Viewport<a name="editing-multiple-component-in-the-viewport"></a>
+## Editing Multiple Components in the Viewport {#editing-multiple-component-in-the-viewport}
 
 In some cases, Component Mode supports editing multiple components\. This is useful when you want to lock a specific component type for editing\. Component Mode supports this feature in the following cases:
 + An entity has dependent components, such as the **Tube Shape** and **Spline** components

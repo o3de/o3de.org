@@ -2,7 +2,7 @@
 description: ' Add colliders to actors in &ALYlong; for NVIDIA Cloth simulations. '
 title: Add Cloth Colliders to actors
 ---
-# Add Cloth Colliders to actors<a name="char_animation_add_cloth_colliders"></a>
+# Add Cloth Colliders to actors {#char_animation_add_cloth_colliders}
 
 
 ****  
@@ -15,7 +15,7 @@ Applying cloth simulation to actors adds realism and dynamism in their every mov
 
 For more information, see the [NVIDIA Cloth Gem documentation](/docs/userguide/nvidia/cloth/_index.md)\. 
 
-## Add Cloth Colliders to an actor<a name="component-cloth-collider-character"></a>
+## Add Cloth Colliders to an actor {#component-cloth-collider-character}
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\. 
 

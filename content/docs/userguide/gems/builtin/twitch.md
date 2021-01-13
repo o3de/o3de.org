@@ -3,7 +3,7 @@ description: ' Become an authorized Twitch development partner to use the Twitch
   in &ALYlong;. '
 title: Twitch Gem
 ---
-# Twitch Gem<a name="gems-system-gem-twitch"></a>
+# Twitch Gem {#gems-system-gem-twitch}
 
  Install the Twitch Gem into your Lumberyard project to access Twitch features\. This gem makes it simple to engage broadcasters and leverage existing Twitch functionality for your game\.
 

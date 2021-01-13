@@ -3,7 +3,7 @@ description: ' Use the UI Canvas Asset Ref component in &ALYlong; to associate a
   canvas with a component entity in a level. '
 title: UI Canvas Asset Ref
 ---
-# UI Canvas Asset Ref<a name="component-ui-canvas-asset-ref"></a>
+# UI Canvas Asset Ref {#component-ui-canvas-asset-ref}
 
 With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a component entity in a level\. 
 
@@ -15,7 +15,7 @@ Use this component in conjunction with the [**UI Canvas on Mesh**](/docs/usergui
 
 For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/userguide/ui/editor/placing-canvases-3d.md)\.
 
-## UI Canvas Asset Ref Component Properties<a name="component-ui-canvas-asset-ref-properties"></a>
+## UI Canvas Asset Ref Component Properties {#component-ui-canvas-asset-ref-properties}
 
 The **UI Canvas Asset Ref** component has the following properties:
 

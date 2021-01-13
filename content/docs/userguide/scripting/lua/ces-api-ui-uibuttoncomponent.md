@@ -3,15 +3,15 @@ description: ' Use the UIButtonComponent in Lua to implement button functionalit
   in &ALYlong;. '
 title: UIButtonComponent
 ---
-# UIButtonComponent<a name="lua-scripting-ces-api-ui-uibuttoncomponent"></a>
+# UIButtonComponent {#lua-scripting-ces-api-ui-uibuttoncomponent}
 
 You can use a button component to make an element behave like a button\.
 
-## UiButtonBus<a name="lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus"></a>
+## UiButtonBus {#lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus}
 
 Services messages for the `UiButtonComponent`\.
 
-### GetOnClickActionName<a name="lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus-getonclickactionname"></a>
+### GetOnClickActionName {#lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus-getonclickactionname}
 
 Returns the action triggered when the button is released\.
 
@@ -21,7 +21,7 @@ Returns the action triggered when the button is released\.
 AZStd::string UiButtonBus::GetOnClickActionName()
 ```
 
-### SetOnClickActionName<a name="lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus-setonclickactionname"></a>
+### SetOnClickActionName {#lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonbus-setonclickactionname}
 
 Sets the action triggered when the button is released\.
 
@@ -31,11 +31,11 @@ Sets the action triggered when the button is released\.
 void UiButtonBus::SetOnClickActionName(const AZStd::string& actionName)
 ```
 
-## UiButtonNotificationBus<a name="lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonnotificationbus"></a>
+## UiButtonNotificationBus {#lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonnotificationbus}
 
 Services notifications for the `UiButtonComponent`\.
 
-### OnButtonClick<a name="lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonnotificationbus-onbuttonclick"></a>
+### OnButtonClick {#lua-scripting-ces-api-ui-uibuttoncomponent-uibuttonnotificationbus-onbuttonclick}
 
 Occurs when a button has been clicked\.
 

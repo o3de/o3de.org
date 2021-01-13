@@ -3,7 +3,7 @@ description: ' Use the &entity-converter; tool to convert entities from the lega
   entities (CryEntities) to the new &component-system; in &ALYlong;. '
 title: Converting Entities with the &entity-converter;
 ---
-# Converting Entities with the Legacy Converter<a name="component-entity-data-converter"></a>
+# Converting Entities with the Legacy Converter {#component-entity-data-converter}
 
 
 ****  
@@ -18,7 +18,7 @@ The Legacy Converter converts your [legacy](https://docs.aws.amazon.com/lumberya
 + [Converting Your Legacy Entities](#using-the-entity-convertor-tool)
 + [List of Legacy Entity Conversions](#conversion-component-entity-list)
 
-## Converting Your Legacy Entities<a name="using-the-entity-convertor-tool"></a>
+## Converting Your Legacy Entities {#using-the-entity-convertor-tool}
 
 If your level has legacy entities, Lumberyard Editor detects them and prompts you to convert them\.
 
@@ -40,7 +40,7 @@ The CryEntity Removal gem disables all legacy features in Lumberyard Editor\. Fo
 **Note**  
 If the Legacy Converter can't convert an entity, a **Conversion Error** dialog box appears that shows the number of entities that were not converted\. If the CryEntity Removal gem is enabled, unconverted entities remain in your level but cannot be edited\. For more information, choose **View Log**\. You can also choose **Export Log** to save the conversion log as a `.csv` file\.
 
-## List of Legacy Entity Conversions<a name="conversion-component-entity-list"></a>
+## List of Legacy Entity Conversions {#conversion-component-entity-list}
 
 The Legacy Converter converts each legacy entity to its corresponding component entity\. For a list of legacy entities, see the [Entity Reference](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-entity-library.html) in the *Amazon Lumberyard Legacy Reference*\.
 
@@ -68,7 +68,7 @@ See the following tables for the converted component entity\.
 + [Proximity Trigger Entity](#cry-proximity-trigger)
 + [Tag Point Entity](#cry-tag-point-entity)
 
-### Area Box Entity<a name="cry-area-box-entity"></a>
+### Area Box Entity {#cry-area-box-entity}
 
 An area box entity is converted to a component entity that is attached with a **[Box Shape](/docs/userguide/components/shapes.md)** component\.
 
@@ -81,7 +81,7 @@ An area box entity is converted to a component entity that is attached with a **
 |  Length  |  Dimensions : y  | 
 |  Height  |  Dimensions : z  | 
 
-### Area Sphere Entity<a name="cry-area-sphere-entity"></a>
+### Area Sphere Entity {#cry-area-sphere-entity}
 
 An area sphere entity is converted to a component entity that is attached with a **[Sphere Shape](/docs/userguide/components/shapes.md)** component\.
 
@@ -92,7 +92,7 @@ An area sphere entity is converted to a component entity that is attached with a
 | --- | --- | 
 |  Radius  |  Radius  | 
 
-### Brush, Geom, and Simple Entities<a name="cry-brush-geom-simple-entities"></a>
+### Brush, Geom, and Simple Entities {#cry-brush-geom-simple-entities}
 
 The brush, geom, and simple entities are converted to a component entity that is attached with a **[Mesh](/docs/userguide/components/static-mesh.md)** component or **[Skinned Mesh](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-skinned-mesh.html)** component, depending on the asset type\.
 
@@ -104,7 +104,7 @@ The brush, geom, and simple entities are converted to a component entity that is
 |  Geometry \(set to `.cdf` files\)  |  Character Definition \(Skinned Mesh component\)  | 
 |  Geometry \(set to non `.cdf` file\)  |  Static asset \(Mesh component\)  | 
 
-### Camera Entity<a name="cry-camera-entity"></a>
+### Camera Entity {#cry-camera-entity}
 
 A camera entity is converted to a component entity that is attached with a **[Camera](/docs/userguide/components/camera.md)** component\.
 
@@ -117,11 +117,11 @@ A camera entity is converted to a component entity that is attached with a **[Ca
 |  NearZ  |  Near Clip Distance  | 
 |  FarZ  |  Far Clip Distance  | 
 
-### Camera Target Entity<a name="cry-camera-target-entity"></a>
+### Camera Target Entity {#cry-camera-target-entity}
 
 The camera target entity is converted to an empty component entity\.
 
-### Comment Entity<a name="cry-comment-entity"></a>
+### Comment Entity {#cry-comment-entity}
 
 A Comment entity is converted to a component entity that is attached with a **[ Comment  Use the Comment component in Amazon Lumberyard to add text comments for component entities\.   The **Comment** component allows you to add long\-form text comments for component entities\. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter\. The following examples demonstrate how you can use the comment text box:  Explain how the scripts or components on an entity interact with other scripts or components Describe how everything in a level ties together Send descriptions, instructions, or notes to team members  
 
@@ -138,7 +138,7 @@ Default: None   Using the Comment Component You can use this feature by adding t
 | --- | --- | 
 |  Text  |  Comment  | 
 
-### Environment Probe Entity<a name="cry-environment-probe-entity"></a>
+### Environment Probe Entity {#cry-environment-probe-entity}
 
 The environment probe entity is converted to a component entity that is attached with an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component\.
 
@@ -168,7 +168,7 @@ The environment probe entity is converted to a component entity that is attached
 | Projection : BoxProject  | Environment Probe Settings : Box projected | 
 | Projection : BoxWidth  | Environment Probe Settings : Box width | 
 
-### Decal Entity<a name="cry-decal-entity"></a>
+### Decal Entity {#cry-decal-entity}
 
 A decal entity is converted to a component entity that is attached with a **[Decal](/docs/userguide/components/decal.md)** component\.
 
@@ -185,7 +185,7 @@ A decal entity is converted to a component entity that is attached with a **[Dec
 |  Entity Params : SortPriority  |  Decal Settings : View distance multiplier  | 
 |  Entity Params : Projection Depth \(Deferred\)  |  Decal Settings : Depth  | 
 
-### Designer Objects<a name="cry-designer-objects"></a>
+### Designer Objects {#cry-designer-objects}
 
 The Legacy Converter converts designer objects to a component entity that is attached with the following components:
 + **[Mesh](/docs/userguide/components/static-mesh.md)**
@@ -218,7 +218,7 @@ The Legacy Converter converts the original shape of designer objects into `.cgf`
 **Note**  
 You cannot edit a designer object after it is converted into a component entity\. You can use the legacy **Designer Tool** to create your object and convert it again\. For more information, see [Using the Designer Tool](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-designer-tool.html) in the *Amazon Lumberyard Legacy Reference*\.
 
-### Groups and Layers<a name="cry-groups-layers"></a>
+### Groups and Layers {#cry-groups-layers}
 
 Groups and layers are converted to empty component entities with the same names\.
 
@@ -238,7 +238,7 @@ If a legacy entity belongs to a layer and a group, the converted component entit
 
    ComponentEntityLayerA \[ComponentEntityGroupA\[ComponentEntityA, ComponentEntityB, ComponentEntityC\]\]
 
-### Light Entity<a name="cry-light-entity"></a>
+### Light Entity {#cry-light-entity}
 
 A light entity with the **Planar Light** setting specified is converted to a component entity that is attached with a **[Area Light](/docs/userguide/components/area-light.md)** component\.
 
@@ -302,7 +302,7 @@ A light entity with neither the **Planar Light** or **Projector** setting specif
 |  AttenuatioinBulbSize  |  Point Light Settings : Attenuation bulb size  | 
 |  Radius  |  Point Light Settings : Max distance  | 
 
-### Light Entity with Lens Flare<a name="cry-light-entity-with-lens-flare"></a>
+### Light Entity with Lens Flare {#cry-light-entity-with-lens-flare}
 
 A light entity with a lens flare is converted to a component entity that is attached with a **[Lens Flare](/docs/userguide/components/lens-flare.md)** component and a light component\.
 
@@ -315,7 +315,7 @@ The lens flare asset that is specified for a light entity is converted to the **
 | --- | --- | 
 | Entity Properties : Style : FlareFOV |  Flare Settings : FOV  | 
 
-### Particle Effect Entity<a name="cry-particle-effect-entity"></a>
+### Particle Effect Entity {#cry-particle-effect-entity}
 
 The particle effect entity is converted to a component entity that is attached with a **[Particle](/docs/userguide/components/particle.md)** component\.
 
@@ -333,7 +333,7 @@ The particle effect entity is converted to a component entity that is attached w
 |  Audio : EnableAudio  |  Audio Settings : Enable audio  | 
 |  Audio : Rtpc  |  Audio Settings : Audio RTPC  | 
 
-### Proximity Trigger Entity<a name="cry-proximity-trigger"></a>
+### Proximity Trigger Entity {#cry-proximity-trigger}
 
 A proximity trigger entity is converted to a component entity attached with a **[Box Shape](/docs/userguide/components/shapes.md)** component, and a **[Trigger Area](/docs/userguide/components/triggerarea.md)** component\.
 
@@ -346,6 +346,6 @@ A proximity trigger entity is converted to a component entity attached with a **
 |  Entity Properties : DimY  |  Dimensions : y  | 
 |  Entity Properties : DimZ  |  Dimensions : z  | 
 
-### Tag Point Entity<a name="cry-tag-point-entity"></a>
+### Tag Point Entity {#cry-tag-point-entity}
 
 A tag point entity is converted to an empty component entity\.

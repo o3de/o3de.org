@@ -2,7 +2,7 @@
 description: ' Create a custom node that you can use in &ALY;''s &script-canvas;. '
 title: Creating Custom Nodes in &script-canvas;
 ---
-# Creating Custom Nodes in Script Canvas<a name="script-canvas-custom-nodes"></a>
+# Creating Custom Nodes in Script Canvas {#script-canvas-custom-nodes}
 
 Script Canvas uses the [behavior context](/docs/userguide/components/entity-system-reflection-behavior-context.md)\. The preferred way to expose functionality in Script Canvas is through behavior context bindings\. Behavior context bindings make functionality available to any scripting solution \(such as Lua\) that also uses the behavior context\. However, if you want to create Script Canvas–specific functionality or customized visual scripting experiences, you can use the Script Canvas custom node API\.
 

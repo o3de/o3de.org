@@ -3,7 +3,7 @@ description: ' Use the Oculus or OpenVR Virtual Reality gems in &ALY; to support
   Reality head-mounted displays (HMDs). '
 title: Virtual Reality Gems
 ---
-# Virtual Reality Gems<a name="gems-system-gem-virtualreality"></a>
+# Virtual Reality Gems {#gems-system-gem-virtualreality}
 
 The Oculus and OpenVR Virtual Reality gems support a variety of Virtual Reality head\-mounted displays \(HMDs\)\.
 

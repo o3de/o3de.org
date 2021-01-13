@@ -3,7 +3,7 @@ description: ' Use the Set Input Color node in the &ALYlong; &script-canvas; edi
   to set the value for a procedural material input parameter as a color. '
 title: Set Input Color
 ---
-# Set Input Color<a name="set-input-color-node"></a>
+# Set Input Color {#set-input-color-node}
 
 Sets the value of an input parameter as a color\. The color channels are assumed to be floating point, including an alpha channel\. Use this node with the `Float4` substance data type\. 
 
@@ -17,7 +17,7 @@ If the input parameter is an `integer` type, the numbers that you specify are ro
 
 ![\[SetInputColor sets the color value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-color-node.png)
 
-## Inputs<a name="set-input-color-node-input"></a>
+## Inputs {#set-input-color-node-input}
 
 
 ****  
@@ -29,7 +29,7 @@ If the input parameter is an `integer` type, the numbers that you specify are ro
 | Input Name | String | The name of the input parameter to set\. | 
 | Color | Color | The new value to specify\. | 
 
-## Outputs<a name="set-input-color-node-output"></a>
+## Outputs {#set-input-color-node-output}
 
 
 ****  

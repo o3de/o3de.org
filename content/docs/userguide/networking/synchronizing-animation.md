@@ -3,7 +3,7 @@ description: ' Use components to synchronize the state of animations across a ne
   in &ALYlong;. '
 title: Synchronizing Animations Across a Network
 ---
-# Synchronizing Animations Across a Network<a name="network-synchronizing-animation"></a>
+# Synchronizing Animations Across a Network {#network-synchronizing-animation}
 
 You can use the **[AnimGraph](/docs/userguide/components/animgraph.md)** component to add an animation graph and motion set to a character\. To synchronize the **AnimGraph** component's parameters \(its EMotion FX animation state\) across the network, use these two components:
 + **[Network Binding](/docs/userguide/components/network-binding.md)**
@@ -15,7 +15,7 @@ The **Anim Graph Net Sync** component, which is included with the [**EMotion FX 
 + [Adding Animation Synchronization to an Entity](#network-synchronizing-animation-adding-to-an-entity)
 + [Running the Samples Project in a Server and Client Configuration](#network-synchronizing-animation-testing-with-server-and-client-launchers)
 
-## Adding Animation Synchronization to an Entity<a name="network-synchronizing-animation-adding-to-an-entity"></a>
+## Adding Animation Synchronization to an Entity {#network-synchronizing-animation-adding-to-an-entity}
 
 The following procedure shows how to add the **Network Binding** and **Anim Graph Net Sync** components to the Rin character in the [Advanced\_RinLocomotion Sample](/docs/userguide/animation/editor/rin-locomotion-sample.md) level of the [Samples Project](/docs/userguide/samples/projects/samples.md)\.
 
@@ -23,7 +23,7 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 
 1. In the **Project Configurator**, do the following:
 
-   1. Follow the steps in [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects) to set the **SamplesProject** as your default project\.
+   1. Follow the steps in [Choosing a Game Project to Open](/docs/userguide/configurator/projects#project-configurator-launch-projects) to set the **SamplesProject** as your default project\.
 
    1. Follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to enable the **Multiplayer** gem for the Samples Project\.
 
@@ -72,7 +72,7 @@ The following procedure shows how to add the **Network Binding** and **Anim Grap
 
 1. Choose **File**, **Save** or press **Ctrl\+S** to save the level\.
 
-## Running the Samples Project in a Server and Client Configuration<a name="network-synchronizing-animation-testing-with-server-and-client-launchers"></a>
+## Running the Samples Project in a Server and Client Configuration {#network-synchronizing-animation-testing-with-server-and-client-launchers}
 
 Now that you have added the **Net Binding** and **Anim Graph Net Sync** components to the Rin entity, you can test the synchronization by running server and game launcher applications\.
 

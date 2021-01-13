@@ -3,11 +3,11 @@ description: ' Use the Audio Area Environment component in &ALYlong; to apply an
   effect to sounds that an entity triggers. '
 title: Audio Preload
 ---
-# Audio Preload<a name="component-audio-preload"></a>
+# Audio Preload {#component-audio-preload}
 
 Using the **Audio Preload** component, you can load and unload ATL preloads, which contain references to soundbanks\. You can specify the loading type as automatic or manual\. The automatic loading type means that preloads load when the component activates and unloads when it deactivates\. The manual loading type means the component does not take any action until the user makes a request\.
 
-## Audio Preload Properties<a name="component-audio-preload-properties"></a>
+## Audio Preload Properties {#component-audio-preload-properties}
 
 The **Audio Preload** component has the following properties:
 
@@ -21,7 +21,7 @@ If set to **Auto**, preloads load when component activates and unload when compo
 If set to **Manual**, preloads load and unload only when the user makes the request to the interface\.  
 Default: Auto
 
-## EBus Request Bus Interface<a name="component-audio-preload-ebusrequest"></a>
+## EBus Request Bus Interface {#component-audio-preload-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 

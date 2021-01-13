@@ -2,7 +2,7 @@
 description: ' You can manage your components with the &entity-outliner; in &ALYlong;. '
 title: Managing Components
 ---
-# Managing Components<a name="creating-adding-components"></a>
+# Managing Components {#creating-adding-components}
 
 You can also use the context menu in the **Entity Inspector** to remove, copy, and reorder components\.
 

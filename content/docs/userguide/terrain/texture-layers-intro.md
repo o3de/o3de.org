@@ -3,7 +3,7 @@ description: ' Use terrain texture layers and paint them to create your environm
   level in the &ly-editor;. '
 title: Using &terrain-textures;
 ---
-# Using Terrain Texture Layers<a name="terrain-texture-layers-intro"></a>
+# Using Terrain Texture Layers {#terrain-texture-layers-intro}
 
 You can create terrain texture layers and paint them to enhance your environment level\.
 

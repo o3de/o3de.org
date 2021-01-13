@@ -3,7 +3,7 @@ description: ' Use the Sun Longitude node in the &ALYlong; &script-canvas; edito
   to return the sun longitude. '
 title: Get Sun Longitude
 ---
-# Get Sun Longitude<a name="get-sun-longitude-node"></a>
+# Get Sun Longitude {#get-sun-longitude-node}
 
 Returns the sun's longitude in the sky\.
 
@@ -13,7 +13,7 @@ Returns the sun's longitude in the sky\.
 
 ![\[getsunlongitude, sunlongitudenode, getsunlongitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-longitude-node.png)
 
-## Inputs<a name="get-sun-longitude-node-input"></a>
+## Inputs {#get-sun-longitude-node-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the sun's longitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-sun-longitude-node-output"></a>
+## Outputs {#get-sun-longitude-node-output}
 
 
 ****  

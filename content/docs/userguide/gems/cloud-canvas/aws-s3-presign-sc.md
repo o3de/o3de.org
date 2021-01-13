@@ -3,11 +3,11 @@ description: ' Generate a presigned URL for an &S3; object with &script-canvas; 
   &ALYlong;. '
 title: Generating an &S3; Presigned URL With Script Canvas
 ---
-# Generating an Amazon S3 Presigned URL With Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc"></a>
+# Generating an Amazon S3 Presigned URL With Script Canvas {#cloud-canvas-cloud-gem-aws-s3-presign-sc}
 
 You can use [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html) to share Amazon S3 objects with others\. The **Presign** node in Script Canvas generates a presigned URL that links to an Amazon S3 object that you specify\.
 
-## Add Nodes that Generate a Presigned URL<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc-add-nodes"></a>
+## Add Nodes that Generate a Presigned URL {#cloud-canvas-cloud-gem-aws-s3-presign-sc-add-nodes}
 
 **To use the **Presign** node to presign a URL**
 
@@ -39,7 +39,7 @@ You can use [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/Sha
 
 1. Connect the **AWSBehaviorS3Presign** pin of the **Get Variable 1** node to the **AWSBehaviorS3Presign:0** pin of the **Presign** node\.
 
-## Add Nodes to Display the Result<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc-display-result"></a>
+## Add Nodes to Display the Result {#cloud-canvas-cloud-gem-aws-s3-presign-sc-display-result}
 
 Next, to see the success or failure of the operation, you add **AWSBehaviorS3PresignNotificationBus** nodes and a **Print** node to the graph\. The nodes monitor for `AWSBehaviorS3PresignNotificationBus` events and show you the result in the Lumberyard console window\.
 
@@ -62,7 +62,7 @@ Next, to see the success or failure of the operation, you add **AWSBehaviorS3Pre
 
 1. Exit the Script Canvas editor\.
 
-## Test Generate a Presigned URL<a name="cloud-canvas-cloud-gem-aws-s3-presign-sc-test"></a>
+## Test Generate a Presigned URL {#cloud-canvas-cloud-gem-aws-s3-presign-sc-test}
 
 Now you are ready to attach the script canvas to an entity and test it\.
 

@@ -3,7 +3,7 @@ description: ' Use the GeomCache or geometry cache component to render mesh data
   play vertex-based animation in &ALYlong;. '
 title: Geom Cache
 ---
-# Geom Cache<a name="component-geom-cache"></a>
+# Geom Cache {#component-geom-cache}
 
 
 ****  
@@ -16,7 +16,7 @@ The **Geometry Cache** component renders mesh data and can play vertex\-based an
 
 ![\[Example of a Geom Cache component.\]](/images/userguide/shared-geom-cache-example-animation.gif)
 
-## Geom Cache Parameters<a name="component-geom-cache-params"></a>
+## Geom Cache Parameters {#component-geom-cache-params}
 
 Use the following parameters to customize your geometry cache\.
 
@@ -45,7 +45,7 @@ Use the following parameters to customize your geometry cache\.
 | Stream In Distance | Defines how close the camera has to be for the geometry cache to start streaming in animation data to prepare for animation\. | 
 | Material Override | An override material to use instead of the one given by the geometry cache asset\. | 
 
-## GeometryCacheComponentRequests Interface<a name="component-geom-cache-requestbus"></a>
+## GeometryCacheComponentRequests Interface {#component-geom-cache-requestbus}
 
 This EBus is used to communicate to an entity with a **Geometry Cache** component\. This is available at runtime and at edit time and can be accessed from C\+\+, Lua and ScriptCanvas\. Some functionality may be restricted to C\+\+ exclusively\.
 
@@ -80,7 +80,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 | SetStandInDistance | Sets the distance threshold that controls the visibility of the stand\-in\. | float | None | Yes | 
 | GetStandInDistance | Gets the distance threshold that controls the visibility of the stand\-in\. | None | float | Yes | 
 
-## GeometryCacheComponentNotifications Interface<a name="component-geom-cache-notificationbus"></a>
+## GeometryCacheComponentNotifications Interface {#component-geom-cache-notificationbus}
 
 This EBus is used to react to events that take place in the **Geometry Cache** component\.
 

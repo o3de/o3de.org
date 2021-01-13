@@ -2,7 +2,7 @@
 description: ' Learn the parameters for &ALYlong;''s AZ Code Generator. '
 title: AZ Code Generator Parameters
 ---
-# AZ Code Generator Parameters<a name="az-code-gen-parameters"></a>
+# AZ Code Generator Parameters {#az-code-gen-parameters}
 
 
 ****  
@@ -20,13 +20,13 @@ For best results, pass the options for AZ Code Generator in to the Waf build sys
 + [Front End](#az-code-gen-parameters-front-end)
 + [AZ Code Generator Parameter List](#az-code-gen-parameters-list)
 
-## Waf Parameters<a name="az-code-gen-parameters-waf"></a>
+## Waf Parameters {#az-code-gen-parameters-waf}
 
 Most parameters for AZ Code Generator are specified by the Waf integration\. Parameters such as input, output, and include paths are automatically detected and forwarded\. Other AZ Code Generator parameters control how AZ Code Generator deals with the source code input and the intermediate data that is generated\.
 
 Specify any of these in the `arguments` section of the `az_code_gen` pass in the `wscript` file\.
 
-## Clang Compilation Parameters<a name="az-code-gen-parameters-clang-compilation"></a>
+## Clang Compilation Parameters {#az-code-gen-parameters-clang-compilation}
 
 The following `AzCodeGenerator.exe` parameters apply to Clang compilation\.
 
@@ -40,7 +40,7 @@ The following `AzCodeGenerator.exe` parameters apply to Clang compilation\.
 |  \-SuppressDiagnostics  |  Ignores build warnings and errors on all files\.  | 
 |  \-SuppressErrorsAsWarnings  |  Downgrades any build errors to warnings\. Allows Clang to succeed even if there are errors\.  | 
 
-## Intermediate Data<a name="az-code-gen-parameters-intermediate-data"></a>
+## Intermediate Data {#az-code-gen-parameters-intermediate-data}
 
 To include information about code outside of the input file in the intermediate JSON data, use the following option\.
 
@@ -48,11 +48,11 @@ To include information about code outside of the input file in the intermediate 
 -inclusion-filter=<wildcard filter for files to allow>
 ```
 
-## Front End<a name="az-code-gen-parameters-front-end"></a>
+## Front End {#az-code-gen-parameters-front-end}
 
 You can choose the front end to use by specifying either the `-Clang` \(the default\) or `-JSON` option\.
 
-## AZ Code Generator Parameter List<a name="az-code-gen-parameters-list"></a>
+## AZ Code Generator Parameter List {#az-code-gen-parameters-list}
 
 The following list shows all AZ Code Generator parameters\.
 

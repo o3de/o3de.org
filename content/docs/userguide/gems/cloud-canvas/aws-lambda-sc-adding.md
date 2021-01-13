@@ -2,7 +2,7 @@
 description: ' Make a custom &LAM; function available to &script-canvas; in &ALYlong;. '
 title: Making a Custom &LAM; Function Available to &script-canvas;
 ---
-# Making a Custom Lambda Function Available to Script Canvas<a name="cloud-canvas-cloud-gem-aws-lambda-sc-adding"></a>
+# Making a Custom Lambda Function Available to Script Canvas {#cloud-canvas-cloud-gem-aws-lambda-sc-adding}
 
 You can make custom Lambda function available to Script Canvas with the following steps:
 
@@ -24,7 +24,7 @@ This topic shows you how to perform the second and fourth steps: use the Cloud C
 + [Adding a Lambda Function Resource](#cloud-canvas-cloud-gem-aws-lambda-sc-adding-to-resource-group)
 + [Uploading Your Custom Lambda Function to AWS](#cloud-canvas-cloud-gem-aws-lambda-sc-adding-uploading)
 
-## Adding a Lambda Function Resource<a name="cloud-canvas-cloud-gem-aws-lambda-sc-adding-to-resource-group"></a>
+## Adding a Lambda Function Resource {#cloud-canvas-cloud-gem-aws-lambda-sc-adding-to-resource-group}
 
 With Lumberyard Editor, you can add a Lambda function resource to the **CloudGemAWSScriptBehaviors** resource group\.
 
@@ -54,7 +54,7 @@ With Lumberyard Editor, you can add a Lambda function resource to the **CloudGem
    lumberyard_version\dev\Gems\CloudGemAWSScriptBehaviors\AWS\lambda-code\your_function_name\main.py
    ```
 
-## Uploading Your Custom Lambda Function to AWS<a name="cloud-canvas-cloud-gem-aws-lambda-sc-adding-uploading"></a>
+## Uploading Your Custom Lambda Function to AWS {#cloud-canvas-cloud-gem-aws-lambda-sc-adding-uploading}
 
 After you add your Lambda function code to the `main.py` file, you are ready to upload it to AWS to make it available to Script Canvas\.
 

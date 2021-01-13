@@ -2,7 +2,7 @@
 description: ' Use DataSet objects in &ALY; to synchronize a state across the network. '
 title: Datasets
 ---
-# Datasets<a name="network-replicas-data-sets"></a>
+# Datasets {#network-replicas-data-sets}
 
 You can use `DataSet` objects to synchronize the state of a session across the network\. When a value in the dataset changes, the updates are propagated automatically\. Datasets can be of any type, but they must support the assignment and comparison operators\. Your `DataSet` declaration can specify a custom marshaler\. If you do not specify a marshaler, the `DataSet` object uses `GridMate::Marshaler<T>`\.
 
@@ -69,7 +69,7 @@ m_pos.SetMaxIdleTime(5.f);  // Suspend sending if m_pos has not changed for 5 ti
 ...
 ```
 
-## Carrier ACK Feedback<a name="network-replicas-data-sets-carrier-ack-feedback"></a>
+## Carrier ACK Feedback {#network-replicas-data-sets-carrier-ack-feedback}
 
 Lumberyard 1\.12 introduced, as a preview feature, carrier ACK feedback\. 
 
@@ -87,11 +87,11 @@ bool ReplicaTarget::k_enableAck = true;
 ...
 ```
 
-## Examples<a name="network-replicas-data-sets-examples"></a>
+## Examples {#network-replicas-data-sets-examples}
 
 The examples in this section show three ways to create datasets\.
 
-### Example 1<a name="network-replicas-data-sets-example-1"></a>
+### Example 1 {#network-replicas-data-sets-example-1}
 
 The following example creates a `DataSet` object that uses the default marshaler to store a `u32` value\.
 
@@ -99,7 +99,7 @@ The following example creates a `DataSet` object that uses the default marshaler
 GridMate::DataSet<AZ::u32> m_data;
 ```
 
-### Example 2<a name="network-replicas-data-sets-example-2"></a>
+### Example 2 {#network-replicas-data-sets-example-2}
 
 The following example creates a `DataSet` object that stores a float\. The data written to the network is half float size because of the specified marshaler\.
 
@@ -107,7 +107,7 @@ The following example creates a `DataSet` object that stores a float\. The data 
 GridMate::DataSet<float, HalfMarshaler> m_data;
 ```
 
-### Example 3<a name="network-replicas-data-sets-example-3"></a>
+### Example 3 {#network-replicas-data-sets-example-3}
 
 The following example creates a `DataSet` object that stores an `s32` value using the default marshaler for `s32`\. Whenever the `DataSet` value changes, the `DataSetHandler` function is called on the `MyReplicaChunk` instance\. This is true for both primary and proxy nodes; the event is triggered on local data changes for the primary and upon received data changes for the proxies\.
 
@@ -119,7 +119,7 @@ class MyReplicaChunk : public GridMate::ReplicaChunk
 };
 ```
 
-## Throttlers<a name="throttlers"></a>
+## Throttlers {#throttlers}
 
 Datasets can be throttled based on an optional throttler parameter to the template\. The throttler can choose to send data or withhold downstream updates unless a certain condition has been met\. The throttler must implement the `WithinThreshold` method using the following syntax\.
 

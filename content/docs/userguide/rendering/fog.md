@@ -3,7 +3,7 @@ description: ' Use &ALY;''s standard fog system to create various types of fog f
   your game project. '
 title: Standard Fog
 ---
-# Standard Fog<a name="rendering-graphics-fog"></a>
+# Standard Fog {#rendering-graphics-fog}
 
 Lumberyard's standard fog system handles sunlight with dynamic shadows and exponential height fog density\. However, in dense fog situations the fog's appearance may not be consistent between opaque and transparent materials\.
 

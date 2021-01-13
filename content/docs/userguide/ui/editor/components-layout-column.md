@@ -3,7 +3,7 @@ description: ' Use a layout column component in the &ALYlong; &ui-canvas-editor;
   organize child elements into a column. '
 title: LayoutColumn
 ---
-# LayoutColumn<a name="ui-editor-components-layout-column"></a>
+# LayoutColumn {#ui-editor-components-layout-column}
 
 You can use a **LayoutColumn** component to organize child elements into a column\. To use this feature, add the **LayoutColumn** component to an element and then add child elements\. The UI system positions the child elements within the column, from top to bottom or bottom to top, depending on the order you choose in the component properties\. The child elements can contain a texture or image, a button, a check box, text, columns, rows, grids, and so on\. 
 

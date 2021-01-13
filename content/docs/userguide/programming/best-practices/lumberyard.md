@@ -2,7 +2,7 @@
 description: ' Learn best practices for using the C++ programming language in &ALYlong;. '
 title: C++ Best Practices for &ALYlong;
 ---
-# C\+\+ Best Practices for Amazon Lumberyard<a name="cpp-best-practices-lumberyard"></a>
+# C\+\+ Best Practices for Amazon Lumberyard {#cpp-best-practices-lumberyard}
 
 The following topics present some best practice coding patterns that Lumberyard engineers have found helpful for writing high quality code\. Because of the complexity of C\+\+ and the variety of ways it is used in Lumberyard, consider these guidelines as suggestions rather than a formal standard\.
 

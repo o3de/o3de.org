@@ -3,7 +3,7 @@ description: ' Create sequences for animations using the &trackview-editor;''s t
   in &ALYlong;. '
 title: Track View Editor Toolbars
 ---
-# Track View Editor Toolbars<a name="cinematics-track-view-editor-toolbars"></a>
+# Track View Editor Toolbars {#cinematics-track-view-editor-toolbars}
 
 See the following main sections of the Track View:
 

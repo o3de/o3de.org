@@ -3,7 +3,7 @@ description: ' &ALYlong;''s UI system uses slices, a cascaded data management sy
   for entities. '
 title: Working with UI Slices
 ---
-# Working with UI Slices<a name="ui-editor-working-slices"></a>
+# Working with UI Slices {#ui-editor-working-slices}
 
 The UI system uses the slices technology, which is a cascaded data management system for entities\. This slice technology is similar to what the main Lumberyard Editor uses, but the user interface and some of the requirements are slightly different for the UI system\. 
 

@@ -3,7 +3,7 @@ description: ' Use the Player Account Cloud Gem in &ALYlong; and &COG; to store 
   account data. '
 title: Storing Data Associated with a Player Account
 ---
-# Storing Data Associated with a Player Account<a name="cloud-canvas-cloud-gem-player-account-storing-player-data"></a>
+# Storing Data Associated with a Player Account {#cloud-canvas-cloud-gem-player-account-storing-player-data}
 
 Each player account has a randomly generated account ID\. When you store data associated with a player, use this ID instead of the identifiers provided by the Amazon Cognito user and identity pools\. You should do this for the following reasons:
 + Lumberyard uses the `PlayerAccounts` table defined in the `dev\Gems\CloudGemPlayerAccount\AWS\resource-template.json` file to map account IDs to Amazon Cognito IDs\. By associating a player's data with the account ID, you can move all of the player's data from one identity to another by simply updating the mapping\.
@@ -31,7 +31,7 @@ The buildup of orphaned identities can be misleading when trying to determine th
  
 If a player uses an unauthenticated identity and then creates a new account, the account ID from the unauthenticated identity does not carry over to the new account\.
 
-## Obtaining Player Account IDs<a name="cloud-canvas-cloud-gem-player-account-obtaining-player-ids"></a>
+## Obtaining Player Account IDs {#cloud-canvas-cloud-gem-player-account-obtaining-player-ids}
 
 You can use the following techniques to obtain player account IDs and account information programmatically\.
 + **To get a player's account ID in game** – Call `GetPlayerAccount` on the `CloudGemPlayerAccountRequestBus`\. This EBus is defined in the `dev\Gems\CloudGemPlayerAccount\Code\Include\CloudGemPlayerAccount\CloudGemPlayerAccountBus.h` file\. The player's account ID is in the `AccountResultInfo` parameter of `CloudGemPlayerAccountNotificationBusHandler::OnGetPlayerAccountComplete`\.

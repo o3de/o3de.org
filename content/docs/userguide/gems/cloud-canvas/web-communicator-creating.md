@@ -3,7 +3,7 @@ description: ' Use the Web Communicator cloud gem in &ALYlong; to send messages 
   game editors and clients. '
 title: Communicating to Clients from a Cloud Gem
 ---
-# Communicating to Clients from a Cloud Gem<a name="cloud-canvas-cloud-gem-web-communicator-creating"></a>
+# Communicating to Clients from a Cloud Gem {#cloud-canvas-cloud-gem-web-communicator-creating}
 
 To send messages to the Web Communicator service, your cloud gem can use the default channel that the Web Communicator cloud gem provides or a channel that you define\. Web Communicator can validate the message type and pass the message to AWS IoT for distribution to one or more clients\.
 
@@ -20,7 +20,7 @@ To have your cloud gem send events through Web Communicator to connected clients
 
 [4\. Handle the Response on the Client](#cloud-canvas-cloud-gem-web-communicator-creating-handle-the-response-on-the-client)
 
-## 1\. \(Optional\) Define Broadcast and/or Private Channels<a name="cloud-canvas-cloud-gem-web-communicator-creating-define-broadcast-andor-private-channels"></a>
+## 1\. \(Optional\) Define Broadcast and/or Private Channels {#cloud-canvas-cloud-gem-web-communicator-creating-define-broadcast-andor-private-channels}
 
 You can optionally define your own channels in your cloud gem's `lumberyard_version\dev\Gems\gem_name\AWS\resource-group-settings.json` file\. A channel consists of a unique name, a type \(`BROADCAST` or `PRIVATE`\) and an optional `CommunicationChannel`\. To reduce the number of subscriptions required on the server, the communication channel system allows your channel to make use of a base channel by embedding your actual channel name in the message\. When messages are broadcast from other cloud gems as [EBus](/docs/userguide/programming/ebus/intro.md) events, the channel name is embedded in the message and parsed on the client\.
 
@@ -56,7 +56,7 @@ The relevant fields are as follows\.
 | Types | The type of channel that you want to enable\. This can be BROADCAST, PRIVATE, or both\. | 
 | CommunicationChannel | The name of the base WebCommunicator channel \(for example, CloudGemWebCommunicator\)\. For purposes of efficiency, the channel that actually carries the message is packed into the base channel\. The name of the carried channel \(in this example, CloudGemDynamicContent\) is embedded in the message itself\. Lumberyard unpacks this name transparently on the client side for the EBus handler\. | 
 
-## 2\. Add the Web Communcator Service Interface ID to Your Gem's resource\-template\.json File<a name="cloud-canvas-cloud-gem-web-communicator-creating-add-the-web-communcator-service-interface-id-to-your-gems-resource-template.json-file"></a>
+## 2\. Add the Web Communcator Service Interface ID to Your Gem's resource\-template\.json File {#cloud-canvas-cloud-gem-web-communicator-creating-add-the-web-communcator-service-interface-id-to-your-gems-resource-template.json-file}
 
 The request API between your cloud gem and the Web Communicator gem is built on the [cross\-gem communication system](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md)\. The interface for the Web Communicator's `broadcast` and `send` API operations are defined in the `lumberyard_version\dev\Gems\CloudGemWebCommunicator\AWS\api-defintion\sendmessage_1_0_0.json` file\.
 
@@ -76,9 +76,9 @@ In the `ServiceLambdaConfiguration` section, under `Properties`, add a `Services
 **Note**  
 If you expect the Web Communicator to be continuously available, set the `Optional` property to `False`\.
 
-For more information, see the [Using an Interface](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface) section of the cross\-gem communication topic\.
+For more information, see the [Using an Interface](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface) section of the cross\-gem communication topic\.
 
-## 3\. Send the Lambda Request from Your Service<a name="cloud-canvas-cloud-gem-web-communicator-creating-send-the-lambda-request-from-your-service"></a>
+## 3\. Send the Lambda Request from Your Service {#cloud-canvas-cloud-gem-web-communicator-creating-send-the-lambda-request-from-your-service}
 
 To send a message from your cloud gem to one or more clients, your cloud gem’s Lambda code makes a call to the Web Communicator\. The call includes the message that you want to either broadcast to multiple clients or send to an individual user\.
 
@@ -89,7 +89,7 @@ import cgf_lambda_settings
 import cgf_service_client
 ```
 
-### Broadcasting a Message<a name="cloud-canvas-cloud-gem-web-communicator-creating-broadcasting-a-message"></a>
+### Broadcasting a Message {#cloud-canvas-cloud-gem-web-communicator-creating-broadcasting-a-message}
 
 To broadcast a message, use the *\_\_send\_communicator\_broadcast* function and pass the message text in the `message` parameter, as in the following example\.
 
@@ -104,7 +104,7 @@ def __send_communicator_broadcast(message):
     result = client.navigate('broadcast').POST({"channel": "CloudGemDynamicContent", "message": message})
 ```
 
-### Sending a Message Directly to a Client<a name="cloud-canvas-cloud-gem-web-communicator-creating-sending-a-message-directly-to-a-client"></a>
+### Sending a Message Directly to a Client {#cloud-canvas-cloud-gem-web-communicator-creating-sending-a-message-directly-to-a-client}
 
 To send a message directly to a client, use the *\_\_send\_communicator\_direct* function\. As before, pass the message text in the `message` parameter, but this time specify the ID of a specific client in the `client_id` parameter\.
 
@@ -119,11 +119,11 @@ def __send_communicator_direct(message, client_id):
     result = client.navigate('send', client_id).POST({"channel": "CloudGemDynamicContent", "message": message})
 ```
 
-## 4\. Handle the Response on the Client<a name="cloud-canvas-cloud-gem-web-communicator-creating-handle-the-response-on-the-client"></a>
+## 4\. Handle the Response on the Client {#cloud-canvas-cloud-gem-web-communicator-creating-handle-the-response-on-the-client}
 
 To handle the response on the client, subscribe manually or automatically to messages from Web Communicator, and then create a handler that processes the incoming messages\.
 
-### Requesting a Connection<a name="cloud-canvas-cloud-gem-web-communicator-creating-requesting-a-connection"></a>
+### Requesting a Connection {#cloud-canvas-cloud-gem-web-communicator-creating-requesting-a-connection}
 
 To request a connection, use the `RequestConnection` function\.
 
@@ -133,7 +133,7 @@ CloudGemWebCommunicatorRequestBus.Broadcast.RequestConnection("connection_type")
 
 For *connection\_type*, specify either `WEBSOCKET` or `OPENSSL`\.
 
-### Requesting a Registration<a name="cloud-canvas-cloud-gem-web-communicator-creating-requesting-a-registration"></a>
+### Requesting a Registration {#cloud-canvas-cloud-gem-web-communicator-creating-requesting-a-registration}
 
 To request a registration, use the `RequestRegistration` function\.
 
@@ -143,11 +143,11 @@ CloudGemWebCommunicatorRequestBus.Broadcast.RequestRegistration("connection_type
 
 For *connection\_type*, specify either `WEBSOCKET` or `OPENSSL`\.
 
-### Subscribing to Channels<a name="cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-channels"></a>
+### Subscribing to Channels {#cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-channels}
 
 You can use the `RequestChannelList` function to request and subscribe to the channels to which the client listens\.
 
-#### Subscribing to All Channels<a name="cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-all-channels"></a>
+#### Subscribing to All Channels {#cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-all-channels}
 
 To request and subscribe to all the channels that the client requires, use the `RequestChannelList` function\.
 
@@ -157,7 +157,7 @@ CloudGemWebCommunicatorRequestBus.Broadcast.RequestChannelList()
 
 You can also subscribe individually to channels, but using the `RequestChannelList` function is more straightforward and should be considered the standard approach\.
 
-#### Subscribing to Individual Channels<a name="cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-individual-channels"></a>
+#### Subscribing to Individual Channels {#cloud-canvas-cloud-gem-web-communicator-creating-subscribing-to-individual-channels}
 
 To subscribe to channels manually, use the `RequestSubscribeChannel` function and specify the name of the channel in the `channelName` parameter, as in the following example\.
 
@@ -168,7 +168,7 @@ CloudGemWebCommunicatorRequestBus.Broadcast.RequestSubscribeChannel(channelName)
 **Note**  
 If you specified the `CommunicationChannel` property in the [channel definitions step](#cloud-canvas-cloud-gem-web-communicator-creating-define-broadcast-andor-private-channels) \(that is, you are using a base channel\), specify that value for the `channelName` parameter\.
 
-#### Unsubscribing from a Channel<a name="cloud-canvas-cloud-gem-web-communicator-creating-unsubscribing-from-a-channel"></a>
+#### Unsubscribing from a Channel {#cloud-canvas-cloud-gem-web-communicator-creating-unsubscribing-from-a-channel}
 
 To unsubscribe from a channel, use the `RequestUnsubscribeChannel` function and specify the name of the channel in the `channelName` parameter, as in the following example\.
 
@@ -176,7 +176,7 @@ To unsubscribe from a channel, use the `RequestUnsubscribeChannel` function and 
 CloudGemWebCommunicatorRequestBus.Broadcast.RequestUnsubscribeChannel(channelName)         
 ```
 
-### Disconnecting<a name="cloud-canvas-cloud-gem-web-communicator-creating-disconnecting"></a>
+### Disconnecting {#cloud-canvas-cloud-gem-web-communicator-creating-disconnecting}
 
 To disconnect, use the `RequestDisconnect` function\.
 
@@ -184,11 +184,11 @@ To disconnect, use the `RequestDisconnect` function\.
 CloudGemWebCommunicatorRequestBus.Broadcast.RequestDisconnect()       
 ```
 
-### Create a Message Handler<a name="cloud-canvas-cloud-gem-web-communicator-creating-create-a-message-handler"></a>
+### Create a Message Handler {#cloud-canvas-cloud-gem-web-communicator-creating-create-a-message-handler}
 
 After you subscribe the client to one or more channels, create a message handler that processes the messages from Web Communicator\.
 
-#### In Lua<a name="cloud-canvas-cloud-gem-web-communicator-creating-in-lua"></a>
+#### In Lua {#cloud-canvas-cloud-gem-web-communicator-creating-in-lua}
 
 In Lua, in an `OnActivate` call, set up an EBus connection to listen for Web Communicator updates:
 
@@ -214,7 +214,7 @@ end
 
 For a sample Lua script, see `lumberyard_version\dev\CloudGemSamples\Scripts\CommunicatorSample.lua`\.
 
-#### In C\+\+<a name="cloud-canvas-cloud-gem-web-communicator-creating-in-c"></a>
+#### In C\+\+ {#cloud-canvas-cloud-gem-web-communicator-creating-in-c}
 
 In C\+\+, declare a component handler class like the following:
 
@@ -237,7 +237,7 @@ void SomeHandler::MessageReceived(const AZStd::string& channelName, const AZStd:
 }
 ```
 
-## Resources<a name="cloud-canvas-cloud-gem-web-communicator-creating-resources"></a>
+## Resources {#cloud-canvas-cloud-gem-web-communicator-creating-resources}
 
 For more information, see the following:
 + For a sample level, see the [CommunicatorSample](/docs/userguide/gems/cloud-canvas/web-communicator-sample-level.md) sample level in the **CloudGemSamples** project\.

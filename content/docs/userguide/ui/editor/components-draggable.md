@@ -3,7 +3,7 @@ description: ' Use the draggable component in the &ALYlong; &ui-canvas-editor; t
   make UI elements movable. '
 title: Draggable
 ---
-# Draggable<a name="ui-editor-components-draggable"></a>
+# Draggable {#ui-editor-components-draggable}
 
 You can use the **Draggable** component to make a UI element movable from one location to another on screen\. Use the **Draggable** component in combination with the **DropTarget** component so that dragging can start on the draggable element and end on the drop target element\. Drag\-and\-drop is a common operation in UI screens, such as an inventory system\.
 

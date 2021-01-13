@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Game Metrics Cloud Gem and heatmap overlay to v
   generated data and any metric type that a game client sends. '
 title: Using Heatmap Analytics
 ---
-# Using Heatmap Analytics<a name="cloud-canvas-cloud-gem-game-metrics-heatmap-analytics-intro"></a>
+# Using Heatmap Analytics {#cloud-canvas-cloud-gem-game-metrics-heatmap-analytics-intro}
 
 You can use heatmaps to view data that's generated from the Game Metrics Cloud Gem and for any metric type that a game client sends\. In the Cloud Gem Portal, the heatmap appears as an overlay on an image of the game map\. You can see information such as the majority of player movement and where most player deaths occur\.
 
@@ -18,7 +18,7 @@ To use heatmaps in the Cloud Gem Portal, you must generate events with positiona
 + [Creating Heatmaps with the Heatmap Tool](#cloud-gem-game-metrics-creating-heatmaps-with-heatmap-tool)
 + [Creating Screenshots of Your Level](#cloud-gem-game-metrics-heatmaps-creating-screenshots-of-game-level)
 
-## Prerequisites<a name="cloud-gem-game-metrics-heatmap-analytics-prerequisites"></a>
+## Prerequisites {#cloud-gem-game-metrics-heatmap-analytics-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the **Cloud Gem Game Metrics** enabled\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
@@ -29,7 +29,7 @@ This tutorial assumes the following:
 
   For more information, see [Using the Game Metrics Cloud Gem Portal](/docs/userguide/using-the-cloud-gem-metrics-portal.md) and [Sending Test Metrics with the Metrics Sample Level](/docs/userguide/send-test-events-for-the-cloud-canvas-game-metrics-gem.md)\.
 
-## Creating Heatmaps with the Heatmap Tool<a name="cloud-gem-game-metrics-creating-heatmaps-with-heatmap-tool"></a>
+## Creating Heatmaps with the Heatmap Tool {#cloud-gem-game-metrics-creating-heatmaps-with-heatmap-tool}
 
 After you complete the prerequisites, you can create a heatmap to view your data in the Cloud Gem Portal\.
 
@@ -79,7 +79,7 @@ If you're using the Metrics Sample level, the event type is called **translation
 
 1. Click **Save**\.
 
-## Creating Screenshots of Your Level<a name="cloud-gem-game-metrics-heatmaps-creating-screenshots-of-game-level"></a>
+## Creating Screenshots of Your Level {#cloud-gem-game-metrics-heatmaps-creating-screenshots-of-game-level}
 
 You can create a top\-down screenshot of your level to use with the heatmap overlay\.
 

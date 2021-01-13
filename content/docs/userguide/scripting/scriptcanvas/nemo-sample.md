@@ -3,13 +3,13 @@ description: ' Install the Project N.E.M.O sample level to learn and experience 
   benefits of &ALYlong;''s &script-canvas; visual scripting system. '
 title: Installing the Project N.E.M.O. Sample
 ---
-# Installing the Project N\.E\.M\.O\. Sample<a name="script-canvas-nemo-sample"></a>
+# Installing the Project N\.E\.M\.O\. Sample {#script-canvas-nemo-sample}
 
 Project N\.E\.M\.O \(Nautical Emergency Maneuvers and Operations\) is a complete sample game level that showcases some of the key capabilities of Script Canvas\. The sample level creates a short underwater navigation experience in which the player maneuvers a mini sub through obstacles and collects pickups\. The sample level uses Script Canvas and script events to implement submarine functionality, mines and squid behavior, HUD display, pickups, world space UI, and game end\. 
 
 To use the sample, you must first install and configure Lumberyard\. Then download, configure, and build the project\.
 
-## Step 1: Install and Configure Lumberyard<a name="script-canvas-nemo-sample-preparing"></a>
+## Step 1: Install and Configure Lumberyard {#script-canvas-nemo-sample-preparing}
 
 The following procedure shows you how to install Lumberyard and configure it for the Project N\.E\.M\.O\. sample level\. If Lumberyard is already installed, start with step 2 to configure it\.
 
@@ -35,7 +35,7 @@ The following procedure shows you how to install Lumberyard and configure it for
 
 1. After the required SDKs are installed, close **Lumberyard Setup Assistant**\.
 
-## Step 2: Download, Configure, and Build the Project<a name="script-canvas-nemo-sample-building"></a>
+## Step 2: Download, Configure, and Build the Project {#script-canvas-nemo-sample-building}
 
 Now you are ready to download, configure, and build the sample project\.
 

@@ -2,7 +2,7 @@
 description: null
 title: Using the Game Metrics &cgp;
 ---
-# Using the Game Metrics Cloud Gem Portal<a name="using-the-cloud-gem-metrics-portal"></a>
+# Using the Game Metrics Cloud Gem Portal {#using-the-cloud-gem-metrics-portal}
 
 After you send test events with the Metrics Sample level or the command line, you can view the collected data in the Cloud Gem Portal\.
 
@@ -15,7 +15,7 @@ After you send test events with the Metrics Sample level or the command line, yo
 
 1. Choose the game metric data that you want to view\. Metrics are automatically updated every five minutes\. You can view the following:
 
-## Overview<a name="game-metrics-overview"></a>
+## Overview {#game-metrics-overview}
 
 The **Overview** page shows information about your game events\.
 
@@ -42,7 +42,7 @@ Time required for Lambda to aggregate the events in the FIFO consumer and then s
 
 ![\[Choose Time to Save Events To S3\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-5.png)
 
-## SQS<a name="game-metrics-sqs"></a>
+## SQS {#game-metrics-sqs}
 
 The **SQS** page shows the current health of your SQS resources\.
 
@@ -58,7 +58,7 @@ Time required for a FIFO consumer to delete all of the SQS messages after the co
 
 ![\[Choose Time to Delete SQS Messages\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-7.png)
 
-## Lambda<a name="game-metrics-lambda"></a>
+## Lambda {#game-metrics-lambda}
 
 The **Lambda** page shows the current health of your Lambda resources\.
 
@@ -99,7 +99,7 @@ Current error rate of the amoeba single file generators\.
 
 ![\[Choose Amoeba Errors\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-14.png)
 
-## DynamoDB<a name="game-metrics-dynamodb"></a>
+## DynamoDB {#game-metrics-dynamodb}
 
 The **DynamoDB** page shows the current health of your DynamoDB resources\.
 
@@ -115,7 +115,7 @@ Current DynamoDB write load for the metric pipeline\.
 
 ![\[Choose Writes Consumed/Provisioned\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-16.png)
 
-## Partitions<a name="game-metrics-partitions"></a>
+## Partitions {#game-metrics-partitions}
 
 On the **Partitions** page, you can customize the Amazon S3 directories in which your data files are saved\. A partition is a segment of a data set\. You can define what the partitions should be outside of the predefined partitions\.
 
@@ -187,13 +187,13 @@ You can create custom partitions so that Amazon Athena queries your data against
 
 1. When finished, click **Update Custom Partitions**\.
 
-## Filtering<a name="game-metrics-filtering"></a>
+## Filtering {#game-metrics-filtering}
 
 On the **Filtering** page, you can create filters to specify which data you no longer want to collect\. Game clients use these settings to filter the events or attributes\. You can then order the filters to specify the priority\.
 
 ![\[Choose Filtering\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-18.png)
 
-### Creating Filters for Events<a name="creating-filters-for-game-events"></a>
+### Creating Filters for Events {#creating-filters-for-game-events}
 
 Event filtering supports two different types:
 
@@ -240,7 +240,7 @@ If **Event name** is `sessionStart`, **Type** is **All**, and **Attributes** is 
 
    1. Click **Add Attribute** or **Remove Attribute** as needed\.
 
-### Prioritize Filters for Game Events<a name="prioritize-filters-for-game-events"></a>
+### Prioritize Filters for Game Events {#prioritize-filters-for-game-events}
 
 After you create your filters, you can prioritize specific events to be processed when there is limited space available on the game client device\.
 
@@ -252,7 +252,7 @@ The game client processes all events \(excluding filtered events\) to a local fi
 
 1. When finished, click **Update Filters**\.
 
-## Settings<a name="game-metrics-settings"></a>
+## Settings {#game-metrics-settings}
 
 On the **Settings** page, you can specify the parameters for the metric pipeline\.
 

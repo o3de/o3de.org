@@ -3,7 +3,7 @@ description: ' Get an overview of the &chatplay; system for interacting with Twi
   viewers. '
 title: '&chatplay; System'
 ---
-# Twitch ChatPlay System<a name="chatplay-intro"></a>
+# Twitch ChatPlay System {#chatplay-intro}
 
 Twitch ChatPlay provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world’s leading social video platform and community for gamers\.
 

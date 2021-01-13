@@ -4,7 +4,7 @@ description: ' Learn how to create trigger areas to open and close doors using &
 title: '&script-canvas; Tutorial: Opening and Closing a Door with Trigger Areas and
   Variables'
 ---
-# Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables<a name="script-canvas-tutorial-trigger-areas"></a>
+# Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables {#script-canvas-tutorial-trigger-areas}
 
 In the following tutorial, you create a door that opens and closes when your controllable sphere enters and exits a trigger area\.
 
@@ -17,7 +17,7 @@ This involves several tasks:
 + Add event nodes
 + Add variables
 
-## Prerequisites<a name="script-canvas-tutorial-trigger-area-prerequisites"></a>
+## Prerequisites {#script-canvas-tutorial-trigger-area-prerequisites}
 + Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md)\.
 
 **Topics**
@@ -25,7 +25,7 @@ This involves several tasks:
 + [Step 1: Create a Door and Trigger Area](#script-canvas-tutorial-trigger-areas-step-one)
 + [Step 2: Create a Script to Open and Close the Door](#script-canvas-tutorial-trigger-areas-step-two)
 
-## Step 1: Create a Door and Trigger Area<a name="script-canvas-tutorial-trigger-areas-step-one"></a>
+## Step 1: Create a Door and Trigger Area {#script-canvas-tutorial-trigger-areas-step-one}
 
 To create a door and trigger area, create an entity with child entities and then add components to the child entities\.
 
@@ -66,7 +66,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. Click **Add Component** and then choose the **[Trigger Area](/docs/userguide/components/triggerarea.md)** component\.
 
-   1. With the [**Move** tool](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode), adjust the **Door Trigger** entity so that its Z position fits the **Door Mesh** entity\.
+   1. With the [**Move** tool](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode), adjust the **Door Trigger** entity so that its Z position fits the **Door Mesh** entity\.
 
    1. In the **Trigger Area** component, click **Add Required Component** and choose **Box Shape**\.
 
@@ -88,7 +88,7 @@ To create a door and trigger area, create an entity with child entities and then
 **Example**    
 ![\[See the components and properties for the Door Trigger entity.\]](/images/userguide/scripting/script-canvas/entity-inspector-box-shape-dimensions-settings.png)
 
-## Step 2: Create a Script to Open and Close the Door<a name="script-canvas-tutorial-trigger-areas-step-two"></a>
+## Step 2: Create a Script to Open and Close the Door {#script-canvas-tutorial-trigger-areas-step-two}
 
 Now that you've set up your door and trigger area, you can create a script that opens and closes the door when another entity enters or leaves the trigger area\.
 

@@ -3,15 +3,15 @@ description: ' Use the UIScrollBoxComponent to control the characteristics of a 
   box in &ALYlong;. '
 title: UIScrollBoxComponent
 ---
-# UIScrollBoxComponent<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent"></a>
+# UIScrollBoxComponent {#lua-scripting-ces-api-ui-uiscrollboxcomponent}
 
 Controls the characteristics of a scroll box\.
 
-## UiScrollBoxBus<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus"></a>
+## UiScrollBoxBus {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus}
 
 Services messages for the `UiScrollBoxComponent`\.
 
-### FindClosestContentChildElement<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-findclosestcontentchildelement"></a>
+### FindClosestContentChildElement {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-findclosestcontentchildelement}
 
 Finds the child of the content element that is closest to the content anchors at the current scroll offset \(the currently selected child\)\.
 
@@ -21,7 +21,7 @@ Finds the child of the content element that is closest to the content anchors at
 AZ::EntityId FindClosestContentChildElement()
 ```
 
-### GetContentEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getcontententity"></a>
+### GetContentEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getcontententity}
 
 Returns the content element for the scroll box\.
 
@@ -31,7 +31,7 @@ Returns the content element for the scroll box\.
 AZ::EntityId GetContentEntity()
 ```
 
-### GetHorizontalScrollBarEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-gethorizontalscrollbarentity"></a>
+### GetHorizontalScrollBarEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-gethorizontalscrollbarentity}
 
 Returns the horizontal scroll bar element for the scroll box\.
 
@@ -41,7 +41,7 @@ Returns the horizontal scroll bar element for the scroll box\.
 AZ::EntityId GetHorizontalScrollBarEntity()
 ```
 
-### GetHorizontalScrollBarVisibility<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-gethorizontalscrollbarvisibility"></a>
+### GetHorizontalScrollBarVisibility {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-gethorizontalscrollbarvisibility}
 
 Returns the visibility behavior for the horizontal scroll bar of the scroll box\.
 
@@ -62,7 +62,7 @@ enum eUiScrollBoxScrollBarVisibility
     };
 ```
 
-### GetIsHorizontalScrollingEnabled<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getishorizontalscrollingenabled"></a>
+### GetIsHorizontalScrollingEnabled {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getishorizontalscrollingenabled}
 
 Returns whether the scroll box allows horizontal scrolling\.
 
@@ -72,7 +72,7 @@ Returns whether the scroll box allows horizontal scrolling\.
 bool GetIsHorizontalScrollingEnabled()
 ```
 
-### GetIsScrollingConstrained<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getisscrollingconstrained"></a>
+### GetIsScrollingConstrained {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getisscrollingconstrained}
 
 Returns whether the scroll box restricts scrolling to the content area\.
 
@@ -82,7 +82,7 @@ Returns whether the scroll box restricts scrolling to the content area\.
 bool GetIsScrollingConstrained()
 ```
 
-### GetIsVerticalScrollingEnabled<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getisverticalscrollingenabled"></a>
+### GetIsVerticalScrollingEnabled {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getisverticalscrollingenabled}
 
 Returns whether the scroll box allows vertical scrolling\.
 
@@ -92,7 +92,7 @@ Returns whether the scroll box allows vertical scrolling\.
 bool GetIsVerticalScrollingEnabled()
 ```
 
-### GetNormalizedScrollValue<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getnormalizedscrollvalue"></a>
+### GetNormalizedScrollValue {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getnormalizedscrollvalue}
 
 Returns the scroll value from 0 – 1\.
 
@@ -102,7 +102,7 @@ Returns the scroll value from 0 – 1\.
 AZ::Vector2 GetNormalizedScrollValue()
 ```
 
-### GetScrollOffset<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffset"></a>
+### GetScrollOffset {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffset}
 
 Returns the scroll offset of the scroll box\. The scroll offset is the offset from the content element's anchor point to the content element's pivot\.
 
@@ -112,7 +112,7 @@ Returns the scroll offset of the scroll box\. The scroll offset is the offset fr
 AZ::Vector2 GetScrollOffset()
 ```
 
-### GetScrollOffsetChangedActionName<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffsetchangedactionname"></a>
+### GetScrollOffsetChangedActionName {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffsetchangedactionname}
 
 Returns the action triggered when the scroll box drag is completed\.
 
@@ -122,7 +122,7 @@ Returns the action triggered when the scroll box drag is completed\.
 const AZStd::string& GetScrollOffsetChangedActionName()
 ```
 
-### GetScrollOffsetChangingActionName<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffsetchangingactionname"></a>
+### GetScrollOffsetChangingActionName {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getscrolloffsetchangingactionname}
 
 Returns the action triggered while the scroll box is being dragged\.
 
@@ -132,7 +132,7 @@ Returns the action triggered while the scroll box is being dragged\.
 AZStd::string& GetScrollOffsetChangingActionName() 
 ```
 
-### GetSnapGrid<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapgrid"></a>
+### GetSnapGrid {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapgrid}
 
 Returns the snapping grid of the scroll box\.
 
@@ -142,7 +142,7 @@ Returns the snapping grid of the scroll box\.
 AZ::Vector2 GetSnapGrid()
 ```
 
-### GetSnapMode<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapmode"></a>
+### GetSnapMode {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapmode}
 
 Returns the snap mode for the scroll box\.
 
@@ -163,7 +163,7 @@ enum eUiScrollBoxSnapMode
     };
 ```
 
-### GetVerticalScrollBarEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getverticalscrollbarentity"></a>
+### GetVerticalScrollBarEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getverticalscrollbarentity}
 
 Returns the vertical scroll bar element for the scroll box\.
 
@@ -173,7 +173,7 @@ Returns the vertical scroll bar element for the scroll box\.
 AZ::EntityId GetVerticalScrollBarEntity()
 ```
 
-### GetVerticalScrollBarVisibility<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getverticalscrollbarvisibility"></a>
+### GetVerticalScrollBarVisibility {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getverticalscrollbarvisibility}
 
 Returns the visibility behavior for the vertical scroll bar of the scroll box\.
 
@@ -183,7 +183,7 @@ Returns the visibility behavior for the vertical scroll bar of the scroll box\.
 eUiScrollBoxScrollBarVisibility GetVerticalScrollBarVisibility()
 ```
 
-### HasHorizontalContentToScroll<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-hashorizontalcontenttoscroll"></a>
+### HasHorizontalContentToScroll {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-hashorizontalcontenttoscroll}
 
 Returns whether there is content to scroll horizontally\.
 
@@ -193,7 +193,7 @@ Returns whether there is content to scroll horizontally\.
 bool HasHorizontalContentToScroll()
 ```
 
-### HasVerticalContentToScroll<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-hasverticalcontenttoscroll"></a>
+### HasVerticalContentToScroll {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-hasverticalcontenttoscroll}
 
 Returns whether there is content to scroll vertically\.
 
@@ -203,7 +203,7 @@ Returns whether there is content to scroll vertically\.
 bool HasVerticalContentToScroll()
 ```
 
-### SetContentEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setcontententity"></a>
+### SetContentEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setcontententity}
 
 Sets the content element for the scroll box\.
 
@@ -213,7 +213,7 @@ Sets the content element for the scroll box\.
 void SetContentEntity(AZ::EntityId entityId)
 ```
 
-### SetHorizontalScrollBarEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-sethorizontalscrollbarentity"></a>
+### SetHorizontalScrollBarEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-sethorizontalscrollbarentity}
 
 Sets the horizontal scroll bar element for the scroll box\.
 
@@ -223,7 +223,7 @@ Sets the horizontal scroll bar element for the scroll box\.
 void SetHorizontalScrollBarEntity(AZ::EntityId entityId)
 ```
 
-### SetHorizontalScrollBarVisibility<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-sethorizontalscrollbarvisibility"></a>
+### SetHorizontalScrollBarVisibility {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-sethorizontalscrollbarvisibility}
 
 Sets the visibility behavior for the horizontal scroll bar of the scroll box\.
 
@@ -235,7 +235,7 @@ void SetHorizontalScrollBarVisibility(eUiScrollBoxScrollBarVisibility visibility
 
 For possible values for `eUiScrollBoxScrollBarVisibility`, see [GetHorizontalScrollBarVisibility](#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-gethorizontalscrollbarvisibility)\.
 
-### SetIsHorizontalScrollingEnabled<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setishorizontalscrollingenabled"></a>
+### SetIsHorizontalScrollingEnabled {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setishorizontalscrollingenabled}
 
 Sets whether the scroll box allows horizontal scrolling\.
 
@@ -245,7 +245,7 @@ Sets whether the scroll box allows horizontal scrolling\.
 void SetIsHorizontalScrollingEnabled(bool isEnabled) 
 ```
 
-### SetIsScrollingConstrained<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setisscrollingconstrained"></a>
+### SetIsScrollingConstrained {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setisscrollingconstrained}
 
 Sets whether the scroll box restricts scrolling to the content area\.
 
@@ -255,7 +255,7 @@ Sets whether the scroll box restricts scrolling to the content area\.
 void SetIsScrollingConstrained(bool isConstrained)
 ```
 
-### SetIsVerticalScrollingEnabled<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setisverticalscrollingenabled"></a>
+### SetIsVerticalScrollingEnabled {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setisverticalscrollingenabled}
 
 Sets whether the scroll box allows vertical scrolling\.
 
@@ -265,7 +265,7 @@ Sets whether the scroll box allows vertical scrolling\.
 void SetIsVerticalScrollingEnabled(bool isEnabled)
 ```
 
-### SetScrollOffset<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffset"></a>
+### SetScrollOffset {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffset}
 
 Sets the scroll offset of the scroll box\.
 
@@ -275,7 +275,7 @@ Sets the scroll offset of the scroll box\.
 void SetScrollOffset(AZ::Vector2 scrollOffset)
 ```
 
-### SetScrollOffsetChangedActionName<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffsetchangedactionname"></a>
+### SetScrollOffsetChangedActionName {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffsetchangedactionname}
 
 Sets the action triggered when the scroll box drag is completed\.
 
@@ -285,7 +285,7 @@ Sets the action triggered when the scroll box drag is completed\.
 void SetScrollOffsetChangedActionName(const AZStd::string& actionName)
 ```
 
-### SetScrollOffsetChangingActionName<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffsetchangingactionname"></a>
+### SetScrollOffsetChangingActionName {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setscrolloffsetchangingactionname}
 
 Sets the action triggered while the scroll box is being dragged\.
 
@@ -295,7 +295,7 @@ Sets the action triggered while the scroll box is being dragged\.
 void SetScrollOffsetChangingActionName(const AZStd::string& actionName)
 ```
 
-### SetSnapGrid<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setsnapgrid"></a>
+### SetSnapGrid {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setsnapgrid}
 
 Sets the snapping grid of the scroll box\.
 
@@ -305,7 +305,7 @@ Sets the snapping grid of the scroll box\.
 void SetSnapGrid(AZ::Vector2 snapGrid)
 ```
 
-### SetSnapMode<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setsnapmode"></a>
+### SetSnapMode {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setsnapmode}
 
 Sets the snap mode for the scroll box\.
 
@@ -317,7 +317,7 @@ void SetSnapMode(eUiScrollBoxSnapMode snapMode)
 
 For possible values for `eUiScrollBoxSnapMode`, see [GetSnapMode](#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapmode)\.
 
-### SetVerticalScrollBarEntity<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setverticalscrollbarentity"></a>
+### SetVerticalScrollBarEntity {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setverticalscrollbarentity}
 
 Sets the vertical scroll bar element for the scroll box\.
 
@@ -327,7 +327,7 @@ Sets the vertical scroll bar element for the scroll box\.
 void SetVerticalScrollBarEntity(AZ::EntityId entityId) 
 ```
 
-### SetVerticalScrollBarVisibility<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setverticalscrollbarvisibility"></a>
+### SetVerticalScrollBarVisibility {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setverticalscrollbarvisibility}
 
 Sets the visibility behavior for the vertical scroll bar of the scroll box\.
 
@@ -337,11 +337,11 @@ Sets the visibility behavior for the vertical scroll bar of the scroll box\.
 void SetVerticalScrollBarVisibility(eUiScrollBoxScrollBarVisibility visibility
 ```
 
-## UiScrollBoxNotificationBus<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus"></a>
+## UiScrollBoxNotificationBus {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus}
 
 Services scroll offset change notifications for the `UiScrollBoxComponent`\.
 
-### OnScrollOffsetChanged<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus-onscrolloffsetchanged"></a>
+### OnScrollOffsetChanged {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus-onscrolloffsetchanged}
 
 Called when the scroll offset has changed\.
 
@@ -351,7 +351,7 @@ Called when the scroll offset has changed\.
 void OnScrollOffsetChanged(AZ::Vector2 newScrollOffset)
 ```
 
-### OnScrollOffsetChanging<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus-onscrolloffsetchanging"></a>
+### OnScrollOffsetChanging {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxnotificationbus-onscrolloffsetchanging}
 
 Called when the scroll offset is changing\.
 
@@ -361,11 +361,11 @@ Called when the scroll offset is changing\.
 void OnScrollOffsetChanging(AZ::Vector2 newScrollOffset)
 ```
 
-## UiScrollableNotificationBus<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus"></a>
+## UiScrollableNotificationBus {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus}
 
 Services scrollable value change notifications for the `UiScrollBoxComponent`\.
 
-### OnScrollableValueChanged<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus-onscrollablevaluechanged"></a>
+### OnScrollableValueChanged {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus-onscrollablevaluechanged}
 
 Called when the scroll value \(0 \- 1\) has changed\.
 
@@ -375,7 +375,7 @@ Called when the scroll value \(0 \- 1\) has changed\.
 void OnScrollableValueChanged(AZ::Vector2 value) 
 ```
 
-### OnScrollableValueChanging<a name="lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus-onscrollablevaluechanging"></a>
+### OnScrollableValueChanging {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus-onscrollablevaluechanging}
 
 Called when the scroll value \(0 \- 1\) is changing\.
 

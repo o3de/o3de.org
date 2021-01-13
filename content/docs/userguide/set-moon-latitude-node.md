@@ -3,7 +3,7 @@ description: ' Use the Set Moon Latitude node in the &ALYlong; &script-canvas; e
   to set the moon latitude. '
 title: Set Moon Latitude
 ---
-# Set Moon Latitude<a name="set-moon-latitude-node"></a>
+# Set Moon Latitude {#set-moon-latitude-node}
 
 Sets the moon's latitude in the sky\.
 
@@ -13,7 +13,7 @@ Sets the moon's latitude in the sky\.
 
 ![\[setmoonlatitude, setmoonlatitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-moon-latitude-node.png)
 
-## Inputs<a name="set-moon-latitude-node-input"></a>
+## Inputs {#set-moon-latitude-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Sets the moon's latitude in the sky\.
 | Latitude | Number | Moon latitude value to specify\. | 
 | Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the moon position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
 
-## Outputs<a name="set-moon-latitude-node-output"></a>
+## Outputs {#set-moon-latitude-node-output}
 
 
 ****  

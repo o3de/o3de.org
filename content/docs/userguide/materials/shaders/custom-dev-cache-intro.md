@@ -3,11 +3,11 @@ description: ' Improve performance by using a shader cache to store parsed and p
   shaders in &ALYlong;. '
 title: Shader Cache and Generation
 ---
-# Shader Cache and Generation<a name="mat-shaders-custom-dev-cache-intro"></a>
+# Shader Cache and Generation {#mat-shaders-custom-dev-cache-intro}
 
 This section discusses the shader cache and how to generate shader cache `.pak` files\.
 
-## Shader Cache<a name="mat-shaders-custom-dev-cache"></a>
+## Shader Cache {#mat-shaders-custom-dev-cache}
 
 The shader cache stores a collection of parsed and precompiled shaders\. Since the shader code is written with multiple definitions, Lumberyard can generate an enormous number of different shaders\. Compiling shaders on demand at run time is only possible on the PC\. On\-demand shader compiling can cause freezes during the game play and uses extra memory\. To reduce this overhead, all required shader combinations for a game are parsed, compiled, and stored in the shader cache\.
 
@@ -19,7 +19,7 @@ The actual shader source code \(`*.cfi` and `*.cfx`\) can be removed from this f
 + `ShaderCache.pak` – Contains compiled shaders for all possible combinations that have been submitted to the remote shader compiler\. 
 + `ShaderCacheStartup.pak` – Contains a small subset of the shader cache that is used during game start\. This file is loaded into memory for quicker start times, but is not required\. This cache is often used to hold the minimum required set of shaders to show a loading screen so that the rest of the loading can occur\.
 
-## ShaderCache\.pak File Generation<a name="mat-shaders-custom-dev-cache-generation"></a>
+## ShaderCache\.pak File Generation {#mat-shaders-custom-dev-cache-generation}
 
 Creating a `ShaderCache.pak` file consists of running the `lmbr_pak_shaders.bat` batch script, which in turn runs `ShaderCacheGen.exe` to ensure the local cache directory contains all the shaders that are listed in the `ShaderList.txt` file\. The `lmbr_pak_shaders.bat` script packs the contents of the cache directory, creates a `ShaderCache.zip` file, and then renames the file to `ShaderCache.pak`\.
 
@@ -34,7 +34,7 @@ During development time, when you run the game or Lumberyard Editor, and before 
 
 The following sections detail the steps used to generate `ShaderCache.pak` files:
 
-### ShaderCacheGen\.exe<a name="mat-shaders-custom-dev-cache-generation-1"></a>
+### ShaderCacheGen\.exe {#mat-shaders-custom-dev-cache-generation-1}
 
 Lumberyard ships with `ShaderCacheGen.exe`, which is located in the `lumberyard_version\dev\Bin64` directory\. For macOS, the file is located in the `\BinMac64` directory\. `ShaderCacheGen.exe` is a stripped\-down version of the Lumberyard game launcher without the render viewport, and is used to populate the local shader cache directory with all the shaders contained in the `ShaderList.txt` file\.
 
@@ -57,11 +57,11 @@ lmbr_waf build_win_x64_vs2017_profile -p game_and_engine
 lmbr_waf build_win_x64_vs2017_profile -p shadercachegen
 ```
 
-### Packing the Shader Cache as Part of the Release Build<a name="packing-shader-cache-as-part-of-release-build"></a>
+### Packing the Shader Cache as Part of the Release Build {#packing-shader-cache-as-part-of-release-build}
 
 The `ShaderCache.pak` files are generated for release builds as part of the build process\. To generate the files, the `ShaderCacheGen.exe` must be connected to the Remote Shader Compiler\. This must be the same Remote Shader Compiler that you used to generate the shaders for your game\. As long as this instance of the shader compiler is running, the release build process can generate the necessary `.pak` files for your release build\. If the shader compiler isn't running or reachable for some reason, the release build process fails\. 
 
-### Packing the Shader Cache Using a Batch File<a name="mat-shaders-custom-dev-cache-generation-4"></a>
+### Packing the Shader Cache Using a Batch File {#mat-shaders-custom-dev-cache-generation-4}
 
 The `lmbr_pak_shaders.bat` file generates the `ShaderCache.pak` files, which are saved to the `lumberyard_version\dev\build\platform\your_game` directory\. The batch file first calls the `ShaderCacheGen.exe` and then calls `Tools\PakShaders\pak_shaders.py`\.
 
@@ -75,7 +75,7 @@ F:\lumberyard_version\dev\lmbr_pak_shaders.bat game_project_name D3D11 pc C:\sha
 
 Once the shader `.pak` files are created, you can move them as needed\. For example, if you already built a release version of your game, you can place them with the rest of the `.pak` files\.
 
-### Packing the Shader Cache Manually<a name="mat-shaders-custom-dev-cache-generation-manual"></a>
+### Packing the Shader Cache Manually {#mat-shaders-custom-dev-cache-generation-manual}
 
 If you want to use more complex build pipelines, you can pack the shader cache manually\. 
 
@@ -125,7 +125,7 @@ lumberyard_version\dev\cache\your_game\platform\user\shaders\cache\<platform>\sc
 lumberyard_version\dev\cache\your_game\platform\user\shaders\cache\<platform>\stereo.cfxb -> Shaders\Cache\<platform>\stereo.cfxb
 ```
 
-### Build Platforms<a name="mat-shaders-custom-dev-cache-generation-platforms"></a>
+### Build Platforms {#mat-shaders-custom-dev-cache-generation-platforms}
 
 You can find the build platform subfolders listed in the following table in the `lumberyard_version\dev\Cache\your_game\platform\user\cache\shaders\` directory\.
 

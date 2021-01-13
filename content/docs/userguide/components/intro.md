@@ -3,7 +3,7 @@ description: ' Use the &component-system; to create entities and add components 
   them in &ALYlong;. '
 title: Working with component entities
 ---
-# Working with component entities<a name="component-intro"></a>
+# Working with component entities {#component-intro}
 
 The component entity system provides a modular and intuitive construction of game elements\. The component entity system works at both the system level and the entity level\. It employs reflection, serialization, messaging using the event bus \(EBus\), fully cascading prefabs \(slices\), and the ability to drag\-and\-drop and edit entities and their components in Lumberyard Editor\. 
 

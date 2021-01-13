@@ -2,7 +2,7 @@
 description: ' You can troubleshoot your skinned meshes for &ALYlong;. '
 title: Troubleshooting Skinned Meshes
 ---
-# Troubleshooting Skinned Meshes<a name="char-fbx-importer-export-skinned-meshes-troubleshooting"></a>
+# Troubleshooting Skinned Meshes {#char-fbx-importer-export-skinned-meshes-troubleshooting}
 
 If your character's skinning appears visually broken in the **Animation Editor**, the following issues could be why:
 + The **Coordinate system change** modifier isn't identical for the `.actor` and `.motion` files

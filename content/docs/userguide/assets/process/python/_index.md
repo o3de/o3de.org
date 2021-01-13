@@ -3,13 +3,13 @@ description: ' Use the Python Asset Builder gem to create custom asset builders 
   your &ALYlong; project. '
 title: Python Asset Builder gem
 ---
-# Python Asset Builder gem<a name="python-asset-builder"></a>
+# Python Asset Builder gem {#python-asset-builder}
 
 With **Python Asset Builder**, you can create Python scripts that process custom assets that are produced from content creation tools such as Maya and Houdini, or any content tool with a known file format\. 
 
 For information on using **Python Asset Builder**, see [Process custom assets with Python Asset Builder](/docs/userguide/assets/process/python/intro.md)\. 
 
-## Enable the Python Asset Builder gem<a name="enable-gem-python-asset-builder"></a>
+## Enable the Python Asset Builder gem {#enable-gem-python-asset-builder}
 
 To enable the Python Asset Builder gem, do the following: 
 

@@ -2,7 +2,7 @@
 description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
 title: Director (Scene) Node
 ---
-# Director \(Scene\) Node<a name="cinematics-track-view-nodes-director"></a>
+# Director \(Scene\) Node {#cinematics-track-view-nodes-director}
 
 The **Director \(Scene\)** node includes a camera track that specifies the active camera for a track view sequence\. You can add sequence\-specific nodes \(for example, **Depth of Field** or **Comment**\) under the **Director** node to override the same nodes that were set at the sequence level\.
 

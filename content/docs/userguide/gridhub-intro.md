@@ -3,7 +3,7 @@ description: ' Learn how to use and configure GridHub, the &ALYlong; connection 
   for debugging. '
 title: Using GridHub
 ---
-# Using GridHub<a name="gridhub-intro"></a>
+# Using GridHub {#gridhub-intro}
 
 ****  
 GridHub is in preview release and is subject to change\. 
@@ -18,14 +18,14 @@ Because GridHub listens for connections on the loopback address \(`127.0.0.1`\),
 + [Viewing and Configuring GridHub](#gridhub-viewing-and-configuring)
 + [Troubleshooting GridHub](#gridhub-troubleshooting)
 
-## Registering an Application in GridHub<a name="gridhub-registering-an-application"></a>
+## Registering an Application in GridHub {#gridhub-registering-an-application}
 
 To register an application in GridHub so that Profiler can capture information from the application, add `AzFramework::TargetManagementComponent` to the application’s `SystemComponent`\. 
 
 **Note**  
  Lumberyard's built\-in applications already have this component added by default\. 
 
-## Viewing and Configuring GridHub<a name="gridhub-viewing-and-configuring"></a>
+## Viewing and Configuring GridHub {#gridhub-viewing-and-configuring}
 
 When you launch `Profiler.exe` or `LuaIDE.exe`, GridHub starts automatically and is represented by a globe icon in the Windows taskbar\. 
 
@@ -80,7 +80,7 @@ The name of the hub must be the neighborhood name to which the `TargetManagement
 
 When GridHub is terminated, the connections it established are also terminated\. 
 
-## Troubleshooting GridHub<a name="gridhub-troubleshooting"></a>
+## Troubleshooting GridHub {#gridhub-troubleshooting}
 
 If you experience difficulty using GridHub, check the following: 
 + Make sure that the neighborhood name in `TargetManagerComponent` is the same as the one in GridHub\. 

@@ -2,7 +2,7 @@
 description: ' Use C++ macros for error management and troubleshooting in &ALYlong;. '
 title: '&script-canvas; Errors and Troubleshooting'
 ---
-# Script Canvas Errors and Troubleshooting<a name="script-canvas-errors-and-troubleshooting"></a>
+# Script Canvas Errors and Troubleshooting {#script-canvas-errors-and-troubleshooting}
 
 Script Canvas provides a mechanism to detect and report errors\. Errors in Script Canvas are generally caused by invalid conditions\.
 

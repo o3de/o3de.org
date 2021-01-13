@@ -3,7 +3,7 @@ description: ' Learn how to use the Blend Two Additive node in &ALYlong; &animat
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---
-# Blend Two Additive Node<a name="animation-editor-blending-blendtwoadditive"></a>
+# Blend Two Additive Node {#animation-editor-blending-blendtwoadditive}
 
 The **Blend Two Additive** node blends a pose 2 input additively on top of a pose 1 input\.
 
@@ -36,9 +36,9 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
      You can use a **Float Constant** node, for example, to specify a float value between `0.0` and `1.0`\. A value of `0.0` means **Pose 2** does not affect **Pose 1** at all\. A value of `1.0` means that **Pose 2** is fully added on top of **Pose 1**\. Other nodes that can specify **Weight** include the **Parameter** node, the **Smoothing** node, and so on\.
    + **Output Pose** – The result of the blended poses, which you can visualize as `Pose 1 + (Pose 2 * Weight)`\.
 
-## Blend Two Additive Node Attributes<a name="animation-editor-blending-blendtwoadditive-attributes"></a>
+## Blend Two Additive Node Attributes {#animation-editor-blending-blendtwoadditive-attributes}
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses#animation-editor-blending-attributes)\.
 
 The **Extraction Mode** for the **Blend Two Additive** node features masking and additive blending, which adds complexity over **Extraction Mode** for transitions\.
 

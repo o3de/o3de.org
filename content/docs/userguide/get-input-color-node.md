@@ -3,7 +3,7 @@ description: ' Use the Get Input Color node in the &ALYlong; &script-canvas; edi
   to return the procedural material input parameter as a color. '
 title: Get Input Color
 ---
-# Get Input Color<a name="get-input-color-node"></a>
+# Get Input Color {#get-input-color-node}
 
 Returns the value of an input parameter as a color\. The color channels are assumed to be a floating point, including the alpha channel\. Use this node with the `Float4` substance data type\. 
 
@@ -17,7 +17,7 @@ The node does not perform any range conversion\. For example, if an `Integer4` s
 
 ![\[GetInputColor gets the color value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-color-node.png)
 
-## Inputs<a name="get-input-color-node-input"></a>
+## Inputs {#get-input-color-node-input}
 
 
 ****  
@@ -28,7 +28,7 @@ The node does not perform any range conversion\. For example, if an `Integer4` s
 | Procedural Material | Procedural material | The procedural material to query\. | 
 | Input Name | String | The name of the input parameter to return\. | 
 
-## Outputs<a name="get-input-color-node-output"></a>
+## Outputs {#get-input-color-node-output}
 
 
 ****  

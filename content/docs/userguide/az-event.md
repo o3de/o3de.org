@@ -3,7 +3,7 @@ description: ' Use the AZ::Event template class to subscribe to and publish mess
   across game components. '
 title: AZ::Event&lt;...&gt;
 ---
-# AZ::Event<\.\.\.><a name="az-event"></a>
+# AZ::Event<\.\.\.> {#az-event}
 
 The `AZ::Event` template class is used to subscribe to and publish single value messages across the different components of your game\. It's designed to replace value\-based event pub/sub patterns that are currently implemented using EBus, only with significantly simpler syntax\. There are a number of benefits to this new system, including simpler code, fewer files, removal of aggregate interfaces where a handler only cares about a subset of events, and improved runtime performance when dispatching value changes to registered handlers\.
 
@@ -163,7 +163,7 @@ event.Signal(1); // Signal an event, this will invoke our handler's lambda
 
 Note the reduced lines of code, as well as the overall simpler code pattern\. Try it out by porting some of your current EBus message handlers to use `AZ::Event`, and then test it using our built\-in unit tests and benchmarks\.
 
-## Unit testing and benchmarking<a name="az-event-unit-tests"></a>
+## Unit testing and benchmarking {#az-event-unit-tests}
 
 The `AZ::Event `system includes a number of unit tests and benchmarks to validate correct behavior and confirm the performance advantages over an equivalent EBus implementation\.
 

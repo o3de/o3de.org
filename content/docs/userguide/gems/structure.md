@@ -3,7 +3,7 @@ description: ' Learn how &ALYlong; gems are structured and the files that you ca
   modify to customize gems for your game. '
 title: Gem Structure
 ---
-# Gem Structure<a name="gems-system-structure"></a>
+# Gem Structure {#gems-system-structure}
 
 Each gem package can contain the following: 
 + Assets
@@ -23,17 +23,17 @@ Each gem package can contain the following:
 + [Accessing Gems in Code](#accessing-gems-in-code)
 + [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)
 
-## Gem Assets<a name="gem-assets-directory"></a>
+## Gem Assets {#gem-assets-directory}
 
 Each gem has an `Assets` directory that contains models, textures, scripts, and animations\. Asset files are accessed the same way as they are in a game project\. Lumberyard uses this root directory to find the asset file path\. For example, when Lumberyard looks for the `textures\rain\rainfall_ddn.tif` file, it looks in the `<GemName>\Assets\textures\rain\rainfall_ddn.tif` directory\.
 
-## Gem Icon File<a name="gem-icon-file"></a>
+## Gem Icon File {#gem-icon-file}
 
 The gem icon is a `.jpg`, `.png`, or `.gif` file\. The following example is the icon for the [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md)\.
 
 ![\[Icon file for the Lightning Arc gem.\]](/images/userguide/gem-icon-example.png)
 
-## Gem JSON File<a name="gem-json-file"></a>
+## Gem JSON File {#gem-json-file}
 
 **Example**  
 This example file contains metadata for the gem and the following properties\.  
@@ -131,7 +131,7 @@ Code product that the gem produces\. Each module entry can have the following fi
   + `use`
   + `uselib`
 
-**Dependencies**  <a name="dependencies"></a>
+**Dependencies**   {#dependencies}
 UUIDs and versions of other gems to which the gem depends\. Acceptable version specifiers have an operator and a version number\. Consider these examples:      
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-structure.html)
 
@@ -146,7 +146,7 @@ Defines how other gems and game projects should link to this gem:
 + `Dynamic` – Produces a `.dll` file and links all dependent projects against the `.dll` file using an import library\.
 + `NoCode` – Does not produce a `.dll` or `.lib` file\. The gem contains assets but not code\. You can add a gem with the `NoCode` value to a game project without rebuilding\.
 
-### Module Types<a name="gem-module-types"></a>
+### Module Types {#gem-module-types}
 
 Following are module types and how to define them\. For examples of gems with module types defined, see [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)\.
 
@@ -163,7 +163,7 @@ Module type that is useful when your gem requires helper code that is linked to 
 **Builder**  
 Used by Asset Processor for building assets\. For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
-## Gem Code<a name="gem-code-directory"></a>
+## Gem Code {#gem-code-directory}
 
 You can find a gem's code in the `<GemName>\Code` directory\. The directory contains the following:
 
@@ -196,7 +196,7 @@ This class can be made to extend `CryHooksModule` \(in `IGem.h`\) instead to hav
 Directory that contains unit tests for your gem\. Add all files in this directory to the `gemname_tests.waf_files`\.   
 `GemNameTest.cpp` – Contains an example for writing gtests for your gem, which are unit test files for your gem\.
 
-### Wscript and Modules<a name="wscript-and-modules"></a>
+### Wscript and Modules {#wscript-and-modules}
 
 The gem's `wscript` must call `bld.DefineGem(...)` in order for the gem to build properly\. The `DefineGem` function expects keyword arguments, mapping from a module's name to a data type dictionary of the build settings for the module\. If the module does not have a name, its build settings may be placed directly in the call to `DefineGem()`\. 
 
@@ -234,7 +234,7 @@ Overriding this value is not recommended\.
 
 For more information about `waf` and `wscript` files, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
-## Gem List File – gems\.json<a name="gems-system-gem-list-file"></a>
+## Gem List File – gems\.json {#gems-system-gem-list-file}
 
 You can find the `gems.json` list file at the root of each project directory\. For example, for the Samples Project, the `gems.json` file is located in the `lumberyard_version\dev\SamplesProject` directory\. This example file lists all gems used in the game project\. 
 
@@ -254,7 +254,7 @@ You can find the `gems.json` list file at the root of each project directory\. F
 }
 ```
 
-## Accessing Gems in Code<a name="accessing-gems-in-code"></a>
+## Accessing Gems in Code {#accessing-gems-in-code}
 
 You can access gems through code, as in the following example:
 

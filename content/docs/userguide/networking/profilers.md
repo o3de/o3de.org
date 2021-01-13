@@ -3,14 +3,14 @@ description: ' Use Profiler''s network features to understand how your game uses
   bandwidth in &ALYlong;. '
 title: Using Profiler for Networking
 ---
-# Using Profiler for Networking<a name="network-profilers"></a>
+# Using Profiler for Networking {#network-profilers}
 
 ****  
 Profiler is in preview release and is subject to change\. 
 
 You can use the Lumberyard Profiler tool to examine how your game uses network bandwidth, including its GridMate carrier connections and replica activity\. You can use network\-specific profilers to drill down further into the activity of specific replica chunks, RPCs, and data sets\. 
 
-## Prerequisites<a name="network-profilers-knowledge-prerequisites"></a>
+## Prerequisites {#network-profilers-knowledge-prerequisites}
 
 This topic assumes familiarity with Lumberyard networking and the Lumberyard Profiler tool\. For information on Lumberyard networking, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\. For an introduction to the Profiler tool, see [Profiler](/docs/userguide/debugging/profiling/intro.md)\.
 
@@ -19,7 +19,7 @@ This topic assumes familiarity with Lumberyard networking and the Lumberyard Pro
 + [Carrier Profiler](#network-profiler-carrier)
 + [Replica Activity Profiler](#network-profiler-replica-activity)
 
-## Carrier Profiler<a name="network-profiler-carrier"></a>
+## Carrier Profiler {#network-profiler-carrier}
 
 The Profiler tool has a GridMate channel with **Carrier** and **Replica activity** profiler instances\. You can use the Carrier profiler detail view to examine the bandwidth usage of a selected GridMate carrier connection\.
 
@@ -42,7 +42,7 @@ The Profiler tool has a GridMate channel with **Carrier** and **Replica activity
      
   + **Return Trip Time \(Latency\)** – How many seconds the packets took to make a return trip\.
 
-## Replica Activity Profiler<a name="network-profiler-replica-activity"></a>
+## Replica Activity Profiler {#network-profiler-replica-activity}
 
 You can use the Replica Activity profiler to see how much replica bandwidth your application is using\.
 
@@ -57,7 +57,7 @@ You can use the Replica Activity profiler to see how much replica bandwidth your
 
 Two main detail views are available for replica activity: **Replica** and **Chunk Type**\. The view defaults to **Replica**, but Profiler remembers your most recent choice and uses it the next time you view replica activity details\.
 
-### Using Replica View<a name="network-profiler-replica-activity-replica-view"></a>
+### Using Replica View {#network-profiler-replica-activity-replica-view}
 
 In replica view, the table shows how much data each replica used in a given frame\. 
 
@@ -121,7 +121,7 @@ Click **Expand All** to list all replica chunks in all replicas, and every data 
 
      
 
-### Chunk Type View<a name="network-profiler-replica-activity-chunk-type-view"></a>
+### Chunk Type View {#network-profiler-replica-activity-chunk-type-view}
 
 Chunk type view shows you how much data each chunk type used in a given frame\. The view is useful for seeing how much information a particular system might be using across all entities\. 
 

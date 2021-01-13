@@ -2,11 +2,11 @@
 description: null
 title: Creating a Texture Atlas
 ---
-# Creating a Texture Atlas<a name="ui-editor-texture-atlases-creating"></a>
+# Creating a Texture Atlas {#ui-editor-texture-atlases-creating}
 
 To create a texture atlas, you create a texture atlas \(`.texatlas`\) file\. A texture atlas file is a text file that specifies the image files to be added to the texture atlas\. The Asset Processor automatically builds files that have the `.texatlas` extension\.
 
-## Texture Atlas File Format<a name="ui-editor-texture-atlases-file-format"></a>
+## Texture Atlas File Format {#ui-editor-texture-atlases-file-format}
 
 Each line of the `.texatlas` file represents a command that is executed sequentially\. Empty lines are ignored\.
 
@@ -55,10 +55,10 @@ If a line specifies a path to an image file, the image is included in the textur
 UI/Textures/LyShineExamples/button.tif
 ```
 
-## Updating a Texture Atlas<a name="ui-editor-texture-atlases-updating"></a>
+## Updating a Texture Atlas {#ui-editor-texture-atlases-updating}
 
 The Asset Processor automatically rebuilds the texture atlas if a texture in the atlas changes or if an existing source `.texatlas` file changes\.
 
-## Texture Atlas Output Files<a name="ui-editor-texture-atlases-texture-atlas-output-files"></a>
+## Texture Atlas Output Files {#ui-editor-texture-atlases-texture-atlas-output-files}
 
 The Asset Processor outputs two files that represent a texture atlas: a `.dds` file and a `.texatlasidx` file\. The `.dds` file is a texture that contains all the images specified in the `.texatlas` file\. The `.texatlasidx` file stores coordinate and other image information\.

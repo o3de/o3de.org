@@ -3,7 +3,7 @@ description: ' Use a variety of brushes to add realistic mountains, valleys, and
   landforms to your &ALY; terrain. '
 title: Creating Landforms and Topography
 ---
-# Creating Landforms and Topography<a name="terrain-landforms-intro"></a>
+# Creating Landforms and Topography {#terrain-landforms-intro}
 
 You can add realistic mountains, hills, valleys, and other landforms to your terrain in your environment level\. The primary method for creating interesting terrain features and landforms involves the following brushes:
 + **Rise/Lower brush** – Increases and decreases the local terrain height to quickly create hills, valleys, and river beds, for example\.

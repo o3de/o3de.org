@@ -2,7 +2,7 @@
 description: ' See the following example for global and group AI in &ALYlong;. '
 title: 'Group and Global AI: Factions'
 ---
-# Group and Global AI: Factions<a name="ai-concepts-example-group-factions"></a>
+# Group and Global AI: Factions {#ai-concepts-example-group-factions}
 
 **Example: AI formations of different factions**
 

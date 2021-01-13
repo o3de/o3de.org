@@ -3,7 +3,7 @@ description: ' Use console commands to modify and configure the &ALYlong; runtim
   application. '
 title: '&remote-console;'
 ---
-# Universal Remote Console<a name="lumberyard-remote-console"></a>
+# Universal Remote Console {#lumberyard-remote-console}
 
 You can use **Console** commands to modify and configure the Lumberyard runtime application\. On a PC, the **Console** is available from Lumberyard Editor or the game\. But for mobile platforms you must use a separate Windows\-based application called the Universal Remote Console\. With the Universal Remote Console you can use the IP address of the machine running the Lumberyard game to connect to a remote instance of Lumberyard\.
 
@@ -28,7 +28,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 1. After you update the `.cfg` file, deploy the game to mobile devices\.
 
-   For more information, see [Deploy with Lumberyard Editor](/docs/userguide/mobile/android/build-deploy.md#run-the-deployment-tool) and [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
+   For more information, see [Deploy with Lumberyard Editor](/docs/userguide/mobile/android/build-deploy#run-the-deployment-tool) and [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
 
 1. If the game is already running, restart it\.
 
@@ -47,7 +47,7 @@ If your network allows you to assign fixed IP addresses per device, you can edit
 
 This lets you select from a list of devices instead of entering the IP address each time\. Once successfully connected, the status indicator in the lower right corner will turn green\. 
 
-## Issuing Commands<a name="lumberyard-remote-console-commands"></a>
+## Issuing Commands {#lumberyard-remote-console-commands}
 
 In the **Type a command** box at the bottom of the window, enter a command like the ones that follow\. This control features autocomplete and, for certain commands \(like `map`\), can also detect available options\.
 

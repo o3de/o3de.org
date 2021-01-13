@@ -2,7 +2,7 @@
 description: ' Learn more about AI scripting in &ALYlong;. '
 title: AI Scripting
 ---
-# AI Scripting<a name="ai-scripting"></a>
+# AI Scripting {#ai-scripting}
 
 
 ****  

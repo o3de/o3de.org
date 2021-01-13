@@ -4,7 +4,7 @@ description: ' Configure console variables (CVARs) to activate and modify config
   specifications. '
 title: Configuring Required Console Variables
 ---
-# Configuring Required Console Variables<a name="virtual-reality-cvars"></a>
+# Configuring Required Console Variables {#virtual-reality-cvars}
 
 Console variables – Console variables \(CVARs\) are a type of variable that you can manipulate in Lumberyard's console interface\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
@@ -29,7 +29,7 @@ Float value\. Scales the resolution for better performance\. For example, set to
 **e\_gi = 0**  
 Disables the global illumination setting\. 0 = disabled; 1 = enabled\.
 
-## Optional Console Variables<a name="vr-optional-cvars"></a>
+## Optional Console Variables {#vr-optional-cvars}
 
 The following console variables are optional but strongly recommended\. Disabling the following rendering features ensures better performance in a virtual reality environment\. If you need certain rendering features that are explicitly disabled by these example variables, you may turn them back on at the cost of performance\.
 
@@ -37,7 +37,7 @@ The following console variables are optional but strongly recommended\. Disablin
 Sets the system configuration specification to medium\. 0 = custom; 1 = low; 2 = medium; 3 = high; 4 = very high\.
 
 **r\_ssdoHalfRes = 3**  
-Applies [screen space directional occlusion \(SSDO\)](/docs/userguide/ly-glos-chap.md#ssdo) bandwidth optimizations to half resolution output\. 0 = full resolution; 1 = lower resolution; 2 = low res depth \(except for small camera field of views\) to avoid artifacts; 3 = half resolution output\.
+Applies [screen space directional occlusion \(SSDO\)](/docs/userguide/ly-glos-chap#ssdo) bandwidth optimizations to half resolution output\. 0 = full resolution; 1 = lower resolution; 2 = low res depth \(except for small camera field of views\) to avoid artifacts; 3 = half resolution output\.
 
 **r\_Refraction = 0**  
 Disables refraction\. 0 = disabled; 1 = enabled\.
@@ -51,7 +51,7 @@ Disables tiled shading\. 0 = disabled; 1 = tiled forward shading for transparent
 **r\_SSReflections = 0**  
 Disables glossy screen space reflections\. 0 = disabled; 1 = enabled\.
 
-## Known Issue<a name="virtual-reality-cvars-known-issue"></a>
+## Known Issue {#virtual-reality-cvars-known-issue}
 
 There is a known issue in the VR system where having the console variable `e_CheckOcclusion` set to `1` \(which is its default\) can cause occasional flickering of the Entity geometry\.
 

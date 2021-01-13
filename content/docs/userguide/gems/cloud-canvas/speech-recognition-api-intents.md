@@ -3,11 +3,11 @@ description: ' Use the Speech Recognition Cloud Gem Portal API to manage intents
   &ALYlong;. '
 title: Intents
 ---
-# Intents<a name="cloud-canvas-cloud-gem-speech-recognition-api-intents"></a>
+# Intents {#cloud-canvas-cloud-gem-speech-recognition-api-intents}
 
 Use the following API commands to manage intents\.
 
-## GET /admin/listbuiltinintents/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-intents-get-adminlistbuiltinintentsnext-token"></a>
+## GET /admin/listbuiltinintents/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-intents-get-adminlistbuiltinintentsnext-token}
 
 Returns a list of built\-in intents\.
 
@@ -26,7 +26,7 @@ Returns a list of built\-in intents\.
 | intents | array | Contains information about built\-in intents\. | 
 | nextToken | string | Contains a pagination token to pass to retrieve the next page of built\-in intents\. If no additional pages exist, the string is empty\. | 
 
-## GET /admin/listcustomintents/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-intents-get-adminlistcustomintentsnext-token"></a>
+## GET /admin/listcustomintents/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-intents-get-adminlistcustomintentsnext-token}
 
 Returns a list of custom intents\.
 
@@ -45,7 +45,7 @@ Returns a list of custom intents\.
 | intents | array | Contains custom intent information\. | 
 | nextToken | string | Contains a pagination token to pass to retrieve the next page of custom intents\. If no additional pages exist, the string is empty\. | 
 
-## GET /admin/builtinintent/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-get-adminbuiltinintentname"></a>
+## GET /admin/builtinintent/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-get-adminbuiltinintentname}
 
 Returns information about a built\-in intent\.
 
@@ -63,7 +63,7 @@ Returns information about a built\-in intent\.
 | --- | --- | --- | 
 | intent | object | Contains information about the built\-in intent\. | 
 
-## PUT /admin/intent<a name="cloud-canvas-cloud-gem-speech-recognition-api-put-adminintent"></a>
+## PUT /admin/intent {#cloud-canvas-cloud-gem-speech-recognition-api-put-adminintent}
 
 Creates an intent or replaces an existing intent\.
 
@@ -81,7 +81,7 @@ Creates an intent or replaces an existing intent\.
 | --- | --- | --- | 
 | status | string | Contains READY if the intent is created or updated, or another state as defined by the Amazon Lex [PutIntent](https://docs.aws.amazon.com/lex/latest/dg/API_PutIntent.html) API\. | 
 
-## DELETE /admin/intent/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-delete-adminintentname"></a>
+## DELETE /admin/intent/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-delete-adminintentname}
 
 Deletes all versions of the intent\.
 
@@ -99,7 +99,7 @@ Deletes all versions of the intent\.
 | --- | --- | --- | 
 | status | string | Contains DELETED or an error message\. | 
 
-## GET /admin/intent/versions/*\{name\}*/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentversionsnamenext-token"></a>
+## GET /admin/intent/versions/*\{name\}*/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentversionsnamenext-token}
 
 Returns information about all the versions of an intent\.
 
@@ -119,7 +119,7 @@ Returns information about all the versions of an intent\.
 | intents | array | Contains intent versions information\. | 
 | nextToken | string | Contains a pagination token to pass to retrieve the next page of intent versions\. If no additional pages exist, the string is empty\. | 
 
-## GET /admin/intent/*\{name\}*/*\{version\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentnameversion"></a>
+## GET /admin/intent/*\{name\}*/*\{version\}* {#cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentnameversion}
 
 Returns information about a custom intent\.
 
@@ -138,7 +138,7 @@ Returns information about a custom intent\.
 | --- | --- | --- | 
 | intent | object | Information about a custom intent\. | 
 
-## GET /admin/intentdependency<a name="cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentdependency"></a>
+## GET /admin/intentdependency {#cloud-canvas-cloud-gem-speech-recognition-api-get-adminintentdependency}
 
 Returns the dependency of each intent\.
 
@@ -149,7 +149,7 @@ Returns the dependency of each intent\.
 | --- | --- | --- | 
 | dependency | object | Contains the dependency information of all the intents\. | 
 
-## PUT /admin/intent/version/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-put-adminintentversionname"></a>
+## PUT /admin/intent/version/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-put-adminintentversionname}
 
 Creates a new version of an intent based on the latest version of the intent\.
 

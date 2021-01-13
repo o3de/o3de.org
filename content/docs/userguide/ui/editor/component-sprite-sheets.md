@@ -3,7 +3,7 @@ description: ' Use sprite sheets to save collections of separate images for your
   UI in &ALYlong;''s &ui-canvas-editor; . '
 title: Sprite Sheets
 ---
-# Sprite Sheets<a name="ui-editor-component-sprite-sheets"></a>
+# Sprite Sheets {#ui-editor-component-sprite-sheets}
 
 You can configure an image as a sprite sheet\. 
 

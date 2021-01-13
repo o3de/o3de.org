@@ -3,7 +3,7 @@ description: ' Use temporal antialiasing (TAA) to reduce ghosting artifacts in m
   and set the amount of antialiasing needed for your graphics in &ALYlong;. '
 title: Temporal Antialiasing and Supersampling
 ---
-# Temporal Antialiasing and Supersampling<a name="graphics-rendering-anti-aliasing"></a>
+# Temporal Antialiasing and Supersampling {#graphics-rendering-anti-aliasing}
 
 Supersampling is a method of antialiasing that attempts to reduce jagged, pixelated edges \(aliasing\) in images\. It works by sampling a higher resolution version of the image to get the average color of a pixel before reducing it to the intended size\. The averaged color values create smoother transitions along an edge of colors, reducing the jagged look\.
 
@@ -15,7 +15,7 @@ TAA is useful for reducing aliasing from the following:
 
 You can configure TAA by setting the `r_AntialiasingMode` console variable, editing the platform configuration file, or creating a level configuration file with this setting\.
 
-## Controlling Antialiasing<a name="graphics-rendering-anti-aliasing-antialias"></a>
+## Controlling Antialiasing {#graphics-rendering-anti-aliasing-antialias}
 
 The following table lists the antialiasing modes that are available in Lumberyard when you use the `r_AntialiasingMode` console variable\.
 
@@ -52,7 +52,7 @@ The following images illustrate the range of graphics quality that you can achie
 
 ![\[Image NOT FOUND\]](/images/userguide/shared-bistro-bar-example.gif)
 
-## Temporal Antialiasing Limitations<a name="graphics-rendering-anti-aliasing-limitations"></a>
+## Temporal Antialiasing Limitations {#graphics-rendering-anti-aliasing-limitations}
 
 Temporal antialiasing \(TAA\) is an inexpensive solution that reduces aliasing from all sources and works well with most content\. Because it relies on screen\-space information from previous frames, TAA has limitations in the following scenarios:
 + Objects occlude other objects while in motion\. In this scenario, the newly visible areas in the current frame don't have a history value to blend with and can manifest as ghosting\.
@@ -62,13 +62,13 @@ Temporal antialiasing \(TAA\) is an inexpensive solution that reduces aliasing f
 
 In these cases, you may prefer to use subpixel morphological antialiasing \(SMAA\) or fast approximate antialiasing \(FXAA\)\.
 
-## Temporal Antialiasing Best Practices<a name="graphics-rendering-anti-aliasing-best-practices"></a>
+## Temporal Antialiasing Best Practices {#graphics-rendering-anti-aliasing-best-practices}
 
 We recommend following these best practices when using temporal antialiasing \(TAA\)\.
 + Build content to alias as little as possible\.
 + Use level of detail \(LOD\) to reduce subpixel detail for objects that are far away\.
 + Use the anti\-flicker filter to help with flickering\. The `r_AntialiasingTAAUseAntiFlickerFilter` console variable is enabled by default\.
 
-## Controlling Supersampling<a name="graphics-rendering-anti-aliasing-supersampling"></a>
+## Controlling Supersampling {#graphics-rendering-anti-aliasing-supersampling}
 
 In addition to antialiasing, Lumberyard supports supersampling for very high quality rendering\. Supersampling renders the scene at a higher resolution and downscales the image to obtain smooth and stable edges\. Due to the high internal rendering resolution, supersampling is performance heavy and only suitable for games intended to be played on high\-end computers\.

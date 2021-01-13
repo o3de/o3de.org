@@ -2,7 +2,7 @@
 description: ' Design considerations for authoring iOS and Android games using &ALYlong;. '
 title: Design Considerations for Creating Mobile Games Using &ALY;
 ---
-# Design Considerations for Creating Mobile Games Using Lumberyard<a name="ios-android-design-considerations"></a>
+# Design Considerations for Creating Mobile Games Using Lumberyard {#ios-android-design-considerations}
 
 
 ****  
@@ -13,7 +13,7 @@ title: Design Considerations for Creating Mobile Games Using &ALY;
 
 Lumberyard is a cross\-platform game engine, which allows you to develop your game with less concern about the release platform\(s\)\. However, some mobile development considerations are discussed below, including game logic, input, and application lifecycle\.
 
-## Application Lifecycle<a name="mobile-design-considerations-application-lifecycle"></a>
+## Application Lifecycle {#mobile-design-considerations-application-lifecycle}
 
 Lumberyard provides a Process Life Management Gem \(in the Project Configurator\) that shows how you can respond to various application lifecycle events in order to pause your game, display a modal splash screen, and any other actions that need to occur if your application loses focus\. You can access system\-specific events in C\+\+ by connecting to the appropriate EBus; however, Lumberyard also generates platform\-agnostic events that you can use for all supported platforms\.
 

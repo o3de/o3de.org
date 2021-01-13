@@ -3,7 +3,7 @@ description: ' Use the AnimGraph component to adds an animation graph and motion
   to your character. '
 title: AnimGraph
 ---
-# AnimGraph<a name="component-animgraph"></a>
+# AnimGraph {#component-animgraph}
 
 
 ****  
@@ -14,7 +14,7 @@ title: AnimGraph
 
 You can use the **AnimGraph** component to add an animation graph and motion set to your character\. Add this component to the [Actor](/docs/userguide/components/actor.md) component to control character behavior from an animation graph\. For single motions, see the [Simple Motion](/docs/userguide/components/simple-motion.md) component\.
 
-## AnimGraph Component Properties<a name="component-animgraph-properties"></a>
+## AnimGraph Component Properties {#component-animgraph-properties}
 
 The **AnimGraph** component has the following properties:
 

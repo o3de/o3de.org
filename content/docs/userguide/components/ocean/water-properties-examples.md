@@ -2,7 +2,7 @@
 description: ' Work with water properties in &ALYlong;. '
 title: Understanding Water Properties
 ---
-# Understanding Water Properties<a name="infinite-ocean-component-water-properties-examples"></a>
+# Understanding Water Properties {#infinite-ocean-component-water-properties-examples}
 
 When working with water properties, the color and appearance come from two places: 
 + Reflections that occur on the surface\.

@@ -3,7 +3,7 @@ description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; ed
   to get a material''s numerical parameter value for the specified entity. '
 title: Get Param Number
 ---
-# Get Param Number<a name="material-owner-get-param-number-node"></a>
+# Get Param Number {#material-owner-get-param-number-node}
 
 Returns a material's numerical parameter value for the specified entity\.
 
@@ -13,7 +13,7 @@ Returns a material's numerical parameter value for the specified entity\.
 
 ![\[getparamnumbernode, getparamnumber\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-material-owner-node.png)
 
-## Inputs<a name="material-owner-get-param-number-node-input"></a>
+## Inputs {#material-owner-get-param-number-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Returns a material's numerical parameter value for the specified entity\.
 | Param Name | String |  The name of the material parameter to query\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Material ID | Number | If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at 1\. | 
 
-## Outputs<a name="material-owner-get-param-number-node-output"></a>
+## Outputs {#material-owner-get-param-number-node-output}
 
 
 ****  

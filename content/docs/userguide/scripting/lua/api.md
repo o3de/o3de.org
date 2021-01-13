@@ -2,7 +2,7 @@
 description: ' Learn about Lua API calls that you can use with &ALY;. '
 title: Component Entity Lua API Reference
 ---
-# Component Entity Lua API Reference<a name="lua-api"></a>
+# Component Entity Lua API Reference {#lua-api}
 
 
 ****  
@@ -13,11 +13,11 @@ title: Component Entity Lua API Reference
 
 You can use the Lua API calls in this reference for scripting the component entity system in Lumberyard\. For a tutorial on writing Lua scripts in Lumberyard, see [Writing Lua Scripts](/docs/userguide/scripting/lua/intro.md)\. For Lua scripting functions that load and unload canvases in Lumberyard Editor, see the [UI Lua Reference](/docs/userguide/scripting/lua/ces-api-ui.md)\.
 
-## BehaviorTreeComponentRequestBus<a name="lua-api-behaviortreecomponentrequestbus"></a>
+## BehaviorTreeComponentRequestBus {#lua-api-behaviortreecomponentrequestbus}
 
 Represents a request submitted by a user of the current component\.
 
-### StartBehaviorTree<a name="lua-api-behaviortreecomponentrequestbus-startbehaviortree"></a>
+### StartBehaviorTree {#lua-api-behaviortreecomponentrequestbus-startbehaviortree}
 
 Starts an inactive behavior tree associated with the current entity\.
 
@@ -27,7 +27,7 @@ Starts an inactive behavior tree associated with the current entity\.
 void BehaviorTreeComponent::StartBehaviorTree()
 ```
 
-### StopBehaviorTree<a name="lua-api-behaviortreecomponentrequestbus-stopbehaviortree"></a>
+### StopBehaviorTree {#lua-api-behaviortreecomponentrequestbus-stopbehaviortree}
 
 Stops an active behavior tree associated with the current entity\.
 
@@ -37,7 +37,7 @@ Stops an active behavior tree associated with the current entity\.
 void BehaviorTreeComponent::StopBehaviorTree()
 ```
 
-### GetVariableNameCrcs<a name="lua-api-behaviortreecomponentrequestbus-getvariablenamecrcs"></a>
+### GetVariableNameCrcs {#lua-api-behaviortreecomponentrequestbus-getvariablenamecrcs}
 
 Gets a list of cyclic redundancy check values for variable names\.
 
@@ -53,7 +53,7 @@ AZStd::vector<AZ::Crc32> GetVariableNameCrcs()
 
 **Default Return:** `s_defaultEmptyVariableIds`
 
-### GetVariableValue<a name="lua-api-behaviortreecomponentrequestbus-getvariablevalue"></a>
+### GetVariableValue {#lua-api-behaviortreecomponentrequestbus-getvariablevalue}
 
 Gets the value for the specified variable name CRC\-32 checksum\.
 
@@ -76,7 +76,7 @@ bool GetVariableValue(AZ::Crc32 variableNameCrc)
 
 **Default Return:** `false`
 
-### SetVariableValue<a name="lua-api-behaviortreecomponentrequestbus-setvariablevalue"></a>
+### SetVariableValue {#lua-api-behaviortreecomponentrequestbus-setvariablevalue}
 
 Set the value associated with a variable\.
 
@@ -94,11 +94,11 @@ void SetVariableValue(AZ::Crc32 variableNameCrc, bool newValue)
 |  variableNameCrc  |  AZ::Crc32  | The CRC\-32 checksum for the variable name\. | 
 |  newValue  |  bool  | The new value for the variable\. | 
 
-## NavigationComponentRequestBus<a name="lua-api-navigationcomponentrequestbus"></a>
+## NavigationComponentRequestBus {#lua-api-navigationcomponentrequestbus}
 
 Requests serviced by the navigation component\.
 
-### FindPathToEntity<a name="lua-api-navigationcomponentrequestbus-findpathtoentity"></a>
+### FindPathToEntity {#lua-api-navigationcomponentrequestbus-findpathtoentity}
 
 Creates a path finding request to navigate towards the specified entity\.
 
@@ -121,7 +121,7 @@ PathfindRequest::NavigationRequestId FindPathToEntity(AZ::EntityId entityId)
 
 **Default Return:** `PathfindResponse::kInvalidRequestId`
 
-### Stop<a name="lua-api-navigationcomponentrequestbus-stop"></a>
+### Stop {#lua-api-navigationcomponentrequestbus-stop}
 
 Stops all pathfinding operations for the specified `requestId`\. The ID is used to make sure that the request being cancelled is the request that is currently being processed\. If the specified `requestId` is different from the ID of the current request, the stop command can be safely ignored\.
 
@@ -138,11 +138,11 @@ void Stop(PathfindRequest::NavigationRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request that is being cancelled\. | 
 
-## NavigationComponentNotificationBus<a name="lua-api-navigationcomponentnotificationbus"></a>
+## NavigationComponentNotificationBus {#lua-api-navigationcomponentnotificationbus}
 
 Notifications sent by the Navigation component\.
 
-### OnSearchingForPath<a name="lua-api-navigationcomponentnotificationbus-onsearchingforpath"></a>
+### OnSearchingForPath {#lua-api-navigationcomponentnotificationbus-onsearchingforpath}
 
 Indicates that the pathfinding request has been submitted to the navigation system\.
 
@@ -159,7 +159,7 @@ void OnSearchingForPath(PathfindRequest::NavigationRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for the path that is being searched\. | 
 
-### OnTraversalStarted<a name="lua-api-navigationcomponentnotificationbus-ontraversalstarted"></a>
+### OnTraversalStarted {#lua-api-navigationcomponentnotificationbus-ontraversalstarted}
 
 Indicates that traversal for the indicated request has started\.
 
@@ -176,7 +176,7 @@ void OnTraversalStarted(PathfindRequest::NavigationRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has started\. | 
 
-### OnTraversalInProgress<a name="lua-api-navigationcomponentnotificationbus-ontraversalinprogress"></a>
+### OnTraversalInProgress {#lua-api-navigationcomponentnotificationbus-ontraversalinprogress}
 
 Indicates that traversal for the indicated request has started\.
 
@@ -194,7 +194,7 @@ void OnTraversalInProgress(PathfindRequest::NavigationRequestId requestId, float
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal is in progress\. | 
 |  distanceRemaining  |  float  | The remaining distance in the current path\. | 
 
-### OnTraversalComplete<a name="lua-api-navigationcomponentnotificationbus-ontraversalcomplete"></a>
+### OnTraversalComplete {#lua-api-navigationcomponentnotificationbus-ontraversalcomplete}
 
 Indicates that traversal for the indicated request has completed successfully\.
 
@@ -211,7 +211,7 @@ void OnTraversalComplete(PathfindRequest::NavigationRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has finished\. | 
 
-### OnTraversalCancelled<a name="lua-api-navigationcomponentnotificationbus-ontraversalcancelled"></a>
+### OnTraversalCancelled {#lua-api-navigationcomponentnotificationbus-ontraversalcancelled}
 
 Indicates that traversal for the indicated request was cancelled before it could be successfully completed\.
 
@@ -228,11 +228,11 @@ void OnTraversalCancelled(PathfindRequest::NavigationRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal was cancelled\. | 
 
-## NavigationSystemRequestBus<a name="lua-api-navigationsystembus"></a>
+## NavigationSystemRequestBus {#lua-api-navigationsystembus}
 
 Requests serviced by the navigation system component\. This currently contains the single function `RayCast`\.
 
-### RayCast<a name="lua-api-navigationcomponentrequestbus-raycast"></a>
+### RayCast {#lua-api-navigationcomponentrequestbus-raycast}
 
 Creates a path finding request to navigate towards the specified entity\.
 
@@ -264,11 +264,11 @@ virtual NavRayCastResult RayCast(const AZ::Vector3& begin, const AZ::Vector3& di
 | m\_position | Vector3 | The position of the hit in world space\. The default is AZ::Vector3::CreateZero\(\)\. | 
 | m\_meshId | NavigationMeshId | The mesh ID of the navigation mesh hit\. This is callable from Lua script\. The default is 0\. | 
 
-## AttachmentComponentRequestBus<a name="lua-api-attachmentcomponentrequestbus"></a>
+## AttachmentComponentRequestBus {#lua-api-attachmentcomponentrequestbus}
 
 Messages serviced by the `AttachmentComponent`\. The `AttachmentComponent` lets an entity "stick" to a particular bone on a target entity\.
 
-### Attach<a name="lua-api-attachmentcomponentrequestbus-attach"></a>
+### Attach {#lua-api-attachmentcomponentrequestbus-attach}
 
 Change the attachment target\. The entity will detach from any previous target\.
 
@@ -287,7 +287,7 @@ void Attach(AZ::EntityId targetId, const char* targetBoneName, const AZ::Transfo
 |  targetBoneName  |  char  | Specifies the bone on the target entity to attach to\. If the target bone is not found, then attach to the target entity's transform origin\. | 
 |  offset  |  AZ::Transform  | The attachment's offset from the target\. | 
 
-### Detach<a name="lua-api-attachmentcomponentrequestbus-detach"></a>
+### Detach {#lua-api-attachmentcomponentrequestbus-detach}
 
 Detaches an entity from its target\.
 
@@ -297,7 +297,7 @@ Detaches an entity from its target\.
 void Detach()
 ```
 
-### SetAttachmentOffset<a name="lua-api-attachmentcomponentrequestbus-setattachmentoffset"></a>
+### SetAttachmentOffset {#lua-api-attachmentcomponentrequestbus-setattachmentoffset}
 
 Update an entity's offset from its target\.
 
@@ -314,11 +314,11 @@ void SetAttachmentOffset(const AZ::Transform& offset)
 | --- | --- | --- | 
 |  offset  |  AZ::Transform  | The offset from the target\. | 
 
-## AttachmentComponentNotificationBus<a name="lua-api-attachmentcomponentnotificationbus"></a>
+## AttachmentComponentNotificationBus {#lua-api-attachmentcomponentnotificationbus}
 
 This EBus interface handles events emitted by the `AttachmentComponent`\. The `AttachmentComponent` lets an entity "stick" to a particular bone on a target entity\.
 
-### OnAttached<a name="lua-api-attachmentcomponentnotificationbus-onattached"></a>
+### OnAttached {#lua-api-attachmentcomponentnotificationbus-onattached}
 
 The entity has attached to the target\.
 
@@ -335,7 +335,7 @@ void OnAttached(AZ::EntityId targetId)
 | --- | --- | --- | 
 |  targetId  |  AZ::EntityId  | The target being attached to\. | 
 
-### OnDetached<a name="lua-api-attachmentcomponentnotificationbus-ondetached"></a>
+### OnDetached {#lua-api-attachmentcomponentnotificationbus-ondetached}
 
 The entity is detaching from the target\.
 
@@ -352,11 +352,11 @@ void OnDetached(AZ::EntityId targetId)
 | --- | --- | --- | 
 |  targetId  |  AZ::EntityId  | The target being detached from\. | 
 
-## CharacterAnimationRequestBus<a name="lua-api-characteranimationrequestbus"></a>
+## CharacterAnimationRequestBus {#lua-api-characteranimationrequestbus}
 
 General character animation requests serviced by the `CharacterAnimationManager` component\.
 
-### SetBlendParameter<a name="lua-api-characteranimationrequestbus-setblendparameter"></a>
+### SetBlendParameter {#lua-api-characteranimationrequestbus-setblendparameter}
 
 Sets a custom blend parameter\.
 
@@ -374,7 +374,7 @@ void SetBlendParameter(AZ::u32 blendParameter, float value)
 |  blendParameter  |  AZ::u32  | Corresponds to EMotionParamID\. | 
 |  value  |  float  | The value to set\. | 
 
-### SetAnimationDrivenMotion<a name="lua-api-characteranimationrequestbus-setanimationdrivenmotion"></a>
+### SetAnimationDrivenMotion {#lua-api-characteranimationrequestbus-setanimationdrivenmotion}
 
 Enables or disables animation\-driven root motion\.
 
@@ -391,11 +391,11 @@ void SetAnimationDrivenMotion(bool useAnimDrivenMotion)
 | --- | --- | --- | 
 |  useAnimDrivenMotion  |  bool  | Specify true to enable animation\-driven root motion; false to disable\. | 
 
-## MannequinRequestsBus<a name="lua-api-characteranimationrequestbus-mannequinrequestsbus"></a>
+## MannequinRequestsBus {#lua-api-characteranimationrequestbus-mannequinrequestsbus}
 
 Services provided by the Mannequin component\.
 
-### QueueFragment<a name="lua-api-characteranimationrequestbus-queuefragment"></a>
+### QueueFragment {#lua-api-characteranimationrequestbus-queuefragment}
 
 Queues the specified Mannequin fragment\.
 
@@ -421,7 +421,7 @@ FragmentRequestId QueueFragment(int priority, const char* fragmentName, const ch
 
 **Default Return:** `MannequinRequests::s_invalidRequestId`
 
-### PauseAll<a name="lua-api-characteranimationrequestbus-pauseall"></a>
+### PauseAll {#lua-api-characteranimationrequestbus-pauseall}
 
 Pauses all actions being managed by the current Mannequin component
 
@@ -431,7 +431,7 @@ Pauses all actions being managed by the current Mannequin component
 void PauseAll()
 ```
 
-### ResumeAll<a name="lua-api-characteranimationrequestbus-resumeall"></a>
+### ResumeAll {#lua-api-characteranimationrequestbus-resumeall}
 
 Resumes all actions being managed by the current Mannequin component\.
 
@@ -458,7 +458,7 @@ enum EResumeFlags
     };
 ```
 
-### SetTag<a name="lua-api-characteranimationrequestbus-settag"></a>
+### SetTag {#lua-api-characteranimationrequestbus-settag}
 
 Sets the specified tag for the action controller\.
 
@@ -475,7 +475,7 @@ void SetTag(const char* tagName)
 | --- | --- | --- | 
 |  tagName  |  char  | The name of the tag to set\. | 
 
-### ClearTag<a name="lua-api-characteranimationrequestbus-cleartag"></a>
+### ClearTag {#lua-api-characteranimationrequestbus-cleartag}
 
 Clears the specified tag for the action controller\.
 
@@ -492,7 +492,7 @@ void ClearTag(const char* tagName)
 | --- | --- | --- | 
 |  tagName  |  char  | The name of the tag to be cleared\. | 
 
-### SetGroupTag<a name="lua-api-characteranimationrequestbus-setgrouptag"></a>
+### SetGroupTag {#lua-api-characteranimationrequestbus-setgrouptag}
 
 Sets a tag in the specified group\.
 
@@ -510,7 +510,7 @@ void SetGroupTag(const char* groupName, const char* tagName)
 |  groupName  |  char  | The name of the group\. | 
 |  tagName  |  char  | The name of the tag\. | 
 
-### ClearGroup<a name="lua-api-characteranimationrequestbus-cleargroup"></a>
+### ClearGroup {#lua-api-characteranimationrequestbus-cleargroup}
 
 Clears tags for the indicated group\.
 
@@ -527,7 +527,7 @@ void ClearGroup(const char* groupName)
 | --- | --- | --- | 
 |  groupName  |  char  | The name of the group\. | 
 
-### SetScopeContext<a name="lua-api-characteranimationrequestbus-setscopecontext"></a>
+### SetScopeContext {#lua-api-characteranimationrequestbus-setscopecontext}
 
 Sets the scope context for the current animation controller\.
 
@@ -546,7 +546,7 @@ void SetScopeContext(const char* scopeContextName, const AZ::EntityId entityId, 
 |  entityId  |  AZ::EntityId  | Reference to an entity whose character instance will be bound to this scope context\. | 
 |  animationDatabaseName  |  char  | The path to the animation database file\. | 
 
-### ClearScopeContext<a name="lua-api-characteranimationrequestbus-clearscopecontext"></a>
+### ClearScopeContext {#lua-api-characteranimationrequestbus-clearscopecontext}
 
 Clears the specified scope context\.
 
@@ -563,7 +563,7 @@ void ClearScopeContext(const char* scopeContextName)
 | --- | --- | --- | 
 |  scopeContextName  |  char  | Name of the scope context that is to be cleared\. | 
 
-### StopRequest<a name="lua-api-characteranimationrequestbus-stoprequest"></a>
+### StopRequest {#lua-api-characteranimationrequestbus-stoprequest}
 
 Stops the actions associated with the specified request\.
 
@@ -580,7 +580,7 @@ void StopRequest(FragmentRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  FragmentRequestId  | Specifies the ID of the request for which actions should be stopped\. | 
 
-### GetRequestStatus<a name="lua-api-characteranimationrequestbus-getrequeststatus"></a>
+### GetRequestStatus {#lua-api-characteranimationrequestbus-getrequeststatus}
 
 Retrieves the status of the specified request
 
@@ -603,7 +603,7 @@ IAction::EStatus GetRequestStatus(FragmentRequestId requestId)
 
 **Default Return:** `IAction::EStatus::None`
 
-### ForceFinishRequest<a name="lua-api-characteranimationrequestbus-forcefinishrequest"></a>
+### ForceFinishRequest {#lua-api-characteranimationrequestbus-forcefinishrequest}
 
 Forces the actions associated with the specified request to finish\.
 
@@ -620,7 +620,7 @@ void ForceFinishRequest(FragmentRequestId requestId)
 | --- | --- | --- | 
 |  requestId  |  FragmentRequestId  | The ID of the request\. | 
 
-### SetRequestSpeedBias<a name="lua-api-characteranimationrequestbus-setrequestspeedbias"></a>
+### SetRequestSpeedBias {#lua-api-characteranimationrequestbus-setrequestspeedbias}
 
 Sets the speed bias for the actions associated with the specified request\.
 
@@ -638,7 +638,7 @@ void SetRequestSpeedBias(FragmentRequestId requestId, float speedBias)
 |  requestId  |  FragmentRequestId  | The request ID\. | 
 |  speedBias  |  float  | The speed bias for this animation | 
 
-### GetRequestSpeedBias<a name="lua-api-characteranimationrequestbus-getrequestspeedbias"></a>
+### GetRequestSpeedBias {#lua-api-characteranimationrequestbus-getrequestspeedbias}
 
 Gets the speed bias for the actions associated with the specified request
 
@@ -661,7 +661,7 @@ float GetRequestSpeedBias(FragmentRequestId requestId)
 
 **Default Return:** `-1`
 
-### SetRequestAnimWeight<a name="lua-api-characteranimationrequestbus-setrequestanimweight"></a>
+### SetRequestAnimWeight {#lua-api-characteranimationrequestbus-setrequestanimweight}
 
 Sets the animation weight for the actions associated with the specified request\.
 
@@ -679,7 +679,7 @@ void SetRequestAnimWeight(FragmentRequestId requestId, float animWeight)
 |  requestId  |  FragmentRequestId  | The ID of the request\. | 
 |  animWeight  |  float  | The weight for the animation\. | 
 
-### GetRequestAnimWeight<a name="lua-api-characteranimationrequestbus-getrequestanimweight"></a>
+### GetRequestAnimWeight {#lua-api-characteranimationrequestbus-getrequestanimweight}
 
 Gets the animation weight for the actions associated with the specified request\.
 
@@ -702,11 +702,11 @@ float GetRequestAnimWeight(FragmentRequestId requestId)
 
 **Default Return:** `-1`
 
-## SimpleAnimationComponentRequestBus<a name="lua-api-simpleanimationcomponentrequestbus"></a>
+## SimpleAnimationComponentRequestBus {#lua-api-simpleanimationcomponentrequestbus}
 
 Services provided by the Simple Animation component\. The Simple Animation component provides basic animation functionality for the entity\. If the entity has a mesh component with a skinned mesh attached \(a \.chr or \.cdf file\), the Simple Animation component will provide a list of all valid animations specified in the associated \.chrparams file\. The Simple Animation component does not provide interaction with Mannequin and should be used for light\-weight environment or background animation\.
 
-### StartDefaultAnimations<a name="lua-api-simpleanimationcomponentrequestbus-startdefaultanimations"></a>
+### StartDefaultAnimations {#lua-api-simpleanimationcomponentrequestbus-startdefaultanimations}
 
 Plays the default animations along with default looping and speed parameters that were set up as a part of the current component\. Components allow for multiple layers to be set up with defaults\. The `StartDefaultAnimations` method starts the playback of all the default animations of the component\.
 
@@ -722,7 +722,7 @@ SimpleAnimationComponentRequests::Result StartDefaultAnimations()
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure`
 
-### StartAnimation<a name="lua-api-simpleanimationcomponentrequestbus-startanimation"></a>
+### StartAnimation {#lua-api-simpleanimationcomponentrequestbus-startanimation}
 
 Starts playback of the animation of the specified `animatedLayer.`
 
@@ -745,7 +745,7 @@ SimpleAnimationComponentRequests::Result StartAnimation(const AnimatedLayer& ani
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure`
 
-### StartAnimationByName<a name="lua-api-simpleanimationcomponentrequestbus-startanimationbyname"></a>
+### StartAnimationByName {#lua-api-simpleanimationcomponentrequestbus-startanimationbyname}
 
 Plays the animation with the specified name\.
 
@@ -769,7 +769,7 @@ Result StartAnimationByName(const char* name, AnimatedLayer::LayerId layerId)
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure`
 
-### StopAllAnimations<a name="lua-api-simpleanimationcomponentrequestbus-stopallanimations"></a>
+### StopAllAnimations {#lua-api-simpleanimationcomponentrequestbus-stopallanimations}
 
 Stops all animations that are being played on all layers\.
 
@@ -785,7 +785,7 @@ Result StopAllAnimations()
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure `
 
-### StopAnimationsOnLayer<a name="lua-api-simpleanimationcomponentrequestbus-stopanimationsonlayer"></a>
+### StopAnimationsOnLayer {#lua-api-simpleanimationcomponentrequestbus-stopanimationsonlayer}
 
 Stops the animation currently playing on the specified layer\.
 
@@ -809,7 +809,7 @@ Result StopAnimationsOnLayer(AnimatedLayer::LayerId layerId, float blendOutTime)
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure`
 
-### SetPlaybackSpeed<a name="lua-api-simpleanimationcomponentrequestbus-setplaybackspeed"></a>
+### SetPlaybackSpeed {#lua-api-simpleanimationcomponentrequestbus-setplaybackspeed}
 
 Changes the playback speed for a particular layer\.
 
@@ -833,11 +833,11 @@ Result SetPlaybackSpeed(AnimatedLayer::LayerId layerId, float playbackSpeed)
 
 **Default Return:** `SimpleAnimationComponentRequests::Result::Failure`
 
-## SimpleAnimationComponentNotificationBus<a name="lua-api-simpleanimationcomponentnotificationbus"></a>
+## SimpleAnimationComponentNotificationBus {#lua-api-simpleanimationcomponentnotificationbus}
 
 This EBus interfaces handles events sent by the simple animation component\.
 
-### OnAnimationStarted<a name="lua-api-simpleanimationcomponentnotificationbus-onanimationstarted"></a>
+### OnAnimationStarted {#lua-api-simpleanimationcomponentnotificationbus-onanimationstarted}
 
 Informs all listeners about an animation being started on a layer\.
 
@@ -854,7 +854,7 @@ void OnAnimationStarted(const AnimatedLayer& animatedLayer)
 | --- | --- | --- | 
 |  animatedLayer  |  AnimatedLayer  | Specifies the name and parameters of the animation that was started\. | 
 
-### OnAnimationStopped<a name="lua-api-simpleanimationcomponentnotificationbus-onanimationstopped"></a>
+### OnAnimationStopped {#lua-api-simpleanimationcomponentnotificationbus-onanimationstopped}
 
 Informs all listeners about an animation being stopped on the indicated layer
 
@@ -871,11 +871,11 @@ void OnAnimationStopped(const AnimatedLayer::LayerId animatedLayer)
 | --- | --- | --- | 
 |  animatedLayer  |  AnimatedLayer::LayerId  | Specifies the name and parameters of the animation that was stopped\. | 
 
-## AudioEnvironmentComponentRequestBus<a name="lua-api-audioenvironmentcomponentrequestbus"></a>
+## AudioEnvironmentComponentRequestBus {#lua-api-audioenvironmentcomponentrequestbus}
 
 This EBus interface handles messages serviced by `AudioEnvironmentComponent` instances\. The environment refers to the effects \(primarily the auxiliary effects\) that the bus sends\. See `AudioEnvironmentComponent.cpp` for details\.
 
-### SetAmount<a name="lua-api-audioenvironmentcomponentrequestbus-setamount"></a>
+### SetAmount {#lua-api-audioenvironmentcomponentrequestbus-setamount}
 
 Sets an environment amount on the default assigned environment\.
 
@@ -892,7 +892,7 @@ void SetAmount(float amount)
 | --- | --- | --- | 
 |  amount  |  float  | The amount for the environment\. | 
 
-### SetEnvironmentAmount<a name="lua-api-audioenvironmentcomponentrequestbus-setenvironmentamount"></a>
+### SetEnvironmentAmount {#lua-api-audioenvironmentcomponentrequestbus-setenvironmentamount}
 
 Set an environment amount, specify an environment name at run time \(that is, a script\)\.
 
@@ -910,11 +910,11 @@ void SetEnvironmentAmount(const char* environmentName,float amount)
 |  environmentName  |  char  | The name of the environment\. | 
 |  amount  |  float  | The amount for the environment\. | 
 
-## AudioListenerComponentRequestBus<a name="lua-api-audiolistenercomponentrequestbus"></a>
+## AudioListenerComponentRequestBus {#lua-api-audiolistenercomponentrequestbus}
 
 This EBus interface handles messages serviced by `AudioListenerComponent` instances\.
 
-### SetRotationEntity<a name="lua-api-audiolistenercomponentrequestbus-setrotationentity"></a>
+### SetRotationEntity {#lua-api-audiolistenercomponentrequestbus-setrotationentity}
 
 Sets the entity for which the audio listener tracks rotation\.
 
@@ -931,7 +931,7 @@ void SetRotationEntity(const AZ::EntityId entityId)
 | --- | --- | --- | 
 |  entityId  |  AZ::EntityId  | The ID of the entity\. | 
 
-### SetPositionEntity<a name="lua-api-audiolistenercomponentrequestbus-setpositionentity"></a>
+### SetPositionEntity {#lua-api-audiolistenercomponentrequestbus-setpositionentity}
 
 Sets the entity for which the audio listener tracks position\.
 
@@ -948,7 +948,7 @@ void SetPositionEntity(const AZ::EntityId entityId)
 | --- | --- | --- | 
 |  entityId  |  AZ::EntityId  | The ID of the entity\. | 
 
-### SetFullTransformEntity<a name="lua-api-audiolistenercomponentrequestbus-setfulltransformentity"></a>
+### SetFullTransformEntity {#lua-api-audiolistenercomponentrequestbus-setfulltransformentity}
 
 Essentially the same as calling `SetRotationEntity` and `SetPositionEntity` on the same entity\.
 
@@ -965,11 +965,11 @@ void SetFullTransformEntity(const AZ::EntityId entityId)
 | --- | --- | --- | 
 |  entityId  |  AZ::EntityId  | The ID of the entity\. | 
 
-## AudioRtpcComponentRequestBus<a name="lua-api-audiortpccomponentrequestbus"></a>
+## AudioRtpcComponentRequestBus {#lua-api-audiortpccomponentrequestbus}
 
 This EBus interface handles messages serviced by `AudioRtpcComponent` instances\. RTPC stands for Real\-Time Parameter Control\. The `AudioRtpcComponent` is used by the game to configure parameters in the audio engine\. See `AudioRtpcComponent.cpp` for details\.
 
-### SetValue<a name="lua-api-audiortpccomponentrequestbus-setvalue"></a>
+### SetValue {#lua-api-audiortpccomponentrequestbus-setvalue}
 
 Sets an RTPC value for the RTPC name that has been serialized with the component\.
 
@@ -986,7 +986,7 @@ void SetValue(float value)
 | --- | --- | --- | 
 |  value  |  float  | The RTPC value to set\. | 
 
-### SetRtpcValue<a name="lua-api-audiortpccomponentrequestbus-setrtpcvalue"></a>
+### SetRtpcValue {#lua-api-audiortpccomponentrequestbus-setrtpcvalue}
 
 Use to manually specify an RTPC name and value at run time for use in scripting\.
 
@@ -1004,11 +1004,11 @@ void SetRtpcValue(const char* rtpcName, float value)
 |  rtpcName  |  char  | Specifies an RTPC name to use\. | 
 |  value  |  float  | Specifies a value for the RTPC name supplied\. | 
 
-## AudioSwitchComponentRequestBus<a name="lua-api-audioswitchcomponentrequestbus"></a>
+## AudioSwitchComponentRequestBus {#lua-api-audioswitchcomponentrequestbus}
 
 This EBus interface handles messages serviced by `AudioSwitchComponent` instances\. A `Switch` is an object that can be in one `State` at a time, but whose `State` value can be changed at run time\. For example, a `Switch called` `SurfaceMaterial` might have states such as 'Grass', 'Snow', 'Metal', or 'Wood'\. See `AudioSwitchComponent.h` for details\.
 
-### SetState<a name="lua-api-audioswitchcomponentrequestbus-setstate"></a>
+### SetState {#lua-api-audioswitchcomponentrequestbus-setstate}
 
 Sets the name of the state on the default assigned switch\.
 
@@ -1025,7 +1025,7 @@ void SetState(const char* stateName)
 | --- | --- | --- | 
 |  stateName  |  char  | Specifies the name of the state to set\. | 
 
-### SetSwitchState<a name="lua-api-audioswitchcomponentrequestbus-setswitchstate"></a>
+### SetSwitchState {#lua-api-audioswitchcomponentrequestbus-setswitchstate}
 
 Sets the specified switch to the specified state\.
 
@@ -1043,11 +1043,11 @@ void SetSwitchState(const char* switchName, const char* stateName)
 |  switchName  |  char  | The name of the switch to set\. | 
 |  stateName  |  char  | The name of the state to set on the specified switch\. | 
 
-## AudioTriggerComponentRequestBus<a name="lua-api-audiotriggercomponentrequestbus"></a>
+## AudioTriggerComponentRequestBus {#lua-api-audiotriggercomponentrequestbus}
 
 This EBus interface handles messages serviced by `AudioTriggerComponent` instances\. You can use the `AudioTriggerComponent` to execute, stop, and control ATL triggers\. You can serialize the name of the trigger with the component or manually specify the name at run time for use in scripting\. Only one `AudioTriggerComponent` is allowed on an entity, but the interface supports firing multiple ATL triggers\.
 
-### Play<a name="lua-api-audiotriggercomponentrequestbus-play"></a>
+### Play {#lua-api-audiotriggercomponentrequestbus-play}
 
 Executes the play trigger if the play trigger is set\.
 
@@ -1057,7 +1057,7 @@ Executes the play trigger if the play trigger is set\.
 void Play()
 ```
 
-### Stop<a name="lua-api-audiotriggercomponentrequestbus-stop"></a>
+### Stop {#lua-api-audiotriggercomponentrequestbus-stop}
 
 Executes the stop trigger if one is set; otherwise, stops the play trigger\.
 
@@ -1067,7 +1067,7 @@ Executes the stop trigger if one is set; otherwise, stops the play trigger\.
 void Stop()
 ```
 
-### ExecuteTrigger<a name="lua-api-audiotriggercomponentrequestbus-executetrigger"></a>
+### ExecuteTrigger {#lua-api-audiotriggercomponentrequestbus-executetrigger}
 
 Executes the specified ATL trigger\.
 
@@ -1084,7 +1084,7 @@ void ExecuteTrigger(const char* triggerName)
 | --- | --- | --- | 
 |  triggerName  |  char  | Specifies the name of the trigger to execute\. | 
 
-### KillTrigger<a name="lua-api-audiotriggercomponentrequestbus-killtrigger"></a>
+### KillTrigger {#lua-api-audiotriggercomponentrequestbus-killtrigger}
 
 Kills the specified ATL Trigger\.
 
@@ -1101,7 +1101,7 @@ void KillTrigger(const char* triggerName)
 | --- | --- | --- | 
 |  triggerName  |  char  | Specifies the name of the trigger to remove\. | 
 
-### KillAllTriggers<a name="lua-api-audiotriggercomponentrequestbus-killalltriggers"></a>
+### KillAllTriggers {#lua-api-audiotriggercomponentrequestbus-killalltriggers}
 
 Forces a removal of triggers that are active on the underlying proxy\.
 
@@ -1111,7 +1111,7 @@ Forces a removal of triggers that are active on the underlying proxy\.
 void KillAllTriggers()
 ```
 
-### SetMovesWithEntity<a name="lua-api-audiotriggercomponentrequestbus-setmoveswithentity"></a>
+### SetMovesWithEntity {#lua-api-audiotriggercomponentrequestbus-setmoveswithentity}
 
 Specifies whether the trigger should be repositioned as the entity moves\.
 
@@ -1128,11 +1128,11 @@ void SetMovesWithEntity(bool shouldTrackEntity)
 | --- | --- | --- | 
 |  shouldTrackEntity  |  bool  | Specify true to have the trigger track the entity\. Specify false to have the trigger not track the entity\. | 
 
-## AudioTriggerComponentNotificationBus<a name="lua-api-audiotriggercomponentnotificationbus"></a>
+## AudioTriggerComponentNotificationBus {#lua-api-audiotriggercomponentnotificationbus}
 
 This EBus interface handles messages sent by `AudioTriggerComponent` instances\.
 
-### OnTriggerFinished<a name="lua-api-audiotriggercomponentnotificationbus-ontriggerfinished"></a>
+### OnTriggerFinished {#lua-api-audiotriggercomponentnotificationbus-ontriggerfinished}
 
 Notifies when a trigger instance has finished\.
 
@@ -1149,59 +1149,59 @@ void OnTriggerFinished(const Audio::TAudioControlID triggerID)
 | --- | --- | --- | 
 |  triggerID  |  Audio::TAudioControlID  | The ID of the trigger\. | 
 
-## FloatGameplayNotificationBus \(AZ::GameplayNotificationBus<float>\)<a name="lua-api-floatgameplaynotificationbus-"></a>
+## FloatGameplayNotificationBus \(AZ::GameplayNotificationBus<float>\) {#lua-api-floatgameplaynotificationbus-}
 
 This version of the `GameplayNotificationBus` EBus interface handles float\-based gameplay notifications\.
 
-### OnGameplayEventAction<a name="lua-api-floatgameplaynotificationbus-ongameplayeventaction"></a>
+### OnGameplayEventAction {#lua-api-floatgameplaynotificationbus-ongameplayeventaction}
 
 Event sent when the specified `GameplayEventAction` has occurred\.
 
-### OnGameplayEventFailed<a name="lua-api-floatgameplaynotificationbus-ongameplayeventfailed"></a>
+### OnGameplayEventFailed {#lua-api-floatgameplaynotificationbus-ongameplayeventfailed}
 
 Event sent when the given `GameplayEventAction` has failed\.
 
-## Vector3GameplayNotificationBus<a name="lua-api-vector3gameplaynotificationbus"></a>
+## Vector3GameplayNotificationBus {#lua-api-vector3gameplaynotificationbus}
 
 This version of the `GameplayNotificationBus` EBus interface handles Vector3\-based gameplay notifications\.
 
-### OnGameplayEventAction<a name="lua-api-vector3gameplaynotificationbus-ongameplayeventaction"></a>
+### OnGameplayEventAction {#lua-api-vector3gameplaynotificationbus-ongameplayeventaction}
 
 Event sent when the given `GameplayEventAction` has occurred\.
 
-### OnGameplayEventFailed<a name="lua-api-vector3gameplaynotificationbus-ongameplayeventfailed"></a>
+### OnGameplayEventFailed {#lua-api-vector3gameplaynotificationbus-ongameplayeventfailed}
 
 Event sent when the given `GameplayEventAction` has failed\.
 
-## StringGameplayNotificationBus \(AZ::GameplayNotificationBus<const AZStd:wq::string>\)<a name="lua-api-stringgameplaynotificationbus"></a>
+## StringGameplayNotificationBus \(AZ::GameplayNotificationBus<const AZStd:wq::string>\) {#lua-api-stringgameplaynotificationbus}
 
 This version of the `GameplayNotificationBus` EBus interface handles string\-based gameplay notifications\.
 
-### OnGameplayEventAction<a name="lua-api-stringgameplaynotificationbus-ongameplayeventaction"></a>
+### OnGameplayEventAction {#lua-api-stringgameplaynotificationbus-ongameplayeventaction}
 
 Event sent when the given `GameplayEventAction` has occurred\.
 
-### OnGameplayEventFailed<a name="lua-api-stringgameplaynotificationbus-ongameplayeventfailed"></a>
+### OnGameplayEventFailed {#lua-api-stringgameplaynotificationbus-ongameplayeventfailed}
 
 Event sent when the given `GameplayEventAction` has failed\.
 
-## EntityIdGameplayNotificationBus \(AZ::GameplayNotificationBus<AZ::EntityId>\)<a name="lua-api-entityidgameplaynotificationbus"></a>
+## EntityIdGameplayNotificationBus \(AZ::GameplayNotificationBus<AZ::EntityId>\) {#lua-api-entityidgameplaynotificationbus}
 
 This EBus interface handles `EntityId`\-based gameplay notifications\. It is a specialization of the `GameplayNotificationBus`\.
 
-### OnGameplayEventAction<a name="lua-api-entityidgameplaynotificationbus-ongameplayeventaction"></a>
+### OnGameplayEventAction {#lua-api-entityidgameplaynotificationbus-ongameplayeventaction}
 
 Event sent when the given `GameplayEventAction` has occurred\.
 
-### OnGameplayEventFailed<a name="lua-api-entityidgameplaynotificationbus-ongameplayeventfailed"></a>
+### OnGameplayEventFailed {#lua-api-entityidgameplaynotificationbus-ongameplayeventfailed}
 
 Event sent when the given `GameplayEventAction` has failed\.
 
-## CryCharacterPhysicsRequestBus<a name="lua-api-crycharacterphysicsrequestbus"></a>
+## CryCharacterPhysicsRequestBus {#lua-api-crycharacterphysicsrequestbus}
 
 This EBus interface handles messages serviced by Cry character physics\.
 
-### Move<a name="lua-api-crycharacterphysicsrequestbus-move"></a>
+### Move {#lua-api-crycharacterphysicsrequestbus-move}
 
 Requests movement from Living Entity\.
 
@@ -1219,11 +1219,11 @@ void Move(const AZ::Vector3& velocity, int jump)
 |  velocity  |  AZ::Vector3  | Requested velocity \(direction and magnitude\)\. | 
 |  jump  |  int  | Controls how the value for the velocity parameter is applied within a Living Entity\. To change the velocity to the new value, specify 1\. To add the value to the current velocity, specify 2\. | 
 
-## ConstraintComponentRequestBus<a name="lua-api-constraintcomponentrequestbus"></a>
+## ConstraintComponentRequestBus {#lua-api-constraintcomponentrequestbus}
 
 This EBus interface handles messages serviced by instances of the Constraint component\. A Constraint component facilitates the creation of a physics constraint between two entities or an entity and a point in the world\. Both entities must have a component that provides the physics service\.
 
-### SetConstraintEntities<a name="lua-api-constraintcomponentrequestbus-setconstraintentities"></a>
+### SetConstraintEntities {#lua-api-constraintcomponentrequestbus-setconstraintentities}
 
 Sets the entity that owns the constraint and the target of the constraint\.
 
@@ -1241,7 +1241,7 @@ void SetConstraintEntities(const AZ::EntityId& owningEntity, const AZ::EntityId&
 |  owningEntity  |  AZ::EntityId  | Specifies the ID of the entity that owns the constraint\. | 
 |  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. The target is invalid if constrained to world space\. | 
 
-### SetConstraintEntitiesWithPartIds<a name="lua-api-constraintcomponentrequestbus-setconstraintentitieswithpartids"></a>
+### SetConstraintEntitiesWithPartIds {#lua-api-constraintcomponentrequestbus-setconstraintentitieswithpartids}
 
 Sets the entity that owns the constraint, the target entity, and the animation part IDs \(bone IDs\) for the constraint to be attached to\.
 
@@ -1261,7 +1261,7 @@ void SetConstraintEntitiesWithPartIds(const AZ::EntityId& owningEntity, int owne
 |  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. | 
 |  targetPartId  |  int  | Specifies the ID of the target part \(the bone ID\) for the constraint\. | 
 
-### EnableConstraint<a name="lua-api-constraintcomponentrequestbus-enableconstraint"></a>
+### EnableConstraint {#lua-api-constraintcomponentrequestbus-enableconstraint}
 
 Enable all constraints on the current entity\.
 
@@ -1271,7 +1271,7 @@ Enable all constraints on the current entity\.
 void EnableConstraint()
 ```
 
-### DisableConstraint<a name="lua-api-constraintcomponentrequestbus-disableconstraint"></a>
+### DisableConstraint {#lua-api-constraintcomponentrequestbus-disableconstraint}
 
 Disable all constraints on the current entity\.
 
@@ -1281,11 +1281,11 @@ Disable all constraints on the current entity\.
 void DisableConstraint()
 ```
 
-## ConstraintComponentNotificationBus<a name="lua-api-constraintcomponentnotificationbus"></a>
+## ConstraintComponentNotificationBus {#lua-api-constraintcomponentnotificationbus}
 
 This EBus interface handles messages dispatched by the Constraint component\.
 
-### OnConstraintEntitiesChanged<a name="lua-api-constraintcomponentnotificationbus-onconstraintentitieschanged"></a>
+### OnConstraintEntitiesChanged {#lua-api-constraintcomponentnotificationbus-onconstraintentitieschanged}
 
 This event fires when either the constraint owner or target changes\. The target is invalid if constrained to world space\.
 
@@ -1308,7 +1308,7 @@ void OnConstraintEntitiesChanged(const AZ::EntityId& oldOwner, const AZ::EntityI
 |  newOwner  |  AZ::EntityId  | Specifies the ID of the entity that is the new owner of the constraint\.  | 
 |  newTarget  |  AZ::EntityId  | Specifies the ID of the entity that is the new target of the constraint\.  | 
 
-### OnConstraintEnabled<a name="lua-api-constraintcomponentnotificationbus-onconstraintenabled"></a>
+### OnConstraintEnabled {#lua-api-constraintcomponentnotificationbus-onconstraintenabled}
 
 Fires when constraints have been enabled on the current entity\.
 
@@ -1318,7 +1318,7 @@ Fires when constraints have been enabled on the current entity\.
 void OnConstraintEnabled()
 ```
 
-### OnConstraintDisabled<a name="lua-api-constraintcomponentnotificationbus-onconstraintdisabled"></a>
+### OnConstraintDisabled {#lua-api-constraintcomponentnotificationbus-onconstraintdisabled}
 
 Fires when a constraint has been disabled\.
 
@@ -1328,11 +1328,11 @@ Fires when a constraint has been disabled\.
 void OnConstraintDisabled()
 ```
 
-## PhysicsComponentRequestBus<a name="lua-api-physicscomponentrequestbus"></a>
+## PhysicsComponentRequestBus {#lua-api-physicscomponentrequestbus}
 
 This EBus interface handles messages serviced by the in\-game Physics component\.
 
-### EnablePhysics<a name="lua-api-physicscomponentrequestbus-enablephysics"></a>
+### EnablePhysics {#lua-api-physicscomponentrequestbus-enablephysics}
 
 Makes the entity a participant in the physics simulation\.
 
@@ -1342,7 +1342,7 @@ Makes the entity a participant in the physics simulation\.
 void EnablePhysics()
 ```
 
-### DisablePhysics<a name="lua-api-physicscomponentrequestbus-disablephysics"></a>
+### DisablePhysics {#lua-api-physicscomponentrequestbus-disablephysics}
 
 Stops the entity from participating in the physics simulation
 
@@ -1352,7 +1352,7 @@ Stops the entity from participating in the physics simulation
 void DisablePhysics()
 ```
 
-### IsPhysicsEnabled<a name="lua-api-physicscomponentrequestbus-isphysicsenabled"></a>
+### IsPhysicsEnabled {#lua-api-physicscomponentrequestbus-isphysicsenabled}
 
 Checks if physics are enabled on the current entity\.
 
@@ -1368,7 +1368,7 @@ bool IsPhysicsEnabled()
 
 **Default Return:** `false`
 
-### AddImpulse<a name="lua-api-physicscomponentrequestbus-addimpulse"></a>
+### AddImpulse {#lua-api-physicscomponentrequestbus-addimpulse}
 
 Applies the specified impulse to the entity\.
 
@@ -1385,7 +1385,7 @@ void AddImpulse(const AZ::Vector3& impulse)
 | --- | --- | --- | 
 |  impulse  |  AZ::Vector3  | Vector of the impulse\. | 
 
-### AddAngularImpulse<a name="lua-api-physicscomponentrequestbus-addangularimpulse"></a>
+### AddAngularImpulse {#lua-api-physicscomponentrequestbus-addangularimpulse}
 
 Applies an angular impulse to the entity\.
 
@@ -1403,7 +1403,7 @@ void AddAngularImpulse(const AZ::Vector3& /*impulse*/, const AZ::Vector3& worldS
 |  impulse  |  AZ::Vector3  | Vector of the impulse\. | 
 |  worldSpacePivot  |  AZ::Vector3  | Vector of the world space pivot to apply to the entity\. | 
 
-### GetVelocity<a name="lua-api-physicscomponentrequestbus-getvelocity"></a>
+### GetVelocity {#lua-api-physicscomponentrequestbus-getvelocity}
 
 Retrieves the velocity of the entity\.
 
@@ -1419,7 +1419,7 @@ AZ::Vector3 GetVelocity()
 
 **Default Return:** `AZ::Vector3::CreateZero`\(\)
 
-### SetVelocity<a name="lua-api-physicscomponentrequestbus-setvelocity"></a>
+### SetVelocity {#lua-api-physicscomponentrequestbus-setvelocity}
 
 Sets the velocity of the entity\.
 
@@ -1436,7 +1436,7 @@ void SetVelocity(const AZ::Vector3& velocity)
 | --- | --- | --- | 
 |  velocity  |  AZ::Vector3  | Specifies the velocity to set\. | 
 
-### GetAcceleration<a name="lua-api-physicscomponentrequestbus-getacceleration"></a>
+### GetAcceleration {#lua-api-physicscomponentrequestbus-getacceleration}
 
 Gets the linear acceleration of the entity\.
 
@@ -1452,7 +1452,7 @@ AZ::Vector3 GetAcceleration()
 
 **Default Return:** `AZ::Vector3::CreateZero`\(\)
 
-### GetAngularVelocity<a name="lua-api-physicscomponentrequestbus-getangularvelocity"></a>
+### GetAngularVelocity {#lua-api-physicscomponentrequestbus-getangularvelocity}
 
 Gets the angular velocity of the entity\.
 
@@ -1468,7 +1468,7 @@ AZ::Vector3 GetAngularVelocity()
 
 **Default Return:** `AZ::Vector3::CreateZero`\(\)
 
-### SetAngularVelocity<a name="lua-api-physicscomponentrequestbus-setangularvelocity"></a>
+### SetAngularVelocity {#lua-api-physicscomponentrequestbus-setangularvelocity}
 
 Sets the angular velocity of the entity to the specified amount\.
 
@@ -1485,7 +1485,7 @@ void SetAngularVelocity(const AZ::Vector3& angularVelocity)
 | --- | --- | --- | 
 |  angularVelocity  |  AZ::Vector3  | The angular velocity to set\. | 
 
-### GetAngularAcceleration<a name="lua-api-physicscomponentrequestbus-getangularacceleration"></a>
+### GetAngularAcceleration {#lua-api-physicscomponentrequestbus-getangularacceleration}
 
 Gets the angular acceleration of the entity
 
@@ -1501,7 +1501,7 @@ AZ::Vector3 GetAngularAcceleration()
 
 **Default Return:** `AZ::Vector3::CreateZero`\(\)
 
-### GetMass<a name="lua-api-physicscomponentrequestbus-getmass"></a>
+### GetMass {#lua-api-physicscomponentrequestbus-getmass}
 
 Retrieves the mass of the entity\.
 
@@ -1517,11 +1517,11 @@ float GetMass()
 
 **Default Return:** `0.0f`
 
-## PhysicsComponentNotificationBus<a name="lua-api-physicscomponentnotificationbus"></a>
+## PhysicsComponentNotificationBus {#lua-api-physicscomponentnotificationbus}
 
 This bus handles events emitted by a Physics component and by the Physics system\.
 
-### OnPhysicsEnabled<a name="lua-api-physicscomponentnotificationbus-onphysicsenabled"></a>
+### OnPhysicsEnabled {#lua-api-physicscomponentnotificationbus-onphysicsenabled}
 
 Fires when an entity begins participating in the physics simulation\. If the entity is active when a handler connects to the bus, then `OnPhysicsEnabled`\(\) is immediately dispatched\.
 
@@ -1534,7 +1534,7 @@ If physics is enabled, `OnPhysicsEnabled` fires immediately upon connecting to t
 void OnPhysicsEnabled()
 ```
 
-### OnPhysicsDisabled<a name="lua-api-physicscomponentnotificationbus-onphysicsdisabled"></a>
+### OnPhysicsDisabled {#lua-api-physicscomponentnotificationbus-onphysicsdisabled}
 
 Fires when an entity ends its participation in the physics simulation\.
 
@@ -1544,7 +1544,7 @@ Fires when an entity ends its participation in the physics simulation\.
 void OnPhysicsDisabled()
 ```
 
-### OnCollision<a name="lua-api-physicscomponentnotificationbus-oncollision"></a>
+### OnCollision {#lua-api-physicscomponentnotificationbus-oncollision}
 
 Fires when an entity collides with another entity\.
 
@@ -1578,11 +1578,11 @@ struct Collision
         }
 ```
 
-## PhysicsSystemRequestBus<a name="lua-api-physicssystemrequestbus"></a>
+## PhysicsSystemRequestBus {#lua-api-physicssystemrequestbus}
 
 Requests for the physics system
 
-### RayCast<a name="lua-api-physicssystemrequestbus-raycast"></a>
+### RayCast {#lua-api-physicssystemrequestbus-raycast}
 
 Casts a ray and retrieves a list of results\.
 
@@ -1623,11 +1623,11 @@ struct RayCastHit
 };
 ```
 
-## RagdollPhysicsRequestBus<a name="lua-api-ragdollphysicsrequestbus"></a>
+## RagdollPhysicsRequestBus {#lua-api-ragdollphysicsrequestbus}
 
 Messages serviced by the Cry character physics ragdoll behavior\.
 
-### EnterRagdoll<a name="lua-api-ragdollphysicsrequestbus-enterragdoll"></a>
+### EnterRagdoll {#lua-api-ragdollphysicsrequestbus-enterragdoll}
 
 Causes an entity with a skinned mesh component to disable its current physics and enable ragdoll physics\.
 
@@ -1637,7 +1637,7 @@ Causes an entity with a skinned mesh component to disable its current physics an
 void EnterRagdoll()
 ```
 
-### ExitRagdoll<a name="lua-api-ragdollphysicsrequestbus-exitragdoll"></a>
+### ExitRagdoll {#lua-api-ragdollphysicsrequestbus-exitragdoll}
 
 Causes the ragdoll component to deactivate itself and reenable the entity's physics component\.
 
@@ -1647,11 +1647,11 @@ Causes the ragdoll component to deactivate itself and reenable the entity's phys
 void ExitRagdoll()
 ```
 
-## DecalComponentRequestBus<a name="lua-api-decalcomponentrequestbus"></a>
+## DecalComponentRequestBus {#lua-api-decalcomponentrequestbus}
 
 This EBus interface handles messages serviced by the Decal component\.
 
-### SetVisibility<a name="lua-api-decalcomponentrequestbus-setvisibility"></a>
+### SetVisibility {#lua-api-decalcomponentrequestbus-setvisibility}
 
 Specifies the decal's visibility\.
 
@@ -1668,7 +1668,7 @@ void SetVisibility(bool visible)
 | --- | --- | --- | 
 |  visible  |  bool  | Specify true to make the decal visible, false to hide it\. | 
 
-### Show<a name="lua-api-decalcomponentrequestbus-show"></a>
+### Show {#lua-api-decalcomponentrequestbus-show}
 
 Makes the decal visible\.
 
@@ -1678,7 +1678,7 @@ Makes the decal visible\.
 void Show()
 ```
 
-### Hide<a name="lua-api-decalcomponentrequestbus-hide"></a>
+### Hide {#lua-api-decalcomponentrequestbus-hide}
 
 Hides the decal\.
 
@@ -1688,11 +1688,11 @@ Hides the decal\.
 void Hide()
 ```
 
-## LensFlareComponentRequestBus<a name="lua-api-lensflarecomponentrequestbus"></a>
+## LensFlareComponentRequestBus {#lua-api-lensflarecomponentrequestbus}
 
 This EBus interface handles messages serviced by the Lens Flare component\.
 
-### SetLensFlareState<a name="lua-api-lensflarecomponentrequestbus-setlensflarestate"></a>
+### SetLensFlareState {#lua-api-lensflarecomponentrequestbus-setlensflarestate}
 
 Controls the lens flare state\.
 
@@ -1709,7 +1709,7 @@ void SetLensFlareState(State state)
 | --- | --- | --- | 
 |  state  |  State  | Specify On to turn on the lens flare; specify Off to turn it off\. | 
 
-### TurnOnLensFlare<a name="lua-api-lensflarecomponentrequestbus-turnonlensflare"></a>
+### TurnOnLensFlare {#lua-api-lensflarecomponentrequestbus-turnonlensflare}
 
 Turns the lens flare on\.
 
@@ -1719,7 +1719,7 @@ Turns the lens flare on\.
 void TurnOnLensFlare()
 ```
 
-### TurnOffLensFlare<a name="lua-api-lensflarecomponentrequestbus-turnofflensflare"></a>
+### TurnOffLensFlare {#lua-api-lensflarecomponentrequestbus-turnofflensflare}
 
 Turns the lens flare off\.
 
@@ -1729,7 +1729,7 @@ Turns the lens flare off\.
 void TurnOffLensFlare()
 ```
 
-### ToggleLensFlare<a name="lua-api-lensflarecomponentrequestbus-togglelensflare"></a>
+### ToggleLensFlare {#lua-api-lensflarecomponentrequestbus-togglelensflare}
 
 Toggles the lens flare state\.
 
@@ -1739,11 +1739,11 @@ Toggles the lens flare state\.
 void ToggleLensFlare()
 ```
 
-## LensFlareComponentNotificationBus<a name="lua-api-lensflarecomponentnotificationbus"></a>
+## LensFlareComponentNotificationBus {#lua-api-lensflarecomponentnotificationbus}
 
 This EBus interface handles events dispatched by the Lens Flare component\.
 
-### LensFlareTurnedOn<a name="lua-api-lensflarecomponentnotificationbus-lensflareturnedon"></a>
+### LensFlareTurnedOn {#lua-api-lensflarecomponentnotificationbus-lensflareturnedon}
 
 Notifies that the lens flare has been turned on\.
 
@@ -1753,7 +1753,7 @@ Notifies that the lens flare has been turned on\.
 void LensFlareTurnedOn()
 ```
 
-### LensFlareTurnedOff<a name="lua-api-lensflarecomponentnotificationbus-lensflareturnedoff"></a>
+### LensFlareTurnedOff {#lua-api-lensflarecomponentnotificationbus-lensflareturnedoff}
 
 Notifies that the lens flare has been turned off\.
 
@@ -1763,11 +1763,11 @@ Notifies that the lens flare has been turned off\.
 void LensFlareTurnedOff()
 ```
 
-## LightComponentRequestBus<a name="lua-api-lightcomponentrequestbus"></a>
+## LightComponentRequestBus {#lua-api-lightcomponentrequestbus}
 
 This EBus interfaces handles messages serviced by the light component\.
 
-### SetLightState<a name="lua-api-lightcomponentrequestbus-setlightstate"></a>
+### SetLightState {#lua-api-lightcomponentrequestbus-setlightstate}
 
 Controls the light state\.
 
@@ -1784,7 +1784,7 @@ void SetLightState(State state)
 | --- | --- | --- | 
 |  state  |  State  | Specify On to turn on the light; specify Off to turn it off\. | 
 
-### TurnOnLight<a name="lua-api-lightcomponentrequestbus-turnonlight"></a>
+### TurnOnLight {#lua-api-lightcomponentrequestbus-turnonlight}
 
 Turns the light on\.
 
@@ -1794,7 +1794,7 @@ Turns the light on\.
 void TurnOnLight()
 ```
 
-### TurnOffLight<a name="lua-api-lightcomponentrequestbus-turnofflight"></a>
+### TurnOffLight {#lua-api-lightcomponentrequestbus-turnofflight}
 
 Turns the light off\.
 
@@ -1804,7 +1804,7 @@ Turns the light off\.
 void TurnOffLight()
 ```
 
-### ToggleLight<a name="lua-api-lightcomponentrequestbus-togglelight"></a>
+### ToggleLight {#lua-api-lightcomponentrequestbus-togglelight}
 
 Toggles the light state\.
 
@@ -1814,11 +1814,11 @@ Toggles the light state\.
 void ToggleLight()
 ```
 
-## LightComponentNotificationBus<a name="lua-api-lightcomponentnotificationbus"></a>
+## LightComponentNotificationBus {#lua-api-lightcomponentnotificationbus}
 
 Light component notifications\.
 
-### LightTurnedOn<a name="lua-api-lightcomponentnotificationbus-lightturnedon"></a>
+### LightTurnedOn {#lua-api-lightcomponentnotificationbus-lightturnedon}
 
 Event sent when a light component is turned on\.
 
@@ -1828,7 +1828,7 @@ Event sent when a light component is turned on\.
 void LightTurnedOn()
 ```
 
-### LightTurnedOff<a name="lua-api-lightcomponentnotificationbus-lightturnedoff"></a>
+### LightTurnedOff {#lua-api-lightcomponentnotificationbus-lightturnedoff}
 
 Event sent when a light component is turned off\.
 
@@ -1838,11 +1838,11 @@ Event sent when a light component is turned off\.
 void LightTurnedOff()
 ```
 
-## ParticleComponentRequestBus<a name="lua-api-particlecomponentrequestbus"></a>
+## ParticleComponentRequestBus {#lua-api-particlecomponentrequestbus}
 
 Provides access to the particle component\.
 
-### SetVisibility<a name="lua-api-particlecomponentrequestbus-setvisibility"></a>
+### SetVisibility {#lua-api-particlecomponentrequestbus-setvisibility}
 
 Specifies the visibility of the particle component\.
 
@@ -1859,7 +1859,7 @@ void SetVisibility(bool visible)
 | --- | --- | --- | 
 |  visible  |  bool  | Specify true to make the particle component visible; false to hide it\. | 
 
-### Show<a name="lua-api-particlecomponentrequestbus-show"></a>
+### Show {#lua-api-particlecomponentrequestbus-show}
 
 Makes the particle component visible\.
 
@@ -1869,7 +1869,7 @@ Makes the particle component visible\.
 void Show()
 ```
 
-### Hide<a name="lua-api-particlecomponentrequestbus-hide"></a>
+### Hide {#lua-api-particlecomponentrequestbus-hide}
 
 Hides the particle component\.
 
@@ -1879,7 +1879,7 @@ Hides the particle component\.
 void Hide()
 ```
 
-### SetupEmitter<a name="lua-api-particlecomponentrequestbus-setupemitter"></a>
+### SetupEmitter {#lua-api-particlecomponentrequestbus-setupemitter}
 
 Sets up an effect emitter with the specified name and settings\.
 
@@ -1897,11 +1897,11 @@ void SetupEmitter(const AZStd::string& emitterName, const ParticleEmitterSetting
 |  emitterName  |  const AZStd::string&  | The name of the emitter to set up\. | 
 |  settings  |  const ParticleEmitterSettings&  | Contains particle emitter settings\. For more information, see ParticleComponent\.cpp\. | 
 
-## SimpleStateComponentRequestBus<a name="lua-api-simplestatecomponentrequestbus"></a>
+## SimpleStateComponentRequestBus {#lua-api-simplestatecomponentrequestbus}
 
 This EBus interface handles messages serviced by the Simple State component\. The Simple State component provides a simple state machine\. Each state is represented by a name and zero or more entities that are activated when the state is entered and deactivated when the state is left\.
 
-### SetState<a name="lua-api-simplestatecomponentrequestbus-setstate"></a>
+### SetState {#lua-api-simplestatecomponentrequestbus-setstate}
 
 Sets the active state
 
@@ -1918,7 +1918,7 @@ void SetState(const char* stateName)
 | --- | --- | --- | 
 |  stateName  |  char  | The name of the state\. | 
 
-### SetStateByIndex<a name="lua-api-simplestatecomponentrequestbus-setstatebyindex"></a>
+### SetStateByIndex {#lua-api-simplestatecomponentrequestbus-setstatebyindex}
 
 Sets the active state using a 0\-based index\.
 
@@ -1935,7 +1935,7 @@ void SetStateByIndex(AZ::u32 stateIndex)
 | --- | --- | --- | 
 |  stateIndex  |  AZ::u32  | The 0\-based index of the state\. | 
 
-### SetToNextState<a name="lua-api-simplestatecomponentrequestbus-settonextstate"></a>
+### SetToNextState {#lua-api-simplestatecomponentrequestbus-settonextstate}
 
 Advances to the next state\. If the next state is null, the first state is set\.
 
@@ -1945,7 +1945,7 @@ Advances to the next state\. If the next state is null, the first state is set\.
 void SetToNextState()
 ```
 
-### SetToPreviousState<a name="lua-api-simplestatecomponentrequestbus-settopreviousstate"></a>
+### SetToPreviousState {#lua-api-simplestatecomponentrequestbus-settopreviousstate}
 
 Sets the previous state\. If the previous state is null, the end state is set\.
 
@@ -1955,7 +1955,7 @@ Sets the previous state\. If the previous state is null, the end state is set\.
 void SetToPreviousState()
 ```
 
-### SetToFirstState<a name="lua-api-simplestatecomponentrequestbus-settofirststate"></a>
+### SetToFirstState {#lua-api-simplestatecomponentrequestbus-settofirststate}
 
 Sets the first state\.
 
@@ -1965,7 +1965,7 @@ Sets the first state\.
 void SetToFirstState()
 ```
 
-### SetToLastState<a name="lua-api-simplestatecomponentrequestbus-settolaststate"></a>
+### SetToLastState {#lua-api-simplestatecomponentrequestbus-settolaststate}
 
 Sets the last state\.
 
@@ -1975,7 +1975,7 @@ Sets the last state\.
 void SetToLastState()
 ```
 
-### GetNumStates<a name="lua-api-simplestatecomponentrequestbus-getnumstates"></a>
+### GetNumStates {#lua-api-simplestatecomponentrequestbus-getnumstates}
 
 Get the number of states\.
 
@@ -1991,7 +1991,7 @@ AZ::u32 GetNumStates()
 
 **Default Return:** `0`
 
-### GetCurrentState<a name="lua-api-simplestatecomponentrequestbus-getcurrentstate"></a>
+### GetCurrentState {#lua-api-simplestatecomponentrequestbus-getcurrentstate}
 
 Gets the current state\.
 
@@ -2007,11 +2007,11 @@ const char* GetCurrentState()
 
 **Default Return:** `nullptr`
 
-## SimpleStateComponentNotificationBus<a name="lua-api-simplestatecomponentnotificationbus"></a>
+## SimpleStateComponentNotificationBus {#lua-api-simplestatecomponentnotificationbus}
 
 This EBus interface handles events dispatched by the Simple State component\.
 
-### OnStateChanged<a name="lua-api-simplestatecomponentnotificationbus-onstatechanged"></a>
+### OnStateChanged {#lua-api-simplestatecomponentnotificationbus-onstatechanged}
 
 Notify that the state has changed from `oldState` to `newState`\.
 
@@ -2029,11 +2029,11 @@ void OnStateChanged(const char* oldState, const char* newState)
 |  oldState  |  char  | The name of the old state\. | 
 |  newState  |  char  | The name of the new state\. | 
 
-## SpawnerComponentRequestBus<a name="lua-api-spawnercomponentrequestbus"></a>
+## SpawnerComponentRequestBus {#lua-api-spawnercomponentrequestbus}
 
 This EBus interface handles messages serviced by the `SpawnerComponent`\.
 
-### Spawn<a name="lua-api-spawnercomponentrequestbus-spawn"></a>
+### Spawn {#lua-api-spawnercomponentrequestbus-spawn}
 
 Spawns the selected slice at the entity's location\.
 
@@ -2049,7 +2049,7 @@ AzFramework::SliceInstantiationTicket Spawn()
 
 **Default Return:** `AzFramework::SliceInstantiationTicket`\(\)
 
-### SpawnRelative<a name="lua-api-spawnercomponentrequestbus-spawnrelative"></a>
+### SpawnRelative {#lua-api-spawnercomponentrequestbus-spawnrelative}
 
 Spawns the selected slice at the entity's location with the specified relative offset\.
 
@@ -2072,7 +2072,7 @@ AzFramework::SliceInstantiationTicket SpawnRelative(const AZ::Transform& relativ
 
 **Default Return:** `AzFramework::SliceInstantiationTicket`\(\)
 
-### SpawnAbsolute<a name="lua-api-spawnercomponentrequestbus-spawnabsolute"></a>
+### SpawnAbsolute {#lua-api-spawnercomponentrequestbus-spawnabsolute}
 
 Spawns the selected slice at the specified world transform\.
 
@@ -2095,11 +2095,11 @@ AzFramework::SliceInstantiationTicket SpawnAbsolute(const AZ::Transform& world)
 
 **Default Return:** `AzFramework::SliceInstantiationTicket`\(\)
 
-## SpawnerComponentNotificationBus<a name="lua-api-spawnercomponentnotificationbus"></a>
+## SpawnerComponentNotificationBus {#lua-api-spawnercomponentnotificationbus}
 
 This EBus interface handles events dispatched by the `SpawnerComponent.`
 
-### OnSpawnBegin<a name="lua-api-spawnercomponentnotificationbus-onspawnbegin"></a>
+### OnSpawnBegin {#lua-api-spawnercomponentnotificationbus-onspawnbegin}
 
 Notifies that a slice has been spawned, but that its entities have not yet been activated\. `OnEntitySpawned` events are about to be dispatched\.
 
@@ -2116,7 +2116,7 @@ void OnSpawnBegin(const AzFramework::SliceInstantiationTicket& ticket)
 | --- | --- | --- | 
 |  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
 
-### OnSpawnEnd<a name="lua-api-spawnercomponentnotificationbus-onspawnend"></a>
+### OnSpawnEnd {#lua-api-spawnercomponentnotificationbus-onspawnend}
 
 Notifies that a spawn has been completed\. All `OnEntitySpawned` events have been dispatched\.
 
@@ -2133,7 +2133,7 @@ void OnSpawnEnd(const AzFramework::SliceInstantiationTicket& ticket)
 | --- | --- | --- | 
 |  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
 
-### OnEntitySpawned<a name="lua-api-spawnercomponentnotificationbus-onentityspawned"></a>
+### OnEntitySpawned {#lua-api-spawnercomponentnotificationbus-onentityspawned}
 
 Notifies that an entity has spawned\. This event is called once for each entity spawned in a slice\.
 
@@ -2151,11 +2151,11 @@ void OnEntitySpawned(const AzFramework::SliceInstantiationTicket& ticket, const 
 |  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
 |  spawnedEntities  |  AZ::EntityId  | The ID of the spawned entity\. | 
 
-## TagComponentRequestBus<a name="lua-api-tagcomponentrequestbus"></a>
+## TagComponentRequestBus {#lua-api-tagcomponentrequestbus}
 
 Provides services for managing tags on entities\.
 
-### HasTag<a name="lua-api-tagcomponentrequestbus-hastag"></a>
+### HasTag {#lua-api-tagcomponentrequestbus-hastag}
 
 Checks for a specified tag on an entity\.
 
@@ -2178,7 +2178,7 @@ bool HasTag(const Tag&)
 
 **Default Return:** `false`
 
-### AddTag<a name="lua-api-tagcomponentrequestbus-addtag"></a>
+### AddTag {#lua-api-tagcomponentrequestbus-addtag}
 
 Adds the specified tag to the entity if it doesn't already have it\.
 
@@ -2195,7 +2195,7 @@ void AddTag(const Tag&)
 | --- | --- | --- | 
 |  Tag  |  Tag  | The tag to add\. | 
 
-### AddTags<a name="lua-api-tagcomponentrequestbus-addtags"></a>
+### AddTags {#lua-api-tagcomponentrequestbus-addtags}
 
 Adds a specified list of tags to the entity if the list does not exist on the entity\.
 
@@ -2212,7 +2212,7 @@ void AddTags(const Tags& tags)
 | --- | --- | --- | 
 |  tags  |  Tags  | The list of tags to add\. | 
 
-### RemoveTag<a name="lua-api-tagcomponentrequestbus-removetag"></a>
+### RemoveTag {#lua-api-tagcomponentrequestbus-removetag}
 
 Removes a specified tag from the entity if the tag is present\.
 
@@ -2229,7 +2229,7 @@ void RemoveTag(const Tag&)
 | --- | --- | --- | 
 |  tag  |  Tag  | The tag to remove\. | 
 
-### RemoveTags<a name="lua-api-tagcomponentrequestbus-removetags"></a>
+### RemoveTags {#lua-api-tagcomponentrequestbus-removetags}
 
 Removes the specified list of tags from the entity if the list exists on the entity\.
 
@@ -2246,7 +2246,7 @@ void RemoveTags(const Tags& tags)
 | --- | --- | --- | 
 |  tags  |  Tags  | The list of tags to remove\. | 
 
-### GetTags<a name="lua-api-tagcomponentrequestbus-gettags"></a>
+### GetTags {#lua-api-tagcomponentrequestbus-gettags}
 
 Retrieves the list of tags on the entity\.
 
@@ -2262,11 +2262,11 @@ const Tags& GetTags()
 
 **Default Return:** `s_emptyTags`
 
-## TagGlobalRequestBus<a name="lua-api-tagglobalrequestbus"></a>
+## TagGlobalRequestBus {#lua-api-tagglobalrequestbus}
 
 Provides services for querying Tags on entities\.
 
-### RequestTaggedEntities<a name="lua-api-tagglobalrequestbus-requesttaggedentities"></a>
+### RequestTaggedEntities {#lua-api-tagglobalrequestbus-requesttaggedentities}
 
 Queries for tagged entities\. Handlers respond if they have the tag \(that is, they are listening on the tag's channel\)\. Use `AZ::EbusAggregateResults` to handle more than the first responder\.
 
@@ -2282,11 +2282,11 @@ const AZ::EntityId RequestTaggedEntities()
 
 **Default Return:** `s_invalidEntityId`
 
-## TagGlobalNotificationBus<a name="lua-api-tagglobalnotificationbus"></a>
+## TagGlobalNotificationBus {#lua-api-tagglobalnotificationbus}
 
 Handler for global Tag component notifications\.
 
-### OnEntityTagAdded<a name="lua-api-tagglobalnotificationbus-onentitytagadded"></a>
+### OnEntityTagAdded {#lua-api-tagglobalnotificationbus-onentitytagadded}
 
 Notifies that a tag has been added to an entity\. When connecting to the tag global notification bus, your `OnEntityTagAdded` handler fires once for each entity that already has a tag\. After the initial connection, you are alerted whenever a new entity gains or loses a tag\.
 
@@ -2296,7 +2296,7 @@ Notifies that a tag has been added to an entity\. When connecting to the tag glo
 void OnEntityTagAdded(const AZ::EntityId&)
 ```
 
-### OnEntityTagRemoved<a name="lua-api-tagglobalnotificationbus-onentitytagremoved"></a>
+### OnEntityTagRemoved {#lua-api-tagglobalnotificationbus-onentitytagremoved}
 
 Notifies that a Tag has been removed from an entity\.
 
@@ -2306,11 +2306,11 @@ Notifies that a Tag has been removed from an entity\.
 void OnEntityTagRemoved(const AZ::EntityId&)
 ```
 
-## TagComponentNotificationsBus<a name="lua-api-tagcomponentnotificationsbus"></a>
+## TagComponentNotificationsBus {#lua-api-tagcomponentnotificationsbus}
 
 Provides notifications regarding tags on entities\.
 
-### OnTagAdded<a name="lua-api-tagcomponentnotificationsbus-ontagadded"></a>
+### OnTagAdded {#lua-api-tagcomponentnotificationsbus-ontagadded}
 
 Notifies listeners when a tag has been added\.
 
@@ -2320,7 +2320,7 @@ Notifies listeners when a tag has been added\.
 void OnTagAdded(const Tag&)
 ```
 
-### OnTagRemoved<a name="lua-api-tagcomponentnotificationsbus-ontagremoved"></a>
+### OnTagRemoved {#lua-api-tagcomponentnotificationsbus-ontagremoved}
 
 Notifies listeners when a tag is removed\.
 
@@ -2330,11 +2330,11 @@ Notifies listeners when a tag is removed\.
 void OnTagRemoved(const Tag&)
 ```
 
-## TriggerAreaRequestsBus<a name="lua-api-triggerarearequestsbus"></a>
+## TriggerAreaRequestsBus {#lua-api-triggerarearequestsbus}
 
 This EBus interface services requests made to the Trigger Area component\.
 
-### AddRequiredTag<a name="lua-api-triggerarearequestsbus-addrequiredtag"></a>
+### AddRequiredTag {#lua-api-triggerarearequestsbus-addrequiredtag}
 
 Adds a required tag to the activation filtering criteria of the current component\.
 
@@ -2351,7 +2351,7 @@ void AddRequiredTag(const Tag& requiredTag)
 | --- | --- | --- | 
 |  requiredTag  |  Tag  | The tag to add to the activation filtering criteria\. | 
 
-### RemoveRequiredTag<a name="lua-api-triggerarearequestsbus-removerequiredtag"></a>
+### RemoveRequiredTag {#lua-api-triggerarearequestsbus-removerequiredtag}
 
 Removes a required tag from the activation filtering criteria of the current component\.
 
@@ -2368,7 +2368,7 @@ void RemoveRequiredTag(const Tag& requiredTag)
 | --- | --- | --- | 
 |  requiredTag  |  Tag  | The tag to remove from the activation filtering criteria\. | 
 
-### AddExcludedTag<a name="lua-api-triggerarearequestsbus-addexcludedtag"></a>
+### AddExcludedTag {#lua-api-triggerarearequestsbus-addexcludedtag}
 
 Adds an excluded tag to the activation filtering criteria of the current component\.
 
@@ -2385,7 +2385,7 @@ void AddExcludedTag(const Tag& excludedTag)
 | --- | --- | --- | 
 |  excludedTag  |  Tag  | The excluded tag to add to the activation filtering criteria\. | 
 
-### RemoveExcludedTag<a name="lua-api-triggerarearequestsbus-removeexcludedtag"></a>
+### RemoveExcludedTag {#lua-api-triggerarearequestsbus-removeexcludedtag}
 
 Removes an excluded tag from the activation filtering criteria of the current component\.
 
@@ -2402,11 +2402,11 @@ void RemoveExcludedTag(const Tag& excludedTag)
 | --- | --- | --- | 
 |  excludedTag  |  Tag  | The excluded tag to remove from the activation filtering criteria\. | 
 
-## TriggerAreaNotificationBus<a name="lua-api-triggerareanotificationbus"></a>
+## TriggerAreaNotificationBus {#lua-api-triggerareanotificationbus}
 
 This EBus handles events for a given trigger area when an entity enters or leaves\.
 
-### OnTriggerAreaEntered<a name="lua-api-triggerareanotificationbus-ontriggerareaentered"></a>
+### OnTriggerAreaEntered {#lua-api-triggerareanotificationbus-ontriggerareaentered}
 
 Notifies when an entity enters the trigger area\.
 
@@ -2423,7 +2423,7 @@ void OnTriggerAreaEntered(AZ::EntityId enteringEntityId)
 | --- | --- | --- | 
 |  enteringEntityId  |  AZ::EntityId  | The ID of the entity that entered the trigger area\. | 
 
-### OnTriggerAreaExited<a name="lua-api-triggerareanotificationbus-ontriggerareaexited"></a>
+### OnTriggerAreaExited {#lua-api-triggerareanotificationbus-ontriggerareaexited}
 
 Notifies when an entity exits the trigger area\.
 
@@ -2440,11 +2440,11 @@ void OnTriggerAreaExited(AZ::EntityId exitingEntityId)
 | --- | --- | --- | 
 |  exitingEntityId  |  AZ::EntityId  | The ID of the entity that exited the trigger area\. | 
 
-## TriggerAreaEntityNotificationBus<a name="lua-api-triggerareaentitynotificationbus"></a>
+## TriggerAreaEntityNotificationBus {#lua-api-triggerareaentitynotificationbus}
 
 Events fired for a specified trigger when the trigger area has been entered or exited\.
 
-### OnEntityEnteredTriggerArea<a name="lua-api-triggerareaentitynotificationbus-onentityenteredtriggerarea"></a>
+### OnEntityEnteredTriggerArea {#lua-api-triggerareaentitynotificationbus-onentityenteredtriggerarea}
 
 Notifies when an `enteringEntityId` instance has entered the specified trigger area\.
 
@@ -2461,7 +2461,7 @@ void OnEntityEnteredTriggerArea(AZ::EntityId triggerId)
 | --- | --- | --- | 
 |  triggerId  |  AZ::EntityId  | The ID of the trigger that has been entered\. | 
 
-### OnEntityExitedTriggerArea<a name="lua-api-triggerareaentitynotificationbus-onentityexitedtriggerarea"></a>
+### OnEntityExitedTriggerArea {#lua-api-triggerareaentitynotificationbus-onentityexitedtriggerarea}
 
 Notifies when an `enteringEntityId` instance has exited the specified trigger area\.
 
@@ -2478,11 +2478,11 @@ void OnEntityExitedTriggerArea(AZ::EntityId triggerId)
 | --- | --- | --- | 
 |  triggerId  |  AZ::EntityId  | The ID of the trigger that has been exited\. | 
 
-## BoxShapeComponentRequestsBus<a name="lua-api-boxshapecomponentrequestsbus"></a>
+## BoxShapeComponentRequestsBus {#lua-api-boxshapecomponentrequestsbus}
 
 Services provided by the Box Shape component\.
 
-### GetBoxConfiguration<a name="lua-api-boxshapecomponentrequestsbus-getboxconfiguration"></a>
+### GetBoxConfiguration {#lua-api-boxshapecomponentrequestsbus-getboxconfiguration}
 
 Retrieves the box configuration\.
 
@@ -2496,7 +2496,7 @@ BoxShapeConfiguration GetBoxConfiguration()
 
 **Default Return:** `BoxShapeConfiguration()`
 
-### SetBoxDimensions<a name="lua-api-boxshapecomponentrequestsbus-setboxdimensions"></a>
+### SetBoxDimensions {#lua-api-boxshapecomponentrequestsbus-setboxdimensions}
 
 Sets new dimensions for the Box Shape\.
 
@@ -2513,11 +2513,11 @@ void SetBoxDimensions(AZ::Vector3 newDimensions)
 | --- | --- | --- | 
 |  newDimensions  |  AZ::Vector3  | Specifies dimensions along the X, Y, and Z axes\. | 
 
-## CapsuleShapeComponentRequestsBus<a name="lua-api-capsuleshapecomponentrequestsbus"></a>
+## CapsuleShapeComponentRequestsBus {#lua-api-capsuleshapecomponentrequestsbus}
 
 Services provided by the Capsule Shape Component\.
 
-### GetCapsuleConfiguration<a name="lua-api-capsuleshapecomponentrequestsbus-getcapsuleconfiguration"></a>
+### GetCapsuleConfiguration {#lua-api-capsuleshapecomponentrequestsbus-getcapsuleconfiguration}
 
 Retrieves the capsule configuration\.
 
@@ -2533,7 +2533,7 @@ CapsuleShapeConfiguration GetCapsuleConfiguration()
 
 **Default Return:** `CapsuleShapeConfiguration`\(\)
 
-### SetHeight<a name="lua-api-capsuleshapecomponentrequestsbus-setheight"></a>
+### SetHeight {#lua-api-capsuleshapecomponentrequestsbus-setheight}
 
 Sets the end to end height of capsule, including the cylinder and both caps\.
 
@@ -2550,7 +2550,7 @@ void SetHeight(float newHeight)
 | --- | --- | --- | 
 |  newHeight  |  float  | Specifies the new height of the capsule\. | 
 
-### SetRadius<a name="lua-api-capsuleshapecomponentrequestsbus-setradius"></a>
+### SetRadius {#lua-api-capsuleshapecomponentrequestsbus-setradius}
 
 Sets the radius of the capsule\.
 
@@ -2567,11 +2567,11 @@ void SetRadius(float newRadius)
 | --- | --- | --- | 
 |  newRadius  |  float  | Specifies the new radius of the capsule\. | 
 
-## CylinderShapeComponentRequestsBus<a name="lua-api-cylindershapecomponentrequestsbus"></a>
+## CylinderShapeComponentRequestsBus {#lua-api-cylindershapecomponentrequestsbus}
 
 This EBus interface handles messages for the Cylinder Shape component\.
 
-### GetCylinderConfiguration<a name="lua-api-cylindershapecomponentrequestsbus-getcylinderconfiguration"></a>
+### GetCylinderConfiguration {#lua-api-cylindershapecomponentrequestsbus-getcylinderconfiguration}
 
 Retrieves the cylinder configuration\.
 
@@ -2587,7 +2587,7 @@ CylinderShapeConfiguration GetCylinderConfiguration()
 
 **Default Return:** `CylinderShapeConfiguration`\(\)
 
-### SetHeight<a name="lua-api-cylindershapecomponentrequestsbus-setheight"></a>
+### SetHeight {#lua-api-cylindershapecomponentrequestsbus-setheight}
 
 Sets the height of the cylinder\.
 
@@ -2604,7 +2604,7 @@ void SetHeight(float newHeight)
 | --- | --- | --- | 
 |  newHeight  |  float  | Specifies the height of the cylinder\. | 
 
-### SetRadius<a name="lua-api-cylindershapecomponentrequestsbus-setradius"></a>
+### SetRadius {#lua-api-cylindershapecomponentrequestsbus-setradius}
 
 Sets the radius of the cylinder\.
 
@@ -2621,11 +2621,11 @@ void SetRadius(float newRadius)
 | --- | --- | --- | 
 |  newRadius  |  float  | Specifies the radius of the cylinder\. | 
 
-## ShapeComponentRequestsBus<a name="lua-api-shapecomponentrequestsbus"></a>
+## ShapeComponentRequestsBus {#lua-api-shapecomponentrequestsbus}
 
 Handles requests for services provided by the Shape component\.
 
-### GetShapeType<a name="lua-api-shapecomponentrequestsbus-getshapetype"></a>
+### GetShapeType {#lua-api-shapecomponentrequestsbus-getshapetype}
 
 Retrieves the type of shape of a component\.
 
@@ -2641,7 +2641,7 @@ AZ::Crc32 GetShapeType()
 
 **Default Return:** `AZ::Crc32()`
 
-### IsPointInside<a name="lua-api-shapecomponentrequestsbus-ispointinside"></a>
+### IsPointInside {#lua-api-shapecomponentrequestsbus-ispointinside}
 
 Checks if a given point is inside or outside a shape\.
 
@@ -2664,7 +2664,7 @@ bool IsPointInside(const AZ::Vector3& point)
 
 **Default Return:** `false`
 
-### DistanceFromPoint<a name="lua-api-shapecomponentrequestsbus-distancefrompoint"></a>
+### DistanceFromPoint {#lua-api-shapecomponentrequestsbus-distancefrompoint}
 
 Retrieves the minimum distance the specified point is from the shape\.
 
@@ -2687,7 +2687,7 @@ float DistanceFromPoint(const AZ::Vector3& point)
 
 **Default Return:** `0.f`
 
-### DistanceSquaredFromPoint<a name="lua-api-shapecomponentrequestsbus-distancesquaredfrompoint"></a>
+### DistanceSquaredFromPoint {#lua-api-shapecomponentrequestsbus-distancesquaredfrompoint}
 
 Retrieves the minimum squared distance the specified point is from the shape\.
 
@@ -2710,11 +2710,11 @@ float DistanceSquaredFromPoint(const AZ::Vector3& point)
 
 **Default Return:** `0.f`
 
-## ShapeComponentNotificationsBus<a name="lua-api-shapecomponentnotificationsbus"></a>
+## ShapeComponentNotificationsBus {#lua-api-shapecomponentnotificationsbus}
 
 Notifications sent by the shape component\.
 
-### OnShapeChanged<a name="lua-api-shapecomponentnotificationsbus-onshapechanged"></a>
+### OnShapeChanged {#lua-api-shapecomponentnotificationsbus-onshapechanged}
 
 Notifies that the shape component has been modified\.
 
@@ -2731,11 +2731,11 @@ void OnShapeChanged(ShapeChangeReasons changeReason)
 | --- | --- | --- | 
 |  changeReason  |  ShapeChangeReasons  | Informs listeners of the reason for this shape change \(transform change, the shape dimensions being altered\.\) | 
 
-## SphereShapeComponentRequestsBus<a name="lua-api-sphereshapecomponentrequestsbus"></a>
+## SphereShapeComponentRequestsBus {#lua-api-sphereshapecomponentrequestsbus}
 
 Services provided by the Sphere Shape Component
 
-### GetSphereConfiguration<a name="lua-api-sphereshapecomponentrequestsbus-getsphereconfiguration"></a>
+### GetSphereConfiguration {#lua-api-sphereshapecomponentrequestsbus-getsphereconfiguration}
 
 Retrieves the sphere configuration\.
 
@@ -2751,7 +2751,7 @@ SphereShapeConfiguration GetSphereConfiguration()
 
 **Default Return:** `SphereShapeConfiguration`\(\)
 
-### SetRadius<a name="lua-api-sphereshapecomponentrequestsbus-setradius"></a>
+### SetRadius {#lua-api-sphereshapecomponentrequestsbus-setradius}
 
 Sets the specified radius for the sphere shape component\.
 
@@ -2768,11 +2768,11 @@ void SetRadius(float newRadius)
 | --- | --- | --- | 
 |  newRadius  |  float  | Specifies the radius of the sphere shape\. | 
 
-## EntityBus<a name="lua-api-entitybus"></a>
+## EntityBus {#lua-api-entitybus}
 
 Dispatches events specific to a given entity\.
 
-### OnEntityActivated<a name="lua-api-entitybus-onentityactivated"></a>
+### OnEntityActivated {#lua-api-entitybus-onentityactivated}
 
 Notifies when entity activation has completed\. If the entity is active when a handler connects to the bus, then the `OnEntityActivated` event is sent immediately\.
 
@@ -2782,7 +2782,7 @@ Notifies when entity activation has completed\. If the entity is active when a h
 void OnEntityActivated(const AZ::EntityId&)
 ```
 
-### OnEntityDeactivated<a name="lua-api-entitybus-onentitydeactivated"></a>
+### OnEntityDeactivated {#lua-api-entitybus-onentitydeactivated}
 
 Notifies when the entity is about to be deactivated\.
 
@@ -2792,14 +2792,14 @@ Notifies when the entity is about to be deactivated\.
 void OnEntityDeactivated(const AZ::EntityId&)
 ```
 
-## TickBus<a name="lua-api-tickbus"></a>
+## TickBus {#lua-api-tickbus}
 
 Tick events are executed on the main game or component thread\.
 
 **Note**  
 Warning: Adding mutex to the tick bus degrades performance in most cases\.
 
-### OnTick<a name="lua-api-tickbus-ontick"></a>
+### OnTick {#lua-api-tickbus-ontick}
 
 Notifies the delta time if the delta from the previous tick \(in seconds\) and time point is its absolute value\.
 
@@ -2817,11 +2817,11 @@ void OnTick(float deltaTime, ScriptTimePoint time)
 |  deltaTime  |  float  | The latest time between ticks\. | 
 |  time  |  ScriptTimePoint  | The time at the current tick\. | 
 
-## TickRequestBus<a name="lua-api-tickrequestbus"></a>
+## TickRequestBus {#lua-api-tickrequestbus}
 
 Make requests from this bus to get the frame time or return the current time as seconds\.
 
-### GetTickDeltaTime<a name="lua-api-tickrequestbus-gettickdeltatime"></a>
+### GetTickDeltaTime {#lua-api-tickrequestbus-gettickdeltatime}
 
 Gets the latest time between ticks\.
 
@@ -2837,7 +2837,7 @@ float GetTickDeltaTime()
 
 **Default Return:** `0.f`
 
-### GetTimeAtCurrentTick<a name="lua-api-tickrequestbus-gettimeatcurrenttick"></a>
+### GetTimeAtCurrentTick {#lua-api-tickrequestbus-gettimeatcurrenttick}
 
 Gets the time in seconds at the current tick\.
 
@@ -2853,11 +2853,11 @@ ScriptTimePoint GetTimeAtCurrentTick()
 
 **Default Return:** `ScriptTimePoint`\(\)
 
-## TransformNotificationBus<a name="lua-api-transformnotificationbus"></a>
+## TransformNotificationBus {#lua-api-transformnotificationbus}
 
 This EBus is a listener for transform changes\.
 
-### OnTransformChanged<a name="lua-api-transformnotificationbus-ontransformchanged"></a>
+### OnTransformChanged {#lua-api-transformnotificationbus-ontransformchanged}
 
 Notifies when the local transform of the entity has changed\. A local transform update always implies a world transform change\.
 
@@ -2875,7 +2875,7 @@ void OnTransformChanged(const Transform& local, const Transform& world)
 |  local  |  Transform  | The local transform of the entity\. | 
 |  world  |  Transform  | The world transform\. | 
 
-### OnParentChanged<a name="lua-api-transformnotificationbus-onparentchanged"></a>
+### OnParentChanged {#lua-api-transformnotificationbus-onparentchanged}
 
 Notifies when the parent of an entity has changed\. When the old or new parent is invalid, the invalid `EntityId` is equal to `InvalidEntityId`\.
 
@@ -2893,11 +2893,11 @@ void OnParentChanged(EntityId oldParent, EntityId newParent)
 |  oldParent  |  EntityId  | The entity ID of the old parent\. | 
 |  newParent  |  EntityId  | The entity ID of the new parent\. | 
 
-## GameEntityContextRequestBus<a name="lua-api-gameentitycontextrequestbus"></a>
+## GameEntityContextRequestBus {#lua-api-gameentitycontextrequestbus}
 
 This EBus interfaces makes requests to the game entity context component\.
 
-### DestroyGameEntity<a name="lua-api-gameentitycontextrequestbus-destroygameentity"></a>
+### DestroyGameEntity {#lua-api-gameentitycontextrequestbus-destroygameentity}
 
 Destroys an entity\. The entity is deactivated immediately and is destroyed in the next tick\.
 
@@ -2914,7 +2914,7 @@ void DestroyGameEntity(const AZ::EntityId& id)
 | --- | --- | --- | 
 |  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. | 
 
-### DestroyGameEntityAndDescendants<a name="lua-api-gameentitycontextrequestbus-destroygameentityanddescendants"></a>
+### DestroyGameEntityAndDescendants {#lua-api-gameentitycontextrequestbus-destroygameentityanddescendants}
 
 Destroys an entity and all its descendants, the entity and its descendants are deactivated immediately and will be destroyed the next tick\.
 
@@ -2931,7 +2931,7 @@ void DestroyGameEntityAndDescendants(AZ::EntityId& id)
 | --- | --- | --- | 
 |  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. The entity's descendants will also be destroyed\. | 
 
-### ActivateGameEntity<a name="lua-api-gameentitycontextrequestbus-activategameentity"></a>
+### ActivateGameEntity {#lua-api-gameentitycontextrequestbus-activategameentity}
 
 Activates an entity by the specified ID\.
 
@@ -2948,7 +2948,7 @@ void ActivateGameEntity(AZ::EntityId& id)
 | --- | --- | --- | 
 |  id  |  AZ::EntityId  | The ID of the entity to activate\. | 
 
-### DeactivateGameEntity<a name="lua-api-gameentitycontextrequestbus-deactivategameentity"></a>
+### DeactivateGameEntity {#lua-api-gameentitycontextrequestbus-deactivategameentity}
 
 Deactivates an entity by the specified ID\.
 
@@ -2965,7 +2965,7 @@ void DeactivateGameEntity(AZ::EntityId& id)
 | --- | --- | --- | 
 |  id  |  AZ::EntityId  | The ID of the entity to deactivate\. | 
 
-### DestroySliceByEntity<a name="lua-api-gameentitycontextrequestbus-destroyslicebyentity"></a>
+### DestroySliceByEntity {#lua-api-gameentitycontextrequestbus-destroyslicebyentity}
 
 Destroys the slice instance that contains the entity with the specified ID\.
 
@@ -2988,11 +2988,11 @@ bool DestroySliceByEntity(AZ::EntityId& id)
 
 **Default Return:** `false`
 
-## RandomManagerBus<a name="lua-api-randommanagerbus"></a>
+## RandomManagerBus {#lua-api-randommanagerbus}
 
 Provides functions for random numbers\.
 
-### RandomFloat<a name="lua-api-randommanagerbus-randomfloat"></a>
+### RandomFloat {#lua-api-randommanagerbus-randomfloat}
 
 Generates a random float value\.
 
@@ -3015,7 +3015,7 @@ float RandomFloat()
 
 **Default Return:** `0.0f`
 
-### RandomBool<a name="lua-api-randommanagerbus-randombool"></a>
+### RandomBool {#lua-api-randommanagerbus-randombool}
 
 Generates a random Boolean value\.
 
@@ -3038,7 +3038,7 @@ bool RandomBool(const AZStd::string& tag)
 
 **Default Return:** `false`
 
-### RandomInt<a name="lua-api-randommanagerbus-randomint"></a>
+### RandomInt {#lua-api-randommanagerbus-randomint}
 
 Generates a random unsigned integer value\.
 
@@ -3061,7 +3061,7 @@ unsigned int RandomInt(const AZStd::string& tag)
 
 **Default Return:** `0`
 
-### RandomInRange<a name="lua-api-randommanagerbus-randominrange"></a>
+### RandomInRange {#lua-api-randommanagerbus-randominrange}
 
 Generates a random unsigned integer value within a specified range\.
 
@@ -3086,11 +3086,11 @@ unsigned int RandomInRange(const AZStd::string& tag, unsigned int min, unsigned 
 
 **Default Return:** `0`
 
-## CameraRequestBus<a name="lua-api-camerarequestbus"></a>
+## CameraRequestBus {#lua-api-camerarequestbus}
 
 Provides access to camera properties and services\.
 
-### GetFov<a name="lua-api-camerarequestbus-getfov"></a>
+### GetFov {#lua-api-camerarequestbus-getfov}
 
 Gets the camera's field of view in degrees
 
@@ -3106,7 +3106,7 @@ float GetFOV()
 
 **Default Return:** `s_defaultFoV`
 
-### GetNearClipDistance<a name="lua-api-camerarequestbus-getnearclipdistance"></a>
+### GetNearClipDistance {#lua-api-camerarequestbus-getnearclipdistance}
 
 Gets the camera's distance from the near clip plane in meters\.
 
@@ -3122,7 +3122,7 @@ float GetNearClipDistance()
 
 **Default Return:** s\_`defaultNearPlaneDistance`
 
-### GetFarClipDistance<a name="lua-api-camerarequestbus-getfarclipdistance"></a>
+### GetFarClipDistance {#lua-api-camerarequestbus-getfarclipdistance}
 
 Gets the camera's distance from the far clip plane in meters\.
 
@@ -3138,7 +3138,7 @@ float GetFarClipDistance()
 
 **Default Return:** s\_`defaultFarClipPlaneDistance`
 
-### GetFrustumWidth<a name="lua-api-camerarequestbus-getfrustumwidth"></a>
+### GetFrustumWidth {#lua-api-camerarequestbus-getfrustumwidth}
 
 Gets the camera frustum's width\.
 
@@ -3154,7 +3154,7 @@ float GetFrustumWidth()
 
 **Default Return:** s\_`defaultFrustumDimension`
 
-### GetFrustumHeight<a name="lua-api-camerarequestbus-getfrustumheight"></a>
+### GetFrustumHeight {#lua-api-camerarequestbus-getfrustumheight}
 
 Gets the camera frustum's height\.
 
@@ -3170,7 +3170,7 @@ float GetFrustumHeight()
 
 **Default Return:** s\_`defaultFrustumDimension`
 
-### SetFov<a name="lua-api-camerarequestbus-setfov"></a>
+### SetFov {#lua-api-camerarequestbus-setfov}
 
 Sets the camera's field of view in degrees\.
 
@@ -3187,7 +3187,7 @@ void SetFov(float fov)
 | --- | --- | --- | 
 |  fov  |  float  | The field of view in degrees\. Possible values are 0 < fov < 180\. | 
 
-### SetNearClipDistance<a name="lua-api-camerarequestbus-setnearclipdistance"></a>
+### SetNearClipDistance {#lua-api-camerarequestbus-setnearclipdistance}
 
 Sets the near clip plane to the specified distance from the camera in meters\.
 
@@ -3204,7 +3204,7 @@ void SetNearClipDistance(float nearClipDistance)
 | --- | --- | --- | 
 |  nearClipDistance  |  float  | The distance from the camera in meters\. The value should be small, but greater than 0\. | 
 
-### SetFarClipDistance<a name="lua-api-camerarequestbus-setfarclipdistance"></a>
+### SetFarClipDistance {#lua-api-camerarequestbus-setfarclipdistance}
 
 Sets the far clip plane to the specified distance from the camera in meters\.
 
@@ -3221,7 +3221,7 @@ void SetFarClipDistance(float farClipDistance)
 | --- | --- | --- | 
 |  farClipDistance  |  float  | The distance from the camera in meters\. | 
 
-### SetFrustumWidth<a name="lua-api-camerarequestbus-setfrustumwidth"></a>
+### SetFrustumWidth {#lua-api-camerarequestbus-setfrustumwidth}
 
 Sets the camera frustum's width\.
 
@@ -3238,7 +3238,7 @@ void SetFrustumWidth(float width)
 | --- | --- | --- | 
 |  width  |  float  | The camera frustum's width\. | 
 
-### SetFrustumHeight<a name="lua-api-camerarequestbus-setfrustumheight"></a>
+### SetFrustumHeight {#lua-api-camerarequestbus-setfrustumheight}
 
 Sets the camera frustum's height\.
 
@@ -3255,7 +3255,7 @@ void SetFrustumHeight(float height)
 | --- | --- | --- | 
 |  height  |  float  | The camera frustum's height\. | 
 
-### MakeActiveView<a name="lua-api-camerarequestbus-makeactiveview"></a>
+### MakeActiveView {#lua-api-camerarequestbus-makeactiveview}
 
 Makes the camera the active view\.
 
@@ -3265,11 +3265,11 @@ Makes the camera the active view\.
 void MakeActiveView()
 ```
 
-## HttpClientComponentNotificationBus<a name="lua-api-httpclientcomponentnotificationbus"></a>
+## HttpClientComponentNotificationBus {#lua-api-httpclientcomponentnotificationbus}
 
 Event handler for Http requests\.
 
-### OnHttpRequestSuccess<a name="lua-api-httpclientcomponentnotificationbus-onhttprequestsuccess"></a>
+### OnHttpRequestSuccess {#lua-api-httpclientcomponentnotificationbus-onhttprequestsuccess}
 
 Notifies when an HTTP request is successful\.
 
@@ -3287,7 +3287,7 @@ void OnHttpRequestSuccess(int responseCode, AZStd::string responseBody)
 |  responseCode  |  int  | The response code\. | 
 |  responseBody  |  AZStd::string  | The body of the response\. | 
 
-### OnHttpRequestFailure<a name="lua-api-httpclientcomponentnotificationbus-onhttprequestfailure"></a>
+### OnHttpRequestFailure {#lua-api-httpclientcomponentnotificationbus-onhttprequestfailure}
 
 Sent when an HTTP request failed\.
 
@@ -3304,11 +3304,11 @@ void OnHttpRequestFailure(int responseCode)
 | --- | --- | --- | 
 |  responseCode  |  int  | The response code\. | 
 
-## HttpClientComponentRequestBus<a name="lua-api-httpclientcomponentrequestbus"></a>
+## HttpClientComponentRequestBus {#lua-api-httpclientcomponentrequestbus}
 
 Provides services to make HTTP requests\.
 
-### MakeHttpRequest<a name="lua-api-httpclientcomponentrequestbus-makehttprequest"></a>
+### MakeHttpRequest {#lua-api-httpclientcomponentrequestbus-makehttprequest}
 
 Makes an HTTP request\.
 
@@ -3327,11 +3327,11 @@ void MakeHttpRequest(AZStd::string url, AZStd::string method, AZStd::string json
 |  method  |  AZStd::string  | The HTTP request method\. | 
 |  jsonBody  |  AZStd::string  | The JSON body of the request\. | 
 
-## HMDDeviceRequestBus<a name="lua-api-hmddevicerequestbus"></a>
+## HMDDeviceRequestBus {#lua-api-hmddevicerequestbus}
 
 HMD device bus used to communicate with the rest of the engine\. Every device supported by the engine lives in its own Gem and supports this bus\. A device wraps the underlying SDK into a single object for easy use by the rest of the system\. Every device created should register with the EBus in order to be picked up as a usable device during initialization by the EBus function `BusConnect`\(\)\.
 
-### GetTrackingState<a name="lua-api-hmddevicerequestbus-gettrackingstate"></a>
+### GetTrackingState {#lua-api-hmddevicerequestbus-gettrackingstate}
 
 Gets the most recent HMD tracking state\.
 
@@ -3347,7 +3347,7 @@ TrackingState* GetTrackingState()
 
 **Default Return:** `nullptr`
 
-### RecenterPose<a name="lua-api-hmddevicerequestbus-recenterpose"></a>
+### RecenterPose {#lua-api-hmddevicerequestbus-recenterpose}
 
 Center the current pose for the HMD based on the current direction in which the viewer is looking\.
 
@@ -3357,7 +3357,7 @@ Center the current pose for the HMD based on the current direction in which the 
 void RecenterPose()
 ```
 
-### SetTrackingLevel<a name="lua-api-hmddevicerequestbus-settrackinglevel"></a>
+### SetTrackingLevel {#lua-api-hmddevicerequestbus-settrackinglevel}
 
 Set the current tracking level of the HMD\. Supported tracking levels are defined in struct `TrackingLevel`\.
 
@@ -3374,9 +3374,9 @@ void SetTrackingLevel(const AZ::VR::HMDTrackingLevel level)
 | --- | --- | --- | 
 |  level  |  AZ::VR::HMDTrackingLevel  |  The tracking level to use with the current HMD\. Possible values: `kHead` \- The sensor reads as if the player is standing\. `kFloor` \- The sensor reads as if the player is seated or on the floor\.  | 
 
-### OutputHMDInfo<a name="lua-api-hmddevicerequestbus-outputhmdinfo"></a>
+### OutputHMDInfo {#lua-api-hmddevicerequestbus-outputhmdinfo}
 
-Outputs the information about the currently connected HMD \(contained in the [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo) object\) to the console and log file\.
+Outputs the information about the currently connected HMD \(contained in the [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr#lua-scripting-ref-vr-struct-hmddeviceinfo) object\) to the console and log file\.
 
 **Syntax**
 
@@ -3384,7 +3384,7 @@ Outputs the information about the currently connected HMD \(contained in the [st
 void OutputHMDInfo()
 ```
 
-### GetDeviceInfo<a name="lua-api-hmddevicerequestbus-getdeviceinfo"></a>
+### GetDeviceInfo {#lua-api-hmddevicerequestbus-getdeviceinfo}
 
 Get the device info object for this particular HMD\.
 
@@ -3394,13 +3394,13 @@ Get the device info object for this particular HMD\.
 HMDDeviceInfo* GetDeviceInfo()
 ```
 
-**Returns:** A pointer to the current HMD's [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-hmddeviceinfo)\.
+**Returns:** A pointer to the current HMD's [struct HMDDeviceInfo](/docs/userguide/scripting/lua/ref-vr#lua-scripting-ref-vr-struct-hmddeviceinfo)\.
 
 **Return Type:** `HMDDeviceInfo*`
 
 **Default Return:** `nullptr`
 
-### IsInitialized<a name="lua-api-hmddevicerequestbus-isinitialized"></a>
+### IsInitialized {#lua-api-hmddevicerequestbus-isinitialized}
 
 Gets whether or not the HMD has been initialized\. The HMD has been initialized when it has fully established an interface with its required SDK and is ready to be used\.
 
@@ -3416,13 +3416,13 @@ bool IsInitialized()
 
 **Default Return:** `false`
 
-## ControllerRequestBus<a name="lua-api-controllerrequestbus"></a>
+## ControllerRequestBus {#lua-api-controllerrequestbus}
 
 Provides information about HMD device controllers\.
 
-### GetTrackingState<a name="lua-api-controllerrequestbusgettrackingstate"></a>
+### GetTrackingState {#lua-api-controllerrequestbusgettrackingstate}
 
-Returns a `TrackingState` object that contains tracking info about a connected controller\. For more information, see [struct TrackingState](/docs/userguide/scripting/lua/ref-vr.md#lua-scripting-ref-vr-struct-trackingstate)\.
+Returns a `TrackingState` object that contains tracking info about a connected controller\. For more information, see [struct TrackingState](/docs/userguide/scripting/lua/ref-vr#lua-scripting-ref-vr-struct-trackingstate)\.
 
 **Syntax**
 
@@ -3443,7 +3443,7 @@ TrackingState* GetTrackingState(ControllerIndex controllerIndex)
 
 **Default Return:** `nullptr`
 
-### IsConnected<a name="lua-api-controllerrequestbus-isconnected"></a>
+### IsConnected {#lua-api-controllerrequestbus-isconnected}
 
 Returns whether the specified controller is connected\.
 
@@ -3466,11 +3466,11 @@ bool IsConnected(ControllerIndex controllerIndex)
 
 **Default Return:** `false`
 
-## VideoPlaybackRequestBus<a name="lua-api-videoplaybackrequestbus"></a>
+## VideoPlaybackRequestBus {#lua-api-videoplaybackrequestbus}
 
 Provides access to video playback services\.
 
-### Play<a name="lua-api-videoplaybackrequestbus-play"></a>
+### Play {#lua-api-videoplaybackrequestbus-play}
 
 Start or resume playing a movie that is attached to the current entity\.
 
@@ -3480,7 +3480,7 @@ Start or resume playing a movie that is attached to the current entity\.
 void Play()
 ```
 
-### Pause<a name="lua-api-videoplaybackrequestbus-pause"></a>
+### Pause {#lua-api-videoplaybackrequestbus-pause}
 
 Pause a movie that is attached to the current entity\.
 
@@ -3490,7 +3490,7 @@ Pause a movie that is attached to the current entity\.
 void Pause()
 ```
 
-### Stop<a name="lua-api-videoplaybackrequestbus-stop"></a>
+### Stop {#lua-api-videoplaybackrequestbus-stop}
 
 Stop playing a movie that is attached to the current entity\.
 
@@ -3500,7 +3500,7 @@ Stop playing a movie that is attached to the current entity\.
 void Stop()
 ```
 
-### EnableLooping<a name="lua-api-videoplaybackrequestbus-enablelooping"></a>
+### EnableLooping {#lua-api-videoplaybackrequestbus-enablelooping}
 
 Set whether or not the movie attached to the current entity loops\.
 
@@ -3517,7 +3517,7 @@ void EnableLooping(bool enable)
 | --- | --- | --- | 
 |  enable  |  bool  | Specify true to loop; false to not loop\. | 
 
-### IsPlaying<a name="lua-api-videoplaybackrequestbus-isplaying"></a>
+### IsPlaying {#lua-api-videoplaybackrequestbus-isplaying}
 
 Returns whether or not the video is currently playing
 
@@ -3533,7 +3533,7 @@ bool IsPlaying()
 
 **Default Return:** `false`
 
-### SetPlaybackSpeed<a name="lua-api-videoplaybackrequestbus-setplaybackspeed"></a>
+### SetPlaybackSpeed {#lua-api-videoplaybackrequestbus-setplaybackspeed}
 
 Sets the playback speed based on a factor of the current playback speed\.
 
@@ -3550,11 +3550,11 @@ void SetPlaybackSpeed(float speedFactor)
 | --- | --- | --- | 
 |  speedFactor  |  float  | The speed modification factor to apply to playback speed\. For example, specify 0\.5f to play at half speed or 2\.0f to play at double speed\. | 
 
-## VideoPlaybackNotificationBus<a name="lua-api-videoplaybacknotificationbus"></a>
+## VideoPlaybackNotificationBus {#lua-api-videoplaybacknotificationbus}
 
 This bus contains event handlers for video playback services\.
 
-### OnPlaybackStarted<a name="lua-api-videoplaybacknotificationbus-onplaybackstarted"></a>
+### OnPlaybackStarted {#lua-api-videoplaybacknotificationbus-onplaybackstarted}
 
 Event that fires when the movie starts playback\.
 
@@ -3564,7 +3564,7 @@ Event that fires when the movie starts playback\.
 void OnPlaybackStarted()
 ```
 
-### OnPlaybackPaused<a name="lua-api-videoplaybacknotificationbus-onplaybackpaused"></a>
+### OnPlaybackPaused {#lua-api-videoplaybacknotificationbus-onplaybackpaused}
 
 Event that fires when the movie pauses playback\.
 
@@ -3574,7 +3574,7 @@ Event that fires when the movie pauses playback\.
 void OnPlaybackPaused()
 ```
 
-### OnPlaybackStopped<a name="lua-api-videoplaybacknotificationbus-onplaybackstopped"></a>
+### OnPlaybackStopped {#lua-api-videoplaybacknotificationbus-onplaybackstopped}
 
 Event that fires when the movie stops playback\.
 
@@ -3584,7 +3584,7 @@ Event that fires when the movie stops playback\.
 void OnPlaybackStopped()
 ```
 
-### OnPlaybackFinished<a name="lua-api-videoplaybacknotificationbus-onplaybackfinished"></a>
+### OnPlaybackFinished {#lua-api-videoplaybacknotificationbus-onplaybackfinished}
 
 Event that fires when the movie completes playback\.
 

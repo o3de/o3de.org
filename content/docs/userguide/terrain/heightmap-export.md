@@ -2,7 +2,7 @@
 description: ' Export a &ALY; terrain heightmap to one of eight popular image formats. '
 title: Exporting a Terrain Heightmap
 ---
-# Exporting a Terrain Heightmap<a name="terrain-heightmap-export"></a>
+# Exporting a Terrain Heightmap {#terrain-heightmap-export}
 
 You can export a heightmap file that was created in the Terrain Editor to the following file formats:
 + `.asc` \(32\-bit\)

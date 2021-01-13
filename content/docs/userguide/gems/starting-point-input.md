@@ -3,7 +3,7 @@ description: ' Use the Starting Point Input gem to manage game input such as key
   and controller in &ALYlong;. '
 title: Starting Point Input Gem
 ---
-# Starting Point Input Gem<a name="gems-system-starting-point-input"></a>
+# Starting Point Input Gem {#gems-system-starting-point-input}
 
 The Starting Point Input gem works with the [Input Management Framework](/docs/userguide/gems/builtin/input.md) gem to map low\-level input events to high\-level gameplay actions\. For example, you can specify in your game that pressing the keyboard spacebar results in a gameplay action, such as jump\. 
 

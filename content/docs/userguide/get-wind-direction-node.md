@@ -3,7 +3,7 @@ description: ' Use the Get Wind Direction node in the &ALYlong; &script-canvas; 
   to return the global wind direction. '
 title: Get Wind Direction
 ---
-# Get Wind Direction<a name="get-wind-direction-node"></a>
+# Get Wind Direction {#get-wind-direction-node}
 
 Returns the direction of the global wind\. The length of the **Wind Direction** vector indicates the strength of the wind\.
 
@@ -13,7 +13,7 @@ Returns the direction of the global wind\. The length of the **Wind Direction** 
 
 ![\[getwinddirection, winddirectionnode, getwinddirectionnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-wind-direction-node.png)
 
-## Inputs<a name="get-wind-direction-node-input"></a>
+## Inputs {#get-wind-direction-node-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the direction of the global wind\. The length of the **Wind Direction** 
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-wind-direction-node-output"></a>
+## Outputs {#get-wind-direction-node-output}
 
 
 ****  

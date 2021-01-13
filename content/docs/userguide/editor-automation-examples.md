@@ -3,7 +3,7 @@ description: ' Some useful examples for the Python Editor Bindings gem, used to 
   actions in the &ly-editor;. '
 title: Python Editor Bindings gem examples
 ---
-# Python Editor Bindings gem examples<a name="editor-automation-examples"></a>
+# Python Editor Bindings gem examples {#editor-automation-examples}
 
  The Python Editor Bindings are driven by an API that connects through to the Editor's C\+\+ implementation, using the Lumberyard event bus \(Ebus\) to send messages between scripts and the editor\. This reference covers the use of the editor bindings API to perform tasks like interacting with components, entities, and and properties\. 
 
@@ -24,7 +24,7 @@ title: Python Editor Bindings gem examples
   + [Property containers](#editor-automation-examples-properties-editing-containers)
 + [Asset management](#editor-automation-examples-assets)
 
-## Level management<a name="editor-automation-examples-levels"></a>
+## Level management {#editor-automation-examples-levels}
 
 Use these functions to load, create, and save levels\. In order to use other editor binding APIs, a level needs to be loaded in the editor\.
 
@@ -45,7 +45,7 @@ azlmbr.legacy.general.create_level_no_prompt(levelName, resolution, unitSize,bUs
 azlmbr.legacy.general.save_level()
 ```
 
-## Editor timing<a name="editor-automation-examples-timing"></a>
+## Editor timing {#editor-automation-examples-timing}
 
  Occasionally a script will need to introduce a delay in actions to be performed in the editor while another action completes, such as loading a level\. Rather than use the built\-in Python delay methods, use these editor binding APIs\. 
 
@@ -60,11 +60,11 @@ azlmbr.legacy.general.is_idle_enabled()
 azlmbr.legacy.general.idle_wait(floatSeconds)
 ```
 
-## Entitites<a name="editor-automation-examples-entities"></a>
+## Entitites {#editor-automation-examples-entities}
 
  The API allows you to add and remove entities to the root entity of a level, retrieve and compare entity IDs, and search for entities\. 
 
-### Entity IDs<a name="editor-automation-examples-entities-ids"></a>
+### Entity IDs {#editor-automation-examples-entities-ids}
 
  The `azlmbr.entity.EntityId` class is used to refer to entity instances, properties, and the entity tree\. 
 
@@ -79,7 +79,7 @@ entityId.ToString()
 entityId.Equal(otherEntityId)
 ```
 
-### Entity operations and Ebus interfaces<a name="editor-automation-examples-entities-ebus"></a>
+### Entity operations and Ebus interfaces {#editor-automation-examples-entities-ebus}
 
  There are three main EBus interfaces used to manage Editor entities: 
 +  `azlmbr.editor.ToolsApplicationRequestBus`: Used to create and delete Editor entities 
@@ -111,7 +111,7 @@ azlmbr.editor.EditorEntityAPIBus(azlmbr.bus.Event, 'SetName', entityId, "MyName"
 getId = azlmbr.editor.EditorEntityInfoRequestBus(azlmbr.bus.Event, 'GetParent', childId);
 ```
 
-### Entity search<a name="editor-automation-examples-entities-search"></a>
+### Entity search {#editor-automation-examples-entities-search}
 
  The entity search API is based around setting up filters using `azlmbr.entity.SearchFilter` to set up the search parameters, and then conduct the search over the Ebus represented by `azlmbr.entity.SearchBus`\. 
 
@@ -188,7 +188,7 @@ searchFilter.names_are_root_based = True # search from roots for these names
 entityIdList = entity.SearchBus(bus.Broadcast, 'SearchEntities', searchFilter)
 ```
 
-### Entity notifications<a name="editor-automation-examples-entities-notifications"></a>
+### Entity notifications {#editor-automation-examples-entities-notifications}
 
  You can capture editor entity events using the `EditorEntityContextNotificationBus` handler\. Callbacks can be assigned to entity management event names: `OnEditorEntityCreated` and `OnEditorEntityDeleted` where the callback will be called with a tuple of data coming from the events\. 
 
@@ -231,14 +231,14 @@ handler.add_callback('OnEditorEntityDeleted', onEditorEntityDeleted)
 editor.ToolsApplicationRequestBus(bus.Broadcast, 'CreateNewEntity', EntityId())
 ```
 
-## Component management<a name="editor-automation-examples-components"></a>
+## Component management {#editor-automation-examples-components}
 
  The component system is used to add and removes components to existing entities with the `azlmbr.editor.EditorComponentAPIBus` bus\. 
 
 **Note**  
  Components are not active when in editing mode\. They only become active when the game is being played within the editor\. 
 
-### Component type events<a name="editor-autiomation-api-reference-components-type"></a>
+### Component type events {#editor-autiomation-api-reference-components-type}
 
  The API requires IDs to create, use, or control component instances\. To get a component IDs, use the following Ebus events: 
 
@@ -276,7 +276,7 @@ typeIdList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTy
 typeNameList = azlmbr.editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTypeNames', typeIdsList)
 ```
 
-### Component usage events<a name="editor-atuomation-api-reference-components-usage"></a>
+### Component usage events {#editor-atuomation-api-reference-components-usage}
 
  The API can add components to an existing entity, test for component existence, counts components by type, and enumerate the components on an entity\. 
 
@@ -358,7 +358,7 @@ if (meshMultipleComponentOutcome.IsSuccess()):
 firstMeshComponentId = meshMultipleComponentOutcome.GetValue()[0]
 ```
 
-### Component control events<a name="editor-atuomation-api-reference-components-control"></a>
+### Component control events {#editor-atuomation-api-reference-components-control}
 
  The API offers events to validate, enable or disable, and remove components\. 
 
@@ -422,7 +422,7 @@ if (didRemove is True):
     print("Mesh component has been removed.")
 ```
 
-## Component property events<a name="editor-atuomation-api-reference-components-properties"></a>
+## Component property events {#editor-atuomation-api-reference-components-properties}
 
  Component properties can be accessed and modified using a string that indicates a direct path to a property value\. The pipe character `|` is used as the separator between the property path elements\. 
 
@@ -479,7 +479,7 @@ for path in propertyPaths:
     print ('ComponentId path has {}'.format(path))
 ```
 
-## Editing properties<a name="editor-automation-examples-properties-editing"></a>
+## Editing properties {#editor-automation-examples-properties-editing}
 
 To access this API a script needs access to a property tree editor instance\. This object accesses the properties on a component, in the style of the property editing view inside of the editor\. Properties are accessed starting from the root of the component, and follow the chain of labels until a property value is encountered\. 
 
@@ -532,7 +532,7 @@ if(pteObj.IsSuccess()):
 #            Retrieves an item value from a container.
 ```
 
-### Property containers<a name="editor-automation-examples-properties-editing-containers"></a>
+### Property containers {#editor-automation-examples-properties-editing-containers}
 
  The Editor automaton API exposes a number of special methods to handle container component property types\. If the property tree editor points to a component that has container properties these methods give access to the items in the container\. 
 
@@ -587,7 +587,7 @@ if(outcome.IsSuccess()):
    print('removed an item')
 ```
 
-## Asset management<a name="editor-automation-examples-assets"></a>
+## Asset management {#editor-automation-examples-assets}
 
  The editor automation API exposes a few methods to manage assets via the `azlmbr.asset.AssetCatalogRequestBus` bus\. 
 

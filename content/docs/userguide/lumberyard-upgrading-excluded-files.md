@@ -2,7 +2,7 @@
 description: ' File types to exclude when upgrading &ALY; with source control. '
 title: Files to Exclude When Upgrading &ALY;
 ---
-# Files to Exclude When Upgrading Lumberyard<a name="lumberyard-upgrading-excluded-files"></a>
+# Files to Exclude When Upgrading Lumberyard {#lumberyard-upgrading-excluded-files}
 
 When adding Lumberyard to source control, there are various files that you should exclude because they are generated, temporary, or programming\-specific\.
 

@@ -2,7 +2,7 @@
 description: ' Use dynamic slices in &ALYlong;. '
 title: Working with Dynamic Slices
 ---
-# Working with Dynamic Slices<a name="dynamic-slices-what-is"></a>
+# Working with Dynamic Slices {#dynamic-slices-what-is}
 
 Slices are a powerful tool for organizing entity data in your worlds\. In the editor, you can choose to cascade slices and organize entity data in any desired granularity and still receive the benefits of data sharing and inheritance throughout the hierarchy\. A level\-based game, for example, implements each level as its own slice asset that contains instances of many other slices\. These slices can potentially cascade many levels deep\. You can choose to create slices from other slices and inherit only the elements that you want\. 
 
@@ -26,7 +26,7 @@ You can choose to generate dynamic slices at whatever granularity is appropriate
 
   Asset Processor deletes the `.dynamicslice` file from the asset cache\.
 
-## Instantiating Dynamic Slices<a name="dynamic-slices-how-to-instantiate"></a>
+## Instantiating Dynamic Slices {#dynamic-slices-how-to-instantiate}
 
 You can use the [Spawner](/docs/userguide/components/spawner.md) component to instantiate dynamic slices\. 
 
@@ -44,6 +44,6 @@ You can use the [Spawner](/docs/userguide/components/spawner.md) component to in
 
    For more information about working with slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
-## Additional Links<a name="dynamic-slices-additional-links"></a>
+## Additional Links {#dynamic-slices-additional-links}
 + [ Amazon Lumberyard Getting Started series \- Spawning dynamic slices \(video\)](https://www.youtube.com/watch?v=ERL4sqSXpMA&feature=youtu.be&t=1142)
 + [ Spawning and Shooting a Projectile with Legacy Physics and Dynamic Slices with Lumberyard Script Canvas \(video\)](https://www.youtube.com/watch?v=u_OwrFTLQfY&feature=youtu.be&t=320)

@@ -3,7 +3,7 @@ description: ' Learn how to design and engineer &cloud; deployments, resource gr
   and cloud gems to create cloud connected features for your game. '
 title: '&cloud; Gameplay Design and Engineering Guide'
 ---
-# Cloud Canvas Gameplay Design and Engineering Guide<a name="cloud-canvas-game-play-design-guide-intro"></a>
+# Cloud Canvas Gameplay Design and Engineering Guide {#cloud-canvas-game-play-design-guide-intro}
 
 You can use Cloud Canvas's deployments, resource groups, and cloud gems \(provided by yourself or others\) to design and engineer the cloud connected features of your game\.
 

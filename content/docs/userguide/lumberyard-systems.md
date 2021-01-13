@@ -2,7 +2,7 @@
 description: ' This section describes the major &ALY; systems. '
 title: '&ALY; Systems'
 ---
-# Lumberyard Systems<a name="lumberyard-systems"></a>
+# Lumberyard Systems {#lumberyard-systems}
 
 Lumberyard consists of the following major systems that help you develop levels within the editor:
 + [Employing artificial intelligence](/docs/userguide/ai/intro.md)

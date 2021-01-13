@@ -2,11 +2,11 @@
 description: ' Add your existing AWS resources to a &cloud; resource group. '
 title: ' Importing Resource Definitions into &cloud;'
 ---
-# Importing Resource Definitions into Cloud Canvas<a name="cloud-canvas-ui-rm-resource-importer"></a>
+# Importing Resource Definitions into Cloud Canvas {#cloud-canvas-ui-rm-resource-importer}
 
 You can use the Cloud Canvas resource importer to add definitions of existing AWS resources to a Cloud Canvas resource group\. You can add resources by using the Cloud Canvas Resource Manager in Lumberyard Editor or at a command line prompt\.
 
-## Importing Resources using Lumberyard Editor<a name="cloud-canvas-ui-rm-resource-importer-ly-editor"></a>
+## Importing Resources using Lumberyard Editor {#cloud-canvas-ui-rm-resource-importer-ly-editor}
 
 In Lumberyard Editor, you can import a resource by specifying an [Amazon Resource Name \(ARN\)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) or by choosing from a list\.
 
@@ -56,11 +56,11 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 
 1. Click **X** to close the **Import from list dialog** box\. The resources that you imported are listed in the details pane of Cloud Canvas Resource Manager\.
 
-## Importing Resource Definitions Using the Command Line<a name="cloud-canvas-ui-rm-resource-importer-command-line"></a>
+## Importing Resource Definitions Using the Command Line {#cloud-canvas-ui-rm-resource-importer-command-line}
 
-To list and import resources using the Cloud Canvas command line, see [resource\-importer list\-importable\-resources](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-importer-list-importable-resources) and [resource\-importer import\-resource](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-resource-importer-import-resource)\.
+To list and import resources using the Cloud Canvas command line, see [resource\-importer list\-importable\-resources](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-resource-importer-list-importable-resources) and [resource\-importer import\-resource](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-resource-importer-import-resource)\.
 
-## Understanding Resource Definitions<a name="cloud-canvas-ui-rm-resource-importer-resource-definitions-caveat"></a>
+## Understanding Resource Definitions {#cloud-canvas-ui-rm-resource-importer-resource-definitions-caveat}
 
 When you use the Cloud Canvas resource importer to import the definition of a resource, it is important to understand that you are importing the resource's definition, not the resource itself\. For example, suppose you use the AWS console to create a high score table in DynamoDB called Table A\. You create a game client that uploads scores, and send out the client to your players\. Table A begins to populate with data from the players of your game\.
 
@@ -70,7 +70,7 @@ When you create a deployment with the imported resource, the deployment contains
 
 
 
-## Automatically Imported Resource Definitions<a name="cloud-canvas-ui-rm-resource-importer-automatically-imported"></a>
+## Automatically Imported Resource Definitions {#cloud-canvas-ui-rm-resource-importer-automatically-imported}
 
 Some of the existing resources that you select might be related to other resources\. For example, Lambda functions can respond to events from the selected triggers\. You can use event notifications from an Amazon S3 bucket to send alerts or trigger workflows\. Cloud Canvas imports the related resources for you automatically\.
 
@@ -86,11 +86,11 @@ Cloud Canvas uses the following naming conventions for automatically imported re
 |  Lambda function policy resource  |  <lambda\_function\_name> \+ "Permission"  |  LambdaFunctionPermission  | 
 |  DynamoDB table Lambda function event source  |  <DynamoDB\_table\_name> \+ "EventSource"  |  DynamoTableEventSource  | 
 
-## Resources Supported for Import<a name="cloud-canvas-ui-rm-resource-importer-resources-supported-for-import"></a>
+## Resources Supported for Import {#cloud-canvas-ui-rm-resource-importer-resources-supported-for-import}
 
 The following sections list the resource attributes and related resources that Cloud Canvas imports for each supported AWS service\.
 
-### Dynamo DB Tables<a name="w31aac29c28c25b7c26c13b5"></a>
+### Dynamo DB Tables {#w31aac29c28c25b7c26c13b5}
 
 For DynamoDB tables, Cloud Canvas imports the following resource attributes:
 + `AttributeDefinitions`
@@ -100,7 +100,7 @@ For DynamoDB tables, Cloud Canvas imports the following resource attributes:
 + `ProvisionedThroughput`
 + `StreamSpecification`
 
-### Amazon S3 Buckets<a name="w31aac29c28c25b7c26c13b7"></a>
+### Amazon S3 Buckets {#w31aac29c28c25b7c26c13b7}
 
 For Amazon S3 buckets, Cloud Canvas imports the following resource attributes:
 + `CorsConfiguration`
@@ -115,7 +115,7 @@ For Amazon S3 buckets, Cloud Canvas also imports the following related resources
 + Amazon SQS queues
 + Amazon SNS topics
 
-### Lambda Functions<a name="w31aac29c28c25b7c26c13b9"></a>
+### Lambda Functions {#w31aac29c28c25b7c26c13b9}
 
 For Lambda functions, Cloud Canvas imports the following resource attributes: 
 + `Code`
@@ -133,7 +133,7 @@ For Lambda functions, Cloud Canvas also imports the following related resources:
 + DynamoDB tables 
 + Event source mappings 
 
-### Amazon SNS Topics<a name="w31aac29c28c25b7c26c13c11"></a>
+### Amazon SNS Topics {#w31aac29c28c25b7c26c13c11}
 
 For Amazon SNS topics, Cloud Canvas imports the following resource attributes: 
 + `DisplayName`
@@ -141,7 +141,7 @@ For Amazon SNS topics, Cloud Canvas imports the following resource attributes:
 
 For Amazon SNS topics, Cloud Canvas also imports any Lambda functions that are related resources\. 
 
-### SQS Queues<a name="w31aac29c28c25b7c26c13c13"></a>
+### SQS Queues {#w31aac29c28c25b7c26c13c13}
 
 For SQS queues, Cloud Canvas imports the following resource attributes: 
 + `DelaySeconds`

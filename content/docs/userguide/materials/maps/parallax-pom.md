@@ -2,7 +2,7 @@
 description: ' Apply parallax occlusion mapping (POM) in &ALYlong;. '
 title: Applying Parallax Occlusion Mapping (POM)
 ---
-# Applying Parallax Occlusion Mapping \(POM\)<a name="mat-maps-parallax-pom"></a>
+# Applying Parallax Occlusion Mapping \(POM\) {#mat-maps-parallax-pom}
 
 To apply POM, complete the following procedure\.
 

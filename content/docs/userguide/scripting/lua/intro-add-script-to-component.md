@@ -3,7 +3,7 @@ description: ' Use the Lua Script component to add script functionality to your 
   entities in &ALYlong;. '
 title: Adding Lua Scripts to Component Entities
 ---
-# Adding Lua Scripts to Component Entities<a name="lua-scripting-intro-add-script-to-component"></a>
+# Adding Lua Scripts to Component Entities {#lua-scripting-intro-add-script-to-component}
 
 Lumberyard makes it easy for you to add script functionality to your game entities by using the **Lua Script** component\. The following steps show you how to do this in Lumberyard Editor\.
 

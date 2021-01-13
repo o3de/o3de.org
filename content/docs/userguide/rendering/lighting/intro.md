@@ -3,7 +3,7 @@ description: ' Use &ALY;''s physically based lighting and shading models to ligh
   your environment. '
 title: Environment Lighting
 ---
-# Environment Lighting<a name="enviro-lighting-intro"></a>
+# Environment Lighting {#enviro-lighting-intro}
 
 Lumberyard uses physically based lighting and shading models to implement global illumination and environment lighting\.
 

@@ -3,7 +3,7 @@ description: ' Use the Blend Two node in &ALYlong; &animation-editor; to blend t
   nodes that do not need additive blending. '
 title: Blend Two Node
 ---
-# Blend Two Node<a name="animation-editor-blending-blendtwo"></a>
+# Blend Two Node {#animation-editor-blending-blendtwo}
 
 With the **Blend Two** node, you can blend between two input poses based on a weight value\. For example, the **Blend Two** node can blend smoothly between a walk and a run based on the character's speed\.
 
@@ -33,9 +33,9 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
      You can use a **Float Constant** node, for example, to specify a float value between `0.0` and `1.0`\. A value of `0.0` means 100% of **Pose 1** and 0% of **Pose 2**\. A value of `0.6` weights 40% of **Pose 1** and 60% of **Pose 2**\. Other nodes that can specify **Weight** include the **Parameter** node, the **Smoothing** node, and so on\.
    + **Output Pose** – The result of the pose blending\.
 
-## Blend Two Node Attributes<a name="animation-editor-blending-blendtwo-attributes"></a>
+## Blend Two Node Attributes {#animation-editor-blending-blendtwo-attributes}
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses#animation-editor-blending-attributes)\.
 
 The **Extraction Mode** for the **Blend Two** node is calculated as follows\.
 + `S` = Source transform delta

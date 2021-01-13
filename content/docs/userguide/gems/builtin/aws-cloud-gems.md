@@ -2,11 +2,11 @@
 description: ' Learn about using &cloud; cloud gems. '
 title: '&cloud; Cloud Gems'
 ---
-# Cloud Canvas Cloud Gems<a name="gems-system-gem-aws-cloud-gems"></a>
+# Cloud Canvas Cloud Gems {#gems-system-gem-aws-cloud-gems}
 
 A Cloud Canvas cloud gem includes everything required for you to include AWS cloud\-connected functionality in your project\. A cloud gem is a package of specific cloud\-connected functionality, assets and AWS resource definitions\.
 
-## Cloud Gems Included with Lumberyard<a name="gems-system-gem-aws-cloud-gems-in-lumberyard"></a>
+## Cloud Gems Included with Lumberyard {#gems-system-gem-aws-cloud-gems-in-lumberyard}
 
 Lumberyard includes the following cloud gems\. You can enable them in a project by using the [Lumberyard Project Configurator](/docs/userguide/configurator/intro.md) tool\. For more information, visit the following links\.
 + [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md) – Allows Lumberyard `.pak` files that contain new and updated game assets to be uploaded to the cloud for subsequent automatic download to the game client\.
@@ -17,7 +17,7 @@ Lumberyard includes the following cloud gems\. You can enable them in a project 
 + [Speech Recognition Cloud Gem](/docs/userguide/gems/cloud-canvas/speech-recognition-intro.md) – Adds speech recognition and natural language processing to your Lumberyard game using Amazon Lex service\.
 + [Text to Speech Cloud Gem \(Using Amazon Polly\)](/docs/userguide/gems/cloud-canvas/text-to-speech-intro.md) – Turns text into lifelike speech using the Amazon Polly text\-to\-speech service, which offers dozens of lifelike voices in a variety of languages\. Also creates lip synchronization from the text that you provide\.
 
-## Cloud Gem Portal<a name="gems-system-gem-aws-cloud-gems-portal"></a>
+## Cloud Gem Portal {#gems-system-gem-aws-cloud-gems-portal}
 
 
 ****  

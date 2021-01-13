@@ -3,7 +3,7 @@ description: ' Create plants, trees, bushes, and other foliage with SpeedTree 8 
   &ALYlong;. '
 title: Using SpeedTree 8 for &ALY;
 ---
-# Using SpeedTree 8 for Lumberyard<a name="vegetation-speedtree-lumberyard-intro"></a>
+# Using SpeedTree 8 for Lumberyard {#vegetation-speedtree-lumberyard-intro}
 
 SpeedTree 8 for Lumberyard is a procedural vegetation modeling program that takes advantage of the native Lumberyard vegetation tools\. You can use SpeedTree 8 for Lumberyard to create and quickly iterate on trees, bushes, exotic alien foliage species, and other plant life\.
 

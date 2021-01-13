@@ -4,7 +4,7 @@ description: ' View and update the soft naming conventions for assets such as Lo
   3ds Max or Maya. '
 title: FBX soft naming conventions
 ---
-# FBX soft naming conventions<a name="fbx-settings-soft-naming"></a>
+# FBX soft naming conventions {#fbx-settings-soft-naming}
 
 You can use soft naming conventions when authoring assets in your content creation tools, such as Autodesk 3ds Max or Maya\. Soft naming conventions are prefixes or suffixes that you add to either nodes in your scene or the `.fbx` file name\. In Lumberyard, **Asset Processor** recognizes these soft naming conventions and then applies an action based on the specified soft naming convention\. 
 
@@ -32,7 +32,7 @@ The following table lists current soft naming conventions and the actions that a
 | \_ignore | Apply suffix to node name\. | Graphics and CryPhysics | jackSkeleton\_ignore | Asset Processor ignores and doesn't process nodes with the \_ignore suffix\. | 
 | \_anim | Apply suffix to file name\. | CryAnimation | jackMoves\_anim\.fbx | For \.fbx file names with the \_anim suffix, Asset Processor processes only the animations in the \.fbx file\. | 
 
-## Viewing soft naming conventions<a name="viewing-the-fbx-soft-naming-convention"></a>
+## Viewing soft naming conventions {#viewing-the-fbx-soft-naming-convention}
 
 You can use the System Entity Editor to view the current soft naming conventions for your project\.
 
@@ -45,7 +45,7 @@ You can use the System Entity Editor to view the current soft naming conventions
 If the **Scene Processing Config** section doesn't appear, choose **Add Component** and then choose **Scene Processing Config**\.   
 ![\[Example System Entity Editor for default soft naming conventions.\]](/images/userguide/fbx/ui-fbx-soft-naming-conventions-1.27.png)
 
-## Soft naming convention parameters<a name="understanding-the-soft-naming-convention-parameters"></a>
+## Soft naming convention parameters {#understanding-the-soft-naming-convention-parameters}
 
 You can use the System Entity Editor to match the files that use the specified pattern for the node name or file name\. The soft naming conventions are matched based on the pattern of the node name or file name that you specify\. 
 
@@ -79,7 +79,7 @@ Select one or more graph types that the virtual type is applied to\.
 **Inclusive**  
 If enabled, the virtual type applies to all graph node types that are selected\. If disabled, the virtual type applies to all graph node types that are unselected\.
 
-## Examples<a name="soft-naming-convention-examples"></a>
+## Examples {#soft-naming-convention-examples}
 
 Using these parameters, you can customize how Asset Processor processes `.fbx` files that you import\. 
 
@@ -107,7 +107,7 @@ You can pair a file name in a source asset file to a predefined Lumberyard virtu
 
 1. When Asset Processor processes your files, it checks for file names with the **anim\_** prefix and that use the **IAnimData** graph type\. If any file names match, Asset Processor assigns them the **Ignore** virtual type\.
 
-## Configuring soft naming conventions<a name="configuring-soft-naming-conventions"></a>
+## Configuring soft naming conventions {#configuring-soft-naming-conventions}
 
 The preconfigured soft naming conventions might not apply to your workflow\. You can change the existing soft naming conventions or create and delete them as needed\.
 
@@ -155,7 +155,7 @@ The preconfigured soft naming conventions might not apply to your workflow\. You
 
 1. Click **Save**\.
 
-## Moving FBX files between projects<a name="moving-fbx-files-between-project"></a>
+## Moving FBX files between projects {#moving-fbx-files-between-project}
 
 Soft naming conventions are project\-specific\. As a result, different projects can process the `.fbx` file differently\. 
 

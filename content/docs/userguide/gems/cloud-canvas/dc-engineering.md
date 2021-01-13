@@ -3,11 +3,11 @@ description: ' Learn about the Dynamic Cloud Gem manifest files, EBus events, an
   service API in &ALYlong;. '
 title: Dynamic Content Engineering Details
 ---
-# Dynamic Content Engineering Details<a name="cloud-canvas-cloud-gem-dc-engineering"></a>
+# Dynamic Content Engineering Details {#cloud-canvas-cloud-gem-dc-engineering}
 
 This topic provides programmatic details about the dynamic content update process\. This includes manifest file information, Dynamic Content Cloud Gem EBus events, and Dynamic Content Cloud Gem service API\. For information about the `lmbr_aws` CLI extensions enabled by the Dynamic Content Cloud Gem, see [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)\.
 
-## Manifest File<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-file"></a>
+## Manifest File {#cloud-canvas-cloud-gem-dc-engineering-manifest-file}
 
 In your Lumberyard installation, the default location of the manifest file is `<GameFolder>/AWS/DynamicContent/DynamicContentManifest.json`\.
 
@@ -42,7 +42,7 @@ The following table describes the properties in the manifest file\.
 | platformType | Windows \(pc\), macOS \(osx\_gl\), or Linux \(linux\)\. An empty value specifies all operating systems\. | 
 | localFolder | Directory to write locally within the outputRoot\. The full output has the format outputRoot/localFolder/keyName\. | 
 
-## EBus Events<a name="cloud-canvas-cloud-gem-dc-engineering-ebus-events"></a>
+## EBus Events {#cloud-canvas-cloud-gem-dc-engineering-ebus-events}
 
 The Dynamic Content Cloud Gem provides an EBus API and includes calls exposed to Lua\. The basic top\-level update request looks like this:
 
@@ -88,7 +88,7 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 `autoDownload (bool)` – Specify `true` to download files automatically\.
 
-### Versioning Support<a name="cloud-canvas-cloud-gem-dc-engineering-ebus-events-versioning"></a>
+### Versioning Support {#cloud-canvas-cloud-gem-dc-engineering-ebus-events-versioning}
 
 **Requesting pak files using versioned manifest**  
 Use the following API calls to request pak files using a manifest when versioning is enabled:
@@ -158,11 +158,11 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 `versionId (char*)` – Version ID of the file\. Uses the current active \(public\) version if not specified\.
 
-### Manifest Received<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-received"></a>
+### Manifest Received {#cloud-canvas-cloud-gem-dc-engineering-manifest-received}
 
 The following EBus events are triggered when a manifest has been received successfully or unsuccessfully\.
 
-#### Success<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-received-success"></a>
+#### Success {#cloud-canvas-cloud-gem-dc-engineering-manifest-received-success}
 
 ```
 EBUS_EVENT(CloudCanvas::DynamicContent::DynamicContentRequestBus, ManifestUpdated, bucketName, bucketPrefix)
@@ -170,13 +170,13 @@ EBUS_EVENT(CloudCanvas::DynamicContent::DynamicContentRequestBus, ManifestUpdate
 
 When all `.pak` files are complete, a `RequestCompleted` event is broadcast\.
 
-#### Failure<a name="cloud-canvas-cloud-gem-dc-engineering-manifest-received-failure"></a>
+#### Failure {#cloud-canvas-cloud-gem-dc-engineering-manifest-received-failure}
 
 ```
 EBUS_EVENT(CloudCanvas::DynamicContent::DynamicContentRequestBus, ManifestFailed, bucketName, bucketPrefix, errorStr)
 ```
 
-## Service API<a name="cloud-canvas-cloud-gem-dc-engineering-serviceapi"></a>
+## Service API {#cloud-canvas-cloud-gem-dc-engineering-serviceapi}
 
 The Dynamic Content Cloud Gem exposes API calls through Amazon API Gateway for both the Cloud Gem Portal and the game client\.
 
@@ -203,11 +203,11 @@ The following table lists the calls for the client\.
 | --- | --- | 
 | /client/content POST | Request presigned URLs for a list of files, based on the provided version IDs\. The active version will be returned if no version ID is specified\. Returns the URLs or a failure message\. | 
 
-## Using Amazon CloudFront<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront"></a>
+## Using Amazon CloudFront {#cloud-canvas-cloud-gem-dc-engineering-cloudfront}
 
 Amazon CloudFront is a fast content delivery network \(CDN\) service that can extend S3 to securely deliver data to customers with low latency and high transfer speeds at an additional cost\. You can take advantage of it when using the DynamicContent gem\. To learn more about Amazon CloudFront, read [the Amazon CloudFront documentation](https://aws.amazon.com/cloudfront/)\.
 
-### Enable the CloudFront extension<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront-enable"></a>
+### Enable the CloudFront extension {#cloud-canvas-cloud-gem-dc-engineering-cloudfront-enable}
 
 To enable the Amazon CloudFront feature, add deployment tag `content-distribution` when you create a deployment with **CloudGemDynamicContent** enabled:
 
@@ -217,7 +217,7 @@ To learn how to create a project stack and deployment stack using CloudCanvas co
 
 Using this deployment tag will add a few more AWS resources to your deployment stack including a Amazon CloudFront distribution and an S3 bucket\. All of the signed URLs from the DynamicContent gem will be created using Amazon CloudFront automatically after the feature is enabled\.
 
-### Create and upload CloudFront key pairs<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront-upload"></a>
+### Create and upload CloudFront key pairs {#cloud-canvas-cloud-gem-dc-engineering-cloudfront-upload}
 
 Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies—your trusted signers—must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
 
@@ -229,7 +229,7 @@ lmbr\_aws dynamic\-content upload\-cf\-key \-\-key\-path \{path\_to\_private\_ke
 
 The expected name format for your private key is `pk-<accountkey>.pem`\. Your key will be securely stored in an S3 bucket called `AccessBucket`\.
 
-### Invalidate files from CloudFront edge caches<a name="cloud-canvas-cloud-gem-dc-engineering-cloudfront-invalidate"></a>
+### Invalidate files from CloudFront edge caches {#cloud-canvas-cloud-gem-dc-engineering-cloudfront-invalidate}
 
 By default, Amazon CloudFront caches a response from Amazon S3 for 24 hours\. If your request lands at an edge location that served the Amazon S3 response within 24 hours, Amazon CloudFront uses the cached response even if you updated the content in Amazon S3\. In this case, you may get outdated content after uploading the same named files\.
 

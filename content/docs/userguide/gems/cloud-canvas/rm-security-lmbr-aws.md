@@ -3,11 +3,11 @@ description: ' Use the lmbr_aws command line tool to assume a role or to manage 
   permissions, and role mappings in &ALYlong;. '
 title: Using the &cloud; Command Line to Manage Roles and Permissions
 ---
-# Using the Cloud Canvas Command Line to Manage Roles and Permissions<a name="cloud-canvas-rm-security-lmbr-aws"></a>
+# Using the Cloud Canvas Command Line to Manage Roles and Permissions {#cloud-canvas-rm-security-lmbr-aws}
 
 You can use the `lmbr_aws` command line tool to manage Cloud Canvas Resource Manager access control\. For example, you can use the tool to assume a role when you run a command, or to manage roles, permissions, and role mappings\.
 
-## Assuming a Role<a name="cloud-canvas-rm-security-lmbr-aws-assuming-a-role"></a>
+## Assuming a Role {#cloud-canvas-rm-security-lmbr-aws-assuming-a-role}
 
 Most `lmbr_aws` commands support an *\-\-assume\-role *<role\-name>** argument\. You can use this argument to assume a role when you run a command\.
 
@@ -18,17 +18,17 @@ You should avoid defining roles that have the same name in both files\. If you d
 
 If you specify a deployment access role, the actual role used depends on the deployment on which the command is operating\. If the `--deployment` argument has been specified, then the specified deployment is used\. If the `--deployment` argument has not been specified and the user has specified a default deployment, the default deployment is used\. If a default deployment has not been specified, the project’s default deployment is used\.
 
-`lmbr_aws` uses your configured AWS credentials to assume the specified role\. See [Configuration](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-configuration) for a description of how the credentials are determined\. The credentials must have permission to assume the role\. For more information, see [Granting a User Permission to Switch Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)\.
+`lmbr_aws` uses your configured AWS credentials to assume the specified role\. See [Configuration](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-configuration) for a description of how the credentials are determined\. The credentials must have permission to assume the role\. For more information, see [Granting a User Permission to Switch Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)\.
 
 Before assuming the role, the `lmbr_aws` tool uses credentials to read project configuration data from AWS\. The `ProjectAccess` managed policy in the `project-template.json file` and the `DeploymentAccess` managed policy in the `deployment-access-template.json` file grant the permissions necessary to read this information\. You can attach the corresponding managed policy to any IAM user that works on a project or deployment\.
 
 Note that administrative users created for an AWS account normally have permissions to assume roles and read project configuration\. Administrative users typically have permission to perform any action on any resource owned by an account\.
 
-## Role Management Commands<a name="cloud-canvas-rm-security-lmbr-aws-role-management-commands"></a>
+## Role Management Commands {#cloud-canvas-rm-security-lmbr-aws-role-management-commands}
 
 Role management commands manage the [AWS::IAM::Role](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md) resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
-### lmbr\_aws role add<a name="cloud-canvas-rm-security-lmbr-aws-role-add"></a>
+### lmbr\_aws role add {#cloud-canvas-rm-security-lmbr-aws-role-add}
 
 Adds an AWS IAM role resource definition to the `project-template.json file` or `deployment-access-template.json` file\.
 
@@ -40,7 +40,7 @@ Adds an AWS IAM role resource definition to the `project-template.json file` or 
 | ‑‑role <role‑name> | Required\. The name of the role resource definition\. | 
 | ‑‑project | Optional\. When present, specifies that the role resource definition be added to the project\-template\.json file\. Otherwise, the role resource definition is added to the deployment\-access\-template\.json file\. | 
 
-### lmbr\_aws role remove<a name="cloud-canvas-rm-security-lmbr-aws-role-remove"></a>
+### lmbr\_aws role remove {#cloud-canvas-rm-security-lmbr-aws-role-remove}
 
 Removes an AWS IAM role resource definition from the `project-template.json file` or `deployment-access-template.json` file\.
 
@@ -52,7 +52,7 @@ Removes an AWS IAM role resource definition from the `project-template.json file
 | ‑‑role <role‑name> | Required\. The name of the role resource definition\. | 
 | ‑‑project | Optional\. When present, specifies that the role resource definition be removed from the project\-template\.json file\. Otherwise, the role resource definition is removed from the deployment\-access\-template\.json file\. | 
 
-### lmbr\_aws role list<a name="cloud-canvas-rm-security-lmbr-aws-role-list"></a>
+### lmbr\_aws role list {#cloud-canvas-rm-security-lmbr-aws-role-list}
 
 Lists the AWS IAM role definitions in the `project-template.json` and/or `deployment-access-template.json` files\.
 
@@ -64,7 +64,7 @@ Lists the AWS IAM role definitions in the `project-template.json` and/or `deploy
 | ‑‑deployment | Optional\. Either \-\-deployment or \-\-project can be specified\. If \-\-deployment is specified, only the roles in the deployment\-access\-template\.json file are listed\. | 
 | ‑‑project | Optional\. Either \-\-deployment or \-\-project can be specified\. If \-\-project is specified, only the roles in the project\-template\.json file are listed\. | 
 
-#### Output<a name="cloud-canvas-rm-security-lmbr-aws-role-list-output"></a>
+#### Output {#cloud-canvas-rm-security-lmbr-aws-role-list-output}
 
 The output is similar to the following example\.
 
@@ -89,11 +89,11 @@ Project    ProjectResourceHandlerExecution
 | Scope | Indicates whether the role is defined in the deployment\-access\-template\.json or project\-template\.json file\. | 
 | Name | Shows the resource definition name\. This is the "logical" resource name, not the "physical" resource name which identifies an actual instance of the role\. To see the physical resource names, use the lmbr\_aws project list\-resources or lmbr\_aws deployment list\-resources command\. | 
 
-## Permission Metadata Management<a name="cloud-canvas-rm-security-lmbr-aws-permission-metadata-management"></a>
+## Permission Metadata Management {#cloud-canvas-rm-security-lmbr-aws-permission-metadata-management}
 
 The permission metadata management commands manage CloudCanvas [`Permissions` metadata](/docs/userguide/permissions-metadata-for-resource-definitions.md) on resource definitions in the `resource-group-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
-### lmbr\_aws permission add<a name="cloud-canvas-rm-security-lmbr-aws-permission-add"></a>
+### lmbr\_aws permission add {#cloud-canvas-rm-security-lmbr-aws-permission-add}
 
 Adds Cloud Canvas `Permissions` metadata to an resource definition in a `resource-group-template.json` file\.
 
@@ -108,7 +108,7 @@ Adds Cloud Canvas `Permissions` metadata to an resource definition in a `resourc
 | ‑‑action <action> \[<action> \.\.\.\] | Required\. The action that is allowed\. You can specify more than one action\. | 
 | ‑‑suffix <suffix> \[<suffix> \.\.\.\] | Optional\. A string appended to the resource ARN\. You can specify more than one suffix\. | 
 
-### lmbr\_aws permission remove<a name="cloud-canvas-rm-security-lmbr-aws-permission-remove"></a>
+### lmbr\_aws permission remove {#cloud-canvas-rm-security-lmbr-aws-permission-remove}
 
 Removes Cloud Canvas `Permissions` metadata from a resource definition in a `resource-group-template.json` file\.
 
@@ -123,7 +123,7 @@ Removes Cloud Canvas `Permissions` metadata from a resource definition in a `res
 | ‑‑action <action> \[<action> \.\.\.\] | Optional\. The action that is removed\. You can specify more than one action\. If not specified, all permissions for the role are removed\. | 
 | ‑‑suffix <suffix> \[<suffix> \.\.\.\] | Optional\. A string appended to the resource ARN, which is removed\. You can specify more than one suffix\. | 
 
-### lmbr\_aws permission list<a name="cloud-canvas-rm-security-lmbr-aws-permission-list"></a>
+### lmbr\_aws permission list {#cloud-canvas-rm-security-lmbr-aws-permission-list}
 
 Removes Cloud Canvas `Permissions` metadata from an resource definition in a `resource-group-template.json` file\.
 
@@ -136,7 +136,7 @@ Removes Cloud Canvas `Permissions` metadata from an resource definition in a `re
 | ‑‑resource <resource‑name> | Optional\. The name of the resource definition in the resource\-group\-template\.json file\. The default lists metadata from all resource definitions\. | 
 | ‑‑role <abstract‑role‑name> | Optional\. Lists metadata for the specified abstract role\. The default lists metadata for all abstract roles\. | 
 
-#### Output<a name="cloud-canvas-rm-security-lmbr-aws-permission-list-output"></a>
+#### Output {#cloud-canvas-rm-security-lmbr-aws-permission-list-output}
 
 The output is similar to the following example\.
 
@@ -170,11 +170,11 @@ To see all the resources players have access to through the game client, use the
 lmbr_aws permission list --role Player
 ```
 
-## Role Mapping Metadata Management<a name="cloud-canvas-rm-security-lmbr-aws-role-mapping-metadata-management"></a>
+## Role Mapping Metadata Management {#cloud-canvas-rm-security-lmbr-aws-role-mapping-metadata-management}
 
 Role mapping metadata management commands manage CloudCanvas `RoleMappings` metadata on `AWS::IAM:Role` resource definitions in the `project-template.json` and `deployment-access-template.json` files\. After you use these commands to make changes, you must update the project or deployment access stacks for the changes to take effect\. For information about the permissions to perform this action, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
-### lmbr\_aws role\-mapping add<a name="cloud-canvas-rm-security-lmbr-aws-role-mapping-add"></a>
+### lmbr\_aws role\-mapping add {#cloud-canvas-rm-security-lmbr-aws-role-mapping-add}
 
 Adds Cloud Canvas `RoleMappings` metadata to an AWS IAM role definition in the `project-template.json` or `deployment-access-template.json` file\.
 
@@ -189,7 +189,7 @@ Adds Cloud Canvas `RoleMappings` metadata to an AWS IAM role definition in the `
 | ‑‑deny | Either \-\-allow or \-\-deny must be specified\. Indicates that the permissions requested for the abstract role are denied\. | 
 | ‑‑project | Optional\. Indicates that the role definition is in the project\-template\.json file\. The default is for the role definition to be in the deployment\-access\-template\.json file\. | 
 
-### lmbr\_aws role\-mapping remove<a name="cloud-canvas-rm-security-lmbr-aws-role-mapping-remove"></a>
+### lmbr\_aws role\-mapping remove {#cloud-canvas-rm-security-lmbr-aws-role-mapping-remove}
 
 Removes an AWS IAM role resource definition from the `project-template.json file` or `deployment-access-template.json` file\.
 
@@ -202,7 +202,7 @@ Removes an AWS IAM role resource definition from the `project-template.json file
 | ‑‑pattern <abstract‑role‑pattern> | Identifies the abstract roles mapped to the role\. Has the form <resource\-group\-name>\.<abstract\-role\-name>, where <resource\-group\-name> can be \*\. | 
 | ‑‑project | Optional\. Indicates that the role definition is in the project\-template\.json file\. The default is for the role definition to be in the deployment\-access\-template\.json file\. | 
 
-### lmbr\_aws role\-mapping list<a name="cloud-canvas-rm-security-lmbr-aws-mapping-list"></a>
+### lmbr\_aws role\-mapping list {#cloud-canvas-rm-security-lmbr-aws-mapping-list}
 
 Lists the AWS IAM role definitions in the `project-template.json` and/or `deployment-access-template.json` files\.
 
@@ -216,7 +216,7 @@ Lists the AWS IAM role definitions in the `project-template.json` and/or `deploy
 | ‑‑deployment | Optional\. Either \-\-deployment or \-\-project can be specified\. Lists metadata from role definitions in the deployment\-access\-template\.json file\. The default is to list metadata from role definitions in the project\-template\.json and deployment\-access\-template\.json files\. | 
 | ‑‑project | Optional\. Either \-\-deployment or \-\-project can be specified\. Lists metadata from role definitions in the project\-template\.json file\. The default is to list metadata from role definitions in the project\-template\.json and deployment\-access\-template\.json files\. | 
 
-#### Output<a name="cloud-canvas-rm-security-lmbr-aws-mapping-list-output"></a>
+#### Output {#cloud-canvas-rm-security-lmbr-aws-mapping-list-output}
 
 The output is similar to the following example\.
 

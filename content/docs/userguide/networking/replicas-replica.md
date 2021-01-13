@@ -3,21 +3,21 @@ description: ' Learn how replicas are used by GridMate peers to synchronize a re
   state across a &ALYlong; session. '
 title: Replica
 ---
-# Replica<a name="network-replicas-replica"></a>
+# Replica {#network-replicas-replica}
 
 Replicas are core components of GridMate's replication system that are created by network\-connected GridMate peers\. When a peer creates a replica, GridMate propagates the replica over the network to synchronize the replica's state across the session\. A locally created and owned replica is called a *primary replica*\. The copy of the primary replica that connected peers receive is called a *proxy replica*\. The synchronization and instantiation of replicas is handled by [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md)\. 
 
-## Replica Chunks<a name="network-replicas-replica-chunks"></a>
+## Replica Chunks {#network-replicas-replica-chunks}
 
 Every replica holds a collection of user\-defined [`ReplicaChunk`](/docs/userguide/networking/replicas-chunks.md) objects that are synchronized with all the peers in the current session\. A replica chunk is a container for user\-defined [DataSet](/docs/userguide/networking/replicas-data-sets.md) objects and [Remote Procedure Calls \(RPCs\)](/docs/userguide/networking/replicas-remote-procedure-calls.md)\. Any change to a `DataSet` object or a call to an RPC causes the replica to synchronize its state across the session\. 
 
-### Limitations<a name="network-replicas-replica-chunk-limitations"></a>
+### Limitations {#network-replicas-replica-chunk-limitations}
 
 Replica chunks have the following limitations:
 +  Each replica can contain only 32 chunks\. 
 +  Chunks can be attached or detached only when a replica is not bound to a replica manager\.
 
-### Creating a Replica and Attaching Chunks<a name="network-replicas-replica-creating"></a>
+### Creating a Replica and Attaching Chunks {#network-replicas-replica-creating}
 
  To create a replica, invoke the following method: 
 
@@ -39,7 +39,7 @@ replica->AttachReplicaChunk(myChunk);
 
 For more information about the creation and propagation of replica chunks, see [Replica Chunks](/docs/userguide/networking/replicas-chunks.md)\.
 
-### Binding a Replica to the Session Replica Manager<a name="network-replicas-replica-binding"></a>
+### Binding a Replica to the Session Replica Manager {#network-replicas-replica-binding}
 
 In order for a replica to be synchronized, it must be bound to the session replica manager\. After you create a replica and attach chunks to it, get the replica manager from the [GridMate session](/docs/userguide/networking/session-service.md)\. Then, bind the replica to it as follows: 
 
@@ -50,11 +50,11 @@ replicaManager->AddMaster(replica);
 
 Proxy replicas are automatically instantiated by remote peers' replica managers and, therefore, automatically bound\. 
 
-## Replica Ownership<a name="network-replicas-replica-ownership"></a>
+## Replica Ownership {#network-replicas-replica-ownership}
 
 When a peer creates a replica and binds it to the session replica manager, that peer becomes the owner of the replica\. Each replica can be owned by only one peer\. The replica owner is the only peer on the network that has the authority to change the state of the replica\. For example, it can change the chunks' datasets or directly execute its RPCs\. Any state changes performed on a proxy replica are considered invalid and do not propagate throughout the session\. RPCs can be called on a proxy replica, but the calls are forwarded to the owner for confirmation before they can be executed\. Once this confirmation is given, the RPC is sent to all proxies and also executed locally by the peer\. If the primary replica denies the execution, no peers receive the RPC call\. 
 
-### Changing Ownership<a name="network-replicas-replica-ownership-changing"></a>
+### Changing Ownership {#network-replicas-replica-ownership-changing}
 
 Replica ownership can be transferred from one peer to another, but the current owner of the replica must agree to the transfer\. For information on how a replica owner can prevent transfer of ownership, see [Replica Chunks](/docs/userguide/networking/replicas-chunks.md)\.
 
@@ -66,7 +66,7 @@ replica->RequestChangeOwnership(); // Request ownership of a given replica for t
 
 Ownership transfer is an asynchronous process\. When an ownership transfer is completed, each replica chunk is notified of the change by the `OnReplicaChangeOwnership` callback function\. 
 
-### Replica ID<a name="network-replicas-replica-ownership-replica-id"></a>
+### Replica ID {#network-replicas-replica-ownership-replica-id}
 
 Each replica has a unique ID associated with it\. The replica ID is guaranteed to be unique within a particular GridMate session\. You can use the replica ID to retrieve a replica from the session replica manager, as in the following example:
 
@@ -91,7 +91,7 @@ if (replica->IsMaster())
 }
 ```
 
-### Lifetime<a name="network-replicas-replica-lifetime"></a>
+### Lifetime {#network-replicas-replica-lifetime}
 
 The lifetime of a replica is controlled by a `GridMate::ReplicaPtr`, which is a reference\-counted smart pointer\. The replica manager retains a reference to every replica that is bound to it\. It is therefore safe to omit a reference to the replica from user code; the replica is not destroyed as long as the reference is held in replica manager\. However, you can force the replica manager to release its reference and free the replica by invoking the following method: 
 
@@ -99,7 +99,7 @@ The lifetime of a replica is controlled by a `GridMate::ReplicaPtr`, which is a
 replica->Destroy();
 ```
 
-## Sample Code<a name="network-replicas-replica-sample-code"></a>
+## Sample Code {#network-replicas-replica-sample-code}
 
 This example creates a user\-defined chunk, creates a replica, attaches the chuck to the replica, and binds the replica to the session replica manager\. 
 

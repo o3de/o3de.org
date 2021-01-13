@@ -3,7 +3,7 @@ description: ' Use the &audio-controls-browser; ''s Inspector pane to edit the p
   of the currently selected control in &ALYlong;. '
 title: Inspector Pane
 ---
-# Inspector Pane<a name="audio-atl-editor-inspector"></a>
+# Inspector Pane {#audio-atl-editor-inspector}
 
 In the **Inspector** pane, you can edit the properties of the control that you selected in the **ATL Controls** pane\. You can modify the control's **Name**, select a **Scope**, and modify the **Connected Controls**\.
 

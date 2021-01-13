@@ -2,7 +2,7 @@
 description: ' Simulate cloth on a GPU in &ALYlong; with NVIDIA Cloth and NVIDIA CUDA. '
 title: GPU cloth simulation with NVIDIA CUDA
 ---
-# GPU cloth simulation with NVIDIA CUDA<a name="nvidia-cloth-gpu"></a>
+# GPU cloth simulation with NVIDIA CUDA {#nvidia-cloth-gpu}
 
 
 ****  
@@ -21,13 +21,13 @@ For more information about NVIDIA CUDA, visit the [ NVIDIA CUDA](https://develop
 + [Enable NVIDIA CUDA for cloth simulation](#lumberyard-cuda-enable)
 + [Releasing your project with NVIDIA CUDA](#lumberyard-cuda-release)
 
-## GPU cloth simulation requirements<a name="lumberyard-cuda-requirements"></a>
+## GPU cloth simulation requirements {#lumberyard-cuda-requirements}
 + Microsoft Windows 10 
 + NVIDIA CUDA Toolkit 10\.1\.168 or newer 
 + NVIDIA graphics card with CUDA support \- Visit the [ NVIDIA CUDA GPU](https://developer.nvidia.com/cuda-gpus) support portal for information\. 
 + NVIDIA driver version 418\.96 or newer \- The latest driver version is recommended\. 
 
-## Installing NVIDIA CUDA Toolkit with Setup Assistant<a name="lumberyard-cuda-setup"></a>
+## Installing NVIDIA CUDA Toolkit with Setup Assistant {#lumberyard-cuda-setup}
 
 NVIDIA CUDA Toolkit can be installed through Setup Assistant\. The install link is located on the **Install Software** page, in the **Optional software** group\. 
 
@@ -49,7 +49,7 @@ If you are using a laptop, then the manufacturer's drivers for the graphics card
 
 1. Click the **refresh** button at the top\-right corner of **Lumberyard Setup Assistant**\. If the NVIDIA CUDA Toolkit is detected, then it appears as **Installed**\. 
 
-## Enable NVIDIA CUDA for cloth simulation<a name="lumberyard-cuda-enable"></a>
+## Enable NVIDIA CUDA for cloth simulation {#lumberyard-cuda-enable}
 
 To use NVIDIA CUDA for cloth simulation on the GPU, you must configure and rebuild your project, and enable NVIDIA CUDA in your PC configuration file\. 
 
@@ -83,7 +83,7 @@ Open a new command prompt and navigate to `lumberyard_version\dev\` to run the c
 
     `NVIDIA NvCloth Gem using GPU (CUDA) for cloth simulation` 
 
-## Releasing your project with NVIDIA CUDA<a name="lumberyard-cuda-release"></a>
+## Releasing your project with NVIDIA CUDA {#lumberyard-cuda-release}
 
 End users do not require the NVIDIA CUDA Toolkit to be installed on their PC in order to run your release builds\. 
 

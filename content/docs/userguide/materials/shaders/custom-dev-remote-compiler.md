@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s remote shade compiler for game consoles that can
   compile shaders locally. '
 title: Remote Shader Compiler
 ---
-# Remote Shader Compiler<a name="mat-shaders-custom-dev-remote-compiler"></a>
+# Remote Shader Compiler {#mat-shaders-custom-dev-remote-compiler}
 
 Lumberyard's remote shader compiler application provides a convenient way to compile shaders during development\. You can install the shader compiler on a PC or Mac local network server that can communicate over TCP\. The server receives the shader source file from a computer running Lumberyard, compiles it, and sends back the shader\. Almost all renderers require a remote shader compiler\. The exception is a PC running DX11, for which a remote shader compiler is optional for local development\.
 
@@ -37,7 +37,7 @@ Ensure the server or computer that is running the remote shader compiler is in a
 + [Game Development Configuration](#mat-shaders-custom-dev-remote-compiler-game)
 + [Creating Paks for Server Assets](#create-paks-for-server-assets)
 
-## Running the Remote Shader Compiler<a name="mat-shaders-custom-dev-remote-compiler-launch"></a>
+## Running the Remote Shader Compiler {#mat-shaders-custom-dev-remote-compiler-launch}
 
 You can find the remote shader compiler, **CrySCompileServer**, in the following directories:
 + PC – `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\`
@@ -49,7 +49,7 @@ You can launch the remote shader compiler by starting `CrySCompileServer.exe` ma
 
 Because requests for shaders are executed in parallel, you may notice significant delays in acquiring shaders at runtime\.
 
-### Remote Shader Compiler Configuration<a name="mat-shaders-custom-dev-remote-compiler-config"></a>
+### Remote Shader Compiler Configuration {#mat-shaders-custom-dev-remote-compiler-config}
 
 You configure the remote shader compiler by creating or editing the `config.ini` file, which is located in the following directories:
 + PC: `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile`
@@ -85,7 +85,7 @@ SCMailAddress = RemoteShaderCompiler@your_company.tld
 PrintWarnings = 1
 ```
 
-### Creating an allow list for the Remote Shader Compiler<a name="mat-shaders-custom-dev-remote-compiler-allow"></a>
+### Creating an allow list for the Remote Shader Compiler {#mat-shaders-custom-dev-remote-compiler-allow}
 
 You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. If a computer has an IP address that is not in the allow list, the remote shader compiler provides a message that an invalid computer tried to connect and then closes the connection\. This prevents data from being read or sent to an invalid connection\.
 
@@ -111,7 +111,7 @@ The following allows computers or devices with an IP address of `192.168.0.`\* t
 white_list=192.168.0.1/24
 ```
 
-## Location of Specific Shader Compilers<a name="mat-shaders-custom-dev-remote-compiler-platform"></a>
+## Location of Specific Shader Compilers {#mat-shaders-custom-dev-remote-compiler-platform}
 
 In the root directory of the remote shader compiler, each shader language or render API has its own directory with additional subdirectories for different version numbers\. They are located in the following directory: 
 
@@ -121,7 +121,7 @@ You can find information about the path used by the remote shader compiler in th
 
 Lumberyard provides all appropriate shader compilers for you that match the code of that version\.
 
-## Shader Cache Lists<a name="mat-shaders-custom-dev-remote-compiler-lists"></a>
+## Shader Cache Lists {#mat-shaders-custom-dev-remote-compiler-lists}
 
 The remote shader compiler contains different text files of all the combinations requested so far by the game\. These files are important as the shader `.pak` files cannot be generated without them
 
@@ -138,7 +138,7 @@ The game submits the requests to the remote shader compiler either during actual
 
 Lumberyard also generates shaders locally\. These text files are named `ShaderList_platform.txt` \(for example, `ShaderList_DX11.txt`\)\. You can find these files in the `lumberyard_version\dev\cache\project_name\pc\user\cache\shaders` directory\.
 
-## Game Development Configuration<a name="mat-shaders-custom-dev-remote-compiler-game"></a>
+## Game Development Configuration {#mat-shaders-custom-dev-remote-compiler-game}
 
 A remote shader compiler server can provide a performance benefit as it caches the results and sends them to team members instead of having to compile shaders each time\. In addition, the server keeps track of all shaders used by all people, which can be valuable if you want to make a release build that includes all shaders\.
 
@@ -160,7 +160,7 @@ You can set the following parameters in the `system_platform_shader_version.cfg`
 | r\_shadersAsyncCompiling=3 |  Allows shaders to stream asynchronously and prevents the game from freezing while waiting for the shaders to compile\.  | 
 | r\_ShadersAsyncActivation=1 |  Allows shaders to stream asynchronously\. Set to `0` to prevent the shaders from streaming asynchronously\.  | 
 
-## Creating Paks for Server Assets<a name="create-paks-for-server-assets"></a>
+## Creating Paks for Server Assets {#create-paks-for-server-assets}
 
 Specify `RC.exe` to build a pak file that contains server assets only\. You generate these assets by using the following command:
 

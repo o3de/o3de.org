@@ -3,7 +3,7 @@ description: ' Configure your &ALYlong; project to compile assets for Android an
   correctly declare which device resources it uses. '
 title: Configure &ALY; projects for Android
 ---
-# Configure Lumberyard projects for Android<a name="android-configure-project"></a>
+# Configure Lumberyard projects for Android {#android-configure-project}
 
  In addition to the [system\-wide configuration requirements](/docs/userguide/mobile/android/setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\. 
 
@@ -17,7 +17,7 @@ title: Configure &ALY; projects for Android
 + [Serving assets over the Virtual File System \(VFS\)](#android-vfs)
 + [Custom Android manifests](#custom-manifest-files)
 
-## Handling assets on Android<a name="android-configure-asset-loading"></a>
+## Handling assets on Android {#android-configure-asset-loading}
 
  Working with Android in Lumberyard can be complicated because of the restrictions of the Android platform, which affects how Android application packages \(APKs\) are built and deployed\. Different asset deployment configurations can greatly affect performance during your development process, so make sure that you select the one that's right for your use case\. This section helps break down what options are available, when they're most appropriate, and how you configure your Lumberyard project in order to support each\. 
 
@@ -36,7 +36,7 @@ title: Configure &ALY; projects for Android
 android_asset_mode = [ configuration_default | loose_files | loose_paks | apk_files | apk_paks | project_settings ]
 ```
 
-### Loose modes<a name="android-configure-asset-loading-loose"></a>
+### Loose modes {#android-configure-asset-loading-loose}
 
  In *loose files* mode \(`loose_files` or `loose_paks`\), none of your assets are included into the APK\. Instead, assets are copied directly to the storage media on the Android device and loaded by the Lumberyard engine at runtime\. When using `loose_paks`, assets are first placed into a `.pak` file and then pushed to the device\. 
 
@@ -49,7 +49,7 @@ android_asset_mode = [ configuration_default | loose_files | loose_paks | apk_fi
 android_asset_mode = loose_files
 ```
 
-### Packed modes<a name="android-configure-asset-loading-packed"></a>
+### Packed modes {#android-configure-asset-loading-packed}
 
  Unlike many Lumberyard scenarios in which packed assets refer to `.pak` files, the *packed assets* \(`apk_files` and `apk_paks`\) modes bundle your assets as part of the deployed APK, with the option of putting them into a `.pak` first\. This APK is sometimes referred to as a *packed APK*, which refers to the fact that assets are packed into the APK and not distributed separately\.
 
@@ -65,7 +65,7 @@ android_asset_mode = apk_paks
 **Tip**  
  If you want to do large\-scale automated testing across multiple devices, you can build packed APKs and distribute them to [AWS Device Farm](https://docs.aws.amazon.com/devicefarm/latest/developerguide)\. 
 
-## Serving assets over the Virtual File System \(VFS\)<a name="android-vfs"></a>
+## Serving assets over the Virtual File System \(VFS\) {#android-vfs}
 
  During the early stages of development with Lumberyard, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments — your build configuration's asset mode is respected — only reloads\. 
 
@@ -95,7 +95,7 @@ android_asset_mode = apk_paks
    ```
 
 1.  Configure the connection from the device to the shader compiler\. You can either do this by starting the Shader Compiler yourself, or by passing traffic to the Shader Compiler through the Asset Processor\. 
-   +  **Connect directly to shader compiler** – See [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy.md#running-the-shader-compiler-for-android) for instructions\. 
+   +  **Connect directly to shader compiler** – See [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy#running-the-shader-compiler-for-android) for instructions\. 
    + **Connect to Asset Processor** – Edit the Android configuration to use the Asset Processor's shader compiler process\.
 
      1. Open the file `lumberyard_install_dir\dev\system_android_es3.cfg` in a text editor\.
@@ -116,7 +116,7 @@ android_asset_mode = apk_paks
 
  Now when you launch your Lumberyard project, it will connect to the Asset Processor host to do live asset reloads over the VFS\. 
 
-## Custom Android manifests<a name="custom-manifest-files"></a>
+## Custom Android manifests {#custom-manifest-files}
 
  As part of each Android application, Google requires a list of activities that will be performed by the application, and which device capabilities are required\. For example, if your project uses live location data on an Android device, you'll need to ensure that your project has the appropriate permissions to collect data at the right intervals and with the appropriate location precision\. Because Lumberyard projects are made up of many components, during the build process, the build tools pick up multiple manifests and merge them together\. 
 

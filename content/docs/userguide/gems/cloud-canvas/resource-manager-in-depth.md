@@ -3,7 +3,7 @@ description: ' Learn how to use &cloud; Resource Manager effectively when progra
   your cloud-connected game project. '
 title: Resource Manager in Depth
 ---
-# Resource Manager in Depth<a name="cloud-canvas-resource-manager-in-depth"></a>
+# Resource Manager in Depth {#cloud-canvas-resource-manager-in-depth}
 
 The effective use of Cloud Canvas Resource Manager is key to the success of any cloud\-connected game project\. This section provides in\-depth information for software engineers\.
 

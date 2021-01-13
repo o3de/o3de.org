@@ -3,11 +3,11 @@ description: ' Use the Audio Area Environment component in &ALY; to apply an env
   effect to sounds that an entity triggers. '
 title: Audio Area Environment
 ---
-# Audio Area Environment<a name="component-audio-area-environment"></a>
+# Audio Area Environment {#component-audio-area-environment}
 
 Using the **Audio Area Environment** component, you can apply environment effects to sounds that an entity triggers\. You must also add a shape component to use the audio area environment component\.
 
-## Audio Area Environment Properties<a name="component-audio-area-environment-properties"></a>
+## Audio Area Environment Properties {#component-audio-area-environment-properties}
 
 The **Audio Area Environment** component has the following properties:
 
@@ -23,7 +23,7 @@ Default: None
 The distance around a shape where the environment amounts will fade based on an entity's distance from the shape\. Only positive, non\-zero values are valid\.  
 Default: 1\.0
 
-## Using the Audio Area Environment Component<a name="component-audio-area-environment-setup"></a>
+## Using the Audio Area Environment Component {#component-audio-area-environment-setup}
 
 Setting up the **Audio Area Environment** component requires two entities\. The second entity is linked to the **Audio Area Environment** component in the first entity, acting as a broad\-phase trigger area\. When these entities are configured properly, any entity that passes near or through the inner shape of the first entity will have an environment amount applied to any triggered sounds\.
 

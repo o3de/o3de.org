@@ -3,7 +3,7 @@ description: ' Learn how to blend poses using blend nodes in the &ALYlong; &anim
   . '
 title: Blending Poses with Blend Nodes
 ---
-# Blending Poses with Blend Nodes<a name="animation-editor-blending-poses"></a>
+# Blending Poses with Blend Nodes {#animation-editor-blending-poses}
 
 
 ****  
@@ -21,11 +21,11 @@ You can use **Blend** nodes in animation graphs to create an animation that blen
 + [Blend Two Node](/docs/userguide/animation/editor/blending-blendtwo.md)
 + [Blend Two \(Legacy\) Node](/docs/userguide/animation/editor/blending-blendtwolegacy.md)
 
-## Blend Node Attributes<a name="animation-editor-blending-attributes"></a>
+## Blend Node Attributes {#animation-editor-blending-attributes}
 
 The blend nodes feature a set of attributes that control different aspects of how the two nodes are blended\. Some blend nodes have different attributes, which are described in the sections about that node type\.
 
-### Sync Mode<a name="animation-editor-blending-attributes-syncmode"></a>
+### Sync Mode {#animation-editor-blending-attributes-syncmode}
 
 The **Sync Mode** attribute determines the method of synchronizing motion clips to keep the feet synchronized\.
 
@@ -40,7 +40,7 @@ The **Sync Mode** attribute determines the method of synchronizing motion clips 
 | Event Track Based |  Synchronization based on sync event tracks\. This method pairs sync events, which ensures that the events in each of the inputs activate at the same time\.  | 
 | Full Clip Based |  Synchronization based on the full clip duration\. Inputs are synchronized by the percentage that is complete\. For example, when the first input is at 25% playback of the input's duration, the second input is also at 25% playback\.  | 
 
-### Event Filter Mode<a name="animation-editor-blending-attributes-eventfiltermode"></a>
+### Event Filter Mode {#animation-editor-blending-attributes-eventfiltermode}
 
 The **Event Filter Mode** attribute determines which node's events are emitted\.
 
@@ -54,7 +54,7 @@ The **Event Filter Mode** attribute determines which node's events are emitted\.
 | Both Nodes |  Emits events from both leader and follower nodes\.  | 
 | Most Active |  Emits events from the more active node\. Special use case for additive blends\.  | 
 
-### Extraction Mode<a name="animation-editor-blending-attributes-extractionmode"></a>
+### Extraction Mode {#animation-editor-blending-attributes-extractionmode}
 
 The **Extraction Mode** attribute controls how the motion extraction behaves when blending\. For example, for transitions inside state machines, you can use this node to ensure that a 180 degree turn completes\.
 
@@ -69,7 +69,7 @@ The **Extraction Mode** attribute controls how the motion extraction behaves whe
 | Target Only |  Extracts the target only\. For example, when transitioning from idle into a turn, only the turn animation's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character’s rotation and translation\.  | 
 | Source Only |  For example, when transitioning from idle into a turn, only the idle pose's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character’s rotation and translation\.  | 
 
-### Mask<a name="animation-editor-blending-attributes-mask"></a>
+### Mask {#animation-editor-blending-attributes-mask}
 
 Use **Mask** to select the skeleton nodes to include in the blend\.
 

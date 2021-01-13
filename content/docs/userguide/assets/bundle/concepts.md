@@ -4,7 +4,7 @@ description: ' Learn about &ALY; &asset-bundler; terms and concepts. The &asset-
   efficient. '
 title: '&asset-bundler; Concepts and Terms'
 ---
-# Asset Bundler Concepts and Terms<a name="asset-bundler-concepts"></a>
+# Asset Bundler Concepts and Terms {#asset-bundler-concepts}
 
 The following terms and concepts relate to the Lumberyard Asset Bundler:
 

@@ -3,7 +3,7 @@ description: ' Use layout components in &ALY;''s &ui-canvas-editor; to organize 
   elements into columns, rows, or a grid. '
 title: Layout Components
 ---
-# Layout Components<a name="ui-editor-components-layout"></a>
+# Layout Components {#ui-editor-components-layout}
 
 Like other UI components, layout components define the layout properties of your game's interface\. The UI system features four layout components to organize your elements: **LayoutColumn**, **LayoutRow**, **LayoutGrid**, and **LayoutCell**\. You can also nest layout components\.
 

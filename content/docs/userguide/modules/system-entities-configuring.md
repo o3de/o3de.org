@@ -3,7 +3,7 @@ description: ' Learn how to use &ALYlong;''s &project-configurator; to configure
   system entity. '
 title: Configuring System Entities
 ---
-# Configuring System Entities<a name="az-module-system-entities-configuring"></a>
+# Configuring System Entities {#az-module-system-entities-configuring}
 
 A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)**\.
 
@@ -58,7 +58,7 @@ Some system components are optional, and some are required\. Both the Lumberyard
 
 1. Click **Save** to save your changes to disk\. The changes that you make on the **System Entity** and **Memory Settings** tabs are saved to a `Game.xml` or `Editor.xml` application descriptor file\.
 
-## Application Descriptor Files<a name="az-module-system-entities-configuring-app-descriptor-files"></a>
+## Application Descriptor Files {#az-module-system-entities-configuring-app-descriptor-files}
 
 When you edit a system entity's configuration with the Project Configurator **Advanced Settings** dialog box, you are actually editing an application descriptor file\.
 

@@ -2,7 +2,7 @@
 description: ' Learn about dynamic vegetation concepts and ideas in &ALYlong;. '
 title: Dynamic Vegetation Concepts
 ---
-# Dynamic Vegetation Concepts<a name="dynamic-vegetation-concepts"></a>
+# Dynamic Vegetation Concepts {#dynamic-vegetation-concepts}
 
 The dynamic vegetation system operates around the following ideas:
 + **What** – To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files\. If you don't have your own, you can use Lumberyard's vegetation assets, which are in the Starter Game project\.
@@ -24,7 +24,7 @@ You can customize your vegetation in the following ways:
 + Use customizable gradients such as the **Perlin Noise Gradient** to mimic the types of vegetation groupings often found in nature\.
 + Save your customized vegetation areas as slices so that you can easily reuse them in other levels or share them with collaborators\. Use slice overrides to make small or large changes to individual instances of the slice\.
 
-## Dynamic Vegetation Components<a name="dynamic-vegetation-concepts-components"></a>
+## Dynamic Vegetation Components {#dynamic-vegetation-concepts-components}
 
 The common workflow for creating a new vegetation area starts with creating an entity and adding a **Vegetation Layer Spawner** component to it\. Then you add to that entity the two required components, which define the area's shape and the assets to display\. From there, you can add optional components such as vegetation filters and modifiers\.
 

@@ -3,7 +3,7 @@ description: ' Copy, rotate, or move sections of your &ALY; terrain, including v
   water, and other objects. '
 title: Copying and Moving Terrain Areas
 ---
-# Copying and Moving Terrain Areas<a name="terrain-copy"></a>
+# Copying and Moving Terrain Areas {#terrain-copy}
 
 
 ****  

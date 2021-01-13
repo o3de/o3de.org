@@ -2,7 +2,7 @@
 description: null
 title: Working with the River Component
 ---
-# Working with the River Component<a name="working-with-the-river-component"></a>
+# Working with the River Component {#working-with-the-river-component}
 
 See the following procedures to create a river and modify its appearance\.
 
@@ -12,7 +12,7 @@ See the following procedures to create a river and modify its appearance\.
 + [Erasing River Vegetation](#erasing-river-vegetation)
 + [Setting River Material Properties](#setting-river-material-properties)
 
-## Creating a River<a name="creating-river"></a>
+## Creating a River {#creating-river}
 
 To create a realistic river, use the **River** component's **Carve River Bed** tool to prepare the surrounding terrain\. This tool carves out a riverbed and creates riverbanks on the edges of the river that are higher than the river's water level\.
 
@@ -51,7 +51,7 @@ A river with a **Border width** of `10.0`, **Embankment** of `1.0`, **Depth** of
 
 ![\[Example river that is below ground level.\]](/images/userguide/component/carving-riverbed-4.png)
 
-## Modifying the River Width<a name="modifying-river-width"></a>
+## Modifying the River Width {#modifying-river-width}
 
 You can use the **Global width** parameter to adjust the river's width\. This parameter modifies all the points on the river\.
 
@@ -68,7 +68,7 @@ For more refined control over the river's width, you can adjust the individual p
   The global width of this river is 2, and the width at the selected point is set to `5`\. That means the total width at the selected point is `7`\.  
 ![\[River with one vertex widened\]](/images/userguide/component/modifying-river-width-2.png)
 
-## Erasing River Vegetation<a name="erasing-river-vegetation"></a>
+## Erasing River Vegetation {#erasing-river-vegetation}
 
 You can erase vegetation around the river's borders\.
 
@@ -78,7 +78,7 @@ You can erase vegetation around the river's borders\.
 
 1. Set the **Erase variance**\. This parameter randomizes the removal of vegetation so that the edge looks more natural\.
 
-## Setting River Material Properties<a name="setting-river-material-properties"></a>
+## Setting River Material Properties {#setting-river-material-properties}
 
 The road material must use the [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\. 
 

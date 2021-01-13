@@ -3,7 +3,7 @@ description: ' Enable the Visibility gem to add the Vis Area component to your g
   project in &ALYlong;. '
 title: Visibility
 ---
-# Visibility<a name="gems-system-gem-visibility"></a>
+# Visibility {#gems-system-gem-visibility}
 
 You can enable the Visibility gem for your game project so that you can add the **[VisArea](/docs/userguide/components/vis-area.md)** component to an entity\. You can use the component to create a visibility area \(vis area\) that helps manage visibility and culling in a scene\.
 

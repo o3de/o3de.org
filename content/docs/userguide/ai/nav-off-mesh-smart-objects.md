@@ -2,7 +2,7 @@
 description: ' Use smart objects for AI agents to interact with other objects in &ALYlong;. '
 title: Using Smart Objects for AI Navigation
 ---
-# Using Smart Objects for AI Navigation<a name="ai-nav-off-mesh-smart-objects"></a>
+# Using Smart Objects for AI Navigation {#ai-nav-off-mesh-smart-objects}
 
 
 ****  

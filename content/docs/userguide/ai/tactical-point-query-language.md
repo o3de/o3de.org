@@ -2,11 +2,11 @@
 description: ' Learn more about the TPS query language reference in &ALYlong;. '
 title: TPS Query Language Reference
 ---
-# TPS Query Language Reference<a name="ai-tactical-point-query-language"></a>
+# TPS Query Language Reference {#ai-tactical-point-query-language}
 
 There are ways to define a query in both C\+\+ and Lua \(and potentially in XML\), but the same core syntax is used\. This page formally defines the TPS query language, with query components expressed in Generation, Conditions or Weights, and defines and discusses the query language semantics\. 
 
-## Query Syntax<a name="ai-tactical-point-query-syntax"></a>
+## Query Syntax {#ai-tactical-point-query-syntax}
 
 **Note**  
 Non\-terminal symbols are in bold\. Not all of the symbols are implemented, but are shown for illustration\.
@@ -29,13 +29,13 @@ Object ::= 'puppet' | 'attentionTarget' | 'referencePoint' | 'player'
         | 'currentFormationRef' | 'leader' | 'lastOp'
 ```
 
-## Query Semantics<a name="ai-tactical-point-query-semantics"></a>
+## Query Semantics {#ai-tactical-point-query-semantics}
 
 **Note**  
 "Tunable" denotes that the exact values used should be possible to tweak/tune later\.
 "Real" means that it returns a float value \(rather than a boolean\)\.
 
-### Objects<a name="ai-tactical-point-query-objects"></a>
+### Objects {#ai-tactical-point-query-objects}
 
 **puppet**  
 AI agent making a query
@@ -49,12 +49,12 @@ AI agent's point of reference, perspective
 **player**  
 Human player \(chiefly useful for debugging and quick hacks\)
 
-### Glue<a name="ai-tactical-point-query-glue"></a>
+### Glue {#ai-tactical-point-query-glue}
 
 **from \| to \| at \| the**  
 Glue words used for readability in a query statement\. Each query must have a glue word, but it has not active function and the parser doesn't distinguish between them\. Readability is encouraged to aid in debugging and long\-term maintenance\. 
 
-### Generation<a name="ai-tactical-point-query-generation"></a>
+### Generation {#ai-tactical-point-query-generation}
 
 **Hidespot**  
 Individual point just behind a potential cover object with respect to a "from" object \(as in "hide from object"\)\. There is typically one point per cover object\. Use of this symbol should generate multiple points behind large cover objects and cope with irregularly shaped and dynamic objects\.
@@ -62,7 +62,7 @@ Individual point just behind a potential cover object with respect to a "from" o
 **Around**  
 A glue word with special meaning\. This word should be followed by the name of an object around which to center the generation radius\.
 
-### Conditions/Weight Properties \(use no object\)<a name="ai-tactical-point-query-conditions1"></a>
+### Conditions/Weight Properties \(use no object\) {#ai-tactical-point-query-conditions1}
 
 These properties relate to a specified point:
 
@@ -84,7 +84,7 @@ Real \(float\) property, representing the approximate radius of the cover object
 **coverDensity**  
 Real property, representing the number of potential hidespots that are close by to the specified point\. When used for condition tests, returns an absolute value representing an estimate of the number of hidespots per square meter using a 5m radius sample\. When used as a weight, returns a normalized value, mapping the range \(0\.0\-1\.0\) to \[0\.0\-1\.0\] \(hidespots per square meter\)\. \(Tunable\)
 
-### Conditions/Weight Test/Measures \(require object\)<a name="ai-tactical-point-query-conditions2"></a>
+### Conditions/Weight Test/Measures \(require object\) {#ai-tactical-point-query-conditions2}
 
 These properties relate to a specified object, such as distance\_to\_attentionTarget or visible\_from\_referencePoint\.
 
@@ -100,12 +100,12 @@ Real \(float\) measure representing the distance of the point in the direction o
 **directness**  
 Real \(float\) measure representing the degree to which a move to a certain point approaches the specified object\. Takes the difference in distance to the object \(changeInDistance\) and divides it by the distance from the puppet to the point\. Always uses the range \[\-1\.0 to 1\.0\], where 1\.0 is a perfectly direct course and negative values indicate movement further away from the object\.
 
-### Limits<a name="ai-tactical-point-query-limits"></a>
+### Limits {#ai-tactical-point-query-limits}
 
 **min \| max**  
 Limits can be used to test a real value in order to product a Boolean\. Useful for conditions that can also be used as coarse Weights; for example, the condition MAX\_DISTANCE = 10 can be used to express that a distance of less than 10 is preferable, but without favoring nearer points in a more general way\.
 
-## Failing Queries<a name="ai-tactical-point-query-failing"></a>
+## Failing Queries {#ai-tactical-point-query-failing}
 
 There are a few different ways queries can fail, and it's important to understand how each case is handled\.
 + **No points matched the conditions of the query\. **This is a valid result, not a failure; the AI can move to fallback queries or try a different behavior\.

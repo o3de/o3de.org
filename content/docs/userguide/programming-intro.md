@@ -3,9 +3,9 @@ description: ' The following topics will guide you through programming with and 
   &ALY;. '
 title: Programming in &ALY;
 ---
-# Programming in Lumberyard<a name="programming-intro"></a>
+# Programming in Lumberyard {#programming-intro}
 
-## Programming with Lumberyard<a name="ly-programming-intro"></a>
+## Programming with Lumberyard {#ly-programming-intro}
 
 Learn about the game development APIs and integrations available with Lumberyard \(and for Lumberyard\)\. This documentation covers the EBus messaging infrastructure for in\-game communications between game systems, memory management and debugging, extending and customizing the Lumberyard editor and tools, networking, localization, and Twitch integration\.
 

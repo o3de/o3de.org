@@ -3,7 +3,7 @@ description: ' Use the Disable Water Flow node in the &ALYlong; &script-canvas; 
   to disable water flow effects. '
 title: Disable Water Flow
 ---
-# Disable Water Flow<a name="disable-water-flow-node"></a>
+# Disable Water Flow {#disable-water-flow-node}
 
 Disables water flow effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Water Flow](/docs/userguide/rendering/enable/w
 
 ![\[disablewaterflow, disablewaterflownode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-flow-node.png)
 
-## Inputs<a name="disable-water-flow-note-input"></a>
+## Inputs {#disable-water-flow-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Water Flow](/docs/userguide/rendering/enable/w
 | --- | --- | --- | 
 |  In  | Event | Triggers the node\. | 
 
-## Outputs<a name="disable-water-flow-node-output"></a>
+## Outputs {#disable-water-flow-node-output}
 
 
 ****  

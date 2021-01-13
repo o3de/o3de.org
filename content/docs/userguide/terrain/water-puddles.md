@@ -3,7 +3,7 @@ description: ' Place non-tiling textures as decals to create realistic water pud
   and water rifts in your &ALY; level. '
 title: Adding Water Puddles
 ---
-# Adding Water Puddles<a name="terrain-water-puddles"></a>
+# Adding Water Puddles {#terrain-water-puddles}
 
 
 ****  

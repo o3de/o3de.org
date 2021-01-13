@@ -3,7 +3,7 @@ description: ' Use the Set Sun Longitude node in the &ALYlong; &script-canvas; e
   to set the sun longitude. '
 title: Set Sun Longitude
 ---
-# Set Sun Longitude<a name="set-sun-longitude-node"></a>
+# Set Sun Longitude {#set-sun-longitude-node}
 
 Sets the sun's longitude in the sky\.
 
@@ -13,7 +13,7 @@ Sets the sun's longitude in the sky\.
 
 ![\[setsunlongitudenode, setsunlongitude\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-sun-longitude-node.png)
 
-## Inputs<a name="set-sun-longitude-node-input"></a>
+## Inputs {#set-sun-longitude-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Sets the sun's longitude in the sky\.
 | Longitude | Number |  Sun longitude value to specify\.  | 
 | Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this input to make sudden changes to the sun position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
 
-## Outputs<a name="set-sun-longitude-node-output"></a>
+## Outputs {#set-sun-longitude-node-output}
 
 
 ****  

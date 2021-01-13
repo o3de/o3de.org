@@ -3,11 +3,11 @@ description: ' Learn the asset identifiers and file paths that game engineers ne
   for porting older game code to &ALYlong; or developing new code or tools. '
 title: Asset IDs and File Paths
 ---
-# Asset IDs and File Paths<a name="asset-pipeline-developers"></a>
+# Asset IDs and File Paths {#asset-pipeline-developers}
 
 Consult this section if you are a game engineer who needs to port older game code or develop new code or tools\.
 
-## File Path Aliases versus Asset IDs<a name="asset-pipeline-developers-asset-names"></a>
+## File Path Aliases versus Asset IDs {#asset-pipeline-developers-asset-names}
 
 All files accessed for the game runtime go through an interface that supports aliasing of file paths by name\. For example, the alias `@ROOT@` refers to the root directory where the `bootstrap.cfg` file is located\. If you need to open a file in the root directory, do not go to the root directory or use the current working directory\. Instead, use the file name, such as `@root@/filename.cfg`\. The various Lumberyard subsystems correctly resolve the alias\.
 
@@ -52,7 +52,7 @@ When referring to assets during runtime, always use the asset ID\. Do not prefix
 
 You can use the `FileIO` interface, which is accessible through `gEnv->pFileIO`, to resolve aliased names to full paths if you want to point to an external disk loading tool such as `Qt QFile()`\. This should almost never be necessary during runtime\. If you do use this, your system cannot use remote asset access or support live reloading\.
 
-## Converting Asset IDs to Full Paths<a name="asset-pipeline-developers-game-code"></a>
+## Converting Asset IDs to Full Paths {#asset-pipeline-developers-game-code}
 
 If you are writing a new editor tool or porting an existing one from a legacy system, keep in mind the separation between game code and editor code\. Game code cannot manipulate asset IDs, and therefore it is invalid to retrieve the game path or concatenate game names with path names\. The game code and game modules also have no access to source control, so relying on the game to find out where to save files will not work\.
 
@@ -86,7 +86,7 @@ As an example, the following steps code a tool that provides a list of all avail
 
 1. When the asset compiler recompiles the asset, it notifies you using the asset ID\. Make sure you compare the incoming name to this asset ID\.
 
-## Live Update Messages<a name="asset-pipeline-developers-messages"></a>
+## Live Update Messages {#asset-pipeline-developers-messages}
 
 If you are on a PC or you are connected to VFS, you can listen for live update messages from the Asset Pipeline and reload your assets when you get them\.
 

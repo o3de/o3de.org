@@ -2,7 +2,7 @@
 description: ' Instantiate a slice in &ly-editor;. '
 title: Instantiating a Slice
 ---
-# Instantiating a Slice<a name="component-instantiating-slice"></a>
+# Instantiating a Slice {#component-instantiating-slice}
 
 Loading an instance of a slice in your level is called instantiating a slice\.
 

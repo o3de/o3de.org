@@ -2,11 +2,11 @@
 description: ' See the following tips for working with a &CM; in &ALYlong;. '
 title: Tips for Working with &CM;
 ---
-# Tips for Working with Component Mode<a name="additional-tips-for-component-mode"></a>
+# Tips for Working with Component Mode {#additional-tips-for-component-mode}
 
 See the following tips for adding a Component Mode to your component\.
 
-## Additional Input Handling<a name="input-handling"></a>
+## Additional Input Handling {#input-handling}
 
 If you want to handle mouse events in a specific way \(for example, outside of using manipulators\), you can override `HandleMouseInteraction`, which is part of the `EditorBaseComponentMode` class that is defined in the `ComponentModeRequestBus`\.
 
@@ -19,7 +19,7 @@ bool HandleMouseInteraction(
     const AzToolsFramework::ViewportInteraction::MouseInteractionEvent& mouseInteraction) override;
 ```
 
-## Additional Drawing<a name="additonal-drawing"></a>
+## Additional Drawing {#additonal-drawing}
 
 If you want to add additional debug drawing while in Component Mode, you can implement the `AzFramework::EntityDebugDisplayEventBus` and then override `DisplayEntityViewport`\. Remember to connect the `EntityDebugDisplayEventBus` in the Component Mode constructor and disconnect in the destructor\.
 

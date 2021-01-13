@@ -3,7 +3,7 @@ description: ' Use the manual method to add grass for more control and lower mem
   usage. '
 title: Adding Grass Manually
 ---
-# Adding Grass Manually<a name="vegetation-grass-manual"></a>
+# Adding Grass Manually {#vegetation-grass-manual}
 
 
 ****  

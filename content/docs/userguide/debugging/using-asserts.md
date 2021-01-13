@@ -2,7 +2,7 @@
 description: ' Learn how to use asserts in &ALYlong; to debug your game code. '
 title: Using the sys_asserts Console Variable (CVAR)
 ---
-# Using the `sys_asserts` Console Variable \(CVAR\)<a name="debugging-using-asserts"></a>
+# Using the `sys_asserts` Console Variable \(CVAR\) {#debugging-using-asserts}
 
 Manage assert notifications in Lumberyard with the `sys_asserts` console variable\. The following table shows the possible values and their meanings\.
 
@@ -16,7 +16,7 @@ Manage assert notifications in Lumberyard with the `sys_asserts` console variabl
 **Note**  
 Prior to Lumberyard version 1\.21, when a debugger was attached and an assert was triggered, the debugger triggered a breakpoint on the assert\. In the new implementation, asserts print to the log at setting `sys_asserts=1` and display a dialog box at setting `sys_asserts=2`\. This gives you the option to break on the assert rather breaking automatically\.
 
-## Example Outputs<a name="debugging-using-asserts-example-outputs"></a>
+## Example Outputs {#debugging-using-asserts-example-outputs}
 
 `sys_asserts=1` produces output similar to the following:
 
@@ -44,7 +44,7 @@ The following table describes the options for the **Assert** dialog box\.
 | Ignore All | Prevents the current assert and all future asserts from displaying a dialog box\. To prevent decreases in performance, prints debug information to the log only after completion\. | 
 | Break | Breaks on the assert\. If a debugger is attached, creates a breakpoint and breaks at the breakpoint in the debugger\. If a debugger is not attached, stops the application\. | 
 
-## Setting the Assert Level at Initialization<a name="debugging-using-asserts-setting-at-initialization"></a>
+## Setting the Assert Level at Initialization {#debugging-using-asserts-setting-at-initialization}
 
 To set the assert level at engine initialization, add an entry to a project's `game.cfg` file\. The following example shows a `game.cfg` file for the SamplesProject\.
 
@@ -57,19 +57,19 @@ r_DisplayInfo=3
 sys_asserts=2
 ```
 
-## Setting the Assert Level at Runtime<a name="debugging-using-asserts-setting-at-runtime"></a>
+## Setting the Assert Level at Runtime {#debugging-using-asserts-setting-at-runtime}
 
 You can set the `sys_asserts` console variable at runtime in the console window\. The following image shows an example\.
 
 ![\[Setting the sys_asserts console variable at runtime.\]](/images/userguide/debugging-using-asserts-2.png)
 
-## Setting the Assert Level for Mobile Devices<a name="debugging-using-asserts-mobile-devices"></a>
+## Setting the Assert Level for Mobile Devices {#debugging-using-asserts-mobile-devices}
 
 When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md) to set the assert level in the command\-line window of the application\.
 
 ![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/userguide/debugging-using-asserts-3.png)
 
-## **Setting an Assert in Source Code**<a name="debugging-using-asserts-setting-in-source-code"></a>
+## **Setting an Assert in Source Code** {#debugging-using-asserts-setting-in-source-code}
 
 To add an assert in source code, use the `AZ_Assert` macro\.
 

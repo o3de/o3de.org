@@ -2,7 +2,7 @@
 description: ' Use the PhysX Terrain component to create a physics collider in &ALYlong;. '
 title: PhysX Terrain
 ---
-# PhysX Terrain<a name="component-physx-terrain"></a>
+# PhysX Terrain {#component-physx-terrain}
 
 **Important**  
 The PhysX Terrain component and associated documentation are legacy features retained for compatibility\. For new projects, use the **Legacy Terrain** level component, and the **PhysX Terrain** level component\. For more information, see [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md) 
@@ -17,7 +17,7 @@ For more information about using PhysX components, see [Simulating physics behav
 + [PhysX Terrain Component Properties](#physx-terrain-component-properties)
 + [Creating a PhysX Terrain Collider](#creating-physx-terrain-collider)
 
-## PhysX Terrain Component Properties<a name="physx-terrain-component-properties"></a>
+## PhysX Terrain Component Properties {#physx-terrain-component-properties}
 
 ![\[PhysX Terrain component properties.\]](/images/userguide/component/physx/ui-phsx-terrain-component-properties-1.27.png)
 
@@ -29,7 +29,7 @@ For more information about using PhysX components, see [Simulating physics behav
 | HeightField Asset |  A read\-only parameter that specifies the height field asset that contains the terrain\. This property can't be changed\.  | 
 | Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in Lumberyard Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.  | 
 
-## Creating a PhysX Terrain Collider<a name="creating-physx-terrain-collider"></a>
+## Creating a PhysX Terrain Collider {#creating-physx-terrain-collider}
 
 As a best practice, create a top\-level entity in your level and add the **PhysX Terrain** component\. You only need one entity with the **PhysX Terrain** attached for your level\.
 
@@ -43,11 +43,11 @@ As a best practice, create a top\-level entity in your level and add the **PhysX
 **Note**  
 The **Transform** component for the entity is ignored and doesn't affect the position of the terrain\.
 
-1. To have an entity interact with the terrain collider, you can create a dynamic entity so that the two entities interact\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics.md#example-creating-dynamic-game-entity)\.
+1. To have an entity interact with the terrain collider, you can create a dynamic entity so that the two entities interact\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics#example-creating-dynamic-game-entity)\.
 
 1. After you create your dynamic entity, press **Ctrl**\+**G** to enter gameplay mode\. The dynamic entity falls and then collides with the terrain collider\. 
 
 1. Press **Esc** to leave gameplay mode\.
 
 **Note**  
-In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.
+In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.

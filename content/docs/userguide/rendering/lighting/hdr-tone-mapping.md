@@ -3,7 +3,7 @@ description: ' Use HDR tone mapping settings to control the light and dark value
   in your &ALY; scene. '
 title: HDR Settings
 ---
-# HDR Settings<a name="enviro-lighting-hdr-tone-mapping"></a>
+# HDR Settings {#enviro-lighting-hdr-tone-mapping}
 
 As discussed in [Illuminance and Auto Exposure Key](/docs/userguide/rendering/lighting/luminance-scene-key.md), the auto exposure key setting controls the amount of scene exposure and determines whether the tone\-mapped image appears relatively bright or dark\. Several other settings also affect the tone mapping of scene\. These are known collectively as HDR \(high dynamic range\) in the **Time of Day Editor**\.
 

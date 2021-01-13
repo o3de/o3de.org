@@ -2,7 +2,7 @@
 description: ' Learn how to search for a GridMate session in &ALYlong;. '
 title: Searching for a Session
 ---
-# Searching for a Session<a name="network-session-service-searching"></a>
+# Searching for a Session {#network-session-service-searching}
 
 You search for a session by calling `GridMate::StartGridSearch()` after the session service has been started\. The session settings and configuration are set in the `GridMate::SearchParams`, which acts as a base class for certain implementations of `GridMate::SessionService`\.
 
@@ -13,7 +13,7 @@ You search for a session by calling `GridMate::StartGridSearch()` after the sess
 | --- | --- | 
 | GridMate::LANSessionService | GridMate::LANSearchParams | 
 
-## GridMate::SearchParams<a name="network-session-service-searching-gridmatesearchparams"></a>
+## GridMate::SearchParams {#network-session-service-searching-gridmatesearchparams}
 
 The following table shows the supported parameters in `GridMate::SearchParams`\.
 
@@ -27,7 +27,7 @@ The following table shows the supported parameters in `GridMate::SearchParams`\.
 | m\_timeOutMs | No | 2000 | 
 | m\_version | No | 1 | 
 
-## GridMate::LANSearchParams<a name="network-session-service-searching-gridmatelansearchparams"></a>
+## GridMate::LANSearchParams {#network-session-service-searching-gridmatelansearchparams}
 
 `GridMate::LANSessionParams` has the following additional parameters\.
 
@@ -40,7 +40,7 @@ The following table shows the supported parameters in `GridMate::SearchParams`\.
 | m\_serverPort | Yes |  | The port that game servers monitor for searches\. | 
 | m\_broadcastFrequencyMs | No | 1000 | The interval, in milliseconds, between search broadcast requests\. | 
 
-## Search Results<a name="network-session-service-searching-results"></a>
+## Search Results {#network-session-service-searching-results}
 
 When a search is complete, the `OnGridSearchComplete()` event is called\. The results are found in the `GridMate::GridSearch` argument\.
 
@@ -52,7 +52,7 @@ To query individual results, use `GridMate::GridSearch::GetResult()`\.
 
 The `GridMate::SearchInfo` object contains more details about the session \(for example, the number of used and free player slots\) and can be used when [Joining a Session](/docs/userguide/networking/session-service-joining.md)\.
 
-## Events<a name="network-session-service-searching-events"></a>
+## Events {#network-session-service-searching-events}
 
 The following table describes GridMate session search events\.
 
@@ -64,7 +64,7 @@ The following table describes GridMate session search events\.
 | OnGridSearchStart | A grid search has started\. | 
 | OnGridSearchComplete | A grid search has finished and contains the results\. | 
 
-## Examples<a name="network-session-service-searching-examples"></a>
+## Examples {#network-session-service-searching-examples}
 
 The following example searches for all available sessions\. The example assumes that GridMate has been initialized, a session service has been registered, and the class `MyClass` is listening for session events\.
 

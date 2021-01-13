@@ -2,7 +2,7 @@
 description: ' See the following TPS query execution flow in &ALYlong;. '
 title: TPS Query Execution Flow
 ---
-# TPS Query Execution Flow<a name="ai-tactical-point-execution-flow"></a>
+# TPS Query Execution Flow {#ai-tactical-point-execution-flow}
 
 The following steps summarize the definition and execution stages of a TPS query\. Note that only stages 3 and 4 have a significant impact on performance\.
 

@@ -3,7 +3,7 @@ description: ' Use the Virtual Gamepad gem in &ALYlong; to provide your game''s 
   with touch screen controls on mobile devices. '
 title: Virtual Gamepad Gem
 ---
-# Virtual Gamepad Gem<a name="gems-system-gem-virtualgamepad"></a>
+# Virtual Gamepad Gem {#gems-system-gem-virtualgamepad}
 
 Use the Virtual Gamepad gem to provide your game's UI with touch screen capabilities on mobile devices\. After you enable the Virtual Gamepad gem, you can add the virtual gamepad components to your game's UI in the **UI Editor**\.
 
@@ -23,7 +23,7 @@ To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sam
 
 You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/userguide/ui/editor/creating-canvases.md)\. 
 
-## Configuring Virtual Gamepad Behavior<a name="gems-system-gem-virtualgamepad-behavior"></a>
+## Configuring Virtual Gamepad Behavior {#gems-system-gem-virtualgamepad-behavior}
 
 You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
@@ -41,7 +41,7 @@ To modify the list of available virtual gamepad input channels, use the Project 
 
 ![\[Use the Project Configurator to modify the list of available virtual gamepad input channels.\]](/images/userguide/gems/gems-system-gem-virtualgamepad-3.png)
 
-## Virtual Gamepad Component Properties<a name="gems-system-gem-virtualgamepad-properties"></a>
+## Virtual Gamepad Component Properties {#gems-system-gem-virtualgamepad-properties}
 
 The Virtual Gamepad gem features two components that you can use to customize input for your mobile games: 
 
@@ -57,7 +57,7 @@ The Virtual Gamepad gem features two components that you can use to customize in
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-gem-virtualgamepad.html)
 
-## Displaying the Virtual Gamepad at Runtime<a name="gems-system-gem-virtualgamepad-displaying"></a>
+## Displaying the Virtual Gamepad at Runtime {#gems-system-gem-virtualgamepad-displaying}
 
 You can enable the virtual gamepad for runtime by creating instructions that loads the virtual gamepad UI canvas\. You can do this with C\+\+, Lua, or Script Canvas\. For more information, see [UICanvasManager](/docs/userguide/scripting/lua/ces-api-ui-uicanvasmanager.md) and [UICanvasComponent](/docs/userguide/scripting/lua/ces-api-ui-uicanvascomponent.md)\.
 

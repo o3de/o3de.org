@@ -3,7 +3,7 @@ description: ' Create a canvas in the &ui-canvas-editor; to use as an invisible 
   for your game user interface elements in &ALYlong;. '
 title: Working with UI Canvases
 ---
-# Working with UI Canvases<a name="ui-editor-creating-canvases"></a>
+# Working with UI Canvases {#ui-editor-creating-canvases}
 
 The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements\. Once you create a canvas, you can add elements such as images, text, and buttons\.
 

@@ -3,7 +3,7 @@ description: ' Use the Get Time node in the &ALYlong; &script-canvas; editor tor
   the current time value. '
 title: Get Time
 ---
-# Get Time<a name="get-time"></a>
+# Get Time {#get-time}
 
 Returns the current time of day for the level\. Time values are specified as decimal numbers from `0.0` to `24.0`\. For example, a value of `13.75` is 1:45 P\.M\. A value of `0.0` or `24.0` is 12:00 A\.M\.
 
@@ -13,7 +13,7 @@ Returns the current time of day for the level\. Time values are specified as dec
 
 ![\[gettime gettimenode, gettimeofdaynode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-time-node.png)
 
-## Inputs<a name="get-time-input"></a>
+## Inputs {#get-time-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the current time of day for the level\. Time values are specified as dec
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-time-output"></a>
+## Outputs {#get-time-output}
 
 
 ****  

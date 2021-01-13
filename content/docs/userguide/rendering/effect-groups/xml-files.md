@@ -2,7 +2,7 @@
 description: ' Manage post effect group XML files in &ALYlong;. '
 title: Post Effect Group XML Files
 ---
-# Post Effect Group XML Files<a name="effect-groups-xml-files"></a>
+# Post Effect Group XML Files {#effect-groups-xml-files}
 
 When you open Lumberyard Editor, the effect group located at `lumberyard_version\dev\Engine\Libs\PostEffectGroups\Default.xml` automatically loads\. The `Default.xml` file includes all available effects and the default values for each parameter\. You can modify the default values and copy and paste sections of the `Default.xml` file into custom effect groups\.
 

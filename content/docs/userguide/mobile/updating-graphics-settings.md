@@ -3,11 +3,11 @@ description: ' Use the &ALYlong; Graphics Settings window and configuration file
   to update graphics performance settings for Android and iOS games. '
 title: Updating Graphics Settings for Android and iOS
 ---
-# Updating Graphics Settings for Android and iOS<a name="ios-android-updating-graphics-settings"></a>
+# Updating Graphics Settings for Android and iOS {#ios-android-updating-graphics-settings}
 
 Lumberyard supports low, medium, high, and very high graphics performance for mobile devices\. You can change the graphics settings in Lumberyard Editor to simulate the graphics on Android and iOS devices\. This feature helps you visually check your mobile games in Lumberyard Editor during the development process\.
 
-## Updating Graphics Performance in Lumberyard Editor<a name="ios-android-updating-graphics-settings-in-lumberyard-editor"></a>
+## Updating Graphics Performance in Lumberyard Editor {#ios-android-updating-graphics-settings-in-lumberyard-editor}
 
 Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics setting for Android or iOS\. 
 
@@ -15,7 +15,7 @@ Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics 
 
 1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Performance**\.
 
-1. Choose **Android** or **iOS** and then choose a setting\. For more information, see [Editor Settings](/docs/userguide/editor/menus.md#lumberyard-editor-menus-config-spec)\.
+1. Choose **Android** or **iOS** and then choose a setting\. For more information, see [Editor Settings](/docs/userguide/editor/menus#lumberyard-editor-menus-config-spec)\.
 
 ![\[Lumberyard Editor Graphics Performance menu for Android\]](/images/userguide/mobile/graphics-performance-mobile-settings.png)
 
@@ -39,7 +39,7 @@ The following is an example of the `ios_models.xml` file\.
 
 ![\[Example of the ios_models.xml file\]](/images/userguide/mobile/graphics-performance-ios-models-xml-file-example.png)
 
-## Modifying Graphics Configuration Files<a name="ios-android-modifying-graphics-configuration-files"></a>
+## Modifying Graphics Configuration Files {#ios-android-modifying-graphics-configuration-files}
 
 Use the **Graphics Settings** window in Lumberyard Editor to modify the graphics settings for each OS configuration file\. You can also modify the configuration files for the following graphics settings: low, medium, high, and very high\.
 

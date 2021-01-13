@@ -2,7 +2,7 @@
 description: ' Learn the basics of the &ALYlong; Profiler diagnostics tool. '
 title: Profiler Tutorial
 ---
-# Profiler Tutorial<a name="profiler-using"></a>
+# Profiler Tutorial {#profiler-using}
 
 ****  
 Profiler is in preview release and is subject to change\. 
@@ -17,13 +17,13 @@ You can register an application in GridHub and use Profiler to capture, inspect,
 + [Playing Back Data](#profiler-playing-back-data)
 + [Exporting Data](#profiler-exporting-data)
 
-## Registering Your Application<a name="profiler-registering-application"></a>
+## Registering Your Application {#profiler-registering-application}
 
 To enable Profiler to capture information from your application, you must first register the application in GridHub\. To do so, add `AzFramework::TargetManagementComponent` to the application’s `SystemComponent`\. 
 
 **Note**: Lumberyard's built\-in applications already have this component added by default\. 
 
-## Launching Profiler<a name="profiler-launching"></a>
+## Launching Profiler {#profiler-launching}
 
 Unlike many Lumberyard utilities, you launch Profiler from its own executable file\.
 
@@ -31,7 +31,7 @@ Unlike many Lumberyard utilities, you launch Profiler from its own executable fi
 + From the Lumberyard `dev\Bin64\` directory, run `Profiler.exe`\.  
 ![\[Profiler initial window\]](/images/userguide/profiler-launched.png)
 
-## Capturing Data<a name="profiler-capturing-data"></a>
+## Capturing Data {#profiler-capturing-data}
 
 Profiler has two main modes of use: *capture mode* and *inspection mode*\. 
 
@@ -73,7 +73,7 @@ To use capture mode, perform the following steps\.
 **Note**  
 If you do not save the data, it will be discarded\. 
 
-## Inspecting Data<a name="profiler-inspecting-data"></a>
+## Inspecting Data {#profiler-inspecting-data}
 
 You can use profiler to examine the data that you have captured\. 
 
@@ -112,7 +112,7 @@ You can use profiler to examine the data that you have captured\.
 1. To return to capture mode from inspection mode, click the **LIVE** tab\.  
 ![\[Click LIVE to return to capture mode\]](/images/userguide/profiler-returning-to-capture-mode.png)
 
-## Playing Back Data<a name="profiler-playing-back-data"></a>
+## Playing Back Data {#profiler-playing-back-data}
 
 You can mark and play back a subset of your captured data\.
 
@@ -152,7 +152,7 @@ This yellow marker is movable and marks the end of your desired playback range\.
 
 1. Click **Stop** to stop the playback\.
 
-## Exporting Data<a name="profiler-exporting-data"></a>
+## Exporting Data {#profiler-exporting-data}
 
 Some Profiler instances have an export option that you can use to save data to a `.csv` file\.
 

@@ -3,7 +3,7 @@ description: ' Create a custom game icon in &ALYlong; for the title bar window o
   your game. '
 title: Adding Custom Game Icons
 ---
-# Adding Custom Game Icons<a name="game-build-custom-game-icons"></a>
+# Adding Custom Game Icons {#game-build-custom-game-icons}
 
 You can add a custom icon that appears in the top left title bar window of your game\.
 

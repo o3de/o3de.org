@@ -3,7 +3,7 @@ description: ' Learn how to rename your image files to make use of existing or c
   image processing presets in &ALYlong;. '
 title: Using Image Naming Conventions
 ---
-# Using Image Naming Conventions<a name="asset-pipeline-using-image-naming-conventions"></a>
+# Using Image Naming Conventions {#asset-pipeline-using-image-naming-conventions}
 
 You can use any existing or created [image processing presets](/docs/userguide/assets/creating-image-processing-presets.md)\. To do this, append the suffix to the end of the file name before you add it to your Lumberyard directory\.
 

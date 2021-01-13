@@ -3,7 +3,7 @@ description: ' Use the &ALY; &particle-editor; to create, edit, preview, manage,
   save particle libraries and emitters that are used with entities in your level. '
 title: Using the &particle-editor;
 ---
-# Using the Particle Editor<a name="particle-editor"></a>
+# Using the Particle Editor {#particle-editor}
 
 
 ****  
@@ -25,7 +25,7 @@ The **Particle Editor** includes the following UI elements:
 + **Attributes** panel – Lists the properties for the selected particle\.
 + **Level of Detail** panel – Displays level of detail \(LOD\) information for added particles\. For more information, see [Managing Particle Level of Detail \(LOD\)](/docs/userguide/particles/lod.md)\.
 
-## Adding a Particle Component<a name="adding-a-particle-component-to-your-level"></a>
+## Adding a Particle Component {#adding-a-particle-component-to-your-level}
 
 **To add a particle component to your level**
 + Do one of the following:

@@ -3,7 +3,7 @@ description: ' Use &ALY; &particle-editor; keyboard shortcuts (hot keys or hotke
   You can also edit the keyboard shortcuts. '
 title: Using &particle-editor; Keyboard Shortcuts
 ---
-# Using Particle Editor Keyboard Shortcuts<a name="particle-editor-shortcut-keys"></a>
+# Using Particle Editor Keyboard Shortcuts {#particle-editor-shortcut-keys}
 
 Most of the commands in the **Particle Editor** menus have corresponding keyboard shortcuts\. You can edit the keyboard shortcuts by clicking **Edit**, **Edit Hotkeys**\. Modify as needed in the **HotKey Configuration** window\.Hotkey Configuration
 

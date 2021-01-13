@@ -3,7 +3,7 @@ description: ' Build, deploy, and run an &ALYlong; multiplayer project''s dedica
   server to a host running Linux. '
 title: Deploy a &ALY; multiplayer project's server on Linux
 ---
-# Deploy a Lumberyard multiplayer project's server on Linux<a name="linux-build-lumberyard-executable"></a>
+# Deploy a Lumberyard multiplayer project's server on Linux {#linux-build-lumberyard-executable}
 
 
 ****  
@@ -18,7 +18,7 @@ title: Deploy a &ALY; multiplayer project's server on Linux
 
  These instructions are for building the **MultiplayerSample** project that's included in the Lumberyard distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\. 
 
-## Bundle the assets and source on Windows<a name="linux-build-lumberyard-executable-package"></a>
+## Bundle the assets and source on Windows {#linux-build-lumberyard-executable-package}
 
 To create a Linux server for your project, you first have to build the assets on Windows and bundle them for distribution to the server\. This distribution also includes all of the source code and tools that you need to generate a server build, so you don't need to install Lumberyard on your Linux host\. 
 
@@ -52,7 +52,7 @@ To create a Linux server for your project, you first have to build the assets on
 
     If you're running Windows 10, you can use the Windows Subsystem for Linux \(WSL\) to test a deployment\. See Microsoft's instructions on [installing WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and [initializing a distribution](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) to get set up with WSL\. You can access the file directly from the WSL mount points for your Windows drives\. The drives are available from within a WSL terminal at `/mnt/drive_letter`\. To avoid performance problems when running the dedicated server under WSL, copy the archive into WSL's file system before continuing\. 
 
-## Compile the dedicated server on Linux<a name="linux-build-lumberyard-executable-compile"></a>
+## Compile the dedicated server on Linux {#linux-build-lumberyard-executable-compile}
 
 1.  When the packaged assets and source are copied to your Linux host, extract them so that you can build the dedicated server\.
 

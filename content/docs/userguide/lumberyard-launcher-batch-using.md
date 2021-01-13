@@ -3,7 +3,7 @@ description: ' Use the &ly-launcher; batch file or command line version to insta
   required third-party software, SDKs, and plugins. '
 title: Using &ly-launcher; Batch
 ---
-# Using Lumberyard Setup Assistant Batch<a name="lumberyard-launcher-batch-using"></a>
+# Using Lumberyard Setup Assistant Batch {#lumberyard-launcher-batch-using}
 
 The command line version of Lumberyard Setup Assistant is useful for server and build administrators who want to create a batch file to run the same configuration on multiple machines\.
 
@@ -23,7 +23,7 @@ You can also use the batch file to create, enable, and disable capabilities, and
 
 1. Run the `SetupAssistantBatch.exe` and modify the commands as needed\. See the following list of commands\.
 
-## Commands<a name="lumberyard-launcher-batch-commands"></a>
+## Commands {#lumberyard-launcher-batch-commands}
 
  
 
@@ -41,7 +41,7 @@ You can also use the batch file to create, enable, and disable capabilities, and
 | \-\-none | Disables all capabilities\. | 
 | \-\-no\-modify\-environment | Prevents Lumberyard Setup Assistant from changing your environment variables\. | 
 
-## Example Commands<a name="lumberyard-launcher-batch-examples"></a>
+## Example Commands {#lumberyard-launcher-batch-examples}
 
 The following example sets the paths, clears all selected capabilities, and then enables the capability `rungame`\.
 

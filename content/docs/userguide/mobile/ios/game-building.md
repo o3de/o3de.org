@@ -2,7 +2,7 @@
 description: ' Configure and build an iOS game application using the &ALY; build tools. '
 title: Building Your iOS App
 ---
-# Building Your iOS App<a name="ios-game-building"></a>
+# Building Your iOS App {#ios-game-building}
 
 Set up your build environment and build an app that can run on an iOS device\.
 
@@ -20,7 +20,7 @@ You must do the following:
 
 1. [Build code from the command line](#ios-build-code-from-command-line)\.
 
-## Step 1: Configure a Game Project<a name="ios-configure-your-game-project"></a>
+## Step 1: Configure a Game Project {#ios-configure-your-game-project}
 
 You have two options for configuring a game project:
 + Use the [Samples Project](/docs/userguide/samples/projects/s-levels-intro.md) in the `lumberyard_version\dev\` directory as a foundation for your own game project\.
@@ -31,7 +31,7 @@ You have two options for configuring a game project:
 1. On your Windows computer, navigate to the `lumberyard_version\dev\Tools\LmbrSetup\Mac\` directory and open the Project Configurator\.
 
 1. In the Project Configurator, do one of the following:
-   + Select **SamplesProject** and then click **Set as default**\. Follow the instructions for [switching game projects](/docs/userguide/configurator/projects.md#project-configurator-different-project)\.
+   + Select **SamplesProject** and then click **Set as default**\. Follow the instructions for [switching game projects](/docs/userguide/configurator/projects#project-configurator-different-project)\.
    + Click **Create new**\. Follow the instructions for [creating a game project](/docs/userguide/configurator/projects.md)\.
 
 1. If you created a new game project, do the following:
@@ -42,7 +42,7 @@ You have two options for configuring a game project:
 
 1. \(Optional\) Configure system components and memory settings for your game project\. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
-## Step 2: Prepare Your Assets<a name="ios-prepare-your-assets"></a>
+## Step 2: Prepare Your Assets {#ios-prepare-your-assets}
 
 You can generate the data for your app on a computer running either Windows or macOS\. If you choose to use a Windows computer, you must configure your Windows computer and iOS device to share the same network\. For more information, see the [Run the Remote Shader Compiler](#ios-run-the-remote-shader-compiler) page\.
 
@@ -76,7 +76,7 @@ You can generate the data for your app on a computer running either Windows or m
 
    1. In Asset Processor, verify that the **Status** is **Idle**\.
 
-## Step 3: Configure the Build System<a name="ios-configure-the-build-system"></a>
+## Step 3: Configure the Build System {#ios-configure-the-build-system}
 
 When you build the engine and tools code for macOS or Windows, you initialize the build system and generate project files for Xcode\.
 
@@ -92,7 +92,7 @@ When you build the engine and tools code for macOS or Windows, you initialize th
    [WAF] 'xcode_mac' finished successfully (3.507s)
    ```
 
-## Step 4: Modify Your User Settings<a name="ios-modify-your-user-settings"></a>
+## Step 4: Modify Your User Settings {#ios-modify-your-user-settings}
 
 Update your configuration file to help increase the compilation speed and deployment when you build your game project\.
 
@@ -104,7 +104,7 @@ Update your configuration file to help increase the compilation speed and deploy
 
 1. Save the file\.
 
-## Step 5: Run the Remote Shader Compiler<a name="ios-run-the-remote-shader-compiler"></a>
+## Step 5: Run the Remote Shader Compiler {#ios-run-the-remote-shader-compiler}
 
 Lumberyard uses a versatile shader system to achieve high quality, realistic graphics\. When you run a game on an iOS device during development, you must connect to a remote shader compiler on your Windows or macOS computer\. This compiles the subset of shaders required by your game, on demand\.
 
@@ -113,16 +113,16 @@ When a new shader is compiled, the game waits for the remote shader compiler to 
 **Note**  
 You can also run the remote shader compiler on an Amazon EC2 instance\. For information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
-### Prerequisites<a name="ios-remote-shader-compiler-prerequisites"></a>
+### Prerequisites {#ios-remote-shader-compiler-prerequisites}
 
 To use the remote shader compiler, you must do the following:
 + \(First time only\) Create a `config.ini` file that tells the remote shader compiler the addresses from which to accept connections\. For instructions, see the procedure below\.
 + Connect the remote shader compiler host computer and iOS device to the same network and configure any firewalls to allow traffic through port 61453\.
 + Set up the system configuration file \(`system_ios_ios.cfg`\) for the mobile device to connect to the remote shader compiler on your computer\.
 
-You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md#mat-shaders-custom-dev-remote-compiler-allow)\.
+You can use an allow list to specify the IP addresses that are allowed to connect to your remote shader compiler\. For information, see [Creating an allow list for the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-allow)\.
 
-### Enabling a Connection Between the iOS App and the Remote Shader Compiler<a name="ios-enable-connection-between-app-and-shader-compiler"></a>
+### Enabling a Connection Between the iOS App and the Remote Shader Compiler {#ios-enable-connection-between-app-and-shader-compiler}
 
 You must modify certain configuration files to allow your iOS app to connect to the shader compiler\.
 
@@ -152,7 +152,7 @@ You must modify certain configuration files to allow your iOS app to connect to 
    + On Windows: `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\`
    + On macOS: `lumberyard_version/dev/Tools/CrySCompileServer/osx/profile/`
 
-## Step 6: Build Code from a Command Line<a name="ios-build-code-from-command-line"></a>
+## Step 6: Build Code from a Command Line {#ios-build-code-from-command-line}
 
 Configure and build various targets of your app, depending on your mode of development\. You can create a debug, profile, or release build\.
 + Debug – Allows you to see your code running under a debugger\. This build is slowest to run\.

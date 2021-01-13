@@ -3,7 +3,7 @@ description: ' Enable the Gestures gem for your game project to detect common ge
   input actions in &ALYlong;. '
 title: Gestures Gem
 ---
-# Gestures Gem<a name="gems-system-gem-gestures"></a>
+# Gestures Gem {#gems-system-gem-gestures}
 
 You can use the Gestures gem to recognize common gesture\-based input, which includes the following:
 + Tap or click – Single\-touch, discrete gesture
@@ -23,7 +23,7 @@ To enable the Gestures gem for your project, see [Add modular features and asset
 + [Configuring Gesture Recognizers](#configuring-gesture-recognizers)
 + [Responding to Gesture Input](#responding-to-gesture-input)
 
-## Configuring Gesture Recognizers<a name="configuring-gesture-recognizers"></a>
+## Configuring Gesture Recognizers {#configuring-gesture-recognizers}
 
 You can configure gesture recognizers with C\+\+ and the **Gestures** system component in the **System Entity Editor**\. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
@@ -40,7 +40,7 @@ Pause on the gesture recognizer to see a description and the valid values\.
 
 1. Make your changes and then click **Save**\.
 
-## Responding to Gesture Input<a name="responding-to-gesture-input"></a>
+## Responding to Gesture Input {#responding-to-gesture-input}
 
 Each gesture recognizer that the **Gestures** system component exposes corresponds to a gesture input channel that belongs to a gesture input device\.
 

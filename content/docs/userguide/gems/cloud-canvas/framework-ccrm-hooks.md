@@ -2,7 +2,7 @@
 description: ' Add custom features to &cloud; Resource Manager. '
 title: Cloud Gem Framework Resource Manager Hooks
 ---
-# Cloud Gem Framework Resource Manager Hooks<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks"></a>
+# Cloud Gem Framework Resource Manager Hooks {#cloud-canvas-cloud-gem-framework-ccrm-hooks}
 
 The Cloud Canvas Resource Manager ensures that the AWS resources that the game uses match the definitions of those resources in the game's source code\. However, you might need to add functionality to these processes\. For example, for the Dynamic Content Cloud Gem, you must upload any default packages for the project immediately after you create a new deployment\.
 
@@ -12,7 +12,7 @@ The following modules are supported:
 + `update.py` – Contains functions that are called before and after stack update operations\. For more information, see [Update Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-update-hook-functions)\.
 + `command.py` – Contains functions that add new CLI and GUI support to the resource manager\. For more information, see [Command Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-command-hook-functions)\.
 
-## Hook Function Parameters<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-function-parameters"></a>
+## Hook Function Parameters {#cloud-canvas-cloud-gem-framework-ccrm-hooks-function-parameters}
 
 All hook functions are called with the following:
 + A parameter that represents the hook function
@@ -20,7 +20,7 @@ All hook functions are called with the following:
 
 The parameter that represents the hook function is a [`HookModule` object](#cloud-canvas-cloud-gem-framework-ccrm-hooks-hookmodule-object)\. The most important property provided by the `HookModule` object is `context`, which is a [Context Object](#cloud-canvas-cloud-gem-framework-ccrm-hooks-context-object)\. The `Context` object gives your hook function access to the Cloud Canvas Resource Manager configuration data for the project\.
 
-### Futureproofing Your Functions<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-futureproofing-your-functions"></a>
+### Futureproofing Your Functions {#cloud-canvas-cloud-gem-framework-ccrm-hooks-futureproofing-your-functions}
 
 When you write a hook function, always add Python's `**kwargs` construct as the last argument\. That way your function can gracefully accept \(and ignore\) arguments that future versions of resource manager might add after your function is written\.
 
@@ -32,14 +32,14 @@ def a_hook(hook, arg_a, arg_b, **kwargs)
 
 Later, when resource manager adds an `arg_c` argument, your hook function does not break\. Your function still accepts `arg_a` and `arg_b` but can ignore `arg_c` because `arg_c` was passed through the `kwargs` parameter\.
 
-## Cloud Canvas Resource Manager Objects<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-resource-manager-objects"></a>
+## Cloud Canvas Resource Manager Objects {#cloud-canvas-cloud-gem-framework-ccrm-hooks-resource-manager-objects}
 
 Cloud Canvas Resource Manager includes Python objects that you can use to access project configuration data and perform various project operations\.
 
 **Note**  
 The source code for these objects is located in the Lumberyard `dev\Tools\lmbr_aws\AWSResourceManager` directory\.
 
-### Context Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-context-object"></a>
+### Context Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-context-object}
 
 The `Context` object has properties that provide access to project configuration and that perform operations such as adding resource definitions to a resource group template\.
 
@@ -60,7 +60,7 @@ You can get a `Context` object instance from the `context` property of the `Hook
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### AWSContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-awscontext-object"></a>
+### AWSContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-awscontext-object}
 
 The `AWSContext` object has helper functions and properties related to AWS clients and credentials\.
 
@@ -84,7 +84,7 @@ You can get an `AWSContext` object instance from the `aws` property of a `Contex
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### AWSCredentials Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-awscredentials-object"></a>
+### AWSCredentials Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-awscredentials-object}
 
 The `AWSCredentials` object contains AWS credential information that is read from the `.aws/credentials` file\. This is essentially a wrapper around a Python `ConfigParser` object\. The `AWSCredentials` object handles the AWS credential file's use of the `default` section, which conflicts with how `ConfigParser` handles defaults\.
 
@@ -110,7 +110,7 @@ To get an `AWSCredentials` object instance, use the `load_credentials` function 
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### ConfigContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-configcontext-object"></a>
+### ConfigContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-configcontext-object}
 
 The `ConfigContext` object has properties and functions that provide access to project and deployment configuration data\.
 
@@ -178,7 +178,7 @@ You can get a `ConfigContext` object instance from the `config` property of a `C
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### Gem Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-gem-object"></a>
+### Gem Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-gem-object}
 
 The `Gem` object provides access to gem\-specific configuration data\. To get `Gem` object instances, use the `enabled_gems` property of a `GemContext` object\.
 
@@ -199,7 +199,7 @@ The `Gem` object provides access to gem\-specific configuration data\. To get `G
 
 Other properties or functions of this object are internal to the resource manager and should not be used\.
 
-### GemContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-gemcontext-object"></a>
+### GemContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-gemcontext-object}
 
 The properties and methods of the `GemContext` object provide access to the project's gem configuration\.
 
@@ -215,7 +215,7 @@ You can get a `GemContext` object instance using the `gems` property of a `Conte
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### HandledError Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-handlederror-object"></a>
+### HandledError Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-handlederror-object}
 
 A `HandledError` object is Python `Exception` object\. You can use it in a hook function to cause an expected error to be displayed without producing a stack trace\. In general, the resource manager considers other kinds of exceptions to be unexpected errors and might show additional debug information that users should not see for expected errors\.
 
@@ -229,7 +229,7 @@ def my_function():
         raise HandledError('Something is wrong.')
 ```
 
-### HookModule Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-hookmodule-object"></a>
+### HookModule Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-hookmodule-object}
 
 The first argument \(and the only positional argument\) passed to a hook function is a `HookModule` object that represents the hook module itself\. This object's properties give you access to project configuration data\.
 
@@ -244,7 +244,7 @@ The first argument \(and the only positional argument\) passed to a hook functio
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### HookContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-hookcontext-object"></a>
+### HookContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-hookcontext-object}
 
 The `HookContext` object provides functionality for working with Cloud Canvas Resource Manager hooks\.
 
@@ -260,7 +260,7 @@ You can get a `HookContext` object instance from the `hooks` property of the `Co
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### ProjectSettings Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-projectsettings-object"></a>
+### ProjectSettings Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-projectsettings-object}
 
 The `ProjectSettings` object manages the project configuration data that is stored in the `project-settings.json` file in the project's Amazon S3 `Configuration` bucket\.
 
@@ -283,7 +283,7 @@ The `ProjectSettings` object manages the project configuration data that is stor
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### ResourceGroup Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-resourcegroup-object"></a>
+### ResourceGroup Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-resourcegroup-object}
 
 The `ResourceGroup` object encapsulates a resource group's configuration\. If multiple resource group stacks for a given resource group exist, each resource group stack is associated with a single deployment\.
 
@@ -317,7 +317,7 @@ To get `ResourceGroup` object instances, use a `ResourceGroupContext` object\.
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### ResourceGroupContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-resourcegroupcontext-object"></a>
+### ResourceGroupContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-resourcegroupcontext-object}
 
 The `ResourceGroupContext` object provides access to resource group configuration data\. To get a `ResourceGroupContext` object, use the `resource_groups` property of the `Context` object\.
 
@@ -332,7 +332,7 @@ The `ResourceGroupContext` object provides access to resource group configuratio
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### StackContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-stackcontext-object"></a>
+### StackContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-stackcontext-object}
 
 The `StackContext` object provides a number of helper functions that are useful when working with AWS CloudFormation stacks\. To get a `StackContext` object instance, use the `stack` property of the `Context` object\.
 
@@ -359,11 +359,11 @@ The `StackContext` object provides a number of helper functions that are useful 
 
 Other properties or functions of this object are internal to resource manager and should not be used\.
 
-### ViewContext Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-viewcontext-object"></a>
+### ViewContext Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-viewcontext-object}
 
 The `ViewContext` object contains methods that produce Cloud Canvas Resource Manager output messages\. Hook functions typically do not require these functions\. For more information, see the source code for this object\.
 
-### Uploader Object<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-uploader-object"></a>
+### Uploader Object {#cloud-canvas-cloud-gem-framework-ccrm-hooks-uploader-object}
 
 You can use an `Uploader` object function to upload content to the project global area of the project's `Configuration` bucket\. You pass `Uploader` object instances to the hook functions `before_project_update`, `after_project_update`, `before_resource_group_update`, and `after_resoruce_group_update`\.
 
@@ -380,11 +380,11 @@ You can use an `Uploader` object function to upload content to the project globa
 | upload\_dir\(name, path, alternate\_root = None\) | Uses key \+ '/' \+ name as the base object name to recursively upload the contents of a directory\. If alternate\_root is not None, the value specified is used as the object name prefix instead of key\. | 
 | zip\_and\_upload\_directory\(directory\_path, file\_name=None, aggregated\_directories=None, aggregated\_content=None\) |  Recursively compresses the contents of a directory into a `.zip` file\. It uses *key* \+ '/' \+ *directory\-name*\.zip as the object name to upload the file\. The `directory-name` is the name of the directory at the end of `directory_path`\. You can use the `file_name` argument to override the *directory\-name*\.zip part of the object name\. The `aggregated_directories` argument can be an optional dictionary that specifies the paths of additional directories whose contents are included in the `.zip` file\. The keys are the path location in the `.zip` file where the content is put\. The `aggregated_content` argument can be a dictionary that contains additional content to include in the `.zip` file\. The keys are the path location in the `.zip` file where the content is put\.  | 
 
-## Update Hook Functions<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-update-hook-functions"></a>
+## Update Hook Functions {#cloud-canvas-cloud-gem-framework-ccrm-hooks-update-hook-functions}
 
 Update hooks are implemented in a cloud gem's `Gem\<gem-name>\AWS\resource-manager-code\update.py` file\. If update hooks are defined in the module, the resource manager uses the parameters that are described in the [Hook Function Parameters](#cloud-canvas-cloud-gem-framework-ccrm-hooks-function-parameters) section to call the following functions\.
 
-### after\_project\_updated<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-after-project-updated-hook-function"></a>
+### after\_project\_updated {#cloud-canvas-cloud-gem-framework-ccrm-hooks-after-project-updated-hook-function}
 
 The `after_project_updated` hook function is called after a project stack update operation finishes successfully\.
 
@@ -395,7 +395,7 @@ The `after_project_updated` hook function is called after a project stack update
 | --- | --- | 
 | project\_uploader | An Uploader object that you can use to upload additional data\. | 
 
-### after\_resource\_group\_updated<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-after-resource-group-updated-hook-function"></a>
+### after\_resource\_group\_updated {#cloud-canvas-cloud-gem-framework-ccrm-hooks-after-resource-group-updated-hook-function}
 
 The `after_resource_group_updated` hook function is called after a resource group stack update operation finishes successfully\.
 
@@ -408,7 +408,7 @@ The `after_resource_group_updated` hook function is called after a resource grou
 | resource\_group\_name | The name of the resource group that was updated\. | 
 | resource\_group\_uploader | An Uploader object that you can use to upload additional data\. | 
 
-### before\_project\_updated<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-before-project-updated-hook-function"></a>
+### before\_project\_updated {#cloud-canvas-cloud-gem-framework-ccrm-hooks-before-project-updated-hook-function}
 
 The `before_project_updated` hook function is called before a project stack update operation begins\.
 
@@ -419,7 +419,7 @@ The `before_project_updated` hook function is called before a project stack upda
 | --- | --- | 
 | project\_uploader | An Uploader object that you can use to upload data for the operation\. | 
 
-### before\_resource\_group\_updated<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-before-resource-group-updated-hook-function"></a>
+### before\_resource\_group\_updated {#cloud-canvas-cloud-gem-framework-ccrm-hooks-before-resource-group-updated-hook-function}
 
 The `before_resource_group_updated` hook function is called before a resource group stack update operation begins\.
 
@@ -432,7 +432,7 @@ The `before_resource_group_updated` hook function is called before a resource gr
 | resource\_group\_name | The name of the resource group being updated\. | 
 | resource\_group\_uploader | An Uploader object that can be used to upload additional data\. | 
 
-### gather\_writable\_check\_list<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-gather-writable-check-list-hook-function"></a>
+### gather\_writable\_check\_list {#cloud-canvas-cloud-gem-framework-ccrm-hooks-gather-writable-check-list-hook-function}
 
 The `gather_writable_check_list` hook function is called before an update operation to gather a list of writable files\. If any of the local files to be updated are read\-only, the resource manager gives the user an opportunity to make the files writable \(for example, with a source control system\)\.
 
@@ -443,11 +443,11 @@ The `gather_writable_check_list` hook function is called before an update operat
 | --- | --- | 
 | check\_list | A list of the full paths of writeable files\. | 
 
-## Command Hook Functions<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-command-hook-functions"></a>
+## Command Hook Functions {#cloud-canvas-cloud-gem-framework-ccrm-hooks-command-hook-functions}
 
 If the following command line hook functions exist in a module, they are defined in a cloud gem's `Gem\<gem-name>\AWS\resource-manager-code\command.py` file\. The resource manager uses the parameters in the [Hook Function Parameters](#cloud-canvas-cloud-gem-framework-ccrm-hooks-function-parameters) section to call the following functions\.
 
-### add\_cli\_commands<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-add-cli-commands-hook-function"></a>
+### add\_cli\_commands {#cloud-canvas-cloud-gem-framework-ccrm-hooks-add-cli-commands-hook-function}
 
 Adds additional commands to the command line parser\. Called before command line argument parsing\. Cloud Canvas Resource Manager uses the Python [https://docs.python.org/3/library/argparse.html](https://docs.python.org/3/library/argparse.html) module for command line parsing\. All commands are grouped into a number of different subparsers\. For example, the commands `lmbr_aws project list-resources` and `lmbr_aws deployment list` contain the subparsers `project` and `deployment`, which define a `list-resources` and `list` command, respectively\.
 
@@ -459,7 +459,7 @@ Adds additional commands to the command line parser\. Called before command line
 | subparsers | The subparser collection object returned by the argparse add\_subparsers function\. Use the hook function to add a subparser to the collection\. Then, add the commands to the subparser\. | 
 | add\_common\_args |  Adds a set of common arguments to a command\. This function adds the following arguments\. For a description of these arguments, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\. `--aws-access-key` `--aws-secret-key` `--profile` `--assume-role` `--root-directory` `--game-directory` `--aws-directory` `--user-directory` `--verbose` `--no-prompt` The common arguments are processed by `lmbr_aws`\. The hook does not typically process these options\. This function can take the following parameters: `parser` – The `argparse` defined parser object to which the arguments are added\. `no_assume_role` – `True` specifies that the `--assume-role` common argument is not added; `False` specifies that it is\.  | 
 
-### add\_cli\_view\_commands<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-add-cli-view-commands-hook-function"></a>
+### add\_cli\_view\_commands {#cloud-canvas-cloud-gem-framework-ccrm-hooks-add-cli-view-commands-hook-function}
 
 Adds additional methods to the `ViewContext` object\. Called before other command line commands\.
 
@@ -470,7 +470,7 @@ Adds additional methods to the `ViewContext` object\. Called before other comman
 | --- | --- | 
 | view\_context | A ViewContext object\. | 
 
-### add\_gui\_commands<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-add-gui-commands-hook-function"></a>
+### add\_gui\_commands {#cloud-canvas-cloud-gem-framework-ccrm-hooks-add-gui-commands-hook-function}
 
 Adds commands to the Cloud Canvas Resource Manager in Lumberyard Editor\. When the resource manager window is first opened, Lumberyard Editor initializes the resource manager Python subsystem, which calls `add_gui_commands`\.
 
@@ -481,7 +481,7 @@ Adds commands to the Cloud Canvas Resource Manager in Lumberyard Editor\. When t
 | --- | --- | 
 | handlers | A dictionary that maps user interface command names to the handler functions that process them\. The command names are passed to Python from the user interface\. | 
 
-### add\_gui\_view\_commands<a name="cloud-canvas-cloud-gem-framework-ccrm-hooks-add-gui-view-commands-hook-function"></a>
+### add\_gui\_view\_commands {#cloud-canvas-cloud-gem-framework-ccrm-hooks-add-gui-view-commands-hook-function}
 
 Adds additional methods to the `ViewContext` object\. Called before a GUI command is executed\.
 

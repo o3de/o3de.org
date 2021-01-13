@@ -3,7 +3,7 @@ description: ' Debug your macOS application using Xcode and &ALY; source code. T
   the various steps to build assets, shaders, and your macOS application. '
 title: macOS Debugging and Troubleshooting
 ---
-# macOS Debugging and Troubleshooting<a name="osx-debugging-troubleshooting"></a>
+# macOS Debugging and Troubleshooting {#osx-debugging-troubleshooting}
 
 
 ****  

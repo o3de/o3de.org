@@ -2,7 +2,7 @@
 description: ' Add component entities in the &trackview-editor; in &ALYlong;. '
 title: Adding Component Entities
 ---
-# Adding Component Entities<a name="cinematics-adding-component-entities"></a>
+# Adding Component Entities {#cinematics-adding-component-entities}
 
 In the Track View, sequences determine what to animate based on what you add to the sequence\. For example, if you want to animate an entity with an **Actor** or **Light** component, you can add that component entity to a sequence and then modify its properties\.
 

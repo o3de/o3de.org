@@ -3,7 +3,7 @@ description: ' Examine the syntax of the intermediate JSON data format used by &
   AZ Code Generator. '
 title: Intermediate JSON Data Format
 ---
-# Intermediate JSON Data Format<a name="az-code-gen-intermediate-json-data-format"></a>
+# Intermediate JSON Data Format {#az-code-gen-intermediate-json-data-format}
 
 
 ****  

@@ -3,7 +3,7 @@ description: ' Use &asset-processor; in &ALYlong; to detect and process new or m
   asset files. '
 title: Using &asset-processor;
 ---
-# Using Asset Processor<a name="asset-pipeline-processor"></a>
+# Using Asset Processor {#asset-pipeline-processor}
 
 Asset Processor is a utility that runs in the background to detect changes to your asset files\. When Asset Processor detects new or updated asset files, it launches the Resource Compiler \(`Rc.exe` for FBX and ABC files, `AssetBuilder.exe` for all other types\), processes the assets, and then places them in the cache\. Asset Processor then notifies all running game or tool instances that the assets are updated\. The game can then reload the updated assets\.
 
@@ -42,7 +42,7 @@ However, if you aren't using the game or Lumberyard Editor, you can exit Asset P
 
 Asset Processor can also serve files directly to running console games so that the assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md)\.
 
-## Modifying the Asset Processor Configuration File<a name="asset-pipeline-processor-config"></a>
+## Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}
 
 Use the `AssetProcessorPlatformConfig.ini` configuration file \(located in the `lumberyard_version/dev/` directory\) to perform the following tasks:
 + Add new file types for Asset Processor to feed to the Resource Compiler, copy into the cache, or update existing file type rules\.
@@ -55,7 +55,7 @@ To add game\-specific overrides, you can add a file named `AssetProcessorGamePla
 
 For more information about these configuration files, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
-## Using the Asset Processor Batch Program<a name="asset-pipeline-processor-batch-processing"></a>
+## Using the Asset Processor Batch Program {#asset-pipeline-processor-batch-processing}
 
 The `AssetProcessorBatch.exe` application compiles all assets for the current project and enabled platforms\. If the process succeeds without errors, it exits with a `0` code\. You can use the Asset Processor Batch program as part of your build system for automation\.
 

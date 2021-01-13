@@ -3,15 +3,15 @@ description: ' Use the UICanvasManager component to load, unload, and find UI ca
   in &ALYlong;. '
 title: UICanvasManager
 ---
-# UICanvasManager<a name="lua-scripting-ces-api-ui-uicanvasmanager"></a>
+# UICanvasManager {#lua-scripting-ces-api-ui-uicanvasmanager}
 
 Contains functions for loading, unloading, and finding UI canvases\.
 
-## UiCanvasManagerBus<a name="lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus"></a>
+## UiCanvasManagerBus {#lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus}
 
 Services messages for the `UiCanvasManager` component\.
 
-### FindLoadedCanvasByPathName<a name="lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-findloadedcanvasbypathname"></a>
+### FindLoadedCanvasByPathName {#lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-findloadedcanvasbypathname}
 
 Returns the entity ID of the loaded canvas that has the specified canvas pathname\.
 
@@ -21,7 +21,7 @@ Returns the entity ID of the loaded canvas that has the specified canvas pathnam
 AZ::EntityId FindLoadedCanvasByPathName(const AZStd::string& canvasPathname)
 ```
 
-### LoadCanvas<a name="lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-loadcanvas"></a>
+### LoadCanvas {#lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-loadcanvas}
 
 Loads a canvas and returns the entity ID of the loaded canvas\.
 
@@ -31,7 +31,7 @@ Loads a canvas and returns the entity ID of the loaded canvas\.
 AZ::EntityId LoadCanvas(const AZStd::string& canvasPathname)
 ```
 
-### UnloadCanvas<a name="lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-unloadcanvas"></a>
+### UnloadCanvas {#lua-scripting-ces-api-ui-uicanvasmanager-uicanvasmanagerbus-unloadcanvas}
 
 Unloads a UI canvas\.
 

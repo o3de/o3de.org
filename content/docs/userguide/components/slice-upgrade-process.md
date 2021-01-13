@@ -3,14 +3,14 @@ description: ' Enable the &slice-upgrader; to convert slice data patches to the 
   file format. '
 title: Converting Slices with the &slice-upgrader;
 ---
-# Converting Slices with the Slice Upgrade Pipeline<a name="component-slice-upgrade-process"></a>
+# Converting Slices with the Slice Upgrade Pipeline {#component-slice-upgrade-process}
 
 In v1\.23, Amazon Lumberyard introduced a new file format for component slices\. Specifically, the override data found in data patches is now stored in a readable XML format instead of a hexadecimal byte stream\. This is useful when performing diff and merge operations on your slice files, and enables a more robust versioning system for your serialized components\. Use the Slice Upgrade Pipeline to automatically convert slice files to the latest slice file format\.
 
 **Note**  
-For more information about this new data patch format, and an example, see [Anatomy of a Slice Data Patch](/docs/userguide/dynamic-slices-overview-anatomy.md#slice-data-patch-anatomy)\.
+For more information about this new data patch format, and an example, see [Anatomy of a Slice Data Patch](/docs/userguide/dynamic-slices-overview-anatomy#slice-data-patch-anatomy)\.
 
-## When do I use the Slice Upgrade Pipeline?<a name="slice-upgrade-when"></a>
+## When do I use the Slice Upgrade Pipeline? {#slice-upgrade-when}
 
 Use the Slice Upgrade Pipeline in Lumberyard v1\.23 or later when:
 + Adding a slice that was saved using an older version of the slice file format\.
@@ -34,7 +34,7 @@ It is important to upgrade your slice assets as soon as possible, because:
 **Note**  
 In Lumberyard v1\.23 and later, any slices with data patches still using the old format are updated automatically when changes are pushed to them\. This is regardless of the slice conversion setting\.
 
-## How do I convert my slices using the Slice Upgrade Pipeline?<a name="slice-upgrade-how"></a>
+## How do I convert my slices using the Slice Upgrade Pipeline? {#slice-upgrade-how}
 
 Enable the Slice Upgrade Pipeline and restart Asset Processor to convert your slice files to the new format\.
 
@@ -64,11 +64,11 @@ For more information about using Asset Processor, see [Using Asset Processor](/d
 
 After you perform these steps, while the Slice Upgrade Pipeline remains enabled, and Asset Processor is running, any slices that you copy or pull into your project are automatically converted by Asset Processor to the new format\. A restart and full scan is not needed in this case\.
 
-## Troubleshooting the Slice Upgrade Pipeline<a name="slice-upgrade-troubleshooting"></a>
+## Troubleshooting the Slice Upgrade Pipeline {#slice-upgrade-troubleshooting}
 
 Look at Asset Processor logs for slice files that failed conversion or display warnings\. The following sections describe problems you might encounter\.
 
-### Warnings in the Slice Builder Settings File<a name="slice-upgrade-troubleshooting-settings"></a>
+### Warnings in the Slice Builder Settings File {#slice-upgrade-troubleshooting-settings}
 
 The Slice Upgrade Pipeline requires the settings file `SliceBuilderSettings.json` to be present in the `lumberyard_version\dev` folder\. The default content of this file is:
 
@@ -86,7 +86,7 @@ If there are problems with this file, one of the following warnings may appear i
 
 Make sure the settings file exists in the correct location, is not open in another application, and contains the json content shown above\.
 
-### Slice Dependency<a name="slice-upgrade-troubleshooting-dependency"></a>
+### Slice Dependency {#slice-upgrade-troubleshooting-dependency}
 
 If a nested slice is missing dependencies, the upgrade process fails because the slice instantiation failed\. Correct the dependency problem to continue the upgrade\.
 
@@ -94,7 +94,7 @@ If a nested slice is missing dependencies, the upgrade process fails because the
 Failed to Upgrade Slice: SlicePath - Slice Instantiation Failed.
 ```
 
-### Read\-Only Files<a name="slice-upgrade-troubleshooting-readonly"></a>
+### Read\-Only Files {#slice-upgrade-troubleshooting-readonly}
 
 Slices marked as read\-only fail to process with the following log output:
 
@@ -104,7 +104,7 @@ To Enabled Automatic Upgrades:
 Make sure the slice isn't marked Read-Only. If using Perforce, check out the slice file.
 ```
 
-### Renaming the source slice file<a name="slice-upgrade-troubleshooting-other"></a>
+### Renaming the source slice file {#slice-upgrade-troubleshooting-other}
 
 During the upgrade process, if the source slice file cannot be renamed for any reason, one of the following errors may appear in the Asset Processor log:
 + `Failed to Upgrade Slice: SlicePath - Could not rename existing file`

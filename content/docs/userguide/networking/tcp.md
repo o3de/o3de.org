@@ -3,15 +3,15 @@ description: ' Use the TCP socket driver in &ALYlong; 1.10 and later for direct 
   and an event bus that detects stream connect and disconnect events. '
 title: The TCP Stream Driver
 ---
-# The TCP Stream Driver<a name="network-tcp"></a>
+# The TCP Stream Driver {#network-tcp}
 
 Starting with Lumberyard version 1\.10, the GridMate library offers a TCP socket driver in addition to its existing UDP driver\. Unlike UDP, the TCP protocol uses direct connections, which require a listening port and established server endpoint that clients can use\. The GridMate library also adds an event bus that detects stream connect and disconnect events for TCP\.
 
-## TCP Socket Driver Classes<a name="network-tcp-tcp-socket-driver-classes"></a>
+## TCP Socket Driver Classes {#network-tcp-tcp-socket-driver-classes}
 
 The TCP socket driver has four public classes in the GridMate namespace that handle TCP packet traffic\.
 
-### GridMate::StreamSocketDriver<a name="network-tcp-socket-driver-classes-gridmatestreamsocketdriver"></a>
+### GridMate::StreamSocketDriver {#network-tcp-socket-driver-classes-gridmatestreamsocketdriver}
 
 This socket driver has methods that handle TCP connections\.
 
@@ -28,7 +28,7 @@ This socket driver has methods that handle TCP connections\.
 | Query whether a remote address endpoint is connected | bool IsConnectedTo\(const SocketDriverAddressPtr& to\) const; | 
 | Query whether the driver is actively listening for new connections | bool IsListening\(\) const; | 
 
-### GridMate::StreamSocketDriverEventsBus<a name="network-tcp-socket-driver-classes-gridmatestreamsocketdrivereventsbus"></a>
+### GridMate::StreamSocketDriverEventsBus {#network-tcp-socket-driver-classes-gridmatestreamsocketdrivereventsbus}
 
 The socket driver event bus has methods that detect connection and disconnection events\.
 
@@ -40,7 +40,7 @@ The socket driver event bus has methods that detect connection and disconnection
 | The socket driver establishes a connection | virtual void OnConnectionEstablished\(const SocketDriverAddress& address\); | 
 | The socket driver detects a removed connection | virtual void OnConnectionDisconnected\(const SocketDriverAddress& address\); | 
 
-### GridMate::StreamSecureSocketDriver<a name="network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriver"></a>
+### GridMate::StreamSecureSocketDriver {#network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriver}
 
 The secure stream socket driver has the following method that initializes cryptographic data for the driver\. It calls the `Initialize()` method before setting up the key and/or certificate\.
 
@@ -48,7 +48,7 @@ The secure stream socket driver has the following method that initializes crypto
 ResultCode InitializeSecurity(AZ::s32 familyType, const char* address, AZ::u32 port, AZ::u32 receiveBufferSize, AZ::u32 sendBufferSize, StreamSecureSocketDriverDesc& desc); 
 ```
 
-### GridMate::StreamSecureSocketDriver::StreamSecureSocketDriverDesc<a name="network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriverstreamsecuresocketdriverdesc"></a>
+### GridMate::StreamSecureSocketDriver::StreamSecureSocketDriverDesc {#network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriverstreamsecuresocketdriverdesc}
 
 The secure stream socket driver requires a description structure to set up the cryptographic key, certificates, and options\. The description structure has the following members\.
 
@@ -62,7 +62,7 @@ The secure stream socket driver requires a description structure to set up the c
 | const char\* m\_certificateAuthorityPEM; | A base64 encoded PEM format CA root certificate\. | 
 | bool m\_authenticateClient; | Ensures that both the client and server authenticate the PEM certificate\. This setting is made on the server\. The default is false; only the server is authenticated by default\. | 
 
-## Security<a name="network-tcp-security"></a>
+## Security {#network-tcp-security}
 
 You can optionally use the OpenSSL library with the TCP socket driver to support encryption of all streamed network traffic between server and clients\. In Lumberyard, this security feature is currently available only for the Windows and Linux operating systems\. The TCP socket driver implements these security features in the `GridMate::StreamSecureSocketDriver` class\.
 

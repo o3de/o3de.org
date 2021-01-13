@@ -2,7 +2,7 @@
 description: null
 title: Creating Character Animations with the Simple Motion Component
 ---
-# Creating Character Animations with the Simple Motion Component<a name="create-cinematics-with-simple-motion-animations-in-track-view-editor"></a>
+# Creating Character Animations with the Simple Motion Component {#create-cinematics-with-simple-motion-animations-in-track-view-editor}
 
 To create character animations with the Track View, you can add the **Simple Motion** component and the **Actor** component to an entity\. You then add the entity to a track view sequence and specify the motions that you want your character to animate\. When you add a motion track to a track view sequence, the Track View drives animation on the **Simple Motion** component and its properties: 
 + **Motion**
@@ -67,7 +67,7 @@ You can set the **Loop** parameter so that motion continues to play as long as t
 **Note**  
 When you update properties in the Track View, the original values for the entity properties are overwritten and are not restored\. For example, if you set the **Start time** to `3.0` in the Track View, this updates the **Simple Motion** component properties in the **Entity Inspector**\. If you want to reuse an entity with a **Simple Motion** component after a track view sequence is completed, update the **Play speed** parameter; the **Play speed** parameter always resets to zero in the Track View\. You can also avoid this issue by not reusing entities in this way\.
 
-## Blending Motions in the Track View Editor<a name="blending-motions-in-track-view-editor"></a>
+## Blending Motions in the Track View Editor {#blending-motions-in-track-view-editor}
 
 The **Simple Motion** component supports two motions at a time for blending: the currently playing motion and the previously played motion\. For example, you can blend two motions so that your actor smoothly transitions between a walk motion to a run motion\.
 

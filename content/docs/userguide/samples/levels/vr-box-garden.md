@@ -3,13 +3,13 @@ description: ' Use the VR Box Garden level to learn how to set up a VR playspace
   basic VR gameplay, and controller tracking in &ALYlong;. '
 title: VR Box Garden Level
 ---
-# VR Box Garden Level<a name="sample-level-vr-box-garden"></a>
+# VR Box Garden Level {#sample-level-vr-box-garden}
 
 The VR Box Garden level shows you how to use the Lumberyard component entity system to set up a VR playspace, basic VR gameplay, and controller tracking\. You use Script Canvas and Lua for VR device tracking, input events, and corresponding gameplay events\.
 
 For more information about installing the project that includes the VR Box Garden level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 
-## VR Device Tracking and Controller Gameplay<a name="sample-level-vr-box-garden-vr-device-tracking-controller-gameplay"></a>
+## VR Device Tracking and Controller Gameplay {#sample-level-vr-box-garden-vr-device-tracking-controller-gameplay}
 
 The VR Box Garden level uses the following:
 + `Input Configurator` entity – Handles VR device tracking and input events\.
@@ -27,7 +27,7 @@ The VR Box Garden level uses the following scripts:
 To play sound correctly, you must add both the **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** component and the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** component on the entity\.
 + Script Canvas graph – Spawns a projectile\. The **[Spawner](/docs/userguide/components/spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
 
-## VR Playspace<a name="sample-level-vr-box-garden-vr-playspace"></a>
+## VR Playspace {#sample-level-vr-box-garden-vr-playspace}
 
 The level's playspace includes the following:
 + Base – Uses the `Playspace_Base` entity that has a `vrplayspace_base.lua` script\. The Lua script adjusts the scale of the static mesh to match the dimension of the VR playspace\. The dimension is derived from the position of four corners of the playspace from the VR device\.
@@ -36,7 +36,7 @@ The level's playspace includes the following:
 
 ![\[Example of the playspace area in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-playspace-example.png)
 
-## Procedurally\-Spawned Stacking Boxes<a name="sample-level-vr-box-garden-spawned-stacking-boxes"></a>
+## Procedurally\-Spawned Stacking Boxes {#sample-level-vr-box-garden-spawned-stacking-boxes}
 
 The level uses six `Box Spawner` entities with the `random_spawner.lua` script to demonstrate how to procedurally generate a specified number of boxes at runtime\. These boxes are used in\-game as shooting targets\.
 
@@ -44,7 +44,7 @@ You can modify the following parameters in the **Spawner** component to affect r
 
 ![\[Spawner component parameters in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-spawner-parameters.png)
 
-For more information, see [Spawner Component Properties](/docs/userguide/components/spawner.md#component-spawner-properties)\.
+For more information, see [Spawner Component Properties](/docs/userguide/components/spawner#component-spawner-properties)\.
 
 To enable triggering spawn events, you can add a **Lua Script** component to the entity with the **Spawner** component attached\. The spawned box uses a dynamic slice called `greybox.slice`\.
 

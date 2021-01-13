@@ -2,7 +2,7 @@
 description: ' This topic provides brief descriptions of the main menu bar in &ly-editor;. '
 title: Using the Menu Bar
 ---
-# Using the Menu Bar<a name="lumberyard-editor-menus"></a>
+# Using the Menu Bar {#lumberyard-editor-menus}
 
 
 ****  
@@ -29,7 +29,7 @@ The main menu bar has the following categories of features and functionality\.
 | AWS | Set and configure Amazon Web Services and manage your profile\. | 
 | Help | Get information about this version of Lumberyard and how to use it\. | 
 
-## File<a name="lumberyard-editor-menus-file"></a>
+## File {#lumberyard-editor-menus-file}
 
 In the **File** menu, you can manage your game project such as opening and saving level files, show a log file, and modify your project's settings\.
 
@@ -53,7 +53,7 @@ In the **File** menu, you can manage your game project such as opening and savin
 | Upgrade Legacy Entities | Launch the Legacy Converter tool to convert your legacy entities to components that you can edit in Lumberyard Editor\. For more information, see [Converting Entities with the Legacy Converter](/docs/userguide/components/entity-data-converter.md)\. | 
 | Exit | Close Lumberyard Editor\. At the prompt, you can save any changes made since the last save was performed\. | 
 
-## Edit<a name="lumberyard-editor-menus-edit"></a>
+## Edit {#lumberyard-editor-menus-edit}
 
 In the **Edit** menu, you can select and manipulate objects, such as undo and redo actions, and select and hide objects\.
 
@@ -84,7 +84,7 @@ In the **Edit** menu, you can select and manipulate objects, such as undo and re
 | Set Object\(s\) Height | Opens a dialog box to specify a specified height \(in meters\) above the terrain\. | 
 | Editor Settings | See the [Editor Settings](#lumberyard-editor-menus-config-spec) section\. | 
 
-### Group<a name="lumberyard-editor-menus-group"></a>
+### Group {#lumberyard-editor-menus-group}
 
 In the **Group** menu, you can apply changes to multiple objects as a set, such as grouping and ungrouping objects\.
 
@@ -103,7 +103,7 @@ In the **Group** menu, you can apply changes to multiple objects as a set, such 
 | Hold | Save the current state for the group temporarily, so that you can test and experiment with alternative settings\. You can keep the new settings or click Fetch to undo them\. | 
 | Fetch | Restores the state of the group to the saved state specified with Hold\. This option is only available if you placed a Hold at some point\. | 
 
-### Modify<a name="lumberyard-editor-menus-modify"></a>
+### Modify {#lumberyard-editor-menus-modify}
 
 In the **Modify** menu, you can manipulate attributes and properties of objects and entities, such as height, alignment, and material\.
 
@@ -127,7 +127,7 @@ In the **Modify** menu, you can manipulate attributes and properties of objects 
 | Load Object\(s\) | Open the dialog box to browse and select objects from the game directory\. | 
 | Update Procedural Vegetation | Reapply settings in the \.sbsar files\. | 
 
-### Editor Settings<a name="lumberyard-editor-menus-config-spec"></a>
+### Editor Settings {#lumberyard-editor-menus-config-spec}
 
 In the **Editor Settings** menu, you can customize your editing experience\.
 
@@ -138,11 +138,11 @@ In the **Editor Settings** menu, you can customize your editing experience\.
 
 | Editor Settings Menu Item | Description | 
 | --- | --- | 
-| Global Preferences | Modify the global settings for Lumberyard Editor and its tools\. For more information, see [Changing Preferences](/docs/userguide/editor/customizing.md#lumberyard-editor-customizing-preferences)\. | 
+| Global Preferences | Modify the global settings for Lumberyard Editor and its tools\. For more information, see [Changing Preferences](/docs/userguide/editor/customizing#lumberyard-editor-customizing-preferences)\. | 
 | Graphics Performance | Select your preferred display setting: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html) | 
 | Keyboard Customization | Configure toolbars, menus, and keyboard shortcuts\. You can customize your keyboard settings, with the option to import or export saved custom keyboard settings\. | 
 
-## Game<a name="lumberyard-editor-menus-game"></a>
+## Game {#lumberyard-editor-menus-game}
 
 In the **Game** menu, you can add and test enhancements to your game project\.
 
@@ -169,7 +169,7 @@ In the **Game** menu, you can add and test enhancements to your game project\.
 | Terrain | Submenu for managing the terrain\. See the [Terrain](#lumberyard-editor-menus-terrain) section\. | 
 | Debugging | Submenu offer options for reloading specific files and for error checking\. See the [Tools](#lumberyard-editor-menus-tools) section\. | 
 
-### AI<a name="lumberyard-editor-menus-ai"></a>
+### AI {#lumberyard-editor-menus-ai}
 
 In the **AI** menu, you can manage AI settings such as generating AI navigation and updating the AI system within a level\. For more information, see the **[Navigation Area](/docs/userguide/components/nav-area.md)** component\.
 
@@ -200,7 +200,7 @@ In the **AI** menu, you can manage AI settings such as generating AI navigation 
 | AIPoint Pick Link | Combine AI navigation modifier points\. | 
 | AIPoint Pick Impass Link | Restricts AI navigation modifier points to prevent AI from walking on the points\. | 
 
-### Audio<a name="lumberyard-editor-menus-audio"></a>
+### Audio {#lumberyard-editor-menus-audio}
 
 In the **Audio** menu, you can stop all sounds or refresh the audio\.
 
@@ -214,7 +214,7 @@ In the **Audio** menu, you can stop all sounds or refresh the audio\.
 | Stop All Sounds | Silence all sounds in the level\. | 
 | Refresh Audio | Reapply settings to all of the sounds in the level\. | 
 
-### Clouds<a name="lumberyard-editor-menus-clouds"></a>
+### Clouds {#lumberyard-editor-menus-clouds}
 
 In the **Clouds** menu, you can create, open, close, and delete your custom cloud assets\. The project must have the [Sky Clouds Gem](/docs/userguide/gems/builtin/cloud.md) enabled\. For more information, see [Sky Clouds Gem](/docs/userguide/gems/builtin/cloud.md)\. 
 
@@ -230,7 +230,7 @@ In the **Clouds** menu, you can create, open, close, and delete your custom clou
 | Open | Open the selected cloud asset\. | 
 | Close | Close the selected cloud asset\. | 
 
-### Prefabs<a name="lumberyard-editor-menus-prefabs"></a>
+### Prefabs {#lumberyard-editor-menus-prefabs}
 
 In the **Prefabs** menu, you can modify CryEntities defined in the prefab library\. 
 
@@ -254,7 +254,7 @@ We recommend that you use slices instead\. For more information, see [Working wi
 | Close All | Close all prefabs\. | 
 | Reload All | Reload all prefabs\. | 
 
-### Terrain<a name="lumberyard-editor-menus-terrain"></a>
+### Terrain {#lumberyard-editor-menus-terrain}
 
 In the **Terrain** menu, you can specify changes that affect the game world and terrain appearance\.
 
@@ -279,7 +279,7 @@ In the **Terrain** menu, you can specify changes that affect the game world and 
 | Export Terrain Area | Save the selected terrain area to an \.obj or \.fbx file\. | 
 | Export Terrain Area with Objects | Save the selected terrain area and all objects within to an \.obj or \.fbx file\. | 
 
-### Debugging<a name="lumberyard-editor-menus-debugging"></a>
+### Debugging {#lumberyard-editor-menus-debugging}
 
 In the **Debugging** menu, you can reload scripts, textures, geometry, and terrain\. Other debugging options include configuring user commands and checking the level for errors\. 
 
@@ -307,13 +307,13 @@ In the **Debugging** menu, you can reload scripts, textures, geometry, and terra
 | Toolbox Macros | Display the shortcuts in the console and Lumberyard Editor commands that you created\. | 
 | Script Help | Open the Script Help window to view a list of commands, descriptions, and examples\. | 
 
-## Tools<a name="lumberyard-editor-menus-tools"></a>
+## Tools {#lumberyard-editor-menus-tools}
 
 In the **Tools** menu, you can access Lumberyard Editor tools and plugins\. For more information, see [Lumberyard Editors and Tools](/docs/userguide/lumberyard-tools.md)\.
 
 ![\[Lumberyard Editor Tools menu\]](/images/userguide/lumberyard-editor-menus-tools.png)
 
-## View<a name="lumberyard-editor-menus-view"></a>
+## View {#lumberyard-editor-menus-view}
 
 In the **View** menu, you can customize the layout and the viewport of Lumberyard Editor\.
 
@@ -331,7 +331,7 @@ In the **View** menu, you can customize the layout and the viewport of Lumberyar
 | Viewport | Submenu for the Perspective panel\. See the [Viewport](#lumberyard-editor-menus-viewport) section\. | 
 | Refresh Style | Reapply the stylesheet from of the editor's stylesheet\. | 
 
-### Viewport<a name="lumberyard-editor-menus-viewport"></a>
+### Viewport {#lumberyard-editor-menus-viewport}
 
 In the **Viewport** menu, you can change settings that affect the display for level design, entity placement, and object manipulation\. For more information, see [Using the Viewport](/docs/userguide/editor/viewport.md)\.
 
@@ -354,7 +354,7 @@ In the **Viewport** menu, you can change settings that affect the display for le
 | Switch Camera | Change the camera for the viewport: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-menus.html) | 
 | Show/Hide Helpers | Show or hide all helper objects\. | 
 
-## AWS<a name="lumberyard-editor-menus-aws"></a>
+## AWS {#lumberyard-editor-menus-aws}
 
 In the **AWS** menu, you can sign up for an Amazon Web Services \(AWS\) account, set up services using Cloud Canvas and Amazon GameLift, and open the **Cloud Gem Portal**\.
 
@@ -372,7 +372,7 @@ In the **AWS** menu, you can sign up for an Amazon Web Services \(AWS\) account,
 | Open AWS Console | Open the AWS Management Console and access Amazon Cognito, user management services; Amazon DynamoDB, NoSQL database service; Amazon S3, cloud storage; and AWS Lambda, serverless computing\. | 
 | Open Cloud Gem Portal | Open the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md), a gem specifying the configuration to the API Gateway to AWS Lambda\. | 
 
-## Help<a name="lumberyard-editor-menus-help"></a>
+## Help {#lumberyard-editor-menus-help}
 
 In the **Help** menu, you can search the Lumberyard documentation, open Lumberyard tutorials and resources, and view information about Lumberyard Editor\.
 

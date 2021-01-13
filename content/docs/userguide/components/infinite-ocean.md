@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Infinite Ocean component to add an ocean surfac
   to your level. '
 title: Infinite Ocean
 ---
-# Infinite Ocean<a name="component-infinite-ocean"></a>
+# Infinite Ocean {#component-infinite-ocean}
 
 
 ****  
@@ -47,7 +47,7 @@ In Lumberyard, various elements such as sunlight, reflections, and environment p
 + [Infinite Ocean Component Request Bus Interface](/docs/userguide/components/ocean/request-bus-interface.md)
 + [Using the Infinite Ocean Component with Script Canvas](/docs/userguide/components/ocean/working-with-script-canvas.md)
 
-## Adding the Infinite Ocean Component<a name="adding-the-infinite-ocean-component"></a>
+## Adding the Infinite Ocean Component {#adding-the-infinite-ocean-component}
 
 **To create an infinite ocean in your level**
 

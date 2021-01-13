@@ -2,7 +2,7 @@
 description: ' Use the Polygon Prism Shape component to define a volume in &ALYlong;. '
 title: Polygon Prism Shape
 ---
-# Polygon Prism Shape<a name="component-polygon-prism"></a>
+# Polygon Prism Shape {#component-polygon-prism}
 
 
 ****  
@@ -22,7 +22,7 @@ The **Polygon Prism Shape** component supports only simple polygons\. It can't h
 + [EBus Request Bus Interface](#component-polygon-prism-ebus-request)
   + [Example Polygon Prism Component EBus Request](#component-polygon-prism-ebus-request-component-example)
 
-## Polygon Prism Shape Component Properties<a name="component-polygon-prism-properties"></a>
+## Polygon Prism Shape Component Properties {#component-polygon-prism-properties}
 
 ![\[The Polygon Prism Shape component properties in Lumberyard Editor.\]](/images/userguide/component/polygon-prism-component-properties.png)
 
@@ -43,7 +43,7 @@ By default, when you add the **Polygon Prism Shape** component to an entity, the
 
 ![\[Default Polygon Prism Shape component with four vertices.\]](/images/userguide/component/polygon-prism-shape-component-1.png)
 
-## Working with Polygon Prism Components<a name="working-with-polygon-prism-components"></a>
+## Working with Polygon Prism Components {#working-with-polygon-prism-components}
 
 Each vertex has one planar and two linear manipulators\. Combined, these are called the *translation manipulator*\. You can use the translation manipulator to move the vertices\. The translation manipulator limits moving a vertex only to the xy\-plane\. No surface manipulator is present as all vertices must exist on the same plane\. You can't change the z\-position of the polygon in the local space\. 
 
@@ -57,7 +57,7 @@ Each vertex has one planar and two linear manipulators\. Combined, these are cal
 **Note**  
 The manipulators follow the grid snap setting that you can configure in the Lumberyard Editor toolbar\.
 
-You can use the blue arrow in the center of the volume to change the height\.<a name="component-polygon-prism-height-adjustment"></a>
+You can use the blue arrow in the center of the volume to change the height\. {#component-polygon-prism-height-adjustment}
 
 **To change the height of the polygon prism**
 + Drag the blue arrow to change the height of the polygon prism\.
@@ -102,7 +102,7 @@ You can also delete vertices from the polygon prism\.
 1. Click the vertex to remove it from the polygon prism\. You can also select a vertex and press **Delete**\.  
 ![\[The vertex is removed from the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-8.png)
 
-## EBus Request Bus Interface<a name="component-polygon-prism-ebus-request"></a>
+## EBus Request Bus Interface {#component-polygon-prism-ebus-request}
 
 Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game\. The **Polygon Prism Shape** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
 
@@ -116,7 +116,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 | GetPolygonPrism |  Returns a constant pointer to the underlying polygon prism shape data\.  |  None  | AZ::ConstPolygonPrismPtr | Yes | 
 | SetHeight |  Sets the height of the polygon prism shape\.  | HeightDefault value: `1.0`Min: `0.0`Max: N/A | None | Yes | 
 
-### Example Polygon Prism Component EBus Request<a name="component-polygon-prism-ebus-request-component-example"></a>
+### Example Polygon Prism Component EBus Request {#component-polygon-prism-ebus-request-component-example}
 
 The following script uses the request bus interface\.
 

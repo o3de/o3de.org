@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s &ui-canvas-editor; to create and customize vario
   user interface elements and components such as menus, buttons, and heads-up displays. '
 title: Using the &ui-canvas-editor;
 ---
-# Using the UI Editor<a name="ui-editor-using"></a>
+# Using the UI Editor {#ui-editor-using}
 
 You can use the **UI Editor** to create, customize, and animate various game user interface elements and components such as menus, buttons, and heads\-up displays \(HUDs\)\.
 

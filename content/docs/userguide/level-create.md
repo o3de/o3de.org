@@ -2,7 +2,7 @@
 description: ' Create a level as your first step in creating a &ALY; game. '
 title: Creating a New Level
 ---
-# Creating a New Level<a name="level-create"></a>
+# Creating a New Level {#level-create}
 
 The first step in creating a game world is to create a level\.
 

@@ -2,7 +2,7 @@
 description: ' Learn about the TerrainDataRequestBus API in &ALYlong;. '
 title: TerrainDataRequestBus API
 ---
-# TerrainDataRequestBus API<a name="component-legacy-terrain-api"></a>
+# TerrainDataRequestBus API {#component-legacy-terrain-api}
 
 `TerrainDataRequestBus` is an API introduced in Lumberyard release 1\.24\. This API presents an EBus interface to query *a terrain* system\. `TerrainDataRequestBus` enables you to easily swap different implementations of terrain systems\. The **Legacy Terrain** level component is implemented with the `TerrainDataRequestBus` API\. 
 
@@ -31,7 +31,7 @@ The `TerrainDataRequestBus` API replaces all terrain\-related APIs that historic
 virtual float GetTerrainElevation(float x, float y, int nSID = DEFAULT_SID) = 0;
 ```
 
-## Notes on thread safety<a name="component-legacy-terrain-api-thread-safety"></a>
+## Notes on thread safety {#component-legacy-terrain-api-thread-safety}
 
 `TerrainDataRequestBus` was designed for multi\-threaded usage\. The following are some recommendations to efficiently use the `TerrainDataRequestBus` API with thread safety in mind\. 
 

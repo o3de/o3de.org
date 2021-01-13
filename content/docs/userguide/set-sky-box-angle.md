@@ -3,7 +3,7 @@ description: ' Use the Set Skybox Angle node in the &ALYlong; &script-canvas; ed
   to rotate the skybox around the z-axis. '
 title: Set Skybox Angle
 ---
-# Set Skybox Angle<a name="set-sky-box-angle"></a>
+# Set Skybox Angle {#set-sky-box-angle}
 
 Sets the rotation angle for the skybox\. This rotates the skybox around the z\-axis\.
 
@@ -15,7 +15,7 @@ For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxe
 
 ![\[setskyboxanglenode, setskyboxangle\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-angle.png)
 
-## Inputs<a name="set-sky-box-angle-input"></a>
+## Inputs {#set-sky-box-angle-input}
 
 
 ****  
@@ -25,7 +25,7 @@ For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxe
 | In | Event | Triggers the node\. | 
 | Angle | Number |  Rotation angles in degrees\.  | 
 
-## Outputs<a name="set-sky-box-angle-output"></a>
+## Outputs {#set-sky-box-angle-output}
 
 
 ****  

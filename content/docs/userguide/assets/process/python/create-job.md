@@ -3,7 +3,7 @@ description: ' Create jobs in Python Asset Builder to create custom asset builde
   for your &ALYlong; project. '
 title: Create jobs with Python Asset Builder
 ---
-# Create jobs with Python Asset Builder<a name="python-asset-builder-create-job"></a>
+# Create jobs with Python Asset Builder {#python-asset-builder-create-job}
 
 When you create a job with the Python Asset Builder, the callback for `OnCreateJobsRequest` will be called with a `CreateJobsRequest` in a tuple\. The callback will return a `CreateJobsResponse` as the response using the data inside the request\. 
 
@@ -12,7 +12,7 @@ When you create a job with the Python Asset Builder, the callback for `OnCreateJ
 + [CreateJobsResponse](#python-asset-builder-create-jobs-response)
 + [Example: Create jobs](#python-asset-builder-create-jobs-example)
 
-## CreateJobsRequest<a name="python-asset-builder-create-jobs-request"></a>
+## CreateJobsRequest {#python-asset-builder-create-jobs-request}
 
 `CreateJobsRequest` provides data for operations related to the enabled platforms\. This data is used to build the output `JobDescriptor` for a specific enabled platform\. The `CreateJobsRequest` data contains input job data that is sent by **Asset Processor** to the builder for creating jobs\. 
 
@@ -39,7 +39,7 @@ class azlmbr.asset.builder.PlatformInfo
 - tags (set of string) The tags such as "console" or "tools" on that platform
 ```
 
-## CreateJobsResponse<a name="python-asset-builder-create-jobs-response"></a>
+## CreateJobsResponse {#python-asset-builder-create-jobs-response}
 
 The response from the callback determines what work to process for the source asset file\. In most cases, the builder creates a job descriptor for each source asset and for each enabled platform\. 
 
@@ -175,7 +175,7 @@ azlmbr.asset.builder.JobDependency_Order
 azlmbr.asset.builder.JobDependency_OrderOnce
 ```
 
-## Example: Create jobs<a name="python-asset-builder-create-jobs-example"></a>
+## Example: Create jobs {#python-asset-builder-create-jobs-example}
 
 This is a simple example of how the asset builder might create jobs when **Asset Processor** detects a new or changed source asset file in the watch folders of the registered pattern\. 
 

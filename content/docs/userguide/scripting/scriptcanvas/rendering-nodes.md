@@ -3,7 +3,7 @@ description: ' Add &ALYlong; &script-canvas; rendering nodes to your script to c
   effects, such as blur, shadow, and weather effects. '
 title: Rendering Nodes
 ---
-# Rendering Nodes<a name="script-canvas-rendering-nodes"></a>
+# Rendering Nodes {#script-canvas-rendering-nodes}
 
 See the following **Rendering** nodes for the **Script Canvas** editor\. 
 

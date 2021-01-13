@@ -3,7 +3,7 @@ description: ' Download and install &ALYlong;, which includes folders and files 
   WAF, code, gems, &ly-editor;, assets, and samples. '
 title: Installing &ALY;
 ---
-# Installing Lumberyard<a name="setting-up-downloading-lumberyard"></a>
+# Installing Lumberyard {#setting-up-downloading-lumberyard}
 
 **Download the latest version of Lumberyard Installer**  
 [https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)
@@ -18,7 +18,7 @@ Verify that you have the required hardware and software for Lumberyard\. For mor
 + [Using GitHub to Download Lumberyard](#download-lumberyard-github)
 + [Lumberyard Directories and Files](#lumberyard-installed-directories-and-files)
 
-## Using the Lumberyard Installer<a name="download-lumberyard-installer"></a>
+## Using the Lumberyard Installer {#download-lumberyard-installer}
 
 The Lumberyard Installer extracts the Lumberyard files and adds shortcuts to your desktop and start menu for the following:
 + Lumberyard Setup Assistant
@@ -45,11 +45,11 @@ In some situations, the Lumberyard Installer can stop responding and refuse to p
 
 1. On the **Installation Successfully Completed** page, click **Launch Lumberyard Setup Assistant** to install required third\-party software and SDKs\. For more information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
-## Using GitHub to Download Lumberyard<a name="download-lumberyard-github"></a>
+## Using GitHub to Download Lumberyard {#download-lumberyard-github}
 
 Each Lumberyard release exists as a separate branch in GitHub\. To download Lumberyard, see the [Amazon Lumberyard page on GitHub](https://github.com/aws/Lumberyard)\.
 
-## Lumberyard Directories and Files<a name="lumberyard-installed-directories-and-files"></a>
+## Lumberyard Directories and Files {#lumberyard-installed-directories-and-files}
 
 After you install Lumberyard, the Lumberyard root directory includes the following folders and files:
 + `dev`

@@ -2,15 +2,15 @@
 description: ' Use the UITooltipComponent to provide the text of a tooltip in &ALYlong;. '
 title: UITooltipComponent
 ---
-# UITooltipComponent<a name="lua-scripting-ces-api-ui-uitooltipcomponent"></a>
+# UITooltipComponent {#lua-scripting-ces-api-ui-uitooltipcomponent}
 
 You can use a tooltip component to provide the text of a tooltip\.
 
-## UiTooltipBus<a name="lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus"></a>
+## UiTooltipBus {#lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus}
 
 Services messages for the `UiTooltipComponent`\.
 
-### GetText<a name="lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus-gettext"></a>
+### GetText {#lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus-gettext}
 
 Returns the tooltip text\.
 
@@ -20,7 +20,7 @@ Returns the tooltip text\.
 AZStd::string GetText()
 ```
 
-### SetText<a name="lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus-settext"></a>
+### SetText {#lua-scripting-ces-api-ui-uitooltipcomponent-uitooltipbus-settext}
 
 Sets the tooltip text\.
 

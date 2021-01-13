@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s Maestro gem to create cinematic sequences for yo
   games. '
 title: Maestro Gem
 ---
-# Maestro Gem<a name="gems-system-gem-maestro"></a>
+# Maestro Gem {#gems-system-gem-maestro}
 
 The Maestro gem enables Lumberyard's cinematic sequence system\. With the cinematic sequence system, you can create cutscenes for your games with the Track View and render them as a series of frames and/or a movie in the editor and during gameplay\.
 

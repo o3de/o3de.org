@@ -2,7 +2,7 @@
 description: ' Add realistic-looking clouds to your &ALYlong; level. '
 title: Adding Clouds
 ---
-# Adding Clouds<a name="weather-clouds-intro"></a>
+# Adding Clouds {#weather-clouds-intro}
 
 You can create realistic\-looking clouds in your level that move, cast shadows, and that objects can fly through\. 
 

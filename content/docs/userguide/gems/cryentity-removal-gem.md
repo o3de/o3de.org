@@ -2,7 +2,7 @@
 description: ' Use the CryEntity Removal gem to disable all legacy features in &ly-editor;. '
 title: CryEntity Removal Gem
 ---
-# CryEntity Removal Gem<a name="gems-system-cryentity-removal-gem"></a>
+# CryEntity Removal Gem {#gems-system-cryentity-removal-gem}
 
 You can use the CryEntity Removal gem to disable all [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy) features from Lumberyard Editor\. Legacy features appear as *legacy* in Lumberyard Editor and will eventually be removed\. This includes the following features:
 + [Database View](/docs/userguide/level-database-view.md) \(Legacy\)

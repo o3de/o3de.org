@@ -2,28 +2,28 @@
 description: ' Learn the key concepts and discover resources for programming in &ALYlong;. '
 title: '&ALY; Programming Concepts and Resources'
 ---
-# Lumberyard Programming Concepts and Resources<a name="lumberyard-programming-concepts"></a>
+# Lumberyard Programming Concepts and Resources {#lumberyard-programming-concepts}
 
 This topic provides brief explanations of some important Lumberyard programming concepts and resources\. More information links are provided\.
 
 **Topics**
-- [Lumberyard Programming Concepts and Resources<a name="lumberyard-programming-concepts"></a>](#lumberyard-programming-concepts-and-resources)
-  - [Asset System<a name="lumberyard-programming-concepts-asset-system"></a>](#asset-system)
-  - [AZ Code Generator<a name="lumberyard-programming-concepts-az-code-generator"></a>](#az-code-generator)
-  - [Building<a name="lumberyard-programming-concepts-building"></a>](#building)
-  - [Cloud Canvas<a name="lumberyard-programming-concepts-cloud-canvas"></a>](#cloud-canvas)
-  - [Debugging<a name="lumberyard-programming-concepts-debugging"></a>](#debugging)
-  - [EBuses<a name="lumberyard-programming-concepts-ebuses"></a>](#ebuses)
-  - [Entities and Components<a name="lumberyard-programming-concepts-entities-and-components"></a>](#entities-and-components)
-  - [Gems and AZ Modules<a name="lumberyard-programming-concepts-gems-and-modules"></a>](#gems-and-az-modules)
-  - [Input<a name="lumberyard-programming-concepts-input"></a>](#input)
-  - [Lua<a name="lumberyard-programming-concepts-lua"></a>](#lua)
-  - [Networking<a name="lumberyard-programming-concepts-networking"></a>](#networking)
-  - [Reflection System<a name="lumberyard-programming-concepts-reflection"></a>](#reflection-system)
-  - [Script Canvas<a name="lumberyard-programming-concepts-script-canvas"></a>](#script-canvas)
-  - [Slices<a name="lumberyard-programming-concepts-slices"></a>](#slices)
+- [Lumberyard Programming Concepts and Resources {#lumberyard-programming-concepts}](#lumberyard-programming-concepts-and-resources)
+  - [Asset System {#lumberyard-programming-concepts-asset-system}](#asset-system)
+  - [AZ Code Generator {#lumberyard-programming-concepts-az-code-generator}](#az-code-generator)
+  - [Building {#lumberyard-programming-concepts-building}](#building)
+  - [Cloud Canvas {#lumberyard-programming-concepts-cloud-canvas}](#cloud-canvas)
+  - [Debugging {#lumberyard-programming-concepts-debugging}](#debugging)
+  - [EBuses {#lumberyard-programming-concepts-ebuses}](#ebuses)
+  - [Entities and Components {#lumberyard-programming-concepts-entities-and-components}](#entities-and-components)
+  - [Gems and AZ Modules {#lumberyard-programming-concepts-gems-and-modules}](#gems-and-az-modules)
+  - [Input {#lumberyard-programming-concepts-input}](#input)
+  - [Lua {#lumberyard-programming-concepts-lua}](#lua)
+  - [Networking {#lumberyard-programming-concepts-networking}](#networking)
+  - [Reflection System {#lumberyard-programming-concepts-reflection}](#reflection-system)
+  - [Script Canvas {#lumberyard-programming-concepts-script-canvas}](#script-canvas)
+  - [Slices {#lumberyard-programming-concepts-slices}](#slices)
 
-## Asset System<a name="lumberyard-programming-concepts-asset-system"></a>
+## Asset System {#lumberyard-programming-concepts-asset-system}
 
 The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](/docs/userguide/assets/intro.md) to asynchronously stream and activate assets\.
 
@@ -33,31 +33,31 @@ For information on adding a custom asset type to Lumberyard, see [Adding an Asse
 
 For information on creating a builder for custom assets, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
-## AZ Code Generator<a name="lumberyard-programming-concepts-az-code-generator"></a>
+## AZ Code Generator {#lumberyard-programming-concepts-az-code-generator}
 
 You can use the AZ Code Generator command line utility to generate boilerplate code when the structure of the intended code is known in advance\. AZ Code Generator generates source code \(or any data or text\) from source code that is specially tagged\. 
 
 For more information, see [Automating boilerplate with AZ Code Generator](/docs/userguide/codegen/intro.md)\.
 
-## Building<a name="lumberyard-programming-concepts-building"></a>
+## Building {#lumberyard-programming-concepts-building}
 
 You can build your Lumberyard projects in *profile* mode, *debug* mode, or *release* mode\.
 
 For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\. 
 
-## Cloud Canvas<a name="lumberyard-programming-concepts-cloud-canvas"></a>
+## Cloud Canvas {#lumberyard-programming-concepts-cloud-canvas}
 
 Lumberyard's [Cloud Canvas](/docs/userguide/gems/cloud-canvas/intro.md) enables connected game features that use AWS cloud computing\. You can use the [cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) that are included with Lumberyard to provide prepackaged cloud\-connected game features\. You can use the [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md) to [create your own cloud gems](/docs/userguide/gems/cloud-canvas/cgf-getting-started-create-gem.md)\. Each cloud gem has a web management interface called the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)\. You can use the Cloud Gem Framework to [develop your own Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/cgf-cgp-dev-gs.md)\.
 
 For more information about programming with Cloud Canvas, see [Getting Started with the Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/cgf-getting-started.md)\.
 
-## Debugging<a name="lumberyard-programming-concepts-debugging"></a>
+## Debugging {#lumberyard-programming-concepts-debugging}
 
 Lumberyard includes a number of programming tools for testing, profiling, and debugging\.
 
 For more information, see [Profiling, Testing, and Debugging Game Projects](/docs/userguide/programming/testing/debugging-intro.md)\.
 
-## EBuses<a name="lumberyard-programming-concepts-ebuses"></a>
+## EBuses {#lumberyard-programming-concepts-ebuses}
 
 EBuses \(event buses\) are Lumberyard's general\-purpose messaging system\. They dispatch notifications and receive requests\.
 
@@ -69,7 +69,7 @@ For information about EBuses, see [Working with the Event Bus \(EBus\) system](/
 
 For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/userguide/scripting/lua/ces-using-ebuses.md)\.
 
-## Entities and Components<a name="lumberyard-programming-concepts-entities-and-components"></a>
+## Entities and Components {#lumberyard-programming-concepts-entities-and-components}
 
 Lumberyard uses a lightweight entity/component model called the component entity system for both game objects and systems\. Lumberyard entities are simply an ID and a container of components\. They have no functionality associated with them\. Lumberyard's component model is granular: It expects each component to provide independent functionality\. It expects game objects to be made up of one or more entities with many components attached to each entity\. Lumberyard components communicate with each other using a messaging system called EBuses \(explained later\)\. Lumberyard expects you to use EBuses instead of holding references to other entities or their components\.
 
@@ -85,7 +85,7 @@ Entities are never allowed to be in a state in which one of their component depe
 
 For more information about entities and components, see [Programmer's Guide to Entities and Components](/docs/userguide/components/entity-system-pg-intro.md)\.
 
-## Gems and AZ Modules<a name="lumberyard-programming-concepts-gems-and-modules"></a>
+## Gems and AZ Modules {#lumberyard-programming-concepts-gems-and-modules}
 
 Lumberyard is designed to create applications that are small executables\. A Lumberyard application has a simple application class \(`AZ::ComponentApplication`\)\. The application class reads a manifest \(a `gems.json` file\) and loads modules that provide functionality for your game\. Lumberyard calls these modules `gems`\. Lumberyard's goal is to have you choose a set of gems that match the requirements of your game and only compile what you need\. Lumberyard includes a variety of prebuilt gems that add functionality to the game engine, such as VR, cloud connectivity, and the EMotion FX animation system\. 
 
@@ -101,31 +101,31 @@ For information on programming with gems, see [Programming with Gems](/docs/user
 
 For information on creating system components, see [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)\.
 
-## Input<a name="lumberyard-programming-concepts-input"></a>
+## Input {#lumberyard-programming-concepts-input}
 
 Lumberyard provides independent, extensible, and efficient access to input data from supported operating systems and devices\. Lumberyard's AZ framework input interface provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management\. 
 
 For more information, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\. 
 
-## Lua<a name="lumberyard-programming-concepts-lua"></a>
+## Lua {#lumberyard-programming-concepts-lua}
 
 [Lua](https://www.lua.org/) is a powerful, fast, lightweight, scripting language\. You can use Lua in Lumberyard to facilitate quick iteration of your game project\. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code\. 
 
 For more information on using Lua in Lumberyard, see [Writing Lua Scripts](/docs/userguide/scripting/lua/intro.md)\.
 
-## Networking<a name="lumberyard-programming-concepts-networking"></a>
+## Networking {#lumberyard-programming-concepts-networking}
 
 Lumberyard's networking system is designed for efficient bandwidth usage and low\-latency communications\. It uses a replica framework to synchronize objects over the network, and its session management integrates with major online console services\. Lumberyard networking lets you handle peer\-to\-peer and client\-server topologies with host migration and supports in\-game achievements, leaderboards, and cloud\-based saved games\. 
 
 For more information, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\.
 
-## Reflection System<a name="lumberyard-programming-concepts-reflection"></a>
+## Reflection System {#lumberyard-programming-concepts-reflection}
 
 You can use Lumberyard's reflection system to expose runtime code for C\+\+\-based objects, for Lumberyard Editor, and for scripting \(Lua and Script Canvas\)\. Lumberyard provides three reflection contexts for this purpose: a [serialization context](/docs/userguide/components/entity-system-reflection-serialization-context.md), a [behavior context](/docs/userguide/components/entity-system-reflection-behavior-context.md), and an [edit context](/docs/userguide/components/entity-system-reflection-edit-context.md)\.
 
 For more information, see [Reflecting Lumberyard Classes, Methods, and EBus Interfaces](/docs/userguide/components/entity-system-reflection-intro.md)\. 
 
-## Script Canvas<a name="lumberyard-programming-concepts-script-canvas"></a>
+## Script Canvas {#lumberyard-programming-concepts-script-canvas}
 
 [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md) is Lumberyard's visual scripting environment\.
 
@@ -133,7 +133,7 @@ For information on creating your own nodes in Script Canvas, see [Creating Custo
 
 For information on using the behavior context to expose runtime code to Script Canvas, see [Script Canvas and the Behavior Context](/docs/userguide/scripting/scriptcanvas/behavior-context.md)\.
 
-## Slices<a name="lumberyard-programming-concepts-slices"></a>
+## Slices {#lumberyard-programming-concepts-slices}
 
 Slices are practical and powerful way to create units of content in Lumberyard and manage them\. A slice is a collection of one or more entities\. You can instantiate a slice as many times as you require\. Many game engines use levels and/or sublevels for their content, but Lumberyard loads content into its engine in the form of slices\. Because slices can inherit from each other and be nested, they are powerful tools for managing content\.
 

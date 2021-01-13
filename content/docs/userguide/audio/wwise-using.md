@@ -3,7 +3,7 @@ description: ' Use an exclusive, free version of the Audiokinetic Wwise audio mi
   for your &ALY; game project. '
 title: Setting up Wwise LTX
 ---
-# Setting up Wwise LTX<a name="audio-wwise-using"></a>
+# Setting up Wwise LTX {#audio-wwise-using}
 
 Lumberyard includes Audiokinetic Wwise LTX, which is an exclusive, free version of the Audiokinetic Wwise audio middleware\. Sound designers and composers can use Wwise LTX to work independently from the engineering team and author rich soundscapes for your games\.
 
@@ -14,7 +14,7 @@ If your game requires advanced features, you can upgrade to the full version of 
 + [Running the Wwise LTX Authoring Tool](#audio-setting-wwise-authoring-tool)
 + [Accessing Wwise LTX Documentation](#audio-wwise-using-documentation)
 
-## Installing Wwise LTX Authoring Tool<a name="audio-installing-wwise"></a>
+## Installing Wwise LTX Authoring Tool {#audio-installing-wwise}
 
 To author sounds with Wwise LTX for your game, you must first install Wwise LTX Authoring Tool\.
 
@@ -40,7 +40,7 @@ The Wwise LTX SDK is already included in Lumberyard's `3rdParty` directory\. If 
 **Note**  
 Lumberyard does not require installation of the new version of Wwise listed in the Wwise Launcher\.
 
-## Running the Wwise LTX Authoring Tool<a name="audio-setting-wwise-authoring-tool"></a>
+## Running the Wwise LTX Authoring Tool {#audio-setting-wwise-authoring-tool}
 
 To run the Wwise LTX Authoring Tool, you must first open or create a project\. The Samples Project and Starter Game both include a Wwise LTX audio project that you can use\.
 
@@ -60,7 +60,7 @@ To run the Wwise LTX Authoring Tool, you must first open or create a project\. T
 
    For more information about setting up Wwise for your game project, see [Setting up a Wwise Project](/docs/userguide/audio/wwise-project-setting-up.md)\.
 
-## Accessing Wwise LTX Documentation<a name="audio-wwise-using-documentation"></a>
+## Accessing Wwise LTX Documentation {#audio-wwise-using-documentation}
 
 You can access the Wwise LTX documentation in the Wwise Authoring Tool\.
 

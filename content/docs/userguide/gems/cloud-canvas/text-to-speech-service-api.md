@@ -2,7 +2,7 @@
 description: ' Use API operations to control text to speech functionality in &ALYlong;. '
 title: Text-to-Speech Cloud Gem Service API Reference
 ---
-# Text\-to\-Speech Cloud Gem Service API Reference<a name="cloud-canvas-cloud-gem-text-to-speech-service-api"></a>
+# Text\-to\-Speech Cloud Gem Service API Reference {#cloud-canvas-cloud-gem-text-to-speech-service-api}
 
 You can use the following API operations on the text\-to\-speech service\.
 

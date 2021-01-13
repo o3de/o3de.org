@@ -2,7 +2,7 @@
 description: ' Export a terrain texture layer to reuse it in multiple &ALYlong; levels. '
 title: Exporting &terrain-textures;
 ---
-# Exporting Terrain Texture Layers<a name="terrain-texture-layers-export"></a>
+# Exporting Terrain Texture Layers {#terrain-texture-layers-export}
 
 You can export your terrain texture layer, so that you can then reuse it in multiple levels\.
 

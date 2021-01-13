@@ -4,7 +4,7 @@ description: ' Use the Get Enabled &endash; High Quality Shadow node in the &ALY
   for a specific entity. '
 title: Get Enabled
 ---
-# Get Enabled<a name="high-quality-shadow-get-enabled"></a>
+# Get Enabled {#high-quality-shadow-get-enabled}
 
 Returns whether an entity's **[High Quality Shadow](/docs/userguide/components/high-quality-shadow.md)** component is enabled\.
 
@@ -14,7 +14,7 @@ Returns whether an entity's **[High Quality Shadow](/docs/userguide/components/h
 
 ![\[getenabled, highqualityshadow, highqualityshadownode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/high-quality-shadow-get-enabled.png)
 
-## Inputs<a name="high-quality-shadow-get-enabled-input"></a>
+## Inputs {#high-quality-shadow-get-enabled-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Returns whether an entity's **[High Quality Shadow](/docs/userguide/components/h
 | In | Event | Triggers the node\. | 
 | Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\.  You can also select another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  | 
 
-## Outputs<a name="high-quality-shadow-get-enabled-output"></a>
+## Outputs {#high-quality-shadow-get-enabled-output}
 
 
 ****  

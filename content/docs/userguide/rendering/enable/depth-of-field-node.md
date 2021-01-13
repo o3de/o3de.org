@@ -3,7 +3,7 @@ description: ' Use the Enable Depth of Field node in the &ALYlong; &script-canva
   editor to configure the depth of field. '
 title: Enable Depth of Field
 ---
-# Enable Depth of Field<a name="enable-depth-of-field-node"></a>
+# Enable Depth of Field {#enable-depth-of-field-node}
 
 Configures the depth of field \(DOF\) effect, which gives you control over distance, range, and amount\. You can use the node to add realism to scenes by simulating the way a real\-world camera works\. You can use a broad depth of field to focus on the entire scene, or use a shallow depth of field to have sharp focus only on objects that are a specific distance from the camera\.
 
@@ -21,7 +21,7 @@ You can also apply depth of field in the Track View\. See [Adding a Depth of Fie
 
 ![\[Use the Enable Depth of Field node to simulate focusing like a camera.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-depth-of-field-node-example.png)
 
-## Inputs<a name="enable-depth-of-field-note-input"></a>
+## Inputs {#enable-depth-of-field-note-input}
 
 
 ****  
@@ -35,7 +35,7 @@ You can also apply depth of field in the Track View\. See [Adding a Depth of Fie
 | CoC Scale | Number |  Sets the circle of confusion scale when a cone of light in a specific area appears unfocused or blurry\. For example, a cone of light from a lens focuses on a specific point, but the light does not appear in perfect focus\.   This is also known as the blur circle of a blur spot\.  | 
 | Center Weight | Number | Sets the central samples weight\. | 
 
-## Outputs<a name="enable-depth-of-field-node-output"></a>
+## Outputs {#enable-depth-of-field-node-output}
 
 
 ****  

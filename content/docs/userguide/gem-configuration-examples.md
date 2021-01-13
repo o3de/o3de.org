@@ -2,7 +2,7 @@
 description: ' See gem.json file and wscript examples in &ALYlong;. '
 title: Gem Configuration Examples
 ---
-# Gem Configuration Examples<a name="gem-configuration-examples"></a>
+# Gem Configuration Examples {#gem-configuration-examples}
 
 The following are example configurations for gems and their `wscript` files\.
 
@@ -16,7 +16,7 @@ The following are example configurations for gems and their `wscript` files\.
 + [Gem with a Header Only Library with Unit Testing](#gem-with-header-only-library-with-unit-testing)
 + [Gem with a StaticLib Only and Unit Testing](#gem-with-static-library-unit-testing)
 
-## Gem with a GameModule<a name="gem-with-game-module-only"></a>
+## Gem with a GameModule {#gem-with-game-module-only}
 
 The following example gem adds one module type as `GameModule`\.
 
@@ -47,7 +47,7 @@ def build(bld):
     )
 ```
 
-## Gem with a GameModule and Name<a name="gem-with-game-module-name"></a>
+## Gem with a GameModule and Name {#gem-with-game-module-name}
 
 The following example gem has one module type as `GameModule` and specifies a name for that module\.
 
@@ -81,7 +81,7 @@ def build(bld):
     )
 ```
 
-## Gem with a StaticLib and Name<a name="gem-with-static-library"></a>
+## Gem with a StaticLib and Name {#gem-with-static-library}
 
 The following example gem has one module type as `StaticLib` and specifies a name for that module\.
 
@@ -115,7 +115,7 @@ def build(bld):
     )
 ```
 
-## Gem with an EditorModule and Name<a name="gem-with-editor-module"></a>
+## Gem with an EditorModule and Name {#gem-with-editor-module}
 
 The following example gem has one module type as `EditorModule` and specifies a name for the module\.
 
@@ -151,7 +151,7 @@ def build(bld):
     )
 ```
 
-## Gem with an EditorModule that Extends a GameModule<a name="gem-with-editor-module-extends-game-module"></a>
+## Gem with an EditorModule that Extends a GameModule {#gem-with-editor-module-extends-game-module}
 
 The following example gem has two module types, `GameModule` and `EditorModule`, specifies a name for both, and then extends the `EditorModule`\.
 
@@ -202,7 +202,7 @@ def build(bld):
     )
 ```
 
-## Gem with a StaticLib and Standalone Module<a name="gem-with-standalone-module-static"></a>
+## Gem with a StaticLib and Standalone Module {#gem-with-standalone-module-static}
 
 The following example gem has a `StaticLib` module, a `Standalone` module, and specifies a name for both\.
 
@@ -272,7 +272,7 @@ def build(bld):
     )
 ```
 
-## Gem with a Header Only Library with Unit Testing<a name="gem-with-header-only-library-with-unit-testing"></a>
+## Gem with a Header Only Library with Unit Testing {#gem-with-header-only-library-with-unit-testing}
 
 The following example gem has a `Standalone` module with unit testing\.
 
@@ -317,7 +317,7 @@ In a command line window, navigate to the `lmbr.exe` file and enter the followin
       ```
 In a text editor, delete the entries for the gem from the `game.xml` and `gem.xml` files\.
 
-## Gem with a StaticLib Only and Unit Testing<a name="gem-with-static-library-unit-testing"></a>
+## Gem with a StaticLib Only and Unit Testing {#gem-with-static-library-unit-testing}
 
 The following example gem has a `StaticLib` module, and a `Standalone` module for unit testing\.
 

@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; &asset-browser; to quickly view and access your
   project assets. '
 title: '&asset-browser;'
 ---
-# Asset Browser<a name="asset-browser-intro"></a>
+# Asset Browser {#asset-browser-intro}
 
 The **Asset Browser** displays all project assets in a source folder and file view to enable quick access and interaction\. You can use the **Asset Browser** with other editor components to improve your development workflow, such as the viewport and the **Entity Inspector**\.
 
@@ -35,7 +35,7 @@ With the **Asset Browser**, you can do the following:
 + [Finding a Slice in the Asset Browser from the Viewport](#asset-browser-intro-viewport)
 + [Filtering](#asset-browser-intro-filtering)
 
-## Drag and Drop<a name="asset-browser-intro-drag-drop"></a>
+## Drag and Drop {#asset-browser-intro-drag-drop}
 
 You can drag assets from the **Asset Browser** into the viewport or the **Entity Inspector**\. 
 
@@ -61,7 +61,7 @@ You can drag an asset file \(`.cfg`\) into the **Material asset** field on the *
 
 ![\[Animation showing a material dragged from the Asset Browser into the Entity Inspector. The material is dropped onto the Mesh component's Material override field.\]](/images/userguide/asset-browser-intro-3.gif)
 
-## Context Menu Operations<a name="asset-browser-intro-right-click-context"></a>
+## Context Menu Operations {#asset-browser-intro-right-click-context}
 
 In the **Asset Browser**, right\-click an asset to display a context menu\. The following menu options appear:
 + **Open with associated application** – Opens the file with the default application that you specify\. For example, if you specified Photoshop to open `.tiff` files, this opens the file in Photoshop\.
@@ -98,13 +98,13 @@ If source control is enabled, the following additional options appear:
 + **Add To Source Control** – Add the file to source control\.  
 ![\[Right-click context menu in the Asset Browser with source control enabled.\]](/images/userguide/asset-browser-intro-right-click-context-1.png)
 
-## Finding a Slice in the Asset Browser from the Viewport<a name="asset-browser-intro-viewport"></a>
+## Finding a Slice in the Asset Browser from the Viewport {#asset-browser-intro-viewport}
 
 In the viewport, right\-click the slice or slice entity and choose **Find slice in Asset Browser**\. The **Asset Browser** navigates to the corresponding slice\.
 
 ![\[Right-click the context menu in the viewport to locate a slice in the Asset Browser .\]](/images/userguide/asset-browser-intro-viewport.png)
 
-## Filtering<a name="asset-browser-intro-filtering"></a>
+## Filtering {#asset-browser-intro-filtering}
 
 You can filter what appears in the **Asset Browser** by file name, asset type, or both\.
 

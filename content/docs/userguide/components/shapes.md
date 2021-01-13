@@ -3,7 +3,7 @@ description: ' Use shape components in &ALYlong; to provide shape facilities for
   volumes, collision volumes, audio area ambiances, and audio areas. '
 title: 'Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound'
 ---
-# Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound<a name="component-shapes"></a>
+# Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound {#component-shapes}
 
 Add shape components to entities that have other components that require shapes\.
 
@@ -30,14 +30,14 @@ The **Shape** component includes the following shapes and properties:
 + [Sphere Shape Component Properties](#sphere-shape-component-properties)
 + [Request EBus Interface](#shape-component-ebuses)
 
-## Scaling Shapes<a name="component-shape-scaling"></a>
+## Scaling Shapes {#component-shape-scaling}
 
 As a best practice, when you scale a shape, adjust the shape component's properties, such as its **Dimensions**, **Height**, and **Radius**\.
 
 ![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/userguide/component/component-shape-scaling-2.png)
 
 **Tip**  
-Modify the shape component's properties instead using the [Scale tool](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/userguide/components/transform.md)** component\. 
+Modify the shape component's properties instead using the [Scale tool](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/userguide/components/transform.md)** component\. 
 
 **Example**  
 See the following examples for the different scaling:  
@@ -51,7 +51,7 @@ See the following examples for the different scaling:
 ![\[Nonuniform scaling (1), where X, Y, and Z have different values. Uniform scaling (2), where X, Y, and Z values are the same (in this case, 4). Uniform normalized scaling (3), where X, Y, and Z values are all 1.\]](/images/userguide/component/component-shape-scaling-1.png)
 If an entity has been scaled nonuniformly, rendering and intersection tests use the largest component of the scale vector\. Although this can work, the best practice is to keep a uniform and, ideally, normalized \(`1`, `1`, `1`\) transform scale, as shown in the third example\.
 
-## Box Shape Component Properties<a name="box-shape-component-properties"></a>
+## Box Shape Component Properties {#box-shape-component-properties}
 
 ![\[The box shape component properties in Lumberyard Editor.\]](/images/userguide/component/box-shape-component-properties.png)
 
@@ -72,7 +72,7 @@ The **Box Shape** component also has its own Component Mode with several linear 
 
 ![\[Box Shape component in the viewport.\]](/images/userguide/component/component-box-shape.png)
 
-## Capsule Shape Component Properties<a name="capsule-shape-component-properties"></a>
+## Capsule Shape Component Properties {#capsule-shape-component-properties}
 
 ![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/userguide/component/capsule-shape-component-properties.png)
 
@@ -89,7 +89,7 @@ The **Capsule Shape**component has the following properties\.
 | Height |  The end\-to\-end height of the capsule, including the cylinder and both caps\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 | Radius |  The radius of the capsule\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 
-## Compound Shape Component Properties<a name="compound-shape-component-properties"></a>
+## Compound Shape Component Properties {#compound-shape-component-properties}
 
 ![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/userguide/component/compound-shape-component-properties.png)
 
@@ -109,7 +109,7 @@ See the following **Compound Shape** properties\.
 | --- | --- | 
 | Child Shape Entities |  Specifies the entities and their shapes that make up the compound shape\. These entities might or might not be children of the entity with the compound shape\.  | 
 
-## Cylinder Shape Component Properties<a name="cylinder-shape-component-properties"></a>
+## Cylinder Shape Component Properties {#cylinder-shape-component-properties}
 
 ![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/userguide/component/cylinder-shape-component-properties.png)
 
@@ -126,7 +126,7 @@ The **Cylinder Shape** component has the following properties\.
 | Height |  The height of the cylinder\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 | Radius |  The radius of the cylinder\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 
-## Disk Shape Component Properties<a name="disk-shape-component-properties"></a>
+## Disk Shape Component Properties {#disk-shape-component-properties}
 
 ![\[See the disk shape component properties in Lumberyard Editor.\]](/images/userguide/component/disk-shape-component-properties.png)
 
@@ -142,7 +142,7 @@ See the following **Disk Shape** properties\.
 |  **Shape Color**  |  Specifies the color to render the shape\.  | 
 | Radius |  The radius of the disk\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 
-## Sphere Shape Component Properties<a name="sphere-shape-component-properties"></a>
+## Sphere Shape Component Properties {#sphere-shape-component-properties}
 
 ![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/userguide/component/sphere-shape-component-properties.png)
 
@@ -158,7 +158,7 @@ See the following **Sphere Shape** properties\.
 |  **Shape Color**  |  Specifies the color to render the shape\.  | 
 | Radius |  The radius of the sphere\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  | 
 
-## Request EBus Interface<a name="shape-component-ebuses"></a>
+## Request EBus Interface {#shape-component-ebuses}
 
 All shape components provide access to two separate request buses\. The first bus is the `ShapeComponentRequestsBus` that returns general information about the shape component\. The second bus is the [`ShapeNameComponentRequestsBus`](#component-shape-components-request-bus) that returns property configurations for the specified shape\.
 
@@ -166,7 +166,7 @@ Use the following request functions with the event bus interface to communicate 
 
 For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### ShapeComponentRequestsBus<a name="component-shape-ebus-request"></a>
+### ShapeComponentRequestsBus {#component-shape-ebus-request}
 
 The following table describes the `ShapeComponentRequestsBus`\.
 
@@ -181,11 +181,11 @@ The following table describes the `ShapeComponentRequestsBus`\.
 | GetShapeType | Returns the specified shape type for the component\. | None |  `AZ::Crc32(shape_name)` For example:  `AZ::Crc32("Box")` \| `AZ::Crc32("Sphere")` \| `AZ::Crc32("Capsule")` \| `AZ::Crc32("Cylinder")`  | Yes | 
 | IsPointInside |  Checks whether a specified point is inside or outside a shape\.  |  `point` – Vector3 point to check\.  |  Indicates whether the point is inside or outside the shape\. Type: Boolean   | Yes | 
 
-### ComponentRequestsBus<a name="component-shape-components-request-bus"></a>
+### ComponentRequestsBus {#component-shape-components-request-bus}
 
 Each shape component has its own specific event bus for accessing that particular shape\. The buses have similar functions and only differ for the requested shape type\.
 
-#### BoxShapeComponentRequestsBus<a name="box-shape-component-request-bus"></a>
+#### BoxShapeComponentRequestsBus {#box-shape-component-request-bus}
 
 
 ****  
@@ -194,7 +194,7 @@ Each shape component has its own specific event bus for accessing that particula
 | --- | --- | --- | --- | --- | 
 | GetBoxConfiguration | Returns the configuration of the BoxShape\. | None | BoxShapeConfiguration object that contains the configuration for the box shape\. | Yes | 
 
-#### CapsuleShapeComponentRequestsBus<a name="capsule-shape-component-request-bus"></a>
+#### CapsuleShapeComponentRequestsBus {#capsule-shape-component-request-bus}
 
 
 ****  
@@ -203,7 +203,7 @@ Each shape component has its own specific event bus for accessing that particula
 | --- | --- | --- | --- | --- | 
 | GetCapsuleConfiguration |  Returns the configuration of the `CapsuleShape`\.  | None |  `CapsuleShapeConfiguration` object that contains the configuration for the capsule shape\.  | Yes | 
 
-#### CompoundShapeComponentRequestsBus<a name="compound-shape-component-request-bus"></a>
+#### CompoundShapeComponentRequestsBus {#compound-shape-component-request-bus}
 
 
 ****  
@@ -212,7 +212,7 @@ Each shape component has its own specific event bus for accessing that particula
 | --- | --- | --- | --- | --- | 
 | GetCompoundShapeConfiguration |  Returns the configuration of the `CompoundShape`\.  | None |  `CompoundShapeConfiguration` object that contains the configuration for the compound shape\.  | Yes | 
 
-#### CylinderShapeComponentRequestsBus<a name="cylinder-shape-component-request-bus"></a>
+#### CylinderShapeComponentRequestsBus {#cylinder-shape-component-request-bus}
 
 
 ****  
@@ -221,7 +221,7 @@ Each shape component has its own specific event bus for accessing that particula
 | --- | --- | --- | --- | --- | 
 | GetCylinderConfiguration |  Returns the configuration of the `CylinderShape`\.  | None | CylinderShapeConfiguration object that contains configuration for the cylinder shape\. | Yes | 
 
-#### SphereShapeComponentRequestsBus<a name="sphere-shape-component-request-bus"></a>
+#### SphereShapeComponentRequestsBus {#sphere-shape-component-request-bus}
 
 
 ****  
@@ -230,7 +230,7 @@ Each shape component has its own specific event bus for accessing that particula
 | --- | --- | --- | --- | --- | 
 | GetSphereConfiguration |  Returns the configuration of the `SphereShape`\.  | None |  `SphereShapeConfiguration` object that contains the configuration for the sphere shape\.  | Yes | 
 
-### ShapeComponentNotificationsBus<a name="component-shape-ebusnotification"></a>
+### ShapeComponentNotificationsBus {#component-shape-ebusnotification}
 
 All shapes share a single notification bus named `ShapeComponentNotificationsBus`\.
 

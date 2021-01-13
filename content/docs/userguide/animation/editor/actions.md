@@ -3,7 +3,7 @@ description: ' You can add an action to a state or transition in an &ALYlong; &a
   animation graph to trigger a parameter value change. '
 title: Actions
 ---
-# Actions<a name="animation-editor-actions"></a>
+# Actions {#animation-editor-actions}
 
 You can use actions to trigger parameter value changes when an animation graph state or transition reaches a specified state\.
 
@@ -21,7 +21,7 @@ You can set the **Parameter Action** on the following:
 + Entering a transition – Action triggers immediately upon starting a transition
 + Exiting a state – Action triggers when a transition is fully blended to the target state
 
-## Adding Actions to a State<a name="adding-action-to-state"></a>
+## Adding Actions to a State {#adding-action-to-state}
 
 Add an action to a state to achieve a parameter value change that triggers after the state is either fully blended into the node or fully blended out of the node\.
 
@@ -45,7 +45,7 @@ Add an action to a state to achieve a parameter value change that triggers after
 
 1. To turn the action on, set the **Trigger Value** to `1`\.
 
-## Adding Actions to a Transition<a name="adding-action-to-transition"></a>
+## Adding Actions to a Transition {#adding-action-to-transition}
 
 Add an action to a transition to achieve a parameter value change that triggers either when the transition starts or when the transition is fully blended to the target state\.
 

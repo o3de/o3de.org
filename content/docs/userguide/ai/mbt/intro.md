@@ -2,7 +2,7 @@
 description: ' Learn about the AI Modular Behavior Tree (MBT) in &ALYlong;. '
 title: AI Modular Behavior Tree
 ---
-# AI Modular Behavior Tree<a name="ai-mbt-intro"></a>
+# AI Modular Behavior Tree {#ai-mbt-intro}
 
 
 ****  

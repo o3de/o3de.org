@@ -2,7 +2,7 @@
 description: ' Enable gems to your &ALYlong; project for functionality and assets. '
 title: Gems Available in &ALY;
 ---
-# Gems Available in Lumberyard<a name="gems-system-ref"></a>
+# Gems Available in Lumberyard {#gems-system-ref}
 
 Lumberyard ships with the following Gems that are ready to be enabled:
 

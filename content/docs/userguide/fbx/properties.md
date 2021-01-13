@@ -3,7 +3,7 @@ description: ' Modify the export properties of your .fbx files with FBX Settings
   &ALYlong;. '
 title: FBX Settings export properties
 ---
-# FBX Settings export properties<a name="fbx-properties"></a>
+# FBX Settings export properties {#fbx-properties}
 
 
 ****  
@@ -20,7 +20,7 @@ title: FBX Settings export properties
 + [FBX Settings Motions tab](/docs/userguide/fbx/settings-motions-tab.md)
 + [FBX Settings PhysX tab](/docs/userguide/fbx/settings-physx-tab.md)
 
-## FBX Settings overview<a name="fbx-properties-overview"></a>
+## FBX Settings overview {#fbx-properties-overview}
 
 With **FBX Settings** you can customize how **Asset Processor** exports your `.fbx` files as runtime assets\. **FBX Settings** presents options based on the contents of the selected `.fbx` file\. 
 
@@ -30,7 +30,7 @@ Your `.fbx` files can contain any number of assets\. You can create a single `.f
 
 ![\[Processed FBX assets in Asset Browser.\]](/images/userguide/fbx/ui-fbx-asset-browser-1.27.png)
 
-## Modify FBX Settings<a name="fbx-properties-modify"></a>
+## Modify FBX Settings {#fbx-properties-modify}
 
 1. In **Lumberyard Editor**, in **Asset Browser**, select the `.fbx` file to modify\. 
 **Tip**  

@@ -2,7 +2,7 @@
 description: ' Integrate the Player Account Cloud Gem into an existing &ALYlong; project. '
 title: Integrating the Player Account Cloud Gem into an Existing Project
 ---
-# Integrating the Player Account Cloud Gem into an Existing Project<a name="cloud-canvas-cloud-gem-player-account-integrating-existing-project"></a>
+# Integrating the Player Account Cloud Gem into an Existing Project {#cloud-canvas-cloud-gem-player-account-integrating-existing-project}
 
 To integrate the Player Account Cloud Gem into an existing project, you must enable the Player Account Cloud Gem, update your deployment stack, and integrate the gem into your game menu\.
 

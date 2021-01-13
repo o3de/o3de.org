@@ -3,7 +3,7 @@ description: ' Use the Comment attribute in the &ALYlong; &particle-editor; to a
   or edit comments about an emitter. '
 title: Comment Attribute
 ---
-# Comment Attribute<a name="particle-editor-reference-comment"></a>
+# Comment Attribute {#particle-editor-reference-comment}
 
 Save or edit comments about an emitter in the **Comment** text box\.
 

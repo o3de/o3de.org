@@ -2,7 +2,7 @@
 description: ' Learn how to use blend spaces in the &animation-editor;. '
 title: Creating and Visualizing Blend Spaces
 ---
-# Creating and Visualizing Blend Spaces<a name="animation-editor-blend-spaces"></a>
+# Creating and Visualizing Blend Spaces {#animation-editor-blend-spaces}
 
 
 ****  
@@ -17,7 +17,7 @@ When you pick a point in the blend space \(interactively or with parameter contr
 
 In a 1D blend space the motions correspond to points along a line\. In a 2D blend space the motions correspond to points in a 2D space\.
 
-## Prerequisites<a name="animation-editor-blend-spaces-prerequisites"></a>
+## Prerequisites {#animation-editor-blend-spaces-prerequisites}
 
 Before you can add blend space nodes to the animation graph, you must have completed the following:
 + Selected an actor
@@ -26,7 +26,7 @@ Before you can add blend space nodes to the animation graph, you must have compl
 
 For more information, see [Getting Started with the Animation Editor](/docs/userguide/animation/editor/quick-start.md)\.
 
-## Creating Blend Spaces<a name="animation-editor-create-blend-spaces"></a>
+## Creating Blend Spaces {#animation-editor-create-blend-spaces}
 
 To create a blend space, you must add a blend tree node and a blend space node, and then specify values for the attributes of the blend space node\.
 

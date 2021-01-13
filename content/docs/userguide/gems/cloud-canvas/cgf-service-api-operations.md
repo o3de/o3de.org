@@ -3,7 +3,7 @@ description: ' Learn about cloud gem request and response mapping, request execu
   and error handling operations for &ALYlong;. '
 title: Operations
 ---
-# Operations<a name="cloud-canvas-cgf-service-api-operations"></a>
+# Operations {#cloud-canvas-cgf-service-api-operations}
 
 A cloud gem's service API can implement multiple distinct operations\. You define operations in the `swagger.json` file by adding [http://swagger.io/specification/#operationObject](http://swagger.io/specification/#operationObject) instances to a [http://swagger.io/specification/#pathItemObject](http://swagger.io/specification/#pathItemObject)\. For each operation, you can define the input data that the operation requires and the output data that it produces\. The input data can include path, query, and body parameters\. For more information on using swagger to define APIs, see [http://swagger\.io/](http://swagger.io/) \.
 
@@ -20,7 +20,7 @@ The following diagram illustrates both request and upload processing\.
 + [Default Response Mapping](#cloud-canvas-cgf-service-api-operations-default-response-mapping)
 + [Request Execution](#cloud-canvas-cgf-service-api-operations-request-execution)
 
-## Default Request Mapping<a name="cloud-canvas-cgf-service-api-operations-default-request-mapping"></a>
+## Default Request Mapping {#cloud-canvas-cgf-service-api-operations-default-request-mapping}
 
 A JSON object that implements the request operation is sent to the Lambda function\. The JSON object contains the module and function name and the operation's parameters, as the following skeletal syntax shows\.
 
@@ -43,7 +43,7 @@ These defaults can be overridden by specifying the module and/or function proper
 
 Parameter names are taken from the parameter definitions in the `swagger.json` file\. Path, query, and body parameter types are supported\.
 
-## Default Response Mapping<a name="cloud-canvas-cgf-service-api-operations-default-response-mapping"></a>
+## Default Response Mapping {#cloud-canvas-cgf-service-api-operations-default-response-mapping}
 
 The Lambda function returns the value to the client as a JSON object such as the following\.
 
@@ -68,7 +68,7 @@ If the error message received from the Lambda function does not start with `Clie
 
 In both the `HTTP 400` and `HTTP 500` cases, no other information \(such as a stack trace\) is sent to the client; this also is a security measure\.
 
-## Request Execution<a name="cloud-canvas-cgf-service-api-operations-request-execution"></a>
+## Request Execution {#cloud-canvas-cgf-service-api-operations-request-execution}
 
 The Cloud Gem Framework has built\-in support for service API Lambda functions that are implemented in Python\. No built\-in support is provided for Node\.js or Java Lambda functions\. To support these languages, implement the Lambda function handler to look for the `module` and `function` properties on the event object that the Lambda function provides\. You also might need to override the default values generated for the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) `module` and `function` properties during the `swagger.json` file processing\.
 
@@ -90,7 +90,7 @@ The first argument passed to the function is a `dispatch.Request` object\. The `
 
 The request object's parameters are passed to the handler function as keyword arguments \(that is, by using Python `**parameters`\)\.
 
-### Error Handling<a name="cloud-canvas-cgf-service-api-operations-error-handling"></a>
+### Error Handling {#cloud-canvas-cgf-service-api-operations-error-handling}
 
 A `ClientError` class is provided in the `errors.py` file\. This class extends `RuntimeException` and ensures that the error message is prefixed with `Client Error:`\. This triggers an `HTTP 400` response from API Gateway as described in [Default Response Mapping](#cloud-canvas-cgf-service-api-operations-default-response-mapping)\.
 

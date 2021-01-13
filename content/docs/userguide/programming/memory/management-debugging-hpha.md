@@ -2,11 +2,11 @@
 description: ' Debug HPHA allocator memory issues in &ALYlong;. '
 title: HPHA Memory Debugging
 ---
-# HPHA Memory Debugging<a name="memory-management-debugging-hpha"></a>
+# HPHA Memory Debugging {#memory-management-debugging-hpha}
 
 In Lumberyard 1\.16 and later versions, the HPHA memory allocator provides memory debugging features to detect and trace common memory issues\.
 
-## Enabling HPHA Memory Debugging<a name="memory-management-debugging-hpha-enabling-hpha-memory-debugging"></a>
+## Enabling HPHA Memory Debugging {#memory-management-debugging-hpha-enabling-hpha-memory-debugging}
 
 To avoid performance issues, debugging features are disabled by default\.
 
@@ -22,7 +22,7 @@ To avoid performance issues, debugging features are disabled by default\.
 
 1. Perform a build in debug mode\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
-## Characteristics and Limitations<a name="memory-management-debugging-hpha-observations-and-limitations"></a>
+## Characteristics and Limitations {#memory-management-debugging-hpha-observations-and-limitations}
 
 Because of certain limitations, the HPHA debugger can help find memory issues but cannot guarantee their absence\. When using HPHA memory debugging features, note the following:
 + For the HPHA debugger to work, allocations must use the HPHA allocator\. HPHA memory debugging does not cover allocations created by other allocators such as a `PoolAllocator`\.
@@ -32,17 +32,17 @@ Because of certain limitations, the HPHA debugger can help find memory issues bu
   + "Far" buffer overflows\. When detecting buffer overflows, Lumberyard detects changes up to 16 bytes after the memory block\. If a buffer overflow writes on byte 17, Lumberyard does not detect it\.
 + Lumberyard shuts down by terminating the application rather than by destroying objects\. Because Lumberyard relies on the operating system to recover memory, it cannot detect issues related to shutdowns or the destruction of objects\. To reproduce, isolate, and debug such memory issues, we recommend that you use unit tests\.
 
-## How Memory Debugging Works<a name="memory-management-debugging-hpha-how-memory-debugging-works"></a>
+## How Memory Debugging Works {#memory-management-debugging-hpha-how-memory-debugging-works}
 
 Some memory debugging features detect memory issues when an allocation is freed, and others detect issues when the HPHA allocator is destroyed\. The memory debugging works by keeping a set of debug records for each allocation\. When memory is requested or returned, the debugger compares the allocation or deallocation operation with the debug records\. When anomalies are detected, the debugger enforces rules with asserts\. The following sections describe the asserts that occur for the different memory operations\.
 
-### Allocations<a name="memory-management-debugging-hpha-allocations"></a>
+### Allocations {#memory-management-debugging-hpha-allocations}
 
 For memory allocation operations, the debugger performs the following tasks:
 + If a previous allocation has the same pointer, the debugger asserts and prints the stack trace of the previous allocation\. This usually occurs when a process overwrites the memory for the allocator's tracking structures\. Because the allocator uses memory near the blocks that it allocates, a memory overflow or underflow in a neighboring block can overwrite the memory that the HPHA uses for memory tracking\. When this occurs, the HPHA might consider a used block of memory to be "unused"\.
 + Fills the memory with a [quiet NaN](https://en.wikipedia.org/wiki/NaN) \(qNaN\) pattern \(`0xFF, 0xC0, 0xC0, 0xFF`\)\. This is useful for detecting specific patterns of use in uninitialized memory and can detect most \(but not all\) cases\. For more information about the qNaN pattern, see [Deallocations](#memory-management-debugging-hpha-deallocations)\.
 
-### Deallocations<a name="memory-management-debugging-hpha-deallocations"></a>
+### Deallocations {#memory-management-debugging-hpha-deallocations}
 
 For memory deallocation operations, the debugger performs the following tasks:
 + Asserts if the debug record is not found\. This can happen because of double deallocations or the deallocation of an invalid pointer\.
@@ -53,11 +53,11 @@ This check cannot detect the cases in which the overflow writes the exact same r
 + Asserts if the freed size does not match the allocation size\. During allocation, the requested size is stored in the debug record\. If the same size is not freed, a problem occurred during the deallocation\.
 + Refills the freed memory with the qNaN pattern\. This makes it easier to detect memory accesses after the memory has been deallocated\. Without this feature, the memory contents are usually available until some code reuses the memory\. Filling the freed memory with the qNaN pattern helps detect this anomalous usage early\.
 
-### Reallocations<a name="memory-management-debugging-hpha-reallocations"></a>
+### Reallocations {#memory-management-debugging-hpha-reallocations}
 
 Reallocations use a new block or an existing block depending on whether contiguous memory is available\.
 
-#### Reallocation to a New Block<a name="memory-management-debugging-hpha-reallocation-to-a-new-block"></a>
+#### Reallocation to a New Block {#memory-management-debugging-hpha-reallocation-to-a-new-block}
 
 When contiguous memory is not available, memory is reallocated to a new block\. The debugger performs the following tasks:
 + Asserts if the previous allocation is not found\. Normally, the previous allocation still exists\. The allocator creates a new allocation with a new memory address and then copies the contents of the previous allocation to the new allocation\. If the pointer to the previous allocation is not in the debug records, the debugger asserts\.
@@ -65,7 +65,7 @@ When contiguous memory is not available, memory is reallocated to a new block\. 
 + Asserts if a previous allocation has the same address as the new allocation\. For more information, see [Allocations](#memory-management-debugging-hpha-allocations)\.
 + Fills the memory for the new allocation with the qNaN pattern\. The previous block is copied over\. The remaining unused part of the new allocation should have the qNaN pattern\.
 
-#### Reallocation to an Existing Block<a name="memory-management-debugging-hpha-reallocation-to-an-existing-block"></a>
+#### Reallocation to an Existing Block {#memory-management-debugging-hpha-reallocation-to-an-existing-block}
 
 When contiguous memory is available, the pointer to an existing block is used\. The debugger performs the following tasks:
 + Asserts if the allocation is not found\.

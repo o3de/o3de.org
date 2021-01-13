@@ -2,7 +2,7 @@
 description: ' Apply shaders and materials for objects in &ALYlong;. '
 title: Working with shaders and materials
 ---
-# Working with shaders and materials<a name="mat-intro"></a>
+# Working with shaders and materials {#mat-intro}
 
 There is a close relationship between materials, textures and shaders\. For a material, you select a shader and then specify the material's properties and attributes such as color, specularity, and texture that are used by the shader for rendering the object\. In this way, the shader entirely defines how the object looks\. Lumberyard uses physically\-based rendering \(PBR\) shaders, which use real\-world physical rules and properties to describe how light interacts with the surface of objects\. This means that game object materials look realistic under all lighting conditions\. For more information, see [Shader Rendering System](/docs/userguide/materials/shaders/intro.md)\. 
 

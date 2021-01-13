@@ -3,7 +3,7 @@ description: ' Use the Message of the Day Cloud Gem to send scheduled messages t
   the users of your &ALYlong; game. '
 title: Message Of The Day Cloud Gem Portal
 ---
-# Message Of The Day Cloud Gem Portal<a name="cloud-canvas-cloud-gem-message-of-the-day"></a>
+# Message Of The Day Cloud Gem Portal {#cloud-canvas-cloud-gem-message-of-the-day}
 
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-message-of-the-day-prerequisites)
@@ -15,7 +15,7 @@ title: Message Of The Day Cloud Gem Portal
 
 You can use the Message of the Day Cloud Gem to schedule messages that your game consumes\. You can customize your project's message of the day using the Cloud Gem Portal\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-message-of-the-day-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-message-of-the-day-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Message of the Day Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Message of the Day**\)\.
@@ -25,7 +25,7 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Message of the Day** in the Project Configurator\. For information on creating a deployment stack and accessing the Cloud Gem Portal, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## Accessing and Using the Message of the Day Cloud Cloud Gem<a name="cloud-canvas-cloud-gem-message-of-the-day-accessing-and-using"></a>
+## Accessing and Using the Message of the Day Cloud Cloud Gem {#cloud-canvas-cloud-gem-message-of-the-day-accessing-and-using}
 
 **To customize the Message of the Day Cloud Gem**
 
@@ -51,7 +51,7 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/u
 
 You can now use the message in your game\.
 
-## Other Cloud Gems<a name="cloud-canvas-cloud-gem-message-of-the-day-other-cloud-gems"></a>
+## Other Cloud Gems {#cloud-canvas-cloud-gem-message-of-the-day-other-cloud-gems}
 
 Visit the following links for other cloud gems that might interest you\.
 + Leaderboard Cloud Gem: [Leaderboard Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/leaderboard.md)

@@ -3,7 +3,7 @@ description: ' Launch your &ALYlong; game project after using Waf to configure a
   build it. '
 title: Launching the Game Project
 ---
-# Launching the Game Project<a name="waf-launching-project"></a>
+# Launching the Game Project {#waf-launching-project}
 
 Building your game project produces an `.exe` file in Lumberyard's file system\.
 

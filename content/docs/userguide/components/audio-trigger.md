@@ -3,11 +3,11 @@ description: ' Use the Audio Trigger component to set up play and stop triggers 
   your game in &ALY;. '
 title: Audio Trigger
 ---
-# Audio Trigger<a name="component-audio-trigger"></a>
+# Audio Trigger {#component-audio-trigger}
 
 The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](/docs/userguide/audio/default-controls.md) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.
 
-## Audio Trigger Properties<a name="component-audio-trigger-properties"></a>
+## Audio Trigger Properties {#component-audio-trigger-properties}
 
 The Audio Trigger component has the following properties\.
 
@@ -26,13 +26,13 @@ Select an option for the raycasts used in calculation of obstruction and occlusi
 **Play immediately**  
 Select this option to run upon component activation the audio **'play'** trigger\.
 
-## EBus Request Bus Interface<a name="component-audio-trigger-ebusrequest"></a>
+## EBus Request Bus Interface {#component-audio-trigger-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### Play<a name="audio-ebus-play"></a>
+### Play {#audio-ebus-play}
 
 Runs the default **'play'** trigger, if set\.
 
@@ -45,7 +45,7 @@ None
 **Scriptable**  
 Yes
 
-### Stop<a name="audio-ebus-stop"></a>
+### Stop {#audio-ebus-stop}
 
 Runs the default **'stop'** trigger, if set\. If no **'stop'** trigger is set, ends the default **'play'** trigger\.
 
@@ -58,7 +58,7 @@ None
 **Scriptable**  
 Yes
 
-### ExecuteTrigger<a name="audio-ebus-execute"></a>
+### ExecuteTrigger {#audio-ebus-execute}
 
 Runs the specified audio trigger\.
 
@@ -71,7 +71,7 @@ None
 **Scriptable**  
 Yes
 
-### KillTrigger<a name="audio-ebus-kill"></a>
+### KillTrigger {#audio-ebus-kill}
 
 Cancels the specified audio trigger\.
 
@@ -84,7 +84,7 @@ None
 **Scriptable**  
 Yes
 
-### KillTrigger<a name="audio-ebus-killall"></a>
+### KillTrigger {#audio-ebus-killall}
 
 Cancels all audio triggers that are active on an entity\.
 
@@ -97,7 +97,7 @@ None
 **Scriptable**  
 Yes
 
-### SetMovesWithEntity<a name="audio-ebus-setmoves"></a>
+### SetMovesWithEntity {#audio-ebus-setmoves}
 
 Specifies whether triggers should update position as the entity moves\.
 
@@ -110,13 +110,13 @@ None
 **Scriptable**  
 Yes
 
-## EBus Response Bus Interface<a name="component-audio-trigger-ebusresponse"></a>
+## EBus Response Bus Interface {#component-audio-trigger-ebusresponse}
 
 Use the following response functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### OnTriggerFinished<a name="audio-ebus-ontrigger"></a>
+### OnTriggerFinished {#audio-ebus-ontrigger}
 
 Informs all listeners about an audio trigger that has finished playing \(the sound has ended\)\.
 

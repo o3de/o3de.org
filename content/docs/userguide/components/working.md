@@ -4,7 +4,7 @@ description: ' Use the tools in &ALYlong;''s &component-system; to create entiti
   component properties. '
 title: Working with Components
 ---
-# Working with Components<a name="component-working"></a>
+# Working with Components {#component-working}
 
 You can use the component entity system tools to create entities and add components to them\. Before you can work with components, you must [create an entity](/docs/userguide/creating-entity.md)\.
 

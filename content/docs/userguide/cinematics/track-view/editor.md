@@ -3,7 +3,7 @@ description: ' Use the &trackview-editor; to create and manage cinematic sequenc
   in &ALYlong;. '
 title: Using the Track View Editor
 ---
-# Using the Track View Editor<a name="cinematics-track-view-editor"></a>
+# Using the Track View Editor {#cinematics-track-view-editor}
 
 The Track View is the primary tool to create and manage cinematic sequences\. A *[sequence](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#sequence)* is the content generated from the Track View for cutscenes or other canned animation triggers\. When you create a sequence, this creates a component entity in the level\. The component entity stores all of the animation key data that you specified in the Track View\.
 

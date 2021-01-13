@@ -3,7 +3,7 @@ description: ' Get familiar with the common tasks and best practices associated 
   &script-canvas;, including troubleshooting and debugging. '
 title: Common Tasks
 ---
-# Common Tasks<a name="script-canvas-common-tasks"></a>
+# Common Tasks {#script-canvas-common-tasks}
 
 The topics in this section provide practical knowledge about common tasks associated with Script Canvas, including best practices, advice on troubleshooting, and use of the debugger\.
 

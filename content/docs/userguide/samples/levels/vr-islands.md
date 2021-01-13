@@ -3,7 +3,7 @@ description: ' Use the VR Islands level to demonstrate a simple VR level that us
   the instantvr entity in &ALYlong;. '
 title: VR Islands Level
 ---
-# VR Islands Level<a name="sample-level-vr-islands"></a>
+# VR Islands Level {#sample-level-vr-islands}
 
 The VR Islands level \(`VR_Islands_Sample`\) shows you how to create a simple VR level with the `instantvr` entity and physics collision on controllers\. This level features floating islands between which a player can teleport with the trigger button on the Oculus or Vive motion controllers\. The player can hold the trigger button to pick the location and then release the button to initiate the teleport\.
 
@@ -20,7 +20,7 @@ This level uses an `instantvr` slice that has the following child entities:
 
 For more information about installing the project that includes the VR Islands level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 
-## Using the InstantVR Entity<a name="sample-level-vr-islands-using-instantvr-entity"></a>
+## Using the InstantVR Entity {#sample-level-vr-islands-using-instantvr-entity}
 
 The VR Islands level is created with the `instantvr` entity, which has the following components:
 + **[Lua Script](/docs/userguide/components/lua-script.md)** – This component uses the `instantvr.lua` script for VR device tracking and teleportation functionality\. You can find the script in the `lumberyard_version\dev\VirtualRealityProject\Scripts\vr` directory\.  
@@ -30,13 +30,13 @@ The VR Islands level is created with the `instantvr` entity, which has the follo
 You must select the **Static** check box on the **[Transform](/docs/userguide/components/transform.md)** component for all entities in the navigation area\. This ensures that the navigation mesh generates correctly\. The **Static** check box is cleared by default\.  
 ![\[Example of the navigation mesh and the navigation area for the instantvr entity.\]](/images/userguide/instantvr-navigation-area-navigation-mesh-example.png)
 
-## Using the HideOcean Entity<a name="sample-level-vr-islands-using-hideocean-entity"></a>
+## Using the HideOcean Entity {#sample-level-vr-islands-using-hideocean-entity}
 
 The VR Islands level includes a `HideOcean` entity that allows you to hide the ocean when the level runs in VR mode\.
 
 **To hide the ocean**
 
-1. Open the **Console Variables** window\. For instructions, see [Viewing the Console Window](/docs/userguide/console-intro.md#viewing-the-console-window)\.
+1. Open the **Console Variables** window\. For instructions, see [Viewing the Console Window](/docs/userguide/console-intro#viewing-the-console-window)\.
 
 1. In the **Console Variables** window, search for the `e_WaterOcean` console variable\.
 

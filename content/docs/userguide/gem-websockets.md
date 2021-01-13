@@ -3,7 +3,7 @@ description: ' Use the Websockets Gem to add support for the WebSocket protocol 
   your &ALYlong; project. '
 title: Websockets &gem;
 ---
-# Websockets Gem<a name="gem-websockets"></a>
+# Websockets Gem {#gem-websockets}
 
 The Websockets Gem provides an easy way to create WebSocket clients for your Lumberyard games and projects\. With this gem, you can connect to WebSocket servers and take advantage of the full\-duplex communication that they provide\.
 
@@ -44,7 +44,7 @@ Websockets::OnMessage messageFunc = [this](const AZStd::string_view message)
     };
 ```
 
-## Known Issues<a name="gem-websockets-known-issues"></a>
+## Known Issues {#gem-websockets-known-issues}
 
 The following are known issues to be aware of when using this gem:
 

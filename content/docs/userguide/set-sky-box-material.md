@@ -3,7 +3,7 @@ description: ' Use the Set Skybox Material node in the &ALYlong; &script-canvas;
   to apply a specified material to the skybox. '
 title: Set Skybox Material
 ---
-# Set Skybox Material<a name="set-sky-box-material"></a>
+# Set Skybox Material {#set-sky-box-material}
 
 Apply a specified material to the skybox to give the sky a different look\. The material must be a skybox material\. 
 
@@ -15,7 +15,7 @@ For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxe
 
 ![\[sky box material, setskyboxmaterial, setskyboymaterialnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/environment-set-skybox-material.png)
 
-## Input<a name="set-sky-box-material-input"></a>
+## Input {#set-sky-box-material-input}
 
 
 ****  
@@ -25,7 +25,7 @@ For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxe
 | In | Event | Triggers the node\. | 
 | Material | Material |  Material to specify\. The material must be a skybox material\.  | 
 
-## Outputs<a name="set-sky-box-material-output"></a>
+## Outputs {#set-sky-box-material-output}
 
 
 ****  

@@ -3,13 +3,13 @@ description: ' Use the &ALYlong; Infinite Ocean component with the EBus interfac
   to set the parameters with Lua. '
 title: Infinite Ocean Component Request Bus Interface
 ---
-# Infinite Ocean Component Request Bus Interface<a name="infinite-ocean-component-request-bus-interface"></a>
+# Infinite Ocean Component Request Bus Interface {#infinite-ocean-component-request-bus-interface}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-## Lua Scripting<a name="infinite-ocean-component-request-bus-interface-lua-scripting"></a>
+## Lua Scripting {#infinite-ocean-component-request-bus-interface-lua-scripting}
 
 In general, the Lua scripting API for the **Infinite Ocean** component maps directly to the component properties with the **Get\*** and **Set\*** functions\. However, there are some exceptions where there is only a **Get** function, and you can't directly set a value, such as the ocean height\.
 
@@ -25,7 +25,7 @@ function example:OnActivate()
 end
 ```
 
-## OceanLevel<a name="infinite-ocean-component-ebus-ocean-level"></a>
+## OceanLevel {#infinite-ocean-component-ebus-ocean-level}
 
 Returns the height of the ocean in the world z\-axis\.
 
@@ -47,7 +47,7 @@ Yes
 OceanEnvironmentRequestBus.Broadcast.GetOceanLevel()
 ```
 
-## WaterTessellationAmount<a name="infinite-ocean-component-ebus-water-tessellation-amount"></a>
+## WaterTessellationAmount {#infinite-ocean-component-ebus-water-tessellation-amount}
 
 Sets the amount of geometry tessellation for rendering the ocean surface\. 
 
@@ -67,7 +67,7 @@ OceanEnvironmentRequestBus.Broadcast.SetWaterTessellationAmount(int)
 OceanEnvironmentRequestBus.Broadcast.GetWaterTessellationAmount()
 ```
 
-## AnimationWindDirection and AnimationWindSpeed<a name="infinite-ocean-component-ebus-animation-wind-direction-speed"></a>
+## AnimationWindDirection and AnimationWindSpeed {#infinite-ocean-component-ebus-animation-wind-direction-speed}
 
 Sets the direction and speed of the ocean wind\.
 
@@ -89,7 +89,7 @@ OceanEnvironmentRequestBus.Broadcast.SetAnimationWindSpeed(float)
 OceanEnvironmentRequestBus.Broadcast.GetAnimationWindSpeed()
 ```
 
-## AnimationWavesSpeed, AnimationWavesSize, and AnimationWavesAmount<a name="infinite-ocean-component-ebus-animation-waves-speed-size-amount"></a>
+## AnimationWavesSpeed, AnimationWavesSize, and AnimationWavesAmount {#infinite-ocean-component-ebus-animation-waves-speed-size-amount}
 
 Specifies the animation parameters of the ocean waves, such as speed, size, and amount\.
 
@@ -113,7 +113,7 @@ OceanEnvironmentRequestBus.Broadcast.SetAnimationWavesAmount(float)
 OceanEnvironmentRequestBus.Broadcast.GetAnimationWavesAmount()
 ```
 
-## ReflectResolutionScale<a name="infinite-ocean-component-ebus-reflect-resolution-scale"></a>
+## ReflectResolutionScale {#infinite-ocean-component-ebus-reflect-resolution-scale}
 
 Specifies the scale of the screen resolution to use for rendering ocean reflections\.
 
@@ -133,7 +133,7 @@ OceanEnvironmentRequestBus.Broadcast.SetReflectResolutionScale(float)
 OceanEnvironmentRequestBus.Broadcast.GetReflectResolutionScale()
 ```
 
-## ReflectionAnisotropic<a name="infinite-ocean-component-ebus-reflection-anisotropic"></a>
+## ReflectionAnisotropic {#infinite-ocean-component-ebus-reflection-anisotropic}
 
 Enables the anisotropic filter for rendered ocean reflections\.
 
@@ -153,7 +153,7 @@ OceanEnvironmentRequestBus.Broadcast.SetReflectionAnisotropic(boolean)
 OceanEnvironmentRequestBus.Broadcast.GetReflectionAnisotropic()
 ```
 
-## ReflectRenderFlag<a name="infinite-ocean-component-ebus-reflect-render-flag"></a>
+## ReflectRenderFlag {#infinite-ocean-component-ebus-reflect-render-flag}
 
 For each reflection flag, you can specify how the ocean renders reflections\. 
 
@@ -179,7 +179,7 @@ OceanEnvironmentRequestBus.Broadcast.SetReflectRenderFlag(ReflectionFlags.Terrai
 OceanEnvironmentRequestBus.Broadcast.GetReflectRenderFlag(ReflectionFlags.TerrainDetailMaterials))
 ```
 
-## UseOceanBottom<a name="infinite-ocean-component-ebus-use-ocean-bottom"></a>
+## UseOceanBottom {#infinite-ocean-component-ebus-use-ocean-bottom}
 
 Toggles the infinite plane below the ocean\. 
 
@@ -199,7 +199,7 @@ OceanEnvironmentRequestBus.Broadcast.SetUseOceanBottom(boolean)
 OceanEnvironmentRequestBus.Broadcast.GetUseOceanBottom()
 ```
 
-## GodRaysEnabled<a name="infinite-ocean-component-ebus-god-rays-enabled"></a>
+## GodRaysEnabled {#infinite-ocean-component-ebus-god-rays-enabled}
 
 Enablesgod rays \(sun beams\) under the ocean\.
 
@@ -219,7 +219,7 @@ OceanEnvironmentRequestBus.Broadcast.SetGodRaysEnabled(boolean)
 OceanEnvironmentRequestBus.Broadcast.GetGodRaysEnabled()
 ```
 
-## UnderwaterDistortion<a name="infinite-ocean-component-ebus-underwater-distortion"></a>
+## UnderwaterDistortion {#infinite-ocean-component-ebus-underwater-distortion}
 
 Specifies the amount of the scene that is distorted when it renders while the camera is underwater\.
 
@@ -239,7 +239,7 @@ OceanEnvironmentRequestBus.Broadcast.SetUnderwaterDistortion(float)
 OceanEnvironmentRequestBus.Broadcast.GetUnderwaterDistortion()
 ```
 
-## FogColor, FogColorMultiplier, and NearFogColor<a name="infinite-ocean-component-ebus-fog-color-multiplier-near"></a>
+## FogColor, FogColorMultiplier, and NearFogColor {#infinite-ocean-component-ebus-fog-color-multiplier-near}
 
 Specifies the color for the underwater fog of the ocean\.
 
@@ -284,7 +284,7 @@ OceanEnvironmentRequestBus.Broadcast.GetNearFogColor()
 OceanEnvironmentRequestBus.Broadcast.GetFogColorPremultiplied()
 ```
 
-## CausticsEnabled<a name="infinite-ocean-component-ebus-caustics-enabled"></a>
+## CausticsEnabled {#infinite-ocean-component-ebus-caustics-enabled}
 
 Applies the caustics effect of the ocean on geometry below the ocean surface\.
 
@@ -304,7 +304,7 @@ OceanEnvironmentRequestBus.Broadcast.SetCausticsEnabled(boolean)
 OceanEnvironmentRequestBus.Broadcast.GetCausticsEnabled()
 ```
 
-## CausticsDepth, CausticsIntensity, CausticsTiling, CausticsDistanceAttenuation<a name="infinite-ocean-component-ebus-caustics-depth-intensity-tiling-distance-attenuation"></a>
+## CausticsDepth, CausticsIntensity, CausticsTiling, CausticsDistanceAttenuation {#infinite-ocean-component-ebus-caustics-depth-intensity-tiling-distance-attenuation}
 
 Specifies the caustics parameters for the **Infinite Ocean** component\.
 
@@ -330,7 +330,7 @@ OceanEnvironmentRequestBus.Broadcast.SetCausticsDistanceAttenuation(float)
 OceanEnvironmentRequestBus.Broadcast.GetCausticsDistanceAttenuation()
 ```
 
-## OceanMaterialName<a name="infinite-ocean-component-ebus-material-name"></a>
+## OceanMaterialName {#infinite-ocean-component-ebus-material-name}
 
 Renders the ocean with the assigned material\.
 

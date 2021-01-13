@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Sky Highlight component to add bursts of light 
   the sky. '
 title: Sky Highlight
 ---
-# Sky Highlight<a name="component-sky-highlight"></a>
+# Sky Highlight {#component-sky-highlight}
 
 
 ****  
@@ -41,7 +41,7 @@ The following is a sky highlight effect in the distance\.
   + [GetSize](#sky-highlight-ebus-get-size)
   + [Notification Bus Example Script](#sky-highlight-notification-bus-example-script)
 
-## Sky Highlight Component Properties<a name="component-sky-highlight-properties"></a>
+## Sky Highlight Component Properties {#component-sky-highlight-properties}
 
 **Enabled**  
 Sky highlight effect is rendered when the entity activates\.  
@@ -66,13 +66,13 @@ Size of the sky highlight effect\.
 Default value: `10`  
 Valid values: `0` to `100`
 
-## EBus Request Bus Interface<a name="component-sky-highlight-ebus-request"></a>
+## EBus Request Bus Interface {#component-sky-highlight-ebus-request}
 
 You can use this EBus to communicate to an entity with a **Sky Highlight** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### Enable<a name="sky-highlight-ebus-enabled"></a>
+### Enable {#sky-highlight-ebus-enabled}
 
 Enables the sky highlight effect\.
 
@@ -85,7 +85,7 @@ None
 **Scriptable**  
 Yes
 
-### Disable<a name="sky-highlight-ebus-disable"></a>
+### Disable {#sky-highlight-ebus-disable}
 
 Disables the sky highlight effect\.
 
@@ -98,7 +98,7 @@ None
 **Scriptable**  
 Yes
 
-### Toggle<a name="sky-highlight-ebus-toggle"></a>
+### Toggle {#sky-highlight-ebus-toggle}
 
 Toggles whether the sky highlight effect is enabled\.
 
@@ -111,7 +111,7 @@ None
 **Scriptable**  
 Yes
 
-### IsEnabled<a name="sky-highlight-ebus-is-enabled"></a>
+### IsEnabled {#sky-highlight-ebus-is-enabled}
 
 Returns whether the sky highlight effect is enabled\.
 
@@ -124,7 +124,7 @@ Type: Boolean
 **Scriptable**  
 Yes
 
-### SetColor<a name="sky-highlight-ebus-set-color"></a>
+### SetColor {#sky-highlight-ebus-set-color}
 
 Sets the color of the sky highlight\.
 
@@ -139,7 +139,7 @@ None
 **Scriptable**  
 Yes
 
-### GetColor<a name="sky-highlight-ebus-get-color"></a>
+### GetColor {#sky-highlight-ebus-get-color}
 
 Returns the color of the sky highlight\.
 
@@ -155,7 +155,7 @@ None
 **Scriptable**  
 Yes
 
-### SetColorMultiplier<a name="sky-highlight-ebus-set-color-multiplier"></a>
+### SetColorMultiplier {#sky-highlight-ebus-set-color-multiplier}
 
 Sets the color multiplier of the sky highlight\.
 
@@ -170,7 +170,7 @@ None
 **Scriptable**  
 Yes
 
-### GetColorMultiplier<a name="sky-highlight-ebus-get-color-multiplier"></a>
+### GetColorMultiplier {#sky-highlight-ebus-get-color-multiplier}
 
 Returns the color multiplier of the sky highlight\.
 
@@ -183,7 +183,7 @@ None
 **Scriptable**  
 Yes
 
-### SetVerticalOffset<a name="sky-highlight-ebus-set-vertical-offset"></a>
+### SetVerticalOffset {#sky-highlight-ebus-set-vertical-offset}
 
 Sets how far to offset the sky highlight effect from the entity's transform, on the global z\-axis\.
 
@@ -196,7 +196,7 @@ None
 **Scriptable**  
 Yes
 
-### GetVerticalOffset<a name="sky-highlight-ebus-get-vertical-offset"></a>
+### GetVerticalOffset {#sky-highlight-ebus-get-vertical-offset}
 
 Returns the vertical offset of the sky highlight\.
 
@@ -209,7 +209,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetSize<a name="sky-highlight-ebus-set-size"></a>
+### SetSize {#sky-highlight-ebus-set-size}
 
 Sets the size of the sky highlight\.
 
@@ -222,7 +222,7 @@ None
 **Scriptable**  
 Yes
 
-### GetSize<a name="sky-highlight-ebus-get-size"></a>
+### GetSize {#sky-highlight-ebus-get-size}
 
 Returns the size of the sky highlight\.
 
@@ -235,7 +235,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### Notification Bus Example Script<a name="sky-highlight-notification-bus-example-script"></a>
+### Notification Bus Example Script {#sky-highlight-notification-bus-example-script}
 
 ```
 function example:OnActivate()

@@ -3,7 +3,7 @@ description: ' Use the Trigger Area component to set up an area that triggers an
   upon entering or exiting in &ALYlong;. '
 title: Trigger Area
 ---
-# Trigger Area<a name="component-triggerarea"></a>
+# Trigger Area {#component-triggerarea}
 
 The **Trigger Area** component provides generic triggering services by using [Shape](/docs/userguide/components/shapes.md) components as its bounds\. 
 
@@ -24,7 +24,7 @@ The **Trigger Area** component provides generic triggering services by using [Sh
 **Note**  
 The **Trigger Area** component does not work with the PhysX system\. 
 
-## Trigger Area Component Properties<a name="component-triggerarea-properties"></a>
+## Trigger Area Component Properties {#component-triggerarea-properties}
 
 The **Trigger Area** component has the following properties:Network Bindable
 
@@ -45,13 +45,13 @@ A list of tags that are required for an entity to trigger this area\.
 **ExcludedTags**  
 A list of tags that exclude an entity from triggering this area\.
 
-## EBus Request Bus Interface<a name="component-triggerarea-ebusrequest"></a>
+## EBus Request Bus Interface {#component-triggerarea-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### AddRequiredTag<a name="triggerarea-ebus-addrequiredtag"></a>
+### AddRequiredTag {#triggerarea-ebus-addrequiredtag}
 
 Adds a required tag to the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
@@ -65,7 +65,7 @@ None
 **Scriptable**  
 Yes
 
-### RemoveRequiredTag<a name="triggerarea-ebus-removerequiredtag"></a>
+### RemoveRequiredTag {#triggerarea-ebus-removerequiredtag}
 
 Removes a required tag from the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
@@ -79,7 +79,7 @@ None
 **Scriptable**  
 Yes
 
-### AddExcludedTag<a name="triggerarea-ebus-addexcludedtag"></a>
+### AddExcludedTag {#triggerarea-ebus-addexcludedtag}
 
 Adds an excluded tag to the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
@@ -93,7 +93,7 @@ None
 **Scriptable**  
 Yes
 
-### RemoveExcludedTag<a name="triggerarea-ebus-removeexcludedtag"></a>
+### RemoveExcludedTag {#triggerarea-ebus-removeexcludedtag}
 
 Removes an excluded tag from the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
@@ -106,7 +106,7 @@ None
 **Scriptable**  
 Yes
 
-## EBus Notification Bus Interface<a name="component-triggerarea-ebusnotification"></a>
+## EBus Notification Bus Interface {#component-triggerarea-ebusnotification}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
@@ -116,11 +116,11 @@ The **Trigger** component sends notifications to:
 + Entities listening on the TriggerAreaNotificationBus for the entity with the trigger on it\.
 + Entities listening on the TriggerAreaEntityNotificationBus for the entity that enters or exits the trigger\.
 
-### TriggerAreaNotificationBus<a name="triggerarea-ebus-triggerareanotificationbus"></a>
+### TriggerAreaNotificationBus {#triggerarea-ebus-triggerareanotificationbus}
 
 This bus allows the game to listen for events associated with a particular trigger\. Notifies of all the entities that enter and exit this trigger\.
 
-#### OnTriggerAreaEntered<a name="triggerarea-ebus-triggerareanotificationbus-ontriggerareaentered"></a>
+#### OnTriggerAreaEntered {#triggerarea-ebus-triggerareanotificationbus-ontriggerareaentered}
 
  Notifies listeners when `enteringEntityId` enters this trigger\. 
 
@@ -133,7 +133,7 @@ None
 **Scriptable**  
 Yes
 
-#### OnTriggerAreaExited<a name="triggerarea-ebus-triggerareanotificationbus-ontriggerareaexited"></a>
+#### OnTriggerAreaExited {#triggerarea-ebus-triggerareanotificationbus-ontriggerareaexited}
 
  Notifies listeners when `enteringEntityId` exits this trigger\. 
 
@@ -146,11 +146,11 @@ None
 **Scriptable**  
 Yes
 
-### TriggerAreaEntityNotificationBus<a name="triggerarea-ebus-triggerareaentitynotificationbus"></a>
+### TriggerAreaEntityNotificationBus {#triggerarea-ebus-triggerareaentitynotificationbus}
 
 This bus allows the game to listen for trigger\-related events associated with a particular entity\. Notifies every time the player enters or exits any trigger\.
 
-#### OnEntityEnteredTriggerArea<a name="triggerarea-ebus-triggerareaentitynotificationbus-onentityenteredtriggerarea"></a>
+#### OnEntityEnteredTriggerArea {#triggerarea-ebus-triggerareaentitynotificationbus-onentityenteredtriggerarea}
 
  Sent when the entity enters `triggerID`\. 
 
@@ -163,7 +163,7 @@ None
 **Scriptable**  
 Yes
 
-#### OnEntityExitedTriggerArea<a name="triggerarea-ebus-triggerareaentitynotificationbus-onentityexitedtriggerarea"></a>
+#### OnEntityExitedTriggerArea {#triggerarea-ebus-triggerareaentitynotificationbus-onentityexitedtriggerarea}
 
  Sent when the entity exits `triggerID`\. 
 

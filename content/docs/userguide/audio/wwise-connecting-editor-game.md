@@ -2,7 +2,7 @@
 description: ' Connect Wwise to &ly-editor; and the game for &ALYlong;. '
 title: Connecting Wwise to the Editor and Game
 ---
-# Connecting Wwise to the Editor and Game<a name="audio-wwise-connecting-editor-game"></a>
+# Connecting Wwise to the Editor and Game {#audio-wwise-connecting-editor-game}
 
 You can establish a remote connection between Wwise and Lumberyard for your project's debug and profile builds of Lumberyard\. By default, this feature is disabled\. Remote connecting is not supported for performance and release builds\.
 

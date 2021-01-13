@@ -3,7 +3,7 @@ description: ' Use the Road component to create paths and align the terrain to r
   in &ALYlong;. '
 title: Road
 ---
-# Road<a name="component-road"></a>
+# Road {#component-road}
 
 
 ****  
@@ -33,7 +33,7 @@ You can rebuild roads at runtime by modifying the spline\. However, this method 
 + [RoadRequestBus Interface](#component-road-ebus-request)
 + [RoadsAndRiversGeometryRequestsBus Interface](#component-roadsandriversgeometryrequestsbus-ebus)
 
-## Road Properties<a name="road-properties"></a>
+## Road Properties {#road-properties}
 
 ![\[Road component properties.\]](/images/userguide/component/road-properties-1.png)
 
@@ -58,7 +58,7 @@ See the following **Road** properties:
 | Erase width |  Distance from the road edges in which the vegetation should be removed\. Specifying a value of `0` removes only vegetation that is on the road\. Specify positive values to remove vegetation in a wider border from the road's edge\. Specify negative values to leave some vegetation within the borders of the road\.  For more information, see [Erasing Vegetation](#erasing-road-vegetation)\.  | 
 | Erase variance | Randomizes the removal of vegetation so that the road edges appear more natural\. | 
 
-## Creating a Road<a name="creating-a-road"></a>
+## Creating a Road {#creating-a-road}
 
 **To create a road**
 
@@ -70,11 +70,11 @@ See the following **Road** properties:
 
    The **Spline** component defines the path and shape of the road\. For information about how to add, remove, and edit individual points, see [Spline](/docs/userguide/components/spline.md)\.
 
-The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](/docs/userguide/components/spline.md#spline-type-bezier) **Spline Type**\.
+The road is created with the default material **defaultRoad**\. The **Spline** component defaults to the **Linear** **Spline Type** and contains four vertices \(0, 1, 2, 3\)\. For a road that curves smoothly, specify the [**Bezier**](/docs/userguide/components/spline#spline-type-bezier) **Spline Type**\.
 
 ![\[Basic road with default road material and four vertices placed with Linear Spline Type.\]](/images/userguide/component/creating-a-road.png)
 
-## Modifying Road Width<a name="modifying-road-width"></a>
+## Modifying Road Width {#modifying-road-width}
 
 You can modify the road's width by adjusting the road's **Global width** property\. Adjusting this property modifies all the points on the road\.
 
@@ -91,7 +91,7 @@ For more granular control over the road's width, you can adjust individual point
   The global width of this road is `2`, and the width at the selected point is set to `5`\. The total width at the selected point is `7`\.  
 ![\[Road with one vertex widened\]](/images/userguide/component/modifying-road-width-2.png)
 
-## Setting Road Material Properties<a name="setting-road-materials"></a>
+## Setting Road Material Properties {#setting-road-materials}
 
 Roads are [Decals](/docs/userguide/components/decal.md) placed along a spline\. This makes the material setup of a road similar to that of decals\.
 
@@ -114,7 +114,7 @@ In the left image, **Vertex Colors** is enabled\. In the right image, the parame
 
 ![\[Road with Vertex Color enabled and disabled.\]](/images/userguide/component/setting-road-materials-2.png)
 
-## Using Roads to Modify Terrain<a name="using-roads-to-modify-terrain"></a>
+## Using Roads to Modify Terrain {#using-roads-to-modify-terrain}
 
 You can use roads to modify the shape of the terrain\.
 
@@ -143,7 +143,7 @@ The following image shows the road and terrain after alignment with a **Border w
 
 ![\[Road aligned with terrain with Border width of 5.\]](/images/userguide/component/using-roads-to-modify-terrain-3.png)
 
-## Erasing Vegetation<a name="erasing-road-vegetation"></a>
+## Erasing Vegetation {#erasing-road-vegetation}
 
 You can erase vegetation around the road's borders\.
 
@@ -168,7 +168,7 @@ The following image shows the road with **Erase width** set to `1` and **Erase v
 
 ![\[Road with Erase width set to 1 and Erase variance set to 5.\]](/images/userguide/shared-erasing-road-vegetation-3.png)
 
-## RoadRequestBus Interface<a name="component-road-ebus-request"></a>
+## RoadRequestBus Interface {#component-road-ebus-request}
 
 Use the following request functions with the `RoadRequestBus` EBus interface to communicate with other components of your game\.
 
@@ -182,7 +182,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 | Rebuild | Triggers full rebuild of the road object, including geometry and render node generation\. | None | None | Yes | 
 | SetIgnoreTerrainHoles | Sets whether to allow the road texture to be rendered over terrain holes\. | Boolean | None | Yes | 
 
-## RoadsAndRiversGeometryRequestsBus Interface<a name="component-roadsandriversgeometryrequestsbus-ebus"></a>
+## RoadsAndRiversGeometryRequestsBus Interface {#component-roadsandriversgeometryrequestsbus-ebus}
 
 Use the following request functions with the `RoadsAndRiversGeometryRequestsBus` EBus interface to communicate with other components of your game\.
 

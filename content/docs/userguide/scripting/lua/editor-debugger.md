@@ -2,7 +2,7 @@
 description: ' Use the Lua Editor to author, debug, and edit Lua scripts in &ALYlong;. '
 title: Lua Editor
 ---
-# Lua Editor<a name="lua-editor-debugger"></a>
+# Lua Editor {#lua-editor-debugger}
 
 
 ****  
@@ -13,7 +13,7 @@ title: Lua Editor
 
 Lumberyard Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game\. Lua Editor is a standalone application, but can be opened directly from Lumberyard Editor using the Tools menu\.
 
-## Tutorial: Using Lua Editor for Debugging with Lumberyard Editor<a name="lua-editor-debugger-tutorial"></a>
+## Tutorial: Using Lua Editor for Debugging with Lumberyard Editor {#lua-editor-debugger-tutorial}
 
 This tutorial shows you how to use Lumberyard Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component\. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script\.
 
@@ -91,7 +91,7 @@ For greater convenience, you can float or dock these windows\.
 
 1. In Lumberyard Editor, Press **Esc** to stop the game\.
 
-### Options Available While Debugging<a name="lua-editor-debugger-debugging-options"></a>
+### Options Available While Debugging {#lua-editor-debugger-debugging-options}
 
 The following table summarizes common options available while debugging\.
 
@@ -108,7 +108,7 @@ The following table summarizes common options available while debugging\.
 | ![\[Image NOT FOUND\]](/images/userguide/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line\. | 
 | ![\[Image NOT FOUND\]](/images/userguide/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line\. | 
 
-## Maintaining Separate Search Results<a name="lua-editor-debugger-separate-search-results"></a>
+## Maintaining Separate Search Results {#lua-editor-debugger-separate-search-results}
 
 In addition to the usual search capabilities, the **Find** feature can display the results of four different searches separately\.
 
@@ -126,7 +126,7 @@ In Lua Editor Preview, the line number shown in the **Find Results** window and 
 **Tip**  
 For convenience, you can also dock or float the **Find Results** window\.
 
-## Editing<a name="lua-editor-debugger-editing"></a>
+## Editing {#lua-editor-debugger-editing}
 
 Lua Editor can open multiple scripts at the same time\. Each script has its own tab in the editor\. The editor provides a standard set of capabilities for text editing but also includes useful features for editing source code\.
 
@@ -161,7 +161,7 @@ The following table summarizes the options available while editing and debugging
 
 ¹ Select to brace selects a block bounded by braces\. Before using this option, the cursor must be immediately next to the beginning or ending brace of the block\.
 
-## Perforce Integration<a name="lua-editor-debugger-perforce-integration"></a>
+## Perforce Integration {#lua-editor-debugger-perforce-integration}
 
 Lua Editor includes Perforce integration features\. When you open a file from your Perforce environment, Lua Editor displays the file's status in the top right of the text editing window\.
 

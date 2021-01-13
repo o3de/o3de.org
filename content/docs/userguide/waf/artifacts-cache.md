@@ -3,11 +3,11 @@ description: ' Use the Waf artifacts cache feature in &ALYlong; to significantly
   build times. '
 title: Using the Waf Artifacts Cache
 ---
-# Using the Waf Artifacts Cache<a name="waf-artifacts-cache"></a>
+# Using the Waf Artifacts Cache {#waf-artifacts-cache}
 
 The Waf artifacts cache is for Waf\-generated files\. The cache speeds up Waf build time by caching previously built artifacts and retrieving them when the task signature hasn't changed\. To calculate the task signature, Lumberyard uses MD5 hashes of the task's run function, source file, dependencies, and build environment\.
 
-## Improvements in Build Time<a name="waf-artifacts-cache-improvements-in-build-time"></a>
+## Improvements in Build Time {#waf-artifacts-cache-improvements-in-build-time}
 
 The Waf artifacts cache can significantly improve clean, non\-incremental build time\. The following table shows, in minutes, typical differences in build times for packaging jobs\.
 
@@ -19,11 +19,11 @@ The Waf artifacts cache can significantly improve clean, non\-incremental build 
 | PC | 75 | 14 | 
 | macOS | 163 | 25 | 
 
-## Supported File Types<a name="waf-artifacts-cache-supported-file-types"></a>
+## Supported File Types {#waf-artifacts-cache-supported-file-types}
 
 Unlike the normal compiler cache, which caches only `.obj` files, the Waf artifacts cache caches all files that Waf generates\. It supports the following file extensions: `.h`, `.cpp`, `.json`, `.o`, `.obj`, `.inl`, `.inline`, `.rc`, `.res`, `.moc`, `.lib`, `.dll`, `.exp`, `.pdb`, `.manifest`, and `.exe`\.
 
-## Limitations and Notes<a name="waf-artifacts-cache-notes-and-limitations"></a>
+## Limitations and Notes {#waf-artifacts-cache-notes-and-limitations}
 
 Keep in mind the following limitations and considerations about the Waf artifacts cache\.
 + The Waf artifacts cache can be used among multiple machines that have different build paths\. However, to correctly retrieve files from the cache, all builds must use the same version compiler and linker\.
@@ -33,7 +33,7 @@ Keep in mind the following limitations and considerations about the Waf artifact
 + The compiler assumes the same compilation environment when you use a `.pch` file\. Therefore, caching precompiled headers across different workspace paths is not supported\. For more information, see [Precompiled Header Consistency Rules](https://docs.microsoft.com/en-us/cpp/build/creating-precompiled-header-files?view=vs-2017#precompiled-header-consistency-rules) in the Microsoft Visual Studio documentation\.
 + When caching for different workspace paths is enabled, builds with and without Waf artifacts caching have different task signatures\. Thus, if you run a build with Waf cache and then run another build without Waf cache, all files are recompiled\.
 
-### Waf Options<a name="waf-artifacts-cache-waf-options"></a>
+### Waf Options {#waf-artifacts-cache-waf-options}
 
 The Waf artifacts cache feature has the following Waf options:
 
@@ -58,7 +58,7 @@ artifacts_cache_restore = True
 artifacts_cache_upload = True
 ```
 
-#### Deleting State Artifacts<a name="waf-artifacts-cache-deleting-stale-artifacts"></a>
+#### Deleting State Artifacts {#waf-artifacts-cache-deleting-stale-artifacts}
 
 Use the `clean_stale_cached_artifacts` Waf command to delete stale artifacts from the cache\. The command has the following options:
 
@@ -79,11 +79,11 @@ The following example deletes all artifacts from the cache location `E:\waf_arti
 lmbr_waf clean_stale_cached_artifacts --artifacts-cache="E:\waf_artifacts_cache" --artifacts-cache-wipeout=True
 ```
 
-## How the Waf Artifacts Cache Works<a name="waf-artifacts-cache-how-the-waf-artifacts-cache-works"></a>
+## How the Waf Artifacts Cache Works {#waf-artifacts-cache-how-the-waf-artifacts-cache-works}
 
 The Waf cache feature helps ensure that the proper task `uid` and `env` signatures are used\.
 
-### Waf Pickle File<a name="waf-artifacts-cache-waf-pickle-file"></a>
+### Waf Pickle File {#waf-artifacts-cache-waf-pickle-file}
 
 The Waf pickle file stores information about Waf targets\.
 
@@ -104,7 +104,7 @@ The Waf pickle file has the following attributes\.
 | cached\_engine\_path | Engine path for the build that created the cached pickle file\. | String | 
 | cached\_tp\_root\_path | Third\-party path for the build that created the cached pickle file\. | String | 
 
-#### Loading Data from a Waf Pickle File<a name="waf-artifacts-cache-loading-pickle-file-data"></a>
+#### Loading Data from a Waf Pickle File {#waf-artifacts-cache-loading-pickle-file-data}
 
 To use the Waf artifacts cache, Waf must have the latest build pickle data from a cached pickle file\. It then must merge that data with the local build pickle data\. If an entry with the task `uid` key appears in both local data and cached data, then the local one is used\. If the data merged from both pickle files contains node instances from the cached build which are unusable in current build, those node instances are recreated for the current build\.
 
@@ -112,11 +112,11 @@ The following diagram shows this workflow\.
 
 ![\[Waf pickle file data loading sequence\]](/images/userguide/waf/waf-artifacts-cache-1.png)
 
-### Overriding the Task's `uid` and `env` Signatures<a name="waf-artifacts-cache-overriding-task-uid-and-env-signatures"></a>
+### Overriding the Task's `uid` and `env` Signatures {#waf-artifacts-cache-overriding-task-uid-and-env-signatures}
 
 When using the Waf artifacts cache feature across multiple machines with different paths, the task's `uid` and `env` signature shouldn't depend on an absolute path\. When the Waf artifacts cache is enabled, the calculation of task's `uid` and `env` signatures is overridden and the absolute path is converted to a relative path\.
 
-### Executing Tasks<a name="waf-artifacts-cache-executing-tasks"></a>
+### Executing Tasks {#waf-artifacts-cache-executing-tasks}
 
 When the Waf artifacts cache is enabled, it tries to retrieve the target files from the cache before it runs a task\. If a cache miss or an error occurs during the file transfer, it runs the task and uploads the generated target files to the Waf artifacts cache after `post_run()` is called\.
 

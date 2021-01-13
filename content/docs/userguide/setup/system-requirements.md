@@ -3,7 +3,7 @@ description: ' Learn more about the hardware, operating system, and software req
   for installing &ALYlong;. '
 title: System requirements
 ---
-# System requirements<a name="setting-up-system-requirements"></a>
+# System requirements {#setting-up-system-requirements}
 
 Lumberyard has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\. If you have already installed Lumberyard, you can use Lumberyard Setup Assistant to see the requirements for the tools and features that you want for your Lumberyard development environment\. Lumberyard Setup Assistant provides information about installing third\-party software and SDKs on your computer\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\. 
 
@@ -25,7 +25,7 @@ If you select options to build the engine, editor, or tools in **Setup Assistant
 Some advanced graphics features require a DirectX 12 or later compatible video card\.  
 Required free disk space is dependent on the options that you select when installing Lumberyard\.
 
-## Developer tools<a name="lumberyard-visual-studio-requirement"></a>
+## Developer tools {#lumberyard-visual-studio-requirement}
 
 You can use the Lumberyard Editor and tools without installing additional software\. To create new projects or use advanced development features in Lumberyard, you need a developer environment that includes Microsoft Visual Studio\. The following versions are supported: 
 +  \(Recommended\) Microsoft Visual Studio 2019 version **16\.2\.4** thru version **16\.8\.x**\. 
@@ -54,12 +54,12 @@ The default Visual Studio installation might not include all of the features tha
      + \(Optional\) To build with the Visual Studio 2017 toolset in Visual Studio 2019, select **MSVC v141 \- VS 2017 C\+\+ x64/x86 build tools**\. 
 
 **Note**  
-Incredibuild users: Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\. For instructions on configuring the agent properly, see [Compiling with IncrediBuild](/docs/userguide/waf/extensions.md#waf-extensions-incredibuild)\. 
+Incredibuild users: Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\. For instructions on configuring the agent properly, see [Compiling with IncrediBuild](/docs/userguide/waf/extensions#waf-extensions-incredibuild)\. 
 
 **Note**  
 Beginning with Visual Studio 2017, Microsoft now releases updates on a more frequent cadence \(in some cases weekly\)\. Lumberyard is tested with the latest version of Visual Studio available during the release cycle\. 
 
-## Visual C\+\+ redistributable packages<a name="visual-studio-redistributable-requirements"></a>
+## Visual C\+\+ redistributable packages {#visual-studio-redistributable-requirements}
 
 **Lumberyard Installer** will attempt to download and install the required Visual C\+\+ Redistributable packages during the installation process\. Under some circumstances, the installation of these redistributable packages may fail\. If you receive a missing Visual C\+\+ runtime `.dll` error while running Lumberyard Installer, Lumberyard Setup Assistant, or Project Configurator, do the following: 
 

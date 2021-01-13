@@ -2,11 +2,11 @@
 description: ' The &ALYlong; PhysX Fixed Joint component. '
 title: PhysX Fixed Joint component
 ---
-# PhysX Fixed Joint component<a name="component-physx-fixed-joint"></a>
+# PhysX Fixed Joint component {#component-physx-fixed-joint}
 
 With the **PhysX Fixed Joint** component, you can create a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis\. 
 
-## PhysX Fixed Joint component properties<a name="component-physx-fixed-joint-properties"></a>
+## PhysX Fixed Joint component properties {#component-physx-fixed-joint-properties}
 
 ![\[Properties of the PhysX Fixed Joint component\]](/images/userguide/physx/physx/ui-physx-fixed-joint-component-1.27.png)
 

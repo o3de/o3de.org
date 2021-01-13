@@ -2,7 +2,7 @@
 description: ' Send test metrics with the command line in &ALYlong;. '
 title: Sending Test Metrics with the Command Line
 ---
-# Sending Test Metrics with the Command Line<a name="command-line-options-for-the-cloud-gem-metrics"></a>
+# Sending Test Metrics with the Command Line {#command-line-options-for-the-cloud-gem-metrics}
 
 In addition to using the Metrics Sample level, you can send test metrics to AWS with the command line\. Events that are generated with the command line always append to tables with the prefix `"dummy_"` \(for example, `"dummy_sessionStart"`\)\. This ensures that test events are tagged differently than real world events\. 
 

@@ -3,7 +3,7 @@ description: ' Follow these guidelines to generate art assets and tune &ALYlong;
   for mobile devices. '
 title: '&ALY; Performance Tuning Guidelines for Mobile Devices'
 ---
-# Lumberyard Performance Tuning Guidelines for Mobile Devices<a name="ios-android-performance-guidelines"></a>
+# Lumberyard Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
 
 See the following guidelines for generating art assets for mobile games with Lumberyard and how to tune Lumberyard performance for mobile devices\.
 
@@ -14,11 +14,11 @@ See the following guidelines for generating art assets for mobile games with Lum
 + [Memory and App Size](#ios-android-performance-memory-app-size-guidelines)
 + [Particle Rendering Features and Performance](#ios-android-performance-particle-rendering-guidelines)
 
-## Art Guidelines<a name="ios-android-performance-art-guidelines"></a>
+## Art Guidelines {#ios-android-performance-art-guidelines}
 
 This section provides guidelines for geometry, lighting, cascade shadow maps, and materials\.
 
-### Geometry Guidelines<a name="ios-android-performance-art-guidelines-geometry"></a>
+### Geometry Guidelines {#ios-android-performance-art-guidelines-geometry}
 
 Follow these guidelines when creating geometry for your mobile game:
 + Use fewer individual objects to significantly reduce the draw calls\. We recommend 750 or less draw calls on mobile devices\.
@@ -47,7 +47,7 @@ Follow these guidelines when creating geometry for your mobile game:
 To determine the poly count, set **r\_DisplayInfo** to **1** in the Lumberyard Editor console\. The debug data on the top right of the screen will display the poly number for each frame of the scene\.
 + In the **Console** pane in Lumberyard Editor, set the console variable `r_stats` to **1** to print the number of draw calls and polygons that the current camera renders\.
 
-### Lighting Guidelines<a name="ios-android-performance-art-guidelines-lighting"></a>
+### Lighting Guidelines {#ios-android-performance-art-guidelines-lighting}
 
 Follow these guidelines when adding lighting to your mobile game:
 + Carefully consider the amount of lights in your scene that cast shadows\.
@@ -67,7 +67,7 @@ Follow these guidelines when adding lighting to your mobile game:
   The following scene uses non\-shadow casting lights to simulate global illumination \(GI\) bounce\.  
 ![\[Example scene that uses non-shadow casting lights to simulate global illumination (GI) bounce.\]](/images/userguide/mobile/lighting-global-illumination-simulation-example.png)
 
-### Cascade Shadow Map Guidelines<a name="ios-android-performance-art-guidelines-cascade-shadow-maps"></a>
+### Cascade Shadow Map Guidelines {#ios-android-performance-art-guidelines-cascade-shadow-maps}
 
 Lumberyard uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 + `e_ShadowsCascadesDebug` – Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
@@ -98,14 +98,14 @@ The following images demonstrate how the global shadow map \(GSM\) console varia
 | Set the e\_GsmRange console variable to 1 to reduce the size of the shadow cascade\. | Set the e\_GsmRangeStep console variable to 1\.5 to reduce the area that each consecutive cascade covers\. | Set the e\_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses\. | 
 |  ![\[Set the e_GsmRange console variable to 1 to reduce the size of the shadow cascade.\]](/images/userguide/mobile/global-shadow-map-e_GsmRange.png)  |  ![\[Set the e_GsmRangeStep console variable to 1.5 to reduce the area that each consecutive cascade covers.\]](/images/userguide/mobile/global-shadow-map-e_GsmRangeStep.png)  |  ![\[Set the e_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses.\]](/images/userguide/mobile/global-shadow-map-e_GsmNodLods.png)  | 
 
-### Material Guidelines<a name="ios-android-performance-art-guidelines-materials"></a>
+### Material Guidelines {#ios-android-performance-art-guidelines-materials}
 
 Follow these guidelines when creating materials for your mobile game:
 + Use fewer individual objects and materials to significantly reduce the draw calls\.
 + Use texture atlases to reduce the number of materials or submaterials needed, reduce the draw calls, and increase performance\.
 + Reduce the texture size to 1024 x 1024 or less\.
 
-## Engineering Guidelines<a name="ios-android-performance-engineering-guidelines"></a>
+## Engineering Guidelines {#ios-android-performance-engineering-guidelines}
 
 Lumberyard provides four levels of configuration files to support enabling and disabling features and functionality based on performance characteristics of the mobile devices\. You can find the following files in the `lumberyard_version/dev/Engine/Config/spec` directory:
 + `ios_low.cfg`
@@ -134,7 +134,7 @@ You can also edit the configuration files in the **Graphics Settings** window in
    When you edit the console variables for the configuration file, the renderer displays onscreen how the level may look on a mobile device\.  
 ![\[Example of the Graphics Settings window in Lumberyard Editor.\]](/images/userguide/mobile/graphics-settings-window-ios-example.png)
 
-### Using android\_models\.xml and ios\_models\.xml Files<a name="ios-android-performance-engineering-guidelines-models-xml-files"></a>
+### Using android\_models\.xml and ios\_models\.xml Files {#ios-android-performance-engineering-guidelines-models-xml-files}
 
 Lumberyard uses two `.xml` files to determine which mobile devices use the low, medium, high, or very high configuration settings files\. You can find the `android_models.xml` and `ios_models.xml` files in the `/lumberyard_version/dev/Engine/Config/gpu` directory\.
 
@@ -163,7 +163,7 @@ The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular exp
 </DeviceList>
 ```
 
-## GPU Memory \(GMEM\)<a name="ios-android-performance-using-gpu-memory-gmem"></a>
+## GPU Memory \(GMEM\) {#ios-android-performance-using-gpu-memory-gmem}
 
 GPU memory \(GMEM\) is a class of optimizations that uses local memory on the GPU to reduce the transfer of large textures between the CPU and GPU\. GMEM can operate in the following modes, depending on what the mobile device can support:
 + 256 bit mode – The engine can store three GBuffer render targets and depth or stencil in the local GPU pixel memory, while doing the preliminary Z pass, generating the GBuffer, deferring decals, and deferring rain and snow passes\. This mode also stores the diffuse and specular light accumulation textures in the local GPU pixel memory during the deferred shading passes of the renderer\.
@@ -176,7 +176,7 @@ The renderer uses two OpenGL extensions to determine which GMEM mode is supporte
 
 For the iOS devices that Lumberyard supports, both GMEM 256 bit mode and 128 bit mode are supported\.
 
-### Setting the GMEM Mode<a name="gpu-memory-setting-gmem-mode"></a>
+### Setting the GMEM Mode {#gpu-memory-setting-gmem-mode}
 
 You can enable or disable GMEM with the `r_EnableGMEMPath` console variable\.
 + **0** = Disables GMEM in the renderer\.
@@ -198,7 +198,7 @@ You can only enable or disable GMEM during engine startup\. You must add the `r_
 **Note**  
 To prevent visual artifacts and performance issues, do not change the value of the `r_EnableGMEMPath` console variable during runtime\.
 
-### Rendering Features and GMEM<a name="gpu-memory-setting-gmem-and-rendering-features"></a>
+### Rendering Features and GMEM {#gpu-memory-setting-gmem-and-rendering-features}
 
 GMEM offers the flexibility of setting the mode and rendering features to meet the visual quality and performance for a range of mobile devices\. More powerful mobile devices may be able to use GMEM 128 bit mode and still meet the necessary performance requirements\. You can use the configuration files for your mobile device as well as the `android_models.xml` or `ios_models.xml` files to set your requirements\.
 
@@ -222,7 +222,7 @@ If you want to use a rendering feature that GMEM 128 bit mode supports but not G
 
 To use all available rendering features, disable GMEM\.
 
-## Memory and App Size<a name="ios-android-performance-memory-app-size-guidelines"></a>
+## Memory and App Size {#ios-android-performance-memory-app-size-guidelines}
 
 Because mobile devices have a limited amount of memory, you should take the necessary steps to reduce the size of your app and the amount of memory it requires\. Follow these guidelines:
 + Include only the resources that your game uses\.
@@ -238,7 +238,7 @@ Because mobile devices have a limited amount of memory, you should take the nece
 **Android**  
 If you want to reduce the size of a large app, you can use the tools that are included with the Android NDK to examine your executable\. For example, you can use objdump or nm\. The nm tool can disassemble your binary files and show the size of each code segment\. The nm tool can also list symbols and detect if code is unexpectedly linked to your binary\.
 
-## Particle Rendering Features and Performance<a name="ios-android-performance-particle-rendering-guidelines"></a>
+## Particle Rendering Features and Performance {#ios-android-performance-particle-rendering-guidelines}
 
 Particles use sun and light volumes to determine how they should be lit in the scene\. Because light volumes are expensive on mobile devices, we do not recommend using this feature on medium to low\-end devices\. To specify how particles are lit, you can use the `e_LightVolumes` console variable with the following values:
 + `0` = Particles are not affected by the sun or light volume lights\.

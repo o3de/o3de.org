@@ -2,13 +2,13 @@
 description: ' Configure global settings for the PhysX system in &ALYlong;. '
 title: Global Configuration
 ---
-# Global Configuration<a name="physx-configuration-global"></a>
+# Global Configuration {#physx-configuration-global}
 
 On the **Global Configuration** tab, you can configure world settings and editor settings\.
 
 ![\[PhysX Global Configuration tab\]](/images/userguide/physx/physx-configuration-1.png)
 
-## World Configuration<a name="physx-configuration-global-world"></a>
+## World Configuration {#physx-configuration-global-world}
 
 The following table describes the settings for **World Configuration**\.
 
@@ -26,7 +26,7 @@ The following table describes the settings for **World Configuration**\.
 | Continuous Collision Detection |  If set, enables continuous collision detection in the world\.  Disabled by default\.  | 
 | Persistent Contact Manifold |  If set, attempts to improve the calculation of the entities that are colliding and preserves this data between frames\.  Enabled by default, which is the recommended setting\. Persistent manifolds store the contact data created in one frame for potential reuse in subsequent frames\. For example, if the corner of box A collides with the side of box B, the contact data is stored and the manifold stores the collision point\. If box A's corner no longer collides in approximately in the same location in the next frame, the data is disregarded\. If box A moves too far \(for example, if it rotates so far that the corner no longer touches\), that data is discarded\. Otherwise, the manifold provides faster collision results by using the data from the previous frame to calculate the collision\. Although persistent manifolds require more memory, they improve performance and the accuracy of the simulation by reducing jitter and other unwanted physics artifacts\.   | 
 
-## Editor Configuration<a name="physx-configuration-global-editor"></a>
+## Editor Configuration {#physx-configuration-global-editor}
 
 The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md) component\.
 

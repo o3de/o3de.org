@@ -3,15 +3,15 @@ description: ' Use the UILayoutRowComponent to control the grid layout of rows i
   &ALYlong;. '
 title: UILayoutRowComponent
 ---
-# UILayoutRowComponent<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent"></a>
+# UILayoutRowComponent {#lua-scripting-ces-api-ui-uilayoutrowcomponent}
 
 Controls the grid layout of rows\.
 
-## UiLayoutRowBus<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus"></a>
+## UiLayoutRowBus {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus}
 
 Messages serviced by the `UiLayoutRowComponent`\.
 
-### GetOrder<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getorder"></a>
+### GetOrder {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getorder}
 
 Returns the horizontal order for this layout\.
 
@@ -31,7 +31,7 @@ enum eUiHorizontalOrder
     };
 ```
 
-### GetPadding<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getpadding"></a>
+### GetPadding {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getpadding}
 
 Returns, in pixels, the padding inside the edges of the element\.
 
@@ -53,7 +53,7 @@ class UiPadding
 };
 ```
 
-### GetSpacing<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getspacing"></a>
+### GetSpacing {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getspacing}
 
 Returns, in pixels, the spacing between child elements\.
 
@@ -63,7 +63,7 @@ Returns, in pixels, the spacing between child elements\.
 float GetSpacing()
 ```
 
-### SetOrder<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setorder"></a>
+### SetOrder {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setorder}
 
 Sets the horizontal order for this layout\.
 
@@ -75,7 +75,7 @@ void SetOrder(eUiHorizontalOrder order)
 
 For possible values for `eUiHorizontalOrder`, see [GetOrder](#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getorder)\.
 
-### SetPadding<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setpadding"></a>
+### SetPadding {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setpadding}
 
 Sets the padding inside the edges of the element to the specified number of pixels\.
 
@@ -87,7 +87,7 @@ void SetPadding(UiPadding padding)
 
 For possible values for `UiPadding`, see [GetPadding](#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-getpadding)\.
 
-### SetSpacing<a name="lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setspacing"></a>
+### SetSpacing {#lua-scripting-ces-api-ui-uilayoutrowcomponent-uilayoutrowbus-setspacing}
 
 Sets the spacing between child elements to the specified number of pixels\.
 

@@ -2,11 +2,11 @@
 description: ' Use the scopes shader to render optical effects in &ALYlong;. '
 title: Scopes Shader
 ---
-# Scopes Shader<a name="shader-ref-scopes"></a>
+# Scopes Shader {#shader-ref-scopes}
 
 The Scopes shader is used to render various optical effects for binoculars, telescopes, and weapon sight scopes\.
 
-## Shader Parameters<a name="shader-ref-scopes-shader-parameters"></a>
+## Shader Parameters {#shader-ref-scopes-shader-parameters}
 
 **Fake glow amount**  
 Sets the amount of fake glow\.  
@@ -58,7 +58,7 @@ Default value: 160
 Sets scope scale\.  
 Default value: 4
 
-## Shader Generation Parameters<a name="shader-ref-scopes-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-scopes-shader-generation-parameters}
 
 **Reflex sight**  
 Use for reflex\-style weapon sights\. When enabled, the **Diffuse** texture map slot under **Texture Maps** also becomes available\.

@@ -2,7 +2,7 @@
 description: ' Add Qt 5 content to the Waf build system in &ALYlong;. '
 title: Adding Qt 5 Content to Waf
 ---
-# Adding Qt 5 Content to Waf<a name="waf-qt-content"></a>
+# Adding Qt 5 Content to Waf {#waf-qt-content}
 
 You can add Qt 5 content into the Waf build system\. Typically you use an IDE \(integrated development environment\) tool such as Qt Designer to create and edit the Qt source file\. As with all files that are processed through the Waf build system, the Qt source file must be included in the corresponding `*.waf_files` file for each project\.
 
@@ -21,7 +21,7 @@ bld.CryEditorUiQt(
         features            = ['qt5'],
 ```
 
-## MOC \(Meta\-Object Compiler\) Files<a name="waf-qt-content-moc"></a>
+## MOC \(Meta\-Object Compiler\) Files {#waf-qt-content-moc}
 
 When header files need to be processed by the Meta\-Object Compiler \(MOC\) as part of the build process, the build system identifies them by including their MOC output file inside the source `.cpp` file\. For example, if `foo.h` is a file that is to be processed by MOC, then the source `foo.cpp` file also needs to include the corresponding `#include` for the `.moc` file that is generated\. 
 
@@ -51,7 +51,7 @@ For example, if `foo.h` and `foo.cpp` are moved into the `\test` subdirectory, t
 #incude <test/foo.cpp>  // This needs to be relative to the base path for the project in the intermediate directory.
 ```
 
-## QRC \(QT Resource Collection\) files<a name="waf-qt-content-qrc"></a>
+## QRC \(QT Resource Collection\) files {#waf-qt-content-qrc}
 
 Qt resource collection \(`.qrc`\) files are processed by the Qt `.qrc` compiler\. The output file has the same source name but with an `.rcc` extension\. The resulting `.rcc` file is stored in the projects intermediate directory relative to any subdirectory that it exists in\.
 
@@ -69,7 +69,7 @@ The following is an example of the contents in an `ObjectPanel.qrc` file:
 
 For more information, see [The Qt Resource System](http://doc.qt.io/qt-5/resources.html) documentation\.
 
-## UI Files<a name="waf-qt-content-ui"></a>
+## UI Files {#waf-qt-content-ui}
 
 Designer UI files are processed by the Qt UIC \(user interface compiler\)\. The output file has an `.h` header extension to it, and `ui_` is also added to the name of the source\. The resulting header file is created in the project's intermediate directory relative to its location in the project\.
 
@@ -84,7 +84,7 @@ When including the generated header file, using the same rule as the moc include
 #include <test/ui_foo.h>  // Path is relative to the project root
 ```
 
-## Qt Linguist \(TS\) files<a name="waf-qt-content-ts"></a>
+## Qt Linguist \(TS\) files {#waf-qt-content-ts}
 
 Qt Linguist files \(`.ts`\) are processed by Qt and output as `.qm` files\. The `.qm` files are automatically included into a single `.qrc` file specified by the `langname` attribute in the wscript file\. The `.qrc` file is automatically added as a build task like other `.qrc` files for the project\.
 

@@ -2,7 +2,7 @@
 description: ' Use the Game Metrics cloud gem to collect and view player data in &ALYlong;. '
 title: Game Metrics Cloud Gem
 ---
-# Game Metrics Cloud Gem<a name="cloud-canvas-metrics-gem"></a>
+# Game Metrics Cloud Gem {#cloud-canvas-metrics-gem}
 
 You can use the Game Metrics cloud gem to collect event data on player behaviors, which you can then analyze or trigger event actions\. This gem uses a service API with the Cloud Gem Framework for event submission, Amazon S3 for data storage, Amazon Athena as the query engine, Amazon QuickSight as the data visualizer, and the Cloud Gem Portal for administration and as a telemetry dashboard\.
 
@@ -56,7 +56,7 @@ The Game Metrics cloud gem includes the following default Athena partitions:
 |  `p_data_sensitivity`  |  Encryption level of the data\.  | 
 |  `p_event_schema_hash`  |  Hash of the event schema\.  | 
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-metrics-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-metrics-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the **Cloud Gem Game Metrics** enabled\.

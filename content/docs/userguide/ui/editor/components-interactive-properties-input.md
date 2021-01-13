@@ -3,7 +3,7 @@ description: ' The Input Enabled setting determines whether the component can be
   with in &ALY;. '
 title: Input Enabled
 ---
-# Input Enabled<a name="ui-editor-components-interactive-properties-input"></a>
+# Input Enabled {#ui-editor-components-interactive-properties-input}
 
 The **Input Enabled** setting, selected by default, determines whether the component can be interacted with\.
 

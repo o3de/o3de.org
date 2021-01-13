@@ -2,7 +2,7 @@
 description: ' Create custom image processing presets in &ALYlong;. '
 title: Creating Image Processing Presets
 ---
-# Creating Image Processing Presets<a name="asset-pipeline-creating-image-processing-presets"></a>
+# Creating Image Processing Presets {#asset-pipeline-creating-image-processing-presets}
 
 Lumberyard contains an existing set of image processing presets\. You apply these presets on your source image file names before you add them in your Lumberyard directory for processing\. Based on the appended suffix for the file name, Asset Processor converts them into `.dds` files with specific settings and adds them to the `lumberyard_version\dev\Cache` directory\.
 
@@ -18,7 +18,7 @@ The `AssetProcessorPlatformConfig.ini` file matches file name suffix patterns an
 + [Creating Presets with ImageCompiler\.cpp and rc\.ini](#asset-pipeline-creating-presets-imagecompiler-rc)
 + [Creating Presets with AssetProcessorPlatformConfig\.ini](#asset-pipeline-creating-presets-with-assetprocessorplatformconfig-ini)
 
-## Creating Presets with ImageCompiler\.cpp and rc\.ini<a name="asset-pipeline-creating-presets-imagecompiler-rc"></a>
+## Creating Presets with ImageCompiler\.cpp and rc\.ini {#asset-pipeline-creating-presets-imagecompiler-rc}
 
 The following snippet is from `ImageCompiler.cpp`, located in the `lumberyard_version\dev\Code\Tools\RC\ResourceCompilerImage` directory\. Part of this code finds file names appended with `_bump`, and then calls the `presetName` function `defaultBump`, which derives its settings from `NormalsFromDisplacement` \(defined in `rc.ini`\)\.
 
@@ -134,7 +134,7 @@ colorspace=sRGB,auto
 filemasks=*_awesome*
 ```
 
-## Creating Presets with AssetProcessorPlatformConfig\.ini<a name="asset-pipeline-creating-presets-with-assetprocessorplatformconfig-ini"></a>
+## Creating Presets with AssetProcessorPlatformConfig\.ini {#asset-pipeline-creating-presets-with-assetprocessorplatformconfig-ini}
 
 You can also add presets in the `AssetProcessorPlatformConfig.ini` file, located in the `lumberyard_version\dev` directory\.
 

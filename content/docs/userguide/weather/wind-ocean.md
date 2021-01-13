@@ -3,7 +3,7 @@ description: ' Use OceanAnimation settings to simulate realistic wind and wave e
   for an ocean in your &ALY; game project. '
 title: Adding Ocean Wind
 ---
-# Adding Ocean Wind<a name="weather-wind-ocean"></a>
+# Adding Ocean Wind {#weather-wind-ocean}
 
 
 ****  

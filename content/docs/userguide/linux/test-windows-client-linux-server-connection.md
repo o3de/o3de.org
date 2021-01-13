@@ -3,7 +3,7 @@ description: ' Test the connection between the Windows client and the Linux serv
   for &ALYlong;. '
 title: Testing the Windows Client to Linux Server Connection
 ---
-# Testing the Windows Client to Linux Server Connection<a name="linux-test-windows-client-linux-server-connection"></a>
+# Testing the Windows Client to Linux Server Connection {#linux-test-windows-client-linux-server-connection}
 
 
 ****  
@@ -14,7 +14,7 @@ title: Testing the Windows Client to Linux Server Connection
 
 After you've [built the Windows client and Linux server](/docs/userguide/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\. 
 
-## Prerequisites<a name="linux-test-windows-client-linux-server-connection-prerequisites"></a>
+## Prerequisites {#linux-test-windows-client-linux-server-connection-prerequisites}
 
 To test your server setup, complete the following tasks\.
 + Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](/docs/userguide/linux/build-lumberyard-executable.md)\.
@@ -26,7 +26,7 @@ To test your server setup, complete the following tasks\.
 **Important**  
  There might be other considerations in your network environment that require additional setup – such as a corporate firewall, proxy, or VPN – that you should consult with your system administrator on as part of setting up for testing\. 
 
-## Start the server<a name="linux-test-windows-client-linux-server-connection-start-server"></a>
+## Start the server {#linux-test-windows-client-linux-server-connection-start-server}
 
 Before starting the client and after configuring the server to accept connections, start the dedicated server\.
 
@@ -54,7 +54,7 @@ Before starting the client and after configuring the server to accept connection
    ./MultiplayerSampleLauncher_Server
    ```
 
-## Configure the server remotely<a name="linux-test-windows-client-linux-server-connection-remote-console"></a>
+## Configure the server remotely {#linux-test-windows-client-linux-server-connection-remote-console}
 
 When the server is running, launch the remote console and set up the server to start hosting a game session\.
 
@@ -75,7 +75,7 @@ When the server is running, launch the remote console and set up the server to s
 
 1. Close the remote console\.
 
-## Connect from the client to the server<a name="linux-test-windows-client-linux-server-connection-connect-client"></a>
+## Connect from the client to the server {#linux-test-windows-client-linux-server-connection-connect-client}
 
 Start the game client and connect to the multiplayer session\.
 

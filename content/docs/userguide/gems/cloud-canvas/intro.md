@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; tools in &cloud; to create connected gaming exp
   using AWS resources like &DDBlong; tables, &LAMlong; functions, or &S3; buckets. '
 title: Implementing Connected Features with &cloud;
 ---
-# Implementing Connected Features with Cloud Canvas<a name="cloud-canvas-intro"></a>
+# Implementing Connected Features with Cloud Canvas {#cloud-canvas-intro}
 
 **Topics**
 + [Features](#cloud-canvas-overview-features)
@@ -25,7 +25,7 @@ Deeply integrated with AWS, Cloud Canvas is a suite of tools and solutions \(clo
 
 With Cloud Canvas, you can add a cloud\-connected feature to your game in as little as 30 minutes\. A single engineer can do this, freeing up the rest of your team to think about innovation and player experience\.
 
-## Features<a name="cloud-canvas-overview-features"></a>
+## Features {#cloud-canvas-overview-features}
 
 Cloud Canvas offers a wide range of helpful features:
 + [Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) that provide cloud\-connected features such as Message of the Day, Leaderboards, and Dynamic Content\. These cloud gems can be used in a few clicks as is, or as samples to fuel your custom developments and ideas\. 
@@ -36,7 +36,7 @@ Cloud Canvas offers a wide range of helpful features:
 + Management of AWS deployments so that development, test, and live resources are maintained separately\.
 + Methods for players to be authenticated \(anonymous and authenticated\)\. Players can be authenticated from a variety of devices and access their game data by logging in with an Amazon, Facebook, or Google account\.
 
-## Example Uses<a name="cloud-canvas-overview-example-uses"></a>
+## Example Uses {#cloud-canvas-overview-example-uses}
 
 Consider the many ways you can use Amazon Web Services for connected games:
 + Store and query game data such as player state, high scores, or world dynamic content: [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/) and [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)
@@ -47,7 +47,7 @@ Consider the many ways you can use Amazon Web Services for connected games:
 
 For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md) and [Lumberyard Tutorials](https://gamedev.amazon.com/forums/tutorials)\.
 
-## Tools<a name="cloud-canvas-overview-tools"></a>
+## Tools {#cloud-canvas-overview-tools}
 
  You can access Cloud Canvas functionality by using any of the following:
 +  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** – A web application that makes backend administration and management accessible to everyone\. 
@@ -55,7 +55,7 @@ For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas]
 + **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** – For managing resource groups, mappings, deployments, and projects\. 
 +  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** – For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
 
-## Knowledge Prerequisites<a name="cloud-canvas-overview-prereq-knowledge"></a>
+## Knowledge Prerequisites {#cloud-canvas-overview-prereq-knowledge}
 
 You need the following to take advantage of Cloud Canvas:
 + **An understanding of [AWS CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)** – Cloud Canvas uses the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) service to create and manage AWS resources\. Our goal is for Cloud Canvas to minimize what you need to know about AWS CloudFormation and AWS in general\. 

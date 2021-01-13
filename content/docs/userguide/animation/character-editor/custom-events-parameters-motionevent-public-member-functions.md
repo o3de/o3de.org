@@ -2,7 +2,7 @@
 description: null
 title: MotionEvent Public Member Functions
 ---
-# MotionEvent Public Member Functions<a name="char-animation-editor-custom-events-parameters-motionevent-public-member-functions"></a>
+# MotionEvent Public Member Functions {#char-animation-editor-custom-events-parameters-motionevent-public-member-functions}
 
 The `MotionEvent` class includes the following public member functions\.
 
@@ -18,7 +18,7 @@ The `MotionEvent` class includes the following public member functions\.
 + [SetIsSyncEvent](#char-animation-editor-custom-events-parameters-setissyncevent)
 + [HashForSyncing](#char-animation-editor-custom-events-parameters-hashforsyncing)
 
-## MotionEvent<a name="char-animation-editor-custom-events-parameters-motionevent"></a>
+## MotionEvent {#char-animation-editor-custom-events-parameters-motionevent}
 
 You can use the `MotionEvent` function to trigger an event at a specific point in time \(a tick event\) or during a specified time range \(a range event\)\. To specify the data that the event emits, you can use pointers or datasets\.
 
@@ -88,7 +88,7 @@ Creates a ranged event and uses a dataset\.
 | endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. | 
 | datas | The values to emit when the event is triggered\. | 
 
-## SetStartTime<a name="char-animation-editor-custom-events-parameters-setstarttime"></a>
+## SetStartTime {#char-animation-editor-custom-events-parameters-setstarttime}
 
 Sets the start time value of the event, which is when the event should be processed\.
 
@@ -98,7 +98,7 @@ Sets the start time value of the event, which is when the event should be proces
 void SetStartTime (float timeValue)
 ```
 
-## SetEndTime<a name="char-animation-editor-custom-events-parameters-setendtime"></a>
+## SetEndTime {#char-animation-editor-custom-events-parameters-setendtime}
 
 Sets the end time value of the event, which is when the event should be processed\.
 
@@ -108,7 +108,7 @@ Sets the end time value of the event, which is when the event should be processe
 void SetEndTime (float timeValue)
 ```
 
-## GetStartTime<a name="char-animation-editor-custom-events-parameters-getstarttime"></a>
+## GetStartTime {#char-animation-editor-custom-events-parameters-getstarttime}
 
 Gets the start time value of this event, which is when the event should be executed\.
 
@@ -118,7 +118,7 @@ Gets the start time value of this event, which is when the event should be execu
 float GetStartTime () const
 ```
 
-## GetEndTime<a name="char-animation-editor-custom-events-parameters-getendtime"></a>
+## GetEndTime {#char-animation-editor-custom-events-parameters-getendtime}
 
 Gets the end time value of this event, which is when the event should stop\.
 
@@ -128,7 +128,7 @@ Gets the end time value of this event, which is when the event should stop\.
 float GetEndTime () const
 ```
 
-## GetIsTickEvent<a name="char-animation-editor-custom-events-parameters-getistickevent"></a>
+## GetIsTickEvent {#char-animation-editor-custom-events-parameters-getistickevent}
 
 Checks whether this is a tick event\.
 
@@ -138,7 +138,7 @@ Checks whether this is a tick event\.
 bool GetIsTickEvent () const
 ```
 
-## ConvertToTickEvent<a name="char-animation-editor-custom-events-parameters-converttotickevent"></a>
+## ConvertToTickEvent {#char-animation-editor-custom-events-parameters-converttotickevent}
 
 Converts this event into a tick event\.
 
@@ -148,7 +148,7 @@ Converts this event into a tick event\.
 void ConvertToTickEvent ()
 ```
 
-## GetIsSyncEvent<a name="char-animation-editor-custom-events-parameters-getissyncevent"></a>
+## GetIsSyncEvent {#char-animation-editor-custom-events-parameters-getissyncevent}
 
 Checks whether this event is a sync event\.
 
@@ -158,7 +158,7 @@ Checks whether this event is a sync event\.
 bool GetIsSyncEvent () const
 ```
 
-## SetIsSyncEvent<a name="char-animation-editor-custom-events-parameters-setissyncevent"></a>
+## SetIsSyncEvent {#char-animation-editor-custom-events-parameters-setissyncevent}
 
 Specifies whether this event is a sync event\.
 
@@ -168,7 +168,7 @@ Specifies whether this event is a sync event\.
 void SetIsSyncEvent (bool newValue)
 ```
 
-## HashForSyncing<a name="char-animation-editor-custom-events-parameters-hashforsyncing"></a>
+## HashForSyncing {#char-animation-editor-custom-events-parameters-hashforsyncing}
 
 Creates a hash on the sync track of a motion\. 
 

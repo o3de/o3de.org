@@ -3,15 +3,15 @@ description: ' Use the UIFaderComponent fader component to simultaneously adjust
   transparency of an element and its children in &ALYlong;. '
 title: UIFaderComponent
 ---
-# UIFaderComponent<a name="lua-scripting-ces-api-ui-uifadercomponent"></a>
+# UIFaderComponent {#lua-scripting-ces-api-ui-uifadercomponent}
 
 You can use a fader component to simultaneously adjust the transparency of an element and its children\.
 
-## UiFaderBus<a name="lua-scripting-ces-api-ui-uifadercomponent-uifaderbus"></a>
+## UiFaderBus {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus}
 
 Services messages for the `UiFaderComponent`\.
 
-### Fade<a name="lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-fade"></a>
+### Fade {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-fade}
 
 Triggers a fade animation\.
 
@@ -29,7 +29,7 @@ void Fade(float targetValue, float speed)
 | targetValue | The value at which to end the fade \[0,1\]\. | 
 | speed | The speed of the fade animation in full fade amount per second; 0 means instant\. | 
 
-### GetFadeValue<a name="lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-getfadevalue"></a>
+### GetFadeValue {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-getfadevalue}
 
 Returns the fade value\. The fade value is a float between zero and one\. One means no fade; zero means complete fade to invisible\.
 
@@ -39,7 +39,7 @@ Returns the fade value\. The fade value is a float between zero and one\. One me
 float GetFadeValue()
 ```
 
-### IsFading<a name="lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-isfading"></a>
+### IsFading {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-isfading}
 
 Returns whether a fade animation is taking place\.
 
@@ -49,7 +49,7 @@ Returns whether a fade animation is taking place\.
 bool IsFading()
 ```
 
-### SetFadeValue<a name="lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-setfadevalue"></a>
+### SetFadeValue {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-setfadevalue}
 
 Sets the fade value\.
 
@@ -59,11 +59,11 @@ Sets the fade value\.
 void SetFadeValue(float fade)
 ```
 
-## UiFaderNotificationBus<a name="lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus"></a>
+## UiFaderNotificationBus {#lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus}
 
 Services notifications for the `UiFaderComponent`\.
 
-### OnDestroyed<a name="lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-ondestroyed"></a>
+### OnDestroyed {#lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-ondestroyed}
 
 The fader component has been destroyed\.
 
@@ -73,7 +73,7 @@ The fader component has been destroyed\.
 void OnFaderDestroyed()
 ```
 
-### OnFadeComplete<a name="lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-onfadecomplete"></a>
+### OnFadeComplete {#lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-onfadecomplete}
 
 The fade animation is done\.
 
@@ -83,7 +83,7 @@ The fade animation is done\.
 void OnFadeComplete()
 ```
 
-### OnFadeInterrupted<a name="lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-onfadeinterrupted"></a>
+### OnFadeInterrupted {#lua-scripting-ces-api-ui-uifadercomponent-uifadernotificationbus-onfadeinterrupted}
 
 The fade animation has been interrupted\.
 

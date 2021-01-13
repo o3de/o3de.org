@@ -3,7 +3,7 @@ description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor
   return the substance material file. '
 title: Find by Name
 ---
-# Find by Name<a name="find-by-name-procedural-material-node"></a>
+# Find by Name {#find-by-name-procedural-material-node}
 
 Finds a procedural material by the substance file name and graph name\. All substance files contain one or more graphs, and these graphs correspond to a procedural material\. 
 
@@ -29,7 +29,7 @@ Finds a procedural material by the substance file name and graph name\. All subs
 
    1. For **Graph Name**, enter the graph name\.
 
-## Inputs<a name="find-by-name-procedural-material-node-input"></a>
+## Inputs {#find-by-name-procedural-material-node-input}
 
 
 ****  
@@ -41,7 +41,7 @@ Finds a procedural material by the substance file name and graph name\. All subs
 | Graph Name | String | Name of the specific graph in the substance material\. | 
 | Force Load | Boolean | Forces the procedural material to load, if it's not already loaded\. | 
 
-## Outputs<a name="find-by-name-procedural-material-node-output"></a>
+## Outputs {#find-by-name-procedural-material-node-output}
 
 
 ****  

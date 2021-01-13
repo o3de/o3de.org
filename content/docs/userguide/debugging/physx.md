@@ -2,7 +2,7 @@
 description: ' Debug PhysX issues for your game in &ALYlong;. '
 title: Debugging PhysX
 ---
-# Debugging PhysX<a name="debugging-physx"></a>
+# Debugging PhysX {#debugging-physx}
 
 The PhysX system has the following features that you can use to debug issues\. 
 
@@ -14,7 +14,7 @@ You must first enable the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug
 + [Debugging with the ImGui Tool](#imgui-debugging-tool)
 + [Debug Options in the PhysX Configuration](#physx-debugging-configuration)
 
-## PhysX Debug Console Variables<a name="debugging-physx-console-variables"></a>
+## PhysX Debug Console Variables {#debugging-physx-console-variables}
 
 Enter the following console variables to debug your PhysX issues\. 
 
@@ -29,7 +29,7 @@ physx_Debug 1
 You can specify the following values:
 + `1` – Enable debug visualizations\. By default, this value enables the collision shapes and edges for your PhysX entities\. 
 + `2` – Enables all configuration options\. This enables all the available visualization options\. 
-+ `3` – Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider.md#physics-asset-colliders)\. 
++ `3` – Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider#physics-asset-colliders)\. 
 + `0` – Disables debug visualizations\.
 
 Toggles a visual culling box frame\.
@@ -60,7 +60,7 @@ physx_PvdDisconnect
 
 For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
-## Debugging with the ImGui Tool<a name="imgui-debugging-tool"></a>
+## Debugging with the ImGui Tool {#imgui-debugging-tool}
 
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface \(**ImGui**\) tool\.
 
@@ -81,6 +81,6 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/debugging-physx.html)
 
-## Debug Options in the PhysX Configuration<a name="physx-debugging-configuration"></a>
+## Debug Options in the PhysX Configuration {#physx-debugging-configuration}
 
 You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.

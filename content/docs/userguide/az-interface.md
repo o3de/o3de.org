@@ -3,7 +3,7 @@ description: ' Use the AZ::Interface&lt;T&gt; template class to create global me
   request buses for &ALYlong; game code. '
 title: AZ::Interface&lt;T&gt;
 ---
-# AZ::Interface<T><a name="az-interface"></a>
+# AZ::Interface<T> {#az-interface}
 
 Use the `AZ::Interface<T>` template class to create global or application lifetime message request buses that support systems of `type T`\. This template class is used to implement access for registered singletons across module boundaries\. In this case, a singleton is an instance of a type that inherits `AZ::Interface::Registrar`\. Once the singleton instance is registered, you can access the environment variables through code implemented on the instance\. You can also make changes to the envirovnment variables that can be viewed by other parts of your game's components\. 
 
@@ -98,7 +98,7 @@ Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, 
 **Vs\. AZ::Event**  
 `AZ::Event` is a publish/subscribe \(pub/sub\) event handler that can be used when you want to subscribe to notifications from another component on the same thread\. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console\. 
 
-## Converting from an EBus implementation<a name="az-interface-convert-ebus"></a>
+## Converting from an EBus implementation {#az-interface-convert-ebus}
 
 Here is an example of converting a global request bus to `AZ::Interface<T>`\.
 
@@ -220,7 +220,7 @@ public:
 AZ::Interface<IRequests>::Get()->Request(1);
 ```
 
-## Unit testing<a name="az-interface-unit-tests"></a>
+## Unit testing {#az-interface-unit-tests}
 
 The `AZ::Interface` system includes a number of unit tests to validate correct behavior\.
 

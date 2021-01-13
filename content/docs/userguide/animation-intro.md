@@ -3,9 +3,9 @@ description: ' The following topics will guide you through character animation, 
   effects, and cinematic animation in &ALY;. '
 title: Actor and effects animation in &ALY;
 ---
-# Actor and effects animation in Lumberyard<a name="animation-intro"></a>
+# Actor and effects animation in Lumberyard {#animation-intro}
 
-## Working with animation in Lumberyard<a name="ly-animation-intro"></a>
+## Working with animation in Lumberyard {#ly-animation-intro}
 
 Learn how to animate game characters and other actors in your Lumberyardscenes and cinematics, as well as how to add particle\-based animation effects\.
 

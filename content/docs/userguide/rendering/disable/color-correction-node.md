@@ -3,7 +3,7 @@ description: ' Use the Disable Color Correction node in the &ALYlong; &script-ca
   editor to disable color correction parameters. '
 title: Disable Color Correction
 ---
-# Disable Color Correction<a name="disable-color-correction-node"></a>
+# Disable Color Correction {#disable-color-correction-node}
 
 Disables color correction parameters\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Color Correction](/docs/userguide/rendering/en
 
 ![\[disablecolorcorrection, disablecolorcorrectionnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-color-correction-node.png)
 
-## Inputs<a name="disable-color-correction-node-input"></a>
+## Inputs {#disable-color-correction-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Color Correction](/docs/userguide/rendering/en
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="disable-color-correction-node-output"></a>
+## Outputs {#disable-color-correction-node-output}
 
 
 ****  

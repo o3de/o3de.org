@@ -3,7 +3,7 @@ description: ' Paint and blend terrain layers in a level with the Terrain.Layer 
   in &ALYlong;. '
 title: Terrain.Layer Shader
 ---
-# Terrain\.Layer Shader<a name="shader-ref-terrain-layer"></a>
+# Terrain\.Layer Shader {#shader-ref-terrain-layer}
 
 The Terrain\.Layer shader is used for painting and blending terrain texture layers in a level\. Besides needing a bump map and high\-passed diffuse map, the Terrain\.Layer shader also requires a height map with either offset bump mapping \(OBM\) or parallax occlusion mapping \(POM\) enabled\. Blending uses the height map to determine how the materials blend together\. For example, if you have pebbles on one material and dirt as another, you may want the pebbles to accurately stand out from the dirt\.
 
@@ -12,7 +12,7 @@ Here are a few notes regarding usage of this shader:
 + The **Decal** parameters don't appear under **Shader Params** unless you put a texture into the **Decal** slot first\. The **Decal Bumpmap** slot also appears after this task\.
 + Flow map textures go in the **Detail** slot\.
 
-## Shader Parameters<a name="shader-ref-terrain-layer-shader-parameters"></a>
+## Shader Parameters {#shader-ref-terrain-layer-shader-parameters}
 
 **Blend Factor**  
 Changes the visibility of the blended layer\. A height map is required\. **OBM** or **OBM** shader generation parameter must be enabled first\.  
@@ -58,7 +58,7 @@ Default value: 0\.01
 **POM** shader generation parameter must be enabled first\.  
 Default value: 3
 
-## Shader Generation Parameters<a name="shader-ref-terrain-layer-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-terrain-layer-shader-generation-parameters}
 
 **Offset bump mapping \(OBM\)**  
 Uses offset bump mapping\. Requires a height map \(\_displ format\)\.

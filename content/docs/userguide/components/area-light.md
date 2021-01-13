@@ -2,7 +2,7 @@
 description: ' Use the Area Light component on an entity to light an area in &ALYlong;. '
 title: Area Light
 ---
-# Area Light<a name="component-area-light"></a>
+# Area Light {#component-area-light}
 
 Use the **Area Light** component on an entity to light an area\.
 
@@ -14,7 +14,7 @@ Shows the light\.
 **On initially**  
 When created, the light is on by default\.
 
-## General Settings<a name="component-area-light-general-settings"></a>
+## General Settings {#component-area-light-general-settings}
 
 See the following general settings:
 
@@ -30,7 +30,7 @@ Sets the strength of the specular brightness\.
 **Ambient**  
 Light acts as a multiplier for cubemap values\.
 
-## Area Light Settings<a name="component-area-light-settings"></a>
+## Area Light Settings {#component-area-light-settings}
 
 See the following area light settings:
 
@@ -46,7 +46,7 @@ Maximum distance in meters that the area light extends\.
 **FOV**  
 Field of View \(FOV\) in degrees\.
 
-## Options<a name="component-area-light-options"></a>
+## Options {#component-area-light-options}
 
 See the following options:
 
@@ -77,14 +77,14 @@ Light affects only volumetric fog\.
 **Volumetric fog**  
 Light affects volumetric fog and surrounding area\.
 
-## Shadow Settings<a name="component-area-light-shadow"></a>
+## Shadow Settings {#component-area-light-shadow}
 
 See the following shadow settings:
 
 **Terrain Shadows**  
 Includes the terrain in the shadow casters for this light\.
 
-## Animation<a name="component-area-light-animation"></a>
+## Animation {#component-area-light-animation}
 
 See the following animation settings:
 
@@ -97,13 +97,13 @@ Multiple of the base animation rate\. For example, a value of **2\.0** makes an 
 **Phase**  
 Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the animation\. For example, you can use this setting, for to prevent lights in the same scene, with the same animation, from being animated in unison\.
 
-## EBus Request Bus Interface<a name="component-light-ebusrequest"></a>
+## EBus Request Bus Interface {#component-light-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### SetLightState<a name="light-ebus-setlightstate"></a>
+### SetLightState {#light-ebus-setlightstate}
 
 Turns the light on or off\.
 
@@ -116,7 +116,7 @@ None
 **Scriptable**  
 Yes
 
-### TurnOnLight<a name="light-ebus-turnonlight"></a>
+### TurnOnLight {#light-ebus-turnonlight}
 
 Turns the light on\.
 
@@ -129,7 +129,7 @@ None
 **Scriptable**  
 Yes
 
-### TurnOffLight<a name="light-ebus-turnofflight"></a>
+### TurnOffLight {#light-ebus-turnofflight}
 
 Turns off the light\.
 
@@ -142,7 +142,7 @@ None
 **Scriptable**  
 Yes
 
-### ToggleLight<a name="light-ebus-togglelight"></a>
+### ToggleLight {#light-ebus-togglelight}
 
 Toggles the light state from on to off, or off to on\.
 
@@ -155,13 +155,13 @@ None
 **Scriptable**  
 Yes
 
-## EBus Notification Bus Interface<a name="component-light-ebusnotification"></a>
+## EBus Notification Bus Interface {#component-light-ebusnotification}
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
 For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### LightTurnedOn<a name="light-ebus-lightturnedon"></a>
+### LightTurnedOn {#light-ebus-lightturnedon}
 
 Sends a signal when the light is turned on\.
 
@@ -174,7 +174,7 @@ None
 **Scriptable**  
 Yes
 
-### LightTurnedOff<a name="light-ebus-lightturnedoff"></a>
+### LightTurnedOff {#light-ebus-lightturnedoff}
 
 Sends a signal when the light is turned off\.
 

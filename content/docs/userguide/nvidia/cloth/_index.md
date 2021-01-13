@@ -3,7 +3,7 @@ description: ' Use the NVIDIA Cloth gem to add cloth simulation to your &ALYlong
   project. '
 title: NVIDIA Cloth gem
 ---
-# NVIDIA Cloth gem<a name="nvidia-cloth"></a>
+# NVIDIA Cloth gem {#nvidia-cloth}
 
 
 ****  
@@ -16,7 +16,7 @@ Physical cloth simulations can create more immersive environments and characters
 
 For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/userguide/nvidia/cloth/intro.md)\. 
 
-## Functionality provided by the NVIDIA Cloth gem<a name="nvidia-cloth-functionality"></a>
+## Functionality provided by the NVIDIA Cloth gem {#nvidia-cloth-functionality}
 
 The NVIDIA Cloth gem provides the following:
 + **Cloth** modifier for Mesh and Actor import in **FBX Settings**\. 
@@ -25,7 +25,7 @@ The NVIDIA Cloth gem provides the following:
 + Mesh and Actor example assets and slices located in: *lumberyard\_version*\\dev\\Gems\\NvCloth\\Assets\\ 
 + A public C\+\+ API that allows other systems and gems to access cloth simulation functionality\. 
 
-## Enable the NVIDIA Cloth gem<a name="enable-gem-nvidia-cloth"></a>
+## Enable the NVIDIA Cloth gem {#enable-gem-nvidia-cloth}
 
 To enable the NVIDIA Cloth gem, do the following: 
 

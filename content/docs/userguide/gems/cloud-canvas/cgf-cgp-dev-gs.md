@@ -2,7 +2,7 @@
 description: ' Learn how to create cloud gem portals with dynamic content. '
 title: Getting Started With Game Development on the Cloud Gem Portal
 ---
-# Getting Started With Game Development on the Cloud Gem Portal<a name="cloud-canvas-cgf-cgp-dev-gs"></a>
+# Getting Started With Game Development on the Cloud Gem Portal {#cloud-canvas-cgf-cgp-dev-gs}
 
 To help you get started with game development on the Cloud Gem Portal \(CGP\), this tutorial shows you how to do the following:
 + Set up your environment to use the Cloud Gem Portal\.
@@ -10,11 +10,11 @@ To help you get started with game development on the Cloud Gem Portal \(CGP\), t
 + Test your Cloud Gem Portal locally\.
 + Deploy your Cloud Gem Portal to AWS and view it in production\.
 
-## Setting Up Your Environment<a name="cloud-canvas-cgf-cgp-dev-gs-setup"></a>
+## Setting Up Your Environment {#cloud-canvas-cgf-cgp-dev-gs-setup}
 
 Setting up your environment includes installing Node\.js packages, Git, creating a test URL, and configuring Microsoft Visual Studio if you are using it\.
 
-### Installing Node\.js and Git<a name="cloud-canvas-cgf-cgp-dev-gs-setup-installing-node-js"></a>
+### Installing Node\.js and Git {#cloud-canvas-cgf-cgp-dev-gs-setup-installing-node-js}
 
 The Cloud Gem Portal uses the Angular 2 version of [AngularJS](https://en.wikipedia.org/wiki/AngularJS) for programming and the Node\.js package manager \(npm\) for managing dependencies\. 
 
@@ -26,9 +26,9 @@ The Cloud Gem Portal uses the Angular 2 version of [AngularJS](https://en.wikipe
 
 1. Obtain a [GitHub](https://github.com/) account if you do not have one\. You must have a GitHub account to download the GitHub packages for the Cloud Gem Portal and for the optional [jspm](http://jspm.io/) package management tool\. jspm is a package manager for the [SystemJS universal module loader](https://github.com/systemjs/systemjs) and is built on the dynamic [ES6 Module Loader](https://github.com/ModuleLoader/es-module-loader)\.
 
-### Updating Packages and Running a Local Server<a name="cloud-canvas-cgf-cgp-dev-gs-setup-updating-packages-and-running-a-local-server"></a>
+### Updating Packages and Running a Local Server {#cloud-canvas-cgf-cgp-dev-gs-setup-updating-packages-and-running-a-local-server}
 
-From a command prompt, run the following commands to change to the `CloudGemPortal` directory, install packages, and run a [gulp](https://en.wikipedia.org/wiki/Gulp.js) server\. gulp is a toolkit for automating tedious or time\-consuming programming tasks\.<a name="cloud-canvas-cgf-cgp-dev-gs-setup-updating-packages-and-running-a-local-server-proc"></a>
+From a command prompt, run the following commands to change to the `CloudGemPortal` directory, install packages, and run a [gulp](https://en.wikipedia.org/wiki/Gulp.js) server\. gulp is a toolkit for automating tedious or time\-consuming programming tasks\. {#cloud-canvas-cgf-cgp-dev-gs-setup-updating-packages-and-running-a-local-server-proc}
 
 **To update packages and run a local server**
 
@@ -69,7 +69,7 @@ From a command prompt, run the following commands to change to the `CloudGemPort
 
 1. Open a browser and navigate to `http://localhost:3000`\. A login page should appear\.
 
-### Creating an Administrator Account<a name="cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account"></a>
+### Creating an Administrator Account {#cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account}
 
 Now you are ready to create an administrator account so that you can sign in on the page that you just opened\.
 
@@ -112,11 +112,11 @@ Now you can start editing your code\. Your changes should appear when you reload
 
 To learn how to set up Microsoft Visual Studio for creating cloud gems, see the following section\. To start creating your own cloud gems right away, see [Creating Cloud Gems](#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems)\.
 
-### Microsoft Visual Studio Setup<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio"></a>
+### Microsoft Visual Studio Setup {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio}
 
 You can edit your code with any text editor, but for creating cloud gems, you might prefer Microsoft Visual Studio for its Typescript support\. To use Visual Studio 2017 to create cloud gems, you configure it to work with Node\.js, add some TypeScript extensions, and optionally install Task Runner Explorer to run gulp tasks\.
 
-#### Configuring Visual Studio to Work with Node\.js<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-node.js"></a>
+#### Configuring Visual Studio to Work with Node\.js {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-node.js}
 
 Perform the following steps to configure Visual Studio to work with Node\.js\.
 
@@ -129,7 +129,7 @@ Perform the following steps to configure Visual Studio to work with Node\.js\.
 1. Add your `nodejs` and `node_modules\.bin` directories to the external tools configuration so that Visual Studio can find them\. The ordering of the paths is important\. Move your `nodejs` and `.node_modules/.bin` paths above the defaut Visual Studio paths, as shown in the following image\.  
 ![\[Expose Node.js directories to Visual Studio\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-6.png)
 
-#### Tools and Extensions Setup<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-tools-and-extensions"></a>
+#### Tools and Extensions Setup {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-tools-and-extensions}
 
 Next, you must install TypeScript\-related extensions for Visual Studio\.
 
@@ -147,7 +147,7 @@ Next, you must install TypeScript\-related extensions for Visual Studio\.
 
    After you install these packages, you can create cloud gems in Visual Studio\.
 
-#### Using the Task Runner Explorer \(Optional\)<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-task-runner-explorer"></a>
+#### Using the Task Runner Explorer \(Optional\) {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-task-runner-explorer}
 
 To run the gulp task, you can use [Task Runner Explorer](https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708s), a Visual Studio UI extension that executes any grunt or gulp task or target\.
 
@@ -162,15 +162,15 @@ To run the gulp task, you can use [Task Runner Explorer](https://visualstudiogal
 1. To start a server, run **default** or **gulp serve** in the list of gulp **Tasks**\.  
 ![\[Run the default gulp task to start a server\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-8.png)
 
-#### Troubleshooting<a name="cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-troubleshooting"></a>
+#### Troubleshooting {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-troubleshooting}
 
 If opening a `.ts` file causes Visual Studio to crash, make sure that no other Visual Studio plugins are installed that open `.ts` files \(QT Visual Studio and QT Linguist are two examples\)\.
 
-## Creating Cloud Gems<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems"></a>
+## Creating Cloud Gems {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems}
 
 Now you are ready to create cloud gems, which you can easily modify and redistribute to other game developers\. To create a cloud gem, you add base files and set up your TypeScript, `.html`, and `.css` files\.
 
-### Adding Base Files<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-adding-base-files"></a>
+### Adding Base Files {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-adding-base-files}
 
 From a command prompt window, create a symbolic link to your cloud gem source directory\. The link should point to the `cgp-resource-code` directory within your cloud gem\.
 
@@ -188,11 +188,11 @@ mklink /J <Workspace Path>\dev\Gems\CloudGemFramework\v<N>\Website\CloudGemPorta
 
 At this point, your file system is ready\. Now you can add skeleton code to the TypeScript, `.html`, and `.css` files\.
 
-### Creating TypeScript Files<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files"></a>
+### Creating TypeScript Files {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files}
 
 The Cloud Gem Portal is built on the Angular 2 version of [AngularJS](https://en.wikipedia.org/wiki/AngularJS)\. The default language for Angular 2 is [TypeScript](https://www.typescriptlang.org/)\. TypeScript is a typed superset of the JavaScript language\. TypeScript files have a `.ts` extension\. To build your cloud gem, you must create a number of \.ts files\.
 
-#### Basic Cloud Gem<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-basic-cloud-gem"></a>
+#### Basic Cloud Gem {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-basic-cloud-gem}
 
 The following diagram shows the recommended directory structure for a basic cloud gem and the `.ts` and other files that it contains\.
 
@@ -226,7 +226,7 @@ The following diagram shows the recommended directory structure for a basic clou
 | thumbnail\.component\.html | HTML markup for the thumbnail component that appears on the Cloud Gems page\. | 
 | thumbnail\.component\.ts | The thumbnail component that appears on the Cloud Gems page\. | 
 
-#### Advanced Cloud Gem<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-advanced-cloud-gem"></a>
+#### Advanced Cloud Gem {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-advanced-cloud-gem}
 
  If you plan on creating a more complex cloud gem \(for example, one with many components, services, and pipes\), we recommend the following file structure\.
 
@@ -248,7 +248,7 @@ The following diagram shows the recommended directory structure for a basic clou
             *.pipe.ts
 ```
 
-#### Example Starter Cloud Gem \.ts Files<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-examples"></a>
+#### Example Starter Cloud Gem \.ts Files {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-examples}
 
 The following example `.ts` files are for the Message of the Day Cloud Gem\.
 
@@ -397,7 +397,7 @@ export * from './index.component'
 export * from './cloudgemmessageoftheday.module
 ```
 
-#### Testing the Results<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-testing-the-results"></a>
+#### Testing the Results {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-testing-the-results}
 
 After your setup of the `.ts` files is complete, you can test the results\. If you are running your local server with `gulp serve` or `gulp serve-watch`, navigate to `localhost:3000`\. Your new gem should appear in the **Cloud Gems** section\.
 
@@ -405,7 +405,7 @@ After your setup of the `.ts` files is complete, you can test the results\. If y
 
 If you click the gem thumbnail, the page that appears is blank, but that's expected at this point\.
 
-### Creating an HTML File<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-an-html-file"></a>
+### Creating an HTML File {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-an-html-file}
 
 You can verify that your gem is working by adding a header like the following to your `.html` file\.
 
@@ -417,7 +417,7 @@ If you reload the Cloud Gem Portal page and navigate to your gem, your new text 
 
 ![\[HTML header showing\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-13.png)
 
-#### Creating Dynamic Content<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-dynamic-content"></a>
+#### Creating Dynamic Content {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-dynamic-content}
 
 To make your content more dynamic, you can use Angular 2 directives in your `.html` and `.ts` files\. To see this in action, modify the `.html` and `.ts` files to create a test button on the Message of the Day Cloud Gem, as in the following example\.
 
@@ -451,15 +451,15 @@ The following image shows what happens when the button is clicked\.
 
 ![\[Test button\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-14-anim.gif)
 
-### Creating a CSS File<a name="cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-a-css-file"></a>
+### Creating a CSS File {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-a-css-file}
 
 You can use standard CSS to style your cloud gems\. For convenience, Lumberyard's cloud gems use the [Bootstrap 4](https://v4-alpha.getbootstrap.com/) CSS framework\. When you use standard HTML tags, the your tags automatically pick up CSS changes that provide a professional looking, consistent user interface\.
 
-## Deploying Your Changes<a name="cloud-canvas-cgf-cgp-dev-gs-deploying"></a>
+## Deploying Your Changes {#cloud-canvas-cgf-cgp-dev-gs-deploying}
 
 After you are satisfied with your gem, you can upload it to AWS to verify that it is working\. Deploying your changes includes three steps: packaging your changes, copying your files to a local AWS directory, and uploading your cloud gem and Cloud Gem Portal files to AWS\.
 
-### 1\. Packaging Your Changes<a name="cloud-canvas-cgf-cgp-dev-gs-deploying-packaging"></a>
+### 1\. Packaging Your Changes {#cloud-canvas-cgf-cgp-dev-gs-deploying-packaging}
 
 To package your changes, perform one of the following tasks:
 + In Visual Studio, run the gulp task `build_deploy`\.
@@ -467,7 +467,7 @@ To package your changes, perform one of the following tasks:
 
 Doing so packages the three Cloud Gem Portal files `index.html`, `bundles\app.bundle.js`, and `bundles\dependencies.bundles.js` and copies them to the `lumberyard\Gems\CloudGemFramework\AWS\www` publishing directory\.
 
-### 3\. Uploading the Cloud Gem With Your Cloud Gem Portal Content<a name="cloud-canvas-cgf-cgp-dev-gs-deploying-uploading-the-cloud-gem"></a>
+### 3\. Uploading the Cloud Gem With Your Cloud Gem Portal Content {#cloud-canvas-cgf-cgp-dev-gs-deploying-uploading-the-cloud-gem}
 
 Before you upload your cloud gem to AWS, make sure you have you added your new cloud gem to your project with the Project Configurator\. To perform the upload, you can use either Lumberyard Editor or a command\-line prompt\.
 
@@ -496,7 +496,7 @@ Before you upload your cloud gem to AWS, make sure you have you added your new c
    lmbr_aws cloud-gem-framework upload-portal --project
    ```
 
-## Summary<a name="cloud-canvas-cgf-cgp-dev-gs-summary"></a>
+## Summary {#cloud-canvas-cgf-cgp-dev-gs-summary}
 
 In this tutorial, you accomplished the following tasks:
 

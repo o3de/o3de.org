@@ -3,7 +3,7 @@ description: ' Use &cloud; Resource Manager to manage profiles, make deployments
   test mappings, and use protected deployments. '
 title: Using Resource Manager in Game Design
 ---
-# Using Resource Manager in Game Design<a name="cloud-canvas-gpg-rm"></a>
+# Using Resource Manager in Game Design {#cloud-canvas-gpg-rm}
 
 You can use Cloud Canvas Resource Manager to make deployments active, test mappings, use protected deployments, and to delete deployments and resources\.
 

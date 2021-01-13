@@ -3,7 +3,7 @@ description: ' Learn how &cloud; Resource Manager provisions your game''s connec
   to &AWS;. '
 title: Understanding &cloud; Resource Manager
 ---
-# Understanding Cloud Canvas Resource Manager<a name="cloud-canvas-ui-rm-overview"></a>
+# Understanding Cloud Canvas Resource Manager {#cloud-canvas-ui-rm-overview}
 
 Game development is an inherently local activity\. You have a local copy of your game code, assets, and other resources\. You build, test, and tweak over and over on your local computer\. 
 
@@ -31,7 +31,7 @@ When you develop a game that uses cloud resources in AWS, those resources may be
 + Create as many copies of the AWS resources as needed for your releases and development teams 
 + Help you secure access to those resources 
 
-## The Role of AWS CloudFormation<a name="cloud-canvas-ui-rm-overview-cfn"></a>
+## The Role of AWS CloudFormation {#cloud-canvas-ui-rm-overview-cfn}
 
  The **Cloud Canvas Resource Manager** integrates the use of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) into the Lumberyard game development environment\. With AWS CloudFormation you can maintain descriptions of the AWS resources you need in text file templates that you can check into your source control system\. These descriptions can be branched and merged along with the rest of your game code and assets\. When you need actual instances of the resources to be created in AWS, **Cloud Canvas ****Resource Manager** passes the descriptions to AWS CloudFormation, which uses the template files to create, update, or delete resources in AWS to match the descriptions\. 
 
@@ -49,7 +49,7 @@ You can choose the deployment that you want to work with in Lumberyard Editor\. 
 
 Each deployment comes with an AWS managed policy and an AWS role that you can use to grant specific AWS users and groups access to that deployment\. For example, players are granted access to specific resources within a deployment\. For details, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
-### A Closer Look at AWS CloudFormation Stacks<a name="cloud-canvas-overview-rm-cfn-stacks"></a>
+### A Closer Look at AWS CloudFormation Stacks {#cloud-canvas-overview-rm-cfn-stacks}
 
 A Cloud Canvas Resource manager project consists of one or more AWS CloudFormation stacks\. All stack templates are stored as files in the project's source control system\.
 + A single *project stack* that contains the resources that support Cloud Canvas Resource Manager itself\. The project stack template is stored as a file in the project's source control system\.
@@ -61,17 +61,17 @@ So, if there are 3 deployments and 4 resource groups, you have a total of 12 res
 
 ![\[A sample set of deployment and resource group stacks\]](/images/userguide/cloud_canvas/cloud-canvas-cfn-stacks.png)
 
-## Cloud Canvas Resource Management<a name="cloud-canvas-core-concepts-resource-mgmt"></a>
+## Cloud Canvas Resource Management {#cloud-canvas-core-concepts-resource-mgmt}
 
 In addition to communicating with Amazon Web Services, Cloud Canvas can also help you manage your resources\. Amazon Web Services can help create and manage any cloud resources that a game resource group needs\. Once you implement the resource group you can use Cloud Canvas deployments to manage the resources for development, test, and live versions of your game\. 
 
-### Defining the Resources<a name="cloud-canvas-core-concepts-resource-mgmt-defining"></a>
+### Defining the Resources {#cloud-canvas-core-concepts-resource-mgmt-defining}
 
 You can create cloud resources by using AWS CloudFormation templates\. [AWS CloudFormation](https://aws.amazon.com/cloudformation/) is an Amazon Web Service with which you can define, create, and manage AWS resources predictably and repeatedly by using templates\. The templates are JSON\-formatted text files that you use to specify the collection of resources that you want to create together as a single unit \(a stack\)\.
 
 In a template, each resource gets its own AWS CloudFormation definition in which you specify the parameters that govern the resource\. AWS CloudFormation templates are beyond the scope of this topic, but for now it’s enough to understand that you can define \(for example\) a template with an Amazon DynamoDB table and two AWS Lambda functions\. For an example AWS CloudFormation template that creates an Amazon DynamoDB table, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-east-1.html#d0e121894)\.
 
-### Deployments<a name="cloud-canvas-core-concepts-resource-mgmt-deployments"></a>
+### Deployments {#cloud-canvas-core-concepts-resource-mgmt-deployments}
 
 While you are working on a new resource group, your quality assurance team might have to test it\. You want to provide a version of your resource group that the test team can use while you continue to work on your own version\. To keep the corresponding resources of the different versions distinct, Cloud Canvas gives you the ability to create separate deployments\. Deployments are distinct instances of your product’s features\.
 
@@ -79,7 +79,7 @@ In a scenario like the one described, you might create three deployments: one fo
 
 With Cloud Canvas you can manage each of these deployments independently of one another, and you can switch between deployments at will\. After making changes, you can use Cloud Canvas to update your feature or deployment and update the corresponding AWS resources\.
 
-### Team Workflow Using Deployments<a name="cloud-canvas-core-concepts-resource-mgmt-team-workflow"></a>
+### Team Workflow Using Deployments {#cloud-canvas-core-concepts-resource-mgmt-team-workflow}
 
 The following workflow example illustrates how Cloud Canvas deployments work:
 
@@ -91,7 +91,7 @@ The following workflow example illustrates how Cloud Canvas deployments work:
 
 1. After the test team approves the fix, you update the live deployment, propagating the fix to your live players without requiring them to download a new version of the game\.
 
-### Managing Permissions Using Cloud Canvas<a name="cloud-canvas-core-concepts-managing-permissions"></a>
+### Managing Permissions Using Cloud Canvas {#cloud-canvas-core-concepts-managing-permissions}
 
 Managing permissions is an important part of building a secure cloud\-connected game\. Maintaining separate and distinct permissions is important in the phases of development, testing, and production\. You can apply permissions to your development and test teams, to the AWS resources that your game uses, and to the players of your game\. A key objective is to secure your game’s AWS resources against hackers and other forms of abuse\.
 

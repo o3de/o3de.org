@@ -2,13 +2,13 @@
 description: ' Learn more about the point generation and evaluation in &ALYlong;. '
 title: Point Generation and Evaluation
 ---
-# Point Generation and Evaluation<a name="ai-tactical-point-generation-evaluation"></a>
+# Point Generation and Evaluation {#ai-tactical-point-generation-evaluation}
 
 An AI agent makes a TPS point generation query in order to generate a set of points for consideration\. Once generated, each point can be evaluated based on its position and any available metadata\.
 
-## Generating Points<a name="ai-tactical-point-generation"></a>
+## Generating Points {#ai-tactical-point-generation}
 
-### Input<a name="ai-tactical-point-generation-input"></a>
+### Input {#ai-tactical-point-generation-input}
 
 The following information are required to generate points:
 + Specific criteria defining the types of points to generate\.
@@ -17,7 +17,7 @@ The following information are required to generate points:
 
 It is possible to specify multiple sets of point generation criteria\. For example, a query might request point generation around both the puppet and an attention target\. 
 
-### Processing<a name="ai-tactical-point-generation-processing"></a>
+### Processing {#ai-tactical-point-generation-processing}
 
 Based on the input, TPS begins generating points to evaluate\. All points fall into two main types:
 + Hidepoints\. These are generated based on the following calculations:
@@ -31,15 +31,15 @@ Based on the input, TPS begins generating points to evaluate\. All points fall i
   + Potentially may perform more general sampling to find an exact point, but an initial resolution is still required
   + Radial/even distributions
 
-### Output<a name="ai-tactical-point-generation-output"></a>
+### Output {#ai-tactical-point-generation-output}
 
 The result of a point generation query is a list of point objects\. Each point object includes the point's position and available metadata, such as any associated hide objects\. 
 
-## Evaluating Points<a name="ai-tactical-point-evaluation"></a>
+## Evaluating Points {#ai-tactical-point-evaluation}
 
 Once a generation query generates a set of points, they can be evaluated\. Point evaluation tries to establish the "fitness" of each point, that is, how well the point matches the specified criteria\. The goal is to choose either one good point, or the best *N* number of good points\. 
 
-### Input<a name="ai-tactical-point-evaluation-input"></a>
+### Input {#ai-tactical-point-evaluation-input}
 
 The following elements are required to evaluate points:
 + List of candidate points from the point generator
@@ -47,7 +47,7 @@ The following elements are required to evaluate points:
   + Boolean – Condition criteria used to include or exclude a point independently of any other points 
   + Weight – Criteria that, combined, give a measure of fitness relative to other points \(those included by the boolean criteria\)
 
-### Processing<a name="ai-tactical-point-evaluation-processing"></a>
+### Processing {#ai-tactical-point-evaluation-processing}
 
 The primary goal is to find an adequately good point as quickly as possible\. Often, "adequately good" also means "the best", but there is a lot of potential for optimization if a specified degree of uncertainty is allowed\.
 
@@ -61,7 +61,7 @@ The order of evaluation has a non\-trivial and crucial impact on query efficienc
 
 1. Expensive weights, with an expense similar to expensive booleans\. These help to rank the remaining points\. For example: *nearby\_hidepoint\_density \* 2*
 
-### Algorithmic Details<a name="ai-tactical-point-evaluation-algorithmic"></a>
+### Algorithmic Details {#ai-tactical-point-evaluation-algorithmic}
 
  It turns out that the system can go further with this by interleaving the final two steps and making evaluation order completely dynamic\. Unlike conditions \(booleans\), weights don't explicitly discount points from further evaluation\. However, by tracking the relative "fitness" of points during evaluation, we can still employ weights to dramatically reduce evaluations by employing two basic principles: 
 + Evaluate points in order of their maximum possible fitness, to fully evaluate the optimal point as quickly as possible\.
@@ -71,6 +71,6 @@ This implementation is based on a heap structure that orders points according to
 
 In each iteration, the next most expensive evaluation is done on the point at the top of the heap, after which the point is re\-sort into place if necessary\. If all evaluations on a point have been completed and it still has the maximum possible fitness, then it must be the optimal point\. This approach tends towards evaluation of the optimal point with relatively few evaluations on all other points\.
 
-### Output<a name="ai-tactical-point-evaluation-output"></a>
+### Output {#ai-tactical-point-evaluation-output}
 
 The result of point generation evaluation is a single point or group of *N* number of points, and the opportunity to request all metadata leading to its selection\. As a result, behaviors can adapt their style to reflect the nature the hidepoint received\. 

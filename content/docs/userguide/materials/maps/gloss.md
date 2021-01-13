@@ -2,7 +2,7 @@
 description: ' Enable gloss maps to define the roughness of surfaces in &ALYlong;. '
 title: Working with Gloss Maps
 ---
-# Working with Gloss Maps<a name="mat-maps-gloss"></a>
+# Working with Gloss Maps {#mat-maps-gloss}
 
 Gloss defines the roughness of a surface\. A low gloss value means that the surface is rough while a high value means the surface is smooth and shiny\. The roughness influences the size and the intensity of specular highlights\. The smoother and glossier a surface is, the smaller the specular highlight will be\. A smaller highlight will at the same time be brighter in order to obey to the rules of energy conservation\. 
 
@@ -16,7 +16,7 @@ When working with textures, gloss maps and normal maps are created first, then d
 
 The gloss map is always stored in the alpha channel of the normal map\. If the preset **NormalMapWithGlossInAlpha\_highQ** is selected, the Resource Compiler will automatically adjust the gloss map stored in the alpha channel based on the normal variance and lower the gloss where normals are very bumpy\. This can greatly help to reduce shimmering and sparkling highlights artifacts\. 
 
-## Gloss Map Best Practices<a name="mat-maps-gloss-best-practices"></a>
+## Gloss Map Best Practices {#mat-maps-gloss-best-practices}
 + Put variation into the gloss map\. Not just random noise but really where the object would be less or more rough\. 
 + If an object has the correct physical specular color but does not show specular highlights on top of the diffuse, the gloss is likely set too low\. Increase the brightness of the gloss map\. 
 + The Glossiness value must be set to 255, otherwise the gloss map will not work\.

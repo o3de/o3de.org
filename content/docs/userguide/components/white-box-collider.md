@@ -3,7 +3,7 @@ description: ' Use the &whitebox; Collider component to add PhysX collision to w
   box meshes in &ALYlong;. '
 title: '&whitebox; Collider component'
 ---
-# White Box Collider component<a name="component-white-box-collider"></a>
+# White Box Collider component {#component-white-box-collider}
 
 
 ****  
@@ -22,7 +22,7 @@ In the animation above, the **White Box Collider** component is applied to a sta
 
 In the animation above, the door was created with White Box and animated with a script\. Note When the **White Box** component is edited, the **White Box Collider** component automatically recognizes the changes to the mesh\. You can then test the changes immediately\. 
 
-## White Box Collider properties<a name="component-white-box-collider-properties"></a>
+## White Box Collider properties {#component-white-box-collider-properties}
 
 ![\[White Box Collider component interface.\]](/images/userguide/component/whitebox/ui-white-box-collider-1.25.png)
 

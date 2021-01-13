@@ -3,7 +3,7 @@ description: ' Use C++, the client component, a request job, or Lua to call your
   operations for &ALYlong;. '
 title: ' Calling a Game API'
 ---
-# Calling a Game API<a name="cloud-canvas-cgf-service-api-calling-apis"></a>
+# Calling a Game API {#cloud-canvas-cgf-service-api-calling-apis}
 
 To call your API operations, you can use C\+\+, the client component, a request job, or Lua\.
 
@@ -11,11 +11,11 @@ To call your API operations, you can use C\+\+, the client component, a request 
 + [Calling an API from C\+\+](#cloud-canvas-cgf-service-api-game-clients-calling-apis-c)
 + [Using Lua to Call an API](#cloud-canvas-cgf-service-api-game-clients-calling-apis-lua)
 
-## Calling an API from C\+\+<a name="cloud-canvas-cgf-service-api-game-clients-calling-apis-c"></a>
+## Calling an API from C\+\+ {#cloud-canvas-cgf-service-api-game-clients-calling-apis-c}
 
 To invoke a service API from C\+\+, you can use an EBus event handler from the generated client component\. You can also use the generated service request job class directly\. If you want to make requests from a component, consider using the client component\. If you want to perform a sequence of operations, consider using the job class\.
 
-### Using the Client Component to Call an API<a name="cloud-canvas-cgf-service-api-game-clients-calling-apis-client-component"></a>
+### Using the Client Component to Call an API {#cloud-canvas-cgf-service-api-game-clients-calling-apis-client-component}
 
 The following example from the `CloudGemLeaderboard` service API shows a component that invokes `GetServiceStatusRequestJob`\. There are two ways to receive the request's response:
 
@@ -112,7 +112,7 @@ public:
 };
 ```
 
-### Using the Request Job to Call an API<a name="cloud-canvas-cgf-service-api-game-clients-calling-apis-request-job"></a>
+### Using the Request Job to Call an API {#cloud-canvas-cgf-service-api-game-clients-calling-apis-request-job}
 
 In some situations you might want more control over how your background jobs are executed\. For example, you might want to change the thread pool that certain requests use or perform multiple requests on a background thread\. You can use the generated request job classes directly to make these changes\.
 
@@ -140,7 +140,7 @@ job->Start();
 
 To learn about other ways to use the request job class, explore the `ServiceApiRequestJob` class definition and see [Running AWS API Jobs Using the Cloud Gem Framework ](/docs/userguide/gems/cloud-canvas/cgf-aws-api-jobs.md)\.
 
-## Using Lua to Call an API<a name="cloud-canvas-cgf-service-api-game-clients-calling-apis-lua"></a>
+## Using Lua to Call an API {#cloud-canvas-cgf-service-api-game-clients-calling-apis-lua}
 
 The following code example shows how to call a service API from a Lua script\.
 

@@ -3,7 +3,7 @@ description: ' Use the Enable Ghosting node in the &ALYlong; &script-canvas; edi
   to enable ghosting effects. '
 title: Enable Ghosting
 ---
-# Enable Ghosting<a name="enable-ghosting-node"></a>
+# Enable Ghosting {#enable-ghosting-node}
 
 Apply a ghosting effect that overlaps and blurs previous frames together\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Ghosting](/docs/userguide/rendering/disable/
 
 ![\[Use the Enable Ghosting node to add blurriness as you move the camera.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-ghosting-node-example.gif)
 
-## Inputs<a name="enable-ghosting-note-input"></a>
+## Inputs {#enable-ghosting-note-input}
 
 
 ****  
@@ -29,7 +29,7 @@ To disable the effect, see [Disable Ghosting](/docs/userguide/rendering/disable/
 | In | Event |  Triggers the node\.  | 
 | Amount | Number |  Strength of the ghosting effect\. Default value: `0`  | 
 
-## Outputs<a name="enable-ghosting-node-output"></a>
+## Outputs {#enable-ghosting-node-output}
 
 
 ****  

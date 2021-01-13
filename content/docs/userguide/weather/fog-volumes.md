@@ -3,7 +3,7 @@ description: ' Use fog volumes to define an area where fog appears in your &ALYl
   level. '
 title: Using Fog Volumes
 ---
-# Using Fog Volumes<a name="weather-fog-volumes"></a>
+# Using Fog Volumes {#weather-fog-volumes}
 
 Fog volumes are localized 3D areas that define an area where non\-volumetric fog is present\. Fog volumes do not change in dynamic, nonuniform ways like smoke does\. When alpha\-transparent objects are behind fog volumes, each pixel is fogged\. However, this is not the case when objects are inside fog volumes\.
 

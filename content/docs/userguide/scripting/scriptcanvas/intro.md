@@ -3,7 +3,7 @@ description: ' Get started with &ALYlong;''s &script-canvas;, a visual scripting
   to implement game logic without needing to write code. '
 title: Creating Gameplay with &script-canvas;
 ---
-# Creating Gameplay with Script Canvas<a name="script-canvas-intro"></a>
+# Creating Gameplay with Script Canvas {#script-canvas-intro}
 
 Script Canvas is a visual scripting environment for Amazon Lumberyard that you can use to create game logic and behaviors\. Integrated with Lumberyard's component entity system, Script Canvas offers an approachable and easy\-to\-read environment to author behaviors using the same framework as Lua and C\+\+\. With its visual scripting options, you can use Script Canvas to create [scripts](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#scripts) for game logic without needing to know how to code\. Event\-driven scripts let you produce small scripts that don't require complex logic to maintain states\.
 

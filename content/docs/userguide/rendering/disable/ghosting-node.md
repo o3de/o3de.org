@@ -3,7 +3,7 @@ description: ' Use the Disable Ghosting node in the &ALYlong; &script-canvas; ed
   to disable ghosting effects. '
 title: Disable Ghosting
 ---
-# Disable Ghosting<a name="disable-ghosting-node"></a>
+# Disable Ghosting {#disable-ghosting-node}
 
 Disables ghosting effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Ghosting](/docs/userguide/rendering/enable/gho
 
 ![\[disableghosting, disableghostingnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-ghosting-node.png)
 
-## Inputs<a name="disable-ghosting-note-input"></a>
+## Inputs {#disable-ghosting-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Ghosting](/docs/userguide/rendering/enable/gho
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-ghosting-node-output"></a>
+## Outputs {#disable-ghosting-node-output}
 
 
 ****  

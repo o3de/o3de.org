@@ -2,7 +2,7 @@
 description: ' Work with detail maps in the &material-editor; in &ALYlong;. '
 title: Working with Detail Maps
 ---
-# Working with Detail Maps<a name="mat-maps-detail-intro"></a>
+# Working with Detail Maps {#mat-maps-detail-intro}
 
 Detail mapping is a simple technique to add macro surface detail at relatively low cost, memory and performance wise\. The following best practices should be taken into consideration:
 + Use as low a resolution as possible for best performance \(512x512 or lower\)\. 
@@ -11,7 +11,7 @@ Detail mapping is a simple technique to add macro surface detail at relatively l
 
 Unified detail mapping \(UDM\) is basically a reversed detail map\. Usually the detail map is used for finer details as you get closer\. UDM is the opposite\. It helps to define big shapes viewed from the distance\. Since close\-up detail is provided in tiled textures, larger details are needed to define shapes better when viewed from a distance\.
 
-## Setting Up Detail Map Textures<a name="mat-maps-detail-textures"></a>
+## Setting Up Detail Map Textures {#mat-maps-detail-textures}
 
 Detail map parameters are setup in the Material Editor\.
 

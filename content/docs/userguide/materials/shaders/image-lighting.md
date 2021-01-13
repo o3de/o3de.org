@@ -2,7 +2,7 @@
 description: ' Learn more about image-based lighting in &ALYlong;. '
 title: Image-Based Lighting
 ---
-# Image\-Based Lighting<a name="mat-shaders-image-lighting"></a>
+# Image\-Based Lighting {#mat-shaders-image-lighting}
 
 Image\-based lighting is a rendering technique where complex lighting is stored in an environment map that is projected onto a scene\. In simple words, a light probe or environment map is just an image on a sphere\.
 

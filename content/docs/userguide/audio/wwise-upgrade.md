@@ -2,7 +2,7 @@
 description: ' Upgrade the free version Wwise LTX to the full version for &ALYlong;. '
 title: Upgrading Wwise LTX to the Full Version
 ---
-# Upgrading Wwise LTX to the Full Version<a name="audio-wwise-upgrade"></a>
+# Upgrading Wwise LTX to the Full Version {#audio-wwise-upgrade}
 
 To upgrade Wwise LTX to the full version of Wwise, follow the procedures in this topic\.
 
@@ -13,7 +13,7 @@ To upgrade Wwise LTX to the full version of Wwise, follow the procedures in this
 
 After you upgrade the SDK, project, and soundbanks, you can open your game in Lumberyard to test your sounds\. 
 
-## Upgrading the SDK<a name="audio-wwise-upgrading-sdk"></a>
+## Upgrading the SDK {#audio-wwise-upgrading-sdk}
 
 **To upgrade the SDK**
 
@@ -55,7 +55,7 @@ After you upgrade the SDK, project, and soundbanks, you can open your game in Lu
 
 1. Configure WAF and build the project\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
-## Upgrading Your Project<a name="audio-wwise-upgrading-project"></a>
+## Upgrading Your Project {#audio-wwise-upgrading-project}
 
 After you successfully configure and build Lumberyard, you can upgrade the content in your project\. This assumes that you already have a Wwise LTX project set up for your game project\.
 
@@ -89,7 +89,7 @@ During the upgrade process, read each message that Wwise displays\.
 
 Wwise LTX uses a single generic platform\. After upgrading to Wwise, you can edit the platforms for your project\.
 
-## Upgrading Your Soundbanks<a name="audio-wwise-upgrading-soundbanks"></a>
+## Upgrading Your Soundbanks {#audio-wwise-upgrading-soundbanks}
 
 After you upgrade the SDK and your project, you can rebuild your soundbanks\.
 

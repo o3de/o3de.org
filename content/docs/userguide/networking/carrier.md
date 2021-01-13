@@ -2,7 +2,7 @@
 description: ' Describes GridMate''s messaging system. '
 title: Carrier
 ---
-# Carrier<a name="network-carrier"></a>
+# Carrier {#network-carrier}
 
 Carrier is GridMate's messaging API\. GridMate's reliable UDP implementation supports both reliable and unreliable messages\. There is no out\-of\-order delivery\. Out\-of\-order messages are queued if sent reliably, or discarded if sent unreliably\. 
 
@@ -10,24 +10,24 @@ The carrier sends messages through channels\. The purpose of channels is to sepa
 
 The carrier API also provides hooks for congestion control and traffic simulation\. 
 
-## Channels and Message Priorities<a name="network-carrier-channels-and-message-priorities"></a>
+## Channels and Message Priorities {#network-carrier-channels-and-message-priorities}
 
 Messages can be sent on different channels and have different priorities\. Message ordering is always maintained between messages with the same priority sent on the same channel\. 
 
 Channels provide a way to separate unrelated messages so that their ordering does not affect one other\. When messages arrive out of order, they are either discarded or queued \(and therefore delayed\) depending on their reliability\. Using different channels prevents unrelated messages from being unnecessarily dropped or delayed\. For example, object replication traffic and voice chat traffic can be sent on different channels, so a missing reliable message for object replication would not cause voice chat data to be dropped, and vice versa\. 
 
-## Customizable Classes<a name="network-carrier-customizable-classes"></a>
+## Customizable Classes {#network-carrier-customizable-classes}
 
  You can customize the following classes to implement your own networking features: 
 +  **Driver** \- Carrier defers actual network operations to the driver, so different implementations can be provided for different operating systems and devices\. This abstraction makes it possible to use OS or device\-specific protocols from service providers such as Steam\. The default implementation uses UDP and supports IPv4 and IPv6\. 
 +  **Simulator** \- If a network simulator is present, the carrier passes all inbound and outbound traffic through it so different network conditions can be simulated\. One simulator instance can be supplied per carrier instance\. The default implementation can simulate different patterns for inbound and/or outbound latency, bandwidth caps, packet loss and packet reordering\. 
 +  **Traffic Control** \- The traffic control module has two primary functions: provide network statistics and congestion control\. Whenever messages are sent or received, they are passed along to the traffic control module so it can update its statistics, and also so it can provide feedback to limit the amount of data being sent\. It also decides if messages should be considered lost and resent by the carrier\. 
 
-## CarrierDesc<a name="network-carrier-carrierdesc"></a>
+## CarrierDesc {#network-carrier-carrierdesc}
 
  `CarrierDesc` is the carrier descriptor\. When you create a carrier, you use the `CarrierDesc` structure to specify the parameters for the current session\. 
 
-### CarrierDesc Parameters<a name="network-carrier-carrierdesc-parameters"></a>
+### CarrierDesc Parameters {#network-carrier-carrierdesc-parameters}
 
  The following parameters can be supplied during carrier initialization: 
 

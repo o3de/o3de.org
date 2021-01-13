@@ -2,7 +2,7 @@
 description: ' Manage your entities with the &entity-outliner; in &ALYlong;. '
 title: Working with Entities
 ---
-# Working with Entities<a name="component-entity-outliner-entities"></a>
+# Working with Entities {#component-entity-outliner-entities}
 
 **Topics**
 + [Creating an Entity](/docs/userguide/creating-entity.md)
@@ -11,7 +11,7 @@ title: Working with Entities
 + [Locking Entities](#component-entity-outliner-locking)
 + [Search and Filter for Entities](#component-entity-outliner-filtering)
 
-## Reordering Entities<a name="component-entity-outliner-reordering"></a>
+## Reordering Entities {#component-entity-outliner-reordering}
 
 When you create entities or instantiate slices, they appear at the bottom of the list in the **Entity Outliner**\.
 
@@ -26,7 +26,7 @@ When you create entities or instantiate slices, they appear at the bottom of the
 1. To make an entity the child of another entity, select and drag the entity to its intended parent\. A white box appears around the parent entity\.  
 ![\[Drag and drop to parent an entity.\]](/images/userguide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
 
-## Hiding and Showing Entities<a name="component-entity-outliner-hiding"></a>
+## Hiding and Showing Entities {#component-entity-outliner-hiding}
 
 You can hide entities so that they don't appear in the viewport, so that the viewport shows only the entities that you want\. If you hide a parent entity, all children entities are also hidden\. You can also hide child entities within a parent entity\.
 
@@ -37,7 +37,7 @@ You can hide entities so that they don't appear in the viewport, so that the vie
 1. To show the entity, click the icon again\.  
 ![\[Hide and show entities in the viewport.\]](/images/userguide/component/entity_system/component-entity-outliner-hiding.png)
 
-## Locking Entities<a name="component-entity-outliner-locking"></a>
+## Locking Entities {#component-entity-outliner-locking}
 
 You can lock entities so that they can't be selected in the viewport, so that you can select only the entities that you want to edit\. If you lock a parent entity, all children entities are also locked\. You can also lock child entities within a parent entity\.
 
@@ -48,7 +48,7 @@ You can lock entities so that they can't be selected in the viewport, so that yo
 
 1. To unlock the entity, click the lock icon again\.
 
-## Search and Filter for Entities<a name="component-entity-outliner-filtering"></a>
+## Search and Filter for Entities {#component-entity-outliner-filtering}
 
 For levels that have many entities, you can search and filter for the entities that you want\. Enter text in the search filter box to find specific entities\.
 

@@ -3,7 +3,7 @@ description: ' Use the fader and mask components in &ALYlong;''s &ui-canvas-edit
   to adjust transparency and to mask, or show a portion of content in child elements. '
 title: Other Components
 ---
-# Other Components<a name="ui-editor-components-other"></a>
+# Other Components {#ui-editor-components-other}
 
 You can add either or both of the fader and mask components to an element\.
 
@@ -12,13 +12,13 @@ You can add either or both of the fader and mask components to an element\.
 + [Mask](/docs/userguide/ui/editor/components-mask.md)
 + [Flipbook Animation](/docs/userguide/ui/editor/components-other-flipbook.md)
 
-## Fader<a name="ui-editor-components-fader"></a>
+## Fader {#ui-editor-components-fader}
 
 You can use a **Fader** component to simultaneously adjust the transparency of an element and its children\. 
 
 **To see in\-game examples of completed canvases with a **Fader** component**
 
-1. [Open the Samples Project](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
+1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
 
 1. When Lumberyard Editor has started, choose **File**, **Open** and open the UiFeatures level\.
 

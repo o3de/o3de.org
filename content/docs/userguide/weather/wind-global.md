@@ -3,7 +3,7 @@ description: ' Set up global wind to create wind and breezes that affect everyth
   in your &ALY; level. '
 title: Adding Global Wind
 ---
-# Adding Global Wind<a name="weather-wind-global"></a>
+# Adding Global Wind {#weather-wind-global}
 
 
 ****  

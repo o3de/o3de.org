@@ -3,7 +3,7 @@ description: ' Use the behavior context in &ALYlong; to make runtime code access
   to scripting languages like Lua or scripting environments like &ALY;''s &script-canvas;. '
 title: Behavior Context
 ---
-# Behavior Context<a name="component-entity-system-reflection-behavior-context"></a>
+# Behavior Context {#component-entity-system-reflection-behavior-context}
 
 You can use the behavior context to reflect runtime code to make it accessible to scripting languages like Lua or scripting environments like Lumberyard's Script Canvas\. The behavior context provides bindings that invoke runtime C\+\+ code\.
 
@@ -19,7 +19,7 @@ In addition to the bindings for C\+\+ constructs, the behavior context provides 
 + [Event Handlers](#component-entity-system-reflection-behavior-context-ebus-event-handlers)
 + [Events](#component-entity-system-reflection-behavior-context-ebus-events)
 
-## Classes<a name="component-entity-system-reflection-behavior-context-classes"></a>
+## Classes {#component-entity-system-reflection-behavior-context-classes}
 
 Classes that are bound to the behavior context become objects that can be instantiated in a script environment\. To reflect a class, you must provide the type that is reflected as a template argument to the class function\. The base classes should also be specified, as in the following example:
 
@@ -30,7 +30,7 @@ if (BehaviorContext* behaviorContext = azrtti_cast<BehaviorContext*>(reflection)
 }
 ```
 
-### Attributes<a name="component-entity-system-reflection-behavior-context-classes-attributes"></a>
+### Attributes {#component-entity-system-reflection-behavior-context-classes-attributes}
 
 You can use the built\-in attributes described in this section to decorate a class\.
 
@@ -78,7 +78,7 @@ Possible values: `true`, `false`
 Used by the editor to display additional information in a tool tip\.  
 Type: `string`
 
-### Class Reflection Examples<a name="component-entity-system-reflection-behavior-context-classes-examples"></a>
+### Class Reflection Examples {#component-entity-system-reflection-behavior-context-classes-examples}
 
 Classes reflected for scripting become objects that can be instanced in Lua, as in the following example:
 
@@ -101,7 +101,7 @@ This constructor enables the class to be instantiated in Lua in the following wa
 local myClass = MyClass(10)
 ```
 
-## Methods<a name="component-entity-system-reflection-behavior-context-methods"></a>
+## Methods {#component-entity-system-reflection-behavior-context-methods}
 
 You can reflect methods either as free functions or as part of classes, as in the following examples:
 
@@ -158,7 +158,7 @@ Method("MemberWithDefaultValues", &BehaviorTestClass::BoundsCheckMethodWithDefau
 
 This approach is especially useful in Lumberyard's Script Canvas so that users can understand the meaning of the arguments that they are expected to provide\.
 
-## Properties<a name="component-entity-system-reflection-behavior-context-properties"></a>
+## Properties {#component-entity-system-reflection-behavior-context-properties}
 
 You can reflect properties as parts of classes or as global properties\. You can reflect properties as write only, read only or read/write\. To do this, provide either a getter, a setter, or both for the property\.
 
@@ -173,7 +173,7 @@ The following table shows helper macros that you can use to simplify the specifi
 | Getter | BehaviorValueGetter |  <pre>->Property("boolean", BehaviorValueGetter(&TestBehaviorContextProperties::m_booleanProp), nullptr)</pre>  | 
 | Both | BehaviorValueProperty |  <pre>->Property("isStatic", BehaviorValueProperty(&AZ::TransformConfig::m_isStatic))</pre>  | 
 
-## Constants<a name="component-entity-system-reflection-behavior-context-constants"></a>
+## Constants {#component-entity-system-reflection-behavior-context-constants}
 
 You can reflect constants into the behavior context\. Constants are by definition read\-only\. The following examples reflect two constants into the behavior context:
 
@@ -182,7 +182,7 @@ behaviorContext->Constant("SystemEntityId", BehaviorConstant(SystemEntityId));
 behaviorContext->Constant("PI", BehaviorConstant(3.14f));
 ```
 
-## Enums<a name="component-entity-system-reflection-behavior-context-enums"></a>
+## Enums {#component-entity-system-reflection-behavior-context-enums}
 
 Enums are reflected globally into the behavior context\. For this reason, it is important to give them unique names\.
 
@@ -194,13 +194,13 @@ behaviorContext->Enum<(int)GlobalClassEnum::Value1>("Value1");
 behaviorContext->Enum<(int)GlobalClassEnum::Value2>("Value2");
 ```
 
-## EBus<a name="component-entity-system-reflection-behavior-context-ebus"></a>
+## EBus {#component-entity-system-reflection-behavior-context-ebus}
 
 The ability to bind an EBus to the behavior context enables scripting to become driven and modular\. The two main use cases for reflecting EBuses to the behavior context are event handlers and events\.
 
 Because EBuses are highly configurable, the features that become available depend on how the EBus was created\. For more information, see the [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### Event Handlers<a name="component-entity-system-reflection-behavior-context-ebus-event-handlers"></a>
+### Event Handlers {#component-entity-system-reflection-behavior-context-ebus-event-handlers}
 
 By reflecting event handlers, you can enable events to be implemented directly in script\.
 
@@ -271,7 +271,7 @@ By reflecting event handlers, you can enable events to be implemented directly i
    handler = TestBus.Connect(MyBusHandlerMetaTable1)
    ```
 
-### Events<a name="component-entity-system-reflection-behavior-context-ebus-events"></a>
+### Events {#component-entity-system-reflection-behavior-context-ebus-events}
 
 Events provide a mechanism to broadcast or send an event directly to any object that is connected to the EBus through an ID\. 
 

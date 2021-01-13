@@ -3,7 +3,7 @@ description: ' Keep these best practices in mind when you create and implement y
   texture maps for parallax lighting in &ALYlong;. '
 title: Parallax Mapping Best Practices
 ---
-# Parallax Mapping Best Practices<a name="mat-maps-parallax-best-practices"></a>
+# Parallax Mapping Best Practices {#mat-maps-parallax-best-practices}
 
 For best results, use the following best practices when creating POM or SPOM parallax mapping\.
 

@@ -3,7 +3,7 @@ description: ' Use Waf module files (wscript) to specify a fixed name and define
   rules for your &ALYlong; game project folder. '
 title: Waf Module Files (wscript)
 ---
-# Waf Module Files \(wscript\)<a name="waf-files-module-files-wscript"></a>
+# Waf Module Files \(wscript\) {#waf-files-module-files-wscript}
 
 Wscript files are Python source files that have a fixed name and defined rules for the project folder\. Waf picks up and processes the wscript file in each folder\. Files can recurse into one or more subdirectories, define the build script for one or more modules, or both\.
 
@@ -21,7 +21,7 @@ Lumberyard includes a wscript file at the root folder that is used for the follo
 
 At the root is a compiled python script called `lmbr_waf.bat` that executes the Waf commands through the root `wscript` file\.
 
-## Lumberyard Engine Build Modules<a name="lumberyard-engine-build-modules"></a>
+## Lumberyard Engine Build Modules {#lumberyard-engine-build-modules}
 
 The Lumberyard Waf system includes the following predefined build modules that can help define the build rules for system modules:
 

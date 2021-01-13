@@ -3,7 +3,7 @@ description: ' Use &landscape-canvas; &gem; to author dynamic vegetation &ALYlon
   project. '
 title: '&landscape-canvas; &gem;'
 ---
-# Landscape Canvas Gem<a name="gem-landscape-canvas"></a>
+# Landscape Canvas Gem {#gem-landscape-canvas}
 
 
 ****  
@@ -21,7 +21,7 @@ Landscape Canvas is backwards compatible\. Any Dynamic Vegetation content you ha
 
 Landscape Canvas has five node groups available that map to the components you previously would use to build dynamic vegetation: **Gradient Modifiers**, **Gradients**, **Shapes**, **Utilities**, and **Vegetation Areas**\. The workflow is to create a new landscape canvas asset, and layout and connect nodes in the canvas to build a workflow for a vegetation area\. 
 
-## Enable the Landscape Canvas Gem<a name="enable-gem-landscape-canvas"></a>
+## Enable the Landscape Canvas Gem {#enable-gem-landscape-canvas}
 
 To make the **Landscape Canvas** Editor available in Lumberyard, you must build and configure your project with the Landscape Canvas Gem enabled\. 
 

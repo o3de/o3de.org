@@ -2,11 +2,11 @@
 description: ' Learn how to create &ALY; components in C++. '
 title: Creating a Component
 ---
-# Creating a Component<a name="component-entity-system-create-component"></a>
+# Creating a Component {#component-entity-system-create-component}
 
 A component in Lumberyard is a simple class that inherits from Lumberyard's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create Lumberyard components programmatically\. For information about adding and customizing the components available in Lumberyard Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
 
-## Component Example<a name="component-entity-system-create-component-example"></a>
+## Component Example {#component-entity-system-create-component-example}
 
 An example component class skeleton follows: 
 
@@ -35,7 +35,7 @@ public:
 };
 ```
 
-## Component Members<a name="component-entity-system-create-component-component-members"></a>
+## Component Members {#component-entity-system-create-component-component-members}
 
 The required and optional members that a component comprises are as follows:
 
@@ -60,7 +60,7 @@ A sample `AZ_COMPONENT` macro follows:
 AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}", AZ::Component);
 ```
 
-AZ::Component Functions  <a name="component-entity-system-create-component-az-functions"></a>
+AZ::Component Functions   {#component-entity-system-create-component-az-functions}
 To define a component's behavior, you generally override three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:  
 
 ```
@@ -71,9 +71,9 @@ void Deactivate() override {}
 These functions are as described as follows:    
 Init\(\)  
 \(Optional\) Called only once for a given entity\. It requires minimal construction or setup work, since the component may not be activated anytime soon\. An important best practice is to minimize your component's CPU and memory overhead while the component is inactive\.  
-Activate\(\)  <a name="component-entity-system-create-component-az-activate"></a>
+Activate\(\)   {#component-entity-system-create-component-az-activate}
 \(Required\) Called when the owning entity is being activated\. The system calls your component's `Activate()` function only if all dependent or required services are present\. Your `Activate` function is always called after any components that it depends on\. In addition, the component makeup of an entity never changes while the entity is active\. Consequently, it is safe to cache pointers or references to other components on the entity when performance is critical\.  
-Deactivate\(\)  <a name="component-entity-system-create-component-az-deactivate"></a>
+Deactivate\(\)   {#component-entity-system-create-component-az-deactivate}
 \(Required\) Called when the owning entity is being deactivated\. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on\. As a best practice, make sure your component returns to a minimal footprint when it is deactivated\. In general, deactivation should be symmetric to activation\.   
 Destruction does not necessarily follow deactivation\. An entity can be deactivated and then activated again without being destroyed, so ensure that your components support this efficiently\. However, when you do destroy your entity, Lumberyard ensures that your `Deactivate()` function is called first\. Components must be authored with this in mind\.
 

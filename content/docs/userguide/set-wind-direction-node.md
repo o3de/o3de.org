@@ -3,7 +3,7 @@ description: ' Use the Set Wind Direction node in the &ALYlong; &script-canvas; 
   to set the wind direction. '
 title: Set Wind Direction
 ---
-# Set Wind Direction<a name="set-wind-direction-node"></a>
+# Set Wind Direction {#set-wind-direction-node}
 
 Sets the direction of the global wind\. The length of the **Wind Direction** vector indicates the strength of the wind\.
 
@@ -13,7 +13,7 @@ Sets the direction of the global wind\. The length of the **Wind Direction** vec
 
 ![\[setwinddirectionnode, setwinddirection\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-wind-direction-node.png)
 
-## Inputs<a name="set-wind-direction-node-input"></a>
+## Inputs {#set-wind-direction-node-input}
 
 
 ****  
@@ -23,7 +23,7 @@ Sets the direction of the global wind\. The length of the **Wind Direction** vec
 | In | Event | Triggers the node\. | 
 | Wind Direction | Vector3 | Wind direction to specify\. | 
 
-## Outputs<a name="set-wind-direction-node-output"></a>
+## Outputs {#set-wind-direction-node-output}
 
 
 ****  

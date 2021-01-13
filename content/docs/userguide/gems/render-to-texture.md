@@ -3,7 +3,7 @@ description: ' Use the Render to Texture gem to add the Render to Texture compon
   in &ALYlong;. '
 title: Render to Texture
 ---
-# Render to Texture<a name="gems-system-render-to-texture"></a>
+# Render to Texture {#gems-system-render-to-texture}
 
 
 ****  

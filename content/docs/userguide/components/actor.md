@@ -2,7 +2,7 @@
 description: ' Use the Actor component to add an actor file to your entity in &ALYlong;. '
 title: Actor
 ---
-# Actor<a name="component-actor"></a>
+# Actor {#component-actor}
 
 
 ****  
@@ -22,7 +22,7 @@ For the **Actor** component to work properly, you must also add one of the follo
 + [Using Multiple Skin Attachments for an Actor](/docs/userguide/components/actor-multiple-skin.md)
 + [Setting Up Actor Entities](/docs/userguide/components/actor-component-entity-setup.md)
 
-## Actor Component Properties<a name="component-actor-properties"></a>
+## Actor Component Properties {#component-actor-properties}
 
 ![\[Actor component properties.\]](/images/userguide/component/actor_component_properties.png)
 

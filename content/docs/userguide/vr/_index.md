@@ -3,9 +3,9 @@ description: ' Add virtual reality to your &ALY; project to simulate a user''s p
   in the gaming environment. '
 title: Create virtual reality projects in &ALY;
 ---
-# Create virtual reality projects in Lumberyard<a name="virtual-reality"></a>
+# Create virtual reality projects in Lumberyard {#virtual-reality}
 
-Lumberyard's [virtual reality](/docs/userguide/ly-glos-chap.md#virtual_reality) system integrates the use of the OculusRift and HTC Vive head\-mounted displays \(HMD\) on PC gaming systems\. Before using these head\-mounted displays, read each manufacturer's safety guide:
+Lumberyard's [virtual reality](/docs/userguide/ly-glos-chap#virtual_reality) system integrates the use of the OculusRift and HTC Vive head\-mounted displays \(HMD\) on PC gaming systems\. Before using these head\-mounted displays, read each manufacturer's safety guide:
 + [Oculus Rift Health and Safety Warning](http://www.oculus.com/warnings)
 + [HTC Vive Safety and Regulatory Guide](http://dl4.htc.com/web_materials/Safety_Guide/Vive/Vive_safety_and_regulatory_guide_ENG-FRC-ESM.pdf)
 

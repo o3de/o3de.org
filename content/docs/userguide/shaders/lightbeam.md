@@ -3,11 +3,11 @@ description: ' Enable the LightBeam shader to create fog-like conditions for lig
   beams in &ALYlong;. '
 title: LightBeam Shader
 ---
-# LightBeam Shader<a name="shader-ref-lightbeam"></a>
+# LightBeam Shader {#shader-ref-lightbeam}
 
 The LightBeam shader creates various fog\-like volumetric and atmospheric effects for light beams\. The shader can only be applied to light entities\. To use the LightBeam shader, create a Projector Light component and assign the shader to the material slot\.
 
-## Shader Parameters<a name="shader-ref-lightbeam-shader-parameters"></a>
+## Shader Parameters {#shader-ref-lightbeam-shader-parameters}
 
 **Fade Distance**  
 Defines the distance at which the effect should fade in/out\.  
@@ -57,7 +57,7 @@ Controls the speed at which noise travels\.
 This parameter requires that the **Noise map** shader generation parameter be enabled\.  
 Default value: 5
 
-## Shader Generation Parameters<a name="shader-ref-lightbeam-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-lightbeam-shader-generation-parameters}
 
 **Noise map**  
 Enables the use of a 3D, procedurally\-generated noise map\.

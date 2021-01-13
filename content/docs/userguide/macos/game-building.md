@@ -2,7 +2,7 @@
 description: ' Build a macOS game using the &ALY; build tools. '
 title: Building macOS Games
 ---
-# Building macOS Games<a name="osx-game-building"></a>
+# Building macOS Games {#osx-game-building}
 
 
 ****  

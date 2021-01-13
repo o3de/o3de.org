@@ -2,7 +2,7 @@
 description: ' Use &ALYlong; to build games for iOS devices. '
 title: iOS Support
 ---
-# iOS Support<a name="ios-intro"></a>
+# iOS Support {#ios-intro}
 
 You can use Lumberyard to create applications for [iOS devices](/docs/userguide/mobile/support-intro.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
 
@@ -20,7 +20,7 @@ Lumberyard has the following minimum requirements for iOS:
 | OS | iOS 13 or newer | 
 | Example devices | iPhone 6 and newer | 
 
-## Prerequisites<a name="ios-prerequisites"></a>
+## Prerequisites {#ios-prerequisites}
 
 To build apps for iOS devices, you must have the following:
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
@@ -40,7 +40,7 @@ To set up your environment, use the Lumberyard Setup Assistant \(located in the 
 
 The Setup Assistant will install the required third\-party software and SDKs\.
 
-## Lumberyard Binaries<a name="ios-support-lumberyard-binaries"></a>
+## Lumberyard Binaries {#ios-support-lumberyard-binaries}
 
 During installation, Lumberyard creates the following directories for its binaries:
 
@@ -50,7 +50,7 @@ During installation, Lumberyard creates the following directories for its binari
 **PC**
 + `Bin64vc141` \(for binaries generated with Visual Studio 2017\)
 
-## Anatomy of a Lumberyard iOS App<a name="ios-support-lumberyard-ios-app-anatomy"></a>
+## Anatomy of a Lumberyard iOS App {#ios-support-lumberyard-ios-app-anatomy}
 
 The Lumberyard build system can generate the following types of applications:
 + Development app
@@ -60,7 +60,7 @@ The Lumberyard build system can generate the following types of applications:
 **Note**  
 Lumberyard Editor is currently supported on Windows only\. You must export each level of your game project prior to using Asset Processor for your assets\.
 
-### Development App<a name="lumberyard-ios-app-anatomy-development-app"></a>
+### Development App {#lumberyard-ios-app-anatomy-development-app}
 
 You will use a Development app throughout most of your development cycle\. Your app must connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor\. Asset Processor generates the Development app executable and its assets, which can be loose files or PAK files\.
 
@@ -68,7 +68,7 @@ You will use a Development app throughout most of your development cycle\. Your 
 
 ![\[The Development app connects to the remote shader compiler.\]](/images/userguide/mobile/ios/ios_development_scenario_01.png)
 
-### VFS App<a name="lumberyard-ios-app-anatomy-vfs-app"></a>
+### VFS App {#lumberyard-ios-app-anatomy-vfs-app}
 
 You can use the VFS app with the Virtual Filing System \(VFS\)\. While similar to a Development app, the VFS app also contains the `bootstrap.cfg` and `game.xml` configuration files in your build\. After reading these configuration files, the app connects to your macOS or Windows computer and uses the assets from the local `Cache` directory\. This allows you to iterate content and see the changes on your device in real time\.
 
@@ -78,7 +78,7 @@ Your app must also connect to the Remote Shader Compiler in order to compile the
 
 ![\[The VFS app connects to the Asset Processor on startup.\]](/images/userguide/mobile/ios/ios_development_scenario_02.png)
 
-### Release App<a name="lumberyard-ios-app-anatomy-release-app"></a>
+### Release App {#lumberyard-ios-app-anatomy-release-app}
 
 The Release app contains the executable and all binaries and assets that are required for your app to run\. The assets and shaders must be PAK files because the app will not connect to the Remote Shader Compiler or Asset Processor\.
 

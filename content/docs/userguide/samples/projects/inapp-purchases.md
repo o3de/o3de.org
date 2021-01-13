@@ -3,7 +3,7 @@ description: ' Use the In-App Purchases sample to learn how to use the In-App Pu
   (IAP) Gem for a &ALYlong; application running on an Android or iOS mobile device. '
 title: In-App Purchases Sample
 ---
-# In\-App Purchases Sample<a name="sample-project-inapp-purchases"></a>
+# In\-App Purchases Sample {#sample-project-inapp-purchases}
 
 The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP\) Gem for a Lumberyard application that runs on a mobile device\. For more information about this gem, see [In\-App Purchases Gem](/docs/userguide/gems/builtin/inapp-purchases.md)\.
 
@@ -12,7 +12,7 @@ The In\-App Purchases sample demonstrates how to use the In\-App Purchases \(IAP
 + [Testing the In\-App Purchases Sample on Android](#sample-project-inapp-purchases-android-testing)
 + [Testing the In\-App Purchases Sample on iOS](#sample-project-inapp-purchases-ios-testing)
 
-## Prerequisites<a name="sample-project-inapp-purchases-prerequisites"></a>
+## Prerequisites {#sample-project-inapp-purchases-prerequisites}
 
 To use the In\-App Purchases sample, you must have the following:
 + An understanding of how to build a Lumberyard application and deploy to a mobile device\. For more information, see [Developing for Android and iOS with Lumberyard](/docs/userguide/mobile/support-intro.md)\.
@@ -23,7 +23,7 @@ To load the In\-App Purchases sample, you must edit the `autoexec.cfg` file \(lo
 
 You must also update the product IDs in the `product_ids.json` file to match the product IDs in iTunes Connect or the Google Play Developer Console\. This file is located in the `\dev\SamplesProject\IAP_ProductIds` directory\.
 
-## Testing the In\-App Purchases Sample on Android<a name="sample-project-inapp-purchases-android-testing"></a>
+## Testing the In\-App Purchases Sample on Android {#sample-project-inapp-purchases-android-testing}
 
 You can test the In\-App Purchase samples on an Android device\.
 
@@ -51,7 +51,7 @@ You can test the In\-App Purchase samples on an Android device\.
 
 You can now buy products, view purchased products, and consume purchased products in the application\.
 
-## Testing the In\-App Purchases Sample on iOS<a name="sample-project-inapp-purchases-ios-testing"></a>
+## Testing the In\-App Purchases Sample on iOS {#sample-project-inapp-purchases-ios-testing}
 
 You can test the In\-App Purchases sample on an iOS device\.
 

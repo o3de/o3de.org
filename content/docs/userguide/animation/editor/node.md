@@ -3,7 +3,7 @@ description: ' See the following &animation-editor; nodes when creating your ani
   graph in &ALYlong;. '
 title: '&animation-editor; Nodes'
 ---
-# Animation Editor Nodes<a name="animation-editor-node"></a>
+# Animation Editor Nodes {#animation-editor-node}
 
 See the following nodes available in the Animation Editor\.
 

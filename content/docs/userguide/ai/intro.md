@@ -2,7 +2,7 @@
 description: ' Employ artificial intelligence in &ALYlong;. '
 title: Employing artificial intelligence
 ---
-# Employing artificial intelligence<a name="ai-intro"></a>
+# Employing artificial intelligence {#ai-intro}
 
 In the context of a game, AI refers to the technology or system used to endow seemingly\-intelligent actions and behaviors to an agent or character, called the AI agent\.
 

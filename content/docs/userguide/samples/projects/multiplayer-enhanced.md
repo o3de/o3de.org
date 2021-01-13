@@ -3,11 +3,11 @@ description: ' Use the Multiplayer sample in &ALYlong; to learn how to build and
   multiplayer games that use the GridMate networking library. '
 title: Multiplayer Sample
 ---
-# Multiplayer Sample<a name="sample-project-multiplayer-enhanced"></a>
+# Multiplayer Sample {#sample-project-multiplayer-enhanced}
 
 The Multiplayer sample shows you how to build and structure multiplayer games that use the various features of the [GridMate networking](/docs/userguide/networking/intro.md) library\. The new preview attempts to incorporate as many GridMate features as possible but is not comprehensive\. Instead it is intended as a living snapshot of the current state of the networking library\. Consequently, as the sample evolves, features might be added to enhance functionality or removed to keep the sample concise\.
 
-## Building and Running the Sample<a name="sample-project-multiplayer-enhanced-building-and-running"></a>
+## Building and Running the Sample {#sample-project-multiplayer-enhanced-building-and-running}
 
 Follow these steps to build and run the sample\.
 
@@ -31,7 +31,7 @@ Follow these steps to build and run the sample\.
    + For Visual Studio 2017, use the `Bin64vc141.Dedicated` directory\.
    + For Visual Studio 2019, use the `Bin64vc142.Dedicated` directory\.
 
-## MultiplayerLobby<a name="sample-project-multiplayer-enhanced-multiplayerlobby"></a>
+## MultiplayerLobby {#sample-project-multiplayer-enhanced-multiplayerlobby}
 
 This level demonstrates a multiplayer lobby that uses GridMate networking\. Currently, the level performs the following tasks:
 + Creates a server
@@ -54,7 +54,7 @@ This level demonstrates a multiplayer lobby that uses GridMate networking\. Curr
 
 1. Click **Connect**\.
 
-## Game Overview<a name="sample-project-multiplayer-enhanced-overview"></a>
+## Game Overview {#sample-project-multiplayer-enhanced-overview}
 
 The Multiplayer sample is an arcade space shooter\. Each player controls a ship in a giant field of asteroids\. Each player must fly through the asteroids and destroy as many of them as possible in an effort to achieve the highest score\. Additional points are awarded when other players are killed\. Points are deducted every time the player dies\. In addition to the threats posed by asteroids and other players, gravity wells scattered around the map can draw players in and trap them\. Players who become trapped in a gravity well die instantly\.
 
@@ -65,7 +65,7 @@ When a ship is spawned, three kinds of ships are assigned randomly:
 
 When destroyed, some asteroids spawn collectibles that award a short\-time power\-up bonus\. These power\-ups include extra damage against certain targets, a longer power\-up time, and extra protection against certain sources of damage\.
 
-## Game Controls<a name="sample-project-multiplayer-enhanced-controls"></a>
+## Game Controls {#sample-project-multiplayer-enhanced-controls}
 
 The following tables list controls for keyboards, controllers, and touch interfaces\.
 
@@ -102,7 +102,7 @@ The following tables list controls for keyboards, controllers, and touch interfa
 + These controls can also be accessed by using the mouse \(click to touch\)\. 
 + If you fire manually, the automatic firing stops until the next input from one of the virtual joysticks\.
 
-## **Game CVars**<a name="sample-project-multiplayer-enhanced-game-cvars"></a>
+## **Game CVars** {#sample-project-multiplayer-enhanced-game-cvars}
 
 The following console variables can be used with the game\.
 
@@ -125,7 +125,7 @@ Controls what ship is spawned for a player when the player spawns a ship\. Possi
 **`mps_UserName`**  
 Specifies the name for the client in game elements such as the scoreboard or action notification\.
 
-## Creating a Dedicated Server<a name="sample-project-multiplayer-enhanced-creating-a-dedicated-server"></a>
+## Creating a Dedicated Server {#sample-project-multiplayer-enhanced-creating-a-dedicated-server}
 
 To create a dedicated server for the game, perform the following steps\.
 
@@ -155,7 +155,7 @@ To create a dedicated server for the game, perform the following steps\.
    + For Visual Studio 2017, use the `Bin64vc141.Dedicated` directory\.
    + For Visual Studio 2019, use the `Bin64vc142.Dedicated` directory\.
 
-## Supported Platforms<a name="sample-project-multiplayer-enhanced-supported-platforms"></a>
+## Supported Platforms {#sample-project-multiplayer-enhanced-supported-platforms}
 
 The Multiplayer sample is currently supported on a variety of client and server platforms\.
 
@@ -170,7 +170,7 @@ The following dedicated server platforms are supported:
 + Windows \(Visual Studio 2017 or Visual Studio 2019\)
 + Linux \(Ubuntu\)
 
-## About Self\-Signed Certificates in the Multiplayer Sample<a name="sample-project-multiplayer-enhanced-self-signed-certificates"></a>
+## About Self\-Signed Certificates in the Multiplayer Sample {#sample-project-multiplayer-enhanced-self-signed-certificates}
 
 In Windows, the Multiplayer sample enables client\-side self authentication that uses a [self\-signed certificate](https://en.wikipedia.org/wiki/Self-signed_certificate), which the build script generates for each user\. Regarding this certificate, keep in mind the following points:
 + The self\-signed certificate is not an official certificate\. If you want to ship a publically available game, you must replace it with a [public key certificate](https://en.wikipedia.org/wiki/Public_key_certificate)\.
@@ -179,7 +179,7 @@ In Windows, the Multiplayer sample enables client\-side self authentication that
   + macOS: Only iOS client builds can be made\.
   + Linux: Only dedicated server builds can be made\.
 
-## Troubleshooting<a name="sample-project-multiplayer-enhanced-troubleshooting"></a>
+## Troubleshooting {#sample-project-multiplayer-enhanced-troubleshooting}
 
 The following are some connection troubleshooting tips\.
 + If clients are unable to discover a server, ensure that the server and client are on the same subnet in order to allow for UDP discovery\.

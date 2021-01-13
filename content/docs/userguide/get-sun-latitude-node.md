@@ -3,7 +3,7 @@ description: ' Use the Get Sun Latitude node in the &ALYlong; &script-canvas; ed
   to return the sun latitude. '
 title: Get Sun Latitude
 ---
-# Get Sun Latitude<a name="get-sun-latitude-node"></a>
+# Get Sun Latitude {#get-sun-latitude-node}
 
 Returns the sun's latitude in the sky\.
 
@@ -13,7 +13,7 @@ Returns the sun's latitude in the sky\.
 
 ![\[getsunlatitude, getsunlatitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-sun-latitude-node.png)
 
-## Inputs<a name="get-sun-latitude-node-input"></a>
+## Inputs {#get-sun-latitude-node-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the sun's latitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-sun-latitude-node-output"></a>
+## Outputs {#get-sun-latitude-node-output}
 
 
 ****  

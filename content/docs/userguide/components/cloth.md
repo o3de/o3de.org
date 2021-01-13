@@ -2,7 +2,7 @@
 description: ' The &ALYlong; Cloth component. '
 title: Cloth component
 ---
-# Cloth component<a name="component-cloth"></a>
+# Cloth component {#component-cloth}
 
 
 ****  
@@ -32,7 +32,7 @@ For information on using the **Cloth** component see [Simulate cloth with NVIDIA
 + [Tether constraints properties](#component-cloth-tether-constraints-properties)
 + [Quality properties](#component-cloth-quality-properties)
 
-## Base properties<a name="component-cloth-base-properties"></a>
+## Base properties {#component-cloth-base-properties}
 
 ![\[Base properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-A-1.27.png)
 
@@ -68,7 +68,7 @@ Stiffness exponent that adjusts the overall stiffness of the cloth simulation\. 
 + **Fabric stretch**
 + **Tether \- Stretch**
 
-## Motion constraints properties<a name="component-cloth-motion-constraints-properties"></a>
+## Motion constraints properties {#component-cloth-motion-constraints-properties}
 
 ![\[Motion constraints properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-B-1.27.png)
 
@@ -88,7 +88,7 @@ Stiffness for motion constraints\.
 **0\.0**: Stiffness is not applied to motion constraints\.   
 **1\.0**: Stiffness is fully applied to motion constraints\. 
 
-## Backstop properties<a name="component-cloth-backstop-properties"></a>
+## Backstop properties {#component-cloth-backstop-properties}
 
 ![\[Backstop properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-C-1.27.png)
 
@@ -104,7 +104,7 @@ The offset in meters for backstop spheres behind the cloth\.
 **Front offset**  
 The offset in meters for backstop spheres in front of the cloth\. 
 
-## Damping properties<a name="component-cloth-damping-properties"></a>
+## Damping properties {#component-cloth-damping-properties}
 
 ![\[Damping properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-D-1.27.png)
 
@@ -123,7 +123,7 @@ Portion of angular velocity applied to turning cloth particles\.
 **0\.0**: Cloth particles are unaffected\.   
 **1\.0**: Damped global cloth particle angular velocity\. 
 
-## Inertia properties<a name="component-cloth-inertia-properties"></a>
+## Inertia properties {#component-cloth-inertia-properties}
 
 ![\[Inertia properties of the NVIDIA Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-E-1.27.png)
 
@@ -142,7 +142,7 @@ Portion of angular velocity applied to turning cloth particles\.
 **0\.0**: Cloth particles are unaffected\.   
 **1\.0**: Physically correct angular velocity\. 
 
-## Wind properties<a name="component-cloth-wind-properties"></a>
+## Wind properties {#component-cloth-wind-properties}
 
 **Note**  
 The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/userguide/wind-provider.md)\. 
@@ -168,7 +168,7 @@ Specifies how much lift air applies to the cloth particles\.
 **Air density**  
 The density of air used for drag and lift calculations\.
 
-## Collision properties<a name="component-cloth-collision-properties"></a>
+## Collision properties {#component-cloth-collision-properties}
 
 ![\[Collision properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-G-1.27.png)
 
@@ -187,7 +187,7 @@ The increase in quality can impact performance\. We recommend that you use **Con
 **Affects static cloth particles**  
 Enable to allow colliders to move static cloth particles\. Static cloth particles have a **0\.0** inverse mass\. 
 
-## Self Collision properties<a name="component-cloth-self-collision-properties"></a>
+## Self Collision properties {#component-cloth-self-collision-properties}
 
 ![\[Self collision properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-H-1.27.png)
 
@@ -199,7 +199,7 @@ The minimum distance that the colliding cloth particles must maintain from each 
 Stiffness for the self collision constraints\.   
 **0\.0**: **Self collision** disabled\. 
 
-## Fabric stiffness properties<a name="component-cloth-fabric-stiffness-properties"></a>
+## Fabric stiffness properties {#component-cloth-fabric-stiffness-properties}
 
 ![\[Fabric stiffness properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-I-1.27.png)
 
@@ -239,7 +239,7 @@ Scale value for shearing constraints\.
 **0\.0**: No shearing constraints applied\.   
 **1\.0**: Fully apply shearing constraints\. 
 
-## Fabric compression properties<a name="component-cloth-fabric-compression-properties"></a>
+## Fabric compression properties {#component-cloth-fabric-compression-properties}
 
 ![\[Fabric Compression properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-J-1.27.png)
 
@@ -259,7 +259,7 @@ Compression limit for bending constraints\. This property is affected by **Bendi
 Compression limit for shearing constraints\. This property is affected by **Shearing multiplier** in the **Fabric stiffness** property group\.   
 **0\.0**: Shearing compression disabled\. 
 
-## Fabric stretch properties<a name="component-cloth-fabric-stretch-properties"></a>
+## Fabric stretch properties {#component-cloth-fabric-stretch-properties}
 
 **Note**  
 For **Fabric stretch** properties, reduce **Stiffness** of **Tether constraints** or increase its **Scale** to allow cloth to stretch\. 
@@ -282,7 +282,7 @@ Stretch limit for bending constraints\. This property is affected by **Bending m
 Stretch limit for shearing constraints\. This property is affected by **Shearing multiplier** in the **Fabric stiffness** property group\.   
 **0\.0**: Shearing stretch disabled\. 
 
-## Tether constraints properties<a name="component-cloth-tether-constraints-properties"></a>
+## Tether constraints properties {#component-cloth-tether-constraints-properties}
 
 ![\[Tether constraints properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-L-1.27.png)
 
@@ -294,7 +294,7 @@ Stiffness for tether constraints\.
 **Scale**  
 Scale factor for tether constraint **Stiffness** 
 
-## Quality properties<a name="component-cloth-quality-properties"></a>
+## Quality properties {#component-cloth-quality-properties}
 
 ![\[Quality properties of the Cloth component\]](/images/userguide/physx/cloth/ui-cloth-component-M-1.27.png)
 

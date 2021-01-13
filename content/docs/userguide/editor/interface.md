@@ -2,7 +2,7 @@
 description: ' See an overview of the &ly-editor; interface. '
 title: '&ly-editor; Interface'
 ---
-# Lumberyard Editor Interface<a name="lumberyard-editor-interface"></a>
+# Lumberyard Editor Interface {#lumberyard-editor-interface}
 
 Lumberyard Editor has the following panels and toolbars in the default layout:
 

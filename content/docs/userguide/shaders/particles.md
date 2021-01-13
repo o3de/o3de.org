@@ -2,11 +2,11 @@
 description: ' Use the particles shader to render particle effects in &ALYlong;. '
 title: Particles Shader
 ---
-# Particles Shader<a name="shader-ref-particles"></a>
+# Particles Shader {#shader-ref-particles}
 
 The Particles shader is used to render particle effects for fire, smoke, lightning, sparks, and fog that are affected by light, and as such cast shadows and cause reflections\.
 
-## Shader Parameters<a name="shader-ref-particles-shader-parameters"></a>
+## Shader Parameters {#shader-ref-particles-shader-parameters}
 
 **Color lookup amplitude**  
 Sets the color lookup brightness and multiplier\.  
@@ -67,7 +67,7 @@ Sets the threshold for writing depth\.
 This parameter requires that the **Depth Fixup** shader generation parameter is enabled\.  
 Default value: 0\.05
 
-## Shader Generation Parameters<a name="shader-ref-particles-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-particles-shader-generation-parameters}
 
 **Refraction**  
 Enables the use of a bump\-map texture as the displacement for refraction\.

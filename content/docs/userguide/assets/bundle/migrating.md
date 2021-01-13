@@ -3,13 +3,13 @@ description: ' Learn how to migrate your existing &ALYlong; game project to use 
   &asset-bundler; system. '
 title: Migrating a Game Project to the &asset-bundler;
 ---
-# Migrating a Game Project to the Asset Bundler<a name="asset-bundler-migrating"></a>
+# Migrating a Game Project to the Asset Bundler {#asset-bundler-migrating}
 
 If you already have an existing Lumberyard project, and you want to use the new Asset Bundler for your game assets, complete the following steps to update your project: 
 + Fix missing product dependencies\.
 + Create a release build using files that are generated with the Asset Bundler\.
 
-## Fix Missing Dependencies<a name="asset-bundler-migrating-fix-dependencies"></a>
+## Fix Missing Dependencies {#asset-bundler-migrating-fix-dependencies}
 
 The Asset Bundler relies on accurate and complete product dependency information to ensure that all assets that are needed for runtime are included in the asset bundle\. This procedure shows how to use new and existing Lumberyard tools to find and fix missing product dependencies\.
 
@@ -18,7 +18,7 @@ The Asset Bundler relies on accurate and complete product dependency information
    + [Resolving Missing Assets](/docs/userguide/assets/bundle/assets-resolving.md)
 
 1. Update your custom asset builders to output product dependencies\. Be sure to add false positive results to the exclusion list using the file tagging system\.
-   + [Implement the Callback for ProcessJobFunction](/docs/userguide/asset-builder-custom.md#asset-builder-custom-create-builder-class-processjob-callback)
+   + [Implement the Callback for ProcessJobFunction](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-processjob-callback)
    + [Using the File Tagging System to Include or Exclude Assets](/docs/userguide/assets/bundle/file-tagging.md)
 
 1. Create a seed list and add your required assets as seeds\. You can create a dependencies XML file \(such as `Check Engine/Engine_Dependencies.xml`\) to include optional assets or add multiple seeds using wildcards\. Include the dependencies XML file in the seed list\. 
@@ -34,7 +34,7 @@ The Asset Bundler relies on accurate and complete product dependency information
 1. Have the system load up the bundles that you created in Step 5\. Then, use bundle mode to identify any missing assets in the bundle\. Ideally, you don't want to see any missing dependencies, but there is no requirement to resolve them all\.
    + [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)
 
-## Create Release Build with New Asset Bundling System<a name="asset-bundler-migrating-replace-bundles"></a>
+## Create Release Build with New Asset Bundling System {#asset-bundler-migrating-replace-bundles}
 
 After you generate asset bundles to deliver with your game, switch your release build process to use the new asset bundling system\. Use the following instructions to generate content including asset bundles for a release build\. 
 
@@ -52,13 +52,13 @@ After you generate asset bundles to deliver with your game, switch your release 
 
    1. Add the new bundle files to the directory `gamename_platform_paks/gamename`\. You can do this manually or create custom scripts based on the samples described in the next section\.
 
-## Release Build Sample Scripts<a name="asset-bundler-migrating-replace-bundles-script"></a>
+## Release Build Sample Scripts {#asset-bundler-migrating-replace-bundles-script}
 
 The following sample scripts show how you can simplify and automate basic release build processes for your game projects\. 
 + [`generate_bundle.py`](#asset-bundler-migrating-replace-bundles-script-generatebundle) – This script uses the Lumberyardcommand line calls to generate asset bundle files\.
 + [`ProjectName_MakePaks.py`](#asset-bundler-migrating-replace-bundles-script-makepaks) – This script creates a folder titled `gamename_pc_paks` and copies the base bundle files to the subfolder `gamename_platform_paks/gamename`\. 
 
-### generate\_bundle\.py<a name="asset-bundler-migrating-replace-bundles-script-generatebundle"></a>
+### generate\_bundle\.py {#asset-bundler-migrating-replace-bundles-script-generatebundle}
 
 ```
 import argparse
@@ -147,7 +147,7 @@ args = Args(**parser.parse_args().__dict__)
 args.func(args)
 ```
 
-### ProjectName\_MakePaks\.py<a name="asset-bundler-migrating-replace-bundles-script-makepaks"></a>
+### ProjectName\_MakePaks\.py {#asset-bundler-migrating-replace-bundles-script-makepaks}
 
 ```
 import argparse

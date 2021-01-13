@@ -2,7 +2,7 @@
 description: ' Use the &ALYlong; &script-canvas; editor to switch the skybox. '
 title: Switching Skyboxes with the &script-canvas; Editor
 ---
-# Switching Skyboxes with the Script Canvas Editor<a name="sky-skyboxes-switch"></a>
+# Switching Skyboxes with the Script Canvas Editor {#sky-skyboxes-switch}
 
 You can use the **Script Canvas** editor to create a script that switches the skybox material \.
 

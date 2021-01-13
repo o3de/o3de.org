@@ -2,7 +2,7 @@
 description: ' Use the Slice Favorites Gem in &ALYlong; to flag slices as favorites. '
 title: Slice Favorites
 ---
-# Slice Favorites<a name="gems-system-gem-slice-favorites"></a>
+# Slice Favorites {#gems-system-gem-slice-favorites}
 
 With the **Slice Favorites** gem, you can flag a slice as a favorite in the **Asset Browser**\.
 

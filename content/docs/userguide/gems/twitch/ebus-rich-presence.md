@@ -3,11 +3,11 @@ description: ' Learn about the Rich Presence C++ API operations for Twitch that 
   can use for your &ALY; game project. '
 title: Rich Presence
 ---
-# Rich Presence<a name="twitch-api-ebus-rich-presence"></a>
+# Rich Presence {#twitch-api-ebus-rich-presence}
 
 Rich Presence APIs for Twitch
 
-## UpdatePresenceStatus<a name="twitch-api-ebus-rich-presence-updatepresencestatus"></a>
+## UpdatePresenceStatus {#twitch-api-ebus-rich-presence-updatepresencestatus}
 
 Updates the presence status for a specified user\.
 
@@ -61,7 +61,7 @@ No return value\.UpdatePresenceStatus Callback
 Value – The HTTP response code for this call\. If successful, the value returns the polling interval in seconds\. If unsuccessful, the value returns `Aws::Http::HttpResponseCode`\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetPresenceStatusofFriends<a name="twitch-api-ebus-rich-presence-getpresencestatusoffriends"></a>
+## GetPresenceStatusofFriends {#twitch-api-ebus-rich-presence-getpresencestatusoffriends}
 
 Retrieves the presence status of a specified user's friends\.
 
@@ -115,7 +115,7 @@ Value – The presence status list, which includes the following data:
 + UserID – The Twitch user ID, which returns in the format `AZStd::string`\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetPresenceSettings<a name="twitch-api-ebus-rich-presence-getpresencesettings"></a>
+## GetPresenceSettings {#twitch-api-ebus-rich-presence-getpresencesettings}
 
 Retrieves the presence settings for the active user\.
 
@@ -160,7 +160,7 @@ Value – The presence settings, which includes the following data:
 + ShareActivity – If true, the user's activity is shareable\. If false, the user's activity cannot be shared\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## UpdatePresenceSettings<a name="twitch-api-ebus-type-name"></a>
+## UpdatePresenceSettings {#twitch-api-ebus-type-name}
 
 Retrieves the presence settings for the active user\.
 

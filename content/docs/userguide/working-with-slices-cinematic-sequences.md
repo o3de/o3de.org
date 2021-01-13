@@ -3,13 +3,13 @@ description: ' See the following best practices when working with slices and seq
   in &ALYlong;. '
 title: Working with Slices and Sequences
 ---
-# Working with Slices and Sequences<a name="working-with-slices-cinematic-sequences"></a>
+# Working with Slices and Sequences {#working-with-slices-cinematic-sequences}
 
 When you create a track view sequence that has entities contained in slices or add a track view sequence in a slice, the process is the same as creating a track view sequence in a level\. The workflow is identical\. However, see the following best practices when working with slices and track view sequences\.
 
 For more information about slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
 
-## Avoid External References<a name="avoid-external-references"></a>
+## Avoid External References {#avoid-external-references}
 
 As with any reference in a slice, if you make an external reference from within the slice, that reference will break if you also instantiate the slice in another level\.
 
@@ -17,7 +17,7 @@ For example, you have a track view sequence that is in a slice and also animates
 
 To avoid this, ensure that entities that you animate from a track view sequence in a slice is either in the same slice or in a child slice\.
 
-## Determine Which Instantiated Slice is in the Active Track View Sequence<a name="determine-the-slice-trackview"></a>
+## Determine Which Instantiated Slice is in the Active Track View Sequence {#determine-the-slice-trackview}
 
 If you instantiate a slice that has a track view sequence, this creates another track view sequence with the same name as the original slice\.
 
@@ -31,7 +31,7 @@ If you instantiate a slice that has a track view sequence, this creates another 
 
 1. In the **Entity Outliner**, you can see the selected slice instance and track view sequence that you are editing\.
 
-## Avoid Animating the Parent Entity in a Slice<a name="avoid-animating-root-node"></a>
+## Avoid Animating the Parent Entity in a Slice {#avoid-animating-root-node}
 
 If you instantiate a slice for a track view sequence, ensure that parent entities are not animated\. You can animate child entities, but the parent entity cannot be animated in a slice\.
 
@@ -46,7 +46,7 @@ In the Track View, the **ExampleSequence** animates only the two children entiti
 **Note**  
 The **[Transform](/docs/userguide/components/transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 
 
-## Avoid Setting a Director’s Camera Track in a Sequence in a Slice<a name="avoid-setting-director-camera-track"></a>
+## Avoid Setting a Director’s Camera Track in a Sequence in a Slice {#avoid-setting-director-camera-track}
 
 You should assume that multiple slices might be instantiated and playing back the slice sequence at the same time\. Therefore, if you have a **Director** node that sets the camera track in a sequence, that track may be playing at different local movie times simultaneously\. Also, the order of slice animation playback may change between ticks\. As a best practice, do not use the **Camera** track in **Director** nodes for sequences in slices\.
 

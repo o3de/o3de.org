@@ -2,7 +2,7 @@
 description: ' Learn how to join a GridMate session in &ALYlong;. '
 title: Joining a Session
 ---
-# Joining a Session<a name="network-session-service-joining"></a>
+# Joining a Session {#network-session-service-joining}
 
 You have two ways to join a session:
 + By [Searching for a Session](/docs/userguide/networking/session-service-searching.md) and using a `GridMate::SearchInfo` object from the results\.
@@ -13,7 +13,7 @@ Regardless of the method, a session is joined using one of the overloaded `IGrid
 **Note**  
 The argument `GridMate::JoinParams` currently has no supported parameters\.
 
-## Events<a name="network-session-service-joining-events"></a>
+## Events {#network-session-service-joining-events}
 
 The following table describes GridMate session join events\.
 
@@ -26,7 +26,7 @@ The following table describes GridMate session join events\.
 | OnMemberJoined | A player has joined the session\. | 
 | OnMemberLeaving | A player has left the session\. | 
 
-## Example<a name="network-session-service-joining-example"></a>
+## Example {#network-session-service-joining-example}
 
 The following example joins a session that has been found as the result of a session search\.
 

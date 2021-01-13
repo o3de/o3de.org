@@ -3,7 +3,7 @@ description: ' Use console variables (CVARs) in &ALYlong; to configure terrain a
   cascade shadow maps. '
 title: Using CVARs to Configure Terrain and Cascade Shadow Maps
 ---
-# Using CVARs to Configure Terrain and Cascade Shadow Maps<a name="rendering-graphics-shadows-cvars"></a>
+# Using CVARs to Configure Terrain and Cascade Shadow Maps {#rendering-graphics-shadows-cvars}
 
 You can use console variables \(CVARs\) in Amazon Lumberyard to configure terrain and cascade shadow maps \(also known as gradient shadow maps, or GSMs\)\. This topic provides a list of key shadow\-related console variables and shows you how to save your changes to them\. It also shows you how to learn about other related console variables\.
 
@@ -13,7 +13,7 @@ You can use console variables \(CVARs\) in Amazon Lumberyard to configure terrai
 + [Finding Other Shadow\-Related Console Variables](#rendering-graphics-shadows-cvars-finding-additional-shadow-related-console-variables)
 + [Tutorial: Using Console Variables to Tune Cascade Shadows](/docs/userguide/rendering/shadows-tuning.md)
 
-## Some Key Shadow\-Related Console Variables<a name="rendering-graphics-shadows-cvars-list"></a>
+## Some Key Shadow\-Related Console Variables {#rendering-graphics-shadows-cvars-list}
 
 The following table shows some of the console variables that configure shadows, gradient shadow maps, and related debug modes\.
 
@@ -65,7 +65,7 @@ The following table shows some of the console variables that configure shadows, 
 | r\_ShadowsUseClipVolume DUMPTODISK | int |  Specifies whether shadows use clip volume\. `0` = Off `1` = On \(default\)   | 
 | sys\_spec\_shadows | int |  A console variable group that applies settings to certain shadow variables to configure shadow quality\. A higher value signifies higher quality\. Valid values: `1` to `8` For information on the console variables included in this group and how their settings are affected, see [sys\_spec\_shadows Console Variables](#rendering-graphics-shadows-cvars-sys-spec-shadows-console-variables)\.  | 
 
-### sys\_spec\_shadows Console Variables<a name="rendering-graphics-shadows-cvars-sys-spec-shadows-console-variables"></a>
+### sys\_spec\_shadows Console Variables {#rendering-graphics-shadows-cvars-sys-spec-shadows-console-variables}
 
 The following table shows the console variables in the `sys_spec_shadows` group\. The columns show the value of each variable for the `sys_spec_shadows` settings of 1 through 8\. The final column lists the default values\.
 
@@ -102,20 +102,20 @@ The following table shows the console variables in the `sys_spec_shadows` group\
 | r\_ShadowsPCFiltering | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 
 | r\_ShadowsUseClipVolume | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 
 
-## Saving Console Variable Changes<a name="rendering-graphics-shadows-cvars-persisting-console-variable-changes"></a>
+## Saving Console Variable Changes {#rendering-graphics-shadows-cvars-persisting-console-variable-changes}
 
 Changes that you make to CVARs within the console do not automatically save in your level or editing session\. To save your changes, you can use configuration files or Lua script\.
 
 **To save console variable changes**
 + Do one of the following:
-  + Edit and save one of the console variable configuration files\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
+  + Edit and save one of the console variable configuration files\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
   + In a Lua script, use the following syntax to assign a value to the variable at startup:
 
     ```
     ConsoleRequestBus.Broadcast.ExecuteConsoleCommand('r_ConsoleVariable = Value')
     ```
 
-## Finding Other Shadow\-Related Console Variables<a name="rendering-graphics-shadows-cvars-finding-additional-shadow-related-console-variables"></a>
+## Finding Other Shadow\-Related Console Variables {#rendering-graphics-shadows-cvars-finding-additional-shadow-related-console-variables}
 
 You can use the Lumberyard Editor console window to search for additional shadow\-related console variables\.
 

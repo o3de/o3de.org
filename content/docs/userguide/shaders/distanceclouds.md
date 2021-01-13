@@ -2,11 +2,11 @@
 description: ' See the DistanceClouds shader for 2D clouds in &ALYlong;. '
 title: DistanceClouds Shader
 ---
-# DistanceClouds Shader<a name="shader-ref-distanceclouds"></a>
+# DistanceClouds Shader {#shader-ref-distanceclouds}
 
 The DistanceClouds shader is a dedicated shader used for 2D clouds that are placed at a far distance\. 
 
-## Shader Parameters<a name="shader-ref-distanceclouds-shader-parameters"></a>
+## Shader Parameters {#shader-ref-distanceclouds-shader-parameters}
 
 **Alpha Multiplier**  
 Alpha multiplier for cloud texture\.  
@@ -67,7 +67,7 @@ A value multiplied by the sun color that is defined for the current time of day\
 This parameter applies if no shader generation parameter is enabled\.  
 Default value: 4
 
-## Shader Generation Parameters<a name="shader-ref-distanceclouds-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-distanceclouds-shader-generation-parameters}
 
 **Simple distance clouds**  
 Enables the use of distance clouds with no volumetric shading computations\.

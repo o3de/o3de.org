@@ -3,9 +3,9 @@ description: ' The following topics will guide you through organizing, managing,
   and packaging your game assets with &ALY;. '
 title: Working with assets in &ALY;
 ---
-# Working with assets in Lumberyard<a name="assets-intro"></a>
+# Working with assets in Lumberyard {#assets-intro}
 
-## Working with assets in Lumberyard<a name="ly-assets-intro"></a>
+## Working with assets in Lumberyard {#ly-assets-intro}
 
 Learn how to manage, process, and package the assets for your Lumberyard game\. This documentation covers the Lumberyard Asset Browser tool, the asset pipeline, managing and organizing game assets, and packaging \(bundling\) game assets for delivery\.
 

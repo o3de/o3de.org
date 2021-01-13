@@ -2,7 +2,7 @@
 description: ' Learn how to align &script-canvas; nodes in &ALYlong;. '
 title: Aligning Nodes
 ---
-# Aligning Nodes<a name="script-canvas-working-with-nodes-aligning"></a>
+# Aligning Nodes {#script-canvas-working-with-nodes-aligning}
 
 To align selected nodes in a Script Canvas graph, you can use the context menu, hot keys, or the following alignment icons above the graph\.
 

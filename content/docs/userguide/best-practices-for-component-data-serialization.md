@@ -3,11 +3,11 @@ description: ' Learn about ways to help avoid losing data when serializing compo
   data in &ALYlong;. '
 title: Avoiding Data Loss when Serializing Component Data
 ---
-# Avoiding Data Loss when Serializing Component Data<a name="best-practices-for-component-data-serialization"></a>
+# Avoiding Data Loss when Serializing Component Data {#best-practices-for-component-data-serialization}
 
 There are ways that you can avoid data loss when serializing component data\. This topic describes how to deal with slice data patch issues when using version converters, and provides some best practices for avoiding data loss\.
 
-## Avoiding Data Loss and Maintaining Stability in Lumberyard v1\.22 and Earlier<a name="best-practices-for-component-data-serialization-version-converters"></a>
+## Avoiding Data Loss and Maintaining Stability in Lumberyard v1\.22 and Earlier {#best-practices-for-component-data-serialization-version-converters}
 
 This section provides specific information and best practices for avoiding data loss in versions of Lumberyard up through and including v1\.22\. First, it describes what you need to keep in mind when using version converters, and how to help avoid subsequent data loss in your slice data patches\. Then, it provides a two\-step process for avoiding data loss and maintaining stability\.
 
@@ -18,7 +18,7 @@ In Lumberyard v1\.23, the issues described in the following topics were addresse
 + [The Data Patching Issue](#version-converters-and-data-patches)
 + [How to Avoid Data Loss](#version-converters-and-avoiding-data-loss)
 
-### The Data Patching Issue<a name="version-converters-and-data-patches"></a>
+### The Data Patching Issue {#version-converters-and-data-patches}
 
 During development, components undergo significant changes\. Member variables are added, removed, renamed, and changed\. Consequentially, serialization of the component also changes\. When any change affects serialization, a version converter function can modify older data so that it can continue working with the new object state\.
 
@@ -116,7 +116,7 @@ The following example shows the sequence of events that can cause the data loss 
 
 1. A content creator instantiates Slice B\. This results in undefined behavior\.
 
-### How to Avoid Data Loss<a name="version-converters-and-avoiding-data-loss"></a>
+### How to Avoid Data Loss {#version-converters-and-avoiding-data-loss}
 
 We recommend the following three\-step process to help avoid data loss and stability issues in Lumberyard v1\.22 and earlier:
 

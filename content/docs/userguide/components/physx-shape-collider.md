@@ -3,13 +3,13 @@ description: ' Use the &physx-shape-collider; component to define where collisio
   detection and response occur in &ALYlong;. '
 title: '&physx-shape-collider;'
 ---
-# PhysX Shape Collider<a name="component-physx-shape-collider"></a>
+# PhysX Shape Collider {#component-physx-shape-collider}
 
 The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider geometry based on the shape definition supplied by a **Shape** component\. The PhysX Shape Collider supports the following Shape components: 
-+  [Box](/docs/userguide/components/shapes.md#box-shape-component-properties) 
-+  [Capsule](/docs/userguide/components/shapes.md#capsule-shape-component-properties) 
++  [Box](/docs/userguide/components/shapes#box-shape-component-properties) 
++  [Capsule](/docs/userguide/components/shapes#capsule-shape-component-properties) 
 +  [Polygon Prism](/docs/userguide/components/polygon-prism.md) 
-+  [Sphere](/docs/userguide/components/shapes.md#sphere-shape-component-properties) 
++  [Sphere](/docs/userguide/components/shapes#sphere-shape-component-properties) 
 
 **Note**  
 The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static \(non\-moving\) entity\. To create a dynamic \(moving\) entity, you also must add a [PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md) component\. 
@@ -28,12 +28,12 @@ To use the PhysX Shape Collider component you must enable [PhysX](/docs/userguid
 For more information, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
 
 **Topics**
-- [PhysX Shape Collider<a name="component-physx-shape-collider"></a>](#physx-shape-collider)
-  - [PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>](#physx-shape-collider-properties)
-  - [Complex polygon prism shapes<a name="complex-polygon-prism-shapes"></a>](#complex-polygon-prism-shapes)
-  - [Colliders as triggers<a name="colliders-as-triggers"></a>](#colliders-as-triggers)
+- [PhysX Shape Collider {#component-physx-shape-collider}](#physx-shape-collider)
+  - [PhysX Shape Collider properties {#component-physx-shape-collider-properties}](#physx-shape-collider-properties)
+  - [Complex polygon prism shapes {#complex-polygon-prism-shapes}](#complex-polygon-prism-shapes)
+  - [Colliders as triggers {#colliders-as-triggers}](#colliders-as-triggers)
 
-## PhysX Shape Collider properties<a name="component-physx-shape-collider-properties"></a>
+## PhysX Shape Collider properties {#component-physx-shape-collider-properties}
 
 ![\[PhysX Shape Collider component interface.\]](/images/userguide/component/physx/physx/ui-physx-shape-collider-A-1.27.png)
 
@@ -71,7 +71,7 @@ PhysX bodies generate contacts when they are within the sum of their contact off
 ****Draw collider****  
 Render this shape collider in the viewport\. Enabled by default\. 
 
-## Complex polygon prism shapes<a name="complex-polygon-prism-shapes"></a>
+## Complex polygon prism shapes {#complex-polygon-prism-shapes}
 
 The [Polygon Prism Shape](/docs/userguide/components/polygon-prism.md) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX\. The subdivision is automatically updated if the vertices of the polygon prism are modified\. 
 
@@ -81,7 +81,7 @@ If the vertices are modified so that the polygon prism is no longer a simple pol
 
 ![\[A complex polygon prism console error.\]](/images/userguide/component/physx/physx/ui-physx-shape-collider-C-1.24.png)
 
-## Colliders as triggers<a name="colliders-as-triggers"></a>
+## Colliders as triggers {#colliders-as-triggers}
 
 Triggers allow colliders to perform efficient overlap tests\. Colliders marked as triggers won't have forces applied when they intersect with another collider\. This is useful for detecting when something enters a certain area or when two objects overlap\. Use Lua or Script Canvas to detect overlap\.
 

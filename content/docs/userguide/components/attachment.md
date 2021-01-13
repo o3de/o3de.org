@@ -3,11 +3,11 @@ description: ' Use the Attachment component to attach an entity''s bone to a bon
   on the skeleton of another entity in &ALYlong;. '
 title: Attachment
 ---
-# Attachment<a name="component-attachment"></a>
+# Attachment {#component-attachment}
 
 The **Attachment** component lets an entity attach to a bone on the skeleton of another entity\.
 
-## Attachment Component Properties<a name="component-attachment-properties"></a>
+## Attachment Component Properties {#component-attachment-properties}
 
 ![\[Attachment component properties.\]](/images/userguide/component/attachment-component-properties.png)
 
@@ -26,7 +26,7 @@ The **Attachment** component has the following properties\.
 | Attached initially |  Specifies whether to attach to the target entity automatically\.  | 
 |  **Scaling**  |  Specifies how the object scaling is determined\. You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-attachment.html)  | 
 
-## EBus Request Bus Interface<a name="component-attachment-legacy-ebusrequest"></a>
+## EBus Request Bus Interface {#component-attachment-legacy-ebusrequest}
 
 Use the following request functions with the event bus \(EBus\) interface to communicate with other components of your game\.
 
@@ -41,7 +41,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 | Detach |  Detaches the target from the entity\.  | None | Yes | 
 | SetAttachmentOffset |  Update entity's offset from target\.  | offsetTransform – Attachment's offset from target\. | Yes | 
 
-## EBus Notification Bus Interface<a name="component-attachment-legacy-ebusnotification"></a>
+## EBus Notification Bus Interface {#component-attachment-legacy-ebusnotification}
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\. 
 

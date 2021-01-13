@@ -2,7 +2,7 @@
 description: null
 title: Saving the Vegetation Area as a Slice
 ---
-# Saving the Vegetation Area as a Slice<a name="dynamic-vegetation-procedures-saving-slice"></a>
+# Saving the Vegetation Area as a Slice {#dynamic-vegetation-procedures-saving-slice}
 
 Save your vegetation area as a slice so that you can easily place it in other locations or levels and further customize it\.
 

@@ -3,7 +3,7 @@ description: ' Use the Enable Effect Group node in the &ALYlong; &script-canvas;
   to enable a group of effects. '
 title: Enable Effect Group
 ---
-# Enable Effect Group<a name="enable-effect-group-node"></a>
+# Enable Effect Group {#enable-effect-group-node}
 
 Enables a specific group of effects setting that are defined in an `xml` file\. 
 
@@ -20,7 +20,7 @@ For more information about effect group files, see [Customizing Post\-Processing
 
 ![\[enableeffectgroup, enableeffectgroupnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-effect-group-node.png)
 
-## Inputs<a name="enable-effect-group-node-input"></a>
+## Inputs {#enable-effect-group-node-input}
 
 
 ****  
@@ -30,7 +30,7 @@ For more information about effect group files, see [Customizing Post\-Processing
 | In | Event | Triggers the node | 
 | Group Name | String | Relative path to the effect group xml file\. | 
 
-## Outputs<a name="enable-effect-group-node-output"></a>
+## Outputs {#enable-effect-group-node-output}
 
 
 ****  

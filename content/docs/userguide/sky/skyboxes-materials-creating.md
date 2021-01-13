@@ -3,7 +3,7 @@ description: ' Learn how to create skybox materials for a static sky in your &AL
   level. '
 title: Creating Skybox Materials
 ---
-# Creating Skybox Materials<a name="sky-skyboxes-materials-creating"></a>
+# Creating Skybox Materials {#sky-skyboxes-materials-creating}
 
 Skyboxes in Lumberyard are 5\-sided\. Sides 1 through 4 are the sides of the box, and side 5 is the top of the box\. Skyboxes in Lumberyard do not have a bottom\.
 

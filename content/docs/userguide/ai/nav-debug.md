@@ -2,11 +2,11 @@
 description: ' Debug AI navigation with console variables in &ALYlong;. '
 title: Debugging AI Navigation
 ---
-# Debugging AI Navigation<a name="ai-nav-debug"></a>
+# Debugging AI Navigation {#ai-nav-debug}
 
 In addition to using the AI Debug Recorder and AI Debug Viewer, you can also use specific console variables to debug AI agent navigation issues\.
 
-## Using Console Variables to Debug AI Navigation<a name="ai-nav-debug-cvars"></a>
+## Using Console Variables to Debug AI Navigation {#ai-nav-debug-cvars}
 
 There are a number of console variables that can be used for agent navigation mesh \(MNM\) debugging\. Some statistics display at the top\-right corner of the screen\.
 
@@ -41,7 +41,7 @@ Draw path\.
 **ai\_DrawPathFollower**  
 Draw path follower\.
 
-## Debugging the Navigation Mesh<a name="ai-nav-debug-mesh"></a>
+## Debugging the Navigation Mesh {#ai-nav-debug-mesh}
 
 Use the following procedure as a start to debug the navigation mesh:
 

@@ -4,7 +4,7 @@ description: ' Use the &ALYlong; &asset-editor; to create file tag rules for inc
   Rules are composed of pattern matching logic and file tag strings. '
 title: Using the File Tagging System to Include or Exclude Assets
 ---
-# Using the File Tagging System to Include or Exclude Assets<a name="asset-bundler-file-tagging"></a>
+# Using the File Tagging System to Include or Exclude Assets {#asset-bundler-file-tagging}
 
 Lumberyard v1\.22 and later use a file tagging system to include or exclude files at various stages of processing\. This system employs file tag rules to select files that match specified patterns\. File tags are associated with each rule to use as keys in file tag queries\. This is done by using the Lumberyard FileTag API\. You can create your own custom file tag rules using the Lumberyard Asset Editor\. This is useful whenever you need additional control over which files should be included or excluded during a processing step\. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**\.
 
@@ -12,7 +12,7 @@ Lumberyard v1\.22 and later use a file tagging system to include or exclude file
 + [Creating File Tag Rules](#creating-file-tag-rules)
 + [Using the FileTag API](#using-the-filetag-api)
 
-## Creating File Tag Rules<a name="creating-file-tag-rules"></a>
+## Creating File Tag Rules {#creating-file-tag-rules}
 
 Use the Lumberyard Asset Editor to add custom file tag rules to either `exclude.filetag` or `include.filetag`, depending on whether you are excluding or including asset files\. Both of these `.filetag` files are located in the `dev\Engine` directory\. File tag rules consist of two required parts:
 + A **File Pattern** that defines the files to match this rule\. Supported patterns include:
@@ -45,7 +45,7 @@ Some file tags have designated uses within Lumberyard\. Various tools may requir
 
 1. Select **File**, **Save** to save your new file tag rule\.
 
-## Using the FileTag API<a name="using-the-filetag-api"></a>
+## Using the FileTag API {#using-the-filetag-api}
 
 You can use the C\+\+ FileTag API to write your own logic for determining whether to include or exclude files\. The following example uses the file tagging system to ignore files that match patterns associated with the `ignore` and `shader` tags\.
 

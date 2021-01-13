@@ -3,7 +3,7 @@ description: ' Use the Set Input Number node in the &ALYlong; &script-canvas; ed
   to set the value of a procedural material input parameter as a number. '
 title: Set Input Number
 ---
-# Set Input Number<a name="set-input-number-node"></a>
+# Set Input Number {#set-input-number-node}
 
 Sets the value of an input parameter as a number\. You can use this node with the `Float1` and `Integer1` substance data types\. 
 
@@ -18,7 +18,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 
 ![\[SetInputNumber sets the numeric value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-number-node.png)
 
-## Inputs<a name="set-input-number-node-input"></a>
+## Inputs {#set-input-number-node-input}
 
 
 ****  
@@ -30,7 +30,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 | Input Name | String | The name of the input parameter to set\. | 
 | Number | Number | The new value to apply\. | 
 
-## Outputs<a name="set-input-number-node-output"></a>
+## Outputs {#set-input-number-node-output}
 
 
 ****  

@@ -2,11 +2,11 @@
 description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots in &ALYlong;. '
 title: Bots
 ---
-# Bots<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots"></a>
+# Bots {#cloud-canvas-cloud-gem-speech-recognition-api-bots}
 
 Use the following API commands to manage bots\.
 
-## PUT /admin/botdesc<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbotdesc"></a>
+## PUT /admin/botdesc {#cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbotdesc}
 
 Sends a JSON bot description that creates or updates an existing bot\. Automatically assigns `current` as the bot alias\. For more information, see the [bot format specification on Github\.com](https://github.com/awslabs/aws-lex-web-ui/blob/master/templates/custom-resources/bot-definition.json)\.
 
@@ -24,7 +24,7 @@ Sends a JSON bot description that creates or updates an existing bot\. Automatic
 | --- | --- | --- | 
 | status | string | Either ACCEPTED or a string that contains information about errors found in the desc file\. | 
 
-## GET /admin/botdesc/*\{name\}*/*\{version\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotdescnameversion"></a>
+## GET /admin/botdesc/*\{name\}*/*\{version\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotdescnameversion}
 
 Returns the JSON `desc` file for the specified bot name and version\.
 
@@ -43,7 +43,7 @@ Returns the JSON `desc` file for the specified bot name and version\.
 | --- | --- | --- | 
 | desc\_file | object | A bot description file for the requested bot\. | 
 
-## GET /admin/listbots/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminlistbotsnext-token"></a>
+## GET /admin/listbots/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminlistbotsnext-token}
 
 Returns a list of up to 10 bots and information about them\. Returns a pagination token if more than 10 bots are to be returned\.
 
@@ -62,7 +62,7 @@ Returns a list of up to 10 bots and information about them\. Returns a paginatio
 | bots | array | A JSON array of bot information tables that include the bot name, current version, alias, status, time of creation, and time of update\. | 
 | nextToken | string | Contains a pagination token to pass to listbots to retrieve the next page of bots\. If no additional pages exist, the string is empty\. | 
 
-## GET /admin/numbots<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminnumbots"></a>
+## GET /admin/numbots {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminnumbots}
 
 Returns a count of the total number of bots available\.
 
@@ -76,7 +76,7 @@ This command has no request parameters\.
 | --- | --- | --- | 
 | numbots | integer | The total number of bots\. | 
 
-## GET /admin/botstatus/\{bot\_name\}<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotstatusbot-name"></a>
+## GET /admin/botstatus/\{bot\_name\} {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotstatusbot-name}
 
 Checks the creation status of a bot\. Returns `READY` when the bot is available for publishing and testing\.
 
@@ -94,7 +94,7 @@ Checks the creation status of a bot\. Returns `READY` when the bot is available 
 | --- | --- | --- | 
 | status | string | Contains READY if the bot is available for testing or publishing, or another state as defined by the Amazon Lex [PutBot](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html) API\. | 
 
-## PUT /admin/bot<a name="cloud-canvas-cloud-gem-speech-recognition-api-put-adminbot"></a>
+## PUT /admin/bot {#cloud-canvas-cloud-gem-speech-recognition-api-put-adminbot}
 
 Creates an Amazon Lex conversational bot or replaces an existing bot\.
 
@@ -112,7 +112,7 @@ Creates an Amazon Lex conversational bot or replaces an existing bot\.
 | --- | --- | --- | 
 | status | string | Contains READY if the bot is created or updated, or another state as defined by the Amazon Lex [PutBot](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html) API\. | 
 
-## DELETE /admin/bot/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-delete-adminbotname"></a>
+## DELETE /admin/bot/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-delete-adminbotname}
 
 Deletes all versions of a bot from the account\.
 
@@ -130,7 +130,7 @@ Deletes all versions of a bot from the account\.
 | --- | --- | --- | 
 | status | string | Contains DELETED or an error message\. | 
 
-## GET /admin/bot/versions/*\{name\}*/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotversionsnamenext-token"></a>
+## GET /admin/bot/versions/*\{name\}*/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotversionsnamenext-token}
 
 Returns information about all the versions of a bot\.
 
@@ -150,7 +150,7 @@ Returns information about all the versions of a bot\.
 | bots | array | Contains bot information\. | 
 | nextToken | string | Contains a token to pass to retrieve the next page of bot versions\. If no additional pages exist, the string is empty\. | 
 
-## GET /admin/bot/*\{name\}*/*\{version\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotnameversion"></a>
+## GET /admin/bot/*\{name\}*/*\{version\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotnameversion}
 
 Returns an existing Lex bot information\.
 
@@ -169,7 +169,7 @@ Returns an existing Lex bot information\.
 | --- | --- | --- | 
 | bot | object | The information for the specific bot\. | 
 
-## PUT /admin/bot/version/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbotversionname"></a>
+## PUT /admin/bot/version/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbotversionname}
 
 Creates a new version of the bot based on the latest version of the specified bot\.
 
@@ -187,7 +187,7 @@ Creates a new version of the bot based on the latest version of the specified bo
 | --- | --- | --- | 
 | status | string | Contains READY if the bot version is created or another state as defined by the Amazon Lex [CreateBotVersion](https://docs.aws.amazon.com/lex/latest/dg/API_CreateBotVersion.html) API\. | 
 
-## GET /admin/listbotaliases/*\{name\}*/*\{next\_token\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminlistbotaliasesnamenext-token"></a>
+## GET /admin/listbotaliases/*\{name\}*/*\{next\_token\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminlistbotaliasesnamenext-token}
 
 Returns a list of aliases for a specified Amazon Lex bot\.
 
@@ -207,7 +207,7 @@ Returns a list of aliases for a specified Amazon Lex bot\.
 | aliases | array | A list of aliases for a specified Amazon Lex bot\. | 
 | nextToken | string | Contains a pagination token to pass to retrieve the next page of bot aliases\. If no additional pages exist, the string is empty\. | 
 
-## DELETE /admin/bot/alias/*\{name\}*/*\{bot\_name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-delete-adminbotaliasnamebot-name"></a>
+## DELETE /admin/bot/alias/*\{name\}*/*\{bot\_name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-delete-adminbotaliasnamebot-name}
 
 Deletes an alias for the specified bot\.
 
@@ -226,7 +226,7 @@ Deletes an alias for the specified bot\.
 | --- | --- | --- | 
 | status | string | Contains DELETED or an error message\. | 
 
-## GET /admin/bot/alias/*\{name\}*/*\{bot\_name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotaliasnamebot-name"></a>
+## GET /admin/bot/alias/*\{name\}*/*\{bot\_name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-get-adminbotaliasnamebot-name}
 
 Returns information about an Amazon Lex bot alias\.
 
@@ -245,7 +245,7 @@ Returns information about an Amazon Lex bot alias\.
 | --- | --- | --- | 
 | alias | object | Contains information about an Amazon Lex bot alias\. | 
 
-## PUT /admin/buildbot/*\{name\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbuildbotname"></a>
+## PUT /admin/buildbot/*\{name\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminbuildbotname}
 
 Builds a bot for use by the client\.
 
@@ -263,7 +263,7 @@ Builds a bot for use by the client\.
 | --- | --- | --- | 
 | status | string | Contains READY if the bot is successfully built, or an error message\. | 
 
-## PUT /admin/publishbot/*\{name\}*/*\{version\}*<a name="cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminpublishbotnameversion"></a>
+## PUT /admin/publishbot/*\{name\}*/*\{version\}* {#cloud-canvas-cloud-gem-speech-recognition-api-bots-put-adminpublishbotnameversion}
 
 Publishes the bot for use by the client and assigns a version name\.
 

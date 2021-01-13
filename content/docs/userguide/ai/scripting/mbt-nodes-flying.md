@@ -2,7 +2,7 @@
 description: ' See the following flying nodes for the AI system in &ALYlong;. '
 title: Flying Nodes
 ---
-# Flying Nodes<a name="ai-scripting-mbt-nodes-flying"></a>
+# Flying Nodes {#ai-scripting-mbt-nodes-flying}
 
 
 ****  
@@ -13,69 +13,69 @@ title: Flying Nodes
 
 These nodes provide MBT functionality related to flying vehicles\.
 
-## Hover<a name="ai-scripting-mbt-nodes-flying-hover"></a>
+## Hover {#ai-scripting-mbt-nodes-flying-hover}
 
 Causes a flying AI agent to hover at its current position\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-hover-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-hover-parameters}
 
 None\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-hover-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-hover-success}
 
 The node does not SUCCEED or FAIL\. Once executed, it continues running until forced to terminate\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-hover-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-hover-example}
 
 ```
 <Hover />
 ```
 
-## FlyShoot<a name="ai-scripting-mbt-nodes-flying-flyshoot"></a>
+## FlyShoot {#ai-scripting-mbt-nodes-flying-flyshoot}
 
 Allows the AI agent to shoot at its attention target when possible from its current position\.
 
 If the AI agent's secondary weapon system is used, the node will only open fire if the weapons are able to hit close enough to the target\. Otherwise normal firing rules are applied\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-flyshoot-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-flyshoot-parameters}
 
 **useSecondaryWeapon**  
 Boolean indicating whether or not the secondary weapon system \(such as rocket launchers\) should be used\. Default is 0\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-flyshoot-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-flyshoot-success}
 
 The node does not SUCCEED or FAIL\. Once executed, the AI agent continues to shoot until forced to terminate\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-flyshoot-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-flyshoot-example}
 
 ```
 <FlyShoot useSecondaryWeapon="1" />
 ```
 
-## WaitAlignedWithAttentionTarget<a name="ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget"></a>
+## WaitAlignedWithAttentionTarget {#ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget}
 
 Waits until the AI agent is facing its attention target\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-parameters}
 
 **toleranceDegrees**  
 Maximum angle \(in degrees\) between the attention target and the forward direction of the AI agent to consider the AI agent to be "facing" the attention target\. Allowed values include the range \[0\.0,180\.0\]\. Default is 20\.0\. 
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-success}
 
 The node SUCCEEDS if the angle between the AI agent's forward direction and its attention target is within the allowed range\. The node FAILS if the AI agent has no attention target\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-waitalignedwithattentiontarget-example}
 
 ```
 <WaitAlignedWithAttentionTarget toleranceDegrees="40" />
 ```
 
-## Fly<a name="ai-scripting-mbt-nodes-flying-fly"></a>
+## Fly {#ai-scripting-mbt-nodes-flying-fly}
 
 Allows an AI agent to fly around by following a path\.  
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-fly-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-fly-parameters}
 
 **desiredSpeed**  
 Speed of movement \(in meters per second\) along the path to move along the path\. Default is 15\.0\.
@@ -106,17 +106,17 @@ Distance \(in meters\) from the end of the path that this node should start send
 **goToRefPoint**  
 Boolean indicating whether or not the current reference point should be appended to the end of the path\. Default is 0\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-fly-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-fly-success}
 
 The node SUCCEEDS if the AI agent reached the end of the path\. The node FAILS if no valid path was assigned to the AI agent\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-fly-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-fly-example}
 
 ```
 <Fly lookaheadDistance="25.0" pathRadius="10.0" decelerateDistance="20.0" pathEndDistance="1" desiredSpeed="15" maxStartDistanceAlongNonLoopingPath="30" loopAlongPath="0" goToRefPoint="1" startPathFromClosestLocation="1" />
 ```
 
-### Lua table settings<a name="ai-scripting-mbt-nodes-flying-fly-luatable"></a>
+### Lua table settings {#ai-scripting-mbt-nodes-flying-fly-luatable}
 
 The following properties in the AI agent's Lua script table can override the default XML tags\. This will allow for changes to be made at runtime through scripting\.
 
@@ -133,47 +133,47 @@ Upon arrival, the following events will be emitted:
 + ArrivedCloseToPathEnd
 + ArrivedAtPathEnd
 
-## FlyForceAttentionTarget<a name="ai-scripting-mbt-nodes-flying-flyforceattentiontarget"></a>
+## FlyForceAttentionTarget {#ai-scripting-mbt-nodes-flying-flyforceattentiontarget}
 
 Keeps an attention target on a flying vehicle by force\. The attention target is acquired during each tick of the node from the `Helicopter_ForcedTargetId` Lua script variable\. When the node is deactivated, a ForceAttentionTargetFinished event is emitted\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-flyforceattentiontarget-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-flyforceattentiontarget-parameters}
 
 None\. 
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-flyforceattentiontarget-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-flyforceattentiontarget-success}
 
 The node does not SUCCEED or FAIL\. Once executed, it continues to force the attention target until deactivation\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-flyforceattentiontarget-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-flyforceattentiontarget-example}
 
 ```
 <FlyForceAttentionTarget />
 ```
 
-## FlyAimAtCombatTarget<a name="ai-scripting-mbt-nodes-flying-flyaimatcombattarget"></a>
+## FlyAimAtCombatTarget {#ai-scripting-mbt-nodes-flying-flyaimatcombattarget}
 
 Aims a flying AI agent at its target, taking into account special aiming adjustments for weapons\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-flyaimatcombattarget-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-flyaimatcombattarget-parameters}
 
 None\. 
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-flyaimatcombattarget-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-flyaimatcombattarget-success}
 
 The node does not SUCCEED or FAIL\. Once executed, it continues to force the AI agent to rotate its body towards the attention target until termination\. 
 
-### Example<a name="ai-scripting-mbt-nodes-flying-flyaimatcombattarget-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-flyaimatcombattarget-example}
 
 ```
 <FlyAimAtCombatTarget />
 ```
 
-## HeavyShootMortar<a name="ai-scripting-mbt-nodes-flying-heavyshootmortar"></a>
+## HeavyShootMortar {#ai-scripting-mbt-nodes-flying-heavyshootmortar}
 
 Controls shooting the mortar \(or Heavy X\-Pak\) weapon\. It tries to simplify and centralize the pre\-condition check and initialization of the weapon, plus re\-selection of the primary weapon\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-heavyshootmortar-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-heavyshootmortar-parameters}
 
 **to**  
 \(Optional\) Shooting target\. Allowed values include:   
@@ -194,24 +194,24 @@ Controls shooting the mortar \(or Heavy X\-Pak\) weapon\. It tries to simplify a
 **minAllowedDistanceFromTarget**  
 \(Optional\) Minimum distance \(in meters\) to the target required to start shooting\. Default is 10\.0\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-heavyshootmortar-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-heavyshootmortar-success}
 
 The node FAILS if the weapon is closer to the target than the value of `minAllowedDistanceFromTarget`\. The node FAILS if there are obstructions less than two meters in front of the weapon; a cylinder check is done to avoid this\. The node FAILS if the timeout is reached\. The node SUCCEEDS if the shooting SUCCEEDS\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-heavyshootmortar-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-heavyshootmortar-example}
 
 ```
 <HeavyShootMortar to="RefPoint" fireMode="Charge" aimingTimeBeforeShooting="2" timeout="7" />
 ```
 
-## SquadScope<a name="ai-scripting-mbt-nodes-flying-squadscope"></a>
+## SquadScope {#ai-scripting-mbt-nodes-flying-squadscope}
 
 Makes execution of a child node conditional on adding the AI agent to a squad scope\. Squads allow a limited number of concurrent users\. 
 
 **Note**  
 The dynamic squad system uses the AI system's cluster detector\. This tool is used with `AISquadManager` to group AI agents into dynamic squads\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-squadscope-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-squadscope-parameters}
 
 **name**  
 Name of the squad scope to enter\.
@@ -219,11 +219,11 @@ Name of the squad scope to enter\.
 **allowedConcurrentUsers**  
 \(Optional\) Maximum number of simultaneous users allowed in the specified squad scope\. Default is 1\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-squadscope-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-squadscope-success}
 
 The node SUCCEEDS when the child SUCCEEDS\. The node FAILS if the AI agent can't enter the squad scope or if the child FAILS\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-squadscope-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-squadscope-example}
 
 ```
 <SquadScope name="SomeScopeName" allowedConcurrentUsers="5">
@@ -231,36 +231,36 @@ The node SUCCEEDS when the child SUCCEEDS\. The node FAILS if the AI agent can't
 </SquadScope>
 ```
 
-## SendSquadEvent<a name="ai-scripting-mbt-nodes-flying-sendsquadevent"></a>
+## SendSquadEvent {#ai-scripting-mbt-nodes-flying-sendsquadevent}
 
 Sends an event to squad members only\. 
 
 **Note**  
 The dynamic squad system uses the AI system's cluster detector\. This tool is used with `AISquadManager` to group AI agents into dynamic squads\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-sendsquadevent-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-sendsquadevent-parameters}
 
 **name**  
 Name of the event to be sent\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-sendsquadevent-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-sendsquadevent-success}
 
 The node always SUCCEEDS after sending the event\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-sendsquadevent-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-sendsquadevent-example}
 
 ```
 <SendSquadEvent name="SomeEventName" />
 ```
 
-## IfSquadCount<a name="ai-scripting-mbt-nodes-flying-ifsquadcount"></a>
+## IfSquadCount {#ai-scripting-mbt-nodes-flying-ifsquadcount}
 
 Makes execution of a child node conditional on whether or not the number of squad members meets a specified condition\. Although all parameters are optional, at least one parameter must be used\.
 
 **Note**  
 The dynamic squad system uses the AI system's cluster detector\. This tool is used with `AISquadManager` to group AI agents into dynamic squads\.
 
-### Parameters<a name="ai-scripting-mbt-nodes-flying-ifsquadcount-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-flying-ifsquadcount-parameters}
 
 **isGreaterThan**  
 \(Optional\) Condition statement used to test whether the number of squad members exceeds a specified value\.
@@ -271,11 +271,11 @@ The dynamic squad system uses the AI system's cluster detector\. This tool is us
 **equals**  
 \(Optional\) Condition statement used to test whether the number of squad members exactly equals a specified value\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-flying-ifsquadcount-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-flying-ifsquadcount-success}
 
 The node SUCCEEDS if the number of squad members satisfies the specified condition statement, and FAILS if not\.
 
-### Example<a name="ai-scripting-mbt-nodes-flying-ifsquadcount-example"></a>
+### Example {#ai-scripting-mbt-nodes-flying-ifsquadcount-example}
 
 ```
 <IfSquadCount isGreaterThan="1">

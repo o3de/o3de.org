@@ -3,13 +3,13 @@ description: ' Use dynamic components together with the layout components and sc
   box components to display dynamic content in a game UI in &ALY;. '
 title: Dynamic Components
 ---
-# Dynamic Components<a name="ui-editor-components-dynamic"></a>
+# Dynamic Components {#ui-editor-components-dynamic}
 
 Dynamic components work together with [ Layout](/docs/userguide/ui/editor/components-layout.md) components and the [Scroll Box](/docs/userguide/ui/editor/components-scrollbox.md) component to display dynamic content in the user interface\.
 
 To see in\-game examples of completed canvases with dynamic components, open the level **UiFeatures** in the project **SamplesProject**\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Dynamic Components**\. You can view examples of different types of dynamic layouts and scroll boxes\. Press **Esc** to exit the game\.
 
-## DynamicLayout<a name="ui-editor-components-dynamic-layout"></a>
+## DynamicLayout {#ui-editor-components-dynamic-layout}
 
 To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/userguide/ui/editor/components-layout-column.md), [**LayoutRow**](/docs/userguide/ui/editor/components-layout-row.md), or [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) component\. With the **DynamicLayout** component, you can change the number of children of the layout element at run time\. 
 
@@ -39,7 +39,7 @@ For a [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) elem
 
    This image serves as the prototype element that will be cloned and filled with dynamic content\.
 
-## DynamicScrollBox<a name="ui-editor-components-dynamic-scrollbox"></a>
+## DynamicScrollBox {#ui-editor-components-dynamic-scrollbox}
 
 To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component\. With the **DynamicScrollBox** component, you can change the number of children of the scroll box’s element at run time\. 
 
@@ -65,13 +65,13 @@ The **DynamicScrollBox** component automatically positions its children and resi
 
 The **DynamicScrollBox** component uses a bus called `UiDynamicScrollBoxDataBus` to retrieve the number of children that the content element should have\. It also uses a bus called `Ui DynamicScrollBoxElementNotificationBus` to notify when a child element is about to become visible\. This is where you set up the child element with dynamic content\. To do this, you must create and add to the scroll box element a custom component that implements these two buses\.
 
-## EBus Interface<a name="ui-editor-components-dynamic-bus-interface"></a>
+## EBus Interface {#ui-editor-components-dynamic-bus-interface}
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### UiDynamicScrollBoxDataBus:GetNumElements<a name="ui-editor-components-ebus-uidynamicscrollboxdatabus"></a>
+### UiDynamicScrollBoxDataBus:GetNumElements {#ui-editor-components-ebus-uidynamicscrollboxdatabus}
 
 Implement this bus to provide a dynamic scroll box the number of children it should clone\.
 
@@ -83,7 +83,7 @@ None
 **Return**  
 Number of children to clone\.
 
-### Ui DynamicScrollBoxElementNotificationBus:OnElementBecomingVisible<a name="ui-editor-components-ebus-ui-dynamicscrollboxelementnotificationbus"></a>
+### Ui DynamicScrollBoxElementNotificationBus:OnElementBecomingVisible {#ui-editor-components-ebus-ui-dynamicscrollboxelementnotificationbus}
 
 Implement this bus to receive notifications when elements of a dynamic scroll box are about to become visible\.
 

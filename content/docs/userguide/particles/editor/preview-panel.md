@@ -2,7 +2,7 @@
 description: ' Use the Preview panel to view your particle effect in the &ALY; &particle-editor;. '
 title: Using the Preview Panel
 ---
-# Using the Preview Panel<a name="particle-editor-preview-panel"></a>
+# Using the Preview Panel {#particle-editor-preview-panel}
 
 You can use the **Preview** panel in the **Particle Editor** to view the particle effects\.
 

@@ -3,7 +3,7 @@ description: ' Use AutoMerged settings to define how grass responds to wind in y
   &ALY; environment. '
 title: Using AutoMerged Wind Bending Effects
 ---
-# Using AutoMerged Wind Bending Effects<a name="vegetation-bending-automerged-intro"></a>
+# Using AutoMerged Wind Bending Effects {#vegetation-bending-automerged-intro}
 
 
 ****  
@@ -27,6 +27,6 @@ When AutoMerged is enabled, touch bending, vertex colors, and detail bending set
 1. Select the **AutoMerged** check box, and adjust the following parameter values:
    + **Stiffness** – Defines the stiffness of the vegetation
    + **Damping** – Specifies the amount of damping on the bending motion
-   + **AirResistance**–\- Specifies the amount of bending similar to the **Bending** parameter used for [Setting the Detail Bending Parameter](/docs/userguide/vegetation/bending-detail-intro.md#vegetation-bending-detail-params)\.
+   + **AirResistance**–\- Specifies the amount of bending similar to the **Bending** parameter used for [Setting the Detail Bending Parameter](/docs/userguide/vegetation/bending-detail-intro#vegetation-bending-detail-params)\.
 
 The four AutoMerged parameters together define the amount and type of bending motions the vegetation object displays in reaction to wind and breezes\. For more information, see, [Adding Global Wind](/docs/userguide/weather/wind-global.md)\.

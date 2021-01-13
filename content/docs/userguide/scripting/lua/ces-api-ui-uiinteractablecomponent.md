@@ -3,15 +3,15 @@ description: ' Use the UIInteractableComponent to control elements that respond 
   user input in &ALYlong;. '
 title: UIInteractableComponent
 ---
-# UIInteractableComponent<a name="lua-scripting-ces-api-ui-uiinteractablecomponent"></a>
+# UIInteractableComponent {#lua-scripting-ces-api-ui-uiinteractablecomponent}
 
 Controls elements that respond to user input\.
 
-## UiInteractableBus<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus"></a>
+## UiInteractableBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus}
 
 Services messages for the `UiInteractableComponent`\.
 
-### GetIsAutoActivationEnabled<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-getisautoactivationenabled"></a>
+### GetIsAutoActivationEnabled {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-getisautoactivationenabled}
 
 Returns true if automatic activation is enabled; false otherwise\.
 
@@ -21,7 +21,7 @@ Returns true if automatic activation is enabled; false otherwise\.
 bool GetIsAutoActivationEnabled ()
 ```
 
-### IsHandlingEvents<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-ishandlingevents"></a>
+### IsHandlingEvents {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-ishandlingevents}
 
 Returns true if event handling is enabled; false otherwise\.
 
@@ -31,7 +31,7 @@ Returns true if event handling is enabled; false otherwise\.
 bool IsHandlingEvents()
 ```
 
-### SetIsAutoActivationEnabled<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-setisautoactivationenabled"></a>
+### SetIsAutoActivationEnabled {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-setisautoactivationenabled}
 
 Sets whether automatic activation is enabled\.
 
@@ -41,7 +41,7 @@ Sets whether automatic activation is enabled\.
 void SetIsAutoActivationEnabled (bool isEnabled)
 ```
 
-### SetIsHandlingEvents<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-setishandlingevents"></a>
+### SetIsHandlingEvents {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablebus-setishandlingevents}
 
 Sets whether event handling is enabled\.
 
@@ -51,11 +51,11 @@ Sets whether event handling is enabled\.
 void SetIsHandlingEvents (bool isHandlingEvents) 
 ```
 
-## UiInteractableActionsBus<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus"></a>
+## UiInteractableActionsBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus}
 
 Services actions for the `UiInteractableComponent`\.
 
-### GetHoverEndActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-gethoverendactionname"></a>
+### GetHoverEndActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-gethoverendactionname}
 
 Returns the current hover end action name\.
 
@@ -65,7 +65,7 @@ Returns the current hover end action name\.
 AZStd::string& GetHoverEndActionName()
 ```
 
-### GetHoverStartActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-gethoverstartactionname"></a>
+### GetHoverStartActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-gethoverstartactionname}
 
 Returns the current hover start action name\.
 
@@ -75,7 +75,7 @@ Returns the current hover start action name\.
 AZStd::string& GetHoverStartActionName()
 ```
 
-### GetPressedActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-getpressedactionname"></a>
+### GetPressedActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-getpressedactionname}
 
 Returns the pressed action name\.
 
@@ -85,7 +85,7 @@ Returns the pressed action name\.
 AZStd::string& GetPressedActionName()
 ```
 
-### GetReleasedActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-getreleasedactionname"></a>
+### GetReleasedActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-getreleasedactionname}
 
 Returns the released action name\.
 
@@ -95,7 +95,7 @@ Returns the released action name\.
 AZStd::string& GetReleasedActionName()
 ```
 
-### SetHoverEndActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-sethoverendactionname"></a>
+### SetHoverEndActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-sethoverendactionname}
 
 Sets the hover end action name\.
 
@@ -105,7 +105,7 @@ Sets the hover end action name\.
 SetHoverEndActionName(const AZStd::string& actionName)
 ```
 
-### SetHoverStartActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-sethoverstartactionname"></a>
+### SetHoverStartActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-sethoverstartactionname}
 
 Sets the hover start action name\.
 
@@ -115,7 +115,7 @@ Sets the hover start action name\.
 SetHoverStartActionName(const AZStd::string& actionName)
 ```
 
-### SetPressedActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-setpressedactionname"></a>
+### SetPressedActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-setpressedactionname}
 
 Sets the pressed action name\.
 
@@ -125,7 +125,7 @@ Sets the pressed action name\.
 SetPressedActionName(const AZStd::string& actionName)
 ```
 
-### SetReleasedActionName<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-setreleasedactionname"></a>
+### SetReleasedActionName {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus-setreleasedactionname}
 
 Sets the released action name\.
 
@@ -135,11 +135,11 @@ Sets the released action name\.
 SetReleasedActionName(const AZStd::string& actionName)
 ```
 
-## UiInteractableStatesBus<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus"></a>
+## UiInteractableStatesBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus}
 
 Services states for the `UiInteractableComponent`\.
 
-### GetStateAlpha<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatealpha"></a>
+### GetStateAlpha {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatealpha}
 
 Returns the alpha to be used for the specified target when the interactable element is in the specified state\.
 
@@ -149,7 +149,7 @@ Returns the alpha to be used for the specified target when the interactable elem
 float GetStateAlpha(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### GetStateColor<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatecolor"></a>
+### GetStateColor {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatecolor}
 
 Returns the color to be used for the specified target when the interactable element is in the specified state\.
 
@@ -171,7 +171,7 @@ enum eUiInteractableState
     };
 ```
 
-### GetStateFontEffectIndex<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatefonteffectindex"></a>
+### GetStateFontEffectIndex {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatefonteffectindex}
 
 Returns the font effect to be used for the specified target when the interactable element is in the specified state\.
 
@@ -181,7 +181,7 @@ Returns the font effect to be used for the specified target when the interactabl
 unsigned int GetStateFontEffectIndex(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### GetStateFontPathname<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatefontpathname"></a>
+### GetStateFontPathname {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatefontpathname}
 
 Returns the font path to be used for the specified target when the interactable element is in the specified state\.
 
@@ -191,7 +191,7 @@ Returns the font path to be used for the specified target when the interactable 
 AZStd::string GetStateFontPathname(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### GetStateSpritePathname<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatespritepathname"></a>
+### GetStateSpritePathname {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-getstatespritepathname}
 
 Returns the sprite path to be used for the specified target when the interactable element is in the specified state\.
 
@@ -201,7 +201,7 @@ Returns the sprite path to be used for the specified target when the interactabl
 AZStd::string GetStateSpritePathname(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### HasStateAlpha<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatealpha"></a>
+### HasStateAlpha {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatealpha}
 
 Returns true if the interactable element has an alpha action for the specified state and target combination\.
 
@@ -211,7 +211,7 @@ Returns true if the interactable element has an alpha action for the specified s
 bool HasStateAlpha(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### HasStateColor<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatecolor"></a>
+### HasStateColor {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatecolor}
 
 Returns true if the interactable element has a color action for the specified state and target combination\.
 
@@ -221,7 +221,7 @@ Returns true if the interactable element has a color action for the specified st
 bool HasStateColor(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### HasStateFont<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatefont"></a>
+### HasStateFont {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatefont}
 
 Returns true if the interactable element has a font action for the specified state and target combination\.
 
@@ -231,7 +231,7 @@ Returns true if the interactable element has a font action for the specified sta
 bool HasStateFont(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### HasStateSprite<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatesprite"></a>
+### HasStateSprite {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-hasstatesprite}
 
 Returns true if the interactable element has a sprite action for the specified state and target combination\.
 
@@ -241,7 +241,7 @@ Returns true if the interactable element has a sprite action for the specified s
 bool HasStateSprite(eUiInteractableState state, AZ::EntityId target)
 ```
 
-### SetStateAlpha<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatealpha"></a>
+### SetStateAlpha {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatealpha}
 
 Sets the alpha to be used for the specified target when the interactable element is in the specified state\. If the interactable element already has an alpha action for this state and target combination, then `SetStateAlpha` replaces the alpha action\.
 
@@ -251,7 +251,7 @@ Sets the alpha to be used for the specified target when the interactable element
 void SetStateAlpha(eUiInteractableState state, AZ::EntityId target, float alpha)
 ```
 
-### SetStateColor<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatecolor"></a>
+### SetStateColor {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatecolor}
 
 Sets the color to be used for the specified target when the interactable element is in the specified state\. If the interactable element already has a color action for the current state and target combination, then `SetStateColor` replaces the color action\.
 
@@ -261,7 +261,7 @@ Sets the color to be used for the specified target when the interactable element
 void SetStateColor(eUiInteractableState state, AZ::EntityId target, const AZ::Color& color)
 ```
 
-### SetStateFont<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatefont"></a>
+### SetStateFont {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatefont}
 
 Sets the font to be used for the specified target when the interactable element is in the specified state\. If the interactable element already has a font action for the specified state and target combination, then `SetStateFont` replaces the font action\.
 
@@ -271,7 +271,7 @@ Sets the font to be used for the specified target when the interactable element 
 void SetStateFont(eUiInteractableState state, AZ::EntityId target, const AZStd::string& fontPathname, unsigned int fontEffectIndex)
 ```
 
-### SetStateSpritePathname<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatespritepathname"></a>
+### SetStateSpritePathname {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablestatesbus-setstatespritepathname}
 
 Sets the sprite path to be used for the specified target when the interactable element is in the specified state\. If the interactable element already has a sprite action for the specified state and target combination, then `SetStateSpritePathname` replaces the sprite action\.
 
@@ -281,11 +281,11 @@ Sets the sprite path to be used for the specified target when the interactable e
 void SetStateSpritePathname(eUiInteractableState state, AZ::EntityId target, const AZStd::string& spritePath) 
 ```
 
-## UiInteractableNotificationBus<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus"></a>
+## UiInteractableNotificationBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus}
 
 Services notifications for the `UIInteractableComponent`\.
 
-### OnHoverEnd<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onhoverend"></a>
+### OnHoverEnd {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onhoverend}
 
 Called on hover end\.
 
@@ -295,7 +295,7 @@ Called on hover end\.
 void OnHoverEnd()
 ```
 
-### OnHoverStart<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onhoverstart"></a>
+### OnHoverStart {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onhoverstart}
 
 Called on hover start\.
 
@@ -305,7 +305,7 @@ Called on hover start\.
 void OnHoverStart()
 ```
 
-### OnPressed<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onpressed"></a>
+### OnPressed {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onpressed}
 
 Called when an element has been pressed\.
 
@@ -315,7 +315,7 @@ Called when an element has been pressed\.
 void OnPressed()
 ```
 
-### OnReleased<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onreleased"></a>
+### OnReleased {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onreleased}
 
 Called when an element has been released\.
 
@@ -325,7 +325,7 @@ Called when an element has been released\.
 void OnReleased()
 ```
 
-### OnReceivedHoverByNavigatingFromDescendant<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onreceivedhoverbynavigatingfromdescendant"></a>
+### OnReceivedHoverByNavigatingFromDescendant {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus-onreceivedhoverbynavigatingfromdescendant}
 
 Called when the element receives the hover by being navigated to from a descendant\.
 
@@ -335,11 +335,11 @@ Called when the element receives the hover by being navigated to from a descenda
 void OnReceivedHoverByNavigatingFromDescendant(AZ::EntityId descendantEntityId)
 ```
 
-## UiNavigationBus<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus"></a>
+## UiNavigationBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus}
 
 Services navigation for the `UIInteractableComponent`\.
 
-### GetNavigationMode<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getnavigationmode"></a>
+### GetNavigationMode {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getnavigationmode}
 
 Returns the navigation mode\.
 
@@ -360,7 +360,7 @@ enum eUiNavigationMode
     };
 ```
 
-### GetOnDownEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getondownentity"></a>
+### GetOnDownEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getondownentity}
 
 Returns the ID of the entity that receives focus when down is pressed\.
 
@@ -370,7 +370,7 @@ Returns the ID of the entity that receives focus when down is pressed\.
 AZ::EntityId GetOnDownEntity()
 ```
 
-### GetOnLeftEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonleftentity"></a>
+### GetOnLeftEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonleftentity}
 
 Returns the ID of the entity to receive focus when left is pressed\.
 
@@ -380,7 +380,7 @@ Returns the ID of the entity to receive focus when left is pressed\.
 AZ::EntityId GetOnLeftEntity()
 ```
 
-### GetOnRightEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonrightentity"></a>
+### GetOnRightEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonrightentity}
 
 Returns the ID of the entity to receive focus when right is pressed\.
 
@@ -390,7 +390,7 @@ Returns the ID of the entity to receive focus when right is pressed\.
 AZ::EntityId GetOnRightEntity()
 ```
 
-### GetOnUpEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonupentity"></a>
+### GetOnUpEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-getonupentity}
 
 Returns the ID of the entity that receives focus when up is pressed\.
 
@@ -400,7 +400,7 @@ Returns the ID of the entity that receives focus when up is pressed\.
 AZ::EntityId GetOnUpEntity()
 ```
 
-### SetNavigationMode<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setnavigationmode"></a>
+### SetNavigationMode {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setnavigationmode}
 
 Sets the navigation mode\.
 
@@ -410,7 +410,7 @@ Sets the navigation mode\.
 void SetNavigationMode(eUiNavigationMode navigationMode)
 ```
 
-### SetOnDownEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setondownentity"></a>
+### SetOnDownEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setondownentity}
 
 Sets the entity to receive focus when down is pressed\.
 
@@ -420,7 +420,7 @@ Sets the entity to receive focus when down is pressed\.
 void SetOnDownEntity(AZ::EntityId entityId)
 ```
 
-### SetOnLeftEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonleftentity"></a>
+### SetOnLeftEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonleftentity}
 
 Sets the entity to receive focus when left is pressed\.
 
@@ -430,7 +430,7 @@ Sets the entity to receive focus when left is pressed\.
 void SetOnLeftEntity(AZ::EntityId entityId)
 ```
 
-### SetOnRightEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonrightentity"></a>
+### SetOnRightEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonrightentity}
 
 Sets the entity to receive focus when right is pressed\.
 
@@ -440,7 +440,7 @@ Sets the entity to receive focus when right is pressed\.
 void SetOnRightEntity(AZ::EntityId entityId)
 ```
 
-### SetOnUpEntity<a name="lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonupentity"></a>
+### SetOnUpEntity {#lua-scripting-ces-api-ui-uiinteractablecomponent-uinavigationbus-setonupentity}
 
 Sets the entity to receive focus when up is pressed\.
 

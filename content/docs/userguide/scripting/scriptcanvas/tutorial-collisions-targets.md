@@ -4,7 +4,7 @@ description: ' Create a sphere that shoots projectiles at a target with &script-
 title: '&script-canvas; Tutorial: Shooting a Target by Spawning Entities and Detecting
   Collisions'
 ---
-# Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions<a name="script-canvas-tutorial-collisions-targets"></a>
+# Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions {#script-canvas-tutorial-collisions-targets}
 
 This tutorial builds on what you learned in the previous two tutorials\. In the following tutorial, you create a controllable sphere that shoots projectiles at a target\.
 
@@ -18,7 +18,7 @@ This involves several tasks:
 + Set up collision
 + Add tag filtering
 
-## Prerequisites<a name="script-canvas-tutorial-collisions-target-prerequisites"></a>
+## Prerequisites {#script-canvas-tutorial-collisions-target-prerequisites}
 + Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md) and [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/userguide/scripting/scriptcanvas/tutorial-trigger-areas.md)\.
 
 **Topics**
@@ -32,7 +32,7 @@ This involves several tasks:
 + [Step 7: Create a Target Entity](#script-canvas-tutorial-collisions-targets-step-seven)
 + [Step 8: Add Logic to the Projectile to Destroy Target Entities](#script-canvas-tutorial-collisions-targets-step-eight)
 
-## Step 1: Set Up a Projectile Entity<a name="script-canvas-tutorial-collisions-targets-step-one"></a>
+## Step 1: Set Up a Projectile Entity {#script-canvas-tutorial-collisions-targets-step-one}
 
 To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rigid-body.html)** component, **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)**, and **[Script Canvas](/docs/userguide/components/script-canvas.md)** components\.
 
@@ -72,7 +72,7 @@ To create a projectile entity, create an entity and then add the **[Mesh](/docs/
 **Example**    
 ![\[The components and properties for the Projectile entity.\]](/images/userguide/scripting/script-canvas/script-canvas-entity-projectile.png)
 
-## Step 2: Create a Script to Propel the Projectile Forward<a name="script-canvas-tutorial-collisions-targets-step-two"></a>
+## Step 2: Create a Script to Propel the Projectile Forward {#script-canvas-tutorial-collisions-targets-step-two}
 
 Now that you've set up a projectile, you can create a script to propel the projectile forward when it spawns\.
 
@@ -128,7 +128,7 @@ Now that you've set up a projectile, you can create a script to propel the proje
 
 1. In the **Script Canvas** editor, choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 
-## Step 3: Save the Projectile Entity as a Slice<a name="script-canvas-tutorial-collisions-targets-step-three"></a>
+## Step 3: Save the Projectile Entity as a Slice {#script-canvas-tutorial-collisions-targets-step-three}
 
 Now that you've created a projectile script, you can save the projectile entity as a slice\.
 
@@ -148,7 +148,7 @@ Now that you've created a projectile script, you can save the projectile entity 
 
 1. In the **Entity Outliner**, right\-click **Projectile** and then click **Delete**\. Because you will spawn the projectile entity dynamically from your player script, you no longer need the entity in your scene\.
 
-## Step 4: Set Up the Player Entity to Spawn the Slice<a name="script-canvas-tutorial-collisions-targets-step-four"></a>
+## Step 4: Set Up the Player Entity to Spawn the Slice {#script-canvas-tutorial-collisions-targets-step-four}
 
 Now that you've created a slice, you can set up your **Player** entity to spawn the slice\.
 
@@ -168,7 +168,7 @@ Now that you've created a slice, you can set up your **Player** entity to spawn 
 1. Verify that the **spawner** entity looks like the following\.  
 ![\[The components and properties for the spawner entity.\]](/images/userguide/scripting/script-canvas/script-canvas-entity-spawner.png)
 
-## Step 5: Set Up the Input Binding for the Projectile<a name="script-canvas-tutorial-collisions-targets-step-five"></a>
+## Step 5: Set Up the Input Binding for the Projectile {#script-canvas-tutorial-collisions-targets-step-five}
 
 Now that you've added the **Spawner** component, you can set up the input binding to shoot the projectile when you press the **Spacebar**\.
 
@@ -197,7 +197,7 @@ Now that you've added the **Spawner** component, you can set up the input bindin
 
    1. In the **Edit Asset** window, choose **File**, **Save**\.
 
-## Step 6: Add Logic to the Player Script to Spawn the Projectile<a name="script-canvas-tutorial-collisions-targets-step-six"></a>
+## Step 6: Add Logic to the Player Script to Spawn the Projectile {#script-canvas-tutorial-collisions-targets-step-six}
 
 Now that you've set up the input binding, you can add logic to the **Player** script to spawn the projectile when you press the **Spacebar**\.
 
@@ -246,7 +246,7 @@ Now that you've set up the input binding, you can add logic to the **Player** sc
 
    1. From **Delay**, drag the **Out** pin to connect it to the **Reset** pin of the **Once** node\.
 **Note**  
-Node execution always flows from the left side to the right side of a node\. For more information, see [Inputs, Outputs, and Connection Types](/docs/userguide/scripting/scriptcanvas/nodes-understanding.md#script-canvas-pins-and-connections)\.
+Node execution always flows from the left side to the right side of a node\. For more information, see [Inputs, Outputs, and Connection Types](/docs/userguide/scripting/scriptcanvas/nodes-understanding#script-canvas-pins-and-connections)\.
 
 1. Verify that your `player.scriptcanvas` graph looks like the following\.  
 **Example**    
@@ -266,7 +266,7 @@ Node execution always flows from the left side to the right side of a node\. For
 
 1. When you are done testing your script, press **Esc**\.
 
-## Step 7: Create a Target Entity<a name="script-canvas-tutorial-collisions-targets-step-seven"></a>
+## Step 7: Create a Target Entity {#script-canvas-tutorial-collisions-targets-step-seven}
 
 Now that the **Player** entity shoots projectiles, you can add a **Target** entity for the **Player** entity to destroy\.
 
@@ -294,7 +294,7 @@ Now that the **Player** entity shoots projectiles, you can add a **Target** enti
 **Example**    
 ![\[Example components attached to the Target entity.\]](/images/userguide/scripting/script-canvas/script-canvas-target-entity-component-properties.png)
 
-## Step 8: Add Logic to the Projectile to Destroy Target Entities<a name="script-canvas-tutorial-collisions-targets-step-eight"></a>
+## Step 8: Add Logic to the Projectile to Destroy Target Entities {#script-canvas-tutorial-collisions-targets-step-eight}
 
 Now that you've set up the **Target** entity, you can add logic to the projectile to destroy entities that have the **Target** tag\.
 

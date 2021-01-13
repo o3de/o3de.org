@@ -2,7 +2,7 @@
 description: ' Create NVIDIA Blast assets in Houdini for &ALYlong;. '
 title: Create assets for NVIDIA Blast
 ---
-# Create assets for NVIDIA Blast<a name="nvidia-blast-create-blast-asset"></a>
+# Create assets for NVIDIA Blast {#nvidia-blast-create-blast-asset}
 
 
 ****  
@@ -20,7 +20,7 @@ These steps can be applied to any mesh\. For best results, the mesh should be fu
 + [Fracture a mesh for NVIDIA Blast](#nvidia-blast-fracture-mesh)
 + [Export an asset for NVIDIA Blast](#nvidia-blast-export)
 
-## Fracture a mesh for NVIDIA Blast<a name="nvidia-blast-fracture-mesh"></a>
+## Fracture a mesh for NVIDIA Blast {#nvidia-blast-fracture-mesh}
 
 **To fracture a mesh**
 
@@ -77,7 +77,7 @@ With Houdini's geometry select mode set to primitive, you can press the **S** ke
    1. In the **Fracture Single** SOP, specify a chunk to fracture\. In the example below, **chunk1** \(the rabbit's face\) is specified in the **Group to fracture** parameter using the path **root/chunk1**\.   
 ![\[Fracture layer in Houdini.\]](/images/userguide/physx/blast/ui-blast-houdini-fracture-layer.png)
 
-## Export an asset for NVIDIA Blast<a name="nvidia-blast-export"></a>
+## Export an asset for NVIDIA Blast {#nvidia-blast-export}
 
 With the mesh fractured, you must export `.fbx` and `.blast` assets to be processed by **Asset Processor** for use in Amazon Lumberyard\. 
 

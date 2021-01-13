@@ -3,7 +3,7 @@ description: ' Use the Navigation Area component with the Polygon Prism Shape co
   to create navigation meshes in &ALYlong;. '
 title: Navigation Area
 ---
-# Navigation Area<a name="component-nav-area"></a>
+# Navigation Area {#component-nav-area}
 
 The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System\. You use this component with the **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)** component, which defines the volume of the navigation area\.
 
@@ -18,7 +18,7 @@ When you create a **Navigation Area**, all areas that are traversable by the spe
 
 You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** component to fine\-tune AI accessibility\.
 
-**To add a Navigation Area**<a name="create-navigation-area"></a>
+**To add a Navigation Area** {#create-navigation-area}
 
 1. In the Viewport, near where you want to create your navigation area, right\-click and choose **Create entity**\.
 
@@ -29,12 +29,12 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
    Next to **\[0\]**, select **MediumSizedCharacters**\. This property defines the [types of agents](#component-nav-area-properties) that can navigate in this area\.
 
-1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism.md#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism.md#component-polygon-prism-height-adjustment) if necessary\.
+1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary\.
 
-   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars.md#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.  
+   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.  
 ![\[Enable Show Navigation Areas and View Agent Type in Lumberyard Editor.\]](/images/userguide/component/component-nav-area-1.1.png)
 
-**To view the generated Navigation Area mesh**<a name="render-navigation-mesh"></a>
+**To view the generated Navigation Area mesh** {#render-navigation-mesh}
 
 1. In Lumberyard Editor, choose **Game**, **AI**, **Show Navigation Areas**\.
 
@@ -52,9 +52,9 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 + [Navigation Physics Integration](#component-nav-area-physics)
 + [NavigationAreaRequestBus EBus Interface](#component-nav-area-ebus)
 
-## Navigation Area Component Properties<a name="component-nav-area-properties"></a>
+## Navigation Area Component Properties {#component-nav-area-properties}
 
-The **Navigation Area** component has the following properties:<a name="component-nav-area-properties-agent-types"></a>
+The **Navigation Area** component has the following properties: {#component-nav-area-properties-agent-types}
 
 **Agent Types**  
 Specifies the types of AI that can traverse this navigation area\. These agent types are defined in `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml`\. To specify multiple agent types for this area, click the **\+** icon\.   
@@ -64,7 +64,7 @@ To define an agent type on your AI, see the [Navigation](/docs/userguide/compone
 **Exclusion**  
 When selected, creates a subtractive navigation area\. This creates a cutout within an existing navigation mesh\. For more information, see [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)\.
 
-## Navigating Around Static Objects<a name="component-nav-area-static-entities"></a>
+## Navigating Around Static Objects {#component-nav-area-static-entities}
 
 When Lumberyard creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\. 
 
@@ -82,7 +82,7 @@ The following example shows the same navigation mesh, but with the **Static** pr
 
 ![\[Navigation mesh creates an exclusion area around the boulder, because Static is selected on the boulder's Transform component\]](/images/userguide/component/component-nav-area-5.png)
 
-## Creating Navigation Mesh Exclusion Areas<a name="component-nav-area-exclusion"></a>
+## Creating Navigation Mesh Exclusion Areas {#component-nav-area-exclusion}
 
 You can use the **Navigation Area** component to manually create areas to exclude from the navigation mesh\. This means that the AI agents cannot traverse these areas\. To do this, you create a navigation area and select the **Exclusion** property, as shown in the following image\.
 
@@ -104,7 +104,7 @@ The following example shows a navigation mesh \(1\) and the same navigation mesh
 
 1. Shape the polygon to the preferred shape for the exclusion area\.
 
-## Navigation Physics Integration<a name="component-nav-area-physics"></a>
+## Navigation Physics Integration {#component-nav-area-physics}
 
 The navigation system builds the navigation mesh based on all the static physics colliders provided by the physics system, including terrain\. By default, both the CryPhysics and PhysX systems \(`AZ::Physics`\) are supported\. This can be changed with the **ai\_NavPhysicsMode** cvar:
 
@@ -118,15 +118,15 @@ Default: `1`
 **Physics integration details**  
 When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer issues a `WorldRequestBus::Overlap` static query to gather colliders within a bounding box\. Shape geometry is returned from the new `AZ::Shape::GetGeometry()` method\. PhysX colliders for terrain, shapes, and meshes will provide triangle data in an operation that acquires a PhysX scene read lock while retrieving geometry data\.
 
-## NavigationAreaRequestBus EBus Interface<a name="component-nav-area-ebus"></a>
+## NavigationAreaRequestBus EBus Interface {#component-nav-area-ebus}
 
 Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game\. 
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)
 
-### RefreshArea<a name="component-nav-area-ebus-refresharea"></a>
+### RefreshArea {#component-nav-area-ebus-refresharea}
 
-You can use the [PolygonPrismShapeComponentRequestBus](/docs/userguide/components/polygon-prism.md#component-polygon-prism-ebus-request) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
+You can use the [PolygonPrismShapeComponentRequestBus](/docs/userguide/components/polygon-prism#component-polygon-prism-ebus-request) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
 
 **Parameters**  
 None

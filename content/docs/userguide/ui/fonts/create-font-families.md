@@ -3,7 +3,7 @@ description: Combine multiple font assets to create a font family group to use i
   your game UI in &ALYlong;.
 title: Creating Font Families
 ---
-# Creating Font Families<a name="ui-fonts-create-font-families"></a>
+# Creating Font Families {#ui-fonts-create-font-families}
 
 You can combine multiple font assets into a single font family group\.
 
@@ -26,7 +26,7 @@ The UI system uses the font family definitions to determine which font asset to 
 + **Italic** – Font representing text with italic styling\.
 + **Bold\-Italic** – Font representing text with both bold and italic styling\.
 
-## Font Family File XML<a name="ui-fonts-fontfamily-xml"></a>
+## Font Family File XML {#ui-fonts-fontfamily-xml}
 
 To create a new font family file, you can create a new, empty plain text file and enter the contents, or you can modify an existing font family file\.
 
@@ -53,7 +53,7 @@ To create a new font family file, you can create a new, empty plain text file an
    </fontfamily>
    ```
 
-After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component\. To apply custom styling to text using the font family, see [Text Styling Markup](/docs/userguide/ui/editor/components-text.md#ui-editor-component-text-styling-markup)\.
+After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component\. To apply custom styling to text using the font family, see [Text Styling Markup](/docs/userguide/ui/editor/components-text#ui-editor-component-text-styling-markup)\.
 
 The `.fontfamily` file uses XML\. The UI system supports the following tags and attributes for the `.fontfamily` file:
 

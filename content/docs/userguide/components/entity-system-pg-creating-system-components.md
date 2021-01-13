@@ -2,7 +2,7 @@
 description: ' Learn how to create system components in &ALYlong;. '
 title: Creating System Components
 ---
-# Creating System Components<a name="component-entity-system-pg-creating-system-components"></a>
+# Creating System Components {#component-entity-system-pg-creating-system-components}
 
 System components are similar to other components in Lumberyard's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](/docs/userguide/modules/system-components.md) in the [AZ Modules](/docs/userguide/modules/s-intro.md) section\.
 
@@ -11,7 +11,7 @@ Like any Lumberyard [component](/docs/userguide/components/entity-system-create-
 When you author system components, follow the best practices for component authoring\. For example, your system components should use the following:
 + [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md) to expose their interfaces\.
 + [Reflection](/docs/userguide/components/entity-system-reflect-component.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/userguide/modules/system-entities-configuring.md)\.
-+ The same [AZ::Component Functions](/docs/userguide/components/entity-system-create-component.md#component-entity-system-create-component-az-functions) for activation and deactivation\.
++ The same [AZ::Component Functions](/docs/userguide/components/entity-system-create-component#component-entity-system-create-component-az-functions) for activation and deactivation\.
 
 **Important**  
 Just like game components, system components often provide request and notification buses\. However, because system components are global systems, they should not specify IDs for their buses like game components\. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components\.
@@ -20,7 +20,7 @@ Just like game components, system components often provide request and notificat
 + [Creating a System Component in a Gem](#component-entity-system-pg-creating-system-components-gem)
 + [Making a Component a System Component](#component-entity-system-pg-creating-system-components-defining)
 
-## Creating a System Component in a Gem<a name="component-entity-system-pg-creating-system-components-gem"></a>
+## Creating a System Component in a Gem {#component-entity-system-pg-creating-system-components-gem}
 
 Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\. 
 
@@ -29,7 +29,7 @@ When you create a system component as part of a gem, note the following requirem
 + Your `GemNameBus.h` file goes under the `lumberyard_version\dev\Gems\GemName\Code\Include\GemName\` directory\.
 + Your component source files go under the `lumberyard_version\dev\Gems\GemName\Code\Source\` directory\.
 
-### Example: HttpRequestorSystemComponent<a name="component-entity-system-pg-creating-system-components-gem-example"></a>
+### Example: HttpRequestorSystemComponent {#component-entity-system-pg-creating-system-components-gem-example}
 
 The [HttpRequestor gem](/docs/userguide/http-requestor-gem.md) makes asynchronous HTTP/HTTPS requests and returns data through a callback function that you provide\. The HttpRequestor gem uses the EBus for communication and provides all requests asynchronously\. The `HttpRequestorSystemComponent` is part of the HttpRequestor gem\. You can find the source code files for the gem under the `lumberyard_version\dev\Gems\HttpRequestor\Code\` directory\.
 
@@ -118,7 +118,7 @@ namespace HttpRequestor
 }
 ```
 
-## Making a Component a System Component<a name="component-entity-system-pg-creating-system-components-defining"></a>
+## Making a Component a System Component {#component-entity-system-pg-creating-system-components-defining}
 
 After you create the code for your component, add it to your project's system entity to make it a system component\.
 
@@ -165,7 +165,7 @@ After you create the code for your component, add it to your project's system en
    ...
    ```
 
-1. \(Optional\) Expose the system component to the [System Entity Editor](/docs/userguide/configurator/advanced.md#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\. 
+1. \(Optional\) Expose the system component to the [System Entity Editor](/docs/userguide/configurator/advanced#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\. 
 
    The following example is from `HttpRequestorSystemComponent.cpp`\.
 

@@ -2,7 +2,7 @@
 description: ' See the layout of the &script-canvas; editor in &ly-editor;. '
 title: '&script-canvas; Editor Interface'
 ---
-# Script Canvas Editor Interface<a name="script-canvas-editor-interface"></a>
+# Script Canvas Editor Interface {#script-canvas-editor-interface}
 
 You can open the **Script Canvas** editor from Lumberyard Editor\.
 
@@ -35,7 +35,7 @@ In the **Script Canvas** editor, you can do the following:
 
 1. In the **Node Inspector**, you can view and modify the properties for a selected node\.
 
-## Additional Tools<a name="script-canvas-other-menus-tools"></a>
+## Additional Tools {#script-canvas-other-menus-tools}
 
 **Script Canvas** editor has the following additional menus and tools\.
 

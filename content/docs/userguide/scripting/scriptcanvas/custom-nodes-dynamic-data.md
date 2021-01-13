@@ -3,7 +3,7 @@ description: ' Use dynamic data slots to enable a single node to process a varie
   of data types in &script-canvas;, &ALYlong;''s visual scripting system. '
 title: Dynamic Data Slots
 ---
-# Dynamic Data Slots<a name="script-canvas-custom-nodes-dynamic-data"></a>
+# Dynamic Data Slots {#script-canvas-custom-nodes-dynamic-data}
 
 There are cases where a single node can function on multiple different input types \(for example, the **Lerp Between** node can function on numbers and vector objects\)\. To reduce the number of unique nodes, you can use dynamic data slots\. Dynamic data slots enable a single node to handle a variety of data types\. At the same time, they allow restrictions on the data types that can be connected\.
 
@@ -29,11 +29,11 @@ The `ScriptCanvas_DynamicDataSlot` tag includes the following code gen attribute
 | DynamicGroup | Unifies a group of dynamically typed slots\. When one slot has a type, all slots in the group share the same type\. This attribute is useful for ensuring that passthrough values or operands all share a common type\. | 
 | RestrictedTypeContractTag | Restricts the data types that the dynamically typed slot accepts\. Takes an argument that is a list of supported data types\. | 
 
-## Important Notes about Groups<a name="script-canvas-custom-nodes-dynamic-data-important-notes-about-groups"></a>
+## Important Notes about Groups {#script-canvas-custom-nodes-dynamic-data-important-notes-about-groups}
 
 For the purposes of contract restrictions, the grouped slots act as a single unit\. If one slot doesn't allow a particular type, no slots in that group allow that type\. This behavior is because connection types are propagated through every member of a group and every group connected to that group\. This also applies to dynamic data slots that are connected to each other and any dynamic data slots that are connected but ungrouped\.
 
-### Chained Dynamic Types<a name="script-canvas-custom-nodes-dynamic-data-chained-dynamic-types"></a>
+### Chained Dynamic Types {#script-canvas-custom-nodes-dynamic-data-chained-dynamic-types}
 
 When dynamic types are connected, the receiving slot takes on the data type and restrictions of the connecting slot\.
 
@@ -43,7 +43,7 @@ When dynamic types are connected, the receiving slot takes on the data type and 
 
 Like dynamic groups, any pair of dynamically typed nodes that are linked share the same restrictions\. This includes any restrictions from the node group\. Additionally, the slots are usually in the most unrestricted state as possible\. Unless a display type gives a set of dynamically typed slots a type, the slots remain untyped\.
 
-## Adding Dynamic Data Slots Programmatically<a name="script-canvas-custom-nodes-dynamic-data-adding-dynamic-data-slots-programmatically"></a>
+## Adding Dynamic Data Slots Programmatically {#script-canvas-custom-nodes-dynamic-data-adding-dynamic-data-slots-programmatically}
 
 You can also add dynamic slots programmatically\. Use `DynamicDataSlotConfiguration` to define the slot, and then the generic `AddSlot` method to add it, as shown in the following example\.
 

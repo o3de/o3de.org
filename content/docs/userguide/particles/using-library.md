@@ -2,7 +2,7 @@
 description: ' Use the &ALY; &particle-editor; to manage your particle libraries. '
 title: Using Particle Libraries
 ---
-# Using Particle Libraries<a name="particle-using-library"></a>
+# Using Particle Libraries {#particle-using-library}
 
 The **Particle Editor** provides a context menu with the following options for you to manage your particle libraries\. Right\-click a library name to access the context menu\.
 

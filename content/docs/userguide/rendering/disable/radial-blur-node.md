@@ -3,7 +3,7 @@ description: ' Use the Disable Radial Blur node in the &ALYlong; &script-canvas;
   to disable radial blur. '
 title: Disable Radial Blur
 ---
-# Disable Radial Blur<a name="disable-radial-blur-node"></a>
+# Disable Radial Blur {#disable-radial-blur-node}
 
 Disables the radial blur effect\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Radial Blur](/docs/userguide/rendering/enable/
 
 ![\[disableradialblur, disableradialblurnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-radial-blur-node.png)
 
-## Inputs<a name="disable-radial-blur-note-input"></a>
+## Inputs {#disable-radial-blur-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Radial Blur](/docs/userguide/rendering/enable/
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-radial-blur-node-output"></a>
+## Outputs {#disable-radial-blur-node-output}
 
 
 ****  

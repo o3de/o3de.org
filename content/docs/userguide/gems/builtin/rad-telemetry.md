@@ -3,7 +3,7 @@ description: ' Use the RAD Telemetry gem to enable instrumentation-based profili
   and performance visualization in &ALYlong;. '
 title: RAD Telemetry Gem
 ---
-# RAD Telemetry Gem<a name="gems-system-gem-rad-telemetry"></a>
+# RAD Telemetry Gem {#gems-system-gem-rad-telemetry}
 
 RAD Telemetry 3 is an instrumentation\-based profiling and performance visualization middleware product created by [RAD Game Tools](http://www.radgametools.com/telemetry.htm)\. The RAD Telemetry Gem provides a RAD Telemetry 3 integration for Lumberyard for those who have licensed RAD Telemetry\.
 
@@ -29,7 +29,7 @@ When compiling a project with the RAD Telemetry Gem enabled, the static `lib` fi
 
 1. [Build your project](/docs/userguide/game-build-intro.md)\. You must build using [`profile` \(preferred\) or `debug`](/docs/userguide/game-build-intro.md) in order to enable RAD Telemetry\.
 
-## Instrumenting Your Code<a name="gems-system-gem-rad-telemetry-instrumenting"></a>
+## Instrumenting Your Code {#gems-system-gem-rad-telemetry-instrumenting}
 
 With the RAD Telemetry Gem, Lumberyard introduces a set of scoped performance markers:
 + `AZ_PROFILE_FUNCTION` – Instruments entire functions\. Automatically names the performance event with the function's name\.
@@ -42,7 +42,7 @@ Lumberyard also uses the following legacy performance event markers:
 + `PROFILE_FUNCTION`
 + `PROFILE_FRAME`
 
-## Capturing with RAD Telemetry<a name="gems-system-gem-rad-telemetry-capture"></a>
+## Capturing with RAD Telemetry {#gems-system-gem-rad-telemetry-capture}
 
 See the [RAD Telemetry](http://www.radgametools.com/telemetry.htm) documentation for more information\. The basic procedure is described below\.
 

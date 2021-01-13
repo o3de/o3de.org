@@ -3,7 +3,7 @@ description: ' Add support for &AWS; and custom resource types in your cloud gem
   &ALYlong;. '
 title: 'Adding Support for New &AWS;:: and Custom:: Types'
 ---
-# Adding Support for New AWS:: and Custom:: Types<a name="cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types"></a>
+# Adding Support for New AWS:: and Custom:: Types {#cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types}
 
 The steps to create a `Custom::` type and an `AWS::` type are almost identical\. The main difference is that a custom type must execute a Lambda function when an instance of the type is created, updated or deleted\. A custom type must therefore supply values for `LambdaConfiguration` \(optionally for `LambdaTimeout`\) and for `HandlerFunction`\. An AWS type needs to call a Lambda function only if it cannot supply its ARN from simple string substitution of the values in the `ArnFormat` field\. Therefore, for most AWS types, you can omit the `LambdaConfiguration`, `LambdaTimeout`, and `HandlerFunction` fields from the template entirely\.
 

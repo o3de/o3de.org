@@ -3,24 +3,24 @@ description: ' Encrypt traffic among clients and servers in a GridMate session i
   &ALYlong;. '
 title: Using Encryption
 ---
-# Using Encryption<a name="network-encryption-intro"></a>
+# Using Encryption {#network-encryption-intro}
 
 GridMate uses the [OpenSSL](https://www.openssl.org/) implementation of [Datagram Transport Layer Security](https://tools.ietf.org/html/rfc6347) \(DTLS\) to support encryption of all UDP traffic sent between clients and servers\. 
 
-## Limitations<a name="network-encryption-intro-limitations"></a>
+## Limitations {#network-encryption-intro-limitations}
 
 GridMate's implementation of encryption has the following limitations: 
 +  Only 64\-bit Windows is supported\. 
 +  Only client\-server topologies are supported\. 
 
-## Implementation Support<a name="network-encryption-intro-implementation-support"></a>
+## Implementation Support {#network-encryption-intro-implementation-support}
 
 GridMate supports encryption for the following implementations: 
 +  Server and client authentication 
 +  Self\-signed certificates 
 +  A single strong OpenSSL cipher 
 
-## Cipher<a name="network-encryption-intro-cipher"></a>
+## Cipher {#network-encryption-intro-cipher}
 
 GridMate uses the following single OpenSSL cipher for all encrypted connections: `ECDHE-RSA-AES256-GCM-SHA384`\. 
 

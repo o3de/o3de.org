@@ -3,11 +3,11 @@ description: ' Create random distribution by using weight-based random selection
   &ALYlong; dynamic vegetation. '
 title: Creating Weight-Based Random Selection
 ---
-# Creating Weight\-Based Random Selection<a name="vegetation-random-distribution-selection"></a>
+# Creating Weight\-Based Random Selection {#vegetation-random-distribution-selection}
 
 When you create distribution using random selection, the vegetation asset that is selected for a particular point on the grid varies\. The assigned weight of each asset determines its chance of selection\. In this procedure, you specify weights and link to the gradient using the **Vegetation Asset Weight Selector** component\.
 
-## Preparing the Vegetation Entity<a name="prepare-vegetation-entity"></a>
+## Preparing the Vegetation Entity {#prepare-vegetation-entity}
 
 The vegetation entity, or the entity that contains the **Vegetation Layer Spawner** component, must contain a component that assigns values for selection of the listed assets\. This procedure uses the **Vegetation Asset Weight Selector** component for that purpose\. It's also helpful, though unnecessary, to add multiple assets if you haven't already\. If you have only one asset listed, your one asset and bare ground are used when you link the gradient in [Creating a Gradient Entity](#create-gradient-entity)\.
 
@@ -36,7 +36,7 @@ When specifying your first asset, you don't need to click \+ because there is an
 
    In the next step, [Creating a Gradient Entity](#create-gradient-entity), you link this component to the gradient, which supplies values between 0\.0 to 1\.0 at a given position\. Assets are then mapped based on those values and each asset's weight and order values\.
 
-## Creating a Gradient Entity<a name="create-gradient-entity"></a>
+## Creating a Gradient Entity {#create-gradient-entity}
 
 The gradient entity provides the noise signal to reference from the vegetation entity\.
 
@@ -67,7 +67,7 @@ If you don't have the **Gradient** category in your list of components, you must
    The **Shape Entity Id** field populates with the entity name that you selected and uses the shape on that entity as its reference shape\.  
 ![\[In the Entity Outliner, select the TestBox entity.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-basic-coverage.png)
 
-## Linking the Gradient to the Vegetation Area<a name="link-gradient-entity-to-vegetation"></a>
+## Linking the Gradient to the Vegetation Area {#link-gradient-entity-to-vegetation}
 
 Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area\. This means the component that you reference the gradient \(in this example, the **Vegetation Asset Weight Selector**\) in uses the gradient's information for its selection of values\. 
 

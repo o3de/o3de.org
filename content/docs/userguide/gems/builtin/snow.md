@@ -3,7 +3,7 @@ description: ' Use the Snow Gem to create realistic snow effects in your &ALYlon
   level. '
 title: Snow Gem
 ---
-# Snow Gem<a name="gems-system-gem-snow"></a>
+# Snow Gem {#gems-system-gem-snow}
 
 
 ****  
@@ -19,7 +19,7 @@ Place only a single **Snow** entity in your scene\.
 
 ![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-gem-snow.png)
 
-## Placing Snow<a name="placing-snow"></a>
+## Placing Snow {#placing-snow}
 
 You can place your snow and customize it to your level by modifying properties for brightness, gravity, size and quantity of snow flakes, how much snow and frost builds on a surface, and more\.
 
@@ -31,7 +31,7 @@ You can place your snow and customize it to your level by modifying properties f
 
 1. Drag the **Snow** entity into your scene\.
 
-## Configuring Snow<a name="configuring-snow"></a>
+## Configuring Snow {#configuring-snow}
 
 You can configure the snow's properties under [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html) and **Entity Properties**\.
 
@@ -55,7 +55,7 @@ You can configure the snow's properties under [https://docs.aws.amazon.com/lumbe
 | SnowAmount | Sets the amount of snow on a surface | 
 | SurfaceFreezing | Sets the degree to which surfaces appear frozen | 
 
-## Using Console Variables for Snow<a name="snow-console-variables"></a>
+## Using Console Variables for Snow {#snow-console-variables}
 
 You can use the following console variables [console variables](/docs/userguide/console-intro.md) for the snow entity\.
 
@@ -69,7 +69,7 @@ You can use the following console variables [console variables](/docs/userguide/
 | r\_SnowFlakeClusters | Number of snow flake clusters | 
 | r\_SnowHalfRes | When enabled, renders snow at half resolution to conserve fill rate | 
 
-## Using the Snow Sample<a name="gems-snow-sample"></a>
+## Using the Snow Sample {#gems-snow-sample}
 
 The Snow Sample uses the Snow and Clouds gems to demonstrate how to use the Snow entity as an environment special effects in a level\. The Snow entity shows how snow falls and provides properties that you can set to randomly change the snow fall over time, creating a more dynamic weather experience\.
 

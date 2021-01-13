@@ -3,15 +3,15 @@ description: ' Use the UITextInputComponent to provide player text input capabil
   in &ALYlong;. '
 title: UITextInputComponent
 ---
-# UITextInputComponent<a name="lua-scripting-ces-api-ui-uitextinputcomponent"></a>
+# UITextInputComponent {#lua-scripting-ces-api-ui-uitextinputcomponent}
 
 You can use a text input component to provide player text input capability\.
 
-## UiTextInputBus<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus"></a>
+## UiTextInputBus {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus}
 
 Services messages for the `UiTextInputComponent`\.
 
-### GetChangeAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getchangeaction"></a>
+### GetChangeAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getchangeaction}
 
 Returns the action triggered when the text is changed\.
 
@@ -21,7 +21,7 @@ Returns the action triggered when the text is changed\.
 const AZStd::string& GetChangeAction()
 ```
 
-### GetCursorBlinkInterval<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getcursorblinkinterval"></a>
+### GetCursorBlinkInterval {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getcursorblinkinterval}
 
 Returns the cursor blink interval of the text input\.
 
@@ -31,7 +31,7 @@ Returns the cursor blink interval of the text input\.
 float GetCursorBlinkInterval()
 ```
 
-### GetEndEditAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getendeditaction"></a>
+### GetEndEditAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getendeditaction}
 
 Returns the action triggered when the editing of text is finished\.
 
@@ -41,7 +41,7 @@ Returns the action triggered when the editing of text is finished\.
 const AZStd::string& GetEndEditAction()
 ```
 
-### GetEnterAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getenteraction"></a>
+### GetEnterAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getenteraction}
 
 Returns the action triggered when enter is pressed\.
 
@@ -51,7 +51,7 @@ Returns the action triggered when enter is pressed\.
 const AZStd::string& GetEnterAction()
 ```
 
-### GetIsPasswordField<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getispasswordfield"></a>
+### GetIsPasswordField {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getispasswordfield}
 
 Returns whether the text input is configured as a password field\.
 
@@ -61,7 +61,7 @@ Returns whether the text input is configured as a password field\.
 bool GetIsPasswordField()
 ```
 
-### GetMaxStringLength<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getmaxstringlength"></a>
+### GetMaxStringLength {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getmaxstringlength}
 
 Returns the maximum number of characters that can be entered\.
 
@@ -71,7 +71,7 @@ Returns the maximum number of characters that can be entered\.
 int GetMaxStringLength()
 ```
 
-### GetPlaceHolderTextEntity<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getplaceholdertextentity"></a>
+### GetPlaceHolderTextEntity {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getplaceholdertextentity}
 
 Returns the placeholder text element\.
 
@@ -81,7 +81,7 @@ Returns the placeholder text element\.
 AZ::EntityId GetPlaceHolderTextEntity()
 ```
 
-### GetReplacementCharacter<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getreplacementcharacter"></a>
+### GetReplacementCharacter {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-getreplacementcharacter}
 
 Returns the replacement character used to hide password text\.
 
@@ -91,7 +91,7 @@ Returns the replacement character used to hide password text\.
 char GetReplacementCharacter()
 ```
 
-### GetText<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettext"></a>
+### GetText {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettext}
 
 Returns the text string being displayed or edited by the element\.
 
@@ -101,7 +101,7 @@ Returns the text string being displayed or edited by the element\.
 AZStd::string GetText()
 ```
 
-### GetTextCursorColor<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextcursorcolor"></a>
+### GetTextCursorColor {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextcursorcolor}
 
 Returns the color to be used for the text cursor\.
 
@@ -111,7 +111,7 @@ Returns the color to be used for the text cursor\.
 AZ::Color GetTextCursorColor()
 ```
 
-### GetTextEntity<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextentity"></a>
+### GetTextEntity {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextentity}
 
 Returns the text element\.
 
@@ -121,7 +121,7 @@ Returns the text element\.
 AZ::EntityId GetTextEntity()
 ```
 
-### GetTextSelectionColor<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextselectioncolor"></a>
+### GetTextSelectionColor {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-gettextselectioncolor}
 
 Returns the color to be used for the text background when it is selected\.
 
@@ -131,7 +131,7 @@ Returns the color to be used for the text background when it is selected\.
 AZ::Color GetTextSelectionColor()
 ```
 
-### SetChangeAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setchangeaction"></a>
+### SetChangeAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setchangeaction}
 
 Sets the action triggered when the text is changed\.
 
@@ -141,7 +141,7 @@ Sets the action triggered when the text is changed\.
 void SetChangeAction(const AZStd::string& actionName)
 ```
 
-### SetCursorBlinkInterval<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setcursorblinkinterval"></a>
+### SetCursorBlinkInterval {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setcursorblinkinterval}
 
 Sets the cursor blink interval of the text input\.
 
@@ -151,7 +151,7 @@ Sets the cursor blink interval of the text input\.
 void SetCursorBlinkInterval(float interval)
 ```
 
-### SetEndEditAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setendeditaction"></a>
+### SetEndEditAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setendeditaction}
 
 Sets the action triggered when the editing of text is finished\.
 
@@ -161,7 +161,7 @@ Sets the action triggered when the editing of text is finished\.
 void SetEndEditAction(const AZStd::string& actionName)
 ```
 
-### SetEnterAction<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setenteraction"></a>
+### SetEnterAction {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setenteraction}
 
 Sets the action triggered when enter is pressed\.
 
@@ -171,7 +171,7 @@ Sets the action triggered when enter is pressed\.
 void SetEnterAction(const AZStd::string& actionName)
 ```
 
-### SetIsPasswordField<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setispasswordfield"></a>
+### SetIsPasswordField {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setispasswordfield}
 
 Sets whether the text input is configured as a password field\.
 
@@ -181,7 +181,7 @@ Sets whether the text input is configured as a password field\.
 void SetIsPasswordField(bool passwordField)
 ```
 
-### SetMaxStringLength<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setmaxstringlength"></a>
+### SetMaxStringLength {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setmaxstringlength}
 
 Sets the maximum number of characters that can be entered\.
 
@@ -191,7 +191,7 @@ Sets the maximum number of characters that can be entered\.
 void SetMaxStringLength(int maxCharacters)
 ```
 
-### SetPlaceHolderTextEntity<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setplaceholdertextentity"></a>
+### SetPlaceHolderTextEntity {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setplaceholdertextentity}
 
 Sets the placeholder text element\.
 
@@ -201,7 +201,7 @@ Sets the placeholder text element\.
 void SetPlaceHolderTextEntity(AZ::EntityId textEntity) 
 ```
 
-### SetReplacementCharacter<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setreplacementcharacter"></a>
+### SetReplacementCharacter {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setreplacementcharacter}
 
 Sets the replacement character used to hide password text\.
 
@@ -211,7 +211,7 @@ Sets the replacement character used to hide password text\.
 void SetReplacementCharacter(char replacementChar) 
 ```
 
-### SetText<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settext"></a>
+### SetText {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settext}
 
 Sets the text string being displayed or edited by the element\.
 
@@ -221,7 +221,7 @@ Sets the text string being displayed or edited by the element\.
 void SetText(const AZStd::string& text)
 ```
 
-### SetTextCursorColor<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextcursorcolor"></a>
+### SetTextCursorColor {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextcursorcolor}
 
 Sets the color to be used for the text cursor\.
 
@@ -231,7 +231,7 @@ Sets the color to be used for the text cursor\.
 void SetTextCursorColor(const AZ::Color& color) 
 ```
 
-### SetTextEntity<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextentity"></a>
+### SetTextEntity {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextentity}
 
 Sets the text element\.
 
@@ -241,7 +241,7 @@ Sets the text element\.
 void SetTextEntity(AZ::EntityId textEntity)
 ```
 
-### SetTextSelectionColor<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextselectioncolor"></a>
+### SetTextSelectionColor {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextselectioncolor}
 
 Sets the color to be used for the text background when it is selected\.
 
@@ -251,11 +251,11 @@ Sets the color to be used for the text background when it is selected\.
 void SetTextSelectionColor(const AZ::Color& color) 
 ```
 
-## UiTextInputNotificationBus<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus"></a>
+## UiTextInputNotificationBus {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus}
 
 Services notifications for the `UiTextInputComponent`\.
 
-### OnTextInputChange<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputchange"></a>
+### OnTextInputChange {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputchange}
 
 Called when a character is added, removed, or changed\.
 
@@ -265,7 +265,7 @@ Called when a character is added, removed, or changed\.
 void OnTextInputChange(const AZStd::string& textString)
 ```
 
-### OnTextInputEndEdit<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputendedit"></a>
+### OnTextInputEndEdit {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputendedit}
 
 Called when edit of text is completed\.
 
@@ -275,7 +275,7 @@ Called when edit of text is completed\.
 void OnTextInputEndEdit(const AZStd::string& textString)
 ```
 
-### OnTextInputEnter<a name="lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputenter"></a>
+### OnTextInputEnter {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus-ontextinputenter}
 
 Called when **Enter** is pressed on the keyboard\.
 

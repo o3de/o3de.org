@@ -3,11 +3,11 @@ description: ' Use the Compute Farm cloud gem to solve large-scale computing tas
   in &ALYlong;. '
 title: 'Compute Farm Cloud Gem: Walkthrough'
 ---
-# Compute Farm Cloud Gem: Walkthrough<a name="compute-farm-cloud-gem-walkthrough"></a>
+# Compute Farm Cloud Gem: Walkthrough {#compute-farm-cloud-gem-walkthrough}
 
 This tutorial is a step\-by\-step walkthrough of the Compute Farm cloud gem\. The tutorial uses the default word list sorting implementation that is included with the cloud gem\.
 
-## Prerequisites<a name="compute-farm-cloud-gem-walkthrough-prerequisites"></a>
+## Prerequisites {#compute-farm-cloud-gem-walkthrough-prerequisites}
 
 This tutorial assumes the following:
 + You enabled the **Cloud Gem Compute Farm** in the Project Configurator for your Lumberyard project\.
@@ -22,7 +22,7 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Compute Farm** to your project\. Note that the CloudGemSamples project does not enable Cloud Gem Compute Farm by default\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## 1\. Gather Configuration Information<a name="compute-farm-cloud-gem-walkthrough-gather-configuration-information"></a>
+## 1\. Gather Configuration Information {#compute-farm-cloud-gem-walkthrough-gather-configuration-information}
 
 Some of the scripts in this walkthrough have parameters that require configuration information from your Compute Farm cloud gem installation\. You can gather most of this information from the AWS Management Console\.
 
@@ -52,7 +52,7 @@ Some of the scripts in this walkthrough have parameters that require configurati
    + **Workflow**
    + **computefarm**
 
-## 2\. Build the AMI<a name="compute-farm-cloud-gem-walkthrough-build-the-ami"></a>
+## 2\. Build the AMI {#compute-farm-cloud-gem-walkthrough-build-the-ami}
 
 To build a Windows AMI with your software and harness preinstalled on it, use the `ami_builder` script in the Compute Farm cloud gem's directory\. This works as follows:
 + The script uploads any third\-party software you've indicated in its configuration as being necessary to an Amazon S3 bucket\.
@@ -114,7 +114,7 @@ The build script uses a configuration file to determine the contents of the AMI\
    Done!
    ```
 
-## 3\. Create Data to Process<a name="compute-farm-cloud-gem-walkthrough-create-data-to-process"></a>
+## 3\. Create Data to Process {#compute-farm-cloud-gem-walkthrough-create-data-to-process}
 
 The Compute Farm cloud gem includes a compressed word list that is sorted\. In this step, you shuffle the word list to create a file to be processed by the compute farm\. The compute farm's task will be to put the list back in order\.
 
@@ -123,7 +123,7 @@ The Compute Farm cloud gem includes a compressed word list that is sorted\. In t
 **Note**  
 This script requires Python 3\.6 or later\.
 
-## 4\. Upload the Data to Process<a name="compute-farm-cloud-gem-walkthrough-upload-the-data-to-process"></a>
+## 4\. Upload the Data to Process {#compute-farm-cloud-gem-walkthrough-upload-the-data-to-process}
 
 In this step, you upload the shuffled word list to AWS to prepare for processing\.
 
@@ -148,7 +148,7 @@ In this step, you upload the shuffled word list to AWS to prepare for processing
 
 1. Click **Upload** to upload the dictionary to Amazon S3\.
 
-## 5\. Test Your Harness Locally<a name="compute-farm-cloud-gem-walkthrough-test-your-harness-locally"></a>
+## 5\. Test Your Harness Locally {#compute-farm-cloud-gem-walkthrough-test-your-harness-locally}
 
 Because deploying to an AMI and then to Amazon EC2 instances can be expensive, it is recommended that you test your harness locally with sufficient AWS credentials\. This ensures that your harness works properly before you run it on a fleet of Amazon EC2 instances\.
 
@@ -195,7 +195,7 @@ Control does not automatically return to each command prompt\. Each window is su
 
 1. In each command window, press **Ctrl\+Break** to return each window to its command prompt\.
 
-## 6\. Create a Fleet of Amazon EC2 Instances<a name="compute-farm-cloud-gem-walkthrough-create-a-fleet-of-ec2-instances"></a>
+## 6\. Create a Fleet of Amazon EC2 Instances {#compute-farm-cloud-gem-walkthrough-create-a-fleet-of-ec2-instances}
 
 Now you are ready to test your harness with a fleet of Amazon EC2 instances\.
 
@@ -229,7 +229,7 @@ It takes time to spin instances up or down to match the number that you request\
 1. To change the number of active instances at any time, edit the **Number of Instances** field and click **Save Changes**\.  
 ![\[Changing the number of active instances in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-12.png)
 
-## 7\. Run a Workflow<a name="compute-farm-cloud-gem-walkthrough-run-a-workflow"></a>
+## 7\. Run a Workflow {#compute-farm-cloud-gem-walkthrough-run-a-workflow}
 
 To run and view the progress of a workflow, you use the **Overview** tab just as you did with the local test harness\. The **Overview** tab provides graphs of the workflow execution progress\.
 
@@ -253,7 +253,7 @@ To run and view the progress of a workflow, you use the **Overview** tab just as
    When the execution finishes, the graph is complete\.  
 ![\[Progress graph in the Compute Farm Cloud Gem Portal.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-16.png)
 
-## 8\. Download the Results<a name="compute-farm-cloud-gem-walkthrough-download-the-results"></a>
+## 8\. Download the Results {#compute-farm-cloud-gem-walkthrough-download-the-results}
 
 After the workflow is finished, you can download the build result on the **Build Configuration** tab\.
 
@@ -271,7 +271,7 @@ After the workflow is finished, you can download the build result on the **Build
 
 1. Click **Download**\. After the result file is downloaded, you can view the contents to confirm that the shuffled word list has been sorted again\.
 
-## 9\. View Previous Builds<a name="compute-farm-cloud-gem-walkthrough-view-previous-builds"></a>
+## 9\. View Previous Builds {#compute-farm-cloud-gem-walkthrough-view-previous-builds}
 
 After you have run a number of workflows, you can view the results of previous builds on the **Overview** tab\.
 
@@ -286,7 +286,7 @@ After you have run a number of workflows, you can view the results of previous b
 1. Click **View**\. On the **Overview** tab, the build that you chose appears\.  
 ![\[Previous build showing on the Overview tab\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-21.png)
 
-## 10\. Customize the Harness for Your Application<a name="compute-farm-cloud-gem-walkthrough-customize-the-harness-for-your-application"></a>
+## 10\. Customize the Harness for Your Application {#compute-farm-cloud-gem-walkthrough-customize-the-harness-for-your-application}
 
 You can customize the harness to perform tasks like the following:
 + Downloading and unzipping data from Amazon S3\.
@@ -303,6 +303,6 @@ To customize the harness that is included with the Compute Farm cloud gem for yo
 + You can modify the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\AWS\cgp-resource-code\src\workflow-config.ts` file to make parameters that your script uses available for configuration in the Cloud Gem Portal\.
 + Use the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\Harness\ami_build\manifest.json` file to specify the software that is installed on your AMI\. Run PowerShell commands as needed to configure it\.
 
-### Configuring Permissions<a name="compute-farm-cloud-gem-walkthrough-configuring-permissions"></a>
+### Configuring Permissions {#compute-farm-cloud-gem-walkthrough-configuring-permissions}
 
 You might need to customize the default IAM role used for Amazon EC2 instances with additional permissions beyond those for Amazon SWF and Amazon S3 that are required by the harness and included by default\. You can edit these permissions in the gem's `resource-template.json` file\.

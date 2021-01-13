@@ -2,7 +2,7 @@
 description: ' Add scripts to entities with the &script-canvas; component in &ALYlong;. '
 title: Adding Scripts to Entities
 ---
-# Adding Scripts to Entities<a name="script-canvas-adding-scripts"></a>
+# Adding Scripts to Entities {#script-canvas-adding-scripts}
 
 Like Lua scripts, you can add a script to a level or slice is by adding a **Script Canvas** component to an entity\. The **Script Canvas** component adds Script Canvas capabilities to the entity and provides a field to specify a script assignment\. You can specify a script with the **Script Canvas** component\.
 

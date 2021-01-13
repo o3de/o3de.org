@@ -2,11 +2,11 @@
 description: ' Use the Defect Reporter to create Jira tickets in &ALYlong;. '
 title: Using Defect Reporter to Create Jira Tickets
 ---
-# Using Defect Reporter to Create Jira Tickets<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira"></a>
+# Using Defect Reporter to Create Jira Tickets {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira}
 
 You can use the Jira integration feature of the Defect Reporter cloud gem to create Jira tickets from defect reports\. The integration feature uses AWS Lambda functions to receive the events and file tickets to your Jira server instance\. To implement custom ticket filtering, you can modify the Lambda function in `dedupping.main`\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-prerequisites}
 
 This tutorial assumes the following:
 + You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
@@ -15,7 +15,7 @@ This tutorial assumes the following:
 
 For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## Enabling Jira Integration<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-enabling-jira-integration"></a>
+## Enabling Jira Integration {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-enabling-jira-integration}
 
 Jira integration is not enabled by default\. Use the Cloud Canvas [`lmbr_aws` command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create a deployment that has Jira enabled or to add Jira integration to an existing deployment\.
 
@@ -43,7 +43,7 @@ Jira integration is not enabled by default\. Use the Cloud Canvas [`lmbr_aws` co
      lmbr_aws deployment update
      ```
 
-## Setting Jira Credentials<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-setting-jira-credentials"></a>
+## Setting Jira Credentials {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-setting-jira-credentials}
 
 To use the Jira integration feature, you must set your Jira credentials in the Cloud Gem Portal\.
 
@@ -66,7 +66,7 @@ To use the Jira integration feature, you must set your Jira credentials in the C
    The **Jira Integration** tab now appears in the Cloud Gem Portal\.  
 ![\[Jira Integration tab added to the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-4.png)
 
-## Configuring Jira Integration Settings<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-configuring-jira-integration-settings"></a>
+## Configuring Jira Integration Settings {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-configuring-jira-integration-settings}
 
 After you enable Jira integration, you can configure its settings in the Cloud Gem Portal\.
 
@@ -89,7 +89,7 @@ After you enable Jira integration, you can configure its settings in the Cloud G
 1. For **Issue Type**, choose a Jira issue type from the drop\-down menu \(for example, **Feedback** or **Bug**\)\. The available issue types depend on the project key that you specified\. The issue type that you choose will be the default issue type for your Jira tickets\.  
 ![\[Choose a default Jira issue type\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-7.png)
 
-## Configuring Jira Field Mappings<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-configuring-jira-field-mappings"></a>
+## Configuring Jira Field Mappings {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-configuring-jira-field-mappings}
 
 You can use the **Field Mappings** section of the **Jira Integration** tab to configure the default mapping of game event attributes to Jira ticket fields\. Required fields have an asterisk \(**\***\)\. Automatic mode fails when a required field does not have a specified mapping or default value\. 
 
@@ -112,7 +112,7 @@ If you do not specify a mapping or default value for a required field, automatic
 1. When you are finished, click **Save Settings**\.  
 ![\[Click Save Settings for Jira integration and field mappings\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-11.png)
 
-## Creating Jira Tickets Manually<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-submitting-jira-tickets-manually"></a>
+## Creating Jira Tickets Manually {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-submitting-jira-tickets-manually}
 
 You can create Jira tickets based on the defect reports that you have received\.
 
@@ -142,7 +142,7 @@ If you change the default mappings at this point, the changes that you entered i
 
 1. Click **Create**\. The tickets appear on your Jira server, and you can easily link to them from the Cloud Gem Portal\. For more information, see **Viewing Jira Tickets**\.
 
-### Creating Individual Tickets Manually<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-creating-individual-tickets"></a>
+### Creating Individual Tickets Manually {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-creating-individual-tickets}
 
 You can create individual Jira tickets from a report's **Report Detail** page\.
 
@@ -158,7 +158,7 @@ You can create individual Jira tickets from a report's **Report Detail** page\.
 
 1. Click **Submit**\.
 
-## Viewing Jira Tickets<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-viewing-jira-tickets"></a>
+## Viewing Jira Tickets {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-viewing-jira-tickets}
 
 After Jira tickets have been submitted, you can easily navigate to them from the Cloud Gem Portal\.
 
@@ -174,7 +174,7 @@ After Jira tickets have been submitted, you can easily navigate to them from the
 **Note**  
 To open the Jira link, you might have to disable your web browser's pop\-up blocker for the pages from your Jira server address\.
 
-## Example<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-example"></a>
+## Example {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-example}
 
 Consider the following example:
 + A game has an event attribute called **issue**\.

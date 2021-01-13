@@ -2,13 +2,13 @@
 description: ' Use a different version of Wwise for &ALYlong;. '
 title: Using a Different Wwise Version
 ---
-# Using a Different Wwise Version<a name="audio-wwise-advanced-version-configuration"></a>
+# Using a Different Wwise Version {#audio-wwise-advanced-version-configuration}
 
 Lumberyard officially supports Wwise LTX version 2018\.1\.2\.6762 and Wwise full version 2018\.1\.4\.6807\.
 
  You can also use an older or newer version of Wwise\. However, Lumberyard no longer supports versions 2016 and earlier\.
 
-## Configuring an Earlier Version of Wwise for Lumberyard<a name="specify-an-older-version-of-wwise-for-lumberyard"></a>
+## Configuring an Earlier Version of Wwise for Lumberyard {#specify-an-older-version-of-wwise-for-lumberyard}
 
  Follow this procedure to use the 2017 version of Wwise\.
 
@@ -34,7 +34,7 @@ Lumberyard officially supports Wwise LTX version 2018\.1\.2\.6762 and Wwise full
 
    If no errors occur, build Lumberyard Editor and Engine for Wwise 2017\.
 
-## Configuring a Later Version of Wwise for Lumberyard<a name="specify-a-newer-version-of-wwise-for-lumberyard"></a>
+## Configuring a Later Version of Wwise for Lumberyard {#specify-a-newer-version-of-wwise-for-lumberyard}
 
 Audiokinetic frequently releases new versions of Wwise\. Later versions might be compatible with the current version supported by Lumberyard without requiring major code changes\. However, minor revisions can contain API updates that require code changes in Lumberyard\. Major revisions can require code changes and deeper migration\.
 

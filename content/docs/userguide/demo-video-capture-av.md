@@ -2,19 +2,19 @@
 description: ' Capture video and audio in &ALYlong;. '
 title: Capturing Video and Audio
 ---
-# Capturing Video and Audio<a name="demo-video-capture-av"></a>
+# Capturing Video and Audio {#demo-video-capture-av}
 
 This tutorial explains how to set up Lumberyard editor \(or game\) to capture video\. Lumberyard outputs video as single frames\. If required, it can also output stereo or 5\.1 surround sound audio in `.wav` file format\. You can edit the output with commonly available video editing software\.
 
-## Preparation<a name="demo-video-capture-av-preparation"></a>
+## Preparation {#demo-video-capture-av-preparation}
 
 Before you can start video and audio streams in preparation for capture, you must configure some settings that determine how the video will be captured\. You configure these settings by using console commands\. To save time, you can create configuration files that execute the necessary commands for you instead of entering the commands directly into the console\. Example configuration files are presented later in this topic\. 
 
 The next sections describe the settings and the console commands that configure them\.
 
-## Video Settings<a name="demo-video-capture-av-video-settings"></a>
+## Video Settings {#demo-video-capture-av-video-settings}
 
-### Frame Size and Resolution<a name="demo-video-capture-av-video-settings-framesize"></a>
+### Frame Size and Resolution {#demo-video-capture-av-video-settings-framesize}
 
 The height and width of the captured frames in the editor is normally set to the exact view size of your rendered perspective window\. To resize the view size, re\-scale the perspective window, or right click in the top right of the perspective viewport where the frame size is displayed\.
 
@@ -28,7 +28,7 @@ The console variables that are now used in conjunction with Capture Frames are:
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/demo-video-capture-av.html)
 
-### Frames Per Second<a name="demo-video-capture-av-video-settings-fps"></a>
+### Frames Per Second {#demo-video-capture-av-video-settings-fps}
 
 When deciding the number of frames per second to specify, keep in mind the following:
 + NTSC standard video is approximately 30 frames per second, which is a good compromise between quality and file size\.
@@ -58,7 +58,7 @@ A table of common time step values follows\.
 | 30 | 0\.033333333 | 
 | 60 | 0\.0166666667 | 
 
-### Video Capture File Format<a name="demo-video-capture-av-file-format-capture"></a>
+### Video Capture File Format {#demo-video-capture-av-file-format-capture}
 
 You can capture pictures in several different file formats\. A good choice for average quality is the `.jpeg` file format\. The [https://en.wikipedia.org/wiki/Truevision_TGA](https://en.wikipedia.org/wiki/Truevision_TGA) or `.bmp` file formats are better for higher quality, and `.hdr` for pictures that use [high\-dynamic\-range imaging](https://en.wikipedia.org/wiki/High-dynamic-range_imaging)\.
 
@@ -70,7 +70,7 @@ capture_file_format N
 
 *N* is `jpg`, `bmp`, `tga` or `hdr`\.
 
-### Video Capture File Location<a name="demo-video-capture-av-file-format-location"></a>
+### Video Capture File Location {#demo-video-capture-av-file-format-location}
 
 By default, recorded frames are stored in the directory `<root>\CaptureOutput`\. To specify a custom directory, use the command: 
 
@@ -83,7 +83,7 @@ capture_folder N
 **Warning**  
 When you start a recording, the captured frames are placed in the currently specified directory and will overwrite existing files with the same name\. To avoid losing work, create a directory for each recording, or move the existing files to another directory before you start\. 
 
-## Starting and Ending the Video Recording<a name="demo-video-capture-av-file-format-start-end-rec"></a>
+## Starting and Ending the Video Recording {#demo-video-capture-av-file-format-start-end-rec}
 
 After you have specified the values mentioned in the previous sections, you can start the recording by using the command: 
 
@@ -93,11 +93,11 @@ capture_frames N
 
 Setting *N* to **1** starts the recording, and setting *N* to **0** stops it\.
 
-## Audio Settings<a name="demo-video-capture-av-audio"></a>
+## Audio Settings {#demo-video-capture-av-audio}
 
 Before you begin, decide if you require audio in stereo or in 5\.1 surround format, and then change your audio settings accordingly in the Windows control panel\.
 
-### Deactivating the Sound System<a name="demo-video-capture-av-audio-deactivating"></a>
+### Deactivating the Sound System {#demo-video-capture-av-audio-deactivating}
 
 After loading the level of your game that you want to capture, you must deactivate the sound system so that you can redirect the sound output to a file\. To deactivate the sound system, use the command: 
 
@@ -115,7 +115,7 @@ s_OutputConfig N
 
 Setting *N* to `3` activates the non\-realtime writing of sound to the `.wav` file\. Setting *N* to `0` specifies auto\-detection \(the default\)\.
 
-### Reactivating the Sound System<a name="demo-video-capture-av-audio-reactivating"></a>
+### Reactivating the Sound System {#demo-video-capture-av-audio-reactivating}
 
 To reset the sound system use the command: 
 
@@ -140,9 +140,9 @@ s_OutputConfig 0
 **Tip**  
 Although these commands reset the sound system, some sounds won't start until they are correctly triggered again\. This applies particularly to looped sounds\. To get looped sounds to play, start the recording of video and sound first, and then enter any area that triggers the looped sounds that you want to record\.
 
-## Configuration Files<a name="demo-video-capture-av-cfg-files"></a>
+## Configuration Files {#demo-video-capture-av-cfg-files}
 
-### Creating Configuration Files<a name="demo-video-capture-av-cfg-files-create"></a>
+### Creating Configuration Files {#demo-video-capture-av-cfg-files-create}
 + To ensure that multiple recordings use exactly the same settings, create a configuration file that you can use for each of them\. This will ensure that all of your captured files have the same format\.
 
   An example configuration file:
@@ -175,7 +175,7 @@ Although these commands reset the sound system, some sounds won't start until th
     #Sound.ActivateAudioDevice()
     ```
 
-#### Executing the Config Files<a name="demo-video-capture-av-cfg-files-execute"></a>
+#### Executing the Config Files {#demo-video-capture-av-cfg-files-execute}
 
 To run the config file, open the console and enter the following command:
 

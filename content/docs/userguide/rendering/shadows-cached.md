@@ -3,7 +3,7 @@ description: ' Control the degree to which &ALYlong; caches shadows to optimize 
   and memory use. '
 title: Cached Shadows
 ---
-# Cached Shadows<a name="rendering-graphics-shadows-cached"></a>
+# Cached Shadows {#rendering-graphics-shadows-cached}
 
 Shadow caching is an effective optimization method to reduce the number of shadow drawcalls and to increase the shadow casting and receiving range\. 
 
@@ -13,7 +13,7 @@ Keep in mind that cached shadows are memory intensive, with the default configur
 
 In addition, ensure that all shaders are compiled before triggering an update or all objects may not be rendered into the cached shadow maps\.
 
-## Placement and Update<a name="rendering-graphics-shadows-cached-placement"></a>
+## Placement and Update {#rendering-graphics-shadows-cached-placement}
 
 Cached shadow cascades are centered around the rendering camera by default, and automatically recenter and update once the camera gets close to the cascade border\.
 
@@ -22,14 +22,14 @@ You can override this automated placement by using the **Recompute Static Shadow
 **Note**  
 To keep you informed, a warning message appears in the console each time a cached shadow cascade is updated\.
 
-## Dynamic Distance Shadows<a name="rendering-graphics-shadows-cached-dynamic-distance"></a>
+## Dynamic Distance Shadows {#rendering-graphics-shadows-cached-dynamic-distance}
 
 Cached shadows work well with static objects, but dynamic objects don't get their shadows updated while moving\. To overcome this, you can selectively exclude dynamic objects from the cache and render them to the standard cascades\. The performance overhead of enabling this feature for a limited number of entities is generally low\.
 
 **To enable dynamic distance shadows for an object**
 + Select the **DynamicDistanceShadows** check box for the entity\.
 
-## Console Variables<a name="rendering-graphics-shadows-cached-cvars"></a>
+## Console Variables {#rendering-graphics-shadows-cached-cvars}
 
 When Lumberyard is set to place shadows automatically, the selected resolution combined with the desired world space pixel density, which is derived from the approximate logarithmic split scheme, determines the world space area covered by each shadow cascade\. Lowering the resolution lowers the shadowed range for each cascade while still maintaining shadow quality\. 
 

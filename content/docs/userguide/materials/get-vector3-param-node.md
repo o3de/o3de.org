@@ -3,7 +3,7 @@ description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; e
   to return a material parameter as a Vector3 value. '
 title: Get Param Vector3
 ---
-# Get Param Vector3<a name="material-get-vector3-param-node"></a>
+# Get Param Vector3 {#material-get-vector3-param-node}
 
 Returns a material parameter as a **Vector3** value\.
 
@@ -13,7 +13,7 @@ Returns a material parameter as a **Vector3** value\.
 
 ![\[getparamvector3, getvector3param, getparamvector3node\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-node.png)
 
-## Inputs<a name="material-get-vector3-param-node-input"></a>
+## Inputs {#material-get-vector3-param-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Returns a material parameter as a **Vector3** value\.
 | Material | Material |  The material to query\.  | 
 | Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 
-## Outputs<a name="material-get-vector3-param-node-output"></a>
+## Outputs {#material-get-vector3-param-node-output}
 
 
 ****  

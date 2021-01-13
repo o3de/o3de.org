@@ -3,15 +3,15 @@ description: ' Use the UITextComponent to control the text and formatting of a t
   element in &ALYlong;. '
 title: UITextComponent
 ---
-# UITextComponent<a name="lua-scripting-ces-api-ui-uitextcomponent"></a>
+# UITextComponent {#lua-scripting-ces-api-ui-uitextcomponent}
 
 Controls the text and formatting of a text element\.
 
-## UiTextBus<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus"></a>
+## UiTextBus {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus}
 
 Services messages for the `UiTextComponent`\.
 
-### GetColor<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getcolor"></a>
+### GetColor {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getcolor}
 
 Returns the color to draw the text string\.
 
@@ -21,7 +21,7 @@ Returns the color to draw the text string\.
 AZ::Color GetColor()
 ```
 
-### GetFont<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfont"></a>
+### GetFont {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfont}
 
 Returns the pathname to the font\.
 
@@ -31,7 +31,7 @@ Returns the pathname to the font\.
 AZStd::string GetFont()
 ```
 
-### GetFontEffect<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfonteffect"></a>
+### GetFontEffect {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfonteffect}
 
 Returns the font effect\.
 
@@ -41,7 +41,7 @@ Returns the font effect\.
 int GetFontEffect()
 ```
 
-### GetFontSize<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfontsize"></a>
+### GetFontSize {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getfontsize}
 
 Returns the size of the font in points\.
 
@@ -51,7 +51,7 @@ Returns the size of the font in points\.
 float GetFontSize()
 ```
 
-### GetHorizontalTextAlignment<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gethorizontaltextalignment"></a>
+### GetHorizontalTextAlignment {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gethorizontaltextalignment}
 
 Returns the horizontal text alignment\.
 
@@ -72,7 +72,7 @@ enum eUiHAlign
     };
 ```
 
-### GetOverflowMode<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getoverflowmode"></a>
+### GetOverflowMode {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getoverflowmode}
 
 Returns the overflow behavior of the text\.
 
@@ -92,7 +92,7 @@ enum eUiTextOverflowMode
     };
 ```
 
-### GetText<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gettext"></a>
+### GetText {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gettext}
 
 Returns the text string being displayed by the element\.
 
@@ -102,7 +102,7 @@ Returns the text string being displayed by the element\.
 AZStd::string GetText()
 ```
 
-### GetVerticalTextAlignment<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getverticaltextalignment"></a>
+### GetVerticalTextAlignment {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getverticaltextalignment}
 
 Returns the vertical text alignment\.
 
@@ -123,7 +123,7 @@ enum eUiVAlign
     };
 ```
 
-### GetWrapText<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getwraptext"></a>
+### GetWrapText {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getwraptext}
 
 Returns whether text is wrapped\.
 
@@ -143,7 +143,7 @@ enum eUiTextWrapTextSetting
     };
 ```
 
-### SetColor<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setcolor"></a>
+### SetColor {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setcolor}
 
 Sets the color to draw the text string\.
 
@@ -153,7 +153,7 @@ Sets the color to draw the text string\.
 void SetColor(const AZ::Color& color)
 ```
 
-### SetFont<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfont"></a>
+### SetFont {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfont}
 
 Sets the pathname to the font\.
 
@@ -163,7 +163,7 @@ Sets the pathname to the font\.
 void SetFont(const AZStd::string& fontPath) 
 ```
 
-### SetFontEffect<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfonteffect"></a>
+### SetFontEffect {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfonteffect}
 
 Sets the font effect\.
 
@@ -173,7 +173,7 @@ Sets the font effect\.
 void SetFontEffect(int effectIndex)
 ```
 
-### SetFontSize<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfontsize"></a>
+### SetFontSize {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfontsize}
 
 Sets the size of the font in points\.
 
@@ -183,7 +183,7 @@ Sets the size of the font in points\.
 void SetFontSize(float size)
 ```
 
-### SetHorizontalTextAlignment<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-sethorizontaltextalignment"></a>
+### SetHorizontalTextAlignment {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-sethorizontaltextalignment}
 
 Sets the horizontal text alignment\.
 
@@ -195,7 +195,7 @@ void SetHorizontalTextAlignment(eUiHAlign alignment)
 
 For possible values for `eUiHAlign`, see [GetHorizontalTextAlignment](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gethorizontaltextalignment)\.
 
-### SetOverflowMode<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setoverflowmode"></a>
+### SetOverflowMode {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setoverflowmode}
 
 Sets the overflow behavior of the text\.
 
@@ -207,7 +207,7 @@ void SetOverflowMode(eUiTextOverflowMode overflowMode)
 
 For possible values for `eUiTextOverflowMode`, see [GetOverflowMode](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getoverflowmode)\.
 
-### SetText<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-settext"></a>
+### SetText {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-settext}
 
 Sets the text string being displayed by the element\.
 
@@ -217,7 +217,7 @@ Sets the text string being displayed by the element\.
 void SetText(const AZStd::string& text)
 ```
 
-### SetVerticalTextAlignment<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setverticaltextalignment"></a>
+### SetVerticalTextAlignment {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setverticaltextalignment}
 
 Sets the vertical text alignment\.
 
@@ -229,7 +229,7 @@ void SetVerticalTextAlignment(eUiVAlign alignment)
 
 For possible values for `eUiVAlign`, see [GetVerticalTextAlignment](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getverticaltextalignment)\.
 
-### SetWrapText<a name="lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setwraptext"></a>
+### SetWrapText {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setwraptext}
 
 Sets whether text is wrapped\.
 

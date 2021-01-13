@@ -3,7 +3,7 @@ description: ' Launch &ly-editor; and understand the viewport, &asset-browser; ,
   , &entity-inspector; , and console. '
 title: Using &ly-editor;
 ---
-# Using Lumberyard Editor<a name="lumberyard-editor-intro"></a>
+# Using Lumberyard Editor {#lumberyard-editor-intro}
 
 Lumberyard Editor is your primary workplace for game development\. The editor provides access to the tools to create, design, and deploy your game project\. You can also play the game to test your changes\.
 

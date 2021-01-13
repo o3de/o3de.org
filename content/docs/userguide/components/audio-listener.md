@@ -3,11 +3,11 @@ description: ' Use the Audio Listener component to add a virtual microphone in t
   &ALYlong; environment. '
 title: Audio Listener
 ---
-# Audio Listener<a name="component-audio-listener"></a>
+# Audio Listener {#component-audio-listener}
 
 With the **Audio Listener** component, you can place a virtual microphone in the environment\. An audio listener acts as a sink for sound sources in the virtual world, and 3D audio rendering is processed with respect to the listener's world transform\. You can specify the audio listener's position and rotation independently\.
 
-## Audio Listener Properties<a name="component-audio-listener-properties"></a>
+## Audio Listener Properties {#component-audio-listener-properties}
 
 The **Audio Listener** component has the following properties:
 
@@ -23,7 +23,7 @@ Link this property to an entity where the audio listener adopts the offset part 
 **Listener Enabled**  
 Controls the initial state of the listener\.
 
-## Using the Audio Listener Component<a name="component-audio-listener-setup"></a>
+## Using the Audio Listener Component {#component-audio-listener-setup}
 
 Only one audio listener is supported in a game\. You can add the **Audio Listener** component to an entity that contains the game camera\.
 
@@ -35,13 +35,13 @@ Only one audio listener is supported in a game\. You can add the **Audio Listene
 
 1. In the **Entity Inspector**, click **Add Component**, **Audio**, **Audio Listener**\.
 
-## EBus Request Bus Interface<a name="component-audio-listener-ebus-request"></a>
+## EBus Request Bus Interface {#component-audio-listener-ebus-request}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### SetRotationEntity<a name="audio-listener-ebus-setrotationentity"></a>
+### SetRotationEntity {#audio-listener-ebus-setrotationentity}
 
 Specify the entity with the rotational part of the transform that the audio listener will adopt\.
 
@@ -54,7 +54,7 @@ None
 **Scriptable**  
 Yes
 
-### SetPositionEntity<a name="audio-listener-ebus-setpositionentity"></a>
+### SetPositionEntity {#audio-listener-ebus-setpositionentity}
 
 Specify the entity with the positional part of the transform that the audio listener will adopt\.
 
@@ -67,7 +67,7 @@ None
 **Scriptable**  
 Yes
 
-### SetFullTransformEntity<a name="audio-listener-ebus-setfulltransformentity"></a>
+### SetFullTransformEntity {#audio-listener-ebus-setfulltransformentity}
 
 Specify the entity with the full transform that the audio listener will adopt\.
 

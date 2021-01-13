@@ -3,7 +3,7 @@ description: Use the opacity settings in &ALYlong;'s &material-editor; to switch
   alpha blend and alpha test modes. You can also set the Additive parameter.
 title: Setting Material Opacity
 ---
-# Setting Material Opacity<a name="mat-opacity"></a>
+# Setting Material Opacity {#mat-opacity}
 
 An object's opacity refers to its transparency level\. Opacity is important when using an alpha channel for transparency\. 
 

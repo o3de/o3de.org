@@ -3,7 +3,7 @@ description: ' Use the Set Material node in the &ALYlong; &script-canvas; editor
   specify an entity''s material. '
 title: Set Material
 ---
-# Set Material<a name="material-owner-set-material"></a>
+# Set Material {#material-owner-set-material}
 
 Sets an entity's material\. If the material is `Invalid`, this node removes the entity's material override\. The entity uses its default material, if it has one\.
 
@@ -13,7 +13,7 @@ Sets an entity's material\. If the material is `Invalid`, this node removes the 
 
 ![\[setmaterialnode, setmaterial\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-material-owner-node.png)
 
-## Inputs<a name="material-owner-set-material-input"></a>
+## Inputs {#material-owner-set-material-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Sets an entity's material\. If the material is `Invalid`, this node removes the 
 | Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\. You can also select another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  | 
 | Material | Material |  The new material\.  | 
 
-## Outputs<a name="material-owner-set-material-output"></a>
+## Outputs {#material-owner-set-material-output}
 
 
 ****  

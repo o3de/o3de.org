@@ -3,7 +3,7 @@ description: ' Use the &audio-controls-browser; ''s Wwise Controls pane to filte
   and select a middleware-specific control to assign to an ATL control in &ALYlong;. '
 title: Wwise Controls Pane
 ---
-# Wwise Controls Pane<a name="audio-atl-editor-middleware"></a>
+# Wwise Controls Pane {#audio-atl-editor-middleware}
 
 The controls in the **Wwise Controls** pane are middleware\-specific\.
 

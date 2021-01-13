@@ -3,7 +3,7 @@ description: ' Upload resources to and view the status of your &ALYlong; project
   in &AWS;. '
 title: 'Working with Project Stacks '
 ---
-# Working with Project Stacks<a name="cloud-canvas-ui-rm-project-stack"></a>
+# Working with Project Stacks {#cloud-canvas-ui-rm-project-stack}
 
 When you select the **Project stack** node in the **Cloud Canvas Resource Manager** navigation pane, the detail pane shows information about the AWS CloudFormation stack that Cloud Canvas is using\. 
 
@@ -13,7 +13,7 @@ Note the following:
 + If you select a project stack node and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
 + If you select the **Project stack** node when the project has not been initialized for use with Cloud Canvas, Lumberyard prompts you to initialize the project and create a project stack\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md)\. 
 
-## Project Stack Status Table<a name="cloud-canvas-ui-rm-project-stack-status-table"></a>
+## Project Stack Status Table {#cloud-canvas-ui-rm-project-stack-status-table}
 
 The **Project stack status** table shows the status of the AWS CloudFormation stack that contains the resources used by your project's resource groups\. 
 
@@ -33,7 +33,7 @@ This table has the following columns:
 
  **ID** \- A truncated version of the AWS ID for the stack\. To see the full ID, pause your pointer on the truncated ID\. 
 
-## Upload Resources<a name="cloud-canvas-ui-rm-upload-resources"></a>
+## Upload Resources {#cloud-canvas-ui-rm-upload-resources}
 
 Click **Upload resources** to start the process of modifying, creating, or deleting resources in AWS so that they match your local definitions of them\. A dialog box shows the changes that will be applied\.
 
@@ -43,7 +43,7 @@ The table of changes has the same columns as the stack resource status table but
 
 Similarly, before you can start an operation that deletes one or more resources, you must select the option **It is OK that this will permanently DELETE resources**\. 
 
-## Stack Resources Table<a name="cloud-canvas-ui-rm-stack-resources-table"></a>
+## Stack Resources Table {#cloud-canvas-ui-rm-stack-resources-table}
 
 The **Stack resources** table shows the status of the resources that your project is using\. 
 

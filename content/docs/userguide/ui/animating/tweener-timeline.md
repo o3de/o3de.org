@@ -3,7 +3,7 @@ description: ' Use Scripted Entity Tweener''s timeline abilities to chain animat
   together and exert fine control over them in &ALYlong;. '
 title: Tweener Timeline
 ---
-# Tweener Timeline<a name="ui-animating-tweener-timeline"></a>
+# Tweener Timeline {#ui-animating-tweener-timeline}
 
 In the Scripted Entity Tweener system, you can create a timeline for granular control over your animations\. You can chain and group animations\. You can pause, resume, seek, play backward, label, and even dynamically control the playback speed of the animations\.
 

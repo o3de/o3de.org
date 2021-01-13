@@ -3,7 +3,7 @@ description: ' Use the virtual reality samples project to build VR applications 
   any device for &ALYlong;. '
 title: Virtual Reality Samples Project
 ---
-# Virtual Reality Samples Project<a name="sample-project-virtual-reality"></a>
+# Virtual Reality Samples Project {#sample-project-virtual-reality}
 
 The Virtual Reality Samples Project is a template that you can use to build virtual reality \(VR\) applications for any supported device\. The sample is configured with the base set of gems \(HMD Framework, Oculus, and OpenVR\) that you need for VR and demonstrates the following essential VR features:
 + Room\-scale VR setup
@@ -29,7 +29,7 @@ To ensure that the VR project launches, you must use Lumberyard Setup Assistant 
 
 1. Download the required SDKs to view video playback for the Virtual Reality Samples Project\. 
 **Important**  
-The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](/docs/userguide/components/videoplayback.md#component-videoplayback-setup)\. 
+The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](/docs/userguide/components/videoplayback#component-videoplayback-setup)\. 
 
 1. Close Lumberyard Setup Assistant\.
 

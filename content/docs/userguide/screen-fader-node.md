@@ -3,7 +3,7 @@ description: ' Use the Screen Fader node in the &ALYlong; &script-canvas; editor
   control fading the screen to a color and/or texture. '
 title: Screen Fader
 ---
-# Screen Fader<a name="screen-fader-node"></a>
+# Screen Fader {#screen-fader-node}
 
 Controls fading the screen to a color and/or a texture\. You can use this node to script cinematic transitions, such as fading to black or fading to a loading screen texture\. The fade is a screen overlay that is rendered on top of the scene\. The size and position of this overlay can be adjusted to a different size than full screen\. This is useful if you want to draw letter boxes at the top and bottom of the screen\. If you use custom positioning with a texture, you can use this node as a quick way to draw decorative borders around the frame\.
 
@@ -26,7 +26,7 @@ See the following screen fading in a game\.
 
 ![\[Use the Screen Fader node to fade the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
 
-## Inputs<a name="screen-fader-input"></a>
+## Inputs {#screen-fader-input}
 
 
 ****  
@@ -44,7 +44,7 @@ See the following screen fading in a game\.
 | Update Always | Boolean |  Continues fading even when the game is paused\.  | 
 | Screen Coordinates | Vector4 |  Sets the screen coordinates \(left, top, right, and bottom\) where the fade overlay is drawn\. The default is full screen \(`0`, `0`, `1`, `1`\)\.  | 
 
-### Color Property Behavior<a name="color-property-behavior"></a>
+### Color Property Behavior {#color-property-behavior}
 
 The following table shows the actual color values that are blended to cause the fading transition\.
 + **Fading** – Refers to whether a fade\-in or fade\-out effect was triggered\.
@@ -62,7 +62,7 @@ The following table shows the actual color values that are blended to cause the 
 | Out | true |  **Current Color**  | Current Color with Alpha=1 | 
 | Out | false |  **Color** input with Alpha=0  | Color input with Alpha=1 | 
 
-## Outputs<a name="screen-fader-output"></a>
+## Outputs {#screen-fader-output}
 
 
 ****  

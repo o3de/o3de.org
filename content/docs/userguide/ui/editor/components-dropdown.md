@@ -3,7 +3,7 @@ description: ' Use the Dropdown component to make an element behave like a drop-
   menu in the &ALYlong; &ui-canvas-editor;. '
 title: Dropdown
 ---
-# Dropdown<a name="ui-editor-components-dropdown"></a>
+# Dropdown {#ui-editor-components-dropdown}
 
 You can use the **Dropdown** component to make an element behave like a drop\-down menu\. Use this component with child elements that contain content\. The child elements provide the contents of the drop\-down menu\.
 

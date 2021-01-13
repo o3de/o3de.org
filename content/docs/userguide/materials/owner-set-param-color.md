@@ -3,7 +3,7 @@ description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; edi
   to specify a material''s color parameter value for the specified entity. '
 title: Set Param Color
 ---
-# Set Param Color<a name="material-owner-set-param-color"></a>
+# Set Param Color {#material-owner-set-param-color}
 
 Sets a material's color parameter value for the specified entity\.
 
@@ -13,7 +13,7 @@ Sets a material's color parameter value for the specified entity\.
 
 ![\[setparamcolornode, setparamcolor\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-material-owner-node.png)
 
-## Inputs<a name="material-owner-set-param-color-input"></a>
+## Inputs {#material-owner-set-param-color-input}
 
 
 ****  
@@ -26,7 +26,7 @@ Sets a material's color parameter value for the specified entity\.
 | Color | Color |  The new value to apply\.  | 
 | Material ID | Number | If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at 1\. | 
 
-## Outputs<a name="material-owner-set-param-color-output"></a>
+## Outputs {#material-owner-set-param-color-output}
 
 
 ****  

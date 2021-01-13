@@ -2,7 +2,7 @@
 description: ' Add tags for &script-canvas; nodes in &ALYlong;. '
 title: '&script-canvas; Tags for AZ Code Generator'
 ---
-# Script Canvas Tags for AZ Code Generator<a name="script-canvas-custom-nodes-az-code-generator-tags"></a>
+# Script Canvas Tags for AZ Code Generator {#script-canvas-custom-nodes-az-code-generator-tags}
 
 Script Canvas provides a variety of tags that AZ Code Generator uses\. These tags can be found in the source code location `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\. Because the tags are well documented in the code, this guide focuses on showing how to use them rather than on covering each one in detail\.
 
@@ -39,7 +39,7 @@ define ScriptCanvas_Node(ClassName, ...) AZ_JOIN(AZ_GENERATED_, ClassName)
 
 When the project is compiled, the preprocessor finds `AZ_GENERATED_Countdown` in the `Countdown.generated.h` file and replaces that macro with the generated code\.
 
-## Generating the Node Topology<a name="script-canvas-custom-nodes-topology"></a>
+## Generating the Node Topology {#script-canvas-custom-nodes-topology}
 
 After you have declared the node, the next step is to generate the node's topology\. The topology can include a variety of tags, as the following table shows\.
 
@@ -52,8 +52,8 @@ After you have declared the node, the next step is to generate the node's topolo
 | ScriptCanvas\_Out | Provides a named Output execution slot to the node\. | 
 | ScriptCanvas\_Property | This tag must precede a member variable in the class that you want to expose to Script Canvas for editing and scripting\. By default, the property is exposed with an Input and Output slot\. However, you can use the Input or Output attributes to expose only one or the other\. | 
 | ScriptCanvas\_PropertyWithDefaults | Like ScriptCanvas\_Property, but specifies default values\. | 
-| Property | Reflects a property to the serialization context that does not need to be an editable property or an input property\. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior.md#script-canvas-custom-nodes-serializing-hidden-properties)\. | 
-| EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support\. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior.md#script-canvas-custom-nodes-serializing-hidden-properties)\. | 
+| Property | Reflects a property to the serialization context that does not need to be an editable property or an input property\. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties)\. | 
+| EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support\. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties)\. | 
 
 Each of these tags has attributes that can be configured\. For example, the `Countdown.h` \(**Delay**\) node has the following topology:
 

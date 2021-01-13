@@ -3,7 +3,7 @@ description: ' Use mip maps to optimize images to be viewed at various distances
   reducing the time and processing power it takes to render them in &ALYlong;. '
 title: Generating Mip Maps
 ---
-# Generating Mip Maps<a name="asset-pipeline-generating-mipmaps"></a>
+# Generating Mip Maps {#asset-pipeline-generating-mipmaps}
 
 [Mip maps](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#mip_map) are a sequence of optimized images made from one image\. Each image is lower in resolution than the previous image by a power of two\. Mip maps reduce the time and processing power it takes to render an image in a game\. Lower resolution mip maps are used when the viewing distance is great enough that the loss of detail is not noticeable\. Higher resolution mip maps are used when an object is close to the camera and needs to be displayed in detail\.
 
@@ -54,7 +54,7 @@ If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**
 
    To disable mip maps, specify `mipmaps=0`\.
 
-## Adjusting Alpha Test on Mip Maps<a name="asset-pipeline-mipmaps-adjusting-alphatest"></a>
+## Adjusting Alpha Test on Mip Maps {#asset-pipeline-mipmaps-adjusting-alphatest}
 
 You can adjust the Alpha Test value for each mip map in the **MIP Control** tab of the Resource Compiler image tool\.
 

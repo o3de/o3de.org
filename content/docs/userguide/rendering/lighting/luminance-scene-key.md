@@ -3,7 +3,7 @@ description: ' Use accurate illuminance values and auto exposure key settings in
   for best tone and realistic light&endash;dark ratios. '
 title: Illuminance and Auto Exposure Key
 ---
-# Illuminance and Auto Exposure Key<a name="enviro-lighting-luminance-scene-key"></a>
+# Illuminance and Auto Exposure Key {#enviro-lighting-luminance-scene-key}
 
 Also known as luminous flux density, illuminance is the total amount of visible light falling on a point on a surface from all directions above the surface in a given time\. Proper illuminance values ensures the environment lighting in your level closely models real\-world values\. Besides simply having good ratios between light and dark, accurate illuminance values ensure that tone\-mapping, and eye adaptation works optimally\.
 

@@ -2,7 +2,7 @@
 description: ' Reset the transform properties for entities in &ALYlong;. '
 title: Resetting the Transform
 ---
-# Resetting the Transform<a name="reset-transform"></a>
+# Resetting the Transform {#reset-transform}
 
 You can reset the transform for an entity, so that you return the entity to its previous location\.
 

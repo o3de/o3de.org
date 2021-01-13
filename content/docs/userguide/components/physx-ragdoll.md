@@ -3,7 +3,7 @@ description: ' Use the PhysX Ragdoll component to create a physical representati
   of a character in the &ALYlong; &animation-editor; . '
 title: PhysX Ragdoll
 ---
-# PhysX Ragdoll<a name="component-physx-ragdoll"></a>
+# PhysX Ragdoll {#component-physx-ragdoll}
 
 You can use the **PhysX Ragdoll** component to create a physical representation of a character in the animation system and to simulate certain behaviors, such as hit reactions and character death\. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints\. You can adjust the ragdoll settings as needed for physical plausibility and performance\.
 
@@ -11,7 +11,7 @@ The **PhysX Ragdoll** component requires the [PhysX Characters](/docs/userguide/
 
 For more information about the PhysX system, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
 
-## Using the PhysX Ragdoll Component<a name="physx-ragdoll-using-the-component"></a>
+## Using the PhysX Ragdoll Component {#physx-ragdoll-using-the-component}
 
 You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
@@ -23,7 +23,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 1. Use the **Animation Editor** to create and control the physical representation of the ragdoll\. For more information, see [Creating and Simulating a PhysX Ragdoll](/docs/userguide/animation/editor/creating-and-simulating-physx-ragdoll.md)\.
 
-## PhysX Ragdoll Component Properties<a name="physx-ragdoll-component-properties"></a>
+## PhysX Ragdoll Component Properties {#physx-ragdoll-component-properties}
 
 ![\[PhysX Ragdoll component properties.\]](/images/userguide/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
 

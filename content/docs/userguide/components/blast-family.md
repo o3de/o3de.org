@@ -2,7 +2,7 @@
 description: ' Learn about the &ALYlong; Blast Family component. '
 title: Blast Family component
 ---
-# Blast Family component<a name="component-blast-family"></a>
+# Blast Family component {#component-blast-family}
 
 
 ****  
@@ -17,7 +17,7 @@ The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/userg
 
 For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/intro.md)\. 
 
-## Blast Family component properties<a name="component-blast-family-properties"></a>
+## Blast Family component properties {#component-blast-family-properties}
 
 ![\[Properties of the Blast Family component\]](/images/userguide/physx/blast/ui-blast-family-component-1.27.png)
 

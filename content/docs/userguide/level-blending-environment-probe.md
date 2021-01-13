@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Environment Probe components to blend visual af
   for your game. '
 title: Blending Environment Probes
 ---
-# Blending Environment Probes<a name="level-blending-environment-probe"></a>
+# Blending Environment Probes {#level-blending-environment-probe}
 
 You can use an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\. 
 
@@ -23,7 +23,7 @@ To add an environment probe to your scene, see [Working with Components](/docs/u
 + [Dimmer and Night Light Example](#level-environment-probe-nightlight)
 + [Day to Night Cycle Example](#level-environment-probe-daynight)
 
-## Dimmer and Night Light Example<a name="level-environment-probe-nightlight"></a>
+## Dimmer and Night Light Example {#level-environment-probe-nightlight}
 
 The following example scenario demonstrates how to dim a lamp\. The room has a dimmer lamp and a night light\. As the lamp dims, the ambient lighting provided by the environment probes must dim as well\. The room does not completely darken, because of the night light\.
 
@@ -53,9 +53,9 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
 1. Create two [environment probes](/docs/userguide/components/environment-probe.md)\. Put them at the same location and make them the same size\. Name one **probe\_light** and the other **probe\_dark**\.
 
-   1. For **probe\_light**, specify the [**Sort Priority**](/docs/userguide/components/environment-probe.md#component-environment-probe-settings) property to **1**\. This is the environment probe that fades in and out\.
+   1. For **probe\_light**, specify the [**Sort Priority**](/docs/userguide/components/environment-probe#component-environment-probe-settings) property to **1**\. This is the environment probe that fades in and out\.
 
-   1. For **probe\_dark**, keep the default value for [**Sort Priority**](/docs/userguide/components/environment-probe.md#component-environment-probe-settings)\. The value should be **0**\.
+   1. For **probe\_dark**, keep the default value for [**Sort Priority**](/docs/userguide/components/environment-probe#component-environment-probe-settings)\. The value should be **0**\.
 
 1. In the following step, you need to bake the **probe\_light** entity\. Baked means to store information about the lighting in the environment probe\.
 
@@ -63,27 +63,27 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
    1. Select the **probe\_light** entity\.
 
-   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe.md#component-environment-probe-cubemap), click **Generate**\. 
+   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\. 
 
       After the cubemap is generated, the **Add Bounce** button replaces the **Generate** button\.
 
    1. Click **Add Bounce** to rebake the probe with bounced light\.
 
-   1. [Hide](/docs/userguide/components/entity-outliner-entities.md#component-entity-outliner-hiding) the **probe\_light** entity\. This prevents the **probe\_light** entity's lighting from getting baked into the **probe\_dark** entity\.
+   1. [Hide](/docs/userguide/components/entity-outliner-entities#component-entity-outliner-hiding) the **probe\_light** entity\. This prevents the **probe\_light** entity's lighting from getting baked into the **probe\_dark** entity\.
 
 1. To bake the **probe\_dark** entity, do the following:
 
-   1. Select and [hide](/docs/userguide/components/entity-outliner-entities.md#component-entity-outliner-hiding) the **lamp** entity\. This prevents the **lamp** entity's light from getting baked into the **probe\_dark** entity\.
+   1. Select and [hide](/docs/userguide/components/entity-outliner-entities#component-entity-outliner-hiding) the **lamp** entity\. This prevents the **lamp** entity's light from getting baked into the **probe\_dark** entity\.
 
    1. Select the **probe\_dark** entity\.
 
-   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe.md#component-environment-probe-cubemap), click **Generate**\. 
+   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\. 
 
       After the cubemap is generated, the **Add Bounce** button replaces the **Generate** button\.
 
    1. Click **Add Bounce** to rebake the probe with bounced light\.
 
-1. [Show \(unhide\)](/docs/userguide/components/entity-outliner-entities.md#component-entity-outliner-hiding) the **probe\_light** and **lamp** entities\.
+1. [Show \(unhide\)](/docs/userguide/components/entity-outliner-entities#component-entity-outliner-hiding) the **probe\_light** and **lamp** entities\.
 
 1. Create an entity and do the following:
 
@@ -102,7 +102,7 @@ To create the script file, copy and paste the code into a text file\. Rename the
    You can also use the **Entity Outliner** to select the **probe\_light** entity\.
 
    The **Lua Script** component should look like the following example:  
-![\[Lua Script component has LightEntity set to lamp, and ProbeEntity set to probe_light.\]](/images/userguide/level-environment-probe-5.png)<a name="room-light-example-script"></a>
+![\[Lua Script component has LightEntity set to lamp, and ProbeEntity set to probe_light.\]](/images/userguide/level-environment-probe-5.png) {#room-light-example-script}
 
 **Example**  
 See the following `RoomLights.lua` script\.  
@@ -156,7 +156,7 @@ end
 return RoomLights
 ```
 
-## Day to Night Cycle Example<a name="level-environment-probe-daynight"></a>
+## Day to Night Cycle Example {#level-environment-probe-daynight}
 
 The following scenario is a more complex but commonly used example to develop a full day\-to\-night cycle\. This example uses a concept similar to the dimmer in the [Dimmer and Night Light Example](#level-environment-probe-nightlight), but instead of changing the light bulb intensity, you change the sun's position\. This requires a large number of probes blending together\. Also, dawn and dusk require more probes than noon and midnight\. See the following procedure and script outline to get started\. 
 
@@ -172,7 +172,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 
 1. [Add](/docs/userguide/components/working-adding.md) an **[Environment Probe](/docs/userguide/components/environment-probe.md)**component to each entity\.
 
-1. [Hide](/docs/userguide/components/entity-outliner-entities.md#component-entity-outliner-hiding) the probes so that their outputs are not captured in each other's baked lighting\.
+1. [Hide](/docs/userguide/components/entity-outliner-entities#component-entity-outliner-hiding) the probes so that their outputs are not captured in each other's baked lighting\.
 
 1. To bake each probe, do the following:
 
@@ -186,7 +186,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 
    1. \(Optional\) To simulate additional light bounces, show \(unhide\) the environment probe and click **Add Bounce**\.
 
-   1. If it's not still hidden, [hide](/docs/userguide/components/entity-outliner-entities.md#component-entity-outliner-hiding) the probe and then repeat these steps for the next probe\.
+   1. If it's not still hidden, [hide](/docs/userguide/components/entity-outliner-entities#component-entity-outliner-hiding) the probe and then repeat these steps for the next probe\.
 
 1. After you set the time of day and generate \(bake\) the cubemap for every probe, create another entity named **probe\_set**\.
 
@@ -209,7 +209,7 @@ To create the script file, copy and paste the code into a text file\. Rename the
 1. Assign each of your probes to one of the script's **EntityId** probe slots\. In the **Entity Inspector**, click the target icon ![\[Target picker icon\]](/images/userguide/picker.png) next to an empty slot\. In the **Entity Outliner**, select a probe\. Repeat until all slots are filled\.
 
    In the following example, all of the empty slots are filled\. When they are not yet selected, the **EntityId** boxes are blank\.  
-![\[Lua Script component with all probes selected.\]](/images/userguide/level-environment-probe-daynight-3.png)<a name="probe-blending-example-script"></a>
+![\[Lua Script component with all probes selected.\]](/images/userguide/level-environment-probe-daynight-3.png) {#probe-blending-example-script}
 
 **Example**  
 See the following `ProbeBlending.lua` script\. To use this script, you must be in the StarterGame project\.  

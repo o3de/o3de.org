@@ -2,7 +2,7 @@
 description: ' Test your new gem by enabling it in &ALYlong; &project-configurator;. '
 title: Testing Your Gem
 ---
-# Testing Your Gem<a name="gems-system-gems-testing"></a>
+# Testing Your Gem {#gems-system-gems-testing}
 
 After you move your assets into the gem's directory structure, you can enable your new gem in your game project and test it in Lumberyard\.
 

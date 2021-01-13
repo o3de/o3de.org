@@ -3,7 +3,7 @@ description: ' Use the Lightning Arc Gem to create realistic electric arcing and
   effects between points in your &ALYlong; level. '
 title: Lightning Arc Gem
 ---
-# Lightning Arc Gem<a name="gems-system-gem-lightning-arc"></a>
+# Lightning Arc Gem {#gems-system-gem-lightning-arc}
 
 The Lightning Arc Gem creates realistic electric arcing and sparking effects between points in a level\.
 

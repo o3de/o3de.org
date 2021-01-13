@@ -2,13 +2,13 @@
 description: ' Visualize objects in a world with render nodes in &ALYlong;. '
 title: Render Nodes
 ---
-# Render Nodes<a name="graphics-rendering-rendernode"></a>
+# Render Nodes {#graphics-rendering-rendernode}
 
 To visualize objects in a world, Lumberyard defines the concepts of the render node and render element\. Render nodes represent general objects in the 3D engine\. Among other things, they are used to build a hierarchy for visibility culling, allow physics interactions \(optional\), and rendering\.
 
 For actual rendering, render nodes add themselves to the renderer, passing an appropriate render element that implements the actual drawing of the object\. This process happens with the help of render objects, as shown in the sample code below
 
-## Creating a New Render Node<a name="graphics-rendering-rendernode-new"></a>
+## Creating a New Render Node {#graphics-rendering-rendernode-new}
 
 The following example creates a render node called **PrismObject**\. It is derived from `IRenderNode`, defined in `Code/CryEngine/CryCommon/IEntityRenderState.h`\.
 

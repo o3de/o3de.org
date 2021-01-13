@@ -3,7 +3,7 @@ description: ' Specify connection parameters to use the TCP stream socket driver
   &ALYlong; 1.10 and later. '
 title: Using the TCP Stream Driver
 ---
-# Using the TCP Stream Driver<a name="network-tcp-using"></a>
+# Using the TCP Stream Driver {#network-tcp-using}
 
 To use the TCP stream socket driver, you specify connection parameters for internal buffers, a listening port, and the maximum number of connections\.
 
@@ -13,13 +13,13 @@ To start accepting new connections on the server, call the `StartListen()` metho
 
 During the setup for the carrier instance, call the `StartListen()` method for servers and the `ConnectTo()` method for clients\. You can do this before you assign the `m_driver` member of the `CarrierDesc` structure\.
 
-## Stream Connection Setup<a name="network-tcp-using-stream-connection-setup"></a>
+## Stream Connection Setup {#network-tcp-using-stream-connection-setup}
 
 To construct a stream socket driver, specify the maximum number of connections \(1 for clients\), the maximum packet size, and the byte sizes for the internal buffers for inbound and outbound traffic\.
 
 To prepare the socket driver, use the `Initialize()` method with a socket family\. IPv4 and IPv6 are supported\. Specify binding parameters and socket buffer sizes\. The driver uses internal buffers to spool streamed traffic during the `Update()` call\. GridMate processes the `Update()` call when it is using the carrier instance\.
 
-### Constructing the TCP Socket Driver<a name="network-tcp-using-constructing-the-tcp-socket-driver"></a>
+### Constructing the TCP Socket Driver {#network-tcp-using-constructing-the-tcp-socket-driver}
 
 The following code example shows how to construct the TCP socket driver\.
 
@@ -43,7 +43,7 @@ Note the following:
 + The maximum packet size should be less than or equal to the outbound buffer size\.
 + Both buffer sizes are stored in application memory\.
 
-### Initializing the Socket Driver<a name="network-tcp-using-initializing-the-socket-driver"></a>
+### Initializing the Socket Driver {#network-tcp-using-initializing-the-socket-driver}
 
 The following code example shows how to initialize the TCP socket driver\.
 
@@ -74,7 +74,7 @@ Note the following:
 + The `isBroadcast` flag is always set to `false`, since a TCP socket is not able to send broadcast packets\.
 + The receive and send buffer size are specified in bytes and refer to the TCP stack’s buffer size for the socket\.
 
-## Setting Up a Stream Socket Event Bus Handler<a name="network-tcp-using-setting-up-a-stream-socket-event-bus-handler"></a>
+## Setting Up a Stream Socket Event Bus Handler {#network-tcp-using-setting-up-a-stream-socket-event-bus-handler}
 
 An event bus handler instance monitors connection events from GridMate’s stream socket driver\. The following code shows a simple stream socket event handler\.
 
@@ -106,19 +106,19 @@ struct ConnectionHandler : public GridMate::StreamSocketDriverEventsBus::Handler
     AZ::s32 m_ConnectionCount;};
 ```
 
-## Processing a Server<a name="network-tcp-using-processing-a-server"></a>
+## Processing a Server {#network-tcp-using-processing-a-server}
 
 After you construct and initialize the stream socket driver, use the `StartListen()` method to instruct the server to accept clients\. The `StartListen()` method takes a `backlog` parameter that specifies the incoming connection request limit\. The driver emits successful connections to its event bus\.
 
 When you are finished with the server process, but before you shut down GridMate, call the `StopListen()` method\. To disconnect a client, you can use the `DisconnectFrom()` method on the server’s driver instance\.
 
-## Processing a Client<a name="network-tcp-using-processing-a-client"></a>
+## Processing a Client {#network-tcp-using-processing-a-client}
 
 To connect a client to a server, create a socket driver address\. To start the connection process, use the `ConnectTo()` method\. When the stream socket driver establishes a connection to the server, it sends a connect event\.
 
 To disconnect from the server, the client code uses the `DisconnectFrom()` method\. The driver sends a disconnect event when the server gracefully disconnects from the client\.
 
-## Sending and Receiving Data from the Stream Driver<a name="network-tcp-using-sending-and-receiving-data-from-the-stream-driver"></a>
+## Sending and Receiving Data from the Stream Driver {#network-tcp-using-sending-and-receiving-data-from-the-stream-driver}
 
 To send and receive data from the stream driver, you use the `Send()` and `Receive()` methods just as you do with the UDP driver\.
 

@@ -2,7 +2,7 @@
 description: ' Learn how to install and set up &ALYlong; for the first time. '
 title: Setting up &ALYlong;
 ---
-# Setting up Amazon Lumberyard<a name="setting-up-intro"></a>
+# Setting up Amazon Lumberyard {#setting-up-intro}
 
 Amazon Lumberyard has a two\-part installation process:
 

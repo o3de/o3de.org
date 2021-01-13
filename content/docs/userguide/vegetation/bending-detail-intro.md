@@ -3,7 +3,7 @@ description: ' Add detail bending effects to the vegetation in your &ALYlong; ga
   project. '
 title: Adding Detail Bending Effects
 ---
-# Adding Detail Bending Effects<a name="vegetation-bending-detail-intro"></a>
+# Adding Detail Bending Effects {#vegetation-bending-detail-intro}
 
 Detail bending refers to the procedural movement of larger foliage caused by wind or other similar effects\. You control the motion by the use of vertex colors in your DCC tool\. 
 
@@ -13,7 +13,7 @@ When you use detail bending, make sure the distribution of polygons on foliage g
 + [Defining Vegetation Vertex Colors with a DCC Tool](#vegetation-bending-detail-vertex-colors)
 + [Setting the Detail Bending Parameter](#vegetation-bending-detail-params)
 
-## Defining Vegetation Vertex Colors with a DCC Tool<a name="vegetation-bending-detail-vertex-colors"></a>
+## Defining Vegetation Vertex Colors with a DCC Tool {#vegetation-bending-detail-vertex-colors}
 
 Vegetation objects use vertex colors to specify detail bending\. Lumberyard uses all three RGB channels to control the movement of the geometry\. Use your DCC tool to edit and view each channel separately\.
 
@@ -34,7 +34,7 @@ Once you have painted all of the channels, export your asset as an `.fbx` file\.
 
 ![\[Example of painted channels final image.\]](/images/userguide/vegetation/vegetation-bending-channels.png)
 
-## Setting the Detail Bending Parameter<a name="vegetation-bending-detail-params"></a>
+## Setting the Detail Bending Parameter {#vegetation-bending-detail-params}
 
 Once you define the vertex colors, you must set the **Bending** parameter for detail bending\. This value controls the procedural bending for vegetation\. Its value ranges from `0` to `100`\. A value of `0` means no bending effect\. A value of `100` indicates the maximum effect when receiving environmental wind\. 
 

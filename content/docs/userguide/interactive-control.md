@@ -3,7 +3,7 @@ description: ' Use interactive element controls to control an element while it h
   focus in &ALY;. '
 title: Interactive Element Controls
 ---
-# Interactive Element Controls<a name="interactive-control"></a>
+# Interactive Element Controls {#interactive-control}
 
 To interact with a focused element, press **Enter** on the keyboard\)\.
 

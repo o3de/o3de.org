@@ -2,7 +2,7 @@
 description: ' Use survey operations to manage your &cloud; in-game surveys in &ALYlong;. '
 title: Survey Operations
 ---
-# Survey Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-operations"></a>
+# Survey Operations {#cloud-canvas-cloud-gem-in-game-survey-api-survey-operations}
 
 You can use survey operations to manage your Cloud Canvas in\-game surveys\.
 
@@ -15,7 +15,7 @@ You can use survey operations to manage your Cloud Canvas in\-game surveys\.
 + [Rename a Survey](#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename)
 + [Delete a Survey](#cloud-canvas-cloud-gem-in-game-survey-api-survey-delete)
 
-## Create or Clone a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone"></a>
+## Create or Clone a Survey {#cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone}
 
 Creates or clones a survey that has the name provided in the request body\.
 
@@ -23,9 +23,9 @@ Creates or clones a survey that has the name provided in the request body\.
 POST /surveys
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-request-parameters}
 
-#### create\_survey\_input<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-request-parameters-create-survey-input"></a>
+#### create\_survey\_input {#cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-request-parameters-create-survey-input}
 
 Creates a survey input object\. Use the `survey_name` field for the survey name\. Use the optional `survey_id_to_clone` field if you want to clone the new survey from an existing survey\.
 
@@ -40,7 +40,7 @@ Located in: Body
 
 Required: Yes
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-create-or-clone-response}
 
 Returns a unique ID for the survey that is created\.
 
@@ -51,7 +51,7 @@ Returns a unique ID for the survey that is created\.
 }
 ```
 
-## Publish or Unpublish a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish"></a>
+## Publish or Unpublish a Survey {#cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish}
 
 Publishes or unpublishes the survey that has the specified ID\. Returns the status of the change\.
 
@@ -59,9 +59,9 @@ Publishes or unpublishes the survey that has the specified ID\. Returns the stat
 PUT /surveys/{survey_id}/published
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters-survey-id}
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
@@ -71,7 +71,7 @@ Located in: Path
 
 Required: Yes
 
-#### survey\_published\_status<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters-survey-published-status"></a>
+#### survey\_published\_status {#cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-request-parameters-survey-published-status}
 
 The published status object that indicates whether the survey is published\.
 
@@ -85,7 +85,7 @@ Located in: Body
 
 Required: Yes
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-publish-unpublish-response}
 
 Returns a string that reports the status of the change\.
 
@@ -95,7 +95,7 @@ Returns a string that reports the status of the change\.
 }
 ```
 
-## Get an Active Survey by ID<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get"></a>
+## Get an Active Survey by ID {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get}
 
 ```
 GET /active/surveys/{survey_id}
@@ -103,9 +103,9 @@ GET /active/surveys/{survey_id}
 
 Gets the active survey that has the specified survey ID\.
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-survey-id}
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
@@ -115,7 +115,7 @@ Located in: Path
 
 Required: Yes
 
-#### question\_index<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-question-index"></a>
+#### question\_index {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-question-index}
 
 The index of the question from which to start the query\.
 
@@ -125,7 +125,7 @@ Located in: Query
 
 Required: No
 
-#### question\_count<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-question-count"></a>
+#### question\_count {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-request-parameters-question-count}
 
 The number of questions to query starting with `question_index`\.
 
@@ -135,7 +135,7 @@ Located in: Query
 
 Required: No
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-active-get-response}
 
 Returns the active survey that has the specified ID in a JSON object\.
 
@@ -162,7 +162,7 @@ Returns the active survey that has the specified ID in a JSON object\.
 }
 ```
 
-## Get a Survey by ID<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id"></a>
+## Get a Survey by ID {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id}
 
 Gets the survey with the specified survey ID\.
 
@@ -170,9 +170,9 @@ Gets the survey with the specified survey ID\.
 GET /surveys/{survey_id}
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-survey-id}
 
 Type: String
 
@@ -182,7 +182,7 @@ Required: Yes
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
-#### question\_index<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-question-index"></a>
+#### question\_index {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-question-index}
 
 Type: Integer
 
@@ -192,7 +192,7 @@ Required: No
 
 Specifies the question from which to start querying\.
 
-#### question\_count<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-question-count"></a>
+#### question\_count {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-request-parameters-question-count}
 
 Type: Integer
 
@@ -202,7 +202,7 @@ Required: No
 
 Specifies the number of questions to query starting from `question_index`\.
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-get-by-id-response}
 
 Returns the survey that has the specified ID in a JSON object\.
 
@@ -230,7 +230,7 @@ Returns the survey that has the specified ID in a JSON object\.
 }
 ```
 
-## Update the Activation Period for a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update"></a>
+## Update the Activation Period for a Survey {#cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update}
 
 Updates the activation period for the survey\.
 
@@ -238,9 +238,9 @@ Updates the activation period for the survey\.
 PUT /surveys/{survey_id}/activation_period
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters-survey-id}
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
@@ -250,7 +250,7 @@ Located in: Path
 
 Required: Yes
 
-#### update\_activation\_period\_input<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters-update-activation-period-input"></a>
+#### update\_activation\_period\_input {#cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-request-parameters-update-activation-period-input}
 
 Specifies the activation start time and activation end time using the following syntax:
 
@@ -265,7 +265,7 @@ Located in: Body
 
 Required: Yes
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-activation-period-update-response}
 
 Returns a string that reports the status of the update\.
 
@@ -275,7 +275,7 @@ Returns a string that reports the status of the update\.
 }
 ```
 
-## Rename a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-rename"></a>
+## Rename a Survey {#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename}
 
 Renames the survey that has the specified ID\.
 
@@ -283,9 +283,9 @@ Renames the survey that has the specified ID\.
 PUT /surveys/{survey_id}/name
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters-survey-id}
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
@@ -295,7 +295,7 @@ Located in: Path
 
 Required: Yes
 
-#### rename\_survey\_input<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters-rename-survey-input"></a>
+#### rename\_survey\_input {#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-request-parameters-rename-survey-input}
 
 A rename survey object that specifies the new name for the survey\.
 
@@ -309,7 +309,7 @@ Located in: Body
 
 Required: Yes
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-rename-response}
 
 Returns a string that reports the status of the renaming\.
 
@@ -319,7 +319,7 @@ Returns a string that reports the status of the renaming\.
 }
 ```
 
-## Delete a Survey<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-delete"></a>
+## Delete a Survey {#cloud-canvas-cloud-gem-in-game-survey-api-survey-delete}
 
 Deletes the survey that has the specified survey ID\.
 
@@ -327,9 +327,9 @@ Deletes the survey that has the specified survey ID\.
 DELETE /surveys/{survey_id}
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-request-parameters}
 
-#### survey\_id<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-request-parameters-survey-id"></a>
+#### survey\_id {#cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-request-parameters-survey-id}
 
 Type: String
 
@@ -339,7 +339,7 @@ Required: Yes
 
 The survey UUID that is returned from creating a survey or querying survey metadata\.
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-survey-delete-response}
 
  Returns a string that reports the status of the deletion\.
 

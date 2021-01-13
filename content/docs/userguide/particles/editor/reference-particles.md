@@ -3,7 +3,7 @@ description: ' Use the Particles attribute in the &ALYlong; &particle-editor; to
   the basic appearance of the particle. '
 title: ' Particles Attribute'
 ---
-# Particles Attribute<a name="particle-editor-reference-particles"></a>
+# Particles Attribute {#particle-editor-reference-particles}
 
 In the **Particles** attribute, specify how to control the particle's basic appearance\. 
 
@@ -26,7 +26,7 @@ We recommend that you set up the **Particles** attribute first because it includ
 | Sorting Convergence | \(GPU only\) Sorts convergence per frame for an odd to even merge sort\. Default value: `1` | 
 | Texture | Opens the Asset Browser to specify a texture for the 2D sprite particles\. When you pause on the input box, a preview of the texture appears\. Default value: `/Editor/Plugins/ParticleEditorPlugin/defaultparticle.dds` | 
 | Normal Map |  \(GPU only\) Opens the **Asset Browser** to specify a normal map for the 2D GPU particles\.  | 
-| Glow Map |  \(GPU only\) Opens the **Asset Browser** to specify a glow map for the 2D GPU particles\.   You must specify a positive value for the **[Emissive Lighting](/docs/userguide/particles/editor/reference-lighting.md#emissive-lighting-parameter)** parameter for the glow map to be visible\.   | 
+| Glow Map |  \(GPU only\) Opens the **Asset Browser** to specify a glow map for the 2D GPU particles\.   You must specify a positive value for the **[Emissive Lighting](/docs/userguide/particles/editor/reference-lighting#emissive-lighting-parameter)** parameter for the glow map to be visible\.   | 
 | Texture Tiling | Splits the texture into tiles for variation and animation\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-reference-particles.html) | 
 | Color |  Selects the color and alpha to apply to a particle\.  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-reference-particles.html)  | 
 | Alpha clip |  \(CPU only\) Customizes how the particle **Alpha** value controls opacity or alpha test values\. Each parameter has two values that correspond when particle **Alpha** = `0` and `1`\. They are interpolated for each particle with its **Alpha** value and used in the shader with the following equation:  FinalOpacity = saturate\( \(TextureAlpha \- SourceMin\) / min\(SourceWidth, 1 \- SourceMin\) \) \* Scale  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-reference-particles.html)  | 

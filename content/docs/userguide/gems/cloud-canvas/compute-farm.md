@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Compute Farm cloud gem to divide and conquer la
   tasks for processing on a fleet of &EC2; instances. '
 title: Compute Farm Cloud Gem
 ---
-# Compute Farm Cloud Gem<a name="cloud-canvas-cloud-gem-compute-farm"></a>
+# Compute Farm Cloud Gem {#cloud-canvas-cloud-gem-compute-farm}
 
 The Compute Farm cloud gem is a tool for large\-scale divide and conquer tasks that can be processed on a fleet of Amazon EC2 instances\. This cloud gem is particularly suited for heavy\-duty, computationally intensive Windows tasks like nav mesh generation, static lightmap baking, and terrain generation\. In general, the Compute Farm cloud gem is designed for tasks that can be highly parallelized with recursive subdivision\.
 
@@ -15,7 +15,7 @@ The Compute Farm cloud gem has the following three major aspects:
 
 1. **Launch Configuration and Auto Scaling Group** – After the AMI is created, you must create an [Amazon EC2 Launch Configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html) and an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) to control the fleet of Amazon EC2 instances that will run the AMI\. This is done in the Compute Farm Cloud Gem Portal; you set the Auto Scaling Group to the desired number of Amazon EC2 instances\.
 
-## Workflow Summary<a name="cloud-canvas-cloud-gem-compute-farm-workflow-summary"></a>
+## Workflow Summary {#cloud-canvas-cloud-gem-compute-farm-workflow-summary}
 
 The harness receives and processes events from [Amazon SWF](https://aws.amazon.com/swf/), and runs three categories of task: **divide**, **build** and **merge**\.
 
@@ -36,7 +36,7 @@ See the following high\-level workflow for completing a computing task:
 
 For a high\-level explanation and demonstration of the Compute Farm cloud gem for large scale terrain generation, see the [2018 GDC classroom session](https://www.youtube.com/watch?v=STZLqIx13Ps) on YouTube\. Developers who are interested in this particular implementation can reach out to us at lumberyard\-feedback@amazon\.com\.
 
-## Account Limits<a name="cloud-canvas-cloud-gem-compute-farm-account-limits"></a>
+## Account Limits {#cloud-canvas-cloud-gem-compute-farm-account-limits}
 
 Your use of the Compute Farm cloud gem is subject to the limits on your AWS account\. The following are the most relevant limits that you are likely to encounter:
 + Limits on the number of on\-demand Amazon EC2 instances that you can run for a particular type\. For more information, see [Q: How many instances can I run in Amazon EC2?](https://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2)

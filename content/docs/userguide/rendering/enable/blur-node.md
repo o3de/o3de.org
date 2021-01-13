@@ -3,7 +3,7 @@ description: ' Use the Enable Blur node in the &ALYlong; &script-canvas; editor 
   set the blur (Gaussian blur) filter. '
 title: Enable Blur
 ---
-# Enable Blur<a name="enable-blur-node"></a>
+# Enable Blur {#enable-blur-node}
 
 Sets the blur filter, which uses Gaussian blur\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Blur](/docs/userguide/rendering/disable/blur
 
 ![\[Use the Enable Blur node to blur the screen for your game.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-blur-node-example.png)
 
-## Inputs<a name="enable-blur-node-input"></a>
+## Inputs {#enable-blur-node-input}
 
 
 ****  
@@ -29,7 +29,7 @@ To disable the effect, see [Disable Blur](/docs/userguide/rendering/disable/blur
 | In | Event | Triggers the node\. | 
 | Amount | Number | Amount of blurring\. | 
 
-## Outputs<a name="enable-blur-node-output"></a>
+## Outputs {#enable-blur-node-output}
 
 
 ****  

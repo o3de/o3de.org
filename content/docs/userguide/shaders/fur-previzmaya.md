@@ -2,7 +2,7 @@
 description: ' Use the Maya fur previsualization in &ALYlong;. '
 title: Maya &endash; Fur Previsualization
 ---
-# Maya – Fur Previsualization<a name="shader-ref-fur-previzmaya"></a>
+# Maya – Fur Previsualization {#shader-ref-fur-previzmaya}
 
 ![\[Example Maya fur visualization.\]](/images/userguide/shaders/shader-ref-fur-14.png)
 

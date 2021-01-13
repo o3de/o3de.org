@@ -2,7 +2,7 @@
 description: ' Use &script-canvas; to decode URLs in &ALYlong;. '
 title: Decoding a URL with &script-canvas;
 ---
-# Decoding a URL with Script Canvas<a name="cloud-canvas-cloud-gem-aws-url-decode-sc"></a>
+# Decoding a URL with Script Canvas {#cloud-canvas-cloud-gem-aws-url-decode-sc}
 
 You can use the **AWSBehaviorURL** **Decode** node in Script Canvas to decode an encoded URL, as in the following example:
 
@@ -21,7 +21,7 @@ https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-intro.html
 + [Step 2: Add Nodes to Display the Result](#cloud-canvas-cloud-gem-aws-url-decode-sc-display-result)
 + [Step 3: Test the URL Decoder](#cloud-canvas-cloud-gem-aws-url-decode-sc-test)
 
-## Step 1: Add Nodes to Decode a URL<a name="cloud-canvas-cloud-gem-aws-url-decode-sc-add-nodes"></a>
+## Step 1: Add Nodes to Decode a URL {#cloud-canvas-cloud-gem-aws-url-decode-sc-add-nodes}
 
 The following procedure shows you how to create a Script Canvas graph that decodes a URL\.
 
@@ -51,7 +51,7 @@ The following procedure shows you how to create a Script Canvas graph that decod
 
 1. Connect the **AWSBehavioralURL** pin of the **Get Variable 1** node to the **AWSBehavioralURL:0** pin of the **Decode** node\.
 
-## Step 2: Add Nodes to Display the Result<a name="cloud-canvas-cloud-gem-aws-url-decode-sc-display-result"></a>
+## Step 2: Add Nodes to Display the Result {#cloud-canvas-cloud-gem-aws-url-decode-sc-display-result}
 
 At this point, if you saved the graph and started the level, the **Get Variable** node would pass its value to the **Decode** node, which would decode it\. However, you wouldn't see the result\. To see the result, you must add **AWSBehaviorURLNotificationBus** nodes and a **Print** node to the graph\. These nodes monitor for `AWSBehaviorURL` events and show you the decoding results in the Lumberyard console window\.
 
@@ -74,7 +74,7 @@ At this point, if you saved the graph and started the level, the **Get Variable*
 
 1. Exit the Script Canvas editor\.
 
-## Step 3: Test the URL Decoder<a name="cloud-canvas-cloud-gem-aws-url-decode-sc-test"></a>
+## Step 3: Test the URL Decoder {#cloud-canvas-cloud-gem-aws-url-decode-sc-test}
 
 Now you are ready to attach the script canvas to an entity and test it\.
 

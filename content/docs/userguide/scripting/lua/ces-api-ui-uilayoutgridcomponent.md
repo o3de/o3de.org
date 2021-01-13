@@ -3,15 +3,15 @@ description: ' Use the UILayoutGridComponent to control grid layout characterist
   in &ALYlong;. '
 title: UILayoutGridComponent
 ---
-# UILayoutGridComponent<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent"></a>
+# UILayoutGridComponent {#lua-scripting-ces-api-ui-uilayoutgridcomponent}
 
 Controls grid layout characteristics\.
 
-## UiLayoutGridBus<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus"></a>
+## UiLayoutGridBus {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus}
 
 Services messages for the `UiLayoutGridComponent`\.
 
-### GetCellSize<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getcellsize"></a>
+### GetCellSize {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getcellsize}
 
 Returns, in pixels, the size of a child element\.
 
@@ -21,7 +21,7 @@ Returns, in pixels, the size of a child element\.
 AZ::Vector2 GetCellSize()
 ```
 
-### GetHorizontalOrder<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-gethorizontalorder"></a>
+### GetHorizontalOrder {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-gethorizontalorder}
 
 Returns the horizontal order for the layout\.
 
@@ -41,7 +41,7 @@ enum eUiHorizontalOrder
     };
 ```
 
-### GetPadding<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getpadding"></a>
+### GetPadding {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getpadding}
 
 Returns, in pixels, the padding inside the edges of the element\.
 
@@ -63,7 +63,7 @@ class UiPadding
 };
 ```
 
-### GetSpacing<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getspacing"></a>
+### GetSpacing {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getspacing}
 
 Returns, in pixels, the spacing between child elements\.
 
@@ -73,7 +73,7 @@ Returns, in pixels, the spacing between child elements\.
 AZ::Vector2 GetSpacing()
 ```
 
-### GetStartingDirection<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getstartingdirection"></a>
+### GetStartingDirection {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getstartingdirection}
 
 Returns the starting direction for the layout\.
 
@@ -93,7 +93,7 @@ enum eUiLayoutGridStartingDirection
     };
 ```
 
-### GetVerticalOrder<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getverticalorder"></a>
+### GetVerticalOrder {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getverticalorder}
 
 Returns the vertical order for the layout\.
 
@@ -113,7 +113,7 @@ enum eUiVerticalOrder
     };
 ```
 
-### SetCellSize<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setcellsize"></a>
+### SetCellSize {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setcellsize}
 
 Sets the size of a child element to the specified number of pixels\.
 
@@ -123,7 +123,7 @@ Sets the size of a child element to the specified number of pixels\.
 void SetCellSize(AZ::Vector2 size)
 ```
 
-### SetHorizontalOrder<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-sethorizontalorder"></a>
+### SetHorizontalOrder {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-sethorizontalorder}
 
 Sets the horizontal order for the layout\.
 
@@ -135,7 +135,7 @@ void SetHorizontalOrder(eUiHorizontalOrder order)
 
 For possible values for `eUiHorizontalOrder`, see [GetHorizontalOrder](#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-gethorizontalorder)\.
 
-### SetPadding<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setpadding"></a>
+### SetPadding {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setpadding}
 
 Sets the padding inside the edges of the element to the specified number of pixels\.
 
@@ -147,7 +147,7 @@ void SetPadding(UiPadding padding)
 
 For possible values for `UiPadding`, see [GetPadding](#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getpadding)\.
 
-### SetSpacing<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setspacing"></a>
+### SetSpacing {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setspacing}
 
 Sets the spacing between child elements to the specified number of pixels\.
 
@@ -157,7 +157,7 @@ Sets the spacing between child elements to the specified number of pixels\.
 void SetSpacing(AZ::Vector2 spacing)
 ```
 
-### SetStartingDirection<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setstartingdirection"></a>
+### SetStartingDirection {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setstartingdirection}
 
 Sets the starting direction for the layout\.
 
@@ -169,7 +169,7 @@ void SetStartingDirection(eUiLayoutGridStartingDirection direction)
 
 For possible values for `eUiLayoutGridStartingDirection`, see [GetStartingDirection](#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getstartingdirection)\.
 
-### SetVerticalOrder<a name="lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setverticalorder"></a>
+### SetVerticalOrder {#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-setverticalorder}
 
 Sets the vertical order for the layout\.
 

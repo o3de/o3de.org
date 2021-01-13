@@ -2,7 +2,7 @@
 description: ' Place a decal in your level in &ALYlong;. '
 title: Placing a Decal
 ---
-# Placing a Decal<a name="mat-maps-decal-placing"></a>
+# Placing a Decal {#mat-maps-decal-placing}
 
 
 ****  

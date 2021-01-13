@@ -3,7 +3,7 @@ description: ' Learn the implementation details for the Leaderboard Sample Level
   &ALYlong;. '
 title: Leaderboard Sample Level Implementation Details
 ---
-# Leaderboard Sample Level Implementation Details<a name="cloud-canvas-cloud-gem-leaderboard-implementation-details"></a>
+# Leaderboard Sample Level Implementation Details {#cloud-canvas-cloud-gem-leaderboard-implementation-details}
 
 An entity named `Leaderboard` contains the `CloudGemLeaderboardClientComponent`\.
 

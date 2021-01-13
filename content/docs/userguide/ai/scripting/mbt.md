@@ -2,11 +2,11 @@
 description: ' Understand core concepts for the Modular Behavior Tree (MBT) in &ALYlong;. '
 title: Modular Behavior Tree
 ---
-# Modular Behavior Tree<a name="ai-scripting-mbt"></a>
+# Modular Behavior Tree {#ai-scripting-mbt}
 
 Modular behavior tree \(MBT\) is a collection of concepts for authoring behaviors for artificial intelligent \(AI\) agents in your game\. Instead of writing complicated code in C\+\+ or other general purpose programming language, MBT lets you describe AI behaviors at a high level without having to think about mechanics such as pointers, memory, and compilers\. MBT concepts and implementation are optimized for rapid iteration and re\-use\.
 
-## Core Concepts<a name="ai-scripting-mbt-concepts"></a>
+## Core Concepts {#ai-scripting-mbt-concepts}
 
 Conceptually, MBT is based on two key objects: the *node* and the *tree*\. 
 
@@ -19,15 +19,15 @@ Game developers can create the nodes needed for their game\. In addition, Lumber
 **Tree**  
 Behaviors are constructed by building trees of nodes\. These are a collection of individual tasks that when positioned as a root with branches that extend out into leaves define how an AI agent behaves in response to input\. 
 
-## Common Node Patterns<a name="ai-scripting-mbt-common-node-patterns"></a>
+## Common Node Patterns {#ai-scripting-mbt-common-node-patterns}
 
-### Action Nodes<a name="ai-scripting-mbt-common-node-patterns-action"></a>
+### Action Nodes {#ai-scripting-mbt-common-node-patterns-action}
 
 An action node represents some sort of simple action\. Action nodes might cause the AI agent to speak, play an animation, or move to a different location\. 
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_action_node.png)
 
-### Composite Nodes<a name="ai-scripting-mbt-common-node-patterns-composite"></a>
+### Composite Nodes {#ai-scripting-mbt-common-node-patterns-composite}
 
 A composite node represents a series of actions to be performed in a certain order\. Composite nodes consist of a parent node and two or more child nodes\. Whether or not a child node is processed \(and in what order\) can depend on the success or failure of previously processed nodes\. Common composite patterns include sequential, selector, and parallel\.
 
@@ -47,7 +47,7 @@ This composite pattern describes child nodes that are processed concurrently\. I
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_parallel_node.png)
 
-### Decorator Nodes<a name="ai-scripting-mbt-common-node-patterns-decorator"></a>
+### Decorator Nodes {#ai-scripting-mbt-common-node-patterns-decorator}
 
 A decorator node represents some sort of functionality that can be added to another node and behaves regardless of how the other node works or what it does\. Common decorator functionality includes looping and limiting concurrent functionality\.
 
@@ -63,7 +63,7 @@ To handle the scenario described, the selector node would have two child nodes, 
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_limit_node.png)
 
-## Describing Behavior Trees in XML<a name="ai-scripting-mbt-describing"></a>
+## Describing Behavior Trees in XML {#ai-scripting-mbt-describing}
 
 Behavior trees are described using XML markup language\. Behavior trees are hot\-loaded every time the user jumps into the game in the editor\.
 
@@ -82,17 +82,17 @@ The following XML example describes the behavior tree for a group of monsters\. 
 </BehaviorTree>
 ```
 
-## C\+\+ Implementation<a name="ai-scripting-mbt-cpp"></a>
+## C\+\+ Implementation {#ai-scripting-mbt-cpp}
 
 You'll find all MBT code encapsulated in the BehaviorTree namespace\.
 
-### Understanding the Memory Model<a name="ai-scripting-mbt-cpp-memory-model"></a>
+### Understanding the Memory Model {#ai-scripting-mbt-cpp-memory-model}
 
 MBT has a relatively small memory footprint\. It accomplishes this by \(1\) sharing immutable \(read\-only\) data between instances of a tree, and \(2\) only allocating memory for things that are necessary to the current situation\.
 
 Memory is divided into two categories: configuration data and runtime data\. In addition, MBT uses smart pointers\.
 
-#### Configuration data<a name="ai-scripting-mbt-cpp-memory-model-configuration"></a>
+#### Configuration data {#ai-scripting-mbt-cpp-memory-model-configuration}
 
 When a behavior tree such as the following example is loaded, a behavior tree template is created that holds all the configuration data shown in the example\. This includes a sequence node with four children: two communicate nodes, an animate node, and a wait node\. The configuration data is the animation name, duration, etc\., and this data never changes\. 
 
@@ -107,7 +107,7 @@ When a behavior tree such as the following example is loaded, a behavior tree te
 
 Memory for the configuration data is allocated from the level heap\. When running the game through the launcher, this memory is freed on level unload; alternatively, it is freed when the player exits game mode and returns to edit mode in Lumberyard Editor\.
 
-#### Runtime data<a name="ai-scripting-mbt-cpp-memory-model-runtime"></a>
+#### Runtime data {#ai-scripting-mbt-cpp-memory-model-runtime}
 
 When spawning an AI agent using a behavior tree, a behavior tree Instance is created and associated with the agent\. The instance points to the behavior tree template for the standard configuration data, which means that the instance contains only instance\-specific data such as variables and timestamps\.
 
@@ -115,18 +115,18 @@ When the tree instance is accessed for the AI agent, it begins by executing the 
 
 Memory for runtime data is allocated from a bucket allocator\. This design minimizes memory fragmentation, which is caused by the fact that runtime data is usually just a few bytes and is frequently allocated and freed\. The bucket allocator is cleaned up on level unload\.
 
-#### Smart pointers<a name="ai-scripting-mbt-cpp-memory-model-smart-pointers"></a>
+#### Smart pointers {#ai-scripting-mbt-cpp-memory-model-smart-pointers}
 
 MBT uses Boost smart pointers to pass around data safely and avoid raw pointers as much as possible\. Memory management is taken care of by the core system\. \(While there are circumstances in which a *unique\_ptr* from C\+\+11 would work well, Lumberyard uses Boost's *shared\_ptr* for compatibility reasons\.\)
 
-### Implementing an MBT Node<a name="ai-scripting-mbt-cpp-implementing-nodes"></a>
+### Implementing an MBT Node {#ai-scripting-mbt-cpp-implementing-nodes}
 
 To implement a new MBT node in C\+\+, you'll need to do the following tasks: 
 + Create the node
 + Expose the node to the node factory
 + Set up error reporting for the node
 
-#### Creating a node<a name="ai-scripting-mbt-cpp-implementing-nodes-creating"></a>
+#### Creating a node {#ai-scripting-mbt-cpp-implementing-nodes-creating}
 
 The following code example illustrates a programmatic way to create a behavior tree node\. When naming new nodes, refer to [Recommended Naming Practices](#ai-scripting-mbt-naming)\.
 
@@ -212,7 +212,7 @@ private:
 GenerateBehaviorTreeNodeCreator(MyNode);
 ```
 
-#### Exposing a node<a name="ai-scripting-mbt-cpp-implementing-nodes-exposing"></a>
+#### Exposing a node {#ai-scripting-mbt-cpp-implementing-nodes-exposing}
 
 To use the newly created node, you'll need to expose it to the node factory, as shown in the following code snippet\.
 
@@ -221,7 +221,7 @@ BehaviorTree::INodeFactory& factory = gEnv->pAISystem->GetIBehaviorTreeManager()
 ExposeBehaviorTreeNodeToFactory(factory, MyNode);
 ```
 
-#### Setting up error reporting<a name="ai-scripting-mbt-cpp-implementing-nodes-reporting-errors"></a>
+#### Setting up error reporting {#ai-scripting-mbt-cpp-implementing-nodes-reporting-errors}
 
 Use the class `ErrorReporter` to report errors and warnings in the new node\. It will let you log a printf\-formatted message and automatically include any available information about the node, such as XML line number, tree name, and node type\.
 
@@ -229,7 +229,7 @@ Use the class `ErrorReporter` to report errors and warnings in the new node\. It
 ErrorReporter(*this, context).LogError("Failed to compile Lua code '%s'", code.c_str());
 ```
 
-### Variables<a name="ai-scripting-mbt-cpp-variables"></a>
+### Variables {#ai-scripting-mbt-cpp-variables}
 
 Variables are statically declared in XML, with information about how they will change in response to signals from AI agents \(named text messages within the AI system\)\. 
 
@@ -255,7 +255,7 @@ The following code snippet illustrates the use of variables to receive input fro
 </BehaviorTree>
 ```
 
-### Lua Scripting<a name="ai-scripting-mbt-cpp-lua-scripting"></a>
+### Lua Scripting {#ai-scripting-mbt-cpp-lua-scripting}
 
 Lua code can be embedded in a behavior tree and executed along with the tree nodes\. This is useful for running fire\-and\-forget code or for controlling the flow in a tree\. It's useful for prototyping or extending functionality without having to create new nodes\.
 
@@ -291,7 +291,7 @@ All Lua nodes provide access to the *entity* variable\.
   </Sequence>
   ```
 
-### Timestamps<a name="ai-scripting-mbt-cpp-timestamps"></a>
+### Timestamps {#ai-scripting-mbt-cpp-timestamps}
 
 A timestamp identifies a point in time when an event happened\. A lot of AI behavior depends on tracking the timestamp of certain events and measuring the amount of time from those points\. For example, it can be useful to tie behavior to how long it's been since the AI agent was last shot at or hit, when it last saw the player, or how long it's been since moving to the current cover location\. 
 
@@ -320,7 +320,7 @@ The following code snippet illustrates the use of timestamps\.
 </BehaviorTree>
 ```
 
-### Events<a name="ai-scripting-mbt-cpp-events"></a>
+### Events {#ai-scripting-mbt-cpp-events}
 
 Communication with AI agents is done using AI signals, which essentially are named text messages\. Signals such as OnBulletRain and OnEnemySeen communicate a particular event, which, when broadcast to other AI agents, can be reacted to based on each AI agent's behavior tree\. This design allows AI behavior to remain only loose coupled with AI signals\. AI Signals are picked up and converted to MBT events, then dispatched to the root node, which passes them along down the running nodes in the tree\.
 
@@ -331,11 +331,11 @@ Communication with AI agents is done using AI signals, which essentially are nam
 </Sequence>
 ```
 
-## Debugging and Tree Visualization<a name="ai-scripting-mbt-debugging-tree-visualization"></a>
+## Debugging and Tree Visualization {#ai-scripting-mbt-debugging-tree-visualization}
 
 This section provides help with debugging behavior trees by providing a tree visualization view during debugging\. This view allows you to track an AI agent's progress through the tree as the game progresses\.
 
-### "Slashing" Agents<a name="ai-scripting-mbt-debugging-tree-visualization-slashing"></a>
+### "Slashing" Agents {#ai-scripting-mbt-debugging-tree-visualization-slashing}
 
 This feature allows you to view the behavior tree for a specific AI agent in DebugDraw\. To enable this feature:
 
@@ -353,7 +353,7 @@ The tree visualization displays the AI agent's name at the top of the screen and
 + Blue – leaf nodes, which often carry special weight when debugging
 + Gray – all other nodes
 
-### Adding Custom Debug Text<a name="ai-scripting-mbt-debugging-tree-visualization-text"></a>
+### Adding Custom Debug Text {#ai-scripting-mbt-debugging-tree-visualization-text}
 
 Tree visualization supports custom node information\. This allows you to get a more in\-depth view of the currently running parts of a behavior tree\. For example, you can see the name of the event that the `WaitForEvent` node is waiting for, or how much longer `Timeout` is going to run before it times out\.
 
@@ -370,7 +370,7 @@ virtual void GetDebugTextForVisualizer(
 #endif
 ```
 
-### Logging and Tracing<a name="ai-scripting-mbt-debugging-tree-visualization-logging"></a>
+### Logging and Tracing {#ai-scripting-mbt-debugging-tree-visualization-logging}
 
 Tracing log messages is a critical tool for diagnosing problems\. Lumberyard provides native support for logging, as shown in the following code snippet\. 
 
@@ -387,7 +387,7 @@ Log messages are routed through an object deriving from the `BehaviorTree::ILogR
 
 The AI Recorder also retains all log messages; use this tool to explore sequences of events\.
 
-### Compiling with Debug Information<a name="ai-scripting-mbt-debugging-tree-visualization-compiling"></a>
+### Compiling with Debug Information {#ai-scripting-mbt-debugging-tree-visualization-compiling}
 
 To compile a game with debug information, you need to define DEBUG\_MODULAR\_BEHAVIOR\_TREE\.
 
@@ -397,7 +397,7 @@ To compile a game with debug information, you need to define DEBUG\_MODULAR\_BEH
 #endif
 ```
 
-### Viewing Completed Trees<a name="ai-scripting-mbt-debugging-tree-visualization-completed-trees"></a>
+### Viewing Completed Trees {#ai-scripting-mbt-debugging-tree-visualization-completed-trees}
 
 When a behavior tree finishes executing—either by failing or succeeding all the way through the root node, a notification is displayed in the console window along with a list of recently visited nodes and their line numbers\.
 
@@ -405,11 +405,11 @@ When a behavior tree finishes executing—either by failing or succeeding all th
 
 Note that in the example above the tree will be rebooted in the next frame\. This suggests that the behavior tree was not designed to handle a failure at this point\.
 
-## Recommended Naming Practices<a name="ai-scripting-mbt-naming"></a>
+## Recommended Naming Practices {#ai-scripting-mbt-naming}
 
 The following suggestions help streamline code clarity and communication in a development team\.
 
-### Naming Nodes<a name="ai-scripting-mbt-naming-nodes"></a>
+### Naming Nodes {#ai-scripting-mbt-naming-nodes}
 
 For action nodes, use names that identify the action the node will perform\. These are usually action verbs\.
 
@@ -428,7 +428,7 @@ For action nodes, use names that identify the action the node will perform\. The
 + Script
 + ActivationProcess
 
-### Naming Timestamps<a name="ai-scripting-mbt-naming-timestamps"></a>
+### Naming Timestamps {#ai-scripting-mbt-naming-timestamps}
 
 Name timestamps based on the event they’re related to\. Because timestamps describe an event that has already happened, use the past tense \(TargetSpotted, not TargetSpots\)\.
 +  TargetSpotted

@@ -3,7 +3,7 @@ description: ' Use &ALY;''s Animation Editor''s Node Pane, Track Editor, and Cur
   Editor to edit animation sequences. '
 title: Editing Animation Data
 ---
-# Editing Animation Data<a name="ui-animation-editing"></a>
+# Editing Animation Data {#ui-animation-editing}
 
 After you create your sequence\(s\) and record animation data to them, you can use the **Node Pane**, **Track Editor**, and **Curve Editor** in the **Animation Editor** to modify your sequences\.
 + In the **Node Pane**, you can add or remove UI elements from an animation sequence, edit sequences, and work with keys\. For more information, see [Using the Node Pane](/docs/userguide/ui/animation/using-node-pane.md)\.

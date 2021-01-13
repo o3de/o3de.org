@@ -2,7 +2,7 @@
 description: ' Understand how pricing works when you use &cloud; and &CFN; with &ALYlong;. '
 title: Pricing
 ---
-# Pricing<a name="cloud-canvas-overview-pricing"></a>
+# Pricing {#cloud-canvas-overview-pricing}
 
 Cloud Canvas uses AWS CloudFormation templates to deploy AWS resources to your account\. Although there is no additional charge for Cloud Canvas or AWS CloudFormation, charges may accrue for using the associated AWS services\. You pay for the AWS resources created by Cloud Canvas and AWS CloudFormation as if you created them manually\. You only pay for what you use as you use it\. There are no minimum fees and no required upfront commitments, and most services include a free tier\. 
 

@@ -2,7 +2,7 @@
 description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
 title: Simulate destruction with NVIDIA Blast
 ---
-# Simulate destruction with NVIDIA Blast<a name="nvidia-blast-simulate"></a>
+# Simulate destruction with NVIDIA Blast {#nvidia-blast-simulate}
 
 
 ****  
@@ -23,7 +23,7 @@ For more information, see [Create assets for NVIDIA Blast](/docs/userguide/nvidi
 + [Add manually created mesh assets to a NVIDIA Blast entity](#nvidia-blast-entity-manual-assets)
 + [Test NVIDIA Blast destruction simulation](#nvidia-blast-simulate-destruction)
 
-## Create an entity for NVIDIA Blast<a name="nvidia-blast-create-entity"></a>
+## Create an entity for NVIDIA Blast {#nvidia-blast-create-entity}
 
 When you create an entity, you add the NVIDIA Blast functionality and define how the asset destructs\.
 
@@ -46,7 +46,7 @@ If you have processed your mesh assets with **Python Asset Builder**, follow the
 
 If you have manually edited your mesh assets with **FBX Settings**, follow the steps in the section: [Add manually created mesh assets to a NVIDIA Blast entity](#nvidia-blast-entity-manual-assets)\. 
 
-## Add automatically processed mesh assets to a NVIDIA Blast entity<a name="nvidia-blast-entity-automatic-assets"></a>
+## Add automatically processed mesh assets to a NVIDIA Blast entity {#nvidia-blast-entity-automatic-assets}
 
 **Python Asset Builder** creates a `blast_slice` asset when it processes your NVIDIA Blast assets\. The blast slice automatically adds the mesh assets and material to the **Blast Family Mesh Data **component\.
 
@@ -61,7 +61,7 @@ If you have manually edited your mesh assets with **FBX Settings**, follow the s
 
 1. The entity is now set up to simulate destruction\. Continue to the section: [Test NVIDIA Blast destruction simulation](#nvidia-blast-simulate-destruction)\. 
 
-## Add manually created mesh assets to a NVIDIA Blast entity<a name="nvidia-blast-entity-manual-assets"></a>
+## Add manually created mesh assets to a NVIDIA Blast entity {#nvidia-blast-entity-manual-assets}
 
 If your NVIDIA Blast mesh assets have been manually edited in **FBX Settings**, use the following steps to add the mesh assets to the entity\. 
 
@@ -80,7 +80,7 @@ If your NVIDIA Blast mesh assets have been manually edited in **FBX Settings**, 
 
 1. The entity is now set up to simulate destruction\. Continue to the section: [Test NVIDIA Blast destruction simulation](#nvidia-blast-simulate-destruction)\. 
 
-## Test NVIDIA Blast destruction simulation<a name="nvidia-blast-simulate-destruction"></a>
+## Test NVIDIA Blast destruction simulation {#nvidia-blast-simulate-destruction}
 
 Because the blast asset has been exported from Houdini with **Static root** disabled, and a **PhysX Terrain** level component has been added to the level, destruction can be tested by dropping the object on the terrain\. 
 

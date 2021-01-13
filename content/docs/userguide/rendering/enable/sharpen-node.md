@@ -3,7 +3,7 @@ description: ' Use the Enable Sharpen node in the &ALYlong; &script-canvas; edit
   to configure the sharpen filter effect. '
 title: Enable Sharpen
 ---
-# Enable Sharpen<a name="enable-sharpen-node"></a>
+# Enable Sharpen {#enable-sharpen-node}
 
 Applies a sharpen filter\. You can specify a negative value to blur the screen\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Sharpen](/docs/userguide/rendering/disable/s
 
 ![\[Use the Enable Sharpen node to sharpen the game details.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-sharpen-node-example.png)
 
-## Inputs<a name="enable-sharpen-note-input"></a>
+## Inputs {#enable-sharpen-note-input}
 
 
 ****  
@@ -29,7 +29,7 @@ To disable the effect, see [Disable Sharpen](/docs/userguide/rendering/disable/s
 | In | Event |  Triggers the node\.  | 
 | Amount | Number |  Amount of sharpening\. Default value: `1`  | 
 
-## Outputs<a name="enable-sharpen-node-output"></a>
+## Outputs {#enable-sharpen-node-output}
 
 
 ****  

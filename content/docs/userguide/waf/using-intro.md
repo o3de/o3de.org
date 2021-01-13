@@ -3,7 +3,7 @@ description: ' You can use the Waf command line tool to add a game project, crea
   a Visual Studio solution, and create a custom build module. '
 title: Using Waf
 ---
-# Using Waf<a name="waf-using-intro"></a>
+# Using Waf {#waf-using-intro}
 
 **Topics**
 + [Adding a Game Project](/docs/userguide/waf/using-game-project.md)

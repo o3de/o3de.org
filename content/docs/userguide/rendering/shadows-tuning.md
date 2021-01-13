@@ -2,7 +2,7 @@
 description: ' Use console variables to tune cascade shadows in &ALYlong;. '
 title: 'Tutorial: Using Console Variables to Tune Cascade Shadows'
 ---
-# Tutorial: Using Console Variables to Tune Cascade Shadows<a name="rendering-graphics-shadows-tuning"></a>
+# Tutorial: Using Console Variables to Tune Cascade Shadows {#rendering-graphics-shadows-tuning}
 
 This topic shows you how to use console variables \(CVARs\) to tune the shadows in a scene\. The sample is a 2k island test level that was generated with World Machine\.
 
@@ -15,7 +15,7 @@ This topic shows you how to use console variables \(CVARs\) to tune the shadows 
 + [Step 5: Change the Step Size](#rendering-graphics-shadows-tuning-change-the-step-size)
 + [Step 6: Enable Shadows Debug Mode](#rendering-graphics-shadows-tuning-enable-shadows-debug-mode)
 
-## Prerequisite: Disable Rendering Features<a name="rendering-graphics-shadows-tuning-disable-rendering-features"></a>
+## Prerequisite: Disable Rendering Features {#rendering-graphics-shadows-tuning-disable-rendering-features}
 
 Before you begin, disable rendering features like fog\. Rendering features like fog can obscure the view of shadows at a distance\. To disable fog, enter the following command:
 
@@ -23,7 +23,7 @@ Before you begin, disable rendering features like fog\. Rendering features like 
 e_Fog=0
 ```
 
-## Step 1: Enable Cascade Shadows<a name="rendering-graphics-shadows-tuning-enable-cascade-shadows"></a>
+## Step 1: Enable Cascade Shadows {#rendering-graphics-shadows-tuning-enable-cascade-shadows}
 
 By default, shadow cascades are disabled for terrain, as the following image shows\.
 
@@ -45,7 +45,7 @@ To disable cascade shadows, set `e_GsmCastFromTerrain` to `0`\.
 e_GsmCastFromTerrain=0
 ```
 
-## Step 2: Enable Cascades Debug Mode<a name="rendering-graphics-shadows-tuning-enable-cascades-debug-mode"></a>
+## Step 2: Enable Cascades Debug Mode {#rendering-graphics-shadows-tuning-enable-cascades-debug-mode}
 
 You can use debug mode to better see the cascades and the effects of shadow\-related console variables\. To enable debug mode, enter the following command:
 
@@ -67,7 +67,7 @@ This information is displayed in the viewport, as the following image shows\. Ar
 
 ![\[Cascades debug mode enabled.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-3.png)
 
-## Step 3: Maximize the Number of Cascades<a name="rendering-graphics-shadows-tuning-maximize-the-number-of-cascades"></a>
+## Step 3: Maximize the Number of Cascades {#rendering-graphics-shadows-tuning-maximize-the-number-of-cascades}
 
 To create the highest quality shadows, start by maximizing the number of cascades and then scale back as needed\. To maximize the number of cascades, enter the `e_GsmLodsNum` console variable, which specifies the number of gradient shadow map levels of detail \(LOD\)\. The default is `5`\.
 
@@ -99,7 +99,7 @@ The light blue color shows that the shadow range has been extended much further 
 
 ![\[Increasing the number of cascades.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-4.png)
 
-## Step 4: Change the Size of the Root Cascade<a name="rendering-graphics-shadows-tuning-change-the-size-of-the-root-cascade"></a>
+## Step 4: Change the Size of the Root Cascade {#rendering-graphics-shadows-tuning-change-the-size-of-the-root-cascade}
 
 In a scene, the terrain scales away from the root cascade 0 in the foreground to higher numbered cascades in the background\. To specify the size of the root cascade 0 in meters, use the `e_GsmRange` console variable\. The examples in this section show how `e_GsmRange` values affect shadows\.
 
@@ -143,7 +143,7 @@ As the following image shows, the command has no visual impact on the range of s
 
 ![\[Number of cascades set to 6.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-7.png)
 
-## Step 5: Change the Step Size<a name="rendering-graphics-shadows-tuning-change-the-step-size"></a>
+## Step 5: Change the Step Size {#rendering-graphics-shadows-tuning-change-the-step-size}
 
 The range step size specifies how much the next cascade changes\. The following command specifies a range of 3, which is the default\.
 
@@ -183,7 +183,7 @@ Because of the increase in range step, the reduced number of cascades covers app
 
 ![\[Fewer cascades with a greater range step.\]](/images/userguide/rendering/rendering-graphics-shadows-tuning-10.png)
 
-## Step 6: Enable Shadows Debug Mode<a name="rendering-graphics-shadows-tuning-enable-shadows-debug-mode"></a>
+## Step 6: Enable Shadows Debug Mode {#rendering-graphics-shadows-tuning-enable-shadows-debug-mode}
 
 The `e_ShadowsDebug` debug mode, unlike the `e_ShadowsCascadesDebug` console variable presented earlier, shows you information about each cascade in individual windows in the viewport\. To enable shadows debug mode, enter the following command:
 

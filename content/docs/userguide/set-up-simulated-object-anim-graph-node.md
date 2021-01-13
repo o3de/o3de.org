@@ -2,7 +2,7 @@
 description: ' Set up an anim graph for the simulated object in &ALYlong;. '
 title: Setting Up the Simulated Object Anim Graph Node
 ---
-# Setting Up the Simulated Object Anim Graph Node<a name="set-up-simulated-object-anim-graph-node"></a>
+# Setting Up the Simulated Object Anim Graph Node {#set-up-simulated-object-anim-graph-node}
 
 After you set up the simulated object, create an anim graph to view the simulation\. This lets you preview how the tassel moves in relation to the actor's primary motion\.
 

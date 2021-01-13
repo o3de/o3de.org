@@ -3,7 +3,7 @@ description: ' Configure toon shading in &ALYlong; to implement a toon shader vi
   look. '
 title: Toon Shading (Experimental Feature)
 ---
-# Toon Shading \(Experimental Feature\)<a name="graphics-rendering-toon-shading"></a>
+# Toon Shading \(Experimental Feature\) {#graphics-rendering-toon-shading}
 
 Toon shading is a feature with which you can simulate cartoon effects for your game\. Instead of using a shade gradient, toon shading uses less shading color to make 3D graphics appear flat\. You can use toon shading to create a comic book or cartoon style for your game\. Lumberyard's toon shading feature projects the scene luminance into a lookup table, which controls the smoothness of shading on the surface to achieve the intended look\.
 
@@ -13,7 +13,7 @@ To enable toon shading, use the console to specify the console variable \(CVAR\)
 
 Valid values: 0 – 1
 
-For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
+For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 
 The following example level does not have toon shading enabled \(`r_AlphaBlendLayerCount=0`\)\.
 

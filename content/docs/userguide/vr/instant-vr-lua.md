@@ -2,7 +2,7 @@
 description: ' View the InstantVR Lua script properties in &ALYlong;. '
 title: InstantVR Lua Script Properties
 ---
-# InstantVR Lua Script Properties<a name="virtual-reality-instant-vr-lua"></a>
+# InstantVR Lua Script Properties {#virtual-reality-instant-vr-lua}
 
 You can view **instantVR**'s assets in the **Entity Outliner**\. The **instantVR** slice contains a Lua script called `instantVR`, which includes many of the child entities that add controller tracking and provide teleport support\.
 
@@ -50,6 +50,6 @@ To customize the `instantVR` Lua script, try the following modifications:
 + Deselect **TeleportUseNavMesh** and climb the walls\.
 + Open the **InvalidLocationSpawner** and **ValidLocationSpawner** dynamic slices and change the entities they spawn\.
 
-## InstantVR Known Issue<a name="virtual-reality-instant-vr-knownissues"></a>
+## InstantVR Known Issue {#virtual-reality-instant-vr-knownissues}
 
 If you modify the size and position of the navigation area in the Lumberyard Editor, you must manually rebuild by clicking **Game**, **AI**, **Generate Triangulation**\. Restarting the Lumberyard Editor or reloading the level also automatically rebuilds the navigation area\.

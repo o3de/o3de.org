@@ -3,7 +3,7 @@ description: ' Learn how to create separate asset bundles for a release build wi
   multiple game levels in &ALY;. '
 title: Creating Multiple Asset Bundles
 ---
-# Creating Multiple Asset Bundles<a name="asset-bundler-tutorial-multiple-bundles"></a>
+# Creating Multiple Asset Bundles {#asset-bundler-tutorial-multiple-bundles}
 
 
 ****  
@@ -19,7 +19,7 @@ This topic covers the following points:
 + Creating multiple asset bundles separated by game level\.
 + Running the new build with and without the additional bundles\.
 
-## Prerequisites<a name="asset-bundler-tutorial-multiple-bundles-prerequisites"></a>
+## Prerequisites {#asset-bundler-tutorial-multiple-bundles-prerequisites}
 
 This tutorial requires completing [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)\. After finishing that tutorial, you should have:
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
@@ -27,7 +27,7 @@ This tutorial requires completing [Build and bundle assets for release in Lumber
 
 It's also useful to be familiar with the [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for this tutorial\.
 
-## Create a second level<a name="asset-bundler-tutorial-multiple-bundles-create-a-second-level"></a>
+## Create a second level {#asset-bundler-tutorial-multiple-bundles-create-a-second-level}
 
  In this section of the tutorial, you'll create a new level for the Starter Game that displays a static scene containing a single entity\. 
 
@@ -56,13 +56,13 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
 
 1. Exit the editor\.
 
-## Generate the new content bundle<a name="asset-bundler-tutorial-multiple-bundles-generate-bundles"></a>
+## Generate the new content bundle {#asset-bundler-tutorial-multiple-bundles-generate-bundles}
 
  In the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in Lumberyard Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\. 
 
  This section of the tutorial walks you through creating a new asset list based on the `level2.pak` dependencies, removing duplicate entries that already appear in `startergame_pc.pak`, and bundling the level for distribution\. 
 
-## <a name="asset-bundler-tutorial-multiple-bundles-generating-new-bundles"></a>
+##  {#asset-bundler-tutorial-multiple-bundles-generating-new-bundles}
 
 1. Create the seed list and asset list for `level2.pak`:
 
@@ -98,7 +98,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
    Bin64vc141\AssetBundlerBatch.exe bundles --assetListFile dlc_level2_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\dlc_level2.pak
    ```
 
-## Test the new level in release<a name="asset-bundler-tutorial-multiple-bundles-simulate-downloading-additional-content"></a>
+## Test the new level in release {#asset-bundler-tutorial-multiple-bundles-simulate-downloading-additional-content}
 
 1. Open a console and navigate to the release directory at `%USERPROFILE%\StarterGameRelease`
 
@@ -112,10 +112,10 @@ If everything works, you should see a scene similar to the following:
 
 ![\[A static level scene displaying a single boulder mesh located in front of the camera.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/06.png)
 
-## Conclusion<a name="asset-bundler-tutorial-multiple-bundles-conclusion"></a>
+## Conclusion {#asset-bundler-tutorial-multiple-bundles-conclusion}
 
 You now have a working example of a release build of a PC game on Lumberyard that uses multiple asset bundles\. These bundles do not contain duplicate files, and you've performed a workflow that matches how a downloadable content system would add new content to an already released game\.
 
-## Next Steps<a name="asset-bundler-tutorial-multiple-bundles-next-steps"></a>
+## Next Steps {#asset-bundler-tutorial-multiple-bundles-next-steps}
 
 Learn how to bundle patch updates instead of all\-new content with the next tutorial in this series: [Create content patches with Lumberyard](/docs/userguide/assets/bundle/tutorial-content-patches.md)\.

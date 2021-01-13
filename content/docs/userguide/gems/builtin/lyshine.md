@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s LyShine gem to create dynamic UI interfaces for 
   games. '
 title: LyShine
 ---
-# LyShine<a name="gems-system-gem-lyshine"></a>
+# LyShine {#gems-system-gem-lyshine}
 
 The LyShine gem enables Lumberyard's in\-game UI system\. With the UI system, you can create dynamic user interfaces for your games\.
 

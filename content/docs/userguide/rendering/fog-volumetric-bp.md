@@ -3,7 +3,7 @@ description: ' Use the following best practices when working with volumetric fog
   &ALY;. '
 title: Best Practices for Volumetric Fog
 ---
-# Best Practices for Volumetric Fog<a name="rendering-graphics-fog-volumetric-bp"></a>
+# Best Practices for Volumetric Fog {#rendering-graphics-fog-volumetric-bp}
 
 See the following best practices for working with volumetric fog\.
 + Attach a **[Fog Volume](/docs/userguide/components/fog-volume.md)** and a **[Box Shape](/docs/userguide/components/shapes.md)** component to the entity\.

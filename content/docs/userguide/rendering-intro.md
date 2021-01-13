@@ -3,9 +3,9 @@ description: ' The following topics will guide you through the graphics features
   rendering effects of &ALY;. '
 title: Graphics and Rendering in &ALY;
 ---
-# Graphics and Rendering in Lumberyard<a name="rendering-intro"></a>
+# Graphics and Rendering in Lumberyard {#rendering-intro}
 
-## Working with graphics and rendering in Lumberyard<a name="ly-rendering-intro"></a>
+## Working with graphics and rendering in Lumberyard {#ly-rendering-intro}
 
 Learn about how to work with the graphics and rendering features of Amazon Lumberyard\. This documentation covers working with shaders, materials, lighting and shadows, and post\-processing effects in your Lumberyard game\.
 

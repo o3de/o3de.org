@@ -3,7 +3,7 @@ description: ' Learn how to create and reflect components in C++ using the &ALY;
   Entity System. '
 title: Programmer's Guide to Entities and Components
 ---
-# Programmer's Guide to Entities and Components<a name="component-entity-system-pg-intro"></a>
+# Programmer's Guide to Entities and Components {#component-entity-system-pg-intro}
 
 This guide provides engine and game programmers with examples and best practices for creating and reflecting custom Lumberyard components in C\+\+\. 
 

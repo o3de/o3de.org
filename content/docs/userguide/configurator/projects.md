@@ -3,7 +3,7 @@ description: ' Create a game project in the &ALYlong; &project-configurator; or 
   a command line. '
 title: Creating and Switching Game Projects
 ---
-# Creating and Switching Game Projects<a name="configurator-projects"></a>
+# Creating and Switching Game Projects {#configurator-projects}
 
 
 ****  
@@ -23,11 +23,11 @@ Use the Project Configurator to create and change the settings that affect build
 + [Choosing a Game Project to Open](#project-configurator-launch-projects)
 + [Switching Game Projects](#project-configurator-different-project)
 
-## Project Templates<a name="project-configurator-templates"></a>
+## Project Templates {#project-configurator-templates}
 
 When you create your game project with the Project Configurator, you can use the following templates: 
 
-### Empty Template<a name="project-configurator-empty-template"></a>
+### Empty Template {#project-configurator-empty-template}
 
 The **Empty** template has the minimum features required for the editor to load and run a game project:
 + **CryLegacy** – Enables the editor and launcher to load a game project that contains legacy code
@@ -35,7 +35,7 @@ The **Empty** template has the minimum features required for the editor to load 
 + **LyShine** gem – Provides access to the in\-game UI system for Lumberyard
 + **Maestro** gem – Provides access to cinematics features
 
-### Default Template<a name="project-configurator-default-template"></a>
+### Default Template {#project-configurator-default-template}
 
 The **Default** template builds on the **Empty** template and enables the following gems to provide basic features for game development:
 + **Amazon GameLift** – Provides capabilities to use this service and create game sessions
@@ -59,7 +59,7 @@ The **Default** template also includes a simple level for you to manipulate comp
 When you create your game project, we recommend the **Default** template and its set of gems\. This template helps you start designing and developing quickly\. Some of the gems in the template are optional\. 
 To create a base project without optional gems, use the **Empty** template\. This template creates a basic project using the minimum features to start a game\.
 
-## Creating a Game Project in Lumberyard<a name="creating-a-game-project"></a>
+## Creating a Game Project in Lumberyard {#creating-a-game-project}
 
 You can create a game project using the Project Configurator or command line\. When you create a game project, the following are also created:
 + A game gem that includes your game\-specific code\. The gem is named after your game project and is located in the `MyNewProject\Gem` directory\.
@@ -164,7 +164,7 @@ When you create a game project from a command line, you can enter `lmbr` for a l
 
 ------
 
-## Choosing a Game Project to Open<a name="project-configurator-launch-projects"></a>
+## Choosing a Game Project to Open {#project-configurator-launch-projects}
 
 Use the Project Configurator to set default game project that opens in Lumberyard Editor\.
 
@@ -194,7 +194,7 @@ Use the Project Configurator to set default game project that opens in Lumberyar
 
    For more information, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
 
-## Switching Game Projects<a name="project-configurator-different-project"></a>
+## Switching Game Projects {#project-configurator-different-project}
 
 To switch projects, you must close Lumberyard Editor\. With the Project Configurator, you then specify a different project and its gems and system settings for the editor to open\.
 

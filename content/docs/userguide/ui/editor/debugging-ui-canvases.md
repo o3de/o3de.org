@@ -2,7 +2,7 @@
 description: ' Use console variables and commands to debug UI canvases in &ALYlong;. '
 title: Debugging UI Canvases
 ---
-# Debugging UI Canvases<a name="ui-editor-debugging-ui-canvases"></a>
+# Debugging UI Canvases {#ui-editor-debugging-ui-canvases}
 
 You can use the following console commands and console variables to display debug information for the UI when your game is running\.
 
@@ -16,7 +16,7 @@ You can use the following console commands and console variables to display debu
 
 [ui\_ReportDrawCalls](#ui-editor-debugging-ui-canvases-report-draw-calls)
 
-## ui\_DisplayCanvasData<a name="ui-editor-debugging-ui-canvases-display-canvas-data"></a>
+## ui\_DisplayCanvasData {#ui-editor-debugging-ui-canvases-display-canvas-data}
 
 Displays canvas data for enabled or loaded canvases\.
 
@@ -59,7 +59,7 @@ The following table describes each column\.
 | ActiveInt | The name of the active interactable on this canvas \(if any\)\. | 
 | HoverInt | The name of the current hover interactable on this canvas \(if any\)\. | 
 
-## ui\_DisplayDrawCallData<a name="ui-editor-debugging-ui-canvases-display-draw-call-data"></a>
+## ui\_DisplayDrawCallData {#ui-editor-debugging-ui-canvases-display-draw-call-data}
 
 Displays the number of draw calls used to render UI canvases\. This variable is useful for performance tuning and debugging\.
 
@@ -97,7 +97,7 @@ The following table describes each column\.
 | XMaxV | The number of draw calls caused by a render node that requires more than 65536 vertices or 16384 quads\. This case is uncommon\. For example, more than 16000 characters of text would be required for a value to appear\. | 
 | XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached\. To reduce the number of these calls, you can use a texture atlas\. For more information, see [Using Texture Atlases](/docs/userguide/ui/editor/texture-atlases.md)\. | 
 
-## ui\_DisplayElemBounds<a name="ui-editor-debugging-ui-canvases-display-elem-bounds"></a>
+## ui\_DisplayElemBounds {#ui-editor-debugging-ui-canvases-display-elem-bounds}
 
 This console command displays an overlay on the screen that shows the rectangles of elements\. By default, it shows the rectangular bounds of every UI element for each enabled UI canvas\.
 
@@ -107,7 +107,7 @@ The following example shows the rectangular bounds of nested scrollboxes\.
 
 ![\[Rectangular bounds displayed for nested scrollboxes.\]](/images/userguide/game_ui_editor/ui-editor-debugging-ui-canvases-3.png)
 
-## ui\_DisplayTextureData<a name="ui-editor-debugging-ui-canvases-display-texture-data"></a>
+## ui\_DisplayTextureData {#ui-editor-debugging-ui-canvases-display-texture-data}
 
 Displays the textures that the UI is using\.
 
@@ -117,7 +117,7 @@ The following example shows data for 13 unique textures in the current frame\.
 
 ![\[Data for 13 unique textures in the current frame.\]](/images/userguide/game_ui_editor/ui-editor-debugging-ui-canvases-4.png)
 
-## ui\_ReportDrawCalls<a name="ui-editor-debugging-ui-canvases-report-draw-calls"></a>
+## ui\_ReportDrawCalls {#ui-editor-debugging-ui-canvases-report-draw-calls}
 
 Writes a report of draw calls to a log file\.
 

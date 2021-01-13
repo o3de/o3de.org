@@ -3,7 +3,7 @@ description: ' Manage the intents for the &LEX; bots in your game from &ALYlong;
   Speech Recognition Cloud Gem Portal. '
 title: Managing Intents
 ---
-# Managing Intents<a name="cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents"></a>
+# Managing Intents {#cloud-canvas-cloud-gem-speech-recognition-cgp-managing-intents}
 
 
 ****  

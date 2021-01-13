@@ -3,7 +3,7 @@ description: ' Use the Disable Water Droplet node in the &ALYlong; &script-canva
   editor to disable water droplets. '
 title: Disable Water Droplets
 ---
-# Disable Water Droplets<a name="disable-water-droplets-node"></a>
+# Disable Water Droplets {#disable-water-droplets-node}
 
 Disables water droplet effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Water Droplets](/docs/userguide/rendering/enab
 
 ![\[disablewaterdropletsnode, disablewaterdroplets\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-water-droplets-node.png)
 
-## Inputs<a name="disable-water-droplets-node-input"></a>
+## Inputs {#disable-water-droplets-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Water Droplets](/docs/userguide/rendering/enab
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="disable-water-droplets-node-output"></a>
+## Outputs {#disable-water-droplets-node-output}
 
 
 ****  

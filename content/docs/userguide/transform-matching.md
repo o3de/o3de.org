@@ -2,7 +2,7 @@
 description: ' Match the transform properties for entities in &ALYlong;. '
 title: Matching the Transform
 ---
-# Matching the Transform<a name="transform-matching"></a>
+# Matching the Transform {#transform-matching}
 
 Instead of manually copying values from one entity's position to another, you can use the ditto feature to share an entity's transform data from one entity to another\. This feature enables you to duplicate the same transform data for your entities\. For example, to make your child entities face the same direction, you can select the entities and use the ditto feature to apply the change to the entities at once\.
 
@@ -20,7 +20,7 @@ Instead of manually copying values from one entity's position to another, you ca
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/transform-matching.html)
 
-## Ditto a Group Selection<a name="ditto-group-selection"></a>
+## Ditto a Group Selection {#ditto-group-selection}
 
 You can use the ditto feature for a group of entities\. This makes it easier for you to modify multiple entities at once\.
 
@@ -38,7 +38,7 @@ You can use the ditto feature for a group of entities\. This makes it easier for
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/transform-matching.html)
 
-## Ditto a Group Selection to Local Space<a name="ditto-group-selection-local-space"></a>
+## Ditto a Group Selection to Local Space {#ditto-group-selection-local-space}
 
 You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity\. 
 

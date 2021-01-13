@@ -2,11 +2,11 @@
 description: null
 title: Automatic and Manual Submit Modes
 ---
-# Automatic and Manual Submit Modes<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-and-manual-submit-modes"></a>
+# Automatic and Manual Submit Modes {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-and-manual-submit-modes}
 
 The following sections describe the automatic and manual submit modes in greater detail\.
 
-## Automatic Mode<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-mode"></a>
+## Automatic Mode {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-automatic-mode}
 
 Automatic Jira ticket submit mode has the following workflow:
 
@@ -22,7 +22,7 @@ Automatic Jira ticket submit mode has the following workflow:
 
 1. If the report is not a duplicate, a Jira ticket is created\. If the report is a duplicate, the defect occurrence count is incremented\.
 
-## Manual Mode<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-jira-manual-mode"></a>
+## Manual Mode {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira-manual-mode}
 
 Manual Jira ticket submit mode has the following workflow:
 

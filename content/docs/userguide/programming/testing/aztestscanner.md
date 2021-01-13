@@ -3,7 +3,7 @@ description: ' Use the AZ test scanner tool to run unit tests that are built int
   &ALY; libraries and executables. '
 title: Using AZ Test Scanner
 ---
-# Using AZ Test Scanner<a name="testing-aztestscanner"></a>
+# Using AZ Test Scanner {#testing-aztestscanner}
 
 The AZ test scanner is a tool for running unit tests that are built into Lumberyard libraries and executables\. This tool simplifies testing by automatically finding libraries and executables to test\. It also provides flexibility for programmers to focus on testing the parts of Lumberyard that they care about\.
 
@@ -11,7 +11,7 @@ The AZ test scanner has two components:
 + An AZ test runner executable that loads libraries to test and capture the test results
 + An AZ test Python module that performs the scanning and reporting functions
 
-## Creating Unit and Integration Test Builds<a name="testing-aztestscanner-building"></a>
+## Creating Unit and Integration Test Builds {#testing-aztestscanner-building}
 
 Unit and integration tests are not included in Lumberyard builds by default as they increase the overall size of a game project\. Test code can also have unexpected effects on performance\. To build components with tests included, you can use a special test variant that works with each configuration\.
 
@@ -36,7 +36,7 @@ Only Windows debug and profile builds are supported for testing\. Other platform
 
 For more information on writing tests, see [Writing Tests for AzTest](/docs/userguide/programming/testing/aztest-writing-tests.md)\.
 
-## Running Unit and Integration Test Builds<a name="testing-aztestscanner-running"></a>
+## Running Unit and Integration Test Builds {#testing-aztestscanner-running}
 
 A completed test build includes the file `AzTestRunner.exe` in the `\Bin64vc141.Test` folder\. Although you can use this to run tests, we recommend that you use the test scanner that uses `AzTestRunner.exe` in an automated manner\.
 
@@ -119,7 +119,7 @@ You can also use the `--target` flag to build and test just one module:
 lmbr_waf.bat build_win_x64_vs2017_debug_test -p all --target CrySystem run_tests
 ```
 
-### Including and excluding to filter tests<a name="testing-aztestscanner-include-exclude"></a>
+### Including and excluding to filter tests {#testing-aztestscanner-include-exclude}
 
 The test scanner includes the ability to use include and exclude files to filter out libraries and executables that you do not want to test\. By default, all found tests are run\. In all cases, modules that are excluded are never tested even if they are part of the inclusion list\. 
 

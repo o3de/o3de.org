@@ -2,24 +2,24 @@
 description: ' See the following &cryaction; nodes in &ALYlong;. '
 title: '&cryaction; Nodes'
 ---
-# CryAction Nodes<a name="ai-scripting-mbt-nodes-cryaction"></a>
+# CryAction Nodes {#ai-scripting-mbt-nodes-cryaction}
 
 These nodes provide MBT functionality for CryAction features\.
 
-## AnimateFragment<a name="ai-scripting-mbt-nodes-cryaction-animatefragment"></a>
+## AnimateFragment {#ai-scripting-mbt-nodes-cryaction-animatefragment}
 
 Plays a Mannequin animation fragment and waits until the animation finishes\. 
 
-### Parameters<a name="ai-scripting-mbt-nodes-cryaction-animatefragment-parameters"></a>
+### Parameters {#ai-scripting-mbt-nodes-cryaction-animatefragment-parameters}
 
 **name**  
 Name of the animation to play\.
 
-### Success/Failure<a name="ai-scripting-mbt-nodes-cryaction-animatefragment-success"></a>
+### Success/Failure {#ai-scripting-mbt-nodes-cryaction-animatefragment-success}
 
 The node SUCCEEDS if the animation is correctly played or if no operation was needed\. The node FAILS if an error occurs while trying to queue the animation request\.
 
-### Example<a name="ai-scripting-mbt-nodes-cryaction-animatefragment-example"></a>
+### Example {#ai-scripting-mbt-nodes-cryaction-animatefragment-example}
 
 ```
 <AnimateFragment name="SomeFragmentName" />

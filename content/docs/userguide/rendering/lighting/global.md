@@ -3,7 +3,7 @@ description: ' Use a global environment probe and its cubemap to control the lig
   of an entire level. '
 title: Global Environment Lighting
 ---
-# Global Environment Lighting<a name="enviro-lighting-global"></a>
+# Global Environment Lighting {#enviro-lighting-global}
 
 
 ****  

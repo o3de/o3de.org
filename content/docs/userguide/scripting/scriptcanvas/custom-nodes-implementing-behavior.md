@@ -2,11 +2,11 @@
 description: null
 title: Implementing Node Behavior
 ---
-# Implementing Node Behavior<a name="script-canvas-custom-nodes-implementing-behavior"></a>
+# Implementing Node Behavior {#script-canvas-custom-nodes-implementing-behavior}
 
 After you have defined the topology for the node, you can focus on implementing the behavior for the node\.
 
-## Adding Slots<a name="script-canvas-custom-nodes-adding-slots"></a>
+## Adding Slots {#script-canvas-custom-nodes-adding-slots}
 
 In addition to using AZ Code Generator to set up the node's topology, it is also possible to manually add execution and/or data slots if preferred\. The following example from the **IsNull** logic node adds a **Reference** input slot for data reference and an **Is Null** output slot\. The output slot returns a Boolean value depending on the evaluation of the data that was input\. The source code is in the location `\dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Logic\IsNull.cpp`\.
 
@@ -26,7 +26,7 @@ When the node is initialized, the added slots appear in the Script Canvas editor
 
 ![\[Slots added to the Is Null node\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-3.png)
 
-## Receiving Input Signals<a name="script-canvas-custom-nodes-receiving-input-signals"></a>
+## Receiving Input Signals {#script-canvas-custom-nodes-receiving-input-signals}
 
 Nodes can receive input signals when a node's execution slot is triggered\. To detect which signal has been triggered, implement `OnInputSignal`, as in the following example\.
 
@@ -62,7 +62,7 @@ void Countdown::OnInputSignal(const SlotId& slot)
 
 You can use these IDs to determine what action the node should take\.
 
-## Sending Output Signals<a name="script-canvas-custom-nodes-sending-output-signals"></a>
+## Sending Output Signals {#script-canvas-custom-nodes-sending-output-signals}
 
 After the **Delay** node is finished, it uses the `SignalOutput(outSlot)` function to signal the output slot that execution is ready to continue\.
 
@@ -79,7 +79,7 @@ SignalOutput(doneSlot);
 **Note**  
 If your node is connected to one or more buses during its lifetime, ensure that it disconnects from those buses before it exits\. Otherwise, your node might be handling events that it no longer should\.
 
-## Querying Inbound Data<a name="script-canvas-custom-nodes-querying-inbound-data"></a>
+## Querying Inbound Data {#script-canvas-custom-nodes-querying-inbound-data}
 
 The **Delay** node example has the inbound data slots **Time**, **Loop**, and **Hold**\.
 
@@ -95,7 +95,7 @@ m_holdTime = CountdownProperty::GetHold(this);
 
 You can often use these properties on the stack; you do not have to assign these properties to member variables\. In the **Delay** node example, member variables are used to cache the values\.
 
-## Sending Outbound Data<a name="script-canvas-custom-nodes-sending-outbound-data"></a>
+## Sending Outbound Data {#script-canvas-custom-nodes-sending-outbound-data}
 
 Many nodes might want to return a value or push forward data as a result of a computation\. In the **Delay** node example, the **Elapsed** slot outputs the elapsed time\.
 
@@ -113,7 +113,7 @@ if (auto* slot = GetSlot(elapsedSlot))
 }
 ```
 
-## Serializing "Hidden" Node Properties<a name="script-canvas-custom-nodes-serializing-hidden-properties"></a>
+## Serializing "Hidden" Node Properties {#script-canvas-custom-nodes-serializing-hidden-properties}
 
 In some cases you might want your node to serialize its properties but not expose them as slots on a node\. In this case, the `Property` and `EditProperty` tags are useful\.
 

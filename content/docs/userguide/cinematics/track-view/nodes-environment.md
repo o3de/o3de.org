@@ -3,7 +3,7 @@ description: ' Use the Environment node in &ALY;''s &trackview-editor; to set th
   sun''s longitude and latitude in a scene. '
 title: Environment Node
 ---
-# Environment Node<a name="cinematics-track-view-nodes-environment"></a>
+# Environment Node {#cinematics-track-view-nodes-environment}
 
 You can use the **Environment** node to set the sun's longitude and latitude in a scene\.
 

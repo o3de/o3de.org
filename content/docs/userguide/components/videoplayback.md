@@ -3,7 +3,7 @@ description: ' Use the Video Playback component to display a video in a level lo
   screen or on a texture in a game created with &ALYlong;. '
 title: Video Playback
 ---
-# Video Playback<a name="component-videoplayback"></a>
+# Video Playback {#component-videoplayback}
 
 You can use the **Video Playback** component to play a video on an entity in your Lumberyard level\. For example, you can use a flat or plane entity to simulate a movie screen\. You add the video playback component to the entity and specify a video file to display\.
 
@@ -11,7 +11,7 @@ You can also play a video on a level loading screen\. For more information, see 
 
 You can use Script Canvas or Lua scripting to trigger the video to play, pause, or stop, depending on player actions\.
 
-## Prerequisites<a name="prerequisites-video-playback-component"></a>
+## Prerequisites {#prerequisites-video-playback-component}
 
 To use the **Video Playback** component, you must do the following:
 + Install either FFmpeg or LibAV\.
@@ -40,7 +40,7 @@ Audio isn't currently supported with the **Video Playback** component, but you c
 + [Setting Up Stereo Video Playback](#component-videoplayback-stereo)
 + [Lua Bindings for Video Playback](#component-videoplayback-lua)
 
-## Setting Up Video Playback<a name="component-videoplayback-setup"></a>
+## Setting Up Video Playback {#component-videoplayback-setup}
 
 To set up video playback in Lumberyard, you must install either FFmpeg or LibAV\. 
 + If both are installed, Lumberyard uses FFmpeg\. 
@@ -49,7 +49,7 @@ To set up video playback in Lumberyard, you must install either FFmpeg or LibAV\
 **Note**  
 Certain third\-party software might require a license\. Consult the terms of service before installing the software\.
 
-### Installing FFmpeg<a name="install-ffmpeg"></a>
+### Installing FFmpeg {#install-ffmpeg}
 
 To install FFmpeg for Lumberyard, follow these steps\.
 
@@ -70,7 +70,7 @@ You must name the directory `3.2`, regardless of the FFmpeg version that you're 
 1. Run Lumberyard Setup Assistant and, on the **Install optional SDKs** page, verify that Lumberyard detects FFmpeg\.  
 ![\[Verify FFmpeg installation in Lumberyard Setup Assistant.\]](/images/userguide/component/component-videoplayback-setup-ffmpeg.png)
 
-### Installing LibAV<a name="install-libav"></a>
+### Installing LibAV {#install-libav}
 
 To install LibAV for Lumberyard, follow these steps\.
 
@@ -98,7 +98,7 @@ To open and extract `.7z` files, you must use a 7z application, such as 7\-Zip\.
 1. Run Lumberyard Setup Assistant and, on the **Install optional SDKs** page, verify that Lumberyard detects LibAV\.  
 ![\[Verify LibAV installation in Lumberyard Setup Assistant.\]](/images/userguide/component/component-videoplayback-setup-libav.png)
 
-## Using the Video Playback Component<a name="component-videoplayback-instructions"></a>
+## Using the Video Playback Component {#component-videoplayback-instructions}
 
  After you complete the [Prerequisites](#prerequisites-video-playback-component), you can use the **Video Playback** component\.
 
@@ -157,7 +157,7 @@ The basic setup for the **Video Playback** component includes the following:
 
  You can trigger the video to play at the start of your game using Lua scripting\.
 
-## Setting Up Stereo Video Playback<a name="component-videoplayback-stereo"></a>
+## Setting Up Stereo Video Playback {#component-videoplayback-stereo}
 
 Before setting up stereo video playback, ensure that you have completed the setup instructions in [Setting Up Video Playback](#component-videoplayback-setup)\.
 
@@ -179,15 +179,15 @@ To verify that your video is playing in stereo, you must enter VR mode\. You can
 
 Playing stereo video is resource intensive\. Because the video is often close in proximity to the player, it becomes easy to detect inconsistencies and artifacts in the video\. To prevent that, use higher resolution videos whenever possible\. To conserve resources, do not play more than one or two high resolution stereo videos at a time\. 
 
-## Lua Bindings for Video Playback<a name="component-videoplayback-lua"></a>
+## Lua Bindings for Video Playback {#component-videoplayback-lua}
 
 You can use Lua bindings to interact programmatically with video playback components that you’ve placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
 
-### Global Functions<a name="component-videoplayback-lua-global"></a>
+### Global Functions {#component-videoplayback-lua-global}
 
 The following functions provide programming interfaces for the video playback systems\.
 
-#### VideoPlaybackRequestBusSender<a name="VideoPlaybackRequestBusSender"></a>
+#### VideoPlaybackRequestBusSender {#VideoPlaybackRequestBusSender}
 
 **Parameters**  
 `EntityID`
@@ -195,7 +195,7 @@ The following functions provide programming interfaces for the video playback sy
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-videoplaybackrequestbussender)\.
 
-#### VideoPlaybackNotificationBusHandler<a name="VideoPlaybackNotificationBusHandler"></a>
+#### VideoPlaybackNotificationBusHandler {#VideoPlaybackNotificationBusHandler}
 
 Exposes callbacks to your Lua script that are triggered by events during video playback\.
 
@@ -208,7 +208,7 @@ For more information, see [VideoPlaybackNotificationBusHandler Object](#componen
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-videoplaybackrequestbussender)\.
 
-### VideoPlaybackRequestBusSender Object<a name="component-videoplayback-videoplaybackrequestbussender"></a>
+### VideoPlaybackRequestBusSender Object {#component-videoplayback-videoplaybackrequestbussender}
 
 The `VideoPlaybackRequestBusSender` object contains functions with which you can send requests to the video playback component\.
 
@@ -231,7 +231,7 @@ Sets whether this video automatically restarts from the beginning once the end o
 Sets how fast the video plays\. For example, **1\.0** is normal speed, **0\.5** is half speed, **2\.0** is double speed, and so on\.  
 Caution is advised when setting the video speed\. Setting a speed that is too high can result in choppy playback\.
 
-### VideoPlaybackNotificationBusHandler Object<a name="component-videoplayback-videoplaybacknotificationbushandler"></a>
+### VideoPlaybackNotificationBusHandler Object {#component-videoplayback-videoplaybacknotificationbushandler}
 
 The `VideoPlaybackNotificationBusHandler` object exposes callback functions to your Lua script that are triggered by events that happen during video playback\. 
 

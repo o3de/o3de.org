@@ -3,7 +3,7 @@ description: ' Use the WaterVolume shader to apply a material to rivers you crea
   in your &ALY; terrain. '
 title: Applying a River Material
 ---
-# Applying a River Material<a name="terrain-rivers-material"></a>
+# Applying a River Material {#terrain-rivers-material}
 
 
 ****  

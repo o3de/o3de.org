@@ -3,7 +3,7 @@ description: ' Create a cloud gem to add connected features to your &ALYlong; ga
   project. '
 title: Creating a Cloud Gem
 ---
-# Creating a Cloud Gem<a name="cloud-canvas-cgf-getting-started-create-gem"></a>
+# Creating a Cloud Gem {#cloud-canvas-cgf-getting-started-create-gem}
 
 Lumberyard includes some cloud gems, such as leaderboards and dynamic content distribution, that provide full\-featured services\. You can use these gems in your games with a minimum of effort\. Because the full source code for these cloud gems is included with Lumberyard, you can customize them or use them as examples for developing your own cloud gems\.
 
@@ -48,7 +48,7 @@ You can easily create your own cloud gem by using the `lmbr_aws cloud-gem create
 
   The syntax options are as follows\.
   + `--gem {gem-name}` – Specifies the name of the cloud gem\.
-  + `--initial-content {content-option}` – Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](/docs/userguide/gems/cloud-canvas/command-line.md#cloud-canvas-command-line-cloud-gem-create)\.
+  + `--initial-content {content-option}` – Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-cloud-gem-create)\.
   + `--enable` – Enables the cloud gem in your project\. 
 
 **Example**  
@@ -65,7 +65,7 @@ Depending on the parameter that you choose for the `--initial-content` option, t
     + A `cgp-resource-code` directory that contains skeleton resource code for your [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)\.
     + A `lambda-code` directory that contains skeleton `ServiceLambda` API code\. `ServiceLambda` is an AWS Lambda function that implements your cloud gem's functionality\.
     + A `swagger.json` file that describes the API for the cloud gem\. For more information about the `swagger.json` file, see [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md)\.
-    + A [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-template) file that defines the initial resources for the cloud gem\. In the `api-lambda` example, the `resource-template.json` file specifies the following: 
+    + A [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template) file that defines the initial resources for the cloud gem\. In the `api-lambda` example, the `resource-template.json` file specifies the following: 
       + `ServiceApi`, `ServiceLambda`, and `ServiceLambdaConfiguration` resources\.
       + An output for the service API URL\.
       + An `AccessControl` resource configured as described in [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
@@ -75,7 +75,7 @@ Depending on the parameter that you choose for the `--initial-content` option, t
     + `\Source\` – Contains skeleton component, gem module and system component files\.
     + `\Tests\` – Contains a skeleton `{gem-name}Test.cpp` file
 
-## Developing your Cloud Gem<a name="cloud-canvas-cgf-getting-started-developing-your-cloud-gem"></a>
+## Developing your Cloud Gem {#cloud-canvas-cgf-getting-started-developing-your-cloud-gem}
 
 After you use the `lmbr_aws cloud-gem create` command, you can further develop your cloud gem by doing the following:
 + Add resource definitions that the cloud gem requires to the `resource-template.json` file\. In Cloud Canvas **Resource Manager**, click **Upload all resources** to create and deploy the AWS resources that are defined in your `resource-template.json` file\.

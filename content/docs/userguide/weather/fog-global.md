@@ -2,7 +2,7 @@
 description: ' Use global fog to simulate fog along the ground in your &ALYlong; level. '
 title: Setting Global (Time of Day) Fog
 ---
-# Setting Global \(Time of Day\) Fog<a name="weather-fog-global"></a>
+# Setting Global \(Time of Day\) Fog {#weather-fog-global}
 
 You can use global fog to simulate particles that are distributed uniformly along the ground and fall off exponentially with height above sea level\. Global fog accurately accounts for time of day lighting and for scattered sunlight rays to produce haze at the horizon and halos around the sun\. You can also use this effect to cast shadows for objects and clouds through the fog\.
 
@@ -10,6 +10,6 @@ You can use global fog to simulate particles that are distributed uniformly alon
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Time Of Day**\.
 
-1. In the **Parameters** pane, for **Fog**, adjust the [Fog Parameters](/docs/userguide/sky/tod-parameters.md#fog-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Fog**, adjust the [Fog Parameters](/docs/userguide/sky/tod-parameters#fog-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.

@@ -3,7 +3,7 @@ description: ' Create asset bundles that can be distributed to patch and update 
   live &ALY; game, while also making a new distribution for later downloads. '
 title: Create content patches with &ALY;
 ---
-# Create content patches with Lumberyard<a name="asset-bundler-tutorial-content-patches"></a>
+# Create content patches with Lumberyard {#asset-bundler-tutorial-content-patches}
 
 
 ****  
@@ -17,7 +17,7 @@ This tutorial demonstrates a bundling process designed to simulate a patch updat
 + Creating an updated asset bundle that contains only updated or new assets\.
 + Running the new release build with new bundles\.
 
-## Prerequisites<a name="asset-bundler-tutorial-content-patches-prerequisites"></a>
+## Prerequisites {#asset-bundler-tutorial-content-patches-prerequisites}
 
 To complete this tutorial, you should have completed the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) and [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md) tutorials\. You should have:
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
@@ -25,7 +25,7 @@ To complete this tutorial, you should have completed the [Build and bundle asset
 + The `dlc_level2.seed` seed list file used to generate the asset list for the level content bundle\.
 + The `dlc_level2_pc.assetlist` file used to generate the additional level content bundle\.
 
-## Add a gem and modify the level<a name="asset-bundler-tutorial-content-add-gem"></a>
+## Add a gem and modify the level {#asset-bundler-tutorial-content-add-gem}
 
 For this tutorial you'll modify the `level2` level created in the previous tutorial\. You'll also be adding a new asset\-only gem to the Starter Game project, to demonstrate how to update auxiliary content in addition to pushing direct changes to a bundle\.
 
@@ -55,7 +55,7 @@ The **Primitive Assets** gem is an asset\-only gem, so you aren't required to re
 
 1. Close the Lumberyard Editor\.
 
-## Recreate the project bundles<a name="asset-bundler-tutorial-content-patches-recreate-bundles"></a>
+## Recreate the project bundles {#asset-bundler-tutorial-content-patches-recreate-bundles}
 
  In this step you'll version your old asset lists, generate new asset lists based on the changes to the level, and create two content packs: One for distributing to existing versions of the game as a patch, and one for directly downloading the latest version\. 
 
@@ -110,11 +110,11 @@ The **Primitive Assets** gem is an asset\-only gem, so you aren't required to re
 **Important**  
  Don't copy either of these files to the release folder yet\. The next section will cover testing each bundle to make sure that it contains the correct content, and that they load correctly\. 
 
-## Simulate user scenarios<a name="asset-bundler-tutorial-content-patches-simulate-the-user-scenarios"></a>
+## Simulate user scenarios {#asset-bundler-tutorial-content-patches-simulate-the-user-scenarios}
 
 Now you're ready to simulate two scenarios: users who have v1 of your game but upgrade to v2, and users who download v2 for the first time\.
 
-### Simulate the v1 to v2 patch experience<a name="asset-bundler-tutorial-content-patches-simulating-the-v1-to-v2-patch-experience"></a>
+### Simulate the v1 to v2 patch experience {#asset-bundler-tutorial-content-patches-simulating-the-v1-to-v2-patch-experience}
 
 1. Open a console and navigate to the Lumberyard root directory\.
 
@@ -133,7 +133,7 @@ Now you're ready to simulate two scenarios: users who have v1 of your game but u
    If the content patch was applied successfully, you should see a scene similar to the following:  
 ![\[A static scene displaying a boulder and an untextured 1x1 box.\]](/images/userguide/assetbundler/tutorial-content-patches/03.png)
 
-### Simulate the v2 download experience<a name="asset-bundler-tutorial-content-patches-simulating-the-v2-download-experience"></a>
+### Simulate the v2 download experience {#asset-bundler-tutorial-content-patches-simulating-the-v2-download-experience}
 
 1. Delete the content patch and v1 data from your game release:
 
@@ -154,7 +154,7 @@ Now you're ready to simulate two scenarios: users who have v1 of your game but u
    %USERPROFILE%\StarterGameRelease\release\StarterGameLauncher.exe +map level2
    ```
 
-## Conclusion<a name="asset-bundler-tutorial-content-patches-conclusion"></a>
+## Conclusion {#asset-bundler-tutorial-content-patches-conclusion}
 
 You've learned how to generate a content patch to apply to an existing game\. Now you know the general steps for distributing additional content and patches for your Lumberyard game:
 + Create a complete asset list using your newly created or updated content as a seed\.

@@ -2,7 +2,7 @@
 description: ' Learn about editor components in &ALYlong;. '
 title: Editor Components
 ---
-# Editor Components<a name="component-entity-system-pg-editor-components"></a>
+# Editor Components {#component-entity-system-pg-editor-components}
 
 Some components in Lumberyard have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. Lumberyard uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.
 
@@ -14,7 +14,7 @@ Your component must be fully active at edit time\. Edit time refers to standard 
 You must add special tools functionality to your component that requires that you compile only into your editor binaries\.
 Your component provides functionality only in the editor and does not export a runtime component \(for example, if your component manages selection logic\)\.
 
-## Sample Editor Component<a name="component-entity-system-pg-editor-components-sample"></a>
+## Sample Editor Component {#component-entity-system-pg-editor-components-sample}
 
 The following code shows a sample editor component\.
 
@@ -63,11 +63,11 @@ public:
 };
 ```
 
-## Editor Component and Runtime Component Differences<a name="component-entity-system-pg-editor-components-editor-runtime-differences"></a>
+## Editor Component and Runtime Component Differences {#component-entity-system-pg-editor-components-editor-runtime-differences}
 
 The code for editor components is similar to the code for runtime components\. The following sections list the key differences\. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed\. For more information, see [Creating a Component](/docs/userguide/components/entity-system-create-component.md)\.
 
-### Base Classes<a name="component-entity-system-pg-editor-components-base-classes"></a>
+### Base Classes {#component-entity-system-pg-editor-components-base-classes}
 
 All editor components include the `AzToolsFramework::Components::EditorComponentBase` class somewhere in their inheritance ancestry\. If a component must display edit\-time visualization, it must be a handler on the `AzFramework::EntityDebugDisplayEventBus::Handler` bus, as in the following example\.
 
@@ -80,7 +80,7 @@ class MyComponent
       , private AzFramework::EntityDebugDisplayEventBus::Handler
 ```
 
-### Macro<a name="component-entity-system-pg-editor-components-macro"></a>
+### Macro {#component-entity-system-pg-editor-components-macro}
 
 Every editor component must specify the `AZ_EDITOR_COMPONENT` macro within its class definition\. The macro takes two arguments:
 
@@ -101,7 +101,7 @@ Some Lumberyard editor components specify `AzToolsFramework::Components::EditorC
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);
 ```
 
-### The DisplayEntityViewport Method<a name="component-entity-system-pg-editor-components-displayentityviewport"></a>
+### The DisplayEntityViewport Method {#component-entity-system-pg-editor-components-displayentityviewport}
 
 To draw debug visuals in the viewport for a specific entity, implement the `DisplayEntityViewport` method of the `AzFramework::EntityDebugDisplayEventBus` interface\. Use this location for custom primitive edit\-time visualization code\.
 
@@ -121,7 +121,7 @@ void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFram
 
 lala
 
-### The BuildGameEntity Method<a name="component-entity-system-pg-editor-components-buildgameentity"></a>
+### The BuildGameEntity Method {#component-entity-system-pg-editor-components-buildgameentity}
 
 The `BuildGameEntity` method from `EditorComponentBase.h` facilitates the translation of an editor component into a runtime component\. Override this method as follows\.
 

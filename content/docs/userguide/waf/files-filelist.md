@@ -3,7 +3,7 @@ description: ' Use Waf files to specify the files to include in your &ALYlong; g
   build. '
 title: Waf File Lists (*.waf_files)
 ---
-# Waf File Lists \(\*\.waf\_files\)<a name="waf-files-filelist"></a>
+# Waf File Lists \(\*\.waf\_files\) {#waf-files-filelist}
 
 In standard Waf, the source files to include for a build is specified directly as a list of files using the keyword `Source`\. However, the list of source files does not provide support for the following features in Lumberyard:
 + **Uber Files**
@@ -13,9 +13,9 @@ In standard Waf, the source files to include for a build is specified directly a
 
   The `.waf_files` mechanism also provides a way to declare the source files that are included in a Microsoft Visual Studio filter\. Visual Studio's solution explorer does not always accurately represent the files and their directory hierarchy on disk, so it uses filters\. Cases exist in Lumberyard where multiple projects share a subset of source code outside of individual project directories\. The ability to manually specify filters lets Lumberyard maintain this file sharing\.
 
-The paths to the source files specified in a `.waf_files` file are relative to the location of the `.waf_files` file itself\. It is also possible to use [aliases](/docs/userguide/waf/third-party-library-configurations.md#waf-third-party-library-configurations-using-aliases) to third\-party directories for situations in which a third\-party library consists of source code\.
+The paths to the source files specified in a `.waf_files` file are relative to the location of the `.waf_files` file itself\. It is also possible to use [aliases](/docs/userguide/waf/third-party-library-configurations#waf-third-party-library-configurations-using-aliases) to third\-party directories for situations in which a third\-party library consists of source code\.
 
-## File Structure<a name="waf-files-filelist-structure"></a>
+## File Structure {#waf-files-filelist-structure}
 
 A `.waf_files` file is organized into three levels:
 + **Level 1 – Uber file grouping**
@@ -32,7 +32,7 @@ A `.waf_files` file is organized into three levels:
 
   The list of source files relative to the location of the `.waf_files` file to be listed under the Visual Studio filter key name\. Waf file lists also support file globbing\. For more information, see the File Globbing section in this topic\.
 
-## Using Uber Mode<a name="waf-files-filelist-uber-mode"></a>
+## Using Uber Mode {#waf-files-filelist-uber-mode}
 
 Uber mode is specified in the `user_settings.options` file under the `use_uber_files` attribute, as shown in the following example:
 
@@ -72,7 +72,7 @@ The following example shows this structure\.
 }
 ```
 
-### Limiting the Uber File Byte Size<a name="waf-files-filelist-auto-file-byte-size-limit"></a>
+### Limiting the Uber File Byte Size {#waf-files-filelist-auto-file-byte-size-limit}
 
 When you specify `auto`, Waf limits the size of the uber file to the byte limit specified in the `user_settings.options` file `uber_file_size` attribute, as in the following example:
 
@@ -80,7 +80,7 @@ When you specify `auto`, Waf limits the size of the uber file to the byte limit 
 uber_file_size = 307200
 ```
 
-## File Globbing<a name="waf-files-filelist-file-globbing"></a>
+## File Globbing {#waf-files-filelist-file-globbing}
 
 The source file definitions support limited [ant pattern\-based file matching](https://ant.apache.org/manual/dirtasks.html), or "globbing"\. This allows you to group related files together based on file extension instead of listing files individually\. To enable globbing, use a globbing pattern instead of a file path in the source file\. The following shows examples of file globbing\.
 
@@ -112,7 +112,7 @@ The example showcases the following globbing patterns:
 | Single/\*\.cpp | Add all files with the \.cpp extension in the Source directory only\. | 
 | Nested/\*\*/\*\.cpp | Recursively add all files with the \.cpp extension in the Source directory\. | 
 
-### Custom Globbing Rules<a name="waf-files-filelist-file-globbing-custom-rules"></a>
+### Custom Globbing Rules {#waf-files-filelist-file-globbing-custom-rules}
 
 You can create some custom globbing rules by specifying a dictionary for the glob search\. For example, the following dictionary includes all files in the directory except for files with a `.res` extension:
 
@@ -135,11 +135,11 @@ Dictionary specifications support the following keys:
 + **maxdepth** – For a recursive search, limit the depth of the search\.
 + **ignorecase** – Ignore case when using the globbing pattern\.
 
-### Globbing at Configure Time and Build Time<a name="waf-files-filelist-file-globbing-at-configure-time-and-build-time"></a>
+### Globbing at Configure Time and Build Time {#waf-files-filelist-file-globbing-at-configure-time-and-build-time}
 
 Because globbing is an expensive operation, it is not recommended on large sets of files\. Globbing can be done either at configure time, or at both configure and build time\. Doing globbing only at configure time improves the build performance\. It reuses the glob result that was created at the time of the last configure\. The disadvantage is that it does not pick up any files that are added or removed until another configure is done\. Doing globbing at both configure and build time picks up file additions and removals for every build, but can be expensive\.
 
-#### Enabling Build Time Globbing<a name="waf-files-filelist-file-globbing-enabling-build-time-globbing"></a>
+#### Enabling Build Time Globbing {#waf-files-filelist-file-globbing-enabling-build-time-globbing}
 
 To enable or disable build time globbing, set the `enable_dynamic_file_globbing` attribute in the `user_settings.options` file to `True` or `False`, as shown in the following example:
 

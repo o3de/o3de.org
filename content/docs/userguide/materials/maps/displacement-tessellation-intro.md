@@ -2,7 +2,7 @@
 description: ' Specify tessellation parameters for materials in &ALYlong;. '
 title: Tessellation
 ---
-# Tessellation<a name="mat-maps-displacement-tessellation-intro"></a>
+# Tessellation {#mat-maps-displacement-tessellation-intro}
 
 In order for displacement mapping to work correctly, tessellation is also required, otherwise there wouldn't be enough geometry to displace\. Tessellation increases the geometry count by subdividing polygons into smaller polygons before it gets displaced\. Phong and PN triangles are the two available tessellation methods\. 
 

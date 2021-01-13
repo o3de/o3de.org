@@ -3,7 +3,7 @@ description: ' Use the Infinite Ocean component in &ALYlong; to change how you w
   the ocean to appear. '
 title: Infinite Ocean Component Properties
 ---
-# Infinite Ocean Component Properties<a name="infinite-ocean-component-properties"></a>
+# Infinite Ocean Component Properties {#infinite-ocean-component-properties}
 
 Use the following parameters for the **Infinite Ocean** component to change how the ocean appears\.
 
@@ -16,7 +16,7 @@ Use the following parameters for the **Infinite Ocean** component to change how 
 + [Advanced](#infinite-ocean-component-properties-advanced)
 + [Tessellation Examples](#infinite-ocean-component-tessellation-examples)
 
-## General<a name="infinite-ocean-component-properties-general"></a>
+## General {#infinite-ocean-component-properties-general}
 
 See the following general parameters\.
 
@@ -29,7 +29,7 @@ Render the ocean with this assigned material\. The material must be a water shad
 You can find the default material in the `lumberyard_version/dev/Engine/EngineAssets/Materials/Water/ocean_default.mtl` directory\.  
 Default value: `ocean_default.mtl`
 
-## Animation<a name="infinite-ocean-component-properties-animation"></a>
+## Animation {#infinite-ocean-component-properties-animation}
 
 Use the following animation parameters to control the movement of the waves and the scrolling of the water texture, with the wind speed and direction\.
 
@@ -59,7 +59,7 @@ Specify the speed of the ocean wind\.
 Default value: `40.0`  
 Valid values: `0` to `1000`
 
-## Fog<a name="infinite-ocean-component-properties-fog"></a>
+## Fog {#infinite-ocean-component-properties-fog}
 
 Use the following fog parameters to control the density and color of the ocean \(underwater fog\)\. This simulates how light bounces off, is absorbed by, and scatters with the particulate matter in the water\.
 
@@ -92,7 +92,7 @@ In the following example, the value for the **Density** parameter is high\. This
 
 ![\[Example Infinite Ocean component with high fog density.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-4.png)
 
-## Caustic<a name="infinite-ocean-component-properties-caustic"></a>
+## Caustic {#infinite-ocean-component-properties-caustic}
 
 The following caustic parameters control how the refracted rays of light animate and project on objects below the ocean surface\.
 
@@ -127,7 +127,7 @@ The following is an example of how light interacts with the water below the surf
 
 ![\[Example Infinite Ocean component with the caustic parameters.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-2.png)
 
-## Reflection<a name="infinite-ocean-component-properties-reflection"></a>
+## Reflection {#infinite-ocean-component-properties-reflection}
 
 The following reflection parameters are set for the resolution of the reflection texture map \(this is based on screen size \* resolution scale\) and a set of flags that the reflection system uses when the camera is above the ocean\. 
 
@@ -152,7 +152,7 @@ Default value: `True`
 Specify whether particles are included when reflections are rendered in the ocean\. For example, if your level has a flame particle effect on a torch, a value of `false` means that the torch flame does not reflect into the ocean\.  
 Default value: `True`
 
-## Advanced<a name="infinite-ocean-component-properties-advanced"></a>
+## Advanced {#infinite-ocean-component-properties-advanced}
 
 In most cases, you don't need to change the values for the advanced parameters\. For example, you should set the **Tessellation** parameter once and not during runtime updates\.
 
@@ -171,7 +171,7 @@ Specify the amount of the scene that is distorted when it renders while the came
 Default value: `1`  
 Valid values: `0` to ∞
 
-## Tessellation Examples<a name="infinite-ocean-component-tessellation-examples"></a>
+## Tessellation Examples {#infinite-ocean-component-tessellation-examples}
 
 The **Infinite Ocean** component has controls for setting the level of tessellation \(number of vertices and polygons\) for the generated mesh that defines the surface of the ocean\.
 

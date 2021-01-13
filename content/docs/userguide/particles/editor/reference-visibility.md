@@ -3,7 +3,7 @@ description: ' Use the Visibility attribute in the &ALYlong; &particle-editor; t
   control the visibility of the particles. '
 title: Visibility Attribute
 ---
-# Visibility Attribute<a name="particle-editor-reference-visibility"></a>
+# Visibility Attribute {#particle-editor-reference-visibility}
 
 In the **Visibility** attribute, specify how to control the particle's visibility\.
 

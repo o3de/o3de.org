@@ -3,11 +3,11 @@ description: ' Use the DefectReporterSample level to test the Defect Reporter cl
   gem in &ALYlong;. '
 title: Using the Defect Reporter Cloud Gem Sample Level
 ---
-# Using the Defect Reporter Cloud Gem Sample Level<a name="cloud-canvas-cloud-gem-defect-reporter-sample-level"></a>
+# Using the Defect Reporter Cloud Gem Sample Level {#cloud-canvas-cloud-gem-defect-reporter-sample-level}
 
-You can use the DefectReporterSample level that is included with Lumberyard to generate sample defect reports\. The sample includes a number of preset data collection fields\. For information on creating custom fields for the sample level, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp.md#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
+You can use the DefectReporterSample level that is included with Lumberyard to generate sample defect reports\. The sample includes a number of preset data collection fields\. For information on creating custom fields for the sample level, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-defect-reporter-sample-level-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-defect-reporter-sample-level-prerequisites}
 
 This tutorial assumes the following:
 + You have used the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) to set **CloudGemDefectReportSample** as your default project\.
@@ -15,9 +15,9 @@ This tutorial assumes the following:
   + A project stack for your project\.
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 
-If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## Workflow Steps<a name="cloud-canvas-cloud-gem-defect-reporter-sample-level-test-workflow-steps"></a>
+## Workflow Steps {#cloud-canvas-cloud-gem-defect-reporter-sample-level-test-workflow-steps}
 
 You can use the DefectReporterSample level to do the following:
 
@@ -57,7 +57,7 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 
    1. **Attachments** – Lists the attachments that were captured as part of the data gathering process\.
 
-   1. **Custom Field** – Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp.md#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
+   1. **Custom Field** – Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
 
    1. **Error Message** – A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.  
 ![\[Box for contextual information about the error in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-5.png)

@@ -3,7 +3,7 @@ description: ' Use the DropTarget component with the Draggable component to impl
   drag-and-drop behavior in the &ALYlong; &ui-canvas-editor;. '
 title: DropTarget
 ---
-# DropTarget<a name="ui-editor-components-drop-target"></a>
+# DropTarget {#ui-editor-components-drop-target}
 
 You can use the **DropTarget** component to implement drag\-and\-drop behavior with the **Draggable** component\.
 

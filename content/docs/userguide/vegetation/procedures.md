@@ -3,7 +3,7 @@ description: ' Learn the basic procedures to create realistic-looking dynamic ve
   in &ALYlong;. '
 title: Dynamic Vegetation Procedures
 ---
-# Dynamic Vegetation Procedures<a name="dynamic-vegetation-procedures"></a>
+# Dynamic Vegetation Procedures {#dynamic-vegetation-procedures}
 
 Creating realistic dynamic vegetation in Lumberyard starts with a few basic procedures that you can follow up with endless customizations\.
 

@@ -2,13 +2,13 @@
 description: ' Learn more about TrueType fonts in &ALYlong;. '
 title: TrueType Fonts
 ---
-# TrueType Fonts<a name="graphics-rendering-truetype"></a>
+# TrueType Fonts {#graphics-rendering-truetype}
 
-CryFont is used to generate font textures that are required to render text on the screen\. The various features of font rendering can be seen by using the `r_DebugFontRendering` console variable\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
+CryFont is used to generate font textures that are required to render text on the screen\. The various features of font rendering can be seen by using the `r_DebugFontRendering` console variable\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 
 The output is not only to test the functionality but also to document how the features can be used\.
 
-## Supported Features<a name="graphics-rendering-truetype-supported-features"></a>
+## Supported Features {#graphics-rendering-truetype-supported-features}
 
 CryFont supports the following features:
 +  Font shaders – Used to configure the appearance of fonts\. Multiple passes with configurable offset and color are supported to enable generation of shadows or outlines\. A sample font shader is shown in the following XML example\. 
@@ -44,9 +44,9 @@ CryFont supports the following features:
 + Proportional and monospace fonts
 + Pixel\-perfect rendering with exact texel\-to\-pixel mapping for best quality\.
 
-## Useful Console Commands<a name="graphics-rendering-truetype-cli"></a>
+## Useful Console Commands {#graphics-rendering-truetype-cli}
 
-The following console commands provide information about font rendering\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
+The following console commands provide information about font rendering\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 
 **r\_DebugFontRendering**  
 Provides information on various font rendering features, useful for verifying function and documenting usage\.   

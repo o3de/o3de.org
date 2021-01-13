@@ -3,7 +3,7 @@ description: ' Turn on debugging in &ALY; to display virtual reality debugging i
   in a supported head-mounted display. '
 title: Debugging your Virtual Reality Project
 ---
-# Debugging your Virtual Reality Project<a name="virtual-reality-debug"></a>
+# Debugging your Virtual Reality Project {#virtual-reality-debug}
 
 You can debug your virtual reality project either through a running instance of the game or through Lumberyard Editor\. The head\-mounted displays that Lumberyard supports outputs debugging information when debugging is enabled\.
 

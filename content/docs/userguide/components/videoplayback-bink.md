@@ -3,7 +3,7 @@ description: ' Use the Video Playback Bink component to display a Bink video in 
   level loading screen or on a texture in a game created with &ALYlong;. '
 title: Video Playback Bink
 ---
-# Video Playback Bink<a name="component-videoplayback-bink"></a>
+# Video Playback Bink {#component-videoplayback-bink}
 
 You can use the **Video Playback Bink** component to play a video on an entity in your Lumberyard level\. For example, you can use a flat or plane entity to simulate a movie screen\. You add the video playback component to the entity and specify a Bink video file to display\.
 
@@ -11,7 +11,7 @@ You can also play a video on a level loading screen\. For more information, see 
 
 You can use Script Canvas or Lua scripting to trigger the video to play, pause, or stop, depending on player actions\.
 
-## Prerequisites<a name="prerequisites-videoplayback-bink-component"></a>
+## Prerequisites {#prerequisites-videoplayback-bink-component}
 
 To use the **Video Playback Bink** component, you must do the following:
 + Obtain a Bink license\. Contact [RAD Game Tools](http://www.radgametools.com/bnkmain.htm) for information on how to license Bink\.
@@ -26,7 +26,7 @@ A Bink license is needed to gain access to this gem\. Installation instructions 
 + [Using the Video Playback Bink Component](#component-videoplayback-bink-instructions)
 + [Lua Bindings for Video Playback Bink](#component-videoplayback-bink-lua)
 
-## Using the Video Playback Bink Component<a name="component-videoplayback-bink-instructions"></a>
+## Using the Video Playback Bink Component {#component-videoplayback-bink-instructions}
 
  After you complete the [Prerequisites](#prerequisites-videoplayback-bink-component), you can use the **Video Playback Bink** component\.
 
@@ -76,15 +76,15 @@ The basic setup for the **Video Playback Bink** component includes the following
 
  You can trigger the video to play at the start of your game using Lua scripting\.
 
-## Lua Bindings for Video Playback Bink<a name="component-videoplayback-bink-lua"></a>
+## Lua Bindings for Video Playback Bink {#component-videoplayback-bink-lua}
 
 You can use Lua bindings to interact programmatically with video playback components that you’ve placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
 
-### Global Functions<a name="component-videoplayback-bink-lua-global"></a>
+### Global Functions {#component-videoplayback-bink-lua-global}
 
 The following functions provide programming interfaces for the video playback systems\.
 
-#### VideoPlaybackRequestBusSender<a name="VideoPlaybackBinkRequestBusSender"></a>
+#### VideoPlaybackRequestBusSender {#VideoPlaybackBinkRequestBusSender}
 
 **Parameters**  
 `EntityID`
@@ -92,7 +92,7 @@ The following functions provide programming interfaces for the video playback sy
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-bink-videoplaybackrequestbussender)\.
 
-#### VideoPlaybackNotificationBusHandler<a name="VideoPlaybackBinkNotificationBusHandler"></a>
+#### VideoPlaybackNotificationBusHandler {#VideoPlaybackBinkNotificationBusHandler}
 
 Exposes callbacks to your Lua script that are triggered by events during video playback\.
 
@@ -105,7 +105,7 @@ For more information, see [VideoPlaybackNotificationBusHandler Object](#componen
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-bink-videoplaybackrequestbussender)\.
 
-### VideoPlaybackRequestBusSender Object<a name="component-videoplayback-bink-videoplaybackrequestbussender"></a>
+### VideoPlaybackRequestBusSender Object {#component-videoplayback-bink-videoplaybackrequestbussender}
 
 The `VideoPlaybackRequestBusSender` object contains functions with which you can send requests to the video playback component\.
 
@@ -128,7 +128,7 @@ Sets whether this video automatically restarts from the beginning once the end o
 Sets how fast the video plays\. For example, **1\.0** is normal speed, **0\.5** is half speed, **2\.0** is double speed, and so on\.  
 Caution is advised when setting the video speed\. Setting a speed that is too high can result in choppy playback\.
 
-### VideoPlaybackNotificationBusHandler Object<a name="component-videoplayback-bink-videoplaybacknotificationbushandler"></a>
+### VideoPlaybackNotificationBusHandler Object {#component-videoplayback-bink-videoplaybacknotificationbushandler}
 
 The `VideoPlaybackNotificationBusHandler` object exposes callback functions to your Lua script that are triggered by events that happen during video playback\. 
 

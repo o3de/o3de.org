@@ -3,7 +3,7 @@ description: ' Use the Point emitter in the &ALYlong; &particle-editor; to spawn
   in a spherical distribution from the origin. '
 title: Point Emitter (CPU and GPU)
 ---
-# Point Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-point"></a>
+# Point Emitter \(CPU and GPU\) {#particle-editor-emitter-shape-type-point}
 
 The **Point** emitter spawns particles in a spherical distribution from the origin\. This allows you to control the spread angle to create complex conical and spherical effects\.
 

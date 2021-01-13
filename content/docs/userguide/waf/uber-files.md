@@ -3,7 +3,7 @@ description: ' Use uber files to reduce compilation and build time for multiple 
   and CPP files for &ALYlong;. '
 title: Using Uber Files
 ---
-# Using Uber Files<a name="waf-uber-files"></a>
+# Using Uber Files {#waf-uber-files}
 
 Uber files combine multiple C and CPP files into a single compilation unit, which is intended to reduce input/output impact on compilation time and help accelerate build time\.
 
@@ -38,7 +38,7 @@ Valid values for `<uber_file>` are:
 
 Most waf\_files lists should include one `none` section with the precompiled header and an `auto` section with everything else\.
 
-## Configuring Waf<a name="uber-files-configuring-waf"></a>
+## Configuring Waf {#uber-files-configuring-waf}
 
 To help obtain the most optimal compile times, use the following:
 + **use\_uber\_files** = `True`

@@ -2,7 +2,7 @@
 description: ' Customize post-processing effects in &ALYlong;. '
 title: Customizing Post-Processing Effects
 ---
-# Customizing Post\-Processing Effects<a name="effect-groups-customizing-intro"></a>
+# Customizing Post\-Processing Effects {#effect-groups-customizing-intro}
 
 Lumberyard includes post\-processing effects that can help improve your game's graphics, lighting, and transitions between effects such as color correction, bloom, and depth of field\.
 

@@ -3,11 +3,11 @@ description: ' Learn the implementation details of the &ALYlong; Message of the 
   Cloud Gem. '
 title: Cloud Gem Message of the Day Implementation Details
 ---
-# Cloud Gem Message of the Day Implementation Details<a name="cloud-canvas-cloud-gem-mod-details"></a>
+# Cloud Gem Message of the Day Implementation Details {#cloud-canvas-cloud-gem-mod-details}
 
 This section describes the entity, component, Lua script, and resources used by the Message of the Day Cloud Gem\.
 
-## Entity and Component<a name="cloud-canvas-cloud-gem-mod-details-entity-and-component"></a>
+## Entity and Component {#cloud-canvas-cloud-gem-mod-details-entity-and-component}
 
 The Message of the Day sample uses an entity called `MOTDMenu` that contains the `CloudGemMessageOfTheDayClientComponent`\.
 
@@ -15,7 +15,7 @@ The Message of the Day sample uses an entity called `MOTDMenu` that contains the
 
 The `CloudGemMessageOfTheDayClientComponent` component gives the entity access to the game client API operations so that it can receive callback results\.
 
-## The motdmainmenu\.lua Script<a name="cloud-canvas-cloud-gem-mod-details-lua-script"></a>
+## The motdmainmenu\.lua Script {#cloud-canvas-cloud-gem-mod-details-lua-script}
 
 The `MOTDmenu` entity also contains a Lua script component that executes the `dev\CloudGemSamples\Scripts\motdmainmenu.lua` script\.
 
@@ -71,7 +71,7 @@ function motdmainmenu:OnGetPlayerMessagesRequestError(errorMsg)
 end
 ```
 
-## Cloud Gem Message of the Day Resources<a name="cloud-canvas-cloud-gem-mod-details-resources"></a>
+## Cloud Gem Message of the Day Resources {#cloud-canvas-cloud-gem-mod-details-resources}
 
 The Cloud Canvas Message of the Day sample has a resource group that contains an Amazon DynamoDB table called Main Table, which is the database for the messages\. Table entries are keyed on a server\-generated unique message ID\. Each entry has the following attributes\.
 

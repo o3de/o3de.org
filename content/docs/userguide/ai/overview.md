@@ -2,7 +2,7 @@
 description: ' See the following AI system overview in &ALYlong;. '
 title: AI System Overview
 ---
-# AI System Overview<a name="ai-concepts-overview"></a>
+# AI System Overview {#ai-concepts-overview}
 
 
 ****  
@@ -13,7 +13,7 @@ title: AI System Overview
 
 This section outlines basic concepts related to the AI system\.
 
-## Navigation<a name="ai-concepts-navigation"></a>
+## Navigation {#ai-concepts-navigation}
 + Default navigation system
   + Triangulation 
     + 2D terrain\-based navigation
@@ -30,27 +30,27 @@ This section outlines basic concepts related to the AI system\.
 
 In general, a search is time\-sliced to use 0\.5 ms per AI frame \(configured using the console variable `ai_PathfinderUpdateTime`\)\. Options for pathfinding techniques include high priority, straight, and partial\. Updates for human waypoints are heavy but time\-sliced\. The navigation graph is optimized but needs memory\. Navigation data is generated offline in Editor\. With multi\-layer navigation, the navigation mesh is regenerated when the designer modifies the map\.
 
-## Decision Making<a name="ai-concepts-decision"></a>
+## Decision Making {#ai-concepts-decision}
 + Behavior selection system – Uses behavior trees to select AI behaviors
 + Cover system – Provides AI agents with static and dynamic covers
 + Smart object system – Allows AI agents to interact with their environment
 + Interest system – Allows AI agents to perform intelligent actions when not alerted
 
-## Tactical<a name="ai-concepts-tactical"></a>
+## Tactical {#ai-concepts-tactical}
 + Tactical point system \(TPS\) – Allows AI agents to ask intelligent questions about their environment \(such as where to hide or where to attack\)
 + Faction system – Determines levels of hostility between AI agents
 + Group coordination system – Uses coordination selection trees to select group behaviors
 + Formation system – Allows AI agents to move in formations
 + Cluster detector – detects clusters of points in space and subdivides them into separate groupings that satisfy specific properties \(using a modified K\-mean algorithm\); used with AISquadManager to group different AI agents into dynamic squads
 
-## World\-Interfacing<a name="ai-concepts-interfacing"></a>
+## World\-Interfacing {#ai-concepts-interfacing}
 + Signals – To trigger events and/or change behaviors
 + Perception system 
   + Perception handler \(legacy, usually per game\)
   + Target track system – Uses configurable ADSR envelopes to represent incoming stimuli
 + Communication system – Allows AI agents to play sound/voice/animation events
 
-## Development Environment<a name="ai-concepts-environment"></a>
+## Development Environment {#ai-concepts-environment}
 
 The design and development environment includes the following components:
 + Game object model – Entity, movement controller, extensions
@@ -87,7 +87,7 @@ The design and development environment includes the following components:
   + To spawn an entity, its Entity class is required – Can be defined either using the `.ent` file in `Game\Entities` OR through a C\+\+ call to RegisterFactory\(\) in game code
   + An entity pool can be used to limit the number of active AI agents per each specified Entity class\.
 
-## Execution Context<a name="ai-concepts-execution"></a>
+## Execution Context {#ai-concepts-execution}
 + AI update is called every frame, but are fully updated only at \~10Hz
 + Some AI subsystems use independent time\-slicing \(pathfinding, tactical point, dynamic waypoints updating, smart object, interest, and dead bodies removal\)
 + Some services can be called synchronously from game code \(such as tactical point system \(TPS\) queries\)

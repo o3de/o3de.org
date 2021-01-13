@@ -3,7 +3,7 @@ description: ' Use metadata operations to get metadata from your &cloud; in-game
   in &ALYlong;. '
 title: Metadata Operations
 ---
-# Metadata Operations<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations"></a>
+# Metadata Operations {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations}
 
 You can use metadata operations to get metadata from your Cloud Canvas in\-game surveys\.
 
@@ -11,7 +11,7 @@ You can use metadata operations to get metadata from your Cloud Canvas in\-game 
 + [Get Active Survey Metadata](#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get)
 + [Get Survey Metadata by Survey Name](#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name)
 
-## Get Active Survey Metadata<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get"></a>
+## Get Active Survey Metadata {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get}
 
 Gets a list of active survey metadata\.
 
@@ -19,9 +19,9 @@ Gets a list of active survey metadata\.
 GET /active/survey_metadata
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters}
 
-#### limit<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-limit"></a>
+#### limit {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-limit}
 
 Specifies the maximum number of survey metadata returned\. The default value is 1000\.
 
@@ -31,7 +31,7 @@ Located in: Query
 
 Required: No
 
-#### pagination\_token<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-pagination-token"></a>
+#### pagination\_token {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-pagination-token}
 
 The pagination token that is returned by the previous query to get the next batch of survey metadata\.
 
@@ -41,7 +41,7 @@ Located in: Query
 
 Required: No
 
-#### sort<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-sort"></a>
+#### sort {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-request-parameters-sort}
 
 Specifies ascending or descending sort order for creation time\. Possible values are `ASC` or `DESC`\. The default is `DESC`\.
 
@@ -51,7 +51,7 @@ Located in: Query
 
 Required: No
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-active-get-response}
 
 Returns a JSON object that contains the list of active survey metadata\.
 
@@ -71,7 +71,7 @@ Returns a JSON object that contains the list of active survey metadata\.
 }
 ```
 
-## Get Survey Metadata by Survey Name<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name"></a>
+## Get Survey Metadata by Survey Name {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name}
 
 Searches survey metadata by survey name\.
 
@@ -79,9 +79,9 @@ Searches survey metadata by survey name\.
 GET /survey_metadata
 ```
 
-### Request Parameters<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters"></a>
+### Request Parameters {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters}
 
-#### survey\_name<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-survey-name"></a>
+#### survey\_name {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-survey-name}
 
 Specifies a string that is searched on survey names\. If `survey_name` is not passed or is empty, all survey metadata is returned sorted by creation time\.
 
@@ -91,7 +91,7 @@ Located in: Query
 
 Required: No
 
-#### limit<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-limit"></a>
+#### limit {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-limit}
 
 Limits the maximum number of survey metadata items that are returned\. The default is the maximum allowed value of 1000\.
 
@@ -101,7 +101,7 @@ Located in: Query
 
 Required: No
 
-#### pagination\_token<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-pagination-token"></a>
+#### pagination\_token {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-pagination-token}
 
 A pagination token returned by the previous query to get the next batch of survey metadata\.
 
@@ -111,7 +111,7 @@ Located in: Query
 
 Required: No
 
-#### sort<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-sort"></a>
+#### sort {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-request-parameters-sort}
 
 Specifies the ascending or descending sort order by creation time\. Possible values are `ASC` or `DESC`\. The default is `DESC`\.
 
@@ -121,7 +121,7 @@ Located in: Query
 
 Required: No
 
-### Response<a name="cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-response"></a>
+### Response {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-get-by-survey-name-response}
 
 Returns a list of survey metadata items\. When additional metadata exists that can be queried, returns a pagination token\.
 

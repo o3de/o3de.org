@@ -3,7 +3,7 @@ description: ' Use the Comment component in &ALYlong; to add text comments for c
   entities. '
 title: Comment
 ---
-# Comment<a name="component-comment"></a>
+# Comment {#component-comment}
 
 The **Comment** component allows you to add long\-form text comments for component entities\. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter\. The following examples demonstrate how you can use the comment text box:
 + Explain how the scripts or components on an entity interact with other scripts or components
@@ -12,7 +12,7 @@ The **Comment** component allows you to add long\-form text comments for compone
 
 ![\[Image NOT FOUND\]](/images/userguide/component/comment-component.png)
 
-## Comment Properties<a name="component-comment-properties"></a>
+## Comment Properties {#component-comment-properties}
 
 The **Comment** component has the following property:
 
@@ -20,7 +20,7 @@ The **Comment** component has the following property:
 Stores the user comment for the component entity\.  
 Default: None
 
-## Using the Comment Component<a name="component-comment-setup"></a>
+## Using the Comment Component {#component-comment-setup}
 
 You can use this feature by adding the component to an entity in your level\. 
 

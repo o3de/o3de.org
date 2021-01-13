@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s LmbrCentral gem to create cinematic sequences fo
   your games. '
 title: LmbrCentral Gem
 ---
-# LmbrCentral Gem<a name="gems-system-gem-lmbr-central"></a>
+# LmbrCentral Gem {#gems-system-gem-lmbr-central}
 
 The LmbrCentral gem contains required code and assets for running Lumberyard features, such as animation, audio, Lumberyard Editor, rendering, scripting, and so on\.
 

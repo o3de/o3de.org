@@ -2,15 +2,15 @@
 description: ' Use Lua scripting to control the UI particle emitter component in &ALYlong;. '
 title: UIParticleEmitterComponent
 ---
-# UIParticleEmitterComponent<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent"></a>
+# UIParticleEmitterComponent {#lua-scripting-ces-api-ui-uiparticleemittercomponent}
 
 Controls the emission of two dimensional particles\. The source code location is `\dev\Gems\LyShine\Code\Source\UiParticleEmitterComponent.*`\.
 
-## UiParticleEmitterBus<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-uiparticleemitterbus"></a>
+## UiParticleEmitterBus {#lua-scripting-ces-api-ui-uiparticleemittercomponent-uiparticleemitterbus}
 
 Services messages for the `UiParticleEmitterComponent`\.
 
-### GetIsEmitting<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitting"></a>
+### GetIsEmitting {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitting}
 
 Returns whether the emitter is currently emitting\.
 
@@ -20,7 +20,7 @@ Returns whether the emitter is currently emitting\.
 bool GetIsEmittingColor()
 ```
 
-### SetIsEmitting<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitting"></a>
+### SetIsEmitting {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitting}
 
 Sets whether the emitter is currently emitting\.
 
@@ -30,7 +30,7 @@ Sets whether the emitter is currently emitting\.
 void SetIsEmitting(bool isEmitting)
 ```
 
-### GetIsRandomSeedFixed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisrandomseedfixed"></a>
+### GetIsRandomSeedFixed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisrandomseedfixed}
 
 Returns whether the emitter uses a fixed random seed\.
 
@@ -40,7 +40,7 @@ Returns whether the emitter uses a fixed random seed\.
 bool GetIsRandomSeedFixed()
 ```
 
-### SetIsRandomSeedFixed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisrandomseedfixed"></a>
+### SetIsRandomSeedFixed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisrandomseedfixed}
 
 Sets whether the emitter uses a fixed random seed\.
 
@@ -50,7 +50,7 @@ Sets whether the emitter uses a fixed random seed\.
 void SetRandomSeed(bool randomSeedFixed)
 ```
 
-### GetRandomSeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getrandomseed"></a>
+### GetRandomSeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getrandomseed}
 
 Returns the current random seed\.
 
@@ -60,7 +60,7 @@ Returns the current random seed\.
 int GetRandomSeed()
 ```
 
-### SetRandomSeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setrandomseed"></a>
+### SetRandomSeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setrandomseed}
 
 Sets the random seed used by the emitter\.
 
@@ -70,7 +70,7 @@ Sets the random seed used by the emitter\.
 void SetRandomSeed(int randomSeed)
 ```
 
-### GetIsParticlePositionRelativeToEmitter<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlepositionrelativetoemitter"></a>
+### GetIsParticlePositionRelativeToEmitter {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlepositionrelativetoemitter}
 
 Returns whether the emitted particles move relative to the emitter\.
 
@@ -80,7 +80,7 @@ Returns whether the emitted particles move relative to the emitter\.
 bool GetIsParticlePositionRelativeToEmitter()
 ```
 
-### SetIsParticlePositionRelativeToEmitter<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlepositionrelativetoemitter"></a>
+### SetIsParticlePositionRelativeToEmitter {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlepositionrelativetoemitter}
 
 Sets whether the emitted particles move relative to the emitter\.
 
@@ -90,7 +90,7 @@ Sets whether the emitted particles move relative to the emitter\.
 void SetIsParticlePositionRelativeToEmitter(bool relativeToEmitter)
 ```
 
-### GetParticleEmitRate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleemitrate"></a>
+### GetParticleEmitRate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleemitrate}
 
 Returns, in particles per second, the current particle emitter emit rate\.
 
@@ -100,7 +100,7 @@ Returns, in particles per second, the current particle emitter emit rate\.
 float GetParticleEmitRate()
 ```
 
-### SetParticleEmitRate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleemitrate"></a>
+### SetParticleEmitRate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleemitrate}
 
 Sets, in particles per second, the current particle emitter emit rate\.
 
@@ -110,7 +110,7 @@ Sets, in particles per second, the current particle emitter emit rate\.
 void SetParticleEmitRate(float particleEmitRate) 
 ```
 
-### GetIsEmitOnActivate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitonactivate"></a>
+### GetIsEmitOnActivate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitonactivate}
 
 Returns whether the particle emitter starts emitting when the component is activated\.
 
@@ -120,7 +120,7 @@ Returns whether the particle emitter starts emitting when the component is activ
 bool GetIsEmitOnActivate()
 ```
 
-### SetIsEmitOnActivate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitonactivate"></a>
+### SetIsEmitOnActivate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitonactivate}
 
 Sets whether the particle emitter starts emitting when the component is activated\.
 
@@ -130,7 +130,7 @@ Sets whether the particle emitter starts emitting when the component is activate
 void SetIsEmitOnActivate(bool emitOnActivate)
 ```
 
-### GetIsHitParticleCountOnActivate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getishitparticlecountonactivate"></a>
+### GetIsHitParticleCountOnActivate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getishitparticlecountonactivate}
 
 Returns whether the average amount of particles are emitted and processed when the emitter starts emitting\.
 
@@ -140,7 +140,7 @@ Returns whether the average amount of particles are emitted and processed when t
 bool GetIsHitParticleCountOnActivate()
 ```
 
-### SetIsHitParticleCountOnActivate<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setishitparticlecountonactivate"></a>
+### SetIsHitParticleCountOnActivate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setishitparticlecountonactivate}
 
 Sets whether the average amount of particles are emitted and processed when the emitter starts emitting\.
 
@@ -150,7 +150,7 @@ Sets whether the average amount of particles are emitted and processed when the 
 void SetIsHitParticleCountOnActivate(bool hitParticleCountOnActivate)
 ```
 
-### GetIsEmitterLifetimeInfinite<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitterlifetimeinfinite"></a>
+### GetIsEmitterLifetimeInfinite {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitterlifetimeinfinite}
 
 Returns whether the emitter lifetime is infinite\.
 
@@ -160,7 +160,7 @@ Returns whether the emitter lifetime is infinite\.
 bool GetIsEmitterLifetimeInfinite()
 ```
 
-### SetIsEmitterLifetimeInfinite<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitterlifetimeinfinite"></a>
+### SetIsEmitterLifetimeInfinite {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitterlifetimeinfinite}
 
 Sets whether the emitter lifetime is infinite\.
 
@@ -170,7 +170,7 @@ Sets whether the emitter lifetime is infinite\.
 void SetIsEmitterLifetimeInfinite(bool emitterLifetimeInfinite)
 ```
 
-### GetEmitterLifetime<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitterlifetime"></a>
+### GetEmitterLifetime {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitterlifetime}
 
 Returns the total emitter lifetime in seconds\. When the lifetime is reached, the emitter stops emitting\.
 
@@ -180,7 +180,7 @@ Returns the total emitter lifetime in seconds\. When the lifetime is reached, th
 float GetEmitterLifetime()
 ```
 
-### SetEmitterLifetime<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitterlifetime"></a>
+### SetEmitterLifetime {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitterlifetime}
 
 Sets the total emitter lifetime in seconds\. When the lifetime is reached, the emitter stops emitting\.
 
@@ -190,7 +190,7 @@ Sets the total emitter lifetime in seconds\. When the lifetime is reached, the e
 void SetEmitterLifetime(float emitterLifetime)
 ```
 
-### GetIsParticleCountLimited<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlecountlimited"></a>
+### GetIsParticleCountLimited {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlecountlimited}
 
 Returns whether there is a limit to the number of active particles\.
 
@@ -200,7 +200,7 @@ Returns whether there is a limit to the number of active particles\.
 bool GetIsParticleCountLimited()
 ```
 
-### SetIsParticleCountLimited<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlecountlimited"></a>
+### SetIsParticleCountLimited {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlecountlimited}
 
 Sets whether there is a limit to the number of active particles\.
 
@@ -210,7 +210,7 @@ Sets whether there is a limit to the number of active particles\.
 void SetIsParticleCountLimited(bool particleCountLimited)
 ```
 
-### GetMaxParticles<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getmaxparticles"></a>
+### GetMaxParticles {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getmaxparticles}
 
 Returns the numerical limit of active particles\.
 
@@ -220,7 +220,7 @@ Returns the numerical limit of active particles\.
 AZ::u32 GetMaxParticles()
 ```
 
-### SetMaxParticles<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setmaxparticles"></a>
+### SetMaxParticles {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setmaxparticles}
 
 Sets the numerical limit of active particles\.
 
@@ -230,7 +230,7 @@ Sets the numerical limit of active particles\.
 void SetMaxParticles(AZ::u32 maxParticles)
 ```
 
-### GetEmitterShape<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getemittershape"></a>
+### GetEmitterShape {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getemittershape}
 
 Returns the current emitter shape\.
 
@@ -251,7 +251,7 @@ enum eUiEmitShape
     };
 ```
 
-### SetEmitterShape<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setemittershape"></a>
+### SetEmitterShape {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setemittershape}
 
 Sets the current emitter shape\.
 
@@ -263,7 +263,7 @@ void SetVariable(eUiEmitShape emitShape)
 
 For possible emitter shapes, see `GetEmitterShape`\.
 
-### GetIsEmitOnEdge<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitonedge"></a>
+### GetIsEmitOnEdge {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitonedge}
 
 Returns whether the particles are emitted on the edge of the selected shape\.
 
@@ -273,7 +273,7 @@ Returns whether the particles are emitted on the edge of the selected shape\.
 bool GetIsEmitOnEdge()
 ```
 
-### SetIsEmitOnEdge<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitonedge"></a>
+### SetIsEmitOnEdge {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisemitonedge}
 
 Sets whether the particles are emitted on the edge of the selected shape\.
 
@@ -283,7 +283,7 @@ Sets whether the particles are emitted on the edge of the selected shape\.
 void SetIsEmitOnEdge(bool emitOnEdge)
 ```
 
-### GetInsideEmitDistance<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getinsideemitdistance"></a>
+### GetInsideEmitDistance {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getinsideemitdistance}
 
 Returns the distance that particles are emitted inside the emitter shape edge\.
 
@@ -293,7 +293,7 @@ Returns the distance that particles are emitted inside the emitter shape edge\.
 float GetInsideEmitDistance()
 ```
 
-### SetInsideEmitDistance<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setinsideemitdistance"></a>
+### SetInsideEmitDistance {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setinsideemitdistance}
 
 Sets the distance that particles are emitted inside the emitter shape edge\.
 
@@ -303,7 +303,7 @@ Sets the distance that particles are emitted inside the emitter shape edge\.
 void SetInsideEmitDistance(float insideEmitDistance) 
 ```
 
-### GetOutsideEmitDistance<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getoutsideemitdistance"></a>
+### GetOutsideEmitDistance {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getoutsideemitdistance}
 
 Returns the distance that particles are emitted outside the emitter shape edge\.
 
@@ -313,7 +313,7 @@ Returns the distance that particles are emitted outside the emitter shape edge\.
 float GetOutsideEmitDistance()
 ```
 
-### SetOutsideEmitDistance<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setoutsideemitdistance"></a>
+### SetOutsideEmitDistance {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setoutsideemitdistance}
 
 Sets the distance that particles are emitted outside the emitter shape edge\.
 
@@ -323,7 +323,7 @@ Sets the distance that particles are emitted outside the emitter shape edge\.
 void SetOutsideEmitDistance(float outsideEmitDistance) 
 ```
 
-### GetParticleInitialDirectionType<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialdirectiontype"></a>
+### GetParticleInitialDirectionType {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialdirectiontype}
 
 Returns how the initial direction of the emitted particles are calculated\.
 
@@ -343,7 +343,7 @@ enum eUiParticleInitialDirectionType
     };
 ```
 
-### SetParticleInitialDirectionType<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialdirectiontype"></a>
+### SetParticleInitialDirectionType {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialdirectiontype}
 
 Sets how the initial direction of the emitted particles is calculated\.
 
@@ -355,7 +355,7 @@ void SetVariable(eUiEmitShape emitShape)
 
 For possible direction types, see `GetParticleInitialDirectionType`\.
 
-### GetEmitAngle<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitangle"></a>
+### GetEmitAngle {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitangle}
 
 Returns, in degrees clockwise from straight up, the angle along which particles are emitted\.
 
@@ -365,7 +365,7 @@ Returns, in degrees clockwise from straight up, the angle along which particles 
 float GetEmitAngle()
 ```
 
-### SetEmitAngle<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitangle"></a>
+### SetEmitAngle {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitangle}
 
 Sets, in degrees clockwise from straight up, the angle along which particles are emitted\.
 
@@ -375,7 +375,7 @@ Sets, in degrees clockwise from straight up, the angle along which particles are
 void SetEmitAngle(float emitAngle)
 ```
 
-### GetEmitAngleVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitanglevariation"></a>
+### GetEmitAngleVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getemitanglevariation}
 
 Returns, in degrees, the variation in the emit angle\. For example, a variation value of 10 designates a range of plus or minus 10 degrees on each side of the current emit angle\.
 
@@ -385,7 +385,7 @@ Returns, in degrees, the variation in the emit angle\. For example, a variation 
 float GetEmitAngleVariation()
 ```
 
-### SetEmitAngleVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitanglevariation"></a>
+### SetEmitAngleVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setemitanglevariation}
 
 Sets, in degrees, the variation in the emit angle\. For example, a variation value of 10 designates a range of plus or minus 10 degrees on each side of the current emit angle\.
 
@@ -395,7 +395,7 @@ Sets, in degrees, the variation in the emit angle\. For example, a variation val
 void SetEmitAngleVariation(float emitAngleVariation) 
 ```
 
-### GetIsParticleLifetimeInfinte<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlelifetimeinfinte"></a>
+### GetIsParticleLifetimeInfinte {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlelifetimeinfinte}
 
 Returns whether the emitted particles have an infinite lifetime\.
 
@@ -405,7 +405,7 @@ Returns whether the emitted particles have an infinite lifetime\.
 bool GetIsParticleLifetimeInfinite()
 ```
 
-### SetIsParticleLifetimeInfinite<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlelifetimeinfinite"></a>
+### SetIsParticleLifetimeInfinite {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlelifetimeinfinite}
 
 Sets whether the emitted particles have an infinite lifetime\.
 
@@ -415,7 +415,7 @@ Sets whether the emitted particles have an infinite lifetime\.
 void SetIsParticleLifetimeInfinite(bool infiniteLifetime)
 ```
 
-### GetParticleLifetime<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlelifetime"></a>
+### GetParticleLifetime {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlelifetime}
 
 Returns, in seconds, the lifetime of the emitted particles\.
 
@@ -425,7 +425,7 @@ Returns, in seconds, the lifetime of the emitted particles\.
 float GetParticleLifetime()
 ```
 
-### SetParticleLifetime<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlelifetime"></a>
+### SetParticleLifetime {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlelifetime}
 
 Sets, in seconds, the initial lifetime of the emitted particles\.
 
@@ -435,7 +435,7 @@ Sets, in seconds, the initial lifetime of the emitted particles\.
 void SetParticleLifetime(float lifetime)
 ```
 
-### GetParticleLifetimeVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlelifetimevariation"></a>
+### GetParticleLifetimeVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlelifetimevariation}
 
 Returns the variation in lifetime of the emitted particles\. For example, a variation of 5 seconds designates a range of 5 seconds on either side of the chosen initial lifetime\.
 
@@ -445,7 +445,7 @@ Returns the variation in lifetime of the emitted particles\. For example, a vari
 float GetParticleLifetimeVariation()
 ```
 
-### SetParticleLifetimeVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlelifetimevariation"></a>
+### SetParticleLifetimeVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlelifetimevariation}
 
 Sets the variation in lifetime of the emitted particles\. For example, a variation of 5 seconds designates a range of 5 seconds on either side of the chosen initial lifetime\.
 
@@ -455,7 +455,7 @@ Sets the variation in lifetime of the emitted particles\. For example, a variati
 void SetPartcleLifetimeVariation(float lifetimeVariation)
 ```
 
-### GetSpritePathname<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritepathname"></a>
+### GetSpritePathname {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritepathname}
 
 Returns the source location of the image to be used by the emitted particles\.
 
@@ -465,7 +465,7 @@ Returns the source location of the image to be used by the emitted particles\.
 AZStd::string GetSpritePathname()
 ```
 
-### SetSpritePathname<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritepathname"></a>
+### SetSpritePathname {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritepathname}
 
 Sets the source location of the image to be used by the emitted particles\.
 
@@ -475,7 +475,7 @@ Sets the source location of the image to be used by the emitted particles\.
 void SetSpritePathname(AZStd::string spritePath) 
 ```
 
-### GetIsSpriteSheetAnimated<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetanimated"></a>
+### GetIsSpriteSheetAnimated {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetanimated}
 
 Returns whether the sprite sheet cell index changes over time on each particle\.
 
@@ -485,7 +485,7 @@ Returns whether the sprite sheet cell index changes over time on each particle\.
 bool GetIsSpriteSheetAnimated()
 ```
 
-### SetIsSpriteSheetAnimated<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetanimated"></a>
+### SetIsSpriteSheetAnimated {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetanimated}
 
 Sets whether the sprite sheet cell index changes over time on each particle\.
 
@@ -495,7 +495,7 @@ Sets whether the sprite sheet cell index changes over time on each particle\.
 void SetIsSpriteSheetAnimated(bool spriteSheetAnimated)
 ```
 
-### GetIsSpriteSheetAnimationLooped<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetanimationlooped"></a>
+### GetIsSpriteSheetAnimationLooped {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetanimationlooped}
 
 Returns whether the sprite sheet cell animation is looped\.
 
@@ -505,7 +505,7 @@ Returns whether the sprite sheet cell animation is looped\.
 bool GetIsSpriteSheetAnimationLooped()
 ```
 
-### SetIsSpriteSheetAnimationLooped<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetanimationlooped"></a>
+### SetIsSpriteSheetAnimationLooped {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetanimationlooped}
 
 Sets whether the sprite sheet cell animation is looped\.
 
@@ -515,7 +515,7 @@ Sets whether the sprite sheet cell animation is looped\.
 void SetIsSpriteSheetAnimationLooped(bool spriteSheetAnimationLooped)
 ```
 
-### GetIsSpriteSheetIndexRandom<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetindexrandom"></a>
+### GetIsSpriteSheetIndexRandom {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetindexrandom}
 
 Returns whether the initial sprite\-sheet index is randomly chosen\.
 
@@ -525,7 +525,7 @@ Returns whether the initial sprite\-sheet index is randomly chosen\.
 bool GetIsSpriteSheetIndexRandom()
 ```
 
-### SetIsSpriteSheetIndexRandom<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetindexrandom"></a>
+### SetIsSpriteSheetIndexRandom {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisspritesheetindexrandom}
 
 Sets whether the initial sprite\-sheet index is randomly chosen\.
 
@@ -535,7 +535,7 @@ Sets whether the initial sprite\-sheet index is randomly chosen\.
 void SetIsSpriteSheetIndexRandom(bool spriteSheetIndexRandom)
 ```
 
-### GetSpriteSheetCellIndex<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetcellindex"></a>
+### GetSpriteSheetCellIndex {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetcellindex}
 
 Returns the sprite\-sheet index to be used for emitted particles\.
 
@@ -545,7 +545,7 @@ Returns the sprite\-sheet index to be used for emitted particles\.
 int GetSpriteSheetCellIndex()
 ```
 
-### SetSpriteSheetCellIndex<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetcellindex"></a>
+### SetSpriteSheetCellIndex {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetcellindex}
 
 Sets the sprite\-sheet index to be used for emitted particles\.
 
@@ -555,7 +555,7 @@ Sets the sprite\-sheet index to be used for emitted particles\.
 void SetSpriteSheetCellIndex(int spriteSheetIndex) 
 ```
 
-### GetSpriteSheetCellEndIndex<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetcellendindex"></a>
+### GetSpriteSheetCellEndIndex {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetcellendindex}
 
 Returns the end index of the sprite\-sheet cell range that is used for sprite\-sheet animation or random index selection\.
 
@@ -565,7 +565,7 @@ Returns the end index of the sprite\-sheet cell range that is used for sprite\-s
 int GetSpriteSheetCellEndIndex()
 ```
 
-### SetSpriteSheetCellEndIndex<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetcellendindex"></a>
+### SetSpriteSheetCellEndIndex {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetcellendindex}
 
 Sets the end index of the sprite\-sheet cell range that is used for sprite\-sheet animation or random index selection\.
 
@@ -575,7 +575,7 @@ Sets the end index of the sprite\-sheet cell range that is used for sprite\-shee
 void SetSpriteSheetCellEndIndex(int spriteSheetEndIndex)
 ```
 
-### GetSpriteSheetFrameDelay<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetframedelay"></a>
+### GetSpriteSheetFrameDelay {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetframedelay}
 
 Returns, in seconds, the delay between each sprite\-sheet frame\.
 
@@ -585,7 +585,7 @@ Returns, in seconds, the delay between each sprite\-sheet frame\.
 float GetSpriteSheetFrameDelay()
 ```
 
-### SetSpriteSheetFrameDelay<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetframedelay"></a>
+### SetSpriteSheetFrameDelay {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setspritesheetframedelay}
 
 Sets, in seconds, the delay between each sprite\-sheet frame\.
 
@@ -595,7 +595,7 @@ Sets, in seconds, the delay between each sprite\-sheet frame\.
 void SetSpriteSheetFrameDelay(float spriteSheetFrameDelay)
 ```
 
-### GetIsParticleAspectRatioLocked<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticleaspectratiolocked"></a>
+### GetIsParticleAspectRatioLocked {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticleaspectratiolocked}
 
 Returns whether the width and height of the emitted particles are locked into the current aspect ratio\.
 
@@ -605,7 +605,7 @@ Returns whether the width and height of the emitted particles are locked into th
 bool GetIsParticleAspectRatioLocked()
 ```
 
-### SetIsParticleAspectRatioLocked<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticleaspectratiolocked"></a>
+### SetIsParticleAspectRatioLocked {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticleaspectratiolocked}
 
 Sets whether the width and height of the emitted particles are locked into the current aspect ratio\.
 
@@ -615,7 +615,7 @@ Sets whether the width and height of the emitted particles are locked into the c
 void SetIsParticleAspectRatioLocked(bool aspectRatioLocked)
 ```
 
-### GetParticlePivot<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlepivot"></a>
+### GetParticlePivot {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlepivot}
 
 Returns the pivot for the particles in a range from \(0,0\) at the top left to \(1,1\) at the bottom right\.
 
@@ -625,7 +625,7 @@ Returns the pivot for the particles in a range from \(0,0\) at the top left to \
 AZ::Vector2 GetParticlePivot()
 ```
 
-### SetParticlePivot<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlepivot"></a>
+### SetParticlePivot {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlepivot}
 
 Sets the pivot for the particles in a range from \(0,0\) at the top left to \(1,1\) at the bottom right\.
 
@@ -635,7 +635,7 @@ Sets the pivot for the particles in a range from \(0,0\) at the top left to \(1,
 void SetParticlePivot(AZ::Vector2 particlePivot) 
 ```
 
-### GetParticleSize<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlesize"></a>
+### GetParticleSize {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlesize}
 
 Returns the size of the emitted particles\.
 
@@ -645,7 +645,7 @@ Returns the size of the emitted particles\.
 AZ::Vector2 GetParticleSize()
 ```
 
-### SetParticleSize<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlesize"></a>
+### SetParticleSize {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlesize}
 
 Sets the size of the emitted particles\.
 
@@ -655,7 +655,7 @@ Sets the size of the emitted particles\.
 void SetParticleSize(AZ::Vector2 particleSize)
 ```
 
-### GetParticleWidth<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlewidth"></a>
+### GetParticleWidth {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlewidth}
 
 Returns the width of the emitted particles\.
 
@@ -665,7 +665,7 @@ Returns the width of the emitted particles\.
 float GetParticleWidth()
 ```
 
-### SetParticleWidth<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlewidth"></a>
+### SetParticleWidth {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlewidth}
 
 Sets the width of the emitted particles\.
 
@@ -675,7 +675,7 @@ Sets the width of the emitted particles\.
 void SetParticleWidth(float particleWidth)
 ```
 
-### GetParticleWidthVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlewidthvariation"></a>
+### GetParticleWidthVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlewidthvariation}
 
 Returns the variation in width of the emitted particles\.
 
@@ -685,7 +685,7 @@ Returns the variation in width of the emitted particles\.
 float GetParticleWidthVariation()
 ```
 
-### SetParticleWidthVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlewidthvariation"></a>
+### SetParticleWidthVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlewidthvariation}
 
 Sets the variation in width of the emitted particles\.
 
@@ -695,7 +695,7 @@ Sets the variation in width of the emitted particles\.
 void SetParticleWidthVariation(float particleWidthVariation)
 ```
 
-### GetParticleHeight<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleheight"></a>
+### GetParticleHeight {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleheight}
 
 Returns the height of the emitted particles\.
 
@@ -705,7 +705,7 @@ Returns the height of the emitted particles\.
 float GetParticleHeight()
 ```
 
-### SetParticleHeight<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleheight"></a>
+### SetParticleHeight {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleheight}
 
 Sets the height of the emitted particles\.
 
@@ -715,7 +715,7 @@ Sets the height of the emitted particles\.
 void SetParticleHeight(float particleHeight)
 ```
 
-### GetParticleHeightVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleheightvariation"></a>
+### GetParticleHeightVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleheightvariation}
 
 Returns the variation in height of the emitted particles\.
 
@@ -725,7 +725,7 @@ Returns the variation in height of the emitted particles\.
 float GetParticleHeightVariation()
 ```
 
-### SetParticleHeightVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleheightvariation"></a>
+### SetParticleHeightVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleheightvariation}
 
 Sets the variation in height of the emitted particles\.
 
@@ -735,7 +735,7 @@ Sets the variation in height of the emitted particles\.
 void SetParticleHeightVariation(float particleHeightVariation)
 ```
 
-### GetParticleMovementCoordinateType<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlemovementcoordinatetype"></a>
+### GetParticleMovementCoordinateType {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlemovementcoordinatetype}
 
 Returns the co\-ordinate system used for the movement of the emitted particles\.
 
@@ -755,7 +755,7 @@ enum eUiParticleCoordinateType
     };
 ```
 
-### SetParticleMovementCoordinateType<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlemovementcoordinatetype"></a>
+### SetParticleMovementCoordinateType {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlemovementcoordinatetype}
 
 Sets the coordinate system that is used for the movement of the emitted particles\.
 
@@ -767,7 +767,7 @@ void SetParticleMovementCoordinateType(eUiParticleCoordinateType movementCoordin
 
 For possible values for the coordinate type, see `GetParticleMovementCoordinateType`\.
 
-### GetParticleAccelerationMovementSpace<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleaccelerationmovementspace"></a>
+### GetParticleAccelerationMovementSpace {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleaccelerationmovementspace}
 
 Returns the coordinate system that is used for the acceleration of particles\.
 
@@ -779,7 +779,7 @@ eUiParticleCoordinateType GetParticleAccelerationMovementSpace()
 
 For possible values for the movement space, see `GetParticleMovementCoordinateType`\.
 
-### SetParticleAccelerationMovementSpace<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleaccelerationmovementspace"></a>
+### SetParticleAccelerationMovementSpace {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleaccelerationmovementspace}
 
 Sets the coordinate system that is used for the acceleration of particles\.
 
@@ -791,7 +791,7 @@ void SetParticleAccelerationMovementSpace(eUiParticleCoordinateType acceleration
 
 For possible values for the movement space, see `GetParticleMovementCoordinateType`\.
 
-### GetParticleInitialVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialvelocity"></a>
+### GetParticleInitialVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialvelocity}
 
 Returns the initial velocity of the emitted particles\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -801,7 +801,7 @@ Returns the initial velocity of the emitted particles\. Applicable only when the
 AZ::Vector2 GetParticleInitialVelocity()
 ```
 
-### SetParticleInitialVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialvelocity"></a>
+### SetParticleInitialVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialvelocity}
 
 Sets the initial velocity of the emitted particles\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -811,7 +811,7 @@ Sets the initial velocity of the emitted particles\. Applicable only when the em
 void SetParticleInitialVelocity(AZ::Vector2 particleInitialVelocity)
 ```
 
-### GetParticleInitialVelocityVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialvelocityvariation"></a>
+### GetParticleInitialVelocityVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialvelocityvariation}
 
 Returns the variation in the particle initial velocity\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -821,7 +821,7 @@ Returns the variation in the particle initial velocity\. Applicable only when th
 AZ::Vector2 GetParticleInitialVelocityVariation() 
 ```
 
-### SetParticleInitialVelocityVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialvelocityvariation"></a>
+### SetParticleInitialVelocityVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialvelocityvariation}
 
 Sets the variation in the particle initial velocity\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -831,7 +831,7 @@ Sets the variation in the particle initial velocity\. Applicable only when the e
 void SetParticleInitialVelocityVariation(AZ::Vector2 initialVelocityVariation)
 ```
 
-### GetParticleSpeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlespeed"></a>
+### GetParticleSpeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlespeed}
 
 Returns the initial particle speed\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -841,7 +841,7 @@ Returns the initial particle speed\. Applicable only when the emitter doesn't co
 float GetParticleSpeed()
 ```
 
-### SetParticleSpeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlespeed"></a>
+### SetParticleSpeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlespeed}
 
 Sets the initial particle speed\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -851,7 +851,7 @@ Sets the initial particle speed\. Applicable only when the emitter doesn't contr
 void SetParticleSpeed(float particleSpeed)
 ```
 
-### GetParticleSpeedVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlespeedvariation"></a>
+### GetParticleSpeedVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlespeedvariation}
 
 Returns the variation in initial particle speed\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -861,7 +861,7 @@ Returns the variation in initial particle speed\. Applicable only when the emitt
 float GetParticleSpeedVariation()
 ```
 
-### SetParticleSpeedVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlespeedvariation"></a>
+### SetParticleSpeedVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlespeedvariation}
 
 Sets the variation in initial particle speed\. Applicable only when the emitter doesn't control the emit direction\.
 
@@ -871,7 +871,7 @@ Sets the variation in initial particle speed\. Applicable only when the emitter 
 void SetParticleSpeedVariation(float particleSpeedVariation)
 ```
 
-### GetParticleAcceleration<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleacceleration"></a>
+### GetParticleAcceleration {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleacceleration}
 
 Returns the acceleration of the emitted particles\.
 
@@ -881,7 +881,7 @@ Returns the acceleration of the emitted particles\.
 AZ::Vector2 GetParticleAcceleration()
 ```
 
-### SetParticleAcceleration<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleacceleration"></a>
+### SetParticleAcceleration {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleacceleration}
 
 Sets the acceleration of the emitted particles\.
 
@@ -891,7 +891,7 @@ Sets the acceleration of the emitted particles\.
 void SetParticleAcceleration(AZ::Vector2 particleAcceleration)
 ```
 
-### GetIsParticleRotationFromVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlerotationfromvelocity"></a>
+### GetIsParticleRotationFromVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlerotationfromvelocity}
 
 Returns whether the particle is oriented so that its top points towards the current velocity vector\.
 
@@ -901,7 +901,7 @@ Returns whether the particle is oriented so that its top points towards the curr
 bool GetIsParticleRotationFromVelocity()
 ```
 
-### SetIsParticleRotationFromVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlerotationfromvelocity"></a>
+### SetIsParticleRotationFromVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticlerotationfromvelocity}
 
 Sets whether the particle is oriented so that its top points towards the current velocity vector\.
 
@@ -911,7 +911,7 @@ Sets whether the particle is oriented so that its top points towards the current
 void SetIsParticleRotationFromVelocity(bool rotationFromVelocity)
 ```
 
-### GetIsParticleInitialRotationFromInitialVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticleinitialrotationfrominitialvelocity"></a>
+### GetIsParticleInitialRotationFromInitialVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticleinitialrotationfrominitialvelocity}
 
 Returns whether the particle is initially oriented so that its top points towards the initial velocity vector\.
 
@@ -921,7 +921,7 @@ Returns whether the particle is initially oriented so that its top points toward
 bool GetIsParticleInitialRotationFromInitialVelocity() 
 ```
 
-### SetIsParticleInitialRotationFromInitialVelocity<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticleinitialrotationfrominitialvelocity"></a>
+### SetIsParticleInitialRotationFromInitialVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticleinitialrotationfrominitialvelocity}
 
 Sets whether the particle is initially oriented so that its top points towards the initial velocity vector\.
 
@@ -931,7 +931,7 @@ Sets whether the particle is initially oriented so that its top points towards t
 void SetIsParticleInitialRotationFromInitialVelocity(bool initialRotationFromVelocity)
 ```
 
-### GetParticleInitialRotation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialrotation"></a>
+### GetParticleInitialRotation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialrotation}
 
 Returns, in degrees clockwise measured from straight up, the initial rotation\.
 
@@ -941,7 +941,7 @@ Returns, in degrees clockwise measured from straight up, the initial rotation\.
 float GetParticleInitialRotation()
 ```
 
-### SetParticleInitialRotation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialrotation"></a>
+### SetParticleInitialRotation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialrotation}
 
 Sets, in degrees clockwise measured from straight up, the initial rotation\.
 
@@ -951,7 +951,7 @@ Sets, in degrees clockwise measured from straight up, the initial rotation\.
 void SetParticleInitialRotation(float particleInitialRotation)
 ```
 
-### GetParticleInitialRotationVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialrotationvariation"></a>
+### GetParticleInitialRotationVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialrotationvariation}
 
 Returns, in degrees clockwise measured from straight up, the variation of the initial rotation\.
 
@@ -961,7 +961,7 @@ Returns, in degrees clockwise measured from straight up, the variation of the in
 float GetParticleInitialRotationVariation()
 ```
 
-### SetParticleInitialRotationVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialrotationvariation"></a>
+### SetParticleInitialRotationVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialrotationvariation}
 
 Sets, in degrees clockwise measured from straight up, the variation of the initial rotation\.
 
@@ -971,7 +971,7 @@ Sets, in degrees clockwise measured from straight up, the variation of the initi
 void SetParticleInitialRotation(float particleInitialRotationVariation)
 ```
 
-### GetParticleRotationSpeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlerotationspeed"></a>
+### GetParticleRotationSpeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlerotationspeed}
 
 Returns, in degrees clockwise per second, the rotation speed of the emitted particles\.
 
@@ -981,7 +981,7 @@ Returns, in degrees clockwise per second, the rotation speed of the emitted part
 float GetParticleRotationSpeed()
 ```
 
-### SetParticleRotationSpeed<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlerotationspeed"></a>
+### SetParticleRotationSpeed {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlerotationspeed}
 
 Sets, in degrees clockwise per second, the rotation speed of the emitted particles\.
 
@@ -991,7 +991,7 @@ Sets, in degrees clockwise per second, the rotation speed of the emitted particl
 void SetParticleRotationSpeed(float rotationSpeed) 
 ```
 
-### GetParticleRotationSpeedVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlerotationspeedvariation"></a>
+### GetParticleRotationSpeedVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlerotationspeedvariation}
 
 Returns, in degrees clockwise per second, the variation in rotation speed of the emitted particles\.
 
@@ -1001,7 +1001,7 @@ Returns, in degrees clockwise per second, the variation in rotation speed of the
 float GetParticleRotationSpeedVariation()
 ```
 
-### SetParticleRotationSpeedVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlerotationspeedvariation"></a>
+### SetParticleRotationSpeedVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlerotationspeedvariation}
 
 Sets, in degrees clockwise per second, the variation in rotation speed of the emitted particles\.
 
@@ -1011,7 +1011,7 @@ Sets, in degrees clockwise per second, the variation in rotation speed of the em
 void SetParticleRotationSpeedVariation(float rotationSpeedVariation)
 ```
 
-### GetParticleColor<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolor"></a>
+### GetParticleColor {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolor}
 
 Returns the color of the emitted particles\.
 
@@ -1021,7 +1021,7 @@ Returns the color of the emitted particles\.
 AZ::Color GetParticleColor()
 ```
 
-### SetParticleColor<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolor"></a>
+### SetParticleColor {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolor}
 
 Sets the color of the emitted particles\.
 
@@ -1031,7 +1031,7 @@ Sets the color of the emitted particles\.
 void SetParticleColor(AZ::Color particleColor)
 ```
 
-### GetParticleColorBrightnessVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolorbrightnessvariation"></a>
+### GetParticleColorBrightnessVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolorbrightnessvariation}
 
 Returns, in the range \[0,1\], the variation in color brightness of the emitted particles\.
 
@@ -1041,7 +1041,7 @@ Returns, in the range \[0,1\], the variation in color brightness of the emitted 
 float GetParticleColorBrightnessVariation()
 ```
 
-### SetParticleColorBrightnessVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolorbrightnessvariation"></a>
+### SetParticleColorBrightnessVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolorbrightnessvariation}
 
 Sets, in the range \[0,1\], the variation in color brightness of the emitted particles\.
 
@@ -1051,7 +1051,7 @@ Sets, in the range \[0,1\], the variation in color brightness of the emitted par
 void SetParticleColorBrightnessVariation(float brightnessVariation)
 ```
 
-### GetParticleColorTintVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolortintvariation"></a>
+### GetParticleColorTintVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlecolortintvariation}
 
 Returns, in the range \[0,1\], the variation in color tint of the emitted particles\.
 
@@ -1061,7 +1061,7 @@ Returns, in the range \[0,1\], the variation in color tint of the emitted partic
 float GetParticleColorTintVariation()
 ```
 
-### SetParticleColorTintVariation<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolortintvariation"></a>
+### SetParticleColorTintVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlecolortintvariation}
 
 Sets, in the range \[0,1\], the variation in color tint of the emitted particles\.
 
@@ -1071,7 +1071,7 @@ Sets, in the range \[0,1\], the variation in color tint of the emitted particles
 void SetParticleColorTintVariation(float tintVariation)
 ```
 
-### GetParticleAlpha<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlealpha"></a>
+### GetParticleAlpha {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlealpha}
 
 Returns, in the range \[0,1\], the alpha of the emitted particles\.
 
@@ -1081,7 +1081,7 @@ Returns, in the range \[0,1\], the alpha of the emitted particles\.
 float GetParticleAlpha()
 ```
 
-### SetParticleAlpha<a name="lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlealpha"></a>
+### SetParticleAlpha {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticlealpha}
 
 Sets, in the range \[0,1\], the alpha of the emitted particles\.
 

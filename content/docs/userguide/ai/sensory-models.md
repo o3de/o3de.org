@@ -2,25 +2,25 @@
 description: ' Learn more about modelling for the AI system in &ALYlong;. '
 title: Sensory Models
 ---
-# Sensory Models<a name="ai-concepts-sensory-models"></a>
+# Sensory Models {#ai-concepts-sensory-models}
 
-## Overview<a name="ai-concepts-sensory-overview"></a>
+## Overview {#ai-concepts-sensory-overview}
 
 This topic describes the modelling and principal operation of the sensors implemented in the Lumberyard AI system\. These include the visual sensors, sound sensors, and a general\-purpose signalling mechanism\.
 
 Sensory information is processed during a full update of each enemy \(the actual time that a sensory event was received is asynchronous\)\. These sensors are the only interface the enemy has with the outside world, and provide the data that the enemy will use to assess their situation and select potential targets\. All sensors are completely configurable, and they can be turned on/off at runtime for any individual enemy\.
 
-## Vision<a name="ai-concepts-sensory-vision"></a>
+## Vision {#ai-concepts-sensory-vision}
 
 The visual sensory model is the heart of the AI system\. It is an enemy's most important sense\. The model is designed to simulate vision as realistically as possible, while still maintaining a low execution cost, using a combination of compromises and optimizations\. 
 
 During a full update for an individual enemy, the system traverses all potential targets from the enemy’s point of view and runs each one through a visibility determination routine\. All targets that survive this filtering procedure are placed in a visibility list that is maintained until the next full update\. For a target to persist as "visible" it must pass the visibility test in each full update\. Targets that change from visible to not visible during an update are moved to a memory targets list\. If a previously visible target becomes visible again, it is moved from the memory target list back to the visibility list\. Memory targets have an expiration time to simulate the enemy "forgetting" the target; this time interval is determined by several factors, including the threat index of the target and the length of time it was visible\. Visible targets are given the highest priority and will become the current attention target even if there is another target with a higher threat index\. This approach simulates the natural tendency of humans to act based on what they see faster than on what they remember \(or hear\)\.
 
-## Visibility Determination<a name="ai-concepts-sensory-visibility-determination"></a>
+## Visibility Determination {#ai-concepts-sensory-visibility-determination}
 
 The visibility determination routine determines whether a target is considered visible to an enemy\. It is run against each of the enemy's potential targets during a full update\. 
 
-### Identifying Targets<a name="ai-concepts-sensory-visibility-targets"></a>
+### Identifying Targets {#ai-concepts-sensory-visibility-targets}
 
 Visibility determination can be very CPU intensive; to mitigate this cost, only potential targets are evaluated for visibility\. There is a mechanism to register any AI object as an object that should be included in the visibility determination \(including custom objects\)\. This includes objects such as the grenades in Lumberyard, flashlights, etc\. There are also special objects called attributes, which will be discussed in more detail later in this topic\. 
 
@@ -32,18 +32,18 @@ In addition, the visibility determination test is performed automatically agains
 
 The game developer can also designate certain AI object types for visibility determination\. These custom types are added to a list maintained by the AI system identifying object types to be included in the visibility check\. Objects can be freely added to and removed from this list, even from script\. To include an object in the list, specify an assessment multiplier to the desired object type\. For example, refer to the file `aiconfig.lua`, which can be found in the `/scripts` directory\. For more about assessment multipliers, see the topics on threat assessment\. 
 
-### Checking Visibility<a name="ai-concepts-sensory-visibility-routine"></a>
+### Checking Visibility {#ai-concepts-sensory-visibility-routine}
 
 Each potential target identified is evaluated for visibility using a series of tests\. In situations where the player is facing a single species, no visibility determination is performed between AI enemy objects, only against the player\.Key measures determining visibility include:
 
-#### Sight\-range test<a name="ai-concepts-sensory-visibility-routine-sightrange"></a>
+#### Sight\-range test {#ai-concepts-sensory-visibility-routine-sightrange}
 
 This check is done first, as it is fast and cheap to filter out all AI objects that are outside the enemy's sight range\. This is done by comparing the distance between enemy and target against the enemy's sight range value\.
 
 **enemy sight range**  
 Floating point value that determines how far the enemy can see \(in meters\); the value represents the radius of a sphere with the enemy at the center\.
 
-#### Field\-of\-view test<a name="ai-concepts-sensory-visibility-routine-fieldofview"></a>
+#### Field\-of\-view test {#ai-concepts-sensory-visibility-routine-fieldofview}
 
 Objects that are inside the enemy's sight range sphere are then checked for whether they are also inside the enemy's field of view \(FOV\)\. 
 
@@ -52,7 +52,7 @@ Floating point value that determines the angle of the enemy's visibility cone \(
 
 The FOV is the angle that determines how far the enemy can see to the left and to the right of his current forward orientation \(that is, the scope of his peripheral vision\)\. For example, an FOV of 180 degrees means that the enemy can see everything which is 90 degrees or less to the left and 90 degrees or less to the right of the direction in which he is currently facing\. An FOV of 90 degrees means that he can see 45 degrees or less to the left and 45 degrees to the right of his current forward orientation\. The FOV check is performed using a simple dot product between the enemy's orientation vector and the vector created as the difference between the positions of the potential target and the enemy\. The resulting scalar is then compared to the value of the FOV\. Note that by using a conical shape, FOV is not limited to 2D representations\.
 
-#### Physical ray test<a name="ai-concepts-sensory-visibility-routine-raytest"></a>
+#### Physical ray test {#ai-concepts-sensory-visibility-routine-raytest}
 
 Objects that survive the two initial checks are very likely to be seen\. The next check is an actual ray trace through the game world, which is an expensive process\. Because the low layer of the AI system performs distributed updates over all frames, it is very seldom that a large number of rays needs to be shot per frame\. Exceptions include scenes with a high number of objects belonging to different species and huge combat scenes, such as those with more than 20 participants per species\.
 
@@ -60,7 +60,7 @@ The visibility physical ray is used to determine whether there are any physical 
 
 Not all obstacles are the same\. The physical ray test distinguishes between hard cover and soft cover obstacles\. For more information on how cover type affects enemy behavior, see the section on soft cover later in this topic\. 
 
-#### Perception test<a name="ai-concepts-sensory-visibility-routine-perception"></a>
+#### Perception test {#ai-concepts-sensory-visibility-routine-perception}
 
 This test is for player AI objects only \(and other AI objects as defined by the game developer\)\. Once the player has passed all the visibility tests for an enemy, this final test determines whether or not the enemy can see the player object\. Each enemy calculates a perception coefficient for the player target, which ultimately describes the likelihood that the enemy can see the target\.
 
@@ -71,7 +71,7 @@ The perception coefficient is calculated based on a range of factors, including 
 
 For more details on how a perception value is derived, see the section on calculating perception later in this topic\.
 
-## Soft Cover Visibility and Behavior<a name="ai-concepts-sensory-soft-cover"></a>
+## Soft Cover Visibility and Behavior {#ai-concepts-sensory-soft-cover}
 
 The physical ray test also evaluates the surface type of obstacles when determining visibility\. The AI system can discriminate between two types of surfaces: soft cover and hard cover\. The primary difference in a physical sense is that game players can pass through soft cover but cannot pass through hard cover\. Players can hide behind soft cover objects but the visibility determination is slightly “skewed” when a target is behind a soft cover object rather than a hard cover object or just in the open\. When determining a target's visibility behind soft cover, the AI system takes into account whether or not the enemy already identified the target as "living" \(not a memory, sound or other type of target\)\. If the enemy does not have a living target, then the soft cover is considered equal to hard cover and normal visibility determination is performed\. This occurs when the enemy is idle\-\-or when the enemy is looking for the source of a sound but has not yet spotted it\. 
 
@@ -81,7 +81,7 @@ This behavior simulates the following example: when a soldier perceives that the
 
 In order for this process to work in a closed and rational system, all surfaces in the game need to be properly physicalized \(wood, grass, and glass should be soft cover, while rock, concrete, metal should be hard cover\)\. This is consistently done in Lumberyard\. 
 
-## Perception Calculation<a name="ai-concepts-sensory-perception"></a>
+## Perception Calculation {#ai-concepts-sensory-perception}
 
 Unlike visibility between AI agents, visibility of player objects to enemy AI agents in Lumberyard is not an on/off switch\. This added layer of complexity is designed to allow for variations in game playing style \(such as action versus stealth\)\. Perception allows the player to make a certain number of mistakes and still be able to recover from them\. \(This is one of the reasons why a player AI object is specifically defined even in the lowest layer of the AI system hierarchy\.\) It is not used with other AI objects, where “switch” vision is used \(that is, the target is visible as soon as a ray can be shot to its position\)\. Note that it is possible to declare some AI objects should also trigger use of a perception coefficient\.
 
@@ -111,7 +111,7 @@ At the same time, a non\-zero perception coefficient can fall back to zero over 
 
 A statistical overview of the perception coefficients of all enemies for a player is used for the HUD stealth\-o\-meter, showing as a small gauge to the left and right of the radar circle in the HUD\. It represents the highest perception coefficient of the player across all enemies that currently perceive him\. In effect, it shows the perception coefficient of the one enemy that is most likely to see the player\. so, a full stealth\-o\-meter does not mean that all enemies see the player; it means that there is at least one enemy that can\. An empty stealth\-o\-meter means that currently no enemy can see the player\.
 
-## Attribute Objects<a name="ai-concepts-sensory-attributes"></a>
+## Attribute Objects {#ai-concepts-sensory-attributes}
 
 An attribute object is not a full AI object; instead, it is more of a special helper that can be attributed to an existing AI object\. The attribute is a special class of AI object, specifically defined at the lowest level in the AI system\. Every attribute object must have a principal object associated with it\. The principal object can be any type of an object \(including puppet, vehicle, player, etc,\.\) but cannot be an attribute\. 
 

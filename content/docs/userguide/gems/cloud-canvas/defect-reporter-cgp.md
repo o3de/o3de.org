@@ -3,7 +3,7 @@ description: ' Use the Defect Reporter &cgp; to view and manage defect report su
   in &ALYlong;. '
 title: Using the Defect Reporter &cgp;
 ---
-# Using the Defect Reporter Cloud Gem Portal<a name="cloud-canvas-cloud-gem-defect-reporter-cgp"></a>
+# Using the Defect Reporter Cloud Gem Portal {#cloud-canvas-cloud-gem-defect-reporter-cgp}
 
 Use the Defect Reporter Cloud Gem Portal to view and manage defect report submissions\. You can use the Defect Reporter Cloud Gem Portal to do the following:
 + View, filter, and manage reports\.
@@ -17,7 +17,7 @@ Use the Defect Reporter Cloud Gem Portal to view and manage defect report submis
 
 You can use the [DefectReporterSample](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md) level to generate sample reports and then view and manage them in the Cloud Gem Portal\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-defect-reporter-cgp-prerequisites}
 
 This tutorial assumes the following:
 + You are using version 1\.15 or later of Lumberyard\.
@@ -27,9 +27,9 @@ This tutorial assumes the following:
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
 + You have opened the Cloud Gem Portal\. 
 
-If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects.md#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects#project-configurator-launch-projects) to set **CloudGemDefectReportSample** as your default project\. For information on how to create a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## Opening the Defect Reporter Cloud Gem Portal<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-opening"></a>
+## Opening the Defect Reporter Cloud Gem Portal {#cloud-canvas-cloud-gem-defect-reporter-cgp-opening}
 
 **To open the Defect Reporter Cloud Gem Portal**
 
@@ -39,7 +39,7 @@ If you don't meet the prerequisites, see [Choosing a Game Project to Open](/docs
 
 ![\[Choose the Defect Reporter cloud gem in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-1.png)
 
-## Viewing, Filtering, and Managing Reports<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-filtering-and-managing-reports"></a>
+## Viewing, Filtering, and Managing Reports {#cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-filtering-and-managing-reports}
 
 The **Overview** tab displays the list of defects that occurred\.
 
@@ -73,7 +73,7 @@ To mark a report as read or unread, use the [Report Detail](#cloud-canvas-cloud-
 
    The reports that you bookmark appear on the **Bookmarks** tab\.
 
-## Viewing Report Details<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-report-details"></a>
+## Viewing Report Details {#cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-report-details}
 
 On the **Overview** tab, click a report to see detailed information on the **Report Detail** page\.
 
@@ -89,7 +89,7 @@ A download link can be provided for game\-specific attachments like audio snippe
 
 1. To customize the fields that appear under the **Report Information**, **Player Information**, and **System Information** sections, see the **Data Mappings** tab\.
 
-### Adding Comments, Bookmarks, and Changing Read Status<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-comments-bookmarks-read-status"></a>
+### Adding Comments, Bookmarks, and Changing Read Status {#cloud-canvas-cloud-gem-defect-reporter-cgp-comments-bookmarks-read-status}
 
 On the upper right of the **Report Detail** page, you can use the **Add Comment**, **Add to Bookmarks**, and **Mark as Read** options for your report\.
 
@@ -102,11 +102,11 @@ After you bookmark a report or mark the report as read, the **Remove from Bookma
 + To filter for reports that are read or unread, you can use the **Status** drop\-down menu on the **Overview** or the **Bookmarks** tab\. 
 + To return to the **Overview** tab, click **Back to Defect List**\.
 
-### Working with Comments<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-working-with-comments"></a>
+### Working with Comments {#cloud-canvas-cloud-gem-defect-reporter-cgp-working-with-comments}
 
 On the **Report Details** page, you can add, edit, and delete comments about a report\.
 
-#### Adding a Comment to a Report<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-adding-a-comment"></a>
+#### Adding a Comment to a Report {#cloud-canvas-cloud-gem-defect-reporter-cgp-adding-a-comment}
 
 You can add comments to a report for tracking purposes\. 
 
@@ -124,7 +124,7 @@ Comments added to a report are separate from the **Player text** \(annotations\)
    The new comment appears on the details page for the report\.  
 ![\[Comment added to a report detail page.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-14.png)
 
-#### Editing Comments<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-editing-comments"></a>
+#### Editing Comments {#cloud-canvas-cloud-gem-defect-reporter-cgp-editing-comments}
 
 You can edit existing comments for a report\.
 
@@ -136,19 +136,19 @@ You can edit existing comments for a report\.
 1. In the **Edit Comment** dialog box, enter your changes, and then click **Add**\.  
 ![\[Editing a comment in the Comment box\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-16.png)
 
-#### Deleting Comments<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-deleting-comments"></a>
+#### Deleting Comments {#cloud-canvas-cloud-gem-defect-reporter-cgp-deleting-comments}
 
 **To delete a comment**
 + Click the trash icon next to the comment\.  
 ![\[Deleting a comment\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-17.png)
 
-### Viewing Unfiltered Report Data<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-raw-report-data"></a>
+### Viewing Unfiltered Report Data {#cloud-canvas-cloud-gem-defect-reporter-cgp-viewing-raw-report-data}
 
 To view all the information in a defect report \(including information like log and DxDiag content\), click the **Raw Data** tab\.
 
 ![\[Viewing unfiltered data on the Raw Data tab\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-18.png)
 
-## Discovering Defect Submission Trends by Time Range<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-defect-submission-time-ranges"></a>
+## Discovering Defect Submission Trends by Time Range {#cloud-canvas-cloud-gem-defect-reporter-cgp-defect-submission-time-ranges}
 
 On the **Dashboard** tab, you can see bar graphs of trends that show the number of submitted defects for a specific time range\.
 
@@ -159,7 +159,7 @@ On the **Dashboard** tab, you can see bar graphs of trends that show the number 
   A bar graph for the selected time range appears\.  
 ![\[Bar graph of submission trends for a preset time range\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-20.png)
 
-## Viewing and Managing Bookmarked Reports<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-bookmarked-reports"></a>
+## Viewing and Managing Bookmarked Reports {#cloud-canvas-cloud-gem-defect-reporter-cgp-bookmarked-reports}
 
 On the **Bookmarks** tab, you can view and manage the reports that you bookmarked\.
 
@@ -178,7 +178,7 @@ You can bookmark a report on the **Overview** tab or the **Report Detail** page 
 
 1. To remove the bookmark from a report \(and the report from the **Bookmarks** tab\), click the bookmark icon next to the report\.
 
-## Reusing Searches<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-reusing-searches"></a>
+## Reusing Searches {#cloud-canvas-cloud-gem-defect-reporter-cgp-reusing-searches}
 
 On the **Recent Searches** tab, you can see the 10 most recent searches\.
 
@@ -194,7 +194,7 @@ On the **Recent Searches** tab, you can see the 10 most recent searches\.
 
    You can send the URL to other users with credentials to your Cloud Gem Portal to run the same query in a browser\.
 
-## Configuring the Report Detail Page<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-configuring-the-report-detail-page"></a>
+## Configuring the Report Detail Page {#cloud-canvas-cloud-gem-defect-reporter-cgp-configuring-the-report-detail-page}
 
 On the **Data Mappings** tab, you can manage the fields that appear on your **Report Detail** page\. The configurations are saved locally and do not appear in other browsers or affect other users\.
 
@@ -244,7 +244,7 @@ You can add, remove, name, and categorize the fields that appear on the **Report
 **To change the display category for an existing field**
 + Click the **Display Category** drop\-down menu\.
 
-## Creating Custom Data Collection Fields<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating"></a>
+## Creating Custom Data Collection Fields {#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating}
 
 On the **Client Configuration** tab, you can define a custom defect report field for client users\.
 
@@ -308,7 +308,7 @@ Changes not saved to configuration will be lost when your browser session times 
 
 1. Click **Save Configuration** to persist your changes\.
 
-### Creating Default Values for Custom Data Collection Fields<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-default-values"></a>
+### Creating Default Values for Custom Data Collection Fields {#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-default-values}
 
 When you create custom data fields in the Cloud Gem Portal, you can specify values that you want to provide by default\.
 
@@ -320,7 +320,7 @@ When you create custom data fields in the Cloud Gem Portal, you can specify valu
 1. When you run the DefectReporterSample level, the default values that you chose appear in the custom fields section of the report editor\.  
 ![\[Default values in the defect report editor\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-fields-default-values-sample1.png)![\[Default values in the defect report editor\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-fields-default-values-sample2.png)![\[Default values in the defect report editor\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-fields-default-values-sample3.png)
 
-### Editing and Deleting Custom Data Collection Fields<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-editing-deleting"></a>
+### Editing and Deleting Custom Data Collection Fields {#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-editing-deleting}
 
 **To edit or delete a custom data field**
 
@@ -330,7 +330,7 @@ When you create custom data fields in the Cloud Gem Portal, you can specify valu
 1. To delete a field, click the trash icon for the field and then click **Delete Field** in the confirmation dialog box\.  
 ![\[Deleting a custom data collection field\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-39.png)
 
-### Viewing and Testing Custom Data Collection Fields<a name="cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-viewing-testing"></a>
+### Viewing and Testing Custom Data Collection Fields {#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-viewing-testing}
 
 After you have created one or more custom data fields, you can view and test them in the [DefectReporterSample](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md) level\.
 

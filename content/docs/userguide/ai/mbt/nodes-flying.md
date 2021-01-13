@@ -3,7 +3,7 @@ description: ' See the following AI Modular Behavior Tree (MBT) nodes for flying
   in &ALYlong;. '
 title: Helicopter AI MBT Nodes
 ---
-# Helicopter AI MBT Nodes<a name="ai-mbt-nodes-flying"></a>
+# Helicopter AI MBT Nodes {#ai-mbt-nodes-flying}
 
 
 ****  
@@ -14,7 +14,7 @@ title: Helicopter AI MBT Nodes
 
 The following flying vehicle AI Modular Behavior Tree nodes are supported\.
 
-## Hover node<a name="ai-mbt-nodes-hover"></a>
+## Hover node {#ai-mbt-nodes-hover}
 
 Used to let a flying agent hover at its current position\. 
 
@@ -32,7 +32,7 @@ This node never finishes by itself and will continue to hover the agent until it
 <Hover />
 ```
 
-## FlyShoot node<a name="ai-mbt-nodes-flyshoot"></a>
+## FlyShoot node {#ai-mbt-nodes-flyshoot}
 
 Used to let a flying agent shoot at its attention target, when possible from its current position\. If the secondary weapon system is used, then the node will only open fire if the weapons are deemed to be able to hit close enough to the target\. Otherwise normal firing rules are applied\.
 
@@ -51,7 +51,7 @@ This node never finishes by itself and the agent will continue shoot until it is
 <FlyShoot useSecondaryWeapon="1"/>
 ```
 
-## Fly node<a name="ai-mbt-nodes-fly"></a>
+## Fly node {#ai-mbt-nodes-fly}
 
 Used to let an agent fly around by following a path\. Paths should be assigned to the agent via a flow graph\.
 
@@ -107,7 +107,7 @@ Upon arrival, the `ArrivedCloseToPathEnd` and `ArrivedAtPathEnd` events are emit
 | Node activation | Helicopter\_StartFromClosestLocation | startPathFromClosestLocation | 
 | Each node tick | Helicopter\_Speed | desiredSpeed | 
 
-## FlyForceAttentionTarget node<a name="ai-mbt-nodes-flyforceattentiontarget"></a>
+## FlyForceAttentionTarget node {#ai-mbt-nodes-flyforceattentiontarget}
 
 Used to keep forcing an attention target onto a flying vehicle\. The attention target that should be enforced is acquired during each tick of the node from the `Helicopter_ForcedTargetId` Lua script variable\.
 
@@ -125,7 +125,7 @@ This node never finishes by itself and keeps forcing the attention target onto t
 <FlyForceAttentionTarget />
 ```
 
-## FlyAimAtCombatTarget node<a name="ai-mbt-nodes-flyaimcombattarget"></a>
+## FlyAimAtCombatTarget node {#ai-mbt-nodes-flyaimcombattarget}
 
 Used to aim a flying agent at its target, taking into account special aiming adjustments for weapons\.
 
@@ -143,7 +143,7 @@ This node never finishes by itself and keeps forcing agent to rotate its body to
 <FlyAimAtCombatTarget />
 ```
 
-## WaitAlignedWithAttentionTarget node<a name="ai-mbt-nodes-waitattentiontarget"></a>
+## WaitAlignedWithAttentionTarget node {#ai-mbt-nodes-waitattentiontarget}
 
 Used to wait until the agent is facing its attention target\.
 
@@ -162,7 +162,7 @@ Used to wait until the agent is facing its attention target\.
 <WaitAlignedWithAttentionTarget toleranceDegrees="40" />
 ```
 
-## HeavyShootMortar node<a name="ai-mbt-nodes-heavyshootmortar"></a>
+## HeavyShootMortar node {#ai-mbt-nodes-heavyshootmortar}
 
 Used to control the shooting of a heavy mortar\. The precondition and initialization of the weapon as well the reselection of the primary weapon is simplified and centralized\.
 
@@ -193,7 +193,7 @@ Used to control the shooting of a heavy mortar\. The precondition and initializa
 <HeavyShootMortar to="RefPoint" fireMode="Charge" aimingTimeBeforeShooting="2" timeout="7" />
 ```
 
-## SquadScope node<a name="ai-mbt-nodes-squadscope"></a>
+## SquadScope node {#ai-mbt-nodes-squadscope}
 
 Used to enter a squad scope, which is limited by the specified number of concurrent users\. If the node succeeds to do that, then the child node is executed\. 
 
@@ -215,7 +215,7 @@ Used to enter a squad scope, which is limited by the specified number of concurr
 </SquadScope>
 ```
 
-## SendSquadEvent node<a name="ai-mbt-nodes-sendsquadevent"></a>
+## SendSquadEvent node {#ai-mbt-nodes-sendsquadevent}
 
 Used to send an event only to the squad members\.
 
@@ -232,7 +232,7 @@ Used to send an event only to the squad members\.
 <SendSquadEvent name="ANameForTheEvent"/>
 ```
 
-## IfSquadCount node<a name="ai-mbt-nodes-ifsquadcount"></a>
+## IfSquadCount node {#ai-mbt-nodes-ifsquadcount}
 
 Used to check if a squad contains a specific number of members and if so executes its child\.
 

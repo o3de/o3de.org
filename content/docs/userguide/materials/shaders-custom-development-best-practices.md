@@ -2,7 +2,7 @@
 description: ' Use these best practices when working with material shaders. '
 title: Shader Development Best Practices
 ---
-# Shader Development Best Practices<a name="material-shaders-custom-development-best-practices"></a>
+# Shader Development Best Practices {#material-shaders-custom-development-best-practices}
 
 Shaders add flexibility to the modern rendering effects seen in games today\. To save you the trouble of managing multiple shader permutations, the shader compiler automatically creates the permutations for you when it parses the code, hiding the complexity\. However, this process requires high memory performance and requires long compile times\.
 

@@ -2,15 +2,15 @@
 description: ' Use the UICheckboxComponent to implement a UI check box in &ALYlong;. '
 title: UICheckboxComponent
 ---
-# UICheckboxComponent<a name="lua-scripting-ces-api-ui-uicheckboxcomponent"></a>
+# UICheckboxComponent {#lua-scripting-ces-api-ui-uicheckboxcomponent}
 
 You can use this component to implement a UI check box in Amazon Lumberyard\.
 
-## UiCheckboxBus<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus"></a>
+## UiCheckboxBus {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus}
 
 Services messages for the `UiCheckboxComponent`\.
 
-### GetChangedActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getchangedactionname"></a>
+### GetChangedActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getchangedactionname}
 
 Returns the action triggered when the check box value changes\.
 
@@ -20,7 +20,7 @@ Returns the action triggered when the check box value changes\.
 AZStd::string & GetChangedActionName()
 ```
 
-### GetCheckedEntity<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getcheckedentity"></a>
+### GetCheckedEntity {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getcheckedentity}
 
 Returns the child element that is shown when the check box is selected\.
 
@@ -30,7 +30,7 @@ Returns the child element that is shown when the check box is selected\.
 AZ::EntityId GetCheckedEntity()
 ```
 
-### GetState<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getstate"></a>
+### GetState {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getstate}
 
 Returns the state of the check box\. True if selected; false otherwise\.
 
@@ -40,7 +40,7 @@ Returns the state of the check box\. True if selected; false otherwise\.
 bool GetState()
 ```
 
-### GetTurnOffActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnoffactionname"></a>
+### GetTurnOffActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnoffactionname}
 
 Returns the action triggered when the check box is cleared\.
 
@@ -50,7 +50,7 @@ Returns the action triggered when the check box is cleared\.
 const AZStd::string & GetTurnOffActionName() 
 ```
 
-### GetTurnOnActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnonactionname"></a>
+### GetTurnOnActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnonactionname}
 
 Returns the name of the action that is triggered when the check box is selected\.
 
@@ -60,7 +60,7 @@ Returns the name of the action that is triggered when the check box is selected\
 const AZStd::string& GetTurnOnActionName()
 ```
 
-### GetUncheckedEntity<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getuncheckedentity"></a>
+### GetUncheckedEntity {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getuncheckedentity}
 
 Returns the child element that is shown when the check box is cleared\.
 
@@ -70,7 +70,7 @@ Returns the child element that is shown when the check box is cleared\.
 AZ::EntityId GetUncheckedEntity()
 ```
 
-### SetChangedActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setchangedactionname"></a>
+### SetChangedActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setchangedactionname}
 
 Sets the action triggered when the check box value changes\.
 
@@ -80,7 +80,7 @@ Sets the action triggered when the check box value changes\.
 void SetChangedActionName(const AZStd::string& actionName)
 ```
 
-### SetCheckedEntity<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setcheckedentity"></a>
+### SetCheckedEntity {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setcheckedentity}
 
 Sets the child element to show when the check box is selected\.
 
@@ -90,7 +90,7 @@ Sets the child element to show when the check box is selected\.
 void SetCheckedEntity(AZ::EntityId entityId)
 ```
 
-### SetState<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setstate"></a>
+### SetState {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setstate}
 
 Sets the state of the check box\. True if selected; false otherwise\.
 
@@ -100,7 +100,7 @@ Sets the state of the check box\. True if selected; false otherwise\.
 void SetState(bool checked)
 ```
 
-### SetTurnOffActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setturnoffactionname"></a>
+### SetTurnOffActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setturnoffactionname}
 
 Sets the action triggered when the check box is cleared\.
 
@@ -110,7 +110,7 @@ Sets the action triggered when the check box is cleared\.
 void SetTurnOffActionName(const AZStd::string & actionName)
 ```
 
-### SetTurnOnActionName<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setturnonactionname"></a>
+### SetTurnOnActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setturnonactionname}
 
 Sets the action triggered when the check box is selected\.
 
@@ -120,7 +120,7 @@ Sets the action triggered when the check box is selected\.
 void SetTurnOnActionName(const AZStd::string & actionName)
 ```
 
-### SetUncheckedEntity<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setuncheckedentity"></a>
+### SetUncheckedEntity {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-setuncheckedentity}
 
 Sets the child element to show when the check box is cleared\.
 
@@ -130,7 +130,7 @@ Sets the child element to show when the check box is cleared\.
 void SetUncheckedEntity(AZ::EntityId entityId)
 ```
 
-### ToggleState<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-togglestate"></a>
+### ToggleState {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-togglestate}
 
 Toggles the state of the check box\.
 
@@ -140,11 +140,11 @@ Toggles the state of the check box\.
 bool ToggleState()
 ```
 
-## UiCheckboxNotificationBus<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxnotificationbus"></a>
+## UiCheckboxNotificationBus {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxnotificationbus}
 
 Services notifications for the `UiCheckboxComponent`\.
 
-### OnCheckboxStateChange<a name="lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxnotificationbus-oncheckboxstatechange"></a>
+### OnCheckboxStateChange {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxnotificationbus-oncheckboxstatechange}
 
 Notifies that the check box state has changed\.
 

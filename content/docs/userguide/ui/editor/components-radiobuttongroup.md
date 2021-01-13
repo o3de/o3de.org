@@ -3,7 +3,7 @@ description: ' Use a RadioButtonGroup component to manage radio button groups in
   &ui-canvas-editor;. '
 title: RadioButtonGroup
 ---
-# RadioButtonGroup<a name="ui-editor-components-radiobuttongroup"></a>
+# RadioButtonGroup {#ui-editor-components-radiobuttongroup}
 
 You can use the **RadioButtonGroup** component to manage radio buttons\. This component handles selecting and clearing the radio buttons in the group when appropriate\. It also ensures that only one radio button is selected at one time\. You typically use this component on an element with children radio buttons, which are part of the radio button group\.
 

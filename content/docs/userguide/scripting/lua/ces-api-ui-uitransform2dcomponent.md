@@ -3,15 +3,15 @@ description: ' Use the UiTransformBus to control positioning, scaling, rotation,
   and offset settings for UI elements in &ALYlong;. '
 title: UITransform2dComponent
 ---
-# UITransform2dComponent<a name="lua-scripting-ces-api-ui-uitransform2dcomponent"></a>
+# UITransform2dComponent {#lua-scripting-ces-api-ui-uitransform2dcomponent}
 
 Controls positioning, scaling, rotation, anchor, and offset settings for UI elements\.
 
-## UiTransformBus<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransformbus"></a>
+## UiTransformBus {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransformbus}
 
 Services messages for the `UiTransform2dComponent`\.
 
-### GetCanvasPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getcanvasposition"></a>
+### GetCanvasPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-getcanvasposition}
 
 Returns the position for this element in the canvas space\.
 
@@ -21,7 +21,7 @@ Returns the position for this element in the canvas space\.
 AZ::Vector2 GetCanvasPosition()
 ```
 
-### GetLocalPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getlocalposition"></a>
+### GetLocalPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-getlocalposition}
 
 Returns the position for this element relative to the center of the element's anchors\.
 
@@ -31,7 +31,7 @@ Returns the position for this element relative to the center of the element's an
 AZ::Vector2 GetLocalPosition()
 ```
 
-### GetPivot<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getpivot"></a>
+### GetPivot {#lua-scripting-ces-api-ui-uitransform2dcomponent-getpivot}
 
 Returns the pivot point\.
 
@@ -41,7 +41,7 @@ Returns the pivot point\.
 AZ::Vector2 GetPivot()
 ```
 
-### GetScale<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getscale"></a>
+### GetScale {#lua-scripting-ces-api-ui-uitransform2dcomponent-getscale}
 
 Returns the scale\.
 
@@ -51,7 +51,7 @@ Returns the scale\.
 AZ::Vector2 GetScale()
 ```
 
-### GetScaleToDeviceMode<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getscaletodevice"></a>
+### GetScaleToDeviceMode {#lua-scripting-ces-api-ui-uitransform2dcomponent-getscaletodevice}
 
 Returns how this element and all of the child elements are scaled to allow for the difference between the authored canvas size and the actual viewport size\.
 
@@ -77,7 +77,7 @@ enum ScaleToDeviceMode
     };
 ```
 
-### GetViewportPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getviewportposition"></a>
+### GetViewportPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-getviewportposition}
 
 Returns the position for this element in the viewport space\.
 
@@ -87,7 +87,7 @@ Returns the position for this element in the viewport space\.
 AZ::Vector2 GetViewportPosition()
 ```
 
-### GetZRotation<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-getzrotation"></a>
+### GetZRotation {#lua-scripting-ces-api-ui-uitransform2dcomponent-getzrotation}
 
 Returns the rotation about the z\-axis\.
 
@@ -97,7 +97,7 @@ Returns the rotation about the z\-axis\.
 float GetZRotation()
 ```
 
-### MoveCanvasPositionBy<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-movecanvaspositionby"></a>
+### MoveCanvasPositionBy {#lua-scripting-ces-api-ui-uitransform2dcomponent-movecanvaspositionby}
 
 Moves this element in the canvas space\.
 
@@ -107,7 +107,7 @@ Moves this element in the canvas space\.
 void MoveCanvasPositionBy(const AZ::Vector2& offset)
 ```
 
-### MoveLocalPositionBy<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-movelocalpositionby"></a>
+### MoveLocalPositionBy {#lua-scripting-ces-api-ui-uitransform2dcomponent-movelocalpositionby}
 
 Moves this element relative to the center of the element's anchors\.
 
@@ -117,7 +117,7 @@ Moves this element relative to the center of the element's anchors\.
 void MoveLocalPositionBy(const AZ::Vector2& offset)
 ```
 
-### MoveViewportPositionBy<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-moveviewportpositionby"></a>
+### MoveViewportPositionBy {#lua-scripting-ces-api-ui-uitransform2dcomponent-moveviewportpositionby}
 
 Moves this element in the viewport space\.
 
@@ -127,7 +127,7 @@ Moves this element in the viewport space\.
 void MoveViewportPositionBy(const AZ::Vector2& offset)
 ```
 
-### SetCanvasPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setcanvasposition"></a>
+### SetCanvasPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-setcanvasposition}
 
 Sets the position for this element in the canvas space\.
 
@@ -137,7 +137,7 @@ Sets the position for this element in the canvas space\.
 void SetCanvasPosition(const AZ::Vector2& position)
 ```
 
-### SetLocalPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setlocalposition"></a>
+### SetLocalPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-setlocalposition}
 
 Sets the position for this element relative to the center of the element's anchors\.
 
@@ -147,7 +147,7 @@ Sets the position for this element relative to the center of the element's ancho
 void SetLocalPosition(const AZ::Vector2& position)
 ```
 
-### SetPivot<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setpivot"></a>
+### SetPivot {#lua-scripting-ces-api-ui-uitransform2dcomponent-setpivot}
 
 Sets the pivot point\.
 
@@ -157,7 +157,7 @@ Sets the pivot point\.
 void SetPivot(AZ::Vector2 pivot)
 ```
 
-### SetScale<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setscale"></a>
+### SetScale {#lua-scripting-ces-api-ui-uitransform2dcomponent-setscale}
 
 Sets the scale\.
 
@@ -167,7 +167,7 @@ Sets the scale\.
 void SetScale(AZ::Vector2 scale)
 ```
 
-### SetScaleToDeviceMode<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setscaletodevice"></a>
+### SetScaleToDeviceMode {#lua-scripting-ces-api-ui-uitransform2dcomponent-setscaletodevice}
 
 Sets how the element and all of its child elements are scaled to allow for the difference between the authored canvas size and the actual viewport size\.
 
@@ -193,7 +193,7 @@ enum ScaleToDeviceMode
     };
 ```
 
-### SetViewportPosition<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setviewportposition"></a>
+### SetViewportPosition {#lua-scripting-ces-api-ui-uitransform2dcomponent-setviewportposition}
 
 Sets the position for this element in the viewport space\.
 
@@ -203,7 +203,7 @@ Sets the position for this element in the viewport space\.
 void SetViewportPosition(const AZ::Vector2& position)
 ```
 
-### SetZRotation<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-setzrotation"></a>
+### SetZRotation {#lua-scripting-ces-api-ui-uitransform2dcomponent-setzrotation}
 
 Sets the rotation about the z\-axis\.
 
@@ -213,11 +213,11 @@ Sets the rotation about the z\-axis\.
 void SetZRotation(float rotation)
 ```
 
-## UiTransform2dBus<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus"></a>
+## UiTransform2dBus {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus}
 
 Services anchors and offsets for the `UITransform2dComponent`\.
 
-### GetAnchors<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getanchors"></a>
+### GetAnchors {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getanchors}
 
 Returns the UI anchors\.
 
@@ -239,7 +239,7 @@ class UiAnchors
 };
 ```
 
-### GetOffsets<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getoffsets"></a>
+### GetOffsets {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getoffsets}
 
 Returns the UI offsets\.
 
@@ -261,7 +261,7 @@ class UiOffsets
 };
 ```
 
-### SetAnchors<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setanchors"></a>
+### SetAnchors {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setanchors}
 
 Sets the anchors\.
 
@@ -281,7 +281,7 @@ For possible values for `UiAnchors`, see [GetAnchors](#lua-scripting-ces-api-ui-
 | adjustOffsets | If true, the offsets are adjusted to keep the rectangle in the same position\. | 
 | allowPush | Only takes effect if the anchors are invalid\. If true, when an anchor is changed to overlap the anchor opposite it, the opposite anchor moves\. | 
 
-### SetOffsets<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setoffsets"></a>
+### SetOffsets {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setoffsets}
 
 Sets UI offsets\.
 
@@ -293,7 +293,7 @@ void SetOffsets(UiOffsets offsets)
 
 For possible values for `UiOffsets`, see [GetOffsets](#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getoffsets)\.
 
-### SetPivotAndAdjustOffsets<a name="lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setpivotandadjustoffsets"></a>
+### SetPivotAndAdjustOffsets {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setpivotandadjustoffsets}
 
 Sets the pivot and adjusts the offsets so that this element stays in the same place\.
 

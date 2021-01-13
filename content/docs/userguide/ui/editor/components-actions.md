@@ -3,7 +3,7 @@ description: ' Use the Actions properties in &ALY; &ui-canvas-editor; to trigger
   event when one of the listed actions occur. '
 title: Actions
 ---
-# Actions<a name="ui-editor-components-actions"></a>
+# Actions {#ui-editor-components-actions}
 
 You can use the **Actions** properties to trigger a particular event when one of the listed actions occur\. Type a string for one of the actions\. When the listed action occurs \(for example, when a game player starts to pause on the element\), the listed string is sent as an action\.
 

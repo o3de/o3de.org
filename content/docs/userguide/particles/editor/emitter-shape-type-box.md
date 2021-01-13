@@ -4,7 +4,7 @@ description: ' Use the Box emitter in the &ALYlong; &particle-editor; to enable 
   effects. '
 title: Box Emitter (CPU and GPU)
 ---
-# Box Emitter \(CPU and GPU\)<a name="particle-editor-emitter-shape-type-box"></a>
+# Box Emitter \(CPU and GPU\) {#particle-editor-emitter-shape-type-box}
 
 The **Box** emitter enables spawning of particles along the shapes axial coordinate system\. This allows you to create complex planar and rectangular effects\.
 

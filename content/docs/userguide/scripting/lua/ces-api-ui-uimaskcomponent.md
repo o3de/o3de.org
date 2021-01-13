@@ -3,15 +3,15 @@ description: ' Use the UIMaskComponent to show only part of the content of a com
   child elements in &ALYlong;. '
 title: UIMaskComponent
 ---
-# UIMaskComponent<a name="lua-scripting-ces-api-ui-uimaskcomponent"></a>
+# UIMaskComponent {#lua-scripting-ces-api-ui-uimaskcomponent}
 
 You can add a mask component to an element to show only a part of the content of its child elements \(for example, example, image or text\)\.
 
-## UiMaskBus<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus"></a>
+## UiMaskBus {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus}
 
 Services messages for the `UiMaskComponent`\.
 
-### GetDrawBehind<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getdrawbehind"></a>
+### GetDrawBehind {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getdrawbehind}
 
 Returns whether the mask is drawn behind the child elements\.
 
@@ -21,7 +21,7 @@ Returns whether the mask is drawn behind the child elements\.
 bool GetDrawBehind()
 ```
 
-### GetDrawInFront<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getdrawinfront"></a>
+### GetDrawInFront {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getdrawinfront}
 
 Returns whether the mask is drawn in front of child elements\.
 
@@ -31,7 +31,7 @@ Returns whether the mask is drawn in front of child elements\.
 bool GetDrawInFront()
 ```
 
-### GetIsMaskingEnabled<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getismaskingenabled"></a>
+### GetIsMaskingEnabled {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getismaskingenabled}
 
 Returns whether masking is enabled\.
 
@@ -41,7 +41,7 @@ Returns whether masking is enabled\.
 bool GetIsMaskingEnabled()
 ```
 
-### GetUseAlphaTest<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getusealphatest"></a>
+### GetUseAlphaTest {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-getusealphatest}
 
 Returns whether to use the alpha channel in the mask visual's texture to define the mask\.
 
@@ -51,7 +51,7 @@ Returns whether to use the alpha channel in the mask visual's texture to define 
 bool GetUseAlphaTest()
 ```
 
-### SetDrawBehind<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setdrawbehind"></a>
+### SetDrawBehind {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setdrawbehind}
 
 Sets whether the mask is drawn behind the child elements\.
 
@@ -61,7 +61,7 @@ Sets whether the mask is drawn behind the child elements\.
 void SetDrawBehind(bool drawMaskVisualBehindChildren) 
 ```
 
-### SetDrawInFront<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setdrawinfront"></a>
+### SetDrawInFront {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setdrawinfront}
 
 Sets whether the mask is drawn in front of child elements\.
 
@@ -71,7 +71,7 @@ Sets whether the mask is drawn in front of child elements\.
 void SetDrawInFront(bool drawMaskVisualInFrontOfChildren)
 ```
 
-### SetIsMaskingEnabled<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setismaskingenabled"></a>
+### SetIsMaskingEnabled {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setismaskingenabled}
 
 Sets whether masking is enabled\.
 
@@ -81,7 +81,7 @@ Sets whether masking is enabled\.
 void SetIsMaskingEnabled(bool enableMasking)
 ```
 
-### SetUseAlphaTest<a name="lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setusealphatest"></a>
+### SetUseAlphaTest {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setusealphatest}
 
 Sets whether to use the alpha channel in the mask visual's texture to define the mask\.
 

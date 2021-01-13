@@ -2,7 +2,7 @@
 description: ' Describes how to create a &ALYlong; AZ module that is not a gem. '
 title: Creating an AZ Module That Is Not a Gem
 ---
-# Creating an AZ Module That Is Not a Gem<a name="az-module-create-non-gem"></a>
+# Creating an AZ Module That Is Not a Gem {#az-module-create-non-gem}
 
 
 ****  
@@ -13,7 +13,7 @@ title: Creating an AZ Module That Is Not a Gem
 
 Beginning with Lumberyard 1\.5, gems are AZ modules, so the preferred way to build an AZ module is to simply create a new gem\. However, if your project requires an AZ module that must not be built as a gem, follow the steps provided here\.
 
-## A\. Start with a Gem<a name="az-module-create-non-gem-start"></a>
+## A\. Start with a Gem {#az-module-create-non-gem-start}
 
 Because gems have all the required code for an AZ module, it's easier to create a gem first and then modify it not to be a gem\. As an added convenience, the new gem names the code for you in an intuitive way\. For an explanation of the code that you get in a new gem, see [Parts of an AZ Module, Explained](/docs/userguide/modules/parts.md)\.
 
@@ -43,7 +43,7 @@ Because gems have all the required code for an AZ module, it's easier to create 
 
 1. To remove the remaining noncode pieces of the gem, delete the directory `dev/Gems/HelloWorld`\.
 
-## B\. Modify the AZ Module Declaration<a name="az-module-create-non-gem-modify-declaration"></a>
+## B\. Modify the AZ Module Declaration {#az-module-create-non-gem-modify-declaration}
 
 AZ modules that are not gems must not have UUIDs in their names, so you must modify the gem's `.cpp` file accordingly\.
 
@@ -66,7 +66,7 @@ AZ modules that are not gems must not have UUIDs in their names, so you must mod
 
    The first argument \(`HelloWorld`\) is a unique identifier to be included in your `project.json` file, and should match the `target` field of your wscript\. You will do these steps later\. The second argument is the same fully qualified name of the class already defined in your `.cpp` file\.
 
-## C\. Remove CryEngine References \(Optional\)<a name="az-module-create-non-gem-remove-cryengine-references"></a>
+## C\. Remove CryEngine References \(Optional\) {#az-module-create-non-gem-remove-cryengine-references}
 
 If your module does not access code from CryEngine \(for example, it does not access `gEnv`\), perform these additional steps\.
 
@@ -86,7 +86,7 @@ If your module does not access code from CryEngine \(for example, it does not ac
 
    `#include <platform.h> // Many CryCommon files require that this be included first.`
 
-## D\. Modify the Wscript and Waf Spec Files<a name="az-module-create-non-gem-modify-wscript-waf"></a>
+## D\. Modify the Wscript and Waf Spec Files {#az-module-create-non-gem-modify-wscript-waf}
 
 Next, you must modify the default wscript file to remove gem\-specific commands, add your module directory to the wscript file, and add your module to the appropriate [waf spec files](/docs/userguide/waf/files-spec-file.md)\.
 
@@ -135,7 +135,7 @@ Next, you must modify the default wscript file to remove gem\-specific commands,
    }
    ```
 
-## E\. Configure Your Project to Load the New Module<a name="az-module-create-non-gem-load"></a>
+## E\. Configure Your Project to Load the New Module {#az-module-create-non-gem-load}
 
 When your project launches, it loads the modules listed in the `dev/<project_assets>/Config/Game.xml` file \(the `Editor.xml` file is used when Lumberyard Editor is launched\)\. These files are automatically generated and should not be edited by hand\.
 
@@ -173,7 +173,7 @@ The flavors section may be missing from your project\. If it is not present, Lum
 
    This command modifies the `Game.xml` and `Editor.xml`  files to list the `HelloWorld` module\.
 
-## F\. Add the Module's Public Interfaces to Your Project's Include Paths<a name="az-module-create-non-gem-add-interfaces"></a>
+## F\. Add the Module's Public Interfaces to Your Project's Include Paths {#az-module-create-non-gem-add-interfaces}
 
 Finally, to make your AZ module's public interfaces available to the rest of your project, you must inform them project of your module's `include` directory\.
 

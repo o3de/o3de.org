@@ -2,7 +2,7 @@
 description: ' Use the &ALYlong; &texture-settings; to work with texture assets. '
 title: '&texture-settings;'
 ---
-# Texture Settings Editor<a name="texture-settings-editor"></a>
+# Texture Settings Editor {#texture-settings-editor}
 
 You can use the Texture Settings Editor to edit the texture settings for individual images\. This is useful if you are customizing your images for different platforms, such as PC and Android\. For example, you can specify compression scheme, mipmap generation parameters, alpha map combinations, and so on for images\. When you edit your texture settings for an image, the Texture Settings Editor generates a `.imagesettings` file to save your settings\. 
 
@@ -44,7 +44,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
 + [Mipmap Settings](#texture-mipmap-settings)
 + [Migrate RC\.ini Settings to the Texture Settings Editor](#migrate-settings-from-rc-texture-settings-editor)
 
-## Using the Texture Settings Editor<a name="using-the-texture-settings-editor"></a>
+## Using the Texture Settings Editor {#using-the-texture-settings-editor}
 
 **To use the Texture Settings Editor**
 
@@ -89,7 +89,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
 If there is an existing legacy `.exportsettings` file associated with the texture file, the legacy file will be automatically deleted\.
 Click the **?** icon to open the texture documentation\.
 
-## Preview<a name="texture-editor-preview"></a>
+## Preview {#texture-editor-preview}
 
 In the preview panel, you can do the following:
 
@@ -115,7 +115,7 @@ In the preview panel, you can do the following:
    + **Always refresh preview** – Refresh automatically when you make a change\.
    + **Press to refresh preview** – Manually refresh the preview\.
 
-## Texture Presets<a name="texture-presets"></a>
+## Texture Presets {#texture-presets}
 
  In the **Texture presets**, you can do the following:
 
@@ -132,9 +132,9 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 + **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
 + **Suppress spec reduction** – By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
 
-  For more information, see [Editor Settings](/docs/userguide/editor/menus.md#lumberyard-editor-menus-config-spec)\.
+  For more information, see [Editor Settings](/docs/userguide/editor/menus#lumberyard-editor-menus-config-spec)\.
 
-## Platform<a name="texture-platform-resolution"></a>
+## Platform {#texture-platform-resolution}
 
  In the **Platform**, you can specify the following\. 
 
@@ -150,7 +150,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 |  **Size**  |  Compiled texture resolution calculated according to the **DownRes** value\.  | 
 | Format |  Compiled texture format on the platform\.  | 
 
-## Mipmap Settings<a name="texture-mipmap-settings"></a>
+## Mipmap Settings {#texture-mipmap-settings}
 
  In the **Mipmap Settings**, you can specify the following\.
 
@@ -167,7 +167,7 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 |  **Pixel Sampling Type**  |  Specifies how the pixel is generated when sampling mipmaps\. You can specify the following options: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
 |  **Filter Method**  |  Specifies the filter method used to process the mipmap\. You can specify the following options: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
 
-## Migrate RC\.ini Settings to the Texture Settings Editor<a name="migrate-settings-from-rc-texture-settings-editor"></a>
+## Migrate RC\.ini Settings to the Texture Settings Editor {#migrate-settings-from-rc-texture-settings-editor}
 
 The Resource Compiler uses the `rc.ini` file to store your default texture presets\. In Lumberyard 1\.18, the Texture Settings Editor uses the `ImageBuilderDefaultPresets.settings` instead\. 
 

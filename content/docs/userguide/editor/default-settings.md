@@ -2,7 +2,7 @@
 description: ' Restore the default layout for your &ly-editor; workspace. '
 title: Restoring the Default Layout for &ly-editor;
 ---
-# Restoring the Default Layout for Lumberyard Editor<a name="lumberyard-editor-default-settings"></a>
+# Restoring the Default Layout for Lumberyard Editor {#lumberyard-editor-default-settings}
 
 If you customized your workspace, you can reset Lumberyard Editor to use the default layout\. This restores your editors, tools, and windows to the default view that you see when you open Lumberyard Editor for the first time\. You can restore the default layout at any time\. 
 
@@ -10,7 +10,7 @@ If you customized your workspace, you can reset Lumberyard Editor to use the def
 + [Restoring the Component Entity Layout](#lumberyard-editor-restore-default-layout)
 + [Restoring the Legacy Layout](#lumberyard-editor-restore-legacy-layout)
 
-## Restoring the Component Entity Layout<a name="lumberyard-editor-restore-default-layout"></a>
+## Restoring the Component Entity Layout {#lumberyard-editor-restore-default-layout}
 
 The component entity layout is the default view for Lumberyard Editor\. If you customize your settings and tools, you can restore the default layout for Lumberyard Editor\.
 
@@ -26,7 +26,7 @@ The component entity layout is the default view for Lumberyard Editor\. If you c
 Resetting Lumberyard Editor to the default layout does not reset the layout for individual tools, such as the **Script Canvas** editor or the **Particle Editor**\.
 You can enable the CryEntity Removal gem to disable all [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy) features from Lumberyard Editor\. Legacy features will eventually be removed\. If you enable this gem, the legacy layout view is removed from Lumberyard Editor\. For more information, see [CryEntity Removal Gem](/docs/userguide/gems/cryentity-removal-gem.md)\.
 
-## Restoring the Legacy Layout<a name="lumberyard-editor-restore-legacy-layout"></a>
+## Restoring the Legacy Layout {#lumberyard-editor-restore-legacy-layout}
 
 If you don't enable the CryEntity Removal gem, you can switch back to the legacy layout\. 
 

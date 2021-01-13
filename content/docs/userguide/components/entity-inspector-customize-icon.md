@@ -2,7 +2,7 @@
 description: ' Customize the component icon for an entity in &ALYlong;. '
 title: Customizing the Entity Icon
 ---
-# Customizing the Entity Icon<a name="component-entity-inspector-customize-icon"></a>
+# Customizing the Entity Icon {#component-entity-inspector-customize-icon}
 
 The default icon for an entity without any added components is the **Transform** \( ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/entity-inspector-transform-icon.png)\) component's icon\. When you add another component, the icon changes to the first component that you add to that entity\.
 

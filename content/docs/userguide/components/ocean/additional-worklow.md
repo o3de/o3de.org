@@ -3,14 +3,14 @@ description: ' See additional information when working with the &ALYlong; Infini
   Ocean component. '
 title: Additional Workflow
 ---
-# Additional Workflow<a name="infinite-ocean-component-additional-worklow"></a>
+# Additional Workflow {#infinite-ocean-component-additional-worklow}
 
 See the following when working with the **Infinite Ocean** component\.
 
 **Note**  
 The `e_VolumetricFog` console variable is currently not compatible with the **Infinite Ocean** component and can cause rendering issues for underwater fog\.
 
-## Slices<a name="infinite-ocean-component-working-with-slices"></a>
+## Slices {#infinite-ocean-component-working-with-slices}
 + You can create a slice that contains an entity with an **Infinite Ocean** component; however, not all slice features are supported at this time\.
 + You can dynamically spawn a slice that contains an **Infinite Ocean** component; however, asynchronous loading of the **Infinite Ocean** component is not supported at this time\.
 + Only one **Infinite Ocean** component can be active at a time\. If you create a second **Infinite Ocean** component in your level or place a slice that contains another **Infinite Ocean** component, an error appears in the console\.
@@ -20,12 +20,12 @@ The `e_VolumetricFog` console variable is currently not compatible with the **In
 
   This allows you to have multiple **Infinite Ocean** components, each with a different look and feel, set their starting states \(activate one and disable the others\), and then toggle the active state during run time to control which ocean is rendered\.
 
-## Parent and Child Entities<a name="infinite-ocean-component-working-with-parent-child-entities"></a>
+## Parent and Child Entities {#infinite-ocean-component-working-with-parent-child-entities}
 + You can use the entity's **[Transform](/docs/userguide/components/transform.md)** component to control the surface height of the **Infinite Ocean** component\.
 + Specify the z\-axis of the **Transform** component to set the **Infinite Ocean** component's height\.
 + The **Infinite Ocean** component respects the hierarchical transforms, so if the entity is a child nested within a hierarchy, the parent transform above it contributes to the height of the **Infinite Ocean** component\.
 
-## Ocean Bottom<a name="infinite-ocean-component-working-with-ocean-bottom"></a>
+## Ocean Bottom {#infinite-ocean-component-working-with-ocean-bottom}
 
 The ocean bottom feature toggles on an infinite plane that draws below the ocean\. The plane draws black, and its main purpose is to fix the depth buffer behind the water in areas beyond the level geometry\. 
 + If you are using the ocean bottom, the parent transform of the **Infinite Ocean** component sets the ocean's height\. If the height of the ocean is near or below `0` and you are using the ocean bottom, there can be some visual anomalies\. 

@@ -3,7 +3,7 @@ description: ' Customize vegetation behavior with the Vegetation panel under Ter
   in the &ALY; &rollup-bar;. '
 title: 'Vegetation Parameters '
 ---
-# Vegetation Parameters<a name="vegetation-params-ref"></a>
+# Vegetation Parameters {#vegetation-params-ref}
 
 
 ****  

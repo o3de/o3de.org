@@ -2,7 +2,7 @@
 description: ' Use gems to add third-party libraries to your game in &ALYlong;. '
 title: Adding Third-Party Libraries
 ---
-# Adding Third\-Party Libraries<a name="waf-adding-third-party-libraries"></a>
+# Adding Third\-Party Libraries {#waf-adding-third-party-libraries}
 
 [Gems](/docs/userguide/gems/builtin/s.md) are Lumberyard extensions that can be enabled or disabled for any game project\. This modularity is advantageous when you want to add a third\-party library to specific games\. You can add the third\-party library to a new or existing gem, and then enable the gem for the projects that you want\. This narrows the scope of the library to only the games that use the gem\.
 
@@ -18,11 +18,11 @@ Adding a third\-party library to a gem includes the following steps:
 
 In the following example, the steps add a fictional third\-party library to a gem\. The library is a static library called "SuperLibrary" that supports both Windows and macOS\. The gem is called "MyGem"\.
 
-## Step 1\. Determine the Location of the Third\-Party Library<a name="waf-adding-third-party-libraries-determine-the-third-party-library-location"></a>
+## Step 1\. Determine the Location of the Third\-Party Library {#waf-adding-third-party-libraries-determine-the-third-party-library-location}
 
 When you add a third\-party library to a gem, you specify two locations: one for the library defnition, and one for the library contents\.
 
-### Definition File<a name="waf-adding-third-party-libraries-definition-files"></a>
+### Definition File {#waf-adding-third-party-libraries-definition-files}
 
 The gem module expects the third\-party SDK `.json` definition file \(in this example, `superlibrary.json`\) to reside in a subdirectory named `3rdParty`\. The following gem directory structure shows the location of the `lumberyard_version\dev\Gems\gem_name\3rdParty` directory\.
 
@@ -35,7 +35,7 @@ The gem module expects the third\-party SDK `.json` definition file \(in this ex
 +---gem.json
 ```
 
-### Library Files<a name="waf-adding-third-party-libraries-library-files"></a>
+### Library Files {#waf-adding-third-party-libraries-library-files}
 
 The library code file location is not predetermined, but a best practice is to place them inside the gem's directory structure in an `External\SDK_name` directory, like this:
 
@@ -55,7 +55,7 @@ The following directory structure shows the `External` directory with the `Super
                  +----superlibrary.a
 ```
 
-## Step 2\. Create a Third\-Party Library Definition File<a name="waf-adding-third-party-libraries-create-a-third-party-library-definition-file"></a>
+## Step 2\. Create a Third\-Party Library Definition File {#waf-adding-third-party-libraries-create-a-third-party-library-definition-file}
 
 Create a `.json` definition file for the third\-party library\. Using the directory structure from the previous step, the third\-party definition file `superlibrary.json` looks like this:
 
@@ -97,7 +97,7 @@ The `platform` key sections describe the locations of platform\-specific library
 
 For more information, see [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
-## Step 3\. Apply the Library to Modules or Gems That Require It<a name="waf-adding-third-party-libraries-apply-the-library-to-modules-or-gems-that-require-it"></a>
+## Step 3\. Apply the Library to Modules or Gems That Require It {#waf-adding-third-party-libraries-apply-the-library-to-modules-or-gems-that-require-it}
 
 By default, after the third\-party library definition is set in the gem, it is automatically available to that gem\. In order for this gem to be available in other modules, those modules need to add `SUPERLIBRARY` to their `uselib` list\.
 
@@ -140,7 +140,7 @@ def build(bld):
     )
 ```
 
-## Step 4\. Configure and Validate the Library Definition<a name="waf-adding-third-party-libraries-configure-and-validate-the-library-definition"></a>
+## Step 4\. Configure and Validate the Library Definition {#waf-adding-third-party-libraries-configure-and-validate-the-library-definition}
 
 Now you can test your definitions by using the Waf `configure` command, which processes third\-party definitions\. Before you begin, use the Project Configurator to ensure that the gem that has the third\-party library is enabled for the game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
@@ -164,6 +164,6 @@ STLIB_SUPERLIBRARY = ['superlibrary']
 ...
 ```
 
-## Updating a Third\-Party Library in a Gem<a name="waf-adding-third-party-libraries-updating-a-third-party-library-in-a-gem"></a>
+## Updating a Third\-Party Library in a Gem {#waf-adding-third-party-libraries-updating-a-third-party-library-in-a-gem}
 
 To update a third\-party library that is defined in a gem, you don't have to create a new third\-party definition file\. Instead, you can update the existing definition file\. As a best practice, place the third\-party library files in a version\-named subfolder\. To maintain good dependency tracking, we recommend that you update the gem version when you update a third\-party library\.

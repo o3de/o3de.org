@@ -2,7 +2,7 @@
 description: null
 title: Configuring Runtime Capabilities and Caching
 ---
-# Configuring Runtime Capabilities and Caching<a name="cloud-canvas-cloud-gem-text-to-speech-runtime"></a>
+# Configuring Runtime Capabilities and Caching {#cloud-canvas-cloud-gem-text-to-speech-runtime}
 
 You can use the **Settings** tab of the Cloud Gem Portal to enable or disable runtime capabilities and runtime caching\.
 

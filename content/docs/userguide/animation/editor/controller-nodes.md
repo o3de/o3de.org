@@ -2,7 +2,7 @@
 description: ' See the following controller nodes in &ALYlong;. '
 title: Controller Nodes
 ---
-# Controller Nodes<a name="animation-editor-controller-nodes"></a>
+# Controller Nodes {#animation-editor-controller-nodes}
 
 See the following controller nodes in the **Animation Editor**\.
 
@@ -10,7 +10,7 @@ See the following controller nodes in the **Animation Editor**\.
 + [Get Transform](#animation-editor-get-transform-node)
 + [Set Transform](#animation-editor-set-transform-node)
 
-## Get Transform<a name="animation-editor-get-transform-node"></a>
+## Get Transform {#animation-editor-get-transform-node}
 
 The **Get Transform** node gets the transform data from a joint that you specify\. The transform includes the translation \(position\), rotation, and scale\. You can use this node to return the transform for your animations\.
 
@@ -45,7 +45,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/animation-editor-controller-nodes.html)
 
-## Set Transform<a name="animation-editor-set-transform-node"></a>
+## Set Transform {#animation-editor-set-transform-node}
 
 The **Set Transform** node sets the transform from a selected joint, including translation \(position\), rotation, and scale\.
 

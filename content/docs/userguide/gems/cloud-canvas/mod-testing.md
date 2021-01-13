@@ -2,7 +2,7 @@
 description: ' Test the &ALY; Message of the Day Cloud Gem sample level. '
 title: Testing the Message of the Day Sample Level
 ---
-# Testing the Message of the Day Sample Level<a name="cloud-canvas-cloud-gem-mod-testing"></a>
+# Testing the Message of the Day Sample Level {#cloud-canvas-cloud-gem-mod-testing}
 
 A sample level for testing is located in the `\dev\CloudGemSamples\Levels\MsgOfTheDaySample` directory\. The **MsgOfTheDaySample** level contains a one\-button UI for retrieving and displaying successive messages of the day\.
 

@@ -3,7 +3,7 @@ description: ' Zip your gem''s contents and then change the file extension to .c
   to make your custom &ALYlong; gem distributable. '
 title: Compressing Your Gem
 ---
-# Compressing Your Gem<a name="gems-system-gems-compressing"></a>
+# Compressing Your Gem {#gems-system-gems-compressing}
 
 You can compress your gem to make it distributable to other Lumberyard game developers\. To do this, you zip the contents of the gem directory using your preferred zip tool, and change the `.zip` filename extension to `.crate`\. The compressed `.crate` file must be under 4GB in size\. By renaming the \.`zip` to \.`crate`, game developers who use your gem can unpack and install it by drag and dropping it into Lumberyard\.
 

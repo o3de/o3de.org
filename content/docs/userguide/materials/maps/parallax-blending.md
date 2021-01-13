@@ -2,7 +2,7 @@
 description: ' Place a blend layer for parallax mapping in &ALYlong;. '
 title: Using Blend Layers for Parallax Mapping
 ---
-# Using Blend Layers for Parallax Mapping<a name="mat-maps-parallax-blending"></a>
+# Using Blend Layers for Parallax Mapping {#mat-maps-parallax-blending}
 
 You can use blend layers for parallax mapping\. For both POM and OBM, set the diffuse and normal map as usual\. The `_disp` texture will be loaded automatically as long as the [Applying Parallax Occlusion Mapping \(POM\)](/docs/userguide/materials/maps/parallax-pom.md) procedure is first completed\.
 

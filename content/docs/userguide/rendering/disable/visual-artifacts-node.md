@@ -3,7 +3,7 @@ description: ' Use the Disable Visual Artifacts node in the &ALYlong; &script-ca
   editor to disable visual artifact effects. '
 title: Disable Visual Artifacts
 ---
-# Disable Visual Artifacts<a name="disable-visual-artifacts-node"></a>
+# Disable Visual Artifacts {#disable-visual-artifacts-node}
 
 Disables the visual artifact effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Visual Artifacts](/docs/userguide/rendering/en
 
 ![\[disablevisualartifactsnode, disableartifactsnode, disablevisualartiffacts\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-visual-artifacts-node.png)
 
-## Inputs<a name="disable-visual-artifacts-note-input"></a>
+## Inputs {#disable-visual-artifacts-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Visual Artifacts](/docs/userguide/rendering/en
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-visual-artifacts-node-output"></a>
+## Outputs {#disable-visual-artifacts-node-output}
 
 
 ****  

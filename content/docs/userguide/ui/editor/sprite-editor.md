@@ -3,7 +3,7 @@ description: ' Use the Sprite Editor to configure your images and textures in &A
   &ui-canvas-editor; . '
 title: Sprite Editor
 ---
-# Sprite Editor<a name="ui-editor-sprite-editor"></a>
+# Sprite Editor {#ui-editor-sprite-editor}
 
 The **Sprite Editor** configures the following sprite configurations:
 + Border values for [sliced image types](/docs/userguide/ui/editor/component-9-sliced.md)

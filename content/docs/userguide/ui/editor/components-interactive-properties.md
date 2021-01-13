@@ -3,7 +3,7 @@ description: ' Work with the input enabled, states, navigation, and action prope
   of the &ui-canvas-editor; in &ALY;. '
 title: Properties for Interactive Components
 ---
-# Properties for Interactive Components<a name="ui-editor-components-interactive-properties"></a>
+# Properties for Interactive Components {#ui-editor-components-interactive-properties}
 
 All of the interactive components share a common set of properties\. These properties are grouped into the following categories:
 + [**Input Enabled**](/docs/userguide/ui/editor/components-interactive-properties-input.md) – Check box or flag that determines whether the element can be interacted with\.

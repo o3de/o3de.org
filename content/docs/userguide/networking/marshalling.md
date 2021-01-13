@@ -3,7 +3,7 @@ description: ' Learn how marshalers read and write data to and from buffers in a
   GridMate network session. '
 title: Marshalling
 ---
-# Marshalling<a name="network-marshalling"></a>
+# Marshalling {#network-marshalling}
 
 Data is written to the network using `WriteBuffer`, and data received is read using `ReadBuffer`\. Each buffer specifies the [endianness](https://en.wikipedia.org/wiki/Endianness) used\.
 
@@ -59,13 +59,13 @@ namespace GridMate
 }
 ```
 
-## Markers<a name="network-marshalling-markers"></a>
+## Markers {#network-marshalling-markers}
 
 Notice the declaration of `MarshalSize` above\. `WriteBuffer` supports the concept of markers\. A marker is a placeholder that can be inserted into the buffer, so its value can be filled after additional data is written to the buffer\. This is useful for prepending a length field in front of the actual data\. Markers require that the data that is inserted be of fixed length, and `MarshalSize` is used to query this length\. Therefore, marshalers that write data to the marker need to declare a valid `MarshalSize`\.
 
-## Buffers<a name="network-marshalling-buffers"></a>
+## Buffers {#network-marshalling-buffers}
 
-### Write Buffers<a name="write-buffers"></a>
+### Write Buffers {#write-buffers}
 
 Write buffers are backed by the following three types of allocation schemes:
 
@@ -93,15 +93,15 @@ WriteBuffer wb;
 wb.Write(1.0f, HalfMarshaler());
 ```
 
-### Read Buffers<a name="network-marshalling-read-buffers"></a>
+### Read Buffers {#network-marshalling-read-buffers}
 
 Read buffers have built\-in overflow detection and do not read any data fields after the end of the buffer has been reached\. You can check this by looking at the return value of the `Read` method\. Note that if data isn’t read for a given value, then the value is left uninitialized\.
 
-## Predefined Marshalers<a name="network-marshalling-predefined-marshalers"></a>
+## Predefined Marshalers {#network-marshalling-predefined-marshalers}
 
 GridMate includes the following predefined marshalers:
 
-### Fundamental C\+\+ Types<a name="network-marshalling-predefined-marshalers-fundamental"></a>
+### Fundamental C\+\+ Types {#network-marshalling-predefined-marshalers-fundamental}
 
 
 ****  
@@ -110,7 +110,7 @@ GridMate includes the following predefined marshalers:
 | --- | --- | --- | --- | 
 | `float` `double` | `char` `bool` `enum` \(specify marshaled size by inheriting `enum` from a type\) | `AZ::u8` `AZ::u16` `AZ::u32` `AZ::u64` | `AZ::s8` `AZ::s16` `AZ::s32` `AZ::s64` | 
 
-### Container Types<a name="network-marshalling-predefined-marshalers-container"></a>
+### Container Types {#network-marshalling-predefined-marshalers-container}
 
 
 ****  
@@ -119,7 +119,7 @@ GridMate includes the following predefined marshalers:
 | --- | --- | --- | 
 | `vector` `list` `string` | `map` `set` `unordered_map` `unordered_set` `multimap` `multiset`  | `ContainerMarshaler` `MapContainerMarshaler` \(Use these marshalers when the subtypes of the container require a non\-default marshaler\) | 
 
-### Utility Types<a name="network-marshalling-predefined-marshalers-utility"></a>
+### Utility Types {#network-marshalling-predefined-marshalers-utility}
 
 
 ****  
@@ -134,7 +134,7 @@ GridMate includes the following predefined marshalers:
 | AZStd::chrono::duration | A time duration in 32 bit milliseconds\. | 
 | GridMate::UnionDataSet | A type safe tagged union designed for network transmission\. | 
 
-### Compression Types<a name="network-marshalling-predefined-marshalers-compression"></a>
+### Compression Types {#network-marshalling-predefined-marshalers-compression}
 
 
 ****  
@@ -145,11 +145,11 @@ GridMate includes the following predefined marshalers:
 | HalfMarshaler | Compresses a float to half precision\. | 
 | IntegerQuantizationMarshaler<Min, Max, Bytes> | Quantizes an integer in the range \[Min, Max\] to the number of bytes specified in Bytes\. | 
 
-## Custom Marshalers<a name="network-marshalling-custom-marshalers"></a>
+## Custom Marshalers {#network-marshalling-custom-marshalers}
 
 Creating a custom data marshaler is as simple as specializing the `GridMate::Marshaler` type, and implementing the expected `Marshal` and `Unmarshal` methods\. If the data written is constant size, adding the member `MarshalSize` allows you to use the marshaler in scenarios where fixed sizes are required \(such as markers\)\.
 
-### Fixed Size Custom Marshaler<a name="network-marshalling-custom-marshalers-fixed-size"></a>
+### Fixed Size Custom Marshaler {#network-marshalling-custom-marshalers-fixed-size}
 
 The following is an example of a fixed size custom marshaler\.
 

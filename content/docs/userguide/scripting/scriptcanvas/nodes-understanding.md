@@ -3,7 +3,7 @@ description: ' Learn about the nodes in &script-canvas;, &ALYlong;''s visual scr
   system. '
 title: Understanding &script-canvas; Nodes
 ---
-# Understanding Script Canvas Nodes<a name="script-canvas-nodes-understanding"></a>
+# Understanding Script Canvas Nodes {#script-canvas-nodes-understanding}
 
 A node in Script Canvas consists of a title bar, inputs, and outputs\.
 
@@ -15,7 +15,7 @@ A node in Script Canvas consists of a title bar, inputs, and outputs\.
 
 **Outputs** – Located on the right side of the node\. Outputs are also either execution or data related\.
 
-## Inputs, Outputs, and Connection Types<a name="script-canvas-pins-and-connections"></a>
+## Inputs, Outputs, and Connection Types {#script-canvas-pins-and-connections}
 
 Lumberyard has two main pin and connection types\. Some inputs and outputs determine the flow of logic and order of execution\. Other inputs and outputs pass data from one node to the next\.
 
@@ -27,7 +27,7 @@ An incoming logic pin with multiple connections runs each time that the logic fl
 **Data inputs, outputs, and connections**  
 Data connections enable scripts to read and write data between nodes\. Data is read from the right side of one node and then set on the left side of another node\.
 
-## Making Connections<a name="script-canvas-making-connections"></a>
+## Making Connections {#script-canvas-making-connections}
 
 Connections can be made only between pins of the same type\. For example, logic connections can be made only between logic pins, and data connections can be made only between data pins of the same type\. You can't create connections between incompatible pins, such as logic and data\.
 
@@ -39,7 +39,7 @@ Connections can be made only between pins of the same type\. For example, logic 
 
    To delete a connection, right\-click and choose **Delete**\. You can also press and hold **Alt**, and click the connection to delete it\.
 
-## Variable Nodes<a name="script-canvas-nodes-understanding-variable-nodes"></a>
+## Variable Nodes {#script-canvas-nodes-understanding-variable-nodes}
 
 Variable nodes enable Script Canvas to read from or write to specific variables\.
 
@@ -53,11 +53,11 @@ For more information about using variables in Script Canvas, see [Managing Scrip
 
 For more information about creating variable references, see [Adding Variable References in Script Canvas Nodes](/docs/userguide/scripting/scriptcanvas/adding-variable-references.md)\.
 
-## Event Nodes<a name="script-canvas-nodes-understanding-event-nodes"></a>
+## Event Nodes {#script-canvas-nodes-understanding-event-nodes}
 
 In Lumberyard's [Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes\.
 
-### Sender Nodes<a name="script-canvas-nodes-understanding-sender-nodes"></a>
+### Sender Nodes {#script-canvas-nodes-understanding-sender-nodes}
 
 Event senders send events directly to a specific entity or broadcast events to all entities that are listening for and interested in handling the event\. Most events are addressable, which means they can be sent to a specific entity\. Because events are usually sent to entities, the most common address type is `Entity Id`, although other address types can be used\.
 
@@ -78,7 +78,7 @@ The following example uses Light events to create a sender node\.
 
    The **State** pin is a Boolean value that controls the state of the light\.
 
-### Receiver Nodes<a name="script-canvas-nodes-understanding-receiver-nodes"></a>
+### Receiver Nodes {#script-canvas-nodes-understanding-receiver-nodes}
 
 An event receiver implements a particular behavior when it receives a particular event\.
 
@@ -110,7 +110,7 @@ The following example creates a receiver node for a Light event\.
 
 1. Click **Add/Remove Events** again, and clear the **Turned Off** check box\. The **Turned Off** event is removed from the receiver node\.
 
-#### Displaying and Using Connection Controls<a name="script-canvas-nodes-understanding-connection-controls"></a>
+#### Displaying and Using Connection Controls {#script-canvas-nodes-understanding-connection-controls}
 
 All receiver nodes have connection\-related pins, or controls, that are hidden by default\. You can use these controls to manage when an event is connected or disconnected \(connected means that the event is ready to receive events, and disconnected means that the event is not receiving events\)\. The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error\.
 

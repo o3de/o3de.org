@@ -2,11 +2,11 @@
 description: ' Learn how to add and connect &script-canvas; nodes in &ALYlong;. '
 title: Adding and Connecting Nodes
 ---
-# Adding and Connecting Nodes<a name="script-canvas-working-with-nodes-adding-and-connecting"></a>
+# Adding and Connecting Nodes {#script-canvas-working-with-nodes-adding-and-connecting}
 
 You can add nodes to a canvas by dragging and dropping them from the **Node Palette** onto the canvas\. You can also quickly add and connect nodes without using the **Node Palette**, as described in the following sections\.
 
-## Creating a Chain of Linked Nodes<a name="script-canvas-working-with-nodes-creating-a-chain-of-linked-nodes"></a>
+## Creating a Chain of Linked Nodes {#script-canvas-working-with-nodes-creating-a-chain-of-linked-nodes}
 
 You can add nodes quickly in succession to a graph by using the daisy chaining feature\. Script Canvas automatically links the pins on each new node to the previous node for you\.
 
@@ -27,7 +27,7 @@ If you start by adding nodes on the left side of the graph, the nodes that you c
 
 1. To exit the daisy\-chaining mode, press **ESC**\.
 
-## Creating a Node From the Output Pin of an Existing Node<a name="script-canvas-working-with-nodes-creating-a-node-from-the-output-pin-of-an-existing-node"></a>
+## Creating a Node From the Output Pin of an Existing Node {#script-canvas-working-with-nodes-creating-a-node-from-the-output-pin-of-an-existing-node}
 
 **To create a connected node from an output pin of an existing node**
 
@@ -40,7 +40,7 @@ If you start by adding nodes on the left side of the graph, the nodes that you c
 
 1. To create a chain of linked nodes from the output pin of an existing node, press **Shift** and drag a line from the output pin onto the canvas\.
 
-## Inserting a Node Between Two Connected Nodes<a name="script-canvas-working-with-nodes-inserting-a-node-between-two-connected-nodes"></a>
+## Inserting a Node Between Two Connected Nodes {#script-canvas-working-with-nodes-inserting-a-node-between-two-connected-nodes}
 
 To insert a node between two connected nodes and connect the new node automatically, you can use the following methods:
 + Insert an existing node between the nodes\.
@@ -67,7 +67,7 @@ To insert a node between two connected nodes and connect the new node automatica
    The pins on the new node connect automatically to the nodes on the left and the right\.  
 ![\[Creating a node between two nodes and connecting it automatically in the Script Canvas editor.\]](/images/userguide/scripting/script-canvas/script-canvas-working-with-nodes-5.gif)
 
-## Connecting Two Existing Nodes Automatically<a name="script-canvas-working-with-nodes-connecting-two-existing-nodes-automatically"></a>
+## Connecting Two Existing Nodes Automatically {#script-canvas-working-with-nodes-connecting-two-existing-nodes-automatically}
 
 You can connect two nodes by dragging one node onto another node\. Script Canvas connects the corresponding pins for you\.
 

@@ -3,7 +3,7 @@ description: ' Learn how to program cloud gems by using the Cloud Gem Framework 
   API. '
 title: Cloud Gem Framework Service API
 ---
-# Cloud Gem Framework Service API<a name="cloud-canvas-cgf-service-api"></a>
+# Cloud Gem Framework Service API {#cloud-canvas-cgf-service-api}
 
 
 ****  
@@ -30,7 +30,7 @@ The following diagram shows how the Cloud Gem Framework service API interacts wi
 
 ![\[Service API interactions\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-1.png)
 
-## Cloud Gem Swagger API Descriptions<a name="cloud-canvas-cgf-service-api-swagger-descriptions"></a>
+## Cloud Gem Swagger API Descriptions {#cloud-canvas-cgf-service-api-swagger-descriptions}
 
 The Lumberyard game engine and tools use API operations to communicate with your cloud gem service\. These APIs are described in the cloud gem's `/dev/Gems/<gem-name>/AWS/swagger.json` file\. This file describes the input and output data for each of the operations that can be performed by the service\. The `swagger.json` file uses the [swagger API definition format](http://swagger.io/), which is an open source framework for RESTful API operations\.
 

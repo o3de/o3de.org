@@ -3,7 +3,7 @@ description: ' Use FBX Settings to customize how static meshes, actors, PhysX co
   and motions stored in .fbx files are exported for &ALYlong;. '
 title: Customize FBX asset export with FBX Settings
 ---
-# Customize FBX asset export with FBX Settings<a name="fbx-intro"></a>
+# Customize FBX asset export with FBX Settings {#fbx-intro}
 
 
 ****  
@@ -24,7 +24,7 @@ Meshes, actors, PhysX colliders, and motions created in third\-party content cre
 + [Multiple UV sets for meshes and actors](/docs/userguide/fbx/multiple-uv-sets.md)
 + [FBX soft naming conventions](/docs/userguide/fbx/settings-soft-naming.md)
 
-## FBX Settings introduction<a name="fbx-settings-intro"></a>
+## FBX Settings introduction {#fbx-settings-intro}
 
  When you place `.fbx` files in an asset directory in your project, **Asset Processor** detects the new or modified files, determines the contents of the files, and then exports the data using basic settings\. However, `.fbx` files can be complex and might contain data that is necessary for an artist, animator, or designer, but not necessary for a runtime asset\. Data in the `.fbx` file might require special handling such as higher precision vertex data or a coordinate space change\. With **FBX Settings**, you can specify what data in the `.fbx` file to export, and how the data should be processed by **Asset Processor**\. 
 

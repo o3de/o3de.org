@@ -3,7 +3,7 @@ description: ' Use the NVIDIA Cloth component to add cloth simulation to Mesh co
   in &ALYlong;. '
 title: Cloth for Mesh components
 ---
-# Cloth for Mesh components<a name="nvidia-cloth-meshes"></a>
+# Cloth for Mesh components {#nvidia-cloth-meshes}
 
 
 ****  
@@ -24,7 +24,7 @@ Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem d
 
 For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/userguide/fbx/mesh-export.md)
 
-## Add Cloth to Mesh components<a name="cloth-mesh-setup"></a>
+## Add Cloth to Mesh components {#cloth-mesh-setup}
 
 Create cloth by adding the **Cloth** component to an entity that has a **Mesh** component, and then setting the properties of the **Cloth** component\. 
 
@@ -61,7 +61,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 
    1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/userguide/components/cloth.md)\. 
 
-## View the Cloth Simulation<a name="view-cloth-simulation"></a>
+## View the Cloth Simulation {#view-cloth-simulation}
 
 In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\. 
 

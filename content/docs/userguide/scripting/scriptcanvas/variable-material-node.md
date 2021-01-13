@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; &script-canvas; editor to create a material var
   node. '
 title: Material Variables
 ---
-# Material Variables<a name="script-canvas-variable-material-node"></a>
+# Material Variables {#script-canvas-variable-material-node}
 
 When you use a node such as **[Find by Name](/docs/userguide/materials/find-by-name-node.md)**, **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**, or **[Clone](/docs/userguide/materials/clone-node.md)**, the script can only use the material for that one frame\. After the frame, the material is then invalid\. If you want to reuse the material in your script, you can store the material in a **Variable Material** node\. You can also use this node when you want to find or load a material only once when the game starts\.
 
@@ -21,11 +21,11 @@ To use a material variable node, you must assign the variable to a valid materia
   + [Outputs](#script-canvas-variable-set-material-node-output)
 + [Material Variable Node Example](#script-canvas-variable-material-example)
 
-## Get Material Variable Node<a name="get-material-variable-node"></a>
+## Get Material Variable Node {#get-material-variable-node}
 
 ![\[getmaterialvariablenode, variablematerial, materialvariable\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-material-variable-node.png)
 
-### Inputs<a name="script-canvas-variable-get-material-node-input"></a>
+### Inputs {#script-canvas-variable-get-material-node-input}
 
 
 ****  
@@ -34,7 +34,7 @@ To use a material variable node, you must assign the variable to a valid materia
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-### Outputs<a name="script-canvas-variable-get-material-node-output"></a>
+### Outputs {#script-canvas-variable-get-material-node-output}
 
 
 ****  
@@ -44,11 +44,11 @@ To use a material variable node, you must assign the variable to a valid materia
 | Out | Event |  Sends when the node is finished\.  | 
 | Material |  Material  |  Sends the variable's current material\.  | 
 
-## Set Material Variable Node<a name="set-material-variable-node"></a>
+## Set Material Variable Node {#set-material-variable-node}
 
 ![\[setmaterialvariablenode, variablematerial, materialvariable\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-material-variable-node.png)
 
-### Inputs<a name="script-canvas-variable-set-material-node-input"></a>
+### Inputs {#script-canvas-variable-set-material-node-input}
 
 
 ****  
@@ -58,7 +58,7 @@ To use a material variable node, you must assign the variable to a valid materia
 | In | Event | Triggers the node\. | 
 | Material | Material | Sets the variable's current material\. | 
 
-### Outputs<a name="script-canvas-variable-set-material-node-output"></a>
+### Outputs {#script-canvas-variable-set-material-node-output}
 
 
 ****  
@@ -67,7 +67,7 @@ To use a material variable node, you must assign the variable to a valid materia
 | --- | --- | --- | 
 | Out | Event |  Sends when the node is finished\.  | 
 
-## Material Variable Node Example<a name="script-canvas-variable-material-example"></a>
+## Material Variable Node Example {#script-canvas-variable-material-example}
 
 The following example uses a material variable node to make a material flash red\.
 

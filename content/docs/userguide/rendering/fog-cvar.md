@@ -3,7 +3,7 @@ description: ' Use console variables to specify the fog settings for your &ALYlo
   game project. '
 title: Console Variables for Fog
 ---
-# Console Variables for Fog<a name="rendering-graphics-fog-cvar"></a>
+# Console Variables for Fog {#rendering-graphics-fog-cvar}
 
 The following console variables can be used to control fog\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 

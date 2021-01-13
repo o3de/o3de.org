@@ -2,15 +2,15 @@
 description: ' Use the virtual file system (VFS) to serve &ALYlong; files to iOS devices. '
 title: Using Virtual File System with iOS
 ---
-# Using Virtual File System with iOS<a name="ios-virtual-file-system"></a>
+# Using Virtual File System with iOS {#ios-virtual-file-system}
 
 If you frequently change assets, you can configure Asset Processor on your macOS computer to use the virtual file system \(VFS\) to serve asset files to your iOS app\. When you modify an asset, it is automatically reloaded without restarting the app\. This method may result in slower load times because assets are sourced directly from your computer instead of the mobile device\.
 
-## Prerequisites<a name="ios-virtual-file-system-prerequisites"></a>
+## Prerequisites {#ios-virtual-file-system-prerequisites}
 
 Before you can use the VFS with iOS, you must [download the usbmuxconnect package](https://sourceforge.net/projects/appletools/) and save to a location on your macOS computer\.
 
-## Setting up VFS<a name="ios-virtual-file-system-setting-up"></a>
+## Setting up VFS {#ios-virtual-file-system-setting-up}
 
 On your macOS computer, set up VFS to enable asset processing for iOS\.
 
@@ -77,7 +77,7 @@ Be sure to update the existing entries\. Do not duplicate the entries\.
 **Note**  
 If you receive a bind error message, please restart your macOS computer and try again\.
 
-## Running the VFS Build<a name="ios-virtual-file-system-running-vfs-build"></a>
+## Running the VFS Build {#ios-virtual-file-system-running-vfs-build}
 
 Run the VFS build on your macOS computer\.
 

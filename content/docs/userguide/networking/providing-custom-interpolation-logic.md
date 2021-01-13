@@ -3,7 +3,7 @@ description: ' Provide your own interpolation logic for the Transform component 
   &ALYlong;. '
 title: Providing Your Own Interpolation Logic for the Transform Component
 ---
-# Providing Your Own Interpolation Logic for the Transform Component<a name="network-providing-custom-interpolation-logic"></a>
+# Providing Your Own Interpolation Logic for the Transform Component {#network-providing-custom-interpolation-logic}
 
 You can add your own interpolation logic for the Transform component by using a common framework available in C\+\+\. This topic shows you how to use C\+\+, serialization, and the Lumberyard Editor UI to write your own interpolation mode\.
 
@@ -12,7 +12,7 @@ You can add your own interpolation logic for the Transform component by using a 
 + [Implementing Interpolation Logic in C\+\+](#network-providing-custom-interpolation-logic-implementing-in-c)
 + [Rotation Interpolation](#network-providing-custom-interpolation-logic-rotation)
 
-## Adding Your Interpolation Mode to the Lumberyard Editor UI<a name="network-providing-custom-interpolation-logic-lumberyard-editor-ui"></a>
+## Adding Your Interpolation Mode to the Lumberyard Editor UI {#network-providing-custom-interpolation-logic-lumberyard-editor-ui}
 
 You can start from the user interface in the editor for the Transform component — specifically, with the interpolation options\. The following image shows the Transform component's **None** or **Linear** interpolation options in the Entity Inspector\.
 
@@ -123,7 +123,7 @@ Next, update `AzToolsFramework:: TransformComponent ::Reflect` as in the followi
     }
 ```
 
-## Implementing Interpolation Logic in C\+\+<a name="network-providing-custom-interpolation-logic-implementing-in-c"></a>
+## Implementing Interpolation Logic in C\+\+ {#network-providing-custom-interpolation-logic-implementing-in-c}
 
 Now that Lumberyard Editor has your new option, you can implement it in your code\.
 
@@ -328,7 +328,7 @@ void AzFramework::TransformComponent::CreateTranslationSample()
 
 That's it\! Now you can select your new option in the Entity Inspector, and your custom interpolation logic does the work\.
 
-## Rotation Interpolation<a name="network-providing-custom-interpolation-logic-rotation"></a>
+## Rotation Interpolation {#network-providing-custom-interpolation-logic-rotation}
 
 The preceding example shows how to provide your own position interpolation\. Rotation interpolation is similar, but with the following minor differences:
 + You have to provide template implementation of `MyInterpolationSample<Quaternion>`\.

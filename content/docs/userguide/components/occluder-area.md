@@ -3,7 +3,7 @@ description: ' Use the OccluderArea component to create a custom shaped occlusio
   plane with four vertices in &ALYlong;. '
 title: OccluderArea
 ---
-# OccluderArea<a name="component-occluder-area"></a>
+# OccluderArea {#component-occluder-area}
 
 
 ****  
@@ -21,7 +21,7 @@ You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](/d
 + [OccluderArea Component Properties](#component-occluder-area-properties)
 + [Occluder Area Component Example](#component-occluder-area-example)
 
-## OccluderArea Component Properties<a name="component-occluder-area-properties"></a>
+## OccluderArea Component Properties {#component-occluder-area-properties}
 
 ![\[The Occluder Area component properties in Lumberyard Editor.\]](/images/userguide/component/occluder-area-component-properties.png)
 
@@ -39,7 +39,7 @@ The **OccluderArea** component has the following properties\.
 | Vertices |  The vertices that define the shape of the occluder area\. Occluder areas always have four vertices\.  | 
 |  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. | 
 
-## Occluder Area Component Example<a name="component-occluder-area-example"></a>
+## Occluder Area Component Example {#component-occluder-area-example}
 
 The following example shows two boxes\. One box is hidden behind the occluder area, but you can see its shadow\. The other box is outside the occluder area and appears normally on screen\.
 

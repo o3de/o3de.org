@@ -3,7 +3,7 @@ description: ' Use the Graphics Scripting gem to enable the &ALYlong; graphics f
   with scripting systems such as &script-canvas; and Lua. '
 title: Graphics Scripting
 ---
-# Graphics Scripting<a name="gems-system-gem-graphics-scripting"></a>
+# Graphics Scripting {#gems-system-gem-graphics-scripting}
 
 The Graphics Scripting gem enables graphics features in your scripts\. With the gem enabled, you can use Script Canvas or Lua to write scripts to control features such as full screen effects, color correction, environment settings, shadow calculations, and more\.
 

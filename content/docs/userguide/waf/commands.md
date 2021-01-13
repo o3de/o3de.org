@@ -3,7 +3,7 @@ description: ' Use the configure command to process configuration settings befor
   you build a &ALYlong; project with &waf;. '
 title: '&waf; Commands and Options'
 ---
-# Waf Commands and Options<a name="waf-commands"></a>
+# Waf Commands and Options {#waf-commands}
 
 **Contents**
 + [Waf Configuration](#waf-configuration)
@@ -15,7 +15,7 @@ Before building a project using Waf, you must run configure from the command lin
 **Note**  
 The Waf script automatically runs Lumberyard Setup Assistant to ensure the correct third\-party libraries are available and the proper links are created to compile the game code, engine and asset pipeline, and editor and tools\.
 
-## Waf Configuration<a name="waf-configuration"></a>
+## Waf Configuration {#waf-configuration}
 
 To run the Waf executable, run the following command at the `lumberyard_version\dev\` directory of your project:
 
@@ -60,7 +60,7 @@ By default, whenever the configure command is run, Visual Studio solution and pr
 
 You can also generate the solution files manually by running the command lmbr\_waf msvs, or the version\-specific lmbr\_waf msvs\_*2017*\.
 
-## Build Configuration<a name="build-configuration"></a>
+## Build Configuration {#build-configuration}
 
 After configuring Waf, you can run the build command\.
 
@@ -92,9 +92,9 @@ Combining the clean\_\* and build\_\* commands is the equivalent of performing a
 **Configure command options**  
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/waf-commands.html)
 
-You can set the command options at build time\. These options override the values set in the `user_settings.options` file\. For more information, see [Project Configurator](/docs/userguide/waf/user-options-and-settings.md#waf-files-user-settings)\.
+You can set the command options at build time\. These options override the values set in the `user_settings.options` file\. For more information, see [Project Configurator](/docs/userguide/waf/user-options-and-settings#waf-files-user-settings)\.
 
-Only modules that support each project configuration are built from the project spec\. If a module is defined in the spec that only can be built in debug or profile, building in performance mode excludes that project from compilation\.<a name="build-parameters"></a>
+Only modules that support each project configuration are built from the project spec\. If a module is defined in the spec that only can be built in debug or profile, building in performance mode excludes that project from compilation\. {#build-parameters}
 
 
 **Project configurations parameters**  
@@ -134,7 +134,7 @@ Only modules that support each project configuration are built from the project 
 | build\_\* | ‑‑package‑projects‑automatically=\(True\|False\) |  Automatically runs the package command after each successful build command, where available\. The default is `True`\. Supported platforms include Android, iOS, and macOS\. The following example runs only the build command: lmbr\_waf \-p all build\_android\_armv8\_clang\_profile \-\-package\-projects\-automatically=True  | 
 |  build\_\* package\_\*  | \-\-deploy\-platform\_root=\(True\|False\) | Automatically sends a deploy command to remove devices after each successful package generated, where available\. Can be combined with \-\-package\-projects\-automatically=True in a build command to chain all three commands\. The default is `True`\.Supported platforms include Android\.*platform\_root* example:android\_armv8\_clang => android \(\-\-deploy\-android\)The following example runs only the package command: lmbr\_waf package\_android\_armv8\_clang\_profile \-\-deploy\-android=False The following command ensures that all three commands \(build, package, and deploy\) run:lmbr\_waf \-p all build\_android\_armv8\_clang\_profile \-\-package\-projects\-automatically=True \-\-deploy\-android=True | 
 
-## Multiplayer Configuration<a name="waf-multiplayer-configuration"></a>
+## Multiplayer Configuration {#waf-multiplayer-configuration}
 
 Before you can build multiplayer information, you must build the dedicated server\. This creates a directory called `Bin64.Dedicated` that includes the binaries directory and configuration files for the dedicated server\.
 

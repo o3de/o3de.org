@@ -2,7 +2,7 @@
 description: ' Programming notes for PhysX worlds in &ALYlong;. '
 title: PhysX World Programming Notes
 ---
-# PhysX World Programming Notes<a name="physx-configuration-physx-world-programming-notes"></a>
+# PhysX World Programming Notes {#physx-configuration-physx-world-programming-notes}
 
 For physics objects to be simulated, they must exist inside a world\. Multiple worlds can have uses like the following: 
 + To simulate the result of an action in the first world\. For example, the second world might show what a tower of blocks might look like five seconds from now if it were knocked over in the first world\.
@@ -11,7 +11,7 @@ For physics objects to be simulated, they must exist inside a world\. Multiple w
 
 The PhysX gem automatically creates a world inside `ActionGame` with the default ID of `AZPhysicalWorld`\. By default, all objects are added to this world and simulated each frame\. You can find the source code in the following directory: `lumberyard_version\dev\Gems\CryLegacy\Code\Source\CryAction\ActionGame.*`\) 
 
-## World ID<a name="physx-configuration-physx-world-world-id"></a>
+## World ID {#physx-configuration-physx-world-world-id}
 
 Every world created in the PhysX gem is addressable by an ID of type `AZ::Crc32`\. Use this ID to address the `WorldRequestBus`\.
 
@@ -34,6 +34,6 @@ WorldRequestBus::EventResult(choose, AZ_CRC("AZPhysicalWorld"), &WorldRequests::
 **Note**  
 If your game creates multiple worlds, it must manage the objects that are added into those worlds\.
 
-## Step Constants<a name="physx-configuring-step-constants"></a>
+## Step Constants {#physx-configuring-step-constants}
 
-You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\.
+You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world)\.

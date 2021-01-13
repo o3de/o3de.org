@@ -3,11 +3,11 @@ description: ' You can debug decal mapping issues with the console variable or t
   &material-editor; . '
 title: Debugging Decal Mapping Issues
 ---
-# Debugging Decal Mapping Issues<a name="material-maps-decal-debug"></a>
+# Debugging Decal Mapping Issues {#material-maps-decal-debug}
 
 See the following ways you can debug decals\.
 
-## Debugging Deferred Decals<a name="material-maps-decal-debug-deferred"></a>
+## Debugging Deferred Decals {#material-maps-decal-debug-deferred}
 
 The cost of a deferred decal depends on how many objects the decal projects, how expensive the geometry is, and how many overdraws the decal creates\.
 
@@ -20,9 +20,9 @@ Deferred decals in the Lumberyard Editor viewport render in red, green and blue\
 
 We recommend that you place deferred decals so that they display mostly in blue\.
 
-## Debugging Decal Flicker<a name="material-maps-decal-debug-flicker"></a>
+## Debugging Decal Flicker {#material-maps-decal-debug-flicker}
 
 If a placed decal is flickering, follow these guidelines to ensure that the decal is correctly set up\.
 + In the **Material Editor**, for the **Shader Generation Params** pane, verify that the **Decal** parameter is selected for all submaterials\.
-+ Check for overlapping layers that have the **Decal** parameter selected\. Use the **Sort Priority** parameter to specify which decal appears on top of the other\. Decals with higher **Sort Priority** values sort on top of decals with lower values\. For more information, see the [Decal Component Properties](/docs/userguide/components/decal.md#component-decal-properties)\.
++ Check for overlapping layers that have the **Decal** parameter selected\. Use the **Sort Priority** parameter to specify which decal appears on top of the other\. Decals with higher **Sort Priority** values sort on top of decals with lower values\. For more information, see the [Decal Component Properties](/docs/userguide/components/decal#component-decal-properties)\.
 + Other than for decals, the mesh shouldn't have overlapping triangles\. Do not offset along the surface normal; this can still break in some situations and introduce floating parallax effects\.

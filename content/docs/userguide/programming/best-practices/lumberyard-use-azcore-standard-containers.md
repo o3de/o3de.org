@@ -2,7 +2,7 @@
 description: ' Learn best practices for containers in &ALYlong;. '
 title: Use AzCore Standard Containers
 ---
-# Use AzCore Standard Containers<a name="cpp-best-practices-lumberyard-use-azcore-standard-containers"></a>
+# Use AzCore Standard Containers {#cpp-best-practices-lumberyard-use-azcore-standard-containers}
 
 **Recommended**: Instead of writing your own containers, use the full range of AzCore standard containers in Lumberyard\. Because these containers provide AZ memory allocators by default, they work with AZ memory manager out of the box\. These containers include the following:
 

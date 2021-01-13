@@ -2,7 +2,7 @@
 description: ' Specify targets where your lightning will arc in your &ALY; level. '
 title: Placing Lightning Arc
 ---
-# Placing Lightning Arc<a name="gems-system-gem-lightning-arc-placing"></a>
+# Placing Lightning Arc {#gems-system-gem-lightning-arc-placing}
 
 
 ****  

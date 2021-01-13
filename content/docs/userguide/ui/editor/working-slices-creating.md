@@ -2,7 +2,7 @@
 description: null
 title: Creating a UI Slice
 ---
-# Creating a UI Slice<a name="ui-editor-working-slices-creating"></a>
+# Creating a UI Slice {#ui-editor-working-slices-creating}
 
 A slice can contain any number of UI elements\. However, all UI elements in a slice must be contained within one parent element\.
 

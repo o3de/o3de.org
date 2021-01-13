@@ -3,7 +3,7 @@ description: ' Use event buses to dispatch messages safely and efficiently in yo
   gaming application for &ALYlong;. '
 title: Working with the Event Bus (EBus) system
 ---
-# Working with the Event Bus \(EBus\) system<a name="ebus-intro"></a>
+# Working with the Event Bus \(EBus\) system {#ebus-intro}
 
 Event buses \(EBuses\) are a general\-purpose communication system that Lumberyard uses to dispatch notifications and receive requests\. EBuses are configurable and support many different use cases\. 
 
@@ -15,15 +15,15 @@ For in\-depth information about EBuses, including conceptual diagrams, see [Even
 
 For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
-## How Components Use EBuses<a name="event-bus-intro-how-components-use-ebuses"></a>
+## How Components Use EBuses {#event-bus-intro-how-components-use-ebuses}
 
 Components commonly use EBuses in two ways: to dispatch events or to handle requests\. A bus that dispatches events is a `notification` bus\. A bus that receives requests is a `request` bus\. Some components provide one type of bus, and some components provide both types\. Some components do not provide an EBus at all\. You use the EBus class for both EBus types, but you configure the EBuses differently\. The following sections show how to set up and configure notification buses, event handlers, and request buses\.
 
-## **Notification Buses**<a name="event-bus-intro-notification-buses"></a>
+## **Notification Buses** {#event-bus-intro-notification-buses}
 
 Notification buses dispatch events\. The events are received by handlers, which implement a function to handle the event\. Handlers first connect to the bus\. When the bus dispatches an event, the handler's function executes\. This section shows how to set up a notification bus to dispatch an event and a handler to receive the event\.
 
-### Setting up a Notification Bus<a name="event-bus-intro-setting-up-a-notification-bus"></a>
+### Setting up a Notification Bus {#event-bus-intro-setting-up-a-notification-bus}
 
 **To set up a bus to dispatch events**
 
@@ -41,7 +41,7 @@ Notification buses dispatch events\. The events are received by handlers, which 
    + If you want handlers to receive the events in reverse order, use [https://docs.aws.amazon.com/lumberyard/latest/apireference/struct_a_z_1_1_bus_internal_1_1_e_bus_broadcaster.html#ad0588a3dab7547dccdc516377e90c4a4](https://docs.aws.amazon.com/lumberyard/latest/apireference/struct_a_z_1_1_bus_internal_1_1_e_bus_broadcaster.html#ad0588a3dab7547dccdc516377e90c4a4) or [https://docs.aws.amazon.com/lumberyard/latest/apireference/struct_a_z_1_1_bus_internal_1_1_e_bus_eventer.html#a930172ceeea2692b0eb5c6b85d83d53d](https://docs.aws.amazon.com/lumberyard/latest/apireference/struct_a_z_1_1_bus_internal_1_1_e_bus_eventer.html#a930172ceeea2692b0eb5c6b85d83d53d)\.
    + To send events asynchronously, queue the event\. Queued events are not executed until the queue is flushed\. To support queuing, set the [https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_e_bus.html#a95b9e7e9c5b00de0356853b8be5c3649](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_e_bus.html#a95b9e7e9c5b00de0356853b8be5c3649) trait\. To queue events, use `QueueBroadcast()` or `QueueEvent()`\. To flush the event queue, use `ExecuteQueuedEvents()`\.
 
-### Setting up a Handler<a name="event-bus-intro-setting-up-a-handler"></a>
+### Setting up a Handler {#event-bus-intro-setting-up-a-handler}
 
 **To enable a handler class to handle the events dispatched by a notification bus**
 
@@ -51,11 +51,11 @@ Notification buses dispatch events\. The events are received by handlers, which 
 
 1. Connect and disconnect from the bus at the appropriate places within your handler class's code\. Use `<BusName>:Handler::BusConnect()` to connect to the bus and `<BusName>:Handler::BusDisconnect()` to disconnect from the bus\. If the handler class is a component, connect to the bus in `Activate()` and disconnect from the bus in `Deactivate()`\. Non\-components typically connect in the constructor and disconnect in the destructor\.
 
-## **Request Buses**<a name="event-bus-intro-request-buses"></a>
+## **Request Buses** {#event-bus-intro-request-buses}
 
 A request bus receives and handles requests\. Typically, only one class handles requests for a request bus\.
 
-### Setting up a Request Bus<a name="event-bus-intro-setting-up-a-request-bus"></a>
+### Setting up a Request Bus {#event-bus-intro-setting-up-a-request-bus}
 
 The first several steps for setting up a request bus are similar to setting up a notification bus\. After that you also need to implement the handlers for handling the requests\.
 

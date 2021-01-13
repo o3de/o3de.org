@@ -3,11 +3,11 @@ description: ' Use the Lens Flare component in &ALYlong; to place a lens flare o
   an entity. '
 title: Lens Flare
 ---
-# Lens Flare<a name="component-lens-flare"></a>
+# Lens Flare {#component-lens-flare}
 
 The **Lens Flare** component allows the placement of a lens flare on an entity\.
 
-## Lens Flare Component Properties<a name="component-lensflare-properties"></a>
+## Lens Flare Component Properties {#component-lensflare-properties}
 
 The **Lens Flare** component has the following properties:
 
@@ -70,7 +70,7 @@ Multiple of the base animation rate\.
  **Phase**   
 Animation start offset from **0** to **1**\. **0\.1** would be 10% into the animation\.
 
-## EBus Request Bus Interface<a name="component-lensflare-ebusrequest"></a>
+## EBus Request Bus Interface {#component-lensflare-ebusrequest}
 
 Use the following request function with the EBus interface to communicate with other components of your game\.
 
@@ -80,7 +80,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 + **TurnOffLensFlare** – Turns the lens flare off\.
 + **ToggleLensFlare** – Toggles the lens flare state \(`on` to `off`, or `off` to `on`\)\.
 
-## EBus Notification Bus Interface<a name="component-lensflare-ebusnotification"></a>
+## EBus Notification Bus Interface {#component-lensflare-ebusnotification}
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 

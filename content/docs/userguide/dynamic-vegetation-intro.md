@@ -3,7 +3,7 @@ description: ' Use Dynamic Vegetation to place natural-looking vegetation and cu
   where and how it grows in &ALYlong;. '
 title: Dynamic vegetation
 ---
-# Dynamic vegetation<a name="dynamic-vegetation-intro"></a>
+# Dynamic vegetation {#dynamic-vegetation-intro}
 
  The dynamic vegetation system uses vegetation components to customize vegetation coverage for worlds of any size\. To use the dynamic vegetation system, you must enable the **Vegetation** gem for your game project\. 
 

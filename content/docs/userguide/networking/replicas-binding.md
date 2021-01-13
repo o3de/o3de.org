@@ -2,7 +2,7 @@
 description: ' Bind &ALYlong; components to the network by adding the NetBindingComponent. '
 title: Creating a NetBindable Component
 ---
-# Creating a NetBindable Component<a name="network-replicas-binding"></a>
+# Creating a NetBindable Component {#network-replicas-binding}
 
 For a Lumberyard component to share data on the network, it must include the `NetBindingComponent`\. The `NetBindingComponent` creates a [replica](/docs/userguide/networking/replicas-replica.md) for the component and can bind any [replica chunk](/docs/userguide/networking/replicas-chunks.md) that a component creates to the replica\.
 
@@ -51,23 +51,23 @@ For a Lumberyard component to share data on the network, it must include the `N
 + If the `SerializeContext` definition is missing, the primary replica still functions correctly\. However, the proxy cannot match the IDs because it is not serialized as an `AzFramework::NetBindable` interface\.
 + Changes to these definitions require a re\-export of levels for the static IDs to match correctly\.
 
-## Network Binding Function Details<a name="network-replicas-binding-details"></a>
+## Network Binding Function Details {#network-replicas-binding-details}
 
 The following functions are available for working with component entities on the network\.
 
-### GetNetworkBinding<a name="network-replicas-binding-details-get"></a>
+### GetNetworkBinding {#network-replicas-binding-details-get}
 
 The component uses this function to create its `ReplicaChunk` and initialize any state it wants to synchronize across the session\. This function is called only on the primary `ComponentEntity`\. The `ReplicaChunk` that is returned is automatically attached to the appropriate `Replica`\.
 
-### SetNetworkBinding<a name="network-replicas-binding-details-set"></a>
+### SetNetworkBinding {#network-replicas-binding-details-set}
 
 This function passes a `ReplicaChunk` to the component and initializes the internal data of the component to match that of the `ReplicaChunk`\. This function is called only on the proxy `ComponentEntity` instances that are already bound to an appropriate `Replica`\.
 
-### UnbindFromNetwork<a name="network-replicas-binding-details-unbind"></a>
+### UnbindFromNetwork {#network-replicas-binding-details-unbind}
 
 The `UnbindFromNetwork` function is called to stop the component from reacting to data updates from the network\. This can happen, for example, when the primary no longer exists, has been deactivated, or has relinquished control to the local source\. 
 
-## Creating a Chunk<a name="network-replicas-binding-creating-a-chunk"></a>
+## Creating a Chunk {#network-replicas-binding-creating-a-chunk}
 
 After you have enabled the `NetBindable` interface on the *component*, you must create a `ReplicaChunk` object that will store any state that the component wants to share\. 
 
@@ -115,11 +115,11 @@ In order for the component to react to a change in the `DataSet` object, one of 
 + The replica chunk must signal to the component when the change occurs \(in the example, this is done using the `BindInterface` extension to `DataSet`\)\.
 + The component must poll the replica chunk and check the `DataSet` object for changes\.
 
-## Example: Filling Out the AzFramework::NetBindable Interface<a name="network-replicas-binding-netbindable-interface"></a>
+## Example: Filling Out the AzFramework::NetBindable Interface {#network-replicas-binding-netbindable-interface}
 
 The examples below illustrate the use of `GetNetworkBinding`, `SetNetworkBinding` and `UnbindFromNetwork`\.
 
-### GetNetworkBinding<a name="network-replicas-binding-netbindable-interface-get"></a>
+### GetNetworkBinding {#network-replicas-binding-netbindable-interface-get}
 
 In the following example, the component creates the new replica chunk and initializes the data to be networked\. This function is called by the primary replica to retrieve the binding from the component\.
 
@@ -134,7 +134,7 @@ GridMate::ReplicaChunkPtr ShipComponent::GetNetworkBinding()
 }
 ```
 
-### SetNetworkBinding<a name="network-replicas-binding-netbindable-interface-set"></a>
+### SetNetworkBinding {#network-replicas-binding-netbindable-interface-set}
 
 In the following example, the component is bound to the supplied replica chunk\. It also relinquishes its local state to the state specified by the replica chunk\. This function is called on proxies to hand their binding over to the component\.
 
@@ -149,7 +149,7 @@ void ShipComponent::SetNetworkBinding(GridMate::ReplicaChunkPtr chunk)
 }
 ```
 
-### UnbindFromNetwork<a name="network-replicas-binding-netbindable-interface-unbind"></a>
+### UnbindFromNetwork {#network-replicas-binding-netbindable-interface-unbind}
 
 ```
 void ShipComponent::UnbindFromNetwork()
@@ -159,7 +159,7 @@ void ShipComponent::UnbindFromNetwork()
 }
 ```
 
-## Maintaining State<a name="network-replicas-binding-maintaining-state"></a>
+## Maintaining State {#network-replicas-binding-maintaining-state}
 
 The last step is to create checks to make sure that any local modifications to the preferred networkable state do not overwrite the networked state\. In addition, you must update the replica chunk whenever the local state changes and the component is in control of the state\. 
 

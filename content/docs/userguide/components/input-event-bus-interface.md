@@ -2,7 +2,7 @@
 description: ' Work with the Input component EBus (event bus) in &ALYlong;. '
 title: Input Component EBus Interface
 ---
-# Input Component EBus Interface<a name="component-input-event-bus-interface"></a>
+# Input Component EBus Interface {#component-input-event-bus-interface}
 
 Input subcomponents are objects that have the same lifetime as components and must override `Activate` and `Deactivate`\.
 
@@ -13,17 +13,17 @@ void Activate(const AZ::InputEventNotificationId& channelId) override;
 void Deactivate(const AZ::InputEventNotificationId& channelId) override;
 ```
 
-You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus.md#component-entity-system-gameplay-bus-gameplaynotifications)\.
+You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus#component-entity-system-gameplay-bus-gameplaynotifications)\.
 
 You can find example Lua scripts and code in the `lumberyard_version\dev\Gems\StartingPointInput\Assets\Scripts\Input` directory\.
 
-## Input Event Notification Bus<a name="component-input-event-notification-bus"></a>
+## Input Event Notification Bus {#component-input-event-notification-bus}
 
 Use the following notification functions with the event notification bus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### <a name="component-input-event-notification-input"></a>
+###  {#component-input-event-notification-input}
 
 
 ****  
@@ -67,7 +67,7 @@ end
 return held
 ```
 
-## Input Request Bus<a name="component-input-request-bus"></a>
+## Input Request Bus {#component-input-request-bus}
 
 Use the following functions with the input request bus interface to communicate with other components of your game\.
 

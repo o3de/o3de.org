@@ -2,7 +2,7 @@
 description: ' Use the &ALYlong; Fog Volume to create a fog volume in your game. '
 title: Fog Volume
 ---
-# Fog Volume<a name="component-fog-volume"></a>
+# Fog Volume {#component-fog-volume}
 
 
 ****  
@@ -31,7 +31,7 @@ You can also change global fog properties in the **Time of Day** editor\. For mo
   + [Light Component Fog Properties](#fog-component-light-property)
 + [Volumetric Fog Examples](#component-fog-examples)
 
-## Fog Volume Properties<a name="component-fog-volume-properties"></a>
+## Fog Volume Properties {#component-fog-volume-properties}
 
 The **Fog Volume** component has the following properties: 
 
@@ -76,7 +76,7 @@ Stops rendering the fog volume, depending on the camera distance from the object
 Default: `0`  
 Valid values: `0` to `2`
 
-### Rendering General<a name="component-fog-volume-rendering-general"></a>
+### Rendering General {#component-fog-volume-rendering-general}
 
 The **Fog Volume** component has the following rendering options: 
 
@@ -97,7 +97,7 @@ Default: `False`
 Specify whether the **Fog Volume** component affects only the specified area\. If `false`, the **Fog Volume** component can affect multiple visible areas and clip volumes\.   
 Default: `False`
 
-### Fall Off Settings<a name="component-fog-volume-fall-off-settings"></a>
+### Fall Off Settings {#component-fog-volume-fall-off-settings}
 
 The **Fog Volume** component has the following fall off settings: 
 
@@ -122,7 +122,7 @@ Scales the density distribution along the fall\-off direction\. Specify higher v
 Default: `1`  
 Valid values: `-50` to `50`
 
-### Ramp \(Volumetric Fog Only\)<a name="component-fog-volume-ramp"></a>
+### Ramp \(Volumetric Fog Only\) {#component-fog-volume-ramp}
 
 The **Fog Volume** component has the following ramp options: 
 
@@ -141,7 +141,7 @@ Specify the influence of the fog density ramp\.
 Default: `0`  
 Valid values: `0` to `1`
 
-### Density Noise \(Volumetric Fog Only\)<a name="component-fog-volume-density-noise"></a>
+### Density Noise \(Volumetric Fog Only\) {#component-fog-volume-density-noise}
 
 The **Fog Volume** component has the following density noise options: 
 
@@ -165,7 +165,7 @@ Valid values: `0` to `1`
 Specify the spatial frequency of the noise for the density\. You can use this parameter to define the amount of patchy fog in the fog volume\. You can increase the z\-value to create a layered effect in the volume; this stacks fog patches on top of each other\. Specify higher x\- and y\-values to create more individual fog patches within the volume\.  
 Default: `10`, `10`, `10`
 
-### Light Component Fog Properties<a name="fog-component-light-property"></a>
+### Light Component Fog Properties {#fog-component-light-property}
 
 If you add light components to your entities, you can also specify following parameters for light components:
 
@@ -185,9 +185,9 @@ In the following example, the parameter **Volumetric Fog** is disabled for the l
 
 ![\[Fog Volume component and light component where Volumetric Fog is disabled.\]](/images/userguide/fog-component-example-5.png)
 
-For more information about light components, see [Rendering](/docs/userguide/components/components.md#component-entity-rendering)\.
+For more information about light components, see [Rendering](/docs/userguide/components/components#component-entity-rendering)\.
 
-## Volumetric Fog Examples<a name="component-fog-examples"></a>
+## Volumetric Fog Examples {#component-fog-examples}
 
 **Example**  
 In the following example, the value for **Latitude** is `0`\. The fall off appears on the left side of the fog volume, along the x\-axis\.  

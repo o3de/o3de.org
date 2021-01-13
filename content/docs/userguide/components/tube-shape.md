@@ -2,7 +2,7 @@
 description: ' Use the &ALYlong; Tube Shape component to create tube-like volumes. '
 title: Tube Shape
 ---
-# Tube Shape<a name="component-tube-shape"></a>
+# Tube Shape {#component-tube-shape}
 
 
 ****  
@@ -24,7 +24,7 @@ The **Tube Shape** component requires the **[Spline](/docs/userguide/components/
 
 ![\[Example Tube Shape component in Lumberyard Editor.\]](/images/userguide/shared-component-tube-shape-example.png)
 
-## Tube Shape Properties<a name="tube-shape-properties"></a>
+## Tube Shape Properties {#tube-shape-properties}
 
 ![\[The Tube Shape component and its properties in Lumberyard Editor.\]](/images/userguide/component/component-tube-shape.png)
 
@@ -42,7 +42,7 @@ The **Tube Shape** component has the following properties\.
 |  **Variable Radius**   | Defines the variable radius at each point along the spline\. This value is added to the radius to calculate the final radius of the tube\. | 
 |  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  | 
 
-## EBus Request Bus Interface<a name="tube-shape-ebus-request-bus-interface"></a>
+## EBus Request Bus Interface {#tube-shape-ebus-request-bus-interface}
 
 You can use the event bus \(EBus\) interface to communicate with other components in your game\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 

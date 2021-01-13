@@ -3,7 +3,7 @@ description: ' Learn how to synchronize game state, use encryption, and perform 
   important networking tasks in &ALYlong;. '
 title: Using &ALY; Networking
 ---
-# Using Lumberyard Networking<a name="network-intro"></a>
+# Using Lumberyard Networking {#network-intro}
 
 Lumberyard's GridMate networking system is designed for efficient bandwidth usage and low\-latency communications\. You can synchronize objects over the network with GridMate's replica framework\. GridMate's session management integrates with major online console services and lets you handle peer\-to\-peer and client\-server topologies with host migration\. GridMate also supports in\-game achievements, leaderboards, and cloud\-based saved games through third\-party social services such as Steam\. For an example of how to set up a multiplayer project, see [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md)\.
 

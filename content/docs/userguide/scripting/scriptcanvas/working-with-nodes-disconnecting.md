@@ -2,7 +2,7 @@
 description: ' Learn how to disconnect &script-canvas; nodes in &ALYlong;. '
 title: Disconnecting Nodes
 ---
-# Disconnecting Nodes<a name="script-canvas-working-with-nodes-disconnecting"></a>
+# Disconnecting Nodes {#script-canvas-working-with-nodes-disconnecting}
 
 Script Canvas offers a variety of ways to delete connections between nodes\.
 

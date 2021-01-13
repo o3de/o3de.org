@@ -3,7 +3,7 @@ description: ' Configure order-independent transparency (OIT) in &ALY; so that t
   objects that are drawn out-of-order can display correctly. '
 title: Order-Independent Transparency
 ---
-# Order\-Independent Transparency<a name="graphics-rendering-order-independent-transparency"></a>
+# Order\-Independent Transparency {#graphics-rendering-order-independent-transparency}
 
 Order\-independent transparency \(OIT\) corrects the display of transparent objects that are drawn out of order\.
 
@@ -24,7 +24,7 @@ To further demonstrate, see the following images\.
 | OIT is not needed in the following example\. Drawing object 1, then object 2, and finally object 3 works\. | OIT is needed in the following example\. Drawing object 1 and then object 2 will not work because certain pixels from object 1 must be in front of pixels from object 2 \(and vice versa\)\. | OIT is needed in the following example\. Object 2 is long and its center point is in front of object 1, but it must draw behind object 1\. | OIT is needed in the following example\. Certain parts of object 1 draw behind other parts of the object, and you cannot control which draws first\. | 
 |  ![\[Image NOT FOUND\]](/images/userguide/oit_not_needed.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_01.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_02.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_03.png)  | 
 
-## Configuring Order\-Independent Transparency for Lumberyard<a name="configuring-order-independent-transparency-for-Amazon-Lumberyard"></a>
+## Configuring Order\-Independent Transparency for Lumberyard {#configuring-order-independent-transparency-for-Amazon-Lumberyard}
 
 You can configure OIT with the console or create a level configuration file with this setting\. 
 
@@ -36,7 +36,7 @@ Valid values: 0 – 4
 + Specify the value for the `r_AlphaBlendLayerCount` console variable
 + Specify the value for the `level.cfg` file in the `lumberyard_version\dev\project_name\Levels\level_name` directory\.
 
-For more information, see [Configuring Console Variables](/docs/userguide/console-intro.md#configuring-console-variables-cvars)\.
+For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 
 OIT requires the following:
 + Hardware requirements: DirectX 12\_1 feature level compatible graphics card \(NVIDIA Maxwell & Pascal, 4th generation Intel core processors\)\.

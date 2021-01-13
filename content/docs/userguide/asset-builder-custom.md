@@ -3,7 +3,7 @@ description: ' Create an asset builder to process your custom asset type source 
   into game-ready files in &ALYlong;. '
 title: Creating a Custom Asset Builder
 ---
-# Creating a Custom Asset Builder<a name="asset-builder-custom"></a>
+# Creating a Custom Asset Builder {#asset-builder-custom}
 
 The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with Lumberyard\.
 
@@ -19,7 +19,7 @@ To create a builder for a custom asset type:
 
 This topic describes how to create builder classes, register your builder, tag your components, and implement message logging for your builder\.
 
-## Builder Resources<a name="asset-builder-custom-builder-resources"></a>
+## Builder Resources {#asset-builder-custom-builder-resources}
 
 This topic draws on the following resources, which are included with Lumberyard:
 + Lumberyard Asset Builder SDK – The Asset Builder SDK enables you to build custom asset processing tools\. The source code is located in the following directory:
@@ -29,11 +29,11 @@ This topic draws on the following resources, which are included with Lumberyard:
 
   `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder`
 
-## Prerequisites<a name="asset-builder-custom-prerequisites"></a>
+## Prerequisites {#asset-builder-custom-prerequisites}
 
 This topic assumes that you have a working knowledge of Lumberyard [Gems](/docs/userguide/gems/structure.md), [AZ::Modules](/docs/userguide/modules/parts.md), and [AZ::Components](/docs/userguide/components/entity-system-create-component.md)\. The next section includes a brief overview of asset builders inside gems\.
 
-## Asset Builders Inside Gems<a name="asset-builder-custom-asset-builders-inside-gems"></a>
+## Asset Builders Inside Gems {#asset-builder-custom-asset-builders-inside-gems}
 
 Gems contain two kinds of modules:
 + A runtime module: `gem_name.dll`
@@ -41,7 +41,7 @@ Gems contain two kinds of modules:
 
 These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When Lumberyard starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
 
-## 1\. Create Builder Classes<a name="asset-builder-custom-create-builder-class"></a>
+## 1\. Create Builder Classes {#asset-builder-custom-create-builder-class}
 
 To create an asset builder, you must implement one or more builder classes\. You can create a builder class with the following steps:
 
@@ -67,7 +67,7 @@ Each builder class requires two callback functions: one for `CreateJobFunction`,
 
 Example builder class code is located in the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\Builder\CustomAssetExampleBuilderWorker.cpp` file\.
 
-### A\. Implement the CreateJobsFunction Callback Function<a name="asset-builder-custom-create-builder-class-createjobs-callback"></a>
+### A\. Implement the CreateJobsFunction Callback Function {#asset-builder-custom-create-builder-class-createjobs-callback}
 
 In most cases, you should build a `JobDescriptor` for each processing job for each enabled platform\. Then, add the `JobDescriptor` to the `CreateJobsResponse` list in the callback for `CreateJobsFunction`\.
 
@@ -79,11 +79,11 @@ Keep in mind the following:
 
 For an example of a `CreateJobsFunction` callback, see the `CustomAssetExample::ExampleBuilderWorker::CreateJobs()` function in the CustomAssetExample gem\.
 
-### B\. \(Optional\) Declare Source File Dependencies<a name="asset-builder-custom-create-builder-class-optional-declare-source-file-dependencies"></a>
+### B\. \(Optional\) Declare Source File Dependencies {#asset-builder-custom-create-builder-class-optional-declare-source-file-dependencies}
 
 You can use the Asset Builder SDK to declare dependencies for a source file on other source files\. These source files can be any file within the project directory or directories\. They do not need to be source files consumed by a builder\.
 
-#### Declaring Asset Dependencies<a name="asset-builder-custom-create-builder-class-declaring-asset-dependencies"></a>
+#### Declaring Asset Dependencies {#asset-builder-custom-create-builder-class-declaring-asset-dependencies}
 
 To declare dependencies, add them in the `CreateJobsFunction` callback in your builder class to `m_sourceFileDependencyList` in the `CreateJobsResponse` structure\.
 
@@ -92,7 +92,7 @@ Keep in mind the following:
 + Asset Processor automatically handles source file dependencies recursively\. If the source files downstream emit their own dependencies when they are queried, you do not need to recursively traverse the full tree of dependencies\. Emit your local dependencies for each node in the tree, and Asset Processor takes care of the rest\.
 + Because metafiles such as `*.assetinfo` files are special case files that cause your asset to rebuild automatically, you do not need to add them as dependencies\.
 
-#### Source File UUIDs versus Paths<a name="asset-builder-custom-create-builder-class-source-file-uuids-versus-paths"></a>
+#### Source File UUIDs versus Paths {#asset-builder-custom-create-builder-class-source-file-uuids-versus-paths}
 
 The `SourceFileDependency` structure contains `m_sourceFileDependencyPath` and `m_sourceFileDependencyUUID`\. Your builder class must supply a value for only one of these fields\.
 
@@ -104,17 +104,17 @@ Keep in mind the following:
 
 For an example of adding dependencies inside of a `CreateJobsFunction` callback, see the `CustomAssetExampleBuilderWorker::CreateJobs()` function in the CustomAssetExample gem\.
 
-### C\. \(Optional\) Declare Job Dependencies<a name="asset-builder-custom-create-builder-class-job-dependencies"></a>
+### C\. \(Optional\) Declare Job Dependencies {#asset-builder-custom-create-builder-class-job-dependencies}
 
  You can use the Asset Builder SDK to declare that your custom asset build depends on another job registered with the Asset Processor\. Job dependencies are based on either the fingerprint of another job's changes, or the successful completion of a job\. 
 
-#### Types of Job Dependencies<a name="asset-builder-custom-create-builder-class-job-dependency-types"></a>
+#### Types of Job Dependencies {#asset-builder-custom-create-builder-class-job-dependency-types}
 
  There are two types of job dependencies, indicated by the `AssetBuilderSDK::JobDependencyType` value passed to the constructor for `AssetBuilderSDK::JobDependency` objects\. The dependency type is stored in the `m_type` member of the created object\. These two types are: 
 +  `Fingerprint`: The `Fingerprint` dependency causes a job to re\-run when the job it's dependent on is reprocessed, and the artifacts generated by the dependent job change according to its fingerprint definition\. Fingerprint definitions can include any information, but a fingerprint always includes the state of the source file\. This makes fingerprint dependencies a superset of source file dependencies\. 
 +  `Order`: The `Order` dependency causes a job to be processed whenever the job it's dependent on completes, regardless of whether or not any artifacts or fingerprints have changed\. Adding order dependencies reduces the ability to parallelize asset build tasks, so use order dependencies only where needed\. 
 
-#### Declare Job Dependencies<a name="asset-builder-custom-create-builder-class-declare-job-dependencies"></a>
+#### Declare Job Dependencies {#asset-builder-custom-create-builder-class-declare-job-dependencies}
 
  Adding job dependencies is done by adding `JobDependency` objects to an existing `JobDescriptor` through the `m_jobDependencyList` member\. For example, to add a `Fingerprint` dependency on the `test.example` source file for the `ExamplePlatform` platform, for the job key `Example Job`: 
 
@@ -137,7 +137,7 @@ descriptor.m_jobDependencyList.push_back(jobDependency);
 response.m_createJobOutputs.push_back(descriptor);
 ```
 
-### D\. \(Optional\) Handle Platform\-Specific Cases<a name="asset-builder-custom-create-builder-class-platform-specific"></a>
+### D\. \(Optional\) Handle Platform\-Specific Cases {#asset-builder-custom-create-builder-class-platform-specific}
 
 `CreateJobsRequest` provides helper functions for operations related to the enabled platforms\. These helper functions can be useful for building the output `JobDescriptor` for a specific enabled platform\.
 
@@ -147,7 +147,7 @@ The following functions are available in the Asset Builder SDK\. For source code
 + `HasPlatform(const char* platformIdentifier)` – For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.
 + `HasPlatformWithTag(const char* platformTag)` – For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(for example, "mobile" or "console"\)\.
 
-### E\. Implement the Callback for ProcessJobFunction<a name="asset-builder-custom-create-builder-class-processjob-callback"></a>
+### E\. Implement the Callback for ProcessJobFunction {#asset-builder-custom-create-builder-class-processjob-callback}
 
 Asset Processor calls the callback for the `ProcessJobFunction` when it has a job for the builder class to begin processing\. The callback for your `ProcessJobFunction` should perform the following tasks:
 
@@ -167,7 +167,7 @@ Keep in mind the following:
 
 For an example of a `ProcessJobFunction` callback, see the `CustomAssetExample::ExampleBuilderWorker::ProcessJob()` function in the CustomAssetExample gem in the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder\CustomAssetExampleBuilderWorker.cpp` file\.
 
-### F\. \(Optional\) Declare Product Dependencies<a name="asset-builder-custom-create-builder-class-optional-declare-product-dependencies"></a>
+### F\. \(Optional\) Declare Product Dependencies {#asset-builder-custom-create-builder-class-optional-declare-product-dependencies}
 
  Product dependencies are used to indicate product files needed at runtime\. An example of this kind of dependency is a mesh file that depends on a material\. Product dependencies can be referred to by `AssetId`, path to the source file, or the path to the product\. This section describes adding product dependencies based on `AssetId` references\. For information about path dependencies, see the next step, [declare product path dependencies](#asset-builder-custom-create-builder-class-optional-product-path-dependencies)\. 
 
@@ -176,7 +176,7 @@ For an example of a `ProcessJobFunction` callback, see the `CustomAssetExample::
 **Important**  
  If a product generated by a custom builder is needed at runtime, it **must** be declared as a product dependency somewhere\. The release packaging system relies on product dependencies to figure out what to include in the release build\. 
 
-### G\. \(Optional\) Declare Product Path Dependencies<a name="asset-builder-custom-create-builder-class-optional-product-path-dependencies"></a>
+### G\. \(Optional\) Declare Product Path Dependencies {#asset-builder-custom-create-builder-class-optional-product-path-dependencies}
 
  For situations where you can't use an `AssetId` to define a product dependency, use either the source or product path to define a product dependency\.Where possible, use the `AssetId` reference system\. Product dependencies defined by paths are intended for use with legacy systems and third party tools that don't integrate properly with the `AssetId` system\. 
 
@@ -191,20 +191,20 @@ For an example of a `ProcessJobFunction` callback, see the `CustomAssetExample::
 **Important**  
  If a product generated by a custom builder is needed at runtime, it must be declared as a product dependency somewhere\. The release packaging system relies on product dependencies to figure out what to include in the release build\. 
 
-### H\. \(Optional\) Create a JobCancelListener<a name="asset-builder-custom-create-builder-class-optional-create-jobcancellistener"></a>
+### H\. \(Optional\) Create a JobCancelListener {#asset-builder-custom-create-builder-class-optional-create-jobcancellistener}
 
 Builder classes can use the `JobCancelListener` function to listen for job cancellation requests in their `processJob` method\. Your code should listen for cancellation requests and then cancel work, if possible, when a request is received\. The address of this listener is the job ID of the job that is in `processJobRequest`\. If additional processing like signaling a semaphore or other threading work is required, you can derive from the `JobCancelListener` and then reimplement `Cancel()`\.
 
 For a basic example of `JobCancelListener`, see the `CustomAssetExample::ExampleBuilderWorker::ProcessJob()` function in the CustomAssetExample gem in the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder\CustomAssetExampleBuilderWorker.cpp` file\.
 
-### I\. Shut Down Properly<a name="asset-builder-custom-create-builder-class-shut-down-properly"></a>
+### I\. Shut Down Properly {#asset-builder-custom-create-builder-class-shut-down-properly}
 
 When your asset builder application needs to shut down, Asset Processor uses the address of the registered builder's `AZ::Uuid` to broadcast the `Shutdown()` message on the `AssetBuilderSDK::AssetBuilderBus`\. At this point, your builder must stop all tasks and return control to Asset Processor\.
 
 **Important**  
 Failure to terminate promptly when Asset Processor shuts down and then restarts can cause your system to stop responding\. The shutdown message comes from a thread that is separate from the `ProcessJob()` thread\.
 
-## 2\. Create a Lifecycle Component<a name="asset-builder-custom-create-a-lifecycle-component"></a>
+## 2\. Create a Lifecycle Component {#asset-builder-custom-create-a-lifecycle-component}
 
 In this step, create a lifecycle component that registers your builder class with Asset Processor in the `Activate()` function\.
 
@@ -212,7 +212,7 @@ To register each of the builder classes, your lifecycle component must call the 
 
 For a code example of a lifecycle component, see the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\Builder\CustomAssetExampleBuilderComponent.cpp` file\.
 
-## 3\. Tag Components for Builder Mode<a name="asset-builder-custom-tag-components-for-builder-mode"></a>
+## 3\. Tag Components for Builder Mode {#asset-builder-custom-tag-components-for-builder-mode}
 
 In this step, tag your lifecycle component and all the system components that must be active for your builder worker's `ProcessJobs` and `CreateJobs` functions to work\. The components that you tag can be any components that aid in processing your asset type\. For example, you might tag a component that contains an implementation of an EBus handler that loads your asset type\.
 
@@ -239,11 +239,11 @@ The `AZ::Edit::Attributes::SystemComponentTags` attribute takes a single `AZ::Cr
 
 For the source code, see the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder\CustomAssetExampleBuilderComponent.cpp` file\.
 
-### More About Tagging<a name="asset-builder-custom-tag-components-more-about-tagging"></a>
+### More About Tagging {#asset-builder-custom-tag-components-more-about-tagging}
 
 Many system components contain logic and startup systems that can be detrimental to asset builds\. For example, systems that simulate physics, render GUIs, or attempt to acquire device or network contexts can negatively impact asset builder performance\. For this reason, Lumberyard's Asset Processor loads the same set of gems that Lumberyard Editor loads from the `lumberyard_version\dev\project_name\Config\Editor.xml` file, but activates only the components that are tagged as mandatory in builder mode\. This selective activation of tagged components also makes it possible for an arbitrary number of builder and non\-builder components to reside together inside a gem\.
 
-## 4\. \(Optional\) Implement Message Logging<a name="asset-builder-custom-optional-implement-message-logging"></a>
+## 4\. \(Optional\) Implement Message Logging {#asset-builder-custom-optional-implement-message-logging}
 
 To log builder registration in your lifecycle component, use the following syntax:
 
@@ -262,7 +262,7 @@ AZ_Assert(...)
 
 This ensures that your messages are in the job's log file and display in Asset Processor's log view for that specific job\.
 
-### Logging Resources<a name="asset-builder-custom-logging-resources"></a>
+### Logging Resources {#asset-builder-custom-logging-resources}
 
 For `BuilderLog` source code, see `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK\AssetBuilderSDK.*`\.
 

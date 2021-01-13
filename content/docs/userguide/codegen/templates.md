@@ -3,7 +3,7 @@ description: ' Learn about the Jinja2 templates that AZ Code Generator uses to g
   code in &ALYlong;. '
 title: Code Generation Templates
 ---
-# Code Generation Templates<a name="az-code-gen-templates"></a>
+# Code Generation Templates {#az-code-gen-templates}
 
 
 ****  
@@ -23,7 +23,7 @@ The following are some example templates\. For more information about creating J
 + [Complex Example](#az-code-gen-templates-complex-example)
 + [Template Data](#az-code-gen-templates-template-data)
 
-## Simple Example<a name="az-code-gen-templates-simple-example"></a>
+## Simple Example {#az-code-gen-templates-simple-example}
 
 A Jinja template can use text variables to replace text at predetermined locations in the output, as in the following example:
 
@@ -48,7 +48,7 @@ The following output results\.
 int foo = 42;
 ```
 
-## Complex Example<a name="az-code-gen-templates-complex-example"></a>
+## Complex Example {#az-code-gen-templates-complex-example}
 
 Jinja allows for fairly complicated logic, branching and looping control structures\. The following example template generates a class that has the public and private variables specified by the input:
 
@@ -117,7 +117,7 @@ private:
 };
 ```
 
-## Template Data<a name="az-code-gen-templates-template-data"></a>
+## Template Data {#az-code-gen-templates-template-data}
 
 The data that is available to the template is fully controlled by the Python [template driver](/docs/userguide/codegen/template-drivers.md)\.
 
@@ -128,7 +128,7 @@ The following table lists the variables that are automatically added to the Jinj
 
 | Variable | Description | 
 | --- | --- | 
-| extra\_data | Python object that contains data returned by the [apply\_transformations](/docs/userguide/codegen/template-drivers.md#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. | 
+| extra\_data | Python object that contains data returned by the [apply\_transformations](/docs/userguide/codegen/template-drivers#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. | 
 | extra\_str | String that contains the contents of extra\_data in JSON format\. | 
 | json\_object | Python object that contains the decoded intermediate JSON after it has been processed by the template driver\. | 
 | json\_str | String that contains the encoded intermediate JSON after it has been processed by the template driver\. | 

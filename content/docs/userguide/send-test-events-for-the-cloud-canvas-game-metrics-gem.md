@@ -3,13 +3,13 @@ description: ' Send game events with the Metrics Sample level in &ALYlong; and v
   them in the &cgp;. '
 title: Sending Test Metrics with the Metrics Sample Level
 ---
-# Sending Test Metrics with the Metrics Sample Level<a name="send-test-events-for-the-cloud-canvas-game-metrics-gem"></a>
+# Sending Test Metrics with the Metrics Sample Level {#send-test-events-for-the-cloud-canvas-game-metrics-gem}
 
-After you complete the [Prerequisites](/docs/userguide/gems/cloud-canvas/metrics-gem.md#cloud-canvas-cloud-gem-metrics-prerequisites), you can send test metrics with the Metrics Sample level\. You can then view these metrics in the Cloud Gem Portal\.
+After you complete the [Prerequisites](/docs/userguide/gems/cloud-canvas/metrics-gem#cloud-canvas-cloud-gem-metrics-prerequisites), you can send test metrics with the Metrics Sample level\. You can then view these metrics in the Cloud Gem Portal\.
 
 **To send test metrics with the Metrics Sample level**
 
-1. Set the **CloudGemsSamples** as your default project\. For more information, see [Switching Game Projects](/docs/userguide/configurator/projects.md#project-configurator-different-project)\.
+1. Set the **CloudGemsSamples** as your default project\. For more information, see [Switching Game Projects](/docs/userguide/configurator/projects#project-configurator-different-project)\.
 
 1. In Lumberyard Editor, choose **File**, **Open**, select **MetricsSample**, and then click **Open**\.
 
@@ -38,7 +38,7 @@ If you select this option, the time to process events in AWS can increase\. This
 
 1. In the **Cloud Gem Metrics Portal**, you can view metrics for your game\. See [Using the Game Metrics Cloud Gem Portal](/docs/userguide/using-the-cloud-gem-metrics-portal.md)\.
 
-## Examples for Sending Test Metrics<a name="code-examples-to-send-test-metrics"></a>
+## Examples for Sending Test Metrics {#code-examples-to-send-test-metrics}
 
 On the **UICanvas** entity, the **Lua Script** component references the `metricsmainmenu.lua` file\.
 
@@ -103,7 +103,7 @@ The following is a snippet of the `MetricManager.cpp` file\. The C\+\+ file spec
     }
 ```
 
-## Event Attributes<a name="attributes-sent-with-the-game-event-to-aws"></a>
+## Event Attributes {#attributes-sent-with-the-game-event-to-aws}
 
 When an event is registered from the game client, the following default attributes are appended to the event\.
 

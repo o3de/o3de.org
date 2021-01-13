@@ -2,11 +2,11 @@
 description: ' Use UiCursorBus to manipulate the cursor in a game in &ALYlong;. '
 title: UiCursorBus
 ---
-# UiCursorBus<a name="lua-scripting-ces-api-ui-uicursorbus"></a>
+# UiCursorBus {#lua-scripting-ces-api-ui-uicursorbus}
 
 The `UiCursorBus` contains functions for manipulating the cursor in the game UI\.
 
-## IncrementVisibleCounter<a name="lua-scripting-ces-api-ui-incrementvisiblecounter"></a>
+## IncrementVisibleCounter {#lua-scripting-ces-api-ui-incrementvisiblecounter}
 
 Increments the UI cursor visible counter\. Should be paired with a call to `DecrementVisibleCounter`\.
 
@@ -16,7 +16,7 @@ Increments the UI cursor visible counter\. Should be paired with a call to `Decr
 void IncrementVisibleCounter()
 ```
 
-## DecrementVisibleCounter<a name="lua-scripting-ces-api-ui-cecrementvisiblecounter"></a>
+## DecrementVisibleCounter {#lua-scripting-ces-api-ui-cecrementvisiblecounter}
 
 Decrements the UI cursor visible counter\. Should be paired with a call to `IncrementVisibleCounter`\.
 
@@ -26,7 +26,7 @@ Decrements the UI cursor visible counter\. Should be paired with a call to `Incr
 void DecrementVisibleCounter()
 ```
 
-## IsUiCursorVisible<a name="lua-scripting-ces-api-ui-isuicursorvisible"></a>
+## IsUiCursorVisible {#lua-scripting-ces-api-ui-isuicursorvisible}
 
 Queries whether the UI cursor is currently visible\.
 
@@ -36,7 +36,7 @@ Queries whether the UI cursor is currently visible\.
 bool IsUiCursorVisible()
 ```
 
-## SetUiCursor<a name="lua-scripting-ces-api-ui-setuicursor"></a>
+## SetUiCursor {#lua-scripting-ces-api-ui-setuicursor}
 
 Sets the UI cursor image\.
 
@@ -46,7 +46,7 @@ Sets the UI cursor image\.
 void SetUiCursor(const char* cursorImagePath) 
 ```
 
-## GetUiCursorPosition<a name="lua-scripting-ces-api-ui-getuicursorposition"></a>
+## GetUiCursorPosition {#lua-scripting-ces-api-ui-getuicursorposition}
 
 Returns the UI cursor position \(in pixels\) relative to the top left corner of the UI overlay viewport\.
 

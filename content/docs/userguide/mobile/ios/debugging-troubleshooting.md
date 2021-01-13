@@ -3,12 +3,12 @@ description: ' Debug your iOS application using Xcode and &ALY; source code. Tro
   the various steps to build assets, shaders, and your iOS application. '
 title: iOS Debugging and Troubleshooting
 ---
-# iOS Debugging and Troubleshooting<a name="ios-debugging-troubleshooting"></a>
+# iOS Debugging and Troubleshooting {#ios-debugging-troubleshooting}
 
 Lumberyard provides full access to the source code, which allows you to debug your iOS application using Xcode without additional Lumberyard\-specific steps to follow\. For information about debugging and profiling your iOS application, see [Debugging](https://developer.apple.com/support/debugging/) in the official Apple developer documentation\.
 
 **Unable to see activity in the shader compiler window**  
-You must connect to the shader compiler on your PC in order to compile the subset of shaders required by your game, on demand\. To verify that your app has connected correctly and obtained all shaders, you can view the output in the shader compiler window\. If you still do not see any activity in the window, please check your setup by following the instructions on the [Run the Remote Shader Compiler](/docs/userguide/mobile/ios/game-building.md#ios-run-the-remote-shader-compiler) page\.
+You must connect to the shader compiler on your PC in order to compile the subset of shaders required by your game, on demand\. To verify that your app has connected correctly and obtained all shaders, you can view the output in the shader compiler window\. If you still do not see any activity in the window, please check your setup by following the instructions on the [Run the Remote Shader Compiler](/docs/userguide/mobile/ios/game-building#ios-run-the-remote-shader-compiler) page\.
 
 **Assets appear out of date on iOS devices**  
 When you make and save changes to your project in Lumberyard Editor, these changes are automatically reflected on your iOS device the next time you deploy\. Ensure you have set up your `cache` folder to share between your PC and Mac\. If you encounter Xcode errors when deploying to your iOS devices or your assets appear out of date on the iOS devices, you can try cleaning your product from Xcode \(click **Product**, **Clean**\), which clears the `.app` package built to `BinIos` or `BinIos.Debug` \(debug builds\) in the directory where you installed Lumberyard\.

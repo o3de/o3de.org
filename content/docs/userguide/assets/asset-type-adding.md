@@ -2,7 +2,7 @@
 description: ' Add a custom asset type to &ALYlong;. '
 title: Adding an Asset Type to &ALY;
 ---
-# Adding an Asset Type to Lumberyard<a name="asset-pipeline-asset-type-adding"></a>
+# Adding an Asset Type to Lumberyard {#asset-pipeline-asset-type-adding}
 
 When you develop a game, you might need to add a new kind of asset to Lumberyard\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to Lumberyard\.
 
@@ -14,7 +14,7 @@ For an overview of the Lumberyard asset system, see [Programming the Lumberyard 
 + [B\. Enabling the Engine to Load and Stream the Asset](#asset-pipeline-asset-type-adding-enabling-the-engine-to-load-and-stream-the-asset)
 + [C\. Customizing UI Interaction](#asset-pipeline-asset-type-adding-customizing-ui-interaction)
 
-## Overview<a name="asset-pipeline-asset-type-adding-overview-of-steps"></a>
+## Overview {#asset-pipeline-asset-type-adding-overview-of-steps}
 
 At a high level, adding an asset type to Lumberyard involves three steps: 
 
@@ -26,24 +26,24 @@ At a high level, adding an asset type to Lumberyard involves three steps:
 
 After this overview, each step is covered in more detail\. Not all of the steps are required\. The steps are arranged in order of increasing integration with the Lumberyard asset pipeline and editor\.
 
-### A\. Register the Asset with the Asset Pipeline<a name="asset-pipeline-asset-type-adding-register-the-asset-with-the-asset-pipeline"></a>
+### A\. Register the Asset with the Asset Pipeline {#asset-pipeline-asset-type-adding-register-the-asset-with-the-asset-pipeline}
 
 You register your asset with the asset pipeline for common operations like building, processing, copying, and deploying\. This registration assigns an appropriate type ID to the asset type and enables the asset to be added to the cache and the asset database\. Depending on your asset file type, you can register it by creating a copy rule or writing code\.
 
-#### Registering by Copying<a name="asset-pipeline-asset-type-adding-registering-by-copying"></a>
+#### Registering by Copying {#asset-pipeline-asset-type-adding-registering-by-copying}
 
 You can deploy your asset file by copying if the following are true:
 + The processed or compiled version of your asset is the same across all operating systems and devices\.
 + The asset declares no dependencies on other assets\.
 + The asset doesn't need to be rebuilt when other source files change\.
 
-#### Registering by Creating a Builder<a name="asset-pipeline-asset-type-adding-registering-by-creating-a-builder"></a>
+#### Registering by Creating a Builder {#asset-pipeline-asset-type-adding-registering-by-creating-a-builder}
 
 If your asset requires processing, compiling, or optimizing at run time, you can do one of the following:
 + Create a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md) to transform your source asset into its compiled form\.
 + If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug\-in\.
 
-#### Copying Versus Creating a Builder<a name="asset-pipeline-asset-type-adding-copying-versus-creating-a-builder"></a>
+#### Copying Versus Creating a Builder {#asset-pipeline-asset-type-adding-copying-versus-creating-a-builder}
 
 It might be inefficient to use your source assets in your game under the following circumstances:
 + You have extraneous tool data inside your asset that is not necessary to ship for each operating system or device\.
@@ -52,7 +52,7 @@ It might be inefficient to use your source assets in your game under the followi
 
 In these cases, consider writing a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md) instead of just copying your raw assets, even if it only compresses or converts the assets into binary format\.
 
-### B\. Enable the Engine to Load and Stream the Asset<a name="asset-pipeline-asset-type-adding-enable-the-engine-to-load-and-stream-the-asset"></a>
+### B\. Enable the Engine to Load and Stream the Asset {#asset-pipeline-asset-type-adding-enable-the-engine-to-load-and-stream-the-asset}
 
 After you register your asset with the asset pipeline, you must enable the Lumberyard engine to load your asset type at run time and stream it asynchronously\.
 
@@ -66,7 +66,7 @@ Enabling your asset for loading and streaming involves the following steps:
 
 1. **Use your custom asset** – Inside components, use `Asset<T>` members, which are reflected to the editor and for serialization, to refer to your asset\.
 
-### C\. Customize UI Interaction<a name="asset-pipeline-asset-type-adding-customize-ui-interaction"></a>
+### C\. Customize UI Interaction {#asset-pipeline-asset-type-adding-customize-ui-interaction}
 
 Optionally, you can describe your asset to the UI \(and other systems\) and customize your asset's interaction with it, including with the **Asset Browser**\.
 
@@ -80,11 +80,11 @@ Optionally, you can describe your asset to the UI \(and other systems\) and cust
 
 In addition, you can use the thumbnail API to generate thumbnails for your asset for use in the **Asset Browser** and other UI contexts\. Although not described here, the related source code is located in the `lumberyard_version\dev\Code\Framework\AzToolsFramework\AzToolsFramework\Thumbnails` directory\.
 
-## A\. Registering Your Asset with the Asset Pipeline<a name="asset-pipeline-asset-type-adding-registering-your-asset-with-the-asset-pipeline"></a>
+## A\. Registering Your Asset with the Asset Pipeline {#asset-pipeline-asset-type-adding-registering-your-asset-with-the-asset-pipeline}
 
 When you register your asset with the asset pipeline, you define your asset to the asset system and asset processor\. Depending on your asset file type, you can register it by creating a copy rule or by writing a [BuilderSDK builder](/docs/userguide/asset-builder-custom.md)\.
 
-### Copying Assets<a name="asset-pipeline-asset-type-adding-copying-assets"></a>
+### Copying Assets {#asset-pipeline-asset-type-adding-copying-assets}
 
 To copy assets, you typically create a copy rule in a configuration file\. The configuration file that you use depends on your implementation goals\.
 + To copy assets as\-is into the cache, add a copy rule to your `lumberyard_version\dev\AssetProcessorPlatformConfig.ini` file\.
@@ -103,11 +103,11 @@ version=1
 
 For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
-### Custom\-Built Assets<a name="asset-pipeline-asset-type-adding-custom-built-assets"></a>
+### Custom\-Built Assets {#asset-pipeline-asset-type-adding-custom-built-assets}
 
 For custom\-built assets, you can write a BuilderSDK builder or a Scene API plug\-in\. If your asset is extracted from an `.fbx` file, you can write a Scene API plug\-in\. With either approach, you do not need to edit `.ini` files as you do when copying assets\.
 
-#### Writing a BuilderSDK Builder<a name="asset-pipeline-asset-type-adding-writing-a-buildersdk-builder"></a>
+#### Writing a BuilderSDK Builder {#asset-pipeline-asset-type-adding-writing-a-buildersdk-builder}
 
 When you write a BuilderSDK builder to create the asset, it should fill in the product info `struct` for each asset that it creates\. The product info `struct` includes the following fields:
 
@@ -123,11 +123,11 @@ When you write a BuilderSDK builder to create the asset, it should fill in the p
 
 For more information and examples, see the [Asset Builder API](/docs/userguide/asset-builder-custom.md)\.
 
-#### Writing a Scene API Plug\-in<a name="asset-pipeline-asset-type-adding-writing-a-scene-api-plug-in"></a>
+#### Writing a Scene API Plug\-in {#asset-pipeline-asset-type-adding-writing-a-scene-api-plug-in}
 
 The Scene API provides boilerplate code so that you only have to write a few code hooks to create a plug\-in\. For an example Scene API plug\-in, see the `SceneLoggingExample` gem in the `lumberyard_version\dev\Gems` directory\. The `SceneLoggingExample` gem shows how logging can be added to the asset pipeline\. The gem adds a scene plug\-in that outputs logs for each node in the file\. The gem is a good starting point for your own code\. You can replace the log outputs with the data collection and/or compiling functions that you want\.
 
-### Registration Versus Integration<a name="asset-pipeline-asset-type-adding-registration-versus-integration"></a>
+### Registration Versus Integration {#asset-pipeline-asset-type-adding-registration-versus-integration}
 
 After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/userguide/file-access-direct.md) to load the asset\.
 
@@ -137,11 +137,11 @@ While simple registration of an asset can be useful in some circumstances, full 
 + Automatic drag\-and\-drop support in the **Asset Browser**
 + Thumbnails
 
-## B\. Enabling the Engine to Load and Stream the Asset<a name="asset-pipeline-asset-type-adding-enabling-the-engine-to-load-and-stream-the-asset"></a>
+## B\. Enabling the Engine to Load and Stream the Asset {#asset-pipeline-asset-type-adding-enabling-the-engine-to-load-and-stream-the-asset}
 
 The following sections describe the steps required for integration with Lumberyard's asset system\.
 
-### 1\. Create an AssetData Type<a name="asset-pipeline-asset-type-adding-create-an-assetdata-type"></a>
+### 1\. Create an AssetData Type {#asset-pipeline-asset-type-adding-create-an-assetdata-type}
 
 To represent an image that is usable in\-memory for your asset, derive a class from `AZ::Data::AssetData`\. You do not load the asset from the `AssetData`\-derived class\. Instead, the class actually represents your asset in memory, and the game uses it directly for processing\. When you request the asset from `AssetManager`, the asset manager reference counts it, and the asset class is shared by any consumer of the asset\. When you create an asset class, keep in mind the following:
 + You can place `AssetData`\-derived classes in gems\.
@@ -149,7 +149,7 @@ To represent an image that is usable in\-memory for your asset, derive a class f
 + While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement\. If you have special requirements \(like third\-party considerations\), your class can simply provide a handle to a foreign system that contains the asset data\.
 + For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the Lumberyard code at `lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`\.
 
-#### Asset Instances and Asset Data<a name="asset-pipeline-asset-type-adding-asset-instances-and-asset-data"></a>
+#### Asset Instances and Asset Data {#asset-pipeline-asset-type-adding-asset-instances-and-asset-data}
 
 It is important to understand the difference between asset `instances` and asset `data`\.
 
@@ -157,20 +157,20 @@ An `AssetData`\-derived class contains the asset data that is shared among insta
 
 `AssetData` objects are not immutable, and often change over time\. For example, textures can load higher level of detail \(LOD\) objects, and procedural meshes or textures can change over time\. However, all instances that use an asset get the same pointer to the asset and therefore change when the asset changes\. This is also true when instances have a pointer to an asset in a foreign system\.
 
-### 2\. Create an Asset Handler<a name="asset-pipeline-asset-type-adding-create-an-asset-handler"></a>
+### 2\. Create an Asset Handler {#asset-pipeline-asset-type-adding-create-an-asset-handler}
 
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type\. Only one such handler generally exists for each type of asset\. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class\. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads\.
 
 **Note**  
 You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a Lumberyard Game](/docs/userguide/components/entity-system-pg-gems-code.md)\.
 
-#### Using the Generic Asset Handler for Structured Data<a name="asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data"></a>
+#### Using the Generic Asset Handler for Structured Data {#asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data}
 
 If your asset is a serialized `AZ::Reflected` `ObjectStream`, you can use `GenericAssetHandler`, located in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Asset\GenericAssetHandler.h` file\. `GenericAssetHandler` calls the usual `Serialize` and `Deserialize` functions in its callbacks that load assets and registers your types for you\.
 
 Because assets like classes, lists, vectors, and properties are structured data, they are suitable for handling by `GenericAssetHandler`\.
 
-#### Writing a Handler for Custom Assets<a name="asset-pipeline-asset-type-adding-writing-a-handler-for-custom-assets"></a>
+#### Writing a Handler for Custom Assets {#asset-pipeline-asset-type-adding-writing-a-handler-for-custom-assets}
 
 If you have a custom asset \(like bytes or custom formats\), you must write your own `AssetHandler`\. To do so, implement the `CreateAsset`, `LoadAssetData`, and other functions in the following code:
 
@@ -208,7 +208,7 @@ After you create your handler, install the class that you derived from `AssetHan
 **Note**  
 Your component does not have to be a system component, but the component must exist to handle load request calls\.
 
-#### Example Asset Handlers<a name="asset-pipeline-asset-type-adding-example-asset-handlers"></a>
+#### Example Asset Handlers {#asset-pipeline-asset-type-adding-example-asset-handlers}
 
 For example asset handlers, see `MeshAssetHandler`, `ParticleAssetHandler`, and `ScriptAssetHandler` in the following locations:
 
@@ -218,7 +218,7 @@ For example asset handlers, see `MeshAssetHandler`, `ParticleAssetHandler`, and 
 
 `lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAssetHandler.h`
 
-### 3\. Register Your Asset Type and Handler with the Asset System<a name="asset-pipeline-asset-type-adding-register-your-asset-type-and-handler-with-the-asset-system"></a>
+### 3\. Register Your Asset Type and Handler with the Asset System {#asset-pipeline-asset-type-adding-register-your-asset-type-and-handler-with-the-asset-system}
 
 In this step, register your handler to handle a specific asset type, which is the UUID of your asset data\.
 
@@ -236,7 +236,7 @@ AZ::Data::AssetManager::Instance().RegisterHandler(this, AZ::AzTypeInfo<AssetTyp
 
 After you describe your asset type to the Lumberyard engine in this way, your custom asset becomes available in the **Asset Browser** for dragging and dropping\. The asset displays its information and automatically updates\.
 
-### 4\. Use Your Custom Asset in the Editor and Engine<a name="asset-pipeline-asset-type-adding-use-your-custom-asset-in-the-editor-and-engine"></a>
+### 4\. Use Your Custom Asset in the Editor and Engine {#asset-pipeline-asset-type-adding-use-your-custom-asset-in-the-editor-and-engine}
 
 At this point, you can use your custom assets in your structures and components\.
 
@@ -254,11 +254,11 @@ At this point, you can use your custom assets in your structures and components\
 
 After you perform these steps, your component appears in the component editor\. The component has a field to which you can drag and drop the asset from the **Asset Browser**\. When the asset is dragged on the socket, the component accepts it\. At this point, runtime or editor code can call functions like `QueueLoad` on the asset\.
 
-## C\. Customizing UI Interaction<a name="asset-pipeline-asset-type-adding-customizing-ui-interaction"></a>
+## C\. Customizing UI Interaction {#asset-pipeline-asset-type-adding-customizing-ui-interaction}
 
 \(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/userguide/programming/ebus/intro.md) to customize your asset's interaction with the **Asset Browser**\.
 
-### 1\. Describing Your Asset Type to the UI<a name="asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui"></a>
+### 1\. Describing Your Asset Type to the UI {#asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui}
 
 In addition to deriving your asset handler from `Az::Data::AssetHandler`, you can derive it from `AZ::AssetTypeInfoBus::Handler` for user interface purposes\. `AssetTypeInfoBus` tells Lumberyard the friendly name of your asset type, enables it to appear in the **Asset Browser**, gives it icons, and provides other UI–related features\.
 
@@ -285,7 +285,7 @@ AZ::Uuid GetComponentTypeId() const override;
 void GetAssetTypeExtensions(AZStd::vector<AZStd::string>& extensions) override;
 ```
 
-#### Use EBus Listeners to Implement Custom Behavior<a name="asset-pipeline-asset-type-adding-use-ebus-listeners-to-implement-custom-behavior"></a>
+#### Use EBus Listeners to Implement Custom Behavior {#asset-pipeline-asset-type-adding-use-ebus-listeners-to-implement-custom-behavior}
 
 To customize how your asset type interacts with the **Asset Browser** and viewport, use EBus listeners to override or supplement behaviors like the following:
 
@@ -298,7 +298,7 @@ To customize how your asset type interacts with the **Asset Browser** and viewpo
 **Note**  
 Because a double\-click is a request to open a file, when you override file open behavior, you also override double\-click behavior\.
 
-### 2\. Customizing Drag\-and\-Drop Behavior<a name="asset-pipeline-asset-type-adding-customizing-drag-and-drop-behavior"></a>
+### 2\. Customizing Drag\-and\-Drop Behavior {#asset-pipeline-asset-type-adding-customizing-drag-and-drop-behavior}
 
 To customize the default drag\-and\-drop behavior, you can edit the existing code in the `AzAssetBrowserRequestHandler.cpp` file\. A more modular approach is to add a handler with higher priority to your gem\.
 
@@ -331,7 +331,7 @@ The events are described in the following table\.
 
 For more information, see `lumberyard_version\dev\Code\Framework\AzQtComponents\AzQtComponents\Buses\DragAndDrop.h` and `lumberyard_version\dev\Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.h`\.
 
-#### Priority of Handling<a name="asset-pipeline-asset-type-adding-priority-of-handling"></a>
+#### Priority of Handling {#asset-pipeline-asset-type-adding-priority-of-handling}
 
 Bus handlers on the `DragAndDropEventsBus` are sorted by the return value of `GetPriority()`\. Because the first handler to accept the event gets priority, you can override the default behavior by positioning your component before others\.
 
@@ -349,7 +349,7 @@ AssetBrowserEntry::ForEachEntryInMimeData<ProductAssetBrowserEntry>(event->mimeD
 
 `ForEachEntryInMimeData<T>` takes one of the types of `AssetBrowser` entries \(`SourceAssetBrowserEntry`, `ProductAssetBrowserEntry`, `FolderAssetBrowserEntry`, `RootAssetBrowserEntry`\) and calls your callback for each of the entries found\. You can use these callbacks to detect events and react to them appropriately\.
 
-#### Checking Event Ownership<a name="asset-pipeline-asset-type-adding-checking-event-ownership"></a>
+#### Checking Event Ownership {#asset-pipeline-asset-type-adding-checking-event-ownership}
 
 It is important to note that **Asset Browser** elements are not the only objects that go through this drag operations pipeline\. Files and other objects of drag operations can produce drag events\. For this reason, it is important to verify that a drag event that you received corresponds to your object before you take any action\. Your code should not assume that your object is the one being dragged\.
 
@@ -368,7 +368,7 @@ if ((!event) || (!event->mimeData()) || (event->isAccepted()) || (!viewportDragC
 
 The Lumberyard drag\-and\-drop system uses the same semantics as the Qt drag and drop system\. For more information, see [Drag and Drop](http://doc.qt.io/qt-5/dnd.html) in the Qt documentation\.
 
-### 3\. Customizing the Context Menu<a name="asset-pipeline-asset-type-adding-customizing-the-context-menu"></a>
+### 3\. Customizing the Context Menu {#asset-pipeline-asset-type-adding-customizing-the-context-menu}
 
 Whenever the context menu is requested, an EBus is invoked that listeners can use to register additional actions to it\. To add items to the context menu, monitor the `AssetBrowserInteractionNotificationsBus::Handler` and implement `AddContextMenuActions`, as in the following example\.
 
@@ -377,7 +377,7 @@ Whenever the context menu is requested, an EBus is invoked that listeners can us
 virtual void AddContextMenuActions(QWidget* /*caller*/, QMenu* /*menu*/, const AZStd::vector<AssetBrowserEntry*>& /*entries*/) {};
 ```
 
-### 4\. Customizing File Open Behavior<a name="asset-pipeline-asset-type-adding-customizing-file-open-behavior"></a>
+### 4\. Customizing File Open Behavior {#asset-pipeline-asset-type-adding-customizing-file-open-behavior}
 
 Right or double\-clicking an asset in the **Asset Browser** or elsewhere in the UI triggers the file open behavior\. The default behavior passes the asset file to the operating system\.
 
@@ -417,6 +417,6 @@ void AssetBrowserContextProvider::AddSourceFileOpeners(const char* fullSourceFil
 
 If you implement an opener in this way, double\-clicks and other file open gestures call your opener instead of the operating system\.
 
-#### Preventing the OS from Opening a Custom File<a name="asset-pipeline-asset-type-adding-preventing-the-os-from-opening-a-custom-file"></a>
+#### Preventing the OS from Opening a Custom File {#asset-pipeline-asset-type-adding-preventing-the-os-from-opening-a-custom-file}
 
 You can prevent a source file from being opened by the operating system even if you do not provide a file opener to replace it\. For example, you might want to prevent the operating system from opening a file that is in a custom format that the OS cannot handle\. To implement this, create an opener for the corresponding asset that has a `nullptr` for the callback\.

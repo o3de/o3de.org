@@ -3,7 +3,7 @@ description: ' Use the Cloud Gem Framework to enable your game code to make HTTP
   for &ALYlong;. '
 title: Making HTTP Requests Using the Cloud Gem Framework
 ---
-# Making HTTP Requests Using the Cloud Gem Framework<a name="cloud-canvas-cgf-http-requests"></a>
+# Making HTTP Requests Using the Cloud Gem Framework {#cloud-canvas-cgf-http-requests}
 
 
 ****  
@@ -62,7 +62,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes and EBus interfaces to execut
      job->Start();
      ```
 
-## Getting HTTP Responses Using Script<a name="cloud-canvas-cgf-http-responses-script"></a>
+## Getting HTTP Responses Using Script {#cloud-canvas-cgf-http-responses-script}
 
 To get responses from a HTTP request, your script class needs an `HttpClientComponentNotificationBus` as in the following example\.
 
@@ -85,6 +85,6 @@ function myscript:OnHttpRequestFailure(errorCode)
 end
 ```
 
-## Getting HTTP Responses Using C\+\+<a name="cloud-canvas-cgf-http-responses-cpp"></a>
+## Getting HTTP Responses Using C\+\+ {#cloud-canvas-cgf-http-responses-cpp}
 
 To get the notifications in C\+\+, you must create a component that inherits from `HttpClientComponentNotificationBus::Handler`\. This class must implement `OnHttpRequestSuccess` and `OnHttpRequestFailure` and should be placed on the same entity as the `HttpClientComponent` in your level\.

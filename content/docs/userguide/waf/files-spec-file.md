@@ -3,7 +3,7 @@ description: ' Use Waf spec files to specify which modules to include in your bu
   configuration in &ALYlong;. '
 title: Waf Spec Files (*.json)
 ---
-# Waf Spec Files \(\*\.json\)<a name="waf-files-spec-file"></a>
+# Waf Spec Files \(\*\.json\) {#waf-files-spec-file}
 
 You use Waf spec files to specify which modules to include in a build configuration\. All settings are mandatory if not explicitly stated otherwise\. 
 
@@ -39,7 +39,7 @@ The following is an example `*.json` file that illustrates a spec file layout:
 **Note**  
 The `disable_game_projects` keyword does not compile the games specified in the `project.json` file\. The default value is false, which means the specs compile the game projects by default\.
 
-## Platform\-specific Entry Values<a name="spec-file-entries"></a>
+## Platform\-specific Entry Values {#spec-file-entries}
 
 You can apply the entry values in the table to targeted platforms and/or configurations\. For example, a spec can build specific modules for win\_x64 or a spec can build different modules in certain configurations\.
 + **modules** – Includes in the build all modules defined by this key, regardless of platform and configuration\.
@@ -47,7 +47,7 @@ You can apply the entry values in the table to targeted platforms and/or configu
 
 Overlapping lists are combined into a single list based on the build command\. 
 
-## Spec File Format Specification<a name="spec-file-format"></a>
+## Spec File Format Specification {#spec-file-format}
 
 The general format of the JSON\-based spec file is a dictionary of keyword values\. The following table lists the possible keywords and their description\.
 

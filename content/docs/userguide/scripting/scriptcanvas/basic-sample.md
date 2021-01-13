@@ -3,7 +3,7 @@ description: ' Use the &script-canvas; Basic Sample to learn basic gameplay func
   in &ALYlong;. '
 title: '&script-canvas; Basic Sample'
 ---
-# Script Canvas Basic Sample<a name="script-canvas-basic-sample"></a>
+# Script Canvas Basic Sample {#script-canvas-basic-sample}
 
 The Script Canvas Basic Sample contains a collection of five Script Canvas scripts that demonstrate the following gameplay functions:
 + Basic player controller

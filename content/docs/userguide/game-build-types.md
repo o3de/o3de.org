@@ -3,7 +3,7 @@ description: ' Learn about the available types of &ALYlong; builds and when to u
   them during development. '
 title: Game Build Types in &ALYlong;
 ---
-# Game Build Types in Amazon Lumberyard<a name="game-build-types"></a>
+# Game Build Types in Amazon Lumberyard {#game-build-types}
 
 Amazon Lumberyard lets you create different types of game builds for each step in your development process:
 

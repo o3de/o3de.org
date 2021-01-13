@@ -3,13 +3,13 @@ description: ' Use the &ALY; &particle-editor; to create, duplicate, edit, manag
   and organize emitters for particle effects. '
 title: Creating and Managing Particle Emitters
 ---
-# Creating and Managing Particle Emitters<a name="particle-emitter-creating"></a>
+# Creating and Managing Particle Emitters {#particle-emitter-creating}
 
 You can create, edit, and manage emitters for particle effects in the **Particle Editor**\. For more information about emitter attributes and parameters displayed in the **Attributes** panel, see [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\.
 
 Before you can create or edit emitters, you must first set up a particle library\. For more information, see [Adding Particle Libraries](/docs/userguide/particles/creating-library.md)\.
 
-## Creating Emitters<a name="particle-emitter-creating-creating"></a>
+## Creating Emitters {#particle-emitter-creating-creating}
 
 Do the following to create an emitter\. You must have already created a library\.
 
@@ -23,7 +23,7 @@ Do the following to create an emitter\. You must have already created a library\
 
 1. In the **Attributes** panel, edit the attributes and parameters as needed\.
 
-## Editing Emitters<a name="particle-emitter-editing"></a>
+## Editing Emitters {#particle-emitter-editing}
 
 Do the following to edit emitter attributes and parameters\.
 
@@ -35,7 +35,7 @@ Do the following to edit emitter attributes and parameters\.
 
 1. In the **Attributes** panel, adjust the attribute and parameter settings and values to achieve the intended effect\.
 
-## Duplicating Emitters<a name="particle-emitter-creating-duplicating"></a>
+## Duplicating Emitters {#particle-emitter-creating-duplicating}
 
 Do the following to duplicate an emitter\. This will also duplicate any associated child emitters\.
 

@@ -3,7 +3,7 @@ description: ' Use the Disable Rain Drops node in the &ALYlong; &script-canvas; 
   to disable raindrops. '
 title: Disable Rain Drops
 ---
-# Disable Rain Drops<a name="disable-rain-drops-node"></a>
+# Disable Rain Drops {#disable-rain-drops-node}
 
 Disables the raindrop effects\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Rain Drops](/docs/userguide/rendering/enable/r
 
 ![\[disableraindrops, disableraindropsnode, disableraindrops, disablerain\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-rain-drops-node.png)
 
-## Inputs<a name="disable-rain-drops-note-input"></a>
+## Inputs {#disable-rain-drops-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Rain Drops](/docs/userguide/rendering/enable/r
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-rain-drops-node-output"></a>
+## Outputs {#disable-rain-drops-node-output}
 
 
 ****  

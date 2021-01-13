@@ -3,7 +3,7 @@ description: ' Enable Auto Activate for interactive elements in &ALY; &ui-canvas
   to set an element to activate automatically. '
 title: Auto Activate
 ---
-# Auto Activate<a name="ui-editor-components-autoactivate"></a>
+# Auto Activate {#ui-editor-components-autoactivate}
 
 The **Auto Activate** setting applies to interactive elements that remain active after they are pressed\. These include the slider, scroll bar, scroll box, and text input\. 
 

@@ -3,7 +3,7 @@ description: ' Use a layout row component in the &ALYlong; &ui-canvas-editor; to
   child elements into a row. '
 title: LayoutRow
 ---
-# LayoutRow<a name="ui-editor-components-layout-row"></a>
+# LayoutRow {#ui-editor-components-layout-row}
 
 You can use a **LayoutRow** component to organize child elements into a row\. To use this feature, you add the **LayoutRow** component to an element and then add child elements\. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose\. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on\. To control the sizes of specific, or all, children, add the [layout cell](/docs/userguide/ui/editor/components-layout-cell.md) component to those children\. 
 

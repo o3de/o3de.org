@@ -2,7 +2,7 @@
 description: ' Use the &ALY; &particle-editor; to save a particle library. '
 title: Saving Particle Libraries
 ---
-# Saving Particle Libraries<a name="particle-saving-library"></a>
+# Saving Particle Libraries {#particle-saving-library}
 
 You can save your particle library in the **Particle Editor**\.
 

@@ -2,7 +2,7 @@
 description: ' Use AzTest and AZ Test Scanner to perform automated testing in &ALYlong;. '
 title: Writing Tests for AzTest
 ---
-# Writing Tests for AzTest<a name="testing-aztest-writing-tests"></a>
+# Writing Tests for AzTest {#testing-aztest-writing-tests}
 
 Automated testing is important for any game project\. To perform automated testing in Lumberyard, you can use AzTest and the AZ test scanner\. This document shows you how to write the tests to build and run\. For information on building and running unit and integration tests, see [Using AZ Test Scanner](/docs/userguide/programming/testing/aztestscanner.md)\.
 
@@ -10,7 +10,7 @@ Lumberyard and AzTest use the [GoogleTest](https://github.com/google/googletest)
 
 Testing code with AzTest has three steps: Configure your module for testing, write the tests, and define global environments\.
 
-## Configuring Your Module for Testing<a name="aztest-writing-tests-configuring-your-module-for-testing"></a>
+## Configuring Your Module for Testing {#aztest-writing-tests-configuring-your-module-for-testing}
 
 If you want to add tests to a module or a gem that is included with Lumberyard, the configuration has already been done for you and you can skip this step\. If you want to add tests to non\-Lumberyard modules, projects, or tools, then you must configure them to use AzTest\.
 
@@ -117,11 +117,11 @@ In most cases, you do not have to perform this step\. Waf automatically links Az
 
 After you have performed these three steps, you can create a test build and test it with the AZ test scanner\. Your `HelloWorld` library or executable should appear in the report, although at this point it does not have tests\.
 
-## Creating Tests<a name="aztest-writing-tests-creating"></a>
+## Creating Tests {#aztest-writing-tests-creating}
 
 After your module is configured for testing and visible to the AZ test scanner, you can start writing tests for it\. Detailed information about writing tests is available in the GoogleTest and GoogleMock documentation\. The following information describes characteristics specific to AzTest\.
 
-### Creating a Simple Example Test<a name="aztest-writing-tests-creating-simple-example"></a>
+### Creating a Simple Example Test {#aztest-writing-tests-creating-simple-example}
 
 When using AzTest to write tests, include only the `AzTest.h` file in your test files instead of GoogleTest and GoogleMock, as in the following example\.
 
@@ -138,7 +138,7 @@ TEST(HelloWorldTests, HelloWorld_ReturnsHelloWorld)
 }
 ```
 
-### Creating Unit Tests and Integration Tests<a name="aztest-writing-tests-creating-unit-and-integration"></a>
+### Creating Unit Tests and Integration Tests {#aztest-writing-tests-creating-unit-and-integration}
 
 Unit tests are designed to be run in isolation\. Unit tests are expected to pass without requiring Lumberyard's engine systems or other assets\. Integration tests are designed to be run with the game engine and have access to the engine's systems or assets\.
 
@@ -186,7 +186,7 @@ TEST_F(Integ_MessageDatabaseTests, MessageOfTheDay_ReturnsCurrentMessageOfTheDay
 **Note**  
 Fixtures cannot be shared between unit and integration tests\. If you want to use the same fixture for both kinds of tests, create a base fixture and subclass for each type of test\.
 
-## Using Global Environments<a name="aztest-writing-tests-global-environments"></a>
+## Using Global Environments {#aztest-writing-tests-global-environments}
 
 It is often useful to create some global variables or mocks for testing the module\. In Lumberyard, this might mean creating memory allocators or a test system environment\. Because AzTest extends the support that GoogleTest provides, you must use the AzTest environments\.
 

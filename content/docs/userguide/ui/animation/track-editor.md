@@ -3,7 +3,7 @@ description: ' Use the Animation Editor''s Track Editor to preview an animation,
   the timeline, and work with keys in &ALYlong;. '
 title: Using the Track Editor
 ---
-# Using the Track Editor<a name="ui-animation-track-editor"></a>
+# Using the Track Editor {#ui-animation-track-editor}
 
 The **Track Editor** displays all the tracks in your current animation sequence\. The **Track Editor** enables you to do the following:
 + Move, delete, copy, and paste keys
@@ -26,7 +26,7 @@ The **Track Editor** displays all the tracks in your current animation sequence\
 + [Moving the Play or Record Point in the Track Editor](#ui-animation-track-editor-play-record)
 + [Previewing in the Track Editor](#ui-animation-track-editor-preview)
 
-## Working with Keys in the Track Editor<a name="ui-animation-track-editor-keys"></a>
+## Working with Keys in the Track Editor {#ui-animation-track-editor-keys}
 
 When you create an animation, key values are automatically recorded\. Using the **Track Editor**, you can move, delete, copy, and paste keys\. Keys are represented by a green circle on the timeline of each track\.
 
@@ -71,14 +71,14 @@ You can also use the Track Editor toolbar to select, move, and snap keys\. When 
 | Frame Snapping | Snaps to frames\. | 
 | Tick Snapping | Snaps to second ticks\. | 
 
-## Moving the Play or Record Point in the Track Editor<a name="ui-animation-track-editor-play-record"></a>
+## Moving the Play or Record Point in the Track Editor {#ui-animation-track-editor-play-record}
 
 The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline\. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](/docs/userguide/ui/animation/_index.md) change to the values specified by the animation tracks\.
 
 **To move the play or record point in the Track Editor**
 + Click or drag the vertical magenta slider in the timeline\.
 
-## Previewing in the Track Editor<a name="ui-animation-track-editor-preview"></a>
+## Previewing in the Track Editor {#ui-animation-track-editor-preview}
 
 The **Track Editor** features a timeline along its top edge\. To preview your entire animation, simply click the **Play** button to play your animation at its normal speed\. You can also change the speed of preview by clicking the arrow beside the play button and selecting 2, 1, ½, ¼, or ⅛\. You can also limit your animation preview, as it plays, to a specific time frame\.
 

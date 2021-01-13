@@ -3,19 +3,19 @@ description: ' Use the cloud gem cross-communication feature in &ALYlong; to ena
   a cloud gem to provide a service to other cloud gems on the backend. '
 title: Cross-Gem Communication
 ---
-# Cross\-Gem Communication<a name="cloud-canvas-cgf-service-api-cross-gem-communication"></a>
+# Cross\-Gem Communication {#cloud-canvas-cgf-service-api-cross-gem-communication}
 
 Cloud gems can use the cross\-communication feature to expose their API operations to one another and use each other's backend services\. For example, Lumberyard's [Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account.md) provides a banned player service that the [Leaderboard Cloud Gem](/docs/userguide/gems/cloud-canvas/leaderboard.md) uses to limit fraudulent scores\. You can also use cloud gem cross\-communication to notify multiple gems when an event occurs\.
 
 To implement cross\-gem communication, you define, implement, and use a [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) web service interface\.
 
 **Topics**
-- [Cross\-Gem Communication<a name="cloud-canvas-cgf-service-api-cross-gem-communication"></a>](#cross-gem-communication)
-  - [Defining an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-defining-an-interface"></a>](#defining-an-interface)
-  - [Implementing an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-implementing-an-interface"></a>](#implementing-an-interface)
-  - [Using an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface"></a>](#using-an-interface)
+- [Cross\-Gem Communication {#cloud-canvas-cgf-service-api-cross-gem-communication}](#cross-gem-communication)
+  - [Defining an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-defining-an-interface}](#defining-an-interface)
+  - [Implementing an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-implementing-an-interface}](#implementing-an-interface)
+  - [Using an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface}](#using-an-interface)
 
-## Defining an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-defining-an-interface"></a>
+## Defining an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-defining-an-interface}
 
 To define a Cloud Gem Framework service interface, you use the swagger API definition \(also known as the [OpenAPI Specification](https://en.wikipedia.org/wiki/OpenAPI_Specification)\) format to create a `interface-name_interface-version.json` file\. You then place the file in the `lumberyard_version\dev\Gems\gem-name\AWS\api-definition` directory\. For an example in Lumberyard, see the `lumberyard_version\dev\Gems\CloudGemPlayerAccount\AWS\api-definition\banplayer_1_0_0.json` file\.
 
@@ -25,7 +25,7 @@ When the directory service maps available interface endpoints to client requests
 
 To define paths, operations, and data formats for the interface, you follow the swagger specification just as you would with any other swagger definition\.
 
-## Implementing an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-implementing-an-interface"></a>
+## Implementing an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-implementing-an-interface}
 
 To implement an interface, a gem's `swagger.json` file uses an `x-cloud-gem-framework-interface-implementation` extension object in a path object\. The interface implementation object has the following properties:
 + `interface` – The full interface name \(`gem-name.interface-name-interface-version`\) of the implemented interface\.
@@ -90,7 +90,7 @@ The resulting swagger is something like the following:
 
 Currently, you must manually implement the interface in the service code, although tooling that simplifies the implementation is planned for a future release\.
 
-To implement the interface, use the `@service.api` annotated methods that you use for other [service API operations](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations.md#cloud-canvas-cgf-service-api-operations-request-execution)\. To implement the API, the functions in your modules must use the names specified by the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) extension object\. To override the defaults, put `x-amazon-cloud-canvas-lambda-dispatch` extension objects that include module and function properties in your interface definition\.
+To implement the interface, use the `@service.api` annotated methods that you use for other [service API operations](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations#cloud-canvas-cgf-service-api-operations-request-execution)\. To implement the API, the functions in your modules must use the names specified by the [`x-amazon-cloud-canvas-lambda-dispatch`](/docs/userguide/gems/cloud-canvas/cgf-service-api-cgf-extension-object.md) extension object\. To override the defaults, put `x-amazon-cloud-canvas-lambda-dispatch` extension objects that include module and function properties in your interface definition\.
 
 In the preceding example, extension objects were not used to override the defaults, so the code that implements the interface would have the following structure:
 
@@ -108,13 +108,13 @@ api\
 **Note**  
 Currently, specifying the interface's `path` parameter inside the gem swagger file is not supported\. Specify the `path` parameter in the interface swagger definition file instead\.
 
-## Using an Interface<a name="cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface"></a>
+## Using an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface}
 
 Calling the API operations that your interface defines from AWS Lambda functions is straightforward\.
 
 **To use an Interface in a Lambda function**
 
-1. Specify the interface in the [Custom::LambdaConfiguration](/docs/userguide/gems/cloud-canvas/custom-resources.md#cloud-canvas-custom-resources-lambda-configuration) resource definition's `Services` property, as in the following example:
+1. Specify the interface in the [Custom::LambdaConfiguration](/docs/userguide/gems/cloud-canvas/custom-resources#cloud-canvas-custom-resources-lambda-configuration) resource definition's `Services` property, as in the following example:
 
    ```
    "ServiceLambdaConfiguration": {

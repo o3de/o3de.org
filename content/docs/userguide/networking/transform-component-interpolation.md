@@ -3,7 +3,7 @@ description: ' Use the interpolation options for the Transform component in &ALY
   to smooth movement of entities under poor network conditions. '
 title: Transform Component Interpolation
 ---
-# Transform Component Interpolation<a name="network-transform-component-interpolation"></a>
+# Transform Component Interpolation {#network-transform-component-interpolation}
 
 The **[Transform](/docs/userguide/components/transform.md)** component supports local interpolation of its position and rotation values when it is synchronized over the network\.
 
@@ -26,7 +26,7 @@ For each of these settings, you can either choose no interpolation at all, which
 **Note**  
 Scale interpolation is not supported in the Transform component\.
 
-## Network Optimization of the Transform Component<a name="network-transform-component-interpolation-optimization"></a>
+## Network Optimization of the Transform Component {#network-transform-component-interpolation-optimization}
 
 The Transform component is optimized for network bandwidth\. If your entity is synchronized over the network but only changes position, then only new position values are sent across the network\. This avoids the network cost of sending the entire transform\. The same is true for rotation or scale of the transform\. This is done automatically\. You do not have to change any settings to use this feature\.
 

@@ -3,7 +3,7 @@ description: ' Use Leaderboard Cloud Gem service API calls to post, get, and del
   leaderboard scores in &ALYlong;. '
 title: Leaderboard Cloud Gem Service API
 ---
-# Leaderboard Cloud Gem Service API<a name="cloud-canvas-cloud-gem-leaderboard-cloud-gem-service-api"></a>
+# Leaderboard Cloud Gem Service API {#cloud-canvas-cloud-gem-leaderboard-cloud-gem-service-api}
 
 The following table lists the service API calls for the Leaderboard Cloud Gem\.
 

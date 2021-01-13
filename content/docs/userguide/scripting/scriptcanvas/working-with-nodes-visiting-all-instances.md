@@ -3,7 +3,7 @@ description: ' Learn how to navigate &script-canvas; graphs in &ALYlong; to visi
   all nodes. '
 title: Navigating Graphs
 ---
-# Navigating Graphs<a name="script-canvas-working-with-nodes-visiting-all-instances"></a>
+# Navigating Graphs {#script-canvas-working-with-nodes-visiting-all-instances}
 
 If you want to visit all nodes of the same type on a graph – for example, to check their configuration – use the following procedure\.
 

@@ -3,7 +3,7 @@ description: ' Use a Waf spec system template to create Visual Studio solutions 
   your &ALYlong; game. '
 title: Adding a Spec
 ---
-# Adding a Spec<a name="waf-using-spec"></a>
+# Adding a Spec {#waf-using-spec}
 
 The Waf spec system provides a template to create Visual Studio solutions and describes a build filter that determines which modules to build for particular platforms and configurations\. The nature of the generic Waf build system is to be all projects that are defined through the wscript system, which acts recursively on the root directory structure\. If no spec is specified when you execute a build or clean command, the Waf build system system attempts to build all modules that are supported by the selected target platform and configuration\. The platform and configuration support is defined in each of the module's wscript definitions\. For more information, see [Adding a Build Module](/docs/userguide/waf/using-module.md)\.
 
@@ -21,7 +21,7 @@ When you build in debug or profile configurations and their `_dedicated` counter
 + [Adding the Spec File to the Visual Studio Solution Generator](#add-spec-vs-solution-generator)
 + [Building the Spec](#add-spec-build-spec)
 
-## Creating a New Project Spec JSON File<a name="add-spec-new-json-file"></a>
+## Creating a New Project Spec JSON File {#add-spec-new-json-file}
 
 In the following example a spec file called `my_game` includes the game engine modules as a base as well as custom modules for Windows\. The spec file also sets a custom \#define for Windows builds\.
 
@@ -68,7 +68,7 @@ The spec files are located in the `lumberyard_version\dev\_WAF_\specs` directory
 | shadercachegen\.json | Configuration to build only the shadercache generator\. | 
 | tools\.json | Configuration to build nonessential tools\. | 
 
-## Adding the Spec File to the Visual Studio Solution Generator<a name="add-spec-vs-solution-generator"></a>
+## Adding the Spec File to the Visual Studio Solution Generator {#add-spec-vs-solution-generator}
 
 Adding the spec file to the Visual Studio solution is optional\.
 
@@ -90,7 +90,7 @@ Adding the spec file to the Visual Studio solution is optional\.
    lmbr_waf.bat configure
    ```
 
-## Building the Spec<a name="add-spec-build-spec"></a>
+## Building the Spec {#add-spec-build-spec}
 
 After saving the new spec, do one of the following:
 + Build the spec using Visual Studio \(if you followed the steps above to add the spec to Visual Studio\)\.

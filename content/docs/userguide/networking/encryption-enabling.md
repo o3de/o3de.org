@@ -2,7 +2,7 @@
 description: ' Enable encryption with OpenSSL in a GridMate session in &ALYlong;. '
 title: Enabling Encryption
 ---
-# Enabling Encryption<a name="network-encryption-enabling"></a>
+# Enabling Encryption {#network-encryption-enabling}
 
 To enable encryption with OpenSSL in a GridMate session, perform the following steps\.
 
@@ -18,7 +18,7 @@ To enable encryption with OpenSSL in a GridMate session, perform the following s
 
 The [GridMate Session Encryption Example](#network-encryption-enabling-example) at the end of this topic has sample code for these steps\.
 
-## SecureSocketDesc<a name="network-encryption-enabling-securesocketdesc"></a>
+## SecureSocketDesc {#network-encryption-enabling-securesocketdesc}
 
 The constructor for `SecureSocketDriver` requires a `SecureSocketDesc` object that provides all encryption configuration required for the secure connection\. The configuration parameters are described in the following table\.
 
@@ -32,7 +32,7 @@ The constructor for `SecureSocketDriver` requires a `SecureSocketDesc` object th
 | m\_certificateAuthorityPEM  |  Base\-64 encoded string PEM certificate authority\.  | 
 | m\_authenticateClient  |  If set to 1, the client is expected to provide a signed certificate for authentication\. To implement this, m\_certificatePEM must be set on the client, and the server needs to set up m\_certificateAuthorityPEM\. The default setting is 0\.  | 
 
-### Server Authentication Only<a name="network-encryption-enabling-server-authentication"></a>
+### Server Authentication Only {#network-encryption-enabling-server-authentication}
 
 You can use the server authentication only configuration when the client needs to verify the authenticity of the server to which it connects\. The server has a secret private key and a public certificate signed by a certificate authority\. This is the most common configuration\. 
 
@@ -44,7 +44,7 @@ You can use the server authentication only configuration when the client needs t
 | Client  | m\_certificateAuthorityPEM  | 
 | Server  | m\_privateKeyPEM, m\_certificatePEM, m\_certificateAuthorityPEM  | 
 
-### Client and Server Authentication<a name="network-encryption-enabling-client-and-server-authentication"></a>
+### Client and Server Authentication {#network-encryption-enabling-client-and-server-authentication}
 
 Use this configuration when the client must verify authenticity of the server and the server must verify authenticity of the client\. The client has its own unique private key and corresponding signed public certificate\. The server has its own unique private key and corresponding signed public certificate\. 
 
@@ -58,7 +58,7 @@ Use this configuration when the client must verify authenticity of the server an
 | Client  | m\_privateKeyPEM, m\_certificatePEM, m\_certificateAuthorityPEM  | 
 | Server  | m\_privateKeyPEM, m\_certificatePEM, m\_certificateAuthorityPEM  | 
 
-### Self\-signed Certificates<a name="network-encryption-enabling-self-signed-certificates"></a>
+### Self\-signed Certificates {#network-encryption-enabling-self-signed-certificates}
 
 You can use self\-signed certificates for development purposes\.
 
@@ -67,7 +67,7 @@ You can use self\-signed certificates for development purposes\.
 
 When you use self\-signed certificates, there is no certificate authority to sign the public certificates\. To permit the absence of a certificate authority, set `m_certificateAuthorityPEM` to the same value as `m_certificatePEM`\. 
 
-## GridMate Session Encryption Example<a name="network-encryption-enabling-example"></a>
+## GridMate Session Encryption Example {#network-encryption-enabling-example}
 
 The following code snippet enables encryption in a GridMate session\.
 
@@ -113,7 +113,7 @@ void MyClass::OnSessionDelete(GridMate::GridSession* session) {
 }
 ```
 
-## How To Generate a Private Key and Public Certificate<a name="network-encryption-enabling-generate-key-and-certificate"></a>
+## How To Generate a Private Key and Public Certificate {#network-encryption-enabling-generate-key-and-certificate}
 
 You can use the `openssl req` command to generate a self\-signed certificate from OpenSSL, as in the following example\.
 

@@ -3,7 +3,7 @@ description: ' Use the Simple Motion component to add motion effects to your act
   in &ALYlong;. '
 title: Simple Motion
 ---
-# Simple Motion<a name="component-simple-motion"></a>
+# Simple Motion {#component-simple-motion}
 
 
 ****  
@@ -16,7 +16,7 @@ You can use the **Simple Motion** component to play a motion without an animatio
 
 For creating cinematics with the **Simple Motion** component, see [Creating Character Animations with the Simple Motion Component](/docs/userguide/create-cinematics-with-simple-motion-animations-in-track-view-editor.md)\.
 
-## Simple Motion Component Properties<a name="component-simple-motion-properties"></a>
+## Simple Motion Component Properties {#component-simple-motion-properties}
 
 ![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/userguide/component/component-simple-motion-properties.png)
 

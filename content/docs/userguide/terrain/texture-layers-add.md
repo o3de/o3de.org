@@ -2,7 +2,7 @@
 description: ' Add a new terrain texture layer to your &ALY; environment. '
 title: Adding a Terrain Texture Layer
 ---
-# Adding a Terrain Texture Layer<a name="terrain-texture-layers-add"></a>
+# Adding a Terrain Texture Layer {#terrain-texture-layers-add}
 
 Create a new texture layer and change the terrain texture and material as desired\.
 

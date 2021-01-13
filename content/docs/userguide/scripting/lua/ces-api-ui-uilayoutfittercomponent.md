@@ -3,15 +3,15 @@ description: ' Use the UILayoutFitterComponent to implement the UI layout fitter
   &ALYlong;. '
 title: UILayoutFitterComponent
 ---
-# UILayoutFitterComponent<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent"></a>
+# UILayoutFitterComponent {#lua-scripting-ces-api-ui-uilayoutfittercomponent}
 
 You can use this component to implement a UI Layout Fitter in Amazon Lumberyard\.
 
-## UiLayoutFitterBus<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus"></a>
+## UiLayoutFitterBus {#lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus}
 
 Services messages for the `UiLayoutFitterComponent`\.
 
-### GetHorizontalFit<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-gethorizontalfit"></a>
+### GetHorizontalFit {#lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-gethorizontalfit}
 
 Returns whether to resize the element horizontally\.
 
@@ -21,7 +21,7 @@ Returns whether to resize the element horizontally\.
 bool GetHorizontalFit()
 ```
 
-### SetHorizontalFit<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-sethorizontalfit"></a>
+### SetHorizontalFit {#lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-sethorizontalfit}
 
 Sets whether to resize the element horizontally\.
 
@@ -31,7 +31,7 @@ Sets whether to resize the element horizontally\.
 void SetHorizontalFit(bool horizontalFit)
 ```
 
-### GetVerticalFit<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-getverticalfit"></a>
+### GetVerticalFit {#lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-getverticalfit}
 
 Returns whether to resize the element vertically\.
 
@@ -41,7 +41,7 @@ Returns whether to resize the element vertically\.
 bool GetVerticalFit()
 ```
 
-### SetVerticalFit<a name="lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-setverticalfit"></a>
+### SetVerticalFit {#lua-scripting-ces-api-ui-uilayoutfittercomponent-uilayoutfitterbus-setverticalfit}
 
 Sets whether to resize the element vertically\.
 

@@ -3,7 +3,7 @@ description: ' Use voxel octree global illumination or voxel GI in &ALYlong; to 
   dynamic indirect light and shadows bouncing from static objects. '
 title: Voxel-based Global Illumination (SVOGI)
 ---
-# Voxel\-based Global Illumination \(SVOGI\)<a name="rendering-graphics-svogi"></a>
+# Voxel\-based Global Illumination \(SVOGI\) {#rendering-graphics-svogi}
 
 
 ****  
@@ -36,7 +36,7 @@ You must also enable SVOGI per level\.
 
 1. Click **OK**\.
 
-## Integration Modes<a name="rendering-graphics-svogi-modes"></a>
+## Integration Modes {#rendering-graphics-svogi-modes}
 
 You can apply voxel GI through several modes\.
 
@@ -64,7 +64,7 @@ Modes 1 and 2 have the following disadvantages:
 + Dynamic objects cannot affect GI, but can receive it\.
 If you receive a message that the display driver has stopped responding and has recovered, try this [workaround from Microsoft](https://support.microsoft.com/en-us/kb/2665946)\. 
 
-## Voxel GI Parameters<a name="rendering-graphics-svogi-params"></a>
+## Voxel GI Parameters {#rendering-graphics-svogi-params}
 
 The following parameters are global for an entire level\. You can use normal ambient lights to modulate or tint indirect light intensity locally\.
 
@@ -88,7 +88,7 @@ Global illumination uses the sun and the seven largest static lights in the scen
 **Note**  
 This parameter takes effect only when voxel global illumination is enabled\.
 
-## Debugging<a name="rendering-graphics-svogi-debugging"></a>
+## Debugging {#rendering-graphics-svogi-debugging}
 
 You can use the following console variables to help debug voxel GI issues:
 + `r_ShowRenderTarget svo_fin` – Displays the output of the voxel GI system\.
@@ -99,7 +99,7 @@ You can use the following console variables to help debug voxel GI issues:
 **Important**  
 Do not use the `e_svoTI_*` console variables \(for example, `e_svoTI_IntegrationMode`\) to configure the voxel GI system\. Any changes to these console variables in the configuration file will be overwritten by the individual level environment settings file\. Instead, configure your settings in the [**Total Illumination**](#rendering-graphics-svogi-params) pane in Lumberyard Editor\.
 
-## Current Limits<a name="rendering-graphics-svogi-limitations"></a>
+## Current Limits {#rendering-graphics-svogi-limitations}
 
 The following limitations exist for the voxel GI system:
 +  The GI code doesn’t have a mechanism for detecting light modifications directly, but is constantly updating to capture changes to the lighting\. This may introduce delay in the GI response to lights changing\. 

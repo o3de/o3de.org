@@ -3,7 +3,7 @@ description: ' See the differences between Wwise Full and Wwise LTX, which are s
   implementations used in &ALYlong;. '
 title: Comparing Wwise Full to Wwise LTX
 ---
-# Comparing Wwise Full to Wwise LTX<a name="audio-wwise-ltx-full-comparison"></a>
+# Comparing Wwise Full to Wwise LTX {#audio-wwise-ltx-full-comparison}
 
 The following comparison table summarizes the differences in features between Wwise LTX and Wwise Full\.
 

@@ -3,7 +3,7 @@ description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots, i
   and slots in &ALYlong;. '
 title: Speech Recognition Cloud Gem Portal API
 ---
-# Speech Recognition Cloud Gem Portal API<a name="cloud-canvas-cloud-gem-speech-recognition-api-cgp"></a>
+# Speech Recognition Cloud Gem Portal API {#cloud-canvas-cloud-gem-speech-recognition-api-cgp}
 
 You can use the Speech Recognition Cloud Gem Portal API to manage bots, intents, and slots\. For more information about bots, intents, and slots, see [Speech Recognition Cloud Gem](/docs/userguide/gems/cloud-canvas/speech-recognition-intro.md)\.
 

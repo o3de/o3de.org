@@ -2,7 +2,7 @@
 description: ' Enable a LAN firewall to protect your &ALYlong; environment '
 title: Enabling a Firewall
 ---
-# Enabling a Firewall<a name="setting-up-firewall"></a>
+# Enabling a Firewall {#setting-up-firewall}
 
 You can help protect your environment by enabling the firewall settings on all computers running the Asset Processor or Lumberyard Editor to do the following: 
 + Exclude external connections to ports 4600, 9432, 9433, and 45643 from untrusted IP addresses\.

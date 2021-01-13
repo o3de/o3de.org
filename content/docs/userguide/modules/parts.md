@@ -2,13 +2,13 @@
 description: ' Learn about the different parts of an AZ module. '
 title: Parts of an AZ Module, Explained
 ---
-# Parts of an AZ Module, Explained<a name="az-module-parts"></a>
+# Parts of an AZ Module, Explained {#az-module-parts}
 
 An AZ module has three key components: a class that inherits from `AZ::Module`, one or more public facing event buses, and a system component class\. 
 
 This page describes module initialization, the use of system components as singletons, how EBus calls communicate with this singleton, and how to call the module externally after you have created it\. 
 
-## The Module Class<a name="az-module-parts-module-class"></a>
+## The Module Class {#az-module-parts-module-class}
 
 Each AZ module must contain a class that inherits from `AZ::Module`\. When the module is loaded by an application, an instance of the class is created very early in the application's lifetime and its virtual functions are called at the appropriate times as the application goes through its [bootstrapping process](/docs/userguide/modules/bootstrap.md)\. This class [reflects](/docs/userguide/components/entity-system-reflect-component.md) the components declared in the module and adds critical components to the [system entity](/docs/userguide/modules/system-entities-configuring.md)\. 
 
@@ -88,7 +88,7 @@ namespace HelloWorld
 AZ_DECLARE_MODULE_CLASS(HelloWorld_010c14ae7f0f4eb1939405d439a9481a, HelloWorld::HelloWorldModule)
 ```
 
-## The EBus<a name="az-module-parts-ebus"></a>
+## The EBus {#az-module-parts-ebus}
 
 External code can call into your module, and receive events from your module, through the module's public [event buses](/docs/userguide/programming/ebus/intro.md) \(EBus\)\. The EBus allows simple and safe function calls between different modules of code\. 
 
@@ -122,7 +122,7 @@ namespace HelloWorld
 
 Calls to this EBus are handled by the system component, as described in the following section\. 
 
-## The System Component Class<a name="az-module-parts-system-component-class"></a>
+## The System Component Class {#az-module-parts-system-component-class}
 
 Any major systems in your module that require a singleton should be built as system components\. New gems come with a system component by default\. The system component class is created during application startup and attached to the system entity \(see `GetRequiredSystemComponents()` in `HelloWorldModule.cpp`\)\. 
 
@@ -247,7 +247,7 @@ namespace HelloWorld
 
 For more information about system components, see [System Components](/docs/userguide/modules/system-components.md)\. 
 
-## Calling the Module from External Code<a name="az-module-parts-calling"></a>
+## Calling the Module from External Code {#az-module-parts-calling}
 
 To call your module, invoke your public function through EBus\. This example uses the `SayHello` function\. 
 

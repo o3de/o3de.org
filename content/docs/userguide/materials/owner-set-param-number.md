@@ -3,7 +3,7 @@ description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; ed
   to specify a material''s numerical parameter for the specified entity. '
 title: Set Param Number
 ---
-# Set Param Number<a name="material-owner-set-param-number"></a>
+# Set Param Number {#material-owner-set-param-number}
 
 Sets a material's numerical parameter for the specified entity\.
 
@@ -13,7 +13,7 @@ Sets a material's numerical parameter for the specified entity\.
 
 ![\[setparamnumber, setparamnumbernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-material-owner-node.png)
 
-## Inputs<a name="material-owner-set-param-number-input"></a>
+## Inputs {#material-owner-set-param-number-input}
 
 
 ****  
@@ -26,7 +26,7 @@ Sets a material's numerical parameter for the specified entity\.
 | Number | Number |  The new value to apply\.  | 
 | Material ID | Number | If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at 1\. | 
 
-## Outputs<a name="material-owner-set-param-number-output"></a>
+## Outputs {#material-owner-set-param-number-output}
 
 
 ****  

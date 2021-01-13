@@ -2,13 +2,13 @@
 description: ' Specify how fonts render in &ALYlong;''s UI system. '
 title: Configuring Font Rendering Quality
 ---
-# Configuring Font Rendering Quality<a name="ui-fonts-rendering"></a>
+# Configuring Font Rendering Quality {#ui-fonts-rendering}
 
 Lumberyard's built\-in UI system, `LyShine`, renders text using font textures\. The quality of the on\-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen\.
 
 Use the procedures in this section to configure font size and texture to achieve quality text rendering\.
 
-## Font Texture Width and Height Attributes<a name="ui-fonts-texture-attributes"></a>
+## Font Texture Width and Height Attributes {#ui-fonts-texture-attributes}
 
 Fonts are defined in XML by `*.font` files\. The XML in a `.font` file defines various parameters, such as the path to the source TTF/OTF asset and important rendering properties\. The font file `Engine/Fonts/default-ui.font` included in the Lumberyard project has the following content\.
 
@@ -38,7 +38,7 @@ The font texture resolution is controlled by the following line\.
 
 In this example, the font texture has a resolution of 512x256\. This resolution size \(along with the number of character slots\) is an important value for determining font rendering quality\.
 
-## Character Slots<a name="ui-fonts-character-slots"></a>
+## Character Slots {#ui-fonts-character-slots}
 
 In Lumberyard, a font texture is logically divided into equally sized slots\. In each slot, there is a uniform amount of space for each character \(glyph\)\. By default \(without additional configuration\), there are 128 unique characters \(16 rows \* 8 columns\)\.
 
@@ -70,7 +70,7 @@ Here is another example\.
 
 In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` \(16,384\) character slots\. To determine the available size for each character, divide the texture size \(4096x4096\) by the number of slots \(128x128\) to yield a 32x32 pixel space per character\. This configuration enables you to render over 16,000 unique characters at a 32\-pixel size in a single frame\.
 
-## Font Size<a name="ui-fonts-size"></a>
+## Font Size {#ui-fonts-size}
 
 Because a font texture is divided into a logical grid, a simple calculation determines how much real estate each character in the font can use:
 + Font texture width / `widthslots` = slot width
@@ -88,7 +88,7 @@ Knowing these calculations helps you determine the right font texture size for t
 
 **To determine the right font texture size for your game UI**
 
-1. [Create the font `.font` file](/docs/userguide/ui/fonts/adding-fonts.md#create-font-xml-file) for the font to use\.
+1. [Create the font `.font` file](/docs/userguide/ui/fonts/adding-fonts#create-font-xml-file) for the font to use\.
 
 1. Choose an arbitrary font texture size to start with, such as 512x256 as used in the previous example\.
 

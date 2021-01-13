@@ -2,13 +2,13 @@
 description: ' Try the Speech Recognition sample level in &ALYlong;. '
 title: Using the Speech Recognition Sample Level
 ---
-# Using the Speech Recognition Sample Level<a name="cloud-canvas-cloud-gem-speech-recognition-sample-level"></a>
+# Using the Speech Recognition Sample Level {#cloud-canvas-cloud-gem-speech-recognition-sample-level}
 
 Before you can use the Speech Recognition Sample Level, you must prepare the necessary Cloud Canvas resources\. The sample level for the Cloud Gem Speech Recognition is located in the Lumberyard `\dev\CloudGemSamples\Levels\SpeechToTextSampleCloudGemSamples` directory\. The name of the sample level is `SpeechToTextSample`\.
 
-## Preparing the Sample Level<a name="cloud-canvas-cloud-gem-speech-recognition-sample-level-preparing-the-sample-level"></a>
+## Preparing the Sample Level {#cloud-canvas-cloud-gem-speech-recognition-sample-level-preparing-the-sample-level}
 
-To prepare the sample level, you use the Cloud Gem Portal to import the sample Amazon Lex bot that is included with Lumberyard\. For more information about bots, see [ Bots, Intents, Slots, and Elicitations](/docs/userguide/gems/cloud-canvas/speech-recognition-intro.md#cloud-canvas-cloud-gem-speech-recognition-intro-bots-intents-slots-and-elicitations)\.
+To prepare the sample level, you use the Cloud Gem Portal to import the sample Amazon Lex bot that is included with Lumberyard\. For more information about bots, see [ Bots, Intents, Slots, and Elicitations](/docs/userguide/gems/cloud-canvas/speech-recognition-intro#cloud-canvas-cloud-gem-speech-recognition-intro-bots-intents-slots-and-elicitations)\.
 
 **To prepare the sample Level**
 
@@ -41,7 +41,7 @@ To prepare the sample level, you use the Cloud Gem Portal to import the sample A
 
    Starting in Lumberyard 1\.13, Cloud Gem Speech Recognition supports microphone input from Windows, iOS, MacOS, and Android operating systems\.
 
-## Trying the Speech Recognition Sample<a name="cloud-canvas-cloud-gem-speech-recognition-sample-level-trying-the-speech-recognition-sample"></a>
+## Trying the Speech Recognition Sample {#cloud-canvas-cloud-gem-speech-recognition-sample-level-trying-the-speech-recognition-sample}
 
 The sample level uses a mini map of a simple multiplayer online battle arena \([MOBA](https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena)\) game\. In a MOBA game, a team member might want to ask for help or warn another team member about the presence of an opponent in a particular location\.
 

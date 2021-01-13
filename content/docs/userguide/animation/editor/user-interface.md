@@ -2,7 +2,7 @@
 description: ' View the &animation-editor; interface in &ALYlong;. '
 title: '&animation-editor; User Interface'
 ---
-# Animation Editor User Interface<a name="animation-editor-user-interface"></a>
+# Animation Editor User Interface {#animation-editor-user-interface}
 
 
 ****  
@@ -17,7 +17,7 @@ title: '&animation-editor; User Interface'
 + [Motion Sets Interface](/docs/userguide/animation/editor/motion-set-user-interface.md)
 + [Motions Interface](/docs/userguide/animation/editor/motions-user-interface.md)
 
-## Opening Animation Editor<a name="opening-animation-editor-"></a>
+## Opening Animation Editor {#opening-animation-editor-}
 
 You can open the **Animation Editor** from Lumberyard Editor\.
 

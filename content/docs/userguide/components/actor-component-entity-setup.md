@@ -2,7 +2,7 @@
 description: ' Set up actor entities with multiple or a single FBX file in &ALYlong;. '
 title: Setting Up Actor Entities
 ---
-# Setting Up Actor Entities<a name="component-actor-component-entity-setup"></a>
+# Setting Up Actor Entities {#component-actor-component-entity-setup}
 
 After you set up your skinned meshes as actors, you can create your actor entities\. You then parent the attachments to the main entity and line the attachments up to the primary actor\.
 

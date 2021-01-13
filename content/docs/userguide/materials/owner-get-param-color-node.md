@@ -3,7 +3,7 @@ description: ' Use the Get Param Color node in the &ALYlong; &script-canvas; edi
   to return a material''s color parameter. '
 title: Get Param Color
 ---
-# Get Param Color<a name="material-owner-get-param-color-node"></a>
+# Get Param Color {#material-owner-get-param-color-node}
 
 Returns a material's color parameter value for the specified entity\.
 
@@ -13,7 +13,7 @@ Returns a material's color parameter value for the specified entity\.
 
 ![\[getparamcolor, getparamcolornode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-color-material-owner-node.png)
 
-## Inputs<a name="material-owner-get-param-color-node-input"></a>
+## Inputs {#material-owner-get-param-color-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Returns a material's color parameter value for the specified entity\.
 | Param Name | String |  The name of the material parameter to query\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Material ID | Number |  If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at `1`\.  | 
 
-## Outputs<a name="material-owner-get-param-color-node-output"></a>
+## Outputs {#material-owner-get-param-color-node-output}
 
 
 ****  

@@ -2,7 +2,7 @@
 description: ' Use the material settings for the fur rendering in &ALYlong;. '
 title: Material Settings
 ---
-# Material Settings<a name="shader-ref-fur-materialsettings"></a>
+# Material Settings {#shader-ref-fur-materialsettings}
 
 Using fur material parameters, you can fine\-tune the look of the fur\. 
 

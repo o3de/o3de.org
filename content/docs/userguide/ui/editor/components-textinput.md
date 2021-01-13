@@ -3,7 +3,7 @@ description: ' Use a text input component to make an element offer player input 
   &ALY;''s &ui-canvas-editor;. '
 title: TextInput
 ---
-# TextInput<a name="ui-editor-components-textinput"></a>
+# TextInput {#ui-editor-components-textinput}
 
 You can use a **TextInput** component to make an element offer player input\. This component is typically applied to an element with an image component and two child elements with text components \(one for placeholder text and one for input text\)\.
 

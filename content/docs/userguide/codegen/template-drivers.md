@@ -3,7 +3,7 @@ description: ' Create template drivers that preprocess data from Clang and pass 
   to Jinja2 output templates for use with &ALYlong;''s AZ Code Generator. '
 title: Template Drivers
 ---
-# Template Drivers<a name="az-code-gen-template-drivers"></a>
+# Template Drivers {#az-code-gen-template-drivers}
 
 
 ****  
@@ -24,7 +24,7 @@ These scripts are usually called by one or more code generation passes in WAF `w
 + [Configuring Automatic Build Injection](#az-code-gen-template-drivers-configuring-automatic-build-injection)
 + [Preprocessing Intermediate Data](#az-code-gen-template-drivers-pre-processing-intermediate-data)
 
-## Specifying Drivers in Waf<a name="az-code-gen-template-drivers-specifying-in-waf"></a>
+## Specifying Drivers in Waf {#az-code-gen-template-drivers-specifying-in-waf}
 
 Drivers are specified by file name in each code generation pass\. The file path is relative to the root of the `wscript` target\. All drivers are invoked on each input file\.
 
@@ -41,7 +41,7 @@ The following shows the structure of a sample Waf entry\.
 
 For more details on how to specify passes, see [AZ Code Generator Integration with Waf ](/docs/userguide/codegen/waf-integration.md)\.
 
-## Creating a Template Driver in Python<a name="az-code-gen-template-drivers-python"></a>
+## Creating a Template Driver in Python {#az-code-gen-template-drivers-python}
 
 To create a template driver in Python, you must import the `TemplateDriver` base class and override its methods\. The code for the class can be found in the `dev/Code/Tools/AzCodeGenerator/Scripts/az_code_gen/base.py` file\.
 
@@ -51,11 +51,11 @@ This class is automatically injected into Python by AZ Code Generator and only n
 from az_code_gen.base import *
 ```
 
-### Methods to Override in the TemplateDriver Class<a name="az-code-gen-template-drivers-templatedriver-class-methods"></a>
+### Methods to Override in the TemplateDriver Class {#az-code-gen-template-drivers-templatedriver-class-methods}
 
 To implement your template driver, override the following methods in the `TemplateDriver` class\.
 
-#### add\_dependency<a name="az-code-gen-template-drivers-templatedriver-class-methods-add-dependency"></a>
+#### add\_dependency {#az-code-gen-template-drivers-templatedriver-class-methods-add-dependency}
 
 Call the `add_dependency` method to manually add a dependency to the `az_code_gen` task in Waf\. The file path given should be absolute so that the render template can specify additional dependencies that Waf does not automatically include\. These dependencies might be external data files used to render the templates, or files that were used to generate the input data\.
 
@@ -65,7 +65,7 @@ Call the `add_dependency` method to manually add a dependency to the `az_code_ge
 add_dependency(self, dependency_file)
 ```
 
-#### apply\_transformations<a name="az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations"></a>
+#### apply\_transformations {#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations}
 
 Override the `apply_transformations` method to manipulate the raw JSON object, which is passed in as the `obj` parameter\. Manipulations are performed in place on the object\. The object is then forwarded through the pipeline and is eventually passed to `jinja_args` of `render_templates`\. Any object returned by this method is provided to the Jinja environment as `extra_data`\.
 
@@ -77,7 +77,7 @@ apply_transformations(self, obj)
 
 For an example of this method, see [Preprocessing Intermediate Data](#az-code-gen-template-drivers-pre-processing-intermediate-data)\.
 
-#### get\_expected\_tags<a name="az-code-gen-template-drivers-templatedriver-class-methods-get-expected-tags"></a>
+#### get\_expected\_tags {#az-code-gen-template-drivers-templatedriver-class-methods-get-expected-tags}
 
 Override the `get_expected_tags` method to return a list of tags that must be found in any input file\. If the required tags are not present, this driver is skipped\.
 
@@ -90,7 +90,7 @@ This method is deprecated as of Lumberyard v1\.6\. After Lumberyard v1\.6, all s
 get_expected_tags(self)
 ```
 
-### render\_template\_to\_file<a name="az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file"></a>
+### render\_template\_to\_file {#az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file}
 
 Renders a template to disk\. This method also adds the value of `output_file` as a dependency of the `az_code_gen` task in Waf\.
 
@@ -100,7 +100,7 @@ Renders a template to disk\. This method also adds the value of `output_file` as
 render_template_to_file(self, template_file, template_kwargs, output_file, should_add_to_build=False)
 ```
 
-#### Parameters<a name="az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file-parameters"></a>
+#### Parameters {#az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file-parameters}
 
 
 ****  
@@ -112,7 +112,7 @@ render_template_to_file(self, template_file, template_kwargs, output_file, shoul
 | output\_file | Specifies the target file for the rendered Jinja output\. The path is relative to the target output folder\. | 
 | should\_add\_to\_build | A Boolean value that specifies whether Waf should add this file to the C\+\+ build and linker\. The default is false\. | 
 
-### render\_templates<a name="az-code-gen-template-drivers-templatedriver-class-methods-render-templates"></a>
+### render\_templates {#az-code-gen-template-drivers-templatedriver-class-methods-render-templates}
 
 Override `render_templates` to invoke template rendering by calling `render_template_to_file`\. 
 
@@ -122,7 +122,7 @@ Override `render_templates` to invoke template rendering by calling `render_temp
 render_templates(self, input_file, **jinja_args)
 ```
 
-#### Parameters<a name="az-code-gen-template-drivers-templatedriver-class-methods-render-templates-parameters"></a>
+#### Parameters {#az-code-gen-template-drivers-templatedriver-class-methods-render-templates-parameters}
 
 
 ****  
@@ -132,7 +132,7 @@ render_templates(self, input_file, **jinja_args)
 | input\_file | The path relative to the input path that is used to invoke Clang\.  | 
 | jinja\_args | The raw data from the intermediate JSON object after the template driver performs preprocessing on the object\. | 
 
-## Minimal Template Driver<a name="az-code-gen-template-drivers-minimal-template-driver"></a>
+## Minimal Template Driver {#az-code-gen-template-drivers-minimal-template-driver}
 
 The minimum code required for a template driver is to derive from the `TemplateDriver` base class and implement a factory function to construct the template driver\.
 
@@ -154,7 +154,7 @@ The `create_drivers` function simply forwards the Jinja environment that is used
 **Note**  
 The above bare\-bones implementation works but does not generate any output\.
 
-## Rendering Templates<a name="az-code-gen-template-drivers-rendering-templates"></a>
+## Rendering Templates {#az-code-gen-template-drivers-rendering-templates}
 
 To generate some output, you must implement the `render_templates` method, as in the following example\.
 
@@ -176,7 +176,7 @@ Template drivers can extend this information by implementing the `apply_transfo
 
 The `render_template_to_file` method takes a template file and argument key–value pairs to pass into the template engine directly and an output path to write the template engine render output to disk\.
 
-## Configuring Automatic Build Injection<a name="az-code-gen-template-drivers-configuring-automatic-build-injection"></a>
+## Configuring Automatic Build Injection {#az-code-gen-template-drivers-configuring-automatic-build-injection}
 
 At this point, the example generates a minimal `.cpp` file\. The example above does not compile or link the `.cpp` file\. This is appropriate if you intend to include the generated code manually using an `#include` in another file\.
 
@@ -200,7 +200,7 @@ def create_drivers(env):
     return [MyTemplateDriver(env)]
 ```
 
-## Preprocessing Intermediate Data<a name="az-code-gen-template-drivers-pre-processing-intermediate-data"></a>
+## Preprocessing Intermediate Data {#az-code-gen-template-drivers-pre-processing-intermediate-data}
 
 Some cases require preprocessing of the intermediate data for easier consumption by the template engine\. To do this, implement the `apply_transformations` method in your template driver\. You can use this method to access the intermediate JSON data object directly before it gets passed to `render_templates`\. An example follows\.
 

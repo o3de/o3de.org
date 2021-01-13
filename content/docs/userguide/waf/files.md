@@ -3,7 +3,7 @@ description: ' Learn more about the Waf file system that &ALY; uses, including W
   module files, Waf file lists, and project and compilation files. '
 title: Waf File System
 ---
-# Waf File System<a name="waf-files"></a>
+# Waf File System {#waf-files}
 
 You can find global configurations and project specs in the `_WAF_` directory at the root project path\. Three subfolders represent settings specific to the following build systems: `android`, `apple`, and `msbuild`\. Defined specs are located in the `specs` directory\.
 

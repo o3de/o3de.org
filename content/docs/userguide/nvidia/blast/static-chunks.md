@@ -3,7 +3,7 @@ description: ' Create realistic partial destruction simulations in &ALYlong; wit
   NVIDIA Blast. '
 title: Partial destruction with NVIDIA Blast
 ---
-# Partial destruction with NVIDIA Blast<a name="nvidia-blast-static-chunks"></a>
+# Partial destruction with NVIDIA Blast {#nvidia-blast-static-chunks}
 
 
 ****  
@@ -14,7 +14,7 @@ title: Partial destruction with NVIDIA Blast
 
 In some scenarios, you might want to partly destroy an entity\. For example, you create a destructible wall, but want the bottom of the wall to remain in place as a static mesh with colliders after the top of the wall takes damage from a projectile and is destroyed\. You can achieve this by adding **static** to the `name` primitive attribute of non\-root mesh chunks in Houdini\. 
 
-## Make non\-root chunks static in NVIDIA Blast<a name="nvidia-blast-make-static-chunks"></a>
+## Make non\-root chunks static in NVIDIA Blast {#nvidia-blast-make-static-chunks}
 
 Use Houdini to make non\-root chunks static, which results in partial destruction of the asset\.
 

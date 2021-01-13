@@ -2,7 +2,7 @@
 description: ' Create nested slices in &ly-editor;. '
 title: Creating Nested Slices
 ---
-# Creating Nested Slices<a name="component-inheriting-slice"></a>
+# Creating Nested Slices {#component-inheriting-slice}
 
 A nested slice contains instances of other slices\. Nested slices can store their own overrides for component and entity properties\. They can also contain their own entities\. 
 

@@ -2,11 +2,11 @@
 description: ' Use gems to add C++ code to a game project in &ALYlong;. '
 title: Adding C++ Code to a &ALY; Game with Gems
 ---
-# Adding C\+\+ Code to a Lumberyard Game with Gems<a name="component-entity-system-pg-gems-code"></a>
+# Adding C\+\+ Code to a Lumberyard Game with Gems {#component-entity-system-pg-gems-code}
 
 To add C\+\+ code or assets to your Lumberyard game, use a [gem](/docs/userguide/gems/builtin/s.md)\. This document shows you how to create a gem and the various techniques that you can use to add code to it\.
 
-## Creating and Configuring Gems<a name="component-entity-system-pg-gems-code-create-configure"></a>
+## Creating and Configuring Gems {#component-entity-system-pg-gems-code-create-configure}
 
 Creating a gem is straightforward\. To create or enable a gem for your game project, follow the steps in the [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\. The gem that you create or enable is located in the `\dev\Gems\<gem name>` directory\. The gem's directory structure is similar to the following example\. Your gem might not have all the directories listed\.
 
@@ -26,7 +26,7 @@ Creating a gem is straightforward\. To create or enable a gem for your game proj
 + `Code\Tests` – Contains unit testing source code for projects that are built in a test configuration\.
 + `External` – Contains external libraries on which the gem depends that are specific to the gem\.
 
-### Code Directory Contents<a name="component-entity-system-pg-gems-code-create-configure-code-directory-contents"></a>
+### Code Directory Contents {#component-entity-system-pg-gems-code-create-configure-code-directory-contents}
 
 The `\dev\Gems\<gem name>\Code` subdirectory has the following items that Lumberyard creates by default:
 
@@ -84,11 +84,11 @@ The `.waf_files` file contains the following three levels of indentation:
   + A special value called `Root` represents the root node of the project explorer in Microsoft Visual Studio \(that is, the file is not placed in any subdirectory\)\.
 + The third level contains paths to the source files relative to the location of the `waf_files` file itself\.
 
-## Updating Gem Code<a name="component-entity-system-pg-gems-code-updating"></a>
+## Updating Gem Code {#component-entity-system-pg-gems-code-updating}
 
 To update code in your gem, add a third\-party library, new source code files, system components, or dependencies on other gems or Lumberyard modules\.
 
-### Adding an External Third\-Party Library to a Gem<a name="component-entity-system-pg-gems-code-updating-adding-third-party-library"></a>
+### Adding an External Third\-Party Library to a Gem {#component-entity-system-pg-gems-code-updating-adding-third-party-library}
 
 A gem can use any Lumberyard third\-party library, including its own private third\-party library\. To register a private third\-party library for a gem, create a third\-party configuration file in the `\3rdParty` directory of the gem\. For more information, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md)\.
 
@@ -98,7 +98,7 @@ Waf uses two conventions to add dependencies to third\-party libraries: `uselib`
 
 The convention `use` is similar to the `uselib` keyword, except that the library's dependencies are recursively propagated to the module that adds the dependency\. If a gem uses `use` to consume its gem\-specific library, then the library can be used recursively\. This means that if the gem is enabled, the gem–specific third\-party library is also available to the game project or dependent gems\.
 
-### Adding New Source C\+\+ Files to Gems<a name="component-entity-system-pg-gems-code-updating-adding-code"></a>
+### Adding New Source C\+\+ Files to Gems {#component-entity-system-pg-gems-code-updating-adding-code}
 
 To add source code \(for example, C\+\+ or Qt\) to a gem, use the Lumberyard [Using the Waf Build System](/docs/userguide/waf/intro.md)\. Place internal source files \(that is, files not meant to be exposed outside of the gem\) under the `\Code\Source` directory\. Place header files that can be included in projects or other gems in the `\Code\Include\<gem name>\` directory\. Place additional unit tests in the `\Code\Tests` directory\.
 
@@ -110,15 +110,15 @@ To add source code \(for example, C\+\+ or Qt\) to a gem, use the Lumberyard [Us
 
 1. From a command prompt window, run `lmbr_waf configure` to configure Waf and regenerate the Microsoft Visual Studio solution\.
 
-### Adding System Components<a name="component-entity-system-pg-gems-code-updating-adding-system-components"></a>
+### Adding System Components {#component-entity-system-pg-gems-code-updating-adding-system-components}
 
 New gems come with a default system component called **<gem name>*SystemComponent*\. You can modify this system component according to your requirements\. To communicate with the system component, you can define as many EBuses as required\. If you want to add additional components, you must add the component descriptor to the AZ module for the gem \( `\Code\Source\<gem name>Module.cpp`\)\. For more information, see [System Components](/docs/userguide/modules/system-components.md) and [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)\.
 
-### Adding Dependencies to a Gem<a name="component-entity-system-pg-gems-code-adding-dependencies"></a>
+### Adding Dependencies to a Gem {#component-entity-system-pg-gems-code-adding-dependencies}
 
 In addition to adding dependencies to gem\-specific third\-party libraries, your gem can specify dependencies on Lumberyard Engine modules, other gems, or third\-party libraries for Lumberyard\.
 
-#### Adding a Dependency on a Lumberyard Module<a name="component-entity-system-pg-gems-code-adding-dependencies-lumberyard-module"></a>
+#### Adding a Dependency on a Lumberyard Module {#component-entity-system-pg-gems-code-adding-dependencies-lumberyard-module}
 
 Any gem can be configured to depend on any of the following Lumberyard framework modules:
 + `AzCore`
@@ -140,7 +140,7 @@ def build(bld):
     )
 ```
 
-#### Adding a Dependency on Another Gem<a name="component-entity-system-pg-gems-code-adding-dependencies-gem"></a>
+#### Adding a Dependency on Another Gem {#component-entity-system-pg-gems-code-adding-dependencies-gem}
 
 You can configure gem A to depend on gem B by modifying gem A's `gem.json` and wscript files\. The following example shows how the Twitch gem, included with Lumberyard, declares a dependency on the [HttpRequestor gem](/docs/userguide/http-requestor-gem.md)\. This `gems.json` file is located in the `lumberyard_installation\dev\Gems\Twitch\` directory\.
 
@@ -193,7 +193,7 @@ def build(bld):
     )
 ```
 
-#### Adding a Dependency on a Third\-Party Library for Lumberyard<a name="component-entity-system-pg-gems-code-adding-dependencies-third-party-library-for-lumberyard"></a>
+#### Adding a Dependency on a Third\-Party Library for Lumberyard {#component-entity-system-pg-gems-code-adding-dependencies-third-party-library-for-lumberyard}
 
 You can define a gem that uses a third\-party library for Lumberyard that another module is also using\. To do so, use the Waf `uselib` mechanism to add the dependency to the gem, as in the following example `wscript` file\.
 

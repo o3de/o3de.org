@@ -3,7 +3,7 @@ description: ' Use the ChatPlay Gem to trigger events based on Twitch chat activ
   in &ALYlong;. '
 title: ChatPlay Gem
 ---
-# ChatPlay Gem<a name="gems-system-gem-chatplay"></a>
+# ChatPlay Gem {#gems-system-gem-chatplay}
 
 
 ****  
@@ -16,5 +16,5 @@ The Twitch ChatPlay Gem provides a flexible framework to create customized game 
 
 For example, you can create a chat command `#cheer` that triggers celebration animations in your game\. 
 
-## Additional Links<a name="gems-system-gem-chatplay-additional-links"></a>
+## Additional Links {#gems-system-gem-chatplay-additional-links}
 + [Intro to ChatPlay](https://docs.aws.amazon.com/lumberyard/latest/userguide/chatplay-intro.html)

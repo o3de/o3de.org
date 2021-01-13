@@ -3,7 +3,7 @@ description: ' Use extendable nodes to allow users to add as many slots as they 
   to a node in &script-canvas;, &ALYlong;''s visual scripting system. '
 title: Extendable Nodes
 ---
-# Extendable Nodes<a name="script-canvas-custom-nodes-extendable"></a>
+# Extendable Nodes {#script-canvas-custom-nodes-extendable}
 
 Certain nodes, such as the math operators, can function on an arbitrarily long list of parameters\. To maintain this feature without creating a needlessly large node, extendable slots let users add as many slots as they require to a node\.
 

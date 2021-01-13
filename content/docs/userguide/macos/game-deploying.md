@@ -2,7 +2,7 @@
 description: ' Run a macOS game using the &ALY; build tools. '
 title: Running macOS Games
 ---
-# Running macOS Games<a name="osx-game-deploying"></a>
+# Running macOS Games {#osx-game-deploying}
 
 
 ****  

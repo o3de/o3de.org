@@ -3,7 +3,7 @@ description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; ed
   to set a material parameter with a number value. '
 title: Set Param Number
 ---
-# Set Param Number<a name="script-canvas-material-set-param-number-node"></a>
+# Set Param Number {#script-canvas-material-set-param-number-node}
 
 Sets a material parameter with a number value\.
 
@@ -13,7 +13,7 @@ Sets a material parameter with a number value\.
 
 ![\[setparamnumbernode, setparamnumber\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-number-node.png)
 
-## Inputs<a name="script-canvas-material-set-param-number-node-input"></a>
+## Inputs {#script-canvas-material-set-param-number-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Sets a material parameter with a number value\.
 | Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Number | Number |  The new value to apply\.  | 
 
-## Outputs<a name="script-canvas-material-set-param-number-node-output"></a>
+## Outputs {#script-canvas-material-set-param-number-node-output}
 
 
 ****  

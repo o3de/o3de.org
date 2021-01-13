@@ -3,7 +3,7 @@ description: ' Add a layout fitter component to an element in the &ALYlong; &ui-
   to make the element fit its content. '
 title: LayoutFitter
 ---
-# LayoutFitter<a name="ui-editor-components-layout-fitter"></a>
+# LayoutFitter {#ui-editor-components-layout-fitter}
 
 You can use the **LayoutFitter** component to make an element resize itself to fit its content\. Use this component with other components that provide cell sizing information, such as the **Text** component, the **Image** component \(with **ImageType** set to **Fixed**\), or the **Layout** components \(**Cell**, **Row**, **Column**, **Grid**\)\. 
 

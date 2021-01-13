@@ -3,7 +3,7 @@ description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; edi
   to set a material parameter with a color value. '
 title: Set Param Color
 ---
-# Set Param Color<a name="script-canvas-material-set-param-color-node"></a>
+# Set Param Color {#script-canvas-material-set-param-color-node}
 
 Sets a material parameter with a color value\.
 
@@ -13,7 +13,7 @@ Sets a material parameter with a color value\.
 
 ![\[setparamcolor, setparamcolornode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-color-node.png)
 
-## Inputs<a name="script-canvas-material-set-param-color-node-input"></a>
+## Inputs {#script-canvas-material-set-param-color-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Sets a material parameter with a color value\.
 | Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Color | Color |  The new value to apply\.  | 
 
-## Outputs<a name="script-canvas-material-set-param-color-node-output"></a>
+## Outputs {#script-canvas-material-set-param-color-node-output}
 
 
 ****  

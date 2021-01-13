@@ -2,7 +2,7 @@
 description: ' Debug the &project-configurator; in &ALYlong;. '
 title: Troubleshooting
 ---
-# Troubleshooting<a name="configurator-debugging"></a>
+# Troubleshooting {#configurator-debugging}
 
 
 ****  

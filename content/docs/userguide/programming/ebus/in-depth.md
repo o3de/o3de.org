@@ -2,7 +2,7 @@
 description: ' Learn detailed information about EBuses in &ALYlong;. '
 title: Event Buses in Depth
 ---
-# Event Buses in Depth<a name="ebus-in-depth"></a>
+# Event Buses in Depth {#ebus-in-depth}
 
 Event buses \(or EBus for short\) are a general purpose system for dispatching messages\. Ebuses have many advantages: 
 + **Abstraction** – Minimize hard dependencies between systems\.
@@ -23,7 +23,7 @@ You can use EBuses in many different ways\. Following are some examples:
 
 The EBus source code can found in the Lumberyard directory location `<root>\dev\Code\Framework\AZCore\AZCore\EBus\EBus.h`\.
 
-## Bus Configurations<a name="ebus-in-depth-configuration"></a>
+## Bus Configurations {#ebus-in-depth-configuration}
 
 You can configure EBuses for various usage patterns\. This section presents common configurations and their applications\.
 
@@ -33,7 +33,7 @@ You can configure EBuses for various usage patterns\. This section presents comm
 + [EBus with Addresses and a Single Handler](#ebus-in-depth-configuration-addresses-single-handler)
 + [EBus with Addresses and Many Handlers](#ebus-in-depth-configuration-addresses-many-handlers)
 
-### Single Handler<a name="ebus-in-depth-configuration-single"></a>
+### Single Handler {#ebus-in-depth-configuration-single}
 
 The simplest configuration is a many\-to\-one \(or zero\) communication bus, much like a singleton pattern\.
 
@@ -49,7 +49,7 @@ static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
 ```
 
-### Many Handlers<a name="ebus-in-depth-configuration-many"></a>
+### Many Handlers {#ebus-in-depth-configuration-many}
 
 Another common configuration is one in which many handlers can be present\. You can use this configuration to implement observer patterns, subscriptions to system events, or general\-purpose broadcasting\.
 
@@ -57,7 +57,7 @@ Another common configuration is one in which many handlers can be present\. You 
 
 Events to the handlers can be received in defined or undefined order\. You specify which one in the `HandlerPolicy` trait\.
 
-#### Example Without Handler Ordering<a name="ebus-in-depth-configuration-many-unordered"></a>
+#### Example Without Handler Ordering {#ebus-in-depth-configuration-many-unordered}
 
 To handle events in no particular order, simply use the `Multiple` keyword in the `HandlerPolicy` trait, as in the following example: 
 
@@ -69,7 +69,7 @@ static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multip
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
 ```
 
-#### Example with Handler Ordering<a name="ebus-in-depth-configuration-many-ordered"></a>
+#### Example with Handler Ordering {#ebus-in-depth-configuration-many-ordered}
 
 To handle events in a particular order, use the `MultipleAndOrdered` keyword in the `HandlerPolicy` trait, and then implement a custom handler\-ordering function, as in the following example: 
 
@@ -87,7 +87,7 @@ struct BusHandlerOrderCompare : public AZStd::binary_function<MyBusInterface*, M
 };
 ```
 
-### EBus with Addresses and a Single Handler<a name="ebus-in-depth-configuration-addresses-single-handler"></a>
+### EBus with Addresses and a Single Handler {#ebus-in-depth-configuration-addresses-single-handler}
 
 EBuses also support addressing based on a custom ID\. Events addressed to an ID are received by handlers connected to that ID\. If an event is broadcast without an ID, it is received by handlers at all addresses\.
 
@@ -95,7 +95,7 @@ A common use for this approach is for communication among the components of a si
 
 ![\[Addressing based on specific IDs\]](/images/userguide/ebus-in-depth-3.png)
 
-#### Example Without Address Ordering<a name="ebus-in-depth-configuration-single-addresses-unordered"></a>
+#### Example Without Address Ordering {#ebus-in-depth-configuration-single-addresses-unordered}
 
 In the following example, messages broadcast with an ID arrive at each address in no particular order\.
 
@@ -110,7 +110,7 @@ static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ById;
 using BusIdType = AZ::EntityId;
 ```
 
-#### Example With Address Ordering<a name="ebus-in-depth-configuration-single-addresses-ordered"></a>
+#### Example With Address Ordering {#ebus-in-depth-configuration-single-addresses-ordered}
 
 In the following example, messages broadcast with an ID arrive at each address in a specified order\.
 
@@ -128,13 +128,13 @@ using BusIdType = AZ::EntityId;
 using BusIdOrderCompare = AZStd::greater<BusIdType>;
 ```
 
-### EBus with Addresses and Many Handlers<a name="ebus-in-depth-configuration-addresses-many-handlers"></a>
+### EBus with Addresses and Many Handlers {#ebus-in-depth-configuration-addresses-many-handlers}
 
 In the previous configuration, only one handler is allowed per address\. This is often desirable to enforce ownership of an EBus for a specific ID, as in the singleton case above\. However, if you want more than one handler per address, you can configure the EBus accordingly:
 
 ![\[More than one handler per address\]](/images/userguide/ebus-in-depth-4.png)
 
-#### Example: Without Address Ordering<a name="ebus-in-depth-configuration-many-addresses-unordered"></a>
+#### Example: Without Address Ordering {#ebus-in-depth-configuration-many-addresses-unordered}
 
 In the following example, messages broadcast with an ID arrive at each address in no particular order\. At each address, the order in which handlers receive the message is defined by `EBusHandlerPolicy`, which in this example is simply `ById`:
 
@@ -149,7 +149,7 @@ static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ById;
 using BusIdType = AZ::EntityId;
 ```
 
-#### Example: With Address Ordering<a name="ebus-in-depth-configuration-many-addresses-ordered"></a>
+#### Example: With Address Ordering {#ebus-in-depth-configuration-many-addresses-ordered}
 
 In the following example, messages broadcast with an ID arrive at each address in a specified order\. At each address, the order in which handlers receive the message is defined by the `EBusHandlerPolicy`, which in this example is `ByIdAndOrdered`\.
 
@@ -167,7 +167,7 @@ using BusIdType = AZ::EntityId;
 using BusIdOrderCompare = AZStd::greater<BusIdType>;
 ```
 
-## Synchronous vs\. Asynchronous<a name="ebus-in-depth-synchronous"></a>
+## Synchronous vs\. Asynchronous {#ebus-in-depth-synchronous}
 
 EBus supports both synchronous and asynchronous \(queued\) messaging\. 
 
@@ -185,9 +185,9 @@ Asynchronous messages have the following advantages:
 + The performance of the code that initiates events doesn't rely on the efficiency of the code that handles the events\.
 + In performance\-critical code, asynchronous messages can improve i\-cache and d\-cache performance because they require fewer virtual function calls\.
 
-For information on declaring an EBus for queing and sending messages asynchronously, see [Asynchronous/Queued Buses](/docs/userguide/programming/ebus/usage-and-examples.md#ebus-usage-and-examples-queued)\.
+For information on declaring an EBus for queing and sending messages asynchronously, see [Asynchronous/Queued Buses](/docs/userguide/programming/ebus/usage-and-examples#ebus-usage-and-examples-queued)\.
 
-## Additional Features<a name="ebus-in-depth-features"></a>
+## Additional Features {#ebus-in-depth-features}
 
 EBuses contain other features that address various patterns and use cases:
 + **Cache a pointer to which messages can be dispatched** – This is handy for EBuses that have IDs\. Instead of looking up the EBus address by ID for each event, you can use the cached pointer for faster dispatching\.

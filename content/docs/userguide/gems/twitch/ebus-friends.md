@@ -3,11 +3,11 @@ description: ' Learn about the Friends C++ API operations for Twitch that you ca
   use for your &ALY; game project. '
 title: Friends
 ---
-# Friends<a name="twitch-api-ebus-friends"></a>
+# Friends {#twitch-api-ebus-friends}
 
 Friends APIs for Twitch
 
-## ResetFriendsNotificationCount<a name="twitch-api-ebus-friends-resetfriendsnotificationcount"></a>
+## ResetFriendsNotificationCount {#twitch-api-ebus-friends-resetfriendsnotificationcount}
 
 Deletes the count of friends notifications for the specified user\. When deleted, the notification count automatically resets to 0\.
 
@@ -49,7 +49,7 @@ No return value\.ResetFriendsNotificationCountNotify Callback
 Value – The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetFriendNotificationCount<a name="twitch-api-ebus-friends-getfriendnotificationcount"></a>
+## GetFriendNotificationCount {#twitch-api-ebus-friends-getfriendnotificationcount}
 
 Retrieves the number of unseen friends notifications for the active user\.
 
@@ -91,7 +91,7 @@ No return value\.ResetFriendsNotificationCountNotify Callback
 Value – If successful, the notification count for this call\. If unsuccessful, the count will display 0\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetFriendRecommendations<a name="twitch-api-ebus-friends-getfriendrecommendations"></a>
+## GetFriendRecommendations {#twitch-api-ebus-friends-getfriendrecommendations}
 
 Retrieves friend recommendations for the specified user\. Each recommendation includes one of the following reasons:
 + active\_in\_same\_channels – You are both active in the same channels\.
@@ -165,7 +165,7 @@ Value – The friend recommendation list, which includes the following data:
   + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetFriends<a name="twitch-api-ebus-friends-getfriends"></a>
+## GetFriends {#twitch-api-ebus-friends-getfriends}
 
 Retrieves the specified user's friends and returns a maximum of 256 friends\. You can use the result from the `cursor` parameter to retrieve the next block of friends\.
 
@@ -240,7 +240,7 @@ Value – The result of the `GetFriendReturn` call, which includes the following
     + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format Twitch::ResultCode\.
 
-## GetFriendStatus<a name="twitch-api-ebus-friends-getfriendstatus"></a>
+## GetFriendStatus {#twitch-api-ebus-friends-getfriendstatus}
 
 Retrieves the friendship status between the specified user \(sourceFriendID\) and another user \(targetFriendID\)\.
 
@@ -312,7 +312,7 @@ Value – The result of the `FriendStatus` call, which includes the following da
   + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format Twitch::ResultCode\.
 
-## AcceptFriendRequest<a name="twitch-api-ebus-friends-acceptfriendrequest"></a>
+## AcceptFriendRequest {#twitch-api-ebus-friends-acceptfriendrequest}
 
 Accepts a friend request and creates a friends relationship between the active user \(source\) and another user \(targetFriendID\)\. The target user must have an open friend request to the source user\.
 
@@ -352,7 +352,7 @@ No return value\.GetFriends Callback
 Value – The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetFriendRequests<a name="twitch-api-ebus-friends-getfriendrequests"></a>
+## GetFriendRequests {#twitch-api-ebus-friends-getfriendrequests}
 
 Retrieves open friend requests, which are requests that the active user has not yet accepted or declined\. A maximum of 2000 requests are returned, with non\-strangers first, followed by strangers\. You can use the result from the `cursor` parameter to retrieve the next block of friends\.
 
@@ -415,7 +415,7 @@ Value – The result of the `FriendRequestResult` call, which includes the follo
     + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## CreateFriendRequest<a name="twitch-api-ebus-friends-createfriendrequest"></a>
+## CreateFriendRequest {#twitch-api-ebus-friends-createfriendrequest}
 
 Sends a friend request from the active user \(source\) to another user \(targetID\)\.
 
@@ -455,7 +455,7 @@ No return value\.CreateFriendRequest Callback
 Value – The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## DeclineFriendRequest<a name="twitch-api-ebus-friends-declinefriendrequest"></a>
+## DeclineFriendRequest {#twitch-api-ebus-friends-declinefriendrequest}
 
 Declines a friend request from the active user \(source\) to another user \(targetID\)\.
 

@@ -3,7 +3,7 @@ description: ' Use the Load by Name node in the &ALYlong; &script-canvas; editor
   find and return a material with the specified name. '
 title: Load by Name
 ---
-# Load by Name<a name="material-load-by-name-node"></a>
+# Load by Name {#material-load-by-name-node}
 
 Finds and returns the material with the specified name\. Loads the material if the material is not already loaded\.
 
@@ -15,7 +15,7 @@ Finds and returns the material with the specified name\. Loads the material if t
 
 In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](/docs/userguide/scripting/scriptcanvas/variable-material-node.md)**\.
 
-## Inputs<a name="material-load-by-name-node-input"></a>
+## Inputs {#material-load-by-name-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ In some cases, you might need to store the material to use later\. For more info
 | In | Event | Triggers the node\. | 
 | Material Name | String |  The path name of a material to find and load\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  | 
 
-## Outputs<a name="material-load-by-name-node-output"></a>
+## Outputs {#material-load-by-name-node-output}
 
 
 ****  

@@ -3,7 +3,7 @@ description: ' Use source code annotations to pass additional data to the templa
   drivers that generate code when using &ALYlong;''s AZ Code Generator. '
 title: Custom Code Generator Annotations
 ---
-# Custom Code Generator Annotations<a name="az-code-gen-custom-annotations"></a>
+# Custom Code Generator Annotations {#az-code-gen-custom-annotations}
 
 
 ****  
@@ -19,7 +19,7 @@ You can provide additional data to your template driver by attaching annotations
 + [Helper Macros](#az-code-gen-custom-annotations-helper-macros)
 + [Example Annotations](#az-code-gen-custom-annotations-examples)
 
-## Reference Annotations<a name="az-code-gen-custom-annotations-reference"></a>
+## Reference Annotations {#az-code-gen-custom-annotations-reference}
 
 When you create custom code generator annotations, it is a good idea to refer for examples to the existing annotations in the `dev/Code/Framework/AZCore/AZCore/Preprocessor/CodeGen.h` file\. The existing annotations use macros extensively as a workaround for the lack of proper annotations in C\+\+\.
 
@@ -31,11 +31,11 @@ __attribute__((annotate("<Some string here>")))
 
 This attribute is wrapped with a macro that converts its contents into strings that can be parsed by the AZ Code Generator utility\.
 
-## Helper Macros<a name="az-code-gen-custom-annotations-helper-macros"></a>
+## Helper Macros {#az-code-gen-custom-annotations-helper-macros}
 
 AZ Code Generator has two helper macros for annotations: `AZCG_CreateAnnotation` and `AZCG_CreateArgumentAnnotation`\.
 
-### AZCG\_CreateAnnotation<a name="az-code-gen-custom-annotations-helper-macros-createannotation"></a>
+### AZCG\_CreateAnnotation {#az-code-gen-custom-annotations-helper-macros-createannotation}
 
 `AZCG_CreateAnnotation` is the core macro that exposes the underlying Clang `annotate` attribute\. The macro definition follows\.
 
@@ -46,7 +46,7 @@ AZ Code Generator has two helper macros for annotations: `AZCG_CreateAnnotation`
 
 Any argument passed to `AZCG_CreateAnnotation` must be a string\.
 
-### AZCG\_CreateArgumentAnnotation<a name="az-code-gen-custom-annotations-helper-macros-createargumentannotation"></a>
+### AZCG\_CreateArgumentAnnotation {#az-code-gen-custom-annotations-helper-macros-createargumentannotation}
 
 The `AZCG_CreateArgumentAnnotation` macro is commonly used for annotation macros\. The macro definition follows\.
 
@@ -57,11 +57,11 @@ The `AZCG_CreateArgumentAnnotation` macro is commonly used for annotation macros
 
 The `AZCG_CreateArgumentAnnotation` macro takes an `annotation_name` argument and a number of variable arguments\. The values passed to the variable arguments are collapsed into a single string for parsing by the AZ Code Generator\.
 
-## Example Annotations<a name="az-code-gen-custom-annotations-examples"></a>
+## Example Annotations {#az-code-gen-custom-annotations-examples}
 
 This section provides example annotations\. One example forwards arguments to the underlying macro, one places an annotation inside a class, and one injects code back into the originating file\.
 
-### Simple Annotation<a name="az-code-gen-custom-annotations-examples-simple"></a>
+### Simple Annotation {#az-code-gen-custom-annotations-examples-simple}
 
 The following example creates a new annotation called `AzExample` that forwards its arguments to the underlying macro\.
 
@@ -103,7 +103,7 @@ The tags inside the annotation are placed in JSON format in the generated interm
 }
 ```
 
-### Class Annotation Example<a name="az-code-gen-custom-annotations-examples-class"></a>
+### Class Annotation Example {#az-code-gen-custom-annotations-examples-class}
 
 The following example directs the AZ Code Generator utility to attach a free\-floating annotation to a class\.
 
@@ -176,7 +176,7 @@ The following example shows the same intermediate JSON object after processing b
     ]
 ```
 
-### Generated Code Injection Example<a name="az-code-gen-custom-annotations-examples-generated-code-injection"></a>
+### Generated Code Injection Example {#az-code-gen-custom-annotations-examples-generated-code-injection}
 
 The following example shows how to automatically inject generated code back into the original file\. The example extends the previously created `AzExampleClass` annotation by injecting code into the example class\.
 

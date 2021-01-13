@@ -3,7 +3,7 @@ description: ' Use properties and effects to customize the default ocean that &A
   creates for your level. '
 title: Setting Ocean Parameters
 ---
-# Setting Ocean Parameters<a name="terrain-water-ocean"></a>
+# Setting Ocean Parameters {#terrain-water-ocean}
 
 
 ****  

@@ -3,7 +3,7 @@ description: ' Use the Asset Validation gem''s seed mode in &ALY; to ensure that
   game assets are properly bundled. '
 title: Using the Asset Validation Gem to Verify Seeds
 ---
-# Using the Asset Validation Gem to Verify Seeds<a name="asset-bundler-asset-validation-gem"></a>
+# Using the Asset Validation Gem to Verify Seeds {#asset-bundler-asset-validation-gem}
 
 After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds\. The Asset Validation gem adds a set of seed\-related commands to the Lumberyard console command window\. You can use these commands to ensure that you have seeds for all assets that you want to bundle\.
 
@@ -14,11 +14,11 @@ During development, use seed mode to ensure that as assets get added they're pro
 **Note**  
 If you already have bundles to test, you can use *bundle mode* instead of seed mode\. For more information, see [Using Bundle Mode to Test Bundles](/docs/userguide/assets/bundle/bundle-mode.md)\.
 
-## Prerequisites<a name="asset-bundler-asset-validation-gem-prerequisites"></a>
+## Prerequisites {#asset-bundler-asset-validation-gem-prerequisites}
 
 [Enable](/docs/userguide/gems/using-project-configurator.md) the Asset Validation gem in your game project, and then [build](/docs/userguide/game-build-intro.md) your game project\.
 
-## Seed Mode Commands<a name="asset-bundler-asset-validation-gem-seed-mode-commands"></a>
+## Seed Mode Commands {#asset-bundler-asset-validation-gem-seed-mode-commands}
 
 When you use Lumberyard Editor or the launcher to run your game, the following console commands are available:
 + **seedmode** – Enables or disables the reporting system\.
@@ -41,7 +41,7 @@ When you use Lumberyard Editor or the launcher to run your game, the following c
 + **removeseedlist** *<Relative source path to a seed list>* – Removes all the assets in a seed list from your graph\.
 + **printblacklisted** – Enables or disables the display of approved assets in the system\. Some assets, like shaders, are loaded at runtime and do not appear in your dependency graph\. By design, shaders are packaged in their own `.pak` file, are not found in the dependency graph, and do not need to be reported by the system\. However, you can use the `printblacklisted` command to force shaders or other approved asset types to be included in the dependency graph\.
 
-## Using Seed Mode<a name="asset-bundler-asset-validation-gem-using-seed-mode"></a>
+## Using Seed Mode {#asset-bundler-asset-validation-gem-using-seed-mode}
 
 The following procedure shows how to use seed mode to troubleshoot a level that has missing assets\.
 
@@ -65,7 +65,7 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
 1. Enter game mode\. The Asset not found errors no longer appear\.  
 ![\[Using the addseedpath command in the Lumberyard console window.\]](/images/userguide/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
-### Handling Missing Asset Errors<a name="asset-bundler-asset-validation-gem-using-seed-mode-handling-missing"></a>
+### Handling Missing Asset Errors {#asset-bundler-asset-validation-gem-using-seed-mode-handling-missing}
 
 If seed mode reports that an asset is missing, the asset might be one of the following:
 + Part of a list that you haven't added to the graph yet\.

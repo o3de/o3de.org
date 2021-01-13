@@ -2,7 +2,7 @@
 description: ' Export multiple UV sets from .fbx files with FBX Settings to &ALYlong;. '
 title: Multiple UV sets for meshes and actors
 ---
-# Multiple UV sets for meshes and actors<a name="fbx-multiple-uv-sets"></a>
+# Multiple UV sets for meshes and actors {#fbx-multiple-uv-sets}
 
 
 ****  
@@ -20,13 +20,13 @@ You can use **FBX Settings** to import multiple UV sets\. With multiple UV sets,
 + [Materials and multiple UV sets](#fbx-setup-multiple-uv-sets)
 + [Independent tiling and UV sets](#fbx-uv-independent-tiling)
 
-## Processing multiple UV sets<a name="fbx-export-multiple-uv-sets"></a>
+## Processing multiple UV sets {#fbx-export-multiple-uv-sets}
 
 Lumberyard supports two UV sets per mesh\. **Asset Processor** follows these rules when processing UV sets: 
 + If the `.fbx` file contains one or two UV sets, the UV sets are automatically exported\.
 + If the `.fbx` file contains three or more UV sets, the first two sets are automatically exported, and the remaining sets are ignored\.
 
-## Materials and multiple UV sets<a name="fbx-setup-multiple-uv-sets"></a>
+## Materials and multiple UV sets {#fbx-setup-multiple-uv-sets}
 
 By default, **FBX Settings** creates materials for your exported mesh\. You must use the **Shader Generation Parameters** in the **Material Editor** to specify how the material should use the second UV set\. 
 
@@ -41,7 +41,7 @@ Follow these steps to apply the second UV set:
    + Detail Map – Select **Detail mapping** and **Use UV set 2 for detail map** to apply the second UV channel to the **Detail** texture slot\. 
    + Emittance Map – Select **Use UV set 2 for emittance map** to apply the second UV channel to the **Emittance** and **Decal** texture slots\. 
 
-## Independent tiling and UV sets<a name="fbx-uv-independent-tiling"></a>
+## Independent tiling and UV sets {#fbx-uv-independent-tiling}
 
 On the **Second Diffuse Map**, you can set independent values for the blend layer's texture inputs \(tiling, rotation, and oscillation\)\. Changes to these values don't affect the tiling, rotation, and oscillation values on the first **Diffuse Map**\. In addition, these values aren't applied to the **Blend Map**\. You can use the **Blend Mask Tiling** parameter under **Shader Params** to tile the **Blend Map**\.
 

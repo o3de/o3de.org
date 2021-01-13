@@ -3,7 +3,7 @@ description: ' Use the Leaderboard Cloud Gem Portal to create, view, and customi
   leaderboards. '
 title: Leaderboard Cloud Gem Portal
 ---
-# Leaderboard Cloud Gem Portal<a name="cloud-canvas-cloud-gem-leaderboard"></a>
+# Leaderboard Cloud Gem Portal {#cloud-canvas-cloud-gem-leaderboard}
 
 **Topics**
 + [Prerequisites](#cloud-canvas-cloud-gem-leaderboard-prerequisites)
@@ -15,7 +15,7 @@ title: Leaderboard Cloud Gem Portal
 
 You can use the Leaderboard cloud gem portal to create, view, and customize leaderboards by deleting scores, banning players, and removing bans\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-leaderboard-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-leaderboard-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the Leaderboard Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Leaderboard**\)\.
@@ -24,7 +24,7 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Leaderboard** in the Project Configurator\.
 
-## Accessing and Using the Leaderboard Cloud Gem Portal<a name="cloud-canvas-cloud-gem-leaderboard-accessing-using"></a>
+## Accessing and Using the Leaderboard Cloud Gem Portal {#cloud-canvas-cloud-gem-leaderboard-accessing-using}
 
 You use Lumberyard Editor to work with the Leaderboard Cloud Gem Portal\.
 

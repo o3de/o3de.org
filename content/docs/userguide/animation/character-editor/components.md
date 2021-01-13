@@ -2,7 +2,7 @@
 description: ' Use &animation-editor; components to animate your entities in &ALYlong;. '
 title: '&animation-editor; Components'
 ---
-# Animation Editor Components<a name="char-animation-editor-components"></a>
+# Animation Editor Components {#char-animation-editor-components}
 
 
 ****  

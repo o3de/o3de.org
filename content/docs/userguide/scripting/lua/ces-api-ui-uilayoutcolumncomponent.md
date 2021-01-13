@@ -2,15 +2,15 @@
 description: ' Use the UILayoutColumnComponent to control column layout in &ALYlong;. '
 title: UILayoutColumnComponent
 ---
-# UILayoutColumnComponent<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent"></a>
+# UILayoutColumnComponent {#lua-scripting-ces-api-ui-uilayoutcolumncomponent}
 
 Controls column layout\.
 
-## UiLayoutColumnBus<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus"></a>
+## UiLayoutColumnBus {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus}
 
 Services messages for the `UiLayoutColumnComponent`\.
 
-### GetOrder<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getorder"></a>
+### GetOrder {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getorder}
 
 Returns the vertical order for this layout\.
 
@@ -30,7 +30,7 @@ enum eUiVerticalOrder
     };
 ```
 
-### GetPadding<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getpadding"></a>
+### GetPadding {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getpadding}
 
 Returns, in pixels, the padding inside the edges of the element\.
 
@@ -52,7 +52,7 @@ class UiPadding
 };
 ```
 
-### GetSpacing<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getspacing"></a>
+### GetSpacing {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getspacing}
 
 Returns, in pixels, the spacing between child elements\.
 
@@ -62,7 +62,7 @@ Returns, in pixels, the spacing between child elements\.
 float GetSpacing()
 ```
 
-### SetOrder<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setorder"></a>
+### SetOrder {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setorder}
 
 Sets the vertical order for this layout\.
 
@@ -74,7 +74,7 @@ void SetOrder(eUiVerticalOrder order)
 
 For possible values for `eUiVerticalOrder`, see [GetOrder](#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getorder)\.
 
-### SetPadding<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setpadding"></a>
+### SetPadding {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setpadding}
 
 Sets the padding inside the edges of the element to the pixel value specified\.
 
@@ -86,7 +86,7 @@ void SetPadding(UiPadding padding)
 
 For the possible values for `UiPadding`, see [GetPadding](#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-getpadding)\.
 
-### SetSpacing<a name="lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setspacing"></a>
+### SetSpacing {#lua-scripting-ces-api-ui-uilayoutcolumncomponent-uilayoutcolumnbus-setspacing}
 
 Sets the spacing between child elements to the pixel value specified\.
 

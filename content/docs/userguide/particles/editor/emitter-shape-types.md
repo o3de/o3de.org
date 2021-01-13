@@ -3,7 +3,7 @@ description: ' Use the emitter shape types in &ALYlong;''s &particle-editor; to 
   a variety of effects. '
 title: Working with Emitter Shape Types
 ---
-# Working with Emitter Shape Types<a name="particle-editor-emitter-shape-types"></a>
+# Working with Emitter Shape Types {#particle-editor-emitter-shape-types}
 
 The Particle Editor provides emitter shape types that you can use to achieve a variety of effects, such as using the **Beam** emitter to create fire effects\.
 

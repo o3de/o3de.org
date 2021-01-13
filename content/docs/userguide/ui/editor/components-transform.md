@@ -2,7 +2,7 @@
 description: ' &ALYlong;''s &ui-canvas-editor; . '
 title: Transform2D Component
 ---
-# Transform2D Component<a name="ui-editor-components-transform"></a>
+# Transform2D Component {#ui-editor-components-transform}
 
 The **Transform2D** component is automatically added to every UI element you create\. This component defines the element's position, rotation, size, and scale\.
 

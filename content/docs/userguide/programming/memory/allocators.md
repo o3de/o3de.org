@@ -2,7 +2,7 @@
 description: ' Allocate and track memory in &ALYlong;. '
 title: Using Memory Allocators in &ALY;
 ---
-# Using Memory Allocators in Lumberyard<a name="memory-allocators"></a>
+# Using Memory Allocators in Lumberyard {#memory-allocators}
 
 Lumberyard’s memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
 
@@ -23,7 +23,7 @@ For best C\+\+ practices for managing memory in Lumberyard, see [Memory Manageme
 + [HPHA Memory Debugging](/docs/userguide/programming/memory/management-debugging-hpha.md)
 + [Overrun Detection](/docs/userguide/programming/memory/management-overrun-detection.md)
 
-## Manually Allocating Memory<a name="memory-allocators-manually-allocating-memory"></a>
+## Manually Allocating Memory {#memory-allocators-manually-allocating-memory}
 
 Lumberyard uses the following memory allocation functions\. You can find the source code in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\.
 
@@ -31,7 +31,7 @@ Lumberyard uses the following memory allocation functions\. You can find the sou
 ****  
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/memory-allocators.html)
 
-## AZ Memory Allocators<a name="memory-allocators-az-memory-allocators"></a>
+## AZ Memory Allocators {#memory-allocators-az-memory-allocators}
 
 The following diagram illustrates the hierarchy of AZ memory allocators\.
 
@@ -47,7 +47,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators\.
 `PoolAllocator` is not thread safe\. If you need a thread\-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization\.
 + **`ThreadPoolAllocator`** – Thread safe pool allocator\. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as Lumberyard requires a unique static variable for the allocator type\.
 
-## Applying Allocators to Your Classes<a name="memory-allocators-applying-allocators-to-your-classes"></a>
+## Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}
 
 To apply an allocator to your class, use the `AZ_CLASS_ALLOCATOR` macro in your class or directly call `AZ::AllocatorInstance`<*some\_allocator*>\.
 
@@ -55,7 +55,7 @@ AZCore relies on `AZ_CLASS_ALLOCATOR` to specify the default allocator for the c
 + If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `new` or `delete`, `new` or `delete` calls use the global `operator new` or `operator delete`\.
 + If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `aznew`, you must implement a `new` operator that uses the `aznew` call signature\.
 
-## AZ Allocator Schemas<a name="memory-allocators-az-allocator-schemas"></a>
+## AZ Allocator Schemas {#memory-allocators-az-allocator-schemas}
 
 Each allocator commonly implements the `IAllocator` interface and uses a schema to implement the allocation algorithms and bookkeeping\. This strategy enables the same schema to be used in multiple allocators\.
 
@@ -71,7 +71,7 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 | AZ::PoolSchema |  A specialized schema that implements a small block allocator for managing small, high\-throughput allocations\. Objects are typically pooled at the cost of using more memory\.  `PoolSchema` is not thread safe\. If you need a thread\-safe version, use `ThreadPoolSchema` or write custom code to handle the synchronization\.   | 
 | AZ::ThreadPoolSchema |  A thread\-safe pool schema that uses thread local storage to implement a small block allocator for each thread\.  Because the thread pool allocator creates separate pools for each thread, it uses somewhat more memory, especially for fixed pool sizes\.   | 
 
-## Creating an Allocator<a name="memory-allocators-creating-an-allocator"></a>
+## Creating an Allocator {#memory-allocators-creating-an-allocator}
 
 We recommend that each Lumberyard gem or logical subsystem create a `ChildAllocator` to properly tag the memory that it allocates\. This practice makes it easier to budget resource usage and get a holistic view of it\.
 
@@ -87,7 +87,7 @@ Prior to Lumberyard version 1\.16, the most common mechanism for creating a new 
 
 1. Add `AZ_TYPE_INFO` so that `AllocatorInstance<>` can properly manage your type\.
 
-### Using Your Own Allocators from Containers<a name="memory-allocators-using-your-own-allocators-from-containers"></a>
+### Using Your Own Allocators from Containers {#memory-allocators-using-your-own-allocators-from-containers}
 
 To use your own allocator from a container, wrap your allocator in `AZ::AZStdAlloc`, like the following example\.
 
@@ -95,7 +95,7 @@ To use your own allocator from a container, wrap your allocator in `AZ::AZStdAll
 AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 ```
 
-### Child Allocator Example<a name="memory-allocators-creating-a-child-allocator-example"></a>
+### Child Allocator Example {#memory-allocators-creating-a-child-allocator-example}
 
  The following code example adds a custom allocator for the [Script Canvas gem](/docs/userguide/gems/builtin/script-canvas.md)\.
 
@@ -224,11 +224,11 @@ namespace ScriptCanvas
 }
 ```
 
-## Static Initialization<a name="memory-allocators-static-initialization"></a>
+## Static Initialization {#memory-allocators-static-initialization}
 
 In a monolithic build, at static initialization time \(before the allocators are bootstrapped\), allocations are routed directly to the underlying operating system\. These static allocations are tracked in a fixed size set and sent back to the OS when they are freed\. They are also reported separately to memory tracking in the `Global` category\. To discover the memory that is being allocated globally, set a breakpoint in `AZ::Internal::GlobalAlloc`\.
 
-## Legacy Memory Management<a name="memory-allocators-legacy-memory-management"></a>
+## Legacy Memory Management {#memory-allocators-legacy-memory-management}
 
 Starting in Lumberyard version 1\.16, all `Cry*` allocation routines route to `AZ::LegacyAllocator`, which you can find in the `lumberyard_version\dev\Code\CryEngine\CryCommon\LegacyAllocator.h` file\. `LegacyAllocator` has the same lifetime as `OSAllocator` and obtains its memory from `OSAllocator`\.
 

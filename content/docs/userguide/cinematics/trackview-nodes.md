@@ -2,7 +2,7 @@
 description: ' See the following &trackview-editor; nodes in &ALYlong;. '
 title: Track View Editor Nodes
 ---
-# Track View Editor Nodes<a name="cinematics-trackview-nodes"></a>
+# Track View Editor Nodes {#cinematics-trackview-nodes}
 
 The Track View offers a variety of nodes for specific purposes\. Anything part of the sequence is considered a *node*\. Nodes can be a reference to existing component entities or added to a sequence\. The top\-level node in the tree view is the sequence and all other nodes are listed below the sequence\.
 

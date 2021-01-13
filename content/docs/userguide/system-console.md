@@ -3,11 +3,11 @@ description: ' Use the &ALYlong; console to customize and create your own consol
   variable commands. '
 title: Console in Depth
 ---
-# Console in Depth<a name="system-console"></a>
+# Console in Depth {#system-console}
 
 The console is a user interface system which handles console commands and console variables\. It also outputs log messages and stores the input and output history\.
 
-## Color coding<a name="system-console-color-coding"></a>
+## Color coding {#system-console-color-coding}
 
 The game console supports color coding by using the color indices 0\.\.9 with a leading $ character\. The code is hidden in the text outputted on the console\. Simple log messages through the `ILog` interface can be used to send text to the console\.
 
@@ -17,7 +17,7 @@ This is normal $1one$2two$3three and so on
 
 In the preceding example, one renders in red, two in green, and three \(and the remaining text\) in blue\.
 
-## Console Variables<a name="system-console-cvars"></a>
+## Console Variables {#system-console-cvars}
 
 Console variables provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application\.
 
@@ -25,19 +25,19 @@ More information on how to use command\-line arguments can be found in the [Com
 
 Console variables are commonly referred to as `CVar` in the code base\.
 
-### Registering new console variables<a name="system-console-cvars-registering"></a>
+### Registering new console variables {#system-console-cvars-registering}
 
 For an integer or float based console variable, it is recommended to use the `IConsole::Register()` function to expose a C\+\+ variable as a console variable\.
 
 To declare a new string console variable, use the `IConsole::RegisterString()` function\.
 
-### Accessing console variables from C\+\+<a name="system-console-cvars-accessing-from-cpp"></a>
+### Accessing console variables from C\+\+ {#system-console-cvars-accessing-from-cpp}
 
 Console variables are exposed using the `ICVar` interface\. To retrieve this interface, use the `IConsole::GetCVar()` function\.
 
 The most efficient way to read the console variable value is to access directly the C\+\+ variable bound to the console variable proxy\.
 
-## Adding New Console Commands<a name="system-console-adding-new"></a>
+## Adding New Console Commands {#system-console-adding-new}
 
 The console can easily be extended with new console commands\. A new console command can be implemented in C\+\+ as a static function which follows the `ConsoleCommandFunc` type\. Arguments for this console command are passed using the `IConsoleCmdArgs` interface\.
 
@@ -67,7 +67,7 @@ IConsole* pConsole = gEnv->pSystem->GetIConsole();
 pConsole->AddCommand("g_loadMod", RequestLoadMod);
 ```
 
-## Console Variable Groups<a name="system-console-cvar-groups"></a>
+## Console Variable Groups {#system-console-cvar-groups}
 
 Console variable groups provide a convenient way to apply predefined settings to multiple console variables at once\.
 
@@ -76,7 +76,7 @@ Console variables are commonly referred to as `CVarGroup` in the code base\. Con
 **Warning**  
 Cycles in the assignments are not detected and can cause crashes\.
 
-### Registering a new variable group<a name="system-console-cvar-groups-registering"></a>
+### Registering a new variable group {#system-console-cvar-groups-registering}
 
 To register a new variable group, add a new `.cfg` text file to the `GameSDK\config\CVarGroups` directory\.
 
@@ -106,7 +106,7 @@ On changing the variable, the new state is applied\. Console variables not speci
 
 If a console variable is not specified in a custom section, the value specified in the default section is applied\.
 
-### Console variable group documentation<a name="system-console-cvar-groups-documentation"></a>
+### Console variable group documentation {#system-console-cvar-groups-documentation}
 
 The documentation of the console variable group is generated automatically\.
 
@@ -124,9 +124,9 @@ sys_spec_Particles [1/2/3/4/x]:
  ... r_UseSoftParticles = 0/1/1/1/1
 ```
 
-### Checking if a console variable group value represents the state of the variables it controls<a name="system-console-cvar-groups-checking"></a>
+### Checking if a console variable group value represents the state of the variables it controls {#system-console-cvar-groups-checking}
 
-#### From the console<a name="system-console-cvar-groups-checking-from-console"></a>
+#### From the console {#system-console-cvar-groups-checking-from-console}
 
 In the console you can enter in the console variable group name and press tab\. If the variable value is not represented, it will print the value of `RealState`\.
 
@@ -138,17 +138,17 @@ sys_spec_Texture=1 [REQUIRE_NET_SYNC]
 
 By calling the console command `sys_RestoreSpec` you can check why the `sys_spec_` variables don't represent the right states\.
 
-#### From C\+\+ code<a name="system-console-cvar-groups-checking-from-cpp"></a>
+#### From C\+\+ code {#system-console-cvar-groups-checking-from-cpp}
 
 From the code you can use the member function `GetRealIVal()` and compare its return value against the result of `GetIVal()` in `ICVar`\.
 
-## Deferred execution of command line console commands<a name="system-console-deferred-execution"></a>
+## Deferred execution of command line console commands {#system-console-deferred-execution}
 
 The commands that are passed via the command line by using the \+ prefix are stored in a separate list as opposed to the rest of the console commands\.
 
 This list allows the application to distribute the execution of those commands over several frames rather than executing everything at once\.
 
-### Example<a name="system-console-deferred-execution-example"></a>
+### Example {#system-console-deferred-execution-example}
 
 Consider the following example\.
 
@@ -172,7 +172,7 @@ In the example, the following operations were performed:
 + Take a screenshot called autotestTime\.
 + Quit the application\.
 
-### Details<a name="system-console-deferred-execution-details"></a>
+### Details {#system-console-deferred-execution-details}
 
 Two categories of commands are defined: blocker and normal\.
 

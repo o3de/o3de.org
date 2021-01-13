@@ -2,7 +2,7 @@
 description: ' Create a basic vegetation layer in &ALYlong;. '
 title: Creating a Vegetation Layer
 ---
-# Creating a Vegetation Layer<a name="dynamic-vegetation-procedures-create-vegetation-layer"></a>
+# Creating a Vegetation Layer {#dynamic-vegetation-procedures-create-vegetation-layer}
 
 Creating a vegetation layer is the first and most basic step in creating your dynamic vegetation\. The following procedure uses a simple workflow and assets from the Starter Game project\.
 

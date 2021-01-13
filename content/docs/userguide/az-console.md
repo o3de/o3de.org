@@ -3,7 +3,7 @@ description: ' Use AZ::Console to set console variables and functors for your &A
   game. '
 title: AZ::Console
 ---
-# AZ::Console<a name="az-console"></a>
+# AZ::Console {#az-console}
 
 The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in\-game variables and processes\. Use the macros defined in this class to set the console variables \(cvars\) and functors \(cfuncs\) for your game, and then access them through the Lumberyard console\.
 
@@ -33,7 +33,7 @@ Remote console support\. The CryEngine console allows remote access by opening a
 + [Optional flags](#az-console-flags)
 + [Adding support for new console variable types](#az-console-new-types)
 
-## Console variables \(cvars\)<a name="az-console-cvars"></a>
+## Console variables \(cvars\) {#az-console-cvars}
 
 Declare a cvar using one of two macros from `IConsole.h:`
 
@@ -93,7 +93,7 @@ AZ_CVAR_EXTERNED(_TYPE, _NAME)
 
 Make sure that the **\_TYPE **and **\_NAME** parameters match those of the previously defined cvar\.
 
-## Console functors \(cfuncs\)<a name="az-console-cfuncs"></a>
+## Console functors \(cfuncs\) {#az-console-cfuncs}
 
 Console functions allow you to register a command with the console that's not associated with a specific type or value\. In Lumberyard, they're purely a mechanism to allow a method to be invoked directly from the Lumberyard in\-game console\. 
 
@@ -141,7 +141,7 @@ void ForceEnableMetrics(const StringSet&) {}
     AZ_CONSOLEFREEFREEFUNC(ForceEnableMetrics, FunctorFlags::Null, "If called, force enable metrics");
 ```
 
-## Optional flags<a name="az-console-flags"></a>
+## Optional flags {#az-console-flags}
 
 `AZ::Console` provides a set of flags that can be passed to cvar and cfunc declarations and indicate how they should be handled:
 
@@ -159,7 +159,7 @@ enum class FunctorFlags
 };
 ```
 
-## Adding support for new console variable types<a name="az-console-new-types"></a>
+## Adding support for new console variable types {#az-console-new-types}
 
 To add support for a new cvar type, override the two template methods that convert the custom type to a space\-delimited string from a vector of space\-delimited string inputs\.
 

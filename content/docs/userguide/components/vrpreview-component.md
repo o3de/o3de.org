@@ -3,7 +3,7 @@ description: ' Use the VR Preview component to instantly explore a space in virt
   reality. '
 title: VR Preview
 ---
-# VR Preview<a name="component-vrpreview-component"></a>
+# VR Preview {#component-vrpreview-component}
 
 The **VR Preview** component, when added to an entity or spawned from a slice, creates a user\-editable [navigation mesh](/docs/userguide/components/navigation.md)\. The navigation mesh is used to define valid areas that users can teleport to\. The **VR Preview** component sets up necessary dependencies for exploring or navigating a scene in virtual reality\. This component contains no editable properties\.
 

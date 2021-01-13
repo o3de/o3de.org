@@ -2,7 +2,7 @@
 description: ' Place a UI canvas on an object in the 3d world in &ALYlong;. '
 title: Placing UI Canvases in the 3D World
 ---
-# Placing UI Canvases in the 3D World<a name="ui-editor-placing-canvases-3d"></a>
+# Placing UI Canvases in the 3D World {#ui-editor-placing-canvases-3d}
 
 You can place a UI canvas directly on an object in the 3D world, as opposed to showing it in screen space\. To do this, you render a UI canvas to a texture, and then use that texture in a material on a 3D mesh\.
 

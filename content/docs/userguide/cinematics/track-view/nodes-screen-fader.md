@@ -3,7 +3,7 @@ description: ' Use the Screen Fader node to fade the screen in and out in a &ALY
   track view sequence. '
 title: Screen Fader Node
 ---
-# Screen Fader Node<a name="cinematics-track-view-nodes-screen-fader"></a>
+# Screen Fader Node {#cinematics-track-view-nodes-screen-fader}
 
 Use the **Screen Fader** node to fade the screen in and out in a scene\.
 

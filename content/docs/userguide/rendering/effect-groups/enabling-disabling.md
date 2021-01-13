@@ -3,7 +3,7 @@ description: ' Enable or disable effect groups with the &script-canvas; editor o
   in Lua. '
 title: Enabling and Disabling Effect Groups
 ---
-# Enabling and Disabling Effect Groups<a name="effect-groups-enabling-disabling"></a>
+# Enabling and Disabling Effect Groups {#effect-groups-enabling-disabling}
 
 You can enable and disable effect groups with the **Script Canvas** editor or Lua scripting\.
 

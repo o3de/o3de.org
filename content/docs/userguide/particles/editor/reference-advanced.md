@@ -3,7 +3,7 @@ description: ' Use the Advanced attribute in the &ALYlong; &particle-editor; to 
   advanced appearance and optimization settings. '
 title: Advanced Attribute
 ---
-# Advanced Attribute<a name="particle-editor-reference-advanced"></a>
+# Advanced Attribute {#particle-editor-reference-advanced}
 
 In the **Advanced** attribute, specify advanced appearance and optimization settings\.
 

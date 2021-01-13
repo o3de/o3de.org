@@ -2,7 +2,7 @@
 description: ' Create a slice in &ly-editor;. '
 title: Creating a Slice
 ---
-# Creating a Slice<a name="component-slices-creating"></a>
+# Creating a Slice {#component-slices-creating}
 
 A slice can contain any number of entities that have their own transform hierarchy\. The slice, however, must have a single transform root\. This means that you can change the size and position of child entities without affecting the parent entity\. But if you change the size or position of the parent entity, the child entities automatically adjust as well\.
 
@@ -15,7 +15,7 @@ A slice can contain any number of entities that have their own transform hierarc
 1. Save the slice file to the preferred location\. We recommend that you save slices to your game project folder\. Name your slices meaningfully and organize them into directories and subdirectories\. 
 
 **Note**  
-If you want Lumberyard Editor to add a number to your slices by default \(for example, *NewSlice001*\), you can set this option in the **General Settings**\. For more information, see [General Settings](/docs/userguide/editor/customizing.md#lumberyard-editor-customizing-preferences-general)\.
+If you want Lumberyard Editor to add a number to your slices by default \(for example, *NewSlice001*\), you can set this option in the **General Settings**\. For more information, see [General Settings](/docs/userguide/editor/customizing#lumberyard-editor-customizing-preferences-general)\.
 To save multiple entities in a slice, they must have a single transform root\. If they don't, then a **Cannot Create Slice** dialog box appears, giving you the opportunity to fix this issue by creating a root entity\. Select **Yes** to create a root entity while creating the slice\.  
 
 ![\[Choose Yes in the Cannot Create Slice dialog box to create a root entity while creating the slice.\]](/images/userguide/component/cannot-create-slice-create-root-entity.png)

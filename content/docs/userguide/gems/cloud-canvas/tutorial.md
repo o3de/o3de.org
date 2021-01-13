@@ -3,7 +3,7 @@ description: ' Sign up for an &AWS; account, get &AWS; credentials, and initiali
   and administer an &AWS;-enabled &ALY; project in this step-by-step tutorial. '
 title: 'Tutorial: Getting Started with &cloud;'
 ---
-# Tutorial: Getting Started with Cloud Canvas<a name="cloud-canvas-tutorial"></a>
+# Tutorial: Getting Started with Cloud Canvas {#cloud-canvas-tutorial}
 
 Cloud Canvas connects Lumberyard with Amazon Web Services \(AWS\) and uses cloud gems to enable connected features in your game\. This tutorial shows you how to deploy the resources for a cloud gem enabled project to AWS and guides you through the following tasks:
 + Signing up for an AWS account\.
@@ -15,13 +15,13 @@ Cloud Canvas connects Lumberyard with Amazon Web Services \(AWS\) and uses cloud
 
 Optionally, you can also learn how to inspect your resources in AWS, create IAM users and groups for administrative purposes, and remove Cloud Canvas deployments and resources from AWS\.
 
-## Prerequisites<a name="cloud-canvas-tutorial-prereqs"></a>
+## Prerequisites {#cloud-canvas-tutorial-prereqs}
 
 Before starting this tutorial, complete the following:
 + [Install and set up](/docs/userguide/setup/intro.md) Lumberyard\.
 + Read [Implementing Connected Features with Cloud Canvas](/docs/userguide/gems/cloud-canvas/intro.md)\.
 
-## Step 1: Sign up for AWS<a name="cloud-canvas-tutorial-sign-up"></a>
+## Step 1: Sign up for AWS {#cloud-canvas-tutorial-sign-up}
 
 When you sign up for AWS, you can access all its cloud capabilities\. Cloud Canvas creates resources in your AWS account to make these services accessible through Lumberyard\. You are charged only for the services that you use\. If you are a new AWS customer, you can get started with Cloud Canvas for free\. For more information, see [AWS Free Tier](https://aws.amazon.com/free/)\.
 
@@ -41,7 +41,7 @@ If you do not have an AWS account, complete the following steps to create one\.
 You must provide a payment method in order to create your account\. Although the tutorials here fall within the [AWS Free Tier](https://aws.amazon.com/free/), be aware that you can incur costs\.
 Make a note of your AWS account number, which you will use in the next step\.
 
-## Step 2: Create an IAM User to Administer the Cloud Canvas Project<a name="cloud-canvas-tutorial-create-iam-admin"></a>
+## Step 2: Create an IAM User to Administer the Cloud Canvas Project {#cloud-canvas-tutorial-create-iam-admin}
 
 After you sign up for an AWS account, you need an IAM user with appropriate permissions to administer a Cloud Canvas project\. IAM allows you to manage access to your AWS account\.
 
@@ -53,7 +53,7 @@ In a team environment, you—as a member of the administrator's group—can crea
 
 For more information on IAM and permissions, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)\.
 
-### Create an IAM User and an Administrator Group<a name="cloud-canvas-tutorial-create-iam-admin-user"></a>
+### Create an IAM User and an Administrator Group {#cloud-canvas-tutorial-create-iam-admin-user}
 
 This section guides you through IAM best practices by creating an IAM user and an administrator group in your account to which the IAM user belongs\.
 
@@ -120,7 +120,7 @@ If you lose your secret access key, you must create a new set of keys\.
 
 1. In the **Access keys** section, click **Create access key**\. 
 
-## Step 3: Enable One or More Cloud Gems in Your Project<a name="cloud-canvas-tutorial-enable-gem"></a>
+## Step 3: Enable One or More Cloud Gems in Your Project {#cloud-canvas-tutorial-enable-gem}
 
 Cloud Canvas functionality is enabled in Lumberyard through [gems](/docs/userguide/gems/builtin/s.md) and [cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md)\. Gems are extensions that share code and assets among Lumberyard projects\. Cloud gems are gems that use the power of AWS to provide connected features\. To enable gems and cloud gems in your project, you use the [Project Configurator](/docs/userguide/configurator/intro.md)\. 
 
@@ -136,7 +136,7 @@ This tutorial uses the Lumberyard CloudGemSamples project, which includes many o
 
 1. Close the Project Configurator\. 
 
-## Step 4: Add Administrator Credentials to Lumberyard<a name="cloud-canvas-tutorial-enter-admin-creds"></a>
+## Step 4: Add Administrator Credentials to Lumberyard {#cloud-canvas-tutorial-enter-admin-creds}
 
 In order to begin managing a Cloud Canvas project, you add the IAM user credentials that you generated earlier to a profile that Cloud Canvas can easily reference\. To do this, you can use either Lumberyard Editor or a command line prompt\.
 
@@ -169,7 +169,7 @@ Do not share these credentials with anyone, and do not check them into source co
 
 You have now created a profile to administer a Cloud Canvas project\. The profile name is associated with your credentials, and saved locally on your machine in your AWS credentials file\. This file is normally located in your `C:\Users\user_name\.aws\` directory\. As a convenience, other tools such as the [AWS Command Line Interface](https://aws.amazon.com/cli/) or the [AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/) can access these credentials\. 
 
-## Step 5: Upload Resources to AWS and Create a Deployment<a name="cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment"></a>
+## Step 5: Upload Resources to AWS and Create a Deployment {#cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment}
 
 You are now ready for the resources defined by your project to be created in AWS\.
 
@@ -212,7 +212,7 @@ You will need these credentials later to use the Cloud Gem Portal, which is the 
 
 1. Click **Create**\. The deployment operation takes about 10 minutes\.
 
-## Step 6: Access the Cloud Gem Portal<a name="cloud-canvas-tutorial-access-the-cloud-gem-portal"></a>
+## Step 6: Access the Cloud Gem Portal {#cloud-canvas-tutorial-access-the-cloud-gem-portal}
 
 Now that your cloud gems have been created, you can manage them in the Cloud Gem Portal\.
 
@@ -231,7 +231,7 @@ Now that your cloud gems have been created, you can manage them in the Cloud Gem
 
 1. Click a cloud gem to see its management page\.
 
-## Step 7: Learn More<a name="cloud-canvas-tutorial-optional-steps"></a>
+## Step 7: Learn More {#cloud-canvas-tutorial-optional-steps}
 
 See the following resources\.
 

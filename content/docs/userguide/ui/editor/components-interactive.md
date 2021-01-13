@@ -2,7 +2,7 @@
 description: ' Use interactive components in the &ALYlong; &ui-canvas-editor;. '
 title: Interactive Components
 ---
-# Interactive Components<a name="ui-editor-components-interactive"></a>
+# Interactive Components {#ui-editor-components-interactive}
 
 Interactive components respond to user input\. For example, the user can click a button or drag a slider\. You can use [Lua scripts](/docs/userguide/ui/editor/loading-canvases-lua.md) or Script Canvas graphs to link the component response to an action\.
 

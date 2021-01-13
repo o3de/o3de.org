@@ -2,7 +2,7 @@
 description: ' Use direct access to EBus handlers to reduce the amount of EBus traffic. '
 title: Direct Access to EBus Handlers
 ---
-# Direct Access to EBus Handlers<a name="ebus-handlers-direct-access"></a>
+# Direct Access to EBus Handlers {#ebus-handlers-direct-access}
 
 At run time, EBuses form a communication backbone between a component and other noncomponent subsystems\. In a nontrivial application, EBus activity can consume a substantial amount of CPU and memory usage\. On data\-cache \(D\-Cache\)–sensitive devices such as consoles, the number of data lookups on each EBus call can potentially degrade performance\. To reduce the number of data lookups, you can use a pointer to the EBus handler instead of calling the EBus\.
 
@@ -10,7 +10,7 @@ The result of an EBus interaction is identical to a virtual function call on an 
 
 The code examples in this document compare the two approaches\.
 
-## Using PhysicsComponentRequestBus to Get the Velocity Every Tick<a name="ebus-handlers-direct-access-using-get-velocity"></a>
+## Using PhysicsComponentRequestBus to Get the Velocity Every Tick {#ebus-handlers-direct-access-using-get-velocity}
 
 The following example gets the velocity indirectly by using the physics component EBus\.
 
@@ -88,7 +88,7 @@ private:
 };
 ```
 
-## Using TransformBus to Get the WorldTransform's Forward Vector Every Tick<a name="ebus-handlers-direct-access-using-get-worldtransforms-forward-vector"></a>
+## Using TransformBus to Get the WorldTransform's Forward Vector Every Tick {#ebus-handlers-direct-access-using-get-worldtransforms-forward-vector}
 
 The following example gets the world transform's forward vector by indirectly by using the transform EBus\.
 

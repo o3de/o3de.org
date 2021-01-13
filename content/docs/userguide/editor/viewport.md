@@ -3,7 +3,7 @@ description: ' Use the perspective viewport in &ly-editor; to place objects, edi
   terrain, test your game, and create assets in &ALYlong;. '
 title: Using the Viewport
 ---
-# Using the Viewport<a name="lumberyard-editor-viewport"></a>
+# Using the Viewport {#lumberyard-editor-viewport}
 
 The viewport window \(called **Perspective** in Lumberyard Editor\) displays the scene that is rendered by the engine\. The majority of level design occurs in the viewport, including object placement, terrain editing, in\-editor play testing, and asset creation and interaction\. You can also use dynamic and flexible tools to understand the 3D relationships among objects in a level\.
 
@@ -24,7 +24,7 @@ The **Perspective** header includes a search box, field of view \(FOV\), screen 
 
 1. Click **OK** to save your changes\.
 
-## Changing the Field of View \(FOV\)<a name="lumberyard-editor-viewport-view"></a>
+## Changing the Field of View \(FOV\) {#lumberyard-editor-viewport-view}
 
 You can change the default camera's FOV for the Lumberyard Editor viewport or the FOV for your game's camera\. Follow the steps to change the default camera's FOV\. To change the FOV for your game's camera, see [Camera](/docs/userguide/components/camera.md)\.
 
@@ -38,7 +38,7 @@ You can change the default camera's FOV for the Lumberyard Editor viewport or th
 
 1. Click **OK** to save your changes\.
 
-## Changing the Camera View<a name="lumberyard-editor-viewport-camera"></a>
+## Changing the Camera View {#lumberyard-editor-viewport-camera}
 
 You can use the **Viewport Camera Selector** to quickly position and orient a camera in your game\. You can choose between all in\-game cameras and the editor camera\. When you possess the camera, you can use the editor controls to manipulate the camera\.
 

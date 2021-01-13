@@ -2,7 +2,7 @@
 description: ' Set track view sequence properties in the &trackview-editor; in &ALYlong;. '
 title: Setting Sequence Properties
 ---
-# Setting Sequence Properties<a name="cinematics-sequence-props"></a>
+# Setting Sequence Properties {#cinematics-sequence-props}
 
 You can set properties in the Track View to control how the track view sequence appears\. For example, you can specify **Autostart** so that the track view sequence starts playing as soon as the game starts\.
 

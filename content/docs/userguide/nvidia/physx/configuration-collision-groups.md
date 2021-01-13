@@ -2,7 +2,7 @@
 description: ' Create collision groups for the PhysX system in &ALYlong;. '
 title: Collision Groups
 ---
-# Collision Groups<a name="physx-configuration-collision-groups"></a>
+# Collision Groups {#physx-configuration-collision-groups}
 
 Use collision groups to define the layers that a collider interacts with\. A collision group is similar to a mask with specific bits set in which each bit corresponds to a collision layer\.
 
@@ -28,7 +28,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop\-down list\.  
 ![\[Choosing a collision group for the PhysX Collider component in the Entity Inspector.\]](/images/userguide/physx/physx-configuration-5.png)
 
-## Example Collision Group Configuration<a name="physx-configuration-collision-groups-example"></a>
+## Example Collision Group Configuration {#physx-configuration-collision-groups-example}
 
 The following example defines **Player**, **Enemy**, **Bullet**, **Foliage**, and **Terrain** layers, and the following collision groups:
 + **PlayerBullet** – Collides with **Enemy** and **Terrain**\.

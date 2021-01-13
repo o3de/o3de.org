@@ -3,7 +3,7 @@ description: ' Create realistic simulated cloth and fabric in &ALYlong; with NVI
   Cloth. '
 title: Simulate cloth with NVIDIA Cloth
 ---
-# Simulate cloth with NVIDIA Cloth<a name="nvidia-cloth-intro"></a>
+# Simulate cloth with NVIDIA Cloth {#nvidia-cloth-intro}
 
 
 ****  
@@ -16,7 +16,7 @@ title: Simulate cloth with NVIDIA Cloth
 
 To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/userguide/nvidia/cloth/_index.md)\. 
 
-## NVIDIA Cloth features<a name="nvidia-cloth-features"></a>
+## NVIDIA Cloth features {#nvidia-cloth-features}
 
 ****
 + Apply cloth data to meshes imported from `.fbx` files\. 
@@ -30,7 +30,7 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/userguide/n
 + **NVIDIA Cloth** gem's public API allows other systems and gems to access cloth simulation functionality\. 
 + Debug cloth simulations and constraints with real\-time cloth debug visualizations\. 
 
-## Using NVIDIA Cloth<a name="nvidia-cloth-topics"></a>
+## Using NVIDIA Cloth {#nvidia-cloth-topics}
 
 [Cloth component](/docs/userguide/components/cloth.md) \- Cloth component reference\. 
 
@@ -46,6 +46,6 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/userguide/n
 
 [GPU cloth simulation with NVIDIA CUDA](/docs/userguide/nvidia/cloth/gpu.md) \- Install NVIDIA CUDA to enable GPU acceleration for NVIDIA Cloth\. 
 
-## NVIDIA Cloth references<a name="component-cloth-references"></a>
+## NVIDIA Cloth references {#component-cloth-references}
 
  [NVIDIA Cloth documentation](https://gameworksdocs.nvidia.com/NvCloth/1.1/index.html) at the NVIDIA GAMEWORKS developer portal\. 

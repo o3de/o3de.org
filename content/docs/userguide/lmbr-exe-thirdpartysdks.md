@@ -3,7 +3,7 @@ description: ' Use the lmbr thirdpartysdks command to list and download &ALY; th
   party SDKs. '
 title: ThirdPartySDKs Commands
 ---
-# ThirdPartySDKs Commands<a name="lmbr-exe-thirdpartysdks"></a>
+# ThirdPartySDKs Commands {#lmbr-exe-thirdpartysdks}
 
 Before you can use `thirdpartysdks` commands, you must set up your workspace\. To do this, run Lumberyard Setup Assistant and perform each step of the setup process\.
 

@@ -3,7 +3,7 @@ description: ' Learn how to debug template drivers that are run from &ALYlong;''
   AZ Code Generator. '
 title: Template Driver Debugging
 ---
-# Template Driver Debugging<a name="az-cod-gen-template-driver-debugging"></a>
+# Template Driver Debugging {#az-cod-gen-template-driver-debugging}
 
 
 ****  

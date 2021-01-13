@@ -2,7 +2,7 @@
 description: null
 title: Instantiating a UI Slice
 ---
-# Instantiating a UI Slice<a name="ui-editor-working-slices-instantiating"></a>
+# Instantiating a UI Slice {#ui-editor-working-slices-instantiating}
 
 You can create an instance of a slice in your UI canvas\.
 

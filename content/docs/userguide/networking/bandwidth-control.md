@@ -2,11 +2,11 @@
 description: ' Use GridMate to control the bandwidth that your game uses in &ALYlong;. '
 title: Controlling Bandwidth Usage
 ---
-# Controlling Bandwidth Usage<a name="network-bandwidth-control"></a>
+# Controlling Bandwidth Usage {#network-bandwidth-control}
 
 [GridMate](/docs/userguide/networking/intro.md) provides several ways to control the bandwidth that your game uses, including bandwidth throttling and the prioritization of [replica](/docs/userguide/networking/replicas-replica.md) updates\.
 
-## Controlling the Send Rate<a name="network-bandwidth-control-send-rate"></a>
+## Controlling the Send Rate {#network-bandwidth-control-send-rate}
 
 You can use GridMate to control the server send rate, which is a common technique for reducing bandwidth usage in multiplayer games\. In this scenario, a multiplayer game is hosted by a dedicated server to which clients send their replica changes at their default rate \(for example, 60 frames per second\)\. To reduce bandwidth usage, you lower the server send rate \(for example, to 20 transmissions per second\)\. To avoid jitter when this technique is used, the client must be able to interpolate the game state that it receives from the server\. 
 
@@ -19,7 +19,7 @@ replicaManager->SetSendTimeInterval(100); // Set the send interval to 100 millis
 
 Setting the `SetSendTimeInterval` to `0` sends the data at the engine's frame rate\. The default is `0`\.
 
-## Bandwidth Limiter<a name="network-bandwidth-control-bandwidth-limiter"></a>
+## Bandwidth Limiter {#network-bandwidth-control-bandwidth-limiter}
 
 Another technique is to limit outgoing bandwidth in exchange for increased latency in the replication of objects\. In GridMate, you can do this by setting a bandwidth limit on replica manager\. To do so, specify a byte limit for `SetSendLimit`, as in the following example: 
 
@@ -30,7 +30,7 @@ replicaManager->SetSendLimit(10000); // Set the transmission limit to 10 kilobyt
 
 Setting `SetSendLimit` to `0` disables the bandwidth limiter\. The default is `0`\. 
 
-## Controlling Burst Length<a name="network-bandwidth-control-burst-length"></a>
+## Controlling Burst Length {#network-bandwidth-control-burst-length}
 
 You can use the GridMate limiter to accommodate short bursts in bandwidth if your bandwidth usage is not already at its maximum\. This can be useful in many game applications\. For example, when a user is in a multiplayer lobby, the corresponding bandwidth usage is quite low\. However, when the user joins the game, the bandwidth usage spikes as the initial game state replicates from the server to the client\. To control the length of the burst permitted, specify the desired number of seconds for `SetSendLimitBurstRange`, as in the following example: 
 
@@ -41,7 +41,7 @@ replicaManager->SetSendLimitBurstRange(5.f); // Set the maximum permitted length
 
 Bursts in bandwidth usage are allowed for the number of seconds specified, after which the bandwidth is capped to the value set by `SetSendLimit`\. The default value for `SetSendLimitBurstRange` is 10 seconds\. If bandwidth usage has already reached its limit when the burst occurs, bandwidth usage continues to be capped, and the `SetSendLimitBurstRange` setting has no effect\. 
 
-## Prioritization of Replica Updates<a name="network-bandwidth-control-replica-priority"></a>
+## Prioritization of Replica Updates {#network-bandwidth-control-replica-priority}
 
 Every [replica chunk](/docs/userguide/networking/replicas-chunks.md) has a priority that you can assign\. The priority is represented by an integer from `0` through `65534`\. Larger integers represent higher priorities\. Replicas with higher priorities are sent first\. The default is `32768`\. 
 
@@ -77,7 +77,7 @@ myChunk->SetPriority(k_replicaPriorityLow); // Sets low priority for myChunk.
 
 Chunks with the same priority are sent and received in the order of their creation\. Replicas created earlier are sent and received first\.
 
-## Tuning Bandwidth at Runtime<a name="network-bandwidth-control-runtime-tuning"></a>
+## Tuning Bandwidth at Runtime {#network-bandwidth-control-runtime-tuning}
 
 You can tune bandwidth usage while the game is running by using the following configuration variables \(CVars\):
 

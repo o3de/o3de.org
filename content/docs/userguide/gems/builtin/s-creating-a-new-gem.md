@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; &project-configurator; to create your own gem t
   use for your game project. '
 title: Creating a New Empty Gem
 ---
-# Creating a New Empty Gem<a name="gems-system-gems-creating-a-new-gem"></a>
+# Creating a New Empty Gem {#gems-system-gems-creating-a-new-gem}
 
 You can create a new, empty gem using either the [Project Configurator](/docs/userguide/gems/builtin/s-creating-a-new-gem-projconf.md) or the [command line](/docs/userguide/gems/builtin/s-creating-a-new-gem-cmdline.md)\. When you create a new gem, Lumberyard automatically creates a directory structure for your gem in the `\dev\Gems\` directory\. It also adds the special gem files and directories needed to function as a gem\.
 

@@ -3,7 +3,7 @@ description: ' Use the &whitebox; component to quickly sketch geometry for entit
   and levels in &ALYlong;. '
 title: '&whitebox; component'
 ---
-# White Box component<a name="component-white-box"></a>
+# White Box component {#component-white-box}
 
 
 ****  
@@ -22,7 +22,7 @@ Because **White Box** is implemented as a component, you can create well\-define
 + [White Box properties](#component-white-box-properties)
 + [White Box edit mode](#component-white-box-edit-mode)
 
-## White Box properties<a name="component-white-box-properties"></a>
+## White Box properties {#component-white-box-properties}
 
 ![\[White Box component interface.\]](/images/userguide/component/whitebox/ui-white-box-1.25.png)
 
@@ -58,11 +58,11 @@ Choose this button to enter edit mode and modify the white box mesh\. For inform
 ****Export****  
 Export the mesh to a `.obj` file\. The `.obj` file can be loaded into a 3D modeling application and used as a template for creating the production mesh asset for the entity\. 
 
-## White Box edit mode<a name="component-white-box-edit-mode"></a>
+## White Box edit mode {#component-white-box-edit-mode}
 
 In edit mode, you can quickly sketch meshes for your entities in Lumberyard Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\. 
 
-### Move<a name="component-white-box-edit-move"></a>
+### Move {#component-white-box-edit-move}
 
 ****Move polygon****  
 
@@ -94,7 +94,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box move vertex animation.\]](/images/userguide/component/whitebox/white-box-move-vertex-1.26.gif)
 
-### Scale<a name="component-white-box-edit-scale"></a>
+### Scale {#component-white-box-edit-scale}
 
 ****Scale polygon****  
 
@@ -130,7 +130,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box scale edge animation.\]](/images/userguide/component/whitebox/white-box-non-uniform-scale-edge-1.25.gif)
 
-### Extrude<a name="component-white-box-edit-extrude"></a>
+### Extrude {#component-white-box-edit-extrude}
 
 ****Extrude polygon****  
 
@@ -170,7 +170,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box extrude scale animation.\]](/images/userguide/component/whitebox/white-box-extrude-scale-1.25.gif)
 
-### Flip edge<a name="component-white-box-flip-edge"></a>
+### Flip edge {#component-white-box-flip-edge}
 
 ****Flip edge****  
 
@@ -180,7 +180,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box flip edge animation.\]](/images/userguide/component/whitebox/white-box-flip-edge-1.26.gif)
 
-### Hide/Show edge<a name="component-white-box-hide-show-edge"></a>
+### Hide/Show edge {#component-white-box-hide-show-edge}
 
 ****Hide an edge****  
 
@@ -198,7 +198,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box extrude edge animation.\]](/images/userguide/component/whitebox/white-box-show-edge-1.25.gif)
 
-### Hide/Show vertex<a name="component-white-box-hide-show-vertex"></a>
+### Hide/Show vertex {#component-white-box-hide-show-vertex}
 
 ****Hide a vertex****  
 

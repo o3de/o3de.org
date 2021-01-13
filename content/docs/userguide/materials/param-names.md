@@ -3,7 +3,7 @@ description: ' Use the &material-editor; to find material parameter names to ref
   for nodes in the &ALYlong; &script-canvas; editor. '
 title: Finding the Material Parameter Name
 ---
-# Finding the Material Parameter Name<a name="material-param-names"></a>
+# Finding the Material Parameter Name {#material-param-names}
 
 You can specify material parameter names for some **Script Canvas** editor nodes\. In the **Material Editor**, you can find the material parameter names in the following sections:
 + **Opacity Settings**

@@ -3,7 +3,7 @@ description: ' Use the Environment Probe component to achieve proper lighting fo
   materials in &ALYlong;. '
 title: Environment Probe
 ---
-# Environment Probe<a name="component-environment-probe"></a>
+# Environment Probe {#component-environment-probe}
 
 Use the **Environment Probe** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\.
 
@@ -17,7 +17,7 @@ Shows the light\.
 **On initially**  
 Specify if the light is on when created\.
 
-## General Settings<a name="component-environment-probe-general-settings"></a>
+## General Settings {#component-environment-probe-general-settings}
 
 See the following general settings:
 
@@ -30,7 +30,7 @@ Sets the strength of the diffuse color\.
 **Specular multiplier**  
 Sets the strength of the specular brightness\.
 
-## Environment Probe Settings<a name="component-environment-probe-settings"></a>
+## Environment Probe Settings {#component-environment-probe-settings}
 
 See the following environment probe settings:
 
@@ -58,7 +58,7 @@ Width of the box projection\.
 **Attenuation falloff**  
 The value that the light begins to falloff\. For example, a value or 1\.0 means the light starts to fall off at 1\.0 meter\. 
 
-## Options<a name="component-environment-probe-options"></a>
+## Options {#component-environment-probe-options}
 
 See the following options:
 
@@ -86,7 +86,7 @@ Light affects only volumetric fog\.
 **Volumetric fog**  
 Light affects volumetric fog and surrounding area\.
 
-## Animation<a name="component-environment-probe-animation"></a>
+## Animation {#component-environment-probe-animation}
 
 See the following animation settings:
 
@@ -99,7 +99,7 @@ Multiple of the base animation rate\. For example, a value of **2\.0** makes an 
 **Phase**  
 Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the animation\. For example, you can use this setting to prevent lights in the same scene, with the same animation, from being animated in unison\.
 
-## Cubemap Generation<a name="component-environment-probe-cubemap"></a>
+## Cubemap Generation {#component-environment-probe-cubemap}
 
 See the following cubemap generation settings:
 
@@ -116,16 +116,16 @@ If selected, you can specify a custom cubemap for **Cubemap asset**\. If deselec
 **Cubemap asset **  
 File path for the cubemap asset\.
 
-## Additional Resources<a name="component-environment-probe-additional-links"></a>
+## Additional Resources {#component-environment-probe-additional-links}
 
 For more information about the **Environment Probe** component, see the following:
 + [Intro to Environment Lighting](https://docs.aws.amazon.com/lumberyard/latest/userguide/enviro-lighting-intro.html) 
 + [Getting Started: Using Lighting Tutorial \(video\)](https://www.youtube.com/watch?v=-KdwKZtzzo0)
 
-## EBus Request Bus Interface<a name="component-environment-probe-ebusrequest"></a>
+## EBus Request Bus Interface {#component-environment-probe-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light.md#component-light-ebusrequest)\.
+All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light#component-light-ebusrequest)\.

@@ -2,7 +2,7 @@
 description: ' Create a simple multiplayer test game level in &ALYlong;. '
 title: ' Tutorial: Getting Started with Multiplayer'
 ---
-# Tutorial: Getting Started with Multiplayer<a name="network-multiplayer-gs"></a>
+# Tutorial: Getting Started with Multiplayer {#network-multiplayer-gs}
 
 This tutorial walks you through the steps to create a simple multiplayer test game level\. These steps include binding an entity to the network and connecting a client to the host\. At the end of the tutorial, you should have a level with a simple network bound entity that is ready for a multiplayer game\.
 
@@ -11,7 +11,7 @@ This tutorial guides you through the following tasks:
 + Bind an entity’s **Transform** component to the network\.
 + Connect a client to the server and verify network replication\.
 
-## Prerequisites<a name="network-multiplayer-gs-prerequisites"></a>
+## Prerequisites {#network-multiplayer-gs-prerequisites}
 
 This tutorial assumes the following:
 + You installed Amazon Lumberyard\.
@@ -29,7 +29,7 @@ This tutorial uses Visual Studio 2017\.
 + [Related Tasks and Tutorials](#network-multiplayer-gs-related-tasks-and-tutorials)
 + [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md)
 
-## Step 1: Creating a Level and Adding a Sphere and a Box<a name="network-multiplayer-gs-step-1-create-a-level-and-add-a-sphere-and-a-cube"></a>
+## Step 1: Creating a Level and Adding a Sphere and a Box {#network-multiplayer-gs-step-1-create-a-level-and-add-a-sphere-and-a-cube}
 
 Your first step is to create a level and prepare a simple sphere and box shape so that you can test Lumberyard's networking features\.
 
@@ -103,7 +103,7 @@ Your first step is to create a level and prepare a simple sphere and box shape s
 
 You now have two simple component entities with rigid body physics in the level that you created\.
 
-## Step 2: Binding Sphere Transform Components to the Network<a name="network-multiplayer-gs-step-2-binding-sphere-transform-components-to-the-network"></a>
+## Step 2: Binding Sphere Transform Components to the Network {#network-multiplayer-gs-step-2-binding-sphere-transform-components-to-the-network}
 
 After you create the initial level with the sphere and the box, you bind the sphere’s **Transform** component to the network\. This allows the sphere's changes to be replicated over the network to clients\. 
 
@@ -119,7 +119,7 @@ After you create the initial level with the sphere and the box, you bind the sph
 
 You have now created a server authoritative sphere entity that enables changes to the sphere to replicate over the network\. However, you didn't bind the box to the network, so changes in the box will remain unreplicated\.
 
-## Step 3: Connecting a Client to the Server<a name="network-multiplayer-gs-step-3-connect-a-client-to-the-server"></a>
+## Step 3: Connecting a Client to the Server {#network-multiplayer-gs-step-3-connect-a-client-to-the-server}
 
 This step shows you how to connect a client to the server instance and then observe your networked sphere in action\.
 
@@ -152,7 +152,7 @@ On a single computer, only one process is allowed to bind to a particular port\.
 
 You have successfully created a simple networked level\. You can now use the **Network Binding** component to connect clients to servers and synchronize transforms of entities\.
 
-## Related Tasks and Tutorials<a name="network-multiplayer-gs-related-tasks-and-tutorials"></a>
+## Related Tasks and Tutorials {#network-multiplayer-gs-related-tasks-and-tutorials}
 
 You have created a simple networking sample to see the effects of networking in Lumberyard\. See the following to learn more about what else you can add to your game:
 +  [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md) 

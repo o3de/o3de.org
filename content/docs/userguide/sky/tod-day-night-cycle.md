@@ -3,7 +3,7 @@ description: ' Use &tod-editor; to make settings change over time to mimic a day
   lighting cycle in your &ALYlong; environment. '
 title: Setting a Day-Night Cycle
 ---
-# Setting a Day\-Night Cycle<a name="sky-tod-day-night-cycle"></a>
+# Setting a Day\-Night Cycle {#sky-tod-day-night-cycle}
 
 You can use the Time of Day Editor to configure changes to environment parameters over time to mimic a day\-night lighting cycle\. The Time of Day Editor uses a 24\-hour timeline graph and a recording function to store changing environment parameter values in an XML file\. 
 

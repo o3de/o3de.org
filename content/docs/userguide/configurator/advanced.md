@@ -3,7 +3,7 @@ description: ' Configure Advanced Settings such as system entities and memory se
   in the &project-configurator;. '
 title: Configuring Advanced Settings
 ---
-# Configuring Advanced Settings<a name="configurator-advanced"></a>
+# Configuring Advanced Settings {#configurator-advanced}
 
 To configure advanced settings for your selected project, click **Advanced Settings** in the **Project Configurator**\.
 
@@ -15,7 +15,7 @@ The **System Entity Editor** interface has the following tabs:
 + **System Entity**
 + **Memory Settings**
 
-## System Entity Editor<a name="configurator-advanced-system-entity-editor"></a>
+## System Entity Editor {#configurator-advanced-system-entity-editor}
 
 A single entity, shown in the following picture as `SystemEntity`, makes up the core of every Lumberyard application\. This entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. Using the **System Entity Editor**, game developers can customize the project's components and configuration settings\.
 
@@ -25,7 +25,7 @@ To add a system component, click **Add Component**\.
 
 ![\[Image NOT FOUND\]](/images/userguide/configurator/configurator-advanced-add-component.png)
 
-## Memory Settings<a name="configurator-advanced-memory-settings"></a>
+## Memory Settings {#configurator-advanced-memory-settings}
 
 Click the **Memory Settings** tab to configure and manage your project's memory settings\.
 

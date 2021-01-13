@@ -2,7 +2,7 @@
 description: ' Use visual debugging in &ALYlong; for NVIDIA Cloth. '
 title: Cloth visual debugger
 ---
-# Cloth visual debugger<a name="nvidia-cloth-debugging"></a>
+# Cloth visual debugger {#nvidia-cloth-debugging}
 
 
 ****  

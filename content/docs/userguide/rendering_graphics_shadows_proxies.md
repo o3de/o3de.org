@@ -3,7 +3,7 @@ description: ' Assign shadow proxies in &ALY;''s &material-editor; to reduce sha
   performance problems with minimal visual differences. '
 title: Shadow Proxies
 ---
-# Shadow Proxies<a name="rendering_graphics_shadows_proxies"></a>
+# Shadow Proxies {#rendering_graphics_shadows_proxies}
 
 Shadow proxies are a method of significantly reducing shadow performance costs by creating dedicated low\-polygon count geometry to cast an object's shadow with minimal visual differences\. You can also use shadow proxies to minimize shadow artifacts by controlling which geometry can cast shadows\.
 

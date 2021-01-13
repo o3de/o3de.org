@@ -2,7 +2,7 @@
 description: ' Write a &CM; for your component in &ALYlong;. '
 title: 'Step 3: Write a New &CM;'
 ---
-# Step 3: Write a New Component Mode<a name="write-component-mode"></a>
+# Step 3: Write a New Component Mode {#write-component-mode}
 
 Now that you've updated the header and implementation file, this procedure shows you how to write a new Component Mode\. To do so, you create a `EditorPointLightComponentMode.h` file, which is the interface for Component Mode\.
 
@@ -77,7 +77,7 @@ In this procedure, you use only the `LinearManipulator` property, but there are 
    } // namespace LmbrCentral
    ```
 
-## Implement Component Mode<a name="implement-component-mode"></a>
+## Implement Component Mode {#implement-component-mode}
 
 Now that you've written the interface portion of a Component Mode, create a `EditorPointLightComponentMode.cpp` file\. This file implements a Component Mode for the **Point Light** component\. 
 
@@ -183,7 +183,7 @@ namespace LmbrCentral
 **Note**  
 Most of the code in the file is related to the manipulator\. Manipulators are low\-level but provide a large degree of control\. 
 
-### Construction<a name="construct-component-mode"></a>
+### Construction {#construct-component-mode}
 
 The Component Mode constructor contains the majority of the logic\.
 
@@ -201,7 +201,7 @@ The Component Mode constructor contains the majority of the logic\.
        : EditorBaseComponentMode(entityComponentIdPair, componentType) // IMPORTANT
    ```
 
-### Manipulator Setup<a name="set-up-manipulator"></a>
+### Manipulator Setup {#set-up-manipulator}
 
 Next, set up the manipulator for the component\.
 
@@ -309,7 +309,7 @@ You can avoid difficulties with entities being destroyed and recreated with each
    m_pointMaxDistanceManipulator->SetViews(AZStd::move(views));
    ```
 
-### Manipulator Callbacks<a name="manipulator-callbacks"></a>
+### Manipulator Callbacks {#manipulator-callbacks}
 
 Next, set up how the manipulator should respond when you interact with it in the viewport\.
 
@@ -454,7 +454,7 @@ You can add a member to the `EditorPointLightComponentMode` and refer to that in
    });
    ```
 
-1. To see a Component Mode in action, switch back to the `EditorPointLightComponent.h` and remove the comment lines that you added to your code\. See [EditorPointLightComponent\.cpp](/docs/userguide/delegate-component-mode.md#new-component-mode-example)\.
+1. To see a Component Mode in action, switch back to the `EditorPointLightComponent.h` and remove the comment lines that you added to your code\. See [EditorPointLightComponent\.cpp](/docs/userguide/delegate-component-mode#new-component-mode-example)\.
 
    ```
    #include "EditorPointLightComponentMode"

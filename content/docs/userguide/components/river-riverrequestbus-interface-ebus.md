@@ -2,11 +2,11 @@
 description: null
 title: River Request Bus Interface
 ---
-# River Request Bus Interface<a name="component-river-riverrequestbus-interface-ebus"></a>
+# River Request Bus Interface {#component-river-riverrequestbus-interface-ebus}
 
 The **River** component uses two event bus \(EBus\) interfaces, the `RiverRequestBus` and the `RoadsandRiversGeometryRequestsBus`, which is shared with the **Road** component\.
 
-For information about the `RoadsandRiversGeometryRequestsBus`, see [RoadsAndRiversGeometryRequestsBus Interface](/docs/userguide/components/road.md#component-roadsandriversgeometryrequestsbus-ebus)\.
+For information about the `RoadsandRiversGeometryRequestsBus`, see [RoadsAndRiversGeometryRequestsBus Interface](/docs/userguide/components/road#component-roadsandriversgeometryrequestsbus-ebus)\.
 
 Use the following request functions with the `RoadsAndRiversGeometryRequestsBus` to communicate with other components of your game\.
 

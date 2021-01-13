@@ -2,7 +2,7 @@
 description: ' Learn how to use the Cloud Gem Framework to generate game client code. '
 title: Game Clients
 ---
-# Game Clients<a name="cloud-canvas-cgf-service-api-game-clients"></a>
+# Game Clients {#cloud-canvas-cgf-service-api-game-clients}
 
 The Cloud Gem Framework can generate game clients for your service API\.
 
@@ -10,7 +10,7 @@ The game client can call some API operations on behalf of the player\. Other ope
 
 ![\[Client assumes the Player role\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-service-api-4.png)
 
-## Generating a Game Client<a name="cloud-canvas-cgf-service-api-game-clients-generating"></a>
+## Generating a Game Client {#cloud-canvas-cgf-service-api-game-clients-generating}
 
 Generating a game client is straightforward\.
 
@@ -33,7 +33,7 @@ The directory location of the header file depends on whether *<group>* refers to
 | cloud gem | Gems\\<gem>\\Code\\AWS\\ServiceApi | 
 | resource group | Code\\<game>\\AWS\\<group>\\ServiceAPI | 
 
-### Component Header File Accessibility<a name="cloud-canvas-cgf-service-api-game-clients-component-header-file-accessibility"></a>
+### Component Header File Accessibility {#cloud-canvas-cgf-service-api-game-clients-component-header-file-accessibility}
 
 For a gem, the default location of the generated header file does not make it accessible outside of that gem\. Typically, a cloud gem's service API is private to the gem, and the gem exposes its functionality through its own custom component\. If you want to provide direct access to the cloud gem's API from other gems or game code, you can move the generated header file into the gem's `Code\Include` directory\.
 

@@ -3,7 +3,7 @@ description: ' Use the Trail emitter in the &ALYlong; &particle-editor; to conne
   particles together to create a trailing effect. '
 title: Trail Emitter (CPU)
 ---
-# Trail Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-trail"></a>
+# Trail Emitter \(CPU\) {#particle-editor-emitter-shape-type-trail}
 
 The **Trail** emitter connects particles together to create a trailing effect as the system moves through space\.
 
@@ -27,7 +27,7 @@ When there is a single light source, some or all particles for **Trail** emitter
 Add an Environment Probe to the scene to create indirect lighting\. For more information, see [Environment Probe](/docs/userguide/components/environment-probe.md)\.
 Enable Environment Probe Lighting on the particle system by specifying a value for the Environment Probe Lighting parameter\. For example, a value of `0.5` applies light from the Environment Probe at half intensity\. For more information, see [Lighting Attribute](/docs/userguide/particles/editor/reference-lighting.md)\.
 
-## Particle Trail Visibility<a name="particle-emitter-type-trail-movement"></a>
+## Particle Trail Visibility {#particle-emitter-type-trail-movement}
 
 Trail segments are drawn when the distance between the start and end of a segment exceed the value for **Min visible distance**\. You can choose to automatically disable the drawing of trails that are not moving or are moving too slowly\. This is useful if you have particle trail effects that need to be drawn only when the emitter is moving\.
 

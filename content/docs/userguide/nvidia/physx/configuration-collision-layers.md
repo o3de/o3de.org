@@ -2,7 +2,7 @@
 description: ' Create collision layers for the PhysX system in &ALYlong;. '
 title: Collision Layers
 ---
-# Collision Layers<a name="physx-configuration-collision-layers"></a>
+# Collision Layers {#physx-configuration-collision-layers}
 
 Use collision layers to group objects of the same type\. Use collision groups to define what the collision layers collide with\. You can have a maximum of 64 layers per game\.
 
@@ -33,6 +33,6 @@ The layers that you define are specific to your game\. When a collider is create
 1. In the **PhysX Collider** component, for **Collision Layer**, choose one of the colliders that you created from the drop\-down list\.  
 ![\[The PhysX Collider component in the Entity Inspector.\]](/images/userguide/physx/physx-configuration-3.png)
 
-## Notes<a name="physx-configuration-collision-layers-notes"></a>
+## Notes {#physx-configuration-collision-layers-notes}
 + If you rename a layer, its references are updated automatically, but you can't reorder layers\.
 + If an entity with a **PhysX Collider** component is selected in the viewport and you use the **PhysX Configuration** window to create, rename, or delete a collision layer, the changes do not appear in the **Entity Inspector**\. To see the changes, deselect and reselect the entity in the viewport\.

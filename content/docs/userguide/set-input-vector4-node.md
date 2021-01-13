@@ -3,7 +3,7 @@ description: ' Use the Set Input Vector4 node in the &ALYlong; &script-canvas; e
   to set the value of a procedural material input parameter as a Vector4. '
 title: Set Input Vector4
 ---
-# Set Input Vector4<a name="set-input-vector4-node"></a>
+# Set Input Vector4 {#set-input-vector4-node}
 
 Sets the value of an input parameter as a Vector4\. Use this node with the `Float4` and `Integer4` substance data types\. 
 
@@ -18,7 +18,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 
 ![\[SetInputVector4 sets the Vector4 value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-vector4-node.png)
 
-## Inputs<a name="set-input-vector4-node-input"></a>
+## Inputs {#set-input-vector4-node-input}
 
 
 ****  
@@ -30,7 +30,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 | Input Name | String | The name of the input parameter to set\. | 
 | Vector4 | Vector4 | The new value to specify\. | 
 
-## Outputs<a name="set-input-vector4-node-output"></a>
+## Outputs {#set-input-vector4-node-output}
 
 
 ****  

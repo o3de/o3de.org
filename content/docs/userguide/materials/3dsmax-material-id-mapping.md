@@ -3,7 +3,7 @@ description: ' Map different materials to the faces of a mesh file before export
   to &ALY;. '
 title: Material ID Mapping in Autodesk 3ds Max
 ---
-# Material ID Mapping in Autodesk 3ds Max<a name="mat-3dsmax-material-id-mapping"></a>
+# Material ID Mapping in Autodesk 3ds Max {#mat-3dsmax-material-id-mapping}
 
 A mesh \(`.cgf` file\) can have different materials assigned to different faces\. When you work in Autodesk 3ds Max, make sure you have enough submaterials to cover the number of material IDs assigned to faces on the mesh object\. Otherwise the material IDs won't get exported correctly to Lumberyard\.
 

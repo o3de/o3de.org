@@ -3,7 +3,7 @@ description: ' Add new user settings and define utility functions for your &ALYl
   Waf configuration. '
 title: Adding User Settings to Waf
 ---
-# Adding User Settings to Waf<a name="waf-user-settings"></a>
+# Adding User Settings to Waf {#waf-user-settings}
 
 You can add a new user setting to the `default_settings.json` file in the `Waf` folder located at the root\. Use the standards established in this file and customize as needed\. After you have added a user setting, you need to add a minimum of three utility functions for the GUI and console to validate your new setting\. 
 
@@ -20,7 +20,7 @@ You can also add these functions to any new \.py file as long as you add the mod
 (opt.load('<YOUR PYTHON NAME>', tooldir='<DIRECTORY WHERE ITS STORED>')
 ```
 
-## Getter Function<a name="waf-user-settings-getter"></a>
+## Getter Function {#waf-user-settings-getter}
 
 Waf calls the getter function to retrieve the value of your new setting and perform any necessary transformations\.
 
@@ -98,7 +98,7 @@ def out_folder_linux64(ctx, section_name, option_name, value):
     return _get_string_value(ctx, 'Linux x64 Output Folder', value)
 ```
 
-## Validator Function<a name="waf-user-settings-validator"></a>
+## Validator Function {#waf-user-settings-validator}
 
 Waf only requires the getter function; however, to validate input or provide the GUI with more than raw strings, you'll need to implement other functions like the validator\.
 
@@ -136,7 +136,7 @@ def verify_enabled_game_projects(ctx, option_name, value):
     return True, "",
 ```
 
-## Hinter Function<a name="waf-user-settings-hinter"></a>
+## Hinter Function {#waf-user-settings-hinter}
 
 Waf uses the optional hinter function to provide the GUI with a list of available options\. For example, you might want to use the hinter function if you have a string list that can have multiple or single values that must be specific \(enums\)\.
 

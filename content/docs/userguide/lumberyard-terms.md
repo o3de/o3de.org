@@ -2,7 +2,7 @@
 description: ' Learn more about terms and key concepts for &ALYlong;. '
 title: Key &ALY; Terminology
 ---
-# Key Lumberyard Terminology<a name="lumberyard-terms"></a>
+# Key Lumberyard Terminology {#lumberyard-terms}
 
 If you are new to working with Lumberyard, see the following list to learn about key terms and concepts for Lumberyard\. For more information, see the additional topics for in\-depth descriptions and procedures\.
 
@@ -89,4 +89,4 @@ For more information, see [Working with Slices](/docs/userguide/components/slice
 **Virtual File System \(VFS\)**  
 This system is designed for non\-PC platforms to handle game assets for live reloading\. The virtual file system streams and loads your assets from your development machine as needed\. You do not have to load your entire level or game to the device ahead of time and you can avoid deploying assets to a target device\. When you make a change on your development machine, live reloading automatically updates the asset in Lumberyard Editor and for the target device\.  
 For example, if you want to run your game on an iOS device and you change an asset, Asset Processor uses the virtual file system to stream the updated asset from your development machine to the iOS device\.   
-For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md) and [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project.md#android-vfs)\.
+For more information, see [Live Reloading and VFS](/docs/userguide/assets/live-reloading.md) and [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project#android-vfs)\.

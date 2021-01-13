@@ -3,7 +3,7 @@ description: ' Create a &ALYlong; terrain that features 2k height and 16k megate
   color. '
 title: Creating High Quality Terrain
 ---
-# Creating High Quality Terrain<a name="terrain-high-quality"></a>
+# Creating High Quality Terrain {#terrain-high-quality}
 
 After you create a level, you can refine your terrain to use 2k height and 16k color\.
 

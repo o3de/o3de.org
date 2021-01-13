@@ -3,7 +3,7 @@ description: ' Use the Disable Blur node in the &ALYlong; &script-canvas; editor
   disable the blur (Gaussian blur) filter. '
 title: Disable Blur
 ---
-# Disable Blur<a name="disable-blur-node"></a>
+# Disable Blur {#disable-blur-node}
 
 Disables the blur filter\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Blur](/docs/userguide/rendering/enable/blur-no
 
 ![\[disablefilterblurnode, disablefilterblur, disablegaussianblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-blur-node.png)
 
-## Inputs<a name="disable-filter-blur-node-input"></a>
+## Inputs {#disable-filter-blur-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Blur](/docs/userguide/rendering/enable/blur-no
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="disable-blur-node-output"></a>
+## Outputs {#disable-blur-node-output}
 
 
 ****  

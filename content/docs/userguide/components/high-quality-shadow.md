@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; High Quality Shadow component to give an entity
   own shadow map. '
 title: High Quality Shadow
 ---
-# High Quality Shadow<a name="component-high-quality-shadow"></a>
+# High Quality Shadow {#component-high-quality-shadow}
 
 
 ****  
@@ -18,7 +18,7 @@ This component can impact performance and memory, and should be used sparingly\.
 
 For more information, see [Shadow Nodes](/docs/userguide/scripting/scriptcanvas/shadow-scripting-nodes.md)\.
 
-## High Quality Shadow Component Properties<a name="component-high-quality-shadow-properties"></a>
+## High Quality Shadow Component Properties {#component-high-quality-shadow-properties}
 
 The **High Quality Shadow** component has the following properties:
 

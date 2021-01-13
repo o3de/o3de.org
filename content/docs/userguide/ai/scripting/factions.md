@@ -2,7 +2,7 @@
 description: ' Learn more about AI agents for factions in &ALYlong;. '
 title: Factions
 ---
-# Factions<a name="ai-scripting-factions"></a>
+# Factions {#ai-scripting-factions}
 
 
 ****  

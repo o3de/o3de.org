@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Lightning component to add lightning effects to
   game. '
 title: Lightning
 ---
-# Lightning<a name="component-lightning"></a>
+# Lightning {#component-lightning}
 
 
 ****  
@@ -61,7 +61,7 @@ The **Lightning** component randomly spawns in a small area\.
   + [GetLightningDuration](#lightning-ebus-get-lightning-duration)
   + [Request Bus Example Script](#lightning-ebus-example-script)
 
-## Lightning Component Properties<a name="component-lightning-properties"></a>
+## Lightning Component Properties {#component-lightning-properties}
 
 The **Lightning** component has the following properties:
 
@@ -75,7 +75,7 @@ Specifies whether the lightning effects are relative to the current active camer
 Amount of time in seconds that the lightning strike lasts\.  
 The particle effect lasts for the specified duration; the lighting effects can flash multiple times depending on how quickly the light intensity disappears\.
 
-### Lightning Bolt<a name="component-lightning-bolt"></a>
+### Lightning Bolt {#component-lightning-bolt}
 
 The **Lightning** component has the following lightning bolt options:
 
@@ -85,14 +85,14 @@ The **Lightning** component has the following lightning bolt options:
 **Size Variation**  
 Specifies how much of the particle entity's global size parameter is randomly modified\. For more information, see [SetParticleSizeVariation](#lightning-ebus-set-particle-size-variation)\.
 
-### SkyHighlight<a name="component-lightning-skyhighlight-"></a>
+### SkyHighlight {#component-lightning-skyhighlight-}
 
 The **Lightning** component has following sky highlight options:
 
 **Sky Highlight Entity**  
 \(Optional\) An entity with a **Sky Highlight** component that creates a flash of light in the sky\. The properties of the **Sky Highlight** component are respected\.
 
-### Light<a name="component-lightning-light-"></a>
+### Light {#component-lightning-light-}
 
 The **Lightning** component has following light options:
 
@@ -106,7 +106,7 @@ Specifies how much the light's radius is randomly modified\. For more informatio
 **Intensity Variation**  
 Specifies how much the light's intensity is randomly modified\. For more information, see [SetLightIntensityVariation](#lightning-ebus-set-light-intensity-variation)\.
 
-### Audio<a name="component-lightning-audio-"></a>
+### Audio {#component-lightning-audio-}
 
 The **Lightning** component has following audio options:
 
@@ -116,13 +116,13 @@ An entity with the **[Audio Trigger](/docs/userguide/components/audio-trigger.md
 **Speed of Sound Scale**  
 Specifies how long it takes for audio to arrive at the listener, in seconds\. For more information, see [SetSpeedOfSoundScale](#lightning-ebus-set-speed-of-sound-scale)\.
 
-## EBus Request Bus Interface<a name="component-lightning-ebus-request"></a>
+## EBus Request Bus Interface {#component-lightning-ebus-request}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\. You can use this EBus to communicate to an entity with a **Lightning** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### StartEffect<a name="lightning-ebus-start-effect"></a>
+### StartEffect {#lightning-ebus-start-effect}
 
 Enables the lightning effect\.
 
@@ -135,7 +135,7 @@ None
 **Scriptable**  
 Yes
 
-### SetStartOnActivate<a name="lightning-ebus-set-start-on-activate"></a>
+### SetStartOnActivate {#lightning-ebus-set-start-on-activate}
 
 Specify if the lightning effect starts when the **Lightning** component activates\.
 
@@ -151,7 +151,7 @@ None
 **Scriptable**  
 Yes
 
-### GetStartOnActivate<a name="lightning-ebus-get-start-on-activate"></a>
+### GetStartOnActivate {#lightning-ebus-get-start-on-activate}
 
 Returns `true` if the lightning effect starts when the **Lightning** component activates\.
 
@@ -164,7 +164,7 @@ Type: Boolean
 **Scriptable**  
 Yes
 
-### SetRelativeToPlayer<a name="lightning-ebus-set-relative-to-player"></a>
+### SetRelativeToPlayer {#lightning-ebus-set-relative-to-player}
 
 Specify if the start of the lightning effect is relative to the player camera\.
 
@@ -177,7 +177,7 @@ None
 **Scriptable**  
 Yes
 
-### GetRelativeToPlayer<a name="lightning-ebus-get-relative-to-player"></a>
+### GetRelativeToPlayer {#lightning-ebus-get-relative-to-player}
 
 Returns `true` if the start of the lightning effect is relative to the player camera\.
 
@@ -190,7 +190,7 @@ None
 **Scriptable**  
 Yes
 
-### SetLightningParticleEntity<a name="lightning-ebus-set-lightning-particle-entity"></a>
+### SetLightningParticleEntity {#lightning-ebus-set-lightning-particle-entity}
 
 Sets the entity that contains the **[Particle](/docs/userguide/components/particle.md)** component that is used for the lightning particle\.
 
@@ -205,7 +205,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightningParticleEntity<a name="lightning-ebus-get-lightning-particle-entity"></a>
+### GetLightningParticleEntity {#lightning-ebus-get-lightning-particle-entity}
 
 Returns the entity that contains the **[Particle](/docs/userguide/components/particle.md)** component\.
 
@@ -218,7 +218,7 @@ Type: `AZ::EntityId`
 **Scriptable**  
 Yes
 
-### SetLightEntity<a name="lightning-ebus-set-light-entity"></a>
+### SetLightEntity {#lightning-ebus-set-light-entity}
 
 Sets the entity that contains the **Light** component, which is used for lightning effects\.
 
@@ -233,7 +233,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightEntity<a name="lightning-ebus-get-light-entity"></a>
+### GetLightEntity {#lightning-ebus-get-light-entity}
 
 Returns the entity that contains the **Light** component\.
 
@@ -246,7 +246,7 @@ Type: `AZ::EntityId`
 **Scriptable**  
 Yes
 
-### SetSkyHighlightEntity<a name="lightning-ebus-set-sky-high-light-entity"></a>
+### SetSkyHighlightEntity {#lightning-ebus-set-sky-high-light-entity}
 
 Sets the entity that has the **Sky Highlight** component for this effect\.
 
@@ -261,7 +261,7 @@ Type: `AZ::EntityId`
 **Scriptable**  
 Yes
 
-### GetSkyHighlightEntity<a name="lightning-ebus-get-sky-high-light-entity"></a>
+### GetSkyHighlightEntity {#lightning-ebus-get-sky-high-light-entity}
 
 Returns the entity that has the **Sky Highlight** component\.
 
@@ -274,7 +274,7 @@ Type: `AZ::EntityId`
 **Scriptable**  
 Yes
 
-### SetAudioEntity<a name="lightning-ebus-set-audio-entity"></a>
+### SetAudioEntity {#lightning-ebus-set-audio-entity}
 
 Sets the entity that has the audio component for this effect\.
 
@@ -291,7 +291,7 @@ None
 **Scriptable**  
 Yes
 
-### GetAudioEntity<a name="lightning-ebus-get-audio-entity"></a>
+### GetAudioEntity {#lightning-ebus-get-audio-entity}
 
 Returns the entity that has the audio component\.
 
@@ -304,7 +304,7 @@ Type: `AZ::EntityId`
 **Scriptable**  
 Yes
 
-### SetSpeedOfSoundScale<a name="lightning-ebus-set-speed-of-sound-scale"></a>
+### SetSpeedOfSoundScale {#lightning-ebus-set-speed-of-sound-scale}
 
 Sets the speed of sound scale for this effect\. You can use this parameter if want the audio to take more or less time to reach the player and you don't want to move your lightning effect\.
 
@@ -320,7 +320,7 @@ None
 **Scriptable**  
 Yes
 
-### GetSpeedOfSoundScale<a name="lightning-ebus-get-speed-of-sound-scale"></a>
+### GetSpeedOfSoundScale {#lightning-ebus-get-speed-of-sound-scale}
 
 Returns the speed of sound scale for this effect\.
 
@@ -333,7 +333,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetLightRadiusVariation<a name="lightning-ebus-set-light-radius-variation"></a>
+### SetLightRadiusVariation {#lightning-ebus-set-light-radius-variation}
 
 Sets the amount of random variation to apply to the light's radius\.
 
@@ -350,7 +350,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightRadiusVariation<a name="lightning-ebus-get-light-radius-variation"></a>
+### GetLightRadiusVariation {#lightning-ebus-get-light-radius-variation}
 
 Returns the amount of random variation to apply to the light's radius\.
 
@@ -363,7 +363,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetLightIntensityVariation<a name="lightning-ebus-set-light-intensity-variation"></a>
+### SetLightIntensityVariation {#lightning-ebus-set-light-intensity-variation}
 
 Sets the amount of random variation to apply the **Light** component's diffuse and specular multipliers\.
 
@@ -380,7 +380,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightIntensityVariation<a name="lightning-ebus-get-light-intensity-variation"></a>
+### GetLightIntensityVariation {#lightning-ebus-get-light-intensity-variation}
 
 Returns the amount of random variation to apply the light's diffuse and specular multipliers\.
 
@@ -393,7 +393,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetParticleSizeVariation<a name="lightning-ebus-set-particle-size-variation"></a>
+### SetParticleSizeVariation {#lightning-ebus-set-particle-size-variation}
 
 Sets the amount of random variation to apply to the particle's size\.
 
@@ -410,7 +410,7 @@ None
 **Scriptable**  
 Yes
 
-### GetParticleSizeVariation<a name="lightning-ebus-get-particle-size-variation"></a>
+### GetParticleSizeVariation {#lightning-ebus-get-particle-size-variation}
 
 Returns the amount of random variation to apply to the particle's size\.
 
@@ -423,7 +423,7 @@ Type: Float
 **Scriptable**  
 Yes
 
-### SetLightningDuration<a name="lightning-ebus-set-lightning-duration"></a>
+### SetLightningDuration {#lightning-ebus-set-lightning-duration}
 
 Sets how long the lightning strike lasts, in seconds\. This value determines how long the lightning particle effect lasts\. During this time, the sky highlight and light can continue to flash\.
 
@@ -436,7 +436,7 @@ None
 **Scriptable**  
 Yes
 
-### GetLightningDuration<a name="lightning-ebus-get-lightning-duration"></a>
+### GetLightningDuration {#lightning-ebus-get-lightning-duration}
 
 Returns how long the lightning strike lasts, in seconds\.
 
@@ -449,7 +449,7 @@ Type: Double
 **Scriptable**  
 Yes
 
-### Request Bus Example Script<a name="lightning-ebus-example-script"></a>
+### Request Bus Example Script {#lightning-ebus-example-script}
 
 ```
 function example:OnActivate()

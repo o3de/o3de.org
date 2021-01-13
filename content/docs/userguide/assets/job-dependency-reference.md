@@ -2,7 +2,7 @@
 description: ' Use job dependencies using the Asset Builder SDK in &ALYlong;. '
 title: Job Dependency for &asset-pipeline;
 ---
-# Job Dependency for Asset Pipeline<a name="asset-pipeline-job-dependency-reference"></a>
+# Job Dependency for Asset Pipeline {#asset-pipeline-job-dependency-reference}
 
 Manage dependencies for assets so that Asset Pipeline processes them in the correct order\.
 

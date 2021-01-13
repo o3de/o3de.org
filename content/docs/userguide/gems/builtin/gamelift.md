@@ -3,19 +3,19 @@ description: ' Learn how to control session workflow when using the &AGSlong; &g
   for &ALYlong;. '
 title: '&AGS; Gem'
 ---
-# GameLift Gem<a name="gems-system-gem-gamelift"></a>
+# GameLift Gem {#gems-system-gem-gamelift}
 
 Amazon GameLift is an AWS service for deploying, operating, and scaling session\-based multiplayer games\. With Amazon GameLift, you can quickly scale high\-performance game servers up and down to meet player demand without any additional engineering effort or upfront costs\.
 
 The GameLift Gem provides a framework to extend Lumberyard networking \(GridMate\) to work with GameLift resources via GameLift server and client API's\.
 
-## Getting Started<a name="gems-system-gem-gamelift-getting-started"></a>
+## Getting Started {#gems-system-gem-gamelift-getting-started}
 
 To use the Amazon GameLift service with your Lumberyard project, you simply enable the GameLift Gem using Project Configurator\.
 
 You will want to familiarize yourself with GameLift concepts found in the [Amazon GameLift Developer Guide](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. GameLift resources like fleet, queue, matchmaking rule, and config need to be deployed prior to running your game on GameLift\. For more details, refer to the [GameLift CLI](https://docs.aws.amazon.com/cli/latest/reference/gamelift)\.
 
-## Implementation<a name="gems-system-gem-gamelift-implementation"></a>
+## Implementation {#gems-system-gem-gamelift-implementation}
 
 
 
@@ -39,15 +39,15 @@ These events are illustrated in the following workflow diagrams\.
 
 ![\[GameLift client-server communication workflow using FlexMatch, with automatic or custom backfill.\]](/images/userguide/gems/game-lift-gem-workflow-matchmaking.png)
 
-## Sample Code<a name="gems-system-gem-gamelift-sample-code"></a>
+## Sample Code {#gems-system-gem-gamelift-sample-code}
 
 The GameLift code in this section follows the workflow illustrated in the preceding diagram and is separated into server\-side code and client\-side code\. The code is enabled only when `BUILD_GAMELIFT_SERVER` and `BUILD_GAMELIFT_CLIENT` are defined\.
 
-### Server\-side Code<a name="gems-system-gem-gamelift-sample-code-server-side"></a>
+### Server\-side Code {#gems-system-gem-gamelift-sample-code-server-side}
 
 Use the following sample code as a guide when starting and hosting a GameLift server session\.
 
-<a name="gems-system-gem-gamelift-sample-code-start-gameliftserverservice.title"></a>Start GameLiftServerService
+ {#gems-system-gem-gamelift-sample-code-start-gameliftserverservice.title}Start GameLiftServerService
 
  
 
@@ -62,7 +62,7 @@ if (settings.m_logPath)
 m_service = GridMate::StartGridMateService<GridMate::GameLiftServerService>(m_gridMate, serviceDesc);
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-host-a-session.title"></a>Host a Session
+ {#gems-system-gem-gamelift-sample-code-host-a-session.title}Host a Session
 
  
 
@@ -79,7 +79,7 @@ sp.m_gameSession = &gameSession;
 EBUS_EVENT_ID_RESULT(session, m_gridMate, GridMate::GameLiftServerServiceBus, HostSession, sp, carrierDesc);
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-matchmaking-backfill.title"></a>Start/Stop Matchmaking Backfill
+ {#gems-system-gem-gamelift-sample-code-matchmaking-backfill.title}Start/Stop Matchmaking Backfill
 
  
 
@@ -88,11 +88,11 @@ EBUS_EVENT_ID(m_gridMate, GridMate::GameLiftServerServiceBus, StartMatchmakingBa
 EBUS_EVENT_ID(gEnv->pNetwork->GetGridMate(), GridMate::GameLiftServerServiceBus, StopMatchmakingBackfill, m_session, m_ticketId);
 ```
 
-### Client\-side Code<a name="gems-system-gem-gamelift-sample-code-client-side"></a>
+### Client\-side Code {#gems-system-gem-gamelift-sample-code-client-side}
 
 Use the following sample code as a guide when using the GameLift client service\.
 
-<a name="gems-system-gem-gamelift-sample-code-start-gameliftclientservice.title"></a>Start GameLiftClientService
+ {#gems-system-gem-gamelift-sample-code-start-gameliftclientservice.title}Start GameLiftClientService
 
  
 
@@ -106,7 +106,7 @@ serviceDesc.m_region = settings.m_region;
 m_service = GridMate::StartGridMateService<GridMate::GameLiftClientService>(m_gridMate, serviceDesc);
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-send-gameliftsessionrequest.title"></a>Send GameLiftSessionRequest / GameLiftGameSessionPlacementRequest
+ {#gems-system-gem-gamelift-sample-code-send-gameliftsessionrequest.title}Send GameLiftSessionRequest / GameLiftGameSessionPlacementRequest
 
  
 
@@ -127,7 +127,7 @@ m_sessionRequest = m_service->RequestSession(reqParams);
 EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, RequestSession, reqParams);
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-search-active-sessions.title"></a>Search Active Sessions
+ {#gems-system-gem-gamelift-sample-code-search-active-sessions.title}Search Active Sessions
 
  
 
@@ -141,7 +141,7 @@ searchParams.m_queueName = "queue_name";
 EBUS_EVENT_ID_RESULT(m_search, m_gridMate, GridMate::GameLiftClientServiceBus, StartSearch, GridMate::GameLiftSearchParams());
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-join-a-session.title"></a>Join a Session
+ {#gems-system-gem-gamelift-sample-code-join-a-session.title}Join a Session
 
  
 
@@ -156,7 +156,7 @@ const GridMate::GameLiftSearchInfo& gameLiftSearchInfo = static_cast<const GridM
 EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, JoinSessionBySearchInfo, gameLiftSearchInfo, carrierDesc);
 ```
 
-<a name="gems-system-gem-gamelift-sample-code-matchmaking.title"></a>Join using FlexMatch Matchmaking
+ {#gems-system-gem-gamelift-sample-code-matchmaking.title}Join using FlexMatch Matchmaking
 
  
 

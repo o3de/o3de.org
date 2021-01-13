@@ -2,7 +2,7 @@
 description: ' Use interest manager to control large-scale networked worlds in &ALYlong;. '
 title: Using GridMate for Large-Scale Worlds
 ---
-# Using GridMate for Large\-Scale Worlds<a name="network-interest-manager-large-scale-worlds"></a>
+# Using GridMate for Large\-Scale Worlds {#network-interest-manager-large-scale-worlds}
 
 GridMate is Lumberyard's networking system\. Interest manager is Lumberyard's solution to large\-scale networked worlds\.
 
@@ -14,13 +14,13 @@ GridMate is Lumberyard's networking system\. Interest manager is Lumberyard's so
 + [Proximity Net Interest Component](#network-interest-manager-large-scale-worlds-proximity-net-interest-component)
 + [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](/docs/userguide/networking/interest-manager-custom-rule-handler.md)
 
-## The Relationship Between Replica Manager and Interest Manager<a name="network-interest-manager-large-scale-worlds-replica-manager-and-interest-manager"></a>
+## The Relationship Between Replica Manager and Interest Manager {#network-interest-manager-large-scale-worlds-replica-manager-and-interest-manager}
 
 Interest manager is an optional feature that controls the sending of replicas in large\-scale network game applications\. [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md) works without interest manager\. However, replica manager sends replicas to all peers\. Thus, all associated entities with the Network Binding component on them appear on all peers\. When the Interest Manager component is created and initialized, it tells the replica manager to no longer broadcast all replicas to all peers\. Interest manager acts as an overseer of replica manager and coordinates replicas and peers\.
 
 ![\[Replica manager and interest manager\]](/images/userguide/networking/network-interest-manager-large-scale-worlds-1.png)
 
-## Interest Manager<a name="network-interest-manager-large-scale-worlds-interest-manager"></a>
+## Interest Manager {#network-interest-manager-large-scale-worlds-interest-manager}
 
 Broadcasting all replicas to all peers is not feasible for large\-scale networked worlds\. For these applications, you can use interest manager to control which replicas are broadcast to which peers and under what conditions\. The following diagram shows the relationship between interest manager, clients, and replicas\.
 
@@ -40,13 +40,13 @@ GridMate::ProximityInterestHandler
 
 The [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md) that is included with Lumberyard contains a practical implementation of these\. For detailed information on writing your own attributes, rules, and rule handlers, see [Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+](/docs/userguide/networking/interest-manager-custom-rule-handler.md)\.
 
-## Slice Caching and Entity Lifecycle Management<a name="network-interest-manager-large-scale-worlds-caching"></a>
+## Slice Caching and Entity Lifecycle Management {#network-interest-manager-large-scale-worlds-caching}
 
 `NetBindingSystem` caches slices for interest manager\. Slice instances are cached and reused for the entities from the same slice instance\. Whenever a replica is activated, the cache is searched to see if a slice that contains the entity is already in the cache\. If the lookup is successful, the entity is reused\.
 
 When a game entity is no longer needed \(that is, `UnBindGameEntity` is called\), `NetBindingSystem` decides whether to deactivate the entity or destroy it\. If the entity is in the cache, `NetBindingSystem` deactivates the entity\. If the entity is not found in the cache, `NetBindingSystem` destroys the entity\.
 
-## Multiplayer Sample Implementation<a name="network-interest-manager-large-scale-worlds-multiplayer-sample-implementation"></a>
+## Multiplayer Sample Implementation {#network-interest-manager-large-scale-worlds-multiplayer-sample-implementation}
 
 The Multiplayer sample shows how to achieve interest\-based filtering of networked entities in your own application\.
 
@@ -57,7 +57,7 @@ Because the goal is to control entities, interest manager must work with entitie
 
 While the sample is not comprehensive, it provides a starting point for you to understand the technology and implement a system that matches your needs\.
 
-### Interest Manager Component<a name="network-interest-manager-large-scale-worlds-interest-manager-component"></a>
+### Interest Manager Component {#network-interest-manager-large-scale-worlds-interest-manager-component}
 
 Lumberyard's `AzFramework::InterestManagerComponent` is intended for use as a system component in your application\.
 
@@ -100,7 +100,7 @@ class MultiplayerSample
 };
 ```
 
-### Game Player Net Interest<a name="network-interest-manager-large-scale-worlds-game-player-net-interest"></a>
+### Game Player Net Interest {#network-interest-manager-large-scale-worlds-game-player-net-interest}
 
 The game player net interest rule \(`MultiplayerSample::GamePlayerNetInterest`\) defines the entities in which the game player is interested and contains the `GridMate::ProximityInterestRule`\. The console variable `mps_interestRadius` determines the radius of the game player's interest\. The Multiplayer sample uses the following procedure to create the player entity\. You can find the source code in the file `dev\MultiplayerSample\Gem\Code\Source\Components\Spawn\PlayerSpawnComponent.cpp`\.
 
@@ -155,7 +155,7 @@ void GamePlayerNetInterest::OnTick(float deltaTime, AZ::ScriptTimePoint time)
 }
 ```
 
-## Proximity Net Interest Component<a name="network-interest-manager-large-scale-worlds-proximity-net-interest-component"></a>
+## Proximity Net Interest Component {#network-interest-manager-large-scale-worlds-proximity-net-interest-component}
 
 The Proximity Net Interest component describes the attribute for the entity to which it is attached\. The component listens to the transform changes of the entity and updates its internal attribute accordingly\. This allows interest manager to control the entity's presence on peers based on the peers' game player net interest\. In the **Entity Inspector**, the name of this component is **Proximity Interest attribute**\.
 

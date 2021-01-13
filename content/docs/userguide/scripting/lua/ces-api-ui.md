@@ -3,7 +3,7 @@ description: ' Legacy script UI functionality in &ALYlong; using the Lua scripti
   language. '
 title: UI Lua Reference
 ---
-# UI Lua Reference<a name="lua-scripting-ces-api-ui"></a>
+# UI Lua Reference {#lua-scripting-ces-api-ui}
 
 You can use the following Lua scripting functions when you work with UI canvases in Lumberyard Editor\. For non\-UI component entity Lua scripting functions, see the [Component Entity Lua API Reference](/docs/userguide/scripting/lua/api.md)\.
 

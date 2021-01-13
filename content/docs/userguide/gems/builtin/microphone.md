@@ -3,7 +3,7 @@ description: ' The &ALYlong; Microphone Gem is a dependency for the Cloud Gem Sp
   Recognition Gem. '
 title: Microphone Gem
 ---
-# Microphone Gem<a name="gems-system-gem-microphone"></a>
+# Microphone Gem {#gems-system-gem-microphone}
 
 The Microphone Gem is a dependency for the [Cloud Canvas Speech Recognition Gem](/docs/userguide/gems/builtin/aws-cloud-gems.md)\. This means that when you enable the Cloud Canvas Speech Recognition Gem in the Project Configurator, the Microphone Gem is also automatically added\.
 

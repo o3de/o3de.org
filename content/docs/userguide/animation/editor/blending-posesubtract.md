@@ -3,7 +3,7 @@ description: ' Use the Pose Subtract node in &ALYlong; &animation-editor; to sub
   one pose from another. '
 title: Pose Subtract Node
 ---
-# Pose Subtract Node<a name="animation-editor-blending-posesubtract"></a>
+# Pose Subtract Node {#animation-editor-blending-posesubtract}
 
 The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**\. The output of a **Pose Subtract** node is the delta between them \(**Pose 1** – **Pose 2**\)\.
 
@@ -31,8 +31,8 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
    + **Pose 2** – The pose to be subtracted from the base pose\.
    + **Output Pose** – The result of the pose subtraction \(**Pose 1** \- **Pose 2**\)\.
 
-## Pose Subtract Node Attributes<a name="animation-editor-blending-posesubtract-attributes"></a>
+## Pose Subtract Node Attributes {#animation-editor-blending-posesubtract-attributes}
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses.md#animation-editor-blending-attributes)\.
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses#animation-editor-blending-attributes)\.
 
 ![\[Pose Subtract node attributes.\]](/images/userguide/actor-animation/animation-editor-blending-posesubtract-attributes.png)

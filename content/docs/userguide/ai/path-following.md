@@ -2,7 +2,7 @@
 description: ' Learn more about path following in &ALYlong;. '
 title: Path Following
 ---
-# Path Following<a name="ai-path-following"></a>
+# Path Following {#ai-path-following}
 
 This topic provides some high\-level insight on how path following is done in Lumberyard\. To illustrate some concepts, we'll use the relatively simplistic example of Racing HMMWVs, which is a good representation of classic path following as presented in many AI texts\.
 
@@ -20,7 +20,7 @@ Path following with Racing HMMWVs adheres to the following sequence\.
 
 1. If the vehicle is stuck, beam it straight to the closest point on the path\.
 
-## Goalop "Followpath"<a name="ai-path-following-goalop"></a>
+## Goalop "Followpath" {#ai-path-following-goalop}
 
 Use the goalop *followpath* to instruct an AI agent to follow a path\. You can observe this sequence in action by setting a breakpoint at the beginning of a call to COPFollowPath::Execute\. In the call stack window in Visual Studio, you'll be able to see the update operations for all \(active\) AI agents being called as part of the AI system update procedure\. This action in turn calls the execute operations of the currently active goalops being run by the AI\.
 
@@ -31,7 +31,7 @@ COPFollowPath::Execute accomplishes the following tasks:
 
 The goalops *pathfind* and *trace* are commonly used for navigational goalops, including *approach* and *stick*\.
 
-## COPTrace::ExecuteTrace and COPTrace::Execute<a name="ai-path-following-coptrace"></a>
+## COPTrace::ExecuteTrace and COPTrace::Execute {#ai-path-following-coptrace}
 
 COPTrace::ExecuteTrace is used to clean up path\-following issues, including handling edge cases and smart objects\. The core of this call is as follows:
 
@@ -46,7 +46,7 @@ COPTrace::Execute does the same work plus a bit more\. For the AI following a pa
 AI.SetContinuousMotion(vehicle.id, true);
 ```
 
-## COPTrace::Execute2D<a name="ai-path-following-coptrace-execute2d"></a>
+## COPTrace::Execute2D {#ai-path-following-coptrace-execute2d}
 
 This operation can be used as a fallback if an AI agent \(CPipeUser, at least\) doesn't have a path follower\. COPTrace::Execute2D accomplishes the following tasks:
 + Gets the lookahead path position and the path direction at this position\.

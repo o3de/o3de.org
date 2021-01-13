@@ -3,7 +3,7 @@ description: ' Use a RadioButton component to make an element behave like a radi
   button in &ALY;''s &ui-canvas-editor;. '
 title: RadioButton
 ---
-# RadioButton<a name="ui-editor-components-radiobutton"></a>
+# RadioButton {#ui-editor-components-radiobutton}
 
 You can use the **RadioButton** component to make an element behave like a radio button\. This component is typically used on an element with two visual child elements—one to display when the radio button is selected and another to display when the radio button is cleared\.
 

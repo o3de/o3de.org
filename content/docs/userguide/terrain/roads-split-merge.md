@@ -3,7 +3,7 @@ description: ' Use Spline Parameters in &ALY; to split a road in two or combine 
   roads into one. '
 title: Splitting and Merging Roads
 ---
-# Splitting and Merging Roads<a name="terrain-roads-split-merge"></a>
+# Splitting and Merging Roads {#terrain-roads-split-merge}
 
 
 ****  

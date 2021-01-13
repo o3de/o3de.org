@@ -2,7 +2,7 @@
 description: ' Use console variables (CVARs) to debug particles in &ALYlong;. '
 title: Particle Debugging with Console Variables
 ---
-# Particle Debugging with Console Variables<a name="particle-debugging"></a>
+# Particle Debugging with Console Variables {#particle-debugging}
 
 Use the following console variables to monitor and debug particle system issues\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 

@@ -3,9 +3,9 @@ description: ' The following topics will guide you through creating and managing
   in &ALY;. '
 title: Working with &ALY; projects
 ---
-# Working with Lumberyard projects<a name="lumberyard-projects-intro"></a>
+# Working with Lumberyard projects {#lumberyard-projects-intro}
 
-## Working with projects in Lumberyard<a name="ly-projects-intro"></a>
+## Working with projects in Lumberyard {#ly-projects-intro}
 
 Learn about the details of creating, configuring, managing, and building your Lumberyard game projects, along with the sample projects provided in your installation\.
 

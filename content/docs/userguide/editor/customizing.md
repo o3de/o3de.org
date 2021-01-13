@@ -3,7 +3,7 @@ description: ' Customize &ly-editor; by docking windows and toolbars, customizin
   toolbars and menus, and updating editor settings and global preferences for &ALYlong;. '
 title: Customizing &ly-editor;
 ---
-# Customizing Lumberyard Editor<a name="lumberyard-editor-customizing"></a>
+# Customizing Lumberyard Editor {#lumberyard-editor-customizing}
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings\. 
 
@@ -15,7 +15,7 @@ To change the size setting for the toolbar icon, open the `Editor.cfg` file and 
 + [Customizing Toolbars and Menus](#lumberyard-editor-customizing-tabs)
 + [Changing Preferences](#lumberyard-editor-customizing-preferences)
 
-## Docking Windows and Toolbars<a name="lumberyard-editor-customizing-docking"></a>
+## Docking Windows and Toolbars {#lumberyard-editor-customizing-docking}
 
 When you drag a window or toolbar over an interface element or the edges of the editor, docking targets appear to show you where you can dock them\. These targets appear for the top, bottom, left, and right quadrants of the pane\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\.
 
@@ -45,7 +45,7 @@ To prevent a window from docking, press and hold **Ctrl** while moving the windo
 **To snap windows**  
 To snap a window in place, move the window close to a stationary window\. Snapping works on the top, bottom, left, and right borders of the pane\.
 
-## Customizing Toolbars and Menus<a name="lumberyard-editor-customizing-tabs"></a>
+## Customizing Toolbars and Menus {#lumberyard-editor-customizing-tabs}
 
 You can also give toolbars and menus your own personal touch\.
 
@@ -59,7 +59,7 @@ You can also give toolbars and menus your own personal touch\.
 1. In the **Commands** tab, drag and drop menu commands to any menu category\.  
 ![\[Commands tab in the Customize window\]](/images/userguide/editor-customizing-commands.png)
 
-## Changing Preferences<a name="lumberyard-editor-customizing-preferences"></a>
+## Changing Preferences {#lumberyard-editor-customizing-preferences}
 
 You can change the default settings to customize the look and functionality of the editor\.
 
@@ -67,7 +67,7 @@ You can change the default settings to customize the look and functionality of t
 + In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.  
 ![\[General Settings tab in the Preferences window\]](/images/userguide/editor-preferences.png)
 
-### General Settings<a name="lumberyard-editor-customizing-preferences-general"></a>
+### General Settings {#lumberyard-editor-customizing-preferences-general}
 
 You can change the general Lumberyard Editor settings and file settings\.
 
@@ -159,7 +159,7 @@ You can change the general Lumberyard Editor settings and file settings\.
 | Maximum Backups |  Specifies the maximum number of auto backups\.  | 
 | Remind Time |  Specifies the frequency of auto backup reminders \(in minutes\)\.  | 
 
-### Viewport<a name="lumberyard-editor-customizing-preferences-viewports"></a>
+### Viewport {#lumberyard-editor-customizing-preferences-viewports}
 
 You can change the default settings for the viewport\.
 
@@ -240,7 +240,7 @@ You can change the default settings for the viewport\.
 | Show Scale Warnings |  Displays an icon and warning text for objects that have been scaled\.  | 
 | Show Rotation Warnings |  Displays an icon and warning text for objects that have been rotated\.  | 
 
-### Experimental Features<a name="lumberyard-editor-customizing-preferences-experimental-features"></a>
+### Experimental Features {#lumberyard-editor-customizing-preferences-experimental-features}
 
 You can change the default settings for experimental features such as total illumination\.
 

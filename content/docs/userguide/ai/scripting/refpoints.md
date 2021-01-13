@@ -2,7 +2,7 @@
 description: ' Specify a position and a direction with refpoints in &ALYlong;. '
 title: Refpoints
 ---
-# Refpoints<a name="ai-scripting-refpoints"></a>
+# Refpoints {#ai-scripting-refpoints}
 
 
 ****  

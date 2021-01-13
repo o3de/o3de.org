@@ -3,7 +3,7 @@ description: ' Use Hub nodes in &ALYlong;''s &animation-editor; to simplify tran
   between groups of nodes in an animation graph. '
 title: Simplify Node Groups with Hub Nodes
 ---
-# Simplify Node Groups with Hub Nodes<a name="animation-editor-using-hub-nodes-to-simplify-groups"></a>
+# Simplify Node Groups with Hub Nodes {#animation-editor-using-hub-nodes-to-simplify-groups}
 
 
 ****  

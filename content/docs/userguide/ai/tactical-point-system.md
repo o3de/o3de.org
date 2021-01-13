@@ -2,7 +2,7 @@
 description: ' Learn more about the AI Tactical Point System (TPS) in &ALYlong;. '
 title: AI Tactical Point System
 ---
-# AI Tactical Point System<a name="ai-tactical-point-system"></a>
+# AI Tactical Point System {#ai-tactical-point-system}
 
 
 ****  

@@ -3,7 +3,7 @@ description: ' Use material nodes to work with material assets in the &ALYlong; 
   editor. '
 title: Material Nodes
 ---
-# Material Nodes<a name="script-canvas-materials-nodes"></a>
+# Material Nodes {#script-canvas-materials-nodes}
 
 You can use the **Script Canvas** editor to interact with materials in two ways\. The following section describes how to access and manipulate materials directly, which affects all entities to which the material is applied\. For example, you can load materials, get and set parameters, and apply the material to entities\. Changes made to a material affect all entities that use that material\.
 

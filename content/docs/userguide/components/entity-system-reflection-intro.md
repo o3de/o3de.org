@@ -2,7 +2,7 @@
 description: ' Expose C++ code for scripting in &ALYlong;. '
 title: Reflecting &ALY; Classes, Methods, and EBus Interfaces
 ---
-# Reflecting Lumberyard Classes, Methods, and EBus Interfaces<a name="component-entity-system-reflection-intro"></a>
+# Reflecting Lumberyard Classes, Methods, and EBus Interfaces {#component-entity-system-reflection-intro}
 
 You can use Lumberyard's reflection system to expose runtime code for C\+\+\-based objects, for Lumberyard Editor, and for scripting\.
 

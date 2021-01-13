@@ -3,7 +3,7 @@ description: ' Use the Disable Depth of Field node in the &ALYlong; &script-canv
   editor to disable the depth of field. '
 title: Disable Depth of Field
 ---
-# Disable Depth of Field<a name="disable-depth-of-field-node"></a>
+# Disable Depth of Field {#disable-depth-of-field-node}
 
 Disables the depth of field effect\.
 
@@ -15,7 +15,7 @@ To enable the effect, see [Enable Depth of Field](/docs/userguide/rendering/enab
 
 ![\[disabledofnode, disabledof, disabledepthoffield\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-disable-depth-of-field-node.png)
 
-## Inputs<a name="disable-depth-of-field-note-input"></a>
+## Inputs {#disable-depth-of-field-note-input}
 
 
 ****  
@@ -24,7 +24,7 @@ To enable the effect, see [Enable Depth of Field](/docs/userguide/rendering/enab
 | --- | --- | --- | 
 | In | Event |  Triggers the node\.  | 
 
-## Outputs<a name="disable-depth-of-field-note-output"></a>
+## Outputs {#disable-depth-of-field-note-output}
 
 
 ****  

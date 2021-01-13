@@ -2,7 +2,7 @@
 description: null
 title: '&script-canvas; Concepts and Terms'
 ---
-# Script Canvas Concepts and Terms<a name="script-canvas-concepts-and-terms"></a>
+# Script Canvas Concepts and Terms {#script-canvas-concepts-and-terms}
 
 The following concepts and terms are used in **Script Canvas**:
 
@@ -45,7 +45,7 @@ Debugging nodes verify whether a script is functioning as expected\. You can use
 *User defined*  
 You can build your own nodes for your project’s specific needs\. For more information, see [Creating Custom Nodes in Script Canvas](/docs/userguide/scripting/scriptcanvas/custom-nodes.md)\.
 
-**Node Palette**  <a name="script-canvas-introduction-node-palette-display"></a>
+**Node Palette**   {#script-canvas-introduction-node-palette-display}
 The **Node Palette** contains a searchable list of nodes\. By default, the palette is docked to the left of the **Script Canvas** editor\.  
 
 **To display the Node Palette**

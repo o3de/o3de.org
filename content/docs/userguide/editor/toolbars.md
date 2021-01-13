@@ -3,7 +3,7 @@ description: ' Use the top toolbar in &ly-editor; to access editor tools and fea
   in &ALYlong;. '
 title: Using the Top Toolbar
 ---
-# Using the Top Toolbar<a name="lumberyard-editor-toolbars"></a>
+# Using the Top Toolbar {#lumberyard-editor-toolbars}
 
 
 ****  
@@ -23,7 +23,7 @@ You can access Lumberyard tools and features using one of the following methods:
 
 For information about the bottom toolbar, see [Using the Bottom Toolbar](/docs/userguide/editor/toolbar-bottom.md)\.
 
-## EditMode Toolbar<a name="lumberyard-editor-toolbars-editmode"></a>
+## EditMode Toolbar {#lumberyard-editor-toolbars-editmode}
 
 ![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-editmode.png)
 
@@ -38,7 +38,7 @@ The **EditMode** toolbar includes various tools for general level editing:
 + **H** – Use the asset organization tools to open the object selector, create a selection, delete a selection, save selected objects, or load selected objects
 + **I** – Select the current layer
 
-## Object Toolbar<a name="lumberyard-editor-toolbars-object"></a>
+## Object Toolbar {#lumberyard-editor-toolbars-object}
 
 ![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-object.png)
 
@@ -57,7 +57,7 @@ If you align an object to another object that has modified scale or rotation, th
 + **Alt** – Use the object's existing rotation
 + **Shift** – Use the object's existing scale
 
-## Editors Toolbar<a name="lumberyard-editor-toolbars-dialogs"></a>
+## Editors Toolbar {#lumberyard-editor-toolbars-dialogs}
 
 ![\[Image NOT FOUND\]](/images/userguide/editor-toolbars-dialogs.png)
 
@@ -79,7 +79,7 @@ The **Editors** toolbar allows you to access various editor tools:
 + **P** – Open the **Database View**
 + **Q** – Open the **UI Editor**
 
-## Substance Toolbar<a name="lumberyard-editor-toolbars-substance"></a>
+## Substance Toolbar {#lumberyard-editor-toolbars-substance}
 
 The **Substance** toolbar includes a button that opens the **Substance Editor**\.
 

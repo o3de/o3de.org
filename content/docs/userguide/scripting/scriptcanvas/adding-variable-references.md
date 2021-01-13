@@ -3,7 +3,7 @@ description: ' Create variable references on the data pins of &ALYlong; &script-
   nodes as a shortcut to getting or setting a variable''s value. '
 title: Adding Variable References in &script-canvas; Nodes
 ---
-# Adding Variable References in Script Canvas Nodes<a name="script-canvas-adding-variable-references"></a>
+# Adding Variable References in Script Canvas Nodes {#script-canvas-adding-variable-references}
 
 Introduced in v1\.24 of Lumberyard, **variable references** provide a shortcut for getting and setting variable values directly from the Script Canvas nodes that use them\. Any data pin can be converted to a variable reference by dragging a variable from the **Variable Manager** directly onto the pin\.
 

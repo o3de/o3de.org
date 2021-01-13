@@ -4,7 +4,7 @@ description: ' Use volumetric fog in your &ALY; level for fog that supports regu
   as variations in fog density. '
 title: Volumetric Fog
 ---
-# Volumetric Fog<a name="rendering-graphics-fog-volumetric"></a>
+# Volumetric Fog {#rendering-graphics-fog-volumetric}
 
 Volumetric fog uses volume textures as a view\-frustum\-shaped [voxel](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#voxel) buffer to store incoming light and its properties\. Volumetric fog supports regular light and sunlight with dynamic shadows, environment probes, ambient light, as well as variations in fog density\. It also supports the application of volumetric fog with respect to opaque and transparent materials\.
 
@@ -20,7 +20,7 @@ In the following example, volumetric fog is enabled\.
 
 You can add the **Fog Volume** component to an entity to create fog effects\. For more information, see the **[Fog Volume](/docs/userguide/components/fog-volume.md)** component\.
 
-You can specify how light components affect volumetric fog\. For more information, see [Light Component Fog Properties](/docs/userguide/components/fog-volume.md#fog-component-light-property)\.
+You can specify how light components affect volumetric fog\. For more information, see [Light Component Fog Properties](/docs/userguide/components/fog-volume#fog-component-light-property)\.
 
 You can also use the **Particle Editor** to place a particle emitter in your level to add fog density to an area\. For more information, see the **Volume Fog** and **Volume Thickness** parameters for the **Advanced Attribute** in the [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\. 
 

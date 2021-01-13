@@ -3,7 +3,7 @@ description: ' Use prefabs in &ALY;''s &ui-canvas-editor; to create or add preco
   elements to your canvas. '
 title: Using and Creating UI Prefabs
 ---
-# Using and Creating UI Prefabs<a name="ui-editor-prefabs"></a>
+# Using and Creating UI Prefabs {#ui-editor-prefabs}
 
 
 ****  

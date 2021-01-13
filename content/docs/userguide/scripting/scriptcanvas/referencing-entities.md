@@ -2,7 +2,7 @@
 description: ' Reference entities as targets from &script-canvas; nodes. '
 title: Setting Entity Targets
 ---
-# Setting Entity Targets<a name="script-canvas-referencing-entities"></a>
+# Setting Entity Targets {#script-canvas-referencing-entities}
 
 Nodes can contain an entity property\. These properties tell the node which entity to affect\. By default, many nodes reference **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\. You can reference a specific entity other than self\.
 

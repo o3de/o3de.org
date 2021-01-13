@@ -2,7 +2,7 @@
 description: ' Specify resource types in &cloud; for &ALYlong;. '
 title: Resource Type Specification
 ---
-# Resource Type Specification<a name="cloud-canvas-cgf-adding-aws-resources-resource-type-specification"></a>
+# Resource Type Specification {#cloud-canvas-cgf-adding-aws-resources-resource-type-specification}
 
 Resource types are specified in a Cloud Canvas `project-template.json` file\. For types that Cloud Canvas natively supports, the file is located at `Gems\CloudGemFramework\version\AWS\project-template.json`\. The existing resource is named `CoreResourceTypes`\.
 
@@ -99,7 +99,7 @@ Resources are specified in the template as follows:
 }
 ```
 
-## Values to Specify<a name="cloud-canvas-cgf-adding-aws-resources-values-to-specify"></a>
+## Values to Specify {#cloud-canvas-cgf-adding-aws-resources-values-to-specify}
 
 Replace the following items in the template with your own values as required\.
 
@@ -114,11 +114,11 @@ Replace the following items in the template with your own values as required\.
 | <lambda‑directory‑name>  |  Specifies the name of a subdirectory to add to your gem's `\AWS\project-code\lambda-code` directory\. This subdirectory contains Lambda code that is required for the `ArnFunction` or `HandlerFunction` entries\.  | 
 | <type–name> |  Specifies a AWS CloudFormation type in the `AWS::` namespace or a custom type that is prefixed with `Custom::`\.  | 
 
-## Elements in the Type Definition<a name="cloud-canvas-cgf-adding-aws-resources-elements-in-the-type-definition"></a>
+## Elements in the Type Definition {#cloud-canvas-cgf-adding-aws-resources-elements-in-the-type-definition}
 
 This section describes the other elements in a type definition\.
 
-### PermissionMetadata<a name="cloud-canvas-cgf-adding-aws-resources-permissionmetadata"></a>
+### PermissionMetadata {#cloud-canvas-cgf-adding-aws-resources-permissionmetadata}
 
 Optional\. Contains the metadata configuration information for an instance of the type that controls permissions\.
 
@@ -128,9 +128,9 @@ Optional\. Contains the metadata configuration information for an instance of th
 | Item | Description | 
 | --- | --- | 
 | <action>  | Specifies an [IAM action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html) that instances of the resource type are permitted to have in the role that is created for them\. Wildcards are permitted\. | 
-| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. | 
+| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. | 
 
-### ArnFormat<a name="cloud-canvas-cgf-adding-aws-resources-arnformat"></a>
+### ArnFormat {#cloud-canvas-cgf-adding-aws-resources-arnformat}
 
 Required if `ArnFunction` is not specified\. Specifies the ARN for instances of the resource in the *<arn–format>* format string\. The following substitutions are allowed:
 
@@ -149,7 +149,7 @@ The following example specifies the ARN for a Lambda function:
 arn:aws:lambda:<region>:<account-id>:function:<resource-name>
 ```
 
-### ArnFunction<a name="cloud-canvas-cgf-adding-aws-resources-arnfunction"></a>
+### ArnFunction {#cloud-canvas-cgf-adding-aws-resources-arnfunction}
 
 Required if `ArnFormat` is not specified\. Specifies a module and function to retrieve the ARN for the resource\.
 
@@ -166,7 +166,7 @@ Required if `ArnFormat` is not specified\. Specifies a module and function to re
 **Note**  
 Be sure that you specify any required permissions for your function in the `HandlerPolicyStatement` element of the `PermissionMetadata` field\. These permissions are shared with the `HandlerFunction` if one exists\.
 
-### HandlerFunction<a name="cloud-canvas-cgf-adding-aws-resources-handlerfunction"></a>
+### HandlerFunction {#cloud-canvas-cgf-adding-aws-resources-handlerfunction}
 
 Required if the type begins with `Custom::`\. Specifies a module and function that runs custom code in response to the `Create`, `Update,` and `Delete` events of the custom resource\.
 
@@ -182,7 +182,7 @@ Custom resources \(that is, entries in the `Resources` section of the form `"Typ
 
 Be sure to specify any required permissions for your function in the `HandlerPolicyStatement` element of the `PermissionMetadata` field\. These permissions are shared with the `ArnFunction` if it exists\. Custom resource handlers process the events [as defined by AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/crpg-ref-requests.html)\.
 
-### DisplayInfo<a name="cloud-canvas-cgf-adding-aws-resources-displayinfo"></a>
+### DisplayInfo {#cloud-canvas-cgf-adding-aws-resources-displayinfo}
 
 Optional\. Contains user interface information to display\. Currently, this consists exclusively of *<console\-url>*, which has a *<label>* and a *<url>*\. The *<url>* is relative to https://console\.aws\.amazon\.com/ and can use the same substitutions as `ArnFormat`\.
 

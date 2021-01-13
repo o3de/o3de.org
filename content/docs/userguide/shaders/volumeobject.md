@@ -2,19 +2,19 @@
 description: null
 title: VolumeObject Shader
 ---
-# VolumeObject Shader<a name="shader-ref-volumeobject"></a>
+# VolumeObject Shader {#shader-ref-volumeobject}
 
 Use Amazon Lumberyard's VolumeObject shader to render volumetric clouds with realistic shading and self\-shadowing effects\.
 
 In addition to the shader parameters, the **Time of Day Editor**'s [**Cloud Shading** parameters](/docs/userguide/weather/clouds-shading.md) also can affect VolumeObject rendering\. To disable this feature, deselect **Use TOD Settings** in the [Shader Generation Parameters](#shader-ref-volumeobject-shader-generation-parameters)\.
 
-## Shader Parameters<a name="shader-ref-volumeobject-shader-parameters"></a>
+## Shader Parameters {#shader-ref-volumeobject-shader-parameters}
 
 Global Density  
 Defines how dense the clouds appear\.  
 Default value: `1`
 
-## Shader Generation Parameters<a name="shader-ref-volumeobject-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-volumeobject-shader-generation-parameters}
 
 **Soft Intersections**  
 Enhances transparency with opaque scene geometry\. Use this parameter sparingly due to increased pixel shading cost\.

@@ -2,7 +2,7 @@
 description: ' Use the Spline component to author lines and curves in &ALYlong;. '
 title: Spline
 ---
-# Spline<a name="component-spline"></a>
+# Spline {#component-spline}
 
 
 ****  
@@ -20,7 +20,7 @@ A spline is a curve that connects two or more specific points\. This is useful i
 + [Working with Spline Components](#working-with-spline-component)
 + [EBus Request Bus Interface](#component-spline-ebus-request)
 
-## Spline Properties<a name="component-spline-properties"></a>
+## Spline Properties {#component-spline-properties}
 
 ![\[Example Spline component with the Component Mode option.\]](/images/userguide/using-component-mode-3.png)
 
@@ -42,7 +42,7 @@ By default, a **Spline** component has four vertices that are spaced evenly in a
 
 ![\[Default Spline component with the linear type.\]](/images/userguide/component/spline-component-1.png)
 
-## Working with Spline Components<a name="working-with-spline-component"></a>
+## Working with Spline Components {#working-with-spline-component}
 
 You can move the vertices in the local space of the entity along each axis\. Each vertex has a planar, linear, and surface manipulator\. Combined, these are called the *translation manipulator*\. You can use the translation manipulator to move the vertices\.
 
@@ -113,7 +113,7 @@ If you change the spline type, the component is updated to represent the new int
 ![\[The linear spline changes to a Catmull-Rom spline.\]](/images/userguide/component/spline-component-9.png)
 
 **Note**  
-The first and last vertices of a Catmull\-Rom spline are only control points\. They don't form part of the curve\. A well\-formed Catmull\-Rom spline must have a minimum of four vertices\. The spline doesn't render if there are fewer than four vertices\.<a name="knot-paramterization-example"></a>
+The first and last vertices of a Catmull\-Rom spline are only control points\. They don't form part of the curve\. A well\-formed Catmull\-Rom spline must have a minimum of four vertices\. The spline doesn't render if there are fewer than four vertices\. {#knot-paramterization-example}
 
 The following examples show how Catmull\-Rom splines change when you adjust the **Knot Parameterization** property\.
 
@@ -130,7 +130,7 @@ The following examples are linear and Bézier splines with the same vertices but
 
 ![\[Example open and closed Linear and Bézier splines.\]](/images/userguide/component/spline-component-12.png)
 
-## EBus Request Bus Interface<a name="component-spline-ebus-request"></a>
+## EBus Request Bus Interface {#component-spline-ebus-request}
 
 Use the following request functions with the `SplineComponentRequestBus` EBus interface to communicate with other components of your game\. The **Spline** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
 

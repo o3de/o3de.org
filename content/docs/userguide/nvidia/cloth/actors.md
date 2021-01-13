@@ -3,7 +3,7 @@ description: ' Use the NVIDIA Cloth component to add cloth simulation to Actor c
   in &ALYlong;. '
 title: Cloth for Actor components
 ---
-# Cloth for Actor components<a name="nvidia-cloth-actors"></a>
+# Cloth for Actor components {#nvidia-cloth-actors}
 
 
 ****  
@@ -35,7 +35,7 @@ Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem 
 
 For imformation on exporting actor assets, see [FBX Settings actor export](/docs/userguide/fbx/actor-export.md)
 
-## Add Cloth to Actor components<a name="cloth-actor-setup"></a>
+## Add Cloth to Actor components {#cloth-actor-setup}
 
 Create cloth by adding the **Cloth** component to an entity that has an **Actor** component, and then setting the properties of the **Cloth** component\. 
 
@@ -76,11 +76,11 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
    1. You can use the **Motion constraints** properties **Max Distance** and **Scale** to blend between cloth simulation and keyframe animation\. 
 
-## Add cloth colliders to an actor<a name="add-char-cloth-colliders"></a>
+## Add cloth colliders to an actor {#add-char-cloth-colliders}
 
  You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation\. Cloth colliders are added to actors in **Animation Editor**\. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/userguide/char_animation_add_cloth_colliders.md)\. 
 
-## View the Cloth Simulation<a name="view-cloth-simulation"></a>
+## View the Cloth Simulation {#view-cloth-simulation}
 
 In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\. 
 

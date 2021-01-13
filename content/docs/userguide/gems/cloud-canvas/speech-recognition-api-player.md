@@ -3,11 +3,11 @@ description: ' Use the Speech Recognition Cloud Gem player API to send audio rec
   or text to a bot for intent processing. '
 title: Speech Recognition Player API
 ---
-# Speech Recognition Player API<a name="cloud-canvas-cloud-gem-speech-recognition-api-player"></a>
+# Speech Recognition Player API {#cloud-canvas-cloud-gem-speech-recognition-api-player}
 
 You can use the Speech Recognition Cloud Gem player API to send audio recordings or text to a bot for intent processing\.
 
-## POST /service/postaudio<a name="cloud-canvas-cloud-gem-speech-recognition-api-player-post-servicepostaudio"></a>
+## POST /service/postaudio {#cloud-canvas-cloud-gem-speech-recognition-api-player-post-servicepostaudio}
 
 Sends an audio recording to a bot for intent processing\. If the bot matches the recorded speech as an intent, it is returned with any necessary follow\-up information\. If the speech is not recognized, status information is returned\. For information on the field formats and response parameters, see [PostContent](https://docs.aws.amazon.com/lex/latest/dg/API_runtime_PostContent.html) in the *Amazon Lex Developer Guide*\.
 
@@ -35,7 +35,7 @@ Sends an audio recording to a bot for intent processing\. If the bot matches the
 | slots | string | The slot information that was recognized in the form of JSON name–value pairs\. | 
 | slot\_to\_elicit | string | If slot information needs to be elicited, specifies the slot that the response state elicits\. | 
 
-## POST /service/posttext<a name="cloud-canvas-cloud-gem-speech-recognition-api-player-post-serviceposttext"></a>
+## POST /service/posttext {#cloud-canvas-cloud-gem-speech-recognition-api-player-post-serviceposttext}
 
 Sends text to a bot for intent processing\. This is intended as a debugging function to help test the bot setup\. You can also use the function for custom speech recognition\. If the bot matches the recorded speech as an intent, it is returned with follow\-up information if required\. If the speech is not recognized, status information is returned\. For information on field formats and response parameters, see [PostContent](https://docs.aws.amazon.com/lex/latest/dg/API_runtime_PostContent.html) in the *Amazon Lex Developer Guide*\.
 

@@ -2,11 +2,11 @@
 description: ' Work with substances in &ALYlong;. '
 title: Working with Substances
 ---
-# Working with Substances<a name="mat-substances"></a>
+# Working with Substances {#mat-substances}
 
 Substances are procedural materials created using Allegorithmic's Substance Designer\. Lumberyard has the ability to import Substance `.sbsar` files using the Substance Editor\.
 
-## Creating Substances for Lumberyard<a name="mat-substances-creating"></a>
+## Creating Substances for Lumberyard {#mat-substances-creating}
 
 When creating Substances for Lumberyard using Allegorithmic’s Substance Designer, it is recommended to use the **PBR Specular/Glossiness** substance as the base\. This will involve less adjustments to your default outputs for substances\. However, you will need to delete the **Glossiness** output and save the **Gloss** map into the alpha channel for the **Normal** map output in Substance Designer\.
 
@@ -28,7 +28,7 @@ If you want to use a **PBR Metallic/Roughness** Substance and convert it for use
 + Delete the **Metallic** output node\.
 + Save the changes to your Substance and then publish the `.sbs` as a `.sbsar` to be imported into Lumberyard\.
 
-## Exporting Substances for Lumberyard<a name="mat-substances-exporting"></a>
+## Exporting Substances for Lumberyard {#mat-substances-exporting}
 
 When using Allegorithmic’s Substance Designer to export textures to Lumberyard, take extra care to select the correct file type\. The following file types export correctly: `.tif`, `.tga`, `.bmp`\. Avoid exporting with the following common file types: `.png`, `.jpg`, `.psd`\.
 
@@ -45,7 +45,7 @@ When using Allegorithmic’s Substance Designer to export textures to Lumberyard
 
 1. Click **Export**\.
 
-## Working with Substance in Lumberyard<a name="mat-substances-working"></a>
+## Working with Substance in Lumberyard {#mat-substances-working}
 
 Using Substance Editor, you can edit Substance material properties and visualize substances on objects in real\-time\. Substance Editor also has the ability to generate and export static textures from Substances\.
 
@@ -67,7 +67,7 @@ Here are some things to keep in mind when working with Substances in Substance E
 **Note**  
 This permanently removes the substance and all associated assets from the `.sbsar` project, which cannot be recovered using the Windows Recycle Bin\. 
 
-## Console Variables for Substances<a name="mat-substances-cvars"></a>
+## Console Variables for Substances {#mat-substances-cvars}
 
 To control how Substances are handled by CPU and memory, you can set the following CVars in your `system_windows_pc.cfg` file or `editor.cfg` file\.
 

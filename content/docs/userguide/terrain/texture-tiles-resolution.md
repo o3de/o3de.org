@@ -3,7 +3,7 @@ description: ' Divide &ALY; texture layers into smaller sections to increase the
   of heavily viewed areas. '
 title: Changing Terrain Tile Resolution
 ---
-# Changing Terrain Tile Resolution<a name="terrain-texture-tiles-resolution"></a>
+# Changing Terrain Tile Resolution {#terrain-texture-tiles-resolution}
 
 A terrain layer can be divided into multiple tiles, each of which can be painted with a resolution between 64x64 and 2048x2048 kilometers\. The higher the resolution, the softer the transition between terrain texture layers\.
 

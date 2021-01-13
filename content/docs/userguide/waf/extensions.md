@@ -3,9 +3,9 @@ description: ' Compile your &ALYlong; game project with IncrediBuild, QT, or Mic
   Visual Studio. '
 title: Waf Extensions
 ---
-# Waf Extensions<a name="waf-extensions"></a>
+# Waf Extensions {#waf-extensions}
 
-## Compiling with IncrediBuild<a name="waf-extensions-incredibuild"></a>
+## Compiling with IncrediBuild {#waf-extensions-incredibuild}
 
 Waf supports IncrediBuild 8\.0\.1 or later, and allows for distributed network builds for compiling larger projects\.
 
@@ -64,7 +64,7 @@ Modify the settings in the Windows registry under the following key:
 **Note**  
 Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\.
 
-## Compiling with QT<a name="waf-extensions-qt"></a>
+## Compiling with QT {#waf-extensions-qt}
 
 Waf supports compiling QT5 `.moc` Meta\-Object\-Compiler files\. To enable or disable compiling of particular files, add the `qt5` feature to your Waf Module \(wscript\) file and then add the list of files to be compiled\.
 

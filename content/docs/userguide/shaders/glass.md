@@ -3,7 +3,7 @@ description: ' Enable glass shaders to render windows and glass objects with eff
   such as fog and tint for &ALYlong;. '
 title: Glass Shader
 ---
-# Glass Shader<a name="shader-ref-glass"></a>
+# Glass Shader {#shader-ref-glass}
 
 The Glass shader renders windows and other glass objects, imparting refractive, tint, fog, and cracking effects for both breakable and non\-breakable glass objects\. Use the [Illum Shader](/docs/userguide/shaders/illum.md) instead if you require non\-refractive effects for non\-breakable glass objects\. 
 
@@ -13,7 +13,7 @@ Here are a few things to keep in mind when using the Glass shader:
 + Except for the sun, all deferred lights don't affect transparent glass objects\.
 + The shader can't receive sun shadows\.
 
-## Shader Parameters<a name="shader-ref-glass-shader-parameters"></a>
+## Shader Parameters {#shader-ref-glass-shader-parameters}
 
 **Back light scale**  
 Controls the amount of light that gets through the glass\.   
@@ -70,7 +70,7 @@ Default value: 0
 Applies a tint color to the glass\.   
 Default value: 255,255,255
 
-## Shader Generation Parameters<a name="shader-ref-glass-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-glass-shader-generation-parameters}
 
 **Use Diffuse map**  
 Enables diffuse map for dirt, and so on\. Requires alpha channel\.

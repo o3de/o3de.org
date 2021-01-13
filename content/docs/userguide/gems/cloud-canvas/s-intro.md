@@ -3,7 +3,7 @@ description: ' Use &ALYlong; cloud gems to add &AWS; cloud-connected functionali
   to your game. '
 title: Cloud Gems
 ---
-# Cloud Gems<a name="cloud-canvas-cloud-gems-intro"></a>
+# Cloud Gems {#cloud-canvas-cloud-gems-intro}
 
 A cloud gem is an individual package of specific cloud\-connected functionality, assets, and AWS resource definitions\. A cloud gem includes everything required for you to add cloud\-connected functionality to your project\.
 

@@ -3,7 +3,7 @@ description: ' Use the &audio-controls-browser; ''s ATL Control pane to add new 
   controls and to select and edit audio controls in &ALYlong;. '
 title: ATL Controls Pane
 ---
-# ATL Controls Pane<a name="audio-atl-editor-atl-controls"></a>
+# ATL Controls Pane {#audio-atl-editor-atl-controls}
 
 The **ATL Control** pane has the following control types\. The associated icon designates the type of control\. You can customize the name of the control\.
 

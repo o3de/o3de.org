@@ -3,7 +3,7 @@ description: ' Use the Clone material node in the &script-canvas; editor in &ALY
   to create a copy of a material file. '
 title: Clone
 ---
-# Clone<a name="material-clone-node"></a>
+# Clone {#material-clone-node}
 
 Creates a copy of the specified material\. The material must already be loaded into memory, so that the node can find the material\. If the material is not found, the node returns `Invalid`\.
 
@@ -18,7 +18,7 @@ Don't trigger this node for every frame\. Each time the **In** event is received
 + [Inputs](#material-clone-node-input)
 + [Outputs](#material-clone-node-output)
 
-## Inputs<a name="material-clone-node-input"></a>
+## Inputs {#material-clone-node-input}
 
 
 ****  
@@ -28,7 +28,7 @@ Don't trigger this node for every frame\. Each time the **In** event is received
 | In | Event | Triggers the node\. | 
 | Material | Material |  The material to be cloned\.  | 
 
-## Outputs<a name="material-clone-node-output"></a>
+## Outputs {#material-clone-node-output}
 
 
 ****  

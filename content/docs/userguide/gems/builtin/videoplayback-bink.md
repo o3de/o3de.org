@@ -3,7 +3,7 @@ description: ' Play a video file in a loading screen or on textures in &ALYlong;
   RAD Game Tools'' Bink video codec. '
 title: Video Playback Bink Gem
 ---
-# Video Playback Bink Gem<a name="gems-system-gem-videoplayback-bink"></a>
+# Video Playback Bink Gem {#gems-system-gem-videoplayback-bink}
 
 With the Video Playback Bink gem, you can play videos using RAD Game Tools' Bink video codec\. The videos are playable in a game or level loading screen, or on textures in your Lumberyard level\. When you enable the Video Playback Bink gem, the Video Playback Bink component is enabled\. For instructions on how to prepare Lumberyard for video playback, and how to set up video playback in your level, see [Video Playback Bink](/docs/userguide/components/videoplayback-bink.md)\.
 

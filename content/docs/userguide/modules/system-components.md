@@ -2,13 +2,13 @@
 description: ' Learn about how &ALYlong; uses system components. '
 title: System Components
 ---
-# System Components<a name="az-module-system-components"></a>
+# System Components {#az-module-system-components}
 
 A traditional game engine contains many singleton classes, each in charge of a major system\. In Lumberyard, these singletons are built using the same [component entity system](/docs/userguide/components/intro.md) that powers gameplay entities\. When an application starts, a *system entity* is created\. Components added to this entity are known as *system components*\. The system entity always has the ID `AZ::SystemEntityId (0)`\. 
 
 When you build singletons as Lumberyard system components, you are using a powerful suite of complementary technologies that facilitate problem resolution through established patterns\. This topic describes system components in detail\. 
 
-## Smart Initialization Order<a name="az-module-system-components-smart-initialization-order"></a>
+## Smart Initialization Order {#az-module-system-components-smart-initialization-order}
 
 As a game engine grows in size, it tends to develop many singleton classes\. A singleton class often requires communication with other singletons to function\. This means that the order in which singletons are initialized is very important\. Lumberyard solves this by building singletons as components\. 
 
@@ -49,15 +49,15 @@ The example shows the following:
 
 For more information about the initialization order of components, see [The AZ Bootstrapping Process](/docs/userguide/modules/bootstrap.md)\.
 
-## Easily Configurable Components<a name="az-module-system-components-easily-configurable"></a>
+## Easily Configurable Components {#az-module-system-components-easily-configurable}
 
 Often, a singleton has settings that are configurable for each game\. It can be difficult for a low\-level singleton to access configuration data if the system used to process this data hasn't started\. Therefore, low\-level singletons often rely on simple data sources such as command line parsers or `.ini` files\. 
 
-A system component can expose its configuration through [AZ reflection](/docs/userguide/components/entity-system-reflect-component.md)\. The [Advanced Settings dialog box in the Project Configurator](/docs/userguide/modules/system-entities-configuring.md) uses this feature to enable the configuration of system components on a per\-game basis\. The Project Configurator saves an [application descriptor file](/docs/userguide/modules/system-entities-configuring.md#az-module-system-entities-configuring-app-descriptor-files) that contains the settings for each system component, and this file is used to bootstrap the application and configure each component before it is activated\. This is the same technology that the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)** uses to configure gameplay entities in Lumberyard Editor\. 
+A system component can expose its configuration through [AZ reflection](/docs/userguide/components/entity-system-reflect-component.md)\. The [Advanced Settings dialog box in the Project Configurator](/docs/userguide/modules/system-entities-configuring.md) uses this feature to enable the configuration of system components on a per\-game basis\. The Project Configurator saves an [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) that contains the settings for each system component, and this file is used to bootstrap the application and configure each component before it is activated\. This is the same technology that the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)** uses to configure gameplay entities in Lumberyard Editor\. 
 
 For more information, see [Configuring System Entities](/docs/userguide/modules/system-entities-configuring.md)\.
 
-## Writing System Components<a name="az-module-system-components-writing"></a>
+## Writing System Components {#az-module-system-components-writing}
 
 To designate a component as a system component, rather than a gameplay component, you must set the `AppearsInAddComponentMenu` field to `System` when you reflect to the `EditContext`\. 
 
@@ -82,7 +82,7 @@ void MemoryComponent::Reflect(ReflectContext* context)
 
 For more information on writing system components, see [Creating System Components](/docs/userguide/components/entity-system-pg-creating-system-components.md)\.
 
-## Required System Components<a name="az-module-system-components-required"></a>
+## Required System Components {#az-module-system-components-required}
 
 Often, a module requires the existence of a system component\. This requirement can be established through the module's `GetRequiredSystemComponents()` function\. Any component type declared here is guaranteed to exist when the application starts\. 
 

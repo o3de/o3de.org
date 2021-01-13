@@ -3,11 +3,11 @@ description: ' Update your &ALYlong; projects and cloud gems to version 1.0.0 of
   Cloud Gem framework. '
 title: Updating Projects and Cloud Gems to Version 1.0.0 of the Cloud Gem Framework
 ---
-# Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework<a name="cloud-canvas-cgf-updating-projects-gems"></a>
+# Updating Projects and Cloud Gems to Version 1\.0\.0 of the Cloud Gem Framework {#cloud-canvas-cgf-updating-projects-gems}
 
 A cloud gem is a gem that depends on the [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md)\. Starting in Lumberyard 1\.10 \(and Cloud Gem Framework 1\.0\.0\), [gem versioning support](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md) makes the work of updating Lumberyard cloud gem projects much easier\. However, manual steps are required to update projects and gems that were created before Cloud Gem Framework version 1\.0\.0\.
 
-## Updating Existing Cloud Gem Projects<a name="cloud-canvas-cgf-updating-projects-gems-updating-existing-cloud-gem-projects"></a>
+## Updating Existing Cloud Gem Projects {#cloud-canvas-cgf-updating-projects-gems-updating-existing-cloud-gem-projects}
 
 To update an existing cloud gem project, you must update the project's `gems.json` file and runtime configuration\.
 
@@ -32,7 +32,7 @@ To update an existing cloud gem project, you must update the project's `gems.jso
 
    For more information about `populate-appdescriptors`, see [Projects Commands](/docs/userguide/lmbr-exe-project.md) in the documentation for [Managing Game Projects with Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
-### Update the Project's AWS Directory<a name="cloud-canvas-cgf-updating-projects-gems-update-projects-aws-directory"></a>
+### Update the Project's AWS Directory {#cloud-canvas-cgf-updating-projects-gems-update-projects-aws-directory}
 
 To update the project's AWS directory, you must delete the project, deployment access, and deployment template files\. But before you delete the template files, you must save any roles or resources that you added\.
 
@@ -52,7 +52,7 @@ To update the project's AWS directory, you must delete the project, deployment a
 
 1. Delete the `<project>\AWS\deployment-template.json` file\.
 
-### Update the Project's Resource Group Directories<a name="cloud-canvas-cgf-updating-projects-gems-update-projects-resource-group-directories"></a>
+### Update the Project's Resource Group Directories {#cloud-canvas-cgf-updating-projects-gems-update-projects-resource-group-directories}
 
 When no Lambda resources exist for a resource group, you can simply remove the resource group's Lambda code directories\.
 
@@ -66,7 +66,7 @@ When no Lambda resources exist for a resource group, you can simply remove the r
 
 1. If the `resource-template.json` file defines AWS Lambda function resources, perform the steps described in [Updating Lambda Code](#cloud-canvas-cgf-updating-projects-gems-updating-lambda-code)\.
 
-## Updating Existing Cloud Gems<a name="cloud-canvas-cgf-updating-projects-gems-updating-existing-cloud-gems"></a>
+## Updating Existing Cloud Gems {#cloud-canvas-cgf-updating-projects-gems-updating-existing-cloud-gems}
 
 To update an existing cloud gem, you must update the gem's `gem.json` file and either remove its Lambda code directories or update its Lambda code\.
 
@@ -80,7 +80,7 @@ To update an existing cloud gem, you must update the gem's `gem.json` file and e
 
 1. If the `<gem>\AWS\resource-template.json` file does not exist or does not define any AWS Lambda function resources, delete the `<gem>\AWS\lambda-function-code` directory and any `<gem>\AWS\<lambda-name>-lambda-code` directories\. Otherwise, perform the steps in [Updating Lambda Code](#cloud-canvas-cgf-updating-projects-gems-updating-lambda-code)\.
 
-### Updating Lambda Code<a name="cloud-canvas-cgf-updating-projects-gems-updating-lambda-code"></a>
+### Updating Lambda Code {#cloud-canvas-cgf-updating-projects-gems-updating-lambda-code}
 
 Updating Lambda code involves reorganizing your existing Lambda code directories and creating `.import` files as needed\. For information on the reasons for this directory restructuring, see [ Cloud Gem Framework and Resource Manager Versioning](/docs/userguide/gems/cloud-canvas/cgf-rm-versioning.md)\.
 

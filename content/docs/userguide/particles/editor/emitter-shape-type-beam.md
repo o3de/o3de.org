@@ -4,7 +4,7 @@ description: ' Use the Beam emitter in the &ALYlong; &particle-editor; to spawn 
   position. '
 title: Beam Emitter (CPU)
 ---
-# Beam Emitter \(CPU\)<a name="particle-editor-emitter-shape-type-beam"></a>
+# Beam Emitter \(CPU\) {#particle-editor-emitter-shape-type-beam}
 
 The **Beam** emitter spawns a length of connected particles at once, based on the origin and specified target position\. You can also set wave form attributes to shape or animate the beam\.
 

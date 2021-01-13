@@ -3,13 +3,13 @@ description: ' Use replica chunks in &ALYlong; to store data sets and remote pro
   calls. '
 title: Replica Chunks
 ---
-# Replica Chunks<a name="network-replicas-chunks"></a>
+# Replica Chunks {#network-replicas-chunks}
 
  A replica chunk is a user extendable network object\. One or more `ReplicaChunk` objects can be owned by a [replica](/docs/userguide/networking/replicas-replica.md), which is both a container and manager for replica chunks\. A replica is owned by a primary peer and is propagated to other network nodes as a proxy replica\. The data that a replica chunk contains should generally be related to the other data stored within it\. Since multiple chunks can be attached to a replica, unrelated data can be stored in other chunks within the same replica\. 
 
  A replica chunk can contain [Datasets](/docs/userguide/networking/replicas-data-sets.md) and/or [Remote Procedure Calls \(RPCs\)](/docs/userguide/networking/replicas-remote-procedure-calls.md)\. Data sets store arbitrary data, which only the primary replica is able to modify\. Any changes are propagated to the chunks in proxy replicas on the other nodes\. RPCs are methods that can be executed on remote nodes\. They are first invoked on the primary, which decides whether the invocation will be propagated to the proxies\. 
 
-## Replica Chunk Requirements and Limitations<a name="network-replicas-chunks-limitations"></a>
+## Replica Chunk Requirements and Limitations {#network-replicas-chunks-limitations}
 
 A replica chunk has several important attributes:
 + It can have up to 32 `DataSet` definitions\.
@@ -17,14 +17,14 @@ A replica chunk has several important attributes:
 + It is reference counted and therefore must be held by a [smart pointer](https://en.wikipedia.org/wiki/Smart_pointer)\.
 + It is not synchronized across the session until the replica manager is ready\.
 
-## Implementing a New Replica Chunk Type<a name="network-replicas-chunks-new-type"></a>
+## Implementing a New Replica Chunk Type {#network-replicas-chunks-new-type}
 
 You have two ways to implement a new replica chunk type: handle data set changes and RPC calls \("game logic"\) inside the chunk, or outside the chunk\. In both cases, the following apply:
 + The name of the chunk type must be unique throughout the system\. To achieve this, every replica chunk type must implement the static member function `const char* GetChunkName()`\. The string returned by the `GetChunkName` function must uniquely identify the chunk type\. 
 + To indicate whether the ownership of this type of chunk is transferrable, every chunk type needs to override the `bool IsReplicaMigratable()` virtual function\. If any chunk in a replica is not migratable, the replica's ownership cannot be transferred from one peer to another\. 
 +  Every chunk type must define a smart pointer that holds the chunk type instances\.  
 
-### Declaring a Replica Chunk Type with Internal Game Logic Handling<a name="network-replicas-chunks-new-type-logic-inside"></a>
+### Declaring a Replica Chunk Type with Internal Game Logic Handling {#network-replicas-chunks-new-type-logic-inside}
 
 To have your replica chunk class handle game logic directly, it should inherit from `ReplicaChunk`:
 
@@ -56,7 +56,7 @@ public:
  };
 ```
 
-### Declaring a Replica Chunk Type with External Game Logic Handling<a name="network-replicas-chunks-new-type-logic-outside"></a>
+### Declaring a Replica Chunk Type with External Game Logic Handling {#network-replicas-chunks-new-type-logic-outside}
 
 To have your replica chunk class act as a simple data carrier and forward data changes and events to a designated handler \(an external class\), inherit your handler class from `ReplicaChunkInterface`, and your replica chunk class from `ReplicaChunkBase`: 
 
@@ -99,7 +99,7 @@ public:
  };
 ```
 
-### Registering Chunk Type<a name="network-replicas-chunks-new-type-registering"></a>
+### Registering Chunk Type {#network-replicas-chunks-new-type-registering}
 
  Every user\-defined replica chunk type should be registered with `ReplicaChunkDescriptorTable` to create the factory required by the [Replica Manager](/docs/userguide/networking/replicas-replica-manager.md)\.
 
@@ -109,7 +109,7 @@ To register replica chunks, use this call:
 GridMate::ReplicaChunkDescriptorTable::Get().RegisterChunkType<MyChunk>();
 ```
 
-## Attaching a Replica Chunk to the Replica<a name="network-replicas-chunks-attaching-to-replica"></a>
+## Attaching a Replica Chunk to the Replica {#network-replicas-chunks-attaching-to-replica}
 
 You must add a replica chunk to a replica before you bind the replica to replica manager\. After you bind the replica to replica manager, you cannot add or remove replica chunks to or from the replica\. 
 

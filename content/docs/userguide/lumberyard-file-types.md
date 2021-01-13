@@ -2,7 +2,7 @@
 description: ' Learn about the asset data file types that &ALYlong; supports. '
 title: '&ALY; Asset File Types'
 ---
-# Lumberyard Asset File Types<a name="lumberyard-file-types"></a>
+# Lumberyard Asset File Types {#lumberyard-file-types}
 
 See the following tables for supported asset data file types in Lumberyard\.
 

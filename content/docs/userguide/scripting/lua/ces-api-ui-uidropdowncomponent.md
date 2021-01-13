@@ -3,15 +3,15 @@ description: ' Use UiDropdownComponent to enable dropdown menu options for a UI 
   in &ALYlong;. '
 title: UiDropdownComponent
 ---
-# UiDropdownComponent<a name="lua-scripting-ces-api-ui-uidropdowncomponent"></a>
+# UiDropdownComponent {#lua-scripting-ces-api-ui-uidropdowncomponent}
 
 You can use `UiDropdownComponent` to implement a UI dropdown menu in Amazon Lumberyard\.
 
-## UiDropdownBus<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus"></a>
+## UiDropdownBus {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus}
 
 Services messages for the `UiDropdownComponent`\.
 
-### GetValue<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getvalue"></a>
+### GetValue {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getvalue}
 
 Returns the value of the dropdown\. The value is the last option that was selected\.
 
@@ -21,7 +21,7 @@ Returns the value of the dropdown\. The value is the last option that was select
 AZ::EntityId GetValue()
 ```
 
-### SetValue<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setvalue"></a>
+### SetValue {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setvalue}
 
 Sets the value of the dropdown manually\.
 
@@ -31,7 +31,7 @@ Sets the value of the dropdown manually\.
 void SetValue(AZ::EntityId value)
 ```
 
-### GetContent<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcontent"></a>
+### GetContent {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcontent}
 
 Returns the content element that this dropdown expands\.
 
@@ -41,7 +41,7 @@ Returns the content element that this dropdown expands\.
 AZ::EntityId GetContent()
 ```
 
-### SetContent<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcontent"></a>
+### SetContent {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcontent}
 
 Sets the content element that this dropdown expands\.
 
@@ -51,7 +51,7 @@ Sets the content element that this dropdown expands\.
 void SetContent(AZ::EntityId content)
 ```
 
-### GetExpandOnHover<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandonhover"></a>
+### GetExpandOnHover {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandonhover}
 
 Returns whether this dropdown should expand automatically on hover\.
 
@@ -61,7 +61,7 @@ Returns whether this dropdown should expand automatically on hover\.
 bool GetExpandOnHover()
 ```
 
-### SetExpandOnHover<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandonhover"></a>
+### SetExpandOnHover {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandonhover}
 
 Sets whether this dropdown expands automatically on hover\.
 
@@ -71,7 +71,7 @@ Sets whether this dropdown expands automatically on hover\.
 void SetExpandOnHover(bool expandOnHover)
 ```
 
-### GetWaitTime<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getwaittime"></a>
+### GetWaitTime {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getwaittime}
 
 Returns how long to wait before expanding upon hover and collapsing upon exit\.
 
@@ -81,7 +81,7 @@ Returns how long to wait before expanding upon hover and collapsing upon exit\.
 float GetWaitTime()
 ```
 
-### SetWaitTime<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setwaittime"></a>
+### SetWaitTime {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setwaittime}
 
 Sets how long to wait before expanding upon hover and collapsing upon exit\.
 
@@ -91,7 +91,7 @@ Sets how long to wait before expanding upon hover and collapsing upon exit\.
 void SetWaitTime(float waitTime)
 ```
 
-### GetCollapseOnOutsideClick<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcollapseonoutsideclick"></a>
+### GetCollapseOnOutsideClick {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcollapseonoutsideclick}
 
 Returns whether this dropdown collapses when the user clicks outside\. 
 
@@ -101,7 +101,7 @@ Returns whether this dropdown collapses when the user clicks outside\.
 bool GetCollapseOnOutsideClick()
 ```
 
-### SetCollapseOnOutsideClick<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcollapseonoutsideclick"></a>
+### SetCollapseOnOutsideClick {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcollapseonoutsideclick}
 
 Sets whether this dropdown collapses when the user clicks outside\.
 
@@ -111,7 +111,7 @@ Sets whether this dropdown collapses when the user clicks outside\.
 void SetCollapseOnOutsideClick(bool collapseOnOutsideClick)
 ```
 
-### GetExpandedParentId<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandedparentid"></a>
+### GetExpandedParentId {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandedparentid}
 
 Returns the element that the dropdown content parents to when expanded \(the root element by default\)\.
 
@@ -121,7 +121,7 @@ Returns the element that the dropdown content parents to when expanded \(the roo
 AZ::EntityId GetExpandedParentId() 
 ```
 
-### SetExpandedParentId<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandedparentid"></a>
+### SetExpandedParentId {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandedparentid}
 
 Sets the element that the dropdown content parents to when expanded\.
 
@@ -131,7 +131,7 @@ Sets the element that the dropdown content parents to when expanded\.
 void SetExpandedParentId(AZ::EntityId expandedParentId)
 ```
 
-### GetTextElement<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-gettextelement"></a>
+### GetTextElement {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-gettextelement}
 
 Returns the text element that displays the text of the currently selected option\.
 
@@ -141,7 +141,7 @@ Returns the text element that displays the text of the currently selected option
 bool GetCollapseOnOutsideClick()
 ```
 
-### SetTextElement<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-settextelement"></a>
+### SetTextElement {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-settextelement}
 
 Sets the text element that displays the text of the currently selected option\.
 
@@ -151,7 +151,7 @@ Sets the text element that displays the text of the currently selected option\.
 void SetTextElement(AZ::EntityId textElement)
 ```
 
-### GetIconElement<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-geticonelement"></a>
+### GetIconElement {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-geticonelement}
 
 Returns the icon element that displays the icon of the currently selected option\.
 
@@ -161,7 +161,7 @@ Returns the icon element that displays the icon of the currently selected option
 AZ::EntityId GetIconElement()
 ```
 
-### SetIconElement<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-seticonelement"></a>
+### SetIconElement {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-seticonelement}
 
 Sets the icon element that displays the icon of the currently selected option\.
 
@@ -171,7 +171,7 @@ Sets the icon element that displays the icon of the currently selected option\.
 void SetIconElement(AZ::EntityId iconElement)
 ```
 
-### Expand<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-expand"></a>
+### Expand {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-expand}
 
 Expands the dropdown menu\.
 
@@ -181,7 +181,7 @@ Expands the dropdown menu\.
 void Expand()
 ```
 
-### Collapse<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-collapse"></a>
+### Collapse {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-collapse}
 
 Collapses the dropdown menu\.
 
@@ -191,7 +191,7 @@ Collapses the dropdown menu\.
 void Collapse()
 ```
 
-### GetExpandedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandedactionname"></a>
+### GetExpandedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getexpandedactionname}
 
 Returns the name of the action that is sent when the dropdown is expanded\.
 
@@ -201,7 +201,7 @@ Returns the name of the action that is sent when the dropdown is expanded\.
 const LyShine::ActionName& GetExpandedActionName()
 ```
 
-### SetExpandedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandedactionname"></a>
+### SetExpandedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandedactionname}
 
 Sets the name of the action that is sent when the dropdown is expanded\.
 
@@ -211,7 +211,7 @@ Sets the name of the action that is sent when the dropdown is expanded\.
 void SetExpandedActionName(const LyShine::ActionName& actionName)
 ```
 
-### GetCollapsedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcollapsedactionname"></a>
+### GetCollapsedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcollapsedactionname}
 
 Returns the name of the action that is sent when the dropdown is collapsed\.
 
@@ -221,7 +221,7 @@ Returns the name of the action that is sent when the dropdown is collapsed\.
 const LyShine::ActionName& GetCollapsedActionName()
 ```
 
-### SetCollapsedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcollapsedactionname"></a>
+### SetCollapsedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setcollapsedactionname}
 
 Sets the name of the action that is sent when the dropdown is collapsed\.
 
@@ -231,7 +231,7 @@ Sets the name of the action that is sent when the dropdown is collapsed\.
 void SetCollapsedActionName(const LyShine::ActionName& actionName)
 ```
 
-### GetOptionSelectedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getoptionselectedactionname"></a>
+### GetOptionSelectedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getoptionselectedactionname}
 
 Returns the name of the action that is sent when the dropdown value is changed\.
 
@@ -241,7 +241,7 @@ Returns the name of the action that is sent when the dropdown value is changed\.
 const LyShine::ActionName& GetOptionSelectedActionName()
 ```
 
-### SetOptionSelectedActionName<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setoptionselectedactionname"></a>
+### SetOptionSelectedActionName {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setoptionselectedactionname}
 
 Sets the name of the action that is sent when the dropdown value is changed\.
 
@@ -251,11 +251,11 @@ Sets the name of the action that is sent when the dropdown value is changed\.
 void SetOptionSelectedActionName(const LyShine::ActionName& actionName)
 ```
 
-## UiDropdownNotificationBus<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus"></a>
+## UiDropdownNotificationBus {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus}
 
 Services notifications for the `UiDropdownComponent`\. 
 
-### OnDropdownExpanded<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdownexpanded"></a>
+### OnDropdownExpanded {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdownexpanded}
 
 Notifies that the dropdown was expanded\.
 
@@ -265,7 +265,7 @@ Notifies that the dropdown was expanded\.
 void OnDropdownExpanded()
 ```
 
-### OnDropdownCollapsed<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdowncollapsed"></a>
+### OnDropdownCollapsed {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdowncollapsed}
 
 Notifies that the dropdown was collapsed\.
 
@@ -275,7 +275,7 @@ Notifies that the dropdown was collapsed\.
 void OnDropdownCollapsed()
 ```
 
-### OnDropdownValueChanged<a name="lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdownvaluechanged"></a>
+### OnDropdownValueChanged {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdownvaluechanged}
 
 Notifies that an option was selected\.
 

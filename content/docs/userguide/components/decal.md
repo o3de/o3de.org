@@ -3,11 +3,11 @@ description: ' Use the Decal component to place decals as components on an entit
   in &ALYlong;. '
 title: Decal
 ---
-# Decal<a name="component-decal"></a>
+# Decal {#component-decal}
 
 Use the **Decal** component to place a component on an entity\.
 
-## Decal Component Properties<a name="component-decal-properties"></a>
+## Decal Component Properties {#component-decal-properties}
 
 The **Decal** component has the following properties:
 
@@ -50,27 +50,27 @@ Multiplier to the automatically computed fade\-out camera distance\.
 **Minimum spec**  
 Minimum spec for the decal to be active\.
 
-## EBus Request Bus Interface<a name="component-decal-ebusrequest"></a>
+## EBus Request Bus Interface {#component-decal-ebusrequest}
 
 Use the following request function with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### SetVisibility<a name="decal-ebus-setvisibility"></a>
+### SetVisibility {#decal-ebus-setvisibility}
 
 Sets an explicit value \(true/false\) on the decal's visibility\.
 
 **Parameters**  
 `true` or `false`
 
-### Show<a name="decal-ebus-show"></a>
+### Show {#decal-ebus-show}
 
 Shows the decal\.
 
 **Parameters**  
 None
 
-### Hide<a name="decal-ebus-hide"></a>
+### Hide {#decal-ebus-hide}
 
 Hides the decal\.
 

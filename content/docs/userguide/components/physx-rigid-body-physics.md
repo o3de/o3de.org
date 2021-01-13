@@ -2,7 +2,7 @@
 description: ' Learn more about the PhysX Rigid Body component in &ALYlong;. '
 title: PhysX Rigid Body
 ---
-# PhysX Rigid Body<a name="component-physx-rigid-body-physics"></a>
+# PhysX Rigid Body {#component-physx-rigid-body-physics}
 
 The **PhysX Rigid Body** component defines the entity as a rigid object that is solid and can move and collide with other PhysX entities\. For example, you can add the **PhysX Rigid Body** component to the entity to create a projectile\.
 
@@ -27,7 +27,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 + [PhysX Rigid Body component properties](#component-physx-rigid-body-physics-properties)
 + [Creating a Dynamic PhysX Entity](#example-creating-dynamic-game-entity)
 
-## PhysX Rigid Body component properties<a name="component-physx-rigid-body-physics-properties"></a>
+## PhysX Rigid Body component properties {#component-physx-rigid-body-physics-properties}
 
 ![\[PhysX Rigid Body component properties.\]](/images/userguide/component/physx/component-physx-rigid-body-1.27.png)
 
@@ -67,7 +67,7 @@ When disabled, the rigid body is dynamic\. The rigid body responds to gravity an
 
 **CCD enabled**  
 When enabled, the rigid body is will have continuous collision detection \(CCD\)\. This property is useful for high speed objects to ensure accurate collision detection\. Enabling continuous collision detection reveals two additional properties, **Min advance coefficient** and **CCD Friction**   
-To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window\. See [World Configuration](/docs/userguide/nvidia/physx/configuration-global.md#physx-configuration-global-world)\. 
+To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window\. See [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world)\. 
 
 **Min advance coefficient**  
 Lower values reduce clipping but can affect motion smoothness\.   
@@ -103,7 +103,7 @@ When enabled, non\-simulated shapes will be included in the mass, center of mass
 **Debug draw COM**  
 When enabled, the center of mass is displayed for this PhysX rigid body\. 
 
-## Creating a Dynamic PhysX Entity<a name="example-creating-dynamic-game-entity"></a>
+## Creating a Dynamic PhysX Entity {#example-creating-dynamic-game-entity}
 
 A PhysX entity that is dynamic can move and collide with other entities\.
 

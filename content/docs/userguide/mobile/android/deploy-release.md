@@ -3,7 +3,7 @@ description: ' Prepare &ALYlong; projects for release and distribution on the Go
   Play Store. '
 title: Releasing &ALY; projects for Android
 ---
-# Releasing Lumberyard projects for Android<a name="android-deploy-release"></a>
+# Releasing Lumberyard projects for Android {#android-deploy-release}
 
  Setting up to release for Android can be a complicated process because of the number of steps involved, and the restrictions that are required for publishing on the Google Play Store\. For the full and up to date list of requirements, see the [Play Store publishing documentation](https://developer.android.com/studio/publish#publishing-prepare)\. In this topic you'll walk through additional steps needed for distribution, configure to submit an application larger than 100Mb to the Google Play Store, and build your release binaries\. 
 
@@ -12,7 +12,7 @@ title: Releasing &ALY; projects for Android
 + [Create expansion files \(OBBs\)](#android-create-expansion)
 + [Release process](#android-release-process)
 
-## Configure your signing key<a name="using-your-signing-key"></a>
+## Configure your signing key {#using-your-signing-key}
 
  As part of submission to the Google Play Store, you're required to sign your application\. The [Android signing documentation](https://developer.android.com/studio/publish/app-signing)discusses setting up your key signing in detail, as well as steps involved in uploading your signing key and signed application to Google Play\. As part of building your APK, the Lumberyard build system takes care of doing the signing for you\. 
 
@@ -49,7 +49,7 @@ title: Releasing &ALY; projects for Android
 
  This enables your ability to produce release builds\. In order to switch back to performing development builds, change `BUILD_ENVIRONMENT` back to **Development**\. 
 
-## Create expansion files \(OBBs\)<a name="android-create-expansion"></a>
+## Create expansion files \(OBBs\) {#android-create-expansion}
 
 **Warning**  
  In Lumberyard version v1\.21 and later, the resource compiler job which builds OBB files does not ship with the Lumberyard installer\. [Download the Android\_MakeObb job file](https://d3bqhfbip4ze4a.cloudfront.net/RCJob_Generic_Android_MakeObb.xml) and place it in the `lumberyard_install_dir/dev/Code/Tools/RC/Config/rc` directory before continuing\.   
@@ -154,7 +154,7 @@ title: Releasing &ALY; projects for Android
 
  The job to create the APK expansion files is only run when building a **release** configuration\. You can always run **debug** or **profile** builds without creating new OBBs\. 
 
-## Release process<a name="android-release-process"></a>
+## Release process {#android-release-process}
 
  Now that you've set up your signing key and configured either for dynamic content delivery or set up your OBBs containing assets, it's time to build your release\! 
 

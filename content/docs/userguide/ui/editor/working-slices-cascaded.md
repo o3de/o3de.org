@@ -2,7 +2,7 @@
 description: ' Create a cascaded UI slice in &ALYlong;''s &ui-canvas-editor; . '
 title: Creating a Cascaded UI Slice
 ---
-# Creating a Cascaded UI Slice<a name="ui-editor-working-slices-cascaded"></a>
+# Creating a Cascaded UI Slice {#ui-editor-working-slices-cascaded}
 
 A cascaded slice is a slice that contains instances of other slices\. Cascaded slices can store their own overrides for component and entity properties and can also contain their own entities\.
 

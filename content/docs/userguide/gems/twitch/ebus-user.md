@@ -3,11 +3,11 @@ description: ' Learn about the User C++ API operations for Twitch that you can u
   for your &ALY; game project. '
 title: User
 ---
-# User<a name="twitch-api-ebus-user"></a>
+# User {#twitch-api-ebus-user}
 
 User APIs for Twitch
 
-## GetUser<a name="twitch-api-ebus-user-getuser"></a>
+## GetUser {#twitch-api-ebus-user-getuser}
 
 Requests the Twitch `UserInfo` object for the active user\. This call requires the Twitch scope `user_read`\.
 

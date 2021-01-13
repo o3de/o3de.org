@@ -3,7 +3,7 @@ description: ' Use a check box component to make an element behave like a check 
   in &ALY;''s &ui-canvas-editor;. '
 title: Checkbox
 ---
-# Checkbox<a name="ui-editor-checkbox-components"></a>
+# Checkbox {#ui-editor-checkbox-components}
 
 You can use the **Checkbox** component to make an element behave like a check box\. This component is typically applied to an element with two visual child elements: One element appears when the check box is selected and another appears when the check box is cleared\.
 

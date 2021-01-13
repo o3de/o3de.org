@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; HttpRequestor gem to make asynchronous HTTP/HTT
   requests and return data through a call back function that you provide. '
 title: HttpRequestor Gem
 ---
-# HttpRequestor Gem<a name="http-requestor-gem"></a>
+# HttpRequestor Gem {#http-requestor-gem}
 
 You can use the HttpRequestor gem to make asynchronous HTTP/HTTPS requests and return data through a user\-provided call back function\. This gem uses the EBus for communication and provides all requests asynchronously\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
@@ -15,7 +15,7 @@ This feature is supported only on Windows and replaces `CryAction::HttpRequest`\
 + [C\+\+ API Using EBUS\_EVENT](#http-requestor-gem-c-api-ebus_event)
 + [Example](#http-requestor-gem-example)
 
-## Getting Started<a name="http-requestor-gem-getting-started"></a>
+## Getting Started {#http-requestor-gem-getting-started}
 
 To use the HttpRequestor gem, you must enable it in your project\.
 
@@ -33,15 +33,15 @@ To use the HttpRequestor gem, you must enable it in your project\.
    lmbr_waf configure
    ```
 
-## C\+\+ API Using EBUS\_EVENT<a name="http-requestor-gem-c-api-ebus_event"></a>
+## C\+\+ API Using EBUS\_EVENT {#http-requestor-gem-c-api-ebus_event}
 
 The HttpRequestor gem has separate sets of APIs for adding requests and adding text requests\.
 
-### AddRequest, AddRequestWithHeaders, AddRequestWithHeadersAndBody<a name="http-requestor-gem-addrequest-methods"></a>
+### AddRequest, AddRequestWithHeaders, AddRequestWithHeadersAndBody {#http-requestor-gem-addrequest-methods}
 
 You can use the `AddRequest`, `AddRequestWithHeaders`, and `AddRequestWithHeadersAndBody` APIs to send generic HTTP requests to any website and receive the returned data in JSON format\. The methods return the data received in the `callback` parameter\.
 
-#### Syntax<a name="http-requestor-gem-addrequest-syntax"></a>
+#### Syntax {#http-requestor-gem-addrequest-syntax}
 
 ```
 EBUS_EVENT(HttpRequestor::HttpRequestorRequestBus,AddRequest, URI, method, callback)
@@ -57,7 +57,7 @@ EBUS_EVENT(HttpRequestor::HttpRequestorRequestBus, AddRequestWithHeadersAndBody,
 
 Each add request method requires the URI, a method and a callback\.
 
-#### Parameters<a name="http-requestor-gem-addrequest-parameters"></a>
+#### Parameters {#http-requestor-gem-addrequest-parameters}
 
 
 ****  
@@ -72,7 +72,7 @@ Each add request method requires the URI, a method and a callback\.
 
 Return: No return value\.
 
-### JSON Request Callback<a name="http-requestor-gem-json-request-callback"></a>
+### JSON Request Callback {#http-requestor-gem-json-request-callback}
 
 This callback is returned for the `AddRequest`, `AddRequestWithHeaders`, and `AddRequestWithHeadersAndBody` methods\.
 
@@ -80,7 +80,7 @@ This callback is returned for the `AddRequest`, `AddRequestWithHeaders`, and `Ad
 void Callback(const Aws::Utils::Json::JsonValue& json, Aws::Http::HttpResponseCode responseCode);
 ```
 
-#### Parameters<a name="http-requestor-gem-json-request-callback-parameters"></a>
+#### Parameters {#http-requestor-gem-json-request-callback-parameters}
 
 
 ****  
@@ -92,11 +92,11 @@ void Callback(const Aws::Utils::Json::JsonValue& json, Aws::Http::HttpResponseCo
 
 Return: No return value\.
 
-### AddTextRequest, AddTextRequestWithHeaders, AddTextRequestWithHeadersAndBody<a name="http-requestor-gem-addtextrequest-methods"></a>
+### AddTextRequest, AddTextRequestWithHeaders, AddTextRequestWithHeadersAndBody {#http-requestor-gem-addtextrequest-methods}
 
 You can use the `AddTextRequest`, `AddTextRequestWithHeaders`, and `AddTextRequestWithHeadersAndBody` APIs to send a generic HTTP request to any website and receive the returned data in a text string\. The methods return the data received in the `callback` parameter\.
 
-#### Syntax<a name="http-requestor-gem-addtextrequest-syntax"></a>
+#### Syntax {#http-requestor-gem-addtextrequest-syntax}
 
 ```
 EBUS_EVENT(HttpRequestor::HttpRequestorRequestBus, AddTextRequest, URI, method, callback)
@@ -112,7 +112,7 @@ EBUS_EVENT(HttpRequestor::HttpRequestorRequestBus, AddTextRequestWithHeadersAndB
 
 Each add text request method requires the URI, a method and a callback\.
 
-#### Parameters<a name="http-requestor-gem-addtextrequest-parameters"></a>
+#### Parameters {#http-requestor-gem-addtextrequest-parameters}
 
 
 ****  
@@ -127,7 +127,7 @@ Each add text request method requires the URI, a method and a callback\.
 
 Return: No return value\.
 
-### Text Request Callback<a name="http-requestor-gem-text-request-callback"></a>
+### Text Request Callback {#http-requestor-gem-text-request-callback}
 
 This callback is returned for the `AddTextRequest`, `AddTextRequestWithHeaders`, `AddTextRequestWithHeadersAndBody` methods\.
 
@@ -135,7 +135,7 @@ This callback is returned for the `AddTextRequest`, `AddTextRequestWithHeaders`,
 void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode responseCode);
 ```
 
-#### Parameters<a name="http-requestor-gem-text-request-callback-parameters"></a>
+#### Parameters {#http-requestor-gem-text-request-callback-parameters}
 
 
 ****  
@@ -147,7 +147,7 @@ void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode respons
 
 Return: No return value\.
 
-## Example<a name="http-requestor-gem-example"></a>
+## Example {#http-requestor-gem-example}
 
 The following example uses the Metastream C\+\+ API to obtain a gateway IP address\.
 

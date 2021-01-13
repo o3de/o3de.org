@@ -2,7 +2,7 @@
 description: ' Add components to your entities with the &entity-inspector; in &ALYlong;. '
 title: Adding Components to an Entity
 ---
-# Adding Components to an Entity<a name="component-working-adding"></a>
+# Adding Components to an Entity {#component-working-adding}
 
 After you create an entity, you can add components to it\. 
 

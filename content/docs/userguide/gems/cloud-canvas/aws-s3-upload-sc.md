@@ -2,7 +2,7 @@
 description: ' Use &script-canvas; to upload a file to &S3; in &ALYlong;. '
 title: Uploading a File to &S3; with &script-canvas;
 ---
-# Uploading a File to Amazon S3 with Script Canvas<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc"></a>
+# Uploading a File to Amazon S3 with Script Canvas {#cloud-canvas-cloud-gem-aws-s3-upload-sc}
 
 You can use the **AWSBehaviorS3Upload** node in Script Canvas to upload a file from your computer to the Amazon S3 bucket that you specify\. If the object that you specify already exists, it is overwritten\.
 
@@ -12,7 +12,7 @@ You can use the **AWSBehaviorS3Upload** node in Script Canvas to upload a file f
 + [Step 3: Test Upload a File to Amazon S3](#cloud-canvas-cloud-gem-aws-s3-upload-sc-test)
 + [Step 4: Verify the Upload](#cloud-canvas-cloud-gem-aws-s3-upload-sc-verify)
 
-## Step 1: Add Nodes that Upload a File to Amazon S3<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc-add-nodes"></a>
+## Step 1: Add Nodes that Upload a File to Amazon S3 {#cloud-canvas-cloud-gem-aws-s3-upload-sc-add-nodes}
 
 The following procedure shows you how to create a Script Canvas graph that uploads a file to Amazon S3\. The example uses the file `lumberyard_version\dev\Cache\CloudGemSamples\pc\cloudgemsamples\levels\awsbehaviorexamples\testdata\s3example.txt` that is included with Lumberyard\.
 
@@ -44,7 +44,7 @@ The following procedure shows you how to create a Script Canvas graph that uploa
 
 1. Connect the **AWSBehaviorS3Upload** pin of the **Get Variable 1** node to the **AWSBehaviorS3Upload:0** pin of the **Upload** node\.
 
-## Step 2: Add Nodes to Display the Result<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc-display-result"></a>
+## Step 2: Add Nodes to Display the Result {#cloud-canvas-cloud-gem-aws-s3-upload-sc-display-result}
 
 Next, to see the success or failure of the operation, add **AWSBehaviorS3UploadNotificationBus** nodes and a **Print** node to the graph\. The nodes monitor for `AWSBehaviorS3UploadNotificationBus` events and show you the result in the Lumberyard console window\.
 
@@ -67,7 +67,7 @@ Next, to see the success or failure of the operation, add **AWSBehaviorS3UploadN
 
 1. Exit the Script Canvas editor\.
 
-## Step 3: Test Upload a File to Amazon S3<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc-test"></a>
+## Step 3: Test Upload a File to Amazon S3 {#cloud-canvas-cloud-gem-aws-s3-upload-sc-test}
 
 Now you are ready to attach the script canvas to an entity and test the script\.
 
@@ -98,7 +98,7 @@ Now you are ready to attach the script canvas to an entity and test the script\.
    general.exit_game_mode
    ```
 
-## Step 4: Verify the Upload<a name="cloud-canvas-cloud-gem-aws-s3-upload-sc-verify"></a>
+## Step 4: Verify the Upload {#cloud-canvas-cloud-gem-aws-s3-upload-sc-verify}
 
 To verify that the file has been uploaded to Amazon S3, you can use the AWS Management Console\.
 

@@ -3,7 +3,7 @@ description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; e
   to set a material''s Vector3 parameter value for the specified entity. '
 title: Set Param Vector3
 ---
-# Set Param Vector3<a name="material-owner-set-param-vector3"></a>
+# Set Param Vector3 {#material-owner-set-param-vector3}
 
 Sets a material's **Vector3** parameter value for the specified entity\. 
 
@@ -13,7 +13,7 @@ Sets a material's **Vector3** parameter value for the specified entity\.
 
 ![\[setparamvector3, setparamvector3node\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-param-vector3-material-owner-node.png)
 
-## Inputs<a name="material-owner-set-param-vector3-input"></a>
+## Inputs {#material-owner-set-param-vector3-input}
 
 
 ****  
@@ -26,7 +26,7 @@ Sets a material's **Vector3** parameter value for the specified entity\.
 | Vector3 | Vector3 |  The new value to apply\.  | 
 | Material ID | Number | If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at 1\. | 
 
-## Outputs<a name="material-owner-set-param-vector3-output"></a>
+## Outputs {#material-owner-set-param-vector3-output}
 
 
 ****  

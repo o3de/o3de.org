@@ -2,11 +2,11 @@
 description: ' See the eye shader to render realistic eyes in &ALYlong;. '
 title: Eye Shader
 ---
-# Eye Shader<a name="shader-ref-eye"></a>
+# Eye Shader {#shader-ref-eye}
 
 The Eye shader is used to render realistic eyes that take sclera, cornea, iris, and eye moisture properties into account\.
 
-## Shader Parameters<a name="shader-ref-eye-shader-parameters"></a>
+## Shader Parameters {#shader-ref-eye-shader-parameters}
 
 **Cornea Refraction**  
 Controls and optionally animates pupil size\.   
@@ -58,7 +58,7 @@ Controls the strength of the occlusion effect on the eyes' specular highlights\.
 This parameter requires that the **Ambient occlusion overlay** shader generation parameter is enabled\.  
 Default value: 1
 
-## Shader Generation Parameters<a name="shader-ref-eye-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-eye-shader-generation-parameters}
 
 **Environment map**  
 Enables environment map as a separate texture\.  

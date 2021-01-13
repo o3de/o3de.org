@@ -3,7 +3,7 @@ description: ' Use lmbr.exe to modify your &ALYlong; project capabilities, creat
   new projects, save active projects, and enable, disable, or create gems. '
 title: Managing Game Projects with Lmbr.exe
 ---
-# Managing Game Projects with Lmbr\.exe<a name="lmbr-exe"></a>
+# Managing Game Projects with Lmbr\.exe {#lmbr-exe}
 
 
 ****  

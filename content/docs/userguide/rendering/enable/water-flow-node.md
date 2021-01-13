@@ -3,7 +3,7 @@ description: ' Use the Enable Water Flow node in the &ALYlong; &script-canvas; e
   to enable water flow effects. '
 title: Enable Water Flow
 ---
-# Enable Water Flow<a name="enable-water-flow-node"></a>
+# Enable Water Flow {#enable-water-flow-node}
 
 Draws water flowing down the entire screen\. You can use this node in situations where the player is standing under flowing water, such as a waterfall\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Water Flow](/docs/userguide/rendering/disabl
 
 ![\[Use the Enable Water Flow node to simulate waterfall effects on the screen .\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-water-flow-node-example.gif)
 
-## Inputs<a name="enable-water-flow-note-input"></a>
+## Inputs {#enable-water-flow-note-input}
 
 
 ****  
@@ -29,7 +29,7 @@ To disable the effect, see [Disable Water Flow](/docs/userguide/rendering/disabl
 | In | Event |  Triggers the node\.  | 
 | Amount | Number |  Amount of water\.  | 
 
-## Outputs<a name="enable-water-flow-node-output"></a>
+## Outputs {#enable-water-flow-node-output}
 
 
 ****  

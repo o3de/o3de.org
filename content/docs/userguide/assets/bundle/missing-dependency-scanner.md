@@ -3,7 +3,7 @@ description: ' Use the missing dependency scanner in &ALY; to identify missing a
   references. '
 title: Using the Missing Dependency Scanner
 ---
-# Using the Missing Dependency Scanner<a name="asset-bundler-missing-dependency-scanner"></a>
+# Using the Missing Dependency Scanner {#asset-bundler-missing-dependency-scanner}
 
 Use the `AssetProcessorBatch.exe` tool to scan your files for patterns that look like missing dependencies\. To perform a scan, run the `AssetProcessorBatch.exe` command using the `dependencyScanPattern` \(or `dsp`\) flag\. Because the command performs a SQL query, use search strings compatible with SQL syntax; for example, the wildcard character is `%`, not `*`\.
 
@@ -15,13 +15,13 @@ AssetProcessorBatch.exe /dependencyScanPattern=%.txt
 
 The command scans the **ProductName** column in the **Products** table in the asset database\. The scanner performs multiple passes so that it can present only results that are likely to be missing dependencies\. It scans for patterns like paths, asset IDs, and UUIDs that map to existing products in your game\. The results of the scan are stored in the **MissingProductDependencies** table of the asset database\.
 
-## Taking Action<a name="asset-bundler-missing-dependency-scanner-taking-action"></a>
+## Taking Action {#asset-bundler-missing-dependency-scanner-taking-action}
 
 If a scan of assets in your project returns results, verify that they are true dependencies\.
 + If the results are false positives, use the asset tagging system to mark the files that can be safely ignored in future scans\. Files tagged with the `editoronly` or `shader` flags in the file `exclude.filetag` are skipped by the scanner\. For more information about file tagging, see [Using the File Tagging System to Include or Exclude Assets](/docs/userguide/assets/bundle/file-tagging.md)\.
-+ If the dependencies reported are truly missing, update the builder for your asset to emit a dependency\. For more information, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom.md#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md) page\.
++ If the dependencies reported are truly missing, update the builder for your asset to emit a dependency\. For more information, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md) page\.
 
-### Example<a name="asset-bundler-missing-dependency-scanner-example-usage"></a>
+### Example {#asset-bundler-missing-dependency-scanner-example-usage}
 
 The following procedures show you how to create an XML file that has a missing dependency\. You then resolve the dependency by creating a new schema\.
 
@@ -102,7 +102,7 @@ Next, create a schema to match this file and output, or *emit*, the dependency\.
    AssetProcessor: No assets remain in the build queue. Saving the catalog, and then shutting down.
    ```
 
-## Custom Dependency Scanners<a name="asset-bundler-missing-dependency-scanner-custom-dependency-scanners"></a>
+## Custom Dependency Scanners {#asset-bundler-missing-dependency-scanner-custom-dependency-scanners}
 
 The missing dependency scanning system supports authoring specialized dependency scanners\. To match specific data types, you can build a custom scanner by inheriting from `SpecializedDependencyScanner`\. Implement the necessary functions and register your scanner with the `MissingDependencyScanner` by calling `RegisterSpecializedScanner`\.
 

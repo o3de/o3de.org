@@ -4,7 +4,7 @@ description: ' Use &ALYlong;''s instantVR slice as a starting point from which y
   VR functionality. '
 title: Using the InstantVR Slice
 ---
-# Using the InstantVR Slice<a name="virtual-reality-instant-vr"></a>
+# Using the InstantVR Slice {#virtual-reality-instant-vr}
 
 
 ****  

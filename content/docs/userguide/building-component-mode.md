@@ -3,7 +3,7 @@ description: ' You must build the editor so that your component with &CM; appear
   in &ALYlong;. '
 title: 'Step 6: Building &CM;'
 ---
-# Step 6: Building Component Mode<a name="building-component-mode"></a>
+# Step 6: Building Component Mode {#building-component-mode}
 
 In the following procedure, you must build the editor so that you can view your changes in Lumberyard Editor\.
 

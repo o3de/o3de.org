@@ -2,7 +2,7 @@
 description: ' Send and receive signals between AI agents in &ALYlong;. '
 title: Signals
 ---
-# Signals<a name="ai-scripting-signals"></a>
+# Signals {#ai-scripting-signals}
 
 
 ****  
@@ -17,7 +17,7 @@ This topic describes how to send and receive signals between AI agents\.
 
 [Signals Reference](/docs/userguide/ai/scripting/signals-reference.md)
 
-## Sending Signals<a name="ai-scripting-signals-sending"></a>
+## Sending Signals {#ai-scripting-signals-sending}
 
 Signals are sent from an AI agent's behavior to one or more other AI agents using the method `AI:Signal()`\.
 
@@ -52,7 +52,7 @@ The actual identifier of the signal\. It can be any non\-empty string; for the s
 **entity\_id**  
 The entity id of the signal's recipient\. Usually you may want to put entity\.id \(or self\.id if it's called from the entity and not from its behavior\), to send the signal to the sender itself, but you can also put any other id there to send the signal to another entity\.
 
-## Receiving Signals<a name="ai-scripting-signals-receiving"></a>
+## Receiving Signals {#ai-scripting-signals-receiving}
 
 The action to be performed once a signal is received is defined in a function like this:
 
@@ -84,7 +84,7 @@ Behaviour1 = {
 
 This means that if the character is currently in Behaviour1, and receives the signal MySignalName, after having executed the callback function above it will then switch its behavior to MyNewBehaviour\.
 
-## Signal Example<a name="ai-scripting-signals-example"></a>
+## Signal Example {#ai-scripting-signals-example}
 
 A typical example is when a player's enemy spots the player: its OnEnemySeen system event is called, and let's suppose he wants to inform his mates \(The guys with his same group id\)\. In his default idle behavior \(i\.e\., `CoverAttack.lua` if the character is Cover\), we modify its OnEnemySeen event like this: 
 
@@ -128,6 +128,6 @@ CoverIdle = {
 },
 ```
 
-## Behavior Inheritance<a name="ai-scripting-signals-inheritance"></a>
+## Behavior Inheritance {#ai-scripting-signals-inheritance}
 
 If specific signals are to be used in more than one behavior, there is an inheritance mechanism\. Behavior classes can either directly inherit a more general implementation by keyword `Base = [CRYENGINE:ParentBehaviorName]` or indirectly, as a character's Idle behavior as well as the default behavior \(defined in file DEFAULT\.lua\) are considered as fallback behaviors if a signal is not implemented in the current behavior\.

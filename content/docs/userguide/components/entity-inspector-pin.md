@@ -3,7 +3,7 @@ description: ' Pin an entity''s inspector to have multiple entities available to
   in &ALYlong;. '
 title: Pinning an Entity's Inspector
 ---
-# Pinning an Entity's Inspector<a name="component-entity-inspector-pin"></a>
+# Pinning an Entity's Inspector {#component-entity-inspector-pin}
 
 You can pin an entity's inspector to keep it open and visible even when you select another entity\. You can pin inspectors for multiple entities, and also pin multiple inspector instances of the same entity\. This helps you compare the entities and their components to each other\.
 

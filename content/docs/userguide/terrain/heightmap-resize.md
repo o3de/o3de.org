@@ -2,7 +2,7 @@
 description: ' Resize a terrain heightmap in &ALY; by changing its resolution. '
 title: Resizing a Terrain Heightmap
 ---
-# Resizing a Terrain Heightmap<a name="terrain-heightmap-resize"></a>
+# Resizing a Terrain Heightmap {#terrain-heightmap-resize}
 
 Resizing the terrain heightmap involves changing the resolution of your heightmap\. Terrain size is determined by multiplying heightmap by meters per texel\. When resizing, this value should not exceed 4096x4096 meters\. 
 

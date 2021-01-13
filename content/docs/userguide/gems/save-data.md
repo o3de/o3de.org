@@ -3,7 +3,7 @@ description: ' Use the SaveData gem to save data in &ALYlong; for your game and 
   players. '
 title: SaveData Gem
 ---
-# SaveData Gem<a name="gems-system-save-data"></a>
+# SaveData Gem {#gems-system-save-data}
 
 The SaveData gem encapsulates all the functionality in Lumberyard for saving game and individual user data under a single platform\-agnostic set of API operations\.
 
@@ -13,13 +13,13 @@ To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configura
 
 The SaveData gem uses the [Event Bus \(EBus\)](/docs/userguide/programming/ebus/intro.md), Lumberyard's general\-purpose communication system for dispatching notifications and receiving requests\. To make requests related to saving or loading persistent user data, use the SaveData gem's `SaveDataRequests` bus\. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus\.
 
-## Making Requests to Save Data<a name="gems-system-save-data-requests"></a>
+## Making Requests to Save Data {#gems-system-save-data-requests}
 
 When making requests to save or load data using the `SaveDataRequestBus`, keep the following points in mind:
 + The SaveData gem is responsible only for saving and loading generic data buffers\. Your game must serialize or deserialize data using a data format, such as JSON or XML, that you deem appropriate\. However, convenience functions are provided that save or load an object that has been reflected using an [`AZ::SerializeContext`](/docs/userguide/components/entity-system-reflection-serialization-context.md)\.
 + Each save data buffer must be uniquely identified by a string\. On most operating systems and devices, this string is the name of the file to which the data buffer is written\.
 
-### Saving Data for Local User IDs<a name="gems-system-save-data-local-user-ids"></a>
+### Saving Data for Local User IDs {#gems-system-save-data-local-user-ids}
 
 SaveData gem communications that deal with local user profiles depend on the local user ID that uniquely identifies a user on the local device\. When using local user IDs, keep in mind the following points:
 + A save data buffer can optionally be associated with a local user ID\.
@@ -30,13 +30,13 @@ SaveData gem communications that deal with local user profiles depend on the loc
 
 For more information about the `SaveDataRequests` bus, see the commented source code at `lumberyard_version\dev\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`\.
 
-## Getting Save Data Notifications<a name="gems-system-save-data-notifications"></a>
+## Getting Save Data Notifications {#gems-system-save-data-notifications}
 
 All save and load operations performed by the SaveData gem are asynchronous\. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes\. This action is always performed in the main thread\.
 
 For more information about the `SaveDataNotifications` bus, see the commented source code at `lumberyard_version\dev\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`\.
 
-## Save Data Code Example<a name="gems-system-save-data-code-example"></a>
+## Save Data Code Example {#gems-system-save-data-code-example}
 
 The following example code uses the SaveData gem to save and load buffers and objects to and from persistent storage\.
 

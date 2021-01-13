@@ -2,7 +2,7 @@
 description: ' Learn about lip synchronization in &ALYlong;. '
 title: Lip Synchronization with &emotionfx;
 ---
-# Lip Synchronization with EMotion FX<a name="cloud-canvas-cloud-gem-text-to-speech-emotionfx"></a>
+# Lip Synchronization with EMotion FX {#cloud-canvas-cloud-gem-text-to-speech-emotionfx}
 
 Starting in version 1\.12, Lumberyard uses [Animation Editor](/docs/userguide/char-intro.md) to implement lip synchronization\.
 
@@ -10,7 +10,7 @@ In the example in the following image, a **Talker** entity has been created that
 
 ![\[Talker entity with Animation Editor components\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-emotionfx-1.png)
 
-Lumberyard uses a simple [animation graph](/docs/userguide/animation/character-editor/concepts-and-terms.md#understanding-animation-graphs) that blends simple motion and idle animation with the output of a state machine\. The animation graph transitions from state to state and animation pose to animation pose to match the current viseme that is read from the speech marks file\.
+Lumberyard uses a simple [animation graph](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-animation-graphs) that blends simple motion and idle animation with the output of a state machine\. The animation graph transitions from state to state and animation pose to animation pose to match the current viseme that is read from the speech marks file\.
 
 ![\[Animation graph\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-emotionfx-2.png)
 

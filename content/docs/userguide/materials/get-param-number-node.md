@@ -3,7 +3,7 @@ description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; ed
   to return a material parameter as a numerical value. '
 title: Get Param Number
 ---
-# Get Param Number<a name="material-get-param-number-node"></a>
+# Get Param Number {#material-get-param-number-node}
 
 Returns a material parameter as a numerical value\.
 
@@ -13,7 +13,7 @@ Returns a material parameter as a numerical value\.
 
 ![\[getparamnumber, getparamnumbernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-number-node.png)
 
-## Inputs<a name="material-get-param-number-node-input"></a>
+## Inputs {#material-get-param-number-node-input}
 
 
 ****  
@@ -24,7 +24,7 @@ Returns a material parameter as a numerical value\.
 | Material | Material |  The material to query\.  | 
 | Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 
-## Outputs<a name="material-get-param-number-node-output"></a>
+## Outputs {#material-get-param-number-node-output}
 
 
 ****  

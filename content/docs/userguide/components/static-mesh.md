@@ -2,11 +2,11 @@
 description: ' Use the Mesh component to add visual geometry to entities in &ALYlong;. '
 title: Mesh
 ---
-# Mesh<a name="component-static-mesh"></a>
+# Mesh {#component-static-mesh}
 
 You can add the **Mesh** component to an entity to provide visual geometry on an entity\. The **Mesh** component has key controls and options for Lumberyard's basic rendering features\. The supported geometry type is meshes \(`.cgf`\)\.
 
-## Mesh Component Properties<a name="component-static-mesh-properties"></a>
+## Mesh Component Properties {#component-static-mesh-properties}
 
 ![\[Mesh component properties in Lumberyard Editor\]](/images/userguide/component/component-mesh-component-properties.png)
 
@@ -27,15 +27,15 @@ The **Mesh** component has the following properties:
 | Cast shadows |  Casts shadow maps\.  | 
 | Use VisAreas |  Allows vis areas to control the component's visibility\.  | 
 
-### Advanced<a name="static-mesh-properties-advanced"></a>
+### Advanced {#static-mesh-properties-advanced}
 
 The **Mesh** component has different advanced properties that depend on whether your mesh is static or dynamic\.
 + A mesh is dynamic when the **Static** property is not set on the **Transform** component\. This is the default setting when you create an entity\. Dynamic meshes do not affect nav meshes\. 
 + A mesh is static when the **Static** property is set on the **Transform** component\. You can use static objects for more optimal paths during rendering and processing\. We recommend that you create static meshes whenever possible\. A static mesh can move or deform only when the **Receive Wind** or **Deformable Mesh** properties are set\. 
 
-For more information, see [Transform Component Properties](/docs/userguide/components/transform.md#component-transform-properties)\.
+For more information, see [Transform Component Properties](/docs/userguide/components/transform#component-transform-properties)\.
 
-#### Advanced Properties for Dynamic Meshes<a name="dynamic-mesh-advanced-properties"></a>
+#### Advanced Properties for Dynamic Meshes {#dynamic-mesh-advanced-properties}
 
 If your mesh is dynamic, the **Mesh** component has the following advanced properties\.
 
@@ -50,7 +50,7 @@ If your mesh is dynamic, the **Mesh** component has the following advanced prope
 | Accept decals |  Receives decals\.  | 
 | Deformable mesh |  Allows static mesh assets to deform that have specific dynamic data\. For example, you can have a mesh deform asset that is stationary\.  | 
 
-#### Advanced Properties for Static Meshes<a name="static-mesh-advanced-properties"></a>
+#### Advanced Properties for Static Meshes {#static-mesh-advanced-properties}
 
 If the mesh is static, the **Mesh** component has the following advanced properties\.
 

@@ -3,11 +3,11 @@ description: ' See the following tips on writing handlers to gather defect repor
   data in &ALYlong;. '
 title: Writing Data Gathering Handlers
 ---
-# Writing Data Gathering Handlers<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing"></a>
+# Writing Data Gathering Handlers {#cloud-canvas-cloud-gem-defect-reporter-handler-writing}
 
 Client\-side data gathering can be performed by EBus request handlers\.
 
-## Examples of Handlers<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-examples"></a>
+## Examples of Handlers {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-examples}
 
  The following are examples of the specialized tasks that defect reporting handlers can perform:
 + **Screenshot Attacher** – Takes a screenshot and adds it to the report\.
@@ -16,7 +16,7 @@ Client\-side data gathering can be performed by EBus request handlers\.
 + **DXDiag Collector** – Runs the DXDiag tool, stores the results in a file, and then adds the file as an attachment to the report\.
 + **Render State Capturer** – Captures details about the render state, gets `.png` files of all current video buffers\. Creates attachments and a JSON response for the report\.
 
-## Defect Reporter and Handler Workflow<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow"></a>
+## Defect Reporter and Handler Workflow {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow}
 
 At a high level, the defect reporter and the data gathering handlers follow this workflow:
 
@@ -26,7 +26,7 @@ At a high level, the defect reporter and the data gathering handlers follow this
 
 1. When the data becomes available, the handler sends the appropriate identifiers along with the data that the handler gathered to the defect reporter\. The defect reporter then adds the data to the appropriate report\.
 
-### Workflow in Detail<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow-detail"></a>
+### Workflow in Detail {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow-detail}
 
 The following sequence describes the workflow in greater detail\.
 
@@ -50,7 +50,7 @@ The following sequence describes the workflow in greater detail\.
 The handler must ensure that the report ID and handler ID match to the correct data\. To implement this, data gathering functions can send the IDs as user values or use some other custom mechanism\.
 Because the data that was requested might never arrive at the accumulator, handlers should time out gracefully and send empty data if necessary\. The defect reporter can force creation of incomplete reports\.
 
-## Key Points<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-key-points"></a>
+## Key Points {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-key-points}
 
 When writing a defect reporting handler, keep in mind the following points:
 + Each defect report sends a single metrics event\.
@@ -58,7 +58,7 @@ When writing a defect reporting handler, keep in mind the following points:
 + Each defect reporting handler can send an array of key\-value pairs\.
 + Due to a limitation of the metrics system, the metrics attributes must be atomic data types like `string` or `int`\.
 
-### Working with Complex Data Types<a name="cloud-canvas-cloud-gem-defect-reporter-handler-complex-data-types"></a>
+### Working with Complex Data Types {#cloud-canvas-cloud-gem-defect-reporter-handler-complex-data-types}
 
 To handle complex data types, convert the attribute data to a JSON structure and then serialize it as a string\. The following sample defect event illustrates this process\.
 
@@ -98,39 +98,39 @@ Note that the data are contained in strings that can be serialized to JSON forma
 }
 ```
 
-### Disposing of Temporary Attachment Files<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-disposing-of-temporary-attachment-files"></a>
+### Disposing of Temporary Attachment Files {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-disposing-of-temporary-attachment-files}
 
 Attachments can be temporary files\. The temporary files can be handled in one of the following ways:
 + When `OnDefectReportUploaded` is called on the handler that has the appropriate report ID, the handler deletes the file\.
 + Do nothing\. In some cases, it might be desirable for the user to decide when to delete the file\.
 
-## UI Workflow<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-ui-workflow"></a>
+## UI Workflow {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-ui-workflow}
 
 The following workflow shows the functions that are called to gather user input from a UI like the Defect Report Editor in the DefectReporterSample level of the CloudGemDefectReportSample project\.
 
-1. The `CloudGemDefectReporterRequests::`[`TriggerUserReportEditing`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting) function is called\.
+1. The `CloudGemDefectReporterRequests::`[`TriggerUserReportEditing`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting) function is called\.
 
-1. The `TriggerUserReportEditing` function broadcasts a `CloudGemDefectReporterUINotificationBus::`[`OnOpenDefectReportEditorUI`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui) event\.
+1. The `TriggerUserReportEditing` function broadcasts a `CloudGemDefectReporterUINotificationBus::`[`OnOpenDefectReportEditorUI`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui) event\.
 
 1. The UI responds to the `OnOpenDefectReportEditorUI` event by opening a UI form to gather input\.
 
-1. The UI calls `CloudGemDefectReporterRequestBus::`[`GetAvailableReportIDs`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids) to request a list of report IDs\.
+1. The UI calls `CloudGemDefectReporterRequestBus::`[`GetAvailableReportIDs`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-getavailablereportids) to request a list of report IDs\.
 
-1. The UI gets data for a specific report by calling `CloudGemDefectReporterRequestBus::`[`GetReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport) with the report ID\.
+1. The UI gets data for a specific report by calling `CloudGemDefectReporterRequestBus::`[`GetReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport) with the report ID\.
 
 1. The UI shows the report information to the user\. The user can add an annotation and/or provide data for any custom data collection fields that you create\.
 
-1. When the report contents change, the UI calls `CloudGemDefectReporterRequestBus::`[`UpdateReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport) with the modified contents\. If the user presses **Delete**, [`RemoveReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport) is called\.
+1. When the report contents change, the UI calls `CloudGemDefectReporterRequestBus::`[`UpdateReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-updatereport) with the modified contents\. If the user presses **Delete**, [`RemoveReport`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport) is called\.
 
 1. When the user is done editing reports, the user clicks **Submit**\.
 
-1. The UI calls `CloudGemDefectReporterRequestBus::`[`PostReports`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces.md#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports) to gather, send, and flush the report queue\.
+1. The UI calls `CloudGemDefectReporterRequestBus::`[`PostReports`](/docs/userguide/gems/cloud-canvas/defect-reporter-ebus-interfaces#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports) to gather, send, and flush the report queue\.
 
 For source code, see `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\Code\Include\CloudGemDefectReporter\CloudGemDefectReporterBus.h`
 
 For information about the DefectReporterSample level and the Defect Report Editor, see [Using the Defect Reporter Cloud Gem Sample Level](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md)\.
 
-## Upload Limitations<a name="cloud-canvas-cloud-gem-defect-reporter-handler-writing-upload-limitations"></a>
+## Upload Limitations {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-upload-limitations}
 
 The maximum body payload size of data that can be sent in an event is 256KB\. The maximum number of attachments is 10\. 
 

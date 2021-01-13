@@ -2,7 +2,7 @@
 description: ' Choose a component to add a &CM; to in &ALYlong;. '
 title: 'Step 1: Choose a Component'
 ---
-# Step 1: Choose a Component<a name="adding-component-mode"></a>
+# Step 1: Choose a Component {#adding-component-mode}
 
 Select a component to add a Component Mode to\. Components such as shape, light, and physics are good examples because their data exists in the 3D world and you can view the changes directly in the viewport\. Other components such as **Audio** and **Script Canvas** are less useful because they have properties that you can't edit in the viewport\.
 

@@ -3,7 +3,7 @@ description: ' Use the &VIM; to interact with entities in the &ALYlong; viewport
   Learn about the differences between the new &VIM; and the old interaction model. '
 title: Working with the &VIM;
 ---
-# Working with the Viewport Interaction Model<a name="working-with-viewport-interaction-model"></a>
+# Working with the Viewport Interaction Model {#working-with-viewport-interaction-model}
 
 ****  
 This feature is experimental and is missing some core functionality\.
@@ -25,7 +25,7 @@ For more information, see [Using Manipulators](/docs/userguide/components/manipu
 **Custom Reference Target**  
 When you select an entity, you can specify whether to move that entity in relation to another entity\. 
 
-## Viewport Interaction Model Limitations<a name="viewport-interaction-model-limits"></a>
+## Viewport Interaction Model Limitations {#viewport-interaction-model-limits}
 
 This feature has the following limitations:
 + The Viewport Interaction Model supports component entities only and doesn't support legacy entities, such as terrain and vegetation\.

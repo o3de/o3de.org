@@ -3,11 +3,11 @@ description: ' Learn about the Data Elements C++ API operations for Twitch that 
   can use for your &ALY; game project. '
 title: Data Types
 ---
-# Data Types<a name="twitch-api-ebus-data-elements"></a>
+# Data Types {#twitch-api-ebus-data-elements}
 
 Data Types APIs for Twitch
 
-## Twitch Requests class<a name="twitch-api-ebus-data-elements-twitch-requests-class"></a>
+## Twitch Requests class {#twitch-api-ebus-data-elements-twitch-requests-class}
 
 The `Twitch Requests` class that EBus events are based on\.
 
@@ -62,7 +62,7 @@ public:
 using TwitchRequestBus = AZ::EBus<TwitchRequests>;
 ```
 
-## Twitch Notification class<a name="twitch-api-ebus-data-elements-twitch-notification-class"></a>
+## Twitch Notification class {#twitch-api-ebus-data-elements-twitch-notification-class}
 
 All EBus event requests return to this class\. Notification members use the same names as request members\.
 
@@ -118,7 +118,7 @@ public:
 using TwitchNotifyBus = AZ::EBus<TwitchNotifications>;
 ```
 
-## Result Codes<a name="twitch-api-ebus-data-elements-result-codes"></a>
+## Result Codes {#twitch-api-ebus-data-elements-result-codes}
 
 The following is the definition for the `ResultCode` return:
 
@@ -135,7 +135,7 @@ enum class ResultCode {Success, FuelSDKNotInitialized, FuelNoSession, FuelNoAppl
 + `TwitchChannelNoUpdatesToMake` – An attempt was made to update a channel but no data was given to update the channel\.
 + `Unknown` – This error is rare and can occur if calls are made asynchronously during initialization\.
 
-## UserInfo struct<a name="twitch-api-ebus-data-elements-userinfo-struct"></a>
+## UserInfo struct {#twitch-api-ebus-data-elements-userinfo-struct}
 
 The basic Twitch user information object is returned from different calls as a single user or a list of users\. Not all APIs that return a value for `UserInfo` will fill all the members\. The following members are not used and the values will return empty: `GetChannelEditors`, `ProfileBanner`, and `ProfileBannerBackgroundColor`\.
 
@@ -172,7 +172,7 @@ struct UserInfo
 using UserInfoList = AZStd::list<UserInfo>;
 ```
 
-## FriendRecommendation struct<a name="twitch-api-ebus-data-elements-friendrecommendation-struct"></a>
+## FriendRecommendation struct {#twitch-api-ebus-data-elements-friendrecommendation-struct}
 
 The following is the definition for the `FriendRecommendation` struct:
 
@@ -186,7 +186,7 @@ struct FriendRecommendation
 using FriendRecommendationList = AZStd::list<FriendRecommendation>;
 ```
 
-## FriendRequest struct<a name="twitch-api-ebus-data-elements-friendrequest-struct"></a>
+## FriendRequest struct {#twitch-api-ebus-data-elements-friendrequest-struct}
 
 The following is the definition for the `FriendRequest` struct:
 
@@ -212,7 +212,7 @@ struct FriendRequestResult
 };
 ```
 
-## PresenceAvailability enum<a name="twitch-api-ebus-data-elements-presenceavailability-enum"></a>
+## PresenceAvailability enum {#twitch-api-ebus-data-elements-presenceavailability-enum}
 
 The following is the definition for the `PresenceAvailability` enum: 
 
@@ -220,7 +220,7 @@ The following is the definition for the `PresenceAvailability` enum:
 enum class PresenceAvailability { Unknown, Online, Idle };
 ```
 
-## PresenceActivityType enum<a name="twitch-api-ebus-data-elements-presenceactivitytype-enum"></a>
+## PresenceActivityType enum {#twitch-api-ebus-data-elements-presenceactivitytype-enum}
 
 The following is the definition for the `PresenceActivityType` enum:
 
@@ -228,7 +228,7 @@ The following is the definition for the `PresenceActivityType` enum:
 enum class PresenceActivityType { Unknown, Watching, Playing, Broadcasting};
 ```
 
-## PresenceStatus struct<a name="twitch-api-ebus-data-elements-presencestatus-struct"></a>
+## PresenceStatus struct {#twitch-api-ebus-data-elements-presencestatus-struct}
 
 The following is the definition for the `PresenceStatus` struct:
 
@@ -245,7 +245,7 @@ struct PresenceStatus
 };
 ```
 
-## PresenceSettings struct<a name="twitch-api-ebus-data-elements-presencesettings-struct"></a>
+## PresenceSettings struct {#twitch-api-ebus-data-elements-presencesettings-struct}
 
 The `PresenceSettings` struct is used in `TwitchNotifyBus GetPresenceSettings` and methods\.
 
@@ -261,7 +261,7 @@ struct PresenceSettings
 };
 ```
 
-## ChannelInfo<a name="twitch-api-ebus-data-elements-channelinfo"></a>
+## ChannelInfo {#twitch-api-ebus-data-elements-channelinfo}
 
 The `ChannelInfo` struct is used in `TwitchNotifyBus GetChannel` and the following methods: `GetChannelbyID`, `UpdateChannel`, and `ResetChannelStreamKey`\.
 
@@ -296,7 +296,7 @@ struct ChannelInfo
 };
 ```
 
-## UpdateChannelInfo<a name="twitch-api-ebus-data-elements-updatechannelinfo"></a>
+## UpdateChannelInfo {#twitch-api-ebus-data-elements-updatechannelinfo}
 
 The following is the definition for the `ChannelUpdateInfo` struct: 
 
@@ -333,7 +333,7 @@ struct ChannelUpdateInfo
 };
 ```
 
-## TeamInfoList<a name="twitch-api-ebus-data-elements-teaminfolist"></a>
+## TeamInfoList {#twitch-api-ebus-data-elements-teaminfolist}
 
 The following is the definition for the `TeamInfoList` struct:
 
@@ -354,7 +354,7 @@ struct TeamInfo
 using TeamInfoList = AZStd::list<TeamInfo>;
 ```
 
-## Subscriber<a name="twitch-api-ebus-data-elements-subscriber"></a>
+## Subscriber {#twitch-api-ebus-data-elements-subscriber}
 
 The following is the definition for the `Subscription` struct:
 
@@ -375,7 +375,7 @@ struct Subscription
 };
 ```
 
-## VideoReturn<a name="twitch-api-ebus-data-elements-videoreturn"></a>
+## VideoReturn {#twitch-api-ebus-data-elements-videoreturn}
 
 The following is the definition for the `VideoReturn` struct:
 
@@ -479,7 +479,7 @@ struct VideoReturn
 };
 ```
 
-## StartChannelCommercialResult<a name="twitch-api-ebus-data-elements-startchannelcommercialresult"></a>
+## StartChannelCommercialResult {#twitch-api-ebus-data-elements-startchannelcommercialresult}
 
 The following is the definition for the `StartChannelCommercialResult` struct:
 
@@ -495,7 +495,7 @@ struct StartChannelCommercialResult
 };
 ```
 
-## CommunityInfo<a name="twitch-api-ebus-data-elements-communityinfo"></a>
+## CommunityInfo {#twitch-api-ebus-data-elements-communityinfo}
 
 The following is the definition for the `CommunityInfo` struct:
 

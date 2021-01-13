@@ -3,7 +3,7 @@ description: ' Use local cubemaps in &ALY; to light smaller areas more accuratel
   . '
 title: Local Environment Lighting
 ---
-# Local Environment Lighting<a name="enviro-lighting-local"></a>
+# Local Environment Lighting {#enviro-lighting-local}
 
 
 ****  

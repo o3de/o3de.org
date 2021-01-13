@@ -2,7 +2,7 @@
 description: ' Export PhysX colliders from .fbx files with FBX Settings to &ALYlong;. '
 title: FBX Settings PhysX export
 ---
-# FBX Settings PhysX export<a name="fbx-physx-export"></a>
+# FBX Settings PhysX export {#fbx-physx-export}
 
 
 ****  
@@ -15,7 +15,7 @@ PhysX colliders are required by **Actors** and **Meshes** to perform collision d
 
 The **PhysX** tab in **FBX Settings** has many options to generate PhysX colliders that offer the best resolution and performance for any use scenario\. 
 
-## Export PhysX colliders<a name="fbx-exporting-physx"></a>
+## Export PhysX colliders {#fbx-exporting-physx}
 
 1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\. The `.fbx` file can contain a mesh or an actor\. 
 

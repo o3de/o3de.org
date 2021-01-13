@@ -3,15 +3,15 @@ description: ' Use the UIFlipbookAnimationComponent to animate the display of a 
   of cells in a sprite sheet image in &ALYlong;. '
 title: UIFlipbookAnimationComponent
 ---
-# UIFlipbookAnimationComponent<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent"></a>
+# UIFlipbookAnimationComponent {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent}
 
 The `UIFlipbookAnimationComponent` animates the display of a range of cells in a sprite sheet image\. You must use an **Image** component along with the **UIFlipbookAnimationComponent** component\.
 
-## UiFlipbookAnimationBus<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus"></a>
+## UiFlipbookAnimationBus {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus}
 
 Services messages for the `UiFlipbookAnimationComponent`\.
 
-### Start<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-start"></a>
+### Start {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-start}
 
 Begins playing the flipbook animation\.
 
@@ -21,7 +21,7 @@ Begins playing the flipbook animation\.
 void Start()
 ```
 
-### Stop<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-stop"></a>
+### Stop {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-stop}
 
 Ends the animation\.
 
@@ -31,7 +31,7 @@ Ends the animation\.
 void End()
 ```
 
-### IsPlaying<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-isplaying"></a>
+### IsPlaying {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-isplaying}
 
 Returns true if the animation is currently playing\. Otherwise, false\.
 
@@ -41,7 +41,7 @@ Returns true if the animation is currently playing\. Otherwise, false\.
 void IsPlaying()
 ```
 
-### GetStartFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getstartframe"></a>
+### GetStartFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getstartframe}
 
 Returns the first frame to display when starting the animation\.
 
@@ -51,7 +51,7 @@ Returns the first frame to display when starting the animation\.
 AZ::u32 GetStartFrame()
 ```
 
-### SetStartFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setstartframe"></a>
+### SetStartFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setstartframe}
 
 Sets the first frame to display when starting the animation\.
 
@@ -61,7 +61,7 @@ Sets the first frame to display when starting the animation\.
 void SetStartFrame(AZ::u32 startFrame)
 ```
 
-### GetEndFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getendframe"></a>
+### GetEndFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getendframe}
 
 Returns the last frame to display for the animation\.
 
@@ -71,7 +71,7 @@ Returns the last frame to display for the animation\.
 AZ::u32 GetEndFrame()
 ```
 
-### SetEndFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setendframe"></a>
+### SetEndFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setendframe}
 
 Sets the last frame to display for the animation\.
 
@@ -81,7 +81,7 @@ Sets the last frame to display for the animation\.
 void SetEndFrame(AZ::u32 endFrame)
 ```
 
-### GetCurrentFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getcurrentframe"></a>
+### GetCurrentFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getcurrentframe}
 
 Returns the frame of the animation currently displayed\.
 
@@ -91,7 +91,7 @@ Returns the frame of the animation currently displayed\.
 AZ::u32 GetCurrentFrame()
 ```
 
-### SetCurrentFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setcurrentframe"></a>
+### SetCurrentFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setcurrentframe}
 
 Sets the frame to immediately display for the animation\.
 
@@ -101,7 +101,7 @@ Sets the frame to immediately display for the animation\.
 void SetCurrentFrame(AZ::u32 currentFrame)
 ```
 
-### GetLoopStartFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getloopstartframe"></a>
+### GetLoopStartFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getloopstartframe}
 
 Returns the first frame that is displayed within an animation loop\.
 
@@ -113,7 +113,7 @@ Applicable only when the **Loop Type** is set to anything other than **None**\.
 AZ::u32 GetLoopStartFrame()
 ```
 
-### SetLoopStartFrame<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setloopstartframe"></a>
+### SetLoopStartFrame {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setloopstartframe}
 
 Sets the first frame that is displayed within an animation loop\.
 
@@ -125,7 +125,7 @@ Applicable only when the **Loop Type** is set to anything other than **None**\.
 void SetLoopStartFrame(AZ::u32 loopStartFrame)
 ```
 
-### GetLoopType<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getlooptype"></a>
+### GetLoopType {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getlooptype}
 
 Returns the type of looping behavior for this animation\.
 
@@ -137,7 +137,7 @@ eUiFlipbookAnimationLoopType GetLoopType()
 
 See `SetLoopType` for a list of possible loop type values\.
 
-### SetLoopType<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setlooptype"></a>
+### SetLoopType {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setlooptype}
 
 Sets the type of looping behavior for this animation\.
 
@@ -163,7 +163,7 @@ Each type performs a different looping action:
 + **Linear** – The frame displayed after the end frame is always the **Loop Start Frame**\.
 + **PingPong** – The direction of the animation loop goes back and forth between the start frame and the end frame\.
 
-### GetFrameDelay<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getframedelay"></a>
+### GetFrameDelay {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getframedelay}
 
 Returns the number of seconds to wait before displaying the next frame\.
 
@@ -173,7 +173,7 @@ Returns the number of seconds to wait before displaying the next frame\.
 float GetFrameDelay()
 ```
 
-### SetFrameDelay<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setframedelay"></a>
+### SetFrameDelay {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setframedelay}
 
 Sets the number of seconds to wait before displaying the next frame\.
 
@@ -183,7 +183,7 @@ Sets the number of seconds to wait before displaying the next frame\.
 void SetFrameDelay(float delay)
 ```
 
-### GetIsAutoPlay<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getisautoplay"></a>
+### GetIsAutoPlay {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getisautoplay}
 
 Returns true if the animation will begin playing as soon as the element is activated\. Otherwise, false\.
 
@@ -193,7 +193,7 @@ Returns true if the animation will begin playing as soon as the element is activ
 bool GetIsAutoPlay()
 ```
 
-### SetIsAutoPlay<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setisautoplay"></a>
+### SetIsAutoPlay {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-setisautoplay}
 
 Sets whether the animation will begin playing as soon as the element is activated\.
 
@@ -203,11 +203,11 @@ Sets whether the animation will begin playing as soon as the element is activate
 void SetIsAutoPlay(bool isAutoPlay)
 ```
 
-## UiFlipbookAnimationNotificationBus<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus"></a>
+## UiFlipbookAnimationNotificationBus {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus}
 
 Notifies listeners of important events concerning the `UiFlipbookAnimationComponent`\.
 
-### OnAnimationStarted<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onanimationstarted"></a>
+### OnAnimationStarted {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onanimationstarted}
 
 The flipbook animation has begun playing\.
 
@@ -217,7 +217,7 @@ The flipbook animation has begun playing\.
 void OnAnimationStarted()
 ```
 
-### OnAnimationStopped<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onanimationstopped"></a>
+### OnAnimationStopped {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onanimationstopped}
 
 The flipbook animation has stopped playing\.
 
@@ -227,7 +227,7 @@ The flipbook animation has stopped playing\.
 void OnAnimationStopped()
 ```
 
-### OnLoopSequenceCompleted<a name="lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onloopsequencecompleted"></a>
+### OnLoopSequenceCompleted {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationnotificationbus-onloopsequencecompleted}
 
 The flipbook animation has completed one loop iteration\. This triggers only when the **Loop Type** of the flipbook animation is configured to anything other than **None**\.
 

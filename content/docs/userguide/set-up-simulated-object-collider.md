@@ -3,7 +3,7 @@ description: ' Set up simulated object colliders so that the actor''s body inter
   with the tassel in &ALYlong;. '
 title: Setting Up Simulated Object Colliders
 ---
-# Setting Up Simulated Object Colliders<a name="set-up-simulated-object-collider"></a>
+# Setting Up Simulated Object Colliders {#set-up-simulated-object-collider}
 
  In the following procedure, add a collider to the spine and left arm to reduce the tassel’s movement\. This ensures that the tassel has something to collide with, which prevents it from moving through the actor's body\.
 

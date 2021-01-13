@@ -3,7 +3,7 @@ description: ' Use the Get Input Vector4 node in the &ALYlong; &script-canvas; e
   to return the value of a procedural material input parameter as a Vector4. '
 title: Get Input Vector4
 ---
-# Get Input Vector4<a name="get-input-vector4-node"></a>
+# Get Input Vector4 {#get-input-vector4-node}
 
 Returns the value of an input parameter as a Vector4\. Use this node with the `Float4` and `Integer4` substance data types\. 
 
@@ -16,7 +16,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 
 ![\[GetInputVector4 gets the Vector4 value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector4-node.png)
 
-## Inputs<a name="get-input-vector4-node-input"></a>
+## Inputs {#get-input-vector4-node-input}
 
 
 ****  
@@ -27,7 +27,7 @@ You can use this node with all substance data types: `Float1` through `Float4` a
 | Procedural Material | Procedural material | The procedural material to query\. | 
 | Input Name | String | The name of the input parameter to return\. | 
 
-## Outputs<a name="get-input-vector4-node-output"></a>
+## Outputs {#get-input-vector4-node-output}
 
 
 ****  

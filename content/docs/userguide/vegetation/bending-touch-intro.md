@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s touch bending effect to simulate a player touchi
   or brushing against vegetation. '
 title: Adding Touch (Collision) Bending Effects
 ---
-# Adding Touch \(Collision\) Bending Effects<a name="vegetation-bending-touch-intro"></a>
+# Adding Touch \(Collision\) Bending Effects {#vegetation-bending-touch-intro}
 
 The touch bending technique simulates a player touching, brushing against, and interacting with vegetation\. Use it for bushes, branches, flexible trees, and bigger leaves with stems\. 
 
@@ -24,19 +24,19 @@ The figure below shows how these 3 components are represented in the Lumberyard 
 + [Vegetation Skeleton](#vegetation-bending-touch-skeleton)
 + [Debugging and Performance Tips](#vegetation-bending-touch-debugging-and-perf)
 
-## Vegetation FBX Mesh<a name="vegetation-bending-touch-fbx"></a>
+## Vegetation FBX Mesh {#vegetation-bending-touch-fbx}
 
 An FBX mesh can be exported into Lumberyard from many common digital content creation tools, or from an existing \.fbx asset file\. 
 
 For more details on working with FBX meshes in Lumberyard, read [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
-## Cube Collision Proxy Mesh<a name="vegetation-bending-touch-collision-cube"></a>
+## Cube Collision Proxy Mesh {#vegetation-bending-touch-collision-cube}
 
 The cube proxy mesh is a simple primitive used to determine when a collision \(a "touch"\) occurs between the vegetation object and some other physical entity\. You import it as an FBX mesh, and if you name this mesh as **\*\_touchbend** \(for example, **proxy\_touchbend**\) the FBX pipeline will automatically identify this mesh as the trigger volume\.
 
 This mesh is cube\-shaped and big enough to cover the main mesh, and is used at runtime as a trigger volume\. Whenever a physical entity enters this volume during your game's inner loop processing, the Lumberyard engine will trigger the creation of a "skeleton" structure made of dynamic rigid bodies \(segments\) attached to each other via joints \(specifically, D6Joints in PhysX\)\. This structure simulates a terrain\-anchored skeleton that passively reacts to the movement of physical entities pushing through it\. 
 
-## Vegetation Skeleton<a name="vegetation-bending-touch-skeleton"></a>
+## Vegetation Skeleton {#vegetation-bending-touch-skeleton}
 
 For users of standard digital content creation \(DCC\) tools like Maya, 3D Studio, or Blender, this part of the asset is nothing more than joints organized in a parent\-child relationship\. This skeleton is used to skin the main mesh and define a binding pose for it\.
 
@@ -53,7 +53,7 @@ The joints must follow the naming convention "**branchN\_M**", where N and M are
 **Note**  
 The name of the root joint can be postfixed with "\_touchbend" \(for example, "branch1\_touchbend"\) as a convenience to notify the FBX pipeline that this asset is used for touch bending instead of a traditional animated character\.
 
-## Debugging and Performance Tips<a name="vegetation-bending-touch-debugging-and-perf"></a>
+## Debugging and Performance Tips {#vegetation-bending-touch-debugging-and-perf}
 
 
 

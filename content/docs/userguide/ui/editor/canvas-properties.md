@@ -2,13 +2,13 @@
 description: ' Set canvas properties for UI canvases in &ui-editor; in &ALYlong;. '
 title: Configuring Canvas Properties
 ---
-# Configuring Canvas Properties<a name="ui-editor-canvas-properties"></a>
+# Configuring Canvas Properties {#ui-editor-canvas-properties}
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected\.
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-canvas-properties.png)
 
-## Rendering Properties<a name="rendering-properties"></a>
+## Rendering Properties {#rendering-properties}
 
 The following properties define how a canvas is rendered:
 + **Draw order** – The value of this property determines the order that this canvas draws relative to other canvases\. Higher numbers draw on top of lower numbers\. When canvases have the same draw order, Lumberyard draws them in the order that they are loaded\.
@@ -16,7 +16,7 @@ The following properties define how a canvas is rendered:
 + **Is text pixel aligned** – Selected by default\. This property makes text look crisper by rounding text positions down to the nearest pixel\. An exception to this rule occurs when fonts have been scaled down, in which case the text position is rounded to the nearest pixel\. If the property is not checked, the text position is not rounded\. You might consider unchecking this property if, for example, a text element will animate or move\.
 + **Render to texture** – Cleared by default\. When this property is selected, the canvas is drawn to a texture rather than to the screen\. When you select this property, you are prompted to enter a **Render target name** for the texture\. You can enter any name, but the convention is to prefix the name with the **$** symbol to distinguish it from texture assets\.
 
-## Input Properties<a name="input-properties"></a>
+## Input Properties {#input-properties}
 
 The following properties define how a canvas handles inputs:
 + **Handle positional** – Selected by default\. This property causes an automatic response to positional input such as mouse movement, mouse button clicks, and touch screen input\. Keyboard inputs also cause an automatic response when an interactive UI element is active \(such as an elemental with a **Text Input** component on it\)\.
@@ -40,12 +40,12 @@ The following properties define how a canvas handles inputs:
   1. Continue holding for an amount of time equal to the *navigation repeat period* to navigate a third time\. Thereafter, as you continue holding the button, you will navigate again, every time an amount of time equal to the navigation period elapses\.
 + **First focus element** – Displayed when **Handle navigation** is selected\. **First focus element** specifies which element gains focus when a canvas is first loaded and a mouse is not detected\. For more information about element navigation, see [First Focus Element](/docs/userguide/ui/editor/components-firstfocus.md)\.
 
-## Tooltips Properties<a name="editor-properties-tooltips"></a>
+## Tooltips Properties {#editor-properties-tooltips}
 
 The following property defines how a canvas displays tooltips:
 + **Tooltip display element** – Controls which element the game displays when your users hover over an interactive element\. Select an element from the drop\-down list\. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component\. For more information about the **Tooltips** components, see [Tooltip Components](/docs/userguide/ui/editor/components-tooltips.md)\.
 
-## Editor Settings Properties<a name="editor-properties-group"></a>
+## Editor Settings Properties {#editor-properties-group}
 
 The following properties define UI Editor behavior:
 + **Snap distance** – The distance between positions on the grid when **Snap to grid** is selected in the toolbar\.

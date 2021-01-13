@@ -2,7 +2,7 @@
 description: ' Troubleshoot issues for &ALYlong; terrain. '
 title: Terrain FAQs
 ---
-# Terrain FAQs<a name="terrain-troubleshoot"></a>
+# Terrain FAQs {#terrain-troubleshoot}
 
 See the following troubleshooting tips to resolve issues for your Lumberyard terrains\.
 

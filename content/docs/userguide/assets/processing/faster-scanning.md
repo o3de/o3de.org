@@ -3,7 +3,7 @@ description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup 
   in &ALYlong;. '
 title: Enabling &asset-processor;'s Faster Scanning Mode
 ---
-# Enabling Asset Processor's Faster Scanning Mode<a name="asset-processor-faster-scanning"></a>
+# Enabling Asset Processor's Faster Scanning Mode {#asset-processor-faster-scanning}
 
 Asset Processor's **Faster Scanning Mode** speeds up Lumberyard's startup scan by disabling checking for cache changes that occurred while Asset Processor was not running\. This can save you time when processing many assets in your project\.
 
@@ -35,7 +35,7 @@ When you enable the feature you can also use console mode `stdout` as well as op
 
 For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
-## Performing a Full Scan<a name="asset-processor-full-scan"></a>
+## Performing a Full Scan {#asset-processor-full-scan}
 
 When you choose a full scan, Asset Processor performs the following actions\. Low cost actions contribute to less than 1% of the total time\.
 + \(Low\) Determines which builders are responsible for building a file\. Asset Processor examines builder patterns, such as `*.tif` or `*.fbx` when they register\.

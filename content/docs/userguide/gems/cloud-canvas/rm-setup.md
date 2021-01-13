@@ -3,7 +3,7 @@ description: ' Initialize &cloud; Resource Manager and get started working with 
   project stacks that enable the cloud-connected features of your &ALYlong; game project. '
 title: Setting Up a Project to Use Resource Manager
 ---
-# Setting Up a Project to Use Resource Manager<a name="cloud-canvas-rm-setup"></a>
+# Setting Up a Project to Use Resource Manager {#cloud-canvas-rm-setup}
 
 After initializing Cloud Canvas Resource Manager so that your Amazon Lumberyard project can use AWS, you can use Resource Manager to configure the stacks for your project\.
 

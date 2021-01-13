@@ -3,7 +3,7 @@ description: ' Use blend layers in &ALYlong; to create one material with a secon
   set of per-pixel functions, such as texture maps, UV tiling and offset. '
 title: Working with Blend Layers
 ---
-# Working with Blend Layers<a name="mat-maps-blend"></a>
+# Working with Blend Layers {#mat-maps-blend}
 
 Blend layers can be thought of as a layered material\. You can create one material with a second set of per\-pixel functions, including texture maps, UV tiling and offset, rotation and oscillation animation, second UV set, diffuse and specular color tinting, smoothness, and blend masking\.
 
@@ -16,7 +16,7 @@ Integrate blend layers in the Illum and Vegetation shaders and activate them by 
 + [Blend Layer Textures](#mat-maps-blend-layer-textures)
 + [Blend Layer Parameters](#mat-maps-blend-layer-parameters)
 
-## Shader Generation Parameters<a name="mat-maps-blend-shader-generation-parameters"></a>
+## Shader Generation Parameters {#mat-maps-blend-shader-generation-parameters}
 
 You can set the following parameters for generating shaders\.
 
@@ -26,7 +26,7 @@ Activate the texture inputs and parameters for the blend layer\.
 **Use UV set 2 for blend layers maps**  
 Use a second UV channel, if available, for the second layer\.
 
-## Blend Layer Textures<a name="mat-maps-blend-layer-textures"></a>
+## Blend Layer Textures {#mat-maps-blend-layer-textures}
 
 You can set the following parameters for your blend layer textures\.
 
@@ -45,7 +45,7 @@ Specular map for the blend layer \(RGB\)
 **Blend Map**  
 Blending map to blend between the first and second layers \(grayscale\)
 
-## Blend Layer Parameters<a name="mat-maps-blend-layer-parameters"></a>
+## Blend Layer Parameters {#mat-maps-blend-layer-parameters}
 
 You can set the following parameters for your blend layer\.
 

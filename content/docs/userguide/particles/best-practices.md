@@ -3,7 +3,7 @@ description: ' Follow these best practices for creating and using particle effec
   in the &ALY; Particle Editor. '
 title: Particle Effects Best Practices
 ---
-# Particle Effects Best Practices<a name="particle-best-practices"></a>
+# Particle Effects Best Practices {#particle-best-practices}
 
 The total number of particles in a scene is not a critical factor when considering best practices for working with particles\. Total fill\-rate, physics, and \(to some extent\) spawn rate are more important\. Following are some best practices for working with particles:
 + Use soft particles only on subemitters that are near the ground and have only small particles\. Create similar subemitters higher up that emit particles that never intersect with the ground and don't require soft particles\.

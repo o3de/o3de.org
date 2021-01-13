@@ -2,7 +2,7 @@
 description: ' Use &ALY; slices as reusable, easily updatable component entity templates. '
 title: Working with Slices
 ---
-# Working with Slices<a name="component-slices"></a>
+# Working with Slices {#component-slices}
 
 A slice is a collection of configured [entities](/docs/userguide/components/intro.md) that is stored as a single unit in a reusable asset\. You can use slices to conveniently group entities and other slices for reuse\. Slices are similar to [prefabs](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-prefabs-intro.html) but are part of the new component entity system\. Slices can contain component entities, whereas prefabs cannot\. Unlike prefabs, slices can be nested into a fully cascading hierarchy\. For example, a level, a house, a car, and an entire world are all slices that depend on \(cascade\) from a number of other slices\.
 
@@ -21,7 +21,7 @@ Slices are saved as `.slice` files within your game project directory\.
 **Example**  
 In the **Entity Outliner**, you can identify different entities by their icon and color\.  
 
-![\[Slices in the Entity Outliner.\]](/images/userguide/shared-working_with_slices.png)<a name="identify-slices"></a>
+![\[Slices in the Entity Outliner.\]](/images/userguide/shared-working_with_slices.png) {#identify-slices}
 
 
 ****  

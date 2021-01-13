@@ -3,7 +3,7 @@ description: ' Use the Projector Light component on an entity to project a light
   &ALY;. '
 title: Projector Light
 ---
-# Projector Light<a name="component-projector-light"></a>
+# Projector Light {#component-projector-light}
 
 Use the **Projector Light** component on an entity to project a light\.
 
@@ -15,7 +15,7 @@ Shows the light\.
 **On initially**  
 Specify if the light is on when created\.
 
-## General Settings<a name="component-projector-light-general-settings"></a>
+## General Settings {#component-projector-light-general-settings}
 
 See the following general settings:
 
@@ -34,7 +34,7 @@ Default value: 1
 **Ambient**  
 If selected, light acts as a multiplier for cubemap values\.
 
-## Project Light Settings<a name="component-projector-light-settings"></a>
+## Project Light Settings {#component-projector-light-settings}
 
 See the following point light settings:
 
@@ -59,7 +59,7 @@ Projector light's texture file\. Without a texture, light does not shine\.
 **Material**  
 Projector light's material file\.
 
-## Options<a name="component-projector-light-options"></a>
+## Options {#component-projector-light-options}
 
 See the following options:
 
@@ -93,14 +93,14 @@ Light affects only volumetric fog\.
 **Volumetric fog**  
 Light affects volumetric fog and surrounding area\.
 
-## Shadow Settings<a name="component-projector-light-shadow"></a>
+## Shadow Settings {#component-projector-light-shadow}
 
 See the following shadow settings:
 
 **Terrain Shadows**  
 Includes the terrain in the shadow casters for this light\.
 
-## Animation<a name="component-projector-light-animation"></a>
+## Animation {#component-projector-light-animation}
 
 See the following animation settings:
 
@@ -117,15 +117,15 @@ Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the
 For example, you can use this setting to prevent lights in the same scene, with the same animation, from being animated in unison\.  
 Default value: 0
 
-## Additional Resources<a name="component-projector-light-additional-links"></a>
+## Additional Resources {#component-projector-light-additional-links}
 + For more information about the **Projector Light** component, see the following:
   + [Intro to Environment Lighting](https://docs.aws.amazon.com/lumberyard/latest/userguide/enviro-lighting-intro.html)
   + [Getting Started: Using Lighting Tutorial \(video\)](https://www.youtube.com/watch?v=-KdwKZtzzo0)
 
-## EBus Request Bus Interface<a name="component-projector-light-ebusrequest"></a>
+## EBus Request Bus Interface {#component-projector-light-ebusrequest}
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light.md#component-light-ebusrequest)\.
+All light components share common EBus functions\. For more information, see [Light Components EBus Request Bus Interface](/docs/userguide/components/area-light#component-light-ebusrequest)\.

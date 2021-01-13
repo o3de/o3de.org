@@ -2,9 +2,9 @@
 description: ' Learn more about FAQs for AI navigation in &ALYlong;. '
 title: Navigation Q &amp; A
 ---
-# Navigation Q & A<a name="ai-navigation"></a>
+# Navigation Q & A {#ai-navigation}
 
-## Big Triangles and Small Links Between Them<a name="ai-navigation-big-triangles"></a>
+## Big Triangles and Small Links Between Them {#ai-navigation-big-triangles}
 
 **Q: I have created a big flat map, placed an AI agent on it, and generated AI navigation triangulation\. I noticed that the AI agent doesn't always take the shortest straight path from point A to point B\. Why?**  
 A: To illuminate the issue, use the following tools:  
@@ -14,12 +14,12 @@ A: To illuminate the issue, use the following tools:
 The AI navigation triangulation is intended to be fast and have a small memory footprint\. One of the decisions made in this regard was to use 16\-bit signed integers to store corridor \(or "link"\) radius measurements between two adjacent triangles\. Using centimeters as the uint of measure, this means that the maximum link radius is 32767 cm \(327\.67 m\)\. When an AI agent moves to another triangle, it can only go through this corridor, which is naturally very narrow if the triangles are still very large\. This problem does not exist for triangles with edges less than 2 \* 327\.67 = 655\.34 m\.  
 This problem can only appear in the very initial stages of map development\. Every forbidden area, tree or other map irregularity makes triangulation more developed, which results in more triangles that are smaller in size\. As a result, the problem goes away\.
 
-## Path Following<a name="ai-navigation-paths"></a>
+## Path Following {#ai-navigation-paths}
 
 **Q: How does path following actually work? Where to start?**  
 A: See the topic on [Path Following](/docs/userguide/ai/path-following.md)\.
 
-## Auto\-Disabling<a name="ai-navigation-disabling"></a>
+## Auto\-Disabling {#ai-navigation-disabling}
 
 **Q: How do you keep patrols always active, regardless of their distance from the player?**  
 A: See the topic on [Auto\-Disable](/docs/userguide/ai/auto-disable.md)\.

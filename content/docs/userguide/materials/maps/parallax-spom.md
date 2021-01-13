@@ -2,7 +2,7 @@
 description: ' Apply silhouette parallax occlusion mapping (SPOM) in &ALYlong;. '
 title: Applying Silhouette Parallax Occlusion Mapping (SPOM)
 ---
-# Applying Silhouette Parallax Occlusion Mapping \(SPOM\)<a name="mat-maps-parallax-spom"></a>
+# Applying Silhouette Parallax Occlusion Mapping \(SPOM\) {#mat-maps-parallax-spom}
 
 To apply SPOM, complete the following procedure\.
 

@@ -3,7 +3,7 @@ description: ' Use the Open and &AWS; Console or Permissions and &cloud; menus i
   &ly-editor; to work with &cloud;. '
 title: '&cloud; Tools in &ly-editor;'
 ---
-# Cloud Canvas Tools in Lumberyard Editor<a name="cloud-canvas-ui-intro"></a>
+# Cloud Canvas Tools in Lumberyard Editor {#cloud-canvas-ui-intro}
 
 The tools in Lumberyard Editor make it easy for you to connect your game to AWS\. To get started, click **AWS** in the Lumberyard Editor menu bar:
 

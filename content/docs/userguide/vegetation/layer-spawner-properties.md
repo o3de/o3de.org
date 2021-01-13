@@ -3,7 +3,7 @@ description: Use the Vegetation Layer Spawner component to create vegetation ent
   in &ALYlong;.
 title: Vegetation Layer Spawner Properties
 ---
-# Vegetation Layer Spawner Properties<a name="vegetation-layer-spawner-properties"></a>
+# Vegetation Layer Spawner Properties {#vegetation-layer-spawner-properties}
 
 The **Vegetation Layer Spawner** component has the following properties:
 

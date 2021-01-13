@@ -2,7 +2,7 @@
 description: ' Use pivot mode to set a center point of reference for entities in &ALYlong;. '
 title: Using Pivot Mode
 ---
-# Using Pivot Mode<a name="pivot-mode"></a>
+# Using Pivot Mode {#pivot-mode}
 
 You can use pivot mode to use the default pivot or the entity's center as the manipulator point of reference\. This feature is useful if you want to modify multiple entities using a central point of reference\. 
 

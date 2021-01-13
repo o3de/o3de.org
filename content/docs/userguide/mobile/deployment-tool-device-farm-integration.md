@@ -2,7 +2,7 @@
 description: ' Deploy your mobile apps to &ATPlong; for testing from &ALYlong;. '
 title: Using &ATPlong; in &ly-editor;
 ---
-# Using AWS Device Farm in Lumberyard Editor<a name="ios-android-deployment-tool-device-farm-integration"></a>
+# Using AWS Device Farm in Lumberyard Editor {#ios-android-deployment-tool-device-farm-integration}
 
 Use [AWS Device Farm ](https://aws.amazon.com/device-farm/)to test your Android or iOS apps on many different types of devices without needing to have any of them present physically\. Device Farm can help you find and resolve compatibility issues on a large number of devices\. For more information about Device Farm, see the [Device Farm Developer Guide](https://docs.aws.amazon.com/devicefarm/latest/developerguide/)\.
 
@@ -10,7 +10,7 @@ Starting in Lumberyard version 1\.20, you can use the Lumberyard Editor [Deploym
 
 ![\[Lumberyardintegration with AWS Device Farm.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-1.png)
 
-## Prerequisites<a name="ios-android-deployment-tool-device-farm-integration-prerequisites"></a>
+## Prerequisites {#ios-android-deployment-tool-device-farm-integration-prerequisites}
 
 To use Device Farm in Lumberyard Editor, you need the following requirements:
 + The Cloud Gem Framework gem, enabled for your project in the Project Configurator\.  
@@ -31,7 +31,7 @@ To use Device Farm in Lumberyard Editor, you need the following requirements:
   + For information about the AWS Free Tier, see the [AWS Free Tier](https://aws.amazon.com/free/) page\.
 + Device Farm requires that you have a shader compiler running on an Amazon Elastic Compute Cloud \(Amazon EC2\) instance\. For more information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
-### Creating an AWS Profile in Lumberyard Editor<a name="ios-android-deployment-tool-device-farm-integration-creating-an-aws-profile-in-lumberyard-editor"></a>
+### Creating an AWS Profile in Lumberyard Editor {#ios-android-deployment-tool-device-farm-integration-creating-an-aws-profile-in-lumberyard-editor}
 
 After you have a set of AWS credentials, use them to create a profile in Lumberyard Editor\.
 
@@ -58,7 +58,7 @@ After you have a set of AWS credentials, use them to create a profile in Lumbery
 
 You have now created a profile that is associated with your credentials\. It is saved locally on your machine in your AWS credentials file\. This file is usually located in your C:\\Users\\`user_name`\\\.aws\\ directory\.
 
-## Accessing the Device Farm Console from Lumberyard Editor<a name="ios-android-deployment-tool-device-farm-integration-accessing-the-device-farm-console-from-lumberyard-editor"></a>
+## Accessing the Device Farm Console from Lumberyard Editor {#ios-android-deployment-tool-device-farm-integration-accessing-the-device-farm-console-from-lumberyard-editor}
 
 After the new profile is selected in the **Credentials Manager**, you can use Lumberyard Editor to access the Device Farm console\.
 
@@ -68,7 +68,7 @@ After the new profile is selected in the **Credentials Manager**, you can use Lu
 
 1. Choose **AWS**, **Open AWS Console**, **Device Farm**\. This signs you into AWS and creates a new session\.
 
-## Configuring a Deployment for AWS Device Farm<a name="ios-android-deployment-tool-device-farm-integration-configuring-a-deployment-for-aws-device-farm"></a>
+## Configuring a Deployment for AWS Device Farm {#ios-android-deployment-tool-device-farm-integration-configuring-a-deployment-for-aws-device-farm}
 
 After you have selected a valid AWS profile in Lumberyard Editor, you can use the [Deployment Tool](https://docs.aws.amazon.com/lumberyard/latest/userguide/android-game-building.html) to configure a deployment to AWS Device Farm\.
 
@@ -92,7 +92,7 @@ After you have selected a valid AWS profile in Lumberyard Editor, you can use th
 
 1. Click **Save**\.
 
-## Building and Deploying an App to AWS Device Farm<a name="ios-android-deployment-tool-device-farm-integration-building-and-deploying-an-app-to-aws-device-farm"></a>
+## Building and Deploying an App to AWS Device Farm {#ios-android-deployment-tool-device-farm-integration-building-and-deploying-an-app-to-aws-device-farm}
 
 At this point, you are ready to build and deploy your app to Device Farm\.
 

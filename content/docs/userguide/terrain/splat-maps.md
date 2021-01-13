@@ -3,7 +3,7 @@ description: ' Add weight information to &ALY; terrain maps by importing splat m
   created in a DCC tool. '
 title: Importing Splat Maps
 ---
-# Importing Splat Maps<a name="terrain-splat-maps"></a>
+# Importing Splat Maps {#terrain-splat-maps}
 
 Splat maps are 8\-bit monochrome bitmap `.bmp` files that contain weight information for each vertex in a terrain map\. Splat maps are generated using a DCC tool such as World Machine's Splat Converter\.
 

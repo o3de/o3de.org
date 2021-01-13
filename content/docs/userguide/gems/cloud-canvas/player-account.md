@@ -3,11 +3,11 @@ description: ' Use the Player Account Cloud Gem to provide a standalone player a
   and management system in &ALYlong;. '
 title: Player Account Cloud Gem Portal
 ---
-# Player Account Cloud Gem Portal<a name="cloud-canvas-cloud-gem-player-account"></a>
+# Player Account Cloud Gem Portal {#cloud-canvas-cloud-gem-player-account}
 
 The Player Account Cloud Gem provides a standalone player authentication and management solution that uses Amazon Cognito\. The cloud gem includes a player registration API, built\-in two\-step verification, and support for both anonymous and authenticated players\. You can use your Cloud Gem Portal to administer players and manually register, delete, ban, and update their accounts\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-player-account-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-player-account-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has **Cloud Gem Player Account** enabled\.
@@ -17,17 +17,17 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add **Cloud Gem Player Account** in the Project Configurator\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-### Legal Restrictions<a name="cloud-canvas-cloud-gem-player-account-legal-restrictions"></a>
+### Legal Restrictions {#cloud-canvas-cloud-gem-player-account-legal-restrictions}
 
 You are responsible for \(a\) providing legally adequate privacy notices to your end users; \(b\) obtaining any necessary consent from the end user for the collection, use, transfer, and storage of any name, password, other login information, or personally identifiable information or personal data of any end user that you \(or any third\-party plug\-in or service provider you use\) may access; \(c\) using and authorizing others to access and use the information only for the purposes permitted by the end user; and \(d\) ensuring the information is collected, used, transferred, and stored in accordance with all laws, rules, and regulations applicable in jurisdictions in which your applications are used\.
 
-## Using the Player Account Cloud Gem Portal<a name="cloud-canvas-cloud-gem-player-account-using-the-player-account-cloud-gem-portal"></a>
+## Using the Player Account Cloud Gem Portal {#cloud-canvas-cloud-gem-player-account-using-the-player-account-cloud-gem-portal}
 
 To open the Player Account Cloud Gem Portal, click **Player Account** on the **Cloud Gems** page\.
 
 ![\[Click Player Account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-1.png)
 
-### Adding Players<a name="cloud-canvas-cloud-gem-player-account-adding-users"></a>
+### Adding Players {#cloud-canvas-cloud-gem-player-account-adding-users}
 
 The first screen is the **Player Account** page, which lists the player accounts in your game\. If your game doesn't have any players yet, the list is empty\.
 
@@ -60,7 +60,7 @@ The first screen is the **Player Account** page, which lists the player accounts
 1. You can use the box and filter on the upper right of the **Player Account** page to search the list of player accounts\.  
 ![\[Filter options\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-3.png)
 
-### Viewing and Editing Account Details<a name="cloud-canvas-cloud-gem-player-account-viewing-and-editing-account-details"></a>
+### Viewing and Editing Account Details {#cloud-canvas-cloud-gem-player-account-viewing-and-editing-account-details}
 
 To view the details of an account, click the account\. The **Player Account Profile** page shows additional account details\.
 
@@ -74,7 +74,7 @@ All fields are editable except **Account ID** and **Username**\.
 
 ![\[Edit player account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-6.png)
 
-### Confirming an Account<a name="cloud-canvas-cloud-gem-player-account-confirming-an-account"></a>
+### Confirming an Account {#cloud-canvas-cloud-gem-player-account-confirming-an-account}
 
 You can use the Player Account Cloud Gem Portal to confirm an account whose status is **Unconfirmed**\.
 
@@ -86,7 +86,7 @@ You can use the Player Account Cloud Gem Portal to confirm an account whose stat
 
 1. Choose **Confirm Account**\.
 
-### Banning an Account<a name="cloud-canvas-cloud-gem-player-account-banning-an-account"></a>
+### Banning an Account {#cloud-canvas-cloud-gem-player-account-banning-an-account}
 
 Accounts that you ban no longer can log in to the game\.
 
@@ -100,7 +100,7 @@ Accounts that you ban no longer can log in to the game\.
 1. Click the **Banned Players** tab\. The banned account has been added to the banned players list\.  
 ![\[Banned players list\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
 
-### Removing a Ban<a name="cloud-canvas-cloud-gem-player-account-removing-a-ban"></a>
+### Removing a Ban {#cloud-canvas-cloud-gem-player-account-removing-a-ban}
 
 Removing a ban from an account is similar to adding one\.
 
@@ -116,6 +116,6 @@ Removing a ban from an account is similar to adding one\.
 
 1. Click the **Accounts** tab\. The account reappears in the list of players\.
 
-## Next Steps<a name="cloud-canvas-cloud-gem-player-account-next-steps"></a>
+## Next Steps {#cloud-canvas-cloud-gem-player-account-next-steps}
 
 After you have added player accounts to your Cloud Gem Portal, you can start using them in your game\. The Lumberyard team is always looking for feedback on cloud gems and suggestions for improvements\. Feel free to reach out to us on our [forums](https://forums.awsgametech.com/) or send email to lumberyard\-feedback@amazon\.com\.

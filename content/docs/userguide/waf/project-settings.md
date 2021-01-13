@@ -2,7 +2,7 @@
 description: ' Use Waf to specify the build settings for your &ALYlong; game project. '
 title: Waf Project Settings
 ---
-# Waf Project Settings<a name="waf-project-settings"></a>
+# Waf Project Settings {#waf-project-settings}
 
 When defining a project's build settings \(wscript\), you can specify several different project settings for the build modules to configure the correct parameters for the project\.
 
@@ -46,7 +46,7 @@ The following table provides the valid attributes for the different build module
 | uselib | Add a dependency on a 3rd party library by name | Y | 
 | vs\_filter | Folder filter in the generated solution file where this project exists | N | 
 
-## Platform and Configuration Targeting<a name="platform-configuration-targeting"></a>
+## Platform and Configuration Targeting {#platform-configuration-targeting}
 
 If allowed \(refer to the third column in the table above\), you can set an attribute value to apply only under certain target platforms and configurations\. Each attribute can be universal for all builds or targeted specifically to a platform/configuration combination:
 + **\[Attribute\]** – Applies to any target platform/configuration for the attribute
@@ -54,7 +54,7 @@ If allowed \(refer to the third column in the table above\), you can set an attr
 + **\[configuration\]\_\[attribute\]** – Applies to a specific configuration for any target platform for the attribute
 + **\[target\_platform\]\_\[configuration\]\_\[attribute\]** – Applies to a specific target platform and configuration for the attribute
 
-## Features<a name="waf-project-features"></a>
+## Features {#waf-project-features}
 
 The Lumberyard Waf system allows the use of custom features to add functionality to a project's build pipeline\.
 

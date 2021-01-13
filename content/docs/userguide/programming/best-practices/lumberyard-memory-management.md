@@ -2,22 +2,22 @@
 description: ' Learn best practices for memory management in &ALYlong;. '
 title: Memory Management
 ---
-# Memory Management<a name="cpp-best-practices-lumberyard-memory-management"></a>
+# Memory Management {#cpp-best-practices-lumberyard-memory-management}
 
 When managing memory in Lumberyard, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.
 
-## Memory Allocations<a name="cpp-best-practices-lumberyard-memory-allocations"></a>
+## Memory Allocations {#cpp-best-practices-lumberyard-memory-allocations}
 
 When allocating memory, use the following recommended practices:
 + Do not use `new`, `malloc`, and similar allocators directly\. Instead, use AZ memory manager calls to `aznew`, `azmalloc`, `azfree`, `azcreate`, and `azdestroy`\.
 + Specify the allocator in each class\.
-+ Use child allocators\. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator\. For an example of creating a child allocator, see [Creating an Allocator](/docs/userguide/programming/memory/allocators.md#memory-allocators-creating-an-allocator)\.
++ Use child allocators\. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator\. For an example of creating a child allocator, see [Creating an Allocator](/docs/userguide/programming/memory/allocators#memory-allocators-creating-an-allocator)\.
 
 **Reason**: Lumberyard's core AZ systems provide a memory managed environment, not a raw system allocator like the managed memory in C\# or Java\. In Lumberyard, the core AZ systems provide speed, safety, and facilities for tracking memory usage\.
 
-For information about Lumberyard's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators.md#memory-allocators-manually-allocating-memory)\.
+For information about Lumberyard's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators#memory-allocators-manually-allocating-memory)\.
 
-## Memory Issues Caused by Static Variables<a name="cpp-best-practices-lumberyard-memory-issues-caused-by-static-variables"></a>
+## Memory Issues Caused by Static Variables {#cpp-best-practices-lumberyard-memory-issues-caused-by-static-variables}
 
 In constructors and destructors for static variables, avoid the following:
 + Allocating memory with the AZ memory allocator system\.
@@ -33,7 +33,7 @@ These rules apply to global static variables, function local static variables, a
 
 Remember that the lifetime of a static variable lasts until the module in which the variable is declared is unloaded\. In static linked libraries, the duration of static variables is the entire duration of the application\.
 
-### Static Local Variable Example<a name="cpp-best-practices-lumberyard-static-local-variable-example"></a>
+### Static Local Variable Example {#cpp-best-practices-lumberyard-static-local-variable-example}
 
 The following example code from the Lumberyard version 1\.17 AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
 
@@ -53,7 +53,7 @@ namespace Physics
 
 By default, the `AZStd::vector` class uses the `SystemAllocator`\. Invoking this function on application shutdown, when `SystemAllocator` no longer exists, causes a deletion from a destroyed heap\.
 
-### Global Static Variable Example<a name="cpp-best-practices-lumberyard-global-static-variable-example"></a>
+### Global Static Variable Example {#cpp-best-practices-lumberyard-global-static-variable-example}
 
 On startup, the following code attempts to create a global static variable whose constructor connects to an EBus:
 

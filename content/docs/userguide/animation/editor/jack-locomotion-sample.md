@@ -4,7 +4,7 @@ description: ' Use the Simple Jack Locomotion sample level to learn how the &ALY
   behavior. '
 title: Simple_JackLocomotion Sample
 ---
-# Simple\_JackLocomotion Sample<a name="animation-editor-jack-locomotion-sample"></a>
+# Simple\_JackLocomotion Sample {#animation-editor-jack-locomotion-sample}
 
 
 ****  

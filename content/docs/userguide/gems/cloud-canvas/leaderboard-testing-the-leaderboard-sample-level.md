@@ -2,7 +2,7 @@
 description: ' Test the Leaderboard Sample Level in &ALYlong;. '
 title: Testing the Leaderboard Sample Level
 ---
-# Testing the Leaderboard Sample Level<a name="cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level"></a>
+# Testing the Leaderboard Sample Level {#cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level}
 
 The `CloudGemLeaderboard` Cloud Gem is included in the LeaderboardSample level, which is located in the `dev\CloudGemSamples\Levels\LeaderboardSample` directory\. The LeaderboardSample level contains a UI canvas with multiple buttons that you can use to test the Leaderboard system\.
 

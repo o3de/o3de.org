@@ -2,7 +2,7 @@
 description: ' Use a JSON file to customize &ly-launcher; for your project in &ALYlong;. '
 title: Customizing &ly-launcher;
 ---
-# Customizing Lumberyard Setup Assistant<a name="lumberyard-launcher-customizing"></a>
+# Customizing Lumberyard Setup Assistant {#lumberyard-launcher-customizing}
 
 You can use the `SetupAssistantConfig.json` configuration file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to customize Lumberyard Setup Assistant for your project\. The settings in this file are prioritized above internal default settings\.
 
@@ -10,7 +10,7 @@ For example configuration data that you can copy and paste into your own `.json`
 
 Save your changes to the `SetupAssistantConfig.json` configuration file in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\. To validate your changes and ensure there are no syntax errors \(such as a missing comma\), run the `SetupAssistantBatch.exe` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup\Win` directory\) from a command line window\. 
 
-## Enabling and Disabling Features<a name="ll-customizing-enable-disable-features"></a>
+## Enabling and Disabling Features {#ll-customizing-enable-disable-features}
 
 You can enable or disable software and third\-party SDKs based on your project requirements\. In the `SetupAssistantConfig.ini` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\), uncomment the lines \(delete the semicolon\) to disable specific features\. 
 
@@ -28,7 +28,7 @@ You can enable or disable software and third\-party SDKs based on your project r
 ;mysql="disabled"
 ```
 
-## Adding New Third\-Party SDKs<a name="ll-customizing-adding-new-sdks"></a>
+## Adding New Third\-Party SDKs {#ll-customizing-adding-new-sdks}
 
 In addition to enabling or disabling software and third\-party SDKs, you can edit the `SetupAssistantConfig.json` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to add new, third\-party SDKs to your project configuration\.
 
@@ -77,7 +77,7 @@ For an example of how to add configuration data, refer to the `SetupAssistantCon
 **Note**  
 When you specify the destination of your code directory, you can use `$CODEFOLDERNAME$` or specify the actual name\. The code directory is the location where third\-party SDKs are expected and is relative to the SDK root\. For example, you can change `CodeFolderName` to `myGame/A/b/c`\.
 
-### SDK Fields<a name="ll-customizing-adding-new-sdks-fields"></a>
+### SDK Fields {#ll-customizing-adding-new-sdks-fields}
 
 You may need to provide information for the following SDK fields\.
 
@@ -108,7 +108,7 @@ List of symlink dictionaries for all junctions \(symbolic links\) to establish b
 + `destination` – Destination directory, relative to the SDK root\.
 + `exampleFile` – File that is located in the source and destination folders and that validates the established link\.
 
-## Configuring Advanced Settings<a name="ll-customizing-configuring-advanced-settings"></a>
+## Configuring Advanced Settings {#ll-customizing-configuring-advanced-settings}
 
 The `SetupAssistantConfig.json` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) has the following configuration settings in the root element \(dictionary\):
 
@@ -124,7 +124,7 @@ If true, saves the Lumberyard root that the user browsed between sessions\. If f
 **Remember3rdPartyFolder**  
 If true, saves the third\-party directory that the user browsed between sessions\. If false, automatically detects the third\-party directory based on the executable location\. The default value is false\.
 
-## Customizing the Maya Environment<a name="ll-customizing-maya-environment"></a>
+## Customizing the Maya Environment {#ll-customizing-maya-environment}
 
 The `\Tools\Maya\Plugins` directory includes the Lumberyard Maya plugin, and the `\Tools\Maya\script` directory includes the MEL and Python scripts\. To enable the Maya plugin functionality, Lumberyard Setup Assistant modifies `Maya.ENV` to add the required variables to your Maya configuration\.
 
@@ -150,6 +150,6 @@ In the following example, `$TOOLSFOLDER$` is a macro that is substituted with th
     ],
 ```
 
-## Updating the Code or Tools Location<a name="ll-customizing-updating-code-tools-location"></a>
+## Updating the Code or Tools Location {#ll-customizing-updating-code-tools-location}
 
 If your project requires moving the Lumberyard code or tools directory so that it’s no longer located in a subfolder called `Code` or `Tools` relative to the Lumberyard root, you can edit the `SetupAssistantConfig.json` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to update the directory location\. Ensure the updated directory includes the `Lumberyardroot.txt` file\.

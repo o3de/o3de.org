@@ -2,9 +2,9 @@
 description: ' Use shared code for your cloud gem framework in &ALYlong;. '
 title: Using Shared Code
 ---
-# Using Shared Code<a name="cloud-canvas-cgf-shared-code"></a>
+# Using Shared Code {#cloud-canvas-cgf-shared-code}
 
-The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](/docs/userguide/gems/cloud-canvas/command-line-cgf.md#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Prior to Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.
+The `lmbr_aws cloud-gem-framework` [add\-service\-api\-resources](/docs/userguide/gems/cloud-canvas/command-line-cgf#cloud-canvas-command-line-cgf-add-service-api-resources) command adds a service API to a resource group\. Prior to Lumberyard version 1\.10, it copied the service Lambda code for dispatching service API calls from the `CloudGemFramework\AWS\resource-manager-code\default-resource-group-content\lambda-function-code` directory to the resource group's `lambda-function-code` directory\.
 
 In version 1\.10, Lumberyard adds a general purpose code sharing mechanism\. You can use this mechanism to include a single copy of the service API dispatch code in all the Lambda functions that require it\. Place the code to be shared in a subdirectory of a gem's `AWS\common-code` directory\. The subdirectory name is the name of the code package\.
 
@@ -15,7 +15,7 @@ An `.import` file can be found in a gem's AWS directory or a project's resource 
 + `resource-manager-code\`
 + `common-code\<package-name>\`
 
-You can use the `common-code\<package-name>\` directory to add dependencies recursively\. The `lambda-code\<lambda-name>\` directory is new in Lumberyard 1\.10\. For more information about this directory, see [Lambda Code Directories](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-resource-definitions-lambda-code-directory)\.
+You can use the `common-code\<package-name>\` directory to add dependencies recursively\. The `lambda-code\<lambda-name>\` directory is new in Lumberyard 1\.10\. For more information about this directory, see [Lambda Code Directories](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-definitions-lambda-code-directory)\.
 
 The`.import` file has the following format:
 

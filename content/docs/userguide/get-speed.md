@@ -3,7 +3,7 @@ description: ' Use the Get Speed node in the &ALYlong; &script-canvas; editor to
   the speed multiplier for the time of day. '
 title: Get Speed
 ---
-# Get Speed<a name="get-speed"></a>
+# Get Speed {#get-speed}
 
 Returns the current time of day speed multiplier\. The value is specified in conversion units of hours per second\. For example, a value of `1` runs through an entire time of day cycle in 24 seconds\.
 
@@ -13,7 +13,7 @@ Returns the current time of day speed multiplier\. The value is specified in con
 
 ![\[getspeed, getspeednode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-speed-node.png)
 
-## Inputs<a name="get-speed-input"></a>
+## Inputs {#get-speed-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the current time of day speed multiplier\. The value is specified in con
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-speed-output"></a>
+## Outputs {#get-speed-output}
 
 
 ****  

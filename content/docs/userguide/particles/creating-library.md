@@ -2,7 +2,7 @@
 description: ' Use the &ALY; &particle-editor; to create or add a new particle library. '
 title: Adding Particle Libraries
 ---
-# Adding Particle Libraries<a name="particle-creating-library"></a>
+# Adding Particle Libraries {#particle-creating-library}
 
 Particle effect data is stored in an XML\-based library file\.
 

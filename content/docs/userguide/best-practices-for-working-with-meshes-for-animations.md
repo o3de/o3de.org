@@ -3,7 +3,7 @@ description: ' See the best practices when you create and import your skinned me
   files for the &animation-editor; in &ALYlong;. '
 title: Best Practices for Working with Skinned Meshes for Animation
 ---
-# Best Practices for Working with Skinned Meshes for Animation<a name="best-practices-for-working-with-meshes-for-animations"></a>
+# Best Practices for Working with Skinned Meshes for Animation {#best-practices-for-working-with-meshes-for-animations}
 
 See the following guidelines when working with skinned meshes for the **Animation Editor**\.
 

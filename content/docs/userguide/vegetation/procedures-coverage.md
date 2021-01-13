@@ -2,7 +2,7 @@
 description: ' Expand your vegetation to cover your level in &ALYlong;. '
 title: Expanding Vegetation Coverage
 ---
-# Expanding Vegetation Coverage<a name="dynamic-vegetation-procedures-coverage"></a>
+# Expanding Vegetation Coverage {#dynamic-vegetation-procedures-coverage}
 
 After you create a vegetation patch, you can expand it so that your vegetation covers the entire level\.
 

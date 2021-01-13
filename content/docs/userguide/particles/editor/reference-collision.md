@@ -3,7 +3,7 @@ description: ' Use the Collision attribute in the &ALYlong; &particle-editor; to
   the physical setup for the particles. '
 title: Collision Attribute
 ---
-# Collision Attribute<a name="particle-editor-reference-collision"></a>
+# Collision Attribute {#particle-editor-reference-collision}
 
 In the **Collision** attribute, specify how to control the particle's physical setup\.
 

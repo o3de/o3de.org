@@ -3,7 +3,7 @@ description: ' Use one of the supported file formats to import a terrain heightm
   into &ALY;. '
 title: Importing a Terrain Heightmap
 ---
-# Importing a Terrain Heightmap<a name="terrain-heightmap-import"></a>
+# Importing a Terrain Heightmap {#terrain-heightmap-import}
 
 In order to support full, 32\-bit heightmap resolution, use one of the following file formats when you import a heightmap file\.
 + `.asc`

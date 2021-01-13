@@ -2,7 +2,7 @@
 description: ' Define how the sun appears in the daytime in &ALYlong;. '
 title: Setting Sun Parameters and Console Variables
 ---
-# Setting Sun Parameters and Console Variables<a name="sky-day-sun-params"></a>
+# Setting Sun Parameters and Console Variables {#sky-day-sun-params}
 
 You can define how the sun appears in the daytime sky\.
 
@@ -10,7 +10,7 @@ You can define how the sun appears in the daytime sky\.
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Time Of Day**\.
 
-1. In the **Parameters** pane, for **Sun**, adjust the [Sun Parameters](/docs/userguide/sky/tod-parameters.md#sun-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Sun**, adjust the [Sun Parameters](/docs/userguide/sky/tod-parameters#sun-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.
 

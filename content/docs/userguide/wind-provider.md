@@ -2,7 +2,7 @@
 description: ' Create global or localized wind forces with PhysX. '
 title: Create global or localized wind forces with PhysX
 ---
-# Create global or localized wind forces with PhysX<a name="wind-provider"></a>
+# Create global or localized wind forces with PhysX {#wind-provider}
 
 You can create global wind forces or wind forces contained within a collider volume with the **PhysX Force Region** component\. Wind forces act on PhysX entities, such as **Cloth**, that can be affected by wind\. 
 

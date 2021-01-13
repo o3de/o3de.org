@@ -3,13 +3,13 @@ description: ' Add the Mask component to an element to reveal parts of the child
   in &ALYlong;. '
 title: Mask
 ---
-# Mask<a name="ui-editor-components-mask"></a>
+# Mask {#ui-editor-components-mask}
 
 You can add a **Mask** component to an element to reveal only those parts of the child elements \(for example, image or text\) that are within the mask visual\. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements\.
 
 **To see in\-game examples of completed canvases with a **Mask** component**
 
-1. [Open the Samples Project](/docs/userguide/configurator/projects.md#project-configurator-launch-projects)\.
+1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
 
 1. When Lumberyard Editor opens, expand the `UI` directory and open the level **UiFeatures**\.
 
@@ -31,7 +31,7 @@ You can open the following canvases:
 + `NestedMasks.uicanvas` – Example of nesting masks\.
 + `TextMask.uicanvas` – Example of using text as the visual component of the mask\.
 
-When you add a **Mask** component, the default mask is the visual component on that element, usually an **Image** component\. If you want to use a nonrectangular mask, you must set this **Image** component to use a texture that contains an [alpha channel](/docs/userguide/ly-glos-chap.md#alpha_channel), which specifies transparent and opaque areas\. The child elements are masked by the mask visual\. This means that the only parts of the child elements that are visible are the parts that are in the mask visual\. In other words, the visible areas of the mask show the child elements, and the transparent areas of the mask visual hide the child elements\. You can use other visual components, such as a **Text** component or **Particle Emitter** component to specify the mask visual\.
+When you add a **Mask** component, the default mask is the visual component on that element, usually an **Image** component\. If you want to use a nonrectangular mask, you must set this **Image** component to use a texture that contains an [alpha channel](/docs/userguide/ly-glos-chap#alpha_channel), which specifies transparent and opaque areas\. The child elements are masked by the mask visual\. This means that the only parts of the child elements that are visible are the parts that are in the mask visual\. In other words, the visible areas of the mask show the child elements, and the transparent areas of the mask visual hide the child elements\. You can use other visual components, such as a **Text** component or **Particle Emitter** component to specify the mask visual\.
 
 You can make the mask movable to use in an animation\. To do so without moving all of its children, you can use a special child element as a mask visual in addition to the visual component on the mask element\. This child mask element can have as many children as you need to draw your mask visual\.
 

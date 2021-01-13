@@ -3,11 +3,11 @@ description: ' Ise the TemplBeamProc shader to create fog-like light beam effect
   in &ALYlong;. '
 title: TemplBeamProc Shader
 ---
-# TemplBeamProc Shader<a name="shader-ref-templbeamproc"></a>
+# TemplBeamProc Shader {#shader-ref-templbeamproc}
 
 The TemplBeamProc shader is used to create inexpensive fog\-like light beam effects, enabling control over beam size and blending\.
 
-## Best Practices<a name="shader-ref-templbeamproc-examples-using"></a>
+## Best Practices {#shader-ref-templbeamproc-examples-using}
 
 The following are some best practices for using this shader:
 + Select the **No Shadow** property under **Advanced**\.
@@ -15,7 +15,7 @@ The following are some best practices for using this shader:
 + Use a simple grayscale texture with no alpha in the **Diffuse** texture map slot\.
 + The shader fades out rendering faces that are at a certain angle to the camera\. As such, use different sub\-materials for the top plane and the intersecting planes to allow control of the angle of visibility\. 
 
-## Shader Parameters<a name="shader-ref-templbeamproc-shader-parameters"></a>
+## Shader Parameters {#shader-ref-templbeamproc-shader-parameters}
 
 **ColorMultiplier**  
 Increases or decreases brightness and blending\.  
@@ -58,7 +58,7 @@ Controls the blending in and out depending on the facing angle to the camera\.
 The higher the value, the longer the effect is visible even when nearly 90° to camera, the smaller the value the earlier the effect starts to vanish\.  
 Default value: 2
 
-## Shader Generation Parameters<a name="shader-ref-templbeamproc-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-templbeamproc-shader-generation-parameters}
 
 **Noise map**  
 Enables the use of a 3D animated noise map, which enables a nice motion to the beams\. However, this motion cannot be controlled by any parameters\.

@@ -2,7 +2,7 @@
 description: ' Specify permissions metadata for &cloud; resource definitions in &ALYlong;. '
 title: Permissions Metadata for Resource Definitions
 ---
-# Permissions Metadata for Resource Definitions<a name="permissions-metadata-for-resource-definitions"></a>
+# Permissions Metadata for Resource Definitions {#permissions-metadata-for-resource-definitions}
 
 To determine what permissions should go into a policy, the `Custom::AccessControl` resource looks for Cloud Canvas permissions metadata on resource definitions in resource group stacks\. In the following example, the metadata on the `Messages` resource gives the `SayHello` AWS Lambda function permission to put items into a Amazon DynamoDB table\. The metadata on the `SayHello` resource gives players permission to invoke the `SayHello` Lambda function\.
 
@@ -69,15 +69,15 @@ To determine what permissions should go into a policy, the `Custom::AccessContro
 ...
 ```
 
-You can use the `lmbr_aws` command line tool to manage permissions metadata on the resource definitions in a resource group's `resource-template.json` file\. For more information, see [Permission Metadata Management](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-permission-metadata-management)\.
+You can use the `lmbr_aws` command line tool to manage permissions metadata on the resource definitions in a resource group's `resource-template.json` file\. For more information, see [Permission Metadata Management](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws#cloud-canvas-rm-security-lmbr-aws-permission-metadata-management)\.
 
-## Properties<a name="cloud-canvas-resource-definitions-permissions-metadata-properties"></a>
+## Properties {#cloud-canvas-resource-definitions-permissions-metadata-properties}
 
 Each Cloud Canvas `Permission` metadata object can have the following properties\.
 +   
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/permissions-metadata-for-resource-definitions.html)
 
-## See Also<a name="cloud-canvas-resource-definitions-permissions-metadata-see-also"></a>
+## See Also {#cloud-canvas-resource-definitions-permissions-metadata-see-also}
 
 For an overview of security in Cloud Canvas Resource Manager, see [Understanding the Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\.

@@ -3,21 +3,21 @@ description: ' Learn about the API calls that the &ALYlong; Message of the Day C
   Gem uses. '
 title: Cloud Gem Message of the Day API Calls
 ---
-# Cloud Gem Message of the Day API Calls<a name="cloud-gem-mod-api"></a>
+# Cloud Gem Message of the Day API Calls {#cloud-gem-mod-api}
 
 The game client and Cloud Gem Portal use Amazon API Gateway to securely invoke service API Lambda functions\. The game client can read messages while the Cloud Gem Portal can add, list, edit, and delete messages\.
 
 ![\[Game client and Cloud Gem Portal call Lambda functions through API Gateway\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-details-diag.png)
 
-## The Game Client Service API Calls: /player/messages<a name="cloud-canvas-cloud-gem-mod-api-game-client"></a>
+## The Game Client Service API Calls: /player/messages {#cloud-canvas-cloud-gem-mod-api-game-client}
 
 The game client read\-message functionality is implemented by the `player_messages.py` file located in the `\dev\Gems\CloudGemMessageOfTheDay\AWS\lambda-function-code\api` directory\.
 
-### get \(Read Messages\)<a name="cloud-canvas-cloud-gem-mod-api-game-client-get"></a>
+### get \(Read Messages\) {#cloud-canvas-cloud-gem-mod-api-game-client-get}
 
 The `get` function reads messages for the player\.
 
-#### Parameters<a name="cloud-canvas-cloud-gem-mod-api-game-client-get-parameters"></a>
+#### Parameters {#cloud-canvas-cloud-gem-mod-api-game-client-get-parameters}
 
 The `get` function has the following parameters\.
 
@@ -28,11 +28,11 @@ The `get` function has the following parameters\.
 }
 ```
 
-#### Description<a name="cloud-canvas-cloud-gem-mod-api-game-client-get-description"></a>
+#### Description {#cloud-canvas-cloud-gem-mod-api-game-client-get-description}
 
 The `get` function returns a list of messages whose `startTime` <= `clientTime` <= `endTime`\.
 
-#### Return Value<a name="cloud-canvas-cloud-gem-mod-api-game-client-get-return-value"></a>
+#### Return Value {#cloud-canvas-cloud-gem-mod-api-game-client-get-return-value}
 
 The `get` function returns a list of messages of the day\.
 
@@ -48,15 +48,15 @@ The `get` function returns a list of messages of the day\.
 }
 ```
 
-## Cloud Gem Portal Admin Service API Calls: /admin/messages<a name="cloud-canvas-cloud-gem-mod-api-admin"></a>
+## Cloud Gem Portal Admin Service API Calls: /admin/messages {#cloud-canvas-cloud-gem-mod-api-admin}
 
 The Cloud Gem Portal message functionality is implemented by code in the `admin_messages.py` file located in the `\dev\Gems\CloudGemMessageOfTheDay\AWS\lambda-function-code\api` directory\.
 
-### post \(Add Message\)<a name="cloud-canvas-cloud-gem-mod-api-admin-post"></a>
+### post \(Add Message\) {#cloud-canvas-cloud-gem-mod-api-admin-post}
 
 The `post` function adds a message of the day\.
 
-#### Parameters<a name="cloud-canvas-cloud-gem-mod-api-admin-post-parameters"></a>
+#### Parameters {#cloud-canvas-cloud-gem-mod-api-admin-post-parameters}
 
 The `post` function has the following parameters\.
 
@@ -69,15 +69,15 @@ The `post` function has the following parameters\.
 }
 ```
 
-#### Description<a name="cloud-canvas-cloud-gem-mod-api-admin-post-description"></a>
+#### Description {#cloud-canvas-cloud-gem-mod-api-admin-post-description}
 
 The `post` function adds a message entry to the main table in DynamoDB and returns a `UniqueMsgID` string\.
 
-### put \(Edit Message\)<a name="cloud-canvas-cloud-gem-mod-api-admin-put"></a>
+### put \(Edit Message\) {#cloud-canvas-cloud-gem-mod-api-admin-put}
 
 The `put` function edits an existing message\.
 
-#### Parameters<a name="cloud-canvas-cloud-gem-mod-api-admin-put-parameters"></a>
+#### Parameters {#cloud-canvas-cloud-gem-mod-api-admin-put-parameters}
 
 The `put` function has the following parameters\.
 
@@ -91,19 +91,19 @@ The `put` function has the following parameters\.
 }
 ```
 
-#### Description<a name="cloud-canvas-cloud-gem-mod-api-admin-put-description"></a>
+#### Description {#cloud-canvas-cloud-gem-mod-api-admin-put-description}
 
 The `put` function updates the message in the main table that matches the specified message ID\. To update the message, the function overwrites its attributes\. You can also use the `put` function to reschedule and reprioritize a message by updating the start time, end time, and priority values\.
 
-#### Return Value<a name="cloud-canvas-cloud-gem-mod-api-admin-put-return-value"></a>
+#### Return Value {#cloud-canvas-cloud-gem-mod-api-admin-put-return-value}
 
 The `put` function returns a string that indicates the result status of the operation\.
 
-### delete \(Delete Message\)<a name="cloud-canvas-cloud-gem-mod-api-admin-delete"></a>
+### delete \(Delete Message\) {#cloud-canvas-cloud-gem-mod-api-admin-delete}
 
 The `delete` function deletes the specified message\.
 
-#### Parameters<a name="cloud-canvas-cloud-gem-mod-api-admin-delete-parameters"></a>
+#### Parameters {#cloud-canvas-cloud-gem-mod-api-admin-delete-parameters}
 
 The `delete` function has the following parameters\.
 
@@ -113,19 +113,19 @@ The `delete` function has the following parameters\.
 }
 ```
 
-#### Description<a name="cloud-canvas-cloud-gem-mod-api-admin-delete-description"></a>
+#### Description {#cloud-canvas-cloud-gem-mod-api-admin-delete-description}
 
 Deletes the message from the main table that matches the specified message ID\.
 
-#### Return Value<a name="cloud-canvas-cloud-gem-mod-api-admin-delete-return-value"></a>
+#### Return Value {#cloud-canvas-cloud-gem-mod-api-admin-delete-return-value}
 
 The `delete` function returns a string that indicates the result status of the operation\.
 
-### get \(List Messages\)<a name="cloud-canvas-cloud-gem-mod-api-admin-get"></a>
+### get \(List Messages\) {#cloud-canvas-cloud-gem-mod-api-admin-get}
 
 The `get` function retrieves a list of messages of the day\.
 
-#### Parameters<a name="cloud-canvas-cloud-gem-mod-api-admin-get-parameters"></a>
+#### Parameters {#cloud-canvas-cloud-gem-mod-api-admin-get-parameters}
 
 The `get` function has the following parameters\.
 
@@ -137,11 +137,11 @@ The `get` function has the following parameters\.
 }
 ```
 
-#### Description<a name="cloud-canvas-cloud-gem-mod-api-admin-get-description"></a>
+#### Description {#cloud-canvas-cloud-gem-mod-api-admin-get-description}
 
 The `get` function returns the filtered count of entries in the table, including all fields starting at the specified index\.
 
-#### Return Value<a name="cloud-canvas-cloud-gem-mod-api-admin-get-return-value"></a>
+#### Return Value {#cloud-canvas-cloud-gem-mod-api-admin-get-return-value}
 
 The `get` function returns a list of messages of the day in the following format\.
 

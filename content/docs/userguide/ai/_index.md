@@ -2,7 +2,7 @@
 description: ' See the following AI system concepts and terms in &ALYlong;. '
 title: AI System Concepts
 ---
-# AI System Concepts<a name="ai-concepts"></a>
+# AI System Concepts {#ai-concepts}
 
 
 ****  

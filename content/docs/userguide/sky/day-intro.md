@@ -3,7 +3,7 @@ description: ' Use sun settings, atmospheric properties, sun ray effects, and su
   shadows to create a dynamic daytime sky. '
 title: Creating a Dynamic Daytime Sky
 ---
-# Creating a Dynamic Daytime Sky<a name="sky-day-intro"></a>
+# Creating a Dynamic Daytime Sky {#sky-day-intro}
 
 To add a dynamic daytime sky, you adjust various sun parameters, atmospheric properties, sun ray effect, and sun shadows\. Dynamic skies use the [SkyHDR Shader](/docs/userguide/shaders/skyhdr.md)\.
 

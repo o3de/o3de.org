@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; UISpawner component to spawn a runtime dynamic 
   at an entity''s location with an optional offset. '
 title: UISpawner Component
 ---
-# UISpawner Component<a name="ui-editor-components-spawner"></a>
+# UISpawner Component {#ui-editor-components-spawner}
 
 Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/userguide/ui/editor/working-slices.md) \(\*\.`dynamicslice`\) at an entity's location with an optional offset\. In combination with scripting, you can use the **UISpawner** component to spawn any dynamic slice at any time and to spawn multiple instances of the same dynamic slice\.
 
@@ -27,7 +27,7 @@ Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/usergui
   + [OnTopLevelEntitiesSpawned](#ui-editor-components-spawner-notification-bus-ontoplevelentitiesspawned)
   + [OnSpawnFailed](#ui-editor-components-spawner-notification-bus-on-spawn-failed)
 
-## Example UISpawner Component<a name="ui-spawner-component-example"></a>
+## Example UISpawner Component {#ui-spawner-component-example}
 
 You can view a canvas with the **UISpawner** component in Samples Project\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
 
@@ -51,7 +51,7 @@ You can also view the example canvases in the **UI Editor**\.
 
 1. Select a file and click **Open**\.
 
-## UISpawner Component Properties<a name="ui-editor-components-spawner-properties"></a>
+## UISpawner Component Properties {#ui-editor-components-spawner-properties}
 
 The **UISpawner** component has the following properties:
 
@@ -61,13 +61,13 @@ Select the slice asset to spawn\.
 ****Spawn on Activate****  
 If selected, spawns the selected slice upon activation\.
 
-## EBus Request Bus Interface<a name="ui-editor-components-spawner-ebus"></a>
+## EBus Request Bus Interface {#ui-editor-components-spawner-ebus}
 
 Use the following request functions with the **UiSpawnerBus** EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### Spawn<a name="ui-editor-components-spawner-ebus-spawn"></a>
+### Spawn {#ui-editor-components-spawner-ebus-spawn}
 
 Spawns the UI slice specified in the component at the entity's location\.
 
@@ -80,7 +80,7 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 Yes
 
-### SpawnRelative<a name="ui-editor-components-spawner-ebus-spawnrelative"></a>
+### SpawnRelative {#ui-editor-components-spawner-ebus-spawnrelative}
 
 Spawns the UI slice specified in the component at the entity's location with the specified relative offset\.
 
@@ -93,7 +93,7 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 Yes
 
-### SpawnViewport<a name="ui-editor-components-spawner-ebus-spawnviewport"></a>
+### SpawnViewport {#ui-editor-components-spawner-ebus-spawnviewport}
 
 Spawns the slice specified in the component at the specified viewport position\.
 
@@ -106,7 +106,7 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 Yes
 
-### SpawnSlice<a name="ui-editor-components-spawner-ebus-spawnslice"></a>
+### SpawnSlice {#ui-editor-components-spawner-ebus-spawnslice}
 
 Spawns the specified slice at the entity's location\.
 
@@ -119,7 +119,7 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 No
 
-### SpawnSliceRelative<a name="ui-editor-components-spawner-ebus-spawnslicerelative"></a>
+### SpawnSliceRelative {#ui-editor-components-spawner-ebus-spawnslicerelative}
 
 Spawns the given slice at the entity's location with the relative offset\.
 
@@ -133,7 +133,7 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 No
 
-### SpawnSliceViewport<a name="ui-editor-components-spawner-ebus-spawnsliceviewport"></a>
+### SpawnSliceViewport {#ui-editor-components-spawner-ebus-spawnsliceviewport}
 
 Spawns the specified slice at the specified viewport position\.
 
@@ -147,13 +147,13 @@ The slice instantiation ticket for this spawn\.
 **Scriptable**  
 Yes
 
-## EBus Notification Bus Interface<a name="ui-editor-components-spawner-notification-bus"></a>
+## EBus Notification Bus Interface {#ui-editor-components-spawner-notification-bus}
 
 Use the following notification functions with the UiSpawnerNotificationBus EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### OnSpawnBegin<a name="ui-editor-components-spawner-notification-bus-onspawnbegin"></a>
+### OnSpawnBegin {#ui-editor-components-spawner-notification-bus-onspawnbegin}
 
 Announces that the slice has been spawned, but entities have not yet been activated\. [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events are about to be dispatched\.
 
@@ -163,7 +163,7 @@ Announces that the slice has been spawned, but entities have not yet been activa
 **Scriptable**  
 Yes
 
-### OnSpawnEnd<a name="ui-editor-components-spawner-notification-bus-onspawnend"></a>
+### OnSpawnEnd {#ui-editor-components-spawner-notification-bus-onspawnend}
 
 Announces that a slice has been spawned\. This function is called once for each spawn request\. All [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events have been dispatched\. 
 
@@ -173,7 +173,7 @@ Announces that a slice has been spawned\. This function is called once for each 
 **Scriptable**  
 Yes
 
-### OnEntitySpawned<a name="ui-editor-components-spawner-notification-bus-onentityspawned"></a>
+### OnEntitySpawned {#ui-editor-components-spawner-notification-bus-onentityspawned}
 
 Announces that an entity has been created during a spawn\. This function is called once for each entity created while spawning a slice\.
 
@@ -184,7 +184,7 @@ Announces that an entity has been created during a spawn\. This function is call
 **Scriptable**  
 Yes
 
-### OnEntitiesSpawned<a name="ui-editor-components-spawner-notification-bus-onentitiesspawned"></a>
+### OnEntitiesSpawned {#ui-editor-components-spawner-notification-bus-onentitiesspawned}
 
 Provides the list of all entities that were created during a spawn\. This function is called only once for each spawn request\. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call\. 
 
@@ -195,7 +195,7 @@ Provides the list of all entities that were created during a spawn\. This functi
 **Scriptable**  
 Yes
 
-### OnTopLevelEntitiesSpawned<a name="ui-editor-components-spawner-notification-bus-ontoplevelentitiesspawned"></a>
+### OnTopLevelEntitiesSpawned {#ui-editor-components-spawner-notification-bus-ontoplevelentitiesspawned}
 
 Provides the list of all top\-level entities that were created during a spawn\. This function is called only once for each spawn request\. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call\.
 
@@ -208,7 +208,7 @@ Top\-level entities are entities that do not have any parent within the slice\. 
 **Scriptable**  
 Yes
 
-### OnSpawnFailed<a name="ui-editor-components-spawner-notification-bus-on-spawn-failed"></a>
+### OnSpawnFailed {#ui-editor-components-spawner-notification-bus-on-spawn-failed}
 
 Announces that a spawn request has failed\.
 

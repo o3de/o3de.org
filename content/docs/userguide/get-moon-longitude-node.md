@@ -3,7 +3,7 @@ description: ' Use the Get Moon Longitude node in the &ALYlong; &script-canvas; 
   to return the moon longitude. '
 title: Get Moon Longitude
 ---
-# Get Moon Longitude<a name="get-moon-longitude-node"></a>
+# Get Moon Longitude {#get-moon-longitude-node}
 
 Returns the moon's longitude in the sky\.
 
@@ -13,7 +13,7 @@ Returns the moon's longitude in the sky\.
 
 ![\[moonlongitude, getmoonlongitude, moonlongitudenode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-moon-longitude-node.png)
 
-## Inputs<a name="get-moon-longitude-node-input"></a>
+## Inputs {#get-moon-longitude-node-input}
 
 
 ****  
@@ -22,7 +22,7 @@ Returns the moon's longitude in the sky\.
 | --- | --- | --- | 
 | In | Event | Triggers the node\. | 
 
-## Outputs<a name="get-moon-longitude-node-output"></a>
+## Outputs {#get-moon-longitude-node-output}
 
 
 ****  

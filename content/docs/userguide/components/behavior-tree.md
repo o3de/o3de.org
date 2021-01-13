@@ -3,11 +3,11 @@ description: ' Use the Behavior Tree component to load and run a behavior tree f
   the attached entity in &ALYlong;. '
 title: Behavior Tree
 ---
-# Behavior Tree<a name="component-behavior-tree"></a>
+# Behavior Tree {#component-behavior-tree}
 
 Use the **Behavior Tree** component to load and run a [Modular Behavior Tree Node Reference](/docs/userguide/ai/scripting/mbt-nodes.md) for the attached entity\.
 
-## Behavior Tree Component Properties<a name="component-behavior-tree-properties"></a>
+## Behavior Tree Component Properties {#component-behavior-tree-properties}
 
 The **Behavior Tree** component has the following properties:
 
@@ -17,13 +17,13 @@ Select an `XML` file that contains a behavior tree definition\.
 **Enabled initially**  
 When selected, the behavior tree is loaded and activated with the entity\.
 
-## EBus Request Bus Interface<a name="component-behavior-tree-ebusrequest"></a>
+## EBus Request Bus Interface {#component-behavior-tree-ebusrequest}
 
 Use the following request functions with the event bus \(EBus\) interface, `BehaviorTreeComponentRequestBus`, to communicate with other components of your game\.
 
 For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-### StartBehaviorTree<a name="navigation-ebus-startbehaviortree"></a>
+### StartBehaviorTree {#navigation-ebus-startbehaviortree}
 
 Starts an inactive behavior tree associated with this entity\.
 
@@ -36,7 +36,7 @@ None
 **Scriptable**  
 Yes
 
-### StopBehaviorTree<a name="navigation-ebus-stopbehaviortree"></a>
+### StopBehaviorTree {#navigation-ebus-stopbehaviortree}
 
 Stops an active behavior tree associated with this entity\.
 
@@ -49,7 +49,7 @@ None
 **Scriptable**  
 Yes
 
-### GetVariableNameCrcs<a name="navigation-ebus-getvariablenamecrcs"></a>
+### GetVariableNameCrcs {#navigation-ebus-getvariablenamecrcs}
 
 Gets a list of all `crc32s` of the variable names\.
 
@@ -62,7 +62,7 @@ None
 **Scriptable**  
 Yes
 
-### GetVariableValue<a name="navigation-ebus-getvariablevalue"></a>
+### GetVariableValue {#navigation-ebus-getvariablevalue}
 
 Gets the value associated with a variable\.
 
@@ -75,7 +75,7 @@ Gets the value associated with a variable\.
 **Scriptable**  
 Yes
 
-### SetVariableValue<a name="navigation-ebus-setvariablevalue"></a>
+### SetVariableValue {#navigation-ebus-setvariablevalue}
 
 Sets the value associated with a variable\.
 

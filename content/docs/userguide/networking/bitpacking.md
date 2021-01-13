@@ -2,11 +2,11 @@
 description: ' Use bit packing to optimize network payloads in &ALYlong;. '
 title: Using Bit Packing in &ALY; Networking
 ---
-# Using Bit Packing in Lumberyard Networking<a name="network-bitpacking"></a>
+# Using Bit Packing in Lumberyard Networking {#network-bitpacking}
 
 Most built\-in C\+\+ types use more than one byte in memory\. Even a Boolean value uses one byte\. On some operating systems, it can use more\. However, the Lumberyard networking system, GridMate, optimizes networking traffic by tightly packing your data into the network payload\.
 
-## Boolean Values<a name="network-bitpacking-boolean-values"></a>
+## Boolean Values {#network-bitpacking-boolean-values}
 
 GridMate is intelligent enough to pack a Boolean value into a single bit\. For example, if a replica chunk contains several Boolean fields, each field uses a single bit during network transmission\. In the following example, GridMate serializes the payload for `MyChunk` into just three bits\.
 
@@ -24,11 +24,11 @@ public:
 **Tip**  
 Using `AZStd::bitset` is unnecessary and is often less efficient\. Because `AZStd::bitset` writes its payload in full bytes, packing one Boolean or eight Booleans into `AZStd::bitset` takes a whole byte\. It is better to use `DataSet<bool>` instead of `DataSet<AZStd::bitset>`\.
 
-## Implementing Bit Packing for a Custom Class<a name="network-bitpacking-custom-class"></a>
+## Implementing Bit Packing for a Custom Class {#network-bitpacking-custom-class}
 
 The following steps show you how to implement bit packing for a custom class\.
 
-### 1\. Declare an Integer Variable That Uses Only the Required Number of Bits<a name="network-bitpacking-custom-class-declare-an-integer-variable-bits"></a>
+### 1\. Declare an Integer Variable That Uses Only the Required Number of Bits {#network-bitpacking-custom-class-declare-an-integer-variable-bits}
 
 If you have some custom types that you want to pack efficiently, declare an integer variable that uses only the required number of bits\. The following simple example declares a `flags` variable for storing flags in a bit field\.
 
@@ -39,7 +39,7 @@ struct CustomClass
 };
 ```
 
-### 2\. Provide a Custom Marshaler<a name="network-bitpacking-custom-class-provide-a-custom-marshaler"></a>
+### 2\. Provide a Custom Marshaler {#network-bitpacking-custom-class-provide-a-custom-marshaler}
 
 For best results, provide a custom marshaler as in the following example:
 
@@ -61,7 +61,7 @@ void Unmarshal(CustomClass& value, ReadBuffer& rb) const
 };
 ```
 
-### 3\. Pass the Marshaler Type as a `DataSet` Argument<a name="network-bitpacking-custom-class-pass-the-marshaler-type"></a>
+### 3\. Pass the Marshaler Type as a `DataSet` Argument {#network-bitpacking-custom-class-pass-the-marshaler-type}
 
 Now, when you declare a `DataSet` for a `CustomClass` variable, you can simply pass the marshaler type into the template arguments for `DataSet`\. The following example shows the syntax\.
 
@@ -71,7 +71,7 @@ DataSet<CustomClass, MarshalerCustomClass> m_value;
 
 In this implementation, the example uses a total of only 4 bits to serialize `CustomClass`\.
 
-### 4\. Read and Write Data at the Bit Level<a name="network-bitpacking-custom-class-read-write-at-bit-level"></a>
+### 4\. Read and Write Data at the Bit Level {#network-bitpacking-custom-class-read-write-at-bit-level}
 
 The following example shows how `ReadBuffer` supports direct control over reading data at the bit level\.
 

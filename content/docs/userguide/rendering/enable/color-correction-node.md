@@ -3,7 +3,7 @@ description: ' Use the Enable Color Correction node in the &ALYlong; &script-can
   editor to set color correction parameters. '
 title: Enable Color Correction
 ---
-# Enable Color Correction<a name="enable-color-correction-node"></a>
+# Enable Color Correction {#enable-color-correction-node}
 
 Sets color correction parameters\. You can use this node to specify the CMYK, brightness, contrast, saturation, and hue in a scene\. Most color correction properties aren't updated smoothly, so it's recommended that you hide stronger color correction changes with cuts or fading between scenes\.
 
@@ -22,7 +22,7 @@ In the following example, the **Saturation** value is `2.0`\.
 
 ![\[Use the Enable Color Correction node to change colors for your screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-color-correcton-node-example.png)
 
-## Inputs<a name="enable-color-correction-node-input"></a>
+## Inputs {#enable-color-correction-node-input}
 
 
 ****  
@@ -39,7 +39,7 @@ In the following example, the **Saturation** value is `2.0`\.
 | Saturation | Number | Adjusts saturation to enhance the color intensity of the scene\. | 
 | Hue | Number | Adjusts hue to enhance the color globally\. | 
 
-## Outputs<a name="enable-color-correction-node-output"></a>
+## Outputs {#enable-color-correction-node-output}
 
 
 ****  

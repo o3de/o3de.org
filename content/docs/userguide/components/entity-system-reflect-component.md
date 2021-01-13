@@ -2,7 +2,7 @@
 description: ' Learn how to reflect &ALY; components in C++. '
 title: Reflecting a Component for Serialization and Editing
 ---
-# Reflecting a Component for Serialization and Editing<a name="component-entity-system-reflect-component"></a>
+# Reflecting a Component for Serialization and Editing {#component-entity-system-reflect-component}
 
 Components use AZ reflection to describe the data they serialize and how content creators interact with them\.
 
@@ -111,7 +111,7 @@ The following code dynamically casts the anonymous context provided to a seriali
 AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
 ```
 
-## Serialization<a name="component-entity-system-reflect-component-serialization"></a>
+## Serialization {#component-entity-system-reflect-component-serialization}
 
  Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C\+\+, as follows:
 
@@ -142,7 +142,7 @@ The example omits the reflection code for `SomeClassThatSomeoneHasReflected`\. H
 
 For C\+\+ API reference documentation on the serialize context, see the [SerializeContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_serialize_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
-## Editing<a name="component-entity-system-reflect-component-editing"></a>
+## Editing {#component-entity-system-reflect-component-editing}
 
 When you run Lumberyard tools such as Lumberyard Editor, an `EditContext` and a `SerializeContext` are provided\. You can use the robust facilities in these contexts to expose your fields to content creators\. 
 
@@ -183,7 +183,7 @@ The property system supports external UI handlers, so you can implement your own
 
 For C\+\+ API reference documentation on the edit context, see the [EditContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_edit_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
-## Attributes<a name="component-entity-system-reflect-component-attributes"></a>
+## Attributes {#component-entity-system-reflect-component-attributes}
 
 The example also demonstrates the use of attributes\. Attributes are a generic construct on the edit context that allows the binding of literals, or functions that return values, to a named attribute\. UI handlers can retrieve this data and use it to drive their functionality\. 
 
@@ -204,7 +204,7 @@ Static or global functions
 Member functions   
 `Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::SomeMemberFunction)`
 
-## Change Notification Callbacks<a name="component-entity-system-reflect-component-callbacks"></a>
+## Change Notification Callbacks {#component-entity-system-reflect-component-callbacks}
 
 Another commonly used feature of the edit context is its ability to bind a change notification callback: 
 

@@ -3,7 +3,7 @@ description: Configure font properties such as asset path and effects for your g
   UI in &ALYlong;.
 title: Configuring Font Properties
 ---
-# Configuring Font Properties<a name="ui-fonts-properties"></a>
+# Configuring Font Properties {#ui-fonts-properties}
 
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage\.
 
@@ -47,7 +47,7 @@ Use the following tags, attributes, and values to define key features of your fo
 | pos or offset | A text effect that is a child tag of the pass tag\. Sets the position of the text\. |  Uses the following attributes to set text position with integer values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html)  | 
 | blend or blending | A text effect that is a child tag of the pass tag\. Defines alpha blending behavior of the text\. | Uses the following attributes to define the text's alpha blending behavior: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html) Uses the following values for the `src` and `dst` attributes: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html) Uses the following values for the `type` attribute: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html)  | 
 
-## Font Tag Attributes<a name="tag-font-attributes"></a>
+## Font Tag Attributes {#tag-font-attributes}
 
 `Font` tag attributes define critical attributes for a font, such as the path to the TTF/OTF asset used to display the font, and other attributes affecting font render quality\.
 

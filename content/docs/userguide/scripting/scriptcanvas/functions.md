@@ -3,7 +3,7 @@ description: ' Create reusable functions in &script-canvas; that can be inserted
   other graphs as nodes. '
 title: '&script-canvas; Functions'
 ---
-# Script Canvas Functions<a name="script-canvas-functions"></a>
+# Script Canvas Functions {#script-canvas-functions}
 
 The Script Canvas editor enables you to create reusable graphs, called functions\. A function is available for use as a node in your Script Canvas graphs\. Similar to functions in traditional programming languages, functions in the Script Canvas editor promote code reuse and abstraction\. They help simplify your graphs by replacing a group of nodes that perform a specific task with one function node\. For example, you could move a series of nodes that perform linear interpolation into a function called Interpolate, and move nodes that perform acceleration clamping into a function called ClampAcceleration\. Additionally, if you're using this functionality in multiple graphs, functions make updates easier because you need to make changes only in one place\.
 
@@ -16,7 +16,7 @@ When you create a function, you define the input and output variables of that fu
 + [Using a Script Canvas Function in a Graph](#script-canvas-using-functions)
 + [Function Example: Linear Interpolation](#script-canvas-example-linear-interpolation)
 
-## Creating a Script Canvas Function<a name="script-canvas-creating-functions"></a>
+## Creating a Script Canvas Function {#script-canvas-creating-functions}
 
 Start creating a new function by choosing **File**, **New Function** in the Script Canvas editor\.
 
@@ -51,7 +51,7 @@ The scope of a variable determines if and where the variable will appear on the 
 | Out | Output slot | This is a result variable\. The function returns its value as a result\. | 
 | In / Out | Both sides | This is an input parameter that can be modified by the function and returned as a result\. | 
 
-## Using a Script Canvas Function in a Graph<a name="script-canvas-using-functions"></a>
+## Using a Script Canvas Function in a Graph {#script-canvas-using-functions}
 
 Once a Script Canvas function has been saved, it automatically shows up in the **Node Palette**, under **Global Functions**\. The default directory for new functions is your project's `scriptcanvas\functions` directory\. If you save them in a subdirectory, or save them under a different project directory, the directory structure is used to categorize the functions within **Global Functions**\.
 
@@ -59,7 +59,7 @@ Using a function is just like using any other node in Script Canvas\. Simply dra
 
 ![\[Drag and drop functions from the Node Palette, under the Global Functions category, onto your graph.\]](/images/userguide/scripting/script-canvas/script-canvas-function-use-node.gif)
 
-## Function Example: Linear Interpolation<a name="script-canvas-example-linear-interpolation"></a>
+## Function Example: Linear Interpolation {#script-canvas-example-linear-interpolation}
 
 In this example, we create a linear interpolation function\. This function is represented by the formula: *Result = Start \+ Time \* \(End \- Start\)*\.
 

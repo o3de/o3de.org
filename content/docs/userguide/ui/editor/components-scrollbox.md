@@ -3,7 +3,7 @@ description: ' Use a scroll box component to present content, such as images or 
   within a scrollable area in &ALY;''s &ui-canvas-editor;. '
 title: ScrollBox
 ---
-# ScrollBox<a name="ui-editor-components-scrollbox"></a>
+# ScrollBox {#ui-editor-components-scrollbox}
 
 You can use a **ScrollBox** component to present content, such as images or text, within a scrollable area\.
 

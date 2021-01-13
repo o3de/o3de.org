@@ -2,7 +2,7 @@
 description: ' Specify decal parameters for materials in &ALYlong;. '
 title: Working with Decals
 ---
-# Working with Decals<a name="mat-maps-decal-intro"></a>
+# Working with Decals {#mat-maps-decal-intro}
 
 Decals are non\-repeating images or textures that are applied to the surface of an object or terrain with a specified projection\. Common examples of decals are product labels and logos, artwork for walls, signs, and surface cracks\. 
 

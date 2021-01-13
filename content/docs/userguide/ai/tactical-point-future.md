@@ -2,7 +2,7 @@
 description: ' See the following potential areas to develop TPS in &ALYlong;. '
 title: Future Plans and Possibilities
 ---
-# Future Plans and Possibilities<a name="ai-tactical-point-future"></a>
+# Future Plans and Possibilities {#ai-tactical-point-future}
 
 The following topics represent potential areas of development for TPS\.
 

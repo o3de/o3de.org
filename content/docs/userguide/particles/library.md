@@ -2,7 +2,7 @@
 description: ' Add and manage particle libraries with the &ALY; &particle-editor;. '
 title: Managing Particle Libraries
 ---
-# Managing Particle Libraries<a name="particle-library"></a>
+# Managing Particle Libraries {#particle-library}
 
 Particle libraries are `.xml` assets that contain the data for all effects in the library\. The `.xml` files are located in the `\game_project_name\libs\particles` directory\.
 

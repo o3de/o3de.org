@@ -2,11 +2,11 @@
 description: ' Use Lua script to configure network binding of properties in &ALYlong;. '
 title: Network Binding Properties
 ---
-# Network Binding Properties<a name="lua-script-networking-binding"></a>
+# Network Binding Properties {#lua-script-networking-binding}
 
 For network binding features to function, you must have a [Creating a NetBindable Component](/docs/userguide/networking/replicas-binding.md)\.
 
-## Properties<a name="lua-script-networking-binding-properties"></a>
+## Properties {#lua-script-networking-binding-properties}
 
 You can configure networking binding for properties by adding the `netSynched` table to the description of the variable inside of the `Properties` table\.
 
@@ -43,7 +43,7 @@ return ExampleScript
 
 After you add networking to a property, any changes to the property are reflected across the network\.
 
-## RPCs<a name="lua-script-networking-binding-rpcs"></a>
+## RPCs {#lua-script-networking-binding-rpcs}
 
 Exposing RPCs to scripts involves creating a new table inside of the component table, but outside of the properties table, as shown in the following example\.
 

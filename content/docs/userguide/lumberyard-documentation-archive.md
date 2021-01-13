@@ -2,7 +2,7 @@
 description: ' PDF files are available for earlier versions of &ALYlong; documentation. '
 title: Documentation Archive
 ---
-# Documentation Archive<a name="lumberyard-documentation-archive"></a>
+# Documentation Archive {#lumberyard-documentation-archive}
 
 Lumberyard documentation is available in PDF format for the following versions\.
 

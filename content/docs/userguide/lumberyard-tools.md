@@ -2,7 +2,7 @@
 description: ' This section describes the &ALY;''s editors and tools. '
 title: '&ALY; Editors and Tools'
 ---
-# Lumberyard Editors and Tools<a name="lumberyard-tools"></a>
+# Lumberyard Editors and Tools {#lumberyard-tools}
 
 
 ****  

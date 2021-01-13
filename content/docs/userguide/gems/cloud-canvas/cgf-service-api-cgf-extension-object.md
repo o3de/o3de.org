@@ -3,7 +3,7 @@ description: ' Learn how &ALYlong;''s Cloud Gem Framework swagger extension obje
   facilitates the use of &ABP; for use with &LAMlong;. '
 title: Cloud Gem Framework Extension Object
 ---
-# Cloud Gem Framework Extension Object<a name="cloud-canvas-cgf-service-api-cgf-extension-object"></a>
+# Cloud Gem Framework Extension Object {#cloud-canvas-cgf-service-api-cgf-extension-object}
 
 The swagger specification allows tools like the Cloud Gem Framework and API Gateway to define [extension objects](http://swagger.io/specification/#vendorExtensions)\. These objects allow the `swagger.json` file to provide custom configuration data for the tool\. The extension object that the Cloud Gem Framework uses is `x-amazon-cloud-canvas-lambda-dispatch`\. This extension object simplifies the configuration of API Gateway for use with an AWS Lambda function\.
 
@@ -22,7 +22,7 @@ The `x-amazon-cloud-canvas-lambda-dispatch` object supports the following proper
 
 See the API Gateway documentation for more information about [mapping templates](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html)\.
 
-## Upload Processing<a name="cloud-canvas-cgf-service-api-cgf-extension-object-upload-processing"></a>
+## Upload Processing {#cloud-canvas-cgf-service-api-cgf-extension-object-upload-processing}
 
 Before the `swagger.json` file is uploaded to API Gateway, the `x-amazon-cloud-canvas-lambda-dispatch` extension objects in the file are processed\. This produces the [https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions.html#api-gateway-swagger-extensions-integration](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions.html#api-gateway-swagger-extensions-integration) extension objects that configure API Gateway to call your cloud gem's AWS Lambda function\.
 
@@ -46,7 +46,7 @@ The default `swagger.json` file provided by the Cloud Gem Framework contains the
 When the `swagger.json` file is processed, an `x-amazon-apigateway-integration` object is added to every swagger operation object that does not have one\. These objects have the following properties:
 + **`type`** – Specify `AWS` to enable AWS Lambda function integration\.
 + **`uri`** – Construct the URI of the Lambda function with the value of the `x-amazon-cloud-canvas-lambda-dispatch` object's `lambda` property\.
-+ **`credentials`** – The `Custom::ServiceApi` resource creates the ARN of a role\. The role has a policy that is described in [Access Control](/docs/userguide/gems/cloud-canvas/cgf-service-api-security.md#cloud-canvas-cgf-service-api-security-access-control)\.
-+ **`requestTemplates`** – A `application/json` template that causes a request as described in [Default Request Mapping](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations.md#cloud-canvas-cgf-service-api-operations-default-request-mapping)\. You can include additional content by using the `x-amazon-cloud-canvas-lambda-dispatch` object's `additional-request-template-content` property\. This property can be used to pass other values, such as those defined by the `$context` object, to the Lambda function\. The additional request template content should start with a `','` \(and for consistent formatting, should start with `',\n '` and use `',\n '` between properties\)\.
-+ **`responses`** Specifies – `application/json` templates for 200 \(success\), 400 \(client error\) and 500 \(service error\) responses as described in [Default Response Mapping](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations.md#cloud-canvas-cgf-service-api-operations-default-response-mapping)\. The 400 and 500 responses are inserted into the swagger responses object\. However, you should define a 200 response that specifies a scheme that describes the data that the operation returns\.
++ **`credentials`** – The `Custom::ServiceApi` resource creates the ARN of a role\. The role has a policy that is described in [Access Control](/docs/userguide/gems/cloud-canvas/cgf-service-api-security#cloud-canvas-cgf-service-api-security-access-control)\.
++ **`requestTemplates`** – A `application/json` template that causes a request as described in [Default Request Mapping](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations#cloud-canvas-cgf-service-api-operations-default-request-mapping)\. You can include additional content by using the `x-amazon-cloud-canvas-lambda-dispatch` object's `additional-request-template-content` property\. This property can be used to pass other values, such as those defined by the `$context` object, to the Lambda function\. The additional request template content should start with a `','` \(and for consistent formatting, should start with `',\n '` and use `',\n '` between properties\)\.
++ **`responses`** Specifies – `application/json` templates for 200 \(success\), 400 \(client error\) and 500 \(service error\) responses as described in [Default Response Mapping](/docs/userguide/gems/cloud-canvas/cgf-service-api-operations#cloud-canvas-cgf-service-api-operations-default-response-mapping)\. The 400 and 500 responses are inserted into the swagger responses object\. However, you should define a 200 response that specifies a scheme that describes the data that the operation returns\.
 + Additional properties as specified by the `x-amazon-apigateway-integration-properties` property\.

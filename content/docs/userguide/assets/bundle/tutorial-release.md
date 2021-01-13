@@ -2,7 +2,7 @@
 description: ' Bundle assets and release your &ALYlong; project. '
 title: Build and bundle assets for release in &ALY;
 ---
-# Build and bundle assets for release in Lumberyard<a name="asset-bundler-tutorial-release"></a>
+# Build and bundle assets for release in Lumberyard {#asset-bundler-tutorial-release}
 
  This tutorial guides you through the process of building the code and assets to release a Lumberyard project, using the [Starter Game sample project](/docs/userguide/samples/levels/starter-game.md)\. You'll learn how to:
 + Create a release build of your game's executable\.
@@ -12,14 +12,14 @@ title: Build and bundle assets for release in &ALY;
 + Create bundled content using the asset bundling system\.
 + Run a stand\-alone release build for your project\.
 
-## Prerequisites<a name="asset-bundler-tutorial-release-prerequisites"></a>
+## Prerequisites {#asset-bundler-tutorial-release-prerequisites}
 
 To complete the procedures in this tutorial, you need the following: 
 + Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/userguide/assets/bundle/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
-## Configure Lumberyard to build the Starter Game project<a name="asset-bundler-tutorial-release-create-project"></a>
+## Configure Lumberyard to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
 
 1. Open the Amazon Lumberyard Project Configurator\.
 
@@ -34,7 +34,7 @@ To complete the procedures in this tutorial, you need the following:
    lmbr_waf configure
    ```
 
-## Create a release build<a name="asset-bundler-tutorial-release-create-release"></a>
+## Create a release build {#asset-bundler-tutorial-release-create-release}
 
 1. Open a command prompt and navigate to the Lumberyard install root directory\.
 
@@ -52,7 +52,7 @@ To complete the procedures in this tutorial, you need the following:
    lmbr_waf build_win_x64_vs2019_release -p game_and_engine
    ```
 
-## Create a directory structure for the game release<a name="asset-bundler-tutorial-release-build-directory"></a>
+## Create a directory structure for the game release {#asset-bundler-tutorial-release-build-directory}
 
 1. Open a command prompt and navigate to the Lumberyard install root directory\. 
 
@@ -86,7 +86,7 @@ To complete the procedures in this tutorial, you need the following:
 
    The remaining steps in this tutorial show how to build and copy your game data to this directory\.
 
-## Export level data<a name="asset-bundler-tutorial-release-export-level"></a>
+## Export level data {#asset-bundler-tutorial-release-export-level}
 
 1. Open the Lumberyard Editor and load the Starter Game level by selecting **File** > **Open Level** \(Ctrl\+O\) and selecting the **SinglePlayer** level\.
 
@@ -96,7 +96,7 @@ To complete the procedures in this tutorial, you need the following:
 
 1. Select **Game** > **Export to Engine** \(Ctrl\+E\) from the Editor's main menu to export the level data to a `.pak`\.
 
-## Generate shaders and auxiliary data<a name="asset-bundler-tutorial-release-build-shaders"></a>
+## Generate shaders and auxiliary data {#asset-bundler-tutorial-release-build-shaders}
 
 1. Open a command prompt and navigate to `lumberyard_dir\dev\Tools\CrySCompileServer\x64\profile`\.
 
@@ -136,7 +136,7 @@ To complete the procedures in this tutorial, you need the following:
    xcopy /s startergame_pc_paks %USERPROFILE%\StarterGameRelease
    ```
 
-## Generate game asset bundles<a name="asset-bundler-tutorial-release-generate-bundles"></a>
+## Generate game asset bundles {#asset-bundler-tutorial-release-generate-bundles}
 
 1. Open a command prompt and navigate to the Lumberyard install root directory\.
 
@@ -165,7 +165,7 @@ To complete the procedures in this tutorial, you need the following:
 **Important**  
 `--addSeed` takes a path relative to your project folder \(for source assets\) or the asset cache \(for product assets\)\. For Starter Game, project source assets are located in `lumberyard_dir\dev\StarterGame`\. Don't use absolute paths or paths relative to the current directory when adding a seed\.
 
-## Run your packaged release<a name="asset-bundler-tutorial-release-update-release"></a>
+## Run your packaged release {#asset-bundler-tutorial-release-update-release}
 
 1. Open a command prompt and navigate to your packaged release at `%USERPROFILE%\StarterGameRelease`\.
 
@@ -184,7 +184,7 @@ If the test isn't successful, common issues may occur\. For example, error messa
 **Note**  
 When you run the release build, it creates a `User` subdirectory under your release build directory\. Be sure to delete this directory before shipping the release build\.
 
-## Next Steps<a name="asset-bundler-tutorial-release-next-steps"></a>
+## Next Steps {#asset-bundler-tutorial-release-next-steps}
 
 Now that you've learned the basics of bundling assets for release, go on to further reading:
 + Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)\.

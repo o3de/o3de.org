@@ -3,11 +3,11 @@ description: ' Learn about the general C++ API operations for Twitch that you ca
   use for your &ALY; game project. '
 title: General
 ---
-# General<a name="twitch-api-ebus-general"></a>
+# General {#twitch-api-ebus-general}
 
 General APIs for Twitch
 
-## SetApplicationID<a name="twitch-api-ebus-general-setapplicationid"></a>
+## SetApplicationID {#twitch-api-ebus-general-setapplicationid}
 
 Sets the Twitch application ID\. You can call `SetApplicationID` only once and you must call it before any other API operations\. You will not receive a notification from this call\.
 
@@ -29,7 +29,7 @@ The Twitch application ID that you obtain from Twitch when you create an applica
 **Return**  
 No return value\.
 
-## RequestUserID<a name="twitch-api-ebus-general-requestuserid"></a>
+## RequestUserID {#twitch-api-ebus-general-requestuserid}
 
 Requests the Twitch user ID of the active user and caches the value internally\. Subsequent calls will return the cached value\. When you obtain the user ID, a new EBus event is generated and `TwitchNotifyBus::UserIDNotify()` is called\.
 
@@ -75,7 +75,7 @@ No return value\.UserIDNotify Callback
 Value – The user ID, which returns in the format `AZStd::string`\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## RequestOAuthToken<a name="twitch-api-ebus-general-requestoauthtoken"></a>
+## RequestOAuthToken {#twitch-api-ebus-general-requestoauthtoken}
 
 Requests the OAuth token for the Twitch user\. When you obtain the token, a new EBus event is generated and `TwitchNotifyBus::OAuthTokenNotify()` is called\.
 
@@ -113,7 +113,7 @@ No return value\.OAuthTokenNotify Callback
 Value – The OAuth token, which returns in the format `AZStd::string`\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## RequestEntitlement<a name="twitch-api-ebus-general-requestentitlement"></a>
+## RequestEntitlement {#twitch-api-ebus-general-requestentitlement}
 
 Requests the entitlement ID for the Twitch user\. When you obtain the entitlement ID, a new EBus event is generated and `TwitchNotifyBus::EntitlementNotify()` is called\.
 
@@ -151,7 +151,7 @@ No return value\.EntitlementNotify Callback
 Value – The entitlement ID, which may contain numbers, letters, and a hyphen\.  
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## RequestProductCatalog<a name="twitch-api-ebus-general-requestproductcatalog"></a>
+## RequestProductCatalog {#twitch-api-ebus-general-requestproductcatalog}
 
 Requests the available SKUs for the user and product\. When you obtain the list, a new EBus event is generated and the `TwitchNotifyBus::RequestProductCatalog()` is called\.
 
@@ -217,7 +217,7 @@ Value – The product list, which includes the following data:
 + A list of SKUs that are attached to the product\. The SKUs are not available to customers\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## PurchaseProduct<a name="twitch-api-ebus-general-purchaseproduct"></a>
+## PurchaseProduct {#twitch-api-ebus-general-purchaseproduct}
 
 Requests to purchase a product based on the SKU\. Purchase options are overlaid on the existing screen from the Twitch desktop application\. When the purchase is completed, the EBus event `TwitchNotifyBus::PurchaseProduct()` provides the result \(successful or unsuccessful\)\.
 
@@ -267,7 +267,7 @@ Value – The purchase receipt, which includes the following data:
 + Type \(FuelProductType\) – One of the product types that defines the item\.
 Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
-## GetPurchaseUpdates<a name="twitch-api-ebus-general-getpurchaseupdates"></a>
+## GetPurchaseUpdates {#twitch-api-ebus-general-getpurchaseupdates}
 
 Requests to retrieve updates about a customer's purchased items or canceled orders\. Each request includes a sync token, which is an opaque string that determines which purchase updates were synced\. When `GetPurchaseUpdates` is initially called, an empty sync token is used\. Subsequent calls to `GetPurchaseUpdates` will return a sync token that you can use in the next request\. The EBus event `TwitchNotifyBus::PurchaseProduct()` provides the update list\.
 

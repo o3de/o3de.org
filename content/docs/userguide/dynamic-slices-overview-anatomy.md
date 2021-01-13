@@ -3,7 +3,7 @@ description: ' Understand the anatomy of a slice and the slice data patch format
   &ALYlong;. '
 title: Anatomy of a Slice
 ---
-# Anatomy of a Slice<a name="dynamic-slices-overview-anatomy"></a>
+# Anatomy of a Slice {#dynamic-slices-overview-anatomy}
 
 The following diagram illustrates an example slice A, which contains references to two other slices B and C\. Slice A has two instances each of B and C: 
 
@@ -15,11 +15,11 @@ In addition to references to other slices, slices can contain zero or more entit
 
 Slice files in a Lumberyard project have the extension `".slice"`\. They are stored in an XML format\.
 
-## Anatomy of a Slice Data Patch<a name="slice-data-patch-anatomy"></a>
+## Anatomy of a Slice Data Patch {#slice-data-patch-anatomy}
 
 When a slice contains a reference to another slice, and an override is made to this reference, the difference between the two is captured in a data patch\. The overrides can be simple, such as a change to a value in a field, or more complex, such as the addition or removal of entire components or entities\. The format of the serialized data in a slice file depends on the version of Lumberyard\.
 
-### Readable XML Data Patch Format \(v1\.23\+\)<a name="slice-data-patch-readable"></a>
+### Readable XML Data Patch Format \(v1\.23\+\) {#slice-data-patch-readable}
 
 Component names, data types, and version information are readily identifiable in this data patch format\. There is no need to launch Lumberyard Editor to see this information\. The following example shows that:
 + This data patch is for the `EditorCommentComponent`\.
@@ -41,7 +41,7 @@ Component names, data types, and version information are readily identifiable in
 **Note**  
 The Slice Upgrade Pipeline introduced in Lumberyard v1\.23 helps you convert your slices to this new format\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
-### Hexadecimal Data Patch Format \(v1\.22 and earlier\)<a name="slice-data-patch-hexadecimal"></a>
+### Hexadecimal Data Patch Format \(v1\.22 and earlier\) {#slice-data-patch-hexadecimal}
 
 The original data patch format uses a serialization of data and an address element from a binary stream converted into hexadecimal characters\. Even though the original version is shorter than the newer version, it is impossible to tell from inspection what data is contained inside of this patch\.
 

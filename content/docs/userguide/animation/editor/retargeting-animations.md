@@ -3,7 +3,7 @@ description: ' Retarget motions and animations from one actor to another actor i
   the &ALYlong; &animation-editor; . '
 title: Retargeting Motions
 ---
-# Retargeting Motions<a name="animation-editor-retargeting-animations"></a>
+# Retargeting Motions {#animation-editor-retargeting-animations}
 
 
 ****  

@@ -2,7 +2,7 @@
 description: ' View logs for your cloud gems in &ALYlong; with the &cgp;. '
 title: Using the &cgp; to View Logs
 ---
-# Using the Cloud Gem Portal to View Logs<a name="cloud-canvas-cloud-gem-portal-log-tab"></a>
+# Using the Cloud Gem Portal to View Logs {#cloud-canvas-cloud-gem-portal-log-tab}
 
 
 ****  
@@ -19,7 +19,7 @@ A log group is a group of log streams that share the same retention, monitoring,
 
 You can use the **Log** tab of the Cloud Gem Portal to view log streams and log groups related to your cloud gems\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-portal-log-tab-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-portal-log-tab-prerequisites}
 
 This tutorial assumes the following:
 + You are using a Lumberyard project that has the [Leaderboard](/docs/userguide/gems/cloud-canvas/leaderboard.md) and [Message of the Day](/docs/userguide/gems/cloud-canvas/message-of-the-day.md) cloud gems enabled\.
@@ -27,7 +27,7 @@ This tutorial assumes the following:
 
 If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/userguide/gems/using-project-configurator.md) to add cloud gems to your project\. For information on creating a project stack and a deployment stack, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 
-## Viewing Log Information in the Cloud Gem Portal<a name="cloud-canvas-cloud-gem-portal-log-tab-viewing-log-information-in-the-cloud-gem-portal"></a>
+## Viewing Log Information in the Cloud Gem Portal {#cloud-canvas-cloud-gem-portal-log-tab-viewing-log-information-in-the-cloud-gem-portal}
 
 You can view log information from CloudWatch Logs in the Cloud Gem Portal\. You can monitor log activity in your AWS account for your cloud gems\. 
 
@@ -41,7 +41,7 @@ You can view log information from CloudWatch Logs in the Cloud Gem Portal\. You 
 1. Click the **Log** tab\. You can view summary information for the last 20 minutes of CloudWatch Logs for the cloud gem that you chose\. The most recent logs appear at the top of the list\.  
 ![\[The Log tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-log-tab-2.png)
 
-## Viewing Logs in the CloudWatch Logs Console<a name="cloud-canvas-cloud-gem-portal-log-tab-viewing-logs-in-the-amazon-cloudwatch-console"></a>
+## Viewing Logs in the CloudWatch Logs Console {#cloud-canvas-cloud-gem-portal-log-tab-viewing-logs-in-the-amazon-cloudwatch-console}
 
 The **Log** tab of the Cloud Gem Portal provides links to the [CloudWatch Logs console](https://console.aws.amazon.com/cloudwatch/) where you can see more details about your log groups and log streams\.
 
@@ -61,7 +61,7 @@ The **Log** tab of the Cloud Gem Portal provides links to the [CloudWatch Logs c
 1. Sign in to the AWS Management Console if you are not already signed in\. The CloudWatch Logs console displays the log stream that you chose\.  
 ![\[View log stream in the CloudWatch Logs console for your cloud gems.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-log-tab-6.png)
 
-### Multiple Log Groups<a name="cloud-canvas-cloud-gem-portal-log-tab-multiple-log-groups"></a>
+### Multiple Log Groups {#cloud-canvas-cloud-gem-portal-log-tab-multiple-log-groups}
 
 A log group is a group of log streams\. When a cloud gem like Leaderboard contains more than one log group, the log groups are displayed in multiple sections on the same page\.
 

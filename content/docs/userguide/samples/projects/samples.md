@@ -3,7 +3,7 @@ description: ' Use the Samples Project to explore sample levels and code that de
   various &ALYlong; features. '
 title: Samples Project
 ---
-# Samples Project<a name="sample-project-samples"></a>
+# Samples Project {#sample-project-samples}
 
 
 ****  
@@ -31,7 +31,7 @@ The `UI` subdirectory contains the following levels:
 + [UI Main Menu Lua Sample](/docs/userguide/ui/editor/loading-canvases-lua.md) – Demonstrates loading a UI canvas using Lua\.
 + UI Main Menu Script Canvas Sample – Demonstrates loading a UI canvas using the [**Script Canvas** editor](/docs/userguide/scripting/scriptcanvas/intro.md)\.
 
-## Audio Sample<a name="sample-project-samples-audio"></a>
+## Audio Sample {#sample-project-samples-audio}
 
 This sample demonstrates how to use the [**Audio Trigger**](/docs/userguide/components/audio-trigger.md) and [**Audio Rtpc**](/docs/userguide/components/audio-rtpc.md) components with Lua scripts to associate sounds of a door opening and closing\.
 

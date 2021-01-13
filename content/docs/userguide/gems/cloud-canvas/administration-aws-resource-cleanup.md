@@ -3,7 +3,7 @@ description: ' Remove unneeded &AWS; resources when you develop cloud-connected 
   in &ALYlong;. '
 title: Freeing Up &AWS; Resources
 ---
-# Freeing Up AWS Resources<a name="cloud-canvas-administration-aws-resource-cleanup"></a>
+# Freeing Up AWS Resources {#cloud-canvas-administration-aws-resource-cleanup}
 
 After a time of intensively testing or developing Lumberyard game projects that use Cloud Canvas, your attempts to create resources in AWS might fail or result in rollback loops\. For example, you might receive error messages like the following:
 
@@ -38,18 +38,18 @@ To remove unused resources from AWS, the following tools are available:
 
 Of these, the Cloud Canvas cleanup tool provides the quickest way to delete resources\.
 
-## The Cloud Canvas Cleanup Tool<a name="cloud-canvas-administration-aws-resource-cleanup-tool"></a>
+## The Cloud Canvas Cleanup Tool {#cloud-canvas-administration-aws-resource-cleanup-tool}
 
 The Lumberyard installation includes the Cloud Canvas cleanup tool\. You can use the Cloud Canvas cleanup tool to delete AWS resources from your account that have the prefix that you specify\. The tool is located in the `lumberyard_version\dev\Tools\lmbr_aws\test` directory\.
 
-### Prerequisites<a name="cloud-canvas-administration-aws-resource-cleanup-tool-prerequisites"></a>
+### Prerequisites {#cloud-canvas-administration-aws-resource-cleanup-tool-prerequisites}
 
 To use the cleanup tool, you must complete the following:
 + Have access to a Windows computer\.
 + Install Lumberyard on your computer\.
 + Set up and configure an AWS admininstrator IAM profile and set an admininstrator profile name as default on your computer\.
 
-  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 + Install the [AWS CLI](https://aws.amazon.com/cli/), [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/index.html) it with an admininstrator IAM profile, and set it to your preferred region\.
 
   For instructions on how to install the AWS CLI on Windows, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\. The AWS CLI requires Python\. You may use the version of Python distributed as part of Lumberyard, provided that it's available in your system's `PATH`\.
@@ -68,7 +68,7 @@ In the `lumberyard_installation\dev` directory, run the following command\.
      ```
      lmbr_aws profile default --set profile_name
      ```
-This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions.md#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.  
+This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.  
 The following example command sets the default Cloud Canvas profile to `CloudCanvasAdmin` for the CloudGemDefectReportSample project in the Lumberyard installation location `C:\Lumberyard\`\.
 
      ```
@@ -83,7 +83,7 @@ The command produces the following output\.
      Default Profile: CloudCanvasAdmin
      ```
 
-### Using the Cloud Canvas Cleanup Tool<a name="cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool"></a>
+### Using the Cloud Canvas Cleanup Tool {#cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool}
 
 Before you use the cleanup tool, be aware of the following points:
 + Do not use the cleanup tool if you have a project stack name that begins with an IAM user name that you do not want to delete\. Doing so can result in the deletion of the IAM user, its roles, and its profiles\.
@@ -127,15 +127,15 @@ Before you use the cleanup tool, be aware of the following points:
 | \-\-profile profile  | The AWS profile to use\. Defaults to the default AWS profile\. | 
 | \-\-region region | The AWS region to use\. Defaults to us\-east\-1\. | 
 
-#### Identifying Cloud Canvas Prefixes<a name="cloud-canvas-administration-aws-resource-cleanup-identifying-cloud-canvas-prefixes"></a>
+#### Identifying Cloud Canvas Prefixes {#cloud-canvas-administration-aws-resource-cleanup-identifying-cloud-canvas-prefixes}
 
 Use the Cloud Canvas resource naming conventions in this section to identify the resources that you want to delete\. In general, the AWS Management Console uses the names that you provided for your resources when you created them in Cloud Canvas Resource Manager or `lmbr_aws`\.
 
-##### Project Stacks<a name="cloud-canvas-administration-aws-resource-cleanup-project-stacks"></a>
+##### Project Stacks {#cloud-canvas-administration-aws-resource-cleanup-project-stacks}
 
 In Cloud Canvas, project stack names correspond to AWS CloudFormation stack names\. For example, if you create a Cloud Canvas project stack called `CloudGemSamples`, the project stack appears in the [AWS CloudFormation Console](https://console.aws.amazon.com/cloudformation/home) as `CloudGemSamples`\.
 
-##### Project Stack Resources<a name="cloud-canvas-administration-aws-resource-cleanup-project-stack-resources"></a>
+##### Project Stack Resources {#cloud-canvas-administration-aws-resource-cleanup-project-stack-resources}
 
 Resources in a Cloud Canvas project stack have the following form\.
 
@@ -145,7 +145,7 @@ ProjectStackName-ResourceName
 
 For example, if a `CloudGemSamples` Cloud Canvas project stack has an Amazon S3 bucket named `Storage`, the bucket appears in the [Amazon S3 Console](https://console.aws.amazon.com/s3/home) as `CloudGemSamples-Storage.`
 
-##### Deployment Stacks<a name="cloud-canvas-administration-aws-resource-cleanup-deployment-stacks"></a>
+##### Deployment Stacks {#cloud-canvas-administration-aws-resource-cleanup-deployment-stacks}
 
 A deployment stack name in AWS has the following form\.
 
@@ -155,7 +155,7 @@ ProjectStackName-DeploymentStackName
 
 For example, if a `CloudGemSamples` Cloud Canvas project stack has a deployment stack named `TestDeployment`, the deployment stack appears in the [AWS CloudFormation Console](https://console.aws.amazon.com/cloudformation/home) as `CloudGemSamples-TestDeployment.`
 
-##### Deployment Stack Resources<a name="cloud-canvas-administration-aws-resource-cleanup-deployment-stack-resources"></a>
+##### Deployment Stack Resources {#cloud-canvas-administration-aws-resource-cleanup-deployment-stack-resources}
 
 Cloud Canvas deployment stack resource names have the following form\.
 
@@ -165,7 +165,7 @@ ProjectStackName-DeploymentName-ResourceGroupOrGemName-ResourceName
 
 For example, suppose a `CloudGemSamples` Cloud Canvas project stack has a deployment stack named `TestDeployment`\. If `TestDeployment` has a cloud gem named `TestGem` that uses an Amazon S3 bucket named `GemResourceBucket`, the bucket appears in the [Amazon S3 Console](https://console.aws.amazon.com/s3/home) as `CloudGemSamples-TestDeployment-TestGem-GemResourceBucket`\.
 
-##### Viewing Prefixes in the AWS Management Console<a name="cloud-canvas-administration-aws-resource-cleanup-viewing-prefixes-in-the-aws-management-console"></a>
+##### Viewing Prefixes in the AWS Management Console {#cloud-canvas-administration-aws-resource-cleanup-viewing-prefixes-in-the-aws-management-console}
 
 You can use the [AWS Management Console](https://console.aws.amazon.com/) to identify resources to delete\.
 
@@ -189,7 +189,7 @@ You can use the [AWS Management Console](https://console.aws.amazon.com/) to ide
 
 1. Use the Cloud Canvas resource naming rules to determine the prefix to use with the Cloud Canvas cleanup tool\.
 
-#### Notes Regarding the Cleanup Tool<a name="cloud-canvas-administration-aws-resource-cleanup-notes-regarding-the-cleanup-tool"></a>
+#### Notes Regarding the Cleanup Tool {#cloud-canvas-administration-aws-resource-cleanup-notes-regarding-the-cleanup-tool}
 
 When you use the Cloud Canvas cleanup tool, note the following\.
 + You do not have to specify a complete prefix\. The cleanup tool takes the string that you specify and matches it with all resources that have names that start with that string\. For example, if you specify the prefix `Cloud`, all resources that start with `Cloud` \(like `CloudGemSamples`\) are deleted, including resources that AWS CloudFormation created\.
@@ -206,7 +206,7 @@ When you use the Cloud Canvas cleanup tool, note the following\.
 
   To resolve this issue, you can delete the `lumberyard_version\dev\project_name\AWS\local-project-settings.json` file, which is automatically regenerated by Cloud Canvas Resource Manager and `lmbr_aws`\. Alternatively, you can edit the `ProjectStackId` section of the `local-project-settings.json` file to remove the resources listed that have been deleted\. You should also edit the `Mappings` section of the `lumberyard_version\dev\Cache\game\OS\user\AWS\user-settings.json` file to remove references to resources that have been deleted\.
 
-## AWS Command Line Interface \(CLI\)<a name="cloud-canvas-administration-aws-resource-cleanup-aws-cli"></a>
+## AWS Command Line Interface \(CLI\) {#cloud-canvas-administration-aws-resource-cleanup-aws-cli}
 
 You can use the AWS Command Line Interface to remove resources from specific AWS services in your account\. This section lists some useful commands for the following AWS services that are commonly used with Cloud Canvas:
 + [Amazon DynamoDB](#cloud-canvas-administration-aws-resource-cleanup-dynamodb)
@@ -214,21 +214,21 @@ You can use the AWS Command Line Interface to remove resources from specific AWS
 + [Amazon API Gateway](#cloud-canvas-administration-aws-resource-cleanup-api-gateway)
 + [Amazon S3](#cloud-canvas-administration-aws-resource-cleanup-amazon-s3)
 
-### Prerequisites<a name="cloud-canvas-administration-aws-resource-cleanup-aws-cli-prerequisites"></a>
+### Prerequisites {#cloud-canvas-administration-aws-resource-cleanup-aws-cli-prerequisites}
 
 To use the AWS CLI, you must complete the following:
 + Set up and configure an AWS admininstrator IAM profile and set an admininstrator profile name as default on your computer\.
 
-  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
+  For more information, see [Step 2: Create an IAM User to Administer the Cloud Canvas Project](/docs/userguide/gems/cloud-canvas/tutorial#cloud-canvas-tutorial-create-iam-admin) and [Step 4: Add Administrator Credentials to Lumberyard](/docs/userguide/gems/cloud-canvas/tutorial#cloud-canvas-tutorial-enter-admin-creds) in the [Cloud Canvas tutorial](/docs/userguide/gems/cloud-canvas/tutorial.md)\.
 + Install the [AWS CLI](https://aws.amazon.com/cli/), [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/index.html) it with an admininstrator IAM profile, and set it to your preferred region\.
 
   For instructions on how to install the AWS CLI on Windows, Linux, macOS, or Unix, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\. The AWS CLI requires Python\. You may use the version of Python distributed as part of Lumberyard, provided that it's available in your system's `PATH`\.
 
-### Creating Script Files for Batch Deletion<a name="cloud-canvas-administration-aws-resource-cleanup-creating-script-files-for-batch-deletion"></a>
+### Creating Script Files for Batch Deletion {#cloud-canvas-administration-aws-resource-cleanup-creating-script-files-for-batch-deletion}
 
 A generally useful ad hoc strategy is to use a service\-specific AWS CLI command to redirect a list of the resources into a text file\. You can then use the text file programatically or convert the file into a shell script of AWS CLI deletion commands\. The next few sections illustrate this technique\.
 
-### Amazon DynamoDB<a name="cloud-canvas-administration-aws-resource-cleanup-dynamodb"></a>
+### Amazon DynamoDB {#cloud-canvas-administration-aws-resource-cleanup-dynamodb}
 
 To show list of the DynamoDB tables in the current region in a command prompt window, enter the following command\.
 
@@ -271,7 +271,7 @@ After you rename the file with a `.cmd` or `.bat` extension \(Windows\), you can
 
 For more information on the DynamoDB CLI commands, see [dynamodb](https://docs.aws.amazon.com/cli/latest/reference/dynamodb/index.html)\.
 
-### AWS Lambda<a name="cloud-canvas-administration-aws-resource-cleanup-aws-lambda"></a>
+### AWS Lambda {#cloud-canvas-administration-aws-resource-cleanup-aws-lambda}
 
 To list AWS Lambda functions, enter the following command\.
 
@@ -315,7 +315,7 @@ aws lambda delete-function --function-name CloudGemSamples-CGSamplesDep13-Packag
 
 For more information on the AWS Lambda CLI commands, see [lambda](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html)\.
 
-### Amazon API Gateway<a name="cloud-canvas-administration-aws-resource-cleanup-api-gateway"></a>
+### Amazon API Gateway {#cloud-canvas-administration-aws-resource-cleanup-api-gateway}
 
 To delete a REST API from API Gateway, you must specify the ID of the REST API\.
 
@@ -337,14 +337,14 @@ aws apigateway get-rest-apis | findstr /C:id >gatewayapis.txt
 
 For more information on the API Gateway CLI commands, see [apigateway](https://docs.aws.amazon.com/cli/latest/reference/apigateway/index.html)\.
 
-### Amazon S3<a name="cloud-canvas-administration-aws-resource-cleanup-amazon-s3"></a>
+### Amazon S3 {#cloud-canvas-administration-aws-resource-cleanup-amazon-s3}
 
 In Amazon S3, you can **delete** empty buckets but must **remove** non\-empty buckets\.
 
 **Note**  
 The commands presented here work only on unversioned buckets\. Amazon S3 buckets are unversioned by default\. For more information, see [Using Versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
-#### Getting a List of Bucket Names<a name="cloud-canvas-administration-aws-resource-cleanup-getting-a-list-of-bucket-names"></a>
+#### Getting a List of Bucket Names {#cloud-canvas-administration-aws-resource-cleanup-getting-a-list-of-bucket-names}
 
 To obtain a list of S3 bucket names, use the following command\.
 
@@ -352,7 +352,7 @@ To obtain a list of S3 bucket names, use the following command\.
 aws s3api list-buckets --query Buckets[].Name 
 ```
 
-#### Deleting a Bucket<a name="cloud-canvas-administration-aws-resource-cleanup-deleting-a-bucket"></a>
+#### Deleting a Bucket {#cloud-canvas-administration-aws-resource-cleanup-deleting-a-bucket}
 
 The following syntax deletes an empty S3 bucket:
 
@@ -360,7 +360,7 @@ The following syntax deletes an empty S3 bucket:
 aws s3api delete-bucket --bucket bucket_name
 ```
 
-#### Removing a Bucket<a name="cloud-canvas-administration-aws-resource-cleanup-removing-a-bucket"></a>
+#### Removing a Bucket {#cloud-canvas-administration-aws-resource-cleanup-removing-a-bucket}
 
 To remove a non\-empty bucket, use the `rb` \(remove bucket\) command with `--force` parameter\.
 
@@ -376,7 +376,7 @@ aws s3 rb s3://cloudgemsamples-cloudgemportal-hash --force
 
 For more information on the Amazon S3 CLI high\-level commands, see [s3](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)\. For more information on the more detailed Amazon S3 CLI commands, see [s3api](https://docs.aws.amazon.com/cli/latest/reference/s3api/index.html)\.
 
-## Using the AWS Management Console<a name="cloud-canvas-administration-aws-resource-cleanup-using-the-aws-management-console"></a>
+## Using the AWS Management Console {#cloud-canvas-administration-aws-resource-cleanup-using-the-aws-management-console}
 
 You can use the [AWS Management Console](https://console.aws.amazon.com/) to manually delete individual AWS resources from your account\. However, if you have many resources to delete, the Cloud Canvas cleanup tool or the AWS CLI are faster alternatives\.
 

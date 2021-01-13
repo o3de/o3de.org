@@ -4,7 +4,7 @@ description: ' Add a layout cell component to a child of the layout row or colum
   size, or extra ratio size. '
 title: LayoutCell
 ---
-# LayoutCell<a name="ui-editor-components-layout-cell"></a>
+# LayoutCell {#ui-editor-components-layout-cell}
 
 When working with cell contents, it's important to understand the difference between a layout cell and the **LayoutCell** component\. A layout cell represents a set of values that determine the space or area allocated to a child in a layout row or column\. The **LayoutCell** component, on the other hand, manipulates the way a layout cell is sized\. A layout cell exists on a child of a layout row or layout column whether or not it has a **LayoutCell** component\. The **LayoutCell** component simply provides a way to manipulate and override the default calculations of a layout cell\.
 
@@ -25,7 +25,7 @@ After layout cell values are calculated, layout cell space is allocated by the f
 
 1. If space is still available after that, then the **Extra Size Ratio** value is used to determine how to allocate the remaining space\. This ratio is relative to the child's siblings\. For example, if one child's extra size ratio is 1, and another child's is 2, then the second child gains twice as much extra space as the first child\. An extra size ratio of 0 means that no more space is allocated once the target size is reached\. 
 
-## Using the LayoutCell Component<a name="ui-editor-components-layout-cell-using"></a>
+## Using the LayoutCell Component {#ui-editor-components-layout-cell-using}
 
 You can apply the **LayoutCell** component to the children of a layout row or column to override the layout cell's default calculations\.
 

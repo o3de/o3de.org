@@ -2,7 +2,7 @@
 description: ' Use AI paths for navigation in &ALYlong;. '
 title: Using AI Paths for Navigation
 ---
-# Using AI Paths for Navigation<a name="ai-nav-off-mesh-paths"></a>
+# Using AI Paths for Navigation {#ai-nav-off-mesh-paths}
 
 
 ****  

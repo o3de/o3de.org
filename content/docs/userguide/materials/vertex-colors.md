@@ -2,7 +2,7 @@
 description: ' Use vertex colors for materials in &ALYlong;. '
 title: Using Vertex Colors
 ---
-# Using Vertex Colors<a name="mat-vertex-colors"></a>
+# Using Vertex Colors {#mat-vertex-colors}
 
 Vertex color, or vcolor, is just a color with RGB and alpha channel values stored for each vertex of a mesh\. Vertex color and alpha can be used for multi\-texturing, transparency, or fake ambient occlusion\. 
 
@@ -12,4 +12,4 @@ When used for non\-color effects, typically each color channel is treated as a s
 
 Vertex Colors is a Shader Generation parameter that can be enabled using the Material Editor, which is part of Lumberyard Editor\. 
 
-For a good application of vertex colors, see [Defining Vegetation Vertex Colors with a DCC Tool](/docs/userguide/vegetation/bending-detail-intro.md#vegetation-bending-detail-vertex-colors)\.
+For a good application of vertex colors, see [Defining Vegetation Vertex Colors with a DCC Tool](/docs/userguide/vegetation/bending-detail-intro#vegetation-bending-detail-vertex-colors)\.

@@ -3,7 +3,7 @@ description: ' Use the Set Input String node in the &ALYlong; &script-canvas; ed
   to set the value of a procedural material input parameter as a string or image. '
 title: Set Input String
 ---
-# Set Input String<a name="set-input-string-node"></a>
+# Set Input String {#set-input-string-node}
 
 Sets the value for an input parameter as a string or an image\.
 
@@ -15,7 +15,7 @@ If the input parameter is a `string` type, the node sets the text value that the
 
 ![\[GetInputString sets the string value for a procedural material input parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-set-input-string-node.png)
 
-## Inputs<a name="set-input-string-node-input"></a>
+## Inputs {#set-input-string-node-input}
 
 
 ****  
@@ -27,7 +27,7 @@ If the input parameter is a `string` type, the node sets the text value that the
 | Input Name | String | The name of the input parameter to set\. | 
 | String | String | The new value to apply\. | 
 
-## Outputs<a name="set-input-string-node-output"></a>
+## Outputs {#set-input-string-node-output}
 
 
 ****  

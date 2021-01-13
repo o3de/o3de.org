@@ -2,7 +2,7 @@
 description: ' Use levels of detail (LODs) to optimize game performance in &ALYlong;. '
 title: Using Actor LODs to Optimize Game Performance
 ---
-# Using Actor LODs to Optimize Game Performance<a name="using-actor-LODs-optimize-game-performance"></a>
+# Using Actor LODs to Optimize Game Performance {#using-actor-LODs-optimize-game-performance}
 
 You can use levels of detail \([LODs](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#lod)\) to optimize the rendering performance of games\. This is especially true for large in\-game worlds, which are constrained by hardware, frame rate, and the real\-time rendering limits\. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera\. To further reduce draw calls, lower LODs have multiple textures combined into one texture\.
 
@@ -13,18 +13,18 @@ You can use levels of detail \([LODs](https://docs.aws.amazon.com/lumberyard/lat
 + [Adding Actor LOD to a Level in Lumberyard](#adding-actor-lod-to-a-level-in-lumberyard)
 + [Adding the Simple LOD Distance Component](#adding-simple-lod-distance-component)
 
-## Using Actor LODs in Lumberyard<a name="optimize-character-fbx-settings-lod-in-lumberyard"></a>
+## Using Actor LODs in Lumberyard {#optimize-character-fbx-settings-lod-in-lumberyard}
 
 In Lumberyard, you can use up to six actor LODs\. An LOD of `0` has the highest level of detail, and an LOD of `5` the least\. Each successive LOD typically has its vertices reduced by 50 percent from the previous level and reduces the number of materials used\.
 
-### Features<a name="optimize-lod-features-for-character-fbx-settings"></a>
+### Features {#optimize-lod-features-for-character-fbx-settings}
 
 In Lumberyard, you can use actor LODs on skinned meshes, skeletons, and materials or textures\. Lumberyard performs the following actions:
 + Provides a **Simple LOD Distance** component that supports rendering of different LODs\.
 + Reads and imports skinned mesh LODs from a single FBX file\.
 + Auto populates skinned mesh LODs that use a soft naming convention\.
 
-### Requirements and Limitations<a name="requirements-and-limitations-for-character-fbx-settings-lod"></a>
+### Requirements and Limitations {#requirements-and-limitations-for-character-fbx-settings-lod}
 
 Note the following requirements:
 
@@ -40,7 +40,7 @@ Note the following requirements:
 + Each actor requires a separate material group\.
 + Create a material LOD in the same way that you create a material for static meshes\.
 
-## Using Digital Content Creation Tools to Create LODs<a name="using-dccs-to-create-lods-for-character-fbx-settings"></a>
+## Using Digital Content Creation Tools to Create LODs {#using-dccs-to-create-lods-for-character-fbx-settings}
 
 To author actor LODs in a DCC tool like Autodesk Maya or Autodesk 3ds Max, you can use one of the following two methods:
 + Soft naming conventions
@@ -62,7 +62,7 @@ Currently, Lumberyard supports skeletons created with LOD groups only\.
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.  
 ![\[Skeleton created as an LOD group\]](/images/userguide/character-fbx-settings-lod-optimize-0.png)
 
-## Using the FBX Settings Tool to Check LODs<a name="using-fbx-settings-tool-to-check-lods-character-fbx-settings"></a>
+## Using the FBX Settings Tool to Check LODs {#using-fbx-settings-tool-to-check-lods-character-fbx-settings}
 
 After you export your `.fbx` file to Lumberyard, do the following:
 
@@ -76,7 +76,7 @@ After you export your `.fbx` file to Lumberyard, do the following:
 
 You can use the **FBX Settings** tool to verify that your LODs were imported correctly\. Currently, you can also unselect a mesh or skeleton for each LOD, but you can't move a mesh or skeleton across a level or add a new mesh or skeleton to a level\.
 
-## Adding Actor LOD to a Level in Lumberyard<a name="adding-actor-lod-to-a-level-in-lumberyard"></a>
+## Adding Actor LOD to a Level in Lumberyard {#adding-actor-lod-to-a-level-in-lumberyard}
 
 After you import your LODs into Lumberyard Editor, you can add an actor LOD to a level\.
 
@@ -92,12 +92,12 @@ After you import your LODs into Lumberyard Editor, you can add an actor LOD to a
 
 ![\[LOD material file in the Actor component in the Entity Inspector.\]](/images/userguide/character-fbx-settings-lod-optimize-2.png)
 
-### Notes<a name="character-fbx-settings-lod-optimize-notes"></a>
+### Notes {#character-fbx-settings-lod-optimize-notes}
 + Lumberyard supports only one material group for each actor\.
 + Author the material definition \(`.mtl`\) file with all the actor LOD submaterials inside the same `.mtl` file\.
 + If you author in Maya, you can assign a different shader for each LOD mesh or use the same shader for all the meshes\.
 
-## Adding the Simple LOD Distance Component<a name="adding-simple-lod-distance-component"></a>
+## Adding the Simple LOD Distance Component {#adding-simple-lod-distance-component}
 
 To enable rendering of levels of detail in Lumberyard, you must add the **Simple LOD Distance** component to your level\. The **Simple LOD Distance** component performs a simple LOD distance check\. The LOD distance is the distance that the current level of detail must reach before it changes to the next LOD\. Each distance must be greater than the previous distance\.
 

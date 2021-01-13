@@ -2,11 +2,11 @@
 description: ' Learn to set &cloud; access permissions for your project. '
 title: Controlling Access to Resources
 ---
-# Controlling Access to Resources<a name="cloud-canvas-setting-access-permissions"></a>
+# Controlling Access to Resources {#cloud-canvas-setting-access-permissions}
 
 Setting access permissions correctly is key to ensuring that Cloud Canvas Resource Manager manages your project's cloud\-connected features securely\.
 
-## Access Scenarios and ProjectResourceHandler<a name="cloud-canvas-setting-access-permissions-access-scenarios-and-projectresourcehandler"></a>
+## Access Scenarios and ProjectResourceHandler {#cloud-canvas-setting-access-permissions-access-scenarios-and-projectresourcehandler}
 
 Cloud Canvas Resource Manager requires that the following access scenarios be supported\. Additional roles with more nuanced permissions can be created, but the table below describes the core access requirements\.
 
@@ -20,7 +20,7 @@ For example, the `Custom::AccessControl` resource, described in detail later in 
 
 ![\[Cloud Canvas flow of permissions\]](/images/userguide/cloud_canvas/cloud-canvas-setting-access-permissions-flow.png)
 
-## Using the Custom::AccessControl Resource<a name="cloud-canvas-setting-access-permissions-access-control"></a>
+## Using the Custom::AccessControl Resource {#cloud-canvas-setting-access-permissions-access-control}
 
 As described above, Cloud Canvas Resource Manager security depends on IAM roles and the credentials used from assuming such roles\. The [Access Scenarios and ProjectResourceHandler](#cloud-canvas-setting-access-permissions-access-scenarios-and-projectresourcehandler) section earlier in this topic explains why Cloud Canvas Resource Manager has the responsibility of managing the inline policies attached to these roles\.
 
@@ -39,7 +39,7 @@ This process is illustrated in the following diagram\. The diagram shows the met
 
 ![\[Configuration of project roles\]](/images/userguide/cloud_canvas/cloud-canvas-setting-access-permissions-project-role-cfg.png)
 
-### Custom::AccessControl Resource Definitions<a name="cloud-canvas-setting-access-permissions-custom-access-control-resource-definitions"></a>
+### Custom::AccessControl Resource Definitions {#cloud-canvas-setting-access-permissions-custom-access-control-resource-definitions}
 
 The `Custom::AccessControl` resource supports the following properties:
 
@@ -65,6 +65,6 @@ The `DependsOn` attribute of the `Custom::AccessControl` resource definition mus
 
 When you use the AWS CLI to manage roles and permissions, these resources are listed for you\. However, if you edit these files yourself, it is important that you maintain these dependencies\. Without these dependencies, the `Custom::AccessControl` resource might be updated before the other resources have been updated\. If this occurs, the `Custom::AccessControl` no longer has access to the latest metadata from the resources, and the changes that were intended might not be made\.
 
-### Setting Access Permissions<a name="cloud-canvas-setting-access-permissions-metadata-link"></a>
+### Setting Access Permissions {#cloud-canvas-setting-access-permissions-metadata-link}
 
 For information on setting `Custom::AccessControl` permissions, see [Permissions Metadata for Resource Definitions](/docs/userguide/permissions-metadata-for-resource-definitions.md)\.

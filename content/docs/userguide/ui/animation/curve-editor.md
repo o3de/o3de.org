@@ -3,7 +3,7 @@ description: ' Use the &curve-editor; in &ALYlong;''s UI Animation editor to cha
   the way floating point values vary over time. '
 title: Using the &curve-editor; in the UI Animation Editor.
 ---
-# Using the **Curve Editor** in the UI Animation Editor\.<a name="ui-animation-curve-editor"></a>
+# Using the **Curve Editor** in the UI Animation Editor\. {#ui-animation-curve-editor}
 
 The ****Curve Editor**** displays animations as function curves\. Each track's curves represent an animation of a property value \(such as anchor, offset, color, or any property of a UI element\)\.
 

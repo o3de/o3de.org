@@ -3,7 +3,7 @@ description: ' Create third-party library configuration files for the &waf-syste
   in &ALYlong;. '
 title: Creating Third-Party Library Configuration Files for &waf;
 ---
-# Creating Third\-Party Library Configuration Files for Waf<a name="waf-third-party-library-configurations"></a>
+# Creating Third\-Party Library Configuration Files for Waf {#waf-third-party-library-configurations}
 
 Lumberyard's Waf build system has the ability to incorporate third\-party libraries\. Waf's `uselib` mechanism can apply the proper dependency injection of a third\-party library into any project or module\. In the `wscript` file, the `uselib` attribute specifies all\-caps identifiers that represent the third\-party libraries\. The identifiers are defined in the `.json` configuration files that can exist either in the global `_WAF_\3rdParty` directory or in the gem\-specific `3rdParty` directory\. These configuration files provide details for the library, including include paths, library paths, and linkage information\. The files also specify whether the library is shared, dynamic, or header\-only\.
 
@@ -15,15 +15,15 @@ Lumberyard's Waf build system has the ability to incorporate third\-party librar
 + [Third\-Party Library Configuration File Attributes](#waf-third-party-library-configurations-third-party-library-configuration-file-attributes)
 + [Special Reserved Words](#waf-third-party-library-configurations-special-reserved-words)
 
-## Key Features<a name="waf-third-party-library-configurations-key-features"></a>
+## Key Features {#waf-third-party-library-configurations-key-features}
 
 Key features of the `uselib` mechanism include centralized management and an abstraction layer that makes it easy to use the same libraries across Lumberyard projects and modules\.
 
-### Centralized Management<a name="waf-third-party-library-configurations-centralized-management"></a>
+### Centralized Management {#waf-third-party-library-configurations-centralized-management}
 
 Encapsulating the build details within a single file helps centralize the management of third\-party libraries\. Centralized management in a single file is also beneficial when changes like different include paths or libraries to the third\-party library occur\. These configuration files can be global to the entire engine, or gem\-specific based on the gems that are enabled for the game\.
 
-### Abstraction<a name="waf-third-party-library-configurations-abstraction"></a>
+### Abstraction {#waf-third-party-library-configurations-abstraction}
 
 The third\-party identifiers provide an abstraction layer between the third\-party library details and the consuming project or module\. This layer makes it unnecessary to explicitly inject the paths for the library and include headers for each project or module that uses the library\. Instead, the `uselib` mechanism with the third\-party identifier provides the necessary injection of paths, libraries, and custom rules\.
 
@@ -134,7 +134,7 @@ def build(bld):
 
 After you have created these third\-party configuration files, you can apply the same simplification to any project or module in Lumberyard\.
 
-## Supported Library Types<a name="waf-third-party-library-configurations-supported-library-types"></a>
+## Supported Library Types {#waf-third-party-library-configurations-supported-library-types}
 
 Third\-party configuration files support the following library types:
 + [Header Only](#waf-third-party-library-configurations-header-only-libraries)
@@ -144,7 +144,7 @@ Third\-party configuration files support the following library types:
 **Note**  
 For simplicity, the rest of this topic refers to shared/dynamic libraries as 'shared'\.
 
-### Header\-only Libraries<a name="waf-third-party-library-configurations-header-only-libraries"></a>
+### Header\-only Libraries {#waf-third-party-library-configurations-header-only-libraries}
 
 Header\-only libraries provide only the include paths to the dependent project or module\. The following example third\-party library configuration file contains a definition for a header\-only library:
 
@@ -167,7 +167,7 @@ Header\-only libraries provide only the include paths to the dependent project o
 
 This simple declaration specifies only the `includes` header path which is a subdirectory of the `source` directory\. The `source` directory is defined by the alias pattern `@3P:`*XXX*`@`\. For descriptions of the other attributes in this file, see [Third\-Party Library Configuration File Attributes](#waf-third-party-library-configurations-third-party-library-configuration-file-attributes)\.
 
-### Static Libraries<a name="waf-third-party-library-configurations-static-libraries"></a>
+### Static Libraries {#waf-third-party-library-configurations-static-libraries}
 
 Static third\-party library configuration files declare header include paths, library include paths, and library names for inclusion in a dependent project or module\. The following example third\-party library configuration file contains a declaration for a simple static library\.
 
@@ -201,11 +201,11 @@ Static third\-party library configuration files declare header include paths, li
         ...
 ```
 
-#### Platform\-Specific Information<a name="waf-third-party-library-configurations-platform-specific-information"></a>
+#### Platform\-Specific Information {#waf-third-party-library-configurations-platform-specific-information}
 
 In addition to the attributes described for header\-only library definition, the preceding example includes platform\-specific values\. The `platform` attribute contains a dictionary of target platform sections\. Each target platform must be specified here\. If a particular target platform is not listed, this third\-party library definition will not apply for that platform when built\. Static libraries must specify the library path \(`libpath`\) and the names of the library file \(`lib`\) against which to link for each platform\. The configuration extension for `libpath` attribute in the preceding example will be described later in this topic\.
 
-### Shared Libraries<a name="waf-third-party-library-configurations-shared-libraries"></a>
+### Shared Libraries {#waf-third-party-library-configurations-shared-libraries}
 
 Shared libraries are more complex than static libraries\. Shared libraries must declare an include path, import library path, shared library path, shared library file names, and optionally, program database \(`.pdb`\) files\. The following example third\-party library configuration file contains a definition for a shared library\.
 
@@ -264,15 +264,15 @@ The following table describes the attributes for shared library configuration fi
 
 Besides providing the paths for header inclusion and linking, Lumberyard Waf also copies the shared library and PDB files to the path where the dependent project or module is built\.
 
-### Mixed Shared and Static Libraries<a name="waf-third-party-library-configurations-mixed-shared-and-static-libraries"></a>
+### Mixed Shared and Static Libraries {#waf-third-party-library-configurations-mixed-shared-and-static-libraries}
 
 In some cases, the third\-party library is static on some platforms but shared on others\. For cases like these, it is possible to declare mixed static and shared libraries for each platform\.
 
-## Using Aliases<a name="waf-third-party-library-configurations-using-aliases"></a>
+## Using Aliases {#waf-third-party-library-configurations-using-aliases}
 
 The following sections describe how to simplify the configuration file by using aliases for libraries, platforms, and paths\.
 
-### Aliasing Library Lists<a name="waf-third-party-library-configurations-aliasing-library-lists"></a>
+### Aliasing Library Lists {#waf-third-party-library-configurations-aliasing-library-lists}
 
 The same list of libraries might be needed in different platform sections of the configuration file\. To avoid repetition, you can define and use a list alias that expands to a list of other values\. This is helpful for cases in which you have multiple shared libraries that import libraries of the exact same name\.
 
@@ -312,7 +312,7 @@ In the `platform` section, the shared library definitions for `import`, `shared`
 ...
 ```
 
-### Aliasing Platform Declarations<a name="waf-third-party-library-configurations-aliasing-platform-declarations"></a>
+### Aliasing Platform Declarations {#waf-third-party-library-configurations-aliasing-platform-declarations}
 
 Some different target platforms are binary compatible\. In these cases, you do not have to declare a copy of an existing configuration section\. Instead, you can use the platform attribute string alias `@<platform_name>` instead of another attribute dictionary\.
 
@@ -335,17 +335,17 @@ In the following example, the `win_x64_vs2017` and `win_x64_vs2019` platforms ar
 ...
 ```
 
-### Aliasing Paths<a name="waf-third-party-library-configurations-aliasing-paths"></a>
+### Aliasing Paths {#waf-third-party-library-configurations-aliasing-paths}
 
 Path aliasing for the `source` attribute is common within the configuration file\. The alias value is denoted by `@XXXX@`, where the *XXXX* value resolves to an absolute path\. The third\-party configuration file recognizes two different path alias types:
 + `@3P:YYYY@` – This alias refers to a third\-party library that is managed by the Lumberyard Setup Assistant\. These third\-party libraries are globally available to the engine\. Lumberyard Setup Assistant manages the location and version of these libraries independently from the build system\. *YYYY* refers to the SDK identifier used by Lumberyard Setup Assistant and is different from the third\-party `uselib` identifier used by Waf\.
 + `@GEM@` – This alias is valid only for gem\-defined third\-party libraries and refers to the base path of the gem from which the third\-party library is defined\. For information about putting third\-party libraries in gems, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md)\.
 
-## Creating Entries for Multiple Related Libraries<a name="waf-third-party-library-configurations-creating-entries-for-multiple-related-libraries"></a>
+## Creating Entries for Multiple Related Libraries {#waf-third-party-library-configurations-creating-entries-for-multiple-related-libraries}
 
 Your project might have multiple libraries under a shared root source directory that are related but have separate purposes\. This section shows how your configuration files can handle these more complex cases so that you can still take advantage of the `uselib` mechanism\.
 
-### Build Configuration Filtering<a name="waf-third-party-library-configurations-build-configuration-filtering"></a>
+### Build Configuration Filtering {#waf-third-party-library-configurations-build-configuration-filtering}
 
 Attributes can be constrained by build configuration\. For example, a debug library and a release library might have the same name but exist in two different directories, as in the following example file structure:
 
@@ -389,7 +389,7 @@ In this case, the value for `libpath` in the configuration file is the same, but
 "lib_release": ["static_a.lib"]
 ```
 
-### Specifying Multiple Identifiers<a name="waf-third-party-library-configurations-specifying-multiple-identifiers"></a>
+### Specifying Multiple Identifiers {#waf-third-party-library-configurations-specifying-multiple-identifiers}
 
 A third\-party library might contain a suite of libraries and be organized by specific categories according to need\. In these cases, the configuration file can define more than one identifier\. As long as the library files are under the same directory that is specified for the `source` attribute, the configuration can specify multiple third\-party identifiers\.
 
@@ -422,7 +422,7 @@ The following example configuration file defines two third\-party identifiers th
 }
 ```
 
-## Third\-Party Library Configuration File Attributes<a name="waf-third-party-library-configurations-third-party-library-configuration-file-attributes"></a>
+## Third\-Party Library Configuration File Attributes {#waf-third-party-library-configurations-third-party-library-configuration-file-attributes}
 
 The following attributes are used in third\-party library definition files\.
 
@@ -453,7 +453,7 @@ The following attributes are used in third\-party library definition files\.
 | framework | \[ string \] | Applies to OSx\-based platforms only\. A list of frameworks that represent this uselib definition\. | 
 | copy\_extra | \[ string \] | List of additional files to copy from the source to the target directory where the executables that consume this uselib definition reside\. Each item in the list is a colon\-delimited source\-destination pair in the format <source>:<destination>\. <source> specifies the source directory that contains the files relative to the location specified by the source attribute\. <destination> is the directory to which the files are copied relative to the destination directory of the consuming target executable\. | 
 
-## Special Reserved Words<a name="waf-third-party-library-configurations-special-reserved-words"></a>
+## Special Reserved Words {#waf-third-party-library-configurations-special-reserved-words}
 
 The following special reserved words are used in third\-party library configuration files\.
 

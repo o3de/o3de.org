@@ -3,7 +3,7 @@ description: ' Use the level of detail (LOD) system in the &ALYlong; &particle-e
   to blend multiple particle emitters. '
 title: Managing Particle Level of Detail (LOD)
 ---
-# Managing Particle Level of Detail \(LOD\)<a name="particle-lod"></a>
+# Managing Particle Level of Detail \(LOD\) {#particle-lod}
 
 The Level of Detail \(LOD\) system blends multiple particle emitters based on their distance from the camera\. This allows you to use emitters that require less computation and rendering time, rather than computationally heavy particle emitters\.
 
@@ -18,7 +18,7 @@ The Level of Detail \(LOD\) system blends multiple particle emitters based on th
    The LOD is a copy of the base particle emitter and has the same settings\. The LOD also applies to all parent or child particle emitters in the hierarchy that belong to the selected emitter\.  
 ![\[Image NOT FOUND\]](/images/userguide/particles/particle-lod-1.png)
 
-## Level of Detail Panel<a name="particle-lod-panel"></a>
+## Level of Detail Panel {#particle-lod-panel}
 
 The **Level of Detail** panel appears when you add an LOD\. This panel shows the level of detail that you selected from the **View** menu in the **Particle Editor**\.
 
@@ -34,7 +34,7 @@ The **Level of Detail** panel appears when you add an LOD\. This panel shows the
 | Overlap | The amount of time, in seconds, that both LODs are shown before the old LOD blends out and the new LOD blends in\. | 
 | \+ Add Level of Detail | Adds an LOD\. The new LOD distance is set to 10 additional units from the farthest LOD\. The list of added LOD levels appears under \+ Add Level of Detail\. | 
 
-### Hide or Display Options<a name="particle-lod-panel-hide-display-options"></a>
+### Hide or Display Options {#particle-lod-panel-hide-display-options}
 
 Hide or display the **Level of Detail** panel by clicking **View**, **Hide Level of Detail** in the **Particle Editor**\.
 
@@ -48,7 +48,7 @@ Hide or display the **Level of Detail** panel by clicking **View**, **Hide Level
 | Hide Level of Detail | Hides the LOD panel if the panel is visible\. | 
 | Show Level of Detail | Displays the LOD panel if the panel is hidden\. | 
 
-### Manage LOD Options<a name="particle-lod-panel-manage-lod-options"></a>
+### Manage LOD Options {#particle-lod-panel-manage-lod-options}
 
 Manage your LOD levels in the list by clicking the drop\-down menu in the **Level of Detail** title bar\.
 
@@ -67,7 +67,7 @@ Manage your LOD levels in the list by clicking the drop\-down menu in the **Leve
 | Remove All | Removes all LOD levels for the related particle emitters\. | 
 | Close | Closes the Level of Detail panel\. | 
 
-## LOD Level Panel<a name="particle-lod-level-panel"></a>
+## LOD Level Panel {#particle-lod-level-panel}
 
 Each LOD level has its own panel in the LOD level list\. These panels show all relevant information for each individual level\.
 

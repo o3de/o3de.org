@@ -3,7 +3,7 @@ description: ' See the following example for individual AI for tactical points i
   &ALYlong;. '
 title: 'Individual AI: Tactical Points'
 ---
-# Individual AI: Tactical Points<a name="ai-concepts-example-dynamic-tactical-points"></a>
+# Individual AI: Tactical Points {#ai-concepts-example-dynamic-tactical-points}
 
 **Example: A very shy civilian who always wants to hide from the player**
 + Tactical point system \(TPS\) query:

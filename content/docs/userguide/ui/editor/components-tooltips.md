@@ -3,7 +3,7 @@ description: ' Use tooltip components to give an element a tool tip when hoverin
   over it, and configure its display properties in &ALY;''s &ui-canvas-editor;. '
 title: Tooltip Components
 ---
-# Tooltip Components<a name="ui-editor-components-tooltips"></a>
+# Tooltip Components {#ui-editor-components-tooltips}
 
 You can add either a **Tooltip** component or a **TooltipDisplay** component to an element\. With these components, you can display a tooltip when hovering over an interactive element\.
 
@@ -15,7 +15,7 @@ You can open the following canvases:
 + `TextOptions.uicanvas`
 + `Tooltips.uicanvas`
 
-## Tooltip<a name="ui-editor-components-tooltips-tooltips"></a>
+## Tooltip {#ui-editor-components-tooltips-tooltips}
 
 You can use a **Tooltip** component to provide the text of the tooltip\. Add a tooltip component to any interactive element that is to display a tooltip in the pause state\.
 
@@ -25,9 +25,9 @@ You can use a **Tooltip** component to provide the text of the tooltip\. Add a t
 
 1. Enter a text string\.
 
-## TooltipDisplay<a name="ui-editor-components-tooltipsdisplay"></a>
+## TooltipDisplay {#ui-editor-components-tooltipsdisplay}
 
-The **TooltipDisplay** component defines the tooltip's display behavior\. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip\. You must also set the [**Tooltip display element**](/docs/userguide/ui/editor/canvas-properties.md#editor-properties-tooltips) property of the canvas to this element\. For more information, see [Configuring Canvas Properties](/docs/userguide/ui/editor/canvas-properties.md)\.
+The **TooltipDisplay** component defines the tooltip's display behavior\. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip\. You must also set the [**Tooltip display element**](/docs/userguide/ui/editor/canvas-properties#editor-properties-tooltips) property of the canvas to this element\. For more information, see [Configuring Canvas Properties](/docs/userguide/ui/editor/canvas-properties.md)\.
 
 **To edit a TooltipDisplay component**
 + In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **TooltipDisplay** and use the following settings, as appropriate:  

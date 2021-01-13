@@ -2,13 +2,13 @@
 description: ' Set up a Wwise project in &ALYlong;. '
 title: Setting up a Wwise Project
 ---
-# Setting up a Wwise Project<a name="audio-wwise-project-setting-up"></a>
+# Setting up a Wwise Project {#audio-wwise-project-setting-up}
 
 The **Audio Controls Editor** looks for Wwise project files in the `lumberyard_version\dev\game_project\Sounds\wwise_project\` directory\.
 
 Lumberyard looks for the Wwise Soundbanks in the `lumberyard_version\dev\game_project\Sounds\wwise\` directory\.
 
-## Creating a Wwise Project<a name="audio-wwise-creating-new-project"></a>
+## Creating a Wwise Project {#audio-wwise-creating-new-project}
 
 **To create a Wwise project**
 
@@ -48,7 +48,7 @@ Wwise uses the name of your project to create a directory with the same name\. H
 
 1.  Select the `.wproj` file and click **Open**\.
 
-## Generating New Soundbanks<a name="audio-wwise-generating-new-soundbanks"></a>
+## Generating New Soundbanks {#audio-wwise-generating-new-soundbanks}
 
 **To generate new soundbanks**
 
@@ -74,7 +74,7 @@ Wwise uses the name of your project to create a directory with the same name\. H
 
 For information on how to map soundbanks to ATL preloads so that Lumberyard can load them, see [Using the Audio Controls Editor](/docs/userguide/audio/atl-editor.md)\.
 
-## Creating Wwise Events for the Default ATL Controls<a name="audio-wwise-creating-events-default-atl-controls"></a>
+## Creating Wwise Events for the Default ATL Controls {#audio-wwise-creating-events-default-atl-controls}
 
 **To create Wwise events for the default ATL controls**
 

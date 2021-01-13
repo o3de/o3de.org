@@ -2,7 +2,7 @@
 description: ' Learn the new versions of &cloud; lmbr_aws commands in &ALYlong;. '
 title: Command Reorganization
 ---
-# Command Reorganization<a name="cloud-canvas-command-line-revision"></a>
+# Command Reorganization {#cloud-canvas-command-line-revision}
 
 As of Lumberyard 1\.9, the commands made available by the `lmbr_aws` command line tool have been reorganized\. The previous commands are still functional but are subject to removal in a future release\.
 
@@ -48,7 +48,7 @@ The following table shows how the previous commands map to the new commands\. In
 | upload‑lambda‑code | function upload‑code | 
 | upload‑resources |  `deployment upload` `resource‑group upload ` The `upload‑resources` command supported a `‑‑resource‑group` argument\. The `deployment upload` command is the same as `upload‑resources` without the `‑‑resource‑group` argument\. The `resource‑group upload` command is the same as `upload‑resources` with the `‑‑resource‑group` argument\. You can use `deployment update` and `resource‑group update` instead of `deployment upload` and `resource‑group upload`\.  | 
 
-## Argument Aliases<a name="cloud-canvas-command-line-revision-option-aliases"></a>
+## Argument Aliases {#cloud-canvas-command-line-revision-option-aliases}
 
 As a convenience, aliases have been added for the following common arguments\.
 

@@ -2,7 +2,7 @@
 description: ' &ALYlong; FBX Settings Meshes tab export properties and modifiers. '
 title: FBX Settings Meshes tab
 ---
-# FBX Settings Meshes tab<a name="fbx-settings-meshes-tab"></a>
+# FBX Settings Meshes tab {#fbx-settings-meshes-tab}
 
 
 ****  
@@ -24,7 +24,7 @@ All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\)
 + [Touch Bending modifier](#w31aac15b9c11c11c23)
 + [CryPhysics Proxy modifier](#w31aac15b9c11c11c25)
 
-## Meshes tab properties<a name="fbx-settings-meshes-tab-properties"></a>
+## Meshes tab properties {#fbx-settings-meshes-tab-properties}
 
 ![\[The FBX Settings Meshes tab.\]](/images/userguide/fbx/ui-fbx-settings-mesh-tab-1.25.png)
 
@@ -49,7 +49,7 @@ Modifiers add specialized options for processing assets\. Choose the **Add Modif
 + **Touch Bending**
 Some modifiers are not available unless the gem that provides the modifier is enabled in your project\. 
 
-## Cloth modifier<a name="w31aac15b9c11c11c11"></a>
+## Cloth modifier {#w31aac15b9c11c11c11}
 
 ![\[The FBX Settings Meshes tab Cloth modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-cloth-1.27.png)
 
@@ -88,13 +88,13 @@ Select the channel in the vertex color stream that contains backstop offset data
 ****Backstop Radius Channel****  
 Select the channel in the vertex color stream that contains backstop radius data\. 
 
-## Comment modifier<a name="w31aac15b9c11c11c13"></a>
+## Comment modifier {#w31aac15b9c11c11c13}
 
 ![\[The FBX Settings Meshes tab Comment modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed\. Multiple comment modifiers can be added to a mesh group\. 
 
-## Level of Detail modifier<a name="w31aac15b9c11c11c15"></a>
+## Level of Detail modifier {#w31aac15b9c11c11c15}
 
 ![\[The FBX Settings Meshes tab Level of Detail modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-level-of-detail-1.25.png)
 
@@ -113,7 +113,7 @@ You can specify up to five LoDs which are numbered \[`0`\] to \[`4`\], with \[`0
 **Note**  
 When you author the mesh in your 3D application, you can add `_lod1`, `_lod2`, `_lod3`, `_lod4`, `_lod5` as suffixes to your mesh names to automatically add a **Level of Detail** modifier and assign the meshes to appropriate LoDs\. `_lod1` is mapped to \[`0`\], `_lod2` is mapped to \[`1`\], and so on\. 
 
-## Material modifier<a name="w31aac15b9c11c11c17"></a>
+## Material modifier {#w31aac15b9c11c11c17}
 
 ![\[The FBX Settings Meshes tab Material modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-material-1.25.png)
 
@@ -129,7 +129,7 @@ When enabled, updates the texture map file names in the `.mtl` file to match the
 ****Remove unused materials****  
 When enabled, removes materials that are present in the `.mtl` file that are not defined in the `.fbx` file\. 
 
-## Mesh \(Advanced\) modifier<a name="w31aac15b9c11c11c19"></a>
+## Mesh \(Advanced\) modifier {#w31aac15b9c11c11c19}
 
 ![\[The FBX Settings Meshes tab Mesh (Advanced) modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-mesh-1.25.png)
 
@@ -150,7 +150,7 @@ Normals are vertex attributes that define the surface direction of your meshes\.
 If the mesh for this **Mesh group** contains a vertex color stream, it can be selected from this list to be processed\.   
 Vertex color streams contain per vertex color data that can be referenced by materials\. Vertex color streams are also often used for tagging meshes with arbitrary data such as the inverse mass value used in cloth simulation\. Because of this, a mesh might have multiple vertex color streams\. Be sure to select a vertex color stream intended to be referenced by materials if multiple streams exist\. 
 
-## Origin modifier<a name="w31aac15b9c11c11c21"></a>
+## Origin modifier {#w31aac15b9c11c11c21}
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-origin-1.25.png)
 
@@ -168,7 +168,7 @@ Sets the orientation offset of the processed mesh in degrees\.
 ****Scale****  
 Sets the scale offset of the processed mesh\.
 
-## Touch Bending modifier<a name="w31aac15b9c11c11c23"></a>
+## Touch Bending modifier {#w31aac15b9c11c11c23}
 
 ![\[The FBX Settings Meshes tab Touch Bending modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-touch-bending-1.25.png)
 
@@ -191,7 +191,7 @@ Set a damping value between **0\.0** and **1\.0** for all branches to define how
 ****Thickness****  
 Set a thickness value for all branches to define the amount of bending\. Thickness is determined as the radius of a cylinder in meters\. Most often a small decimal number less than **1\.0** is required\. Valid values range from **0\.00001** to infinity\. 
 
-## CryPhysics Proxy modifier<a name="w31aac15b9c11c11c25"></a>
+## CryPhysics Proxy modifier {#w31aac15b9c11c11c25}
 
 ![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy-1.25.png)
 

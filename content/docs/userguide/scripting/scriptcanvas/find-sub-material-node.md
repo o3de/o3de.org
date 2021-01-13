@@ -3,7 +3,7 @@ description: ' Use the Find Sub-Material node in the &ALYlong; &script-canvas; e
   to find and return a submaterial with the specified name and submaterial ID. '
 title: Find Sub-Material
 ---
-# Find Sub\-Material<a name="script-canvas-find-sub-material-node"></a>
+# Find Sub\-Material {#script-canvas-find-sub-material-node}
 
 Finds and returns the submaterial with the specified name and submaterial ID\.
 
@@ -21,7 +21,7 @@ To access a single material, you can use the **[Find by Name](/docs/userguide/ma
 
 ![\[findsubmaterial, findsubmaterial, findsubmaterialnode, findchildmaterial\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-find-sub-material-node.png)
 
-## Inputs<a name="script-canvas-find-sub-material-node-input"></a>
+## Inputs {#script-canvas-find-sub-material-node-input}
 
 
 ****  
@@ -33,7 +33,7 @@ To access a single material, you can use the **[Find by Name](/docs/userguide/ma
 | Material ID | Number | ID of the submaterial in the multimaterial\. IDs start at 1\. | 
 | Should Load | Boolean | If true, the submaterial is loaded if it is not already available\. | 
 
-## Outputs<a name="script-canvas-find-sub-material-node-output"></a>
+## Outputs {#script-canvas-find-sub-material-node-output}
 
 
 ****  

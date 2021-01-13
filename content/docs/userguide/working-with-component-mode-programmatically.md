@@ -2,7 +2,7 @@
 description: ' Use &CM; to edit programmatically components in &ALYlong;. '
 title: Programmer's Guide to &CM;
 ---
-# Programmer's Guide to Component Mode<a name="working-with-component-mode-programmatically"></a>
+# Programmer's Guide to Component Mode {#working-with-component-mode-programmatically}
 
 
 ****  

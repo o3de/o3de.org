@@ -3,7 +3,7 @@ description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; e
   to return a material''s Vector3 parameter value for the specified entity. '
 title: Get Param Vector3
 ---
-# Get Param Vector3<a name="material-owner-get-param-vector3-node"></a>
+# Get Param Vector3 {#material-owner-get-param-vector3-node}
 
 Returns a material's **Vector3** parameter value for the specified entity\.
 
@@ -13,7 +13,7 @@ Returns a material's **Vector3** parameter value for the specified entity\.
 
 ![\[getparamvector3node, getparamvector3\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-param-vector3-material-owner-node.png)
 
-## Inputs<a name="material-owner-get-param-vector3-node-input"></a>
+## Inputs {#material-owner-get-param-vector3-node-input}
 
 
 ****  
@@ -25,7 +25,7 @@ Returns a material's **Vector3** parameter value for the specified entity\.
 | Param Name | String |  The name of the material parameter to query\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
 | Material ID | Number | If the material owner has a multimaterial, use this parameter to select a specific submaterial\. IDs start at 1\. | 
 
-## Outputs<a name="material-owner-get-param-vector3-node-output"></a>
+## Outputs {#material-owner-get-param-vector3-node-output}
 
 
 ****  

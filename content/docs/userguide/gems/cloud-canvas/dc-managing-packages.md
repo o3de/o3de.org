@@ -2,11 +2,11 @@
 description: ' Manage dynamic content game packages in &ALYlong;. '
 title: Managing Dynamic Content Packages
 ---
-# Managing Dynamic Content Packages<a name="cloud-canvas-cloud-gem-dc-managing-packages"></a>
+# Managing Dynamic Content Packages {#cloud-canvas-cloud-gem-dc-managing-packages}
 
 The Dynamic Content Cloud Gem provides an easy way for you to update your game content for your customers\. After a release, you can update content without an app submission or traditional patch process\. The Dynamic Content Cloud Gem provides a framework for you to group outdated assets into manifests\. You can assign groups of assets together into `.pak` files \(`.zip` files\), and distribute these files to customers according to your own rules or schedules\.
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-dc-managing-packages-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-dc-managing-packages-prerequisites}
 
 To use the Dynamic Content Cloud Gem, you must meet these requirements:
 + You must be using a Lumberyard Editor project that has the Dynamic Content Cloud Gem enabled \(in the Project Configurator, select **Cloud Gem Dynamic Content**\)\.
@@ -30,7 +30,7 @@ To use the Dynamic Content Cloud Gem, you must meet these requirements:
    The loaded page shows the packages \(`.pak` files\) that you added when you used **Dynamic Content Manager**\.  
 ![\[List of dynamic content packages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-3.png)
 
-## Dynamic Content Package Stages<a name="cloud-canvas-cloud-gem-dc-managing-packages-stages"></a>
+## Dynamic Content Package Stages {#cloud-canvas-cloud-gem-dc-managing-packages-stages}
 
 You can use separate deployment stacks to handle different release workflows\. For this purpose, the Dynamic Content Cloud Gem currently supports the following publishing stages\.
 + **Private** – The packages are never downloaded by the game client\. When you upload new or altered content to the cloud from **Dynamic Content Manager**, your packages and manifest are always put in the **Private** stage\. This empowers you to choose when and how your changes are released to customers\.
@@ -39,7 +39,7 @@ You can use separate deployment stacks to handle different release workflows\. F
 
 You can use these stages to add an additional layer of protection against inadvertent deployments of dynamic content to your players\.
 
-## Package Nesting<a name="cloud-canvas-cloud-gem-dc-managing-packages-nesting"></a>
+## Package Nesting {#cloud-canvas-cloud-gem-dc-managing-packages-nesting}
 
 Each stage includes entries for your manifests and packages\. Packages are nested according to the hierarchy that you determine when you create them\. In the following example, the two root\-level manifest packages highlighted in yellow have one child asset package each, which are highlighted in gold\.
 
@@ -55,7 +55,7 @@ The icons next to the package names show the actions available for the packages\
 | ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-5.png)  | You can edit or delete root level packages\. | 
 |  ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-6.png)  | You can only delete child packages\. | 
 
-## Editing Packages<a name="cloud-canvas-cloud-gem-dc-managing-packages-editing"></a>
+## Editing Packages {#cloud-canvas-cloud-gem-dc-managing-packages-editing}
 
 Editing is triggered when you drag and drop a root\-level package from one stage to another\.
 
@@ -70,13 +70,13 @@ When you edit a package, you can alter its **Transition**, **Scheduling**, and *
 
    By default all children move with the root package\. If you clear the selection for some children, they become orphans in the current stage and no longer visible to the game client\.
 
-## Deleting Packages<a name="cloud-canvas-cloud-gem-dc-managing-packages-deleting"></a>
+## Deleting Packages {#cloud-canvas-cloud-gem-dc-managing-packages-deleting}
 
 Deleting a root package causes its child packages to become orphans that are no longer visible to the game client\. Accordingly, when you delete a package, the following confirmation message appears\.
 
 ![\[Deleting a package\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-9.png)
 
-## Displaying Package Metadata<a name="cloud-canvas-cloud-gem-dc-managing-packages-displaying-metadata"></a>
+## Displaying Package Metadata {#cloud-canvas-cloud-gem-dc-managing-packages-displaying-metadata}
 
 To display the metadata for a package, click the space next to the package name\. The metadata for the package appears at the bottom of the browser\.
 

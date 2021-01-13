@@ -2,7 +2,7 @@
 description: ' Learn how to delete &script-canvas; nodes in &ALYlong;. '
 title: Deleting Nodes
 ---
-# Deleting Nodes<a name="script-canvas-working-with-nodes-deleting"></a>
+# Deleting Nodes {#script-canvas-working-with-nodes-deleting}
 
 Script Canvas offers a variety of techniques for deleting nodes\.
 

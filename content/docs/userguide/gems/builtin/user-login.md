@@ -3,6 +3,6 @@ description: ' Use the UserLoginDefault Gem in your &ALY; game project to implem
   a default user login. '
 title: User Login Default Gem
 ---
-# User Login Default Gem<a name="gems-system-gem-user-login"></a>
+# User Login Default Gem {#gems-system-gem-user-login}
 
 The UserLoginDefault Gem provides a default user login implementation for all platforms, which is useful for testing and debugging\.

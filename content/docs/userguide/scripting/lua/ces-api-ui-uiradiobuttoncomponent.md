@@ -2,15 +2,15 @@
 description: ' Use UiRadioButtonComponent to implement a UI radio button in &ALYlong;. '
 title: UiRadioButtonComponent
 ---
-# UiRadioButtonComponent<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent"></a>
+# UiRadioButtonComponent {#lua-scripting-ces-api-ui-uiradiobuttoncomponent}
 
 You can use `UiRadioButtonComponent` to implement a UI radio button in Amazon Lumberyard\.
 
-## UiRadioButtonBus<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus"></a>
+## UiRadioButtonBus {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus}
 
 Services messages for the `UiRadioButtonComponent`\.
 
-### GetState<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getstate"></a>
+### GetState {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getstate}
 
 Returns the state of the radio button\. True if selected; false otherwise\.
 
@@ -20,7 +20,7 @@ Returns the state of the radio button\. True if selected; false otherwise\.
 bool GetState()
 ```
 
-### GetGroup<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getgroup"></a>
+### GetGroup {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getgroup}
 
 Returns the group of the radio button\.
 
@@ -30,7 +30,7 @@ Returns the group of the radio button\.
 AZ::EntityId GetGroup()
 ```
 
-### GetCheckedEntity<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getcheckedentity"></a>
+### GetCheckedEntity {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getcheckedentity}
 
 Returns the child element that is shown when the radio button is selected\.
 
@@ -40,7 +40,7 @@ Returns the child element that is shown when the radio button is selected\.
 AZ::EntityId GetCheckedEntity()
 ```
 
-### SetCheckedEntity<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setcheckedentity"></a>
+### SetCheckedEntity {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setcheckedentity}
 
 Sets the child element to show when the radio button is selected\.
 
@@ -50,7 +50,7 @@ Sets the child element to show when the radio button is selected\.
 void SetCheckedEntity(AZ::EntityId entityId)
 ```
 
-### GetUncheckedEntity<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getuncheckedentity"></a>
+### GetUncheckedEntity {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getuncheckedentity}
 
 Returns the child element that is shown when the radio button is cleared\.
 
@@ -60,7 +60,7 @@ Returns the child element that is shown when the radio button is cleared\.
 AZ::EntityId GetUncheckedEntity()
 ```
 
-### SetUncheckedEntity<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setuncheckedentity"></a>
+### SetUncheckedEntity {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setuncheckedentity}
 
 Sets the child element to show when the radio button is cleared\.
 
@@ -70,7 +70,7 @@ Sets the child element to show when the radio button is cleared\.
 void SetUncheckedEntity(AZ::EntityId entityId)
 ```
 
-### GetTurnOnActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getturnonactionname"></a>
+### GetTurnOnActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getturnonactionname}
 
 Returns the name of the action that is triggered when the radio button is selected\. 
 
@@ -80,7 +80,7 @@ Returns the name of the action that is triggered when the radio button is select
 const AZStd::string& GetTurnOnActionName()
 ```
 
-### SetTurnOnActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setturnonactionname"></a>
+### SetTurnOnActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setturnonactionname}
 
 Sets the action triggered when the radio button is selected\.
 
@@ -90,7 +90,7 @@ Sets the action triggered when the radio button is selected\.
 void SetTurnOnActionName(const AZStd::string & actionName)
 ```
 
-### GetTurnOffActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getturnoffactionname"></a>
+### GetTurnOffActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getturnoffactionname}
 
 Returns the action triggered when the radio button is cleared\.
 
@@ -100,7 +100,7 @@ Returns the action triggered when the radio button is cleared\.
 const AZStd::string & GetTurnOffActionName() 
 ```
 
-### SetTurnOffActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setturnoffactionname"></a>
+### SetTurnOffActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setturnoffactionname}
 
 Sets the action triggered when the radio button is cleared\.
 
@@ -110,7 +110,7 @@ Sets the action triggered when the radio button is cleared\.
 void SetTurnOffActionName(const AZStd::string & actionName)
 ```
 
-### GetChangedActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getchangedactionname"></a>
+### GetChangedActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getchangedactionname}
 
 Returns the action triggered when the radio button value changes\.
 
@@ -120,7 +120,7 @@ Returns the action triggered when the radio button value changes\.
 AZStd::string & GetChangedActionName()
 ```
 
-### SetChangedActionName<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setchangedactionname"></a>
+### SetChangedActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setchangedactionname}
 
 Sets the action triggered when the radio button value changes\.
 
@@ -130,11 +130,11 @@ Sets the action triggered when the radio button value changes\.
 void SetChangedActionName(const AZStd::string& actionName)
 ```
 
-## UiRadioButtonCommunicationBus<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus"></a>
+## UiRadioButtonCommunicationBus {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus}
 
 Allows communication between the radio button group and a radio button\. 
 
-### SetState<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus-setstate"></a>
+### SetState {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus-setstate}
 
 Sets the state of the radio button\. True if selected; false otherwise\.
 
@@ -144,7 +144,7 @@ Sets the state of the radio button\. True if selected; false otherwise\.
 void SetState(bool checked)
 ```
 
-### SetGroup<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus-setgroup"></a>
+### SetGroup {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus-setgroup}
 
 Sets the group of the radio button\.
 
@@ -154,11 +154,11 @@ Sets the group of the radio button\.
 void SetGroup(AZ:EntityId group)
 ```
 
-## UiRadioButtonNotificationBus<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus"></a>
+## UiRadioButtonNotificationBus {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus}
 
 Services notifications for the `UiRadioButtonComponent`\. 
 
-### OnRadioButtonStateChange<a name="lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus-onradiobuttonstatechange"></a>
+### OnRadioButtonStateChange {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus-onradiobuttonstatechange}
 
 Notifies that the radio button state has changed\.
 

@@ -2,7 +2,7 @@
 description: ' Use &ALY; to build game assets for your macOS games. '
 title: Building Game Assets for macOS Games
 ---
-# Building Game Assets for macOS Games<a name="osx-assets-building"></a>
+# Building Game Assets for macOS Games {#osx-assets-building}
 
 
 ****  

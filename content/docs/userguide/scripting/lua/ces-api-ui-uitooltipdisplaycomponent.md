@@ -3,15 +3,15 @@ description: ' Use the UITooltipDisplayComponent to control the display behavior
   a tooltip in &ALYlong;. '
 title: UITooltipDisplayComponent
 ---
-# UITooltipDisplayComponent<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent"></a>
+# UITooltipDisplayComponent {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent}
 
 Controls the display behavior of a tooltip\.
 
-## UiTooltipDisplayBus<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus"></a>
+## UiTooltipDisplayBus {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus}
 
 Services messages for the `UiTooltipDisplayComponent`\.
 
-### GetAutoPosition<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautoposition"></a>
+### GetAutoPosition {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautoposition}
 
 Returns whether the tooltip display element is auto positioned\.
 
@@ -21,7 +21,7 @@ Returns whether the tooltip display element is auto positioned\.
 bool GetAutoPosition()
 ```
 
-### GetAutoPositionMode<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautopositionmode"></a>
+### GetAutoPositionMode {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautopositionmode}
 
 Returns the auto position mode\.
 
@@ -41,7 +41,7 @@ enum AutoPositionMode
     };
 ```
 
-### GetAutoSize<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautosize"></a>
+### GetAutoSize {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getautosize}
 
 Returns whether the tooltip display element should be resized so that the text element size matches the size of the string\.
 
@@ -51,7 +51,7 @@ Returns whether the tooltip display element should be resized so that the text e
 bool GetAutoSize()
 ```
 
-### GetDelayTime<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getdelaytime"></a>
+### GetDelayTime {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getdelaytime}
 
 Returns the amount of time to wait before showing the tooltip display element after the trigger condition has occurred\.
 
@@ -61,7 +61,7 @@ Returns the amount of time to wait before showing the tooltip display element af
 float GetDelayTime()
 ```
 
-### GetDisplayTime<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getdisplaytime"></a>
+### GetDisplayTime {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getdisplaytime}
 
 Returns the amount of time the tooltip display element is to remain visible\.
 
@@ -71,7 +71,7 @@ Returns the amount of time the tooltip display element is to remain visible\.
 float GetDisplayTime()
 ```
 
-### GetOffset<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getoffset"></a>
+### GetOffset {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-getoffset}
 
 Returns the offset from the tooltip display element's pivot to the mouse position\.
 
@@ -81,7 +81,7 @@ Returns the offset from the tooltip display element's pivot to the mouse positio
 const AZ::Vector2& GetOffset()
 ```
 
-### GetTextEntity<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-gettextentity"></a>
+### GetTextEntity {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-gettextentity}
 
 Returns the entity ID of the text element that is used for resizing\.
 
@@ -91,7 +91,7 @@ Returns the entity ID of the text element that is used for resizing\.
 AZ::EntityId GetTextEntity()
 ```
 
-### GetTriggerMode<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-gettriggermode"></a>
+### GetTriggerMode {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-gettriggermode}
 
 Returns the trigger mode describing the condition under which the tooltip will be displayed\.
 
@@ -114,7 +114,7 @@ enum TriggerMode
     };
 ```
 
-### SetAutoPosition<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautoposition"></a>
+### SetAutoPosition {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautoposition}
 
 Sets whether the tooltip display element is auto positioned\.
 
@@ -124,7 +124,7 @@ Sets whether the tooltip display element is auto positioned\.
 void SetAutoPosition(bool autoPosition)
 ```
 
-### SetAutoPositionMode<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautopositionmode"></a>
+### SetAutoPositionMode {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautopositionmode}
 
 Sets the auto position mode\.
 
@@ -144,7 +144,7 @@ enum AutoPositionMode
     };
 ```
 
-### SetAutoSize<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautosize"></a>
+### SetAutoSize {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setautosize}
 
 Sets whether the tooltip display element should be resized so that the text element size matches the size of the string\.
 
@@ -154,7 +154,7 @@ Sets whether the tooltip display element should be resized so that the text elem
 void SetAutoSize(bool autoSize)
 ```
 
-### SetDelayTime<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setdelaytime"></a>
+### SetDelayTime {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setdelaytime}
 
 Sets the amount of time to wait before showing the tooltip display element after the trigger condition has occurred\.
 
@@ -164,7 +164,7 @@ Sets the amount of time to wait before showing the tooltip display element after
 void SetDelayTime(float delayTime)
 ```
 
-### SetDisplayTime<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setdisplaytime"></a>
+### SetDisplayTime {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setdisplaytime}
 
 Sets the amount of time the tooltip display element is to remain visible\.
 
@@ -174,7 +174,7 @@ Sets the amount of time the tooltip display element is to remain visible\.
 void SetDisplayTime(float displayTime)
 ```
 
-### SetOffset<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setoffset"></a>
+### SetOffset {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-setoffset}
 
 Sets the offset from the tooltip display element's pivot to the mouse position\.
 
@@ -184,7 +184,7 @@ Sets the offset from the tooltip display element's pivot to the mouse position\.
 void SetOffset(const AZ::Vector2& offset)
 ```
 
-### SetTextEntity<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-settextentity"></a>
+### SetTextEntity {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-settextentity}
 
 Sets the entity ID of the text element that is used for resizing\. The text element must be a child of this entity\.
 
@@ -194,7 +194,7 @@ Sets the entity ID of the text element that is used for resizing\. The text elem
 void SetTextEntity(AZ::EntityId textEntity)
 ```
 
-### SetTriggerMode<a name="lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-settriggermode"></a>
+### SetTriggerMode {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent-uitooltipdisplaybus-settriggermode}
 
 Sets the trigger condition for displaying the tooltip after the set amount of delay time has elapsed\.
 

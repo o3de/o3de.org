@@ -2,11 +2,11 @@
 description: ' Use the Illum shader to create a variety of effects in &ALYlong;. '
 title: Illum Shader
 ---
-# Illum Shader<a name="shader-ref-illum"></a>
+# Illum Shader {#shader-ref-illum}
 
 The Illum shader is the most commonly used shader\. You can use this shader to create a variety of effects\.
 
-## Shader Parameters<a name="shader-ref-illum-shader-parameters"></a>
+## Shader Parameters {#shader-ref-illum-shader-parameters}
 
 **Blend Factor**  
 Controls the visibility of the blended layer\.  
@@ -117,7 +117,7 @@ Controls subsurface scattering profile \(SSS\) and the amount\.
 Valid value ranges: 0\.01–0\.99 for marble; 1\.00–1\.99 for skin\.  
 Default value: 1\.2
 
-## Shader Generation Parameters<a name="shader-ref-illum-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-illum-shader-generation-parameters}
 
 **Detail mapping**  
 Enables detail mapping\. This option requires a **Detail** map, which you can select under the **Texture Maps** heading\.
@@ -139,7 +139,7 @@ You must add vertex colors to the geometry in the DCC tool\.
 
 **Decal**  
 Applies a decal appearance when enabled for a material\. Decal planes are normally placed close to other geometry\.  
-Use this parameter to prevent flickering and [z\-fighting](/docs/userguide/ly-glos-chap.md#z_fighting) when faces are close to each other\.
+Use this parameter to prevent flickering and [z\-fighting](/docs/userguide/ly-glos-chap#z_fighting) when faces are close to each other\.
 
 **[Parallax occlusion mapping](/docs/userguide/materials/maps/parallax-blending.md)**  
 Enables parallax occlusion mapping\. This option requires a heightmap, which you can select for the **Normal Map** option under the **Texture Maps** heading\.

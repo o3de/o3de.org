@@ -2,7 +2,7 @@
 description: ' Learn useful networking console commands for &ALYlong;. '
 title: Useful Console Commands
 ---
-# Useful Console Commands<a name="network-console-commands"></a>
+# Useful Console Commands {#network-console-commands}
 
 Use the following commands in Lumberyard when working with a network server\.
 

@@ -2,7 +2,7 @@
 description: ' Use level of detail for fur materials in &ALYlong;. '
 title: Level of Detail
 ---
-# Level of Detail<a name="shader-ref-fur-features-levelofdetail"></a>
+# Level of Detail {#shader-ref-fur-features-levelofdetail}
 
 Fur rendering level of detail uses many of the same mechanics as mesh level of detail\. 
 

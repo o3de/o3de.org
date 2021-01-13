@@ -3,7 +3,7 @@ description: ' Use virtual file system on non-PC platforms in order to live relo
   assets in &ALYlong;.s '
 title: Live Reloading and VFS
 ---
-# Live Reloading and VFS<a name="asset-pipeline-live-reloading"></a>
+# Live Reloading and VFS {#asset-pipeline-live-reloading}
 
 On the PC platform, live reloading does not require virtual file system \(VFS\), since the PC that is running the game is presumably also running the Asset Processor\.
 

@@ -2,13 +2,13 @@
 description: ' Create a variety of game builds in &ALYlong; for different purposes. '
 title: Building &ALY; projects
 ---
-# Building Lumberyard projects<a name="game-build-intro"></a>
+# Building Lumberyard projects {#game-build-intro}
 
 Building your Amazon Lumberyard game is the most important part of the development process \- it's how you debug, test, and distribute\. In this section of the guide, you'll learn how to configure your Lumberyard builds, get started with your first build, see which build types are available and what they offer, and how to use the Waf build system\. 
 
 For instructions on bundling assets and distributing them with a release build, see [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)\. 
 
-## Your First Lumberyard Build<a name="game-build-intro-config-and-build"></a>
+## Your First Lumberyard Build {#game-build-intro-config-and-build}
 
 One of the first things you'll want to do with Lumberyard is configure the build system and see your [configured game project](/docs/userguide/configurator/intro.md) running as a stand\-alone executable or Visual Studio Solution\. 
 
@@ -38,7 +38,7 @@ Compile the Lumberyard Editor and tools
 
 To learn the general steps for creating a release build in Lumberyard, see [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md)\. For more information about creating release builds for Android and iOS, see [Developing for Android and iOS with Lumberyard](/docs/userguide/mobile/support-intro.md)\.
 
-## Topics<a name="game-build-intro-topics"></a>
+## Topics {#game-build-intro-topics}
 
 
 | Topic | Description | 

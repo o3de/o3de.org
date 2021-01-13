@@ -2,15 +2,15 @@
 description: ' Use the UiLayout component to provide UI layout features in &ALYlong;. '
 title: UiLayout
 ---
-# UiLayout<a name="lua-scripting-ces-api-ui-uilayout"></a>
+# UiLayout {#lua-scripting-ces-api-ui-uilayout}
 
 Provides common functionality for row, column, and grid layouts\.
 
-## UiLayoutBus<a name="lua-scripting-ces-api-ui-uilayout-uilayoutbus"></a>
+## UiLayoutBus {#lua-scripting-ces-api-ui-uilayout-uilayoutbus}
 
 Services messages for the `UILayout` components\.
 
-### GetHorizontalChildAlignment<a name="lua-scripting-ces-api-ui-uilayout-gethorizontalchildalignment"></a>
+### GetHorizontalChildAlignment {#lua-scripting-ces-api-ui-uilayout-gethorizontalchildalignment}
 
 Returns the horizontal child alignment\.
 
@@ -31,7 +31,7 @@ enum eUiHAlign
     };
 ```
 
-### GetIgnoreDefaultLayoutCells<a name="lua-scripting-ces-api-ui-uilayout-getignoredefaultlayoutcells"></a>
+### GetIgnoreDefaultLayoutCells {#lua-scripting-ces-api-ui-uilayout-getignoredefaultlayoutcells}
 
 Returns whether default layout cell values calculated by other components on the child are ignored\.
 
@@ -41,7 +41,7 @@ Returns whether default layout cell values calculated by other components on the
 bool GetIgnoreDefaultLayoutCells()
 ```
 
-### GetVerticalChildAlignment<a name="lua-scripting-ces-api-ui-uilayout-getverticalchildalignment"></a>
+### GetVerticalChildAlignment {#lua-scripting-ces-api-ui-uilayout-getverticalchildalignment}
 
 Returns the vertical child alignment\.
 
@@ -62,7 +62,7 @@ enum eUiVAlign
     };
 ```
 
-### SetHorizontalChildAlignment<a name="lua-scripting-ces-api-ui-uilayout-sethorizontalchildalignment"></a>
+### SetHorizontalChildAlignment {#lua-scripting-ces-api-ui-uilayout-sethorizontalchildalignment}
 
 Sets the horizontal child alignment\.
 
@@ -74,7 +74,7 @@ void SetHorizontalChildAlignment(eUiHAlign hAlign)
 
 For possible values for `eUiHAlign`, see [GetHorizontalChildAlignment](#lua-scripting-ces-api-ui-uilayout-gethorizontalchildalignment)\.
 
-### SetIgnoreDefaultLayoutCells<a name="lua-scripting-ces-api-ui-uilayout-setignoredefaultlayoutcells"></a>
+### SetIgnoreDefaultLayoutCells {#lua-scripting-ces-api-ui-uilayout-setignoredefaultlayoutcells}
 
 Sets whether default layout cell values calculated by other components on the child are ignored\.
 
@@ -84,7 +84,7 @@ Sets whether default layout cell values calculated by other components on the ch
 void SetIgnoreDefaultLayoutCells (bool ignore)
 ```
 
-### SetVerticalChildAlignment<a name="lua-scripting-ces-api-ui-uilayout-setverticalchildalignment"></a>
+### SetVerticalChildAlignment {#lua-scripting-ces-api-ui-uilayout-setverticalchildalignment}
 
 Sets the vertical child alignment\.
 

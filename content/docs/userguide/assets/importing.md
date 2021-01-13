@@ -3,11 +3,11 @@ description: ' You can manually import your asset files into &ALYlong; or use th
   Import option in the editor. '
 title: Importing Assets into &ALY;
 ---
-# Importing Assets into Lumberyard<a name="asset-pipeline-importing"></a>
+# Importing Assets into Lumberyard {#asset-pipeline-importing}
 
 You can import assets into your Lumberyard game project directory with one of the following\.
 
-## Importing Assets Manually into Lumberyard<a name="import-assets-manually"></a>
+## Importing Assets Manually into Lumberyard {#import-assets-manually}
 
 You can import assets even if Lumberyard isn't running\. You can do this at any time\.
 
@@ -19,7 +19,7 @@ You can import assets even if Lumberyard isn't running\. You can do this at any 
    + If Asset Processor is running, it detects the new files and converts them for use in Lumberyard Editor\.
    + If Asset Processor isn't running, Asset Processor automatically detects the new files the next time you start Lumberyard Editor\.
 
-## Importing Assets from Lumberyard Editor<a name="import-assets-in-lumberyard-editor"></a>
+## Importing Assets from Lumberyard Editor {#import-assets-in-lumberyard-editor}
 
 **To import assets from Lumberyard Editor**
 
@@ -37,7 +37,7 @@ You can import assets to a directory only in the current game project\.
 1. In the **Processing asset** dialog box, click **View status** to check the status of your assets\.  
 ![\[Track the progress of Asset Processor processing your assets.\]](/images/userguide/assets/pipeline/asset-pipeline-importing-processing-status.png)
 
-## Tutorials: Importing Assets into Lumberyard<a name="impoting-assets-into-lumberyard-tutorials"></a>
+## Tutorials: Importing Assets into Lumberyard {#impoting-assets-into-lumberyard-tutorials}
 
 To learn more about importing your assets, see the following video tutorials:
 + [Tutorials: Importing FBX Files as Actors and Motions](/docs/userguide/importing-fbx-files-as-actors-motions.md)

@@ -3,7 +3,7 @@ description: ' Use the console window in &ly-editor; to update the value for con
   variables or type commands. '
 title: Using the Console Window
 ---
-# Using the Console Window<a name="console-intro"></a>
+# Using the Console Window {#console-intro}
 
 In Lumberyard Editor, the console window shows a running list of all editor commands, processes, and output\. For example, when you delete an entity, the console shows the action and the output\. You can use the console to enter or modify console variables \(CVARs\)\. Console variables are a type of variable that you can manipulate in Lumberyard Editor\.
 
@@ -14,7 +14,7 @@ In Lumberyard Editor, the console window shows a running list of all editor comm
 + [Console in Depth](/docs/userguide/system-console.md)
 + [Console Variable Tutorial](/docs/userguide/system-cvar-tutorial.md)
 
-## Viewing the Console Window<a name="viewing-the-console-window"></a>
+## Viewing the Console Window {#viewing-the-console-window}
 
 You can enter commands directly in the console window or search and edit console variables\. 
 
@@ -28,7 +28,7 @@ You can enter commands directly in the console window or search and edit console
 1. Enter a name to search for a specific console variable\. To learn more about the console variable, pause on the name\.  
 ![\[View console variables in the console window.\]](/images/userguide/console-variables.png)
 
-## Exporting All Console Commands and Variables<a name="exporting-console-variables-cvars"></a>
+## Exporting All Console Commands and Variables {#exporting-console-variables-cvars}
 
 You can retrieve a complete list of console commands and variables, including their descriptions and assigned values\. 
 
@@ -44,7 +44,7 @@ You can retrieve a complete list of console commands and variables, including th
 
 1. You can specify a sub\-string parameter to restrict the results that you want\. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`\.
 
-## Configuring Console Variables<a name="configuring-console-variables-cvars"></a>
+## Configuring Console Variables {#configuring-console-variables-cvars}
 
 Console variables can also be set in code or specified in configuration files\. Console variables are executed in the following order:
 
@@ -60,7 +60,7 @@ Console variables can also be set in code or specified in configuration files\. 
 
 The order of execution is also the override order\. For example, console variables set in code override those set in configuration files \(and `level.cfg` overrides `user.cfg`, and so on\)\. Console variables set in flow graphs override any identical console variables set in code\. Finally, console variables typed directly into the console override all the other console variable settings\.
 
-### Configuring Console Variables in the Console<a name="configuring-console-variables-cvars-with-the-console"></a>
+### Configuring Console Variables in the Console {#configuring-console-variables-cvars-with-the-console}
 
 You can specify values for console variables in the console to apply changes to your level\. 
 
@@ -69,7 +69,7 @@ You can specify values for console variables in the console to apply changes to 
   + In the **Console Variables** window, search for the variable name, double\-click the value, and then enter the value that you want\.
   + In the **Console** command line, enter the console variable and its value, and then press **Enter**\. For example, enter the r\_DisplayInfo=1 command to display debugging information in the viewport\.
 
-### Configuring Console Variables in Configuration Files<a name="configuring-console-variables-cvars-with-the-configuration-file"></a>
+### Configuring Console Variables in Configuration Files {#configuring-console-variables-cvars-with-the-configuration-file}
 
 You can specify values for console variables in the configuration files, such as the level configuration file \( `level.cfg`\)\.
 

@@ -3,7 +3,7 @@ description: ' Use the Starter Game sample and its free character, game, and env
   assets to build your own gameplay space in &ALYlong;. '
 title: Starter Game Sample
 ---
-# Starter Game Sample<a name="sample-level-starter-game"></a>
+# Starter Game Sample {#sample-level-starter-game}
 
 You can use the Starter Game sample to see how Lumberyard systems work together to make a game\. Starter Game is a small, third\-person game that is built with the Lumberyard component entity system\. In addition to component entities, Starter Game demonstrates bipedal locomotion, the Dynamic Vegetation system, the Script Canvas visual scripting system, use of PhysX as the physics system, and more\. In this sample, you play as Valena, a human who has crashed on a distant planet\. Valena can explore the world and must defend herself against enemy robots that occupy the planet\.
 
@@ -41,4 +41,4 @@ All reusable assets and scripts have been placed into the following Asset Gems, 
 
    If you're running Starter Game in the editor and Valena dies, press **Esc** to exit the game\.
 **Note**  
-To toggle debugging information on and off in the viewport when you're in gameplay mode, press the tilde \(**\~**\) key\. For more information, see [Using Console Debug Views](/docs/userguide/debugging/intro.md#debugging-debug-views)\.
+To toggle debugging information on and off in the viewport when you're in gameplay mode, press the tilde \(**\~**\) key\. For more information, see [Using Console Debug Views](/docs/userguide/debugging/intro#debugging-debug-views)\.

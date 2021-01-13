@@ -3,7 +3,7 @@ description: ' Use the Find by Name and Index node in the &ALYlong; &script-canv
   editor to find the substance material and graph index. '
 title: Find by Name and Index
 ---
-# Find by Name and Index<a name="find-by-name-and-index-node"></a>
+# Find by Name and Index {#find-by-name-and-index-node}
 
 Finds a procedural material by the substance file name and the index of a graph\. All substance files contain one or more graphs, and these graphs correspond to a procedural material\. 
 
@@ -29,7 +29,7 @@ Finds a procedural material by the substance file name and the index of a graph\
 
    1. For **Graph Index**, specify the graph that you want\. The far\-left tab is index `0`, the next is `1`, and so on\. If the substance material has only one graph, leave the **Graph Index** field as `0`\.
 
-## Inputs<a name="find-by-name-and-index-node-input"></a>
+## Inputs {#find-by-name-and-index-node-input}
 
 
 ****  
@@ -41,7 +41,7 @@ Finds a procedural material by the substance file name and the index of a graph\
 | Graph Index | Number |  Index of the specific graph in the substance material\.  Default value: `0`  | 
 | Force Load | Boolean | Forces the procedural material to load, if it's not already loaded\. | 
 
-## Outputs<a name="find-by-name-and-index-node-output"></a>
+## Outputs {#find-by-name-and-index-node-output}
 
 
 ****  

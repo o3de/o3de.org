@@ -3,7 +3,7 @@ description: ' Use the Enable Rain Drops node in the &ALYlong; &script-canvas; e
   to configure raindrops on the screen. '
 title: Enable Rain Drops
 ---
-# Enable Rain Drops<a name="enable-rain-drops-node"></a>
+# Enable Rain Drops {#enable-rain-drops-node}
 
 Apply raindrops on the screen\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Rain Drops](/docs/userguide/rendering/disabl
 
 ![\[Use the Enable Rain Drops node to enable raindrops falling on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-rain-drops-node-example.gif)
 
-## Inputs<a name="enable-rain-drops-note-input"></a>
+## Inputs {#enable-rain-drops-note-input}
 
 
 ****  
@@ -32,7 +32,7 @@ To disable the effect, see [Disable Rain Drops](/docs/userguide/rendering/disabl
 |  Size  | Number |  Specifies the raindrop size\. Default value: `5.0`  | 
 | Size Variation | Number |  Sets raindrops variation\. Default value: `2.5`  | 
 
-## Outputs<a name="enable-rain-drops-node-output"></a>
+## Outputs {#enable-rain-drops-node-output}
 
 
 ****  

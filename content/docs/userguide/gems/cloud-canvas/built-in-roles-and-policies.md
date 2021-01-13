@@ -3,15 +3,15 @@ description: ' Use &cloud; built-in roles and policies to manage resource and de
   permissions. '
 title: '&cloud; Built-In Roles and Policies'
 ---
-# Cloud Canvas Built\-In Roles and Policies<a name="cloud-canvas-built-in-roles-and-policies"></a>
+# Cloud Canvas Built\-In Roles and Policies {#cloud-canvas-built-in-roles-and-policies}
 
 You can use the built\-in Cloud Canvas roles and policies to manage resource and deployment permissions for your project\.
 
-## Built\-In Roles<a name="cloud-canvas-rm-security-roles-policies-roles"></a>
+## Built\-In Roles {#cloud-canvas-rm-security-roles-policies-roles}
 
 You can use the [AWS::IAM:Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html) resource to define roles in your `project-template.json` or `deployment-access-template.json` files\. Cloud Canvas Resource Manager defines the following roles for you\.
 
-### DeploymentAdmin<a name="cloud-canvas-built-in-roles-deploymentadmin"></a>
+### DeploymentAdmin {#cloud-canvas-built-in-roles-deploymentadmin}
 
 Grants restricted access to the deployment\. Similar to the `DeploymentOwner` role, but cannot create or delete resource group stacks\. This is a convenience role that is safer than `DeploymentOwner`\. To add additional restrictions to the `DeploymentAdmin` role, edit the `DeploymentAdminRestrictions` policy definition\. 
 
@@ -26,7 +26,7 @@ Grants restricted access to the deployment\. Similar to the `DeploymentOwner` ro
 
 File location: `\project_name\deployment_name\deployment-access-template.json`\.
 
-### DeploymentOwner<a name="cloud-canvas-built-in-roles-deploymentowner"></a>
+### DeploymentOwner {#cloud-canvas-built-in-roles-deploymentowner}
 
 Grants full access to all the resources in a deployment\. To modify the default permissions granted by this role, edit the `DeploymentOwnerAccess` policy definition\.
 
@@ -44,7 +44,7 @@ File location: `\project_name\deployment_name\deployment-access-template.json`\.
 **Note**  
 Permissions added to `DeploymentOwnerAccess` are also granted to `DeploymentAdmin` unless they are denied by `DeploymentAdminRestrictions`\.
 
-### Player<a name="cloud-canvas-built-in-roles-player"></a>
+### Player {#cloud-canvas-built-in-roles-player}
 
 Grants players limited access to specific resources in a deployment as determined by permissions metadata on those resources\.
 
@@ -59,7 +59,7 @@ Grants players limited access to specific resources in a deployment as determine
 
 File location: `\project_name\deployment_name\deployment-access-template.json`\.
 
-### ProjectAdmin<a name="cloud-canvas-built-in-roles-projectadmin"></a>
+### ProjectAdmin {#cloud-canvas-built-in-roles-projectadmin}
 
 Grants project administrators restricted access to all the project's deployments\. Similar to the `ProjectOwner` role, but cannot create, update, or delete deployments with names that start with "Release\." This is a convenience role that is safer than `ProjectOwner`\. To add additional restrictions to the `ProjectAdmin` role, edit the `ProjectAdminRestrictions` definition\.
 
@@ -77,7 +77,7 @@ File location: `\project_name\project-template.json`\.
 **Warning**  
 The intent of this role is to securely "sandbox" user actions so that they don't accidentally impact other projects\. However, anyone who can assume the `ProjectAdmin` role can grant themselves additional permissions\. Because a `ProjectAdmin` user can escalate the privilege for the role, the `ProjectAdmin` role should still be considered an account administrator role and therefore a potential security concern\.
 
-### ProjectOwner<a name="cloud-canvas-built-in-roles-projectowner"></a>
+### ProjectOwner {#cloud-canvas-built-in-roles-projectowner}
 
 Grants project administrators full access to all the project's resources\. To modify the default permissions granted by this role, edit the `ProjectOwnerAccess` policy definition\.
 
@@ -96,7 +96,7 @@ File location: `\project_name\project-template.json`\.
 The intent of this role is to securely "sandbox" user actions so that they don't accidentally impact other projects\. However, anyone who can assume the `ProjectOwner` role can grant themselves additional permissions\. Because a `ProjectOwner` user can escalate the privilege for the role, the `ProjectOwner` role should still be considered an account administrator role and therefore a potential security concern\.
 Permissions added to `ProjectOwnerAccess` are also granted to `ProjectAdmin` unless they are denied by `ProjectAdminRestrictions`\.
 
-### ProjectResourceHandlerExecution<a name="cloud-canvas-built-in-roles-projectresourcehandlerexecution"></a>
+### ProjectResourceHandlerExecution {#cloud-canvas-built-in-roles-projectresourcehandlerexecution}
 
 Grants the `ProjectResourceHandler` Lambda function runtime execution permissions\. This role grants permissions for Cloud Canvas Resource Manager to use AWS CloudFormation custom resources for stack operations\. For more information, see [Access Scenarios and the ProjectResourceHandler](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
@@ -111,7 +111,7 @@ Grants the `ProjectResourceHandler` Lambda function runtime execution permission
 
 File location: `\project_name\project-template.json`\.
 
-### Server<a name="cloud-canvas-built-in-roles-server"></a>
+### Server {#cloud-canvas-built-in-roles-server}
 
 Grants Lumberyard dedicated server builds access to select deployment resources, as determined by permissions metadata on those resources\.
 
@@ -126,7 +126,7 @@ Grants Lumberyard dedicated server builds access to select deployment resources,
 
 File location: `\project_name\deployment_name\deployment-access-template.json`\.
 
-## Role Scope<a name="cloud-canvas-security-roles-policies-file-scope"></a>
+## Role Scope {#cloud-canvas-security-roles-policies-file-scope}
 
 The configuration file in which you define a role determines the resources to which the role provides access\.
 
@@ -140,11 +140,11 @@ The configuration file in which you define a role determines the resources to wh
 
 You can use the `lmbr_aws` command line tool to manage the role definitions in the `project-template.json` and `deployment-access-template.json` files\. For more information, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md)\.
 
-## Implicit Roles<a name="cloud-canvas-rm-security-roles-policies-implicit-roles"></a>
+## Implicit Roles {#cloud-canvas-rm-security-roles-policies-implicit-roles}
 
 Some Cloud Canvas custom resources also create roles\. For example, when a Lambda function is executed, it assumes the role that the `Custom::LambdaConfiguration` resource creates\. When API Gateway invokes a Lambda function or accesses other resources, it assumes the role that the `Custom::ServiceApi` resource creates\. Including these custom resources in a `resource-group-template.json` file causes these implicit roles to be created \(and deleted when the resource is deleted\)\. For information on implicit role names, see [Implicit Role Mappings](#cloud-canvas-rm-security-roles-policies-implicit-role-mappings)\.
 
-## Managed Policies<a name="cloud-canvas-rm-security-roles-policies--managed-policies"></a>
+## Managed Policies {#cloud-canvas-rm-security-roles-policies--managed-policies}
 
 You can use `AWS::IAM::ManagedPolicy` resources to define permissions that are shared across any number of roles\. Cloud Canvas defines the following managed policies for you:
 
@@ -154,16 +154,16 @@ You can use `AWS::IAM::ManagedPolicy` resources to define permissions that are s
 | Policy | File | Description | 
 | --- | --- | --- | 
 | CloudGemPortalUserAccess | project\-template\.json | Grants user\-only access to the Cloud Gem Portal\. Does not grant access to Cloud Gem Portal administrator features like user management or project logs\. | 
-| ProjectAccess | project\-template\.json | Defines the permissions needed to access the project and deployment configuration that must be read before a project\-wide role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
+| ProjectAccess | project\-template\.json | Defines the permissions needed to access the project and deployment configuration that must be read before a project\-wide role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
 | ProjectOwnerAccess | project\-template\.json | Defines the default permissions granted to the ProjectOwner and ProjectAdmin roles\. | 
 | ProjectAdminRestrictions | project\-template\.json | Defines restrictions to the ProjectOwnerAcess policy that apply only to the ProjectAdmin role\. | 
-| DeploymentAccess | deployment\-access\-template\.json | Defines the permissions needed to access project and deployment configuration that must be read before a deployment\-specific role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
+| DeploymentAccess | deployment\-access\-template\.json | Defines the permissions needed to access project and deployment configuration that must be read before a deployment\-specific role can be assumed\. For more information, see [Assuming a Role](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws#cloud-canvas-rm-security-lmbr-aws-assuming-a-role)\. | 
 | DeploymentOwnerAccess | deployment\-access\-template\.json | Defines the default permissions granted to the DeploymentOwner and DeploymentAdmin roles\. | 
 | DeploymentAdminRestrictions | deployment\-access\-template\.json | Defines restrictions to the DeploymentOwnerAccess policy that apply only to the DeploymentAdmin role\. | 
 
 The `ProjectAdmin` and `DeploymentAdmin` roles are granted the same permissions as the `ProjectOwner` and `DeploymentOwner` roles, minus any permissions specifically denied by the `ProjectAdminRestrictions` and `DeploymentAdminRestrictions` managed policies, respectively\. In effect, an "admin" is granted all the permissions of an "owner" minus any special actions that the "admin" should not be able to perform\.
 
-## Role Mapping Metadata<a name="cloud-canvas-rm-security-roles-policies-role-mapping-metadata"></a>
+## Role Mapping Metadata {#cloud-canvas-rm-security-roles-policies-role-mapping-metadata}
 
 The `AbstractRole` property in the `Permission` metadata object does not directly specify the actual role that receives the described permission\. These values must be mapped to actual IAM roles\. This makes it possible to setup roles in whatever way makes sense for your project\. It also removes the need to modify the permissions defined by individual resource groups\.
 
@@ -206,7 +206,7 @@ Each Cloud Canvas `RoleMapping` metadata object can have the following propertie
 
 You can use the `lmbr_aws` command line tool to manage `RoleMappings` metadata on role resource definitions in the `project-template.json` and `deployment-access-template.json` files\. For more information, see Using the Cloud Canvas Command Line to Manage Roles and Permissions\.
 
-### Default Role Mappings<a name="cloud-canvas-rm-security-roles-policies-default-role-mappings"></a>
+### Default Role Mappings {#cloud-canvas-rm-security-roles-policies-default-role-mappings}
 
 Cloud Canvas defines role mappings for the following roles:
 
@@ -223,7 +223,7 @@ Cloud Canvas defines role mappings for the following roles:
 | Player | deployment\-access\-template\.json | \*\.Player | 
 | Server | deployment\-access\-template\.json | \*\.Server | 
 
-### Implicit Role Mappings<a name="cloud-canvas-rm-security-roles-policies-implicit-role-mappings"></a>
+### Implicit Role Mappings {#cloud-canvas-rm-security-roles-policies-implicit-role-mappings}
 
 As mentioned in [Implicit Roles](#cloud-canvas-rm-security-roles-policies-implicit-roles), role mappings are automatically defined for the implicit roles created by Cloud Canvas resources like `Custom::LambdaConfiguration`\. These mappings are only used with permission metadata in the same `resource-group-template.json` file as the custom resource that creates the role\. The name of the abstract role used in permission metadata to reference an implicit role depends on the custom resource type\.
 

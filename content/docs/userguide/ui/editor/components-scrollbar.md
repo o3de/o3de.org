@@ -2,7 +2,7 @@
 description: ' Use a scroll bar component to add a scroll bar in the &ALYlong; &ui-canvas-editor;. '
 title: ScrollBar
 ---
-# ScrollBar<a name="ui-editor-components-scrollbar"></a>
+# ScrollBar {#ui-editor-components-scrollbar}
 
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box\. 
 

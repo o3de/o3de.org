@@ -3,7 +3,7 @@ description: ' Use &ALYlong;''s &project-configurator; to create new projects, s
   active projects, and enable, disable, or create new gems. '
 title: Creating &ALY; projects
 ---
-# Creating Lumberyard projects<a name="configurator-intro"></a>
+# Creating Lumberyard projects {#configurator-intro}
 
 
 ****  

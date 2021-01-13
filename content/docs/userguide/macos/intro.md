@@ -2,7 +2,7 @@
 description: ' Use &ALYlong; to build games for Mac (macOS) computers. '
 title: Create macOS projects in &ALY;
 ---
-# Create macOS projects in Lumberyard<a name="osx-intro"></a>
+# Create macOS projects in Lumberyard {#osx-intro}
 
 
 ****  
@@ -23,7 +23,7 @@ You can use Lumberyard to build macOS applications\. Lumberyard includes four ma
 + [macOS Debugging and Troubleshooting](/docs/userguide/macos/debugging-troubleshooting.md)
 + [Creating a Project for Your macOS Games](/docs/userguide/macos/game-creating.md)
 
-## Prerequisites<a name="osx-prerequisites"></a>
+## Prerequisites {#osx-prerequisites}
 
 To build games for macOS or iOS, Lumberyard requires the following on your Mac: 
 + [Lumberyard Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
@@ -33,7 +33,7 @@ To build games for macOS or iOS, Lumberyard requires the following on your Mac:
 **Note**  
 Lumberyard Editor requires Windows 10 to edit levels\. You must have access to a PC with Lumberyard installed and be able to navigate and run commands from Terminal on your Mac\.
 
-## Setting Up Your Mac<a name="osx-setting-up"></a>
+## Setting Up Your Mac {#osx-setting-up}
 
 After you download and extract Lumberyard on your Mac, you must run Lumberyard Setup Assistant to install the third\-party software that is required to run the game and compile the game code, engine, and asset pipeline\.
 

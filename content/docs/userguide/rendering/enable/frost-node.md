@@ -3,7 +3,7 @@ description: ' Use the Enable Frost node in the &ALYlong; &script-canvas; editor
   display frost on the screen. '
 title: Enable Frost
 ---
-# Enable Frost<a name="enable-frost-node"></a>
+# Enable Frost {#enable-frost-node}
 
 Display spots of frost on the screen\.
 
@@ -19,7 +19,7 @@ To disable the effect, see [Disable Frost](/docs/userguide/rendering/disable/fro
 
 ![\[Use the Enable Frost node to enable frost on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-frost-node-example.png)
 
-## Inputs<a name="enable-frost-note-input"></a>
+## Inputs {#enable-frost-note-input}
 
 
 ****  
@@ -30,7 +30,7 @@ To disable the effect, see [Disable Frost](/docs/userguide/rendering/disable/fro
 | Amount | Number |  Amount of frost\. Default value: `0`  | 
 | Center Amount | Number |  Amount of frost at the center of the screen\. Default value: `1`  | 
 
-## Outputs<a name="enable-frost-node-output"></a>
+## Outputs {#enable-frost-node-output}
 
 
 ****  

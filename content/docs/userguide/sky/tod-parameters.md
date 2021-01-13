@@ -3,7 +3,7 @@ description: ' Use the &tod-editor; parameters to customize sun, fog, and shadow
   in your &ALYlong; environment. '
 title: Time of Day Parameters
 ---
-# Time of Day Parameters<a name="sky-tod-parameters"></a>
+# Time of Day Parameters {#sky-tod-parameters}
 
 Set the following parameters to customize your sun, fog, and shadow settings\.
 
@@ -21,7 +21,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 + [Depth of Field Parameters](#depth-of-field-time-of-day-parameters)
 + [Shadows Parameters](#shadows-time-of-day-parameters)
 
-## Sun Parameters<a name="sun-time-of-day-parameters"></a>
+## Sun Parameters {#sun-time-of-day-parameters}
 
 
 ****  
@@ -32,7 +32,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Sun intensity \(lux\) | float | 0\.00 to 550000\.00 |  Sets the brightness of the sun\. This value is multiplied by the sun color to yield the overall color\.  | 
 | Sun specular multiplier | float | 0\.0 to 4\.0 |  Controls the brightness and intensity of the sun on specular materials in your scene\.  | 
 
-## Fog Parameters<a name="fog-time-of-day-parameters"></a>
+## Fog Parameters {#fog-time-of-day-parameters}
 
 
 ****  
@@ -62,7 +62,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Shadow darkening ambient | float | 0\.0 to 1\.0 |  Specifies how much the environment influences the ambient fog color height gradient\.  | 
 | Shadow range | float | 0\.0 to 1\.0 |  Sets the distance that the volumetric shadows are rendered until 10% \(0\.1\) of the level's clipping plane distance is reached\.  Lower values produce more accurate results; however, the shadows are not rendered as far as with higher values\.  | 
 
-## Volumetric Fog Parameters<a name="volumetric-fog-time-of-day-parameters"></a>
+## Volumetric Fog Parameters {#volumetric-fog-time-of-day-parameters}
 
 
 ****  
@@ -90,7 +90,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Analytical fog visibility | float | 0\.0 to 1\.0 |  Adjusts the global visibility of analytical fog\. Set the value to `0` to hide analytical volumetric fog\. Set the value to `1` to display analytical volumetric fog\.  | 
 | Final density clamp | float | 0\.0 to 1\.0 |  Sets the maximum density that the fog can reach\. This enables the sky, horizon, and other bright, distant objects to be visible through dense fog\.  Setting this value too low can compromise depth perception and result in implausible visuals and apparent artifacts, especially when moving the camera\.  | 
 
-## Sky Light Parameters<a name="sky-light-time-of-day-parameters"></a>
+## Sky Light Parameters {#sky-light-time-of-day-parameters}
 
 
 ****  
@@ -106,7 +106,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Wavelength \(G\) | float | 380\.0 to 780\.0 |  Sets the hue \(RGB values\) of the atmosphere\. You can create different atmospheres by adjusting the color values and gradients\. This can be particularly useful with rayleigh scattering, when you choose a sun intensity of pure, bright white\.  | 
 | Wavelength \(B\) | float | 380\.0 to 780\.0 |  Sets the hue \(RGB values\) of the atmosphere\. You can create different atmospheres by adjusting the color values and gradients\. This can be particularly useful with rayleigh scattering, when you choose a sun intensity of pure, bright white\.  | 
 
-## Night Sky Parameters<a name="night-sky-time-of-day-parameters"></a>
+## Night Sky Parameters {#night-sky-time-of-day-parameters}
 
 
 ****  
@@ -123,7 +123,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Moon outer corona color | R,G,B | 0 to 254 |  Specifies the color of the moon's outer corona\. The RGB value is scaled by the multiplier\.  | 
 | Moon outer corona scale | float | 0\.0 to 2\.0 |  Specifies the size and blurriness of the moon's outer corona\. Smaller values create a bigger, blurry corona\. Larger values create a smaller, focused corona\.  | 
 
-## Night Sky Multiplier Parameters<a name="night-sky-multiplier-time-of-day-parameters"></a>
+## Night Sky Multiplier Parameters {#night-sky-multiplier-time-of-day-parameters}
 
 
 ****  
@@ -136,7 +136,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Moon inner corona color | float | 0\.0 to 1\.0 |  Specifies the multiplier for the Night Sky's **Moon inner corona color**\.  | 
 | Moon outer corona color | float | 0\.0 to 1\.0 |  Specifies the multiplier for the Night Sky's **Moon outer corona color**\.  | 
 
-## Cloud Shading Parameters<a name="cloud-shading-time-of-day-parameters"></a>
+## Cloud Shading Parameters {#cloud-shading-time-of-day-parameters}
 
 
 ****  
@@ -148,7 +148,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Sun custom color multiplier | float | 0\.0 to 16\.0 |  Sets the brightness of the sun, which is multiplied by the sun custom color\.  | 
 | Sun custom color influence | float | 0\.0 to 1\.0 |  Sets the degree to which the color of the sun contributes to the color of the clouds\.  | 
 
-## Sun Ray Effects Parameters<a name="sun-ray-effects-time-of-day-parameters"></a>
+## Sun Ray Effects Parameters {#sun-ray-effects-time-of-day-parameters}
 
 
 ****  
@@ -161,7 +161,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Sun rays suncolor influence | float | 0\.0 to 1\.0 |  Sets the degree to which the color of the sun contributes to the color of the sun rays\.  Set this value to `1` to use the color of the sun for the sun rays\.  Set this value to `0` to use a custom color\.  Set this value to any number between `0` and `1` to use a color between the sun color and custom color\.  | 
 | Sun rays custom color | R,G,B | 0 to 254 |  Specifies a custom color for the sun rays\. To use this parameter, you must set the **Sun rays sun color influence** parameter to a value greater than `0`\.  | 
 
-## Advanced Parameters<a name="advanced-time-of-day-parameters"></a>
+## Advanced Parameters {#advanced-time-of-day-parameters}
 
 
 ****  
@@ -170,7 +170,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | --- | --- | --- | --- | 
 |  **Skybox multiplier**  | float | 0\.0 to 1\.0 |  Controls the brightness of a static skybox\. Does not affect a dynamic sky\.  | 
 
-## Filters Parameters<a name="filters-time-of-day-parameters"></a>
+## Filters Parameters {#filters-time-of-day-parameters}
 
 
 ****  
@@ -181,7 +181,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Photofilter color | R,G,B | 0 to 254 |  Sets the RGB of the color filter to apply to the final image\.  | 
 | Photofilter density | float | 0\.0 to 1\.0 |  Controls the strength of the color filter to apply to the final image\.  | 
 
-## Depth of Field Parameters<a name="depth-of-field-time-of-day-parameters"></a>
+## Depth of Field Parameters {#depth-of-field-time-of-day-parameters}
 
 
 ****  
@@ -191,7 +191,7 @@ Set the following parameters to customize your sun, fog, and shadow settings\.
 | Focus range | float | 0\.0 to 10000 |  Specifies the distance at which the background starts to lose focus and become blurry\.  | 
 | Blur amount | float | 0\.0 to 1\.0 |  Controls the strength of blur in areas that are out of focus\.  | 
 
-## Shadows Parameters<a name="shadows-time-of-day-parameters"></a>
+## Shadows Parameters {#shadows-time-of-day-parameters}
 
 
 ****  

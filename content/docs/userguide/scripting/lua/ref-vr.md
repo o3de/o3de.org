@@ -2,13 +2,13 @@
 description: ' Use Lua to interact with head mounted display virtual reality devices. '
 title: VR Lua Functions
 ---
-# VR Lua Functions<a name="lua-scripting-ref-vr"></a>
+# VR Lua Functions {#lua-scripting-ref-vr}
 
 You can use Lua bindings to interact programmatically with head\-mounted display \(HMD\) devices that provide Virtual Reality \(VR\) experiences\.
 
 For general information on configuring your Lumberyard game project for VR, see [Create virtual reality projects in Lumberyard](/docs/userguide/vr/_index.md)\.
 
-## Global Functions<a name="lua-scripting-ref-vr-global-functions"></a>
+## Global Functions {#lua-scripting-ref-vr-global-functions}
 
  The following functions provide programming interfaces for HMD devices\. 
 
@@ -20,7 +20,7 @@ For general information on configuring your Lumberyard game project for VR, see 
 | HMDDeviceRequestBusSender HMDDeviceRequestBusSender\(EntityId\) | Returns an HMDDeviceRequestBusSender object that is connected to the specified entity\. For more information, see [HMDDeviceRequestBus](#lua-scripting-ref-vr-hmddevicerequestbussender-object)\.  | 
 | ControllerRequestBusSender ControllerRequestbusSender\(EntityId\) | Returns a ControllerRequestBusSender object that is connected to the specified entity\. For more information, see [ControllerRequestBus](#lua-scripting-ref-vr-controllerrequestbussender-object)\.  | 
 
-## HMDDeviceRequestBus<a name="lua-scripting-ref-vr-hmddevicerequestbussender-object"></a>
+## HMDDeviceRequestBus {#lua-scripting-ref-vr-hmddevicerequestbussender-object}
 
 Contains functions that return information about an HMD and control its pose and tracking level\. 
 
@@ -36,7 +36,7 @@ Contains functions that return information about an HMD and control its pose and
 | HMDDeviceInfo GetDeviceInfo\(\) | Returns an HMDDeviceInfo object that contains device information about a connected HMD\. For more information, see [struct HMDDeviceInfo](#lua-scripting-ref-vr-struct-hmddeviceinfo)\. | 
 | TrackingState GetTrackingState\(\) | Returns a TrackingState object that contains the most recent tracking information about a connected HMD\. For more information, see [struct TrackingState](#lua-scripting-ref-vr-struct-trackingstate)\. | 
 
-## ControllerRequestBus<a name="lua-scripting-ref-vr-controllerrequestbussender-object"></a>
+## ControllerRequestBus {#lua-scripting-ref-vr-controllerrequestbussender-object}
 
 Returns status information about an HMD controller\. 
 
@@ -48,7 +48,7 @@ Returns status information about an HMD controller\.
 | Bool IsConnected\(int controllerIndex\) | Returns true if the given controller is connected, false if a controller is not connected\. Pass 0 for the left controller, pass 1 for the right controller\. | 
 | TrackingState GetTrackingState\(int controllerIndex\) | Returns a TrackingState object that contains tracking info about a connected controller\. Pass 0 for the left controller, pass 1 for the right controller\. For more information, see [struct TrackingState](#lua-scripting-ref-vr-struct-trackingstate)\. | 
 
-## struct HMDDeviceInfo<a name="lua-scripting-ref-vr-struct-hmddeviceinfo"></a>
+## struct HMDDeviceInfo {#lua-scripting-ref-vr-struct-hmddeviceinfo}
 
 Contains information about a device that displays on the screen when the device is detected\. 
 
@@ -64,7 +64,7 @@ Contains information about a device that displays on the screen when the device 
 | Float fovH | The horizontal field of view for both eyes in radians\. The default is 0\.0f\. | 
 | Float fovV | The vertical field of view in radians\. The default is 0\.0f\. | 
 
-## struct TrackingState<a name="lua-scripting-ref-vr-struct-trackingstate"></a>
+## struct TrackingState {#lua-scripting-ref-vr-struct-trackingstate}
 
 Stores position and connection state information about the HMD\. When an HMD is in use, certain parts of the device can go offline or online\. For example, a controller can be disconnected, or the HMD can temporarily lose rotational tracking\. You can use the `TrackingState` to determine what part of the pose is currently valid\. 
 
@@ -77,7 +77,7 @@ Stores position and connection state information about the HMD\. When an HMD is 
 | DynamicsState dynamics | Contains the current state of the physics dynamics for the current device such as linear velocity, angular velocity, and acceleration\. For more information, see [struct DynamicsState](#lua-scripting-ref-vr-struct-dynamicsstate)\. | 
 | Int statusFlags | Bit field that describes the current tracking state\. For bit flags, see the [enum HMDStatus](#lua-scripting-ref-vr-enum-hmdstatus)\. | 
 
-## struct PoseState<a name="lua-scripting-ref-vr-struct-posestate"></a>
+## struct PoseState {#lua-scripting-ref-vr-struct-posestate}
 
 A specific pose of the HMD device\. Each HMD device has its own way of representing its current pose in three dimensional space\. This structure acts as a common data set between a connected device and the rest of the system\. All data is in a local coordinate space\. 
 
@@ -89,7 +89,7 @@ A specific pose of the HMD device\. Each HMD device has its own way of represent
 | Quaternion orientation | A quaternion representing the current orientation in object space of the HMD\. | 
 | Vector3 position | A three dimensional vector representing the current position of the HMD in object space as an offset from the centered pose\. | 
 
-## struct DynamicsState<a name="lua-scripting-ref-vr-struct-dynamicsstate"></a>
+## struct DynamicsState {#lua-scripting-ref-vr-struct-dynamicsstate}
 
 Dynamics \(accelerations and velocities\) of the current HMD\. Many HMDs have the ability to track the current movements of VR devices for prediction\. Not all devices support velocities and accelerations\. All data is in a local coordinate space\. 
 
@@ -103,7 +103,7 @@ Dynamics \(accelerations and velocities\) of the current HMD\. Many HMDs have th
 | Vector3 linearVelocity | A three dimensional vector representing linear velocity in object space\. | 
 | Vector3 linearAcceleration | A three dimensional vector representing linear acceleration in object space\. | 
 
-## enum HMDStatus<a name="lua-scripting-ref-vr-enum-hmdstatus"></a>
+## enum HMDStatus {#lua-scripting-ref-vr-enum-hmdstatus}
 
 The following code shows the status flags for HMDStatus\. 
 

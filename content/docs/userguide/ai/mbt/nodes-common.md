@@ -2,11 +2,11 @@
 description: ' See the following common AI Modular Behavior Tree (MBT) nodes in &ALYlong;. '
 title: Common AI MBT Nodes
 ---
-# Common AI MBT Nodes<a name="ai-mbt-nodes-common"></a>
+# Common AI MBT Nodes {#ai-mbt-nodes-common}
 
 The following common AI Modular Behavior Tree nodes are supported\.
 
-## AnimateFragment node<a name="ai-mbt-nodes-cryaction-animatefragment"></a>
+## AnimateFragment node {#ai-mbt-nodes-cryaction-animatefragment}
 
 This node plays an Mannequin animation fragment and waits until the animation finishes\.
 
@@ -23,7 +23,7 @@ This node plays an Mannequin animation fragment and waits until the animation fi
 <AnimateFragment name="SomeFragmentName" />
 ```
 
-## Bubble node<a name="ai-mbt-nodes-bubble"></a>
+## Bubble node {#ai-mbt-nodes-bubble}
 
 Used to display a message in a bubble above the agent\.
 + **message**: The message that should be shown in the speech bubble\.
@@ -42,7 +42,7 @@ None\.
 <Bubble message="MessageToBeDisplayedAndOrLogged" duration="5.0" balloon="true" log="true" />
 ```
 
-## Move node<a name="ai-mbt-nodes-move"></a>
+## Move node {#ai-mbt-nodes-move}
 
 Used to move the agent from the current position to the specified destination\. If the destination is a target then the end position is updated if not reached while the target moves\.
 
@@ -93,7 +93,7 @@ Used to move the agent from the current position to the specified destination\. 
 <Move to="DestinationType" stance="StanceName" fireMode="FiremodeName" speed="SpeedName" stopWithinDistance="3c " />
 ```
 
-## QueryTPS node<a name="ai-mbt-nodes-querytps"></a>
+## QueryTPS node {#ai-mbt-nodes-querytps}
 
 This node performs a Tactical Position System query and waits for a result\.
 
@@ -111,7 +111,7 @@ This node performs a Tactical Position System query and waits for a result\.
 <QueryTPS name="NameOfTheQuery" register="NameOfTheRegister" />
 ```
 
-## IfTime node<a name="ai-mbt-nodes-iftime"></a>
+## IfTime node {#ai-mbt-nodes-iftime}
 
 This node executes the child node if the time condition is satisfied\.
 
@@ -133,7 +133,7 @@ This node executes the child node if the time condition is satisfied\.
 </IfTime>
 ```
 
-## WaitUntilTime node<a name="ai-mbt-nodes-waituntiltime"></a>
+## WaitUntilTime node {#ai-mbt-nodes-waituntiltime}
 
 This node executes the child node if the time condition is satisfied\.
 
@@ -152,7 +152,7 @@ This node executes the child node if the time condition is satisfied\.
 <WaitUntilTime since="BeingShotAt" isMoreThan="7" />
 ```
 
-## AssertTime node<a name="ai-mbt-nodes-asserttime"></a>
+## AssertTime node {#ai-mbt-nodes-asserttime}
 
 This node succeeds if the time condition is satisfied\.
 
@@ -172,7 +172,7 @@ This node succeeds if the time condition is satisfied\.
 <AssertTime since="GroupLostSightOfTarget" isLessThan="10" orNeverBeenSet="1" />
 ```
 
-## Priority:Case node<a name="ai-mbt-nodes-priority-case"></a>
+## Priority:Case node {#ai-mbt-nodes-priority-case}
 
 This node executes the child with the current highest priority\. The priorities are derived from the order in which the children are defined and the satisfaction of their individual conditions, so that the highest priority goes to the first child to have its condition met\.
 
@@ -198,7 +198,7 @@ The node returns the result of the execution of the child node\.
 </Priority>
 ```
 
-## LuaGate node<a name="ai-mbt-nodes-luagate"></a>
+## LuaGate node {#ai-mbt-nodes-luagate}
 
 This node executes the child node if the result from running a lua snippet is true\.
 
@@ -217,7 +217,7 @@ This node executes the child node if the result from running a lua snippet is tr
 **Warning**  
  The LuaGate node uses the legacy scripting context and does not work with the new component entity system\. 
 
-## RandomGate node<a name="ai-mbt-nodes-randomgate"></a>
+## RandomGate node {#ai-mbt-nodes-randomgate}
 
 This node executes or not the child node based on a random chance\.
 
@@ -233,7 +233,7 @@ This node executes or not the child node based on a random chance\.
 <RandomGate opensWithChance="0.5">
 ```
 
-## AdjustCoverStance node<a name="ai-mbt-nodes-adjustcoverstance"></a>
+## AdjustCoverStance node {#ai-mbt-nodes-adjustcoverstance}
 
 This node updates the agent's cover stance based on the maximum height in which his current cover is still effective\.
 
@@ -251,7 +251,7 @@ This node updates the agent's cover stance based on the maximum height in which 
 <AdjustCoverStance duration="5.0" variation="1.0"/>
 ```
 
-## SetAlertness node<a name="ai-mbt-nodes-setalertness"></a>
+## SetAlertness node {#ai-mbt-nodes-setalertness}
 
 This node sets the agent's alertness value\.
 
@@ -268,7 +268,7 @@ The node succeeds immediately\.
 <SetAlertness value="1" />
 ```
 
-## Log node<a name="ai-mbt-nodes-log"></a>
+## Log node {#ai-mbt-nodes-log}
 
 This node adds a message to the agent's personal log\.
 
@@ -285,7 +285,7 @@ The node succeeds immediately\.
 <Log message="Investigating suspicious activity." />
 ```
 
-## Communicate node<a name="ai-mbt-nodes-communicate"></a>
+## Communicate node {#ai-mbt-nodes-communicate}
 
 This node requests the communication manager to play one of the agent's readabilities\.
 
@@ -309,7 +309,7 @@ This node requests the communication manager to play one of the agent's readabil
 <Communicate name="Advancing" channel="Tactic" expiry="1.0" waitUntilFinished="0" />
 ```
 
-## Animate node<a name="ai-mbt-nodes-animate"></a>
+## Animate node {#ai-mbt-nodes-animate}
 
 This node sets the agent to play an animation\.
 
@@ -328,7 +328,7 @@ This node sets the agent to play an animation\.
 <Animate name="LookAround" loop="1"/>
 ```
 
-## Signal node<a name="ai-mbt-nodes-signal"></a>
+## Signal node {#ai-mbt-nodes-signal}
 
 This node sends a signal to the AI system\.
 
@@ -346,7 +346,7 @@ The node succeeds immediately\.
 <Signal name="StartedJumpAttack" />
 ```
 
-## SendTransitionSignal node<a name="ai-mbt-nodes-sendtransitionsignal"></a>
+## SendTransitionSignal node {#ai-mbt-nodes-sendtransitionsignal}
 
 This node sends a signal destined for a state machine node on the behavior tree, with the explicit intent of causing a change of state\.
 
@@ -363,7 +363,7 @@ The node does not succeed or fail\.
 <SendTransitionSignal name="LeaveSearch" />
 ```
 
-## Stance node<a name="ai-mbt-nodes-stance"></a>
+## Stance node {#ai-mbt-nodes-stance}
 
 This node sets the stance of the agent\.
 
@@ -383,7 +383,7 @@ The node succeeds immediately\.
 stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
-## IfCondition node<a name="ai-mbt-nodes-ifcondition"></a>
+## IfCondition node {#ai-mbt-nodes-ifcondition}
 
 This node executes the child node if the specified condition is satisfied\.
 
@@ -403,7 +403,7 @@ waitUntilFinished="1" />
 </IfCondition>
 ```
 
-## AssertCondition node<a name="ai-mbt-nodes-assertcondition"></a>
+## AssertCondition node {#ai-mbt-nodes-assertcondition}
 
 This node succeeds if the specified condition is satisfied\.
 
@@ -420,7 +420,7 @@ The node succeeds if the condition is true, otherwise it fails\.
 <AssertCondition condition="HasTarget" />
 ```
 
-## LuaWrapper node<a name="ai-mbt-nodes-luawrapper"></a>
+## LuaWrapper node {#ai-mbt-nodes-luawrapper}
 
 This node executes the child node with the additional option of running a lua script on the start and/or end of that execution\.
 
@@ -444,7 +444,7 @@ onExit="entity:DisableSearchModule()">
 **Warning**  
  The LuaWrapper node uses the legacy scripting context and does not work with the new component entity system\. 
 
-## ExecuteLua node<a name="ai-mbt-nodes-executelua"></a>
+## ExecuteLua node {#ai-mbt-nodes-executelua}
 
 This node executes a lua script\.
 
@@ -464,7 +464,7 @@ The node always succeeds\.
 **Warning**  
  The ExecuteLua node uses the legacy scripting context and does not work with the new component entity system\. 
 
-## AssertLua node<a name="ai-mbt-nodes-assertlua"></a>
+## AssertLua node {#ai-mbt-nodes-assertlua}
 
 This node executes Lua code and translates the return value of that code from true or false to success or failure\. It can then be used to build preconditions in the Modular Behavior Tree\.
 
@@ -484,7 +484,7 @@ Succeeds if the Lua code returns value is true, otherwise it fails\.
 **Warning**  
  The AssertLua node uses the legacy scripting context and does not work with the new component entity system\. 
 
-## GroupScope node<a name="ai-mbt-nodes-groupscope"></a>
+## GroupScope node {#ai-mbt-nodes-groupscope}
 
 This node tries to enter the agent in a group scope, which is limited by the specified amount of concurrent users\. If the node succeeds to do that, then the child node is executed\.
 
@@ -504,7 +504,7 @@ The node fails if the agent could not enter the group scope, otherwise returns t
 </GroupScope>
 ```
 
-## Look node<a name="ai-mbt-nodes-look"></a>
+## Look node {#ai-mbt-nodes-look}
 
 This node adds a location for the agent to look at and clears it when the node stops executing\.
 
@@ -521,7 +521,7 @@ The nodes does not succeed or fail\.
 <Look at="ClosestGroupMember" />
 ```
 
-## Aim node<a name="ai-mbt-nodes-aim"></a>
+## Aim node {#ai-mbt-nodes-aim}
 
 This node sets the location where the agent should aim, clearing it when the node stops executing\.
 
@@ -539,7 +539,7 @@ This node sets the location where the agent should aim, clearing it when the nod
 <Aim at="Target" durationOnceWithinThreshold="2.0" />
 ```
 
-## AimAroundWhileUsingAMachineGun node<a name="ai-mbt-nodes-aim-machine-gun"></a>
+## AimAroundWhileUsingAMachineGun node {#ai-mbt-nodes-aim-machine-gun}
 
 This node updates the aim direction of the agent for when he is using a mounted machine gun\.
 
@@ -559,7 +559,7 @@ The node does not succeed or fail\.
 useReferencePointForInitialDirectionAndPivotPosition="1"/>
 ```
 
-## ClearTargets node<a name="ai-mbt-nodes-cleartargets"></a>
+## ClearTargets node {#ai-mbt-nodes-cleartargets}
 
 This node clears the agent's targets information\. 
 
@@ -577,7 +577,7 @@ The node succeeds immediately\.
 <ClearTargets />
 ```
 
-## StopMovement node<a name="ai-mbt-nodes-stopmovement"></a>
+## StopMovement node {#ai-mbt-nodes-stopmovement}
 
 This node sends a request to the Movement System to stop all the movements\.
 
@@ -596,7 +596,7 @@ This may not always immediately physically stop the agent\. The Movement System 
 <StopMovement waitUntilStopped="1" waitUntilIdleAnimation="0" />
 ```
 
-## Teleport node<a name="ai-mbt-nodes-teleport"></a>
+## Teleport node {#ai-mbt-nodes-teleport}
 
 This node teleports the character when the destination point and the source point are both outside of the camera view\.
 
@@ -613,7 +613,7 @@ None\.
 <Teleport />
 ```
 
-## SmartObjectStateWrapper node<a name="ai-mbt-nodes-smartobjectsstatewrapper"></a>
+## SmartObjectStateWrapper node {#ai-mbt-nodes-smartobjectsstatewrapper}
 
 This node executes the child node with the additional option of setting certain smart objects states on the start and/or end of that execution\.
 
@@ -633,7 +633,7 @@ The node returns the result of the execution of its child node\.
 </SmartObjectStatesWrapper>
 ```
 
-## CheckTargetCanBeReached node<a name="ai-mbt-nodes-checktargetcanbereached"></a>
+## CheckTargetCanBeReached node {#ai-mbt-nodes-checktargetcanbereached}
 
 This node checks if the agent's attention target can be reached\.
 
@@ -650,7 +650,7 @@ This node checks if the agent's attention target can be reached\.
 <CheckIfTargetCanBeReached mode="UseLiveTarget" />
 ```
 
-## MonitorCondition node<a name="ai-mbt-nodes-monitorcondition"></a>
+## MonitorCondition node {#ai-mbt-nodes-monitorcondition}
 
 This node continuously checks for the state of a specified condition\.
 
@@ -666,7 +666,7 @@ This node continuously checks for the state of a specified condition\.
 <MonitorCondition condition="TargetVisible" />
 ```
 
-## AnimationTagWrapper node<a name="ai-mbt-nodes-animationtagwrapper"></a>
+## AnimationTagWrapper node {#ai-mbt-nodes-animationtagwrapper}
 
 This node executes the child node, adding an animation tag for the agent on the beginning of that execution and clearing it on the end\.
 
@@ -685,7 +685,7 @@ The node returns the result of the execution of its child node\.
 </AnimationTagWrapper>
 ```
 
-## ShootFromCover node<a name="ai-mbt-nodes-shootfromcover"></a>
+## ShootFromCover node {#ai-mbt-nodes-shootfromcover}
 
 This node sets the agent to shoot at the target from cover and adjusts his stance accordingly\.
 
@@ -704,7 +704,7 @@ This node sets the agent to shoot at the target from cover and adjusts his stanc
 <ShootFromCover duration="10" fireMode="Burst" aimObstructedTimeout="3" />
 ```
 
-## Shoot node<a name="ai-mbt-nodes-shoot"></a>
+## Shoot node {#ai-mbt-nodes-shoot}
 
 This node sets the agent to shoot at a target or a location\.
 
@@ -730,7 +730,7 @@ allowedSlopeNormalDeviationFromUpInDegrees="30"
 stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
-## ThrowGrenade node<a name="ai-mbt-nodes-throwgrenade"></a>
+## ThrowGrenade node {#ai-mbt-nodes-throwgrenade}
 
 This node sets the agent to attempt a grenade throw\.
 
@@ -748,7 +748,7 @@ This node sets the agent to attempt a grenade throw\.
 <ThrowGrenade type="emp" timeout="3" />
 ```
 
-## PullDownThreatLevel node<a name="ai-mbt-nodes-pulldownthreatlevel"></a>
+## PullDownThreatLevel node {#ai-mbt-nodes-pulldownthreatlevel}
 
 This node sets the agent to lower his notion the target's threat\.
 

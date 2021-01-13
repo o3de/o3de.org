@@ -3,13 +3,13 @@ description: ' Edit and update default dependency files to ensure that game-wide
   are always packaged as part of a bundle. '
 title: Default dependencies for &ALY; projects
 ---
-# Default dependencies for Lumberyard projects<a name="asset-bundler-default-dependencies"></a>
+# Default dependencies for Lumberyard projects {#asset-bundler-default-dependencies}
 
  Throughout your Lumberyard project you'll use assets across multiple levels, or find those that need to be included whether or not they're a strict dependency\. To handle these use cases, Lumberyard supports *default dependency files* which define assets that are always required when bundling your project\. Default dependencies are also used by Gems to make sure their own critical assets are always included\. 
 
  Default dependencies give you a convenient way to list assets that should be bundled as part of your whole project, and can be applied when generating any asset list by using `--addDefaultSeedListFiles`\. When you use this argument as part of an asset bundler command, it picks up the default dependencies for the Lumberyard engine, included gems, and your project\. 
 
-## Default dependency file locations<a name="asset-bundler-default-dependencies-locations"></a>
+## Default dependency file locations {#asset-bundler-default-dependencies-locations}
 
  There are four levels of default dependency files available\. All paths are relative to `lumberyard_install\dev`:
 
@@ -26,7 +26,7 @@ title: Default dependencies for &ALY; projects
  These files are **not** seed lists, and can't be manipulated with commands that modify seed lists\. Default dependencies are built by the Asset Processor to create seed lists in the cache\. These seed lists are then picked up by the Asset Bundler when you use the `--addDefaultSeedListFiles` flag\.  
 Another important consequence of this is that every time you change a default dependencies file, it must be built by the Asset Processor to generate an updated seed list for the Asset Bundler\.
 
-## Default dependencies file format<a name="asset-bundler-default-dependencies-format"></a>
+## Default dependencies file format {#asset-bundler-default-dependencies-format}
 
 Default dependencies files are written in XML and consist of only two elements: `EngineDependencies` and `Dependency`\. The root element of a default dependency file should always be `<EngineDependencies version="1.0.0">`, including this specific value for the `version` attribute\. `Dependency` elements are the only children of the `EngineDependencies` node, and require two attributes: `path` and `optional`\. `Dependency` elements have no children, including no text content\.
 

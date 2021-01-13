@@ -3,7 +3,7 @@ description: ' Use the &console; to see the &ALYlong; &cloud; resources that you
   in &AWS;. '
 title: Inspect Your Resources in &AWS;
 ---
-# Inspect Your Resources in AWS<a name="cloud-canvas-tutorial-inspect"></a>
+# Inspect Your Resources in AWS {#cloud-canvas-tutorial-inspect}
 
 This topic shows you how to sign in to the AWS Management Console and use the console to inspect the AWS CloudFormation stacks that you created\.
 
@@ -31,7 +31,7 @@ You are now successfully signed into the AWS Management Console\.
 
 **To inspect your resources in AWS**
 
-1. Ensure that the AWS region, which appears on the upper\-right of the console screen, is set to the region that you specified when you had Cloud Canvas deploy its resources in [Step 5](/docs/userguide/gems/cloud-canvas/tutorial.md#cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment) of the tutorial\. This tutorial uses the US East \(N\. Virginia\) Region\.
+1. Ensure that the AWS region, which appears on the upper\-right of the console screen, is set to the region that you specified when you had Cloud Canvas deploy its resources in [Step 5](/docs/userguide/gems/cloud-canvas/tutorial#cloud-canvas-tutorial-upload-resources-to-aws-and-create-a-deployment) of the tutorial\. This tutorial uses the US East \(N\. Virginia\) Region\.
 
 1. Do one of the following:
    + In the **AWS services** search box, enter **CloudFormation**, and then click **CloudFormation**\.

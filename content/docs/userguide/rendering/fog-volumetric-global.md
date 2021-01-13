@@ -4,7 +4,7 @@ description: ' Use global volumetric fog in your &ALYlong; level to realisticall
   above sea level. '
 title: Setting Global (Time of Day) Volumetric Fog
 ---
-# Setting Global \(Time of Day\) Volumetric Fog<a name="rendering-graphics-fog-volumetric-global"></a>
+# Setting Global \(Time of Day\) Volumetric Fog {#rendering-graphics-fog-volumetric-global}
 
 You can use global volumetric fog to simulate particles that are distributed uniformly along the ground and fall off exponentially with height above sea level\. Global volumetric fog accurately accounts for time of day lighting and for scattered sunlight rays to produce halos around the sun\.
 
@@ -16,6 +16,6 @@ The **Radial blend** parameters blend the **Anisotropy** parameters to create va
 
 1. In Lumberyard Editor, click **Tools**, **Other**, **Time Of Day\.**
 
-1. In the **Parameters** pane, for **Volumetric fog**, adjust the [Volumetric Fog Parameters](/docs/userguide/sky/tod-parameters.md#volumetric-fog-time-of-day-parameters) as needed\.
+1. In the **Parameters** pane, for **Volumetric fog**, adjust the [Volumetric Fog Parameters](/docs/userguide/sky/tod-parameters#volumetric-fog-time-of-day-parameters) as needed\.
 
 1. Close the **Time of Day** editor\.

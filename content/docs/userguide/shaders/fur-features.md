@@ -2,7 +2,7 @@
 description: ' Use the fur features for fur materials in &ALY;. '
 title: Fur Features
 ---
-# Fur Features<a name="shader-ref-fur-features"></a>
+# Fur Features {#shader-ref-fur-features}
 
 Using various [Fur Material Settings](/docs/userguide/shaders/fur-materialsettings.md) and [Fur Console Variables](/docs/userguide/shaders/fur-consolevariables.md), the fur shader can give your furry entities realistic highlights, dynamic shadows, responsive movement, and much more\.
 
@@ -15,7 +15,7 @@ Using various [Fur Material Settings](/docs/userguide/shaders/fur-materialsettin
 + [Motion Bending](/docs/userguide/shaders/fur-features-bending-motion.md)
 + [Level of Detail](/docs/userguide/shaders/fur-features-levelofdetail.md)
 
-## Anisotropic Specular Highlights<a name="shader-ref-fur-features-highlights"></a>
+## Anisotropic Specular Highlights {#shader-ref-fur-features-highlights}
 
 Anisotropic specular highlights are supported when a mesh provides [fur combing](/docs/userguide/shaders/fur-combing.md) data\. This feature creates highlights that appear "banded" in the direction perpendicular to the fur strands\. Notice the banded highlight from the green light on the bear's fur\.
 
@@ -25,13 +25,13 @@ Anisotropic highlights are not applied to areas where fur length is set to `0` i
 
 ![\[Example fur shader reference for non-furry areas.\]](/images/userguide/shader-ref-fur-6.png)
 
-## Subsurface Scattering<a name="shader-ref-fur-features-subsurface"></a>
+## Subsurface Scattering {#shader-ref-fur-features-subsurface}
 
 The fur shader simulates subsurface scattering around silhouette edges of the fur, where less inscattering and absorption occurs\. This results in a glow effect when the fur is backlit\. You can tune this feature by adjusting the material parameters **SSS Strength** and **SSS Falloff**\.
 
 ![\[Example of subsurface scattering for fur rendering.\]](/images/userguide/shaders/shader-ref-fur-7.png)
 
-## Simulated Self\-Shadowing<a name="shader-ref-fur-features-simulated"></a>
+## Simulated Self\-Shadowing {#shader-ref-fur-features-simulated}
 
 To simulate the self\-shadowing effect of fur, you can set a blend color or blend layer\. To do this, you can enable **Fur Blendlayer** or **Fur Blend color**\. If both are enabled, only **Fur Blendlayer** is used\. You then set the color using the **Fur Self Shadowing Color** property\. This value is interpolated with the default diffuse texture, where self\-shadowing is stronger toward the mesh surface\. 
 
@@ -43,7 +43,7 @@ You can adjust the interpolation speed by modifying the material parameter **Fur
 
 ![\[Example adjusting interpolation speed with the Fur Self Shadowing Bias parameter.\]](/images/userguide/shaders/shader-ref-fur-8.png)
 
-## Fur in Shadows<a name="shader-ref-fur-features-shadows"></a>
+## Fur in Shadows {#shader-ref-fur-features-shadows}
 
 When fur casts a shadow, it adds definition to the silhouette\. If fur is not set to cast a shadow, then you would see a smooth edge of the structure that the fur covers\. In the following image, you can see the shadow of the bear's fur on the wall\.
 

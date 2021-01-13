@@ -2,7 +2,7 @@
 description: ' Detach entities and slice instances in &ly-editor;. '
 title: Detaching Entities and Slice Instances
 ---
-# Detaching Entities and Slice Instances<a name="component-slice-detaching"></a>
+# Detaching Entities and Slice Instances {#component-slice-detaching}
 
 You can detach entities within a slice or detach the entire slice instance\. 
 + When you detach an entity, that entity no longer inherits any changes from its source slice\. Use this feature so that the entity becomes a standalone entity\. 

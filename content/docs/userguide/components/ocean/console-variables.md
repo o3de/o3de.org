@@ -3,7 +3,7 @@ description: ' Use the &ALYlong; Infinite Ocean component with the console varia
   (CVARs) to set advanced parameters. '
 title: Console Variables for the Infinite Ocean Component
 ---
-# Console Variables for the Infinite Ocean Component<a name="infinite-ocean-component-console-variables"></a>
+# Console Variables for the Infinite Ocean Component {#infinite-ocean-component-console-variables}
 
 You can specify the following console variables to enable advanced settings for the **Infinite Ocean** component\. In general, you don't need to change these settings\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 

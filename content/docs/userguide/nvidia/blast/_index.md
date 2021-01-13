@@ -3,7 +3,7 @@ description: ' Use the NVIDIA Blast gem to simulate destruction in your &ALYlong
   project. '
 title: NVIDIA Blast gem
 ---
-# NVIDIA Blast gem<a name="nvidia-blast"></a>
+# NVIDIA Blast gem {#nvidia-blast}
 
 
 ****  
@@ -24,7 +24,7 @@ For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA B
 + [Functionality provided by the NVIDIA Blast gem](#nvidia-blast-functionality)
 + [Enable the NVIDIA Blast gem](#enable-gem-nvidia-blast)
 
-## Functionality provided by the NVIDIA Blast gem<a name="nvidia-blast-functionality"></a>
+## Functionality provided by the NVIDIA Blast gem {#nvidia-blast-functionality}
 
 The NVIDIA Blast gem provides the following:
 + **Blast Family Mesh Data** component that adds NVIDIA Blast meshes to an entity\. 
@@ -36,7 +36,7 @@ The NVIDIA Blast gem provides the following:
 + A Python Asset Builder to process NVIDIA Blast assets and generate blast slices\. 
 + A public C\+\+ API that allows other systems and gems to access NVIDIA Blast simulation functionality\. 
 
-## Enable the NVIDIA Blast gem<a name="enable-gem-nvidia-blast"></a>
+## Enable the NVIDIA Blast gem {#enable-gem-nvidia-blast}
 
 To enable the NVIDIA Blast gem, do the following: 
 

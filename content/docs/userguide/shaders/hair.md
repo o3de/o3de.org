@@ -2,11 +2,11 @@
 description: ' Enable hair shaders to render hair and fur in &ALYlong;. '
 title: Hair Shader
 ---
-# Hair Shader<a name="shader-ref-hair"></a>
+# Hair Shader {#shader-ref-hair}
 
 The Hair shader is a dedicated shader for rendering hair and fur, imparting different color, stranding, and animation effects\. Hair rendering is a relatively difficult task to achieve in real\-time with high\-quality results due to the very fine geometry and specific lighting behavior\. Depending on the hairstyle, either a simple scalp plane or a more complex shape that defines the volume of the hairstyle is needed\. In some cases, breaking up a hairstyle into multiple large patches makes more sense\. 
 
-## Shader Parameters<a name="shader-ref-hair-shader-parameters"></a>
+## Shader Parameters {#shader-ref-hair-shader-parameters}
 
 **Alpha Blend Multiplier**  
 Multiplies the alpha map with the result that grayscale values are increased\. Useful for the **Thin Hair** shader generation parameter\.  
@@ -73,7 +73,7 @@ Sets the amount or amplitude at which the vertices are deformed on a different c
 This parameter requires that the **Wind bending** shader generation parameter is enabled\.  
 Default value: 0
 
-## Shader Generation Parameters<a name="shader-ref-hair-shader-generation-parameters"></a>
+## Shader Generation Parameters {#shader-ref-hair-shader-generation-parameters}
 
 **Vertex Colors**  
 Enables vertex colors\.

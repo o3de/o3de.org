@@ -2,7 +2,7 @@
 description: ' Invoke an &LAMlong; function with &script-canvas; in &ALYlong;. '
 title: Invoking an &LAMlong; Function from &script-canvas;
 ---
-# Invoking an AWS Lambda Function from Script Canvas<a name="cloud-canvas-cloud-gem-aws-lambda-sc"></a>
+# Invoking an AWS Lambda Function from Script Canvas {#cloud-canvas-cloud-gem-aws-lambda-sc}
 
 You can use the **InvokeAWSLambda** node to invoke an AWS Lambda function\. 
 
@@ -15,7 +15,7 @@ This tutorial uses an example Lambda function that is included with Lumberyard\.
 + [Step 2: Add Nodes to Display the Result](#cloud-canvas-cloud-gem-aws-lambda-sc-step-2-display-the-result)
 + [Making a Custom Lambda Function Available to Script Canvas](/docs/userguide/gems/cloud-canvas/aws-lambda-sc-adding.md)
 
-## Prerequisites<a name="cloud-canvas-cloud-gem-aws-lambda-sc-prerequisites"></a>
+## Prerequisites {#cloud-canvas-cloud-gem-aws-lambda-sc-prerequisites}
 
 To complete the procedures in this tutorial, perform the following steps\.
 
@@ -32,7 +32,7 @@ After you perform these steps, your `lumberyard_version\dev\CloudGemSamples\Conf
 },
 ```
 
-## Step 1: Add Nodes to Invoke an AWS Lambda Function<a name="cloud-canvas-cloud-gem-aws-lambda-sc-step-1-add-nodes"></a>
+## Step 1: Add Nodes to Invoke an AWS Lambda Function {#cloud-canvas-cloud-gem-aws-lambda-sc-step-1-add-nodes}
 
 The following procedure shows you how to create a Script Canvas graph that invokes an AWS Lambda function\.
 
@@ -66,7 +66,7 @@ The following procedure shows you how to create a Script Canvas graph that invok
 
 1. Connect the **AWSLambda** pin of the **Get Variable 1** node to the **AWSLambda:0** pin of the **InvokeAWSLambda** node\.
 
-## Step 2: Add Nodes to Display the Result<a name="cloud-canvas-cloud-gem-aws-lambda-sc-step-2-display-the-result"></a>
+## Step 2: Add Nodes to Display the Result {#cloud-canvas-cloud-gem-aws-lambda-sc-step-2-display-the-result}
 
 Next, to see the success or failure of the operation, you add **AWSLambdaHandler** nodes and a **Print** node to the graph\. The nodes monitor for `AWSLambdaHandler` events and show you the result in the Lumberyard console window\.
 
@@ -92,7 +92,7 @@ Next, to see the success or failure of the operation, you add **AWSLambdaHandler
 
 1. Close the **Script Canvas** editor\.
 
-### Step 3: Test the Lambda Function<a name="cloud-canvas-cloud-gem-aws-lambda-sc-step-3-test"></a>
+### Step 3: Test the Lambda Function {#cloud-canvas-cloud-gem-aws-lambda-sc-step-3-test}
 
 Now you are ready to attach the Script Canvas graph to an entity and test the script\.
 

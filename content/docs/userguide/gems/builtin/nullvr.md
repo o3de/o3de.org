@@ -3,7 +3,7 @@ description: ' Use the NullVR Gem in &ALYlong; to run your level through the HMD
   without having a VR device connected. This gem is useful for VR graphics debugging. '
 title: NullVR Gem
 ---
-# NullVR Gem<a name="gems-system-gem-nullvr"></a>
+# NullVR Gem {#gems-system-gem-nullvr}
 
 Use the NullVR gem to run your level through the head\-mounted displays \(HMD\) framework without a connected VR device\. This gem is useful for VR graphics debugging\.
 
@@ -15,7 +15,7 @@ When Lumberyard is using the NullVR Gem, the following appears in the console:
 [HMD][Null] - Null Device
 ```
 
-## Console Variables<a name="gems-system-gem-nullvr-cvars"></a>
+## Console Variables {#gems-system-gem-nullvr-cvars}
 
 The NullVR Gem, when enabled, makes certain console variables available\. These console variables take effect only if the NullVR Gem is in use; that is, no other VR gems are enabled or no other VR devices are connected\.
 

@@ -3,7 +3,7 @@ description: ' Use &ALYlong; to compile a dedicated Linux server for a multiplay
   game, prepare your server for game hosting, and integrate with &AGS;. '
 title: Creating &ALY; Executables for Linux
 ---
-# Creating Lumberyard Executables for Linux<a name="linux-intro"></a>
+# Creating Lumberyard Executables for Linux {#linux-intro}
 
 
 ****  
@@ -25,7 +25,7 @@ When these tasks are complete, you can deploy assets to either a Linux server or
 + [Testing the Windows Client to Linux Server Connection](/docs/userguide/linux/test-windows-client-linux-server-connection.md)
 + [Preparing the Amazon GameLift Package](/docs/userguide/linux/prepare-gamelift-package.md)
 
-## Prerequisites<a name="linux-prerequisites"></a>
+## Prerequisites {#linux-prerequisites}
 
 To create Lumberyard executables for Linux, you must have the following:
 + A Windows 10 Lumberyard install configured to compile your project and the Lumberyard engine\.

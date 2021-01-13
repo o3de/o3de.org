@@ -2,7 +2,7 @@
 description: ' Develop a custom material shader in &ALYlong;. '
 title: Developing a Custom Shader
 ---
-# Developing a Custom Shader<a name="mat-shaders-custom-dev-intro"></a>
+# Developing a Custom Shader {#mat-shaders-custom-dev-intro}
 
 Most visual effects in Lumberyard are produced by shaders, which employ a number of standard and advanced lighting models like Blinn, Cook\-Torrance, Oren\-Naye, Kajiya\-Kay, and some custom models\. 
 
