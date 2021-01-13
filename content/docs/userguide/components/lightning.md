@@ -27,7 +27,7 @@ The **Lightning** component does not produce visual effects on its own\. The com
 **Example**  
 The **Lightning** component randomly spawns in a small area\.  
 
-![\[Add the Lightning component to your entity to enable lightning effects in your level.\]](/images/userguide/shared-lightning-component-animation-example.gif)
+![\[Add the Lightning component to your entity to enable lightning effects in your level.\]](/images/shared/shared-lightning-component-animation-example.gif)
 
 **Contents**
 + [Lightning Component Properties](#component-lightning-properties)

@@ -7,7 +7,7 @@ title: Order-Independent Transparency
 
 Order\-independent transparency \(OIT\) corrects the display of transparent objects that are drawn out of order\.
 
-![\[OIT example animation for Amazon Lumberyard.\]](/images/userguide/shared-OIT-example-animation.gif)
+![\[OIT example animation for Amazon Lumberyard.\]](/images/shared/shared-OIT-example-animation.gif)
 
 OIT is useful when creating the following:
 + Concave geometry – When you create concave geometry, such as a glass, wine glass, or glass sculpture, some triangles may cover the same pixels and are drawn on top of each other\. OIT solves the out\-of\-order issues that appear from certain angles\.

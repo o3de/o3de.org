@@ -34,7 +34,7 @@ For example, you can use the AZ Code Generator feature to create a component tha
 
 **Example AZ Code Generator Process**  
 
-![\[You can create your own components with the AZ Code Generator.\]](/images/userguide/az-code-gen-workflow.png)
+![\[You can create your own components with the AZ Code Generator.\]](/images/shared/az-code-gen-workflow.png)
 For more information, see [Automating boilerplate with AZ Code Generator](/docs/userguide/codegen/intro.md)\.
 
 **Behavior Context**  

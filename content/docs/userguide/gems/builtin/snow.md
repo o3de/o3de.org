@@ -73,4 +73,4 @@ You can use the following console variables [console variables](/docs/userguide/
 
 The Snow Sample uses the Snow and Clouds gems to demonstrate how to use the Snow entity as an environment special effects in a level\. The Snow entity shows how snow falls and provides properties that you can set to randomly change the snow fall over time, creating a more dynamic weather experience\.
 
-![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-snow.gif)
+![\[Image NOT FOUND\]](/images/shared/shared-gem-sample-snow.gif)

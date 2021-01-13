@@ -19,7 +19,7 @@ There is no limit for the number of active UI canvases that can contain virtual 
 **Example**  
 To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](/docs/userguide/animation/editor/rin-locomotion-sample.md) level from the [Samples Project](/docs/userguide/samples/projects/samples.md) on a device with touch screen support\.  
 
-![\[Provide your game with touch screen capabilities when played on a mobile device.\]](/images/userguide/shared-gems-system-gem-virtualgamepad-1.png)
+![\[Provide your game with touch screen capabilities when played on a mobile device.\]](/images/shared/shared-gems-system-gem-virtualgamepad-1.png)
 
 You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/userguide/ui/editor/creating-canvases.md)\. 
 

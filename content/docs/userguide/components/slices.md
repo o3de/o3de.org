@@ -21,7 +21,7 @@ Slices are saved as `.slice` files within your game project directory\.
 **Example**  
 In the **Entity Outliner**, you can identify different entities by their icon and color\.  
 
-![\[Slices in the Entity Outliner.\]](/images/userguide/shared-working_with_slices.png) {#identify-slices}
+![\[Slices in the Entity Outliner.\]](/images/shared/shared-working_with_slices.png) {#identify-slices}
 
 
 ****  

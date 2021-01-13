@@ -18,7 +18,7 @@ AZ Code Generator is a command line utility that generates source code \(or any 
 
 The templates provide the format for the code that is generated\. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code\. When a template is updated, all related generated code is regenerated in the next build\. This removes the need to update the glue code manually or to use error\-prone find\-and\-replace operations\. 
 
-![\[Image NOT FOUND\]](/images/userguide/az-code-gen-workflow.png)
+![\[Image NOT FOUND\]](/images/shared/az-code-gen-workflow.png)
 
 **Topics**
 + [Workflow Summary](#az-code-gen-intro-workflow-summary)

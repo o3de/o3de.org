@@ -45,7 +45,7 @@ If you apply decals to an object that can be moved by a player, the decal will n
 1. Enable the `r_deferredDecalsOnDynamicObjects` console variable so the decal appears on the vegetation:
 
    1. In Lumberyard Editor, click the **X** icon in the **Console** section\.  
-![\[Image NOT FOUND\]](/images/userguide/console-x-window.png)
+![\[Image NOT FOUND\]](/images/shared/console-x-window.png)
 
    1. In the **Console Variables** window, search for `r_deferredDecalsOnDynamicObjects`
 

@@ -14,7 +14,7 @@ When you change any part of a slice instance, such as adding a component, removi
    + **Property** – Revert changes to the property that you selected\.
    + **Component** – Revert all changes to the component that you selected\.
    + **Entity** – Revert all changes to the entity that you selected, such as added or removed components or changed properties\.  
-![\[Image NOT FOUND\]](/images/userguide/shared-component-slices-revert-property.png)
+![\[Image NOT FOUND\]](/images/shared/shared-component-slices-revert-property.png)
 
 ##  {#component-slice-override-reverting}
 

@@ -62,7 +62,7 @@ You can set the **Loop** parameter so that motion continues to play as long as t
 **Example**  
 
    The following shows the actor animating the idle to walk motion\.  
-![\[Example animation of a single motion in the track view sequence.\]](/images/userguide/shared-cinematics-track-view-simple-motion-component-6-example.gif)
+![\[Example animation of a single motion in the track view sequence.\]](/images/shared/shared-cinematics-track-view-simple-motion-component-6-example.gif)
 
 **Note**  
 When you update properties in the Track View, the original values for the entity properties are overwritten and are not restored\. For example, if you set the **Start time** to `3.0` in the Track View, this updates the **Simple Motion** component properties in the **Entity Inspector**\. If you want to reuse an entity with a **Simple Motion** component after a track view sequence is completed, update the **Play speed** parameter; the **Play speed** parameter always resets to zero in the Track View\. You can also avoid this issue by not reusing entities in this way\.

@@ -14,7 +14,7 @@ title: Geom Cache
 
 The **Geometry Cache** component renders mesh data and can play vertex\-based animations from [Alembic](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-export-maya-lumberyard-tools-alembic-cache.html) files\. With this, you can simulate highly complex geometry effects that might otherwise be unachievable\.
 
-![\[Example of a Geom Cache component.\]](/images/userguide/shared-geom-cache-example-animation.gif)
+![\[Example of a Geom Cache component.\]](/images/shared/shared-geom-cache-example-animation.gif)
 
 ## Geom Cache Parameters {#component-geom-cache-params}
 

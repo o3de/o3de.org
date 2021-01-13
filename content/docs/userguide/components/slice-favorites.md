@@ -50,7 +50,7 @@ You can perform a variety of actions to manage your slice favorites in the **Sli
 **Drag and Drop**  
 Select one or more slices or folders to drag them into other folders or to reorder them in the list\.  
 
-![\[Drag slices and folders in the Slice Favorites panel to rearrange items.\]](/images/userguide/shared-component-slices-favorites-animated.gif)
+![\[Drag slices and folders in the Slice Favorites panel to rearrange items.\]](/images/shared/shared-component-slices-favorites-animated.gif)
 
 **Add a folder**  
 Right\-click the **Slice Favorites** panel and choose **Add folder**\.  

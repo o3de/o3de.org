@@ -47,7 +47,7 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 **Example**  
 
    The following **Block Comment** node contains other nodes as a group\.  
-![\[Use the Block Comment node to organize the nodes in your script.\]](/images/userguide/block-comment-node.png)
+![\[Use the Block Comment node to organize the nodes in your script.\]](/images/shared/block-comment-node.png)
 
 1. To move your nodes together, drag the **Block Comment** node header\. All nodes inside the **Block Comment** node move together\.
 

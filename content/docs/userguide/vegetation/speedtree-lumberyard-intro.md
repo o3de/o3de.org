@@ -11,7 +11,7 @@ The SpeedTree integration provides a simple workflow to add level of detail \(LO
 
 The SpeedTree modeler exports Lumberyard meshes and materials into your game project\. You can then use these meshes and materials the same way you would use any other mesh or vegetation object\.
 
-![\[Image NOT FOUND\]](/images/userguide/shared-speed-tree-example-animation.gif)
+![\[Image NOT FOUND\]](/images/shared/shared-speed-tree-example-animation.gif)
 
 Download [SpeedTree 8 for Lumberyard](https://store.speedtree.com/product/speedtree-for-lumberyard)\.
 

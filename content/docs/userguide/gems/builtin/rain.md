@@ -78,4 +78,4 @@ You can use the following console variables for the rain entity\.
 
 The Rain Sample uses the Rain, Clouds, and LightningArc gems to demonstrate how to use rain as an environment special effects \(FX\) in a level\. The Lightning entity \(from the LightningArc gem\) shows how the lightning FX can enhance a rain storm with flashes of light and random strikes of lightning on the ground\. The clouds are enabled to show how they can fill a scene\.
 
-![\[Image NOT FOUND\]](/images/userguide/shared-gem-sample-rain.gif)
+![\[Image NOT FOUND\]](/images/shared/shared-gem-sample-rain.gif)

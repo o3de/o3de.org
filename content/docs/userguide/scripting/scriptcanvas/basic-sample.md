@@ -42,6 +42,6 @@ Do the following:
 + To turn the light on, drive away from the light\.
 + To exit the level, press **Esc**\.
 
-![\[Image NOT FOUND\]](/images/userguide/shared-tank-script-canvas-example.gif)
+![\[Image NOT FOUND\]](/images/shared/shared-tank-script-canvas-example.gif)
 
 For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)\.

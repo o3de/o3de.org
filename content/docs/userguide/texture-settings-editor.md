@@ -93,7 +93,7 @@ Click the **?** icon to open the texture documentation\.
 
 In the preview panel, you can do the following:
 
-![\[Open the texture file in the Texture Settings Editor.\]](/images/userguide/shared-texture-pipeline-editor-4.png)
+![\[Open the texture file in the Texture Settings Editor.\]](/images/shared/shared-texture-pipeline-editor-4.png)
 
 1. Click the drop\-down menu to preview the texture in the following channels:
    + **RGB** – Displays the RGB color channels \(default\)\.

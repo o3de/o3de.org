@@ -20,7 +20,7 @@ The **Perspective** header includes a search box, field of view \(FOV\), screen 
 1. In Lumberyard Editor, in the viewport title bar, right\-click **Perspective** and choose **Configure Layout**\.
 
 1. In the **Layout Configuration** dialog box, select your preferred layout\.  
-![\[Image NOT FOUND\]](/images/userguide/cinematics-cameras-focus-layout-configuration.png)
+![\[Image NOT FOUND\]](/images/shared/cinematics-cameras-focus-layout-configuration.png)
 
 1. Click **OK** to save your changes\.
 

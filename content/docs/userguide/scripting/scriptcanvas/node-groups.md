@@ -33,7 +33,7 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
   + Double\-click the group\.
   + Right\-click the group, and choose **Expand**\.
   + In **Node Inspector**, clear the **Collapse Group** option\.  
-![\[Creating a node group in the Script Canvas editor.\]](/images/userguide/shared-script-canvas-node-groups-1.gif)
+![\[Creating a node group in the Script Canvas editor.\]](/images/shared/shared-script-canvas-node-groups-1.gif)
 
 **To edit the name of a group**
 + Do one of the following:

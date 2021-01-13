@@ -71,4 +71,4 @@ In the following example, you can see a box through a different portal, but beca
 **Example 5**  
 In the following example, if you go through the portal and look back, you can see the other visible areas, but you can't see the boxes in those areas\. You can't see through portals that aren't connected to the visible area that you're in\.   
 
-![\[Visible areas must be connected with a Portal component to view between them.\]](/images/userguide/component-portal-5.png)
+![\[Visible areas must be connected with a Portal component to view between them.\]](/images/shared/component-portal-5.png)

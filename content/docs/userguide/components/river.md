@@ -18,7 +18,7 @@ The **River** component requires the **[Spline](/docs/userguide/components/splin
 
 To use the **River** component, you must [enable](/docs/userguide/gems/using-project-configurator.md) the **Roads and Rivers** gem\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-![\[Example animation of the River component.\]](/images/userguide/shared-component-river.gif)
+![\[Example animation of the River component.\]](/images/shared/shared-component-river.gif)
 
 **Topics**
 + [River Properties](#component-river-properties)

@@ -79,7 +79,7 @@ Lumberyard layers are saved as `.layer` files in the `level_name/layers` directo
 
 When a layer contains unsaved changes, an asterisk \(\*\) appears next to the layer name\. After you save the level or the layer, the asterisk is removed\.
 
-![\[Asterisk (*) next to a layer with unsaved information.\]](/images/userguide/shared-saving-layers.png)
+![\[Asterisk (*) next to a layer with unsaved information.\]](/images/shared/shared-saving-layers.png)
 
 Layer names at the same hierarchy level must be unique\. Layers at the same hierarchy level with duplicate names display a warning \(**\!**\) and can't be saved until you rename them\.
 

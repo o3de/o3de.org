@@ -143,7 +143,7 @@ In order to begin managing a Cloud Canvas project, you add the IAM user credenti
 **To enter your credentials in Lumberyard Editor**
 
 1. Use one of the following methods to launch Lumberyard Editor:
-   + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Image NOT FOUND\]](/images/userguide/lumberyard-editor-launch.png) 
+   + From the desktop, double\-click the Lumberyard Editor icon\. ![\[Image NOT FOUND\]](/images/shared/lumberyard-editor-launch.png) 
    + From Lumberyard Setup Assistant, on the **Summary** page, click **Launch Editor**\.
    + For Visual Studio 2017, navigate to the `lumberyard-version\dev\Bin64vc141` directory and double\-click `Editor.exe`\.
 

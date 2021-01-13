@@ -37,7 +37,7 @@ When you select a group of entities, the Viewport Interaction Model follows the 
 **Example**  
 
    In the following example, a group of entities move in relation to the reference space\.  
-![\[Move entities as a group in relation to the reference space in Lumberyard.\]](/images/userguide/viewport-selection-model-7.gif)
+![\[Move entities as a group in relation to the reference space in Lumberyard.\]](/images/shared/viewport-selection-model-7.gif)
 
 1. Press and hold **Ctrl**, and move the manipulator in the viewport\. This creates a custom reference space\.  
 **Example**  

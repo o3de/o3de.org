@@ -21,7 +21,7 @@ The **Sky Cloud** component replaces [legacy clouds](https://docs.aws.amazon.com
 
 **Example Sky Cloud Component**  
 
-![\[Example Sky Cloud component in Lumberyard.\]](/images/userguide/gems-system-gem-clouds.png)
+![\[Example Sky Cloud component in Lumberyard.\]](/images/shared/gems-system-gem-clouds.png)
 
 Lumberyard features two variations of cloud rendering:
 

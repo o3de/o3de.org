@@ -183,7 +183,7 @@ In the following example, the parameter **Volumetric Fog On** is enabled for the
 **Example**  
 In the following example, the parameter **Volumetric Fog** is disabled for the light component\.  
 
-![\[Fog Volume component and light component where Volumetric Fog is disabled.\]](/images/userguide/fog-component-example-5.png)
+![\[Fog Volume component and light component where Volumetric Fog is disabled.\]](/images/shared/fog-component-example-5.png)
 
 For more information about light components, see [Rendering](/docs/userguide/components/components#component-entity-rendering)\.
 

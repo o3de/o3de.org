@@ -22,7 +22,7 @@ A spline is a curve that connects two or more specific points\. This is useful i
 
 ## Spline Properties {#component-spline-properties}
 
-![\[Example Spline component with the Component Mode option.\]](/images/userguide/using-component-mode-3.png)
+![\[Example Spline component with the Component Mode option.\]](/images/shared/using-component-mode-3.png)
 
 The **Spline** component has the following properties\.
 

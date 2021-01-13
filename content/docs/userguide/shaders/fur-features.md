@@ -23,7 +23,7 @@ Anisotropic specular highlights are supported when a mesh provides [fur combing]
 
 Anisotropic highlights are not applied to areas where fur length is set to `0` in the mesh vertex color\. For example, non\-furry areas such as a nose, mouth, or claws will display isotropic, or hotspot, highlights rather than banded, or anisotropic highlights\.
 
-![\[Example fur shader reference for non-furry areas.\]](/images/userguide/shader-ref-fur-6.png)
+![\[Example fur shader reference for non-furry areas.\]](/images/shared/shader-ref-fur-6.png)
 
 ## Subsurface Scattering {#shader-ref-fur-features-subsurface}
 

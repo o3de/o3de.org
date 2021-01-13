@@ -93,11 +93,11 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 **Note**  
 To create the script file, copy and paste the code into a text file\. Rename the file extension to `.lua` and save it in your project directory\.
 
-1. In the **Lua Script** component, for the **LightEntity** property, click the target icon ![\[Target picker icon\]](/images/userguide/picker.png) and in the viewport, select the **lamp** entity\. You can also use the **Entity Outliner** to select the **lamp** entity\.
+1. In the **Lua Script** component, for the **LightEntity** property, click the target icon ![\[Target picker icon\]](/images/shared/picker.png) and in the viewport, select the **lamp** entity\. You can also use the **Entity Outliner** to select the **lamp** entity\.
 
    The **lamp** entity appears in the **LightEntity** box\.
 
-1. In the **Lua Script** component, for the **ProbeEntity** property, click the target icon ![\[Target picker icon\]](/images/userguide/picker.png) and in the viewport, select the **probe\_light** entity\.
+1. In the **Lua Script** component, for the **ProbeEntity** property, click the target icon ![\[Target picker icon\]](/images/shared/picker.png) and in the viewport, select the **probe\_light** entity\.
 
    You can also use the **Entity Outliner** to select the **probe\_light** entity\.
 
@@ -206,7 +206,7 @@ To create the script file, copy and paste the code into a text file\. Rename the
 1. In the **Lua Script** component, for **Probes**, click **\+** until the number of **EntityId** slots equals the number of probes that you have\.  
 ![\[Create EntityID slots to match the number of environment probes in the Lua Script component.\]](/images/userguide/level-environment-probe-daynight-2.png)
 
-1. Assign each of your probes to one of the script's **EntityId** probe slots\. In the **Entity Inspector**, click the target icon ![\[Target picker icon\]](/images/userguide/picker.png) next to an empty slot\. In the **Entity Outliner**, select a probe\. Repeat until all slots are filled\.
+1. Assign each of your probes to one of the script's **EntityId** probe slots\. In the **Entity Inspector**, click the target icon ![\[Target picker icon\]](/images/shared/picker.png) next to an empty slot\. In the **Entity Outliner**, select a probe\. Repeat until all slots are filled\.
 
    In the following example, all of the empty slots are filled\. When they are not yet selected, the **EntityId** boxes are blank\.  
 ![\[Lua Script component with all probes selected.\]](/images/userguide/level-environment-probe-daynight-3.png) {#probe-blending-example-script}

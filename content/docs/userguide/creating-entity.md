@@ -20,5 +20,5 @@ title: Creating an Entity
 
 1. Do one of the following:
    + In the **Entity Outliner**, select and drag the child entities on top of the new parent entity\.
-   + Select one or more entities that are to be the child entities\. In the **Entity Inspector**, for the **Transform** component, beside the **Parent Entity** property, click the picker icon ![\[Image NOT FOUND\]](/images/userguide/picker.png) and then select the parent entity in the viewport\.
+   + Select one or more entities that are to be the child entities\. In the **Entity Inspector**, for the **Transform** component, beside the **Parent Entity** property, click the picker icon ![\[Image NOT FOUND\]](/images/shared/picker.png) and then select the parent entity in the viewport\.
    + Select one or more entities that are to be the child entities\. From the **Entity Outliner**, drag the parent entity into the **Entity Inspector** and drop it beneath the **Transform** component into the **Parent Entity** property\.

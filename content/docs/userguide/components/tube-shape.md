@@ -22,7 +22,7 @@ The **Tube Shape** component requires the **[Spline](/docs/userguide/components/
 
 **Example Tube Shape Component**  
 
-![\[Example Tube Shape component in Lumberyard Editor.\]](/images/userguide/shared-component-tube-shape-example.png)
+![\[Example Tube Shape component in Lumberyard Editor.\]](/images/shared/shared-component-tube-shape-example.png)
 
 ## Tube Shape Properties {#tube-shape-properties}
 

@@ -72,7 +72,7 @@ The following example is the legacy visualization for a visible area\. One verte
 **Example : Planar Vertices with VisArea Component**  
 The following is an example of the **VisArea** component with the same vertices\.  
 
-![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/userguide/component-visarea-4.png)
+![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/shared/component-visarea-4.png)
 
 The second example is correct because the visible area is the volume on the xy\-plane with a z\-position and a height\. This makes it faster to determine whether an object is inside the **VisArea** component\.
 

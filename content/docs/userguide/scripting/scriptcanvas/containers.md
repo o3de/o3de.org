@@ -21,7 +21,7 @@ Arrays provide a dynamic continuous area of memory that can hold storage of a gi
 ![\[Creating an array variable in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-1.png)
 
 1. Enter information to create your array, and then click **Create**\.  
-![\[Enter information to create your array.\]](/images/userguide/shared-script-canvas-containers-2.png)
+![\[Enter information to create your array.\]](/images/shared/shared-script-canvas-containers-2.png)
    + For **Variable Name**, enter the name for your array variable\.
    + For **Container Type**, use **Array**\.
    + For **Type**, choose the data type for the array\.
@@ -94,7 +94,7 @@ Maps are containers of key\-value pairs\. Maps in the **Variable Manager** have 
 ![\[Creating a map variable in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-11.png)
 
 1. Enter information to create your map, and then click **Create**\.  
-![\[Enter information to create a key-value pair map.\]](/images/userguide/shared-script-canvas-containers-12.png)
+![\[Enter information to create a key-value pair map.\]](/images/shared/shared-script-canvas-containers-12.png)
    + For **Variable Name**, enter the name for your map variable\.
    + For **Container Type**, use **Map**\.
    + For **Key**, choose a data type for the key\.

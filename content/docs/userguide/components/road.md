@@ -166,7 +166,7 @@ The following image shows the road with **Erase width** set to `0`\.
 **Example**  
 The following image shows the road with **Erase width** set to `1` and **Erase variance** set to `5`\.  
 
-![\[Road with Erase width set to 1 and Erase variance set to 5.\]](/images/userguide/shared-erasing-road-vegetation-3.png)
+![\[Road with Erase width set to 1 and Erase variance set to 5.\]](/images/shared/shared-erasing-road-vegetation-3.png)
 
 ## RoadRequestBus Interface {#component-road-ebus-request}
 

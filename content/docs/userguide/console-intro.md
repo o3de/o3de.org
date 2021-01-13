@@ -23,7 +23,7 @@ You can enter commands directly in the console window or search and edit console
 1. In Lumberyard Editor, choose **Tools**, **Console**\. 
 
 1. Click the **X** icon in the left corner to open the **Console Variables** window\. The **Console Variables** window lists all available console variables\.   
-![\[View all available console variables in the console window.\]](/images/userguide/console-x-window.png)
+![\[View all available console variables in the console window.\]](/images/shared/console-x-window.png)
 
 1. Enter a name to search for a specific console variable\. To learn more about the console variable, pause on the name\.  
 ![\[View console variables in the console window.\]](/images/userguide/console-variables.png)

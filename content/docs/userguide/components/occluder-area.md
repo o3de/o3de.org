@@ -43,4 +43,4 @@ The **OccluderArea** component has the following properties\.
 
 The following example shows two boxes\. One box is hidden behind the occluder area, but you can see its shadow\. The other box is outside the occluder area and appears normally on screen\.
 
-![\[OccluderArea component with two boxes.\]](/images/userguide/component-occluderarea.png)
+![\[OccluderArea component with two boxes.\]](/images/shared/component-occluderarea.png)

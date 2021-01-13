@@ -44,14 +44,14 @@ For components that support this feature, the component is locked when you edit 
 ![\[Example Spline component in the viewport.\]](/images/userguide/componentmode/using-component-mode-1.png)
 
 1. In the viewport, double\-click the spline or, in the **Entity Inspector**, click **Edit**\.  
-![\[Example Spline component with the Component Mode option.\]](/images/userguide/using-component-mode-3.png)  
+![\[Example Spline component with the Component Mode option.\]](/images/shared/using-component-mode-3.png)  
 **Example**  
 
    The manipulator appears in the viewport\. The vertices turn red\. When you select a vertex, the manipulator appears\.  
 ![\[Example Spline component with the component manipulator.\]](/images/userguide/componentmode/using-component-mode-2.png)
 
    All other components attached to the entity are dimmed in the **Entity Inspector**, and you can't edit them\.  
-![\[Example Spline component with the Component Mode option enabled and all other components dimmed.\]](/images/userguide/using-component-mode-4.png)
+![\[Example Spline component with the Component Mode option enabled and all other components dimmed.\]](/images/shared/using-component-mode-4.png)
 
 1. Select a vertex and make changes such as adding, moving, or deleting vertices\.  
 ![\[Example editing a component directly in the viewport.\]](/images/userguide/componentmode/using-component-mode-6.png)

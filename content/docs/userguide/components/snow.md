@@ -15,7 +15,7 @@ You can use the **Snow** component to create snowfall effects and create patches
 
 To enable the **Snow** component, you must enable the Snow gem\. For more information, see [Snow Gem](/docs/userguide/gems/builtin/snow.md)\.
 
-![\[Add the Snow component to your entity to enable snow effects in your level.\]](/images/userguide/shared-snow-component-animation-example.gif)
+![\[Add the Snow component to your entity to enable snow effects in your level.\]](/images/shared/shared-snow-component-animation-example.gif)
 
 **Note**  
 If your level has a **Snow** and **[Rain](/docs/userguide/components/rain.md)** component, the component that activates last takes priority; you cannot enable both **Snow** and **Rain** components at the same time\.
