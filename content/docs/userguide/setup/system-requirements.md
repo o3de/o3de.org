@@ -66,7 +66,7 @@ Beginning with Visual Studio 2017, Microsoft now releases updates on a more freq
 1. Check that the Visual C\+\+ redistributable installers for Visual Studio 2012 and Visual Studio 2019 have been successfully downloaded\. The installers are located in the corresponding **Visual Studio** directories in the `lumberyard_version\dev\Tools\Redistributables\` directory\. 
 
 1. If the Visual C\+\+ redistributable installers for Visual Studio 2012 and Visual Studio 2019 have not been downloaded by Lumberyard Installer, manually download the installers from Microsoft\. 
-   + [ Visual C\+\+ Redistributable for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679) 
+   + [ Visual C\+\+ Redistributable for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679) 
    + [ Visual C\+\+ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family) 
 
 1. Run both Visual C\+\+ redistributable installers\. 
