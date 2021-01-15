@@ -10,7 +10,7 @@ Lumberyard Editor can be launched from the start menu or the Lumberyard Editor d
 
 For a 20\-minute crash course on navigating the **Perspective** viewport, customizing the Lumberyard Editor layout, creating entities, and working with components in Lumberyard Editor, see the following video tutorial\.
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/E1NgI8urJ7o?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/E1NgI8urJ7o?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/E1NgI8urJ7o?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/E1NgI8urJ7o?rel=0)
 
 **Note**  
 Amazon Lumberyard version 1\.25 introduced an updated interface\. You will notice differences in the visual interface and user experience viewing this video while using Lumberyard 1\.25 or later; however, the information in the video tutorial is still applicable to the fundamentals of using Lumberyard Editor\.

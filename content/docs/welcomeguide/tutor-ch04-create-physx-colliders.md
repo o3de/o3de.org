@@ -9,7 +9,7 @@ In this tutorial, you add a **White Box Collider** to the feed locker and a **Ch
 **Tip**  
 If you like, you can follow this chapter in video \(4:28 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/jNm6jPKCmWk?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/jNm6jPKCmWk?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/jNm6jPKCmWk?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/jNm6jPKCmWk?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md), or by opening `ch03_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 

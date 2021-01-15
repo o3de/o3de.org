@@ -35,7 +35,7 @@ Need some help setting up Lumberyard for the first time? [Start here\!](wg-insta
 
 Or, you can watch a video on setup made specifically for this tutorial series:
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/EnmbFSJ0ZWo?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/EnmbFSJ0ZWo?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/EnmbFSJ0ZWo?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/EnmbFSJ0ZWo?rel=0)
 
 Are you good? If so, let’s go over the basic bits we provide you to get started\.
 

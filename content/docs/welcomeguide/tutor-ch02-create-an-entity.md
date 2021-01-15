@@ -10,7 +10,7 @@ In this tutorial, you will create a simple environment prop using [White Box](ht
 **Tip**  
 If you like, you can follow this chapter in video \(4:43 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/em15_n28R-k?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/em15_n28R-k?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/em15_n28R-k?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/em15_n28R-k?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial One: Create a level](tutor-ch01-create-a-level.md), or by opening `ch01_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar, or press **Control \+ O**\.
 

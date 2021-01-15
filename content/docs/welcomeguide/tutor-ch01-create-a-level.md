@@ -9,7 +9,7 @@ In this first tutorial, you will create a simple level with a flat terrain in Lu
 **Tip**  
 If you like, you can follow this chapter in video \(4:53 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/q3Qlns_xaN8?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/q3Qlns_xaN8?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/q3Qlns_xaN8?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/q3Qlns_xaN8?rel=0)
 
 Before you proceed, you should already have completed the following steps:
 + Downloaded and unzip the [WelcomeGuideTutorials](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) project into your Lumberyard dev folder\.

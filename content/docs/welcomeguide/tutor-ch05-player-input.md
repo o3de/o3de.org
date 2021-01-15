@@ -9,7 +9,7 @@ In this tutorial, you will add new input event generators and build a network in
 **Tip**  
 If you like, you can follow this chapter in video \(7:33 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/Zh0LT9XSYLw?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/Zh0LT9XSYLw?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/Zh0LT9XSYLw?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/Zh0LT9XSYLw?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial Four: Create PhysX colliders](tutor-ch04-create-physx-colliders.md), or by opening `ch04_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 

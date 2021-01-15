@@ -10,7 +10,7 @@ In this tutorial, you will create a camera entity and use **Script Canvas** to m
 **Tip**  
 If you like, you can follow this chapter in video \(4:41 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/Cg2uDaix7fA?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/Cg2uDaix7fA?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/Cg2uDaix7fA?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/Cg2uDaix7fA?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial Five: Handling player input through Script Canvas](tutor-ch05-player-input.md), or by opening `ch05_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 

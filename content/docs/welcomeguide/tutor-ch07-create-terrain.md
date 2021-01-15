@@ -9,7 +9,7 @@ In this tutorial, you will use the **Terrain Editor**, **Terrain Tool**, **Textu
 **Tip**  
 If you like, you can follow this chapter in video \(6:45 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/sQrlDaLbDZ8?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/sQrlDaLbDZ8?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/sQrlDaLbDZ8?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/sQrlDaLbDZ8?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md), or by opening `ch06_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 

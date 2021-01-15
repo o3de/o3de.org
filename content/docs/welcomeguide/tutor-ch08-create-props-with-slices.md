@@ -9,7 +9,7 @@ In this tutorial, you will learn how to make entities that can be instanced with
 **Tip**  
 If you like, you can follow this chapter in video \(6:33 minutes\) form:  
 
-[![AWS Videos](http://img.youtube.com/vi/https://www.youtube.com/embed/j-c1HJCXxmQ?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/j-c1HJCXxmQ?rel=0)
+[![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/j-c1HJCXxmQ?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/j-c1HJCXxmQ?rel=0)
 
 Begin this tutorial either with the level you created in [Tutorial Seven: Create terrain](tutor-ch07-create-terrain.md), or by opening `ch07_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
