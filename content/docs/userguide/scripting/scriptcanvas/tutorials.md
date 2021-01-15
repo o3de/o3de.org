@@ -1,0 +1,19 @@
+---
+description: ' Use the &script-canvas; tutorials to learn about &ALYlong;''s visual
+  scripting system. '
+title: '&script-canvas; Tutorials'
+---
+# Script Canvas Tutorials {#script-canvas-tutorials}
+
+Use the following **Script Canvas** tutorials to learn about the Lumberyard visual scripting system\.
+
+## Prerequisites {#prerequisites-for-script-canvas-tutorial}
++ Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
++ If your **Node Palette** is missing nodes, you can update your preferences to show hidden nodes\. For more information, see [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)\. 
++ To access diagnostic nodes, including the **Print** node, you must enable the **Script Canvas Diagnostic Library** gem and then build your game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
+
+**Topics**
++ [Prerequisites](#prerequisites-for-script-canvas-tutorial)
++ [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md)
++ [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/userguide/scripting/scriptcanvas/tutorial-trigger-areas.md)
++ [Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions](/docs/userguide/scripting/scriptcanvas/tutorial-collisions-targets.md)
