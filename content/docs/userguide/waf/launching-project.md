@@ -1,0 +1,31 @@
+---
+description: ' Launch your &ALYlong; game project after using Waf to configure and
+  build it. '
+title: Launching the Game Project
+---
+# Launching the Game Project {#waf-launching-project}
+
+Building your game project produces an `.exe` file in Lumberyard's file system\.
+
+To launch your project, open the executable file\. The directory and file name are named according to the following conventions:
+
+**`/dev/Bin64compiler.build mode/executable name.exe`**
+
+Where:
++ `compiler`
+  + `vc141` – Visual Studio 2017\.
+  + `vc142` – Visual Studio 2019\.
++ [ `build mode`](/docs/userguide/game-build-intro.md)
+  + `Debug` – Built in debug mode\.
+  + \(None\) – Built in profile mode\.
+  + `Performance` – Built in performance mode\.
+  + `Release` – Built in release mode\.
++ `executable name` – The `executable_name` specified in your [`project.json`](/docs/userguide/waf/files-projects-file.md) file\. The file name typically mirrors the project name\.
+
+For example, if your project was configured with the following:
++ Compiler: Visual Studio 2017
++ Build mode: `debug`
++ Executable name: `SampleProjectLauncher`
+
+Then your directory and file name would be the following:
++ `lumberyard_version/dev/Bin64vc141.Debug/SampleProjectLauncher.exe`

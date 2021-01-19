@@ -1,0 +1,38 @@
+---
+description: ' Use the Get Input Vector3 node in the &ALYlong; &script-canvas; editor
+  to return the value of a procedural material input parameter as a Vector3. '
+title: Get Input Vector3
+---
+# Get Input Vector3 {#get-input-vector3-node}
+
+Returns the value of an input parameter as a Vector3\. Use this node with the `Float3` and `Integer3` substance data types\. 
+
+**Note**  
+You can use this node with all substance data types: `Float1` through `Float4` and `Integer1` through `Integer4`\. However, if the input parameter has fewer dimensions, the extra dimensions are assigned a value of `0`\. If there are more dimensions, they are ignored\. 
+
+**Contents**
++ [Inputs](#get-input-vector3-node-input)
++ [Outputs](#get-input-vector3-node-output)
+
+![\[GetInputVector3 gets the Vector3 value for a procedural material's parameter.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-get-input-vector3-node.png)
+
+## Inputs {#get-input-vector3-node-input}
+
+
+****  
+
+| Pin | Type | Description | 
+| --- | --- | --- | 
+| In | Event | Triggers the node\. | 
+| Procedural Material | Procedural material | The procedural material to query\. | 
+| Input Name | String | The name of the input parameter to return\. | 
+
+## Outputs {#get-input-vector3-node-output}
+
+
+****  
+
+| Pin | Type | Description | 
+| --- | --- | --- | 
+| Out | Event | Sends when the node is finished\. | 
+| Vector3 | Vector3 |  The value of the specified input parameter\.  Returns `0` if the value can't be found\.  | 
