@@ -14,7 +14,7 @@ These tools are available in the **Tools** menu of the **Lumberyard Editor**\.
 
 With **Animation Editor**, build animated *behaviors* for your *actors*\.
 
-Use the Animation Editor to build animation loops and set up smooth transitions between them\. To create behaviors, begin by loading an actor, which is a skinned mesh, and its corresponding animations\. The animations are added to *motion sets*\. You create *motion graphs* using motion sets that can blend animation based on states and events\. The motion graphs that you create define your actor’s behaviors\.
+Use the Animation Editor to build animation loops and set up smooth transitions between them\. To create behaviors, begin by loading an actor, which is a skinned mesh, and its corresponding animations\. The animations are added to *motion sets*\. You create *motion graphs* using motion sets that can blend animation based on states and events\. The motion graphs that you create define your actor's behaviors\.
 
 ## FBX Settings<a name="tool-fbx-settings-editor"></a>
 
@@ -90,7 +90,7 @@ Lumberyard integrates NVIDIA PhysX for real\-time physics simulation\. With **Ph
 
 Program logic and behaviors visually with **Script Canvas**\.
 
- **Script Canvas** is one of Lumberyard’s most powerful tools\. With **Script Canvas**, you can create behaviors, functions, and logic in a visual programming environment\. **Script Canvas** is designed to use Lumberyard’s serialization, reflection, modularization, and EBus messaging systems\. It’s tightly integrated with Lumberyard’s component entity system and built on the `AzCore` library\. This means that you can create event\-driven logic and behaviors without programming experience\.
+ **Script Canvas** is one of Lumberyard's most powerful tools\. With **Script Canvas**, you can create behaviors, functions, and logic in a visual programming environment\. **Script Canvas** is designed to use Lumberyard's serialization, reflection, modularization, and EBus messaging systems\. It's tightly integrated with Lumberyard's component entity system and built on the `AzCore` library\. This means that you can create event\-driven logic and behaviors without programming experience\.
 
 ## Terrain Editor<a name="tool-terrain-editor"></a>
 

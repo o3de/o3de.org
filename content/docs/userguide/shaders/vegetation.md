@@ -42,7 +42,7 @@ Changes tiling of blend mask\.
 Default value: `1`
 
 **Cap opacity fall off**  
-Controls the fading of alpha test textures when seen at a steep angle \(so they look less like a plane\)\. A value of `1` means it's turned off; `0` means it’s fully activated\.   
+Controls the fading of alpha test textures when seen at a steep angle \(so they look less like a plane\)\. A value of `1` means it's turned off; `0` means it's fully activated\.   
 Default value: `1`
 
 **Detail bending frequency**  

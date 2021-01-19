@@ -78,7 +78,7 @@ The basic setup for the **Video Playback Bink** component includes the following
 
 ## Lua Bindings for Video Playback Bink {#component-videoplayback-bink-lua}
 
-You can use Lua bindings to interact programmatically with video playback components that you’ve placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
+You can use Lua bindings to interact programmatically with video playback components that you've placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
 
 ### Global Functions {#component-videoplayback-bink-lua-global}
 

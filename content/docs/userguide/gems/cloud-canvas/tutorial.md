@@ -49,7 +49,7 @@ AWS requires that you provide credentials to verify that you have the appropriat
 
 The IAM user that you create will belong to a group that has administrator permissions\. This allows users in this group to create the Cloud Canvas resources and make them accessible through Lumberyard\. Administrative users in this group will have special permissions beyond the scope of a normal Cloud Canvas user\.
 
-In a team environment, you—as a member of the administrator's group—can create IAM users for each member of your team\. With IAM, you can set permissions specifically for each person’s role in a project\. For example, you might specify that only designers can edit a database, or prevent team members from accidentally writing to resources with which your players interact\.
+In a team environment, you—as a member of the administrator's group—can create IAM users for each member of your team\. With IAM, you can set permissions specifically for each person's role in a project\. For example, you might specify that only designers can edit a database, or prevent team members from accidentally writing to resources with which your players interact\.
 
 For more information on IAM and permissions, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)\.
 

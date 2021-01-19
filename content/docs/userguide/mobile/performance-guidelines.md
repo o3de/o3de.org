@@ -148,7 +148,7 @@ The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular exp
         <Device model="Nexus 7"/> <!-- Nexus 7 -->
         <Device model="Nexus 5"/> <!-- Nexus 5 -->
         <Device model="SM-N910H"/> <!-- Samsung Galaxy Note 4  (Asia-Pacific)-->
-        <Device model=“SM-G900\w{1,2}“/> <!-- Samsung Galaxy S5 -->
+        <Device model="SM-G900\w{1,2}"/> <!-- Samsung Galaxy S5 -->
    </Config>
     <Config file="android_medium.cfg">
         <Device model="SM-T217S"/> <!-- Samsung Galaxy Tab 3 -->
@@ -180,7 +180,7 @@ For the iOS devices that Lumberyard supports, both GMEM 256 bit mode and 128 bit
 
 You can enable or disable GMEM with the `r_EnableGMEMPath` console variable\.
 + **0** = Disables GMEM in the renderer\.
-+ **1** = Enables the renderer to use GMEM in 256 bit mode\. If the mobile device doesn't support 256 bit mode, the renderer will use 128 bit mode\. If the mobile device doesn’t support 128 bit mode, the renderer will disable GMEM\.
++ **1** = Enables the renderer to use GMEM in 256 bit mode\. If the mobile device doesn't support 256 bit mode, the renderer will use 128 bit mode\. If the mobile device doesn't support 128 bit mode, the renderer will disable GMEM\.
 + **2** = Enables the renderer to use GMEM in 128 bit mode\.
 
 You can only enable or disable GMEM during engine startup\. You must add the `r_EnableGMEMPath` console variable to one of the following files:

@@ -48,7 +48,7 @@ Enter the following command for your version of Visual Studio\.
 lmbr_waf build_win_x64_vs2017_profile -p all --targets=CrySCompileServer
 ```
 
-If you don’t want to \(or can't\) build using the `all` profile, you can alternatively just build the `game_and_engine` spec and the `shadercachegen` spec\.
+If you don't want to \(or can't\) build using the `all` profile, you can alternatively just build the `game_and_engine` spec and the `shadercachegen` spec\.
 
 Enter the following command for your version of Visual Studio\.
 

@@ -14,13 +14,13 @@ If you like, you can follow this chapter in video \(4:43 minutes\) form:
 
 Begin this tutorial either with the level you created in [Tutorial One: Create a level](tutor-ch01-create-a-level.md), or by opening `ch01_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar, or press **Control \+ O**\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Create an entity by right\-clicking in **Entity Outliner** on the left side of the editor and choose **Create entity** from the context menu\. Click on the newly created entity to select it\.   
 ![\[Lumberyard create entity\]](/images/welcomeguide/ui-create-entity-1.25.png)
 
-1.  With the entity selected, review the **Entity Inspector** on the right of the editor\. You can see the entity has a **Transform** component, a default **Name**, and a unique **Entity ID**\. All entities have a **Transform** component that defines the position, orientation, and scale of the entity in the level\. Also notice the transform *gizmo* \(the three\-axis object labeled X, Y, and Z\) in the **Perspective** view\. If you don’t see the gizmo, with the entity selected press **Z** to focus on it\. The gizmo is the representation of your new entity’s transform in the level\. 
+1.  With the entity selected, review the **Entity Inspector** on the right of the editor\. You can see the entity has a **Transform** component, a default **Name**, and a unique **Entity ID**\. All entities have a **Transform** component that defines the position, orientation, and scale of the entity in the level\. Also notice the transform *gizmo* \(the three\-axis object labeled X, Y, and Z\) in the **Perspective** view\. If you don't see the gizmo, with the entity selected press **Z** to focus on it\. The gizmo is the representation of your new entity's transform in the level\. 
 
    Change the name of the entity\. In **Entity Inspector**, click in the **Name** property and enter `feed_locker` as the name for the entity\.  
 ![\[Lumberyard entity name\]](/images/welcomeguide/ui-entity-name-1.25.png)
@@ -39,7 +39,7 @@ Begin this tutorial either with the level you created in [Tutorial One: Create a
 **Note**  
 If **Snap to grid** is enabled, the feed locker entity will automatically snap to a position above the terrain\. To freely position the entity, press **G** or click the **Snap to grid** icon in the top menu bar to disable **Snap to grid**\.
 
-1.  You’ll use a few modeling operations to modify the White Box cube into the rough shape of a feed locker\. To modify the White Box, you must be in White Box edit mode\. Choose **Edit** in the White Box component to enter edit mode\.   
+1.  You'll use a few modeling operations to modify the White Box cube into the rough shape of a feed locker\. To modify the White Box, you must be in White Box edit mode\. Choose **Edit** in the White Box component to enter edit mode\.   
 ![\[Lumberyard White Box component edit mode\]](/images/welcomeguide/ui-white-box-edit-mode-1.26.png)
 **Note**  
 A complete list of White Box edit mode operations can be found in the [White Box component](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-white-box.html) documentation\.
@@ -50,7 +50,7 @@ A complete list of White Box edit mode operations can be found in the [White Box
 1.  Hover over the top front edge of the box\. Hold the **left mouse button** and drag to pull the edge down a bit, creating a slope on the top of the box\.   
 ![\[Lumberyard White Box edit - move edge\]](/images/welcomeguide/anim-wb-move-edge-1.25.gif)
 
-1.  Next you’ll perform a bit more complex of an operation to create the lid for the locker\. Start by clicking the top of the box to select the top face\. The face highlights blue and the vertices of the face are displayed\.   
+1.  Next you'll perform a bit more complex of an operation to create the lid for the locker\. Start by clicking the top of the box to select the top face\. The face highlights blue and the vertices of the face are displayed\.   
 ![\[Lumberyard White Box select face\]](/images/welcomeguide/ui-white-box-select-face-1.25.png)
 
 1.  Perform an extrude scale operation\. Hold the **Control** key, hover over one of the vertices of the selected face, and hold the **left mouse button** as you drag the mouse outward from the box\. 
@@ -65,4 +65,4 @@ A complete list of White Box edit mode operations can be found in the [White Box
 
 For extra credit, try using the steps above to create an new entity, add a White Box component, and use some of the additional editing features of the [White Box component](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-white-box.html) to create a more complex environment asset\.
 
-When you’re ready, try [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)\.
+When you're ready, try [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)\.

@@ -14,7 +14,7 @@ title: Networking Architecture
 
  **Host** \- A special kind of a peer that manages the game session\. The host can run on one of the game clients or be a dedicated server\.  
 
- Synchronization of the states of various networked game objects is achieved through the GridMate replication model\. One important design element is the concept of a `horizon`\. GridMate does not maintain a full graph of the replication network at each node\. Instead, each node is only aware of the peers that it has a direct connection to; everything else is considered the "horizon"\. Nodes keep track of which replica updates are arriving from which peer \(upstream\) only for purposes of routing, so they know where to forward upstream requests and, in the case of hub nodes, where to send them downstream\. Basically, if a node receives a request for a replica it doesn’t own, it forwards it upstream\. 
+ Synchronization of the states of various networked game objects is achieved through the GridMate replication model\. One important design element is the concept of a `horizon`\. GridMate does not maintain a full graph of the replication network at each node\. Instead, each node is only aware of the peers that it has a direct connection to; everything else is considered the "horizon"\. Nodes keep track of which replica updates are arriving from which peer \(upstream\) only for purposes of routing, so they know where to forward upstream requests and, in the case of hub nodes, where to send them downstream\. Basically, if a node receives a request for a replica it doesn't own, it forwards it upstream\. 
 
 ## GridMate Architecture {#networking-architecture-gridmate}
 

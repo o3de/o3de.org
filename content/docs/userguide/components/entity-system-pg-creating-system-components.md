@@ -25,7 +25,7 @@ Just like game components, system components often provide request and notificat
 Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\. 
 
 When you create a system component as part of a gem, note the following requirements:
-+ Your gem’s `GetRequiredSystemComponents()` function must return the system component\.
++ Your gem's `GetRequiredSystemComponents()` function must return the system component\.
 + Your `GemNameBus.h` file goes under the `lumberyard_version\dev\Gems\GemName\Code\Include\GemName\` directory\.
 + Your component source files go under the `lumberyard_version\dev\Gems\GemName\Code\Source\` directory\.
 

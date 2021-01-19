@@ -95,7 +95,7 @@ wb.Write(1.0f, HalfMarshaler());
 
 ### Read Buffers {#network-marshalling-read-buffers}
 
-Read buffers have built\-in overflow detection and do not read any data fields after the end of the buffer has been reached\. You can check this by looking at the return value of the `Read` method\. Note that if data isn’t read for a given value, then the value is left uninitialized\.
+Read buffers have built\-in overflow detection and do not read any data fields after the end of the buffer has been reached\. You can check this by looking at the return value of the `Read` method\. Note that if data isn't read for a given value, then the value is left uninitialized\.
 
 ## Predefined Marshalers {#network-marshalling-predefined-marshalers}
 

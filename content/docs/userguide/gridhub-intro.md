@@ -20,7 +20,7 @@ Because GridHub listens for connections on the loopback address \(`127.0.0.1`\),
 
 ## Registering an Application in GridHub {#gridhub-registering-an-application}
 
-To register an application in GridHub so that Profiler can capture information from the application, add `AzFramework::TargetManagementComponent` to the application’s `SystemComponent`\. 
+To register an application in GridHub so that Profiler can capture information from the application, add `AzFramework::TargetManagementComponent` to the application's `SystemComponent`\. 
 
 **Note**  
  Lumberyard's built\-in applications already have this component added by default\. 

@@ -83,9 +83,9 @@ Use the `<img>` tag to embed an image in text\.
 **Example**  
 
 ```
-<img src=”images/icons/button" vAlign="center" height=”fontHeight” scale="1.5" yOffset="5" xPadding="6"/>
+<img src="images/icons/button" vAlign="center" height="fontHeight" scale="1.5" yOffset="5" xPadding="6"/>
 
-<img src=”images/icons/button" vAlign="bottom" height=”100” scale="0.8" yOffset="-3" lPadding="2" rPadding="6"/>
+<img src="images/icons/button" vAlign="bottom" height="100" scale="0.8" yOffset="-3" lPadding="2" rPadding="6"/>
 ```
 
 Use the following attributes to customize your image\. Only the `src` attribute is required\. All other attributes are optional\.

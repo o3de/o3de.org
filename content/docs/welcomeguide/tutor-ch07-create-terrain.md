@@ -13,14 +13,14 @@ If you like, you can follow this chapter in video \(6:45 minutes\) form:
 
 Begin this tutorial either with the level you created in [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md), or by opening `ch06_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
-1.  Open **Terrain Editor** to modify the terrain\. Expand the **Tools** menu and choose **Terrain Editor**\. With **Terrain Editor**, you can paint and modify your terrain’s *heightmap*\. 
+1.  Open **Terrain Editor** to modify the terrain\. Expand the **Tools** menu and choose **Terrain Editor**\. With **Terrain Editor**, you can paint and modify your terrain's *heightmap*\. 
 
    A heightmap is a grayscale image where each pixel defines the height of one square meter of terrain\. Heightmaps in Lumberyard are 32\-bit\. Each pixel in the heightmap contains a value between 0\.0 and 1\.0\. Black \(0\.0\) pixels are low areas\. White \(1\.0\) pixels are high areas\. The height in world space of a white pixel is defined by the **Max Height** property\.
 
-1.  Set the terrain’s **Max Height**\. In **Terrain Editor**, expand the **Modify** menu and choose **Set Terrain Max Height**\. 
+1.  Set the terrain's **Max Height**\. In **Terrain Editor**, expand the **Modify** menu and choose **Set Terrain Max Height**\. 
 
 1.  You might recall from the first tutorial that the terrain is at 32\.0 on the Z axis in world space\. In the **Set Terrain Max Height** dialog, enter `32.0` and choose **OK**\.   
 ![\[Lumberyard set terrain max height\]](/images/welcomeguide/ui-terrain-set-max-height-1.26.png)
@@ -107,4 +107,4 @@ For extra credit, go to **Layer Painter** and experiment with changing the **Rad
 
 Explore the other tools in **Terrain Tool**\. Try the **Modify** tool and sculpt the terrain in **Perspective**\.
 
-When you’re ready, try [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md)\.
+When you're ready, try [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md)\.

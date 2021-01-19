@@ -33,7 +33,7 @@ To implement an interface, a gem's `swagger.json` file uses an `x-cloud-gem-fram
 
 The referenced interface definition and the gem's swagger definition are merged before they are uploaded to configure Amazon API Gateway\. The path objects in the interface definition are effectively inserted as child paths of the path object that defines the interface implementation extension object\. The data definitions in each interface are given a unique prefix to prevent collisions with definitions from the gem's swagger definition or other interfaces\.
 
-For example, if the gem’s `swagger.json` file contains the following:
+For example, if the gem's `swagger.json` file contains the following:
 
 ```
 {

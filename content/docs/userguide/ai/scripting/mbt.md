@@ -38,7 +38,7 @@ This composite pattern describes child nodes that are processed consecutively in
 
 **Selector node**  
 This composite pattern describes child nodes that are processed consecutively and in sequence only until one succeeds\. As soon as one child node succeeds, the parent node succeeds immediately and stops processing child nodes\. If all child nodes are attempted and all fail, the parent node fails\. This pattern is useful for setting up AI agents to try multiple different tactics, or for creating fallback behaviors to handle unexpected outcomes\.  
-Imagine, for example, that we want our AI monster to chase the player, but if it can't reach the player it should scream “Come and fight me, you coward\!” To implement this scenario, a selector parent node is set up with two children, one for each possible action\. The parent node first processes the “chase player” child node\. If it succeeds, then the selector node stops there\. However, if the “chase player node fails, then the parent node continues and processes the “taunt player” child node\.   
+Imagine, for example, that we want our AI monster to chase the player, but if it can't reach the player it should scream "Come and fight me, you coward\!" To implement this scenario, a selector parent node is set up with two children, one for each possible action\. The parent node first processes the "chase player" child node\. If it succeeds, then the selector node stops there\. However, if the "chase player node fails, then the parent node continues and processes the "taunt player" child node\.   
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_selector_node.png)
 
@@ -58,8 +58,8 @@ Looping functionality can be used to process any other node multiple times\. Rat
 
 **Limiting concurrent users**  
 This functionality lets you specify how many users should be allowed to concurrently use a specified node\. It is a good way to ensure variations in behavior among a group of AI agents\. A typical scenario illustrating this function is as follows: The player is spotted by a group of three monsters\. You want one monster to sound an alarm while the others chase the player\.  
-Limiting concurrent users works with a selector node, which steps through a sequence of child nodes until one succeeds\. By wrapping one of a selector node’s child nodes in a limit decorator node, you can cause the child node to fail due to concurrent users, which in turn causes the selector node to move to the next child\.   
-To handle the scenario described, the selector node would have two child nodes, “sound alarm” and “chase player”\. The “sound alarm” node is wrapped in a limit node, with the user limit set to 1\. Monster \#1 flows through the selector node to the limit node; as there is no one currently using the “sound alarm” node, the Monster \#1 takes this action\. The limit node records that one AI agent is processing the child node, so effectively locks the door to it\. Monsters \#2 and \#3 also flow through the selector node to the limit node, but because the limit node has reached its limit of user, it reports a failure\. Consequently, the selector node moves on to the next child node in the sequence, which is “chase player”\. So monsters \#2 and \#3 chase the player\.  
+Limiting concurrent users works with a selector node, which steps through a sequence of child nodes until one succeeds\. By wrapping one of a selector node's child nodes in a limit decorator node, you can cause the child node to fail due to concurrent users, which in turn causes the selector node to move to the next child\.   
+To handle the scenario described, the selector node would have two child nodes, "sound alarm" and "chase player"\. The "sound alarm" node is wrapped in a limit node, with the user limit set to 1\. Monster \#1 flows through the selector node to the limit node; as there is no one currently using the "sound alarm" node, the Monster \#1 takes this action\. The limit node records that one AI agent is processing the child node, so effectively locks the door to it\. Monsters \#2 and \#3 also flow through the selector node to the limit node, but because the limit node has reached its limit of user, it reports a failure\. Consequently, the selector node moves on to the next child node in the sequence, which is "chase player"\. So monsters \#2 and \#3 chase the player\.  
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_limit_node.png)
 
@@ -73,7 +73,7 @@ The following XML example describes the behavior tree for a group of monsters\. 
 <BehaviorTree>
     <Root>
         <Selector>
-            <LimitConcurrentUsers max=”1”>
+            <LimitConcurrentUsers max="1">
                 <ChasePlayer />
             </LimitConcurrentUsers>
             <TauntPlayer />
@@ -98,10 +98,10 @@ When a behavior tree such as the following example is loaded, a behavior tree te
 
 ```
 <Sequence>
-    <Communicate name=”Hello” />
-    <Animate name=”LookAround” />
-    <Wait duration=”2.0” />
-    <Communicate name=”WeShouldGetSomeFood” />
+    <Communicate name="Hello" />
+    <Animate name="LookAround" />
+    <Wait duration="2.0" />
+    <Communicate name="WeShouldGetSomeFood" />
 </Sequence>
 ```
 
@@ -246,10 +246,10 @@ The following code snippet illustrates the use of variables to receive input fro
     </SignalVariables>
     <Root>
         <Selector>
-            <IfCondition condition=”TargetVisible”>
-                <Move to=”Target” />
+            <IfCondition condition="TargetVisible">
+                <Move to="Target" />
             </IfCondition>
-            <Animate name=”LookAroundForTarget” />
+            <Animate name="LookAroundForTarget" />
         </Selector>
     </Root>
 </BehaviorTree>
@@ -265,19 +265,19 @@ All Lua nodes provide access to the *entity* variable\.
 + `ExecuteLua` runs a bit of Lua code\. It always succeeds\.
 
   ```
-  <ExecuteLua code=”DoSomething()” />
+  <ExecuteLua code="DoSomething()" />
   ```
 + `LuaWrapper` inserts a bit of Lua code before and after running child node\. The post\-node code is run regardless of whether the child node succeeded or failed\.
 
   ```
-  <LuaWrapper onEnter=”StartParticleEffect()” onExit=”StopParticleEffect()”>
-      <Move to=”Cover” />
+  <LuaWrapper onEnter="StartParticleEffect()" onExit="StopParticleEffect()">
+      <Move to="Cover" />
   </LuaWrapper>
   ```
 + `LuaGate` uses a bit of Lua code to control whether or not a child node should be run\. If the Lua code returns true, the child node is run and `LuaGate` returns the status of the child node \(success or failure\)\. If the code returns false or fails to execute, the child node is not run, and `LuaGate` returns failure\. 
 
   ```
-  <LuaGate code=”return IsAppleGreen()”>
+  <LuaGate code="return IsAppleGreen()">
       <EatApple />
   </LuaGate>
   ```
@@ -285,9 +285,9 @@ All Lua nodes provide access to the *entity* variable\.
 
   ```
   <Sequence>
-      <AssertLua code=”return entity.someCounter == 75” />
-      <AssertCondition condition=”TargetVisible” />
-      <Move to=”Target” />
+      <AssertLua code="return entity.someCounter == 75" />
+      <AssertCondition condition="TargetVisible" />
+      <Move to="Target" />
   </Sequence>
   ```
 
@@ -308,9 +308,9 @@ The following code snippet illustrates the use of timestamps\.
     </Timestamps>
     <Root>
         <Sequence>
-            <WaitUntilTime since=”ReceivedDamage” isMoreThan=”5” orNeverBeenSet=”1” />
+            <WaitUntilTime since="ReceivedDamage" isMoreThan="5" orNeverBeenSet="1" />
             <Selector>
-                <IfTime since="GroupMemberDied" isLessThan=”10”>
+                <IfTime since="GroupMemberDied" isLessThan="10">
                     <MoveCautiouslyTowardsTarget />
                 </IfTime>
                 <MoveConfidentallyTowardsTarget />
@@ -326,8 +326,8 @@ Communication with AI agents is done using AI signals, which essentially are nam
 
 ```
 <Sequence>
-    <WaitForEvent name=”OnEnemySeen” />
-    <Communicate name=”ThereHeIs” />
+    <WaitForEvent name="OnEnemySeen" />
+    <Communicate name="ThereHeIs" />
 </Sequence>
 ```
 
@@ -430,7 +430,7 @@ For action nodes, use names that identify the action the node will perform\. The
 
 ### Naming Timestamps {#ai-scripting-mbt-naming-timestamps}
 
-Name timestamps based on the event they’re related to\. Because timestamps describe an event that has already happened, use the past tense \(TargetSpotted, not TargetSpots\)\.
+Name timestamps based on the event they're related to\. Because timestamps describe an event that has already happened, use the past tense \(TargetSpotted, not TargetSpots\)\.
 +  TargetSpotted
 + ReceivedDamage
 +  GroupMemberDied

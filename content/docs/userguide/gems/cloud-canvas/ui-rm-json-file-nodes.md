@@ -13,7 +13,7 @@ The following template is found in each resource group under the **Resource Grou
 
 ## resource\-template\.json {#cloud-canvas-ui-rm-resource-template-json}
 
-Each resource group has a **resource\-template\.json** node and a **lambda\-function\-code** child node\. The `resource-template.json` file defines the group’s resources\. For more information, see [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template)\.  In the navigation pane, each of the nodes under **resource\-template\.json** represents one of the resources defined in a section of the `resource-template.json` file\. 
+Each resource group has a **resource\-template\.json** node and a **lambda\-function\-code** child node\. The `resource-template.json` file defines the group's resources\. For more information, see [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template)\.  In the navigation pane, each of the nodes under **resource\-template\.json** represents one of the resources defined in a section of the `resource-template.json` file\. 
 
 The following templates are found under the **Administration \(advanced\)** node: 
 
@@ -31,7 +31,7 @@ The `deployment-template.json` file defines the AWS CloudFormation stack resourc
 
 ## deployment\-access\-template\.json {#cloud-canvas-ui-rm-deployment-access-template.json}
 
-The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment’s resources\. For more information, see [deployment\-access\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
+The `deployment-access-template.json` file defines the AWS CloudFormation stack resources that control access to each deployment's resources\. For more information, see [deployment\-access\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template) and [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
 
 ## user\-settings\.json {#cloud-canvas-ui-rm-user-settings.json}
 

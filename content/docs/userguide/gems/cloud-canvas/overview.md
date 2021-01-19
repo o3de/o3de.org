@@ -32,7 +32,7 @@ In order to create a connected game feature such as a high score table, you crea
 
 ### AWS Accounts {#cloud-canvas-core-concepts-cc-ly-aws-accounts}
 
-Your resources are owned by an AWS account\. The AWS account allows you and your team to share access to the same resources\. For example, your team’s AWS account might own a database resource so that you and your teammate can both work with the same database\.
+Your resources are owned by an AWS account\. The AWS account allows you and your team to share access to the same resources\. For example, your team's AWS account might own a database resource so that you and your teammate can both work with the same database\.
 
 You, or someone on your team, is an administrator\. The administrator creates the AWS account for your team and gives individuals on the team access to the account's resources\.
 
@@ -54,7 +54,7 @@ For storing files in the cloud, Cloud Canvas supports Amazon Simple Storage Serv
 
 ### Databases {#cloud-canvas-core-concepts-supported-svcs-databases}
 
-For storing data like a person’s name, phone number, and address in the cloud, Cloud Canvas supports the Amazon DynamoDB database service\. Amazon DynamoDB operates on resources called tables\. These tables grow and adapt as you build and iterate your game\.
+For storing data like a person's name, phone number, and address in the cloud, Cloud Canvas supports the Amazon DynamoDB database service\. Amazon DynamoDB operates on resources called tables\. These tables grow and adapt as you build and iterate your game\.
 
 Here are some ways in which you can use Amazon DynamoDB table resources in your game:
 + Track account details and statistics for a player\. Give each player a unique ID so that you can look up a player's hit points, inventory, gold, and friends\.
@@ -69,7 +69,7 @@ For executing code in the cloud, Cloud Canvas supports the AWS Lambda service\. 
 Your Lambda functions can even call other Amazon Web Services like Amazon DynamoDB and perform operations on their resources\. Following are some examples:
 + **Submit a high score** – A Lambda function can accept a player's ID and new score, look up the player ID in the database, compare the score with existing scores, and update the highest score if necessary\.
 + **Sanitize your data** – A Lambda function can check for malicious or unusual input\. For example, if a player tries to upload a new high score of 999,999,999 when the best players can't reach 1,000, your Lambda function can intercept the submission and either reject it or flag it for review\.
-+ **Perform server\-side authoritative actions** – Cloud Canvas can call your Lambda functions to control in\-game economies\. For example, when a player tries to purchase an item, your Lambda function can check a database to verify that the player has enough money to pay for the item\. The function can then deduct the amount from the player's account, and add the item to the player’s inventory\.
++ **Perform server\-side authoritative actions** – Cloud Canvas can call your Lambda functions to control in\-game economies\. For example, when a player tries to purchase an item, your Lambda function can check a database to verify that the player has enough money to pay for the item\. The function can then deduct the amount from the player's account, and add the item to the player's inventory\.
 
 ### Identity and Permissions {#cloud-canvas-core-concepts-supported-svcs-cognito}
 

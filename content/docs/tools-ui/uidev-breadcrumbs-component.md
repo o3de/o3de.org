@@ -6,13 +6,13 @@ title: Lumberyard UI breadcrumb navigation component
 ---
 # Lumberyard UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
 
-Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user’s current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
+Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user's current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
 
 For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the Lumberyard **Animation Editor**\.
 
 ![\[component breadcrumbs navigation example\]](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
 
-In an **Anim Graph** breadcrumb, the graph’s name is displayed as the top level of navigation\. Each node that you open appears as a clickable hyperlink\.
+In an **Anim Graph** breadcrumb, the graph's name is displayed as the top level of navigation\. Each node that you open appears as a clickable hyperlink\.
 
 ## Anatomy of the breadcrumbs widget<a name="breadcrumbs-anatomy"></a>
 
@@ -35,7 +35,7 @@ Breadcrumbs have several customization options\. The standard, horizontal layout
 
 1.  **Truncation menu** 
 
-   If the entire breadcrumb path cannot fit in the allotted space, the points on the path that don’t fit are stacked in a dropdown menu\. Users can select these points from the truncation menu\.
+   If the entire breadcrumb path cannot fit in the allotted space, the points on the path that don't fit are stacked in a dropdown menu\. Users can select these points from the truncation menu\.
 
 ## Basic breadcrumb<a name="breadcrumbs-basic"></a>
 
@@ -72,7 +72,7 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 
 ![\[component breadcrumbs navigation and browse\]](/images/tools-ui/component-breadcrumbs-navigation-and-browse.png)
 
-In some scenarios, it’s useful for users to be able to navigate back and forth in their navigation history\. In addition, you might want to offer a browse button to select a new path\.
+In some scenarios, it's useful for users to be able to navigate back and forth in their navigation history\. In addition, you might want to offer a browse button to select a new path\.
 
 In the following example, `createBackForwardToolBar` provides the forward and backward navigation arrows, and a `NavigationButton::Browse` from AzQtComponents provides a file browser button\.
 

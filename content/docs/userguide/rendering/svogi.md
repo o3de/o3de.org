@@ -102,7 +102,7 @@ Do not use the `e_svoTI_*` console variables \(for example, `e_svoTI_Integration
 ## Current Limits {#rendering-graphics-svogi-limitations}
 
 The following limitations exist for the voxel GI system:
-+  The GI code doesn’t have a mechanism for detecting light modifications directly, but is constantly updating to capture changes to the lighting\. This may introduce delay in the GI response to lights changing\. 
++  The GI code doesn't have a mechanism for detecting light modifications directly, but is constantly updating to capture changes to the lighting\. This may introduce delay in the GI response to lights changing\. 
 + Large\-scale ambient occlusion and indirect shadows are properly cast only by static geometry\.
 + Voxel GI does not function on some forward\-rendering components like particles or water\.
 + Some artifacts like ghosting, aliasing, light leaking, and noise may be noticeable\.

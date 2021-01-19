@@ -11,7 +11,7 @@ You define your font's properties in the `.font` file, which is an XML file\. Th
 
 ```
 <fontshader>
-    <font path="Vera.ttf" fontsize=“32“/>    
+    <font path="Vera.ttf" fontsize="32"/>    
     <effect name="default">
         <pass>
         </pass>

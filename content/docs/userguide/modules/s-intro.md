@@ -35,7 +35,7 @@ AZ modules have significant advantages over legacy modules, as the following tab
 
 ### A Self\-Aware Method of Initialization {#az-modules-intro-az-vs-legacy-initialization-order}
 
-Legacy modules are loaded in a particular order\. Because `CrySystem` is loaded and initialized before the game module, it must provide all low\-level systems such as logging and file I/O that a subsequent module might depend on\. The game module itself cannot provide such low\-level systems because it’s initialized too late\. 
+Legacy modules are loaded in a particular order\. Because `CrySystem` is loaded and initialized before the game module, it must provide all low\-level systems such as logging and file I/O that a subsequent module might depend on\. The game module itself cannot provide such low\-level systems because it's initialized too late\. 
 
 AZ modules, on the other hand, are all loaded as early as possible, and then initialized in stages\. Because each module explicitly states its dependencies on system components, all system components can be examined beforehand, sorted according to dependencies, and [initialized in the appropriate order](/docs/userguide/modules/system-components#az-module-system-components-smart-initialization-order)\. This makes it possible for low\-level functionality \(like a custom logging system\) to be implemented from a game module\. For more information about the initialization order of components, see [The AZ Bootstrapping Process](/docs/userguide/modules/bootstrap.md)\.
 

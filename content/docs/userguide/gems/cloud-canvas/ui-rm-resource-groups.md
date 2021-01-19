@@ -11,7 +11,7 @@ You can use the **Cloud Canvas Resource Manager** to manage resource groups coll
 ## Managing Resource Groups {#cloud-canvas-ui-rm-resource-groups-detail-pane}
 
 To see the status of the resource groups that belong to your project's current deployment, click **Resource Groups** in the **Cloud Canvas configuration** navigation pane \. Note the following: 
-+ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
++ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project's resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
 + If you select **Resource Groups** and deployments exist but no deployment is active, Lumberyard prompts you to select one\. For more information, see [Making a Cloud Canvas Deployment Active](/docs/userguide/gems/cloud-canvas/ui-select-deployment.md)\. 
 
 The **Resource Groups **detail pane lists the resource groups in your current deployment: 

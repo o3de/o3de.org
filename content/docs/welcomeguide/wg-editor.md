@@ -4,9 +4,9 @@ title: Introduction to the Lumberyard Editor
 ---
 # Introduction to the Lumberyard Editor<a name="wg-editor"></a>
 
-Lumberyard Editor is your primary workspace\. From here, you access all of the tools to design, create, test, play, and deploy your project\. If you have used other professional engines or 3D animation packages, you’ll find the user experience familiar and adapt to Lumberyard Editor quickly\.
+Lumberyard Editor is your primary workspace\. From here, you access all of the tools to design, create, test, play, and deploy your project\. If you have used other professional engines or 3D animation packages, you'll find the user experience familiar and adapt to Lumberyard Editor quickly\.
 
-Lumberyard Editor can be launched from the start menu or the Lumberyard Editor desktop icon\. When Lumberyard Editor launches, you’re given the option to create a new level or load an existing level\. If you’re using one of the example Lumberyard projects, you will find example levels in the **Levels** directory of the project\. If you’re working with a new project, you must create a new level\.
+Lumberyard Editor can be launched from the start menu or the Lumberyard Editor desktop icon\. When Lumberyard Editor launches, you're given the option to create a new level or load an existing level\. If you're using one of the example Lumberyard projects, you will find example levels in the **Levels** directory of the project\. If you're working with a new project, you must create a new level\.
 
 For a 20\-minute crash course on navigating the **Perspective** viewport, customizing the Lumberyard Editor layout, creating entities, and working with components in Lumberyard Editor, see the following video tutorial\.
 
@@ -35,7 +35,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
 1.  **Entity Inspector** – The **Entity Inspector** displays the components of the currently selected entity\. At the top of the **Entity Inspector** is a field for the entity **Name** and an **Add Component** button\. The **Add Component** button opens a list of components, sorted by type, that can be added to the entity\. Each component has its own set of properties that are displayed in the **Entity Inspector**\. All entities contain a transform component that sets the position, rotation, and scale of the entity in the level\. 
 
-1.  **Asset Browser** – The **Asset Browser** browses your project’s on\-disk assets\. Assets such as meshes, animations, and textures are created in third\-party applications\. Assets such as materials, scripts, and slices are created within Lumberyard Editor\. The assets that you create are stored in your project directory\. You can also browse default assets that are included with Lumberyard, as well as assets that are included with Gems that have been added to your project\. 
+1.  **Asset Browser** – The **Asset Browser** browses your project's on\-disk assets\. Assets such as meshes, animations, and textures are created in third\-party applications\. Assets such as materials, scripts, and slices are created within Lumberyard Editor\. The assets that you create are stored in your project directory\. You can also browse default assets that are included with Lumberyard, as well as assets that are included with Gems that have been added to your project\. 
 
    The left of the pane of the **Asset Browser** displays a directory structure that you can browse for available assets\. When an asset is selected, the preview pane on the right displays a thumbnail preview and information about the asset, if available\.
 
@@ -47,7 +47,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
 ## Navigating the Lumberyard Perspective viewport<a name="navigation"></a>
 
-Lumberyard’s interaction model will be familiar to anyone who has played a first\-person PC game, with a few minor tweaks and additions\. Movement is handled by keyboard input, and view is handled by pointer device input\.
+Lumberyard's interaction model will be familiar to anyone who has played a first\-person PC game, with a few minor tweaks and additions\. Movement is handled by keyboard input, and view is handled by pointer device input\.
 
 ![\[WSAD and Mouse graphic.\]](/images/welcomeguide/wg-WASD.png)
 +  **W** – Move forward\.
@@ -79,4 +79,4 @@ Enter a floating point value in the **Speed** property to set movement speed\. Y
 
 ## Save Perspective locations<a name="save-perspective-locations"></a>
 
-As you build a level, you might find that it’s helpful to have preset **Perspective** views saved for later use\. You can save the current editor camera view, assigning it to a **\[Function\]** key\. To save a **Perspective** location, press **\[Control \+ Function\(1\-12\)\]** To set the **Perspective** view to a saved location, press **\[Shift \+ Function\(1\-12\)\]**\.
+As you build a level, you might find that it's helpful to have preset **Perspective** views saved for later use\. You can save the current editor camera view, assigning it to a **\[Function\]** key\. To save a **Perspective** location, press **\[Control \+ Function\(1\-12\)\]** To set the **Perspective** view to a saved location, press **\[Shift \+ Function\(1\-12\)\]**\.

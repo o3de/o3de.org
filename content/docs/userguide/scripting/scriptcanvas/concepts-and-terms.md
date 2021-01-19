@@ -23,7 +23,7 @@ Action nodes are used to get or send data across an EBus\. Examples of action no
 For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
 *Variable and data nodes*  
-Variable and data nodes represents the custom data that can be required to build game logic\. You can use these nodes to make counters, store entity references, specify a direction, define a color, and so on\. Variable nodes are added to a script to declare and initialize them\. Use get and set nodes to retrieve or set the variable’s value\.  
+Variable and data nodes represents the custom data that can be required to build game logic\. You can use these nodes to make counters, store entity references, specify a direction, define a color, and so on\. Variable nodes are added to a script to declare and initialize them\. Use get and set nodes to retrieve or set the variable's value\.  
 The following are the commonly used data types in **Script Canvas**:  
 + Boolean
 + Color
@@ -43,7 +43,7 @@ Math nodes enable math operations, such as arithmetic, geometry, algebra, calcul
 Debugging nodes verify whether a script is functioning as expected\. You can use debugging nodes to print data to the console or viewport and check for errors\. These nodes pass logic flow, but do not execute in release builds\.
 
 *User defined*  
-You can build your own nodes for your project’s specific needs\. For more information, see [Creating Custom Nodes in Script Canvas](/docs/userguide/scripting/scriptcanvas/custom-nodes.md)\.
+You can build your own nodes for your project's specific needs\. For more information, see [Creating Custom Nodes in Script Canvas](/docs/userguide/scripting/scriptcanvas/custom-nodes.md)\.
 
 **Node Palette**   {#script-canvas-introduction-node-palette-display}
 The **Node Palette** contains a searchable list of nodes\. By default, the palette is docked to the left of the **Script Canvas** editor\.  

@@ -47,7 +47,7 @@ Select a positioning mode:
 **Offset**  
 The offset to use when automatically positioning the element\.  
 **Auto size**  
-Automatically resizes the element to match the tooltip string's size\. The text element is a child of the element, and its text is specified in the **Text** property\. If **Auto size** is selected, then the text element’s anchors should be apart so that the text element can grow and shrink with its parent\.  
+Automatically resizes the element to match the tooltip string's size\. The text element is a child of the element, and its text is specified in the **Text** property\. If **Auto size** is selected, then the text element's anchors should be apart so that the text element can grow and shrink with its parent\.  
 **Text**  
 The child element that is to display a tooltip string\.  
 **Delay time**  

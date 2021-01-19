@@ -81,7 +81,7 @@ def enabled_game_projects(ctx, section_name, option_name, value):
         return projects_enabled
 ```
 
-In the example below, the function is simpler because it’s a simple string entry and there are no enumerations like bool and no validation\.
+In the example below, the function is simpler because it's a simple string entry and there are no enumerations like bool and no validation\.
 
 ```
 @register_attribute_callback   
@@ -143,7 +143,7 @@ Waf uses the optional hinter function to provide the GUI with a list of availabl
 Follow these guidelines:
 + Implement the `@register_hint_attribute_callback` function and name it **hint\_\(*your\_option\_name*\)**\.
 + Ignore the value parameter passed, which is the current value\.
-+ Return a tuple of display value list, actual value list, help text list, multi or single\. All three input lists should be the same length\. The values in these lists are what’s displayed in the GUI, the values to set if selected, and the text to display as extra information for an option, respectively\.
++ Return a tuple of display value list, actual value list, help text list, multi or single\. All three input lists should be the same length\. The values in these lists are what's displayed in the GUI, the values to set if selected, and the text to display as extra information for an option, respectively\.
 
 The example below is for a hinter function\.
 

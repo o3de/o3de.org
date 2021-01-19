@@ -29,7 +29,7 @@ If you add a **Code & Assets** gem, you must [build your project](/docs/userguid
    The following directories and files are created in `\dev\gems\gem_name\` for 'Assets Only' and 'Code & Assets' gems:
    + `Assets` – Directory of assets for your gem, such as materials, models, textures, and audio files\. The AZ::IO system automatically includes this directory so that you can reference assets provided by your gem\. For example, if you have a material file, `\Assets\materials\MyMaterial.mtl`, you can reference it in your code with the path `materials\MyMaterial.mtl`\.
 **Note**  
-If this directory isn't present, you can manually add it\. If you don’t have any assets in your gem, you can remove this folder\.
+If this directory isn't present, you can manually add it\. If you don't have any assets in your gem, you can remove this folder\.
    + `Gem.json` – Metadata for this gem\. Don't modify the `Uuid` or `Name` fields\. You can specify the following gem metadata fields:
      + `Version` – `n.n.n` \(numerical values only\)\.
 
@@ -55,7 +55,7 @@ If this directory isn't present, you can manually add it\. If you don’t have a
           }
        ],
        ```
-   + `preview.png` – Preview image displayed in the **Project Configurator** gem’s list\.
+   + `preview.png` – Preview image displayed in the **Project Configurator** gem's list\.
 
    For 'Code & Assets' gems, the following files and directories are also created \(in addition to the files listed above\):
    + `Code\gem_name.waf_files` – Waf files json for your gem that specifies which files are built, how files should be combined into uber files, and how files are filtered in the Visual Studio Project\.

@@ -83,7 +83,7 @@ Enables dust and turbulence overlay\. **Specular** and **Bumpmap** texture map s
 
 **Receive Shadows**  
 Enables sun shadows to be cast on the light beams, creating volumetric shafts\.  
-You can use this parameter for an interesting effect, but it might affect your game’s performance\. 
+You can use this parameter for an interesting effect, but it might affect your game's performance\. 
 
 **UV Vignetting**  
 Enables vignettes in UV space\.

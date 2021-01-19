@@ -66,8 +66,8 @@ The **Extraction Mode** attribute controls how the motion extraction behaves whe
 | Attribute | Blend | 
 | --- | --- | 
 | Blend |  Blends between the source and target\. This setting helps ensure a proper blending result\. For example, when transitioning from idle into a turn, translation and rotation are blended\. Some of the turn's rotation can get lost in the blending, which means a 180 degree turn might reach only 160 degrees\. Use this blend setting to ensure the completion of the turn\.  | 
-| Target Only |  Extracts the target only\. For example, when transitioning from idle into a turn, only the turn animation's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character’s rotation and translation\.  | 
-| Source Only |  For example, when transitioning from idle into a turn, only the idle pose's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character’s rotation and translation\.  | 
+| Target Only |  Extracts the target only\. For example, when transitioning from idle into a turn, only the turn animation's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character's rotation and translation\.  | 
+| Source Only |  For example, when transitioning from idle into a turn, only the idle pose's translation and rotation is extracted\. The nodes inside the skeleton still blend normally\. This affects only the character's rotation and translation\.  | 
 
 ### Mask {#animation-editor-blending-attributes-mask}
 

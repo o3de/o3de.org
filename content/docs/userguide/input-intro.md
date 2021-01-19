@@ -34,7 +34,7 @@ The AZ framework input interface uses the `AZCore` EBus system and defines the f
 + `InputChannelId` – A name that uniquely identifies an `InputChannel`\.
 + `InputChannelNotificationBus` – An EBus interface that subscribes to events from input channels when the channels are active or when their state or value changes\.
 + `InputChannelRequestBus` – An EBus interface that obtains an input channel from the input channel's ID\. You can then query the input channel directly for its current state or value\.
-+ `InputChannelEventListener` – An event monitor that inherits from `InputChannelNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or filter events based on the source device or channel\. Subscribers can also consume events so that the events aren’t passed on to lower priority monitors\.
++ `InputChannelEventListener` – An event monitor that inherits from `InputChannelNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or filter events based on the source device or channel\. Subscribers can also consume events so that the events aren't passed on to lower priority monitors\.
 
 ### Processing the Input {#input-intro-processing}
 
@@ -47,7 +47,7 @@ If you want to query the current input state directly, use `AzFramework`::`Input
 The following interfaces are designed to process text input\. The input is delivered as a complete string of UTF\-8 code points\. This eliminates the requirement to keep track of and interpret individual code units or convert from other encodings\.
 + `InputTextEventNotificationBus` – An EBus interface that subscribes to text events from input devices or input channels\.
 + `InputTextEntryRequestBus` – An EBus interface that sends text entry requests\. The requests inform input devices that the user is expecting to start or stop entering text\.
-+ `InputTextEventListener` – An event monitor that inherits from `InputTextNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or consume events so that the events aren’t passed on to lower priority monitors\.
++ `InputTextEventListener` – An event monitor that inherits from `InputTextNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or consume events so that the events aren't passed on to lower priority monitors\.
 
 #### Auxiliary Input Interfaces {#input-intro-auxiliary-input-interfaces}
 
@@ -83,13 +83,13 @@ This core set of input devices are managed by the `AzFramework::InputSystemCompo
 
 You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required\. For examples, see the [Configuring your Project for Virtual Reality](/docs/userguide/vr/configuring.md), which define and create new types of input devices that inherit from `AzFramework::InputDevice`\. Their code is located at the Lumberyard directory locations `\dev\Gems\Oculus` and `\dev\Gems\OpenVR`, respectively\.
 
-The implementation details of each input device differ depending on the device type and operating system\. However, almost all devices follow a similar pattern\. They use an OS\-specific API to obtain raw input data for each frame and then update all the device’s associated input channels accordingly\.
+The implementation details of each input device differ depending on the device type and operating system\. However, almost all devices follow a similar pattern\. They use an OS\-specific API to obtain raw input data for each frame and then update all the device's associated input channels accordingly\.
 
-When you implement an input device, use only your device’s `TickInput` function to update the value of the input channels\. This ensures that input events are delivered at the same time every frame\.
+When you implement an input device, use only your device's `TickInput` function to update the value of the input channels\. This ensures that input events are delivered at the same time every frame\.
 
 Depending on how the input device gets the raw, operating system\-specific input, you might have to use one of the following techniques:
-+ Polling the underlying input API on each call to your input device’s `TickInput` function\. For examples, see all `InputDeviceGamepad` implementations in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Gamepad`\.
-+ Queuing or coalescing input data from the application’s main message loop until the next call to `TickInput`\. For an example, see `InputDeviceMouse` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Mouse`\.
++ Polling the underlying input API on each call to your input device's `TickInput` function\. For examples, see all `InputDeviceGamepad` implementations in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Gamepad`\.
++ Queuing or coalescing input data from the application's main message loop until the next call to `TickInput`\. For an example, see `InputDeviceMouse` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Mouse`\.
 + Ensuring input channels are updated in a thread\-safe manner if no raw input is received on the main thread\. For an example, see `InputDeviceTouchAndroid` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Touch`\.
 
 ### Input Channels {#input-intro-channels}

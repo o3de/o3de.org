@@ -60,7 +60,7 @@ The number of unique characters in `AAAA` is 1, and the length of the string is 
 
 AABB
 
-Because only one character slot exists in the texture, it can't store both the glyphs for upper\-case ‘A’ and upper\-case ‘B’ and render them both in a frame\. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters\.
+Because only one character slot exists in the texture, it can't store both the glyphs for upper\-case 'A' and upper\-case 'B' and render them both in a frame\. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters\.
 
 Here is another example\.
 

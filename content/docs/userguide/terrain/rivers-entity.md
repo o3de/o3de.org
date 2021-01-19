@@ -22,7 +22,7 @@ When performing this procedure, you may notice that parts of the river disappear
 
 1. In the **Rollup Bar**, on the **Objects** tab, click **Misc**, **River**\.
 
-1. In your level, starting at the beginning of the river bed, click to place a series of points that define the river’s path\.
+1. In your level, starting at the beginning of the river bed, click to place a series of points that define the river's path\.
 
 1. When complete, double\-click at the end of the river bed\.
 

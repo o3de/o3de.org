@@ -20,9 +20,9 @@ Only administrators should perform these actions\. If you remove all AWS resourc
 1. Select the deployment to delete and click **Delete deployment**\.  
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-delete-test-deployment.png)
 
-1. When prompted to confirm, click **Yes** to start the process of deleting the deployment’s resources from AWS\. The process might take a few minutes\.
+1. When prompted to confirm, click **Yes** to start the process of deleting the deployment's resources from AWS\. The process might take a few minutes\.
 
-1. To remove all of the project's resources from AWS, follow the same steps to delete each of the project’s deployments\.
+1. To remove all of the project's resources from AWS, follow the same steps to delete each of the project's deployments\.
 
 **To use the command line to delete Cloud Canvas deployments and their resources**
 
@@ -30,7 +30,7 @@ Only administrators should perform these actions\. If you remove all AWS resourc
 
 1. Open a command line prompt and change to your the Lumberyard `\dev` directory\.
 
-1.  Determine the project’s deployment names by entering the following command: 
+1.  Determine the project's deployment names by entering the following command: 
 
    ```
    lmbr_aws deployment list

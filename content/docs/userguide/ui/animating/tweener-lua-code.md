@@ -55,7 +55,7 @@ self.ScriptedEntityTweener:StartAnimation
 		uuid = Uuid.Create(),
 		--onComplete = function() Debug.Log("Called when this animation is done") end
 		--onUpdate = function(currentValue, currentProgressPercent) Debug.Log("Called when this animation updates") end
-		--onLoop = function() Debug.Log("Looped animation”) end
+		--onLoop = function() Debug.Log("Looped animation") end
 	}
 ```
 

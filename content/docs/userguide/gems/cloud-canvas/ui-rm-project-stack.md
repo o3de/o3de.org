@@ -10,7 +10,7 @@ When you select the **Project stack** node in the **Cloud Canvas Resource Manage
 ![\[Project stack\]](/images/userguide/cloud_canvas/cloud-canvas-project-stack.png)
 
 Note the following: 
-+ If you select a project stack node and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
++ If you select a project stack node and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project's resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
 + If you select the **Project stack** node when the project has not been initialized for use with Cloud Canvas, Lumberyard prompts you to initialize the project and create a project stack\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md)\. 
 
 ## Project Stack Status Table {#cloud-canvas-ui-rm-project-stack-status-table}

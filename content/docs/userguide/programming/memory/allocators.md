@@ -4,7 +4,7 @@ title: Using Memory Allocators in &ALY;
 ---
 # Using Memory Allocators in Lumberyard {#memory-allocators}
 
-Lumberyard’s memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
+Lumberyard's memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
 
 Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 

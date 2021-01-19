@@ -85,5 +85,5 @@ You can configure the state machine to avoid motion states that are unassigned\.
 1. For **Test Function**, select **Is Motion Assigned?**\.  
 ![\[Add motion conditions so that some motion states are unassigned.\]](/images/userguide/actor-animation/animation-editor-motion-condition.png)
 
-   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition’s traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.  
+   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition's traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.  
 ![\[Customize state machines based on motion sets.\]](/images/userguide/actor-animation/animation-editor-sparse-motion-sets-02.png)

@@ -67,7 +67,7 @@ If this directory is not present, you can manually add it\. If you don't have an
           }
        ],
        ```
-   + `preview.png` – Preview image displayed in the **Project Configurator** gem’s list\.
+   + `preview.png` – Preview image displayed in the **Project Configurator** gem's list\.
 
    For 'Code & Assets' gems, the following files and directories are also created \(in addition to the files listed above\):
    + `Code\gem_name.waf_files` – Waf files json for your gem that specifies which files are built, how files should be combined into uber files, and how files are filtered in the Visual Studio Project\.

@@ -57,7 +57,7 @@ To manage your team members' access to AWS resources, you create IAM users, a gr
 1. Click **Download \.csv** to download a `.csv` file that has the keys for all the users that you created\. Make sure you preserve the credentials in a safe place\. 
 **Important**  
 After this point, you cannot view the secret access key from the AWS Management Console\. You must deliver each user his or her keys securely\.
-As an administrator, it is your responsibility to keep your team and your AWS account secure\. Amazon provides some best practices and options for how to manage your team’s access keys on the [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id-credentials-access-keys.html) page in the *IAM User Guide*\. You are encouraged to read this thoroughly\. 
+As an administrator, it is your responsibility to keep your team and your AWS account secure\. Amazon provides some best practices and options for how to manage your team's access keys on the [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id-credentials-access-keys.html) page in the *IAM User Guide*\. You are encouraged to read this thoroughly\. 
 
 1. Click **Close**\.
 

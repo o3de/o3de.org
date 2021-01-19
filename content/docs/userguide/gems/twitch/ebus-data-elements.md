@@ -326,9 +326,9 @@ private:
 
 struct ChannelUpdateInfo
 {
-    UpdateValue<bool>           ChannelFeedEnabled;     // If true, the channel’s feed is turned on. Default: false.
+    UpdateValue<bool>           ChannelFeedEnabled;     // If true, the channel's feed is turned on. Default: false.
     UpdateValue<AZ::u64>        Delay;                  // Channel delay, in seconds. This inserts a delay in the live feed.
-    UpdateValue<AZStd::string>  Status;                 // Description of the broadcaster’s status, displayed as a title on the channel page.
+    UpdateValue<AZStd::string>  Status;                 // Description of the broadcaster's status, displayed as a title on the channel page.
     UpdateValue<AZStd::string>  GameName;               // Name of game
 };
 ```

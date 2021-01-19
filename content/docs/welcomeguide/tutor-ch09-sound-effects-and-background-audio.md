@@ -23,9 +23,9 @@ Make sure you have completed the following prerequisites before continuing this 
 In the first part of this audio tutorial, you will use the Wwise project that we have already started for you\. Wwise projects are used to:
 + Import, group, and manage your sound assets
 + Set up sound events that can be called from your game
-+ Generate a soundbank that can be read by Lumberyard’s **Audio Controls Editor** 
++ Generate a soundbank that can be read by Lumberyard's **Audio Controls Editor** 
 
-We’re going to begin with a brief introduction to Wwise, where we’ll import a new sound asset and create a new sound event for the game\. Then we’ll update the soundbank before we head over to the Lumberyard Editor\. If you are already familiar with all of these features in Wwise and want to skip ahead to the next section on adding sound effects to your game, complete the following tasks first:
+We're going to begin with a brief introduction to Wwise, where we'll import a new sound asset and create a new sound event for the game\. Then we'll update the soundbank before we head over to the Lumberyard Editor\. If you are already familiar with all of these features in Wwise and want to skip ahead to the next section on adding sound effects to your game, complete the following tasks first:
 + Import `Chicken2.wav` from `WelcomeGuideTutorials\SoundAssets` into the `Chicken_Squawk` container\.
 + Create the `Play_Chicken_Squawk` and `Stop_Chicken_Squawk` events\.
 + Generate the soundbank\.
@@ -82,7 +82,7 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
       For organizational purposes, feel free to drag and drop these two events to the **SFX** folder if you would like\.  
 ![\[Wwise tutorial sound events\]](/images/welcomeguide/wwise-ui-tutorial-events.png)
 
-   We’ve imported a new sound and created new sound events for the container\. Now we need to save the project and then regenerate the sound bank so that our Lumberyard game can find them\.
+   We've imported a new sound and created new sound events for the container\. Now we need to save the project and then regenerate the sound bank so that our Lumberyard game can find them\.
 
 1.  Open the **Project** menu and choose **Save**\. 
 
@@ -100,7 +100,7 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
 
 Begin the Lumberyard part of this tutorial either with the level you created in [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md), or by opening `ch08_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Open the **Tools** menu, highlight **Other**, and choose the **Audio Controls Editor**\. 
@@ -121,7 +121,7 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 
 1.  Now we are ready to add an audio trigger to the chicken\. We are going to make the chicken squawk when the *jump* key is pressed\. Open **Script Canvas** and open the chicken movement graph that you created in an earlier chapter\. One way to open this graph efficiently is to select the chicken entity, find its **Script Canvas** component in **Entity Inspector**, and then click on the **Open in Script Canvas Editor** button\. 
 
-1.  Find the **On Pressed** event in the **Input** node that’s responding to the chicken’s jump input event\. Click and drag from its **Out** pin and then release to open a menu that will enable you to create another node after this event that will execute when a jump starts\. 
+1.  Find the **On Pressed** event in the **Input** node that's responding to the chicken's jump input event\. Click and drag from its **Out** pin and then release to open a menu that will enable you to create another node after this event that will execute when a jump starts\. 
 
 1.  Type `play` in the search box of the menu and scroll if needed to find the **Play** node under **Audio \- Audio Trigger**\. Click on the **Play** node to create it\.   
 ![\[Creating a Play audio trigger node in Script Canvas\]](/images/welcomeguide/ui-script-canvas-create-play-audio-node-1.27.gif)
@@ -135,7 +135,7 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 1.  Open the **SFX** folder and choose the **Play\_Chicken\_Squawk** control\. Click **OK**\.   
 ![\[Lumberyard audio trigger\]](/images/welcomeguide/ui-audio-trigger-chicken-1.27.png)
 
-1.  Run the game using **Control \+ G** to try it out\! Jump a few times and listen for the two squawk variations\. Press **Esc** to return control to the Editor when you’re ready to proceed\. 
+1.  Run the game using **Control \+ G** to try it out\! Jump a few times and listen for the two squawk variations\. Press **Esc** to return control to the Editor when you're ready to proceed\. 
 
 1.  To create a looping sound track, create a new entity anywhere in your level and call it `ambient_sound`\. 
 

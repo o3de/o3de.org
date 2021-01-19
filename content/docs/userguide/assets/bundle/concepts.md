@@ -29,7 +29,7 @@ For more information, see [Creating a Custom Asset Builder](/docs/userguide/asse
 A copy job is an asset processing task that copies a source asset to the cache without modifying it\. There are two ways that copy jobs occur:  
 + When you are authoring a builder\. If the builder emits a source asset as a product asset, the Asset Processor copies the source to the cache\. 
 + When using additional asset processing rules as defined in `AssetProcessorPlatformConfig.ini`\. These additional rules can include copy jobs, and are used to copy many file types to the cache\.
-As a best practice, create an Asset Builder for your assets so you can add product dependencies\. While it’s easy to add copy jobs to `AssetProcessorPlatformConfig.ini`, it can be easy to forget to update files for dependencies later\.
+As a best practice, create an Asset Builder for your assets so you can add product dependencies\. While it's easy to add copy jobs to `AssetProcessorPlatformConfig.ini`, it can be easy to forget to update files for dependencies later\.
 
 **Leaf Asset**  
 A "leaf" asset is a product asset that has no dependencies on other product assets\. See also **Product Dependency**\.

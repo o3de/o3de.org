@@ -48,7 +48,7 @@ This parameter requires that the **Depth Fog** shader generation parameter is en
 Default value: 255,255,255
 
 **Fog cutoff end depth**  
-Sets the distance, in meters, after which fog doesn’t get any stronger\.   
+Sets the distance, in meters, after which fog doesn't get any stronger\.   
 This parameter requires that the **Depth Fog** shader generation parameter is enabled\.  
 Default value: 20
 

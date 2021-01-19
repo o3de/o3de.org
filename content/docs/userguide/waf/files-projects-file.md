@@ -50,6 +50,6 @@ The following values are only valid under the **android\_settings** key:
 | enable\_obb\_in\_dev |  Forces APK Expansion file mode in non\-release builds\. Value must be either "true" or "false"\. Default: "false"  | 
 | use\_main\_obb |  Specify if the "Main" APK Expansion file should be used\. This option toggles APK Expansion file mode in release builds\. Value must be either "true" or "false"\. Default: "false"  | 
 | use\_patch\_obb |  Specify if the "Patch" APK Expansion file should be used\. This option toggles APK Expansion file mode in release builds\. Value must be either "true" or "false"\. Default: "false"  | 
-| enable\_key\_screen\_on |  Enabled or disable the screen wake lock \(device won’t go to sleep while the application is running\)\. Value must be either "true" or "false"\. Default: "false"  | 
+| enable\_key\_screen\_on |  Enabled or disable the screen wake lock \(device won't go to sleep while the application is running\)\. Value must be either "true" or "false"\. Default: "false"  | 
 | rc\_pak\_job |  Path to the RC job XML file used to override the normal PAK files generation used in release builds\. Path must be relative to *<lumberyard\_version>*\\Bin64\\rc Default: "RcJob\_Generic\_MakePaks\.xml"  | 
 | rc\_obb\_job |  Path to the RC job XML file used to override the normal APK Expansion file\(s\) generation used in release builds\. Path must be relative to *<lumberyard\_version>*\\Bin64\\rc Default: " RCJob\_Generic\_Android\_MakeObb\.xml"  | 

@@ -29,7 +29,7 @@ Follow these guidelines as you design your UI with tabs:
 
 Create a simple tab widget with movable, closeable tabs and an action in the action toolbar\.
 
-Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class\. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`\. You can add your customized toolbar using the tab widget’s `setActionToolBar()` function\.
+Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class\. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`\. You can add your customized toolbar using the tab widget's `setActionToolBar()` function\.
 
  **Example** 
 
@@ -68,7 +68,7 @@ tabWidget->addAction(action1);
 
 ## C\+\+ API reference<a name="tab-api-ref"></a>
 
-For details on the **tab** API’s, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **tab** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::TabWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget.html) 
 +  [AzQtComponents::TabWidgetActionToolBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget_action_tool_bar.html) 
 
