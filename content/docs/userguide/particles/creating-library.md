@@ -1,0 +1,22 @@
+---
+description: ' Use the &ALY; &particle-editor; to create or add a new particle library. '
+title: Adding Particle Libraries
+---
+# Adding Particle Libraries {#particle-creating-library}
+
+Particle effect data is stored in an XML\-based library file\.
+
+**To add a particle library**
+
+1. In the **Particle Editor**, do one of the following:
+   + Choose **Create new library**\.
+   + Choose **File**, **Add library**\.
+   + Choose the drop\-down arrow in the **Libraries** panel, and choose **Add library**\.
+   + Choose the ![\[Particle Editor library\]](/images/userguide/particles/particle-editor-library-icon.png) icon to the right of the search bar\.
+
+        
+![\[Create libraries in the Particle Editor.\]](/images/userguide/particles/particle-editor-library-adding.png)
+
+1. In **Libraries**, where the default name is highlighted, enter a name for the library\.
+
+1. Choose **Add Particle** or **Add Folder** and then enter a name for the new particle or folder\.
