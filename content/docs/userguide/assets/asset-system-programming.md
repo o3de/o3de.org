@@ -164,8 +164,8 @@ To create a handler for a specific asset type, derive from the `AssetHandler` cl
 ## Asset System Workflow {#asset-pipeline-asset-system-programming-asset-system-workflow}
 
 Lumberyard loads assets in the following two ways:
-+ **Implicit** – When classes and structs contain `Asset<T>` members\. When a structure deserializes, the serialization system checks whether the structure contains a member of type `Asset<T>`\. If so, the serialization system calls `GetAsset()` to retrieve the asset from `AssetManager`\.
-+ **Explicit** – When `AssetManager`::`GetAsset()` or `Asset<T>::QueueLoad` is called explicitly\.
++ **Implicit** - When classes and structs contain `Asset<T>` members\. When a structure deserializes, the serialization system checks whether the structure contains a member of type `Asset<T>`\. If so, the serialization system calls `GetAsset()` to retrieve the asset from `AssetManager`\.
++ **Explicit** - When `AssetManager`::`GetAsset()` or `Asset<T>::QueueLoad` is called explicitly\.
 
 The following steps summarize the workflow of the asset system\.
 

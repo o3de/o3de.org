@@ -99,8 +99,8 @@ Exposes callbacks to your Lua script that are triggered by events during video p
 For more information, see [VideoPlaybackNotificationBusHandler Object](#component-videoplayback-bink-videoplaybacknotificationbushandler)\. 
 
 **Parameters**  
-`Table` – The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
-`EntityId` – 
+`Table` - The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
+`EntityId` - 
 
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-bink-videoplaybackrequestbussender)\.

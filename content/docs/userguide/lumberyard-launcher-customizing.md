@@ -104,9 +104,9 @@ Tags to which the SDK applies\. For example, to have the SDK run the game, add t
 
 **symlinks**  
 List of symlink dictionaries for all junctions \(symbolic links\) to establish between the `3rdParty` directory and the code base\. Each symlink uses the following form:  
-+ `source` – Source directory, relative to the `3rdParty` directory\.
-+ `destination` – Destination directory, relative to the SDK root\.
-+ `exampleFile` – File that is located in the source and destination folders and that validates the established link\.
++ `source` - Source directory, relative to the `3rdParty` directory\.
++ `destination` - Destination directory, relative to the SDK root\.
++ `exampleFile` - File that is located in the source and destination folders and that validates the established link\.
 
 ## Configuring Advanced Settings {#ll-customizing-configuring-advanced-settings}
 

@@ -39,8 +39,8 @@ Clicking **Add resource group** opens the **New resource group** dialog:
 
 ![\[New resource group\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-new-resource-group-w-examples.png)
 Provide the following information:  
-+  **Resource group name** – The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-template) file\. 
-+  **Example resources** – \(Optional\) Choose to include example resources in the resource group\. You can study the examples to see how resources are defined in a resource group, or modify the examples to turn them into a feature for your project\. 
++  **Resource group name** - The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-template) file\. 
++  **Example resources** - \(Optional\) Choose to include example resources in the resource group\. You can study the examples to see how resources are defined in a resource group, or modify the examples to turn them into a feature for your project\. 
 
     
 

@@ -37,11 +37,11 @@ Keep in mind the following limitations and considerations about the Waf artifact
 
 The Waf artifacts cache feature has the following Waf options:
 
-**\-\-artifacts\-cache** – Specifies a string that represents the artifacts cache path\. The cache path can be any directory path on local disk or on a net share\. The default value is the empty string \(""\)\. If the option is not set or empty, the artifacts cache is not used\.
+**\-\-artifacts\-cache** - Specifies a string that represents the artifacts cache path\. The cache path can be any directory path on local disk or on a net share\. The default value is the empty string \(""\)\. If the option is not set or empty, the artifacts cache is not used\.
 
-**\-\-artifacts\-cache\-restore** – If true, the task's target output files are copied from the artifacts cache before the task is run\. The default value is false\.
+**\-\-artifacts\-cache\-restore** - If true, the task's target output files are copied from the artifacts cache before the task is run\. The default value is false\.
 
-**\-\-artifacts\-cache–upload** – If true, the task's target output files are uploaded to the artifacts cache after the task is finished\. The default value is false\.
+**\-\-artifacts\-cache-upload** - If true, the task's target output files are uploaded to the artifacts cache after the task is finished\. The default value is false\.
 
 **Example**  
 The following command specifies the artifacts cache path as `E:\waf_artifacts_cache` and restores artifacts from cache on cache hit\. On cache miss, the command uploads the task's target output files to the artifacts cache after the task is finished\.
@@ -62,9 +62,9 @@ artifacts_cache_upload = True
 
 Use the `clean_stale_cached_artifacts` Waf command to delete stale artifacts from the cache\. The command has the following options:
 
-**\-\-artifacts\-cache\-days\-to\-keep** – Number of days to keep the artifacts before they are considered stale\.
+**\-\-artifacts\-cache\-days\-to\-keep** - Number of days to keep the artifacts before they are considered stale\.
 
-**\-\-artifacts\-cache\-wipeout** – If true, deletes all artifacts from the cache\.
+**\-\-artifacts\-cache\-wipeout** - If true, deletes all artifacts from the cache\.
 
 **Examples**  
 The following example specifies that artifacts in the cache location `E:\waf_artifacts_cache` be kept for four days\.

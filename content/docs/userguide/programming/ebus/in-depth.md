@@ -5,12 +5,12 @@ title: Event Buses in Depth
 # Event Buses in Depth {#ebus-in-depth}
 
 Event buses \(or EBus for short\) are a general purpose system for dispatching messages\. Ebuses have many advantages: 
-+ **Abstraction** – Minimize hard dependencies between systems\.
-+ **Event\-driven programming** – Eliminate polling patterns for more scalable and high performing software\.
-+ **Cleaner application code** – Safely dispatch messages without concern for what is handling them or whether they are being handled at all\.
-+ **Concurrency** – Queue events from various threads for safe execution on another thread or for distributed system applications\.
-+ **Predictability** – Provide support for ordering of handlers on a given bus\.
-+ **Debugging** – Intercept messages for reporting, profiling, and introspection purposes\.
++ **Abstraction** - Minimize hard dependencies between systems\.
++ **Event\-driven programming** - Eliminate polling patterns for more scalable and high performing software\.
++ **Cleaner application code** - Safely dispatch messages without concern for what is handling them or whether they are being handled at all\.
++ **Concurrency** - Queue events from various threads for safe execution on another thread or for distributed system applications\.
++ **Predictability** - Provide support for ordering of handlers on a given bus\.
++ **Debugging** - Intercept messages for reporting, profiling, and introspection purposes\.
 
 You can use EBuses in many different ways\. Following are some examples:
 + As a direct global function call
@@ -190,5 +190,5 @@ For information on declaring an EBus for queing and sending messages asynchronou
 ## Additional Features {#ebus-in-depth-features}
 
 EBuses contain other features that address various patterns and use cases:
-+ **Cache a pointer to which messages can be dispatched** – This is handy for EBuses that have IDs\. Instead of looking up the EBus address by ID for each event, you can use the cached pointer for faster dispatching\.
-+ **Queue any callable function on an EBus** – When you use queued messaging, you can queue a Lambda function or bound function against an EBus for execution on another thread\. This is useful for general purpose thread\-safe queuing\.
++ **Cache a pointer to which messages can be dispatched** - This is handy for EBuses that have IDs\. Instead of looking up the EBus address by ID for each event, you can use the cached pointer for faster dispatching\.
++ **Queue any callable function on an EBus** - When you use queued messaging, you can queue a Lambda function or bound function against an EBus for execution on another thread\. This is useful for general purpose thread\-safe queuing\.

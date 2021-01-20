@@ -349,9 +349,9 @@ This feature allows you to view the behavior tree for a specific AI agent in Deb
    + Call "ai\_DebugAgent" without a parameter to remove the tree visualization\.
 
 The tree visualization displays the AI agent's name at the top of the screen and identifies the agent on the screen with a small green dot\. Tree nodes are displayed and color coded as follows, with line numbers from the XML file shown on the left\.
-+ White – nodes with custom data
-+ Blue – leaf nodes, which often carry special weight when debugging
-+ Gray – all other nodes
++ White - nodes with custom data
++ Blue - leaf nodes, which often carry special weight when debugging
++ Gray - all other nodes
 
 ### Adding Custom Debug Text {#ai-scripting-mbt-debugging-tree-visualization-text}
 
@@ -399,7 +399,7 @@ To compile a game with debug information, you need to define DEBUG\_MODULAR\_BEH
 
 ### Viewing Completed Trees {#ai-scripting-mbt-debugging-tree-visualization-completed-trees}
 
-When a behavior tree finishes executing—either by failing or succeeding all the way through the root node, a notification is displayed in the console window along with a list of recently visited nodes and their line numbers\.
+When a behavior tree finishes executing-either by failing or succeeding all the way through the root node, a notification is displayed in the console window along with a list of recently visited nodes and their line numbers\.
 
 **\[Error\] Modular Behavior Tree: The root node for entity 'HumanSoldier' FAILED\. Rebooting the tree next frame\. \(124\) Move\. \(122\) Selector\. \(121\) Sequence\.**
 

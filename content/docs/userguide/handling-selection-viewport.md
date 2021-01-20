@@ -23,13 +23,13 @@ In the following procedure, make changes to your code so that you can enter Comp
 
 1. To implement the `EditorComponentSelectionRequests`, you must override the following four functions:
 
-   1. `GetEditorSelectionBoundsViewport` – Returns an AABB encompassing the visible extents of your component
+   1. `GetEditorSelectionBoundsViewport` - Returns an AABB encompassing the visible extents of your component
 
-   1. `EditorSelectionIntersectRayViewport` – Where you implement selection for the component
+   1. `EditorSelectionIntersectRayViewport` - Where you implement selection for the component
 
-   1. `SupportsEditorRayIntersect` – Override this function and return `true` if you implemented `EditorSelectionIntersectRayViewport`
+   1. `SupportsEditorRayIntersect` - Override this function and return `true` if you implemented `EditorSelectionIntersectRayViewport`
 
-   1. `GetBoundingBoxDisplayType` – Used for debugging to ensure that the AABB is the correct fit\. This example sets the function to `NoBoundingBox`
+   1. `GetBoundingBoxDisplayType` - Used for debugging to ensure that the AABB is the correct fit\. This example sets the function to `NoBoundingBox`
 
    ```
    // EditorComponentSelectionRequests

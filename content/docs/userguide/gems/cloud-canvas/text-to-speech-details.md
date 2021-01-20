@@ -25,15 +25,15 @@ If the speech files are not available locally, Amazon Polly generates the speech
 
 A Text\-to\-Speech Gem resource group contains the following resources\.
 
-**SpeechLibTable \(DDB table\)** – A DynamoDB table that stores the speech lines and metadata for the characters in the `characterdefs` resource\.
+**SpeechLibTable \(DDB table\)** - A DynamoDB table that stores the speech lines and metadata for the characters in the `characterdefs` resource\.
 
-**characterdefs \(Amazon S3 bucket\)** – An Amazon S3 bucket that contains `.json` character definition files\. A character is a logical grouping of settings \(including language and voice\) that is referenced when using Amazon Polly on data submitted to `SpeechLibTable`\.
+**characterdefs \(Amazon S3 bucket\)** - An Amazon S3 bucket that contains `.json` character definition files\. A character is a logical grouping of settings \(including language and voice\) that is referenced when using Amazon Polly on data submitted to `SpeechLibTable`\.
 
 **Service API** \- An Amazon API Gateway that the game client interacts with\. Only two API operations are accessible by game clients: one for generating speech audio, and one for generating speech marks for lip synchronization\. The remaining API operations are accessible only from the Cloud Gem Portal and generate speech on Amazon Polly\. To avoid generating text\-to\-speech content at run time, you can add the speech files to your game's asset directory\. For a listing of service API operations, see [Text\-to\-Speech Cloud Gem Service API Reference](/docs/userguide/gems/cloud-canvas/text-to-speech-service-api.md)\.
 
-**ttscache** – An Amazon S3 bucket that holds all previously generated speech from Amazon Polly\. All speech generation requests check for a matching file in this cache before they call the Amazon Polly service\.
+**ttscache** - An Amazon S3 bucket that holds all previously generated speech from Amazon Polly\. All speech generation requests check for a matching file in this cache before they call the Amazon Polly service\.
 
-**PackageVoiceLines** – This Lambda function puts a list of speech lines from `SpeechLibTable` into a `.zip` file so that it can be downloaded\. The `.zip` file also contains mappings of characters to Amazon Polly voices\. The file is put into an Amazon S3 bucket named `packagedvoicelines`\.
+**PackageVoiceLines** - This Lambda function puts a list of speech lines from `SpeechLibTable` into a `.zip` file so that it can be downloaded\. The `.zip` file also contains mappings of characters to Amazon Polly voices\. The file is put into an Amazon S3 bucket named `packagedvoicelines`\.
 
 ## TextToSpeech Component \(TextToSpeech\.h\) {#cloud-canvas-cloud-gem-text-to-speech-details-texttospeech-component}
 

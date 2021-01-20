@@ -124,7 +124,7 @@ The preconfigured soft naming conventions might not apply to your workflow\. You
 
    1. For **Virtual type**, select one of the following:
       + **Ignore**
-      + **LODMesh1** – **LODMesh5**
+      + **LODMesh1** - **LODMesh5**
       + **PhysicsMesh**
 
    1. For **Include child nodes**, specify whether the virtual type applies to the node and its children\.
@@ -140,7 +140,7 @@ The preconfigured soft naming conventions might not apply to your workflow\. You
 
    1. For **Virtual type**, select one of the following:
       + **Ignore**
-      + **LODMesh1** – **LODMesh5**
+      + **LODMesh1** - **LODMesh5**
       + **PhysicsMesh**
 
    1. For **Graph type**, select the graph types that you want\.

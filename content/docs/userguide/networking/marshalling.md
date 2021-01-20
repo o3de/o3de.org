@@ -69,11 +69,11 @@ Notice the declaration of `MarshalSize` above\. `WriteBuffer` supports the conce
 
 Write buffers are backed by the following three types of allocation schemes:
 
-**Dynamic** – Dynamically allocated and automatically grown
+**Dynamic** - Dynamically allocated and automatically grown
 
-**Static** – Fixed size, allocated on the stack
+**Static** - Fixed size, allocated on the stack
 
-**Static In Place** – Uses another buffer as its backing store
+**Static In Place** - Uses another buffer as its backing store
 
 By default, the `write` function uses the default marshaler for the data type, but you can override the marshaler to create a custom marshaler\.
 

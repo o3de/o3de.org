@@ -41,7 +41,7 @@ You must also enable SVOGI per level\.
 You can apply voxel GI through several modes\.
 
 **Mode 0**  
-With mode 0, only opacity is voxelized\. The bounced light is sampled directly from shadow maps—extended to reflective shadow maps—and compute shaders are not used\.  
+With mode 0, only opacity is voxelized\. The bounced light is sampled directly from shadow maps-extended to reflective shadow maps-and compute shaders are not used\.  
 Mode 0 has the following advantages:  
 + GPU memory usage is small \(\~16 MB\)\.
 + Indirect lighting is completely dynamic; moving sun does not cause any slowdown\.
@@ -91,10 +91,10 @@ This parameter takes effect only when voxel global illumination is enabled\.
 ## Debugging {#rendering-graphics-svogi-debugging}
 
 You can use the following console variables to help debug voxel GI issues:
-+ `r_ShowRenderTarget svo_fin` – Displays the output of the voxel GI system\.
-+ `r_profiler 1 | 2` – Retrieves GPU profiling information\.
-+ `svoToggleShowVoxels` – Shows voxellation of the scene, which shows which voxels are on CPU memory and which are on GPU memory\.
-+ `svoReset` – Performs hard reset of the system and recomputes all values\.
++ `r_ShowRenderTarget svo_fin` - Displays the output of the voxel GI system\.
++ `r_profiler 1 | 2` - Retrieves GPU profiling information\.
++ `svoToggleShowVoxels` - Shows voxellation of the scene, which shows which voxels are on CPU memory and which are on GPU memory\.
++ `svoReset` - Performs hard reset of the system and recomputes all values\.
 
 **Important**  
 Do not use the `e_svoTI_*` console variables \(for example, `e_svoTI_IntegrationMode`\) to configure the voxel GI system\. Any changes to these console variables in the configuration file will be overwritten by the individual level environment settings file\. Instead, configure your settings in the [**Total Illumination**](#rendering-graphics-svogi-params) pane in Lumberyard Editor\.

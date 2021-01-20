@@ -34,10 +34,10 @@ If a player uses an unauthenticated identity and then creates a new account, the
 ## Obtaining Player Account IDs {#cloud-canvas-cloud-gem-player-account-obtaining-player-ids}
 
 You can use the following techniques to obtain player account IDs and account information programmatically\.
-+ **To get a player's account ID in game** – Call `GetPlayerAccount` on the `CloudGemPlayerAccountRequestBus`\. This EBus is defined in the `dev\Gems\CloudGemPlayerAccount\Code\Include\CloudGemPlayerAccount\CloudGemPlayerAccountBus.h` file\. The player's account ID is in the `AccountResultInfo` parameter of `CloudGemPlayerAccountNotificationBusHandler::OnGetPlayerAccountComplete`\.
++ **To get a player's account ID in game** - Call `GetPlayerAccount` on the `CloudGemPlayerAccountRequestBus`\. This EBus is defined in the `dev\Gems\CloudGemPlayerAccount\Code\Include\CloudGemPlayerAccount\CloudGemPlayerAccountBus.h` file\. The player's account ID is in the `AccountResultInfo` parameter of `CloudGemPlayerAccountNotificationBusHandler::OnGetPlayerAccountComplete`\.
 
    
-+ **To get the account ID from a Lambda function located behind an API Gateway** – Because Amazon API Gateway provides the Amazon Cognito ID to the Lambda function, the Lambda function can look up the account ID\. To quickly look up the account ID, you can use the global secondary index `CognitoIdentityIdIndex` of the `PlayerAccounts` table\. The `PlayerAccounts` table is defined in the `dev\Gems\CloudGemPlayerAccount\AWS\resource-template.json` file\.
++ **To get the account ID from a Lambda function located behind an API Gateway** - Because Amazon API Gateway provides the Amazon Cognito ID to the Lambda function, the Lambda function can look up the account ID\. To quickly look up the account ID, you can use the global secondary index `CognitoIdentityIdIndex` of the `PlayerAccounts` table\. The `PlayerAccounts` table is defined in the `dev\Gems\CloudGemPlayerAccount\AWS\resource-template.json` file\.
 
    
-+ **To get the caller's account information without relying on the caller to provide its account ID** – Use the request's authentication parameters\. For an example, see the code in the `dev\Gems\CloudGemPlayerAccount\AWS\lambda-function-code\api\account.py` file\.
++ **To get the caller's account information without relying on the caller to provide its account ID** - Use the request's authentication parameters\. For an example, see the code in the `dev\Gems\CloudGemPlayerAccount\AWS\lambda-function-code\api\account.py` file\.

@@ -64,11 +64,11 @@ You can drag an asset file \(`.cfg`\) into the **Material asset** field on the *
 ## Context Menu Operations {#asset-browser-intro-right-click-context}
 
 In the **Asset Browser**, right\-click an asset to display a context menu\. The following menu options appear:
-+ **Open with associated application** – Opens the file with the default application that you specify\. For example, if you specified Photoshop to open `.tiff` files, this opens the file in Photoshop\.
-+ **Open in Explorer** – Opens the asset in Windows Explorer\.
-+ **Copy Name To Clipboard** – Copies the asset name\.
-+ **Copy Path To Clipboard** – Copies the path of the asset\.
-+ **Edit Texture Settings** – Opens the asset in the Texture Settings Editor\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
++ **Open with associated application** - Opens the file with the default application that you specify\. For example, if you specified Photoshop to open `.tiff` files, this opens the file in Photoshop\.
++ **Open in Explorer** - Opens the asset in Windows Explorer\.
++ **Copy Name To Clipboard** - Copies the asset name\.
++ **Copy Path To Clipboard** - Copies the path of the asset\.
++ **Edit Texture Settings** - Opens the asset in the Texture Settings Editor\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
 
 **Note**  
 You can also open some files in their respective Lumberyard tool, such as the **Lua Editor** for `.lua` files\.  
@@ -82,9 +82,9 @@ Some files, such as `.fbx` files, have an additional **Edit Settings** option, w
 
 **Slices**  
 The following additional options appear for slices:
-+ **Set Dynamic Slice** – Create a runtime version of a slice\. For more information, see [Working with Dynamic Slices](/docs/userguide/dynamic-slices-what-is.md)\.
-+ **Unset Dynamic Slice** – Remove a dynamic slice\.
-+ **Open in Slice Relationship View** – Show the dependencies and dependent members of the slice in a hierarchical view\.  
++ **Set Dynamic Slice** - Create a runtime version of a slice\. For more information, see [Working with Dynamic Slices](/docs/userguide/dynamic-slices-what-is.md)\.
++ **Unset Dynamic Slice** - Remove a dynamic slice\.
++ **Open in Slice Relationship View** - Show the dependencies and dependent members of the slice in a hierarchical view\.  
 **Example**  
 
   The following image shows the **Slice Relationship View** for the **Maze\_Decor\_Interior** slice from the Starter Game\. For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.  
@@ -92,10 +92,10 @@ The following additional options appear for slices:
 
 **Source Control**  
 If source control is enabled, the following additional options appear:
-+ **Check Out** – Check out the file in source control\.
-+ **Undo Check Out** – Undo check out for the file\.
-+ **Get Latest Version** – Get the latest version of the file\.
-+ **Add To Source Control** – Add the file to source control\.  
++ **Check Out** - Check out the file in source control\.
++ **Undo Check Out** - Undo check out for the file\.
++ **Get Latest Version** - Get the latest version of the file\.
++ **Add To Source Control** - Add the file to source control\.  
 ![\[Right-click context menu in the Asset Browser with source control enabled.\]](/images/userguide/asset-browser-intro-right-click-context-1.png)
 
 ## Finding a Slice in the Asset Browser from the Viewport {#asset-browser-intro-viewport}

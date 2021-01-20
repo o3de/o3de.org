@@ -39,10 +39,10 @@ EBUS_EVENT_RESULT(appliedConfiguration, CloudGemFramework::CloudCanvasPlayerIden
 Alternatively, the process can occur by using a Cloud Canvas `(AWS):Configuration:ApplyConfiguration` flow node\. If an authenticated identity is found in the local identities cache, it is loaded and the access token is refreshed if needed using the stored refresh token\. If no existing identity is found, it falls back to using the anonymous identity for AWS calls\.
 
 The code that implements the authenticated login flow can be found in the `\dev\Gems\CloudGemFramework\vN\Code\Source\Identity` directory\. A description of the files follows\.
-+ **`ResourceManagementLambdaBasedTokenRetrievalStrategy.cpp`** – Implements the token exchange process that calls the `PlayerAccessTokenExchange` Lambda function\.
++ **`ResourceManagementLambdaBasedTokenRetrievalStrategy.cpp`** - Implements the token exchange process that calls the `PlayerAccessTokenExchange` Lambda function\.
 
    
-+ **`TokenRetrievingPersistentIdentityProvider.cpp`** – An implementation of the `PersistentCognitoIdentityProvider` interface that is defined in the AWS SDK\. The implementation uses `ResourceManagementLambdaBasedTokenRetrievalStrategy` instances to implement the token exchange process\.
++ **`TokenRetrievingPersistentIdentityProvider.cpp`** - An implementation of the `PersistentCognitoIdentityProvider` interface that is defined in the AWS SDK\. The implementation uses `ResourceManagementLambdaBasedTokenRetrievalStrategy` instances to implement the token exchange process\.
 
    
 

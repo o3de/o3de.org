@@ -32,7 +32,7 @@ Sends an audio recording to a bot for intent processing\. If the bot matches the
 | input\_transcript | string | Transcript of the words that are recognized by Amazon Lex\. | 
 | message | string | Status message to convey, if required\. | 
 | session\_attributes | string | Information passed from API parameters\. | 
-| slots | string | The slot information that was recognized in the form of JSON name–value pairs\. | 
+| slots | string | The slot information that was recognized in the form of JSON name-value pairs\. | 
 | slot\_to\_elicit | string | If slot information needs to be elicited, specifies the slot that the response state elicits\. | 
 
 ## POST /service/posttext {#cloud-canvas-cloud-gem-speech-recognition-api-player-post-serviceposttext}

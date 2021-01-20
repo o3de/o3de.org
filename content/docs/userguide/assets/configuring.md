@@ -20,8 +20,8 @@ Backslashes in `.ini` files have a special meaning\. To use a regular backslash 
 ```
 
 In addition to the `AssetProcessorPlatformConfig.ini` file \(located in the `/lumberyard_version/dev` directory\), you can also add the following:
-+ `AssetProcessorGamePlatformConfig.ini` – Add this file to your game project folder to override any configurations that are specific to a project\. The final configuration is the result of merging both files\. The `AssetProcessorGamePlatformConfig.ini` file is read last and therefore takes priority\.
-+ `AssetProcessorGemConfig.ini` – Add this file to the gem folder to allow your enabled gem to affect the asset processor configuration\. The impact is similar to editing the root file but without making permanent changes to the root file\. For example, you can add an `AssetProcessorGemConfig.ini` file for the Cloud gem to the `/lumberyard_version/dev/Gems/Clouds` directory\.
++ `AssetProcessorGamePlatformConfig.ini` - Add this file to your game project folder to override any configurations that are specific to a project\. The final configuration is the result of merging both files\. The `AssetProcessorGamePlatformConfig.ini` file is read last and therefore takes priority\.
++ `AssetProcessorGemConfig.ini` - Add this file to the gem folder to allow your enabled gem to affect the asset processor configuration\. The impact is similar to editing the root file but without making permanent changes to the root file\. For example, you can add an `AssetProcessorGemConfig.ini` file for the Cloud gem to the `/lumberyard_version/dev/Gems/Clouds` directory\.
 
   The final configuration is the result of merging the following files in order:
   + `dev/AssetProcessorPlatformConfig.ini`
@@ -33,8 +33,8 @@ In addition to the `AssetProcessorPlatformConfig.ini` file \(located in the `/lu
 ## Platforms Section {#asset-pipeline-configuring-platforms-section}
 
 The `Platforms` section contains two subsections:
-+ `Platform Definition` – Defines which platforms exist when you use the `[Platform platformName]` section header\.
-+ `Platforms` – Defines which of the platforms are enabled by default in your project\.
++ `Platform Definition` - Defines which platforms exist when you use the `[Platform platformName]` section header\.
++ `Platforms` - Defines which of the platforms are enabled by default in your project\.
 
 ### Platform Definition Subsection {#asset-pipeline-configuring-platform-definition-subsection}
 

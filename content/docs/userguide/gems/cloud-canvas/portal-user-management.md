@@ -52,10 +52,10 @@ To add a user to your project, you can use the **Admin** page or the Amazon Cogn
 
 1. Fill in the fields, which have the restrictions noted\.  
 ![\[Type user information\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-user-management-3.png)
-+ **Username** – The user name is case sensitive and must not contain spaces\. It cannot be changed after it is assigned\. Each user name must be unique\.
-+ **Email** – Because new users are sent temporary passwords by email, you must provide a valid email address\.
-+ **Temporary Password** – A random temporary password is provided by default, but you can change this\. The password must have eight characters and include at least one uppercase letter, one lowercase letter, one number, and one special \(nonalphanumeric\) character\.
-+ **Roles** – Choose **Admin** to grant the user access to the **Admin** page and give them permissions to and remove users\. Choose **User** for other users\.
++ **Username** - The user name is case sensitive and must not contain spaces\. It cannot be changed after it is assigned\. Each user name must be unique\.
++ **Email** - Because new users are sent temporary passwords by email, you must provide a valid email address\.
++ **Temporary Password** - A random temporary password is provided by default, but you can change this\. The password must have eight characters and include at least one uppercase letter, one lowercase letter, one number, and one special \(nonalphanumeric\) character\.
++ **Roles** - Choose **Admin** to grant the user access to the **Admin** page and give them permissions to and remove users\. Choose **User** for other users\.
 
 After you create the user, the user is sent an email with the temporary password\. After the new user signs in, the user is required to change passwords\.
 

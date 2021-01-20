@@ -8,8 +8,8 @@ title: Add modular features and assets with &gems;
 Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in Lumberyard, see [Gems Available in Lumberyard](/docs/userguide/gems/ref.md)\.
 
 Lumberyard features two types of Gems:
-+ **Code & Assets** – Contains assets as well as code that performs certain functions upon the assets\.
-+ **Assets Only** – Contains only assets and no code\.
++ **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
++ **Assets Only** - Contains only assets and no code\.
 
 All Lumberyard gems are located in the following directory: 
 

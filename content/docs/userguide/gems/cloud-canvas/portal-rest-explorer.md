@@ -41,13 +41,13 @@ This tutorial uses the Message of the Day cloud gem, but you can apply the same 
 ![\[Click the REST Explorer tab in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-portal-rest-explorer-1.png)
 
    The initial **REST Explorer** fields are as follows:
-   + **Host** – Name of the API Gateway host\.
-   + **Title** – Name of the cloud gem's service API in API Gateway\.
-   + **Version** – Service API version\.
-   + **Schemes** – Supported service API schemes\.
-   + **Path** – Lists the service API endpoints that are available for the cloud gem\.
-   + **Show Swagger** – Shows the API definitions in JSON format\.
-   + **Send** – Sends a request to an API Gateway endpoint after a path, verb, and required parameters have been specified\.
+   + **Host** - Name of the API Gateway host\.
+   + **Title** - Name of the cloud gem's service API in API Gateway\.
+   + **Version** - Service API version\.
+   + **Schemes** - Supported service API schemes\.
+   + **Path** - Lists the service API endpoints that are available for the cloud gem\.
+   + **Show Swagger** - Shows the API definitions in JSON format\.
+   + **Send** - Sends a request to an API Gateway endpoint after a path, verb, and required parameters have been specified\.
 
 ### Selecting a Path and a Verb {#cloud-canvas-cloud-gem-portal-rest-explorer-selecting-a-path-and-a-verb}
 
@@ -85,9 +85,9 @@ The **/admin/messages** path and the **post** verb combination requires the foll
 #### Parameter Categories {#cloud-canvas-cloud-gem-portal-rest-explorer-parameter-categories}
 
 Parameters can be in one of three categories:
-+ **Path** – A value that replaces a placeholder in a specified path\. This value specifies the target of an operation – for example, the value for `{msg_id}` in the path `/admin/messages/{msg_id}`\.
-+ **Query** – Fields for a query \(for example, fields that define a search for a GET command\)\.
-+ **Body** – Typically contains fields for information to be created with a POST command or updated with a PUT command\.
++ **Path** - A value that replaces a placeholder in a specified path\. This value specifies the target of an operation - for example, the value for `{msg_id}` in the path `/admin/messages/{msg_id}`\.
++ **Query** - Fields for a query \(for example, fields that define a search for a GET command\)\.
++ **Body** - Typically contains fields for information to be created with a POST command or updated with a PUT command\.
 
 The **Parameters** section groups parameters into their corresponding categories\. For example, the path and verb combination `/admin/messages/{msg_id}`/`put` has both **Path** and **Body** parameters:
 

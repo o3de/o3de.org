@@ -26,15 +26,15 @@ Lumberyard's input system satisfies all of these requirements and replaces the [
 The Lumberyard input interface is called AZ framework input\. AZ framework already provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit\.
 
 The AZ framework input interface uses the `AZCore` EBus system and defines the following classes and EBuses:
-+ `InputDevice` – A base class that represents a physical input device\.
-+ `InputDeviceId` – A device name and device index that together uniquely identify an `InputDevice`\.
-+ `InputDeviceNotificationBus` – An EBus interface that subscribes to events from input devices when they connect or disconnect\.
-+ `InputDeviceRequestBus` – An EBus interface that queries input devices about their associated input channels or current connected state\.
-+ `InputChannel` – A base class that represents a specific source of input data \(for example, the left mouse button\)\. Input devices typically have multiple input channels\.
-+ `InputChannelId` – A name that uniquely identifies an `InputChannel`\.
-+ `InputChannelNotificationBus` – An EBus interface that subscribes to events from input channels when the channels are active or when their state or value changes\.
-+ `InputChannelRequestBus` – An EBus interface that obtains an input channel from the input channel's ID\. You can then query the input channel directly for its current state or value\.
-+ `InputChannelEventListener` – An event monitor that inherits from `InputChannelNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or filter events based on the source device or channel\. Subscribers can also consume events so that the events aren't passed on to lower priority monitors\.
++ `InputDevice` - A base class that represents a physical input device\.
++ `InputDeviceId` - A device name and device index that together uniquely identify an `InputDevice`\.
++ `InputDeviceNotificationBus` - An EBus interface that subscribes to events from input devices when they connect or disconnect\.
++ `InputDeviceRequestBus` - An EBus interface that queries input devices about their associated input channels or current connected state\.
++ `InputChannel` - A base class that represents a specific source of input data \(for example, the left mouse button\)\. Input devices typically have multiple input channels\.
++ `InputChannelId` - A name that uniquely identifies an `InputChannel`\.
++ `InputChannelNotificationBus` - An EBus interface that subscribes to events from input channels when the channels are active or when their state or value changes\.
++ `InputChannelRequestBus` - An EBus interface that obtains an input channel from the input channel's ID\. You can then query the input channel directly for its current state or value\.
++ `InputChannelEventListener` - An event monitor that inherits from `InputChannelNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or filter events based on the source device or channel\. Subscribers can also consume events so that the events aren't passed on to lower priority monitors\.
 
 ### Processing the Input {#input-intro-processing}
 
@@ -45,16 +45,16 @@ If you want to query the current input state directly, use `AzFramework`::`Input
 #### Text Input Interfaces {#input-intro-text-input-interfaces}
 
 The following interfaces are designed to process text input\. The input is delivered as a complete string of UTF\-8 code points\. This eliminates the requirement to keep track of and interpret individual code units or convert from other encodings\.
-+ `InputTextEventNotificationBus` – An EBus interface that subscribes to text events from input devices or input channels\.
-+ `InputTextEntryRequestBus` – An EBus interface that sends text entry requests\. The requests inform input devices that the user is expecting to start or stop entering text\.
-+ `InputTextEventListener` – An event monitor that inherits from `InputTextNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or consume events so that the events aren't passed on to lower priority monitors\.
++ `InputTextEventNotificationBus` - An EBus interface that subscribes to text events from input devices or input channels\.
++ `InputTextEntryRequestBus` - An EBus interface that sends text entry requests\. The requests inform input devices that the user is expecting to start or stop entering text\.
++ `InputTextEventListener` - An event monitor that inherits from `InputTextNotificationBus` but provides additional features\. Subscribers can use the additional features to receive events in priority order or consume events so that the events aren't passed on to lower priority monitors\.
 
 #### Auxiliary Input Interfaces {#input-intro-auxiliary-input-interfaces}
 
 The following AZ framework input auxiliary interfaces are only implemented by certain input devices\. You can use these interfaces to query or post data related to device activity like vibration effects, motion sensors, or the mouse cursor\.
-+ `InputHapticFeedbackBus` – An EBus interface that sends haptic feedback requests to connected input devices\.
-+ `InputMotionSensorRequestBus` – An EBus interface that sends motion sensor requests to connected input devices\.
-+ `InputSystemCursorRequestBus` – An EBus interface that queries or changes the state, position, or appearance of the system cursor\.
++ `InputHapticFeedbackBus` - An EBus interface that sends haptic feedback requests to connected input devices\.
++ `InputMotionSensorRequestBus` - An EBus interface that sends motion sensor requests to connected input devices\.
++ `InputSystemCursorRequestBus` - An EBus interface that queries or changes the state, position, or appearance of the system cursor\.
 
 ### Input Devices {#input-intro-devices}
 

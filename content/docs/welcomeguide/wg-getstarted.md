@@ -45,12 +45,12 @@ We've provided a small project game containing assets for this tutorial series\.
 
 The asset package [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) contains the following directories \(among others\):
 +  `\WelcomeGuideTutorials` \(root\)
-  +  `\Actors` — Contains the `.fbx` and `.mtl` files for the "chicken" asset\. The `.fbx` files contain meshes and a skeleton\. The `.mtl` files are material files containing surface properties that define the look of the chicken\.
-  +  `\InputBindings` — Contains the input configuration files for the tutorial game\.
-  +  `\Levels` — Contains the data for each chapter's level configuration\.
-  +  `\ScriptCanvas` — Contains the scripts you'll work with for each chapter\.
-  +  `\Slices` — Contains the assembled slices \(prefabs\) for the chicken and other assets used in the tutorials\.
-  +  `\Textures` — Contains the texture images used in the tutorials\.
+  +  `\Actors` - Contains the `.fbx` and `.mtl` files for the "chicken" asset\. The `.fbx` files contain meshes and a skeleton\. The `.mtl` files are material files containing surface properties that define the look of the chicken\.
+  +  `\InputBindings` - Contains the input configuration files for the tutorial game\.
+  +  `\Levels` - Contains the data for each chapter's level configuration\.
+  +  `\ScriptCanvas` - Contains the scripts you'll work with for each chapter\.
+  +  `\Slices` - Contains the assembled slices \(prefabs\) for the chicken and other assets used in the tutorials\.
+  +  `\Textures` - Contains the texture images used in the tutorials\.
 
 Open the ZIP file and place the folder and its contents under the \\dev directory in your Amazon Lumberyard installation path\. \(For example, C:\\Program Files\\Amazon Lumberyard\\dev\.\) We provided levels for each "chapter" of the larger tutorial series, so you can just pick a chapter you're interested in, load the *final* level for the preceding chapter, and start there\. Or, you can start from chapter 1 and build each level on your own\. Your time; your call\!
 

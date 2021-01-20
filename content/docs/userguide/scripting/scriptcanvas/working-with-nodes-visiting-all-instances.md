@@ -5,7 +5,7 @@ title: Navigating Graphs
 ---
 # Navigating Graphs {#script-canvas-working-with-nodes-visiting-all-instances}
 
-If you want to visit all nodes of the same type on a graph – for example, to check their configuration – use the following procedure\.
+If you want to visit all nodes of the same type on a graph - for example, to check their configuration - use the following procedure\.
 
 **To cycle through instances of the same node**
 

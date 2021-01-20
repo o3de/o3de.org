@@ -42,38 +42,38 @@ When you launch `Profiler.exe` or `LuaIDE.exe`, GridHub starts automatically and
 
    The toolbar options are as follows: 
 
-   **Session port** – Specifies the port on which GridHub listens for discovery requests\. 
+   **Session port** - Specifies the port on which GridHub listens for discovery requests\. 
 
-   **Connection slots** – Specifies the maximum number of applications that can be connected concurrently to GridHub\. 
+   **Connection slots** - Specifies the maximum number of applications that can be connected concurrently to GridHub\. 
 
-   **Hub name** – The name of your hub\. By default, this is the name of the local computer\. 
+   **Hub name** - The name of your hub\. By default, this is the name of the local computer\. 
 **Note**  
 The name of the hub must be the neighborhood name to which the `TargetManagementComponent` connects\. 
 
-   **Enable Disconnection Detection** – Specifies whether the connection to GridHub is terminated when the source fails to respond\. 
+   **Enable Disconnection Detection** - Specifies whether the connection to GridHub is terminated when the source fails to respond\. 
 
-   **Add to Windows startup folder** – Specifies whether GridHub starts automatically when Windows starts\. 
+   **Add to Windows startup folder** - Specifies whether GridHub starts automatically when Windows starts\. 
 
-   **Log activity** – Starts or stops logging\. 
+   **Log activity** - Starts or stops logging\. 
 
-   **Start/Stop** – Starts or stops GridHub\. When GridHub is off, no connections are discovered or maintained\. 
+   **Start/Stop** - Starts or stops GridHub\. When GridHub is off, no connections are discovered or maintained\. 
 
 1. When GridHub and your target application are active, your target application appears in the GridHub **Connections** list:   
 ![\[GridHub connections list\]](/images/userguide/gridhub-viewing-and-configuring-connections.png)
 
    The columns in the **Connections** list provide the following information: 
 
-   **ID** – The identifier of the connected application\. 
+   **ID** - The identifier of the connected application\. 
 
-   **Name** – The name of the connected application\. 
+   **Name** - The name of the connected application\. 
 
-   **Connection** **ID** – The identifier of the connection between GridHub and the application\. 
+   **Connection** **ID** - The identifier of the connection between GridHub and the application\. 
 
-   **IsHost** – Whether or not the connection is the connection host 
+   **IsHost** - Whether or not the connection is the connection host 
 
-   **IsLocal** – Whether or not the connection is local\. 
+   **IsLocal** - Whether or not the connection is local\. 
 
-   **IsReady** – Whether or not the application is ready to handle further connections\. 
+   **IsReady** - Whether or not the application is ready to handle further connections\. 
 
 1. Use the **Output** window to see the log messages that GridHub generates as it manages connections:   
 ![\[GridHub log messages\]](/images/userguide/gridhub-viewing-and-configuring-output.png)

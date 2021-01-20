@@ -90,8 +90,8 @@ Implement this bus to receive notifications when elements of a dynamic scroll bo
 Sends a signal when an element of a dynamic scroll box is about to become visible\.
 
 **Parameters**  
-`entityID` – The entity Id of the element that is about to become visible\.  
-`index` – The index of the element that is about to become visible\.
+`entityID` - The entity Id of the element that is about to become visible\.  
+`index` - The index of the element that is about to become visible\.
 
 **Return**  
 None

@@ -53,19 +53,19 @@ Each Lumberyard release exists as a separate branch in GitHub\. To download Lumb
 
 After you install Lumberyard, the Lumberyard root directory includes the following folders and files:
 + `dev`
-  + `_WAF_` – Waf build system files\.
-  + `Bin64` – Binaries directory and configuration files for the Resource Compiler\.
-  + `Bin64vc141` – Binaries directory and configuration files for Visual Studio 2017\.
-  + `Bin64vc142` – Binaries directory and configuration files for Visual Studio 2019\.
-  + `Code` – Source files directory and solution files\.
-  + `Editor` – Editor assets\.
-  + `Engine` – Engine assets\.
-  + `Gems` – Optional systems and assets\.
-  + `MultiplayerSample` – Multiplayer sample project that demonstrates how to build a multiplayer game with the new component entity system\. For more information, see [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md)\.
-  + `ProjectTemplates` – Configuration files, libraries, and scripts for the empty template\.
-  + `SamplesProject` – Sample project\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
-  + `Tools` – Third\-party tools and plugins\.
-  + `engineroot.txt` – System file required by Lumberyard Setup Assistant\.
+  + `_WAF_` - Waf build system files\.
+  + `Bin64` - Binaries directory and configuration files for the Resource Compiler\.
+  + `Bin64vc141` - Binaries directory and configuration files for Visual Studio 2017\.
+  + `Bin64vc142` - Binaries directory and configuration files for Visual Studio 2019\.
+  + `Code` - Source files directory and solution files\.
+  + `Editor` - Editor assets\.
+  + `Engine` - Engine assets\.
+  + `Gems` - Optional systems and assets\.
+  + `MultiplayerSample` - Multiplayer sample project that demonstrates how to build a multiplayer game with the new component entity system\. For more information, see [Multiplayer Sample](/docs/userguide/samples/projects/multiplayer-enhanced.md)\.
+  + `ProjectTemplates` - Configuration files, libraries, and scripts for the empty template\.
+  + `SamplesProject` - Sample project\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
+  + `Tools` - Third\-party tools and plugins\.
+  + `engineroot.txt` - System file required by Lumberyard Setup Assistant\.
 + `3rdParty`
   + Third\-party software required to use or compile Lumberyard
-  + `3rdParty.txt` – System file used by other third\-party tools to verify the directory\.
+  + `3rdParty.txt` - System file used by other third\-party tools to verify the directory\.

@@ -35,8 +35,8 @@ Do the following to apply a skybox material to a skybox\.
 1. Return to the **SkyBox** settings in the **Rollup Bar**, and click the assign \(**<**\) button to apply the selected material to the skybox\.
 
 1. \(Optional\) Configure the following parameters:
-   + **Material low spec** – Select the skybox material to display at low resolution\.
-   + **Angle** – Specify the angle to rotate the skybox\.
-   + **Stretching** – Specify the amount to stretch the skybox texture to reduce the horizon line\.
+   + **Material low spec** - Select the skybox material to display at low resolution\.
+   + **Angle** - Specify the angle to rotate the skybox\.
+   + **Stretching** - Specify the amount to stretch the skybox texture to reduce the horizon line\.
 
 1. Close the **Material Editor**\.

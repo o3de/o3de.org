@@ -78,8 +78,8 @@ After you enable Jira integration, you can configure its settings in the Cloud G
 ![\[The Jira Integration Settings section of the Jira Integration tab in the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-5.png)
 
 1. For **Submit Mode**, choose **Automatic** or **Manual**\.
-   + **Automatic** – Jira tickets are generated automatically when a defect report is submitted\.
-   + **Manual** – Submit tickets manually in the Cloud Gem Portal\. You can submit tickets individually or by group\.
+   + **Automatic** - Jira tickets are generated automatically when a defect report is submitted\.
+   + **Manual** - Submit tickets manually in the Cloud Gem Portal\. You can submit tickets individually or by group\.
 
    For more information, see [Automatic and Manual Submit Modes](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp-jira-automatic-and-manual-submit-modes.md)\.
 
@@ -106,7 +106,7 @@ For Jira fields that do not map easily from game event attributes, enter custom 
 If you do not specify a mapping or default value for a required field, automatic mode will fail\.  
 ![\[Choosing a default game event attribute to map to a Jira field.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-9.png)
 
-1. For fields that have a plus \(**\+**\) icon, click the icon to add an instance of the field\. Click the minus icon \(**–**\) to remove an instance of the field\.  
+1. For fields that have a plus \(**\+**\) icon, click the icon to add an instance of the field\. Click the minus icon \(**-**\) to remove an instance of the field\.  
 ![\[Click the plus icon to add multiple instances to a field\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-jira-10.png)
 
 1. When you are finished, click **Save Settings**\.  

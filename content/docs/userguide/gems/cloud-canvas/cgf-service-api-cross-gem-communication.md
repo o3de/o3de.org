@@ -28,8 +28,8 @@ To define paths, operations, and data formats for the interface, you follow the 
 ## Implementing an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-implementing-an-interface}
 
 To implement an interface, a gem's `swagger.json` file uses an `x-cloud-gem-framework-interface-implementation` extension object in a path object\. The interface implementation object has the following properties:
-+ `interface` – The full interface name \(`gem-name.interface-name-interface-version`\) of the implemented interface\.
-+ `module` – The name of the Python module directory that contains the API implementation\. If not provided, the full interface name is used\. This directory contains the child modules with functions named as specified by the interface definition\.
++ `interface` - The full interface name \(`gem-name.interface-name-interface-version`\) of the implemented interface\.
++ `module` - The name of the Python module directory that contains the API implementation\. If not provided, the full interface name is used\. This directory contains the child modules with functions named as specified by the interface definition\.
 
 The referenced interface definition and the gem's swagger definition are merged before they are uploaded to configure Amazon API Gateway\. The path objects in the interface definition are effectively inserted as child paths of the path object that defines the interface implementation extension object\. The data definitions in each interface are given a unique prefix to prevent collisions with definitions from the gem's swagger definition or other interfaces\.
 

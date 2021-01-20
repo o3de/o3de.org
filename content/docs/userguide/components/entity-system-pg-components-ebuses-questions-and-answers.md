@@ -13,7 +13,7 @@ A\. If you enable legacy systems, the two systems can work side by side\. Howeve
 A\. In principle, no\. However, every component has a small resource cost associated with it\. When possible, avoid creating long chains of components if the desired objective be accomplished through simpler means\.
 
 **Q\. When should I make an editor component?**  
-A\. When editor–only functionality is required, or when the data in the editor must be different than the data in the runtime\. For more information, see [Editor Components](/docs/userguide/components/entity-system-pg-editor-components.md)\.
+A\. When editor-only functionality is required, or when the data in the editor must be different than the data in the runtime\. For more information, see [Editor Components](/docs/userguide/components/entity-system-pg-editor-components.md)\.
 
 **Q\. What is the best practice for a component to communicate with another component on the same entity? What if the component is on a different entity?**  
 A\. Using EBuses for both events and event monitoring\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
@@ -25,7 +25,7 @@ A\. The method depends on the use case\. Here are some possible approaches:
 + If a hard connection is possible, use a component that contains an entity reference\. Then look up the entity directly by ID at runtime\.
 
 **Q\. What is the best way to group component entities?**  
-A\. Because the [Entity Outliner](/docs/userguide/components/entity-outliner.md) in Lumberyard Editor shows entities in parent–child hierarchy, group entities under a parent whenever possible\. This provides contextual organization\.
+A\. Because the [Entity Outliner](/docs/userguide/components/entity-outliner.md) in Lumberyard Editor shows entities in parent-child hierarchy, group entities under a parent whenever possible\. This provides contextual organization\.
 
 **Q\. What are best practices for organizing and working with a large number of component entities in Lumberyard Editor?**  
 A\. Where appropriate, use [slices](/docs/userguide/components/slices.md) for repeated content\. To make it easy to collapse or hide large groups of entities in the Entity Outliner, create a hierarchy of entities\.

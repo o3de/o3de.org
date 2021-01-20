@@ -23,5 +23,5 @@ Localized wind is used to simulate wind from a specific object, such as a fan or
 1. Drag to place the entity in your level at the desired location\.
 
 1. Under **Entity Properties**, adjust the following parameters:
-   + **FadeTime** – Enables or disables fade time\.
-   + **vVelocity** – Sets the wind strength and direction\. 
+   + **FadeTime** - Enables or disables fade time\.
+   + **vVelocity** - Sets the wind strength and direction\. 

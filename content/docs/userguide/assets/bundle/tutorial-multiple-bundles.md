@@ -80,7 +80,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
        --output dlc_level2.assetlist
    ```
 **Important**  
- The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` — not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for all of the details\. 
+ The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` - not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for all of the details\. 
 
 1. Get the *complement* of the assets between `engine_pc.assetlist` from the previous tutorial and l`dlc_level2_pc.assetlist`\. This removes engine\-specific content from the `level2` assets\.
 

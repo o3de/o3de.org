@@ -33,7 +33,7 @@ For more information about the `add-service-api-resources` command, see [Resourc
 Creates a Cloud Gem Portal administrator account if none is present\.
 
 The `create-portal-administrator` command accepts the following argument:
-+ `--silent-create-admin` – Runs the command without outputs\.
++ `--silent-create-admin` - Runs the command without outputs\.
 
 ### generate\-service\-api\-code {#cloud-canvas-command-line-cgf-generate-service-api-code}
 
@@ -100,7 +100,7 @@ The `open-cloud-gem-portal` command and its equivalents accept the following arg
 
 ### remove\-service\-api\-resources {#cloud-canvas-command-line-cgf-remove-service-api-resources}
 
-Remove the resources that implement a `swagger.json` file–based service API operation from a resource group\.
+Remove the resources that implement a `swagger.json` file-based service API operation from a resource group\.
 
 The `remove-service-api-resources` command accepts the following arguments:
 + `--resource-group {resource-group-name}` or `-r {resource-group-name}`

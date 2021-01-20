@@ -33,13 +33,13 @@ To create a blend space, you must add a blend tree node and a blend space node, 
 Blend space nodes output a pose from the **Output Pose** port\. You can connect this output to the **Input Pose** port of the **Final Output** node or to the input port of any other node that accepts a pose as input\.
 
 The **Blend Space 1D** node has the following ports:
-+ **X** – The value for this input port indicates the current position of interest in the 1D blend space\.
-+ **Output Pose** – The blend space node computes the blended motion that corresponds to the current position of interest and outputs the resulting motion from this port\.
++ **X** - The value for this input port indicates the current position of interest in the 1D blend space\.
++ **Output Pose** - The blend space node computes the blended motion that corresponds to the current position of interest and outputs the resulting motion from this port\.
 
 The **Blend Space 2D** node has the following ports:
-+ **X** – The value for this input port is the x\-coordinate of the current position of interest in the 2D blend space\.
-+ **Y** – The value for this input port is the y\-coordinate of the current position of interest in the 2D blend space\.
-+ **Output Pose** – The blend space node computes the blended motion that corresponds to the current position of interest and outputs the resulting motion from this port\.
++ **X** - The value for this input port is the x\-coordinate of the current position of interest in the 2D blend space\.
++ **Y** - The value for this input port is the y\-coordinate of the current position of interest in the 2D blend space\.
++ **Output Pose** - The blend space node computes the blended motion that corresponds to the current position of interest and outputs the resulting motion from this port\.
 
 **To create a blend space and specify attributes**
 

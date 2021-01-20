@@ -212,13 +212,13 @@ Rotation mode has a three axis rotate manipulator\.
 
 **Collider component mode hotkeys**  
 These navigation hotkeys are available in collider component mode\.
-+ **1** – Resize mode\.
-+ **2** – Offset mode\.
-+ **3** – Rotation mode\.
-+ **Control \+ Mouse Wheel Up** – Next mode\.
-+ **Control \+ Mouse Wheel Down** – Previous mode\.
-+ **R** – Reset current mode\. This is effectively an undo operation\. You can step through the Resize, Offset, and Rotation modes and press R to reset changes to the current mode\. 
-+ **Escape** – Exit component mode\.
++ **1** - Resize mode\.
++ **2** - Offset mode\.
++ **3** - Rotation mode\.
++ **Control \+ Mouse Wheel Up** - Next mode\.
++ **Control \+ Mouse Wheel Down** - Previous mode\.
++ **R** - Reset current mode\. This is effectively an undo operation\. You can step through the Resize, Offset, and Rotation modes and press R to reset changes to the current mode\. 
++ **Escape** - Exit component mode\.
 
 ## Colliders as triggers {#colliders-as-triggers}
 

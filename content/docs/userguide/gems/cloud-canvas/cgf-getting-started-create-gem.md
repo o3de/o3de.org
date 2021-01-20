@@ -47,9 +47,9 @@ You can easily create your own cloud gem by using the `lmbr_aws cloud-gem create
   ```
 
   The syntax options are as follows\.
-  + `--gem {gem-name}` – Specifies the name of the cloud gem\.
-  + `--initial-content {content-option}` – Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-cloud-gem-create)\.
-  + `--enable` – Enables the cloud gem in your project\. 
+  + `--gem {gem-name}` - Specifies the name of the cloud gem\.
+  + `--initial-content {content-option}` - Specifies the starter content for the cloud gem\. For a list of content options, see [cloud\-gem create](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-cloud-gem-create)\.
+  + `--enable` - Enables the cloud gem in your project\. 
 
 **Example**  
 The following command example creates a cloud gem called `MyCloudGem` that is enabled in the current project and has Amazon API Gateway and AWS Lambda function resources\. 
@@ -70,10 +70,10 @@ Depending on the parameter that you choose for the `--initial-content` option, t
       + An output for the service API URL\.
       + An `AccessControl` resource configured as described in [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
   +  A `\dev\Gems\{gem-name}\vN\Code\` directory with skeleton code that was automatically generated from the `swagger.json` file\. The `Code` directory contains generated [Using the Waf Build System](/docs/userguide/waf/intro.md) files and the following subdirectories: 
-    + `\AWS\ServiceAPI\` – Contains `{gem-name}ClientComponent.h` and `{gem-name}ClientComponent.cpp` files\. Use the skeleton code in these files to implement a Lumberyard component that you can use to invoke the cloud gem's service API operations from C\+\+ or Lua\.
-    + `\Include\{gem-name}\` – Contains a `{gem-name}Bus.h` [EBus](/docs/userguide/programming/ebus/intro.md)  file\.
-    + `\Source\` – Contains skeleton component, gem module and system component files\.
-    + `\Tests\` – Contains a skeleton `{gem-name}Test.cpp` file
+    + `\AWS\ServiceAPI\` - Contains `{gem-name}ClientComponent.h` and `{gem-name}ClientComponent.cpp` files\. Use the skeleton code in these files to implement a Lumberyard component that you can use to invoke the cloud gem's service API operations from C\+\+ or Lua\.
+    + `\Include\{gem-name}\` - Contains a `{gem-name}Bus.h` [EBus](/docs/userguide/programming/ebus/intro.md)  file\.
+    + `\Source\` - Contains skeleton component, gem module and system component files\.
+    + `\Tests\` - Contains a skeleton `{gem-name}Test.cpp` file
 
 ## Developing your Cloud Gem {#cloud-canvas-cgf-getting-started-developing-your-cloud-gem}
 

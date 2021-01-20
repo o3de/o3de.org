@@ -18,11 +18,11 @@ You can use a **Text** component to add a text string to an element\.
 To view the same canvases in the **UI Editor**, navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Text` directory\.
 
 You can open the following canvases:
-+ `Alignment.uicanvas` – Examples of aligning the text in its element rectangle
-+ `ColorAlpha.uicanvas` – Examples of setting different colors and transparency levels
-+ `StylingMarkup.uicanvas` – Examples of customizing the appearance of text using different styles, colors, and font in a single string
-+ `ImageMarkup.uicanvas` – Example of embedding images in text
-+ `OverflowWrap.uicanvas` – Examples of different wrap and overflow options
++ `Alignment.uicanvas` - Examples of aligning the text in its element rectangle
++ `ColorAlpha.uicanvas` - Examples of setting different colors and transparency levels
++ `StylingMarkup.uicanvas` - Examples of customizing the appearance of text using different styles, colors, and font in a single string
++ `ImageMarkup.uicanvas` - Example of embedding images in text
++ `OverflowWrap.uicanvas` - Examples of different wrap and overflow options
 
 Use the **Properties** pane of the [UI Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-using.html) to configure the following settings for the **Text** component\.
 

@@ -61,10 +61,10 @@ Restrictions on use and distribution of the Lumberyard materials, including in s
 + `\dev\waf_branch_spec.py`
 + `\dev\wscript`
 
-**Asset Collection – Woodland**
+**Asset Collection - Woodland**
 + All directories
 
-**Asset Collection – Beach City**
+**Asset Collection - Beach City**
 + All directories
 
 **Legacy Sample \(GameSDK\)**

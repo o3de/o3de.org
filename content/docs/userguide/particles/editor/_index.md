@@ -20,10 +20,10 @@ Use the **Particle Editor** to create, edit, preview, and save particle librarie
 ![\[Particle Editor interface\]](/images/userguide/particles/particle-editor.png)
 
 The **Particle Editor** includes the following UI elements:
-+ **Libraries** panel – Lists the particle art assets\. You can view and interact with multiple libraries simultaneously\.
-+ **Preview** panel – Displays the selected, active particle effect\. The preview camera automatically positions to capture the entire particle\. Use the **W**, **A**, **S**, and **D** keys and mouse controls to pan, zoom, and rotate the camera\.
-+ **Attributes** panel – Lists the properties for the selected particle\.
-+ **Level of Detail** panel – Displays level of detail \(LOD\) information for added particles\. For more information, see [Managing Particle Level of Detail \(LOD\)](/docs/userguide/particles/lod.md)\.
++ **Libraries** panel - Lists the particle art assets\. You can view and interact with multiple libraries simultaneously\.
++ **Preview** panel - Displays the selected, active particle effect\. The preview camera automatically positions to capture the entire particle\. Use the **W**, **A**, **S**, and **D** keys and mouse controls to pan, zoom, and rotate the camera\.
++ **Attributes** panel - Lists the properties for the selected particle\.
++ **Level of Detail** panel - Displays level of detail \(LOD\) information for added particles\. For more information, see [Managing Particle Level of Detail \(LOD\)](/docs/userguide/particles/lod.md)\.
 
 ## Adding a Particle Component {#adding-a-particle-component-to-your-level}
 

@@ -24,8 +24,8 @@ Classes are registered on a serialization context with the `AZ::SerializeContext
 
 `Version(unsigned int version, VersionConverter converter = nullptr)`  
 Sets version information for the serialization\.  
-+  `version` – The version of the class\. Whenever the internal structure of the class changes, the version should be updated\. 
-+  `converter` – Converter function which translates older versions of the class to the provided `version`\. 
++  `version` - The version of the class\. Whenever the internal structure of the class changes, the version should be updated\. 
++  `converter` - Converter function which translates older versions of the class to the provided `version`\. 
 
 `template<class ClassType, class FieldType> Field(const char* name, FieldType ClassType::* address, AZStd::initializer_list<AttributePair> attrbuteIds = {})`  
 Tags a field in a class for storage\.  
@@ -63,8 +63,8 @@ Enums are registered on a serialization context with the `AZ::SerializeContext::
 
 `Version(unsigned int version, VersionConverter converter = nullptr)`  
 Sets version information for the serialization\.  
-+  `version` – The version of the enum\. Unlike classes, this doesn't need to change whenever an enum's definition is updated, and is mostly for conversion purposes\. 
-+  `converter` – Converter function which translates older versions of the enum to the provided `version`\. 
++  `version` - The version of the enum\. Unlike classes, this doesn't need to change whenever an enum's definition is updated, and is mostly for conversion purposes\. 
++  `converter` - Converter function which translates older versions of the enum to the provided `version`\. 
 
 `template<class EnumType> Value(const char* name, EnumType value)`  
 Tags an enum value for serialization as part of the enum's information\.  

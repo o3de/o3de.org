@@ -15,31 +15,31 @@ The Asset Processor interface provides areas containing detailed information abo
 
 
 
-A – Processing status  
+A - Processing status  
 Displays asset processing status, the project name, its root location, and the processor port\.
 
-B – Tabs  
+B - Tabs  
 Displays scoped views of Asset Processor functionality\. Tabs are described in detail in the following sections\.
 
-C – Asset Status  
+C - Asset Status  
 Displays the asset status and details about the source asset in a sortable table\.
 
-D – Asset status search with filter  
+D - Asset status search with filter  
 Filters your search by keyword, regular expressions, or status\.
 
-E – Event log details  
+E - Event log details  
 Provides additional information for the selected row in the asset status table\.
 
-F – Event log details filter  
+F - Event log details filter  
 Filters by warnings and errors\.
 
-G – Context details  
+G - Context details  
 When enabled, shows specific debugging information for the asset\. This setting is disabled by default\.
 
-H – Event log line details table  
+H - Event log line details table  
 Displays debugging values set in the program for the selected line in the **Event log details**\. These values are emitted during processing\.
 
-I – Asset processing timer  
+I - Asset processing timer  
  After asset processing completes, displays information about the time that it took to perform scans, analyze assets, and produce a build\. 
 
 ## Jobs {#jobs-tab}
@@ -51,10 +51,10 @@ I – Asset processing timer
 The **Asset Status** table displays the status of assets that Lumberyard is processing\. Select a row to display contextual asset processing information in the **Event Log Details** table\.
 
 The columns in the **Asset Status** table display the following information about each asset:
-+ **Source** – Asset's file name and location
-+ **Completed** – Timestamp of the process completion
-+ **Platform** – Game platform
-+ **Job Key** – Specific job process
++ **Source** - Asset's file name and location
++ **Completed** - Timestamp of the process completion
++ **Platform** - Game platform
++ **Job Key** - Specific job process
 
 ![\[The Asset Status table displays specific information about assets in each column.\]](/images/userguide/asset_processor/asset-status-table.png)
 
@@ -63,10 +63,10 @@ The columns in the **Asset Status** table display the following information abou
 In the **Status** column, you can sort by status types\.
 
 The column headers display the following information about each asset:
-+ **Completed ** – Completely processed and converted for use in the game
-+ **Failed** – Failed and needs investigation and debugging
-+ **In Process** – Currently processing and will display **Completed** or **Failed** when complete
-+ **Pending** – Awaiting processing
++ **Completed ** - Completely processed and converted for use in the game
++ **Failed** - Failed and needs investigation and debugging
++ **In Process** - Currently processing and will display **Completed** or **Failed** when complete
++ **Pending** - Awaiting processing
 
 #### Filtering by Keyword and Status {#keyword-status-filtering}
 
@@ -142,9 +142,9 @@ The **Message** column occasionally prefixes **Errors** with **E:** and warnings
 ![\[Event log details table.\]](/images/userguide/asset_processor/event-log-details-table.png)
 
 The **Event Log Details** table also features a context menu to perform copy actions\. You can copy the following to the clipboard:
-+ **Copy Line** – Selected line of the log
-+ **Copy Line With Details** – Selected line and any related details that appear in the **Event log line details** table
-+ **Copy All** – All log lines and any hidden details for each item
++ **Copy Line** - Selected line of the log
++ **Copy Line With Details** - Selected line and any related details that appear in the **Event log line details** table
++ **Copy All** - All log lines and any hidden details for each item
 
 ![\[Event log details table context menu actions.\]](/images/userguide/asset_processor/event-log-details-context.png)
 
@@ -155,9 +155,9 @@ The **Event Log Line Details** table displays when you enable the **Context Deta
 ![\[Event Log Line Details table with Context Details enabled.\]](/images/userguide/asset_processor/event-log-details-context-on.png)
 
 The **Event Log Line Details** table also features a context menu to perform copy actions\. You can copy the following to the clipboard:
-+ **Copy Selected Key** – Text in the **Key** column of the selected row
-+ **Copy Selected Value** – Text in the **Value** column of the selected row
-+ **Copy All Values** – All keys and values in the table
++ **Copy Selected Key** - Text in the **Key** column of the selected row
++ **Copy Selected Value** - Text in the **Value** column of the selected row
++ **Copy All Values** - All keys and values in the table
 
 ![\[Event Log Line Details table context menu.\]](/images/userguide/asset_processor/event-log-line-details-context.png)
 
@@ -171,44 +171,44 @@ The **Event Log Line Details** table also features a context menu to perform cop
 
 ![\[The Asset Processor with the Assets tab selected, and the Source Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/userguide/asset_processor/assets-source.png)
 
-A – Search bar  
+A - Search bar  
  Search for assets\. The search bar is visible in both the Source Assets and Product Assets views\. The search will match partial file names and supports regular expressions\. Search bar functionality is the same between **Source Assets** and **Product Assets** views\. 
 
-B – Source asset list  
+B - Source asset list  
  The list of all source assets which match the current search filter\. When the search is empty, shows all of the source assets used by the project\. 
 
-C – Asset information  
+C - Asset information  
  Detailed information about the asset currently selected in the asset list\. This includes the name of the asset, the containing folder on the filesystem, and the GUID associated with the asset in the Lumberyard asset system\. 
 
-D – Products  
+D - Products  
  The compiled asset products that are produced from the source asset\. Selecting the popout icon \( ![\[The popout icon, a white box containing an arrow originating at the lower left and pointing towards the upper right.\]](/images/userguide/asset_processor/popout-icon.png) \) next to a product name takes you to that asset within the **Product Assets** view\. 
 
-E – Outgoing source dependencies  
+E - Outgoing source dependencies  
  The list of source assets which require an output from this source asset to process\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
 
-F – Incoming source dependencies  
+F - Incoming source dependencies  
  The list of source assets which must have their jobs completed before the processing of this asset\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
 
 ### Product assets {#assets-tab-product}
 
 ![\[The Asset Processor with the Assets tab selected, and the Product Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/userguide/asset_processor/assets-product.png)
 
-A – Product asset list  
+A - Product asset list  
  The list of all product assets which match the current search filter\. When the search is empty, shows all of the available products\. 
 
-B – Asset information  
+B - Asset information  
  The information for the product asset\. Includes the asset GUID, the last time the product was generated, which type of job generated the asset, which platform the asset was producted for, and which source asset is the primary input for the product\. 
 
-C – Outgoing product dependencies  
+C - Outgoing product dependencies  
  The list of product assets which depend on this product\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
 
-D – Outgoing unmet path product dependencies  
+D - Outgoing unmet path product dependencies  
  The list of product assets which are hardcoded paths to be loaded by the Lumberyard runtime that this asset depends upon\. Because these products aren't necessarily generated by the asset processor, they're placed into a separate category of dependencies\. See [Hardcoded File Loads](/docs/userguide/assets/bundle/assets-resolving#asset-bundler-assets-resolving-hardcoded-file-loads) for information on resolving path product dependency issues\. 
 
-E – Incoming product dependencies  
+E - Incoming product dependencies  
  The list of product assets which this product depends on\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
 
-F – Missing dependency scanner  
+F - Missing dependency scanner  
  Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md) for more information\. 
 
 ## Logs {#logs-tab}

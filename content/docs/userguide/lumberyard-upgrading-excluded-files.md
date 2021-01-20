@@ -37,5 +37,5 @@ File types and folders in each game folder \(SamplesProject, MultiplayerProject,
   + `*.dds`
   + `*.caf`
   + `*.$animsettings`
-+ Editor backup files – `*.bak*`
-+ Pak files that are exported from level files in the editor – `*.pak`
++ Editor backup files - `*.bak*`
++ Pak files that are exported from level files in the editor - `*.pak`

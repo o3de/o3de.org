@@ -19,8 +19,8 @@ if (editContext)
 ```
 
 An `EditContext` consists of `ClassElements` and `DataElements`\.
-+ `ClassElements` – Specify attributes of the class that was reflected through the `SerializeContext::Class`\. You can use this to group common elements\.
-+ `DataElements` – Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`\.
++ `ClassElements` - Specify attributes of the class that was reflected through the `SerializeContext::Class`\. You can use this to group common elements\.
++ `DataElements` - Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`\.
 
 ## Attributes {#component-entity-system-reflection-edit-context-attributes}
 

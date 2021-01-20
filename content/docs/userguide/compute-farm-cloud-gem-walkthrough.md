@@ -68,16 +68,16 @@ The build script uses a configuration file to determine the contents of the AMI\
 1. Construct a command line for the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\Harness\ami_build\ami_build.py` script\.
 
    You must specify the following parameters:
-   + \-\-**ami** – Provide a name for your AMI\.
-   + \-\-**role** – Use the value for **InstanceRole** that you gathered earlier\. This is the IAM instance role that was created as part of your deployment\.
-   + \-\-**s3\-bucket** – Use the value that you gathered for **computefarm**\. This is name of the S3 bucket that was created in your gem's deployment\.
+   + \-\-**ami** - Provide a name for your AMI\.
+   + \-\-**role** - Use the value for **InstanceRole** that you gathered earlier\. This is the IAM instance role that was created as part of your deployment\.
+   + \-\-**s3\-bucket** - Use the value that you gathered for **computefarm**\. This is name of the S3 bucket that was created in your gem's deployment\.
 
    The following parameters are optional:
-   + **\-\-key\-pair\-name** – Provide a key pair name for debugging over RDP\. You can use a key pair to sign in to your Amazon EC2 instances through RDP to view their logs and debug them while they are running\. This parameter is optional, but highly recommended\. 
+   + **\-\-key\-pair\-name** - Provide a key pair name for debugging over RDP\. You can use a key pair to sign in to your Amazon EC2 instances through RDP to view their logs and debug them while they are running\. This parameter is optional, but highly recommended\. 
 
      For more information, see [Amazon EC2 Key Pairs and Windows Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-key-pairs.html) and [Connecting to Your Windows Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html) in the *Amazon EC2 User Guide for Windows Instances*\.
-   + **\-\-subnet\-id, \-\-security\-group\-id** – Provide these values to prevent auto\-creation every time you run this script\.
-   + **\-\-ami\-base** – Depending on the AWS region that you selected, you might have to specify an ID for the base AMI that you will use\.
+   + **\-\-subnet\-id, \-\-security\-group\-id** - Provide these values to prevent auto\-creation every time you run this script\.
+   + **\-\-ami\-base** - Depending on the AWS region that you selected, you might have to specify an ID for the base AMI that you will use\.
 
 **To obtain the ID for a base AMI**
 
@@ -172,14 +172,14 @@ To run the tasks, you will use the `main.py` script located in the `lumberyard_v
 The "decider" and "worker" versions of `main.py` use the same set of parameters, but the decider version also adds the `-rd` option to mark it as a decider\.
 
 1. Construct the command line for the scripts with the following parameters:
-   + **\-\-domain** – For this parameter, specify the **Workflow** value that you copied earlier and add the suffix `-domain`\. This parameter is the `Custom::SWF` domain that was generated in your resource group\.
-   + **\-\-role** – Specify the value that you gathered earlier for **InstanceRole**\.
+   + **\-\-domain** - For this parameter, specify the **Workflow** value that you copied earlier and add the suffix `-domain`\. This parameter is the `Custom::SWF` domain that was generated in your resource group\.
+   + **\-\-role** - Specify the value that you gathered earlier for **InstanceRole**\.
 **Note**  
 You can use the `--role` parameter only if you are not running in your root account\. It is better to create an IAM user with permissions to assume your role\. Use the same role to run your tests both locally and with your Amazon EC2 instances\.
-   + **\-\-log\-db** – Specify the value that you gathered earlier for **LogDB**\. This parameter represents the LogDB DynamoDB table that was generated in your resource group\.
-   + **\-\-config\-bucket** – Specify the value that you gathered earlier for **computefarm**\. This parameter represents the name of the Amazon S3 bucket in your resource group\.
-   + \-\-**task\-list** – This is the `TaskList.name` for the workflow that is specified in the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\AWS\resource-template.json` file\. For the test, you can use the default value of `dev-task-list` for this parameter\.
-   + **\-\-div\-task, \-\-merge\-task, \-\-build\-task** – These values are also from the part of your `resource-template.json` file that specifies the `ActivityTypes` for your workflow\. For the test, you can use the default values of `task-divide`, `task-merge`, and `task-build` for these parameters\.
+   + **\-\-log\-db** - Specify the value that you gathered earlier for **LogDB**\. This parameter represents the LogDB DynamoDB table that was generated in your resource group\.
+   + **\-\-config\-bucket** - Specify the value that you gathered earlier for **computefarm**\. This parameter represents the name of the Amazon S3 bucket in your resource group\.
+   + \-\-**task\-list** - This is the `TaskList.name` for the workflow that is specified in the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\AWS\resource-template.json` file\. For the test, you can use the default value of `dev-task-list` for this parameter\.
+   + **\-\-div\-task, \-\-merge\-task, \-\-build\-task** - These values are also from the part of your `resource-template.json` file that specifies the `ActivityTypes` for your workflow\. For the test, you can use the default values of `task-divide`, `task-merge`, and `task-build` for these parameters\.
 
 1. Open a command line window and run the decider task\. Ensure that you include the `-rd` option in the syntax\.
 

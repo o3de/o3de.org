@@ -44,9 +44,9 @@ Default value: `1`
 **Movement Method**  
 Sets the movement method to use when following a path\. This can be Transform, Physics, or Custom\.  
 Default value: `Transform`  
-+ **Transform** – Move the entity that this component is on using the Transform bus\. This method ignores all physics so the object may go through walls and terrain\.
-+ **Physics** – Move the entity using physics if the entity has a PhysX Rigid Body, PhysX Character Controller, Rigid Body Physics or Character Physics component\. If the entity does not have one of these valid physics components it will not move\.
-+ **Custom** – Provide path updates and let the game logic move the entity however they want\. This method is useful when you want to move an animated entity that uses root motion\. By listening to the `OnTraversalPathUpdate` notification, you can move your entity toward the next point along a path\. Once the entity gets within the arrival distance threshold another `OnTraversalPathUpdate` notification with the next path position will be provided and so on until the end of the path is reached\.
++ **Transform** - Move the entity that this component is on using the Transform bus\. This method ignores all physics so the object may go through walls and terrain\.
++ **Physics** - Move the entity using physics if the entity has a PhysX Rigid Body, PhysX Character Controller, Rigid Body Physics or Character Physics component\. If the entity does not have one of these valid physics components it will not move\.
++ **Custom** - Provide path updates and let the game logic move the entity however they want\. This method is useful when you want to move an animated entity that uses root motion\. By listening to the `OnTraversalPathUpdate` notification, you can move your entity toward the next point along a path\. Once the entity gets within the arrival distance threshold another `OnTraversalPathUpdate` notification with the next path position will be provided and so on until the end of the path is reached\.
 
 **Allow Vertical Navigation**  
 Set to true if you want to to allow the navigation agent to include the vertical velocity when navigating a path, or false if you just want the velocity to be constrained to the X and Y plane \(2D\)\. Vertical navigation can be used for flying entities or entities that move with the Transform method but must move vertically\. Enabling this property can also help prevent "stair stepping" for entities moving down ramps or steep terrain\.  
@@ -63,7 +63,7 @@ For more information about using the EBus interface, see [Working with the Event
 Finds a requested path configuration\.
 
 **Parameters**  
-`request` – Allows the issuer of the request to override one, all, or none of the pathfinding configuration defaults for this entity\.
+`request` - Allows the issuer of the request to override one, all, or none of the pathfinding configuration defaults for this entity\.
 
 **Return**  
 A unique identifier for this pathfinding request\.
@@ -76,7 +76,7 @@ No
 Creates a pathfinding request to navigate toward the specified entity\.
 
 **Parameters**  
-`EntityId` – ID of the entity toward which you want to navigate\.
+`EntityId` - ID of the entity toward which you want to navigate\.
 
 **Return**  
 A unique identifier for the pathfinding request\.
@@ -89,7 +89,7 @@ Yes
 Creates a pathfinding request to navigate towards the specified world position\. Note that while this may seem like the obvious simple choice for pathing, it is often more useful to use FindPathToEntity with a dummy entity because then the pathing will automatically update if you move the dummy entity to a new location before pathing is complete\.
 
 **Parameters**  
-`Destination` – World position you want to navigate to\.
+`Destination` - World position you want to navigate to\.
 
 **Return**  
 A unique identifier for the pathfinding request\.
@@ -102,7 +102,7 @@ Yes
 Stops all pathfinding operations for the provided `requestId`\. Use the ID to ensure that the request you want to cancel is the request that is currently processing\. If the specified `requestId` is different from the ID of the current request, then the Stop command is ignored\.
 
 **Parameters**  
-`requestId` – ID of the request to cancel\.
+`requestId` - ID of the request to cancel\.
 
 **Return**  
 None
@@ -128,7 +128,7 @@ Yes
 Updates the AI Agent's speed\.
 
 **Parameters**  
-`agentSpeed` – Specifies the new agent speed as a float\.
+`agentSpeed` - Specifies the new agent speed as a float\.
 
 **Return**  
 None
@@ -154,7 +154,7 @@ Yes
 Updates the AI Agent's movement method\.
 
 **Parameters**  
-`movementMethod` – Specifies the new agent movement method \(Transform, Physics or Custom\)\.
+`movementMethod` - Specifies the new agent movement method \(Transform, Physics or Custom\)\.
 
 **Return**  
 None
@@ -173,7 +173,7 @@ For more information about using the EBus interface, see [Working with the Event
 Indicates that the pathfinding request has been submitted to the navigation system\.
 
 **Parameters**  
-`requestId` – ID of the request for which the path is being searched\.
+`requestId` - ID of the request for which the path is being searched\.
 
 **Return**  
 None
@@ -186,8 +186,8 @@ Yes
 Indicates that a path has been found for the indicated request\.
 
 **Parameters**  
-`requestID` – ID of the request for which the path has been found\.  
-`currentPath` – The path calculated by the pathfinder\.
+`requestID` - ID of the request for which the path has been found\.  
+`currentPath` - The path calculated by the pathfinder\.
 
 **Return**  
 Returns a boolean value indicating whether this path is to be traversed\.
@@ -200,7 +200,7 @@ No
 Indicates that traversal for the indicated request has started\.
 
 **Parameters**  
-`requestId` – ID of the request for which traversal has started\.
+`requestId` - ID of the request for which traversal has started\.
 
 **Return**  
 None
@@ -213,8 +213,8 @@ Yes
 Indicates that traversal for the indicated request is in progress\.
 
 **Parameters**  
-`requestId` – ID of the request for which traversal is in progress\.  
-`distanceRemaining` – Remaining distance in this path\.
+`requestId` - ID of the request for which traversal is in progress\.  
+`distanceRemaining` - Remaining distance in this path\.
 
 **Return**  
 None
@@ -227,9 +227,9 @@ Yes
 Indicates that the path for the traversal has updated\. If the `nextPathPosition` and `inflectionPosition` are equal, they represent the end of the path\.
 
 **Parameters**  
-`requestId` – ID of the request for which traversal is in progress\.  
-`nextPathPosition` – Furthest point on the path we can move to without colliding with anything\.  
-`inflectionPosition` – Next point on the path beyond `nextPathPosition` that deviates from a straight\-line path\.
+`requestId` - ID of the request for which traversal is in progress\.  
+`nextPathPosition` - Furthest point on the path we can move to without colliding with anything\.  
+`inflectionPosition` - Next point on the path beyond `nextPathPosition` that deviates from a straight\-line path\.
 
 **Return**  
 None
@@ -242,7 +242,7 @@ Yes
 Indicates that traversal for the indicated request completed successfully\.
 
 **Parameters**  
-`requestId` – ID of the request for which traversal has completed\.
+`requestId` - ID of the request for which traversal has completed\.
 
 **Return**  
 None
@@ -255,7 +255,7 @@ Yes
 Indicates that traversal for the indicated request was canceled before succesful completion\. A path request may be cancelled if no path could be found or if the request was stopped by the game\.
 
 **Parameters**  
-`requestId` – ID of the request for which traversal was canceled\.
+`requestId` - ID of the request for which traversal was canceled\.
 
 **Return**  
 None
@@ -267,5 +267,5 @@ Yes
 
 **ai\_DrawPathFollower**  
 Enables PathFollower debug drawing, displaying agent paths and safe follow target\.  
-`0` – Off  
-`1` – On
+`0` - Off  
+`1` - On

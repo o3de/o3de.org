@@ -135,7 +135,7 @@ Returns a copy of the object at the specified index\.
 Phone numbers must follow these formatting rules:
 + The phone number must start with a plus \(\+\) sign, followed immediately by the country code\.
 + The phone number can contain only the \+ sign and digits\.
-+ You must remove characters such as parentheses, spaces, or dashes from the phone number before submitting the value\. For example, a United States–based phone number must follow the format `+14325551212`\.
++ You must remove characters such as parentheses, spaces, or dashes from the phone number before submitting the value\. For example, a United States-based phone number must follow the format `+14325551212`\.
 
 ## Resource Group {#cloud-canvas-cloud-gem-player-account-details-resource-group}
 

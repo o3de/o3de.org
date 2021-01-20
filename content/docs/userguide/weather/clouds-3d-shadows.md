@@ -29,8 +29,8 @@ title: Adding 3D Cloud Shadows
 1. Drag the shadow to the desired location in your level\. 
 
 1. Under **CloudShadows**, adjust the following parameters:
-   + **Cloud shadow speed** – Sets the speed that shadows move across the terrain\.
-   + **Cloud shadow tiling** – Sets the tiling multiplier of the shadow texture\. 
-   + **Cloud shadow brightness** – Sets the brightness level of the shadow\.
-   + **Cloud shadow invert** – Enables inverting of the cloud shadow texture\.   
+   + **Cloud shadow speed** - Sets the speed that shadows move across the terrain\.
+   + **Cloud shadow tiling** - Sets the tiling multiplier of the shadow texture\. 
+   + **Cloud shadow brightness** - Sets the brightness level of the shadow\.
+   + **Cloud shadow invert** - Enables inverting of the cloud shadow texture\.   
 ![\[Example CloudShadows parameters to create shadows for clouds.\]](/images/userguide/weather/weather-clouds-3d-shadows-2.png)

@@ -7,8 +7,8 @@ title: Waf Projects File (project.json)
 The `project.json` file \(located in each game project directory\) is used to store game project\-specific data\. The **enabled\_game\_projects** settings \(`user_settings.options`\) and the **\-\-enable\-game\-projects** build parameter use the project names defined in this file\.
 
 The `project.json` file is structured as follows:
-+ **First level** – Represents the project based on its name
-+ **Second level** – Presents attributes that you can set for each game project
++ **First level** - Represents the project based on its name
++ **Second level** - Presents attributes that you can set for each game project
 
 The following is an example `project.json` file:
 

@@ -9,11 +9,11 @@ The Compute Farm cloud gem is a tool for large\-scale divide and conquer tasks t
 
 The Compute Farm cloud gem has the following three major aspects: 
 
-1. **Harness** – The brain of the cloud gem that orchestrates the task\. The harness is a Python script that runs on every Amazon EC2 instance\. The script continuously polls the [Amazon Simple Workflow Service \(SWF\)](https://aws.amazon.com/swf/) for decisions that need to be made and activities that must be run\. You can customize the harness for your own purposes\.
+1. **Harness** - The brain of the cloud gem that orchestrates the task\. The harness is a Python script that runs on every Amazon EC2 instance\. The script continuously polls the [Amazon Simple Workflow Service \(SWF\)](https://aws.amazon.com/swf/) for decisions that need to be made and activities that must be run\. You can customize the harness for your own purposes\.
 
-1. **[Amazon Machine Image \(AMI\)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)** – An image of the machine to do the task\. The AMI must be prepared with all the necessary software to perform the task as well as a copy of the harness\. The Compute Farm cloud gem includes a script to build the AMI\.
+1. **[Amazon Machine Image \(AMI\)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)** - An image of the machine to do the task\. The AMI must be prepared with all the necessary software to perform the task as well as a copy of the harness\. The Compute Farm cloud gem includes a script to build the AMI\.
 
-1. **Launch Configuration and Auto Scaling Group** – After the AMI is created, you must create an [Amazon EC2 Launch Configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html) and an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) to control the fleet of Amazon EC2 instances that will run the AMI\. This is done in the Compute Farm Cloud Gem Portal; you set the Auto Scaling Group to the desired number of Amazon EC2 instances\.
+1. **Launch Configuration and Auto Scaling Group** - After the AMI is created, you must create an [Amazon EC2 Launch Configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html) and an [Amazon EC2 Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) to control the fleet of Amazon EC2 instances that will run the AMI\. This is done in the Compute Farm Cloud Gem Portal; you set the Auto Scaling Group to the desired number of Amazon EC2 instances\.
 
 ## Workflow Summary {#cloud-canvas-cloud-gem-compute-farm-workflow-summary}
 

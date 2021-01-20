@@ -59,15 +59,15 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.GetUser Callback
 
 **UserInfoValue \- UserInfo**  
-Value – The user information, which includes the following data:  
-+ ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-+ Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-+ CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-+ DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-+ Logo – The URL for the user's logo, if provided\.
-+ Name – The user's name, which returns in the format `AZStd::string`\.
-+ ProfileBanner – The URL for the user's profile banner, if provided\.
-+ ProfileBannerBackgroundColor – The URL for the user's profile banner background color, if provided\.
-+ Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\. 
-+ UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The user information, which includes the following data:  
++ ID - The Twitch user ID, which returns in the format `AZStd::string`\.
++ Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
++ CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
++ DisplayName - The user's display name, which returns in the format `AZStd::string`\.
++ Logo - The URL for the user's logo, if provided\.
++ Name - The user's name, which returns in the format `AZStd::string`\.
++ ProfileBanner - The URL for the user's profile banner, if provided\.
++ ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
++ Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\. 
++ UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

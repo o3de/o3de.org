@@ -2,7 +2,7 @@
 description: ' Use the 3DSMax fur previsualization in &ALYlong;. '
 title: 3DSMax &endash; Fur Previsualization
 ---
-# 3DSMax – Fur Previsualization {#shader-ref-fur-previz3dsmax}
+# 3DSMax - Fur Previsualization {#shader-ref-fur-previz3dsmax}
 
 ![\[Example of using 3DSMax fur previsualization.\]](/images/userguide/shaders/shader-ref-fur-21.png)
 

@@ -12,9 +12,9 @@ You can use the **Checkbox** component to make an element behave like a check bo
 To see in\-game examples of completed canvases with the **Checkbox** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **CheckBox**\. You can view examples of color targets, check box interaction areas, and on and off elements\. Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\CheckBox` directory\. You can open the following canvases:
-+ `Area.uicanvas` – Examples of different check box interaction areas
-+ `ColorTargets.uicanvas` – Examples of different color targets when interacting with the check box
-+ `OnOff.uicanvas` – Examples of different check box on and off elements
++ `Area.uicanvas` - Examples of different check box interaction areas
++ `ColorTargets.uicanvas` - Examples of different color targets when interacting with the check box
++ `OnOff.uicanvas` - Examples of different check box on and off elements
 
 You can add a prebuilt **Checkbox** element from the slice library\. When you do this, a basic check box with the text string "Checkbox" and a check image for the box is automatically created in your **Hierarchy** pane\.
 

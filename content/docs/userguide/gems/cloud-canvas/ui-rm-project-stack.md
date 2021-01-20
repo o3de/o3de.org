@@ -19,17 +19,17 @@ The **Project stack status** table shows the status of the AWS CloudFormation st
 
 This table has the following columns: 
 
-**Pending** – Indicates when changes have been made to the local stack templates or code but not yet uploaded to AWS\. Pausing your mouse pointer on a value in this column displays the reason why the change is pending\. Following are the possible values: 
-+ **Create** – The stack is defined locally but has not been created in AWS\.
-+ **Update** – The stack's template and/or Lambda function code has been changed locally but not yet uploaded to AWS\.
-+ **Delete** – The stack has been removed from the local definitions but has not been deleted in AWS\. If you are using a source control system, this status can indicate that a new stack has been added to the project\. However, your local copy of the source control is out of date and doesn't contain the definition for the new stack\.
-+  **\-\-** – No change is pending\. 
+**Pending** - Indicates when changes have been made to the local stack templates or code but not yet uploaded to AWS\. Pausing your mouse pointer on a value in this column displays the reason why the change is pending\. Following are the possible values: 
++ **Create** - The stack is defined locally but has not been created in AWS\.
++ **Update** - The stack's template and/or Lambda function code has been changed locally but not yet uploaded to AWS\.
++ **Delete** - The stack has been removed from the local definitions but has not been deleted in AWS\. If you are using a source control system, this status can indicate that a new stack has been added to the project\. However, your local copy of the source control is out of date and doesn't contain the definition for the new stack\.
++  **\-\-** - No change is pending\. 
 
-**Status** – The status of the AWS CloudFormation stack\. See [Understanding Resource Status Descriptions](/docs/userguide/gems/cloud-canvas/ui-rm-resource-status-descriptions.md) for a description of the values this column can have\. To see additional status information, pause your pointer on the status indicator\. 
+**Status** - The status of the AWS CloudFormation stack\. See [Understanding Resource Status Descriptions](/docs/userguide/gems/cloud-canvas/ui-rm-resource-status-descriptions.md) for a description of the values this column can have\. To see additional status information, pause your pointer on the status indicator\. 
 
- **Created** – The time the stack was created\. 
+ **Created** - The time the stack was created\. 
 
- **Updated** – The time the stack status was updated\. 
+ **Updated** - The time the stack status was updated\. 
 
  **ID** \- A truncated version of the AWS ID for the stack\. To see the full ID, pause your pointer on the truncated ID\. 
 
@@ -49,18 +49,18 @@ The **Stack resources** table shows the status of the resources that your projec
 
 This table has the following columns: 
 
-**Pending** – Indicates that changes have been made locally but not yet uploaded to AWS\. Pausing your mouse on a value in this column displays the reason why the change is pending\. Following are the possible values: 
-+ **Create** – The resource is defined locally but has not been created in AWS\.
-+ **Update** – The resource has been changed locally but not yet uploaded to AWS\.
-+ **Delete** – The resource has been removed from the local definitions but has not been deleted on AWS\. If you are using a source control system, this status can indicate that a new resource has been added to the project\. However, your local copy of the source control is out of date and doesn't contain the definition for the new resource\.
-+  **\-\-** – No change is pending\. 
+**Pending** - Indicates that changes have been made locally but not yet uploaded to AWS\. Pausing your mouse on a value in this column displays the reason why the change is pending\. Following are the possible values: 
++ **Create** - The resource is defined locally but has not been created in AWS\.
++ **Update** - The resource has been changed locally but not yet uploaded to AWS\.
++ **Delete** - The resource has been removed from the local definitions but has not been deleted on AWS\. If you are using a source control system, this status can indicate that a new resource has been added to the project\. However, your local copy of the source control is out of date and doesn't contain the definition for the new resource\.
++  **\-\-** - No change is pending\. 
 
- **Resource Name** – The logical name of the resource\. 
+ **Resource Name** - The logical name of the resource\. 
 
- **Type** – The type of the resource \(for example, a Lambda function, Amazon S3 bucket, or a custom resource\)\. 
+ **Type** - The type of the resource \(for example, a Lambda function, Amazon S3 bucket, or a custom resource\)\. 
 
- **Status** – The current condition of the resource\. For a description of the possible status values, see [Understanding Resource Status Descriptions](/docs/userguide/gems/cloud-canvas/ui-rm-resource-status-descriptions.md)\. To see additional status information, pause your pointer on the status\. 
+ **Status** - The current condition of the resource\. For a description of the possible status values, see [Understanding Resource Status Descriptions](/docs/userguide/gems/cloud-canvas/ui-rm-resource-status-descriptions.md)\. To see additional status information, pause your pointer on the status\. 
 
- **Timestamp** – The time of the most recent change\. 
+ **Timestamp** - The time of the most recent change\. 
 
  **ID** \- A truncated version of the AWS ID for the stack\. To see the full ID, pause your pointer on the truncated ID\. 

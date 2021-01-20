@@ -14,6 +14,6 @@ title: Setting Displacement Mapping Parameters
 
 1. Under **Shader Params**, adjust the values of the following parameters for the desired effect\.
 
-   1. **Displacement bias** – Moves the plane where the displacement is applied\. This reduces gaps in meshes, and prevents objects from displacing other objects that are placed above them\.
+   1. **Displacement bias** - Moves the plane where the displacement is applied\. This reduces gaps in meshes, and prevents objects from displacing other objects that are placed above them\.
 
-   1. **Displacement height scale** – Changes the overall height of the displacement\.
+   1. **Displacement height scale** - Changes the overall height of the displacement\.

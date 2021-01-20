@@ -11,10 +11,10 @@ The `thirdpartysdks` module manages the installation states of third party SDKs\
 
 The `thirdpartysdks` module has dependencies on the following:
 + `Engines` module
-+ [`Capabilities`](/docs/userguide/lmbr-exe-capabilities.md) module – Downloads only the SDKs that are required based on the user\-enabled capabilities\.
++ [`Capabilities`](/docs/userguide/lmbr-exe-capabilities.md) module - Downloads only the SDKs that are required based on the user\-enabled capabilities\.
 + [`Packages`](/docs/userguide/lmbr-exe-packages.md) module
-+ `SetupAssistantUserPreferences.ini` – Path specified for the `SDKSearch3rdParty` property\.
-+ `SetupAssistantConfig.json` – Parses the SDK required for the engine 
++ `SetupAssistantUserPreferences.ini` - Path specified for the `SDKSearch3rdParty` property\.
++ `SetupAssistantConfig.json` - Parses the SDK required for the engine 
 
 Use the following commands to manage Lumberyard third party SDKs\.
 

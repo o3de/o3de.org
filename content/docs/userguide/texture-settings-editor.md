@@ -76,13 +76,13 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
 
 1. In the Texture Settings Editor, you can view the following:
 
-   1. **[Preview](#texture-editor-preview)** – Preview of the processed image with the current settings\.
+   1. **[Preview](#texture-editor-preview)** - Preview of the processed image with the current settings\.
 
-   1. **[Texture Presets](#texture-presets)** – List of presets to choose\.
+   1. **[Texture Presets](#texture-presets)** - List of presets to choose\.
 
-   1. **[Platform](#texture-platform-resolution)** – Specify the different resolution adjustments on different platforms\.
+   1. **[Platform](#texture-platform-resolution)** - Specify the different resolution adjustments on different platforms\.
 
-   1. **[Mipmap Settings](#texture-mipmap-settings)** – Allows the adjustment of mipmap generation\.
+   1. **[Mipmap Settings](#texture-mipmap-settings)** - Allows the adjustment of mipmap generation\.
 
 1. When finished, click **Apply** to save the current properties\. This exports a setting file named `imageName.imagesettings` next to the source file\.
 **Note**  
@@ -96,31 +96,31 @@ In the preview panel, you can do the following:
 ![\[Open the texture file in the Texture Settings Editor.\]](/images/shared/shared-texture-pipeline-editor-4.png)
 
 1. Click the drop\-down menu to preview the texture in the following channels:
-   + **RGB** – Displays the RGB color channels \(default\)\.
-   + **R** – Previews the red channel in grayscale\.
-   + **G** – Previews the green channel in grayscale\.
-   + **Alpha** – Previews the alpha channel in grayscale\.
-   + **RGBA** – Previews the alpha blended with the background\.
+   + **RGB** - Displays the RGB color channels \(default\)\.
+   + **R** - Previews the red channel in grayscale\.
+   + **G** - Previews the green channel in grayscale\.
+   + **Alpha** - Previews the alpha channel in grayscale\.
+   + **RGBA** - Previews the alpha blended with the background\.
 
-1. **Preview tiled** – Preview the texture in a 2x2 tiled layout\. By default, the texture appears in a fixed size\.
+1. **Preview tiled** - Preview the texture in a 2x2 tiled layout\. By default, the texture appears in a fixed size\.
 
 1. Press and hold the following shortcuts to change the preview for the texture:
-   + **Shift** – Changes the preview to **RGBA** mode\.
-   + **Alt** – Changes the preview to **Alpha** mode\.
-   + **Space** – Opens a pop up window that previews the texture in its actual output size\.
+   + **Shift** - Changes the preview to **RGBA** mode\.
+   + **Alt** - Changes the preview to **Alpha** mode\.
+   + **Space** - Opens a pop up window that previews the texture in its actual output size\.
 
 1. Click the arrow icons to view the different mipmap previews\. Mip `0` is the original output image\.
 
 1. Click the refresh icon to refresh the preview\. You can click the drop\-down menu to specify the following:
-   + **Always refresh preview** – Refresh automatically when you make a change\.
-   + **Press to refresh preview** – Manually refresh the preview\.
+   + **Always refresh preview** - Refresh automatically when you make a change\.
+   + **Press to refresh preview** - Manually refresh the preview\.
 
 ## Texture Presets {#texture-presets}
 
  In the **Texture presets**, you can do the following:
 
 ![\[Set the texture presets for the file in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-5.png)
-+ **Active preset** – Click the drop\-down menu to view the presets that you can assign to a texture\. The texture using the preset values automatically appears in the preview panel\. Texture properties are also updated\.
++ **Active preset** - Click the drop\-down menu to view the presets that you can assign to a texture\. The texture using the preset values automatically appears in the preview panel\. Texture properties are also updated\.
 **Note**  
 The Texture Settings Editor supports different presets that specify the options that are applied when an image asset is compiled\. When you open the Texture Settings Editor, it loads the main settings and presets from the game project folder at the following file:  
 `lumberyard_version\dev\game_project\Config\ImageBuilder\ImageBuilderPresets.settings`  
@@ -129,8 +129,8 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 + Click the reset icon to reset all texture properties to the default values of the current preset\.
 + Click the info icon to display a pop\-up window for the current settings\.  
 ![\[View the preset info for the texture in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-6.png)
-+ **Active file conventions** – Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
-+ **Suppress spec reduction** – By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
++ **Active file conventions** - Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
++ **Suppress spec reduction** - By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
 
   For more information, see [Editor Settings](/docs/userguide/editor/menus#lumberyard-editor-menus-config-spec)\.
 

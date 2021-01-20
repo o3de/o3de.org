@@ -27,10 +27,10 @@ physx_Debug 1
 ```
 
 You can specify the following values:
-+ `1` – Enable debug visualizations\. By default, this value enables the collision shapes and edges for your PhysX entities\. 
-+ `2` – Enables all configuration options\. This enables all the available visualization options\. 
-+ `3` – Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider#physics-asset-colliders)\. 
-+ `0` – Disables debug visualizations\.
++ `1` - Enable debug visualizations\. By default, this value enables the collision shapes and edges for your PhysX entities\. 
++ `2` - Enables all configuration options\. This enables all the available visualization options\. 
++ `3` - Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider#physics-asset-colliders)\. 
++ `0` - Disables debug visualizations\.
 
 Toggles a visual culling box frame\.
 

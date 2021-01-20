@@ -5,14 +5,14 @@ title: Dynamic Vegetation Concepts
 # Dynamic Vegetation Concepts {#dynamic-vegetation-concepts}
 
 The dynamic vegetation system operates around the following ideas:
-+ **What** – To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files\. If you don't have your own, you can use Lumberyard's vegetation assets, which are in the Starter Game project\.
-+ **Where** – You can create small patches of flowers or populate a massive area with convincing varieties of plants and objects\. To do this, use local area clusters in the foreground layer or coverage areas in the background layers, respectively\.
++ **What** - To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files\. If you don't have your own, you can use Lumberyard's vegetation assets, which are in the Starter Game project\.
++ **Where** - You can create small patches of flowers or populate a massive area with convincing varieties of plants and objects\. To do this, use local area clusters in the foreground layer or coverage areas in the background layers, respectively\.
 
   Using vegetation filters, you can set up rules that specify the surface angles, altitudes, distances from objects, and surface types where vegetation grows\. 
 
   Vegetation blockers block out areas of vegetation\. For example, to create a border free of vegetation around a house, use a vegetation blocker that is slightly larger than the base of the house\.
-+ **How** – Pairing vegetation modifiers with an appropriate gradient makes vegetation appear random in position, scale, rotation, and alignment to the slope\. Gradients also customize how frequently each vegetation asset appears when you use multiple assets for one area\.
-+ **If** – You can use surface tag emitters to tag certain types of surfaces, such as roads, rivers, oceans, and meshes\. The dynamic vegetation system reads the tags to recognize these surfaces and acts on a set of rules that you create in the form of inclusion and exclusion lists\. For example, to make water lilies to appear on all water surfaces, add the water volume surface tag to the inclusion list\. To ensure that they never appear on roads, add the road surface tag to the exclusion list\.
++ **How** - Pairing vegetation modifiers with an appropriate gradient makes vegetation appear random in position, scale, rotation, and alignment to the slope\. Gradients also customize how frequently each vegetation asset appears when you use multiple assets for one area\.
++ **If** - You can use surface tag emitters to tag certain types of surfaces, such as roads, rivers, oceans, and meshes\. The dynamic vegetation system reads the tags to recognize these surfaces and acts on a set of rules that you create in the form of inclusion and exclusion lists\. For example, to make water lilies to appear on all water surfaces, add the water volume surface tag to the inclusion list\. To ensure that they never appear on roads, add the road surface tag to the exclusion list\.
 
 **Example**  
 The following image shows grass excluded from the river and road surfaces, and pebble clusters included only on road surfaces\.  

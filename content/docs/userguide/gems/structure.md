@@ -19,7 +19,7 @@ Each gem package can contain the following:
 + [Gem Icon File](#gem-icon-file)
 + [Gem JSON File](#gem-json-file)
 + [Gem Code](#gem-code-directory)
-+ [Gem List File – gems\.json](#gems-system-gem-list-file)
++ [Gem List File - gems\.json](#gems-system-gem-list-file)
 + [Accessing Gems in Code](#accessing-gems-in-code)
 + [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)
 
@@ -74,9 +74,9 @@ This example file contains metadata for the gem and the following properties\.
 
 **GemFormatVersion**  
 Version number that identifies how a gem is built \(folder structure and semantics\) and determines compatibility with specific versions of Lumberyard\. The version number is set automatically when you create a gem in the Project Configurator\.  
-+ Lumberyard 1\.11 and later – Gems have a default value of `4` for the `GemFormatVersion` field\.
-+ Lumberyard 1\.5 to 1\.10 – Gems have a default value of `3` for the `GemFormatVersion` field\. The gems that are included with Lumberyard are AZ modules\.
-+ Lumberyard 1\.4 and earlier – Gems have a default value of `2` for the `GemFormatVersion` field\.
++ Lumberyard 1\.11 and later - Gems have a default value of `4` for the `GemFormatVersion` field\.
++ Lumberyard 1\.5 to 1\.10 - Gems have a default value of `3` for the `GemFormatVersion` field\. The gems that are included with Lumberyard are AZ modules\.
++ Lumberyard 1\.4 and earlier - Gems have a default value of `2` for the `GemFormatVersion` field\.
 
 **Uuid**  
 Unique ID that identifies the gem\.
@@ -111,9 +111,9 @@ Path from the gem directory to the display icon\. The icon can be a `.jpg`, `.pn
 
 **Modules**  
 Code product that the gem produces\. Each module entry can have the following fields:  
-+ **Type** – Type of module that is defined\. See [Module Types](#gem-module-types)\.
-+ **Name** – Name of the module\. You use this name when you refer to the module, and in the module's output file name\.
-+ **Extends** – Module to use as a base\. The value can be only `"GameModule"` and you can use this field only for the following module types: 
++ **Type** - Type of module that is defined\. See [Module Types](#gem-module-types)\.
++ **Name** - Name of the module\. You use this name when you refer to the module, and in the module's output file name\.
++ **Extends** - Module to use as a base\. The value can be only `"GameModule"` and you can use this field only for the following module types: 
   + `EditorModule`
   + `Builder`
 
@@ -142,9 +142,9 @@ Defines whether the gem produces a module that is loaded by Lumberyard Editor\.
 
 **LinkType**  
 Defines how other gems and game projects should link to this gem:  
-+ `Static` – Does not produce a `.dll` file and does not link\.
-+ `Dynamic` – Produces a `.dll` file and links all dependent projects against the `.dll` file using an import library\.
-+ `NoCode` – Does not produce a `.dll` or `.lib` file\. The gem contains assets but not code\. You can add a gem with the `NoCode` value to a game project without rebuilding\.
++ `Static` - Does not produce a `.dll` file and does not link\.
++ `Dynamic` - Produces a `.dll` file and links all dependent projects against the `.dll` file using an import library\.
++ `NoCode` - Does not produce a `.dll` or `.lib` file\. The gem contains assets but not code\. You can add a gem with the `NoCode` value to a game project without rebuilding\.
 
 ### Module Types {#gem-module-types}
 
@@ -184,17 +184,17 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 
 **Source**  
 Directory that contains the following generated files:  
-+ `StdAfx.h` – Includes frequently required files\.
-+ `StdAfx.cpp` – Includes the `StdAfx.h` file\.
-+ `GemNameSystemComponent.h` – Contains the definition of a system component that handles calls to `GemNameRequestBus`\. 
-+ `GemNameSystemComponent.cpp` – Contains the implementation of the `GemNameSystemComponent` class\. 
-+ `GemNameModule.cpp` – Contains the `AZ::Module` class definition, which is used to register components and do additional component reflection\. 
++ `StdAfx.h` - Includes frequently required files\.
++ `StdAfx.cpp` - Includes the `StdAfx.h` file\.
++ `GemNameSystemComponent.h` - Contains the definition of a system component that handles calls to `GemNameRequestBus`\. 
++ `GemNameSystemComponent.cpp` - Contains the implementation of the `GemNameSystemComponent` class\. 
++ `GemNameModule.cpp` - Contains the `AZ::Module` class definition, which is used to register components and do additional component reflection\. 
 **Note**  
 This class can be made to extend `CryHooksModule` \(in `IGem.h`\) instead to have `gEnv` attached automatically\. 
 
 **Tests **  
 Directory that contains unit tests for your gem\. Add all files in this directory to the `gemname_tests.waf_files`\.   
-`GemNameTest.cpp` – Contains an example for writing gtests for your gem, which are unit test files for your gem\.
+`GemNameTest.cpp` - Contains an example for writing gtests for your gem, which are unit test files for your gem\.
 
 ### Wscript and Modules {#wscript-and-modules}
 
@@ -234,7 +234,7 @@ Overriding this value is not recommended\.
 
 For more information about `waf` and `wscript` files, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
-## Gem List File – gems\.json {#gems-system-gem-list-file}
+## Gem List File - gems\.json {#gems-system-gem-list-file}
 
 You can find the `gems.json` list file at the root of each project directory\. For example, for the Samples Project, the `gems.json` file is located in the `lumberyard_version\dev\SamplesProject` directory\. This example file lists all gems used in the game project\. 
 

@@ -17,11 +17,11 @@ Starting in Lumberyard version 1\.18, you can use **Animation Editor** reference
 ## Benefits {#character-animation-editor-anim-graph-referencing-benefits}
 
 Referencing anim graphs provide the following benefits:
-+ **Sharing anim graph pieces or snippets**– You can create anim graph pieces or snippets that can be shared in multiple other anim graphs\. For example, you might build a locomotion anim graph part to share across all characters while individualizing the rest\. When you use referencing, you don't need to copy and paste the same anim graph every time that you use it\.
-+ **Ease of maintenance** – You can maintain a shared anim graph in one place\. If you copy and paste anim graphs, each copy must be maintained separately\.
++ **Sharing anim graph pieces or snippets**- You can create anim graph pieces or snippets that can be shared in multiple other anim graphs\. For example, you might build a locomotion anim graph part to share across all characters while individualizing the rest\. When you use referencing, you don't need to copy and paste the same anim graph every time that you use it\.
++ **Ease of maintenance** - You can maintain a shared anim graph in one place\. If you copy and paste anim graphs, each copy must be maintained separately\.
 **Note**  
 Because a change in a referenced anim graph can break the behavior of another, it is important to keep track of your referencing hierarchy\. For more information, see [Best Practices for Using Referenced Anim Graphs](#character-animation-editor-anim-graph-reference-best-practices)\.
-+ **Greater ease of collaboration** – By clearly separating anim graphs, multiple people can develop animation for different characters simultaneously\.
++ **Greater ease of collaboration** - By clearly separating anim graphs, multiple people can develop animation for different characters simultaneously\.
 
 ## Using External Anim Graphs {#character-animation-editor-using-external-anim-graphs}
 
@@ -75,10 +75,10 @@ This section shows you how to create reference nodes in the **Animation Editor**
 ## Best Practices for Using Referenced Anim Graphs {#character-animation-editor-anim-graph-reference-best-practices}
 
 See the following best practices for using referenced anim graphs:
-+ **Keep track of your referencing hierarchy** – One way to keep track of your referencing hierarchy is by maintaining a chart of your anim graphs and their references\. Such a chart can help developers and testers know which anim graphs are affected by changes that are made\. A chart can also help you know if an anim graph that you are working on is referenced by another anim graph\.
-+ **Directory hierarchy** – Make your anim graph directory and file hierarchy the same as your referencing hierarchy\. For example, anim graphs in directories higher up in the hierarchy use or reference anim graph assets deeper down the hierarchy, but not vice versa\.
-+ **Minimize parameter count** – Keep the number of parameters in your referenced anim graphs minimal\. Using many parameters increases complexity\.
-+ **Manage motion sets effectively** – To manage motion sets when you use referencing anim graphs, consider the following options:
++ **Keep track of your referencing hierarchy** - One way to keep track of your referencing hierarchy is by maintaining a chart of your anim graphs and their references\. Such a chart can help developers and testers know which anim graphs are affected by changes that are made\. A chart can also help you know if an anim graph that you are working on is referenced by another anim graph\.
++ **Directory hierarchy** - Make your anim graph directory and file hierarchy the same as your referencing hierarchy\. For example, anim graphs in directories higher up in the hierarchy use or reference anim graph assets deeper down the hierarchy, but not vice versa\.
++ **Minimize parameter count** - Keep the number of parameters in your referenced anim graphs minimal\. Using many parameters increases complexity\.
++ **Manage motion sets effectively** - To manage motion sets when you use referencing anim graphs, consider the following options:
   + Manage separate motion sets\. Each motion set contains the motions for one anim graph\.
   + Create one large motion set for a leader anim graph\. This motion set would hold motions for the leader anim graph and for all motions used in any of the referenced anim graphs\.
 **Note**  
@@ -87,5 +87,5 @@ Both options allow the referenced anim graph to be tested by itself\.
 ### Tips for Working with Referenced Anim Graphs {#character-animation-editor-anim-graph-reference-tips}
 
 Avoid the following practices when you work with referenced anim graphs:
-+ **Changing an anim graph that is referenced by another** – Changing an anim graph that is referenced by another anim graph can break its behavior\. For example, if you remove a parameter from the referenced anim graph that another anim graph uses, the parameter reverts to its default value\. This can cause unexpected behavior\.
-+ **Renaming, moving, or deleting an anim graph** – When you rename, move, or delete an anim graph, its asset ID changes\. Therefore, all anim graphs that refer to the renamed, moved, or deleted anim graph must also be updated\. Having a system that keeps track of your referencing hierarchy \(as mentioned in [Best Practices](#character-animation-editor-anim-graph-reference-best-practices)\) makes it easy to know which anim graphs are affected and which to update\.
++ **Changing an anim graph that is referenced by another** - Changing an anim graph that is referenced by another anim graph can break its behavior\. For example, if you remove a parameter from the referenced anim graph that another anim graph uses, the parameter reverts to its default value\. This can cause unexpected behavior\.
++ **Renaming, moving, or deleting an anim graph** - When you rename, move, or delete an anim graph, its asset ID changes\. Therefore, all anim graphs that refer to the renamed, moved, or deleted anim graph must also be updated\. Having a system that keeps track of your referencing hierarchy \(as mentioned in [Best Practices](#character-animation-editor-anim-graph-reference-best-practices)\) makes it easy to know which anim graphs are affected and which to update\.

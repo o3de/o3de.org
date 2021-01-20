@@ -24,7 +24,7 @@ To test your server setup, complete the following tasks\.
 +  Allow inbound TCP connections on Linux on port `4600`, and inbound UDP connections on port `33435`\. If you're using an Amazon EC2 instance, follow the instructions for [Authorizing inbound traffic on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html)\. If you're running your own independent Linux server or using Windows Subsystem for Linux \(WSL\), read your distribution's instructions on configuring your firewall to allow the client connection\. 
 
 **Important**  
- There might be other considerations in your network environment that require additional setup – such as a corporate firewall, proxy, or VPN – that you should consult with your system administrator on as part of setting up for testing\. 
+ There might be other considerations in your network environment that require additional setup - such as a corporate firewall, proxy, or VPN - that you should consult with your system administrator on as part of setting up for testing\. 
 
 ## Start the server {#linux-test-windows-client-linux-server-connection-start-server}
 

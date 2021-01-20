@@ -8,9 +8,9 @@ title: Adding User Settings to Waf
 You can add a new user setting to the `default_settings.json` file in the `Waf` folder located at the root\. Use the standards established in this file and customize as needed\. After you have added a user setting, you need to add a minimum of three utility functions for the GUI and console to validate your new setting\. 
 
 To define utility functions, add the following to `default_settings.py`:
-+ **Getter** – Retrieves the value of your new setting and performs necessary transformations
-+ **Validator** \(optional\) – Validates new values
-+ **Hinter** \(optional\) – Tells GUI the available options
++ **Getter** - Retrieves the value of your new setting and performs necessary transformations
++ **Validator** \(optional\) - Validates new values
++ **Hinter** \(optional\) - Tells GUI the available options
 
 See the sections below for more information about these functions\.
 

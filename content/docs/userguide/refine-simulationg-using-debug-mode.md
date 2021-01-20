@@ -26,9 +26,9 @@ In the following procedure, use the debug mode to refine the simulated object's 
 **Example**  
 
    In debug mode, the following appear in the render window:
-   + Simulated object colliders – The colliders that the simulated object collides with\. The colliders appear in light gray\.
-   + Joint angle limit cones – The angle of a joint that simulates\. The cones appear in light pink\.
-   + Joint collision radius – The size of the collision radius on a joint\. The radius appears in dark gray\.
+   + Simulated object colliders - The colliders that the simulated object collides with\. The colliders appear in light gray\.
+   + Joint angle limit cones - The angle of a joint that simulates\. The cones appear in light pink\.
+   + Joint collision radius - The size of the collision radius on a joint\. The radius appears in dark gray\.
 
     In the render window, you can click the first icon to toggle the actor geometry and see only simulated objects\.  
 ![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](/images/userguide/actor-animation/simulated-objects-22.gif)

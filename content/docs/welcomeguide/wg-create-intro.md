@@ -15,7 +15,7 @@ Now, let's get started creating your game\! In this topic, we provide an overvie
 
 Game development in Lumberyard is best understood if you keep a key Lumberyard design philosophy in mind as you learn: the concept of **modularity**\. The Lumberyard game engine, its systems, and its environment are built as a collection of C\+\+ modules\. Choosing the right modules based on the combination of your game's design and your workflows will keep your game development process focused and likewise keep the overhead of managing your game project simpler\.
 
-Even the Lumberyard Editor – the most common tool associated with Lumberyard – uses these modules, which we call **Gems**\. Lumberyard ships with well over 100 Gems as part of the installation, and you can acquire other Gems from third parties, or write new ones yourself\. When you build your game, the functionality of these Gems is combined to create the systems of your game\. This means that you don't have to hard\-code the systems and features of your game\. Instead, you can either obtain or create a Gem with the functionality you need – and even maintain the code for it independent of the game\! This isolation means that a game developer can work on game\-specific AI functionality in a Gem\. When the Gem is updated, level designers can access the new functionality after a rebuild of the game project, and without impacting any other Gem\. Gems can also add new features to the Lumberyard Editor and provide new asset processing behaviors\.
+Even the Lumberyard Editor - the most common tool associated with Lumberyard - uses these modules, which we call **Gems**\. Lumberyard ships with well over 100 Gems as part of the installation, and you can acquire other Gems from third parties, or write new ones yourself\. When you build your game, the functionality of these Gems is combined to create the systems of your game\. This means that you don't have to hard\-code the systems and features of your game\. Instead, you can either obtain or create a Gem with the functionality you need - and even maintain the code for it independent of the game\! This isolation means that a game developer can work on game\-specific AI functionality in a Gem\. When the Gem is updated, level designers can access the new functionality after a rebuild of the game project, and without impacting any other Gem\. Gems can also add new features to the Lumberyard Editor and provide new asset processing behaviors\.
 
 You'll notice this philosophy of modularity in the individual entities you create, up through the most complex functionality you add\.
 
@@ -53,7 +53,7 @@ The modular nature of Lumberyard means there are additional assets, components, 
 
  **Starting the Journey** 
 
-Are you starting a new project, maybe to start a prototype of your game? Or to just play around with Lumberyard – take it for a spin and learn what it can do? You'll probably need to know how to get the minimum systems going, which typically include:
+Are you starting a new project, maybe to start a prototype of your game? Or to just play around with Lumberyard - take it for a spin and learn what it can do? You'll probably need to know how to get the minimum systems going, which typically include:
 + Camera
 + Rendering
 + Physics

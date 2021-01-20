@@ -16,10 +16,10 @@ For a sample implementation of game states, see the [GameState Samples Gem](/doc
 ## Examining the Code {#gems-system-gem-game-state-examining-the-code}
 
 The GameState gem manages a stack \(or [pushdown automaton](https://en.wikipedia.org/wiki/Pushdown_automaton)\) of abstract game states\. The GameState gem includes the following code members:
-+ `IGameState` – Abstract interface that all concrete game state classes must be derived from\.
-+ `GameStateRequests` – [EBus](/docs/userguide/programming/ebus/intro.md) interface that other systems use to submit requests related to the game state\.
-+ `GameStateNotifications` – EBus interface that other systems use to listen for events related to the game state\.
-+ `GameStateSystemComponent` – Implements the `GameStateRequestBus` interface and sends events over the `GameStateNotificationBus`\.
++ `IGameState` - Abstract interface that all concrete game state classes must be derived from\.
++ `GameStateRequests` - [EBus](/docs/userguide/programming/ebus/intro.md) interface that other systems use to submit requests related to the game state\.
++ `GameStateNotifications` - EBus interface that other systems use to listen for events related to the game state\.
++ `GameStateSystemComponent` - Implements the `GameStateRequestBus` interface and sends events over the `GameStateNotificationBus`\.
 
 ### IGameState {#gems-system-gem-game-state-igamestate-interface}
 

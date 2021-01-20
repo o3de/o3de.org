@@ -31,10 +31,10 @@ Two colliders interact if their collision layers are in each other's collision g
 ## Example Collision Group Configuration {#physx-configuration-collision-groups-example}
 
 The following example defines **Player**, **Enemy**, **Bullet**, **Foliage**, and **Terrain** layers, and the following collision groups:
-+ **PlayerBullet** – Collides with **Enemy** and **Terrain**\.
-+ **EnemyBullet** – Collides with **Player** and **Terrain**\.
-+ **TerrainCollision** – Collides with **Player**, **Enemy**, **Bullet**, and **Terrain**\.
-+ **PlayerCollision** – Collides with **Enemy**, **Bullet**, and **Terrain**\.
++ **PlayerBullet** - Collides with **Enemy** and **Terrain**\.
++ **EnemyBullet** - Collides with **Player** and **Terrain**\.
++ **TerrainCollision** - Collides with **Player**, **Enemy**, **Bullet**, and **Terrain**\.
++ **PlayerCollision** - Collides with **Enemy**, **Bullet**, and **Terrain**\.
 
 ![\[An example collision group configuration.\]](/images/userguide/physx/physx-configuration-6.png)
 

@@ -64,8 +64,8 @@ self.timeline:Add(…)
 self.timeline:Play()
 
 --Labels
-self.timeline:AddLabel("Label", 0.5) –Add label that specifies 0.5 seconds  into animation
-self.timeline:Play("Label") –Play from label
+self.timeline:AddLabel("Label", 0.5) -Add label that specifies 0.5 seconds  into animation
+self.timeline:Play("Label") -Play from label
 
 --General timeline operations
 local animationParameters = { id = self.Properties.ToAnimate, duration = 3, ["opacity"] = 0.5 }
@@ -73,11 +73,11 @@ self.timeline:Add({animationParameters}, {["label"] = "LabelName"}, ["offset"] =
 self.timeline:Add({animationParameters}, {["initialStartTime"] = 2}, ["offset"] = -1) --Start animation at second 1
 
 self.timeline:Play()
-self.timeline:Play(2) –-Play timeline starting at 2 seconds
+self.timeline:Play(2) --Play timeline starting at 2 seconds
 self.timeline:Pause() --Pause timeline
 self.timeline:Resume() --Resumes timeline, Play() also resumes
 self.timeline:Seek(3) --Play timeline starting at 3 seconds
 self.timeline:PlayBackwards() --Start playing animation backwards
-self.timeline:PlayBackwards(3) –-Start playing animation backwards starting from second 3
-self.timeline:SetSpeed(2) –-Start playing animation at 2x speed
+self.timeline:PlayBackwards(3) --Start playing animation backwards starting from second 3
+self.timeline:SetSpeed(2) --Start playing animation at 2x speed
 ```

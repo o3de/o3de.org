@@ -106,7 +106,7 @@ Now you are ready to attach the Script Canvas graph to an entity and test the sc
 
 1. Under **Script Canvas**, click the browse button \(**\.\.\.**\)\.
 
-1. In the **Pick Script Canvas** dialog box, choose the file that you created – for example, **mylambdafunctiontest \(Script Canvas\)**, and then click **OK**\.
+1. In the **Pick Script Canvas** dialog box, choose the file that you created - for example, **mylambdafunctiontest \(Script Canvas\)**, and then click **OK**\.
 
 1. To open the Lumberyard console window, press **`** or choose **Tools**, **Console**\. If the console window is already open and you want to clear it, press **Ctrl\+Shift\+C**\.
 

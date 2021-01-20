@@ -15,15 +15,15 @@ Lumberyard has several tools, editors, and systems that work together to help yo
 + Multi\-threading support for input, audio, physics simulation, user interfaces \(UI\), artificial intelligence \(AI\), networking and multiplayer, and other common game features
 + Asset management and packaging
 
-The engine itself is really just a collection of components and modules, called *Gems*\. When developing, you use the Lumberyard Editor and tools to assemble the engine for your game, choosing and adding these gems and modules as you develop it\. You also use the Lumberyard tools to add your assets—​including textures, meshes, sounds, music, and scripts—​to construct your game's unique experience and gameplay\.
+The engine itself is really just a collection of components and modules, called *Gems*\. When developing, you use the Lumberyard Editor and tools to assemble the engine for your game, choosing and adding these gems and modules as you develop it\. You also use the Lumberyard tools to add your assets-​including textures, meshes, sounds, music, and scripts-​to construct your game's unique experience and gameplay\.
 
 Think of Lumberyard as a collection of discrete elements: code, scripts, various GUI\-based editors, and command line tools\. When you compile a game project, Lumberyard's build scripts pull in all the pieces specified in your project's configuration to build your game\. The parts of the engine that go into your game are only those you've configured your project to use, and there's very little functionality included in the final compiled code that you didn't ask to have in it\. Likewise, the asset bundling and management tools make sure you only ship with the assets you actually use in your game\.
 
-You can build a game in Lumberyard just using the Lumberyard Editor, but you will be constrained to the Gems and tools provided \(along with the assets and scripts you create\)\. If your ambitions are greater—​if you want to evolve Lumberyard to support features and systems we haven't provided in the box—​read on\.
+You can build a game in Lumberyard just using the Lumberyard Editor, but you will be constrained to the Gems and tools provided \(along with the assets and scripts you create\)\. If your ambitions are greater-​if you want to evolve Lumberyard to support features and systems we haven't provided in the box-​read on\.
 
 ## Overview of the Lumberyard framework<a name="how-ly-works-overview"></a>
 
-The Lumberyard installation provides a sandbox of different bits to combine, including over 100 gems and modules for you to use in your game\. As a high\-level concept, think of Lumberyard as a framework—​a conceptual structure from which you can add new features or remove anything you don't plan to use in your game\. When you need to change or extend the behavior of something, you don't need to go to some massively over\-architected set of code files and hack or refactor a feature in to your game's code\. Rather, you just work with only the gem or module that contains the functionality you want to change\. By focusing on modularity, you can safely experiment with different feature changes without risking progress on the entire game with an unintended regression\.
+The Lumberyard installation provides a sandbox of different bits to combine, including over 100 gems and modules for you to use in your game\. As a high\-level concept, think of Lumberyard as a framework-​a conceptual structure from which you can add new features or remove anything you don't plan to use in your game\. When you need to change or extend the behavior of something, you don't need to go to some massively over\-architected set of code files and hack or refactor a feature in to your game's code\. Rather, you just work with only the gem or module that contains the functionality you want to change\. By focusing on modularity, you can safely experiment with different feature changes without risking progress on the entire game with an unintended regression\.
 
 Central to Lumberyard is the **AzFramework** library, which relates all of the systems, modules, and Gems into the infrastructure for your game\. The Event Bus \(EBus\) system provides request and notification messaging across the DLLs for these systems, modules, and Gems\. As a developer, you write C\+\+ code to implement methods defined in C\+\+ API headers that define the functionality you need\.
 
@@ -54,7 +54,7 @@ Lumberyard also provides two command\-line tools, `Lmbr.exe` and `Lmbr_waf.exe`,
 +  `Lmbr.exe`\-\-Provides a set of commands for managing and tracking Gems, capabilities, and 3rd party tools and packages\.
 +  `Lmbe_waf.exe`\-\-Provides a set of commands for automating the building and packaging of game projects with [the Waf build automation framework](https://waf.io/book/)\.
 
-All of these parts—​plus some not listed here—​define Lumberyard, and can be used to construct your game\. As you incorporate Lumberyard systems and develop your own, you will want to communicate across them\. For that, we have EBus\.
+All of these parts-​plus some not listed here-​define Lumberyard, and can be used to construct your game\. As you incorporate Lumberyard systems and develop your own, you will want to communicate across them\. For that, we have EBus\.
 
 ## Working with Gems<a name="how-ly-works-extending"></a>
 
@@ -68,7 +68,7 @@ You can create your own Gems and easily reuse and distribute your own code and a
 
 All of Lumberyard's Gems and systems, as well as the components in your projects need a way to communicate with each other\. Lumberyard uses a general\-purpose communication system called Event Bus \(EBus for short\)\.
 
-As discussed earlier, Gems and systems are typically implemented as DLLs\. EBus is used to communicate between them—​and specifically, to invoke functions in one Gem or system from another\. EBus provides both request and publish/subscribe event interfaces \(buses\) that allow calls across those DLLs\. For example, if you've created a Gem for custom physics behaviors and you'd like to provide data to the CryEngine renderer, you'd do so by implementing an EBus interface in your Gem\.
+As discussed earlier, Gems and systems are typically implemented as DLLs\. EBus is used to communicate between them-​and specifically, to invoke functions in one Gem or system from another\. EBus provides both request and publish/subscribe event interfaces \(buses\) that allow calls across those DLLs\. For example, if you've created a Gem for custom physics behaviors and you'd like to provide data to the CryEngine renderer, you'd do so by implementing an EBus interface in your Gem\.
 
 We provide the interfaces for the Gems and systems DLLs we ship as headers in the default installation\. To use the functionality in these DLLs, you use the interfaces in these headers to register for a single cast \(Event\) or broadcast \(Broadcast\) event, or through supplying a data request functor to a Request Bus handler\.
 
@@ -83,12 +83,12 @@ There are two types of EBus:
 + Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to\.
 
 EBuses have many advantages over traditional polling methods:
-+ Abstraction – Minimize hard dependencies between systems\.
-+ Event\-driven programming – Eliminate polling patterns for more scalable and higher performance software\.
-+ Cleaner application code – Safely dispatch messages without concern for what is handling them or whether they are being handled at all\.
-+ Concurrency – Queue events from various threads for safe execution on another thread or for distributed system applications\.
-+ Predictability – Provide support for ordering of handlers on a given bus\.
-+ Debugging – Intercept messages for reporting, profiling, and introspection purposes\.
++ Abstraction - Minimize hard dependencies between systems\.
++ Event\-driven programming - Eliminate polling patterns for more scalable and higher performance software\.
++ Cleaner application code - Safely dispatch messages without concern for what is handling them or whether they are being handled at all\.
++ Concurrency - Queue events from various threads for safe execution on another thread or for distributed system applications\.
++ Predictability - Provide support for ordering of handlers on a given bus\.
++ Debugging - Intercept messages for reporting, profiling, and introspection purposes\.
 
 EBuses are configurable and support many different use cases:
 + As a direct global function call\.

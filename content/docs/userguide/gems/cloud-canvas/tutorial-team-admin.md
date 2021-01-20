@@ -27,8 +27,8 @@ To manage your team members' access to AWS resources, you create IAM users, a gr
 1. Under **Select AWS access type**, select **Programmatic access** and/or **AWS Management Console access**, depending on the access that you want each user to have\. 
 
    If you choose **AWS Management Console access**, the **Console password** and **Require password reset** options appear\.
-   + **Console password** – Enter a password or choose to have a password generated automatically \(default\)\.
-   + **Require password reset** – Requires your users to create a password at their next sign in\. This is selected by default\.
+   + **Console password** - Enter a password or choose to have a password generated automatically \(default\)\.
+   + **Require password reset** - Requires your users to create a password at their next sign in\. This is selected by default\.
 
 1. Click **Next: Permissions**\.
 

@@ -52,7 +52,7 @@ This lets you select from a list of devices instead of entering the IP address e
 In the **Type a command** box at the bottom of the window, enter a command like the ones that follow\. This control features autocomplete and, for certain commands \(like `map`\), can also detect available options\.
 
 Commands include the following:
-+ `cl_DisableHUDText` – Disables HUD text
-+ `g_debug_stats` – Enables gameplay events debugging
-+ `r_DisplayInfo` – Displays rendering information
-+ `r_ProfileShaders` – Displays profiling information for the shaders
++ `cl_DisableHUDText` - Disables HUD text
++ `g_debug_stats` - Enables gameplay events debugging
++ `r_DisplayInfo` - Displays rendering information
++ `r_ProfileShaders` - Displays profiling information for the shaders

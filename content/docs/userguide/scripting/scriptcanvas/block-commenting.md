@@ -71,12 +71,12 @@ You can change the font settings in comment nodes to label and organize your scr
 
 1. In the **Node Inspector**, you can make the following changes:  
 ![\[Use the Node Inspector to change font settings for comment nodes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
-   + **Comment** – Type the comment for the node\.
-   + **Font Color** – Type a value or use the **Color Picker** to select a color\.
-   + **Font Family** – Type a font family name, such as Arial\.
-   + **Pixel Size** – Specify the font size\.
-   + **Weight** – Specify the font weight, such as bold\.
-   + **Style** – Specify the font style, such as italics\.
-   + **Vertical Alignment** – Specify the vertical alignment of the comment, such as bottom\.
-   + **Horizontal Alignment** – Specify the horizontal alignment of the comment, such as center\.
-   + **For Block Comment Frame** – Type a value or use the **Color Picker** to select a color\.
+   + **Comment** - Type the comment for the node\.
+   + **Font Color** - Type a value or use the **Color Picker** to select a color\.
+   + **Font Family** - Type a font family name, such as Arial\.
+   + **Pixel Size** - Specify the font size\.
+   + **Weight** - Specify the font weight, such as bold\.
+   + **Style** - Specify the font style, such as italics\.
+   + **Vertical Alignment** - Specify the vertical alignment of the comment, such as bottom\.
+   + **Horizontal Alignment** - Specify the horizontal alignment of the comment, such as center\.
+   + **For Block Comment Frame** - Type a value or use the **Color Picker** to select a color\.

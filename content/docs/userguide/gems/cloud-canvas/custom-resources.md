@@ -8,13 +8,13 @@ title: Custom Resources
 Cloud Canvas provides a number of [AWS CloudFormation custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that can be used in the AWS CloudFormation template files for the project, deployment, and resource group\. These custom resources are implemented by the Lambda function code found in the `dev\{game}\AWS\project-code` directory and the `ProjectResourceHandler` resource defined in the `dev\{game}\AWS\project-template.json` file\. Rather than static entities, these resources act more like library functions\. Each custom resource has input and output properties\.
 
 A summary list of custom resources follows\.
-+ [CognitoIdentityPool](#cloud-canvas-custom-resources-cognito-identity-pool) – Manages Amazon Cognito identity pool resources\. 
-+ [CognitoUserPool](#cloud-canvas-custom-resources-cognito-user-pool) – Manages Amazon Cognito user pool resources\.
-+ [EmptyDeployment](#cloud-canvas-custom-resources-empty-deployment) – Used in the `deployment-template.json` when there are no resource groups defined\.
-+ [ResourceGroupConfiguration](#cloud-canvas-custom-resources-resource-group-configuration) – Provides configuration data for a resource\-group's AWS CloudFormation stack resource\.
-+ [LambdaConfiguration](#cloud-canvas-custom-resources-lambda-configuration) – Provides configuration data for Lambda function resources and maintains the Lambda function's execution role\.
-+ [Helper](#cloud-canvas-custom-resources-helper) – Provides convenience functions for use in templates\. 
-+ [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) – Provides programmatic access to cloud gem functionality that you can use to implement cloud\-connected features in your game\.
++ [CognitoIdentityPool](#cloud-canvas-custom-resources-cognito-identity-pool) - Manages Amazon Cognito identity pool resources\. 
++ [CognitoUserPool](#cloud-canvas-custom-resources-cognito-user-pool) - Manages Amazon Cognito user pool resources\.
++ [EmptyDeployment](#cloud-canvas-custom-resources-empty-deployment) - Used in the `deployment-template.json` when there are no resource groups defined\.
++ [ResourceGroupConfiguration](#cloud-canvas-custom-resources-resource-group-configuration) - Provides configuration data for a resource\-group's AWS CloudFormation stack resource\.
++ [LambdaConfiguration](#cloud-canvas-custom-resources-lambda-configuration) - Provides configuration data for Lambda function resources and maintains the Lambda function's execution role\.
++ [Helper](#cloud-canvas-custom-resources-helper) - Provides convenience functions for use in templates\. 
++ [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) - Provides programmatic access to cloud gem functionality that you can use to implement cloud\-connected features in your game\.
 
 For information on controlling access to resources, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 

@@ -200,16 +200,16 @@ Normal maps can make a surface appear as though it has more geometric surface de
 
 **Tangent space**  
 Defines the tangent space that Lumberyard uses for an actor\. Choose from the following options:   
-+ **MikkT** – Uses MikkT to generate the tangents\. MikkT is a widely used solution for generating tangent space that strives for consistency regardless of changes and optimizations to the source mesh\. This is the default setting\. 
-+ **From FBX** – Export the tangents from the FBX file\. 
-+ **EMotion FX** – Use EMotion FX to calculate the tangents\. 
++ **MikkT** - Uses MikkT to generate the tangents\. MikkT is a widely used solution for generating tangent space that strives for consistency regardless of changes and optimizations to the source mesh\. This is the default setting\. 
++ **From FBX** - Export the tangents from the FBX file\. 
++ **EMotion FX** - Use EMotion FX to calculate the tangents\. 
 **Warning**  
 The **EMotion FX** option is for backward compatibility only and is not recommended\. 
 
 **Bitangents**  
 Defines how to generate or read the bitangents\.   
-+ **Use from source** – Use the bitangents from the FBX file or the output from the tangent generator used \(MikkT\)\. 
-+ **Orthogonal** – Generates the bitangents orthogonal to the tangent and normal\. This is the default setting\. 
++ **Use from source** - Use the bitangents from the FBX file or the output from the tangent generator used \(MikkT\)\. 
++ **Orthogonal** - Generates the bitangents orthogonal to the tangent and normal\. This is the default setting\. 
 
 ****Normalize****  
 When enabled, tangents and bitangents are normalized\. **Normalize** is enabled by default\. 

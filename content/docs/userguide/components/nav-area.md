@@ -111,9 +111,9 @@ The navigation system builds the navigation mesh based on all the static physics
 **ai\_NavPhysicsMode**  
 Navigation physics integration mode which determines where collider and terrain data used in navigation mesh calculations comes from\.  
 Default: `1`  
-`0` – CryPhysics only  
-`1` – CryPhysics and AZ::Physics  
-`2` – AZ::Physics only
+`0` - CryPhysics only  
+`1` - CryPhysics and AZ::Physics  
+`2` - AZ::Physics only
 
 **Physics integration details**  
 When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer issues a `WorldRequestBus::Overlap` static query to gather colliders within a bounding box\. Shape geometry is returned from the new `AZ::Shape::GetGeometry()` method\. PhysX colliders for terrain, shapes, and meshes will provide triangle data in an operation that acquires a PhysX scene read lock while retrieving geometry data\.

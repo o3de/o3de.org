@@ -46,7 +46,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Specify the entity with the rotational part of the transform that the audio listener will adopt\.
 
 **Parameters**  
-`entityId` – Entity to use for the rotational part of the transform
+`entityId` - Entity to use for the rotational part of the transform
 
 **Return**  
 None
@@ -59,7 +59,7 @@ Yes
 Specify the entity with the positional part of the transform that the audio listener will adopt\.
 
 **Parameters**  
-`entityId` – Entity to use for the positional part of the transform
+`entityId` - Entity to use for the positional part of the transform
 
 **Return**  
 None
@@ -72,7 +72,7 @@ Yes
 Specify the entity with the full transform that the audio listener will adopt\.
 
 **Parameters**  
-`entityId` – Entity to use for the transform
+`entityId` - Entity to use for the transform
 
 **Return**  
 None

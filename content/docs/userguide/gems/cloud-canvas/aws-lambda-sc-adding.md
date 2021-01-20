@@ -39,11 +39,11 @@ With Lumberyard Editor, you can add a Lambda function resource to the **CloudGem
 ![\[Click Add resource, and then choose Lambda function in Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-2.png)
 
 1. In the **Add a Lambda function** dialog box, specify the following values\.
-   + **Name** – The name of the Lambda function\.
-   + **Handler** – Specifies the code source for the function in the format `python_filename`\.`function_name`\. To use the `main.py` file that Lumberyard creates for you, specify `main.function_name`\. For example, for a function named `MyCustomAWSLambdaFunction`, enter `main.MyCustomAWSLambdaFunction`\.
+   + **Name** - The name of the Lambda function\.
+   + **Handler** - Specifies the code source for the function in the format `python_filename`\.`function_name`\. To use the `main.py` file that Lumberyard creates for you, specify `main.function_name`\. For example, for a function named `MyCustomAWSLambdaFunction`, enter `main.MyCustomAWSLambdaFunction`\.
 
       For more information about Lambda function handlers, see [Lambda Function Handler \(Python\)](https://docs.aws.amazon.com/lambda/latest/dg/python-programming-model-handler-types.html) in the *AWS Lambda Developer Guide*\.
-   + **Player invokable** – Choose **Yes**\. This option gives the player the permission to invoke the Lambda function\.  
+   + **Player invokable** - Choose **Yes**\. This option gives the player the permission to invoke the Lambda function\.  
 ![\[Add a Lambda function in the Cloud Canvas Resource Manager.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-adding-3.png)
 
    These properties are added to the `resource-template.json` file in the `lumberyard_version\dev\Gems\CloudGemAWSScriptBehaviors\AWS` directory\.

@@ -193,7 +193,7 @@ myCollection:clear()
 
 ## Using AZStd::any {#lua-scripting-ces-using-azstd-any}
 
-You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\)\. You can also pass any type reflected from C\+\+ \(for example, vectors or `EntityId` values\)\. There is no syntax required to pass a value as an `any`—just call the bus or function\.
+You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\)\. You can also pass any type reflected from C\+\+ \(for example, vectors or `EntityId` values\)\. There is no syntax required to pass a value as an `any`-just call the bus or function\.
 
 The following example shows the use of `AZStd::any`\.
 

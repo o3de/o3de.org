@@ -75,18 +75,18 @@ Animation start offset from **0** to **1**\. **0\.1** would be 10% into the anim
 Use the following request function with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
-+ **SetLensFlareState** \(`On` or `Off`\) – Turns the lens flare on or off\.
-+ **TurnOnLensFlare** – Turns the lens flare on\.
-+ **TurnOffLensFlare** – Turns the lens flare off\.
-+ **ToggleLensFlare** – Toggles the lens flare state \(`on` to `off`, or `off` to `on`\)\.
++ **SetLensFlareState** \(`On` or `Off`\) - Turns the lens flare on or off\.
++ **TurnOnLensFlare** - Turns the lens flare on\.
++ **TurnOffLensFlare** - Turns the lens flare off\.
++ **ToggleLensFlare** - Toggles the lens flare state \(`on` to `off`, or `off` to `on`\)\.
 
 ## EBus Notification Bus Interface {#component-lensflare-ebusnotification}
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
-+ **LensFlareTurnedOn** – Sends a signal when the lens flare is turned on\.
-+ **LensFlareTurnedOff** – Sends a signal when the lens flare is turned off\.
++ **LensFlareTurnedOn** - Sends a signal when the lens flare is turned on\.
++ **LensFlareTurnedOff** - Sends a signal when the lens flare is turned off\.
 
 The following is an example of script using the **Request Bus Interface**\.
 

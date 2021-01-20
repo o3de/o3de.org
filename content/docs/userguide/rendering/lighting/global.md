@@ -43,7 +43,7 @@ Multiplies the specular color brightness\. Set to **1**\.
 Set parameter to **False** to make lights cover other vis areas\.
 
 **AttenuationFalloffMax**  
-Controls the falloff amount \(0–1\) to create smoother transitions or hard edges\. A value of 0\.8 means that falloff begins at 80% at the boundaries of the box\. Set value to **0** for a global probe \(no falloff\)\.
+Controls the falloff amount \(0-1\) to create smoother transitions or hard edges\. A value of 0\.8 means that falloff begins at 80% at the boundaries of the box\. Set value to **0** for a global probe \(no falloff\)\.
 
 **IgnoresVisAreas**  
 Controls whether the light should respond to vis areas\. Set value to **True** for a global probe\.
@@ -84,7 +84,7 @@ Adjusts the width of cubemap box\.
    + **AttenuationFalloffMax**: 0
    + **IgnoreVisAreas**: True \(check box selected\)
 
-1. Click **Generate Cubemap**\. Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***— one for the diffuse map, one for the specular map, and one for the source `.tif` file\. 
+1. Click **Generate Cubemap**\. Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***- one for the diffuse map, one for the specular map, and one for the source `.tif` file\. 
 
 1. To check your cubemap for accuracy, create and then place a smooth, reflective sphere entity near the probe\. If its surface looks different from the environment around it, you need to regenerate the cubemap\. 
 

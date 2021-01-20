@@ -29,7 +29,7 @@ The influence that height map AO provides can be restricted using clip volumes a
 By default, evaluation is performed at quarter\-display resolution\. This can be changed using the **r\_HeightMapAO** console variable, as listed below\.
 
 Heightmap AO uses the following console variables:
-+ **r\_HeightMapAO** – Sets the resolution that evaluation is performed at\. Values are : 0=off, 1=quarter resolution, 2=half resolution, 3=full resolution\.
-+ **r\_HeightMapAOAmount** – Sets the strength of the occlusion effect when combined with the scene\.
-+ **r\_HeightMapAORange**: – Area around the viewer that is affected by height map AO\.
-+ **r\_HeightMapAOResolution** – Texture resolution of the height map used for approximating the scene\.
++ **r\_HeightMapAO** - Sets the resolution that evaluation is performed at\. Values are : 0=off, 1=quarter resolution, 2=half resolution, 3=full resolution\.
++ **r\_HeightMapAOAmount** - Sets the strength of the occlusion effect when combined with the scene\.
++ **r\_HeightMapAORange**: - Area around the viewer that is affected by height map AO\.
++ **r\_HeightMapAOResolution** - Texture resolution of the height map used for approximating the scene\.

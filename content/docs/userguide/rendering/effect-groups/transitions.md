@@ -39,4 +39,4 @@ Default curve value: smooth
 Valid key time values: smooth, linear, step
 
 **Key time**  
-Valid values: `0 – 1` \(seconds\)
+Valid values: `0 - 1` \(seconds\)

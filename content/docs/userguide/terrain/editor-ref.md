@@ -15,7 +15,7 @@ You can use the Terrain Editor to set various heightmap properties and parameter
 **Make Isle**  
 Sinks the heightmap so that it is surrounded by ocean\.  
 **Remove Ocean**  
-Sets the ocean level to –100000 meters\.  
+Sets the ocean level to -100000 meters\.  
 **Set Ocean Height**  
 Sets the ocean level in meters\.  
 **Set Terrain Max Height**  

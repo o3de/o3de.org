@@ -127,13 +127,13 @@ enum class ResultCode {Success, FuelSDKNotInitialized, FuelNoSession, FuelNoAppl
 ```
 
 **Error Code Descriptions**
-+ `Success` – The call was successful\.
-+ `FuelNoApplicationID` – The application ID was not set correctly or contains invalid characters\.
-+ `FuelMissingCredentials` – Twitch did not return the credentials\.
-+ `InvalidParam` – An invalid parameter was passed\.
-+ `TwitchRESTError` – An internal REST error occurred\.
-+ `TwitchChannelNoUpdatesToMake` – An attempt was made to update a channel but no data was given to update the channel\.
-+ `Unknown` – This error is rare and can occur if calls are made asynchronously during initialization\.
++ `Success` - The call was successful\.
++ `FuelNoApplicationID` - The application ID was not set correctly or contains invalid characters\.
++ `FuelMissingCredentials` - Twitch did not return the credentials\.
++ `InvalidParam` - An invalid parameter was passed\.
++ `TwitchRESTError` - An internal REST error occurred\.
++ `TwitchChannelNoUpdatesToMake` - An attempt was made to update a channel but no data was given to update the channel\.
++ `Unknown` - This error is rare and can occur if calls are made asynchronously during initialization\.
 
 ## UserInfo struct {#twitch-api-ebus-data-elements-userinfo-struct}
 

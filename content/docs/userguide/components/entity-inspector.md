@@ -14,10 +14,10 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
 1. Select an entity in the viewport or the **Entity Outliner**\.
 
 1. In the **Entity Inspector**, you can see the following:
-   + **Name** – Name of the entity\. You can enter a different name for the entity\.
-   + **Entity Icon** – Customizable icon to help you recognize entities in the viewport\.
-   + **Status** – Active status of the entity\. When the level starts, the entity can be active, inactive, or active but only in editor mode\.
-   + **Entity ID** – If this entity ID is called out in messages, errors, or asserts, you can find the entity by searching for it in the **Entity Outliner**\.
+   + **Name** - Name of the entity\. You can enter a different name for the entity\.
+   + **Entity Icon** - Customizable icon to help you recognize entities in the viewport\.
+   + **Status** - Active status of the entity\. When the level starts, the entity can be active, inactive, or active but only in editor mode\.
+   + **Entity ID** - If this entity ID is called out in messages, errors, or asserts, you can find the entity by searching for it in the **Entity Outliner**\.
    + Components attached to the entity appear below\.  
 ![\[Find entities and its attached components in the Entity Inspector.\]](/images/userguide/component/entity_system/component-entity-inspector.png)
 

@@ -11,7 +11,7 @@ As a best practice for toon shading, use clear textures with fewer patterns when
 
 To enable toon shading, use the console to specify the console variable \(CVAR\): `r_AlphaBlendLayerCount`\.
 
-Valid values: 0 – 1
+Valid values: 0 - 1
 
 For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 

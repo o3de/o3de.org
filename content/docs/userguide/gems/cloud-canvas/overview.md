@@ -67,9 +67,9 @@ Here are some ways in which you can use Amazon DynamoDB table resources in your 
 For executing code in the cloud, Cloud Canvas supports the AWS Lambda service\. AWS Lambda executes resources called functions\. You provide the code for a Lambda function, and your game calls the Lambda service through Cloud Canvas to run the function\. The Lambda service returns the data from the function to the game\.
 
 Your Lambda functions can even call other Amazon Web Services like Amazon DynamoDB and perform operations on their resources\. Following are some examples:
-+ **Submit a high score** – A Lambda function can accept a player's ID and new score, look up the player ID in the database, compare the score with existing scores, and update the highest score if necessary\.
-+ **Sanitize your data** – A Lambda function can check for malicious or unusual input\. For example, if a player tries to upload a new high score of 999,999,999 when the best players can't reach 1,000, your Lambda function can intercept the submission and either reject it or flag it for review\.
-+ **Perform server\-side authoritative actions** – Cloud Canvas can call your Lambda functions to control in\-game economies\. For example, when a player tries to purchase an item, your Lambda function can check a database to verify that the player has enough money to pay for the item\. The function can then deduct the amount from the player's account, and add the item to the player's inventory\.
++ **Submit a high score** - A Lambda function can accept a player's ID and new score, look up the player ID in the database, compare the score with existing scores, and update the highest score if necessary\.
++ **Sanitize your data** - A Lambda function can check for malicious or unusual input\. For example, if a player tries to upload a new high score of 999,999,999 when the best players can't reach 1,000, your Lambda function can intercept the submission and either reject it or flag it for review\.
++ **Perform server\-side authoritative actions** - Cloud Canvas can call your Lambda functions to control in\-game economies\. For example, when a player tries to purchase an item, your Lambda function can check a database to verify that the player has enough money to pay for the item\. The function can then deduct the amount from the player's account, and add the item to the player's inventory\.
 
 ### Identity and Permissions {#cloud-canvas-core-concepts-supported-svcs-cognito}
 

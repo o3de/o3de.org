@@ -54,10 +54,10 @@ Tag conditions have two attributes: test function and tags\.
 Specifies the tag status to pass the condition\.
 
 You can choose from the following options:
-+ **All tags active** – All tags must be active or the condition blocks the change\.
-+ **One or more tags inactive** – At least one tag must be inactive or the condition blocks the change\.
-+ **One or more tags active** – At least one tag must be active or the condition blocks the change\.
-+ **No tag active** – All tags must be inactive or the condition blocks the change\.
++ **All tags active** - All tags must be active or the condition blocks the change\.
++ **One or more tags inactive** - At least one tag must be inactive or the condition blocks the change\.
++ **One or more tags active** - At least one tag must be active or the condition blocks the change\.
++ **No tag active** - All tags must be inactive or the condition blocks the change\.
 
 **Tags**  
 Specifies the tags that the condition checks for\.

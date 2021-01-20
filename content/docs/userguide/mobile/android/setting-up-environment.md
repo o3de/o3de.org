@@ -37,9 +37,9 @@ title: Set up your environment to develop for Android with &ALY;
     If you used another install location, or Setup Assistant couldn't find your Android install, provide the paths to the appropriate tools\. You can also select the **Browse** button to use Windows Explorer to navigate to the required files\. 
 
    By default, the tools are located at the following paths\.
-   + Android Studio installation — `C:\Program Files\Android\Android Studio`
-   + `ndk-build.cmd` — `C:\Users\username\AppData\Local\Android\Sdk\ndk\version\ndk-build.cmd`
-   + `adb.exe` — `C:\Users\username\AppData\Local\Android\Sdk\platform-tools\adb.exe`  
+   + Android Studio installation - `C:\Program Files\Android\Android Studio`
+   + `ndk-build.cmd` - `C:\Users\username\AppData\Local\Android\Sdk\ndk\version\ndk-build.cmd`
+   + `adb.exe` - `C:\Users\username\AppData\Local\Android\Sdk\platform-tools\adb.exe`  
 ![\[The Setup Assistant window displaying the paths for the required Android tools. Each path is surrounded by a colored box and is one of the default paths listed above.\]](/images/userguide/platforms/android/setup-android-dev-2.png)
 **Tip**  
  If you can't find your Android SDK install in `C:\Users\username\AppData\Local\Android\Sdk`, the SDK location might have been changed in Android Studio\. To find out the location for your Android SDKs, follow these steps in Android Studio 4\.0\.x:   
