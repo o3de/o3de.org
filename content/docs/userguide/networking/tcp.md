@@ -16,36 +16,36 @@ The TCP socket driver has four public classes in the GridMate namespace that han
 This socket driver has methods that handle TCP connections\.
 
 
-**Stream Socket Methods**  
+**Stream Socket Methods**
 
-| Action | Method | 
-| --- | --- | 
-| Establish a direct connection to a listening server | ResultCode ConnectTo\(const SocketDriverAddressPtr& addr\) | 
-| Break an established TCP connection | ResultCode DisconnectFrom\(const SocketDriverAddressPtr& addr\); | 
-| Start accepting connections to the server | ResultCode StartListen\(AZ::s32 backlog\); | 
-| Stop the server from accepting connections | `ResultCode StopListen();`  This call does not shut down the driver\. You can start monitoring after the call\.  | 
-| Poll the number of established connections | AZ::u32 GetNumberOfConnections\(\) const; | 
-| Query whether a remote address endpoint is connected | bool IsConnectedTo\(const SocketDriverAddressPtr& to\) const; | 
-| Query whether the driver is actively listening for new connections | bool IsListening\(\) const; | 
+| Action | Method |
+| --- | --- |
+| Establish a direct connection to a listening server | ResultCode ConnectTo\(const SocketDriverAddressPtr& addr\) |
+| Break an established TCP connection | ResultCode DisconnectFrom\(const SocketDriverAddressPtr& addr\); |
+| Start accepting connections to the server | ResultCode StartListen\(AZ::s32 backlog\); |
+| Stop the server from accepting connections | `ResultCode StopListen();`  This call does not shut down the driver\. You can start monitoring after the call\.  |
+| Poll the number of established connections | AZ::u32 GetNumberOfConnections\(\) const; |
+| Query whether a remote address endpoint is connected | bool IsConnectedTo\(const SocketDriverAddressPtr& to\) const; |
+| Query whether the driver is actively listening for new connections | bool IsListening\(\) const; |
 
 ### GridMate::StreamSocketDriverEventsBus {#network-tcp-socket-driver-classes-gridmatestreamsocketdrivereventsbus}
 
 The socket driver event bus has methods that detect connection and disconnection events\.
 
 
-**Stream Socket Events Bus Methods**  
+**Stream Socket Events Bus Methods**
 
-| Callback that occurs when | Method | 
-| --- | --- | 
-| The socket driver establishes a connection | virtual void OnConnectionEstablished\(const SocketDriverAddress& address\); | 
-| The socket driver detects a removed connection | virtual void OnConnectionDisconnected\(const SocketDriverAddress& address\); | 
+| Callback that occurs when | Method |
+| --- | --- |
+| The socket driver establishes a connection | virtual void OnConnectionEstablished\(const SocketDriverAddress& address\); |
+| The socket driver detects a removed connection | virtual void OnConnectionDisconnected\(const SocketDriverAddress& address\); |
 
 ### GridMate::StreamSecureSocketDriver {#network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriver}
 
 The secure stream socket driver has the following method that initializes cryptographic data for the driver\. It calls the `Initialize()` method before setting up the key and/or certificate\.
 
 ```
-ResultCode InitializeSecurity(AZ::s32 familyType, const char* address, AZ::u32 port, AZ::u32 receiveBufferSize, AZ::u32 sendBufferSize, StreamSecureSocketDriverDesc& desc); 
+ResultCode InitializeSecurity(AZ::s32 familyType, const char* address, AZ::u32 port, AZ::u32 receiveBufferSize, AZ::u32 sendBufferSize, StreamSecureSocketDriverDesc& desc);
 ```
 
 ### GridMate::StreamSecureSocketDriver::StreamSecureSocketDriverDesc {#network-tcp-socket-driver-classes-gridmatestreamsecuresocketdriverstreamsecuresocketdriverdesc}
@@ -53,14 +53,14 @@ ResultCode InitializeSecurity(AZ::s32 familyType, const char* address, AZ::u32 p
 The secure stream socket driver requires a description structure to set up the cryptographic key, certificates, and options\. The description structure has the following members\.
 
 
-****  
+****
 
-| Member | Description | 
-| --- | --- | 
-| const char\* m\_privateKeyPEM; | A base64 encoded PEM format private key that is used on the server only\. | 
-| const char\* m\_certificatePEM; | A base64 encoded PEM format certificate\. This public certificate encrypts the Transport Layer Security \(TLS\) handshake\. | 
-| const char\* m\_certificateAuthorityPEM; | A base64 encoded PEM format CA root certificate\. | 
-| bool m\_authenticateClient; | Ensures that both the client and server authenticate the PEM certificate\. This setting is made on the server\. The default is false; only the server is authenticated by default\. | 
+| Member | Description |
+| --- | --- |
+| const char\* m\_privateKeyPEM; | A base64 encoded PEM format private key that is used on the server only\. |
+| const char\* m\_certificatePEM; | A base64 encoded PEM format certificate\. This public certificate encrypts the Transport Layer Security \(TLS\) handshake\. |
+| const char\* m\_certificateAuthorityPEM; | A base64 encoded PEM format CA root certificate\. |
+| bool m\_authenticateClient; | Ensures that both the client and server authenticate the PEM certificate\. This setting is made on the server\. The default is false; only the server is authenticated by default\. |
 
 ## Security {#network-tcp-security}
 

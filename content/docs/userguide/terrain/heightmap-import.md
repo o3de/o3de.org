@@ -10,7 +10,7 @@ In order to support full, 32\-bit heightmap resolution, use one of the following
 + `.bt` \(binary terrain\) - Highest precision
 + `.tif` \(32\-bit\)
 
-The following file formats are supported but not recommended\. These file formats are imported in 16\-bit or 8\-bit resolution\. We recommend using a minimum of 16\-bit resolution for heightmaps, as 8\-bit resolution can cause blocky\-looking terrain\. 
+The following file formats are supported but not recommended\. These file formats are imported in 16\-bit or 8\-bit resolution\. We recommend using a minimum of 16\-bit resolution for heightmaps, as 8\-bit resolution can cause blocky\-looking terrain\.
 + `.pgm` \(16\-bit\)
 + `.raw` \(16\-bit\)
 + `.r16` \(16\-bit\)
@@ -22,11 +22,11 @@ Lumberyard Editor supports importing only a single heightmap for the entire terr
 
 If you attempt to import a file with a different resolution than your existing heightmap, Lumberyard prompts you to do one of the following:
 + Clip your imported file to remove any values that are outside the boundary of your existing heightmap\.
-+ Resize your imported file to shrink or stretch to fit the heightmap\. Resizing may introduce artifacts that can cause blocky\-looking terrain\. 
-+ 
++ Resize your imported file to shrink or stretch to fit the heightmap\. Resizing may introduce artifacts that can cause blocky\-looking terrain\.
++
 
-**Note**  
-If your heightmap resolution is greater than your level's resolution, you should downsample your heightmap with an external graphics application before you import it into Lumberyard\.  
+**Note**
+If your heightmap resolution is greater than your level's resolution, you should downsample your heightmap with an external graphics application before you import it into Lumberyard\.
 If, for example, you attempt to import a 4k heightmap into a 2k level, Lumberyard prompts you to clip or resize your heightmap\. This may be sufficient, but using an external graphics application to downsample your heightmap provides superior results\.
 
 **To import a heightmap**

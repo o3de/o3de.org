@@ -16,20 +16,20 @@ Sets a material parameter with a **Vector3** value\.
 ## Inputs {#script-canvas-material-set-param-vector3-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material |  The material to modify\.  | 
-| Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
-| Vector3 | Vector3 |  The new value to apply\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material |  The material to modify\.  |
+| Param Name | String |  The name of the material parameter to set\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  |
+| Vector3 | Vector3 |  The new value to apply\.  |
 
 ## Outputs {#script-canvas-material-set-param-vector3-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

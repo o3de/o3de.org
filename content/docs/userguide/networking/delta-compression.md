@@ -48,15 +48,15 @@ In the previous example, if the starting value is 0, data changes that remain wi
 
 For calculation purposes, the precision of delta compression is double the delta range divided by 255, which is the size of one byte\. For a delta range of 5, the precision is `5*2/255=0.04`\.
 
-**Important**  
-Pay close attention to the required precision of your values\. The highest precision for a `DeltaCompressedDataSet` is declared with a delta range of 1, as in the following example:  
+**Important**
+Pay close attention to the required precision of your values\. The highest precision for a `DeltaCompressedDataSet` is declared with a delta range of 1, as in the following example:
 
 ```
 DeltaCompressedDataSet<float, 1> m_highestPrecisionExample;
 ```
 The precision in this case is `1*2/255=0.0078`\.
 
-**Note**  
+**Note**
 You can work around this precision limit by changing the measurement unit that you use\. For example, instead of sending meters, you can send millimeters\.
 
 ## Calculating Payload Reduction {#network-delta-compression-calculating-payload-reduction}
@@ -72,15 +72,15 @@ If a change is less than five \(the configurable value specified in the second t
 The following table illustrates the behavior of a sample delta compressed dataset in chronological order\.
 
 
-****  
+****
 
-| Chronological Order | Value | Bytes Sent | Description | 
-| --- | --- | --- | --- | 
-| 1 | 0\.0 | 4 |  Because this is the first value, it is sent as a full update\.  | 
-| 2 | 0\.1 | 1 |  The change is less than five, so a one\-byte delta is sent\.  | 
-| 3 | 4\.9 | 1 |  The change is still less than five, so a one\-byte delta is sent\.  | 
-| 4 | 5\.1 | 4 |  The change is greater than five, so a full update is sent\.  | 
-| 5 | 5\.3 | 1 |  The change since the last full update is less than five \(`5.3-5.1=0.2`\), so a one\-byte delta is sent\.  | 
+| Chronological Order | Value | Bytes Sent | Description |
+| --- | --- | --- | --- |
+| 1 | 0\.0 | 4 |  Because this is the first value, it is sent as a full update\.  |
+| 2 | 0\.1 | 1 |  The change is less than five, so a one\-byte delta is sent\.  |
+| 3 | 4\.9 | 1 |  The change is still less than five, so a one\-byte delta is sent\.  |
+| 4 | 5\.1 | 4 |  The change is greater than five, so a full update is sent\.  |
+| 5 | 5\.3 | 1 |  The change since the last full update is less than five \(`5.3-5.1=0.2`\), so a one\-byte delta is sent\.  |
 
 In practice, a slowly changing float value averages 1\.4 bytes for each update\.
 

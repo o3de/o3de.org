@@ -82,7 +82,7 @@ You can test the In\-App Purchases sample on an iOS device\.
 1. On the **Users and Roles** page, click **Sandbox Testers**\.
 
 1. On the **Sandbox Testers** page, click **\+** to add sandbox tester accounts\.
-**Important**  
+**Important**
 Do not log in using this account on your device\. This will deactivate the sandbox testing account and you'll need to create a new account\.
 
 1. On your device, choose **Settings**, **iTunes**\. Log out of any accounts that are logged in\.

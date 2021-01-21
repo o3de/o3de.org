@@ -8,10 +8,10 @@ Lumberyard contains an existing set of image processing presets\. You apply thes
 
 You can define presets in two ways:
 
-**\(Recommended method\) `ImageCompiler.cpp` and `rc.ini`**  
+**\(Recommended method\) `ImageCompiler.cpp` and `rc.ini`**
 The `ImageCompiler.cpp` file contains the code that finds a file name suffix match, and points to another file for the specific settings\. The `rc.ini` file defines those specific settings for the matched suffix\.
 
-**`AssetProcessorPlatformConfig.ini`**  
+**`AssetProcessorPlatformConfig.ini`**
 The `AssetProcessorPlatformConfig.ini` file matches file name suffix patterns and then calls functions to process the file based on its matches\.
 
 **Topics**
@@ -57,8 +57,8 @@ The `rc.ini` file \(located in the `lumberyard_version\dev\Bin64vc141\rc` direct
 + Mip map settings\.
 + Naming convention presets: Image suffixes such as `_diff`, `spec/refl`, `_disp`, `_ddna`, `_ddn`, `_bump`, `cm/cubemap`, `detail`, and so on\.
 
-**Example**  
-The following snippet from the `rc.ini` file defines `NormalsFromDisplacement`\. It includes pixel formats for each operating system, maximum texture size, [mip map settings](/docs/userguide/assets/generating-mipmaps.md), colorspace, and so on\.  
+**Example**
+The following snippet from the `rc.ini` file defines `NormalsFromDisplacement`\. It includes pixel formats for each operating system, maximum texture size, [mip map settings](/docs/userguide/assets/generating-mipmaps.md), colorspace, and so on\.
 
 ```
 ...
@@ -70,7 +70,7 @@ pixelformat:es3=EAC_RG11
 ;pixelformat:ios=PVRTC4
 pixelformat:ios=EAC_RG11
 maxtexturesize:es3=1024
-maxtexturesize:ios=1024 
+maxtexturesize:ios=1024
 bumptype=1
 powof2=1
 mipnormalize=1
@@ -87,7 +87,7 @@ You can edit `ImageCompiler.cpp` and `rc.ini` to add your own image presets\.
 
 1. In a text editor, open `ImageCompiler.cpp`, located in the `lumberyard_version\dev\Code\Tools\RC\ResourceCompilerImage` directory\.
 
-1. Specify the appropriate lines of code to define your new preset\. 
+1. Specify the appropriate lines of code to define your new preset\.
 
 1. Save and close `ImageCompiler.cpp`\.
 
@@ -99,14 +99,14 @@ You can edit `ImageCompiler.cpp` and `rc.ini` to add your own image presets\.
 
 1. Save and close `rc.ini`\.
 
-**Example**  
-If you want to add a line of code that searches for file names that end in `_awesome`, you might add the following lines to your `ImageCompiler.cpp`\.  
+**Example**
+If you want to add a line of code that searches for file names that end in `_awesome`, you might add the following lines to your `ImageCompiler.cpp`\.
 
 ```
 const char* const defaultAwesomeSuffix    = "AwesomeImage";
 ```
 
-**Example**  
+**Example**
 
 ```
 else if (SuffixUtil::HasSuffix(fileName.c_str(), '_', "awesome"))
@@ -117,7 +117,7 @@ else if (SuffixUtil::HasSuffix(fileName.c_str(), '_', "awesome"))
 
 You would also add to a definition of `AwesomeImage` to the `rc.ini` file\.
 
-**Example**  
+**Example**
 
 ```
 [AwesomeImage]
@@ -138,8 +138,8 @@ filemasks=*_awesome*
 
 You can also add presets in the `AssetProcessorPlatformConfig.ini` file, located in the `lumberyard_version\dev` directory\.
 
-**Example**  
-The following snippet from `AssetProcessorPlatformConfig.ini` shows two rules, both of which match a file that ends in `_awesome.tiff`\. The image is processed for each rule that it matches\. In this example, multiple results \(assets\) would be produced for each image\.  
+**Example**
+The following snippet from `AssetProcessorPlatformConfig.ini` shows two rules, both of which match a file that ends in `_awesome.tiff`\. The image is processed for each rule that it matches\. In this example, multiple results \(assets\) would be produced for each image\.
 
 ```
 ...
@@ -162,6 +162,6 @@ pattern=.*(_awesome)\\.tif?
 
 1. In a text editor, open the `AssetProcessorPlatformConfig.ini` file, located in the `lumberyard_version\dev` directory\.
 
-1. Specify the appropriate lines of code to define your new preset\. 
+1. Specify the appropriate lines of code to define your new preset\.
 
 1. Save and close the file\.

@@ -6,13 +6,13 @@ title: Intermediate JSON Data Format
 # Intermediate JSON Data Format {#az-code-gen-intermediate-json-data-format}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
- The following JSON shows the intermediate data format consumed by Jinja2 custom templates\. 
+ The following JSON shows the intermediate data format consumed by Jinja2 custom templates\.
 
 ```
 {
@@ -61,7 +61,7 @@ title: Intermediate JSON Data Format
                     ...
                 },
                 ...
-            },            
+            },
             "methods": [
                 {
                     "name" : "<method_name>",

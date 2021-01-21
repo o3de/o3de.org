@@ -7,7 +7,7 @@ title: Beach City Sample Project &endash; Legacy
 
 The Beach City sample project includes free assets that you can use to create your own levels\. Although the Beach City sample project is intended to be a visual demo and is not a playable demo, you can add player controls to the level if you wish to make it playable\.
 
-**Note**  
+**Note**
 This package is compatible with Lumberyard 1\.9 and earlier\.
 
 **To install the Beach City sample project**
@@ -15,7 +15,7 @@ This package is compatible with Lumberyard 1\.9 and earlier\.
 1. Download the `BeachCity.zip` package at [Lumberyard Previous Versions](https://aws.amazon.com/lumberyard/downloads/previous-versions/) and extract it in your Lumberyard directory\. For example, `\Lumberyard\1.x.0.0`\.
 
 1. Open the [**Lumberyard Setup Assistant**](/docs/userguide/lumberyard-launcher-using.md)\. On the **Summary** page, click **Project Configurator**\.
-**Note**  
+**Note**
 To ensure that the Beach City project launches, you must use **Lumberyard Setup Assistant** to open the **Project Configurator**\. **Lumberyard Setup Assistant** copies required SDKs from the `3rdParty` directory into the `dev\BeachCity` directory\.
 
 1. In the Project Configurator, select **BeachCity**\.

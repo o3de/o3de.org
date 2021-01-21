@@ -7,7 +7,7 @@ title: Enable Volumetric Scattering
 
 Adds a volumetric effect for simulating fog, snow, or other environments\. You can specify the color, speed, and amount for each effect, so that you can simulate various environments, such as lava\.
 
-**Note**  
+**Note**
 This effect has high performance impact and can negatively affect the frame rate\.
 
 To disable the effect, see [Disable Volumetric Scattering](/docs/userguide/rendering/disable/volumetric-scattering-node.md)\.
@@ -21,21 +21,21 @@ To disable the effect, see [Disable Volumetric Scattering](/docs/userguide/rende
 ## Inputs {#enable-volumetric-scattering-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Amount | Number |  Sets volumetric scattering amount\. Default value: `1`  | 
-| Tiling | Number |  Sets volumetric scattering tiling\. Default value: `1`  | 
-|  Speed  | Number |  Sets volumetric scattering animation speed\. Default value: `1`  | 
-| Color | Color | Sets volumetric scattering color tint\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Amount | Number |  Sets volumetric scattering amount\. Default value: `1`  |
+| Tiling | Number |  Sets volumetric scattering tiling\. Default value: `1`  |
+|  Speed  | Number |  Sets volumetric scattering animation speed\. Default value: `1`  |
+| Color | Color | Sets volumetric scattering color tint\. |
 
 ## Outputs {#enable-volumetric-scattering-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

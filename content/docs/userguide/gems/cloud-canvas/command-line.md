@@ -9,7 +9,7 @@ Cloud Canvas provides the `\dev\lmbr_aws.cmd` command line tool for working with
 
 Notes
 +  Lumberyard 1\.9 renamed some `lmbr_aws` commands\. For a list of the older commands and their newer equivalents, see [Command Reorganization](/docs/userguide/gems/cloud-canvas/command-line-revision.md)\.
-+ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)\. 
++ For information on using Dynamic Content Cloud Gem `lmbr_aws` commands to update dynamic content, see [Using the Dynamic Content Command Line](/docs/userguide/gems/cloud-canvas/dc-lmbr-aws.md)\.
 + For information on `lmbr_aws` commands for the Cloud Gem Portal and the cloud gem framework, see [Using the Cloud Gem Framework Command Line](/docs/userguide/gems/cloud-canvas/command-line-cgf.md)\.
 + For information on `lmbr_aws` commands that manage roles and permissions, see [Using the Cloud Canvas Command Line to Manage Roles and Permissions](/docs/userguide/gems/cloud-canvas/rm-security-lmbr-aws.md)\.
 
@@ -45,13 +45,13 @@ The following arguments can be used to override the AWS configuration from all o
 
 Most of the `lmbr_aws` commands accept the following arguments, in addition to their own individual arguments:
 + `--aws-directory {aws}` - Identifies the `{game}\AWS` directory to use\. The default is the value of the `sys_game_folder` property from `{root}\bootstrap.cfg` with `AWS` appended\.
-+ `--game-directory {directory}` - Location of the game project directory\. The default is `{root}\{game}` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
++ `--game-directory {directory}` - Location of the game project directory\. The default is `{root}\{game}` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\.
 + `--help` or `-h` - Display help for the command\.
 + `--no-prompt` - Suppresses calls that request input from the command prompt window\.
-+ `--region-override {AWS_region}` - Specify a non\-default AWS region to use in your `local-project-settings.json` file\. 
++ `--region-override {AWS_region}` - Specify a non\-default AWS region to use in your `local-project-settings.json` file\.
 
   `--root-directory {root}` - Identifies the *lumberyard\_installation*`\dev` directory\. The default is the current working directory\.
-+ `--user-directory {user}` - Location of the user cache directory\. The default is `{root}\Cache\{game}\AWS` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
++ `--user-directory {user}` - Location of the user cache directory\. The default is `{root}\Cache\{game}\AWS` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\.
 + `--verbose` - Shows additional output when executing commands\.
 
 ## Commands {#cloud-canvas-command-line-commands}
@@ -67,62 +67,62 @@ The `lmbr_aws cloud-gem` commands create, enable, and disable cloud gems\.
 Create a cloud gem\. This command is new in Lumberyard 1\.11\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `cloud-gem create` command accepts the following arguments:
-+ `--directory {path}` 
++ `--directory {path}`
 
   Optional\. The directory where the gem is created\. The default is `\dev\Gems\{name}\v{N}`, where *\{name\}* is the name that was specified by the `--gem` option and *\{N\}* is the major part of the gem version number as specified by the `--version` option\.
 + `--enable`
 
   Optional\. Enable the gem for the current project when the gem is created\. By default, the gem is not enabled when it is created\.
-+ `--gem {name}` 
++ `--gem {name}`
 
   Required\. The name of the gem to create\.
-+ `--initial-content {initial-content-type}` 
++ `--initial-content {initial-content-type}`
 
   Optional\. Initialize the cloud gem's `AWS` directory with the contents specified by `{initial-content-type}`\.
 
   Following are possible values for `{initial-content-type}`\.
-**Note**  
-Before you can use the `api` content options, do one of the following:  
+**Note**
+Before you can use the `api` content options, do one of the following:
 In Lumberyard Setup Assistant, choose **Compile the game code**
-From a command prompt window on the `\dev\Tools\LmbrSetup\Win` directory, enter the following command:  
+From a command prompt window on the `\dev\Tools\LmbrSetup\Win` directory, enter the following command:
 
     ```
     lmbr capabilities enable compilegame
     ```
-  + `api-lambda` 
+  + `api-lambda`
 
-    Define a resource group with Amazon API Gateway and AWS Lambda function resources that conform to the Cloud Gem Framework's Service API pattern\. You can add AWS resources as needed\. 
-  + `api-lambda-bucket` 
+    Define a resource group with Amazon API Gateway and AWS Lambda function resources that conform to the Cloud Gem Framework's Service API pattern\. You can add AWS resources as needed\.
+  + `api-lambda-bucket`
 
     Define a resource group with API Gateway and Lambda function resources that conform to the Cloud Gem Framework's Service API pattern\. Also creates an Amazon S3 bucket resource\.
-  + `api-lambda-dynamodb` 
+  + `api-lambda-dynamodb`
 
     Define a resource group with API Gateway and Lambda function resources that conform to the Cloud Gem Framework's Service API pattern\. Also creates an Amazon DynamoDB table resource\.
-  + `bucket` 
+  + `bucket`
 
     Define a resource group that has an Amazon S3 bucket resource\.
-  + `lambda` 
+  + `lambda`
 
     Define a resource group that has a Lambda function resource\.
-  + `no-resources` 
+  + `no-resources`
 
     Define a resource group that has no resources \(except [AccessControl](/docs/userguide/gems/cloud-canvas/setting-access-permissions#cloud-canvas-setting-access-permissions-access-control), which is required\)\. This is the default value\.
-  + `resource-manager-plugin` 
+  + `resource-manager-plugin`
 
     Define a resource manager plugin\.
-+ `--no-cpp-code` 
++ `--no-cpp-code`
 
    Optional\. Define a gem that contains no C\+\+ code and does not build as a `.dll` file\. The gem can contain resource group definitions and/or resource manager plugins\.
-+  `--version {version}` 
++  `--version {version}`
 
-  Optional\. Set the gem version to the number specified by `{version}`\. The default is `1.0.0`\. The version number must be in the format `{number}.{number}.{number}`\. 
+  Optional\. Set the gem version to the number specified by `{version}`\. The default is `1.0.0`\. The version number must be in the format `{number}.{number}.{number}`\.
 
 #### cloud\-gem disable {#cloud-canvas-command-line-cloud-gem-disable}
 
 Disable a cloud gem that is in the current project\. This command is new in Lumberyard 1\.11\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `cloud-gem disable` command accepts the following arguments:
-+ `--gem {name}` 
++ `--gem {name}`
 
   Required\. The name of the gem to disable\.
 
@@ -131,7 +131,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 Enable a cloud gem that is in the current project\. This command is new in Lumberyard 1\.11\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `cloud-gem enable` command accepts the following arguments:
-+ `--gem {name}` 
++ `--gem {name}`
 
   Required\. The name of the gem to enable\.
 
@@ -140,10 +140,10 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 Import generated voice packages from the Cloud Gem Text\-to\-Speech service into a project\. This command is new in Lumberyard 1\.11\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `cloud-gem-tts import-tts-zip` command accepts the following arguments:
-+ `--download-path {zip-path}` 
++ `--download-path {zip-path}`
 
   Required\. The absolute path to a `.zip` file that was downloaded from the Text\-to\-Speech Cloud Gem Portal\.
-+ ` --import-as-wav` 
++ ` --import-as-wav`
 
    Optional\. Converts audio files to `.wav` file format when they are extracted\.
 
@@ -153,9 +153,9 @@ For more information on downloading and importing speech files, see [Text\-to\-S
 
 The `lmbr_aws deployment` commands manage Cloud Canvas deployments\.
 
-**Note**  
-In Lumberyard 1\.16 and later versions, the `deployment` commands install, modify, or remove gems in series rather than in parallel\. This prevents issues that can occur in AWS when multiple resource groups are created, updated, or deleted at the same time\.  
-This default behavior can be overridden with the `--parallel` option, as in the following examples:  
+**Note**
+In Lumberyard 1\.16 and later versions, the `deployment` commands install, modify, or remove gems in series rather than in parallel\. This prevents issues that can occur in AWS when multiple resource groups are created, updated, or deleted at the same time\.
+This default behavior can be overridden with the `--parallel` option, as in the following examples:
 
 ```
 lmbr_aws deployment create --deployment deployment_name --parallel
@@ -163,12 +163,12 @@ lmbr_aws deployment update --parallel
 lmbr_aws deployment delete --deployment deployment_name --parallel
 ```
 
-**Warning**  
-Because it greatly increases the risk of errors when you modify your deployment, use of the `--parallel` option is not recommended\. 
+**Warning**
+Because it greatly increases the risk of errors when you modify your deployment, use of the `--parallel` option is not recommended\.
 
 #### deployment create {#cloud-canvas-command-line-deployment-create}
 
-Create a complete and independent copy of all the resources needed by the Lumberyard project\. 
+Create a complete and independent copy of all the resources needed by the Lumberyard project\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `deployment create` command accepts the following arguments:
 + `--deployment {deployment-name}` or `-d {deployment-name}`
@@ -202,7 +202,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
 #### deployment delete {#cloud-canvas-command-line-deployment-delete}
 
-Delete a complete and independent copy of all the resources needed by the Lumberyard project\. 
+Delete a complete and independent copy of all the resources needed by the Lumberyard project\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `deployment delete` command accepts the following arguments:
 + `--deployment {deployment-name}` or `-d {deployment-name}`
@@ -212,7 +212,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   Optional\. Acknowledges that the command will permanently delete the resources for the specified deployment\. If this argument is not specified, a confirmation prompt is issued\.
 
-**Note**  
+**Note**
 AWS CloudFormation cannot delete stacks that define Amazon S3 buckets that contain data\. To allow project stacks to be deleted, the `project-template.json` file specifies a `DeletionPolicy` of `Retain` for the configuration bucket\. This causes AWS CloudFormation to not delete the bucket when the project stack is deleted\. After the project stack has been deleted, the command removes all the objects from the configuration bucket and then deletes the bucket\.
 
 #### deployment list {#cloud-canvas-command-line-deployment-list}
@@ -256,7 +256,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 + `--show`
 
   Optional\. Displays a list of the deployments that are currently protected\.
-**Note**  
+**Note**
 To display the protected status of deployments, you can also use either the [deployment list](#cloud-canvas-command-line-deployment-list) or [mappings list](#cloud-canvas-command-line-mappings-list) command\.
 
 #### deployment release {#cloud-canvas-command-line-deployment-release}
@@ -424,8 +424,8 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   Optional\. The path portion of your provider's URI\. This is only used for generic OpenID providers\.
 
   This command saves its configuration in a `player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
-**Note**  
-You must run `project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+**Note**
+You must run `project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\.
 
 #### login\-provider remove {#cloud-canvas-command-line-login-provider-remove}
 
@@ -437,8 +437,8 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   Required\. The name of the provider\.
 
   The `login-provider remove` command saves the configuration in a `/player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
-**Note**  
-You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+**Note**
+You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\.
 
 #### login\-provider update {#cloud-canvas-command-line-login-provider-update}
 
@@ -471,8 +471,8 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   Optional\. The path portion of the provider's URI\. This argument is used only for generic OpenID providers\.
 
   The `login-provider update` command saves its configuration in a `/player-access/auth-settings.json` object in the project's configuration bucket so that the `PlayerAccessTokenExchange` Lambda function can access it\.
-**Note**  
-You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\. 
+**Note**
+You must run `lmbr_aws project upload` after running this command so that the [PlayerAccessIdentityPool](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-access-template-player-access-identity-pool-resource) configuration is updated to reflect the change\.
 
 ### `mappings` Commands {#cloud-canvas-command-line-mappings-commands}
 
@@ -504,7 +504,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   Optional\. Causes the release mappings to be updated\. By default, only the mappings used when launching the game from inside the editor are updated\.
 
-  The command looks in the [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template) file for `Metadata.CloudCanvas.PlayerAccess` properties on resource definitions\. It then queries AWS CloudFormation for the physical names of those resources in the current default deployment\. If the `--release` argument is specified, the release deployment is queried\. 
+  The command looks in the [resource\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-resource-template) file for `Metadata.CloudCanvas.PlayerAccess` properties on resource definitions\. It then queries AWS CloudFormation for the physical names of those resources in the current default deployment\. If the `--release` argument is specified, the release deployment is queried\.
 + `--deployment {deployment-name}` or `-d {deployment-name}`
 
   Optional\. Exports client and server mapping files for the specified deployment to the `\dev\project_name\Config` directory in the format `{deployment_name}.player.awsLogicalMappings.json` and `{deployment_name}.server.awsLogicalMappings.json`\. The `{deployment-name}` argument is required and is case\-sensitive\.
@@ -592,7 +592,7 @@ Set, clear, or show the default AWS profile\. The `profile default` command modi
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `profile default` command accepts the following arguments:
 + `--set {profile-name}`
 
-  Optional\. Set the default profile for the current deployment to the provided AWS profile name\. 
+  Optional\. Set the default profile for the current deployment to the provided AWS profile name\.
 + `--clear`
 
   Optional\. Clear the default profile\.
@@ -640,7 +640,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   Required\. The name of the AWS profile to update\.
 
-**Note**  
+**Note**
 To make an existing profile the default profile, use the [profile default \-\-set *\{profile\-name\}*](#cloud-canvas-command-line-profile-default) command\.
 
 ### `project` Commands {#cloud-canvas-command-line-project-commands}
@@ -663,8 +663,8 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
   Optional\. Writes the default configuration data to the `{game}\AWS` directory and exits\. The directory must be empty or must not exist\.
 + `--region {region}`
 
-  Required\. The AWS region in which the project stack will be created\. 
-**Note**  
+  Required\. The AWS region in which the project stack will be created\.
+**Note**
 The `region` argument can be used only with the `project create` and `resource-importer list-importable-resources` commands\. To manually override the AWS region in other `lmbr_aws` commands, use the `--region-override` argument\.
 + `--admin-roles`
 
@@ -685,11 +685,11 @@ The `project create` command performs the following tasks:
 
 1. Uses the uploaded `project-template.json` file to perform an AWS CloudFormation stack update operation\. The `project-code.zip` file is used to create the Lambda function resources defined by the `project-template.json` file\.
 
-**Note**  
+**Note**
 If the `{root}\{game}\AWS` directory is empty or does not exist, `project create` creates the directory if necessary and copies the contents of the `dev\Tools\lmbr_aws\AWSResourceManager\default-project-content` directory to that directory\.
 `project create` fails if a stack with the specified name already exists in the configured AWS account and region\. In this case you can use the `--stack` argument to specify a different name for the project stack\.
 `project create` fails if the `dev\{game}\AWS\local-project-settings.json` file has a non\-empty `ProjectStackId` property\. Initially, the `ProjectStackId` property is not present in the `local-project-settings.json` file\. After the project stack is created in step 1, the `ProjectStackId` property is written to the file and is the project's AWS CloudFormation stack ID \.
-If the stack update process in step 2 fails on the first attempt, you can retry by using the `project upload` command\. 
+If the stack update process in step 2 fails on the first attempt, you can retry by using the `project upload` command\.
 
 #### project create\-extension\-template {#cloud-canvas-command-line-project-create-extension-template}
 
@@ -717,7 +717,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
   AWS CloudFormation cannot delete stacks that define Amazon S3 buckets that contain data\. To allow project stacks to be deleted, the `project-template.json` file specifies a `DeletionPolicy` of `Retain` for the configuration bucket\. This causes AWS CloudFormation to not delete the bucket when the project stack is deleted\. After the project stack has been deleted, the command removes all the objects from the configuration bucket and then deletes the bucket\.
 
-**Note**  
+**Note**
 Before you use the `project delete` command, ensure that the default AWS credentials specified by the `~/.aws/credentials` file on the local file system are the same as the credentials that are specified in the Cloud Canvas **Credentials Manager**\. If the credentials are not the same, the project might not delete properly\. You can use the [Cloud Canvas Cleanup Tool](/docs/userguide/gems/cloud-canvas/administration-aws-resource-cleanup#cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool) to remove orphaned resources after a failed project stack deletion\.
 
 #### project list\-resources {#cloud-canvas-command-line-project-list-resources}
@@ -744,7 +744,7 @@ The project update command performs the following tasks:
 
 1. Uses the uploaded `project-template.json` file to perform an AWS CloudFormation stack update operation\. The `project-code.zip` file is used to create the Lambda function resources defined by the `project-template.json` file\.
 
-**Note**  
+**Note**
 The `project update` command fails if the `dev\{game}\AWS\local-project-settings.json` file does not exist or does not have a valid `ProjectStackId` property\.
 
 #### project update\-framework\-version {#cloud-canvas-command-line-project-update-framework-version}
@@ -770,13 +770,13 @@ The `lmbr_aws resource-group` commands manage the resource groups in your Cloud 
 
 #### resource\-group add {#cloud-canvas-command-line-resource-group-add}
 
-**Note**  
+**Note**
 The functionality of this command has changed in Lumberyard 1\.11\. This command is deprecated in favor of the [resource\-group enable](#cloud-canvas-command-line-resource-group-enable) and [cloud\-gem create](#cloud-canvas-command-line-cloud-gem-create) commands\. As of Lumberyard 1\.11, project local resource groups are deprecated in favor of cloud gems\. Because cloud gems are reusable, we recommend that you use them instead of local resource groups\.
 
 As of Lumberyard 1\.11, the `resource-group add` command has the following behavior:
 + If the resource group specified in the `--resource-group` parameter exists but is disabled, the resource group is enabled\. This is the equivalent of the `lmbr_aws resource-group enable` command\.
 + If the resource group does not exist, the `lmbr_aws cloud-gem create` command is called to create a new resource group in a cloud gem\. The name of the cloud gem is specified by the `--resource-group {resource-group-name}` parameter\.
-  + By default, the new gem has no resources\. This corresponds to the `cloud-gem create` command's `--initial-content no-resources` option\. 
+  + By default, the new gem has no resources\. This corresponds to the `cloud-gem create` command's `--initial-content no-resources` option\.
   + If the `--include-example-resources` option is specified, the equivalent of the `cloud-gem create` command's `--initial-content api-lambda-dynamodb` option is called\.
 
 In addition to the [Common Arguments](#cloud-canvas-command-line-common-arguments), the `resource-group add` command accepts the following arguments:
@@ -804,8 +804,8 @@ By default, when a cloud gem is enabled for a project, all its resource groups a
 + When a deployment is updated, the resources that were defined by the disabled resource group are removed\.
 + The resource group is added to a list of disabled resource groups in the project's `local-project-settings.json` file\.
 
-**Note**  
-Prior to Lumberyard 1\.11, the `local-project-settings.json` file kept a list of *enabled* resource groups\. By default, all of a cloud gem's resource groups are enabled when the cloud gem is enabled\. Therefore, listing only the disabled resource groups makes it easier to identify them\. 
+**Note**
+Prior to Lumberyard 1\.11, the `local-project-settings.json` file kept a list of *enabled* resource groups\. By default, all of a cloud gem's resource groups are enabled when the cloud gem is enabled\. Therefore, listing only the disabled resource groups makes it easier to identify them\.
 
 Usually it is better to disable the cloud gem that provides a resource group than to disable the resource group itself\. Therefore, we recommend that you use the `resource-group disable` command only for debugging or testing\. To reenable a resource group, you can use the `lmbr_aws resource-group enable` command\.
 
@@ -850,7 +850,7 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 
 #### resource\-group remove {#cloud-canvas-command-line-resource-group-remove}
 
-**Note**  
+**Note**
 The functionality of this command has changed in Lumberyard 1\.11\. This command is deprecated in favor of the [cloud\-gem disable](#cloud-canvas-command-line-cloud-gem-disable) and [resource\-group disable](#cloud-canvas-command-line-resource-group-disable) commands\.
 
 As of Lumberyard 1\.11, the `resource-group remove` command has the following behavior:
@@ -919,5 +919,5 @@ In addition to the [Common Arguments](#cloud-canvas-command-line-common-argument
 + `--region {region}`
 
   Optional\. The AWS region of the resources\. The default value is the region of the project stack, if it exists\.
-**Note**  
+**Note**
 The `region` argument can be used only with the `resource-importer list-importable-resources` and `project create` commands\. To manually override the AWS region in other `lmbr_aws` commands, use the `--region-override` argument\.

@@ -23,23 +23,23 @@ class TransformComponentRequests
       : public AZ::ComponentBus // EBus traits for component buses: identification is based on an entity ID.
 {
       public:
-      
+
       // EBusTraits overrides - Only a single handler is allowed for a given entity ID.
       // Only one component on a entity can implement the events.
-      static const EBusHandlerPolicy HandlerPolicy = EBusHandlerPolicy::Single;  
+      static const EBusHandlerPolicy HandlerPolicy = EBusHandlerPolicy::Single;
 
       // Returns the local transform (parent transform excluded).
       virtual const Transform& GetLocalTM() = 0;
 
       // Sets the local transform and notifies all interested parties.
       virtual void SetLocalTM(const Transform& /*tm*/) {}
-      
+
       // Returns the world transform (including parent transform).
       virtual const Transform& GetWorldTM() = 0;
 
       // Sets the world transform and notifies all interested parties.
       virtual void SetWorldTM(const Transform& /*tm*/) {}
-      
+
       // Returns both local and world transforms.
       virtual void GetLocalAndWorld(Transform& /*localTM*/, Transform& /*worldTM*/) {}
 
@@ -92,13 +92,13 @@ virtual const Transform& GetLocalTM() = 0;
 
 // Sets the local transform and notifies all interested parties.
 virtual void SetLocalTM(const Transform& /*tm*/) {}
-      
+
 // Returns the world transform (including parent transform).
 virtual const Transform& GetWorldTM() = 0;
 
 // Sets the world transform and notifies all interested parties.
 virtual void SetWorldTM(const Transform& /*tm*/) {}
-      
+
 // Returns both local and world transforms.
 virtual void GetLocalAndWorld(Transform& /*localTM*/, Transform& /*worldTM*/) {}
 
@@ -119,7 +119,7 @@ Another best practice is to use descriptive names in EBuses and avoid overloaded
 
 A component uses its notification bus to inform other components and the rest of the engine about relevant changes\. To do this, it sends notifications in the form of EBus events to any class that monitors the bus\. To monitor the bus, classes implement the notification bus handler interface \(in the case of `TransformComponent`, this is `AZ::TransformNotificationBus::Handler`\.\)
 
-**Note**  
+**Note**
 A request bus sends messages **to** a component; a notification bus sends messages **from** a component\.
 
 ### Transform Notification Event Group {#component-entity-system-pg-components-and-ebuses-transform-notification-event-group}
@@ -154,19 +154,19 @@ class TransformComponent
       ...
 
       // TransformBus.
-      
+
       /// Returns true if the tm was set to the local transform.
       const AZ::Transform& GetLocalTM() override { return m_localTM; }
-      
+
       /// Sets the local transform and notifies all interested parties.
       void SetLocalTM(const AZ::Transform& tm) override;
-      
+
       /// Returns true if the transform was set to the world transform.
       const AZ::Transform& GetWorldTM() override { return m_worldTM; }
-      
+
       /// Sets the world transform and notifies all interested parties.
       void SetWorldTM(const AZ::Transform& tm) override;
-      
+
       /// Returns both local and world transforms.
       void GetLocalAndWorld(AZ::Transform& localTM, AZ::Transform& worldTM) override { localTM = m_localTM; worldTM = m_worldTM; }
 

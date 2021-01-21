@@ -5,7 +5,7 @@ title: Adding Waterfalls
 ---
 # Adding Waterfalls {#terrain-water-waterfalls}
 
-A waterfall is a natural feature to add to cliffs or when a river changes elevation or course\. Waterfalls are placed as 2D decals in the terrain\. 
+A waterfall is a natural feature to add to cliffs or when a river changes elevation or course\. Waterfalls are placed as 2D decals in the terrain\.
 
 **To add a waterfall**
 

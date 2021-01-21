@@ -11,19 +11,19 @@ The **Audio Trigger** component provides basic play and stop features so that yo
 
 The Audio Trigger component has the following properties\.
 
-**Default 'play' Trigger**  
+**Default 'play' Trigger**
 Enter the name of the audio trigger that this component runs when **'play'** is called\. You can change this property to specify a different default audio trigger\.
 
-**Default 'stop' Trigger**  
+**Default 'stop' Trigger**
 Enter the name of the audio trigger that this component runs when **'stop'** is called\. You can specify any trigger here; you do not need to specify a **'stop'** trigger in order to stop audio, but it is a best practice to pair the two triggers\. If you leave this setting blank, the **'stop'** trigger simply stops the audio trigger specified for **'play'**\.
 
-**Obstruction Type**  
-Select an option for the raycasts used in calculation of obstruction and occlusion\.  
+**Obstruction Type**
+Select an option for the raycasts used in calculation of obstruction and occlusion\.
 + **Ignore**
 + **SingleRay**
 + **MultiRay**
 
-**Play immediately**  
+**Play immediately**
 Select this option to run upon component activation the audio **'play'** trigger\.
 
 ## EBus Request Bus Interface {#component-audio-trigger-ebusrequest}
@@ -36,78 +36,78 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Runs the default **'play'** trigger, if set\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### Stop {#audio-ebus-stop}
 
 Runs the default **'stop'** trigger, if set\. If no **'stop'** trigger is set, ends the default **'play'** trigger\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### ExecuteTrigger {#audio-ebus-execute}
 
 Runs the specified audio trigger\.
 
-**Parameters**  
+**Parameters**
 `triggerName` - Name of the audio trigger to run\.
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### KillTrigger {#audio-ebus-kill}
 
 Cancels the specified audio trigger\.
 
-**Parameters**  
+**Parameters**
 `triggerName` - Name of the audio trigger to cancel\.
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### KillTrigger {#audio-ebus-killall}
 
 Cancels all audio triggers that are active on an entity\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetMovesWithEntity {#audio-ebus-setmoves}
 
 Specifies whether triggers should update position as the entity moves\.
 
-**Parameters**  
+**Parameters**
 `shouldTrackEntity` - Boolean indicating whether triggers should track the entity's position\.
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ## EBus Response Bus Interface {#component-audio-trigger-ebusresponse}
@@ -120,11 +120,11 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Informs all listeners about an audio trigger that has finished playing \(the sound has ended\)\.
 
-**Parameters**  
+**Parameters**
 `triggerId` - ID of trigger that was successfully executed\.
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes

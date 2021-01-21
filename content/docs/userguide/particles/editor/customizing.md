@@ -8,23 +8,23 @@ The **Particle Editor** has a customizable interface so you can set up your work
 
 You can customize the **Particle Editor** in the following ways:
 
-**Floating panels**  
+**Floating panels**
 Drag the panel title bar to separate the panel from the editor and make it a floating window\.
 
-**Docking panels**  
+**Docking panels**
 Dock panels on the edges of the window or anywhere an orange highlight appears\. To dock a floating panel, drag the panel title bar into the **Particle Editor** window\.
 
-**Tabbing panels**  
+**Tabbing panels**
 You can dock a panel inside another panel to create a tabbed view\. Toggle the tabs to display one panel and hide the other\. This option minimizes the number of panels that are visible at a time\.
 
-**Showing or hiding panels**  
+**Showing or hiding panels**
 Customize which panels are visible by clicking **View** and choosing a panel to show or hide\.
 
-**Resetting the layout**  
+**Resetting the layout**
 To reset the **Particle Editor** layout, click **View**, **Reset to Default Layout**\. This positions the **Libraries** panel on the top left, the **Preview** panel on the middle left, the **Level of detail** panel on the bottom left, and the **Attributes** panel on the right\.
 
-**Exporting a layout**  
+**Exporting a layout**
 You can export and share custom layouts\. After you create a layout, click **View**, **Export layout**\. Navigate to the location where you want to export the layout file\.
 
-**Importing a layout**  
+**Importing a layout**
 To import custom layouts, click **View**, **Import layout**\. Locate and select the layout file\.

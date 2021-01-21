@@ -17,29 +17,29 @@ You can also apply depth of field in the Track View\. See [Adding a Depth of Fie
 
 ![\[enabledepthoffieldnode, enabledepthoffield\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-depth-of-field-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Depth of Field node to simulate focusing like a camera.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-depth-of-field-node-example.png)
 
 ## Inputs {#enable-depth-of-field-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Focus Distance | Number |  Distance the focus is from the camera\. Positive values are in front of the camera while negative values are behind the camera\.  | 
-|  Focus Range  | Number |  Distance toward and away from the camera until maximum blurriness is reached\.  | 
-| Blur Amount | Number | Maximum blurriness value\. | 
-| CoC Scale | Number |  Sets the circle of confusion scale when a cone of light in a specific area appears unfocused or blurry\. For example, a cone of light from a lens focuses on a specific point, but the light does not appear in perfect focus\.   This is also known as the blur circle of a blur spot\.  | 
-| Center Weight | Number | Sets the central samples weight\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Focus Distance | Number |  Distance the focus is from the camera\. Positive values are in front of the camera while negative values are behind the camera\.  |
+|  Focus Range  | Number |  Distance toward and away from the camera until maximum blurriness is reached\.  |
+| Blur Amount | Number | Maximum blurriness value\. |
+| CoC Scale | Number |  Sets the circle of confusion scale when a cone of light in a specific area appears unfocused or blurry\. For example, a cone of light from a lens focuses on a specific point, but the light does not appear in perfect focus\.   This is also known as the blur circle of a blur spot\.  |
+| Center Weight | Number | Sets the central samples weight\. |
 
 ## Outputs {#enable-depth-of-field-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

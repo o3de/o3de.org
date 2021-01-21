@@ -17,7 +17,7 @@ To create a child emitter, you first set the parent effect and then attach the c
 1. Enter a name for the child emitter and then press **Enter**\.
 
 **To assign an existing emitter to be a child**
-+ Drag the emitter on top of another emitter\. The selected emitter is nested underneath as a child\. 
++ Drag the emitter on top of another emitter\. The selected emitter is nested underneath as a child\.
 
 **To remove a child emitter from a parent**
 + Drag the child emitter to the preferred location\. Alternatively, you can drag the child emitter to the library name to detach it from its parent and make it appear at the bottom of the emitter stack\.

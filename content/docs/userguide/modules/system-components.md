@@ -4,28 +4,28 @@ title: System Components
 ---
 # System Components {#az-module-system-components}
 
-A traditional game engine contains many singleton classes, each in charge of a major system\. In Lumberyard, these singletons are built using the same [component entity system](/docs/userguide/components/intro.md) that powers gameplay entities\. When an application starts, a *system entity* is created\. Components added to this entity are known as *system components*\. The system entity always has the ID `AZ::SystemEntityId (0)`\. 
+A traditional game engine contains many singleton classes, each in charge of a major system\. In Lumberyard, these singletons are built using the same [component entity system](/docs/userguide/components/intro.md) that powers gameplay entities\. When an application starts, a *system entity* is created\. Components added to this entity are known as *system components*\. The system entity always has the ID `AZ::SystemEntityId (0)`\.
 
-When you build singletons as Lumberyard system components, you are using a powerful suite of complementary technologies that facilitate problem resolution through established patterns\. This topic describes system components in detail\. 
+When you build singletons as Lumberyard system components, you are using a powerful suite of complementary technologies that facilitate problem resolution through established patterns\. This topic describes system components in detail\.
 
 ## Smart Initialization Order {#az-module-system-components-smart-initialization-order}
 
-As a game engine grows in size, it tends to develop many singleton classes\. A singleton class often requires communication with other singletons to function\. This means that the order in which singletons are initialized is very important\. Lumberyard solves this by building singletons as components\. 
+As a game engine grows in size, it tends to develop many singleton classes\. A singleton class often requires communication with other singletons to function\. This means that the order in which singletons are initialized is very important\. Lumberyard solves this by building singletons as components\.
 
-A component can declare the services that it provides and the services on which it depends\. When components are activated, they are sorted according to these declared dependencies, ensuring proper initialization order\. 
+A component can declare the services that it provides and the services on which it depends\. When components are activated, they are sorted according to these declared dependencies, ensuring proper initialization order\.
 
-The following example shows two components that Lumberyard has ordered for initialization\. 
+The following example shows two components that Lumberyard has ordered for initialization\.
 
 ```
 class AssetDatabaseComponent : public Component
 {
     ...
-    
+
     static void GetProvidedServices(ComponentDescriptor::DependencyArrayType& provided)
     {
         provided.push_back(AZ_CRC("AssetDatabaseService"));
     }
-    
+
     ...
 };
 
@@ -40,28 +40,28 @@ class AssetCatalogComponent : public AZ::Component
 };
 ```
 
-The example shows the following: 
+The example shows the following:
 + `AssetDatabaseComponent` is activated before `AssetCatalogComponent`\.
 + In the `AssetDatabaseComponent` class, the `GetProvidedServices` function reveals that the class provides a service called `AssetDatabaseService`\.
-+ In the `AssetCatalogComponent` class, the `GetRequiredServices` function reveals that `AssetCatalogComponent` depends on `AssetDatabaseService`\. Lumberyard understands this dependency and orders the initialization accordingly\. 
++ In the `AssetCatalogComponent` class, the `GetRequiredServices` function reveals that `AssetCatalogComponent` depends on `AssetDatabaseService`\. Lumberyard understands this dependency and orders the initialization accordingly\.
 
- 
+
 
 For more information about the initialization order of components, see [The AZ Bootstrapping Process](/docs/userguide/modules/bootstrap.md)\.
 
 ## Easily Configurable Components {#az-module-system-components-easily-configurable}
 
-Often, a singleton has settings that are configurable for each game\. It can be difficult for a low\-level singleton to access configuration data if the system used to process this data hasn't started\. Therefore, low\-level singletons often rely on simple data sources such as command line parsers or `.ini` files\. 
+Often, a singleton has settings that are configurable for each game\. It can be difficult for a low\-level singleton to access configuration data if the system used to process this data hasn't started\. Therefore, low\-level singletons often rely on simple data sources such as command line parsers or `.ini` files\.
 
-A system component can expose its configuration through [AZ reflection](/docs/userguide/components/entity-system-reflect-component.md)\. The [Advanced Settings dialog box in the Project Configurator](/docs/userguide/modules/system-entities-configuring.md) uses this feature to enable the configuration of system components on a per\-game basis\. The Project Configurator saves an [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) that contains the settings for each system component, and this file is used to bootstrap the application and configure each component before it is activated\. This is the same technology that the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)** uses to configure gameplay entities in Lumberyard Editor\. 
+A system component can expose its configuration through [AZ reflection](/docs/userguide/components/entity-system-reflect-component.md)\. The [Advanced Settings dialog box in the Project Configurator](/docs/userguide/modules/system-entities-configuring.md) uses this feature to enable the configuration of system components on a per\-game basis\. The Project Configurator saves an [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) that contains the settings for each system component, and this file is used to bootstrap the application and configure each component before it is activated\. This is the same technology that the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)** uses to configure gameplay entities in Lumberyard Editor\.
 
 For more information, see [Configuring System Entities](/docs/userguide/modules/system-entities-configuring.md)\.
 
 ## Writing System Components {#az-module-system-components-writing}
 
-To designate a component as a system component, rather than a gameplay component, you must set the `AppearsInAddComponentMenu` field to `System` when you reflect to the `EditContext`\. 
+To designate a component as a system component, rather than a gameplay component, you must set the `AppearsInAddComponentMenu` field to `System` when you reflect to the `EditContext`\.
 
-The following example code designates the `MemoryComponent` as a system component\. 
+The following example code designates the `MemoryComponent` as a system component\.
 
 ```
 void MemoryComponent::Reflect(ReflectContext* context)
@@ -84,9 +84,9 @@ For more information on writing system components, see [Creating System Componen
 
 ## Required System Components {#az-module-system-components-required}
 
-Often, a module requires the existence of a system component\. This requirement can be established through the module's `GetRequiredSystemComponents()` function\. Any component type declared here is guaranteed to exist when the application starts\. 
+Often, a module requires the existence of a system component\. This requirement can be established through the module's `GetRequiredSystemComponents()` function\. Any component type declared here is guaranteed to exist when the application starts\.
 
-In the following example, the Oculus gem requires the `OculusDevice` component\. 
+In the following example, the Oculus gem requires the `OculusDevice` component\.
 
 ```
 AZ::ComponentTypeList OculusGem::GetRequiredSystemComponents() const override

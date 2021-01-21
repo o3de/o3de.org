@@ -10,13 +10,13 @@ Schedules all procedural materials that have pending parameter changes to regene
 
 The node returns a **Render ID**, which you can use with the **[On Render Finished](/docs/userguide/on-render-finished-node.md)** node to detect when the textures finish updating\. This should only be necessary if you need to synchronize another action with the texture update\.
 
-If the **Force** parameter is disabled, the node renders only procedural materials that are not currently rendering\. Use this option when updating procedural materials every frame\. Otherwise, the render queue can back up and may not catch up\. 
+If the **Force** parameter is disabled, the node renders only procedural materials that are not currently rendering\. Use this option when updating procedural materials every frame\. Otherwise, the render queue can back up and may not catch up\.
 
 When the **Force** parameter is enabled, the node is guaranteed to render the changes\. Use this option to make only occasional updates to the procedural material, or if you previously updated the procedural material every frame and you want a final update to guarantee that the update is not missed\.
 
 For an example script with the **Render Asynchronous** node, see the [example script](/docs/userguide/scripting/scriptcanvas/procedural-material-nodes#example-brick-wall-render-asynchronous-script)\.
 
-**Note**  
+**Note**
 If the **Set Input <Type>** nodes don't modify a procedural material, which means the procedural material doesn't have pending parameter changes, the **Render Asynchronous** node ignores the material\.
 
 **Contents**
@@ -28,19 +28,19 @@ If the **Set Input <Type>** nodes don't modify a procedural material, which mean
 ## Inputs {#render-asynchronous-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Force | Boolean |  Forces the render to be scheduled\. Specify `false` for better performance on high frequency updates\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Force | Boolean |  Forces the render to be scheduled\. Specify `false` for better performance on high frequency updates\.  |
 
 ## Outputs {#render-asynchronous-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Render ID | Number | Unique ID for the scheduled render process\. The value is 0 if a render was not scheduled\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Render ID | Number | Unique ID for the scheduled render process\. The value is 0 if a render was not scheduled\. |

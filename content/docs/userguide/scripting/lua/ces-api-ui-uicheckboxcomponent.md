@@ -47,7 +47,7 @@ Returns the action triggered when the check box is cleared\.
 **Syntax**
 
 ```
-const AZStd::string & GetTurnOffActionName() 
+const AZStd::string & GetTurnOffActionName()
 ```
 
 ### GetTurnOnActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnonactionname}

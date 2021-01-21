@@ -6,17 +6,17 @@ title: '&whitebox; component'
 # White Box component {#component-white-box}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is an [experimental](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#experimental) release and is subject to change\.  | 
+| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The **White Box** component is a tool you can use to sketch 3D proxy meshes in Lumberyard Editor\. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity\. 
+The **White Box** component is a tool you can use to sketch 3D proxy meshes in Lumberyard Editor\. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity\.
 
 ![\[White Box component interface.\]](/images/userguide/component/whitebox/white-box-A-1.25.gif)
 
-Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in Lumberyard Editor before investing the time and effort into building finished models for your entity\. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components\. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets\. 
+Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in Lumberyard Editor before investing the time and effort into building finished models for your entity\. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components\. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets\.
 
 **Topics**
 + [White Box properties](#component-white-box-properties)
@@ -26,45 +26,45 @@ Because **White Box** is implemented as a component, you can create well\-define
 
 ![\[White Box component interface.\]](/images/userguide/component/whitebox/ui-white-box-1.25.png)
 
-****Default Shape****  
-The default primitive shape of the white box mesh\. From the list you can select a primitive shape, or choose to load a saved white box mesh \(`.wbm`\) asset\. The default primitive size is one meter in world space\.   
+****Default Shape****
+The default primitive shape of the white box mesh\. From the list you can select a primitive shape, or choose to load a saved white box mesh \(`.wbm`\) asset\. The default primitive size is one meter in world space\.
 
 **White Box default shapes:**
-+ **Cube** 
-+ **Tetrahedron** 
-+ **Icosahedron** 
-+ **Cylinder** 
-+ **Sphere** 
-+ **Custom Mesh Asset** 
-When **Custom Mesh Asset** is selected, a **Mesh Asset** file field appears in the component interface below **Default Shape** that you can use to select a saved white box mesh \(`.wbm`\) asset\. 
++ **Cube**
++ **Tetrahedron**
++ **Icosahedron**
++ **Cylinder**
++ **Sphere**
++ **Custom Mesh Asset**
+When **Custom Mesh Asset** is selected, a **Mesh Asset** file field appears in the component interface below **Default Shape** that you can use to select a saved white box mesh \(`.wbm`\) asset\.
 
-****Save as asset****  
-Save the proxy mesh to a white box mesh \(`.wbm`\) asset\. You can load the saved \(`.wbm`\) asset in other **White Box** components\. The `.wbm` file functions like an instance, and any changes made to the mesh propagate to all **White Box** components that use the `.wbm` file\.   
+****Save as asset****
+Save the proxy mesh to a white box mesh \(`.wbm`\) asset\. You can load the saved \(`.wbm`\) asset in other **White Box** components\. The `.wbm` file functions like an instance, and any changes made to the mesh propagate to all **White Box** components that use the `.wbm` file\.
 
 ![\[White Box .wbm mesh instancing animation.\]](/images/userguide/component/whitebox/white-box-mesh-instancing-1.25.gif)
 
-****Tint****  
-Set a tint color for the white box mesh\. Choose the swatch to open a color picker, or enter comma separated red, blue, and green 8\-bit values into the field to set a tint color for the **White Box** component\. 
+****Tint****
+Set a tint color for the white box mesh\. Choose the swatch to open a color picker, or enter comma separated red, blue, and green 8\-bit values into the field to set a tint color for the **White Box** component\.
 
-****Use Texture****  
-Enable **Use Texture **to display a checkerboard texture on the white box mesh\. Each square is a half meter in size, and the texture is projected on the local X, Y, and Z axes of the mesh\. This maintains an easy reference for the size of the proxy mesh, regardless of how the entity is oriented in the level\. 
+****Use Texture****
+Enable **Use Texture **to display a checkerboard texture on the white box mesh\. Each square is a half meter in size, and the texture is projected on the local X, Y, and Z axes of the mesh\. This maintains an easy reference for the size of the proxy mesh, regardless of how the entity is oriented in the level\.
 
-****Visible****  
-Enable **Visible** to make the white box mesh visible at runtime\. When you use White Box to create custom invisible collision meshes, disable the **Visible** property to hide the mesh at runtime\. 
+****Visible****
+Enable **Visible** to make the white box mesh visible at runtime\. When you use White Box to create custom invisible collision meshes, disable the **Visible** property to hide the mesh at runtime\.
 
-****Edit****  
-Choose this button to enter edit mode and modify the white box mesh\. For information on editing the white box mesh, see [White Box edit mode](#component-white-box-edit-mode)\. Choose this same button \(labeled **Done**\) to exit edit mode\. 
+****Edit****
+Choose this button to enter edit mode and modify the white box mesh\. For information on editing the white box mesh, see [White Box edit mode](#component-white-box-edit-mode)\. Choose this same button \(labeled **Done**\) to exit edit mode\.
 
-****Export****  
-Export the mesh to a `.obj` file\. The `.obj` file can be loaded into a 3D modeling application and used as a template for creating the production mesh asset for the entity\. 
+****Export****
+Export the mesh to a `.obj` file\. The `.obj` file can be loaded into a 3D modeling application and used as a template for creating the production mesh asset for the entity\.
 
 ## White Box edit mode {#component-white-box-edit-mode}
 
-In edit mode, you can quickly sketch meshes for your entities in Lumberyard Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\. 
+In edit mode, you can quickly sketch meshes for your entities in Lumberyard Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\.
 
 ### Move {#component-white-box-edit-move}
 
-****Move polygon****  
+****Move polygon****
 
 1. Hover over a polygon\.
 
@@ -74,7 +74,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box move face animation.\]](/images/userguide/component/whitebox/white-box-move-face-1.25.gif)
 
-**Move edge**  
+**Move edge**
 
 1. Hover over an edge\.
 
@@ -84,7 +84,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box move edge animation.\]](/images/userguide/component/whitebox/white-box-move-edge-1.25.gif)
 
-**Move vertex**  
+**Move vertex**
 
 1. Hover over a vertex\. The vertex will highlight\.
 
@@ -96,7 +96,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ### Scale {#component-white-box-edit-scale}
 
-****Scale polygon****  
+****Scale polygon****
 
 1. Select \(left click\) a polygon\.
 
@@ -108,7 +108,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box scale face animation.\]](/images/userguide/component/whitebox/white-box-scale-face-1.25.gif)
 
-****Scale edge****  
+****Scale edge****
 
 1. Select \(left click\) an edge\.
 
@@ -120,7 +120,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box scale edge animation.\]](/images/userguide/component/whitebox/white-box-scale-edge-1.25.gif)
 
-****Non\-uniform scale edge****  
+****Non\-uniform scale edge****
 
 1. Select \(left click\) an edge\.
 
@@ -132,7 +132,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ### Extrude {#component-white-box-edit-extrude}
 
-****Extrude polygon****  
+****Extrude polygon****
 
 1. Hover over a polygon\.
 
@@ -142,7 +142,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box extrude face animation.\]](/images/userguide/component/whitebox/white-box-extrude-face-1.25.gif)
 
-****Extrude edge****  
+****Extrude edge****
 
 1. Hover over an edge\.
 
@@ -152,7 +152,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box extrude edge animation.\]](/images/userguide/component/whitebox/white-box-extrude-edge-1.25.gif)
 
-****Extrude scale****  
+****Extrude scale****
 
 1. Select \(left click\) a polygon\.
 
@@ -172,7 +172,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ### Flip edge {#component-white-box-flip-edge}
 
-****Flip edge****  
+****Flip edge****
 
 1. Hold **Ctrl \+ Shift** to show hidden edges\.
 
@@ -182,7 +182,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ### Hide/Show edge {#component-white-box-hide-show-edge}
 
-****Hide an edge****  
+****Hide an edge****
 
 1. Select \(left click\) an edge\.
 
@@ -190,7 +190,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box hide edge animation.\]](/images/userguide/component/whitebox/white-box-hide-edge-1.25.gif)
 
-****Show edge****  
+****Show edge****
 
 1. Hold **Ctrl** and **Shift** to show edges\.
 
@@ -200,7 +200,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ### Hide/Show vertex {#component-white-box-hide-show-vertex}
 
-****Hide a vertex****  
+****Hide a vertex****
 
 1. Select \(left click\) a vertex\.
 
@@ -208,7 +208,7 @@ In edit mode, you can quickly sketch meshes for your entities in Lumberyard Edit
 
 ![\[White Box hide edge animation.\]](/images/userguide/component/whitebox/white-box-hide-vertex-1.25.gif)
 
-****Show vertex****  
+****Show vertex****
 
 1. Hold **Ctrl** and **Shift** to show hidden vertices\.
 

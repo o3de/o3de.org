@@ -5,11 +5,11 @@ title: Advanced Particle Techniques
 # Advanced Particle Techniques {#particle-advanced}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 Use the following advanced techniques in the Particle Editor to emit particles from geometry, create a particle effect that explodes, preview your effects on an animated character, or generate particles from surface properties\.
 
@@ -31,7 +31,7 @@ Do the following to emit particles from the parent geometry\.
 
 ![\[Image NOT FOUND\]](/images/userguide/particles/particle-editor-advanced.png)
 
-**Note**  
+**Note**
 Use any **Attach Type** and **AttachForm** for the intended effect\.
 
 ## Creating Exploding Geometry Particle Effect {#particle-advanced-explosions}
@@ -78,11 +78,11 @@ Use the properties for an object's material surface to define the event\-driven 
 
 Many of the properties define the particle effects that are spawned by events such as walking or a bullet hit\. To specify the effect that is spawned when a geometry piece breaks off of an object, set the following parameters in a Lua script:
 
-**Name**  
+**Name**
 Specifies the name of the particle effect\.
 
-**Scale**  
+**Scale**
 Multiplies the size of the particle\.
 
-**Count\_scale**  
+**Count\_scale**
 Multiplies the particle counts\.

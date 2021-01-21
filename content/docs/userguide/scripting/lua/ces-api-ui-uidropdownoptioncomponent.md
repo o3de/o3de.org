@@ -73,7 +73,7 @@ void SetIconElement(AZ::EntityId iconElement)
 
 ## UiDropdownOptionNotificationBus {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus}
 
-Services notifications for the `UiDropdownOptionComponent`\. 
+Services notifications for the `UiDropdownOptionComponent`\.
 
 ### OnDropdownOptionSelected {#lua-scripting-ces-api-ui-uidropdownoptioncomponent-uidropdownoptionnotificationbus-ondropdownoptionselected}
 

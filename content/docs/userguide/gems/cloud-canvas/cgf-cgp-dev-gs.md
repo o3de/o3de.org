@@ -16,7 +16,7 @@ Setting up your environment includes installing Node\.js packages, Git, creating
 
 ### Installing Node\.js and Git {#cloud-canvas-cgf-cgp-dev-gs-setup-installing-node-js}
 
-The Cloud Gem Portal uses the Angular 2 version of [AngularJS](https://en.wikipedia.org/wiki/AngularJS) for programming and the Node\.js package manager \(npm\) for managing dependencies\. 
+The Cloud Gem Portal uses the Angular 2 version of [AngularJS](https://en.wikipedia.org/wiki/AngularJS) for programming and the Node\.js package manager \(npm\) for managing dependencies\.
 
 **To install Node\.js and git**
 
@@ -85,27 +85,27 @@ Now you are ready to create an administrator account so that you can sign in on 
    lmbr_aws cloud-gem-framework cloud-gem-portal --show-configuration --show-url
    ```
 
-   These commands create an administrator account so that you can sign in\. It also generates a project settings JSON string and an HTTPS URL\. The project settings string is the text between the `{}` braces, as you can see in the following example\.  
+   These commands create an administrator account so that you can sign in\. It also generates a project settings JSON string and an HTTPS URL\. The project settings string is the text between the `{}` braces, as you can see in the following example\.
 ![\[Sample project settings string\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-1a.png)
 
    Before you can sign in with your administrator credentials, you must copy this project settings string to a file in your Cloud Gem Portal code\.
 
 1. Open the `\dev\Gems\CloudGemFramework\v<N>\Website\CloudGemPortal\cgp_bootstrap.js` file for editing in a text editor\.
 
-1. Set the variable `cgpBootstrap` to the project settings JSON string that you generated, as in the following example\.  
+1. Set the variable `cgpBootstrap` to the project settings JSON string that you generated, as in the following example\.
 ![\[Set cgpBootstrap to your project settings string\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-2.png)
-**Note**  
-The HTTPS URL that was generated is not required\. Be sure not to paste it into the `cgp_bootstrap.js` file\. 
+**Note**
+The HTTPS URL that was generated is not required\. Be sure not to paste it into the `cgp_bootstrap.js` file\.
 
 1. Save your changes\.
 
-1. With your browser open to `http://localhost:3000`, sign in with the temporary administrator credentials that were generated\.  
+1. With your browser open to `http://localhost:3000`, sign in with the temporary administrator credentials that were generated\.
 ![\[Sign in to the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-3.png)
 
-1. Your password is temporary, so create a new one\.  
+1. Your password is temporary, so create a new one\.
 ![\[Change password\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-4.png)
 
-   After you change the administrator password, you are automatically logged in and redirected to the cloud gems page, which lists your active gems\.  
+   After you change the administrator password, you are automatically logged in and redirected to the cloud gems page, which lists your active gems\.
 ![\[List of cloud gems\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-setup-creating-admin-account-5.png)
 
 Now you can start editing your code\. Your changes should appear when you reload the site\.
@@ -126,7 +126,7 @@ Perform the following steps to configure Visual Studio to work with Node\.js\.
 
 1. In the navigation bar, click **Tools**, **Options**, **Projects and Solutions**, **External Web Tools**\.
 
-1. Add your `nodejs` and `node_modules\.bin` directories to the external tools configuration so that Visual Studio can find them\. The ordering of the paths is important\. Move your `nodejs` and `.node_modules/.bin` paths above the defaut Visual Studio paths, as shown in the following image\.  
+1. Add your `nodejs` and `node_modules\.bin` directories to the external tools configuration so that Visual Studio can find them\. The ordering of the paths is important\. Move your `nodejs` and `.node_modules/.bin` paths above the defaut Visual Studio paths, as shown in the following image\.
 ![\[Expose Node.js directories to Visual Studio\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-6.png)
 
 #### Tools and Extensions Setup {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-tools-and-extensions}
@@ -142,7 +142,7 @@ Next, you must install TypeScript\-related extensions for Visual Studio\.
    + **es6\-shim\.TypeScript\.DefinitelyTyped**
    + **jquery\.TypeScript\.DefinitelyTyped**
 
-      
+    
 ![\[Install NuGet packages\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-7.png)
 
    After you install these packages, you can create cloud gems in Visual Studio\.
@@ -159,7 +159,7 @@ To run the gulp task, you can use [Task Runner Explorer](https://visualstudiogal
 
 1. To start a task, double\-click the task\.
 
-1. To start a server, run **default** or **gulp serve** in the list of gulp **Tasks**\.  
+1. To start a server, run **default** or **gulp serve** in the list of gulp **Tasks**\.
 ![\[Run the default gulp task to start a server\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-8.png)
 
 #### Troubleshooting {#cloud-canvas-cgf-cgp-dev-gs-setup-visual-studio-troubleshooting}
@@ -211,20 +211,20 @@ The following diagram shows the recommended directory structure for a basic clou
 ```
 
 
-**Basic Cloud Gem File Descriptions**  
+**Basic Cloud Gem File Descriptions**
 
-| File | Description | 
-| --- | --- | 
-| <gem name>\.module\.ts | The main cloud gem module\. | 
-|  `<gem name>.ts`  | Required\. The factory entry point for the gem\. | 
-| api\-handler\.class\.ts | A custom service API handler class\. | 
-| index\.component\.html | HTML for the index component\. | 
-| index\.component\.scss | Style sheet definition for the index component\. | 
-| index\.component\.ts | The index component \(the main component for the gem\)\. | 
-| index\.ts | The export barrel\. | 
-| model\.class\.ts | Contains component model classes\. | 
-| thumbnail\.component\.html | HTML markup for the thumbnail component that appears on the Cloud Gems page\. | 
-| thumbnail\.component\.ts | The thumbnail component that appears on the Cloud Gems page\. | 
+| File | Description |
+| --- | --- |
+| <gem name>\.module\.ts | The main cloud gem module\. |
+|  `<gem name>.ts`  | Required\. The factory entry point for the gem\. |
+| api\-handler\.class\.ts | A custom service API handler class\. |
+| index\.component\.html | HTML for the index component\. |
+| index\.component\.scss | Style sheet definition for the index component\. |
+| index\.component\.ts | The index component \(the main component for the gem\)\. |
+| index\.ts | The export barrel\. |
+| model\.class\.ts | Contains component model classes\. |
+| thumbnail\.component\.html | HTML markup for the thumbnail component that appears on the Cloud Gems page\. |
+| thumbnail\.component\.ts | The thumbnail component that appears on the Cloud Gems page\. |
 
 #### Advanced Cloud Gem {#cloud-canvas-cgf-cgp-dev-gs-developing-cloud-gems-creating-typescript-files-advanced-cloud-gem}
 
@@ -258,7 +258,7 @@ import { GemModule } from 'app/view/game/module/cloudgems/gem.module';
 import { MessageOfTheDayIndexComponent, MessageOfTheDayThumbnailComponent } from './index'
 import { GameSharedModule } from 'app/view/game/module/shared/shared.module'
 import { NgModule } from '@angular/core';
- 
+
 /*
 *  The Cloud Gem Angular 2 NgModule defines context for the cloud gem
 */
@@ -272,7 +272,7 @@ import { NgModule } from '@angular/core';
         MessageOfTheDayThumbnailComponent
     ],
     providers: [
- 
+
     ],
     bootstrap: [MessageOfTheDayThumbnailComponent, MessageOfTheDayIndexComponent]
 })
@@ -283,7 +283,7 @@ export class CloudGemMessageOfTheDayModule { }
 // cloudgemmessageoftheday.ts
 import { CloudGemMessageOfTheDayModule } from './index'
 import { NgModule } from '@angular/core';
- 
+
 /*
 *  Entry point for the cloud gem factory
 */
@@ -296,7 +296,7 @@ export function definition(context: any): NgModule {
 // index.component.ts
 import { Input, Component } from '@angular/core';
 import { AbstractCloudGemIndexComponent } from 'app/view/game/module/cloudgems/class/index';
-  
+
 @Component({
     selector: 'message-of-the-day-index',
     template: `Welcome to the message of the day index page`
@@ -304,11 +304,11 @@ import { AbstractCloudGemIndexComponent } from 'app/view/game/module/cloudgems/c
 })
 export class MessageOfTheDayIndexComponent extends AbstractCloudGemIndexComponent {
     @Input() context: any;  //REQUIRED
-  
+
     constructor() {
         super()
     }
-  
+
     //Your component controller code
 }
 ```
@@ -318,7 +318,7 @@ export class MessageOfTheDayIndexComponent extends AbstractCloudGemIndexComponen
 import { AbstractCloudGemThumbnailComponent, TackableStatus, TackableMeasure, Measurable } from 'app/view/game/module/cloudgems/class/index';
 import { Component, Input, OnInit } from '@angular/core'
 import { Observable } from 'rxjs/rx'
- 
+
 @Component({
     selector: 'cloudgemmessageoftheday-thumbnail',
     template: `
@@ -335,30 +335,30 @@ export class MessageOfTheDayThumbnailComponent implements AbstractCloudGemThumbn
     @Input() context: any
     @Input() displayName: string = "Your first Cloud Gem";
     @Input() srcIcon: string = "https://m.media-amazon.com/images/userguide/G/01/cloudcanvas/images/userguide/message_of_the_day._V536715120_.png"
-               
+
     public state: TackableStatus = new TackableStatus();
     public metric: TackableMeasure = new TackableMeasure();
- 
+
     constructor() {
         super()
     }
- 
-    ngOnInit() {       
+
+    ngOnInit() {
         this.report(this.metric)
         this.assign(this.state)
     }
- 
+
     public report(metric: Measurable) {
         metric.name = "My Metric";
         metric.value = "1million!";
- 
+
         new Observable<any>(observer => {
             setTimeout(() => {
                 observer.next({
                     value: '100,000,000'
                 });
             }, 3000);
- 
+
             setTimeout(() => {
                 observer.complete();
             }, 1000);
@@ -366,18 +366,18 @@ export class MessageOfTheDayThumbnailComponent implements AbstractCloudGemThumbn
             metric.value = response.value;
         })
     }
- 
+
     public assign(status: TackableStatus) {
         status.label = "My Status";
         status.styleType = "Enabled";
- 
+
         new Observable<any>(observer => {
             setTimeout(() => {
                 observer.next({
                     status: 'Online'
                 });
             }, 3000);
- 
+
             setTimeout(() => {
                 observer.complete();
             }, 1000);
@@ -386,7 +386,7 @@ export class MessageOfTheDayThumbnailComponent implements AbstractCloudGemThumbn
             status.styleType = response.status;
         })
     }
- 
+
 }
 ```
 
@@ -410,7 +410,7 @@ If you click the gem thumbnail, the page that appears is blank, but that's expec
 You can verify that your gem is working by adding a header like the following to your `.html` file\.
 
 ```
-<h1> Hello welcome to my new gem! </h1> 
+<h1> Hello welcome to my new gem! </h1>
 ```
 
 If you reload the Cloud Gem Portal page and navigate to your gem, your new text appears\.
@@ -477,7 +477,7 @@ Before you upload your cloud gem to AWS, make sure you have you added your new c
 
 1. Under **Administration**, **Deployments**, click your active deployment\. If you don't have a deployment, create one first\.
 
-1. Click **Upload All Resources**\.  
+1. Click **Upload All Resources**\.
 ![\[Upload all resources\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-cgp-dev-gs-16.png)
 
 1. After the upload has completed, click **AWS**, **Open Cloud Gem Portal** in Lumberyard Editor to access the Cloud Gem Portal that you uploaded\. Your changes should be visible on the live website\.

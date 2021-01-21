@@ -7,7 +7,7 @@ title: Using Gradients to Create Random Distribution
 
 You can use gradients in different areas of Lumberyard, such as with audio and AI\. Gradients are particularly helpful in dynamic vegetation, where they create a realistically random look in the distribution of your vegetation\.
 
-You can achieve the appearance of random distribution by using gradients to create both random selection and random placement\. 
+You can achieve the appearance of random distribution by using gradients to create both random selection and random placement\.
 
 Before you can complete these procedures, you must first [create a vegetation layer](/docs/userguide/vegetation/procedures-create-vegetation-layer.md)\.
 

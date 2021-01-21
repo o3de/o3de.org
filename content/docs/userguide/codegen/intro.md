@@ -6,17 +6,17 @@ title: Automating boilerplate with AZ Code Generator
 # Automating boilerplate with AZ Code Generator {#az-code-gen-intro}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
-AZ Code Generator is a command line utility that generates source code \(or any data or text\) from specially tagged source code\. You can use it when the structure of the intended code is known in advance so that templates can be made for it\. For example, you could generate boilerplate code for serialization or reflection\. 
+AZ Code Generator is a command line utility that generates source code \(or any data or text\) from specially tagged source code\. You can use it when the structure of the intended code is known in advance so that templates can be made for it\. For example, you could generate boilerplate code for serialization or reflection\.
 
- AZ Code Generator parses a list of existing C\+\+ source files and/or header files and generates intermediate data in JSON format\. It passes the intermediate data to a series of templates\. 
+ AZ Code Generator parses a list of existing C\+\+ source files and/or header files and generates intermediate data in JSON format\. It passes the intermediate data to a series of templates\.
 
-The templates provide the format for the code that is generated\. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code\. When a template is updated, all related generated code is regenerated in the next build\. This removes the need to update the glue code manually or to use error\-prone find\-and\-replace operations\. 
+The templates provide the format for the code that is generated\. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code\. When a template is updated, all related generated code is regenerated in the next build\. This removes the need to update the glue code manually or to use error\-prone find\-and\-replace operations\.
 
 ![\[Image NOT FOUND\]](/images/shared/az-code-gen-workflow.png)
 
@@ -42,11 +42,11 @@ The templates provide the format for the code that is generated\. Templates make
 
 The following steps describe how AZ Code Generator works with Waf to generate code\.
 
-1. The Waf build system invokes AZ Code Generator for the `.h` and `.cpp` source files that are specified in the `wscript` file\. 
+1. The Waf build system invokes AZ Code Generator for the `.h` and `.cpp` source files that are specified in the `wscript` file\.
 
-1.  AZ Code Generator runs one or more passes with the specified files\. 
+1.  AZ Code Generator runs one or more passes with the specified files\.
 
-1. Each pass includes the following: 
+1. Each pass includes the following:
 
    1. AZ Code Generator uses the Clang front\-end compiler to produce an abstract syntax tree \(AST\) for each provided source file\. The Clang parser attempts to compile the input\. For increased speed, Clang can be instructed to not follow `#include` statements and to suppress all errors\.
 
@@ -62,15 +62,15 @@ The following steps describe how AZ Code Generator works with Waf to generate co
 
 1. AZ Code Generator returns a list of generated files to the Waf build system\.
 
-1. The Waf build system completes the build process, including the generated code in the build\. 
+1. The Waf build system completes the build process, including the generated code in the build\.
 
 The following sections provide more detail about this process\.
 
 ## Waf {#az-code-gen-intro-waf}
 
- The AZ Code Generator is fully integrated into the [Using the Waf Build System](/docs/userguide/waf/intro.md)\. You can use the Waf `az_code_gen` feature to invoke the AZ Code Generator\. We recommend that you use Waf rather than the command line to start the `AzCodeGenerator.exe` utility\. 
+ The AZ Code Generator is fully integrated into the [Using the Waf Build System](/docs/userguide/waf/intro.md)\. You can use the Waf `az_code_gen` feature to invoke the AZ Code Generator\. We recommend that you use Waf rather than the command line to start the `AzCodeGenerator.exe` utility\.
 
- For examples and more information about the Waf integration, see [AZ Code Generator Integration with Waf ](/docs/userguide/codegen/waf-integration.md)\. 
+ For examples and more information about the Waf integration, see [AZ Code Generator Integration with Waf ](/docs/userguide/codegen/waf-integration.md)\.
 
 ## Clang {#az-code-gen-intro-clang}
 
@@ -78,7 +78,7 @@ The default front end of the AZ Code Generator is a [Clang](http://clang.llvm.or
 
 ## Intermediate JSON Data {#az-code-gen-intro-intermediate-json-data}
 
- The Clang front end compiler outputs an intermediate JSON data structure that the generator passes to templates for further processing\. An example intermediate JSON data object follows\. 
+ The Clang front end compiler outputs an intermediate JSON data structure that the generator passes to templates for further processing\. An example intermediate JSON data object follows\.
 
 ```
 [
@@ -128,20 +128,20 @@ The default front end of the AZ Code Generator is a [Clang](http://clang.llvm.or
 ]
 ```
 
-For complete syntax of the intermediate JSON data object, see [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)\. 
+For complete syntax of the intermediate JSON data object, see [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)\.
 
 ## AZ Code Generator and Python {#az-code-gen-intro-python}
 
 AZ Code Generator depends on Python 3\.7 or later to run template drivers and render [Jinja](http://jinja.pocoo.org/) templates\. The Python C API is used to extend Python with methods in the `azcg_extension` module that permit template drivers to report dependencies, errors, and useful informational output\. In Windows, Python 3\.7 is included in the Lumberyard `dev/Tools/Python` directory\. On macOS, AZ Code Generator uses the version of Python that is included with the operating system\.
 
-**Note**  
+**Note**
 To debug Python C API calls when using AZ Code Generator, you must download [CPython](https://www.python.org/downloads/)\. Then make a build for your intended debug OS\.
 
 ## Template Drivers and Template Rendering {#az-code-gen-intro-template-drivers-rendering}
 
-You can use template drivers written in Python to alter the intermediate data structure before passing it to the template engine\. After preprocessing, the template driver might direct the Jinja2 template engine to render one or many templates, depending on the generated code that you want\. 
+You can use template drivers written in Python to alter the intermediate data structure before passing it to the template engine\. After preprocessing, the template driver might direct the Jinja2 template engine to render one or many templates, depending on the generated code that you want\.
 
-AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the Lumberyard `3rdParty\jinja2` directory\. Lumberyard also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/userguide/codegen/templates.md)\. 
+AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the Lumberyard `3rdParty\jinja2` directory\. Lumberyard also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/userguide/codegen/templates.md)\.
 
 ## Generated Files {#az-code-gen-intro-generated-files}
 
@@ -174,55 +174,55 @@ namespace Components
 ///////////////////////////////////////////////////////////////
 /*
 // Reference JSON object
-[{  
+[{
    'name':'Component',
    'qualified_name':'AZ::Component',
-   'fields':[  
+   'fields':[
 
    ],
-   'bases':[  
+   'bases':[
 
    ],
-   'meta':{  
+   'meta':{
       'path':'D:\\Repo\\Ly\\branches\\AzComponents\\Code\\Tools\\AzCodeGenerator\\CodeGenTest.h'
    },
    'type':'class',
-   'annotations':{  
+   'annotations':{
 
    },
-   'methods':[  
+   'methods':[
 
    ]
 },
-{  
+{
    'name':'TestingClass',
    'qualified_name':'TheNamespace::TestingClass',
-   'fields':[  
-      {  
+   'fields':[
+      {
          'type':'float',
          'name':'m_field2',
          'qualified_name':'TheNamespace::TestingClass::m_field2',
-         'annotations':{  
+         'annotations':{
 
          }
       }
    ],
-   'bases':[  
-      {  
+   'bases':[
+      {
          'name':'Component',
          'qualified_name':'AZ::Component'
       }
    ],
-   'meta':{  
+   'meta':{
       'path':'D:\\Repo\\Ly\\branches\\AzComponents\\Code\\Tools\\AzCodeGenerator\\CodeGenTest.h'
    },
    'type':'class',
-   'annotations':{  
+   'annotations':{
 
    },
-   'methods':[  
-      {  
-         'params':[  
+   'methods':[
+      {
+         'params':[
             'type',
             'int',
             'name',
@@ -230,7 +230,7 @@ namespace Components
          ],
          'name':'CreateArgumentAnnotation',
          'qualified_name':'TheNamespace::TestingClass::CreateArgumentAnnotation',
-         'annotations':{  
+         'annotations':{
 
          }
       }

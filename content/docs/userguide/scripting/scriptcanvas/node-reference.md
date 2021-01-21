@@ -6,7 +6,7 @@ title: '&script-canvas; Node Reference'
 
 This reference includes the various types of **Script Canvas** editor nodes, their uses, and their inputs and outputs\.
 
-**Tip**  
+**Tip**
 On the **Node Palette** or on the node canvas, you can pause on the node name and the node parameters for more information\.
 
 **Topics**
@@ -20,5 +20,5 @@ Some nodes are hidden from the default **Script Canvas** editor view\.
 
 1. In the **Script Canvas** editor, choose **Edit**, **Settings**, **Global Preferences**\.
 
-1. In the **Global Preferences** window, choose **Show nodes excluded from preview**\.  
+1. In the **Global Preferences** window, choose **Show nodes excluded from preview**\.
 ![\[Global Preferences window in the Script Canvas editor\]](/images/userguide/scripting/script-canvas/script-canvas-global-preferences-show-nodes.png)

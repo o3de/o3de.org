@@ -91,9 +91,9 @@ Create a `.json` definition file for the third\-party library\. Using the direct
 }
 ```
 
-**Note**  
+**Note**
 The `source` key contains an alias called `@GEM@`\. The `@GEM@` alias represents the root path of the current gem\. The `source` key specifies the base of the third\-party library directory on which the other paths specified by keys like `includes` and `libpath` are based\.
-The `platform` key sections describe the locations of platform\-specific library files based on the library identifier\. 
+The `platform` key sections describe the locations of platform\-specific library files based on the library identifier\.
 
 For more information, see [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
@@ -103,8 +103,8 @@ By default, after the third\-party library definition is set in the gem, it is a
 
 Other gems \(or the game gem\) that require access to the gem\-scoped third\-party library must establish a dependency on the gem that has the library\. For example, if you want a gem called OurGem to have access to the `SuperLibrary` library in MyGem, OurGem's `gem.json` file must define a dependency on MyGem\.
 
-**Example**  
-In the `OurGem.gem.json` file, OurGem declares a dependency on MyGem:  
+**Example**
+In the `OurGem.gem.json` file, OurGem declares a dependency on MyGem:
 
 ```
 {

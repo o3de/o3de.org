@@ -23,9 +23,9 @@ You can use [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/Sha
 
 1. Click **AWSBehaviorS3Presign**\. In **Node Inspector**, **AWSBehaviorS3Presign Variable** appears\. The default name of the variable is **Variable 1**\.
 
-1. In **Node Inspector**, expand **AWSBehaviorS3Presign** to show the input fields\. Type or choose the values in the following table\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-cloud-gem-aws-s3-presign-sc.html)
+1. In **Node Inspector**, expand **AWSBehaviorS3Presign** to show the input fields\. Type or choose the values in the following table\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/gems/cloud-canvas/aws-s3-presign-sc)
 
 1. From the **Variable Manager**, press **Shift** and drag **Variable 1 AWSBehaviorS3Presign** to the canvas to create the **Get Variable 1** node\. \(You can also drag **AWSBehaviorS3Presign** to the canvas and then select **Get Variable** from the drop\-down menu\.\)
 
@@ -55,7 +55,7 @@ Next, to see the success or failure of the operation, you add **AWSBehaviorS3Pre
 
 1. Connect the **Out** pins of the **AWSBehaviorS3PresignNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
-1. Connect the **String** pins of the **AWSBehaviorS3PresignNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
+1. Connect the **String** pins of the **AWSBehaviorS3PresignNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:
 ![\[A Script Canvas graph that presigns a URL for an object in Amazon S3\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-presign-sc-1.png)
 
 1. Save the canvas with a name like `MyS3PresignTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
@@ -83,5 +83,5 @@ Now you are ready to attach the script canvas to an entity and test it\.
 1. Press **Ctrl\+G** to start the level\. The console reports the success of the operation, as in the following example\.
 
    ```
-   (Script Canvas) - https://s3.amazonaws.com//presigntest.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential={string} 
+   (Script Canvas) - https://s3.amazonaws.com//presigntest.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential={string}
    ```

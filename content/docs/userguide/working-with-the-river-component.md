@@ -36,18 +36,18 @@ You can also paint the river bottom with a different texture than the surroundin
 
 1. Click **Carve River Bed**\.
 
-**Example**  
-A river on the ground before a riverbed has been carved out\.  
+**Example**
+A river on the ground before a riverbed has been carved out\.
 
 ![\[River on the ground before carving a riverbed.\]](/images/userguide/component/carving-riverbed-1.png)
-A river with a **Border width** of `5.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.  
+A river with a **Border width** of `5.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.
 
 ![\[Example river with a smaller embankment and border width.\]](/images/userguide/component/carving-riverbed-2.png)
-A river with a **Border width** of `10.0`, **Embankment** of `3.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.  
+A river with a **Border width** of `10.0`, **Embankment** of `3.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\.
 
 ![\[Example river with a larger border width and embankment.\]](/images/userguide/component/carving-riverbed-3.png)
-You can also lower the river below the ground level and carve the riverbed\. This achieves a different type of terrain deformation\.  
-A river with a **Border width** of `10.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\. This river is positioned below ground level\.  
+You can also lower the river below the ground level and carve the riverbed\. This achieves a different type of terrain deformation\.
+A river with a **Border width** of `10.0`, **Embankment** of `1.0`, **Depth** of `2.0`, and **River bed offset** of `-1`\. This river is positioned below ground level\.
 
 ![\[Example river that is below ground level.\]](/images/userguide/component/carving-riverbed-4.png)
 
@@ -62,10 +62,10 @@ For more refined control over the river's width, you can adjust the individual p
 **To adjust the width of individual points**
 + In the **River** component, specify a negative or positive number for the element that you want to modify\.
 
-  Negative numbers subtract from the **Global Width** parameter, while positive numbers add to it\. A value of `0` means that point is at global width\.  
-**Example**  
+  Negative numbers subtract from the **Global Width** parameter, while positive numbers add to it\. A value of `0` means that point is at global width\.
+**Example**
 
-  The global width of this river is 2, and the width at the selected point is set to `5`\. That means the total width at the selected point is `7`\.  
+  The global width of this river is 2, and the width at the selected point is set to `5`\. That means the total width at the selected point is `7`\.
 ![\[River with one vertex widened\]](/images/userguide/component/modifying-river-width-2.png)
 
 ## Erasing River Vegetation {#erasing-river-vegetation}
@@ -80,7 +80,7 @@ You can erase vegetation around the river's borders\.
 
 ## Setting River Material Properties {#setting-river-material-properties}
 
-The road material must use the [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\. 
+The road material must use the [WaterVolume Shader](/docs/userguide/shaders/watervolume.md)\.
 
 **To set the river material**
 

@@ -13,7 +13,7 @@ Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to
 + [Complement Comparison Operation](#asset-bundler-list-operations-complement)
 + [File Pattern Comparison Operation](#asset-bundler-list-operations-filepattern)
 
-**Note:** 
+**Note:**
 
 While the comparison operations use terms from set theory, they are not exactly the same as the actual set operations\. This is particularly true of the [delta comparison operation](#asset-bundler-list-operations-delta), which includes a file entry in both sets if one of those files has been modified in the second set\. Additionally, file pattern matching is not a set operation\.
 
@@ -31,7 +31,7 @@ AssetBundlerBatch.exe compare ^
 --output deltaAssetList.assetlist
 ```
 
-The following diagram shows the delta comparison operation\. 
+The following diagram shows the delta comparison operation\.
 
 ![\[Diagram showing the inputs and results of a delta comparison operation.\]](/images/userguide/assetbundler/delta-comparison-operator.png)
 
@@ -122,7 +122,7 @@ AssetBundlerBatch.exe compare ^
 --output filePatternAssetList.assetlist
 ```
 
-**Note:** 
+**Note:**
 
 The previous command looks for files that have the `.xml` suffix for inclusion\. You can replace it with any wildcard\- or regex\-based file pattern that you want to use for comparison\.
 
@@ -283,7 +283,7 @@ At this point, you can choose either one of the next two steps to complete the t
    Save successful!
    ```
 
-1. Run this command to remove anything that is not a text \(`.txt`\) file from the asset list: 
+1. Run this command to remove anything that is not a text \(`.txt`\) file from the asset list:
 
    ```
    AssetBundlerBatch.exe compare ^
@@ -342,20 +342,20 @@ You can also confirm that the operation was successful by opening `mygame_v1tov2
 
 ### How multiple comparisons work {#how-to-perform-list-comparisons-how-it-works}
 
-When running multiple step commands, use a comma\-separated list for each relevant parameter\. The individual steps in the command match up to their placement in this comma\-separated parameter value list\. 
+When running multiple step commands, use a comma\-separated list for each relevant parameter\. The individual steps in the command match up to their placement in this comma\-separated parameter value list\.
 
 The previous example uses three comparison operations\. The first two comparisons reference a first and second asset list file, and the last comparison references a file pattern and the first asset file\. The multiple step command broken down into its component parts looks like this:
 
 
-**Breaking down the process of a single multiple comparison command**  
+**Breaking down the process of a single multiple comparison command**
 
-| Command Parameter | Step 1  | Step 2 | Step 3 | 
-| --- | --- | --- | --- | 
-| comparisonType | delta | intersection | filepattern | 
-| firstAssetFile | mygame\_v1\_pc\.assetlist | include\_pc\.assetlist \(temp file\) | $delta\_include | 
-| secondAssetFile | mygame\_v2\_pc\.assetlist | $delta\_all | N/A | 
-| filePatternType | N/A | N/A | Wildcard \(parameter value 0\) | 
-| filePattern | N/A | N/A | \*\.txt | 
-| output | $delta\_all | $delta\_include | mygame\_v1tov2\_patch\.assetlist | 
+| Command Parameter | Step 1  | Step 2 | Step 3 |
+| --- | --- | --- | --- |
+| comparisonType | delta | intersection | filepattern |
+| firstAssetFile | mygame\_v1\_pc\.assetlist | include\_pc\.assetlist \(temp file\) | $delta\_include |
+| secondAssetFile | mygame\_v2\_pc\.assetlist | $delta\_all | N/A |
+| filePatternType | N/A | N/A | Wildcard \(parameter value 0\) |
+| filePattern | N/A | N/A | \*\.txt |
+| output | $delta\_all | $delta\_include | mygame\_v1tov2\_patch\.assetlist |
 
 Read this table horizontally to see the data supplied to each comparison during each step of the process\. Read this table vertically to see the parameter used for each command for each step\.

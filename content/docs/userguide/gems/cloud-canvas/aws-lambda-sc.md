@@ -4,9 +4,9 @@ title: Invoking an &LAMlong; Function from &script-canvas;
 ---
 # Invoking an AWS Lambda Function from Script Canvas {#cloud-canvas-cloud-gem-aws-lambda-sc}
 
-You can use the **InvokeAWSLambda** node to invoke an AWS Lambda function\. 
+You can use the **InvokeAWSLambda** node to invoke an AWS Lambda function\.
 
-**Note**  
+**Note**
 This tutorial uses an example Lambda function that is included with Lumberyard\. For information on using your own Lambda function, see [Making a Custom Lambda Function Available to Script Canvas](/docs/userguide/gems/cloud-canvas/aws-lambda-sc-adding.md)\.
 
 **Topics**
@@ -27,7 +27,7 @@ After you perform these steps, your `lumberyard_version\dev\CloudGemSamples\Conf
 
 ```
 "CloudGemAWSScriptBehaviors.AWSBehaviorLambdaExample": {
-    "PhysicalResourceId": "CloudGemSamples-cgsamples-AWSBehaviorLambdaExample-T4FO5C8V5RQB", 
+    "PhysicalResourceId": "CloudGemSamples-cgsamples-AWSBehaviorLambdaExample-T4FO5C8V5RQB",
     "ResourceType": "AWS::Lambda::Function"
 },
 ```
@@ -82,10 +82,10 @@ Next, to see the success or failure of the operation, you add **AWSLambdaHandler
 
 1. Connect the **Out** pins of the **AWSLambdaHandler** **OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
-1. Connect the **String** pins of the **AWSLambdaHandler** **OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\.   
-**Example**  
+1. Connect the **String** pins of the **AWSLambdaHandler** **OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\.
+**Example**
 
-   Your graph should look similar to the following image\.  
+   Your graph should look similar to the following image\.
 ![\[Example Script Canvas graph that invokes a Lambda function\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-lambda-sc-1.png)
 
 1. Save the file with a name like `MyLambdaFunctionTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.

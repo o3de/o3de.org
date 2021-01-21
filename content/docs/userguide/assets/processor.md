@@ -26,8 +26,8 @@ In Windows, Asset Processor starts automatically if you run Lumberyard Editor wi
 
 In macOS, you must manually start Asset Processor from a command line window\. Asset Processor is located in the `lumberyard_version/dev/BinMac64` directory\.
 
-**Note**  
-Symbolic links are not supported when using Asset Processor in macOS\. To ensure that Asset Processor works properly in macOS, follow these guidelines:  
+**Note**
+Symbolic links are not supported when using Asset Processor in macOS\. To ensure that Asset Processor works properly in macOS, follow these guidelines:
 Do not use a symbolic link for your cache directory when you store compiled assets in a central location\.
 Do not store your source project assets in a symbolic link directory\.
 Use a unique cache directory\. Do not share the cache directory with a Windows system that is also running Asset Processor\.

@@ -14,26 +14,26 @@ The following **Scale to Device** settings are available:
 
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| None | Does not scale with the device resolution\. | 
-| Scale to fit \(uniformly\) | Scales to fit while maintaining the aspect ratio\. The final device scale for both X and Y is the minimum of the width and height ratios between the authored canvas size to the viewport size\. | 
-| Scale to fill \(uniformly\) | Scales to fill while maintaining the aspect ratio\. The final device scale for both X and Y is the maximum of the width and height ratios between the authored canvas size to the viewport size\. | 
-| Scale to fit X \(uniformly\) | Scales to fit horizontally while maintaining the aspect ratio\. The final device scale for both X and Y is the ratio between the authored canvas width to the viewport width\. | 
-| Scale to fit Y \(uniformly\) | Scales to fit vertically while maintaining the aspect ratio\. The final device scale for both X and Y is the ratio between the authored canvas height to the viewport height\. | 
-| Stretch to fill \(non\-uniformly\) | Stretches to fill horizontally and vertically without maintaining the aspect ratio\. The final device scale is the ratio between the authored canvas size to the viewport size\. | 
-| Stretch to fit X \(non\-uniformly\) | Stretches to fit horizontally, but doesn't stretch vertically\. The final device scale for X is the ratio between the authored canvas width to the viewport width\. Y doesn't scale with the device resolution\. | 
-| Stretch to fit Y \(non\-uniformly\) | Stretches to fit vertically, but doesn't stretch horizontally\. The final device scale for Y is the ratio between the authored canvas height to the viewport height\. X doesn't scale with the device resolution\. | 
+| Property | Description |
+| --- | --- |
+| None | Does not scale with the device resolution\. |
+| Scale to fit \(uniformly\) | Scales to fit while maintaining the aspect ratio\. The final device scale for both X and Y is the minimum of the width and height ratios between the authored canvas size to the viewport size\. |
+| Scale to fill \(uniformly\) | Scales to fill while maintaining the aspect ratio\. The final device scale for both X and Y is the maximum of the width and height ratios between the authored canvas size to the viewport size\. |
+| Scale to fit X \(uniformly\) | Scales to fit horizontally while maintaining the aspect ratio\. The final device scale for both X and Y is the ratio between the authored canvas width to the viewport width\. |
+| Scale to fit Y \(uniformly\) | Scales to fit vertically while maintaining the aspect ratio\. The final device scale for both X and Y is the ratio between the authored canvas height to the viewport height\. |
+| Stretch to fill \(non\-uniformly\) | Stretches to fill horizontally and vertically without maintaining the aspect ratio\. The final device scale is the ratio between the authored canvas size to the viewport size\. |
+| Stretch to fit X \(non\-uniformly\) | Stretches to fit horizontally, but doesn't stretch vertically\. The final device scale for X is the ratio between the authored canvas width to the viewport width\. Y doesn't scale with the device resolution\. |
+| Stretch to fit Y \(non\-uniformly\) | Stretches to fit vertically, but doesn't stretch horizontally\. The final device scale for Y is the ratio between the authored canvas height to the viewport height\. X doesn't scale with the device resolution\. |
 
 When using the **Scale to Device** setting, note the following:
 + Scaling is performed about the element's pivot\.
 + Scaling an element doesn't affect the value of its offsets from its anchors\.
 + The element's final scale includes any scale inherited from its parents\. Set the **Scale to Device** property on a UI element whose child elements that you also want to scale with the device resolution\.
 + Setting **Scale to Device** on a UI element and a descendant element results in double scaling on the descendant element\.
-+ Avoid setting **Scale to Device** on a UI element that doesn't have its anchors together\. Doing so can result in undesired behavior\. This is because the anchors affect the size of the element relative to its parent, and the **Scale to Device** scale is applied on top of that\.  
-**Example**  
++ Avoid setting **Scale to Device** on a UI element that doesn't have its anchors together\. Doing so can result in undesired behavior\. This is because the anchors affect the size of the element relative to its parent, and the **Scale to Device** scale is applied on top of that\.
+**Example**
 
   The element's size matches the viewport's size if you set the anchors to the following values:
   + Left = 0%
@@ -63,14 +63,14 @@ The elements that make up the UI are all contained in a parent element and has t
 
 
 
-**Parent UI element settings**  
+**Parent UI element settings**
 
-| Property | Values | 
-| --- | --- | 
-| Anchor | Left = 50%, Top = 50%, Right = 50%, Bottom = 50% | 
-| Pivot | Default settings: X = 0\.5, Y = 0\.5 | 
-| Width and Height | Matches the authored canvas size \(for example, 1280x720\) | 
-| Scale to device | Scale to fit \(uniformly\) | 
+| Property | Values |
+| --- | --- |
+| Anchor | Left = 50%, Top = 50%, Right = 50%, Bottom = 50% |
+| Pivot | Default settings: X = 0\.5, Y = 0\.5 |
+| Width and Height | Matches the authored canvas size \(for example, 1280x720\) |
+| Scale to device | Scale to fit \(uniformly\) |
 
 ![\[Scale to fit uniformly example.\]](/images/userguide/game_ui_editor/ui-editor-transform-scale-1.gif)
 
@@ -85,13 +85,13 @@ The elements that make up the buttons are contained in a layout column element\.
 
 
 
-**Layout Column element settings for uniform scaling to fit Y**  
+**Layout Column element settings for uniform scaling to fit Y**
 
-| Property | Values | 
-| --- | --- | 
-| Anchors | Left = 50%, Top = 50%, Right = 50%, Bottom = 50% | 
-| Pivot | Default settings: X = 0\.5, Y = 0\.5 | 
-| Scale to device | Scale to fit Y \(uniformly\) | 
+| Property | Values |
+| --- | --- |
+| Anchors | Left = 50%, Top = 50%, Right = 50%, Bottom = 50% |
+| Pivot | Default settings: X = 0\.5, Y = 0\.5 |
+| Scale to device | Scale to fit Y \(uniformly\) |
 
 ![\[Scale to fit Y uniformly example.\]](/images/userguide/game_ui_editor/ui-editor-transform-scale-2.gif)
 
@@ -104,28 +104,28 @@ The background image is a texture with simple [settings](#ui-editor-transform-sc
 The health bar element has the following settings\. The anchor values keep it on the upper right corner of the screen\.
 
 
-**Health bar element settings**  
+**Health bar element settings**
 
-| Property | Values | 
-| --- | --- | 
-| Anchors | Left = 100%, Top = 0%, Right = 100%, Bottom = 0% | 
-| Pivot | X = 1\.0, Y = 0\.0 | 
-| Scale to device | Scale to fit \(uniformly\) | 
+| Property | Values |
+| --- | --- |
+| Anchors | Left = 100%, Top = 0%, Right = 100%, Bottom = 0% |
+| Pivot | X = 1\.0, Y = 0\.0 |
+| Scale to device | Scale to fit \(uniformly\) |
 
 The speed indicator element has the following settings\. The anchor values keep it in the top center of the screen\.
 
 
-**Health bar element settings**  
+**Health bar element settings**
 
-| Property | Values | 
-| --- | --- | 
-| Anchors | Left = 50%, Top = 0%, Right = 50%, Bottom = 0% | 
-| Pivot | X = 0\.5, Y = 0\.0 | 
-| Scale to device | Scale to fit \(uniformly\) | 
+| Property | Values |
+| --- | --- |
+| Anchors | Left = 50%, Top = 0%, Right = 50%, Bottom = 0% |
+| Pivot | X = 0\.5, Y = 0\.0 |
+| Scale to device | Scale to fit \(uniformly\) |
 
 The following images show how the health bar and speed indicator scales based on the screen resolution while maintaining their position on the screen\.
 
-**Note**  
+**Note**
 The indicated resolutions are not shown to scale\.
 
 ![\[Example of scaling elements while maintaining relative positions.\]](/images/userguide/game_ui_editor/ui-editor-transform-scale-uniform-position.png)

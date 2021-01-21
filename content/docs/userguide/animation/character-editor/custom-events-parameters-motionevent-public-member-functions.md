@@ -31,12 +31,12 @@ MotionEvent (float timeValue, EventDataPtr &&data)
 Creates a tick event and uses a data pointer\.
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| timeValue | The time value, in seconds, when the motion event should occur\. | 
-| data | The values to emit when the event is triggered\. | 
+| Parameter | Description |
+| --- | --- |
+| timeValue | The time value, in seconds, when the motion event should occur\. |
+| data | The values to emit when the event is triggered\. |
 
 **Syntax**
 
@@ -47,13 +47,13 @@ MotionEvent (float startTimeValue, float endTimeValue, EventDataPtr &&data)
 Creates a ranged event and uses a data pointer\.
 
 
-****  
+****
 
-| `Parameter` | Description | 
-| --- | --- | 
-| startTimeValue | The start time value, in seconds, when the motion event should start\. | 
-| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. | 
-| data | The values to emit when the event is triggered\. | 
+| `Parameter` | Description |
+| --- | --- |
+| startTimeValue | The start time value, in seconds, when the motion event should start\. |
+| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. |
+| data | The values to emit when the event is triggered\. |
 
 **Syntax**
 
@@ -64,12 +64,12 @@ MotionEvent (float timeValue, EventDataSet &&datas)
 Creates a tick event and uses a dataset\.
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| timeValue | The time value, in seconds, when the motion event should occur\. | 
-| datas | The values to emit when the event is triggered\. | 
+| Parameter | Description |
+| --- | --- |
+| timeValue | The time value, in seconds, when the motion event should occur\. |
+| datas | The values to emit when the event is triggered\. |
 
 **Syntax**
 
@@ -80,13 +80,13 @@ MotionEvent (float startTimeValue, float endTimeValue, EventDataSet &&datas)
 Creates a ranged event and uses a dataset\.
 
 
-****  
+****
 
-| `Parameter` | Description | 
-| --- | --- | 
-| startTimeValue | The start time value, in seconds, when the motion event should start\. | 
-| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. | 
-| datas | The values to emit when the event is triggered\. | 
+| `Parameter` | Description |
+| --- | --- |
+| startTimeValue | The start time value, in seconds, when the motion event should start\. |
+| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. |
+| datas | The values to emit when the event is triggered\. |
 
 ## SetStartTime {#char-animation-editor-custom-events-parameters-setstarttime}
 
@@ -170,7 +170,7 @@ void SetIsSyncEvent (bool newValue)
 
 ## HashForSyncing {#char-animation-editor-custom-events-parameters-hashforsyncing}
 
-Creates a hash on the sync track of a motion\. 
+Creates a hash on the sync track of a motion\.
 
 **Syntax**
 

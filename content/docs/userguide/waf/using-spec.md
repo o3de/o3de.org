@@ -41,7 +41,7 @@ Create a spec file called `my_game.json` with the following:
     "modules" :
     [
         "AzCore",
-        "AzFramework",        
+        "AzFramework",
         "AzToolsFramework",
         "GridMate",
         "LuaIDE",
@@ -52,21 +52,21 @@ Create a spec file called `my_game.json` with the following:
 
 The spec files are located in the `lumberyard_version\dev\_WAF_\specs` directory and have the `.json` file extension\. For more information about Waf spec files, see [Waf Spec Files \(\*\.json\)](/docs/userguide/waf/files-spec-file.md)\.
 
- 
 
 
-****  
 
-| Spec | Description | 
-| --- | --- | 
-| all\.json | Configuration for all targets\. | 
-| dedicated\_server\.json | Configuration to build dedicated servers for the enabled projects\. | 
-| external\_sdks\.json | Configuration to build externally distributed binary\-only libraries\. | 
-| game\_and\_engine\.json | Configuration to build the engine and game projects\. | 
-| pipeline\.json | Configuration to build Pipeline Only for building Resource Compiler, and also Maya, 3ds Max, and Photoshop plugins if Visual Studio 2010 and 2012 are installed\. Build only in Profile or Debug mode \(Release mode is only for the 3ds Max plugin\) | 
-| resource\_compiler\.json | Configuration to build only the Resource Compiler\. | 
-| shadercachegen\.json | Configuration to build only the shadercache generator\. | 
-| tools\.json | Configuration to build nonessential tools\. | 
+****
+
+| Spec | Description |
+| --- | --- |
+| all\.json | Configuration for all targets\. |
+| dedicated\_server\.json | Configuration to build dedicated servers for the enabled projects\. |
+| external\_sdks\.json | Configuration to build externally distributed binary\-only libraries\. |
+| game\_and\_engine\.json | Configuration to build the engine and game projects\. |
+| pipeline\.json | Configuration to build Pipeline Only for building Resource Compiler, and also Maya, 3ds Max, and Photoshop plugins if Visual Studio 2010 and 2012 are installed\. Build only in Profile or Debug mode \(Release mode is only for the 3ds Max plugin\) |
+| resource\_compiler\.json | Configuration to build only the Resource Compiler\. |
+| shadercachegen\.json | Configuration to build only the shadercache generator\. |
+| tools\.json | Configuration to build nonessential tools\. |
 
 ## Adding the Spec File to the Visual Studio Solution Generator {#add-spec-vs-solution-generator}
 
@@ -84,7 +84,7 @@ Adding the spec file to the Visual Studio solution is optional\.
    specs_to_include_in_project_generation = MySpec1, MySpec2, MySpec3
    ```
 
-1. Enter the following command to regenerate the Visual Studio solution: 
+1. Enter the following command to regenerate the Visual Studio solution:
 
    ```
    lmbr_waf.bat configure
@@ -94,7 +94,7 @@ Adding the spec file to the Visual Studio solution is optional\.
 
 After saving the new spec, do one of the following:
 + Build the spec using Visual Studio \(if you followed the steps above to add the spec to Visual Studio\)\.
-+ Build the spec from the command line by entering the following command for your version of Visual Studio: 
++ Build the spec from the command line by entering the following command for your version of Visual Studio:
 
   ```
   lmbr_waf build_win_x64_vs2017_profile -p MySpec

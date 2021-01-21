@@ -11,7 +11,7 @@ An entity is considered a *material owner* if it has a component that supports m
 
 You can also access and manipulate materials directly, which affects all entities to which the material is applied\. For more information, see [Material Nodes](/docs/userguide/scripting/scriptcanvas/materials-nodes.md)\.
 
-**Important**  
+**Important**
 Depending on the material owner type, the material asset might not be available when the script is first activated \(`OnActivate` in Lua or the **On Graph Start** node in **Script Canvas**\)\. This lack of availability can occur when assets are still loading\. You can use the **[On Ready](/docs/userguide/materials/owner-on-material-owner-ready-node.md)** node instead of the **On Graph Start** node, or use the **[Is Ready](/docs/userguide/materials/owner-is-material-owner-ready.md)** node\.
 
 **Topics**

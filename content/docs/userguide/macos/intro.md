@@ -5,11 +5,11 @@ title: Create macOS projects in &ALY;
 # Create macOS projects in Lumberyard {#osx-intro}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 You can use Lumberyard to build macOS applications\. Lumberyard includes four macOS\-supported sample projects that you can use to learn how to build assets for macOS games using the Asset Processor, build shaders using the remote shader compiler, and build and deploy macOS applications using the Lumberyard build tools\.
 
@@ -25,12 +25,12 @@ You can use Lumberyard to build macOS applications\. Lumberyard includes four ma
 
 ## Prerequisites {#osx-prerequisites}
 
-To build games for macOS or iOS, Lumberyard requires the following on your Mac: 
+To build games for macOS or iOS, Lumberyard requires the following on your Mac:
 + [Lumberyard Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + macOS Mojave or later
 
-**Note**  
+**Note**
 Lumberyard Editor requires Windows 10 to edit levels\. You must have access to a PC with Lumberyard installed and be able to navigate and run commands from Terminal on your Mac\.
 
 ## Setting Up Your Mac {#osx-setting-up}
@@ -43,16 +43,16 @@ After you download and extract Lumberyard on your Mac, you must run Lumberyard S
 
 1. Verify that the engine root path is correct\.
 
-1. On the **Get started** page, select the following and then click **Next**: 
+1. On the **Get started** page, select the following and then click **Next**:
    + **Run your game project**
    + **Compile the game code**
    + **Compile the engine and asset pipeline**
    + **Compile the Lumberyard Editor and tools**
-**Note**  
+**Note**
 Lumberyard Editor is not supported on macOS\. Selecting this option enables the ability to build the asset processor and resource compiler only\.
    + **Compile for iOS devices**
    + \(Optional\) **Compile for Android devices**
-**Note**  
+**Note**
 Select this option if you are developing for Android devices\. You must have the Android SDK installed on your Mac\.
 
 1. Follow the instructions onscreen to complete the installations for any third\-party software or SDKs that you need\. For more information about using Lumberyard Setup Assistant, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.

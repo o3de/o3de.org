@@ -16,17 +16,17 @@ This node is triggered when the material owner finishes loading its assets\. We 
 ## Inputs {#material-owner-on-material-owner-ready-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\.  You can also specify another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Source | EntityID |  References a specific entity from which events are generated\. By default, it references **Self**, the entity to which the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component attaches the current script\.  You can also specify another entity\. For more information, see [Setting Entity Targets](/docs/userguide/scripting/scriptcanvas/referencing-entities.md)\.  |
 
 ## Outputs {#material-owner-on-material-owner-ready-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the material owner's material is available for use\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the material owner's material is available for use\. |

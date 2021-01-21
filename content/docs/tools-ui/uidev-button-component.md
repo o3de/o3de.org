@@ -17,29 +17,29 @@ Use buttons to enable users to make selections that cause the UI to take action\
 
 Follow these guidelines as you design your UI with buttons:
 
-1.  **Buttons should trigger events** 
+1.  **Buttons should trigger events**
 
    Choosing a button should always trigger an event\. For example, the event might be submitting a form, opening a dialog, or showing a dropdown menu\.
 
-1.  **Primary button vs secondary button** 
+1.  **Primary button vs secondary button**
 
    Only one **primary button** per page should receive the primary button color\. We recommend that you always set the affirmative button with the primary button color\. All other actions on the page should be styled with the **secondary button** color, which will help users establish what the primary action on any given window or panel is\.
 
-1.  **Button placement in a dialog** 
+1.  **Button placement in a dialog**
 
    The buttons should be placed on the bottom right hand corner of the dialog, with the affirmative button on the left, and the dismissive button on the right on the Windows platform\. This reduces cognitive load for users and clarifies the hierarchy of available actions on the page\.
 
    When on the iOS platform, the button placement should follow the iOS platform guideline, which is the affirmative button on the right, and the dismissive button on the left\.
 
-1.  **Button placement on a card** 
+1.  **Button placement on a card**
 
    Because cards have flexible layouts, we recommend that you place the button in a location suited to the content and context, while maintaining consistency within the product\. When the button isn't attached to any labels, it's suggested to place the button in the center of the area\.
 
-1.  **Dropdown menus** 
+1.  **Dropdown menus**
 
    Use dropdown menus where there is more than one value associated with the button\. When users choose the button and select the desired value, buttons should immediately trigger an event\.
 
-1.  **Icon buttons** 
+1.  **Icon buttons**
 
    Use icon buttons when there isn't enough space to display the full text on the button\. However, the context should be clear to users what action will be triggered after clicking on the icon button\. The icon shown on the button should also clearly represent the meaning of the function\. Use a mouseover tooltip to display the text version of the button\.
 
@@ -53,7 +53,7 @@ Avoid these design choices when using buttons:
 
 You can apply one of the four button styles either in the Qt Designer, where it is saved in the `.ui` file, or in your code\. Refer to the comments in the example below for details\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/PushButton.h>
@@ -88,8 +88,8 @@ toolButton->setMenu(menu);
 ## C\+\+ API reference<a name="button-api-ref"></a>
 
 For details on the button styles, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::PushButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_push_button.html) 
++  [AzQtComponents::PushButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_push_button.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QPushButton Class](https://doc.qt.io/qt-5/qpushbutton.html) 
-+  [QToolButton Class](https://doc.qt.io/qt-5/qtoolbutton.html) 
++  [QPushButton Class](https://doc.qt.io/qt-5/qpushbutton.html)
++  [QToolButton Class](https://doc.qt.io/qt-5/qtoolbutton.html)

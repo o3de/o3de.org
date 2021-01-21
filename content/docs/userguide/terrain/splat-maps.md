@@ -25,5 +25,5 @@ All splat map operations in Lumberyard are done using the **Terrain Texture Laye
 
 1. In **Lumberyard Editor**, choose **Game**, **Terrain**, **Generate Terrain Texture**\.
 
-**Note**  
+**Note**
 You cannot apply masking to an imported splat map\.

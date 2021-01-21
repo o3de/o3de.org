@@ -11,27 +11,27 @@ Asset Processor calls Resource Compiler to automatically convert new or modified
 
 Resource Compiler converts the following file types\.
 
-**ABC**  
+**ABC**
 Alembic files
 
-**CGF**  
+**CGF**
 Legacy geometry format
 
-**I\_CAF**  
+**I\_CAF**
 Legacy animation format
 
-**TIF, BMP, JPG, PNG**  
+**TIF, BMP, JPG, PNG**
 [Image files](/docs/userguide/assets/configuring-image-processing.md)
 
-**FBX**  
+**FBX**
 Geometry \(static mesh\) only\. Doesn't convert new EMotion FX characters or animations\.
 
-**Note**  
+**Note**
  All other types, such as characters and animation, are converted by the BuilderSDK system\. For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\.
 
 You can customize how resources are converted by modifying the `AssetProcessorPlatformConfig.ini`\. For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
-You can access a full list of arguments available for use in `AssetProcessorPlatformConfig.ini`\. 
+You can access a full list of arguments available for use in `AssetProcessorPlatformConfig.ini`\.
 
 **To access a full list of arguments available for the `rc.exe` command line tool**
 

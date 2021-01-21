@@ -14,7 +14,7 @@ Try these examples:
 + Input and edit text\.
 + Use keyboard, mouse, or gamepad to interact with the UI\.
 
-**Note**  
+**Note**
 If the interactive component's **Input enabled** setting is deselected \(unchecked\), that element is drawn in its disabled state and does not respond to hover or click actions\.
 
 ## Animation List {#animation-list-pane}
@@ -29,7 +29,7 @@ To use this feature, you must type text strings in the **Actions** section of th
 
 **To enable Action Log entries**
 
-1. In the **UI Editor** viewport or **Hierarchy** pane, select the element to which the interactive component is attached\. 
+1. In the **UI Editor** viewport or **Hierarchy** pane, select the element to which the interactive component is attached\.
 
 1. In the **Properties** pane, under the **Actions** category, enter a text string for each action for which you want to trigger an action log entry\.
 

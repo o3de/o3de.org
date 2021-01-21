@@ -6,7 +6,7 @@ title: Post Effects Nodes
 
 You can configure the following post effect nodes in the **Script Canvas** editor\. Post effects are useful if you want to enhance a scene after it renders, such as color, blur, or water effects\. You can enable an effect once and the effect remains active until you disable it\. If you want to animate the settings of an effect or transition in or out, you can trigger the **Enable\*** node for each frame with different settings\.
 
-**Important**  
+**Important**
 To use post effects nodes, you must enable the [Graphics Scripting](/docs/userguide/gems/builtin/graphics-scripting.md) gem for your game project\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Topics**

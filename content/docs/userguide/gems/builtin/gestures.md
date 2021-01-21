@@ -33,9 +33,9 @@ You can configure gesture recognizers with C\+\+ and the **Gestures** system com
 
 1. In the **System Entity Editor**, click **Add Component**, and then expand **Gestures**\.
 
-1. For each gesture recognizer, specify your preferred values\. For example, if you want to change the **Min Clicks or Taps** for a double press gesture, specify a new value\.  
+1. For each gesture recognizer, specify your preferred values\. For example, if you want to change the **Min Clicks or Taps** for a double press gesture, specify a new value\.
 ![\[Use the System Entity Editor to manage the gesture settings.\]](/images/userguide/gems/gestures-system-entity-editor-settings.png)
-**Note**  
+**Note**
 Pause on the gesture recognizer to see a description and the valid values\.
 
 1. Make your changes and then click **Save**\.
@@ -48,8 +48,8 @@ You can use gesture input channels in the same way as other input channels with 
 
 To add input to an entity, see the **[Input](/docs/userguide/components/input.md)** component\.
 
-**Example Lua Script**  
-The following script listens for and responds to the default double press gesture\.  
+**Example Lua Script**
+The following script listens for and responds to the default double press gesture\.
 
 ```
 function GestureExample:OnActivate()

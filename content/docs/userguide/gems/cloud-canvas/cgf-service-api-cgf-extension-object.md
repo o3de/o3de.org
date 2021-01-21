@@ -30,7 +30,7 @@ The `x-amazon-cloud-canvas-lambda-dispatch` object and processing hide a lot of 
 
 You can still use all the power of the `x-amazon-apigateway-integration` object in your cloud gem API operations\. If you include the object in the operation objects of your `swagger.json` file, the processing described here is skipped for the operation\.
 
-**Note**  
+**Note**
 You can also use the `lmbr_aws cloud-gem-framework service-api-process-swagger` command to process the `swagger.json` file\.
 
 At minimum, the swagger object can include an `x-amazon-cloud-canvas-lambda-dispatch` object with a Lambda property\. You can allow the module and function for each operation be determined automatically, or you can use `x-amazon-cloud-canvas-lambda-dispatch` objects to specify them\.

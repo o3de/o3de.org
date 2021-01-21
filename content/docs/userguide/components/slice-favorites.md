@@ -19,11 +19,11 @@ Slice favorites are:
 Your slice favorites appear in the **Slice Favorites** panel, where you can reorganize and manage them\.
 
 **To open the **Slice Favorites** panel, do one of the following**
-+ In the **Entity Outliner**, right\-click to open the context menu, and choose **Slice favorites**, **Manage favorites**\.  
++ In the **Entity Outliner**, right\-click to open the context menu, and choose **Slice favorites**, **Manage favorites**\.
 ![\[Right-click to expose the context menu, and then choose Manage favorites.\]](/images/userguide/component/component-slice-favorites-panel.png)
 + In Lumberyard Editor, choose **Tools**, **Other**, **Slice Favorites**\.
 
-  The **Slice Favorites** panel appears in its default location, above the **Entity Inspector**\.  
+  The **Slice Favorites** panel appears in its default location, above the **Entity Inspector**\.
 ![\[The Slice Favorites panel is displayed above the Entity Inspector.\]](/images/userguide/component/component-slice-favorites-panel2.png)
 
 ## Flagging a Slice as a Favorite {#flagging-slice-as-favorite}
@@ -47,34 +47,34 @@ You can remove a slice favorite so that it no longer appears in the **Slice Favo
 
 You can perform a variety of actions to manage your slice favorites in the **Slice Favorites** panel\.To manage slices in **Slice Favorites**, you can do the following
 
-**Drag and Drop**  
-Select one or more slices or folders to drag them into other folders or to reorder them in the list\.  
+**Drag and Drop**
+Select one or more slices or folders to drag them into other folders or to reorder them in the list\.
 
 ![\[Drag slices and folders in the Slice Favorites panel to rearrange items.\]](/images/shared/shared-component-slices-favorites-animated.gif)
 
-**Add a folder**  
-Right\-click the **Slice Favorites** panel and choose **Add folder**\.  
+**Add a folder**
+Right\-click the **Slice Favorites** panel and choose **Add folder**\.
 
 ![\[Right-click in the Slice Favorites panel to add a folder.\]](/images/userguide/component/component-slice-favorites-add-folder.png)
 
-**Rename a folder**  
+**Rename a folder**
 Right\-click a folder in the **Slice Favorites** panel and choose **Rename**\.
 
-**Rename a slice**  
-Right\-click a slice in the **Slice Favorites** panel, and choose **Rename**\.  
+**Rename a slice**
+Right\-click a slice in the **Slice Favorites** panel, and choose **Rename**\.
 Renaming a slice changes its display name in the **Slice Favorites** panel, but doesn't change the slice file name\.
 
-**Import favorites from an XML file**  
-Right\-click the **Slice Favorites** panel and choose **Import slice favorites**\.  
+**Import favorites from an XML file**
+Right\-click the **Slice Favorites** panel and choose **Import slice favorites**\.
 
 ![\[Right-click the Slice Favorites panel to import slice favorites.\]](/images/userguide/component/component-slice-favorites-import-export.png)
 
-**Export favorites to an XML file**  
+**Export favorites to an XML file**
 Right\-click the **Slice Favorites** panel and choose **Export slice favorites**, and then select or create an XML to export\.
 
 ## Instantiating a Slice Favorite {#instantiating-slice-favorites}
 
 **To instantiate a slice favorite, do one of the following:**
-+ Right\-click the viewport or **Entity Outliner**, choose **Slice favorites**, and then navigate to the slice you want to instantiate\.  
++ Right\-click the viewport or **Entity Outliner**, choose **Slice favorites**, and then navigate to the slice you want to instantiate\.
 ![\[Right-click in the viewport or Entity Outliner to instantiate a slice favorite.\]](/images/userguide/component/component-slice-favorites-instantiate.png)
 + Drag a slice from the **Favorite Slices** panel into the viewport or the **Entity Outliner**\.

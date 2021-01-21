@@ -39,18 +39,18 @@ The following related source code can be found in the file `dev\Code\Framework\A
 ...
                     ClassElement(AZ::Edit::ClassElements::Group, "Network Sync")->
                         Attribute(AZ::Edit::Attributes::AutoExpand, true)->
- 
+
                         DataElement(AZ::Edit::UIHandlers::Default, &TransformComponent::m_netSyncEnabled, "Sync to replicas", "Sync to network replicas.")->
                         DataElement(AZ::Edit::UIHandlers::ComboBox, &TransformComponent::m_interpolatePosition,
                             "Position Interpolation", "Enable local interpolation of position.")->
                         EnumAttribute(AzFramework::InterpolationMode::NoInterpolation, "None")->
                         EnumAttribute(AzFramework::InterpolationMode::LinearInterpolation, "Linear")->
- 
+
                         DataElement(AZ::Edit::UIHandlers::ComboBox, &TransformComponent::m_interpolateRotation,
                             "Rotation Interpolation", "Enable local interpolation of rotation.")->
                         EnumAttribute(AzFramework::InterpolationMode::NoInterpolation, "None")->
                         EnumAttribute(AzFramework::InterpolationMode::LinearInterpolation, "Linear");
- 
+
 ...
                 }
             }
@@ -109,13 +109,13 @@ Next, update `AzToolsFramework:: TransformComponent ::Reflect` as in the followi
             if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))
             {
 ...
- 
+
                         DataElement(AZ::Edit::UIHandlers::ComboBox, &TransformComponent::m_interpolatePosition,
                             "Position Interpolation", "Enable local interpolation of position.")->
                         EnumAttribute(AzFramework::InterpolationMode::NoInterpolation, "None")->
                         EnumAttribute(AzFramework::InterpolationMode::LinearInterpolation, "Linear")->
                         EnumAttribute(AzFramework::InterpolationMode::MyInterpolation, "My Mode")->           // <--- NEW CONTENT
- 
+
 ...
                 }
             }
@@ -142,13 +142,13 @@ namespace AzFramework
         , public NetBindable
     {
 ...
- 
+
     private:
- 
+
 ...
         void CreateTranslationSample();
         void CreateRotationSample();
- 
+
         AZStd::unique_ptr<Sample<AZ::Vector3>>    m_netTargetTranslation; // <--- Sample<> is the base templated class for all interpolation logic.
         AZStd::unique_ptr<Sample<AZ::Quaternion>> m_netTargetRotation;
         AZ::Vector3 m_netTargetScale;
@@ -168,7 +168,7 @@ namespace AzFramework
     public:
         virtual ~Sample() = default;
         using TimeType = unsigned int;
- 
+
         Sample()
             : m_targetValue()
             , m_targetTimestamp(0)
@@ -176,35 +176,35 @@ namespace AzFramework
             , m_previousTimestamp(0)
         {
         }
- 
+
         void SetNewTarget(Value newValue, TimeType timestamp)     // <---- Network stack provides you these values every time it gets them.
         {
             m_targetValue = newValue;
             m_targetTimestamp = timestamp;
         }
- 
+
         virtual Value GetInterpolatedValue(TimeType time) = 0;    // <---- Provide your own interpolation logic here.
- 
+
         Value GetTargetValue() const
         {
             return m_targetValue;
         }
- 
+
         TimeType GetTargetTimestamp() const
         {
             return m_targetTimestamp;
         }
- 
+
     protected:
         void SetPreviousValue(Value previousValue, TimeType previousTimestamp)
         {
             m_previousValue = previousValue;
             m_previousTimestamp = previousTimestamp;
         }
- 
+
         Value m_targetValue;
         TimeType m_targetTimestamp;
- 
+
         Value m_previousValue;
         TimeType m_previousTimestamp;
     };
@@ -216,7 +216,7 @@ The simplest implementation is no interpolation at all, for which the code is al
 ```
 template<typename T>
 class UninterpolatedSample;
- 
+
 template<>
 class UninterpolatedSample<AZ::Vector3> final
     : public Sample<AZ::Vector3>
@@ -236,7 +236,7 @@ namespace AzFramework
 {
     template<typename T>
     class LinearlyInterpolatedSample;
- 
+
     template<>
     class LinearlyInterpolatedSample<AZ::Vector3> final
         : public Sample<AZ::Vector3>
@@ -254,15 +254,15 @@ namespace AzFramework
                 else if (time > m_previousTimestamp)
                 {
                     float t = float(time - m_previousTimestamp) / float(m_targetTimestamp - m_previousTimestamp);
- 
+
                     // lerp translation
                     AZ::Vector3 deltaPos = t * (m_targetValue - m_previousValue);
                     interpolatedValue = m_previousValue + deltaPos;
- 
+
                     AZ_Assert(interpolatedValue.IsFinite(), "interpolatedValue is not finite!");
                 }
             }
- 
+
             SetPreviousValue(interpolatedValue, time);
             return interpolatedValue;
         }
@@ -277,7 +277,7 @@ namespace AzFramework
 {
     template<typename T>
     class MyInterpolatedSample;
- 
+
     template<>
     class MyInterpolatedSample<AZ::Vector3> final
         : public Sample<AZ::Vector3>

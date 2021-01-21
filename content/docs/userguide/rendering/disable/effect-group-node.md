@@ -14,18 +14,18 @@ For more information about effect group files, see [Customizing Post\-Processing
 ## Inputs {#disable-effect-group-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Group Name | String | Relative path to the effect group xml file\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Group Name | String | Relative path to the effect group xml file\. |
 
 ## Outputs {#disable-effect-group-node-output}
 
 
-**Outputs**  
+**Outputs**
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the effect is disabled\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the effect is disabled\. |

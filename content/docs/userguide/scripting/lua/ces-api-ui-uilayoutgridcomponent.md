@@ -80,7 +80,7 @@ Returns the starting direction for the layout\.
 **Syntax**
 
 ```
-eUiLayoutGridStartingDirection GetStartingDirection() 
+eUiLayoutGridStartingDirection GetStartingDirection()
 ```
 
 Following are possible values for `eUiLayoutGridStartingDirection`\.
@@ -130,7 +130,7 @@ Sets the horizontal order for the layout\.
 **Syntax**
 
 ```
-void SetHorizontalOrder(eUiHorizontalOrder order) 
+void SetHorizontalOrder(eUiHorizontalOrder order)
 ```
 
 For possible values for `eUiHorizontalOrder`, see [GetHorizontalOrder](#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-gethorizontalorder)\.
@@ -164,7 +164,7 @@ Sets the starting direction for the layout\.
 **Syntax**
 
 ```
-void SetStartingDirection(eUiLayoutGridStartingDirection direction) 
+void SetStartingDirection(eUiLayoutGridStartingDirection direction)
 ```
 
 For possible values for `eUiLayoutGridStartingDirection`, see [GetStartingDirection](#lua-scripting-ces-api-ui-uilayoutgridcomponent-uilayoutgridbus-getstartingdirection)\.

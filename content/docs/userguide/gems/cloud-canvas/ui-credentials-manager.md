@@ -9,7 +9,7 @@ Use the **Credentials Manager** in Lumberyard Editor or the command line to mana
 
 The profile is saved locally on your machine in your AWS credentials file\. This file is normally located in your `C:\Users\<user name>\.aws\` directory\. The [AWS Command Line Interface](https://aws.amazon.com/cli/) and the [AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/) can access these credentials\.
 
-**Important**  
+**Important**
 Do not share these credentials with anyone, and do not check them into source control\. These grant control over your AWS account, and a malicious user could incur charges\.
 
  For more information, see [https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)\.
@@ -17,7 +17,7 @@ Do not share these credentials with anyone, and do not check them into source co
 **To open Credentials Manager**
 +  To open **Credentials Manager**, do one of the following:
   +  In Lumberyard Editor, click **AWS**, **Credentials manager**\.
-  + In **Cloud Canvas Resource Manager**, click the name of the current profile in the Resource Manager toolbar:  
+  + In **Cloud Canvas Resource Manager**, click the name of the current profile in the Resource Manager toolbar:
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-current-profile.png)
 
  You can use the **Credentials Manager** to select an existing AWS profile, edit an AWS profile, or add a new AWS profile\.

@@ -5,9 +5,9 @@ title: Get started with Amazon Lumberyard
 # Get started with Amazon Lumberyard<a name="wg-getstarted"></a>
 
 
-|  | 
+|  |
 | --- |
-|  This **Get started** guide is a work in progress and is undergoing continual improvement\. Please leave feedback using the **Feedback** link at the top of the web page\. More tutorials are coming soon\!  | 
+|  This **Get started** guide is a work in progress and is undergoing continual improvement\. Please leave feedback using the **Feedback** link at the top of the web page\. More tutorials are coming soon\!  |
 
 Often times, the best way to learn is *to do*\. Amazon Lumberyard was designed and created to help you make games, not read docs, so let's make your first game\!
 
@@ -15,7 +15,7 @@ We've designed a very simple game that can be built in a few hours with Amazon L
 
 At the end, you'll have a simple packaged version of a game you can share\. It won't win any awards, but you'll understand the myriad features of Lumberyard, from slices and components to physics to scripting to input and audio support\.
 
-**Note**  
+**Note**
 If you don't want to read at all, check out [the video playlist for this tutorial series](https://www.youtube.com/playlist?list=PLjd5NhkT3LshLaEZY6R6HFBr6xSaI2tHF)\. We're not judging\. Words are inefficient\!
 
 ## Prerequisites<a name="getstarted-prereqs"></a>
@@ -28,10 +28,10 @@ To get started "getting started", you will need the following on your local comp
 + The **WelcomeGuideTutorials** game project\.
 + A basic understanding of the concepts used in developing 3D games
 
-**Important**  
-We've provided a Lumberyard project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) 
+**Important**
+We've provided a Lumberyard project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip)
 
-Need some help setting up Lumberyard for the first time? [Start here\!](wg-install.md) 
+Need some help setting up Lumberyard for the first time? [Start here\!](wg-install.md)
 
 Or, you can watch a video on setup made specifically for this tutorial series:
 
@@ -63,16 +63,16 @@ In this series of tutorials, you'll develop a game we called "Flyin' the Coop"\.
 ## Chapters<a name="chapters"></a>
 
 
-**Get started with Amazon Lumberyard tutorial chapters**  
+**Get started with Amazon Lumberyard tutorial chapters**
 
-| Chapter | Description | 
-| --- | --- | 
-|   [Tutorial One: Create a level](tutor-ch01-create-a-level.md)   |  Start here if you're brand new to Lumberyard\. Here, you'll learn how to go from launching Lumberyard to creating a basic level\.  | 
-|   [Tutorial Two: Create an entity with White Box](tutor-ch02-create-an-entity.md)   |  Learn how to create an entity, work with components, and sketch meshes with **White Box**\.  | 
-|   [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)   |  Learn how to import assets from `.fbx` files, and build a player character *slice*\.  | 
-|   [Tutorial Four: Create PhysX colliders](tutor-ch04-create-physx-colliders.md)   |  Learn how to add PhysX colliders to **White Box** entities\. You'll also learn to use the **PhysX Player Controller** to add a simple collider to a player entity, and use the **Input** and **Script Canvas** components to support player input\.  | 
-|   [Tutorial Five: Handling player input through Script Canvas](tutor-ch05-player-input.md)   |  Learn how to create your own input events, and build a **Script Canvas** network to respond to input\.  | 
-|   [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md)   |  Learn how to create a simple 3rd person follow camera for the player character\.  | 
-|   [Tutorial Seven: Create terrain](tutor-ch07-create-terrain.md)   |  Learn how to create more detailed terrain in your level\.  | 
-|   [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md)   |  Learn how to create props for you level with White Box meshes and *dynamic slices*\.  | 
-|   [Final step: Package and release a build](tutor-final-package-distribute.md)   |  Learn how to export your level and create a stand\-alone package of your game\.  | 
+| Chapter | Description |
+| --- | --- |
+|   [Tutorial One: Create a level](tutor-ch01-create-a-level.md)   |  Start here if you're brand new to Lumberyard\. Here, you'll learn how to go from launching Lumberyard to creating a basic level\.  |
+|   [Tutorial Two: Create an entity with White Box](tutor-ch02-create-an-entity.md)   |  Learn how to create an entity, work with components, and sketch meshes with **White Box**\.  |
+|   [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)   |  Learn how to import assets from `.fbx` files, and build a player character *slice*\.  |
+|   [Tutorial Four: Create PhysX colliders](tutor-ch04-create-physx-colliders.md)   |  Learn how to add PhysX colliders to **White Box** entities\. You'll also learn to use the **PhysX Player Controller** to add a simple collider to a player entity, and use the **Input** and **Script Canvas** components to support player input\.  |
+|   [Tutorial Five: Handling player input through Script Canvas](tutor-ch05-player-input.md)   |  Learn how to create your own input events, and build a **Script Canvas** network to respond to input\.  |
+|   [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md)   |  Learn how to create a simple 3rd person follow camera for the player character\.  |
+|   [Tutorial Seven: Create terrain](tutor-ch07-create-terrain.md)   |  Learn how to create more detailed terrain in your level\.  |
+|   [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md)   |  Learn how to create props for you level with White Box meshes and *dynamic slices*\.  |
+|   [Final step: Package and release a build](tutor-final-package-distribute.md)   |  Learn how to export your level and create a stand\-alone package of your game\.  |

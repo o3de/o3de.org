@@ -33,13 +33,13 @@ The first screen is the **Player Account** page, which lists the player accounts
 
 **To add a player to your game**
 
-1. Click **Add Account** to add a player\.  
+1. Click **Add Account** to add a player\.
 ![\[Click Add Account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-button.png)
 
-1. In the **Add Account** dialog box, fill in the appropriate information\. Only the **Username** and **Email** fields are required\.  
+1. In the **Add Account** dialog box, fill in the appropriate information\. Only the **Username** and **Email** fields are required\.
 ![\[Add account dialog box\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-add-account-dialog-box.png)
 
-   After you fill in the information, the player appears in the list of player accounts\.  
+   After you fill in the information, the player appears in the list of player accounts\.
 ![\[Player Account page\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-2.png)
 
    Each player entry has the following fields:
@@ -57,7 +57,7 @@ The first screen is the **Player Account** page, which lists the player accounts
      + **Unconfirmed** - The player account hasn't confirmed the account's email address or phone number\. The account is unusable until it has been confirmed\. To confirm an account manually, see [Confirming an Account](#cloud-canvas-cloud-gem-player-account-confirming-an-account) later in this document\.
      + **Unknown** - The account is in an unknown state\. Use the Amazon Cognito console to investigate further\.
 
-1. You can use the box and filter on the upper right of the **Player Account** page to search the list of player accounts\.  
+1. You can use the box and filter on the upper right of the **Player Account** page to search the list of player accounts\.
 ![\[Filter options\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-3.png)
 
 ### Viewing and Editing Account Details {#cloud-canvas-cloud-gem-player-account-viewing-and-editing-account-details}
@@ -92,12 +92,12 @@ Accounts that you ban no longer can log in to the game\.
 
 **To ban an account**
 
-1. On the **Player Account** page, click the ban ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon next to the player\.  
+1. On the **Player Account** page, click the ban ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon next to the player\.
 ![\[Banning an account\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-8.png)
 
 1. In the **Ban Player Account** confirmation dialog box, click **Save**\. The account disappears from the **Accounts** tab\.
 
-1. Click the **Banned Players** tab\. The banned account has been added to the banned players list\.  
+1. Click the **Banned Players** tab\. The banned account has been added to the banned players list\.
 ![\[Banned players list\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
 
 ### Removing a Ban {#cloud-canvas-cloud-gem-player-account-removing-a-ban}
@@ -106,13 +106,13 @@ Removing a ban from an account is similar to adding one\.
 
 **To remove an ban from an account**
 
-1. On the **Player Account** page, click the **Banned Players** tab\.  
+1. On the **Player Account** page, click the **Banned Players** tab\.
 ![\[Banned players list\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-9.png)
 
-1. Click the ban ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon for the account that you want to reinstate\.  
+1. Click the ban ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png) icon for the account that you want to reinstate\.
 ![\[Remove ban\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-remove-ban.png)
 
-1. In the confirmation dialog box, click **Save**\. 
+1. In the confirmation dialog box, click **Save**\.
 
 1. Click the **Accounts** tab\. The account reappears in the list of players\.
 

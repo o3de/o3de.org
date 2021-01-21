@@ -9,117 +9,117 @@ Use the **Projector Light** component on an entity to project a light\.
 
 The **Projector Light** component has the following settings:
 
-**Visible**  
+**Visible**
 Shows the light\.
 
-**On initially**  
+**On initially**
 Specify if the light is on when created\.
 
 ## General Settings {#component-projector-light-general-settings}
 
 See the following general settings:
 
-**Color**  
-The color of the light\.  
+**Color**
+The color of the light\.
 Default value: 0xFFFFFFFF
 
-**Diffuse multiplier**  
-Sets the strength of the diffuse color\.  
+**Diffuse multiplier**
+Sets the strength of the diffuse color\.
 Default value: 1
 
-**Specular multiplier**  
-Sets the strength of the specular brightness\.  
+**Specular multiplier**
+Sets the strength of the specular brightness\.
 Default value: 1
 
-**Ambient**  
+**Ambient**
 If selected, light acts as a multiplier for cubemap values\.
 
 ## Project Light Settings {#component-projector-light-settings}
 
 See the following point light settings:
 
-**Max Distance**  
-Maximum distance that the projector light extends, in meters\.  
+**Max Distance**
+Maximum distance that the projector light extends, in meters\.
 Default value: 5
 
-**Attenuation bulb size**  
-Radius before light begins to fade, in meters\.  
+**Attenuation bulb size**
+Radius before light begins to fade, in meters\.
 Default value: 0
 
-**FOV**  
-Projector light's field of view \(FOV\), in degrees\.  
+**FOV**
+Projector light's field of view \(FOV\), in degrees\.
 Default value: 90
 
-**Near plane**  
-Distance of the near plane to the projector light, in meters\. Objects behind this plane are not affected by the projector light\. 
+**Near plane**
+Distance of the near plane to the projector light, in meters\. Objects behind this plane are not affected by the projector light\.
 
-**Texture**  
+**Texture**
 Projector light's texture file\. Without a texture, light does not shine\.
 
-**Material**  
+**Material**
 Projector light's material file\.
 
 ## Options {#component-projector-light-options}
 
 See the following options:
 
-**View distance multiplier**  
-Adjusts the maximum view distance\. For example, **1\.0** uses the default and **1\.1** is 10% farther than the default\.  
+**View distance multiplier**
+Adjusts the maximum view distance\. For example, **1\.0** uses the default and **1\.1** is 10% farther than the default\.
 Default value: 1
 
-**Minimum spec**  
-The minimum specification value at which this light is enabled\.  
+**Minimum spec**
+The minimum specification value at which this light is enabled\.
 Default value: Low
 
-**Cast shadow spec**  
-The minimum specification at which shadows are cast\.  
+**Cast shadow spec**
+The minimum specification at which shadows are cast\.
 Default value: Never
 
-**Voxel GI mode**  
+**Voxel GI mode**
 Mode for light interaction with voxel global illumination \(GI\)\. Choose **None**, **Static**, or **Dynamic**\.
 
-**Use VisAreas**  
+**Use VisAreas**
 Light is affected by visible areas\. If unselected, light ignores visible areas\.
 
-**Indoor only**  
+**Indoor only**
 Light is only rendered indoors\.
 
-**Affects this area only**  
+**Affects this area only**
 Light affects only the immediate area\.
 
-**Volumetric fog only**  
+**Volumetric fog only**
 Light affects only volumetric fog\.
 
-**Volumetric fog**  
+**Volumetric fog**
 Light affects volumetric fog and surrounding area\.
 
 ## Shadow Settings {#component-projector-light-shadow}
 
 See the following shadow settings:
 
-**Terrain Shadows**  
+**Terrain Shadows**
 Includes the terrain in the shadow casters for this light\.
 
 ## Animation {#component-projector-light-animation}
 
 See the following animation settings:
 
-**Style**  
-Enter a number to specify a preset light animation curve to play as defined in the `Light.cfx` file\. Valid values are **0** to **48**\. You can also use values **40** to **48** for testing and debugging\.  
-Default value: 0 
+**Style**
+Enter a number to specify a preset light animation curve to play as defined in the `Light.cfx` file\. Valid values are **0** to **48**\. You can also use values **40** to **48** for testing and debugging\.
+Default value: 0
 
-**Speed**  
-Multiple of the base animation rate\. For example, a value of **2\.0** causes an animation to play twice as fast\.  
+**Speed**
+Multiple of the base animation rate\. For example, a value of **2\.0** causes an animation to play twice as fast\.
 Default value: 1
 
-**Phase**  
-Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the animation\.   
-For example, you can use this setting to prevent lights in the same scene, with the same animation, from being animated in unison\.  
+**Phase**
+Animation start offset from **0** to **1**\. A value of **0\.1** is 10% into the animation\.
+For example, you can use this setting to prevent lights in the same scene, with the same animation, from being animated in unison\.
 Default value: 0
 
 ## Additional Resources {#component-projector-light-additional-links}
 + For more information about the **Projector Light** component, see the following:
-  + [Intro to Environment Lighting](https://docs.aws.amazon.com/lumberyard/latest/userguide/enviro-lighting-intro.html)
+  + [Intro to Environment Lighting](/docs/userguide/rendering/lighting/intro)
   + [Getting Started: Using Lighting Tutorial \(video\)](https://www.youtube.com/watch?v=-KdwKZtzzo0)
 
 ## EBus Request Bus Interface {#component-projector-light-ebusrequest}

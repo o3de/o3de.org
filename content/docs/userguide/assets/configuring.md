@@ -5,15 +5,15 @@ title: Configuring the Asset Pipeline
 ---
 # Configuring the Asset Pipeline {#asset-pipeline-configuring}
 
-**Important**  
+**Important**
 The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline\. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`\. These modules are self configuring\. For instructions and examples on how to write builders that process your own asset types, see the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md)\. We recommend that you do not rely on the old `rc.exe` pipeline, although it's still available if you have legacy code\.
 
 You can configure the Lumberyard asset pipeline by editing the `\dev\AssetProcessorPlatformConfig.ini` file that `rc.exe` program uses\. You can add your own asset types to it by modifying the sections of the file described in this document\. When you check in your changes to the config file, the version of the assets on your collaborators' computers is updated automatically\. This removes the need for you to manually refresh the cache on each coworker's computer\.
 
 The `AssetProcessorPlatformConfig.ini` consists of six sections\. The `.ini` file uses standard Qt/Windows `.ini` file formatting rules\. Comments are preceded by a semicolon, and named sections are designated by square brackets\.
 
-**Important**  
-Backslashes in `.ini` files have a special meaning\. To use a regular backslash character, you must prefix it with another backslash\. To avoid problems with file paths, the asset processor and asset pipeline use forward slashes for path names\. However, if you need to use backslashes in regular expressions, you must also escape them so that they can be recognized by the regex system\. For example, you must specify the regular expression `.*\/Levels\/.*` like this:  
+**Important**
+Backslashes in `.ini` files have a special meaning\. To use a regular backslash character, you must prefix it with another backslash\. To avoid problems with file paths, the asset processor and asset pipeline use forward slashes for path names\. However, if you need to use backslashes in regular expressions, you must also escape them so that they can be recognized by the regex system\. For example, you must specify the regular expression `.*\/Levels\/.*` like this:
 
 ```
 .*\\/Levels\\/.*
@@ -114,7 +114,7 @@ The line `exportsettings=` means that when any file with the extension `.exports
 
 In the example `Animations/SkeletonList.xml=i_caf`, the left side specifies not an extension, but a specific file\. Whenever the `Animations/SkeletonList.xml` file changes \(note that the forward slash indicates a directory path\), all files with the extension `.i_caf` are invalidated\.
 
-**Note**  
+**Note**
 If you use the Asset Builder SDK, you can declare your dependencies on other files explicitly\. This makes the `[MetaDataTypes]` section less important\.
 
 ## ScanFolder Section {#asset-pipeline-configuring-scanfolder-section}
@@ -138,16 +138,16 @@ To make the scan folder OS\-specific, use the keywords `include` and `exclude`\.
 The `ScanFolder` section has the following parameters\.
 
 
-****  
+****
 
-| Entry | Description | 
-| --- | --- | 
-| watch=<foldername> | Watch this specific folder for assets\. | 
-| output=<foldername> | Put the contents of this watch folder into the subfolder of the @assets@ folder called <foldername>\. | 
-| recursive=1 | Recurse into subfolders\. | 
-| order=30000 |  Declares a priority order\. The lower the number, the more "important" a folder is\. The game folder for your project is always considered 0, the most important\.  The `order` parameter affects only assets with the same name\. For example, suppose you have an asset called `MyTexture.TIF` in two separate scan folders\. If both asset files map to the same output file, then the asset file with the lower order number overrides the one with the higher\.   | 
-| include=<comma\-separated platform tags or identifiers> | Contains the list of platforms or platform tags to include for the scan folder\. Only enabled platforms are included\. If you include a disabled platform, it will not be considered for the scan folder\. | 
-| exclude==<comma separated platform tags or identifiers> | Contains the list of platforms or platform tags to exclude for the scan folder\. | 
+| Entry | Description |
+| --- | --- |
+| watch=<foldername> | Watch this specific folder for assets\. |
+| output=<foldername> | Put the contents of this watch folder into the subfolder of the @assets@ folder called <foldername>\. |
+| recursive=1 | Recurse into subfolders\. |
+| order=30000 |  Declares a priority order\. The lower the number, the more "important" a folder is\. The game folder for your project is always considered 0, the most important\.  The `order` parameter affects only assets with the same name\. For example, suppose you have an asset called `MyTexture.TIF` in two separate scan folders\. If both asset files map to the same output file, then the asset file with the lower order number overrides the one with the higher\.   |
+| include=<comma\-separated platform tags or identifiers> | Contains the list of platforms or platform tags to include for the scan folder\. Only enabled platforms are included\. If you include a disabled platform, it will not be considered for the scan folder\. |
+| exclude==<comma separated platform tags or identifiers> | Contains the list of platforms or platform tags to exclude for the scan folder\. |
 
 **Notes**
 + In most cases, you do not need to specify an output folder\. The output folder remaps source folders into subfolders of the cache\. Usually folders that contain assets go into the cache directly, without requiring a subfolder\.
@@ -175,11 +175,11 @@ pattern=.*Editor\\/Tmp\\/AnimationCompression\\/.*
 
 ## RC Section {#asset-pipeline-configuring-rc-section}
 
-Use the `RC` section to specify files to be processed by the `rc.exe` program or to be copied as\-is into the asset cache without processing\. The `RC` section is only for use by legacy RC modules and for specifying simple file copies to cache\. 
+Use the `RC` section to specify files to be processed by the `rc.exe` program or to be copied as\-is into the asset cache without processing\. The `RC` section is only for use by legacy RC modules and for specifying simple file copies to cache\.
 
 The `RC` section consists of a series of *recognizer descriptors*\. Each descriptor specifies a set of files \(by glob or by pattern\) and what to do with the specified files\. Changing the fields of the recognizer invalidates assets according to the change made\.
 
-**Important**  
+**Important**
 Because they do not use the legacy `rc.exe` program, builders implemented as builder modules do not use the `RC` section\. Instead, they derive their configuration programmatically or read it from a custom config file\. If you create your own `BuilderSDK` builder, do not add anything to the `RC` section\.
 
 The following code block shows the syntax of the `RC` section\.
@@ -200,19 +200,19 @@ version=(0...n)
 The following table describes each parameter and its options\.
 
 
-****  
+****
 
-| `Parameter` | Description | 
-| --- | --- | 
-| pattern | A regular expression that specifies the files to process\. When you use regular expressions, remember to escape any backslashes\. | 
-| glob | A wildcard expression like \*\.tif that specifies binary glob files to process\. | 
-| params | The `params` parameter can take one of the following three options\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/asset-pipeline-configuring.html) If you omit the params, platform params, or tag params sections, the `rc.exe` program processes the file using default options\. To process the file on specific operating systems, set the `params` parameter to `skip` and then specify the desired platforms\. If you pass parameters to the `rc.exe` program, you can pass `p` \(as in `/p=pc`\) to force the program to process the asset as if it were the PC\. You can pass the appropriate parameter for the desired platform\.  | 
-| \(platformname\)=\(params\) | Specifies OS\-specific parameters\. You can use the params parameter to specify default parameters, and then override them for specific operating systems when required by using platformname=params\. For example, the statement pc=/TEST overrides the default parameters for PC and passes the parameter /TEST to the rc\.exe program\.Can be `true` or `false`\. When `true`, causes the job to wait until it can gain an exclusive read/write lock on the source file\. | 
-| \(tagname\)=\(params\) | Specifies tag\-specific parameters, which are generally better than platform\-specific parameters\. For example, the following statement causes all platforms to use the default parameters when processing `.tiff` files\. However, a platform with the `server` tag is skipped\.<pre>[RC tif]<br />pattern=.*\\.tiff? <br />server=skip</pre> | 
-| lockSource | The following statement passes `/p=pc` to invocations of the `rc.exe` program: `server=/p=pc`\. This allows the program to process assets \(such as textures\) as if it were the PC, even on the server\. The default behavior is to pass /p=server, which the rc\.exe program may not understand\.  The `lockSource` parameter is useful for dealing with applications that hold onto a file and then slowly stream data into it\. For example, if a program creates very large files over a long period of time, you can set `lockSource=true` to avoid processing an asset until the other application releases it\. Use of this parameter is relatively rare and is generally expensive, so you should avoid using it unless absolutely required\. | 
-| priority | Specifies job priority\. A larger number gives a job greater priority in the queue\. Normally, you should assign a larger number to assets that are likely to be needed from the start or that affect gameplay\. This ensures that they get compiled sooner\.  `params` `copy` jobs have an default priority of 1\.  | 
-| critical | Can be `true` or `false`\. Critical jobs cause the editor splash screen to continue displaying and pause the startup of the runtime until every critical job has been completed\. Marking jobs as critical ensures they are complete before the editor is allowed to start\. You can specify entire types of assets as critical\. This can be useful for files that are used during startup, cause bad behavior if they are not ready during bootstrap, or cannot be reloaded live\.  Because critical jobs can delay the startup of the editor for the first time, not having critical jobs is always the preferred choice\. Alternative approaches include:   Making the editor or runtime capable of reloading the asset live after it is compiled\.   Making a call to compile the asset on demand using the asset system bus\. You can use the public function `CompileAssetSync` to do this\. See the Lumberyard source code for examples\.     `params` `copy` jobs are critical by default\.  | 
-| version | An arbitrary versioning number\. The default is 0\. Changing the version number invalidates the assets specified and causes them to be rebuilt\. The `version` parameter provides a convenient way to cause a rebuild of all assets of a particular kind\. For example, you might make changes to the compiler that builds a particular kind of asset\. Then, when you check in your changes to the `.ini` file, local assets of workers receiving the update are rebuilt for them automatically\. | 
+| `Parameter` | Description |
+| --- | --- |
+| pattern | A regular expression that specifies the files to process\. When you use regular expressions, remember to escape any backslashes\. |
+| glob | A wildcard expression like \*\.tif that specifies binary glob files to process\. |
+| params | The `params` parameter can take one of the following three options\. [\[See the AWS documentation website for more details\]](/docs/userguide/assets/configuring) If you omit the params, platform params, or tag params sections, the `rc.exe` program processes the file using default options\. To process the file on specific operating systems, set the `params` parameter to `skip` and then specify the desired platforms\. If you pass parameters to the `rc.exe` program, you can pass `p` \(as in `/p=pc`\) to force the program to process the asset as if it were the PC\. You can pass the appropriate parameter for the desired platform\.  |
+| \(platformname\)=\(params\) | Specifies OS\-specific parameters\. You can use the params parameter to specify default parameters, and then override them for specific operating systems when required by using platformname=params\. For example, the statement pc=/TEST overrides the default parameters for PC and passes the parameter /TEST to the rc\.exe program\.Can be `true` or `false`\. When `true`, causes the job to wait until it can gain an exclusive read/write lock on the source file\. |
+| \(tagname\)=\(params\) | Specifies tag\-specific parameters, which are generally better than platform\-specific parameters\. For example, the following statement causes all platforms to use the default parameters when processing `.tiff` files\. However, a platform with the `server` tag is skipped\.<pre>[RC tif]<br />pattern=.*\\.tiff? <br />server=skip</pre> |
+| lockSource | The following statement passes `/p=pc` to invocations of the `rc.exe` program: `server=/p=pc`\. This allows the program to process assets \(such as textures\) as if it were the PC, even on the server\. The default behavior is to pass /p=server, which the rc\.exe program may not understand\.  The `lockSource` parameter is useful for dealing with applications that hold onto a file and then slowly stream data into it\. For example, if a program creates very large files over a long period of time, you can set `lockSource=true` to avoid processing an asset until the other application releases it\. Use of this parameter is relatively rare and is generally expensive, so you should avoid using it unless absolutely required\. |
+| priority | Specifies job priority\. A larger number gives a job greater priority in the queue\. Normally, you should assign a larger number to assets that are likely to be needed from the start or that affect gameplay\. This ensures that they get compiled sooner\.  `params` `copy` jobs have an default priority of 1\.  |
+| critical | Can be `true` or `false`\. Critical jobs cause the editor splash screen to continue displaying and pause the startup of the runtime until every critical job has been completed\. Marking jobs as critical ensures they are complete before the editor is allowed to start\. You can specify entire types of assets as critical\. This can be useful for files that are used during startup, cause bad behavior if they are not ready during bootstrap, or cannot be reloaded live\.  Because critical jobs can delay the startup of the editor for the first time, not having critical jobs is always the preferred choice\. Alternative approaches include:   Making the editor or runtime capable of reloading the asset live after it is compiled\.   Making a call to compile the asset on demand using the asset system bus\. You can use the public function `CompileAssetSync` to do this\. See the Lumberyard source code for examples\.     `params` `copy` jobs are critical by default\.  |
+| version | An arbitrary versioning number\. The default is 0\. Changing the version number invalidates the assets specified and causes them to be rebuilt\. The `version` parameter provides a convenient way to cause a rebuild of all assets of a particular kind\. For example, you might make changes to the compiler that builds a particular kind of asset\. Then, when you check in your changes to the `.ini` file, local assets of workers receiving the update are rebuilt for them automatically\. |
 
 The following example specifies how `.tiff` files are to be processed\.
 

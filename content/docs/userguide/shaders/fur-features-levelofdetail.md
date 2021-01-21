@@ -4,7 +4,7 @@ title: Level of Detail
 ---
 # Level of Detail {#shader-ref-fur-features-levelofdetail}
 
-Fur rendering level of detail uses many of the same mechanics as mesh level of detail\. 
+Fur rendering level of detail uses many of the same mechanics as mesh level of detail\.
 
 For fur rendering, the number of shell passes drawn decreases over a distance\. You can define the maximum number of passes using the [console variable](/docs/userguide/shaders/fur-consolevariables.md) `r_FurShellPassCount`\.
 

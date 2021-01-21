@@ -8,23 +8,23 @@ After you set up your skinned meshes as actors, you can create your actor entiti
 
 **To create actor entities**
 
-1. From the **Asset Browser**, select and drag the main actor file and the attachment actor files into the viewport\.  
+1. From the **Asset Browser**, select and drag the main actor file and the attachment actor files into the viewport\.
 ![\[From the Asset Browser, drag the main actor file and its attachment actor files into the viewport.\]](/images/userguide/component/component-actor-component-entity-setup-1.png)
 
-   Lumberyard automatically adds each file as its own actor component entity\.  
+   Lumberyard automatically adds each file as its own actor component entity\.
 ![\[Drag each actor file to the viewport results in three separate actor entities in the Entity Outliner.\]](/images/userguide/component/component-actor-component-entity-setup-2.png)
 
-1. In the **Entity Outliner**, click and drag the attachment entities to the main entity; this parents the attachment actor entities to the main actor entity\.  
+1. In the **Entity Outliner**, click and drag the attachment entities to the main entity; this parents the attachment actor entities to the main actor entity\.
 ![\[Parent the attachment entities by selecting and dragging them onto the main actor entity in the Entity Outliner.\]](/images/userguide/component/component-actor-component-entity-setup-2-parented.png)
-**Note**  
-The attachments entities may not line up with the main entity\. You'll fix this in the next step\.  
-**Example**    
+**Note**
+The attachments entities may not line up with the main entity\. You'll fix this in the next step\.
+**Example**
 ![\[View the main actor entity and the attachment entities in the viewport.\]](/images/userguide/component/component-actor-component-entity-setup-3.png)
 
-1. To align the children with its parent, select a child \(attachment\) entity and then in the **Entity Inspector**, specify the **Translate** values to `0`\. Repeat for any other child entities\.  
+1. To align the children with its parent, select a child \(attachment\) entity and then in the **Entity Inspector**, specify the **Translate** values to `0`\. Repeat for any other child entities\.
 ![\[Change the Translate values to 0 on each child entity to line it up with the parent.\]](/images/userguide/component/component-actor-component-entity-setup-4.png)
 
-   The attachments now line up with the main actor entities\.  
+   The attachments now line up with the main actor entities\.
 ![\[Attachment entities lined up correctly with the main parent actor entity.\]](/images/userguide/component/component-actor-component-entity-setup-5.png)
 
 1. For each child entity, do the following:

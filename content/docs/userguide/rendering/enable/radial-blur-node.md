@@ -15,27 +15,27 @@ To disable the effect, see [Disable Radial Blur](/docs/userguide/rendering/disab
 
 ![\[enableradialblurnode, enableradialblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-radial-blur-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Radial Blur node to add blur radius on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-radial-blur-node-example.png)
 
 ## Inputs {#enable-radial-blur-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Amount | Number |  Amount of blurring\. Default value: `1`  | 
-| Screen Position | Vector2 |  Screen position of the center of the blur\. Default value: \(`0.5`, `0.5`\) This is the center of the screen\.  | 
-|  Radius  | Number |  Blurring radius\. Default value: `1`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Amount | Number |  Amount of blurring\. Default value: `1`  |
+| Screen Position | Vector2 |  Screen position of the center of the blur\. Default value: \(`0.5`, `0.5`\) This is the center of the screen\.  |
+|  Radius  | Number |  Blurring radius\. Default value: `1`  |
 
 ## Outputs {#enable-radial-blur-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

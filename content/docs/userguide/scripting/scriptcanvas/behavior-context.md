@@ -41,9 +41,9 @@ Some of the requests that you can issue on a Light Component are the following\.
 
 ```
 //! Turns light on. Returns true if the light was successfully turned on
-virtual bool TurnOnLight() { return false; } 
+virtual bool TurnOnLight() { return false; }
 //! Turns light off. Returns true if the light was successfully turned off
-virtual bool TurnOffLight() { return false; } 
+virtual bool TurnOffLight() { return false; }
 //! Toggles light state.
 virtual void ToggleLight() {}
 ```
@@ -85,12 +85,12 @@ class BehaviorLightComponentNotificationBusHandler : public LightComponentNotifi
 {
 public:
     AZ_EBUS_BEHAVIOR_BINDER(BehaviorLightComponentNotificationBusHandler, "{969C5B17-10D1-41DB-8123-6664FA64B4E9}", AZ::SystemAllocator,
-        LightTurnedOn, LightTurnedOff); 
+        LightTurnedOn, LightTurnedOff);
     // Sent when the light is turned on.
     void LightTurnedOn() override
     {
         Call(FN_LightTurnedOn);
-    } 
+    }
     // Sent when the light is turned off.
     void LightTurnedOff() override
     {
@@ -124,7 +124,7 @@ behaviorContext->Class<Collision>()
      ;
 ```
 
-**Note**  
+**Note**
 During the preview release of Script Canvas, properties must provide both getters and setters to be accessible on a Script Canvas node\. Containers such as vectors are currently not supported\. For this reason, velocities, masses, and surfaces do not provide a setter\.
 
 Most object variables are set as a result of an event\. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event\.
@@ -137,7 +137,7 @@ You can use the following graph to set the collision variable:
 
 ## Displaying EBus Event Parameter Names in Script Canvas Nodes {#script-canvas-behavior-context-parameter-names}
 
-To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context\. 
+To display parameter names correctly for your EBus events, ensure that you specify custom names when you reflect your events to the behavior context\.
 
 If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
 
@@ -164,7 +164,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 {
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window
-        ->Attribute(AZ::Script::Attributes::Category, "Rendering") 
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
         ->Event("SomeEvent", &MyBus::Events::SomeEvent, { { { "FirstParam" , "First Param Tooltip" }, { "SecondParam", "Second Param Tooltip" } } });
 }
 ```
@@ -173,7 +173,7 @@ In the node palette window, the parameter names appear as specified:
 
 ![\[Specified parameter names displayed\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
 
-**Alternate Syntax**  
+**Alternate Syntax**
 You can also use the following alternate syntax to create parameter override instances before passing them to the `Event` function:
 
 ```
@@ -183,7 +183,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
     AZ::BehaviorParameterOverrides someEventParam2 = { "SecondParam", "Second Param Tooltip" };
     behaviorContext->EBus<MyBus>("MyBus")
         // This is the category that appears in the Node Palette window
-        ->Attribute(AZ::Script::Attributes::Category, "Rendering") 
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
         ->Event("SomeEvent", &MyBus::Events::SomeEvent, { {someEventParam1, someEventParam2} });
 }
 ```
@@ -192,7 +192,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 
 The following are some common problems that occur when programming with Script Canvas and the behavior context\.
 
-**I reflected my class to the behavior context, but it doesn't appear in Script Canvas\.**  
+**I reflected my class to the behavior context, but it doesn't appear in Script Canvas\.**
 Both the serialization context and the behavior context use the same `Reflect` function:
 
 ```
@@ -211,7 +211,7 @@ void Example::Reflect(AZ::ReflectContext* context)
         serializeContext->Class<Example>()
             ->Version(1)
             ;
- 
+
         // Problem! BehaviorContext is inside the SerializeContext scope and will not get reflected.
         if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
         {
@@ -234,7 +234,7 @@ void Example::Reflect(AZ::ReflectContext* context)
             ->Version(1)
             ;
     }
- 
+
     // Correct! Each context requires its own scope as this function is called multiple times (once per context)
     if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
     {
@@ -245,7 +245,7 @@ void Example::Reflect(AZ::ReflectContext* context)
 }
 ```
 
-**I exposed a new EBus to the Behavior Context, but my handler is not getting called\.**  
+**I exposed a new EBus to the Behavior Context, but my handler is not getting called\.**
 For example, you created an EBus handler and properly exposed it script\. Yet, when you try to receive the event in Script Canvas, it does not get triggered\.
 
 This is caused by an oversight that is easy to make: newly implemented EBus handlers must be connected before they can receive events\. The solution is to ensure that your component connects to the bus, as in the following example:

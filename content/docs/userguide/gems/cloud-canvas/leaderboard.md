@@ -30,17 +30,17 @@ You use Lumberyard Editor to work with the Leaderboard Cloud Gem Portal\.
 
 **To access and use the Leaderboard Cloud Gem Portal**
 
-1. 
+1.
 
 **Opening the Cloud Gem Portal**
 
    In Lumberyard Editor, click **AWS**, **Open Cloud Gem Portal** and then choose the **Leaderboard** cloud gem\.
 
-1. 
+1.
 
 **Creating a Leaderboard**
 
-   You must create a leaderboard for your game before you can start posting scores to it\. In the Leaderboard Cloud Gem, click **Add Leaderboard** to create a leaderboard so that your game can use it\. If your game tries to send data to a leaderboard that doesn't exist, the data is not be sent or saved anywhere\.  
+   You must create a leaderboard for your game before you can start posting scores to it\. In the Leaderboard Cloud Gem, click **Add Leaderboard** to create a leaderboard so that your game can use it\. If your game tries to send data to a leaderboard that doesn't exist, the data is not be sent or saved anywhere\.
 ![\[Add leaderboard\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-add.png)
 
    A leaderboard has the following options:
@@ -51,36 +51,36 @@ You use Lumberyard Editor to work with the Leaderboard Cloud Gem Portal\.
 
      **Reservoir Sample Size** - The leaderboard sample reservoir size\. The recommended range is from 200 through 1000\.
 
-1. 
+1.
 
 **Editing a Leaderboard**
 
-   To edit all options for a leaderboard \(except for **Leaderboard ID**\), click the settings ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-settings-icon.png) icon on the right side of the leaderboard entry\. If you want to change the value for **Leaderboard ID**, you must delete and recreate the leaderboard\. When you delete a leaderboard, its data is also deleted\.  
+   To edit all options for a leaderboard \(except for **Leaderboard ID**\), click the settings ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-settings-icon.png) icon on the right side of the leaderboard entry\. If you want to change the value for **Leaderboard ID**, you must delete and recreate the leaderboard\. When you delete a leaderboard, its data is also deleted\.
 ![\[Configuring your leaderboard\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-configure.png)
 
-1. 
+1.
 
 **Viewing Leaderboards**
 
-   To view a leaderboard, click its name\. This shows you a list of players and their scores in the leaderboard\. You can also delete a player's scores or ban a player from all leaderboards\.  
+   To view a leaderboard, click its name\. This shows you a list of players and their scores in the leaderboard\. You can also delete a player's scores or ban a player from all leaderboards\.
 ![\[Viewing leaderboards\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-view.png)
 
-1. 
+1.
 
 **Deleting Scores**
 
    To delete a score, click the delete icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-trash-icon.png)on the right of the player's score\. Then click **Delete** in the confirmation window\.
 
-1. 
+1.
 
 **Banning a Player**
 
-   To ban a player, click the ban icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png)on the right side of the player table next to the delete icon\. When you ban a player, the player's scores are removed from all leaderboards, and the player is prevented from posting on other leaderboards\. This is a reversible action; you can remove a ban if done by mistake\.  
+   To ban a player, click the ban icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-icon.png)on the right side of the player table next to the delete icon\. When you ban a player, the player's scores are removed from all leaderboards, and the player is prevented from posting on other leaderboards\. This is a reversible action; you can remove a ban if done by mistake\.
 ![\[Banning a player\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban.png)
 
-1. 
+1.
 
 **Removing a Ban**
 
-   To remove a ban, click the **Banned Players** tab\. The tab displays a list of banned players in all your leaderboards\. Click the ban icon again, and then click **Save** in the confirmation window\.  
+   To remove a ban, click the **Banned Players** tab\. The tab displays a list of banned players in all your leaderboards\. Click the ban icon again, and then click **Save** in the confirmation window\.
 ![\[Removing a ban\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-ban-remove.png)

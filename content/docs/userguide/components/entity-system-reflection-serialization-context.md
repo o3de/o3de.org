@@ -11,7 +11,7 @@ You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Seria
 class SerializedObject
 {
 public:
-    AZ_RTTI(SerializedObject, ""); 
+    AZ_RTTI(SerializedObject, "");
     static void Reflect(AZ::ReflectContext* context)
     {
         SerializeContext* serializeContext = azrtti_cast<SerializeContext*>(reflection);
@@ -27,7 +27,7 @@ public:
 You can also reflect native types and [POD structs](https://en.wikipedia.org/wiki/C++_classes#POD-structs) for serialization by creating an `AZ_TYPE_INFO` specialization, as in the following code example:
 
 ```
-AZ_TYPE_INFO_SPECIALIZE(AZStd::chrono::system_clock::time_point, "{5C48FD59-7267-405D-9C06-1EA31379FE82}"); 
+AZ_TYPE_INFO_SPECIALIZE(AZStd::chrono::system_clock::time_point, "{5C48FD59-7267-405D-9C06-1EA31379FE82}");
 AZ_TYPE_INFO_SPECIALIZE(float, "{EA2C3E90-AFBE-44d4-A90D-FAAF79BAF93D}");
 ```
 
@@ -68,12 +68,12 @@ bool Uuid::Load(void* classPtr, IO::GenericStream& stream, unsigned int /*versio
 	if (stream.GetLength() < 16)
 	{
 		return false;
-	} 
+	}
 	Uuid* uuidPtr = reinterpret_cast<Uuid*>(classPtr);
 	if (stream.Read(16, reinterpret_cast<void*>(&uuidPtr->data)) == 16)
 	{
 		return true;
-	} 
+	}
 	return false;
 }
 ```
@@ -88,13 +88,13 @@ size_t Uuid::DataToText(IO::GenericStream& in, IO::GenericStream& out, bool)
 	if (in.GetLength() < 16)
 	{
 		return 0;
-	} 
+	}
 	Uuid value;
 	void* dataPtr = reinterpret_cast<void*>(&value.data);
-	in.Read(16, dataPtr); 
+	in.Read(16, dataPtr);
 	char str[128];
 	value.ToString(str, 128);
-	AZStd::string outText = str; 
+	AZStd::string outText = str;
 	return static_cast<size_t>(out.Write(outText.size(), outText.data()));
 }
 ```
@@ -102,7 +102,7 @@ size_t Uuid::DataToText(IO::GenericStream& in, IO::GenericStream& out, bool)
 The following `TextToData` function converts the text input string into binary UUID format and then writes the binary data out to the stream\.
 
 ```
-/// Convert text data to binary to support the loading of legacy formats. 
+/// Convert text data to binary to support the loading of legacy formats.
 // Respect the text version if the text->binary format has changed!
 size_t Uuid::TextToData(const char* text, unsigned int, IO::GenericStream& stream, bool)
 {
@@ -132,7 +132,7 @@ AZStd::unique_ptr<T>
 
 You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`\. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object\.
 
-**Stable Elements**  
+**Stable Elements**
 Elements are considered stable if their pointers do not change when other elements are added to or removed from a container\. Lumberyard's implementation of stable elements corresponds to the [C\+\+17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard\. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence\. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous\. Stable elements can be removed from a container without affecting other elements in the container\. You can use the `IsStableElements` function to determine the status of a container's elements\. If a container's elements are not stable, you must enumerate them in order for them to be serialized\.
 
 The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements\.
@@ -166,7 +166,7 @@ const SerializeContext::ClassElement* GetElement(u32 elementNameCrc) const overr
         return &m_classElement;
     }
     return nullptr;
-} 
+}
 // The following GetElement method uses the supplied DataElement object to lookup the ClassElement with the supplied parameter. Returns true if it finds a ClassElement.
 bool GetElement(SerializeContext::ClassElement& classElement, const SerializeContext::DataElement& dataElement) const override
 {
@@ -187,7 +187,7 @@ The following example shows how to override the `EnumElement` method to specify 
 /// By invoking the callback on an element, the enumeration continues down the path for that element.
 void EnumElements(void* instance, const ElementCB& cb) override
 {
-    T* arrayPtr = reinterpret_cast<T*>(instance); 
+    T* arrayPtr = reinterpret_cast<T*>(instance);
     typename T::iterator it = arrayPtr->begin();
     typename T::iterator end = arrayPtr->end();
     for (; it != end; ++it)
@@ -212,25 +212,25 @@ size_t  Size(void* instance) const override
 {
     const T* arrayPtr = reinterpret_cast<const T*>(instance);
     return arrayPtr->size();
-} 
+}
 /// Return the capacity of the container. Return 0 for objects without fixed capacity.
 size_t Capacity(void* instance) const override
 {
     (void)instance;
     return 0;
-} 
+}
 
 /// Return true if the element pointers do not change when the element is added to or removed from the container. If false, you MUST enumerate all elements.
-bool    IsStableElements() const override           { return IsStableIterators; } 
+bool    IsStableElements() const override           { return IsStableIterators; }
 
 /// Return true if the container has a fixed size; otherwise false.
-bool    IsFixedSize() const override                { return false; } 
+bool    IsFixedSize() const override                { return false; }
 
 /// Return true if the container has a fixed capacity; otherwise false.
-bool    IsFixedCapacity() const override            { return false; } 
+bool    IsFixedCapacity() const override            { return false; }
 
 /// Return true if the container is a smart pointer.
-bool    IsSmartPointer() const override             { return false; } 
+bool    IsSmartPointer() const override             { return false; }
 
 /// Return true if the elements can be retrieved by index.
 bool    CanAccessElementsByIndex() const override   { return false; }
@@ -245,7 +245,7 @@ To load an element into the template class instance, override the `ReserveElemen
 
 ```
 /// Use the reserve element function.
-/// The reserve element function allows creation of the element on the data container instance. 
+/// The reserve element function allows creation of the element on the data container instance.
 /// The following code serializes an element and returns an address to the reserved element.
 void*   ReserveElement(void* instance, const SerializeContext::ClassElement* classElement) override
 {
@@ -253,7 +253,7 @@ void*   ReserveElement(void* instance, const SerializeContext::ClassElement* cla
     T* arrayPtr = reinterpret_cast<T*>(instance);
     arrayPtr->push_back();
     return &arrayPtr->back();
-} 
+}
 /// Use the GetElementByIndex function to get an element's address by its index.
 // Call this function before the element is loaded.
 void*   GetElementByIndex(void* instance, const SerializeContext::ClassElement* classElement, size_t index) override
@@ -262,15 +262,15 @@ void*   GetElementByIndex(void* instance, const SerializeContext::ClassElement* 
     (void)classElement;
     (void)index;
     return nullptr;
-} 
+}
 /// Use the store element function.
 void    StoreElement(void* instance, void* element) override
 {
     (void)instance;
     (void)element;
-    // Do nothing; you have already pushed the element. 
+    // Do nothing; you have already pushed the element.
     // However, you can assert and check if the element belongs to the container.
-} 
+}
 /// Remove the element from the container.
 /// This also deletes the memory associated with the element.
 bool    RemoveElement(void* instance, const void* element, SerializeContext* deletePointerDataContext) override
@@ -290,19 +290,19 @@ bool    RemoveElement(void* instance, const void* element, SerializeContext* del
         }
     }
     return false;
-} 
+}
 /// Remove elements (remove an array of elements) whether the container is stable or not. Stability can be tested by IsStableElements.
 size_t  RemoveElements(void* instance, const void** elements, size_t numElements, SerializeContext* deletePointerDataContext) override
 {
     if (numElements == 0)
     {
         return 0;
-    } 
-    size_t numRemoved = 0; 
+    }
+    size_t numRemoved = 0;
     // Handle the case when the container does not have stable elements.
     if (!IsStableIterators)
     {
-        // If the elements are in order, you can remove all of them from the container. 
+        // If the elements are in order, you can remove all of them from the container.
         // Otherwise, they must be sorted again locally (not done in this example).
         // Or, ask the user to pass the elements in order and remove the first N possible in order.
         for (size_t i = 1; i < numElements; ++i)
@@ -333,7 +333,7 @@ size_t  RemoveElements(void* instance, const void** elements, size_t numElements
         }
     }
     return numRemoved;
-} 
+}
 /// Clear elements in the instance.
 void    ClearElements(void* instance, SerializeContext* deletePointerDataContext) override
 {
@@ -360,13 +360,13 @@ SerializeContext::ClassData::Create<ContainerType>("AZStd::vector", GetSpecializ
 The `Create<ContainerType>` function parameters are explained in the following table\.
 
 
-| Parameter | Description | 
-| --- | --- | 
-| "AZStd::vector" | Specifies the user friendly name of the class in a JSON or XML stream\. | 
-| GetSpecializedTypeId\(\) | Creates an ID that enables serialization of different types\. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats\. The unique ID is made by aggregating the template type AZStd::vector with the contained type T\.  | 
-| Internal::NullFactory::GetInstance\(\) | NullFactory is used to prevent heap memory from being used to create an AZStd::vector\. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>\. | 
-| nullptr  | This is the Serializer parameter\. Because the serialization occurs through a data container, this parameter is nullptr\. | 
-| &m\_containerStorage | The m\_containerStorage structure is an AZStdBasicContainer that ClassData uses to serialize the AZStd::vector element array\. | 
+| Parameter | Description |
+| --- | --- |
+| "AZStd::vector" | Specifies the user friendly name of the class in a JSON or XML stream\. |
+| GetSpecializedTypeId\(\) | Creates an ID that enables serialization of different types\. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats\. The unique ID is made by aggregating the template type AZStd::vector with the contained type T\.  |
+| Internal::NullFactory::GetInstance\(\) | NullFactory is used to prevent heap memory from being used to create an AZStd::vector\. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>\. |
+| nullptr  | This is the Serializer parameter\. Because the serialization occurs through a data container, this parameter is nullptr\. |
+| &m\_containerStorage | The m\_containerStorage structure is an AZStdBasicContainer that ClassData uses to serialize the AZStd::vector element array\. |
 
 The following code example uses the `Create<ContainerType>` function to set up serialization for the templated `AZStd::vector<T>`\.
 
@@ -375,7 +375,7 @@ The following code example uses the `Create<ContainerType>` function to set up s
 template<class T, class A>
 struct SerializeGenericTypeInfo< AZStd::vector<T, A> >
 {
-    typedef typename AZStd::vector<T, A> ContainerType; 
+    typedef typename AZStd::vector<T, A> ContainerType;
     class GenericClassInfoVector
         : public GenericClassInfo
     {
@@ -385,28 +385,28 @@ struct SerializeGenericTypeInfo< AZStd::vector<T, A> >
         {
             // The following code creates the ClassData structure that specifies how an element is serialized.
             m_classData = SerializeContext::ClassData::Create<ContainerType>("AZStd::vector", GetSpecializedTypeId(), Internal::NullFactory::GetInstance(), nullptr, &m_containerStorage);
-        } 
+        }
         SerializeContext::ClassData* GetClassData() override
         {
             return &m_classData;
-        } 
+        }
         size_t GetNumTemplatedArguments() override
         {
             return 1;
-        } 
+        }
         const Uuid& GetTemplatedTypeId(size_t element) override
         {
             (void)element;
             return SerializeGenericTypeInfo<T>::GetClassTypeId();
-        } 
+        }
         const Uuid& GetSpecializedTypeId() const override
         {
             return azrtti_typeid<ContainerType>();
-        } 
+        }
         const Uuid& GetGenericTypeId() const override
         {
             return TYPEINFO_Uuid();
-        } 
+        }
         void Reflect(SerializeContext* serializeContext)
         {
             if (serializeContext)
@@ -417,19 +417,19 @@ struct SerializeGenericTypeInfo< AZStd::vector<T, A> >
                     containerGenericClassInfo->Reflect(serializeContext);
                 }
             }
-        } 
+        }
         static GenericClassInfoVector* Instance()
         {
             static GenericClassInfoVector s_instance;
             return &s_instance;
-        } 
+        }
         Internal::AZStdBasicContainer<ContainerType, false> m_containerStorage;
         SerializeContext::ClassData m_classData;
-    }; 
+    };
     static GenericClassInfo* GetGenericInfo()
     {
         return GenericClassInfoVector::Instance();
-    } 
+    }
     static const Uuid& GetClassTypeId()
     {
         return GenericClassInfoVector::Instance()->m_classData.m_typeId;
@@ -455,7 +455,7 @@ public:
 		auto* sceneData = reinterpret_cast<SceneData*>(classPtr);
 		BuildEndpointMap((*sceneData));
 	}
-}; 
+};
 
 // Next add the event handler to the reflection of the class that needs to perform additional data processing.
 
@@ -480,7 +480,7 @@ struct DataOverlayTestStruct
        AZ_CLASS_ALLOCATOR(DataOverlayTestStruct, AZ::SystemAllocator, 0);
 		DataOverlayTestStruct()
 		: m_int(0)
-		, m_ptr(nullptr) {} 
+		, m_ptr(nullptr) {}
 	int                     m_int;
 	AZStd::vector<int>      m_intVector;
 	DataOverlayTestStruct*  m_ptr;
@@ -508,18 +508,18 @@ public:
 	static DataOverlayProviderId    GetProviderId() { return AZ_CRC("DataOverlayProviderExample", 0x60dafdbd); }
 	static u32                      GetIntToken() { return AZ_CRC("int_data", 0xd74868f3); }
 	static u32                      GetVectorToken() { return AZ_CRC("vector_data", 0x0aca20c0); }
-	static u32                      GetPointerToken() { return AZ_CRC("pointer_data", 0xa46a746e); } 
+	static u32                      GetPointerToken() { return AZ_CRC("pointer_data", 0xa46a746e); }
 	DataOverlayProviderExample()
 	{
 		m_ptrData.m_int = 5;
 		m_ptrData.m_intVector.push_back(1);
-		m_ptrData.m_ptr = nullptr; 
+		m_ptrData.m_ptr = nullptr;
 		m_data.m_int = 3;
 		m_data.m_intVector.push_back(10);
 		m_data.m_intVector.push_back(20);
 		m_data.m_intVector.push_back(30);
 		m_data.m_ptr = &m_ptrData;
-	} 
+	}
 	void FillOverlayData(DataOverlayTarget* dest, const DataOverlayToken& dataToken) override
 	{
 		if (*reinterpret_cast<const u32*>(dataToken.m_dataUri.data()) == GetIntToken())
@@ -534,7 +534,7 @@ public:
 		{
 			dest->SetData(*m_data.m_ptr);
 		}
-	} 
+	}
 	DataOverlayTestStruct   m_data;
 	DataOverlayTestStruct   m_ptrData;
 };

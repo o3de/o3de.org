@@ -17,7 +17,7 @@ The following examples demonstrate how to apply these styles\.
 
 Use `AzQtComponents::ScrollBar::setDisplayMode` to set the scrollbar display mode\. The default mode is `AlwaysShow`\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/ScrollBar.h>
@@ -41,7 +41,7 @@ Use `AzQtComponents::ScrollBar::applyDarkStyle` to make the scrollbar more visib
 
  `ScrollBar::applyLightStyle` reverts the scrollbar back to the default style\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/ScrollBar.h>
@@ -60,7 +60,7 @@ AzQtComponents::ScrollBar::applyLightStyle(scrollArea);
 ## C\+\+ API reference<a name="scrollbar-api-ref"></a>
 
 For details on the **scrollbar** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::ScrollBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_scroll_bar.html) 
++  [AzQtComponents::ScrollBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_scroll_bar.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QScrollArea Class](https://doc.qt.io/qt-5/qscrollarea.html) 
++  [QScrollArea Class](https://doc.qt.io/qt-5/qscrollarea.html)

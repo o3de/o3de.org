@@ -34,48 +34,48 @@ if (BehaviorContext* behaviorContext = azrtti_cast<BehaviorContext*>(reflection)
 
 You can use the built\-in attributes described in this section to decorate a class\.
 
-**Category**  
-Used by the editor to categorize the object in a list\.   
-Type: `string`  
-You can use the forward slash \(`/`\) separator to nest categories, as in the following example:  
+**Category**
+Used by the editor to categorize the object in a list\.
+Type: `string`
+You can use the forward slash \(`/`\) separator to nest categories, as in the following example:
 
 ```
 Attribute(AZ::Script::Attributes::Category, "Gameplay/Triggers")
 ```
 
-**ExcludeFrom**  
-A flag that optionally hides this object from specific types of exposure\. This flag is primarily used for internal objects that are not intended to be accessible by script\.   
-Type: `AZ::Script::Attributes::ExcludeFlags`  
-Possible values: `List`, `Documentation`, `Preview`, `All`      
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-system-reflection-behavior-context.html)
+**ExcludeFrom**
+A flag that optionally hides this object from specific types of exposure\. This flag is primarily used for internal objects that are not intended to be accessible by script\.
+Type: `AZ::Script::Attributes::ExcludeFlags`
+Possible values: `List`, `Documentation`, `Preview`, `All`
+[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-system-reflection-behavior-context)
 
-**Storage**  
-Specifies the owner of the memory storage for the reflected object\.  
-Type: `AZ::Script::Attributes::StorageType`  
-Possible values: `ScriptOwn`, `RuntimeOwn`, `Value`      
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-system-reflection-behavior-context.html)
+**Storage**
+Specifies the owner of the memory storage for the reflected object\.
+Type: `AZ::Script::Attributes::StorageType`
+Possible values: `ScriptOwn`, `RuntimeOwn`, `Value`
+[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-system-reflection-behavior-context)
 
-**ConstructibleFromNil**  
-Specifies whether the class is constructed by default when nil is provided\.  
-Type: `bool`  
+**ConstructibleFromNil**
+Specifies whether the class is constructed by default when nil is provided\.
+Type: `bool`
 Possible values: `true`, `false`
 
-**ClassNameOverride**  
-Provides a custom name for script reflection that is different from the behavior context name\.  
+**ClassNameOverride**
+Provides a custom name for script reflection that is different from the behavior context name\.
 Type: `string`
 
-**Ignore**  
-Specifies whether the element is used script reflection\.  
-Type: `bool`  
+**Ignore**
+Specifies whether the element is used script reflection\.
+Type: `bool`
 Possible values: `true`, `false`
 
-**Deprecated**  
-Marks a reflected class, method, EBus, or property as deprecated\.   
-Type: `bool`  
+**Deprecated**
+Marks a reflected class, method, EBus, or property as deprecated\.
+Type: `bool`
 Possible values: `true`, `false`
 
-**ToolTip**  
-Used by the editor to display additional information in a tool tip\.  
+**ToolTip**
+Used by the editor to display additional information in a tool tip\.
 Type: `string`
 
 ### Class Reflection Examples {#component-entity-system-reflection-behavior-context-classes-examples}
@@ -97,7 +97,7 @@ behaviorContext->Class<MyClass>("MyClass")
 This constructor enables the class to be instantiated in Lua in the following way:
 
 ```
--- Constructor in Lua 
+-- Constructor in Lua
 local myClass = MyClass(10)
 ```
 
@@ -120,7 +120,7 @@ As in the previous example, class methods that are reflected for scripting are a
 ```
 -- Method from a class
 local math = MyMath()
-local result = math:Cos(3.14) 
+local result = math:Cos(3.14)
 
 -- Free method
 AZTestAssert(ScriptClass ~= nil)
@@ -132,7 +132,7 @@ Methods can specify parameters and default values for those parameters, as in th
 int globalMethod(int a)
 {
     return a + 3;
-} 
+}
 behaviorContext->Method("globalMethod", &globalMethod, BehaviorMakeDefaultValues(555))
 ```
 
@@ -146,8 +146,8 @@ bool BoundsCheckMethodWithDefaultValue(float value, float epsilon, float minBoun
 {
     (void)epsilon;
     return value >= minBounds && value < maxBounds;
-} 
-// Bind the given method to the behavior context with friendly argument names. 
+}
+// Bind the given method to the behavior context with friendly argument names.
 Method("MemberWithDefaultValues", &BehaviorTestClass::BoundsCheckMethodWithDefaultValue,
                                   { {{"value", "Value which will be checked to be within the two bounds arguments"},
                                      {"delta", "The epsilon value", BehaviorMakeDefaultValue(0.1f)},
@@ -165,20 +165,20 @@ You can reflect properties as parts of classes or as global properties\. You can
 The following table shows helper macros that you can use to simplify the specification of a property's getter or setter or both\.
 
 
-****  
+****
 
-| Operation | Helper | Macro Code | 
-| --- | --- | --- | 
-| Setter | BehaviorValueSetter |  <pre>->Property("boolean", nullptr, BehaviorValueSetter(&TestBehaviorContextProperties::m_booleanProp))</pre>  | 
-| Getter | BehaviorValueGetter |  <pre>->Property("boolean", BehaviorValueGetter(&TestBehaviorContextProperties::m_booleanProp), nullptr)</pre>  | 
-| Both | BehaviorValueProperty |  <pre>->Property("isStatic", BehaviorValueProperty(&AZ::TransformConfig::m_isStatic))</pre>  | 
+| Operation | Helper | Macro Code |
+| --- | --- | --- |
+| Setter | BehaviorValueSetter |  <pre>->Property("boolean", nullptr, BehaviorValueSetter(&TestBehaviorContextProperties::m_booleanProp))</pre>  |
+| Getter | BehaviorValueGetter |  <pre>->Property("boolean", BehaviorValueGetter(&TestBehaviorContextProperties::m_booleanProp), nullptr)</pre>  |
+| Both | BehaviorValueProperty |  <pre>->Property("isStatic", BehaviorValueProperty(&AZ::TransformConfig::m_isStatic))</pre>  |
 
 ## Constants {#component-entity-system-reflection-behavior-context-constants}
 
 You can reflect constants into the behavior context\. Constants are by definition read\-only\. The following examples reflect two constants into the behavior context:
 
 ```
-behaviorContext->Constant("SystemEntityId", BehaviorConstant(SystemEntityId)); 
+behaviorContext->Constant("SystemEntityId", BehaviorConstant(SystemEntityId));
 behaviorContext->Constant("PI", BehaviorConstant(3.14f));
 ```
 
@@ -189,7 +189,7 @@ Enums are reflected globally into the behavior context\. For this reason, it is 
 The following example reflects the enum `GE_VALUE1` and two of its possible values globally into the behavior context\.
 
 ```
-behaviorContext->Enum<(int)GE_VALUE1>("GE_VALUE1"); 
+behaviorContext->Enum<(int)GE_VALUE1>("GE_VALUE1");
 behaviorContext->Enum<(int)GlobalClassEnum::Value1>("Value1");
 behaviorContext->Enum<(int)GlobalClassEnum::Value2>("Value2");
 ```
@@ -229,11 +229,11 @@ By reflecting event handlers, you can enable events to be implemented directly i
    public:
        AZ_EBUS_BEHAVIOR_BINDER(TestBusHandler, "{CD26E702-6F40-4FF9-816D-4DCB652D97DF}", AZ::SystemAllocator,
                SetSum1,
-               GetSum1); 
+               GetSum1);
            void SetSum1(int d1) override
            {
                Call(FN_SetSum1, d1);
-           } 
+           }
            int GetSum1(int d1) override
            {
                int result = 0;
@@ -267,13 +267,13 @@ By reflecting event handlers, you can enable events to be implemented directly i
            -- custom handler code can go here!
            return _1
        end,
-   } 
+   }
    handler = TestBus.Connect(MyBusHandlerMetaTable1)
    ```
 
 ### Events {#component-entity-system-reflection-behavior-context-ebus-events}
 
-Events provide a mechanism to broadcast or send an event directly to any object that is connected to the EBus through an ID\. 
+Events provide a mechanism to broadcast or send an event directly to any object that is connected to the EBus through an ID\.
 
 By reflecting events to an EBus, you can broadcast or send the events in scripting, as the following examples show\.
 
@@ -284,7 +284,7 @@ behaviorContext.EBus<TestBus>("TestBus")->
     Event("GetSum1", &TestBus::Events::GetSum1)->
 ;
 
--- Lua: 
+-- Lua:
 local result = TestBus.Broadcast.GetSum1(1)
 ```
 

@@ -24,19 +24,19 @@ An example XML file with added `BlendIn` and `BlendOut` tags:
 </PostEffectGroup>
 ```
 
-**Priority**  
+**Priority**
 Indicates how much the effects should override the lower priority values\.
 
-**Hold**  
-Determines when the `BlendIn` and `BlendOut` curves play and whether the effect group is enabled or disabled\.  
-**Valid values**:   
-`0` = Plays the `BlendOut` curve immediately after the `BlendIn` curve finishes playing; when the `BlendOut` curve plays, the effect group is disabled  
+**Hold**
+Determines when the `BlendIn` and `BlendOut` curves play and whether the effect group is enabled or disabled\.
+**Valid values**:
+`0` = Plays the `BlendOut` curve immediately after the `BlendIn` curve finishes playing; when the `BlendOut` curve plays, the effect group is disabled
  `1` = Plays the `BlendIn` curve; when the BlendIn curve plays, the effect group fully overrides lower priority values until the effect group is explicitly disabled
 
-**Curve**  
-Available curve types are smooth, linear, and step\. If a curve attribute value is not specified, the curve type defaults to smooth\. You can include as many keyframes in a curve as desired\.  
-Default curve value: smooth  
+**Curve**
+Available curve types are smooth, linear, and step\. If a curve attribute value is not specified, the curve type defaults to smooth\. You can include as many keyframes in a curve as desired\.
+Default curve value: smooth
 Valid key time values: smooth, linear, step
 
-**Key time**  
+**Key time**
 Valid values: `0 - 1` \(seconds\)

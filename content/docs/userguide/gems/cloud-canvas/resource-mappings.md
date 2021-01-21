@@ -27,7 +27,7 @@ As of Lumberyard 1\.11, the mapping functionality is implemented by a Mappings c
 
 ### The Mappings Component EBus {#cloud-canvas-resource-mappings-mappings-component-ebus}
 
-The mappings component implements an [EBus](/docs/userguide/programming/ebus/intro.md) found at `dev\Code\CryEngine\CryCommon\CloudCanvas\CloudCanvasMappingsBus.h`\. When the Cloud Gem Framework makes calls to a service API, it uses this EBus to translate the service name to the ARN\. This EBus provides access to the mapping calls described in the following code\. 
+The mappings component implements an [EBus](/docs/userguide/programming/ebus/intro.md) found at `dev\Code\CryEngine\CryCommon\CloudCanvas\CloudCanvasMappingsBus.h`\. When the Cloud Gem Framework makes calls to a service API, it uses this EBus to translate the service name to the ARN\. This EBus provides access to the mapping calls described in the following code\.
 
 ```
 // Given the friendly name of the resource, return the ARN (physical name).
@@ -43,10 +43,10 @@ virtual AZStd::vector<AZStd::string> GetMappingsOfType(const AZStd::string& reso
 virtual MappingData GetAllMappings() = 0;
 
 // Load mappings from disk.
-virtual bool LoadLogicalMappingsFromFile(const AZStd::string& mappingsFileName) = 0; 
+virtual bool LoadLogicalMappingsFromFile(const AZStd::string& mappingsFileName) = 0;
 
-// If the protected flag is set in the mapping, the following function returns true.  
-// Because protected resources are likely to be live and customer facing, users should be 
+// If the protected flag is set in the mapping, the following function returns true.
+// Because protected resources are likely to be live and customer facing, users should be
 // warned accordingly and given the option not to connect.
 virtual bool IsProtectedMapping() = 0;
 
@@ -54,7 +54,7 @@ virtual bool IsProtectedMapping() = 0;
  virtual void SetProtectedMapping(bool isProtected) = 0;
 ```
 
-In general, you should not have to access the low level mappings\. Both ScriptCanvas and FlowNodes accept friendly names and translate them to ARNs before they make requests to AWS\. 
+In general, you should not have to access the low level mappings\. Both ScriptCanvas and FlowNodes accept friendly names and translate them to ARNs before they make requests to AWS\.
 
 ## Using Mappings in AWS Flow Nodes {#cloud-canvas-using-mappings-in-aws-flow-nodes}
 

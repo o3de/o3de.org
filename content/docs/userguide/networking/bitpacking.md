@@ -21,7 +21,7 @@ public:
 };
 ```
 
-**Tip**  
+**Tip**
 Using `AZStd::bitset` is unnecessary and is often less efficient\. Because `AZStd::bitset` writes its payload in full bytes, packing one Boolean or eight Booleans into `AZStd::bitset` takes a whole byte\. It is better to use `DataSet<bool>` instead of `DataSet<AZStd::bitset>`\.
 
 ## Implementing Bit Packing for a Custom Class {#network-bitpacking-custom-class}

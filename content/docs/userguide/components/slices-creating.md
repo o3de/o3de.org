@@ -12,17 +12,17 @@ A slice can contain any number of entities that have their own transform hierarc
 
 1. In the viewport or the **Entity Outliner** choose **Create slice**\.
 
-1. Save the slice file to the preferred location\. We recommend that you save slices to your game project folder\. Name your slices meaningfully and organize them into directories and subdirectories\. 
+1. Save the slice file to the preferred location\. We recommend that you save slices to your game project folder\. Name your slices meaningfully and organize them into directories and subdirectories\.
 
-**Note**  
+**Note**
 If you want Lumberyard Editor to add a number to your slices by default \(for example, *NewSlice001*\), you can set this option in the **General Settings**\. For more information, see [General Settings](/docs/userguide/editor/customizing#lumberyard-editor-customizing-preferences-general)\.
-To save multiple entities in a slice, they must have a single transform root\. If they don't, then a **Cannot Create Slice** dialog box appears, giving you the opportunity to fix this issue by creating a root entity\. Select **Yes** to create a root entity while creating the slice\.  
+To save multiple entities in a slice, they must have a single transform root\. If they don't, then a **Cannot Create Slice** dialog box appears, giving you the opportunity to fix this issue by creating a root entity\. Select **Yes** to create a root entity while creating the slice\.
 
 ![\[Choose Yes in the Cannot Create Slice dialog box to create a root entity while creating the slice.\]](/images/userguide/component/cannot-create-slice-create-root-entity.png)
 
 You also create a slice from another slice\. This creates a new slice and that slice will no longer inherit from its previous source slice\.
 
-For example, if you have a slice instance named `car.slice` and you want to use that slice instance to create a new slice, you can create a detached slice named `bus.slice`\. You will then have two separate slices that no longer inherit from each other\. 
+For example, if you have a slice instance named `car.slice` and you want to use that slice instance to create a new slice, you can create a detached slice named `bus.slice`\. You will then have two separate slices that no longer inherit from each other\.
 
 **To create a slice from an existing slice and remove inheritance**
 

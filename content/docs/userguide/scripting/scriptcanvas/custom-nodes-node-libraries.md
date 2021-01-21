@@ -15,7 +15,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    ```
    struct Debug : public Library::LibraryDefinition
    {
-       AZ_RTTI(Debug, "{3E28E41D-F4C9-4542-A08F-2B1F5DAA9509}", Library::LibraryDefinition); 
+       AZ_RTTI(Debug, "{3E28E41D-F4C9-4542-A08F-2B1F5DAA9509}", Library::LibraryDefinition);
        static void Reflect(AZ::ReflectContext*);
        static void InitNodeRegistry(NodeRegistry& nodeRegistry);
        static AZStd::vector<AZ::ComponentDescriptor*> GetComponentDescriptors();
@@ -32,7 +32,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
        {
            serializeContext->Class<Debug, Library::LibraryDefinition>()
                ->Version(1)
-               ; 
+               ;
            AZ::EditContext* editContext = serializeContext->GetEditContext();
            if (editContext)
            {
@@ -51,7 +51,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    void Debug::InitNodeRegistry(NodeRegistry& nodeRegistry)
    {
        Library::AddNodeToRegistry<Debug, Nodes::Debug::Log>(nodeRegistry);
-   } 
+   }
    AZStd::vector<AZ::ComponentDescriptor*> Debug::GetComponentDescriptors()
    {
        return AZStd::vector<AZ::ComponentDescriptor*>({
@@ -63,7 +63,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 1. Ensure that your library and its nodes are reflected in your gem's `Reflect` function\.
 
    ```
-   ScriptCanvas::Libraries::Debug::Reflect(context); 
+   ScriptCanvas::Libraries::Debug::Reflect(context);
    ```
 
 1. Add the following code your gem's `Init` function\. The following example is from `ScriptCanvasDiagnosticSystemComponent.cpp`\. This code is important because it inserts your gem's nodes into the Script Canvas Gem's environment\.
@@ -85,7 +85,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    {
        m_descriptors.insert(m_descriptors.end(), {
            ScriptCanvasDiagnostics::SystemComponent::CreateDescriptor(),
-       }); 
+       });
        AZStd::vector<AZ::ComponentDescriptor*> componentDescriptors(ScriptCanvas::Libraries::Debug::GetComponentDescriptors());
        m_descriptors.insert(m_descriptors.end(), componentDescriptors.begin(), componentDescriptors.end());
    }

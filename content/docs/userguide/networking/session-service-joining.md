@@ -10,7 +10,7 @@ You have two ways to join a session:
 
 Regardless of the method, a session is joined using one of the overloaded `IGridMate::JoinSession()` functions after the session service has been started\.
 
-**Note**  
+**Note**
 The argument `GridMate::JoinParams` currently has no supported parameters\.
 
 ## Events {#network-session-service-joining-events}
@@ -18,13 +18,13 @@ The argument `GridMate::JoinParams` currently has no supported parameters\.
 The following table describes GridMate session join events\.
 
 
-****  
+****
 
-| **Event** | **Description** | 
-| --- | --- | 
-| OnSessionJoined | The client has been successfully added to the session\. | 
-| OnMemberJoined | A player has joined the session\. | 
-| OnMemberLeaving | A player has left the session\. | 
+| **Event** | **Description** |
+| --- | --- |
+| OnSessionJoined | The client has been successfully added to the session\. |
+| OnMemberJoined | A player has joined the session\. |
+| OnMemberLeaving | A player has left the session\. |
 
 ## Example {#network-session-service-joining-example}
 

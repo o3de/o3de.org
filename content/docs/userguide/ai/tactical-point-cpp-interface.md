@@ -4,7 +4,7 @@ title: TPS Querying with C++
 ---
 # TPS Querying with C\+\+ {#ai-tactical-point-cpp-interface}
 
-These C\+\+ interfaces allow you to use TPS from other C\+\+ code and within goalops\. Lua queries are translated through it\. 
+These C\+\+ interfaces allow you to use TPS from other C\+\+ code and within goalops\. Lua queries are translated through it\.
 
 There are two C\+\+ interfaces:
 + Internal \- For use only within the AI system
@@ -37,7 +37,7 @@ pTPS->Query( iQueryId, CastToIPuppetSafe( pShooter->GetAI() ),vHidePos, bIsValid
 
 ## TPS Syntax Examples {#ai-tactical-point-cpp-interface-syntax-examples}
 
-The following examples and explanations illustrate the use of TPS query syntax\. For a more detailed discussion of the TPS query language, see the topic on TPS Query Language Syntax and Semantics\. 
+The following examples and explanations illustrate the use of TPS query syntax\. For a more detailed discussion of the TPS query language, see the topic on TPS Query Language Syntax and Semantics\.
 
 **`option.AddToGeneration("hidespots_from_attTarget_around_puppet", 50.0)`**
 
@@ -45,8 +45,8 @@ This query request is expressed as generation criteria and specifies a float to 
 + "hidespots" indicates that generated points should positioned behind known cover as is conventional
 + "from" and "around" are glue words to aid readability
 + "target" specifies the name of the object to hide from
-+ "puppet" identifies a center location that points will be generated around 
-+ The float value indicates the radial distance, measured from the center location, that defines the area within which points should be generated 
++ "puppet" identifies a center location that points will be generated around
++ The float value indicates the radial distance, measured from the center location, that defines the area within which points should be generated
 
 Note that no raycasts are performed at this stage\. We have here considerable flexibility, for example, how we choose to hide from a player: \(1\) somewhere near the player, \(2\) somewhere near us, or \(3\) somewhere near a friend\. We can also specify a completely different target to hide from, such as an imagined player position\. By providing flexibility at the point generation stage, we can support more powerful queries and allow users to focus computations in the right areas\.
 

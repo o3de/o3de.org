@@ -6,11 +6,11 @@ title: Code Generation Templates
 # Code Generation Templates {#az-code-gen-templates}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
 AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine for Python to render its output\. The Jinja template engine outputs plain text with embedded variable and logic statements\.
 
@@ -58,7 +58,7 @@ class {{ class.name }}
 {
 public:
     virtual ~{{ class.name }}() = default;
- 
+
 {% if class.members is defined %}
     {% for member_var in class.members if member_var.visibility is 'public' -%}
     {{ member_var.type }} m_{{ member_var.name }}{{ if member_var.value is defined }} = {{ member_var.value }}{{ endif }};
@@ -109,7 +109,7 @@ class MyClass
 {
 public:
     virtual ~MyClass() = default;
- 
+
     int m_foo;
     long m_bar;
 private:
@@ -124,16 +124,16 @@ The data that is available to the template is fully controlled by the Python [te
 The following table lists the variables that are automatically added to the Jinja environment\.
 
 
-****  
+****
 
-| Variable | Description | 
-| --- | --- | 
-| extra\_data | Python object that contains data returned by the [apply\_transformations](/docs/userguide/codegen/template-drivers#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. | 
-| extra\_str | String that contains the contents of extra\_data in JSON format\. | 
-| json\_object | Python object that contains the decoded intermediate JSON after it has been processed by the template driver\. | 
-| json\_str | String that contains the encoded intermediate JSON after it has been processed by the template driver\. | 
+| Variable | Description |
+| --- | --- |
+| extra\_data | Python object that contains data returned by the [apply\_transformations](/docs/userguide/codegen/template-drivers#az-code-gen-template-drivers-templatedriver-class-methods-apply-transformations) method of the template driver\. |
+| extra\_str | String that contains the contents of extra\_data in JSON format\. |
+| json\_object | Python object that contains the decoded intermediate JSON after it has been processed by the template driver\. |
+| json\_str | String that contains the encoded intermediate JSON after it has been processed by the template driver\. |
 
 For information about the intermediate output, see  [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)\.
 
-**Note**  
+**Note**
 Because Jinja contains a limited feature set, attempting to do complex data transformations in Jinja templates produces overly complicated and generally unreadable templates\. For this reason, we recommend that you perform any major data manipulation in the template driver before it is passed into the Jinja template engine\. For more information, see [Template Drivers](/docs/userguide/codegen/template-drivers.md)\.

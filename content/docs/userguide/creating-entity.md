@@ -4,13 +4,13 @@ title: Creating an Entity
 ---
 # Creating an Entity {#creating-entity}
 
-[Entities](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#entity) are objects with which the player interacts\.
+[Entities](/docs/userguide/ly-glos-chap#entity) are objects with which the player interacts\.
 
-**To create an entity**  
+**To create an entity**
  Do one of the following:
 + In the Lumberyard Editor viewport, right\-click and choose **Create entity**\. This creates an entity at the cursor location with a basic **[Transform](/docs/userguide/components/transform.md)** component, which gives the entity a 3D location in the level\.
 + In the [**Entity Outliner**](/docs/userguide/components/entity-outliner.md), right\-click and choose **Create entity**\. This creates an entity in the center of your viewport\.
-+ Use the [**Asset Browser**](/docs/userguide/asset-browser-intro.md) to create entities that already have the preferred configuration, depending on the particular asset\. 
++ Use the [**Asset Browser**](/docs/userguide/asset-browser-intro.md) to create entities that already have the preferred configuration, depending on the particular asset\.
 
   For example, if you drag a `.cgf` mesh asset from the **Asset Browser** into the viewport, Lumberyard creates an entity, adds a **[Mesh](/docs/userguide/components/static-mesh.md)** component, and assigns the asset to the **Mesh** component\. The same is possible for particles, slices, and Lua scripts\.
 

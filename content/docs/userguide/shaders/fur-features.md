@@ -33,7 +33,7 @@ The fur shader simulates subsurface scattering around silhouette edges of the fu
 
 ## Simulated Self\-Shadowing {#shader-ref-fur-features-simulated}
 
-To simulate the self\-shadowing effect of fur, you can set a blend color or blend layer\. To do this, you can enable **Fur Blendlayer** or **Fur Blend color**\. If both are enabled, only **Fur Blendlayer** is used\. You then set the color using the **Fur Self Shadowing Color** property\. This value is interpolated with the default diffuse texture, where self\-shadowing is stronger toward the mesh surface\. 
+To simulate the self\-shadowing effect of fur, you can set a blend color or blend layer\. To do this, you can enable **Fur Blendlayer** or **Fur Blend color**\. If both are enabled, only **Fur Blendlayer** is used\. You then set the color using the **Fur Self Shadowing Color** property\. This value is interpolated with the default diffuse texture, where self\-shadowing is stronger toward the mesh surface\.
 
 The following image shows a furry sphere with no self\-shadowing \(1\), the same sphere with fur blend color \(2\), and again with fur blendlayer \(3\)\.
 
@@ -49,7 +49,7 @@ When fur casts a shadow, it adds definition to the silhouette\. If fur is not se
 
 ![\[Example fur in shadows.\]](/images/userguide/shaders/shader-ref-fur-9.png)
 
-Fur can contribute to shadow passes, including bending caused by wind\. Fur is alpha\-tested in shadow passes\. 
+Fur can contribute to shadow passes, including bending caused by wind\. Fur is alpha\-tested in shadow passes\.
 
 You can adjust this by modifying the material parameter **Fur Fins Alpha Test**\.
 

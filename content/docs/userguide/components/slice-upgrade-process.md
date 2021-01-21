@@ -7,7 +7,7 @@ title: Converting Slices with the &slice-upgrader;
 
 In v1\.23, Amazon Lumberyard introduced a new file format for component slices\. Specifically, the override data found in data patches is now stored in a readable XML format instead of a hexadecimal byte stream\. This is useful when performing diff and merge operations on your slice files, and enables a more robust versioning system for your serialized components\. Use the Slice Upgrade Pipeline to automatically convert slice files to the latest slice file format\.
 
-**Note**  
+**Note**
 For more information about this new data patch format, and an example, see [Anatomy of a Slice Data Patch](/docs/userguide/dynamic-slices-overview-anatomy#slice-data-patch-anatomy)\.
 
 ## When do I use the Slice Upgrade Pipeline? {#slice-upgrade-when}
@@ -18,12 +18,12 @@ Use the Slice Upgrade Pipeline in Lumberyard v1\.23 or later when:
 + Asset Processor logs indicate that your project has slices that require an upgrade\. If so, the log displays a warning similar to the following:
 
   ```
-  This slice file is out of date: C:\lumberyard_version\dev\MyGame\slices\myslice.slice 
+  This slice file is out of date: C:\lumberyard_version\dev\MyGame\slices\myslice.slice
   To enable automatic upgrades:
   In the settings file SliceBuilderSettings.json, set EnableSliceConversion to true and restart Asset Processor
   ```
 
-**Note**  
+**Note**
 Currently, this pipeline does not update your slices when changing your component serialization\. If you want to do that, use the **Resave All Slices** command on the **File** menu in Lumberyard Editor \.
 
 It is important to upgrade your slice assets as soon as possible, because:
@@ -31,7 +31,7 @@ It is important to upgrade your slice assets as soon as possible, because:
 + Upgrading your slices lets you use the new TypeChange and NameChange class builders when versioning your components\. For more information about the component versioning system, see [Versioning your Component Serialization](/docs/userguide/components/entity-system-versioning.md)\.
 + Delaying the upgrade puts you at a heightened risk of losing data in the future when changing serialization of your components\. For more information about this risk, see [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
 
-**Note**  
+**Note**
 In Lumberyard v1\.23 and later, any slices with data patches still using the old format are updated automatically when changes are pushed to them\. This is regardless of the slice conversion setting\.
 
 ## How do I convert my slices using the Slice Upgrade Pipeline? {#slice-upgrade-how}
@@ -55,9 +55,9 @@ Enable the Slice Upgrade Pipeline and restart Asset Processor to convert your sl
 
    1. Restart the project or branch that you are working on\. Asset Processor automatically starts\.
 
-1. On the **Tools** tab in Asset Processor, trigger a **Full Scan** of assets\.\.  
+1. On the **Tools** tab in Asset Processor, trigger a **Full Scan** of assets\.\.
 ![\[Click Start Scan for Asset Processor to find all the slice files to convert to the new format.\]](/images/userguide/component/asset-processor-start-scan.png)
-**Note**  
+**Note**
 For more information about using Asset Processor, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
 
 1. Open Asset Processor logs\. Confirm that there are no warning messages about slice files that are out of date or failed to convert\.

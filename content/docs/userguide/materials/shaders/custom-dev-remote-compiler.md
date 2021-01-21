@@ -27,7 +27,7 @@ On a Mac, the remote shader compiler can generate shaders for Lumberyard running
 + Mac with `r_ShadersUseLLVMDirectXCompiler=1`
 + iOS mobile device with `r_ShadersUseLLVMDirectXCompiler=1`
 
-**Important**  
+**Important**
 Ensure the server or computer that is running the remote shader compiler is in a controlled environment that restricts incoming network requests to only authorized and trusted users or devices\. Don't run the remote shader compiler with escalated root, admin, or super\-user privileges\.
 
 **Topics**
@@ -58,22 +58,22 @@ You configure the remote shader compiler by creating or editing the `config.ini`
 To configure the remote shader compiler, edit the following parameters\.
 
 
-****  
+****
 
-| Parameter Name | Description | 
-| --- | --- | 
-| MailError | Set to an internal company email address to which notifications about compilation errors will be sent\. | 
-| TempDir |  The cache directory in which the binary shaders are stored once they are compiled\. This parameter must point to a valid absolute path\.  The default path is `C:\SHADER_CACHE`\.  | 
-| port |  TCP port, which must match the setting in the game `system_platform_shader_version.cfg` file\. For examples, see the `system_windows_pc.cfg`, `system_osx_metal.cfg`, or `system_android_es3.cfg` file\.  | 
-| MailServer |  Your email server\.  | 
-| SCMailAddress |  Email address used in the `From` field of the email sent by the remote shader compiler\.  | 
-| PrintCommands |  If set to `1` \(enabled\), the remote shader compiler prints out the commands it uses to generate shaders\.  | 
-| PrintWarnings |  If set to `1` \(enabled\), the remote shader compiler prints out all the compilation warnings when shaders are generated\.  | 
-| white\_list |  If set to `0.0.0.0/0`, the remote shader compiler authorizes any IP\. Any device can connect to the remote shader compiler\. As this can be a security risk, use this parameter with caution\.  | 
-| DumpShaders |  If set to `1` \(enabled\), dumps the output of HLSL, GLSL, and metal shaders\. This outputs shaders into the `Shaders/platform-compiler-shader_language` directory, where: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/mat-shaders-custom-dev-remote-compiler.html)  | 
+| Parameter Name | Description |
+| --- | --- |
+| MailError | Set to an internal company email address to which notifications about compilation errors will be sent\. |
+| TempDir |  The cache directory in which the binary shaders are stored once they are compiled\. This parameter must point to a valid absolute path\.  The default path is `C:\SHADER_CACHE`\.  |
+| port |  TCP port, which must match the setting in the game `system_platform_shader_version.cfg` file\. For examples, see the `system_windows_pc.cfg`, `system_osx_metal.cfg`, or `system_android_es3.cfg` file\.  |
+| MailServer |  Your email server\.  |
+| SCMailAddress |  Email address used in the `From` field of the email sent by the remote shader compiler\.  |
+| PrintCommands |  If set to `1` \(enabled\), the remote shader compiler prints out the commands it uses to generate shaders\.  |
+| PrintWarnings |  If set to `1` \(enabled\), the remote shader compiler prints out all the compilation warnings when shaders are generated\.  |
+| white\_list |  If set to `0.0.0.0/0`, the remote shader compiler authorizes any IP\. Any device can connect to the remote shader compiler\. As this can be a security risk, use this parameter with caution\.  |
+| DumpShaders |  If set to `1` \(enabled\), dumps the output of HLSL, GLSL, and metal shaders\. This outputs shaders into the `Shaders/platform-compiler-shader_language` directory, where: [\[See the AWS documentation website for more details\]](/docs/userguide/materials/shaders/custom-dev-remote-compiler)  |
 
-**Example**  
-The completed `config.ini` file can look like the following\.  
+**Example**
+The completed `config.ini` file can look like the following\.
 
 ```
 MailError = shadererror@your_company.tld
@@ -96,16 +96,16 @@ You can use an allow list to specify the IP addresses that are allowed to connec
 1. Add the following parameter to the file\.
 
    `white_list` - Provide a comma\-separated list of IP addresses in CIDR format\. The remote shader compiler uses this list to validate incoming connection requests\. The remote shader compiler automatically adds the loopback IP address \(127\.0\.0\.1\) and its own IP address\.
-**Note**  
+**Note**
 To specify multiple IP addresses, specify a comma\-delineated list\. Do not include white space or empty lines\.
 
-**Example**  
-The following allows computers or devices with IP addresses matching the allow list to connect to the remote shader compiler\.   
+**Example**
+The following allows computers or devices with IP addresses matching the allow list to connect to the remote shader compiler\.
 
 ```
 white_list=10.53.180.37,10.53.104.220
 ```
-The following allows computers or devices with an IP address of `192.168.0.`\* to connect to the remote shader compiler\. The `/24` specifies a net mask of 24\-bits\. If you specify `/8`, any address that starts with `192` is allowed, given only an 8\-bit net mask\.  
+The following allows computers or devices with an IP address of `192.168.0.`\* to connect to the remote shader compiler\. The `/24` specifies a net mask of 24\-bits\. If you specify `/8`, any address that starts with `192` is allowed, given only an 8\-bit net mask\.
 
 ```
 white_list=192.168.0.1/24
@@ -113,9 +113,9 @@ white_list=192.168.0.1/24
 
 ## Location of Specific Shader Compilers {#mat-shaders-custom-dev-remote-compiler-platform}
 
-In the root directory of the remote shader compiler, each shader language or render API has its own directory with additional subdirectories for different version numbers\. They are located in the following directory: 
+In the root directory of the remote shader compiler, each shader language or render API has its own directory with additional subdirectories for different version numbers\. They are located in the following directory:
 
-`lumberyard_version\Tools\CrySCompileServer\Compiler` 
+`lumberyard_version\Tools\CrySCompileServer\Compiler`
 
 You can find information about the path used by the remote shader compiler in the `ShaderCache.cpp` file, under the function `mfGetShaderCompileFlags`\.
 
@@ -145,20 +145,20 @@ A remote shader compiler server can provide a performance benefit as it caches t
 You can set the following parameters in the `system_platform_shader_version.cfg` file in Lumberyard's root directory, such as `system_android_es3.cfg` or `system_windows_pc.cfg`\.
 
 
-****  
+****
 
-| Console Variables | Description | 
-| --- | --- | 
-| r\_ShadersUseLLVMDirectXCompiler=1 |  Turn on the shader compiler that generates metal shaders on Windows and Mac\.  | 
-| r\_ShadersRemoteCompiler=1 |  Specifies whether the game enables or disables the remote shader compiler\.  If set to `0`, Lumberyard does not compile remote shaders and will instead compile local shaders\.  | 
-| r\_ShaderCompilerServer=IPv4\_of\_PC\_running\_the\_RemoteShaderCompiler |  Specifies the remote shader compiler location\. When the remote shader compiler is enabled, the game needs the location of the remote shader compiler\.  | 
-| r\_ShaderCompilerServer=localhost | If you are running on a PC, specify this console variable to use the remote shader compiler locally\. | 
-| r\_ShaderCompilerServer=10\.0\.0\.10;10\.0\.0\.11 |  Specifies more than one remote shader compiler\. Separate multiple IP addresses with semicolons\.  It is not possible to use the network name of the server instead of the IP address, because name resolving is not performed\.   | 
-| r\_ShaderCompilerPort=portnumber |  If the remote shader compiler server uses a user\-defined port number as specified in the `config.ini` file, you can configure the port number with this console variable\.  | 
-| r\_shaderssubmitrequestline=0 |  Disables submit request lines to the remote shader compiler\. This is console variable is useful when you are experimenting with shaders and you don't want to add these combinations to the shader cache\.  | 
-| r\_AssetProcessorShaderCompiler=1 | You can use Asset Processor to proxy remote requests to the shader compiler server if a device cannot connect to the shader compiler server\. In this case, set r\_AssetProcessorShaderCompiler=1\. Now, whenever the game would have made a request directly to the shader compiler server, it instead submits the request to Asset Processor \(this can also be over a USB connection\), which then forwards it to the shader compiler server\. | 
-| r\_shadersAsyncCompiling=3 |  Allows shaders to stream asynchronously and prevents the game from freezing while waiting for the shaders to compile\.  | 
-| r\_ShadersAsyncActivation=1 |  Allows shaders to stream asynchronously\. Set to `0` to prevent the shaders from streaming asynchronously\.  | 
+| Console Variables | Description |
+| --- | --- |
+| r\_ShadersUseLLVMDirectXCompiler=1 |  Turn on the shader compiler that generates metal shaders on Windows and Mac\.  |
+| r\_ShadersRemoteCompiler=1 |  Specifies whether the game enables or disables the remote shader compiler\.  If set to `0`, Lumberyard does not compile remote shaders and will instead compile local shaders\.  |
+| r\_ShaderCompilerServer=IPv4\_of\_PC\_running\_the\_RemoteShaderCompiler |  Specifies the remote shader compiler location\. When the remote shader compiler is enabled, the game needs the location of the remote shader compiler\.  |
+| r\_ShaderCompilerServer=localhost | If you are running on a PC, specify this console variable to use the remote shader compiler locally\. |
+| r\_ShaderCompilerServer=10\.0\.0\.10;10\.0\.0\.11 |  Specifies more than one remote shader compiler\. Separate multiple IP addresses with semicolons\.  It is not possible to use the network name of the server instead of the IP address, because name resolving is not performed\.   |
+| r\_ShaderCompilerPort=portnumber |  If the remote shader compiler server uses a user\-defined port number as specified in the `config.ini` file, you can configure the port number with this console variable\.  |
+| r\_shaderssubmitrequestline=0 |  Disables submit request lines to the remote shader compiler\. This is console variable is useful when you are experimenting with shaders and you don't want to add these combinations to the shader cache\.  |
+| r\_AssetProcessorShaderCompiler=1 | You can use Asset Processor to proxy remote requests to the shader compiler server if a device cannot connect to the shader compiler server\. In this case, set r\_AssetProcessorShaderCompiler=1\. Now, whenever the game would have made a request directly to the shader compiler server, it instead submits the request to Asset Processor \(this can also be over a USB connection\), which then forwards it to the shader compiler server\. |
+| r\_shadersAsyncCompiling=3 |  Allows shaders to stream asynchronously and prevents the game from freezing while waiting for the shaders to compile\.  |
+| r\_ShadersAsyncActivation=1 |  Allows shaders to stream asynchronously\. Set to `0` to prevent the shaders from streaming asynchronously\.  |
 
 ## Creating Paks for Server Assets {#create-paks-for-server-assets}
 
@@ -170,7 +170,7 @@ AssetProcessorBatch.exe /gamefolder=my_game /platforms=server /server)
 
 You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\MyGame\server` directory, instead of using the PC client assets\.
 
-**Example**  
+**Example**
 
 ![\[Specify the server directory instead of the PC directory.\]](/images/userguide/materials/shaders/create-paks-server-assets.png)
 
@@ -189,7 +189,7 @@ You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\
 
    ```
     # <DefaultProperties
-   
+
        p="pc"
        game="samplesproject"
        src="cache\${game}\${p}"
@@ -202,7 +202,7 @@ You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\
 
    ```
     # <DefaultProperties
-   
+
        p="pc"
        game="samplesproject"
        src="cache\${game}\server"
@@ -212,10 +212,10 @@ You can update `RC.exe` to look for assets in the `lumberyard_version\dev\cache\
 
 ------
 
-1. Save the file\. 
+1. Save the file\.
 
-1. Now when you run `RC.exe`, you can assign the job to the new `xml` file\.  
-**Example**  
+1. Now when you run `RC.exe`, you can assign the job to the new `xml` file\.
+**Example**
 
    ```
    rc.exe /job=path\to\RCJob_Generic_MakePaks_Server.xml /p=pc /game=my_game /trg=BinTemp\server_paks

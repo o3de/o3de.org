@@ -43,7 +43,7 @@ Sets the UI cursor image\.
 **Syntax**
 
 ```
-void SetUiCursor(const char* cursorImagePath) 
+void SetUiCursor(const char* cursorImagePath)
 ```
 
 ## GetUiCursorPosition {#lua-scripting-ces-api-ui-getuicursorposition}

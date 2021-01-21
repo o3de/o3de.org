@@ -100,7 +100,7 @@ public:
     float testFloat = 0.0f;
     int testInt = 0;
     bool testBool = false;
-}; 
+};
 
 void SaveObjectToPersistentStorage()
 {

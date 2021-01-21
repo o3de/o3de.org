@@ -24,7 +24,7 @@ In the following procedure, create shortcuts that are specific to the component 
    static const AZ::Crc32 s_resetPointLight = AZ_CRC("com.amazon.action.pointlight.reset") ;
    ```
 
-1. Specify what shortcut to use and then enter a name and description so that the shortcut appears in the **Edit** menu\. 
+1. Specify what shortcut to use and then enter a name and description so that the shortcut appears in the **Edit** menu\.
 
    ```
    .SetKeySequence(QKeySequence(Qt::Key_R))
@@ -32,10 +32,10 @@ In the following procedure, create shortcuts that are specific to the component 
    .SetTip("Reset all Point Light State")
    .SetEntityComponentIdPair(AZ::EntityComponentIdPair(GetEntityId(), GetComponentId()))
    ```
-**Note**  
+**Note**
 You must provide the entity and component ID that this action corresponds to and finally the event or callback itself to perform\.
 
-1. To ensure that you can undo this action, create an undo batch and mark the entity as *dirty*\. 
+1. To ensure that you can undo this action, create an undo batch and mark the entity as *dirty*\.
 
    ```
    // Ensure that we record undo command for reset
@@ -47,10 +47,10 @@ You must provide the entity and component ID that this action corresponds to and
 
    ```
    /// Other set functions to return state to default...
-     
+
    // refresh manipulators
    Refresh();
-   
+
    // ensure property grid values are refreshed
    AzToolsFramework::ToolsApplicationNotificationBus::Broadcast(
        &AzToolsFramework::ToolsApplicationNotificationBus::Events::InvalidatePropertyDisplay,
@@ -59,12 +59,12 @@ You must provide the entity and component ID that this action corresponds to and
 
 1. Save your file\.
 
-**Example EditorPointLightComponentMode\.cpp**  
-You can add additional actions such as a shortcut to reset all properties on the component like the following\.  
+**Example EditorPointLightComponentMode\.cpp**
+You can add additional actions such as a shortcut to reset all properties on the component like the following\.
 
 ```
 static const AZ::Crc32 s_resetPointLight = AZ_CRC("com.amazon.action.pointlight.reset") ;
- 
+
 AZStd::vector<AzToolsFramework::ActionOverride> EditorPointLightComponentMode::PopulateActionsImpl()
 {
    return AZStd::vector<AzToolsFramework::ActionOverride>
@@ -78,19 +78,19 @@ AZStd::vector<AzToolsFramework::ActionOverride> EditorPointLightComponentMode::P
         .SetCallback([this]()
         {
             const AZ::EntityId entityId = GetEntityId();
-  
+
             // ensure we record undo command for reset
             AzToolsFramework::ScopedUndoBatch undoBatch("Reset Point Light");
             AzToolsFramework::ScopedUndoBatch::MarkEntityDirty(entityId);
-  
+
             EditorLightComponentRequestBus::Event(
                 entityId, &EditorLightComponentRequests::SetPointMaxDistance, 1.0f);
-  
+
             /// other set functions to return state to default...
-  
+
             // refresh manipulators
             Refresh();
-  
+
             // ensure property grid values are refreshed
             AzToolsFramework::ToolsApplicationNotificationBus::Broadcast(
                 &AzToolsFramework::ToolsApplicationNotificationBus::Events::InvalidatePropertyDisplay,

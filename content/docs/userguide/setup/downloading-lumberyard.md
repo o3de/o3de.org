@@ -5,12 +5,12 @@ title: Installing &ALY;
 ---
 # Installing Lumberyard {#setting-up-downloading-lumberyard}
 
-**Download the latest version of Lumberyard Installer**  
+**Download the latest version of Lumberyard Installer**
 [https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)
 
 You can also download earlier versions of Lumberyard and assets from the [Amazon Lumberyard Downloads](https://aws.amazon.com/gamedev/lumberyard/downloads) page\.
 
-**Note**  
+**Note**
 Verify that you have the required hardware and software for Lumberyard\. For more information, see [System requirements](/docs/userguide/setup/system-requirements.md)\.
 
 **Topics**
@@ -27,18 +27,18 @@ The Lumberyard Installer extracts the Lumberyard files and adds shortcuts to you
 
 If you have an existing Lumberyard project and you want to upgrade, see [Upgrading Lumberyard](/docs/userguide/lumberyard-upgrading.md)\.
 
-**Note**  
+**Note**
 If you get file errors during extraction about `AssetProcessor.exe`, `AssetProcessor_temp.exe`, or `CrySystem.dll`, verify if your antivirus software is placing these files in quarantine\. If needed, grant exceptions for the affected files\.
 
 **To use the Lumberyard installer**
 
 1. Navigate to your download directory and run the Lumberyard Installer executable file: `LumberyardInstaller.exe`
 
-1. **\(Optional\)** Change the location of the installation by selecting **Options**\. The default installation location is `C:\Amazon`\. 
+1. **\(Optional\)** Change the location of the installation by selecting **Options**\. The default installation location is `C:\Amazon`\.
 
-1. On the **Welcome** page of the installer, click **Install**\.  
+1. On the **Welcome** page of the installer, click **Install**\.
 ![\[Lumberyard Installer.\]](/images/userguide/lumberyard-installer-1.23.png)
-**Note**  
+**Note**
 In some situations, the Lumberyard Installer can stop responding and refuse to progress\. The only known remedy at this time is to forcibly terminate the installer through the Windows Task Manager and reboot, then retry the installation\.
 
 1. Follow the instructions to complete your installation\.

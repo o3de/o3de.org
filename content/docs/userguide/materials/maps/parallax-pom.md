@@ -12,7 +12,7 @@ To apply POM, complete the following procedure\.
 
 1. In the left tree, select the desired asset\.
 
-1. In the right pane, under **Shader Generation Params**, select **Offset bump mapping** and **Parallax occlusion mapping**\. 
+1. In the right pane, under **Shader Generation Params**, select **Offset bump mapping** and **Parallax occlusion mapping**\.
 
 1. Under **Shader Params**, adjust the values of the following parameters\.
 

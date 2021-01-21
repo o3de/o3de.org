@@ -10,7 +10,7 @@ The GameState gem helps you manage and determine, at a high level, the state tha
 
 For information about sample game states and enabling the GameState Samples gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-**Note**  
+**Note**
 For a sample implementation of game states, see the [GameState Samples Gem](/docs/userguide/gems/builtin/game-state-samples.md)\. The GameState Samples Gem depends on the GameState gem\. You can customize the game states in the GameState Samples gem to meet the requirements of your game and communicate with your game code\.
 
 ## Examining the Code {#gems-system-gem-game-state-examining-the-code}
@@ -57,7 +57,7 @@ template<class GameStateType>
 static AZStd::shared_ptr<IGameState> CreateNewOverridableGameStateOfType(bool checkForOverride = true);
 
  //! Create a new game state and push it onto the stack to make it the active game state.
- //! New game states are created and stored in the stack using a shared_ptr, so they are 
+ //! New game states are created and stored in the stack using a shared_ptr, so they are
  //! destroyed automatically after they are popped off the stack (assuming that nothing
  //! else retains a reference - for example, through GameStateNotifications::OnActiveGameStateChanged).
  //! \tparam GameStateType - The game state type to create and activate.

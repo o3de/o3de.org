@@ -6,7 +6,7 @@ title: Flagging Dynamic Slices
 
 A slice flagged as a dynamic slice can be used like any other slice, but it can also be instantiated at runtime\.
 
-You can flag a slice as dynamic in the **Asset Browser**\. 
+You can flag a slice as dynamic in the **Asset Browser**\.
 
 **To flag a slice as dynamic**
 + Right\-click the `.slice` file and choose **Set Dynamic Slice**\.

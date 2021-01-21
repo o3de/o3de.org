@@ -20,7 +20,7 @@ The controls in the **Wwise Controls** pane are middleware\-specific\.
 
 **To create a control**
 
-1. In the **Wwise Controls** pane, select and drag a middleware control to the **ATL Controls** pane\.  
+1. In the **Wwise Controls** pane, select and drag a middleware control to the **ATL Controls** pane\.
 ![\[Drag a middleware control directly into the ATL Controls pane to create a new control.\]](/images/userguide/audio/audio-atl-editor-new.png)
 
    This creates a new control, which shares the same name of the middleware control\. The middleware control and the ATL control are also automatically connected\.

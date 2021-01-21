@@ -10,15 +10,15 @@ Amazon Lumberyard is a *free* high\-performance *3D engine* with a professional 
 
 ![\[Landscape created with Amazon Lumberyard.\]](/images/welcomeguide/wg-welcome-page-1.24.png)
 
-**What does "free" mean?**  
+**What does "free" mean?**
 Lumberyard is free\. There are no seat licenses, no site licenses, no subscriptions, no support contracts, no revenue share\. Just free\. If you choose to use AWS services in your project, you'll be responsible for fees associated with those services\. Amazon Lumberyard is always free to use and you can customize the tools and source code to suit your needs\.
 
 ## Amazon Lumberyard's creative capabilities without compromise<a name="lumberyard-capabilities"></a>
 
-**A world\-class engine**  
+**A world\-class engine**
 At its core, Lumberyard is a high\-performance real\-time 3D engine that produces incredible visual fidelity\. Lumberyard includes all the capabilities that professional designers, artists, and developers expect, with familiar user experience patterns that enable fast adoption and development\. Its robust toolset enables rapid iteration to the highest quality\. Built on a modular architecture and extensible through the *Gems* framework, Lumberyard makes it easy to add new features, APIs, and assets\.
 
-**Deeply integrated with Amazon Web Services**  
+**Deeply integrated with Amazon Web Services**
 Lumberyard's online capabilities, backed by Amazon Web Services, offer staggering possibilities to developers\. Common connected elements like dedicated servers, dynamic content, online economies, and real\-time stats are easily implemented and scaled, so you can focus on the creative aspects of your project\. With Lumberyard's crossplay capabilities and Twitch integration, you can find new and novel ways to engage people socially\. The limitless potential of AWS can deliver experiences that reach far beyond the capabilities of any single device\.
 
 Whether you're a student, hobbyist, independent developer, or major studio, Lumberyard provides the same growing toolbox to realize your creative vision\.

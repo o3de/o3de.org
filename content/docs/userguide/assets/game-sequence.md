@@ -7,7 +7,7 @@ title: Game Startup Sequence
 
 Compiled Lumberyard games start up in the following sequence:
 
-1. The game reads the `bootstrap.cfg` file, which must contain the following information at a minimum: 
+1. The game reads the `bootstrap.cfg` file, which must contain the following information at a minimum:
    + Name of the game, and optionally, the name of the game DLL, if it differs from the game name\.
    + Whether or not to connect to the Asset Processor on startup or listen for an incoming connection instead\.
    + Whether or not to wait for an established connection before proceeding\.

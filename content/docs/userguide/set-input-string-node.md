@@ -18,20 +18,20 @@ If the input parameter is a `string` type, the node sets the text value that the
 ## Inputs {#set-input-string-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Procedural Material | Procedural material | The procedural material to modify\. | 
-| Input Name | String | The name of the input parameter to set\. | 
-| String | String | The new value to apply\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Procedural Material | Procedural material | The procedural material to modify\. |
+| Input Name | String | The name of the input parameter to set\. |
+| String | String | The new value to apply\. |
 
 ## Outputs {#set-input-string-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

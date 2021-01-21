@@ -9,5 +9,5 @@ With the Video Playback Bink gem, you can play videos using RAD Game Tools' Bink
 
 For more information on playing videos in load screens, see [Defining Game and Level Load Screens](/docs/userguide/ui/editor/load-screens.md)\.
 
-**Important**  
+**Important**
 A Bink license is needed to gain access to this gem\. Please contact [RAD Game Tools](http://www.radgametools.com/bnkmain.htm) for information on how to license Bink\.

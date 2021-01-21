@@ -9,7 +9,7 @@ You can use time of day effects to create dynamic skies to simulate the changing
 
 You can use the **Time of Day** editor and **Sun Trajectory Tool** to achieve these effects\.
 
-**Note**  
+**Note**
 All properties and parameters in the following topics are ignored when using a static sky \(SkyBox\)\.
 
 **Topics**

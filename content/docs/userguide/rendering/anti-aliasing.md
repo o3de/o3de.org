@@ -20,33 +20,33 @@ You can configure TAA by setting the `r_AntialiasingMode` console variable, edit
 The following table lists the antialiasing modes that are available in Lumberyard when you use the `r_AntialiasingMode` console variable\.
 
 
-****  
+****
 
-| Mode | Console Variable Value | Description | 
-| --- | --- | --- | 
-| No antialiasing | 0 | Disables postprocessing\-based antialiasing\. This is useful for debugging or when the technique is unnecessary\. You may also use a higher resolution if you prefer not to spend system resources on antialiasing\. | 
-| FXAA | 1 | Enables fast approximate antialiasing \(FXAA\), which filters edges using a postprocessing edge detection technique\. | 
-| SMAA \(1TX\) | 2 | Enables subpixel morphological antialiasing \(SMAA\), which uses an advanced postprocessing technique to detect edges in order to filter edges\. This mode includes a basic temporal antialiasing component but does not address subpixel jitter\. | 
-| TAA | 3 | Enables temporal antialiasing \(TAA\)\. This is the default mode\. | 
+| Mode | Console Variable Value | Description |
+| --- | --- | --- |
+| No antialiasing | 0 | Disables postprocessing\-based antialiasing\. This is useful for debugging or when the technique is unnecessary\. You may also use a higher resolution if you prefer not to spend system resources on antialiasing\. |
+| FXAA | 1 | Enables fast approximate antialiasing \(FXAA\), which filters edges using a postprocessing edge detection technique\. |
+| SMAA \(1TX\) | 2 | Enables subpixel morphological antialiasing \(SMAA\), which uses an advanced postprocessing technique to detect edges in order to filter edges\. This mode includes a basic temporal antialiasing component but does not address subpixel jitter\. |
+| TAA | 3 | Enables temporal antialiasing \(TAA\)\. This is the default mode\. |
 
 The following table lists the additional console variables that you can configure for temporal antialiasing\.
 
 
-****  
+****
 
-| Console Variable | Description | 
-| --- | --- | 
-| r\_AntialiasingModeEditor | Specifies whether to use subpixel jitter in the editor\. This can eliminate jittering artifacts on helper objects at the expense of losing antialiasing on static scenes\.Valid values: 0 = disables this mode \| 1 = enables this mode | 
-| r\_AntialiasingTAAClampingFactor | Controls the clamping factor in standard deviations\. Set the value at which to limit the TAA response\. Higher values create a more stable scene with less flickering but more ghosting\. Lower values create a scene with less ghosting but more aliasing and flickering\.Valid values: 0\.75 - 2\.0 | 
-| r\_AntialiasingTAAJitterPattern | Specifies the sampling pattern for temporal antialiasing\.Valid values: 0 = no subsamples \| 1 = 2x \| 2 = 3x \| 3 = 4x \| 4 = 8x \| 5 = sparse grid, 8x8 \| 6 = random \| 7 = Halton 8x \(default\) \| 8 = Halton random | 
-| r\_AntialiasingTAALuminanceMax | Clamps the input luminance before temporal filtering to help with image stability\. Extra bright pixels can ghost and cause bloom artifacts\.Default value: 100\.0 | 
-| r\_AntialiasingTAAMotionDifferenceMax | Specifies the maximum difference of speed between the current pixel and its history pixel at which the current pixel is considered fully disoccluded\. Lower values create a scene with less ghosting but more aliasing on disoccluded pixels\. | 
-| r\_AntialiasingTAAMotionDifferenceMaxWeight | Specifies the blend weight for the current frame at the maximum speed difference \(defined by the r\_AntialiasingTAAMotionDifferenceMax console variable\)\.Valid values: 0 = 100% of the history pixel \| 1 = 100% of the current pixelDefault value: 0\.5 | 
-| r\_AntialiasingTAANewFrameFalloff | Represents the amount of time, in seconds, for the history signal to reach 63% of the source signal\. Lower values create faster convergence, which can reduce ghosting but introduce some aliasing\. Higher values create slower convergence\. Because higher values may not improve stability, you should adjust the color clamping factor before adjusting this value\.Default value: 0\.15 | 
-| r\_AntialiasingTAASharpening | Controls the sharpening filter to help retain sharpness\. This is useful when temporal antialiasing introduces blur to a scene during motion\.Default value: 0\.2 | 
-| r\_AntialiasingTAAUseAntiFlickerFilter | Reduces jitter\-based flickering in certain scenarios\.Valid values: 0 = disables this mode \| 1 = enables this mode | 
-| r\_AntialiasingTAAUseJitterMipBias | Enables mipmap biasing on textures when jitter is enabled\. This creates a scene with decreased blur but more flickering\.Valid values: 0 = disables this mode \| 1 = enables this modeDefault value: 1 | 
-| r\_AntialiasingTAAUseVarianceClamping | Enables variance color clamping to help reduce ghosting\. This may increase flickering in the scene\. The r\_AntialiasingTAAClampingFactor console variable affects only this mode\.Valid values: 0 = disables this mode \| 1 = enables this modeDefault value: 0 | 
+| Console Variable | Description |
+| --- | --- |
+| r\_AntialiasingModeEditor | Specifies whether to use subpixel jitter in the editor\. This can eliminate jittering artifacts on helper objects at the expense of losing antialiasing on static scenes\.Valid values: 0 = disables this mode \| 1 = enables this mode |
+| r\_AntialiasingTAAClampingFactor | Controls the clamping factor in standard deviations\. Set the value at which to limit the TAA response\. Higher values create a more stable scene with less flickering but more ghosting\. Lower values create a scene with less ghosting but more aliasing and flickering\.Valid values: 0\.75 - 2\.0 |
+| r\_AntialiasingTAAJitterPattern | Specifies the sampling pattern for temporal antialiasing\.Valid values: 0 = no subsamples \| 1 = 2x \| 2 = 3x \| 3 = 4x \| 4 = 8x \| 5 = sparse grid, 8x8 \| 6 = random \| 7 = Halton 8x \(default\) \| 8 = Halton random |
+| r\_AntialiasingTAALuminanceMax | Clamps the input luminance before temporal filtering to help with image stability\. Extra bright pixels can ghost and cause bloom artifacts\.Default value: 100\.0 |
+| r\_AntialiasingTAAMotionDifferenceMax | Specifies the maximum difference of speed between the current pixel and its history pixel at which the current pixel is considered fully disoccluded\. Lower values create a scene with less ghosting but more aliasing on disoccluded pixels\. |
+| r\_AntialiasingTAAMotionDifferenceMaxWeight | Specifies the blend weight for the current frame at the maximum speed difference \(defined by the r\_AntialiasingTAAMotionDifferenceMax console variable\)\.Valid values: 0 = 100% of the history pixel \| 1 = 100% of the current pixelDefault value: 0\.5 |
+| r\_AntialiasingTAANewFrameFalloff | Represents the amount of time, in seconds, for the history signal to reach 63% of the source signal\. Lower values create faster convergence, which can reduce ghosting but introduce some aliasing\. Higher values create slower convergence\. Because higher values may not improve stability, you should adjust the color clamping factor before adjusting this value\.Default value: 0\.15 |
+| r\_AntialiasingTAASharpening | Controls the sharpening filter to help retain sharpness\. This is useful when temporal antialiasing introduces blur to a scene during motion\.Default value: 0\.2 |
+| r\_AntialiasingTAAUseAntiFlickerFilter | Reduces jitter\-based flickering in certain scenarios\.Valid values: 0 = disables this mode \| 1 = enables this mode |
+| r\_AntialiasingTAAUseJitterMipBias | Enables mipmap biasing on textures when jitter is enabled\. This creates a scene with decreased blur but more flickering\.Valid values: 0 = disables this mode \| 1 = enables this modeDefault value: 1 |
+| r\_AntialiasingTAAUseVarianceClamping | Enables variance color clamping to help reduce ghosting\. This may increase flickering in the scene\. The r\_AntialiasingTAAClampingFactor console variable affects only this mode\.Valid values: 0 = disables this mode \| 1 = enables this modeDefault value: 0 |
 
 The following images illustrate the range of graphics quality that you can achieve depending on which antialiasing setting you use\.
 

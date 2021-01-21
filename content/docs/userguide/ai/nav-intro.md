@@ -6,9 +6,9 @@ title: AI Navigation
 
 Lumberyard has a robust set of tools and methods for moving AI agents around - from simple point\-to\-point navigation to complex sets of scripted navigation behaviors\.
 
-AI agents come in different sizes and with different physical properties that impact how they navigate through a game level\. AI agent types that can navigate include animate entities such as humans and aliens, and vehicles such as cars, boats, and aircraft\. 
+AI agents come in different sizes and with different physical properties that impact how they navigate through a game level\. AI agent types that can navigate include animate entities such as humans and aliens, and vehicles such as cars, boats, and aircraft\.
 
-Each AI has its own navigation mesh that defines the 3D volume where it can move around in\. This navigation mesh is called the Multi\-Layer Navigation Mesh \(MNM\), and consists of 3D navigation areas, exclusion areas where it cannot move in, and navigation seed points\. 
+Each AI has its own navigation mesh that defines the 3D volume where it can move around in\. This navigation mesh is called the Multi\-Layer Navigation Mesh \(MNM\), and consists of 3D navigation areas, exclusion areas where it cannot move in, and navigation seed points\.
 
 You define where and how an AI agent moves around in the navigation mesh using navigation logic implemented in your Script Canvas graphs or Lua scripts\. Scripting allows you to quickly create complex scripted movements and animations for AI agents as they navigate throughout the area\.
 

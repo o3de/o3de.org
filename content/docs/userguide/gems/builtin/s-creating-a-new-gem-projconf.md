@@ -10,16 +10,16 @@ Use Project Configurator to create a new, empty gem\.
 
 1. Select the project and click **Enable Gems**\.
 
-1. Click **Create a new Gem** on the gems page for the game project that you selected\.  
+1. Click **Create a new Gem** on the gems page for the game project that you selected\.
 ![\[Image NOT FOUND\]](/images/userguide/gems-system-gems-create-new.png)
 
 1. In the **Create a new gem** dialog box:
 
    1. For **Name**, enter a name for the gem \(for example, ***MyNewGem***\)\. The name must start with a letter, and only alphanumeric characters and underscore are allowed for the rest of the name\. Other special characters or spaces are not allowed in the name\.
 
-   1. \(Optional\) For **Summary**, enter a description for the gem\. 
+   1. \(Optional\) For **Summary**, enter a description for the gem\.
 
-      This field also supports hyperlinks using a simple html anchor tag\. When entering this directly into the **Summary** field in the Project Configurator, use the following syntax: 
+      This field also supports hyperlinks using a simple html anchor tag\. When entering this directly into the **Summary** field in the Project Configurator, use the following syntax:
 
       **<a href="http://www\.amazon\.com">Amazon</a>**
 
@@ -33,14 +33,14 @@ Use Project Configurator to create a new, empty gem\.
       + **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
       + **Assets Only** - Contains only assets and no code\.
 
-   1. Choose **Create Gem**\.   
+   1. Choose **Create Gem**\.
 ![\[Create your own gems to use for your game project in Lumberyard.\]](/images/userguide/gems-system-gems-create-gem.png)
 
 1. Close the Project Configurator\.
 
    The following directories and files are created in `\dev\Gems\gem_name\` for 'Assets Only' and 'Code & Assets' gems:
    + `Assets` - Directory of assets for your gem, such as materials, models, textures, and audio files\. The AZ::IO system automatically includes this directory so that you can reference assets provided by your gem\. For example, if you have a material file, `\Assets\materials\MyMaterial.mtl`, you can reference it in your code with the path `materials\MyMaterial.mtl`\.
-**Note**  
+**Note**
 If this directory is not present, you can manually add it\. If you don't have any assets in your gem, you can remove this folder\.
    + `Gem.json` - Metadata for this gem\. Do not modify the `Uuid` or `Name` fields\. You can specify the following gem metadata fields:
      + `Version` - `n.n.n` \(numerical values only\)\.
@@ -57,13 +57,13 @@ If this directory is not present, you can manually add it\. If you don't have an
      + `Dependencies` - You can specify a dependency on another gem or on an engine version\. Edit the `_comment` metadata\.
 
        ```
-       "Dependencies": [       
-          {           
-              "Uuid": "540faf970c994668b5d02c66a39c6625",           
+       "Dependencies": [
+          {
+              "Uuid": "540faf970c994668b5d02c66a39c6625",
               "VersionConstraints": [
-                  ">1"           
-              ],           
-              "_comment": "zzzTestVer001"       
+                  ">1"
+              ],
+              "_comment": "zzzTestVer001"
           }
        ],
        ```

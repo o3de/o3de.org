@@ -15,25 +15,25 @@ To disable the effect, see [Disable Water Flow](/docs/userguide/rendering/disabl
 
 ![\[enablewaterflow, enablewaterflownode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-water-flow-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Water Flow node to simulate waterfall effects on the screen .\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-water-flow-node-example.gif)
 
 ## Inputs {#enable-water-flow-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Amount | Number |  Amount of water\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Amount | Number |  Amount of water\.  |
 
 ## Outputs {#enable-water-flow-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

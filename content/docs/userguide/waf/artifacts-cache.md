@@ -12,12 +12,12 @@ The Waf artifacts cache is for Waf\-generated files\. The cache speeds up Waf bu
 The Waf artifacts cache can significantly improve clean, non\-incremental build time\. The following table shows, in minutes, typical differences in build times for packaging jobs\.
 
 
-****  
+****
 
-| Operating System or Device | Clean Build Time Without Cache | Clean Build Time with Cache | 
-| --- | --- | --- | 
-| PC | 75 | 14 | 
-| macOS | 163 | 25 | 
+| Operating System or Device | Clean Build Time Without Cache | Clean Build Time with Cache |
+| --- | --- | --- |
+| PC | 75 | 14 |
+| macOS | 163 | 25 |
 
 ## Supported File Types {#waf-artifacts-cache-supported-file-types}
 
@@ -43,7 +43,7 @@ The Waf artifacts cache feature has the following Waf options:
 
 **\-\-artifacts\-cache-upload** - If true, the task's target output files are uploaded to the artifacts cache after the task is finished\. The default value is false\.
 
-**Example**  
+**Example**
 The following command specifies the artifacts cache path as `E:\waf_artifacts_cache` and restores artifacts from cache on cache hit\. On cache miss, the command uploads the task's target output files to the artifacts cache after the task is finished\.
 
 ```
@@ -66,7 +66,7 @@ Use the `clean_stale_cached_artifacts` Waf command to delete stale artifacts fro
 
 **\-\-artifacts\-cache\-wipeout** - If true, deletes all artifacts from the cache\.
 
-**Examples**  
+**Examples**
 The following example specifies that artifacts in the cache location `E:\waf_artifacts_cache` be kept for four days\.
 
 ```
@@ -92,17 +92,17 @@ For a clean build, the Waf cache feature uses a signature calculated before `run
 The Waf pickle file has the following attributes\.
 
 
-****  
+****
 
-| Attribute | Description | Type | 
-| --- | --- | --- | 
-| root | The node that represents the root of the file system\. | Node\. | 
-| node\_deps | Implicit dependencies\. | Dictionary mapping of a task\-computed uid to nodes\. | 
-| raw\_deps | Implicit file dependencies that could not be resolved\. | Dictionary mapping of a task\-computed uid to any serializable type\. | 
-| task\_sigs | Signature of the tasks that are run\. | Dictionary mapping of a task\-computed uid to a hash that represents the task's signature\. | 
-| azcg | Data for AzCodeGen tasks\. | Dictionary mapping of a task\-computed uid to a list of AzCodeGen saved data\. | 
-| cached\_engine\_path | Engine path for the build that created the cached pickle file\. | String | 
-| cached\_tp\_root\_path | Third\-party path for the build that created the cached pickle file\. | String | 
+| Attribute | Description | Type |
+| --- | --- | --- |
+| root | The node that represents the root of the file system\. | Node\. |
+| node\_deps | Implicit dependencies\. | Dictionary mapping of a task\-computed uid to nodes\. |
+| raw\_deps | Implicit file dependencies that could not be resolved\. | Dictionary mapping of a task\-computed uid to any serializable type\. |
+| task\_sigs | Signature of the tasks that are run\. | Dictionary mapping of a task\-computed uid to a hash that represents the task's signature\. |
+| azcg | Data for AzCodeGen tasks\. | Dictionary mapping of a task\-computed uid to a list of AzCodeGen saved data\. |
+| cached\_engine\_path | Engine path for the build that created the cached pickle file\. | String |
+| cached\_tp\_root\_path | Third\-party path for the build that created the cached pickle file\. | String |
 
 #### Loading Data from a Waf Pickle File {#waf-artifacts-cache-loading-pickle-file-data}
 

@@ -5,7 +5,7 @@ title: Slider
 ---
 # Slider {#ui-editor-slider-components}
 
-You can use the **Slider** component to make an element behave like a slider\. This component is typically applied to an element with three visual child elements: one immediate child, called **Track**, and two child elements of the track, called **Fill** and **Handle**\. 
+You can use the **Slider** component to make an element behave like a slider\. This component is typically applied to an element with three visual child elements: one immediate child, called **Track**, and two child elements of the track, called **Fill** and **Handle**\.
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-slider-components.png)
 
@@ -20,25 +20,25 @@ You can add a prebuilt **Slider** element from the slice library\. When you do t
 **To add a Slider element from the slice library**
 + In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **Slider**\.
 
-**To edit a slider component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Slider** and do the following, as appropriate:    
-**Interactable**  
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
-**Elements**, **Track**  
-Select an element from the list to provide the background of the slider and to limit the movement of the manipulator\.  
-**Elements**, **Fill**  
-Select an element from the list to provide the background of the slider, from the lower limit to the center of the manipulator position\.  
-**Elements**, **Manipulator**  
-Select an element from the list to provide the movable knob of the slider\.  
-**Value**, **Value**  
-Enter the initial value of the slider\.  
-**Value**, **Min**  
-Enter the lower limit of the slider\.  
-**Value**, **Max**  
-Enter the upper limit of the slider\.  
-**Value**, **Stepping**  
-Enter the step value\. For example, use `1` to only permit whole integer values\.  
-**Actions**, **Change**  
-Enter a text string\. This string is sent as an action on the UI canvas when the slider has finished changing values\.  
-**Actions**, **End Change**  
+**To edit a slider component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Slider** and do the following, as appropriate:
+**Interactable**
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+**Elements**, **Track**
+Select an element from the list to provide the background of the slider and to limit the movement of the manipulator\.
+**Elements**, **Fill**
+Select an element from the list to provide the background of the slider, from the lower limit to the center of the manipulator position\.
+**Elements**, **Manipulator**
+Select an element from the list to provide the movable knob of the slider\.
+**Value**, **Value**
+Enter the initial value of the slider\.
+**Value**, **Min**
+Enter the lower limit of the slider\.
+**Value**, **Max**
+Enter the upper limit of the slider\.
+**Value**, **Stepping**
+Enter the step value\. For example, use `1` to only permit whole integer values\.
+**Actions**, **Change**
+Enter a text string\. This string is sent as an action on the UI canvas when the slider has finished changing values\.
+**Actions**, **End Change**
 Enter a text string\. This string is sent as an action on the UI canvas when the slider has changing values\.

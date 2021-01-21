@@ -5,24 +5,24 @@ title: Using &ALY; sample projects and levels
 ---
 # Using Lumberyard sample projects and levels {#sample-projects-levels-intro}
 
-Lumberyard provides a variety of sample projects, levels, and assets, which are located in the `\lumberyard_version\dev` directory\. 
+Lumberyard provides a variety of sample projects, levels, and assets, which are located in the `\lumberyard_version\dev` directory\.
 
 Use the Project Configurator to set or change your default project\. For more information, see [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\.
 
-**Samples Project**  
+**Samples Project**
 The Samples Project includes many sample levels that demonstrate various Lumberyard features, such as the [Fur Shader](/docs/userguide/shaders/fur.md), [Rin Locomotion](/docs/userguide/animation/editor/rin-locomotion-sample.md), [UI samples](/docs/userguide/ui/editor/components.md), and more\. For a complete list and descriptions of levels, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
 
 ![\[Image NOT FOUND\]](/images/userguide/samples-sample-project-1.png)
 
-**Multiplayer Sample**  
+**Multiplayer Sample**
 You can use the Multiplayer Sample game to test the Lumberyard [GridMate](/docs/userguide/networking/interest-manager-large-scale-worlds.md) networking features\.
 
 ![\[Image NOT FOUND\]](/images/userguide/samples-multiplayer-sample-1.png)
 
-**In\-App Purchases**  
+**In\-App Purchases**
 The [In\-App Purchases sample](/docs/userguide/samples/projects/inapp-purchases.md) demonstrates how to use the In\-App Purchases \(IAP\) gem for a Lumberyard application that runs on a mobile device\.
 
-**Cloud Gem Samples Project**  
+**Cloud Gem Samples Project**
 The Cloud Gem Samples Project has cloud gems that you can use to add cloud\-connected functionality to your game\.
 
 ![\[Image NOT FOUND\]](/images/userguide/sample-project-cloudgems.png)
@@ -36,18 +36,18 @@ The Cloud Gem Samples Project has cloud gems that you can use to add cloud\-conn
 
 For more information, see [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md)\.
 
-**Virtual Reality Project Sample**  
+**Virtual Reality Project Sample**
 The Virtual Reality Project sample is a template that you can use to build VR applications for any supported device\. You can [download](https://aws.amazon.com/lumberyard/downloads/) this content separately\.
 
 ![\[Image NOT FOUND\]](/images/userguide/virtual_reality_project_sample.jpg)
 
-**Legacy Sample Projects**  
+**Legacy Sample Projects**
 The following sample projects and assets are available as a separate download from the Lumberyard [Legacy Downloads](https://aws.amazon.com/lumberyard/downloads/previous-versions/) page\.
-+ [**Woodland Asset Collection**](/docs/userguide/samples/levels/woodland-assets.md) - Free assets for you to use to create your levels\.  
++ [**Woodland Asset Collection**](/docs/userguide/samples/levels/woodland-assets.md) - Free assets for you to use to create your levels\.
 ![\[Image NOT FOUND\]](/images/userguide/samples-woodland-assets.png)
-+ [**Beach City Night Asset Collection**](/docs/userguide/samples/levels/beach-city-night-assets.md) - Collection of free assets that you can use to try Lumberyard or make your own games\.  
++ [**Beach City Night Asset Collection**](/docs/userguide/samples/levels/beach-city-night-assets.md) - Collection of free assets that you can use to try Lumberyard or make your own games\.
 ![\[Image NOT FOUND\]](/images/userguide/samples-beachcity-assets.png)
-+ [**Legacy Project \(GameSDK\)**](/docs/userguide/samples/projects/legacy.md) - Enables you to use GameSDK functionality\.  
++ [**Legacy Project \(GameSDK\)**](/docs/userguide/samples/projects/legacy.md) - Enables you to use GameSDK functionality\.
 ![\[Image NOT FOUND\]](/images/userguide/samples-legacy-sample.png)
 
 **Topics**

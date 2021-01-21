@@ -6,15 +6,15 @@ title: Volumetric Fog
 ---
 # Volumetric Fog {#rendering-graphics-fog-volumetric}
 
-Volumetric fog uses volume textures as a view\-frustum\-shaped [voxel](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#voxel) buffer to store incoming light and its properties\. Volumetric fog supports regular light and sunlight with dynamic shadows, environment probes, ambient light, as well as variations in fog density\. It also supports the application of volumetric fog with respect to opaque and transparent materials\.
+Volumetric fog uses volume textures as a view\-frustum\-shaped [voxel](/docs/userguide/ly-glos-chap#voxel) buffer to store incoming light and its properties\. Volumetric fog supports regular light and sunlight with dynamic shadows, environment probes, ambient light, as well as variations in fog density\. It also supports the application of volumetric fog with respect to opaque and transparent materials\.
 
-**Example**  
-In the following example, volumetric fog is disabled\.  
+**Example**
+In the following example, volumetric fog is disabled\.
 
 ![\[Volumetric fog disabled\]](/images/userguide/rendering/rendering-graphics-volumetric-fog-disabled.png)
 
-**Example**  
-In the following example, volumetric fog is enabled\.  
+**Example**
+In the following example, volumetric fog is enabled\.
 
 ![\[Volumetric fog enabled\]](/images/userguide/rendering/rendering-graphics-volumetric-fog-enabled.png)
 
@@ -22,7 +22,7 @@ You can add the **Fog Volume** component to an entity to create fog effects\. Fo
 
 You can specify how light components affect volumetric fog\. For more information, see [Light Component Fog Properties](/docs/userguide/components/fog-volume#fog-component-light-property)\.
 
-You can also use the **Particle Editor** to place a particle emitter in your level to add fog density to an area\. For more information, see the **Volume Fog** and **Volume Thickness** parameters for the **Advanced Attribute** in the [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\. 
+You can also use the **Particle Editor** to place a particle emitter in your level to add fog density to an area\. For more information, see the **Volume Fog** and **Volume Thickness** parameters for the **Advanced Attribute** in the [Particles Attributes Reference](/docs/userguide/particles/editor/reference.md)\.
 
 To add localized nonvolumetric regions of fog, see [Using Fog Volumes](/docs/userguide/weather/fog-volumes.md)\.
 

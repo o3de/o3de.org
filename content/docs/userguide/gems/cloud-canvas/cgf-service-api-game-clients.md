@@ -14,7 +14,7 @@ The game client can call some API operations on behalf of the player\. Other ope
 
 Generating a game client is straightforward\.
 
-**To generate a game client**  
+**To generate a game client**
 Enter the following command:
 
 ```
@@ -26,12 +26,12 @@ The `generate-service-api-code` command reads the `swagger.json` file that conta
 The directory location of the header file depends on whether *<group>* refers to a cloud gem or a project\-defined resource group\.
 
 
-**Generated Component Header File Locations**  
+**Generated Component Header File Locations**
 
-| Parameter Type | Header File Location | 
-| --- | --- | 
-| cloud gem | Gems\\<gem>\\Code\\AWS\\ServiceApi | 
-| resource group | Code\\<game>\\AWS\\<group>\\ServiceAPI | 
+| Parameter Type | Header File Location |
+| --- | --- |
+| cloud gem | Gems\\<gem>\\Code\\AWS\\ServiceApi |
+| resource group | Code\\<game>\\AWS\\<group>\\ServiceAPI |
 
 ### Component Header File Accessibility {#cloud-canvas-cgf-service-api-game-clients-component-header-file-accessibility}
 

@@ -5,7 +5,7 @@ title: Importing &terrain-textures;
 ---
 # Importing Terrain Texture Layers {#terrain-texture-layers-import}
 
-By importing a saved layer, all materials, textures, and shader settings can be quickly applied to your level\. 
+By importing a saved layer, all materials, textures, and shader settings can be quickly applied to your level\.
 
 **To import a terrain texture layer**
 

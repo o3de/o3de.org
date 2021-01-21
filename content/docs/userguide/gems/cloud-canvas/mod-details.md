@@ -30,7 +30,7 @@ function motdmainmenu:OnAction(entityId, actionName)
             Debug.Log("No Message Request Event found")
             return
         end
-        
+
         local timeVal = os.date("%b %d %Y %H:%M")
         local lang = "Eng"
         Debug.Log(timeVal);
@@ -55,14 +55,14 @@ function motdmainmenu:OnGetPlayerMessagesRequestSuccess(response)
     self.displayTimer = 0.0
     Debug.Log("Response messages: "..tostring(#response.list));
     --This is a callback from C++ with an object containing a vector called list.
-    --Therefore we cannot treat it as a regular Lua table and must rely on the reflected methods and operators of the reflected vector class 
+    --Therefore we cannot treat it as a regular Lua table and must rely on the reflected methods and operators of the reflected vector class
     --for msgCount = 1, table.getn(response) do
     --    Debug.Log(response[msgCount])
     --    table.insert(self.messageQueue, response[msgCount])
     for msgCount = 1, #response.list do
         Debug.Log(tostring(response.list[msgCount].message))
 		table.insert(self.messageQueue, response.list[msgCount])
-	
+
     end
 end
 
@@ -76,12 +76,12 @@ end
 The Cloud Canvas Message of the Day sample has a resource group that contains an Amazon DynamoDB table called Main Table, which is the database for the messages\. Table entries are keyed on a server\-generated unique message ID\. Each entry has the following attributes\.
 
 
-**Main Table Attributes**  
+**Main Table Attributes**
 
-| Attribute | Type | Description | 
-| --- | --- | --- | 
-| UniqueMsgID | string | The server\-generated unique message ID\. | 
-| startTime | datetime | Time when the message should start appearing\. | 
-| endTime | datetime | Time when the message expires\. | 
-| priority | integer | Relative priority of the message\. 0 is the highest priority\. | 
-| message | string | The message body\. The string size is limited to 768 characters\. | 
+| Attribute | Type | Description |
+| --- | --- | --- |
+| UniqueMsgID | string | The server\-generated unique message ID\. |
+| startTime | datetime | Time when the message should start appearing\. |
+| endTime | datetime | Time when the message expires\. |
+| priority | integer | Relative priority of the message\. 0 is the highest priority\. |
+| message | string | The message body\. The string size is limited to 768 characters\. |

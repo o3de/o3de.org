@@ -59,7 +59,7 @@ Always initialize a variable before calling an EBus event that overwrites the va
 The following example initializes a result variable before calling an EBus event that produces a result\.
 
 ```
-AZ::Transform targetEntityTransform = AZ::Transform::Identity(); // initialize result variable... 
+AZ::Transform targetEntityTransform = AZ::Transform::Identity(); // initialize result variable...
 EBUS_EVENT_ID_RESULT(targetEntityTransform, targetEntityId, AZ::TransformBus, GetWorldTM); // ...in case of no response
 ```
 
@@ -93,7 +93,7 @@ Consider the following when deciding to make functions public or private\.
 ## Additional Resources {#component-entity-system-pg-components-ebuses-best-practices-additional-resources}
 
 For more information on components and EBuses, consult the following resources\.
-+ For examples of EBus usage, see [Usage and Examples](/docs/userguide/programming/ebus/usage-and-examples.md)\. 
-+ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/userguide/programming/ebus/in-depth.md)\. 
++ For examples of EBus usage, see [Usage and Examples](/docs/userguide/programming/ebus/usage-and-examples.md)\.
++ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/userguide/programming/ebus/in-depth.md)\.
 + For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md)\.
 + For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.

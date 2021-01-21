@@ -6,11 +6,11 @@ title: Using Manipulators
 # Using Manipulators {#component-manipulators-using}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 With manipulators, you can edit certain component properties directly in the viewport instead of the component's property window\. Manipulators help you visualize and achieve the results that you want for your components\. For example, you can add, move, and delete vertices on a **[Spline](/docs/userguide/components/spline.md)** component to create the exact curvature that you want for your level\.
 
@@ -28,29 +28,29 @@ By default, some components support manipulators\.When you author new components
 
 The following are general case manipulators\.
 
-**Linear Manipulator**  
+**Linear Manipulator**
 Moves the position of an object along one axis\.
 
-**Planar Manipulator**  
+**Planar Manipulator**
 Moves the position of an object along a plane, which is two axes, such as XY, YZ, or XZ\.
 
-**Surface Manipulator**  
+**Surface Manipulator**
 Moves the position of the object over the terrain\.
 
-**Translation Manipulator**  
+**Translation Manipulator**
 Aggregate manipulator that combines multiple linear and planar manipulators \(depending on which axes are defined\) and an optional surface manipulator\.
 
-**Selection Manipulator**  
+**Selection Manipulator**
 Performs no movement but provides an interface to detect when part of a component has been clicked\.
 
 ## Special Case Manipulators {#component-manipulators-special}
 
 The following special case manipulators appear only on applicable components\.
 
-**Line Segment Selection Manipulator**  
+**Line Segment Selection Manipulator**
 Determines the location on a line segment over which the mouse is hovering to insert a new point\.
 
-**Spline Selection Manipulator**  
+**Spline Selection Manipulator**
 Determines the location on a spline over which the mouse is hovering to insert a new point\.
 
 ## Advanced Use Case Manipulators {#component-manipulators-advanced}
@@ -95,7 +95,7 @@ To call the mouse functions, in the derived manipulator constructor, `Attach` mu
 
 The new manipulator should provide callbacks in the overridden mouse functions so that classes can handle their own unique use cases\.
 
-**Note**  
+**Note**
 Adding new manipulators is often unnecessary\. The existing set provides most of the behavior that is required\. For example, you can use the manipulator `LinearManipulators` in a variety of scenarios\. This is recommended for most users\.
 
 ## EBus Request Bus Interface {#component-manipulators-ebus-requestbus}
@@ -107,14 +107,14 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 ### Manipulator Manager Requests {#component-manipulators-ebus-requestbus-manipulator-manager-requests}
 
 
-****  
+****
 
-| Name | Description | Parameters | Return | Scriptable | 
-| --- | --- | --- | --- | --- | 
-| RegisterManipulator | Clears the active manipulator and destroys what is associated with it \(for example, "Remove Vertex"\)\. | BaseManipulator& | None | No | 
-| UnregisterManipulator | Clears the active manipulator and destroys what is associated with it \(for example, "Remove Vertex\."\)\. | BaseManipulator& | None | No | 
-| SetActiveManipulator | Override what the currently bound active manipulator is set, or set to null\. | BaseManipulator\* | None | No | 
-| DeleteManipulatorBound |  Delete the specified manipulator bound\.  | RegisteredBoundId | None | No | 
-| SetBoundDirty | Mark the bound of the manipulator dirty, so that it's excluded from mouse hit direction\. Bound will usually be recalculated the next time it is drawn\. | RegisteredBoundId | None | No | 
-| SetAllBoundsDirty | Mark bounds of all manipulators as dirty\. | None | None | No | 
-| UpdateBound |  Update the bound for a manipulator, for example, if the manipulator has moved or changed shape\.  |  `ManipulatorId` `RegisteredBoundId` `BoundRequestShapeBase&`  | RegisteredBoundId | No | 
+| Name | Description | Parameters | Return | Scriptable |
+| --- | --- | --- | --- | --- |
+| RegisterManipulator | Clears the active manipulator and destroys what is associated with it \(for example, "Remove Vertex"\)\. | BaseManipulator& | None | No |
+| UnregisterManipulator | Clears the active manipulator and destroys what is associated with it \(for example, "Remove Vertex\."\)\. | BaseManipulator& | None | No |
+| SetActiveManipulator | Override what the currently bound active manipulator is set, or set to null\. | BaseManipulator\* | None | No |
+| DeleteManipulatorBound |  Delete the specified manipulator bound\.  | RegisteredBoundId | None | No |
+| SetBoundDirty | Mark the bound of the manipulator dirty, so that it's excluded from mouse hit direction\. Bound will usually be recalculated the next time it is drawn\. | RegisteredBoundId | None | No |
+| SetAllBoundsDirty | Mark bounds of all manipulators as dirty\. | None | None | No |
+| UpdateBound |  Update the bound for a manipulator, for example, if the manipulator has moved or changed shape\.  |  `ManipulatorId` `RegisteredBoundId` `BoundRequestShapeBase&`  | RegisteredBoundId | No |

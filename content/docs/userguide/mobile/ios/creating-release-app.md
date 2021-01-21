@@ -77,7 +77,7 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 
 **To build a shader \.pak file**
 
-1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-launch)\. 
+1. Run the **Remote Shader Compiler**\. For more information, see [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-launch)\.
 
 1. In a command line window, navigate to the `lumberyard_version\dev\` directory and locate the `lmbr_pak_shaders.sh` file\.
 
@@ -85,8 +85,8 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 
    ```
    lmbr_pak_shaders.sh game_project_name METAL ios
-   ```  
-**Example**  
+   ```
+**Example**
 
    To build the shaders for the Samples Project, enter the following command:
 

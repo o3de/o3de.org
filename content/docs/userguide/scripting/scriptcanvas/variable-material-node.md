@@ -9,7 +9,7 @@ When you use a node such as **[Find by Name](/docs/userguide/materials/find-by-n
 
 For more information about creating variable nodes, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
-**Note**  
+**Note**
 To use a material variable node, you must assign the variable to a valid material with a node such as **[Find by Name](/docs/userguide/materials/find-by-name-node.md)**, **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**, or **[Clone](/docs/userguide/materials/clone-node.md)**\.
 
 **Contents**
@@ -28,21 +28,21 @@ To use a material variable node, you must assign the variable to a valid materia
 ### Inputs {#script-canvas-variable-get-material-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ### Outputs {#script-canvas-variable-get-material-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event |  Sends when the node is finished\.  | 
-| Material |  Material  |  Sends the variable's current material\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event |  Sends when the node is finished\.  |
+| Material |  Material  |  Sends the variable's current material\.  |
 
 ## Set Material Variable Node {#set-material-variable-node}
 
@@ -51,21 +51,21 @@ To use a material variable node, you must assign the variable to a valid materia
 ### Inputs {#script-canvas-variable-set-material-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material | Sets the variable's current material\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material | Sets the variable's current material\. |
 
 ### Outputs {#script-canvas-variable-set-material-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event |  Sends when the node is finished\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event |  Sends when the node is finished\.  |
 
 ## Material Variable Node Example {#script-canvas-variable-material-example}
 
@@ -79,7 +79,7 @@ The following example uses a material variable node to make a material flash red
 
 ![\[Example Script Canvas editor script that uses the variable material node.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-variable-node-example.png)
 
-**Example**  
-One entity has the `primitive_cylinder.cfg` mesh and the other entity has the `primitive_sphere.cfg` mesh\. Both entities share the same `grid.mtl` material file\. When the Script Canvas graph runs, it changes the appearance of every entity that has this material applied\.  
+**Example**
+One entity has the `primitive_cylinder.cfg` mesh and the other entity has the `primitive_sphere.cfg` mesh\. Both entities share the same `grid.mtl` material file\. When the Script Canvas graph runs, it changes the appearance of every entity that has this material applied\.
 
 ![\[Example Script Canvas editor script that uses the variable material node to change the color of the object\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-material-variable-node-example-3.gif)

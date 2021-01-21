@@ -20,29 +20,29 @@ You can add a prebuilt **TextInput** element from the slice library\. When you d
 **To add a TextInput element from the slice library**
 + In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **TextInput**\.
 
-**To edit a text input component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **TextInput** and do the following, as appropriate:    
-**Interactable**  
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
-**Elements**, **Text**  
-Select an element from the list to provide the text component for the input text\. The list shows child elements that have text components\.   
-**Elements**, **Placeholder text element**  
-Select an element from the list to provide the text component for the placeholder text\. The list shows child elements that have text components\.   
-**Text editing**, **Selection color**  
-Click the color swatch to select a different color for the selected text\.  
-**Text editing**, **Cursor color**  
-Click the color swatch to select a different color for the cursor\.  
-**Text editing**, **Max char count**  
-Enter the maximum number of characters allowed in the text input box\. Type `-1` for no character limit\.  
-**Text editing**, **Cursor blink time**  
-Enter a value in seconds\. Use `0` for no blink, `1` to blink once every second, `2` to blink once every two seconds, etc\.  
-**Text editing**, **Is password field**  
-Select the box and specify the replacement character\.  
-**Text editing**, **Clip input text**  
-Sets the **Overflow mode** of the text element to **Clip text** at runtime\.  
-**Actions**, **Change**  
-Enter a text string\. This string is sent as an action on the UI canvas whenever a change occurs in the text input, such as typing or deleting a character\.   
-**Actions**, **End edit**  
-Enter a text string\. This string is sent as an action on the UI canvas whenever the player clicks off the text input or presses **Enter**\.   
-**Actions**, **Enter**  
-Enter a text string\. This string is sent as an action on the UI canvas when the player presses **Enter**\. 
+**To edit a text input component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **TextInput** and do the following, as appropriate:
+**Interactable**
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+**Elements**, **Text**
+Select an element from the list to provide the text component for the input text\. The list shows child elements that have text components\.
+**Elements**, **Placeholder text element**
+Select an element from the list to provide the text component for the placeholder text\. The list shows child elements that have text components\.
+**Text editing**, **Selection color**
+Click the color swatch to select a different color for the selected text\.
+**Text editing**, **Cursor color**
+Click the color swatch to select a different color for the cursor\.
+**Text editing**, **Max char count**
+Enter the maximum number of characters allowed in the text input box\. Type `-1` for no character limit\.
+**Text editing**, **Cursor blink time**
+Enter a value in seconds\. Use `0` for no blink, `1` to blink once every second, `2` to blink once every two seconds, etc\.
+**Text editing**, **Is password field**
+Select the box and specify the replacement character\.
+**Text editing**, **Clip input text**
+Sets the **Overflow mode** of the text element to **Clip text** at runtime\.
+**Actions**, **Change**
+Enter a text string\. This string is sent as an action on the UI canvas whenever a change occurs in the text input, such as typing or deleting a character\.
+**Actions**, **End edit**
+Enter a text string\. This string is sent as an action on the UI canvas whenever the player clicks off the text input or presses **Enter**\.
+**Actions**, **Enter**
+Enter a text string\. This string is sent as an action on the UI canvas when the player presses **Enter**\.

@@ -13,6 +13,6 @@ If you want to uninstall Lumberyard, you can remove it with Windows Control Pane
 
 1. Click **Lumberyard\_*your\_version*** and then choose **Uninstall**\.
 
-1. In the Lumberyard Setup prompt, choose **Uninstall**\. 
+1. In the Lumberyard Setup prompt, choose **Uninstall**\.
 
    After the process is done, the **Uninstall Successfully Completed** message appears\.

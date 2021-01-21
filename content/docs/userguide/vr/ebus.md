@@ -12,11 +12,11 @@ For more information about using the EBus interface, see [Working with the Event
 
 Returns true if the renderer is rendering to the HMD\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Response**  
+**Response**
 `True` or `False`
 
-**Scriptable**  
+**Scriptable**
 Yes

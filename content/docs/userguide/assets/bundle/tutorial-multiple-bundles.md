@@ -6,11 +6,11 @@ title: Creating Multiple Asset Bundles
 # Creating Multiple Asset Bundles {#asset-bundler-tutorial-multiple-bundles}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of Lumberyard 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  | 
+| This tutorial is out of date for the new Starter Game project that shipped as part of Lumberyard 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
 
 The [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial gets you started with using the asset bundling system to produce a game release\. However, it doesn't represent what most games require\. In this tutorial, you learn the bundling process for a common use case: Games that download additional content after the player launches the game\. The tutorial shows you how to create a release build with multiple game levels in separate asset bundles that have the contents of the base game removed\.
 
@@ -29,23 +29,23 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
 
 ## Create a second level {#asset-bundler-tutorial-multiple-bundles-create-a-second-level}
 
- In this section of the tutorial, you'll create a new level for the Starter Game that displays a static scene containing a single entity\. 
+ In this section of the tutorial, you'll create a new level for the Starter Game that displays a static scene containing a single entity\.
 
-1. Launch the editor, and create a second level\. Name it **level2**\.  
+1. Launch the editor, and create a second level\. Name it **level2**\.
 ![\[Creating a new level in Lumberyard Editor.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/01.png)
 
-1. Create a camera\. Right\-click on the viewport and choose **Create camera entity from view**\.  
+1. Create a camera\. Right\-click on the viewport and choose **Create camera entity from view**\.
 ![\[Choose Create camera entity from current view.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/02.png)
 
 1. Create an object in front of the camera\. To make sure that the object you create is located correctly, you may need to pull the perspective in the viewport back a bit so that you can clearly see the view frustum of the camera and know where the place the object\.
 
-   1. Create a new entity in the level by right\-clicking in the viewport somewhere within the camera frustum, and selecting **Create entity**\.  
+   1. Create a new entity in the level by right\-clicking in the viewport somewhere within the camera frustum, and selecting **Create entity**\.
 ![\[Right-clicking in the Lumberyard Editor viewport to create a new entity.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/03.png)
 
-   1. In the Asset Browser view, search for the **am\_rock\_boulder\_01\.cgf** mesh\.  
+   1. In the Asset Browser view, search for the **am\_rock\_boulder\_01\.cgf** mesh\.
 ![\[Select the search bar in the Asset Browser view to search for the mesh, and then select the am_rock_boulder_01.cgf result.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/04.png)
 
-   1. Drag the boulder mesh on to the entity you created\.  
+   1. Drag the boulder mesh on to the entity you created\.
 ![\[Assigning the boulder mesh to an entity with drag-and-drop.\]](/images/userguide/assetbundler/tutorial-multiple-bundles/05.png)
 
 1. Make sure that the boulder is visible from the camera position by running your game in the editor\. Select **Game** > **Play Game** \(Ctrl\-G\)\. If you can't see the boulder, adjust its position with the editor's **Move** tool and make sure it appears within the camera's view\.
@@ -58,9 +58,9 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
 
 ## Generate the new content bundle {#asset-bundler-tutorial-multiple-bundles-generate-bundles}
 
- In the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in Lumberyard Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\. 
+ In the [Build and bundle assets for release in Lumberyard](/docs/userguide/assets/bundle/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in Lumberyard Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\.
 
- This section of the tutorial walks you through creating a new asset list based on the `level2.pak` dependencies, removing duplicate entries that already appear in `startergame_pc.pak`, and bundling the level for distribution\. 
+ This section of the tutorial walks you through creating a new asset list based on the `level2.pak` dependencies, removing duplicate entries that already appear in `startergame_pc.pak`, and bundling the level for distribution\.
 
 ##  {#asset-bundler-tutorial-multiple-bundles-generating-new-bundles}
 
@@ -79,8 +79,8 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
        --secondAssetFile dlc_level2_all_pc.assetlist ^
        --output dlc_level2.assetlist
    ```
-**Important**  
- The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` - not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for all of the details\. 
+**Important**
+ The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` - not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for all of the details\.
 
 1. Get the *complement* of the assets between `engine_pc.assetlist` from the previous tutorial and l`dlc_level2_pc.assetlist`\. This removes engine\-specific content from the `level2` assets\.
 

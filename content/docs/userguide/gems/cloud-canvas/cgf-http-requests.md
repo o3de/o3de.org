@@ -6,11 +6,11 @@ title: Making HTTP Requests Using the Cloud Gem Framework
 # Making HTTP Requests Using the Cloud Gem Framework {#cloud-canvas-cgf-http-requests}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| The Cloud Gem Framework and this documentation are in preview release and are subject to change\. | 
+| The Cloud Gem Framework and this documentation are in preview release and are subject to change\. |
 
 The Cloud Gem Framework Gem provides C\+\+ classes and EBus interfaces to execute HTTP requests using the `AZ::Job` system\. Your game client can use this feature to make HTTP requests for data from a public API such as Twitter or from a custom API\. For example, your game could make HTTP requests to Twitter to see who is tweeting about your game\.
 
@@ -45,7 +45,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes and EBus interfaces to execut
      AZStd::string url = "https://my.url.com"
      AZStd::string httpMethod = "GET"
      AZStd::string jsonBody= "{}"
-      
+
      auto job = aznew HttpRequestJob(true, ServiceJob::GetDefaultConfig(),
                  [this](int responseCode, AZStd::string content)
                  {

@@ -16,7 +16,7 @@ The **UI Editor** **Preview** consists of the following:
 
 1. **Toolbar** - Tools to view the current **Viewport size**, **Preview canvas size** \(selectable\), and **Canvas scale**\.
 
-1. **Viewport** - Display of the UI canvas as it would appear at the selected resolution\. 
+1. **Viewport** - Display of the UI canvas as it would appear at the selected resolution\.
 
 1. [**Animation List**](/docs/userguide/ui/editor/previewing-behavior#animation-list-pane) - List of the animation sequences in the canvas, which you can control using the playback toolbar\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
 

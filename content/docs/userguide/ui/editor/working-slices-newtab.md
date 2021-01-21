@@ -10,13 +10,13 @@ When you edit an instance of a UI slice in a UI canvas, you can use the context 
 
 1. In the **Hierarchy** pane, right\-click a slice element\.
 
-1. Choose **Edit slice in new tab** and then choose the slice you want to edit\. Multiple choices appear only if the selected element is an instance of a cascaded slice\.  
+1. Choose **Edit slice in new tab** and then choose the slice you want to edit\. Multiple choices appear only if the selected element is an instance of a cascaded slice\.
 ![\[Right-click the slice element to display the context menu.\]](/images/userguide/game_ui_editor/ui-editor-working-slices-newtab.png)
 
    The selected slice appears in a new tab labeled **Slice: **slice name****\.
 
 1. Edit the slice in the new tab\.
-**Note**  
+**Note**
 If you add elements to the slice, the elements must be children of the slice instance\. Any elements outside of the slice instance will not be saved, as this is a temporary canvas for editing the slice\.
 
 1. When finished, choose **File**, **Save Slice** to save your changes to the slice\.

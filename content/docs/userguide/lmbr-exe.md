@@ -6,11 +6,11 @@ title: Managing Game Projects with Lmbr.exe
 # Managing Game Projects with Lmbr\.exe {#lmbr-exe}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 `Lmbr.exe` is a command\-line tool for managing capabilities, game projects, and Gems\.
 
@@ -20,16 +20,16 @@ title: Managing Game Projects with Lmbr.exe
    + For Visual Studio 2017: `lumberyard_version\dev\Bin64vc141`
    + For Visual Studio 2019: `lumberyard_version\dev\Bin64vc142`
 
-1. In a command line prompt, enter the following command to see the commands that you can run\. 
+1. In a command line prompt, enter the following command to see the commands that you can run\.
 
    ```
    lmbr -help
    ```
 
-   The list of possible commands appears\.  
+   The list of possible commands appears\.
 ![\[Lmbr.exe help commands.\]](/images/userguide/configurator-lmbr.png)
 
-You can also use `-help` on other commands\. For example, to see more information about Lumberyard capabilities, you can enter the following commands: 
+You can also use `-help` on other commands\. For example, to see more information about Lumberyard capabilities, you can enter the following commands:
 
 ```
 lmbr capabilities -help

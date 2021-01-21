@@ -8,7 +8,7 @@ You can add Qt 5 content into the Waf build system\. Typically you use an IDE \(
 
 Intermediate files that need additional compilation such as the `.rcc` file from the `.qrc` compiler do not need to be specified explicitly in these files or any other source file\. In addition, intermediate `.rcc` files are never included in any uber files \(if the uber file option is enabled\) since they are not compatible with uber files in general\.
 
-To enable Qt for a particular module, you must define it as a feature\. Each module's configuration is in a `wscript` file that is in each module's directory\. For example, the `EditorUI_QT` module has a `wscript` file located at `dev\Code\Sandbox\Plugins\EditorUI_QT\`\. To enable Qt, edit this file and add `['qt5']` to the `features` line, as shown in the following example\. 
+To enable Qt for a particular module, you must define it as a feature\. Each module's configuration is in a `wscript` file that is in each module's directory\. For example, the `EditorUI_QT` module has a `wscript` file located at `dev\Code\Sandbox\Plugins\EditorUI_QT\`\. To enable Qt, edit this file and add `['qt5']` to the `features` line, as shown in the following example\.
 
 ```
 bld.CryEditorUiQt(
@@ -23,17 +23,17 @@ bld.CryEditorUiQt(
 
 ## MOC \(Meta\-Object Compiler\) Files {#waf-qt-content-moc}
 
-When header files need to be processed by the Meta\-Object Compiler \(MOC\) as part of the build process, the build system identifies them by including their MOC output file inside the source `.cpp` file\. For example, if `foo.h` is a file that is to be processed by MOC, then the source `foo.cpp` file also needs to include the corresponding `#include` for the `.moc` file that is generated\. 
+When header files need to be processed by the Meta\-Object Compiler \(MOC\) as part of the build process, the build system identifies them by including their MOC output file inside the source `.cpp` file\. For example, if `foo.h` is a file that is to be processed by MOC, then the source `foo.cpp` file also needs to include the corresponding `#include` for the `.moc` file that is generated\.
 
 For example:
 
 ```
 ...
 #include "foo.h"
- 
+
 ..
 ..
- 
+
 #include <foo.moc>
 ```
 
@@ -44,10 +44,10 @@ For example, if `foo.h` and `foo.cpp` are moved into the `\test` subdirectory, t
 ```
 ...
 #include "foo.h"   // This can still be relative to the current source file
- 
+
 ...
 ..
- 
+
 #incude <test/foo.cpp>  // This needs to be relative to the base path for the project in the intermediate directory.
 ```
 
@@ -73,7 +73,7 @@ For more information, see [The Qt Resource System](http://doc.qt.io/qt-5/resourc
 
 Designer UI files are processed by the Qt UIC \(user interface compiler\)\. The output file has an `.h` header extension to it, and `ui_` is also added to the name of the source\. The resulting header file is created in the project's intermediate directory relative to its location in the project\.
 
-For example, if the file `foo.ui` is located in a `\test` subfolder, the generated `ui_test.h` file will be located in the `\test` subfolder under the project's intermediate folder structure\. 
+For example, if the file `foo.ui` is located in a `\test` subfolder, the generated `ui_test.h` file will be located in the `\test` subfolder under the project's intermediate folder structure\.
 
 When including the generated header file, using the same rule as the moc include applies as follows:
 
@@ -105,14 +105,14 @@ The `.qm` files are loaded using the QTranslator module, and the Qt resource dir
 ...
 #include <QTranslator>
 ...
- 
+
 ...
 void main() {
- 
+
 ...
     QTranslator* translator = new QTranslator();
     translator->load("foo_en-us.qm",":/test");
 ...
- 
+
 }
 ```

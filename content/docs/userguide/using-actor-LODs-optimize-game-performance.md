@@ -4,7 +4,7 @@ title: Using Actor LODs to Optimize Game Performance
 ---
 # Using Actor LODs to Optimize Game Performance {#using-actor-LODs-optimize-game-performance}
 
-You can use levels of detail \([LODs](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#lod)\) to optimize the rendering performance of games\. This is especially true for large in\-game worlds, which are constrained by hardware, frame rate, and the real\-time rendering limits\. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera\. To further reduce draw calls, lower LODs have multiple textures combined into one texture\.
+You can use levels of detail \([LODs](/docs/userguide/ly-glos-chap#lod)\) to optimize the rendering performance of games\. This is especially true for large in\-game worlds, which are constrained by hardware, frame rate, and the real\-time rendering limits\. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera\. To further reduce draw calls, lower LODs have multiple textures combined into one texture\.
 
 **Topics**
 + [Using Actor LODs in Lumberyard](#optimize-character-fbx-settings-lod-in-lumberyard)
@@ -45,21 +45,21 @@ Note the following requirements:
 To author actor LODs in a DCC tool like Autodesk Maya or Autodesk 3ds Max, you can use one of the following two methods:
 + Soft naming conventions
 + LOD groups
-**Important**  
+**Important**
 Currently, Lumberyard supports skeletons created with LOD groups only\.
 
 **To use the soft naming convention to create LODs**
 
-1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh\. See the following table for examples\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/using-actor-LODs-optimize-game-performance.html)
+1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh\. See the following table for examples\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/using-actor-LODs-optimize-game-performance)
 
    For more information, see [FBX soft naming conventions](/docs/userguide/fbx/settings-soft-naming.md)\.
 
 1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md) to export the meshes to FBX format so that you can use them in Lumberyard\.
 
 **To use LOD groups to create actor LODs**
-+ To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.  
++ To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into Lumberyard\.
 ![\[Skeleton created as an LOD group\]](/images/userguide/character-fbx-settings-lod-optimize-0.png)
 
 ## Using the FBX Settings Tool to Check LODs {#using-fbx-settings-tool-to-check-lods-character-fbx-settings}
@@ -88,7 +88,7 @@ After you import your LODs into Lumberyard Editor, you can add an actor LOD to a
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component\.
 
-**Example**  
+**Example**
 
 ![\[LOD material file in the Actor component in the Entity Inspector.\]](/images/userguide/character-fbx-settings-lod-optimize-2.png)
 

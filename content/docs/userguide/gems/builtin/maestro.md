@@ -9,7 +9,7 @@ The Maestro gem enables Lumberyard's cinematic sequence system\. With the cinema
 
 ![\[The Maestro gem enables Lumberyard to use the cinematics system with the Track View.\]](/images/userguide/gems/gem-system-gem-maestro.png)
 
-**Note**  
+**Note**
 The Maestro gem is required and enabled by default in new Lumberyard projects\.
 
 For more information, see [Create cinematic sequences](/docs/userguide/cinematics/intro.md)\.

@@ -7,13 +7,13 @@ title: Web Communicator Cloud Gem
 
 You can use the Web Communicator cloud gem to inform your game's connected clients, editors, or servers of events from other cloud gems\. Your game clients, editors, or servers can use this information to take action \(such as updating themselves\) without restarting or polling AWS services for updates\.
 
-The following diagram shows how the Web Communicator cloud gem connects cloud gems like Dynamic Content to the receivers of the events\. 
+The following diagram shows how the Web Communicator cloud gem connects cloud gems like Dynamic Content to the receivers of the events\.
 
 ![\[Web Communicator connects cloud gems to game clients, editors, or servers\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-1.png)
 
 Cloud gems like Dynamic Content send events through Lumberyard's [cross\-gem communication system](/docs/userguide/gems/cloud-canvas/cgf-service-api-cross-gem-communication.md) to the Web Communicator cloud gem\. The Web Communicator cloud gem sends the event to the client through [AWS IoT](https://aws.amazon.com/iot-core), which maintains a persistent socket connection with the client\. Your game can use this channel of communication to notify the client that new content is available\. The client can then download the new content or update itself as needed\.
 
-**Note**  
+**Note**
 You can publish and receive from your game client, editor, or server\. However, to reduce potential expenses, the default implementation on all channels is receive only\.
 
 ## Publishing Messages {#cloud-canvas-cloud-gem-web-communicator-publishing-messages}
@@ -38,11 +38,11 @@ For samples of Amazon Cognito and AWS IoT policies that Web Communicator creates
 
 ### OpenSSL Connections {#cloud-canvas-cloud-gem-web-communicator-openssl-connections}
 
-OpenSSL connections, which are commonly used for embedded devices, use the MQTT protocol and certificate authentication\. In OpenSSL connections, each device has a certificate and a private key that are used for encrypted communications\. 
+OpenSSL connections, which are commonly used for embedded devices, use the MQTT protocol and certificate authentication\. In OpenSSL connections, each device has a certificate and a private key that are used for encrypted communications\.
 
 You can use the [Web Communicator Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/web-communicator-cgp.md) to generate the certificates and keys that OpenSSL requires\. The client can connect through OpenSSL after the certificates and keys are installed in the `@user@\certs\aws` directory\. The Web Communicator service attaches the appropriate policy to the certificate\. The certificate and private key are returned to the client and cached on the client\.
 
-**Note**  
+**Note**
 By default, only WebSocket connections can be registered directly from the client\. This behavior can be changed in the `client_request.py` `request_registration` call\.
 
 ## AWS IoT Pricing {#cloud-canvas-cloud-gem-web-communicator-aws-iot-pricing}

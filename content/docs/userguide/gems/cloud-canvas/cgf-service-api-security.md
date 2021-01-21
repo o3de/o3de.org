@@ -14,7 +14,7 @@ For all APIs, consider the following:
 + Don't trust parameter values provided by the client\. Verify that the parameter values match expectations before you use them\. Be careful when inserting parameter values into query strings that are sent to DynamoDB or other services\. For more information, see [code injection](https://en.wikipedia.org/wiki/Code_injection)\.
 
    
-+ API Gateway [automatically protects](https://aws.amazon.com/api-gateway/faqs/#security) your backend systems from distributed denial\-of\-service \(DDoS\) attacks, whether attacked with counterfeit requests \(Layer 7\) or SYN floods \(Layer 3\)\. However, this does not protect from less frequent requests that do not trigger API Gateway's protections\. These other requests might still have a significant impact on your operating costs due to excessive I/O or on game performance\. 
++ API Gateway [automatically protects](https://aws.amazon.com/api-gateway/faqs/#security) your backend systems from distributed denial\-of\-service \(DDoS\) attacks, whether attacked with counterfeit requests \(Layer 7\) or SYN floods \(Layer 3\)\. However, this does not protect from less frequent requests that do not trigger API Gateway's protections\. These other requests might still have a significant impact on your operating costs due to excessive I/O or on game performance\.
 
 ## Access Control {#cloud-canvas-cgf-service-api-security-access-control}
 
@@ -45,7 +45,7 @@ To grant permission to execute an operation, modify your `resource-template.json
     "Resources": {
         ...
         "ServiceApi": {
-            "Type": "Custom::ServiceApi", 
+            "Type": "Custom::ServiceApi",
             "Properties": { ... },
             "Metadata": {
                 "CloudCanvas": {

@@ -7,7 +7,7 @@ title: Procedural Material Nodes
 
 Lumberyard supports [Allegorithmic Substance](https://www.allegorithmic.com/) for working with procedurally\-generated materials\. Procedural materials are materials in which you can modify their textures during runtime\.
 
-You can use the Allegorithmic Substance Designer to author procedural materials and then import them into Lumberyard Editor\. You can then use the **Script Canvas** editor or Lua to modify the procedural material's textures at runtime\. 
+You can use the Allegorithmic Substance Designer to author procedural materials and then import them into Lumberyard Editor\. You can then use the **Script Canvas** editor or Lua to modify the procedural material's textures at runtime\.
 
 To enable this feature, you must enable the Allegorithmic Substance gem\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
@@ -21,16 +21,16 @@ For more information, see [Working with Substances](/docs/userguide/materials/su
 
 1. **Modify the parameter values for the procedural material**
 
-   Use the **Set Input <Type>** nodes to modify the parameter values for the procedural material\. The values that you specify in the nodes modify the parameters that update the procedural material's textures\. You can modify parameters for multiple procedural materials in a single frame\. 
-**Note**  
-*Input parameters* are the parameters that you modify for the procedural material\. You can find the parameters for a material in the **Substance Editor**\. For example, the sample procedural material `brickWall_04` has input parameters such as **Age**, **Mortar**, and **Depth**\.   
+   Use the **Set Input <Type>** nodes to modify the parameter values for the procedural material\. The values that you specify in the nodes modify the parameters that update the procedural material's textures\. You can modify parameters for multiple procedural materials in a single frame\.
+**Note**
+*Input parameters* are the parameters that you modify for the procedural material\. You can find the parameters for a material in the **Substance Editor**\. For example, the sample procedural material `brickWall_04` has input parameters such as **Age**, **Mortar**, and **Depth**\.
 To modify these input parameters during runtime, specify the parameter name and its value in a node such as **[Set Input Number](/docs/userguide/set-input-number-node.md)**\.
 
 1. **Render the procedural materials**
 
    After you specify the changes that you want, use the **[Render Asynchronous](/docs/userguide/render-asynchronous-node.md)** or **[Render Synchronous](/docs/userguide/render-synchronous-node.md)** node to update the procedural material's texture\. The render node applies to all procedural materials in which their parameters have changed, so at most, call a render node once per frame\.
 
-**Example**  
+**Example**
 The Allegorithmic Substance gem includes a sample procedural material named `brickWall_04`\. You can import this file into Lumberyard and write a script that dynamically changes the **Age** and **Mortar** input parameter values, so that the wall appears to erode over time\.  {#example-brick-wall-render-asynchronous-script}
 
 See the following example script to enable this effect\.
@@ -41,7 +41,7 @@ See the following example script to enable this effect\.
 
 1. The **Duration** node \(2\) runs the aging process for four seconds through the **Out** pin, which is triggered every frame\. The node finalizes the aging process through the **Done** pin\.
 
-1. The first **Set Input Number** node \(3\) transitions the **Age** parameter from `0` to `0.5` over four seconds\. 
+1. The first **Set Input Number** node \(3\) transitions the **Age** parameter from `0` to `0.5` over four seconds\.
 
 1. The second **Set Input Number** node \(4\) transitions the **Mortar** parameter from `0` to `1` over four seconds\.
 
@@ -50,7 +50,7 @@ See the following example script to enable this effect\.
 1. For the **Duration** node \(2\), the **Done** pin triggers one last update with the final **Age** value of `0.5` \(node 6\) and the **Mortar** value of `1.0` \(node 7\)\.
 
 1. With the **Force** parameter enabled, the **Render Asynchronous** node \(8\) applies these changes to the procedural material's textures\.
-**Note**  
+**Note**
 Steps 6 and 7 are not always required, but are examples of how you can use the **Render Asynchronous** node's **Force** parameter to guarantee that a final update is applied\. For more information, see **[Render Asynchronous](/docs/userguide/render-asynchronous-node.md)**\.
 
 **Topics**

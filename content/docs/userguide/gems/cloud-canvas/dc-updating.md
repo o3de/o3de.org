@@ -17,7 +17,7 @@ lmbr_aws dynamic-content upload-manifest-content --manifest-path <manifest name>
 + *<manifest name>* - Specifies the filename of the manifest in the `manifests` directory \(for example, `DynamicContentTest.json`\)\.
 + *<PUBLIC\|PRIVATE\|WINDOW>* - \(Optional\) Use PUBLIC to release the content immediately\. Use WINDOW with `--start-date` and `--end-date` to specify a range during which the content will be publicly available\. Defaults to PRIVATE\.
 
-**Note**  
+**Note**
 For information on using the Lumberyard user interface to upload content, see [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md) and [Managing Dynamic Content Packages](/docs/userguide/gems/cloud-canvas/dc-managing-packages.md)\.
 
 ## Dynamic Content Versioning {#cloud-canvas-cloud-gem-dc-versioning}
@@ -26,10 +26,10 @@ Using dynamic content versioning, you can pre\-stage and schedule the release of
 + Players can still download previous versions of your dynamic content while new content is uploaded, with no impact to availability\. Without versioning enabled, clients will receive errors when packages in the S3 bucket are in the process of being updated, until the update completes\.
 + Developers have the ability to quickly rollback dynamic content to a previous version\. Without versioning enabled, developers are required to re\-upload previous content, which impacts availability and mitigation speed\.
 
-**Important**  
+**Important**
 When planning your versioning strategy, remember to take into consideration that normal S3 pricing applies to each version of an object\.
 
-**Note**  
+**Note**
 Cloud Gem Portal \(CGP\) does not currently support dynamic content versioning\. Once you've enabled the feature, you will need to use CLI commands to manage the staging status of each version\. However, Dynamic Content Manager will still be functional, and you will still be able to use this GUI tool to manage your local manifests or upload content\.
 
 Periodically, you might want to clear deprecated versions using the provided CLI commands, or define custom lifecycle management rules on the content bucket\. However, please note that you will not be able to roll back to a version that has been cleared\.
@@ -40,7 +40,7 @@ For more information on lifecycle management rules, see [Object lifecycle manage
 
 Dynamic content versioning is an optional feature\. To use it, you must enable it by adding a tag to the deployment\.
 
-**To enable versioning on a new deployment**  
+**To enable versioning on a new deployment**
 Create the deployment with versioning enabled, as shown in the following CLI command:
 
 ```

@@ -5,7 +5,7 @@ title: Lumberyard UI component development guidelines
 ---
 # Lumberyard UI component development guidelines<a name="uidev-component-development-guidelines"></a>
 
-For many of the basic components \(such as check boxes, push buttons, and line edits\), you will use the base Qt widgets \(such as `QCheckBox`, `QPushButton`, `QLineEdit`\) and the custom styling and behavior is applied automatically\. Components that require extended functionality, or are unique to Lumberyard, are custom classes that can be subclassed and can include a combination of Qt widgets\. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.` 
+For many of the basic components \(such as check boxes, push buttons, and line edits\), you will use the base Qt widgets \(such as `QCheckBox`, `QPushButton`, `QLineEdit`\) and the custom styling and behavior is applied automatically\. Components that require extended functionality, or are unique to Lumberyard, are custom classes that can be subclassed and can include a combination of Qt widgets\. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager<a name="uidev-style-sheets"></a>
 
@@ -35,24 +35,24 @@ def build(bld):
 
 For standalone tools with their own Qt Application, you must take some extra steps to make sure that the new styling is applied correctly\.
 
-1.  Set the attributes to correctly handle high DPI screens before creating the QApplication\. 
+1.  Set the attributes to correctly handle high DPI screens before creating the QApplication\.
 
    ```
    #include <QApplication>
-   
+
    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
    QGuiApplication::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
    AzQtComponents::Utilities::HandleDpiAwareness(AzQtComponents::Utilities::PerScreenDpiAware);
-   
+
    QApplication app(argc, argv);
    ```
 
-1.  Instantiate a StyleManager, which loads the style sheets and custom settings for the new UI\. 
+1.  Instantiate a StyleManager, which loads the style sheets and custom settings for the new UI\.
 
    ```
    #include <AzQtComponents/Components/StyleManager.h>
-   
+
    AzQtComponents::StyleManager* styleManager = new AzQtComponents::StyleManager(this);
    const bool useLegacyStyle = false;
    styleManager->initialize(app, useLegacyStyle);
@@ -71,18 +71,18 @@ Writing code to extend the core Lumberyard Editor? Here are some high level sugg
 
 ## Frequently asked questions<a name="uidev-faq"></a>
 
- **Question: Can I copy the code example directly from the AmazonQtControlGallery?** 
+ **Question: Can I copy the code example directly from the AmazonQtControlGallery?**
 + Yes\. Please note that not all settings will be covered by this tool\. Use this extensions guide and the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html) to find additional examples and documentation\.
 
- **Question: What about visual and color modifications to the controls?** 
+ **Question: What about visual and color modifications to the controls?**
 + We do not endorse custom modifications to the layout and visual design as we want to support an experience that feels unified across all of our tooling\. Nonetheless, sometimes minor spacing and style adjustments may be needed\. See the Stylesheet page of the [Control Gallery tool](uidev-control-gallery.md) for more information on how to load a custom QSS style sheet\.
 
- **Question: Why should I use the existing widget styling instead of creating my own?** 
+ **Question: Why should I use the existing widget styling instead of creating my own?**
 + Over the past several years, we have listened to feedback from all kinds of customers who are building games with Lumberyard, and one common note was that the user experience across the different tools of the Editor felt fragmented\. The component library was built with this feedback in mind, and aims to bring unified and coherent standards to the whole Editor\.
 
   On the development side, this solution allows for better modularity and code reuse, with the objective of reducing the work needed from developers to create interfaces\. Unifying the UI controls also allows improvements to be easily shared, since the whole Editor automatically uses them once applied, and likewise reduces the possibility of issues during library updates or core changes\.
 
- **Question: Why should I not create subclasses or encapsulate the existing widgets?** 
+ **Question: Why should I not create subclasses or encapsulate the existing widgets?**
 + The component library aims to simplify development and streamline the user experience\. By subclassing or encapsulating the UI components to change their behavior or add features, special cases are added to the code base\. These cases would then need special documentation and testing to avoid regressions\. Subclassing or encapsulating UI components provides very little benefit, compared to keeping all UI components together in one place\.
 
   Subclassing is also detrimental to discoverability, since it is much harder for a new developer to find, import and re\-use code that was built specifically in a tool without creating new dependencies or duplicating code\. In the past, this has lead to multiple tools creating their own special controls that did very similar things, but in wildly different ways that made it hard to unify them and verify their behavior\.

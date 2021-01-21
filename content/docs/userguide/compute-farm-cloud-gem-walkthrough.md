@@ -15,7 +15,7 @@ This tutorial assumes the following:
   + A project stack for your project\.
   + A deployment for your project\.
 + You have an installation of Python 3\.6 or later\. Lumberyard Beta 1\.24 and later versions ship with a Python 3 interpreter located at `lumberyard_version/dev/Tools/Python/3.7.5/host_platform`\. If you use the interpreter bundled with Lumberyard, you may need to [install the pip package manager](https://pip.pypa.io/en/stable/installing/)\.
-+ You have boto3 installed\. You can use the following command to install boto3 in most distributions from the `python_installation\Scripts` directory: 
++ You have boto3 installed\. You can use the following command to install boto3 in most distributions from the `python_installation\Scripts` directory:
 
   **pip install boto3**\.
 + Open the Cloud Gem Portal\. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
@@ -73,7 +73,7 @@ The build script uses a configuration file to determine the contents of the AMI\
    + \-\-**s3\-bucket** - Use the value that you gathered for **computefarm**\. This is name of the S3 bucket that was created in your gem's deployment\.
 
    The following parameters are optional:
-   + **\-\-key\-pair\-name** - Provide a key pair name for debugging over RDP\. You can use a key pair to sign in to your Amazon EC2 instances through RDP to view their logs and debug them while they are running\. This parameter is optional, but highly recommended\. 
+   + **\-\-key\-pair\-name** - Provide a key pair name for debugging over RDP\. You can use a key pair to sign in to your Amazon EC2 instances through RDP to view their logs and debug them while they are running\. This parameter is optional, but highly recommended\.
 
      For more information, see [Amazon EC2 Key Pairs and Windows Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-key-pairs.html) and [Connecting to Your Windows Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html) in the *Amazon EC2 User Guide for Windows Instances*\.
    + **\-\-subnet\-id, \-\-security\-group\-id** - Provide these values to prevent auto\-creation every time you run this script\.
@@ -119,8 +119,8 @@ The build script uses a configuration file to determine the contents of the AMI\
 The Compute Farm cloud gem includes a compressed word list that is sorted\. In this step, you shuffle the word list to create a file to be processed by the compute farm\. The compute farm's task will be to put the list back in order\.
 
 **To create a shuffled word list**
-+ From the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\Harness` directory, run `shuffle_words.py` to create the `shuffled_words.zip` file from `words.zip`\. 
-**Note**  
++ From the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\Harness` directory, run `shuffle_words.py` to create the `shuffled_words.zip` file from `words.zip`\.
+**Note**
 This script requires Python 3\.6 or later\.
 
 ## 4\. Upload the Data to Process {#compute-farm-cloud-gem-walkthrough-upload-the-data-to-process}
@@ -129,10 +129,10 @@ In this step, you upload the shuffled word list to AWS to prepare for processing
 
 **To upload the data to process**
 
-1. In the Cloud Gem Portal, click **Compute Farm**\.  
+1. In the Cloud Gem Portal, click **Compute Farm**\.
 ![\[Compute Farm cloud gem\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-1.png)
 
-1. Click **Build Configuration**\.  
+1. Click **Build Configuration**\.
 ![\[Build configuration for the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-2.png)
 
 1. On the **Build Configuration** tab, add parameters for the cloud application that you are running\.
@@ -140,10 +140,10 @@ In this step, you upload the shuffled word list to AWS to prepare for processing
    + For **s3\_file**, enter the file name of the `.zip` file that you want to process \(for this example, `shuffled_words`\)\. Do not include the file name extension\.
    + For **max\_level**, enter the maximum depth of recursive division into which to divide the problem\. For testing purposes, `2` or `3` is good\.
 
-1. Click **Upload Data**\.  
+1. Click **Upload Data**\.
 ![\[Click Upload Data in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-3.png)
 
-1. Browse to and select the `shuffled_words.zip` file\. The key name autopopulates with the file that you selected\. If you specified a directory for the **s3\_dir** field, add that directory to the beginning of your destination path in **Destination path/key**\.  
+1. Browse to and select the `shuffled_words.zip` file\. The key name autopopulates with the file that you selected\. If you specified a directory for the **s3\_dir** field, add that directory to the beginning of your destination path in **Destination path/key**\.
 ![\[File to upload selected in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-4.png)
 
 1. Click **Upload** to upload the dictionary to Amazon S3\.
@@ -156,10 +156,10 @@ Because deploying to an AMI and then to Amazon EC2 instances can be expensive, i
 
 1. In the Cloud Gem Portal, click the **Overview** tab\.
 
-1. Click **Run Workflow**\.  
+1. Click **Run Workflow**\.
 ![\[Click Run Workflow in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-5.png)
 
-1. \(Optional\) In the **Run Workflow** dialog box, enter a unique name for the execution\.  
+1. \(Optional\) In the **Run Workflow** dialog box, enter a unique name for the execution\.
 ![\[Enter an optional name for the workflow execution in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-6.png)
 
    If you don't specify an execution name \(recommended\), one is created for you automatically in the format `exec-YYYY-MM-DDThh.mm.ss`\.
@@ -167,14 +167,14 @@ Because deploying to an AMI and then to Amazon EC2 instances can be expensive, i
 1. Click **Run**\.
 
    At this point, the Cloud Gem Portal is ready for you to run your decider and worker tasks\.
-**Note**  
+**Note**
 To run the tasks, you will use the `main.py` script located in the `lumberyard_version\dev\Gems\CloudGemComputeFarm\vN\Harness\` directory\.
 The "decider" and "worker" versions of `main.py` use the same set of parameters, but the decider version also adds the `-rd` option to mark it as a decider\.
 
 1. Construct the command line for the scripts with the following parameters:
    + **\-\-domain** - For this parameter, specify the **Workflow** value that you copied earlier and add the suffix `-domain`\. This parameter is the `Custom::SWF` domain that was generated in your resource group\.
    + **\-\-role** - Specify the value that you gathered earlier for **InstanceRole**\.
-**Note**  
+**Note**
 You can use the `--role` parameter only if you are not running in your root account\. It is better to create an IAM user with permissions to assume your role\. Use the same role to run your tests both locally and with your Amazon EC2 instances\.
    + **\-\-log\-db** - Specify the value that you gathered earlier for **LogDB**\. This parameter represents the LogDB DynamoDB table that was generated in your resource group\.
    + **\-\-config\-bucket** - Specify the value that you gathered earlier for **computefarm**\. This parameter represents the name of the Amazon S3 bucket in your resource group\.
@@ -184,13 +184,13 @@ You can use the `--role` parameter only if you are not running in your root acco
 1. Open a command line window and run the decider task\. Ensure that you include the `-rd` option in the syntax\.
 
 1. Open one or more command line windows and run the worker tasks\.
-**Note**  
-You must run at least one decider task and worker task\. 
+**Note**
+You must run at least one decider task and worker task\.
 You can run multiple worker tasks to process tasks in parallel, but only one decider task is active at any given time\.
 You must run each decider and worker task in a separate command line window\.
 Control does not automatically return to each command prompt\. Each window is suspended while execution proceeds\.
 
-1. In the Cloud Gem Portal, confirm that the test execution has completed\.  
+1. In the Cloud Gem Portal, confirm that the test execution has completed\.
 ![\[Confirm completion of the test execution in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-7.png)
 
 1. In each command window, press **Ctrl\+Break** to return each window to its command prompt\.
@@ -201,12 +201,12 @@ Now you are ready to test your harness with a fleet of Amazon EC2 instances\.
 
 **To create a fleet of Amazon EC2 instances**
 
-1. In the Cloud Gem Portal, on the **Fleet Management** tab, click **New Fleet**\.  
+1. In the Cloud Gem Portal, on the **Fleet Management** tab, click **New Fleet**\.
 ![\[Click New Fleet in the Cloud Gem Portal for the Computer Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-8.png)
-**Note**  
+**Note**
 You can have only one fleet at a time\. If you already have a fleet and create a new fleet, the preexisting fleet will be deleted\.
 
-1. In the **Create launch configuration** dialog box, enter the required information\.  
+1. In the **Create launch configuration** dialog box, enter the required information\.
 ![\[Create launch configuration for a fleet in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-9.png)
    + For **Configuration name**, enter a unique name\.
    + For **Amazon Machine Images \(AMI\)**, select the name of the AMI that you created earlier\. This is the machine image that you will deploy to your fleet\.
@@ -215,18 +215,18 @@ You can have only one fleet at a time\. If you already have a fleet and create a
 
 1. Click **Continue**\.
 
-1. In the **Create fleet** dialog box, enter the required information\.  
+1. In the **Create fleet** dialog box, enter the required information\.
 ![\[Enter a group name for the fleet in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-10.png)
    + For **group name**, enter a unique group name for the fleet\. A variant of your configuration name is recommended\.
    + For **instance number**, enter the number of instances that you want to launch\. If you do not want to launch any instances yet, specify 0\.
    + Select the **Auto\-Terminate** option if you want your fleet to automatically terminate \(that is, go to 0 instances\) after it finishes processing a workflow\.
 
-1. Click **Create**\. The **Fleet Management** tab shows the new group under **Current fleet**\.  
+1. Click **Create**\. The **Fleet Management** tab shows the new group under **Current fleet**\.
 ![\[New fleet appears in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-11.png)
-**Note**  
+**Note**
 It takes time to spin instances up or down to match the number that you request\. You are subject to the limits on your AWS account\. To request limit increases, see the [AWS Support Center](https://console.aws.amazon.com/support/home#/)\.
 
-1. To change the number of active instances at any time, edit the **Number of Instances** field and click **Save Changes**\.  
+1. To change the number of active instances at any time, edit the **Number of Instances** field and click **Save Changes**\.
 ![\[Changing the number of active instances in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-12.png)
 
 ## 7\. Run a Workflow {#compute-farm-cloud-gem-walkthrough-run-a-workflow}
@@ -237,20 +237,20 @@ To run and view the progress of a workflow, you use the **Overview** tab just as
 
 1. In the Cloud Gem Portal, click the **Overview** tab\.
 
-1. Click **Run Workflow**\.  
+1. Click **Run Workflow**\.
 ![\[Click Run Workflow in the Compute Farm cloud gem.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-13.png)
 
-1. \(Optional\) In the **Run Workflow** dialog box, enter a unique name for the execution\.  
+1. \(Optional\) In the **Run Workflow** dialog box, enter a unique name for the execution\.
 ![\[Enter a name for the workflow execution in the Compute Farm cloud gem\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-14.png)
 
    If you choose not to provide an execution name \(recommended\), one is created for you in the format `exec-YYYY-MM-DDThh.mm.ss`\.
 
 1. Click **Run**\.
 
-1. Under **Progress Visualization**, you can switch between **Activity View** and **Progress View**\.  
+1. Under **Progress Visualization**, you can switch between **Activity View** and **Progress View**\.
 ![\[Switch between Activity View and Progress View.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-15.png)
 
-   When the execution finishes, the graph is complete\.  
+   When the execution finishes, the graph is complete\.
 ![\[Progress graph in the Compute Farm Cloud Gem Portal.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-16.png)
 
 ## 8\. Download the Results {#compute-farm-cloud-gem-walkthrough-download-the-results}
@@ -261,10 +261,10 @@ After the workflow is finished, you can download the build result on the **Build
 
 1. In the Cloud Gem Portal, click the **Build Configuration**\.
 
-1. Click **Download Build Result**\.  
+1. Click **Download Build Result**\.
 ![\[Click Download Build Result\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-17.png)
 
-1. Select the `shuffled_words_sorted.zip` file\.  
+1. Select the `shuffled_words_sorted.zip` file\.
 ![\[Choose the processed file\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-18.png)
 
    You can also download any of the intermediate files that were generated\.
@@ -277,13 +277,13 @@ After you have run a number of workflows, you can view the results of previous b
 
 **To view a previous build**
 
-1. On the **Overview** tab, click **View Previous Builds**\.  
+1. On the **Overview** tab, click **View Previous Builds**\.
 ![\[Click View Previous Builds\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-19.png)
 
-1. Choose the build that you want to view from the list\. If you want to clear the list instead, click **Clear Logs**\.  
+1. Choose the build that you want to view from the list\. If you want to clear the list instead, click **Clear Logs**\.
 ![\[Choose a previous build to view in the Compute Farm Cloud Gem Portal.\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-20.png)
 
-1. Click **View**\. On the **Overview** tab, the build that you chose appears\.  
+1. Click **View**\. On the **Overview** tab, the build that you chose appears\.
 ![\[Previous build showing on the Overview tab\]](/images/userguide/cloud_canvas/compute-farm-cloud-gem-walkthrough-21.png)
 
 ## 10\. Customize the Harness for Your Application {#compute-farm-cloud-gem-walkthrough-customize-the-harness-for-your-application}

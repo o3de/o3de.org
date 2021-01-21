@@ -25,7 +25,7 @@ Minor updates replace the code in the `\dev\Gems\CloudGemFramework\vN` directory
 
 The new directory structure in Cloud Gem Framework 1\.0\.0 enables coexistence of multiple versions of the Cloud Gem Framework Gem\. Gem implementation has moved from the `\dev\Gems\CloudGemFramework\` directory to the `\dev\Gems\CloudGemFramework\v<N>\` directory\. The intent is that all nonbreaking changes be made in the `v<Current>` directory\. When breaking changes occur, a `v<Next>` directory is created to contain the updated implementation\. The `v<Current>` directory contents remain either unchanged or updated without breaking changes\. A gem can now have different versions of its `gem.json` file in the `v1` and the `v2` directory, for example\. This enables the gem to specify different versions\. Lumberyard's build and project configuration tools support gems in subdirectories\.
 
-**Note**  
+**Note**
 The **Cloud Canvas Resource Manager** now allows gems to be in directories other than `\Gems\<gem-name>`\. The [resource\-group add](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-resource-group-add) `lmbr_aws resource-group add` command's `--gem` option now takes an optional value that specifies the gem directory path\. The specified directory path can be either relative to the current working directory or a full path\.
 
 ## Applying Framework Updates to a Project {#cloud-canvas-cgf-rm-versioning-applying-framework-updates}
@@ -79,7 +79,7 @@ Previously, this Lambda code was copied from the `\dev\tools\lmbr_aws\AWSResourc
 
 This code is now located in the `\Gems\CloudGemFramework\vN\AWS\lambda-code\` directory in subdirectories divided by Lambda function\.
 
-**Note**  
+**Note**
 Using a `<gem>\AWS\project-code` or a `resource-group\<resource-group>\project-code` directory to inject code into the project Lambda function is no longer supported\.
 
 ### Project Templates {#cloud-canvas-cgf-rm-versioning-project-templates}
@@ -89,9 +89,9 @@ The following template files have moved to the `\Gems\CloudGemFramework\vN\Resou
 + `deployment-template.json`
 + `project-template.json`
 
-When the framework updates a stack, it uses these templates as a base to create the project's actual templates\. Then it uploads the templates to AWS CloudFormation\. 
+When the framework updates a stack, it uses these templates as a base to create the project's actual templates\. Then it uploads the templates to AWS CloudFormation\.
 
-**Note**  
+**Note**
 Starting in Lumberyard 1\.10, you can use extension files to add resources to each of these templates\. For more information, see [Template Extension Files](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-template-extension-files)\.
 
 ## Sharing Code {#cloud-canvas-cgf-rm-versioning-sharing-code}

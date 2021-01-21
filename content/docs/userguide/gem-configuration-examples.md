@@ -38,7 +38,7 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         # The following are the default settings, and do not need to be specified (unless changes are preferred)
         # target    = ['MyGem'],
@@ -70,7 +70,7 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         Components = dict(
             # The following are the default settings, and do not need to be specified (unless changes are preferred)
@@ -104,7 +104,7 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         HelperCode = dict(
             # The following are the default settings, and do not need to be specified (unless changes are preferred)
@@ -138,7 +138,7 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         Editor = dict(
             # The following are the default settings, and do not need to be specified (unless changes are preferred)
@@ -157,7 +157,7 @@ The following example gem has two module types, `GameModule` and `EditorModule`,
 
 ```
 {
-    "GemFormatVersion": 4,                      // Required  
+    "GemFormatVersion": 4,                      // Required
     "Uuid": "e5f049ad7f534847a89c27b7339cf6a6", // Required
     "Name": "MyGem",                            // Required
     "Version": "1.0.0",                         // Required
@@ -179,7 +179,7 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         Components = dict(
             # The following are the default settings, and do not need to be specified (unless changes are preferred)
@@ -233,21 +233,21 @@ The following is the `wscript` file for the gem\.
 
 ```
 def build(bld):
- 
+
     bld.DefineGem(
         StaticLibrary = dict(
             platforms   = ['win'],
- 
+
             includes    = ['.', 'Include'],
             file_list   = ['crashreporting_static.waf_files'],
             win_file_list = ['crashreporting_static_win.waf_files'],
             use         = ['CrashHandler']
         )
     )
- 
+
     uploader_file_list =  ['game_crash_uploader.waf_files']
     platform = bld.env['PLATFORM']
- 
+
     if platform == 'project_generator':
         uploader_file_list.append('game_crash_uploader_win.waf_files')
         uploader_file_list.append('game_crash_uploader_unimplemented.waf_files')
@@ -255,9 +255,9 @@ def build(bld):
         uploader_file_list.append('game_crash_uploader_win.waf_files')
     else:
         uploader_file_list.append('game_crash_uploader_unimplemented.waf_files')
- 
+
     bld.CryQtApplication(
- 
+
         # Settings
         target          = 'CrashReporting.Uploader',
         output_file_name = 'GameCrashUploader',
@@ -306,11 +306,11 @@ def build(bld):
     )
 ```
 
-**Note**  
-The gem must exist in the `gems.json` for your project but should be removed from the `game.xml` and `editor.xml` files\.  
+**Note**
+The gem must exist in the `gems.json` for your project but should be removed from the `game.xml` and `editor.xml` files\.
 In Project Configurator, create the gem and make the changes to the `gem.json` and `wscript` files\.
-Do one of the following:  
-In a command line window, navigate to the `lmbr.exe` file and enter the following command\.  
+Do one of the following:
+In a command line window, navigate to the `lmbr.exe` file and enter the following command\.
 
       ```
       lmbr projects populate-appdescriptors
@@ -353,8 +353,8 @@ def build(bld):
             # vs_filter = ['Gems'],
         )
     )
- 
- 
+
+
     bld.CryEngineModule(
         # The following are the default settings, and do not need to be specified (unless changes are preferred)
         # vs_filter = ['Gems'],
@@ -366,11 +366,11 @@ def build(bld):
     )
 ```
 
-**Note**  
-The gem must exist in the `gems.json` for your project but should be removed from the `game.xml` and `editor.xml` files\.  
+**Note**
+The gem must exist in the `gems.json` for your project but should be removed from the `game.xml` and `editor.xml` files\.
 In Project Configurator, create the gem and make the changes to the `gem.json` and `wscript` files\.
-Do one of the following:  
-In a command line window, navigate to the `lmbr.exe` file and enter the following command\.  
+Do one of the following:
+In a command line window, navigate to the `lmbr.exe` file and enter the following command\.
 
       ```
       lmbr projects populate-appdescriptors

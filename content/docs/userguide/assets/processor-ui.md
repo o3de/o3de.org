@@ -15,36 +15,36 @@ The Asset Processor interface provides areas containing detailed information abo
 
 
 
-A - Processing status  
+A - Processing status
 Displays asset processing status, the project name, its root location, and the processor port\.
 
-B - Tabs  
+B - Tabs
 Displays scoped views of Asset Processor functionality\. Tabs are described in detail in the following sections\.
 
-C - Asset Status  
+C - Asset Status
 Displays the asset status and details about the source asset in a sortable table\.
 
-D - Asset status search with filter  
+D - Asset status search with filter
 Filters your search by keyword, regular expressions, or status\.
 
-E - Event log details  
+E - Event log details
 Provides additional information for the selected row in the asset status table\.
 
-F - Event log details filter  
+F - Event log details filter
 Filters by warnings and errors\.
 
-G - Context details  
+G - Context details
 When enabled, shows specific debugging information for the asset\. This setting is disabled by default\.
 
-H - Event log line details table  
+H - Event log line details table
 Displays debugging values set in the program for the selected line in the **Event log details**\. These values are emitted during processing\.
 
-I - Asset processing timer  
- After asset processing completes, displays information about the time that it took to perform scans, analyze assets, and produce a build\. 
+I - Asset processing timer
+ After asset processing completes, displays information about the time that it took to perform scans, analyze assets, and produce a build\.
 
 ## Jobs {#jobs-tab}
 
- The **Jobs** tab displays information about the current state of asset processor jobs\. This includes information on the state of jobs, events that occurred during processing, and detailed logging information from the asset processor\. 
+ The **Jobs** tab displays information about the current state of asset processor jobs\. This includes information on the state of jobs, events that occurred during processing, and detailed logging information from the asset processor\.
 
 ### Asset Status {#asset-status-table}
 
@@ -72,16 +72,16 @@ The column headers display the following information about each asset:
 
 In the filter box, you can filter the table view by entering keywords and regular expressions\. The regular expressions are standard `std::regex` in extended format\. The standard `std::regex` rules apply\.
 
-**Example**  
-A regular expression \(regex\) to search for all files ending with `.png`:  
+**Example**
+A regular expression \(regex\) to search for all files ending with `.png`:
 
 ```
 *.png
 ```
 The asterisk \(\*\) indicates any character 0 or more times\.
 
-**Example**  
-A regex to search for any files under a `Slices` subdirectory:  
+**Example**
+A regex to search for any files under a `Slices` subdirectory:
 
 ```
 /Slices/.+
@@ -100,19 +100,19 @@ Filters that you apply remain active until you remove them\. You can either clea
 
 You can perform actions on each row in the **Asset Status** table\. Right\-click on the row to expose a context menu with the following actions:
 
-**Show in Asset Browser**  
+**Show in Asset Browser**
 Highlights the asset in the Editor's Asset Browser\. The Editor must be open and running\.
 
-**Open in Explorer**  
+**Open in Explorer**
 Opens the asset in Windows Explorer\.
 
-**Copy**  
+**Copy**
 Copies the asset name\.
 
-**Open log file**  
+**Open log file**
 Opens the most recent log file for the asset, if one has been made\. File copies and other simple asset processing steps don't generate logs\.
 
-**Open folder with log file**  
+**Open folder with log file**
 Opens the directory with the log file for the asset\.
 
 ![\[Right-click on a row to expose the context menu in the Asset Table.\]](/images/userguide/asset_processor/row-asset-context-menu.png)
@@ -123,20 +123,20 @@ In the **Event Log Details** table, you can view asset processing information fo
 
 The **Status** column displays icons for the following message types:
 
-**![\[Information icon in Status table.\]](/images/userguide/asset_processor/event-log-details-information.png)Information**  
+**![\[Information icon in Status table.\]](/images/userguide/asset_processor/event-log-details-information.png)Information**
 Additional supporting messages are available about the processing of the asset\.
 
-**![\[Warning icon in Status table.\]](/images/userguide/asset_processor/event-log-details-warning.png) Warning**  
+**![\[Warning icon in Status table.\]](/images/userguide/asset_processor/event-log-details-warning.png) Warning**
 See the **Message** column for information about a potential processing issue for this asset\.
 
-**![\[Error icon in Status table.\]](/images/userguide/asset_processor/event-log-details-error.png) Error**  
+**![\[Error icon in Status table.\]](/images/userguide/asset_processor/event-log-details-error.png) Error**
 The location of the asset and the specific error generated by attempting to process that asset\.
 
 The **Source** column indicates the subsystem that generated the message \(such as **AssetBuilder**\) or a generic type, such as **Warning** or **Error**\.
 
 The **Message** column displays information related to the processing details of the selected asset\.
 
-**Note**  
+**Note**
 The **Message** column occasionally prefixes **Errors** with **E:** and warnings with **W:**\.
 
 ![\[Event log details table.\]](/images/userguide/asset_processor/event-log-details-table.png)
@@ -163,57 +163,57 @@ The **Event Log Line Details** table also features a context menu to perform cop
 
 ## Assets {#assets-tab}
 
- The **Assets** tab displays information about the assets associated with your active project\. The data you get includes things like the name of the asset, what files are produced by the resource compiler, and dependencies\. In addition to seeing information on source assets, you can also look through generated assets and try to locate missing dependencies\. 
+ The **Assets** tab displays information about the assets associated with your active project\. The data you get includes things like the name of the asset, what files are produced by the resource compiler, and dependencies\. In addition to seeing information on source assets, you can also look through generated assets and try to locate missing dependencies\.
 
 ### Source assets {#assets-tab-source}
 
- Using the **Source Assets** view of the **Assets** tab shows you the assets picked up during asset processing and lets you investigate their dependencies, products, associated jobs, and force asset rebuilds\. 
+ Using the **Source Assets** view of the **Assets** tab shows you the assets picked up during asset processing and lets you investigate their dependencies, products, associated jobs, and force asset rebuilds\.
 
 ![\[The Asset Processor with the Assets tab selected, and the Source Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/userguide/asset_processor/assets-source.png)
 
-A - Search bar  
- Search for assets\. The search bar is visible in both the Source Assets and Product Assets views\. The search will match partial file names and supports regular expressions\. Search bar functionality is the same between **Source Assets** and **Product Assets** views\. 
+A - Search bar
+ Search for assets\. The search bar is visible in both the Source Assets and Product Assets views\. The search will match partial file names and supports regular expressions\. Search bar functionality is the same between **Source Assets** and **Product Assets** views\.
 
-B - Source asset list  
- The list of all source assets which match the current search filter\. When the search is empty, shows all of the source assets used by the project\. 
+B - Source asset list
+ The list of all source assets which match the current search filter\. When the search is empty, shows all of the source assets used by the project\.
 
-C - Asset information  
- Detailed information about the asset currently selected in the asset list\. This includes the name of the asset, the containing folder on the filesystem, and the GUID associated with the asset in the Lumberyard asset system\. 
+C - Asset information
+ Detailed information about the asset currently selected in the asset list\. This includes the name of the asset, the containing folder on the filesystem, and the GUID associated with the asset in the Lumberyard asset system\.
 
-D - Products  
- The compiled asset products that are produced from the source asset\. Selecting the popout icon \( ![\[The popout icon, a white box containing an arrow originating at the lower left and pointing towards the upper right.\]](/images/userguide/asset_processor/popout-icon.png) \) next to a product name takes you to that asset within the **Product Assets** view\. 
+D - Products
+ The compiled asset products that are produced from the source asset\. Selecting the popout icon \( ![\[The popout icon, a white box containing an arrow originating at the lower left and pointing towards the upper right.\]](/images/userguide/asset_processor/popout-icon.png) \) next to a product name takes you to that asset within the **Product Assets** view\.
 
-E - Outgoing source dependencies  
- The list of source assets which require an output from this source asset to process\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
+E - Outgoing source dependencies
+ The list of source assets which require an output from this source asset to process\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
-F - Incoming source dependencies  
- The list of source assets which must have their jobs completed before the processing of this asset\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
+F - Incoming source dependencies
+ The list of source assets which must have their jobs completed before the processing of this asset\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
 ### Product assets {#assets-tab-product}
 
 ![\[The Asset Processor with the Assets tab selected, and the Product Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/userguide/asset_processor/assets-product.png)
 
-A - Product asset list  
- The list of all product assets which match the current search filter\. When the search is empty, shows all of the available products\. 
+A - Product asset list
+ The list of all product assets which match the current search filter\. When the search is empty, shows all of the available products\.
 
-B - Asset information  
- The information for the product asset\. Includes the asset GUID, the last time the product was generated, which type of job generated the asset, which platform the asset was producted for, and which source asset is the primary input for the product\. 
+B - Asset information
+ The information for the product asset\. Includes the asset GUID, the last time the product was generated, which type of job generated the asset, which platform the asset was producted for, and which source asset is the primary input for the product\.
 
-C - Outgoing product dependencies  
- The list of product assets which depend on this product\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
+C - Outgoing product dependencies
+ The list of product assets which depend on this product\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
-D - Outgoing unmet path product dependencies  
- The list of product assets which are hardcoded paths to be loaded by the Lumberyard runtime that this asset depends upon\. Because these products aren't necessarily generated by the asset processor, they're placed into a separate category of dependencies\. See [Hardcoded File Loads](/docs/userguide/assets/bundle/assets-resolving#asset-bundler-assets-resolving-hardcoded-file-loads) for information on resolving path product dependency issues\. 
+D - Outgoing unmet path product dependencies
+ The list of product assets which are hardcoded paths to be loaded by the Lumberyard runtime that this asset depends upon\. Because these products aren't necessarily generated by the asset processor, they're placed into a separate category of dependencies\. See [Hardcoded File Loads](/docs/userguide/assets/bundle/assets-resolving#asset-bundler-assets-resolving-hardcoded-file-loads) for information on resolving path product dependency issues\.
 
-E - Incoming product dependencies  
- The list of product assets which this product depends on\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\. 
+E - Incoming product dependencies
+ The list of product assets which this product depends on\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
-F - Missing dependency scanner  
- Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md) for more information\. 
+F - Missing dependency scanner
+ Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md) for more information\.
 
 ## Logs {#logs-tab}
 
-The **Logs** tab displays events for the internal operation of the Asset Processor\. This area doesn't display logs for the processing of individual assets\. The information in these logs is helpful for troubleshooting the Asset Processor if an issue occurs\. 
+The **Logs** tab displays events for the internal operation of the Asset Processor\. This area doesn't display logs for the processing of individual assets\. The information in these logs is helpful for troubleshooting the Asset Processor if an issue occurs\.
 
 ![\[Logs tab in Asset Processor.\]](/images/userguide/asset_processor/logs.png)
 

@@ -11,13 +11,13 @@ Lumberyard features two types of Gems:
 + **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
 + **Assets Only** - Contains only assets and no code\.
 
-All Lumberyard gems are located in the following directory: 
+All Lumberyard gems are located in the following directory:
 
 `lumberyard_version\dev\Gems`
 
 The gems that you enable are automatically detected and built through the integrated [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
 
-**Note**  
+**Note**
 To enable **Code & Assets** Gems, you must select the **Compile the game code** option in Lumberyard Setup Assistant\. This option is not required for **Assets Only** gems\. For more information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 You can enable Gems with the [Project Configurator](/docs/userguide/configurator/projects.md) or the command line \([`Lmbr.exe`](/docs/userguide/lmbr-exe.md)\)\.

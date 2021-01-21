@@ -6,11 +6,11 @@ title: Linking to the &LEX; Console
 # Linking to the Amazon Lex Console {#cloud-canvas-cloud-gem-speech-recognition-cgp-linking-to-the-amazon-lex-console}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in preview release and is subject to change\. | 
+| This feature is in preview release and is subject to change\. |
 
 You can configure speech recognition settings directly in the Amazon Lex console\.
 

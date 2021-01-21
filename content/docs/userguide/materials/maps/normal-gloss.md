@@ -4,7 +4,7 @@ title: Using Normals with Gloss Maps
 ---
 # Using Normals with Gloss Maps {#mat-maps-normal-gloss}
 
-Most materials should have a gloss map as well as a normal map as this can impart a lot of variation to the shading\. Gloss maps are closely related to normal maps, as high frequency details in a normal map can create some roughness as well\. However, gloss is more the microscale roughness of the material while normal represents macro\-scale bumpiness\. Gloss maps are treated like diffuse maps\. 
+Most materials should have a gloss map as well as a normal map as this can impart a lot of variation to the shading\. Gloss maps are closely related to normal maps, as high frequency details in a normal map can create some roughness as well\. However, gloss is more the microscale roughness of the material while normal represents macro\-scale bumpiness\. Gloss maps are treated like diffuse maps\.
 
 The Gloss map always goes into the Alpha channel of the Normal map, even if you're using a specular map for metals and metal\-embedded surfaces\.
 

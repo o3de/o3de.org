@@ -8,12 +8,12 @@ title: Custom Resources
 Cloud Canvas provides a number of [AWS CloudFormation custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that can be used in the AWS CloudFormation template files for the project, deployment, and resource group\. These custom resources are implemented by the Lambda function code found in the `dev\{game}\AWS\project-code` directory and the `ProjectResourceHandler` resource defined in the `dev\{game}\AWS\project-template.json` file\. Rather than static entities, these resources act more like library functions\. Each custom resource has input and output properties\.
 
 A summary list of custom resources follows\.
-+ [CognitoIdentityPool](#cloud-canvas-custom-resources-cognito-identity-pool) - Manages Amazon Cognito identity pool resources\. 
++ [CognitoIdentityPool](#cloud-canvas-custom-resources-cognito-identity-pool) - Manages Amazon Cognito identity pool resources\.
 + [CognitoUserPool](#cloud-canvas-custom-resources-cognito-user-pool) - Manages Amazon Cognito user pool resources\.
 + [EmptyDeployment](#cloud-canvas-custom-resources-empty-deployment) - Used in the `deployment-template.json` when there are no resource groups defined\.
 + [ResourceGroupConfiguration](#cloud-canvas-custom-resources-resource-group-configuration) - Provides configuration data for a resource\-group's AWS CloudFormation stack resource\.
 + [LambdaConfiguration](#cloud-canvas-custom-resources-lambda-configuration) - Provides configuration data for Lambda function resources and maintains the Lambda function's execution role\.
-+ [Helper](#cloud-canvas-custom-resources-helper) - Provides convenience functions for use in templates\. 
++ [Helper](#cloud-canvas-custom-resources-helper) - Provides convenience functions for use in templates\.
 + [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md) - Provides programmatic access to cloud gem functionality that you can use to implement cloud\-connected features in your game\.
 
 For information on controlling access to resources, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
@@ -37,7 +37,7 @@ The `Custom::CognitoIdentityPool` resource is used in the `deployment-access-tem
   Required\. Must be either `true` or `false`\. Determines whether the Amazon Cognito identity pool is configured to use the authentication providers that were created from the `add-login-provider` command\.
 + `AllowUnauthenticatedIdentities`
 
-  Required\. Must be either `true` or `false`\. Determines whether the Amazon Cognito identity pool is configured to allow unauthenticated identities\. See [Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) for more information on Amazon Cognito's support for authenticated and unauthenticated identities\. 
+  Required\. Must be either `true` or `false`\. Determines whether the Amazon Cognito identity pool is configured to allow unauthenticated identities\. See [Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html) for more information on Amazon Cognito's support for authenticated and unauthenticated identities\.
 + `Roles`
 
   Optional\. Determines the IAM role assumed by authenticated and unauthenticated users\. See [ SetIdentityPoolRoles](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_SetIdentityPoolRoles.html) for a description of this property\.
@@ -69,7 +69,7 @@ The `Custom::CognitoUserPool` resource is used in the [Player Account Cloud Gem 
   Required\. A list of client apps to be created for the user pool\. At least one must be provided\.
 + `LambdaConfig`
 
-  Optional\. A map of a Lambda trigger name to a Lambda function ARN\. This map is passed to the Amazon Cognito `CreateUserPool` API when a user pool is created and to the Amazon Cognito `UpdateUserPool` API when a user pool is updated\. 
+  Optional\. A map of a Lambda trigger name to a Lambda function ARN\. This map is passed to the Amazon Cognito `CreateUserPool` API when a user pool is created and to the Amazon Cognito `UpdateUserPool` API when a user pool is updated\.
 
 ### Metadata: Linking a User Pool to an Identity Pool {#cloud-canvas-custom-resources-cognito-user-pool-metadata}
 
@@ -149,7 +149,7 @@ The `Custom::LambdaConfiguration` resource is used in `resource-template.json` f
   Required\. The Amazon S3 object key prefix where configuration data for the resource group is located in the configuration bucket\.
 + `FunctionName`
 
-  Required\. The friendly name of the Lambda function resource being configured\. 
+  Required\. The friendly name of the Lambda function resource being configured\.
 + `Settings`
 
   Optional\. Values that are made available to the Lambda function code\.
@@ -200,7 +200,7 @@ Syntax
 { "HelperFn::LowerCase" : "converted-string-value" }
 ```
 
-**Example**  
+**Example**
 The following example from the `project-template.json` file uses `HelperFn::LowerCase` to lower the case of a stack name\.
 
 ```

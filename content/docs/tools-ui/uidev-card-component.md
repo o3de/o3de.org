@@ -19,45 +19,45 @@ Cards allow for a certain amount of customization\. The basic layout of a card i
 
 ![\[component card anatomy\]](/images/tools-ui/component-card-anatomy.png)
 
-1.  **Expander** and **header bar** 
+1.  **Expander** and **header bar**
 
    Cards expand or collapse when users click the arrow on the top left\.
 
    If the card can be moved, users press and drag the header bar to reposition the card\.
 
-1.  **Card icon** 
+1.  **Card icon**
 
    \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [Lumberyard component icons](uidev-component-icons.md)\.
-**Note**  
-Two icons are required for new components:  
+**Note**
+Two icons are required for new components:
 A 16 x 16 SVG with a background box for the perspective window\.
 An SVG for everywhere else in the editor, without a background box\.
 
-1.  **Card name** 
+1.  **Card name**
 
    Each card has their own name related to their purpose\. You can configure the name to change from white to orange to signify that content in the widget has been modified\.
 
-1.  **Help icon** 
+1.  **Help icon**
 
    \(Optional\) Cards can display a link to documentation that describes the card's functionality\.
 
-1.  **Context menu icon** 
+1.  **Context menu icon**
 
    \(Optional\) The card's context menu opens when users choose this icon\. The context menu can also be opened by right\-clicking the card header with a mouse\.
 
-1.  **Card content widget** 
+1.  **Card content widget**
 
    This area contains the content widget for the card\. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component.md) component, but cards can hold any widget\.
 
-1.  **Advanced options** 
+1.  **Advanced options**
 
    \(Optional\) When a secondary content widget is set, a label for it is displayed here\. The Advanced options menu expands or collapses when users choose the arrow on the left of the label\. You can customize the label's text\.
 
-1.  **Notifications** 
+1.  **Notifications**
 
    \(Optional\) [Notifications](#card-notification) that you added to the card are displayed here\. Buttons or other widgets can be added to notifications as a means of resolving them\.
 
-1.  **Call to action region** 
+1.  **Call to action region**
 
    \(Optional\) Supplemental actions should be placed at the bottom of the card\. We refer to this as the Call to Action region\. Typically, a call to action is represented by a button added to the bottom of a content widget, or in a card notification\. Avoid using primary buttons here because they should be reserved for the overall action on a page\. Instead, use secondary or tertiary buttons, link buttons, and icon buttons here\.
 
@@ -73,7 +73,7 @@ The simplest card consists of these components:
   + \(Optional\) Context menu \(enabled by default\)
 + Card content
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/Card.h>
@@ -105,7 +105,7 @@ Display a help icon on the card to redirect users to a webpage for documentation
 
 The following code demonstrates how to set up a help link and start a context menu\.
 
- **Example** 
+ **Example**
 
 ```
 // Set the card help icon.
@@ -131,7 +131,7 @@ connect(ui->basicCard, &AzQtComponents::Card::contextMenuRequested, this, [](con
 
 Display a secondary content widget\. Its title is customizable\.
 
- **Example** 
+ **Example**
 
 ```
 // Set the secondary content title.
@@ -147,7 +147,7 @@ card->setSecondaryContentWidget(new QWidget());
 
 Configure the care title to change color when the content is edited, different from the parent slice, or has not been saved yet\. We recommend enabling this functionality on all cards\.
 
- **Example** 
+ **Example**
 
 ```
 // Set the content modified state in response to content change.
@@ -160,10 +160,10 @@ card->header()->setContentModified(true);
 
 Fully disable the card, including header bar icons and child widgets\.
 
-**Note**  
+**Note**
 If you want the card content to be disabled, but allow users to still use the help button and context menu in the header bar, use the [Mock Disabled](#card-mock-disabled) state\.
 
- **Example** 
+ **Example**
 
 ```
 // Disable the card widget using a Qt function. All functionality of the card is disabled.
@@ -179,7 +179,7 @@ Disable primary and secondary widgets on the card, but keep the header bar enabl
 + Help
 + Context menu
 
- **Example** 
+ **Example**
 
 ```
 // Display the card as disabled while retaining functionality in the header bar.
@@ -192,10 +192,10 @@ card->mockDisabledState(true);
 
 Set a warning state on the card header\.
 
-**Note**  
+**Note**
 You can independently set the disabled state and warning state\.
 
- **Example** 
+ **Example**
 
 ```
 // Display a warning icon in the header bar to indicate a warning state.
@@ -213,10 +213,10 @@ Customize the notification with the following:
 + \(Optional\) Action button
 + \(Optional\) Custom widget
 
-**Note**  
+**Note**
 In addition to buttons, you can use `addFeature(QWidget*)` to add a custom widget to the warning notification\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/CardNotification.h>
@@ -235,11 +235,11 @@ connect(button, &QPushButton::clicked, ui->functionalCard, &AzQtComponents::Card
 ## C\+\+ API reference<a name="card-api-ref"></a>
 
 For details on the **card** API, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::Card](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card.html) 
-+  [AzQtComponents::CardHeader](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_header.html) 
-+  [AzQtComponents::CardNotification](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_notification.html) 
++  [AzQtComponents::Card](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card.html)
++  [AzQtComponents::CardHeader](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_header.html)
++  [AzQtComponents::CardNotification](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_notification.html)
 
 ## Related links<a name="card-related-links"></a>
 
 For additional information related to the **card** component, see the following topics:
-+  [Reflected Property Editor](uidev-reflected-property-editor-component.md) 
++  [Reflected Property Editor](uidev-reflected-property-editor-component.md)

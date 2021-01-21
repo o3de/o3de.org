@@ -7,13 +7,13 @@ title: Using the sys_asserts Console Variable (CVAR)
 Manage assert notifications in Lumberyard with the `sys_asserts` console variable\. The following table shows the possible values and their meanings\.
 
 
-| Value | Description | 
-| --- | --- | 
-| 0 | Ignore assert condition checks\. Assert expressions are not evaluated\. This option offers the best performance of all of these values\. | 
-| 1 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This is the default value\. | 
-| 2 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This value displays a dialog box with options to ignore the current assert, ignore all asserts, or break on the assert\. | 
+| Value | Description |
+| --- | --- |
+| 0 | Ignore assert condition checks\. Assert expressions are not evaluated\. This option offers the best performance of all of these values\. |
+| 1 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This is the default value\. |
+| 2 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This value displays a dialog box with options to ignore the current assert, ignore all asserts, or break on the assert\. |
 
-**Note**  
+**Note**
 Prior to Lumberyard version 1\.21, when a debugger was attached and an assert was triggered, the debugger triggered a breakpoint on the assert\. In the new implementation, asserts print to the log at setting `sys_asserts=1` and display a dialog box at setting `sys_asserts=2`\. This gives you the option to break on the assert rather breaking automatically\.
 
 ## Example Outputs {#debugging-using-asserts-example-outputs}
@@ -36,13 +36,13 @@ e:\dev\Code\CryEngine\Cry3DEngine\Particle.cpp(1289): (68792) 'void __cdecl CPar
 The following table describes the options for the **Assert** dialog box\.
 
 
-****  
+****
 
-| Option | Description | 
-| --- | --- | 
-| Ignore | Ignores the current assert and continues running the application\. The same assert no longer triggers the dialog box to display\. | 
-| Ignore All | Prevents the current assert and all future asserts from displaying a dialog box\. To prevent decreases in performance, prints debug information to the log only after completion\. | 
-| Break | Breaks on the assert\. If a debugger is attached, creates a breakpoint and breaks at the breakpoint in the debugger\. If a debugger is not attached, stops the application\. | 
+| Option | Description |
+| --- | --- |
+| Ignore | Ignores the current assert and continues running the application\. The same assert no longer triggers the dialog box to display\. |
+| Ignore All | Prevents the current assert and all future asserts from displaying a dialog box\. To prevent decreases in performance, prints debug information to the log only after completion\. |
+| Break | Breaks on the assert\. If a debugger is attached, creates a breakpoint and breaks at the breakpoint in the debugger\. If a debugger is not attached, stops the application\. |
 
 ## Setting the Assert Level at Initialization {#debugging-using-asserts-setting-at-initialization}
 

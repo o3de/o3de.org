@@ -27,22 +27,22 @@ The following example demonstrates how to use the screen fader effect in an `.xm
 
 You can set the following parameters:
 
-**Enable**  
-Determines whether or not the ScreenFader is active for the post\-processing effect group\.  
+**Enable**
+Determines whether or not the ScreenFader is active for the post\-processing effect group\.
 Valid values: `0` = Disable \| `1` = Enable
 
-**FadeInTime**  
+**FadeInTime**
 Time, in seconds, for the screen fader to fade in, once enabled\.
 
-**FadeOutTime**  
+**FadeOutTime**
 Time, in seconds, for the screen fader to fade out, once disabled\.
 
-**ScreenCoordinates**  
-Determines the rectangle where the screen fader is rendered\. Specify the coordinates in the format \(Left, Top, Right, Bottom\)\. For example, a fullscreen quad is specified as `(0.0, 0.0, 1.0, 1.0)` and a quad that fills half of the screen is specified as `(0.0, 0.0, 0.5, 1.0)`\.  
+**ScreenCoordinates**
+Determines the rectangle where the screen fader is rendered\. Specify the coordinates in the format \(Left, Top, Right, Bottom\)\. For example, a fullscreen quad is specified as `(0.0, 0.0, 1.0, 1.0)` and a quad that fills half of the screen is specified as `(0.0, 0.0, 0.5, 1.0)`\.
 Valid values: `0.0 - 1.0`
 
-**FadeColor**  
+**FadeColor**
 Sets the quad color by multiplying the color by the specified texture\. If no texture is specified, the quad will be a solid color\.
 
-**TextureName**  
+**TextureName**
 Path of the texture to use for the screen fader\.

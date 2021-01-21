@@ -23,7 +23,7 @@ Use the Lumberyard Asset Editor to add custom file tag rules to either `exclude.
 
 You can use the **Comment** field to add more information about a file tag rule, for example to document its usage\.
 
-**Note**  
+**Note**
 Some file tags have designated uses within Lumberyard\. Various tools may require that you use specific tags, such as `editoronly` and `shader`\. You can find the full list of commonly used tags in the `FileTagsIndex` enum in `dev\Code\Framework\AzFramework\AzFramework\FileTag\FileTag.h`\.
 
 **How to Create a File Tag Rule**
@@ -32,15 +32,15 @@ Some file tags have designated uses within Lumberyard\. Various tools may requir
 
 1. Choose **File**, **Open**, and select either `exclude.filetag` or `include.filetag` from the `Engine` directory\.
 
-1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**\+**' button to add a new child element\.  
+1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**\+**' button to add a new child element\.
 ![\[Start a new file tag rule by adding a new element to the File Tag Map.\]](/images/userguide/assetbundler/asset-bundler-filetag-new-element.png)
 
-1. Enter the desired file matching pattern in the **New Key** field\.  
+1. Enter the desired file matching pattern in the **New Key** field\.
 ![\[Specify the desired file matching pattern.\]](/images/userguide/assetbundler/asset-bundler-filetag-new-key.png)
 
 1. Open your new file pattern key from the list and select the appropriate **File Pattern** type\.
 
-1. Add one or more **File Tags** to associate with your new file pattern\.  
+1. Add one or more **File Tags** to associate with your new file pattern\.
 ![\[Complete the new file tag rule by selecting a File Pattern type and entering one or more File Tags.\]](/images/userguide/assetbundler/asset-bundler-filetag-example.png)
 
 1. Select **File**, **Save** to save your new file tag rule\.
@@ -54,15 +54,15 @@ You can use the C\+\+ FileTag API to write your own logic for determining whethe
    {
        using namespace AzFramework::FileTag;
        AZStd::vector<AZStd::string> tags{ "ignore", "shader" };
-       
+
        bool shouldIgnore = false;
        QueryFileTagsEventBus::EventResult(shouldIgnore, FileTagType::exclude, &QueryFileTagsEventBus::Events::Match, szPath, tags);
-       
+
        return shouldIgnore;
    }
 ```
 
-**Note**  
+**Note**
 In the previous example, it shows querying the `QueryFileTagsEventBus` on the ID `FileTagType::exclude`\. This implies that this query is using the file tagging rules specified in the `exclude.filetag` file\.
 
 You can find the FileTag API in the `dev\Code\Framework\AzFramework\AzFramework\FileTag` directory\. In that directory, `FileTag.h` declares the `Match` method that was used in the previous example\. There are other methods there, such as `GetTags`, which you can use to write more complex logic\. You may find it useful to work with the `excludeFileComponent` helper class, found in `FileTagComponent.h`\. This component class automatically loads the default exclusion file for you, sets the file tag type to `FileTagType::exclude`, and connects to the `QueryFileTagsEventBus` upon activation\.

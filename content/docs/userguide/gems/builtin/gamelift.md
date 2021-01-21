@@ -49,7 +49,7 @@ Use the following sample code as a guide when starting and hosting a GameLift se
 
  {#gems-system-gem-gamelift-sample-code-start-gameliftserverservice.title}Start GameLiftServerService
 
- 
+
 
 ```
 GridMate::GameLiftServerServiceDesc serviceDesc;
@@ -64,7 +64,7 @@ m_service = GridMate::StartGridMateService<GridMate::GameLiftServerService>(m_gr
 
  {#gems-system-gem-gamelift-sample-code-host-a-session.title}Host a Session
 
- 
+
 
 ```
 GridMate::CarrierDesc carrierDesc;
@@ -81,7 +81,7 @@ EBUS_EVENT_ID_RESULT(session, m_gridMate, GridMate::GameLiftServerServiceBus, Ho
 
  {#gems-system-gem-gamelift-sample-code-matchmaking-backfill.title}Start/Stop Matchmaking Backfill
 
- 
+
 
 ```
 EBUS_EVENT_ID(m_gridMate, GridMate::GameLiftServerServiceBus, StartMatchmakingBackfill, m_updateGameSession, m_session, checkForAutoBackfill=true);
@@ -94,7 +94,7 @@ Use the following sample code as a guide when using the GameLift client service\
 
  {#gems-system-gem-gamelift-sample-code-start-gameliftclientservice.title}Start GameLiftClientService
 
- 
+
 
 ```
 GridMate::GameLiftClientServiceDesc serviceDesc;
@@ -108,7 +108,7 @@ m_service = GridMate::StartGridMateService<GridMate::GameLiftClientService>(m_gr
 
  {#gems-system-gem-gamelift-sample-code-send-gameliftsessionrequest.title}Send GameLiftSessionRequest / GameLiftGameSessionPlacementRequest
 
- 
+
 
 ```
 GridMate::GameLiftSessionRequestParams reqParams;
@@ -129,7 +129,7 @@ EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, 
 
  {#gems-system-gem-gamelift-sample-code-search-active-sessions.title}Search Active Sessions
 
- 
+
 
 ```
 GridMate::GameLiftSearchParams searchParams;
@@ -143,7 +143,7 @@ EBUS_EVENT_ID_RESULT(m_search, m_gridMate, GridMate::GameLiftClientServiceBus, S
 
  {#gems-system-gem-gamelift-sample-code-join-a-session.title}Join a Session
 
- 
+
 
 ```
 GridMate::CarrierDesc carrierDesc;
@@ -158,7 +158,7 @@ EBUS_EVENT_ID_RESULT(m_session, m_gridMate, GridMate::GameLiftClientServiceBus, 
 
  {#gems-system-gem-gamelift-sample-code-matchmaking.title}Join using FlexMatch Matchmaking
 
- 
+
 
 ```
 m_matchmakingConfigName = "MatchmakingConfig";

@@ -20,9 +20,9 @@ You can add a prebuilt **RadioButtonGroup** element from the slice library\. Whe
 **To add a RadioButtonGroup element from the slice library**
 + In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **RadioButtonGroup**\.
 
-**To edit a RadioButtonGroup component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButtonGroup** and do the following, as appropriate:    
-**Settings**, **Allow uncheck**  
-Select to enable the clearing or unchecking of selected radio buttons\.  
-**Actions**, **Change**  
+**To edit a RadioButtonGroup component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButtonGroup** and do the following, as appropriate:
+**Settings**, **Allow uncheck**
+Select to enable the clearing or unchecking of selected radio buttons\.
+**Actions**, **Change**
 Enter a text string\. This string is sent as an action on the UI canvas when the radio button group has any state changes\.

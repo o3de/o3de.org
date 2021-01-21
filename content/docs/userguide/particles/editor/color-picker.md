@@ -13,7 +13,7 @@ Use the color picker to apply a color tint and alpha \(opacity\) to your particl
 
 1. In the **Libraries** panel, select an emitter\.
 
-1. In the **Attributes** panel, under **Particles**, click the color swatch for the **Color** parameter\.  
+1. In the **Attributes** panel, under **Particles**, click the color swatch for the **Color** parameter\.
 ![\[Image NOT FOUND\]](/images/userguide/particles/color-picker-1.png)
 
 The **Color Picker** includes the following:
@@ -43,18 +43,18 @@ Create a palette library to save your collection of custom colors\. You can crea
 Use the following actions in the palette library menu\.
 
 
-****  
+****
 
-| Option | Description | 
-| --- | --- | 
-| List | Displays a list view with name or RGBA values\. | 
-| Grid | Displays the palette as a grid of color swatches\. | 
-| Preset preview size | Changes the palette swatch size\. | 
-| Create New Library | Creates a blank palette library\. | 
-| Libraries | Displays a list of imported palette libraries\. | 
-| Load Library | Imports a saved palette library\. | 
-| Export | Exports the current palette library to a file\. | 
-| Rename Library | Renames the current palette library\. | 
-| Remove Library | Removes the current palette library\. | 
-| Reset to default | Resets the current library to the default palette\. | 
-| Remove All Libraries | Removes all palette libraries from the libraries list\. This does not delete exported library palettes\. | 
+| Option | Description |
+| --- | --- |
+| List | Displays a list view with name or RGBA values\. |
+| Grid | Displays the palette as a grid of color swatches\. |
+| Preset preview size | Changes the palette swatch size\. |
+| Create New Library | Creates a blank palette library\. |
+| Libraries | Displays a list of imported palette libraries\. |
+| Load Library | Imports a saved palette library\. |
+| Export | Exports the current palette library to a file\. |
+| Rename Library | Renames the current palette library\. |
+| Remove Library | Removes the current palette library\. |
+| Reset to default | Resets the current library to the default palette\. |
+| Remove All Libraries | Removes all palette libraries from the libraries list\. This does not delete exported library palettes\. |

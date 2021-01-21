@@ -15,25 +15,25 @@ To disable the effect, see [Disable Blur](/docs/userguide/rendering/disable/blur
 
 ![\[enablefilterblurnode, enablefilterblur\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-blur-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Blur node to blur the screen for your game.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-blur-node-example.png)
 
 ## Inputs {#enable-blur-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Amount | Number | Amount of blurring\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Amount | Number | Amount of blurring\. |
 
 ## Outputs {#enable-blur-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

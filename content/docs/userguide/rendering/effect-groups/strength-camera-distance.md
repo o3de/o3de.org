@@ -21,8 +21,8 @@ Example opening XML tag using the **fadeDistance** attribute:
 
 You need to use a script to apply this effect group at the specified position for each frame\. For more information, see the **[Apply Effect Group At Position](/docs/userguide/apply-effect-group-at-position-node.md)** node\.
 
-**Example**  
-The following script uses the **Get World Translation** to send the entity's position to the **Apply Effect Group At Position** node; this node then applies the effect group to that specified position\.  
+**Example**
+The following script uses the **Get World Translation** to send the entity's position to the **Apply Effect Group At Position** node; this node then applies the effect group to that specified position\.
 
 ![\[Use the Apply Effect Group At Position node in the Script Canvas editor.\]](/images/userguide/example-script-apply-effect-group-at-position.png)
 
@@ -34,5 +34,5 @@ To enable an effect group using Lua, set the position at which to apply the effe
 local pos = TransformBus.Event.GetWorldTranslation(EntityId) PostEffects.ApplyEffectGroupAtPosition("example.xml", pos)
 ```
 
-**Note**  
+**Note**
 This function must be called once per frame while the effect group is enabled\. If this function is called multiple times in a single frame, the effect strength increases each time, as if each call applies the effect from a different entity\.

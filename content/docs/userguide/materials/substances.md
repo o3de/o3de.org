@@ -36,7 +36,7 @@ When using Allegorithmic's Substance Designer to export textures to Lumberyard, 
 
 1. In the **File** menu, click **Export Textures**\.
 
-1. Click the **Configuration** tab, and then under **Presets**, select **Amazon Lumberyard**\. 
+1. Click the **Configuration** tab, and then under **Presets**, select **Amazon Lumberyard**\.
 
 1. Click the **Export** tab\. In the file type drop\-down menu \(upper right corner\), select one of the following file types:
    + `.tif`
@@ -64,21 +64,21 @@ Here are some things to keep in mind when working with Substances in Substance E
 1. To update imported `.sbsar` files, click **Edit**, **Reimport Substance**\. Current changes will not be overwritten\.
 
 1. To remove a substance, click **File**, `Delete Substance`\.
-**Note**  
-This permanently removes the substance and all associated assets from the `.sbsar` project, which cannot be recovered using the Windows Recycle Bin\. 
+**Note**
+This permanently removes the substance and all associated assets from the `.sbsar` project, which cannot be recovered using the Windows Recycle Bin\.
 
 ## Console Variables for Substances {#mat-substances-cvars}
 
 To control how Substances are handled by CPU and memory, you can set the following CVars in your `system_windows_pc.cfg` file or `editor.cfg` file\.
 
-**`substance_engineLibrary`**  
-Enables substances to run on the GPU instead of the CPU, permitting the output of higher resolution textures\. Specifies the engine to load for substance plugin\. Possible values are PC: \[`sse2`\|`d3d10`\|`d3d11`\]\. The default is `sse2`, which specifies CPU\. 
+**`substance_engineLibrary`**
+Enables substances to run on the GPU instead of the CPU, permitting the output of higher resolution textures\. Specifies the engine to load for substance plugin\. Possible values are PC: \[`sse2`\|`d3d10`\|`d3d11`\]\. The default is `sse2`, which specifies CPU\.
 
-**`substance_commitRenderOptions`**  
-Applies CPU and memory changes immediately, rather than waiting for the next render call\. 
+**`substance_commitRenderOptions`**
+Applies CPU and memory changes immediately, rather than waiting for the next render call\.
 
-**`substance_coreCount`**  
-Sets how many CPU cores are used for Substance rendering\. A value of `32` specifies all cores\. This setting is relevant only when using CPU based engines\. 
+**`substance_coreCount`**
+Sets how many CPU cores are used for Substance rendering\. A value of `32` specifies all cores\. This setting is relevant only when using CPU based engines\.
 
-**`substance_memoryBudget`**  
-Sets, in megabytes, the amount of memory used for Substance rendering\. The default is 512\. 
+**`substance_memoryBudget`**
+Sets, in megabytes, the amount of memory used for Substance rendering\. The default is 512\.

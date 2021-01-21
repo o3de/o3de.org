@@ -7,8 +7,8 @@ title: Navigation Area
 
 The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System\. You use this component with the **[Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)** component, which defines the volume of the navigation area\.
 
-**Note**  
-When you add a **Navigation Area** component, you must also add the **Polygon Prism Shape** component\. 
+**Note**
+When you add a **Navigation Area** component, you must also add the **Polygon Prism Shape** component\.
 
 For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)\.
 
@@ -22,7 +22,7 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
 1. In the Viewport, near where you want to create your navigation area, right\-click and choose **Create entity**\.
 
-1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it\.  
+1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it\.
 ![\[Navigation Area component properties.\]](/images/userguide/component/component-nav-area-1.png)
 
 1. In the **Navigation Area** component, next to **Agent Types**, click **\+**\.
@@ -31,7 +31,7 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
 1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary\.
 
-   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.  
+   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.
 ![\[Enable Show Navigation Areas and View Agent Type in Lumberyard Editor.\]](/images/userguide/component/component-nav-area-1.1.png)
 
 **To view the generated Navigation Area mesh** {#render-navigation-mesh}
@@ -40,7 +40,7 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
 1. In Lumberyard Editor, choose **Game**, **AI**, **View Agent Type**, and then enable the agent type that you want to display\.
 
-1. In Lumberyard Editor, choose **Game**, **AI**, **Continuous Update** to show changes in the navigation mesh as you modify the terrain or area\.  
+1. In Lumberyard Editor, choose **Game**, **AI**, **Continuous Update** to show changes in the navigation mesh as you modify the terrain or area\.
 ![\[Enable Show Navigation Areas, View Agent Type, and Continuous Update in Lumberyard Editor.\]](/images/userguide/component/component-nav-area-gameai-menu-items.png)
 
    A navigation mesh shows traversable areas in blue\.
@@ -56,17 +56,17 @@ You can use a **[Navigation Seed](/docs/userguide/components/nav-seed.md)** comp
 
 The **Navigation Area** component has the following properties: {#component-nav-area-properties-agent-types}
 
-**Agent Types**  
-Specifies the types of AI that can traverse this navigation area\. These agent types are defined in `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml`\. To specify multiple agent types for this area, click the **\+** icon\.   
-You use this property to restrict which agents can navigate within that area\. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles\.  
+**Agent Types**
+Specifies the types of AI that can traverse this navigation area\. These agent types are defined in `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml`\. To specify multiple agent types for this area, click the **\+** icon\.
+You use this property to restrict which agents can navigate within that area\. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles\.
 To define an agent type on your AI, see the [Navigation](/docs/userguide/components/navigation.md) component\.
 
-**Exclusion**  
+**Exclusion**
 When selected, creates a subtractive navigation area\. This creates a cutout within an existing navigation mesh\. For more information, see [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)\.
 
 ## Navigating Around Static Objects {#component-nav-area-static-entities}
 
-When Lumberyard creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\. 
+When Lumberyard creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\.
 
 **To mark an entity as static**
 
@@ -108,19 +108,19 @@ The following example shows a navigation mesh \(1\) and the same navigation mesh
 
 The navigation system builds the navigation mesh based on all the static physics colliders provided by the physics system, including terrain\. By default, both the CryPhysics and PhysX systems \(`AZ::Physics`\) are supported\. This can be changed with the **ai\_NavPhysicsMode** cvar:
 
-**ai\_NavPhysicsMode**  
-Navigation physics integration mode which determines where collider and terrain data used in navigation mesh calculations comes from\.  
-Default: `1`  
-`0` - CryPhysics only  
-`1` - CryPhysics and AZ::Physics  
+**ai\_NavPhysicsMode**
+Navigation physics integration mode which determines where collider and terrain data used in navigation mesh calculations comes from\.
+Default: `1`
+`0` - CryPhysics only
+`1` - CryPhysics and AZ::Physics
 `2` - AZ::Physics only
 
-**Physics integration details**  
+**Physics integration details**
 When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer issues a `WorldRequestBus::Overlap` static query to gather colliders within a bounding box\. Shape geometry is returned from the new `AZ::Shape::GetGeometry()` method\. PhysX colliders for terrain, shapes, and meshes will provide triangle data in an operation that acquires a PhysX scene read lock while retrieving geometry data\.
 
 ## NavigationAreaRequestBus EBus Interface {#component-nav-area-ebus}
 
-Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game\. 
+Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)
 
@@ -128,14 +128,14 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 You can use the [PolygonPrismShapeComponentRequestBus](/docs/userguide/components/polygon-prism#component-polygon-prism-ebus-request) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 `AZ::ConstPolygonPrismPtr`
 
-**Scriptable**  
+**Scriptable**
 No
 
-**Note**  
+**Note**
 The Navigation Area component depends on the Polygon Prism component, which also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
