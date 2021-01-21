@@ -5,9 +5,9 @@ title: Using the Cloud Gem Framework Command Line
 ---
 # Using the Cloud Gem Framework Command Line {#cloud-canvas-command-line-cgf}
 
-You can use the `lmbr_aws cloud-gem-framework` command line for working with Cloud Canvas [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md), the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md), and the [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md)\. 
+You can use the `lmbr_aws cloud-gem-framework` command line for working with Cloud Canvas [Cloud Gems](/docs/userguide/gems/cloud-canvas/s-intro.md), the [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md), and the [Cloud Gem Framework Service API](/docs/userguide/gems/cloud-canvas/cgf-service-api.md)\.
 
-**Note**  
+**Note**
 For general information on the `lmbr_aws` command line tool, including common syntax, configuration, and arguments, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\.
 
 ## Commands {#cloud-canvas-command-line-cgf-commands}
@@ -16,7 +16,7 @@ Following are details of the `lmbr_aws cloud-gem-framework` commands\.
 
 ### add\-service\-api\-resources {#cloud-canvas-command-line-cgf-add-service-api-resources}
 
-Adds the resources to implement a `swagger.json` file\-based service API to a resource group\. 
+Adds the resources to implement a `swagger.json` file\-based service API to a resource group\.
 
 The `add-service-api-resources` command accepts the following arguments:
 + `--resource-group {resource-group-name}` or `-r {resource-group-name}`
@@ -50,25 +50,25 @@ The `generate-service-api-code` command accepts the following arguments:
 
   Optional\. Adds the generated `.h` and `.cpp` code files to the `.waf_files` file that is in the gem's `\dev\Gems\<gem name>\Code` subdirectory\. The `.waf_files` file is a manifest file for the Waf build of the gem\.
 
-  The following sample `.waf_files` file is for a gem called `MyCloudGem`\. Its full path is `\dev\Gems\MyCloudGem\Code\mycloudgem.waf_files`\. 
+  The following sample `.waf_files` file is for a gem called `MyCloudGem`\. Its full path is `\dev\Gems\MyCloudGem\Code\mycloudgem.waf_files`\.
 
   ```
   {
       "auto": {
           "Include": [
-              "Include/MyCloudGem/MyCloudGemBus.h", 
+              "Include/MyCloudGem/MyCloudGemBus.h",
               "AWS/ServiceApi/MyCloudGemClientComponent.h"
-          ], 
+          ],
           "Source": [
-              "Source/MyCloudGemModule.cpp", 
-              "Source/MyCloudGemSystemComponent.cpp", 
-              "Source/MyCloudGemSystemComponent.h", 
+              "Source/MyCloudGemModule.cpp",
+              "Source/MyCloudGemSystemComponent.cpp",
+              "Source/MyCloudGemSystemComponent.h",
               "AWS/ServiceApi/MyCloudGemClientComponent.cpp"
           ]
-      }, 
+      },
       "none": {
           "Source": [
-              "Source/StdAfx.cpp", 
+              "Source/StdAfx.cpp",
               "Source/StdAfx.h"
           ]
       }
@@ -79,7 +79,7 @@ For more information about the `generate-service-api-code` command, see [Generat
 
 ### open\-cloud\-gem\-portal, open\-portal, cloud\-gem\-portal {#cloud-canvas-command-line-cgf-open-cloud-gem-portal}
 
-Generate a presigned URL and open the Cloud Gem Portal in the default browser using the presigned URL\. 
+Generate a presigned URL and open the Cloud Gem Portal in the default browser using the presigned URL\.
 
 The `open-cloud-gem-portal` command and its equivalents accept the following arguments:
 + `--deployment {deployment-name}` or `-d {deployment-name}`
@@ -96,7 +96,7 @@ The `open-cloud-gem-portal` command and its equivalents accept the following arg
   Optional\. Displays the newly generated AES passphrase and initialization vector of the encryption object that the Cloud Gem Portal uses for decrypting data that Lumberyard sends\.
 + `--role {role-name}`
 
-   Specifies an IAM role to be assumed by the Cloud Gem Portal website\. Can be `ProjectOwner`, `DeploymentOwner`, or any other project or deployment access role\. The credentials taken from the `~/.aws/credentials` file must be able to assume the role that is specified\. 
+   Specifies an IAM role to be assumed by the Cloud Gem Portal website\. Can be `ProjectOwner`, `DeploymentOwner`, or any other project or deployment access role\. The credentials taken from the `~/.aws/credentials` file must be able to assume the role that is specified\.
 
 ### remove\-service\-api\-resources {#cloud-canvas-command-line-cgf-remove-service-api-resources}
 

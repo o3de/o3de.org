@@ -12,10 +12,10 @@ Updates the AI agent's cover stance based on the maximum height at which its cur
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-adjustcoverstance-parameters}
 
-**duration**  
+**duration**
 \(Optional\) Length of time \(in seconds\) the node will execute\. Set to **continuous** to specify an unlimited time span\.
 
-**variation**  
+**variation**
 \(Optional\) Maximum additional time \(in seconds\) that may be randomly added to the value of `duration`, in the range \[0, `variation`\]\. Setting this value causes the wait time to have random variations between different executions of the node\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-adjustcoverstance-success}
@@ -34,15 +34,15 @@ Sets a location for the AI agent to aim at, and then clears the location when th
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-aim-parameters}
 
-**at**  
-Location to aim at\. Allowed values include:   
+**at**
+Location to aim at\. Allowed values include:
 + RefPoint
 + Target
 
-**angleThreshold**  
+**angleThreshold**
 \(Optional\) Tolerance angle for aim accuracy\.
 
-**durationOnceWithinThreshold**  
+**durationOnceWithinThreshold**
 \(Optional\) Amount of time \(in seconds\) to continue aiming\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-aim-success}
@@ -61,14 +61,14 @@ Updates the aim direction of the AI agent when using a mounted machine gun\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-parameters}
 
-**maxAngleRange**  
+**maxAngleRange**
 \(Optional\) Maximum angle to deviate from the original direction\.
 
-**minSecondsBeweenUpdates**  
+**minSecondsBeweenUpdates**
 \(Optional\) Minimum amount of delay \(in seconds\) between updates\.
 
-**useReferencePointForInitialDirectionAndPivotPosition**  
-Boolean\. 
+**useReferencePointForInitialDirectionAndPivotPosition**
+Boolean\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-aimaroundwhileusingamachinggun-success}
 
@@ -86,16 +86,16 @@ Sets the AI agent to play an animation\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-animate-parameters}
 
-**name**  
+**name**
 Animation to be played\.
 
-**urgent**  
+**urgent**
 \(Optional\) Boolean indicating whether or not to add the urgent flag to the animation\.
 
-**loop**  
+**loop**
 \(Optional\) Boolean indicating whether or not to add the loop flag to the animation\.
 
-**setBodyDirectionTowardsAttentionTarget**  
+**setBodyDirectionTowardsAttentionTarget**
 \(Optional\) Boolean indicating whether or not to change the AI's body target direction to face the attention target\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-animate-success}
@@ -114,7 +114,7 @@ Adds an animation tag to the execution of a child node and clears it at the end\
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-animationtagwrapper-parameters}
 
-**name**  
+**name**
 Animation tag to be set\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-animationtagwrapper-success}
@@ -135,7 +135,7 @@ Checks whether or not a specified condition is satisfied\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-assertcondition-parameters}
 
-**condition**  
+**condition**
 Condition to be checked\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-assertcondition-success}
@@ -154,7 +154,7 @@ Executes a Lua script that returns true/false and translates the return value to
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-assertlua-parameters}
 
-**code**  
+**code**
 Lua script to be executed\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-assertlua-success}
@@ -169,20 +169,20 @@ The node SUCCEEDS if the Lua script returns a value of true, otherwise it FAILS\
 
 ## AssertTime {#ai-scripting-mbt-nodes-ai-asserttime}
 
-Checks whether or not a time condition is satisfied\. 
+Checks whether or not a time condition is satisfied\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-asserttime-parameters}
 
-**since**  
+**since**
 Name of the time stamp to check for the condition\.
 
-**isMoreThan**  
+**isMoreThan**
 Condition statement used to test whether the time stamp is greater than a specified value\. Cannot be used with the parameter `isLessThan`\.
 
-**isLessThan**  
+**isLessThan**
 Condition statement used to test whether the time stamp is less than a specified value\. Cannot be used with the parameter `isMoreThan`\.
 
-**orNeverBeenSet**  
+**orNeverBeenSet**
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-asserttime-success}
@@ -201,16 +201,16 @@ Displays a message in a speech bubble above the AI agent\. See [AI Bubbles Syste
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-bubble-parameters}
 
-**message**  
+**message**
 Message string to be shown in the speech bubble\.
 
-**duration**  
+**duration**
 Number of seconds to display the message\. Default is 0\.0\.
 
-**balloon**  
+**balloon**
 Boolean indicating whether or not to display the message in a balloon above the AI agent\. Default is true\.
 
-**log**  
+**log**
 Boolean indicating whether or not to write the message to the general purpose log\. Default is true\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-bubble-success}
@@ -229,8 +229,8 @@ Checks whether or not the AI agent's attention target can be reached\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-checkiftargetcanbereached-parameters}
 
-**mode**  
-Target to check for\. Allowed values include:   
+**mode**
+Target to check for\. Allowed values include:
 + UseLiveTarget
 + UseAttentionTarget
 
@@ -264,37 +264,37 @@ The node always SUCCEEDS\.
 
 ## Communicate {#ai-scripting-mbt-nodes-ai-communicate}
 
-Sends a request to the communication manager to play one of the AI agent's communications\.  
+Sends a request to the communication manager to play one of the AI agent's communications\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-communicate-parameters}
 
-**name**  
+**name**
 The name of the communication to be played\.
 
-**channel**  
+**channel**
 The channel on which the communication is to be set\.
 
-**waitUntilFinished**  
+**waitUntilFinished**
 \(Optional\) Specifies if the execution should wait for the end of the communication before finishing\.
 
-**timeout**  
+**timeout**
 \(Optional\) The threshold defining the maximum amount of seconds the node will wait\.
 
-**expiry**  
+**expiry**
 \(Optional\) The amount of seconds the communication can wait for the channel to be clear\.
 
-**minSilence**  
+**minSilence**
 \(Optional\) The amount of seconds the channel will be silenced after the communication is played\.
 
-**ignoreSound**  
+**ignoreSound**
 \(Optional\) Sets the sound component of the communication to be ignored\.
 
-**ignoreAnim**  
+**ignoreAnim**
 \(Optional\) Sets the animation component of the communication to be ignored\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-communicate-success}
 
-If the node is set to wait, the node SUCCEEDS when the communication is complete\. Otherwise, it SUCCEEDS once the timeout elapses\. 
+If the node is set to wait, the node SUCCEEDS when the communication is complete\. Otherwise, it SUCCEEDS once the timeout elapses\.
 
 ### Example {#ai-scripting-mbt-nodes-ai-communicate-example}
 
@@ -308,7 +308,7 @@ Executes a Lua script\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-executelua-parameters}
 
-**code**  
+**code**
 Script to be executed\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-executelua-success}
@@ -327,10 +327,10 @@ Makes execution of a child node conditional on entering the AI agent in a group 
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-groupscope-parameters}
 
-**name**  
+**name**
 Name of the group scope to enter\.
 
-**allowedConcurrentUsers**  
+**allowedConcurrentUsers**
 \(Optional\) Maximum number of simultaneous users allowed in the specified group scope\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-groupscope-success}
@@ -351,7 +351,7 @@ Executes a child node if a specified condition is satisfied\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-ifcondition-parameters}
 
-**condition**  
+**condition**
 Condition statement to be checked\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-ifcondition-success}
@@ -372,16 +372,16 @@ Executes a child node if a time condition is satisfied\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-iftime-parameters}
 
-**since**  
+**since**
 Name of the time stamp to check for the condition\.
 
-**isMoreThan**  
+**isMoreThan**
 Condition statement test whether the time stamp is greater than a specified value\. Cannot be used with the parameter `isLessThan`\.
 
-**isLessThan**  
+**isLessThan**
 Condition statement test whether the time stamp is less than a specified value\. Cannot be used with the parameter `isMoreThan`\.
 
-**orNeverBeenSet**  
+**orNeverBeenSet**
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-iftime-success}
@@ -402,7 +402,7 @@ Adds a message to the AI agent's personal log\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-log-parameters}
 
-**message**  
+**message**
 Message to be logged\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-log-success}
@@ -421,8 +421,8 @@ Adds a location for the AI agent to look at, and clears it when the node stops e
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-look-parameters}
 
-**at**  
-Location to look at\. Allowed values are:   
+**at**
+Location to look at\. Allowed values are:
 + ClosestGroupMember
 + RefPoint
 + Target
@@ -443,7 +443,7 @@ Executes a child node only if the result from running a Lua script is true\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-luagate-parameters}
 
-**code**  
+**code**
 Lua script to be executed\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-luagate-success}
@@ -464,10 +464,10 @@ Runs a Lua script before and/or after the execution of a child node\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-luawrapper-parameters}
 
-**onEnter**  
+**onEnter**
 \(Optional\) Script to be executed at the start\.
 
-**onExit**  
+**onExit**
 \(Optional\) Script to be executed at the end\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-luawrapper-success}
@@ -488,7 +488,7 @@ Continuously checks the state of a specified condition\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-monitorcondition-parameters}
 
-**condition**  
+**condition**
 Specifies the condition to be checked\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-monitorcondition-success}
@@ -507,62 +507,62 @@ Moves the AI agent from its current position to a specified destination\. If the
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-move-parameters}
 
-**speed**  
-Speed of movement\. Allowed values include:  
+**speed**
+Speed of movement\. Allowed values include:
 + Walk
 + Run
 + Sprint
 
-**stance**  
-Body stance while moving\. Allowed values include:   
+**stance**
+Body stance while moving\. Allowed values include:
 + Relaxed
 + Alerted
 + Stand \(default\)
 
-**bodyOrientation **  
-Direction the AI agents body should face during the move\. Allowed values include:   
+**bodyOrientation **
+Direction the AI agents body should face during the move\. Allowed values include:
 + FullyTowardsMovementDirection
 + FullyTowardsAimOrLook
 + HalfwayTowardsAimOrLook \(default\)
 
-**moveToCover**  
+**moveToCover**
 Boolean indicating whether or not the AI agent is moving into cover\. Default is false\.
 
-**turnTowardsMovementDirectionBeforeMovingx**  
+**turnTowardsMovementDirectionBeforeMovingx**
 Boolean indicating whether or not the AI agent should first turn to the direction of movement before actually moving\. Default is false\.
 
-**strafe**  
+**strafe**
 Boolean indicating whether or not the AI agent is allowed to strafe\. Default is false\.
 
-**glanceInMovementDirection**  
-Boolean indicating whether or not the AI agent can glance in the direction of movement\. If false, the AI agent will always look at its look\-at target\. Default is false\. 
+**glanceInMovementDirection**
+Boolean indicating whether or not the AI agent can glance in the direction of movement\. If false, the AI agent will always look at its look\-at target\. Default is false\.
 
-**to**  
-Movement destination\. Allowed values include:  
+**to**
+Movement destination\. Allowed values include:
 + Target \- Current attention target\.
 + Cover \- Current cover position\.
 + RefPoint \- Current reference position\.
 + LastOp \- Position of the last successful position\-related operation\.
 
-**stopWithinDistance**  
-Distance from the target that the AI agent can stop moving\. Default is 0\.0\. 
+**stopWithinDistance**
+Distance from the target that the AI agent can stop moving\. Default is 0\.0\.
 
-**stopDistanceVariation**  
+**stopDistanceVariation**
 Maximum additional distance that may be randomly added to the value of `stopDistanceVariation`, in the range \[0, `stopDistanceVariation`\]\. Setting this value causes the stop distance to vary randomly between different executions of the node\. Default is 0\.0\.
 
-**fireMode**  
+**fireMode**
 Firing style while moving\. Allowed values are listed for the [Shoot ](#ai-scripting-mbt-nodes-ai-shoot) node\.
 
-**avoidDangers**  
-Boolean indicating whether or not the AI agent should avoid dangers while moving\. Default is true\. 
+**avoidDangers**
+Boolean indicating whether or not the AI agent should avoid dangers while moving\. Default is true\.
 
-**avoidGroupMates**  
-Boolean indicating whether or not the AI agent should avoid group mates while moving\. Default is true\. 
+**avoidGroupMates**
+Boolean indicating whether or not the AI agent should avoid group mates while moving\. Default is true\.
 
-**considerActorsAsPathObstacles**  
-Boolean indicating whether or not an AI agent's pathfinder should avoid actors on the path\. Default is false\. 
+**considerActorsAsPathObstacles**
+Boolean indicating whether or not an AI agent's pathfinder should avoid actors on the path\. Default is false\.
 
-**lengthToTrimFromThePathEnd**  
+**lengthToTrimFromThePathEnd**
 Distance that should be trimmed from a pathfinder path\. Use positive values to trim from the path end , or negative values to trim from the path start\. Default is 0\.0\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-move-success}
@@ -577,7 +577,7 @@ The node SUCCEEDS if the destination is reached\. The node FAILS if the destinat
 
 ## Priority & Case {#ai-scripting-mbt-nodes-ai-priority}
 
-Prioritizes to selects from a set of possible child nodes to execute\. Within a `<Priority>` node, each child node is listed inside a `<Case>` node, which defines a condition statement\. A child node is selected and executed based on \(1\) the first child to have its condition met, and \(2\) in the case of ties, the order the child nodes are listed in\. All but the last child must have a condition statement; the last child listed is the default case, so it's condition must always be true\. 
+Prioritizes to selects from a set of possible child nodes to execute\. Within a `<Priority>` node, each child node is listed inside a `<Case>` node, which defines a condition statement\. A child node is selected and executed based on \(1\) the first child to have its condition met, and \(2\) in the case of ties, the order the child nodes are listed in\. All but the last child must have a condition statement; the last child listed is the default case, so it's condition must always be true\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-priority-parameters}
 
@@ -585,7 +585,7 @@ The `<Priority>` node has no parameters\.
 
 The `<Case>` node has the following parameters:
 
-**condition**  
+**condition**
 Condition statement used to prioritize a child node\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-priority-success}
@@ -611,7 +611,7 @@ Lower's the AI agent's perception of the target's threat\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel-parameters}
 
-**to**  
+**to**
 
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-pulldownthreatlevel-success}
@@ -626,15 +626,15 @@ The node always SUCCEEDS\.
 
 ## QueryTPS {#ai-scripting-mbt-nodes-ai-querytps}
 
-Performs a TPS query to find a tactical position for the AI agent, and waits for a result\. See [AI Tactical Point System](/docs/userguide/ai/tactical-point-system.md)\. 
+Performs a TPS query to find a tactical position for the AI agent, and waits for a result\. See [AI Tactical Point System](/docs/userguide/ai/tactical-point-system.md)\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-querytps-parameters}
 
-**name**  
+**name**
 Name of the TPS query to run\.
 
-**register**  
-Location to store the result of the TPS query\. Allowed values include:   
+**register**
+Location to store the result of the TPS query\. Allowed values include:
 + RefPoint
 + Cover \(default\)
 
@@ -654,7 +654,7 @@ Executes a child node \(or not\) based on random chance\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-randomgate-parameters}
 
-**opensWithChance**  
+**opensWithChance**
 Probability to use to determine whether the child node will be executed\. Allowed values include floats 0\.0 to 1\.0\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-randomgate-success}
@@ -675,7 +675,7 @@ Sends a signal, destined for a state machine node on the behavior tree, with the
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-sendtransitionsignal-parameters}
 
-**name**  
+**name**
 Name of the signal to be sent\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-sendtransitionsignal-success}
@@ -694,7 +694,7 @@ Sets the AI agent's alertness level\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-setalertness-parameters}
 
-**value**  
+**value**
 Alertness level\. Allowed values include integers 0 to 2\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-setalertness-success}
@@ -704,7 +704,7 @@ The node always SUCCEEDS\.
 ### Example {#ai-scripting-mbt-nodes-ai-setalertness-example}
 
 ```
-<SetAlertness value="1" />            
+<SetAlertness value="1" />
 ```
 
 ## Shoot {#ai-scripting-mbt-nodes-ai-shoot}
@@ -713,17 +713,17 @@ Sets the AI agent to shoot at a target or location\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-shoot-parameters}
 
-**duration**  
-Length of time \(in seconds\) the AI agent should continue shooting\. 
+**duration**
+Length of time \(in seconds\) the AI agent should continue shooting\.
 
-**at**  
-Location to shoot at\. Allowed values include:   
+**at**
+Location to shoot at\. Allowed values include:
 + AttentionTarget
 + ReferencePoint
 + LocalSpacePosition
 
-**fireMode**  
-Firing style\. Allowed values include:  
+**fireMode**
+Firing style\. Allowed values include:
 + Off \- Do not fire \(default\)\.
 + Burst \- Fire in bursts at living targets only\.
 + Continuous \- Fire continuously at living targets only\.
@@ -738,26 +738,26 @@ Firing style\. Allowed values include:
 + BurstDrawFire \- Fire in bursts in an attempt to draw enemy fire\.
 + MeleeForced \- Melee without distance restrictions\.
 + BurstSwipe \- Fire in burst aiming for a head shot\.
-+ AimSweep \- Maintain aim on the target but don't fire\. 
++ AimSweep \- Maintain aim on the target but don't fire\.
 + BurstOnce \- Fire a single burst\.
 
-**stance**  
-Body stance while shooting\. Allowed values include:   
+**stance**
+Body stance while shooting\. Allowed values include:
 + Relaxed
 + Alerted
 + Crouch
 + Stand
 
-**position**  
+**position**
 \(Required if the target is a local space position\) Local space position to be used as the target\.
 
-**stanceToUseIfSlopeIsTooSteep**  
-\(Optional\) Alternative stance style if the slope exceeds a specified steepness\. Allowed values are the same as for `stance`\. 
+**stanceToUseIfSlopeIsTooSteep**
+\(Optional\) Alternative stance style if the slope exceeds a specified steepness\. Allowed values are the same as for `stance`\.
 
-**allowedSlopeNormalDeviationFromUpInDegrees**  
+**allowedSlopeNormalDeviationFromUpInDegrees**
 \(Optional\) Maximum allowed steepness \(in degrees of inclination above horizontal\) to set the primary stance\. At positions that exceed this slope, the alternative stance is used\.
 
-**aimObstructedTimeout**  
+**aimObstructedTimeout**
 \(Optional\) Length of time \(in seconds\) the AI agent's aim can be obstructed before the node will fail\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-shoot-success}
@@ -776,13 +776,13 @@ Sets the AI agent to shoot at the target from cover and adjusts its stance accor
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-shootfromcover-parameters}
 
-**duration**  
+**duration**
 Length of time \(in seconds\) the node should execute\.
 
-**fireMode**  
+**fireMode**
 Firing style\. Allowed values are listed for the [Shoot ](#ai-scripting-mbt-nodes-ai-shoot) node\.
 
-**aimObstructedTimeout**  
+**aimObstructedTimeout**
 \(Optional\) Length of time \(in seconds\) the AI agent's aim can be obstructed before the node will fail\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-shootfromcover-success}
@@ -801,10 +801,10 @@ Sends a signal to the AI system\. See [Signals](/docs/userguide/ai/scripting/sig
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-signal-parameters}
 
-**name**  
+**name**
 Name of the signal to be sent\.
 
-**filter**  
+**filter**
 \(Optional\) Signal filter to use when sending the signal, which determines which AI agents will receive it\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-signal-success}
@@ -819,14 +819,14 @@ The node always SUCCEEDS\.
 
 ## SmartObjectStatesWrapper {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper}
 
-Sets the states of certain smart objects immediately before and/or after the execution of a child node\. 
+Sets the states of certain smart objects immediately before and/or after the execution of a child node\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-parameters}
 
-**onEnter**  
+**onEnter**
 \(Optional\) Smart object states to set at the start\.
 
-**onExit**  
+**onExit**
 \(Optional\) Smart object states to set at the end\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-smartobjectstateswrapper-success}
@@ -847,17 +847,17 @@ Sets the stance of the AI agent\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-stance-parameters}
 
-**name**  
-Primary stance style\. Allowed values include:   
+**name**
+Primary stance style\. Allowed values include:
 + Relaxed
 + Alerted
 + Crouch
 + Stand
 
-**stanceToUseIfSlopeIsTooSteep**  
-\(Optional\) Alternative stance style if the slope exceeds a specified steepness\. Allowed values are the same as for `stance`\. 
+**stanceToUseIfSlopeIsTooSteep**
+\(Optional\) Alternative stance style if the slope exceeds a specified steepness\. Allowed values are the same as for `stance`\.
 
-**allowedSlopeNormalDeviationFromUpInDegrees**  
+**allowedSlopeNormalDeviationFromUpInDegrees**
 \(Optional\) Maximum allowed steepness \(in degrees of inclination above horizontal\) to set the primary stance\. At positions that exceed this slope, the alternative stance is used\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-stance-success}
@@ -872,17 +872,17 @@ The node always SUCCEEDS\.
 
 ## StopMovement {#ai-scripting-mbt-nodes-ai-stopmovement}
 
-Sends a request to the Movement system to stop all movements\. See [Movement System](/docs/userguide/ai/movement.md)\. 
+Sends a request to the Movement system to stop all movements\. See [Movement System](/docs/userguide/ai/movement.md)\.
 
-**Note**  
-This may not immediately stop the AI agent The Movement system may be dependent on animations and physics that dictate a 'natural' stop rather than an immediate cessation of movement\. 
+**Note**
+This may not immediately stop the AI agent The Movement system may be dependent on animations and physics that dictate a 'natural' stop rather than an immediate cessation of movement\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-stopmovement-parameters}
 
-**waitUntilStopped**  
+**waitUntilStopped**
 Boolean indicating whether or not the node should wait for the Movement System to finish processing the request\.
 
-**waitUntilIdleAnimation**  
+**waitUntilIdleAnimation**
 Boolean indicating whether or not the node should wait until the Motion\_Idle animation fragment begins running in Mannequin\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-stopmovement-success}
@@ -919,11 +919,11 @@ Triggers the AI agent to attempt a grenade throw\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-throwgrenade-parameters}
 
-**timeout**  
+**timeout**
 Maximum length of time \(in seconds\) to wait for the grenade to be thrown\.
 
-**type**  
-Grenade type to throw\. Allowed values include:  
+**type**
+Grenade type to throw\. Allowed values include:
 + emp
 + frag
 + smoke
@@ -944,16 +944,16 @@ Executes until a time condition is satisfied\.
 
 ### Parameters {#ai-scripting-mbt-nodes-ai-waituntiltime-parameters}
 
-**since**  
+**since**
 Name of the time stamp to check for the condition\.
 
-**isMoreThan**  
+**isMoreThan**
 Condition statement used to test whether the time stamp is greater than a specified value\. Cannot be used with the parameter `isLessThan`\.
 
-**isLessThan**  
+**isLessThan**
 Condition statement used to test whether the time stamp is less than a specified value\. Cannot be used with the parameter `isMoreThan`\.
 
-**succeedIfNeverBeenSet**  
+**succeedIfNeverBeenSet**
 \(Optional\) Boolean indicating whether or not to set the node to succeed if the time stamp was never set\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-ai-waituntiltime-success}

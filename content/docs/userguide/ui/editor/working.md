@@ -38,7 +38,7 @@ You can add or delete components in the [UI Editor](/docs/userguide/ui/editor/us
 
 ## Referencing UI Elements {#ui-editor-referencing-ui-elements}
 
-You can specify a UI element for some properties on components\. For example, you can specify UI elements for **Lua Script** properties\. 
+You can specify a UI element for some properties on components\. For example, you can specify UI elements for **Lua Script** properties\.
 
 ![\[Properties in a Lua Script component.\]](/images/userguide/game_ui_editor/ui-editor-referencing-ui-elements-1.png)
 
@@ -49,7 +49,7 @@ You can specify elements as properties either by dragging the element into the p
 
 **To use the pick object button to reference a UI element**
 
-1. In the **Properties** panel, next to the property to specify an element for, click the pick object button\.  
+1. In the **Properties** panel, next to the property to specify an element for, click the pick object button\.
 ![\[Properties in a Lua Script component.\]](/images/userguide/game_ui_editor/ui-editor-referencing-ui-elements-2.png)
 
 1. Select the element that you want from either the viewport or the **Hierarchy** panel\.
@@ -87,6 +87,6 @@ You can also use the context menu to act on multiple components at once\.
 
 1. Choose an action\.
 
-**Note**  
-The **Element** and **Transform2D** components are automatically added to a UI element and can't be removed from the component list\. 
-Some actions are disabled, depending on the context\. For example, you can't paste a component if you haven't copied one\. 
+**Note**
+The **Element** and **Transform2D** components are automatically added to a UI element and can't be removed from the component list\.
+Some actions are disabled, depending on the context\. For example, you can't paste a component if you haven't copied one\.

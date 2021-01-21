@@ -16,10 +16,10 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 
 1. In the navigation pane, select a resource group\.
 
-1. In the detail window, click **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.  
+1. In the detail window, click **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.
 ![\[Import using ARN\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-using-arn.png)
 
-1. In the **Import using ARN** dialog box, provide the ARN and name of the resource that you are going to import\. Both are required\.  
+1. In the **Import using ARN** dialog box, provide the ARN and name of the resource that you are going to import\. Both are required\.
 ![\[Provide the resource name and ARN\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-using-arn-dialog-box.png)
 
    After you have provided both items of information, the **Import** button is enabled\.
@@ -32,26 +32,26 @@ In Lumberyard Editor, you can import a resource by specifying an [Amazon Resourc
 
 1. In the navigation pane, select a resource group\.
 
-1. In the detail window, choose **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.  
+1. In the detail window, choose **Import resource**, **Import using ARN**\. You can also open the context \(right\-click\) menu for the resource in the navigation pane and choose **Import resource**, **Import using ARN**\.
 ![\[Import from list\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-from-list-dialog-box.png)
 
-1. In the **Import from list** dialog box, choose the AWS Region of the resource for **Region**\. The default value is the region of the project stack if it exists\. Resources start loading in the list as soon as you choose a region that has importable resources\.  
+1. In the **Import from list** dialog box, choose the AWS Region of the resource for **Region**\. The default value is the region of the project stack if it exists\. Resources start loading in the list as soon as you choose a region that has importable resources\.
 ![\[Choose AWS Region\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-region-selector.png)
 
-1. You can use the AWS service selector to filter the resources by service, and then use the **Search** box to filter resources by name\.  
+1. You can use the AWS service selector to filter the resources by service, and then use the **Search** box to filter resources by name\.
 ![\[Filter by AWS service and resource name\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-filter-by-name-and-ddb.png)
 
-1. Select the check box to the left of each resource that you want to import\.  
+1. Select the check box to the left of each resource that you want to import\.
 ![\[Choose the resources to import\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-choose-resources.png)
 
 1.  **Configure**\.
 
 1. In the **Configuration** dialog box, provide a reference name for each resource, or accept the default\. The default name is the original name of the resource on AWS\.
 
-1. To delete a selected resource from the list, open the context \(right\-click\) menu for the resource and choose **Delete**\.  
+1. To delete a selected resource from the list, open the context \(right\-click\) menu for the resource and choose **Delete**\.
 ![\[Delete a resource\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-delete-selected-resource.png)
 
-1. When you are ready, click **Import**\. A progress bar displays\. An **Import Error** message informs you of any errors that occur\.  
+1. When you are ready, click **Import**\. A progress bar displays\. An **Import Error** message informs you of any errors that occur\.
 ![\[Import progress\]](/images/userguide/cloud_canvas/cloud-canvas-resource-importer-progress.png)
 
 1. Click **X** to close the **Import from list dialog** box\. The resources that you imported are listed in the details pane of Cloud Canvas Resource Manager\.
@@ -77,14 +77,14 @@ Some of the existing resources that you select might be related to other resourc
 Cloud Canvas uses the following naming conventions for automatically imported resource definitions\.
 
 
-****  
+****
 
-|  Source  |  Naming Convention  |  Example Name of Imported Resource  | 
-| --- | --- | --- | 
-|  DynamoDB table, Lambda function, Amazon SNS topic, Amazon SQS queue  |  <resource\_name> \+ "AutoAdded" \+ <resource\_type> \+ <counter>  |  LambdaFunctionAutoAddedtable0  | 
-|  Lambda function configuration resource??  |  <lambda\_function\_name> \+ "Configuration"  |  LambdaFunctionConfiguration  | 
-|  Lambda function policy resource  |  <lambda\_function\_name> \+ "Permission"  |  LambdaFunctionPermission  | 
-|  DynamoDB table Lambda function event source  |  <DynamoDB\_table\_name> \+ "EventSource"  |  DynamoTableEventSource  | 
+|  Source  |  Naming Convention  |  Example Name of Imported Resource  |
+| --- | --- | --- |
+|  DynamoDB table, Lambda function, Amazon SNS topic, Amazon SQS queue  |  <resource\_name> \+ "AutoAdded" \+ <resource\_type> \+ <counter>  |  LambdaFunctionAutoAddedtable0  |
+|  Lambda function configuration resource??  |  <lambda\_function\_name> \+ "Configuration"  |  LambdaFunctionConfiguration  |
+|  Lambda function policy resource  |  <lambda\_function\_name> \+ "Permission"  |  LambdaFunctionPermission  |
+|  DynamoDB table Lambda function event source  |  <DynamoDB\_table\_name> \+ "EventSource"  |  DynamoTableEventSource  |
 
 ## Resources Supported for Import {#cloud-canvas-ui-rm-resource-importer-resources-supported-for-import}
 
@@ -110,14 +110,14 @@ For Amazon S3 buckets, Cloud Canvas imports the following resource attributes:
 + `VersioningConfiguration`
 + `WebsiteConfiguration`
 
-For Amazon S3 buckets, Cloud Canvas also imports the following related resources: 
+For Amazon S3 buckets, Cloud Canvas also imports the following related resources:
 + Lambda functions
 + Amazon SQS queues
 + Amazon SNS topics
 
 ### Lambda Functions {#w31aac29c28c25b7c26c13b9}
 
-For Lambda functions, Cloud Canvas imports the following resource attributes: 
+For Lambda functions, Cloud Canvas imports the following resource attributes:
 + `Code`
 + `Description`
 + `Handler`
@@ -127,23 +127,23 @@ For Lambda functions, Cloud Canvas imports the following resource attributes:
 + `Timeout`
 + `VpcConfig`
 
-For Lambda functions, Cloud Canvas also imports the following related resources: 
-+ Lambda function configurations 
-+ Lambda function permissions 
-+ DynamoDB tables 
-+ Event source mappings 
+For Lambda functions, Cloud Canvas also imports the following related resources:
++ Lambda function configurations
++ Lambda function permissions
++ DynamoDB tables
++ Event source mappings
 
 ### Amazon SNS Topics {#w31aac29c28c25b7c26c13c11}
 
-For Amazon SNS topics, Cloud Canvas imports the following resource attributes: 
+For Amazon SNS topics, Cloud Canvas imports the following resource attributes:
 + `DisplayName`
 + `Subscription`
 
-For Amazon SNS topics, Cloud Canvas also imports any Lambda functions that are related resources\. 
+For Amazon SNS topics, Cloud Canvas also imports any Lambda functions that are related resources\.
 
 ### SQS Queues {#w31aac29c28c25b7c26c13c13}
 
-For SQS queues, Cloud Canvas imports the following resource attributes: 
+For SQS queues, Cloud Canvas imports the following resource attributes:
 + `DelaySeconds`
 + `MaximumMessageSize`
 + `MessageRetentionPeriod`

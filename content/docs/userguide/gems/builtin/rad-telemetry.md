@@ -9,7 +9,7 @@ RAD Telemetry 3 is an instrumentation\-based profiling and performance visualiza
 
 The RAD Telemetry Gem provides one example of how to integrate instrumentation\-based profiling middleware\. You could write a gem for your own instrumentation\-based profiler and leverage Lumberyard's existing performance markers\. See the `Profiler.h` file in the `/dev/Code/Framework/AzCore/AzCore/Debug` directory to see how the RAD Telemetry Gem ties into Lumberyard's existing performance markers\.
 
-**Note**  
+**Note**
 If the RAD Telemetry Gem is disabled or you do not have the RAD redistributable files for a particular platform, the performance instrumentation compiles to Lumberyard's performance markers\.
 
 **To enable the RAD Telemetry Gem**
@@ -19,7 +19,7 @@ If the RAD Telemetry Gem is disabled or you do not have the RAD redistributable 
    + `Lib`
    + `Include`
    + `Docs`
-**Note**  
+**Note**
 If you are compiling for case\-sensitive platforms, note that the first letter of each subdirectory listed above is capitalized\.
 When compiling a project with the RAD Telemetry Gem enabled, the static `lib` file for the target platform must exist in the `Gems\RADTelemetry\External\Lib` directory\. The Waf build system then compiles with the `AZ_PROFILE_TELEMETRY` defined globally and links RAD Telemetry libraries for the specified platform\. You can add additional platforms by editing the `rad_telemetry.json` file \(located in the `Gems\RADTelemetry\3rdParty` directory\)\.
 

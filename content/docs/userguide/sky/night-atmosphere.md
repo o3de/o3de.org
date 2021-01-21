@@ -5,7 +5,7 @@ title: Setting Nighttime Atmospheric Effects
 ---
 # Setting Nighttime Atmospheric Effects {#sky-night-atmosphere}
 
-To add dynamic nighttime atmospheric effects, you set various horizon, moon, and star field parameters\. 
+To add dynamic nighttime atmospheric effects, you set various horizon, moon, and star field parameters\.
 
 **To set nighttime atmospheric parameters**
 

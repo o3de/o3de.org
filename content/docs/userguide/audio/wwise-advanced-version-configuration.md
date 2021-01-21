@@ -30,7 +30,7 @@ Lumberyard officially supports Wwise LTX version 2018\.1\.2\.6762 and Wwise full
 
    1. Add a `.json` file that defines the Wwise 2017 SDK for WAF\.
 
-1. After you complete these steps, run Lumberyard Setup Assistant and the `lmbr_waf configure` command to check for errors\. 
+1. After you complete these steps, run Lumberyard Setup Assistant and the `lmbr_waf configure` command to check for errors\.
 
    If no errors occur, build Lumberyard Editor and Engine for Wwise 2017\.
 

@@ -58,7 +58,7 @@ Sets whether the mask is drawn behind the child elements\.
 **Syntax**
 
 ```
-void SetDrawBehind(bool drawMaskVisualBehindChildren) 
+void SetDrawBehind(bool drawMaskVisualBehindChildren)
 ```
 
 ### SetDrawInFront {#lua-scripting-ces-api-ui-uimaskcomponent-uimaskbus-setdrawinfront}

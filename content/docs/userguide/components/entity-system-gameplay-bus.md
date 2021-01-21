@@ -6,15 +6,15 @@ title: Gameplay Bus
 # Gameplay Bus {#component-entity-system-gameplay-bus}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 The gameplay bus alerts gameplay systems that an event has occurred\. You can use the bus to send contextual messages between the visual scripting, scripting, and code parts of your game in a generic and extensible way\.
 
-The gameplay bus passes an `AZStd::any`, a class that uses type erasure to hold any C\+\+ reflected type or any Lua primitive except for tables \(string, number, Boolean, etc\.\)\. It includes mechanisms for type safety to ensure that it returns the same type that it is passed\. In Lua, the type can be inspected if it has been exposed to the behavior context through the `typeid()` function, which uses the `AZ_RTTI` system\. 
+The gameplay bus passes an `AZStd::any`, a class that uses type erasure to hold any C\+\+ reflected type or any Lua primitive except for tables \(string, number, Boolean, etc\.\)\. It includes mechanisms for type safety to ensure that it returns the same type that it is passed\. In Lua, the type can be inspected if it has been exposed to the behavior context through the `typeid()` function, which uses the `AZ_RTTI` system\.
 
 **Example**
 
@@ -132,6 +132,6 @@ end
 function InLavaBehavior:OnDeactivate()
     self.gameplayBus:Disconnect()
 end
- 
+
 return InLavaBehavior
 ```

@@ -14,7 +14,7 @@ Lumberyard offers three different shaders for rendering bodies of water:
 
 Lumberyard also supports caustics\. Caustics are optical properties caused by light refracting through a volume of water, creating light and dark patterns at the bottom\. Realistic caustic effects also include water ripples generated from players and other objects interacting with the water surface\.
 
-**Note**  
+**Note**
 To make caustics visible, you must place water volumes at a height of 1 or greater in your level\.
 
 **Topics**

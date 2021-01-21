@@ -11,11 +11,11 @@ Use the **EMotion FX Animation Editor** to animate characters in Amazon Lumberya
 
 You can then blend animations, so that your character transitions from one animation to another, and specify the conditions when an animation occurs for a character\. For example, you can specify that your character starts in an idle position\. After several seconds, the character starts to walk, run, and then slow down again until the character returns to an idle position\.
 
-In the **Animation Editor**, you can preview the animations and blends between the animations for your characters\. 
+In the **Animation Editor**, you can preview the animations and blends between the animations for your characters\.
 
 Lumberyard has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into Lumberyard assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
-**Note**  
+**Note**
 If you are using Lumberyard 1\.10 or earlier, you can use the legacy animation system \(Geppetto and Mannequin\) to accomplish these tasks\. For more information, see [Animation System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-legacy-intro.html) in the *Amazon Lumberyard Legacy Reference*\.
 
 **Topics**

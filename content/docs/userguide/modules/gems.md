@@ -4,11 +4,11 @@ title: Gems and AZ Modules
 ---
 # Gems and AZ Modules {#az-module-gems}
 
-The gems system was developed to make it easy to share code between projects\. Gems are reusable packages of module code and assets which can be easily added to or removed from a Lumberyard game\. Gems also promote writing code in a way that is more modular than that found in legacy libraries\. For example, each gem has its own include folder for its public interface code files\. Gems also come with package management metadata such as semantic versioning and the ability to state dependencies on other gems\. 
+The gems system was developed to make it easy to share code between projects\. Gems are reusable packages of module code and assets which can be easily added to or removed from a Lumberyard game\. Gems also promote writing code in a way that is more modular than that found in legacy libraries\. For example, each gem has its own include folder for its public interface code files\. Gems also come with package management metadata such as semantic versioning and the ability to state dependencies on other gems\.
 
 ## Structure of a Gem {#az-module-gems-structure-of-a-gem}
 
-A gem's directory contents are organized as follows: 
+A gem's directory contents are organized as follows:
 
 ```
 GemDirectory/
@@ -33,7 +33,7 @@ Each game project must explicitly list the gems that it uses\. When [Using the W
 
 All gems that ship with Lumberyard are built as AZ modules\. When you build a gem as an AZ module, the gem uses the initialization functions expected by the AZ framework\. An AZ module gem has public interfaces that are [event buses](/docs/userguide/programming/ebus/intro.md) and is better integrated with the new [component entity system](/docs/userguide/components/intro.md)\.
 
-When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date: 
+When you use the Project Configurator to enable or disable a gem, Lumberyard updates the [application descriptor file](/docs/userguide/modules/system-entities-configuring#az-module-system-entities-configuring-app-descriptor-files) accordingly to ensure it references all AZ modules\. If you edit the `dev\<project_asset_directory>\gems.json` list of gems by hand, you can use the following command to bring the application descriptor file up to date:
 
 ```
 dev\Tools\LmbrSetup\Win\lmbr.exe projects populate-appdescriptors
@@ -41,10 +41,10 @@ dev\Tools\LmbrSetup\Win\lmbr.exe projects populate-appdescriptors
 
 ### About Gem Versioning {#az-module-gems-about-versioning}
 
-The `GemFormatVersion` value is versioning for how a gem is built\. Gem version numbers like `0.1.0` refer to the gem's API version\. 
+The `GemFormatVersion` value is versioning for how a gem is built\. Gem version numbers like `0.1.0` refer to the gem's API version\.
 
-Gems from Lumberyard 1\.4 and earlier \(legacy gems\) all have a `GemFormatVersion` value of `2`\. Starting in Lumberyard 1\.5, all the gems included with Lumberyard are AZ modules and have a `GemFormatVersion` value of `3`\. This tells Lumberyard that the gem is an AZ module and that it should be loaded accordingly\. 
+Gems from Lumberyard 1\.4 and earlier \(legacy gems\) all have a `GemFormatVersion` value of `2`\. Starting in Lumberyard 1\.5, all the gems included with Lumberyard are AZ modules and have a `GemFormatVersion` value of `3`\. This tells Lumberyard that the gem is an AZ module and that it should be loaded accordingly\.
 
-A gem may also have an API version number like `0.1.0`\. This is independent of the `GemFormatVersion`\. The API version alerts your users to API changes\. If the API version number changes, then users of the gem may need to make changes to their code\. For example, the Rain gem will stay at version `0.1.0` until its API changes\. If you were using the Rain gem from Lumberyard 1\.4, you can still use the Rain gem from Lumberyard 1\.5 without changing any of your data or code\. 
+A gem may also have an API version number like `0.1.0`\. This is independent of the `GemFormatVersion`\. The API version alerts your users to API changes\. If the API version number changes, then users of the gem may need to make changes to their code\. For example, the Rain gem will stay at version `0.1.0` until its API changes\. If you were using the Rain gem from Lumberyard 1\.4, you can still use the Rain gem from Lumberyard 1\.5 without changing any of your data or code\.
 
 For more information about gems, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.

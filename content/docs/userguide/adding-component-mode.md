@@ -8,7 +8,7 @@ Select a component to add a Component Mode to\. Components such as shape, light,
 
 This walkthrough uses the **[Point Light](/docs/userguide/components/point-light.md)** component because it's visually easy to model\. At the end of the walkthrough, you can edit the **Point Light** component in the viewport instead of manually entering values in the **Entity Inspector**\.
 
-**Note**  
+**Note**
 Component Mode is an edit\-time only feature\. For more information, see [Editor Components](/docs/userguide/components/entity-system-pg-editor-components.md)\.
 
 ------

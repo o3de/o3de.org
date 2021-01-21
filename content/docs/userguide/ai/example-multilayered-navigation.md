@@ -5,7 +5,7 @@ title: AI Multi-Layered Navigation
 # AI Multi\-Layered Navigation {#ai-concepts-example-multilayered-navigation}
 
 Useful AI debug draw:
-+ ai\_useMNM=1 
++ ai\_useMNM=1
 + ai\_DebugDraw=1
 + ai\_DebugDrawNavigation=1
 + ai\_DrawPath=all

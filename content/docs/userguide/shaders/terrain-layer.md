@@ -14,57 +14,57 @@ Here are a few notes regarding usage of this shader:
 
 ## Shader Parameters {#shader-ref-terrain-layer-shader-parameters}
 
-**Blend Factor**  
-Changes the visibility of the blended layer\. A height map is required\. **OBM** or **OBM** shader generation parameter must be enabled first\.  
+**Blend Factor**
+Changes the visibility of the blended layer\. A height map is required\. **OBM** or **OBM** shader generation parameter must be enabled first\.
 Default value: 0
 
-**Blend Falloff**  
-Changes the falloff of blending\. A height map is required\. **OBM** or **OBM** shader generation parameter must be enabled first\.  
+**Blend Falloff**
+Changes the falloff of blending\. A height map is required\. **OBM** or **OBM** shader generation parameter must be enabled first\.
 Default value: 1
 
-**Detail bump scale**  
-**Detail mapping** shader generation parameter must be enabled first\.  
-Default value: 
+**Detail bump scale**
+**Detail mapping** shader generation parameter must be enabled first\.
+Default value:
 
-**Detail gloss scale**  
-**Detail mapping** shader generation parameter must be enabled first\.  
-Default value: 
+**Detail gloss scale**
+**Detail mapping** shader generation parameter must be enabled first\.
+Default value:
 
-**DetailTextureStrength**  
-Sets the strength of the diffuse map, which dictates how much detail texture is visible over the layer texture\. The higher the value, the more you see only your Diffuse map\.   
+**DetailTextureStrength**
+Sets the strength of the diffuse map, which dictates how much detail texture is visible over the layer texture\. The higher the value, the more you see only your Diffuse map\.
 Default value: 1
 
-**Height bias**  
-**POM** shader generation parameter must be enabled first\.  
+**Height bias**
+**POM** shader generation parameter must be enabled first\.
 Default value: 0\.5
 
-**Indirect bounce color**  
-Sets the amount of indirectly bounced color  
+**Indirect bounce color**
+Sets the amount of indirectly bounced color
 Default value: 136,136,136
 
-****  
-  
-Default value: 
+****
 
-**OBM Displacement**  
-**OBM** shader generation parameter must be enabled first\.  
+Default value:
+
+**OBM Displacement**
+**OBM** shader generation parameter must be enabled first\.
 Default value: 0\.01
 
-**POM Displacement**  
-**POM** shader generation parameter must be enabled first\.  
+**POM Displacement**
+**POM** shader generation parameter must be enabled first\.
 Default value: 0\.01
 
-**Self shadow strength**  
-**POM** shader generation parameter must be enabled first\.  
+**Self shadow strength**
+**POM** shader generation parameter must be enabled first\.
 Default value: 3
 
 ## Shader Generation Parameters {#shader-ref-terrain-layer-shader-generation-parameters}
 
-**Offset bump mapping \(OBM\)**  
+**Offset bump mapping \(OBM\)**
 Uses offset bump mapping\. Requires a height map \(\_displ format\)\.
 
-**Detail mapping**  
-Uses detail mapping\. 
+**Detail mapping**
+Uses detail mapping\.
 
-**Parallax occlusion mapping \(POM\)**  
-Uses parallax occlusion mapping\. Requires a height map \(\_displ format\)\. 
+**Parallax occlusion mapping \(POM\)**
+Uses parallax occlusion mapping\. Requires a height map \(\_displ format\)\.

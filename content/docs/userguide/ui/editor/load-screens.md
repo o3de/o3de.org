@@ -9,7 +9,7 @@ You can create a game or level loading screen with the **UI Editor**\. The game 
 
 Load screens were refactored in Lumberyard v1\.24 to support more than just UI canvases when using RAD Game Tools' Bink video files\. You can specify a path to either a UI canvas or a Bink video file\. Additionally, multi\-threaded load screens are supported for Bink videos, enabling a load screen to render hitch\-free while levels load\.
 
-To define the game and level loading screens, you set the file paths as parameters in `game.cfg` and `level.cfg`\. 
+To define the game and level loading screens, you set the file paths as parameters in `game.cfg` and `level.cfg`\.
 
 ## Defining a Game Loading Screen {#ui-editor-load-screens-game}
 
@@ -24,8 +24,8 @@ You then add or modify parameters in `game.cfg`, which is at the root of your pr
 1. In a text editor, open `game.cfg` at the root of your project directory\.
 
 1. Add or modify the following parameters in `game.cfg`:
-   + `game_load_screen_uicanvas_path` - File path to the `.uicanvas` game load screen file relative to your project path\. Use this if you are using a UI canvas for your loading screen\.  
-**Example**  
+   + `game_load_screen_uicanvas_path` - File path to the `.uicanvas` game load screen file relative to your project path\. Use this if you are using a UI canvas for your loading screen\.
+**Example**
 
      If your game load canvas is at `lumberyard_version\dev\SamplesProject\UI\Canvases\UiAnimMultiSequence.uicanvas`, you would specify the following path:
 
@@ -63,8 +63,8 @@ You then add or modify parameters in `level.cfg`, which is at the root of your l
 1. In a text editor, open `level.cfg` at the root of your level directory\.
 
 1. Add or modify the following parameters in `level.cfg`:
-   + `level_load_screen_uicanvas_path` - File path to the `.uicanvas` level load screen file relative to your project path\. Use this if you are using a UI canvas for your loading screen\.  
-**Example**  
+   + `level_load_screen_uicanvas_path` - File path to the `.uicanvas` level load screen file relative to your project path\. Use this if you are using a UI canvas for your loading screen\.
+**Example**
 
      If your level load canvas is at `lumberyard_version\dev\StarterGame\Levels\StarterGame\UiAnimMultiSequence.uicanvas` \(root of the level directory, which is the same as `level.cfg`\), specify the following path:
 

@@ -39,63 +39,63 @@ All modules and libraries in Lumberyard must be configured for use with Waf\. If
    ```
    # HelloWorld wscript
    def build(bld):
-   
+
        bld.CryEngineModule(
            target    = 'HelloWorld',
            vs_filter = 'Engine',
            file_list = 'helloworld.waf_files',
            use       = ['AzCore'],
-   
+
            # Testing
            test_all_file_list = 'helloworld_test.waf_files'
    ```
 
 1. Create a test hook for AZ Test Scanner\. How you create a test hook depends on whether you want to build a dynamic library or an executable file\. Static libraries are not currently supported for testing\.
-   + 
+   +
 
-**To create a test hook for a dynamic library**  
+**To create a test hook for a dynamic library**
 Because the tests built into a dynamic library are not exposed, you must expose a separate test function for the AZ test scanner\. To expose the test function, use a convenience macro that AzTest provides in a test\-only `*_test.waf_files` file, as in the following example\.
 
      ```
      // HelloWorldTestMain.cpp
-     
+
      #include <AzTest/AzTest.h>
-     
+
      AZ_UNIT_TEST_HOOK();  // Runs unit tests
      AZ_INTEG_TEST_HOOK(); // Runs integration tests
      ```
 
      For differences between unit tests and integration tests, see [Creating Unit Tests and Integration Tests](#aztest-writing-tests-creating-unit-and-integration)\.
-   + 
+   +
 
-**To create a test hook for an executable file**  
+**To create a test hook for an executable file**
 To build an executable file, you must expose a test function and modify the main function of the executable to run tests instead of normal program functions\. The test function informs the AZ test scanner that tests have been included in the executable and that it is safe to continue\.
 
      The following example shows how to modify your main function:
 
      ```
      // Main.cpp
-     
+
      #if defined(AZ_TESTS_ENABLED)
      #include <AzTest/AzTest.h>
      DECLARE_AZ_UNIT_TEST_MAIN()
      #endif
-     
+
      int main(int argc, char* argv[])
      {
      #if defined(AZ_TESTS_ENABLED)
          INVOKE_AZ_UNIT_TEST_MAIN();
      #endif
-     
+
      // Rest of your program
-     
+
      }
      ```
-**Note**  
-Because the `AZ_TESTS_ENABLED` definition is defined only in test builds, it is a convenient definition to use in test\-only code\. 
+**Note**
+Because the `AZ_TESTS_ENABLED` definition is defined only in test builds, it is a convenient definition to use in test\-only code\.
 
 1. If necessary, use the `use` parameter in the `wscript` file to link AzTest to the module\.
-**Note**  
+**Note**
 In most cases, you do not have to perform this step\. Waf automatically links AzTest in test builds for almost all build modules, including gems\. The `LumberyardApp` build module is not linked automatically\. If you build a Lumberyard app, you must link it manually\.
 
    As with the `*_test.waf_files` files, you must use AzTest only in a test build\. To specify this when linking, add `test_all_use` to the `wscript` configuration, as in the following example\.
@@ -103,13 +103,13 @@ In most cases, you do not have to perform this step\. Waf automatically links Az
    ```
    # HelloWorld wscript
    def build(bld):
-   
+
        bld.CryEngineModule(
            target    = 'HelloWorld',
            vs_filter = 'Engine',
            file_list = 'helloworld.waf_files',
            use       = ['AzCore'],
-   
+
            # Testing
            test_all_file_list = 'helloworld_test.waf_files',
            test_all_use       = ['AzTest'],
@@ -183,7 +183,7 @@ TEST_F(Integ_MessageDatabaseTests, MessageOfTheDay_ReturnsCurrentMessageOfTheDay
 }
 ```
 
-**Note**  
+**Note**
 Fixtures cannot be shared between unit and integration tests\. If you want to use the same fixture for both kinds of tests, create a base fixture and subclass for each type of test\.
 
 ## Using Global Environments {#aztest-writing-tests-global-environments}
@@ -234,6 +234,6 @@ protected:
 AZ_UNIT_TEST_HOOK(new HelloWorldEnvironment);
 ```
 
-**Note**  
-You must dynamically allocate environments before you use the macro\. This gives you full control over how environments are created at runtime\.  
+**Note**
+You must dynamically allocate environments before you use the macro\. This gives you full control over how environments are created at runtime\.
 The order of environments is also significant\. Environments earlier in the list are initialized earlier and removed later\. This is important if a global environment depends on another environment that already exists\.

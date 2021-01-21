@@ -16,18 +16,18 @@ Returns the current time of day speed multiplier\. The value is specified in con
 ## Inputs {#get-speed-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#get-speed-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Speed | Number | Current speed multiplier that determines how quickly the time of day changes\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Speed | Number | Current speed multiplier that determines how quickly the time of day changes\. |

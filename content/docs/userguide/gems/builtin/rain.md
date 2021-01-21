@@ -6,11 +6,11 @@ title: Rain Gem
 # Rain Gem {#gems-system-gem-rain}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 The Rain Gem creates realistic rain effects in your levels, including rain drops, puddles, mist, wet surfaces, and splashes\. To enable the Rain Gem in your project, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
@@ -18,7 +18,7 @@ This gem is a game object extension\. On initialization, it preloads all texture
 
 ![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-gem-rain.png)
 
-**Note**  
+**Note**
 Place only a single Rain entity in your scene\.
 
 ## Placing Rain {#placing-rain}
@@ -38,41 +38,41 @@ You can place rain and customize it for your level by modifying properties for a
 You can configure the rain's properties under [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html) and **Entity Properties**\.
 
 
-**Rain Entity Properties**  
+**Rain Entity Properties**
 
-| Properties | Description | 
-| --- | --- | 
-| Amount | Sets overall amount of the rain entity's various effects | 
-| DiffuseDarkening | Sets the degree to which the rain darkens the surface diffuse  | 
-| DisableOcclusion | Turns off checking whether an object is under cover and should be occluded from rain | 
-| Enabled | Toggles the rain effect | 
-| IgnoreVisareas | Continue to render rain when player is inside a vis area | 
-| PuddlesAmount | Sets the size and number of puddles that the rain creates | 
-| PuddlesMaskAmount | Sets the strength of the puddle mask to balance different puddle results | 
-| PuddlesRippleAmount | Sets the height and frequency of ripples in rain puddles | 
-| Radius | Sets the area on which rain falls | 
-| RainDropsAmount | Sets the number of rain drops | 
-| RainDropsLighting | Sets the brightness of the rain drops | 
-| RainDropsSpeed | Sets the rate at which rain falls | 
-| SplashesAmount | Sets the degree of splashing on a surface | 
+| Properties | Description |
+| --- | --- |
+| Amount | Sets overall amount of the rain entity's various effects |
+| DiffuseDarkening | Sets the degree to which the rain darkens the surface diffuse  |
+| DisableOcclusion | Turns off checking whether an object is under cover and should be occluded from rain |
+| Enabled | Toggles the rain effect |
+| IgnoreVisareas | Continue to render rain when player is inside a vis area |
+| PuddlesAmount | Sets the size and number of puddles that the rain creates |
+| PuddlesMaskAmount | Sets the strength of the puddle mask to balance different puddle results |
+| PuddlesRippleAmount | Sets the height and frequency of ripples in rain puddles |
+| Radius | Sets the area on which rain falls |
+| RainDropsAmount | Sets the number of rain drops |
+| RainDropsLighting | Sets the brightness of the rain drops |
+| RainDropsSpeed | Sets the rate at which rain falls |
+| SplashesAmount | Sets the degree of splashing on a surface |
 
 ## Using Console Variables for Rain {#rain-console-variables}
 
 You can use the following console variables for the rain entity\.
 
 
-**Rain Entity Console Variables**  
+**Rain Entity Console Variables**
 
-| Variable | Description | 
-| --- | --- | 
-| r\_Rain | Enables rain rendering | 
-| r\_RainAmount | Sets rain amount | 
-| r\_RainDistMultiplier | Multiplier for the rain layer's distance from the camera | 
-| r\_RainDropsEffect | Enables rain drops effect | 
-| r\_RainIgnoreNearest | Disables the layer showing the reflection of objects in rainy or wet areas nearest objects | 
-| r\_RainMaxViewDist | Sets the maximum distance at which rain is visible | 
-| r\_RainMaxViewDist\_Deferred | Sets maximum distance \(in meters\) at which the deferred rain reflection layer is visible | 
-| r\_RainOccluderSizeThreshold | Blocks rain for objects bigger than this value | 
+| Variable | Description |
+| --- | --- |
+| r\_Rain | Enables rain rendering |
+| r\_RainAmount | Sets rain amount |
+| r\_RainDistMultiplier | Multiplier for the rain layer's distance from the camera |
+| r\_RainDropsEffect | Enables rain drops effect |
+| r\_RainIgnoreNearest | Disables the layer showing the reflection of objects in rainy or wet areas nearest objects |
+| r\_RainMaxViewDist | Sets the maximum distance at which rain is visible |
+| r\_RainMaxViewDist\_Deferred | Sets maximum distance \(in meters\) at which the deferred rain reflection layer is visible |
+| r\_RainOccluderSizeThreshold | Blocks rain for objects bigger than this value |
 
 ## Using the Rain Sample {#gems-rain-sample}
 

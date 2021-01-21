@@ -27,7 +27,7 @@ This topic provides brief explanations of some important Lumberyard programming 
 
 The Lumberyard Editor and Lumberyard runtime code use the Lumberyard [asset system](/docs/userguide/assets/intro.md) to asynchronously stream and activate assets\.
 
-For information on using the runtime asset system to load already\-built assets into a running instance of the engine, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)\. 
+For information on using the runtime asset system to load already\-built assets into a running instance of the engine, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)\.
 
 For information on adding a custom asset type to Lumberyard, see [Adding an Asset Type to Lumberyard](/docs/userguide/assets/asset-type-adding.md)\.
 
@@ -35,7 +35,7 @@ For information on creating a builder for custom assets, see [Creating a Custom 
 
 ## AZ Code Generator {#lumberyard-programming-concepts-az-code-generator}
 
-You can use the AZ Code Generator command line utility to generate boilerplate code when the structure of the intended code is known in advance\. AZ Code Generator generates source code \(or any data or text\) from source code that is specially tagged\. 
+You can use the AZ Code Generator command line utility to generate boilerplate code when the structure of the intended code is known in advance\. AZ Code Generator generates source code \(or any data or text\) from source code that is specially tagged\.
 
 For more information, see [Automating boilerplate with AZ Code Generator](/docs/userguide/codegen/intro.md)\.
 
@@ -43,7 +43,7 @@ For more information, see [Automating boilerplate with AZ Code Generator](/docs/
 
 You can build your Lumberyard projects in *profile* mode, *debug* mode, or *release* mode\.
 
-For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\. 
+For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
 
 ## Cloud Canvas {#lumberyard-programming-concepts-cloud-canvas}
 
@@ -87,13 +87,13 @@ For more information about entities and components, see [Programmer's Guide to E
 
 ## Gems and AZ Modules {#lumberyard-programming-concepts-gems-and-modules}
 
-Lumberyard is designed to create applications that are small executables\. A Lumberyard application has a simple application class \(`AZ::ComponentApplication`\)\. The application class reads a manifest \(a `gems.json` file\) and loads modules that provide functionality for your game\. Lumberyard calls these modules `gems`\. Lumberyard's goal is to have you choose a set of gems that match the requirements of your game and only compile what you need\. Lumberyard includes a variety of prebuilt gems that add functionality to the game engine, such as VR, cloud connectivity, and the EMotion FX animation system\. 
+Lumberyard is designed to create applications that are small executables\. A Lumberyard application has a simple application class \(`AZ::ComponentApplication`\)\. The application class reads a manifest \(a `gems.json` file\) and loads modules that provide functionality for your game\. Lumberyard calls these modules `gems`\. Lumberyard's goal is to have you choose a set of gems that match the requirements of your game and only compile what you need\. Lumberyard includes a variety of prebuilt gems that add functionality to the game engine, such as VR, cloud connectivity, and the EMotion FX animation system\.
 
-[Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) are gems that add AWS cloud\-connected functionality to your game\. 
+[Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) are gems that add AWS cloud\-connected functionality to your game\.
 
 When you create a game, your game code and assets go into one or more gems\. Each code gem contains an [AZ::Module](/docs/userguide/modules/s-intro.md)\. An AZ module is a collection of C\+\+ code built as a static or dynamic library \(\.lib or \.dll file\) that implements specific initialization functions\. The AZ module is the interface that Lumberyard uses to extract the contents of your gem into the global environment\.
 
-Each application has a single entity associated with it that is referred to as the [system entity](/docs/userguide/modules/system-entities-configuring.md)\. AZ modules can add components to this entity before it is activated\. 
+Each application has a single entity associated with it that is referred to as the [system entity](/docs/userguide/modules/system-entities-configuring.md)\. AZ modules can add components to this entity before it is activated\.
 
 Components that are added to the system entity are called [system components](/docs/userguide/modules/system-components.md)\. System components are often singleton/manager\-type objects that aggregate or provide resources to game components or other systems\. Like other entities, a system entity must have its dependencies present\. You can assume that any systems that you depend on are booted and available when your system component is activated\.
 
@@ -103,19 +103,19 @@ For information on creating system components, see [Creating System Components](
 
 ## Input {#lumberyard-programming-concepts-input}
 
-Lumberyard provides independent, extensible, and efficient access to input data from supported operating systems and devices\. Lumberyard's AZ framework input interface provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management\. 
+Lumberyard provides independent, extensible, and efficient access to input data from supported operating systems and devices\. Lumberyard's AZ framework input interface provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management\.
 
-For more information, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\. 
+For more information, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\.
 
 ## Lua {#lumberyard-programming-concepts-lua}
 
-[Lua](https://www.lua.org/) is a powerful, fast, lightweight, scripting language\. You can use Lua in Lumberyard to facilitate quick iteration of your game project\. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code\. 
+[Lua](https://www.lua.org/) is a powerful, fast, lightweight, scripting language\. You can use Lua in Lumberyard to facilitate quick iteration of your game project\. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code\.
 
 For more information on using Lua in Lumberyard, see [Writing Lua Scripts](/docs/userguide/scripting/lua/intro.md)\.
 
 ## Networking {#lumberyard-programming-concepts-networking}
 
-Lumberyard's networking system is designed for efficient bandwidth usage and low\-latency communications\. It uses a replica framework to synchronize objects over the network, and its session management integrates with major online console services\. Lumberyard networking lets you handle peer\-to\-peer and client\-server topologies with host migration and supports in\-game achievements, leaderboards, and cloud\-based saved games\. 
+Lumberyard's networking system is designed for efficient bandwidth usage and low\-latency communications\. It uses a replica framework to synchronize objects over the network, and its session management integrates with major online console services\. Lumberyard networking lets you handle peer\-to\-peer and client\-server topologies with host migration and supports in\-game achievements, leaderboards, and cloud\-based saved games\.
 
 For more information, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\.
 
@@ -123,13 +123,13 @@ For more information, see [Using Lumberyard Networking](/docs/userguide/networki
 
 You can use Lumberyard's reflection system to expose runtime code for C\+\+\-based objects, for Lumberyard Editor, and for scripting \(Lua and Script Canvas\)\. Lumberyard provides three reflection contexts for this purpose: a [serialization context](/docs/userguide/components/entity-system-reflection-serialization-context.md), a [behavior context](/docs/userguide/components/entity-system-reflection-behavior-context.md), and an [edit context](/docs/userguide/components/entity-system-reflection-edit-context.md)\.
 
-For more information, see [Reflecting Lumberyard Classes, Methods, and EBus Interfaces](/docs/userguide/components/entity-system-reflection-intro.md)\. 
+For more information, see [Reflecting Lumberyard Classes, Methods, and EBus Interfaces](/docs/userguide/components/entity-system-reflection-intro.md)\.
 
 ## Script Canvas {#lumberyard-programming-concepts-script-canvas}
 
 [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md) is Lumberyard's visual scripting environment\.
 
-For information on creating your own nodes in Script Canvas, see [Creating Custom Nodes in Script Canvas](/docs/userguide/scripting/scriptcanvas/custom-nodes.md)\. 
+For information on creating your own nodes in Script Canvas, see [Creating Custom Nodes in Script Canvas](/docs/userguide/scripting/scriptcanvas/custom-nodes.md)\.
 
 For information on using the behavior context to expose runtime code to Script Canvas, see [Script Canvas and the Behavior Context](/docs/userguide/scripting/scriptcanvas/behavior-context.md)\.
 
@@ -137,6 +137,6 @@ For information on using the behavior context to expose runtime code to Script C
 
 Slices are practical and powerful way to create units of content in Lumberyard and manage them\. A slice is a collection of one or more entities\. You can instantiate a slice as many times as you require\. Many game engines use levels and/or sublevels for their content, but Lumberyard loads content into its engine in the form of slices\. Because slices can inherit from each other and be nested, they are powerful tools for managing content\.
 
-Like most systems that use prefabs or archetypes, you can use inheritance to override properties in Lumberyard\. However, you can use Lumberyard's slices to add or remove components or even entire entity hierarchies\. 
+Like most systems that use prefabs or archetypes, you can use inheritance to override properties in Lumberyard\. However, you can use Lumberyard's slices to add or remove components or even entire entity hierarchies\.
 
 For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.

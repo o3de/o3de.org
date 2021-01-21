@@ -9,11 +9,11 @@ You can freely extend the GridMate interest manager system with your own logic\.
 
 ```
 // dev\Code\Framework\GridMate\GridMate\Replica\Interest\RulesHandler.h
-  
+
 namespace GridMate
 {
     class InterestManager;
- 
+
     /**
     *  BaseRulesHandler: base handler class.
     *  RulesHandler's job is to provide InterestManager with matching pairs of attributes and rules.
@@ -24,38 +24,38 @@ namespace GridMate
         BaseRulesHandler()
             : m_slot(0)
         {}
- 
+
         virtual ~BaseRulesHandler() { };
- 
+
         /**
         *  Ticked by InterestManager to retrieve new matches or mismatches of interests.
         */
         virtual void Update() = 0;
- 
+
         /**
         *  Returns result of a previous update.
         *  This only returns changes that happened on the previous tick, not the whole world state.
         */
         virtual const InterestMatchResult& GetLastResult() = 0;
- 
+
         /**
         *  Called by InterestManager when the given handler instance is registered.
         */
         virtual void OnRulesHandlerRegistered(InterestManager* manager) = 0;
- 
+
         /**
         *  Called by InterestManager when the given handler is unregistered.
         */
         virtual void OnRulesHandlerUnregistered(InterestManager* manager) = 0;
- 
+
         /**
         *  Returns the InterestMananger that this handler is bound to, or nullptr if it's unbound.
         */
         virtual InterestManager* GetManager() = 0;
- 
+
     private:
         friend class InterestManager;
- 
+
         InterestHandlerSlot m_slot;
     };
 } // namespace GridMate
@@ -65,9 +65,9 @@ Of interest is the method `GetLastResult`, which returns `InterestMatchResult`\.
 
 ```
 // dev\Code\Framework\GridMate\GridMate\Replica\Interest\InterestDefs.h
-  
+
     using InterestPeerSet = unordered_set<PeerId>;
- 
+
     /**
      * InterestMatchResult: a structure to gather new matches from handlers.
      * Passed to handler within matching context when handler's Match method is invoked.
@@ -83,7 +83,7 @@ It's up to you to decide how you want your rule handler to match up rules and at
 
 ```
 // dev\Code\Framework\GridMate\GridMate\Replica\Interest\InterestDefs.h
- 
+
     /**
     *  Base class for interest rules.
     */
@@ -94,17 +94,17 @@ It's up to you to decide how you want your rule handler to match up rules and at
             : m_peerId(peerId)
             , m_netId(netId)
         {}
- 
+
         PeerId GetPeerId() const { return m_peerId; }
         RuleNetworkId GetNetworkId() const { return m_netId; }
- 
+
     protected:
         PeerId m_peerId; ///< the peer this rule is bound to
         RuleNetworkId m_netId; ///< network id
     };
     ///////////////////////////////////////////////////////////////////////////
- 
- 
+
+
     /**
     *  Base class for interest attributes.
     */
@@ -114,9 +114,9 @@ It's up to you to decide how you want your rule handler to match up rules and at
         explicit InterestAttribute(ReplicaId replicaId)
             : m_replicaId(replicaId)
         {}
- 
+
         ReplicaId GetReplicaId() const { return m_replicaId; }
- 
+
     protected:
         ReplicaId m_replicaId; ///< Replica id this attribute is bound to
     };

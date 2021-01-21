@@ -26,17 +26,17 @@ Alternatively, you can create a new function using the function create button lo
 
 ![\[Use the function create button as an alternate method for creating a new Script Canvas function.\]](/images/userguide/scripting/script-canvas/script-canvas-function-quick-create.png)
 
-**Function Entry and Exit Points**  
+**Function Entry and Exit Points**
 Functions require entry and exit points\. To create these points, right\-click a node's input or output execution slot and select **Expose** in the context menu\. Typically, you create an entry point node from the input execution slot of the first node in your function, and an exit point node from the output execution slot of the last node in your function\.
 
 ![\[Create an entry or exit point for a Script Canvas function by right-clicking an execution slot.\]](/images/userguide/scripting/script-canvas/script-canvas-function-expose-input.gif)
 
-**Note**  
+**Note**
 To change the names of the execution slots on the function's node, edit the name field on the entry point or exit point node\.
 
 Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![\[Image NOT FOUND\]](/images/userguide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png)\. Connect its execution slot later, when you're ready\.
 
-**Function Data Parameters**  
+**Function Data Parameters**
 Functions can also have input and output data parameters\. Input parameters are the values that are passed in to the function\. Output parameters are the values that are returned by the function\. These are both defined as variables in the **Variable Manager**\. A function can also have local variables, which are not exposed on the function's node\.
 
 ![\[Create function data parameters with variables in the Variable Manager.\]](/images/userguide/scripting/script-canvas/script-canvas-function-create-parameter.gif)
@@ -44,12 +44,12 @@ Functions can also have input and output data parameters\. Input parameters are 
 The scope of a variable determines if and where the variable will appear on the function node\.
 
 
-| Scope | Location on Node | Usage | 
-| --- | --- | --- | 
-| Local | \(None\) | This is a local variable, for use only by the function\. | 
-| In | Input slot | This is an input parameter\. A value for this variable is passed in to the function\. | 
-| Out | Output slot | This is a result variable\. The function returns its value as a result\. | 
-| In / Out | Both sides | This is an input parameter that can be modified by the function and returned as a result\. | 
+| Scope | Location on Node | Usage |
+| --- | --- | --- |
+| Local | \(None\) | This is a local variable, for use only by the function\. |
+| In | Input slot | This is an input parameter\. A value for this variable is passed in to the function\. |
+| Out | Output slot | This is a result variable\. The function returns its value as a result\. |
+| In / Out | Both sides | This is an input parameter that can be modified by the function and returned as a result\. |
 
 ## Using a Script Canvas Function in a Graph {#script-canvas-using-functions}
 
@@ -104,5 +104,5 @@ The final function graph should look like this:
 
    1. \(Optional\) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots\.
 
-1. Finally, use **File**, **Save** to save the function and name it **Interpolate**\. The function is now ready to use in a Script Canvas graph:  
+1. Finally, use **File**, **Save** to save the function and name it **Interpolate**\. The function is now ready to use in a Script Canvas graph:
 ![\[When a function is used in a Script Canvas graph, it appears as a node, using the function's filename as the node name.\]](/images/userguide/scripting/script-canvas/script-canvas-function-linear-interpolation-node.png)

@@ -160,7 +160,7 @@ Sets the pathname to the font\.
 **Syntax**
 
 ```
-void SetFont(const AZStd::string& fontPath) 
+void SetFont(const AZStd::string& fontPath)
 ```
 
 ### SetFontEffect {#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-setfonteffect}
@@ -190,7 +190,7 @@ Sets the horizontal text alignment\.
 **Syntax**
 
 ```
-void SetHorizontalTextAlignment(eUiHAlign alignment) 
+void SetHorizontalTextAlignment(eUiHAlign alignment)
 ```
 
 For possible values for `eUiHAlign`, see [GetHorizontalTextAlignment](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-gethorizontaltextalignment)\.
@@ -202,7 +202,7 @@ Sets the overflow behavior of the text\.
 **Syntax**
 
 ```
-void SetOverflowMode(eUiTextOverflowMode overflowMode) 
+void SetOverflowMode(eUiTextOverflowMode overflowMode)
 ```
 
 For possible values for `eUiTextOverflowMode`, see [GetOverflowMode](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getoverflowmode)\.
@@ -224,7 +224,7 @@ Sets the vertical text alignment\.
 **Syntax**
 
 ```
-void SetVerticalTextAlignment(eUiVAlign alignment) 
+void SetVerticalTextAlignment(eUiVAlign alignment)
 ```
 
 For possible values for `eUiVAlign`, see [GetVerticalTextAlignment](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getverticaltextalignment)\.
@@ -236,7 +236,7 @@ Sets whether text is wrapped\.
 **Syntax**
 
 ```
-void SetWrapText(eUiTextWrapTextSetting wrapSetting) 
+void SetWrapText(eUiTextWrapTextSetting wrapSetting)
 ```
 
 For possible values for `eUiTextWrapTextSetting`, see [GetWrapText](#lua-scripting-ces-api-ui-uitextcomponent-uitextbus-getwraptext)\.

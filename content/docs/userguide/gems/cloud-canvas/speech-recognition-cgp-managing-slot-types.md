@@ -6,13 +6,13 @@ title: Managing Slot Types
 # Managing Slot Types {#cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in preview release and is subject to change\. | 
+| This feature is in preview release and is subject to change\. |
 
-You can use the **Slot Types** tab on the main Speech Recognition page to create and manage slot types\. 
+You can use the **Slot Types** tab on the main Speech Recognition page to create and manage slot types\.
 
 **To manage slot types**
 
@@ -28,12 +28,12 @@ You can use the **Slot Types** tab on the main Speech Recognition page to create
 
 ![\[Managing slot types\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types-numbered.png)
 
-1. To create a slot type, click **Create Slot Type**\. You must enter a unique name for the slot type and at least one value\.  
+1. To create a slot type, click **Create Slot Type**\. You must enter a unique name for the slot type and at least one value\.
 ![\[Creating a slot type\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types-creating.png)
 
 1. To choose the type of slot type that is shown in the table, click **Custom** or **Built\-in**\.
 
 1. To view the versions of a slot type, click the arrow to the left of the slot type name to expand the version list\.
 
-1.  To edit the slot type, click the name of the slot type\. You can change the slot type description or edit its values\.   
+1.  To edit the slot type, click the name of the slot type\. You can change the slot type description or edit its values\.
 ![\[Editing a slot type\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-managing-slot-types-editing.png)

@@ -5,7 +5,7 @@ title: Navigation
 ---
 # Navigation {#ui-editor-components-interactive-properties-navigation}
 
-You can use the **Navigation** group of properties to specify how the arrow keys or gamepad navigates between interactive elements\. 
+You can use the **Navigation** group of properties to specify how the arrow keys or gamepad navigates between interactive elements\.
 
 For each interactive element, you can set navigation to one of the following:
 + **Automatic** - Algorithm determines which interactive elements become focused when up, down, left, or right is pressed\.

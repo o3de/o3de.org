@@ -16,18 +16,18 @@ Returns the current time of day for the level\. Time values are specified as dec
 ## Inputs {#get-time-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#get-time-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Time | Number |  Time of day in hours\.  Default value: `0` Valid values: `0.0` to `24.0`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Time | Number |  Time of day in hours\.  Default value: `0` Valid values: `0.0` to `24.0`  |

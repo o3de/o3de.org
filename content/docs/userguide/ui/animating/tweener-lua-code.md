@@ -10,7 +10,7 @@ You must have a minimum set of code to play an animation in the Scripted Entity 
 In the following example, the entity's opacity is linearly tweened to `0.5` over `5` seconds\.
 
 ```
-local AnimateUiEntity = 
+local AnimateUiEntity =
 {
 	Properties =
 	{

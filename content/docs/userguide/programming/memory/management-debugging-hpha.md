@@ -48,7 +48,7 @@ For memory deallocation operations, the debugger performs the following tasks:
 + Asserts if the debug record is not found\. This can happen because of double deallocations or the deallocation of an invalid pointer\.
 + Asserts if a guard is invalid\. When an allocation occurs, an additional 16 bytes \("the guard"\) are placed at the end of the allocation\. For example, if the request is for 40 bytes, 56 bytes are assigned and 16 are used for the guard\. Memory debugging assigns random values to the 16 bytes and places them in the debug record\. When the deallocation happens, the 16 bytes are checked against the 16 bytes stored in the debug record\. If they mismatch, the debugger asserts\. This assert usually indicates a memory overflow \(that is, an attempt to write beyond the requested size\)\.
 
-**Note**  
+**Note**
 This check cannot detect the cases in which the overflow writes the exact same random bytes or writes beyond the 16 byte guard\.
 + Asserts if the freed size does not match the allocation size\. During allocation, the requested size is stored in the debug record\. If the same size is not freed, a problem occurred during the deallocation\.
 + Refills the freed memory with the qNaN pattern\. This makes it easier to detect memory accesses after the memory has been deallocated\. Without this feature, the memory contents are usually available until some code reuses the memory\. Filling the freed memory with the qNaN pattern helps detect this anomalous usage early\.

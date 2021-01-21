@@ -16,12 +16,12 @@ The Virtual Gamepad gem includes a sample UI canvas that you can either customiz
 
 There is no limit for the number of active UI canvases that can contain virtual gamepad components\. This means you can create many virtual gamepad canvases to display for the appropriate scenarios, or even at the same time\. For example, you can show a different UI canvas on each half of your virtual gamepad\.
 
-**Example**  
-To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](/docs/userguide/animation/editor/rin-locomotion-sample.md) level from the [Samples Project](/docs/userguide/samples/projects/samples.md) on a device with touch screen support\.  
+**Example**
+To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](/docs/userguide/animation/editor/rin-locomotion-sample.md) level from the [Samples Project](/docs/userguide/samples/projects/samples.md) on a device with touch screen support\.
 
 ![\[Provide your game with touch screen capabilities when played on a mobile device.\]](/images/shared/shared-gems-system-gem-virtualgamepad-1.png)
 
-You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/userguide/ui/editor/creating-canvases.md)\. 
+You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/userguide/ui/editor/creating-canvases.md)\.
 
 ## Configuring Virtual Gamepad Behavior {#gems-system-gem-virtualgamepad-behavior}
 
@@ -29,7 +29,7 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 **To configure virtual gamepad behavior**
 
-1. In the **UI Editor**, add the [UI components](/docs/userguide/ui/editor/components.md) **VirtualGamepadButton** and **VirtualGamepadThumbStick** to the UI canvas\. 
+1. In the **UI Editor**, add the [UI components](/docs/userguide/ui/editor/components.md) **VirtualGamepadButton** and **VirtualGamepadThumbStick** to the UI canvas\.
 
 1. For each component, select an **Input Channel**\.
 
@@ -43,19 +43,19 @@ To modify the list of available virtual gamepad input channels, use the Project 
 
 ## Virtual Gamepad Component Properties {#gems-system-gem-virtualgamepad-properties}
 
-The Virtual Gamepad gem features two components that you can use to customize input for your mobile games: 
+The Virtual Gamepad gem features two components that you can use to customize input for your mobile games:
 
-****VirtualGamepadButton****  
-**VirtualGamepadButton** has one property, **Input Channel**\. Select the appropriate input\.  
+****VirtualGamepadButton****
+**VirtualGamepadButton** has one property, **Input Channel**\. Select the appropriate input\.
 
 ![\[Input Channel selection for the VirtualGamepadButton.\]](/images/userguide/gems/gems-system-gem-virtualgamepad-properties-1.png)
 
-****VirtualGamepadThumbstick****  
-**VirtualGamepadThumbstick** has the following properties:  
+****VirtualGamepadThumbstick****
+**VirtualGamepadThumbstick** has the following properties:
 
-![\[VirutalGamepadThumbStick component properties\]](/images/userguide/gems/gems-system-gem-virtualgamepad-properties-2.png)  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-gem-virtualgamepad.html)
+![\[VirutalGamepadThumbStick component properties\]](/images/userguide/gems/gems-system-gem-virtualgamepad-properties-2.png)
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/gems/builtin/virtualgamepad)
 
 ## Displaying the Virtual Gamepad at Runtime {#gems-system-gem-virtualgamepad-displaying}
 
@@ -81,7 +81,7 @@ if (gamepadDevice and gamepadDevice:IsConnected()) then
 end
 ```
 
-The following Lua script enables the virtual gamepad when a physical gamepad is disconnected and disables the virtual gamepad when a physical gamepad is connected\. 
+The following Lua script enables the virtual gamepad when a physical gamepad is disconnected and disables the virtual gamepad when a physical gamepad is connected\.
 
 You can find a working example of this Lua script in the `lumberyard_version\dev\SamplesProject\AnimationSamples\Advanced_RinLocomotion\Scripts\Advanced_RinLocomotion.lua` file\.
 

@@ -5,7 +5,7 @@ title: Nesting Layout Components
 ---
 # Nesting Layout Components {#ui-editor-components-layout-nesting}
 
-You can nest layout components within other layout components\. 
+You can nest layout components within other layout components\.
 
 To see an in\-game example of a completed canvas with a nested layout, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Layout Components**, **Nested Layout**\. Press **Esc** to exit the game\.
 

@@ -12,7 +12,7 @@ When using a second blend layer, the diffuse map is placed in the **Custom** tex
 
 1. Complete the [Applying Parallax Occlusion Mapping \(POM\)](/docs/userguide/materials/maps/parallax-pom.md) procedure\.
 
-1. Under **Shader Generation Params**, select **Parallax occlusion mapping** and **Blendlayer**\. 
+1. Under **Shader Generation Params**, select **Parallax occlusion mapping** and **Blendlayer**\.
 
 1. Under **Texture Maps**, place maps as follows:
 
@@ -22,4 +22,4 @@ When using a second blend layer, the diffuse map is placed in the **Custom** tex
 
    1. Place the height map in **Second Bump Map**\.
 
-1. Under **Shader Params**, adjust the values of the parameters as needed\. 
+1. Under **Shader Params**, adjust the values of the parameters as needed\.

@@ -5,7 +5,7 @@ title: PhysX Debug
 ---
 # PhysX Debug {#gems-system-gem-physx-debug}
 
-The PhysX Debug gem provides features to debug visualizations for your PhysX scene geometry, such as the **[PhysX Collider](/docs/userguide/components/physx-collider.md)** , **[PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md)** component, and so on\. 
+The PhysX Debug gem provides features to debug visualizations for your PhysX scene geometry, such as the **[PhysX Collider](/docs/userguide/components/physx-collider.md)** , **[PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md)** component, and so on\.
 
 When you enter console variables or the use the **ImGui** tool, you can view the PhysX debug lines in editor and game modes\. This gem uses data directly from PhysX to show a culled \(limited by proximity to the camera\) view of the simulated world in real time\.
 
@@ -17,10 +17,10 @@ This gem includes the following features:
 + Visualize debug rendering of physics geometry, such as collision primitives, terrain, shapes, and forces\.
 + Control mechanisms using console variables, the PhysX settings menu, and the **ImGui** tool\.
 + Visualization frustum culling\.
-+ PhysX visual debugger hooks and controls using the third\-party tool visual debgger\. 
++ PhysX visual debugger hooks and controls using the third\-party tool visual debgger\.
 + Proximity based debug visualizations of collision meshes\.
 
-**Note**  
+**Note**
 This feature is similar to the legacy `p_draw_helpers=1` console variable\.
 
 To enable the PhysX Debug gem, you must first enable the [PhysX](/docs/userguide/gems/builtin/physx.md) and ImGui gems\.

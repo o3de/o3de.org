@@ -17,17 +17,17 @@ To use the Dynamic Content Cloud Gem, you must meet these requirements:
 
 **To view packages in the Dynamic Content Gem Portal**
 
-1. On the welcome page of the Cloud Gem Portal, click **Cloud Gems** or **View all Cloud Gems**\.  
+1. On the welcome page of the Cloud Gem Portal, click **Cloud Gems** or **View all Cloud Gems**\.
 ![\[Cloud Gem Portal welcome page\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-1.png)
 
-1. In the list of enabled cloud gems, pause on the thumbnail for the Dynamic Content Gem\.  
+1. In the list of enabled cloud gems, pause on the thumbnail for the Dynamic Content Gem\.
 ![\[Dynamic Content Gem\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-2.png)
 
-   The thumbnail shows the number of files in the gem and the status of the cloud API \(**Online** or **Offline**\)\. The online status comes from an API Gateway call to the Dynamic Content Cloud Gem\. 
+   The thumbnail shows the number of files in the gem and the status of the cloud API \(**Online** or **Offline**\)\. The online status comes from an API Gateway call to the Dynamic Content Cloud Gem\.
 
 1. Click the thumbnail\. The dynamic content might take a few seconds to appear as AWS resources load\.
 
-   The loaded page shows the packages \(`.pak` files\) that you added when you used **Dynamic Content Manager**\.  
+   The loaded page shows the packages \(`.pak` files\) that you added when you used **Dynamic Content Manager**\.
 ![\[List of dynamic content packages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-3.png)
 
 ## Dynamic Content Package Stages {#cloud-canvas-cloud-gem-dc-managing-packages-stages}
@@ -48,12 +48,12 @@ Each stage includes entries for your manifests and packages\. Packages are neste
 The icons next to the package names show the actions available for the packages\.
 
 
-****  
+****
 
-| Icon | Description | 
-| --- | --- | 
-| ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-5.png)  | You can edit or delete root level packages\. | 
-|  ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-6.png)  | You can only delete child packages\. | 
+| Icon | Description |
+| --- | --- |
+| ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-5.png)  | You can edit or delete root level packages\. |
+|  ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-6.png)  | You can only delete child packages\. |
 
 ## Editing Packages {#cloud-canvas-cloud-gem-dc-managing-packages-editing}
 

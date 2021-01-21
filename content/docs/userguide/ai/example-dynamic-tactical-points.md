@@ -27,7 +27,7 @@ title: 'Individual AI: Tactical Points'
       },
   });
   ```
-+ Useful AI debug draw: 
++ Useful AI debug draw:
   + ai\_DebugTacticalPoints=1
   + ai\_StatsTarget=Grunt1
   + ai\_TacticalPointsDebugTime=10

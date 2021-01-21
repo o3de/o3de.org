@@ -13,16 +13,16 @@ You can configure the properties for the lightning arc entity to make the lightn
 
 1. Beneath [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-params-entity-params.html) and **Entity Properties**, select or clear check boxes for the preferred effects\.
 
- 
 
 
-**Lightning Arc Entity Properties**  
 
-| Properties | Description | 
-| --- | --- | 
-| Active | Activates the effect | 
-| Render |  | 
-| ArcPreset | Sets the specified arc preset defined in the lightningarceffects\.xml file as explained in [Customizing a Lightning Arc Preset](/docs/userguide/gems/builtin/lightning-arc-presets.md)\. | 
-| Timing |  | 
-| Delay | Sets the delay time between arcs | 
-| DelayVariation | Sets the variation of the delay based on the delay time | 
+**Lightning Arc Entity Properties**
+
+| Properties | Description |
+| --- | --- |
+| Active | Activates the effect |
+| Render |  |
+| ArcPreset | Sets the specified arc preset defined in the lightningarceffects\.xml file as explained in [Customizing a Lightning Arc Preset](/docs/userguide/gems/builtin/lightning-arc-presets.md)\. |
+| Timing |  |
+| Delay | Sets the delay time between arcs |
+| DelayVariation | Sets the variation of the delay based on the delay time |

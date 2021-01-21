@@ -4,7 +4,7 @@ title: Event Buses in Depth
 ---
 # Event Buses in Depth {#ebus-in-depth}
 
-Event buses \(or EBus for short\) are a general purpose system for dispatching messages\. Ebuses have many advantages: 
+Event buses \(or EBus for short\) are a general purpose system for dispatching messages\. Ebuses have many advantages:
 + **Abstraction** - Minimize hard dependencies between systems\.
 + **Event\-driven programming** - Eliminate polling patterns for more scalable and high performing software\.
 + **Cleaner application code** - Safely dispatch messages without concern for what is handling them or whether they are being handled at all\.
@@ -16,7 +16,7 @@ You can use EBuses in many different ways\. Following are some examples:
 + As a direct global function call
 + Dispatch processing to multiple handlers
 + Queue all calls, acting like a command buffer
-+ As an addressable mailbox 
++ As an addressable mailbox
 + For imperative delivery
 +  For queued delivery
 +  Automatic marshalling of a function call into a network message or other command buffer
@@ -44,7 +44,7 @@ There is at most one handler, to which any sender can dispatch events\. Senders 
 ```
 // One handler is supported.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single;
- 
+
 // The EBus uses a single address.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
 ```
@@ -59,27 +59,27 @@ Events to the handlers can be received in defined or undefined order\. You speci
 
 #### Example Without Handler Ordering {#ebus-in-depth-configuration-many-unordered}
 
-To handle events in no particular order, simply use the `Multiple` keyword in the `HandlerPolicy` trait, as in the following example: 
+To handle events in no particular order, simply use the `Multiple` keyword in the `HandlerPolicy` trait, as in the following example:
 
 ```
 // Multiple handlers. Events received in undefined order.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multiple;
- 
+
 // The EBus uses a single address.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
 ```
 
 #### Example with Handler Ordering {#ebus-in-depth-configuration-many-ordered}
 
-To handle events in a particular order, use the `MultipleAndOrdered` keyword in the `HandlerPolicy` trait, and then implement a custom handler\-ordering function, as in the following example: 
+To handle events in a particular order, use the `MultipleAndOrdered` keyword in the `HandlerPolicy` trait, and then implement a custom handler\-ordering function, as in the following example:
 
 ```
 // Multiple handlers. Events received in defined order.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::MultipleAndOrdered;
- 
+
 // The EBus uses a single address.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
- 
+
 // Implement a custom handler-ordering function
 struct BusHandlerOrderCompare : public AZStd::binary_function<MyBusInterface*, MyBusInterface*, bool>
 {
@@ -102,10 +102,10 @@ In the following example, messages broadcast with an ID arrive at each address i
 ```
 // One handler per address is supported.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single;
- 
+
 // The EBus has multiple addresses. Addresses are not ordered.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ById;
- 
+
 // Messages are addressed by EntityId.
 using BusIdType = AZ::EntityId;
 ```
@@ -117,13 +117,13 @@ In the following example, messages broadcast with an ID arrive at each address i
 ```
 // One handler per address is supported.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single;
- 
+
 // The EBus has multiple addresses. Addresses are ordered.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ByIdAndOrdered;
- 
+
 // Messages are addressed by EntityId.
 using BusIdType = AZ::EntityId;
- 
+
 // Addresses are ordered by EntityId.
 using BusIdOrderCompare = AZStd::greater<BusIdType>;
 ```
@@ -141,10 +141,10 @@ In the following example, messages broadcast with an ID arrive at each address i
 ```
 // Allow any number of handlers per address.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multiple;
- 
+
 // The EBus has multiple addresses. Addresses are not ordered.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ById;
- 
+
 // Messages are addressed by EntityId.
 using BusIdType = AZ::EntityId;
 ```
@@ -156,29 +156,29 @@ In the following example, messages broadcast with an ID arrive at each address i
 ```
 // Allow any number of handlers per address.
 static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Multiple;
- 
+
 // The EBus has multiple addresses. Addresses are ordered.
 static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::ByIdAndOrdered;
- 
+
 // We address the bus EntityId.
 using BusIdType = AZ::EntityId;
- 
+
 // Addresses are ordered by EntityId.
 using BusIdOrderCompare = AZStd::greater<BusIdType>;
 ```
 
 ## Synchronous vs\. Asynchronous {#ebus-in-depth-synchronous}
 
-EBus supports both synchronous and asynchronous \(queued\) messaging\. 
+EBus supports both synchronous and asynchronous \(queued\) messaging\.
 
-**Synchronous Messaging**  
+**Synchronous Messaging**
 Synchronous messages are sent to any and all handlers when an EBus event is invoked\. Synchronous messages limit opportunities for asynchronous programming, but they offer the following benefits:
 + They don't require storing a closure\. Arguments are forwarded directly to callers\.
 + They let you retrieve an immediate result from a handler \(event return value\)\.
 + They have no latency\.
 
-**Asynchronous Messaging**  
-Asynchronous messages have the following advantages: 
+**Asynchronous Messaging**
+Asynchronous messages have the following advantages:
 + They create many more opportunities for parallelism and are more future proof\.
 + They support queuing messages from any thread, dispatching them on a safe thread \(like the main thread, or any thread that you choose\)\.
 + The code used to write them is inherently tolerant to latency and is easily migrated to actor models and other distributed systems\.

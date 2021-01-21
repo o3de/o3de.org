@@ -30,12 +30,12 @@ void AddAnnotation(int reportID, AZStd::string annotation)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | ID of the report to which the annotation is added\. | 
-| annotation | AZStd::string | Comments that the user submitted for the report\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | ID of the report to which the annotation is added\. |
+| annotation | AZStd::string | Comments that the user submitted for the report\. |
 
 ### AddCustomField {#cloud-canvas-cloud-gem-defect-reporter-ebus-addcustomfield}
 
@@ -50,13 +50,13 @@ void AddCustomField(int reportID, AZStd::string key, AZStd::string value)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | ID of the report\. | 
-| key | AZStd::string | Key for the custom field\. | 
-| value | AZStd::string | Value for the custom field\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | ID of the report\. |
+| key | AZStd::string | Key for the custom field\. |
+| value | AZStd::string | Value for the custom field\. |
 
 ### FlushReports {#cloud-canvas-cloud-gem-defect-reporter-ebus-flushreports}
 
@@ -79,7 +79,7 @@ Available for scripting: Yes
 **Syntax**
 
 ```
-AZStd::vector<int> GetAvailableReportIDs() 
+AZStd::vector<int> GetAvailableReportIDs()
 ```
 
 ### GetClientConfiguration {#cloud-canvas-cloud-gem-defect-reporter-ebus-getclientconfiguration}
@@ -98,7 +98,7 @@ void GetClientConfiguration()
 
 Returns a unique handler ID for a handler and registers the intention of the handler to report data at some point\.
 
-**Note**  
+**Note**
 `GetHandlerID` must be called before `ReportData.` Because ordering issues can occur if `GetHandlerID` is queued, `GetHandlerID` should be called in the main thread\.
 
 Available for scripting: Yes
@@ -110,11 +110,11 @@ int GetHandlerID(int reportID)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | ID of the report to which this data belongs\. The report ID is passed in from CollectDefectReporterData\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | ID of the report to which this data belongs\. The report ID is passed in from CollectDefectReporterData\. |
 
 ### GetInputRecord {#cloud-canvas-cloud-gem-defect-reporter-ebus-getinputrecord}
 
@@ -129,11 +129,11 @@ AZStd::string GetInputRecord(AZStd::string processedEventName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| processedEventName | AZStd::string | Specifies the name of the processed event that corresponds to the record to retrieve\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| processedEventName | AZStd::string | Specifies the name of the processed event that corresponds to the record to retrieve\. |
 
 ### GetReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-getreport}
 
@@ -148,11 +148,11 @@ DefectReport GetReport(int reportID)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | ID of the report to return\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | ID of the report to return\. |
 
 ### IsSubmittingReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-issubmittingreport}
 
@@ -167,11 +167,11 @@ void IsSubmittingReport(bool status)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| status | bool | Specify true to disable keyboard input; otherwise, false\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| status | bool | Specify true to disable keyboard input; otherwise, false\. |
 
 ### PostReports {#cloud-canvas-cloud-gem-defect-reporter-ebus-postreports}
 
@@ -182,15 +182,15 @@ Available for scripting: Yes
 **Syntax**
 
 ```
-void PostReports(AZStd::vector<int> reportIDs) 
+void PostReports(AZStd::vector<int> reportIDs)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportIDs | AZStd::vector<int> | List of the IDs of the reports to post\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportIDs | AZStd::vector<int> | List of the IDs of the reports to post\. |
 
 ### RemoveReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-removereport}
 
@@ -205,17 +205,17 @@ void RemoveReport(int reportID)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | ID of the report to remove\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | ID of the report to remove\. |
 
 ### ReportData {#cloud-canvas-cloud-gem-defect-reporter-ebus-reportdata}
 
 Called by a handler when it has gathered the requested data and is ready to add the data to the report\.
 
-**Note**  
+**Note**
 You must call `QueueBroadcast` to queue `ReportData.` Because reports come from different threads, ordering issues can arise if `ReportData` is not queued\.
 
 Available for scripting: Yes
@@ -227,31 +227,31 @@ void ReportData(int reportID, int handlerID, vector<MetricDesc> metricsData, vec
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| reportID | int | Report ID for this data\. | 
-| handlerID | int | ID of the handler returned by GetHandlerID\. | 
-| metrics | vector<MetricDesc> |  A `MetricDesc` object that contains the metrics attributes for the report\.  For details, see [`MetricDesc`](#metric-desc)\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| reportID | int | Report ID for this data\. |
+| handlerID | int | ID of the handler returned by GetHandlerID\. |
+| metrics | vector<MetricDesc> |  A `MetricDesc` object that contains the metrics attributes for the report\.  For details, see [`MetricDesc`](#metric-desc)\.  |
 | attachments | vector<AttachmentDesc> |  An `AttachmentDesc` object that contains descriptions \(names, local paths and mime types\) of the attachments to be sent with the report\.  For details, see [`AttachmentDesc`](#attachment-desc)\.  |  {#metric-desc}
 
 
-**MetricDesc**  
+**MetricDesc**
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| m\_key | string | Unique key for the data returned\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| m\_key | string | Unique key for the data returned\. |
 | m\_data | string | JSON string that contains the metrics data that you specify\. |  {#attachment-desc}
 
 
-**AttachmentDesc**  
+**AttachmentDesc**
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| m\_name | string | Friendly name of the attachment\. | 
-| m\_type | string | MIME type of the attachment\. For an official list of MIME types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml)\. | 
-| m\_path | string | Local path of the attachment\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| m\_name | string | Friendly name of the attachment\. |
+| m\_type | string | MIME type of the attachment\. For an official list of MIME types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml)\. |
+| m\_path | string | Local path of the attachment\. |
 
 ### TriggerDefectReport {#cloud-canvas-cloud-gem-defect-reporter-ebus-triggerdefectreport}
 
@@ -266,11 +266,11 @@ void TriggerDefectReport(bool immediate)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| immediate | bool | True if the report dialog shows immediately; false if the report data is queued for later annotation\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| immediate | bool | True if the report dialog shows immediately; false if the report data is queued for later annotation\. |
 
 ### TriggerUserReportEditing {#cloud-canvas-cloud-gem-defect-reporter-ebus-triggeruserreportediting}
 
@@ -297,11 +297,11 @@ void UpdateReport(DefectReport report)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| report | DefectReport |  Report to send to the report queue\. A `DefectReport` object is a data structure that contains all the information required to create a defect report\. `DefectReport` objects are typically generated and maintained by the defect reporter\. However, `DefectReport` objects are also passed to the UI for display and editing before they are sent back to the defect reporter\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| report | DefectReport |  Report to send to the report queue\. A `DefectReport` object is a data structure that contains all the information required to create a defect report\. `DefectReport` objects are typically generated and maintained by the defect reporter\. However, `DefectReport` objects are also passed to the UI for display and editing before they are sent back to the defect reporter\.  |
 
 ## CloudGemDefectReporterNotificationBus {#cloud-canvas-cloud-gem-defect-reporter-ebus-cloudgemdefectreporternotificationbus}
 
@@ -344,7 +344,7 @@ Available for scripting: Yes
 **Syntax**
 
 ```
-virtual void OnClientConfigurationAvailable(const ServiceAPI::ClientConfiguration& clientConfiguration) {} 
+virtual void OnClientConfigurationAvailable(const ServiceAPI::ClientConfiguration& clientConfiguration) {}
 ```
 
 ### OnOpenDefectReportEditorUI {#cloud-canvas-cloud-gem-defect-reporter-ebus-onopendefectreporteditorui}
@@ -356,7 +356,7 @@ Available for scripting: Yes
 **Syntax**
 
 ```
-void OnOpenDefectReportEditorUI(vector<DefectReport> reports) 
+void OnOpenDefectReportEditorUI(vector<DefectReport> reports)
 ```
 
 ### OnDefectReportPostStatus {#cloud-canvas-cloud-gem-defect-reporter-ebus-ondefectreportpoststatus}

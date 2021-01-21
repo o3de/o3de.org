@@ -10,15 +10,15 @@ Instead of manually copying values from one entity's position to another, you ca
 
 1. In the viewport, select an entity\.
 
-1. Press and hold **Ctrl** and press the middle mouse button on a target entity\. After the target is selected, the current selection transform matches that of the target\.  
-**Example**  
+1. Press and hold **Ctrl** and press the middle mouse button on a target entity\. After the target is selected, the current selection transform matches that of the target\.
+**Example**
 
-   In the following example, the ditto feature shares an entity's orientation with another entity\. Both entities have the same value\.  
+   In the following example, the ditto feature shares an entity's orientation with another entity\. Both entities have the same value\.
 ![\[Share the transform data from one entity to another using the ditto feature in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-13.gif)
 
-   The following is a shortcut to use the ditto feature\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/transform-matching.html)
+   The following is a shortcut to use the ditto feature\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)
 
 ## Ditto a Group Selection {#ditto-group-selection}
 
@@ -28,30 +28,30 @@ You can use the ditto feature for a group of entities\. This makes it easier for
 
 1. In the viewport, select a group of entities\.
 
-1. Press and hold **Ctrl** and press the middle mouse button to match an entity's transform data to the group manipulator\.  
-**Example**  
+1. Press and hold **Ctrl** and press the middle mouse button to match an entity's transform data to the group manipulator\.
+**Example**
 
-   In the following example, you can select entities \(a group selection of tires\) and use the ditto feature to match a target entity \(the car\)\.  
+   In the following example, you can select entities \(a group selection of tires\) and use the ditto feature to match a target entity \(the car\)\.
 ![\[Share the transform data from multiple entities to another using the ditto feature in Lumberyard\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-14.gif)
 
-   See the following shortcut to use the ditto feature\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/transform-matching.html)
+   See the following shortcut to use the ditto feature\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)
 
 ## Ditto a Group Selection to Local Space {#ditto-group-selection-local-space}
 
-You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity\. 
+You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity\.
 
 **To ditto a group selection to local space**
 
 1. In the viewport, select a group of entities\.
 
-1. Press and hold **Ctrl** and **Alt** and press the middle mouse button to select a target entity\. This sets the local space of each entity in the selected group to the target entity that you specified\.  
-**Example**  
+1. Press and hold **Ctrl** and **Alt** and press the middle mouse button to select a target entity\. This sets the local space of each entity in the selected group to the target entity that you specified\.
+**Example**
 
-   In the following example, select a group of entities and use the ditto feature to set them to the local space of the target entity\.  
+   In the following example, select a group of entities and use the ditto feature to set them to the local space of the target entity\.
 ![\[Use the ditto feature to set the local space for a selection of entities to a target entity in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-15.gif)
 
-   See the following shortcut to use the ditto feature for a group selection\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/transform-matching.html)
+   See the following shortcut to use the ditto feature for a group selection\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)

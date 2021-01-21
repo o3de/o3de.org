@@ -5,13 +5,13 @@ title: Blending Environment Probes
 ---
 # Blending Environment Probes {#level-blending-environment-probe}
 
-You can use an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\. 
+You can use an **[Environment Probe](/docs/userguide/components/environment-probe.md)** component to achieve the right visual quality for a space\. Environment probes help to determine proper reflections, ambient diffuse values, particle diffuse values, and shadow colors\.
 
 Each environment probe in a scene represents ambient lighting information\. The probe data does not change even when other lights in the scene move or change in brightness\. This can result in an unnatural appearance\. For example, the sun sets but objects are still brightly lit by an environment probe used for daytime lighting\.
 
-To achieve convincing transitions in lighting: 
+To achieve convincing transitions in lighting:
 + Create multiple environment probes that represent different lighting conditions\.
-+ Write a script that blends and puts them in sync with the scene's dynamic lights\. 
++ Write a script that blends and puts them in sync with the scene's dynamic lights\.
 
  For example, as the sun moves from noon to dusk, a script takes brighter environment probes and blends them gradually to darker environment probes\. A realistic full day\-to\-night cycle can require eight or more probes\.
 
@@ -63,7 +63,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
    1. Select the **probe\_light** entity\.
 
-   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\. 
+   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\.
 
       After the cubemap is generated, the **Add Bounce** button replaces the **Generate** button\.
 
@@ -77,7 +77,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
 
    1. Select the **probe\_dark** entity\.
 
-   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\. 
+   1. In the **Entity Inspector**, under [**Cubemap generation**](/docs/userguide/components/environment-probe#component-environment-probe-cubemap), click **Generate**\.
 
       After the cubemap is generated, the **Add Bounce** button replaces the **Generate** button\.
 
@@ -90,7 +90,7 @@ The following example scenario demonstrates how to dim a lamp\. The room has a d
    1. Add the **[Lua Script](/docs/userguide/components/lua-script.md)** component to the entity\.
 
    1. In the **Lua Script** component, for the **Script** property, click the \(**\.\.\.**\) icon, and then navigate and select the `RoomLights.lua` file\. See [`RoomLights.lua`](#room-light-example-script)\.
-**Note**  
+**Note**
 To create the script file, copy and paste the code into a text file\. Rename the file extension to `.lua` and save it in your project directory\.
 
 1. In the **Lua Script** component, for the **LightEntity** property, click the target icon ![\[Target picker icon\]](/images/shared/picker.png) and in the viewport, select the **lamp** entity\. You can also use the **Entity Outliner** to select the **lamp** entity\.
@@ -101,11 +101,11 @@ To create the script file, copy and paste the code into a text file\. Rename the
 
    You can also use the **Entity Outliner** to select the **probe\_light** entity\.
 
-   The **Lua Script** component should look like the following example:  
+   The **Lua Script** component should look like the following example:
 ![\[Lua Script component has LightEntity set to lamp, and ProbeEntity set to probe_light.\]](/images/userguide/level-environment-probe-5.png) {#room-light-example-script}
 
-**Example**  
-See the following `RoomLights.lua` script\.  
+**Example**
+See the following `RoomLights.lua` script\.
 
 ```
 local RoomLights =
@@ -118,56 +118,56 @@ local RoomLights =
         ProbeEntity = EntityId(), -- Set this to an Environment Probe component that will be faded out in sync with the Light component
     }
 }
- 
+
 function RoomLights:OnActivate()
     -- Subscribes to per-frame tick updates
     self.tickBusHandler = TickBus.Connect(self);
-     
+
     -- Tracks the total number of seconds that the script has been running
     self.time = 0;
-     
+
     -- The level at which the light starts is its max value. Light level is
     -- reduced periodically to dim the light, and then raised back to its max level.
     self.maxLightLevel = Light.Event.GetDiffuseMultiplier(self.Properties.LightEntity);
 end
- 
+
 function RoomLights:OnDeactivate()
     self.tickBusHandler:Disconnect();
-     
+
     -- Restores entities to their default settings
     Light.Event.SetDiffuseMultiplier(self.Properties.LightEntity, self.maxLightLevel);
     Light.Event.SetProbeAttenuation(self.Properties.ProbeEntity, 1);
 end
- 
+
 function RoomLights:OnTick(deltaTime, timePoint)
     self.time = self.time + deltaTime;
-     
+
     -- Increases and decreases brightness between 0 and 1 as time passes
     local brightness = Math.LerpInverse(-1, 1, Math.Sin(self.time * self.Properties.Speed));
-     
+
     -- Sets the brightness of the light
     Light.Event.SetDiffuseMultiplier(self.Properties.LightEntity, brightness * self.maxLightLevel);
- 
+
     -- Sets the fade value of the probe
     Light.Event.SetProbeFade(self.Properties.ProbeEntity, brightness);
-     
+
 end
- 
+
 return RoomLights
 ```
 
 ## Day to Night Cycle Example {#level-environment-probe-daynight}
 
-The following scenario is a more complex but commonly used example to develop a full day\-to\-night cycle\. This example uses a concept similar to the dimmer in the [Dimmer and Night Light Example](#level-environment-probe-nightlight), but instead of changing the light bulb intensity, you change the sun's position\. This requires a large number of probes blending together\. Also, dawn and dusk require more probes than noon and midnight\. See the following procedure and script outline to get started\. 
+The following scenario is a more complex but commonly used example to develop a full day\-to\-night cycle\. This example uses a concept similar to the dimmer in the [Dimmer and Night Light Example](#level-environment-probe-nightlight), but instead of changing the light bulb intensity, you change the sun's position\. This requires a large number of probes blending together\. Also, dawn and dusk require more probes than noon and midnight\. See the following procedure and script outline to get started\.
 
 **To set up the day\-to\-night cycle probes and script**
 
-1. [Create a set of entities](/docs/userguide/creating-entity.md) to represent times\. Put them in the same location and make them the same size\. 
+1. [Create a set of entities](/docs/userguide/creating-entity.md) to represent times\. Put them in the same location and make them the same size\.
 
 1. Name the entities so that they correspond to a time on the 24\-hour clock, such as **probe1200** to represent noon\.
 
    For example, start with 0000, 0550, 0600, 0610, 1200, 1750, 1800, and 1810\. You don't need another probe at 2400 because that's the same as 0000\. Notice that there are more probes clustered around dawn and dusk than noon and midnight\.
-**Note**  
+**Note**
 You can name these probes whatever you like, but they must end with the 4\-digit time designation\. The script that you apply later in this procedure looks for entities that end with four digits corresponding to the time\.
 
 1. [Add](/docs/userguide/components/working-adding.md) an **[Environment Probe](/docs/userguide/components/environment-probe.md)**component to each entity\.
@@ -190,7 +190,7 @@ You can name these probes whatever you like, but they must end with the 4\-digit
 
 1. After you set the time of day and generate \(bake\) the cubemap for every probe, create another entity named **probe\_set**\.
 
-1. Select and move the probes into the **probe\_set** entity\.  
+1. Select and move the probes into the **probe\_set** entity\.
 ![\[Move all the environment probes into the parent entity, probe_set.\]](/images/userguide/level-environment-probe-daynight-1.png)
 
 1. In the **Entity Outliner**, do the following:
@@ -200,29 +200,29 @@ You can name these probes whatever you like, but they must end with the 4\-digit
    1. Add the **[Lua Script](/docs/userguide/components/lua-script.md)** component to the entity\.
 
    1. In the **Lua Script** component, for the **Script** property, click \(**\.\.\.**\) and then navigate and select the `ProbeBlending.lua` file\. See [`ProbeBlending.lua`](#probe-blending-example-script)\.
-**Note**  
+**Note**
 To create the script file, copy and paste the code into a text file\. Rename the file extension to `.lua` and save it in your project directory\.
 
-1. In the **Lua Script** component, for **Probes**, click **\+** until the number of **EntityId** slots equals the number of probes that you have\.  
+1. In the **Lua Script** component, for **Probes**, click **\+** until the number of **EntityId** slots equals the number of probes that you have\.
 ![\[Create EntityID slots to match the number of environment probes in the Lua Script component.\]](/images/userguide/level-environment-probe-daynight-2.png)
 
 1. Assign each of your probes to one of the script's **EntityId** probe slots\. In the **Entity Inspector**, click the target icon ![\[Target picker icon\]](/images/shared/picker.png) next to an empty slot\. In the **Entity Outliner**, select a probe\. Repeat until all slots are filled\.
 
-   In the following example, all of the empty slots are filled\. When they are not yet selected, the **EntityId** boxes are blank\.  
+   In the following example, all of the empty slots are filled\. When they are not yet selected, the **EntityId** boxes are blank\.
 ![\[Lua Script component with all probes selected.\]](/images/userguide/level-environment-probe-daynight-3.png) {#probe-blending-example-script}
 
-**Example**  
-See the following `ProbeBlending.lua` script\. To use this script, you must be in the StarterGame project\.  
+**Example**
+See the following `ProbeBlending.lua` script\. To use this script, you must be in the StarterGame project\.
 
 ```
 -- This script connects a set of probes to the time-of-day cycle and blends between them as time progresses.
--- It supports an arbitrary number of probes. This means that you can use as many or as few as you need. 
--- A minimum of two environment probes are required. You likely need more to get convincing results, particularly around dawn and 
+-- It supports an arbitrary number of probes. This means that you can use as many or as few as you need.
+-- A minimum of two environment probes are required. You likely need more to get convincing results, particularly around dawn and
 -- dusk when lighting conditions change dramatically.
-  
--- This script is provided as an example to help you get started. It is not an official feature, and is 
+
+-- This script is provided as an example to help you get started. It is not an official feature, and is
 -- therefore not guaranteed to address every need or be completely free from defects.
- 
+
 local ProbeBlending =
 {
     Properties =
@@ -233,17 +233,17 @@ local ProbeBlending =
         UseToD = true,  -- If true, progression is based on Time of Day (ToD). If false, an internal timer. Turning this off can be useful for testing purposes.
         CycleTime = 10  -- If UseToD = false, this is the number of seconds in one full cycle
     },
- 
+
     MAX_TIME = 24.0,
     ProbeData = {} -- Will be filled with entries {Probe=, Time=) sorted by time. Or nil if something went wrong.
 }
- 
+
 -- Function for sorting probes by time
 function ProbeBlending.ProbeLessThan(a, b)
     return EntityId.IsValid(a.Probe) and EntityId.IsValid(b.Probe) and a.Time < b.Time or
            EntityId.IsValid(a.Probe) and not EntityId.IsValid(b.Probe);
 end
- 
+
 -- Extracts a floating point 24-hour time value from a probe entity name. The last four characters of the probe
 -- name should be a 24 hour clock time value. For example, "1830" means "6:30pm" and returns a value of 18.5.
 -- Returns -1 if there is a problem
@@ -260,21 +260,21 @@ function ProbeBlending.ExtractTimeValue(probeName)
         return tonumber(hour) + tonumber(minutes)/60.0;
     end
 end
- 
+
 -- This function is called upon activation to prepare self.ProbeData for processing
 function ProbeBlending:ValidateAndSortProbeData()
     self.ProbeData = nil;
-     
+
     if(#self.Properties.Probes < 2) then
         Debug.Error(false, "Script requires at least 2 Probes");
         return;
     end
-     
+
     if(self.Properties.CycleTime <= 0 and not self.Properties.UseToD) then
         Debug.Error(false, "CycleTime must be > 0");
         return;
     end
-     
+
     -- Copies the probe data into a different table where it can be easily sorted.
     local probeDataTable = {};
     for i=0,#self.Properties.Probes,1 do
@@ -282,67 +282,67 @@ function ProbeBlending:ValidateAndSortProbeData()
         if(EntityId.IsValid(probe)) then
             local currentProbeName = GameEntityContextRequestBus.Broadcast.GetEntityName(probe);
             local probeTime = ProbeBlending.ExtractTimeValue(currentProbeName);
-             
+
             if(probeTime < 0) then
                 Debug.Error(false, "Probe Entity name '" .. currentProbeName .. "' does not end with a four-digit timecode");
                 return;
             end
-             
+
             probeDataTable[i] = {Probe=probe, Time=probeTime};
         end
     end
-     
+
     -- Sorts the probes according to their time codes
     table.sort(probeDataTable, ProbeBlending.ProbeLessThan);
-     
+
     -- Further validates the data
     for i=1,#probeDataTable,1 do
         local currentProbe = probeDataTable[i].Probe;
         local currentProbeTime = probeDataTable[i].Time;
-         
+
         if(currentProbeTime < 0 or currentProbeTime > self.MAX_TIME)  then
             Debug.Error(false, "Probe time is out of range [0," .. self.MAX_TIME .. "]");
             return;
         end
-         
+
         if(i > 1) then
             local prevProbe = probeDataTable[i-1].Probe;
             local prevProbeTime = probeDataTable[i-1].Time;
-             
+
             if(prevProbeTime >= currentProbeTime) then
                 Debug.Error(false, "Time values must increase");
                 return;
             end
         end
     end
-         
+
     -- Saves data after it has been validated
     self.ProbeData = probeDataTable;
 end
- 
- 
+
+
 function ProbeBlending:OnActivate()
     -- Subscribes to per-frame tick updates
     self.tickBusHandler = TickBus.Connect(self);
-     
+
     self:ValidateAndSortProbeData();
-     
+
     self.time = 0;
 end
- 
+
 function ProbeBlending:OnDeactivate()
     self.tickBusHandler:Disconnect();
 end
- 
+
 -- Per-frame updates are processed here
 function ProbeBlending:OnTick(deltaTime, timePoint)
-         
+
     local numProbes = #self.ProbeData;
     if(numProbes < 2) then return end
-         
-     
+
+
     local currentTime = 0;
-     
+
     -- Updates currentTime
     if(self.Properties.UseToD) then
         currentTime = StarterGameTimeOfDayUtility.GetTimeOfDay();
@@ -351,14 +351,14 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
         self.time = self.time + deltaTime * rate;
         currentTime = (self.time % 1.0) * self.MAX_TIME;
     end
-             
+
     -- Finds pair of probes that surround currentTime
     local probeIndexA = -1;
     local probeIndexB = -1;
     for i=1,numProbes,1 do
         local currentProbe = self.ProbeData[i].Probe;
         local currentProbeTime = self.ProbeData[i].Time;
-         
+
         if(currentTime < currentProbeTime) then
             probeIndexB = i;
             if i == 1 then
@@ -366,21 +366,21 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
             else
                 probeIndexA = probeIndexB-1;
             end
-             
+
             break;
         end
     end
-     
+
     if(self.ProbeData[numProbes].Time <= currentTime) then
         probeIndexA = numProbes;
         probeIndexB = 1;
     end
-     
+
     -- This first sets all attenuation values to 0 before blending in the relevant two.
     for i=1,numProbes,1 do
         Light.Event.SetProbeFade(self.ProbeData[i].Probe, 0);
     end
-     
+
     -- Calculates the blend between the two bordering probes, such that the final color should be something like
     -- probeA * (1-blend) + probeB * blend
     local blend = 1.0;
@@ -388,7 +388,7 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
         blend = Math.LerpInverse(self.ProbeData[probeIndexA].Time, self.ProbeData[probeIndexB].Time, currentTime);
     elseif(probeIndexB < probeIndexA) then
         local passedTime = 0;
-         
+
         timeBetweenProbes = self.ProbeData[probeIndexB].Time + (self.MAX_TIME - self.ProbeData[probeIndexA].Time);
         if(0 <= currentTime and currentTime <= self.ProbeData[probeIndexB].Time) then
             passedTime = currentTime + (self.MAX_TIME - self.ProbeData[probeIndexA].Time);
@@ -397,7 +397,7 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
         end
         blend = passedTime / timeBetweenProbes;
     end
-     
+
     -- Applies the blend by setting probe fades for the two relevant probes
     if(self.Properties.Blend) then
         local priorityA = Light.Event.GetProbeSortPriority(self.ProbeData[probeIndexA].Probe);
@@ -406,7 +406,7 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
             -- Time-adjacent probes must have different priorities in order to know which one to fade out. We'll force one to be higher
             Light.Event.SetProbeSortPriority(self.ProbeData[probeIndexB].Probe, priorityB+1);
         end
-         
+
         if (priorityA > priorityB) then
             Light.Event.SetProbeFade(self.ProbeData[probeIndexA].Probe, 1-blend);
             Light.Event.SetProbeFade(self.ProbeData[probeIndexB].Probe, 1);
@@ -418,7 +418,7 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
         Light.Event.SetProbeFade(self.ProbeData[probeIndexA].Probe, 1);
         Light.Event.SetProbeFade(self.ProbeData[probeIndexB].Probe, 0);
     end
-     
+
     -- Generates debug output
     if self.Properties.ShowDebugOutput then
         local debugInfo = "Fades> ";
@@ -426,14 +426,14 @@ function ProbeBlending:OnTick(deltaTime, timePoint)
             local currentProbe = self.ProbeData[i].Probe;
             local blendFactor = Light.Event.GetProbeFade(currentProbe);
             local currentProbeName = GameEntityContextRequestBus.Broadcast.GetEntityName(currentProbe);
-             
+
             debugInfo = debugInfo .. string.format("%s: %.2f | ", currentProbeName, blendFactor)
         end
         Debug.Log(debugInfo);
     end
- 
+
 end
- 
- 
+
+
 return ProbeBlending
 ```

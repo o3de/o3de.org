@@ -19,7 +19,7 @@ The suffix in the name indicates which sides of the box that the texture is mapp
 
 You can use any image editing software to create a skybox texture\. We used Adobe Photoshop to create this example and followed these specifications:
 + The source sky image is authored at 8192 x 1024\.
-+ The image uses 16 bits per channel to help preserve smooth gradients in the sky\. 
++ The image uses 16 bits per channel to help preserve smooth gradients in the sky\.
 + The image is divided into four sections that are 2048 x 1024 each \(for illustration purposes\)\.
 
 The numbers represent each side of the skybox that the texture is mapped to\. Sides 1 and 2 will become `skybox_12.tif` and sides 3 and 4 will become `skybox_34.tif`\.
@@ -39,9 +39,9 @@ When you combine sides 1 and 2 into a single texture \(`skybox_12.tif`\), you mu
 1. Navigate to the directory with your newly created textures\.
 
 1. Right\-click each texture and choose **RC Open Image**\.
-**Note**  
+**Note**
 If you do not see **RC Open Image**, you must install RC Shell Commands using the Lumberyard Setup Assistant\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 
 1. In the texture dialog box, under **Preset**, choose **SkyboxHDR** from the drop\-down list\. Click **OK**\. This will create a text file \(`imagename.exportsettings`\) that Lumberyard uses to compile the texture correctly\.
 
-1. If you use source control, you must check in all images and `.exportsettings` files\. If you do not check in these files, your scene will not render similarly for each person on your project\. 
+1. If you use source control, you must check in all images and `.exportsettings` files\. If you do not check in these files, your scene will not render similarly for each person on your project\.

@@ -9,7 +9,7 @@ Lumberyard provides a package named Legacy Game Sample that demonstrates how to 
 
 You can use the legacy game sample to evaluate changes you make to the engine core and ensure your changes do not have unintended side effects\. The legacy game sample is intended to be used as a reference for how to communicate with various systems of the Lumberyard engine\. We do not recommend using the legacy game sample as the starting point of a new game\.
 
-**Note**  
+**Note**
 The legacy game sample is Windows only and is not supported on console or mobile devices\. This sample is compatible with Lumberyard 1\.9 and earlier\.
 
 **To download and access GameSDK**
@@ -17,7 +17,7 @@ The legacy game sample is Windows only and is not supported on console or mobile
 1. Download the `GameSDK.zip` package at [Lumberyard Previous Versions](https://aws.amazon.com/lumberyard/downloads/previous-versions/) and extract it in your Lumberyard directory\. For example, `\lumberyard\1.x.0.0`\.
 
 1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md) and on the **Summary** page, click **Project Configurator**\.
-**Note**  
+**Note**
 To ensure that the GameSDK project launches, you must use Lumberyard Setup Assistant to open the Project Configurator\. Lumberyard Setup Assistant copies required SDKs from the `3rdParty` directory into the `dev\GameSDK` directory\.
 
 1. In the Project Configurator, select **GameSDK**\.
@@ -28,5 +28,5 @@ To ensure that the GameSDK project launches, you must use Lumberyard Setup Assis
 
 1. Open Lumberyard Setup Assistant\. On the **Summary** page, click **Launch editor**\.
 
-**Note**  
+**Note**
 Audiokinetic Wave Works Interactive Sound Engine \(Wwise\) version 2014\.1\.14 or later is required to access audio for this project\.

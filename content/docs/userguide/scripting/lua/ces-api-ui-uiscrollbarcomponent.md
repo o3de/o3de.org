@@ -184,7 +184,7 @@ Returns the name of the action triggered when the value has changed\.
 **Syntax**
 
 ```
-const AZStd::string& GetValueChangedActionName() 
+const AZStd::string& GetValueChangedActionName()
 ```
 
 ### GetValueChangingActionName {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getvaluechangingactionname}
@@ -194,7 +194,7 @@ Returns the name of the action triggered while the value is changing\.
 **Syntax**
 
 ```
-AZStd::string& GetValueChangingActionName() 
+AZStd::string& GetValueChangingActionName()
 ```
 
 ### SetOrientation {#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-setorientation}
@@ -204,7 +204,7 @@ Sets the orientation of the scroller\.
 **Syntax**
 
 ```
-SetOrientation(eUiScrollerOrientation orientation) 
+SetOrientation(eUiScrollerOrientation orientation)
 ```
 
 For possible values for `eUiScrollerOrientation`, see [GetOrientation](#lua-scripting-ces-api-ui-uiscrollbarcomponent-uiscrollerbus-getorientation)\.

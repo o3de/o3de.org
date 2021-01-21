@@ -48,7 +48,7 @@ function SpawnerScriptSample:OnEntitySpawned(sliceTicket, entityId)
 end
 
 function SpawnerScriptSample:OnDeactivate()
-    -- Disconnect our spawner notificaton 
+    -- Disconnect our spawner notificaton
     if self.spawnerNotiBusHandler ~= nil then
         self.spawnerNotiBusHandler:Disconnect()
         self.spawnerNotiBusHandler = nil
@@ -85,8 +85,8 @@ end
 return TestScript
 ```
 
-**Note**  
-Instead of calling `CreateHandler` and then calling `Connect` on the handler, you can use the Lua shortcut function `TickBus.Connect`\. The `Connect` function uses the following syntax to create a handler and automatically connect the handler to the bus\.   
+**Note**
+Instead of calling `CreateHandler` and then calling `Connect` on the handler, you can use the Lua shortcut function `TickBus.Connect`\. The `Connect` function uses the following syntax to create a handler and automatically connect the handler to the bus\.
 
 ```
 handler = TickBus.Connect(handlerTable[, connectionId])
@@ -147,21 +147,21 @@ end
 return ParentScriptSample
 ```
 
-**Important**  
+**Important**
 If you have a Lua script that is attached to an entity that needs to get information from another entity, your script must subscribe to the target entity's `OnEntityActivated` event\. Your script should wait for the target entity to be activated before requesting the relevant information\. Otherwise, your script might return nil\.
 
 ## Using AZStd::vector and AZStd::array {#lua-scripting-ces-using-azstd-vector-and-azstd-array}
 
 Vectors and arrays in Lua behave very simarly to tables, with a few limitations\. Both vector and array have the following features\.
 
-**Length Operator `#`**  
+**Length Operator `#`**
 You can obtain the length of a collection by prefixing the name of the collection with the length operator `#`, as in the following example\.
 
 ```
 #myCollection
 ```
 
-**Indexing \[\]**  
+**Indexing \[\]**
 To obtain the elements in a collection, use indexing in square brackets as the following syntax shows\. Indexing is 1 based, just like Lua tables\.
 
 ```
@@ -170,21 +170,21 @@ myCollection[index]
 
 `Vector` also has the following methods for mutating the collection\.
 
-**push\_back**  
+**push\_back**
 Use the `push_back` method to append elements to the vector, as in the following example\.
 
 ```
 myCollection:push_back(5)
 ```
 
-**pop\_back**  
-Use the `pop_back` method to remove the last element of the vector, as in the following example\. 
+**pop\_back**
+Use the `pop_back` method to remove the last element of the vector, as in the following example\.
 
 ```
 myCollection:pop_back()
 ```
 
-**clear**  
+**clear**
 Use the `clear` method to remove all elements from the vector, as in the following example\.
 
 ```

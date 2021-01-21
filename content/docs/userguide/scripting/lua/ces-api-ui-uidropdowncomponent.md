@@ -93,7 +93,7 @@ void SetWaitTime(float waitTime)
 
 ### GetCollapseOnOutsideClick {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-getcollapseonoutsideclick}
 
-Returns whether this dropdown collapses when the user clicks outside\. 
+Returns whether this dropdown collapses when the user clicks outside\.
 
 **Syntax**
 
@@ -118,7 +118,7 @@ Returns the element that the dropdown content parents to when expanded \(the roo
 **Syntax**
 
 ```
-AZ::EntityId GetExpandedParentId() 
+AZ::EntityId GetExpandedParentId()
 ```
 
 ### SetExpandedParentId {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownbus-setexpandedparentid}
@@ -253,7 +253,7 @@ void SetOptionSelectedActionName(const LyShine::ActionName& actionName)
 
 ## UiDropdownNotificationBus {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus}
 
-Services notifications for the `UiDropdownComponent`\. 
+Services notifications for the `UiDropdownComponent`\.
 
 ### OnDropdownExpanded {#lua-scripting-ces-api-ui-uidropdowncomponent-uidropdownnotificationbus-ondropdownexpanded}
 

@@ -9,7 +9,7 @@ You register a component during application startup\. You implement the registra
 The following example module creates descriptors for the components that are declared within the module\.
 
 ```
-//MyModule.cpp 
+//MyModule.cpp
 
 MyModule::MyModule()
 {

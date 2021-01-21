@@ -7,7 +7,7 @@ title: Decoding a URL with &script-canvas;
 You can use the **AWSBehaviorURL** **Decode** node in Script Canvas to decode an encoded URL, as in the following example:
 
 ```
-http%3A%2F%2Fdocs.aws.amazon.com%2Flumberyard%2Flatest%2Fuserguide%2Fcloud-canvas-intro.html   
+http%3A%2F%2Fdocs.aws.amazon.com%2Flumberyard%2Flatest%2Fuserguide%2Fcloud-canvas-intro.html
 ```
 
 When the URL is decoded, the escape characters are converted to normal characters, as in the following example:
@@ -67,7 +67,7 @@ At this point, if you saved the graph and started the level, the **Get Variable*
 
 1. Connect the **Out** pins of the **AWSBehaviorURLNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
-1. Connect the **String** pins of the **AWSBehaviorURLNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
+1. Connect the **String** pins of the **AWSBehaviorURLNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:
 ![\[A Script Canvas graph that decodes a URL\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-url-decode-sc-1.png)
 
 1. Save the canvas with a name like `MyUrlDecoder.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.

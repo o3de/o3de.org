@@ -15,7 +15,7 @@ The **Hover**, **Pressed**, and **Disabled** states have a list of **state actio
 + **Sprite** - Texture
 + **Font** - Text font and font effect \(of a text component, for example\)
 
-The **state actions**-**Color**, **Alpha**, **Sprite**, and **Font**-each have a **Target** property that specifies which visual element is to be affected\. The elements from which you can choose include the current element-listed as **<This element>**, its child elements, and the descendants of its child elements\. Using the **Target** property, you can pick exactly which visual element to override\. 
+The **state actions**-**Color**, **Alpha**, **Sprite**, and **Font**-each have a **Target** property that specifies which visual element is to be affected\. The elements from which you can choose include the current element-listed as **<This element>**, its child elements, and the descendants of its child elements\. Using the **Target** property, you can pick exactly which visual element to override\.
 
 For example, the button [prefab](/docs/userguide/ui/editor/prefabs.md) has a top element named **Button** that has a visual component to define its color\. It also has a child element with a text component to define the text \(and its color\) of the button\. The top element \(**Button**\) also has the **Interactable** component\. The **Target** for the **color** state action can override either the **Button** element's color or the **Text** element's color, depending on what you select from the list\.
 
@@ -29,7 +29,7 @@ In the [**UI Editor**](/docs/userguide/ui/editor/using.md), in the **Properties*
 
 1. Under **Interactable**, **States**, click **Add new element** \(green **\+**\)\.
 
-1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**\.  
+1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**\.
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-interactive-stateactions.png)
 
 **To delete a state action**

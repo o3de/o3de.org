@@ -13,9 +13,9 @@ Scripts to be used as components contain a table \(referred to as the script tab
 The following example shows a skeleton script\.
 
 ```
--- ScriptName.lua 
+-- ScriptName.lua
 
-local ScriptName = 
+local ScriptName =
 {
     Properties =
     {

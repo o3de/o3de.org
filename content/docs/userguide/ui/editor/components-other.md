@@ -14,7 +14,7 @@ You can add either or both of the fader and mask components to an element\.
 
 ## Fader {#ui-editor-components-fader}
 
-You can use a **Fader** component to simultaneously adjust the transparency of an element and its children\. 
+You can use a **Fader** component to simultaneously adjust the transparency of an element and its children\.
 
 **To see in\-game examples of completed canvases with a **Fader** component**
 

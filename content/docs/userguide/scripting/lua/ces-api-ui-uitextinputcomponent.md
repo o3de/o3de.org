@@ -198,7 +198,7 @@ Sets the placeholder text element\.
 **Syntax**
 
 ```
-void SetPlaceHolderTextEntity(AZ::EntityId textEntity) 
+void SetPlaceHolderTextEntity(AZ::EntityId textEntity)
 ```
 
 ### SetReplacementCharacter {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-setreplacementcharacter}
@@ -208,7 +208,7 @@ Sets the replacement character used to hide password text\.
 **Syntax**
 
 ```
-void SetReplacementCharacter(char replacementChar) 
+void SetReplacementCharacter(char replacementChar)
 ```
 
 ### SetText {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settext}
@@ -228,7 +228,7 @@ Sets the color to be used for the text cursor\.
 **Syntax**
 
 ```
-void SetTextCursorColor(const AZ::Color& color) 
+void SetTextCursorColor(const AZ::Color& color)
 ```
 
 ### SetTextEntity {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputbus-settextentity}
@@ -248,7 +248,7 @@ Sets the color to be used for the text background when it is selected\.
 **Syntax**
 
 ```
-void SetTextSelectionColor(const AZ::Color& color) 
+void SetTextSelectionColor(const AZ::Color& color)
 ```
 
 ## UiTextInputNotificationBus {#lua-scripting-ces-api-ui-uitextinputcomponent-uitextinputnotificationbus}

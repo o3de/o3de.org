@@ -15,25 +15,25 @@ To disable the effect, see [Disable Ghosting](/docs/userguide/rendering/disable/
 
 ![\[enableghosting, enableghostingnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-ghosting-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Ghosting node to add blurriness as you move the camera.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-ghosting-node-example.gif)
 
 ## Inputs {#enable-ghosting-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Amount | Number |  Strength of the ghosting effect\. Default value: `0`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Amount | Number |  Strength of the ghosting effect\. Default value: `0`  |
 
 ## Outputs {#enable-ghosting-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

@@ -17,7 +17,7 @@ void GameManager::OnSessionCreated(GridMate::GridSession* session)
 {
      m_gameSession = session;
      if (m_gameSession)
-     {          
+     {
           if (m_gameSession->IsHost())
           {
                if (gEnv->IsDedicated())
@@ -71,10 +71,10 @@ To use CVARs to set the client side configuration, enter the following console c
 
 **To use the multiplayer sample user interface to configure Amazon GameLift**
 
-1. By default, the multiplayer sample loads the **Game Lobby** map\. To add or modify the CVARs, choose **Amazon GameLift**\.  
+1. By default, the multiplayer sample loads the **Game Lobby** map\. To add or modify the CVARs, choose **Amazon GameLift**\.
 ![\[Click Amazon GameLift\]](/images/userguide/networking/network-multiplayer-gs-gamelift-choose-gamelift.png)
 
-1. Fill in the details of the GameLift configuration and choose **Connect**\.  
+1. Fill in the details of the GameLift configuration and choose **Connect**\.
 ![\[Fill in the details of the GameLift configuration and choose Connect\]](/images/userguide/networking/network-multiplayer-gs-gamelift-connect.png)
 
 1. To **create** a game session and join automatically, select the **Create Server** radio button and do the following:
@@ -83,7 +83,7 @@ To use CVARs to set the client side configuration, enter the following console c
 
    1. Enter the **Queue Name**, **Fleet ID**, or **Alias ID**\.
 
-   1. Choose the **Create Server** button\.  
+   1. Choose the **Create Server** button\.
 ![\[Specify server name and map. Enter queue name, fleet ID, or alias ID. Choose Create Server to create a game session and join automatically.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-create-session.png)
 
 1. To **search** for and **join** an active game session, select the **Join Server** radio button and do the following:
@@ -92,14 +92,14 @@ To use CVARs to set the client side configuration, enter the following console c
 
    1. Choose **Refresh**\. Active game sessions will be listed\.
 
-   1. Select a session and choose **Join**\.  
+   1. Select a session and choose **Join**\.
 ![\[Specify the Queue Name, Fleet ID, or Alias ID. Choose Refresh to search for active game sessions. Select an active session and choose Join to join a session.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-join-session.png)
 
 1. To use **matchmaking** to get placed in a game session, select the **FlexMatch** radio button and do the following:
 
    1. Specify the matchmaking **Config Name**\.
 
-   1. Choose **Start Matchmaking**\.  
+   1. Choose **Start Matchmaking**\.
 ![\[Specify the matchmaking Config Name. Choose Start Matchmaking.\]](/images/userguide/networking/network-multiplayer-gs-gamelift-matchmaking-session.png)
 
 ## Create an Amazon GameLift Package {#network-multiplayer-gs-gamelift-create-gamelift-package}
@@ -148,5 +148,5 @@ If client verification is needed, make the following change to the `game.cfg` fi
 gm_netsec_verify_client = 1
 ```
 
-**Note**  
+**Note**
 By default, the certificate and private key are loaded from the `multiplayersample.cert.pem` file \(shared by the certificate and CA root\) and from the `multiplayersample.key.pem` file\. To specific different files, use the `gm_netsec_certificate` and `gm_netsec_private_key` CVARs\.

@@ -20,11 +20,11 @@ Lumberyard includes the following cloud gems\. You can enable them in a project 
 ## Cloud Gem Portal {#gems-system-gem-aws-cloud-gems-portal}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-|  The Cloud Gem Portal \(CGP\) is deprecated and will be removed in a future version of Lumberyard\.  | 
+|  The Cloud Gem Portal \(CGP\) is deprecated and will be removed in a future version of Lumberyard\.  |
 
 A cloud gem creates a cloud gem portal for you that you can use to manage the cloud data for your game\. The cloud gem portal is hosted in your AWS account and is a website that you own and can customize\. For more information, see [Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)\.
 

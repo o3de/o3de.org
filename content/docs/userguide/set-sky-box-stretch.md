@@ -16,18 +16,18 @@ Sets the stretch factor, which affects how the skybox stretches vertically\. Str
 ## Inputs {#set-sky-box-stretch-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Amount | Number |  Vertical stretch factor\.  A value of `0` does not stretch the skybox\. Specify a higher value to lower the horizon line\. Default value: `0`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Amount | Number |  Vertical stretch factor\.  A value of `0` does not stretch the skybox\. Specify a higher value to lower the horizon line\. Default value: `0`  |
 
 ## Outputs {#set-sky-box-stretch-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

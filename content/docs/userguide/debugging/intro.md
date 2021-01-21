@@ -5,11 +5,11 @@ title: Debugging Issues
 # Debugging Issues {#debugging-intro}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 Lumberyard provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
 + [Character skeleton debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-model-debugging.html) - Use the `p_draw_helpers` console variable to debug character skeleton issues\.
@@ -25,22 +25,22 @@ Lumberyard provides the following built\-in debugging and profiling tools that y
 
 ## Crash logging {#debugging-crash-logging}
 
- Logging and reporting for crashes that occur in the Lumberyard Editor or your Lumberyard game can be turned on by modifying the `sys_dump_type` console variable\. The type of crash log information generated depends on the value: 
+ Logging and reporting for crashes that occur in the Lumberyard Editor or your Lumberyard game can be turned on by modifying the `sys_dump_type` console variable\. The type of crash log information generated depends on the value:
 + `0` - Disable crash reporting\.
 + `1` - Generate a stack trace on crash
 + `2` - Generate a stack trace and limited variable information\.
 + `3` - Full crash dump of the stack trace, variable information, and all memory\.
 
- Crash logs are written to the `Cache\project_name\platform\user\log\error.log` file\. 
+ Crash logs are written to the `Cache\project_name\platform\user\log\error.log` file\.
 
- By default, only the call stack for the main thread is in a crash dump\. In order to get the stack trace of auxiliary threads, set the `sys_dump_aux_threads` console variable to `1`\. 
+ By default, only the call stack for the main thread is in a crash dump\. In order to get the stack trace of auxiliary threads, set the `sys_dump_aux_threads` console variable to `1`\.
 
 ## Using Console Debug Views {#debugging-debug-views}
 
 The viewport window displays debugging information by default when you are in gameplay mode \(**Ctrl\+G**\)\. You can toggle this information on or off by pressing the tilde \(**\~**\) key\. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging\.
 + `e_Camerafreeze 1` - Freezes the camera to see what is rendered from the camera's point of view and what is occluded\. Also useful for debugging object culling and LOD\.
 + `e_DefaultMaterial 1` - Applies a uniform, flat, gray material to every surface in the level\.
-+ `e_memoryProfiling 1` - Prints onscreen statistics for the amount of GPU memory that textures and buffers use\.  
++ `e_memoryProfiling 1` - Prints onscreen statistics for the amount of GPU memory that textures and buffers use\.
 ![\[Using the e_memoryProfiling console variable to display VRAM usage.\]](/images/userguide/debugging-debug-views-vram-usage.png)
 + `e_TerrainBBoxes` - Displays terrain bounding boxes\.
 + `p_debug_joints 1` - Shows the mass of objects in kilograms and the joint that is linked to the object\. To display joints, you must first enable `p_draw_helpers 1`\.
@@ -65,7 +65,7 @@ Use the following console variables and values to display information about your
 + `e_DebugDraw 8` - Displays RenderWorld statistics \(with view cones\)\.
 + `e_DebugDraw 9` - Displays RenderWorld statistics \(with view cones without lights\)\.
 + `e_DebugDraw 10` - Displays render geometry with simple lines and triangles\.
-+ `e_DebugDraw 11` - Displays render occlusion geometry\. 
++ `e_DebugDraw 11` - Displays render occlusion geometry\.
 + `e_DebugDraw 12` - Displays render occlusion geometry without render geometry\.
 + `e_DebugDraw 13` - Displays occlusion amount \(used during AO computations\)\.
 + `e_DebugDraw 15` - Displays helpers\.
@@ -91,7 +91,7 @@ Use the following console variables and values to display materials, colors, sha
 + `r_DebugGBuffer 6` - Shows the translucency values that are set on assets in the level\. Black = none\.
 + `r_DebugGBuffer 7` - Shows self\-shadowing of materials that use Offset Bump mapping or Parallax Occlusion Mapping\.
 + `r_DebugGBuffer 8` - Shows in red and yellow any asset that uses SSS\. The brighter the color, the higher the SSS index\.
-+ `r_DebugGBuffer 9` - Shows whether specular colors are in a reasonable range as follows: 
++ `r_DebugGBuffer 9` - Shows whether specular colors are in a reasonable range as follows:
   + **Blue** - The specular color is too low\.
   + **Orange** - The specular color is too high for dielectric materials\.
   + **Pink** - The specular color is valid only for rusted or oxidized metals\.

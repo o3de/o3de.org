@@ -29,7 +29,7 @@ To author sounds with Wwise LTX for your game, you must first install Wwise LTX 
 1. If prompted to sign in to your Audiokinetic account, provide the requested information and choose **Log in**, or choose **Sign up now** to create an account\.
 
 1. Select the desired installation components and settings for Wwise LTX or accept the default, and then choose **Next**\.
-**Note**  
+**Note**
 The Wwise LTX SDK is already included in Lumberyard's `3rdParty` directory\. If you prefer a lightweight install, you can clear the SDK component and all the deployment platforms\.
 
 1. Review and update the installation Target Directory as needed, then choose **Install**\.
@@ -37,7 +37,7 @@ The Wwise LTX SDK is already included in Lumberyard's `3rdParty` directory\. If 
 1. Review the license terms, then choose **Accept** if you wish to proceed with installation\.
 
 1. Once the installation successfully completes, close the **Wwise Launcher** and return to Lumberyard Setup Assistant\. It should now show that Wwise LTX is installed\. You can now close Lumberyard Setup Assistant\.
-**Note**  
+**Note**
 Lumberyard does not require installation of the new version of Wwise listed in the Wwise Launcher\.
 
 ## Running the Wwise LTX Authoring Tool {#audio-setting-wwise-authoring-tool}

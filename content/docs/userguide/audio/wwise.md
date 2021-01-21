@@ -5,7 +5,7 @@ title: Audiokinetic Wwise
 # Audiokinetic Wwise {#audio-wwise}
 
 Lumberyard supports two flavors of Audiokinetic's Wwise audio middleware technology:
-+ **Wwise** - The full product contains advanced features, supports third\-party plugins, has full surround capabilities, and more\. Wwise must be purchased separately\. 
++ **Wwise** - The full product contains advanced features, supports third\-party plugins, has full surround capabilities, and more\. Wwise must be purchased separately\.
 
   For information, see [https://www\.audiokinetic\.com/pricing/](https://www.audiokinetic.com/pricing/) and [https://www\.audiokinetic\.com/licensing/faq/](https://www.audiokinetic.com/licensing/faq/)\.
 + **Wwise LTX** - An exclusive, free version of Wwise is included with Lumberyard\. Wwise LTX has a simplified authoring workflow and is a great starting point for new users\.

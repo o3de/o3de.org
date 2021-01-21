@@ -9,7 +9,7 @@ The **Sprite Editor** configures the following sprite configurations:
 + Border values for [sliced image types](/docs/userguide/ui/editor/component-9-sliced.md)
 + [Sprite sheets](/docs/userguide/ui/editor/component-sprite-sheets.md)
 
-You open the **Sprite Editor** from the **Image** component's properties\. 
+You open the **Sprite Editor** from the **Image** component's properties\.
 
 **To open the Sprite Editor**
 

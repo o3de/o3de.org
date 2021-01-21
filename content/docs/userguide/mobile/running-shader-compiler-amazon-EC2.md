@@ -69,7 +69,7 @@ Once the Amazon EC2 instance is set up, you can install virtual network computin
 **To install VNC software**
 
 1. Using a remote desktop connection, log in to the Amazon EC2 instance\.
-**Note**  
+**Note**
 If you are using a Mac, you must download Remote Desktop App from the App Store\.
 
 1. Download and install your preferred [VNC software](https://en.wikipedia.org/wiki/Virtual_Network_Computing)\.

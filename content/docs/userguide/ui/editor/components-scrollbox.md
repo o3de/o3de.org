@@ -7,7 +7,7 @@ title: ScrollBox
 
 You can use a **ScrollBox** component to present content, such as images or text, within a scrollable area\.
 
-This component is typically used with a mask component, which hides the content outside of the masked area\. 
+This component is typically used with a mask component, which hides the content outside of the masked area\.
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-scrollbox.gif)
 
@@ -30,18 +30,18 @@ The element named **ScrollBox** \(1\) has the **ScrollBox** component \(2\) appl
 
 The element named **Mask** has a [**Mask**](/docs/userguide/ui/editor/components-mask.md) component applied to it, which acts as the viewport through which you can see the content\. To specify a custom mask, you can add an image to the **Mask** element's **Image** component\. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content\.
 
-**To edit a scroll box component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **ScrollBox** and do the following, as appropriate:    
-**Interactable**  
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
-**Content**, **Content element**  
-Select an element from the list to provide the content to be displayed within the scroll box\.  
-**Content**, **Initial scroll offset**  
-Enter the initial offset value of the content element's pivot point from the parent element's pivot point\.  
-**Content**, **Constrain scrolling**  
-Select the check box to prevent content from scrolling beyond its edges\.  
-**Content**, **Snap**  
-Select a snapping mode:  
+**To edit a scroll box component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **ScrollBox** and do the following, as appropriate:
+**Interactable**
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+**Content**, **Content element**
+Select an element from the list to provide the content to be displayed within the scroll box\.
+**Content**, **Initial scroll offset**
+Enter the initial offset value of the content element's pivot point from the parent element's pivot point\.
+**Content**, **Constrain scrolling**
+Select the check box to prevent content from scrolling beyond its edges\.
+**Content**, **Snap**
+Select a snapping mode:
 + **None** - No snapping\.
 
    
@@ -50,13 +50,13 @@ Select a snapping mode:
    
 + **To grid** - When a drag motion is released, the content element's pivot point is snapped to a multiple of the grid spacing from the parent element's pivot point\.
 
-     
-**Horizontal scrolling**, **Enabled**  
-Select the check box to enable content to scroll horizontally\. If the element, or its parent, is rotated, then the axis of scrolling is also rotated\. You can enable horizontal scrolling simultaneously with vertical scrolling to scroll in both directions\.  
-**Horizontal scrolling**, **Scrollbar element**  
-Select an element from the list to provide the horizontal scroll bar associated with the scroll box\.  
-**Horizontal scrolling**, **Scrollbar visibility**  
-Select the visibility behavior of the horizontal scroll bar:  
+   
+**Horizontal scrolling**, **Enabled**
+Select the check box to enable content to scroll horizontally\. If the element, or its parent, is rotated, then the axis of scrolling is also rotated\. You can enable horizontal scrolling simultaneously with vertical scrolling to scroll in both directions\.
+**Horizontal scrolling**, **Scrollbar element**
+Select an element from the list to provide the horizontal scroll bar associated with the scroll box\.
+**Horizontal scrolling**, **Scrollbar visibility**
+Select the visibility behavior of the horizontal scroll bar:
 + **Always visible** - Scroll bar is always visible\.
 
    
@@ -65,13 +65,13 @@ Select the visibility behavior of the horizontal scroll bar:
    
 + **Auto hide and resize view area** - Same as **Auto hide**, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
 
-     
-**Vertical scrolling**, **Enabled**  
-Select the check box to enable content to scroll vertically\. If the element, or its parent, is rotated, then the axis of scrolling is also rotated\. You can enable vertical scrolling simultaneously with horizontal scrolling to scroll in both directions\.  
-**Vertical scrolling**, **Scrollbar element**  
-Select an element from the list to provide the vertical scroll bar associated with the scroll box\.  
-**Vertical scrolling**, **Scrollbar visibility**  
-Select the visibility behavior of the vertical scroll bar:  
+   
+**Vertical scrolling**, **Enabled**
+Select the check box to enable content to scroll vertically\. If the element, or its parent, is rotated, then the axis of scrolling is also rotated\. You can enable vertical scrolling simultaneously with horizontal scrolling to scroll in both directions\.
+**Vertical scrolling**, **Scrollbar element**
+Select an element from the list to provide the vertical scroll bar associated with the scroll box\.
+**Vertical scrolling**, **Scrollbar visibility**
+Select the visibility behavior of the vertical scroll bar:
 + **Always visible** - Scroll bar is always visible\.
 
    
@@ -80,8 +80,8 @@ Select the visibility behavior of the vertical scroll bar:
    
 + **Auto hide and resize view area** - Same as auto hide, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
 
-     
-**Actions**, **Change**  
-Set the action that is triggered during dragging each time the position changes\.  
-**Actions**, **End change**  
-Set the action that is triggered when a drag motion is completed\. 
+   
+**Actions**, **Change**
+Set the action that is triggered during dragging each time the position changes\.
+**Actions**, **End change**
+Set the action that is triggered when a drag motion is completed\.

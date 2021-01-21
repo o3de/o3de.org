@@ -19,6 +19,6 @@ The **VR Preview** component, when added to an entity or spawned from a slice, c
 
    Now you can drag the saved slice to another part of the level, and the navigation mesh will be generated around the entity\.
 
-The navigation mesh that is generated is a separate entity from the original entity\. Lumberyard names the new nav mesh entity by appending `_NavMesh` to the original entity name\. 
+The navigation mesh that is generated is a separate entity from the original entity\. Lumberyard names the new nav mesh entity by appending `_NavMesh` to the original entity name\.
 
 If you delete the original entity, the nav mesh entity continues to exist\. However, if you delete the nav mesh entity, it won't be generated again\.

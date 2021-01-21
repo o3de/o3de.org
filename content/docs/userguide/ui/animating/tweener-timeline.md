@@ -7,12 +7,12 @@ title: Tweener Timeline
 
 In the Scripted Entity Tweener system, you can create a timeline for granular control over your animations\. You can chain and group animations\. You can pause, resume, seek, play backward, label, and even dynamically control the playback speed of the animations\.
 
-To create a timeline, you can customize the following Lua script\. 
+To create a timeline, you can customize the following Lua script\.
 
-In this example, the script first animates the entity specified by `ToAnimate`, increasing its size from its original value to a width `["w"]` and height `["h"]` of `600`\. The script then animates the entity by shrinking it to a width `["w"]` and height `["h"]` of `200`\. 
+In this example, the script first animates the entity specified by `ToAnimate`, increasing its size from its original value to a width `["w"]` and height `["h"]` of `600`\. The script then animates the entity by shrinking it to a width `["w"]` and height `["h"]` of `200`\.
 
 ```
-local AnimateUiEntity = 
+local AnimateUiEntity =
 {
 	Properties =
 	{
@@ -57,7 +57,7 @@ return AnimateUiEntity
 The following example shows all of the supported timeline operations\.
 
 ```
--- Chained animations	
+-- Chained animations
 self.timeline = self.ScriptedEntityTweener:TimelineCreate()
 self.timeline:Add(…)
 self.timeline:Add(…)

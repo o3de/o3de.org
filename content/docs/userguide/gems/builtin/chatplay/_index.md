@@ -20,7 +20,7 @@ Use of the Twitch Chat Gem in your project requires the following setup:
 1. Setup an account on Twitch that will be used by the game\. You will need to provide your username or a username that you wish to represent you \(such as a bot id, potentially with mod permissions in the channel, depending on your goals\)\.
 
 1. Get a [Twitch OAuth token](https://twitchapps.com/tmi/)\.
-**Important**  
+**Important**
 Keep this token safe and **do not share** this publicly\! this is essentially your password for connecting, and if you share it with others, they can spoof your account\.
 
    For more information about **Twitch IRC** and authentication, see the [Twitch documentation](https://dev.twitch.tv/docs/irc/guide)\.

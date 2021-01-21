@@ -30,16 +30,16 @@ The handler for the `Custom::ServiceApi` AWS CloudFormation resource is provided
 ```
 {
     "Resources": {
-        ... 
+        ...
         "ServiceApi": {
-            "Type": "Custom::ServiceApi", 
+            "Type": "Custom::ServiceApi",
             "Properties": {
-                "ServiceToken": { "Ref": "ProjectResourceHandler" }, 
-                "ConfigurationBucket": { "Ref": "ConfigurationBucket" }, 
-                "ConfigurationKey": { "Ref": "ConfigurationKey" }, 
-                "CacheClusterSize": { "Ref": "ServiceApiCacheClusterSize" }, 
-                "CacheClusterEnabled": { "Ref": "ServiceApiCacheClusterEnabled" }, 
-                "MethodSettings": { ... }, 
+                "ServiceToken": { "Ref": "ProjectResourceHandler" },
+                "ConfigurationBucket": { "Ref": "ConfigurationBucket" },
+                "ConfigurationKey": { "Ref": "ConfigurationKey" },
+                "CacheClusterSize": { "Ref": "ServiceApiCacheClusterSize" },
+                "CacheClusterEnabled": { "Ref": "ServiceApiCacheClusterEnabled" },
+                "MethodSettings": { ... },
                 "SwaggerSettings": {
                     "ServiceLambdaArn": { "Fn::GetAtt": [ "ServiceLambda", "Arn" ] }
                 }
@@ -47,40 +47,40 @@ The handler for the `Custom::ServiceApi` AWS CloudFormation resource is provided
             ...
 ```
 
-`ServiceToken`  
+`ServiceToken`
 Identifies the Lambda function that implements the custom resource handler\.
 
-`ConfigurationBucket`  
+`ConfigurationBucket`
 Identifies the bucket that contains the uploaded `swagger.json` file\.
 
-`ConfigurationKey`  
+`ConfigurationKey`
 Identifies the location in the bucket where the `swagger.json` file is uploaded\.
 
-`CacheClusterSize`  
+`CacheClusterSize`
 Provides the API Gateway [cacheClusterSize](https://docs.aws.amazon.com/apigateway/api-reference/link-relation/stage-create/#cacheClusterSize) value when you create or update the API Gateway stage\.
 
-`CacheClusterEnabled`  
+`CacheClusterEnabled`
 Provides the API Gateway [cacheClusterEnabled](https://docs.aws.amazon.com/apigateway/api-reference/link-relation/stage-create/#cacheClusterEnabled) value when your create or update the API Gateway stage\.
 
-`MethodSettings`  
+`MethodSettings`
 Not implemented\.
 
-`SwaggerSettings`  
-Provides values that you insert into the uploaded `swagger.json` file before it is passed to API Gateway\. For example, you can use `$ServiceLambdaArn$` in the `swagger.json` file to insert the value of the `SwaggerSettings` `ServiceLambdaArn` property\. 
+`SwaggerSettings`
+Provides values that you insert into the uploaded `swagger.json` file before it is passed to API Gateway\. For example, you can use `$ServiceLambdaArn$` in the `swagger.json` file to insert the value of the `SwaggerSettings` `ServiceLambdaArn` property\.
 
 The following settings are automatically defined for you:
 
-`ResourceGroupName`  
+`ResourceGroupName`
 The name of the resource group that is defined the `ServiceApi` resource\.
 
-`DeploymentName`  
+`DeploymentName`
 The name of the deployment that the `ServiceApi` resource is in\.
 
-`RoleArn`  
+`RoleArn`
 The ARN of the role that grants API Gateway the permission to invoke the `ServiceLambda` \(or other permissions configured by the [Cloud Canvas Resource Manager Security System](/docs/userguide/gems/cloud-canvas/rm-security.md)\)\.
 
-`Region`  
+`Region`
 The AWS [region](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) where the RESTful API resides\.
 
-`RestApiResourceName`  
+`RestApiResourceName`
 The name to use for the API Gateway REST API resource\. API Gateway takes this value from the swagger [infoObject](http://swagger.io/specification/#infoObject) `title` property \(set to `$RestApiResourceName$` in the default `swagger.json` file\)\. This is the stack name of the resource group with the `ServiceApi` logical resource ID appended \(usually `-ServiceApi`\)\.

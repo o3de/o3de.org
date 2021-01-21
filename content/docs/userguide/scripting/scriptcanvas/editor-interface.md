@@ -16,12 +16,12 @@ You can open the **Script Canvas** editor from Lumberyard Editor\.
 
 In the **Script Canvas** editor, you can do the following:
 
-1. Use the menu bar to do the following: 
+1. Use the menu bar to do the following:
    + Create, save, and open your scripts\.
    + Cut, copy, or undo actions\.
    + Change the **Script Canvas** editor view\.
 
-1. Use the tabs to switch between scripts\. 
+1. Use the tabs to switch between scripts\.
 
 1. In the **Node Palette**, you can search for nodes\.
 
@@ -39,8 +39,8 @@ In the **Script Canvas** editor, you can do the following:
 
 **Script Canvas** editor has the following additional menus and tools\.
 
-**Bookmarks**  
+**Bookmarks**
 View and modify your saved bookmarks\. You can use bookmarks to save locations on your script and then use keyboard shortcuts to move to that location\. For more information, see [Adding Bookmarks for Script Canvas](/docs/userguide/scripting/scriptcanvas/bookmarks.md)\.
 
-**Comments**  
+**Comments**
 You can create floating blocks of text on the Script Canvas editor canvas\. For more information, see [Commenting Nodes](/docs/userguide/scripting/scriptcanvas/block-commenting.md)\.

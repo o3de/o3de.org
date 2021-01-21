@@ -23,7 +23,7 @@ For a video tutorial of these steps, see [How do I define a custom domain name f
 
 1. Use the API Gateway console to create an edge\-optimized custom domain name\.
 
-   Select **Edge\-optimized** for the endpoint type, and choose the appropriate TLS version\. Then choose the ACM certificate you just requested\. For more information, see [How to Create an Edge\-Optimized Custom Domain Name](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-edge-optimized-custom-domain-name.html)\.  
+   Select **Edge\-optimized** for the endpoint type, and choose the appropriate TLS version\. Then choose the ACM certificate you just requested\. For more information, see [How to Create an Edge\-Optimized Custom Domain Name](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-edge-optimized-custom-domain-name.html)\.
 ![\[Choose edge-optimized when creating a custom domain name using the API Gateway console\]](/images/userguide/cloud_canvas/cloud-canvas-create-domain-name.png)
 
 1. Create or update your DNS provider's resource record\.
@@ -44,7 +44,7 @@ Use the following steps to create new project and deployment stacks using your c
    lmbr_aws project create --stack-name SampleProject --region us-east-1 --custom-domain-name example.com
    ```
 
-   When the new project stack is created, you can create multiple deployments using normal CLI commands, without any additional change\. All `ServiceApi` resources created within the project and deployment stacks generate a unique base path under the custom domain name, which is mapped to the actual API stage\. Base paths have the format of \{region\}\.\{stage\}\.\{rest\_api\_id\}\. You can find all these mappings in the API Gateway console\.  
+   When the new project stack is created, you can create multiple deployments using normal CLI commands, without any additional change\. All `ServiceApi` resources created within the project and deployment stacks generate a unique base path under the custom domain name, which is mapped to the actual API stage\. Base paths have the format of \{region\}\.\{stage\}\.\{rest\_api\_id\}\. You can find all these mappings in the API Gateway console\.
 ![\[Find API mappings in the API Gateway console\]](/images/userguide/cloud_canvas/cloud-canvas-api-mappings.png)
 
 1. Verify local mappings files\.
@@ -71,7 +71,7 @@ If necessary, you can override the locking of a custom resource to the version o
 
 1. Set the `CustomResourceVersion` in your project template\.
 
-   1. Open the AWS Lambda console and find the custom resource handler for `ServiceApi` resources, which has a name like `SampleProject-CRH-CoreResourceTypes-Custom_ServiceApi`\. Make a note of the new Lambda version number after the update\.  
+   1. Open the AWS Lambda console and find the custom resource handler for `ServiceApi` resources, which has a name like `SampleProject-CRH-CoreResourceTypes-Custom_ServiceApi`\. Make a note of the new Lambda version number after the update\.
 ![\[Find the latest version number of the custom resource\]](/images/userguide/cloud_canvas/cloud-canvas-custom-service-api-versions.png)
 
    1. Edit the definition of `ServiceApi` resource in `dev\Gems\CloudGemFramework\v1\ResourceManager\resource_manager\templates\project-template.json`\. Add the metadata field and specify the custom resource version number\.
@@ -95,7 +95,7 @@ If necessary, you can override the locking of a custom resource to the version o
 
 1. Update your project stack again using the same CLI command that you used in step 1, with the `custom-domain-name` argument specified\. The specified version of the Lambda functions processes the resources this time and the custom domain name is used to generate service URLs\.
 
-   Alternatively, you could have set `CustomResourceVersion` in the template to `$LATEST` before the first update to your project stack and only updated the project stack once\. This practice is **not recommended** for environments where failed stack updates cannot be tolerated\. Using `$LATEST` replicates the unsafe behavior in previous versions of Lumberyard where the most recent Lambda code version is used to process custom resource instance events\. 
+   Alternatively, you could have set `CustomResourceVersion` in the template to `$LATEST` before the first update to your project stack and only updated the project stack once\. This practice is **not recommended** for environments where failed stack updates cannot be tolerated\. Using `$LATEST` replicates the unsafe behavior in previous versions of Lumberyard where the most recent Lambda code version is used to process custom resource instance events\.
 
 1. Update your deployment stacks using the normal CLI commands without any additional change\.
 

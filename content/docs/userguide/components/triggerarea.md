@@ -5,13 +5,13 @@ title: Trigger Area
 ---
 # Trigger Area {#component-triggerarea}
 
-The **Trigger Area** component provides generic triggering services by using [Shape](/docs/userguide/components/shapes.md) components as its bounds\. 
+The **Trigger Area** component provides generic triggering services by using [Shape](/docs/userguide/components/shapes.md) components as its bounds\.
 
 **To add a trigger component**
 
-1.  Create a new entity, or add the **Trigger Area** component to an existing entity\. 
+1.  Create a new entity, or add the **Trigger Area** component to an existing entity\.
 
-1.  In the Entity Inspector, click **Add Component**, then select **Trigger Area**\. 
+1.  In the Entity Inspector, click **Add Component**, then select **Trigger Area**\.
 
    Entity Inspector displays a message, "This component is missing a required component service and has been disabled\.
 
@@ -21,8 +21,8 @@ The **Trigger Area** component provides generic triggering services by using [Sh
 
 1. If you want to change the boundaries of your shape component, simply remove the existing shape component, and then add a different shape component\.
 
-**Note**  
-The **Trigger Area** component does not work with the PhysX system\. 
+**Note**
+The **Trigger Area** component does not work with the PhysX system\.
 
 ## Trigger Area Component Properties {#component-triggerarea-properties}
 
@@ -30,19 +30,19 @@ The **Trigger Area** component has the following properties:Network Bindable
 
 Network bindable components are synchronized over the network\.
 
-**Bind To Network**  
+**Bind To Network**
 When selected, synchronizes component across the network\.Activation
 
-**Trigger once**  
+**Trigger once**
 If selected, the trigger deactivates after the first trigger event\.
 
-**Activated by**  
+**Activated by**
 Select whether trigger is activated by **All entities**, which allows any entity to trigger the area, or by **Specific Entities**, which allows you to select specific entities\.Tag filters
 
-**RequiredTags**  
+**RequiredTags**
 A list of tags that are required for an entity to trigger this area\.
 
-**ExcludedTags**  
+**ExcludedTags**
 A list of tags that exclude an entity from triggering this area\.
 
 ## EBus Request Bus Interface {#component-triggerarea-ebusrequest}
@@ -55,55 +55,55 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Adds a required tag to the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
-**Parameters**  
-const `Tag&`  
+**Parameters**
+const `Tag&`
 `requiredTag` - *Tag to be added*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### RemoveRequiredTag {#triggerarea-ebus-removerequiredtag}
 
 Removes a required tag from the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
-**Parameters**  
-const `Tag&`  
+**Parameters**
+const `Tag&`
 `requiredTag` - *Tag to be removed*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### AddExcludedTag {#triggerarea-ebus-addexcludedtag}
 
 Adds an excluded tag to the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
-**Parameters**  
-const `Tag&`  
+**Parameters**
+const `Tag&`
 `excludedTag` - *Tag to be added*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### RemoveExcludedTag {#triggerarea-ebus-removeexcludedtag}
 
 Removes an excluded tag from the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
-**Parameters**  
+**Parameters**
 const `Tag&` **excludedTag** - *Tag to be removed*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ## EBus Notification Bus Interface {#component-triggerarea-ebusnotification}
@@ -122,28 +122,28 @@ This bus allows the game to listen for events associated with a particular trigg
 
 #### OnTriggerAreaEntered {#triggerarea-ebus-triggerareanotificationbus-ontriggerareaentered}
 
- Notifies listeners when `enteringEntityId` enters this trigger\. 
+ Notifies listeners when `enteringEntityId` enters this trigger\.
 
-**Parameters**  
+**Parameters**
 `enteringEntityId` - *ID of entity that has entered this trigger*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 #### OnTriggerAreaExited {#triggerarea-ebus-triggerareanotificationbus-ontriggerareaexited}
 
- Notifies listeners when `enteringEntityId` exits this trigger\. 
+ Notifies listeners when `enteringEntityId` exits this trigger\.
 
-**Parameters**  
+**Parameters**
 `enteringEntityId` - *ID of entity that has exited this trigger*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### TriggerAreaEntityNotificationBus {#triggerarea-ebus-triggerareaentitynotificationbus}
@@ -152,28 +152,28 @@ This bus allows the game to listen for trigger\-related events associated with a
 
 #### OnEntityEnteredTriggerArea {#triggerarea-ebus-triggerareaentitynotificationbus-onentityenteredtriggerarea}
 
- Sent when the entity enters `triggerID`\. 
+ Sent when the entity enters `triggerID`\.
 
-**Parameters**  
+**Parameters**
 `triggerId` - *ID of entity that the trigger is on*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 #### OnEntityExitedTriggerArea {#triggerarea-ebus-triggerareaentitynotificationbus-onentityexitedtriggerarea}
 
- Sent when the entity exits `triggerID`\. 
+ Sent when the entity exits `triggerID`\.
 
-**Parameters**  
+**Parameters**
 `triggerId` - *ID of entity that the trigger is on*
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 The following is an example of script using the EBus interface\.
@@ -185,18 +185,18 @@ local triggerexample =
     {
     }
 }
- 
+
 function triggerexample:OnActivate()
     self.triggerHandler = TriggerAreaEntityNotificationBus.Connect(self, self.entityId)
 end
- 
+
 function triggerexample:OnDeactivate()
     self.triggerHandler:Disconnect()
 end
- 
+
 function triggerexample:OnEntityEnteredTriggerArea(entityId)
     Debug.Log("------- TRIGGERED.")
 end
- 
+
 return triggerexample
 ```

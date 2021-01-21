@@ -6,11 +6,11 @@ title: Random Timed Spawner
 # Random Timed Spawner {#component-random-timed-spawner}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 You can use the **Random Timed Spawner** component to spawn a specified dynamic slice\. The component spawns the slice at a specified interval \(and random interval variation\) to a random position inside of a specified volume\.
 
@@ -26,7 +26,7 @@ Currently, you can specify how entities spawn in random positions with the follo
 
 The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
-**Example**  
+**Example**
 The following **Random Timed Spawner** component has the distribution type, Uniform Real\.
 
 **Contents**
@@ -47,27 +47,27 @@ The following **Random Timed Spawner** component has the distribution type, Unif
 
 ## Random Timed Spawner Properties {#component-random-timed-spawner-properties}
 
-**Enabled**  
-Enables slices to spawn with the specified parameters\.   
+**Enabled**
+Enables slices to spawn with the specified parameters\.
 Default value: `True`
 
-**Random Distribution**  
-Specify the random distribution type when the **Random Timed Spawner** component creates random spawn positions\.  
-Default value: Uniform Real  
+**Random Distribution**
+Specify the random distribution type when the **Random Timed Spawner** component creates random spawn positions\.
+Default value: Uniform Real
 Valid values: Normal, Uniform Real
 
 ### Timing {#component-random-timed-spawner-timing}
 
-**Spawn Delay**  
-Time between spawns, in seconds\.  
-If the **Enabled** parameter is `true`, a value of `2.0` means that every two seconds after the **Random Timed Spawner** component is activated, a spawn is triggered\.  
-Default value: `5.0`  
+**Spawn Delay**
+Time between spawns, in seconds\.
+If the **Enabled** parameter is `true`, a value of `2.0` means that every two seconds after the **Random Timed Spawner** component is activated, a spawn is triggered\.
+Default value: `5.0`
 Valid values: \-∞ to ∞
 
-**Spawn Delay Variation**  
-Amount of random variation to apply to the spawn delay\.  
-For example, a value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/- `1.0`\) or between `1.0` and `3.0` seconds\.  
-Default value: `0`  
+**Spawn Delay Variation**
+Amount of random variation to apply to the spawn delay\.
+For example, a value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/- `1.0`\) or between `1.0` and `3.0` seconds\.
+Default value: `0`
 Valid values: \-∞ to ∞
 
 ## EBus Request Bus Interface {#component-random-timed-spawner-ebus-request}
@@ -80,141 +80,141 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Starts random spawning\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### Disable {#random-timed-spawner-ebus-disable}
 
 Stops random spawning\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### Toggle {#random-spawner-component-ebus-toggle}
 
 Toggles random spawning\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### IsEnabled {#random-timed-spawner-ebus-is-enabled}
 
 Returns whether the **Random Timed Spawner** component is spawning entities\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetRandomDistribution {#random-timed-spawner-ebus-set-random-distribution}
 
 Sets the type of random distribution that determines where the **Random Timed Spawner** component places the entities that spawn\.
 
-**Parameters**  
+**Parameters**
 Type: `AZ::RandomDistributionType`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### GetRandomDistribution {#random-timed-spawner-ebus-get-random-distribution}
 
 Returns the type of random distribution for the **Random Timed Spawner** component\.
 
-**Note**  
-In Lua, this value is returned as a number:   
-`0` - Normal distribution  
+**Note**
+In Lua, this value is returned as a number:
+`0` - Normal distribution
 `1` - Uniform Real distribution
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Type: `AZ::RandomDistributionType`
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetSpawnDelay {#random-timed-spawner-ebus-set-spawn-delay}
 
 Sets the time between entity spawns, in seconds\.
 
-**Parameters**  
+**Parameters**
 Type: Double
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### GetSpawnDelay {#random-timed-spawner-ebus-get-spawn-delay}
 
 Returns the time between entity spawns, in seconds\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Type: Double
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetSpawnDelayVariation {#random-timed-spawner-ebus-set-spawn-delay-variation}
 
 Sets the random variation in spawn delay, in seconds\.
 
-The **Random Timed Spawner** component uses the specified value to calculate a random value that is added to the **Spawn Delay** parameter\. 
+The **Random Timed Spawner** component uses the specified value to calculate a random value that is added to the **Spawn Delay** parameter\.
 
 For example, a **SpawnDelayVariation** value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/- `1.0`\) or between `1.0` and `3.0` seconds\.
 
 For more information, see [Timing](#component-random-timed-spawner-timing)\.
 
-**Parameters**  
+**Parameters**
 Type: Double
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### GetSpawnDelayVariation {#random-timed-spawner-ebus-get-spawn-delay-variation}
 
 Returns the random variation in spawn delay, in seconds\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Type: Double
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### Notification Bus Example Script {#random-timed-spawner-notification-bus-example-script}

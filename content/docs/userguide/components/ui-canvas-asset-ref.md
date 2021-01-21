@@ -5,7 +5,7 @@ title: UI Canvas Asset Ref
 ---
 # UI Canvas Asset Ref {#component-ui-canvas-asset-ref}
 
-With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a component entity in a level\. 
+With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a component entity in a level\.
 
 When you set up a UI canvas asset ref component, you can:
 + Select whether to automatically load the UI canvas when the level loads
@@ -19,8 +19,8 @@ For more information about how to use the **UI Canvas Asset Ref** component, see
 
 The **UI Canvas Asset Ref** component has the following properties:
 
-**Canvas pathname**  
+**Canvas pathname**
 The relative pathname of the UI canvas asset file\.
 
-**Load automatically**  
+**Load automatically**
 If selected, the canvas is automatically loaded when this component entity is loaded, typically when the level is loaded\.

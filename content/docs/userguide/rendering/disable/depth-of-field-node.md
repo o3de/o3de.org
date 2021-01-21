@@ -18,17 +18,17 @@ To enable the effect, see [Enable Depth of Field](/docs/userguide/rendering/enab
 ## Inputs {#disable-depth-of-field-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
 
 ## Outputs {#disable-depth-of-field-note-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event |  Sends when the node is finished\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event |  Sends when the node is finished\.  |

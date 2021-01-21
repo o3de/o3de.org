@@ -12,8 +12,8 @@ The template file for a cloud gem is located at `lumberyard_version\dev\Gems\gem
 
 While AWS CloudFormation templates support a large catalog of AWS resource types, the templates for Cloud Canvas gems are more limited in scope\. When creating a Cloud Canvas gem, you have the following options:
 + Use one of the subset of types in the `AWS::` namespace that are directly supported by Cloud Canvas \(no additional work required\)\.
-+ Add support for `AWS::` types not already supported by Cloud Canvas\. 
-+ Add your own `Custom::*` resource types that execute custom Lambda function code when instances of that type are created, modified or deleted\. 
++ Add support for `AWS::` types not already supported by Cloud Canvas\.
++ Add your own `Custom::*` resource types that execute custom Lambda function code when instances of that type are created, modified or deleted\.
 
   Custom resources are a good way to integrate your in\-house services and access AWS services that are not directly supported\.
 

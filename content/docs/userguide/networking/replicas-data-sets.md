@@ -19,7 +19,7 @@ class MyChunkType : public GridMate::ReplicaChunk
         , m_synchedHalf("SynchedHalf")
     {
     }
- 
+
     GridMate::DataSet<float> m_synchedFloat;
     GridMate::DataSet<float, MyCustomMarshaler> m_synchedHalf;
 };  
@@ -35,10 +35,10 @@ public:
         : m_synchedFloat("SynchedFloat")
     {
     }
- 
+
     // Callback to call when new data arrives.
     void OnSynchedFloatData(const float& newValue, const GridMate::TimeContext& timeContext);
- 
+
     GridMate::DataSet<float>::BindInterface<MyChunkType, amp;MyChunkType::OnSynchedFloatData> m_synchedFloat;
 };
 ```
@@ -63,7 +63,7 @@ You can change the length of the grace period in step 4 by calling `SetMaxIdleTi
 ...
 GridMate::DataSet<Vector3> m_pos;
 ...
- 
+
 ...
 m_pos.SetMaxIdleTime(5.f);  // Suspend sending if m_pos has not changed for 5 ticks
 ...
@@ -71,7 +71,7 @@ m_pos.SetMaxIdleTime(5.f);  // Suspend sending if m_pos has not changed for 5 ti
 
 ## Carrier ACK Feedback {#network-replicas-data-sets-carrier-ack-feedback}
 
-Lumberyard 1\.12 introduced, as a preview feature, carrier ACK feedback\. 
+Lumberyard 1\.12 introduced, as a preview feature, carrier ACK feedback\.
 
 In the default GridMate implementation, a change in a dataset causes four unreliable updates and then one reliable update to be sent\. This technique can result in many reliable packets on the network\. Because reliable packets require ordering, preceding packets cannot be processed until a lost packet is successfully retransmitted\. The resulting delay can cause jitter\.
 

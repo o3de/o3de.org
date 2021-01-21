@@ -16,20 +16,20 @@ Returns a material parameter as a color value\.
 ## Inputs {#material-get-param-color-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material |  The material to query\.  | 
-| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material |  The material to query\.  |
+| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  |
 
 ## Outputs {#material-get-param-color-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Color | Color | The queried value\. If the parameter is not found, the value is \(0, 0, 0, 0\)\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Color | Color | The queried value\. If the parameter is not found, the value is \(0, 0, 0, 0\)\. |

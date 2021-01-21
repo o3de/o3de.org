@@ -29,7 +29,7 @@ The Script Canvas Basic Sample contains a collection of five Script Canvas scrip
    + `projectile.scriptcanvas`
    + `togglelight.scriptcanvas`
 
-**To play the game**  
+**To play the game**
 Do the following:
 + To start the level, press **Ctrl\+G**\.
 + To control the tank, do the following:

@@ -16,7 +16,7 @@ void IsNull::OnInit()
     AZStd::vector<ContractDescriptor> contracts;
     auto func = []() { return aznew IsReferenceTypeContract(); };
     ContractDescriptor descriptor{ AZStd::move(func) };
-    contracts.emplace_back(descriptor); 
+    contracts.emplace_back(descriptor);
     AddInputDatumUntypedSlot("Reference", &contracts);
     AddOutputTypeSlot("Is Null", "", AZStd::move(Data::Type::Boolean()), OutputStorage::Optional);
 }
@@ -31,7 +31,7 @@ When the node is initialized, the added slots appear in the Script Canvas editor
 Nodes can receive input signals when a node's execution slot is triggered\. To detect which signal has been triggered, implement `OnInputSignal`, as in the following example\.
 
 ```
-void OnInputSignal(const SlotId&) override; 
+void OnInputSignal(const SlotId&) override;
 ```
 
 To get the ID of the input signal, AZ Code Generator provides some convenient helper functions in a namespace that corresponds to the generated node\. These helper functions make it easier to access the node's properties and slot IDs\.
@@ -46,15 +46,15 @@ In the following code, the **Delay** node's **In** and **Reset** slots use the g
 void Countdown::OnInputSignal(const SlotId& slot)
 {
     const SlotId& inSlotId = CountdownProperty::GetInSlotId(this);
-    const SlotId& resetSlotId = CountdownProperty::GetResetSlotId(this); 
+    const SlotId& resetSlotId = CountdownProperty::GetResetSlotId(this);
     if (slot == resetSlotId || (slot == inSlotId && !AZ::TickBus::Handler::BusIsConnected()))
     {
         // Disconnect required when resetting
-        AZ::TickBus::Handler::BusDisconnect(); 
+        AZ::TickBus::Handler::BusDisconnect();
         m_countdownSeconds = CountdownProperty::GetTime(this);
         m_looping = CountdownProperty::GetLoop(this);
-        m_holdTime = CountdownProperty::GetHold(this); 
-        m_currentTime = m_countdownSeconds; 
+        m_holdTime = CountdownProperty::GetHold(this);
+        m_currentTime = m_countdownSeconds;
         AZ::TickBus::Handler::BusConnect();
     }
 }
@@ -76,7 +76,7 @@ const SlotId doneSlot = DurationProperty::GetDoneSlotId(this);
 SignalOutput(doneSlot);
 ```
 
-**Note**  
+**Note**
 If your node is connected to one or more buses during its lifetime, ensure that it disconnects from those buses before it exits\. Otherwise, your node might be handling events that it no longer should\.
 
 ## Querying Inbound Data {#script-canvas-custom-nodes-querying-inbound-data}
@@ -104,7 +104,7 @@ Many nodes might want to return a value or push forward data as a result of a co
 To output the elapsed time, the node gets the ID of the **Elapsed** slot and then pushes a data value into it \(`dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Time\Countdown.cpp`\)\.
 
 ```
-const SlotId elapsedSlot = CountdownProperty::GetElapsedSlotId(this); 
+const SlotId elapsedSlot = CountdownProperty::GetElapsedSlotId(this);
 Datum o(Data::Type::Number(), Datum::eOriginality::Copy);
 o.Set(m_elapsedTime);
 if (auto* slot = GetSlot(elapsedSlot))

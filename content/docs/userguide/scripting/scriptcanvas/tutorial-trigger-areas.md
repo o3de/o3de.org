@@ -8,7 +8,7 @@ title: '&script-canvas; Tutorial: Opening and Closing a Door with Trigger Areas 
 
 In the following tutorial, you create a door that opens and closes when your controllable sphere enters and exits a trigger area\.
 
-**Example**  
+**Example**
 
 ![\[Example Script Canvas graph for the creating a trigger area.\]](/images/userguide/scripting/script-canvas/door.gif)
 
@@ -31,7 +31,7 @@ To create a door and trigger area, create an entity with child entities and then
 
 **To create a door and trigger area**
 
-1. In Lumberyard Editor, right\-click the **Perspective** viewport near your controllable sphere and choose **Create entity**\.  
+1. In Lumberyard Editor, right\-click the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
 ![\[Create an entity in the Perspective viewport.\]](/images/userguide/scripting/script-canvas/perspective-viewport-choose-create-entity.png)
 
 1. In the **Entity Inspector**, for **Name**, enter **Door Group**\.
@@ -40,22 +40,22 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. In the **Entity Outliner**, right\-click **Door Group** and choose **Create child entity**\. This child entity is your door\.
 
-   1. In the **Entity Inspector**, for **Name**, enter **Door Mesh**\.  
+   1. In the **Entity Inspector**, for **Name**, enter **Door Mesh**\.
 ![\[Create a child entity named Door Mesh.\]](/images/userguide/scripting/script-canvas/entity-inspector-name-field-door-mesh.png)
 
    1. For the **Door Mesh** entity, click **Add Component** and then choose the **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
-   1. In the **Mesh** component, for **Mesh asset**, click the browse \(…\) icon and select the `SamplesProject\Objects\Primitives\box_1x1.cgf` file\.  
+   1. In the **Mesh** component, for **Mesh asset**, click the browse \(…\) icon and select the `SamplesProject\Objects\Primitives\box_1x1.cgf` file\.
 ![\[Select the mesh file to create a Mesh component for your entity.\]](/images/userguide/scripting/script-canvas/asset-browser-game-objects-primitives-directory.png)
 
-   1. Click **Add Component** and then choose the **[Static Physics](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-static-physics.html)** component\.
+   1. Click **Add Component** and then choose the **[Static Physics](/docs/userguide/components/static-physics)** component\.
 
-   1. Click **Add Component** and then choose the **[Mesh Collider](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-physics-mesh-collider.html)** component\. This component defines the collision shape for the **Door Mesh** entity\.
+   1. Click **Add Component** and then choose the **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)** component\. This component defines the collision shape for the **Door Mesh** entity\.
 
-   1. In the **[Transform](/docs/userguide/components/transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\. 
+   1. In the **[Transform](/docs/userguide/components/transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\.
 
-   1. Verify that your **Door Mesh** entity looks like the following\.  
-**Example**    
+   1. Verify that your **Door Mesh** entity looks like the following\.
+**Example**
 ![\[See the components and settings for the Door Mesh entity.\]](/images/userguide/scripting/script-canvas/entity-inspector-transform-scale-settings.png)
 
 1. Do the following to create a trigger area:
@@ -84,8 +84,8 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. In the **Script Canvas** component, click the browse \(**\.\.\.**\) icon, select the `door.scriptcanvas` file, and then click **OK**\.
 
-1. Verify that your **Door Trigger** entity looks like the following\.  
-**Example**    
+1. Verify that your **Door Trigger** entity looks like the following\.
+**Example**
 ![\[See the components and properties for the Door Trigger entity.\]](/images/userguide/scripting/script-canvas/entity-inspector-box-shape-dimensions-settings.png)
 
 ## Step 2: Create a Script to Open and Close the Door {#script-canvas-tutorial-trigger-areas-step-two}
@@ -96,15 +96,15 @@ Now that you've set up your door and trigger area, you can create a script that 
 
 1. In the **Script Canvas** editor, open the `door.scriptcanvas` file\.
 
-1. In the **Node Palette**, enter **trigger** in the search box and under **Gameplay**, **Trigger Area**, drag **On Area Entered** to the canvas\. 
-**Note**  
+1. In the **Node Palette**, enter **trigger** in the search box and under **Gameplay**, **Trigger Area**, drag **On Area Entered** to the canvas\.
+**Note**
 With this event node you can easily use the Lumberyard EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-1. In the **Trigger Area** node, click **Add/Remove Events** and then select the **On Area Exited** check box\. This exposes the entered and exited events from the **Trigger Area** EBus\.  
+1. In the **Trigger Area** node, click **Add/Remove Events** and then select the **On Area Exited** check box\. This exposes the entered and exited events from the **Trigger Area** EBus\.
 ![\[Add the Trigger Area node in Script Canvas editor.\]](/images/userguide/scripting/script-canvas/trigger-area-node-add-remove-events.png)
 
-1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\. 
-**Note**  
+1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\.
+**Note**
 You can store and modify persistent values in your graph with variable nodes\. For more information, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
 
 1. Select **Vector3**, double\-click **Variable 1** and then rename the variable to **opened\_position**\.
@@ -115,10 +115,10 @@ You can store and modify persistent values in your graph with variable nodes\. F
 
 1. Create another **Vector3** variable and name it **current\_position**\. Keep the default value of `0`, `0`, `0`\. This variable sets the door's current position\.
 
-1. Create another **Vector3** variable and name it **destination\_position**\. Keep the default value of `0`, `0`, `0`\. This variable sets the door's destination position when the entity enters and exits the trigger area\.  
-**Example**  
+1. Create another **Vector3** variable and name it **destination\_position**\. Keep the default value of `0`, `0`, `0`\. This variable sets the door's destination position when the entity enters and exits the trigger area\.
+**Example**
 
-   You should have four **Vector3** variable nodes such as the following\.  
+   You should have four **Vector3** variable nodes such as the following\.
 ![\[Vector3 variables for the Variable Manager.\]](/images/userguide/scripting/script-canvas/script-canvas-trigger-areas-variables-manager.png)
 
 1. In the **Variable Manager**, do the following:
@@ -143,8 +143,8 @@ You can store and modify persistent values in your graph with variable nodes\. F
 
    1. From **Get closed\_position**, drag the **Vector3** pin to connect it to the **Vector3** pin of the other **Set destination\_position** node\.
 
-   1. Verify that your `door.scriptcanvas` graph looks like the following\.  
-**Example**    
+   1. Verify that your `door.scriptcanvas` graph looks like the following\.
+**Example**
 ![\[Connect the Trigger Area node to the variable nodes.\]](/images/userguide/scripting/script-canvas/script-canvas-tutorial-trigger-area-connections.png)
 
 1. Do the following to get the **Door Mesh** entity's position and interpolate to the destination:
@@ -153,17 +153,17 @@ You can store and modify persistent values in your graph with variable nodes\. F
 
    1. Under **Entity**, **Transform**, drag **Get Local Translation** to the canvas\. You can use this node to get the current position of the **Door Mesh** entity and interpolate to the destination\. A local translation applies to the translation of the entity relative to its parent\.
 
-   1. In the **Get Local Translation** node, pause on the **Source** text box and click the target button\. When selected, the target button has an orange outline\.  
+   1. In the **Get Local Translation** node, pause on the **Source** text box and click the target button\. When selected, the target button has an orange outline\.
 ![\[Get Local Translation node.\]](/images/userguide/scripting/script-canvas/get-local-translation-node-target-button.png)
 
-   1. In the **Entity Outliner**, select **Door Mesh** to assign the **Door Mesh** entity to the **Source** property in the **Get Local Translation** node\.  
+   1. In the **Entity Outliner**, select **Door Mesh** to assign the **Door Mesh** entity to the **Source** property in the **Get Local Translation** node\.
 ![\[Add the Door Mesh entity as the source for the Get Local Translation node.\]](/images/userguide/scripting/script-canvas/get-local-translation-node-door-mesh.png)
-**Note**  
+**Note**
 To reset an entity reference, right\-click twice on the **Source** text box and choose **Set to Self**\.
 
-   1. In the **Script Canvas** editor, from both **Set destination\_position** nodes, drag the **Out** pins to connect it to the **In** pin for **Get Local Translation**\.  
+   1. In the **Script Canvas** editor, from both **Set destination\_position** nodes, drag the **Out** pins to connect it to the **In** pin for **Get Local Translation**\.
 ![\[Connect the Set destination_position variable nodes to the Get Local Translation node.\]](/images/userguide/scripting/script-canvas/get-local-translation-node-destination-position-connections.png)
-**Note**  
+**Note**
 When multiple connections enter a single logic pin, the node is executed each time either execution is triggered\. The node is executed more than once in the same game tick if multiple executions are triggered simultaneously\.
 
 1. Do the following to execute nodes for a specified amount of time, in seconds:
@@ -178,8 +178,8 @@ When multiple connections enter a single logic pin, the node is executed each ti
 
    1. From **Set current\_position**, drag the **Out** pin to connect it to the **Start** pin of the **Duration** node\. Triggering the **Duration** node resets the time\.
 
-   1. In the **Duration** node, for **Duration**, enter **1\.0** \(seconds\)\.  
-**Example**    
+   1. In the **Duration** node, for **Duration**, enter **1\.0** \(seconds\)\.
+**Example**
 ![\[Connect the Get Local Translation node to the Set current_position node to the Duration node.\]](/images/userguide/scripting/script-canvas/get-local-translation-connection-to-duration-node-2.png)
 
 1. Do the following to set up interpolation between the current position and the destination:
@@ -200,8 +200,8 @@ When multiple connections enter a single logic pin, the node is executed each ti
 
    1. From **Get destination\_position**, drag the **Out** pin to connect it to the **In** pin of the **Lerp** node\.
 
-   1. From **Get destination\_position**, drag the **Vector3** pin to connect it to the **End** pin of the **Lerp** node\.  
-**Example**    
+   1. From **Get destination\_position**, drag the **Vector3** pin to connect it to the **End** pin of the **Lerp** node\.
+**Example**
 ![\[Use the Lerp node to blend together the values from the Percentage pin.\]](/images/userguide/scripting/script-canvas/script-current-position-destination-interpolation-2.png)
 
 1. Do the following to set the position of the door when the **Duration** node blends between the current and destination positions:
@@ -216,8 +216,8 @@ When multiple connections enter a single logic pin, the node is executed each ti
 
    1. In the **Entity Outliner**, select **Door Mesh** to assign the **Door Mesh** entity to the **Source** property in the **Set Local Translation** node\.
 
-   1. Verify that your `door.scriptcanvas` graph looks like the following\.  
-**Example**    
+   1. Verify that your `door.scriptcanvas` graph looks like the following\.
+**Example**
 ![\[Finished Script Canvas graph for creating a trigger area for an entity.\]](/images/userguide/scripting/script-canvas/script-canvas-door-translation-2.png)
 
 1. Save your graph\.

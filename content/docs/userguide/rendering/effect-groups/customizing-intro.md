@@ -13,7 +13,7 @@ You can also use effect groups to specify the following:
 + Stay enabled until explicitly disabled
 + Make effect strength based on distance from the camera
 
-**Note**  
+**Note**
 Creating a new effect requires modifying Lumberyard, while creating a new effect group does not\.
 
 **Topics**

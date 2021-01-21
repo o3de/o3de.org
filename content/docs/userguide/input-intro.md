@@ -6,7 +6,7 @@ title: Input in &ALYlong;
 
 Use the information in this section to learn about game input in Amazon Lumberyard\.
 
-**Note**  
+**Note**
 For information on the **Input** component that replaces legacy action maps, see [Input](/docs/userguide/components/input.md)\.
 
 Input is what differentiates interactive experiences from all other entertainment media\. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device\. There are many different types of input devices, each of which can produce a wide range of input data\. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems\. As a cross\-operating system and device game engine, Lumberyard's goal is to provide independent access to input data from any supported device\. The goal is to provide a common interface with these qualities:
@@ -65,17 +65,17 @@ All input device classes inherit from `AzFramework::InputDevice`\. While multipl
 The base class is designed so that you can inherit from it to implement new types of input devices\. However, Lumberyard already includes implementations for the following devices:
 
 
-****  
+****
 
-| Device Type | Supported Operating Systems | 
-| --- | --- | 
-| Mouse | Windows, macOS | 
-| Keyboard | Windows and macOS | 
-| Gamepad | Windows, macOS, iOS, Android, consoles | 
-| Touch | iOS, Android | 
-| Motion | iOS, Android | 
-| Virtual keyboard | iOS, Android, consoles | 
-| Virtual reality controller | Oculus, OpenVR | 
+| Device Type | Supported Operating Systems |
+| --- | --- |
+| Mouse | Windows, macOS |
+| Keyboard | Windows and macOS |
+| Gamepad | Windows, macOS, iOS, Android, consoles |
+| Touch | iOS, Android |
+| Motion | iOS, Android |
+| Virtual keyboard | iOS, Android, consoles |
+| Virtual reality controller | Oculus, OpenVR |
 
 This core set of input devices are managed by the `AzFramework::InputSystemComponent`\. You can use this component to configure the type and number of input devices that your application creates at startup\.
 
@@ -107,18 +107,18 @@ Like the `AzFramework::InputDevice` base class, you can inherit from `AzFramewor
 Lumberyard provides the following input channel implementations that are used by the devices listed in the [Input Devices](#input-intro-devices) section\. You can also use these implementations for new input devices\.
 
 
-****  
+****
 
-| Input Channel | Example Use | 
-| --- | --- | 
-| InputChannelAnalog | Gamepad trigger | 
-| InputChannelAnalogWithPosition2D | Touch with pressure at a position | 
-| InputChannelAxis1D | Gamepad thumbstick x or y | 
-| InputChannelAxis2D | Gamepad thumbstick x and y together | 
-| InputChannelAxis3D | Motion sensor acceleration, rotation, or magnetic field | 
-| InputChannelDelta | Mouse wheel | 
-| InputChannelDeltaWithSharedPosition2D | Mouse movement | 
-| InputChannelDigital | Gamepad button or keyboard key | 
-| InputChannelDigitalWithPosition2D | Touch without pressure at a position | 
-| InputChannelDigitalWithSharedPosition2D | Mouse button at a position | 
-| InputChannelQuaternion | Motion sensor orientation | 
+| Input Channel | Example Use |
+| --- | --- |
+| InputChannelAnalog | Gamepad trigger |
+| InputChannelAnalogWithPosition2D | Touch with pressure at a position |
+| InputChannelAxis1D | Gamepad thumbstick x or y |
+| InputChannelAxis2D | Gamepad thumbstick x and y together |
+| InputChannelAxis3D | Motion sensor acceleration, rotation, or magnetic field |
+| InputChannelDelta | Mouse wheel |
+| InputChannelDeltaWithSharedPosition2D | Mouse movement |
+| InputChannelDigital | Gamepad button or keyboard key |
+| InputChannelDigitalWithPosition2D | Touch without pressure at a position |
+| InputChannelDigitalWithSharedPosition2D | Mouse button at a position |
+| InputChannelQuaternion | Motion sensor orientation |

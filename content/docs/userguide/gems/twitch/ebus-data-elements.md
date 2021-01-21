@@ -79,7 +79,7 @@ public:
 
     // Public functions
     virtual void UserIDNotify(const StringValue& userID) { (void) userID; }
-    virtual void OAuthTokenNotify(const StringValue& token) { (void) token; } 
+    virtual void OAuthTokenNotify(const StringValue& token) { (void) token; }
 
     // Friend notifications
     virtual void ResetFriendsNotificationCountNotify(const Int64Value& result) { (void) result; }
@@ -149,7 +149,7 @@ struct UserNotifications
     bool EMail;
     bool Push;
 };
- 
+
 struct UserInfo
 {
 	UserInfo() : EMailVerified(false), Partnered(false), TwitterConnected(false) { }
@@ -168,7 +168,7 @@ struct UserInfo
      bool                Partnered;
      bool                TwitterConnected;
 };
- 
+
 using UserInfoList = AZStd::list<UserInfo>;
 ```
 
@@ -214,7 +214,7 @@ struct FriendRequestResult
 
 ## PresenceAvailability enum {#twitch-api-ebus-data-elements-presenceavailability-enum}
 
-The following is the definition for the `PresenceAvailability` enum: 
+The following is the definition for the `PresenceAvailability` enum:
 
 ```
 enum class PresenceAvailability { Unknown, Online, Idle };
@@ -249,7 +249,7 @@ struct PresenceStatus
 
 The `PresenceSettings` struct is used in `TwitchNotifyBus GetPresenceSettings` and methods\.
 
-The following is the definition for the `PresenceSettings` struct: 
+The following is the definition for the `PresenceSettings` struct:
 
 ```
 struct PresenceSettings
@@ -298,7 +298,7 @@ struct ChannelInfo
 
 ## UpdateChannelInfo {#twitch-api-ebus-data-elements-updatechannelinfo}
 
-The following is the definition for the `ChannelUpdateInfo` struct: 
+The following is the definition for the `ChannelUpdateInfo` struct:
 
 ```
 /*
@@ -306,7 +306,7 @@ The following is the definition for the `ChannelUpdateInfo` struct:
 **   Note: Only call SetValue() on the item that you want to update, at least one
 **   of the items must be set to update the channel info or the call to UpdateChannelInfo
 **   will fail with a result code of ResultCode::TwitchChannelNoUpdatesToMake
-**     
+**
 */
 
 template<class T>
@@ -383,8 +383,8 @@ The following is the definition for the `VideoReturn` struct:
 enum class BroadCastType
 {
     Default                         = 0x00,
-    Archive                         = 0x01, 
-    Highlight                       = 0x02, 
+    Archive                         = 0x01,
+    Highlight                       = 0x02,
     Upload                          = 0x04,
     ArchiveAndHighlight             = Archive | Highlight,
     ArchiveAndUpload                = Archive | Upload,

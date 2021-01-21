@@ -15,7 +15,7 @@ Lumberyard Setup Assistant offers the following benefits:
 
 You should run this application periodically and after you make any changes to your environment, to validate and repair settings and paths\. You can also customize the application with a configuration file to easily integrate your specific directory structure\.
 
-**Note**  
+**Note**
 Certain third\-party software may require a license\. Please consult the terms of service before installing the software\.
 
 **Prerequisites**

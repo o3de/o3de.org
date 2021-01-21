@@ -12,24 +12,24 @@ CREATE_FAILED for Configuration (AWS::S3::Bucket with ID "bucket_id"). You have 
 ```
 
 ```
-CREATE_FAILED for ServiceApi (Custom::ServiceApi with ID "api_id"). Failed to create resource. Unexpected RuntimeError occurred: [...] An error occurred (BadRequestException) when calling the ImportRestApi operation: 
+CREATE_FAILED for ServiceApi (Custom::ServiceApi with ID "api_id"). Failed to create resource. Unexpected RuntimeError occurred: [...] An error occurred (BadRequestException) when calling the ImportRestApi operation:
 Maximum number of API operations has been reached. Please contact AWS if you need additional API operations.
 ```
 
 These errors occur when you exceed limits that some AWS services have on the number of resources that you can create per account\. The number of resources allowed per account varies by service and by resource\. The following table shows some limits for some AWS resources that are commonly used with Cloud Canvas:
 
 
-****  
+****
 
-| AWS Service | Limit | Information Link | 
-| --- | --- | --- | 
-| Amazon S3 | 100 buckets per account\. | [Amazon Simple Storage Service \(Amazon S3\) Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_s3) | 
-| Amazon API Gateway | 60 APIs per account per region\. | [Amazon API Gateway Limits, Pricing and Known Issues](https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html#api-gateway-limits) | 
-| Amazon DynamoDB | Initially, 256 tables per region\. | [Limits in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) | 
+| AWS Service | Limit | Information Link |
+| --- | --- | --- |
+| Amazon S3 | 100 buckets per account\. | [Amazon Simple Storage Service \(Amazon S3\) Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_s3) |
+| Amazon API Gateway | 60 APIs per account per region\. | [Amazon API Gateway Limits, Pricing and Known Issues](https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html#api-gateway-limits) |
+| Amazon DynamoDB | Initially, 256 tables per region\. | [Limits in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html) |
 
 For more information on the resource limits of individual AWS services, see the [AWS Service Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *AWS General Reference*\.
 
-If necessary, you can contact AWS customer service to increase the resource limits for some services\. However, if you have resources that you no longer require, it might be easier to simply remove them from your account\. 
+If necessary, you can contact AWS customer service to increase the resource limits for some services\. However, if you have resources that you no longer require, it might be easier to simply remove them from your account\.
 
 To remove unused resources from AWS, the following tools are available:
 + [The Cloud Canvas Cleanup Tool](#cloud-canvas-administration-aws-resource-cleanup-using-the-cloud-canvas-cleanup-tool)
@@ -53,33 +53,33 @@ To use the cleanup tool, you must complete the following:
 + Install the [AWS CLI](https://aws.amazon.com/cli/), [configure](https://docs.aws.amazon.com/cli/latest/reference/configure/index.html) it with an admininstrator IAM profile, and set it to your preferred region\.
 
   For instructions on how to install the AWS CLI on Windows, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)\. The AWS CLI requires Python\. You may use the version of Python distributed as part of Lumberyard, provided that it's available in your system's `PATH`\.
-+ Use Cloud Canvas Resource Manager or the `lmbr_aws` tool to create a Cloud Canvas project stack\. 
-**Note**  
-If you are using a fresh installation of Lumberyard and need to clean up resources before you can create a project stack, perform the following steps\.  
++ Use Cloud Canvas Resource Manager or the `lmbr_aws` tool to create a Cloud Canvas project stack\.
+**Note**
+If you are using a fresh installation of Lumberyard and need to clean up resources before you can create a project stack, perform the following steps\.
 In Project Configurator, set the default project to a project that has the Cloud Canvas Common gem enabled\.
 Determine the name of the AWS profile that you want to use\. To discover existing profiles, you can examine either the `credentials` or `config` file in the `%SystemDrive%\Users\user_name\.aws\` directory\.
-Enter the following command to configure the AWS CLI to use the profile\.   
+Enter the following command to configure the AWS CLI to use the profile\.
 
      ```
      aws configure --profile profile_name
      ```
-In the `lumberyard_installation\dev` directory, run the following command\.  
+In the `lumberyard_installation\dev` directory, run the following command\.
 
      ```
      lmbr_aws profile default --set profile_name
      ```
-This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.  
+This adds the profile to the `DefaultProfile` section of the [user\-settings\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-user-settings) file\. As of Lumberyard version 1\.15, the Cloud Canvas cleanup tool requires that a default profile be set in the `user-settings.json` file\.
 The following example command sets the default Cloud Canvas profile to `CloudCanvasAdmin` for the CloudGemDefectReportSample project in the Lumberyard installation location `C:\Lumberyard\`\.
 
      ```
      C:\Lumberyard\dev>lmbr_aws profile default --set CloudCanvasAdmin
      ```
-The command produces the following output\.  
+The command produces the following output\.
 
      ```
      [WAF] Engine Root: C:\Lumberyard\dev\
      Saving C:\Lumberyard\dev\Cache\CloudGemDefectReportSample\pc\User\AWS\user-settings.json
-     
+
      Default Profile: CloudCanvasAdmin
      ```
 
@@ -114,18 +114,18 @@ Before you use the cleanup tool, be aware of the following points:
 1. Repeat the command until the cleanup tool no longer finds items to delete\. Multiple runs can be required\. The cleanup tool attempts to delete resources as they become available for deletion\. However, because the cleanup tool attempts to delete resources in type order, some resources are not available for deletion until after the script finishes\.
 
 
-**Optional Arguments**  
+**Optional Arguments**
 
-| Argument | Description | 
-| --- | --- | 
-| \-\-aws\-access\-key  | The AWS access key to use\. | 
-| \-\-aws\-secret\-key | The AWS secret access key to use\. | 
-| \-\-delete\-global\-resources  |  If the `--region` argument is specified, deletes global resources such as IAM roles and Amazon S3 buckets\. If the `--region` argument is not specified, the `--delete-global-resources` argument is ignored\.  This argument is new in Lumberyard version 1\.16\.  | 
-| \-\-except exception \[exception …\] | Do not delete resources that start with the prefixes specified\. | 
-| \-h, \-\-help | Shows a help message and exits\. | 
-| \-\-prefix prefix \[prefix \.\.\.\] | Deletes stacks and Amazon S3 buckets in AWS that have the specified prefixes\. | 
-| \-\-profile profile  | The AWS profile to use\. Defaults to the default AWS profile\. | 
-| \-\-region region | The AWS region to use\. Defaults to us\-east\-1\. | 
+| Argument | Description |
+| --- | --- |
+| \-\-aws\-access\-key  | The AWS access key to use\. |
+| \-\-aws\-secret\-key | The AWS secret access key to use\. |
+| \-\-delete\-global\-resources  |  If the `--region` argument is specified, deletes global resources such as IAM roles and Amazon S3 buckets\. If the `--region` argument is not specified, the `--delete-global-resources` argument is ignored\.  This argument is new in Lumberyard version 1\.16\.  |
+| \-\-except exception \[exception …\] | Do not delete resources that start with the prefixes specified\. |
+| \-h, \-\-help | Shows a help message and exits\. |
+| \-\-prefix prefix \[prefix \.\.\.\] | Deletes stacks and Amazon S3 buckets in AWS that have the specified prefixes\. |
+| \-\-profile profile  | The AWS profile to use\. Defaults to the default AWS profile\. |
+| \-\-region region | The AWS region to use\. Defaults to us\-east\-1\. |
 
 #### Identifying Cloud Canvas Prefixes {#cloud-canvas-administration-aws-resource-cleanup-identifying-cloud-canvas-prefixes}
 
@@ -140,7 +140,7 @@ In Cloud Canvas, project stack names correspond to AWS CloudFormation stack name
 Resources in a Cloud Canvas project stack have the following form\.
 
 ```
-ProjectStackName-ResourceName         
+ProjectStackName-ResourceName
 ```
 
 For example, if a `CloudGemSamples` Cloud Canvas project stack has an Amazon S3 bucket named `Storage`, the bucket appears in the [Amazon S3 Console](https://console.aws.amazon.com/s3/home) as `CloudGemSamples-Storage.`
@@ -245,7 +245,7 @@ aws --region us-west-2 dynamodb list-tables
 To redirect the list of tables into a text file, enter a command like the following\.
 
 ```
-aws dynamodb list-tables >ddb_table_list.txt 
+aws dynamodb list-tables >ddb_table_list.txt
 ```
 
 The example command redirects the output into a text file called `ddb_table_list.txt`\.
@@ -341,7 +341,7 @@ For more information on the API Gateway CLI commands, see [apigateway](https://d
 
 In Amazon S3, you can **delete** empty buckets but must **remove** non\-empty buckets\.
 
-**Note**  
+**Note**
 The commands presented here work only on unversioned buckets\. Amazon S3 buckets are unversioned by default\. For more information, see [Using Versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
 #### Getting a List of Bucket Names {#cloud-canvas-administration-aws-resource-cleanup-getting-a-list-of-bucket-names}
@@ -349,7 +349,7 @@ The commands presented here work only on unversioned buckets\. Amazon S3 buckets
 To obtain a list of S3 bucket names, use the following command\.
 
 ```
-aws s3api list-buckets --query Buckets[].Name 
+aws s3api list-buckets --query Buckets[].Name
 ```
 
 #### Deleting a Bucket {#cloud-canvas-administration-aws-resource-cleanup-deleting-a-bucket}
@@ -398,7 +398,7 @@ You can use the [AWS Management Console](https://console.aws.amazon.com/) to man
 
 **To delete an API from API Gateway**
 
-1. Sign in to the AWS Management Console and open the API Gateway console at [https://console\.aws\.amazon\.com/apigateway/](https://console.aws.amazon.com/apigateway/)\. 
+1. Sign in to the AWS Management Console and open the API Gateway console at [https://console\.aws\.amazon\.com/apigateway/](https://console.aws.amazon.com/apigateway/)\.
 
 1. In the upper\-right corner of the management console, choose the AWS region from which you want to delete resources\.
 
@@ -425,7 +425,7 @@ You can use the [AWS Management Console](https://console.aws.amazon.com/) to man
 1. Click the **Actions** menu\.
 
 1. Choose **Delete Stack** from the drop\-down list\.
-**Note**  
+**Note**
 If termination protection is enabled for the stack, you must remove the protection before you can delete the stack\.
 
 1. Follow the instructions to confirm the deletion of the stack\.

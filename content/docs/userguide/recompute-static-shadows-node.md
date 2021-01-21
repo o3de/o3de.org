@@ -16,19 +16,19 @@ Triggers recalculation of cached shadow maps\.
 ## Inputs {#recompute-static-shadows-node-inputs}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Bounds | AABB |  Specifies the area where shadow maps should be recomputed\.  | 
-| Next Cascade Scale | Number | Multiplier for scaling the bounding boxes for subsequent cached cascades\. The bounding boxes are scaled versions of the preceding cascades\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Bounds | AABB |  Specifies the area where shadow maps should be recomputed\.  |
+| Next Cascade Scale | Number | Multiplier for scaling the bounding boxes for subsequent cached cascades\. The bounding boxes are scaled versions of the preceding cascades\. |
 
 ## Outputs {#recompute-static-shadows-node-outputs}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

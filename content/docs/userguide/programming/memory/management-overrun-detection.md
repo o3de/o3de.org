@@ -6,7 +6,7 @@ title: Overrun Detection
 
 Overrun detection is an experimental feature available starting in Lumberyard version 1\.21\. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.
 
-**Note**  
+**Note**
 Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap)\. However, it can be used with the Lumberyard memory allocators and does not require recompiling\.
 
 ## Prerequisites and Limitations {#memory-management-overrun-detection-prerequisites-and-limitations}
@@ -31,7 +31,7 @@ Overrun detection is enabled by a setting in your project's `Game.xml` file\.
 1. Change `useOverrunDetection` from the default `false` to `true`, as shown in the following example\.
 
    ```
-   <Class name="bool" field="useOverrunDetection" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/> 
+   <Class name="bool" field="useOverrunDetection" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
    ```
 
 ## Using Overrun Detection {#memory-management-overrun-detection-using}
@@ -41,7 +41,7 @@ When overrun detection is enabled, debug your game as usual\. Keep the following
 + If a system reads or writes outside allocated memory, the game crashes with a call stack at the point of the invalid read or write\. An invalid read or write includes the usual `Exception thrown: invalid read/write` message near the end of the output\. If this message does not appear, the exception is not a memory read or write bug\.
 + If the game doesn't crash, but locks up instead, you can pause the debugger to see where the game stopped\.
 
-**Note**  
+**Note**
 The detector doesn't always release memory after the memory is acquired from the operating system\. Depending on the game, the detector can increase memory consumption as gameplay continues\. If you run out of memory when you use the detector, a crash occurs in either `WindowsPlatformAllocator::ReserveBytes` or `WindowsPlatformAllocator::CommitBytes`\.
 
 ## Source Code Location {#memory-management-overrun-detection-source-code}

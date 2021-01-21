@@ -28,7 +28,7 @@ The following procedure shows you how to create a Script Canvas graph that perfo
 
 1. Click **AWSBehaviorHTTP**\. In **Node Inspector**, **AWSBehaviorHTTP Variable** appears\. The default name of the variable is **Variable 1**\.
 
-1. In **Node Inspector**, expand **AWSBehaviorHTTP** to show the **URL** box\. 
+1. In **Node Inspector**, expand **AWSBehaviorHTTP** to show the **URL** box\.
 
 1. For **URL**, which is the input field for the variable, enter a URL for the GET operation \(for example, `http://example.com/`\)\.
 
@@ -62,17 +62,17 @@ To show the response to the HTTP request, you add an **AWSBehaviorHTTPNotificati
 
 1. In the **Node Palette**, expand **Utilities**, **Debug** and then drag four **Print** nodes to the right of the **ToJSON** node on the canvas and align them vertically\. **Print** nodes display messages in the Lumberyard Editor console\. After you connect them, each **Print** node will display a different part of the GET response in the console\.
 
-1. Connect the **Out** pin of the **ToJSON** node to the **In** pin on the first **Print** node\. 
+1. Connect the **Out** pin of the **ToJSON** node to the **In** pin on the first **Print** node\.
 
-1. Connect the **Result: String** pin of the **ToJSON** node to the **Value** pin on the first **Print** node\. 
+1. Connect the **Result: String** pin of the **ToJSON** node to the **Value** pin on the first **Print** node\.
 
-1. Connect the **Out** pin of the **GetResponse** node to the **In** pin of the three remaining **Print** nodes\. 
+1. Connect the **Out** pin of the **GetResponse** node to the **In** pin of the three remaining **Print** nodes\.
 
-1. Connect the **Number** pin of the **GetResponse** node to the **Value** pin of the second **Print** node\. 
+1. Connect the **Number** pin of the **GetResponse** node to the **Value** pin of the second **Print** node\.
 
-1. Connect the first **String** pin of the **GetResponse** node to the **Value** pin of the third **Print** node\. 
+1. Connect the first **String** pin of the **GetResponse** node to the **Value** pin of the third **Print** node\.
 
-1. Connect the second **String** pin of the **GetResponse** node to the **Value** pin of the fourth **Print** node\. 
+1. Connect the second **String** pin of the **GetResponse** node to the **Value** pin of the fourth **Print** node\.
 
 ## Step 3: Add Nodes to Display the Success or Failure of the Operation {#cloud-canvas-cloud-gem-aws-http-get-sc-display-success-or-failure}
 
@@ -90,7 +90,7 @@ Next, you add nodes to display the success or failure of the GET operation\.
 
 1. Connect the **Out** pins of the **OnError** and **OnSuccess** nodes to the **In** pin of the new **Print** node\.
 
-1. Connect the **String** pins of the **OnError** and **OnSuccess** nodes to the **Value** pin of the new **Print** node\. Your canvas should look similar to the following image:  
+1. Connect the **String** pins of the **OnError** and **OnSuccess** nodes to the **Value** pin of the new **Print** node\. Your canvas should look similar to the following image:
 ![\[A Script Canvas graph that performs an HTTP GET operation\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-http-get-sc-1.png)
 
 1. Save the canvas with a name like `MyHttpGetTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
@@ -131,7 +131,7 @@ Now you are ready to attach the script canvas to an entity and then test it\.
    <html>
    <head>
        <title>Example Domain</title>
-   
+
        <meta charset="utf-8" />
        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -141,11 +141,11 @@ Now you are ready to attach the script canvas to an entity and then test it\.
            margin: 0;
            padding: 0;
            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-           
+
        }
        div {
            width: 600px;
-   (Script Canvas) - 
+   (Script Canvas) -
    {
      "date": "Mon, 23 Apr 2018 20:42:03 GMT",
      "etag": "\"1541025663+gzip+ident\"",

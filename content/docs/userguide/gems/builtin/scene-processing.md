@@ -9,7 +9,7 @@ Use the Scene Processing gem to specify the default settings for processing scen
 
 ![\[The Scene Processing gem enables Lumberyard to process scene files such for your game.\]](/images/userguide/gem-system-gem-sceneprocessing.png)
 
-**Note**  
+**Note**
 The Scene Processing gem is required and enabled by default for Lumberyard projects\.
 
 For information about working with file types and settings, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.

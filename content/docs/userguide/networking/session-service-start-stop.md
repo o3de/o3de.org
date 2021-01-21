@@ -11,17 +11,17 @@ When a session service is created, a descriptor class derived from `GridMate::Se
 The implementations of `GridMate::SessionService` that are included with the base Lumberyard engine are as follows\.
 
 
-****  
+****
 
-| Implementation | Descriptor | Description | 
-| --- | --- | --- | 
-| GridMate::LANSessionService | GridMate::SessionServiceDesc | Sessions hosted over a local area network\. | 
+| Implementation | Descriptor | Description |
+| --- | --- | --- |
+| GridMate::LANSessionService | GridMate::SessionServiceDesc | Sessions hosted over a local area network\. |
 
 ## Starting a Session Service {#network-session-service-start-stop-starting}
 
 Only one session service can be present per `GridMate::IGridMate` instance\.
 
-**Note**  
+**Note**
 Attempting to register multiple session services causes an assert and overrides any previously registered session services\.
 
 You have two ways to start a session service:
@@ -29,24 +29,24 @@ You have two ways to start a session service:
 + Register an existing session service object with GridMate\.
 
 
-****  
+****
 
-| Starting Method | Details | 
-| --- | --- | 
-| GridMate::StartGridMateService\(\) | Creates a session service object and registers it with GridMate::IGridMate\. | 
-| GridMate::RegisterService\(\) | Registers an existing session service object with GridMate::IGridMate\. | 
+| Starting Method | Details |
+| --- | --- |
+| GridMate::StartGridMateService\(\) | Creates a session service object and registers it with GridMate::IGridMate\. |
+| GridMate::RegisterService\(\) | Registers an existing session service object with GridMate::IGridMate\. |
 
 ## Stopping a Session Service {#network-session-service-start-stop-stopping}
 
 The method for stopping the session service depends on how the session service was started\.
 
 
-****  
+****
 
-| Starting Method | Stopping Method | Details | 
-| --- | --- | --- | 
-| GridMate::StartGridMateService\(\) | See details\. | The session service is stopped when GridMate::IGridMate is destroyed by using the GridMate::GridMateDestroy\(\) method\. | 
-| GridMate::RegisterService\(\) | GridMate::UnregisterService\(\) | The session is service is stopped and memory freed when GridMate::UnregisterService\(\) is called\. | 
+| Starting Method | Stopping Method | Details |
+| --- | --- | --- |
+| GridMate::StartGridMateService\(\) | See details\. | The session service is stopped when GridMate::IGridMate is destroyed by using the GridMate::GridMateDestroy\(\) method\. |
+| GridMate::RegisterService\(\) | GridMate::UnregisterService\(\) | The session is service is stopped and memory freed when GridMate::UnregisterService\(\) is called\. |
 
 ## Examples {#network-session-service-start-stop-examples}
 

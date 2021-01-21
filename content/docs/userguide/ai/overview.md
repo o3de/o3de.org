@@ -5,20 +5,20 @@ title: AI System Overview
 # AI System Overview {#ai-concepts-overview}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 This section outlines basic concepts related to the AI system\.
 
 ## Navigation {#ai-concepts-navigation}
 + Default navigation system
-  + Triangulation 
+  + Triangulation
     + 2D terrain\-based navigation
     + Uses cylindrical objects \(such as trees\) and forbidden areas
-  + Navigation modifiers 
+  + Navigation modifiers
     + Human waypoints - Need to be place manually but connections can be generated automatically
     + Flight - Information about navigable volumes for flying entities
     + Volume - General volume navigation, such as for oceans
@@ -26,7 +26,7 @@ This section outlines basic concepts related to the AI system\.
 + Smart object system: allows AI agents to move in special ways
 + AI territories & waves
   + AI waves can be attached to AI territories and allow independent AI activations
-  + AI waves automatically handle entity pool issues for assigned AI agents, such as loading/unloading 
+  + AI waves automatically handle entity pool issues for assigned AI agents, such as loading/unloading
 
 In general, a search is time\-sliced to use 0\.5 ms per AI frame \(configured using the console variable `ai_PathfinderUpdateTime`\)\. Options for pathfinding techniques include high priority, straight, and partial\. Updates for human waypoints are heavy but time\-sliced\. The navigation graph is optimized but needs memory\. Navigation data is generated offline in Editor\. With multi\-layer navigation, the navigation mesh is regenerated when the designer modifies the map\.
 
@@ -45,7 +45,7 @@ In general, a search is time\-sliced to use 0\.5 ms per AI frame \(configured us
 
 ## World\-Interfacing {#ai-concepts-interfacing}
 + Signals - To trigger events and/or change behaviors
-+ Perception system 
++ Perception system
   + Perception handler \(legacy, usually per game\)
   + Target track system - Uses configurable ADSR envelopes to represent incoming stimuli
 + Communication system - Allows AI agents to play sound/voice/animation events
@@ -55,13 +55,13 @@ In general, a search is time\-sliced to use 0\.5 ms per AI frame \(configured us
 The design and development environment includes the following components:
 + Game object model - Entity, movement controller, extensions
 + Actor & vehicle system - Health, camera, IK, weapons, animation, etc\.
-+ Editor 
++ Editor
   + AI entities - Properties, scripts
   + Entity archetypes - Templates for properties of individual AI agents
   + AI shapes - AI territories, AI paths, forbidden areas
   + Navigation - Navigation modifiers used instead of triangulation
   + Cover surfaces - CoverSurface anchors to indicate where cover should be
-+ Scripting with Lua 
++ Scripting with Lua
   + Entity definitions
   + AI behavior definitions
   + Group behavior definitions
@@ -77,11 +77,11 @@ The design and development environment includes the following components:
     + AI\.SetBehaviorVariable \(to change behavior\)
     + AI\.CanMelee
     + AI\.RecComment \(make comment for Visual AI Debugger
-+ Scripting with XML 
++ Scripting with XML
   + Behavior/coordination trees
   + AI communications
   + Items \(e\.g\., weapons\)
-+ Entity system 
++ Entity system
   + Spatial queries - GetPhysicalEntitiesInBox\(\)
   + AI agents and vehicles are entities in the Entity system
   + To spawn an entity, its Entity class is required - Can be defined either using the `.ent` file in `Game\Entities` OR through a C\+\+ call to RegisterFactory\(\) in game code

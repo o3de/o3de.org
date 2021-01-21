@@ -33,15 +33,15 @@ For a Lumberyard component to share data on the network, it must include the `N
    }
    ```
 
-1. Implement the `AzFramework::NetBindable` interfaces: 
+1. Implement the `AzFramework::NetBindable` interfaces:
 
    ```
    // Called during network binding on the primary. Implementations should create and return a new binding.
    virtual GridMate::ReplicaChunkPtr GetNetworkBinding() = 0;
-   
+
    // Called during network binding on proxies.
    virtual void SetNetworkBinding(GridMate::ReplicaChunkPtr chunk) = 0;
-   
+
    // Called when network is unbound. Implementations should release their references to the binding.
    virtual void UnbindFromNetwork() = 0;
    ```
@@ -65,11 +65,11 @@ This function passes a `ReplicaChunk` to the component and initializes the inter
 
 ### UnbindFromNetwork {#network-replicas-binding-details-unbind}
 
-The `UnbindFromNetwork` function is called to stop the component from reacting to data updates from the network\. This can happen, for example, when the primary no longer exists, has been deactivated, or has relinquished control to the local source\. 
+The `UnbindFromNetwork` function is called to stop the component from reacting to data updates from the network\. This can happen, for example, when the primary no longer exists, has been deactivated, or has relinquished control to the local source\.
 
 ## Creating a Chunk {#network-replicas-binding-creating-a-chunk}
 
-After you have enabled the `NetBindable` interface on the *component*, you must create a `ReplicaChunk` object that will store any state that the component wants to share\. 
+After you have enabled the `NetBindable` interface on the *component*, you must create a `ReplicaChunk` object that will store any state that the component wants to share\.
 
 ```
 class ShipComponentReplicaChunk : public GridMate::ReplicaChunkBase
@@ -95,8 +95,8 @@ public:
 };
 ```
 
-**Note**  
- You must reflect this new replica chunk's datasets and RPCs in the component's `Reflect` function\. 
+**Note**
+ You must reflect this new replica chunk's datasets and RPCs in the component's `Reflect` function\.
 
 ```
 AzFramework::NetworkContext* netContext = azrtti_cast<AzFramework::NetworkContext*>(context);
@@ -145,7 +145,7 @@ void ShipComponent::SetNetworkBinding(GridMate::ReplicaChunkPtr chunk)
     m_replicaChunk = chunk;
 
     ShipComponentReplicaChunk* shipControllerChunk = static_cast<ShipComponentReplicaChunk*>(m_replicaChunk.get());
-    SetPlayerEntityIdImpl(shipControllerChunk->m_playerEntityId.Get());        
+    SetPlayerEntityIdImpl(shipControllerChunk->m_playerEntityId.Get());
 }
 ```
 
@@ -161,7 +161,7 @@ void ShipComponent::UnbindFromNetwork()
 
 ## Maintaining State {#network-replicas-binding-maintaining-state}
 
-The last step is to create checks to make sure that any local modifications to the preferred networkable state do not overwrite the networked state\. In addition, you must update the replica chunk whenever the local state changes and the component is in control of the state\. 
+The last step is to create checks to make sure that any local modifications to the preferred networkable state do not overwrite the networked state\. In addition, you must update the replica chunk whenever the local state changes and the component is in control of the state\.
 
 ```
 void ShipComponent::OnNewNetPlayerEntityId(const AZ::EntityId& playerEntityId, const GridMate::TimeContext& tc)
@@ -178,7 +178,7 @@ bool ShipComponent::SetFiringRPC(bool firing, const GridMate::RpcContext& rpcCon
     }
 
     return false;
-}    
+}
 
 // Component implementation of to set firing
 void ShipComponent::SetFiring(bool firing)
@@ -214,7 +214,7 @@ void ShipComponent::SetPlayerEntityIdImpl(AZ::EntityId playerEntityId)
 
         if (m_replicaChunk && AzFramework::NetQuery::IsEntityAuthoritative(GetEntityId()))
         {
-            // If you are authoritative over the entity and the component is replicated, update the value of the DataSet and propagate to clients 
+            // If you are authoritative over the entity and the component is replicated, update the value of the DataSet and propagate to clients
             ShipComponentReplicaChunk* shipChunk = static_cast<ShipComponentReplicaChunk*>(m_replicaChunk.get());
             shipChunk->m_playerEntityId.Set(m_playerEntityId);
         }

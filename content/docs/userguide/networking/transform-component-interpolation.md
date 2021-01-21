@@ -23,7 +23,7 @@ You can handle position and rotation interpolation separately\.
 
 For each of these settings, you can either choose no interpolation at all, which is the default choice, or linear interpolation\. For example, if your object never moves and thus has no need to smooth position over time, then you can leave **Position interpolation** mode set to **None**\. If your object rotates and you notice visual jitter or sudden changes in its position under poor network conditions, you can set **Rotation Interpolation** to **Linear**\. This setting can lead to smoother change in rotation over time\.
 
-**Note**  
+**Note**
 Scale interpolation is not supported in the Transform component\.
 
 ## Network Optimization of the Transform Component {#network-transform-component-interpolation-optimization}

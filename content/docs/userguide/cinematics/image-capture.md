@@ -14,7 +14,7 @@ You can capture image frames using render output, a capture track, or console va
 
 ## Capturing Image Frames with Render Output {#cinematics-image-capture-render-output}
 
-You can use the **Render Output** tool in the Track View to capture image frames\. 
+You can use the **Render Output** tool in the Track View to capture image frames\.
 
 **To capture image frames using Render Output**
 
@@ -26,7 +26,7 @@ You can use the **Render Output** tool in the Track View to capture image frames
 
 1. Click **Start** to start the capture\.
 
-**Note**  
+**Note**
 You may need to adjust the aspect ratio for captured image frames\.
 
 **To change the aspect ratio for image frame captures**
@@ -47,23 +47,23 @@ You can capture image frames when a sequence is played in game mode\.
 
 1. In the Track View, right\-click the **Director** node and choose **Add Track**, **Capture**\.
 
-1. Double\-click the created track to add a capture keyframe\. You can set the following key properties:  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/cinematics-image-capture.html)
+1. Double\-click the created track to add a capture keyframe\. You can set the following key properties:
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/cinematics/image-capture)
 
-1. Set up a Script Canvas graph to play the sequence on game start\. 
+1. Set up a Script Canvas graph to play the sequence on game start\.
 
 ## Capturing Image Frames with Console Variables {#cinematics-image-capture-cvar}
 
 Capture image frames with the following console variables\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
-**Capture Image Frames Console Variables**  
+**Capture Image Frames Console Variables**
 
-| Console Variable | Description | 
-| --- | --- | 
-| fixed\_time\_step |  Lowers the game speed to achieve a constant frame rate throughout the sequence\. For example, a time step value of `0.04` specifies a 25 fps gameplay speed\. Default value: `0.0`  | 
-| capture\_frames |  Enables frame capture, if the value is set to `1`\.  | 
-| capture\_file\_format |  Sets the output format for the images\. Valid values: `.jpg`, `.tga`, `.tif`  | 
-| capture\_file\_prefix |  Sets a file name prefix to use for captured frames\. Default: `Frame`  | 
-| capture\_buffer |  Sets the type of buffer to capture\. Valid values:  `0` = Color \(RGB pixels\) `1` = Color with Alpha \(RGBA pixels where the alpha channel is set to 255 where geometry exists\)  | 
+| Console Variable | Description |
+| --- | --- |
+| fixed\_time\_step |  Lowers the game speed to achieve a constant frame rate throughout the sequence\. For example, a time step value of `0.04` specifies a 25 fps gameplay speed\. Default value: `0.0`  |
+| capture\_frames |  Enables frame capture, if the value is set to `1`\.  |
+| capture\_file\_format |  Sets the output format for the images\. Valid values: `.jpg`, `.tga`, `.tif`  |
+| capture\_file\_prefix |  Sets a file name prefix to use for captured frames\. Default: `Frame`  |
+| capture\_buffer |  Sets the type of buffer to capture\. Valid values:  `0` = Color \(RGB pixels\) `1` = Color with Alpha \(RGBA pixels where the alpha channel is set to 255 where geometry exists\)  |

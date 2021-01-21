@@ -7,7 +7,7 @@ title: Console Variable Tutorial
 
 This tutorial shows you how to modify existing and create console variables \(CVARs\)\. CVARs can be used to control many configurable behaviors in Lumberyard\. You can also use them in your game\.
 
-**Note**  
+**Note**
  This brief tutorial is intended for programmers\. Most of the content uses code\.
 
 ## Creating CVars {#system-cvar-tutorial-creating}
@@ -20,7 +20,7 @@ This tutorial shows you how to modify existing and create console variables \(CV
 
    ```
    struct SCVars
-   { 
+   {
    	int g_tutorialVar; //add this line
     
    	//... pre-existing code ...
@@ -65,21 +65,21 @@ This tutorial shows you how to modify existing and create console variables \(CV
 
 You can now change the value of the CVar that you created by using code, the console, and `.cfg` files\.
 
-**From code**  
+**From code**
 To access the value of the variable in your game code, use the `g_pGameCVars` pointer, as shown in the following example\.
 
 ```
 int myTutorialVar = g_pGameCVars->g_tutorialVar;
 ```
 
-**From the console**  
+**From the console**
 To change the value of the cvar from the console, use the syntax `cvar_name=cvar_value`\. The following example sets the value of the `g_tutorialVar` console variable to 1337\.
 
 ```
 g_tutorialVar = 1337
 ```
 
-**From \.cfg files**  
+**From \.cfg files**
 It's also possible to change the default CVar value from one of the `.cfg` files\. Whenever a CVar is assigned a value, its previous value is discarded\. Therefore, the last assignment is the one that is current\.
 
 The following list shows the order of initialization for console variables\.
@@ -92,5 +92,5 @@ The following list shows the order of initialization for console variables\.
 
 1. Any value assigned at game runtime\.
 
-**Tip**  
+**Tip**
 To change the default value of an existing CVar without having to compile, add a line to `system.cfg` file to override the default\. 

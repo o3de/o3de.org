@@ -16,18 +16,18 @@ Returns the direction of the global wind\. The length of the **Wind Direction** 
 ## Inputs {#get-wind-direction-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#get-wind-direction-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Wind Direction | Vector3 | Current global wind direction\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Wind Direction | Vector3 | Current global wind direction\. |

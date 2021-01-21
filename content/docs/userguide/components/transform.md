@@ -13,42 +13,42 @@ The **Transform** component controls the translation, rotation, and scale inform
 
 The **Transform** component has the following properties:
 
-**Parent entity**  
+**Parent entity**
 The entity assigned as the parent\. If a parent entity is specified, the **Transform** component follows the parent entity\.
 
 ### Values {#component-transform-properties-values}
 
 The **Transform** component has the following values:
 
-**Translate**  
+**Translate**
 The local position \(relative to the parent\) in meters\.
 
-**Rotate**  
+**Rotate**
 The local rotation \(relative to the parent\) in degrees\.
 
-**Scale**  
-The local scale\. 
+**Scale**
+The local scale\.
 
-**Parent activation**  
+**Parent activation**
 Configures transform behavior when the parent entity activates\.
 
-**Static**  
+**Static**
 Entities that can't be moved at run time\. Some systems in Lumberyard treat static entities differently than movable entities \(for example, the renderer can optimize static entities, making them less resource intensive to draw\)\.
 
 ### Network Sync {#component-transform-properties-network-sync}
 
 The **Transform** component has following network sync options:
 
-**Sync to replicas**  
-Transform component syncs in a networked game\. If you enable this option, you must also add the [Network Binding](/docs/userguide/components/network-binding.md) component\. Otherwise, the entity is not replicated and the interpolation options don't apply\. 
+**Sync to replicas**
+Transform component syncs in a networked game\. If you enable this option, you must also add the [Network Binding](/docs/userguide/components/network-binding.md) component\. Otherwise, the entity is not replicated and the interpolation options don't apply\.
 
-**Position Interpolation**  
-The smoothing of position between network updates and interruptions\. This is useful if your objects change location and you notice visual jitter or sudden changes in orientation due to network conditions\. 
+**Position Interpolation**
+The smoothing of position between network updates and interruptions\. This is useful if your objects change location and you notice visual jitter or sudden changes in orientation due to network conditions\.
 
-**Rotation Interpolation**  
-The smoothing of rotation between network updates and interruptions\. This is useful if your objects rotate and you notice visual jitter or sudden changes in orientation due to network conditions\. 
+**Rotation Interpolation**
+The smoothing of rotation between network updates and interruptions\. This is useful if your objects rotate and you notice visual jitter or sudden changes in orientation due to network conditions\.
 
-**Note**  
+**Note**
 Scale interpolation is not supported in the **Transform** component\.
 
 ## EBus Request Bus Interface {#component-transform-ebusrequest}
@@ -63,476 +63,476 @@ Use the following request functions with the EBus interface to communicate with 
 
 Returns the entity's local transform\. Doesn't include the parent entity's transform\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Entity's local transform\.
 
 ### SetLocalTM {#transform-ebus-set-local-tm}
 
 Sets the entity's local transform, relative to its parent entity, and notifies all listeners\.
 
-**Parameters**  
+**Parameters**
 Entity's local transform\.
 
-**Return**  
+**Return**
 None
 
 ### GetWorldTM {#transform-ebus-get-world-tm}
 
 Returns the entity's world transform, including the parent entity's transform\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Entity's world transform\.
 
 ### SetWorldTM {#transform-ebus-set-world-tm}
 
 Sets the world transform and notifies all listeners\.
 
-**Parameters**  
+**Parameters**
 Entity's world transform\.
 
-**Return**  
+**Return**
 None
 
 ### GetLocalAndWorld {#transform-ebus-get-local-world}
 
 Retrieves the entity's local and world transforms\.
 
-**Parameters**  
-Transform \[out\] - Local transform, relative to parent entity\.  
+**Parameters**
+Transform \[out\] - Local transform, relative to parent entity\.
 Transform \[out\] - World transform\.
 
-**Return**  
+**Return**
 None
 
 ### SetWorldTranslation {#transform-ebus-set-world-translation}
 
 Sets the entity's world space translation\.
 
-**Parameters**  
-New world space location, in x, y, and z coordinates\.  
+**Parameters**
+New world space location, in x, y, and z coordinates\.
 Type: Vector3
 
-**Return**  
+**Return**
 None
 
 ### SetLocalTranslation {#transform-ebus-set-local-translation}
 
 Sets the entity's local space translation, which is relative to its parent entity\.
 
-**Parameters**  
-New local space location, in x, y, and z coordinates\.  
+**Parameters**
+New local space location, in x, y, and z coordinates\.
 Type: Vector3
 
-**Return**  
+**Return**
 None
 
 ### GetWorldTranslation {#transform-ebus-get-world-translation}
 
 Gets the entity's world space translation\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Entity's world space, in x, y, and z coordinates\.  
+**Return**
+Entity's world space, in x, y, and z coordinates\.
 Type: Vector3
 
 ### GetLocalTranslation {#transform-ebus-get-local-translation}
 
 Gets the entity's local space translation, which is relative to its parent entity\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Entity's local space, in x, y, and z coordinates\.  
+**Return**
+Entity's local space, in x, y, and z coordinates\.
 Type: Vector3
 
 ### MoveEntity {#transform-ebus-move-entity}
 
 Moves the entity within world space\.
 
-**Parameters**  
-Offset in world space, in x, y, and z coordinates\.  
+**Parameters**
+Offset in world space, in x, y, and z coordinates\.
 Type: Vector3
 
-**Return**  
+**Return**
 None
 
 ### SetWorldX {#transform-ebus-set-world-x}
 
 Sets the entity's translation x\-axis coordinate in world space\.
 
-**Parameters**  
-X\-axis coordinate in world space\.  
+**Parameters**
+X\-axis coordinate in world space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetWorldY {#transform-ebus-set-world-y}
 
 Sets the entity's translation y\-axis coordinate in world space\.
 
-**Parameters**  
-Y\-axis coordinate in world space\.  
+**Parameters**
+Y\-axis coordinate in world space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetWorldZ {#transform-ebus-set-world-z}
 
 Sets the entity's translation z\-axis coordinate in world space\.
 
-**Parameters**  
-Z\-axis coordinate in world space\.  
+**Parameters**
+Z\-axis coordinate in world space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### GetWorldX {#transform-ebus-get-world-x}
 
 Gets the entity's translation x\-axis coordinate in world space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-X\-axis coordinate in world space\.  
+**Return**
+X\-axis coordinate in world space\.
 Type: Float
 
 ### GetWorldY {#transform-ebus-get-world-y}
 
 Gets the entity's translation y\-axis coordinate in world space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Y\-axis coordinate in world space\.  
+**Return**
+Y\-axis coordinate in world space\.
 Type: Float
 
 ### GetWorldZ {#transform-ebus-get-world-z}
 
 Sets the entity's translation z\-axis coordinate in world space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Z\-axis coordinate in world space\.  
+**Return**
+Z\-axis coordinate in world space\.
 Type: Float
 
 ### SetLocalX {#transform-ebus-set-local-x}
 
 Sets the entity's translation x\-axis coordinate in local space\.
 
-**Parameters**  
-X\-axis coordinate in local space\.  
+**Parameters**
+X\-axis coordinate in local space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetLocalY {#transform-ebus-set-local-y}
 
 Sets the entity's translation y\-axis coordinate in local space\.
 
-**Parameters**  
-Y\-axis coordinate in local space\.  
+**Parameters**
+Y\-axis coordinate in local space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetLocalZ {#transform-ebus-set-local-z}
 
 Sets the entity's translation z\-axis coordinate in local space\.
 
-**Parameters**  
-Z\-axis coordinate in local space\.  
+**Parameters**
+Z\-axis coordinate in local space\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### GetLocalX {#transform-ebus-get-local-x}
 
 Gets the entity's translation x\-axis coordinate in local space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-X\-axis coordinate in local space\.  
+**Return**
+X\-axis coordinate in local space\.
 Type: Float
 
 ### GetLocalY {#transform-ebus-get-local-y}
 
 Gets the entity's y\-axis coordinate in local space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Y\-axis coordinate in local space\.  
+**Return**
+Y\-axis coordinate in local space\.
 Type: Float
 
 ### GetLocalZ {#transform-ebus-get-local-z}
 
 Gets the entity's z\-axis coordinate in local space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Z\-axis coordinate in local space\.  
+**Return**
+Z\-axis coordinate in local space\.
 Type: Float
 
 ### GetWorldRotation {#transform-ebus-get-world-rotation}
 
 Gets the angles in radians for each principle axis around which the world transform is rotated in the following order: z\-axis, y\-axis, x\-axis\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-The Euler angles in radians, which indicate the degree of rotation around each principle axis\.  
+**Return**
+The Euler angles in radians, which indicate the degree of rotation around each principle axis\.
 Type: Vector3
 
 ### GetWorldRotationQuaternion {#transform-ebus-get-world-quartnion}
 
 Gets the quaternion that represents the world rotation\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-The quaternion that represents the world rotation\.  
+**Return**
+The quaternion that represents the world rotation\.
 Type: Quaternion
 
 ### SetLocalRotation {#transform-ebus-set-local-rotation}
 
 Sets the local rotation around each principle axes in the following order: z\-axis, y\-axis, x\-axis\.
 
-**Parameters**  
-The Vector3 denoting radian angles of the rotations around each principle axis\.  
+**Parameters**
+The Vector3 denoting radian angles of the rotations around each principle axis\.
 Type: Vector3
 
-**Return**  
+**Return**
 None
 
 ### SetLocalRotationQuaternion {#transform-ebus-set-rotation-quaternion}
 
 Sets the local rotation matrix using a quaternion\.
 
-**Parameters**  
-The local rotation matrix\.  
+**Parameters**
+The local rotation matrix\.
 Type: Quaternion
 
-**Return**  
+**Return**
 None
 
 ### RotateAroundLocalX {#transform-ebus-rotate-around-local-x}
 
 Rotates around the local x\-axis for a radian angle\.
 
-**Parameters**  
-The radian angle to rotate around the local x\-axis\.  
+**Parameters**
+The radian angle to rotate around the local x\-axis\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### RotateAroundLocalY {#transform-ebus-rotate-around-local-y}
 
 Rotates around the local y\-axis for a radian angle\.
 
-**Parameters**  
-The radian angle to rotate around the local y\-axis\.  
+**Parameters**
+The radian angle to rotate around the local y\-axis\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### RotateAroundLocalZ {#transform-ebus-rotate-around-local-z}
 
 Rotates around the local z\-axis for a radian angle\.
 
-**Parameters**  
-The radian angle to rotate around the local z\-axis\.  
+**Parameters**
+The radian angle to rotate around the local z\-axis\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### GetLocalRotation {#transform-ebus-get-local-rotation}
 
 Gets angles in radian for each principle axis around which the local transform is rotated in the following order: z\-axis, y\-axis, x\-axis\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Indicates how much in radian is rotated around each principle axis\.  
+**Return**
+Indicates how much in radian is rotated around each principle axis\.
 Type: Vector3
 
 ### GetLocalRotationQuaternion {#transform-ebus-get-local-rotation-quaternion}
 
 Gets the quaternion representing the local rotation\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-The quaternion that represents the local rotation\.  
+**Return**
+The quaternion that represents the local rotation\.
 Type: Quaternion
 
 ### SetLocalScale {#transform-ebus-set-local-scale}
 
 Sets local scale of the transform\.
 
-**Parameters**  
-Local scale of the transform, in x, y, and z coordinates\.  
+**Parameters**
+Local scale of the transform, in x, y, and z coordinates\.
 Type: Vector3
 
-**Return**  
+**Return**
 None
 
 ### SetLocalScaleX {#transform-ebus-set-local-scale-x}
 
 Sets local scale of the transform on the x\-axis\.
 
-**Parameters**  
-X\-axis coordinate for the local scale\.  
+**Parameters**
+X\-axis coordinate for the local scale\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetLocalScaleY {#transform-ebus-set-local-scale-y}
 
 Sets local scale of the transform on the y\-axis\.
 
-**Parameters**  
-Y\-axis coordinate for the local scale\.  
+**Parameters**
+Y\-axis coordinate for the local scale\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### SetLocalScaleZ {#transform-ebus-set-local-scale-z}
 
 Sets local scale of the transform on the z\-axis\.
 
-**Parameters**  
-Z\-axis coordinate for the local scale\.  
+**Parameters**
+Z\-axis coordinate for the local scale\.
 Type: Float
 
-**Return**  
+**Return**
 None
 
 ### GetLocalScale {#transform-ebus-get-local-scale}
 
 Gets the scale value on each axis in local space\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Scale value for each axis in local space\.  
+**Return**
+Scale value for each axis in local space\.
 Type: Vector3
 
 ### GetWorldScale {#transform-ebus-get-world-scale}
 
 Gets the scale value on each axis in world space\. Note that the transform is skewed when it is rotated and has a parent transform scale in which the returned world scale from this function is inaccurate\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-Scale values for each axis in world space\.  
+**Return**
+Scale values for each axis in world space\.
 Type: Vector3
 
 ### GetParentId {#transform-ebus-get-parent-ID}
 
 Returns the parent entity's ID\. If the entity does not have a parent, the entity ID is invalid\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
-EntityID of the parent  
+**Return**
+EntityID of the parent
 Type: Int
 
 ### SetParent {#transform-ebus-set-parent}
 
 Sets the entity's parent entity and notifies all listeners\. The entity's local transform is moved into the parent entity's space to preserve the entity's world transform\.
 
-**Parameters**  
-EntityId - Parent entity ID  
+**Parameters**
+EntityId - Parent entity ID
 Type: Int
 
-**Return**  
+**Return**
 None
 
 ### SetParentRelative {#transform-ebus-set-parent-relative}
 
 Sets the entity's parent entity, moves the transform relative to the parent entity, and notifies all listeners\. This function uses the world transform as a local transform and moves the transform relative to the parent entity\.
 
-**Parameters**  
-EntityId - Parent entity ID  
+**Parameters**
+EntityId - Parent entity ID
 Type: Int
 
-**Return**  
+**Return**
 None
 
 ### GetChildren {#transform-ebus-get-children}
 
 Returns the entity IDs of the entity's immediate children\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Vector of EntityIds
 
 ### GetAllDescendants {#transform-ebus-get-all-descendants}
 
 Returns the entity IDs of all descendants of the entity\. The descendants are the entity's children, the children's children, and so on\. The entity IDs are ordered breadth first\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Vector of EntityIds
 
 ### GetEntityAndAllDescendants {#transform-ebus-get-entity-and-all-descendants}
 
 Returns the entity ID of the entity and all its descendants\. The descendants are the entity's children, the children's children, and so on\. The entity IDs are ordered breadth first, and this entity's ID is the first in the list\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Vector of EntityIds
 
 ### IsStaticTransform {#transform-ebus-is-static-transform}
 
 Returns whether the transform is static\. A static transform doesn't move and doesn't respond to requests to move it\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Boolean
 
 ## EBus Notification Bus Interface {#component-transform-ebusnotification}
@@ -545,28 +545,28 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Signals that the local or world transform of the entity changed\.
 
-**Parameters**  
-Transform - The new local transform of the entity  
+**Parameters**
+Transform - The new local transform of the entity
 Transform - The new world transform of the entity
 
 ### OnParentChanged {#on-parent-changed}
 
 Signals that the parent of the entity changed\.
 
-**Parameters**  
-EntityId - The entity ID of the previous parent\. The entity ID is invalid if there was no previous parent\.  
+**Parameters**
+EntityId - The entity ID of the previous parent\. The entity ID is invalid if there was no previous parent\.
 EntityId - The entity ID of the new parent\. The entity ID is invalid if there is no new parent\.
 
 ### OnChildAdded {#on-child-added}
 
 Signals that a child was added to the entity\.
 
-**Parameters**  
+**Parameters**
 EntityId - The entity ID of the added child
 
 ### OnChildRemoved {#on-child-removed}
 
 Signals that a child was removed from the entity\.
 
-**Parameters**  
+**Parameters**
 EntityId - The entity ID of the removed child

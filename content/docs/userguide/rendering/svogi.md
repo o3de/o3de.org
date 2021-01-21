@@ -6,11 +6,11 @@ title: Voxel-based Global Illumination (SVOGI)
 # Voxel\-based Global Illumination \(SVOGI\) {#rendering-graphics-svogi}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 Sparse voxel octree global illumination \(SVOGI\), also known as voxel GI, is a global illumination solution based on voxel ray tracing\. It does not require prebaking or manual setup of bounce lights or light volumes\. This solution is experimental and may be memory intensive\.
 
@@ -40,43 +40,43 @@ You must also enable SVOGI per level\.
 
 You can apply voxel GI through several modes\.
 
-**Mode 0**  
-With mode 0, only opacity is voxelized\. The bounced light is sampled directly from shadow maps-extended to reflective shadow maps-and compute shaders are not used\.  
-Mode 0 has the following advantages:  
+**Mode 0**
+With mode 0, only opacity is voxelized\. The bounced light is sampled directly from shadow maps-extended to reflective shadow maps-and compute shaders are not used\.
+Mode 0 has the following advantages:
 + GPU memory usage is small \(\~16 MB\)\.
 + Indirect lighting is completely dynamic; moving sun does not cause any slowdown\.
 + Dynamic objects can bounce indirect lighting\.
-Mode 0 has the following disadvantages:  
+Mode 0 has the following disadvantages:
 + Indirect lighting can have low quality \(more noise\), especially for small point lights\.
 + Only single bounce is possible\.
 + Only diffuse GI is possible\.
 + Environment probes are needed for specular highlights\.
 
-**Modes 1, 2**  
-With modes 1 and 2, albedo, normals, and several layers of radiance are voxelized together with opacity\. Direct lighting is also injected into voxelization, where it is propagated within the voxelization and then sampled during the ray\-tracing pass\.  
-Modes 1 and 2 have the following advantages:  
+**Modes 1, 2**
+With modes 1 and 2, albedo, normals, and several layers of radiance are voxelized together with opacity\. Direct lighting is also injected into voxelization, where it is propagated within the voxelization and then sampled during the ray\-tracing pass\.
+Modes 1 and 2 have the following advantages:
 + Modes 1 and 2 support multiple bounces\. The light source can be semi\-static with multibounce support or be fully dynamic with single bounce support\.
 + Mode 2 supports traced speculars\.
 + They provide higher quality, smoother indirect lighting\.
-Modes 1 and 2 have the following disadvantages:  
+Modes 1 and 2 have the following disadvantages:
 + Modes 1 and 2 use more GPU memory \(64 MB\+\)\.
 + Large semi\-static multibounce lights cannot be moved freely, but moving sun may work fine\.
 + Dynamic objects cannot affect GI, but can receive it\.
-If you receive a message that the display driver has stopped responding and has recovered, try this [workaround from Microsoft](https://support.microsoft.com/en-us/kb/2665946)\. 
+If you receive a message that the display driver has stopped responding and has recovered, try this [workaround from Microsoft](https://support.microsoft.com/en-us/kb/2665946)\.
 
 ## Voxel GI Parameters {#rendering-graphics-svogi-params}
 
 The following parameters are global for an entire level\. You can use normal ambient lights to modulate or tint indirect light intensity locally\.
 
-Global illumination uses the sun and the seven largest static lights in the scene and the eight dynamic lights closest to the camera\. 
+Global illumination uses the sun and the seven largest static lights in the scene and the eight dynamic lights closest to the camera\.
 
 **To enable voxel global illumination**
 
 1. In Lumberyard Editor, choose **Tools**, **Terrain Tool**, **Environment**\.
 
-1. In the **Environment** panel, under **Total\_Illumination\_v2**, adjust the following settings as needed\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/rendering-graphics-svogi.html)
+1. In the **Environment** panel, under **Total\_Illumination\_v2**, adjust the following settings as needed\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/rendering/svogi)
 
 1. \(Optional\) Use the **Voxel Coverage** advanced parameter on each material:
 
@@ -85,7 +85,7 @@ Global illumination uses the sun and the seven largest static lights in the scen
    1. Select your material\.
 
    1. Under **Advanced**, modify the **Voxel Coverage** parameter to control the transparency of voxels for each material and manually fix overoccluded areas\. The default value is 1\.
-**Note**  
+**Note**
 This parameter takes effect only when voxel global illumination is enabled\.
 
 ## Debugging {#rendering-graphics-svogi-debugging}
@@ -96,13 +96,13 @@ You can use the following console variables to help debug voxel GI issues:
 + `svoToggleShowVoxels` - Shows voxellation of the scene, which shows which voxels are on CPU memory and which are on GPU memory\.
 + `svoReset` - Performs hard reset of the system and recomputes all values\.
 
-**Important**  
+**Important**
 Do not use the `e_svoTI_*` console variables \(for example, `e_svoTI_IntegrationMode`\) to configure the voxel GI system\. Any changes to these console variables in the configuration file will be overwritten by the individual level environment settings file\. Instead, configure your settings in the [**Total Illumination**](#rendering-graphics-svogi-params) pane in Lumberyard Editor\.
 
 ## Current Limits {#rendering-graphics-svogi-limitations}
 
 The following limitations exist for the voxel GI system:
-+  The GI code doesn't have a mechanism for detecting light modifications directly, but is constantly updating to capture changes to the lighting\. This may introduce delay in the GI response to lights changing\. 
++  The GI code doesn't have a mechanism for detecting light modifications directly, but is constantly updating to capture changes to the lighting\. This may introduce delay in the GI response to lights changing\.
 + Large\-scale ambient occlusion and indirect shadows are properly cast only by static geometry\.
 + Voxel GI does not function on some forward\-rendering components like particles or water\.
 + Some artifacts like ghosting, aliasing, light leaking, and noise may be noticeable\.

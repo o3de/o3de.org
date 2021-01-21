@@ -23,18 +23,18 @@ You can import assets even if Lumberyard isn't running\. You can do this at any 
 
 **To import assets from Lumberyard Editor**
 
-1. In Lumberyard Editor, choose **File** and then **Import**\. 
+1. In Lumberyard Editor, choose **File** and then **Import**\.
 
 1. Navigate to your assets and select the files to add to your game project directory\. Then click **OK**\.
 
 1. In the **Import Asset\(s\)** dialog box, the **Destination Folder** path automatically shows the root of your game project directory\. You can click **Browse** to specify a subdirectory in your game project directory\.
-**Note**  
+**Note**
 You can import assets to a directory only in the current game project\.
 
-1. Select whether you want to **Copy Files** from their original location or **Move Files** and then click **Import**\. If you copy the files, Asset Processor doesn't monitor changes to the original files\.  
+1. Select whether you want to **Copy Files** from their original location or **Move Files** and then click **Import**\. If you copy the files, Asset Processor doesn't monitor changes to the original files\.
 ![\[In Lumberyard Editor, import assets directly to your game project directory.\]](/images/userguide/assets/pipeline/asset-pipeline-importing.png)
 
-1. In the **Processing asset** dialog box, click **View status** to check the status of your assets\.  
+1. In the **Processing asset** dialog box, click **View status** to check the status of your assets\.
 ![\[Track the progress of Asset Processor processing your assets.\]](/images/userguide/assets/pipeline/asset-pipeline-importing-processing-status.png)
 
 ## Tutorials: Importing Assets into Lumberyard {#impoting-assets-into-lumberyard-tutorials}

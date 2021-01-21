@@ -23,7 +23,7 @@ You can also use the context menu in the **Entity Inspector** to remove, copy, a
    + **Move component to top** - Move a component to the top of the list
    + **Move component to bottom** - Move component to the bottom of the list
 
-   You can also click and drag individual components into a desired order\. Organize the components for an entity in any order that makes sense to you\. The custom order for your components is saved to the level\. The component order has no significance to its function\. 
-**Note**  
-The **[Transform](/docs/userguide/components/transform.md)** component is automatically added to an entity and can't be moved from the component list\. 
-Some actions are disabled, depending on the context\. For example, you can't paste a component if you haven't copied one\. 
+   You can also click and drag individual components into a desired order\. Organize the components for an entity in any order that makes sense to you\. The custom order for your components is saved to the level\. The component order has no significance to its function\.
+**Note**
+The **[Transform](/docs/userguide/components/transform.md)** component is automatically added to an entity and can't be moved from the component list\.
+Some actions are disabled, depending on the context\. For example, you can't paste a component if you haven't copied one\.

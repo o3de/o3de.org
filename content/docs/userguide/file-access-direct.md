@@ -24,7 +24,7 @@ The pure\-virtual base class `FileIOBase` \(located in `\dev\Code\Framework\AzCo
 class FileIOBase
 {
 ...
-    static FileIOBase* GetInstance();  ///< Use this to get a concrete instance of the API that follows. 
+    static FileIOBase* GetInstance();  ///< Use this to get a concrete instance of the API that follows.
 ...
     virtual Result Open(const char* filePath, OpenMode mode, HandleType& fileHandle) = 0;
     virtual Result Close(HandleType fileHandle) = 0;
@@ -53,7 +53,7 @@ AZ::IO::FileIOBase::GetInstance()
 + `FileIOBase` file operations behave similarly to the C language API `fopen`, `fread`, and `fclose` operations, but are 64\-bit aware and work with very large files\.
 + Because the `FileIOBase` instance is created and initialized when the engine initializes, it is generally always available\. It can inspect `.pak` files and arbitrary files on disk\. For more information, see [The FileIO Stack](#file-access-direct-fileio-stack) later in this document\.
 
-**Note**  
+**Note**
 Because `.pak` files are initialized only after the application boots, attempting to access data inside `.pak` files before they are mounted will fail\.
 
 For more information, see the code comments in the `FileIO.h` file\.
@@ -62,7 +62,7 @@ For more information, see the code comments in the `FileIO.h` file\.
 
 In addition to a set of file functions mentioned above, the `FileIOBase` class provides *directory aliases\.* Directory aliases are prefixes that you add to a file name\. An alias indicates a virtual directory for a `.pak` file or arbitrary location on disk\.
 
-**Note**  
+**Note**
 We recommend that you always use the aliasing system to refer to files that are in the cache\. Never use absolute paths\. Files in the cache might be inside `.pak` files or in unexpected locations on mobile devices\. In these cases, the use of absolute path names can fail\.
 
 ### Getting the Path of an Alias {#file-access-direct-getting-the-path-of-an-alias}
@@ -77,30 +77,30 @@ FileIOBase::GetAlias()
 
 This section describes the use of directory aliases\.
 
-**`@assets@`**  
-Refers to the asset cache\. This is the default alias when no alias is specified\. Note the following:  
+**`@assets@`**
+Refers to the asset cache\. This is the default alias when no alias is specified\. Note the following:
 + Because `@assets@` is the default alias, code can simply load files by name \(for example, `textures\MyTexture.dds`\) without using the asset system\. This makes it unnecessary to have the `@assets@` alias appear throughout the code\.
-**Note**  
+**Note**
 If you are loading files from the asset cache, do not prefix your file names with the `@assets@` alias\. The use of aliases is required only when you must alter the default behavior\. This best practice makes your code easier to read and enhances compatibility\.
 + During development on a PC, `@assets@` points to the `dev\Cache\<game_name>\pc\<game_name>` directory\. After release, it points to the directory where your `.pak` files are stored \(not the root of your cache where your configuration files are stored\)\.
 + Because the asset cache can be locked by asset processing operations, attempting to write to the asset cache can cause an assertion fail\. Do not attempt to write files to the asset cache\.
 
-**`@root@`**  
-Specifies the location of the root configuration files like `bootstrap.cfg`\. Note the following:  
+**`@root@`**
+Specifies the location of the root configuration files like `bootstrap.cfg`\. Note the following:
 + The asset cache `@assets@` can be a child directory of `@root@`, but that is not always the case\. Therefore, do not make this assumption\. If you want to load a root file, use `@root@`\. If you want to load assets, either use no alias \(because `@assets@` is the default\), or use `@assets@`\.
 + During development, the `@root@` directory maps to your `dev\Cache\<game_name>\pc` directory\. In release, this directory is the root directory of your game distribution \(where the `bootstrap.cfg` file is stored\)\.
 + Attempting to write to the `@assets@` location causes an assertion fail\. You should change these files in your source `dev\` directory, not in the cache\.
 
-**`@user@`**  
-Specifies a writable directory that stores data between gaming sessions\. Note the following:  
+**`@user@`**
+Specifies a writable directory that stores data between gaming sessions\. Note the following:
 + It is not expected that the user will delete this directory\.
 + On a PC, `@user@` is the `dev\Cache\<game_name>\pc\user` directory\.
 + On other operating systems and devices, the `@user@` location can be different\. Some mobile operating systems have restrictions on where applications can write files\.
 
-**`@cache@`**  
+**`@cache@`**
 Specifies a writable directory for storing temporary data\. The user can delete this data at any time\.
 
-**`@log@`**  
+**`@log@`**
 Specifies a writable directory for storing diagnostic logs\.
 
 ### Code Examples {#file-access-direct-code-examples}
@@ -111,7 +111,7 @@ A\. The following code example opens a file in the assets directory\.
 using namespace AZ::IO;
 HandleType fileHandle = InvalidHandle;
 // Because @assets@\config\myfile.xml is desired, an alias doesn't have to be specified.
-// All files in the @assets@ alias are always lowercase. This removes concerns about 
+// All files in the @assets@ alias are always lowercase. This removes concerns about
 // case sensitive environments.
 if (FileIOBase::GetInstance()->Open("config/myfile.xml", OpenMode::ModeRead|OpenMode::ModeBinary, fileHandle))
 {
@@ -127,7 +127,7 @@ B\. The following code example opens a file in the log directory and appends log
 ```
 using namespace AZ::IO;
 HandleType fileHandle = InvalidHandle;
-// In this rare case, you want to write to a file in the @log@ alias, 
+// In this rare case, you want to write to a file in the @log@ alias,
 // so the file name must be specified.
 // Because you're writing a file to a non-@assets@ directory, it can contain case.
 if (FileIOBase::GetInstance()->Open("@log@/gamelog.txt", AOpenMode::ModeAppend|ModeText, fileHandle))
@@ -143,11 +143,11 @@ The `FileIOStream` class in the `AZ::IO` namespace automatically closes a file w
 
 The following aliases are applicable only for editor tools\.
 
-**`@devroot@`**  
+**`@devroot@`**
 Specifies the `\dev\` directory of your source tree where files like `bootstrap.cfg` are located\. These files are consumed by the Asset Processor and deployed into the cache specified by `@root@`\.
 
-**`@devassets@`**  
-Specifies the location of your game project's assets directory in the source tree\. This directory contains uncompiled source files like `.tif` or `.fbx` files\. It does not contain compressed `.dds` files or other assets that a game normally uses\. Note the following:  
+**`@devassets@`**
+Specifies the location of your game project's assets directory in the source tree\. This directory contains uncompiled source files like `.tif` or `.fbx` files\. It does not contain compressed `.dds` files or other assets that a game normally uses\. Note the following:
 + `@devassets@` is a good starting point for a file open dialog that asks a user where to save a new file\.
 + Because existing files might be in a gem, do not save them in `@devassets@`\. Instead, when your editor opens a file, have your editor remember the file's location\. Then have the editor save the file to the file's original location\.
 + Because not all source files are located in `@devassets@` \(many are located in gems\), do not attempt to find all source files by searching its location\.

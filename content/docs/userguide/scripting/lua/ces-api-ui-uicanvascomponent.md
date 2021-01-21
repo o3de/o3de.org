@@ -37,7 +37,7 @@ Forces a specified interactive element to receive the hover\.
 **Syntax**
 
 ```
-void ForceHoverInteractable(AZ::EntityId entityId) 
+void ForceHoverInteractable(AZ::EntityId entityId)
 ```
 
 ### GetChildElement {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getchildelement}
@@ -57,7 +57,7 @@ Returns a list of entity IDs of the child elements of the canvas\.
 **Syntax**
 
 ```
-AZStd::vector<AZ::EntityId> GetChildElements() 
+AZStd::vector<AZ::EntityId> GetChildElements()
 ```
 
 ### GetDrawOrder {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-getdraworder}
@@ -194,8 +194,8 @@ void SetEnabled(bool enabled)
 
 Sets the interactable element on the canvas on which the pointer has been paused\.
 
-**Note**  
-This action is done automatically, but in unusual situations it can be useful to call this function from a script\. 
+**Note**
+This action is done automatically, but in unusual situations it can be useful to call this function from a script\.
 
 **Syntax**
 
@@ -210,7 +210,7 @@ Specify true to make the canvas accept navigation input; false otherwise\.
 **Syntax**
 
 ```
-void SetIsNavigationSupported(bool isSupported) 
+void SetIsNavigationSupported(bool isSupported)
 ```
 
 ### SetIsPixelAligned {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setispixelaligned}
@@ -230,7 +230,7 @@ Sets whether the canvas is rendered to a texture instead of the full screen\. Sp
 **Syntax**
 
 ```
-void SetIsRenderToTexture(bool isRenderToTexture) 
+void SetIsRenderToTexture(bool isRenderToTexture)
 ```
 
 ### SetKeepLoadedOnLevelUnload {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setkeeploadedonlevelunload}
@@ -240,7 +240,7 @@ Sets whether the canvas stays loaded when the level is unloaded\. Specify true t
 **Syntax**
 
 ```
-void SetKeepLoadedOnLevelUnload(bool keepLoaded) 
+void SetKeepLoadedOnLevelUnload(bool keepLoaded)
 ```
 
 ### SetRenderTargetName {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasbus-setrendertargetname}

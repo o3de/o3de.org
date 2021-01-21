@@ -17,7 +17,7 @@ The following is an example of how to use `ResetFriendsNotificationCount`:
 ReceiptID receipt;
 AZStd::string friendID;
 EBUS_EVENT(Twitch::TwitchRequestBus, ResetFriendsNotificationCount, receipt, friendID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the ResetFriendsNotificationCountNotify callback.
 */
@@ -36,17 +36,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**friendID**  
+**friendID**
 The Twitch ID for which to reset the friends notification\. If the `AZStd::string` value is empty, the friend ID for the active user is used\.
 
-**Return**  
+**Return**
 No return value\.ResetFriendsNotificationCountNotify Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendNotificationCount {#twitch-api-ebus-friends-getfriendnotificationcount}
@@ -59,7 +59,7 @@ The following is an example of how to use `GetFriendNotificationCount`:
 ReceiptID receipt;
 AZStd::string friendID;
 EBUS_EVENT(Twitch::TwitchRequestBus, GetFriendNotificationCount, receipt, friendID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetFriendNotificationCount callback.
 */
@@ -78,17 +78,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**friendID**  
+**friendID**
 The Twitch ID for which to retrieve the friends notification count\. If the `AZStd::string` value is empty, the friend ID for the active user is used\.
 
-**Return**  
+**Return**
 No return value\.ResetFriendsNotificationCountNotify Callback
 
-**result \- Int64Value**  
-Value - If successful, the notification count for this call\. If unsuccessful, the count will display 0\.  
+**result \- Int64Value**
+Value - If successful, the notification count for this call\. If unsuccessful, the count will display 0\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendRecommendations {#twitch-api-ebus-friends-getfriendrecommendations}
@@ -108,7 +108,7 @@ The following is an example of how to use `GetFriendRecommendations`:
 ReceiptID receipt;
 AZStd::string friendID;
 EBUS_EVENT(Twitch::TwitchRequestBus, GetFriendRecommendations, receipt, friendID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetFriendRecommendations callback.
 */
@@ -120,7 +120,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			cout << "Get Friend Recommendations" << endl;
 			// Display results
-			
+
 			for(const auto & i: result.Value)
 			{
 				cout << "               Reason: " << i.Reason << endl;
@@ -140,17 +140,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**friendID**  
+**friendID**
 The user's Twitch ID\. If the `AZStd::string` value is empty, the friend ID for the active user is used\.
 
-**Return**  
+**Return**
 No return value\.GetFriendRecommendations Callback
 
-**result \- FriendRecommendationValue**  
-Value - The friend recommendation list, which includes the following data:  
+**result \- FriendRecommendationValue**
+Value - The friend recommendation list, which includes the following data:
 + Reason - The recommendation reason, which returns in the format `AZStd::string`\.
 + User - The user information, which includes the following data:
   + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
@@ -161,7 +161,7 @@ Value - The friend recommendation list, which includes the following data:
   + Name - The user's name, which returns in the format `AZStd::string`\.
   + ProfileBanner - The URL for the user's profile banner, if provided\.
   + ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
-  + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\. 
+  + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
   + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
@@ -176,7 +176,7 @@ ReceiptID receipt;
 AZStd::string friendID;
 AZStd::string cursor;	// must be an empty string on initial call
 EBUS_EVENT(Twitch::TwitchRequestBus, GetFriends, receipt, friendID, cursor);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetFriends callback.
 */
@@ -190,7 +190,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 			// Display results
 			cout << "Get Friends" << endl;
 			cout << "Cursor for next block" << info.Cursor << endl;
-						
+
 			for(const auto & i: info.Friends)
 			{
 				cout << "          CreatedDate: " << i.createdDate << endl;
@@ -210,20 +210,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**friendID**  
+**friendID**
 The user's Twitch ID\. If the `AZStd::string` value is empty, the friend ID for the active user is used\.
 
-**cursor**  
+**cursor**
 Used to retrieve the next block of data\. When initially called, an empty string is used\. Subsequent calls require you to pass the cursor value from the callback\. This allows you to continue retrieving results\.
 
-**Return**  
+**Return**
 No return value\.GetFriends Callback
 
-**result \- GetFriendValue**  
-Value - The result of the `GetFriendReturn` call, which includes the following data:  
+**result \- GetFriendValue**
+Value - The result of the `GetFriendReturn` call, which includes the following data:
 + Cursor - If a value is present, use the value to retrieve the next block of data\.
 + Friends - The friends list, which includes the following data:
   + CreatedDate - The date the friend was added, which displays in the ISO 8601 format\.
@@ -251,7 +251,7 @@ ReceiptID receipt;
 AZStd::string sourceFriendID;	// if an empty string,  the friend ID for the active user is used
 AZStd::string targetFriendID;	// This must be a valid id.
 EBUS_EVENT(Twitch::TwitchRequestBus, GetFriendStatus, receipt, sourceFriendID, targetFriendID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetFriendStatus callback.
 */
@@ -280,20 +280,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**sourceFriendID**  
+**sourceFriendID**
 The user's Twitch ID\. If the `AZStd::string` value is empty, the friend ID for the active user is used\.
 
-**targetFriendID**  
+**targetFriendID**
 The Twitch ID for which to obtain status\. You must provide a valid Twitch ID\.
 
-**Return**  
+**Return**
 No return value\.GetFriends Callback
 
-**result \- FriendStatusValue**  
-Value - The result of the `FriendStatus` call, which includes the following data:  
+**result \- FriendStatusValue**
+Value - The result of the `FriendStatus` call, which includes the following data:
 + Status - The status of the call, which can be one of the following values:
   + friends - The users are friends\.
   + no\_relation - The users are not friends and do not have a pending friend request\.
@@ -322,7 +322,7 @@ The following is an example of how to use `GetFriendStatus`:
 ReceiptID receipt;
 AZStd::string targetFriendID;	// This must be a valid id.
 EBUS_EVENT(Twitch::TwitchRequestBus, AcceptFriendRequest, receipt, targetFriendID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the AcceptFriendRequest callback.
 */
@@ -339,17 +339,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**targetFriendID**  
+**targetFriendID**
 The Twitch ID of the friend who will accept the friendship\.
 
-**Return**  
+**Return**
 No return value\.GetFriends Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendRequests {#twitch-api-ebus-friends-getfriendrequests}
@@ -367,7 +367,7 @@ The following is an example of how to use `GetFriendRequests`:
 ReceiptID receipt;
 AZStd::string cursor;	// This must be empty on the initial call
 EBUS_EVENT(Twitch::TwitchRequestBus, GetFriendRequests, receipt, cursor);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetFriendRequestscallback.
 */
@@ -384,17 +384,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**cursor**  
+**cursor**
 Used to retrieve the next block of data\. When initially called, an empty string is used\. Subsequent calls require you to pass the cursor value from the callback\. This allows you to continue retrieving results\.
 
-**Return**  
+**Return**
 No return value\.GetFriends Callback
 
-**result \- FriendRequestValue**  
-Value - The result of the `FriendRequestResult` call, which includes the following data:  
+**result \- FriendRequestValue**
+Value - The result of the `FriendRequestResult` call, which includes the following data:
 + Total - The total number of requests\.
 + Cursor - If a value is present, use the value to retrieve the next block of data\.
 + Requests - The friends request list, which includes the following data:
@@ -425,7 +425,7 @@ The following is an example of how to use CreateFriendRequest:
 ReceiptID receipt;
 AZStd::string targetID;	// This must be a valid Twitch User ID
 EBUS_EVENT(Twitch::TwitchRequestBus, CreateFriendRequest, receipt, targetID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the CreateFriendRequest.
 */
@@ -442,17 +442,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**targetID**  
+**targetID**
 The Twitch ID of the user to whom you want to send a request\.
 
-**Return**  
+**Return**
 No return value\.CreateFriendRequest Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## DeclineFriendRequest {#twitch-api-ebus-friends-declinefriendrequest}
@@ -465,7 +465,7 @@ The following is an example of how to use `CreateFriendRequest`:
 ReceiptID receipt;
 AZStd::string targetID;	// This must be a valid Twitch User ID
 EBUS_EVENT(Twitch::TwitchRequestBus, DeclineFriendRequest, receipt, targetID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the DeclineFriendRequest.
 */
@@ -482,15 +482,15 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**targetID**  
+**targetID**
 The Twitch ID of the user to whom you want to send a request\.
 
-**Return**  
+**Return**
 No return value\.DeclineFriendRequest Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

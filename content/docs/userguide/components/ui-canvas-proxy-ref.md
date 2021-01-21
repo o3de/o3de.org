@@ -19,5 +19,5 @@ The following picture shows three entities that share the same loaded canvas\. T
 
 The UI Canvas Proxy Ref component has the following properties:
 
-**Canvas Asset Ref entity**  
+**Canvas Asset Ref entity**
 Click the picker \(hand icon\) to select the component entity that you want to mirror\. The picked component must have the **UI Canvas Asset Ref** component on it\.

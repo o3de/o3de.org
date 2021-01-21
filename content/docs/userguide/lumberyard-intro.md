@@ -7,7 +7,7 @@ title: What is &ALY;?
 
 Amazon Lumberyard is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With Lumberyard, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
 
-Lumberyard offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\. 
+Lumberyard offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
 
 Interested? Want to get started?
 + [Download the latest version of the Lumberyard beta](https://aws.amazon.com/lumberyard/downloads/)
@@ -26,7 +26,7 @@ Lumberyard helps you build rich, engaging, world\-class games through its compre
 
 The visuals technology of Lumberyard can bring to life any virtual environment\. Your artists get a powerful toolbox to create high quality visual elements, such as physically based shaders, dynamic global illumination, particle effects, lifelike vegetation, real\-time dynamic water caustics, and volumetric fog\. They can also produce cinematic features like color grading, motion blur, depth of field, and integrated HDR lens flares\.
 
-For more information, see the following topics: 
+For more information, see the following topics:
 + [Creating levels and adding environment effects](/docs/userguide/level-intro.md)
 + [Adding particle effects](/docs/userguide/particles/intro.md)
 + [Create screen effects](/docs/userguide/rendering/screen-effects-intro.md)
@@ -93,7 +93,7 @@ For more information, see [Implementing Connected Features with Cloud Canvas](/d
 
 ### AWS SDK for C\+\+ {#lumberyard-aws-sdk}
 
-The AWS SDK for C\+\+ provides C\+\+ API operations for numerous AWS services including Amazon S3, Amazon EC2, Amazon DynamoDB, and more, with support for all major native platforms\. You can use the SDK to integrate AWS components into your game\. 
+The AWS SDK for C\+\+ provides C\+\+ API operations for numerous AWS services including Amazon S3, Amazon EC2, Amazon DynamoDB, and more, with support for all major native platforms\. You can use the SDK to integrate AWS components into your game\.
 
 For more information, see the [AWS SDK for C\+\+](https://aws.amazon.com/sdk-for-cpp/)\.
 

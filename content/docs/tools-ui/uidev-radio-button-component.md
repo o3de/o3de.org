@@ -13,13 +13,13 @@ Use radio buttons to enable users to select from two or more options, when users
 
 Follow these guidelines as you design your UI with radio buttons:
 
-1.  Use radio buttons when you have two or more mutually exclusive options\. 
+1.  Use radio buttons when you have two or more mutually exclusive options\.
 
-1.  Ensure that clicking or tapping the label selects the radio button\. 
+1.  Ensure that clicking or tapping the label selects the radio button\.
 
-1.  One radio button should always be selected by default\. 
+1.  One radio button should always be selected by default\.
 
-1.  Keep radio buttons from the same radio group in close proximity\. 
+1.  Keep radio buttons from the same radio group in close proximity\.
 
 Avoid these design choices when using radio buttons:
 + Don't order radio buttons horizontally\.
@@ -33,7 +33,7 @@ Set up and control radio buttons in Qt Designer or in code\.
 
 Radio buttons that belong to the same parent will automatically be part of an exclusive group\. You can create your own groups too, using a `QButtonGroup`\.
 
- **Example** 
+ **Example**
 
 ```
 #include <QRadioButton>
@@ -57,7 +57,7 @@ radioButton1->setEnabled(false);
 ## C\+\+ API reference<a name="radio-button-api-ref"></a>
 
 For details on the **radio button** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::RadioButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_radio_button.html) 
++  [AzQtComponents::RadioButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_radio_button.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QRadioButton Class](https://doc.qt.io/qt-5/qradiobutton.html) 
++  [QRadioButton Class](https://doc.qt.io/qt-5/qradiobutton.html)

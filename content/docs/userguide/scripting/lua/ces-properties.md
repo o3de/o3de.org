@@ -12,7 +12,7 @@ The properties inside the `Properties` table are exposed to the editor\. Propert
 The following example is a properties table from the **Controllable Chicken** sample level\.
 
 ```
--- Example Properties Table 
+-- Example Properties Table
 local ChickenMannequinControllerSM =
 {
     Properties =
@@ -108,9 +108,9 @@ return ExampleScript
 In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time\. You can also use `EntityId()` to make the array elements entity references, as in the following example from the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Scripts\LyShineExamples\Image\ImageFillTypes.lua` file\.
 
 ```
-local ImageFillTypes = 
+local ImageFillTypes =
 {
-	Properties = 
+	Properties =
 	{
 		FilledImages = { default = { EntityId(), EntityId(), EntityId(), EntityId() } },
 		Dropdowns = { default = { EntityId(), EntityId(), EntityId(), EntityId() } },
@@ -128,11 +128,11 @@ The following code example shows how you can use variables within the `Propertie
 ```
 local Test = {
 	Properties = {
-		Movement = {	
+		Movement = {
 			TopSpeed = 4,
 			Acceleration = 2,
 			TurnSpeed = 12,
-			
+
 		},
 		Combat = {
 			ProjectileDamage = 50,
@@ -153,9 +153,9 @@ When rendered in the UI, the property groupings and properties are sorted alphab
 You can add attributes to a property by placing them alongside the default value in a property table\. Attribute keys are not case sensitive\. The following common attributes can be added to any property\.
 
 
-**Common Attributes**  
+**Common Attributes**
 
-| Attribute | Description | 
-| --- | --- | 
-| Description | A string that is the text of the tool tip for the property\. | 
-| UI | Specifies \(overrides\) the UI handler that the property uses\.  | 
+| Attribute | Description |
+| --- | --- |
+| Description | A string that is the text of the tool tip for the property\. |
+| UI | Specifies \(overrides\) the UI handler that the property uses\.  |

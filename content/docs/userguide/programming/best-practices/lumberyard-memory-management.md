@@ -37,7 +37,7 @@ Remember that the lifetime of a static variable lasts until the module in which 
 
 The following example code from the Lumberyard version 1\.17 AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
 
-**Example**  
+**Example**
 
 ```
 namespace Physics
@@ -57,7 +57,7 @@ By default, the `AZStd::vector` class uses the `SystemAllocator`\. Invoking this
 
 On startup, the following code attempts to create a global static variable whose constructor connects to an EBus:
 
-**Example**  
+**Example**
 
 ```
 // Example of a global static variable that connects to an EBus.

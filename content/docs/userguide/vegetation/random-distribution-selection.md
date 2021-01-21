@@ -18,14 +18,14 @@ The vegetation entity, or the entity that contains the **Vegetation Layer Spawne
    To add more vegetation assets, do the following:
 
    1. In the **Vegetation Asset List** component's properties, next to **Embedded Assets**, click **\+**\.
-**Note**  
-When specifying your first asset, you don't need to click \+ because there is an empty asset displayed by default\. Specify the mesh\.  
+**Note**
+When specifying your first asset, you don't need to click \+ because there is an empty asset displayed by default\. Specify the mesh\.
 ![\[In the Vegetation Asset List component's properties, next to Embedded Assets, click the plus sign.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-browse.png)
 
-   1. Under the blank asset, listed as **<asset name>**, next to **Mesh Asset**, click **Browse \(…\)**\.  
+   1. Under the blank asset, listed as **<asset name>**, next to **Mesh Asset**, click **Browse \(…\)**\.
 ![\[Under the blank asset, next to Mesh Asset, click Browse (…).\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-add-asset.png)
 
-   1. In the search bar, enter a search term, such as **flower**, and select a vegetation asset\.  
+   1. In the search bar, enter a search term, such as **flower**, and select a vegetation asset\.
 ![\[In the search bar, enter a search term, such as flower, and select a vegetation asset.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-select-flower.png)
 
    Repeat this step with different assets until you have three or more assets\.
@@ -44,13 +44,13 @@ The gradient entity provides the noise signal to reference from the vegetation e
 
 1. [Create a child entity](/docs/userguide/creating-entity.md) under your vegetation area entity and select it\.
 
-1. Rename your new entity to a descriptive name, such as **Gradient**\.  
+1. Rename your new entity to a descriptive name, such as **Gradient**\.
 ![\[Rename your new entity to a descriptive name, such as Gradient.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-rename-entity.png)
 
 1. [Add](/docs/userguide/components/working-adding.md) the component **Perlin Noise Gradient**\.
 
-   This component generates a type of noise called Perlin noise, which mimics the type of randomness found in nature\. 
-**Note**  
+   This component generates a type of noise called Perlin noise, which mimics the type of randomness found in nature\.
+**Note**
 If you don't have the **Gradient** category in your list of components, you must enable the **Gradient** gem\.
 
 1. Add the required **Gradient Transform Modifier** component\.
@@ -59,17 +59,17 @@ If you don't have the **Gradient** category in your list of components, you must
 
 1. Click **Add Required Component** and select **Vegetation Reference Shape**\.
 
-1. In the **Vegetation Reference Shape** component's properties, next to **Shape Entity Id**, click the target button\.  
+1. In the **Vegetation Reference Shape** component's properties, next to **Shape Entity Id**, click the target button\.
 ![\[In the Vegetation Reference Shape component's properties, next to Shape Entity Id, click the target button.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-target.png)
 
 1. In the **Entity Outliner**, select the **TestBox** entity \(or the entity that contains your shape if you named it something else\)\.
 
-   The **Shape Entity Id** field populates with the entity name that you selected and uses the shape on that entity as its reference shape\.  
+   The **Shape Entity Id** field populates with the entity name that you selected and uses the shape on that entity as its reference shape\.
 ![\[In the Entity Outliner, select the TestBox entity.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-basic-coverage.png)
 
 ## Linking the Gradient to the Vegetation Area {#link-gradient-entity-to-vegetation}
 
-Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area\. This means the component that you reference the gradient \(in this example, the **Vegetation Asset Weight Selector**\) in uses the gradient's information for its selection of values\. 
+Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area\. This means the component that you reference the gradient \(in this example, the **Vegetation Asset Weight Selector**\) in uses the gradient's information for its selection of values\.
 
 You can reference the gradient that you created in any number of components\. In the procedure [Adding Scale, Rotation, and Position Modifiers](/docs/userguide/vegetation/procedures-adding-modifiers.md), you use the same gradient for the vegetation modifiers\.
 
@@ -77,12 +77,12 @@ You can reference the gradient that you created in any number of components\. In
 
 1. Select the entity **BasicCoverage**\.
 
-1. On the **Vegetation Asset Weight Selector** component's properties, next to **Gradient Entity Id**, click the target\.  
+1. On the **Vegetation Asset Weight Selector** component's properties, next to **Gradient Entity Id**, click the target\.
 ![\[In the Vegetation Asset Weight Selector component's properties, next to Gradient Entity Id, click the target.\]](/images/userguide/vegetation/dynamic/link-gradient-entity-to-vegetation-target.png)
 
 1. In the **Entity Outliner**, select the **Gradient** entity\.
 
    The **Gradient Entity Id** field populates with the entity name\.
 
-   Your vegetation area should now have variation in its vegetation selection\.  
+   Your vegetation area should now have variation in its vegetation selection\.
 ![\[Vegetation area with random selection of listed assets.\]](/images/userguide/vegetation/dynamic/link-gradient-entity-to-vegetation-distributed.png)

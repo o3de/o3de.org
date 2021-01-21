@@ -55,10 +55,10 @@ You can also view the example canvases in the **UI Editor**\.
 
 The **UISpawner** component has the following properties:
 
-****Dynamic Slice****  
+****Dynamic Slice****
 Select the slice asset to spawn\.
 
-****Spawn on Activate****  
+****Spawn on Activate****
 If selected, spawns the selected slice upon activation\.
 
 ## EBus Request Bus Interface {#ui-editor-components-spawner-ebus}
@@ -71,80 +71,80 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Spawns the UI slice specified in the component at the entity's location\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SpawnRelative {#ui-editor-components-spawner-ebus-spawnrelative}
 
 Spawns the UI slice specified in the component at the entity's location with the specified relative offset\.
 
-**Parameters**  
+**Parameters**
 `Relative` - The offset position from the entity with the spawner component\.
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SpawnViewport {#ui-editor-components-spawner-ebus-spawnviewport}
 
 Spawns the slice specified in the component at the specified viewport position\.
 
-**Parameters**  
+**Parameters**
 `Pos` - The viewport position at which to spawn the slice\.
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SpawnSlice {#ui-editor-components-spawner-ebus-spawnslice}
 
 Spawns the specified slice at the entity's location\.
 
-**Parameters**  
+**Parameters**
 `slice` - Specifies the slice asset to be spawned\.
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 No
 
 ### SpawnSliceRelative {#ui-editor-components-spawner-ebus-spawnslicerelative}
 
 Spawns the given slice at the entity's location with the relative offset\.
 
-**Parameters**  
-`slice` - Specifies the slice asset to be spawned\.  
+**Parameters**
+`slice` - Specifies the slice asset to be spawned\.
 `relative` - The offset position from the entity with the spawner component\.
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 No
 
 ### SpawnSliceViewport {#ui-editor-components-spawner-ebus-spawnsliceviewport}
 
 Spawns the specified slice at the specified viewport position\.
 
-**Parameters**  
-`slice` - Specifies the slice asset to be spawned\.  
+**Parameters**
+`slice` - Specifies the slice asset to be spawned\.
 `pos` - The viewport position at which to spawn the slice\.
 
-**Return**  
+**Return**
 The slice instantiation ticket for this spawn\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ## EBus Notification Bus Interface {#ui-editor-components-spawner-notification-bus}
@@ -157,42 +157,42 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Announces that the slice has been spawned, but entities have not yet been activated\. [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events are about to be dispatched\.
 
-**Parameters**  
+**Parameters**
 `ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnSpawnEnd {#ui-editor-components-spawner-notification-bus-onspawnend}
 
-Announces that a slice has been spawned\. This function is called once for each spawn request\. All [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events have been dispatched\. 
+Announces that a slice has been spawned\. This function is called once for each spawn request\. All [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events have been dispatched\.
 
-**Parameters**  
+**Parameters**
 `ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnEntitySpawned {#ui-editor-components-spawner-notification-bus-onentityspawned}
 
 Announces that an entity has been created during a spawn\. This function is called once for each entity created while spawning a slice\.
 
-**Parameters**  
-`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+**Parameters**
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 `spawnedEntity` - Specifies the ID of the spawned entity\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnEntitiesSpawned {#ui-editor-components-spawner-notification-bus-onentitiesspawned}
 
-Provides the list of all entities that were created during a spawn\. This function is called only once for each spawn request\. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call\. 
+Provides the list of all entities that were created during a spawn\. This function is called only once for each spawn request\. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call\.
 
-**Parameters**  
-`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+**Parameters**
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 `spawnedEntities` - Specifies the IDs of the spawned entities\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnTopLevelEntitiesSpawned {#ui-editor-components-spawner-notification-bus-ontoplevelentitiesspawned}
@@ -201,19 +201,19 @@ Provides the list of all top\-level entities that were created during a spawn\. 
 
 Top\-level entities are entities that do not have any parent within the slice\. Typically, there is only one top\-level entity for each slice\.
 
-**Parameters**  
-`ticket` - The slice instantiation ticket returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+**Parameters**
+`ticket` - The slice instantiation ticket returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 `spawnedEntities` - Specifies the IDs of the spawned top\-level entities\.
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnSpawnFailed {#ui-editor-components-spawner-notification-bus-on-spawn-failed}
 
 Announces that a spawn request has failed\.
 
-**Parameters**  
+**Parameters**
 `ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
-**Scriptable**  
+**Scriptable**
 Yes

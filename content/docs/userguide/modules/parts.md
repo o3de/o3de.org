@@ -4,18 +4,18 @@ title: Parts of an AZ Module, Explained
 ---
 # Parts of an AZ Module, Explained {#az-module-parts}
 
-An AZ module has three key components: a class that inherits from `AZ::Module`, one or more public facing event buses, and a system component class\. 
+An AZ module has three key components: a class that inherits from `AZ::Module`, one or more public facing event buses, and a system component class\.
 
-This page describes module initialization, the use of system components as singletons, how EBus calls communicate with this singleton, and how to call the module externally after you have created it\. 
+This page describes module initialization, the use of system components as singletons, how EBus calls communicate with this singleton, and how to call the module externally after you have created it\.
 
 ## The Module Class {#az-module-parts-module-class}
 
-Each AZ module must contain a class that inherits from `AZ::Module`\. When the module is loaded by an application, an instance of the class is created very early in the application's lifetime and its virtual functions are called at the appropriate times as the application goes through its [bootstrapping process](/docs/userguide/modules/bootstrap.md)\. This class [reflects](/docs/userguide/components/entity-system-reflect-component.md) the components declared in the module and adds critical components to the [system entity](/docs/userguide/modules/system-entities-configuring.md)\. 
+Each AZ module must contain a class that inherits from `AZ::Module`\. When the module is loaded by an application, an instance of the class is created very early in the application's lifetime and its virtual functions are called at the appropriate times as the application goes through its [bootstrapping process](/docs/userguide/modules/bootstrap.md)\. This class [reflects](/docs/userguide/components/entity-system-reflect-component.md) the components declared in the module and adds critical components to the [system entity](/docs/userguide/modules/system-entities-configuring.md)\.
 
-**Note**  
+**Note**
 At its core, every Lumberyard application has a single system entity\. When a Lumberyard application starts, it creates the system entity\. This entity's components, known as system components, power major systems within Lumberyard\. The system entity always has the ID `AZ::SystemEntityId (0)`\.
 
-The following skeleton code shows the basic structure of an `AZ::Module` class\. 
+The following skeleton code shows the basic structure of an `AZ::Module` class\.
 
 ```
 namespace AZ
@@ -40,14 +40,14 @@ namespace AZ
 }
 ```
 
-The `AZ::Module` class exposes all points of integration with the AZ framework as virtual functions\. These points of integration have been created as virtual functions on a class so that, whether initialization code is in a static or dynamic library, it's written the same way as much as possible\. The very first actual initialization calls do need to be different for static and dynamic libraries\. Lumberyard provides a macro to define this uninteresting glue code and let you write the interesting initialization code within your `AZ::Module` class\. 
+The `AZ::Module` class exposes all points of integration with the AZ framework as virtual functions\. These points of integration have been created as virtual functions on a class so that, whether initialization code is in a static or dynamic library, it's written the same way as much as possible\. The very first actual initialization calls do need to be different for static and dynamic libraries\. Lumberyard provides a macro to define this uninteresting glue code and let you write the interesting initialization code within your `AZ::Module` class\.
 
-We recommend that your `AZ::Module` class contain as little implementation code as possible\. When the `AZ::Module` class is created, the application is just starting up and many systems are unavailable\. If the `AZ::Module` class spawns a singleton or manager class, there is no guarantee that the systems on which this singleton relies will be ready for use\. Instead, you should build your singletons as Lumberyard [system components](/docs/userguide/modules/system-components.md), which can control their initialization order\. 
+We recommend that your `AZ::Module` class contain as little implementation code as possible\. When the `AZ::Module` class is created, the application is just starting up and many systems are unavailable\. If the `AZ::Module` class spawns a singleton or manager class, there is no guarantee that the systems on which this singleton relies will be ready for use\. Instead, you should build your singletons as Lumberyard [system components](/docs/userguide/modules/system-components.md), which can control their initialization order\.
 
 Beginning in Lumberyard 1\.5, gems are built using AZ modules\. The following example "HelloWorld" AZ module was made by [creating a new gem](/docs/userguide/gems/builtin/s.md)\. The `CryHooksModule` class in this example is a helper wrapper around `AZ::Module` and provides your entire module access to `gEnv`\.
 
 ```
-// dev/Gems/HelloWorld/Code/Source/HelloWorldModule.cpp   
+// dev/Gems/HelloWorld/Code/Source/HelloWorldModule.cpp
 #include "StdAfx.h"
 #include <platform_impl.h>
 
@@ -90,12 +90,12 @@ AZ_DECLARE_MODULE_CLASS(HelloWorld_010c14ae7f0f4eb1939405d439a9481a, HelloWorld:
 
 ## The EBus {#az-module-parts-ebus}
 
-External code can call into your module, and receive events from your module, through the module's public [event buses](/docs/userguide/programming/ebus/intro.md) \(EBus\)\. The EBus allows simple and safe function calls between different modules of code\. 
+External code can call into your module, and receive events from your module, through the module's public [event buses](/docs/userguide/programming/ebus/intro.md) \(EBus\)\. The EBus allows simple and safe function calls between different modules of code\.
 
-A new gem comes with one EBus by default, as shown in the following example\. 
+A new gem comes with one EBus by default, as shown in the following example\.
 
 ```
-// dev/Gems/HelloWorld/Code/Include/HelloWorld/HelloWorldBus.h   
+// dev/Gems/HelloWorld/Code/Include/HelloWorld/HelloWorldBus.h
 #pragma once
 #include <AzCore/EBus/EBus.h>
 namespace HelloWorld
@@ -120,16 +120,16 @@ namespace HelloWorld
 } // namespace HelloWorld
 ```
 
-Calls to this EBus are handled by the system component, as described in the following section\. 
+Calls to this EBus are handled by the system component, as described in the following section\.
 
 ## The System Component Class {#az-module-parts-system-component-class}
 
-Any major systems in your module that require a singleton should be built as system components\. New gems come with a system component by default\. The system component class is created during application startup and attached to the system entity \(see `GetRequiredSystemComponents()` in `HelloWorldModule.cpp`\)\. 
+Any major systems in your module that require a singleton should be built as system components\. New gems come with a system component by default\. The system component class is created during application startup and attached to the system entity \(see `GetRequiredSystemComponents()` in `HelloWorldModule.cpp`\)\.
 
-In the current example, the system component class handles calls to the public EBus declared in `HelloWorldBus.h`\. The following code shows the `HelloWorldSystemComponent` class\. 
+In the current example, the system component class handles calls to the public EBus declared in `HelloWorldBus.h`\. The following code shows the `HelloWorldSystemComponent` class\.
 
 ```
-// dev/Gems/HelloWorld/Code/Source/HelloWorldSystemComponent.h   
+// dev/Gems/HelloWorld/Code/Source/HelloWorldSystemComponent.h
 #pragma once
 #include <AzCore/Component/Component.h>
 #include <HelloWorld/HelloWorldBus.h>
@@ -168,7 +168,7 @@ namespace HelloWorld
         ////////////////////////////////////////////////////////////////////////
     };
 }
-// dev/Gems/HelloWorld/Code/Source/HelloWorldSystemComponent.cpp   
+// dev/Gems/HelloWorld/Code/Source/HelloWorldSystemComponent.cpp
 #include "StdAfx.h"
 #include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
@@ -245,15 +245,15 @@ namespace HelloWorld
 }
 ```
 
-For more information about system components, see [System Components](/docs/userguide/modules/system-components.md)\. 
+For more information about system components, see [System Components](/docs/userguide/modules/system-components.md)\.
 
 ## Calling the Module from External Code {#az-module-parts-calling}
 
-To call your module, invoke your public function through EBus\. This example uses the `SayHello` function\. 
+To call your module, invoke your public function through EBus\. This example uses the `SayHello` function\.
 
 ```
 #include <HelloWorld/HelloWorldBus.h>
- 
+
 void InSomeFunctionSomewhere()
 {
     // ...

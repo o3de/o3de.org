@@ -5,11 +5,11 @@ title: Creating an AZ Module That Is Not a Gem
 # Creating an AZ Module That Is Not a Gem {#az-module-create-non-gem}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ modules are in preview release and subject to change\.  | 
+| AZ modules are in preview release and subject to change\.  |
 
 Beginning with Lumberyard 1\.5, gems are AZ modules, so the preferred way to build an AZ module is to simply create a new gem\. However, if your project requires an AZ module that must not be built as a gem, follow the steps provided here\.
 
@@ -35,11 +35,11 @@ Because gems have all the required code for an AZ module, it's easier to create 
 
 1. Move and rename the `code` directory from the new gem to your desired location\. For example, move the directory
 
-   `dev/Gems/HelloWorld/Code` 
+   `dev/Gems/HelloWorld/Code`
 
    to
 
-   `dev/Code/<optional subfolder>/HelloWorld` 
+   `dev/Code/<optional subfolder>/HelloWorld`
 
 1. To remove the remaining noncode pieces of the gem, delete the directory `dev/Gems/HelloWorld`\.
 
@@ -74,11 +74,11 @@ If your module does not access code from CryEngine \(for example, it does not ac
 
 1. Make the following changes to your `.cpp` file \(in this example, `HelloWorldModule.cpp`\)\.
 
-   1. Remove `#include <platform_impl.h>` 
+   1. Remove `#include <platform_impl.h>`
 
-   1. Remove `#include <IGem.h>` 
+   1. Remove `#include <IGem.h>`
 
-   1. Add `#include <AzCore/Module/Module.h>` 
+   1. Add `#include <AzCore/Module/Module.h>`
 
    1. Change `HelloWorldModule` to inherit directly from `AZ::Module` instead of from `CryHooksModule`\. 
 
@@ -102,7 +102,7 @@ Next, you must modify the default wscript file to remove gem\-specific commands,
            file_list       = 'HelloWorld.waf_files',
            platforms       = ['all'],
            configurations  = ['all'],
-           pch             = ['source/StdAfx.h'], 
+           pch             = ['source/StdAfx.h'],
            use             = ['AzFramework'],
            includes        = ['include', 'source'],
        )
@@ -112,12 +112,12 @@ Next, you must modify the default wscript file to remove gem\-specific commands,
 
    ```
    # ...
-    
+
    SUBFOLDERS = [
        # ...,
        'HelloWorld'
        ]
-    
+
    # ...
    ```
 
@@ -162,13 +162,13 @@ When your project launches, it loads the modules listed in the `dev/<project_as
        }
    }
    ```
-**Note**  
+**Note**
 The flavors section may be missing from your project\. If it is not present, Lumberyard assumes that the `LmbrCentral` module is used for `Game`, and that the `LmbrCentralEditor` module is used for `Editor`\.
 
 1. From the dev directory, run the following command from a command prompt\.
 
    ```
-   Bin64\lmbr.exe projects populate-appdescriptors 
+   Bin64\lmbr.exe projects populate-appdescriptors
    ```
 
    This command modifies the `Game.xml` and `Editor.xml`  files to list the `HelloWorld` module\.

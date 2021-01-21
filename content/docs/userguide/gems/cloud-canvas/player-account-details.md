@@ -23,63 +23,63 @@ You can use the functions described in this section for new account creation, pa
 
 Use the following functions for creating new accounts\.
 
- `SignUp(username, password, attributes)`  
+ `SignUp(username, password, attributes)`
 Creates an account\. The `attributes` parameter contains relevant data \(for example, email, address, name, and profile\)\. A confirmation email or text message is sent to the player as part of the signup\. Password recovery requires a valid email address\.
 
- `OnSignUpComplete(resultInfo, deliveryDetails, wasConfirmed)`  
+ `OnSignUpComplete(resultInfo, deliveryDetails, wasConfirmed)`
 A callback function that returns the [results](#cloud-canvas-cloud-gem-player-account-details-basicresultinfo-class) of the signup\. The [deliveryDetails](#cloud-canvas-cloud-gem-player-account-details-deliverydetails-class) attribute contains details about where the confirmation code was sent\.
 
- `ResendConfirmationCode(username)`  
+ `ResendConfirmationCode(username)`
  Resends the confirmation code to the player\. The confirmation code received from the player is passed as an argument to `ConfirmSignUp(username, confirmationCode)`\.
 
 ### Password Recovery \(CloudGemPlayerAccountSystemComponent\) {#cloud-canvas-cloud-gem-player-account-details-password-recovery}
 
 Use the following functions if a player has forgotten a password and has an account with a valid email or phone number\.
 
-`ForgotPassword(username)`  
+`ForgotPassword(username)`
 Causes a confirmation code to be sent to the player\.
 
-`OnForgotPasswordComplete(resultInfo, deliveryDetails)`  
+`OnForgotPasswordComplete(resultInfo, deliveryDetails)`
 Contains information regarding the password reset\.
 
-`ConfirmForgotPassword(username, password, confirmationCode)`  
+`ConfirmForgotPassword(username, password, confirmationCode)`
 Receives the confirmation code, user name, and new password from the player and sets the new password\.
 
 ### Sign In and Sign Out {#cloud-canvas-cloud-gem-player-account-details-sign-in-sign-out}
 
 Use the following functions to sign players in and out of your game\.
 
-`InitiateAuth(username, password)`  
+`InitiateAuth(username, password)`
 Call this function to sign in players\. Sign\-in is a two\-step process\. When `InitiateAuth` finishes, the server issues a challenge to which the client must respond correctly\. Currently, authorization by user name and password is supported; MFA and other forms of additional authentication are not\.
 
 You have two ways to sign out: `SignOut(username)` and `GlobalSignOut(username)`\.
 
-`SignOut`  
+`SignOut`
 Clears all cached authentication information from memory, so that the player's credentials are essentially forgotten\. No server\-side changes occur, so the authentication information, if it were known, could still be used\. The `SignOut` function always succeeds, even if the player is not actually signed in\.
 
-`GlobalSignOut`  
+`GlobalSignOut`
 Invalidates all access and refresh tokens for the player on all devices that the player might be signed into\. Unlike `SignOut`, `GlobalSignOut` can succeed only when the player is signed in\.
 
 ### Account Management \(CloudGemPlayerAccountSystemComponent\) {#cloud-canvas-cloud-gem-player-account-details-account-management}
 
 All of the following functions require that the player be signed in\.
 
-`ChangePassword(username, previousPassword, proposedPassword)`  
+`ChangePassword(username, previousPassword, proposedPassword)`
 Allows a player to update a password without the use of a confirmation code\.
 
-`DeleteOwnAccount(username)`  
+`DeleteOwnAccount(username)`
 Deletes the player's account\. Use this function with caution\.
 
-`GetUser(username)`  
+`GetUser(username)`
 Retrieves attributes \(for example, email, address, name, and profile\) that have been associated with the player's account\.
 
-`UpdateUserAttributes(username, attributes)`  
+`UpdateUserAttributes(username, attributes)`
 Updates the specified set of attributes\. If any updates require verification, confirmation codes are sent\. Details are found in the `deliveryDetailsArray` parameter that is passed to `OnUpdateUserAttributesComplete`\. Note that it is possible to update attributes that previously did not have any associated information\.
 
-`VerifyUserAttribute(username, attributeName, confirmationCode)`  
+`VerifyUserAttribute(username, attributeName, confirmationCode)`
 Following a call to `UpdateUserAttributes`, verifies a single attribute that requires confirmation\. Most attribute updates do not require verification\.
 
-`DeleteUserAttributes(username, attributesToDelete)`  
+`DeleteUserAttributes(username, attributesToDelete)`
 Removes the specified set of attributes from the player's account\. The attributes can be added again with a call to `UpdateUserAttributes`\.
 
 ## Key Player Account Cloud Gem Classes and Functions {#cloud-canvas-cloud-gem-player-account-details-key-classes-and-functions}
@@ -90,42 +90,42 @@ This section describes key classes and functions in the Player Account Cloud Gem
 
 The `BasicResultInfo` class bundles together information returned in almost all responses from the component\. The class has no functions to be used at run time and contains the following values, which are public:
 
- `wasSuccessful`  
+ `wasSuccessful`
 A Boolean that indicates whether the request succeeded\.
 
- `username`  
+ `username`
 The name of the player for which a request was made\.
 
- `errorTypeName`  
+ `errorTypeName`
 The name of the error type\.
 
- `errorTypeValue`  
+ `errorTypeValue`
 The numeric value of the error type\. If `errorTypeValue` is greater than or equal to 0, it corresponds to a standard `CognitoIdentityProviderErrors` value\. Otherwise, an unexpected error occurred\. Most commonly, the player has not yet signed in for the operation\. In this case, see the error information in `errorTypeName` for details\.
 
- `errorMessage`  
+ `errorMessage`
 A human readable string that describes the error\.
 
 ### DeliveryDetails Class {#cloud-canvas-cloud-gem-player-account-details-deliverydetails-class}
 
 The `DeliveryDetails` class provides details related to the sending of confirmation codes to the player\. it contains the following string functions:
 
- `GetAttributeName()`  
+ `GetAttributeName()`
 The name of the attribute for which a confirmation code was sent \(for example, `email`\)\.
 
- `GetDeliveryMedium()`  
+ `GetDeliveryMedium()`
 The medium used to send the confirmation code \(for example, `EMAIL`\)\.
 
- `GetDestination()`  
+ `GetDestination()`
 The destination to which the confirmation code was sent\. The destination is partially obscured for security \(for example, `d***@a***.com`\)\.
 
 ### DeliveryDetailsArray Class {#cloud-canvas-cloud-gem-player-account-details-deliverydetailsarray-class}
 
 The `DeliveryDetailsArray` class is a collection of `DeliveryDetails` objects and contains the following functions:
 
- `GetSize()`  
+ `GetSize()`
 The number of `DeliveryDetails` objects in the array\.
 
- `At(index)`  
+ `At(index)`
 Returns a copy of the object at the specified index\.
 
 ### UserAttributeValues Class {#cloud-canvas-cloud-gem-player-account-details-userattributevalues-class}

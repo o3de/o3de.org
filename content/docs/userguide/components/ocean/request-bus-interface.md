@@ -13,10 +13,10 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 In general, the Lua scripting API for the **Infinite Ocean** component maps directly to the component properties with the **Get\*** and **Set\*** functions\. However, there are some exceptions where there is only a **Get** function, and you can't directly set a value, such as the ocean height\.
 
-**Note**  
+**Note**
 You can specify float numbers for most functions, but some require an enumeration and/or a boolean value\.
 
-**Example**  
+**Example**
 
 ```
 function example:OnActivate()
@@ -29,19 +29,19 @@ end
 
 Returns the height of the ocean in the world z\-axis\.
 
-**Note**  
+**Note**
 There is no function to set the ocean level, since this parameter is attached to the **Transform** component\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.GetOceanLevel()
@@ -49,18 +49,18 @@ OceanEnvironmentRequestBus.Broadcast.GetOceanLevel()
 
 ## WaterTessellationAmount {#infinite-ocean-component-ebus-water-tessellation-amount}
 
-Sets the amount of geometry tessellation for rendering the ocean surface\. 
+Sets the amount of geometry tessellation for rendering the ocean surface\.
 
-**Parameters**  
+**Parameters**
 Type: Int
 
-**Return**  
+**Return**
 Type: Int
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetWaterTessellationAmount(int)
@@ -71,16 +71,16 @@ OceanEnvironmentRequestBus.Broadcast.GetWaterTessellationAmount()
 
 Sets the direction and speed of the ocean wind\.
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetAnimationWindDirection(float)
@@ -93,16 +93,16 @@ OceanEnvironmentRequestBus.Broadcast.GetAnimationWindSpeed()
 
 Specifies the animation parameters of the ocean waves, such as speed, size, and amount\.
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetAnimationWavesSpeed(float)
@@ -117,16 +117,16 @@ OceanEnvironmentRequestBus.Broadcast.GetAnimationWavesAmount()
 
 Specifies the scale of the screen resolution to use for rendering ocean reflections\.
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetReflectResolutionScale(float)
@@ -137,16 +137,16 @@ OceanEnvironmentRequestBus.Broadcast.GetReflectResolutionScale()
 
 Enables the anisotropic filter for rendered ocean reflections\.
 
-**Parameters**  
+**Parameters**
 Type: Boolean
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetReflectionAnisotropic(boolean)
@@ -155,7 +155,7 @@ OceanEnvironmentRequestBus.Broadcast.GetReflectionAnisotropic()
 
 ## ReflectRenderFlag {#infinite-ocean-component-ebus-reflect-render-flag}
 
-For each reflection flag, you can specify how the ocean renders reflections\. 
+For each reflection flag, you can specify how the ocean renders reflections\.
 
 You can specify the following flags:
 + `ReflectionFlags.TerrainDetailMaterials`
@@ -163,16 +163,16 @@ You can specify the following flags:
 + `ReflectionFlags.Particles`
 + `ReflectionFlags.Entities`
 
-**Parameters**  
+**Parameters**
 Type: Enum flag and boolean
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetReflectRenderFlag(ReflectionFlags.TerrainDetailMaterials, boolean)
@@ -181,18 +181,18 @@ OceanEnvironmentRequestBus.Broadcast.GetReflectRenderFlag(ReflectionFlags.Terrai
 
 ## UseOceanBottom {#infinite-ocean-component-ebus-use-ocean-bottom}
 
-Toggles the infinite plane below the ocean\. 
+Toggles the infinite plane below the ocean\.
 
-**Parameters**  
+**Parameters**
 Type: Boolean
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetUseOceanBottom(boolean)
@@ -203,16 +203,16 @@ OceanEnvironmentRequestBus.Broadcast.GetUseOceanBottom()
 
 Enablesgod rays \(sun beams\) under the ocean\.
 
-**Parameters**  
+**Parameters**
 Type: Boolean
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetGodRaysEnabled(boolean)
@@ -223,16 +223,16 @@ OceanEnvironmentRequestBus.Broadcast.GetGodRaysEnabled()
 
 Specifies the amount of the scene that is distorted when it renders while the camera is underwater\.
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetUnderwaterDistortion(float)
@@ -247,32 +247,32 @@ You can specify a color value, such as `Color(1.0,2.0,3.0,1.0)`, and then pass i
 
 The `FogColorPremultiplied` function is applied to the ocean's fog color\. You can use the `GetFogColorPremultiplied` function to return the result of **Fog Color** \* **Fog Color Multiplier**\.
 
-**Note**  
+**Note**
 Currently, you cannot directly specify values for the `FogColorPremultiplied` function\.
 
 For `SetFogColorMultiplier` and `GetFogColorMultiplier` functions:
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 For `SetFogColor`, `GetFogColor`, `SetNearFogColor`, and `GetNearFogColor` functions:
 
-**Parameters**  
+**Parameters**
 Type: Color
 
-**Return**  
+**Return**
 Type: Color
 
-**Scriptable**  
+**Scriptable**
 Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetFogColor(Color)
@@ -288,16 +288,16 @@ OceanEnvironmentRequestBus.Broadcast.GetFogColorPremultiplied()
 
 Applies the caustics effect of the ocean on geometry below the ocean surface\.
 
-**Parameters**  
+**Parameters**
 Type: Boolean
 
-**Return**  
+**Return**
 Type: Boolean
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetCausticsEnabled(boolean)
@@ -308,16 +308,16 @@ OceanEnvironmentRequestBus.Broadcast.GetCausticsEnabled()
 
 Specifies the caustics parameters for the **Infinite Ocean** component\.
 
-**Parameters**  
+**Parameters**
 Type: Float
 
-**Return**  
+**Return**
 Type: Float
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetCausticsDepth(float)
@@ -336,17 +336,17 @@ Renders the ocean with the assigned material\.
 
 You can find the default material in the `lumberyard_version/dev/Engine/EngineAssets/Materials/Water/ocean_default.mtl` directory\.
 
-**Parameters**  
-The path to the ocean material file\.  
+**Parameters**
+The path to the ocean material file\.
 Type: String
 
-**Return**  
+**Return**
 Type: String
 
-**Scriptable**  
-Yes  
+**Scriptable**
+Yes
 
-**Example**  
+**Example**
 
 ```
 OceanEnvironmentRequestBus.Broadcast.SetOceanMaterialName(string)

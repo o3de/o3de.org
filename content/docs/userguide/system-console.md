@@ -73,7 +73,7 @@ Console variable groups provide a convenient way to apply predefined settings to
 
 Console variables are commonly referred to as `CVarGroup` in the code base\. Console variable groups can modify other console variables to build bigger hierarchies\.
 
-**Warning**  
+**Warning**
 Cycles in the assignments are not detected and can cause crashes\.
 
 ### Registering a new variable group {#system-console-cvar-groups-registering}
@@ -185,9 +185,9 @@ A console command \(either command or variable\) can be tagged as a blocker duri
 The following synchronization commands are supported\.
 
 
-**Optional Title**  
+**Optional Title**
 
-|  Command  |  Type  |  Description  | 
-| --- | --- | --- | 
-| wait\_frames num: |  <int>  |  Wait for *num* frames before the execution of the list is resumed\.  | 
-| wait\_seconds sec: |  <float>  |  Wait for *sec* seconds before the execution of the list is resumed\.  | 
+|  Command  |  Type  |  Description  |
+| --- | --- | --- |
+| wait\_frames num: |  <int>  |  Wait for *num* frames before the execution of the list is resumed\.  |
+| wait\_seconds sec: |  <float>  |  Wait for *sec* seconds before the execution of the list is resumed\.  |

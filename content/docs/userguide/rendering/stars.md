@@ -10,7 +10,7 @@ Star data is located in `Build\Engine\EngineAssets\Sky\stars.dat`\. This data is
 
 ## File Format {#graphics-rendering-stars-file-format}
 
-The Stars `.dat` file uses a simple binary format; it can be easily modified using an editing tool\. The file starts with a header, followed by entries for each star\. The header specifies the number of entries in the file\. 
+The Stars `.dat` file uses a simple binary format; it can be easily modified using an editing tool\. The file starts with a header, followed by entries for each star\. The header specifies the number of entries in the file\.
 
 All types stored in little\-endian format, float32 in IEEE\-754 format\.
 
@@ -19,22 +19,22 @@ Star data provided in the SDK is based on real\-world information\. Typically, y
 The file elements are as follows:
 
 
-**Header \(12 bytes\)**  
+**Header \(12 bytes\)**
 
-| Name | Offset | Type | Value | 
-| --- | --- | --- | --- | 
-| Tag | 0 | uint32 | 0x52415453 \(ASCII: STAR\) | 
-| Version | 4 | uint32 | 0x00010001 | 
-| NumStars | 8 | uint32 | Number of star entries in the file | 
+| Name | Offset | Type | Value |
+| --- | --- | --- | --- |
+| Tag | 0 | uint32 | 0x52415453 \(ASCII: STAR\) |
+| Version | 4 | uint32 | 0x00010001 |
+| NumStars | 8 | uint32 | Number of star entries in the file |
 
 
-**Entry \(12 bytes\)**  
+**Entry \(12 bytes\)**
 
-| Name | Offset | Type | Value | 
-| --- | --- | --- | --- | 
-| RightAscension | 0 | float32 | in radians | 
-| Declination | 4 | float32 | in radians | 
-| Red | 8 | uint8 | star color, red channel | 
-| Green | 9 | uint8 | star color, green channel | 
-| Blue | 10 | uint8 | star color, blue channel | 
-| Magnitude | 11 | uint8 | brightness, normalized range | 
+| Name | Offset | Type | Value |
+| --- | --- | --- | --- |
+| RightAscension | 0 | float32 | in radians |
+| Declination | 4 | float32 | in radians |
+| Red | 8 | uint8 | star color, red channel |
+| Green | 9 | uint8 | star color, green channel |
+| Blue | 10 | uint8 | star color, blue channel |
+| Magnitude | 11 | uint8 | brightness, normalized range |

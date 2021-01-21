@@ -9,7 +9,7 @@ Lumberyard supports low, medium, high, and very high graphics performance for mo
 
 ## Updating Graphics Performance in Lumberyard Editor {#ios-android-updating-graphics-settings-in-lumberyard-editor}
 
-Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics setting for Android or iOS\. 
+Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics setting for Android or iOS\.
 
 **To update graphic settings in Lumberyard Editor**
 
@@ -27,15 +27,15 @@ When you choose a graphics performance setting, the `r_GraphicsQuality` console 
 
 You can change the default value for the `r_GraphicsQuality` console variable in each OS configuration file\. You can find the files in the `lumberyard_version\dev\Cache\game_project\pc` directory\.
 
-**Example iOS Configuration File**  
-The following is an example of the `system_ios_ios.cfg` file\.  
+**Example iOS Configuration File**
+The following is an example of the `system_ios_ios.cfg` file\.
 
 ![\[Example of the system_ios_ios.cfg configuration file\]](/images/userguide/mobile/graphics-performance-system-ios-ios-cfg-file-example.png)
 
 If you set `r_GraphicsQuality` to **0**, the graphics performance setting is automatically detected based on the mobile device model or total RAM\. You can review the mapping for mobile device models and graphics performance settings in the `android_models.xml` and `ios_models.xml` files, located in the `lumberyard_version\dev\Cache\game_project\pc\game_project\config` directory\.
 
-**Example**  
-The following is an example of the `ios_models.xml` file\.  
+**Example**
+The following is an example of the `ios_models.xml` file\.
 
 ![\[Example of the ios_models.xml file\]](/images/userguide/mobile/graphics-performance-ios-models-xml-file-example.png)
 
@@ -47,12 +47,12 @@ Use the **Graphics Settings** window in Lumberyard Editor to modify the graphics
 
 1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Settings**\.
 
-1. In the **Graphics Settings** window, for **Platform**, choose **Android** or **iOS** for the configuration file that you want to modify\.  
+1. In the **Graphics Settings** window, for **Platform**, choose **Android** or **iOS** for the configuration file that you want to modify\.
 ![\[Platform drop-down list in the Graphics Settings window.\]](/images/userguide/mobile/graphics-settings-platform-drop-down-menu.png)
 
-1. Modify the graphics settings for each parameter as needed\.  
+1. Modify the graphics settings for each parameter as needed\.
 ![\[Parameters for the iOS configuration file in the Graphics Settings window\]](/images/userguide/mobile/graphics-settings-ios-platform-parameters.png)
 
 1. Click **Save**\.
-**Note**  
+**Note**
 The configuration file saves to the `lumberyard_version\dev\game_project\Config` directory\. Asset Processor prioritizes the settings in this configuration file above the engine's default configuration file, located in the `lumberyard_version\dev\Engine\Config` directory\.

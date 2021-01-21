@@ -14,7 +14,7 @@ title: Build and bundle assets for release in &ALY;
 
 ## Prerequisites {#asset-bundler-tutorial-release-prerequisites}
 
-To complete the procedures in this tutorial, you need the following: 
+To complete the procedures in this tutorial, you need the following:
 + Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/userguide/assets/bundle/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
@@ -23,7 +23,7 @@ To complete the procedures in this tutorial, you need the following:
 
 1. Open the Amazon Lumberyard Project Configurator\.
 
-1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.  
+1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.
 ![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/userguide/assetbundler/asset-bundler-project-configurator-1.25.png)
 
 1. Open a command prompt and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
@@ -54,14 +54,14 @@ To complete the procedures in this tutorial, you need the following:
 
 ## Create a directory structure for the game release {#asset-bundler-tutorial-release-build-directory}
 
-1. Open a command prompt and navigate to the Lumberyard install root directory\. 
+1. Open a command prompt and navigate to the Lumberyard install root directory\.
 
 1. Create a directory for your game release\. The following command creates the release directory `C:\Users\username\StarterGameRelease`:
 
    ```
    mkdir %USERPROFILE%\StarterGameRelease
    ```
-**Note**  
+**Note**
  You can create this directory anywhere you want, but the rest of this tutorial assumes the release directory is in this location\. It's not recommended that you create this directory anywhere inside of your Lumberyard install\. If you do, detecting missing assets and diagnosing bundle problems becomes more difficult\.
 
 1. Create a subdirectory that will contain the game binaries and libraries:
@@ -75,8 +75,8 @@ To complete the procedures in this tutorial, you need the following:
    ```
    xcopy /s Bin64vc142.Release %USERPROFILE%\StarterGameRelease\release
    ```
-**Note**  
- Release builds include some metadata like debug symbols in a `.pdb` file\. When releasing your game, make sure to delete any compiler metadata that's copied over that isn't needed for launching or running your game\. 
+**Note**
+ Release builds include some metadata like debug symbols in a `.pdb` file\. When releasing your game, make sure to delete any compiler metadata that's copied over that isn't needed for launching or running your game\.
 
 1. Create a subdirectory that will contain the game data:
 
@@ -140,7 +140,7 @@ To complete the procedures in this tutorial, you need the following:
 
 1. Open a command prompt and navigate to the Lumberyard install root directory\.
 
-1. Bundle assets needed by the game engine: 
+1. Bundle assets needed by the game engine:
 
    ```
    Bin64vc142\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --assetListFile engine.assetlist
@@ -149,7 +149,7 @@ To complete the procedures in this tutorial, you need the following:
 
    This generates the `engine_pc.pak` file in your release folder\. The engine pak contains the assets required by the engine and gems\.
 
-1. Bundle game content and level assets: 
+1. Bundle game content and level assets:
 
    ```
    Bin64vc142\AssetBundlerBatch.exe assetLists ^
@@ -161,8 +161,8 @@ To complete the procedures in this tutorial, you need the following:
    Bin64vc142\AssetBundlerBatch.exe bundles --assetListFile startergame_pc.assetlist --outputBundlePath %USERPROFILE%\StarterGameRelease\startergame\startergame.pak
    ```
 
-   This generates the `startergame_pc.pak` file in your release folder\. 
-**Important**  
+   This generates the `startergame_pc.pak` file in your release folder\.
+**Important**
 `--addSeed` takes a path relative to your project folder \(for source assets\) or the asset cache \(for product assets\)\. For Starter Game, project source assets are located in `lumberyard_dir\dev\StarterGame`\. Don't use absolute paths or paths relative to the current directory when adding a seed\.
 
 ## Run your packaged release {#asset-bundler-tutorial-release-update-release}
@@ -181,7 +181,7 @@ If objects are displayed but textures are missing, it probably means you forgot 
 
 If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](/docs/userguide/assets/bundle/assets-resolving.md) and [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)\.
 
-**Note**  
+**Note**
 When you run the release build, it creates a `User` subdirectory under your release build directory\. Be sure to delete this directory before shipping the release build\.
 
 ## Next Steps {#asset-bundler-tutorial-release-next-steps}
@@ -190,4 +190,4 @@ Now that you've learned the basics of bundling assets for release, go on to furt
 + Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)\.
 + Explore the asset bundler functionality\. See [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/userguide/assets/bundle/command-line-reference.md)\.
 + Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md)
-+ To ask questions about the Asset Bundler and get support, see [the Amazon Lumberyard forums](https://forums.awsgametech.com/)\. 
++ To ask questions about the Asset Bundler and get support, see [the Amazon Lumberyard forums](https://forums.awsgametech.com/)\.

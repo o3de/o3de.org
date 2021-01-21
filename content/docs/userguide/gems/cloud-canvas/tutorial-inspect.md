@@ -20,14 +20,14 @@ This topic shows you how to sign in to the AWS Management Console and use the co
     For example, if your AWS account ID is *1234\-5678\-9012*, you sign in at `https://123456789012.signin.aws.amazon.com/console/`\.
 
    For convenience, you can create a bookmark of your URL for future use\.
-**Tip**  
-To create a bookmark for your account sign\-in page in your web browser, you should manually type the sign\-in URL for your account in the bookmark entry\. Do not use your web browser bookmark feature because redirects can obscure the sign\-in URL\. 
+**Tip**
+To create a bookmark for your account sign\-in page in your web browser, you should manually type the sign\-in URL for your account in the bookmark entry\. Do not use your web browser bookmark feature because redirects can obscure the sign\-in URL\.
 
 1. Enter the *CloudCanvasAdmin* IAM user name that you created\.
 
 1. Enter the password for the user and choose **Sign In**\.
 
-You are now successfully signed into the AWS Management Console\. 
+You are now successfully signed into the AWS Management Console\.
 
 **To inspect your resources in AWS**
 
@@ -37,7 +37,7 @@ You are now successfully signed into the AWS Management Console\.
    + In the **AWS services** search box, enter **CloudFormation**, and then click **CloudFormation**\.
    + Expand **All services** and under **Management Tools**, click **CloudFormation**\.
 
-1. On the **Stacks** page, you can see the individual stacks that have been created for your cloud gems and for your deployment\.  
+1. On the **Stacks** page, you can see the individual stacks that have been created for your cloud gems and for your deployment\.
 ![\[AWS CloudFormation stacks visible in the AWS Management Console.\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-cfn-stacks.png)
-**Note**  
+**Note**
 If a stack update operation is still in progress, the stack shows the status **UPDATE\-IN\-PROGRESS**\. Otherwise, the status shows **CREATE\-COMPLETE**\. You can click the **Refresh** icon ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-cfn-stacks-refresh.png) to update the status\.

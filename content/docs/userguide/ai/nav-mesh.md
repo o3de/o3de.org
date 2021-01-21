@@ -6,7 +6,7 @@ title: Multi-Layer Navigation Mesh (MNM)
 
 An MNM mesh is automatically created for each navigation area that is added to a level\. During the mesh generation process, the terrain, voxels, static objects, and rigid bodies with zero mass are all accounted for in determining whether an AI agent can move through or must move around something\.
 
-When a navigation mesh is created, the navigation areas are split in small volumes called tiles, which have a fixed size of 8m x 8m x 8m\. Tiles in turns consist of voxels\. The smaller the voxel size, the more accurate \(and more expensive\) the generated mesh\. 
+When a navigation mesh is created, the navigation areas are split in small volumes called tiles, which have a fixed size of 8m x 8m x 8m\. Tiles in turns consist of voxels\. The smaller the voxel size, the more accurate \(and more expensive\) the generated mesh\.
 
 ## AI Pathfinding {#ai-nav-mesh-pathfinding}
 

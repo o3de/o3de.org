@@ -23,7 +23,7 @@ The **coordinates/transform** area \(B\) shows the position of the cursor or the
 
 ## Set Vector {#lumberyard-editor-toolbar-bottom-vector}
 
-The **Set Vector** button \(C\) allows you to set the position, rotation or scale for the selected entities\. 
+The **Set Vector** button \(C\) allows you to set the position, rotation or scale for the selected entities\.
 
 ## Goto Position {#lumberyard-editor-toolbar-bottom-goto}
 
@@ -39,7 +39,7 @@ When your selection is locked, you can click or drag the mouse anywhere in the v
 
 ## Lock Axis Vectors {#lumberyard-editor-toolbar-bottom-lock-axis-vector}
 
-The **Lock Axis Vectors** button \(F\) makes scale operations uniform\. 
+The **Lock Axis Vectors** button \(F\) makes scale operations uniform\.
 
 ## Speed Control {#lumberyard-editor-toolbar-bottom-speed}
 

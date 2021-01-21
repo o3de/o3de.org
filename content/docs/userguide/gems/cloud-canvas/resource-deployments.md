@@ -32,7 +32,7 @@ The `cgp-resource-code` directory contains resource and deployment information f
 
 ### **project\-settings\.json** {#cloud-canvas-project-settings}
 
- The `project-settings.json` file contains project configuration data\. 
+ The `project-settings.json` file contains project configuration data\.
 
 The structure of the `project-settings.json` file is as follows:
 
@@ -54,7 +54,7 @@ The structure of the `project-settings.json` file is as follows:
 
  The *\{key\}* and *\{value\}* pairs represent individual settings\. The pairs at the root apply to the project\. The pairs under *\{deployment\}* apply to that deployment\. The pairs under *\{resource\-group\}* apply to that resource group\. Either or both of *\{deployment\}* and *\{resource\-group\}* can be `*`, to indicate the settings they contain apply to all deployments or resource groups, respectively\. Settings under a named entry take precedence over settings under a `*` entry\.
 
-**Note**  
+**Note**
 As of Lumberyard 1\.8, the `ProjectStackId` property is stored in the `dev\<project name>\AWS\local-project-settings.json` file\. For more information, see [ProjectStackId Property](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-local-project-settings-stackid-property)\.
 
 #### DefaultDeployment Property {#cloud-canvas-project-settings-default-deployment-property}

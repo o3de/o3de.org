@@ -16,33 +16,33 @@ To use the **Screen Fader** node in the Track View, see [Screen Fader Node](/doc
 
 ![\[screenfader, screenfadernode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-screen-fader-node.png)
 
-**Example**  
-In the following script, the screen first fades in, out, and then fades in again\.  
+**Example**
+In the following script, the screen first fades in, out, and then fades in again\.
 
 ![\[Use the Screen Fader node to fade the screen in and out to black.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-effect-color-correction-example-script.png)
 
-**Example**  
-See the following screen fading in a game\.  
+**Example**
+See the following screen fading in a game\.
 
 ![\[Use the Screen Fader node to fade the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/screen-fader-node-example.gif)
 
 ## Inputs {#screen-fader-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-|  Fade Out  | Event |  Triggers fading out to a color or texture\.  | 
-|  Fade In  |  Event  |  Triggers fading back in from a color or texture\.  | 
-|  Fader Id  | Number |  Specifies which fader to use\. This lets you maintain separate settings and/or layer fades on top of each other\.  | 
-|  Fade In Time  | Number | Number of seconds when fading in\. | 
-|  Fade Out Time  | Number | Number of seconds when fading out\. | 
-| Color | Color | The color to fade to and from\. The alpha channel is ignored\.The use of this property depends on the value of Use Current Color, and whether you are fading in or fading out\. | 
-|  Use Current Color  | Boolean |  Specify true to continue to use the current color for the fade overlay\. The use of the **Color** property depends on the value of **Use Current Color**, and whether you are fading in or fading out\. **Current Color** is the color that is rendered by the fader, including the alpha channel\. This is generally whatever color is left over from prior fading activity\. The [Color Property Behavior](#color-property-behavior) table in the next section shows the color values that are blended to create the fading transition\.  | 
-| Texture Name | String |  \(Optional\) The name of a texture from or to which to fade\. To use only solid colors for fading, leave this value empty\.  For more information, see [Finding the Texture Name](/docs/userguide/finding-texture-by-names.md)\.  | 
-| Update Always | Boolean |  Continues fading even when the game is paused\.  | 
-| Screen Coordinates | Vector4 |  Sets the screen coordinates \(left, top, right, and bottom\) where the fade overlay is drawn\. The default is full screen \(`0`, `0`, `1`, `1`\)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+|  Fade Out  | Event |  Triggers fading out to a color or texture\.  |
+|  Fade In  |  Event  |  Triggers fading back in from a color or texture\.  |
+|  Fader Id  | Number |  Specifies which fader to use\. This lets you maintain separate settings and/or layer fades on top of each other\.  |
+|  Fade In Time  | Number | Number of seconds when fading in\. |
+|  Fade Out Time  | Number | Number of seconds when fading out\. |
+| Color | Color | The color to fade to and from\. The alpha channel is ignored\.The use of this property depends on the value of Use Current Color, and whether you are fading in or fading out\. |
+|  Use Current Color  | Boolean |  Specify true to continue to use the current color for the fade overlay\. The use of the **Color** property depends on the value of **Use Current Color**, and whether you are fading in or fading out\. **Current Color** is the color that is rendered by the fader, including the alpha channel\. This is generally whatever color is left over from prior fading activity\. The [Color Property Behavior](#color-property-behavior) table in the next section shows the color values that are blended to create the fading transition\.  |
+| Texture Name | String |  \(Optional\) The name of a texture from or to which to fade\. To use only solid colors for fading, leave this value empty\.  For more information, see [Finding the Texture Name](/docs/userguide/finding-texture-by-names.md)\.  |
+| Update Always | Boolean |  Continues fading even when the game is paused\.  |
+| Screen Coordinates | Vector4 |  Sets the screen coordinates \(left, top, right, and bottom\) where the fade overlay is drawn\. The default is full screen \(`0`, `0`, `1`, `1`\)\.  |
 
 ### Color Property Behavior {#color-property-behavior}
 
@@ -55,23 +55,23 @@ The following table shows the actual color values that are blended to cause the 
 + **Current Color** - The color that the fader actively renders, including the alpha channel\. This is generally whatever color is left over from prior fading activity\.
 
 
-| Fading | Use Current Color Input | Start Color | Final Color | 
-| --- | --- | --- | --- | 
-| In | true |  **Current Color**  | Current Color with Alpha=0 | 
-| In | false |  **Color** input with Alpha=1  | Color input with Alpha=0 | 
-| Out | true |  **Current Color**  | Current Color with Alpha=1 | 
-| Out | false |  **Color** input with Alpha=0  | Color input with Alpha=1 | 
+| Fading | Use Current Color Input | Start Color | Final Color |
+| --- | --- | --- | --- |
+| In | true |  **Current Color**  | Current Color with Alpha=0 |
+| In | false |  **Color** input with Alpha=1  | Color input with Alpha=0 |
+| Out | true |  **Current Color**  | Current Color with Alpha=1 |
+| Out | false |  **Color** input with Alpha=0  | Color input with Alpha=1 |
 
 ## Outputs {#screen-fader-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Fade Out Complete | Event | Sent when fade out is complete\. | 
-| Fade In Complete | Event | Sent when fade in is complete\. | 
-| Current Color | Color | Outputs the current value for the fade overlay color\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Fade Out Complete | Event | Sent when fade out is complete\. |
+| Fade In Complete | Event | Sent when fade in is complete\. |
+| Current Color | Color | Outputs the current value for the fade overlay color\. |
 
-**Note**  
+**Note**
 Most **Script Canvas** graphics features are available in Lua\. However, **ScreenFader** is a single node in **Script Canvas**, and an EBus in Lua\. For more information, see the [ScreenFader EBuses](/docs/userguide/screen-fader-ebuses.md)\.

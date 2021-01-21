@@ -16,19 +16,19 @@ Loads a time of day preset `XML` file `file_name.xml` and then updates the sky\.
 ## Inputs {#load-definition-file-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node to load the time of day preset \.xml file\. | 
-| File Name | String |  Path to the time of day preset `.xml` file\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node to load the time of day preset \.xml file\. |
+| File Name | String |  Path to the time of day preset `.xml` file\.  |
 
 ## Outputs {#load-definition-file-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Success | Boolean | Returns true if the file loads successfully\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Success | Boolean | Returns true if the file loads successfully\. |

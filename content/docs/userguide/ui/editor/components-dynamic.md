@@ -11,15 +11,15 @@ To see in\-game examples of completed canvases with dynamic components, open the
 
 ## DynamicLayout {#ui-editor-components-dynamic-layout}
 
-To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/userguide/ui/editor/components-layout-column.md), [**LayoutRow**](/docs/userguide/ui/editor/components-layout-row.md), or [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) component\. With the **DynamicLayout** component, you can change the number of children of the layout element at run time\. 
+To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/userguide/ui/editor/components-layout-column.md), [**LayoutRow**](/docs/userguide/ui/editor/components-layout-row.md), or [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) component\. With the **DynamicLayout** component, you can change the number of children of the layout element at run time\.
 
 The layout element \(1\) dynamically resizes to fit its child elements\. The first child \(2\) of the layout element acts as the prototype element\. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout\.
 
 ![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-dynamic-child.png)
 
-The automatic resizing of the layout element depends on the layout type\. 
+The automatic resizing of the layout element depends on the layout type\.
 
-For [**LayoutColumn**](/docs/userguide/ui/editor/components-layout-column.md) and [**LayoutRow**](/docs/userguide/ui/editor/components-layout-row.md) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element\. 
+For [**LayoutColumn**](/docs/userguide/ui/editor/components-layout-column.md) and [**LayoutRow**](/docs/userguide/ui/editor/components-layout-row.md) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element\.
 
 For a [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) element, the cell size of the **LayoutGrid** component determines the size of the child elements\. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings\. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row\. If set to **vertical**, the initial height is used to determine how many children fit in each column\.
 
@@ -41,7 +41,7 @@ For a [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) elem
 
 ## DynamicScrollBox {#ui-editor-components-dynamic-scrollbox}
 
-To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component\. With the **DynamicScrollBox** component, you can change the number of children of the scroll box's element at run time\. 
+To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component\. With the **DynamicScrollBox** component, you can change the number of children of the scroll box's element at run time\.
 
 The content element dynamically resizes to fit its child elements\. The first child of the content element acts as the prototype element\. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout\.
 
@@ -77,10 +77,10 @@ Implement this bus to provide a dynamic scroll box the number of children it sho
 
 Returns the number of children that the dynamic scroll box should clone\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 Number of children to clone\.
 
 ### Ui DynamicScrollBoxElementNotificationBus:OnElementBecomingVisible {#ui-editor-components-ebus-ui-dynamicscrollboxelementnotificationbus}
@@ -89,9 +89,9 @@ Implement this bus to receive notifications when elements of a dynamic scroll bo
 
 Sends a signal when an element of a dynamic scroll box is about to become visible\.
 
-**Parameters**  
-`entityID` - The entity Id of the element that is about to become visible\.  
+**Parameters**
+`entityID` - The entity Id of the element that is about to become visible\.
 `index` - The index of the element that is about to become visible\.
 
-**Return**  
+**Return**
 None

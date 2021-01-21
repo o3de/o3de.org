@@ -6,11 +6,11 @@ title: Global Environment Lighting
 # Global Environment Lighting {#enviro-lighting-global}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 To implement global lighting for an entire level, you use a global environment probe \(also known as a global light probe\) and associated generated cubemap\.
 
@@ -24,46 +24,46 @@ As shown in the following table, the probe has several configurable properties, 
 
  EnvironmentProbe Properties
 
-**Active**  
+**Active**
 Enables and disables the probe\.
 
-**BoxSizeX, BoxSizeY, BoxSizeZ**  
-Specifies the XYZ dimensions of the probe's area of effect\. Probes are projected as cubes in the level\. For a global probe, set values large enough to span the entire level\. 
+**BoxSizeX, BoxSizeY, BoxSizeZ**
+Specifies the XYZ dimensions of the probe's area of effect\. Probes are projected as cubes in the level\. For a global probe, set values large enough to span the entire level\.
 
-**Diffuse**  
+**Diffuse**
 Sets the diffuse color of the light\. Set to **255,255,255**\.
 
-**DiffuseMultiplier**  
+**DiffuseMultiplier**
 Makes the light brighter\. Set to **1**\.
 
-**SpecularMultiplier**  
+**SpecularMultiplier**
 Multiplies the specular color brightness\. Set to **1**\.
 
-**AffectsThisAreaOnly**  
+**AffectsThisAreaOnly**
 Set parameter to **False** to make lights cover other vis areas\.
 
-**AttenuationFalloffMax**  
+**AttenuationFalloffMax**
 Controls the falloff amount \(0-1\) to create smoother transitions or hard edges\. A value of 0\.8 means that falloff begins at 80% at the boundaries of the box\. Set value to **0** for a global probe \(no falloff\)\.
 
-**IgnoresVisAreas**  
+**IgnoresVisAreas**
 Controls whether the light should respond to vis areas\. Set value to **True** for a global probe\.
 
-**SortPriority**  
+**SortPriority**
 Gives control over which probe has more visual interest and therefore a higher priority\. Set the value to **0** for a global probe, then increase the value for local probes, where higher values indicate more localized probes\.
 
-**deferred\_cubemap**  
+**deferred\_cubemap**
 Specifies the file location of the cubemap texture\.
 
-**BoxHeight**  
+**BoxHeight**
 Adjusts the height of cubemap box\.
 
-**BoxLength**  
+**BoxLength**
 Adjusts the length of cubemap box\.
 
-**BoxProject**  
+**BoxProject**
 When enabled, Lumberyard factors in the size of the cubemap box\.
 
-**BoxWidth**  
+**BoxWidth**
 Adjusts the width of cubemap box\.
 
 **To generate a global cubemap**
@@ -84,9 +84,9 @@ Adjusts the width of cubemap box\.
    + **AttenuationFalloffMax**: 0
    + **IgnoreVisAreas**: True \(check box selected\)
 
-1. Click **Generate Cubemap**\. Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***- one for the diffuse map, one for the specular map, and one for the source `.tif` file\. 
+1. Click **Generate Cubemap**\. Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***- one for the diffuse map, one for the specular map, and one for the source `.tif` file\.
 
-1. To check your cubemap for accuracy, create and then place a smooth, reflective sphere entity near the probe\. If its surface looks different from the environment around it, you need to regenerate the cubemap\. 
+1. To check your cubemap for accuracy, create and then place a smooth, reflective sphere entity near the probe\. If its surface looks different from the environment around it, you need to regenerate the cubemap\.
 
 1. Click **Generate Cubemap** again\. This incorporates object reflections from the originally generated cubemap for added realism\.
 

@@ -12,11 +12,11 @@ This section discusses the shader cache and how to generate shader cache `.pak` 
 The shader cache stores a collection of parsed and precompiled shaders\. Since the shader code is written with multiple definitions, Lumberyard can generate an enormous number of different shaders\. Compiling shaders on demand at run time is only possible on the PC\. On\-demand shader compiling can cause freezes during the game play and uses extra memory\. To reduce this overhead, all required shader combinations for a game are parsed, compiled, and stored in the shader cache\.
 
 The shader cache generally refers to the following files:
-+ `Shaders.pak` - Contains the shader source files, which is everything inside the `lumberyard_version\dev\Engine\Shaders\` directory, excluding `EngineAssets`\. 
-**Note**  
++ `Shaders.pak` - Contains the shader source files, which is everything inside the `lumberyard_version\dev\Engine\Shaders\` directory, excluding `EngineAssets`\.
+**Note**
 The actual shader source code \(`*.cfi` and `*.cfx`\) can be removed from this file for the final released version, and is not required anymore when the binary shaders are valid and available\.
 + `ShadersBin.pak` - Contains the binary\-parsed shader information of the shader source code\.
-+ `ShaderCache.pak` - Contains compiled shaders for all possible combinations that have been submitted to the remote shader compiler\. 
++ `ShaderCache.pak` - Contains compiled shaders for all possible combinations that have been submitted to the remote shader compiler\.
 + `ShaderCacheStartup.pak` - Contains a small subset of the shader cache that is used during game start\. This file is loaded into memory for quicker start times, but is not required\. This cache is often used to hold the minimum required set of shaders to show a loading screen so that the rest of the loading can occur\.
 
 ## ShaderCache\.pak File Generation {#mat-shaders-custom-dev-cache-generation}
@@ -25,11 +25,11 @@ Creating a `ShaderCache.pak` file consists of running the `lmbr_pak_shaders.bat`
 
 You can find the `ShaderList_platform.txt` file either from the remote shader compiler server or from the Lumberyard Editor directory\. This file contains the list of all shaders which `ShaderCacheGen.exe` uses to produce the shader combinations for your game\.
 
-When running Lumberyard Editor, individual shaders are created as you view them\. As such, you do not strictly need a remote shader compiler server to test game release mode or test shader pack generation\. You just need access to the `ShaderList_platform.txt` file that is created in the `lumberyard_version\dev\cache\game_name\platform\user\cache\shaders` directory when running Lumberyard Editor\. 
+When running Lumberyard Editor, individual shaders are created as you view them\. As such, you do not strictly need a remote shader compiler server to test game release mode or test shader pack generation\. You just need access to the `ShaderList_platform.txt` file that is created in the `lumberyard_version\dev\cache\game_name\platform\user\cache\shaders` directory when running Lumberyard Editor\.
 
 However, only the shaders you have viewed on your local computer while running Lumberyard Editor will be listed in the `ShaderList_platform.txt` file\. For this reason, it is recommended that you use a remote shader compiler server if possible\.
 
-**Note**  
+**Note**
 During development time, when you run the game or Lumberyard Editor, and before the shaders are packed into shader cache `.pak` files, loose shader files are created in the following directory: `lumberyard_version\Dev\Cache\your_game\platform\user\cache`
 
 The following sections detail the steps used to generate `ShaderCache.pak` files:
@@ -40,7 +40,7 @@ Lumberyard ships with `ShaderCacheGen.exe`, which is located in the `lumberyard_
 
 Running the `ShaderCacheGen.exe` will load the `ShaderCacheGen.cfg` file\. This configuration file includes the IP address and other settings for the remote shader compiler that generates the shaders\. The `ShaderCacheGen.exe` must connect to the remote shader compiler that's specified in the configuration file\. The `ShaderCacheGen.exe` will not use the IP address and other settings that are specified in the system configuration files\.
 
-If you customized Lumberyard in any way, you must build Lumberyard and your game using the `all` profile\. This argument builds both `ShaderCacheGen.exe` \(and ensures that it is up\-to\-date\) and the game `.dll` files that are required\. 
+If you customized Lumberyard in any way, you must build Lumberyard and your game using the `all` profile\. This argument builds both `ShaderCacheGen.exe` \(and ensures that it is up\-to\-date\) and the game `.dll` files that are required\.
 
 Enter the following command for your version of Visual Studio\.
 
@@ -59,15 +59,15 @@ lmbr_waf build_win_x64_vs2017_profile -p shadercachegen
 
 ### Packing the Shader Cache as Part of the Release Build {#packing-shader-cache-as-part-of-release-build}
 
-The `ShaderCache.pak` files are generated for release builds as part of the build process\. To generate the files, the `ShaderCacheGen.exe` must be connected to the Remote Shader Compiler\. This must be the same Remote Shader Compiler that you used to generate the shaders for your game\. As long as this instance of the shader compiler is running, the release build process can generate the necessary `.pak` files for your release build\. If the shader compiler isn't running or reachable for some reason, the release build process fails\. 
+The `ShaderCache.pak` files are generated for release builds as part of the build process\. To generate the files, the `ShaderCacheGen.exe` must be connected to the Remote Shader Compiler\. This must be the same Remote Shader Compiler that you used to generate the shaders for your game\. As long as this instance of the shader compiler is running, the release build process can generate the necessary `.pak` files for your release build\. If the shader compiler isn't running or reachable for some reason, the release build process fails\.
 
 ### Packing the Shader Cache Using a Batch File {#mat-shaders-custom-dev-cache-generation-4}
 
 The `lmbr_pak_shaders.bat` file generates the `ShaderCache.pak` files, which are saved to the `lumberyard_version\dev\build\platform\your_game` directory\. The batch file first calls the `ShaderCacheGen.exe` and then calls `Tools\PakShaders\pak_shaders.py`\.
 
-From a command line, navigate to the `lumberyard_version\dev` directory, and run the `lmbr_pak_shaders.bat`, and specify the location to the `ShaderList_platform.txt` file\. 
+From a command line, navigate to the `lumberyard_version\dev` directory, and run the `lmbr_pak_shaders.bat`, and specify the location to the `ShaderList_platform.txt` file\.
 
-**Example**  
+**Example**
 
 ```
 F:\lumberyard_version\dev\lmbr_pak_shaders.bat game_project_name D3D11 pc C:\shader_compiler_server\ShaderList_DX11.txt
@@ -77,7 +77,7 @@ Once the shader `.pak` files are created, you can move them as needed\. For exam
 
 ### Packing the Shader Cache Manually {#mat-shaders-custom-dev-cache-generation-manual}
 
-If you want to use more complex build pipelines, you can pack the shader cache manually\. 
+If you want to use more complex build pipelines, you can pack the shader cache manually\.
 
 **To pack the shader cache manually**
 
@@ -129,11 +129,11 @@ lumberyard_version\dev\cache\your_game\platform\user\shaders\cache\<platform>\st
 
 You can find the build platform subfolders listed in the following table in the `lumberyard_version\dev\Cache\your_game\platform\user\cache\shaders\` directory\.
 
- 
 
 
-****  
 
-| Build Platform | Build Platform Subfolder | 
-| --- | --- | 
-| PC, DirectX 11 | \\D3D11 | 
+****
+
+| Build Platform | Build Platform Subfolder |
+| --- | --- |
+| PC, DirectX 11 | \\D3D11 |

@@ -21,7 +21,7 @@ The **UI Editor** consists of the following:
 
 1. **Animation Editor** - Tool for animating UI elements
 
-**Note**  
+**Note**
 You can tear away and redock the **Hierarchy** pane, the **Properties** pane, the **Animation Editor**, and sections of the toolbar to customize the **UI Editor**\.
 
 **To open the UI Editor**

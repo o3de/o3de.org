@@ -24,13 +24,13 @@ When you create a layer, you can add entities to that layer\. This helps you org
 
 1. In Lumberyard Editor, choose **Tools**, **Entity Outliner**\.
 
-1. In the **Entity Outliner**, right\-click and choose **Create layer**\.  
+1. In the **Entity Outliner**, right\-click and choose **Create layer**\.
 ![\[Right-click in the Entity Outliner and choose Create layer.\]](/images/userguide/component/entity_system/creating-layers.png)
 
-1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**\.  
-![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/userguide/component/entity_system/modifying-layers-inspector.png)  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-outliner-layers.html)
+1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**\.
+![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/userguide/component/entity_system/modifying-layers-inspector.png)
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-outliner-layers)
 
 ## Modifying a Layer {#modifying-layers}
 
@@ -40,14 +40,14 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 
 1. In the **Entity Outliner**, right\-click the layer\.
 
-1. You can do the following in the context menu\. 
+1. You can do the following in the context menu\.
 
-   Actions highlighted in yellow affect the selected layer\. The other options are standard context menu actions that don't affect the selected layer\.  
+   Actions highlighted in yellow affect the selected layer\. The other options are standard context menu actions that don't affect the selected layer\.
 ![\[Right-click a layer to expose its context menu.\]](/images/userguide/component/entity_system/modifying-layers.png)
 
-   The following options in the context menu perform actions on the selected layer\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-outliner-layers.html)
+   The following options in the context menu perform actions on the selected layer\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-outliner-layers)
 
 ### Layer Hierarchies {#layer-hierarchy}
 
@@ -55,7 +55,7 @@ You can nest layers within other layers\. This is useful if you want to organize
 
 ![\[A layer nested within another layer.\]](/images/userguide/component/entity_system/layer-hierarchies.png)
 
-**Note**  
+**Note**
 You can't make a layer a child of a non\-layer entity and you can't save a layer in a slice\.
 
 You can nest layers to break up your level into smaller, more workable sections\. If you are creating a large level, for example, you might have a single vegetation layer\. If you have just one vegetation layer, then only one environment artist could edit this layer at a time\. To allow multiple artists to work on the vegetation layer at once, you can nest other layers within the vegetation layer and assign each nested layer to different artists\. This helps build a well\-organized hierarchy to keep the game's structure efficient\.
@@ -75,7 +75,7 @@ Layers can contain freestanding \(non\-slice\) entities and slices\.
 
 The component entity system saves references to layers and their hierarchies in the level data\. When you add or remove a layer from your level, you must save your level before making more changes\. If you don't save your level, layers and their contents will not load correctly the next time you open the level\.
 
-Lumberyard layers are saved as `.layer` files in the `level_name/layers` directory\. The layer's filename is saved as `layer_name.layer`\. If a layer is nested within another layer, then the parent layer name is prepended to the layer filename\. 
+Lumberyard layers are saved as `.layer` files in the `level_name/layers` directory\. The layer's filename is saved as `layer_name.layer`\. If a layer is nested within another layer, then the parent layer name is prepended to the layer filename\.
 
 When a layer contains unsaved changes, an asterisk \(\*\) appears next to the layer name\. After you save the level or the layer, the asterisk is removed\.
 
@@ -116,7 +116,7 @@ If you delete a layer from a level in Lumberyard Editor, you can reimport it\.
 
 A layer is simply an entity with special rules\. As such, you can add layer\-specific components to layers\. By default, Lumberyard doesn't contain any layer\-specific components, but you can create your own, such as special layer components for streaming or tags\.
 
-Any given component can appear in only one context menu\. By default, Lumberyard has the **Game**, **System**, and **Layer** contexts for components\. 
+Any given component can appear in only one context menu\. By default, Lumberyard has the **Game**, **System**, and **Layer** contexts for components\.
 
 You can test creating a layer\-specific component by editing the **Comment** component\.
 
@@ -126,6 +126,6 @@ You can test creating a layer\-specific component by editing the **Comment** com
 
 1. Change the `AZ_CRC` attribute to **Layer** and delete the CRC value\.
 
-1. Save the file\. 
+1. Save the file\.
 
 1. In Lumberyard Editor, add the **Comment** component to a layer\.

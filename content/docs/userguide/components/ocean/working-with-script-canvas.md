@@ -34,7 +34,7 @@ You can use the **Infinite Ocean** component with the **Script Canvas** editor t
    1. In the canvas, from the **Timer** node, drag the **Out** pin to connect it to the **In** pin of the **Sin** node\.
 
    1. Drag the **Seconds** pin to connect it to the **Angle** pin of the **Sin** node\.
-**Note**  
+**Note**
 The **Sin** node returns values that are -/\+\. Negative numbers cause errors with the **Wave Size** parameter\. Use the **Add** node to ensure that only positive values are returned\.
 
 1. In the **Node Palette**, search for the **Add** node and drag it to the canvas\.
@@ -51,7 +51,7 @@ The **Sin** node returns values that are -/\+\. Negative numbers cause errors wi
 
    1. Drag the **Result** pin to connect it to the **Number:0** pin of the **SetAnimationWavesSize** node\.
 
-   Your script should look like the following:  
+   Your script should look like the following:
 ![\[Example Script Canvas script for working with the Infinite Ocean component.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-example-script.png)
 
 1. Save your script\.

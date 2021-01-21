@@ -20,13 +20,13 @@ You can use the text\-to\-speech sample level to have the Lumberyard character R
 
 1. Close **Resource Manager**\.
 
-1. Click **Play Game** or press **Ctrl\+G** to run the text\-to\-speech sample level\. The level shows the character Rin and some text boxes\.  
+1. Click **Play Game** or press **Ctrl\+G** to run the text\-to\-speech sample level\. The level shows the character Rin and some text boxes\.
 ![\[Text to speech sample level\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-sample-level-using-1.png)
 
 1. If you just want to try the sample level, you can ignore the **Character \(opt\)** box for now\. To use this setting, you would first have to create a character in the Cloud Gem Portal and import the character's speech files into the sample level\. For information about creating characters, see [Text\-to\-Speech Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/text-to-speech-cgp.md)\.
 
 1. For **Voice \(opt\)**, choose one of the built\-in voices\.
-**Note**  
+**Note**
 Currently you can choose from 50 Amazon Polly voices\. The default voice \(Joanna\) corresponds to US English\. If you choose a voice that corresponds to a different language, the text that you type should correspond to that language\. For a complete list of Amazon Polly voices and their corresponding languages, see [Available Voices](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html) in the Amazon Polly Developer Guide\.
 
 1. For **Input Text**, enter the text that you want rendered to speech\.

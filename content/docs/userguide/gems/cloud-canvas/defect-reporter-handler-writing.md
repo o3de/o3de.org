@@ -37,7 +37,7 @@ The following sequence describes the workflow in greater detail\.
 1. Each data gathering handler takes the report ID, calls `GetHandlerID` on the defect reporter, and stores the report ID and handler ID for later use\.
 
    When `GetHandlerID` is called, the defect reporter reserves a location for the report in the report accumulator\. This tells the accumulator to wait for the requested data before it finalizes the report\.
-**Important**  
+**Important**
 `GetHandlerID` should not be called before `OnCollectDefectReporterData` is called\. `GetHandlerID` should be called inside `OnCollectDefectReporterData` before `OnCollectDefectReporterData` ends\.
 
 1. The handler initiates data gathering\.
@@ -46,7 +46,7 @@ The following sequence describes the workflow in greater detail\.
 
 1. When the handler has data ready, it calls `ReportData` on the defect reporter with the report ID, the handler ID, and the requested data\.
 
-**Note**  
+**Note**
 The handler must ensure that the report ID and handler ID match to the correct data\. To implement this, data gathering functions can send the IDs as user values or use some other custom mechanism\.
 Because the data that was requested might never arrive at the accumulator, handlers should time out gracefully and send empty data if necessary\. The defect reporter can force creation of incomplete reports\.
 
@@ -132,12 +132,12 @@ For information about the DefectReporterSample level and the Defect Report Edito
 
 ## Upload Limitations {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-upload-limitations}
 
-The maximum body payload size of data that can be sent in an event is 256KB\. The maximum number of attachments is 10\. 
+The maximum body payload size of data that can be sent in an event is 256KB\. The maximum number of attachments is 10\.
 
 The largest object that can be uploaded to S3 in a single PUT is 5 gigabytes\. For more information, see [Amazon S3 Frequently Asked Questions](https://aws.amazon.com/s3/faqs/)\.
 
-To prevent memory overuse, the default maximum number of presigned posts that can be requested for each call is 20\. 
+To prevent memory overuse, the default maximum number of presigned posts that can be requested for each call is 20\.
 
-The default maximum number of calls that can be made during the submission is 1\. 
+The default maximum number of calls that can be made during the submission is 1\.
 
 You can modify these values in the `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\AWS\common-code\Constant\defect_reporter_constants.py` file\.
