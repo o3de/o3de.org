@@ -6,7 +6,7 @@ title: Asset Drag and Drop
 ---
 # Asset Drag and Drop {#ui-editor-asset-drag-and-drop}
 
-You can drag and drop existing assets from the **[Asset Browser](/docs/userguide/asset-browser-intro.md)** into the **UI Editor’s** viewport, hierarchy pane, properties pane, or a specific property field\. This can be a convenient way to create new entities and assets to work with in the **UI Editor**\.
+You can drag and drop existing assets from the **[Asset Browser](/docs/userguide/asset-browser-intro.md)** into the **UI Editor's** viewport, hierarchy pane, properties pane, or a specific property field\. This can be a convenient way to create new entities and assets to work with in the **UI Editor**\.
 
 **Dragging assets associated with components**
 + You can drop any asset that is associated with a component, such as a Script Canvas file or a Lua script file, into the **UI Editor** viewport or hierarchy pane\.
@@ -38,4 +38,4 @@ You can drag and drop existing assets from the **[Asset Browser](/docs/userguide
 + Drag UI Canvas assets from the **Asset Browser** into the **UI Editor** to open them for editing\.
 
 **Dragging assets to property fields**
-+ Drag an asset from the **Asset Browser** onto an asset property field in the properties pane to assign that asset to a component’s property\.
++ Drag an asset from the **Asset Browser** onto an asset property field in the properties pane to assign that asset to a component's property\.

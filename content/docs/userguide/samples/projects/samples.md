@@ -26,10 +26,10 @@ The `Samples` subdirectory contains the following levels:
 + [Simple Jack Locomotion](/docs/userguide/animation/editor/jack-locomotion-sample.md)
 
 The `UI` subdirectory contains the following levels:
-+ UI Features – Demonstrates [UI components](/docs/userguide/ui/editor/components.md), [UI animation](/docs/userguide/ui/animation/_index.md), [font rendering](/docs/userguide/ui/fonts/_index.md), [language support and localization](/docs/userguide/localization/intro.md), and C\+\+ canvases and custom components\.
-+ [UI in 3D World](/docs/userguide/ui/editor/placing-canvases-3d.md) – Demonstrates placing game UI on 3D objects\.
-+ [UI Main Menu Lua Sample](/docs/userguide/ui/editor/loading-canvases-lua.md) – Demonstrates loading a UI canvas using Lua\.
-+ UI Main Menu Script Canvas Sample – Demonstrates loading a UI canvas using the [**Script Canvas** editor](/docs/userguide/scripting/scriptcanvas/intro.md)\.
++ UI Features - Demonstrates [UI components](/docs/userguide/ui/editor/components.md), [UI animation](/docs/userguide/ui/animation/_index.md), [font rendering](/docs/userguide/ui/fonts/_index.md), [language support and localization](/docs/userguide/localization/intro.md), and C\+\+ canvases and custom components\.
++ [UI in 3D World](/docs/userguide/ui/editor/placing-canvases-3d.md) - Demonstrates placing game UI on 3D objects\.
++ [UI Main Menu Lua Sample](/docs/userguide/ui/editor/loading-canvases-lua.md) - Demonstrates loading a UI canvas using Lua\.
++ UI Main Menu Script Canvas Sample - Demonstrates loading a UI canvas using the [**Script Canvas** editor](/docs/userguide/scripting/scriptcanvas/intro.md)\.
 
 ## Audio Sample {#sample-project-samples-audio}
 

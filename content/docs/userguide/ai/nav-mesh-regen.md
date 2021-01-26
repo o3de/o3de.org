@@ -33,6 +33,6 @@ The following method is a non\-runtime generation of the mesh\.
 **To partially regenerate the navigation mesh**
 + In Lumberyard Editor, click **AI** and enable **Continuous Update**\.
 
-**Entity:GetBounds ** – Obtains the bounding box size, in local or world\-space coordinates, for any entity in the mesh\. This gives information about the location inside the mesh that requires updating, such as where an object moved to and how big it is\.
+**Entity:GetBounds ** - Obtains the bounding box size, in local or world\-space coordinates, for any entity in the mesh\. This gives information about the location inside the mesh that requires updating, such as where an object moved to and how big it is\.
 
-**AI:RegenerateMNM ** – Specifies the minimum and maximum world\-space coordinates of where the navigation mesh regenerates at runtime in response to geometry changes, such as a bridge collapsing or a path becoming blocked, for example\.
+**AI:RegenerateMNM ** - Specifies the minimum and maximum world\-space coordinates of where the navigation mesh regenerates at runtime in response to geometry changes, such as a bridge collapsing or a path becoming blocked, for example\.

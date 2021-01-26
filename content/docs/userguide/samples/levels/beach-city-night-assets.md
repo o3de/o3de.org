@@ -3,7 +3,7 @@ description: ' Use the Beach City sample project to create your own levels in yo
   &ALY; game project. '
 title: Beach City Sample Project &endash; Legacy
 ---
-# Beach City Sample Project – Legacy {#sample-level-beach-city-night-assets}
+# Beach City Sample Project - Legacy {#sample-level-beach-city-night-assets}
 
 The Beach City sample project includes free assets that you can use to create your own levels\. Although the Beach City sample project is intended to be a visual demo and is not a playable demo, you can add player controls to the level if you wish to make it playable\.
 

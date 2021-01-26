@@ -19,8 +19,8 @@ You can publish and receive from your game client, editor, or server\. However, 
 ## Publishing Messages {#cloud-canvas-cloud-gem-web-communicator-publishing-messages}
 
 You can publish messages directly through AWS IoT or send them through the Web Communicator API first for validation\. Each method is useful for the following applications:
-+ **Directly through AWS IoT** – For communication between trusted parties \(for example, from editor to editor\)\.
-+ **Web Communicator API** – For game client messages that require validation before publishing\.
++ **Directly through AWS IoT** - For communication between trusted parties \(for example, from editor to editor\)\.
++ **Web Communicator API** - For game client messages that require validation before publishing\.
 
 ## User ID and Status Table {#cloud-canvas-cloud-gem-web-communicator-user-id-and-status-table}
 

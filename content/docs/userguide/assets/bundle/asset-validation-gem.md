@@ -21,25 +21,25 @@ If you already have bundles to test, you can use *bundle mode* instead of seed m
 ## Seed Mode Commands {#asset-bundler-asset-validation-gem-seed-mode-commands}
 
 When you use Lumberyard Editor or the launcher to run your game, the following console commands are available:
-+ **seedmode** – Enables or disables the reporting system\.
-+ **addseedpath** *<Relative cache path to an asset>* – Adds the specified asset and all of its dependencies as a seed to your dependency graph, so they no longer are reported as missing\. The `addseedpath` command lets you test which assets should be added to your seed list for packaging\.
++ **seedmode** - Enables or disables the reporting system\.
++ **addseedpath** *<Relative cache path to an asset>* - Adds the specified asset and all of its dependencies as a seed to your dependency graph, so they no longer are reported as missing\. The `addseedpath` command lets you test which assets should be added to your seed list for packaging\.
 
   **Example**
 
   ```
   addseedpath levels\startergame\level.pak
   ```
-+ **removeseedpath** *<Relative cache path to an asset>* – Removes an asset from the dependency graph\.
-+ **listknownassets** – Lists all the assets in your current dependency graph\.
-+ **addseedlist** *<Relative source path to a seed list>* – Adds all the seeds found in the specified seed list to your known dependency graph\. Because the path is a source path, it is relative to the `lumberyard_version\dev` directory\.
++ **removeseedpath** *<Relative cache path to an asset>* - Removes an asset from the dependency graph\.
++ **listknownassets** - Lists all the assets in your current dependency graph\.
++ **addseedlist** *<Relative source path to a seed list>* - Adds all the seeds found in the specified seed list to your known dependency graph\. Because the path is a source path, it is relative to the `lumberyard_version\dev` directory\.
 
   **Example**
 
   ```
   addseedlist Engine\SeedAssetList.seed
   ```
-+ **removeseedlist** *<Relative source path to a seed list>* – Removes all the assets in a seed list from your graph\.
-+ **printblacklisted** – Enables or disables the display of approved assets in the system\. Some assets, like shaders, are loaded at runtime and do not appear in your dependency graph\. By design, shaders are packaged in their own `.pak` file, are not found in the dependency graph, and do not need to be reported by the system\. However, you can use the `printblacklisted` command to force shaders or other approved asset types to be included in the dependency graph\.
++ **removeseedlist** *<Relative source path to a seed list>* - Removes all the assets in a seed list from your graph\.
++ **printblacklisted** - Enables or disables the display of approved assets in the system\. Some assets, like shaders, are loaded at runtime and do not appear in your dependency graph\. By design, shaders are packaged in their own `.pak` file, are not found in the dependency graph, and do not need to be reported by the system\. However, you can use the `printblacklisted` command to force shaders or other approved asset types to be included in the dependency graph\.
 
 ## Using Seed Mode {#asset-bundler-asset-validation-gem-using-seed-mode}
 

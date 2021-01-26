@@ -19,12 +19,12 @@ Creating a gem is straightforward\. To create or enable a gem for your game proj
     \Tests
 \External
 ```
-+ `3rdParty` – Contains third\-party definition files that are specific to the gem\.
-+ `Assets` – Contains assets to include in the game project that are specific to the gem\.
-+ `Code\Include` – An additional header include path to add to a game project that uses the gem\.
-+ `Code\Source` – Contains the source code for the gem\.
-+ `Code\Tests` – Contains unit testing source code for projects that are built in a test configuration\.
-+ `External` – Contains external libraries on which the gem depends that are specific to the gem\.
++ `3rdParty` - Contains third\-party definition files that are specific to the gem\.
++ `Assets` - Contains assets to include in the game project that are specific to the gem\.
++ `Code\Include` - An additional header include path to add to a game project that uses the gem\.
++ `Code\Source` - Contains the source code for the gem\.
++ `Code\Tests` - Contains unit testing source code for projects that are built in a test configuration\.
++ `External` - Contains external libraries on which the gem depends that are specific to the gem\.
 
 ### Code Directory Contents {#component-entity-system-pg-gems-code-create-configure-code-directory-contents}
 
@@ -41,7 +41,7 @@ The `\dev\Gems\<gem name>\Code` subdirectory has the following items that Lumber
 | Standard precompiled header files |  `\Source\StdAfx.h` `\Source\StdAfx.cpp`  | 
 | Skeleton unit test source file | \\Tests\\<gem name>Test\.cpp | 
 
-Lumberyard also creates certain [Waf](/docs/userguide/waf/intro.md)–related files in the `\dev\Gems\<gem name>\Code` subdirectory\. These files specify the source code content and how the gem is defined and built\.
+Lumberyard also creates certain [Waf](/docs/userguide/waf/intro.md)-related files in the `\dev\Gems\<gem name>\Code` subdirectory\. These files specify the source code content and how the gem is defined and built\.
 
 
 ****  
@@ -76,7 +76,7 @@ The manifest file that manages the source code uses the Lumberyard Waf `waf_file
 ```
 
 The `.waf_files` file contains the following three levels of indentation:
-+ The first level contains the uber file mapping for uber file–enabled builds\.
++ The first level contains the uber file mapping for uber file-enabled builds\.
   + `none` specifies files to be excluded from the uber file\. Precompiled headers must be listed here\.
   + `auto` specifies files that are automatically combined into modules that are optimized for compile time by Waf\.
   + You can also specify a fixed uber file name \(for example, `my_gem_uber_0.cpp`\) at this level to specially group a set of files\. All of the files in the grouping are combined into `my_gem_uber_0.cpp`\. This technique is useful to restrict which files are combined, like operating system\-specific code\.
@@ -96,7 +96,7 @@ When you set the configuration file to an external third\-party library, the lib
 
 Waf uses two conventions to add dependencies to third\-party libraries: `uselib` and `use`\. The convention `uselib` is a wscript keyword that configures a module to link to a library's include path, library path, and library\. If a gem uses `uselib` to consume its gem\-specific library, then that library is available to the gem only for compiling and linking\.
 
-The convention `use` is similar to the `uselib` keyword, except that the library's dependencies are recursively propagated to the module that adds the dependency\. If a gem uses `use` to consume its gem\-specific library, then the library can be used recursively\. This means that if the gem is enabled, the gem–specific third\-party library is also available to the game project or dependent gems\.
+The convention `use` is similar to the `uselib` keyword, except that the library's dependencies are recursively propagated to the module that adds the dependency\. If a gem uses `use` to consume its gem\-specific library, then the library can be used recursively\. This means that if the gem is enabled, the gem-specific third\-party library is also available to the game project or dependent gems\.
 
 ### Adding New Source C\+\+ Files to Gems {#component-entity-system-pg-gems-code-updating-adding-code}
 

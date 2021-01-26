@@ -23,7 +23,7 @@ To create a child emitter, you first set the parent effect and then attach the c
 + Drag the child emitter to the preferred location\. Alternatively, you can drag the child emitter to the library name to detach it from its parent and make it appear at the bottom of the emitter stack\.
 
 Lumberyard has two types of child effects:
-+ **Regular child effects** – These effects behave like separate effects, though they are spawned with and attached to their parent effect\. Each child effect has its own independent parameters and lifetime, allowing for an overall effect that consists of several parts\.
-+ **Second\-generation child effects** – These effects are attached to individual particles of the parent effect\. A separate emitter is spawned for each particle of the parent effect, and those emitters move with their parent particles\. This allows you to create more complex effects\. You can nest second\-generation effects multiple times in order to create third\-generation \(and greater\) effects\.
++ **Regular child effects** - These effects behave like separate effects, though they are spawned with and attached to their parent effect\. Each child effect has its own independent parameters and lifetime, allowing for an overall effect that consists of several parts\.
++ **Second\-generation child effects** - These effects are attached to individual particles of the parent effect\. A separate emitter is spawned for each particle of the parent effect, and those emitters move with their parent particles\. This allows you to create more complex effects\. You can nest second\-generation effects multiple times in order to create third\-generation \(and greater\) effects\.
 
 An example of a child effect is attaching an emitter to a parent particle and leaving trailing particles behind\. You can achieve this effect using the **Spawn Indirection** attribute\.

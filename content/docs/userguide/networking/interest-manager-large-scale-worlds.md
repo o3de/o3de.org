@@ -62,8 +62,8 @@ While the sample is not comprehensive, it provides a starting point for you to u
 Lumberyard's `AzFramework::InterestManagerComponent` is intended for use as a system component in your application\.
 
 The `InterestManagerComponent` initializes both the interest manager and the following built\-in rule handlers:
-+ Proximity rule handler \(`GridMate::ProximityInterestHandler`\) – Use the proximity rule handler to specify, based on their spatial proximity, which entities appear in each of your peers\. The rule handler uses axis\-aligned bounding boxes\.
-+ Bitmask rule handler \(`GridMate::BitmaskInterestHandler`\) – Use the bitmask rule handler to filter out replicas based on their bit mask value\. This is useful for entities whose presence is determined by custom grouping\.
++ Proximity rule handler \(`GridMate::ProximityInterestHandler`\) - Use the proximity rule handler to specify, based on their spatial proximity, which entities appear in each of your peers\. The rule handler uses axis\-aligned bounding boxes\.
++ Bitmask rule handler \(`GridMate::BitmaskInterestHandler`\) - Use the bitmask rule handler to filter out replicas based on their bit mask value\. This is useful for entities whose presence is determined by custom grouping\.
 
 To register `InterestManagerComponent` as a system component, override `AZ:: Module:: GetRequiredSystemComponents()`\. As a system component, the `InterestManagerComponent` is initialized before any other nonsystem entities and nonsystem components\. For more information, see [System Components](/docs/userguide/modules/system-components.md)\.
 

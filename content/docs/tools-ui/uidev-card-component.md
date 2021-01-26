@@ -39,11 +39,11 @@ An SVG for everywhere else in the editor, without a background box\.
 
 1.  **Help icon** 
 
-   \(Optional\) Cards can display a link to documentation that describes the card’s functionality\.
+   \(Optional\) Cards can display a link to documentation that describes the card's functionality\.
 
 1.  **Context menu icon** 
 
-   \(Optional\) The card’s context menu opens when users choose this icon\. The context menu can also be opened by right\-clicking the card header with a mouse\.
+   \(Optional\) The card's context menu opens when users choose this icon\. The context menu can also be opened by right\-clicking the card header with a mouse\.
 
 1.  **Card content widget** 
 
@@ -51,7 +51,7 @@ An SVG for everywhere else in the editor, without a background box\.
 
 1.  **Advanced options** 
 
-   \(Optional\) When a secondary content widget is set, a label for it is displayed here\. The Advanced options menu expands or collapses when users choose the arrow on the left of the label\. You can customize the label’s text\.
+   \(Optional\) When a secondary content widget is set, a label for it is displayed here\. The Advanced options menu expands or collapses when users choose the arrow on the left of the label\. You can customize the label's text\.
 
 1.  **Notifications** 
 

@@ -37,9 +37,9 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 
 | Function Name | Description | Parameters | Scriptable | 
 | --- | --- | --- | --- | 
-| Attach |  Changes the attachment target for an entity\. The entity will detach from its previous target\.  |  `targetEntityId` – ID of the entity in which to attach\. `targetBoneName` – Name of bone in which to attach the entity\. If a bone is not found, then attach to target entity's transform origin\. `offsetTransform` – Attachment's offset from target\.  | Yes | 
+| Attach |  Changes the attachment target for an entity\. The entity will detach from its previous target\.  |  `targetEntityId` - ID of the entity in which to attach\. `targetBoneName` - Name of bone in which to attach the entity\. If a bone is not found, then attach to target entity's transform origin\. `offsetTransform` - Attachment's offset from target\.  | Yes | 
 | Detach |  Detaches the target from the entity\.  | None | Yes | 
-| SetAttachmentOffset |  Update entity's offset from target\.  | offsetTransform – Attachment's offset from target\. | Yes | 
+| SetAttachmentOffset |  Update entity's offset from target\.  | offsetTransform - Attachment's offset from target\. | Yes | 
 
 ## EBus Notification Bus Interface {#component-attachment-legacy-ebusnotification}
 
@@ -52,5 +52,5 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 
 | Function Name | Description | Parameters | Scriptable | 
 | --- | --- | --- | --- | 
-| OnAttached |  Indicates that the entity has attached to the target\.  | targetEntityId – ID of the target in which is being attached\. | Yes | 
-| OnDetached |  Indicates that the entity is detaching from its target\.  |  `targetEntityId` – ID of the target in which is being detached\.  | Yes | 
+| OnAttached |  Indicates that the entity has attached to the target\.  | targetEntityId - ID of the target in which is being attached\. | Yes | 
+| OnDetached |  Indicates that the entity is detaching from its target\.  |  `targetEntityId` - ID of the target in which is being detached\.  | Yes | 

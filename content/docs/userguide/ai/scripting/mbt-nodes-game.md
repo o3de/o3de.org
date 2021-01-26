@@ -134,9 +134,9 @@ Before and after the node runs, the following Lua functions are called: `EnterSc
 
 On requesting animation tags, the node waits for the following animation events to be received \(this ensures that the transition blend animations are not interrupted\): 
 
-1. "ScorcherDeployed" – when the scorcher is ready to start firing
+1. "ScorcherDeployed" - when the scorcher is ready to start firing
 
-1. "ScorcherUndeployed" – when the scorcher is again ready to walk around
+1. "ScorcherUndeployed" - when the scorcher is again ready to walk around
 
 The node encapsulates the following child nodes: `RunWhileDeploying` and `RunWhileDeployed`, each of which can contain exactly one child node\.
 

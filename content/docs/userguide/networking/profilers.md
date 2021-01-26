@@ -31,16 +31,16 @@ The Profiler tool has a GridMate channel with **Carrier** and **Replica activity
 ![\[Carrier Profiler detail view\]](/images/userguide/profiler-network-gridmate-carrier-detail-view.png)
 
   This view uses all of the data supplied in the capture session to show an overview of the bandwidth usage through the GridMate carrier for the selected connection\. It includes the following information:
-  + **Total Sent/Total Received** – The total number of bytes sent and the total number of bytes received on the selected connection\.
+  + **Total Sent/Total Received** - The total number of bytes sent and the total number of bytes received on the selected connection\.
 
      
-  + **User Data Sent/User Data Received** – The user data sent and the user data received on the selected connection\. This data does not include the overhead associated with carrier or connection maintenance\.
+  + **User Data Sent/User Data Received** - The user data sent and the user data received on the selected connection\. This data does not include the overhead associated with carrier or connection maintenance\.
 
      
-  + **Packets Sent/Packets Received** – The number of packets sent and the number of packets received\. 
+  + **Packets Sent/Packets Received** - The number of packets sent and the number of packets received\. 
 
      
-  + **Return Trip Time \(Latency\)** – How many seconds the packets took to make a return trip\.
+  + **Return Trip Time \(Latency\)** - How many seconds the packets took to make a return trip\.
 
 ## Replica Activity Profiler {#network-profiler-replica-activity}
 
@@ -66,10 +66,10 @@ In replica view, the table shows how much data each replica used in a given fram
 ![\[Choosing replica view\]](/images/userguide/profiler-network-replica-activity-choose-replica-view.png)
 
   Each replica is represented by its associated color in the graphs above the toolbar\. Replica view includes the following information:
-  + ** Bytes Sent** – Shows bandwidth usage in bytes sent by the object for a particular frame\.
+  + ** Bytes Sent** - Shows bandwidth usage in bytes sent by the object for a particular frame\.
 
      
-  + **Bytes Received** – Shows bandwidth usage in bytes received by the object for a particular frame\.
+  + **Bytes Received** - Shows bandwidth usage in bytes received by the object for a particular frame\.
 
      
 
@@ -77,16 +77,16 @@ In replica view, the table shows how much data each replica used in a given fram
 + Double\-click the associated row in the tree\. 
 
   The toolbar also offers the following options: 
-  + **Hide All** – Hides the line graphs of all replicas in the table\.
+  + **Hide All** - Hides the line graphs of all replicas in the table\.
 
      
-  + **Show All** – Shows the line graphs for all replicas in the table\.
+  + **Show All** - Shows the line graphs for all replicas in the table\.
 
      
-  + **Hide Selected** and **Show Selected** – Use **Ctrl\+click** to select individual replicas in the table, and then click **Hide Selected** or **Show Selected** to hide or show the graphs for the replicas that you selected\.
+  + **Hide Selected** and **Show Selected** - Use **Ctrl\+click** to select individual replicas in the table, and then click **Hide Selected** or **Show Selected** to hide or show the graphs for the replicas that you selected\.
 
      
-  + **Display Range** – Determines the number of frames that are shown in the graph, with the currently selected frame in the center\. You can use this option to zoom in or out on the data\. 
+  + **Display Range** - Determines the number of frames that are shown in the graph, with the currently selected frame in the center\. You can use this option to zoom in or out on the data\. 
 
      
 
@@ -111,13 +111,13 @@ Click **Expand All** to list all replica chunks in all replicas, and every data 
   + Double\-click a row to display or hide the graph for the row\.
 
   The following information is available:
-  + **Display Name** – The debug name associated with the corresponding row of the table\.
+  + **Display Name** - The debug name associated with the corresponding row of the table\.
 
      
-  + **Sent Bytes** – The number of bytes sent for an item, including all information sent by children of the item\.
+  + **Sent Bytes** - The number of bytes sent for an item, including all information sent by children of the item\.
 
      
-  + **Received Bytes** – The number of bytes received by an item, including all information received by children of the item\.
+  + **Received Bytes** - The number of bytes received by an item, including all information received by children of the item\.
 
      
 

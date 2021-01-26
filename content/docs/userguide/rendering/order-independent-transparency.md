@@ -10,9 +10,9 @@ Order\-independent transparency \(OIT\) corrects the display of transparent obje
 ![\[OIT example animation for Amazon Lumberyard.\]](/images/shared/shared-OIT-example-animation.gif)
 
 OIT is useful when creating the following:
-+ Concave geometry – When you create concave geometry, such as a glass, wine glass, or glass sculpture, some triangles may cover the same pixels and are drawn on top of each other\. OIT solves the out\-of\-order issues that appear from certain angles\.
-+ Intersecting geometry – When you create intersecting geometry, such as hair planes, some triangles may intersect in separate draws\. OIT properly orders the triangles for each pixel\.
-+ Transparent objects inside transparent objects – This includes liquids inside of glasses, holograms, or x\-ray style effects\.
++ Concave geometry - When you create concave geometry, such as a glass, wine glass, or glass sculpture, some triangles may cover the same pixels and are drawn on top of each other\. OIT solves the out\-of\-order issues that appear from certain angles\.
++ Intersecting geometry - When you create intersecting geometry, such as hair planes, some triangles may intersect in separate draws\. OIT properly orders the triangles for each pixel\.
++ Transparent objects inside transparent objects - This includes liquids inside of glasses, holograms, or x\-ray style effects\.
 
 To further demonstrate, see the following images\.
 
@@ -30,7 +30,7 @@ You can configure OIT with the console or create a level configuration file with
 
 Specify the value for `r_AlphaBlendLayerCount` to the number of transparency layers that OIT can solve\. A value of 1 is sufficient to solve most out\-of\-order transparency issues\.
 
-Valid values: 0 – 4
+Valid values: 0 - 4
 
 0 = Disables OIT
 + Specify the value for the `r_AlphaBlendLayerCount` console variable

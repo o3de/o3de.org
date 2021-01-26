@@ -34,7 +34,7 @@ When events are generated from your game, the following occurs:
 
 1. Another Lambda function called the `amoeba_generator` is triggered every 20 minutes and aggregates all files in a single key path into a single file\. This process maximizes IO \(input/output\) performance when loading the files by the database\. AWS Glue crawlers crawl the data bucket and identify a common schema; this schema defines the tables for Athena to use\.
 
-1. The S3 files are made available to Athena for querying through AWS Glue\. AWS Glue updates Athena’s database schema every hour\. The S3 event data is partitioned \(or indexed\) by the hour\. This means the lowest level of granularity when using Athena partitions is by the hour\.
+1. The S3 files are made available to Athena for querying through AWS Glue\. AWS Glue updates Athena's database schema every hour\. The S3 event data is partitioned \(or indexed\) by the hour\. This means the lowest level of granularity when using Athena partitions is by the hour\.
 **Note**  
 Sending queries based on partitions can greatly reduce costs and improve query performance\. For more information, see [Partitioning Data](https://docs.aws.amazon.com/athena/latest/ug/partitions.html) in the *Amazon Athena User Guide*\.
 

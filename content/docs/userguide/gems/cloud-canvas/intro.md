@@ -50,13 +50,13 @@ For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas]
 ## Tools {#cloud-canvas-overview-tools}
 
  You can access Cloud Canvas functionality by using any of the following:
-+  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** – A web application that makes backend administration and management accessible to everyone\. 
-+  **Cloud Canvas C\+\+ APIs** – For software development\.
-+ **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** – For managing resource groups, mappings, deployments, and projects\. 
-+  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** – For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
++  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** - A web application that makes backend administration and management accessible to everyone\. 
++  **Cloud Canvas C\+\+ APIs** - For software development\.
++ **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** - For managing resource groups, mappings, deployments, and projects\. 
++  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** - For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
 
 ## Knowledge Prerequisites {#cloud-canvas-overview-prereq-knowledge}
 
 You need the following to take advantage of Cloud Canvas:
-+ **An understanding of [AWS CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)** – Cloud Canvas uses the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) service to create and manage AWS resources\. Our goal is for Cloud Canvas to minimize what you need to know about AWS CloudFormation and AWS in general\. 
-+ **Familiarity with [JSON](http://www.json.org/)** – Cloud Canvas leverages JSON for storing configuration data, including AWS CloudFormation Templates\. Currently, you'll need to be familiar with this text format to work with the Cloud Canvas resource management system\. A JSON tutorial can be found [here](http://www.w3resource.com/JSON/introduction.php)\. 
++ **An understanding of [AWS CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)** - Cloud Canvas uses the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) service to create and manage AWS resources\. Our goal is for Cloud Canvas to minimize what you need to know about AWS CloudFormation and AWS in general\. 
++ **Familiarity with [JSON](http://www.json.org/)** - Cloud Canvas leverages JSON for storing configuration data, including AWS CloudFormation Templates\. Currently, you'll need to be familiar with this text format to work with the Cloud Canvas resource management system\. A JSON tutorial can be found [here](http://www.w3resource.com/JSON/introduction.php)\. 

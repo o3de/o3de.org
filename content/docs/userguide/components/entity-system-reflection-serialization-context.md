@@ -150,8 +150,8 @@ public:
 ```
 
 A `SerializeContext::ClassElement` is a struct that uniquely identifies a serialized element of a class\. It includes fields like the following:
-+ `TypeId` – an ID for looking up data in `ClassData` within the `SerializeContext.`
-+ `Name`, `NameCrc` – The name and CRC with which the element is serialized\.
++ `TypeId` - an ID for looking up data in `ClassData` within the `SerializeContext.`
++ `Name`, `NameCrc` - The name and CRC with which the element is serialized\.
 + Element\-specific serialization attributes
 
 To look up the name of the `SerializeContext::ClassElement` that the data container supports, override the `GetElement` function, as in the following example\.
@@ -237,7 +237,7 @@ bool    CanAccessElementsByIndex() const override   { return false; }
 ```
 
 **Notes**
-+ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(\+\) and minus \(–\) buttons in the property editor can be used to add and remove elements from the data container\.
++ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(\+\) and minus \(-\) buttons in the property editor can be used to add and remove elements from the data container\.
 + When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container\.
 + When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements\. `CanAccessElementsByIndex` is true for fixed\-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements\.
 

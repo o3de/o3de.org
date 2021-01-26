@@ -104,9 +104,9 @@ Tags to which the SDK applies\. For example, to have the SDK run the game, add t
 
 **symlinks**  
 List of symlink dictionaries for all junctions \(symbolic links\) to establish between the `3rdParty` directory and the code base\. Each symlink uses the following form:  
-+ `source` – Source directory, relative to the `3rdParty` directory\.
-+ `destination` – Destination directory, relative to the SDK root\.
-+ `exampleFile` – File that is located in the source and destination folders and that validates the established link\.
++ `source` - Source directory, relative to the `3rdParty` directory\.
++ `destination` - Destination directory, relative to the SDK root\.
++ `exampleFile` - File that is located in the source and destination folders and that validates the established link\.
 
 ## Configuring Advanced Settings {#ll-customizing-configuring-advanced-settings}
 
@@ -132,7 +132,7 @@ If you use your own Maya tools in addition to the exporter and pipeline tools th
 
 For example configuration data, refer to the `SetupAssistantConfig.json.example` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\)\.
 
-In the following example, `$TOOLSFOLDER$` is a macro that is substituted with the appropriate tools directory\. However, you can also use relative paths, relative to the game project’s root directory that includes `Lumberyardroot.txt`:
+In the following example, `$TOOLSFOLDER$` is a macro that is substituted with the appropriate tools directory\. However, you can also use relative paths, relative to the game project's root directory that includes `Lumberyardroot.txt`:
 
 ```
 "MayaEnvironments" :
@@ -152,4 +152,4 @@ In the following example, `$TOOLSFOLDER$` is a macro that is substituted with th
 
 ## Updating the Code or Tools Location {#ll-customizing-updating-code-tools-location}
 
-If your project requires moving the Lumberyard code or tools directory so that it’s no longer located in a subfolder called `Code` or `Tools` relative to the Lumberyard root, you can edit the `SetupAssistantConfig.json` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to update the directory location\. Ensure the updated directory includes the `Lumberyardroot.txt` file\.
+If your project requires moving the Lumberyard code or tools directory so that it's no longer located in a subfolder called `Code` or `Tools` relative to the Lumberyard root, you can edit the `SetupAssistantConfig.json` file \(located in the `\lumberyard_version\dev\Tools\LmbrSetup` directory\) to update the directory location\. Ensure the updated directory includes the `Lumberyardroot.txt` file\.

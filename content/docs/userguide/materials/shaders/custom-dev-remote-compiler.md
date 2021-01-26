@@ -40,8 +40,8 @@ Ensure the server or computer that is running the remote shader compiler is in a
 ## Running the Remote Shader Compiler {#mat-shaders-custom-dev-remote-compiler-launch}
 
 You can find the remote shader compiler, **CrySCompileServer**, in the following directories:
-+ PC – `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\`
-+ Mac – `lumberyard_version\dev\Tools\CrySCompileServer\osx\profile\`
++ PC - `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\`
++ Mac - `lumberyard_version\dev\Tools\CrySCompileServer\osx\profile\`
 
 A [configuration file](#mat-shaders-custom-dev-remote-compiler-config) is also available for configuring the TCP port that the server application will listen on\.
 
@@ -95,7 +95,7 @@ You can use an allow list to specify the IP addresses that are allowed to connec
 
 1. Add the following parameter to the file\.
 
-   `white_list` – Provide a comma\-separated list of IP addresses in CIDR format\. The remote shader compiler uses this list to validate incoming connection requests\. The remote shader compiler automatically adds the loopback IP address \(127\.0\.0\.1\) and its own IP address\.
+   `white_list` - Provide a comma\-separated list of IP addresses in CIDR format\. The remote shader compiler uses this list to validate incoming connection requests\. The remote shader compiler automatically adds the loopback IP address \(127\.0\.0\.1\) and its own IP address\.
 **Note**  
 To specify multiple IP addresses, specify a comma\-delineated list\. Do not include white space or empty lines\.
 
@@ -126,8 +126,8 @@ Lumberyard provides all appropriate shader compilers for you that match the code
 The remote shader compiler contains different text files of all the combinations requested so far by the game\. These files are important as the shader `.pak` files cannot be generated without them
 
 The shader cache list files are located in the following directories:
-+ PC – `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\Cache\project_name\platform-compiler-shader_language`
-+ Mac – `lumberyard_version\dev\Tools\CrySCompileServer\osx\profile\Cache\project_name\platform-compiler-shader_language`
++ PC - `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile\Cache\project_name\platform-compiler-shader_language`
++ Mac - `lumberyard_version\dev\Tools\CrySCompileServer\osx\profile\Cache\project_name\platform-compiler-shader_language`
 
 Where:
 + *platform* = `PC`, `Mac`, `iOS`, or `Android`

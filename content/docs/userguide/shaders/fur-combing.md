@@ -16,5 +16,5 @@ For example, a material might have a vertex color of `1`, `0.5`, `0.5`, `0.25` \
 Lumberyard provides shaders for [Maya](/docs/userguide/shaders/fur-previzmaya.md) and [3DSMax](/docs/userguide/shaders/fur-previz3dsmax.md)\. These shaders simplify the process of specifying the vertex color data on your mesh\. 
 
 For information on how to use these shaders, see the following topics:
-+ [Maya – Fur Previsualization](/docs/userguide/shaders/fur-previzmaya.md)
-+ [3DSMax – Fur Previsualization](/docs/userguide/shaders/fur-previz3dsmax.md)
++ [Maya - Fur Previsualization](/docs/userguide/shaders/fur-previzmaya.md)
++ [3DSMax - Fur Previsualization](/docs/userguide/shaders/fur-previz3dsmax.md)

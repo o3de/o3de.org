@@ -34,4 +34,4 @@ If you use the **[Set Material](/docs/userguide/materials/owner-set-material.md)
 | Pin | Type | Description | 
 | --- | --- | --- | 
 | Out | Event | Sends when the node is finished\. | 
-| Material | Material | The entity’s current material\. | 
+| Material | Material | The entity's current material\. | 

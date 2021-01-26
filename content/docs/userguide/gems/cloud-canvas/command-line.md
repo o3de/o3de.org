@@ -36,23 +36,23 @@ As with the AWS command line tools, the default AWS configuration can be overrid
 ### Configuration Arguments {#cloud-canvas-command-line-configuration-override}
 
 The following arguments can be used to override the AWS configuration from all other sources:
-+ `--assume-role{role-name}` or `-R {role-name}` – Specifies the IAM role to assume to perform the requested actions\. The credentials in the `~/.aws/credentials` file must be able to assume the specified role\.
-+ `--aws-access-key {access-key}` – The AWS access key that is used\.
-+ `--aws-secret-key {secret-key}` – The AWS secret key that is used\.
-+ `--profile {profile-name}` or `-P {profile-name}` – The AWS command line tool profile that is used\.
++ `--assume-role{role-name}` or `-R {role-name}` - Specifies the IAM role to assume to perform the requested actions\. The credentials in the `~/.aws/credentials` file must be able to assume the specified role\.
++ `--aws-access-key {access-key}` - The AWS access key that is used\.
++ `--aws-secret-key {secret-key}` - The AWS secret key that is used\.
++ `--profile {profile-name}` or `-P {profile-name}` - The AWS command line tool profile that is used\.
 
 ## Common Arguments {#cloud-canvas-command-line-common-arguments}
 
 Most of the `lmbr_aws` commands accept the following arguments, in addition to their own individual arguments:
-+ `--aws-directory {aws}` – Identifies the `{game}\AWS` directory to use\. The default is the value of the `sys_game_folder` property from `{root}\bootstrap.cfg` with `AWS` appended\.
-+ `--game-directory {directory}` – Location of the game project directory\. The default is `{root}\{game}` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
-+ `--help` or `-h` – Display help for the command\.
-+ `--no-prompt` – Suppresses calls that request input from the command prompt window\.
-+ `--region-override {AWS_region}` – Specify a non\-default AWS region to use in your `local-project-settings.json` file\. 
++ `--aws-directory {aws}` - Identifies the `{game}\AWS` directory to use\. The default is the value of the `sys_game_folder` property from `{root}\bootstrap.cfg` with `AWS` appended\.
++ `--game-directory {directory}` - Location of the game project directory\. The default is `{root}\{game}` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
++ `--help` or `-h` - Display help for the command\.
++ `--no-prompt` - Suppresses calls that request input from the command prompt window\.
++ `--region-override {AWS_region}` - Specify a non\-default AWS region to use in your `local-project-settings.json` file\. 
 
-  `--root-directory {root}` – Identifies the *lumberyard\_installation*`\dev` directory\. The default is the current working directory\.
-+ `--user-directory {user}` – Location of the user cache directory\. The default is `{root}\Cache\{game}\AWS` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
-+ `--verbose` – Shows additional output when executing commands\.
+  `--root-directory {root}` - Identifies the *lumberyard\_installation*`\dev` directory\. The default is the current working directory\.
++ `--user-directory {user}` - Location of the user cache directory\. The default is `{root}\Cache\{game}\AWS` where *\{game\}* is determined by the `sys_game_folder` setting in the `{root}\bootstrap.cfg` file\. 
++ `--verbose` - Shows additional output when executing commands\.
 
 ## Commands {#cloud-canvas-command-line-commands}
 

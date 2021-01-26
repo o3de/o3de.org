@@ -7,7 +7,7 @@ title: Lumberyard UI styled dock widget
 
 Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in Lumberyard called "fancy docking", which provides users with a variety of options for arranging their window layout\.
 
-Fancy docking provides four docking drop zones around the edge of a target, and one in the center that’s used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing Lumberyard Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-customizing.html)\.
+Fancy docking provides four docking drop zones around the edge of a target, and one in the center that's used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing Lumberyard Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-customizing.html)\.
 
 ![\[component fancy docking editor\]](/images/tools-ui/component-fancy-docking-editor.gif)
 

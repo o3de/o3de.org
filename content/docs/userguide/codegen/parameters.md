@@ -87,7 +87,7 @@ Usage: `AzCodeGenerator.exe [options]`
 | \-noscripts | General | Disables the running of code generation scripts\. | 
 | \-OnlyRunDiagnosticsOnMainFile | Clang compilation | Runs diagnostics \(error and warning checking\) only on the main file that is compiled\. Ignores errors and warnings from all other files\. | 
 | \-output\-path=<string> | Code parsing | \(Required\) The absolute path to the output folder\. | 
-| \-output\-redirection | Output |  Redirects output and error messages from Clang and Python internal utilities\. Options: `=none` – No output redirection\. Clang and Python output to `stdout` and `stderr`\. `=null` – Redirect Clang and Python to null, effectively suppressing output\. `=file` – Redirect Clang and Python to disk\. Use `redirect-output-file` to specify the path\.   | 
+| \-output\-redirection | Output |  Redirects output and error messages from Clang and Python internal utilities\. Options: `=none` - No output redirection\. Clang and Python output to `stdout` and `stderr`\. `=null` - Redirect Clang and Python to null, effectively suppressing output\. `=file` - Redirect Clang and Python to disk\. Use `redirect-output-file` to specify the path\.   | 
 | \-output\-using\-json | Output | Outputs using JSON objects instead of plain text\. Use this option to ease parsing for calling applications\. | 
 | \-print\-all\-options | General | Prints all option values after command line parsing\. | 
 | \-print\-options | General | Prints nondefault options after command line parsing\. | 

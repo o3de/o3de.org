@@ -63,7 +63,7 @@ Yes
 Runs the specified audio trigger\.
 
 **Parameters**  
-`triggerName` – Name of the audio trigger to run\.
+`triggerName` - Name of the audio trigger to run\.
 
 **Return**  
 None
@@ -76,7 +76,7 @@ Yes
 Cancels the specified audio trigger\.
 
 **Parameters**  
-`triggerName` – Name of the audio trigger to cancel\.
+`triggerName` - Name of the audio trigger to cancel\.
 
 **Return**  
 None
@@ -102,7 +102,7 @@ Yes
 Specifies whether triggers should update position as the entity moves\.
 
 **Parameters**  
-`shouldTrackEntity` – Boolean indicating whether triggers should track the entity's position\.
+`shouldTrackEntity` - Boolean indicating whether triggers should track the entity's position\.
 
 **Return**  
 None
@@ -121,7 +121,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Informs all listeners about an audio trigger that has finished playing \(the sound has ended\)\.
 
 **Parameters**  
-`triggerId` – ID of trigger that was successfully executed\.
+`triggerId` - ID of trigger that was successfully executed\.
 
 **Return**  
 None

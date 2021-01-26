@@ -24,10 +24,10 @@ You open the **Sprite Editor** from the **Image** component's properties\.
 The **Sprite Editor** has the following features:
 
 ![\[Sprite Editor UI.\]](/images/userguide/game_ui_editor/ui-editor-sprite-editor-2.png)
-+ **Sprite viewport** – Displays sprite image\.
-+ **Border manipulators** – Sets border properties for sliced image types\. To adjust the borders, drag the dotted lines, which are called manipulator positions\. Changing these positions updates the corresponding **Border Properties** values\.
++ **Sprite viewport** - Displays sprite image\.
++ **Border manipulators** - Sets border properties for sliced image types\. To adjust the borders, drag the dotted lines, which are called manipulator positions\. Changing these positions updates the corresponding **Border Properties** values\.
 + **Properties**
-  + **Image resolution** – The size of the image\.
-  + **Alias** – A short description of what the cell represents\. Use this setting to improve the readability of sprite\-sheet index values\. You can use the same alias string for multiple sprite sheet cells\.
-  + **Top**, **Bottom**, **Left**, **Right** – The number of pixels from the respective edge of the image where the sliced region is situated\.
-+ **Configure Spritesheet** – Available only for sprites that are not currently configured as a sprite sheet\. For more information, see [Configuring Sprite Sheets](/docs/userguide/ui/editor/component-sprite-sheets.md)\.
+  + **Image resolution** - The size of the image\.
+  + **Alias** - A short description of what the cell represents\. Use this setting to improve the readability of sprite\-sheet index values\. You can use the same alias string for multiple sprite sheet cells\.
+  + **Top**, **Bottom**, **Left**, **Right** - The number of pixels from the respective edge of the image where the sliced region is situated\.
++ **Configure Spritesheet** - Available only for sprites that are not currently configured as a sprite sheet\. For more information, see [Configuring Sprite Sheets](/docs/userguide/ui/editor/component-sprite-sheets.md)\.

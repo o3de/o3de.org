@@ -7,7 +7,7 @@ title: Importing a Terrain Heightmap
 
 In order to support full, 32\-bit heightmap resolution, use one of the following file formats when you import a heightmap file\.
 + `.asc`
-+ `.bt` \(binary terrain\) – Highest precision
++ `.bt` \(binary terrain\) - Highest precision
 + `.tif` \(32\-bit\)
 
 The following file formats are supported but not recommended\. These file formats are imported in 16\-bit or 8\-bit resolution\. We recommend using a minimum of 16\-bit resolution for heightmaps, as 8\-bit resolution can cause blocky\-looking terrain\. 

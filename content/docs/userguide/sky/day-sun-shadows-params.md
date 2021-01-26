@@ -14,5 +14,5 @@ You can define how sun shadows appear in your level\.
 1. Choose **Environment**\.
 
 1. Under **EnvState**, adjust the following parameters as needed:
-   + **Sun shadows min spec** – Specifies the minimum system specification for casting sun shadows\.
-   + **Sun shadows additional cascade min spec** – Specifies the minimum system specification for rendering an additional sun shadow cascade at a larger viewing distance\.
+   + **Sun shadows min spec** - Specifies the minimum system specification for casting sun shadows\.
+   + **Sun shadows additional cascade min spec** - Specifies the minimum system specification for rendering an additional sun shadow cascade at a larger viewing distance\.

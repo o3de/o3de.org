@@ -71,11 +71,11 @@ lmbr_waf build_platform_configuration -p spec
 ```
 
 The following commands and options are available:
-+ configure – Must be run before any clean or build command\. Loads all modules, configs, and project specs; validates and sets up the working cached build Python file\.
-+ build\_\* – Builds the specified project spec for the specified platform and configuration\.
-+ package\_\* – Creates a runnable package of the specified project spec for the specified platform and configuration for supported platforms\. Supported operating systems and devices include Android, iOS, and macOS\.
-+ deploy\_\* – Deploys the specified project spec for the specified platform and configuration to a remote device for supported platforms\. Supported operating systems and devices include Android\.
-+ clean\_\* – Cleans out intermediate and target files that were generated for the particular platform and configuration\.
++ configure - Must be run before any clean or build command\. Loads all modules, configs, and project specs; validates and sets up the working cached build Python file\.
++ build\_\* - Builds the specified project spec for the specified platform and configuration\.
++ package\_\* - Creates a runnable package of the specified project spec for the specified platform and configuration for supported platforms\. Supported operating systems and devices include Android, iOS, and macOS\.
++ deploy\_\* - Deploys the specified project spec for the specified platform and configuration to a remote device for supported platforms\. Supported operating systems and devices include Android\.
++ clean\_\* - Cleans out intermediate and target files that were generated for the particular platform and configuration\.
 
 The following example shows how to build release for Windows x64 with Visual Studio 2017: 
 
@@ -101,10 +101,10 @@ Only modules that support each project configuration are built from the project 
 
 | Configuration | Asserts | Profiling | Optimization | Logging | Description | 
 | --- | --- | --- | --- | --- | --- | 
-| debug | Yes | All | Minimum | Yes | Slowest – Focuses on debugging with asserts enabled, all profiling features enabled, and logging enabled\. | 
-| profile | No | All | Medium | Yes | Fast – Strikes a balance between debugging and performance with all profiling features and logging enabled\. | 
-| performance | No | Few | Maximum | No | Very fast – Performance similar to release but has some profiling features enabled; difficult to debug; no logging\. | 
-| release | No | None | Maximum | No | Fastest – Highest performance; most difficult to debug; no profiling features; no logging\. | 
+| debug | Yes | All | Minimum | Yes | Slowest - Focuses on debugging with asserts enabled, all profiling features enabled, and logging enabled\. | 
+| profile | No | All | Medium | Yes | Fast - Strikes a balance between debugging and performance with all profiling features and logging enabled\. | 
+| performance | No | Few | Maximum | No | Very fast - Performance similar to release but has some profiling features enabled; difficult to debug; no logging\. | 
+| release | No | None | Maximum | No | Fastest - Highest performance; most difficult to debug; no profiling features; no logging\. | 
 
 
 **Build command project spec options**  

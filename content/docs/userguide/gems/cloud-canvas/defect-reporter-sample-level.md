@@ -53,16 +53,16 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 
    The Defect Report Editor has the following fields:
 
-   1. **Metrics Data** – Shows the data that was collected automatically\. Use the scroll bar to see more data\.
+   1. **Metrics Data** - Shows the data that was collected automatically\. Use the scroll bar to see more data\.
 
-   1. **Attachments** – Lists the attachments that were captured as part of the data gathering process\.
+   1. **Attachments** - Lists the attachments that were captured as part of the data gathering process\.
 
-   1. **Custom Field** – Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
+   1. **Custom Field** - Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
 
-   1. **Error Message** – A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.  
+   1. **Error Message** - A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.  
 ![\[Box for contextual information about the error in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-5.png)
 
-   1.  **Screenshot** – Shows a screenshot of the level at the time that the error occurred\. 
+   1.  **Screenshot** - Shows a screenshot of the level at the time that the error occurred\. 
 
 1. To switch reports, click the navigation arrows at the bottom of the editor\.  
 ![\[Navigation arrows in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-6.png)
@@ -70,13 +70,13 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 1. To manage the reports, use the buttons under the screenshot\.  
 ![\[Deleting a report in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-7.png)
 
-   1. **Delete** – Deletes the report\.
+   1. **Delete** - Deletes the report\.
 
-   1. **Cancel** – Closes the report editor\. If you reopen the editor, you can continue editing any reports that you have not yet submitted\.
+   1. **Cancel** - Closes the report editor\. If you reopen the editor, you can continue editing any reports that you have not yet submitted\.
 
-   1. **Submit** – Submits the report that is currently displayed in the editor\.
+   1. **Submit** - Submits the report that is currently displayed in the editor\.
 
-   1. **Submit All** – Submits all reports in the editor\.
+   1. **Submit All** - Submits all reports in the editor\.
 
 1. For this tutorial, click **Submit All** to submit the reports that you generated\.
 

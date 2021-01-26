@@ -28,7 +28,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Sets the specified state of the default switch\.
 
 **Parameters**  
-`stateName` – Name of the state to set
+`stateName` - Name of the state to set
 
 **Return**  
 None
@@ -41,8 +41,8 @@ Yes
 Sets a specified switch to a specified state\.
 
 **Parameters**  
-`switchName` – Name of the switch to set  
-`stateName` – Name of the state to set
+`switchName` - Name of the switch to set  
+`stateName` - Name of the state to set
 
 **Return**  
 None

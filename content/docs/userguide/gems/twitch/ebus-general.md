@@ -72,8 +72,8 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.UserIDNotify Callback
 
 **StringValue\-userID**  
-Value – The user ID, which returns in the format `AZStd::string`\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The user ID, which returns in the format `AZStd::string`\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestOAuthToken {#twitch-api-ebus-general-requestoauthtoken}
 
@@ -110,8 +110,8 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.OAuthTokenNotify Callback
 
 **token \- ResultCode**  
-Value – The OAuth token, which returns in the format `AZStd::string`\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The OAuth token, which returns in the format `AZStd::string`\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestEntitlement {#twitch-api-ebus-general-requestentitlement}
 
@@ -148,8 +148,8 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.EntitlementNotify Callback
 
 **entitlement \- ResultCode**  
-Value – The entitlement ID, which may contain numbers, letters, and a hyphen\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The entitlement ID, which may contain numbers, letters, and a hyphen\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestProductCatalog {#twitch-api-ebus-general-requestproductcatalog}
 
@@ -203,19 +203,19 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.RequestProductCatalog Callback
 
 **productData \- ProductDataReturnValue**  
-Value – The product list, which includes the following data:  
+Value - The product list, which includes the following data:  
 
 **ProductList \(ProductInfoList\)**
-+ Sku \(FuelSku\) – The item's SKU, which is a unique ID similar to a GUID\.
-+ Description – The item's description, which returns in the format `AZStd::string`\.
-+ Price – The item's price based on the billing locale\. The value returns in the format `AZStd::string`\.
-+ SmallIconUrl – The URL of the item's icon, which returns in the format `AZStd::string`\.
-+ Title – The title of the item, which returns in the format `AZStd::string`\.
-+ ProductType \(FuelProductType\) – One of the product types that defines the item\.
++ Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.
++ Description - The item's description, which returns in the format `AZStd::string`\.
++ Price - The item's price based on the billing locale\. The value returns in the format `AZStd::string`\.
++ SmallIconUrl - The URL of the item's icon, which returns in the format `AZStd::string`\.
++ Title - The title of the item, which returns in the format `AZStd::string`\.
++ ProductType \(FuelProductType\) - One of the product types that defines the item\.
 
 **UnavailableSkus \(FuelSkuList\)**
 + A list of SKUs that are attached to the product\. The SKUs are not available to customers\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## PurchaseProduct {#twitch-api-ebus-general-purchaseproduct}
 
@@ -259,13 +259,13 @@ The SKU to purchase, which returns in the format `Twitch::FuelSku`\.
 No return value\.PurchaseProduct Callback
 
 **purchaseReceipt \- PurchaseReceiptReturnValue**  
-Value – The purchase receipt, which includes the following data:  
-+ Sku \(FuelSku\) – The item's SKU, which is a unique ID similar to a GUID\.
-+ ReceiptId – The item's purchase ID, which returns in the format `AZStd::string`\.
-+ PurchaseDate – The Linux serial date when the purchase was made\. The value returns in the format `AZ::u64`\.
-+ CancelDate – The Linux serial date when the purchase was canceled\. The value returns in the format `AZ::u64`\.
-+ Type \(FuelProductType\) – One of the product types that defines the item\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The purchase receipt, which includes the following data:  
++ Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.
++ ReceiptId - The item's purchase ID, which returns in the format `AZStd::string`\.
++ PurchaseDate - The Linux serial date when the purchase was made\. The value returns in the format `AZ::u64`\.
++ CancelDate - The Linux serial date when the purchase was canceled\. The value returns in the format `AZ::u64`\.
++ Type \(FuelProductType\) - One of the product types that defines the item\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetPurchaseUpdates {#twitch-api-ebus-general-getpurchaseupdates}
 
@@ -316,12 +316,12 @@ The sync token, which returns in the format `AZStd::string`\.
 No return value\.PurchaseProduct Callback
 
 **purchaseReceipt \- PurchaseReceiptReturnValue**  
-Value – The purchase update, which includes the following data:  
-+ SyncToken – An opaque string that you can use in your request when calling `GetPurchaseUpdates`\. The value returns in the format `AZStd::string`\.
-+ Products – The purchase receipt list, which includes the following data:
-  + Sku \(FuelSku\) – The item's SKU, which is a unique ID similar to a GUID\.
-  + ReceiptId – The item's purchase ID, which returns in the format `AZStd::string`\.
-  + PurchaseDate – The Linux serial date when the purchase was made\. The value returns in the format `AZ::u64`\.
-  + CancelDate – The Linux serial date when the purchase was canceled\. The value returns in the format `AZ::u64`\.
-  + Type \(FuelProductType\) – One of the product types that defines the item\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The purchase update, which includes the following data:  
++ SyncToken - An opaque string that you can use in your request when calling `GetPurchaseUpdates`\. The value returns in the format `AZStd::string`\.
++ Products - The purchase receipt list, which includes the following data:
+  + Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.
+  + ReceiptId - The item's purchase ID, which returns in the format `AZStd::string`\.
+  + PurchaseDate - The Linux serial date when the purchase was made\. The value returns in the format `AZ::u64`\.
+  + CancelDate - The Linux serial date when the purchase was canceled\. The value returns in the format `AZ::u64`\.
+  + Type \(FuelProductType\) - One of the product types that defines the item\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

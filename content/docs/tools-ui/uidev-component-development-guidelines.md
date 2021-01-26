@@ -15,13 +15,13 @@ In Qt Style Sheets, the `AzQtComponents` module has a `StyleManager` class, whic
 
 The StyleManager class is pre\-loaded with a series of base style sheets, starting with `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/BaseStyleSheet.qss`\.
 
-This style sheet applies custom styling for each individual widget, each of which is separated into files such as “`CheckBox.qss`” and “`PushButton.qss`”\. This styling is applied down through the entire widget hierarchy, starting from the top application layer\. Additional custom style sheets can be applied at lower levels \(such as in your own custom tool\) that affect only that widget and any of its children\.
+This style sheet applies custom styling for each individual widget, each of which is separated into files such as "`CheckBox.qss`" and "`PushButton.qss`"\. This styling is applied down through the entire widget hierarchy, starting from the top application layer\. Additional custom style sheets can be applied at lower levels \(such as in your own custom tool\) that affect only that widget and any of its children\.
 
 ## Get started with UI component development<a name="uidev-get-started"></a>
 
 Depending on your tools and existing code, accessing the new library of components might require some initial setup\.
 
-If your tool is part of the core Lumberyard Editor or is part of a gem, and uses the Lumberyard Editor’s Qt Application, you’re already set up and ready to go\. Just include the header for the component that you need to use from the `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/` folder\. If Visual Studio is raising errors, make sure `AzQtComponents` is listed in the `use` and `include` sections in the `wscript` file, as shown in the following example\.
+If your tool is part of the core Lumberyard Editor or is part of a gem, and uses the Lumberyard Editor's Qt Application, you're already set up and ready to go\. Just include the header for the component that you need to use from the `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/` folder\. If Visual Studio is raising errors, make sure `AzQtComponents` is listed in the `use` and `include` sections in the `wscript` file, as shown in the following example\.
 
 ```
 def build(bld):
@@ -67,7 +67,7 @@ Writing code to extend the core Lumberyard Editor? Here are some high level sugg
 + The Editor now supports vector file formats for icons, which prevents them from appearing blurry or pixelated on high DPI displays\. Make sure to use SVG files for your icons, and replace old PNGs and JPGs with vector graphics images in existing tools if possible\.
 + When using a custom icon not provided by Lumberyard, the icon should be a multiple of 16 x 16\.
 + Moving forward, we want to make sure the user experience is cohesive and familiar throughout the whole Lumberyard Editor\. You should avoid making one\-off custom changes; and when you add new features, add them to the library so that they are available to the whole Editor instead of just a single tool\.
-+ Avoid subclassing or encapsulating the widgets from the component library\. If you need some specific behavior, check our resources to verify if it’s already available in the component library via specific settings\.
++ Avoid subclassing or encapsulating the widgets from the component library\. If you need some specific behavior, check our resources to verify if it's already available in the component library via specific settings\.
 
 ## Frequently asked questions<a name="uidev-faq"></a>
 

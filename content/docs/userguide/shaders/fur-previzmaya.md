@@ -2,7 +2,7 @@
 description: ' Use the Maya fur previsualization in &ALYlong;. '
 title: Maya &endash; Fur Previsualization
 ---
-# Maya – Fur Previsualization {#shader-ref-fur-previzmaya}
+# Maya - Fur Previsualization {#shader-ref-fur-previzmaya}
 
 ![\[Example Maya fur visualization.\]](/images/userguide/shaders/shader-ref-fur-14.png)
 
@@ -31,7 +31,7 @@ If the **Property Editor** is not visible, navigate to **Windows**, **Property E
 1. Navigate to your Lumberyard install folder, and then select `dev\Tools\Maya\fx\Fur.cgfx`\.
 
 1. In the **Fur\.cgfx Parameters** section, specify the following, at a minimum:
-   + **Enable Fur Combing** \(disabled/unselected if you haven’t prepared your mesh with vertex colors for fur combing\)
+   + **Enable Fur Combing** \(disabled/unselected if you haven't prepared your mesh with vertex colors for fur combing\)
    + **Use Base Fur Diffuse Map** \(selected/enabled\)
    + **ColorSampler**
    + **FurHeightmapSampler**  

@@ -9,9 +9,9 @@ After you build and package your Lumberyard game, you want to frequently verify 
 When you identify a potential missing asset, you want to include it so that the asset is no longer missing in your next bundled game package\.
 
 An asset that is missing from a bundle might be one of the following:
-+ **A missing product dependency** – An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/userguide/assets/bundle/list-operations.md)\.
-+ **A hardcoded file load** – Assets loaded by path or by asset ID in C\+\+\.
-+ **A false positive** – The asset appeared to be missing from a bundle, but is not actually used\. For example, you might have an editor\-only asset that appears to be missing that is never loaded or used in your game’s launcher\.
++ **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/userguide/assets/bundle/list-operations.md)\.
++ **A hardcoded file load** - Assets loaded by path or by asset ID in C\+\+\.
++ **A false positive** - The asset appeared to be missing from a bundle, but is not actually used\. For example, you might have an editor\-only asset that appears to be missing that is never loaded or used in your game's launcher\.
 
 To resolve the missing asset, check each of these possibilities in turn\.
 
@@ -69,9 +69,9 @@ For more information, see [Finding the Asset Reference](#asset-bundler-assets-re
 ### Resolving the Missing Asset {#asset-bundler-assets-resolving-the-missing-asset}
 
 To resolve the missing asset from a hardcoded file load, try the following options:
-+ **Remove the hardcoded load** – By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain\.
-+ **Add as seed** – If you can't or don't want to replace the hard\-coded asset load, you can add the referenced file as a seed to your game's seed list\. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes\. For information about adding the referenced file as a seed to your game's seed list, see the [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/userguide/assets/bundle/command-line-reference.md)\.
-+ **Use the Wildcard Dependency System** – If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file\. This technique is explained in the following section\.
++ **Remove the hardcoded load** - By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain\.
++ **Add as seed** - If you can't or don't want to replace the hard\-coded asset load, you can add the referenced file as a seed to your game's seed list\. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes\. For information about adding the referenced file as a seed to your game's seed list, see the [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/userguide/assets/bundle/command-line-reference.md)\.
++ **Use the Wildcard Dependency System** - If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file\. This technique is explained in the following section\.
 
 #### Using the Wildcard Dependency System to Resolve Path Loads {#asset-bundler-assets-resolving-path-loads}
 

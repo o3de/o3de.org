@@ -18,17 +18,17 @@ The paths to the source files specified in a `.waf_files` file are relative to t
 ## File Structure {#waf-files-filelist-structure}
 
 A `.waf_files` file is organized into three levels:
-+ **Level 1 – Uber file grouping**
++ **Level 1 - Uber file grouping**
 
   When uber files are enabled for the build, Waf uses this dictionary of uber file name keys to generate the uber files\. The uber files combine the files specified in the group\. Because uber files are relevant only for C\+\+ source, the names of the uber files must have a C\+\+ source file extension \(for example, `.cpp` or `.cc`\) and must be unique within the list\.
 
   Level 1 key names can also include the following special key words:
-  + **none** – Files under the `none` grouping are not combined into any uber file, even if uber mode is enabled\.
-  + **auto** – Files are combined automatically into uber files based on a set uber file size limit\.
-+ **Level 2 – Visual Studio filter specification**
+  + **none** - Files under the `none` grouping are not combined into any uber file, even if uber mode is enabled\.
+  + **auto** - Files are combined automatically into uber files based on a set uber file size limit\.
++ **Level 2 - Visual Studio filter specification**
 
   The key names for this dictionary represent the directory filters in the generated Visual Studio projects from Waf\. The name supports a path\-like definition that uses '/' delimiters that you can use to specify directory structures for the filter\. If the source files are intended to reside in the root level of the project in Visual Studio, the reserved key name `Root` is used\.
-+ **Level 3 – List of source files**
++ **Level 3 - List of source files**
 
   The list of source files relative to the location of the `.waf_files` file to be listed under the Visual Studio filter key name\. Waf file lists also support file globbing\. For more information, see the File Globbing section in this topic\.
 
@@ -130,10 +130,10 @@ You can create some custom globbing rules by specifying a dictionary for the glo
 ```
 
 Dictionary specifications support the following keys:
-+ **pattern** – \(Required\) The globbing pattern to apply to the search\.
-+ **excl** – An exclusion pattern to filter out of the results\.
-+ **maxdepth** – For a recursive search, limit the depth of the search\.
-+ **ignorecase** – Ignore case when using the globbing pattern\.
++ **pattern** - \(Required\) The globbing pattern to apply to the search\.
++ **excl** - An exclusion pattern to filter out of the results\.
++ **maxdepth** - For a recursive search, limit the depth of the search\.
++ **ignorecase** - Ignore case when using the globbing pattern\.
 
 ### Globbing at Configure Time and Build Time {#waf-files-filelist-file-globbing-at-configure-time-and-build-time}
 

@@ -9,8 +9,8 @@ The Cloud Canvas Resource Manager ensures that the AWS resources that the game u
 The resource manager provides some Python hook modules for cloud gems\. The code for these modules is located in the `resource-manager-code` directory found in the cloud gem's AWS directory \(for example, `\dev\Gems\CloudGemDynamicContent\AWS\resource-manager-code`\)\.
 
 The following modules are supported:
-+ `update.py` – Contains functions that are called before and after stack update operations\. For more information, see [Update Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-update-hook-functions)\.
-+ `command.py` – Contains functions that add new CLI and GUI support to the resource manager\. For more information, see [Command Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-command-hook-functions)\.
++ `update.py` - Contains functions that are called before and after stack update operations\. For more information, see [Update Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-update-hook-functions)\.
++ `command.py` - Contains functions that add new CLI and GUI support to the resource manager\. For more information, see [Command Hook Functions](#cloud-canvas-cloud-gem-framework-ccrm-hooks-command-hook-functions)\.
 
 ## Hook Function Parameters {#cloud-canvas-cloud-gem-framework-ccrm-hooks-function-parameters}
 
@@ -150,7 +150,7 @@ You can get a `ConfigContext` object instance from the `config` property of a `C
 | project\_code\_path | The path to the project's project\-code directory\. | 
 | project\_default\_deployment | The name of the deployment that has been designated as the default for the project, if any\. See also user\_default\_deployment and default\_deployment\. | 
 | project\_initialized | True if the project has been initialized and project\_stack\_id has a value; False otherwise\. | 
-| project\_resource\_handler\_id | The ARN of the ProjectResourceHandler Lambda function\. Cloud Canvas–defined resource templates require that this value be provided as the ProjectResourceHandler parameter value\. | 
+| project\_resource\_handler\_id | The ARN of the ProjectResourceHandler Lambda function\. Cloud Canvas-defined resource templates require that this value be provided as the ProjectResourceHandler parameter value\. | 
 | project\_settings | A ProjectSettings object that contains project settings that are loaded from AWS \(as opposed to the content of local\_project\_settings\)\. | 
 | project\_stack\_id | The project stack ID, if the project stack has been created\. | 
 | project\_template | A Python object that contains the content of the project template file\. | 
@@ -269,11 +269,11 @@ The `ProjectSettings` object manages the project configuration data that is stor
 
 | Name | Description | 
 | --- | --- | 
-| get\_deployment\(deployment\_name\) |  Returns the configuration dictionary for the specified deployment\. The dictionary contains the following keys: `DeploymentStackId` – The ARN of the deployment stack\. `DeploymentAccessStackId` – The ARN of the deployment access stack\. `resource-group` – The resource group configuration dictionary for the deployment\. For a description of this value, see `get_resource_group_settings`\.  | 
+| get\_deployment\(deployment\_name\) |  Returns the configuration dictionary for the specified deployment\. The dictionary contains the following keys: `DeploymentStackId` - The ARN of the deployment stack\. `DeploymentAccessStackId` - The ARN of the deployment access stack\. `resource-group` - The resource group configuration dictionary for the deployment\. For a description of this value, see `get_resource_group_settings`\.  | 
 | get\_deployments\(\) | Returns the entire configuration dictionary for deployments\. The deployment name is the key\. The special deployment name \*, which contains settings for all deployments, can be present\. For a description of the value dictionary, see get\_deployment\. | 
 | get\_project\_default\_deployment\(\) | Returns the default deployment for the project\. | 
 | get\_release\_deployment\(\) | Returns the release deployment for the project\. | 
-| get\_resource\_group\_settings\(deployment\_name\) |  Returns a dictionary containing the resource group configuration for the specified deployment\. The resource group name is the key\. The special resource group name `*`, which contains settings for all resource groups, can be present\. Each value is a dictionary with the following key: `parameter` – A dictionary containing parameter values for the resource group template\.  | 
+| get\_resource\_group\_settings\(deployment\_name\) |  Returns a dictionary containing the resource group configuration for the specified deployment\. The resource group name is the key\. The special resource group name `*`, which contains settings for all resource groups, can be present\. Each value is a dictionary with the following key: `parameter` - A dictionary containing parameter values for the resource group template\.  | 
 | remove\_deployment\(deployment\_name\) | Removes the configuration for the specified deployment name\. To commit this change, call save\. | 
 | remove\_project\_default\_deployment\(\) | Clears the default deployment for the project\. To commit this change, call save\. | 
 | remove\_release\_deployment\(\) | Clears the release deployment for the project\. To commit this change, call save\. | 
@@ -457,7 +457,7 @@ Adds additional commands to the command line parser\. Called before command line
 | Parameter | Description | 
 | --- | --- | 
 | subparsers | The subparser collection object returned by the argparse add\_subparsers function\. Use the hook function to add a subparser to the collection\. Then, add the commands to the subparser\. | 
-| add\_common\_args |  Adds a set of common arguments to a command\. This function adds the following arguments\. For a description of these arguments, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\. `--aws-access-key` `--aws-secret-key` `--profile` `--assume-role` `--root-directory` `--game-directory` `--aws-directory` `--user-directory` `--verbose` `--no-prompt` The common arguments are processed by `lmbr_aws`\. The hook does not typically process these options\. This function can take the following parameters: `parser` – The `argparse` defined parser object to which the arguments are added\. `no_assume_role` – `True` specifies that the `--assume-role` common argument is not added; `False` specifies that it is\.  | 
+| add\_common\_args |  Adds a set of common arguments to a command\. This function adds the following arguments\. For a description of these arguments, see [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)\. `--aws-access-key` `--aws-secret-key` `--profile` `--assume-role` `--root-directory` `--game-directory` `--aws-directory` `--user-directory` `--verbose` `--no-prompt` The common arguments are processed by `lmbr_aws`\. The hook does not typically process these options\. This function can take the following parameters: `parser` - The `argparse` defined parser object to which the arguments are added\. `no_assume_role` - `True` specifies that the `--assume-role` common argument is not added; `False` specifies that it is\.  | 
 
 ### add\_cli\_view\_commands {#cloud-canvas-cloud-gem-framework-ccrm-hooks-add-cli-view-commands-hook-function}
 

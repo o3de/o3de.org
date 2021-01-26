@@ -27,24 +27,24 @@ AI:Signal(Signal_filter, signal_type, *MySignalName*, sender_entity_id);
 
 **Signal\_filter**  
 Group of AI agents to receive the signal\. Allowed values include:  
-+ 0 – AI agent specified with the entity\_id parameter \(usually but not always the sender itself \)\.
-+ SIGNALFILTER\_LASTOP – AI agent's last operation target \(if it has one\)\. 
-+ SIGNALFILTER\_TARGET – AI agent's current attention target\. 
-+ SIGNALFILTER\_GROUPONLY – All AI agents in the sender's group \(same group id\) within communication range\. 
-+ SIGNALFILTER\_SUPERGROUP – All AI agents in the sender's group \(same group id\) within the whole level\. 
-+ SIGNALFILTER\_SPECIESONLY – All AI agents of the sender's species within communication range\. 
-+ SIGNALFILTER\_SUPERSPECIES – All AI agents of the sender's species within the whole level\. 
-+ SIGNALFILTER\_HALFOFGROUP – Half the AI agents in the sender's group, randomly selected\. 
-+ SIGNALFILTER\_NEARESTGROUP – Nearest AI agent in the sender's group\. 
-+ SIGNALFILTER\_NEARESTINCOMM – Nearest AI agent in the sender's group within communication range\. 
-+ SIGNALFILTER\_ANYONEINCOMM – All AI agents within communication range\. 
-+ SIGNALID\_READIBILITY – Special signal used to make the recipient perform a readability event \(sound/animation\)\. 
++ 0 - AI agent specified with the entity\_id parameter \(usually but not always the sender itself \)\.
++ SIGNALFILTER\_LASTOP - AI agent's last operation target \(if it has one\)\. 
++ SIGNALFILTER\_TARGET - AI agent's current attention target\. 
++ SIGNALFILTER\_GROUPONLY - All AI agents in the sender's group \(same group id\) within communication range\. 
++ SIGNALFILTER\_SUPERGROUP - All AI agents in the sender's group \(same group id\) within the whole level\. 
++ SIGNALFILTER\_SPECIESONLY - All AI agents of the sender's species within communication range\. 
++ SIGNALFILTER\_SUPERSPECIES - All AI agents of the sender's species within the whole level\. 
++ SIGNALFILTER\_HALFOFGROUP - Half the AI agents in the sender's group, randomly selected\. 
++ SIGNALFILTER\_NEARESTGROUP - Nearest AI agent in the sender's group\. 
++ SIGNALFILTER\_NEARESTINCOMM - Nearest AI agent in the sender's group within communication range\. 
++ SIGNALFILTER\_ANYONEINCOMM - All AI agents within communication range\. 
++ SIGNALID\_READIBILITY - Special signal used to make the recipient perform a readability event \(sound/animation\)\. 
 
 **signal\_type**  
 Type of signal, which determines how the recipient will process it\. Allowed values include:  
-+ 1 – Recipient processes signal only if it is enabled and not set to "ignorant" \(see `AI:MakePuppetIgnorant`\)\.
-+ 0 – The entity receiving the signal will process it if it's not set to ignorant\.
-+ \-1 – The entity receiving the signal will process it unconditionally\.
++ 1 - Recipient processes signal only if it is enabled and not set to "ignorant" \(see `AI:MakePuppetIgnorant`\)\.
++ 0 - The entity receiving the signal will process it if it's not set to ignorant\.
++ \-1 - The entity receiving the signal will process it unconditionally\.
 
 **MySignalName**  
 The actual identifier of the signal\. It can be any non\-empty string; for the signal recipient, it must exist a function with the same name either in its current behavior, its default behavior or in the `Scripts/AI/Behaviors/Default.lua` script file in order to react to the received signal\.

@@ -62,29 +62,29 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.GetChannel Callback
 
 **result \- ChannelInfoValue**  
-Value – The channel information, which includes the following data:  
-+ NumFollowers – The number of followers for the channel\.
-+ NumItemsReceived – The number of fields received in this struct\.
-+ Partner – If true, the channel is a partner channel\.
-+ Mature – If true, the channel contains mature content\.
-+ Id – The Twitch channel ID\.
-+ BroadcasterLanguage – The two letter code for the broadcaster's language\.
-+ DisplayName – The channel's display name\.
-+ eMail – The broadcaster's email address\.
-+ GameName – Designation of the game that the channel is assigned to\.
-+ Language – The two letter code for the channel's language\.
-+ Logo – The URL for the logo, if provided\.
-+ Name – The channel's name\.
-+ ProfileBanner – The URL for the profile banner, if provided\.
-+ ProfileBannerBackgroundColor – The URL for the profile banner background color, if provided\.
-+ Status – The channel's status message\.
-+ StreamKey – The key for the channel's stream\.
-+ UpdatedDate – The date the channel was last updated, which displays in the ISO 8601 format\.
-+ CreatedDate – The date the channel was created, which displays in the ISO 8601 format\.
-+ URL – The URL to access the channel\.
-+ VideoBanner – The URL for the channel's banner video, if provided\.
-+ NumViews – The total number of views for the channel\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The channel information, which includes the following data:  
++ NumFollowers - The number of followers for the channel\.
++ NumItemsReceived - The number of fields received in this struct\.
++ Partner - If true, the channel is a partner channel\.
++ Mature - If true, the channel contains mature content\.
++ Id - The Twitch channel ID\.
++ BroadcasterLanguage - The two letter code for the broadcaster's language\.
++ DisplayName - The channel's display name\.
++ eMail - The broadcaster's email address\.
++ GameName - Designation of the game that the channel is assigned to\.
++ Language - The two letter code for the channel's language\.
++ Logo - The URL for the logo, if provided\.
++ Name - The channel's name\.
++ ProfileBanner - The URL for the profile banner, if provided\.
++ ProfileBannerBackgroundColor - The URL for the profile banner background color, if provided\.
++ Status - The channel's status message\.
++ StreamKey - The key for the channel's stream\.
++ UpdatedDate - The date the channel was last updated, which displays in the ISO 8601 format\.
++ CreatedDate - The date the channel was created, which displays in the ISO 8601 format\.
++ URL - The URL to access the channel\.
++ VideoBanner - The URL for the channel's banner video, if provided\.
++ NumViews - The total number of views for the channel\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelID {#twitch-api-ebus-channels-getchannelid}
 
@@ -143,27 +143,27 @@ The Twitch channel ID\.
 No return value\.GetChannelbyID Callback
 
 **result \- ChannelInfoValue**  
-Value – The channel information, which includes the following data:  
-+ NumFollowers – The number of followers for the channel\.
-+ NumItemsReceived – The number of fields received in this struct\.
-+ Partner – If true, the channel is a partner channel\.
-+ Mature – If true, the channel contains mature content\.
-+ Id – The Twitch channel ID\.
-+ BroadcasterLanguage – The two letter code for the broadcaster's language\.
-+ DisplayName – The channel's display name\.
-+ GameName – Designation of the game that the channel is assigned to\.
-+ Language – The two letter code for the channel's language\.
-+ Logo – The URL for the logo, if provided\.
-+ Name – The channel's name\.
-+ ProfileBanner – The URL for the profile banner, if provided\.
-+ ProfileBannerBackgroundColor – The URL for the profile banner background color, if provided\.
-+ Status – The channel's status message\.
-+ UpdatedDate – The date the channel was last updated, which displays in the ISO 8601 format\.
-+ CreatedDate – The date the channel was created, which displays in the ISO 8601 format\.
-+ URL – The URL to access the channel\.
-+ VideoBanner – The URL for the channel's banner video, if provided\.
-+ NumViews – The total number of views for the channel\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The channel information, which includes the following data:  
++ NumFollowers - The number of followers for the channel\.
++ NumItemsReceived - The number of fields received in this struct\.
++ Partner - If true, the channel is a partner channel\.
++ Mature - If true, the channel contains mature content\.
++ Id - The Twitch channel ID\.
++ BroadcasterLanguage - The two letter code for the broadcaster's language\.
++ DisplayName - The channel's display name\.
++ GameName - Designation of the game that the channel is assigned to\.
++ Language - The two letter code for the channel's language\.
++ Logo - The URL for the logo, if provided\.
++ Name - The channel's name\.
++ ProfileBanner - The URL for the profile banner, if provided\.
++ ProfileBannerBackgroundColor - The URL for the profile banner background color, if provided\.
++ Status - The channel's status message\.
++ UpdatedDate - The date the channel was last updated, which displays in the ISO 8601 format\.
++ CreatedDate - The date the channel was created, which displays in the ISO 8601 format\.
++ URL - The URL to access the channel\.
++ VideoBanner - The URL for the channel's banner video, if provided\.
++ NumViews - The total number of views for the channel\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## UpdateChannel {#twitch-api-ebus-channels-updatechannel}
 
@@ -225,27 +225,27 @@ The elements to update\. You must update at least one item for the call to succe
 No return value\.UpdateChannel Callback
 
 **result \- ChannelInfoValue**  
-Value – The channel information, which includes the following data:  
-+ NumFollowers – The number of followers for the channel\.
-+ NumItemsReceived – The number of fields received in this struct\.
-+ Partner – If true, the channel is a partner channel\.
-+ Mature – If true, the channel contains mature content\.
-+ Id – The Twitch channel ID\.
-+ BroadcasterLanguage – The two letter code for the broadcaster's language\.
-+ DisplayName – The channel's display name\.
-+ GameName – Designation of the game that the channel is assigned to\.
-+ Language – The two letter code for the channel's language\.
-+ Logo – The URL for the logo, if provided\.
-+ Name – The channel's name\.
-+ ProfileBanner – The URL for the profile banner, if provided\.
-+ ProfileBannerBackgroundColor – The URL for the profile banner background color, if provided\.
-+ Status – The channel's status message\.
-+ UpdatedDate – The date the channel was last updated, which displays in the ISO 8601 format\.
-+ CreatedDate – The date the channel was created, which displays in the ISO 8601 format\.
-+ URL – The URL to access the channel\.
-+ VideoBanner – The URL for the channel's banner video, if provided\.
-+ NumViews – The total number of views for the channel\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The channel information, which includes the following data:  
++ NumFollowers - The number of followers for the channel\.
++ NumItemsReceived - The number of fields received in this struct\.
++ Partner - If true, the channel is a partner channel\.
++ Mature - If true, the channel contains mature content\.
++ Id - The Twitch channel ID\.
++ BroadcasterLanguage - The two letter code for the broadcaster's language\.
++ DisplayName - The channel's display name\.
++ GameName - Designation of the game that the channel is assigned to\.
++ Language - The two letter code for the channel's language\.
++ Logo - The URL for the logo, if provided\.
++ Name - The channel's name\.
++ ProfileBanner - The URL for the profile banner, if provided\.
++ ProfileBannerBackgroundColor - The URL for the profile banner background color, if provided\.
++ Status - The channel's status message\.
++ UpdatedDate - The date the channel was last updated, which displays in the ISO 8601 format\.
++ CreatedDate - The date the channel was created, which displays in the ISO 8601 format\.
++ URL - The URL to access the channel\.
++ VideoBanner - The URL for the channel's banner video, if provided\.
++ NumViews - The total number of views for the channel\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelEditors {#twitch-api-ebus-channels-getchanneleditors}
 
@@ -294,16 +294,16 @@ The Twitch channel ID\.
 No return value\.GetChannelEditors Callback
 
 **result \- UserInfoListValue**  
-Value – The user information list, which includes the following data:  
-+ ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-+ Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-+ CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-+ DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-+ Logo – The URL for the user's logo, if provided\.
-+ Name – The user's name, which returns in the format `AZStd::string`\.
-+ Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-+ UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The user information list, which includes the following data:  
++ ID - The Twitch user ID, which returns in the format `AZStd::string`\.
++ Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
++ CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
++ DisplayName - The user's display name, which returns in the format `AZStd::string`\.
++ Logo - The URL for the user's logo, if provided\.
++ Name - The user's name, which returns in the format `AZStd::string`\.
++ Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
++ UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelFollowers {#twitch-api-ebus-channels-getchannelfollowers}
 
@@ -368,22 +368,22 @@ Used to retrieve the next block of data\. When initially called, an empty string
 No return value\.GetChannelFollowers Callback
 
 **result \- FollowerResultValue**  
-Value – The result of the FollowerResult call, which includes the following data:  
-+ Total – The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
-+ Cursor – If empty, there are no more results\. Otherwise, you can request the next block of followers by passing this value with the offset\.
-+ Followers – The list of followers, which includes the following data:
-  + Notifications – If true, the follower will receive notifications for the channel\.
-  + CreatedDate – The date the user started following the channel, which displays in the ISO 8601 format\.
-  + User – The user's information, which includes the following data:
-    + ID – The Twitch user ID\.
-    + Bio – The user's description, if provided\.
-    + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-    + DisplayName – The user's display name\.
-    + Logo – The URL for the user's logo, if provided\.
-    + Name – The user's name\.
-    + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-    + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The result of the FollowerResult call, which includes the following data:  
++ Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
++ Cursor - If empty, there are no more results\. Otherwise, you can request the next block of followers by passing this value with the offset\.
++ Followers - The list of followers, which includes the following data:
+  + Notifications - If true, the follower will receive notifications for the channel\.
+  + CreatedDate - The date the user started following the channel, which displays in the ISO 8601 format\.
+  + User - The user's information, which includes the following data:
+    + ID - The Twitch user ID\.
+    + Bio - The user's description, if provided\.
+    + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+    + DisplayName - The user's display name\.
+    + Logo - The URL for the user's logo, if provided\.
+    + Name - The user's name\.
+    + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+    + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelTeams {#twitch-api-ebus-channels-getchannelteams}
 
@@ -435,17 +435,17 @@ The Twitch channel ID\.
 No return value\.GetChannelFollowers Callback
 
 **result \- ChannelTeamValue**  
-Value – The team information list, which includes the following data:  
-+ ID – The Twitch team ID\.
-+ Background – The URL for the team's background\.
-+ Banner – The URL for the team's banner\.
-+ CreatedDate – The date the team was created, which displays in the ISO 8601 format\.
-+ DisplayName – The full team name\.
-+ Info – A generic message that you can customize for your viewers\. For example, "Thanks for visiting my channel\!"
-+ Logo – The URL for the logo, if provided\.
-+ Name – The team name\.
-+ UpdatedDate – The date the team was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The team information list, which includes the following data:  
++ ID - The Twitch team ID\.
++ Background - The URL for the team's background\.
++ Banner - The URL for the team's banner\.
++ CreatedDate - The date the team was created, which displays in the ISO 8601 format\.
++ DisplayName - The full team name\.
++ Info - A generic message that you can customize for your viewers\. For example, "Thanks for visiting my channel\!"
++ Logo - The URL for the logo, if provided\.
++ Name - The team name\.
++ UpdatedDate - The date the team was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelSubscribers {#twitch-api-ebus-channels-getchannelsubscribers}
 
@@ -504,21 +504,21 @@ The object offset to use when paginating results\. When initially called, the va
 No return value\.GetChannelSubscribers Callback
 
 **result \- SubscriberValue**  
-Value – The result of the `Subscription` call, which includes the following data:  
-+ Total – The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
-+ Subscribers – The list of subscribers, which includes the following data:
-  + ID – The Twitch subscriber ID\.
-  + CreatedDate – The date the user subscribed to the channel, which displays in the ISO 8601 format\.
-  + User – The user's information, which includes the following data:
-    + ID – The Twitch user ID\.
-    + Bio – The user's description, if provided\.
-    + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-    + DisplayName – The user's display name\.
-    + Logo – The URL for the user's logo, if provided\.
-    + Name – The user's name\.
-    + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-    + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The result of the `Subscription` call, which includes the following data:  
++ Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
++ Subscribers - The list of subscribers, which includes the following data:
+  + ID - The Twitch subscriber ID\.
+  + CreatedDate - The date the user subscribed to the channel, which displays in the ISO 8601 format\.
+  + User - The user's information, which includes the following data:
+    + ID - The Twitch user ID\.
+    + Bio - The user's description, if provided\.
+    + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+    + DisplayName - The user's display name\.
+    + Logo - The URL for the user's logo, if provided\.
+    + Name - The user's name\.
+    + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+    + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## CheckChannelSubscriptionbyUser {#twitch-api-ebus-channels-checkchannelsubscriptionbyuser}
 
@@ -571,19 +571,19 @@ The Twitch user ID for whom to verify the subscription status\.
 No return value\.CheckChannelSubscriptionbyUser Callback
 
 **result \- SubscriberValue**  
-Value – The subscriber's information, which includes the following data:  
-+ ID – The Twitch subscriber ID\.
-+ CreatedDate – The date the user subscribed to the channel, which displays in the ISO 8601 format\.
-+ User – The user's information, which includes the following data:
-  + ID – The Twitch user ID\.
-  + Bio – The user's description, if provided\.
-  + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-  + DisplayName – The user's display name\.
-  + Logo – The URL for the user's logo, if provided\.
-  + Name – The user's name\.
-  + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-  + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The subscriber's information, which includes the following data:  
++ ID - The Twitch subscriber ID\.
++ CreatedDate - The date the user subscribed to the channel, which displays in the ISO 8601 format\.
++ User - The user's information, which includes the following data:
+  + ID - The Twitch user ID\.
+  + Bio - The user's description, if provided\.
+  + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+  + DisplayName - The user's display name\.
+  + Logo - The URL for the user's logo, if provided\.
+  + Name - The user's name\.
+  + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+  + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelVideos {#twitch-api-ebus-channels-getchannelvideos}
 
@@ -642,53 +642,53 @@ The object offset to use when paginating results\. When initially called, the va
 No return value\.GetChannelSubscribers Callback
 
 **result \- VideoReturnValue**  
-Value – The result of the `VideoReturn` call, which includes the following data:  
-+ Total – The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
-+ Videos – The video information list, which includes the following data:
-  + Length – The video duration, in seconds\.
-  + Views – The total number of views for the video\.
-  + BroadcastID – The identifier for the broadcast\.
-  + Type – Valid values for the broadcast type are: Archive, Highlight, Upload, ArchiveAndHighlight, ArchiveAndUpload, ArchiveAndHighlightAndUpload, or HighlightAndUpload\.
-  + CreatedDate – The date the user subscribed to the channel, which displays in the ISO 8601 format\.
-  + Description – A plain text description of the video\.
-  + Description – An HTML description of the video\.
-  + ID – The identifier for the video\.
-  + Game – The game name for which this video is associated\.
-  + Language – The two letter code for the video language\.
-  + PublishedDate – The date the video was published, which displays in the ISO 8601 format\.
-  + Status – The video's status\.
-  + TagList – A string that contains the tags for the video\.
-  + Title – The title of the video\.
-  + URL – The URL to access the video\.
-  + Viewable – Valid values for the accessibility of the video are: Public or Private\.
-  + ViewableAt – The date when the video can be viewed, if provided\. The date is formatted using ISO 8601 standard\.
-  + Channel – The video channel information, which includes the following data:
-    + ID – The video channel ID\.
-    + DisplayName – The full display name for the video channel\.
-    + Name – The simple name for the video channel\.
-  + FPS – The frame rate, measured in frames\-per\-second \(FPS\):
+Value - The result of the `VideoReturn` call, which includes the following data:  
++ Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
++ Videos - The video information list, which includes the following data:
+  + Length - The video duration, in seconds\.
+  + Views - The total number of views for the video\.
+  + BroadcastID - The identifier for the broadcast\.
+  + Type - Valid values for the broadcast type are: Archive, Highlight, Upload, ArchiveAndHighlight, ArchiveAndUpload, ArchiveAndHighlightAndUpload, or HighlightAndUpload\.
+  + CreatedDate - The date the user subscribed to the channel, which displays in the ISO 8601 format\.
+  + Description - A plain text description of the video\.
+  + Description - An HTML description of the video\.
+  + ID - The identifier for the video\.
+  + Game - The game name for which this video is associated\.
+  + Language - The two letter code for the video language\.
+  + PublishedDate - The date the video was published, which displays in the ISO 8601 format\.
+  + Status - The video's status\.
+  + TagList - A string that contains the tags for the video\.
+  + Title - The title of the video\.
+  + URL - The URL to access the video\.
+  + Viewable - Valid values for the accessibility of the video are: Public or Private\.
+  + ViewableAt - The date when the video can be viewed, if provided\. The date is formatted using ISO 8601 standard\.
+  + Channel - The video channel information, which includes the following data:
+    + ID - The video channel ID\.
+    + DisplayName - The full display name for the video channel\.
+    + Name - The simple name for the video channel\.
+  + FPS - The frame rate, measured in frames\-per\-second \(FPS\):
     + Chunked
     + High
     + Low
     + Medium
     + Mobile
-  + Preview – The image information, including size and the URL for the preview image:
+  + Preview - The image information, including size and the URL for the preview image:
     + Large
     + Medium
     + Small
     + Template
-  + Thumbnails – The image thumbnail information, including size, how the thumbnail was created \(Type\), and the URL for the thumbnail \(Url\): 
+  + Thumbnails - The image thumbnail information, including size, how the thumbnail was created \(Type\), and the URL for the thumbnail \(Url\): 
     + Large
     + Medium
     + Small
     + Template
-  + Resolutions – The video resolution information, which includes the following data: 
-    + Chunked – For example, 1920 x 1080\.
-    + High – For example, 1280 x 720\.
-    + Medium – For example, 852 x 480\.
-    + Low – For example, 640 x 360\.
-    + Mobile – For example, 400 x 226\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+  + Resolutions - The video resolution information, which includes the following data: 
+    + Chunked - For example, 1920 x 1080\.
+    + High - For example, 1280 x 720\.
+    + Medium - For example, 852 x 480\.
+    + Low - For example, 640 x 360\.
+    + Mobile - For example, 400 x 226\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## StartChannelCommercial {#twitch-api-ebus-channels-startchannelcommercial}
 
@@ -742,11 +742,11 @@ Valid values for the commercial length are: T30Seconds, T60Seconds, T90Seconds, 
 No return value\.StartChannelCommercial Callback
 
 **result \- StartChannelCommercialValue**  
-Value – The result of the `StartChannelCommercialResult` call, which includes the following data:  
-+ Duration – The commercial duration, in seconds\.
-+ RetryAfter – The wait time, in seconds, before calling the API again\.
-+ Message – Optional message or error description\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The result of the `StartChannelCommercialResult` call, which includes the following data:  
++ Duration - The commercial duration, in seconds\.
++ RetryAfter - The wait time, in seconds, before calling the API again\.
++ Message - Optional message or error description\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## ResetChannelStreamKey {#twitch-api-ebus-channels-resetchannelstreamkey}
 
@@ -807,29 +807,29 @@ The Twitch channel ID\.
 No return value\.ResetChannelStreamKey Callback
 
 **result \- ChannelInfoValue**  
-Value – The channel information, which includes the following data:  
-+ NumFollowers – The number of followers for the channel\.
-+ NumItemsReceived – The number of fields received in this struct\.
-+ Partner – If true, the channel is a partner channel\.
-+ Mature – If true, the channel contains mature content\.
-+ Id – The Twitch channel ID\.
-+ BroadcasterLanguage – The two letter code for the broadcaster's language\.
-+ DisplayName – The channel's display name\.
-+ eMail – The broadcaster's email address\.
-+ GameName – Designation of the game that the channel is assigned to\.
-+ Language – The two letter code for the channel's language\.
-+ Logo – The URL for the logo, if provided\.
-+ Name – The channel's name\.
-+ ProfileBanner – The URL for the profile banner, if provided\.
-+ ProfileBannerBackgroundColor – The URL for the profile banner background color, if provided\.
-+ Status – The channel's status message\.
-+ StreamKey – The key to access the channel's stream\.
-+ UpdatedDate – The date the channel was last updated, which displays in the ISO 8601 format\.
-+ CreatedDate – The date the channel was created, which displays in the ISO 8601 format\.
-+ URL – The URL to access the channel\.
-+ VideoBanner – The URL for the channel's banner video, if provided\.
-+ NumViews – The total number of views for the channel\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The channel information, which includes the following data:  
++ NumFollowers - The number of followers for the channel\.
++ NumItemsReceived - The number of fields received in this struct\.
++ Partner - If true, the channel is a partner channel\.
++ Mature - If true, the channel contains mature content\.
++ Id - The Twitch channel ID\.
++ BroadcasterLanguage - The two letter code for the broadcaster's language\.
++ DisplayName - The channel's display name\.
++ eMail - The broadcaster's email address\.
++ GameName - Designation of the game that the channel is assigned to\.
++ Language - The two letter code for the channel's language\.
++ Logo - The URL for the logo, if provided\.
++ Name - The channel's name\.
++ ProfileBanner - The URL for the profile banner, if provided\.
++ ProfileBannerBackgroundColor - The URL for the profile banner background color, if provided\.
++ Status - The channel's status message\.
++ StreamKey - The key to access the channel's stream\.
++ UpdatedDate - The date the channel was last updated, which displays in the ISO 8601 format\.
++ CreatedDate - The date the channel was created, which displays in the ISO 8601 format\.
++ URL - The URL to access the channel\.
++ VideoBanner - The URL for the channel's banner video, if provided\.
++ NumViews - The total number of views for the channel\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetChannelCommunity {#twitch-api-ebus-channels-getchannelcommunity}
 
@@ -883,19 +883,19 @@ The Twitch channel ID\.
 No return value\.GetChannelCommunity Callback
 
 **result \- CommunityInfoValue**  
-Value – The community information, which includes the following data:  
-+ ID – The identifier for the community\.
-+ AvatarImageURL – The URL for the avatar image, if provided\.
-+ CoverImageURL – The URL for the cover image, if provided\.
-+ Description – A plain text description of the community\.
-+ DescriptionHTML – An HTML description of the community\.
-+ Language – The two letter code for the community language\.
-+ Name – The name of the community\.
-+ OwnerID – The Twitch user that owns the community\.
-+ Rules – A plain text version of the community rules\.
-+ RulesHTML – An HTML version of the community rules\.
-+ Summary – A summary description of the community\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The community information, which includes the following data:  
++ ID - The identifier for the community\.
++ AvatarImageURL - The URL for the avatar image, if provided\.
++ CoverImageURL - The URL for the cover image, if provided\.
++ Description - A plain text description of the community\.
++ DescriptionHTML - An HTML description of the community\.
++ Language - The two letter code for the community language\.
++ Name - The name of the community\.
++ OwnerID - The Twitch user that owns the community\.
++ Rules - A plain text version of the community rules\.
++ RulesHTML - An HTML version of the community rules\.
++ Summary - A summary description of the community\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## SetChannelCommunity {#twitch-api-ebus-channels-setchannelcommunity}
 
@@ -942,8 +942,8 @@ The Twitch community ID\.
 No return value\.SetChannelCommunity Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## DeleteChannelfromCommunity {#twitch-api-ebus-channels-deletechannelfromcommunity}
 
@@ -986,5 +986,5 @@ The Twitch channel ID\.
 No return value\.DeleteChannelfromCommunity Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

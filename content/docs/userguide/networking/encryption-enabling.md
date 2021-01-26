@@ -122,9 +122,9 @@ dev/Code/SDKs/OpenSSL/bin/openssl req -x509 -newkey rsa:2048 -keyout key.pem -ou
 ```
 
 The arguments are as follows\.
-+ `-x509` – The certificate format\.
-+ `-newkey` – The type of key\. This example generates an RSA key with 2048 bits\.
-+ `-keyout` – The name of the key PEM file that will be generated
-+ `-out` – The name of the cert PEM file that will be generated\.
++ `-x509` - The certificate format\.
++ `-newkey` - The type of key\. This example generates an RSA key with 2048 bits\.
++ `-keyout` - The name of the key PEM file that will be generated
++ `-out` - The name of the cert PEM file that will be generated\.
 
 Upon execution, the command prompts for additional user input required to generate the certificate\.

@@ -45,10 +45,10 @@ A blend tree is a collection of nodes with input and output ports that are color
    1. Repeat step 6a to add more nodes to your blend tree\.
 
    1. Connect the nodes by dragging inputs to outputs\. Note the following color cues:
-      + Gray – Dashed gray helper lines indicate the ports that you can connect to\.
-      + Green – The connection curve turns green when it's okay to release the mouse button\.
-      + Red – The connection curves turns red when the connection is not allowed\.
-      + Yellow – The connection curve turns yellow in transition states, such as when you drag a connection between ports\.
+      + Gray - Dashed gray helper lines indicate the ports that you can connect to\.
+      + Green - The connection curve turns green when it's okay to release the mouse button\.
+      + Red - The connection curves turns red when the connection is not allowed\.
+      + Yellow - The connection curve turns yellow in transition states, such as when you drag a connection between ports\.
 
 **Topics**
 + [Creating and Visualizing Blend Spaces](/docs/userguide/animation/editor/blend-spaces.md)

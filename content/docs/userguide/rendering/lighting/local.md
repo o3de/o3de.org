@@ -30,7 +30,7 @@ When placing environment probes in a level, pay attention to how probes are laye
 
 1. Click **Generate Cubemap**\. 
 
-   Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***— one for the diffuse map, one for the specular map, and one for the source `.tif` file\. 
+   Lumberyard creates three textures in **textures\\cubemaps\\*your\_level***- one for the diffuse map, one for the specular map, and one for the source `.tif` file\. 
 
 1. To check your cubemap for accuracy, create and then place a smooth, reflective sphere entity near the probe\. If its surface looks different from the environment around it, you need to regenerate the cubemap\.
 

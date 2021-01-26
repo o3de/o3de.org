@@ -44,12 +44,12 @@ You use Lumberyard Editor to work with the Leaderboard Cloud Gem Portal\.
 ![\[Add leaderboard\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-leaderboard-add.png)
 
    A leaderboard has the following options:
-   + **Leaderboard ID** – This is the identifier for your leaderboard\. The game client uses this ID to send data to the leaderboard\. Currently, this ID does not support spaces\. If you're creating a leaderboard for a particular region or language, it's good to put that information in the ID\. For example, you could designate scores for North America with the ID "scores\-NA" instead of just "scores"\.
-   + **Mode** – At launch, leaderboards have two modes: **Overwrite** and **Increment**\. Overwrite mode overwrites a previous score for a player\. Increment mode adds the value passed in from the game client to the previous value to keep a running total of a particular statistic\. For example, you might use increment mode to track career statistics in a game\.
-   + **Minimum Reportable Value Allowed** – The minimum value for the leaderboard\. If the game client sends scores below the minimum value allowed, the scores are not recorded\.
-   + **Maximum Reportable Value Allowed** – The maximum value for the leaderboard\. If the game client sends scores above the maximum value allowed, the scores are not recorded\.
+   + **Leaderboard ID** - This is the identifier for your leaderboard\. The game client uses this ID to send data to the leaderboard\. Currently, this ID does not support spaces\. If you're creating a leaderboard for a particular region or language, it's good to put that information in the ID\. For example, you could designate scores for North America with the ID "scores\-NA" instead of just "scores"\.
+   + **Mode** - At launch, leaderboards have two modes: **Overwrite** and **Increment**\. Overwrite mode overwrites a previous score for a player\. Increment mode adds the value passed in from the game client to the previous value to keep a running total of a particular statistic\. For example, you might use increment mode to track career statistics in a game\.
+   + **Minimum Reportable Value Allowed** - The minimum value for the leaderboard\. If the game client sends scores below the minimum value allowed, the scores are not recorded\.
+   + **Maximum Reportable Value Allowed** - The maximum value for the leaderboard\. If the game client sends scores above the maximum value allowed, the scores are not recorded\.
 
-     **Reservoir Sample Size** – The leaderboard sample reservoir size\. The recommended range is from 200 through 1000\.
+     **Reservoir Sample Size** - The leaderboard sample reservoir size\. The recommended range is from 200 through 1000\.
 
 1. 
 

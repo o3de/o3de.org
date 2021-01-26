@@ -131,10 +131,10 @@ title: Releasing &ALY; projects for Android
         ```
 
      1. Add the following new attributes to `<Properties>`\.
-        +  `patch_files` – The files to include in the patch OBB\. This **shouldn't** include any files from the APK and should only include files from the main OBB that are being patched\. If you're only patching files in your APK, upload a new version to the Google Play Store and require users to update the main distributable instead\. 
+        +  `patch_files` - The files to include in the patch OBB\. This **shouldn't** include any files from the APK and should only include files from the main OBB that are being patched\. If you're only patching files in your APK, upload a new version to the Google Play Store and require users to update the main distributable instead\. 
 
            This value is formatted as a semicolon \(`;`\)\-separated list of file paths relative to the asset cache\. Globbing is supported\. 
-        +  `patch_files_excludes` – Everything in the cache you wish to exclude from the patch OBB\. Unless explicitly including assets from the APK or the main OBB in your patch, this value should include the string `${assets_files};${assets_files_excludes}`\. 
+        +  `patch_files_excludes` - Everything in the cache you wish to exclude from the patch OBB\. Unless explicitly including assets from the APK or the main OBB in your patch, this value should include the string `${assets_files};${assets_files_excludes}`\. 
 
            This value is formatted as a semicolon \(`;`\)\-separated list of file paths relative to the asset cache\. Globbing is supported\. 
 **Tip**  

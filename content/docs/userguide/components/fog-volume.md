@@ -45,7 +45,7 @@ Default: `255`, `255`, `255`
 **HDR Dynamic \(Nonvolumetric fog only\)**  
 Specify the brightness of the fog color\.  
 Default: `0`  
-Valid values: `0` – `20`
+Valid values: `0` - `20`
 
 **Use global fog color**  
 If `true`, the **Color** property is ignored, and the global fog color is used instead\. In the **Time of Day** editor, you can specify the global fog color with the **Color \(bottom\)** parameter\. For more information, see [Setting Global \(Time of Day\) Fog](/docs/userguide/weather/fog-global.md)\.  
@@ -115,7 +115,7 @@ Valid values: `0` to `360`
 **Shift**  
 Specify how much to move the fog density along the fall\-off direction\. Specify a positive value to move thicker fog layers along the fall off direction of the fog volume\. Specify a negative value to move thicker layers along the opposite direction\.   
 Default: `0`  
-Valid values: `-50` — `50`
+Valid values: `-50` - `50`
 
 **Scale**  
 Scales the density distribution along the fall\-off direction\. Specify higher values to make the fog fall off more rapidly\.  

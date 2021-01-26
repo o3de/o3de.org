@@ -81,7 +81,7 @@ A slice is a collection of configured entities that are stored as a single unit 
 Slices contain entities, including their components and properties, and may also contain instances of other slices\. This ability to nest slices without flattening the hierarchy is a feature unique to Lumberyard\.   
 
 **Example Slice**  
-**Simple\_JackLocomotion** is a slice that contains two entities – **Jack** and **Camera**\. You can find this slice in the [Samples Project](/docs/userguide/samples/projects/samples.md)\.  
+**Simple\_JackLocomotion** is a slice that contains two entities - **Jack** and **Camera**\. You can find this slice in the [Samples Project](/docs/userguide/samples/projects/samples.md)\.  
 
 ![\[A slice shown in the viewport and in the Entity Outliner.\]](/images/userguide/terms/term-slice-cube-outliner.png)
 For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.

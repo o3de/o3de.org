@@ -37,11 +37,11 @@ ChatPlay enables you to search incoming messages from Twitch for keywords\. Your
 **To create keywords**  
 Three functions are used to set keywords in the system\. The first two are also accessible through Script Canvas\. Be sure to set a keyword only once, using one of the following handlers:
 
-1. **SetKeywordWithDefaultHandler** – Adds a keyword for use throughout a session\. The keyword will automatically have its handler assigned to the `TwitchChatPlayNotificationBus`, and messages will be sent through that system when the keyword is triggered\.
+1. **SetKeywordWithDefaultHandler** - Adds a keyword for use throughout a session\. The keyword will automatically have its handler assigned to the `TwitchChatPlayNotificationBus`, and messages will be sent through that system when the keyword is triggered\.
 
-1. **SetKeywordWithFormattedHandler** – Adds a keyword that will be parsed into username and message, in separate fields\.
+1. **SetKeywordWithFormattedHandler** - Adds a keyword that will be parsed into username and message, in separate fields\.
 
-1. **SetKeywordWithSpecificHandler** – Adds a unique function to the keyword that will be called when that keyword is hit\. This handler can be set to multiple keywords, but different handlers may be used for different keywords\. For example, you could have "\!vote" go to a `CountVote` function, while "\!subscribe" goes to the `PlayFanfare` function\.
+1. **SetKeywordWithSpecificHandler** - Adds a unique function to the keyword that will be called when that keyword is hit\. This handler can be set to multiple keywords, but different handlers may be used for different keywords\. For example, you could have "\!vote" go to a `CountVote` function, while "\!subscribe" goes to the `PlayFanfare` function\.
 
 **To enable or disable keywords**  
 Keywords can be enabled and disabled using the `ActivateKeywordMatching` command\. You could easily turn voting on and off with this command, for example\. You can also call `RemoveKeyword` if you no longer need a particular keyword\.

@@ -11,7 +11,7 @@ You can use the **Cloud Canvas Resource Manager** to manage resource groups coll
 ## Managing Resource Groups {#cloud-canvas-ui-rm-resource-groups-detail-pane}
 
 To see the status of the resource groups that belong to your project's current deployment, click **Resource Groups** in the **Cloud Canvas configuration** navigation pane \. Note the following: 
-+ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project’s resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
++ If you select **Resource Groups** and no AWS profile is configured, Lumberyard prompts you to provide one\. A profile is required for Lumberyard to display the status of your project's resources\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\. 
 + If you select **Resource Groups** and deployments exist but no deployment is active, Lumberyard prompts you to select one\. For more information, see [Making a Cloud Canvas Deployment Active](/docs/userguide/gems/cloud-canvas/ui-select-deployment.md)\. 
 
 The **Resource Groups **detail pane lists the resource groups in your current deployment: 
@@ -39,8 +39,8 @@ Clicking **Add resource group** opens the **New resource group** dialog:
 
 ![\[New resource group\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-new-resource-group-w-examples.png)
 Provide the following information:  
-+  **Resource group name** – The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-template) file\. 
-+  **Example resources** – \(Optional\) Choose to include example resources in the resource group\. You can study the examples to see how resources are defined in a resource group, or modify the examples to turn them into a feature for your project\. 
++  **Resource group name** - The name of the resource group\. The name must be alphanumeric\. Lumberyard uses this name to create an AWS CloudFormation stack resource definition in the [deployment\-template\.json](/docs/userguide/gems/cloud-canvas/resource-definitions#cloud-canvas-deployment-template) file\. 
++  **Example resources** - \(Optional\) Choose to include example resources in the resource group\. You can study the examples to see how resources are defined in a resource group, or modify the examples to turn them into a feature for your project\. 
 
     
 

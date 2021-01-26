@@ -29,27 +29,27 @@ Lumberyard's PhysX system acts upon entities to create realistic physical effect
 ## PhysX Gems {#physx-intro-gems}
 
 The PhysX system uses the following gems, which you can [enable](/docs/userguide/gems/using-project-configurator.md) in the Project Configurator:
-+ **[PhysX](/docs/userguide/gems/builtin/physx.md)** – Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into Lumberyard\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\. 
++ **[PhysX](/docs/userguide/gems/builtin/physx.md)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into Lumberyard\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\. 
 
   For more information, see [PhysX](/docs/userguide/gems/builtin/physx.md)\.
-+ **[PhysX Characters](/docs/userguide/gems/builtin/physx-characters.md)** – Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/userguide/gems/builtin/physx.md) gem\.
++ **[PhysX Characters](/docs/userguide/gems/builtin/physx-characters.md)** - Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/userguide/gems/builtin/physx.md) gem\.
 
   For more information, see [PhysX Characters](/docs/userguide/gems/builtin/physx-characters.md)\.
-+ **[PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md)** – Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools\.
++ **[PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools\.
 
   For more information, see [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md)\.
 
 ## PhysX Components {#physx-intro-physx-components}
 
 The **PhysX** gem has the following components, which you can [add](/docs/userguide/components/working-adding.md) to entities by using the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md):
-+ **[PhysX Collider](/docs/userguide/components/physx-collider.md)** – Enables physics objects to collide with other physics objects\. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider\.
-+ **[PhysX Force Region](/docs/userguide/components/physx-force-region.md)** – Enables an entity to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the bounds of the region\.
-+ **[PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md)** – Enables an entity to be simulated by physics\. Rigid body mode can be **kinematic** or **dynamic**\. Dynamic rigid bodies respond to collision events with other rigid bodies\. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting\.
-+ **[PhysX Terrain](/docs/userguide/components/physx-terrain.md)** – Implements physical interaction with the terrain\. It exports terrain and saves it as an asset that loads at runtime\. 
++ **[PhysX Collider](/docs/userguide/components/physx-collider.md)** - Enables physics objects to collide with other physics objects\. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider\.
++ **[PhysX Force Region](/docs/userguide/components/physx-force-region.md)** - Enables an entity to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the bounds of the region\.
++ **[PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md)** - Enables an entity to be simulated by physics\. Rigid body mode can be **kinematic** or **dynamic**\. Dynamic rigid bodies respond to collision events with other rigid bodies\. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting\.
++ **[PhysX Terrain](/docs/userguide/components/physx-terrain.md)** - Implements physical interaction with the terrain\. It exports terrain and saves it as an asset that loads at runtime\. 
 
 The **PhysX Characters** gem has the following components:
-+ **[PhysX Character Controller](/docs/userguide/components/physx-character-controller.md)** – Implements basic character interactions with the physical world\. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain\.
-+ **[PhysX Ragdoll](/docs/userguide/components/physx-ragdoll.md)** – Enables animation of certain character behaviors\. The physical representation is usually a hierarchical collection of rigid bodies with simple shapes connected by joints\.
++ **[PhysX Character Controller](/docs/userguide/components/physx-character-controller.md)** - Implements basic character interactions with the physical world\. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain\.
++ **[PhysX Ragdoll](/docs/userguide/components/physx-ragdoll.md)** - Enables animation of certain character behaviors\. The physical representation is usually a hierarchical collection of rigid bodies with simple shapes connected by joints\.
 
 ## PhysX Configuration {#physx-intro-configuration}
 
@@ -66,10 +66,10 @@ For more information, see [Physics materials](/docs/userguide/nvidia/physx/mater
 ## PhysX Debugging {#physx-intro-debugging}
 
 To verify the implementation of interactions in the simulated world, the following tools are available\.
-+ **PhysX Debug gem** – The PhysX Debug gem is recommended if you are a developer or technical artist\. You can use this tool to view the physics world in real time in Lumberyard Editor's editor mode or game mode\. To activate the tool, you use console commands or an immediate mode graphical user interface \(ImGui\)\. The tool displays PhysX debug lines within the editor and game modes\.
++ **PhysX Debug gem** - The PhysX Debug gem is recommended if you are a developer or technical artist\. You can use this tool to view the physics world in real time in Lumberyard Editor's editor mode or game mode\. To activate the tool, you use console commands or an immediate mode graphical user interface \(ImGui\)\. The tool displays PhysX debug lines within the editor and game modes\.
 
   For more information, see [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md)\.
-+ **PhysX Visual Debugger** – The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. Lumberyard can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\. 
++ **PhysX Visual Debugger** - The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. Lumberyard can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\. 
 
   For information on configuring Lumberyard's connection to PVD, see [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\. 
 

@@ -10,7 +10,7 @@ title: Waf Extensions
 Waf supports IncrediBuild 8\.0\.1 or later, and allows for distributed network builds for compiling larger projects\.
 
 You must have the appropriate package for your operating system:
-+  **Windows** or **Android** – IncrediBuild for Make and Build or Accelerated Dev Tools
++  **Windows** or **Android** - IncrediBuild for Make and Build or Accelerated Dev Tools
 
 To verify which package is configured for your machine, run the following command \(located in `C:\Program Files (x86)\Xoreax\IncrediBuild`\): `xgConsole.exe /QUERYLICENSE` 
 

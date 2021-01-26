@@ -11,10 +11,10 @@ In the following procedure, create shortcuts that are specific to the component 
   AZStd::vector<AzToolsFramework::ActionOverride> PopulateActionsImpl() override;
   ```
 + The `PopulateActionsImpl` function returns a vector of available actions that you can perform in Component Mode\. By default, you always get the following shortcuts, which you can't change:
-  + **Ctrl**\+**S** – Save
-  + **Ctrl**\+**Z** – Undo
-  + **Ctrl**\+**Shift**\+**Z** – Redo
-  + **Esc** – Leave Component Mode
+  + **Ctrl**\+**S** - Save
+  + **Ctrl**\+**Z** - Undo
+  + **Ctrl**\+**Shift**\+**Z** - Redo
+  + **Esc** - Leave Component Mode
 
 **To create shortcuts for Component Mode**
 

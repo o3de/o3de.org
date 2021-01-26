@@ -36,18 +36,18 @@ Recorded/Played Tris ratio: 0.99
 | Stop Playback | Ctrl \+ Break | stopdemo | 
 
 ## Related Console Variables {#recordingtimedemos-relatedconsolevariables}
-+ `stopdemo` – Stops playing a time demo\.
-+ `demo demoname` – Plays the time demo from the specified file\.
-+ `demo_fixed_timestep` – Specifies the number of updates per second\.
-+ `demo_panoramic` – Uses a panoramic view when playing back the demo\.
-+ `demo_restart_level N` – Restarts the level after each loop\. Possible values for *N*: 0 = Off; 1 = use quicksave on first playback; 2 = load level start\.
-+ `demo_ai` – Enables or disables AI during the demo\.
-+ `demo_savestats` – Saves level stats at the end of the loop\.
-+ `demo_max_frames` – Specifies the maximum number of frames to save\.
-+ `demo_screenshot_frame N` – Makes a screenshot of the specified frame during demo playback\. If a negative value for *N* is supplied, takes a screenshot every *N* frame\.
-+ `demo_quit` – Quits the game after the demo run is finished\.
-+ `demo_noinfo` – Disables the information display during the demo playback\.
-+ `demo_scroll_pause` – Enables the use of the **ScrollLock** key to pause demo play and record\.
-+ `demo_num_runs` – Specifies the number of times to loop the demo\.
-+ `demo_profile` – Enables demo profiling\.
-+ `demo_file` – Specifies the time demo file name\.
++ `stopdemo` - Stops playing a time demo\.
++ `demo demoname` - Plays the time demo from the specified file\.
++ `demo_fixed_timestep` - Specifies the number of updates per second\.
++ `demo_panoramic` - Uses a panoramic view when playing back the demo\.
++ `demo_restart_level N` - Restarts the level after each loop\. Possible values for *N*: 0 = Off; 1 = use quicksave on first playback; 2 = load level start\.
++ `demo_ai` - Enables or disables AI during the demo\.
++ `demo_savestats` - Saves level stats at the end of the loop\.
++ `demo_max_frames` - Specifies the maximum number of frames to save\.
++ `demo_screenshot_frame N` - Makes a screenshot of the specified frame during demo playback\. If a negative value for *N* is supplied, takes a screenshot every *N* frame\.
++ `demo_quit` - Quits the game after the demo run is finished\.
++ `demo_noinfo` - Disables the information display during the demo playback\.
++ `demo_scroll_pause` - Enables the use of the **ScrollLock** key to pause demo play and record\.
++ `demo_num_runs` - Specifies the number of times to loop the demo\.
++ `demo_profile` - Enables demo profiling\.
++ `demo_file` - Specifies the time demo file name\.

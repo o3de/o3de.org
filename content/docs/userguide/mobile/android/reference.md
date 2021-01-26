@@ -177,12 +177,12 @@ Default: `"landscape"`
 **`icons`**  
 A map of icon override paths based on screen DPI\. All entries should be paths relative to `lumberyard_install_dir/Code/project-name/Resources` or an absolute path\.  
 Available options:  
-+ `default` – Default image used if a specific DPI is not specified
-+ `mdpi` – Medium \~160 DPI
-+ `hdpi` – High \~240 DPI
-+ `xhdp` – Extra high \~320 DPI
-+ `xxhdpi` – Extra\-extra high \~480 DPI
-+ `xxxhdpi` – Extra\-extra\-extra high \~640 DPI
++ `default` - Default image used if a specific DPI is not specified
++ `mdpi` - Medium \~160 DPI
++ `hdpi` - High \~240 DPI
++ `xhdp` - Extra high \~320 DPI
++ `xxhdpi` - Extra\-extra high \~480 DPI
++ `xxxhdpi` - Extra\-extra\-extra high \~640 DPI
 For more information on Android screen DPI settings, see the [Android screen compatibility documentation](https://developer.android.com/guide/practices/screens_support.html)\.   
 
 **Example**  

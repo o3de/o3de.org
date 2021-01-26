@@ -58,25 +58,25 @@ After you register your asset with the asset pipeline, you must enable the Lumbe
 
 Enabling your asset for loading and streaming involves the following steps:
 
-1. **Create an asset data type** – Create a class derived from `AZ::Data::AssetData` that represents your loaded asset data\. This class must be registered with `AZ_RTTI`\. The UUID of the class is also the UUID of your asset in the Asset Processor database\.
+1. **Create an asset data type** - Create a class derived from `AZ::Data::AssetData` that represents your loaded asset data\. This class must be registered with `AZ_RTTI`\. The UUID of the class is also the UUID of your asset in the Asset Processor database\.
 
-1. **Create an asset handler** – Create a singleton class that derives from `AZ::Data::AssetHandler` that loads, saves, and reads your data from buffer\.
+1. **Create an asset handler** - Create a singleton class that derives from `AZ::Data::AssetHandler` that loads, saves, and reads your data from buffer\.
 
-1. **Register your asset type handler with the asset system** – To do this, implement a `RegisterHandler` function inside your handler\.
+1. **Register your asset type handler with the asset system** - To do this, implement a `RegisterHandler` function inside your handler\.
 
-1. **Use your custom asset** – Inside components, use `Asset<T>` members, which are reflected to the editor and for serialization, to refer to your asset\.
+1. **Use your custom asset** - Inside components, use `Asset<T>` members, which are reflected to the editor and for serialization, to refer to your asset\.
 
 ### C\. Customize UI Interaction {#asset-pipeline-asset-type-adding-customize-ui-interaction}
 
 Optionally, you can describe your asset to the UI \(and other systems\) and customize your asset's interaction with it, including with the **Asset Browser**\.
 
-1. **Describe your asset type to the UI** – Use the `AssetTypeInfoBus` to provide integration with UI features like the **Asset Browser**\.
+1. **Describe your asset type to the UI** - Use the `AssetTypeInfoBus` to provide integration with UI features like the **Asset Browser**\.
 
-1. **Customize drag\-and\-drop behavior** – If you have components, you can add reflection to them to enable custom behavior\. For example, when a game developer drags your asset to the viewport, you can make your component be the default component that is spawned\.
+1. **Customize drag\-and\-drop behavior** - If you have components, you can add reflection to them to enable custom behavior\. For example, when a game developer drags your asset to the viewport, you can make your component be the default component that is spawned\.
 
-1. **Customize the context menu** – You can add context menu actions to interact with your asset\.
+1. **Customize the context menu** - You can add context menu actions to interact with your asset\.
 
-1. **Customize file open behavior** – Customize file open operations to create custom behaviors when interaction occurs with your asset\. For example, you can make your asset type open in a custom editor or create custom entities\.
+1. **Customize file open behavior** - Customize file open operations to create custom behaviors when interaction occurs with your asset\. For example, you can make your asset type open in a custom editor or create custom entities\.
 
 In addition, you can use the thumbnail API to generate thumbnails for your asset for use in the **Asset Browser** and other UI contexts\. Although not described here, the related source code is located in the `lumberyard_version\dev\Code\Framework\AzToolsFramework\AzToolsFramework\Thumbnails` directory\.
 
@@ -260,7 +260,7 @@ After you perform these steps, your component appears in the component editor\. 
 
 ### 1\. Describing Your Asset Type to the UI {#asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui}
 
-In addition to deriving your asset handler from `Az::Data::AssetHandler`, you can derive it from `AZ::AssetTypeInfoBus::Handler` for user interface purposes\. `AssetTypeInfoBus` tells Lumberyard the friendly name of your asset type, enables it to appear in the **Asset Browser**, gives it icons, and provides other UI–related features\.
+In addition to deriving your asset handler from `Az::Data::AssetHandler`, you can derive it from `AZ::AssetTypeInfoBus::Handler` for user interface purposes\. `AssetTypeInfoBus` tells Lumberyard the friendly name of your asset type, enables it to appear in the **Asset Browser**, gives it icons, and provides other UI-related features\.
 
 ```
 // AZ::AssetTypeInfoBus::Handler

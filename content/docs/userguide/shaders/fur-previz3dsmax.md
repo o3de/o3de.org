@@ -2,7 +2,7 @@
 description: ' Use the 3DSMax fur previsualization in &ALYlong;. '
 title: 3DSMax &endash; Fur Previsualization
 ---
-# 3DSMax – Fur Previsualization {#shader-ref-fur-previz3dsmax}
+# 3DSMax - Fur Previsualization {#shader-ref-fur-previz3dsmax}
 
 ![\[Example of using 3DSMax fur previsualization.\]](/images/userguide/shaders/shader-ref-fur-21.png)
 
@@ -20,7 +20,7 @@ title: 3DSMax &endash; Fur Previsualization
 
 1. Open the **Material Editor**\. To do this, navigate to **Rendering**, **Material Editor**, **Compact Material Editor**\.
 
-1. Select a material that you want to set for fur, and click the button to the right of the submaterial drop\-down menu \(the button might display “Standard”\)\.
+1. Select a material that you want to set for fur, and click the button to the right of the submaterial drop\-down menu \(the button might display "Standard"\)\.
 
    Choose **DirectX Shader**, and choose to discard the old material\.  
 ![\[Example of selecting a material to set for the fur.\]](/images/userguide/shaders/shader-ref-fur-24.png)

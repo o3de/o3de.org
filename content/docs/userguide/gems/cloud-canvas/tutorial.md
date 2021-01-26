@@ -49,7 +49,7 @@ AWS requires that you provide credentials to verify that you have the appropriat
 
 The IAM user that you create will belong to a group that has administrator permissions\. This allows users in this group to create the Cloud Canvas resources and make them accessible through Lumberyard\. Administrative users in this group will have special permissions beyond the scope of a normal Cloud Canvas user\.
 
-In a team environment, you—as a member of the administrator's group—can create IAM users for each member of your team\. With IAM, you can set permissions specifically for each person’s role in a project\. For example, you might specify that only designers can edit a database, or prevent team members from accidentally writing to resources with which your players interact\.
+In a team environment, you-as a member of the administrator's group-can create IAM users for each member of your team\. With IAM, you can set permissions specifically for each person's role in a project\. For example, you might specify that only designers can edit a database, or prevent team members from accidentally writing to resources with which your players interact\.
 
 For more information on IAM and permissions, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)\.
 
@@ -191,9 +191,9 @@ This is a two\-part process:
 
 1. In the **Initialize Cloud Canvas Resource Manager** dialog box, review the fields provided\.  
 ![\[Provide a project stack name, AWS profile, and AWS region\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-3.png)
-   + **Project stack name** – This name defaults to the name of your project\. You can provide a different name if you want\.
-   + **AWS profile** – This is the profile that you prepared in the previous procedure\. You can click **Edit** to edit this profile or **Add profile** to add another profile\.
-   + **AWS region** – This defaults to **us\-east\-1**, which supports all Lumberyard cloud gems\. Not all cloud gems are supported in all AWS regions\.
+   + **Project stack name** - This name defaults to the name of your project\. You can provide a different name if you want\.
+   + **AWS profile** - This is the profile that you prepared in the previous procedure\. You can click **Edit** to edit this profile or **Add profile** to add another profile\.
+   + **AWS region** - This defaults to **us\-east\-1**, which supports all Lumberyard cloud gems\. Not all cloud gems are supported in all AWS regions\.
 
 1. Click **Create**\. The **Progress log** indicates **Operation in progress**\. Creating the project stack in AWS takes about 5 to 10 minutes\.  
 ![\[Project stack creation in progress\]](/images/userguide/cloud_canvas/cloud-canvas-tutorial-4.png)

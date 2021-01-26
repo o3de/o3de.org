@@ -33,10 +33,10 @@ Deserialization can be conducted from any primitive JSON type to these C\+\+ typ
 ## Enums {#serialization-json-data-types-enums}
 
  In order to serialize enums, they need to be [registered](/docs/userguide/programming/serialization/register-objects#serialization-register-objects-enums) with the same serialization context as the class being serialized\. How values from an enum are serialized and deserialized depend on the details of the enum registration\. 
-+ **Enum value matches the value of a registered field** – The value is serialized as a string containing the field name\.
-+ **Enum value can't be represented as ORed registered values** – The value is serialized as an integer\.
-+  **Enum value can be represented as ORed registered values** – The value is serialized to an array containing strings of the field names that were ORed together\. 
-+  **Enum value can be represented as a mix of ORed registered values and unregistered values** – The value is serialized to an array containing the strings of the appropriate field names and a single integer that when ORed together, produce the serialized value\. 
++ **Enum value matches the value of a registered field** - The value is serialized as a string containing the field name\.
++ **Enum value can't be represented as ORed registered values** - The value is serialized as an integer\.
++  **Enum value can be represented as ORed registered values** - The value is serialized to an array containing strings of the field names that were ORed together\. 
++  **Enum value can be represented as a mix of ORed registered values and unregistered values** - The value is serialized to an array containing the strings of the appropriate field names and a single integer that when ORed together, produce the serialized value\. 
 
 **Example Serializing an enum**  
 These rules are best illustrated with a simple example to show an enum definition, its registration with the serialization context, and the serialization output for various values\.  

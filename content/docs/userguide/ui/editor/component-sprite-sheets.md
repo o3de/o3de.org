@@ -7,9 +7,9 @@ title: Sprite Sheets
 
 You can configure an image as a sprite sheet\. 
 
-A sprite sheet is a collection of separate images—such as icons, buttons, and other UI assets—that are stored in a single image\. Although you can keep all of your images in separate files, using a sprite sheet has several advantages:
-+ Faster performance – For that collection of assets, Lumberyard can load just one image from disk instead of many separate images\. Loading multiple images requires many hard drive seeks and is performance expensive\.
-+ Workflow improvements – When your animation contains multiple frames, for example, it's easier to manage just one image that contains all of the animation frames rather than separate files\. This makes editing and other workflows easier\.
+A sprite sheet is a collection of separate images-such as icons, buttons, and other UI assets-that are stored in a single image\. Although you can keep all of your images in separate files, using a sprite sheet has several advantages:
++ Faster performance - For that collection of assets, Lumberyard can load just one image from disk instead of many separate images\. Loading multiple images requires many hard drive seeks and is performance expensive\.
++ Workflow improvements - When your animation contains multiple frames, for example, it's easier to manage just one image that contains all of the animation frames rather than separate files\. This makes editing and other workflows easier\.
 
   Other workflow improvements include easier management of your assets\. For example, you could have one image called `mainmenu_ui_assets_spritesheet.png` that contains all of your buttons rather than a series of files such as `mainmenu_button1.png`, `mainmenu_button2.png`, and so on\. 
 

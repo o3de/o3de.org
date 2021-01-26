@@ -27,7 +27,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Sets the amount of environmental **'send'** to apply to the default environment, if set\.
 
 **Parameters**  
-`amount` – Float value of the amount to set
+`amount` - Float value of the amount to set
 
 **Return**  
 None
@@ -40,8 +40,8 @@ Yes
 Sets the amount of environmental **'send'** to apply to the specified environment\.
 
 **Parameters**  
-`environmentName` – Name of ATL Environment to set an amount on  
-`amount` – Float value of the amount to set
+`environmentName` - Name of ATL Environment to set an amount on  
+`amount` - Float value of the amount to set
 
 **Return**  
 None

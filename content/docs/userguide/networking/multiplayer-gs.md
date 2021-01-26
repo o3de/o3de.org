@@ -8,7 +8,7 @@ This tutorial walks you through the steps to create a simple multiplayer test ga
 
 This tutorial guides you through the following tasks:
 + Create a level and add entities\.
-+ Bind an entity’s **Transform** component to the network\.
++ Bind an entity's **Transform** component to the network\.
 + Connect a client to the server and verify network replication\.
 
 ## Prerequisites {#network-multiplayer-gs-prerequisites}
@@ -105,9 +105,9 @@ You now have two simple component entities with rigid body physics in the level 
 
 ## Step 2: Binding Sphere Transform Components to the Network {#network-multiplayer-gs-step-2-binding-sphere-transform-components-to-the-network}
 
-After you create the initial level with the sphere and the box, you bind the sphere’s **Transform** component to the network\. This allows the sphere's changes to be replicated over the network to clients\. 
+After you create the initial level with the sphere and the box, you bind the sphere's **Transform** component to the network\. This allows the sphere's changes to be replicated over the network to clients\. 
 
-**To bind the sphere’s transform to the network**
+**To bind the sphere's transform to the network**
 
 1. Select the sphere entity\. 
 

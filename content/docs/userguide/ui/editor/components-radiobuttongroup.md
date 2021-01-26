@@ -12,8 +12,8 @@ You can use the **RadioButtonGroup** component to manage radio buttons\. This co
 To see in\-game examples of completed canvases with the **RadioButtonGroup** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**\. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\RadioButton` directory\. You can open the following canvases:
-+ `Groups.uicanvas` – Examples of different radio button groupings
-+ `RadioButton.uicanvas` – Examples of different behaviors and default settings
++ `Groups.uicanvas` - Examples of different radio button groupings
++ `RadioButton.uicanvas` - Examples of different behaviors and default settings
 
 You can add a prebuilt **RadioButtonGroup** element from the slice library\. When you do this, a group of three radio buttons is automatically created in your **Hierarchy** pane\.
 

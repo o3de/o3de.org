@@ -70,7 +70,7 @@ Follow these guidelines when adding lighting to your mobile game:
 ### Cascade Shadow Map Guidelines {#ios-android-performance-art-guidelines-cascade-shadow-maps}
 
 Lumberyard uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
-+ `e_ShadowsCascadesDebug` – Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
++ `e_ShadowsCascadesDebug` - Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
 
 **Example**  
 The following global shadow map \(GSM\) has the `e_ShadowsCascadesDebug` console variable set to **1**\.  
@@ -78,9 +78,9 @@ The following global shadow map \(GSM\) has the `e_ShadowsCascadesDebug` console
 ![\[Example of a global shadow map (GSM) with the e_ShadowsCascadesDebug console variable set to 1.\]](/images/userguide/mobile/global-shadow-map-example.png)
 
 Use the following console variables to specify the size and how to generate shadow cascades:
-+ `e_GsmLodsNum` – Specifies the number of shadow cascades to use\. The default value is `5`\.
-+ `e_GsmRange` – Specifies the size of the first shadow cascade in square world units\. The default value is `3`, which covers three square units in the world\. In the previous example, the first shadow cascade is drawn in red\.
-+ `e_GsmRangeStep` – Specifies the multiplier to use to calculate the size of the next shadow cascade\. The default value is `3`\.
++ `e_GsmLodsNum` - Specifies the number of shadow cascades to use\. The default value is `5`\.
++ `e_GsmRange` - Specifies the size of the first shadow cascade in square world units\. The default value is `3`, which covers three square units in the world\. In the previous example, the first shadow cascade is drawn in red\.
++ `e_GsmRangeStep` - Specifies the multiplier to use to calculate the size of the next shadow cascade\. The default value is `3`\.
 
   For example, if you set `e_GsmRange` to **3**, the first shadow cascade covers three square units in the world\. To calculate the next shadow cascade size, Lumberyard multiplies the first shadow cascade and the value for `e_GsmRangeStep`\. If the value for `e_GsmRangeStep` is the default value of `3`, the next shadow cascade would cover nine square units in the world\. The next shadow cascade would cover 27 square units in the world, and so on\.
 
@@ -148,7 +148,7 @@ The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular exp
         <Device model="Nexus 7"/> <!-- Nexus 7 -->
         <Device model="Nexus 5"/> <!-- Nexus 5 -->
         <Device model="SM-N910H"/> <!-- Samsung Galaxy Note 4  (Asia-Pacific)-->
-        <Device model=“SM-G900\w{1,2}“/> <!-- Samsung Galaxy S5 -->
+        <Device model="SM-G900\w{1,2}"/> <!-- Samsung Galaxy S5 -->
    </Config>
     <Config file="android_medium.cfg">
         <Device model="SM-T217S"/> <!-- Samsung Galaxy Tab 3 -->
@@ -166,9 +166,9 @@ The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular exp
 ## GPU Memory \(GMEM\) {#ios-android-performance-using-gpu-memory-gmem}
 
 GPU memory \(GMEM\) is a class of optimizations that uses local memory on the GPU to reduce the transfer of large textures between the CPU and GPU\. GMEM can operate in the following modes, depending on what the mobile device can support:
-+ 256 bit mode – The engine can store three GBuffer render targets and depth or stencil in the local GPU pixel memory, while doing the preliminary Z pass, generating the GBuffer, deferring decals, and deferring rain and snow passes\. This mode also stores the diffuse and specular light accumulation textures in the local GPU pixel memory during the deferred shading passes of the renderer\.
-+ 128 bit mode – This mode stores the diffuse and specular light accumulation textures in the local GPU pixel memory during the deferred shading passes of the renderer\. Compared to the 256 bit mode, the 128 bit mode provides less of a performance boost\. However, with the 128 bit mode you can enable certain rendering features that are not available if you use the 256 bit mode\.
-+ Disabled – This mode means that GMEM is not supported or has been disabled in the configuration files\.
++ 256 bit mode - The engine can store three GBuffer render targets and depth or stencil in the local GPU pixel memory, while doing the preliminary Z pass, generating the GBuffer, deferring decals, and deferring rain and snow passes\. This mode also stores the diffuse and specular light accumulation textures in the local GPU pixel memory during the deferred shading passes of the renderer\.
++ 128 bit mode - This mode stores the diffuse and specular light accumulation textures in the local GPU pixel memory during the deferred shading passes of the renderer\. Compared to the 256 bit mode, the 128 bit mode provides less of a performance boost\. However, with the 128 bit mode you can enable certain rendering features that are not available if you use the 256 bit mode\.
++ Disabled - This mode means that GMEM is not supported or has been disabled in the configuration files\.
 
 The renderer uses two OpenGL extensions to determine which GMEM mode is supported for Android devices:
 + Framebuffer fetch \(256 bit mode\)
@@ -180,7 +180,7 @@ For the iOS devices that Lumberyard supports, both GMEM 256 bit mode and 128 bit
 
 You can enable or disable GMEM with the `r_EnableGMEMPath` console variable\.
 + **0** = Disables GMEM in the renderer\.
-+ **1** = Enables the renderer to use GMEM in 256 bit mode\. If the mobile device doesn't support 256 bit mode, the renderer will use 128 bit mode\. If the mobile device doesn’t support 128 bit mode, the renderer will disable GMEM\.
++ **1** = Enables the renderer to use GMEM in 256 bit mode\. If the mobile device doesn't support 256 bit mode, the renderer will use 128 bit mode\. If the mobile device doesn't support 128 bit mode, the renderer will disable GMEM\.
 + **2** = Enables the renderer to use GMEM in 128 bit mode\.
 
 You can only enable or disable GMEM during engine startup\. You must add the `r_EnableGMEMPath` console variable to one of the following files:

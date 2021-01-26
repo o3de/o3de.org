@@ -18,21 +18,21 @@ Use the color picker to apply a color tint and alpha \(opacity\) to your particl
 
 The **Color Picker** includes the following:
 
-1. **Eye dropper** – Selects a color on your screen with magnification\.
+1. **Eye dropper** - Selects a color on your screen with magnification\.
 
-1. **Current** and **New** color – Displays your current color selection and the new color selection\.
+1. **Current** and **New** color - Displays your current color selection and the new color selection\.
 
-1. **HTML and RGB values** – Specifies the color value inputs\.
+1. **HTML and RGB values** - Specifies the color value inputs\.
 
-1. Color window – View the range of colors to select\.
+1. Color window - View the range of colors to select\.
 
-1. **Channels** – Focuses the hue range based on RGB and CMY color sets\.
+1. **Channels** - Focuses the hue range based on RGB and CMY color sets\.
 
-1. Hue, Saturation, Value, and Alpha – Slides to select a new color\.
+1. Hue, Saturation, Value, and Alpha - Slides to select a new color\.
 
-1. **Default Library** palette – A list or grid of the currently selected library palette\.
+1. **Default Library** palette - A list or grid of the currently selected library palette\.
 
-1. Help icon – Displays the online help topic for the **Color Picker**\.
+1. Help icon - Displays the online help topic for the **Color Picker**\.
 
 ## Using the Palette Libraries {#particle-color-picker-libraries}
 

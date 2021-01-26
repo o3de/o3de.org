@@ -23,9 +23,9 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 ![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend N into the animation graph.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-select.png)
 
 1. Connect nodes to the following inputs and output:
-   + **Pose 0 to 9** – Pose inputs\. Connect one or more inputs\.
-   + **Weight** – Input that determines which pose inputs to use and their weights\.
-   + **Output Pose** – Result of the blended poses\.  
+   + **Pose 0 to 9** - Pose inputs\. Connect one or more inputs\.
+   + **Weight** - Input that determines which pose inputs to use and their weights\.
+   + **Output Pose** - Result of the blended poses\.  
 ![\[Blend N node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-inoutputs.png)
 
 1. Select the **Blend N** node\.

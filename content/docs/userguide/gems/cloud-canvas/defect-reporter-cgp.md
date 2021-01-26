@@ -78,8 +78,8 @@ To mark a report as read or unread, use the [Report Detail](#cloud-canvas-cloud-
 On the **Overview** tab, click a report to see detailed information on the **Report Detail** page\.
 
 ![\[Report details page in the Defect Reporter Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-9.png)
-+ **Text Uploads** – Contains links to automatically uploaded `.txt` files like game logs and DxDiag files\. The filenames are automatically generated UUIDs\.
-+ **Image Uploads** – Contains links to automatically uploaded image files like screenshots\. The filenames are automatically generated UUIDs\.
++ **Text Uploads** - Contains links to automatically uploaded `.txt` files like game logs and DxDiag files\. The filenames are automatically generated UUIDs\.
++ **Image Uploads** - Contains links to automatically uploaded image files like screenshots\. The filenames are automatically generated UUIDs\.
 
 **To view report details**
 
@@ -201,9 +201,9 @@ On the **Data Mappings** tab, you can manage the fields that appear on your **Re
 ![\[Data mappings on the Report Configuration tab.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-25.png)
 
 The **Data Mappings** page has the following columns:
-+ **Key **– The key that identifies the raw data to display in the field \(for example, `report_status`\)\.
-+ **Display Name**– The name of the field as it appears on the **Report Detail** page\.
-+ **Display Category **– The section on the **Report Detail** page in which the field appears \(**Report Information**, **Player Information**, or **System Information**\)\.
++ **Key **- The key that identifies the raw data to display in the field \(for example, `report_status`\)\.
++ **Display Name**- The name of the field as it appears on the **Report Detail** page\.
++ **Display Category **- The section on the **Report Detail** page in which the field appears \(**Report Information**, **Player Information**, or **System Information**\)\.
 
 You can add, remove, name, and categorize the fields that appear on the **Report Detail** page\.
 
@@ -254,10 +254,10 @@ On the **Client Configuration** tab, you can define a custom defect report field
 ![\[Click Add New Field to add a custom data collection field\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-30.png)
 
 1. In the **Add New Field** dialog box, for **Field Type**, select one of the options:
-   + **Multiple Choice \(Checkboxes\)** – Create a list of check boxes that are independently selectable\.
-   + **Single Choice \(Radio Buttons\)** – Create a list of round option buttons of which only one can be selected\. 
-   + **Text** – Create a box into which users can enter text\.
-   + **Object** – Create a parent container for nested check boxes, radio buttons, and/or text boxes\. You can use this option to gather detailed information about a single theme or feature\.  
+   + **Multiple Choice \(Checkboxes\)** - Create a list of check boxes that are independently selectable\.
+   + **Single Choice \(Radio Buttons\)** - Create a list of round option buttons of which only one can be selected\. 
+   + **Text** - Create a box into which users can enter text\.
+   + **Object** - Create a parent container for nested check boxes, radio buttons, and/or text boxes\. You can use this option to gather detailed information about a single theme or feature\.  
 ![\[Choosing a data collection field type\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-cgp-31.png)
 
 1. For **Multiple Choice**, choose or modify a default **Title**, or enter your own\.

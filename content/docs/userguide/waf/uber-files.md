@@ -25,16 +25,16 @@ Waf compile jobs include files from the \*\.waf\_files lists\. These files have 
 ```
 
 Valid values for `<uber_file>` are:
-+ **none** – Files in this list are banned from uber files\. If you want your module to use precompiled headers, you must include them in this list\.
-+ **auto** – Files in this list are combined into modules that are optimized for compile time by Waf\. Files that are automatically combined are sorted by absolute path and then combined until the file size path is reached\. The combination must be deterministic given the same input files and file size limit\.
++ **none** - Files in this list are banned from uber files\. If you want your module to use precompiled headers, you must include them in this list\.
++ **auto** - Files in this list are combined into modules that are optimized for compile time by Waf\. Files that are automatically combined are sorted by absolute path and then combined until the file size path is reached\. The combination must be deterministic given the same input files and file size limit\.
 
   File size limits vary depending on the compilation:
-  + 200K – Suggested for compiling remotely using Incredibuild
-  + 300K – Default setting and suggested for compiling locally using an SSD
-  + 400\-500K – Suggested for compiling using an HDD
+  + 200K - Suggested for compiling remotely using Incredibuild
+  + 300K - Default setting and suggested for compiling locally using an SSD
+  + 400\-500K - Suggested for compiling using an HDD
 
   You can specify the file size by updating the **uber\_file\_size** value in the `user_settings` file or by running the following command: `--uber-file-size`
-+ **somefilename\.cpp** – Files in this list are combined into `somefilename.cpp`\. This action is useful when certain files can only be combined together or when you want to combine platform\-specific code\.
++ **somefilename\.cpp** - Files in this list are combined into `somefilename.cpp`\. This action is useful when certain files can only be combined together or when you want to combine platform\-specific code\.
 
 Most waf\_files lists should include one `none` section with the precompiled header and an `auto` section with everything else\.
 

@@ -57,7 +57,7 @@ Adds a required tag to the activation filtering criteria of this component\. Res
 
 **Parameters**  
 const `Tag&`  
-`requiredTag` – *Tag to be added*
+`requiredTag` - *Tag to be added*
 
 **Return**  
 None
@@ -71,7 +71,7 @@ Removes a required tag from the activation filtering criteria of this component\
 
 **Parameters**  
 const `Tag&`  
-`requiredTag` – *Tag to be removed*
+`requiredTag` - *Tag to be removed*
 
 **Return**  
 None
@@ -85,7 +85,7 @@ Adds an excluded tag to the activation filtering criteria of this component\. Re
 
 **Parameters**  
 const `Tag&`  
-`excludedTag` – *Tag to be added*
+`excludedTag` - *Tag to be added*
 
 **Return**  
 None
@@ -98,7 +98,7 @@ Yes
 Removes an excluded tag from the activation filtering criteria of this component\. Results in a reevaluation of the trigger\. Entities inside that no longer satisfy tag criteria are ejected\.
 
 **Parameters**  
-const `Tag&` **excludedTag** – *Tag to be removed*
+const `Tag&` **excludedTag** - *Tag to be removed*
 
 **Return**  
 None
@@ -125,7 +125,7 @@ This bus allows the game to listen for events associated with a particular trigg
  Notifies listeners when `enteringEntityId` enters this trigger\. 
 
 **Parameters**  
-`enteringEntityId` – *ID of entity that has entered this trigger*
+`enteringEntityId` - *ID of entity that has entered this trigger*
 
 **Return**  
 None
@@ -138,7 +138,7 @@ Yes
  Notifies listeners when `enteringEntityId` exits this trigger\. 
 
 **Parameters**  
-`enteringEntityId` – *ID of entity that has exited this trigger*
+`enteringEntityId` - *ID of entity that has exited this trigger*
 
 **Return**  
 None
@@ -155,7 +155,7 @@ This bus allows the game to listen for trigger\-related events associated with a
  Sent when the entity enters `triggerID`\. 
 
 **Parameters**  
-`triggerId` – *ID of entity that the trigger is on*
+`triggerId` - *ID of entity that the trigger is on*
 
 **Return**  
 None
@@ -168,7 +168,7 @@ Yes
  Sent when the entity exits `triggerID`\. 
 
 **Parameters**  
-`triggerId` – *ID of entity that the trigger is on*
+`triggerId` - *ID of entity that the trigger is on*
 
 **Return**  
 None

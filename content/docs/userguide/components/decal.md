@@ -23,12 +23,12 @@ The decal's material file\.
 
 **Sort Priority**  
 Sort priority relative to other decals in the system\.  
-Valid values: 0 – 255  
+Valid values: 0 - 255  
 Default value: 16
 
 **Depth**  
 Projection depth for deferred decals\.  
-Valid values: 0 – 10  
+Valid values: 0 - 10  
 Default value: 1
 
 **Offset**  

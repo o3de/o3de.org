@@ -40,7 +40,7 @@ namespace AZ
 }
 ```
 
-The `AZ::Module` class exposes all points of integration with the AZ framework as virtual functions\. These points of integration have been created as virtual functions on a class so that, whether initialization code is in a static or dynamic library, it’s written the same way as much as possible\. The very first actual initialization calls do need to be different for static and dynamic libraries\. Lumberyard provides a macro to define this uninteresting glue code and let you write the interesting initialization code within your `AZ::Module` class\. 
+The `AZ::Module` class exposes all points of integration with the AZ framework as virtual functions\. These points of integration have been created as virtual functions on a class so that, whether initialization code is in a static or dynamic library, it's written the same way as much as possible\. The very first actual initialization calls do need to be different for static and dynamic libraries\. Lumberyard provides a macro to define this uninteresting glue code and let you write the interesting initialization code within your `AZ::Module` class\. 
 
 We recommend that your `AZ::Module` class contain as little implementation code as possible\. When the `AZ::Module` class is created, the application is just starting up and many systems are unavailable\. If the `AZ::Module` class spawns a singleton or manager class, there is no guarantee that the systems on which this singleton relies will be ready for use\. Instead, you should build your singletons as Lumberyard [system components](/docs/userguide/modules/system-components.md), which can control their initialization order\. 
 

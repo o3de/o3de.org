@@ -6,7 +6,7 @@ title: Tag
 
 Use the **Tag** component to apply one or more labels, or tags, to an entity such as **burning** or **player**\. You can use these tags to find or filter entities with particular traits\. For example, you can set a weapon to inflict double damage to entities tagged as **burning**\.
 
-## EBuses – Request Bus Interface: TagGlobalRequestBus {#component-tag-ebusrequest-tagglobal}
+## EBuses - Request Bus Interface: TagGlobalRequestBus {#component-tag-ebusrequest-tagglobal}
 
 Use the following request function with the **TagGlobalRequestBus** EBus interface to communicate with other components of your game\.
 
@@ -25,7 +25,7 @@ const `AZ::EntityId`
 **Scriptable**  
 Yes
 
-## EBuses – Request Bus Interface: TagRequestBus {#component-tag-ebusrequest-tagrequest}
+## EBuses - Request Bus Interface: TagRequestBus {#component-tag-ebusrequest-tagrequest}
 
 Use the following request functions with the **TagRequestBus** EBus interface to communicate with other components of your game\.
 
@@ -117,7 +117,7 @@ local enemies = TagGlobalRequestBus.Event.RequestTaggedEntities(Crc32("Enemy"));
 local burning = TagComponentRequestBus.Event.HasTag(self.entityId, Crc32("Burning"));
 ```
 
-## EBus – Notification Bus Interface: TagComponentNotificationsBus {#component-tag-notificationbus-tag-comp-notif-bus}
+## EBus - Notification Bus Interface: TagComponentNotificationsBus {#component-tag-notificationbus-tag-comp-notif-bus}
 
 Use the following request functions with the **TagComponentNotificationsBus** notification bus interface to communicate with other components of your game\.
 
@@ -128,7 +128,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 Notifies listeners about tags being added\.
 
 **Parameters**  
-const `Tag&` – Indicates the tag was added
+const `Tag&` - Indicates the tag was added
 
 **Return**  
 None
@@ -141,7 +141,7 @@ Yes
 Notifies listeners about tags being removed\.
 
 **Parameters**  
-const `Tag&` – Indicates the tag was removed
+const `Tag&` - Indicates the tag was removed
 
 **Return**  
 None

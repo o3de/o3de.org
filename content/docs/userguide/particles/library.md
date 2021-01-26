@@ -10,9 +10,9 @@ Use the **Particle Editor** to add and manage particle libraries\. You can renam
 
 **Multiple selection**  
 Press **Ctrl** or **Shift** to select multiple emitters\. The emitters can be from different libraries\. You can do any of the following:  
-**Copy** – Copies the selected item\. If you copy multiple items, they become children of the item that you paste them on\.  
-**Delete** – Deletes all selected emitters\.  
-**Group** – Groups the selected items that share the same parent\. Select the emitters that you want to group and press **Ctrl\+G**\. Alternatively, you can right\-click the selected emitters and choose **Group**\.  
+**Copy** - Copies the selected item\. If you copy multiple items, they become children of the item that you paste them on\.  
+**Delete** - Deletes all selected emitters\.  
+**Group** - Groups the selected items that share the same parent\. Select the emitters that you want to group and press **Ctrl\+G**\. Alternatively, you can right\-click the selected emitters and choose **Group**\.  
 If you use hot keys while multiple items are selected, the hot keys apply to all selected items\.
 
 **Drag and drop**  

@@ -72,7 +72,7 @@ Yes
 Spawns the selected slice at the entity's location with the specified relative `offset`\.
 
 **Parameters**  
-`offset` – The coordinates to offset the slice when it spawns\.   
+`offset` - The coordinates to offset the slice when it spawns\.   
 Type: Transform
 
 **Return**  
@@ -87,7 +87,7 @@ Yes
 Spawns the provided `slice` at the specified world transform\.
 
 **Parameters**  
-`world` – The world coordinates\.  
+`world` - The world coordinates\.  
 Type: Transform
 
 **Return**  
@@ -102,7 +102,7 @@ Yes
 Spawns the selected `slice` at the entity's location\.
 
 **Parameters**  
-`slice` – The dynamic slice asset\.
+`slice` - The dynamic slice asset\.
 
 **Return**  
 The ID of the spawning slice\.  
@@ -116,8 +116,8 @@ No
 Spawns the selected `slice` at the entity's location with the specified relative `offset`\.
 
 **Parameters**  
-`slice` – The dynamic slice asset\.  
-`offset` – The coordinates to offset the slice when it spawns\.  
+`slice` - The dynamic slice asset\.  
+`offset` - The coordinates to offset the slice when it spawns\.  
 Type: Transform
 
 **Return**  
@@ -132,8 +132,8 @@ No
 Spawns the selected `slice` at the specified world transform\.
 
 **Parameters**  
-`slice` – The dynamic slice asset\.  
-`world` – The world coordinates\.  
+`slice` - The dynamic slice asset\.  
+`world` - The world coordinates\.  
 Type: Transform
 
 **Return**  
@@ -148,7 +148,7 @@ No
 Destroys all entities from the slice that spawned\. If the slice is not finished spawning, the slice is canceled\. The **Spawner** component can destroy only slices that it spawned\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`
 
 **Return**  
@@ -201,7 +201,7 @@ Yes
 Returns the IDs of current entities from a slice that spawned\. Note that spawning is not instant; if a slice is still spawning, then the entities are not returned\. If an entity has been destroyed since it was spawned, its ID is not returned\. This function can query only slices spawned by this **Spawner** component\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`
 
 **Return**  
@@ -234,7 +234,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Notifies that a slice finished spawning\.
 
 **Parameters**  
-`spawnedEntities` – Entities that the **Spawner** component spawned\.  
+`spawnedEntities` - Entities that the **Spawner** component spawned\.  
 Type: Vector of entity IDs\.
 
 **Return**  
@@ -248,7 +248,7 @@ Yes
 Notifies that the slice is beginning to spawn its entities\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`
 
 **Return**  
@@ -262,7 +262,7 @@ Yes
 Notifies that the slice finished spawning its entities\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`
 
 **Return**  
@@ -276,9 +276,9 @@ Yes
 Notifies that an entity spawned\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`  
-`spawnedEntity` – The entity ID\.
+`spawnedEntity` - The entity ID\.
 
 **Return**  
 None
@@ -291,9 +291,9 @@ Yes
 Notifies that the entities spawned from a slice and sends a list of the entity IDs\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`  
-`spawnedEntities` – The IDs of the entities\.  
+`spawnedEntities` - The IDs of the entities\.  
 Type: A vector of entity IDs\.
 
 **Return**  
@@ -307,7 +307,7 @@ No
 Notifies when a slice that spawned is destroyed\. This occurs when all entities from a spawn are destroyed or when the slice fails to spawn\.
 
 **Parameters**  
-`ticket` – The ID of the spawned slice\.  
+`ticket` - The ID of the spawned slice\.  
 Type: `SliceInstantiationTicket`
 
 **Return**  

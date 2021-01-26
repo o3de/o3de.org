@@ -85,7 +85,7 @@ Yes
 Spawns the UI slice specified in the component at the entity's location with the specified relative offset\.
 
 **Parameters**  
-`Relative` – The offset position from the entity with the spawner component\.
+`Relative` - The offset position from the entity with the spawner component\.
 
 **Return**  
 The slice instantiation ticket for this spawn\.
@@ -98,7 +98,7 @@ Yes
 Spawns the slice specified in the component at the specified viewport position\.
 
 **Parameters**  
-`Pos` – The viewport position at which to spawn the slice\.
+`Pos` - The viewport position at which to spawn the slice\.
 
 **Return**  
 The slice instantiation ticket for this spawn\.
@@ -111,7 +111,7 @@ Yes
 Spawns the specified slice at the entity's location\.
 
 **Parameters**  
-`slice` – Specifies the slice asset to be spawned\.
+`slice` - Specifies the slice asset to be spawned\.
 
 **Return**  
 The slice instantiation ticket for this spawn\.
@@ -124,8 +124,8 @@ No
 Spawns the given slice at the entity's location with the relative offset\.
 
 **Parameters**  
-`slice` – Specifies the slice asset to be spawned\.  
-`relative` – The offset position from the entity with the spawner component\.
+`slice` - Specifies the slice asset to be spawned\.  
+`relative` - The offset position from the entity with the spawner component\.
 
 **Return**  
 The slice instantiation ticket for this spawn\.
@@ -138,8 +138,8 @@ No
 Spawns the specified slice at the specified viewport position\.
 
 **Parameters**  
-`slice` – Specifies the slice asset to be spawned\.  
-`pos` – The viewport position at which to spawn the slice\.
+`slice` - Specifies the slice asset to be spawned\.  
+`pos` - The viewport position at which to spawn the slice\.
 
 **Return**  
 The slice instantiation ticket for this spawn\.
@@ -158,7 +158,7 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 Announces that the slice has been spawned, but entities have not yet been activated\. [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events are about to be dispatched\.
 
 **Parameters**  
-`ticket` – The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
 **Scriptable**  
 Yes
@@ -168,7 +168,7 @@ Yes
 Announces that a slice has been spawned\. This function is called once for each spawn request\. All [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) events have been dispatched\. 
 
 **Parameters**  
-`ticket` – The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
 **Scriptable**  
 Yes
@@ -178,8 +178,8 @@ Yes
 Announces that an entity has been created during a spawn\. This function is called once for each entity created while spawning a slice\.
 
 **Parameters**  
-`ticket` – The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
-`spawnedEntity` – Specifies the ID of the spawned entity\.
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+`spawnedEntity` - Specifies the ID of the spawned entity\.
 
 **Scriptable**  
 Yes
@@ -189,8 +189,8 @@ Yes
 Provides the list of all entities that were created during a spawn\. This function is called only once for each spawn request\. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call\. 
 
 **Parameters**  
-`ticket` – The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
-`spawnedEntities` – Specifies the IDs of the spawned entities\.
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+`spawnedEntities` - Specifies the IDs of the spawned entities\.
 
 **Scriptable**  
 Yes
@@ -202,8 +202,8 @@ Provides the list of all top\-level entities that were created during a spawn\. 
 Top\-level entities are entities that do not have any parent within the slice\. Typically, there is only one top\-level entity for each slice\.
 
 **Parameters**  
-`ticket` – The slice instantiation ticket returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
-`spawnedEntities` – Specifies the IDs of the spawned top\-level entities\.
+`ticket` - The slice instantiation ticket returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.  
+`spawnedEntities` - Specifies the IDs of the spawned top\-level entities\.
 
 **Scriptable**  
 Yes
@@ -213,7 +213,7 @@ Yes
 Announces that a spawn request has failed\.
 
 **Parameters**  
-`ticket` – The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
+`ticket` - The slice instantiation ticket that is returned by the spawn function\. These can be compared in order to know which spawn request it relates to\.
 
 **Scriptable**  
 Yes

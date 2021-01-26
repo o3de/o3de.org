@@ -69,10 +69,10 @@ You have a 3D vector XYZ that indicates a position in a 3D world, but you only n
 ![\[Example of the Vector Decompose nodes in an animation graph.\]](/images/userguide/actor-animation/vector-decompose.png)
 
 You don't need to use **Vector Decompose** nodes if you are simply adding or subtracting one of the X, Y, Z, or W positions\. For typical **Vector3** to **Vector2** \(and vice versa\) conversion, or **Vector3** to **Vector4** \(and vice versa\) conversion, the **Animation Editor** automatically converts vectors in the following way:
-+ **Vector2** to **Vector3** – Adds the **Z** component set to `0`\.
-+ **Vector3** to **Vector2** – Ignores the **Z** component from **Vector3**\.
-+ **Vector3** to **Vector4** – Adds the **W** component set to `0`\.
-+ **Vector4** to **Vector3** – Ignores the **W** component from **Vector4**\.
++ **Vector2** to **Vector3** - Adds the **Z** component set to `0`\.
++ **Vector3** to **Vector2** - Ignores the **Z** component from **Vector3**\.
++ **Vector3** to **Vector4** - Adds the **W** component set to `0`\.
++ **Vector4** to **Vector3** - Ignores the **W** component from **Vector4**\.
 
 ## Boolean Logic Node {#boolean-logic-node}
 

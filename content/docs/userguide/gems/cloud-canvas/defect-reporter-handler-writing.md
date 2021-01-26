@@ -10,11 +10,11 @@ Client\-side data gathering can be performed by EBus request handlers\.
 ## Examples of Handlers {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-examples}
 
  The following are examples of the specialized tasks that defect reporting handlers can perform:
-+ **Screenshot Attacher** – Takes a screenshot and adds it to the report\.
-+ **Log File Attacher** – Flushes the current log file and adds it to the report\.
-+ **Health Information Collector** – Captures the current player health statistics from the gameplay system, creates a string of results in JSON format, and adds it to the report\.
-+ **DXDiag Collector** – Runs the DXDiag tool, stores the results in a file, and then adds the file as an attachment to the report\.
-+ **Render State Capturer** – Captures details about the render state, gets `.png` files of all current video buffers\. Creates attachments and a JSON response for the report\.
++ **Screenshot Attacher** - Takes a screenshot and adds it to the report\.
++ **Log File Attacher** - Flushes the current log file and adds it to the report\.
++ **Health Information Collector** - Captures the current player health statistics from the gameplay system, creates a string of results in JSON format, and adds it to the report\.
++ **DXDiag Collector** - Runs the DXDiag tool, stores the results in a file, and then adds the file as an attachment to the report\.
++ **Render State Capturer** - Captures details about the render state, gets `.png` files of all current video buffers\. Creates attachments and a JSON response for the report\.
 
 ## Defect Reporter and Handler Workflow {#cloud-canvas-cloud-gem-defect-reporter-handler-writing-defect-reporter-and-handler-workflow}
 

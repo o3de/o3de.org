@@ -30,26 +30,26 @@ When you create your game project with the Project Configurator, you can use the
 ### Empty Template {#project-configurator-empty-template}
 
 The **Empty** template has the minimum features required for the editor to load and run a game project:
-+ **CryLegacy** – Enables the editor and launcher to load a game project that contains legacy code
-+ **Legacy Game Interface** – Enables the editor and launcher to load a game project that contains legacy game interface code
-+ **LyShine** gem – Provides access to the in\-game UI system for Lumberyard
-+ **Maestro** gem – Provides access to cinematics features
++ **CryLegacy** - Enables the editor and launcher to load a game project that contains legacy code
++ **Legacy Game Interface** - Enables the editor and launcher to load a game project that contains legacy game interface code
++ **LyShine** gem - Provides access to the in\-game UI system for Lumberyard
++ **Maestro** gem - Provides access to cinematics features
 
 ### Default Template {#project-configurator-default-template}
 
 The **Default** template builds on the **Empty** template and enables the following gems to provide basic features for game development:
-+ **Amazon GameLift** – Provides capabilities to use this service and create game sessions
-+ **Camera** – Includes a basic camera component for runtime rendering
-+ **ChatPlay** – Includes the interface for triggering events based on Twitch chat activity
-+ **Cloud Canvas** – Provides visual scripting capabilities to power your game backend with AWS services
-+ **Gestures** – Allows gesture\-based input, including click/tap, drag, hold, pinch, rotate, and swipe
-+ **Http Requestor** – Adds support to handle HTTP and HTTPS requests
-+ **In\-App Purchases** – Provides the in\-app purchasing API for Android and iOS
-+ **Input Management Framework** – Converts input to user\-defined gameplay events
-+ **LyShine** – Provides access to the in\-game UI system for Lumberyard
-+ **PBS Reference Materials** – Includes a set of physically based shading reference materials and texture assets
-+ **Physics Entities** \(Legacy\) – Provides physics entity modifiers to simulate physical events
-+ **Primitive Assets** – Provides primitive objects to manipulate in your level
++ **Amazon GameLift** - Provides capabilities to use this service and create game sessions
++ **Camera** - Includes a basic camera component for runtime rendering
++ **ChatPlay** - Includes the interface for triggering events based on Twitch chat activity
++ **Cloud Canvas** - Provides visual scripting capabilities to power your game backend with AWS services
++ **Gestures** - Allows gesture\-based input, including click/tap, drag, hold, pinch, rotate, and swipe
++ **Http Requestor** - Adds support to handle HTTP and HTTPS requests
++ **In\-App Purchases** - Provides the in\-app purchasing API for Android and iOS
++ **Input Management Framework** - Converts input to user\-defined gameplay events
++ **LyShine** - Provides access to the in\-game UI system for Lumberyard
++ **PBS Reference Materials** - Includes a set of physically based shading reference materials and texture assets
++ **Physics Entities** \(Legacy\) - Provides physics entity modifiers to simulate physical events
++ **Primitive Assets** - Provides primitive objects to manipulate in your level
 
 To see the gems that enabled for the **Default** template, create a project from that template and choose **Enable Gems**\.
 
@@ -79,10 +79,10 @@ You can create a game project using the Project Configurator or command line\. W
 If **Create new** is unavailable, open Lumberyard Setup Assistant and select **Compile the game code**\.  
 In Lumberyard version 1\.23, if you intend to create new projects, the following options must be selected:  
 **Run your game project**
-**Run the Lumberyard Editor and tools** – Use Lumberyard Editor to create a game
-**Compile the game code**\* – Compile the game code to include any changes that you have made
-**Compile the engine and asset pipeline**\* – Compile the engine code and asset pipeline to include any changes that you have made
-**Compile the Lumberyard Editor and tools**\* – Compile Lumberyard tools to include any changes that you have made
+**Run the Lumberyard Editor and tools** - Use Lumberyard Editor to create a game
+**Compile the game code**\* - Compile the game code to include any changes that you have made
+**Compile the engine and asset pipeline**\* - Compile the engine code and asset pipeline to include any changes that you have made
+**Compile the Lumberyard Editor and tools**\* - Compile Lumberyard tools to include any changes that you have made
 \*If you select any of these options, you may need to perform additional tasks, such as installing Microsoft Visual Studio\. If so, these tasks display on the **Install software** and **Required SDKs** pages\. Follow the instructions in Lumberyard Setup Assistant to obtain the software and third\-party SDKs that aren't installed\.  
 ![\[Create a new game project with Project Configurator and Lumberyard Setup Assistant.\]](/images/userguide/configurator/setup/ui-create-new-project-A-1.25.png)
 

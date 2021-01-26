@@ -8,10 +8,10 @@ title: Waf Spec Files (*.json)
 You use Waf spec files to specify which modules to include in a build configuration\. All settings are mandatory if not explicitly stated otherwise\. 
 
 A typical spec includes all modules that are required to build a game project\. Lumberyard includes the following with the engine SDK:
-+ **`game_and_engine.json`** – Specs to build the sample game and engine
-+ **`resource_compiler.json`** – Specs to build the Resource Compiler
-+ **`pipeline.json`** – Specs to build the pipeline tools
-+ **`all.json`** – Specs to build all projects
++ **`game_and_engine.json`** - Specs to build the sample game and engine
++ **`resource_compiler.json`** - Specs to build the Resource Compiler
++ **`pipeline.json`** - Specs to build the pipeline tools
++ **`all.json`** - Specs to build all projects
 
 The following is an example `*.json` file that illustrates a spec file layout:
 
@@ -42,8 +42,8 @@ The `disable_game_projects` keyword does not compile the games specified in the 
 ## Platform\-specific Entry Values {#spec-file-entries}
 
 You can apply the entry values in the table to targeted platforms and/or configurations\. For example, a spec can build specific modules for win\_x64 or a spec can build different modules in certain configurations\.
-+ **modules** – Includes in the build all modules defined by this key, regardless of platform and configuration\.
-+ **win\_x64\_modules** – Includes in the win\_64 build all modules defined by this key, regardless of configuration\.
++ **modules** - Includes in the build all modules defined by this key, regardless of platform and configuration\.
++ **win\_x64\_modules** - Includes in the win\_64 build all modules defined by this key, regardless of configuration\.
 
 Overlapping lists are combined into a single list based on the build command\. 
 

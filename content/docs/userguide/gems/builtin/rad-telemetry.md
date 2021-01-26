@@ -32,9 +32,9 @@ When compiling a project with the RAD Telemetry Gem enabled, the static `lib` fi
 ## Instrumenting Your Code {#gems-system-gem-rad-telemetry-instrumenting}
 
 With the RAD Telemetry Gem, Lumberyard introduces a set of scoped performance markers:
-+ `AZ_PROFILE_FUNCTION` – Instruments entire functions\. Automatically names the performance event with the function's name\.
-+ `AZ_PROFILE_SCOPE` – Instruments a local scope within a function of interest\. You must provide the name\.
-+ `AZ_PROFILE_SCOPE_DYNAMIC` – Instruments a `printf` style format string to dynamically generate a performance event name\. Use the dynamic name sparingly because there may be performance overhead of a string copy and transmission over the network\.
++ `AZ_PROFILE_FUNCTION` - Instruments entire functions\. Automatically names the performance event with the function's name\.
++ `AZ_PROFILE_SCOPE` - Instruments a local scope within a function of interest\. You must provide the name\.
++ `AZ_PROFILE_SCOPE_DYNAMIC` - Instruments a `printf` style format string to dynamically generate a performance event name\. Use the dynamic name sparingly because there may be performance overhead of a string copy and transmission over the network\.
 
 A scoped performance marker constructs an object that calls a `start` event and calls a `stop` event when it is destroyed\. This means that you do not have to worry about early returns\. We recommend that you use the `AZ_PROFILE` events when marking up your code, as it allows you to switch to Driller for a different view of profiling data\.
 

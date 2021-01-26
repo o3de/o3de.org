@@ -25,10 +25,10 @@ Because template drivers are run from the AZ Code Generator executable using Pyt
 1. Set the arguments file, prefixed with `@`, as the argument to the script\. 
 
    The following arguments are required: 
-   +  `-codegen-script` – Absolute path to the driver script that you want to debug\. 
-   +  `-input-path` – Absolute path on which source file paths are based\. Usually this path is the same as the location of the wscript for a given target\. 
-   +  `-input-file` – Relative path from input path to the source file that is used for input\.
-   +  `-output-file` – Absolute path where generated code will be written\.
+   +  `-codegen-script` - Absolute path to the driver script that you want to debug\. 
+   +  `-input-path` - Absolute path on which source file paths are based\. Usually this path is the same as the location of the wscript for a given target\. 
+   +  `-input-file` - Relative path from input path to the source file that is used for input\.
+   +  `-output-file` - Absolute path where generated code will be written\.
 
 After you have completed the preceding steps, you should be able to launch your debugger and set breakpoints in your driver script\. 
 

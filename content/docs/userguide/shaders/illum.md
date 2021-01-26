@@ -105,16 +105,16 @@ Default value: 3
 **Roughness maximum footprint**  
 Specifies the maximum allowed area of the projected pixel footprint at any point in the scene\.  
 To use this parameter, you must enable the **Specular Antialiasing** shader generation parameter\.  
-Valid value ranges: 0–10
+Valid value ranges: 0-10
 
 **SAA Roughness Boost**  
 Specifies the degree to which the effect should be applied\.  
 To use this parameter, you must enable the **Specular Antialiasing** shader generation parameter\.  
-Valid value ranges: 0–10
+Valid value ranges: 0-10
 
 **SSS Index**  
 Controls subsurface scattering profile \(SSS\) and the amount\.  
-Valid value ranges: 0\.01–0\.99 for marble; 1\.00–1\.99 for skin\.  
+Valid value ranges: 0\.01-0\.99 for marble; 1\.00-1\.99 for skin\.  
 Default value: 1\.2
 
 ## Shader Generation Parameters {#shader-ref-illum-shader-generation-parameters}

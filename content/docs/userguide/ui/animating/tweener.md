@@ -9,7 +9,7 @@ Lumberyard's Scripted Tweener Entity system is a script\-driven animation system
 
 The Scripted Tweener Entity system primarily animates entities in the **UI Editor**, and also supports the following Lumberyard component entities\. 
 + [Particle](/docs/userguide/components/particle.md)
-+ Lights – [Point Light](/docs/userguide/components/point-light.md), [Area Light](/docs/userguide/components/area-light.md), and [Projector Light](/docs/userguide/components/projector-light.md)\.
++ Lights - [Point Light](/docs/userguide/components/point-light.md), [Area Light](/docs/userguide/components/area-light.md), and [Projector Light](/docs/userguide/components/projector-light.md)\.
 + [Mesh](/docs/userguide/components/static-mesh.md)
 + [Transform](/docs/userguide/components/transform.md)
 

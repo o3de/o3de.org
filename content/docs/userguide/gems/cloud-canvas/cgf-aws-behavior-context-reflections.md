@@ -213,7 +213,7 @@ The `AWSBehaviorHTTPNotificationsBus` has the following methods\.
 | --- | --- | 
 | void OnSuccess\(string resultBody\) | Called when the GET operation succeeds\. The resultBody parameter contains the request response body\. | 
 | void OnError\(string errorBody\) | Called when the GET operation fails\. The errorBody parameter contains the error body\. | 
-| void GetResponse\(int responseCode, StringMap headerMap, string contentType, string responseBody\) |  Called when the request returns a response\. The parameters contain the following information: `responseCode` – The HTTP response code\. `headerMap` – Contains all the header information\. It can be passed to a [StringMap](#cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class) `map` property\. `contentType` – Contains the MIME content type for the response data\. `responseBody` – Contains the response data in string format\.  | 
+| void GetResponse\(int responseCode, StringMap headerMap, string contentType, string responseBody\) |  Called when the request returns a response\. The parameters contain the following information: `responseCode` - The HTTP response code\. `headerMap` - Contains all the header information\. It can be passed to a [StringMap](#cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class) `map` property\. `contentType` - Contains the MIME content type for the response data\. `responseBody` - Contains the response data in string format\.  | 
 
 ### JSON Class {#cloud-canvas-cgf-aws-behavior-context-reflections-json-class}
 
@@ -281,7 +281,7 @@ The `AWSBehaviorURLNotificationsBus` has the following methods\.
 
 ### StringMap Class {#cloud-canvas-cgf-aws-behavior-context-reflections-stringmap-class}
 
-A simple mapping of string key–value pairs\. The `StringMap` class is most often used with the HTTP `Get` class but is useful for general string map operations\.
+A simple mapping of string key-value pairs\. The `StringMap` class is most often used with the HTTP `Get` class but is useful for general string map operations\.
 
 
 **Properties**  
@@ -295,12 +295,12 @@ A simple mapping of string key–value pairs\. The `StringMap` class is most oft
 
 | Method | Description | 
 | --- | --- | 
-| void Clear\(\) | Removes all key–value pairs from the map\. | 
-| int GetSize\(\) | Returns the number of key–value pairs currently stored in the map\. | 
+| void Clear\(\) | Removes all key-value pairs from the map\. | 
+| int GetSize\(\) | Returns the number of key-value pairs currently stored in the map\. | 
 | string GetValue\(string key\) | Returns the value at the specified key\. If the key that was specified doesn't exist, returns an empty string without adding the key to the map\. | 
 | boolean HasKey\(string key\) | Returns true if the map contains the specified key\. | 
-| void LogToDebugger\(\) | Displays all key–value pairs in the console\. | 
-| void RemoveKey\(string key\) | Removes the key–value pair from the map that corresponds to the specified key\. If the specified key does not exist, fails without returning an error\. | 
-| void SetValue\(string key, string value\) | Sets the value of the specified key to the specified value\. If the key doesn't exist, the key–value pair is added to the map\. If the key does exist, its existing value is overwritten with the specified value\. | 
+| void LogToDebugger\(\) | Displays all key-value pairs in the console\. | 
+| void RemoveKey\(string key\) | Removes the key-value pair from the map that corresponds to the specified key\. If the specified key does not exist, fails without returning an error\. | 
+| void SetValue\(string key, string value\) | Sets the value of the specified key to the specified value\. If the key doesn't exist, the key-value pair is added to the map\. If the key does exist, its existing value is overwritten with the specified value\. | 
 
 The `StringMap` class has no corresponding EBus handlers\.

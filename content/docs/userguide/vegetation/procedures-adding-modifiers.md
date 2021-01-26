@@ -12,9 +12,9 @@ If you have [added a gradient for random selection](/docs/userguide/vegetation/p
 ![\[Vegetation area before adding any modifiers.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
 
 To remedy this, do the following:
-+ **Add a scale modifier** – Varies the size of the vegetation\. You can specify a range of scale, which sizes vegetation up or down while maintaining original proportions\.
-+ **Add a rotation modifier** – Changes the direction that vegetation faces\. In this procedure, you modify only the z\-axis rotation\.
-+ **Add a position modifier** – Modifies where on the grid points the plants appear\. You can shift them by varying amounts on the x\-, y\-, and z\-axes\. Modifying the x\- and y\-axes moves the plants on the ground plane\. Modifying the z\-axis changes the height at which a plant sprouts \(this procedure doesn't modify the z\-axis\)\.
++ **Add a scale modifier** - Varies the size of the vegetation\. You can specify a range of scale, which sizes vegetation up or down while maintaining original proportions\.
++ **Add a rotation modifier** - Changes the direction that vegetation faces\. In this procedure, you modify only the z\-axis rotation\.
++ **Add a position modifier** - Modifies where on the grid points the plants appear\. You can shift them by varying amounts on the x\-, y\-, and z\-axes\. Modifying the x\- and y\-axes moves the plants on the ground plane\. Modifying the z\-axis changes the height at which a plant sprouts \(this procedure doesn't modify the z\-axis\)\.
 
 Applying modifiers to your vegetation gives it a realistic, natural look\.
 

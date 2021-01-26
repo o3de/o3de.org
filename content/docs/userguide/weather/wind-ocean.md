@@ -21,7 +21,7 @@ You can simulate realistic wind and wave effects for the ocean in your level\.
 1. In the **Rollup Bar**, on the **Terrain** tab, under **Terrain**, click **Environment**\.
 
 1. Under **OceanAnimation**, adjust the following parameters:
-   + **Wind Direction** – Specifies the direction to push the water texture crawl in radians\. Valid values: 0\.0 to 6\.28\.
-   + **Wind Speed** – Specifies how frequently the texture water crawl updates\.
-   + **Wave Frequency** – Sets the frequency of waves\. Smaller values mean fewer, longer waves \(deep ocean depth\)\. Larger values mean more, shorter waves \(shallow ocean depth\)\.
-   + **Wave Height** – Sets wave height in meters by means of vertex displacement\.
+   + **Wind Direction** - Specifies the direction to push the water texture crawl in radians\. Valid values: 0\.0 to 6\.28\.
+   + **Wind Speed** - Specifies how frequently the texture water crawl updates\.
+   + **Wave Frequency** - Sets the frequency of waves\. Smaller values mean fewer, longer waves \(deep ocean depth\)\. Larger values mean more, shorter waves \(shallow ocean depth\)\.
+   + **Wave Height** - Sets wave height in meters by means of vertex displacement\.

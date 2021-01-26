@@ -15,9 +15,9 @@ For each asset builder that registered a particular source asset type:
 1. The `ProcessJob` operation is invoked, which is where your source files are processed into game\-ready assets\. 
 
 A job is uniquely identified by a tuple that contains the following:
-+ **Job key** – The key that the builder emits for that kind of job in its own `CreateJobs` function\.
-+ **Platform** – The platform identifier of the job\. This is generally set to the same platform as the job that runs\.
-+ **Source file** – The source file that the job operates on\.
++ **Job key** - The key that the builder emits for that kind of job in its own `CreateJobs` function\.
++ **Platform** - The platform identifier of the job\. This is generally set to the same platform as the job that runs\.
++ **Source file** - The source file that the job operates on\.
 
 Use the job dependency feature to specify dependencies on jobs, and tell Asset Processor to process jobs for the following conditions:
 

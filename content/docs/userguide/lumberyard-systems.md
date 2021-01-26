@@ -62,7 +62,7 @@ Lumberyard consists of the following major systems that help you develop levels 
    
 + [Twitch ChatPlay System](/docs/userguide/gems/builtin/chatplay/intro.md)
 
-  The Twitch ChatPlay Gem provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world’s leading social video platform and community for gamers\. Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.
+  The Twitch ChatPlay Gem provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world's leading social video platform and community for gamers\. Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.
 
    
 + [Creating and Customizing Project User Interfaces](/docs/userguide/ui/editor/intro.md)

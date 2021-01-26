@@ -4,7 +4,7 @@ title: Using Memory Allocators in &ALY;
 ---
 # Using Memory Allocators in Lumberyard {#memory-allocators}
 
-Lumberyard’s memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
+Lumberyard's memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
 
 Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
@@ -36,16 +36,16 @@ Lumberyard uses the following memory allocation functions\. You can find the sou
 The following diagram illustrates the hierarchy of AZ memory allocators\.
 
 ![\[AZ memory allocator hierarchy\]](/images/userguide/memory-allocators-1.png)
-+ **`OSAllocator`** – Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap\. `OSAllocator` is booted as early as possible in `main()`, and removed last, right before returning\. If you don't create `OSAllocator`, the `SystemAllocator` creates it when needed\.
++ **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap\. `OSAllocator` is booted as early as possible in `main()`, and removed last, right before returning\. If you don't create `OSAllocator`, the `SystemAllocator` creates it when needed\.
 
   `OSAllocator` uses system calls to allocate memory\. The calls are not recorded or tracked\. Other allocators use `OSAllocator` to obtain memory from the operating system\. Drillers and memory tracking tools can use `OSAllocator` for data debugging\.
-+ **`BestFitExternalMapAllocator`** – Uses external maps to store memory tracking information for uncached memory\.
-+ **`SystemAllocator`** – The system allocator is the general purpose allocator for the AZ memory library\. Like all other allocators, `SystemAllocator` is a singleton, but it must be initialized first and destroyed last\. All other allocators use `SystemAllocator` for internal allocations\.
-+ **`LegacyAllocator`** – Handles legacy memory allocations\. For more information, see [Legacy Memory Management](#memory-allocators-legacy-memory-management)\.
-+ **`PoolAllocator`** – Performs extremely fast small object memory allocations\. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`\.
++ **`BestFitExternalMapAllocator`** - Uses external maps to store memory tracking information for uncached memory\.
++ **`SystemAllocator`** - The system allocator is the general purpose allocator for the AZ memory library\. Like all other allocators, `SystemAllocator` is a singleton, but it must be initialized first and destroyed last\. All other allocators use `SystemAllocator` for internal allocations\.
++ **`LegacyAllocator`** - Handles legacy memory allocations\. For more information, see [Legacy Memory Management](#memory-allocators-legacy-memory-management)\.
++ **`PoolAllocator`** - Performs extremely fast small object memory allocations\. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`\.
 **Note**  
 `PoolAllocator` is not thread safe\. If you need a thread\-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization\.
-+ **`ThreadPoolAllocator`** – Thread safe pool allocator\. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as Lumberyard requires a unique static variable for the allocator type\.
++ **`ThreadPoolAllocator`** - Thread safe pool allocator\. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as Lumberyard requires a unique static variable for the allocator type\.
 
 ## Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}
 
@@ -64,7 +64,7 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 
 | Schema | Description | 
 | --- | --- | 
-| AZ::HphaSchema |  This is the preferred schema\. It combines a small block allocator for small allocations and a [red\-black tree](https://en.wikipedia.org/wiki/Red-black_tree) for large allocations\. This provides good general purpose performance\. Use this schema if you're not sure which one to use\.  `HphaSchema` is based on Dimitar Lazarov's "High Performance Heap Allocator" \(Game Programming Gems 7, Charles River Media, 2008, pp\. 15–23\)\.   | 
+| AZ::HphaSchema |  This is the preferred schema\. It combines a small block allocator for small allocations and a [red\-black tree](https://en.wikipedia.org/wiki/Red-black_tree) for large allocations\. This provides good general purpose performance\. Use this schema if you're not sure which one to use\.  `HphaSchema` is based on Dimitar Lazarov's "High Performance Heap Allocator" \(Game Programming Gems 7, Charles River Media, 2008, pp\. 15-23\)\.   | 
 | AZ::HeapSchema |  Uses `nedmalloc` internally\. Because `nedmalloc` uses thread caches to accelerate the re\-use of memory, `HeapSchema` can be useful for intensive allocation processing across multiple threads\.  | 
 | AZ::BestFitExternalSchema |  A best\-fit allocation scheme that uses an external map to store bookkeeping outside the memory being managed\. Because the tracking node is stored outside the main chunk, Lumberyard can use this allocator with uncached memory\. This is most useful for GPU resource management \(for example, for textures, constant buffers, and compute buffers\)\.  | 
 | AZ::ChildAllocatorSchema |  Acts as a pass\-through schema to another allocator\. Use this schema to create a new allocator based on an existing allocator like `SystemAllocator`\. To properly tag the memory that each gem or logical subsystem allocates, each gem or subsystem can create its own child allocator\. For more information, see [Creating an Allocator](#memory-allocators-creating-an-allocator)\.  | 

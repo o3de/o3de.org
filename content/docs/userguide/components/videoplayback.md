@@ -175,13 +175,13 @@ To set up stereo video playback, follow the instructions in [Using the Video Pla
 
 When you enter game mode \(using **Ctrl G**\), you should see the left eye of your video play\. If you do not see this, try changing your **Stereo layout** setting\. 
 
-To verify that your video is playing in stereo, you must enter VR mode\. You can enter VR mode by clicking **VR Preview** at the bottom right corner of the viewport\. Then press **Ctrl G** to enter game mode\. If your **VR Preview** button isn’t enabled, or you can’t get into VR preview mode, ensure that your VR headset is working outside of Lumberyard and then restart the Lumberyard editor\. 
+To verify that your video is playing in stereo, you must enter VR mode\. You can enter VR mode by clicking **VR Preview** at the bottom right corner of the viewport\. Then press **Ctrl G** to enter game mode\. If your **VR Preview** button isn't enabled, or you can't get into VR preview mode, ensure that your VR headset is working outside of Lumberyard and then restart the Lumberyard editor\. 
 
 Playing stereo video is resource intensive\. Because the video is often close in proximity to the player, it becomes easy to detect inconsistencies and artifacts in the video\. To prevent that, use higher resolution videos whenever possible\. To conserve resources, do not play more than one or two high resolution stereo videos at a time\. 
 
 ## Lua Bindings for Video Playback {#component-videoplayback-lua}
 
-You can use Lua bindings to interact programmatically with video playback components that you’ve placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
+You can use Lua bindings to interact programmatically with video playback components that you've placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
 
 ### Global Functions {#component-videoplayback-lua-global}
 
@@ -202,8 +202,8 @@ Exposes callbacks to your Lua script that are triggered by events during video p
 For more information, see [VideoPlaybackNotificationBusHandler Object](#component-videoplayback-videoplaybacknotificationbushandler)\. 
 
 **Parameters**  
-`Table` – The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
-`EntityId` – 
+`Table` - The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
+`EntityId` - 
 
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-videoplaybackrequestbussender)\.
