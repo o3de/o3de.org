@@ -1,6 +1,6 @@
 ---
 description: ' Use the UILayoutGridComponent to control grid layout characteristics
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UILayoutGridComponent
 ---
 # UILayoutGridComponent {#lua-scripting-ces-api-ui-uilayoutgridcomponent}

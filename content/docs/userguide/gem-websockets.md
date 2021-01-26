@@ -1,7 +1,7 @@
 ---
 description: ' Use the Websockets Gem to add support for the WebSocket protocol to
-  your &ALYlong; project. '
-title: Websockets &gem;
+  your Amazon Lumberyard project. '
+title: Websockets Gem
 ---
 # Websockets Gem {#gem-websockets}
 

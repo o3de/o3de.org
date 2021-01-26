@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &particle-editor; to save a particle library. '
+description: ' Use the Lumberyard Particle Editor to save a particle library. '
 title: Saving Particle Libraries
 ---
 # Saving Particle Libraries {#particle-saving-library}

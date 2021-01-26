@@ -1,5 +1,5 @@
 ---
-description: ' Use the missing dependency scanner in &ALY; to identify missing asset
+description: ' Use the missing dependency scanner in Lumberyard to identify missing asset
   references. '
 title: Using the Missing Dependency Scanner
 ---

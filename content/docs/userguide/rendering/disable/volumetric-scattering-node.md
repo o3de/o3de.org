@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Volumetric Scattering node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Volumetric Scattering node in the Amazon Lumberyard Script Canvas
   editor to disable volumetric scattering effects. '
 title: Disable Volumetric Scattering
 ---

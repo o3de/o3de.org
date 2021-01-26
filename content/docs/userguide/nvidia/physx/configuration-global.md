@@ -1,5 +1,5 @@
 ---
-description: ' Configure global settings for the PhysX system in &ALYlong;. '
+description: ' Configure global settings for the PhysX system in Amazon Lumberyard. '
 title: Global Configuration
 ---
 # Global Configuration {#physx-configuration-global}

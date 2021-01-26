@@ -1,5 +1,5 @@
 ---
-description: ' Simulate cloth on a GPU in &ALYlong; with NVIDIA Cloth and NVIDIA CUDA. '
+description: ' Simulate cloth on a GPU in Amazon Lumberyard with NVIDIA Cloth and NVIDIA CUDA. '
 title: GPU cloth simulation with NVIDIA CUDA
 ---
 # GPU cloth simulation with NVIDIA CUDA {#nvidia-cloth-gpu}

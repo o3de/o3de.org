@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to run the &ALYlong; Samples Project on your iOS device from
+description: ' Learn how to run the Amazon Lumberyard Samples Project on your iOS device from
   a macOS computer. '
 title: 'Quick Start: Running the Samples Project on iOS Devices'
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Flag dynamic slices in &ALYlong;''s &ui-canvas-editor; . '
+description: ' Flag dynamic slices in Amazon Lumberyard''s UI Editor . '
 title: Flagging Dynamic Slices
 ---
 # Flagging Dynamic Slices {#ui-editor-working-slices-dynamic}

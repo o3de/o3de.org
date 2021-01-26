@@ -1,5 +1,5 @@
 ---
-description: ' Change skybox parameters to create a static sky in &ALYlong;. '
+description: ' Change skybox parameters to create a static sky in Amazon Lumberyard. '
 title: Changing Skybox Parameters
 ---
 # Changing Skybox Parameters {#sky-skyboxes-params}

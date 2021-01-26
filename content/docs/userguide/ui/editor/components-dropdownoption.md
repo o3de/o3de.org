@@ -1,6 +1,6 @@
 ---
 description: ' Use the DropdownOption component to make an element an option in a
-  drop-down menu in the &ALYlong; &ui-canvas-editor;. '
+  drop-down menu in the Amazon Lumberyard UI Editor. '
 title: DropdownOption
 ---
 # DropdownOption {#ui-editor-components-dropdownoption}

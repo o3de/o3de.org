@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Frost node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Enable Frost node in the Amazon Lumberyard Script Canvas editor to
   display frost on the screen. '
 title: Enable Frost
 ---

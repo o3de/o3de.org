@@ -1,5 +1,5 @@
 ---
-description: ' Use Lua script to configure network binding of properties in &ALYlong;. '
+description: ' Use Lua script to configure network binding of properties in Amazon Lumberyard. '
 title: Network Binding Properties
 ---
 # Network Binding Properties {#lua-script-networking-binding}

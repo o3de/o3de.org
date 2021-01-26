@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; Profiler to capture, save, and analyze network, CPU,
+description: ' Use the Lumberyard Profiler to capture, save, and analyze network, CPU,
   and VRAM usage statistics. '
 title: Profiler
 ---

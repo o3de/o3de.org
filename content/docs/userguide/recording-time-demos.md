@@ -1,5 +1,5 @@
 ---
-description: ' Record time demos for player input and camera movement in &ALYlong;. '
+description: ' Record time demos for player input and camera movement in Amazon Lumberyard. '
 title: Recording Time Demos
 ---
 # Recording Time Demos {#recording-time-demos}

@@ -1,7 +1,7 @@
 ---
 description: ' Learn how to synchronize game state, use encryption, and perform other
-  important networking tasks in &ALYlong;. '
-title: Using &ALY; Networking
+  important networking tasks in Amazon Lumberyard. '
+title: Using Lumberyard Networking
 ---
 # Using Lumberyard Networking {#network-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Depth of Field node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Depth of Field node in the Amazon Lumberyard Script Canvas
   editor to configure the depth of field. '
 title: Enable Depth of Field
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s audio translation layer (ATL) to develop your game
+description: ' Use Amazon Lumberyard''s audio translation layer (ATL) to develop your game
   audio without affecting game logic. '
 title: Adding Audio and Sound Effects
 ---

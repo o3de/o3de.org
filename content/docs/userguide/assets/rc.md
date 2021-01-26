@@ -1,7 +1,7 @@
 ---
-description: ' Use &resource-compiler; in &ALYlong; to convert certain source files
+description: ' Use Resource Compiler in Amazon Lumberyard to convert certain source files
   into game-ready assets. '
-title: Using &resource-compiler;
+title: Using Resource Compiler
 ---
 # Using Resource Compiler {#asset-pipeline-rc}
 

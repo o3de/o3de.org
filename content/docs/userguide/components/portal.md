@@ -1,5 +1,5 @@
 ---
-description: ' Use the Portal component to create efficient indoor spaces in &ALYlong;. '
+description: ' Use the Portal component to create efficient indoor spaces in Amazon Lumberyard. '
 title: Portal
 ---
 # Portal {#component-portal}

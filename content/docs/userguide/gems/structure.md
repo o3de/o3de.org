@@ -1,5 +1,5 @@
 ---
-description: ' Learn how &ALYlong; gems are structured and the files that you can
+description: ' Learn how Amazon Lumberyard gems are structured and the files that you can
   modify to customize gems for your game. '
 title: Gem Structure
 ---

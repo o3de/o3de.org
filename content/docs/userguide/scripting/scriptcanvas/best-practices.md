@@ -1,6 +1,6 @@
 ---
-description: ' Learn best engineering practices for &script-canvas; in &ALYlong;. '
-title: '&script-canvas; Best Practices'
+description: ' Learn best engineering practices for Script Canvas in Amazon Lumberyard. '
+title: 'Script Canvas Best Practices'
 ---
 # Script Canvas Best Practices {#script-canvas-best-practices}
 

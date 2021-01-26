@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Data Elements C++ API operations for Twitch that you
-  can use for your &ALY; game project. '
+  can use for your Lumberyard game project. '
 title: Data Types
 ---
 # Data Types {#twitch-api-ebus-data-elements}

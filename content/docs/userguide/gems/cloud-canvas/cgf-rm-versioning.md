@@ -1,5 +1,5 @@
 ---
-description: ' Create versioned cloud gems and projects in &ALYlong;. '
+description: ' Create versioned cloud gems and projects in Amazon Lumberyard. '
 title: ' Cloud Gem Framework and Resource Manager Versioning'
 ---
 # Cloud Gem Framework and Resource Manager Versioning {#cloud-canvas-cgf-rm-versioning}

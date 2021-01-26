@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the Blend Two Additive node in &ALYlong; &animation-editor;
+description: ' Learn how to use the Blend Two Additive node in Amazon Lumberyard Animation Editor
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---

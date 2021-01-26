@@ -1,6 +1,6 @@
 ---
 description: ' Use the serialization context to provide persistence for C++ objects
-  or &ALY; types in &ALYlong;. '
+  or Lumberyard types in Amazon Lumberyard. '
 title: Serialization Context
 ---
 # Serialization Context {#component-entity-system-reflection-serialization-context}

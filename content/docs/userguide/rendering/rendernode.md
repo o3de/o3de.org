@@ -1,5 +1,5 @@
 ---
-description: ' Visualize objects in a world with render nodes in &ALYlong;. '
+description: ' Visualize objects in a world with render nodes in Amazon Lumberyard. '
 title: Render Nodes
 ---
 # Render Nodes {#graphics-rendering-rendernode}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Sun Longitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Sun Longitude node in the Amazon Lumberyard Script Canvas editor
   to set the sun longitude. '
 title: Set Sun Longitude
 ---

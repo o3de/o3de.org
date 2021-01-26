@@ -1,5 +1,5 @@
 ---
-description: ' PDF files are available for earlier versions of &ALYlong; documentation. '
+description: ' PDF files are available for earlier versions of Amazon Lumberyard documentation. '
 title: Documentation Archive
 ---
 # Documentation Archive {#lumberyard-documentation-archive}

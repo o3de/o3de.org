@@ -1,8 +1,8 @@
 ---
-description: ' Use the Variable Manager in the &ALYlong; &script-canvas; editor to
+description: ' Use the Variable Manager in the Amazon Lumberyard Script Canvas editor to
   add or manage variables and create get, set, or value-changed event nodes in your
-  &script-canvas; graph. '
-title: Managing &script-canvas; Variables
+  Script Canvas graph. '
+title: Managing Script Canvas Variables
 ---
 # Managing Script Canvas Variables {#script-canvas-managing-variables}
 

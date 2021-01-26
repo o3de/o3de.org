@@ -1,5 +1,5 @@
 ---
-description: ' Manage dynamic content game packages in &ALYlong;. '
+description: ' Manage dynamic content game packages in Amazon Lumberyard. '
 title: Managing Dynamic Content Packages
 ---
 # Managing Dynamic Content Packages {#cloud-canvas-cloud-gem-dc-managing-packages}

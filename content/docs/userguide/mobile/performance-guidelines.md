@@ -1,7 +1,7 @@
 ---
-description: ' Follow these guidelines to generate art assets and tune &ALYlong; performance
+description: ' Follow these guidelines to generate art assets and tune Amazon Lumberyard performance
   for mobile devices. '
-title: '&ALY; Performance Tuning Guidelines for Mobile Devices'
+title: 'Lumberyard Performance Tuning Guidelines for Mobile Devices'
 ---
 # Lumberyard Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
 

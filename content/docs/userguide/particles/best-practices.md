@@ -1,6 +1,6 @@
 ---
 description: ' Follow these best practices for creating and using particle effects
-  in the &ALY; Particle Editor. '
+  in the Lumberyard Particle Editor. '
 title: Particle Effects Best Practices
 ---
 # Particle Effects Best Practices {#particle-best-practices}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the AI Bubbles system in &ALYlong;. '
+description: ' Learn more about the AI Bubbles system in Amazon Lumberyard. '
 title: AI Bubbles System
 ---
 # AI Bubbles System {#ai-bubbles-system}

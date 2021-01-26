@@ -1,5 +1,5 @@
 ---
-description: ' Enable the water shader to render the ocean in &ALYlong;. '
+description: ' Enable the water shader to render the ocean in Amazon Lumberyard. '
 title: Water Shader
 ---
 # Water Shader {#shader-ref-water}

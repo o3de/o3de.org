@@ -1,6 +1,6 @@
 ---
 description: ' Use AutoMerged settings to define how grass responds to wind in your
-  &ALY; environment. '
+  Lumberyard environment. '
 title: Using AutoMerged Wind Bending Effects
 ---
 # Using AutoMerged Wind Bending Effects {#vegetation-bending-automerged-intro}

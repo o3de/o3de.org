@@ -1,5 +1,5 @@
 ---
-description: ' Add a navigation area to your level in &ALYlong;. '
+description: ' Add a navigation area to your level in Amazon Lumberyard. '
 title: Creating Navigation Areas
 ---
 # Creating Navigation Areas {#ai-nav-areas}

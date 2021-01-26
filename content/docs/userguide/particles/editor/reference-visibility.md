@@ -1,5 +1,5 @@
 ---
-description: ' Use the Visibility attribute in the &ALYlong; &particle-editor; to
+description: ' Use the Visibility attribute in the Amazon Lumberyard Particle Editor to
   control the visibility of the particles. '
 title: Visibility Attribute
 ---

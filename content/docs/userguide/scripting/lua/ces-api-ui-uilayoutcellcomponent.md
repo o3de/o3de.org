@@ -1,6 +1,6 @@
 ---
 description: ' Use the UiLayoutCellComponent operation to provide cell layout features
-  in &ALYlong; '
+  in Amazon Lumberyard '
 title: UiLayoutCellComponent
 ---
 # UiLayoutCellComponent {#lua-scripting-ces-api-ui-uilayoutcellcomponent}

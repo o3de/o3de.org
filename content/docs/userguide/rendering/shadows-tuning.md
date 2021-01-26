@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables to tune cascade shadows in &ALYlong;. '
+description: ' Use console variables to tune cascade shadows in Amazon Lumberyard. '
 title: 'Tutorial: Using Console Variables to Tune Cascade Shadows'
 ---
 # Tutorial: Using Console Variables to Tune Cascade Shadows {#rendering-graphics-shadows-tuning}

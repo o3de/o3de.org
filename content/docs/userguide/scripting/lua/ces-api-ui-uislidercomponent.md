@@ -1,5 +1,5 @@
 ---
-description: ' Use the UISliderComponent to control the value of a slider in &ALYlong;. '
+description: ' Use the UISliderComponent to control the value of a slider in Amazon Lumberyard. '
 title: UISliderComponent
 ---
 # UISliderComponent {#lua-scripting-ces-api-ui-uislidercomponent}

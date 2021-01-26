@@ -1,5 +1,5 @@
 ---
-description: ' Apply displacement mapping and tessellation for an object in &ALYlong;. '
+description: ' Apply displacement mapping and tessellation for an object in Amazon Lumberyard. '
 title: Displacement Maps and Tessellation
 ---
 # Displacement Maps and Tessellation {#mat-maps-displacement-intro}

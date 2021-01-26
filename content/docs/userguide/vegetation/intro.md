@@ -1,6 +1,6 @@
 ---
 description: ' Add realistic trees, bushes, grasses, and other vegetation to your
-  &ALYlong; terrain. '
+  Amazon Lumberyard terrain. '
 title: Adding Vegetation
 ---
 # Adding Vegetation {#vegetation-intro}

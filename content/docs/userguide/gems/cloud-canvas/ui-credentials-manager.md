@@ -1,7 +1,7 @@
 ---
-description: ' Use the &cloud; Credentials Manager to manage one or more of your &AWS;
+description: ' Use the Cloud Canvas Credentials Manager to manage one or more of your AWS
   profiles. '
-title: Managing &cloud; Profiles
+title: Managing Cloud Canvas Profiles
 ---
 # Managing Cloud Canvas Profiles {#cloud-canvas-ui-credentials-manager}
 

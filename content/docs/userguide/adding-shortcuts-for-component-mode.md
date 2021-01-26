@@ -1,6 +1,6 @@
 ---
-description: ' Add shortcuts for your component in &ALYlong;. '
-title: 'Step 4: Add Shortcuts for &CM;'
+description: ' Add shortcuts for your component in Amazon Lumberyard. '
+title: 'Step 4: Add Shortcuts for Component Mode'
 ---
 # Step 4: Add Shortcuts for Component Mode {#adding-shortcuts-for-component-mode}
 

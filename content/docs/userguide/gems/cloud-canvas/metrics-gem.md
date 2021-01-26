@@ -1,5 +1,5 @@
 ---
-description: ' Use the Game Metrics cloud gem to collect and view player data in &ALYlong;. '
+description: ' Use the Game Metrics cloud gem to collect and view player data in Amazon Lumberyard. '
 title: Game Metrics Cloud Gem
 ---
 # Game Metrics Cloud Gem {#cloud-canvas-metrics-gem}

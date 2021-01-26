@@ -1,5 +1,5 @@
 ---
-description: ' Export actors from .fbx files with FBX Settings to &ALYlong;. '
+description: ' Export actors from .fbx files with FBX Settings to Amazon Lumberyard. '
 title: FBX Settings actor export
 ---
 # FBX Settings actor export {#fbx-actor-export}

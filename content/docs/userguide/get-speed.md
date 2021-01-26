@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Speed node in the &ALYlong; &script-canvas; editor to return
+description: ' Use the Get Speed node in the Amazon Lumberyard Script Canvas editor to return
   the speed multiplier for the time of day. '
 title: Get Speed
 ---

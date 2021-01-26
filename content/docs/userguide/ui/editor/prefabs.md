@@ -1,5 +1,5 @@
 ---
-description: ' Use prefabs in &ALY;''s &ui-canvas-editor; to create or add preconfigured
+description: ' Use prefabs in Lumberyard''s UI Editor to create or add preconfigured
   elements to your canvas. '
 title: Using and Creating UI Prefabs
 ---

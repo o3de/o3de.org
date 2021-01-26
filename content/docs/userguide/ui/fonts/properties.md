@@ -1,6 +1,6 @@
 ---
 description: Configure font properties such as asset path and effects for your game
-  UI in &ALYlong;.
+  UI in Amazon Lumberyard.
 title: Configuring Font Properties
 ---
 # Configuring Font Properties {#ui-fonts-properties}

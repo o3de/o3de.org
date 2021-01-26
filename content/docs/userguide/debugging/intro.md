@@ -1,5 +1,5 @@
 ---
-description: ' Debug and fix performance issues for &ALYlong;. '
+description: ' Debug and fix performance issues for Amazon Lumberyard. '
 title: Debugging Issues
 ---
 # Debugging Issues {#debugging-intro}

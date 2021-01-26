@@ -1,5 +1,5 @@
 ---
-description: ' Test the Leaderboard Sample Level in &ALYlong;. '
+description: ' Test the Leaderboard Sample Level in Amazon Lumberyard. '
 title: Testing the Leaderboard Sample Level
 ---
 # Testing the Leaderboard Sample Level {#cloud-canvas-cloud-gem-leaderboard-testing-the-leaderboard-sample-level}

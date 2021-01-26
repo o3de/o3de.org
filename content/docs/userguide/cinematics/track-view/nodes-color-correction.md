@@ -1,6 +1,6 @@
 ---
-description: ' Use the Color Correction node in &ALY;''s &trackview-editor; to change
-  the CMYK, brightness, contrast, saturation, and hue in a scene in &ALY;. '
+description: ' Use the Color Correction node in Lumberyard''s <guilabel>Track View</guilabel> editor to change
+  the CMYK, brightness, contrast, saturation, and hue in a scene in Lumberyard. '
 title: Color Correction Node
 ---
 # Color Correction Node {#cinematics-track-view-nodes-color-correction}

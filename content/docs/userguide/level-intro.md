@@ -1,5 +1,5 @@
 ---
-description: ' Use levels and environments to organize the setting of your &ALYlong;
+description: ' Use levels and environments to organize the setting of your Amazon Lumberyard
   game. '
 title: Creating levels and adding environment effects
 ---

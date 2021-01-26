@@ -1,5 +1,5 @@
 ---
-description: ' Use the Load Definition File node in the &ALYlong; &script-canvas;
+description: ' Use the Load Definition File node in the Amazon Lumberyard Script Canvas
   editor to load the time of day preset file and update the sky. '
 title: Load Definition File
 ---

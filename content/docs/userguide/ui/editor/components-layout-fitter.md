@@ -1,5 +1,5 @@
 ---
-description: ' Add a layout fitter component to an element in the &ALYlong; &ui-canvas-editor;
+description: ' Add a layout fitter component to an element in the Amazon Lumberyard UI Editor
   to make the element fit its content. '
 title: LayoutFitter
 ---

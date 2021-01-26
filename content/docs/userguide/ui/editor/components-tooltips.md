@@ -1,6 +1,6 @@
 ---
 description: ' Use tooltip components to give an element a tool tip when hovering
-  over it, and configure its display properties in &ALY;''s &ui-canvas-editor;. '
+  over it, and configure its display properties in Lumberyard''s UI Editor. '
 title: Tooltip Components
 ---
 # Tooltip Components {#ui-editor-components-tooltips}

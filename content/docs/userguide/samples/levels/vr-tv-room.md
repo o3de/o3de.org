@@ -1,5 +1,5 @@
 ---
-description: ' Use the VR TV Room level in &ALYlong; to demonstrate a simple VR level
+description: ' Use the VR TV Room level in Amazon Lumberyard to demonstrate a simple VR level
   setup for playing 2D video, 3D video, and 360 video on a VR device. '
 title: VR TV Room Level
 ---

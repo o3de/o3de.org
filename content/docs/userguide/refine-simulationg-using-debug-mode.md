@@ -1,5 +1,5 @@
 ---
-description: ' Use debug mode to refine the simulated object''s movement in &ALYlong;. '
+description: ' Use debug mode to refine the simulated object''s movement in Amazon Lumberyard. '
 title: 'Using Debug Mode to Refine the Simulation '
 ---
 # Using Debug Mode to Refine the Simulation {#refine-simulationg-using-debug-mode}

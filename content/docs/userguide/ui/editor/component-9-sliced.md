@@ -1,6 +1,6 @@
 ---
 description: ' Use the sliced image type to intelligently resize parts of your game
-  UI in &ALYlong;''s &ui-canvas-editor; . '
+  UI in Amazon Lumberyard''s UI Editor . '
 title: Sliced Image Type
 ---
 # Sliced Image Type {#ui-editor-component-9-sliced}

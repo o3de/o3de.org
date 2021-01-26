@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to host a GridMate session in &ALYlong;. '
+description: ' Learn how to host a GridMate session in Amazon Lumberyard. '
 title: Hosting a Session
 ---
 # Hosting a Session {#network-session-service-hosting}

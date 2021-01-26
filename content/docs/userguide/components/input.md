@@ -1,5 +1,5 @@
 ---
-description: ' Use the Input component to bind raw input to events in &ALYlong;. '
+description: ' Use the Input component to bind raw input to events in Amazon Lumberyard. '
 title: Input
 ---
 # Input {#component-input}

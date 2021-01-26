@@ -1,5 +1,5 @@
 ---
-description: ' &ALY; '
+description: ' Lumberyard '
 title: Physically Based Shaders (PBS) Gem
 ---
 # Physically Based Shaders \(PBS\) Gem {#gems-system-gem-pbs}

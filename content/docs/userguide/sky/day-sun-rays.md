@@ -1,5 +1,5 @@
 ---
-description: ' Use the Sun Rays Effect in &ALYlong; to simulate shafts of sunlight. '
+description: ' Use the Sun Rays Effect in Amazon Lumberyard to simulate shafts of sunlight. '
 title: Adding Sun Rays
 ---
 # Adding Sun Rays {#sky-day-sun-rays}

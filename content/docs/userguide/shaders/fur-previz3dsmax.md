@@ -1,6 +1,6 @@
 ---
-description: ' Use the 3DSMax fur previsualization in &ALYlong;. '
-title: 3DSMax &endash; Fur Previsualization
+description: ' Use the 3DSMax fur previsualization in Amazon Lumberyard. '
+title: 3DSMax – Fur Previsualization
 ---
 # 3DSMax - Fur Previsualization {#shader-ref-fur-previz3dsmax}
 

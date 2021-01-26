@@ -1,6 +1,6 @@
 ---
-description: ' Use a &cgp; to manage the data in &AWS; for your game. '
-title: '&cgp;'
+description: ' Use a Cloud Gem Portal to manage the data in AWS for your game. '
+title: 'Cloud Gem Portal'
 ---
 # Cloud Gem Portal {#cloud-canvas-cloud-gem-portal}
 

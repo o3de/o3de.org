@@ -1,6 +1,6 @@
 ---
 description: ' See the differences between Wwise Full and Wwise LTX, which are sound
-  implementations used in &ALYlong;. '
+  implementations used in Amazon Lumberyard. '
 title: Comparing Wwise Full to Wwise LTX
 ---
 # Comparing Wwise Full to Wwise LTX {#audio-wwise-ltx-full-comparison}

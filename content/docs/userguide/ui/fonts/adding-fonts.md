@@ -1,5 +1,5 @@
 ---
-description: Add new font assets to your &ALYlong; game UI.
+description: Add new font assets to your Amazon Lumberyard game UI.
 title: Adding New Fonts
 ---
 # Adding New Fonts {#ui-fonts-adding-fonts}

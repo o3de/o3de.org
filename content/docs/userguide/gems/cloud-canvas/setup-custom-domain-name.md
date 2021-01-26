@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to create a custom domain name and establish TLS handshakes
-  to improve security in &ALY; when you connect to the &cloud; APIs. '
+  to improve security in Lumberyard when you connect to the Cloud Canvas APIs. '
 title: Improve Security with a Custom Domain Name
 ---
 # Improve Security with a Custom Domain Name {#cloud-canvas-setup-custom-domain-name}

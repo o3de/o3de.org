@@ -1,5 +1,5 @@
 ---
-description: ' Add trees and bushes to your &ALY; terrain to enhance realism. '
+description: ' Add trees and bushes to your Lumberyard terrain to enhance realism. '
 title: Adding Trees and Bushes
 ---
 # Adding Trees and Bushes {#vegetation-trees}

@@ -1,6 +1,6 @@
 ---
-description: ' Use &ALYlong; to build games for Mac (macOS) computers. '
-title: Create macOS projects in &ALY;
+description: ' Use Amazon Lumberyard to build games for Mac (macOS) computers. '
+title: Create macOS projects in Lumberyard
 ---
 # Create macOS projects in Lumberyard {#osx-intro}
 

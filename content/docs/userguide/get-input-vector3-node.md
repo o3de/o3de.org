@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Input Vector3 node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Input Vector3 node in the Amazon Lumberyard Script Canvas editor
   to return the value of a procedural material input parameter as a Vector3. '
 title: Get Input Vector3
 ---

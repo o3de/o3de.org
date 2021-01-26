@@ -1,5 +1,5 @@
 ---
-description: ' See the following texture map types in &ALYlong;. '
+description: ' See the following texture map types in Amazon Lumberyard. '
 title: Texture Map Types
 ---
 # Texture Map Types {#mat-texture-types}

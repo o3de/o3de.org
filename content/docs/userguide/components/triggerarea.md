@@ -1,6 +1,6 @@
 ---
 description: ' Use the Trigger Area component to set up an area that triggers an action
-  upon entering or exiting in &ALYlong;. '
+  upon entering or exiting in Amazon Lumberyard. '
 title: Trigger Area
 ---
 # Trigger Area {#component-triggerarea}

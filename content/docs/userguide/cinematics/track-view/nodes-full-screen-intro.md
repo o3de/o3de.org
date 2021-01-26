@@ -1,6 +1,6 @@
 ---
-description: ' See the following full screen effect nodes in the &trackview-editor;
-  in &ALYlong;. '
+description: ' See the following full screen effect nodes in the <guilabel>Track View</guilabel> editor
+  in Amazon Lumberyard. '
 title: Full Screen Effect Nodes
 ---
 # Full Screen Effect Nodes {#cinematics-track-view-nodes-full-screen-intro}

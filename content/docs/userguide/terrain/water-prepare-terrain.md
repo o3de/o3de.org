@@ -1,6 +1,6 @@
 ---
 description: ' Use terrain settings to create the appropriate landform for your body
-  of water in your &ALY; level. '
+  of water in your Lumberyard level. '
 title: Preparing the Terrain
 ---
 # Preparing the Terrain {#terrain-water-prepare-terrain}

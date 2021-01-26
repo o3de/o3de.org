@@ -1,5 +1,5 @@
 ---
-description: ' Use a layout column component in the &ALYlong; &ui-canvas-editor; to
+description: ' Use a layout column component in the Amazon Lumberyard UI Editor to
   organize child elements into a column. '
 title: LayoutColumn
 ---

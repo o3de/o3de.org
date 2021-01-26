@@ -1,5 +1,5 @@
 ---
-description: ' Use replica chunks in &ALYlong; to store data sets and remote procedure
+description: ' Use replica chunks in Amazon Lumberyard to store data sets and remote procedure
   calls. '
 title: Replica Chunks
 ---

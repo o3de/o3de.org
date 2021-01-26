@@ -1,5 +1,5 @@
 ---
-description: ' Learn how &ALYlong; supports cinematics and scripted event sequences. '
+description: ' Learn how Amazon Lumberyard supports cinematics and scripted event sequences. '
 title: Create cinematic sequences
 ---
 # Create cinematic sequences {#cinematics-intro}

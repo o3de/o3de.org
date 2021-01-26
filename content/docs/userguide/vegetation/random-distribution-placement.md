@@ -1,6 +1,6 @@
 ---
 description: ' Create random distribution by using a noise gradient as a placement
-  mask for &ALYlong; dynamic vegetation. '
+  mask for Amazon Lumberyard dynamic vegetation. '
 title: Random Placement Using the Vegetation Distribution Filter
 ---
 # Random Placement Using the Vegetation Distribution Filter {#vegetation-random-distribution-placement}

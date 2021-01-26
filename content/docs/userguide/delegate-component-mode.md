@@ -1,5 +1,5 @@
 ---
-description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
+description: ' Add a ComponentModeDelegate to your component in Amazon Lumberyard. '
 title: 'Step 2: Add a ComponentModeDelegate'
 ---
 # Step 2: Add a ComponentModeDelegate {#delegate-component-mode}

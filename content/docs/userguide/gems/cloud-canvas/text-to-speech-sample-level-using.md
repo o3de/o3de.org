@@ -1,5 +1,5 @@
 ---
-description: ' Enable the &ALYlong; character Rin to speak sample text that you type. '
+description: ' Enable the Amazon Lumberyard character Rin to speak sample text that you type. '
 title: Using the Text-to-Speech Sample Level
 ---
 # Using the Text\-to\-Speech Sample Level {#cloud-canvas-cloud-gem-text-to-speech-sample-level-using}

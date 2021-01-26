@@ -1,6 +1,6 @@
 ---
 description: ' Use the Cloud Gem Framework to enable your game code to make HTTP requests
-  for &ALYlong;. '
+  for Amazon Lumberyard. '
 title: Making HTTP Requests Using the Cloud Gem Framework
 ---
 # Making HTTP Requests Using the Cloud Gem Framework {#cloud-canvas-cgf-http-requests}

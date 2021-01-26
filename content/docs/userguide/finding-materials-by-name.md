@@ -1,5 +1,5 @@
 ---
-description: ' Find material file names to reference for nodes in the &ALYlong; &script-canvas;
+description: ' Find material file names to reference for nodes in the Amazon Lumberyard Script Canvas
   editor. '
 title: Finding the Material Name
 ---

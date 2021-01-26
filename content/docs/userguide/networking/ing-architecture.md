@@ -1,5 +1,5 @@
 ---
-description: ' Understand the basic concepts &ALYlong;''s networking architecture. '
+description: ' Understand the basic concepts Amazon Lumberyard''s networking architecture. '
 title: Networking Architecture
 ---
 # Networking Architecture {#networking-architecture}

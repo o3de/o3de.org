@@ -1,6 +1,6 @@
 ---
-description: ' See the following tips for working with a &CM; in &ALYlong;. '
-title: Tips for Working with &CM;
+description: ' See the following tips for working with a Component Mode in Amazon Lumberyard. '
+title: Tips for Working with Component Mode
 ---
 # Tips for Working with Component Mode {#additional-tips-for-component-mode}
 

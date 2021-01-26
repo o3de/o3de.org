@@ -1,6 +1,6 @@
 ---
-description: ' Create sequences for animations using the &trackview-editor;''s toolbars
-  in &ALYlong;. '
+description: ' Create sequences for animations using the <guilabel>Track View</guilabel> editor''s toolbars
+  in Amazon Lumberyard. '
 title: Track View Editor Toolbars
 ---
 # Track View Editor Toolbars {#cinematics-track-view-editor-toolbars}

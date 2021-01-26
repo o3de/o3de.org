@@ -1,6 +1,6 @@
 ---
 description: ' Use the In-App Purchases sample to learn how to use the In-App Purchases
-  (IAP) Gem for a &ALYlong; application running on an Android or iOS mobile device. '
+  (IAP) Gem for a Amazon Lumberyard application running on an Android or iOS mobile device. '
 title: In-App Purchases Sample
 ---
 # In\-App Purchases Sample {#sample-project-inapp-purchases}

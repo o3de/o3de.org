@@ -1,5 +1,5 @@
 ---
-description: ' Use EBus request bus functions for virtual reality in &ALYlong;. '
+description: ' Use EBus request bus functions for virtual reality in Amazon Lumberyard. '
 title: Using EBus Request Bus Interface for Virtual Reality
 ---
 # Using EBus Request Bus Interface for Virtual Reality {#virtual-reality-ebus}

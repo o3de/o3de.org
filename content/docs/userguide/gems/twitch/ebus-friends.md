@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Friends C++ API operations for Twitch that you can
-  use for your &ALY; game project. '
+  use for your Lumberyard game project. '
 title: Friends
 ---
 # Friends {#twitch-api-ebus-friends}

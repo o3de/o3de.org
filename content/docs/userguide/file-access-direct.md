@@ -1,6 +1,6 @@
 ---
-description: ' Directly access files for special use cases like streaming in &ALYlong;. '
-title: Raw File Access in &ALY;
+description: ' Directly access files for special use cases like streaming in Amazon Lumberyard. '
+title: Raw File Access in Lumberyard
 ---
 # Raw File Access in Lumberyard {#file-access-direct}
 

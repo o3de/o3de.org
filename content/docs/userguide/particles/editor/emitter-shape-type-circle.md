@@ -1,5 +1,5 @@
 ---
-description: ' Use the Circle emitter in the &ALYlong; &particle-editor; to enable
+description: ' Use the Circle emitter in the Amazon Lumberyard Particle Editor to enable
   spawning of particles along the shapes axial coordinate system and to achieve circular
   and cylindrical effects. '
 title: Circle Emitter (CPU and GPU)

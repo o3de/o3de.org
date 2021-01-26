@@ -1,5 +1,5 @@
 ---
-description: ' Understand how tweeners in &ALYlong; Scripted Entity Tweener system
+description: ' Understand how tweeners in Amazon Lumberyard Scripted Entity Tweener system
   interprets movements between two frames based on the tweener type. '
 title: Understanding Tweeners
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' See the following flying nodes for the AI system in &ALYlong;. '
+description: ' See the following flying nodes for the AI system in Amazon Lumberyard. '
 title: Flying Nodes
 ---
 # Flying Nodes {#ai-scripting-mbt-nodes-flying}

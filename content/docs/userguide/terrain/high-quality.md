@@ -1,5 +1,5 @@
 ---
-description: ' Create a &ALYlong; terrain that features 2k height and 16k megaterrain
+description: ' Create a Amazon Lumberyard terrain that features 2k height and 16k megaterrain
   color. '
 title: Creating High Quality Terrain
 ---

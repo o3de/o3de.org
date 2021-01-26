@@ -1,6 +1,6 @@
 ---
 description: ' Use the Message of the Day Cloud Gem to send scheduled messages to
-  the users of your &ALYlong; game. '
+  the users of your Amazon Lumberyard game. '
 title: Message Of The Day Cloud Gem Portal
 ---
 # Message Of The Day Cloud Gem Portal {#cloud-canvas-cloud-gem-message-of-the-day}

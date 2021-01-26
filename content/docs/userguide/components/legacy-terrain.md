@@ -1,5 +1,5 @@
 ---
-description: ' Use the Legacy Terrain level component to add level terrain in &ALYlong;. '
+description: ' Use the Legacy Terrain level component to add level terrain in Amazon Lumberyard. '
 title: Legacy Terrain level component
 ---
 # Legacy Terrain level component {#component-legacy-terrain}

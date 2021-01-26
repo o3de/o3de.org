@@ -1,5 +1,5 @@
 ---
-description: ' You can add an action to a state or transition in an &ALYlong; &animation-editor;
+description: ' You can add an action to a state or transition in an Amazon Lumberyard Animation Editor
   animation graph to trigger a parameter value change. '
 title: Actions
 ---

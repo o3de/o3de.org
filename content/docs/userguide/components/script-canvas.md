@@ -1,5 +1,5 @@
 ---
-description: ' Use the &script-canvas; component to add a script to an entity in &ALYlong;. '
+description: ' Use the Script Canvas component to add a script to an entity in Amazon Lumberyard. '
 title: Script Canvas
 ---
 # Script Canvas {#component-script-canvas}

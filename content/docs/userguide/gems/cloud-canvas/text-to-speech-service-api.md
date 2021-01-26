@@ -1,5 +1,5 @@
 ---
-description: ' Use API operations to control text to speech functionality in &ALYlong;. '
+description: ' Use API operations to control text to speech functionality in Amazon Lumberyard. '
 title: Text-to-Speech Cloud Gem Service API Reference
 ---
 # Text\-to\-Speech Cloud Gem Service API Reference {#cloud-canvas-cloud-gem-text-to-speech-service-api}

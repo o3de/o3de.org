@@ -1,5 +1,5 @@
 ---
-description: ' Use the river tool to place the river in your &ALY; environment level
+description: ' Use the river tool to place the river in your Lumberyard environment level
   and adjust the underlying terrain with the Align Height Map. '
 title: Creating the River Entity
 ---

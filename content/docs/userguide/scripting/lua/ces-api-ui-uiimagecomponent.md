@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIImageComponent to control sprites, images, and textures in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: UIImageComponent
 ---
 # UIImageComponent {#lua-scripting-ces-api-ui-uiimagecomponent}

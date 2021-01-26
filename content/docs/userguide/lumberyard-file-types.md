@@ -1,6 +1,6 @@
 ---
-description: ' Learn about the asset data file types that &ALYlong; supports. '
-title: '&ALY; Asset File Types'
+description: ' Learn about the asset data file types that Amazon Lumberyard supports. '
+title: 'Lumberyard Asset File Types'
 ---
 # Lumberyard Asset File Types {#lumberyard-file-types}
 

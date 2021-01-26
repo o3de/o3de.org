@@ -1,5 +1,5 @@
 ---
-description: ' Use the Sphere emitter in the &ALYlong; &particle-editor; to spawn
+description: ' Use the Sphere emitter in the Amazon Lumberyard Particle Editor to spawn
   particles along the shapes axial coordinate system and create complex spherical
   effects. '
 title: Sphere Emitter (CPU and GPU)

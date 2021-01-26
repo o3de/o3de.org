@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the &ALYlong; audio system. '
+description: ' Learn about the Amazon Lumberyard audio system. '
 title: Audio System Overview
 ---
 # Audio System Overview {#audio-architecture}

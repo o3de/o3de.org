@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Visual Artifacts node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Visual Artifacts node in the Amazon Lumberyard Script Canvas
   editor to disable visual artifact effects. '
 title: Disable Visual Artifacts
 ---

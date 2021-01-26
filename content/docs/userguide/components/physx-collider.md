@@ -1,6 +1,6 @@
 ---
-description: ' Use the &physx-collider; component to define where collision detection
-  and response occur in &ALYlong;. '
+description: ' Use the PhysX Collider component to define where collision detection
+  and response occur in Amazon Lumberyard. '
 title: PhysX Collider
 ---
 # PhysX Collider {#component-physx-collider}

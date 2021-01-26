@@ -1,5 +1,5 @@
 ---
-description: ' Create wind areas in &ALY; to determine where objects experience wind. '
+description: ' Create wind areas in Lumberyard to determine where objects experience wind. '
 title: Creating Wind Areas
 ---
 # Creating Wind Areas {#weather-wind-areas}

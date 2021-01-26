@@ -1,6 +1,6 @@
 ---
 description: ' Use the Render to Texture gem to add the Render to Texture component
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Render to Texture
 ---
 # Render to Texture {#gems-system-render-to-texture}

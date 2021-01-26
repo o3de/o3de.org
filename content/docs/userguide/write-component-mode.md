@@ -1,6 +1,6 @@
 ---
-description: ' Write a &CM; for your component in &ALYlong;. '
-title: 'Step 3: Write a New &CM;'
+description: ' Write a Component Mode for your component in Amazon Lumberyard. '
+title: 'Step 3: Write a New Component Mode'
 ---
 # Step 3: Write a New Component Mode {#write-component-mode}
 

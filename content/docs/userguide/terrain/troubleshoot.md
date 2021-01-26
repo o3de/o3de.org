@@ -1,5 +1,5 @@
 ---
-description: ' Troubleshoot issues for &ALYlong; terrain. '
+description: ' Troubleshoot issues for Amazon Lumberyard terrain. '
 title: Terrain FAQs
 ---
 # Terrain FAQs {#terrain-troubleshoot}

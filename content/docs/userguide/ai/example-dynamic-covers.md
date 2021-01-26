@@ -1,5 +1,5 @@
 ---
-description: ' See the following example for dynamic covers in &ALYlong;. '
+description: ' See the following example for dynamic covers in Amazon Lumberyard. '
 title: 'Individual AI: Dynamic Covers'
 ---
 # Individual AI: Dynamic Covers {#ai-concepts-example-dynamic-covers}

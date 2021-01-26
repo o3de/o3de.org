@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the &ALYlong; Blast Family component. '
+description: ' Learn about the Amazon Lumberyard Blast Family component. '
 title: Blast Family component
 ---
 # Blast Family component {#component-blast-family}

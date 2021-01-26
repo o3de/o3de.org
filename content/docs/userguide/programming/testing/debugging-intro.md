@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the &ALYlong; tools that you can use to test builds, profile
+description: ' Learn about the Amazon Lumberyard tools that you can use to test builds, profile
   performance, and debug issues. '
 title: Profiling, Testing, and Debugging Game Projects
 ---

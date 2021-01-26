@@ -1,5 +1,5 @@
 ---
-description: ' Create a component entity node to add to a track in &ALYlong;''s &trackview-editor;. '
+description: ' Create a component entity node to add to a track in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
 title: Component Entities and Component Nodes
 ---
 # Component Entities and Component Nodes {#cinematics-track-view-nodes-component-entity}

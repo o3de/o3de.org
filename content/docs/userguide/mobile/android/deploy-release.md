@@ -1,7 +1,7 @@
 ---
-description: ' Prepare &ALYlong; projects for release and distribution on the Google
+description: ' Prepare Amazon Lumberyard projects for release and distribution on the Google
   Play Store. '
-title: Releasing &ALY; projects for Android
+title: Releasing Lumberyard projects for Android
 ---
 # Releasing Lumberyard projects for Android {#android-deploy-release}
 

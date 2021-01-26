@@ -1,6 +1,6 @@
 ---
 description: ' Use Dynamic Vegetation to place natural-looking vegetation and customize
-  where and how it grows in &ALYlong;. '
+  where and how it grows in Amazon Lumberyard. '
 title: Dynamic vegetation
 ---
 # Dynamic vegetation {#dynamic-vegetation-intro}

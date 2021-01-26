@@ -1,6 +1,6 @@
 ---
-description: ' Design considerations for authoring iOS and Android games using &ALYlong;. '
-title: Design Considerations for Creating Mobile Games Using &ALY;
+description: ' Design considerations for authoring iOS and Android games using Amazon Lumberyard. '
+title: Design Considerations for Creating Mobile Games Using Lumberyard
 ---
 # Design Considerations for Creating Mobile Games Using Lumberyard {#ios-android-design-considerations}
 

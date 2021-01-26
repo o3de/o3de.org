@@ -1,5 +1,5 @@
 ---
-description: ' Use the Point emitter in the &ALYlong; &particle-editor; to spawn particles
+description: ' Use the Point emitter in the Amazon Lumberyard Particle Editor to spawn particles
   in a spherical distribution from the origin. '
 title: Point Emitter (CPU and GPU)
 ---

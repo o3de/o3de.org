@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the PhysX Rigid Body component in &ALYlong;. '
+description: ' Learn more about the PhysX Rigid Body component in Amazon Lumberyard. '
 title: PhysX Rigid Body
 ---
 # PhysX Rigid Body {#component-physx-rigid-body-physics}

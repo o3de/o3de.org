@@ -1,7 +1,7 @@
 ---
 description: ' How to add IP addresses for external devices (Android and iOS) to connect
-  to the &asset-processor; or allow remote console access to a running game instance. '
-title: Adding IP Addresses to Allow Access to the &asset-processor; and Remote Console
+  to the Asset Processor or allow remote console access to a running game instance. '
+title: Adding IP Addresses to Allow Access to the Asset Processor and Remote Console
 ---
 # Adding IP Addresses to Allow Access to the Asset Processor and Remote Console {#ios-android-adding-ip-addresses}
 

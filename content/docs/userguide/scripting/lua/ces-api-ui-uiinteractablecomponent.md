@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIInteractableComponent to control elements that respond to
-  user input in &ALYlong;. '
+  user input in Amazon Lumberyard. '
 title: UIInteractableComponent
 ---
 # UIInteractableComponent {#lua-scripting-ces-api-ui-uiinteractablecomponent}

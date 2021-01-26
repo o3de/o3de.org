@@ -1,7 +1,7 @@
 ---
-description: ' Learn about the relationship between &script-canvas; and the behavior
-  context in &ALYlong;. '
-title: '&script-canvas; and the Behavior Context'
+description: ' Learn about the relationship between Script Canvas and the behavior
+  context in Amazon Lumberyard. '
+title: 'Script Canvas and the Behavior Context'
 ---
 # Script Canvas and the Behavior Context {#script-canvas-behavior-context}
 

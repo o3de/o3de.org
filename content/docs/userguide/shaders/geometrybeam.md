@@ -1,5 +1,5 @@
 ---
-description: ' See the GeometryBeam shader to create volumetric light beams for &ALYlong;. '
+description: ' See the GeometryBeam shader to create volumetric light beams for Amazon Lumberyard. '
 title: GeometryBeam Shader
 ---
 # GeometryBeam Shader {#shader-ref-geometrybeam}

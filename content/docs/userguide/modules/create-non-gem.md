@@ -1,5 +1,5 @@
 ---
-description: ' Describes how to create a &ALYlong; AZ module that is not a gem. '
+description: ' Describes how to create a Amazon Lumberyard AZ module that is not a gem. '
 title: Creating an AZ Module That Is Not a Gem
 ---
 # Creating an AZ Module That Is Not a Gem {#az-module-create-non-gem}

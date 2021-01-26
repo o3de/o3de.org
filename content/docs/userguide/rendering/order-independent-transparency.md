@@ -1,5 +1,5 @@
 ---
-description: ' Configure order-independent transparency (OIT) in &ALY; so that transparent
+description: ' Configure order-independent transparency (OIT) in Lumberyard so that transparent
   objects that are drawn out-of-order can display correctly. '
 title: Order-Independent Transparency
 ---

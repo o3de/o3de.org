@@ -1,6 +1,6 @@
 ---
 description: ' Keep these best practices in mind when you create and implement your
-  texture maps for parallax lighting in &ALYlong;. '
+  texture maps for parallax lighting in Amazon Lumberyard. '
 title: Parallax Mapping Best Practices
 ---
 # Parallax Mapping Best Practices {#mat-maps-parallax-best-practices}

@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &asset-editor; to create file tag rules for including
-  and excluding files in your asset bundles for processing by the &asset-bundler;.
+description: ' Use the Amazon Lumberyard Asset Editor to create file tag rules for including
+  and excluding files in your asset bundles for processing by the Asset Bundler.
   Rules are composed of pattern matching logic and file tag strings. '
 title: Using the File Tagging System to Include or Exclude Assets
 ---

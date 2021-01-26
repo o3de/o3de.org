@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to react to GridMate session service events in &ALYlong;. '
+description: ' Learn how to react to GridMate session service events in Amazon Lumberyard. '
 title: Reacting to Session Events
 ---
 # Reacting to Session Events {#network-session-service-events}

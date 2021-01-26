@@ -1,8 +1,8 @@
 ---
-description: ' Learn about &ALY; &asset-bundler; terms and concepts. The &asset-bundler;
+description: ' Learn about Lumberyard Asset Bundler terms and concepts. The Asset Bundler
   helps make the process of bundling the necessary assets for a game release more
   efficient. '
-title: '&asset-bundler; Concepts and Terms'
+title: 'Asset Bundler Concepts and Terms'
 ---
 # Asset Bundler Concepts and Terms {#asset-bundler-concepts}
 

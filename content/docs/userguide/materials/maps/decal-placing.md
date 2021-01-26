@@ -1,5 +1,5 @@
 ---
-description: ' Place a decal in your level in &ALYlong;. '
+description: ' Place a decal in your level in Amazon Lumberyard. '
 title: Placing a Decal
 ---
 # Placing a Decal {#mat-maps-decal-placing}

@@ -1,6 +1,6 @@
 ---
-description: ' Configure &ALYlong;''s GridMate multiplayer sample for use with &AGSlong;. '
-title: Configuring the Multiplayer Sample for &AGSlong;
+description: ' Configure Amazon Lumberyard''s GridMate multiplayer sample for use with Amazon Games Services. '
+title: Configuring the Multiplayer Sample for Amazon Games Services
 ---
 # Configuring the Multiplayer Sample for Amazon GameLift {#network-multiplayer-gs-gamelift}
 

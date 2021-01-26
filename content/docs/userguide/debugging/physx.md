@@ -1,5 +1,5 @@
 ---
-description: ' Debug PhysX issues for your game in &ALYlong;. '
+description: ' Debug PhysX issues for your game in Amazon Lumberyard. '
 title: Debugging PhysX
 ---
 # Debugging PhysX {#debugging-physx}

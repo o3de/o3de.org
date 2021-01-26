@@ -1,5 +1,5 @@
 ---
-description: ' Debug the &project-configurator; in &ALYlong;. '
+description: ' Debug the Project Configurator in Amazon Lumberyard. '
 title: Troubleshooting
 ---
 # Troubleshooting {#configurator-debugging}

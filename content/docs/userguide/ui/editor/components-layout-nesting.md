@@ -1,6 +1,6 @@
 ---
-description: ' Nest layout components within other layout components in the &ALYlong;
-  &ui-canvas-editor;. '
+description: ' Nest layout components within other layout components in the Amazon Lumberyard
+  UI Editor. '
 title: Nesting Layout Components
 ---
 # Nesting Layout Components {#ui-editor-components-layout-nesting}

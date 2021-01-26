@@ -1,6 +1,6 @@
 ---
 description: ' Use ShowMouseCursor to toggle the visibility of the mouse cursor in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: LyShineLua.ShowMouseCursor
 ---
 # LyShineLua\.ShowMouseCursor {#lua-scripting-ces-api-ui-showmousecursor}

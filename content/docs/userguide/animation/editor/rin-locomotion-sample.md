@@ -1,5 +1,5 @@
 ---
-description: ' Use the Rin Locomotion sample level to learn how the &ALY; &animation-editor;
+description: ' Use the Rin Locomotion sample level to learn how the Lumberyard Animation Editor
   uses actors, motion sets, and animation graphs to control character behavior. '
 title: Advanced_RinLocomotion Sample
 ---

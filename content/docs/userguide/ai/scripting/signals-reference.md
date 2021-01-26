@@ -1,5 +1,5 @@
 ---
-description: ' See the following signals reference for the AI system in &ALYlong;. '
+description: ' See the following signals reference for the AI system in Amazon Lumberyard. '
 title: Signals Reference
 ---
 # Signals Reference {#ai-scripting-signals-reference}

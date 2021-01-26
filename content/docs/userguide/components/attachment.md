@@ -1,6 +1,6 @@
 ---
 description: ' Use the Attachment component to attach an entity''s bone to a bone
-  on the skeleton of another entity in &ALYlong;. '
+  on the skeleton of another entity in Amazon Lumberyard. '
 title: Attachment
 ---
 # Attachment {#component-attachment}

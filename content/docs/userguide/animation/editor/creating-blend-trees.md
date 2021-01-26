@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create blend trees in the &ALY; &animation-editor;. '
+description: ' Learn how to create blend trees in the Lumberyard Animation Editor. '
 title: Creating Blend Trees
 ---
 # Creating Blend Trees {#animation-editor-creating-blend-trees}

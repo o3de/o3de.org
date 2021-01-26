@@ -1,6 +1,6 @@
 ---
-description: ' The following topics will guide you through level creation in &ALY;. '
-title: Create levels in &ALY;
+description: ' The following topics will guide you through level creation in Lumberyard. '
+title: Create levels in Lumberyard
 ---
 # Create levels in Lumberyard {#levels-intro}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Actor components
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Cloth for Actor components
 ---
 # Cloth for Actor components {#nvidia-cloth-actors}

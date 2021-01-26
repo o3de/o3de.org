@@ -1,6 +1,6 @@
 ---
-description: ' Create an animation graph and simulate your PhysX ragdoll in the &ALYlong;
-  &animation-editor; . '
+description: ' Create an animation graph and simulate your PhysX ragdoll in the Amazon Lumberyard
+  Animation Editor . '
 title: Creating and Simulating a PhysX Ragdoll
 ---
 # Creating and Simulating a PhysX Ragdoll {#animation-editor-creating-and-simulating-physx-ragdoll}

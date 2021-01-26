@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about modelling for the AI system in &ALYlong;. '
+description: ' Learn more about modelling for the AI system in Amazon Lumberyard. '
 title: Sensory Models
 ---
 # Sensory Models {#ai-concepts-sensory-models}

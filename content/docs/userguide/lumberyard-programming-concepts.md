@@ -1,6 +1,6 @@
 ---
-description: ' Learn the key concepts and discover resources for programming in &ALYlong;. '
-title: '&ALY; Programming Concepts and Resources'
+description: ' Learn the key concepts and discover resources for programming in Amazon Lumberyard. '
+title: 'Lumberyard Programming Concepts and Resources'
 ---
 # Lumberyard Programming Concepts and Resources {#lumberyard-programming-concepts}
 

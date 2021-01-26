@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to update dynamic content and use dynamic content versioning
-  for your &ALYlong; dynamic content packages. '
+  for your Amazon Lumberyard dynamic content packages. '
 title: Updating Dynamic Content
 ---
 # Updating Dynamic Content {#cloud-canvas-cloud-gem-dc-updating}

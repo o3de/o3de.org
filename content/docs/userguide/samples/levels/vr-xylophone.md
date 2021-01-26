@@ -1,6 +1,6 @@
 ---
 description: ' Use the VR Xylophone level to learn how to set up basic VR gameplay
-  with the &component-system; in &ALYlong;. '
+  with the component entity system in Amazon Lumberyard. '
 title: VR Xylophone Level
 ---
 # VR Xylophone Level {#sample-level-vr-xylophone}

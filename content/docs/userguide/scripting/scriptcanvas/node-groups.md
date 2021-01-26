@@ -1,6 +1,6 @@
 ---
-description: ' Group &script-canvas; nodes for improved manageability of your visual
-  scripts in &ALYlong;. '
+description: ' Group Script Canvas nodes for improved manageability of your visual
+  scripts in Amazon Lumberyard. '
 title: Grouping Nodes
 ---
 # Grouping Nodes {#script-canvas-node-groups}

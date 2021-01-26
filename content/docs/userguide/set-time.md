@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Time node in the &ALYlong; &script-canvas; editor to set
+description: ' Use the Set Time node in the Amazon Lumberyard Script Canvas editor to set
   the time of day system''s current time value. '
 title: Set Time
 ---

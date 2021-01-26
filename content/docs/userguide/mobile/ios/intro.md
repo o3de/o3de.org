@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong; to build games for iOS devices. '
+description: ' Use Amazon Lumberyard to build games for iOS devices. '
 title: iOS Support
 ---
 # iOS Support {#ios-intro}

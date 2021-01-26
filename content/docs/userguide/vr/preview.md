@@ -1,5 +1,5 @@
 ---
-description: ' Preview your virtual reality project in &ALY;. '
+description: ' Preview your virtual reality project in Lumberyard. '
 title: Previewing your Virtual Reality Project
 ---
 # Previewing your Virtual Reality Project {#virtual-reality-preview}

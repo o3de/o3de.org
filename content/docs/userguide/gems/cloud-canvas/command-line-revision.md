@@ -1,5 +1,5 @@
 ---
-description: ' Learn the new versions of &cloud; lmbr_aws commands in &ALYlong;. '
+description: ' Learn the new versions of Cloud Canvas lmbr_aws commands in Amazon Lumberyard. '
 title: Command Reorganization
 ---
 # Command Reorganization {#cloud-canvas-command-line-revision}

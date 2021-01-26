@@ -1,7 +1,7 @@
 ---
-description: ' Add support for &AWS; and custom resource types in your cloud gem for
-  &ALYlong;. '
-title: 'Adding Support for New &AWS;:: and Custom:: Types'
+description: ' Add support for AWS and custom resource types in your cloud gem for
+  Amazon Lumberyard. '
+title: 'Adding Support for New AWS:: and Custom:: Types'
 ---
 # Adding Support for New AWS:: and Custom:: Types {#cloud-canvas-cgf-adding-aws-resources-adding-support-for-new-aws-and-custom-types}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Simple Motion component to add motion effects to your actor
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Simple Motion
 ---
 # Simple Motion {#component-simple-motion}

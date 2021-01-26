@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Water Droplet node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Water Droplet node in the Amazon Lumberyard Script Canvas
   editor to enable water droplets. '
 title: Enable Water Droplets
 ---

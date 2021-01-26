@@ -1,5 +1,5 @@
 ---
-description: ' Use Lua scripting in &ALYlong; to automate your game project. '
+description: ' Use Lua scripting in Amazon Lumberyard to automate your game project. '
 title: Writing Lua Scripts
 ---
 # Writing Lua Scripts {#lua-scripting-intro}

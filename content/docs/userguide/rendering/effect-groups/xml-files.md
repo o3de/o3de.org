@@ -1,5 +1,5 @@
 ---
-description: ' Manage post effect group XML files in &ALYlong;. '
+description: ' Manage post effect group XML files in Amazon Lumberyard. '
 title: Post Effect Group XML Files
 ---
 # Post Effect Group XML Files {#effect-groups-xml-files}

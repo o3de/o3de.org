@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Sharpen node in the &ALYlong; &script-canvas; editor
+description: ' Use the Enable Sharpen node in the Amazon Lumberyard Script Canvas editor
   to configure the sharpen filter effect. '
 title: Enable Sharpen
 ---

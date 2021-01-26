@@ -1,5 +1,5 @@
 ---
-description: ' Play a video file in a loading screen or on textures in &ALYlong;. '
+description: ' Play a video file in a loading screen or on textures in Amazon Lumberyard. '
 title: Video Playback Gem
 ---
 # Video Playback Gem {#gems-system-gem-videoplayback}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the &project-configurator; to add the Virtual Reality Gem(s) to
+description: ' Use the Project Configurator to add the Virtual Reality Gem(s) to
   enable support for head-mounted display (HMD) in your project. '
 title: Configuring your Project for Virtual Reality
 ---

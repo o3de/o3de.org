@@ -1,5 +1,5 @@
 ---
-description: ' Use the Mesh component to add visual geometry to entities in &ALYlong;. '
+description: ' Use the Mesh component to add visual geometry to entities in Amazon Lumberyard. '
 title: Mesh
 ---
 # Mesh {#component-static-mesh}

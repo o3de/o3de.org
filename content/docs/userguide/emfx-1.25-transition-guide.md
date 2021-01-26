@@ -1,5 +1,5 @@
 ---
-description: ' Information for developers on changes to EMotion FX in &ALY; version
+description: ' Information for developers on changes to EMotion FX in Lumberyard version
   1.25. '
 title: EMotion FX transition guide version 1.25
 ---

@@ -1,7 +1,7 @@
 ---
-description: ' Get an overview of the &chatplay; system for interacting with Twitch
+description: ' Get an overview of the Twitch ChatPlay system for interacting with Twitch
   viewers. '
-title: '&chatplay; System'
+title: 'Twitch ChatPlay System'
 ---
 # Twitch ChatPlay System {#chatplay-intro}
 

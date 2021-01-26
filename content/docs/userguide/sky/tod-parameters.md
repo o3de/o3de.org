@@ -1,6 +1,6 @@
 ---
-description: ' Use the &tod-editor; parameters to customize sun, fog, and shadow settings
-  in your &ALYlong; environment. '
+description: ' Use the Time of Day Editor parameters to customize sun, fog, and shadow settings
+  in your Amazon Lumberyard environment. '
 title: Time of Day Parameters
 ---
 # Time of Day Parameters {#sky-tod-parameters}

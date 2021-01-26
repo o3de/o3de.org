@@ -1,6 +1,6 @@
 ---
 description: ' Modify the export properties of your .fbx files with FBX Settings in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: FBX Settings export properties
 ---
 # FBX Settings export properties {#fbx-properties}

@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to expose custom components and their properties to the &trackview-editor;
-  for animation in &ALYlong;. '
+description: ' Learn how to expose custom components and their properties to the <guilabel>Track View</guilabel> editor
+  for animation in Amazon Lumberyard. '
 title: Exposing Custom Components to Track View for Animation
 ---
 # Exposing Custom Components to Track View for Animation {#component-entity-system-track-view}

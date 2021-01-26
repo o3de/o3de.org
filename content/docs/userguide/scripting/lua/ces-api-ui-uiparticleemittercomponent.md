@@ -1,5 +1,5 @@
 ---
-description: ' Use Lua scripting to control the UI particle emitter component in &ALYlong;. '
+description: ' Use Lua scripting to control the UI particle emitter component in Amazon Lumberyard. '
 title: UIParticleEmitterComponent
 ---
 # UIParticleEmitterComponent {#lua-scripting-ces-api-ui-uiparticleemittercomponent}

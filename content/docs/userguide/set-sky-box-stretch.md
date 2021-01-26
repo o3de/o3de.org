@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Skybox Stretch node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Skybox Stretch node in the Amazon Lumberyard Script Canvas editor
   to stretch the skybox vertically. '
 title: Set Skybox Stretch
 ---

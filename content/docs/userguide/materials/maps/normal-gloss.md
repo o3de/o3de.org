@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about working with normals for gloss maps in &ALYlong;. '
+description: ' Learn more about working with normals for gloss maps in Amazon Lumberyard. '
 title: Using Normals with Gloss Maps
 ---
 # Using Normals with Gloss Maps {#mat-maps-normal-gloss}

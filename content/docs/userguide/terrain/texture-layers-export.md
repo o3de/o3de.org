@@ -1,6 +1,6 @@
 ---
-description: ' Export a terrain texture layer to reuse it in multiple &ALYlong; levels. '
-title: Exporting &terrain-textures;
+description: ' Export a terrain texture layer to reuse it in multiple Amazon Lumberyard levels. '
+title: Exporting Terrain Texture Layers
 ---
 # Exporting Terrain Texture Layers {#terrain-texture-layers-export}
 

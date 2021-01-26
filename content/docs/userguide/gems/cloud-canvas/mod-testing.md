@@ -1,5 +1,5 @@
 ---
-description: ' Test the &ALY; Message of the Day Cloud Gem sample level. '
+description: ' Test the Lumberyard Message of the Day Cloud Gem sample level. '
 title: Testing the Message of the Day Sample Level
 ---
 # Testing the Message of the Day Sample Level {#cloud-canvas-cloud-gem-mod-testing}

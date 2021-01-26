@@ -1,5 +1,5 @@
 ---
-description: ' Use Rulers and Guides in &ALYlong;''s &ui-canvas-editor; to visually
+description: ' Use Rulers and Guides in Amazon Lumberyard''s UI Editor to visually
   guide the placement of game UI elements on your UI canvas. '
 title: Rulers and Guides
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the TerrainDataRequestBus API in &ALYlong;. '
+description: ' Learn about the TerrainDataRequestBus API in Amazon Lumberyard. '
 title: TerrainDataRequestBus API
 ---
 # TerrainDataRequestBus API {#component-legacy-terrain-api}

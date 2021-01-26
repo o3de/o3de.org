@@ -1,5 +1,5 @@
 ---
-description: ' See additional information when working with the &ALYlong; Infinite
+description: ' See additional information when working with the Amazon Lumberyard Infinite
   Ocean component. '
 title: Additional Workflow
 ---

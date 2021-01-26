@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s road feature to create and place roads in your environment
+description: ' Use Lumberyard''s road feature to create and place roads in your environment
   level. '
 title: Creating the Road Entity
 ---

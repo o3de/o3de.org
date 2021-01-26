@@ -1,6 +1,6 @@
 ---
-description: ' Add &AWS; or custom resources to cloud gems in &ALYlong;. '
-title: ' Adding &AWS; Resources to a Cloud Gem'
+description: ' Add AWS or custom resources to cloud gems in Amazon Lumberyard. '
+title: ' Adding AWS Resources to a Cloud Gem'
 ---
 # Adding AWS Resources to a Cloud Gem {#cloud-canvas-cgf-adding-aws-resources}
 

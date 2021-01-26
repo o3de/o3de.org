@@ -1,5 +1,5 @@
 ---
-description: ' See the following C++ classes for AI objects in &ALYlong;. '
+description: ' See the following C++ classes for AI objects in Amazon Lumberyard. '
 title: AI C++ Class Hierarchy
 ---
 # AI C\+\+ Class Hierarchy {#ai-concepts-cpp-classes}

@@ -1,5 +1,5 @@
 ---
-description: ' Motion constraints for NVIDIA Cloth in &ALYlong;. '
+description: ' Motion constraints for NVIDIA Cloth in Amazon Lumberyard. '
 title: Cloth simulation constraints
 ---
 # Cloth simulation constraints {#nvidia-cloth-constraints}

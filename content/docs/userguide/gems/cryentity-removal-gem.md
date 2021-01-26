@@ -1,5 +1,5 @@
 ---
-description: ' Use the CryEntity Removal gem to disable all legacy features in &ly-editor;. '
+description: ' Use the CryEntity Removal gem to disable all legacy features in Lumberyard Editor. '
 title: CryEntity Removal Gem
 ---
 # CryEntity Removal Gem {#gems-system-cryentity-removal-gem}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &particle-editor; to create or add a new particle library. '
+description: ' Use the Lumberyard Particle Editor to create or add a new particle library. '
 title: Adding Particle Libraries
 ---
 # Adding Particle Libraries {#particle-creating-library}

@@ -1,5 +1,5 @@
 ---
-description: ' Create collision layers for the PhysX system in &ALYlong;. '
+description: ' Create collision layers for the PhysX system in Amazon Lumberyard. '
 title: Collision Layers
 ---
 # Collision Layers {#physx-configuration-collision-layers}

@@ -1,6 +1,6 @@
 ---
-description: ' Use the Graphics Scripting gem to enable the &ALYlong; graphics features
-  with scripting systems such as &script-canvas; and Lua. '
+description: ' Use the Graphics Scripting gem to enable the Amazon Lumberyard graphics features
+  with scripting systems such as Script Canvas and Lua. '
 title: Graphics Scripting
 ---
 # Graphics Scripting {#gems-system-gem-graphics-scripting}

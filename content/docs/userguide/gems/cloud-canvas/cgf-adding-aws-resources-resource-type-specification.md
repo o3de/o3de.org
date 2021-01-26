@@ -1,5 +1,5 @@
 ---
-description: ' Specify resource types in &cloud; for &ALYlong;. '
+description: ' Specify resource types in Cloud Canvas for Amazon Lumberyard. '
 title: Resource Type Specification
 ---
 # Resource Type Specification {#cloud-canvas-cgf-adding-aws-resources-resource-type-specification}

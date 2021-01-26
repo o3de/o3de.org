@@ -1,5 +1,5 @@
 ---
-description: ' Use levels of detail (LODs) to optimize game performance in &ALYlong;. '
+description: ' Use levels of detail (LODs) to optimize game performance in Amazon Lumberyard. '
 title: Using Actor LODs to Optimize Game Performance
 ---
 # Using Actor LODs to Optimize Game Performance {#using-actor-LODs-optimize-game-performance}

@@ -1,6 +1,6 @@
 ---
 description: ' Use event buses to dispatch messages safely and efficiently in your
-  gaming application for &ALYlong;. '
+  gaming application for Amazon Lumberyard. '
 title: Working with the Event Bus (EBus) system
 ---
 # Working with the Event Bus \(EBus\) system {#ebus-intro}

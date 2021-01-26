@@ -1,5 +1,5 @@
 ---
-description: ' Use the Sun Longitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Sun Longitude node in the Amazon Lumberyard Script Canvas editor
   to return the sun longitude. '
 title: Get Sun Longitude
 ---

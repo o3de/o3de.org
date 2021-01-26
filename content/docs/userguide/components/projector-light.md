@@ -1,6 +1,6 @@
 ---
 description: ' Use the Projector Light component on an entity to project a light in
-  &ALY;. '
+  Lumberyard. '
 title: Projector Light
 ---
 # Projector Light {#component-projector-light}

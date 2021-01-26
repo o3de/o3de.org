@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to work with &cloud; deployments in &cloud; Resource Manager. '
+description: ' Learn how to work with Cloud Canvas deployments in Cloud Canvas Resource Manager. '
 title: Working with Deployments
 ---
 # Working with Deployments {#cloud-canvas-ui-rm-deployments}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the TCP socket driver in &ALYlong; 1.10 and later for direct connections
+description: ' Use the TCP socket driver in Amazon Lumberyard 1.10 and later for direct connections
   and an event bus that detects stream connect and disconnect events. '
 title: The TCP Stream Driver
 ---

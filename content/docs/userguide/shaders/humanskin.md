@@ -1,5 +1,5 @@
 ---
-description: ' See the HumanSkin shader to render skin in &ALYlong;. '
+description: ' See the HumanSkin shader to render skin in Amazon Lumberyard. '
 title: HumanSkin Shader
 ---
 # HumanSkin Shader {#shader-ref-humanskin}

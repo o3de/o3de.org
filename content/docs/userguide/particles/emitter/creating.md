@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &particle-editor; to create, duplicate, edit, manage,
+description: ' Use the Lumberyard Particle Editor to create, duplicate, edit, manage,
   and organize emitters for particle effects. '
 title: Creating and Managing Particle Emitters
 ---

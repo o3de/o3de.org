@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about hot reloading of shaders in &ALYlong;. '
+description: ' Learn more about hot reloading of shaders in Amazon Lumberyard. '
 title: Hot Reloading of Shaders
 ---
 # Hot Reloading of Shaders {#mat-shaders-custom-dev-hot-reloading}

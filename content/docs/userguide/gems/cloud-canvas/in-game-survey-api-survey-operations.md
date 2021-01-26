@@ -1,5 +1,5 @@
 ---
-description: ' Use survey operations to manage your &cloud; in-game surveys in &ALYlong;. '
+description: ' Use survey operations to manage your Cloud Canvas in-game surveys in Amazon Lumberyard. '
 title: Survey Operations
 ---
 # Survey Operations {#cloud-canvas-cloud-gem-in-game-survey-api-survey-operations}

@@ -1,7 +1,7 @@
 ---
-description: ' Use the Defect Reporter &cgp; to view and manage defect report submissions
-  in &ALYlong;. '
-title: Using the Defect Reporter &cgp;
+description: ' Use the Defect Reporter Cloud Gem Portal to view and manage defect report submissions
+  in Amazon Lumberyard. '
+title: Using the Defect Reporter Cloud Gem Portal
 ---
 # Using the Defect Reporter Cloud Gem Portal {#cloud-canvas-cloud-gem-defect-reporter-cgp}
 

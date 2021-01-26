@@ -1,7 +1,7 @@
 ---
-description: ' Use this procedure to uninstall &ALY; and remove its components from
+description: ' Use this procedure to uninstall Lumberyard and remove its components from
   your computer. '
-title: Uninstalling &ALYlong;
+title: Uninstalling Amazon Lumberyard
 ---
 # Uninstalling Amazon Lumberyard {#uninstalling-amazon-lumberyard}
 

@@ -1,6 +1,6 @@
 ---
-description: ' Use the &cloud; lmbr_aws.cmd cloud-gem-framework command line for working
-  with the Cloud Gem Portal in &ALYlong;. '
+description: ' Use the Cloud Canvas lmbr_aws.cmd cloud-gem-framework command line for working
+  with the Cloud Gem Portal in Amazon Lumberyard. '
 title: Using the Cloud Gem Framework Command Line
 ---
 # Using the Cloud Gem Framework Command Line {#cloud-canvas-command-line-cgf}

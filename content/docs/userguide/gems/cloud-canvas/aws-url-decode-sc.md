@@ -1,6 +1,6 @@
 ---
-description: ' Use &script-canvas; to decode URLs in &ALYlong;. '
-title: Decoding a URL with &script-canvas;
+description: ' Use Script Canvas to decode URLs in Amazon Lumberyard. '
+title: Decoding a URL with Script Canvas
 ---
 # Decoding a URL with Script Canvas {#cloud-canvas-cloud-gem-aws-url-decode-sc}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Gradient Editor in the &ALYlong; &particle-editor; to apply
+description: ' Use the Gradient Editor in the Amazon Lumberyard Particle Editor to apply
   color ranges to an emitter. '
 title: Using the Gradient Editor
 ---

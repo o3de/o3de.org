@@ -1,6 +1,6 @@
 ---
 description: ' Customize your lightning arc effect entity by copying or modifying
-  presets in &ALY;''s lightningarceffects.xml file. '
+  presets in Lumberyard''s lightningarceffects.xml file. '
 title: Customizing a Lightning Arc Preset
 ---
 # Customizing a Lightning Arc Preset {#gems-system-gem-lightning-arc-presets}

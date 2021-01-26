@@ -1,7 +1,7 @@
 ---
-description: ' Sign up for an &AWS; account, get &AWS; credentials, and initialize
-  and administer an &AWS;-enabled &ALY; project in this step-by-step tutorial. '
-title: 'Tutorial: Getting Started with &cloud;'
+description: ' Sign up for an AWS account, get AWS credentials, and initialize
+  and administer an AWS-enabled Lumberyard project in this step-by-step tutorial. '
+title: 'Tutorial: Getting Started with Cloud Canvas'
 ---
 # Tutorial: Getting Started with Cloud Canvas {#cloud-canvas-tutorial}
 

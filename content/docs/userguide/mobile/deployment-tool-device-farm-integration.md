@@ -1,6 +1,6 @@
 ---
-description: ' Deploy your mobile apps to &ATPlong; for testing from &ALYlong;. '
-title: Using &ATPlong; in &ly-editor;
+description: ' Deploy your mobile apps to AWS Device Farm for testing from Amazon Lumberyard. '
+title: Using AWS Device Farm in Lumberyard Editor
 ---
 # Using AWS Device Farm in Lumberyard Editor {#ios-android-deployment-tool-device-farm-integration}
 

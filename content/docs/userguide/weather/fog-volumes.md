@@ -1,5 +1,5 @@
 ---
-description: ' Use fog volumes to define an area where fog appears in your &ALYlong;
+description: ' Use fog volumes to define an area where fog appears in your Amazon Lumberyard
   level. '
 title: Using Fog Volumes
 ---

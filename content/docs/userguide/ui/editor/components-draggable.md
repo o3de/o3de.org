@@ -1,5 +1,5 @@
 ---
-description: ' Use the draggable component in the &ALYlong; &ui-canvas-editor; to
+description: ' Use the draggable component in the Amazon Lumberyard UI Editor to
   make UI elements movable. '
 title: Draggable
 ---

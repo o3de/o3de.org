@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Graphics Settings window and configuration files
+description: ' Use the Amazon Lumberyard Graphics Settings window and configuration files
   to update graphics performance settings for Android and iOS games. '
 title: Updating Graphics Settings for Android and iOS
 ---

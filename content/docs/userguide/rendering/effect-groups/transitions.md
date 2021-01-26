@@ -1,5 +1,5 @@
 ---
-description: ' Specify a blend cube for smooth transitions in &ALYlong;. '
+description: ' Specify a blend cube for smooth transitions in Amazon Lumberyard. '
 title: Specifying a Blend Curve for Smooth Effect Transitions
 ---
 # Specifying a Blend Curve for Smooth Effect Transitions {#effect-groups-transitions}

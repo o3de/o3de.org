@@ -1,6 +1,6 @@
 ---
 description: ' Adjust horizon, moon, and starfield settings to create a dynamic nighttime
-  atmospheric effects in &ALYlong;. '
+  atmospheric effects in Amazon Lumberyard. '
 title: Setting Nighttime Atmospheric Effects
 ---
 # Setting Nighttime Atmospheric Effects {#sky-night-atmosphere}

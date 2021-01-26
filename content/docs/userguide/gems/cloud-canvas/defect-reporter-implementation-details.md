@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about the &AWS; features behind the Defect Reporter cloud
-  gem in &ALYlong;. '
+description: ' Learn more about the AWS features behind the Defect Reporter cloud
+  gem in Amazon Lumberyard. '
 title: Defect Reporter Implementation Details
 ---
 # Defect Reporter Implementation Details {#cloud-canvas-cloud-gem-defect-reporter-implementation-details}

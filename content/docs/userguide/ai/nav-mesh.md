@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about an MNM mesh in &ALYlong;. '
+description: ' Learn more about an MNM mesh in Amazon Lumberyard. '
 title: Multi-Layer Navigation Mesh (MNM)
 ---
 # Multi\-Layer Navigation Mesh \(MNM\) {#ai-nav-mesh}

@@ -1,6 +1,6 @@
 ---
 description: ' Use Profiler''s network features to understand how your game uses network
-  bandwidth in &ALYlong;. '
+  bandwidth in Amazon Lumberyard. '
 title: Using Profiler for Networking
 ---
 # Using Profiler for Networking {#network-profilers}

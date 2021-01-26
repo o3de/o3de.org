@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s physically-based rendering shaders to create screen
+description: ' Use Amazon Lumberyard''s physically-based rendering shaders to create screen
   effects for your game project. '
 title: Create screen effects
 ---

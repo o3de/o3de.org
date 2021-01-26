@@ -1,5 +1,5 @@
 ---
-description: ' Debug your macOS application using Xcode and &ALY; source code. Troubleshoot
+description: ' Debug your macOS application using Xcode and Lumberyard source code. Troubleshoot
   the various steps to build assets, shaders, and your macOS application. '
 title: macOS Debugging and Troubleshooting
 ---

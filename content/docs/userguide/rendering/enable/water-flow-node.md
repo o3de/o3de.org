@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Water Flow node in the &ALYlong; &script-canvas; editor
+description: ' Use the Enable Water Flow node in the Amazon Lumberyard Script Canvas editor
   to enable water flow effects. '
 title: Enable Water Flow
 ---

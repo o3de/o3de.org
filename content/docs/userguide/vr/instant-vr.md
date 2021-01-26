@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s instantVR slice as a starting point from which you
+description: ' Use Amazon Lumberyard''s instantVR slice as a starting point from which you
   can quickly create a virtual reality level with scripts and assets that provide
   VR functionality. '
 title: Using the InstantVR Slice

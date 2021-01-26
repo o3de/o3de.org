@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use &ALYlong;''s &project-configurator; to configure the
+description: ' Learn how to use Amazon Lumberyard''s Project Configurator to configure the
   system entity. '
 title: Configuring System Entities
 ---

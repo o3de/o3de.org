@@ -1,5 +1,5 @@
 ---
-description: ' Test your new gem by enabling it in &ALYlong; &project-configurator;. '
+description: ' Test your new gem by enabling it in Amazon Lumberyard Project Configurator. '
 title: Testing Your Gem
 ---
 # Testing Your Gem {#gems-system-gems-testing}

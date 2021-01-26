@@ -1,6 +1,6 @@
 ---
-description: ' Use the behavior context in &ALYlong; to make runtime code accessible
-  to scripting languages like Lua or scripting environments like &ALY;''s &script-canvas;. '
+description: ' Use the behavior context in Amazon Lumberyard to make runtime code accessible
+  to scripting languages like Lua or scripting environments like Lumberyard''s Script Canvas. '
 title: Behavior Context
 ---
 # Behavior Context {#component-entity-system-reflection-behavior-context}

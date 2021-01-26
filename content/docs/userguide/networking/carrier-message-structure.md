@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the Carrier message structure in GridMate, &ALYlong;''s
+description: ' Learn about the Carrier message structure in GridMate, Amazon Lumberyard''s
   networking system. '
 title: Carrier Message Structure
 ---

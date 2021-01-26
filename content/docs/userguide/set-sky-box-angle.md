@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Skybox Angle node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Skybox Angle node in the Amazon Lumberyard Script Canvas editor
   to rotate the skybox around the z-axis. '
 title: Set Skybox Angle
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' See the following topics for working with cinematic cameras in &ALYlong;. '
+description: ' See the following topics for working with cinematic cameras in Amazon Lumberyard. '
 title: Adding a Camera
 ---
 # Adding a Camera {#cinematics-cameras-intro}

@@ -1,6 +1,6 @@
 ---
-description: ' Use the edit context to expose parameters for editing in &ALYlong;''s
-  &ly-editor;. '
+description: ' Use the edit context to expose parameters for editing in Amazon Lumberyard''s
+  Lumberyard Editor. '
 title: Edit Context
 ---
 # Edit Context {#component-entity-system-reflection-edit-context}

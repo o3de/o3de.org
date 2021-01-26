@@ -1,5 +1,5 @@
 ---
-description: ' Provides a description of the status codes that appear in &cloud; resource
+description: ' Provides a description of the status codes that appear in Cloud Canvas resource
   operations. '
 title: Understanding Resource Status Descriptions
 ---

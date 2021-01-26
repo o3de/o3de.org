@@ -1,7 +1,7 @@
 ---
-description: ' Get started with &ALYlong;''s &script-canvas;, a visual scripting environment
+description: ' Get started with Amazon Lumberyard''s Script Canvas, a visual scripting environment
   to implement game logic without needing to write code. '
-title: Creating Gameplay with &script-canvas;
+title: Creating Gameplay with Script Canvas
 ---
 # Creating Gameplay with Script Canvas {#script-canvas-intro}
 

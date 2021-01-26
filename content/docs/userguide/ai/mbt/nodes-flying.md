@@ -1,6 +1,6 @@
 ---
 description: ' See the following AI Modular Behavior Tree (MBT) nodes for flying vehicles
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Helicopter AI MBT Nodes
 ---
 # Helicopter AI MBT Nodes {#ai-mbt-nodes-flying}

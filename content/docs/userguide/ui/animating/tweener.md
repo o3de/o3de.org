@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s Scripted Tweener Entity system to create animations
+description: ' Use Amazon Lumberyard''s Scripted Tweener Entity system to create animations
   in your game''s UI. '
 title: Scripted Tweener Entity System
 ---

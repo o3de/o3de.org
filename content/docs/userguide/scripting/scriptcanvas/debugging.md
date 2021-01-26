@@ -1,7 +1,7 @@
 ---
-description: ' Debug your &script-canvas; graphs in &ALYlong;''s visual scripting
+description: ' Debug your Script Canvas graphs in Amazon Lumberyard''s visual scripting
   tool. '
-title: '&script-canvas; Debugging'
+title: 'Script Canvas Debugging'
 ---
 # Script Canvas Debugging {#script-canvas-debugging}
 

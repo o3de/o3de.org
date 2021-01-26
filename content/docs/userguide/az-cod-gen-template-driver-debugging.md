@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to debug template drivers that are run from &ALYlong;''s
+description: ' Learn how to debug template drivers that are run from Amazon Lumberyard''s
   AZ Code Generator. '
 title: Template Driver Debugging
 ---

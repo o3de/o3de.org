@@ -1,6 +1,6 @@
 ---
-description: ' Use the Curve Editor in &trackview-editor; to manage animations in
-  &ALYlong;. '
+description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to manage animations in
+  Amazon Lumberyard. '
 title: Using Animation Curves
 ---
 # Using Animation Curves {#cinematics-track-view-editor-animation-curves}

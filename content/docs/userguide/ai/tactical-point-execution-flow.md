@@ -1,5 +1,5 @@
 ---
-description: ' See the following TPS query execution flow in &ALYlong;. '
+description: ' See the following TPS query execution flow in Amazon Lumberyard. '
 title: TPS Query Execution Flow
 ---
 # TPS Query Execution Flow {#ai-tactical-point-execution-flow}

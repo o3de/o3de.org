@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about FAQs for AI navigation in &ALYlong;. '
-title: Navigation Q &amp; A
+description: ' Learn more about FAQs for AI navigation in Amazon Lumberyard. '
+title: Navigation Q & A
 ---
 # Navigation Q & A {#ai-navigation}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Material node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Get Material node in the Amazon Lumberyard Script Canvas editor to
   find an entity''s current material file. '
 title: Get Material
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use interactive components in the &ALYlong; &ui-canvas-editor;. '
+description: ' Use interactive components in the Amazon Lumberyard UI Editor. '
 title: Interactive Components
 ---
 # Interactive Components {#ui-editor-components-interactive}

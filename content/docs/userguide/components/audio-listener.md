@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Listener component to add a virtual microphone in the
-  &ALYlong; environment. '
+  Amazon Lumberyard environment. '
 title: Audio Listener
 ---
 # Audio Listener {#component-audio-listener}

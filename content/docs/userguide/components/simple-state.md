@@ -1,5 +1,5 @@
 ---
-description: ' Use the Simple State component in &ALYlong; to provide a simple state
+description: ' Use the Simple State component in Amazon Lumberyard to provide a simple state
   machine. '
 title: Simple State
 ---

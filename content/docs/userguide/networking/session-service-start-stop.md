@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to start and stop the GridMate session service in &ALYlong;. '
+description: ' Learn how to start and stop the GridMate session service in Amazon Lumberyard. '
 title: Starting and Stopping the Session Service
 ---
 # Starting and Stopping the Session Service {#network-session-service-start-stop}

@@ -1,5 +1,5 @@
 ---
-description: ' You can manage your components with the &entity-outliner; in &ALYlong;. '
+description: ' You can manage your components with the Entity Outliner in Amazon Lumberyard. '
 title: Managing Components
 ---
 # Managing Components {#creating-adding-components}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn programming details of &ALYlong;''s behavior context and its
+description: ' Learn programming details of Amazon Lumberyard''s behavior context and its
   reflection API. '
 title: Behavior Context in Depth
 ---
@@ -169,9 +169,9 @@ public:
 behaviorClass.EBus<MyEBus>("MyEBus") // EBuses are not required to have TypeInfo, so you must always provide a name.
     ->Handler<MyEBusBehaviorHandler >() // Allow systems that use behavior context to create handlers for this EBus every time
                                            // they must listen for events. If you reflect a bus without a handler, behavior context users can only send events.
-    ->Event("OnEvent",&amp;MyEBus::Events::OnEvent) // Allow behavior context system to send an "OnEvent" event. The code automatically generates
-                                                   // Broadcast, Event, QueueBroadcast, QueueEvent, and QueueFunctions if the EBus configuration
-                                                   // supports them. You don't have to provide events; you can provide only a handler if
+    ->Event("OnEvent",&MyEBus::Events::OnEvent) // Allow behavior context system to send an "OnEvent" event. The code automatically generates
+                                                   // Broadcast, Event, QueueBroadcast, QueueEvent, and QueueFunctions if the EBus configuration 
+                                                   // supports them. You don't have to provide events; you can provide only a handler if 
                                                    // you don't have behavior context systems to send events.
     ;
 

@@ -1,7 +1,7 @@
 ---
-description: ' Use the &AWS; Script Behaviors cloud gem to implement &AWS; features
-  in &ALYlong;. '
-title: Using the &AWS; Script Behaviors Cloud Gem
+description: ' Use the AWS Script Behaviors cloud gem to implement AWS features
+  in Amazon Lumberyard. '
+title: Using the AWS Script Behaviors Cloud Gem
 ---
 # Using the AWS Script Behaviors Cloud Gem {#cloud-canvas-cloud-gem-aws-script-behavior-intro}
 

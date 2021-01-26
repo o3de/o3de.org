@@ -1,5 +1,5 @@
 ---
-description: ' Learn &ALYlong; build commands and settings for the Android platform. '
+description: ' Learn Amazon Lumberyard build commands and settings for the Android platform. '
 title: Reference for Android
 ---
 # Reference for Android {#android-reference}

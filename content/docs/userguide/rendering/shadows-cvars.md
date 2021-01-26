@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables (CVARs) in &ALYlong; to configure terrain and
+description: ' Use console variables (CVARs) in Amazon Lumberyard to configure terrain and
   cascade shadow maps. '
 title: Using CVARs to Configure Terrain and Cascade Shadow Maps
 ---

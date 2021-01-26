@@ -1,5 +1,5 @@
 ---
-description: ' Use the PhysX Terrain component to create a physics collider in &ALYlong;. '
+description: ' Use the PhysX Terrain component to create a physics collider in Amazon Lumberyard. '
 title: PhysX Terrain
 ---
 # PhysX Terrain {#component-physx-terrain}

@@ -1,6 +1,6 @@
 ---
 description: ' Become an authorized Twitch development partner to use the Twitch Gem
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Twitch Gem
 ---
 # Twitch Gem {#gems-system-gem-twitch}

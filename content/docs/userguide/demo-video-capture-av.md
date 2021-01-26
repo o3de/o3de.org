@@ -1,5 +1,5 @@
 ---
-description: ' Capture video and audio in &ALYlong;. '
+description: ' Capture video and audio in Amazon Lumberyard. '
 title: Capturing Video and Audio
 ---
 # Capturing Video and Audio {#demo-video-capture-av}

@@ -1,6 +1,6 @@
 ---
-description: ' Submit feedback and suggestions for &ALYlong;. '
-title: '&ALY; Blog, Forums, and Feedback'
+description: ' Submit feedback and suggestions for Amazon Lumberyard. '
+title: 'Lumberyard Blog, Forums, and Feedback'
 ---
 # Lumberyard Blog, Forums, and Feedback {#lumberyard-blog-forums-feedback}
 

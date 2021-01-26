@@ -1,5 +1,5 @@
 ---
-description: ' Work with detail maps in the &material-editor; in &ALYlong;. '
+description: ' Work with detail maps in the Material Editor in Amazon Lumberyard. '
 title: Working with Detail Maps
 ---
 # Working with Detail Maps {#mat-maps-detail-intro}

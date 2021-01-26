@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Rich Presence C++ API operations for Twitch that you
-  can use for your &ALY; game project. '
+  can use for your Lumberyard game project. '
 title: Rich Presence
 ---
 # Rich Presence {#twitch-api-ebus-rich-presence}

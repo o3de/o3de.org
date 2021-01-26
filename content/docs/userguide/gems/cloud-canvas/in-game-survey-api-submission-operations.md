@@ -1,6 +1,6 @@
 ---
 description: ' Use answer submission operations to manage answer submissions to your
-  &cloud; in-game surveys in &ALYlong;. '
+  Cloud Canvas in-game surveys in Amazon Lumberyard. '
 title: Answer Submission Operations
 ---
 # Answer Submission Operations {#cloud-canvas-cloud-gem-in-game-survey-api-submission-operations}

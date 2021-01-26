@@ -1,5 +1,5 @@
 ---
-description: ' Use the lmbr_aws CLI to manage dynamic content for your &ALYlong; game. '
+description: ' Use the lmbr_aws CLI to manage dynamic content for your Amazon Lumberyard game. '
 title: Using the Dynamic Content Command Line
 ---
 # Using the Dynamic Content Command Line {#cloud-canvas-cloud-gem-dc-lmbr-aws}

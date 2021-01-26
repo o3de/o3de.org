@@ -1,5 +1,5 @@
 ---
-description: ' Define how the sun appears in the daytime in &ALYlong;. '
+description: ' Define how the sun appears in the daytime in Amazon Lumberyard. '
 title: Setting Sun Parameters and Console Variables
 ---
 # Setting Sun Parameters and Console Variables {#sky-day-sun-params}

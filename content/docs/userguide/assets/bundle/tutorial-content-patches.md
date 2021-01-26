@@ -1,7 +1,7 @@
 ---
 description: ' Create asset bundles that can be distributed to patch and update a
-  live &ALY; game, while also making a new distribution for later downloads. '
-title: Create content patches with &ALY;
+  live Lumberyard game, while also making a new distribution for later downloads. '
+title: Create content patches with Lumberyard
 ---
 # Create content patches with Lumberyard {#asset-bundler-tutorial-content-patches}
 

@@ -1,5 +1,5 @@
 ---
-description: ' See the following AI nodes for the AI system in &ALYlong;. '
+description: ' See the following AI nodes for the AI system in Amazon Lumberyard. '
 title: AI Nodes
 ---
 # AI Nodes {#ai-scripting-mbt-nodes-ai}

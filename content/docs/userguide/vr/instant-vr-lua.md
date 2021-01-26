@@ -1,5 +1,5 @@
 ---
-description: ' View the InstantVR Lua script properties in &ALYlong;. '
+description: ' View the InstantVR Lua script properties in Amazon Lumberyard. '
 title: InstantVR Lua Script Properties
 ---
 # InstantVR Lua Script Properties {#virtual-reality-instant-vr-lua}

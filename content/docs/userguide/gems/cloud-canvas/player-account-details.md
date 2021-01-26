@@ -1,6 +1,6 @@
 ---
 description: ' Learn about implementation details for the Player Account Cloud Gem
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Player Account Cloud Gem Implementation Details
 ---
 # Player Account Cloud Gem Implementation Details {#cloud-canvas-cloud-gem-player-account-details}

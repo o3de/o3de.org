@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to create a material variable
+description: ' Use the Amazon Lumberyard Script Canvas editor to create a material variable
   node. '
 title: Material Variables
 ---

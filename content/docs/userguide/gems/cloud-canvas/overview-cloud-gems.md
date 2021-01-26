@@ -1,6 +1,6 @@
 ---
 description: ' Use cloud gems to provide cloud-connected features to your games in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Cloud Gems Overview
 ---
 # Cloud Gems Overview {#cloud-canvas-overview-cloud-gems}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the water shader material with the &ALYlong; Infinite Ocean component. '
+description: ' Use the water shader material with the Amazon Lumberyard Infinite Ocean component. '
 title: Water Shader Material for the Infinite Ocean Component
 ---
 # Water Shader Material for the Infinite Ocean Component {#infinite-ocean-component-water-shader-material}

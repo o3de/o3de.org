@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Channels C++ API operations for Twitch that you can
-  use for your &ALY; game project. '
+  use for your Lumberyard game project. '
 title: Channels
 ---
 # Channels {#twitch-api-ebus-channels}

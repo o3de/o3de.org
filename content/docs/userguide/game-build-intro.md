@@ -1,6 +1,6 @@
 ---
-description: ' Create a variety of game builds in &ALYlong; for different purposes. '
-title: Building &ALY; projects
+description: ' Create a variety of game builds in Amazon Lumberyard for different purposes. '
+title: Building Lumberyard projects
 ---
 # Building Lumberyard projects {#game-build-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Specify a position and a direction with refpoints in &ALYlong;. '
+description: ' Specify a position and a direction with refpoints in Amazon Lumberyard. '
 title: Refpoints
 ---
 # Refpoints {#ai-scripting-refpoints}

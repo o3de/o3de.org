@@ -1,5 +1,5 @@
 ---
-description: ' Send and receive signals between AI agents in &ALYlong;. '
+description: ' Send and receive signals between AI agents in Amazon Lumberyard. '
 title: Signals
 ---
 # Signals {#ai-scripting-signals}

@@ -1,6 +1,6 @@
 ---
 description: ' Use UI world components to control the loading and unloading of canvases
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UI World Components
 ---
 # UI World Components {#lua-scripting-ces-api-ui-world-components}

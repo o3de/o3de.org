@@ -1,5 +1,5 @@
 ---
-description: ' Modify the transform for entities using the &VIM; in &ALYlong;. '
+description: ' Modify the transform for entities using the Viewport Interaction Model in Amazon Lumberyard. '
 title: Modifying the Transform
 ---
 # Modifying the Transform {#viewport-interaction-model-transform}

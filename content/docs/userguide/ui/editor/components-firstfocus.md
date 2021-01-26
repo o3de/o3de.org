@@ -1,6 +1,6 @@
 ---
 description: ' Use the First Focus Element property to determine which element receives
-  first focus when a canvas is first loaded in &ALY;. '
+  first focus when a canvas is first loaded in Lumberyard. '
 title: First Focus Element
 ---
 # First Focus Element {#ui-editor-components-firstfocus}

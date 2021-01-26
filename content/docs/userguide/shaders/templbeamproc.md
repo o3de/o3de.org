@@ -1,6 +1,6 @@
 ---
 description: ' Ise the TemplBeamProc shader to create fog-like light beam effects
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: TemplBeamProc Shader
 ---
 # TemplBeamProc Shader {#shader-ref-templbeamproc}

@@ -1,5 +1,5 @@
 ---
-description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
+description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Adding a Director (Scene) Node
 ---
 # Adding a Director \(Scene\) Node {#cinematics-adding-a-director-scene-node}

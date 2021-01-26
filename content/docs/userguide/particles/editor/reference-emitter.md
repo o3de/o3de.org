@@ -1,5 +1,5 @@
 ---
-description: ' Use the Emitter Attribute in the &ALY; &particle-editor; to control
+description: ' Use the Emitter Attribute in the Lumberyard Particle Editor to control
   the location and spawning attributes of the particle and emitter shape. '
 title: Emitter Attribute
 ---

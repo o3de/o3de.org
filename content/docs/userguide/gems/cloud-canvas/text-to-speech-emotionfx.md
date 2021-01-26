@@ -1,6 +1,6 @@
 ---
-description: ' Learn about lip synchronization in &ALYlong;. '
-title: Lip Synchronization with &emotionfx;
+description: ' Learn about lip synchronization in Amazon Lumberyard. '
+title: Lip Synchronization with EMotionFX
 ---
 # Lip Synchronization with EMotion FX {#cloud-canvas-cloud-gem-text-to-speech-emotionfx}
 

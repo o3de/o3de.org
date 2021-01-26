@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Rain component to add rain effects to your game. '
+description: ' Use the Amazon Lumberyard Rain component to add rain effects to your game. '
 title: Rain
 ---
 # Rain {#component-rain}

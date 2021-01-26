@@ -1,6 +1,6 @@
 ---
 description: ' Use the UITextInputComponent to provide player text input capability
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UITextInputComponent
 ---
 # UITextInputComponent {#lua-scripting-ces-api-ui-uitextinputcomponent}

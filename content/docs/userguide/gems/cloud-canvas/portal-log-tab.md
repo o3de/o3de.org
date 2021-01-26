@@ -1,6 +1,6 @@
 ---
-description: ' View logs for your cloud gems in &ALYlong; with the &cgp;. '
-title: Using the &cgp; to View Logs
+description: ' View logs for your cloud gems in Amazon Lumberyard with the Cloud Gem Portal. '
+title: Using the Cloud Gem Portal to View Logs
 ---
 # Using the Cloud Gem Portal to View Logs {#cloud-canvas-cloud-gem-portal-log-tab}
 

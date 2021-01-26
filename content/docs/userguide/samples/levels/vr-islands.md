@@ -1,6 +1,6 @@
 ---
 description: ' Use the VR Islands level to demonstrate a simple VR level that uses
-  the instantvr entity in &ALYlong;. '
+  the instantvr entity in Amazon Lumberyard. '
 title: VR Islands Level
 ---
 # VR Islands Level {#sample-level-vr-islands}

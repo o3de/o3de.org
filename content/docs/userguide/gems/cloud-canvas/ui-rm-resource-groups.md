@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to work with resource groups in &cloud; Resource Manager. '
+description: ' Learn how to work with resource groups in Cloud Canvas Resource Manager. '
 title: Working with Resource Groups
 ---
 # Working with Resource Groups {#cloud-canvas-ui-rm-resource-groups}

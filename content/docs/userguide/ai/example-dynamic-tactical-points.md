@@ -1,6 +1,6 @@
 ---
 description: ' See the following example for individual AI for tactical points in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: 'Individual AI: Tactical Points'
 ---
 # Individual AI: Tactical Points {#ai-concepts-example-dynamic-tactical-points}

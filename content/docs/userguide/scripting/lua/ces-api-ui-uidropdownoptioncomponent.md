@@ -1,6 +1,6 @@
 ---
 description: ' Use UiDropdownOptionComponent to implement dropdown options for a UI
-  element in &ALYlong;. '
+  element in Amazon Lumberyard. '
 title: UiDropdownOptionComponent
 ---
 # UiDropdownOptionComponent {#lua-scripting-ces-api-ui-uidropdownoptioncomponent}

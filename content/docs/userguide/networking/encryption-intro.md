@@ -1,6 +1,6 @@
 ---
 description: ' Encrypt traffic among clients and servers in a GridMate session in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Using Encryption
 ---
 # Using Encryption {#network-encryption-intro}

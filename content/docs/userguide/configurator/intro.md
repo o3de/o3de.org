@@ -1,7 +1,7 @@
 ---
-description: ' Use &ALYlong;''s &project-configurator; to create new projects, save
+description: ' Use Amazon Lumberyard''s Project Configurator to create new projects, save
   active projects, and enable, disable, or create new gems. '
-title: Creating &ALY; projects
+title: Creating Lumberyard projects
 ---
 # Creating Lumberyard projects {#configurator-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use visual debugging on destruction simulations in &ALYlong; with NVIDIA
+description: ' Use visual debugging on destruction simulations in Amazon Lumberyard with NVIDIA
   Blast. '
 title: NVIDIA Blast visual debugger
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Make precise changes to the geometry of a river in your &ALY; level
+description: ' Make precise changes to the geometry of a river in your Lumberyard level
   by adjusting the spline points and parameters '
 title: Adjusting River Spline Geometry
 ---

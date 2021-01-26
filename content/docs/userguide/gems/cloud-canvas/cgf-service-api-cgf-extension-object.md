@@ -1,6 +1,6 @@
 ---
-description: ' Learn how &ALYlong;''s Cloud Gem Framework swagger extension object
-  facilitates the use of &ABP; for use with &LAMlong;. '
+description: ' Learn how Amazon Lumberyard''s Cloud Gem Framework swagger extension object
+  facilitates the use of API Gateway for use with AWS Lambda. '
 title: Cloud Gem Framework Extension Object
 ---
 # Cloud Gem Framework Extension Object {#cloud-canvas-cgf-service-api-cgf-extension-object}

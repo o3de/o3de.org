@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the user interface for the Motions pane in the &animation-editor;
+description: ' Learn more about the user interface for the Motions pane in the Animation Editor
   . '
 title: Motions Interface
 ---

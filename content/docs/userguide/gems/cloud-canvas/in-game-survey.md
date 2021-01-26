@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; In-Game Survey Cloud Gem Portal to create surveys
+description: ' Use the Amazon Lumberyard In-Game Survey Cloud Gem Portal to create surveys
   for your game and test them in InGameSurveySample. '
 title: In-Game Survey Cloud Gem Portal
 ---

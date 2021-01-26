@@ -1,6 +1,6 @@
 ---
-description: ' Use the shader compiler proxy component in &ALYlong; to forward shader
-  compiler requests through the &asset-processor; connection. '
+description: ' Use the shader compiler proxy component in Amazon Lumberyard to forward shader
+  compiler requests through the Asset Processor connection. '
 title: Shader Compiler Proxy
 ---
 # Shader Compiler Proxy {#asset-pipeline-shader-compiler}

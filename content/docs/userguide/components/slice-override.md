@@ -1,5 +1,5 @@
 ---
-description: ' Revert overrides in &ly-editor;. '
+description: ' Revert overrides in Lumberyard Editor. '
 title: Reverting and Forcing Overrides
 ---
 # Reverting and Forcing Overrides {#component-slice-override}

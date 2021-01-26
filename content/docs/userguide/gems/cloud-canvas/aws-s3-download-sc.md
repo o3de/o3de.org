@@ -1,6 +1,6 @@
 ---
-description: ' Download a file from &S3; with &script-canvas; in &ALYlong;. '
-title: Downloading a File from &S3; with &script-canvas;
+description: ' Download a file from S3 with Script Canvas in Amazon Lumberyard. '
+title: Downloading a File from S3 with Script Canvas
 ---
 # Downloading a File from Amazon S3 with Script Canvas {#cloud-canvas-cloud-gem-aws-s3-download-sc}
 

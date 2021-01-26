@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to disconnect &script-canvas; nodes in &ALYlong;. '
+description: ' Learn how to disconnect Script Canvas nodes in Amazon Lumberyard. '
 title: Disconnecting Nodes
 ---
 # Disconnecting Nodes {#script-canvas-working-with-nodes-disconnecting}

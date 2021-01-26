@@ -1,6 +1,6 @@
 ---
-description: ' Learn how &cloud; can help you use the power of the &AWS; cloud. '
-title: '&cloud; Overview'
+description: ' Learn how Cloud Canvas can help you use the power of the AWS cloud. '
+title: 'Cloud Canvas Overview'
 ---
 # Cloud Canvas Overview {#cloud-canvas-overview}
 

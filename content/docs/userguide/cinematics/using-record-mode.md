@@ -1,5 +1,5 @@
 ---
-description: ' Use Record mode for a sequence in the &trackview-editor; in &ALYlong;. '
+description: ' Use Record mode for a sequence in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Using Record Mode
 ---
 # Using Record Mode {#cinematics-using-record-mode}

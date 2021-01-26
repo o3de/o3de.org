@@ -1,6 +1,6 @@
 ---
 description: ' Use extendable nodes to allow users to add as many slots as they require
-  to a node in &script-canvas;, &ALYlong;''s visual scripting system. '
+  to a node in Script Canvas, Amazon Lumberyard''s visual scripting system. '
 title: Extendable Nodes
 ---
 # Extendable Nodes {#script-canvas-custom-nodes-extendable}

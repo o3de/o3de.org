@@ -1,5 +1,5 @@
 ---
-description: ' Create a slice in &ly-editor;. '
+description: ' Create a slice in Lumberyard Editor. '
 title: Creating a Slice
 ---
 # Creating a Slice {#component-slices-creating}

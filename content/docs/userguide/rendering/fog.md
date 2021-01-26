@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s standard fog system to create various types of fog for
+description: ' Use Lumberyard''s standard fog system to create various types of fog for
   your game project. '
 title: Standard Fog
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' See the C++ interfaces for TPS querying in &ALYlong;. '
+description: ' See the C++ interfaces for TPS querying in Amazon Lumberyard. '
 title: TPS Querying with C++
 ---
 # TPS Querying with C\+\+ {#ai-tactical-point-cpp-interface}

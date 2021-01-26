@@ -1,6 +1,6 @@
 ---
 description: ' Set up simulated object colliders so that the actor''s body interacts
-  with the tassel in &ALYlong;. '
+  with the tassel in Amazon Lumberyard. '
 title: Setting Up Simulated Object Colliders
 ---
 # Setting Up Simulated Object Colliders {#set-up-simulated-object-collider}

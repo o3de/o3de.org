@@ -1,5 +1,5 @@
 ---
-description: ' Modify your WAF build script (wscript) in &ALYlong; to take advantage
+description: ' Modify your WAF build script (wscript) in Amazon Lumberyard to take advantage
   of GridMate encryption support. '
 title: Building with Encryption
 ---

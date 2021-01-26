@@ -1,6 +1,6 @@
 ---
 description: ' Use the smooth brush to average out terrain heights to provide a smoother
-  surface to your &ALY; terrain. '
+  surface to your Lumberyard terrain. '
 title: Using the Smooth Brush
 ---
 # Using the Smooth Brush {#terrain-landforms-smooth-brush}

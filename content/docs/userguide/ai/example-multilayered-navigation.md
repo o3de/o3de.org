@@ -1,5 +1,5 @@
 ---
-description: ' See the following console variables for AI debugging in &ALYlong;. '
+description: ' See the following console variables for AI debugging in Amazon Lumberyard. '
 title: AI Multi-Layered Navigation
 ---
 # AI Multi\-Layered Navigation {#ai-concepts-example-multilayered-navigation}

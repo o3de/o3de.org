@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIMaskComponent to show only part of the content of a component''s
-  child elements in &ALYlong;. '
+  child elements in Amazon Lumberyard. '
 title: UIMaskComponent
 ---
 # UIMaskComponent {#lua-scripting-ces-api-ui-uimaskcomponent}

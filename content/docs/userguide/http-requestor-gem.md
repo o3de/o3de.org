@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; HttpRequestor gem to make asynchronous HTTP/HTTPS
+description: ' Use the Amazon Lumberyard HttpRequestor gem to make asynchronous HTTP/HTTPS
   requests and return data through a call back function that you provide. '
 title: HttpRequestor Gem
 ---

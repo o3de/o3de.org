@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio attribute in the &ALYlong; &particle-editor; to specify
+description: ' Use the Audio attribute in the Amazon Lumberyard Particle Editor to specify
   which sounds the particle system emits and when. '
 title: Audio Attribute
 ---

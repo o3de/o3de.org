@@ -1,5 +1,5 @@
 ---
-description: ' Use the Snow Gem to create realistic snow effects in your &ALYlong;
+description: ' Use the Snow Gem to create realistic snow effects in your Amazon Lumberyard
   level. '
 title: Snow Gem
 ---

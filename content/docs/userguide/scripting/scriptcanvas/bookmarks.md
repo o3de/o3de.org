@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to add bookmarks to your script. '
-title: Adding Bookmarks for &script-canvas;
+description: ' Use the Amazon Lumberyard Script Canvas editor to add bookmarks to your script. '
+title: Adding Bookmarks for Script Canvas
 ---
 # Adding Bookmarks for Script Canvas {#script-canvas-bookmarks}
 

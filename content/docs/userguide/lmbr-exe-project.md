@@ -1,5 +1,5 @@
 ---
-description: Use the lmbr projects command to create new &ALY; projects and list existing
+description: Use the lmbr projects command to create new Lumberyard projects and list existing
   projects.
 title: Projects Commands
 ---

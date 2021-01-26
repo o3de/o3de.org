@@ -1,6 +1,6 @@
 ---
-description: ' Drag and drop assets from the &ly-editor;''s &ast-browser; into the
-  &ui-editor; as a convenient way to create new entities and assets in the &ui-editor;
+description: ' Drag and drop assets from the Lumberyard Editor''s Asset Browser into the
+  UI Editor as a convenient way to create new entities and assets in the UI Editor
   . '
 title: Asset Drag and Drop
 ---

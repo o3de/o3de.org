@@ -1,5 +1,5 @@
 ---
-description: ' Use the fader and mask components in &ALYlong;''s &ui-canvas-editor;
+description: ' Use the fader and mask components in Amazon Lumberyard''s UI Editor
   to adjust transparency and to mask, or show a portion of content in child elements. '
 title: Other Components
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Shadows Setup node in &ALYlong;''s &trackview-editor; to add
+description: ' Use the Shadows Setup node in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor to add
   or remove sun shadow maps over several frames. '
 title: Shadows Setup Node
 ---

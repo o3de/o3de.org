@@ -1,5 +1,5 @@
 ---
-description: ' Use the Defect Reporter to create Jira tickets in &ALYlong;. '
+description: ' Use the Defect Reporter to create Jira tickets in Amazon Lumberyard. '
 title: Using Defect Reporter to Create Jira Tickets
 ---
 # Using Defect Reporter to Create Jira Tickets {#cloud-canvas-cloud-gem-defect-reporter-cgp-jira}

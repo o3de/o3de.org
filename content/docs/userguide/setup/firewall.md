@@ -1,5 +1,5 @@
 ---
-description: ' Enable a LAN firewall to protect your &ALYlong; environment '
+description: ' Enable a LAN firewall to protect your Amazon Lumberyard environment '
 title: Enabling a Firewall
 ---
 # Enabling a Firewall {#setting-up-firewall}

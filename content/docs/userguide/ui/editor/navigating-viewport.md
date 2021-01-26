@@ -1,6 +1,6 @@
 ---
-description: ' Use keyboard, mouse, or menu to navigate the &ui-canvas-editor; viewport
-  in &ALYlong;. '
+description: ' Use keyboard, mouse, or menu to navigate the UI Editor viewport
+  in Amazon Lumberyard. '
 title: Navigating the Viewport
 ---
 # Navigating the Viewport {#ui-editor-navigating-viewport}

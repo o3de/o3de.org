@@ -1,5 +1,5 @@
 ---
-description: ' See the following best practices for working with PhysX in &ALYlong;. '
+description: ' See the following best practices for working with PhysX in Amazon Lumberyard. '
 title: PhysX Best Practices
 ---
 # PhysX Best Practices {#physx-best-practices}

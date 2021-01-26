@@ -1,5 +1,5 @@
 ---
-description: ' Enable encryption with OpenSSL in a GridMate session in &ALYlong;. '
+description: ' Enable encryption with OpenSSL in a GridMate session in Amazon Lumberyard. '
 title: Enabling Encryption
 ---
 # Enabling Encryption {#network-encryption-enabling}

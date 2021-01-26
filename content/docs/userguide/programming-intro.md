@@ -1,7 +1,7 @@
 ---
 description: ' The following topics will guide you through programming with and for
-  &ALY;. '
-title: Programming in &ALY;
+  Lumberyard. '
+title: Programming in Lumberyard
 ---
 # Programming in Lumberyard {#programming-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Apply displacement mapping for an object in &ALYlong;. '
+description: ' Apply displacement mapping for an object in Amazon Lumberyard. '
 title: Setting Displacement Mapping Parameters
 ---
 # Setting Displacement Mapping Parameters {#mat-maps-displacement-params}

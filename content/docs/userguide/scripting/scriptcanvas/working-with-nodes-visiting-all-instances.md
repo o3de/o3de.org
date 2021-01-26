@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to navigate &script-canvas; graphs in &ALYlong; to visit
+description: ' Learn how to navigate Script Canvas graphs in Amazon Lumberyard to visit
   all nodes. '
 title: Navigating Graphs
 ---

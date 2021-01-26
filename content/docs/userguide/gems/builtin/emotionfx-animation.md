@@ -1,7 +1,7 @@
 ---
-description: ' Use the &emotionfx; Animation gem in your &ALY; project to enable the
+description: ' Use the EMotionFX Animation gem in your Lumberyard project to enable the
   node-based character animation system. '
-title: '&emotionfx; Animation Gem'
+title: 'EMotionFX Animation Gem'
 ---
 # EMotion FX Animation Gem {#gems-system-gem-emotionfx-animation}
 

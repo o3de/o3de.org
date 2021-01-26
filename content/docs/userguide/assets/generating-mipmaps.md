@@ -1,6 +1,6 @@
 ---
 description: ' Use mip maps to optimize images to be viewed at various distances while
-  reducing the time and processing power it takes to render them in &ALYlong;. '
+  reducing the time and processing power it takes to render them in Amazon Lumberyard. '
 title: Generating Mip Maps
 ---
 # Generating Mip Maps {#asset-pipeline-generating-mipmaps}

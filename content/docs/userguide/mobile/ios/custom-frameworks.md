@@ -1,6 +1,6 @@
 ---
-description: ' Add iOS Framework libraries to your &ALYlong; Gems. '
-title: Add iOS Frameworks to a &ALY; project
+description: ' Add iOS Framework libraries to your Amazon Lumberyard Gems. '
+title: Add iOS Frameworks to a Lumberyard project
 ---
 # Add iOS Frameworks to a Lumberyard project {#ios-custom-frameworks}
 

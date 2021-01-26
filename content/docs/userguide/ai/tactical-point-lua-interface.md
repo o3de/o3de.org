@@ -1,5 +1,5 @@
 ---
-description: ' Query TPS with Lua scripts in &ALYlong;. '
+description: ' Query TPS with Lua scripts in Amazon Lumberyard. '
 title: TPS Querying with Lua
 ---
 # TPS Querying with Lua {#ai-tactical-point-lua-interface}

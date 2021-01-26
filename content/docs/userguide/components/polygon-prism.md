@@ -1,5 +1,5 @@
 ---
-description: ' Use the Polygon Prism Shape component to define a volume in &ALYlong;. '
+description: ' Use the Polygon Prism Shape component to define a volume in Amazon Lumberyard. '
 title: Polygon Prism Shape
 ---
 # Polygon Prism Shape {#component-polygon-prism}

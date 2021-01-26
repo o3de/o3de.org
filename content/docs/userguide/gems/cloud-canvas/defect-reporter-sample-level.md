@@ -1,6 +1,6 @@
 ---
 description: ' Use the DefectReporterSample level to test the Defect Reporter cloud
-  gem in &ALYlong;. '
+  gem in Amazon Lumberyard. '
 title: Using the Defect Reporter Cloud Gem Sample Level
 ---
 # Using the Defect Reporter Cloud Gem Sample Level {#cloud-canvas-cloud-gem-defect-reporter-sample-level}

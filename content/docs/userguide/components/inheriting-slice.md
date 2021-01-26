@@ -1,5 +1,5 @@
 ---
-description: ' Create nested slices in &ly-editor;. '
+description: ' Create nested slices in Lumberyard Editor. '
 title: Creating Nested Slices
 ---
 # Creating Nested Slices {#component-inheriting-slice}

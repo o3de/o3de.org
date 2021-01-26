@@ -1,6 +1,6 @@
 ---
 description: ' Use the Input Management Framework gem to convert game input into gameplay
-  actions in &ALYlong;. '
+  actions in Amazon Lumberyard. '
 title: Input Management Framework Gem
 ---
 # Input Management Framework Gem {#gems-system-gem-input}

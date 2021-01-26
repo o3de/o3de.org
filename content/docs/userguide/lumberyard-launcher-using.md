@@ -1,7 +1,7 @@
 ---
-description: ' Use &ly-launcher; to install required third-party software, SDKs, and
+description: ' Use Lumberyard Setup Assistant to install required third-party software, SDKs, and
   plugins. '
-title: Running &ly-launcher;
+title: Running Lumberyard Setup Assistant
 ---
 # Running Lumberyard Setup Assistant {#lumberyard-launcher-using}
 

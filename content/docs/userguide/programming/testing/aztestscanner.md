@@ -1,6 +1,6 @@
 ---
 description: ' Use the AZ test scanner tool to run unit tests that are built into
-  &ALY; libraries and executables. '
+  Lumberyard libraries and executables. '
 title: Using AZ Test Scanner
 ---
 # Using AZ Test Scanner {#testing-aztestscanner}

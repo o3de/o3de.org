@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Area Environment component in &ALYlong; to apply an environment
+description: ' Use the Audio Area Environment component in Amazon Lumberyard to apply an environment
   effect to sounds that an entity triggers. '
 title: Audio Preload
 ---

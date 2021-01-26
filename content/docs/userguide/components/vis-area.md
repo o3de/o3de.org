@@ -1,5 +1,5 @@
 ---
-description: ' Use the VisArea component to manage visibility and culling in &ALYlong;. '
+description: ' Use the VisArea component to manage visibility and culling in Amazon Lumberyard. '
 title: VisArea
 ---
 # VisArea {#component-vis-area}

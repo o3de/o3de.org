@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the tick bus in &ALYlong;. '
+description: ' Learn how to use the tick bus in Amazon Lumberyard. '
 title: Tick Bus and Components
 ---
 # Tick Bus and Components {#component-entity-system-pg-tick-bus}

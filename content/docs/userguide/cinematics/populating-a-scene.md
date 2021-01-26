@@ -1,6 +1,6 @@
 ---
-description: ' Create scenes in a track view sequence in the &trackview-editor; in
-  &ALYlong;. '
+description: ' Create scenes in a track view sequence in the <guilabel>Track View</guilabel> editor in
+  Amazon Lumberyard. '
 title: Populating a Scene
 ---
 # Populating a Scene {#cinematics-populating-a-scene}

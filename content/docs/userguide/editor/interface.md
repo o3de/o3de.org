@@ -1,6 +1,6 @@
 ---
-description: ' See an overview of the &ly-editor; interface. '
-title: '&ly-editor; Interface'
+description: ' See an overview of the Lumberyard Editor interface. '
+title: 'Lumberyard Editor Interface'
 ---
 # Lumberyard Editor Interface {#lumberyard-editor-interface}
 

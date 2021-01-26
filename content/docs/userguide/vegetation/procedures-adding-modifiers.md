@@ -1,6 +1,6 @@
 ---
 description: ' Add scale, rotation, and position modifiers to change the look of your
-  dynamic vegetation in &ALYlong;. '
+  dynamic vegetation in Amazon Lumberyard. '
 title: Adding Scale, Rotation, and Position Modifiers
 ---
 # Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}

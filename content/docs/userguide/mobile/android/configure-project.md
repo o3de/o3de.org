@@ -1,7 +1,7 @@
 ---
-description: ' Configure your &ALYlong; project to compile assets for Android and
+description: ' Configure your Amazon Lumberyard project to compile assets for Android and
   correctly declare which device resources it uses. '
-title: Configure &ALY; projects for Android
+title: Configure Lumberyard projects for Android
 ---
 # Configure Lumberyard projects for Android {#android-configure-project}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Follow these best practices when creating rivers in your &ALY; environment
+description: ' Follow these best practices when creating rivers in your Lumberyard environment
   level. '
 title: Creating Rivers
 ---

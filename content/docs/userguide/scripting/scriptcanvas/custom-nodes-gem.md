@@ -1,6 +1,6 @@
 ---
-description: ' Create custom &script-canvas; nodes in a gem for &ALYlong;. '
-title: Creating Custom &script-canvas; Nodes in a Gem
+description: ' Create custom Script Canvas nodes in a gem for Amazon Lumberyard. '
+title: Creating Custom Script Canvas Nodes in a Gem
 ---
 # Creating Custom Script Canvas Nodes in a Gem {#script-canvas-custom-nodes-gem}
 

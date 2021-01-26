@@ -1,6 +1,6 @@
 ---
-description: ' Use the perspective viewport in &ly-editor; to place objects, edit
-  terrain, test your game, and create assets in &ALYlong;. '
+description: ' Use the perspective viewport in Lumberyard Editor to place objects, edit
+  terrain, test your game, and create assets in Amazon Lumberyard. '
 title: Using the Viewport
 ---
 # Using the Viewport {#lumberyard-editor-viewport}

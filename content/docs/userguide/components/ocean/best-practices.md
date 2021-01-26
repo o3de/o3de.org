@@ -1,5 +1,5 @@
 ---
-description: ' Follow these guidelines when using the &ALYlong; Infinite Ocean component. '
+description: ' Follow these guidelines when using the Amazon Lumberyard Infinite Ocean component. '
 title: Best Practices Working with the Infinite Ocean Component
 ---
 # Best Practices Working with the Infinite Ocean Component {#infinite-ocean-component-best-practices}

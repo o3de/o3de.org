@@ -1,5 +1,5 @@
 ---
-description: ' Use pivot mode to set a center point of reference for entities in &ALYlong;. '
+description: ' Use pivot mode to set a center point of reference for entities in Amazon Lumberyard. '
 title: Using Pivot Mode
 ---
 # Using Pivot Mode {#pivot-mode}

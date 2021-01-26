@@ -1,5 +1,5 @@
 ---
-description: ' Create a custom particle attribute panel in &ALYlong; &particle-editor;
+description: ' Create a custom particle attribute panel in Amazon Lumberyard Particle Editor
   to quickly access the parameters you use most. '
 title: Creating Custom Attribute Panels
 ---

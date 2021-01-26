@@ -1,5 +1,5 @@
 ---
-description: ' Import and export &ALYlong; terrain data such as heightmaps, color
+description: ' Import and export Amazon Lumberyard terrain data such as heightmaps, color
   maps, terrain blocks, and splat maps. '
 title: Importing and Exporting Terrain Data
 ---

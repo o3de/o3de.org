@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component with the &trackview-editor;. '
+description: ' Use the Amazon Lumberyard Infinite Ocean component with the <guilabel>Track View</guilabel> editor. '
 title: Infinite Ocean Component with the Track View Editor
 ---
 # Infinite Ocean Component with the Track View Editor {#infinite-ocean-track-view-editor}

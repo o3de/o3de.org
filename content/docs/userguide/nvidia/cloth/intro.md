@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic simulated cloth and fabric in &ALYlong; with NVIDIA
+description: ' Create realistic simulated cloth and fabric in Amazon Lumberyard with NVIDIA
   Cloth. '
 title: Simulate cloth with NVIDIA Cloth
 ---

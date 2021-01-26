@@ -1,5 +1,5 @@
 ---
-description: ' Use the On Render Finished node in the &ALYlong; &script-canvas; editor
+description: ' Use the On Render Finished node in the Amazon Lumberyard Script Canvas editor
   to trigger when a procedural material update finishes. '
 title: On Render Finished
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Learn to set &cloud; access permissions for your project. '
+description: ' Learn to set Cloud Canvas access permissions for your project. '
 title: Controlling Access to Resources
 ---
 # Controlling Access to Resources {#cloud-canvas-setting-access-permissions}

@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s Scripted Entity Tweener gem to animate entities using
+description: ' Use Amazon Lumberyard''s Scripted Entity Tweener gem to animate entities using
   Lua scripts, particularly game UI entities. '
 title: Scripted Entity Tweener Gem
 ---

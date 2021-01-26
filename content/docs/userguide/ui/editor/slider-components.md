@@ -1,6 +1,6 @@
 ---
-description: ' Use a slider component to make an element behave like a slider in &ALY;''s
-  &ui-canvas-editor;. '
+description: ' Use a slider component to make an element behave like a slider in Lumberyard''s
+  UI Editor. '
 title: Slider
 ---
 # Slider {#ui-editor-slider-components}

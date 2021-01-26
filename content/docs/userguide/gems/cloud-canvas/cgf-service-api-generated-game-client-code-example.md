@@ -1,6 +1,6 @@
 ---
 description: ' Study the game client code that the Cloud Gem Framework generates for
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Generated Game Client Code Example
 ---
 # Generated Game Client Code Example {#cloud-canvas-cgf-service-api-generated-game-client-code-example}

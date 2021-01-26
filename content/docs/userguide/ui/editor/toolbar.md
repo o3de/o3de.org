@@ -1,5 +1,5 @@
 ---
-description: ' Use the toolbar in &ALYlong;''s &ui-canvas-editor; to manipulate your
+description: ' Use the toolbar in Amazon Lumberyard''s UI Editor to manipulate your
   game UI elements. '
 title: Toolbar
 ---

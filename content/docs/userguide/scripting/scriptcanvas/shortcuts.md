@@ -1,7 +1,7 @@
 ---
-description: ' Learn keyboard and mouse shortcuts for the &script-canvas; editor in
-  &ALYlong;. '
-title: '&script-canvas; Editor Shortcuts'
+description: ' Learn keyboard and mouse shortcuts for the Script Canvas editor in
+  Amazon Lumberyard. '
+title: 'Script Canvas Editor Shortcuts'
 ---
 # Script Canvas Editor Shortcuts {#script-canvas-shortcuts}
 

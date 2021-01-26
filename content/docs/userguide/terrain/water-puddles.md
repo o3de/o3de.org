@@ -1,6 +1,6 @@
 ---
 description: ' Place non-tiling textures as decals to create realistic water puddles
-  and water rifts in your &ALY; level. '
+  and water rifts in your Lumberyard level. '
 title: Adding Water Puddles
 ---
 # Adding Water Puddles {#terrain-water-puddles}

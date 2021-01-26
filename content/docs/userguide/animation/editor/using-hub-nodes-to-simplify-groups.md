@@ -1,5 +1,5 @@
 ---
-description: ' Use Hub nodes in &ALYlong;''s &animation-editor; to simplify transitions
+description: ' Use Hub nodes in Amazon Lumberyard''s Animation Editor to simplify transitions
   between groups of nodes in an animation graph. '
 title: Simplify Node Groups with Hub Nodes
 ---

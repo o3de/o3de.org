@@ -1,6 +1,6 @@
 ---
 description: ' Use the Sky Cloud component to create realistic and detailed cloud
-  effects in your &ALYlong; game levels. '
+  effects in your Amazon Lumberyard game levels. '
 title: Sky Cloud
 ---
 # Sky Cloud {#component-sky-cloud}

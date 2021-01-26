@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY; slices as reusable, easily updatable component entity templates. '
+description: ' Use Lumberyard slices as reusable, easily updatable component entity templates. '
 title: Working with Slices
 ---
 # Working with Slices {#component-slices}

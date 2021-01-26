@@ -1,5 +1,5 @@
 ---
-description: ' See the eye shader to render realistic eyes in &ALYlong;. '
+description: ' See the eye shader to render realistic eyes in Amazon Lumberyard. '
 title: Eye Shader
 ---
 # Eye Shader {#shader-ref-eye}

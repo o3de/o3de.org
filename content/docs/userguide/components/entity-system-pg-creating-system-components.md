@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create system components in &ALYlong;. '
+description: ' Learn how to create system components in Amazon Lumberyard. '
 title: Creating System Components
 ---
 # Creating System Components {#component-entity-system-pg-creating-system-components}

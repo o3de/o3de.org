@@ -1,5 +1,5 @@
 ---
-description: ' Divide &ALY; texture layers into smaller sections to increase the resolution
+description: ' Divide Lumberyard texture layers into smaller sections to increase the resolution
   of heavily viewed areas. '
 title: Changing Terrain Tile Resolution
 ---

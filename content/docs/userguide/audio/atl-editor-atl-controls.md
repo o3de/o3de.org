@@ -1,6 +1,6 @@
 ---
-description: ' Use the &audio-controls-browser; ''s ATL Control pane to add new audio
-  controls and to select and edit audio controls in &ALYlong;. '
+description: ' Use the Audio Controls Editor ''s ATL Control pane to add new audio
+  controls and to select and edit audio controls in Amazon Lumberyard. '
 title: ATL Controls Pane
 ---
 # ATL Controls Pane {#audio-atl-editor-atl-controls}

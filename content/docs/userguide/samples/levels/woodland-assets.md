@@ -1,7 +1,7 @@
 ---
 description: ' Use the Woodland asset package to create a forest scene or add vegetation
-  and natural features to your &ALY; game project. '
-title: Woodland Asset Package &endash; Legacy
+  and natural features to your Lumberyard game project. '
+title: Woodland Asset Package – Legacy
 ---
 # Woodland Asset Package - Legacy {#sample-level-woodland-assets}
 

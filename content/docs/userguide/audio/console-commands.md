@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables to control the &ALY; audio system. '
+description: ' Use console variables to control the Lumberyard audio system. '
 title: Audio Console Variables
 ---
 # Audio Console Variables {#audio-console-commands}

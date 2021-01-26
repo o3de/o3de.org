@@ -1,5 +1,5 @@
 ---
-description: ' Use the lmbr thirdpartysdks command to list and download &ALY; third
+description: ' Use the lmbr thirdpartysdks command to list and download Lumberyard third
   party SDKs. '
 title: ThirdPartySDKs Commands
 ---

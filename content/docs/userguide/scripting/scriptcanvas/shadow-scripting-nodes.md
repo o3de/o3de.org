@@ -1,5 +1,5 @@
 ---
-description: ' Use shadow nodes to configure shadow effects in the &ALYlong; &script-canvas;
+description: ' Use shadow nodes to configure shadow effects in the Amazon Lumberyard Script Canvas
   editor. '
 title: Shadow Nodes
 ---

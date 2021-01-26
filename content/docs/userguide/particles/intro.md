@@ -1,5 +1,5 @@
 ---
-description: ' Use the &particle-editor; in &ALYlong; to create and manage particles
+description: ' Use the Particle Editor in Amazon Lumberyard to create and manage particles
   in your game, such as explosions, smoke, water, and so on. '
 title: Adding particle effects
 ---

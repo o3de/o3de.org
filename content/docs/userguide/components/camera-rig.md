@@ -1,6 +1,6 @@
 ---
 description: ' Use the Camera Rig component to add and remove behaviors to drive your
-  camera entity in &ALYlong;. '
+  camera entity in Amazon Lumberyard. '
 title: Camera Rig
 ---
 # Camera Rig {#component-camera-rig}

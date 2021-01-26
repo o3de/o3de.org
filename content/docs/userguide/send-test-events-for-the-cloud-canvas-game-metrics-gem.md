@@ -1,6 +1,6 @@
 ---
-description: ' Send game events with the Metrics Sample level in &ALYlong; and view
-  them in the &cgp;. '
+description: ' Send game events with the Metrics Sample level in Amazon Lumberyard and view
+  them in the Cloud Gem Portal. '
 title: Sending Test Metrics with the Metrics Sample Level
 ---
 # Sending Test Metrics with the Metrics Sample Level {#send-test-events-for-the-cloud-canvas-game-metrics-gem}

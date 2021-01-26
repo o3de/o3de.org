@@ -1,5 +1,5 @@
 ---
-description: ' Use the Area Light component on an entity to light an area in &ALYlong;. '
+description: ' Use the Area Light component on an entity to light an area in Amazon Lumberyard. '
 title: Area Light
 ---
 # Area Light {#component-area-light}

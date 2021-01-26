@@ -1,5 +1,5 @@
 ---
-description: ' Use the Spline component to author lines and curves in &ALYlong;. '
+description: ' Use the Spline component to author lines and curves in Amazon Lumberyard. '
 title: Spline
 ---
 # Spline {#component-spline}

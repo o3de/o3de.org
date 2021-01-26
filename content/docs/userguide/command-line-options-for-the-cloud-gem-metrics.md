@@ -1,5 +1,5 @@
 ---
-description: ' Send test metrics with the command line in &ALYlong;. '
+description: ' Send test metrics with the command line in Amazon Lumberyard. '
 title: Sending Test Metrics with the Command Line
 ---
 # Sending Test Metrics with the Command Line {#command-line-options-for-the-cloud-gem-metrics}

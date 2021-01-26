@@ -1,6 +1,6 @@
 ---
 description: ' Use the Navigation component to enable an entity to find and follow
-  paths in &ALYlong;. '
+  paths in Amazon Lumberyard. '
 title: Navigation
 ---
 # Navigation {#component-navigation}

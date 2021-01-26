@@ -1,6 +1,6 @@
 ---
 description: Combine multiple font assets to create a font family group to use in
-  your game UI in &ALYlong;.
+  your game UI in Amazon Lumberyard.
 title: Creating Font Families
 ---
 # Creating Font Families {#ui-fonts-create-font-families}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Speed node in the &ALYlong; &script-canvas; editor to set
+description: ' Use the Set Speed node in the Amazon Lumberyard Script Canvas editor to set
   the time of day''s current speed multiplier. '
 title: Set Speed
 ---

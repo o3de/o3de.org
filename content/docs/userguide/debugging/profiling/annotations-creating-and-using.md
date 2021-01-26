@@ -1,6 +1,6 @@
 ---
 description: ' Use annotations in Profiler to flag per-frame log information from
-  the data you captured from your &ALYlong; application. '
+  the data you captured from your Amazon Lumberyard application. '
 title: Creating and Using Annotations
 ---
 # Creating and Using Annotations {#profiler-annotations-creating-and-using}

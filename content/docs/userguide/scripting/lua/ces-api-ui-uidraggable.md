@@ -1,6 +1,6 @@
 ---
 description: ' Use UIDraggableComponent to enable drag and drop behavior for a UI
-  element in &ALYlong;. '
+  element in Amazon Lumberyard. '
 title: UIDraggableComponent
 ---
 # UIDraggableComponent {#lua-scripting-ces-api-ui-uidraggable}

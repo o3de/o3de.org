@@ -1,5 +1,5 @@
 ---
-description: ' Get the behind-the-scenes architectural overview of &script-canvas;
+description: ' Get the behind-the-scenes architectural overview of Script Canvas
   and learn how to create custom nodes. '
 title: Programmer Guide
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use Blast materials to set destruction properties in &ALYlong; with
+description: ' Use Blast materials to set destruction properties in Amazon Lumberyard with
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
 ---

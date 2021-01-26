@@ -1,6 +1,6 @@
 ---
 description: ' Use C++, the client component, a request job, or Lua to call your API
-  operations for &ALYlong;. '
+  operations for Amazon Lumberyard. '
 title: ' Calling a Game API'
 ---
 # Calling a Game API {#cloud-canvas-cgf-service-api-calling-apis}

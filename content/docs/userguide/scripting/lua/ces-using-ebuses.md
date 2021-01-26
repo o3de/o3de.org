@@ -1,6 +1,6 @@
 ---
 description: ' Write Lua scripts that use the EBus to communicate between components
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Using EBuses in Lua
 ---
 # Using EBuses in Lua {#lua-scripting-ces-using-ebuses}

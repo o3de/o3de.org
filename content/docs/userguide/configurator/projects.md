@@ -1,5 +1,5 @@
 ---
-description: ' Create a game project in the &ALYlong; &project-configurator; or from
+description: ' Create a game project in the Amazon Lumberyard Project Configurator or from
   a command line. '
 title: Creating and Switching Game Projects
 ---

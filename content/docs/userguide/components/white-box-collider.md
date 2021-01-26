@@ -1,7 +1,7 @@
 ---
-description: ' Use the &whitebox; Collider component to add PhysX collision to white
-  box meshes in &ALYlong;. '
-title: '&whitebox; Collider component'
+description: ' Use the White Box Collider component to add PhysX collision to white
+  box meshes in Amazon Lumberyard. '
+title: 'White Box Collider component'
 ---
 # White Box Collider component {#component-white-box-collider}
 

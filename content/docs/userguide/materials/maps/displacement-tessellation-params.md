@@ -1,5 +1,5 @@
 ---
-description: ' Set tessellation parameters in the &material-editor; in &ALYlong;. '
+description: ' Set tessellation parameters in the Material Editor in Amazon Lumberyard. '
 title: Setting Tessellation Parameters
 ---
 # Setting Tessellation Parameters {#mat-maps-displacement-tessellation-params}

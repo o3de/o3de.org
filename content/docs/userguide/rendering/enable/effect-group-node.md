@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Effect Group node in the &ALYlong; &script-canvas; editor
+description: ' Use the Enable Effect Group node in the Amazon Lumberyard Script Canvas editor
   to enable a group of effects. '
 title: Enable Effect Group
 ---

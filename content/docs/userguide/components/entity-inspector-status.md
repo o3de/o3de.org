@@ -1,5 +1,5 @@
 ---
-description: ' Set the status for an entity while working in the editor for &ALYlong;. '
+description: ' Set the status for an entity while working in the editor for Amazon Lumberyard. '
 title: Setting an Entity Status
 ---
 # Setting an Entity Status {#component-entity-inspector-status}

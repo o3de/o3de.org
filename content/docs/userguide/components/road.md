@@ -1,6 +1,6 @@
 ---
 description: ' Use the Road component to create paths and align the terrain to roads
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Road
 ---
 # Road {#component-road}

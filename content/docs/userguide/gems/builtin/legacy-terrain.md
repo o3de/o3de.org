@@ -1,6 +1,6 @@
 ---
-description: ' Use &ALYlong;''s Legacy Terrain &gem; to add terrain to your level. '
-title: Legacy Terrain &gem;
+description: ' Use Amazon Lumberyard''s Legacy Terrain Gem to add terrain to your level. '
+title: Legacy Terrain Gem
 ---
 # Legacy Terrain Gem {#gems-system-gem-legacy-terrain}
 

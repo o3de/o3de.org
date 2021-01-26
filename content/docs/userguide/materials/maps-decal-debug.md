@@ -1,6 +1,6 @@
 ---
 description: ' You can debug decal mapping issues with the console variable or the
-  &material-editor; . '
+  Material Editor . '
 title: Debugging Decal Mapping Issues
 ---
 # Debugging Decal Mapping Issues {#material-maps-decal-debug}

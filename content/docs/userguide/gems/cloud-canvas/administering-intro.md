@@ -1,6 +1,6 @@
 ---
-description: ' Administer your &ALYlong;''s project use of the &AWS; cloud. '
-title: Administering &cloud;
+description: ' Administer your Amazon Lumberyard''s project use of the AWS cloud. '
+title: Administering Cloud Canvas
 ---
 # Administering Cloud Canvas {#cloud-canvas-administering-intro}
 

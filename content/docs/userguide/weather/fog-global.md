@@ -1,5 +1,5 @@
 ---
-description: ' Use global fog to simulate fog along the ground in your &ALYlong; level. '
+description: ' Use global fog to simulate fog along the ground in your Amazon Lumberyard level. '
 title: Setting Global (Time of Day) Fog
 ---
 # Setting Global \(Time of Day\) Fog {#weather-fog-global}

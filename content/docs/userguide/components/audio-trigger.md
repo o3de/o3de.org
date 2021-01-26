@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Trigger component to set up play and stop triggers in
-  your game in &ALY;. '
+  your game in Lumberyard. '
 title: Audio Trigger
 ---
 # Audio Trigger {#component-audio-trigger}

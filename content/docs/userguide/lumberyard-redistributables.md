@@ -1,7 +1,7 @@
 ---
-description: ' List of &ALY; materials that are allowed to be redistributed in &ALY;
+description: ' List of Lumberyard materials that are allowed to be redistributed in Lumberyard
   projects. '
-title: '&ALY; Redistributables'
+title: 'Lumberyard Redistributables'
 ---
 # Lumberyard Redistributables {#lumberyard-redistributables}
 

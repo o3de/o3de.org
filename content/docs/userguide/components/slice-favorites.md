@@ -1,6 +1,6 @@
 ---
 description: ' Make slices easier to instantiate by flagging them as favorites in
-  &ALYlong;''s &component-system;. '
+  Amazon Lumberyard''s component entity system. '
 title: Slice Favorites
 ---
 # Slice Favorites {#component-slice-favorites}

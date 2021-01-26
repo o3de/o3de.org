@@ -1,7 +1,7 @@
 ---
-description: ' You must build the editor so that your component with &CM; appears
-  in &ALYlong;. '
-title: 'Step 6: Building &CM;'
+description: ' You must build the editor so that your component with Component Mode appears
+  in Amazon Lumberyard. '
+title: 'Step 6: Building Component Mode'
 ---
 # Step 6: Building Component Mode {#building-component-mode}
 

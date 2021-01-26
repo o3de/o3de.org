@@ -1,5 +1,5 @@
 ---
-description: Use visual components in &ALYlong;'s &ui-canvas-editor; to add color
+description: Use visual components in Amazon Lumberyard's UI Editor to add color
   tints or textures to UI elements.
 title: Image
 ---

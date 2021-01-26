@@ -1,6 +1,6 @@
 ---
 description: ' Use synchronized animation graphs to synchronize animation between
-  actors in &ALYlong;. '
+  actors in Amazon Lumberyard. '
 title: 'Synchronizing Animation Graphs: Example'
 ---
 # Synchronizing Animation Graphs: Example {#char-animation-editor-sync-graph}

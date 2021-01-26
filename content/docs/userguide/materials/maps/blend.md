@@ -1,5 +1,5 @@
 ---
-description: ' Use blend layers in &ALYlong; to create one material with a second
+description: ' Use blend layers in Amazon Lumberyard to create one material with a second
   set of per-pixel functions, such as texture maps, UV tiling and offset. '
 title: Working with Blend Layers
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s remote shade compiler for game consoles that can''t
+description: ' Use Amazon Lumberyard''s remote shade compiler for game consoles that can''t
   compile shaders locally. '
 title: Remote Shader Compiler
 ---

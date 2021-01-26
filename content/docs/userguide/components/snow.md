@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Snow component to add snow effects to your game. '
+description: ' Use the Amazon Lumberyard Snow component to add snow effects to your game. '
 title: Snow
 ---
 # Snow {#component-snow}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Decal component to place decals as components on an entity
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Decal
 ---
 # Decal {#component-decal}

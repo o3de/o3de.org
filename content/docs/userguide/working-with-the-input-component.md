@@ -1,5 +1,5 @@
 ---
-description: ' Work with the Input component in &ALYlong;. '
+description: ' Work with the Input component in Amazon Lumberyard. '
 title: Working with the Input Component
 ---
 # Working with the Input Component {#working-with-the-input-component}

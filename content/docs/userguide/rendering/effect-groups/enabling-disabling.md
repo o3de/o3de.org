@@ -1,5 +1,5 @@
 ---
-description: ' Enable or disable effect groups with the &script-canvas; editor or
+description: ' Enable or disable effect groups with the Script Canvas editor or
   in Lua. '
 title: Enabling and Disabling Effect Groups
 ---

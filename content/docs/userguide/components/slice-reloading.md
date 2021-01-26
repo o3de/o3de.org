@@ -1,5 +1,5 @@
 ---
-description: ' Slice reloading in &ly-editor;. '
+description: ' Slice reloading in Lumberyard Editor. '
 title: Slice Reloading
 ---
 # Slice Reloading {#component-slice-reloading}

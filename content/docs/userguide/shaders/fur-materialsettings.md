@@ -1,5 +1,5 @@
 ---
-description: ' Use the material settings for the fur rendering in &ALYlong;. '
+description: ' Use the material settings for the fur rendering in Amazon Lumberyard. '
 title: Material Settings
 ---
 # Material Settings {#shader-ref-fur-materialsettings}

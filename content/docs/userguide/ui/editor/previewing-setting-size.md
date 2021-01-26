@@ -1,5 +1,5 @@
 ---
-description: ' Set your game UI canvas size in &ALYlong; &ui-canvas-editor; Preview
+description: ' Set your game UI canvas size in Amazon Lumberyard UI Editor Preview
   to visualize how your canvas might look at different screen resolutions and to see
   how the interactive elements change state. '
 title: Setting Canvas Size in Preview

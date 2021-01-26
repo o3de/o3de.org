@@ -1,5 +1,5 @@
 ---
-description: ' Learn about debugging Lua scripts in &ALYlong;. '
+description: ' Learn about debugging Lua scripts in Amazon Lumberyard. '
 title: ' Debugging Lua Scripts'
 ---
 # Debugging Lua Scripts {#lua-scripting-ces-debugging-scripts}

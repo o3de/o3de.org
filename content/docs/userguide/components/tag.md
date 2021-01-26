@@ -1,5 +1,5 @@
 ---
-description: ' Use the Tag component to apply labels to entities in &ALYlong;. '
+description: ' Use the Tag component to apply labels to entities in Amazon Lumberyard. '
 title: Tag
 ---
 # Tag {#component-tag}

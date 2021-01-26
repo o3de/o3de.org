@@ -1,6 +1,6 @@
 ---
 description: ' Understand the anatomy of a slice and the slice data patch format in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Anatomy of a Slice
 ---
 # Anatomy of a Slice {#dynamic-slices-overview-anatomy}

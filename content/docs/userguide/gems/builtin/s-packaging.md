@@ -1,5 +1,5 @@
 ---
-description: ' Move your assets into &ALY;''s root directory to import and prepare
+description: ' Move your assets into Lumberyard''s root directory to import and prepare
   your assets to be packaged as a gem. '
 title: Packaging Your Assets
 ---

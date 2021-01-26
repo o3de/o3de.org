@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Water Droplet node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Water Droplet node in the Amazon Lumberyard Script Canvas
   editor to disable water droplets. '
 title: Disable Water Droplets
 ---

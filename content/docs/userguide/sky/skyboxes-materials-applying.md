@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to apply a skybox material to a skybox in your &ALY; level. '
+description: ' Learn how to apply a skybox material to a skybox in your Lumberyard level. '
 title: Applying Skybox Materials to a Skybox
 ---
 # Applying Skybox Materials to a Skybox {#sky-skyboxes-materials-applying}

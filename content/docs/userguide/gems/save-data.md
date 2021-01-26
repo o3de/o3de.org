@@ -1,5 +1,5 @@
 ---
-description: ' Use the SaveData gem to save data in &ALYlong; for your game and game
+description: ' Use the SaveData gem to save data in Amazon Lumberyard for your game and game
   players. '
 title: SaveData Gem
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Select an AI navigation type in &ALYlong;. '
+description: ' Select an AI navigation type in Amazon Lumberyard. '
 title: Selecting an AI Navigation Type
 ---
 # Selecting an AI Navigation Type {#ai-nav-agent-types}

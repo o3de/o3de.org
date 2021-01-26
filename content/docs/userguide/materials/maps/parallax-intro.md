@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about parallax occlusion mapping (POM) in &ALYlong;. '
+description: ' Learn more about parallax occlusion mapping (POM) in Amazon Lumberyard. '
 title: Parallax Mapping
 ---
 # Parallax Mapping {#mat-maps-parallax-intro}

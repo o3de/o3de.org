@@ -1,7 +1,7 @@
 ---
-description: ' Select and manage the deployments that you want &ly-editor; to work
-  with in &ALYlong;. '
-title: Making a &cloud; Deployment Active
+description: ' Select and manage the deployments that you want Lumberyard Editor to work
+  with in Amazon Lumberyard. '
+title: Making a Cloud Canvas Deployment Active
 ---
 # Making a Cloud Canvas Deployment Active {#cloud-canvas-ui-select-deployment}
 

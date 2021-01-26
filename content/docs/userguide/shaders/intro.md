@@ -1,5 +1,5 @@
 ---
-description: ' See the available shader reference for game object materials in &ALYlong;. '
+description: ' See the available shader reference for game object materials in Amazon Lumberyard. '
 title: Shader Reference
 ---
 # Shader Reference {#shader-ref-intro}

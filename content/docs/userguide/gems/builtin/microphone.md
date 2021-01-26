@@ -1,5 +1,5 @@
 ---
-description: ' The &ALYlong; Microphone Gem is a dependency for the Cloud Gem Speech
+description: ' The Amazon Lumberyard Microphone Gem is a dependency for the Cloud Gem Speech
   Recognition Gem. '
 title: Microphone Gem
 ---

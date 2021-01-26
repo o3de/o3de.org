@@ -1,5 +1,5 @@
 ---
-description: ' Register objects int the &ALY; engine for JSON or XML serialization. '
+description: ' Register objects int the Lumberyard engine for JSON or XML serialization. '
 title: Register objects for serialization
 ---
 # Register objects for serialization {#serialization-register-objects}

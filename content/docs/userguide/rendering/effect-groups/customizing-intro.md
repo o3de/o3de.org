@@ -1,5 +1,5 @@
 ---
-description: ' Customize post-processing effects in &ALYlong;. '
+description: ' Customize post-processing effects in Amazon Lumberyard. '
 title: Customizing Post-Processing Effects
 ---
 # Customizing Post\-Processing Effects {#effect-groups-customizing-intro}

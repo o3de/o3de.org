@@ -1,6 +1,6 @@
 ---
-description: ' Use the &material-editor; to find material parameter names to reference
-  for nodes in the &ALYlong; &script-canvas; editor. '
+description: ' Use the Material Editor to find material parameter names to reference
+  for nodes in the Amazon Lumberyard Script Canvas editor. '
 title: Finding the Material Parameter Name
 ---
 # Finding the Material Parameter Name {#material-param-names}

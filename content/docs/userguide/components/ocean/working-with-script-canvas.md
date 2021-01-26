@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component with the &script-canvas;
+description: ' Use the Amazon Lumberyard Infinite Ocean component with the Script Canvas
   editor to change the component parameters at run time. '
-title: Using the Infinite Ocean Component with &script-canvas;
+title: Using the Infinite Ocean Component with Script Canvas
 ---
 # Using the Infinite Ocean Component with Script Canvas {#infinite-ocean-component-working-with-script-canvas}
 

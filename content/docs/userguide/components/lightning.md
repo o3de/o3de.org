@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Lightning component to add lightning effects to your
+description: ' Use the Amazon Lumberyard Lightning component to add lightning effects to your
   game. '
 title: Lightning
 ---

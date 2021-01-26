@@ -1,5 +1,5 @@
 ---
-description: ' Use the Apply Effect Group at Position node in the &ALYlong; &script-canvas;
+description: ' Use the Apply Effect Group at Position node in the Amazon Lumberyard Script Canvas
   editor to apply an effect group file. '
 title: Apply Effect Group At Position
 ---

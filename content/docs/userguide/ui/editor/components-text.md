@@ -1,5 +1,5 @@
 ---
-description: Use a Text component in &ALYlong;'s &ui-canvas-editor; to add a text
+description: Use a Text component in Amazon Lumberyard's UI Editor to add a text
   string to a UI element.
 title: Text
 ---

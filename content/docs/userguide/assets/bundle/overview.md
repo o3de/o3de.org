@@ -1,8 +1,8 @@
 ---
-description: ' The &ALYlong; &asset-bundler; is a tool that you use to package and
+description: ' The Amazon Lumberyard Asset Bundler is a tool that you use to package and
   deploy the actual assets that are used in your game. This tool also provides timelier
   and more efficient content updates and patches. '
-title: What is the &ALYlong; &asset-bundler;?
+title: What is the Amazon Lumberyard Asset Bundler?
 ---
 # What is the Amazon Lumberyard Asset Bundler? {#asset-bundler-overview}
 

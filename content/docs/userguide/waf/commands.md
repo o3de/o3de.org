@@ -1,7 +1,7 @@
 ---
 description: ' Use the configure command to process configuration settings before
-  you build a &ALYlong; project with &waf;. '
-title: '&waf; Commands and Options'
+  you build a Amazon Lumberyard project with Waf. '
+title: 'Waf Commands and Options'
 ---
 # Waf Commands and Options {#waf-commands}
 

@@ -1,6 +1,6 @@
 ---
-description: ' Create &LAM; deployment packages to use with &cloud; in &ALYlong;. '
-title: '&LAM; Language Support in the Cloud Gem Framework'
+description: ' Create Lambda deployment packages to use with Cloud Canvas in Amazon Lumberyard. '
+title: 'Lambda Language Support in the Cloud Gem Framework'
 ---
 # Lambda Language Support in the Cloud Gem Framework {#cloud-canvas-cgf-lambda-languages}
 

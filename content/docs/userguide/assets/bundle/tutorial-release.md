@@ -1,6 +1,6 @@
 ---
-description: ' Bundle assets and release your &ALYlong; project. '
-title: Build and bundle assets for release in &ALY;
+description: ' Bundle assets and release your Amazon Lumberyard project. '
+title: Build and bundle assets for release in Lumberyard
 ---
 # Build and bundle assets for release in Lumberyard {#asset-bundler-tutorial-release}
 

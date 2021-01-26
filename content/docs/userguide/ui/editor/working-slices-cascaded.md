@@ -1,5 +1,5 @@
 ---
-description: ' Create a cascaded UI slice in &ALYlong;''s &ui-canvas-editor; . '
+description: ' Create a cascaded UI slice in Amazon Lumberyard''s UI Editor . '
 title: Creating a Cascaded UI Slice
 ---
 # Creating a Cascaded UI Slice {#ui-editor-working-slices-cascaded}

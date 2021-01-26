@@ -1,5 +1,5 @@
 ---
-description: ' Reference dynamic vegetation to another area in &ALYlong;. '
+description: ' Reference dynamic vegetation to another area in Amazon Lumberyard. '
 title: Reusing Vegetation in Multiple Areas
 ---
 # Reusing Vegetation in Multiple Areas {#dynamic-vegetation-reusing-in-multiple-areas}

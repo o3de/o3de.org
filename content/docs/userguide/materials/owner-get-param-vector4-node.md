@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Param Vector4 node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Param Vector4 node in the Amazon Lumberyard Script Canvas editor
   to return a material''s Vector4 parameter value for the specified entity. '
 title: Get Param Vector4
 ---

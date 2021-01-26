@@ -1,5 +1,5 @@
 ---
-description: ' Debug AI navigation with console variables in &ALYlong;. '
+description: ' Debug AI navigation with console variables in Amazon Lumberyard. '
 title: Debugging AI Navigation
 ---
 # Debugging AI Navigation {#ai-nav-debug}

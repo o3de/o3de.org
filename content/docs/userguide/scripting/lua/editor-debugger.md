@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lua Editor to author, debug, and edit Lua scripts in &ALYlong;. '
+description: ' Use the Lua Editor to author, debug, and edit Lua scripts in Amazon Lumberyard. '
 title: Lua Editor
 ---
 # Lua Editor {#lua-editor-debugger}

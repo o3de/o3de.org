@@ -1,5 +1,5 @@
 ---
-description: ' Configure how &ALYlong; processes your images or textures to make them
+description: ' Configure how Amazon Lumberyard processes your images or textures to make them
   game-ready. '
 title: Configuring Image Processing
 ---

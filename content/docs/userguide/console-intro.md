@@ -1,5 +1,5 @@
 ---
-description: ' Use the console window in &ly-editor; to update the value for console
+description: ' Use the console window in Lumberyard Editor to update the value for console
   variables or type commands. '
 title: Using the Console Window
 ---

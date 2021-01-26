@@ -1,5 +1,5 @@
 ---
-description: ' Learn about how &ALYlong; uses system components. '
+description: ' Learn about how Amazon Lumberyard uses system components. '
 title: System Components
 ---
 # System Components {#az-module-system-components}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the level of detail (LOD) system in the &ALYlong; &particle-editor;
+description: ' Use the level of detail (LOD) system in the Amazon Lumberyard Particle Editor
   to blend multiple particle emitters. '
 title: Managing Particle Level of Detail (LOD)
 ---

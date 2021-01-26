@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component with the console variables
+description: ' Use the Amazon Lumberyard Infinite Ocean component with the console variables
   (CVARs) to set advanced parameters. '
 title: Console Variables for the Infinite Ocean Component
 ---

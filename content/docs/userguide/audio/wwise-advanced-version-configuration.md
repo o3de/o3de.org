@@ -1,5 +1,5 @@
 ---
-description: ' Use a different version of Wwise for &ALYlong;. '
+description: ' Use a different version of Wwise for Amazon Lumberyard. '
 title: Using a Different Wwise Version
 ---
 # Using a Different Wwise Version {#audio-wwise-advanced-version-configuration}

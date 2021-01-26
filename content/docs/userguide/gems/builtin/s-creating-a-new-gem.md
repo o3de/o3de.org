@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; &project-configurator; to create your own gem to
+description: ' Use the Amazon Lumberyard Project Configurator to create your own gem to
   use for your game project. '
 title: Creating a New Empty Gem
 ---

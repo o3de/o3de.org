@@ -1,6 +1,6 @@
 ---
-description: ' Use the Simple Jack Locomotion sample level to learn how the &ALY;
-  &animation-editor; uses actors, motion sets, and animation graphs to control character
+description: ' Use the Simple Jack Locomotion sample level to learn how the Lumberyard
+  Animation Editor uses actors, motion sets, and animation graphs to control character
   behavior. '
 title: Simple_JackLocomotion Sample
 ---

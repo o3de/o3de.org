@@ -1,6 +1,6 @@
 ---
 description: ' Add the Mask component to an element to reveal parts of the child element
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Mask
 ---
 # Mask {#ui-editor-components-mask}

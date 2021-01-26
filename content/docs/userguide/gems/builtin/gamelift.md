@@ -1,7 +1,7 @@
 ---
-description: ' Learn how to control session workflow when using the &AGSlong; &gem;
-  for &ALYlong;. '
-title: '&AGS; Gem'
+description: ' Learn how to control session workflow when using the Amazon Games Services Gem
+  for Amazon Lumberyard. '
+title: 'AGS Gem'
 ---
 # GameLift Gem {#gems-system-gem-gamelift}
 

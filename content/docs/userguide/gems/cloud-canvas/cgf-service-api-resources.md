@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the resources in the Cloud Gem Framework in &ALYlong;. '
+description: ' Learn about the resources in the Cloud Gem Framework in Amazon Lumberyard. '
 title: Resources
 ---
 # Resources {#cloud-canvas-cgf-service-api-resources}

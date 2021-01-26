@@ -1,5 +1,5 @@
 ---
-description: ' Use the UI Canvas on Mesh component in &ALYlong; to place a UI canvas
+description: ' Use the UI Canvas on Mesh component in Amazon Lumberyard to place a UI canvas
   on a component entity in the 3D world that a player can interact with using ray
   casts. '
 title: UI Canvas on Mesh

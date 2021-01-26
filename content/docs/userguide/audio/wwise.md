@@ -1,5 +1,5 @@
 ---
-description: ' Learn about support for Audiokinetic Wwise in &ALYlong;. '
+description: ' Learn about support for Audiokinetic Wwise in Amazon Lumberyard. '
 title: Audiokinetic Wwise
 ---
 # Audiokinetic Wwise {#audio-wwise}

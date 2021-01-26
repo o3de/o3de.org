@@ -1,5 +1,5 @@
 ---
-description: ' Alternate web services for the purposes of &ALY;. '
+description: ' Alternate web services for the purposes of Lumberyard. '
 title: Alternate Web Services
 ---
 # Alternate Web Services {#lumberyard-alternate-web-services}

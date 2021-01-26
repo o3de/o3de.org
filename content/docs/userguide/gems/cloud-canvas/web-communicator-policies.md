@@ -1,7 +1,7 @@
 ---
 description: ' Learn about the policies that control user access to the Web Communicator
-  cloud gem and &IoT; in &ALYlong;. '
-title: Web Communicator Cloud Gem Authentication and &AWS; Policies
+  cloud gem and IoT in Amazon Lumberyard. '
+title: Web Communicator Cloud Gem Authentication and AWS Policies
 ---
 # Web Communicator Cloud Gem Authentication and AWS Policies {#cloud-canvas-cloud-gem-web-communicator-policies}
 

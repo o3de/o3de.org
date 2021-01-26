@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about TrueType fonts in &ALYlong;. '
+description: ' Learn more about TrueType fonts in Amazon Lumberyard. '
 title: TrueType Fonts
 ---
 # TrueType Fonts {#graphics-rendering-truetype}

@@ -1,6 +1,6 @@
 ---
-description: ' Set up your &ALYlong; environment to build your project for Android. '
-title: Set up your environment to develop for Android with &ALY;
+description: ' Set up your Amazon Lumberyard environment to build your project for Android. '
+title: Set up your environment to develop for Android with Lumberyard
 ---
 # Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}
 

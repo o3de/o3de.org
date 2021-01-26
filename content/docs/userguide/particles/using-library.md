@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &particle-editor; to manage your particle libraries. '
+description: ' Use the Lumberyard Particle Editor to manage your particle libraries. '
 title: Using Particle Libraries
 ---
 # Using Particle Libraries {#particle-using-library}

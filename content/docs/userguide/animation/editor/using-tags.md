@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to use tags with animation graphs (AnimGraphs) in the &ALY;
-  &animation-editor;. '
+description: ' Learn how to use tags with animation graphs (AnimGraphs) in the Lumberyard
+  Animation Editor. '
 title: Using Tags with Animation Graphs
 ---
 # Using Tags with Animation Graphs {#animation-editor-using-tags}

@@ -1,5 +1,5 @@
 ---
-description: ' Set up a Wwise project in &ALYlong;. '
+description: ' Set up a Wwise project in Amazon Lumberyard. '
 title: Setting up a Wwise Project
 ---
 # Setting up a Wwise Project {#audio-wwise-project-setting-up}

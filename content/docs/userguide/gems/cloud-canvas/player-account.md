@@ -1,6 +1,6 @@
 ---
 description: ' Use the Player Account Cloud Gem to provide a standalone player authentication
-  and management system in &ALYlong;. '
+  and management system in Amazon Lumberyard. '
 title: Player Account Cloud Gem Portal
 ---
 # Player Account Cloud Gem Portal {#cloud-canvas-cloud-gem-player-account}

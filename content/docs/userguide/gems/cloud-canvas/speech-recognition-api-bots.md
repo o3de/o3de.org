@@ -1,5 +1,5 @@
 ---
-description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots in &ALYlong;. '
+description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots in Amazon Lumberyard. '
 title: Bots
 ---
 # Bots {#cloud-canvas-cloud-gem-speech-recognition-api-bots}

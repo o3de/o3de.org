@@ -1,6 +1,6 @@
 ---
-description: ' View the &animation-editor; interface in &ALYlong;. '
-title: '&animation-editor; User Interface'
+description: ' View the Animation Editor interface in Amazon Lumberyard. '
+title: 'Animation Editor User Interface'
 ---
 # Animation Editor User Interface {#animation-editor-user-interface}
 

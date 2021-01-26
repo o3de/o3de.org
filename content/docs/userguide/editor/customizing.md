@@ -1,7 +1,7 @@
 ---
-description: ' Customize &ly-editor; by docking windows and toolbars, customizing
-  toolbars and menus, and updating editor settings and global preferences for &ALYlong;. '
-title: Customizing &ly-editor;
+description: ' Customize Lumberyard Editor by docking windows and toolbars, customizing
+  toolbars and menus, and updating editor settings and global preferences for Amazon Lumberyard. '
+title: Customizing Lumberyard Editor
 ---
 # Customizing Lumberyard Editor {#lumberyard-editor-customizing}
 

@@ -1,7 +1,7 @@
 ---
 description: ' Learn about the comparison operations used in bundling assets with
-  &ALYlong;. '
-title: '&ALYlong; Asset List Comparison Operations'
+  Amazon Lumberyard. '
+title: 'Amazon Lumberyard Asset List Comparison Operations'
 ---
 # Amazon Lumberyard Asset List Comparison Operations {#asset-bundler-list-operations}
 

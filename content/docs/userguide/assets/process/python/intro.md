@@ -1,5 +1,5 @@
 ---
-description: ' Process custom assets in &ALYlong; with Python Asset Builder. '
+description: ' Process custom assets in Amazon Lumberyard with Python Asset Builder. '
 title: Process custom assets with Python Asset Builder
 ---
 # Process custom assets with Python Asset Builder {#python-asset-builder-intro}

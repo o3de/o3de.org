@@ -1,5 +1,5 @@
 ---
-description: ' Set the camera focus for cinematic sequences in &ALYlong;. '
+description: ' Set the camera focus for cinematic sequences in Amazon Lumberyard. '
 title: Animating Depth of Field
 ---
 # Animating Depth of Field {#cinematics-cameras-focus}

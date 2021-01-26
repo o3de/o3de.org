@@ -1,5 +1,5 @@
 ---
-description: ' Import a megaterrain texture, also known as a color map, into &ALYlong;. '
+description: ' Import a megaterrain texture, also known as a color map, into Amazon Lumberyard. '
 title: Importing a Megaterrain Texture
 ---
 # Importing a Megaterrain Texture {#terrain-import-color-megaterrain}

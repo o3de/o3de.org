@@ -1,5 +1,5 @@
 ---
-description: ' Generate shader combinations for &ALYlong;. '
+description: ' Generate shader combinations for Amazon Lumberyard. '
 title: Generating Shader Combinations
 ---
 # Generating Shader Combinations {#mat-shaders-custom-dev-combinations}

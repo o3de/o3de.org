@@ -1,6 +1,6 @@
 ---
-description: ' Use the Get Enabled &endash; High Quality Shadow node in the &ALYlong;
-  &script-canvas; editor to learn whether a High Quality Shadow component is enabled
+description: ' Use the Get Enabled – High Quality Shadow node in the Amazon Lumberyard
+  Script Canvas editor to learn whether a High Quality Shadow component is enabled
   for a specific entity. '
 title: Get Enabled
 ---

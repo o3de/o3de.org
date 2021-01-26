@@ -1,5 +1,5 @@
 ---
-description: ' Use level of detail for fur materials in &ALYlong;. '
+description: ' Use level of detail for fur materials in Amazon Lumberyard. '
 title: Level of Detail
 ---
 # Level of Detail {#shader-ref-fur-features-levelofdetail}

@@ -1,7 +1,7 @@
 ---
-description: ' Use the &whitebox; component to quickly sketch geometry for entities
-  and levels in &ALYlong;. '
-title: '&whitebox; component'
+description: ' Use the White Box component to quickly sketch geometry for entities
+  and levels in Amazon Lumberyard. '
+title: 'White Box component'
 ---
 # White Box component {#component-white-box}
 

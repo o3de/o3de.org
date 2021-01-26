@@ -1,6 +1,6 @@
 ---
-description: ' Use the Sprite Editor to configure your images and textures in &ALYlong;''s
-  &ui-canvas-editor; . '
+description: ' Use the Sprite Editor to configure your images and textures in Amazon Lumberyard''s
+  UI Editor . '
 title: Sprite Editor
 ---
 # Sprite Editor {#ui-editor-sprite-editor}

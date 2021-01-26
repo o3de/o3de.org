@@ -1,5 +1,5 @@
 ---
-description: ' Learn about best practices for components and EBuses in &ALYlong;. '
+description: ' Learn about best practices for components and EBuses in Amazon Lumberyard. '
 title: 'Components and EBuses: Best Practices'
 ---
 # Components and EBuses: Best Practices {#component-entity-system-pg-components-ebuses-best-practices}

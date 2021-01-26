@@ -1,7 +1,7 @@
 ---
 description: ' Use the lmbr_aws command line tool to assume a role or to manage roles,
-  permissions, and role mappings in &ALYlong;. '
-title: Using the &cloud; Command Line to Manage Roles and Permissions
+  permissions, and role mappings in Amazon Lumberyard. '
+title: Using the Cloud Canvas Command Line to Manage Roles and Permissions
 ---
 # Using the Cloud Canvas Command Line to Manage Roles and Permissions {#cloud-canvas-rm-security-lmbr-aws}
 

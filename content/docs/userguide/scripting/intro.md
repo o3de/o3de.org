@@ -1,6 +1,6 @@
 ---
-description: ' Use &script-canvas; and Lua to automate gameplay in &ALYlong;. '
-title: Scripting in &ALYlong;
+description: ' Use Script Canvas and Lua to automate gameplay in Amazon Lumberyard. '
+title: Scripting in Amazon Lumberyard
 ---
 # Scripting in Amazon Lumberyard {#scripting-intro}
 

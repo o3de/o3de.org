@@ -1,6 +1,6 @@
 ---
-description: ' Add tags for &script-canvas; nodes in &ALYlong;. '
-title: '&script-canvas; Tags for AZ Code Generator'
+description: ' Add tags for Script Canvas nodes in Amazon Lumberyard. '
+title: 'Script Canvas Tags for AZ Code Generator'
 ---
 # Script Canvas Tags for AZ Code Generator {#script-canvas-custom-nodes-az-code-generator-tags}
 

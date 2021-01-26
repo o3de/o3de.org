@@ -1,5 +1,5 @@
 ---
-description: ' Use AZ::Console to set console variables and functors for your &ALY;
+description: ' Use AZ::Console to set console variables and functors for your Lumberyard
   game. '
 title: AZ::Console
 ---

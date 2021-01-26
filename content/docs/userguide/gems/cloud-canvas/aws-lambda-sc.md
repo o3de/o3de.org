@@ -1,6 +1,6 @@
 ---
-description: ' Invoke an &LAMlong; function with &script-canvas; in &ALYlong;. '
-title: Invoking an &LAMlong; Function from &script-canvas;
+description: ' Invoke an AWS Lambda function with Script Canvas in Amazon Lumberyard. '
+title: Invoking an AWS Lambda Function from Script Canvas
 ---
 # Invoking an AWS Lambda Function from Script Canvas {#cloud-canvas-cloud-gem-aws-lambda-sc}
 

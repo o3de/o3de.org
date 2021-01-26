@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the structure of Lua scripts that are used as components
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Basic Structure of a Component Entity Lua Script
 ---
 # Basic Structure of a Component Entity Lua Script {#lua-scripting-ces-basic-structure-of-a-component-entity-lua-script}

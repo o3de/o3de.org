@@ -1,5 +1,5 @@
 ---
-description: ' Resize a terrain heightmap in &ALY; by changing its resolution. '
+description: ' Resize a terrain heightmap in Lumberyard by changing its resolution. '
 title: Resizing a Terrain Heightmap
 ---
 # Resizing a Terrain Heightmap {#terrain-heightmap-resize}

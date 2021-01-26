@@ -1,6 +1,6 @@
 ---
 description: ' Use the Video Playback Bink component to display a Bink video in a
-  level loading screen or on a texture in a game created with &ALYlong;. '
+  level loading screen or on a texture in a game created with Amazon Lumberyard. '
 title: Video Playback Bink
 ---
 # Video Playback Bink {#component-videoplayback-bink}

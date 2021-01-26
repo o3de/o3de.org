@@ -1,6 +1,6 @@
 ---
-description: ' Debug &asset-processor; issues in &ALYlong; '
-title: Debugging &asset-processor;
+description: ' Debug Asset Processor issues in Amazon Lumberyard '
+title: Debugging Asset Processor
 ---
 # Debugging Asset Processor {#asset-processor-debugging}
 

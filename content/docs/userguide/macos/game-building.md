@@ -1,5 +1,5 @@
 ---
-description: ' Build a macOS game using the &ALY; build tools. '
+description: ' Build a macOS game using the Lumberyard build tools. '
 title: Building macOS Games
 ---
 # Building macOS Games {#osx-game-building}

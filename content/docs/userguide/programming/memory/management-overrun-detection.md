@@ -1,5 +1,5 @@
 ---
-description: ' Use overrun detection to detect illegal memory writes in &ALYlong;. '
+description: ' Use overrun detection to detect illegal memory writes in Amazon Lumberyard. '
 title: Overrun Detection
 ---
 # Overrun Detection {#memory-management-overrun-detection}

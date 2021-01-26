@@ -1,5 +1,5 @@
 ---
-description: ' Use the Beam emitter in the &ALYlong; &particle-editor; to spawn a
+description: ' Use the Beam emitter in the Amazon Lumberyard Particle Editor to spawn a
   length of connected particles at once, based on the origin and specified target
   position. '
 title: Beam Emitter (CPU)

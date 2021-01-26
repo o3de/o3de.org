@@ -1,5 +1,5 @@
 ---
-description: ' Apply silhouette parallax occlusion mapping (SPOM) in &ALYlong;. '
+description: ' Apply silhouette parallax occlusion mapping (SPOM) in Amazon Lumberyard. '
 title: Applying Silhouette Parallax Occlusion Mapping (SPOM)
 ---
 # Applying Silhouette Parallax Occlusion Mapping \(SPOM\) {#mat-maps-parallax-spom}

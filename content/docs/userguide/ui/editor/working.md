@@ -1,6 +1,6 @@
 ---
 description: Learn how to add and delete components, reference UI elements as component
-  properties, and manage components in &ALYlong;'s &ui-canvas-editor; .
+  properties, and manage components in Amazon Lumberyard's UI Editor .
 title: Working with UI Components
 ---
 # Working with UI Components {#ui-editor-working}

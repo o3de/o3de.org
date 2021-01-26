@@ -1,5 +1,5 @@
 ---
-description: ' Launch your &ALYlong; game project after using Waf to configure and
+description: ' Launch your Amazon Lumberyard game project after using Waf to configure and
   build it. '
 title: Launching the Game Project
 ---

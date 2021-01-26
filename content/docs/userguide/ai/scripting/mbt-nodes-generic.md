@@ -1,5 +1,5 @@
 ---
-description: ' See the following generic nodes for the AI system in &ALYlong;. '
+description: ' See the following generic nodes for the AI system in Amazon Lumberyard. '
 title: Generic Nodes
 ---
 # Generic Nodes {#ai-scripting-mbt-nodes-generic}

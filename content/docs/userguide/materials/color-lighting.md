@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s &material-editor; to set lighting and color settings for
+description: ' Use Lumberyard''s Material Editor to set lighting and color settings for
   a material: material color, specular reflection, and lighting effects (specularity,
   glossiness, and glow). '
 title: Setting Material Lighting and Color Settings

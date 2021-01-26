@@ -1,6 +1,6 @@
 ---
 description: ' Use the UITextComponent to control the text and formatting of a text
-  element in &ALYlong;. '
+  element in Amazon Lumberyard. '
 title: UITextComponent
 ---
 # UITextComponent {#lua-scripting-ces-api-ui-uitextcomponent}

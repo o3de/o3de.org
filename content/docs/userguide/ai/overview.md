@@ -1,5 +1,5 @@
 ---
-description: ' See the following AI system overview in &ALYlong;. '
+description: ' See the following AI system overview in Amazon Lumberyard. '
 title: AI System Overview
 ---
 # AI System Overview {#ai-concepts-overview}

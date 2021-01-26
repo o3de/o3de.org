@@ -1,6 +1,6 @@
 ---
 description: ' Write your own interest manager rule handlers for networked games in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C++
 ---
 # Writing Your Own Interest Manager Attributes, Rules and Rule Handlers in C\+\+ {#network-interest-manager-custom-rule-handler}

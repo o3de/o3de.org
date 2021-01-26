@@ -1,6 +1,6 @@
 ---
 description: null
-title: '&animation-editor; Concepts and Terms'
+title: 'Animation Editor Concepts and Terms'
 ---
 # Animation Editor Concepts and Terms {#char-animation-editor-concepts-and-terms}
 

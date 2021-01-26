@@ -1,6 +1,6 @@
 ---
 description: ' Choose components to add to your entities and enhance your level with
-  &ALYlong;''s &component-system;. '
+  Amazon Lumberyard''s component entity system. '
 title: Component Reference
 ---
 # Component Reference {#component-components}

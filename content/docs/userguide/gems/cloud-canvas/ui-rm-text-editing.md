@@ -1,6 +1,6 @@
 ---
-description: ' Use the &cloud; Resource Manager UI or an external editor to edit the
-  &cloud; text files in your &ALYlong; project. '
+description: ' Use the Cloud Canvas Resource Manager UI or an external editor to edit the
+  Cloud Canvas text files in your Amazon Lumberyard project. '
 title: Editing Resource Manager Files
 ---
 # Editing Resource Manager Files {#cloud-canvas-ui-rm-text-editing}

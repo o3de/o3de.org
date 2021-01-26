@@ -1,6 +1,6 @@
 ---
-description: ' Use the Maya fur previsualization in &ALYlong;. '
-title: Maya &endash; Fur Previsualization
+description: ' Use the Maya fur previsualization in Amazon Lumberyard. '
+title: Maya – Fur Previsualization
 ---
 # Maya - Fur Previsualization {#shader-ref-fur-previzmaya}
 

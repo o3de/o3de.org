@@ -1,5 +1,5 @@
 ---
-description: ' Legal information for the use and distribution of &ALY; and &ALY; materials. '
+description: ' Legal information for the use and distribution of Lumberyard and Lumberyard materials. '
 title: Legal
 ---
 # Legal {#legal-intro}

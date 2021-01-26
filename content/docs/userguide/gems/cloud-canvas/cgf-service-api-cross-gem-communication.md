@@ -1,5 +1,5 @@
 ---
-description: ' Use the cloud gem cross-communication feature in &ALYlong; to enable
+description: ' Use the cloud gem cross-communication feature in Amazon Lumberyard to enable
   a cloud gem to provide a service to other cloud gems on the backend. '
 title: Cross-Gem Communication
 ---

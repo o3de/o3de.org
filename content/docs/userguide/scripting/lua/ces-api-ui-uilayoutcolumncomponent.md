@@ -1,5 +1,5 @@
 ---
-description: ' Use the UILayoutColumnComponent to control column layout in &ALYlong;. '
+description: ' Use the UILayoutColumnComponent to control column layout in Amazon Lumberyard. '
 title: UILayoutColumnComponent
 ---
 # UILayoutColumnComponent {#lua-scripting-ces-api-ui-uilayoutcolumncomponent}

@@ -1,5 +1,5 @@
 ---
-description: ' See the following AI system concepts and terms in &ALYlong;. '
+description: ' See the following AI system concepts and terms in Amazon Lumberyard. '
 title: AI System Concepts
 ---
 # AI System Concepts {#ai-concepts}

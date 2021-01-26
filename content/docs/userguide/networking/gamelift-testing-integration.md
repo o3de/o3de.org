@@ -1,7 +1,7 @@
 ---
-description: ' Learn how to use &AGS; Local to test your &AGS; integration in your
-  &ALYlong; game projects. '
-title: Testing your &AGSlong; Integration
+description: ' Learn how to use AGS Local to test your AGS integration in your
+  Amazon Lumberyard game projects. '
+title: Testing your Amazon Games Services Integration
 ---
 # Testing your Amazon GameLift Integration {#network-gamelift-testing-integration}
 

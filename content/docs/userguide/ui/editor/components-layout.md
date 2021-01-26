@@ -1,5 +1,5 @@
 ---
-description: ' Use layout components in &ALY;''s &ui-canvas-editor; to organize child
+description: ' Use layout components in Lumberyard''s UI Editor to organize child
   elements into columns, rows, or a grid. '
 title: Layout Components
 ---

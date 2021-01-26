@@ -1,5 +1,5 @@
 ---
-description: ' How JSON types convert to internal &ALY; data types. '
+description: ' How JSON types convert to internal Lumberyard data types. '
 title: Data types in serialized JSON
 ---
 # Data types in serialized JSON {#serialization-json-data-types}

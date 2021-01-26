@@ -1,6 +1,6 @@
 ---
-description: ' Use C++ macros for error management and troubleshooting in &ALYlong;. '
-title: '&script-canvas; Errors and Troubleshooting'
+description: ' Use C++ macros for error management and troubleshooting in Amazon Lumberyard. '
+title: 'Script Canvas Errors and Troubleshooting'
 ---
 # Script Canvas Errors and Troubleshooting {#script-canvas-errors-and-troubleshooting}
 

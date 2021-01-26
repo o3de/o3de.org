@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Skybox Material node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Skybox Material node in the Amazon Lumberyard Script Canvas editor
   to apply a specified material to the skybox. '
 title: Set Skybox Material
 ---

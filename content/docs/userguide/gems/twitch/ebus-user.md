@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the User C++ API operations for Twitch that you can use
-  for your &ALY; game project. '
+  for your Lumberyard game project. '
 title: User
 ---
 # User {#twitch-api-ebus-user}

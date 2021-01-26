@@ -1,6 +1,6 @@
 ---
-description: ' Use &AGS; to host your &ALYlong; game in the cloud. '
-title: ' Using &AGSlong;'
+description: ' Use AGS to host your Amazon Lumberyard game in the cloud. '
+title: ' Using Amazon Games Services'
 ---
 # Using Amazon GameLift {#network-gamelift-using}
 

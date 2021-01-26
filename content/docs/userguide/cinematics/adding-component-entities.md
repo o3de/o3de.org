@@ -1,5 +1,5 @@
 ---
-description: ' Add component entities in the &trackview-editor; in &ALYlong;. '
+description: ' Add component entities in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Adding Component Entities
 ---
 # Adding Component Entities {#cinematics-adding-component-entities}

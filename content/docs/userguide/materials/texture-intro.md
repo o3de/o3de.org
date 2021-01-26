@@ -1,5 +1,5 @@
 ---
-description: ' Enable color, depth, and details for textures in &ALYlong;. '
+description: ' Enable color, depth, and details for textures in Amazon Lumberyard. '
 title: Working with Textures
 ---
 # Working with Textures {#mat-texture-intro}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the following best practices when working with volumetric fog in
-  &ALY;. '
+  Lumberyard. '
 title: Best Practices for Volumetric Fog
 ---
 # Best Practices for Volumetric Fog {#rendering-graphics-fog-volumetric-bp}

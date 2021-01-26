@@ -1,5 +1,5 @@
 ---
-description: ' Expand your vegetation to cover your level in &ALYlong;. '
+description: ' Expand your vegetation to cover your level in Amazon Lumberyard. '
 title: Expanding Vegetation Coverage
 ---
 # Expanding Vegetation Coverage {#dynamic-vegetation-procedures-coverage}

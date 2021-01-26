@@ -1,5 +1,5 @@
 ---
-description: ' Use the UICanvasComponent in &ALYlong; to control UI canvases and animation. '
+description: ' Use the UICanvasComponent in Amazon Lumberyard to control UI canvases and animation. '
 title: UICanvasComponent
 ---
 # UICanvasComponent {#lua-scripting-ces-api-ui-uicanvascomponent}

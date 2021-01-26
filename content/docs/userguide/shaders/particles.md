@@ -1,5 +1,5 @@
 ---
-description: ' Use the particles shader to render particle effects in &ALYlong;. '
+description: ' Use the particles shader to render particle effects in Amazon Lumberyard. '
 title: Particles Shader
 ---
 # Particles Shader {#shader-ref-particles}

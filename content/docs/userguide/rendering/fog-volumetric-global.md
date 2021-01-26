@@ -1,5 +1,5 @@
 ---
-description: ' Use global volumetric fog in your &ALYlong; level to realistically
+description: ' Use global volumetric fog in your Amazon Lumberyard level to realistically
   simulate particles distributed uniformly along the ground and falling off with height
   above sea level. '
 title: Setting Global (Time of Day) Volumetric Fog

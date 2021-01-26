@@ -1,5 +1,5 @@
 ---
-description: ' Control the Defect Reporter cloud gem programmatically in &ALYlong;. '
+description: ' Control the Defect Reporter cloud gem programmatically in Amazon Lumberyard. '
 title: Defect Reporter EBus Interfaces
 ---
 # Defect Reporter EBus Interfaces {#cloud-canvas-cloud-gem-defect-reporter-ebus-interfaces}

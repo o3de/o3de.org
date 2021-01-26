@@ -1,6 +1,6 @@
 ---
 description: ' Use the Anim Graph Net Sync component to synchronize animation graph
-  parameters in &ALYlong;. '
+  parameters in Amazon Lumberyard. '
 title: Anim Graph Net Sync
 ---
 # Anim Graph Net Sync {#component-animgraph-netsync}

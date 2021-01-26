@@ -1,5 +1,5 @@
 ---
-description: ' Create custom image processing presets in &ALYlong;. '
+description: ' Create custom image processing presets in Amazon Lumberyard. '
 title: Creating Image Processing Presets
 ---
 # Creating Image Processing Presets {#asset-pipeline-creating-image-processing-presets}

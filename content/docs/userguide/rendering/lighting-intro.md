@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s physically-based lighting and shading models to add
+description: ' Use Amazon Lumberyard''s physically-based lighting and shading models to add
   global illumination and lighting for your game project. '
 title: Adding lighting and shadows
 ---

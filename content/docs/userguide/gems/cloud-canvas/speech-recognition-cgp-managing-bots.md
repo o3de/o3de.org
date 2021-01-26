@@ -1,6 +1,6 @@
 ---
-description: ' Use the Speech Recognition Cloud Gem Portal to manage the &LEX; bots
-  for your game in &ALYlong;. '
+description: ' Use the Speech Recognition Cloud Gem Portal to manage the Amazon Lex bots
+  for your game in Amazon Lumberyard. '
 title: Managing Bots
 ---
 # Managing Bots {#cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots}

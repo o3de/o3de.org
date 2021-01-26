@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALYlong; tools in &cloud; to create connected gaming experiences
-  using AWS resources like &DDBlong; tables, &LAMlong; functions, or &S3; buckets. '
-title: Implementing Connected Features with &cloud;
+description: ' Use the Amazon Lumberyard tools in Cloud Canvas to create connected gaming experiences
+  using AWS resources like Amazon DynamoDB tables, AWS Lambda functions, or S3 buckets. '
+title: Implementing Connected Features with Cloud Canvas
 ---
 # Implementing Connected Features with Cloud Canvas {#cloud-canvas-intro}
 

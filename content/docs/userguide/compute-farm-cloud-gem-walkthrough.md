@@ -1,6 +1,6 @@
 ---
 description: ' Use the Compute Farm cloud gem to solve large-scale computing tasks
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: 'Compute Farm Cloud Gem: Walkthrough'
 ---
 # Compute Farm Cloud Gem: Walkthrough {#compute-farm-cloud-gem-walkthrough}

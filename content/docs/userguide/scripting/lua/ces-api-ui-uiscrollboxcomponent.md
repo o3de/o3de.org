@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIScrollBoxComponent to control the characteristics of a scroll
-  box in &ALYlong;. '
+  box in Amazon Lumberyard. '
 title: UIScrollBoxComponent
 ---
 # UIScrollBoxComponent {#lua-scripting-ces-api-ui-uiscrollboxcomponent}

@@ -1,7 +1,7 @@
 ---
-description: ' See the following &animation-editor; nodes when creating your animation
-  graph in &ALYlong;. '
-title: '&animation-editor; Nodes'
+description: ' See the following Animation Editor nodes when creating your animation
+  graph in Amazon Lumberyard. '
+title: 'Animation Editor Nodes'
 ---
 # Animation Editor Nodes {#animation-editor-node}
 

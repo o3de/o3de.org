@@ -1,6 +1,6 @@
 ---
 description: ' Retarget motions and animations from one actor to another actor in
-  the &ALYlong; &animation-editor; . '
+  the Amazon Lumberyard Animation Editor . '
 title: Retargeting Motions
 ---
 # Retargeting Motions {#animation-editor-retargeting-animations}

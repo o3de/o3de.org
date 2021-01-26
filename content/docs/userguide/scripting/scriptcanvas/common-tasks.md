@@ -1,6 +1,6 @@
 ---
 description: ' Get familiar with the common tasks and best practices associated with
-  &script-canvas;, including troubleshooting and debugging. '
+  Script Canvas, including troubleshooting and debugging. '
 title: Common Tasks
 ---
 # Common Tasks {#script-canvas-common-tasks}

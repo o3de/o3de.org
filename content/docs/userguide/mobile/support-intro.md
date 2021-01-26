@@ -1,7 +1,7 @@
 ---
-description: ' Build, deploy, test, and troubleshoot &ALY; projects for Android and
+description: ' Build, deploy, test, and troubleshoot Lumberyard projects for Android and
   iOS devices. '
-title: Developing for Android and iOS with &ALY;
+title: Developing for Android and iOS with Lumberyard
 ---
 # Developing for Android and iOS with Lumberyard {#mobile-support-intro}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Transform component to move, rotate, and scale an entity in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Transform
 ---
 # Transform {#component-transform}

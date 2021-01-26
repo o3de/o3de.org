@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the tactical point system (TPS) in &ALYlong;. '
+description: ' Learn about the tactical point system (TPS) in Amazon Lumberyard. '
 title: Tactical Point System Overview
 ---
 # Tactical Point System Overview {#ai-tactical-point-overview}

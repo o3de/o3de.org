@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to select &script-canvas; nodes in &ALYlong; using hotkeys. '
+description: ' Learn how to select Script Canvas nodes in Amazon Lumberyard using hotkeys. '
 title: Selecting Nodes Using Hot Keys
 ---
 # Selecting Nodes Using Hot Keys {#script-canvas-working-with-nodes-selecting-using-hotkeys}

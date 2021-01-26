@@ -1,6 +1,6 @@
 ---
 description: ' Use heightmap properties and settings to change the shape of your terrain
-  profile in &ALY;. '
+  profile in Lumberyard. '
 title: Setting Heightmap Properties
 ---
 # Setting Heightmap Properties {#terrain-editor-ref}

@@ -1,6 +1,6 @@
 ---
 description: ' Use bundle mode to ensure that your asset bundles have the required
-  assets for your &ALY; game. '
+  assets for your Lumberyard game. '
 title: Using Bundle Mode to Test Bundles
 ---
 # Using Bundle Mode to Test Bundles {#asset-bundler-bundle-mode}

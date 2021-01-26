@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY; to build game assets for your macOS games. '
+description: ' Use Lumberyard to build game assets for your macOS games. '
 title: Building Game Assets for macOS Games
 ---
 # Building Game Assets for macOS Games {#osx-assets-building}

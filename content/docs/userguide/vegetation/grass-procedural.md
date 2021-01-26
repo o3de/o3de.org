@@ -1,6 +1,6 @@
 ---
 description: ' Paint with a texture layer to quickly add grass to a large area of
-  your &ALY; terrain. '
+  your Lumberyard terrain. '
 title: 'Painting to Add Grass '
 ---
 # Painting to Add Grass {#vegetation-grass-procedural}

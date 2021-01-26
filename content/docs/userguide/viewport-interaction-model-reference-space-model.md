@@ -1,5 +1,5 @@
 ---
-description: ' Create reference spaces to modify your entities in &ALYlong;. '
+description: ' Create reference spaces to modify your entities in Amazon Lumberyard. '
 title: Reference Space Model
 ---
 # Reference Space Model {#viewport-interaction-model-reference-space-model}

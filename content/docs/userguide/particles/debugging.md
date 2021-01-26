@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables (CVARs) to debug particles in &ALYlong;. '
+description: ' Use console variables (CVARs) to debug particles in Amazon Lumberyard. '
 title: Particle Debugging with Console Variables
 ---
 # Particle Debugging with Console Variables {#particle-debugging}

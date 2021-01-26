@@ -1,5 +1,5 @@
 ---
-description: ' Use time of day effects in your &ALYlong; environment to simulate the
+description: ' Use time of day effects in your Amazon Lumberyard environment to simulate the
   changing light as the sun moves across the sky. '
 title: Creating Time of Day Sky Effects
 ---

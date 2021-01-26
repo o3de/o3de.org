@@ -1,5 +1,5 @@
 ---
-description: ' Use the Load by Name node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Load by Name node in the Amazon Lumberyard Script Canvas editor to
   find and return a material with the specified name. '
 title: Load by Name
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see tweeners
+description: ' Open the Scripted Entity Tweener sample level in Amazon Lumberyard to see tweeners
   in action. '
 title: Tweener Sample Level
 ---

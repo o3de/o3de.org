@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Environment Probe components to blend visual affects
+description: ' Use the Amazon Lumberyard Environment Probe components to blend visual affects
   for your game. '
 title: Blending Environment Probes
 ---

@@ -1,6 +1,6 @@
 ---
-description: ' Customize the &particle-editor; UI in &ALYlong;. '
-title: Customizing the &particle-editor; UI
+description: ' Customize the Particle Editor UI in Amazon Lumberyard. '
+title: Customizing the Particle Editor UI
 ---
 # Customizing the Particle Editor UI {#particle-editor-customizing}
 

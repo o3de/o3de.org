@@ -1,6 +1,6 @@
 ---
 description: ' Use the Lua Script component to add script functionality to your game
-  entities in &ALYlong;. '
+  entities in Amazon Lumberyard. '
 title: Adding Lua Scripts to Component Entities
 ---
 # Adding Lua Scripts to Component Entities {#lua-scripting-intro-add-script-to-component}

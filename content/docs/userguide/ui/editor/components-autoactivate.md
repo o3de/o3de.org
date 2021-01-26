@@ -1,5 +1,5 @@
 ---
-description: ' Enable Auto Activate for interactive elements in &ALY; &ui-canvas-editor;
+description: ' Enable Auto Activate for interactive elements in Lumberyard UI Editor
   to set an element to activate automatically. '
 title: Auto Activate
 ---

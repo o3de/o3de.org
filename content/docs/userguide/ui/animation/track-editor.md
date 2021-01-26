@@ -1,6 +1,6 @@
 ---
 description: ' Use the Animation Editor''s Track Editor to preview an animation, change
-  the timeline, and work with keys in &ALYlong;. '
+  the timeline, and work with keys in Amazon Lumberyard. '
 title: Using the Track Editor
 ---
 # Using the Track Editor {#ui-animation-track-editor}

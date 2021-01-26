@@ -1,6 +1,6 @@
 ---
 description: ' See the following best practices when working with slices and sequences
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Working with Slices and Sequences
 ---
 # Working with Slices and Sequences {#working-with-slices-cinematic-sequences}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the heightmap as the base of your terrain in your &ALY; level. '
+description: ' Use the heightmap as the base of your terrain in your Lumberyard level. '
 title: Using the Terrain Heightmap
 ---
 # Using the Terrain Heightmap {#terrain-heightmap-intro}

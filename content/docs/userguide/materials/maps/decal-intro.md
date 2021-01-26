@@ -1,5 +1,5 @@
 ---
-description: ' Specify decal parameters for materials in &ALYlong;. '
+description: ' Specify decal parameters for materials in Amazon Lumberyard. '
 title: Working with Decals
 ---
 # Working with Decals {#mat-maps-decal-intro}

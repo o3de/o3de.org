@@ -1,6 +1,6 @@
 ---
 description: ' Use the WaterVolume shader to apply a material to rivers you create
-  in your &ALY; terrain. '
+  in your Lumberyard terrain. '
 title: Applying a River Material
 ---
 # Applying a River Material {#terrain-rivers-material}

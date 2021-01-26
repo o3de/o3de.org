@@ -1,5 +1,5 @@
 ---
-description: ' Use the Preview panel to view your particle effect in the &ALY; &particle-editor;. '
+description: ' Use the Preview panel to view your particle effect in the Lumberyard Particle Editor. '
 title: Using the Preview Panel
 ---
 # Using the Preview Panel {#particle-editor-preview-panel}

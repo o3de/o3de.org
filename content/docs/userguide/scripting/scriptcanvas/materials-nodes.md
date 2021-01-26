@@ -1,5 +1,5 @@
 ---
-description: ' Use material nodes to work with material assets in the &ALYlong; &script-canvas;
+description: ' Use material nodes to work with material assets in the Amazon Lumberyard Script Canvas
   editor. '
 title: Material Nodes
 ---

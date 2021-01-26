@@ -1,5 +1,5 @@
 ---
-description: ' Learn about dynamic vegetation concepts and ideas in &ALYlong;. '
+description: ' Learn about dynamic vegetation concepts and ideas in Amazon Lumberyard. '
 title: Dynamic Vegetation Concepts
 ---
 # Dynamic Vegetation Concepts {#dynamic-vegetation-concepts}

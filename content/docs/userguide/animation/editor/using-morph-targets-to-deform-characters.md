@@ -1,5 +1,5 @@
 ---
-description: ' Use morph targets to deform characters in the &ALYlong; &animation-editor;
+description: ' Use morph targets to deform characters in the Amazon Lumberyard Animation Editor
   . '
 title: Using Morph Targets to Deform Characters
 ---

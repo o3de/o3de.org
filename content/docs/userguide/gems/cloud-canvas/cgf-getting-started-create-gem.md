@@ -1,5 +1,5 @@
 ---
-description: ' Create a cloud gem to add connected features to your &ALYlong; game
+description: ' Create a cloud gem to add connected features to your Amazon Lumberyard game
   project. '
 title: Creating a Cloud Gem
 ---

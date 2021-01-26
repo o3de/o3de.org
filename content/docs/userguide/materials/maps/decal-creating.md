@@ -1,5 +1,5 @@
 ---
-description: ' Set decal parameters in &ALYlong;. '
+description: ' Set decal parameters in Amazon Lumberyard. '
 title: Setting Decal Parameters
 ---
 # Setting Decal Parameters {#mat-maps-decal-creating}

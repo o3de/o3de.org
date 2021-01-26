@@ -1,6 +1,6 @@
 ---
 description: ' Use the RAD Telemetry gem to enable instrumentation-based profiling
-  and performance visualization in &ALYlong;. '
+  and performance visualization in Amazon Lumberyard. '
 title: RAD Telemetry Gem
 ---
 # RAD Telemetry Gem {#gems-system-gem-rad-telemetry}

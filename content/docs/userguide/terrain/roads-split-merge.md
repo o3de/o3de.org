@@ -1,5 +1,5 @@
 ---
-description: ' Use Spline Parameters in &ALY; to split a road in two or combine two
+description: ' Use Spline Parameters in Lumberyard to split a road in two or combine two
   roads into one. '
 title: Splitting and Merging Roads
 ---

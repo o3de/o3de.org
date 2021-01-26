@@ -1,5 +1,5 @@
 ---
-description: ' Use the Clone material node in the &script-canvas; editor in &ALYlong;
+description: ' Use the Clone material node in the Script Canvas editor in Amazon Lumberyard
   to create a copy of a material file. '
 title: Clone
 ---

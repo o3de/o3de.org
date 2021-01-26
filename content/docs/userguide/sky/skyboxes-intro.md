@@ -1,5 +1,5 @@
 ---
-description: ' Use a skybox to create a static sky for your &ALY; level. '
+description: ' Use a skybox to create a static sky for your Lumberyard level. '
 title: Creating Static Skyboxes
 ---
 # Creating Static Skyboxes {#sky-skyboxes-intro}

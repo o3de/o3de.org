@@ -1,6 +1,6 @@
 ---
 description: ' Use Scripted Entity Tweener''s timeline abilities to chain animations
-  together and exert fine control over them in &ALYlong;. '
+  together and exert fine control over them in Amazon Lumberyard. '
 title: Tweener Timeline
 ---
 # Tweener Timeline {#ui-animating-tweener-timeline}

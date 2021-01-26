@@ -1,5 +1,5 @@
 ---
-description: ' Use UiRadioButtonComponent to implement a UI radio button in &ALYlong;. '
+description: ' Use UiRadioButtonComponent to implement a UI radio button in Amazon Lumberyard. '
 title: UiRadioButtonComponent
 ---
 # UiRadioButtonComponent {#lua-scripting-ces-api-ui-uiradiobuttoncomponent}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Blast gem to simulate destruction in your &ALYlong;
+description: ' Use the NVIDIA Blast gem to simulate destruction in your Amazon Lumberyard
   project. '
 title: NVIDIA Blast gem
 ---

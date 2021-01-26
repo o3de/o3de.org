@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the platforms supported by &ALYlong; for developing games
+description: ' Learn about the platforms supported by Amazon Lumberyard for developing games
   and simulations. '
 title: Supported platforms
 ---

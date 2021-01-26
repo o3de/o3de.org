@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIButtonComponent in Lua to implement button functionality
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UIButtonComponent
 ---
 # UIButtonComponent {#lua-scripting-ces-api-ui-uibuttoncomponent}

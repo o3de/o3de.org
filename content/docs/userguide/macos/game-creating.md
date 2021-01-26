@@ -1,5 +1,5 @@
 ---
-description: ' Create a project for your macOS applications using &ALY; tools. '
+description: ' Create a project for your macOS applications using Lumberyard tools. '
 title: Creating a Project for Your macOS Games
 ---
 # Creating a Project for Your macOS Games {#osx-game-creating}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to join a GridMate session in &ALYlong;. '
+description: ' Learn how to join a GridMate session in Amazon Lumberyard. '
 title: Joining a Session
 ---
 # Joining a Session {#network-session-service-joining}

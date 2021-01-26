@@ -1,5 +1,5 @@
 ---
-description: ' Learn useful networking console commands for &ALYlong;. '
+description: ' Learn useful networking console commands for Amazon Lumberyard. '
 title: Useful Console Commands
 ---
 # Useful Console Commands {#network-console-commands}

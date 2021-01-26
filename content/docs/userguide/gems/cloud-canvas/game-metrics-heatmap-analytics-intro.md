@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Game Metrics Cloud Gem and heatmap overlay to view
+description: ' Use the Amazon Lumberyard Game Metrics Cloud Gem and heatmap overlay to view
   generated data and any metric type that a game client sends. '
 title: Using Heatmap Analytics
 ---

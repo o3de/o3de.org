@@ -1,6 +1,6 @@
 ---
-description: ' This section describes the major &ALY; systems. '
-title: '&ALY; Systems'
+description: ' This section describes the major Lumberyard systems. '
+title: 'Lumberyard Systems'
 ---
 # Lumberyard Systems {#lumberyard-systems}
 

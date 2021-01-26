@@ -1,6 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem Portal API to manage intents in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Intents
 ---
 # Intents {#cloud-canvas-cloud-gem-speech-recognition-api-intents}

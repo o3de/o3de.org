@@ -1,5 +1,5 @@
 ---
-description: ' Use the Trail emitter in the &ALYlong; &particle-editor; to connect
+description: ' Use the Trail emitter in the Amazon Lumberyard Particle Editor to connect
   particles together to create a trailing effect. '
 title: Trail Emitter (CPU)
 ---

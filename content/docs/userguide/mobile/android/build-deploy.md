@@ -1,5 +1,5 @@
 ---
-description: ' Compile assets and build your Android project with &ALYlong;. '
+description: ' Compile assets and build your Android project with Amazon Lumberyard. '
 title: Build and deploy your project for Android
 ---
 # Build and deploy your project for Android {#android-build-deploy}

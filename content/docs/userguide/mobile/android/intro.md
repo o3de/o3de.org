@@ -1,6 +1,6 @@
 ---
-description: ' Develop &ALYlong; projects for use on Android devices. '
-title: '&ALY; Android support'
+description: ' Develop Amazon Lumberyard projects for use on Android devices. '
+title: 'Lumberyard Android support'
 ---
 # Lumberyard Android support {#android-intro}
 

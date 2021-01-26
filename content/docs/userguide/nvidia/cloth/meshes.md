@@ -1,6 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Mesh components
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Cloth for Mesh components
 ---
 # Cloth for Mesh components {#nvidia-cloth-meshes}

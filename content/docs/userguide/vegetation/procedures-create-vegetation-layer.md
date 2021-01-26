@@ -1,5 +1,5 @@
 ---
-description: ' Create a basic vegetation layer in &ALYlong;. '
+description: ' Create a basic vegetation layer in Amazon Lumberyard. '
 title: Creating a Vegetation Layer
 ---
 # Creating a Vegetation Layer {#dynamic-vegetation-procedures-create-vegetation-layer}

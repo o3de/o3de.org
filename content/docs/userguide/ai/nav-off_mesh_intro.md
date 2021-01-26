@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about off-mesh AI navigation in &ALYlong;. '
+description: ' Learn more about off-mesh AI navigation in Amazon Lumberyard. '
 title: Off-Mesh AI Navigation
 ---
 # Off\-Mesh AI Navigation {#ai-nav-off_mesh_intro}

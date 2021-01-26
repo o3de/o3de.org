@@ -1,5 +1,5 @@
 ---
-description: ' Use multiple skin attachments for an Actor component in &ALYlong; to
+description: ' Use multiple skin attachments for an Actor component in Amazon Lumberyard to
   create interchangeable parts of your character, such as a hat and belt. '
 title: Using Multiple Skin Attachments for an Actor
 ---

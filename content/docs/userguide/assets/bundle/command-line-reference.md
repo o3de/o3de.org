@@ -1,8 +1,8 @@
 ---
-description: ' Command reference for the &ALYlong; &asset-bundler; command-line tool
+description: ' Command reference for the Amazon Lumberyard Asset Bundler command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '
-title: '&ALY; &asset-bundler; Command-Line Tool Reference'
+title: 'Lumberyard Asset Bundler Command-Line Tool Reference'
 ---
 # Lumberyard Asset Bundler Command\-Line Tool Reference {#asset-bundler-command-line-reference}
 

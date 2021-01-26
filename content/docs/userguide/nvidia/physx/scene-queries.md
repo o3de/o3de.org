@@ -1,5 +1,5 @@
 ---
-description: ' Create raycast and shape cast queries in &ALYlong;. '
+description: ' Create raycast and shape cast queries in Amazon Lumberyard. '
 title: PhysX Scene Queries
 ---
 # PhysX Scene Queries {#physx-scene-queries}

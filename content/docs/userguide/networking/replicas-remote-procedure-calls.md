@@ -1,6 +1,6 @@
 ---
 description: ' Use remote procedure calls (RPCs) to send events or requests through
-  replicas in &ALYlong;. '
+  replicas in Amazon Lumberyard. '
 title: Remote Procedure Calls (RPCs)
 ---
 # Remote Procedure Calls \(RPCs\) {#network-replicas-remote-procedure-calls}
