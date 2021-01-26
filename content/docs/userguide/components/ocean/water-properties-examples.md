@@ -1,5 +1,5 @@
 ---
-description: ' Work with water properties in &ALYlong;. '
+description: ' Work with water properties in Amazon Lumberyard. '
 title: Understanding Water Properties
 ---
 # Understanding Water Properties {#infinite-ocean-component-water-properties-examples}

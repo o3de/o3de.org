@@ -1,5 +1,5 @@
 ---
-description: ' Use the Particle component in &ALYlong; to add a single particle emitter
+description: ' Use the Particle component in Amazon Lumberyard to add a single particle emitter
   on an entity. '
 title: Particle
 ---

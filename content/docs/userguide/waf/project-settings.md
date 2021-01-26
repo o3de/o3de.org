@@ -1,5 +1,5 @@
 ---
-description: ' Use Waf to specify the build settings for your &ALYlong; game project. '
+description: ' Use Waf to specify the build settings for your Amazon Lumberyard game project. '
 title: Waf Project Settings
 ---
 # Waf Project Settings {#waf-project-settings}

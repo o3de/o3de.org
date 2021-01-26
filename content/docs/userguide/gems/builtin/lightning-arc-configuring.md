@@ -1,6 +1,6 @@
 ---
 description: ' Get custom lightning effects by configure the lightning arc entity
-  in &ALY;. '
+  in Lumberyard. '
 title: Configuring the Lightning Arc
 ---
 # Configuring the Lightning Arc {#gems-system-gem-lightning-arc-configuring}

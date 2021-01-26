@@ -1,5 +1,5 @@
 ---
-description: ' Use the Angle emitter in the &ALYlong; &particle-editor; to spawn particles
+description: ' Use the Angle emitter in the Amazon Lumberyard Particle Editor to spawn particles
   in a directional pattern based on parameters and control the angle of emission. '
 title: Angle Emitter (CPU and GPU)
 ---

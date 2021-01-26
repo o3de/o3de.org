@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s touch bending effect to simulate a player touching
+description: ' Use Amazon Lumberyard''s touch bending effect to simulate a player touching
   or brushing against vegetation. '
 title: Adding Touch (Collision) Bending Effects
 ---

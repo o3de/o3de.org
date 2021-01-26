@@ -1,7 +1,7 @@
 ---
-description: ' Use the Curve Editor in the &ALYlong;''s &particle-editor; to change
+description: ' Use the Curve Editor in the Amazon Lumberyard''s Particle Editor to change
   attribute values. '
-title: Using the Curve Editor in the &particle-editor;
+title: Using the Curve Editor in the Particle Editor
 ---
 # Using the Curve Editor in the Particle Editor {#emitter-curve-editor}
 

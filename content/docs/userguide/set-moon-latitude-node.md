@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Moon Latitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Moon Latitude node in the Amazon Lumberyard Script Canvas editor
   to set the moon latitude. '
 title: Set Moon Latitude
 ---

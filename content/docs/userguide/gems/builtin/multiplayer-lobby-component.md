@@ -1,6 +1,6 @@
 ---
 description: ' Add the MultiplayerLobbyComponent to a component entity to manage game
-  sessions in &ALYlong;. '
+  sessions in Amazon Lumberyard. '
 title: The Multiplayer Lobby Component
 ---
 # The Multiplayer Lobby Component {#gems-system-gem-multiplayer-lobby-component}

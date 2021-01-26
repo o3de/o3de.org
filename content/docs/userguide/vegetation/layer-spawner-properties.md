@@ -1,6 +1,6 @@
 ---
 description: Use the Vegetation Layer Spawner component to create vegetation entities
-  in &ALYlong;.
+  in Amazon Lumberyard.
 title: Vegetation Layer Spawner Properties
 ---
 # Vegetation Layer Spawner Properties {#vegetation-layer-spawner-properties}

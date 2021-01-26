@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about game nodes for MBT features in &ALYlong;. '
+description: ' Learn more about game nodes for MBT features in Amazon Lumberyard. '
 title: Game Nodes
 ---
 # Game Nodes {#ai-scripting-mbt-nodes-game}

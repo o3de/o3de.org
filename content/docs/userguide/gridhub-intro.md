@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use and configure GridHub, the &ALYlong; connection hub
+description: ' Learn how to use and configure GridHub, the Amazon Lumberyard connection hub
   for debugging. '
 title: Using GridHub
 ---

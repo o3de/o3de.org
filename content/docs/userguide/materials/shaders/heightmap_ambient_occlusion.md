@@ -1,5 +1,5 @@
 ---
-description: ' Enable height map ambient occlusion in your &ALY; level to efficiently
+description: ' Enable height map ambient occlusion in your Lumberyard level to efficiently
   determine the exposure of ambient light to each point in a scene. '
 title: Height Map Ambient Occlusion
 ---

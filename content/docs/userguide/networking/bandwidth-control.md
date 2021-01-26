@@ -1,5 +1,5 @@
 ---
-description: ' Use GridMate to control the bandwidth that your game uses in &ALYlong;. '
+description: ' Use GridMate to control the bandwidth that your game uses in Amazon Lumberyard. '
 title: Controlling Bandwidth Usage
 ---
 # Controlling Bandwidth Usage {#network-bandwidth-control}

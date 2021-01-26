@@ -1,6 +1,6 @@
 ---
 description: ' View status, lock selection, cursor position and transform status,
-  and so on with the bottom toolbar in &ALYlong;. '
+  and so on with the bottom toolbar in Amazon Lumberyard. '
 title: Using the Bottom Toolbar
 ---
 # Using the Bottom Toolbar {#lumberyard-editor-toolbar-bottom}

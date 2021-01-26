@@ -1,5 +1,5 @@
 ---
-description: ' Use Waf files to specify the files to include in your &ALYlong; game
+description: ' Use Waf files to specify the files to include in your Amazon Lumberyard game
   build. '
 title: Waf File Lists (*.waf_files)
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Fix tessellation seams in &ALYlong;. '
+description: ' Fix tessellation seams in Amazon Lumberyard. '
 title: Fixing Tessellation Seams
 ---
 # Fixing Tessellation Seams {#mat-maps-displacement-tessellation-debug}

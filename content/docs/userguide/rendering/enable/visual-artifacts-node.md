@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Visual Artifacts node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Visual Artifacts node in the Amazon Lumberyard Script Canvas
   editor to enable visual artifact filters such as an old television. '
 title: Enable Visual Artifacts
 ---

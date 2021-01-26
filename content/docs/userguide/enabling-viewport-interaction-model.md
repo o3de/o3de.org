@@ -1,6 +1,6 @@
 ---
-description: ' Enable the &VIM; feature in &ly-editor;. '
-title: Enabling &VIM;
+description: ' Enable the Viewport Interaction Model feature in Lumberyard Editor. '
+title: Enabling Viewport Interaction Model
 ---
 # Enabling Viewport Interaction Model {#enabling-viewport-interaction-model}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to align &script-canvas; nodes in &ALYlong;. '
+description: ' Learn how to align Script Canvas nodes in Amazon Lumberyard. '
 title: Aligning Nodes
 ---
 # Aligning Nodes {#script-canvas-working-with-nodes-aligning}

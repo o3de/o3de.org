@@ -1,5 +1,5 @@
 ---
-description: ' Use any of &ALY;''s three bending effects to make vegetation bend naturally. '
+description: ' Use any of Lumberyard''s three bending effects to make vegetation bend naturally. '
 title: Adding Vegetation Bending Effects
 ---
 # Adding Vegetation Bending Effects {#vegetation-bending-intro}

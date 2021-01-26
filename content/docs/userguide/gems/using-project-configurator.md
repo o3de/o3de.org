@@ -1,5 +1,5 @@
 ---
-description: ' Enable gems in &ALYlong; with the &project-configurator; interface. '
+description: ' Enable gems in Amazon Lumberyard with the Project Configurator interface. '
 title: Enabling Gems
 ---
 # Enabling Gems {#gems-system-using-project-configurator}

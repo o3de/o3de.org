@@ -1,5 +1,5 @@
 ---
-description: ' Create a terrain heightmap in &ALY; by specifying the resolution and
+description: ' Create a terrain heightmap in Lumberyard by specifying the resolution and
   grid spacing to determine the heightmap size. '
 title: Creating a Terrain Heightmap
 ---

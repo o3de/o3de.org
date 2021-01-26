@@ -1,6 +1,6 @@
 ---
-description: ' Initialize &cloud; Resource Manager and get started working with the
-  project stacks that enable the cloud-connected features of your &ALYlong; game project. '
+description: ' Initialize Cloud Canvas Resource Manager and get started working with the
+  project stacks that enable the cloud-connected features of your Amazon Lumberyard game project. '
 title: Setting Up a Project to Use Resource Manager
 ---
 # Setting Up a Project to Use Resource Manager {#cloud-canvas-rm-setup}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the OccluderArea component to create a custom shaped occlusion
-  plane with four vertices in &ALYlong;. '
+  plane with four vertices in Amazon Lumberyard. '
 title: OccluderArea
 ---
 # OccluderArea {#component-occluder-area}

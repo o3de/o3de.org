@@ -1,5 +1,5 @@
 ---
-description: ' Use the Asset Validation gem''s seed mode in &ALY; to ensure that your
+description: ' Use the Asset Validation gem''s seed mode in Lumberyard to ensure that your
   game assets are properly bundled. '
 title: Using the Asset Validation Gem to Verify Seeds
 ---

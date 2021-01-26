@@ -1,6 +1,6 @@
 ---
 description: ' Use OceanAnimation settings to simulate realistic wind and wave effects
-  for an ocean in your &ALY; game project. '
+  for an ocean in your Lumberyard game project. '
 title: Adding Ocean Wind
 ---
 # Adding Ocean Wind {#weather-wind-ocean}

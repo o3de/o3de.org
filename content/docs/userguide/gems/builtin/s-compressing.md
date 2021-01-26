@@ -1,6 +1,6 @@
 ---
 description: ' Zip your gem''s contents and then change the file extension to .crate
-  to make your custom &ALYlong; gem distributable. '
+  to make your custom Amazon Lumberyard gem distributable. '
 title: Compressing Your Gem
 ---
 # Compressing Your Gem {#gems-system-gems-compressing}

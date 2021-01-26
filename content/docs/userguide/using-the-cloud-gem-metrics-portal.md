@@ -1,6 +1,6 @@
 ---
 description: null
-title: Using the Game Metrics &cgp;
+title: Using the Game Metrics Cloud Gem Portal
 ---
 # Using the Game Metrics Cloud Gem Portal {#using-the-cloud-gem-metrics-portal}
 

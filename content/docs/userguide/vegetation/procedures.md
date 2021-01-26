@@ -1,6 +1,6 @@
 ---
 description: ' Learn the basic procedures to create realistic-looking dynamic vegetation
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Dynamic Vegetation Procedures
 ---
 # Dynamic Vegetation Procedures {#dynamic-vegetation-procedures}

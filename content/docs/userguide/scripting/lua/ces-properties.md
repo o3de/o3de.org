@@ -1,6 +1,6 @@
 ---
-description: ' Specify the properties of a Lua script component that appear in &ly-editor;
-  in &ALYlong;. '
+description: ' Specify the properties of a Lua script component that appear in Lumberyard Editor
+  in Amazon Lumberyard. '
 title: Properties Table
 ---
 # Properties Table {#lua-scripting-ces-properties}

@@ -1,5 +1,5 @@
 ---
-description: Use the lmbr gems command to list, disable, enable, and create &ALY;
+description: Use the lmbr gems command to list, disable, enable, and create Lumberyard
   Gems.
 title: Gems Commands
 ---

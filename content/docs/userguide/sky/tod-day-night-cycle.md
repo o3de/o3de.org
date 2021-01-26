@@ -1,6 +1,6 @@
 ---
-description: ' Use &tod-editor; to make settings change over time to mimic a day-night
-  lighting cycle in your &ALYlong; environment. '
+description: ' Use Time of Day Editor to make settings change over time to mimic a day-night
+  lighting cycle in your Amazon Lumberyard environment. '
 title: Setting a Day-Night Cycle
 ---
 # Setting a Day\-Night Cycle {#sky-tod-day-night-cycle}

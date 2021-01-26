@@ -1,6 +1,6 @@
 ---
 description: ' Learn how each GridMate session''s replica manager manages the primary
-  and proxy replicas in a &ALYlong; game session. '
+  and proxy replicas in a Amazon Lumberyard game session. '
 title: Replica Manager
 ---
 # Replica Manager {#network-replicas-replica-manager}

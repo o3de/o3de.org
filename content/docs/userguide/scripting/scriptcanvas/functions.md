@@ -1,7 +1,7 @@
 ---
-description: ' Create reusable functions in &script-canvas; that can be inserted into
+description: ' Create reusable functions in Script Canvas that can be inserted into
   other graphs as nodes. '
-title: '&script-canvas; Functions'
+title: 'Script Canvas Functions'
 ---
 # Script Canvas Functions {#script-canvas-functions}
 

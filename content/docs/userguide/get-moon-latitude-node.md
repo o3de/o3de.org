@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Moon Latitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Moon Latitude node in the Amazon Lumberyard Script Canvas editor
   to return the moon latitude. '
 title: Get Moon Latitude
 ---

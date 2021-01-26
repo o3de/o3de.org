@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audiokinetic Wwise audio system in &ALYlong; to implement features
+description: ' Use the Audiokinetic Wwise audio system in Amazon Lumberyard to implement features
   of the Text-to-Speech Cloud Gem in your game project. '
 title: Creating a Wwise Project for Runtime Text-to-Speech
 ---

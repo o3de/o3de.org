@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the general C++ API operations for Twitch that you can
-  use for your &ALY; game project. '
+  use for your Lumberyard game project. '
 title: General
 ---
 # General {#twitch-api-ebus-general}

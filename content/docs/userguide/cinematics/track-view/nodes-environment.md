@@ -1,5 +1,5 @@
 ---
-description: ' Use the Environment node in &ALY;''s &trackview-editor; to set the
+description: ' Use the Environment node in Lumberyard''s <guilabel>Track View</guilabel> editor to set the
   sun''s longitude and latitude in a scene. '
 title: Environment Node
 ---

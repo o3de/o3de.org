@@ -1,5 +1,5 @@
 ---
-description: ' Use the PhysX Debug gem to debug physics visualization in your &ALYlong;
+description: ' Use the PhysX Debug gem to debug physics visualization in your Amazon Lumberyard
   level. '
 title: PhysX Debug
 ---

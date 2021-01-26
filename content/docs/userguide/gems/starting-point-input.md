@@ -1,6 +1,6 @@
 ---
 description: ' Use the Starting Point Input gem to manage game input such as keyboard
-  and controller in &ALYlong;. '
+  and controller in Amazon Lumberyard. '
 title: Starting Point Input Gem
 ---
 # Starting Point Input Gem {#gems-system-starting-point-input}

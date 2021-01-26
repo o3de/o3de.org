@@ -1,5 +1,5 @@
 ---
-description: ' Apply parallax occlusion mapping (POM) in &ALYlong;. '
+description: ' Apply parallax occlusion mapping (POM) in Amazon Lumberyard. '
 title: Applying Parallax Occlusion Mapping (POM)
 ---
 # Applying Parallax Occlusion Mapping \(POM\) {#mat-maps-parallax-pom}

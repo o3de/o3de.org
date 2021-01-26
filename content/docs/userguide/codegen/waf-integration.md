@@ -1,6 +1,6 @@
 ---
 description: ' Learn how AZ Code Generator is integrated with the Waf build system
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: 'AZ Code Generator Integration with Waf '
 ---
 # AZ Code Generator Integration with Waf {#az-code-gen-waf-integration}

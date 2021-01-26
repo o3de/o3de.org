@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; component serialization versioning system to validate
+description: ' Use the Amazon Lumberyard component serialization versioning system to validate
   and update the serialized data of your components. '
 title: Versioning your Component Serialization
 ---

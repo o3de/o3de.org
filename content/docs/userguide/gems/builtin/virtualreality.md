@@ -1,5 +1,5 @@
 ---
-description: ' Use the Oculus or OpenVR Virtual Reality gems in &ALY; to support Virtual
+description: ' Use the Oculus or OpenVR Virtual Reality gems in Lumberyard to support Virtual
   Reality head-mounted displays (HMDs). '
 title: Virtual Reality Gems
 ---

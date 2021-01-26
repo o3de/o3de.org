@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to access and manipulate materials
+description: ' Use the Amazon Lumberyard Script Canvas editor to access and manipulate materials
   on a specific entity. '
 title: Material Owner Nodes
 ---

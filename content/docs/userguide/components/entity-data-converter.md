@@ -1,7 +1,7 @@
 ---
-description: ' Use the &entity-converter; tool to convert entities from the legacy
-  entities (CryEntities) to the new &component-system; in &ALYlong;. '
-title: Converting Entities with the &entity-converter;
+description: ' Use the Legacy Converter tool to convert entities from the legacy
+  entities (CryEntities) to the new component entity system in Amazon Lumberyard. '
+title: Converting Entities with the Legacy Converter
 ---
 # Converting Entities with the Legacy Converter {#component-entity-data-converter}
 

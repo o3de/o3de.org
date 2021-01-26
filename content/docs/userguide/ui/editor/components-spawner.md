@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; UISpawner component to spawn a runtime dynamic slice
+description: ' Use the Amazon Lumberyard UISpawner component to spawn a runtime dynamic slice
   at an entity''s location with an optional offset. '
 title: UISpawner Component
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Collision attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Collision attribute in the Amazon Lumberyard Particle Editor to control
   the physical setup for the particles. '
 title: Collision Attribute
 ---

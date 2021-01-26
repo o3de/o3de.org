@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to work efficiently with &script-canvas; nodes in &ALYlong;. '
+description: ' Learn how to work efficiently with Script Canvas nodes in Amazon Lumberyard. '
 title: Working with Nodes
 ---
 # Working with Nodes {#script-canvas-working-with-nodes}

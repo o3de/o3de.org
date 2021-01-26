@@ -1,5 +1,5 @@
 ---
-description: ' Enable and disable components for entities in &ALYlong;. '
+description: ' Enable and disable components for entities in Amazon Lumberyard. '
 title: Disabling and Enabling Components on Entities
 ---
 # Disabling and Enabling Components on Entities {#enabling-disabling-components}

@@ -1,5 +1,5 @@
 ---
-description: ' Lean to use the &ALYlong; PhysX Hinge Joint component. '
+description: ' Lean to use the Amazon Lumberyard PhysX Hinge Joint component. '
 title: PhysX Hinge Joint component
 ---
 # PhysX Hinge Joint component {#component-physx-hinge-joint}

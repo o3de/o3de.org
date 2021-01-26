@@ -1,6 +1,6 @@
 ---
 description: ' Create waterfalls where rivers change their course or elevation to
-  enhance the realism of cliffs in your &ALY; level. '
+  enhance the realism of cliffs in your Lumberyard level. '
 title: Adding Waterfalls
 ---
 # Adding Waterfalls {#terrain-water-waterfalls}

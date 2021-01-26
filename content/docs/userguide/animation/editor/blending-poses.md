@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to blend poses using blend nodes in the &ALYlong; &animation-editor;
+description: ' Learn how to blend poses using blend nodes in the Amazon Lumberyard Animation Editor
   . '
 title: Blending Poses with Blend Nodes
 ---

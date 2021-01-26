@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Radial Blur node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Radial Blur node in the Amazon Lumberyard Script Canvas editor
   to disable radial blur. '
 title: Disable Radial Blur
 ---

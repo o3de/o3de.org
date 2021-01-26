@@ -1,7 +1,7 @@
 ---
-description: ' Find solutions to common &AGS; integration errors in your &ALYlong;
+description: ' Find solutions to common AGS integration errors in your Amazon Lumberyard
   game projects. '
-title: Troubleshooting &AGSlong; integration
+title: Troubleshooting Amazon Games Services integration
 ---
 # Troubleshooting Amazon GameLift integration {#network-gamelift-troubleshooting}
 

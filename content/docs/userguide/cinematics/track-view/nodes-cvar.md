@@ -1,6 +1,6 @@
 ---
 description: ' Use the console variable node to use and animate console variables
-  in a track view sequence of a &ALY; game. '
+  in a track view sequence of a Lumberyard game. '
 title: Console Variable Node
 ---
 # Console Variable Node {#cinematics-track-view-nodes-cvar}

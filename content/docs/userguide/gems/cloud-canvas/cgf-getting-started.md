@@ -1,6 +1,6 @@
 ---
 description: ' Learn about cloud gems, the Cloud Gem Framework, and how to create
-  your own cloud gem to implement cloud-connected game functionality in &ALYlong;. '
+  your own cloud gem to implement cloud-connected game functionality in Amazon Lumberyard. '
 title: Getting Started with the Cloud Gem Framework
 ---
 # Getting Started with the Cloud Gem Framework {#cloud-canvas-cgf-getting-started}

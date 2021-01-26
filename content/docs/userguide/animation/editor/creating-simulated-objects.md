@@ -1,5 +1,5 @@
 ---
-description: ' Create simulated objects that move with your character (actor) in &ALYlong;. '
+description: ' Create simulated objects that move with your character (actor) in Amazon Lumberyard. '
 title: Creating Simulated Objects
 ---
 # Creating Simulated Objects {#animation-editor-creating-simulated-objects}

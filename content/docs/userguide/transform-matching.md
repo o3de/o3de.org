@@ -1,5 +1,5 @@
 ---
-description: ' Match the transform properties for entities in &ALYlong;. '
+description: ' Match the transform properties for entities in Amazon Lumberyard. '
 title: Matching the Transform
 ---
 # Matching the Transform {#transform-matching}

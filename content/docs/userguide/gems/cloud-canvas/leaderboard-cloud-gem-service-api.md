@@ -1,6 +1,6 @@
 ---
 description: ' Use Leaderboard Cloud Gem service API calls to post, get, and delete
-  leaderboard scores in &ALYlong;. '
+  leaderboard scores in Amazon Lumberyard. '
 title: Leaderboard Cloud Gem Service API
 ---
 # Leaderboard Cloud Gem Service API {#cloud-canvas-cloud-gem-leaderboard-cloud-gem-service-api}

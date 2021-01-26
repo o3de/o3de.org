@@ -1,5 +1,5 @@
 ---
-description: ' Use the Common.Cloud shader for creating common clouds in &ALYlong;. '
+description: ' Use the Common.Cloud shader for creating common clouds in Amazon Lumberyard. '
 title: Common.Cloud Shader
 ---
 # Common\.Cloud Shader {#shader-ref-common-cloud}

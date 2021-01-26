@@ -1,6 +1,6 @@
 ---
-description: ' Use the top toolbar in &ly-editor; to access editor tools and features
-  in &ALYlong;. '
+description: ' Use the top toolbar in Lumberyard Editor to access editor tools and features
+  in Amazon Lumberyard. '
 title: Using the Top Toolbar
 ---
 # Using the Top Toolbar {#lumberyard-editor-toolbars}

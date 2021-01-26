@@ -1,5 +1,5 @@
 ---
-description: ' Create NVIDIA Blast assets in Houdini for &ALYlong;. '
+description: ' Create NVIDIA Blast assets in Houdini for Amazon Lumberyard. '
 title: Create assets for NVIDIA Blast
 ---
 # Create assets for NVIDIA Blast {#nvidia-blast-create-blast-asset}

@@ -1,7 +1,7 @@
 ---
-description: ' Use &ALY; &particle-editor; keyboard shortcuts (hot keys or hotkeys).
+description: ' Use Lumberyard Particle Editor keyboard shortcuts (hot keys or hotkeys).
   You can also edit the keyboard shortcuts. '
-title: Using &particle-editor; Keyboard Shortcuts
+title: Using Particle Editor Keyboard Shortcuts
 ---
 # Using Particle Editor Keyboard Shortcuts {#particle-editor-shortcut-keys}
 

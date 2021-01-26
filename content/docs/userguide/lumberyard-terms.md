@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about terms and key concepts for &ALYlong;. '
-title: Key &ALY; Terminology
+description: ' Learn more about terms and key concepts for Amazon Lumberyard. '
+title: Key Lumberyard Terminology
 ---
 # Key Lumberyard Terminology {#lumberyard-terms}
 

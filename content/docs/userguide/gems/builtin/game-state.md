@@ -1,5 +1,5 @@
 ---
-description: ' Use the GameState gem to manage the states in your &ALYlong; game. '
+description: ' Use the GameState gem to manage the states in your Amazon Lumberyard game. '
 title: GameState Gem
 ---
 # GameState Gem {#gems-system-gem-game-state}

@@ -1,5 +1,5 @@
 ---
-description: ' Use Microsoft Registered I/O (RIO) socket interface in &ALYlong; networking. '
+description: ' Use Microsoft Registered I/O (RIO) socket interface in Amazon Lumberyard networking. '
 title: Using Windows Registered I/O with GridMate
 ---
 # Using Windows Registered I/O with GridMate {#network-carrier-rio}

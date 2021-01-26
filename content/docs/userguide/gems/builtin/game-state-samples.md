@@ -1,6 +1,6 @@
 ---
 description: ' Use the game states in the GameState Samples gem to control the flow
-  of your game in &ALYlong;. '
+  of your game in Amazon Lumberyard. '
 title: GameState Samples Gem
 ---
 # GameState Samples Gem {#gems-system-gem-game-state-samples}

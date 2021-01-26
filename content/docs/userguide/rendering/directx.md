@@ -1,5 +1,5 @@
 ---
-description: ' Develop DirectX 12 supported applications in &ALYlong;. '
+description: ' Develop DirectX 12 supported applications in Amazon Lumberyard. '
 title: Building DirectX 12 Supported Applications
 ---
 # Building DirectX 12 Supported Applications {#graphics-rendering-directx}

@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic partial destruction simulations in &ALYlong; with
+description: ' Create realistic partial destruction simulations in Amazon Lumberyard with
   NVIDIA Blast. '
 title: Partial destruction with NVIDIA Blast
 ---

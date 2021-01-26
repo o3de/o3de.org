@@ -1,5 +1,5 @@
 ---
-description: Use the opacity settings in &ALYlong;'s &material-editor; to switch between
+description: Use the opacity settings in Amazon Lumberyard's Material Editor to switch between
   alpha blend and alpha test modes. You can also set the Additive parameter.
 title: Setting Material Opacity
 ---

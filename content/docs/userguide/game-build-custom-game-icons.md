@@ -1,5 +1,5 @@
 ---
-description: ' Create a custom game icon in &ALYlong; for the title bar window of
+description: ' Create a custom game icon in Amazon Lumberyard for the title bar window of
   your game. '
 title: Adding Custom Game Icons
 ---

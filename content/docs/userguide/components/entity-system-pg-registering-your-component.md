@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to register a component during application startup in &ALYlong;. '
+description: ' Learn how to register a component during application startup in Amazon Lumberyard. '
 title: Registering Your Component
 ---
 # Registering Your Component {#component-entity-system-pg-registering-your-component}

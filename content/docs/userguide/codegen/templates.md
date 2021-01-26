@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Jinja2 templates that AZ Code Generator uses to generate
-  code in &ALYlong;. '
+  code in Amazon Lumberyard. '
 title: Code Generation Templates
 ---
 # Code Generation Templates {#az-code-gen-templates}

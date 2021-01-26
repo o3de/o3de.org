@@ -1,5 +1,5 @@
 ---
-description: ' Export motions from .fbx files with FBX Settings to &ALYlong;. '
+description: ' Export motions from .fbx files with FBX Settings to Amazon Lumberyard. '
 title: FBX Settings motion export
 ---
 # FBX Settings motion export {#fbx-motion-export}

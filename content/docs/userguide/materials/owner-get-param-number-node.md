@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Param Number node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Param Number node in the Amazon Lumberyard Script Canvas editor
   to get a material''s numerical parameter value for the specified entity. '
 title: Get Param Number
 ---

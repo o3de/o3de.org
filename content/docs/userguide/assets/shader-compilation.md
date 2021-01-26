@@ -1,5 +1,5 @@
 ---
-description: ' Precompile shaders for release builds of &ALYlong; projects into .pak
+description: ' Precompile shaders for release builds of Amazon Lumberyard projects into .pak
   files. '
 title: Compiling Shaders for Release Builds
 ---

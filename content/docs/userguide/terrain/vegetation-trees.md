@@ -1,5 +1,5 @@
 ---
-description: ' Use the right texture map with the type of vegetation you add to &ALY;
+description: ' Use the right texture map with the type of vegetation you add to Lumberyard
   for best results. '
 title: Vegetation Texture Mapping
 ---

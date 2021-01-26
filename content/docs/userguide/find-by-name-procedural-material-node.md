@@ -1,5 +1,5 @@
 ---
-description: ' Use the Find by Name node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Find by Name node in the Amazon Lumberyard Script Canvas editor to
   return the substance material file. '
 title: Find by Name
 ---

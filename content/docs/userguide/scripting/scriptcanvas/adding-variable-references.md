@@ -1,7 +1,7 @@
 ---
-description: ' Create variable references on the data pins of &ALYlong; &script-canvas;
+description: ' Create variable references on the data pins of Amazon Lumberyard Script Canvas
   nodes as a shortcut to getting or setting a variable''s value. '
-title: Adding Variable References in &script-canvas; Nodes
+title: Adding Variable References in Script Canvas Nodes
 ---
 # Adding Variable References in Script Canvas Nodes {#script-canvas-adding-variable-references}
 

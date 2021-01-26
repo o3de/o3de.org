@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Volumetric Scattering node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Volumetric Scattering node in the Amazon Lumberyard Script Canvas
   editor to add volumetric effects. '
 title: Enable Volumetric Scattering
 ---

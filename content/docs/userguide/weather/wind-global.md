@@ -1,6 +1,6 @@
 ---
 description: ' Set up global wind to create wind and breezes that affect everything
-  in your &ALY; level. '
+  in your Lumberyard level. '
 title: Adding Global Wind
 ---
 # Adding Global Wind {#weather-wind-global}

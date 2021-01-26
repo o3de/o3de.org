@@ -1,6 +1,6 @@
 ---
 description: ' See the best practices when you create and import your skinned mesh
-  files for the &animation-editor; in &ALYlong;. '
+  files for the Animation Editor in Amazon Lumberyard. '
 title: Best Practices for Working with Skinned Meshes for Animation
 ---
 # Best Practices for Working with Skinned Meshes for Animation {#best-practices-for-working-with-meshes-for-animations}

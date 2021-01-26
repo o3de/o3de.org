@@ -1,5 +1,5 @@
 ---
-description: ' Create your custom &script-canvas; node libraries in &ALYlong;. '
+description: ' Create your custom Script Canvas node libraries in Amazon Lumberyard. '
 title: Node Libraries
 ---
 # Node Libraries {#script-canvas-custom-nodes-node-libraries}

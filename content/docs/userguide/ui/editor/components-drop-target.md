@@ -1,6 +1,6 @@
 ---
 description: ' Use the DropTarget component with the Draggable component to implement
-  drag-and-drop behavior in the &ALYlong; &ui-canvas-editor;. '
+  drag-and-drop behavior in the Amazon Lumberyard UI Editor. '
 title: DropTarget
 ---
 # DropTarget {#ui-editor-components-drop-target}

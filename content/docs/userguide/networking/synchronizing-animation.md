@@ -1,6 +1,6 @@
 ---
 description: ' Use components to synchronize the state of animations across a network
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Synchronizing Animations Across a Network
 ---
 # Synchronizing Animations Across a Network {#network-synchronizing-animation}

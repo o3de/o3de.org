@@ -1,5 +1,5 @@
 ---
-description: ' Search for UI elements or their components in &ALYlong;''s &ui-canvas-editor;
+description: ' Search for UI elements or their components in Amazon Lumberyard''s UI Editor
   . '
 title: Searching for UI Elements
 ---

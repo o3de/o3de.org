@@ -1,5 +1,5 @@
 ---
-description: ' Learn to animate characters in &ALYlong; with &emotionfx; &animation-editor;
+description: ' Learn to animate characters in Amazon Lumberyard with EMotionFX Animation Editor
   . '
 title: Create and animate characters
 ---

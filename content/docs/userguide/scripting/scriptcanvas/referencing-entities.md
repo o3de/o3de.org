@@ -1,5 +1,5 @@
 ---
-description: ' Reference entities as targets from &script-canvas; nodes. '
+description: ' Reference entities as targets from Script Canvas nodes. '
 title: Setting Entity Targets
 ---
 # Setting Entity Targets {#script-canvas-referencing-entities}

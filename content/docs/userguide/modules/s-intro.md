@@ -1,5 +1,5 @@
 ---
-description: ' Introduces &ALY; AZ modules and compares them with legacy modules. '
+description: ' Introduces Lumberyard AZ modules and compares them with legacy modules. '
 title: Using AZ Modules to Initialize Gems
 ---
 # Using AZ Modules to Initialize Gems {#az-modules-intro}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn which entity parameters that &ALYlong; supports in the Scripted
+description: ' Learn which entity parameters that Amazon Lumberyard supports in the Scripted
   Entity Tweener system. '
 title: Tweener Supported Components
 ---

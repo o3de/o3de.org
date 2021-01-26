@@ -1,7 +1,7 @@
 ---
-description: ' Use &asset-processor; in &ALYlong; to detect and process new or modified
+description: ' Use Asset Processor in Amazon Lumberyard to detect and process new or modified
   asset files. '
-title: Using &asset-processor;
+title: Using Asset Processor
 ---
 # Using Asset Processor {#asset-pipeline-processor}
 

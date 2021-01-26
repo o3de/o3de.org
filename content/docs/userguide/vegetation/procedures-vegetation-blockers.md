@@ -1,5 +1,5 @@
 ---
-description: ' Create areas where you don''t want vegetation to appear in &ALYlong;. '
+description: ' Create areas where you don''t want vegetation to appear in Amazon Lumberyard. '
 title: Blocking Vegetation in Select Areas
 ---
 # Blocking Vegetation in Select Areas {#dynamic-vegetation-procedures-vegetation-blockers}

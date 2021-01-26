@@ -1,5 +1,5 @@
 ---
-description: ' Set navigation exclusion areas for an AI agent in &ALYlong;. '
+description: ' Set navigation exclusion areas for an AI agent in Amazon Lumberyard. '
 title: Setting Navigation Exclusion Areas
 ---
 # Setting Navigation Exclusion Areas {#ai-nav-areas-exclusion}

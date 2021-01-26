@@ -1,7 +1,7 @@
 ---
-description: ' Use the CloudGemAWSScriptBehaviors gem in &ALYlong; to access &AWS;
+description: ' Use the CloudGemAWSScriptBehaviors gem in Amazon Lumberyard to access AWS
   services from your scripts. '
-title: '&AWS; Behavior Context Reflections'
+title: 'AWS Behavior Context Reflections'
 ---
 # AWS Behavior Context Reflections {#cloud-canvas-cgf-aws-behavior-context-reflections}
 

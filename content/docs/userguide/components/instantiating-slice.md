@@ -1,5 +1,5 @@
 ---
-description: ' Instantiate a slice in &ly-editor;. '
+description: ' Instantiate a slice in Lumberyard Editor. '
 title: Instantiating a Slice
 ---
 # Instantiating a Slice {#component-instantiating-slice}

@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables and commands to debug UI canvases in &ALYlong;. '
+description: ' Use console variables and commands to debug UI canvases in Amazon Lumberyard. '
 title: Debugging UI Canvases
 ---
 # Debugging UI Canvases {#ui-editor-debugging-ui-canvases}

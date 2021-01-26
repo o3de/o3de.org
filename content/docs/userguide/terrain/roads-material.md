@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &material-editor; to apply material settings to a road. '
+description: ' Use the Lumberyard Material Editor to apply material settings to a road. '
 title: Applying a Road Material
 ---
 # Applying a Road Material {#terrain-roads-material}

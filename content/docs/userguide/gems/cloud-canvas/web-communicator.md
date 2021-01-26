@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Web Communicator cloud gem to notify your game''s
+description: ' Use the Amazon Lumberyard Web Communicator cloud gem to notify your game''s
   clients, editors, and servers about events from other cloud gems. '
 title: Web Communicator Cloud Gem
 ---

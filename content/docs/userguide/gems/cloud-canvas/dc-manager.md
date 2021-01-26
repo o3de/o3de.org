@@ -1,6 +1,6 @@
 ---
 description: ' Use Dynamic Content Manager to create manifests and packages, add files
-  to the packages, and upload the manifest and packages to the &AWS; Cloud. '
+  to the packages, and upload the manifest and packages to the AWS Cloud. '
 title: Using Dynamic Content Manager
 ---
 # Using Dynamic Content Manager {#cloud-canvas-cloud-gem-dc-manager}

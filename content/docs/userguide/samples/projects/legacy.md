@@ -1,5 +1,5 @@
 ---
-description: ' Use the Legacy Game Sample project to learn about &ALYlong; features
+description: ' Use the Legacy Game Sample project to learn about Amazon Lumberyard features
   such as CryAction and CryAISystem. '
 title: Legacy Sample Project (GameSDK)
 ---

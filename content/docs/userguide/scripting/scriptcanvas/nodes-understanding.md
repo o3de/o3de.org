@@ -1,7 +1,7 @@
 ---
-description: ' Learn about the nodes in &script-canvas;, &ALYlong;''s visual scripting
+description: ' Learn about the nodes in Script Canvas, Amazon Lumberyard''s visual scripting
   system. '
-title: Understanding &script-canvas; Nodes
+title: Understanding Script Canvas Nodes
 ---
 # Understanding Script Canvas Nodes {#script-canvas-nodes-understanding}
 

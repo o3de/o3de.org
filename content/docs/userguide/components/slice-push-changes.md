@@ -1,5 +1,5 @@
 ---
-description: ' Modify a slice and then save changes in &ly-editor;. '
+description: ' Modify a slice and then save changes in Lumberyard Editor. '
 title: Modifying a Slice and Saving Changes
 ---
 # Modifying a Slice and Saving Changes {#component-slice-push-changes}

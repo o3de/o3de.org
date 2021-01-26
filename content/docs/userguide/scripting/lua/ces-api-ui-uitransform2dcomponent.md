@@ -1,6 +1,6 @@
 ---
 description: ' Use the UiTransformBus to control positioning, scaling, rotation, anchor,
-  and offset settings for UI elements in &ALYlong;. '
+  and offset settings for UI elements in Amazon Lumberyard. '
 title: UITransform2dComponent
 ---
 # UITransform2dComponent {#lua-scripting-ces-api-ui-uitransform2dcomponent}

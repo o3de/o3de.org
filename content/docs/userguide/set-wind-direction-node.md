@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Wind Direction node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Wind Direction node in the Amazon Lumberyard Script Canvas editor
   to set the wind direction. '
 title: Set Wind Direction
 ---

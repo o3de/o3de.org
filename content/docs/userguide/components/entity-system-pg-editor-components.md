@@ -1,5 +1,5 @@
 ---
-description: ' Learn about editor components in &ALYlong;. '
+description: ' Learn about editor components in Amazon Lumberyard. '
 title: Editor Components
 ---
 # Editor Components {#component-entity-system-pg-editor-components}

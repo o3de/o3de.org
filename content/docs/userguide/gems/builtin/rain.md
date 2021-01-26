@@ -1,5 +1,5 @@
 ---
-description: ' Use the Rain Gem to create realistic rain effects in your &ALYlong;
+description: ' Use the Rain Gem to create realistic rain effects in your Amazon Lumberyard
   level. '
 title: Rain Gem
 ---

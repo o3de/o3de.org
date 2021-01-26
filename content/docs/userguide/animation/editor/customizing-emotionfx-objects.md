@@ -1,6 +1,6 @@
 ---
-description: ' Customize &emotionfx; objects in the &ALY; &animation-editor;. '
-title: Customizing &emotionfx; Objects
+description: ' Customize EMotionFX objects in the Lumberyard Animation Editor. '
+title: Customizing EMotionFX Objects
 ---
 # Customizing EMotion FX Objects {#animation-editor-customizing-emotionfx-objects}
 

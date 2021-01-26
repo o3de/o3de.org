@@ -1,5 +1,5 @@
 ---
-description: ' Use the Infinite Ocean component in &ALYlong; to change how you want
+description: ' Use the Infinite Ocean component in Amazon Lumberyard to change how you want
   the ocean to appear. '
 title: Infinite Ocean Component Properties
 ---

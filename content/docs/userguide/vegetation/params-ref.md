@@ -1,6 +1,6 @@
 ---
 description: ' Customize vegetation behavior with the Vegetation panel under Terrain
-  in the &ALY; &rollup-bar;. '
+  in the Lumberyard Rollup Bar. '
 title: 'Vegetation Parameters '
 ---
 # Vegetation Parameters {#vegetation-params-ref}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how marshalers read and write data to and from buffers in a &ALYlong;
+description: ' Learn how marshalers read and write data to and from buffers in a Amazon Lumberyard
   GridMate network session. '
 title: Marshalling
 ---

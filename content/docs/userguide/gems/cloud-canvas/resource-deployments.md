@@ -1,5 +1,5 @@
 ---
-description: ' Use &CFN; stacks to deploy resources and use &ALY; tools to create
+description: ' Use AWS Cloud Formation stacks to deploy resources and use Lumberyard tools to create
   and manage the stacks. '
 title: Resource Deployments
 ---

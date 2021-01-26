@@ -1,5 +1,5 @@
 ---
-description: ' Compile your &ALYlong; game project with IncrediBuild, QT, or Microsoft
+description: ' Compile your Amazon Lumberyard game project with IncrediBuild, QT, or Microsoft
   Visual Studio. '
 title: Waf Extensions
 ---

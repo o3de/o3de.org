@@ -1,5 +1,5 @@
 ---
-description: ' Serialize objects from the &ALY; engine to JSON for processing by other
+description: ' Serialize objects from the Lumberyard engine to JSON for processing by other
   tools or to load between runtime sessions. '
 title: Object serialization to JSON format
 ---

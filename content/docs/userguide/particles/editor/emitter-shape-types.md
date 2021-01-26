@@ -1,5 +1,5 @@
 ---
-description: ' Use the emitter shape types in &ALYlong;''s &particle-editor; to achieve
+description: ' Use the emitter shape types in Amazon Lumberyard''s Particle Editor to achieve
   a variety of effects. '
 title: Working with Emitter Shape Types
 ---

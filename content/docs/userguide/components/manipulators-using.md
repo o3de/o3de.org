@@ -1,6 +1,6 @@
 ---
 description: ' Use manipulators to adjust various component properties in the viewport
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Using Manipulators
 ---
 # Using Manipulators {#component-manipulators-using}

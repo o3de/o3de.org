@@ -1,5 +1,5 @@
 ---
-description: ' Copy, rotate, or move sections of your &ALY; terrain, including vegetation,
+description: ' Copy, rotate, or move sections of your Lumberyard terrain, including vegetation,
   water, and other objects. '
 title: Copying and Moving Terrain Areas
 ---

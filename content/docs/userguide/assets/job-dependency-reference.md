@@ -1,6 +1,6 @@
 ---
-description: ' Use job dependencies using the Asset Builder SDK in &ALYlong;. '
-title: Job Dependency for &asset-pipeline;
+description: ' Use job dependencies using the Asset Builder SDK in Amazon Lumberyard. '
+title: Job Dependency for Asset Pipeline
 ---
 # Job Dependency for Asset Pipeline {#asset-pipeline-job-dependency-reference}
 

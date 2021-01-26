@@ -1,5 +1,5 @@
 ---
-description: ' Use vertex containers in &ALYlong; to access, update, and remove vertices. '
+description: ' Use vertex containers in Amazon Lumberyard to access, update, and remove vertices. '
 title: Vertex Containers
 ---
 # Vertex Containers {#component-vertex-container}

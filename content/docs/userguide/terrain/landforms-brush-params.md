@@ -1,6 +1,6 @@
 ---
 description: ' Use common brush settings to adjust the rise/lower, smooth, and flatten
-  brushes in &ALY;. '
+  brushes in Lumberyard. '
 title: Terrain Brush Parameters
 ---
 # Terrain Brush Parameters {#terrain-landforms-brush-params}

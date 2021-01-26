@@ -1,5 +1,5 @@
 ---
-description: ' See gem.json file and wscript examples in &ALYlong;. '
+description: ' See gem.json file and wscript examples in Amazon Lumberyard. '
 title: Gem Configuration Examples
 ---
 # Gem Configuration Examples {#gem-configuration-examples}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the UserLoginDefault Gem in your &ALY; game project to implement
+description: ' Use the UserLoginDefault Gem in your Lumberyard game project to implement
   a default user login. '
 title: User Login Default Gem
 ---

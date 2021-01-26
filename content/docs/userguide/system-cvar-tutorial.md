@@ -1,6 +1,6 @@
 ---
 description: ' Use the console variable (CVAR) tutorial to modify and create console
-  variables in &ALYlong;. '
+  variables in Amazon Lumberyard. '
 title: Console Variable Tutorial
 ---
 # Console Variable Tutorial {#system-cvar-tutorial}

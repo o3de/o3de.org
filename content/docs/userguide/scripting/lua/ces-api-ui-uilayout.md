@@ -1,5 +1,5 @@
 ---
-description: ' Use the UiLayout component to provide UI layout features in &ALYlong;. '
+description: ' Use the UiLayout component to provide UI layout features in Amazon Lumberyard. '
 title: UiLayout
 ---
 # UiLayout {#lua-scripting-ces-api-ui-uilayout}

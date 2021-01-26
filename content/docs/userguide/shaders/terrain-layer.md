@@ -1,6 +1,6 @@
 ---
 description: ' Paint and blend terrain layers in a level with the Terrain.Layer shader
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Terrain.Layer Shader
 ---
 # Terrain\.Layer Shader {#shader-ref-terrain-layer}

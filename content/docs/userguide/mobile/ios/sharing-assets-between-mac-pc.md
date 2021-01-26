@@ -1,5 +1,5 @@
 ---
-description: ' Share the assets for your &ALYlong; iOS game between your macOS and
+description: ' Share the assets for your Amazon Lumberyard iOS game between your macOS and
   Windows computers. '
 title: Sharing Assets Between Windows and macOS
 ---

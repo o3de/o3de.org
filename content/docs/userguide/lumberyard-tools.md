@@ -1,6 +1,6 @@
 ---
-description: ' This section describes the &ALY;''s editors and tools. '
-title: '&ALY; Editors and Tools'
+description: ' This section describes the Lumberyard''s editors and tools. '
+title: 'Lumberyard Editors and Tools'
 ---
 # Lumberyard Editors and Tools {#lumberyard-tools}
 

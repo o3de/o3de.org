@@ -1,5 +1,5 @@
 ---
-description: ' Move a camera in the &trackview-editor; in &ALYlong;. '
+description: ' Move a camera in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Positioning a Camera
 ---
 # Positioning a Camera {#cinematics-cameras-positioning-blending}

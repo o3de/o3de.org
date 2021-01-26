@@ -1,6 +1,6 @@
 ---
 description: ' Learn how GridMate''s task manager controls the updating and marshaling
-  of replicas in &ALYlong;. '
+  of replicas in Amazon Lumberyard. '
 title: Task Manager
 ---
 # Task Manager {#network-replicas-manager-task-manager}

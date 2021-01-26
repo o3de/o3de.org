@@ -1,5 +1,5 @@
 ---
-description: ' Specify targets where your lightning will arc in your &ALY; level. '
+description: ' Specify targets where your lightning will arc in your Lumberyard level. '
 title: Placing Lightning Arc
 ---
 # Placing Lightning Arc {#gems-system-gem-lightning-arc-placing}

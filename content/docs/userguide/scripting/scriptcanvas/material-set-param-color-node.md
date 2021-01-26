@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Param Color node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Param Color node in the Amazon Lumberyard Script Canvas editor
   to set a material parameter with a color value. '
 title: Set Param Color
 ---

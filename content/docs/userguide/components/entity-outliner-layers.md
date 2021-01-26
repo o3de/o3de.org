@@ -1,5 +1,5 @@
 ---
-description: ' Manage your entities with the &entity-outliner; in &ALYlong;. '
+description: ' Manage your entities with the Entity Outliner in Amazon Lumberyard. '
 title: Working with Layers
 ---
 # Working with Layers {#component-entity-outliner-layers}

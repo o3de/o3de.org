@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component with the EBus interface
+description: ' Use the Amazon Lumberyard Infinite Ocean component with the EBus interface
   to set the parameters with Lua. '
 title: Infinite Ocean Component Request Bus Interface
 ---

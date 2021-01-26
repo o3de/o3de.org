@@ -1,7 +1,7 @@
 ---
-description: ' Generate a presigned URL for an &S3; object with &script-canvas; in
-  &ALYlong;. '
-title: Generating an &S3; Presigned URL With Script Canvas
+description: ' Generate a presigned URL for an S3 object with Script Canvas in
+  Amazon Lumberyard. '
+title: Generating an S3 Presigned URL With Script Canvas
 ---
 # Generating an Amazon S3 Presigned URL With Script Canvas {#cloud-canvas-cloud-gem-aws-s3-presign-sc}
 

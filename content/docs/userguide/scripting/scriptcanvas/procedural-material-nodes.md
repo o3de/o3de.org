@@ -1,5 +1,5 @@
 ---
-description: ' Use procedural material nodes in the &ALYlong; &script-canvas; editor
+description: ' Use procedural material nodes in the Amazon Lumberyard Script Canvas editor
   for scripting. '
 title: Procedural Material Nodes
 ---

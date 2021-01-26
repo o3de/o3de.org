@@ -1,5 +1,5 @@
 ---
-description: ' See the following controller nodes in &ALYlong;. '
+description: ' See the following controller nodes in Amazon Lumberyard. '
 title: Controller Nodes
 ---
 # Controller Nodes {#animation-editor-controller-nodes}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn about ways to help avoid losing data when serializing component
-  data in &ALYlong;. '
+  data in Amazon Lumberyard. '
 title: Avoiding Data Loss when Serializing Component Data
 ---
 # Avoiding Data Loss when Serializing Component Data {#best-practices-for-component-data-serialization}

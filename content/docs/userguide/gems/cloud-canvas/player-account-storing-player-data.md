@@ -1,5 +1,5 @@
 ---
-description: ' Use the Player Account Cloud Gem in &ALYlong; and &COG; to store player
+description: ' Use the Player Account Cloud Gem in Amazon Lumberyard and Amazon Cognito to store player
   account data. '
 title: Storing Data Associated with a Player Account
 ---

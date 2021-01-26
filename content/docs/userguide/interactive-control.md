@@ -1,6 +1,6 @@
 ---
 description: ' Use interactive element controls to control an element while it has
-  focus in &ALY;. '
+  focus in Lumberyard. '
 title: Interactive Element Controls
 ---
 # Interactive Element Controls {#interactive-control}

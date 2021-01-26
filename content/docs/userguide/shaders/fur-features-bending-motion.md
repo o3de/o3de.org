@@ -1,5 +1,5 @@
 ---
-description: ' Use motion bending for fur materials in &ALYlong;. '
+description: ' Use motion bending for fur materials in Amazon Lumberyard. '
 title: Motion Bending
 ---
 # Motion Bending {#shader-ref-fur-features-bending-motion}

@@ -1,6 +1,6 @@
 ---
-description: ' Use the &cloud; Speech Recognition Cloud Gem API to implement speech
-  recognition in your &ALY; game. '
+description: ' Use the Cloud Canvas Speech Recognition Cloud Gem API to implement speech
+  recognition in your Lumberyard game. '
 title: Speech Recognition Cloud Gem API
 ---
 # Speech Recognition Cloud Gem API {#cloud-canvas-cloud-gem-speech-recognition-api}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Wind Direction node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Wind Direction node in the Amazon Lumberyard Script Canvas editor
   to return the global wind direction. '
 title: Get Wind Direction
 ---

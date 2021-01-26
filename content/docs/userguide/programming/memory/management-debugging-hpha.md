@@ -1,5 +1,5 @@
 ---
-description: ' Debug HPHA allocator memory issues in &ALYlong;. '
+description: ' Debug HPHA allocator memory issues in Amazon Lumberyard. '
 title: HPHA Memory Debugging
 ---
 # HPHA Memory Debugging {#memory-management-debugging-hpha}

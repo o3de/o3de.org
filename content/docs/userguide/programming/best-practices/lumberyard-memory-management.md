@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for memory management in &ALYlong;. '
+description: ' Learn best practices for memory management in Amazon Lumberyard. '
 title: Memory Management
 ---
 # Memory Management {#cpp-best-practices-lumberyard-memory-management}

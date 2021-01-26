@@ -1,6 +1,6 @@
 ---
 description: ' Create random distribution by using weight-based random selection in
-  &ALYlong; dynamic vegetation. '
+  Amazon Lumberyard dynamic vegetation. '
 title: Creating Weight-Based Random Selection
 ---
 # Creating Weight\-Based Random Selection {#vegetation-random-distribution-selection}

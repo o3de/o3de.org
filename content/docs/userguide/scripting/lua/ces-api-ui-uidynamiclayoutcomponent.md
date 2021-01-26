@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIDynamicLayoutComponent to implement clone a prototype UI
-  element in &ALYlong;. '
+  element in Amazon Lumberyard. '
 title: UIDynamicLayoutComponent
 ---
 # UIDynamicLayoutComponent {#lua-scripting-ces-api-ui-uidynamiclayoutcomponent}

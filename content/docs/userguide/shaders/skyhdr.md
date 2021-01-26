@@ -1,5 +1,5 @@
 ---
-description: ' Use the SkyHDR shader to render dynamic sky effects in &ALYlong;. '
+description: ' Use the SkyHDR shader to render dynamic sky effects in Amazon Lumberyard. '
 title: SkyHDR Shader
 ---
 # SkyHDR Shader {#shader-ref-skyhdr}

@@ -1,5 +1,5 @@
 ---
-description: ' See the DistanceClouds shader for 2D clouds in &ALYlong;. '
+description: ' See the DistanceClouds shader for 2D clouds in Amazon Lumberyard. '
 title: DistanceClouds Shader
 ---
 # DistanceClouds Shader {#shader-ref-distanceclouds}

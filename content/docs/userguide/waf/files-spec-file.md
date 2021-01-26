@@ -1,6 +1,6 @@
 ---
 description: ' Use Waf spec files to specify which modules to include in your build
-  configuration in &ALYlong;. '
+  configuration in Amazon Lumberyard. '
 title: Waf Spec Files (*.json)
 ---
 # Waf Spec Files \(\*\.json\) {#waf-files-spec-file}

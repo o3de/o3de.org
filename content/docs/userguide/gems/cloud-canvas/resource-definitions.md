@@ -1,6 +1,6 @@
 ---
-description: ' Learn the resource definitions in &CFN; templates that determine which
-  &AWS; resources will be created for your game in &ALY;. '
+description: ' Learn the resource definitions in AWS Cloud Formation templates that determine which
+  AWS resources will be created for your game in Lumberyard. '
 title: Resource Definitions
 ---
 # Resource Definitions {#cloud-canvas-resource-definitions}

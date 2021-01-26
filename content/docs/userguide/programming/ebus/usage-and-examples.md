@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use &ALYlong;''s EBus from examples. '
+description: ' Learn how to use Amazon Lumberyard''s EBus from examples. '
 title: Usage and Examples
 ---
 # Usage and Examples {#ebus-usage-and-examples}

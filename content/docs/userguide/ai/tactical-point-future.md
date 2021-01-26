@@ -1,5 +1,5 @@
 ---
-description: ' See the following potential areas to develop TPS in &ALYlong;. '
+description: ' See the following potential areas to develop TPS in Amazon Lumberyard. '
 title: Future Plans and Possibilities
 ---
 # Future Plans and Possibilities {#ai-tactical-point-future}

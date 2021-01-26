@@ -1,6 +1,6 @@
 ---
-description: ' Use &lighting-tool; settings to create dawn and dusk effects for your
-  &ALYlong; environment. '
+description: ' Use Sun Trajectory Tool settings to create dawn and dusk effects for your
+  Amazon Lumberyard environment. '
 title: Setting Dawn and Dusk Effects
 ---
 # Setting Dawn and Dusk Effects {#sky-tod-params}

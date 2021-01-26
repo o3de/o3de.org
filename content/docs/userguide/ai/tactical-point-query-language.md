@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the TPS query language reference in &ALYlong;. '
+description: ' Learn more about the TPS query language reference in Amazon Lumberyard. '
 title: TPS Query Language Reference
 ---
 # TPS Query Language Reference {#ai-tactical-point-query-language}

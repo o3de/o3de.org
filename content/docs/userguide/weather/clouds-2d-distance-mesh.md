@@ -1,5 +1,5 @@
 ---
-description: ' Add two-dimensional distance clouds to your game levels in &ALYlong;. '
+description: ' Add two-dimensional distance clouds to your game levels in Amazon Lumberyard. '
 title: Placing Distance Clouds
 ---
 # Placing Distance Clouds {#weather-clouds-2d-distance-mesh}

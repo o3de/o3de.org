@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s &database-view; editor to create libraries of entities,
+description: ' Use Lumberyard''s Database View editor to create libraries of entities,
   prefabs, vegetation, particles, and game tokens. '
 title: Working with Database Libraries
 ---

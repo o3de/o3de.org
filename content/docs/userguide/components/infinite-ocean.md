@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component to add an ocean surface
+description: ' Use the Amazon Lumberyard Infinite Ocean component to add an ocean surface
   to your level. '
 title: Infinite Ocean
 ---

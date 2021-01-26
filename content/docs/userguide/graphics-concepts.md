@@ -1,5 +1,5 @@
 ---
-description: ' Learn the following primary concepts about working with &ALY;''s graphic
+description: ' Learn the following primary concepts about working with Lumberyard''s graphic
   tools. '
 title: Concepts
 ---

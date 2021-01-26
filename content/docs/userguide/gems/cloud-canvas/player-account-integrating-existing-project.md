@@ -1,5 +1,5 @@
 ---
-description: ' Integrate the Player Account Cloud Gem into an existing &ALYlong; project. '
+description: ' Integrate the Player Account Cloud Gem into an existing Amazon Lumberyard project. '
 title: Integrating the Player Account Cloud Gem into an Existing Project
 ---
 # Integrating the Player Account Cloud Gem into an Existing Project {#cloud-canvas-cloud-gem-player-account-integrating-existing-project}

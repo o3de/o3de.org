@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to initialize &cloud; Resource Manager . '
-title: Initializing &cloud; Resource Manager
+description: ' Learn how to initialize Cloud Canvas Resource Manager . '
+title: Initializing Cloud Canvas Resource Manager
 ---
 # Initializing Cloud Canvas Resource Manager {#cloud-canvas-ui-rm-initialize}
 

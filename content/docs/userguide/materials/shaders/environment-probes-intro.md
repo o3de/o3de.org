@@ -1,6 +1,6 @@
 ---
 description: ' Learn more about environment probes and cubemaps for material shaders
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Environment Probes and Cubemaps
 ---
 # Environment Probes and Cubemaps {#mat-shaders-environment-probes-intro}

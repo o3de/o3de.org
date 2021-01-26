@@ -1,6 +1,6 @@
 ---
 description: ' Process jobs in Python Asset Builder to create custom asset builders
-  for your &ALYlong; project. '
+  for your Amazon Lumberyard project. '
 title: Process job with Python Asset Builder
 ---
 # Process job with Python Asset Builder {#python-asset-builder-process-job}

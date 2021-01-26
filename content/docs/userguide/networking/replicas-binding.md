@@ -1,5 +1,5 @@
 ---
-description: ' Bind &ALYlong; components to the network by adding the NetBindingComponent. '
+description: ' Bind Amazon Lumberyard components to the network by adding the NetBindingComponent. '
 title: Creating a NetBindable Component
 ---
 # Creating a NetBindable Component {#network-replicas-binding}

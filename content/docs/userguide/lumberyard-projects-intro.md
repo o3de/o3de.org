@@ -1,7 +1,7 @@
 ---
 description: ' The following topics will guide you through creating and managing projects
-  in &ALY;. '
-title: Working with &ALY; projects
+  in Lumberyard. '
+title: Working with Lumberyard projects
 ---
 # Working with Lumberyard projects {#lumberyard-projects-intro}
 

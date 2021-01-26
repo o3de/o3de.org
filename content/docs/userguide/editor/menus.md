@@ -1,5 +1,5 @@
 ---
-description: ' This topic provides brief descriptions of the main menu bar in &ly-editor;. '
+description: ' This topic provides brief descriptions of the main menu bar in Lumberyard Editor. '
 title: Using the Menu Bar
 ---
 # Using the Menu Bar {#lumberyard-editor-menus}

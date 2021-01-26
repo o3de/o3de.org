@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create &ALY; components in C++. '
+description: ' Learn how to create Lumberyard components in C++. '
 title: Creating a Component
 ---
 # Creating a Component {#component-entity-system-create-component}

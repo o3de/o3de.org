@@ -1,6 +1,6 @@
 ---
 description: ' Use the Starter Game sample and its free character, game, and environment
-  assets to build your own gameplay space in &ALYlong;. '
+  assets to build your own gameplay space in Amazon Lumberyard. '
 title: Starter Game Sample
 ---
 # Starter Game Sample {#sample-level-starter-game}

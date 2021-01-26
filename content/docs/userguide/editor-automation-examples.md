@@ -1,6 +1,6 @@
 ---
 description: ' Some useful examples for the Python Editor Bindings gem, used to automate
-  actions in the &ly-editor;. '
+  actions in the Lumberyard Editor. '
 title: Python Editor Bindings gem examples
 ---
 # Python Editor Bindings gem examples {#editor-automation-examples}
@@ -526,7 +526,7 @@ if(pteObj.IsSuccess()):
 #            Appends an item in an non-associative container.
 #  - method: remove_container_item(str: path, object key) -> Outcome Boolean
 #            Removes a single item from a container.
-#  - method: update_container_item(str: path, object key, object value) -&gt; Outcome Boolean
+#  - method: update_container_item(str: path, object key, object value) -> Outcome Boolean
 #            Updates an existing the item's value in a container.
 #  - method: get_container_item(str: path, object: key) -> Outcome Object
 #            Retrieves an item value from a container.

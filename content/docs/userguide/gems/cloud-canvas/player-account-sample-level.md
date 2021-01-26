@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the Player Account Sample Level in &ALYlong;. '
+description: ' Learn about the Player Account Sample Level in Amazon Lumberyard. '
 title: The Player Account Sample Level
 ---
 # The Player Account Sample Level {#cloud-canvas-cloud-gem-player-account-sample-level}

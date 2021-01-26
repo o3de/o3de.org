@@ -1,5 +1,5 @@
 ---
-description: ' Use group selection and reference spaces in &ALYlong;. '
+description: ' Use group selection and reference spaces in Amazon Lumberyard. '
 title: Using Group Selections and Reference Spaces
 ---
 # Using Group Selections and Reference Spaces {#group-selections-reference-spaces}

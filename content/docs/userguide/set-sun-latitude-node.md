@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Sun Latitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Sun Latitude node in the Amazon Lumberyard Script Canvas editor
   to set the sun latitude. '
 title: Set Sun Latitude
 ---

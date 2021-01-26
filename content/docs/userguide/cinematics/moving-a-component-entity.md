@@ -1,6 +1,6 @@
 ---
-description: ' Move a component entity for a sequence in the &trackview-editor; in
-  &ALYlong;. '
+description: ' Move a component entity for a sequence in the <guilabel>Track View</guilabel> editor in
+  Amazon Lumberyard. '
 title: Moving a Component Entity in a Sequence
 ---
 # Moving a Component Entity in a Sequence {#cinematics-moving-a-component-entity}

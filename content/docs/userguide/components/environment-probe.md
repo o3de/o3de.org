@@ -1,6 +1,6 @@
 ---
 description: ' Use the Environment Probe component to achieve proper lighting for
-  materials in &ALYlong;. '
+  materials in Amazon Lumberyard. '
 title: Environment Probe
 ---
 # Environment Probe {#component-environment-probe}

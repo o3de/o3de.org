@@ -1,7 +1,7 @@
 ---
-description: ' Use the Open and &AWS; Console or Permissions and &cloud; menus in
-  &ly-editor; to work with &cloud;. '
-title: '&cloud; Tools in &ly-editor;'
+description: ' Use the Open and AWS Console or Permissions and Cloud Canvas menus in
+  Lumberyard Editor to work with Cloud Canvas. '
+title: 'Cloud Canvas Tools in Lumberyard Editor'
 ---
 # Cloud Canvas Tools in Lumberyard Editor {#cloud-canvas-ui-intro}
 

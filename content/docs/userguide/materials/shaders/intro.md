@@ -1,6 +1,6 @@
 ---
 description: ' Use shaders to specify how light interacts with objects for your game
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Shader Rendering System
 ---
 # Shader Rendering System {#mat-shaders-intro}

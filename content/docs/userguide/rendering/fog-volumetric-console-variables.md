@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables to control volumetric fog in &ALYlong;. '
+description: ' Use console variables to control volumetric fog in Amazon Lumberyard. '
 title: Console Variables for Volumetric Fog
 ---
 # Console Variables for Volumetric Fog {#rendering-graphics-fog-volumetric-console-variables}

@@ -1,5 +1,5 @@
 ---
-description: ' Add a game project to the &ALYlong; Waf build system. '
+description: ' Add a game project to the Amazon Lumberyard Waf build system. '
 title: Adding a Game Project
 ---
 # Adding a Game Project {#waf-using-game-project}

@@ -1,6 +1,6 @@
 ---
-description: ' Use a JSON file to customize &ly-launcher; for your project in &ALYlong;. '
-title: Customizing &ly-launcher;
+description: ' Use a JSON file to customize Lumberyard Setup Assistant for your project in Amazon Lumberyard. '
+title: Customizing Lumberyard Setup Assistant
 ---
 # Customizing Lumberyard Setup Assistant {#lumberyard-launcher-customizing}
 

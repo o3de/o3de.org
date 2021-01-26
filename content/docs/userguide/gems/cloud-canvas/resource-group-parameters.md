@@ -1,6 +1,6 @@
 ---
-description: ' Use &CFN; template parameters to customize your &cloud; Resource Manager
-  resource groups in &ALYlong;. '
+description: ' Use AWS Cloud Formation template parameters to customize your Cloud Canvas Resource Manager
+  resource groups in Amazon Lumberyard. '
 title: Resource Manager Resource Group Parameters
 ---
 # Resource Manager Resource Group Parameters {#cloud-canvas-resource-group-parameters}

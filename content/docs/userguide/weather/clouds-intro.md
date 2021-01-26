@@ -1,5 +1,5 @@
 ---
-description: ' Add realistic-looking clouds to your &ALYlong; level. '
+description: ' Add realistic-looking clouds to your Amazon Lumberyard level. '
 title: Adding Clouds
 ---
 # Adding Clouds {#weather-clouds-intro}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn about creating dedicated game servers in &ALYlong;. '
+description: ' Learn about creating dedicated game servers in Amazon Lumberyard. '
 title: Creating Dedicated Servers
 ---
 # Creating Dedicated Servers {#network-dedicated-server}

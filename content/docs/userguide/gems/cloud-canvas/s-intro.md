@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong; cloud gems to add &AWS; cloud-connected functionality
+description: ' Use Amazon Lumberyard cloud gems to add AWS cloud-connected functionality
   to your game. '
 title: Cloud Gems
 ---

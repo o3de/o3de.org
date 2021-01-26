@@ -1,6 +1,6 @@
 ---
 description: ' Change your game UI canvas size to visualize how your canvas might
-  look on other displays and devices of varying resolutions in &ALYlong;. '
+  look on other displays and devices of varying resolutions in Amazon Lumberyard. '
 title: Changing the Canvas Size
 ---
 # Changing the Canvas Size {#ui-editor-changing-size}

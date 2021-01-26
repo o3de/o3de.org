@@ -1,5 +1,5 @@
 ---
-description: ' Use the Render to Texture component to create render targets in &ALYlong;. '
+description: ' Use the Render to Texture component to create render targets in Amazon Lumberyard. '
 title: Render to Texture
 ---
 # Render to Texture {#component-render-to-texture}

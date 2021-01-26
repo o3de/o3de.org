@@ -1,5 +1,5 @@
 ---
-description: ' Use the lmbr packages command to download third party packages to &ALY;. '
+description: ' Use the lmbr packages command to download third party packages to Lumberyard. '
 title: Packages Commands
 ---
 # Packages Commands {#lmbr-exe-packages}

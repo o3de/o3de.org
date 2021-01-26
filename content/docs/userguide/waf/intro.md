@@ -1,7 +1,7 @@
 ---
-description: ' Use the &waf-system; to switch build pipelines and build only what
-  you need for your &ALY; game project. '
-title: Using the &waf; Build System
+description: ' Use the Waf build system to switch build pipelines and build only what
+  you need for your Lumberyard game project. '
+title: Using the Waf Build System
 ---
 # Using the Waf Build System {#waf-intro}
 

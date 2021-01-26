@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; &particle-editor; to import a particle library. '
+description: ' Use the Lumberyard Particle Editor to import a particle library. '
 title: Importing Particle Libraries
 ---
 # Importing Particle Libraries {#particle-importing-library}

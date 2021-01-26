@@ -1,6 +1,6 @@
 ---
 description: ' Use the Navigation Seed component to generate a color-coded markup
-  that indicates where your AI can travel in &ALYlong;. '
+  that indicates where your AI can travel in Amazon Lumberyard. '
 title: Navigation Seed
 ---
 # Navigation Seed {#component-nav-seed}

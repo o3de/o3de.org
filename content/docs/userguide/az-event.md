@@ -1,7 +1,7 @@
 ---
 description: ' Use the AZ::Event template class to subscribe to and publish messages
   across game components. '
-title: AZ::Event&lt;...&gt;
+title: AZ::Event<...>
 ---
 # AZ::Event<\.\.\.> {#az-event}
 

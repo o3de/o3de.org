@@ -1,5 +1,5 @@
 ---
-description: ' Manage the slot types for the &LEX; bots in your game from &ALYlong;''s
+description: ' Manage the slot types for the Amazon Lex bots in your game from Amazon Lumberyard''s
   Speech Recognition Cloud Gem Portal. '
 title: Managing Slot Types
 ---

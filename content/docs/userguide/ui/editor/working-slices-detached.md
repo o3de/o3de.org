@@ -1,5 +1,5 @@
 ---
-description: ' Create a detached UI slice in &ALYlong;''s &ui-canvas-editor; . '
+description: ' Create a detached UI slice in Amazon Lumberyard''s UI Editor . '
 title: Creating a Detached UI Slice
 ---
 # Creating a Detached UI Slice {#ui-editor-working-slices-detached}

@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ly-launcher; batch file or command line version to install
+description: ' Use the Lumberyard Setup Assistant batch file or command line version to install
   required third-party software, SDKs, and plugins. '
-title: Using &ly-launcher; Batch
+title: Using Lumberyard Setup Assistant Batch
 ---
 # Using Lumberyard Setup Assistant Batch {#lumberyard-launcher-batch-using}
 

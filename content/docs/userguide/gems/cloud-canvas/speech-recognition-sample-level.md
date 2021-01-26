@@ -1,5 +1,5 @@
 ---
-description: ' Try the Speech Recognition sample level in &ALYlong;. '
+description: ' Try the Speech Recognition sample level in Amazon Lumberyard. '
 title: Using the Speech Recognition Sample Level
 ---
 # Using the Speech Recognition Sample Level {#cloud-canvas-cloud-gem-speech-recognition-sample-level}

@@ -1,5 +1,5 @@
 ---
-description: ' Understand how pricing works when you use &cloud; and &CFN; with &ALYlong;. '
+description: ' Understand how pricing works when you use Cloud Canvas and AWS Cloud Formation with Amazon Lumberyard. '
 title: Pricing
 ---
 # Pricing {#cloud-canvas-overview-pricing}

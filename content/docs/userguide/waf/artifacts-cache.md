@@ -1,5 +1,5 @@
 ---
-description: ' Use the Waf artifacts cache feature in &ALYlong; to significantly improve
+description: ' Use the Waf artifacts cache feature in Amazon Lumberyard to significantly improve
   build times. '
 title: Using the Waf Artifacts Cache
 ---

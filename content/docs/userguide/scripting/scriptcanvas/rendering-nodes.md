@@ -1,5 +1,5 @@
 ---
-description: ' Add &ALYlong; &script-canvas; rendering nodes to your script to create
+description: ' Add Amazon Lumberyard Script Canvas rendering nodes to your script to create
   effects, such as blur, shadow, and weather effects. '
 title: Rendering Nodes
 ---

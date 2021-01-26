@@ -1,6 +1,6 @@
 ---
 description: ' Use a Waf spec system template to create Visual Studio solutions for
-  your &ALYlong; game. '
+  your Amazon Lumberyard game. '
 title: Adding a Spec
 ---
 # Adding a Spec {#waf-using-spec}

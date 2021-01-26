@@ -1,6 +1,6 @@
 ---
 description: ' Install Houdini plug-ins to create destruction assets for simulations
-  in &ALYlong; with NVIDIA Blast. '
+  in Amazon Lumberyard with NVIDIA Blast. '
 title: Install SideFX Houdini plug-ins for NVIDIA Blast
 ---
 # Install SideFX Houdini plug\-ins for NVIDIA Blast {#nvidia-blast-install-houdini-plugin}

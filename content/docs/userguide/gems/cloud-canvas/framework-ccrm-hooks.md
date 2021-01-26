@@ -1,5 +1,5 @@
 ---
-description: ' Add custom features to &cloud; Resource Manager. '
+description: ' Add custom features to Cloud Canvas Resource Manager. '
 title: Cloud Gem Framework Resource Manager Hooks
 ---
 # Cloud Gem Framework Resource Manager Hooks {#cloud-canvas-cloud-gem-framework-ccrm-hooks}

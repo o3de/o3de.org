@@ -1,5 +1,5 @@
 ---
-description: ' Use the Web Communicator cloud gem in &ALYlong; to send messages to
+description: ' Use the Web Communicator cloud gem in Amazon Lumberyard to send messages to
   game editors and clients. '
 title: Communicating to Clients from a Cloud Gem
 ---

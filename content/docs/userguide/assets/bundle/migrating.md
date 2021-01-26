@@ -1,7 +1,7 @@
 ---
-description: ' Learn how to migrate your existing &ALYlong; game project to use the
-  &asset-bundler; system. '
-title: Migrating a Game Project to the &asset-bundler;
+description: ' Learn how to migrate your existing Amazon Lumberyard game project to use the
+  Asset Bundler system. '
+title: Migrating a Game Project to the Asset Bundler
 ---
 # Migrating a Game Project to the Asset Bundler {#asset-bundler-migrating}
 

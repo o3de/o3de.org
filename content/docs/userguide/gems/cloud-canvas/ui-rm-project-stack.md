@@ -1,6 +1,6 @@
 ---
-description: ' Upload resources to and view the status of your &ALYlong; project stack
-  in &AWS;. '
+description: ' Upload resources to and view the status of your Amazon Lumberyard project stack
+  in AWS. '
 title: 'Working with Project Stacks '
 ---
 # Working with Project Stacks {#cloud-canvas-ui-rm-project-stack}

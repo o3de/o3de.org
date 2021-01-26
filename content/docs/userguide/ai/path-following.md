@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about path following in &ALYlong;. '
+description: ' Learn more about path following in Amazon Lumberyard. '
 title: Path Following
 ---
 # Path Following {#ai-path-following}

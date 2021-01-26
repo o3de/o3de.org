@@ -1,5 +1,5 @@
 ---
-description: ' Place a blend layer for parallax mapping in &ALYlong;. '
+description: ' Place a blend layer for parallax mapping in Amazon Lumberyard. '
 title: Using Blend Layers for Parallax Mapping
 ---
 # Using Blend Layers for Parallax Mapping {#mat-maps-parallax-blending}

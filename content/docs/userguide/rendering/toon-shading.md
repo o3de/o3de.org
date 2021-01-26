@@ -1,5 +1,5 @@
 ---
-description: ' Configure toon shading in &ALYlong; to implement a toon shader visual
+description: ' Configure toon shading in Amazon Lumberyard to implement a toon shader visual
   look. '
 title: Toon Shading (Experimental Feature)
 ---

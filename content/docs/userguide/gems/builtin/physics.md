@@ -1,6 +1,6 @@
 ---
 description: ' Use the Physics Entities Gem to simulate physical events or to physicalize
-  objects in your &ALY; game project. '
+  objects in your Lumberyard game project. '
 title: Physics Entities Gem
 ---
 # Physics Entities Gem {#gems-system-gem-physics}

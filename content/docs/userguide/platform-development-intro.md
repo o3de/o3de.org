@@ -1,6 +1,6 @@
 ---
-description: ' Develop for platforms other than Windows 10 with &ALYlong;. '
-title: Platform development in &ALY;
+description: ' Develop for platforms other than Windows 10 with Amazon Lumberyard. '
+title: Platform development in Lumberyard
 ---
 # Platform development in Lumberyard {#platform-development-intro}
 

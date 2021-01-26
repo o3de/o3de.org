@@ -1,5 +1,5 @@
 ---
-description: ' Integrate with the modular behavior tree (MBT) system in &ALYlong;. '
+description: ' Integrate with the modular behavior tree (MBT) system in Amazon Lumberyard. '
 title: Integration with the Modular Behavior Tree System
 ---
 # Integration with the Modular Behavior Tree System {#ai-tactical-point-mbt}

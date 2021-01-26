@@ -1,5 +1,5 @@
 ---
-description: ' Export PhysX colliders from .fbx files with FBX Settings to &ALYlong;. '
+description: ' Export PhysX colliders from .fbx files with FBX Settings to Amazon Lumberyard. '
 title: FBX Settings PhysX export
 ---
 # FBX Settings PhysX export {#fbx-physx-export}

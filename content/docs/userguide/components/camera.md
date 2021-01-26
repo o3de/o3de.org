@@ -1,6 +1,6 @@
 ---
 description: ' Use the Camera component to allow an entity to be used as a camera
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Camera
 ---
 # Camera {#component-camera}

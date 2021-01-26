@@ -1,6 +1,6 @@
 ---
-description: ' Use the &project-configurator; to enable the Lightning gem in your
-  &ALYlong; level. '
+description: ' Use the Project Configurator to enable the Lightning gem in your
+  Amazon Lumberyard level. '
 title: Enabling the Lightning Gem
 ---
 # Enabling the Lightning Gem {#gems-system-gem-lightning-arc-enabling}

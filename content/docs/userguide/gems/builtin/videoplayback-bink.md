@@ -1,5 +1,5 @@
 ---
-description: ' Play a video file in a loading screen or on textures in &ALYlong; using
+description: ' Play a video file in a loading screen or on textures in Amazon Lumberyard using
   RAD Game Tools'' Bink video codec. '
 title: Video Playback Bink Gem
 ---

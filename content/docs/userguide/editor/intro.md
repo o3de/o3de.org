@@ -1,7 +1,7 @@
 ---
-description: ' Launch &ly-editor; and understand the viewport, &asset-browser; , &entity-outliner;
-  , &entity-inspector; , and console. '
-title: Using &ly-editor;
+description: ' Launch Lumberyard Editor and understand the viewport, Asset Browser , Entity Outliner
+  , Entity Inspector , and console. '
+title: Using Lumberyard Editor
 ---
 # Using Lumberyard Editor {#lumberyard-editor-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Color Chart node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Color Chart node in the Amazon Lumberyard Script Canvas editor
   to apply a color chart texture for color grading. '
 title: Set Color Chart
 ---

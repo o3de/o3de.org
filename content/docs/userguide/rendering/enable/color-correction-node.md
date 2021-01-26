@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Color Correction node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Color Correction node in the Amazon Lumberyard Script Canvas
   editor to set color correction parameters. '
 title: Enable Color Correction
 ---

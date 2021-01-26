@@ -1,5 +1,5 @@
 ---
-description: ' Set canvas properties for UI canvases in &ui-editor; in &ALYlong;. '
+description: ' Set canvas properties for UI canvases in UI Editor in Amazon Lumberyard. '
 title: Configuring Canvas Properties
 ---
 # Configuring Canvas Properties {#ui-editor-canvas-properties}

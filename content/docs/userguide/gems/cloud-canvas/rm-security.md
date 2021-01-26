@@ -1,5 +1,5 @@
 ---
-description: ' Configure permissions for &cloud; in your &ALYlong; project and learn
+description: ' Configure permissions for Cloud Canvas in your Amazon Lumberyard project and learn
   about the Resource Manager security system in depth. '
 title: Understanding the Resource Manager Security System
 ---

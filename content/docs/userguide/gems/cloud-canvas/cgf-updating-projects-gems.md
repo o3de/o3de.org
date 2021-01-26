@@ -1,5 +1,5 @@
 ---
-description: ' Update your &ALYlong; projects and cloud gems to version 1.0.0 of the
+description: ' Update your Amazon Lumberyard projects and cloud gems to version 1.0.0 of the
   Cloud Gem framework. '
 title: Updating Projects and Cloud Gems to Version 1.0.0 of the Cloud Gem Framework
 ---

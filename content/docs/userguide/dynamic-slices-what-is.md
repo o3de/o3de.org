@@ -1,5 +1,5 @@
 ---
-description: ' Use dynamic slices in &ALYlong;. '
+description: ' Use dynamic slices in Amazon Lumberyard. '
 title: Working with Dynamic Slices
 ---
 # Working with Dynamic Slices {#dynamic-slices-what-is}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Waf projects file to specify &ALY; game project-specific data. '
+description: ' Use the Waf projects file to specify Lumberyard game project-specific data. '
 title: Waf Projects File (project.json)
 ---
 # Waf Projects File \(project\.json\) {#waf-files-projects-file}

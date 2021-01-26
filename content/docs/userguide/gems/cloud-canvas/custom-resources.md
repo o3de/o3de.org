@@ -1,6 +1,6 @@
 ---
-description: ' Use common resources in &cloud; project, deployment, and resource group
-  &CFN; template files similar to library functions in &ALYlong;. '
+description: ' Use common resources in Cloud Canvas project, deployment, and resource group
+  AWS Cloud Formation template files similar to library functions in Amazon Lumberyard. '
 title: Custom Resources
 ---
 # Custom Resources {#cloud-canvas-custom-resources}

@@ -1,5 +1,5 @@
 ---
-description: ' Work with substances in &ALYlong;. '
+description: ' Work with substances in Amazon Lumberyard. '
 title: Working with Substances
 ---
 # Working with Substances {#mat-substances}

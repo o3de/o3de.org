@@ -1,5 +1,5 @@
 ---
-description: ' How to use Amazon Elastic Compute Cloud (Amazon EC2) to run the &ALYlong;
+description: ' How to use Amazon Elastic Compute Cloud (Amazon EC2) to run the Amazon Lumberyard
   shader compiler for mobile and macOS development. '
 title: Running the Shader Compiler on Amazon EC2
 ---

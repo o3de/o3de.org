@@ -1,5 +1,5 @@
 ---
-description: ' See the following best practices for textures in &ALYlong;. '
+description: ' See the following best practices for textures in Amazon Lumberyard. '
 title: Texture Best Practices
 ---
 # Texture Best Practices {#mat-texture-best-practices}

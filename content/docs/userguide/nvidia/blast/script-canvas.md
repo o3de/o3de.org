@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
+description: ' Create realistic destruction simulations in Amazon Lumberyard with NVIDIA Blast. '
 title: Script Canvas nodes for NVIDIA Blast
 ---
 # Script Canvas nodes for NVIDIA Blast {#nvidia-blast-script-canvas}

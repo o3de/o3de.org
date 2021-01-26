@@ -1,6 +1,6 @@
 ---
 description: ' Use the virtual reality samples project to build VR applications for
-  any device for &ALYlong;. '
+  any device for Amazon Lumberyard. '
 title: Virtual Reality Samples Project
 ---
 # Virtual Reality Samples Project {#sample-project-virtual-reality}

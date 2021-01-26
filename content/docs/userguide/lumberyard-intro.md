@@ -1,7 +1,7 @@
 ---
-description: ' &ALYlong; is a free, cross-platform, cloud-connected game engine that
+description: ' Amazon Lumberyard is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
-title: What is &ALY;?
+title: What is Lumberyard?
 ---
 # What is Lumberyard? {#lumberyard-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Test the &cloud; Dynamic Content Cloud Gem. '
+description: ' Test the Cloud Canvas Dynamic Content Cloud Gem. '
 title: Testing the Dynamic Content System
 ---
 # Testing the Dynamic Content System {#cloud-canvas-cloud-gem-dc-testing}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Cloth gem to add cloth simulation to your &ALYlong;
+description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Amazon Lumberyard
   project. '
 title: NVIDIA Cloth gem
 ---

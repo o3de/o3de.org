@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Sharpen node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Sharpen node in the Amazon Lumberyard Script Canvas editor
   to disable the sharpen filter. '
 title: Disable Sharpen
 ---

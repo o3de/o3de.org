@@ -1,5 +1,5 @@
 ---
-description: ' Use the Actor component to add an actor file to your entity in &ALYlong;. '
+description: ' Use the Actor component to add an actor file to your entity in Amazon Lumberyard. '
 title: Actor
 ---
 # Actor {#component-actor}

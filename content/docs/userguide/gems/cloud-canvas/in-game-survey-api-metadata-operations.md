@@ -1,6 +1,6 @@
 ---
-description: ' Use metadata operations to get metadata from your &cloud; in-game surveys
-  in &ALYlong;. '
+description: ' Use metadata operations to get metadata from your Cloud Canvas in-game surveys
+  in Amazon Lumberyard. '
 title: Metadata Operations
 ---
 # Metadata Operations {#cloud-canvas-cloud-gem-in-game-survey-api-metadata-operations}

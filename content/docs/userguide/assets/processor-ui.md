@@ -1,7 +1,7 @@
 ---
-description: ' Learn the functions of each area of the &asset-processor; interface
-  in &ALYlong;. '
-title: '&asset-processor; Interface'
+description: ' Learn the functions of each area of the Asset Processor interface
+  in Amazon Lumberyard. '
+title: 'Asset Processor Interface'
 ---
 # Asset Processor Interface {#asset-pipeline-processor-ui}
 

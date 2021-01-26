@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create skybox materials for a static sky in your &ALY;
+description: ' Learn how to create skybox materials for a static sky in your Lumberyard
   level. '
 title: Creating Skybox Materials
 ---

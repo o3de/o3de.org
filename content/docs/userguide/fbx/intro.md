@@ -1,6 +1,6 @@
 ---
 description: ' Use FBX Settings to customize how static meshes, actors, PhysX colliders,
-  and motions stored in .fbx files are exported for &ALYlong;. '
+  and motions stored in .fbx files are exported for Amazon Lumberyard. '
 title: Customize FBX asset export with FBX Settings
 ---
 # Customize FBX asset export with FBX Settings {#fbx-intro}

@@ -1,6 +1,6 @@
 ---
-description: ' Use &animation-editor; components to animate your entities in &ALYlong;. '
-title: '&animation-editor; Components'
+description: ' Use Animation Editor components to animate your entities in Amazon Lumberyard. '
+title: 'Animation Editor Components'
 ---
 # Animation Editor Components {#char-animation-editor-components}
 

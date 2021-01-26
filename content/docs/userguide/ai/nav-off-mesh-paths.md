@@ -1,5 +1,5 @@
 ---
-description: ' Use AI paths for navigation in &ALYlong;. '
+description: ' Use AI paths for navigation in Amazon Lumberyard. '
 title: Using AI Paths for Navigation
 ---
 # Using AI Paths for Navigation {#ai-nav-off-mesh-paths}

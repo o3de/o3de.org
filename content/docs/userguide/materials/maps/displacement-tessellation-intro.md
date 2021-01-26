@@ -1,5 +1,5 @@
 ---
-description: ' Specify tessellation parameters for materials in &ALYlong;. '
+description: ' Specify tessellation parameters for materials in Amazon Lumberyard. '
 title: Tessellation
 ---
 # Tessellation {#mat-maps-displacement-tessellation-intro}

@@ -1,7 +1,7 @@
 ---
 description: ' The following topics will guide you through character animation, visual
-  effects, and cinematic animation in &ALY;. '
-title: Actor and effects animation in &ALY;
+  effects, and cinematic animation in Lumberyard. '
+title: Actor and effects animation in Lumberyard
 ---
 # Actor and effects animation in Lumberyard {#animation-intro}
 

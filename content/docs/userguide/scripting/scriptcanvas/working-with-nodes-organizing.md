@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the tools and techniques available in the &script-canvas;
+description: ' Learn about the tools and techniques available in the Script Canvas
   editor for managing and organizing large graphs. '
 title: Organizing Nodes
 ---

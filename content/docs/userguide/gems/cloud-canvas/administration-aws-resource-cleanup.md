@@ -1,7 +1,7 @@
 ---
-description: ' Remove unneeded &AWS; resources when you develop cloud-connected features
-  in &ALYlong;. '
-title: Freeing Up &AWS; Resources
+description: ' Remove unneeded AWS resources when you develop cloud-connected features
+  in Amazon Lumberyard. '
+title: Freeing Up AWS Resources
 ---
 # Freeing Up AWS Resources {#cloud-canvas-administration-aws-resource-cleanup}
 

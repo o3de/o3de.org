@@ -1,7 +1,7 @@
 ---
-description: ' &ALYlong; provides tools for bundling assets and managing product and
+description: ' Amazon Lumberyard provides tools for bundling assets and managing product and
   source dependencies so you never need to ship assets you don''t use. '
-title: Bundle game assets in &ALYlong;
+title: Bundle game assets in Amazon Lumberyard
 ---
 # Bundle game assets in Amazon Lumberyard {#asset-bundler-intro}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Initialize the localization system in &ALYlong;. '
+description: ' Initialize the localization system in Amazon Lumberyard. '
 title: Localization Initialization
 ---
 # Localization Initialization {#localization-initialization}

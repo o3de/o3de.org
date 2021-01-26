@@ -1,6 +1,6 @@
 ---
 description: ' Use the Point Light component on an entity to create a point of light
-  in &ALY;. '
+  in Lumberyard. '
 title: Point Light
 ---
 # Point Light {#component-point-light}

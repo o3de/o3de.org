@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Time node in the &ALYlong; &script-canvas; editor tor return
+description: ' Use the Get Time node in the Amazon Lumberyard Script Canvas editor tor return
   the current time value. '
 title: Get Time
 ---

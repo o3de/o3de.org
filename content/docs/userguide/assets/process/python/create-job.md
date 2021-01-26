@@ -1,6 +1,6 @@
 ---
 description: ' Create jobs in Python Asset Builder to create custom asset builders
-  for your &ALYlong; project. '
+  for your Amazon Lumberyard project. '
 title: Create jobs with Python Asset Builder
 ---
 # Create jobs with Python Asset Builder {#python-asset-builder-create-job}

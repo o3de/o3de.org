@@ -1,5 +1,5 @@
 ---
-description: ' The &ALYlong; PhysX Fixed Joint component. '
+description: ' The Amazon Lumberyard PhysX Fixed Joint component. '
 title: PhysX Fixed Joint component
 ---
 # PhysX Fixed Joint component {#component-physx-fixed-joint}

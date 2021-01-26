@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the relationship between components and EBuses in &ALYlong;. '
+description: ' Learn about the relationship between components and EBuses in Amazon Lumberyard. '
 title: Components and EBuses
 ---
 # Components and EBuses {#component-entity-system-pg-components-and-ebuses}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn detailed information about EBuses in &ALYlong;. '
+description: ' Learn detailed information about EBuses in Amazon Lumberyard. '
 title: Event Buses in Depth
 ---
 # Event Buses in Depth {#ebus-in-depth}

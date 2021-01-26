@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Param Vector3 node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Param Vector3 node in the Amazon Lumberyard Script Canvas editor
   to set a material parameter with a Vector3 value. '
 title: Set Param Vector3
 ---

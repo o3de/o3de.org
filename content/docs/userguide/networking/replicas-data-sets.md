@@ -1,5 +1,5 @@
 ---
-description: ' Use DataSet objects in &ALY; to synchronize a state across the network. '
+description: ' Use DataSet objects in Lumberyard to synchronize a state across the network. '
 title: Datasets
 ---
 # Datasets {#network-replicas-data-sets}

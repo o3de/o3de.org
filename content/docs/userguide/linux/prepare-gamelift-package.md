@@ -1,6 +1,6 @@
 ---
-description: ' Prepare a &AGS; package to deploy your game servers using &AWS;. '
-title: Preparing the &AGSlong; Package
+description: ' Prepare a AGS package to deploy your game servers using AWS. '
+title: Preparing the Amazon Games Services Package
 ---
 # Preparing the Amazon GameLift Package {#linux-prepare-gamelift-package}
 

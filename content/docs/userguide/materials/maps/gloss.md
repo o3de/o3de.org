@@ -1,5 +1,5 @@
 ---
-description: ' Enable gloss maps to define the roughness of surfaces in &ALYlong;. '
+description: ' Enable gloss maps to define the roughness of surfaces in Amazon Lumberyard. '
 title: Working with Gloss Maps
 ---
 # Working with Gloss Maps {#mat-maps-gloss}

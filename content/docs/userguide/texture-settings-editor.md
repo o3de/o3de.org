@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &texture-settings; to work with texture assets. '
-title: '&texture-settings;'
+description: ' Use the Amazon Lumberyard <guilabel>Texture Settings Editor</guilabel> to work with texture assets. '
+title: '<guilabel>Texture Settings Editor</guilabel>'
 ---
 # Texture Settings Editor {#texture-settings-editor}
 

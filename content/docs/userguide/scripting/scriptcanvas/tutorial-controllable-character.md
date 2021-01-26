@@ -1,7 +1,7 @@
 ---
-description: ' Create a controllable character with &script-canvas;, &ALYlong;''s
+description: ' Create a controllable character with Script Canvas, Amazon Lumberyard''s
   visual scripting system. '
-title: '&script-canvas; Tutorial: Creating a Controllable Entity'
+title: 'Script Canvas Tutorial: Creating a Controllable Entity'
 ---
 # Script Canvas Tutorial: Creating a Controllable Entity {#script-canvas-tutorial-controllable-character}
 

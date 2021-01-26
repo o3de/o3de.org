@@ -1,6 +1,6 @@
 ---
-description: ' Use a RadioButtonGroup component to manage radio button groups in &ALY;''s
-  &ui-canvas-editor;. '
+description: ' Use a RadioButtonGroup component to manage radio button groups in Lumberyard''s
+  UI Editor. '
 title: RadioButtonGroup
 ---
 # RadioButtonGroup {#ui-editor-components-radiobuttongroup}

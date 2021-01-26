@@ -1,5 +1,5 @@
 ---
-description: ' Learn the startup sequence for compiled &ALYlong; games and how to
+description: ' Learn the startup sequence for compiled Amazon Lumberyard games and how to
   create the bootstrap.cfg file. '
 title: Game Startup Sequence
 ---

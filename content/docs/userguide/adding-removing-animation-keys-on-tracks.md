@@ -1,5 +1,5 @@
 ---
-description: ' Add and remove animation keys on tracks in &ALYlong;''s &trackview-editor;. '
+description: ' Add and remove animation keys on tracks in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
 title: Adding and Removing Animation Keys on Tracks
 ---
 # Adding and Removing Animation Keys on Tracks {#adding-removing-animation-keys-on-tracks}

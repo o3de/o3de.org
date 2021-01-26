@@ -1,5 +1,5 @@
 ---
-description: ' See the following standard Modular Behavior Tree (MBT) nodes in &ALYlong;. '
+description: ' See the following standard Modular Behavior Tree (MBT) nodes in Amazon Lumberyard. '
 title: Standard MBT Nodes
 ---
 # Standard MBT Nodes {#ai-mbt-nodes-standard}

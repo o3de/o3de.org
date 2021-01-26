@@ -1,7 +1,7 @@
 ---
-description: ' Use the AZ::Interface&lt;T&gt; template class to create global message
-  request buses for &ALYlong; game code. '
-title: AZ::Interface&lt;T&gt;
+description: ' Use the AZ::Interface<T> template class to create global message
+  request buses for Amazon Lumberyard game code. '
+title: AZ::Interface<T>
 ---
 # AZ::Interface<T> {#az-interface}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use gems to add third-party libraries to your game in &ALYlong;. '
+description: ' Use gems to add third-party libraries to your game in Amazon Lumberyard. '
 title: Adding Third-Party Libraries
 ---
 # Adding Third\-Party Libraries {#waf-adding-third-party-libraries}

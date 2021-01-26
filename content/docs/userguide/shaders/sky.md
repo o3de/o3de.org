@@ -1,6 +1,6 @@
 ---
 description: ' Use the sky shader to render performance-optimized static sky effects
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Sky Shader
 ---
 # Sky Shader {#shader-ref-sky}

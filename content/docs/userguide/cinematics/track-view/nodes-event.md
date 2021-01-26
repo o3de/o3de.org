@@ -1,6 +1,6 @@
 ---
-description: ' Use the event node to trigger and send values to &script-canvas; in
-  &ALYlong;. '
+description: ' Use the event node to trigger and send values to Script Canvas in
+  Amazon Lumberyard. '
 title: Event Node
 ---
 # Event Node {#cinematics-track-view-nodes-event}

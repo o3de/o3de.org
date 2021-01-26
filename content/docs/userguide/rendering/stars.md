@@ -1,5 +1,5 @@
 ---
-description: ' Generate a .dat file for sky rendering in &ALYlong;. '
+description: ' Generate a .dat file for sky rendering in Amazon Lumberyard. '
 title: Generating Stars .dat File
 ---
 # Generating Stars \.dat File {#graphics-rendering-stars}

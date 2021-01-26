@@ -1,6 +1,6 @@
 ---
 description: ' Enable the LightBeam shader to create fog-like conditions for light
-  beams in &ALYlong;. '
+  beams in Amazon Lumberyard. '
 title: LightBeam Shader
 ---
 # LightBeam Shader {#shader-ref-lightbeam}

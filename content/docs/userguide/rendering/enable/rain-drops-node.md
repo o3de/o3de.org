@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Rain Drops node in the &ALYlong; &script-canvas; editor
+description: ' Use the Enable Rain Drops node in the Amazon Lumberyard Script Canvas editor
   to configure raindrops on the screen. '
 title: Enable Rain Drops
 ---

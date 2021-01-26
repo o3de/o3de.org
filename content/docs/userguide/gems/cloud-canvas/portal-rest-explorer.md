@@ -1,7 +1,7 @@
 ---
-description: ' Use the REST Explorer tab in the &cgp; to test &ABPlong; endpoints
-  for cloud gems in &ALYlong;. '
-title: Using the &cgp; REST Explorer
+description: ' Use the REST Explorer tab in the Cloud Gem Portal to test Amazon API Gateway endpoints
+  for cloud gems in Amazon Lumberyard. '
+title: Using the Cloud Gem Portal REST Explorer
 ---
 # Using the Cloud Gem Portal REST Explorer {#cloud-canvas-cloud-gem-portal-rest-explorer}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lens Flare component in &ALYlong; to place a lens flare on
+description: ' Use the Lens Flare component in Amazon Lumberyard to place a lens flare on
   an entity. '
 title: Lens Flare
 ---

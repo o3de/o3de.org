@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to create separate asset bundles for a release build with
-  multiple game levels in &ALY;. '
+  multiple game levels in Lumberyard. '
 title: Creating Multiple Asset Bundles
 ---
 # Creating Multiple Asset Bundles {#asset-bundler-tutorial-multiple-bundles}

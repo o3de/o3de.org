@@ -1,5 +1,5 @@
 ---
-description: ' Use the Terrain tab on the &rollup-bar; in &ly-editor; to rotate a
+description: ' Use the Terrain tab on the Rollup Bar in Lumberyard Editor to rotate a
   terrain heightmap. '
 title: Rotating a Terrain Heightmap
 ---

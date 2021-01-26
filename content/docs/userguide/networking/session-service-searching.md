@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to search for a GridMate session in &ALYlong;. '
+description: ' Learn how to search for a GridMate session in Amazon Lumberyard. '
 title: Searching for a Session
 ---
 # Searching for a Session {#network-session-service-searching}

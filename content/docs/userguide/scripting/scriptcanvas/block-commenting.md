@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to add comments to your script. '
+description: ' Use the Amazon Lumberyard Script Canvas editor to add comments to your script. '
 title: Commenting Nodes
 ---
 # Commenting Nodes {#script-canvas-block-commenting}

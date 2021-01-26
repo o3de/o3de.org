@@ -1,5 +1,5 @@
 ---
-description: ' Configure debugging for the PhysX system in &ALYlong;. '
+description: ' Configure debugging for the PhysX system in Amazon Lumberyard. '
 title: Debugger Configuration
 ---
 # Debugger Configuration {#physx-configuration-debugger}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Effect Group node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Effect Group node in the Amazon Lumberyard Script Canvas
   editor to disable effect groups. '
 title: Disable Effect Group
 ---

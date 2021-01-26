@@ -1,6 +1,6 @@
 ---
 description: ' Use the flatten brush to make terrain completely flat at a height you
-  define in &ALY;. '
+  define in Lumberyard. '
 title: Using the Flatten Brush
 ---
 # Using the Flatten Brush {#terrain-landforms-flatten-brush}

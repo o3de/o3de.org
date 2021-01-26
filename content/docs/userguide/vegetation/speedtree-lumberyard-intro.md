@@ -1,7 +1,7 @@
 ---
 description: ' Create plants, trees, bushes, and other foliage with SpeedTree 8 for
-  &ALYlong;. '
-title: Using SpeedTree 8 for &ALY;
+  Amazon Lumberyard. '
+title: Using SpeedTree 8 for Lumberyard
 ---
 # Using SpeedTree 8 for Lumberyard {#vegetation-speedtree-lumberyard-intro}
 

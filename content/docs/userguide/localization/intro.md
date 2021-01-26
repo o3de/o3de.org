@@ -1,5 +1,5 @@
 ---
-description: Learn about &ALYlong;'s localization system.
+description: Learn about Amazon Lumberyard's localization system.
 title: Localizing Game Projects
 ---
 # Localizing Game Projects {#localization-intro}

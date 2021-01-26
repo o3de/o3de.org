@@ -1,5 +1,5 @@
 ---
-description: ' Use the Recompute Static Shadows node in the &ALYlong; &script-canvas;
+description: ' Use the Recompute Static Shadows node in the Amazon Lumberyard Script Canvas
   editor to trigger the recalculation of cached shadow maps. '
 title: Recompute Static Shadows
 ---

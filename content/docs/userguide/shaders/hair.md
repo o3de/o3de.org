@@ -1,5 +1,5 @@
 ---
-description: ' Enable hair shaders to render hair and fur in &ALYlong;. '
+description: ' Enable hair shaders to render hair and fur in Amazon Lumberyard. '
 title: Hair Shader
 ---
 # Hair Shader {#shader-ref-hair}

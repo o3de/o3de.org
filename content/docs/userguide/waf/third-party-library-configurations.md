@@ -1,7 +1,7 @@
 ---
-description: ' Create third-party library configuration files for the &waf-system;
-  in &ALYlong;. '
-title: Creating Third-Party Library Configuration Files for &waf;
+description: ' Create third-party library configuration files for the Waf build system
+  in Amazon Lumberyard. '
+title: Creating Third-Party Library Configuration Files for Waf
 ---
 # Creating Third\-Party Library Configuration Files for Waf {#waf-third-party-library-configurations}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the point generation and evaluation in &ALYlong;. '
+description: ' Learn more about the point generation and evaluation in Amazon Lumberyard. '
 title: Point Generation and Evaluation
 ---
 # Point Generation and Evaluation {#ai-tactical-point-generation-evaluation}

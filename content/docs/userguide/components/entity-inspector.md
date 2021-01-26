@@ -1,6 +1,6 @@
 ---
-description: ' Use the &entity-inspector; to add components to entities and modify
-  their properties in &ALYlong;. '
+description: ' Use the Entity Inspector to add components to entities and modify
+  their properties in Amazon Lumberyard. '
 title: Entity Inspector
 ---
 # Entity Inspector {#component-entity-inspector}

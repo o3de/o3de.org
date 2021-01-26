@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong; &ui-canvas-editor; Preview to visualize how the animations
+description: ' Use Amazon Lumberyard UI Editor Preview to visualize how the animations
   and elements in your game UI canvas will perform at different resolutions. '
 title: Previewing Canvas Behavior
 ---

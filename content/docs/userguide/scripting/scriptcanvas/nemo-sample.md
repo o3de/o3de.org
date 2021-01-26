@@ -1,6 +1,6 @@
 ---
 description: ' Install the Project N.E.M.O sample level to learn and experience the
-  benefits of &ALYlong;''s &script-canvas; visual scripting system. '
+  benefits of Amazon Lumberyard''s Script Canvas visual scripting system. '
 title: Installing the Project N.E.M.O. Sample
 ---
 # Installing the Project N\.E\.M\.O\. Sample {#script-canvas-nemo-sample}

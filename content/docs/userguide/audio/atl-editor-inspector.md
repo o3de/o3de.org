@@ -1,6 +1,6 @@
 ---
-description: ' Use the &audio-controls-browser; ''s Inspector pane to edit the properties
-  of the currently selected control in &ALYlong;. '
+description: ' Use the Audio Controls Editor ''s Inspector pane to edit the properties
+  of the currently selected control in Amazon Lumberyard. '
 title: Inspector Pane
 ---
 # Inspector Pane {#audio-atl-editor-inspector}

@@ -1,6 +1,6 @@
 ---
 description: ' You can use component edit mode so that you can specifically edit one
-  component at a time in &ALYlong;. '
+  component at a time in Amazon Lumberyard. '
 title: Editing Components in the Viewport
 ---
 # Editing Components in the Viewport {#edit-mode-for-components}

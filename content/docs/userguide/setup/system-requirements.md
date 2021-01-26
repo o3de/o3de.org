@@ -1,6 +1,6 @@
 ---
 description: ' Learn more about the hardware, operating system, and software requirements
-  for installing &ALYlong;. '
+  for installing Amazon Lumberyard. '
 title: System requirements
 ---
 # System requirements {#setting-up-system-requirements}

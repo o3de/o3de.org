@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic destruction simulations in &ALYlong; with NVIDIA Blast. '
+description: ' Create realistic destruction simulations in Amazon Lumberyard with NVIDIA Blast. '
 title: Simulated destruction with NVIDIA Blast
 ---
 # Simulated destruction with NVIDIA Blast {#nvidia-blast-intro}

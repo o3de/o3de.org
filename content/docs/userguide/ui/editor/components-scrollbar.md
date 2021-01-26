@@ -1,5 +1,5 @@
 ---
-description: ' Use a scroll bar component to add a scroll bar in the &ALYlong; &ui-canvas-editor;. '
+description: ' Use a scroll bar component to add a scroll bar in the Amazon Lumberyard UI Editor. '
 title: ScrollBar
 ---
 # ScrollBar {#ui-editor-components-scrollbar}

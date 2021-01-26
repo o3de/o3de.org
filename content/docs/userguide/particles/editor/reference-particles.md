@@ -1,5 +1,5 @@
 ---
-description: ' Use the Particles attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Particles attribute in the Amazon Lumberyard Particle Editor to control
   the basic appearance of the particle. '
 title: ' Particles Attribute'
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Create a simple multiplayer test game level in &ALYlong;. '
+description: ' Create a simple multiplayer test game level in Amazon Lumberyard. '
 title: ' Tutorial: Getting Started with Multiplayer'
 ---
 # Tutorial: Getting Started with Multiplayer {#network-multiplayer-gs}

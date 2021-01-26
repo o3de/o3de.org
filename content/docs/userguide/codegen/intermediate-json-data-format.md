@@ -1,5 +1,5 @@
 ---
-description: ' Examine the syntax of the intermediate JSON data format used by &ALYlong;''s
+description: ' Examine the syntax of the intermediate JSON data format used by Amazon Lumberyard''s
   AZ Code Generator. '
 title: Intermediate JSON Data Format
 ---

@@ -1,6 +1,6 @@
 ---
-description: ' Use accurate illuminance values and auto exposure key settings in &ALY;
-  for best tone and realistic light&endash;dark ratios. '
+description: ' Use accurate illuminance values and auto exposure key settings in Lumberyard
+  for best tone and realistic light–dark ratios. '
 title: Illuminance and Auto Exposure Key
 ---
 # Illuminance and Auto Exposure Key {#enviro-lighting-luminance-scene-key}

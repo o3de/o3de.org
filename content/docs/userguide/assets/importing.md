@@ -1,7 +1,7 @@
 ---
-description: ' You can manually import your asset files into &ALYlong; or use the
+description: ' You can manually import your asset files into Amazon Lumberyard or use the
   Import option in the editor. '
-title: Importing Assets into &ALY;
+title: Importing Assets into Lumberyard
 ---
 # Importing Assets into Lumberyard {#asset-pipeline-importing}
 

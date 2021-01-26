@@ -1,5 +1,5 @@
 ---
-description: ' Add detail bending effects to the vegetation in your &ALYlong; game
+description: ' Add detail bending effects to the vegetation in your Amazon Lumberyard game
   project. '
 title: Adding Detail Bending Effects
 ---

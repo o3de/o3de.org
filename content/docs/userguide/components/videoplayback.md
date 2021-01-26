@@ -1,6 +1,6 @@
 ---
 description: ' Use the Video Playback component to display a video in a level loading
-  screen or on a texture in a game created with &ALYlong;. '
+  screen or on a texture in a game created with Amazon Lumberyard. '
 title: Video Playback
 ---
 # Video Playback {#component-videoplayback}

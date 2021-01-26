@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Lightning Arc component to add lightning arc effects
+description: ' Use the Amazon Lumberyard Lightning Arc component to add lightning arc effects
   to your game. '
 title: Lighting Arc
 ---

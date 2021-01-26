@@ -1,5 +1,5 @@
 ---
-description: ' Move an entity in a scene &ALYlong;. '
+description: ' Move an entity in a scene Amazon Lumberyard. '
 title: Moving an Entity in a Scene
 ---
 # Moving an Entity in a Scene {#cinematics-animation-char-move}

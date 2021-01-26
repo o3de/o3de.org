@@ -1,6 +1,6 @@
 ---
-description: ' Learn about versioning of &LAM; code and custom resource instances
-  in &ALYlong;. '
+description: ' Learn about versioning of Lambda code and custom resource instances
+  in Amazon Lumberyard. '
 title: Versioning of Custom Resources
 ---
 # Versioning of Custom Resources {#cloud-canvas-cgf-adding-aws-resources-versioning}

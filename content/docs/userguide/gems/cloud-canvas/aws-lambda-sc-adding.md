@@ -1,6 +1,6 @@
 ---
-description: ' Make a custom &LAM; function available to &script-canvas; in &ALYlong;. '
-title: Making a Custom &LAM; Function Available to &script-canvas;
+description: ' Make a custom Lambda function available to Script Canvas in Amazon Lumberyard. '
+title: Making a Custom Lambda Function Available to Script Canvas
 ---
 # Making a Custom Lambda Function Available to Script Canvas {#cloud-canvas-cloud-gem-aws-lambda-sc-adding}
 

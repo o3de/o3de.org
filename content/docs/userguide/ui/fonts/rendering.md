@@ -1,5 +1,5 @@
 ---
-description: ' Specify how fonts render in &ALYlong;''s UI system. '
+description: ' Specify how fonts render in Amazon Lumberyard''s UI system. '
 title: Configuring Font Rendering Quality
 ---
 # Configuring Font Rendering Quality {#ui-fonts-rendering}

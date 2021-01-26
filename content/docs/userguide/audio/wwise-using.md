@@ -1,6 +1,6 @@
 ---
 description: ' Use an exclusive, free version of the Audiokinetic Wwise audio middleware
-  for your &ALY; game project. '
+  for your Lumberyard game project. '
 title: Setting up Wwise LTX
 ---
 # Setting up Wwise LTX {#audio-wwise-using}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the screen fader effect to manage screen fade properties in &ALYlong;. '
+description: ' Use the screen fader effect to manage screen fade properties in Amazon Lumberyard. '
 title: Using the Screen Fader Effect
 ---
 # Using the Screen Fader Effect {#effect-groups-screen-fader-effect}

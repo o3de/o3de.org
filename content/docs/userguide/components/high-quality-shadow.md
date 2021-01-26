@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; High Quality Shadow component to give an entity its
+description: ' Use the Amazon Lumberyard High Quality Shadow component to give an entity its
   own shadow map. '
 title: High Quality Shadow
 ---

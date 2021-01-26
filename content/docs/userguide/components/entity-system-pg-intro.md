@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create and reflect components in C++ using the &ALY; Component
+description: ' Learn how to create and reflect components in C++ using the Lumberyard Component
   Entity System. '
 title: Programmer's Guide to Entities and Components
 ---

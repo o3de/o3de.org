@@ -1,5 +1,5 @@
 ---
-description: ' Specify permissions metadata for &cloud; resource definitions in &ALYlong;. '
+description: ' Specify permissions metadata for Cloud Canvas resource definitions in Amazon Lumberyard. '
 title: Permissions Metadata for Resource Definitions
 ---
 # Permissions Metadata for Resource Definitions {#permissions-metadata-for-resource-definitions}

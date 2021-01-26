@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the Waf file system that &ALY; uses, including Waf
+description: ' Learn more about the Waf file system that Lumberyard uses, including Waf
   module files, Waf file lists, and project and compilation files. '
 title: Waf File System
 ---

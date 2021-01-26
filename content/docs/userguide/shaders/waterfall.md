@@ -1,5 +1,5 @@
 ---
-description: ' Use the waterfall shader for waterfall effects in &ALYlong;. '
+description: ' Use the waterfall shader for waterfall effects in Amazon Lumberyard. '
 title: Waterfall Shader
 ---
 # Waterfall Shader {#shader-ref-waterfall}

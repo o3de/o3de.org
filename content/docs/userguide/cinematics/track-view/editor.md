@@ -1,6 +1,6 @@
 ---
-description: ' Use the &trackview-editor; to create and manage cinematic sequences
-  in &ALYlong;. '
+description: ' Use the <guilabel>Track View</guilabel> editor to create and manage cinematic sequences
+  in Amazon Lumberyard. '
 title: Using the Track View Editor
 ---
 # Using the Track View Editor {#cinematics-track-view-editor}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about AI scripting in &ALYlong;. '
+description: ' Learn more about AI scripting in Amazon Lumberyard. '
 title: AI Scripting
 ---
 # AI Scripting {#ai-scripting}

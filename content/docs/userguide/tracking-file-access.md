@@ -1,5 +1,5 @@
 ---
-description: ' Describes how track file access during game runtime in &ALYlong;. '
+description: ' Describes how track file access during game runtime in Amazon Lumberyard. '
 title: Tracking File Access
 ---
 # Tracking File Access {#tracking-file-access}

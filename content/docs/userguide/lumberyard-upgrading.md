@@ -1,7 +1,7 @@
 ---
-description: ' Upgrade &ALYlong; with or without source control and upgrade your game
+description: ' Upgrade Amazon Lumberyard with or without source control and upgrade your game
   project. '
-title: Upgrading &ALY;
+title: Upgrading Lumberyard
 ---
 # Upgrading Lumberyard {#lumberyard-upgrading}
 

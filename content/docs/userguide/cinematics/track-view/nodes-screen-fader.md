@@ -1,5 +1,5 @@
 ---
-description: ' Use the Screen Fader node to fade the screen in and out in a &ALYlong;
+description: ' Use the Screen Fader node to fade the screen in and out in a Amazon Lumberyard
   track view sequence. '
 title: Screen Fader Node
 ---

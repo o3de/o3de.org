@@ -1,5 +1,5 @@
 ---
-description: ' Set track view sequence properties in the &trackview-editor; in &ALYlong;. '
+description: ' Set track view sequence properties in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Setting Sequence Properties
 ---
 # Setting Sequence Properties {#cinematics-sequence-props}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Size attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Size attribute in the Amazon Lumberyard Particle Editor to control
   the size and shape of the sprite. '
 title: Size Attribute
 ---

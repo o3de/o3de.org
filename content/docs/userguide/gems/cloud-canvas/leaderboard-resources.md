@@ -1,5 +1,5 @@
 ---
-description: ' See which resources are used by the Leaderboard Cloud Gem in &ALYlong;. '
+description: ' See which resources are used by the Leaderboard Cloud Gem in Amazon Lumberyard. '
 title: Leaderboard Cloud Gem Resources
 ---
 # Leaderboard Cloud Gem Resources {#cloud-canvas-cloud-gem-leaderboard-resources}

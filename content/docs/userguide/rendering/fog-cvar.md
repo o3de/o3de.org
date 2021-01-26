@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables to specify the fog settings for your &ALYlong;
+description: ' Use console variables to specify the fog settings for your Amazon Lumberyard
   game project. '
 title: Console Variables for Fog
 ---

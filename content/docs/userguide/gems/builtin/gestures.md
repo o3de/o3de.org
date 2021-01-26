@@ -1,6 +1,6 @@
 ---
 description: ' Enable the Gestures gem for your game project to detect common gesture-based
-  input actions in &ALYlong;. '
+  input actions in Amazon Lumberyard. '
 title: Gestures Gem
 ---
 # Gestures Gem {#gems-system-gem-gestures}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to rename your image files to make use of existing or customized
-  image processing presets in &ALYlong;. '
+  image processing presets in Amazon Lumberyard. '
 title: Using Image Naming Conventions
 ---
 # Using Image Naming Conventions {#asset-pipeline-using-image-naming-conventions}

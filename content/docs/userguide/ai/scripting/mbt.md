@@ -1,5 +1,5 @@
 ---
-description: ' Understand core concepts for the Modular Behavior Tree (MBT) in &ALYlong;. '
+description: ' Understand core concepts for the Modular Behavior Tree (MBT) in Amazon Lumberyard. '
 title: Modular Behavior Tree
 ---
 # Modular Behavior Tree {#ai-scripting-mbt}

@@ -1,6 +1,6 @@
 ---
-description: ' Learn about the &cloud; Web Communicator Cloud Gem API calls that the
-  Cloud Gem Portal uses to send messages to connected clients in &ALYlong;. '
+description: ' Learn about the Cloud Canvas Web Communicator Cloud Gem API calls that the
+  Cloud Gem Portal uses to send messages to connected clients in Amazon Lumberyard. '
 title: Web Communicator Cloud Gem Service API
 ---
 # Web Communicator Cloud Gem Service API {#cloud-canvas-cloud-gem-web-communicator-service-api}

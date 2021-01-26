@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIElementComponent to provide functionality for UI elements
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UIElementComponent
 ---
 # UIElementComponent {#lua-scripting-ces-api-ui-uielementcomponent}

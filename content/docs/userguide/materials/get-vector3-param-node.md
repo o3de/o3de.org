@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Param Vector3 node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Param Vector3 node in the Amazon Lumberyard Script Canvas editor
   to return a material parameter as a Vector3 value. '
 title: Get Param Vector3
 ---

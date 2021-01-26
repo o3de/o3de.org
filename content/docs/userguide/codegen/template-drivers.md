@@ -1,6 +1,6 @@
 ---
 description: ' Create template drivers that preprocess data from Clang and pass it
-  to Jinja2 output templates for use with &ALYlong;''s AZ Code Generator. '
+  to Jinja2 output templates for use with Amazon Lumberyard''s AZ Code Generator. '
 title: Template Drivers
 ---
 # Template Drivers {#az-code-gen-template-drivers}

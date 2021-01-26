@@ -1,5 +1,5 @@
 ---
-description: ' Learn the networking features of the &ALYlong; Multiplayer sample game. '
+description: ' Learn the networking features of the Amazon Lumberyard Multiplayer sample game. '
 title: Multiplayer Sample Network Features
 ---
 # Multiplayer Sample Network Features {#sample-project-multiplayer-enhanced-network-features}

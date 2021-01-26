@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about AI agents for factions in &ALYlong;. '
+description: ' Learn more about AI agents for factions in Amazon Lumberyard. '
 title: Factions
 ---
 # Factions {#ai-scripting-factions}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIDynamicScrollBoxComponent to set up scrollbox content as
-  a horizontal or vertical list of elements in &ALYlong;. '
+  a horizontal or vertical list of elements in Amazon Lumberyard. '
 title: UIDynamicScrollBoxComponent
 ---
 # UIDynamicScrollBoxComponent {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent}

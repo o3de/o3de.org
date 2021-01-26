@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to setup PyCharm for Waf debugging for use with &ALYlong;''s
+description: ' Learn how to setup PyCharm for Waf debugging for use with Amazon Lumberyard''s
   AZ Code Generator. '
 title: 'Setting Up PyCharm for Debugging Waf '
 ---

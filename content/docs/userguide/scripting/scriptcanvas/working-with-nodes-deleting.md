@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to delete &script-canvas; nodes in &ALYlong;. '
+description: ' Learn how to delete Script Canvas nodes in Amazon Lumberyard. '
 title: Deleting Nodes
 ---
 # Deleting Nodes {#script-canvas-working-with-nodes-deleting}

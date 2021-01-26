@@ -1,6 +1,6 @@
 ---
-description: ' Allocate and track memory in &ALYlong;. '
-title: Using Memory Allocators in &ALY;
+description: ' Allocate and track memory in Amazon Lumberyard. '
+title: Using Memory Allocators in Lumberyard
 ---
 # Using Memory Allocators in Lumberyard {#memory-allocators}
 

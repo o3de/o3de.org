@@ -1,6 +1,6 @@
 ---
 description: ' Use the UITooltipDisplayComponent to control the display behavior of
-  a tooltip in &ALYlong;. '
+  a tooltip in Amazon Lumberyard. '
 title: UITooltipDisplayComponent
 ---
 # UITooltipDisplayComponent {#lua-scripting-ces-api-ui-uitooltipdisplaycomponent}

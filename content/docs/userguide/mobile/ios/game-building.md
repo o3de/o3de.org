@@ -1,5 +1,5 @@
 ---
-description: ' Configure and build an iOS game application using the &ALY; build tools. '
+description: ' Configure and build an iOS game application using the Lumberyard build tools. '
 title: Building Your iOS App
 ---
 # Building Your iOS App {#ios-game-building}

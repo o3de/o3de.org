@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to debug vegetation issues in your &ALY; game project. '
+description: ' Learn how to debug vegetation issues in your Lumberyard game project. '
 title: Vegetation Debugging
 ---
 # Vegetation Debugging {#vegetation-debugging}

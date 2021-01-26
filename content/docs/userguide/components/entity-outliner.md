@@ -1,6 +1,6 @@
 ---
-description: ' Manage your entities with the &entity-outliner; in &ALYlong;. '
-title: '&entity-outliner;'
+description: ' Manage your entities with the Entity Outliner in Amazon Lumberyard. '
+title: 'Entity Outliner'
 ---
 # Entity Outliner {#component-entity-outliner}
 

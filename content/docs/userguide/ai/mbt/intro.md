@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the AI Modular Behavior Tree (MBT) in &ALYlong;. '
+description: ' Learn about the AI Modular Behavior Tree (MBT) in Amazon Lumberyard. '
 title: AI Modular Behavior Tree
 ---
 # AI Modular Behavior Tree {#ai-mbt-intro}

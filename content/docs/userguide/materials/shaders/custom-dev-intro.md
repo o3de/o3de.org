@@ -1,5 +1,5 @@
 ---
-description: ' Develop a custom material shader in &ALYlong;. '
+description: ' Develop a custom material shader in Amazon Lumberyard. '
 title: Developing a Custom Shader
 ---
 # Developing a Custom Shader {#mat-shaders-custom-dev-intro}

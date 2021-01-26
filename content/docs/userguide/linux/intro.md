@@ -1,7 +1,7 @@
 ---
-description: ' Use &ALYlong; to compile a dedicated Linux server for a multiplayer
-  game, prepare your server for game hosting, and integrate with &AGS;. '
-title: Creating &ALY; Executables for Linux
+description: ' Use Amazon Lumberyard to compile a dedicated Linux server for a multiplayer
+  game, prepare your server for game hosting, and integrate with AGS. '
+title: Creating Lumberyard Executables for Linux
 ---
 # Creating Lumberyard Executables for Linux {#linux-intro}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Learn the asset identifiers and file paths that game engineers need
-  for porting older game code to &ALYlong; or developing new code or tools. '
+  for porting older game code to Amazon Lumberyard or developing new code or tools. '
 title: Asset IDs and File Paths
 ---
 # Asset IDs and File Paths {#asset-pipeline-developers}

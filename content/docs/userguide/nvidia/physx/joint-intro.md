@@ -1,5 +1,5 @@
 ---
-description: ' Create dynamic joint constraints between entities in &ALYlong; with
+description: ' Create dynamic joint constraints between entities in Amazon Lumberyard with
   PhysX joints. '
 title: Dynamic joints with PhysX
 ---

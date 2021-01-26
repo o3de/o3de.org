@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Input Number node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Input Number node in the Amazon Lumberyard Script Canvas editor
   to set the value of a procedural material input parameter as a number. '
 title: Set Input Number
 ---

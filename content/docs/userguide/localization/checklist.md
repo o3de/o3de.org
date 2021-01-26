@@ -1,5 +1,5 @@
 ---
-description: ' See the following checklist for localization in &ALYlong;. '
+description: ' See the following checklist for localization in Amazon Lumberyard. '
 title: Localization Checklist
 ---
 # Localization Checklist {#localization-checklist}

@@ -1,6 +1,6 @@
 ---
 description: ' Use HDR tone mapping settings to control the light and dark values
-  in your &ALY; scene. '
+  in your Lumberyard scene. '
 title: HDR Settings
 ---
 # HDR Settings {#enviro-lighting-hdr-tone-mapping}

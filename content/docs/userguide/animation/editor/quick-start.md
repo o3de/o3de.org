@@ -1,6 +1,6 @@
 ---
-description: ' Use the &animation-editor; quick start to animate a character in &ALYlong;. '
-title: Getting Started with the &animation-editor;
+description: ' Use the Animation Editor quick start to animate a character in Amazon Lumberyard. '
+title: Getting Started with the Animation Editor
 ---
 # Getting Started with the Animation Editor {#animation-editor-quick-start}
 

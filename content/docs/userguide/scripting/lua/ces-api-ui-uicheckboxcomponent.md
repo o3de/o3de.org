@@ -1,5 +1,5 @@
 ---
-description: ' Use the UICheckboxComponent to implement a UI check box in &ALYlong;. '
+description: ' Use the UICheckboxComponent to implement a UI check box in Amazon Lumberyard. '
 title: UICheckboxComponent
 ---
 # UICheckboxComponent {#lua-scripting-ces-api-ui-uicheckboxcomponent}

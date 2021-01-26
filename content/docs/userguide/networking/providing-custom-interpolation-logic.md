@@ -1,6 +1,6 @@
 ---
 description: ' Provide your own interpolation logic for the Transform component in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Providing Your Own Interpolation Logic for the Transform Component
 ---
 # Providing Your Own Interpolation Logic for the Transform Component {#network-providing-custom-interpolation-logic}

@@ -1,5 +1,5 @@
 ---
-description: ' Add components to your entities with the &entity-inspector; in &ALYlong;. '
+description: ' Add components to your entities with the Entity Inspector in Amazon Lumberyard. '
 title: Adding Components to an Entity
 ---
 # Adding Components to an Entity {#component-working-adding}

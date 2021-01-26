@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Tube Shape component to create tube-like volumes. '
+description: ' Use the Amazon Lumberyard Tube Shape component to create tube-like volumes. '
 title: Tube Shape
 ---
 # Tube Shape {#component-tube-shape}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Network Binding component in &ALY; to mark an entity as able
+description: ' Use the Network Binding component in Lumberyard to mark an entity as able
   to be replicated across the network. '
 title: Network Binding
 ---

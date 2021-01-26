@@ -1,6 +1,6 @@
 ---
 description: ' Use the rise/lower terrain brush to create a realistic riverbed and
-  walls for your river in &ALY;. '
+  walls for your river in Lumberyard. '
 title: Preparing the River Terrain
 ---
 # Preparing the River Terrain {#terrain-rivers-prep-terrain}

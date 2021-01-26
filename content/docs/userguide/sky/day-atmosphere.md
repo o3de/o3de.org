@@ -1,6 +1,6 @@
 ---
 description: ' Use sun and light-scattering settings to create dynamic day time sky
-  and atmospheric effects in &ALY;. '
+  and atmospheric effects in Lumberyard. '
 title: Setting Daytime Atmospheric Effects
 ---
 # Setting Daytime Atmospheric Effects {#sky-day-atmosphere}

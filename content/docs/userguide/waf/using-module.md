@@ -1,5 +1,5 @@
 ---
-description: ' Create a custom build module in the &ALYlong; Waf build system. '
+description: ' Create a custom build module in the Amazon Lumberyard Waf build system. '
 title: Adding a Build Module
 ---
 # Adding a Build Module {#waf-using-module}

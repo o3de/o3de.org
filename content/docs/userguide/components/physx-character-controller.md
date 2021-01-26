@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Character Controller component to implement basic character
-  interactions in &ALYlong;. '
+  interactions in Amazon Lumberyard. '
 title: PhysX Character Controller
 ---
 # PhysX Character Controller {#component-physx-character-controller}

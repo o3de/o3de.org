@@ -1,5 +1,5 @@
 ---
-description: ' See the following concepts for the movement system in &ALYlong;. '
+description: ' See the following concepts for the movement system in Amazon Lumberyard. '
 title: Movement System
 ---
 # Movement System {#ai-movement}

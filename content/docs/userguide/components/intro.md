@@ -1,6 +1,6 @@
 ---
-description: ' Use the &component-system; to create entities and add components to
-  them in &ALYlong;. '
+description: ' Use the component entity system to create entities and add components to
+  them in Amazon Lumberyard. '
 title: Working with component entities
 ---
 # Working with component entities {#component-intro}

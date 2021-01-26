@@ -1,7 +1,7 @@
 ---
-description: ' Use the &console; to see the &ALYlong; &cloud; resources that you created
-  in &AWS;. '
-title: Inspect Your Resources in &AWS;
+description: ' Use the AWS Management Console to see the Amazon Lumberyard Cloud Canvas resources that you created
+  in AWS. '
+title: Inspect Your Resources in AWS
 ---
 # Inspect Your Resources in AWS {#cloud-canvas-tutorial-inspect}
 

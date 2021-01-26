@@ -1,5 +1,5 @@
 ---
-description: ' Create an entity with the &entity-outliner; in &ALYlong;. '
+description: ' Create an entity with the Entity Outliner in Amazon Lumberyard. '
 title: Creating an Entity
 ---
 # Creating an Entity {#creating-entity}

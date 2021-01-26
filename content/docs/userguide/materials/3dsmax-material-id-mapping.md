@@ -1,6 +1,6 @@
 ---
 description: ' Map different materials to the faces of a mesh file before exporting
-  to &ALY;. '
+  to Lumberyard. '
 title: Material ID Mapping in Autodesk 3ds Max
 ---
 # Material ID Mapping in Autodesk 3ds Max {#mat-3dsmax-material-id-mapping}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the &ALYlong; Blast Family Mesh Data component. '
+description: ' Learn about the Amazon Lumberyard Blast Family Mesh Data component. '
 title: Blast Family Mesh Data component
 ---
 # Blast Family Mesh Data component {#component-blast-family-mesh-data}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about image-based lighting in &ALYlong;. '
+description: ' Learn more about image-based lighting in Amazon Lumberyard. '
 title: Image-Based Lighting
 ---
 # Image\-Based Lighting {#mat-shaders-image-lighting}

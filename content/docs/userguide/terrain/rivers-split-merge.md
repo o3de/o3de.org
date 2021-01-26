@@ -1,6 +1,6 @@
 ---
 description: ' Use spline parameters to split a river apart or merge two rivers together
-  in your &ALY; level. '
+  in your Lumberyard level. '
 title: Splitting and Merging Rivers
 ---
 # Splitting and Merging Rivers {#terrain-rivers-split-merge}

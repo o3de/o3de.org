@@ -1,7 +1,7 @@
 ---
 description: ' Use the Beach City sample project to create your own levels in your
-  &ALY; game project. '
-title: Beach City Sample Project &endash; Legacy
+  Lumberyard game project. '
+title: Beach City Sample Project – Legacy
 ---
 # Beach City Sample Project - Legacy {#sample-level-beach-city-night-assets}
 

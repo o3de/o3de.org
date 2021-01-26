@@ -1,7 +1,7 @@
 ---
-description: ' Add virtual reality to your &ALY; project to simulate a user''s presence
+description: ' Add virtual reality to your Lumberyard project to simulate a user''s presence
   in the gaming environment. '
-title: Create virtual reality projects in &ALY;
+title: Create virtual reality projects in Lumberyard
 ---
 # Create virtual reality projects in Lumberyard {#virtual-reality}
 

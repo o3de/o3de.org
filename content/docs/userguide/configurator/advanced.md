@@ -1,6 +1,6 @@
 ---
 description: ' Configure Advanced Settings such as system entities and memory settings
-  in the &project-configurator;. '
+  in the Project Configurator. '
 title: Configuring Advanced Settings
 ---
 # Configuring Advanced Settings {#configurator-advanced}

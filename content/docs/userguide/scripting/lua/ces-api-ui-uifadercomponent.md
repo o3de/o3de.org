@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIFaderComponent fader component to simultaneously adjust the
-  transparency of an element and its children in &ALYlong;. '
+  transparency of an element and its children in Amazon Lumberyard. '
 title: UIFaderComponent
 ---
 # UIFaderComponent {#lua-scripting-ces-api-ui-uifadercomponent}

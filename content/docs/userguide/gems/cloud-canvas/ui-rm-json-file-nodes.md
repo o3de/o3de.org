@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to work with &cloud; JSON files in the &cloud; Resource Manager
-  in &ALYlong;. '
+description: ' Learn how to work with Cloud Canvas JSON files in the Cloud Canvas Resource Manager
+  in Amazon Lumberyard. '
 title: Working with JSON Files
 ---
 # Working with JSON Files {#cloud-canvas-ui-rm-json-file-nodes}

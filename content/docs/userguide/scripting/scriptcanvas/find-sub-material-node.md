@@ -1,5 +1,5 @@
 ---
-description: ' Use the Find Sub-Material node in the &ALYlong; &script-canvas; editor
+description: ' Use the Find Sub-Material node in the Amazon Lumberyard Script Canvas editor
   to find and return a submaterial with the specified name and submaterial ID. '
 title: Find Sub-Material
 ---

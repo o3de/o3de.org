@@ -1,6 +1,6 @@
 ---
-description: ' Learn about the progress log in &cloud; Resource Manager . '
-title: Viewing the &cloud; Progress Log
+description: ' Learn about the progress log in Cloud Canvas Resource Manager . '
+title: Viewing the Cloud Canvas Progress Log
 ---
 # Viewing the Cloud Canvas Progress Log {#cloud-canvas-ui-rm-progress-log}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Place a UI canvas on an object in the 3d world in &ALYlong;. '
+description: ' Place a UI canvas on an object in the 3d world in Amazon Lumberyard. '
 title: Placing UI Canvases in the 3D World
 ---
 # Placing UI Canvases in the 3D World {#ui-editor-placing-canvases-3d}

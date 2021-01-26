@@ -1,6 +1,6 @@
 ---
 description: ' Set up parameters to customize the animation of the simulated object
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Using Parameters to Adjust the Animation During Runtime
 ---
 # Using Parameters to Adjust the Animation During Runtime {#use-parameters-to-adjust-animation-during-runtime}

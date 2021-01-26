@@ -1,6 +1,6 @@
 ---
-description: ' Use gems to add C++ code to a game project in &ALYlong;. '
-title: Adding C++ Code to a &ALY; Game with Gems
+description: ' Use gems to add C++ code to a game project in Amazon Lumberyard. '
+title: Adding C++ Code to a Lumberyard Game with Gems
 ---
 # Adding C\+\+ Code to a Lumberyard Game with Gems {#component-entity-system-pg-gems-code}
 

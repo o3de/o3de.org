@@ -1,5 +1,5 @@
 ---
-description: ' Use localized wind in &ALY; to simulate wind from a specific object,
+description: ' Use localized wind in Lumberyard to simulate wind from a specific object,
   such as a fan or jet exhaust. '
 title: Adding Localized Wind
 ---

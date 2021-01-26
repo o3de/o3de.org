@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Param Number node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Param Number node in the Amazon Lumberyard Script Canvas editor
   to specify a material''s numerical parameter for the specified entity. '
 title: Set Param Number
 ---

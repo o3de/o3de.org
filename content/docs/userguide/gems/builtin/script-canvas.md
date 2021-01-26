@@ -1,7 +1,7 @@
 ---
-description: ' Use the &script-canvas; gem to enable the use of &ALYlong;''s &script-canvas;
+description: ' Use the Script Canvas gem to enable the use of Amazon Lumberyard''s Script Canvas
   editor. '
-title: '&script-canvas; Gem'
+title: 'Script Canvas Gem'
 ---
 # Script Canvas Gem {#gems-system-gem-script-canvas}
 

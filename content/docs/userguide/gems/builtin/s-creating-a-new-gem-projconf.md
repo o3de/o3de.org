@@ -1,6 +1,6 @@
 ---
 description: null
-title: Creating a Gem with the &project-configurator;
+title: Creating a Gem with the Project Configurator
 ---
 # Creating a Gem with the Project Configurator {#gems-system-gems-creating-a-new-gem-projconf}
 

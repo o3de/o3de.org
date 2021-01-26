@@ -1,5 +1,5 @@
 ---
-description: ' Add new user settings and define utility functions for your &ALYlong;
+description: ' Add new user settings and define utility functions for your Amazon Lumberyard
   Waf configuration. '
 title: Adding User Settings to Waf
 ---

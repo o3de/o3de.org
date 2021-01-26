@@ -1,5 +1,5 @@
 ---
-description: ' Use local cubemaps in &ALY; to light smaller areas more accurately
+description: ' Use local cubemaps in Lumberyard to light smaller areas more accurately
   . '
 title: Local Environment Lighting
 ---

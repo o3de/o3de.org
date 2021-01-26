@@ -1,6 +1,6 @@
 ---
-description: ' Use the &PST; to modify project settings for mobile device games in
-  &ALYlong;. '
+description: ' Use the Project Settings Tool to modify project settings for mobile device games in
+  Amazon Lumberyard. '
 title: Modifying Project Settings for Mobile Device Games
 ---
 # Modifying Project Settings for Mobile Device Games {#mobile-project-settings-tool}

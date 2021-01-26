@@ -1,5 +1,5 @@
 ---
-description: ' Use the Pose Subtract node in &ALYlong; &animation-editor; to subtract
+description: ' Use the Pose Subtract node in Amazon Lumberyard Animation Editor to subtract
   one pose from another. '
 title: Pose Subtract Node
 ---

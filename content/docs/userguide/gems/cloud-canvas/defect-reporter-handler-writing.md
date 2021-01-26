@@ -1,6 +1,6 @@
 ---
 description: ' See the following tips on writing handlers to gather defect reporting
-  data in &ALYlong;. '
+  data in Amazon Lumberyard. '
 title: Writing Data Gathering Handlers
 ---
 # Writing Data Gathering Handlers {#cloud-canvas-cloud-gem-defect-reporter-handler-writing}

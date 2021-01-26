@@ -1,5 +1,5 @@
 ---
-description: ' Use the Find by Name and Index node in the &ALYlong; &script-canvas;
+description: ' Use the Find by Name and Index node in the Amazon Lumberyard Script Canvas
   editor to find the substance material and graph index. '
 title: Find by Name and Index
 ---

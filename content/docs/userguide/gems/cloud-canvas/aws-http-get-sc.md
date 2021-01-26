@@ -1,6 +1,6 @@
 ---
-description: ' Perform HTTP GET operations with &script-canvas; in &ALYlong;. '
-title: Performing HTTP GET with &script-canvas;
+description: ' Perform HTTP GET operations with Script Canvas in Amazon Lumberyard. '
+title: Performing HTTP GET with Script Canvas
 ---
 # Performing HTTP GET with Script Canvas {#cloud-canvas-cloud-gem-aws-http-get-sc}
 

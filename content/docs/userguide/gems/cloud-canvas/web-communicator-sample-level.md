@@ -1,6 +1,6 @@
 ---
 description: ' Use the CommunicatorSample level to test the Web Communicator cloud
-  gem in &ALYlong;. '
+  gem in Amazon Lumberyard. '
 title: Testing the Web Communicator Cloud Gem
 ---
 # Testing the Web Communicator Cloud Gem {#cloud-canvas-cloud-gem-web-communicator-sample-level}

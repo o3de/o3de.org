@@ -1,5 +1,5 @@
 ---
-description: ' The &ALYlong; Cloth component. '
+description: ' The Amazon Lumberyard Cloth component. '
 title: Cloth component
 ---
 # Cloth component {#component-cloth}

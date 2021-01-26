@@ -1,6 +1,6 @@
 ---
 description: null
-title: '&script-canvas; Concepts and Terms'
+title: 'Script Canvas Concepts and Terms'
 ---
 # Script Canvas Concepts and Terms {#script-canvas-concepts-and-terms}
 

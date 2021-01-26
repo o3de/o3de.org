@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALY; &particle-editor; to create, edit, preview, manage, and
+description: ' Use the Lumberyard Particle Editor to create, edit, preview, manage, and
   save particle libraries and emitters that are used with entities in your level. '
-title: Using the &particle-editor;
+title: Using the Particle Editor
 ---
 # Using the Particle Editor {#particle-editor}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Create multiple cascaded shadow maps for your &ALYlong; level to controls
+description: ' Create multiple cascaded shadow maps for your Amazon Lumberyard level to controls
   how sun shadows look at varying distances. '
 title: Adding Cascaded Sun Shadows
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Use GridMate session service for session connectivity and management
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Sessions
 ---
 # Sessions {#network-session-service}

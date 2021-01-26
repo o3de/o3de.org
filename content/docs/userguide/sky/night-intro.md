@@ -1,5 +1,5 @@
 ---
-description: ' Set horizon, moon, and star options to create a dynamic sky in &ALY;. '
+description: ' Set horizon, moon, and star options to create a dynamic sky in Lumberyard. '
 title: Creating a Dynamic Night Sky
 ---
 # Creating a Dynamic Night Sky {#sky-night-intro}

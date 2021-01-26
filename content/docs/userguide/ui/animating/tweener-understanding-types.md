@@ -1,6 +1,6 @@
 ---
 description: ' Learn how different Scripted Entity Tweener easing types affect the
-  appearance of animations in &ALYlong;. '
+  appearance of animations in Amazon Lumberyard. '
 title: Supported Tweener Easing Types
 ---
 # Supported Tweener Easing Types {#ui-animating-tweener-understanding-types}

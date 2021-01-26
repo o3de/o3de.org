@@ -1,5 +1,5 @@
 ---
-description: ' See the following concepts for the AI system in &ALYlong;. '
+description: ' See the following concepts for the AI system in Amazon Lumberyard. '
 title: AI System Concept Examples
 ---
 # AI System Concept Examples {#ai-concepts-examples}

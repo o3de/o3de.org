@@ -1,5 +1,5 @@
 ---
-description: ' Add and manage particle libraries with the &ALY; &particle-editor;. '
+description: ' Add and manage particle libraries with the Lumberyard Particle Editor. '
 title: Managing Particle Libraries
 ---
 # Managing Particle Libraries {#particle-library}

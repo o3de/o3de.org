@@ -1,5 +1,5 @@
 ---
-description: ' Use the Slice Favorites Gem in &ALYlong; to flag slices as favorites. '
+description: ' Use the Slice Favorites Gem in Amazon Lumberyard to flag slices as favorites. '
 title: Slice Favorites
 ---
 # Slice Favorites {#gems-system-gem-slice-favorites}

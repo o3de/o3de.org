@@ -1,6 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem Portal API to manage slot types
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Slot Types
 ---
 # Slot Types {#cloud-canvas-cloud-gem-speech-recognition-api-slots}

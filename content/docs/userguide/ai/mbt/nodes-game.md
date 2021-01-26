@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the AI MBT nodes in &ALYlong;. '
+description: ' Learn more about the AI MBT nodes in Amazon Lumberyard. '
 title: Game AI Modular Behavior Tree (MBT) Nodes
 ---
 # Game AI Modular Behavior Tree \(MBT\) Nodes {#ai-mbt-nodes-game}

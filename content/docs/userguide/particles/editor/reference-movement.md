@@ -1,5 +1,5 @@
 ---
-description: ' Use the Movement attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Movement attribute in the Amazon Lumberyard Particle Editor to control
   the movement of the particle. '
 title: Movement Attribute
 ---

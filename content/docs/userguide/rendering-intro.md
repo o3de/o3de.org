@@ -1,7 +1,7 @@
 ---
 description: ' The following topics will guide you through the graphics features and
-  rendering effects of &ALY;. '
-title: Graphics and Rendering in &ALY;
+  rendering effects of Lumberyard. '
+title: Graphics and Rendering in Lumberyard
 ---
 # Graphics and Rendering in Lumberyard {#rendering-intro}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Dynamic Cloud Gem manifest files, EBus events, and
-  service API in &ALYlong;. '
+  service API in Amazon Lumberyard. '
 title: Dynamic Content Engineering Details
 ---
 # Dynamic Content Engineering Details {#cloud-canvas-cloud-gem-dc-engineering}

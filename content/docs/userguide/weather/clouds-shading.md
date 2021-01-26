@@ -1,5 +1,5 @@
 ---
-description: ' Use Cloud Shading parameters to customize your &ALYlong; cloud effects. '
+description: ' Use Cloud Shading parameters to customize your Amazon Lumberyard cloud effects. '
 title: Setting Cloud Shading Parameters
 ---
 # Setting Cloud Shading Parameters {#weather-clouds-shading}

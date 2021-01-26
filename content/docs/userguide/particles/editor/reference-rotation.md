@@ -1,5 +1,5 @@
 ---
-description: ' Use the Rotation attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Rotation attribute in the Amazon Lumberyard Particle Editor to control
   the rotation of the particle. '
 title: Rotation Attribute
 ---

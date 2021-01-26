@@ -1,6 +1,6 @@
 ---
 description: ' Improve performance by using a shader cache to store parsed and precompiled
-  shaders in &ALYlong;. '
+  shaders in Amazon Lumberyard. '
 title: Shader Cache and Generation
 ---
 # Shader Cache and Generation {#mat-shaders-custom-dev-cache-intro}

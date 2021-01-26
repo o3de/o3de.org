@@ -1,7 +1,7 @@
 ---
-description: ' Learn how &cloud; Resource Manager provisions your game''s connection
-  to &AWS;. '
-title: Understanding &cloud; Resource Manager
+description: ' Learn how Cloud Canvas Resource Manager provisions your game''s connection
+  to AWS. '
+title: Understanding Cloud Canvas Resource Manager
 ---
 # Understanding Cloud Canvas Resource Manager {#cloud-canvas-ui-rm-overview}
 

@@ -1,7 +1,7 @@
 ---
-description: ' Download and install &ALYlong;, which includes folders and files for
-  WAF, code, gems, &ly-editor;, assets, and samples. '
-title: Installing &ALY;
+description: ' Download and install Amazon Lumberyard, which includes folders and files for
+  WAF, code, gems, Lumberyard Editor, assets, and samples. '
+title: Installing Lumberyard
 ---
 # Installing Lumberyard {#setting-up-downloading-lumberyard}
 

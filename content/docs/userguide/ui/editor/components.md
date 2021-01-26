@@ -1,6 +1,6 @@
 ---
-description: ' Give a UI element additional properties by adding components in &ALYlong;''s
-  &ui-canvas-editor; . '
+description: ' Give a UI element additional properties by adding components in Amazon Lumberyard''s
+  UI Editor . '
 title: UI Components
 ---
 # UI Components {#ui-editor-components}

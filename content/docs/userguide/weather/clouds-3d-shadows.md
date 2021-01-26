@@ -1,5 +1,5 @@
 ---
-description: ' Add shadows to 3D clouds in &ALYlong;. '
+description: ' Add shadows to 3D clouds in Amazon Lumberyard. '
 title: Adding 3D Cloud Shadows
 ---
 # Adding 3D Cloud Shadows {#weather-clouds-3d-shadows}

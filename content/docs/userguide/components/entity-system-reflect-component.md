@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to reflect &ALY; components in C++. '
+description: ' Learn how to reflect Lumberyard components in C++. '
 title: Reflecting a Component for Serialization and Editing
 ---
 # Reflecting a Component for Serialization and Editing {#component-entity-system-reflect-component}

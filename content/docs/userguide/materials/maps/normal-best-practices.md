@@ -1,6 +1,6 @@
 ---
 description: ' Keep these best practices in mind when you create your texture maps
-  for normal lighting in &ALYlong;. '
+  for normal lighting in Amazon Lumberyard. '
 title: Normal Mapping Best Practices
 ---
 # Normal Mapping Best Practices {#mat-maps-normal-best-practices}

@@ -1,5 +1,5 @@
 ---
-description: ' Apply shaders and materials for objects in &ALYlong;. '
+description: ' Apply shaders and materials for objects in Amazon Lumberyard. '
 title: Working with shaders and materials
 ---
 # Working with shaders and materials {#mat-intro}

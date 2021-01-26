@@ -1,6 +1,6 @@
 ---
 description: ' Use temporal antialiasing (TAA) to reduce ghosting artifacts in motion
-  and set the amount of antialiasing needed for your graphics in &ALYlong;. '
+  and set the amount of antialiasing needed for your graphics in Amazon Lumberyard. '
 title: Temporal Antialiasing and Supersampling
 ---
 # Temporal Antialiasing and Supersampling {#graphics-rendering-anti-aliasing}

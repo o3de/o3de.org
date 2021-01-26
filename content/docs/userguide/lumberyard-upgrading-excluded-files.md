@@ -1,6 +1,6 @@
 ---
-description: ' File types to exclude when upgrading &ALY; with source control. '
-title: Files to Exclude When Upgrading &ALY;
+description: ' File types to exclude when upgrading Lumberyard with source control. '
+title: Files to Exclude When Upgrading Lumberyard
 ---
 # Files to Exclude When Upgrading Lumberyard {#lumberyard-upgrading-excluded-files}
 

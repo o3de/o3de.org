@@ -1,5 +1,5 @@
 ---
-description: ' Manage the intents for the &LEX; bots in your game from &ALYlong;''s
+description: ' Manage the intents for the Amazon Lex bots in your game from Amazon Lumberyard''s
   Speech Recognition Cloud Gem Portal. '
 title: Managing Intents
 ---

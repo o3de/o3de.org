@@ -1,6 +1,6 @@
 ---
 description: ' Use the Text-to-Speech Cloud Gem Portal to create text-to-speech features
-  for your game in &ALYlong;. '
+  for your game in Amazon Lumberyard. '
 title: Text-to-Speech Cloud Gem Portal
 ---
 # Text\-to\-Speech Cloud Gem Portal {#cloud-canvas-cloud-gem-text-to-speech-cgp}

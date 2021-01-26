@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to switch the skybox. '
-title: Switching Skyboxes with the &script-canvas; Editor
+description: ' Use the Amazon Lumberyard Script Canvas editor to switch the skybox. '
+title: Switching Skyboxes with the Script Canvas Editor
 ---
 # Switching Skyboxes with the Script Canvas Editor {#sky-skyboxes-switch}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Process Life Management gem to respond to various application
-  lifecycle events dispatched by the &ALYlong; engine, such as to pause your game,
+  lifecycle events dispatched by the Amazon Lumberyard engine, such as to pause your game,
   display a modal splash screen, and so on. '
 title: Process Life Management Gem
 ---

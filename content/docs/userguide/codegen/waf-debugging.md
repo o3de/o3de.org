@@ -1,6 +1,6 @@
 ---
 description: ' Debug the integration output of Waf''s Python scripts with PyCharm
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Waf Debugging with AZ Code Generator
 ---
 # Waf Debugging with AZ Code Generator {#az-code-gen-waf-debugging}

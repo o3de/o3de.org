@@ -1,5 +1,5 @@
 ---
-description: ' Set up an anim graph for the simulated object in &ALYlong;. '
+description: ' Set up an anim graph for the simulated object in Amazon Lumberyard. '
 title: Setting Up the Simulated Object Anim Graph Node
 ---
 # Setting Up the Simulated Object Anim Graph Node {#set-up-simulated-object-anim-graph-node}

@@ -1,6 +1,6 @@
 ---
-description: ' Use &CM; to edit programmatically components in &ALYlong;. '
-title: Programmer's Guide to &CM;
+description: ' Use Component Mode to edit programmatically components in Amazon Lumberyard. '
+title: Programmer's Guide to Component Mode
 ---
 # Programmer's Guide to Component Mode {#working-with-component-mode-programmatically}
 

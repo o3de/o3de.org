@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Sky Highlight component to add bursts of light to
+description: ' Use the Amazon Lumberyard Sky Highlight component to add bursts of light to
   the sky. '
 title: Sky Highlight
 ---

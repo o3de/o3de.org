@@ -1,5 +1,5 @@
 ---
-description: ' Use the console variables (CVARs) for the fur rendering in &ALYlong;. '
+description: ' Use the console variables (CVARs) for the fur rendering in Amazon Lumberyard. '
 title: Fur Console Variables
 ---
 # Fur Console Variables {#shader-ref-fur-consolevariables}

@@ -1,7 +1,7 @@
 ---
-description: ' You can use gems to add features and assets to your &ALYlong; game
+description: ' You can use gems to add features and assets to your Amazon Lumberyard game
   project. '
-title: Add modular features and assets with &gems;
+title: Add modular features and assets with gems
 ---
 # Add modular features and assets with Gems {#gems-system-gems}
 

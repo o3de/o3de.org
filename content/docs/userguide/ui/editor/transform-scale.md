@@ -1,6 +1,6 @@
 ---
-description: ' Use the Scale to Device setting in the &ui-canvas-editor; to scale
-  game UIs to different resolutions in &ALYlong;. '
+description: ' Use the Scale to Device setting in the UI Editor to scale
+  game UIs to different resolutions in Amazon Lumberyard. '
 title: Scale to Device
 ---
 # Scale to Device {#ui-editor-transform-scale}

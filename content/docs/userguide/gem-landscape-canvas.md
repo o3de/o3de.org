@@ -1,7 +1,7 @@
 ---
-description: ' Use &landscape-canvas; &gem; to author dynamic vegetation &ALYlong;
+description: ' Use Landscape Canvas Gem to author dynamic vegetation Amazon Lumberyard
   project. '
-title: '&landscape-canvas; &gem;'
+title: 'Landscape Canvas Gem'
 ---
 # Landscape Canvas Gem {#gem-landscape-canvas}
 

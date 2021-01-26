@@ -1,6 +1,6 @@
 ---
-description: ' Gather defect reports from within your &ALYlong; game and manage them
-  in the &cgp;. '
+description: ' Gather defect reports from within your Amazon Lumberyard game and manage them
+  in the Cloud Gem Portal. '
 title: Defect Reporter Cloud Gem
 ---
 # Defect Reporter Cloud Gem {#cloud-canvas-cloud-gem-defect-reporter-intro}

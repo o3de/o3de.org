@@ -1,7 +1,7 @@
 ---
-description: ' Use the &script-canvas; tutorials to learn about &ALYlong;''s visual
+description: ' Use the Script Canvas tutorials to learn about Amazon Lumberyard''s visual
   scripting system. '
-title: '&script-canvas; Tutorials'
+title: 'Script Canvas Tutorials'
 ---
 # Script Canvas Tutorials {#script-canvas-tutorials}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Sky Clouds gem to create realistic and detailed cloud and weather
-  effects in your &ALYlong; game levels. '
+  effects in your Amazon Lumberyard game levels. '
 title: Sky Clouds Gem
 ---
 # Sky Clouds Gem {#gems-system-gem-cloud}

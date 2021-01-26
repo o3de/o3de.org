@@ -1,5 +1,5 @@
 ---
-description: ' Control the degree to which &ALYlong; caches shadows to optimize performance
+description: ' Control the degree to which Amazon Lumberyard caches shadows to optimize performance
   and memory use. '
 title: Cached Shadows
 ---

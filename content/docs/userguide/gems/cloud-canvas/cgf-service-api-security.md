@@ -1,6 +1,6 @@
 ---
 description: ' Learn about security best practices when you use the Cloud Gem Framework
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Security
 ---
 # Security {#cloud-canvas-cgf-service-api-security}

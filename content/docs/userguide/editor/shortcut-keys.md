@@ -1,5 +1,5 @@
 ---
-description: ' Use &ly-editor; keyboard shortcuts (hot keys or hotkeys). '
+description: ' Use Lumberyard Editor keyboard shortcuts (hot keys or hotkeys). '
 title: Using Keyboard Shortcuts
 ---
 # Using Keyboard Shortcuts {#lumberyard-editor-shortcut-keys}

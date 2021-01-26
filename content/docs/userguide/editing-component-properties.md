@@ -1,5 +1,5 @@
 ---
-description: ' Edit component properties that are attached to your entities in &ALYlong;. '
+description: ' Edit component properties that are attached to your entities in Amazon Lumberyard. '
 title: Editing Component Properties
 ---
 # Editing Component Properties {#editing-component-properties}

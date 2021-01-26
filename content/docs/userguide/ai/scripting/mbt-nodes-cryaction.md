@@ -1,6 +1,6 @@
 ---
-description: ' See the following &cryaction; nodes in &ALYlong;. '
-title: '&cryaction; Nodes'
+description: ' See the following CryAction nodes in Amazon Lumberyard. '
+title: 'CryAction Nodes'
 ---
 # CryAction Nodes {#ai-scripting-mbt-nodes-cryaction}
 

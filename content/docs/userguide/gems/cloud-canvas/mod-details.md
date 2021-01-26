@@ -1,5 +1,5 @@
 ---
-description: ' Learn the implementation details of the &ALYlong; Message of the Day
+description: ' Learn the implementation details of the Amazon Lumberyard Message of the Day
   Cloud Gem. '
 title: Cloud Gem Message of the Day Implementation Details
 ---

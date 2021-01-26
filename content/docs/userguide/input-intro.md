@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to use the game input system in &ALYlong;. '
-title: Input in &ALYlong;
+description: ' Learn how to use the game input system in Amazon Lumberyard. '
+title: Input in Amazon Lumberyard
 ---
 # Input in Amazon Lumberyard {#input-intro}
 

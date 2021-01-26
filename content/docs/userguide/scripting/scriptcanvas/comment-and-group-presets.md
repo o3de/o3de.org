@@ -1,6 +1,6 @@
 ---
 description: ' Save customized node comments and groups as presets for quick reuse
-  in &ALYlong;''s &script-canvas; visual scripting editor. '
+  in Amazon Lumberyard''s Script Canvas visual scripting editor. '
 title: Creating Comment and Group Presets
 ---
 # Creating Comment and Group Presets {#script-canvas-comment-and-group-presets}

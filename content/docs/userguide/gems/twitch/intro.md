@@ -1,5 +1,5 @@
 ---
-description: ' Engage broadcasters and viewers on Twitch in &ALYlong;. '
+description: ' Engage broadcasters and viewers on Twitch in Amazon Lumberyard. '
 title: Engaging Broadcasters and Viewers on Twitch
 ---
 # Engaging Broadcasters and Viewers on Twitch {#twitch-intro}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Render Asynchronous node in the &ALYlong; &script-canvas; editor
+description: ' Use the Render Asynchronous node in the Amazon Lumberyard Script Canvas editor
   to regenerate the texture maps for all procedural materials that have pending parameter
   changes. '
 title: Render Asynchronous

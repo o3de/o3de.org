@@ -1,7 +1,7 @@
 ---
-description: ' Use the &VIM; to interact with entities in the &ALYlong; viewport.
-  Learn about the differences between the new &VIM; and the old interaction model. '
-title: Working with the &VIM;
+description: ' Use the Viewport Interaction Model to interact with entities in the Amazon Lumberyard viewport.
+  Learn about the differences between the new Viewport Interaction Model and the old interaction model. '
+title: Working with the Viewport Interaction Model
 ---
 # Working with the Viewport Interaction Model {#working-with-viewport-interaction-model}
 

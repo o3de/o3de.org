@@ -1,5 +1,5 @@
 ---
-description: ' Use the scopes shader to render optical effects in &ALYlong;. '
+description: ' Use the scopes shader to render optical effects in Amazon Lumberyard. '
 title: Scopes Shader
 ---
 # Scopes Shader {#shader-ref-scopes}

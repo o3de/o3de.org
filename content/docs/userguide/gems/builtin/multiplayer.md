@@ -1,6 +1,6 @@
 ---
 description: ' Add networking functionality to your project with the Multiplayer gem
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Multiplayer Gem
 ---
 # Multiplayer Gem {#gems-system-gem-multiplayer}

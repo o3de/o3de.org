@@ -1,5 +1,5 @@
 ---
-description: ' See the best practices for working with diffuse maps in &ALYlong;. '
+description: ' See the best practices for working with diffuse maps in Amazon Lumberyard. '
 title: Working with Diffuse Maps
 ---
 # Working with Diffuse Maps {#mat-maps-diffuse}

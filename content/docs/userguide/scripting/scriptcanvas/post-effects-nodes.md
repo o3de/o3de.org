@@ -1,5 +1,5 @@
 ---
-description: ' Configure post effects in the &ALYlong; &script-canvas; editor. '
+description: ' Configure post effects in the Amazon Lumberyard Script Canvas editor. '
 title: Post Effects Nodes
 ---
 # Post Effects Nodes {#script-canvas-post-effects-nodes}

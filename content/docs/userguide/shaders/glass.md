@@ -1,6 +1,6 @@
 ---
 description: ' Enable glass shaders to render windows and glass objects with effects
-  such as fog and tint for &ALYlong;. '
+  such as fog and tint for Amazon Lumberyard. '
 title: Glass Shader
 ---
 # Glass Shader {#shader-ref-glass}

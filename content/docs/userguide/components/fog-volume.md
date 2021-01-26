@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Fog Volume to create a fog volume in your game. '
+description: ' Use the Amazon Lumberyard Fog Volume to create a fog volume in your game. '
 title: Fog Volume
 ---
 # Fog Volume {#component-fog-volume}

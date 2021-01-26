@@ -1,5 +1,5 @@
 ---
-description: ' Regenerate the entire mesh or a portion of it in &ALYlong;. '
+description: ' Regenerate the entire mesh or a portion of it in Amazon Lumberyard. '
 title: Regenerating the Navigation Mesh
 ---
 # Regenerating the Navigation Mesh {#ai-nav-mesh-regen}

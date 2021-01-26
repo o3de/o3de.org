@@ -1,5 +1,5 @@
 ---
-description: ' Use the fur features for fur materials in &ALY;. '
+description: ' Use the fur features for fur materials in Lumberyard. '
 title: Fur Features
 ---
 # Fur Features {#shader-ref-fur-features}

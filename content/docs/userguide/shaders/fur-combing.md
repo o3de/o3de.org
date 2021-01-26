@@ -1,6 +1,6 @@
 ---
-description: ' Use fur combing to render fur with a more controlled look in &ALYlong;''s
-  &material-editor;. '
+description: ' Use fur combing to render fur with a more controlled look in Amazon Lumberyard''s
+  Material Editor. '
 title: Fur Combing
 ---
 # Fur Combing {#shader-ref-fur-combing}

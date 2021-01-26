@@ -1,5 +1,5 @@
 ---
-description: ' Use the On Ready node in the &ALYlong; &script-canvas; to indicate
+description: ' Use the On Ready node in the Amazon Lumberyard Script Canvas to indicate
   when the material owner finishes loading its assets. '
 title: On Ready
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use a layout grid component in the &ALYlong; &ui-canvas-editor; to
+description: ' Use a layout grid component in the Amazon Lumberyard UI Editor to
   organize child elements into a uniform grid. '
 title: LayoutGrid
 ---

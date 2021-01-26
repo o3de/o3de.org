@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lighting attribute in the &ALYlong; &particle-editor; to control
+description: ' Use the Lighting attribute in the Amazon Lumberyard Particle Editor to control
   the lighting of the particle. '
 title: Lighting Attribute
 ---

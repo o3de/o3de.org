@@ -1,5 +1,5 @@
 ---
-description: ' Create collision groups for the PhysX system in &ALYlong;. '
+description: ' Create collision groups for the PhysX system in Amazon Lumberyard. '
 title: Collision Groups
 ---
 # Collision Groups {#physx-configuration-collision-groups}

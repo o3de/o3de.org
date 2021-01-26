@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about the file types for &animation-editor; . '
-title: '&animation-editor; File Types'
+description: ' Learn more about the file types for Animation Editor . '
+title: 'Animation Editor File Types'
 ---
 # Animation Editor File Types {#char-animation-editor-file-types}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Create OpenSSL users that can receive messages from your game in &ALYlong;. '
+description: ' Create OpenSSL users that can receive messages from your game in Amazon Lumberyard. '
 title: Web Communicator Cloud Gem Portal
 ---
 # Web Communicator Cloud Gem Portal {#cloud-canvas-cloud-gem-web-communicator-cgp}

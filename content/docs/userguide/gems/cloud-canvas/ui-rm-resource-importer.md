@@ -1,6 +1,6 @@
 ---
-description: ' Add your existing AWS resources to a &cloud; resource group. '
-title: ' Importing Resource Definitions into &cloud;'
+description: ' Add your existing AWS resources to a Cloud Canvas resource group. '
+title: ' Importing Resource Definitions into Cloud Canvas'
 ---
 # Importing Resource Definitions into Cloud Canvas {#cloud-canvas-ui-rm-resource-importer}
 

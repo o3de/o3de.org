@@ -1,6 +1,6 @@
 ---
-description: ' Create a managed group of &IAM; users for &cloud; in &ALYlong;. '
-title: Create &IAM; Users and Groups to Administer &cloud; Teams
+description: ' Create a managed group of IAM users for Cloud Canvas in Amazon Lumberyard. '
+title: Create IAM Users and Groups to Administer Cloud Canvas Teams
 ---
 # Create IAM Users and Groups to Administer Cloud Canvas Teams {#cloud-canvas-tutorial-team-admin}
 

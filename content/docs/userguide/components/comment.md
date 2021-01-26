@@ -1,5 +1,5 @@
 ---
-description: ' Use the Comment component in &ALYlong; to add text comments for component
+description: ' Use the Comment component in Amazon Lumberyard to add text comments for component
   entities. '
 title: Comment
 ---

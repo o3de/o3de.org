@@ -1,6 +1,6 @@
 ---
-description: ' Delete &cloud; deployments and their resources from your project. '
-title: Deleting &cloud; Deployments and Their Resources
+description: ' Delete Cloud Canvas deployments and their resources from your project. '
+title: Deleting Cloud Canvas Deployments and Their Resources
 ---
 # Deleting Cloud Canvas Deployments and Their Resources {#cloud-canvas-how-to-delete-deployments}
 

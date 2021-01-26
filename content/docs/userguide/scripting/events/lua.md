@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use script events in Lua in &ALYlong;. '
+description: ' Learn how to use script events in Lua in Amazon Lumberyard. '
 title: Using Script Events in Lua
 ---
 # Using Script Events in Lua {#script-events-lua}

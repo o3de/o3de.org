@@ -1,5 +1,5 @@
 ---
-description: ' Create additive animations in &ALYlong;. '
+description: ' Create additive animations in Amazon Lumberyard. '
 title: Creating Additive Animations
 ---
 # Creating Additive Animations {#char-fbx-importer-motion-additive}

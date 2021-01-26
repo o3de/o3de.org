@@ -1,7 +1,7 @@
 ---
-description: ' Use the &whitebox; gem to add &whitebox; rapid design components to
-  your &ALYlong; project. '
-title: '&whitebox; &gem;'
+description: ' Use the White Box gem to add White Box rapid design components to
+  your Amazon Lumberyard project. '
+title: 'White Box Gem'
 ---
 # White Box Gem {#gem-white-box}
 

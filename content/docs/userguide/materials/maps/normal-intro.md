@@ -1,5 +1,5 @@
 ---
-description: ' See the following best practices for normal maps in &ALYlong;. '
+description: ' See the following best practices for normal maps in Amazon Lumberyard. '
 title: Working with Normal Maps
 ---
 # Working with Normal Maps {#mat-maps-normal-intro}

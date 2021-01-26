@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for using script events in &ALYlong;. '
+description: ' Learn best practices for using script events in Amazon Lumberyard. '
 title: Script Events Best Practices
 ---
 # Script Events Best Practices {#script-events-best-practices}

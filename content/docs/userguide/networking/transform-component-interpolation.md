@@ -1,5 +1,5 @@
 ---
-description: ' Use the interpolation options for the Transform component in &ALYlong;
+description: ' Use the interpolation options for the Transform component in Amazon Lumberyard
   to smooth movement of entities under poor network conditions. '
 title: Transform Component Interpolation
 ---

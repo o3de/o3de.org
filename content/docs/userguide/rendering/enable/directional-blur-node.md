@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Directional Blur node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Directional Blur node in the Amazon Lumberyard Script Canvas
   editor to configure directional blur effects. '
 title: Enable Directional Blur
 ---

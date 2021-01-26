@@ -1,6 +1,6 @@
 ---
 description: ' Use the Water Volume component to create small and medium bodies of
-  water in your &ALYlong; level. '
+  water in your Amazon Lumberyard level. '
 title: Water Volume
 ---
 # Water Volume {#component-water-volume}

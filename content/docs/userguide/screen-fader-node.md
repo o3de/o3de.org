@@ -1,5 +1,5 @@
 ---
-description: ' Use the Screen Fader node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Screen Fader node in the Amazon Lumberyard Script Canvas editor to
   control fading the screen to a color and/or texture. '
 title: Screen Fader
 ---

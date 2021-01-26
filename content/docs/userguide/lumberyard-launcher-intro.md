@@ -1,7 +1,7 @@
 ---
 description: ' Verify that you have the required third-party software, SDKs, and plugins
-  to run &ALYlong; with the &ly-launcher;. '
-title: Using &ly-launcher; to Set Up Your Development Environment
+  to run Amazon Lumberyard with the Lumberyard Setup Assistant. '
+title: Using Lumberyard Setup Assistant to Set Up Your Development Environment
 ---
 # Using Lumberyard Setup Assistant to Set Up Your Development Environment {#lumberyard-launcher-intro}
 

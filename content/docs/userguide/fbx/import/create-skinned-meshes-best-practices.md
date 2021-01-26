@@ -1,6 +1,6 @@
 ---
 description: ' See the best practices for working with skinned meshes actors for the
-  &animation-editor; in &ALYlong;. '
+  Animation Editor in Amazon Lumberyard. '
 title: Creating Skinned Meshes for Actors
 ---
 # Creating Skinned Meshes for Actors {#char-fbx-importer-create-skinned-meshes-best-practices}

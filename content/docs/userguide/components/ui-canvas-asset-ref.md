@@ -1,5 +1,5 @@
 ---
-description: ' Use the UI Canvas Asset Ref component in &ALYlong; to associate a UI
+description: ' Use the UI Canvas Asset Ref component in Amazon Lumberyard to associate a UI
   canvas with a component entity in a level. '
 title: UI Canvas Asset Ref
 ---

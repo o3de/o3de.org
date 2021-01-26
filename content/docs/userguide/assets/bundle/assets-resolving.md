@@ -1,5 +1,5 @@
 ---
-description: ' Resolve missing assets in your &ALY; game project. '
+description: ' Resolve missing assets in your Lumberyard game project. '
 title: Resolving Missing Assets
 ---
 # Resolving Missing Assets {#asset-bundler-assets-resolving}

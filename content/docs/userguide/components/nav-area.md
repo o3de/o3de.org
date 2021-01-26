@@ -1,6 +1,6 @@
 ---
 description: ' Use the Navigation Area component with the Polygon Prism Shape component
-  to create navigation meshes in &ALYlong;. '
+  to create navigation meshes in Amazon Lumberyard. '
 title: Navigation Area
 ---
 # Navigation Area {#component-nav-area}

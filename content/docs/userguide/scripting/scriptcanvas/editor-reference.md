@@ -1,5 +1,5 @@
 ---
-description: ' Learn about each &script-canvas; menu option and tool in the Editor
+description: ' Learn about each Script Canvas menu option and tool in the Editor
   Reference. '
 title: Editor Reference
 ---

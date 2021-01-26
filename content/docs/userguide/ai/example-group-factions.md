@@ -1,5 +1,5 @@
 ---
-description: ' See the following example for global and group AI in &ALYlong;. '
+description: ' See the following example for global and group AI in Amazon Lumberyard. '
 title: 'Group and Global AI: Factions'
 ---
 # Group and Global AI: Factions {#ai-concepts-example-group-factions}

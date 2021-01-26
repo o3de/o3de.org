@@ -1,5 +1,5 @@
 ---
-description: ' &ALYlong;. '
+description: ' Amazon Lumberyard. '
 title: Ebus Request Bus Interface
 ---
 # Ebus Request Bus Interface {#vegetation-layer-spawner-ebus}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Material node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Set Material node in the Amazon Lumberyard Script Canvas editor to
   specify an entity''s material. '
 title: Set Material
 ---

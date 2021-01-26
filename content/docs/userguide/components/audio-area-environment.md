@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Area Environment component in &ALY; to apply an environment
+description: ' Use the Audio Area Environment component in Lumberyard to apply an environment
   effect to sounds that an entity triggers. '
 title: Audio Area Environment
 ---

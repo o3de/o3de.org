@@ -1,6 +1,6 @@
 ---
 description: ' Use source code annotations to pass additional data to the template
-  drivers that generate code when using &ALYlong;''s AZ Code Generator. '
+  drivers that generate code when using Amazon Lumberyard''s AZ Code Generator. '
 title: Custom Code Generator Annotations
 ---
 # Custom Code Generator Annotations {#az-code-gen-custom-annotations}

@@ -1,6 +1,6 @@
 ---
-description: ' Use &script-canvas; to upload a file to &S3; in &ALYlong;. '
-title: Uploading a File to &S3; with &script-canvas;
+description: ' Use Script Canvas to upload a file to S3 in Amazon Lumberyard. '
+title: Uploading a File to S3 with Script Canvas
 ---
 # Uploading a File to Amazon S3 with Script Canvas {#cloud-canvas-cloud-gem-aws-s3-upload-sc}
 

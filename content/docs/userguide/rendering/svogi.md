@@ -1,5 +1,5 @@
 ---
-description: ' Use voxel octree global illumination or voxel GI in &ALYlong; to provide
+description: ' Use voxel octree global illumination or voxel GI in Amazon Lumberyard to provide
   dynamic indirect light and shadows bouncing from static objects. '
 title: Voxel-based Global Illumination (SVOGI)
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use the UITooltipComponent to provide the text of a tooltip in &ALYlong;. '
+description: ' Use the UITooltipComponent to provide the text of a tooltip in Amazon Lumberyard. '
 title: UITooltipComponent
 ---
 # UITooltipComponent {#lua-scripting-ces-api-ui-uitooltipcomponent}

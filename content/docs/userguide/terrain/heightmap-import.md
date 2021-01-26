@@ -1,6 +1,6 @@
 ---
 description: ' Use one of the supported file formats to import a terrain heightmap
-  into &ALY;. '
+  into Lumberyard. '
 title: Importing a Terrain Heightmap
 ---
 # Importing a Terrain Heightmap {#terrain-heightmap-import}

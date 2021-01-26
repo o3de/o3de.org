@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Ghosting node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Ghosting node in the Amazon Lumberyard Script Canvas editor
   to disable ghosting effects. '
 title: Disable Ghosting
 ---

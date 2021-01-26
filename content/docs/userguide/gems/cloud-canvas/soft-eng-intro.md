@@ -1,7 +1,7 @@
 ---
-description: ' Create new &cloud; cloud gems and resource groups, or modify the ones
-  included with &ALYlong;. '
-title: '&cloud; Software Engineering Guide'
+description: ' Create new Cloud Canvas cloud gems and resource groups, or modify the ones
+  included with Amazon Lumberyard. '
+title: 'Cloud Canvas Software Engineering Guide'
 ---
 # Cloud Canvas Software Engineering Guide {#cloud-canvas-soft-eng-intro}
 

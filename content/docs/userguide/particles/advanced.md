@@ -1,5 +1,5 @@
 ---
-description: ' Use advanced particle techniques in the &ALYlong; &particle-editor;. '
+description: ' Use advanced particle techniques in the Amazon Lumberyard Particle Editor. '
 title: Advanced Particle Techniques
 ---
 # Advanced Particle Techniques {#particle-advanced}

@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s LmbrCentral gem to create cinematic sequences for
+description: ' Use Amazon Lumberyard''s LmbrCentral gem to create cinematic sequences for
   your games. '
 title: LmbrCentral Gem
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Learn how replicas are used by GridMate peers to synchronize a replicas
-  state across a &ALYlong; session. '
+  state across a Amazon Lumberyard session. '
 title: Replica
 ---
 # Replica {#network-replicas-replica}

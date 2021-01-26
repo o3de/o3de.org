@@ -1,7 +1,7 @@
 ---
 description: ' Import a saved layer to apply materials, textures, and shader settings
-  to your &ALY; level all at once. '
-title: Importing &terrain-textures;
+  to your Lumberyard level all at once. '
+title: Importing Terrain Texture Layers
 ---
 # Importing Terrain Texture Layers {#terrain-texture-layers-import}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Upgrade the free version Wwise LTX to the full version for &ALYlong;. '
+description: ' Upgrade the free version Wwise LTX to the full version for Amazon Lumberyard. '
 title: Upgrading Wwise LTX to the Full Version
 ---
 # Upgrading Wwise LTX to the Full Version {#audio-wwise-upgrade}

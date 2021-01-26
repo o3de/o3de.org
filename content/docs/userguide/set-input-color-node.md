@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Input Color node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Input Color node in the Amazon Lumberyard Script Canvas editor
   to set the value for a procedural material input parameter as a color. '
 title: Set Input Color
 ---

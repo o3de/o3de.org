@@ -1,5 +1,5 @@
 ---
-description: ' Set up actor entities with multiple or a single FBX file in &ALYlong;. '
+description: ' Set up actor entities with multiple or a single FBX file in Amazon Lumberyard. '
 title: Setting Up Actor Entities
 ---
 # Setting Up Actor Entities {#component-actor-component-entity-setup}

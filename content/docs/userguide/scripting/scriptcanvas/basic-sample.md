@@ -1,7 +1,7 @@
 ---
-description: ' Use the &script-canvas; Basic Sample to learn basic gameplay functions
-  in &ALYlong;. '
-title: '&script-canvas; Basic Sample'
+description: ' Use the Script Canvas Basic Sample to learn basic gameplay functions
+  in Amazon Lumberyard. '
+title: 'Script Canvas Basic Sample'
 ---
 # Script Canvas Basic Sample {#script-canvas-basic-sample}
 

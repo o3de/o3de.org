@@ -1,5 +1,5 @@
 ---
-description: ' Use wind bending for fur materials in &ALYlong;. '
+description: ' Use wind bending for fur materials in Amazon Lumberyard. '
 title: Wind Bending
 ---
 # Wind Bending {#shader-ref-fur-features-bending-wind}

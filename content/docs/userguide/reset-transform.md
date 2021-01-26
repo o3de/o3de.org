@@ -1,5 +1,5 @@
 ---
-description: ' Reset the transform properties for entities in &ALYlong;. '
+description: ' Reset the transform properties for entities in Amazon Lumberyard. '
 title: Resetting the Transform
 ---
 # Resetting the Transform {#reset-transform}

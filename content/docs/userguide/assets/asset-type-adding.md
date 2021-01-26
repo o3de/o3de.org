@@ -1,6 +1,6 @@
 ---
-description: ' Add a custom asset type to &ALYlong;. '
-title: Adding an Asset Type to &ALY;
+description: ' Add a custom asset type to Amazon Lumberyard. '
+title: Adding an Asset Type to Lumberyard
 ---
 # Adding an Asset Type to Lumberyard {#asset-pipeline-asset-type-adding}
 

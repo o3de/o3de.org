@@ -1,6 +1,6 @@
 ---
-description: ' See the layout of the &script-canvas; editor in &ly-editor;. '
-title: '&script-canvas; Editor Interface'
+description: ' See the layout of the Script Canvas editor in Lumberyard Editor. '
+title: 'Script Canvas Editor Interface'
 ---
 # Script Canvas Editor Interface {#script-canvas-editor-interface}
 

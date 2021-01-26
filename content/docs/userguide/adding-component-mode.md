@@ -1,5 +1,5 @@
 ---
-description: ' Choose a component to add a &CM; to in &ALYlong;. '
+description: ' Choose a component to add a Component Mode to in Amazon Lumberyard. '
 title: 'Step 1: Choose a Component'
 ---
 # Step 1: Choose a Component {#adding-component-mode}

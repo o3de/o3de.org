@@ -1,5 +1,5 @@
 ---
-description: ' Add navigation seed points for AI agents in &ALYlong;. '
+description: ' Add navigation seed points for AI agents in Amazon Lumberyard. '
 title: Adding Navigation Seed Points
 ---
 # Adding Navigation Seed Points {#ai-nav-seed-points}

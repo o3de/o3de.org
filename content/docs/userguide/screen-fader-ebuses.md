@@ -1,5 +1,5 @@
 ---
-description: ' Use the ScreenFader EBuses in the &ALYlong; &script-canvas; editor
+description: ' Use the ScreenFader EBuses in the Amazon Lumberyard Script Canvas editor
   to provide the Lua scripting equivalent to the Screen Fader node. '
 title: ScreenFader EBuses
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for debug tracing in &ALYlong;. '
+description: ' Learn best practices for debug tracing in Amazon Lumberyard. '
 title: Tracing
 ---
 # Tracing {#cpp-best-practices-lumberyard-tracing}

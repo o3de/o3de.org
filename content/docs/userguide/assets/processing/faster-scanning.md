@@ -1,7 +1,7 @@
 ---
-description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup time
-  in &ALYlong;. '
-title: Enabling &asset-processor;'s Faster Scanning Mode
+description: ' Use Asset Processor''s Faster Scanning Mode to improve startup time
+  in Amazon Lumberyard. '
+title: Enabling Asset Processor's Faster Scanning Mode
 ---
 # Enabling Asset Processor's Faster Scanning Mode {#asset-processor-faster-scanning}
 

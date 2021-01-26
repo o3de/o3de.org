@@ -1,7 +1,7 @@
 ---
-description: ' Use the Twitch Chat Gem to add &chatplay; support to your &ALYlong;
+description: ' Use the Twitch Chat Gem to add Twitch ChatPlay support to your Amazon Lumberyard
   game and trigger events based on Twitch chat activity. '
-title: Twitch Chat &gem;
+title: Twitch Chat Gem
 ---
 # Twitch Chat Gem {#gem-twitch-chatplay}
 

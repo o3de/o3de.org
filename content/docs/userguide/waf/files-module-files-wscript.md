@@ -1,6 +1,6 @@
 ---
 description: ' Use Waf module files (wscript) to specify a fixed name and defined
-  rules for your &ALYlong; game project folder. '
+  rules for your Amazon Lumberyard game project folder. '
 title: Waf Module Files (wscript)
 ---
 # Waf Module Files \(wscript\) {#waf-files-module-files-wscript}

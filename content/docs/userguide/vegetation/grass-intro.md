@@ -1,5 +1,5 @@
 ---
-description: ' Add grass to your &ALY; level either with the quick drag method or
+description: ' Add grass to your Lumberyard level either with the quick drag method or
   the more accurate manual method. '
 title: Adding Grass
 ---

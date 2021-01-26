@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to debug and troubleshoot Waf in &ALYlong;. '
+description: ' Learn how to debug and troubleshoot Waf in Amazon Lumberyard. '
 title: Debugging Waf
 ---
 # Debugging Waf {#waf-debug}

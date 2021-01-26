@@ -1,7 +1,7 @@
 ---
-description: ' Understand the workflow of &ALYlong;''s runtime asset system and learn
+description: ' Understand the workflow of Amazon Lumberyard''s runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
-title: Programming the &ALY; AZCore Runtime Asset System
+title: Programming the Lumberyard AZCore Runtime Asset System
 ---
 # Programming the Lumberyard AZCore Runtime Asset System {#asset-pipeline-asset-system-programming}
 

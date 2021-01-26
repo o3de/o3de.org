@@ -1,6 +1,6 @@
 ---
 description: ' Use a button component to make an element behave like a button in the
-  &ALY; &ui-canvas-editor;. '
+  Lumberyard UI Editor. '
 title: Button
 ---
 # Button {#ui-editor-components-button}

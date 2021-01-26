@@ -1,6 +1,6 @@
 ---
-description: ' Create a custom node that you can use in &ALY;''s &script-canvas;. '
-title: Creating Custom Nodes in &script-canvas;
+description: ' Create a custom node that you can use in Lumberyard''s Script Canvas. '
+title: Creating Custom Nodes in Script Canvas
 ---
 # Creating Custom Nodes in Script Canvas {#script-canvas-custom-nodes}
 

@@ -1,5 +1,5 @@
 ---
-description: ' &ALYlong;''s UI system uses slices, a cascaded data management system
+description: ' Amazon Lumberyard''s UI system uses slices, a cascaded data management system
   for entities. '
 title: Working with UI Slices
 ---

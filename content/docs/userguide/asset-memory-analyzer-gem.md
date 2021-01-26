@@ -1,5 +1,5 @@
 ---
-description: ' Learn to profile memory usage in &ALYlong; projects with the &astmem;. '
+description: ' Learn to profile memory usage in Amazon Lumberyard projects with the <guilabel>Asset Memory Analyzer</guilabel>. '
 title: Asset Memory Analyzer Gem
 ---
 # Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}

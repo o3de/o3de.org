@@ -1,5 +1,5 @@
 ---
-description: ' Use Time of Day nodes in the &ALYlong; &script-canvas; editor to configure
+description: ' Use Time of Day nodes in the Amazon Lumberyard Script Canvas editor to configure
   the time of day in your level. '
 title: Time of Day Nodes
 ---

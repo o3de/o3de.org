@@ -1,5 +1,5 @@
 ---
-description: ' Use AzTest and AZ Test Scanner to perform automated testing in &ALYlong;. '
+description: ' Use AzTest and AZ Test Scanner to perform automated testing in Amazon Lumberyard. '
 title: Writing Tests for AzTest
 ---
 # Writing Tests for AzTest {#testing-aztest-writing-tests}

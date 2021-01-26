@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about the &project-configurator; for &ALYlong;. '
-title: Understanding the &project-configurator;
+description: ' Learn more about the Project Configurator for Amazon Lumberyard. '
+title: Understanding the Project Configurator
 ---
 # Understanding the Project Configurator {#configurator-how-it-works}
 

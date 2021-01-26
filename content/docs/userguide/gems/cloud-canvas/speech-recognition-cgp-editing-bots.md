@@ -1,5 +1,5 @@
 ---
-description: ' Edit the &LEX; bots in your game from &ALY;''s Speech Recognition Cloud
+description: ' Edit the Amazon Lex bots in your game from Lumberyard''s Speech Recognition Cloud
   Gem Portal. '
 title: Editing Bots
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Manage users and administrators of your Cloud Gem Portal in &ALYlong;. '
+description: ' Manage users and administrators of your Cloud Gem Portal in Amazon Lumberyard. '
 title: User Management in the Cloud Gem Portal
 ---
 # User Management in the Cloud Gem Portal {#cloud-canvas-cloud-gem-portal-user-management}

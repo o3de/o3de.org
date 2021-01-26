@@ -1,7 +1,7 @@
 ---
-description: ' Use console commands to modify and configure the &ALYlong; runtime
+description: ' Use console commands to modify and configure the Amazon Lumberyard runtime
   application. '
-title: '&remote-console;'
+title: 'Universal Remote Console'
 ---
 # Universal Remote Console {#lumberyard-remote-console}
 

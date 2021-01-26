@@ -1,5 +1,5 @@
 ---
-description: Use the Particle Emitter component in &ALYlong; to emit two-dimensional
+description: Use the Particle Emitter component in Amazon Lumberyard to emit two-dimensional
   particles from a UI element.
 title: Particle Emitter
 ---

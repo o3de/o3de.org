@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s remote shader compiler to build shaders for your macOS
+description: ' Use Amazon Lumberyard''s remote shader compiler to build shaders for your macOS
   games. '
 title: Building Shaders for macOS Games
 ---

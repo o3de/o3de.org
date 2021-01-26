@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about pathfinding costs in &ALYlong;. '
+description: ' Learn more about pathfinding costs in Amazon Lumberyard. '
 title: Pathfinding Costs
 ---
 # Pathfinding Costs {#ai-concepts-pathfinding-costs}

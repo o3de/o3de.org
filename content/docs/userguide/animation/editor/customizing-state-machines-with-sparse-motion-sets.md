@@ -1,6 +1,6 @@
 ---
-description: ' Use custom state machines to control motions in the &animation-editor;
-  for &ALYlong;. '
+description: ' Use custom state machines to control motions in the Animation Editor
+  for Amazon Lumberyard. '
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 # Customizing State Machine Routing with Sparse Motion Sets {#animation-editor-customizing-state-machines-with-sparse-motion-sets}

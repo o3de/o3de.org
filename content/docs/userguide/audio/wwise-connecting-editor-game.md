@@ -1,5 +1,5 @@
 ---
-description: ' Connect Wwise to &ly-editor; and the game for &ALYlong;. '
+description: ' Connect Wwise to Lumberyard Editor and the game for Amazon Lumberyard. '
 title: Connecting Wwise to the Editor and Game
 ---
 # Connecting Wwise to the Editor and Game {#audio-wwise-connecting-editor-game}

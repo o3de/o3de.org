@@ -1,5 +1,5 @@
 ---
-description: ' Add realistic fog beneath water surfaces in your &ALY; level. '
+description: ' Add realistic fog beneath water surfaces in your Lumberyard level. '
 title: Adding Fog Beneath Water
 ---
 # Adding Fog Beneath Water {#terrain-water-fog}

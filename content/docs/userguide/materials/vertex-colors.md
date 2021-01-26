@@ -1,5 +1,5 @@
 ---
-description: ' Use vertex colors for materials in &ALYlong;. '
+description: ' Use vertex colors for materials in Amazon Lumberyard. '
 title: Using Vertex Colors
 ---
 # Using Vertex Colors {#mat-vertex-colors}

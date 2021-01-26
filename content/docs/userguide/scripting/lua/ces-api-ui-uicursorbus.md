@@ -1,5 +1,5 @@
 ---
-description: ' Use UiCursorBus to manipulate the cursor in a game in &ALYlong;. '
+description: ' Use UiCursorBus to manipulate the cursor in a game in Amazon Lumberyard. '
 title: UiCursorBus
 ---
 # UiCursorBus {#lua-scripting-ces-api-ui-uicursorbus}

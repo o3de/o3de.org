@@ -1,5 +1,5 @@
 ---
-description: ' Use smart objects for AI agents to interact with other objects in &ALYlong;. '
+description: ' Use smart objects for AI agents to interact with other objects in Amazon Lumberyard. '
 title: Using Smart Objects for AI Navigation
 ---
 # Using Smart Objects for AI Navigation {#ai-nav-off-mesh-smart-objects}

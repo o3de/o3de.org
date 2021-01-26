@@ -1,6 +1,6 @@
 ---
 description: ' Use the Twitch Metastream feature to customize game streams with overlays
-  of statistics and events for &ALYlong;. '
+  of statistics and events for Amazon Lumberyard. '
 title: Metastream Gem
 ---
 # Metastream Gem {#gems-system-gem-metastream}

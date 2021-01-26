@@ -1,5 +1,5 @@
 ---
-description: ' Use material nodes in &ly-editor;''s &trackview-editor; to animate
+description: ' Use material nodes in Lumberyard Editor''s <guilabel>Track View</guilabel> editor to animate
   commonly used material properties. '
 title: Material Node
 ---

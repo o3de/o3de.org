@@ -1,5 +1,5 @@
 ---
-description: ' Use properties and effects to customize the default ocean that &ALY;
+description: ' Use properties and effects to customize the default ocean that Lumberyard
   creates for your level. '
 title: Setting Ocean Parameters
 ---

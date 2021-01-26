@@ -1,5 +1,5 @@
 ---
-description: ' Detach entities and slice instances in &ly-editor;. '
+description: ' Detach entities and slice instances in Lumberyard Editor. '
 title: Detaching Entities and Slice Instances
 ---
 # Detaching Entities and Slice Instances {#component-slice-detaching}

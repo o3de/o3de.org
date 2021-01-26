@@ -1,6 +1,6 @@
 ---
-description: ' Use &ALYlong; &script-canvas; editor nodes for your scripts. '
-title: '&script-canvas; Node Reference'
+description: ' Use Amazon Lumberyard Script Canvas editor nodes for your scripts. '
+title: 'Script Canvas Node Reference'
 ---
 # Script Canvas Node Reference {#script-canvas-node-reference}
 

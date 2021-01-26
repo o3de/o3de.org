@@ -1,6 +1,6 @@
 ---
 description: ' Learn about cloud gem request and response mapping, request execution,
-  and error handling operations for &ALYlong;. '
+  and error handling operations for Amazon Lumberyard. '
 title: Operations
 ---
 # Operations {#cloud-canvas-cgf-service-api-operations}

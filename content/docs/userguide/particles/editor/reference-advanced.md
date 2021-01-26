@@ -1,5 +1,5 @@
 ---
-description: ' Use the Advanced attribute in the &ALYlong; &particle-editor; to modify
+description: ' Use the Advanced attribute in the Amazon Lumberyard Particle Editor to modify
   advanced appearance and optimization settings. '
 title: Advanced Attribute
 ---

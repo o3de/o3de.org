@@ -1,5 +1,5 @@
 ---
-description: ' Verify that the assets in your &ALY; project are properly bundled and
+description: ' Verify that the assets in your Lumberyard project are properly bundled and
   referenced. '
 title: Verifying that Bundles Contain Required Assets
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALY; Text-to-Speech (TTS) Cloud Gem to enhance gameplay and
+description: ' Use the Lumberyard Text-to-Speech (TTS) Cloud Gem to enhance gameplay and
   workflows with synthesized speech. '
 title: Text to Speech Cloud Gem (Using Amazon Polly)
 ---

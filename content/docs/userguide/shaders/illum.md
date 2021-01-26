@@ -1,5 +1,5 @@
 ---
-description: ' Use the Illum shader to create a variety of effects in &ALYlong;. '
+description: ' Use the Illum shader to create a variety of effects in Amazon Lumberyard. '
 title: Illum Shader
 ---
 # Illum Shader {#shader-ref-illum}

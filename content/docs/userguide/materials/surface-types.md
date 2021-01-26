@@ -1,5 +1,5 @@
 ---
-description: ' Specify material surface types for objects in &ALYlong;. '
+description: ' Specify material surface types for objects in Amazon Lumberyard. '
 title: Selecting Material Surface Type
 ---
 # Selecting Material Surface Type {#mat-surface-types}

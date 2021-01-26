@@ -1,6 +1,6 @@
 ---
 description: ' Use resource mappings to map the friendly names used in a game''s resource
-  definitions to the actual names of resources in &ALYlong;. '
+  definitions to the actual names of resources in Amazon Lumberyard. '
 title: Resource Mappings
 ---
 # Resource Mappings {#cloud-canvas-resource-mappings}

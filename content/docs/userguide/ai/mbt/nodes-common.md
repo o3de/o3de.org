@@ -1,5 +1,5 @@
 ---
-description: ' See the following common AI Modular Behavior Tree (MBT) nodes in &ALYlong;. '
+description: ' See the following common AI Modular Behavior Tree (MBT) nodes in Amazon Lumberyard. '
 title: Common AI MBT Nodes
 ---
 # Common AI MBT Nodes {#ai-mbt-nodes-common}

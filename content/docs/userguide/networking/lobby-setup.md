@@ -1,5 +1,5 @@
 ---
-description: ' Learn about setting up a lobby in &ALYlong;. '
+description: ' Learn about setting up a lobby in Amazon Lumberyard. '
 title: Setting up a Lobby
 ---
 # Setting up a Lobby {#network-lobby-setup}

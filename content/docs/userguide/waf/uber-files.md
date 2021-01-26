@@ -1,6 +1,6 @@
 ---
 description: ' Use uber files to reduce compilation and build time for multiple C
-  and CPP files for &ALYlong;. '
+  and CPP files for Amazon Lumberyard. '
 title: Using Uber Files
 ---
 # Using Uber Files {#waf-uber-files}

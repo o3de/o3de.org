@@ -1,5 +1,5 @@
 ---
-description: ' Run a macOS game using the &ALY; build tools. '
+description: ' Run a macOS game using the Lumberyard build tools. '
 title: Running macOS Games
 ---
 # Running macOS Games {#osx-game-deploying}

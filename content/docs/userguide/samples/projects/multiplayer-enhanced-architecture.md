@@ -1,5 +1,5 @@
 ---
-description: ' Get a conceptual introduction to the architecture of the &ALYlong;
+description: ' Get a conceptual introduction to the architecture of the Amazon Lumberyard
   Multiplayer sample game. '
 title: Multiplayer Sample Gameplay Architecture
 ---

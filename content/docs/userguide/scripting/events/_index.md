@@ -1,6 +1,6 @@
 ---
 description: ' Use script events to enable entities to communicate with each other
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Using Script Events
 ---
 # Using Script Events {#script-events}

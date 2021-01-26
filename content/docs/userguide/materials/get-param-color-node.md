@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Param Color node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Param Color node in the Amazon Lumberyard Script Canvas editor
   to get the parameter color for a material. '
 title: Get Param Color
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Export multiple UV sets from .fbx files with FBX Settings to &ALYlong;. '
+description: ' Export multiple UV sets from .fbx files with FBX Settings to Amazon Lumberyard. '
 title: Multiple UV sets for meshes and actors
 ---
 # Multiple UV sets for meshes and actors {#fbx-multiple-uv-sets}

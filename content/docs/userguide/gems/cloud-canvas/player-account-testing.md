@@ -1,5 +1,5 @@
 ---
-description: ' Test the Player Account Cloud Gem in &ALYlong;. '
+description: ' Test the Player Account Cloud Gem in Amazon Lumberyard. '
 title: Testing the Player Account Cloud Gem
 ---
 # Testing the Player Account Cloud Gem {#cloud-canvas-cloud-gem-player-account-testing}

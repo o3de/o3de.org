@@ -1,6 +1,6 @@
 ---
 description: ' Use specialized shaders and caustics to create realistic bodies of
-  water in &ALY;. '
+  water in Lumberyard. '
 title: Creating Bodies of water
 ---
 # Creating Bodies of water {#terrain-water-intro}

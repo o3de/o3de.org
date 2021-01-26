@@ -1,5 +1,5 @@
 ---
-description: ' See the operating systems and compilers that Waf supports for &ALYlong;. '
+description: ' See the operating systems and compilers that Waf supports for Amazon Lumberyard. '
 title: Waf Supported Operating Systems and Compilers
 ---
 # Waf Supported Operating Systems and Compilers {#waf-platforms-compilers}

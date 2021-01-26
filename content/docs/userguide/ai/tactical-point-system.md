@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the AI Tactical Point System (TPS) in &ALYlong;. '
+description: ' Learn more about the AI Tactical Point System (TPS) in Amazon Lumberyard. '
 title: AI Tactical Point System
 ---
 # AI Tactical Point System {#ai-tactical-point-system}

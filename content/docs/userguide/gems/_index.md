@@ -1,6 +1,6 @@
 ---
 description: ' Use the modular gems system to share code and art assets between your
-  game projects in &ALYlong;. '
+  game projects in Amazon Lumberyard. '
 title: Programming with Gems
 ---
 # Programming with Gems {#gems-system}

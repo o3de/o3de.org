@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALYlong; &asset-browser; to quickly view and access your game
+description: ' Use the Amazon Lumberyard Asset Browser to quickly view and access your game
   project assets. '
-title: '&asset-browser;'
+title: 'Asset Browser'
 ---
 # Asset Browser {#asset-browser-intro}
 

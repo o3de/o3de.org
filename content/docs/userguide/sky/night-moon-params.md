@@ -1,5 +1,5 @@
 ---
-description: ' Define how the moon appears in &ALYlong;. '
+description: ' Define how the moon appears in Amazon Lumberyard. '
 title: Setting Moon Parameters
 ---
 # Setting Moon Parameters {#sky-night-moon-params}

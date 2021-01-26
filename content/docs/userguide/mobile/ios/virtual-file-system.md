@@ -1,5 +1,5 @@
 ---
-description: ' Use the virtual file system (VFS) to serve &ALYlong; files to iOS devices. '
+description: ' Use the virtual file system (VFS) to serve Amazon Lumberyard files to iOS devices. '
 title: Using Virtual File System with iOS
 ---
 # Using Virtual File System with iOS {#ios-virtual-file-system}
