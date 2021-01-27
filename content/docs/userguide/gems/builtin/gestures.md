@@ -6,12 +6,12 @@ title: Gestures Gem
 # Gestures Gem {#gems-system-gem-gestures}
 
 You can use the Gestures gem to recognize common gesture\-based input, which includes the following:
-+ Tap or click – Single\-touch, discrete gesture
-+ Drag or pan – Single\-touch, continuous gesture
-+ Hold or press – Single\-touch, continuous gesture
-+ Swipe – Single\-touch, discrete gesture
-+ Pinch – Multiple\-touch, continuous gesture
-+ Rotate – Multiple\-touch, continuous gesture
++ Tap or click - Single\-touch, discrete gesture
++ Drag or pan - Single\-touch, continuous gesture
++ Hold or press - Single\-touch, continuous gesture
++ Swipe - Single\-touch, discrete gesture
++ Pinch - Multiple\-touch, continuous gesture
++ Rotate - Multiple\-touch, continuous gesture
 
 Single\-touch gestures \(such as tap, drag, hold, and swipe\) can be detected with touch or mouse input\. However, multiple\-touch gestures \(such as pinch and rotate\) can only be recognized on multi\-touch enabled devices such as iOS or Android\. You can extend the underlying C\+\+ gesture recognition framework to support your custom gesture recognizers\.
 

@@ -89,7 +89,7 @@ To create a sphere that you can control with keyboard input, you create an entit
 
    1. For **Event value multiplier**, enter **\-1**\.
 
-   1. Repeat steps C – E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_D**\. For **Event value multiplier**, use the default value of `1`\.
+   1. Repeat steps C - E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_D**\. For **Event value multiplier**, use the default value of `1`\.
 
    1. Expand the **keyboard\_key\_alphanumeric\_A** event generator and verify that your settings appear like the following\.  
 ![\[Creating the inputbindings for the Input component.\]](/images/userguide/scripting/script-canvas/player-inputbindings-editor-move-x.png)
@@ -108,7 +108,7 @@ To create a sphere that you can control with keyboard input, you create an entit
 
    1. For **Input Name**, select **keyboard\_key\_alphanumeric\_W**\. For **Event value multiplier**, use the default value of `1`\.
 
-   1. Repeat steps C – E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_S**\. For **Event value multiplier**, enter **\-1**\.
+   1. Repeat steps C - E\. For **Input Name**, select **keyboard\_key\_alphanumeric\_S**\. For **Event value multiplier**, enter **\-1**\.
 
    1. Expand **keyboard\_key\_alphanumeric\_W** and verify that your settings appear like the following\.  
 ![\[Example player.inputbindings file.\]](/images/userguide/scripting/script-canvas/player-inputbindings-editor.png)

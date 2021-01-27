@@ -22,8 +22,8 @@ Follow these guidelines as you design your UI with radio buttons:
 1.  Keep radio buttons from the same radio group in close proximity\. 
 
 Avoid these design choices when using radio buttons:
-+ Don’t order radio buttons horizontally\.
-+ Don’t trigger an event upon selection of a radio button, such as spawning a popover, popup, new page, or new window\.
++ Don't order radio buttons horizontally\.
++ Don't trigger an event upon selection of a radio button, such as spawning a popover, popup, new page, or new window\.
 
 ## Basic radio button<a name="radio-button-basic"></a>
 

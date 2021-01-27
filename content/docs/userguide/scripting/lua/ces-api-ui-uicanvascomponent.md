@@ -269,7 +269,7 @@ Services notifications for the `UiCanvasComponent`\.
 
 ### OnCanvasEnterPressed {#lua-scripting-ces-api-ui-uicanvascomponent-uicanvasinputnotifications-oncanvasenterpressed}
 
-Called when the “enter” key is pressed\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
+Called when the "enter" key is pressed\. Sends the entity that was pressed or an invalid entity id if no element was pressed\.
 
 **Syntax**
 

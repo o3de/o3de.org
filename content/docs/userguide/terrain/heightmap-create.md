@@ -24,7 +24,7 @@ If you want to create the highest quality terrain heightmap for a 2K world, use 
 + 2K splatmaps
 
   As the splat weighting is applied and stored in the terrain mesh, the splatmaps should match the terrain heightmap resolution\.
-+ 4K – 16K megaterrain color map
++ 4K - 16K megaterrain color map
 
 **To create a heightmap using the Terrain Editor**
 

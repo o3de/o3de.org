@@ -14,10 +14,10 @@ The checkerboard pattern represents empty space within the UI canvas, and the da
 **To zoom in or out on a UI canvas**
 
 Do one of the following:
-+ Mouse – Scroll the mouse wheel\.
-+ Keyboard – Press **Ctrl \+** or **Ctrl \-**\.
-+ Menu – Click **View**, then click **Zoom In** or **Zoom Out**\.
-+ Toolbar – In the **Zoom** box, enter a percentage value or click the up and down arrows\.
++ Mouse - Scroll the mouse wheel\.
++ Keyboard - Press **Ctrl \+** or **Ctrl \-**\.
++ Menu - Click **View**, then click **Zoom In** or **Zoom Out**\.
++ Toolbar - In the **Zoom** box, enter a percentage value or click the up and down arrows\.
 
 **To pan the view on a UI canvas while dragging the canvas with the left mouse button**
 + With the mouse on the UI canvas, drag using the middle mouse button\.
@@ -26,5 +26,5 @@ Do one of the following:
 **To toggle common zoom settings**
 
 Do one of the following:
-+ Fit canvas to current view \(default\) – Press **Ctrl\+0**, or click **View**, **Fit Canvas**\.
-+ View canvas at actual size – Press **Ctrl\+1**, or click **View**, **Actual Size**\.
++ Fit canvas to current view \(default\) - Press **Ctrl\+0**, or click **View**, **Fit Canvas**\.
++ View canvas at actual size - Press **Ctrl\+1**, or click **View**, **Actual Size**\.

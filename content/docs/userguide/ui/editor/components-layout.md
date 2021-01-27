@@ -16,7 +16,7 @@ Like other UI components, layout components define the layout properties of your
 + [Nesting Layout Components](/docs/userguide/ui/editor/components-layout-nesting.md)
 
 **LayoutColumn**  
-Add the **LayoutColumn** component to an element to make it a layout column\. When you add child elements to the layout column, the layout column assigns each child element a layout cell\. The layout column adjusts the size of the layout cells depending on how many child elements you add as well as the values provided by the child elements’ layout cells\.
+Add the **LayoutColumn** component to an element to make it a layout column\. When you add child elements to the layout column, the layout column assigns each child element a layout cell\. The layout column adjusts the size of the layout cells depending on how many child elements you add as well as the values provided by the child elements' layout cells\.
 
 **LayoutRow**  
 Add the **LayoutRow** component to an element to make it a layout row\. Like the layout column, the layout row assigns each child elements a layout cell\. The layout row adjusts the size of the layout cells depending on how many child elements you add and the values provided by the child elements' layout cells\.

@@ -25,7 +25,7 @@ If you instantiate a slice that has a track view sequence, this creates another 
 
 1. You create a track view sequence named *Seq* that is in a slice and you then instantiate that slice three times in the level\. 
 
-1. In the Track View, for the **Active Sequence** drop\-down menu, you will see *Seq* three times, one for each instantiated slice\. Because the slices have the same name, it’s unclear which instance of the sequence that you are editing in the Track View\.
+1. In the Track View, for the **Active Sequence** drop\-down menu, you will see *Seq* three times, one for each instantiated slice\. Because the slices have the same name, it's unclear which instance of the sequence that you are editing in the Track View\.
 
 1. To determine which slice you are editing, in the Track View, in the **Node Browser**, right\-click the track view sequence and in the context menu, choose **Select in Viewport**\. 
 
@@ -46,7 +46,7 @@ In the Track View, the **ExampleSequence** animates only the two children entiti
 **Note**  
 The **[Transform](/docs/userguide/components/transform.md)** component is animated in local space relative to its parent\. When a slice is instantiated and its root transform is moved, all the child entity animations within also move as well\. If you instantiate the slice and move it to a new location, the animations will play at this new location\. 
 
-## Avoid Setting a Director’s Camera Track in a Sequence in a Slice {#avoid-setting-director-camera-track}
+## Avoid Setting a Director's Camera Track in a Sequence in a Slice {#avoid-setting-director-camera-track}
 
 You should assume that multiple slices might be instantiated and playing back the slice sequence at the same time\. Therefore, if you have a **Director** node that sets the camera track in a sequence, that track may be playing at different local movie times simultaneously\. Also, the order of slice animation playback may change between ticks\. As a best practice, do not use the **Camera** track in **Director** nodes for sequences in slices\.
 

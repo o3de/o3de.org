@@ -5,7 +5,7 @@ title: Configuring your Amazon Lumberyard environment with Setup Assistant
 ---
 # Configuring your Amazon Lumberyard environment with Setup Assistant<a name="wg-setup-assistant"></a>
 
-Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you’re continuing from [Installing Amazon Lumberyard](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
+Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you're continuing from [Installing Amazon Lumberyard](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
 
 Lumberyard Setup Assistant performs several important functions:
 + Ensures that you have the required runtime software\.
@@ -15,7 +15,7 @@ Lumberyard Setup Assistant performs several important functions:
 
 ![\[Lumberyard Setup Assistant.\]](/images/welcomeguide/ui-sa-install-options-1.23.png)
 
-On first run, Lumberyard Setup Assistant presents two options, **Express Install** and **Custom Install**\. If you’re a content creator, such as a designer or artist, and won’t be compiling code, or if you want to jump right in and use the Lumberyard Editor and tools, select **Express Install**\. You can always revisit Setup Assistant to add development features\. If you’d like to set up Lumberyard for code development, select **Custom Install**\.
+On first run, Lumberyard Setup Assistant presents two options, **Express Install** and **Custom Install**\. If you're a content creator, such as a designer or artist, and won't be compiling code, or if you want to jump right in and use the Lumberyard Editor and tools, select **Express Install**\. You can always revisit Setup Assistant to add development features\. If you'd like to set up Lumberyard for code development, select **Custom Install**\.
 
 You should run Setup Assistant periodically, especially after you make changes to your environment, to validate and repair settings and paths\. You can also customize Setup Assistant with a configuration file to easily integrate your specific directory structure\.
 
@@ -57,4 +57,4 @@ Ensure the **Third\-party path** on the **Install required SDKs** page is correc
 
 1.  Install desired *optional* software and SDKs on the **Install software**, **Install optional SDKs**, and **Install plugins** pages by following the instructions on each page\. 
 
-1.  When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you’d like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. 
+1.  When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\. 

@@ -175,11 +175,11 @@ The following table describes the `ShapeComponentRequestsBus`\.
 
 | Name | Description | Parameter  | Return | Scriptable | 
 | --- | --- | --- | --- | --- | 
-| DistanceFromPoint |  Returns the minimum distance between a specified point and the shape\.  |  `point` – Vector3 point to calculate distance from\.  |  Distance from point to shape\. Type: Float   | Yes | 
-| DistanceSquaredFromPoint |  Returns the minimum squared distance between a specified point and the shape\.  |  `point` – Vector3 point to calculate square distance from\.  |  Square distance from point to shape\. Type: Float   | Yes | 
+| DistanceFromPoint |  Returns the minimum distance between a specified point and the shape\.  |  `point` - Vector3 point to calculate distance from\.  |  Distance from point to shape\. Type: Float   | Yes | 
+| DistanceSquaredFromPoint |  Returns the minimum squared distance between a specified point and the shape\.  |  `point` - Vector3 point to calculate square distance from\.  |  Square distance from point to shape\. Type: Float   | Yes | 
 | GetEncompassingAabb |  Returns an `AABB` that encompasses the entire shape\.  | None | AZ::Aabb that encompasses the shape\. | No | 
 | GetShapeType | Returns the specified shape type for the component\. | None |  `AZ::Crc32(shape_name)` For example:  `AZ::Crc32("Box")` \| `AZ::Crc32("Sphere")` \| `AZ::Crc32("Capsule")` \| `AZ::Crc32("Cylinder")`  | Yes | 
-| IsPointInside |  Checks whether a specified point is inside or outside a shape\.  |  `point` – Vector3 point to check\.  |  Indicates whether the point is inside or outside the shape\. Type: Boolean   | Yes | 
+| IsPointInside |  Checks whether a specified point is inside or outside a shape\.  |  `point` - Vector3 point to check\.  |  Indicates whether the point is inside or outside the shape\. Type: Boolean   | Yes | 
 
 ### ComponentRequestsBus {#component-shape-components-request-bus}
 
@@ -239,4 +239,4 @@ All shapes share a single notification bus named `ShapeComponentNotificationsBus
 
 | Notification Name | Description | Parameter  | Return | Scriptable | 
 | --- | --- | --- | --- | --- | 
-| OnShapeChanged | Notifies listeners that the shape component has been updated\. |  `ShapeChangeReasons` – Indicates whether the shape was updated from a transform change or a shape parameter change\.  | Void | Yes | 
+| OnShapeChanged | Notifies listeners that the shape component has been updated\. |  `ShapeChangeReasons` - Indicates whether the shape was updated from a transform change or a shape parameter change\.  | Void | Yes | 

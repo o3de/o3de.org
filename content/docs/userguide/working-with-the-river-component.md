@@ -29,10 +29,10 @@ You can also paint the river bottom with a different texture than the surroundin
    The **Spline** component defines the path and shape of the river\. For information about how to add, remove, and edit individual points, see the **[Spline](/docs/userguide/components/spline.md)** component\.
 
 1. Under **Terrain Editing**, specify values for the following parameters:
-   + **Border width** – Sets the width of the slope on the river's sides\.
-   + **Embankment height** – Defines the height of the hills on the river edges\. If the river is at ground level, this parameter makes the river appear to flow in the riverbed\.
-   + **Depth of the river bed** – Defines the depth of riverbed\.
-   + **Riverbed width offset** – Defines the width of the riverbed in relation to the river's width\. For example, a value of `0` makes the riverbed the same width as the river; `-1` makes the riverbed one meter narrower than the river; `1` makes the riverbed one meter wider than the river\.
+   + **Border width** - Sets the width of the slope on the river's sides\.
+   + **Embankment height** - Defines the height of the hills on the river edges\. If the river is at ground level, this parameter makes the river appear to flow in the riverbed\.
+   + **Depth of the river bed** - Defines the depth of riverbed\.
+   + **Riverbed width offset** - Defines the width of the riverbed in relation to the river's width\. For example, a value of `0` makes the riverbed the same width as the river; `-1` makes the riverbed one meter narrower than the river; `1` makes the riverbed one meter wider than the river\.
 
 1. Click **Carve River Bed**\.
 

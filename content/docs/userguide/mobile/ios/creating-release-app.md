@@ -97,8 +97,8 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 ### Deploying Shader \.Pak Files {#deploying-shader-pak-files-ios}
 
 When the batch file finishes building the shader `.pak` file for your game project, verify that the following files exist in the `lumberyard_version\dev\Build\ios\game_project_name\` directory:
-+ `ShaderCache.pak` – Contains all compiled shaders that are used only when the shader cannot be found in the current level's shader cache\.
-+ `ShaderCacheStartup.pak` – Contains a subset of compiled shaders that are used to accelerate the startup time of the engine\.
++ `ShaderCache.pak` - Contains all compiled shaders that are used only when the shader cannot be found in the current level's shader cache\.
++ `ShaderCacheStartup.pak` - Contains a subset of compiled shaders that are used to accelerate the startup time of the engine\.
 
 **To pack assets for your app**
 

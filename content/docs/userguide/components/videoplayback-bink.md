@@ -78,7 +78,7 @@ The basic setup for the **Video Playback Bink** component includes the following
 
 ## Lua Bindings for Video Playback Bink {#component-videoplayback-bink-lua}
 
-You can use Lua bindings to interact programmatically with video playback components that you’ve placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
+You can use Lua bindings to interact programmatically with video playback components that you've placed in your scene\. Lua provides a way to establish complex logic for playing, pausing, and stopping videos\. 
 
 ### Global Functions {#component-videoplayback-bink-lua-global}
 
@@ -99,8 +99,8 @@ Exposes callbacks to your Lua script that are triggered by events during video p
 For more information, see [VideoPlaybackNotificationBusHandler Object](#component-videoplayback-bink-videoplaybacknotificationbushandler)\. 
 
 **Parameters**  
-`Table` – The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
-`EntityId` – 
+`Table` - The Lua table to which you want to expose the callback functions\. Pass `self` to expose the callbacks to the current Lua script\.  
+`EntityId` - 
 
 **Return**  
 Returns the `VideoPlaybackRequestBusSender` object that is connected to the specified entity\. For more information, see [VideoPlaybackRequestBusSender Object](#component-videoplayback-bink-videoplaybackrequestbussender)\.

@@ -33,9 +33,9 @@ This is the process for registering a singleton thread for a system with `AZ::In
 To deregister a system, call `Unregister()` on `AZ::Interface`\.
 
 `AZ::Interface` defines the following static methods:
-+ `static void Register(T* type)` — Registers an instance of `type T` to `AZ::Interface`\.
-+ `static void Unregister(T* type)` — Deregisters an instance of `type T` from `AZ::Interface`\.
-+ `static T* Get() `— Gets a reference to an instance of `type T` that is registered with `AZ::Interface`\.
++ `static void Register(T* type)` - Registers an instance of `type T` to `AZ::Interface`\.
++ `static void Unregister(T* type)` - Deregisters an instance of `type T` from `AZ::Interface`\.
++ `static T* Get() `- Gets a reference to an instance of `type T` that is registered with `AZ::Interface`\.
 
 It also defines a helper class, `Registrar`, that enables registration and deregistration from within the `AZ::Interface` class constructor and destructor, respectively\.
 

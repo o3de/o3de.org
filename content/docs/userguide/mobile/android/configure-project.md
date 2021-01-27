@@ -22,12 +22,12 @@ title: Configure &ALY; projects for Android
  Working with Android in Lumberyard can be complicated because of the restrictions of the Android platform, which affects how Android application packages \(APKs\) are built and deployed\. Different asset deployment configurations can greatly affect performance during your development process, so make sure that you select the one that's right for your use case\. This section helps break down what options are available, when they're most appropriate, and how you configure your Lumberyard project in order to support each\. 
 
  These are the asset modes that are available modes for asset deployment to devices:
-+ `configuration_default` — assets are packed according to the build configuration:
++ `configuration_default` - assets are packed according to the build configuration:
   + The **debug** and **profile** configurations use `loose_files` mode\.
   + The **release** and **performance** configurations use the `project_settings` mode to determine how to build assets, the APK, and any OBB files\.
-+ `loose_files` and `loose_paks` — assets are *loose*, which means that they are copied to storage media\. For more information about loose files, see [Loose modes](#android-configure-asset-loading-loose)\.
-+ `apk_files` and `apk_paks` — assets are *packed*, which means that they are bundled as part of your APK\. For more information about packed files, see [Packed modes](#android-configure-asset-loading-packed)\.
-+ `project_settings` — assets are packed according to the configuration\.
++ `loose_files` and `loose_paks` - assets are *loose*, which means that they are copied to storage media\. For more information about loose files, see [Loose modes](#android-configure-asset-loading-loose)\.
++ `apk_files` and `apk_paks` - assets are *packed*, which means that they are bundled as part of your APK\. For more information about packed files, see [Packed modes](#android-configure-asset-loading-packed)\.
++ `project_settings` - assets are packed according to the configuration\.
 
  To configure which asset mode your deployments use, open `lumberyard_install_dir\dev\_WAF_\user_settings.options` in a text editor and modify the `[Android Options]` section\. 
 
@@ -67,7 +67,7 @@ android_asset_mode = apk_paks
 
 ## Serving assets over the Virtual File System \(VFS\) {#android-vfs}
 
- During the early stages of development with Lumberyard, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments — your build configuration's asset mode is respected — only reloads\. 
+ During the early stages of development with Lumberyard, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments - your build configuration's asset mode is respected - only reloads\. 
 
 **To turn on VFS**
 
@@ -95,8 +95,8 @@ android_asset_mode = apk_paks
    ```
 
 1.  Configure the connection from the device to the shader compiler\. You can either do this by starting the Shader Compiler yourself, or by passing traffic to the Shader Compiler through the Asset Processor\. 
-   +  **Connect directly to shader compiler** – See [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy#running-the-shader-compiler-for-android) for instructions\. 
-   + **Connect to Asset Processor** – Edit the Android configuration to use the Asset Processor's shader compiler process\.
+   +  **Connect directly to shader compiler** - See [Connect to the Shader Compiler](/docs/userguide/mobile/android/build-deploy#running-the-shader-compiler-for-android) for instructions\. 
+   + **Connect to Asset Processor** - Edit the Android configuration to use the Asset Processor's shader compiler process\.
 
      1. Open the file `lumberyard_install_dir\dev\system_android_es3.cfg` in a text editor\.
 

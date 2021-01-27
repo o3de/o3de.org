@@ -20,11 +20,11 @@ An AZ framework application initializes modules based on the dynamic libraries l
 
 1.  Each dynamic library is loaded\. 
 
-1.  Each dynamic library’s `InitializeDynamicModule()` function is run, which attaches the DLL to the global `AZ::Environment`\. 
+1.  Each dynamic library's `InitializeDynamicModule()` function is run, which attaches the DLL to the global `AZ::Environment`\. 
 
-1.  Each static library’s `AZ::Module` instance is created using the function pointer passed in during step 2\. 
+1.  Each static library's `AZ::Module` instance is created using the function pointer passed in during step 2\. 
 
-1.  Each dynamic library’s `AZ::Module` instance is created by its `CreateModuleClass()` function\. 
+1.  Each dynamic library's `AZ::Module` instance is created by its `CreateModuleClass()` function\. 
 
 1.  Each AZ module's `RegisterComponentDescriptors()` function is called\. Now the application knows how to serialize any components defined within a library\. 
 

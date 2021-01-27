@@ -13,7 +13,7 @@ The **Particle Editor** provides a context menu with the following options for y
 
 | Option | Description | 
 | --- | --- | 
-| Add New | Add Particle – Adds a new emitter to the library\. The default keyboard shortcut is Ctrl\+N\. **Add Folder** – Adds a new folder to the library\. The default keyboard shortcut is **Ctrl\+Alt\+N**\. | 
+| Add New | Add Particle - Adds a new emitter to the library\. The default keyboard shortcut is Ctrl\+N\. **Add Folder** - Adds a new folder to the library\. The default keyboard shortcut is **Ctrl\+Alt\+N**\. | 
 | Save | Saves changes to the selected library\. Libraries are saved in the \\game\_project\_name\\libs\\particles directory\. | 
 | Duplicate | Duplicates and renames the library\. | 
 | Disable/Enable All | Disables or enables all items in the library\. | 

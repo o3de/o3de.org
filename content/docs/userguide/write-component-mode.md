@@ -374,9 +374,9 @@ You can add a member to the `EditorPointLightComponentMode` and refer to that in
    ```
 
    The manipulator action has three parts\. You can specify these properties to control how they should modify your component\.
-   + **Fixed** – Contains data associated with the manipulator, which is set at creation\. Often, this is the axis or plane of movement\.
-   + **Start** – State of the manipulator at `MouseDown`\.
-   + **Current** – Current state of the manipulator during a `MouseMove`\.
+   + **Fixed** - Contains data associated with the manipulator, which is set at creation\. Often, this is the axis or plane of movement\.
+   + **Start** - State of the manipulator at `MouseDown`\.
+   + **Current** - Current state of the manipulator during a `MouseMove`\.
 
 1. After you calculate the `axisDisplacement`, specify that value to set the current `PointMaxDistance`, which updates the state of the component\. You must update the `LocalTransform` of the manipulator\. If you don't, the visual representation of the manipulator doesn't change\. To do this, read the `LocalPosition` of the action and set the `LocalTransform` of the manipulator\. 
 

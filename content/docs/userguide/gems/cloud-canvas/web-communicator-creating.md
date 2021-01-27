@@ -80,7 +80,7 @@ For more information, see the [Using an Interface](/docs/userguide/gems/cloud-ca
 
 ## 3\. Send the Lambda Request from Your Service {#cloud-canvas-cloud-gem-web-communicator-creating-send-the-lambda-request-from-your-service}
 
-To send a message from your cloud gem to one or more clients, your cloud gem’s Lambda code makes a call to the Web Communicator\. The call includes the message that you want to either broadcast to multiple clients or send to an individual user\.
+To send a message from your cloud gem to one or more clients, your cloud gem's Lambda code makes a call to the Web Communicator\. The call includes the message that you want to either broadcast to multiple clients or send to an individual user\.
 
 First, in the Python module from which you want to make the messaging request, specify the following import statements\.
 

@@ -108,11 +108,11 @@ Replace the following items in the template with your own values as required\.
 
 | Item | Description | 
 | --- | --- | 
-| <resource–name> |  Specifies a custom name for the resource\. The name must be unique in the template\.  | 
-| <lambda–resource–name>  |  Specifies the name of a `Custom::LambdaConfiguration` element that you include to provide Lambda code for your types\. This entry is required if you specify either the `ArnFunction` or `HandlerFunction` entries\.  | 
-| <lambda–timeout> |  Specifies the timeout, in seconds, to apply to the specified `ArnFunction` or `HandlerFunction` entries\.  | 
+| <resource-name> |  Specifies a custom name for the resource\. The name must be unique in the template\.  | 
+| <lambda-resource-name>  |  Specifies the name of a `Custom::LambdaConfiguration` element that you include to provide Lambda code for your types\. This entry is required if you specify either the `ArnFunction` or `HandlerFunction` entries\.  | 
+| <lambda-timeout> |  Specifies the timeout, in seconds, to apply to the specified `ArnFunction` or `HandlerFunction` entries\.  | 
 | <lambda‑directory‑name>  |  Specifies the name of a subdirectory to add to your gem's `\AWS\project-code\lambda-code` directory\. This subdirectory contains Lambda code that is required for the `ArnFunction` or `HandlerFunction` entries\.  | 
-| <type–name> |  Specifies a AWS CloudFormation type in the `AWS::` namespace or a custom type that is prefixed with `Custom::`\.  | 
+| <type-name> |  Specifies a AWS CloudFormation type in the `AWS::` namespace or a custom type that is prefixed with `Custom::`\.  | 
 
 ## Elements in the Type Definition {#cloud-canvas-cgf-adding-aws-resources-elements-in-the-type-definition}
 
@@ -132,7 +132,7 @@ Optional\. Contains the metadata configuration information for an instance of th
 
 ### ArnFormat {#cloud-canvas-cgf-adding-aws-resources-arnformat}
 
-Required if `ArnFunction` is not specified\. Specifies the ARN for instances of the resource in the *<arn–format>* format string\. The following substitutions are allowed:
+Required if `ArnFunction` is not specified\. Specifies the ARN for instances of the resource in the *<arn-format>* format string\. The following substitutions are allowed:
 
 
 ****  
@@ -140,7 +140,7 @@ Required if `ArnFunction` is not specified\. Specifies the ARN for instances of 
 | Item | Description | 
 | --- | --- | 
 | <region> | Specifies the region of the AWS CloudFormation stack\. | 
-| <account–id>  | Specifies the AWS account ID\. | 
+| <account-id>  | Specifies the AWS account ID\. | 
 | <resource‑name> | Specifies the physical resource ID of the resource instance\. | 
 
 The following example specifies the ARN for a Lambda function:

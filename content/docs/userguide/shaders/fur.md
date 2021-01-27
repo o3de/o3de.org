@@ -11,8 +11,8 @@ Lumberyard's **Fur** shader renders fur in real time\. You can apply this shader
 + [Fur Features](/docs/userguide/shaders/fur-features.md)
 + [Material Settings](/docs/userguide/shaders/fur-materialsettings.md)
 + [Fur Console Variables](/docs/userguide/shaders/fur-consolevariables.md)
-+ [Maya – Fur Previsualization](/docs/userguide/shaders/fur-previzmaya.md)
-+ [3DSMax – Fur Previsualization](/docs/userguide/shaders/fur-previz3dsmax.md)
++ [Maya - Fur Previsualization](/docs/userguide/shaders/fur-previzmaya.md)
++ [3DSMax - Fur Previsualization](/docs/userguide/shaders/fur-previz3dsmax.md)
 
 To use the fur shader, create a new material and, from the **Shader** drop\-down, select **Fur**\. Apply this new material to your mesh object\.
 

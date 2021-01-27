@@ -28,11 +28,11 @@ To edit an existing AWS profile, click **Edited selected profile**\. To add an A
 
  When adding or editing a profile, Lumberyard prompts you for the following:
 
- **Profile name** – The name used for the profile\.
+ **Profile name** - The name used for the profile\.
 
- **AWS Secret Key** – The AWS secret key needed to access the account\.
+ **AWS Secret Key** - The AWS secret key needed to access the account\.
 
- **AWS Access Key** – The AWS access key needed to access the account\.
+ **AWS Access Key** - The AWS access key needed to access the account\.
 
 **To add your credentials by using the command line**
 

@@ -19,11 +19,11 @@ An AI path is a control object that is used to guide an AI agent from point to p
 
 1. Under **AIPath Params**, set properties and parameter values as needed:
 
-   1. **Road** – Used for** CRoadNavRegion::CreateRoad** and road navigation\. Links with other nearby roads for land\-based vehicles\.
+   1. **Road** - Used for** CRoadNavRegion::CreateRoad** and road navigation\. Links with other nearby roads for land\-based vehicles\.
 
-   1. **ValidatePath** – If enabled, the path displays validation information when selected\.
+   1. **ValidatePath** - If enabled, the path displays validation information when selected\.
 
-   1. **Closed** – If true, the path is a loop\.
+   1. **Closed** - If true, the path is a loop\.
 
 1. Click **File**, **Export to Lumberyard**\. This is a necessary step for the navigation system\.
 

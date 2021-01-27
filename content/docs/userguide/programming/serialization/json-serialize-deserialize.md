@@ -16,27 +16,27 @@ Serialization into JSON is done with the `static AZ::JsonSerialization::Store()`
 ### `AZ::JsonSerialization::Store()` overloads {#serialization-json-serialize-store}
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const T& object, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`  
-+ `output` – The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
-+ `allocator` – The memory allocator used by RapidJSON\.
-+  `object` – The object to serialize\. This object's class must be registered with the provided serialization context\. 
++ `output` - The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
++ `allocator` - The memory allocator used by RapidJSON\.
++  `object` - The object to serialize\. This object's class must be registered with the provided serialization context\. 
 
    When serializing, a second object of type `T` is created from the default constructor \(if possible\) to provide default values\. 
-+ `settings` – Configuration for how to treat the serialization\. If not provided, the default settings are used\.
++ `settings` - Configuration for how to treat the serialization\. If not provided, the default settings are used\.
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const T& object, const T& defaultObject, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`   
-+ `output` – The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
-+ `allocator` – The memory allocator used by RapidJSON\.
-+  `object` – The object to serialize\. This object's class must be registered with the provided serialization context\.
++ `output` - The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
++ `allocator` - The memory allocator used by RapidJSON\.
++  `object` - The object to serialize\. This object's class must be registered with the provided serialization context\.
 + `defaultObject` \- An object providing the values to treat as the defaults during serialization\. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized\.
-+ `settings` – Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output\.
++ `settings` - Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output\.
 
 `static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const void* object, const void* defaultObject, const AZ::Uuid& objectType, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`   
-+ `output` – The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
-+ `allocator` – The memory allocator used by RapidJSON\.
-+  `object` – The object to serialize, as anonymous data\. 
++ `output` - The RapidJSON document or value to write to\. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value\.
++ `allocator` - The memory allocator used by RapidJSON\.
++  `object` - The object to serialize, as anonymous data\. 
 + `defaultObject` \- An object providing the values to treat as the defaults during serialization\. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized\. If a null pointer is passed as the default object, a temporary default may be created during serialization\.
 + `objectType` \- The UUID registered with the Lumberyard runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\. 
-+ `settings` – Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output provided `defaultObject` is not null\.
++ `settings` - Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output provided `defaultObject` is not null\.
 
 ### `AZ::JsonSerializerSettings` {#serialization-json-serialize-store-settings}
 

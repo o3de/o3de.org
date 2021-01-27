@@ -20,7 +20,7 @@ When performing this procedure, you may notice that parts of the road disappear 
 
 1. In the **Rollup Bar**, on the **Objects** tab, click **Misc**, **Road**\.
 
-1. In your level, start at the beginning of the road and click to place a series of points that define the road’s path\.
+1. In your level, start at the beginning of the road and click to place a series of points that define the road's path\.
 
 1. When complete, double\-click where you want the road to end\.
 

@@ -39,16 +39,16 @@ Some nodes, like **OnEntitiesSpawned** or **Get String Array**, provide data as 
 In the **Node Palette**, the **Containers** section has nodes that you can use to add, get, and remove elements from arrays\.
 
 ![\[Container node operations.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-5.png)
-+ **Add Element at End** – Adds the element at the end of the container\.
-+ **Clear All Elements** – Removes all elements from the container\.
-+ **Erase** – Erases the element at the specified index or key\.
-+ **For Each** – Iterates through each element of a container\.
-+ **Get Element** – Returns the element at the specified index or key\.
-+ **Get First Element** – Returns the first element in the container\.
-+ **Get Last Element** – Returns the last element in the container\.
-+ **Get Size** – Returns the number of elements in the container\.
-+ **Insert** – Inserts an element into the container at the specified index or key\.
-+ **Is Empty** – Returns whether the container is empty\.
++ **Add Element at End** - Adds the element at the end of the container\.
++ **Clear All Elements** - Removes all elements from the container\.
++ **Erase** - Erases the element at the specified index or key\.
++ **For Each** - Iterates through each element of a container\.
++ **Get Element** - Returns the element at the specified index or key\.
++ **Get First Element** - Returns the first element in the container\.
++ **Get Last Element** - Returns the last element in the container\.
++ **Get Size** - Returns the number of elements in the container\.
++ **Insert** - Inserts an element into the container at the specified index or key\.
++ **Is Empty** - Returns whether the container is empty\.
 
 All container operation nodes have an **In** pin and a **Source** pin\.
 

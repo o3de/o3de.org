@@ -12,14 +12,14 @@ You can set the **Parameter Action** on the following:
 **State**  
 
 **Set actions to trigger upon:**
-+ Entering a state – Action triggers when the state is fully blended into the node and is no longer in transition
-+ Exiting a state – Action triggers when the state is fully blended out of the node and the node is no longer active
++ Entering a state - Action triggers when the state is fully blended into the node and is no longer in transition
++ Exiting a state - Action triggers when the state is fully blended out of the node and the node is no longer active
 
 **Transition**  
 
 **Set actions to trigger upon:**
-+ Entering a transition – Action triggers immediately upon starting a transition
-+ Exiting a state – Action triggers when a transition is fully blended to the target state
++ Entering a transition - Action triggers immediately upon starting a transition
++ Exiting a state - Action triggers when a transition is fully blended to the target state
 
 ## Adding Actions to a State {#adding-action-to-state}
 
@@ -34,8 +34,8 @@ Add an action to a state to achieve a parameter value change that triggers after
 1. In the **Attributes** panel, click **Add action** and then **Parameter Action**\.
 
 1. In the **Attributes** panel, under **Parameter Action**, select a **Trigger Mode**\. You can select one of the following options:
-   + **On Enter** – Executes a **State** action when the state is fully blended into the node and is no longer in transition
-   + **On Exit** – Executes a **State** action when the state is fully blended out of the node and the node is no longer active  
+   + **On Enter** - Executes a **State** action when the state is fully blended into the node and is no longer in transition
+   + **On Exit** - Executes a **State** action when the state is fully blended out of the node and the node is no longer active  
 ![\[For the Trigger Mode, select On Enter or On Exit.\]](/images/userguide/actor-animation/char-animation-editor-actions-triggermode.png)
 
 1. Choose **Select parameter** and select your preferred parameter\.
@@ -60,12 +60,12 @@ Add an action to a transition to achieve a parameter value change that triggers 
 ![\[To add a Parameter Action, click Add action and then Parameter Action.\]](/images/userguide/actor-animation/char-animation-editor-actions-addaction-transition.png)
 
    The following options trigger the change on a follower graph but with different inputs to the follower graph's parameter:
-   + **Follower Parameter Action** – A constant value is provided
-   + **Symbolic Follower Parameter Action** – A user\-selected value is provided
+   + **Follower Parameter Action** - A constant value is provided
+   + **Symbolic Follower Parameter Action** - A user\-selected value is provided
 
 1. In the **Attributes** panel, under **Parameter Action**, select a **Trigger Mode**\. You can select one of the following options:
-   + **On Enter** – Executes the action immediately upon starting a transition
-   + **On Exit** – Executes the action when a transition is fully blended to the target state  
+   + **On Enter** - Executes the action immediately upon starting a transition
+   + **On Exit** - Executes the action when a transition is fully blended to the target state  
 ![\[For the Trigger Mode, select On Enter or On Exit.\]](/images/userguide/actor-animation/char-animation-editor-actions-triggermode.png)
 
 1. Choose **Select parameter** and select your preferred parameter\.

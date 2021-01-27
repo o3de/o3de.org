@@ -5,7 +5,7 @@ title: Creating Time of Day Sky Effects
 ---
 # Creating Time of Day Sky Effects {#sky-tod-intro}
 
-You can use time of day effects to create dynamic skies to simulate the changing lighting effects that are caused by the sun moving across the sky\. You can also configure and store a complete day–night cycle of changing environment parameters to add realism to your level\.
+You can use time of day effects to create dynamic skies to simulate the changing lighting effects that are caused by the sun moving across the sky\. You can also configure and store a complete day-night cycle of changing environment parameters to add realism to your level\.
 
 You can use the **Time of Day** editor and **Sun Trajectory Tool** to achieve these effects\.
 

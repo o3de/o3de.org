@@ -11,6 +11,6 @@ Use the **Motion Set** pane to create motion set files and add motion files to i
 
 In the **Motion Sets** pane, you can do the following:
 
-1. **Motion Sets Management** – Add, open, save, or delete motion sets\.
+1. **Motion Sets Management** - Add, open, save, or delete motion sets\.
 
-1. **Motion Sets** – Add, open, or delete the motion files in the selected motion set\.
+1. **Motion Sets** - Add, open, or delete the motion files in the selected motion set\.

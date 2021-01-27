@@ -21,7 +21,7 @@ For the first four steps, you use the Audiokinetic Wwise authoring tool\. For th
 
 ## Prerequisites {#cloud-canvas-cloud-gem-text-to-speech-wwise-prerequisites}
 
-Audiokinetic Wwise LTX – Audiokinetic Wwise LTX is an exclusive, free version of the Audiokinetic Wwise audio system for PC games that is included with Lumberyard\. For installation information, see [Setting up Wwise LTX](/docs/userguide/audio/wwise-using.md)\.
+Audiokinetic Wwise LTX - Audiokinetic Wwise LTX is an exclusive, free version of the Audiokinetic Wwise audio system for PC games that is included with Lumberyard\. For installation information, see [Setting up Wwise LTX](/docs/userguide/audio/wwise-using.md)\.
 
 ## Create a Wwise Sound Project {#cloud-canvas-cloud-gem-text-to-speech-wwise-create-a-wwise-sound-project}
 

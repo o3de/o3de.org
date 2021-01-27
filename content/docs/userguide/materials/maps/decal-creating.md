@@ -24,11 +24,11 @@ Most decal parameters are in the Rollup Bar on the **Objects** tab, under **Misc
 1. In the Rollup Bar, under **Objects**, click **Misc**, **Decal**\.
 
 1. Under **Decal Params**, adjust the following parameters:
-   + **ProjectionType** – Choose the projection type from the drop\-down list: **Planar**, **ProjectOnStaticObjects**, **ProjectOnTerrain**, and **ProjectOnTerrainAndStaticObjects**\.
-   + **Deferred** – Select to enable deferred decal projection\.
-   + **View Distance Multiplier** – Set the distance at which the decal is visible\. The default value is 1\. A higher number indicates a longer visibility distance\.
-   + **SortPriority** – Specify if the decal will appear on top of another decal\.
-   + **Projection Depth** – Set the projection depth \(distance\) of the decal from the object\. This can also affect blending of decals\.
+   + **ProjectionType** - Choose the projection type from the drop\-down list: **Planar**, **ProjectOnStaticObjects**, **ProjectOnTerrain**, and **ProjectOnTerrainAndStaticObjects**\.
+   + **Deferred** - Select to enable deferred decal projection\.
+   + **View Distance Multiplier** - Set the distance at which the decal is visible\. The default value is 1\. A higher number indicates a longer visibility distance\.
+   + **SortPriority** - Specify if the decal will appear on top of another decal\.
+   + **Projection Depth** - Set the projection depth \(distance\) of the decal from the object\. This can also affect blending of decals\.
 
 ## To set shader decal parameters {#mat-maps-decal-params-shader}
 
@@ -50,8 +50,8 @@ Some decal parameters are set in the Material Editor under **Shader Params**\.
 
 1. Under **Shader Params**, adjust the values of the following parameters:
 
-   1. **Decal Alpha Falloff** – Set the power applied to the decal alpha\.
+   1. **Decal Alpha Falloff** - Set the power applied to the decal alpha\.
 
-   1. **Decal Alpha Multiplier** – Set the multiplier applied to the decal alpha\.
+   1. **Decal Alpha Multiplier** - Set the multiplier applied to the decal alpha\.
 
-   1. **Decal Diffuse Opacity** – Set the opacity multiplier for the fading out decal diffuse color\.
+   1. **Decal Diffuse Opacity** - Set the opacity multiplier for the fading out decal diffuse color\.

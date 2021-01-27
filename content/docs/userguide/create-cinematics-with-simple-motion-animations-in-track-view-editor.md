@@ -72,8 +72,8 @@ When you update properties in the Track View, the original values for the entity
 The **Simple Motion** component supports two motions at a time for blending: the currently playing motion and the previously played motion\. For example, you can blend two motions so that your actor smoothly transitions between a walk motion to a run motion\.
 
 You can set the **Blend In Time** and **Blend Out Time** properties for simple animation blending\. 
-+ **Blend In Time** – Specifies how long it takes for the motion that is set to fully blend in from zero to one second\.
-+ **Blend Out Time** – Specifies how long it will take for a motion to fully blend out from one to zero second\.
++ **Blend In Time** - Specifies how long it takes for the motion that is set to fully blend in from zero to one second\.
++ **Blend Out Time** - Specifies how long it will take for a motion to fully blend out from one to zero second\.
 
 To blend two motions, overlap two animations and set the **Blend Out Time** of the last motion to `0.33` seconds, and the **Blend In Time** of the next motion by `0.33` seconds\. This allows the two motions to smoothly chain together in the track view sequence\.
 

@@ -11,7 +11,7 @@ The output is not only to test the functionality but also to document how the fe
 ## Supported Features {#graphics-rendering-truetype-supported-features}
 
 CryFont supports the following features:
-+  Font shaders – Used to configure the appearance of fonts\. Multiple passes with configurable offset and color are supported to enable generation of shadows or outlines\. A sample font shader is shown in the following XML example\. 
++  Font shaders - Used to configure the appearance of fonts\. Multiple passes with configurable offset and color are supported to enable generation of shadows or outlines\. A sample font shader is shown in the following XML example\. 
 
   ```
   <fontshader>
@@ -32,15 +32,15 @@ CryFont supports the following features:
   ```
 
   The attributes *w* and *h* of the XML font element specify the width and height of the font texture\. The order of the passes in XML defines the order in which the passes are rendered\. A `<pass>` element without child elements means that the pass is rendered with the default settings\. The `<pos>` tag is used to offset the font, while the `<color>` tag is used to set font color and define the transparency \(with the alpha channel *a*\)\.
-+ Unicode – The default font used does not support all Unicode characters \(to save memory\), but other fonts can be used\.
-+ TrueType fonts as source – Cached in a small texture\. Common characters are pre\-cached, but runtime updates are possible and supported\.
++ Unicode - The default font used does not support all Unicode characters \(to save memory\), but other fonts can be used\.
++ TrueType fonts as source - Cached in a small texture\. Common characters are pre\-cached, but runtime updates are possible and supported\.
 + Colored text rendering
 + Adjustable transparency
-+ Color variations within a string – Use a value of **$0\.\.9** to set one of the 10 available colors\. Use **$$** to print the $ symbol, and **$o** to switch off the feature\.
++ Color variations within a string - Use a value of **$0\.\.9** to set one of the 10 available colors\. Use **$$** to print the $ symbol, and **$o** to switch off the feature\.
 + Returns and tabs within a string
 + Text alignment 
-+ Computation of a string's width and height – Used internally to handle center and right alignment\.
-+ Font size variations – Bilinear filtering allows some blurring, but no mipmaps are used so this feature has limitations in minification\. 
++ Computation of a string's width and height - Used internally to handle center and right alignment\.
++ Font size variations - Bilinear filtering allows some blurring, but no mipmaps are used so this feature has limitations in minification\. 
 + Proportional and monospace fonts
 + Pixel\-perfect rendering with exact texel\-to\-pixel mapping for best quality\.
 

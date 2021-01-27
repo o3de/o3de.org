@@ -9,9 +9,9 @@ You can use a **ScrollBar** component to add a scrollable bar, or handle, for ma
 To see in\-game examples of completed canvases with the **ScrollBar** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBar**\. You can view examples of different types of scroll bar positioning and handles, scroll bars paired with scroll boxes, and visibility options\. Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\ScrollBar` directory\. You can open the following canvases:
-+ `ScrollBoxes.uicanvas` – Examples of scroll bars paired with scroll boxes
-+ `Simple.uicanvas` – Examples of scroll bar with simple logic
-+ `Visibility.uicanvas` – Examples of scroll bar visibility options when paired with scroll boxes
++ `ScrollBoxes.uicanvas` - Examples of scroll bars paired with scroll boxes
++ `Simple.uicanvas` - Examples of scroll bar with simple logic
++ `Visibility.uicanvas` - Examples of scroll bar visibility options when paired with scroll boxes
 
 This is a horizontal scroll bar:
 
@@ -40,10 +40,10 @@ See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md)
 Select an element from the list to provide the movable handle of the scroll bar\.  
 **Values**, **Orientation**  
 Select the scroll bar's orientation:  
-+ **Horizontal** – Scrollbar's handle moves left and right\.
++ **Horizontal** - Scrollbar's handle moves left and right\.
 
    
-+ **Vertical** – Scrollbar's handle moves up and down\.
++ **Vertical** - Scrollbar's handle moves up and down\.
 
      
 **Values**, **Value**  

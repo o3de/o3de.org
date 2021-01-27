@@ -42,12 +42,12 @@ In the following example, a hierarchical motion set has the **Human** motion at 
 **Example : Hierarchical Motion Set**  
 
 **Human \(motion set\)**
-+ \+ Idle – `GenericIdle.motion`
-+ \+ Walk – `GenericWalk.motion`
-+ \+ Jump – `GenericJump.motion`
++ \+ Idle - `GenericIdle.motion`
++ \+ Walk - `GenericWalk.motion`
++ \+ Jump - `GenericJump.motion`
 
 **Zombie \(motion set\)**
-  + \+ Walk – `ZombieWalk.motion`
+  + \+ Walk - `ZombieWalk.motion`
 
 Because the parent motion set defines the `Jump` motion entry with a motion file, the child motion set inherits that motion\. This means that when the **Zombie** motion set is activated, characters with that motion set play the human `Jump` motion\.
 
@@ -56,13 +56,13 @@ If you don't want your zombie characters to jump, you can disable inheritance fo
 **Example : Child Motion Set with Unassigned Jump Motion**  
 
 **Human \(motion set\)**
-+ \+ Idle – `GenericIdle.motion`
-+ \+ Walk – `GenericWalk.motion`
-+ \+ Jump – `GenericJump.motion`
++ \+ Idle - `GenericIdle.motion`
++ \+ Walk - `GenericWalk.motion`
++ \+ Jump - `GenericJump.motion`
 
 **Zombie \(motion set\)**
-  + \+ Walk – `ZombieWalk.motion`
-  + \+ Jump – *Unassigned*
+  + \+ Walk - `ZombieWalk.motion`
+  + \+ Jump - *Unassigned*
 
 The **Zombie** motion set uses the `Idle` motion from the parent motion set, customizes the `Walk` motion, and disables the `Jump` motion\.
 
@@ -85,5 +85,5 @@ You can configure the state machine to avoid motion states that are unassigned\.
 1. For **Test Function**, select **Is Motion Assigned?**\.  
 ![\[Add motion conditions so that some motion states are unassigned.\]](/images/userguide/actor-animation/animation-editor-motion-condition.png)
 
-   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition’s traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.  
+   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition's traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.  
 ![\[Customize state machines based on motion sets.\]](/images/userguide/actor-animation/animation-editor-sparse-motion-sets-02.png)

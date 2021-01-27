@@ -93,10 +93,10 @@ if (edit)
 ```
 
 Lumberyard has reflection contexts for different purposes, including the following:
-+ [Serialization Context](/docs/userguide/components/entity-system-reflection-serialization-context.md) – Contains reflection data for serialization and construction of objects\.
-+ [Edit Context](/docs/userguide/components/entity-system-reflection-edit-context.md) – Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
-+ [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md) – Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md), or other external sources\.
-+ `NetworkContext` – Contains reflection for networking purposes, including marshaling, quantization, and extrapolation\.
++ [Serialization Context](/docs/userguide/components/entity-system-reflection-serialization-context.md) - Contains reflection data for serialization and construction of objects\.
++ [Edit Context](/docs/userguide/components/entity-system-reflection-edit-context.md) - Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
++ [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md), or other external sources\.
++ `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation\.
 
 **Note**  
  This topic covers only `SerializeContext` and `EditContext`\. 
@@ -130,7 +130,7 @@ The example specifies that `m_someFloatField`, `m_someStringField`, `m_things`, 
 **Tip**  
 We recommend that you keep field names simple for future proofing\. If your component undergoes significant changes and you want to write a data converter to maintain backward data compatibility, you must reference the field names directly\.
 
-The preceding example reflects two primitive types—a float, and a string—as well as a container \(vector\) of some structure\. AZ reflection, serialization, and editing natively support a wide variety of types:
+The preceding example reflects two primitive types-a float, and a string-as well as a container \(vector\) of some structure\. AZ reflection, serialization, and editing natively support a wide variety of types:
 + Primitive types, including integers \(signed and unsigned, all sizes\), floats, and strings
 + Enums
 + `AZStd` containers \(flat and associative\), including `AZStd::vector`, `AZStd::list`, `AZStd::map`, `AZStd::unordered_map`, `AZStd::set`, `AZStd::unordered_set`, `AZStd:pair`, `AZStd::bitset`, `AZStd::array`, fixed C\-style arrays, and others\.
@@ -231,10 +231,10 @@ AZ::u32 MyComponent::OnStringFieldChanged()
 ```
 
 `AZ::Edit::PropertyRefreshLevels::ValuesOnly` is one of the following refresh modes that you can use \(`\dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`\):
-+ `AttributesAndValues` – Reevaluates attributes of the properties displayed in the UI and refreshes their values\. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them\. Doing so might include reinvoking bound functions\.
-+  `EntireTree` – Refreshes the entire tree that is displayed in the UI\. 
-+  `None` – Specifies that the properties that are displayed in the UI should not be refreshed\.
-+ `ValuesOnly` – Refreshes only the values of the properties that are displayed in the UI\. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback\.
++ `AttributesAndValues` - Reevaluates attributes of the properties displayed in the UI and refreshes their values\. Because attributes can be bound to data members, member functions, global functions, or static variables, it's sometimes necessary to ask the property grid to reevaluate them\. Doing so might include reinvoking bound functions\.
++  `EntireTree` - Refreshes the entire tree that is displayed in the UI\. 
++  `None` - Specifies that the properties that are displayed in the UI should not be refreshed\.
++ `ValuesOnly` - Refreshes only the values of the properties that are displayed in the UI\. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback\.
 
 The following more complex example binds a list of strings as options for a combo box\. The list of strings is attached to a string field *Property A*\. Suppose you want to modify the options available in the combo box for Property A with the values from another *Property B*\. In that case you can bind the combo box `AZ::Edit::Attributes::StringList` attribute to a member function that computes and returns the list of options\. In the `AZ::Edit::Attributes::ChangeNotify` attribute for Property B, you tell the system to reevaluate attributes, which in turn reinvokes the function that computes the list of options\.
 

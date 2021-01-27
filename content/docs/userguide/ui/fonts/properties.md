@@ -11,7 +11,7 @@ You define your font's properties in the `.font` file, which is an XML file\. Th
 
 ```
 <fontshader>
-    <font path="Vera.ttf" fontsize=“32“/>    
+    <font path="Vera.ttf" fontsize="32"/>    
     <effect name="default">
         <pass>
         </pass>
@@ -40,8 +40,8 @@ Use the following tags, attributes, and values to define key features of your fo
 | Tag | Description | Attributes | 
 | --- | --- | --- | 
 | font | Contains critical attributes that define the path to the asset, size, and other font qualities\. | See [Font Tag Attributes](#tag-font-attributes)\. | 
-| effect | Acts as a parent tag to pass children tags\. Groups the pass tags that comprises the effect\. | name – Name of the effect\. | 
-| effectfile | Specifies the path to an XML file that contains effect tags\. | path – String that specifies the path to an XML file containing effect tags\. | 
+| effect | Acts as a parent tag to pass children tags\. Groups the pass tags that comprises the effect\. | name - Name of the effect\. | 
+| effectfile | Specifies the path to an XML file that contains effect tags\. | path - String that specifies the path to an XML file containing effect tags\. | 
 | pass |  A child tag of an `effect` tag\. You can add multiple `pass` tags as the children of a single `effect` tag\. Defines a render pass of the text with various parameters that affect the text's rendering\. The `pass` tags can be layered on top of each other, giving the effect a unique look\.   | Doesn't have attributes\. Parents the following child tags that define text effects\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html) | 
 | color | A text effect that is a child tag of the pass tag\. Defines the text color\.  |  Uses the following attributes to define the effect's intensity with float point values\. Minimum: `0.0` Maximum: `1.0f` [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html) | 
 | pos or offset | A text effect that is a child tag of the pass tag\. Sets the position of the text\. |  Uses the following attributes to set text position with integer values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-fonts-properties.html)  | 

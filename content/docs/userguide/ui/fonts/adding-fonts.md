@@ -5,7 +5,7 @@ title: Adding New Fonts
 # Adding New Fonts {#ui-fonts-adding-fonts}
 
 For each new font to add, you need the following files:
-+ A font asset – True Type Font \(`.ttf`\) or Open Type Font \(`.otf`\) file
++ A font asset - True Type Font \(`.ttf`\) or Open Type Font \(`.otf`\) file
 + A font `.font` file describing the asset {#create-font-xml-file}
 
 **To add a new font to your UI**

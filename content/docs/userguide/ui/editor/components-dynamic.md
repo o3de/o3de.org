@@ -41,13 +41,13 @@ For a [**LayoutGrid**](/docs/userguide/ui/editor/components-layout-grid.md) elem
 
 ## DynamicScrollBox {#ui-editor-components-dynamic-scrollbox}
 
-To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component\. With the **DynamicScrollBox** component, you can change the number of children of the scroll box’s element at run time\. 
+To use the **DynamicScrollBox** component, you place it on an element that also has a **ScrollBox** component\. With the **DynamicScrollBox** component, you can change the number of children of the scroll box's element at run time\. 
 
 The content element dynamically resizes to fit its child elements\. The first child of the content element acts as the prototype element\. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout\.
 
 With the **DynamicScrollBox** component, only the minimum number of child elements are actually created for display\. This is different from the **DynamicLayout** component, where all child elements are created at run time and can consume a large amount of resources\. The **DynamicScrollBox**'s elements are reused as the user scrolls; therefore, a scroll box can simulate a large number of children while maintaining good performance\.
 
-The **DynamicScrollBox** component automatically positions its children and resizes the content element to match the bounding box of its children\. Each child’s size is the same as the prototype element\. By default, the children are positioned in a row from left to right\. If vertical scrolling is enabled, the children are positioned in a column from top to bottom\.
+The **DynamicScrollBox** component automatically positions its children and resizes the content element to match the bounding box of its children\. Each child's size is the same as the prototype element\. By default, the children are positioned in a row from left to right\. If vertical scrolling is enabled, the children are positioned in a column from top to bottom\.
 
 **To use a dynamic scroll box component**
 
@@ -90,8 +90,8 @@ Implement this bus to receive notifications when elements of a dynamic scroll bo
 Sends a signal when an element of a dynamic scroll box is about to become visible\.
 
 **Parameters**  
-`entityID` – The entity Id of the element that is about to become visible\.  
-`index` – The index of the element that is about to become visible\.
+`entityID` - The entity Id of the element that is about to become visible\.  
+`index` - The index of the element that is about to become visible\.
 
 **Return**  
 None

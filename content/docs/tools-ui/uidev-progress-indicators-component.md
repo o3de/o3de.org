@@ -5,7 +5,7 @@ title: Lumberyard UI progress indicators
 ---
 # Lumberyard UI progress indicators<a name="uidev-progress-indicators-component"></a>
 
-Use progress and status indicators to communicate to users that the Lumberyard application is working on a process, and what the result of that process is when it’s finished\. Indicators should be employed when there’s a chance the user could be left wondering whether or not a process is working or hung\.
+Use progress and status indicators to communicate to users that the Lumberyard application is working on a process, and what the result of that process is when it's finished\. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung\.
 
 ![\[component progress indicators style\]](/images/tools-ui/component-progress-indicators-style.png)
 
@@ -23,7 +23,7 @@ Follow these guidelines as you design your UI with progress indicators:
 See additional usage guidelines in the following sections, which apply to specific types of progress indicators\.
 
 Avoid these design choices when using progress indicators:
-+ Don’t use more than one progress indicator at a time\.
++ Don't use more than one progress indicator at a time\.
 
 ## Basic progress bar<a name="progress-bar-basic"></a>
 
@@ -31,7 +31,7 @@ Avoid these design choices when using progress indicators:
 
 Display determinate progress as a linear progress bar, to show a process or a task that has a definite start and end\. In this scenario, the system is aware of how many steps are taken, and a likelihood of time for completion\.
 
-In the case where a system is malfunctioning, or doesn’t have either of these data points, consider using a spinner\.
+In the case where a system is malfunctioning, or doesn't have either of these data points, consider using a spinner\.
 
 Additional usage guidelines for progress bars include the following:
 
@@ -66,7 +66,7 @@ progressBar->setTextVisible(false);
 
 ![\[component progress spinner basic\]](/images/tools-ui/component-progress-spinner-basic.gif)
 
-Use spinners when it’s unclear when the process will finish\.
+Use spinners when it's unclear when the process will finish\.
 
 Additional usage guidelines for spinners include the following:
 
@@ -89,7 +89,7 @@ spinner->SetIsBusy(true);
 
 ## C\+\+ API reference<a name="progress-indicators-api-ref"></a>
 
-For details on the **progress indicator** API’s, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **progress indicator** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::ProgressBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_progress_bar.html) 
 +  [AzQtComponents::StyledBusyLabel](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_styled_busy_label.html) \(spinner\)
 

@@ -8,7 +8,7 @@ title: Introduction to Lumberyard UI development
 
 # Introduction to Lumberyard UI development<a name="ui-dev-intro"></a>
 
-Introduced with Amazon Lumberyard version 1\.25 and the release of UI 2\.0, Lumberyard’s **custom Qt widget library** provides developers with access to the same UI components used throughout Lumberyard\. Using this library, UI developers can build their own tools and extensions for Lumberyard, while maintaining a coherent and standardized UI experience\. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework \- the C\+\+ library that Lumberyard relies on for its UI\. The library can be extended to support your own customizations and modifications\.
+Introduced with Amazon Lumberyard version 1\.25 and the release of UI 2\.0, Lumberyard's **custom Qt widget library** provides developers with access to the same UI components used throughout Lumberyard\. Using this library, UI developers can build their own tools and extensions for Lumberyard, while maintaining a coherent and standardized UI experience\. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework \- the C\+\+ library that Lumberyard relies on for its UI\. The library can be extended to support your own customizations and modifications\.
 
 ![\[uidev intro\]](/images/tools-ui/uidev-intro.png)
 

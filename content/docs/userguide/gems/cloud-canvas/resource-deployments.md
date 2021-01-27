@@ -10,19 +10,19 @@ You implement deployments using [AWS CloudFormation stacks](https://docs.aws.ama
  A project may define any number of deployments, up to the limits imposed by AWS CloudFormation \(for more information, see [AWS CloudFormation Limits](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html)\)\. Each deployment contains a completely independent set of the resources that the game requires\. For example, you can have separate development, test, and release deployments so that your development and test teams can work independently of the deployment used for the released version of the game\.
 
  An AWS account that hosts a Lumberyard project contains the following resources:
-+ *\{project\}* – An AWS CloudFormation stack that acts as a container for all the project's deployments\.
-+ *\{project\}*\-`Configuration` – An S3 bucket used to store configuration data\.
-+ *\{project\}*\-`ProjectResourceHandler` – A Lambda function that implements the handler for the custom resources used in the templates\. See [Custom Resources](/docs/userguide/gems/cloud-canvas/custom-resources.md)\.
-+ *\{project\}*\-`ProjectResourceHandlerExecution` – An IAM role that grants the permissions used by the `ProjectResourceHandler` Lambda function when it is executing\.
-+ *\{project\}*\-`PlayerAccessTokenExchange` – A Lambda function that implements the token exchange step in the player login process\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
-+ *\{project\}*\-`PlayerAccessTokenExchangeExecution`– An IAM role that grants the permissions used by the `PlayerAccessTokenExchange` Lambda function when it runs\.
-+ *\{project\}*\-*\{deployment\}* – AWS CloudFormation stacks for each of the project's deployments\.
-+ *\{project\}*\-*\{deployment\}*`Access` – AWS CloudFormation stacks that control access to each of the project's deployments\.
-+  *\{project\}*\-*\{deployment\}*`Access-PlayerAccessIdentityPool` – An Amazon Cognito identity pool used for player identity\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
-+  *\{project\}*\-*\{deployment\}*`Access-PlayerLoginIdentityPool` – An Amazon Cognito identity pool that provides the temporary player identity used during the player login process\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
-+ *\{project\}*\-*\{deployment\}*\-*\{resource\-group\}* – An AWS CloudFormation stack for each resource group of the project\.
-+ *\{project\}*\-*\{deployment\}*\-*\{resource\-group\}*\-*\{resource\}* – The resources defined by a resource group\. Because of how AWS CloudFormation works, parts of these names have unique identifiers appended to them\. For example, for a project named MyGame with a deployment named Development and a feature named HighScore, the actual name of a Scores resource would be something like: `MyGame-Development-1FLFSUKM3MC4B-HighScore-1T7DK9P46SQF8-Scores-1A1WIH6MZKPRI`\. The tools provided by Lumberyard hide these actual resource names under most circumstances\.
-+  *\{project\}*\-*\{iam\-policy\-or\-role\}* – An IAM policy or role that manages resource and deployment permissions\. For more information, see [Cloud Canvas Built\-In Roles and Policies](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md)\.
++ *\{project\}* - An AWS CloudFormation stack that acts as a container for all the project's deployments\.
++ *\{project\}*\-`Configuration` - An S3 bucket used to store configuration data\.
++ *\{project\}*\-`ProjectResourceHandler` - A Lambda function that implements the handler for the custom resources used in the templates\. See [Custom Resources](/docs/userguide/gems/cloud-canvas/custom-resources.md)\.
++ *\{project\}*\-`ProjectResourceHandlerExecution` - An IAM role that grants the permissions used by the `ProjectResourceHandler` Lambda function when it is executing\.
++ *\{project\}*\-`PlayerAccessTokenExchange` - A Lambda function that implements the token exchange step in the player login process\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
++ *\{project\}*\-`PlayerAccessTokenExchangeExecution`- An IAM role that grants the permissions used by the `PlayerAccessTokenExchange` Lambda function when it runs\.
++ *\{project\}*\-*\{deployment\}* - AWS CloudFormation stacks for each of the project's deployments\.
++ *\{project\}*\-*\{deployment\}*`Access` - AWS CloudFormation stacks that control access to each of the project's deployments\.
++  *\{project\}*\-*\{deployment\}*`Access-PlayerAccessIdentityPool` - An Amazon Cognito identity pool used for player identity\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
++  *\{project\}*\-*\{deployment\}*`Access-PlayerLoginIdentityPool` - An Amazon Cognito identity pool that provides the temporary player identity used during the player login process\. For more information, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
++ *\{project\}*\-*\{deployment\}*\-*\{resource\-group\}* - An AWS CloudFormation stack for each resource group of the project\.
++ *\{project\}*\-*\{deployment\}*\-*\{resource\-group\}*\-*\{resource\}* - The resources defined by a resource group\. Because of how AWS CloudFormation works, parts of these names have unique identifiers appended to them\. For example, for a project named MyGame with a deployment named Development and a feature named HighScore, the actual name of a Scores resource would be something like: `MyGame-Development-1FLFSUKM3MC4B-HighScore-1T7DK9P46SQF8-Scores-1A1WIH6MZKPRI`\. The tools provided by Lumberyard hide these actual resource names under most circumstances\.
++  *\{project\}*\-*\{iam\-policy\-or\-role\}* - An IAM policy or role that manages resource and deployment permissions\. For more information, see [Cloud Canvas Built\-In Roles and Policies](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies.md)\.
 
 ## Configuration Bucket {#cloud-canvas-configuration-bucket}
 

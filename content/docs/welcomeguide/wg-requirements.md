@@ -38,9 +38,9 @@ Microsoft offers Visual Studio Community edition free to individual developers\.
 
 The default Visual Studio installation might not include all of the features that are required by Lumberyard\. Ensure that the following Visual Studio features are enabled:
 
-1.  Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you’ve already installed Visual Studio\. 
+1.  Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you've already installed Visual Studio\. 
 
-1.  If you’ve installed Visual Studio, choose **More \- Modify** on the version of Visual Studio you’ll use with Lumberyard\. 
+1.  If you've installed Visual Studio, choose **More \- Modify** on the version of Visual Studio you'll use with Lumberyard\. 
 
 1.  On the **Workloads** tab: 
    + Select **Game development with C\+\+**\.

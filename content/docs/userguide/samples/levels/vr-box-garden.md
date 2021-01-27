@@ -12,27 +12,27 @@ For more information about installing the project that includes the VR Box Garde
 ## VR Device Tracking and Controller Gameplay {#sample-level-vr-box-garden-vr-device-tracking-controller-gameplay}
 
 The VR Box Garden level uses the following:
-+ `Input Configurator` entity – Handles VR device tracking and input events\.
-+ **[Input](/docs/userguide/components/input.md)** component – Defines input events that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.
-+ **[Lua Script](/docs/userguide/components/lua-script.md)** component – Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.
++ `Input Configurator` entity - Handles VR device tracking and input events\.
++ **[Input](/docs/userguide/components/input.md)** component - Defines input events that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.
++ **[Lua Script](/docs/userguide/components/lua-script.md)** component - Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.
 
 The level uses a `controller_right.slice` for the right controller and a `controller_left.slice` for the left controller\. These controllers listen for input events and spawn projectiles when an event is detected\. The projectile entities use the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component to move forward\.
 
 All slices for the VR Box Garden level are located in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 
 The VR Box Garden level uses the following scripts:
-+ `vrdevice_tracking` Lua script – Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
-+ `input_play_sound` Lua script – Plays a spawning sound when an input event is triggered\. The **Lua Script** component specifies the sound to play\.
++ `vrdevice_tracking` Lua script - Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
++ `input_play_sound` Lua script - Plays a spawning sound when an input event is triggered\. The **Lua Script** component specifies the sound to play\.
 **Note**  
 To play sound correctly, you must add both the **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** component and the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** component on the entity\.
-+ Script Canvas graph – Spawns a projectile\. The **[Spawner](/docs/userguide/components/spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
++ Script Canvas graph - Spawns a projectile\. The **[Spawner](/docs/userguide/components/spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
 
 ## VR Playspace {#sample-level-vr-box-garden-vr-playspace}
 
 The level's playspace includes the following:
-+ Base – Uses the `Playspace_Base` entity that has a `vrplayspace_base.lua` script\. The Lua script adjusts the scale of the static mesh to match the dimension of the VR playspace\. The dimension is derived from the position of four corners of the playspace from the VR device\.
-+ Posts – Spawns at runtime from the `Playspace_Posts` entity\. This entity uses a Lua script to calculate the number and position of posts, and spawn the posts along the playspace edges at a fixed interval\.
-+ Corners – Uses a Lua script to locate the corner position and move to the correct position\. There are four entities, one for each corner\. You can use the Lua script to assign a number for each corner\.
++ Base - Uses the `Playspace_Base` entity that has a `vrplayspace_base.lua` script\. The Lua script adjusts the scale of the static mesh to match the dimension of the VR playspace\. The dimension is derived from the position of four corners of the playspace from the VR device\.
++ Posts - Spawns at runtime from the `Playspace_Posts` entity\. This entity uses a Lua script to calculate the number and position of posts, and spawn the posts along the playspace edges at a fixed interval\.
++ Corners - Uses a Lua script to locate the corner position and move to the correct position\. There are four entities, one for each corner\. You can use the Lua script to assign a number for each corner\.
 
 ![\[Example of the playspace area in the VR Box Garden level.\]](/images/userguide/vr-box-garden-level-playspace-example.png)
 

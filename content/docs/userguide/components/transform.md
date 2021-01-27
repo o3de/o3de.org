@@ -104,8 +104,8 @@ None
 Retrieves the entity's local and world transforms\.
 
 **Parameters**  
-Transform \[out\] – Local transform, relative to parent entity\.  
-Transform \[out\] – World transform\.
+Transform \[out\] - Local transform, relative to parent entity\.  
+Transform \[out\] - World transform\.
 
 **Return**  
 None
@@ -478,7 +478,7 @@ Type: Int
 Sets the entity's parent entity and notifies all listeners\. The entity's local transform is moved into the parent entity's space to preserve the entity's world transform\.
 
 **Parameters**  
-EntityId – Parent entity ID  
+EntityId - Parent entity ID  
 Type: Int
 
 **Return**  
@@ -489,7 +489,7 @@ None
 Sets the entity's parent entity, moves the transform relative to the parent entity, and notifies all listeners\. This function uses the world transform as a local transform and moves the transform relative to the parent entity\.
 
 **Parameters**  
-EntityId – Parent entity ID  
+EntityId - Parent entity ID  
 Type: Int
 
 **Return**  
@@ -546,27 +546,27 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 Signals that the local or world transform of the entity changed\.
 
 **Parameters**  
-Transform – The new local transform of the entity  
-Transform – The new world transform of the entity
+Transform - The new local transform of the entity  
+Transform - The new world transform of the entity
 
 ### OnParentChanged {#on-parent-changed}
 
 Signals that the parent of the entity changed\.
 
 **Parameters**  
-EntityId – The entity ID of the previous parent\. The entity ID is invalid if there was no previous parent\.  
-EntityId – The entity ID of the new parent\. The entity ID is invalid if there is no new parent\.
+EntityId - The entity ID of the previous parent\. The entity ID is invalid if there was no previous parent\.  
+EntityId - The entity ID of the new parent\. The entity ID is invalid if there is no new parent\.
 
 ### OnChildAdded {#on-child-added}
 
 Signals that a child was added to the entity\.
 
 **Parameters**  
-EntityId – The entity ID of the added child
+EntityId - The entity ID of the added child
 
 ### OnChildRemoved {#on-child-removed}
 
 Signals that a child was removed from the entity\.
 
 **Parameters**  
-EntityId – The entity ID of the removed child
+EntityId - The entity ID of the removed child

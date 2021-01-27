@@ -13,7 +13,7 @@ If you like, you can follow this chapter in video \(6:33 minutes\) form:
 
 Begin this tutorial either with the level you created in [Tutorial Seven: Create terrain](tutor-ch07-create-terrain.md), or by opening `ch07_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Create a new entity for a section of fence\. In **Perspective**, right\-click and select **Create Entity** form the context menu\. 
@@ -26,7 +26,7 @@ Begin this tutorial either with the level you created in [Tutorial Seven: Create
 
 1.  Add a collider\. In **Entity Inspector**, choose **Add Component**\. Begin typing `whi` in the search field, and select **White Box Collider** from the filtered list\. 
 
-1.  Press the **2** key or select the **Move** tool from the toolbar to move the entity\. Move the `fence_section1` entity so that it’s roughly sitting on the terrain\.   
+1.  Press the **2** key or select the **Move** tool from the toolbar to move the entity\. Move the `fence_section1` entity so that it's roughly sitting on the terrain\.   
 ![\[Lumberyard move fence section entity\]](/images/welcomeguide/ui-wb-fence-section-a-1.26.png)
 
 1.  Create a slice from the `fence_section1` entity\. In **Entity Outliner**, right\-click the `fence_section1` entity and select **Create Slice** from the context menu\.   
@@ -89,4 +89,4 @@ To make more precise modifications, enable the **Snap To Grid** button in the **
 
 If you press the **Play** button, or **Control \+ G**, to enter play mode, the chicken will be able to jump over the fence if you press jump repeatedly\. For extra credit, see if you can limit the number of times the player can press jump to prevent the chicken from clearing the fence\. Hint: use the **Get Tick Delta Time** node to create a timer\.
 
-When you’re ready, try [Tutorial Nine: Add sound effects and background audio](tutor-ch09-sound-effects-and-background-audio.md)\.
+When you're ready, try [Tutorial Nine: Add sound effects and background audio](tutor-ch09-sound-effects-and-background-audio.md)\.

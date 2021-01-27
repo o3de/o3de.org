@@ -337,9 +337,9 @@ Yes
 
 Sets the amount of random variation to apply to the light's radius\.
 
-This variation is a percentage of the light's radius\. A value of `0.2` means that between –20% and 20% of the light's radius value is added back to the light's radius\.
+This variation is a percentage of the light's radius\. A value of `0.2` means that between -20% and 20% of the light's radius value is added back to the light's radius\.
 
-For example, the light radius is `5.0`, and variation is `0.2`; this means that the range of the light radius is: 5\.0 \+/– \(5\.0 \* 0\.2\) or 5\.0 \+/– 20% of 5\.0\.
+For example, the light radius is `5.0`, and variation is `0.2`; this means that the range of the light radius is: 5\.0 \+/- \(5\.0 \* 0\.2\) or 5\.0 \+/- 20% of 5\.0\.
 
 **Parameters**  
 Type: Float
@@ -367,9 +367,9 @@ Yes
 
 Sets the amount of random variation to apply the **Light** component's diffuse and specular multipliers\.
 
-The **Light** component calculates the light intensity based on the duration of the lightning effect\. This value is a percentage of that light intensity value\. A value of `0.2` means that between –20% and 20% of the light intensity value is added back to the light's diffuse and specular multipliers\. 
+The **Light** component calculates the light intensity based on the duration of the lightning effect\. This value is a percentage of that light intensity value\. A value of `0.2` means that between -20% and 20% of the light intensity value is added back to the light's diffuse and specular multipliers\. 
 
-For example, the light intensity is `10.0`, and variation is `0.3`; this means that the range of the light radius is: 10\.0 \+/– \(10\.0 \* 0\.3\) or 10\.0 \+/– 30% of 10\.0\.
+For example, the light intensity is `10.0`, and variation is `0.3`; this means that the range of the light radius is: 10\.0 \+/- \(10\.0 \* 0\.3\) or 10\.0 \+/- 30% of 10\.0\.
 
 **Parameters**  
 Type: Float
@@ -397,9 +397,9 @@ Yes
 
 Sets the amount of random variation to apply to the particle's size\.
 
-This variation is a percentage of the **[Particle](/docs/userguide/components/particle.md)** component's **Global size scale** parameter\. A value of `0.2` means that between –20% and 20% of the particle's global size value is added back to the size of the emitted particles\.
+This variation is a percentage of the **[Particle](/docs/userguide/components/particle.md)** component's **Global size scale** parameter\. A value of `0.2` means that between -20% and 20% of the particle's global size value is added back to the size of the emitted particles\.
 
-For example, the particle size is `1.0`, and variation is `0.5`; the range of the light radius is: 1\.0 \+/– \(1\.0 \* 0\.5\) or 1\.0 \+/– 50% of 1\.0\.
+For example, the particle size is `1.0`, and variation is `0.5`; the range of the light radius is: 1\.0 \+/- \(1\.0 \* 0\.5\) or 1\.0 \+/- 50% of 1\.0\.
 
 **Parameters**  
 Type: Float

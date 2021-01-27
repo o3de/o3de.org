@@ -40,7 +40,7 @@ CollisionRequestBus::BroadcastResult(group, &Physics::CollisionRequests::GetColl
 
 ## Creating Collision Groups in Code {#physx-configuration-programming-adhoc-collision-groups}
 
-Unlike the predefined collision groups that you create in Lumberyard Editor, you can use code to create collision groups at runtime\. This is useful when you don’t know the layers involved in advance at therefore must define a collision group at runtime\. 
+Unlike the predefined collision groups that you create in Lumberyard Editor, you can use code to create collision groups at runtime\. This is useful when you don't know the layers involved in advance at therefore must define a collision group at runtime\. 
 
 The following example code creates a collision group at runtime that contains an `Enemy` layer and a `Tree` layer\. This handles the situation in which the identity of the tree and the enemy are not known prior to the start of gameplay\.
 

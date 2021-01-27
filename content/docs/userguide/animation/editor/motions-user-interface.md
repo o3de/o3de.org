@@ -13,4 +13,4 @@ In the **Motions** pane, you can do the following:
 
 1. Add, save, open, or delete motions\.
 
-1. **Motion Properties** – Specify how you want the motion to animate and the play speed of the motion\.
+1. **Motion Properties** - Specify how you want the motion to animate and the play speed of the motion\.

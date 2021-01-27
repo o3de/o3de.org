@@ -20,9 +20,9 @@ Currently, you must set the protection from the `lmbr_aws` command line tool by 
 
 The `protect-deployment` command uses the following parameters\.
 
-`--set <deployment_name>` – Specifies that the deployment is protected\. 
+`--set <deployment_name>` - Specifies that the deployment is protected\. 
 
-`--clear <deployment_name>` – Specifies the deployment is not protected\. 
+`--clear <deployment_name>` - Specifies the deployment is not protected\. 
 
 `--show` \- Displays a list of currently protected deployments\. 
 

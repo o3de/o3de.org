@@ -25,7 +25,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 Sets the value of the default RTPC\.
 
 **Parameters**  
-`value` – Float value of the RTPC
+`value` - Float value of the RTPC
 
 **Return**  
 None
@@ -38,8 +38,8 @@ Yes
 Sets the value of the specified RTPC\.
 
 **Parameters**  
-`rtpcName` – Name of the RTPC to set  
-`value` – Float value to set
+`rtpcName` - Name of the RTPC to set  
+`value` - Float value to set
 
 **Return**  
 None

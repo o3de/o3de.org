@@ -16,7 +16,7 @@ If specified, `<role-name>` must be the logical resource ID of an IAM role resou
 **Note**  
 You should avoid defining roles that have the same name in both files\. If you do, the role from the deployment file takes precedence\.
 
-If you specify a deployment access role, the actual role used depends on the deployment on which the command is operating\. If the `--deployment` argument has been specified, then the specified deployment is used\. If the `--deployment` argument has not been specified and the user has specified a default deployment, the default deployment is used\. If a default deployment has not been specified, the project’s default deployment is used\.
+If you specify a deployment access role, the actual role used depends on the deployment on which the command is operating\. If the `--deployment` argument has been specified, then the specified deployment is used\. If the `--deployment` argument has not been specified and the user has specified a default deployment, the default deployment is used\. If a default deployment has not been specified, the project's default deployment is used\.
 
 `lmbr_aws` uses your configured AWS credentials to assume the specified role\. See [Configuration](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-configuration) for a description of how the credentials are determined\. The credentials must have permission to assume the role\. For more information, see [Granting a User Permission to Switch Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)\.
 

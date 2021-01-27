@@ -29,7 +29,7 @@ Dynamic vegetation differs from static vegetation in the following ways\.
 
 |  | Dynamic Vegetation | Static Vegetation | 
 | --- | --- | --- | 
-| World size | Limited only by Lumberyard maximum world size | Maximum of 2K–4K | 
+| World size | Limited only by Lumberyard maximum world size | Maximum of 2K-4K | 
 | Templates | Slices | Not templatable | 
 | Saved as | Procedural mechanisms | Static placement data | 
 | Generated | In\-game just\-in\-time placement | As level data | 

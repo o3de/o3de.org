@@ -21,14 +21,14 @@ Use the **Gradient Editor** to apply color ranges to an emitter and configure ad
 ## Gradient Editor UI Options {#particle-gradient-editor-ui-options}
 
 The **Gradient Editor** includes the following:
-+ **Location** – Sets the location value range from 0% – 100%\.
-+ **Color** – Opens the **Color Picker**\.
-+ **Gradient box** – Applies the combined gradient and alpha\.
++ **Location** - Sets the location value range from 0% - 100%\.
++ **Color** - Opens the **Color Picker**\.
++ **Gradient box** - Applies the combined gradient and alpha\.
 + Gradient viewport
   + The x\-axis represents the gradient generator of the color change over the full gradient\.
-  + The y\-axis represents 0 – 100% alpha of the gradient color\.
-+ **Default Library**, alpha curve – Provides alpha curves to use as a starting point\.
-+ **Default Library**, gradient – Provides gradients to use as a starting point\.
+  + The y\-axis represents 0 - 100% alpha of the gradient color\.
++ **Default Library**, alpha curve - Provides alpha curves to use as a starting point\.
++ **Default Library**, gradient - Provides gradients to use as a starting point\.
 
 ## Working with Color Gradients {#particle-gradient-editor-gradient}
 

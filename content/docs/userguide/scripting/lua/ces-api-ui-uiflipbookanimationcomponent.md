@@ -159,9 +159,9 @@ enum eUiFlipbookAnimationLoopType
 ```
 
 Each type performs a different looping action:
-+ **None** – Animation ends when end frame is reached\.
-+ **Linear** – The frame displayed after the end frame is always the **Loop Start Frame**\.
-+ **PingPong** – The direction of the animation loop goes back and forth between the start frame and the end frame\.
++ **None** - Animation ends when end frame is reached\.
++ **Linear** - The frame displayed after the end frame is always the **Loop Start Frame**\.
++ **PingPong** - The direction of the animation loop goes back and forth between the start frame and the end frame\.
 
 ### GetFrameDelay {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent-uiflipbookanimationbus-getframedelay}
 

@@ -112,13 +112,13 @@ The following example directs the AZ Code Generator utility to attach a free\-fl
 #define AzExampleClass(...) AZCG_CreateArgumentAnnotation(AzExampleClass, Class_Attribute, __VA_ARGS__) int AZ_JOIN(m_azCodeGenInternal, __COUNTER__);
 ```
 
-`AzExampleClass` – Specifies the annotation name `AzExampleClass` \(instead of `AzExample`, as in the previous example\)\.
+`AzExampleClass` - Specifies the annotation name `AzExampleClass` \(instead of `AzExample`, as in the previous example\)\.
 
-`Class_Attribute` – Causes the AZ Code Generator utility to attach the attribute to the class that contains the annotation\. The annotation belongs to the `annotations` property of the class object\. 
+`Class_Attribute` - Causes the AZ Code Generator utility to attach the attribute to the class that contains the annotation\. The annotation belongs to the `annotations` property of the class object\. 
 
-`__VA_ARGS__` – Specifies additional parameters that are converted into a single string and passed into the AZ Code Generator utility for parsing\.
+`__VA_ARGS__` - Specifies additional parameters that are converted into a single string and passed into the AZ Code Generator utility for parsing\.
 
-`int AZ_JOIN(m_azCodeGenInternal, __COUNTER__)` – `AZ_JOIN` is a helper macro that takes two macro\-level entries and joins them together without converting them to strings\. Because Clang requires annotation attributes be attached to a function or variable, this example uses `AZ_JOIN` and a temporary integer member variable to do this\. The temporary integer member variable is then ignored\.
+`int AZ_JOIN(m_azCodeGenInternal, __COUNTER__)` - `AZ_JOIN` is a helper macro that takes two macro\-level entries and joins them together without converting them to strings\. Because Clang requires annotation attributes be attached to a function or variable, this example uses `AZ_JOIN` and a temporary integer member variable to do this\. The temporary integer member variable is then ignored\.
 
 Adding the new tag to the previous example produces the following code:
 

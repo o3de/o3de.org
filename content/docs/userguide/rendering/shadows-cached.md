@@ -36,10 +36,10 @@ When Lumberyard is set to place shadows automatically, the selected resolution c
 When you place shadows manually, the resolution is uniformly stretched across the shadow cascade\. Consequently, lower resolutions result in lower shadow quality at the same world space coverage\.
 
 Use the following console variables to control cached shadows, including setting the placement and resolution for individually cached shadow cascades\.
-+ **r\_ShadowsCache** – Caches all sun shadow cascades above the value\. 0 = no cached cascades, 1 = cache first cascade and up, 2 = cache second cascade and up\.
-+ **r\_ShadowsCacheResolutions** – The resolution of the cached cascades\. 
-+ **r\_ShadowsCacheFormat** – Storage format for cached shadow maps: 0 = D32: 32 bit float, 1 = D16: 16 bit integer\.
-+ **e\_ShadowsCacheUpdate** – Triggers updates of cached shadow maps: 0 = no update, 1 = one update, 2 = continuous updates\.
-+ **e\_ShadowsCacheObjectLod** – The level of detail \(LOD\) used for rendering objects into the cached shadow maps\. 
-+ **e\_ShadowsCascadesDebug** – Enables debug view mode\. 0 = disable, 1 = enable\. 
-+ **e\_DynamicDistanceShadows** – Toggles support for having selected objects cast dynamic shadows\. 
++ **r\_ShadowsCache** - Caches all sun shadow cascades above the value\. 0 = no cached cascades, 1 = cache first cascade and up, 2 = cache second cascade and up\.
++ **r\_ShadowsCacheResolutions** - The resolution of the cached cascades\. 
++ **r\_ShadowsCacheFormat** - Storage format for cached shadow maps: 0 = D32: 32 bit float, 1 = D16: 16 bit integer\.
++ **e\_ShadowsCacheUpdate** - Triggers updates of cached shadow maps: 0 = no update, 1 = one update, 2 = continuous updates\.
++ **e\_ShadowsCacheObjectLod** - The level of detail \(LOD\) used for rendering objects into the cached shadow maps\. 
++ **e\_ShadowsCascadesDebug** - Enables debug view mode\. 0 = disable, 1 = enable\. 
++ **e\_DynamicDistanceShadows** - Toggles support for having selected objects cast dynamic shadows\. 

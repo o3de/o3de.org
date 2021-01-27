@@ -37,9 +37,9 @@ Follow these steps to apply the second UV set:
 1. In the left pane, navigate to and select the material to use\. 
 
 1. In the right pane, under **Shader Generation Params**, do the following to apply the second UV set to one of these features: 
-   + Blend Layer – Select **Blendlayer** and **Use UV set 2 for blendlayer maps** to apply the second UV set to the **Second Diffuse Map**, **Specular**, **Height**, **Bump**, and **Blending Map** texture slots\. 
-   + Detail Map – Select **Detail mapping** and **Use UV set 2 for detail map** to apply the second UV channel to the **Detail** texture slot\. 
-   + Emittance Map – Select **Use UV set 2 for emittance map** to apply the second UV channel to the **Emittance** and **Decal** texture slots\. 
+   + Blend Layer - Select **Blendlayer** and **Use UV set 2 for blendlayer maps** to apply the second UV set to the **Second Diffuse Map**, **Specular**, **Height**, **Bump**, and **Blending Map** texture slots\. 
+   + Detail Map - Select **Detail mapping** and **Use UV set 2 for detail map** to apply the second UV channel to the **Detail** texture slot\. 
+   + Emittance Map - Select **Use UV set 2 for emittance map** to apply the second UV channel to the **Emittance** and **Decal** texture slots\. 
 
 ## Independent tiling and UV sets {#fbx-uv-independent-tiling}
 

@@ -33,7 +33,7 @@ As replicas arrive at remote nodes, `NetBindingChunk` starts the entity spawning
 
 ## Unbinding Process {#network-synchronizing-unbinding-process}
 
-When replicas are removed, affected `NetBindingComponent` instances start the unbinding process\. By default, entities that are unbound from proxy replicas are deleted, but this doesn’t have to be always the case\. A game can choose to keep all entities in place and seamlessly switch to single\-player mode\.
+When replicas are removed, affected `NetBindingComponent` instances start the unbinding process\. By default, entities that are unbound from proxy replicas are deleted, but this doesn't have to be always the case\. A game can choose to keep all entities in place and seamlessly switch to single\-player mode\.
 
 ## NetBindable Component Flexibility {#network-synchronizing-netbindable-flexibility}
 

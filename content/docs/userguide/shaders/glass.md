@@ -21,7 +21,7 @@ Default value: 0\.5
 
 **Blur Amount**  
 Controls the amount of blur\.  
-This parameter requires that the **Blur refraction – PC Only** shader generation parameter is enabled\.  
+This parameter requires that the **Blur refraction - PC Only** shader generation parameter is enabled\.  
 Default value: 0\.5
 
 **Bump Map Tiling**  
@@ -34,12 +34,12 @@ Default value: 0\.005
 
 **Cloudiness Masks Blur**  
 Applies blur to just cloudy areas\.  
-This parameter requires that the **Tint map – Tint/Gloss/Spec** shader generation parameter is enabled\.  
+This parameter requires that the **Tint map - Tint/Gloss/Spec** shader generation parameter is enabled\.  
 Default value: 0
 
 **Cloudiness Masks Gloss**  
 Makes cloudy areas less glossy\.  
-This parameter requires that the **Tint map – Tint/Gloss/Spec** shader generation parameter is enabled\.  
+This parameter requires that the **Tint map - Tint/Gloss/Spec** shader generation parameter is enabled\.  
 Default value: 0\.5
 
 **Fog color**  
@@ -48,7 +48,7 @@ This parameter requires that the **Depth Fog** shader generation parameter is en
 Default value: 255,255,255
 
 **Fog cutoff end depth**  
-Sets the distance, in meters, after which fog doesn’t get any stronger\.   
+Sets the distance, in meters, after which fog doesn't get any stronger\.   
 This parameter requires that the **Depth Fog** shader generation parameter is enabled\.  
 Default value: 20
 
@@ -78,13 +78,13 @@ Enables diffuse map for dirt, and so on\. Requires alpha channel\.
 **Environment map**  
 Enables environment map as a separate texture\.
 
-**Tint map – Tint/Gloss/Spec**  
+**Tint map - Tint/Gloss/Spec**  
 Enables the RGB spec map to control tinting in red channel, cloudiness in green channel, and specular in blue channel\.
 
 **Use Tint Color Map**  
 Enables the Tint Color map\. Used for multicolored glass, which goes in the custom Tint Color map slot\.
 
-**Blur refraction – PC Only**  
+**Blur refraction - PC Only**  
 Enables the blurring of objects seen through the glass\.
 
 **Depth Fog**  

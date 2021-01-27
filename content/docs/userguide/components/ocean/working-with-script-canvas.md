@@ -35,7 +35,7 @@ You can use the **Infinite Ocean** component with the **Script Canvas** editor t
 
    1. Drag the **Seconds** pin to connect it to the **Angle** pin of the **Sin** node\.
 **Note**  
-The **Sin** node returns values that are –/\+\. Negative numbers cause errors with the **Wave Size** parameter\. Use the **Add** node to ensure that only positive values are returned\.
+The **Sin** node returns values that are -/\+\. Negative numbers cause errors with the **Wave Size** parameter\. Use the **Add** node to ensure that only positive values are returned\.
 
 1. In the **Node Palette**, search for the **Add** node and drag it to the canvas\.
 

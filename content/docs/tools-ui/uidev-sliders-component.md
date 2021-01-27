@@ -29,11 +29,11 @@ Follow these guidelines as you design your UI with sliders:
 
 1.  Sliders work best when the specific value does not matter to the user, and an approximate value is good enough\. Example: selecting a volume or defining the color gradient\. 
 
-1.  When placing a slider control on the UI, it’s best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation\. 
+1.  When placing a slider control on the UI, it's best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation\. 
 
 Avoid these design choices when using sliders:
-+ Don’t use the slider when picking an exact value is important to the goal of the interface\.
-+ Don’t use the slider if you don’t have the start and end value for your use case\. Use the number edit input box instead\.
++ Don't use the slider when picking an exact value is important to the goal of the interface\.
++ Don't use the slider if you don't have the start and end value for your use case\. Use the number edit input box instead\.
 
 ## Basic slider with midpoint<a name="slider-basic"></a>
 
@@ -102,7 +102,7 @@ sliderDoubleCombo->setRange(-1.0, 100.0);
 
 ## C\+\+ API reference<a name="sliders-api-ref"></a>
 
-For details on the **slider** API’s, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **slider** API's, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 
  **Slider:** 
 +  [AzQtComponents::Slider](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider.html) 

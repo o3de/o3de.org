@@ -31,9 +31,9 @@ You can edit speech\-recognition bots in the Cloud Gem Portal\.
 **Note**  
  Only the latest version of a bot can be edited\. 
 
-1. **Sample utterances** – Click **Add** to create one or more spoken or typed phrases that invoke your intent\. Use curly braces \{\} to insert slot names in the phrase\. For example, "I want to order a *\{size\}* pizza\."
+1. **Sample utterances** - Click **Add** to create one or more spoken or typed phrases that invoke your intent\. Use curly braces \{\} to insert slot names in the phrase\. For example, "I want to order a *\{size\}* pizza\."
 
-1. **Lambda initialization and validation** – Use this option to specify a Lambda function that validates input\.
+1. **Lambda initialization and validation** - Use this option to specify a Lambda function that validates input\.
 
    1. Expand the **Lambda initialization and validation** option\.
 
@@ -41,7 +41,7 @@ You can edit speech\-recognition bots in the Cloud Gem Portal\.
 
    1. In the **Lambda function ARN** box, enter the ARN of the Lambda function that you want to perform the validation\.
 
-1. **Slots** – Slots are data that the player must provide so that the player's intent can be fulfilled\. Use this option to add a slot or modify slots\.
+1. **Slots** - Slots are data that the player must provide so that the player's intent can be fulfilled\. Use this option to add a slot or modify slots\.
 
    1. For **Name**, enter a name for the slot\.
 
@@ -49,7 +49,7 @@ You can edit speech\-recognition bots in the Cloud Gem Portal\.
 
    1. For **Prompt**, enter the text of a question that elicits the information for the slot\. A slot can have multiple prompts\. 
 
-1. **Confirmation prompt** – \(Optional\) Specify confirmation and cancellation messages\. After creation, click each gear icon to configure these settings\. 
+1. **Confirmation prompt** - \(Optional\) Specify confirmation and cancellation messages\. After creation, click each gear icon to configure these settings\. 
 **Note**  
  You must specify both the confirmation and cancellation messages, or neither\. You cannot specify one without the other\. 
 

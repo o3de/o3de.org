@@ -9,11 +9,11 @@ A node in Script Canvas consists of a title bar, inputs, and outputs\.
 
 ![\[Anatomy of a node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-nodes-understanding-1.png)
 
-**Title Bar** – The title bar of a node is in a colored band at the top of the node\. A title bar can include a subtitle, but not all nodes have subtitles\.
+**Title Bar** - The title bar of a node is in a colored band at the top of the node\. A title bar can include a subtitle, but not all nodes have subtitles\.
 
-**Inputs** – Located on the left side of the node\. An input can be an execution, or logic, input or a data input\. Execution inputs cause the node to act\. Data inputs provide the node with the data it requires to do processing or decision making\.
+**Inputs** - Located on the left side of the node\. An input can be an execution, or logic, input or a data input\. Execution inputs cause the node to act\. Data inputs provide the node with the data it requires to do processing or decision making\.
 
-**Outputs** – Located on the right side of the node\. Outputs are also either execution or data related\.
+**Outputs** - Located on the right side of the node\. Outputs are also either execution or data related\.
 
 ## Inputs, Outputs, and Connection Types {#script-canvas-pins-and-connections}
 
@@ -128,14 +128,14 @@ The following example uses the Light component **Turned On** event node\.
 
    The Light component **Turned On** receiver node expands to provide connection\-related pins\.  
 ![\[Expanded receiver node with connection controls.\]](/images/userguide/scripting/script-canvas/script-canvas-nodes-understanding-15.png)
-   + **Connect** and **Disconnect** – Use the **Disconnect** pin to prevent the receiver node from connecting\. When the event should be connected and available to receive events, use the **Connect** pin\.
+   + **Connect** and **Disconnect** - Use the **Disconnect** pin to prevent the receiver node from connecting\. When the event should be connected and available to receive events, use the **Connect** pin\.
 
      The **Connect** and **Disconnect** pins are especially useful when working with the **On Tick** event\. For example, if you have a complex operation that you do not want processed for every tick of the game, you can disconnect the **On Tick event** until it is required\.
 **Note**  
 When you enable a receiver node's **Display Connection Controls** property, the node no longer connects automatically\. In this case, Script Canvas assumes that you want to specify when the connection occurs\.
-   + **OnConnected** – Triggered when the event connects successfully\. This pin is useful if you want to continue execution along the connection path when the connection occurs\.
-   + **OnDisconnected** – Triggered when the event disconnects successfully\. This pin is useful if you want to continue execution along the disconnection path when the connection occurs\.
-   + **OnFailure** – An event fails to connect if it requires a source and no source is provided, or an invalid source is provided\. The **OnFailure** pin displays diagnostic information that you can use to verify whether address data was correctly specified to the **Source** pin of the receiver node\.
+   + **OnConnected** - Triggered when the event connects successfully\. This pin is useful if you want to continue execution along the connection path when the connection occurs\.
+   + **OnDisconnected** - Triggered when the event disconnects successfully\. This pin is useful if you want to continue execution along the disconnection path when the connection occurs\.
+   + **OnFailure** - An event fails to connect if it requires a source and no source is provided, or an invalid source is provided\. The **OnFailure** pin displays diagnostic information that you can use to verify whether address data was correctly specified to the **Source** pin of the receiver node\.
 
 **Example**  
 In the following example, **Display Connection Controls** is enabled for the **On Tick** event receiver node\. The **Tick** event is disconnected at the start of the graph's lifetime\. When the light is turned on, the example changes the light's color randomly for every tick\.  

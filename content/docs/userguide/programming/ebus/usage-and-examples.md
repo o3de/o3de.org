@@ -87,16 +87,16 @@ Practical use cases for a single address policy include any global EBus that is 
 ### EBusAddressPolicy Options {#ebus-usage-and-examples-config-options-ebusaddresspolicy}
 
 The `EBusAddressPolicy` has the following options:
-+ **`Single`** – The EBus uses a single address\. No ID is used\. The EBus can have a [single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-single) or [many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-many)\.
-+ **`ById`** – The EBus has multiple addresses\. The order in which addresses are notified when broadcasting events without an ID is not specified\.
-+ **`ByIdAndOrdered`** – The EBus has multiple addresses\. However, when broadcasting events without an ID, we want to control the order in which individual addresses are notified\. The `BusIdOrderCompare` definition allows for arbitrary customization of ordering\.
++ **`Single`** - The EBus uses a single address\. No ID is used\. The EBus can have a [single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-single) or [many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-many)\.
++ **`ById`** - The EBus has multiple addresses\. The order in which addresses are notified when broadcasting events without an ID is not specified\.
++ **`ByIdAndOrdered`** - The EBus has multiple addresses\. However, when broadcasting events without an ID, we want to control the order in which individual addresses are notified\. The `BusIdOrderCompare` definition allows for arbitrary customization of ordering\.
 
 ### EBusHandlerPolicy Options {#ebus-usage-and-examples-config-options-ebushandlerpolicy}
 
 The `EBusHandlerPolicy` has the following options:
-+ **`Single`** – One handler per address is supported\. Uses include an EBus with a [single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-single) or an [EBus with addresses and a single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-addresses-single-handler)\.
-+ **`Multiple`** – Any number of handlers are supported\. Ordering is ignored\. Uses include [many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-many) or an [EBus with addresses and many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-addresses-many-handlers)\.
-+ **`MultipleAndOrdered`** – Any number of handlers are supported, and handlers are notified in a particular order\. The `BusHandlerOrderCompare` definition allows for arbitrary customization of ordering\.
++ **`Single`** - One handler per address is supported\. Uses include an EBus with a [single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-single) or an [EBus with addresses and a single handler](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-addresses-single-handler)\.
++ **`Multiple`** - Any number of handlers are supported\. Ordering is ignored\. Uses include [many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-many) or an [EBus with addresses and many handlers](/docs/userguide/programming/ebus/in-depth#ebus-in-depth-configuration-addresses-many-handlers)\.
++ **`MultipleAndOrdered`** - Any number of handlers are supported, and handlers are notified in a particular order\. The `BusHandlerOrderCompare` definition allows for arbitrary customization of ordering\.
 
 ## Implementing a Handler {#ebus-in-depth-handler}
 

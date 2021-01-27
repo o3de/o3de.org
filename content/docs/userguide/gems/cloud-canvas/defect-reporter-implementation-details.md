@@ -8,9 +8,9 @@ title: Defect Reporter Implementation Details
 The Defect Reporter cloud gem uses the Cloud Gem Framework \(CGF\) and Cloud Gem Portal \(CGP\)\.
 
 Cloud gems follow a [serverless microservice architecture](https://aws.amazon.com/blogs/compute/microservices-without-the-servers/) that uses API Gateway and AWS Lambda\. The Defect Reporter cloud gem uses these services to receive attachments from the client device and upload them to Amazon S3 as part of the defect report\. Using Amazon S3 as the backend to create a serverless service has the following advantages:
-+ **Separation of concerns** – With Amazon S3, the collected data can be easily used by other systems\. This makes the solution flexible and modular\.
-+ **Security** – Amazon S3 supports server\-side encryption \(SSE\)\. Customer data is encrypted while at rest in S3\.
-+ **User convenience** – Amazon S3 supports presigned URLs\. Players can upload report attachments to S3 without requiring a separate AWS account or write permissions\.
++ **Separation of concerns** - With Amazon S3, the collected data can be easily used by other systems\. This makes the solution flexible and modular\.
++ **Security** - Amazon S3 supports server\-side encryption \(SSE\)\. Customer data is encrypted while at rest in S3\.
++ **User convenience** - Amazon S3 supports presigned URLs\. Players can upload report attachments to S3 without requiring a separate AWS account or write permissions\.
 
 ## Metrics Cloud Gem {#cloud-canvas-cloud-gem-defect-reporter-implementation-details-metrics-cloud-gem}
 

@@ -101,11 +101,11 @@ Use the thread selector to control which threads are shown in the tree view and 
 Use this selector to choose the meaning of the time displayed\.   
 
 ![\[Time selector\]](/images/userguide/profiler-cpu-thread-incl-time.png)
-+ **Incl\. Time** – \(Inclusive time\) The time spent in this function inclusively\.
-+ **Excl\. Time** – \(Exclusive time\) The time spent in this function exclusively\.
-+ **Calls** – The number of times this function was called in the frame\.
-+ **Acc\. Time** – \(Accumulated time\) The total amount of time spent in this function up to the frame being analyzed\.
-+ **Acc\. Calls** – \(Accumulated calls\) – The total number of times this function was called up to the frame being analyzed\.
++ **Incl\. Time** - \(Inclusive time\) The time spent in this function inclusively\.
++ **Excl\. Time** - \(Exclusive time\) The time spent in this function exclusively\.
++ **Calls** - The number of times this function was called in the frame\.
++ **Acc\. Time** - \(Accumulated time\) The total amount of time spent in this function up to the frame being analyzed\.
++ **Acc\. Calls** - \(Accumulated calls\) - The total number of times this function was called up to the frame being analyzed\.
 
    
 

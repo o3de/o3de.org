@@ -15,8 +15,8 @@ title: Random Timed Spawner
 You can use the **Random Timed Spawner** component to spawn a specified dynamic slice\. The component spawns the slice at a specified interval \(and random interval variation\) to a random position inside of a specified volume\.
 
 The **Random Timed Spawner** component requires that the following components are also attached to the entity:
-+ **[Spawner](/docs/userguide/components/spawner.md)** component – Manages the spawning of the slice\.
-+ **[Box Shape](/docs/userguide/components/shapes.md)** or **[Cylinder Shape](/docs/userguide/components/shapes.md)** component – Defines the volume of possible positions where the entities can spawn\.
++ **[Spawner](/docs/userguide/components/spawner.md)** component - Manages the spawning of the slice\.
++ **[Box Shape](/docs/userguide/components/shapes.md)** or **[Cylinder Shape](/docs/userguide/components/shapes.md)** component - Defines the volume of possible positions where the entities can spawn\.
 
 With these components, you can control the random distribution that determines the random points inside the volume\.
 
@@ -66,7 +66,7 @@ Valid values: \-∞ to ∞
 
 **Spawn Delay Variation**  
 Amount of random variation to apply to the spawn delay\.  
-For example, a value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/– `1.0`\) or between `1.0` and `3.0` seconds\.  
+For example, a value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/- `1.0`\) or between `1.0` and `3.0` seconds\.  
 Default value: `0`  
 Valid values: \-∞ to ∞
 
@@ -147,8 +147,8 @@ Returns the type of random distribution for the **Random Timed Spawner** compone
 
 **Note**  
 In Lua, this value is returned as a number:   
-`0` – Normal distribution  
-`1` – Uniform Real distribution
+`0` - Normal distribution  
+`1` - Uniform Real distribution
 
 **Parameters**  
 None
@@ -191,7 +191,7 @@ Sets the random variation in spawn delay, in seconds\.
 
 The **Random Timed Spawner** component uses the specified value to calculate a random value that is added to the **Spawn Delay** parameter\. 
 
-For example, a **SpawnDelayVariation** value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/– `1.0`\) or between `1.0` and `3.0` seconds\.
+For example, a **SpawnDelayVariation** value of `1.0` and a **Spawn Delay** value of `2.0` means that the range of possible spawn times is \(`2.0` \+/- `1.0`\) or between `1.0` and `3.0` seconds\.
 
 For more information, see [Timing](#component-random-timed-spawner-timing)\.
 

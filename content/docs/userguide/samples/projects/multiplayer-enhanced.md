@@ -59,9 +59,9 @@ This level demonstrates a multiplayer lobby that uses GridMate networking\. Curr
 The Multiplayer sample is an arcade space shooter\. Each player controls a ship in a giant field of asteroids\. Each player must fly through the asteroids and destroy as many of them as possible in an effort to achieve the highest score\. Additional points are awarded when other players are killed\. Points are deducted every time the player dies\. In addition to the threats posed by asteroids and other players, gravity wells scattered around the map can draw players in and trap them\. Players who become trapped in a gravity well die instantly\.
 
 When a ship is spawned, three kinds of ships are assigned randomly:
-+ **Fighter** – An average space ship\.
-+ **Speeder** – A faster and more maneuverable space ship but less sturdy as a result\.
-+ **Rammer** – A sturdier ship that is weaponless but designed to smash into asteroids and destroy them\. The ship is fast but has poor maneuverability\.
++ **Fighter** - An average space ship\.
++ **Speeder** - A faster and more maneuverable space ship but less sturdy as a result\.
++ **Rammer** - A sturdier ship that is weaponless but designed to smash into asteroids and destroy them\. The ship is fast but has poor maneuverability\.
 
 When destroyed, some asteroids spawn collectibles that award a short\-time power\-up bonus\. These power\-ups include extra damage against certain targets, a longer power\-up time, and extra protection against certain sources of damage\.
 
@@ -148,7 +148,7 @@ To create a dedicated server for the game, perform the following steps\.
 1. Enter the following command which builds `game_and_engine` in `profile_dedicated`, for your version of Visual Studio:
 
    ```
-   lmbr_waf build_win_x64_vs2017_profile_dedicated –p game_and_engine
+   lmbr_waf build_win_x64_vs2017_profile_dedicated -p game_and_engine
    ```
 
 1. Run the `MultiplayerSampleLauncher_Server.exe` file from your default bin directory\.

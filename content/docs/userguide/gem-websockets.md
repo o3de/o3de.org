@@ -13,17 +13,17 @@ The gem uses the **WebSocket protocol** to create clients that connect to existi
 
 **Websocket Requests Bus**  
 The Websocket Request bus provides the primary interface for working with the gem\. The follow functions are available:
-+ **CreateClient** – Provides the unique instance connection that will be used with the rest of the buses\. It takes three arguments:
++ **CreateClient** - Provides the unique instance connection that will be used with the rest of the buses\. It takes three arguments:
 
   1. The WebSocket server address\.
 
   1. A received message handler function \(`OnMessage` function\)\.
 
   1. A type of connection\. If no type is defined, it defaults to `Secure`\.
-+ **IsConnectionOpen** – Used to check if the connection is open\. Since WebSockets connections are always open, there is no need to verify if the connection has timed out, or to wait for a ping\. Connections can be verified immediately\.
-+ **SendWebsocketMessage** – Sends strings to the targeted server\.
-+ **SendWebsocketMessageBinary** – Sends a binary stream to the targeted server\.
-+ **CloseWebsocket** – The expectation for WebSocket connections is that the developer will close the WebSocket before the program is finished, allowing for a clean exit\. This system will handle this automatically if not performed, but it is recommended, especially if there is a case where multiple connections are being setup simultaneously, to avoid having sockets open unnecessarily\.
++ **IsConnectionOpen** - Used to check if the connection is open\. Since WebSockets connections are always open, there is no need to verify if the connection has timed out, or to wait for a ping\. Connections can be verified immediately\.
++ **SendWebsocketMessage** - Sends strings to the targeted server\.
++ **SendWebsocketMessageBinary** - Sends a binary stream to the targeted server\.
++ **CloseWebsocket** - The expectation for WebSocket connections is that the developer will close the WebSocket before the program is finished, allowing for a clean exit\. This system will handle this automatically if not performed, but it is recommended, especially if there is a case where multiple connections are being setup simultaneously, to avoid having sockets open unnecessarily\.
 
 **Tip**  
 For an example of the usage of these functions, see the source for the Twitch Chat gem, which can be found in `dev\Gems\TwitchChatPlay\`\.

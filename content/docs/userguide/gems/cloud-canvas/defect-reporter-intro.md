@@ -6,9 +6,9 @@ title: Defect Reporter Cloud Gem
 # Defect Reporter Cloud Gem {#cloud-canvas-cloud-gem-defect-reporter-intro}
 
 The Defect Reporter cloud gem makes it easy for you and your developers and testers to gather, view, and manage defect reports from your game\. The Defect Reporter cloud gem offers the following advantages:
-+ **Automated, error\-free collection of data** – Instead of relying on the player to manually send the data, the most important data from the client is automatically captured\. The contextual information that is included in the reports increases the likelihood of having actionable data and reduces the need to investigate with the customer\.
-+ **Ease of reporting** – Players can submit reports from within the game without having to use email, forums, or open a browser\. Players can easily report errors, which can increase the number of reports and reduce the number of unreported defects\.
-+ **Ease of annotation** – Players can view the data that a report captures, annotate the report, and respond to any custom data collection queries that you provide\.
++ **Automated, error\-free collection of data** - Instead of relying on the player to manually send the data, the most important data from the client is automatically captured\. The contextual information that is included in the reports increases the likelihood of having actionable data and reduces the need to investigate with the customer\.
++ **Ease of reporting** - Players can submit reports from within the game without having to use email, forums, or open a browser\. Players can easily report errors, which can increase the number of reports and reduce the number of unreported defects\.
++ **Ease of annotation** - Players can view the data that a report captures, annotate the report, and respond to any custom data collection queries that you provide\.
 
 For submitting reports, the [DefectReporterSample](/docs/userguide/gems/cloud-canvas/defect-reporter-sample-level.md) level provides a sample Defect Report Editor\.
 

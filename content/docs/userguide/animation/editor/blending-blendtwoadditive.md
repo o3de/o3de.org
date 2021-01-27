@@ -29,12 +29,12 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
 ![\[Blend Two Additive node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs.png)
 
    Connect nodes to the following inputs and output:
-   + **Pose 1** – The base pose\.
-   + **Pose 2** – The pose to be added to **Pose 1**\.
-   + **Weight** – Weight of additive\.
+   + **Pose 1** - The base pose\.
+   + **Pose 2** - The pose to be added to **Pose 1**\.
+   + **Weight** - Weight of additive\.
 
      You can use a **Float Constant** node, for example, to specify a float value between `0.0` and `1.0`\. A value of `0.0` means **Pose 2** does not affect **Pose 1** at all\. A value of `1.0` means that **Pose 2** is fully added on top of **Pose 1**\. Other nodes that can specify **Weight** include the **Parameter** node, the **Smoothing** node, and so on\.
-   + **Output Pose** – The result of the blended poses, which you can visualize as `Pose 1 + (Pose 2 * Weight)`\.
+   + **Output Pose** - The result of the blended poses, which you can visualize as `Pose 1 + (Pose 2 * Weight)`\.
 
 ## Blend Two Additive Node Attributes {#animation-editor-blending-blendtwoadditive-attributes}
 

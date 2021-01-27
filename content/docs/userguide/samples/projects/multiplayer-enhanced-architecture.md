@@ -14,43 +14,43 @@ The principal entities in the Multiplayer sample are ships, asteroids, gravity w
 ### Common Components {#sample-project-multiplayer-enhanced-architecture-entities-common-components}
 
 The principal entities in the game share the following components:
-+ `SimpleSpacePhysicsComponent` – This component enables objects to move around in space and be affected by gravity\.
-+ `CollisionSystemComponent` – These components enable objects to interact with each other in the world\.
-+ `NetBindingComponent` – Activates the net binding code of other components on an entity and signals the game that the entity should be replicated across the network\.
++ `SimpleSpacePhysicsComponent` - This component enables objects to move around in space and be affected by gravity\.
++ `CollisionSystemComponent` - These components enable objects to interact with each other in the world\.
++ `NetBindingComponent` - Activates the net binding code of other components on an entity and signals the game that the entity should be replicated across the network\.
 
 ### Ships {#sample-project-multiplayer-enhanced-architecture-entities-ships}
 
 The Multiplayer sample uses a variety of ships that demonstrate how a selectable game state can be synchronized from a client to a session when the player first joins the game\. Different types of ships also provide a variety of game experiences\. Some ships have long range weapons, and others are short range and have no weapons\. The following components are related to ships:
-+ `ShipComponent` – Identifies an object as a ship to Lumberyard\. It also takes commands from the player and converts them on the host into the motion required to move the ship\.
-+ `ShipGunComponent` – Handles the firing of bullets\.
-+ `ActiveModifiersComponent` – Manages the modifiers that affect the ship\.
-+ `CollectibleInterpreterComponent` – Enables a layer of interpretation between a collectible and the actual modifier that is granted\. This enables implementations of a collectible according to the ship type\. For example, ships with guns that receive a collectible get a special laser, while weaponless ships get a nonweapons\-related [buff](https://en.wikipedia.org/wiki/Status_effect#Buffs)\.
-+ `HealthComponent` – Determines the relative health of the ship as long as it remains operational\.
++ `ShipComponent` - Identifies an object as a ship to Lumberyard\. It also takes commands from the player and converts them on the host into the motion required to move the ship\.
++ `ShipGunComponent` - Handles the firing of bullets\.
++ `ActiveModifiersComponent` - Manages the modifiers that affect the ship\.
++ `CollectibleInterpreterComponent` - Enables a layer of interpretation between a collectible and the actual modifier that is granted\. This enables implementations of a collectible according to the ship type\. For example, ships with guns that receive a collectible get a special laser, while weaponless ships get a nonweapons\-related [buff](https://en.wikipedia.org/wiki/Status_effect#Buffs)\.
++ `HealthComponent` - Determines the relative health of the ship as long as it remains operational\.
 
 ### Asteroids {#sample-project-multiplayer-enhanced-architecture-entities-asteroids}
 
 Asteroids are the most common slice in the Multiplayer sample\. They exist in three sizes \(small, medium, and large\)\. These asteroid types are functionally the same while they exist\. When destroyed, they react differently by spawning varying amounts of asteroids and collectibles\. Blanketing the playfield with these objects allows for optimization techniques to be implemented that create a reasonable visual experience without overusing bandwidth\. The following components are related to asteroids:
-+ `AsteroidComponent` – \- Identifies an object as an asteroid to the game engine\.
-+ `DeathActionComponent` – Allows for actions to be taken upon the destruction of the object\. In the sample, the `DeathActionComponent` spawns additional asteroids and collectibles\.
-+ `DamageComponent` – Determines how much damage the asteroid does when it collides with a ship\.
-+ `HealthComponent` – Determines how much damage an asteroid can take before it is destroyed\.
++ `AsteroidComponent` - \- Identifies an object as an asteroid to the game engine\.
++ `DeathActionComponent` - Allows for actions to be taken upon the destruction of the object\. In the sample, the `DeathActionComponent` spawns additional asteroids and collectibles\.
++ `DamageComponent` - Determines how much damage the asteroid does when it collides with a ship\.
++ `HealthComponent` - Determines how much damage an asteroid can take before it is destroyed\.
 
 ### Gravity Wells {#sample-project-multiplayer-enhanced-architecture-entities-gravity-wells}
 
 Gravity wells create action inside the game by causing objects to be destroyed and spawned even in the absence of user interaction\. This prevents the game state from falling into stasis\. The following components are related to gravity wells:
-+ `GravityWellComponent` – Identifies an object as a gravity well\.
-+ `GravitySourceComponent` – Applies gravity to physical objects and draws them towards the source object\.
++ `GravityWellComponent` - Identifies an object as a gravity well\.
++ `GravitySourceComponent` - Applies gravity to physical objects and draws them towards the source object\.
 
 ### Bullets {#sample-project-multiplayer-enhanced-architecture-entities-bullets}
 
 Ships use bullets to damage asteroids and each other\. The use of bullets drives gameplay and generates points\. The following components are related to bullets\.
-+ `BulletComponent` – Identifies an object as a bullet\.
-+ `DamageComponent` – Determines how much damage a bullet does when it hits a ship or asteroid\.
++ `BulletComponent` - Identifies an object as a bullet\.
++ `DamageComponent` - Determines how much damage a bullet does when it hits a ship or asteroid\.
 
 ### Collectibles {#sample-project-multiplayer-enhanced-architecture-entities-collectibles}
 
 Collectibles add fun and excitement to the game and provide a way to enable and test dynamic in\-game changes to otherwise static systems\. The sample uses collectibles to test the handling of constantly shifting objects to find the right balance between natural appearance and controllability\. The following component is related to collectibles\.
-+ `CollectibleComponent` – Identifies an object as a collectible\.
++ `CollectibleComponent` - Identifies an object as a collectible\.
 
 ## Multiplayer Sample Gameplay Systems {#sample-project-multiplayer-enhanced-architecture-gameplay-systems}
 
@@ -87,14 +87,14 @@ The sample uses a server\-authoritative architecture\. In the sample, client\-si
 ### Player Object {#sample-project-multiplayer-enhanced-architecture-network-player-object}
 
 When each client joins the session, it creates an object on the server that represents the player\. The object provides information relevant to player configuration\. The client maintains full control over player configuration, which the server reads from the object\. The player object consists of a `GamePlayerComponent` and a related `GamePlayerChunk`\.
-+ `GamePlayerComponent` – The `GamePlayerComponent` represents the player on the server\. The component is owned by the client and replicated to the server\. This component handles local player configuration such as the player's name and the ship to spawn\. The user can change this information during gameplay\. These changes must be reflected to the server\.
-+ `GamePlayerChunk` – The [Replica Chunks](/docs/userguide/networking/replicas-chunks.md) that represents player information on the server\. The `GamePlayerChunk` specifies the display name of the player and the ship that the player wants to spawn\.
++ `GamePlayerComponent` - The `GamePlayerComponent` represents the player on the server\. The component is owned by the client and replicated to the server\. This component handles local player configuration such as the player's name and the ship to spawn\. The user can change this information during gameplay\. These changes must be reflected to the server\.
++ `GamePlayerChunk` - The [Replica Chunks](/docs/userguide/networking/replicas-chunks.md) that represents player information on the server\. The `GamePlayerChunk` specifies the display name of the player and the ship that the player wants to spawn\.
 
 ### Ship Object {#sample-project-multiplayer-enhanced-architecture-network-ship-object}
 
 The ship object consists of a `ShipComponent` and a related `ShipComponentReplicaChunk.`
-+ `ShipComponent` – Manages the overall ship logic, controls, and ship configurations\.
-+ `ShipComponentReplicaChunk` – Contains the RPCs that are invoked on the client and passed to the server\. The server then validates, sanitizes, and applies the results to the game state\.
++ `ShipComponent` - Manages the overall ship logic, controls, and ship configurations\.
++ `ShipComponentReplicaChunk` - Contains the RPCs that are invoked on the client and passed to the server\. The server then validates, sanitizes, and applies the results to the game state\.
 
 ### See Also {#sample-project-multiplayer-enhanced-architecture-network-see-also}
 

@@ -62,7 +62,7 @@ Default value: 1
 
 **Environment map**  
 Enables environment map as a separate texture\.  
-If the blending cube map feature isn’t used, **Environment map** must be enabled and **nearest\_cubemap** must be assigned for the texture's environment\.
+If the blending cube map feature isn't used, **Environment map** must be enabled and **nearest\_cubemap** must be assigned for the texture's environment\.
 
 **Ambient occlusion overlay**  
 Enables ambient occlusion overlay rendering\.  

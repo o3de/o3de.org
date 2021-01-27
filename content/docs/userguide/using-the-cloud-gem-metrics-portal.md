@@ -297,7 +297,7 @@ You can specify the following for AWS\.
 | Amoeba Memory Trigger |  Memory threshold, in percentage, when the amoeba single file generator should save to S3\.  | Integer |  `1` to `70` Default value: `60`  | 
 | Max Lambda Execution Time |  Maximum Lambda function execution time\. This is used as an internal timer to determine the processing windows for each step of the process: parsing SQS messages, saving to S3, and deleting messages\.  | Integer |  `1` to `275` Default value: `275`  | 
 | Aggregation Period |  Target aggregation window size\. This is the default aggregation window size\. This feature can be overridden based on contextual information that the telemetry data provides\.  | Integer |  `1` to `275` Default value: `220`  | 
-| Save Longitude/Latitude |  Saves longitude and latitude coordinates\.   **Longitude/Latitude** may be considered personally identifiable information in some countries\. This setting will be supported in a future release\. By default, this parameter is disabled\.   | Boolean | True – FalseDefault value: `False` | 
+| Save Longitude/Latitude |  Saves longitude and latitude coordinates\.   **Longitude/Latitude** may be considered personally identifiable information in some countries\. This setting will be supported in a future release\. By default, this parameter is disabled\.   | Boolean | True - FalseDefault value: `False` | 
 
 On the **Settings** page, you can do the following\.
 

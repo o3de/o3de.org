@@ -81,7 +81,7 @@ Now you are ready to attach the script canvas to an entity and test the script\.
 
 1. Under **Script Canvas**, click the browse button \(**\.\.\.**\)\.
 
-1. In the **Pick Script Canvas** dialog box, choose the canvas that you created – for example, **mys3uploadtest \(Script Canvas\)**, and then click **OK**\.
+1. In the **Pick Script Canvas** dialog box, choose the canvas that you created - for example, **mys3uploadtest \(Script Canvas\)**, and then click **OK**\.
 
 1. If the Lumberyard console window is not already open, press **`** or choose **Tools**, **Console** to open the console window\. If the console window is already open and you want to clear it, press **Ctrl\+Shift\+C**\.
 

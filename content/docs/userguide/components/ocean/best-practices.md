@@ -28,4 +28,4 @@ Changing the `ocean_default.mlt` material affects any level that has an ocean th
 For best performance, we recommend the following:  
 If your level doesn't require sun reflection, disable these parameters\.
 If your level doesn't require foam, disable this parameter\.
-If you don’t need caustic rendering, set the **Caustic Multiplier** parameter to `0` to disable it\. 
+If you don't need caustic rendering, set the **Caustic Multiplier** parameter to `0` to disable it\. 

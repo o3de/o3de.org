@@ -12,12 +12,12 @@ This section discusses the shader cache and how to generate shader cache `.pak` 
 The shader cache stores a collection of parsed and precompiled shaders\. Since the shader code is written with multiple definitions, Lumberyard can generate an enormous number of different shaders\. Compiling shaders on demand at run time is only possible on the PC\. On\-demand shader compiling can cause freezes during the game play and uses extra memory\. To reduce this overhead, all required shader combinations for a game are parsed, compiled, and stored in the shader cache\.
 
 The shader cache generally refers to the following files:
-+ `Shaders.pak` – Contains the shader source files, which is everything inside the `lumberyard_version\dev\Engine\Shaders\` directory, excluding `EngineAssets`\. 
++ `Shaders.pak` - Contains the shader source files, which is everything inside the `lumberyard_version\dev\Engine\Shaders\` directory, excluding `EngineAssets`\. 
 **Note**  
 The actual shader source code \(`*.cfi` and `*.cfx`\) can be removed from this file for the final released version, and is not required anymore when the binary shaders are valid and available\.
-+ `ShadersBin.pak` – Contains the binary\-parsed shader information of the shader source code\.
-+ `ShaderCache.pak` – Contains compiled shaders for all possible combinations that have been submitted to the remote shader compiler\. 
-+ `ShaderCacheStartup.pak` – Contains a small subset of the shader cache that is used during game start\. This file is loaded into memory for quicker start times, but is not required\. This cache is often used to hold the minimum required set of shaders to show a loading screen so that the rest of the loading can occur\.
++ `ShadersBin.pak` - Contains the binary\-parsed shader information of the shader source code\.
++ `ShaderCache.pak` - Contains compiled shaders for all possible combinations that have been submitted to the remote shader compiler\. 
++ `ShaderCacheStartup.pak` - Contains a small subset of the shader cache that is used during game start\. This file is loaded into memory for quicker start times, but is not required\. This cache is often used to hold the minimum required set of shaders to show a loading screen so that the rest of the loading can occur\.
 
 ## ShaderCache\.pak File Generation {#mat-shaders-custom-dev-cache-generation}
 
@@ -48,7 +48,7 @@ Enter the following command for your version of Visual Studio\.
 lmbr_waf build_win_x64_vs2017_profile -p all --targets=CrySCompileServer
 ```
 
-If you don’t want to \(or can't\) build using the `all` profile, you can alternatively just build the `game_and_engine` spec and the `shadercachegen` spec\.
+If you don't want to \(or can't\) build using the `all` profile, you can alternatively just build the `game_and_engine` spec and the `shadercachegen` spec\.
 
 Enter the following command for your version of Visual Studio\.
 

@@ -8,7 +8,7 @@ Substances are procedural materials created using Allegorithmic's Substance Desi
 
 ## Creating Substances for Lumberyard {#mat-substances-creating}
 
-When creating Substances for Lumberyard using Allegorithmic’s Substance Designer, it is recommended to use the **PBR Specular/Glossiness** substance as the base\. This will involve less adjustments to your default outputs for substances\. However, you will need to delete the **Glossiness** output and save the **Gloss** map into the alpha channel for the **Normal** map output in Substance Designer\.
+When creating Substances for Lumberyard using Allegorithmic's Substance Designer, it is recommended to use the **PBR Specular/Glossiness** substance as the base\. This will involve less adjustments to your default outputs for substances\. However, you will need to delete the **Glossiness** output and save the **Gloss** map into the alpha channel for the **Normal** map output in Substance Designer\.
 
 If you want to use a **PBR Metallic/Roughness** Substance and convert it for use in Lumberyard, follow these steps:
 + Change the **BaseColor** output node to **Diffuse**\.
@@ -30,7 +30,7 @@ If you want to use a **PBR Metallic/Roughness** Substance and convert it for use
 
 ## Exporting Substances for Lumberyard {#mat-substances-exporting}
 
-When using Allegorithmic’s Substance Designer to export textures to Lumberyard, take extra care to select the correct file type\. The following file types export correctly: `.tif`, `.tga`, `.bmp`\. Avoid exporting with the following common file types: `.png`, `.jpg`, `.psd`\.
+When using Allegorithmic's Substance Designer to export textures to Lumberyard, take extra care to select the correct file type\. The following file types export correctly: `.tif`, `.tga`, `.bmp`\. Avoid exporting with the following common file types: `.png`, `.jpg`, `.psd`\.
 
 **To export textures in Substance Designer for Lumberyard**
 

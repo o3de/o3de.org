@@ -89,7 +89,7 @@ With the mesh fractured, you must export `.fbx` and `.blast` assets to be proces
 
 1. Ensure the **Root Name** and **Chunk name prefix** parameters are properly set\. 
 
-1. Set the **Object name** parameter to the desired name\. The exported `.fbx` and `.blast` files are named by this parameter’s value\. 
+1. Set the **Object name** parameter to the desired name\. The exported `.fbx` and `.blast` files are named by this parameter's value\. 
 
 1. Set the **Output Directory** parameter\. By default, the `.fbx` and `.blast` files are exported to the directory where the Houdini scene file is saved\. 
 
