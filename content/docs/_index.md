@@ -11,3 +11,4 @@ identifying subpages.
 - [User guide snapshot](userguide)
 - [Welcome guide snapshot](welcomeguide)
 - [Tools UI guide snapshot](tools-ui)
+- [Atom guide](atom-guide)
