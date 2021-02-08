@@ -129,7 +129,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 ### Registration Versus Integration {#asset-pipeline-asset-type-adding-registration-versus-integration}
 
-After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/userguide/file-access-direct.md) to load the asset\.
+After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/user-guide/features/engine/file-io.md) to load the asset\.
 
 While simple registration of an asset can be useful in some circumstances, full integration with the Lumberyard asset system offers many advantages, including the following:
 + Automatic live reloading
@@ -248,7 +248,7 @@ At this point, you can use your custom assets in your structures and components\
    Az::Data::Asset<MyAsset> m_myAsset;
    ```
 
-1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/userguide/components/entity-system-reflect-component.md)\.
+1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/features/engine/components/reflection.md)\.
 
 1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior\. For more information, see `m_script` in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file\.
 
@@ -256,7 +256,7 @@ After you perform these steps, your component appears in the component editor\. 
 
 ## C\. Customizing UI Interaction {#asset-pipeline-asset-type-adding-customizing-ui-interaction}
 
-\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/userguide/programming/ebus/intro.md) to customize your asset's interaction with the **Asset Browser**\.
+\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/features/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**\.
 
 ### 1\. Describing Your Asset Type to the UI {#asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui}
 
