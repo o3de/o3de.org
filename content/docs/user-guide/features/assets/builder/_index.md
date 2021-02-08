@@ -27,4 +27,4 @@ To enable the Python Asset Builder gem, do the following:
    lmbr_waf build_win_x64_vs2019_profile -p all --progress
    ```
 
-For more information on gems, see the [Gems system documentation](/docs/userguide/gems/builtin/s.md)\.
+For more information on gems, see the [Gems system documentation](/docs/user-guide/features/gems)\.
