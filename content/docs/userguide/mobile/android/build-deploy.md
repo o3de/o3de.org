@@ -118,7 +118,7 @@ title: Build and deploy your project for Android
 
 ### Automatic deploy during build {#deploying-your-app-and-assets-config}
 
- At the start of development, and for anyone working on the Lumberyard engine or gems that contain code, deploy to a device every time you rebuild\. This keeps the APK on the device up to date and ready to test, at a minimal cost of deployment time to the device\. As your project grows in size and assets are added, you might choose to turn this feature off – copying assets to the device is what takes the longest amount of time in a deployment\. 
+ At the start of development, and for anyone working on the Lumberyard engine or gems that contain code, deploy to a device every time you rebuild\. This keeps the APK on the device up to date and ready to test, at a minimal cost of deployment time to the device\. As your project grows in size and assets are added, you might choose to turn this feature off - copying assets to the device is what takes the longest amount of time in a deployment\. 
 
 **To modify the build configuration to automatically deploy**
 

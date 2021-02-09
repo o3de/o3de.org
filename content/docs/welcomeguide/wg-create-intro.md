@@ -7,19 +7,19 @@ title: Create with Amazon Lumberyard
 
 Previously in this guide, we covered [How Amazon Lumberyard works](wg-how-lumberyard-works.md) and [Setting up Amazon Lumberyard](wg-setup-intro.md)\.
 
-Now, let’s get started creating your game\! In this topic, we provide an overview of creating a game with Lumberyard, and help you identify where to focus your learning, based on your role in game development\. If you’re proficient in all roles, read everything\!
+Now, let's get started creating your game\! In this topic, we provide an overview of creating a game with Lumberyard, and help you identify where to focus your learning, based on your role in game development\. If you're proficient in all roles, read everything\!
 
 ## How do I create a game with Lumberyard?<a name="ly-create-overview"></a>
 
  **Keeping it Modular** 
 
-Game development in Lumberyard is best understood if you keep a key Lumberyard design philosophy in mind as you learn: the concept of **modularity**\. The Lumberyard game engine, its systems, and its environment are built as a collection of C\+\+ modules\. Choosing the right modules based on the combination of your game’s design and your workflows will keep your game development process focused and likewise keep the overhead of managing your game project simpler\.
+Game development in Lumberyard is best understood if you keep a key Lumberyard design philosophy in mind as you learn: the concept of **modularity**\. The Lumberyard game engine, its systems, and its environment are built as a collection of C\+\+ modules\. Choosing the right modules based on the combination of your game's design and your workflows will keep your game development process focused and likewise keep the overhead of managing your game project simpler\.
 
-Even the Lumberyard Editor – the most common tool associated with Lumberyard – uses these modules, which we call **Gems**\. Lumberyard ships with well over 100 Gems as part of the installation, and you can acquire other Gems from third parties, or write new ones yourself\. When you build your game, the functionality of these Gems is combined to create the systems of your game\. This means that you don’t have to hard\-code the systems and features of your game\. Instead, you can either obtain or create a Gem with the functionality you need – and even maintain the code for it independent of the game\! This isolation means that a game developer can work on game\-specific AI functionality in a Gem\. When the Gem is updated, level designers can access the new functionality after a rebuild of the game project, and without impacting any other Gem\. Gems can also add new features to the Lumberyard Editor and provide new asset processing behaviors\.
+Even the Lumberyard Editor - the most common tool associated with Lumberyard - uses these modules, which we call **Gems**\. Lumberyard ships with well over 100 Gems as part of the installation, and you can acquire other Gems from third parties, or write new ones yourself\. When you build your game, the functionality of these Gems is combined to create the systems of your game\. This means that you don't have to hard\-code the systems and features of your game\. Instead, you can either obtain or create a Gem with the functionality you need - and even maintain the code for it independent of the game\! This isolation means that a game developer can work on game\-specific AI functionality in a Gem\. When the Gem is updated, level designers can access the new functionality after a rebuild of the game project, and without impacting any other Gem\. Gems can also add new features to the Lumberyard Editor and provide new asset processing behaviors\.
 
-You’ll notice this philosophy of modularity in the individual entities you create, up through the most complex functionality you add\.
+You'll notice this philosophy of modularity in the individual entities you create, up through the most complex functionality you add\.
 
-For example, consider the concept of an entity in Lumberyard\. An entity can represent just about anything in your game under Lumberyard’s component entity system\. By giving the entity components, you begin to shape their utility in your game\. The components specify entity behaviors and properties\.
+For example, consider the concept of an entity in Lumberyard\. An entity can represent just about anything in your game under Lumberyard's component entity system\. By giving the entity components, you begin to shape their utility in your game\. The components specify entity behaviors and properties\.
 
 You might have an entity that you want to see and interact with in your game world that uses all of the following components:
 + The default transform component to define its position
@@ -49,17 +49,17 @@ Tools you might use that are associated to specific components include:
 
 Some tools can be opened directly from their associated component\. Others require you to open them from the **Tools** menu in Lumberyard Editor\. For a tour of Lumberyard Editor, see [Introduction to the Lumberyard Editor](wg-editor.md)\. For an overview of the tools provided with Lumberyard, see the following topic on [Tools available in Amazon Lumberyard](wg-tools.md)\.
 
-The modular nature of Lumberyard means there are additional assets, components, and tools that you can add by enabling Gems in Project Configurator\. Lumberyard comes with a library of Gems\. Gems can include new code, new assets, or both\! You can even write your own\. In fact, this is what a game’s C\+\+ programmers will often spend their time doing, to help create the gameplay that makes your game unique\.
+The modular nature of Lumberyard means there are additional assets, components, and tools that you can add by enabling Gems in Project Configurator\. Lumberyard comes with a library of Gems\. Gems can include new code, new assets, or both\! You can even write your own\. In fact, this is what a game's C\+\+ programmers will often spend their time doing, to help create the gameplay that makes your game unique\.
 
  **Starting the Journey** 
 
-Are you starting a new project, maybe to start a prototype of your game? Or to just play around with Lumberyard – take it for a spin and learn what it can do? You’ll probably need to know how to get the minimum systems going, which typically include:
+Are you starting a new project, maybe to start a prototype of your game? Or to just play around with Lumberyard - take it for a spin and learn what it can do? You'll probably need to know how to get the minimum systems going, which typically include:
 + Camera
 + Rendering
 + Physics
 + Input
 
-You’ll use the Project Configurator tool to set the project that you’re working on\. You can use one of the projects that ship with Lumberyard, such as the Samples Project, if you want to learn or play around with something premade\. Or, if you want to start something new, this is also where you create a brand new project, based on the template of your choice\.
+You'll use the Project Configurator tool to set the project that you're working on\. You can use one of the projects that ship with Lumberyard, such as the Samples Project, if you want to learn or play around with something premade\. Or, if you want to start something new, this is also where you create a brand new project, based on the template of your choice\.
 
 Then, launch the Lumberyard Editor, open one of the sample levels in the Sample Project, and start exploring\! We suggest following along with one of these written or video tutorials:
 +  [Learn Lumberyard in 20 Minutes](https://www.youtube.com/watch?v=E1NgI8urJ7o) 
@@ -69,7 +69,7 @@ Then, launch the Lumberyard Editor, open one of the sample levels in the Sample 
 
  **Joining a Team** 
 
-Depending on your role in your game development team and the scope of the game project that you’re working on, you might not encounter all of the tools and technologies that Lumberyard provides\. In the next section, we’ll take a look at how you might want to focus your learning path\.
+Depending on your role in your game development team and the scope of the game project that you're working on, you might not encounter all of the tools and technologies that Lumberyard provides\. In the next section, we'll take a look at how you might want to focus your learning path\.
 
 ## Work as an artist<a name="ly-create-artist"></a>
 
@@ -77,11 +77,11 @@ Lumberyard provides all of the basic tools that you need to import, assemble, an
 
 While much of your work as an artist might involve using tools outside Lumberyard, you will use Lumberyard tools when you want to control your character animations, and manipulate the look and feel of your assets or the environment\. You might be working with designers to create the game environment\.
 
-As an example, let’s take a look at the workflow for setting up an actor in your game\.
+As an example, let's take a look at the workflow for setting up an actor in your game\.
 
 1.  Outside of Lumberyard, you create a character model, materials, textures, and rig for the character\. 
 
-1.  Lumberyard’s Asset Processor automatically processes source assets into platform\-specific game assets, ensuring new or modified files are ready to use in Lumberyard as soon as possible\. Use FBX Settings if you want to modify the processor settings\. 
+1.  Lumberyard's Asset Processor automatically processes source assets into platform\-specific game assets, ensuring new or modified files are ready to use in Lumberyard as soon as possible\. Use FBX Settings if you want to modify the processor settings\. 
 
 1.  You import your actor file in Animation Editor and create a motion set to specify the motions that you want for your character\. 
 
@@ -89,7 +89,7 @@ As an example, let’s take a look at the workflow for setting up an actor in yo
 
 1.  Then, you build a blend tree to blend the animations together\. 
 
-1.  When you’ve built and previewed the animations and are ready to try them out in a game environment, you can switch over to Lumberyard Editor\. 
+1.  When you've built and previewed the animations and are ready to try them out in a game environment, you can switch over to Lumberyard Editor\. 
 
 1.  In the Lumberyard Editor, you create or open an existing test level\. 
 
@@ -97,7 +97,7 @@ As an example, let’s take a look at the workflow for setting up an actor in yo
    + an **Actor** component to create a controllable character with the actor file from Animation Editor and a material linked to your actor asset\.
    + an **AnimGraph** component to use the animation graph and motion set assets that you created in the Animation Editor\.
 
-1.  To control your character in your level, you might want to work with a gameplay designer or programmer at this point to add an **Input** component, **PhysX** components, and script components so you can run through and playtest all of your character’s animations in your game’s specific environment\. 
+1.  To control your character in your level, you might want to work with a gameplay designer or programmer at this point to add an **Input** component, **PhysX** components, and script components so you can run through and playtest all of your character's animations in your game's specific environment\. 
 
 We suggest that you begin your learning path by browsing the following set of Lumberyard tools and technologies, and then focusing on the ones that apply to your needs:
 +  [Lumberyard Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-intro.html) 
@@ -119,9 +119,9 @@ Some specific tutorials you might want to look at include:
 
 ## Work as a designer<a name="ly-create-designer"></a>
 
-Lumberyard Editor is an important, core tool for game designers and level designers\. It’s where you create your levels, populate them with entities, and assign components to those entities\. It also provides access to important tools such as the UI Editor for UI designers, the Audio Controls Editor for sound designers, and Script Canvas for all designers who will be working with the visual scripting system in Lumberyard\.
+Lumberyard Editor is an important, core tool for game designers and level designers\. It's where you create your levels, populate them with entities, and assign components to those entities\. It also provides access to important tools such as the UI Editor for UI designers, the Audio Controls Editor for sound designers, and Script Canvas for all designers who will be working with the visual scripting system in Lumberyard\.
 
-Here’s how you might start out:
+Here's how you might start out:
 
 1.  When you start Lumberyard Editor for the first time, you can create a new level, or you might prefer to open one of the existing levels in the Samples Project to play around with\. If the Samples Project is not your current project, use Project Configurator first, and set it as the default project\. 
 
@@ -129,15 +129,15 @@ Here’s how you might start out:
 
 1.  You add components to your entities through the Entity Inspector tool\. 
 
-1.  To provide player control for your entities, you’ll need an input binding\. Using the Asset Editor tool, you bind raw player input from keyboard, mouse, and game controllers to events that you create\. Then you can listen for and respond to these events using one of the scripting tools\. 
+1.  To provide player control for your entities, you'll need an input binding\. Using the Asset Editor tool, you bind raw player input from keyboard, mouse, and game controllers to events that you create\. Then you can listen for and respond to these events using one of the scripting tools\. 
 
 1.  Script Canvas and Lua are common scripting tools that are used in Lumberyard\. Script Canvas provides a visual, node\-based scripting system for scripting your gameplay logic, while Lua provides a more traditional scripting environment based on the Lua API\. Add a Script Canvas component or Lua Script component to an entity\. Develop a script in one of the script editors\. Then you can add that script to the component to control that entity at runtime\. For example, using a script, you can control an entity by responding to player input events, spawning dynamic entities at runtime, producing visual effects, and much more\. 
 
-1.  As you populate your world with entities, you’ll learn that a great way to save time is to use the slice system\. Slices are a type of prefab system that allows you to group and nest component entities together, save the group as a slice, and then create multiple instances of that slice throughout the levels of your project\. In each instance of the slice, you have the ability to make changes to that specific instance\. This change is referred to as a slice override\. You can also choose to save the override to the original slice, which then pushes that change to every other instance, too\. 
+1.  As you populate your world with entities, you'll learn that a great way to save time is to use the slice system\. Slices are a type of prefab system that allows you to group and nest component entities together, save the group as a slice, and then create multiple instances of that slice throughout the levels of your project\. In each instance of the slice, you have the ability to make changes to that specific instance\. This change is referred to as a slice override\. You can also choose to save the override to the original slice, which then pushes that change to every other instance, too\. 
 
-1.  When you’re ready to author game UI, you use the UI Editor, where you can establish a UI canvas and layout your interface and script your workflows\. 
+1.  When you're ready to author game UI, you use the UI Editor, where you can establish a UI canvas and layout your interface and script your workflows\. 
 
-1.  When you’re ready to add sound to your game, you establish audio events and triggers in the Audio Controls Editor\. You can then add this audio to entities through components, and script its playback using one of the scripting systems\. 
+1.  When you're ready to add sound to your game, you establish audio events and triggers in the Audio Controls Editor\. You can then add this audio to entities through components, and script its playback using one of the scripting systems\. 
 
 To get the most out of Lumberyard, browse the Components library and the Gems library to see what Lumberyard has to offer\. Then talk to your programmers to see what additional components need to be authored for your game\.
 
@@ -175,7 +175,7 @@ We suggest that your learning path looks like this:
 
 1.  Browse the Gem library to see examples of the larger functionality they can add compared to individual components\. 
 
-1.  Learn about authoring your own components and Gems, where you will also learn about working with EBuses, Lumberyard’s event bus and general\-purpose messaging system; AZ Modules, a collection of C\+\+ code built as a static or dynamic library; and more\. 
+1.  Learn about authoring your own components and Gems, where you will also learn about working with EBuses, Lumberyard's event bus and general\-purpose messaging system; AZ Modules, a collection of C\+\+ code built as a static or dynamic library; and more\. 
 
 Here is a basic set of Lumberyard tools and technologies to focus on:
 +  [Lumberyard Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lumberyard-editor-intro.html) 
@@ -183,7 +183,7 @@ Here is a basic set of Lumberyard tools and technologies to focus on:
 +  [Gems](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-gems.html) 
 +  [Component Entity System](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-intro.html) 
 +  [Component Reference](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-components.html) 
-+  [Programmer’s Guide to Entities and Components](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-system-pg-intro.html) 
++  [Programmer's Guide to Entities and Components](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-system-pg-intro.html) 
 +  [Emotion FX Animation Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/char-intro.html) 
 +  [Script Canvas](https://docs.aws.amazon.com/lumberyard/latest/userguide/script-canvas-intro.html) 
 +  [Lua Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/lua-scripting-intro.html) 

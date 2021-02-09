@@ -127,13 +127,13 @@ enum class ResultCode {Success, FuelSDKNotInitialized, FuelNoSession, FuelNoAppl
 ```
 
 **Error Code Descriptions**
-+ `Success` – The call was successful\.
-+ `FuelNoApplicationID` – The application ID was not set correctly or contains invalid characters\.
-+ `FuelMissingCredentials` – Twitch did not return the credentials\.
-+ `InvalidParam` – An invalid parameter was passed\.
-+ `TwitchRESTError` – An internal REST error occurred\.
-+ `TwitchChannelNoUpdatesToMake` – An attempt was made to update a channel but no data was given to update the channel\.
-+ `Unknown` – This error is rare and can occur if calls are made asynchronously during initialization\.
++ `Success` - The call was successful\.
++ `FuelNoApplicationID` - The application ID was not set correctly or contains invalid characters\.
++ `FuelMissingCredentials` - Twitch did not return the credentials\.
++ `InvalidParam` - An invalid parameter was passed\.
++ `TwitchRESTError` - An internal REST error occurred\.
++ `TwitchChannelNoUpdatesToMake` - An attempt was made to update a channel but no data was given to update the channel\.
++ `Unknown` - This error is rare and can occur if calls are made asynchronously during initialization\.
 
 ## UserInfo struct {#twitch-api-ebus-data-elements-userinfo-struct}
 
@@ -326,9 +326,9 @@ private:
 
 struct ChannelUpdateInfo
 {
-    UpdateValue<bool>           ChannelFeedEnabled;     // If true, the channel’s feed is turned on. Default: false.
+    UpdateValue<bool>           ChannelFeedEnabled;     // If true, the channel's feed is turned on. Default: false.
     UpdateValue<AZ::u64>        Delay;                  // Channel delay, in seconds. This inserts a delay in the live feed.
-    UpdateValue<AZStd::string>  Status;                 // Description of the broadcaster’s status, displayed as a title on the channel page.
+    UpdateValue<AZStd::string>  Status;                 // Description of the broadcaster's status, displayed as a title on the channel page.
     UpdateValue<AZStd::string>  GameName;               // Name of game
 };
 ```

@@ -52,9 +52,9 @@ The index of the sprite sheet cell that is to be the first frame in the looped p
 To loop the entire animation, specify a value that is equal to the **Start Frame** value\. To create an intro sequence that appears before the looping animation, specify a value greater than the **Start Frame**\.   
 **Loop Type**  
 Includes the following options:  
-   + **None** –No looping behavior\. The animation starts between the **Start Frame** and **End Frame** and then stops\.
-   + **Linear** – When the animation reaches **End Frame**, it loops by next playing the **Start Frame** and continues until the **End Frame**\. This continues until the player stops it manually\.
-   + **PingPong** – Reverses the direction of the animation\. After animation reaches the **End Frame** or the **Start Frame**, it reverses direction\. The loop goes back and forth between the two frames until the player stops it\.  
+   + **None** -No looping behavior\. The animation starts between the **Start Frame** and **End Frame** and then stops\.
+   + **Linear** - When the animation reaches **End Frame**, it loops by next playing the **Start Frame** and continues until the **End Frame**\. This continues until the player stops it manually\.
+   + **PingPong** - Reverses the direction of the animation\. After animation reaches the **End Frame** or the **Start Frame**, it reverses direction\. The loop goes back and forth between the two frames until the player stops it\.  
 **Frame delay**  
 Number of seconds to delay before displaying the next frame\.  
 **Auto Play**  

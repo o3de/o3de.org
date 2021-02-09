@@ -29,7 +29,7 @@ To integrate the Player Account Cloud Gem into an existing project, you must ena
    This ensures that the `CloudGemPlayerAccount` resource group is correctly linked to the `PlayerAccess` identity pool in the deployment access stack\.
 
 1. Integrate the gem into your game menu\. We recommend that you include the following features:
-   + **A global signout** – This security feature allows players to invalidate an account's tokens across all devices if a device has been lost or stolen\. The sample level shows how to offer this as a standalone feature\. If the previous password was compromised and already used to obtain authentication tokens, you can also have the menu automatically globally sign out after a password change\. To implement this functionality, do the following:
+   + **A global signout** - This security feature allows players to invalidate an account's tokens across all devices if a device has been lost or stolen\. The sample level shows how to offer this as a standalone feature\. If the previous password was compromised and already used to obtain authentication tokens, you can also have the menu automatically globally sign out after a password change\. To implement this functionality, do the following:
 
      1. Monitor the `CloudGemPlayerAccountNotifications::OnChangePasswordComplete` EBus event\.
 
@@ -40,4 +40,4 @@ To integrate the Player Account Cloud Gem into an existing project, you must ena
         ```
 
       
-   + **Email verification** – An email verification step ensures that email can be used to recover account access if a password has been forgotten\. You can customize the content of the verification emails by using Lambda triggers\. To add a new Lambda trigger to the AWS CloudFormation template, use the `LambdaConfig` property of `PlayerUserPool` in the `dev\Gems\CloudGemPlayerAccount\AWS\resource-template.json` file\. For more information, see [Customizing User Pool Workflows by Using AWS Lambda Triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html)\.
+   + **Email verification** - An email verification step ensures that email can be used to recover account access if a password has been forgotten\. You can customize the content of the verification emails by using Lambda triggers\. To add a new Lambda trigger to the AWS CloudFormation template, use the `LambdaConfig` property of `PlayerUserPool` in the `dev\Gems\CloudGemPlayerAccount\AWS\resource-template.json` file\. For more information, see [Customizing User Pool Workflows by Using AWS Lambda Triggers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools-working-with-aws-lambda-triggers.html)\.

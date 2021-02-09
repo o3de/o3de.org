@@ -23,19 +23,19 @@ Before you run Lumberyard Setup Assistant, verify the following:
 
 1. On the **Get started** page, select what you want to do:
    + **Run your game project**
-   + **Run the Lumberyard Editor and tools** – Use Lumberyard Editor to create a game
-   + **Compile the game code**\* – Compile the game code to include any changes that you have made
-   + **Compile the engine and asset pipeline**\* – Compile the engine code and asset pipeline to include any changes that you have made
-   + **Compile the Lumberyard Editor and tools**\* – Compile Lumberyard tools to include any changes that you have made
+   + **Run the Lumberyard Editor and tools** - Use Lumberyard Editor to create a game
+   + **Compile the game code**\* - Compile the game code to include any changes that you have made
+   + **Compile the engine and asset pipeline**\* - Compile the engine code and asset pipeline to include any changes that you have made
+   + **Compile the Lumberyard Editor and tools**\* - Compile Lumberyard tools to include any changes that you have made
    + **Compile for Android devices\***
    + **Setup for Linux Dedicated Server\***
 **Note**  
 In Lumberyard version 1\.23 and later, if you intend to create new projects, the following options must be selected:  
 **Run your game project**
-**Run the Lumberyard Editor and tools** – Use Lumberyard Editor to create a game
-**Compile the game code**\* – Compile the game code to include any changes that you have made
-**Compile the engine and asset pipeline**\* – Compile the engine code and asset pipeline to include any changes that you have made
-**Compile the Lumberyard Editor and tools**\* – Compile Lumberyard tools to include any changes that you have made
+**Run the Lumberyard Editor and tools** - Use Lumberyard Editor to create a game
+**Compile the game code**\* - Compile the game code to include any changes that you have made
+**Compile the engine and asset pipeline**\* - Compile the engine code and asset pipeline to include any changes that you have made
+**Compile the Lumberyard Editor and tools**\* - Compile Lumberyard tools to include any changes that you have made
 \*If you select any of these options, you may need to perform additional tasks, such as installing Microsoft Visual Studio\. If so, these tasks display on the **Install software** and **Required SDKs** pages\. Follow the instructions in Lumberyard Setup Assistant to obtain the software and third\-party SDKs that aren't installed\.
 
    You can also create, enable, and disable these capabilities from the command line\. For more information, see [Using Lumberyard Setup Assistant Batch](/docs/userguide/lumberyard-launcher-batch-using.md) and [Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.

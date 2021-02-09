@@ -8,9 +8,9 @@ title: VR TV Room Level
 The VR TV Room level demonstrates a simple VR level that is set up to play 2D video, 3D video, and 360 video on a VR device\. This level contains the following:
 + 2D video
 + 3D video
-+ `Input Configurator` entity – Initiates an input event when you press the trigger button\.
-+ `VideoPlayback_Toggle` entity – Contains a **[Script Canvas](/docs/userguide/components/script-canvas.md)** component that listens for the input event and then toggles visibility\.
-+ `Screen_Toggle_Sphere` entity – Contains a Lua script that enables the 3D video sphere to follow the VR camera\.
++ `Input Configurator` entity - Initiates an input event when you press the trigger button\.
++ `VideoPlayback_Toggle` entity - Contains a **[Script Canvas](/docs/userguide/components/script-canvas.md)** component that listens for the input event and then toggles visibility\.
++ `Screen_Toggle_Sphere` entity - Contains a Lua script that enables the 3D video sphere to follow the VR camera\.
 
 For more information about installing the project that includes the VR TV Room level, see [Virtual Reality Samples Project](/docs/userguide/samples/projects/virtual-reality.md)\.
 

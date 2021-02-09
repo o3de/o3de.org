@@ -16,8 +16,8 @@ You can use the **Perforce Settings** dialog box to configure how Lumberyard con
 `P4_<P4PORT>_CHARSET` is also cached\. This value is used if it matches your current `P4PORT` value; otherwise, the value for `P4CHARSET` is used\. For example, if `P4PORT` is set to **my\.perforce\.server\.com:1666**, the value **P4\_my\.perforce\.server\.com:1666** would be used\.
 
 Certain values may not be modifiable if your Perforce connection settings are configured using a method that overrides the `p4 set` command\. The following connection methods may override the ability to modify a setting:
-+ Config – A configuration file overrides this connection setting\. If detected, the path to the configuration file is displayed\. If undetected, you can check the setting for `P4CONFIG`\.
-+ Environment – Your system environment overrides this connection setting\. You can check your system's control panel to remove these overrides\.
++ Config - A configuration file overrides this connection setting\. If detected, the path to the configuration file is displayed\. If undetected, you can check the setting for `P4CONFIG`\.
++ Environment - Your system environment overrides this connection setting\. You can check your system's control panel to remove these overrides\.
 
 **To use the Perforce plugin menu**
 

@@ -5,7 +5,7 @@ title: RadioButton
 ---
 # RadioButton {#ui-editor-components-radiobutton}
 
-You can use the **RadioButton** component to make an element behave like a radio button\. This component is typically used on an element with two visual child elements—one to display when the radio button is selected and another to display when the radio button is cleared\.
+You can use the **RadioButton** component to make an element behave like a radio button\. This component is typically used on an element with two visual child elements-one to display when the radio button is selected and another to display when the radio button is cleared\.
 
 Use this component in conjunction with the **RadioButtonGroup** component\. The **RadioButtonGroup** component handles selecting and clearing the radio buttons in the group and makes sure that only one radio button is ever selected\.
 
@@ -14,8 +14,8 @@ Use this component in conjunction with the **RadioButtonGroup** component\. The 
 To see in\-game examples of completed canvases with the **RadioButton** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**\. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\RadioButton` directory\. You can open the following canvases:
-+ `Groups.uicanvas` – Examples of different radio button groupings
-+ `RadioButton.uicanvas` – Examples of different behaviors and default settings
++ `Groups.uicanvas` - Examples of different radio button groupings
++ `RadioButton.uicanvas` - Examples of different behaviors and default settings
 
 **To edit a radio button component**  
 In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButton** and do the following, as appropriate:    

@@ -12,8 +12,8 @@ You can use a **TextInput** component to make an element offer player input\. Th
 To see in\-game examples of completed canvases with the **TextInput** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **TextInput**\. You can view examples of different types of text input behavior on single lines and on multiple lines\. Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\TextInput` directory\. You can open the following canvases:
-+ `Multiline.uicanvas` – Examples of editing multiline text strings
-+ `SingleLine.uicanvas` – Example of editing single\-line text strings
++ `Multiline.uicanvas` - Examples of editing multiline text strings
++ `SingleLine.uicanvas` - Example of editing single\-line text strings
 
 You can add a prebuilt **TextInput** element from the slice library\. When you do this, a text input box, pause\-on state, and placeholder text "Type here\.\.\." are automatically created in your **Hierarchy** pane\.
 

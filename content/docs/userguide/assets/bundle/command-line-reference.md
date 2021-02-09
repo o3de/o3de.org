@@ -31,7 +31,7 @@ title: '&ALY; &asset-bundler; Command-Line Tool Reference'
   + [Options](#asset-bundler-command-line-reference-bundleseed-options)
   + [Examples](#asset-bundler-command-line-reference-bundleseed-examples)
 
- The Amazon Lumberyard Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`\. This tool manages seed lists, asset lists, comparisons, and asset bundles\. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution — that is the role of the Asset Processor\. Before running the Asset Bundler, make sure that you: 
+ The Amazon Lumberyard Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`\. This tool manages seed lists, asset lists, comparisons, and asset bundles\. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor\. Before running the Asset Bundler, make sure that you: 
 +  Enable each platform assets should be bundled for\. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project\. 
 + Run the Asset Processor to ensure that assets and their metadata are up to date\.
 
@@ -193,9 +193,9 @@ The asset list files generated are named based on the value of this argument and
 
 **\-\-addDefaultSeedListFiles**  
  Automatically include the default seed lists for the Lumberyard Engine, default project, and all enabled Gems\. As paths relative to `lumberyard_dev`, the files that define default assets are:   
-+  **Engine** – `Engine\Engine_Dependencies.xml` 
-+  **Gems** – `Gems\gem_name\Assets\gem_name_Dependencies.xml` 
-+  **Project** – `project_name\project_name_Dependencies.xml` 
++  **Engine** - `Engine\Engine_Dependencies.xml` 
++  **Gems** - `Gems\gem_name\Assets\gem_name_Dependencies.xml` 
++  **Project** - `project_name\project_name_Dependencies.xml` 
 By default, the project dependencies includes pre\-loaded particle libraries and game\-wide audio, excluding level\-specific audio\.  
 This argument can be used along with other arguments that provide seeds\.  
 *Type:* Flag  

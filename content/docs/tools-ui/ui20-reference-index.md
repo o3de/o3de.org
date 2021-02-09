@@ -144,7 +144,7 @@ A complete guide to the UI API can be found in the [Lumberyard UI Extensions C\+
 |   [AzQtComponents::TreeView](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tree_view.html)   |  | 
 |   [AzQtComponents::VectorEdit](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_vector_edit.html)   |  | 
 |   [AzQtComponents::VectorEditElement](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_vector_edit_element.html)   |  | 
-|   [AzQtComponents::VectorElement](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_vector_element.html)   |  All flexible vector GUI’s are constructed using a number vector elements\. Each Vector element contains a label and a double spin box which show the label and the value respectively\.  | 
+|   [AzQtComponents::VectorElement](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_vector_element.html)   |  All flexible vector GUI's are constructed using a number vector elements\. Each Vector element contains a label and a double spin box which show the label and the value respectively\.  | 
 |   [AzQtComponents::VectorInput](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_vector_input.html)   |  Qt Widget that control holds an array of VectorElements\. This control can be used to display any number of labeled float values with configurable row\(s\) & column\(s\)  | 
 |   [AzQtComponents::ViewportDragContext](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_viewport_drag_context.html)   |  | 
 |   [AzQtComponents::WindowDecorationWrapper](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_window_decoration_wrapper.html)   |  | 

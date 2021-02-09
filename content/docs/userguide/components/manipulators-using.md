@@ -64,7 +64,7 @@ For example, you can edit the vertex positions for the following components in t
 + **[Spline](/docs/userguide/components/spline.md)**
 + **[VisArea](/docs/userguide/components/vis-area.md)**
 
-`EditorVertexSelection` is an example of a component that encapsulates manipulator behavior that can be shared by multiple components – in this case, all components that require vertex editing\.
+`EditorVertexSelection` is an example of a component that encapsulates manipulator behavior that can be shared by multiple components - in this case, all components that require vertex editing\.
 
 The following core classes are related to `EditorVertexSelection`\.
 + `HoverSelection` \(Spline and LineSegment variants\)

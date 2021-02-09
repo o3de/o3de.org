@@ -43,19 +43,19 @@ The first screen is the **Player Account** page, which lists the player accounts
 ![\[Player Account page\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-2.png)
 
    Each player entry has the following fields:
-   + **User Name** – The Amazon Cognito user name\.
-   + **Player Name** – The name of the player in the game\.
-   + **Cognito Identity ID** – The unique ID of the player in the Amazon Cognito database\. This ID field is initially empty and is filled after the player signs in for the first time\.
-   + **Email** – The email of the player\.
-   + **Account ID** – An automatically assigned ID\.
-   + **Account Status** – The current status of the account\. The following statuses are possible:
-     + **Archived** – The account has been archived due to inactivity\. You can change this from the Amazon Cognito console\.
-     + **Compromised** – This account requires further investigation from Amazon Cognito console\.
-     + **Disabled** – The player account is currently disabled\. You can reenable it on the Amazon Cognito console\.
-     + **Force Change Password** – An AWS administrator has used Amazon Cognito to create the player account, and the player now must change their temporary password before they can successfully sign in\.
-     + **Reset Required** – The player's account was imported, but the player has not logged in\.
-     + **Unconfirmed** – The player account hasn't confirmed the account's email address or phone number\. The account is unusable until it has been confirmed\. To confirm an account manually, see [Confirming an Account](#cloud-canvas-cloud-gem-player-account-confirming-an-account) later in this document\.
-     + **Unknown** – The account is in an unknown state\. Use the Amazon Cognito console to investigate further\.
+   + **User Name** - The Amazon Cognito user name\.
+   + **Player Name** - The name of the player in the game\.
+   + **Cognito Identity ID** - The unique ID of the player in the Amazon Cognito database\. This ID field is initially empty and is filled after the player signs in for the first time\.
+   + **Email** - The email of the player\.
+   + **Account ID** - An automatically assigned ID\.
+   + **Account Status** - The current status of the account\. The following statuses are possible:
+     + **Archived** - The account has been archived due to inactivity\. You can change this from the Amazon Cognito console\.
+     + **Compromised** - This account requires further investigation from Amazon Cognito console\.
+     + **Disabled** - The player account is currently disabled\. You can reenable it on the Amazon Cognito console\.
+     + **Force Change Password** - An AWS administrator has used Amazon Cognito to create the player account, and the player now must change their temporary password before they can successfully sign in\.
+     + **Reset Required** - The player's account was imported, but the player has not logged in\.
+     + **Unconfirmed** - The player account hasn't confirmed the account's email address or phone number\. The account is unusable until it has been confirmed\. To confirm an account manually, see [Confirming an Account](#cloud-canvas-cloud-gem-player-account-confirming-an-account) later in this document\.
+     + **Unknown** - The account is in an unknown state\. Use the Amazon Cognito console to investigate further\.
 
 1. You can use the box and filter on the upper right of the **Player Account** page to search the list of player accounts\.  
 ![\[Filter options\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-player-account-3.png)

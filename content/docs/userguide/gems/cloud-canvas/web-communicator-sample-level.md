@@ -20,11 +20,11 @@ This tutorial assumes the following:
 
 The test workflow uses the PlayerAccountSample level, the CommunicatorSample level, and the AWS IoT management console in the following ways:
 
-1. **PlayerAccountSample** – To create an player account \(authenticated identity\) for testing\. Web Communicator uses authenticated identities by default\.
+1. **PlayerAccountSample** - To create an player account \(authenticated identity\) for testing\. Web Communicator uses authenticated identities by default\.
 
-1. **CommunicatorSample** – To register a WebSocket, connect the WebSocket, and request a channel list\.
+1. **CommunicatorSample** - To register a WebSocket, connect the WebSocket, and request a channel list\.
 
-1. **AWS IoT management console** – To publish a test message that appears in the CommunicatorSample level\.
+1. **AWS IoT management console** - To publish a test message that appears in the CommunicatorSample level\.
 
 ## Test Workflow Steps {#cloud-canvas-cloud-gem-web-communicator-sample-level-test-workflow-steps}
 

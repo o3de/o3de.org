@@ -85,8 +85,8 @@ def post(request, submission, user_id):
 ```
 
 The first argument passed to the function is a `dispatch.Request` object\. The `request` object has the following properties\.
-+ **`event`** – The event object that AWS Lambda passes to the dispatch handler\. The contents of the object are determined by the request template\. Additional properties added to the template through the `x-amazon-cloud-canvas-lambda-dispatch` object's `additional-request-template-content` property are also located here\.
-+ **`context`** – The Python [context object](https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html) that AWS Lambda passes to the dispatch handler\.
++ **`event`** - The event object that AWS Lambda passes to the dispatch handler\. The contents of the object are determined by the request template\. Additional properties added to the template through the `x-amazon-cloud-canvas-lambda-dispatch` object's `additional-request-template-content` property are also located here\.
++ **`context`** - The Python [context object](https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html) that AWS Lambda passes to the dispatch handler\.
 
 The request object's parameters are passed to the handler function as keyword arguments \(that is, by using Python `**parameters`\)\.
 

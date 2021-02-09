@@ -16,10 +16,10 @@ To apply POM, complete the following procedure\.
 
 1. Under **Shader Params**, adjust the values of the following parameters\.
 
-   1. **Height bias** – Moves the plane where the displacement is applied\. This reduces gaps in meshes, and prevents objects from displacing other objects that are placed above them\.
+   1. **Height bias** - Moves the plane where the displacement is applied\. This reduces gaps in meshes, and prevents objects from displacing other objects that are placed above them\.
 
-   1. **POM Displacement** – Sets the POM depth\. A larger value adds more depth\.
+   1. **POM Displacement** - Sets the POM depth\. A larger value adds more depth\.
 
-   1. **Self shadow strength** – Changes the strength of self\-shadowing\. A larger value imparts more shadowing
+   1. **Self shadow strength** - Changes the strength of self\-shadowing\. A larger value imparts more shadowing
 
 1. Under **Texture Maps**, enter the paths to the various textures\.

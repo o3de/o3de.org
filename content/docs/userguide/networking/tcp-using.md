@@ -7,7 +7,7 @@ title: Using the TCP Stream Driver
 
 To use the TCP stream socket driver, you specify connection parameters for internal buffers, a listening port, and the maximum number of connections\.
 
-After you construct the new stream driver, you can use the socket driver for server or client work\. For server work, the driver can monitor for connections\. For client work, the driver can connect to a server’s endpoint address and port\.
+After you construct the new stream driver, you can use the socket driver for server or client work\. For server work, the driver can monitor for connections\. For client work, the driver can connect to a server's endpoint address and port\.
 
 To start accepting new connections on the server, call the `StartListen()` method\. When new clients connect or disconnect, the socket driver sends events through the event bus\.
 
@@ -72,11 +72,11 @@ Note the following:
 + Both server and client have to use the same socket family `AF_*` type\.
 + The address can be `nullptr`, which means bind to all the available network interfaces\.
 + The `isBroadcast` flag is always set to `false`, since a TCP socket is not able to send broadcast packets\.
-+ The receive and send buffer size are specified in bytes and refer to the TCP stack’s buffer size for the socket\.
++ The receive and send buffer size are specified in bytes and refer to the TCP stack's buffer size for the socket\.
 
 ## Setting Up a Stream Socket Event Bus Handler {#network-tcp-using-setting-up-a-stream-socket-event-bus-handler}
 
-An event bus handler instance monitors connection events from GridMate’s stream socket driver\. The following code shows a simple stream socket event handler\.
+An event bus handler instance monitors connection events from GridMate's stream socket driver\. The following code shows a simple stream socket event handler\.
 
 ```
 struct ConnectionHandler : public GridMate::StreamSocketDriverEventsBus::Handler
@@ -110,7 +110,7 @@ struct ConnectionHandler : public GridMate::StreamSocketDriverEventsBus::Handler
 
 After you construct and initialize the stream socket driver, use the `StartListen()` method to instruct the server to accept clients\. The `StartListen()` method takes a `backlog` parameter that specifies the incoming connection request limit\. The driver emits successful connections to its event bus\.
 
-When you are finished with the server process, but before you shut down GridMate, call the `StopListen()` method\. To disconnect a client, you can use the `DisconnectFrom()` method on the server’s driver instance\.
+When you are finished with the server process, but before you shut down GridMate, call the `StopListen()` method\. To disconnect a client, you can use the `DisconnectFrom()` method on the server's driver instance\.
 
 ## Processing a Client {#network-tcp-using-processing-a-client}
 

@@ -13,7 +13,7 @@ If you like, you can follow this chapter in video \(7:33 minutes\) form:
 
 Begin this tutorial either with the level you created in [Tutorial Four: Create PhysX colliders](tutor-ch04-create-physx-colliders.md), or by opening `ch04_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you’re using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
+1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.   
 ![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Edit the `.inputbindings` asset to create a new event group and event generators for turn input\. From the **Tools** menu, choose **Asset Editor**\. 
@@ -107,7 +107,7 @@ The chicken entity is set to use a different `.inputbindings` than the one you c
 
 1.  Save the `ch05_chicken_movement` Script Canvas by pressing **Control \+ S** or choosing **Save** from the **File** menu in **Script Canvas**\. 
 **Important**  
-The chicken entity’s **Script Canvas** component is not referencing the `ch05_chicken_movement` script canvas you just edited\. Make sure the chicken entity’s **Script Canvas** component is referencing the correct script canvas, otherwise the turn functionality you just added will not work in the next step\.  
+The chicken entity's **Script Canvas** component is not referencing the `ch05_chicken_movement` script canvas you just edited\. Make sure the chicken entity's **Script Canvas** component is referencing the correct script canvas, otherwise the turn functionality you just added will not work in the next step\.  
 Select the chicken by clicking it in **Perspective**\. In **Entity Inspector**, in the **Script Canvas** component, click the **Hierarchy** icon to the right of **Script Canvas Asset**, expand the **ScriptCanvas** directory and choose `ch05_chicken_movement.scriptcanvas`\.
 
 1.  In the top toolbar, click the **Play** button or press **Control \+ G** to enter play mode\. Use the **Left thumbstick** or **W**, **A**, **S**, and **D** keys to move the chicken\. Use the **Right thumbstick** or **L** and **;** keys to turn the chicken\. Tap the **Space** key or the **Right bumper** button on a gamepad repeatedly to make the chicken jump\. Press **Escape** to exit play mode\.   
@@ -118,4 +118,4 @@ This tutorial implements a very simple approach to handling turn input\. The res
 
 For extra credit, try adding a new event generator to the input bindings\. Create a small graph in Script Canvas that uses a **DrawTextOnScreen** node to display a message, variable, or value on screen when a key is pressed\. Hint: use a **BuildString** Script Canvas node to create a string from a numerical value\.
 
-When you’re ready, try [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md)\.
+When you're ready, try [Tutorial Six: Add a camera](tutor-ch06-add-a-camera.md)\.

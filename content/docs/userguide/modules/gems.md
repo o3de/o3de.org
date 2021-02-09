@@ -27,7 +27,7 @@ GemDirectory/
 
 ## Waf Integration {#az-module-gems-waf-integration}
 
-Each game project must explicitly list the gems that it uses\. When [Using the Waf Build System](/docs/userguide/waf/intro.md) runs, it builds only those gems which are actively in use\. Waf also makes a gem’s `include/` directory accessible to any gems or projects that explicitly depend upon the gem\.
+Each game project must explicitly list the gems that it uses\. When [Using the Waf Build System](/docs/userguide/waf/intro.md) runs, it builds only those gems which are actively in use\. Waf also makes a gem's `include/` directory accessible to any gems or projects that explicitly depend upon the gem\.
 
 ## Gems Built as AZ Modules {#az-module-gems-as-az-modules}
 

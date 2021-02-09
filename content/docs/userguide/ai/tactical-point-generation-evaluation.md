@@ -44,8 +44,8 @@ Once a generation query generates a set of points, they can be evaluated\. Point
 The following elements are required to evaluate points:
 + List of candidate points from the point generator
 + Point evaluation criteria:
-  + Boolean – Condition criteria used to include or exclude a point independently of any other points 
-  + Weight – Criteria that, combined, give a measure of fitness relative to other points \(those included by the boolean criteria\)
+  + Boolean - Condition criteria used to include or exclude a point independently of any other points 
+  + Weight - Criteria that, combined, give a measure of fitness relative to other points \(those included by the boolean criteria\)
 
 ### Processing {#ai-tactical-point-evaluation-processing}
 

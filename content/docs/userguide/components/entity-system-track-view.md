@@ -5,9 +5,9 @@ title: Exposing Custom Components to Track View for Animation
 ---
 # Exposing Custom Components to Track View for Animation {#component-entity-system-track-view}
 
-To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to Lumberyard’s Track View and **Entity Inspector**\. To expose a custom component and its properties, you must perform three steps:
+To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to Lumberyard's Track View and **Entity Inspector**\. To expose a custom component and its properties, you must perform three steps:
 
-1. Create getter and setter methods for the animated property on one of the component’s request event buses\.
+1. Create getter and setter methods for the animated property on one of the component's request event buses\.
 
 1. Implement the getter and setter request handlers in your component\.
 
@@ -23,7 +23,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
 **Create getter and setter methods**
 
-   Each property must provide a method to set its value and get its current value\. To implement this, create setter and getter methods on one of the component’s request buses\. Then reflect those methods to the behavior context as part of the class reflection for the component\.
+   Each property must provide a method to set its value and get its current value\. To implement this, create setter and getter methods on one of the component's request buses\. Then reflect those methods to the behavior context as part of the class reflection for the component\.
 
    The following example creates setter and getter requests on the `ImaginaryTargetComponentRequestBus`\.
 
@@ -86,7 +86,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
 **Reflect your component**
 
-   Using the edit context and behavior contexts, reflect the component’s class, request event bus, and setter and getter methods\. **Track View** uses the setter and getter methods that you reflect in this step to set and get values for your animated property\. You must also reflect a `VirtualProperty` declaration that tells **Track View** that your component is capable of being animated\.
+   Using the edit context and behavior contexts, reflect the component's class, request event bus, and setter and getter methods\. **Track View** uses the setter and getter methods that you reflect in this step to set and get values for your animated property\. You must also reflect a `VirtualProperty` declaration that tells **Track View** that your component is capable of being animated\.
 
    ```
    /*static*/ void ImaginaryTargetComponent::Reflect(AZ::ReflectContext* context)
@@ -130,7 +130,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
 **\(Optional\) Place Unit Attributes on Getters**
 
-   The **Track View** user interface depends on the data type that the getter and setter use\. The foregoing example uses a type of `AZ::Vector3`, so **Track View** creates a compound `x,y,z` track from the property\. By contrast, if the getter and setters use a `bool`, **Track View** creates a Boolean track\. For the majority of animatable properties, the type is sufficient\. However, in some cases you might have to set units for a reflected property\. For example, if your property’s `AZ::Vector3` represents a color, you must add an attribute to the reflection of the getter event\. The attribute instructs **Track View** to use a color picker for that property\. If you have a property called `ImaginaryTargetColor` that calls a getter event called `GetImaginaryTargetColor`, use reflection code like the following:
+   The **Track View** user interface depends on the data type that the getter and setter use\. The foregoing example uses a type of `AZ::Vector3`, so **Track View** creates a compound `x,y,z` track from the property\. By contrast, if the getter and setters use a `bool`, **Track View** creates a Boolean track\. For the majority of animatable properties, the type is sufficient\. However, in some cases you might have to set units for a reflected property\. For example, if your property's `AZ::Vector3` represents a color, you must add an attribute to the reflection of the getter event\. The attribute instructs **Track View** to use a color picker for that property\. If you have a property called `ImaginaryTargetColor` that calls a getter event called `GetImaginaryTargetColor`, use reflection code like the following:
 
    ```
    ->Event("GetImaginaryTargetColor", &ImaginaryTargetComponentRequestBus::Events::GetImaginaryTargetColor)

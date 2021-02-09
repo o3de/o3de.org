@@ -14,8 +14,8 @@ To perform dynamic content updates, enter the following command\.
 ```
 lmbr_aws dynamic-content upload-manifest-content --manifest-path <manifest name> --staging-status <PUBLIC|PRIVATE|WINDOW>
 ```
-+ *<manifest name>* – Specifies the filename of the manifest in the `manifests` directory \(for example, `DynamicContentTest.json`\)\.
-+ *<PUBLIC\|PRIVATE\|WINDOW>* – \(Optional\) Use PUBLIC to release the content immediately\. Use WINDOW with `--start-date` and `--end-date` to specify a range during which the content will be publicly available\. Defaults to PRIVATE\.
++ *<manifest name>* - Specifies the filename of the manifest in the `manifests` directory \(for example, `DynamicContentTest.json`\)\.
++ *<PUBLIC\|PRIVATE\|WINDOW>* - \(Optional\) Use PUBLIC to release the content immediately\. Use WINDOW with `--start-date` and `--end-date` to specify a range during which the content will be publicly available\. Defaults to PRIVATE\.
 
 **Note**  
 For information on using the Lumberyard user interface to upload content, see [Using Dynamic Content Manager](/docs/userguide/gems/cloud-canvas/dc-manager.md) and [Managing Dynamic Content Packages](/docs/userguide/gems/cloud-canvas/dc-managing-packages.md)\.

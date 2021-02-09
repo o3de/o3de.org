@@ -14,4 +14,4 @@ Displays statistics on global memory consumption of vegetation objects placed in
 
 **e\_MergedMeshesDebug 2**  
 Displays vegetation in the cells that form the merged meshes\. They are color coded over distance\. Red boxes should be displayed only around the player \(the cell the player is standing in and the surrounding eight cells\)\. Beyond this, all cells should be green\.  
-Displayed above each cell is information about the current LOD step and memory consumption for the cell—this updates as you move closer and further away\.
+Displayed above each cell is information about the current LOD step and memory consumption for the cell-this updates as you move closer and further away\.

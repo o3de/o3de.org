@@ -19,7 +19,7 @@ When you create a new level, Lumberyard creates an ocean by default, complete wi
 1. In the **Rollup Bar**, on the **Terrain** tab, click **Environment**\.
 
 1. Under **Ocean**, adjust the following parameter values:
-   + **Material** – Click the \(**\.\.\.**\) icon to access Material Editor and select your asset\.
-   + **Caustic depth** – Set the depth to which caustic effects are visible\.
-   + **Caustic intensity** – Scale the intensity of the caustics for the water surface normals\.
-   + **Caustic tiling** – Scale the caustic tiling applied to the water surface normals\. You can scale caustics independently of the surface material in cases of strong tiled normals or vice\-versa\.
+   + **Material** - Click the \(**\.\.\.**\) icon to access Material Editor and select your asset\.
+   + **Caustic depth** - Set the depth to which caustic effects are visible\.
+   + **Caustic intensity** - Scale the intensity of the caustics for the water surface normals\.
+   + **Caustic tiling** - Scale the caustic tiling applied to the water surface normals\. You can scale caustics independently of the surface material in cases of strong tiled normals or vice\-versa\.

@@ -22,9 +22,9 @@ You can use Lua in Lumberyard to facilitate quick iteration of your game project
 ## Learning Lua {#lua-scripting-resources-general}
 
 For learning the Lua language itself, the [lua\.org](http://www.lua.org) website is a good place to start\.
-+ [Official Lua Documentation](http://www.lua.org/docs.html) – Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page\. 
-+ [Programming in Lua](http://www.lua.org/pil/) – This text is a resource for getting started with Lua programming\.
-+ [Lua 5\.1 Reference Manual](http://www.lua.org/manual/5.1/) – Provides a reference of all the functions that are available by default in Lua\.
++ [Official Lua Documentation](http://www.lua.org/docs.html) - Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page\. 
++ [Programming in Lua](http://www.lua.org/pil/) - This text is a resource for getting started with Lua programming\.
++ [Lua 5\.1 Reference Manual](http://www.lua.org/manual/5.1/) - Provides a reference of all the functions that are available by default in Lua\.
 
 ## Learning Lua in Lumberyard {#lua-scripting-resources-ly}
 

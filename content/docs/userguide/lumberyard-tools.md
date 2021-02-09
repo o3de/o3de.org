@@ -101,7 +101,7 @@ Generates terrain and sculpts terrain elements in your level\.
 Creates and paints terrain texture layers in your level\.
 
 [Time of Day Editor](/docs/userguide/sky/intro.md)  
-Creates and manages day–night cycles and other dynamic sky effects\.
+Creates and manages day-night cycles and other dynamic sky effects\.
 
 [Track View Editor](/docs/userguide/cinematics/track-view/editor.md)  
 Creates and manages cinematic scenes and sequences; consists of the Track View and **Curves Editor**\.

@@ -33,7 +33,7 @@ Follow these guidelines as you design your UI with buttons:
 
 1.  **Button placement on a card** 
 
-   Because cards have flexible layouts, we recommend that you place the button in a location suited to the content and context, while maintaining consistency within the product\. When the button isn’t attached to any labels, it’s suggested to place the button in the center of the area\.
+   Because cards have flexible layouts, we recommend that you place the button in a location suited to the content and context, while maintaining consistency within the product\. When the button isn't attached to any labels, it's suggested to place the button in the center of the area\.
 
 1.  **Dropdown menus** 
 
@@ -41,12 +41,12 @@ Follow these guidelines as you design your UI with buttons:
 
 1.  **Icon buttons** 
 
-   Use icon buttons when there isn’t enough space to display the full text on the button\. However, the context should be clear to users what action will be triggered after clicking on the icon button\. The icon shown on the button should also clearly represent the meaning of the function\. Use a mouseover tooltip to display the text version of the button\.
+   Use icon buttons when there isn't enough space to display the full text on the button\. However, the context should be clear to users what action will be triggered after clicking on the icon button\. The icon shown on the button should also clearly represent the meaning of the function\. Use a mouseover tooltip to display the text version of the button\.
 
 Avoid these design choices when using buttons:
-+ Don’t include a button as part of a sentence\.
-+ Don’t include more than one primary colored button on a UI\.
-+ Don’t use an icon button when there isn’t enough context for users to know the purpose of the button\.
++ Don't include a button as part of a sentence\.
++ Don't include more than one primary colored button on a UI\.
++ Don't use an icon button when there isn't enough context for users to know the purpose of the button\.
 + Never hide a button if a button is disabled\. A button should always be visible to the user, no matter its state\.
 
 ## Applying styles<a name="button-applying-styles"></a>

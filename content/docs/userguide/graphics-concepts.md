@@ -7,7 +7,7 @@ title: Concepts
 
 ## Materials {#graphics-concepts-materials}
 
-A material has a set of properties that determines how its [surface](/docs/userguide/materials/surface-types.md) reacts to physical actions, other materials, and its environment\. For example, a metal surface is hard, doesn’t shatter, reacts to bullets by generating spark particles, and has a unique sound when struck\. Contrast this with a grass surface, which is soft, responds to wind, generates grass strands and dirt particles when hit, and sounds different than metal\.
+A material has a set of properties that determines how its [surface](/docs/userguide/materials/surface-types.md) reacts to physical actions, other materials, and its environment\. For example, a metal surface is hard, doesn't shatter, reacts to bullets by generating spark particles, and has a unique sound when struck\. Contrast this with a grass surface, which is soft, responds to wind, generates grass strands and dirt particles when hit, and sounds different than metal\.
 
 Within the definition of a material, you can also change its transparency \([opacity](/docs/userguide/materials/opacity.md)\) level, [color, specular reflections, glossiness, and glow](/docs/userguide/materials/color-lighting.md)\. [Textures](#graphics-concepts-textures) and [shaders](/docs/userguide/materials/shaders/intro.md) are parameters of a material\.
 

@@ -4,7 +4,7 @@ title: AI Navigation
 ---
 # AI Navigation {#ai-nav-intro}
 
-Lumberyard has a robust set of tools and methods for moving AI agents around – from simple point\-to\-point navigation to complex sets of scripted navigation behaviors\.
+Lumberyard has a robust set of tools and methods for moving AI agents around - from simple point\-to\-point navigation to complex sets of scripted navigation behaviors\.
 
 AI agents come in different sizes and with different physical properties that impact how they navigate through a game level\. AI agent types that can navigate include animate entities such as humans and aliens, and vehicles such as cars, boats, and aircraft\. 
 

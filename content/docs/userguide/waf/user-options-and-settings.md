@@ -5,15 +5,15 @@ title: Waf User Options and Settings
 # Waf User Options and Settings {#waf-user-options-and-settings}
 
 In Lumberyard, the Waf options for configure and build time operations in are determined primarily by the following files in the `lumberyard_version\dev\_WAF_` subdirectory:
-+ **default\_settings\.json** – Declares most of the configurable settings that control how Lumberyard and its game projects are built, including the default values\. 
-+ **Platform\-specific settings** – Settings and defaults declared in the `settings` sections of `.json` files in the `lumberyard_version\dev\_WAF_\settings\platforms` subdirectory, including the following:
-  + `common.android.json` – Options for Android\.
-  + `platform.darwin_x64.json` – Options for macOS\.
-  + `platform.ios.json` – Options for iOS\.
-  + `common.win_msvc.json` – Windows options for Microsoft Visual Studio\.
-  + `platform.win_x64_vs2017.json` – Windows options for Microsoft Visual Studio 2017\.
-  + `platform.win_x64_vs2019.json` – Windows options for Microsoft Visual Studio 2019\.
-+ **user\_settings\.options** – Use this file to override default values defined in the `default_settings.json` file and platform\-specific settings files\.
++ **default\_settings\.json** - Declares most of the configurable settings that control how Lumberyard and its game projects are built, including the default values\. 
++ **Platform\-specific settings** - Settings and defaults declared in the `settings` sections of `.json` files in the `lumberyard_version\dev\_WAF_\settings\platforms` subdirectory, including the following:
+  + `common.android.json` - Options for Android\.
+  + `platform.darwin_x64.json` - Options for macOS\.
+  + `platform.ios.json` - Options for iOS\.
+  + `common.win_msvc.json` - Windows options for Microsoft Visual Studio\.
+  + `platform.win_x64_vs2017.json` - Windows options for Microsoft Visual Studio 2017\.
+  + `platform.win_x64_vs2019.json` - Windows options for Microsoft Visual Studio 2019\.
++ **user\_settings\.options** - Use this file to override default values defined in the `default_settings.json` file and platform\-specific settings files\.
 
 **Topics**
 + [default\_settings\.json](#waf-user-options-and-settings-default-settings-json-file)
@@ -38,11 +38,11 @@ The `default_settings.json` file and the `settings` sections of platform\-specif
 ```
 
 Each option can have the following attributes:
-+ **long\_form** – The long form of the command line argument that Waf accepts as a command\-line override to the setting\. This overrides both the default value and any override value in the `user_settings.options` file\. The long form is usually preceded with a double hyphen \(for example, `--enable-my-option`\)\.
-+ **short\_form** – \(Optional\) The short form of the command argument override option \(for example, `-s`\)\.
-+ **attribute** – The name of the attribute for configure and builds\. The attribute is set to the Options WAF module object\. This form of the attribute name is used in the `user_settings.options` override file\.
-+ **default\_value** – The default value if the setting is not overridden in the `user_settings.options` file or by the related command line argument\.
-+ **description** – A brief description of the option\.
++ **long\_form** - The long form of the command line argument that Waf accepts as a command\-line override to the setting\. This overrides both the default value and any override value in the `user_settings.options` file\. The long form is usually preceded with a double hyphen \(for example, `--enable-my-option`\)\.
++ **short\_form** - \(Optional\) The short form of the command argument override option \(for example, `-s`\)\.
++ **attribute** - The name of the attribute for configure and builds\. The attribute is set to the Options WAF module object\. This form of the attribute name is used in the `user_settings.options` override file\.
++ **default\_value** - The default value if the setting is not overridden in the `user_settings.options` file or by the related command line argument\.
++ **description** - A brief description of the option\.
 
 The following example shows the `enabled_game_projects` attribute in the `Game Projects` section of the `default_settings.json` file\.
 

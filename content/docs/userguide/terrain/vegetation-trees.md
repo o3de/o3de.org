@@ -9,10 +9,10 @@ Vegetation gets its appearance from texture mapping\. Trees use two different se
 
 The texture map you use depends on the type of vegetation:
 
-**Grass** – Diffuse map only
+**Grass** - Diffuse map only
 
-**Leaves and branches \(trees or bushes\)** – Diffuse, specular, normal, and opacity maps
+**Leaves and branches \(trees or bushes\)** - Diffuse, specular, normal, and opacity maps
 
-**Tree trunks** – Diffuse, specular and normal maps
+**Tree trunks** - Diffuse, specular and normal maps
 
 Vegetation placement on a terrain texture layer is based on the pivot point of the vegetation object\. Bigger vegetation objects might overlap with other terrain texture layers\. This is most obvious if you have two different materials touching, like grass and mud\.

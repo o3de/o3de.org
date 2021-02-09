@@ -26,7 +26,7 @@ enum DebugDrawBits
 ```
 
 **`gm_disconnectDetection`**  
-When set to 0, disables disconnect detection\. This is useful when you are debugging a server or client and don’t want to be disconnected when stepping through code\. The default value is 1\.
+When set to 0, disables disconnect detection\. This is useful when you are debugging a server or client and don't want to be disconnected when stepping through code\. The default value is 1\.
 
 **`gm_dumpstats`**  
 Write GridMate network profiling stats to file\.

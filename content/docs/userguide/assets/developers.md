@@ -12,12 +12,12 @@ Consult this section if you are a game engineer who needs to port older game cod
 All files accessed for the game runtime go through an interface that supports aliasing of file paths by name\. For example, the alias `@ROOT@` refers to the root directory where the `bootstrap.cfg` file is located\. If you need to open a file in the root directory, do not go to the root directory or use the current working directory\. Instead, use the file name, such as `@root@/filename.cfg`\. The various Lumberyard subsystems correctly resolve the alias\.
 
 Other aliases available include the following:
-+ `@log@` – For storing forensic data, such as crashes, logs, traces, performance drops, and unit test output\. 
-+ `@cache@` – For storing data that can be cleaned out at any time and does not need to persist\. 
-+ `@user@` – For storing data that needs to persist between users\. Note that some operating systems may back up this data to the cloud, such as for user preferences\. 
-+ `@assets@` – The location of the asset cache\. If no alias is specified, this is assumed, so it is almost never necessary to specify this\.
-+ `@devroot@` – The root of your development tree where the editable `engineroot.txt` file is located\. This file is shared by many game projects and used by the editor and other tools\.
-+ `@devassets@` – The root of your source asset directory for your game, which is used by the editor and tools\. 
++ `@log@` - For storing forensic data, such as crashes, logs, traces, performance drops, and unit test output\. 
++ `@cache@` - For storing data that can be cleaned out at any time and does not need to persist\. 
++ `@user@` - For storing data that needs to persist between users\. Note that some operating systems may back up this data to the cloud, such as for user preferences\. 
++ `@assets@` - The location of the asset cache\. If no alias is specified, this is assumed, so it is almost never necessary to specify this\.
++ `@devroot@` - The root of your development tree where the editable `engineroot.txt` file is located\. This file is shared by many game projects and used by the editor and other tools\.
++ `@devassets@` - The root of your source asset directory for your game, which is used by the editor and tools\. 
 
 The following are examples of asset IDs:
 

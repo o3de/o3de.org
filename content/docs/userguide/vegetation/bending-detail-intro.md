@@ -24,9 +24,9 @@ When painting the vertices, begin with the blue channel so that you can block in
 
 | Color | RGB Values | Bending Influence | 
 | --- | --- | --- | 
-| Red | 255/0/0 |  Irregular bending at the outsides – movement of smaller shapes\. Random sinusoidal noise with a high frequency\. The red channel works only if the surface normals of the vegetation face horizontally\. If the leaf is flat and all normals face up, the red channel has no effect\.  | 
-| Green | 0/255/0 | Delays the start of the movement – used to create variations\.Random sinusoidal noise with a high frequency\.Values less than 0, 255, 0 delay the start of the sinusoidal noise\. | 
-| Blue | 0/0/255 |  Bends the leaves up and down – movement of the big shapes\. Random sinusoidal noise with a low frequency\. Values less than `0`, `0`, `255` introduce a greater amount of the noise\. Only the blue channel can stop all movement\. You can use the blue channel for the unmoving parts of vegetation, such as the base of a blade of grass or where a leaf attaches to its stem\. Also use the blue channel on tree trunks so that they sway in the wind\.  | 
+| Red | 255/0/0 |  Irregular bending at the outsides - movement of smaller shapes\. Random sinusoidal noise with a high frequency\. The red channel works only if the surface normals of the vegetation face horizontally\. If the leaf is flat and all normals face up, the red channel has no effect\.  | 
+| Green | 0/255/0 | Delays the start of the movement - used to create variations\.Random sinusoidal noise with a high frequency\.Values less than 0, 255, 0 delay the start of the sinusoidal noise\. | 
+| Blue | 0/0/255 |  Bends the leaves up and down - movement of the big shapes\. Random sinusoidal noise with a low frequency\. Values less than `0`, `0`, `255` introduce a greater amount of the noise\. Only the blue channel can stop all movement\. You can use the blue channel for the unmoving parts of vegetation, such as the base of a blade of grass or where a leaf attaches to its stem\. Also use the blue channel on tree trunks so that they sway in the wind\.  | 
 
 Once you have painted all of the channels, export your asset as an `.fbx` file\. Your result might look like the following\.
 
@@ -66,9 +66,9 @@ For more information, see, [Adding Global Wind](/docs/userguide/weather/wind-glo
    After you check these options, several new **Shader Params** appear\.
 
 1. Adjust the following parameters to achieve the effect that you want\.
-   + **Bending branch amplitude** – Affects the amplitude of the vertices painted blue\.
-   + **Bending edges amplitude** – Affects the amplitude of the vertices painted red\.
-   + **Detail bending frequency** – Affects the frequency of the detail bending\.
+   + **Bending branch amplitude** - Affects the amplitude of the vertices painted blue\.
+   + **Bending edges amplitude** - Affects the amplitude of the vertices painted red\.
+   + **Detail bending frequency** - Affects the frequency of the detail bending\.
 
    The following example uses the `am_aspen_01_group.cfg` file in Starter Game\.  
 **Example**    

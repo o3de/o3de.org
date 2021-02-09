@@ -58,8 +58,8 @@ For example, if two players pass the same match ID \(match\_id\) multiple times,
 No return value\.UpdatePresenceStatus Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value returns the polling interval in seconds\. If unsuccessful, the value returns `Aws::Http::HttpResponseCode`\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value returns the polling interval in seconds\. If unsuccessful, the value returns `Aws::Http::HttpResponseCode`\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetPresenceStatusofFriends {#twitch-api-ebus-rich-presence-getpresencestatusoffriends}
 
@@ -107,13 +107,13 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.GetPresenceStatusofFriends Callback
 
 **result \- PresenceStatusValue**  
-Value – The presence status list, which includes the following data:  
-+ ActivityType – The user's activity type\. Valid values are Watching, Playing, or Broadcasting\.
-+ Availability – The availability status\. Valid values are Online or Idle\.
-+ Index – The index for the presence status list\.
-+ UpdatedDate – The Linux time stamp, which is the number of seconds since January 1, 1970 UTC\.
-+ UserID – The Twitch user ID, which returns in the format `AZStd::string`\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The presence status list, which includes the following data:  
++ ActivityType - The user's activity type\. Valid values are Watching, Playing, or Broadcasting\.
++ Availability - The availability status\. Valid values are Online or Idle\.
++ Index - The index for the presence status list\.
++ UpdatedDate - The Linux time stamp, which is the number of seconds since January 1, 1970 UTC\.
++ UserID - The Twitch user ID, which returns in the format `AZStd::string`\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetPresenceSettings {#twitch-api-ebus-rich-presence-getpresencesettings}
 
@@ -155,10 +155,10 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.PresenceSettingsValue Callback
 
 **result \- PresenceStatusValue**  
-Value – The presence settings, which includes the following data:  
-+ IsInvisible – If true, the user is invisible to everyone\. If false, the user's presence is visible\.
-+ ShareActivity – If true, the user's activity is shareable\. If false, the user's activity cannot be shared\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The presence settings, which includes the following data:  
++ IsInvisible - If true, the user is invisible to everyone\. If false, the user's presence is visible\.
++ ShareActivity - If true, the user's activity is shareable\. If false, the user's activity cannot be shared\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## UpdatePresenceSettings {#twitch-api-ebus-type-name}
 
@@ -202,7 +202,7 @@ The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 No return value\.UpdatePresenceSettings Callback
 
 **result \- PresenceStatusValue**  
-Value – The presence settings, which includes the following data:  
-+ IsInvisible – If true, the user is invisible to everyone\. If false, the user's presence is visible\.
-+ ShareActivity – If true, the user's activity is shareable\. If false, the user's activity cannot be shared\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The presence settings, which includes the following data:  
++ IsInvisible - If true, the user is invisible to everyone\. If false, the user's presence is visible\.
++ ShareActivity - If true, the user's activity is shareable\. If false, the user's activity cannot be shared\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

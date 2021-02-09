@@ -82,7 +82,7 @@ class TransformComponentRequests
 
 ### EBus Request Bus Events {#component-entity-system-pg-components-and-ebuses-request-bus-events}
 
-EBus event definitions are the main part of the bus specification\. This interface defines what your component does\. In the following example, the `TransformComponent` allows the retrieval and modification of the local and world transforms\. It also creates interfaces for setting parent–child relationships\.
+EBus event definitions are the main part of the bus specification\. This interface defines what your component does\. In the following example, the `TransformComponent` allows the retrieval and modification of the local and world transforms\. It also creates interfaces for setting parent-child relationships\.
 
 ```
 ...

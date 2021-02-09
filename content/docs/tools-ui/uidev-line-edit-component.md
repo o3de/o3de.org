@@ -41,7 +41,7 @@ The **line edit** component is one of several types of input boxes offered by th
 
 1.  **Error tooltip** 
 
-   \(Optional\) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers\. This tooltip appears in place of the normal tooltip text while an error state exists\. If you don’t set the error message, the default error tooltip text is "Invalid input"\.
+   \(Optional\) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers\. This tooltip appears in place of the normal tooltip text while an error state exists\. If you don't set the error message, the default error tooltip text is "Invalid input"\.
 
 ## Basic line edit<a name="line-edit-basic"></a>
 

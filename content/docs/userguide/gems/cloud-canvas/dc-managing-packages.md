@@ -33,9 +33,9 @@ To use the Dynamic Content Cloud Gem, you must meet these requirements:
 ## Dynamic Content Package Stages {#cloud-canvas-cloud-gem-dc-managing-packages-stages}
 
 You can use separate deployment stacks to handle different release workflows\. For this purpose, the Dynamic Content Cloud Gem currently supports the following publishing stages\.
-+ **Private** – The packages are never downloaded by the game client\. When you upload new or altered content to the cloud from **Dynamic Content Manager**, your packages and manifest are always put in the **Private** stage\. This empowers you to choose when and how your changes are released to customers\.
-+ **Scheduled** – The packages are conditionally downloaded by the game client based on a specific date and time\.
-+ **Public** – The packages are available to everyone that uses the deployment\.
++ **Private** - The packages are never downloaded by the game client\. When you upload new or altered content to the cloud from **Dynamic Content Manager**, your packages and manifest are always put in the **Private** stage\. This empowers you to choose when and how your changes are released to customers\.
++ **Scheduled** - The packages are conditionally downloaded by the game client based on a specific date and time\.
++ **Public** - The packages are available to everyone that uses the deployment\.
 
 You can use these stages to add an additional layer of protection against inadvertent deployments of dynamic content to your players\.
 
@@ -64,9 +64,9 @@ Editing is triggered when you drag and drop a root\-level package from one stage
 When you edit a package, you can alter its **Transition**, **Scheduling**, and **Package Children**, as the following image shows\.
 
 ![\[Editing a package\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-dc-managing-packages-8.png)
-+ **Transition** – Choose the target stage that you want to move the package to\.
-+ **Scheduling** – Set packages to `scheduled` or `indefinite`\. Packages that you place in the public stage cannot have a date; they are always indefinite\.
-+  **Package Children** – Select which children of the root package you would like to include in this transition\.
++ **Transition** - Choose the target stage that you want to move the package to\.
++ **Scheduling** - Set packages to `scheduled` or `indefinite`\. Packages that you place in the public stage cannot have a date; they are always indefinite\.
++  **Package Children** - Select which children of the root package you would like to include in this transition\.
 
    By default all children move with the root package\. If you clear the selection for some children, they become orphans in the current stage and no longer visible to the game client\.
 

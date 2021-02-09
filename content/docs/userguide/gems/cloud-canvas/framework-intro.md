@@ -13,8 +13,8 @@ title: Cloud Gem Framework
 | The Cloud Gem Framework and this documentation are in preview release and are subject to change\. More topics are planned\. | 
 
 The Lumberyard Cloud Gem Framework makes it easy to build popular cloud\-connected features, such as dynamic content, leaderboards, and daily messages\. The Cloud Gem Framework has two components:
-+ **Cloud Gem Portal** – A web application for visually managing and administering your cloud features \(like scheduling messages, releasing dynamic content, or deleting a fraudulent leaderboard score\)
-+ **Cloud gems** – Modular packages of discrete functionality and assets that include everything necessary for a game developer to include that functionality into their project, including backend and client functionality\.
++ **Cloud Gem Portal** - A web application for visually managing and administering your cloud features \(like scheduling messages, releasing dynamic content, or deleting a fraudulent leaderboard score\)
++ **Cloud gems** - Modular packages of discrete functionality and assets that include everything necessary for a game developer to include that functionality into their project, including backend and client functionality\.
 
  Cloud gems can be used out of the box in production, and they come with full source code in case you want to customize their behavior\.
 

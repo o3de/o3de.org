@@ -55,8 +55,8 @@ After you generate asset bundles to deliver with your game, switch your release 
 ## Release Build Sample Scripts {#asset-bundler-migrating-replace-bundles-script}
 
 The following sample scripts show how you can simplify and automate basic release build processes for your game projects\. 
-+ [`generate_bundle.py`](#asset-bundler-migrating-replace-bundles-script-generatebundle) – This script uses the Lumberyardcommand line calls to generate asset bundle files\.
-+ [`ProjectName_MakePaks.py`](#asset-bundler-migrating-replace-bundles-script-makepaks) – This script creates a folder titled `gamename_pc_paks` and copies the base bundle files to the subfolder `gamename_platform_paks/gamename`\. 
++ [`generate_bundle.py`](#asset-bundler-migrating-replace-bundles-script-generatebundle) - This script uses the Lumberyardcommand line calls to generate asset bundle files\.
++ [`ProjectName_MakePaks.py`](#asset-bundler-migrating-replace-bundles-script-makepaks) - This script creates a folder titled `gamename_pc_paks` and copies the base bundle files to the subfolder `gamename_platform_paks/gamename`\. 
 
 ### generate\_bundle\.py {#asset-bundler-migrating-replace-bundles-script-generatebundle}
 

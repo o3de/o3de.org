@@ -77,11 +77,11 @@ You can also sort entities so that they appear in the order that you want in the
 ![\[Sort entities in the Entity Outliner.\]](/images/shared/shared-entity-outliner-sort-filter.png)
 
 1. Choose the following options:
-   + **Sort: Manually** – Manually organize entities\. See [Reordering Entities](#component-entity-outliner-reordering)\.
-   + **Sort: A to Z **– Sort entities alphabetically, in ascending order\.
-   + **Sort: Z to A** – Sort entities, in descending order\.
-   + **Scroll to Selected** – When you select an entity in the viewport, the **Entity Outliner** scrolls to that entity\. If you select multiple entities, the **Entity Outliner** scrolls to the last selected entity\.
-   + **Expand to Selected** – When you select an entity in the viewport, the **Entity Outliner** expands the hierarchy to show any child entities\.
+   + **Sort: Manually** - Manually organize entities\. See [Reordering Entities](#component-entity-outliner-reordering)\.
+   + **Sort: A to Z **- Sort entities alphabetically, in ascending order\.
+   + **Sort: Z to A** - Sort entities, in descending order\.
+   + **Scroll to Selected** - When you select an entity in the viewport, the **Entity Outliner** scrolls to that entity\. If you select multiple entities, the **Entity Outliner** scrolls to the last selected entity\.
+   + **Expand to Selected** - When you select an entity in the viewport, the **Entity Outliner** expands the hierarchy to show any child entities\.
 
 You can also select an entity in the **Entity Outliner** to find it in the viewport or in reverse\. This feature helps you find the entities that you want, especially in large levels\.
 

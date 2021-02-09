@@ -15,9 +15,9 @@ title: Particles Attributes Reference
 In the **Particle Editor**, you can modify how emitters and particles look and behave\. You can find all available parameters in the **Attributes** pane\. Except for a parameter's base value, most numeric parameters allow random variation over a particle or emitter lifetime\.
 
 Some parameters have additional settings:
-+ **Random** – Specifies how much a particle's parameter value deviates from the default value of `0` \(no variation\)\.
-+ **Strength Over Emitter Life** – Controls the alpha strength over the lifetime of the particle\. This parameter works with finite particles only\. This parameter has no effect if set to continuous\.
-+ **Strength Over Particle Life** – Controls the alpha strength over the lifetime of an individual particle\. For example, you can use this parameter to make a smoke particle fade to nothing once its lifetime has finished\. The particle fades out earlier or later depending on where you reduce the value to zero\. 
++ **Random** - Specifies how much a particle's parameter value deviates from the default value of `0` \(no variation\)\.
++ **Strength Over Emitter Life** - Controls the alpha strength over the lifetime of the particle\. This parameter works with finite particles only\. This parameter has no effect if set to continuous\.
++ **Strength Over Particle Life** - Controls the alpha strength over the lifetime of an individual particle\. For example, you can use this parameter to make a smoke particle fade to nothing once its lifetime has finished\. The particle fades out earlier or later depending on where you reduce the value to zero\. 
 
 **Topics**
 + [Using the Curve Editor in the Particle Editor](/docs/userguide/emitter-curve-editor.md)

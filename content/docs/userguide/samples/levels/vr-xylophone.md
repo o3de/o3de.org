@@ -12,11 +12,11 @@ For more information about installing the project that includes the VR Xylophone
 ## VR Device Tracking {#sample-level-vr-xylophone-vr-device-tracking}
 
 The VR Xylophone level uses the following:
-+ `Input Configurator` entity – Handles VR device tracking and input events\.
-+ **[Input](/docs/userguide/components/input.md)** component – Defines two input events \(**FireLargeBox** and **FireSmallBox**\) that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.  
++ `Input Configurator` entity - Handles VR device tracking and input events\.
++ **[Input](/docs/userguide/components/input.md)** component - Defines two input events \(**FireLargeBox** and **FireSmallBox**\) that are initiated when you use the trigger button on the Oculus or Vive motion controllers\.  
 ![\[Input component in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-input-component.png)  
 ![\[Input bindings file with input event groups in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-input-event-boxgarden-inputbindings.png)
-+ **[Lua Script](/docs/userguide/components/lua-script.md)** component – Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.  
++ **[Lua Script](/docs/userguide/components/lua-script.md)** component - Uses the `vrdevice_tracking.lua` script to track the movement and orientation of the VR controllers\. Passes the transforms to specific controller entities\.  
 ![\[Input and Lua Script components in the VR Xylophone level.\]](/images/userguide/vr-xylophone-level-lua-script-component.png)
 
 ## VR Controllers and Projectiles {#sample-level-vr-xylophone-controllers-and-projectiles}
@@ -32,8 +32,8 @@ The projectile entities are also set up similarly, except for size and color\. T
 You can find the `projectile_largebox.slice` and `projectile_smallBox.slice` files in the `lumberyard_version\dev\VirtualRealityProject\slices` directory\.
 
 The VR Xylophone level uses the following scripts:
-+ `vrdevice_tracking` Lua script – Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
-+ Script Canvas graph – Spawns a projectile and plays a spawning sound when an input event is triggered\. This graph is on the controller entity\.
++ `vrdevice_tracking` Lua script - Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
++ Script Canvas graph - Spawns a projectile and plays a spawning sound when an input event is triggered\. This graph is on the controller entity\.
   + In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
   + The **Audio Trigger** component specifies the sound to play\.
   + The **Spawner** component specifies the dynamic slice to spawn\.  

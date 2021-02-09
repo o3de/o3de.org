@@ -14,12 +14,12 @@ After Asset Processor successfully converts the image, the resulting `.dds` asse
 Asset Processor calls the Resource Compiler, `rc.exe` \(located in `lumberyard_version\dev\Bin64vc141\rc`\), to convert the image files\. Resource Compiler also has an [image tool](/docs/userguide/assets/images-using-resourcecompiler-image-tool.md), which you can use to manually select image presets, mip maps, and so on\. The Resource Compiler image tool can also output an `imagefilename.exportsettings`, which you must check in if your project uses source control such as Perforce\. Checking in the `.exportsettings` file ensures that the texture renders similarly for each person working on the project\.
 
 Lumberyard supports the following image file types:
-+ TIFF – No grayscale
-+ TGA – Indexed or true color only; no grayscale
-+ PNG – RGB or RGBA only; no grayscale
-+ BMP – Any format
-+ GIF – Supported, but not an ideal texture format
-+ JPG – Any format
++ TIFF - No grayscale
++ TGA - Indexed or true color only; no grayscale
++ PNG - RGB or RGBA only; no grayscale
++ BMP - Any format
++ GIF - Supported, but not an ideal texture format
++ JPG - Any format
 
 The following diagram represents the general workflow for converting images\.
 

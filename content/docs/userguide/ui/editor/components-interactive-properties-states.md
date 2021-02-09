@@ -10,12 +10,12 @@ The **States** group of properties defines the appearance of the interactive ele
 The normal appearance of a visual element \(defined as an element with a visual component, such as image or text\) is defined by the properties of that visual component\. Some of the visual component's properties, however, can be overridden by an interactive component that is in the **Hover**, **Pressed**, and **Disabled** states\.
 
 The **Hover**, **Pressed**, and **Disabled** states have a list of **state actions**, which define the appearance of that state, and which override the corresponding property of the visual component:
-+ **Color** – RGB color tint
-+ **Alpha** – Opacity
-+ **Sprite** – Texture
-+ **Font** – Text font and font effect \(of a text component, for example\)
++ **Color** - RGB color tint
++ **Alpha** - Opacity
++ **Sprite** - Texture
++ **Font** - Text font and font effect \(of a text component, for example\)
 
-The **state actions**—**Color**, **Alpha**, **Sprite**, and **Font**—each have a **Target** property that specifies which visual element is to be affected\. The elements from which you can choose include the current element—listed as **<This element>**, its child elements, and the descendants of its child elements\. Using the **Target** property, you can pick exactly which visual element to override\. 
+The **state actions**-**Color**, **Alpha**, **Sprite**, and **Font**-each have a **Target** property that specifies which visual element is to be affected\. The elements from which you can choose include the current element-listed as **<This element>**, its child elements, and the descendants of its child elements\. Using the **Target** property, you can pick exactly which visual element to override\. 
 
 For example, the button [prefab](/docs/userguide/ui/editor/prefabs.md) has a top element named **Button** that has a visual component to define its color\. It also has a child element with a text component to define the text \(and its color\) of the button\. The top element \(**Button**\) also has the **Interactable** component\. The **Target** for the **color** state action can override either the **Button** element's color or the **Text** element's color, depending on what you select from the list\.
 

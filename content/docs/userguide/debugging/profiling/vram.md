@@ -38,8 +38,8 @@ Detailed information about each heading follows\.
 
 **Category**  
 Indicates the type of allocation:   
-+  **Texture** – Includes texture assets, dynamically generated textures, and frame buffers\.
-+  **Buffer** – Includes vertex and index buffers, constant buffers, and other runtime buffers\.
++  **Texture** - Includes texture assets, dynamically generated textures, and frame buffers\.
++  **Buffer** - Includes vertex and index buffers, constant buffers, and other runtime buffers\.
 
    
 

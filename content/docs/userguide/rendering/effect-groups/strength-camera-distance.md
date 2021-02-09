@@ -12,7 +12,7 @@ Example opening XML tag using the **fadeDistance** attribute:
 <PostEffectGroup priority="1" fadeDistance="20">
 ```
 
-**fadeDistance** – Indicates how the effects are actualized based on the distance of the camera from the entity\.
+**fadeDistance** - Indicates how the effects are actualized based on the distance of the camera from the entity\.
 + When the camera is at the position of the entity, the effects are fully overridden\.
 + When the camera is less than fade distance from the entity, the effects are blended\.
 + When the camera is at least fade distance from the entity, the effects are set to the lower priority values\.

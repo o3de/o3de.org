@@ -9,23 +9,23 @@ The Asset Builder SDK lets you develop an asset builder that processes your cust
 
 To create a builder for a custom asset type:
 
-[1\. Create Builder Classes](#asset-builder-custom-create-builder-class) – Create one or more builder classes that build the asset\. The classes must implement the appropriate callbacks and handle shutdown messages from Asset Processor\.
+[1\. Create Builder Classes](#asset-builder-custom-create-builder-class) - Create one or more builder classes that build the asset\. The classes must implement the appropriate callbacks and handle shutdown messages from Asset Processor\.
 
-[2\. Create a Lifecycle Component](#asset-builder-custom-create-a-lifecycle-component) – Create a lifecycle `AZ::Component` that registers all of your builder classes\. The lifecycle component provides Asset Processor with information to ensure that the correct asset builder is invoked for a file\.
+[2\. Create a Lifecycle Component](#asset-builder-custom-create-a-lifecycle-component) - Create a lifecycle `AZ::Component` that registers all of your builder classes\. The lifecycle component provides Asset Processor with information to ensure that the correct asset builder is invoked for a file\.
 
-[3\. Tag Components for Builder Mode](#asset-builder-custom-tag-components-for-builder-mode) – Tag your lifecycle component and any supporting `AZ::Component` instances with the `AssetBuilder` tag to ensure that they are activated in builder mode\.
+[3\. Tag Components for Builder Mode](#asset-builder-custom-tag-components-for-builder-mode) - Tag your lifecycle component and any supporting `AZ::Component` instances with the `AssetBuilder` tag to ensure that they are activated in builder mode\.
 
-[4\. \(Optional\) Implement Message Logging](#asset-builder-custom-optional-implement-message-logging) – Use the `BuilderLog()` function and standard `AZ_Trace` macros to log builder\-related messages or errors\.
+[4\. \(Optional\) Implement Message Logging](#asset-builder-custom-optional-implement-message-logging) - Use the `BuilderLog()` function and standard `AZ_Trace` macros to log builder\-related messages or errors\.
 
 This topic describes how to create builder classes, register your builder, tag your components, and implement message logging for your builder\.
 
 ## Builder Resources {#asset-builder-custom-builder-resources}
 
 This topic draws on the following resources, which are included with Lumberyard:
-+ Lumberyard Asset Builder SDK – The Asset Builder SDK enables you to build custom asset processing tools\. The source code is located in the following directory:
++ Lumberyard Asset Builder SDK - The Asset Builder SDK enables you to build custom asset processing tools\. The source code is located in the following directory:
 
   `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK`
-+ CustomAssetExample gem – Provides sample custom asset builder code\. The builder\-related source files for the gem are located in the following directory:
++ CustomAssetExample gem - Provides sample custom asset builder code\. The builder\-related source files for the gem are located in the following directory:
 
   `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder`
 
@@ -73,7 +73,7 @@ In most cases, you should build a `JobDescriptor` for each processing job for ea
 
 Keep in mind the following:
 + To ensure that critical files are included, Lumberyard Editor blocks on startup until all callbacks for `CreateJobFunction` have completed\. Due to this startup constraint, we recommend that your code perform minimal work during the `CreateJobsFunction` callback\. For heavy processing work, use the callback for the `ProcessJobFunction`\.
-+ For extra configurability, you can place arbitrary key–value pairs into the `JobDescriptor.m_jobParameters` field\. The key–value pairs are retained and sent to the callback for `ProcessJobsFunction`\. You can store information gathered during the `CreateJobsFunction` callback in these key–value pairs and then pass the information as parameters to the callback for `ProcessJobsFunction`\.
++ For extra configurability, you can place arbitrary key-value pairs into the `JobDescriptor.m_jobParameters` field\. The key-value pairs are retained and sent to the callback for `ProcessJobsFunction`\. You can store information gathered during the `CreateJobsFunction` callback in these key-value pairs and then pass the information as parameters to the callback for `ProcessJobsFunction`\.
 + To delete stale products, Asset Processor compares the `JobDescriptor` that you create with the `JobDescriptors` that were created in the last iteration\. Asset Processor compares `JobDescriptors` that have the same input source files, `PlatformInfo` value, and job key\.
 + You don't need to check whether a `JobDescriptor` that you create needs to be processed later\. Instead, create all possible jobs at every iteration for a particular input asset on each enabled platform\.
 
@@ -144,8 +144,8 @@ response.m_createJobOutputs.push_back(descriptor);
 For more information about declaring, enabling, or disabling platforms, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
 
 The following functions are available in the Asset Builder SDK\. For source code, see `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK\AssetBuilderSDK.*`
-+ `HasPlatform(const char* platformIdentifier)` – For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.
-+ `HasPlatformWithTag(const char* platformTag)` – For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(for example, "mobile" or "console"\)\.
++ `HasPlatform(const char* platformIdentifier)` - For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.
++ `HasPlatformWithTag(const char* platformTag)` - For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(for example, "mobile" or "console"\)\.
 
 ### E\. Implement the Callback for ProcessJobFunction {#asset-builder-custom-create-builder-class-processjob-callback}
 

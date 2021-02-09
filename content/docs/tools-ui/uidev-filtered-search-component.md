@@ -5,11 +5,11 @@ title: Lumberyard UI filtered search widget
 ---
 # Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
 
-Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they’re looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
+Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they're looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
 
 ## Anatomy of the filtered search widget<a name="filtered-search-anatomy"></a>
 
-Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we’re looking for all entities with Script Canvas components\.
+Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we're looking for all entities with Script Canvas components\.
 
 ![\[component filtered search anatomy\]](/images/tools-ui/component-filtered-search-anatomy.png)
 

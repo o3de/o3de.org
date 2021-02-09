@@ -46,8 +46,8 @@ The Twitch ID for which to reset the friends notification\. If the `AZStd::strin
 No return value\.ResetFriendsNotificationCountNotify Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendNotificationCount {#twitch-api-ebus-friends-getfriendnotificationcount}
 
@@ -88,19 +88,19 @@ The Twitch ID for which to retrieve the friends notification count\. If the `AZS
 No return value\.ResetFriendsNotificationCountNotify Callback
 
 **result \- Int64Value**  
-Value – If successful, the notification count for this call\. If unsuccessful, the count will display 0\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - If successful, the notification count for this call\. If unsuccessful, the count will display 0\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendRecommendations {#twitch-api-ebus-friends-getfriendrecommendations}
 
 Retrieves friend recommendations for the specified user\. Each recommendation includes one of the following reasons:
-+ active\_in\_same\_channels – You are both active in the same channels\.
-+ bilateral\_follow – You follow each other\.
-+ chat\_mentioned – You @mentioned the other user\.
-+ hosted – You hosted the other user\.
-+ mod\_in\_same\_channels – You are both moderators in the same channels\.
-+ team – You are both on the same team on Twitch\.
-+ whispered – You whispered to the other user\.
++ active\_in\_same\_channels - You are both active in the same channels\.
++ bilateral\_follow - You follow each other\.
++ chat\_mentioned - You @mentioned the other user\.
++ hosted - You hosted the other user\.
++ mod\_in\_same\_channels - You are both moderators in the same channels\.
++ team - You are both on the same team on Twitch\.
++ whispered - You whispered to the other user\.
 
 The following is an example of how to use `GetFriendRecommendations`:
 
@@ -150,20 +150,20 @@ The user's Twitch ID\. If the `AZStd::string` value is empty, the friend ID for 
 No return value\.GetFriendRecommendations Callback
 
 **result \- FriendRecommendationValue**  
-Value – The friend recommendation list, which includes the following data:  
-+ Reason – The recommendation reason, which returns in the format `AZStd::string`\.
-+ User – The user information, which includes the following data:
-  + ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-  + Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-  + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-  + DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-  + Logo – The URL for the user's logo, if provided\.
-  + Name – The user's name, which returns in the format `AZStd::string`\.
-  + ProfileBanner – The URL for the user's profile banner, if provided\.
-  + ProfileBannerBackgroundColor – The URL for the user's profile banner background color, if provided\.
-  + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\. 
-  + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The friend recommendation list, which includes the following data:  
++ Reason - The recommendation reason, which returns in the format `AZStd::string`\.
++ User - The user information, which includes the following data:
+  + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
+  + Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
+  + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+  + DisplayName - The user's display name, which returns in the format `AZStd::string`\.
+  + Logo - The URL for the user's logo, if provided\.
+  + Name - The user's name, which returns in the format `AZStd::string`\.
+  + ProfileBanner - The URL for the user's profile banner, if provided\.
+  + ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
+  + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\. 
+  + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriends {#twitch-api-ebus-friends-getfriends}
 
@@ -223,22 +223,22 @@ Used to retrieve the next block of data\. When initially called, an empty string
 No return value\.GetFriends Callback
 
 **result \- GetFriendValue**  
-Value – The result of the `GetFriendReturn` call, which includes the following data:  
-+ Cursor – If a value is present, use the value to retrieve the next block of data\.
-+ Friends – The friends list, which includes the following data:
-  + CreatedDate – The date the friend was added, which displays in the ISO 8601 format\.
-  + User – The user's information, which includes the following data:
-    + ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-    + Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-    + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-    + DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-    + Logo – The URL for the user's logo, if provided\.
-    + Name – The user's name, which returns in the format `AZStd::string`\.
-    + ProfileBanner – The URL for the user's profile banner, if provided\.
-    + ProfileBannerBackgroundColor – The URL for the user's profile banner background color, if provided\.
-    + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-    + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format Twitch::ResultCode\.
+Value - The result of the `GetFriendReturn` call, which includes the following data:  
++ Cursor - If a value is present, use the value to retrieve the next block of data\.
++ Friends - The friends list, which includes the following data:
+  + CreatedDate - The date the friend was added, which displays in the ISO 8601 format\.
+  + User - The user's information, which includes the following data:
+    + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
+    + Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
+    + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+    + DisplayName - The user's display name, which returns in the format `AZStd::string`\.
+    + Logo - The URL for the user's logo, if provided\.
+    + Name - The user's name, which returns in the format `AZStd::string`\.
+    + ProfileBanner - The URL for the user's profile banner, if provided\.
+    + ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
+    + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+    + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format Twitch::ResultCode\.
 
 ## GetFriendStatus {#twitch-api-ebus-friends-getfriendstatus}
 
@@ -293,24 +293,24 @@ The Twitch ID for which to obtain status\. You must provide a valid Twitch ID\.
 No return value\.GetFriends Callback
 
 **result \- FriendStatusValue**  
-Value – The result of the `FriendStatus` call, which includes the following data:  
-+ Status – The status of the call, which can be one of the following values:
-  + friends – The users are friends\.
-  + no\_relation – The users are not friends and do not have a pending friend request\.
-  + requested\_by – The target user sent a friend request to the source user\.
-  + sent\_request – The source user sent a friend request to the target user\.
-+ User – The user's information, which includes the following data:
-  + ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-  + Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-  + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-  + DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-  + Logo – The URL for the user's logo, if provided\.
-  + Name – The user's name, which returns in the format `AZStd::string`\.
-  + ProfileBanner – The URL for the user's profile banner, if provided\.
-  + ProfileBannerBackgroundColor – The URL for the user's profile banner background color, if provided\.
-  + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-  + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format Twitch::ResultCode\.
+Value - The result of the `FriendStatus` call, which includes the following data:  
++ Status - The status of the call, which can be one of the following values:
+  + friends - The users are friends\.
+  + no\_relation - The users are not friends and do not have a pending friend request\.
+  + requested\_by - The target user sent a friend request to the source user\.
+  + sent\_request - The source user sent a friend request to the target user\.
++ User - The user's information, which includes the following data:
+  + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
+  + Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
+  + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+  + DisplayName - The user's display name, which returns in the format `AZStd::string`\.
+  + Logo - The URL for the user's logo, if provided\.
+  + Name - The user's name, which returns in the format `AZStd::string`\.
+  + ProfileBanner - The URL for the user's profile banner, if provided\.
+  + ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
+  + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+  + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format Twitch::ResultCode\.
 
 ## AcceptFriendRequest {#twitch-api-ebus-friends-acceptfriendrequest}
 
@@ -349,8 +349,8 @@ The Twitch ID of the friend who will accept the friendship\.
 No return value\.GetFriends Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## GetFriendRequests {#twitch-api-ebus-friends-getfriendrequests}
 
@@ -394,26 +394,26 @@ Used to retrieve the next block of data\. When initially called, an empty string
 No return value\.GetFriends Callback
 
 **result \- FriendRequestValue**  
-Value – The result of the `FriendRequestResult` call, which includes the following data:  
-+ Total – The total number of requests\.
-+ Cursor – If a value is present, use the value to retrieve the next block of data\.
-+ Requests – The friends request list, which includes the following data:
-  + IsRecommended – If true, the friend is recommended\.
-  + IsStranger – If true, the friend is a stranger\.
-  + NonStrangerReason – The reason for the request\.
-  + RequestedDate – The date the request was made, which displays in the ISO 8601 format\.
-  + User – The user's information, which includes the following data:
-    + ID – The Twitch user ID, which returns in the format `AZStd::string`\.
-    + Bio – The user's description, if provided\. This value returns in the format `AZStd::string`\.
-    + CreatedDate – The date the user was created, which displays in the ISO 8601 format\.
-    + DisplayName – The user's display name, which returns in the format `AZStd::string`\.
-    + Logo – The URL for the user's logo, if provided\.
-    + Name – The user's name, which returns in the format `AZStd::string`\.
-    + ProfileBanner – The URL for the user's profile banner, if provided\.
-    + ProfileBannerBackgroundColor – The URL for the user's profile banner background color, if provided\.
-    + Type – The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
-    + UpdatedDate – The date the user was last updated, which displays in the ISO 8601 format\.
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The result of the `FriendRequestResult` call, which includes the following data:  
++ Total - The total number of requests\.
++ Cursor - If a value is present, use the value to retrieve the next block of data\.
++ Requests - The friends request list, which includes the following data:
+  + IsRecommended - If true, the friend is recommended\.
+  + IsStranger - If true, the friend is a stranger\.
+  + NonStrangerReason - The reason for the request\.
+  + RequestedDate - The date the request was made, which displays in the ISO 8601 format\.
+  + User - The user's information, which includes the following data:
+    + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
+    + Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
+    + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
+    + DisplayName - The user's display name, which returns in the format `AZStd::string`\.
+    + Logo - The URL for the user's logo, if provided\.
+    + Name - The user's name, which returns in the format `AZStd::string`\.
+    + ProfileBanner - The URL for the user's profile banner, if provided\.
+    + ProfileBannerBackgroundColor - The URL for the user's profile banner background color, if provided\.
+    + Type - The type can be staff, user, partner, moderator, or administrator\. This list is not absolute and may be updated with additional values\.
+    + UpdatedDate - The date the user was last updated, which displays in the ISO 8601 format\.
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## CreateFriendRequest {#twitch-api-ebus-friends-createfriendrequest}
 
@@ -452,8 +452,8 @@ The Twitch ID of the user to whom you want to send a request\.
 No return value\.CreateFriendRequest Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## DeclineFriendRequest {#twitch-api-ebus-friends-declinefriendrequest}
 
@@ -492,5 +492,5 @@ The Twitch ID of the user to whom you want to send a request\.
 No return value\.DeclineFriendRequest Callback
 
 **result \- Int64Value**  
-Value – The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
-Result – One of the result code values, which returns in the format `Twitch::ResultCode`\.
+Value - The HTTP response code for this call\. If successful, the value should be 201 \(`HttpResponseCode::CREATED`\)\.  
+Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

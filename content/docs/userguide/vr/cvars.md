@@ -6,7 +6,7 @@ title: Configuring Required Console Variables
 ---
 # Configuring Required Console Variables {#virtual-reality-cvars}
 
-Console variables – Console variables \(CVARs\) are a type of variable that you can manipulate in Lumberyard's console interface\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
+Console variables - Console variables \(CVARs\) are a type of variable that you can manipulate in Lumberyard's console interface\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 You must set the following console variable to enable your project's capability to support the head\-mounted display\.
 

@@ -36,7 +36,7 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/u
 
 1. In the **Add Message** dialog box, provide the following information:
    + For **Message Content**, enter a message that to be displayed to the players of your game\.
-   + For **Scheduling**, clear the **No Start** and/or **No End** check boxes and specify the **Start** and/or **End** time during which players see the message\. Currently, all times are in UTC\.** **The message is shown to players that have a game clock that is between –12 hours or \+12 hours of the set UTC time\.
+   + For **Scheduling**, clear the **No Start** and/or **No End** check boxes and specify the **Start** and/or **End** time during which players see the message\. Currently, all times are in UTC\.** **The message is shown to players that have a game clock that is between -12 hours or \+12 hours of the set UTC time\.
    + To make the message permanent, specify both **No Start** and **No End**\.
    + If you have more than one message, you can use the **Priority** option to specify the priority of each\. By default, 0 is the highest priority\. The game client determines how to use the priority value\. If you have only one active message, the priority has no effect\.  
 ![\[Add message\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-3.png)
@@ -45,9 +45,9 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/u
 ![\[Message categories\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-4.png)
 
    The message of the day dashboard has three categories: **Active Messages**, **Planned Messages**, and **Expired Messages**\.
-   + **Active Messages** – The currently active messages that are returned by the game client\.
-   + **Planned Messages** – Messages that are not currently active but will be active at the planned start date and time\.
-   + **Expired Messages **– Outdated messages, which are stored in the **History** tab so that you can edit and reuse them if you want\.
+   + **Active Messages** - The currently active messages that are returned by the game client\.
+   + **Planned Messages** - Messages that are not currently active but will be active at the planned start date and time\.
+   + **Expired Messages **- Outdated messages, which are stored in the **History** tab so that you can edit and reuse them if you want\.
 
 You can now use the message in your game\.
 

@@ -14,10 +14,10 @@ This component is typically used with a mask component, which hides the content 
 To see in\-game examples of completed canvases with the **ScrollBox** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBox**\. You can view examples of different scrolling options, snapping options, interactions between scroll boxes and other components, and nested scroll boxes\. Press **Esc** to exit the game\.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\ScrollBox` directory\. You can open the following canvases:
-+ `Interactions.uicanvas` – Examples of interactions between scroll boxes and other interactive components
-+ `Nested.uicanvas` – Examples of nesting scroll boxes
-+ `Scrolling.uicanvas` – Examples of different scrolling options such as horizontal, vertical, 2D, and unconstrained
-+ `Snapping.uicanvas` – Examples of different snapping options
++ `Interactions.uicanvas` - Examples of interactions between scroll boxes and other interactive components
++ `Nested.uicanvas` - Examples of nesting scroll boxes
++ `Scrolling.uicanvas` - Examples of different scrolling options such as horizontal, vertical, 2D, and unconstrained
++ `Snapping.uicanvas` - Examples of different snapping options
 
 You can add a prebuilt **ScrollBox** element from the slice library\. When you do this, a mask, content, and image elements are automatically created and nested in your **Hierarchy** pane\.
 
@@ -42,13 +42,13 @@ Enter the initial offset value of the content element's pivot point from the par
 Select the check box to prevent content from scrolling beyond its edges\.  
 **Content**, **Snap**  
 Select a snapping mode:  
-+ **None** – No snapping\.
++ **None** - No snapping\.
 
    
-+ **To children** – When a drag motion is released, the content element moves in such a way that the closest child element's pivot point is snapped to the parent element's pivot point\. You can use this, for example, to center a child element in the scroll box when the dragging stops\.
++ **To children** - When a drag motion is released, the content element moves in such a way that the closest child element's pivot point is snapped to the parent element's pivot point\. You can use this, for example, to center a child element in the scroll box when the dragging stops\.
 
    
-+ **To grid** – When a drag motion is released, the content element's pivot point is snapped to a multiple of the grid spacing from the parent element's pivot point\.
++ **To grid** - When a drag motion is released, the content element's pivot point is snapped to a multiple of the grid spacing from the parent element's pivot point\.
 
      
 **Horizontal scrolling**, **Enabled**  
@@ -57,13 +57,13 @@ Select the check box to enable content to scroll horizontally\. If the element, 
 Select an element from the list to provide the horizontal scroll bar associated with the scroll box\.  
 **Horizontal scrolling**, **Scrollbar visibility**  
 Select the visibility behavior of the horizontal scroll bar:  
-+ **Always visible** – Scroll bar is always visible\.
++ **Always visible** - Scroll bar is always visible\.
 
    
-+ **Auto hide** – Scroll bar is automatically hidden when not needed\. Scroll bar is resized according to visibility of the vertical scroll bar\.
++ **Auto hide** - Scroll bar is automatically hidden when not needed\. Scroll bar is resized according to visibility of the vertical scroll bar\.
 
    
-+ **Auto hide and resize view area** – Same as **Auto hide**, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
++ **Auto hide and resize view area** - Same as **Auto hide**, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
 
      
 **Vertical scrolling**, **Enabled**  
@@ -72,13 +72,13 @@ Select the check box to enable content to scroll vertically\. If the element, or
 Select an element from the list to provide the vertical scroll bar associated with the scroll box\.  
 **Vertical scrolling**, **Scrollbar visibility**  
 Select the visibility behavior of the vertical scroll bar:  
-+ **Always visible** – Scroll bar is always visible\.
++ **Always visible** - Scroll bar is always visible\.
 
    
-+ **Auto hide** – Scroll bar is automatically hidden when not needed\. Scroll bar is resized according to visibility of the vertical scroll bar\.
++ **Auto hide** - Scroll bar is automatically hidden when not needed\. Scroll bar is resized according to visibility of the vertical scroll bar\.
 
    
-+ **Auto hide and resize view area** – Same as auto hide, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
++ **Auto hide and resize view area** - Same as auto hide, but the view area is also resized smaller when the scroll bar is visible and larger when the scroll bar is hidden\.
 
      
 **Actions**, **Change**  

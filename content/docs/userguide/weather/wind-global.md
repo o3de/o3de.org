@@ -19,13 +19,13 @@ Global wind and breezes affect everything in your level, such as all vegetation\
 1. In the **Rollup Bar**, under **Terrain**, click **Environment**\. 
 
 1. Under the **EnvState** section, adjust values of the following parameters:
-   + **Wind vector** – Speed and wind direction vector\. Positive x values are east; positive y values are north\.
-   + **Breeze generation** – Enables breezes\.
-   + **Breeze strength** – Controls the intensity of the breeze\.
-   + **Breeze movement speed** – Controls the velocity of the breeze\. Use it to produce short, rapid gusts of wind\.
-   + **Breeze variation** – Varies breeze speed, strength, and size\.
-   + **Breeze life time** – Sets the duration of each breeze, in seconds\.
-   + **Breeze count** – Sets the number of breezes generated per instance\.
-   + **Breeze spawn radius** – Radius of breeze travel\. 
-   + **Breeze spread** – Determines the degree of variation in breeze direction\.
-   + **Breeze radius** – Sets the radius of breeze influence\.
+   + **Wind vector** - Speed and wind direction vector\. Positive x values are east; positive y values are north\.
+   + **Breeze generation** - Enables breezes\.
+   + **Breeze strength** - Controls the intensity of the breeze\.
+   + **Breeze movement speed** - Controls the velocity of the breeze\. Use it to produce short, rapid gusts of wind\.
+   + **Breeze variation** - Varies breeze speed, strength, and size\.
+   + **Breeze life time** - Sets the duration of each breeze, in seconds\.
+   + **Breeze count** - Sets the number of breezes generated per instance\.
+   + **Breeze spawn radius** - Radius of breeze travel\. 
+   + **Breeze spread** - Determines the degree of variation in breeze direction\.
+   + **Breeze radius** - Sets the radius of breeze influence\.

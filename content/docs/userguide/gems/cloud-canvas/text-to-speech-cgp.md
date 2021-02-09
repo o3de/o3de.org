@@ -55,10 +55,10 @@ A text\-to\-speech character is defined by a name that you give the character, t
 ![\[Choose New Character in the Cloud Gem Portal\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-3.png)
 
 1. In the fields that appear, specify the following for the character\.
-   + **Name** – By default, the new character is named *NewCharacter\_*<total number of rows in the characters table>**\. Type a name for the character that has meaning in the context of your game\.
-   + **Language** – Choose the language that the character uses\. You can choose from more than 20 languages\. For a complete list of Amazon Polly languages and their corresponding voices, see [Available Voices](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html) in the *Amazon Polly Developer Guide*\.
-   + **Voice** – Choose the name of the Amazon Polly male or female voice that you want for your character\.
-   + **Speech Marks** – You can select the following options\. These options are enabled by default\. 
+   + **Name** - By default, the new character is named *NewCharacter\_*<total number of rows in the characters table>**\. Type a name for the character that has meaning in the context of your game\.
+   + **Language** - Choose the language that the character uses\. You can choose from more than 20 languages\. For a complete list of Amazon Polly languages and their corresponding voices, see [Available Voices](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html) in the *Amazon Polly Developer Guide*\.
+   + **Voice** - Choose the name of the Amazon Polly male or female voice that you want for your character\.
+   + **Speech Marks** - You can select the following options\. These options are enabled by default\. 
      + **SSML** to generate speech synthesis markup language tags\.
      + Select **Viseme** to generate lip syncing information for the speech lines that you create\.
      +  Select **Sentence/Word** to generate closed captioning information\.
@@ -102,10 +102,10 @@ You can create speech lines one at a time in the Cloud Gem Portal\.
 ![\[Adding a speech line for your character in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-text-to-speech-cgp-6.png)
 
 1. Specify the following for the speech line\.
-   + **Character** – Choose the character that will speak the speech line\. You can choose from the characters that you created on the **Characters** tab\.
-   + **Speech Line** – Replace the default *NewSpeechLine\_*<total number of rows in table>** with the text that you want to convert to speech\.
-   + **Preview** – Choose the **Preview** icon to hear an audio preview of your text\. If you selected the **Viseme** option for the character that you are using, the facial rig performs lip synchronization as well\.
-   + **Tags** – You can use custom tags to categorize your speech lines\. You can use these tags to filter the speech lines that you want to view in the Cloud Gem Portal\. To add one or more tags, enter the tag name and then press **Enter** after each tag\. 
+   + **Character** - Choose the character that will speak the speech line\. You can choose from the characters that you created on the **Characters** tab\.
+   + **Speech Line** - Replace the default *NewSpeechLine\_*<total number of rows in table>** with the text that you want to convert to speech\.
+   + **Preview** - Choose the **Preview** icon to hear an audio preview of your text\. If you selected the **Viseme** option for the character that you are using, the facial rig performs lip synchronization as well\.
+   + **Tags** - You can use custom tags to categorize your speech lines\. You can use these tags to filter the speech lines that you want to view in the Cloud Gem Portal\. To add one or more tags, enter the tag name and then press **Enter** after each tag\. 
 **Warning**  
 Do not store sensitive customer information in speech lines or character definitions\.
 

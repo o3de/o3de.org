@@ -60,7 +60,7 @@ The number of unique characters in `AAAA` is 1, and the length of the string is 
 
 AABB
 
-Because only one character slot exists in the texture, it can't store both the glyphs for upper\-case ‘A’ and upper\-case ‘B’ and render them both in a frame\. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters\.
+Because only one character slot exists in the texture, it can't store both the glyphs for upper\-case 'A' and upper\-case 'B' and render them both in a frame\. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters\.
 
 Here is another example\.
 
@@ -100,7 +100,7 @@ Knowing these calculations helps you determine the right font texture size for t
    + Texture width = Font size \* `widthslots`
    + Texture height = Font size \* `heightslots`
 **Note**  
-The default value for `widthslots` and `heightslots` is *16* and *8*, respectively, which gives 128 total character slots\. If you need to render more than 128 unique characters to the screen in a single frame—for example, if your game supports Chinese, Japanese, or Korean text— adjust these values accordingly\.
+The default value for `widthslots` and `heightslots` is *16* and *8*, respectively, which gives 128 total character slots\. If you need to render more than 128 unique characters to the screen in a single frame-for example, if your game supports Chinese, Japanese, or Korean text- adjust these values accordingly\.
 
 1. Edit your font `.font` to use the calculated font texture size\.
 

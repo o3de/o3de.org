@@ -73,11 +73,11 @@ You can use the context menu in the **Properties** panel to add, remove, cut, co
 1. In the **Hierarchy** panel, select the UI element\.
 
 1. In the **Properties** panel, either right\-click the component or click the menu button in the header\. Then choose one of the following:
-   + **Add component** – Add a component to the element
-   + **Delete component** – Remove a component from the element
-   + **Cut component** – Cut a component from one UI element to be pasted onto a different UI element
-   + **Copy component** – Copy a component from one UI element to be pasted onto a different UI element
-   + **Paste component** – Paste a component copied from one UI element onto a different UI element
+   + **Add component** - Add a component to the element
+   + **Delete component** - Remove a component from the element
+   + **Cut component** - Cut a component from one UI element to be pasted onto a different UI element
+   + **Copy component** - Copy a component from one UI element to be pasted onto a different UI element
+   + **Paste component** - Paste a component copied from one UI element onto a different UI element
 
 You can also use the context menu to act on multiple components at once\.
 

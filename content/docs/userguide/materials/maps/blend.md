@@ -51,31 +51,31 @@ You can set the following parameters for your blend layer\.
 
 **Blend Factor**  
 Control visibility of the blend layer, with a bias toward black or white  
-Valid values: 0 – 16
+Valid values: 0 - 16
 
 **Blend Falloff**  
 Control the fall off of the blend range  
-Valid values: 0\.1 – 128
+Valid values: 0\.1 - 128
 
 **Blend Layer 2 Tiling**  
 Control tiling of the second blend layer  
-Valid values: 0 – 20  
+Valid values: 0 - 20  
 Default: 1
 
 **Blend Layer 2 Diffuse \(Tint\)**  
 Base color tint for the second layer \(RGB\)  
-Valid values: 0 – 255
+Valid values: 0 - 255
 
 **Blend Layer 2 Smoothness**  
 Sharpness of specular reflection for the second layer  
-Valid values: 0 – 255  
+Valid values: 0 - 255  
 Default: 10
 
 **Blend Layer 2 Specular**  
 Reflective brightness and color for the second layer \(RGB\)  
-Valid values: 0 – 255
+Valid values: 0 - 255
 
 **Blend Mask Tiling**  
 Control tiling of the blend map  
-Valid values: 0\.05 – 20  
+Valid values: 0\.05 - 20  
 Default: 1

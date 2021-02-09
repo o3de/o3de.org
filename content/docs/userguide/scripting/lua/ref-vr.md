@@ -30,7 +30,7 @@ Contains functions that return information about an HMD and control its pose and
 | Function | Description | 
 | --- | --- | 
 | Bool IsInitialized\(\) | Returns true if an HMD has successfully initialized on the bus\. Returns false if no HMD is connected or failed to initialize\. | 
-| Void RecenterPose\(\) | Causes the direction that the HMD is currently facing to be considered forward’\. | 
+| Void RecenterPose\(\) | Causes the direction that the HMD is currently facing to be considered forward'\. | 
 | Void OutputHMDInfo\(\) | Outputs the information about the currently connected HMD \(contained in the HMDDeviceInfo object\) to the console and log file\. | 
 | Void SetTrackingLevel\(int\) | Sets the tracking level for the HMD\. 0 specifies head level tracking \(the player is standing\); 1 is floor level tracking \(the player is seated or on the floor\)\. | 
 | HMDDeviceInfo GetDeviceInfo\(\) | Returns an HMDDeviceInfo object that contains device information about a connected HMD\. For more information, see [struct HMDDeviceInfo](#lua-scripting-ref-vr-struct-hmddeviceinfo)\. | 

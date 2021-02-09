@@ -49,10 +49,10 @@ The following table provides the valid attributes for the different build module
 ## Platform and Configuration Targeting {#platform-configuration-targeting}
 
 If allowed \(refer to the third column in the table above\), you can set an attribute value to apply only under certain target platforms and configurations\. Each attribute can be universal for all builds or targeted specifically to a platform/configuration combination:
-+ **\[Attribute\]** – Applies to any target platform/configuration for the attribute
-+ **\[target\_platform\]\_\[attribute\]** – Applies to any configuration for a specific target platform for the attribute
-+ **\[configuration\]\_\[attribute\]** – Applies to a specific configuration for any target platform for the attribute
-+ **\[target\_platform\]\_\[configuration\]\_\[attribute\]** – Applies to a specific target platform and configuration for the attribute
++ **\[Attribute\]** - Applies to any target platform/configuration for the attribute
++ **\[target\_platform\]\_\[attribute\]** - Applies to any configuration for a specific target platform for the attribute
++ **\[configuration\]\_\[attribute\]** - Applies to a specific configuration for any target platform for the attribute
++ **\[target\_platform\]\_\[configuration\]\_\[attribute\]** - Applies to a specific target platform and configuration for the attribute
 
 ## Features {#waf-project-features}
 

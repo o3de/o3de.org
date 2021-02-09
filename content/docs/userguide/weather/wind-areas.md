@@ -22,11 +22,11 @@ Wind areas define a location within which objects experience wind\. If no direct
 1. Drag to place the entity in your level\. A bounding box with direction areas appears\.
 
 1. Under **Entity Properties**, adjust values of the following parameters:
-   + **Active** – Enables or disables wind inside the area\.
-   + **AirDensity** – If greater than 0, causes objects moving through the air to slow down\.
-   + **AirResistance** – If greater than 0, causes lightweight objects to experience buoyancy\.
-   + **Ellipsoidal** – Specifies an ellipsoidal drop off in air speed\.
-   + **FalloffInner** – Sets the distance at which distance\-based air speed begins to drop off\.
-   + **Speed** – Sets the wind speed\.
-   + **Dir** – Sets the wind direction\. 
-   + **Size** – Sets the size of the wind area\. 
+   + **Active** - Enables or disables wind inside the area\.
+   + **AirDensity** - If greater than 0, causes objects moving through the air to slow down\.
+   + **AirResistance** - If greater than 0, causes lightweight objects to experience buoyancy\.
+   + **Ellipsoidal** - Specifies an ellipsoidal drop off in air speed\.
+   + **FalloffInner** - Sets the distance at which distance\-based air speed begins to drop off\.
+   + **Speed** - Sets the wind speed\.
+   + **Dir** - Sets the wind direction\. 
+   + **Size** - Sets the size of the wind area\. 

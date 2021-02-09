@@ -135,6 +135,6 @@ The Waf integration provides additional options that can be specified in a list 
 'options' : ['PrintOutputRedirectionFile'],
 ```
 
-`PrintOutputRedirectionFile` – This option, when used in combination with the `-output-redirection=file` parameter, directs Waf to provide AZ Code Generator a path to save extra output during code generation\. The path to this file is listed for each task during the build if errors occur\.
+`PrintOutputRedirectionFile` - This option, when used in combination with the `-output-redirection=file` parameter, directs Waf to provide AZ Code Generator a path to save extra output during code generation\. The path to this file is listed for each task during the build if errors occur\.
 
-`Profile` – This option enables profiler timings of clang parsing and script execution within the AZ Code Generator tool\.
+`Profile` - This option enables profiler timings of clang parsing and script execution within the AZ Code Generator tool\.

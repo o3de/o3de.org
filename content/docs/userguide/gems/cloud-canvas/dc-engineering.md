@@ -53,9 +53,9 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       manifestName)
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`manifestName (char*)` – Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
+`manifestName (char*)` - Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
 
 **Requesting pak files without using manifest**  
 Use the following API calls to request pak files without using a manifest:
@@ -68,11 +68,11 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       autoDownload);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`uploadRequests (AZStd::vector<AZStd::string>)` – List of bucket keys\.
+`uploadRequests (AZStd::vector<AZStd::string>)` - List of bucket keys\.
 
-`autoDownload (bool)` – Specify `true` to download files automatically\.
+`autoDownload (bool)` - Specify `true` to download files automatically\.
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
@@ -82,11 +82,11 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       autoDownload);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`fileName (char*)` – Name of the pak file to request\.
+`fileName (char*)` - Name of the pak file to request\.
 
-`autoDownload (bool)` – Specify `true` to download files automatically\.
+`autoDownload (bool)` - Specify `true` to download files automatically\.
 
 ### Versioning Support {#cloud-canvas-cloud-gem-dc-engineering-ebus-events-versioning}
 
@@ -101,11 +101,11 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       versionId);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`manifestName (char*)` – Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
+`manifestName (char*)` - Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
 
-`versionId (char*)` – Version ID of the manifest\. Uses the current active \(public\) version if not specified\.
+`versionId (char*)` - Version ID of the manifest\. Uses the current active \(public\) version if not specified\.
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
@@ -116,13 +116,13 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       versionId);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`fileName (char*)` – Name of the pak file to request\.
+`fileName (char*)` - Name of the pak file to request\.
 
-`outputFile (char*)` – Name of the output pak file\.
+`outputFile (char*)` - Name of the output pak file\.
 
-`versionId (char*)` – Version ID of the file\. Uses the current active \(public\) version if not specified\.
+`versionId (char*)` - Version ID of the file\. Uses the current active \(public\) version if not specified\.
 
 **Requesting pak files without using manifest**  
 Use the following API calls to request files without using a manifest when versioning is enabled:
@@ -135,11 +135,11 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       autoDownload);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`requestMap (AZStd::unordered_map<AZStd::string, AZStd::string>)` – Map of file names to file version IDs\.
+`requestMap (AZStd::unordered_map<AZStd::string, AZStd::string>)` - Map of file names to file version IDs\.
 
-`autoDownload (bool)` – Specify `true` to download files automatically\.
+`autoDownload (bool)` - Specify `true` to download files automatically\.
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
@@ -150,13 +150,13 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       versionId);
 ```
 
-`requestSuccess (bool)` – Specifies whether the request was successfully sent\.
+`requestSuccess (bool)` - Specifies whether the request was successfully sent\.
 
-`fileName (char*)` – Name of the pak file to request\.
+`fileName (char*)` - Name of the pak file to request\.
 
-`autoDownload (bool)` – Specify `true` to download files automatically\.
+`autoDownload (bool)` - Specify `true` to download files automatically\.
 
-`versionId (char*)` – Version ID of the file\. Uses the current active \(public\) version if not specified\.
+`versionId (char*)` - Version ID of the file\. Uses the current active \(public\) version if not specified\.
 
 ### Manifest Received {#cloud-canvas-cloud-gem-dc-engineering-manifest-received}
 
@@ -219,7 +219,7 @@ Using this deployment tag will add a few more AWS resources to your deployment s
 
 ### Create and upload CloudFront key pairs {#cloud-canvas-cloud-gem-dc-engineering-cloudfront-upload}
 
-Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies—your trusted signers—must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
+Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies-your trusted signers-must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
 
 **Note that IAM users can't create Amazon CloudFront key pairs\. You must log in using root credentials to create key pairs\. To learn more about the root credentials, read [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)\.**
 

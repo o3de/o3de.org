@@ -4,7 +4,7 @@ title: Direct Access to EBus Handlers
 ---
 # Direct Access to EBus Handlers {#ebus-handlers-direct-access}
 
-At run time, EBuses form a communication backbone between a component and other noncomponent subsystems\. In a nontrivial application, EBus activity can consume a substantial amount of CPU and memory usage\. On data\-cache \(D\-Cache\)–sensitive devices such as consoles, the number of data lookups on each EBus call can potentially degrade performance\. To reduce the number of data lookups, you can use a pointer to the EBus handler instead of calling the EBus\.
+At run time, EBuses form a communication backbone between a component and other noncomponent subsystems\. In a nontrivial application, EBus activity can consume a substantial amount of CPU and memory usage\. On data\-cache \(D\-Cache\)-sensitive devices such as consoles, the number of data lookups on each EBus call can potentially degrade performance\. To reduce the number of data lookups, you can use a pointer to the EBus handler instead of calling the EBus\.
 
 The result of an EBus interaction is identical to a virtual function call on an EBus handler\. As a result, you can implement this approach by getting a pointer directly to the handler at initialization time\. Later, at run time, you make a direct call to the handler's function\. Because you know in advance whether or not a handler pointer is null, you do not have to initialize a request bus return value every time\.
 

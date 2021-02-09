@@ -47,12 +47,12 @@ See the following screen fading in a game\.
 ### Color Property Behavior {#color-property-behavior}
 
 The following table shows the actual color values that are blended to cause the fading transition\.
-+ **Fading** – Refers to whether a fade\-in or fade\-out effect was triggered\.
-+ **Use Current Color** – The node's **Use Current Color** input setting\.
-+ **Start Color** – The color used to render the overlay at the beginning of the transition\.
-+ **Final Color** – The color used at the end of the transition\.
-+ **Color** – The node's **Color** input setting\.
-+ **Current Color** – The color that the fader actively renders, including the alpha channel\. This is generally whatever color is left over from prior fading activity\.
++ **Fading** - Refers to whether a fade\-in or fade\-out effect was triggered\.
++ **Use Current Color** - The node's **Use Current Color** input setting\.
++ **Start Color** - The color used to render the overlay at the beginning of the transition\.
++ **Final Color** - The color used at the end of the transition\.
++ **Color** - The node's **Color** input setting\.
++ **Current Color** - The color that the fader actively renders, including the alpha channel\. This is generally whatever color is left over from prior fading activity\.
 
 
 | Fading | Use Current Color Input | Start Color | Final Color | 

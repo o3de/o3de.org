@@ -27,7 +27,7 @@ Primary highlight color depends on the diffuse color, whereas the secondary high
 Default value: 217,217,217
 
 **Secondary Shift**  
-Allows the secondary highlight to be shifted over the surface of the hair mesh\. Make sure it works with the primary highlight, the position of which can’t be shifted\.  
+Allows the secondary highlight to be shifted over the surface of the hair mesh\. Make sure it works with the primary highlight, the position of which can't be shifted\.  
 Default value: 0\.1
 
 **Secondary Width**  

@@ -69,11 +69,11 @@ Notice the declaration of `MarshalSize` above\. `WriteBuffer` supports the conce
 
 Write buffers are backed by the following three types of allocation schemes:
 
-**Dynamic** – Dynamically allocated and automatically grown
+**Dynamic** - Dynamically allocated and automatically grown
 
-**Static** – Fixed size, allocated on the stack
+**Static** - Fixed size, allocated on the stack
 
-**Static In Place** – Uses another buffer as its backing store
+**Static In Place** - Uses another buffer as its backing store
 
 By default, the `write` function uses the default marshaler for the data type, but you can override the marshaler to create a custom marshaler\.
 
@@ -95,7 +95,7 @@ wb.Write(1.0f, HalfMarshaler());
 
 ### Read Buffers {#network-marshalling-read-buffers}
 
-Read buffers have built\-in overflow detection and do not read any data fields after the end of the buffer has been reached\. You can check this by looking at the return value of the `Read` method\. Note that if data isn’t read for a given value, then the value is left uninitialized\.
+Read buffers have built\-in overflow detection and do not read any data fields after the end of the buffer has been reached\. You can check this by looking at the return value of the `Read` method\. Note that if data isn't read for a given value, then the value is left uninitialized\.
 
 ## Predefined Marshalers {#network-marshalling-predefined-marshalers}
 

@@ -19,7 +19,7 @@ You can register an application in GridHub and use Profiler to capture, inspect,
 
 ## Registering Your Application {#profiler-registering-application}
 
-To enable Profiler to capture information from your application, you must first register the application in GridHub\. To do so, add `AzFramework::TargetManagementComponent` to the application’s `SystemComponent`\. 
+To enable Profiler to capture information from your application, you must first register the application in GridHub\. To do so, add `AzFramework::TargetManagementComponent` to the application's `SystemComponent`\. 
 
 **Note**: Lumberyard's built\-in applications already have this component added by default\. 
 

@@ -94,7 +94,7 @@ bool GetIsVerticalScrollingEnabled()
 
 ### GetNormalizedScrollValue {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getnormalizedscrollvalue}
 
-Returns the scroll value from 0 – 1\.
+Returns the scroll value from 0 - 1\.
 
 **Syntax**
 

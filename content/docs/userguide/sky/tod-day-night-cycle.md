@@ -30,7 +30,7 @@ The following is an example graph in the **Time of Day Editor**\.
 
    1. Click the red button to stop recording\.
 
-1. In the **Time of Day Tasks** pane, complete the following tasks as needed to export, import, and play a time\-of\-day \(day–night\) cycle\.  
+1. In the **Time of Day Tasks** pane, complete the following tasks as needed to export, import, and play a time\-of\-day \(day-night\) cycle\.  
 ****    
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sky-tod-day-night-cycle.html)
 

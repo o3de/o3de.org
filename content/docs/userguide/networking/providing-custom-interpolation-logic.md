@@ -14,7 +14,7 @@ You can add your own interpolation logic for the Transform component by using a 
 
 ## Adding Your Interpolation Mode to the Lumberyard Editor UI {#network-providing-custom-interpolation-logic-lumberyard-editor-ui}
 
-You can start from the user interface in the editor for the Transform component — specifically, with the interpolation options\. The following image shows the Transform component's **None** or **Linear** interpolation options in the Entity Inspector\.
+You can start from the user interface in the editor for the Transform component - specifically, with the interpolation options\. The following image shows the Transform component's **None** or **Linear** interpolation options in the Entity Inspector\.
 
 ![\[Position interpolation options for the Transform component\]](/images/userguide/networking/network-providing-custom-interpolation-logic-1.png)
 

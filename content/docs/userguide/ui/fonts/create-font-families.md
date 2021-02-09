@@ -21,10 +21,10 @@ The following is an example of a `.fontfamily` file\.
 ```
 
 The UI system uses the font family definitions to determine which font asset to apply when styling text\. You can combine the following types of assets:
-+ **Unstyled** – Font representing text with no styling applied\. In the preceding example, this is `myfontfamily-regular.xml`\.
-+ **Bold** – Font representing text with bold styling\.
-+ **Italic** – Font representing text with italic styling\.
-+ **Bold\-Italic** – Font representing text with both bold and italic styling\.
++ **Unstyled** - Font representing text with no styling applied\. In the preceding example, this is `myfontfamily-regular.xml`\.
++ **Bold** - Font representing text with bold styling\.
++ **Italic** - Font representing text with italic styling\.
++ **Bold\-Italic** - Font representing text with both bold and italic styling\.
 
 ## Font Family File XML {#ui-fonts-fontfamily-xml}
 
@@ -72,6 +72,6 @@ The path to the font XML, a TTF or OTF file\. The path is relative to the font f
 **Attribute**: `tags`  
 This tag is optional\. If omitted, this font file is used when no styling is applied\.  
 Values:  
-+ **b** – indicates <b> bold tag
-+ **i** – indicates <i> italic tag
-+ **b,i** – indicates when both <b> bold and <i> italic tags are applied
++ **b** - indicates <b> bold tag
++ **i** - indicates <i> italic tag
++ **b,i** - indicates when both <b> bold and <i> italic tags are applied

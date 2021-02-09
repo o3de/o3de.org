@@ -44,19 +44,19 @@ The following image shows a sample LAN lobby and its details\.
 
 ![\[Sample lobby displaying a server result\]](/images/userguide/gems/gems-system-gem-multiplayer-lobby-component.png)
 
-1. **Return** – Exits the current lobby and returns to the `SessionService` selection screen\.
+1. **Return** - Exits the current lobby and returns to the `SessionService` selection screen\.
 
-1. **Session List** – Populates with server results from a successful `GridSearch`\. This lists all of the sessions available, the name of each session, and the number of players in each session\.
+1. **Session List** - Populates with server results from a successful `GridSearch`\. This lists all of the sessions available, the name of each session, and the number of players in each session\.
 
-1. **Refresh** –Performs a `GridSearch` on the selected `SessionService` and displays the results in the session list\.
+1. **Refresh** -Performs a `GridSearch` on the selected `SessionService` and displays the results in the session list\.
 
-1. **Join** – Attempts to join the currently selected session in the session list\. If an error occurs, an error message is displayed\. If no `GridSession` has been selected, this option is disabled\.
+1. **Join** - Attempts to join the currently selected session in the session list\. If an error occurs, an error message is displayed\. If no `GridSession` has been selected, this option is disabled\.
 
-1. **Create a Server** – Use these text boxes to configure sessions\.
-   + **Server Name** – Specifies the name that will be displayed in the session list when `GridSession` instances are searched for and the created `GridSession` is returned\.
-   + **Map** – Use to specify the map to be loaded when the `GridSession` is successfully created\.
+1. **Create a Server** - Use these text boxes to configure sessions\.
+   + **Server Name** - Specifies the name that will be displayed in the session list when `GridSession` instances are searched for and the created `GridSession` is returned\.
+   + **Map** - Use to specify the map to be loaded when the `GridSession` is successfully created\.
 
-1. **Create Server** – Attempts to create a `GridSession` in the selected `SessionService`\.
+1. **Create Server** - Attempts to create a `GridSession` in the selected `SessionService`\.
 
 ## GameLift Lobby Description {#gems-system-gem-multiplayer-lobby-component-gamelift-description}
 
@@ -64,36 +64,36 @@ The following image shows a sample GameLift lobby and its details\.
 
 ![\[Sample GameLift lobby create window\]](/images/userguide/gems/gems-system-gem-multiplayer-gamelift-lobby-create-component.png)
 
-1. **Return** – Exits the current lobby and returns to the `SessionService` selection screen\.
+1. **Return** - Exits the current lobby and returns to the `SessionService` selection screen\.
 
-1. **Create Server / Join Server / FlexMatch** – Radio buttons to toggle the details window for the selected radio button\. \(Current selection = Create Server\)\.
+1. **Create Server / Join Server / FlexMatch** - Radio buttons to toggle the details window for the selected radio button\. \(Current selection = Create Server\)\.
 
 1. Use these text boxes to configure sessions:
-   + **ServerName** – Specifies the name that will be displayed in the session list when `GridSession` instances are searched for and the created `GridSession` is returned\.
-   + **Map Name** – Use to specify the map to be loaded when the `GridSession` is successfully created\.
+   + **ServerName** - Specifies the name that will be displayed in the session list when `GridSession` instances are searched for and the created `GridSession` is returned\.
+   + **Map Name** - Use to specify the map to be loaded when the `GridSession` is successfully created\.
 
 1. Need to fill only one of the below:
-   + **Queue Name** – Queue to use to create the server game session \(First priority\)\.
-   + **Fleet Id** – Fleet id to use to create the server game session \(Second priority\)\.
-   + **Alias Id** – Alias id to use to create the server game session \(Second priority\)\.
+   + **Queue Name** - Queue to use to create the server game session \(First priority\)\.
+   + **Fleet Id** - Fleet id to use to create the server game session \(Second priority\)\.
+   + **Alias Id** - Alias id to use to create the server game session \(Second priority\)\.
 
-1. **Create Server** – Attempts to create a `GameLiftSession` in the selected GameLift fleet or queue\.
+1. **Create Server** - Attempts to create a `GameLiftSession` in the selected GameLift fleet or queue\.
 
 ![\[Sample GameLift lobby join window\]](/images/userguide/gems/gems-system-gem-multiplayer-gamelift-lobby-join-component.png)
 
 1. Need to fill only one of the below:
-   + **Queue Name** – Queue to use to join a server game session \(First priority\)\.
-   + **Fleet Id** – Fleet id to use to join a server game session \(Second priority\)\.
-   + **Alias Id** – Alias id to use to join a server game session \(Second priority\)\.
+   + **Queue Name** - Queue to use to join a server game session \(First priority\)\.
+   + **Fleet Id** - Fleet id to use to join a server game session \(Second priority\)\.
+   + **Alias Id** - Alias id to use to join a server game session \(Second priority\)\.
 
-1. **SessionList** – Populates with server results from a successful `GridSearch`\. This lists all of the sessions available, the name of each session, and the number of players in each session\.
+1. **SessionList** - Populates with server results from a successful `GridSearch`\. This lists all of the sessions available, the name of each session, and the number of players in each session\.
 
-1. **Refresh** – Performs a search for available game sessions using queue, fleet or alias\. Displays the results as list in session list\.
+1. **Refresh** - Performs a search for available game sessions using queue, fleet or alias\. Displays the results as list in session list\.
 
-1. **Join** – Attempts to join the currently selected session in the session list\. If an error occurs, an error message is displayed\. If no `GridSession` has been selected, this option is disabled\.
+1. **Join** - Attempts to join the currently selected session in the session list\. If an error occurs, an error message is displayed\. If no `GridSession` has been selected, this option is disabled\.
 
 ![\[Sample GameLift lobby FlexMatch matchmaking window\]](/images/userguide/gems/gems-system-gem-multiplayer-gamelift-lobby-match-component.png)
 
-1. **Config Name** – Matchmaking configuration to use to start GameLift matchmaking\.
+1. **Config Name** - Matchmaking configuration to use to start GameLift matchmaking\.
 
-1. **Start Matchmaking** – Will call GameLift service to try and place the player in available game session based on the matchmaking config\. On success, player joins the game session\.
+1. **Start Matchmaking** - Will call GameLift service to try and place the player in available game session based on the matchmaking config\. On success, player joins the game session\.

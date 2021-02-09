@@ -37,7 +37,7 @@ Setting up the **Audio Area Environment** component requires two entities\. The 
 
 1. Click **Add Component**, **Audio**, **Audio Area Environment**\.
 
-1. Repeat steps 1 – 4 to add another entity with a **Shape** \(any\) component and a **Trigger Area** component \(located under **Scripting**\)\.
+1. Repeat steps 1 - 4 to add another entity with a **Shape** \(any\) component and a **Trigger Area** component \(located under **Scripting**\)\.
 
 1. Place and size the two entities so that the following conditions are met:
    + The second entity's shape completely encompasses the first entity's shape\.

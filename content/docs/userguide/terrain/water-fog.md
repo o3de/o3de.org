@@ -27,7 +27,7 @@ Defines how bright the fog color is\.
 **FogColorAffectedBySun**  
 Enables the [Setting Sun Parameters and Console Variables](/docs/userguide/sky/day-sun-params.md) **Sun color** parameter value to affect fog color\.  
 **FogShadowing**  
-Enables the surface of water to receive shadows\. You can control the shadow darkness\. Valid values are 0–1\.   
+Enables the surface of water to receive shadows\. You can control the shadow darkness\. Valid values are 0-1\.   
 For this parameter to function, the console variable **r\_FogShadowsWater** must be set to 1\. **FogShadowing** is only available when the **Config Spec** setting in Lumberyard Editor is set to **Very High**\.   
 In addition, if the **VolFogShadows** property is enabled in the **Terrain\\Environment** panel in **Rollup Bar**, shadow darkness is automatically set to full\. However, the fog above the water will have volumetric shadowing\.  
 **CapFogAtVolumeDepth**  
