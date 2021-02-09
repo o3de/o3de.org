@@ -20,8 +20,8 @@ For best C\+\+ practices for managing memory in Lumberyard, see [Memory Manageme
 + [Static Initialization](#memory-allocators-static-initialization)
 + [Legacy Memory Management](#memory-allocators-legacy-memory-management)
 + [Code Example: Automatic Unreflection of Module Classes](/docs/userguide/programming/memory/allocators-example-auto-unreflect.md)
-+ [HPHA Memory Debugging](/docs/userguide/programming/memory/management-debugging-hpha.md)
-+ [Overrun Detection](/docs/userguide/programming/memory/management-overrun-detection.md)
++ [HPHA Memory Debugging](/docs/user-guide/features/engine/memory/debugging.md)
++ [Overrun Detection](/docs/user-guide/features/engine/memory/overrun-detection.md)
 
 ## Manually Allocating Memory {#memory-allocators-manually-allocating-memory}
 

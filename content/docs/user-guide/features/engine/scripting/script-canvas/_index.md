@@ -29,8 +29,8 @@ In **Step 3**, AZ Code Generator is finished and the build process continues as 
 **Topics**
 + [Script Canvas Tags for AZ Code Generator](/docs/userguide/scripting/scriptcanvas/custom-nodes-az-code-generator-tags.md)
 + [Dynamic Data Slots](/docs/userguide/scripting/scriptcanvas/custom-nodes-dynamic-data.md)
-+ [Extendable Nodes](/docs/userguide/scripting/scriptcanvas/custom-nodes-extendable.md)
++ [Extendable Nodes](/docs/user-guide/features/engine/scripting/script-canvas/extensions.md)
 + [Implementing Node Behavior](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior.md)
 + [Creating Custom Script Canvas Nodes in a Gem](/docs/userguide/scripting/scriptcanvas/custom-nodes-gem.md)
-+ [Node Libraries](/docs/userguide/scripting/scriptcanvas/custom-nodes-node-libraries.md)
++ [Node Libraries](/docs/user-guide/features/engine/scripting/script-canvas/node-libraries.md)
 + [Node Contracts](/docs/userguide/scripting/scriptcanvas/custom-nodes-node-contracts.md)

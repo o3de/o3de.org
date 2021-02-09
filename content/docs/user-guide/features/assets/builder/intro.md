@@ -22,6 +22,6 @@ An output asset file produced by Python Asset Builder that can be consumed by a 
 
 There are four steps to create a Python Asset Builder:
 + [Create or modify a bootstrap script](/docs/userguide/assets/process/python/bootstrap.md) \- Add a new Python Asset Builder script to a bootstrap location\.
-+ [Register a Python Asset Builder](/docs/userguide/assets/process/python/register.md) \- Add logic to the Python Asset Builder that registers an asset builder pattern and handlers for job creation and processing\.
-+ [Create jobs with Python Asset Builder](/docs/userguide/assets/process/python/create-job.md) \- Define logic in the callback method for `CreateJobs` that responds with the job description to process source asset files\.
-+ [Process job with Python Asset Builder](/docs/userguide/assets/process/python/process-job.md) \- Define logic for `ProcessJob` to generate product asset files and dependencies\.
++ [Register a Python Asset Builder](/docs/user-guide/features/assets/python-asset-builder/register.md) \- Add logic to the Python Asset Builder that registers an asset builder pattern and handlers for job creation and processing\.
++ [Create jobs with Python Asset Builder](/docs/user-guide/features/assets/python-asset-builder) \- Define logic in the callback method for `CreateJobs` that responds with the job description to process source asset files\.
++ [Process job with Python Asset Builder](/docs/user-guide/features/assets/python-asset-builder/process-job.md) \- Define logic for `ProcessJob` to generate product asset files and dependencies\.
