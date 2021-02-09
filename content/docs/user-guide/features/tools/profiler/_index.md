@@ -13,9 +13,9 @@ Profiler is a Lumberyard tool that can capture, save, and analyze network, CPU, 
 To capture data, Profiler works with GridHub\. When you launch Profiler, GridHub launches automatically as a supporting background process\. For more information about GridHub, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
 
 **Topics**
-+ [Profiler Tutorial](/docs/userguide/debugging/profiling/using.md)
-+ [Creating and Using Annotations](/docs/userguide/debugging/profiling/annotations-creating-and-using.md)
++ [Profiler Tutorial](/docs/user-guide/features/tools/profiler/ui.md)
++ [Creating and Using Annotations](/docs/user-guide/features/tools/profiler/annotations.md)
 + [Using Profiler for Networking](/docs/userguide/networking/profilers.md)
-+ [Using the Profiler for CPU Usage](/docs/userguide/debugging/profiling/cpu.md)
-+ [Using Profiler for VRAM](/docs/userguide/debugging/profiling/vram.md)
++ [Using the Profiler for CPU Usage](/docs/user-guide/features/tools/profiler/cpu.md)
++ [Using Profiler for VRAM](/docs/user-guide/features/tools/profiler/vram.md)
 + [Using GridHub](/docs/userguide/gridhub-intro.md)

@@ -51,4 +51,4 @@ Provides an expressive **FastNoise Gradient** component that generates many proc
 
 **Topics**
 + [Dynamic Vegetation Concepts](/docs/user-guide/features/gems/vegetation/concepts.md)
-+ [Dynamic Vegetation Procedures](/docs/userguide/vegetation/procedures.md)
++ [Dynamic Vegetation Procedures](/docs/user-guide/features/gems/vegetation/procedures.md)
