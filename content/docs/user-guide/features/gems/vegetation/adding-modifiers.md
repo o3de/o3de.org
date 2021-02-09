@@ -5,9 +5,9 @@ title: Adding Scale, Rotation, and Position Modifiers
 ---
 # Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}
 
-Before you can complete this procedure, you must first [create a vegetation layer](/docs/userguide/vegetation/procedures-create-vegetation-layer.md)\.
+Before you can complete this procedure, you must first [create a vegetation layer](/docs/user-guide/features/gems/vegetation/layer.md)\.
 
-If you have [added a gradient for random selection](/docs/userguide/vegetation/procedures-gradient-random-selection.md), the vegetable selection appears random, but still produces a grid\-like pattern\. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid\.
+If you have [added a gradient for random selection](/docs/user-guide/features/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid\-like pattern\. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid\.
 
 ![\[Vegetation area before adding any modifiers.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
 

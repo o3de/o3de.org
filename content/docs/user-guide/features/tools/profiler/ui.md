@@ -107,7 +107,7 @@ You can use profiler to examine the data that you have captured\.
    Profiler instance information appears in a detail window\.
 ![\[Detail window\]](/images/userguide/profiler-inspecting-detail-window-replica-activity.png)
 
-   Individual profilers present details in different ways, so their detail windows can look different\. For information on system\-specific detail windows in Profiler, see [Using Profiler for Networking](/docs/userguide/networking/profilers.md), [Using the Profiler for CPU Usage](/docs/userguide/debugging/profiling/cpu.md), and [Using Profiler for VRAM](/docs/userguide/debugging/profiling/vram.md)\.
+   Individual profilers present details in different ways, so their detail windows can look different\. For information on system\-specific detail windows in Profiler, see [Using Profiler for Networking](/docs/userguide/networking/profilers.md), [Using the Profiler for CPU Usage](/docs/user-guide/features/tools/profiler/cpu.md), and [Using Profiler for VRAM](/docs/user-guide/features/tools/profiler/vram.md)\.
 
 1. To return to capture mode from inspection mode, click the **LIVE** tab\.
 ![\[Click LIVE to return to capture mode\]](/images/userguide/profiler-returning-to-capture-mode.png)

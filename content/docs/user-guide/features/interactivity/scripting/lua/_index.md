@@ -13,7 +13,7 @@ title: Writing Lua Scripts
 + [Network Binding Properties](/docs/userguide/scripting/lua/script-networking-binding.md)
 + [Using EBuses in Lua](/docs/user-guide/features/interactivity/scripting/lua/ebus.md)
 + [Lua Editor](/docs/user-guide/features/interactivity/scripting/lua/debugging.md)
-+ [Debugging Lua Scripts](/docs/userguide/scripting/lua/ces-debugging-scripts.md)
++ [Debugging Lua Scripts](/docs/user-guide/features/interactivity/scripting/lua/debugging-scripts.md)
 + [The Lua Environment \(Advanced\)](/docs/user-guide/features/interactivity/scripting/lua/environment.md)
 + [Component Entity Lua API Reference](/docs/userguide/scripting/lua/api.md)
 
