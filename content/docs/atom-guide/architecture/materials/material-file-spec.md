@@ -2,7 +2,7 @@
 Material files (`*.material`) are in JSON format. This section goes over the material file's JSON structure. 
 
 ## JSON Structure
-The material file's JSON structure contains the following content. 
+The material file's JSON structure contains the following elements. 
 
 <!-- ### **description** (*optional*)  
 An attribute describing the material for user understanding. 

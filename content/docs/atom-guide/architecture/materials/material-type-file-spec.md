@@ -20,7 +20,7 @@ File location: `<root folder\dev\Gems\Atom\Feature\Common\Assets\Materials\Types
     
 
 ## JSON Structure
-The material type file's JSON structure contains the following content. 
+The material type file's JSON structure contains the following elements. 
 
 <!-- ### **description**  
 An attribute describing the material for user understanding.
