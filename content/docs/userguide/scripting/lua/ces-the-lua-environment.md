@@ -1,6 +1,6 @@
 ---
 description: ' Learn about adding ScriptContext instances and using common code in
-  the &ALYlong; Lua environment. '
+  the Amazon Lumberyard Lua environment. '
 title: The Lua Environment (Advanced)
 ---
 # The Lua Environment \(Advanced\) {#lua-scripting-ces-the-lua-environment}

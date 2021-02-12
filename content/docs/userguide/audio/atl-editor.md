@@ -1,7 +1,7 @@
 ---
-description: ' Use the &audio-controls-browser; in &ALYlong; to create sound effects
+description: ' Use the Audio Controls Editor in Amazon Lumberyard to create sound effects
   for your game project. '
-title: Using the &audio-controls-browser;
+title: Using the Audio Controls Editor
 ---
 # Using the Audio Controls Editor {#audio-atl-editor}
 

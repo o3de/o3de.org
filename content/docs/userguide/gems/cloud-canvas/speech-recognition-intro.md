@@ -1,5 +1,5 @@
 ---
-description: ' Add speech recognition to your &ALYlong; game. '
+description: ' Add speech recognition to your Amazon Lumberyard game. '
 title: Speech Recognition Cloud Gem
 ---
 # Speech Recognition Cloud Gem {#cloud-canvas-cloud-gem-speech-recognition-intro}

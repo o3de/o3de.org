@@ -1,6 +1,6 @@
 ---
 description: ' Use interactive element controls to control an element while it has
-  focus in &ALY;. '
+  focus in Lumberyard. '
 title: Interactive Element Controls
 ---
 # Interactive Element Controls {#interactive-control}
@@ -8,7 +8,7 @@ title: Interactive Element Controls
 To interact with a focused element, press **Enter** on the keyboard\)\.
 
 When an element is interactive, use the following controls:
-+ **Button** and **Checkbox** - **Enter** presses the button or selects or clears the check box, and then returns to navigation automatically\. The control does not remain active after action\. 
++ **Button** and **Checkbox** - **Enter** presses the button or selects or clears the check box, and then returns to navigation automatically\. The control does not remain active after action\.
 
    
 + **Slider** and **Scrollbox** - Use arrow keys or joystick to move the slider or scroll box\. Press **Enter** to return to navigation\.

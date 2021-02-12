@@ -1,6 +1,6 @@
 ---
 description: ' Use texture atlases on UI canvases for quicker rendering of textures
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Using Texture Atlases
 ---
 # Using Texture Atlases {#ui-editor-texture-atlases}

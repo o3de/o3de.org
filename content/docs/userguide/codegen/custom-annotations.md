@@ -1,16 +1,16 @@
 ---
 description: ' Use source code annotations to pass additional data to the template
-  drivers that generate code when using &ALYlong;''s AZ Code Generator. '
+  drivers that generate code when using Amazon Lumberyard''s AZ Code Generator. '
 title: Custom Code Generator Annotations
 ---
 # Custom Code Generator Annotations {#az-code-gen-custom-annotations}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
 You can provide additional data to your template driver by attaching annotations and tags to your source code\.
 
@@ -114,7 +114,7 @@ The following example directs the AZ Code Generator utility to attach a free\-fl
 
 `AzExampleClass` - Specifies the annotation name `AzExampleClass` \(instead of `AzExample`, as in the previous example\)\.
 
-`Class_Attribute` - Causes the AZ Code Generator utility to attach the attribute to the class that contains the annotation\. The annotation belongs to the `annotations` property of the class object\. 
+`Class_Attribute` - Causes the AZ Code Generator utility to attach the attribute to the class that contains the annotation\. The annotation belongs to the `annotations` property of the class object\.
 
 `__VA_ARGS__` - Specifies additional parameters that are converted into a single string and passed into the AZ Code Generator utility for parsing\.
 
@@ -123,7 +123,7 @@ The following example directs the AZ Code Generator utility to attach a free\-fl
 Adding the new tag to the previous example produces the following code:
 
 ```
-//Class Tag Example 
+//Class Tag Example
 class ExampleClass
 {
     AzExampleClass(MyExampleClassTags::description("I am an example class!"));
@@ -195,7 +195,7 @@ Up until this point, the annotation macro outside of `AZ_CODE_GENERATOR` has bee
 
 To implement this, the example sets the macro to become `AZ_JOIN(AZ_GENERATED_,ClassName)`\. As before, `AZ_JOIN` in this example renders this as `AZ_GENERATED_CODE_ExampleClass`\. The `ClassName` parameter provides a name at compile time for the generated macro\.
 
-**Note**  
+**Note**
 It is not required that `ClassName` be the actual name of the class where the tag is used\. Other tags that use this mechanism can simply require any unique identifier\.
 
 When the previous example code is updated, the following code is produced:

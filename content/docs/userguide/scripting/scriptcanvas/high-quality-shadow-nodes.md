@@ -1,6 +1,6 @@
 ---
-description: ' Use High Quality Shadow nodes to configure shadow effects in the &ALYlong;
-  &script-canvas; editor. '
+description: ' Use High Quality Shadow nodes to configure shadow effects in the Amazon Lumberyard
+  Script Canvas editor. '
 title: High Quality Shadow
 ---
 # High Quality Shadow {#script-canvas-high-quality-shadow-nodes}

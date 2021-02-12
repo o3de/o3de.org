@@ -1,104 +1,104 @@
 ---
-description: ' Use the CPU profiler in &ALYlong; to examine CPU usage in your game
+description: ' Use the CPU profiler in Amazon Lumberyard to examine CPU usage in your game
   application. '
 title: Using the Profiler for CPU Usage
 ---
 # Using the Profiler for CPU Usage {#profiler-cpu}
 
-****  
-Profiler is in preview release and is subject to change\. 
+****
+Profiler is in preview release and is subject to change\.
 
-The CPU profiler gathers usage statistics about how long a function or method executed, how many times it was executed, who called it, and how much of a frame was spent on it\. You can combine this information to get a systemwide view of usage, or isolate particular systems by filtering for specific threads\. 
+The CPU profiler gathers usage statistics about how long a function or method executed, how many times it was executed, who called it, and how much of a frame was spent on it\. You can combine this information to get a systemwide view of usage, or isolate particular systems by filtering for specific threads\.
 
 **To use the CPU profiler**
 
-1. To open the detail view for the CPU profiler, click the **Detailed Profiling Information** icon for the **CPU** profiler instance\.   
+1. To open the detail view for the CPU profiler, click the **Detailed Profiling Information** icon for the **CPU** profiler instance\.
 ![\[CPU details icon\]](/images/userguide/profiler-cpu-details-icon.png)
 
-   The CPU details view has a graph of CPU usage, a toolbar, and a tree view of calls made in a frame\. Each call in the tree view has the same color as its corresponding line in the graph:   
+   The CPU details view has a graph of CPU usage, a toolbar, and a tree view of calls made in a frame\. Each call in the tree view has the same color as its corresponding line in the graph:
 ![\[CPU details view\]](/images/userguide/profiler-cpu-details-view.png)
 
-1. Pause your mouse on a line in the graph to see the call that the line represents and to display the specific value for the graph at the area near the cursor\.   
+1. Pause your mouse on a line in the graph to see the call that the line represents and to display the specific value for the graph at the area near the cursor\.
 ![\[Using the CPU graph\]](/images/userguide/profiler-cpu-graph-pause.png)
 
-1. To show or hide the line graph of a row in the tree, double\-click the row\.   
+1. To show or hide the line graph of a row in the tree, double\-click the row\.
 ![\[Double-click a row to show or hide its graph\]](/images/userguide/profiler-cpu-row-double-click.png)
 
 ## Understanding the Tree View {#profiler-cpu-understanding-tree-view}
 
 The CPU profiler tree view represents a call hierarchy of profiler log points \(called *hooks*\)\. A profiler hook that is active while another call is active shows as a child of the first hook\. The hooks act as a stack: The last hook that was pushed onto the stack is the parent of the hook that was pushed onto the stack before it\. The tree view has the following information:
 
-**Function**  
+**Function**
 The function declaration where the profiler data point was generated\.
 
-**Comment**  
+**Comment**
 A user\-defined message that distinguishes specific events in the same function\.
 
-**Excl\. Time \(Micro\)**  
+**Excl\. Time \(Micro\)**
 \(Exclusive time\) The time, in microseconds, spent executing this function and no other functions called by this function\.
 
-**Incl\. Time \(Micro\)**  
+**Incl\. Time \(Micro\)**
 \(Inclusive time\) The time, in microseconds, spent executing this function and other functions called by this function\.
 
-**Excl\. Pct**  
+**Excl\. Pct**
 \(Exclusive percent\) Exclusive time represented as a percent of total run time\.
 
-**Incl\. Pct**  
+**Incl\. Pct**
 \(Inclusive percent\) Inclusive time represented as a percent of total run time\.
 
-**Calls**  
+**Calls**
 The number of calls to this function\.
 
-**Child Time \(Micro\)**  
+**Child Time \(Micro\)**
 The time, in microseconds, that functions that were called by this function took to execute\.
 
-**Total Time \(Micro\)**  
+**Total Time \(Micro\)**
 A running total of the time, in microseconds, that was spent inside of this function\.
 
-**Child Calls**  
+**Child Calls**
 How many functions this function called\.
 
-**Total Calls**  
+**Total Calls**
 The running total of how many times this function was called\.
 
-**Thread ID**  
-The thread on which this function was executed 
+**Thread ID**
+The thread on which this function was executed
 
 ## Controlling the Display {#profiler-cpu-controlling-the-display}
 
-You can use the toolbar to control how the captured CPU data is displayed: 
+You can use the toolbar to control how the captured CPU data is displayed:
 
 ![\[CPU graph toolbar\]](/images/userguide/profiler-cpu-graph-toolbar-left.png)
 
-**Hide Selected**  
+**Hide Selected**
 Hide the graph of the rows selected in tree view\.
 
-**Show Selected**  
+**Show Selected**
 Show the graph of the rows selected in tree view\.
 
-**Hide All**  
+**Hide All**
 Hides the graph of all rows in the tree view\.
 
-**Show All**  
+**Show All**
 Shows the graphs of all rows in the tree view\.
 
-**Invert**  
+**Invert**
 Shows graphs for all rows in the tree view that are hidden; hides the graphs of all rows in the tree view that are showing\.
 
-**Expand Tree**  
+**Expand Tree**
 Expands all rows in the tree view hierarchy\.
 
 The right side of the toolbar offers more options:
 
 ![\[CPU graph toolbar, right\]](/images/userguide/profiler-cpu-graph-toolbar-right.png)
 
-**All Threads**  
-Use the thread selector to control which threads are shown in the tree view and in the graph:   
+**All Threads**
+Use the thread selector to control which threads are shown in the tree view and in the graph:
 
 ![\[Thread selector\]](/images/userguide/profiler-cpu-thread-selector.png)
 
-**Incl\. Time**  
-Use this selector to choose the meaning of the time displayed\.   
+**Incl\. Time**
+Use this selector to choose the meaning of the time displayed\.
 
 ![\[Time selector\]](/images/userguide/profiler-cpu-thread-incl-time.png)
 + **Incl\. Time** - \(Inclusive time\) The time spent in this function inclusively\.
@@ -109,18 +109,18 @@ Use this selector to choose the meaning of the time displayed\.
 
    
 
-***<number>* Frames**  
-Use this selector to choose how frames of history are displayed in the graph:   
+***<number>* Frames**
+Use this selector to choose how frames of history are displayed in the graph:
 
 ![\[Frame count selector\]](/images/userguide/profiler-cpu-number-of-frames-to-display.png)
 
-**Delta**  
+**Delta**
 Unused option\.
 
-**Autozoom**  
+**Autozoom**
 When selected, maintains the approximate zoom level \(number of frames displayed\) whenever the graph changes\.
 
-**Flat View**  
-Flattens the tree of function calls \(removes the hierarchical indentation\), as in the following image:   
+**Flat View**
+Flattens the tree of function calls \(removes the hierarchical indentation\), as in the following image:
 
 ![\[Flat View\]](/images/userguide/profiler-cpu-flat-view.png)

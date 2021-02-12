@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to synchronize game state by using &ALY;''s component entity
+description: ' Learn how to synchronize game state by using Lumberyard''s component entity
   system. '
 title: Synchronizing Game State Using Components
 ---

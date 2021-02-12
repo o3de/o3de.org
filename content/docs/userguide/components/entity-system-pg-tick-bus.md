@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the tick bus in &ALYlong;. '
+description: ' Learn how to use the tick bus in Amazon Lumberyard. '
 title: Tick Bus and Components
 ---
 # Tick Bus and Components {#component-entity-system-pg-tick-bus}
@@ -19,10 +19,10 @@ class NavigationComponent
     , public AZ::TickBus::Handler
 {
       ...
-      
+
     // TickBus
     virtual void OnTick(float deltaTime, AZ::ScriptTimePoint time);
-          
+
       ...
 }
 ```
@@ -42,21 +42,21 @@ AZ::TickBus::Handler::BusDisconnect();
 By default, a handler receives events based on the order in which the components are initialized\. To control the order that your component receives `OnTick` events, you can override the `GetTickOrder()` function to return a custom integer value\. The integer value determines the order in which your component is ticked relative to other components on the tick bus\. Lower values are ticked before higher values\. Any value is permitted\. For convenience, the `AZ::ComponentTickBus` enum \(`TickBus.h`\) provides some preset values\. These values are shown in the following table\.
 
 
-**Tick Order Preset Values**  
+**Tick Order Preset Values**
 
-| Name \(C\+\+\) | Name \(Lua/Script Canvas\) | Value | Description | 
-| --- | --- | --- | --- | 
-| TICK\_FIRST | TickOrder\.First | 0 | First position in the tick handler order\. | 
-| TICK\_PLACEMENT | TickOrder\.Placement | 50 | Suggested tick handler position for components that need to be early in the tick order\. | 
-| TICK\_INPUT | TickOrder\.Input | 75 | Suggested tick handler position for input components\. | 
-| TICK\_GAME | TickOrder\.Game | 80 | Suggested tick handler position for game\-related components\. | 
-| TICK\_ANIMATION | TickOrder\.Animation | 100 | Suggested tick handler position for animation components\. | 
-| TICK\_PHYSICS | TickOrder\.Physics | 200 | Suggested tick handler position for physics components\. | 
-| TICK\_ATTACHMENT | TickOrder\.Attachment | 500 | Suggested tick handler position for attachment components\. | 
-| TICK\_PRE\_RENDER | TickOrder\.PreRender | 750 | Suggested tick handler position to update render\-related data\. | 
-| TICK\_DEFAULT | TickOrder\.Default | 1000 | Default tick handler position when the handler is constructed\. | 
-| TICK\_UI | TickOrder\.UI | 2000 | Suggested tick handler position for UI components\. | 
-| TICK\_LAST | TickOrder\.Last | 100000 | Last position in the tick handler order\. | 
+| Name \(C\+\+\) | Name \(Lua/Script Canvas\) | Value | Description |
+| --- | --- | --- | --- |
+| TICK\_FIRST | TickOrder\.First | 0 | First position in the tick handler order\. |
+| TICK\_PLACEMENT | TickOrder\.Placement | 50 | Suggested tick handler position for components that need to be early in the tick order\. |
+| TICK\_INPUT | TickOrder\.Input | 75 | Suggested tick handler position for input components\. |
+| TICK\_GAME | TickOrder\.Game | 80 | Suggested tick handler position for game\-related components\. |
+| TICK\_ANIMATION | TickOrder\.Animation | 100 | Suggested tick handler position for animation components\. |
+| TICK\_PHYSICS | TickOrder\.Physics | 200 | Suggested tick handler position for physics components\. |
+| TICK\_ATTACHMENT | TickOrder\.Attachment | 500 | Suggested tick handler position for attachment components\. |
+| TICK\_PRE\_RENDER | TickOrder\.PreRender | 750 | Suggested tick handler position to update render\-related data\. |
+| TICK\_DEFAULT | TickOrder\.Default | 1000 | Default tick handler position when the handler is constructed\. |
+| TICK\_UI | TickOrder\.UI | 2000 | Suggested tick handler position for UI components\. |
+| TICK\_LAST | TickOrder\.Last | 100000 | Last position in the tick handler order\. |
 
 The following code examples show how to override the `GetTickOrder()` function in Lua and in C\+\+\.
 
@@ -75,7 +75,7 @@ int MyCppUIComponent::GetTickOrder()
 }
 ```
 
-**Note**  
+**Note**
 As of Lumberyard version 1\.11, use of the `TickEvents::m_tickOrder` variable is deprecated\. If you change the value of `m_tickOrder` instead of overriding `GetTickOrder()`, you will receive a warning\. However, your component will still tick in the appropriate order\.
 
 ## Event\-Based Programming and Event\-Based Polling: Best Practices {#component-entity-system-pg-tick-bus-event-based-programming-polling-best-practices}

@@ -1,10 +1,10 @@
 ---
-description: Learn about &ALYlong;'s localization system.
+description: Learn about Amazon Lumberyard's localization system.
 title: Localizing Game Projects
 ---
 # Localizing Game Projects {#localization-intro}
 
-You can create multiple\-language, region\-specific versions of your game using Lumberyard's localization system\. 
+You can create multiple\-language, region\-specific versions of your game using Lumberyard's localization system\.
 
 The localization system supports Unicode keyboard input support and language\-specific loading of font assets\.
 
@@ -32,14 +32,14 @@ The **Tag Definition XML** file groups localized text XML files by tag name\. It
 The following is an example of how the tag definition XML file appears:
 
 ```
-<localization> 
-	<init> 
+<localization>
+	<init>
 		<entry>text_ui_menus.xml</entry>
-	</init> 
-    <singleplayer> 
+	</init>
+    <singleplayer>
         <entry>text_ui_sp_dialog.xml</entry>
-	</singleplayer> 
-	<multiplayer> 
+	</singleplayer>
+	<multiplayer>
         <entry>text_ui_mp_dialog.xml</entry>
 	</multiplayer>
 </localization>

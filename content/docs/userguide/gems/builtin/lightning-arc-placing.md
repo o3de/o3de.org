@@ -1,15 +1,15 @@
 ---
-description: ' Specify targets where your lightning will arc in your &ALY; level. '
+description: ' Specify targets where your lightning will arc in your Lumberyard level. '
 title: Placing Lightning Arc
 ---
 # Placing Lightning Arc {#gems-system-gem-lightning-arc-placing}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 When you place a lightning arc entity, you must specify at least one target\. The lightning arcs between the lightning arc entity and each target that is linked\. The lightning arc appears in Lumberyard Editor when you turn on **AI/Physics** or enter game mode \(**Ctrl \+ G**\)\.
 
@@ -21,7 +21,7 @@ When you place a lightning arc entity, you must specify at least one target\. Th
 
 1. Under **Entity Properties**, ensure that **Active** is selected\.
 
-1. Click **AI/Physics** in the bottom toolbar\. This makes the lightning arc visible in Lumberyard Editor after you place and link the targets\.  
+1. Click **AI/Physics** in the bottom toolbar\. This makes the lightning arc visible in Lumberyard Editor after you place and link the targets\.
 ![\[Image NOT FOUND\]](/images/userguide/gems/gems-system-lightning-ai-physics.png)
 
 1. To place one or more targets, in the **Rollup Bar**'s **Objects** tab, click **AI**\. Under **Object Type**, click **Tagpoint**\.

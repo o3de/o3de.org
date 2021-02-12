@@ -1,6 +1,6 @@
 ---
 description: ' Create random distribution by using a noise gradient as a placement
-  mask for &ALYlong; dynamic vegetation. '
+  mask for Amazon Lumberyard dynamic vegetation. '
 title: Random Placement Using the Vegetation Distribution Filter
 ---
 # Random Placement Using the Vegetation Distribution Filter {#vegetation-random-distribution-placement}
@@ -21,4 +21,4 @@ Before completing the following procedure, you must have the following:
 
 1. In the **Entity Outliner**, select the **Gradient** entity\.
 
-1. \(Optional\) Adjust the values for **Threshold Min** and **Threshold Max** to specify how much of the gradient can appear in the vegetation\. 
+1. \(Optional\) Adjust the values for **Threshold Min** and **Threshold Max** to specify how much of the gradient can appear in the vegetation\.

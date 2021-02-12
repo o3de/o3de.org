@@ -1,5 +1,5 @@
 ---
-description: ' Use Microsoft Registered I/O (RIO) socket interface in &ALYlong; networking. '
+description: ' Use Microsoft Registered I/O (RIO) socket interface in Amazon Lumberyard networking. '
 title: Using Windows Registered I/O with GridMate
 ---
 # Using Windows Registered I/O with GridMate {#network-carrier-rio}
@@ -22,40 +22,40 @@ The `SocketDriver` class uses the `RIOPlatformSocketDriver` class seamlessly if 
 
 To use the `RIOPlatformSocketDriver` class, initialize a custom `SocketDriver` or `SecureSocketDriver` class and assign it to the `CarrierDesc::m_driver` field, as shown in the following example\.
 
-**Example**  
+**Example**
 
 ```
 class MyClass : public GridMate::SessionEventBus::Handler
-{  
+{
 public:
   void OnSessionDelete(GridMate::GridSession* session) override;
- 
+
 private:
   GridMate::SocketDriver* m_driver;
 };
- 
+
 void MyClass::JoinSession() {
   // ...
 
-  // Create an instance of SocketDriver that disables "full" (oversized) packets, enables cross-platform support, and 
+  // Create an instance of SocketDriver that disables "full" (oversized) packets, enables cross-platform support, and
   // enables high performance socket interfaces.
   m_driver = new GridMate::SocketDriver(false, true, true);
 
-  // Before hosting or joining a GridMate session, set the CarrierDesc::m_driver 
+  // Before hosting or joining a GridMate session, set the CarrierDesc::m_driver
   // property to the instance of SocketDriver.
   GridMate::SocketDesc carrierDesc
   carrierDesc.m_driver = m_driver;
- 
+
   // ...
 }
 
   // At the end of the GridMate session, delete the SocketDriver instance.
 void MyClass::OnSessionDelete(GridMate::GridSession* session) {
   // ...
- 
+
   delete m_driver;
   m_driver = nullptr;
- 
+
   // ...
 }
 ```

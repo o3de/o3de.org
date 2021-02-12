@@ -1,19 +1,19 @@
 ---
-description: ' Create a project for your macOS applications using &ALY; tools. '
+description: ' Create a project for your macOS applications using Lumberyard tools. '
 title: Creating a Project for Your macOS Games
 ---
 # Creating a Project for Your macOS Games {#osx-game-creating}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 The topics in [Create macOS projects in Lumberyard](/docs/userguide/macos/intro.md) demonstrate how to use the Samples Project that is included with Lumberyard to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
 
-**Note**  
+**Note**
 Ensure you have the prerequisites \(see [Create macOS projects in Lumberyard](/docs/userguide/macos/intro.md)\) and your Mac is properly set up to compile for macOS computers\.
 
 **To create a project for your macOS game**
@@ -22,14 +22,14 @@ Ensure you have the prerequisites \(see [Create macOS projects in Lumberyard](/d
 
 1. Submit the new project into your revision control system and then check out the project onto your Mac\.
 
-1. Edit the `user_settings.options` file \(located in the `lumberyard_version\dev\_WAF_` directory\) to set `enabled_game_projects` to the name of the project you created: 
+1. Edit the `user_settings.options` file \(located in the `lumberyard_version\dev\_WAF_` directory\) to set `enabled_game_projects` to the name of the project you created:
 
    ```
    [Game Projects]
    enabled_game_projects = MyProject
    ```
 
-   You can simultaneously build multiple projects by separating each project name with a comma: 
+   You can simultaneously build multiple projects by separating each project name with a comma:
 
    ```
    [Game Projects]
@@ -37,5 +37,5 @@ Ensure you have the prerequisites \(see [Create macOS projects in Lumberyard](/d
    ```
 
 1. In a command line window, configure and build your project using the instructions on the [Building macOS Games](/docs/userguide/macos/game-building.md) and [Running macOS Games](/docs/userguide/macos/game-deploying.md) pages\.
-**Note**  
+**Note**
 If you enabled multiple projects, you can switch between multiple targets in your Xcode project\.

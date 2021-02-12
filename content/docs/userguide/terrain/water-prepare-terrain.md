@@ -1,18 +1,18 @@
 ---
 description: ' Use terrain settings to create the appropriate landform for your body
-  of water in your &ALY; level. '
+  of water in your Lumberyard level. '
 title: Preparing the Terrain
 ---
 # Preparing the Terrain {#terrain-water-prepare-terrain}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
-For all water volumes such as lakes, ponds, and reservoirs, the terrain must first be lowered and sculpted to contain the body of water\. To create the bottom and walls of your body of water, you need to consider the depth, shape, and edges of your landform geography\. 
+For all water volumes such as lakes, ponds, and reservoirs, the terrain must first be lowered and sculpted to contain the body of water\. To create the bottom and walls of your body of water, you need to consider the depth, shape, and edges of your landform geography\.
 
 For rivers, see [Preparing the River Terrain](/docs/userguide/terrain/rivers-prep-terrain.md)\.
 

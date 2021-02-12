@@ -1,5 +1,5 @@
 ---
-description: ' See the following &trackview-editor; nodes in &ALYlong;. '
+description: ' See the following <guilabel>Track View</guilabel> editor nodes in Amazon Lumberyard. '
 title: Track View Editor Nodes
 ---
 # Track View Editor Nodes {#cinematics-trackview-nodes}

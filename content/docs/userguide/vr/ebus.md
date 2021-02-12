@@ -1,5 +1,5 @@
 ---
-description: ' Use EBus request bus functions for virtual reality in &ALYlong;. '
+description: ' Use EBus request bus functions for virtual reality in Amazon Lumberyard. '
 title: Using EBus Request Bus Interface for Virtual Reality
 ---
 # Using EBus Request Bus Interface for Virtual Reality {#virtual-reality-ebus}
@@ -12,11 +12,11 @@ For more information about using the EBus interface, see [Working with the Event
 
 Returns true if the renderer is rendering to the HMD\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Response**  
+**Response**
 `True` or `False`
 
-**Scriptable**  
+**Scriptable**
 Yes

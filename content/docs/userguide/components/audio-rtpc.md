@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio RTPC component to set values at runtime that produce
-  real-time tweaking of sounds in &ALYlong;. '
+  real-time tweaking of sounds in Amazon Lumberyard. '
 title: Audio Rtpc
 ---
 # Audio Rtpc {#component-audio-rtpc}
@@ -11,7 +11,7 @@ The **Audio RTPC** component provides basic [Real\-Time Parameter Control \(RTPC
 
 The **Audio RTPC** component has the following property:
 
-**Default Rtpc**  
+**Default Rtpc**
 Enter the name of the audio RTPC to use by default\. You can associate any RTPC name with the entity, typically one that is meant to affect a particular trigger\.
 
 ## EBus Request Bus Interface {#component-audio-rtpc-ebusrequest}
@@ -24,25 +24,25 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Sets the value of the default RTPC\.
 
-**Parameters**  
+**Parameters**
 `value` - Float value of the RTPC
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetRtpcValue {#rtpc-audio-ebus-setrtpcvalue}
 
 Sets the value of the specified RTPC\.
 
-**Parameters**  
-`rtpcName` - Name of the RTPC to set  
+**Parameters**
+`rtpcName` - Name of the RTPC to set
 `value` - Float value to set
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes

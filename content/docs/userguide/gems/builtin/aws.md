@@ -1,6 +1,6 @@
 ---
-description: ' Learn about using the &cloud; Gem. '
-title: '&cloud; Gem'
+description: ' Learn about using the Cloud Canvas Gem. '
+title: 'Cloud Canvas Gem'
 ---
 # Cloud Canvas Gem {#gems-system-gem-aws}
 

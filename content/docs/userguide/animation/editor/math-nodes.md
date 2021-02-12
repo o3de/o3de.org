@@ -1,6 +1,6 @@
 ---
-description: ' Use the &animation-editor; ''s math nodes to perform math operations
-  in &ALYlong;. '
+description: ' Use the Animation Editor ''s math nodes to perform math operations
+  in Amazon Lumberyard. '
 title: Using Math Nodes
 ---
 # Using Math Nodes {#animation-editor-math-nodes}
@@ -15,9 +15,9 @@ Lumberyard's **Animation Editor** features a set of math nodes that perform math
 
 ## Rotation Math 2 Node {#rotation-math}
 
-With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion)\. 
+With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion)\.
 
-This node multiplies the input rotation and the specified **Default Value** to express an output rotation\. The **Default Value** specifies the rotation of an unconnected input\. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\)\. 
+This node multiplies the input rotation and the specified **Default Value** to express an output rotation\. The **Default Value** specifies the rotation of an unconnected input\. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\)\.
 
 ![\[Example of the Rotation Math 2 node in an animation graph.\]](/images/userguide/actor-animation/rotation-math.png)
 
@@ -27,10 +27,10 @@ This node multiplies the input rotation and the specified **Default Value** to e
 
 1. Select the **RotationMath2** node\.
 
-1. In the right pane, on the **Attributes** tab,specify the **Math Function**\. You can specify the following:\.  
-**Rotate**  
-Multiplies two input quaternions or one input with the **Default Value**\.  
-**Inverse rotate**  
+1. In the right pane, on the **Attributes** tab,specify the **Math Function**\. You can specify the following:\.
+**Rotate**
+Multiplies two input quaternions or one input with the **Default Value**\.
+**Inverse rotate**
 Multiplies the **x** input with the inverse of the **y** input\. You can also use this to calculate the relative rotation of X with respect to Y\.
 
 1. If only one input rotation exists, specify the unconnected rotation values \(X, Y, Z\) for the **Default Value**\.
@@ -50,7 +50,7 @@ With the **Rotation Limit** node, you can limit an input rotation\. To do this, 
 1. Select the **RotationLimit** node\.
 
 1. IIn the right pane, on the **Attributes** tab for **Rotation limits**, enter **Min angle** and **Max angle** values for **X**, **Y**, and **Z**\.
-**Note**  
+**Note**
 The **Min angle** can't exceed the **Max angle**\. If it does, the error is displayed in red and the value doesn't commit to the graph\.
 
 1. For **Twist axis**, select the **X**, **Y**, or **Z Axis**\.
@@ -61,10 +61,10 @@ The **Min angle** can't exceed the **Max angle**\. If it does, the error is disp
 
 ## Vector Decompose Nodes {#vector-conversion}
 
-Using **Vector Decompose** nodes, you can output one or more specific values of a vector\. 
+Using **Vector Decompose** nodes, you can output one or more specific values of a vector\.
 
-**Example**  
-You have a 3D vector XYZ that indicates a position in a 3D world, but you only need its height \(Z\) for a computation\. You would input your vector into a **Vector3Decompose** node and use only the Z output for your calculation\.  
+**Example**
+You have a 3D vector XYZ that indicates a position in a 3D world, but you only need its height \(Z\) for a computation\. You would input your vector into a **Vector3Decompose** node and use only the Z output for your calculation\.
 
 ![\[Example of the Vector Decompose nodes in an animation graph.\]](/images/userguide/actor-animation/vector-decompose.png)
 
@@ -89,14 +89,14 @@ When choosing an output type, you can output from the **Float** output or the **
 The **Boolean Logic** node features a set of attributes that performs operations on boolean values\.
 
 
-****  
+****
 
-| Attribute | Description | 
-| --- | --- | 
-|  **Name**  |  Name of the node\.  | 
-|  **Logic Function**  |  You can set the following functions on boolean inputs: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/animation-editor-math-nodes.html)  | 
-|  **Default Value**  |  Used as a second value when only one input value is specified\.  | 
-|  **Float Result When True**  |  Sets a float value to output when the result of the boolean function is true \(`1`\)\. You must also use the **Float** output connector to output this value\.  | 
-|  **Float Result When False**  |  Sets a float value to output when the result of the boolean function is false \(`0`\)\. You must also use the **Float** output connector to output this value\.  | 
+| Attribute | Description |
+| --- | --- |
+|  **Name**  |  Name of the node\.  |
+|  **Logic Function**  |  You can set the following functions on boolean inputs: [\[See the AWS documentation website for more details\]](/docs/userguide/animation/editor/math-nodes)  |
+|  **Default Value**  |  Used as a second value when only one input value is specified\.  |
+|  **Float Result When True**  |  Sets a float value to output when the result of the boolean function is true \(`1`\)\. You must also use the **Float** output connector to output this value\.  |
+|  **Float Result When False**  |  Sets a float value to output when the result of the boolean function is false \(`0`\)\. You must also use the **Float** output connector to output this value\.  |
 
 ![\[Example of the Boolean Logic nodes in an animation graph.\]](/images/userguide/actor-animation/boolean-logic-node-attributes-1.png)

@@ -1,5 +1,5 @@
 ---
-description: ' Create custom events and parameters for use in &ALYlong;''s &animation-editor;. '
+description: ' Create custom events and parameters for use in Amazon Lumberyard''s Animation Editor. '
 title: Creating Custom Motion Events and Parameters Using C++
 ---
 # Creating Custom Motion Events and Parameters Using C\+\+ {#char-animation-editor-custom-events-parameters}

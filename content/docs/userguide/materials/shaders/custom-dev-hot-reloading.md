@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about hot reloading of shaders in &ALYlong;. '
+description: ' Learn more about hot reloading of shaders in Amazon Lumberyard. '
 title: Hot Reloading of Shaders
 ---
 # Hot Reloading of Shaders {#mat-shaders-custom-dev-hot-reloading}
@@ -13,5 +13,5 @@ For hot reloading to work, shader files must be copied to the appropriate locati
    sys_PakPriority=0 <!--ensures the shader files get loaded from the file system instead of from pak files>
   r_ShadersEditing=1 <!--ensures that shader code can be recompiled at runtime-->
   ```
-+ In the Console, enter `r_reloadshaders 1.` This is only required in the game executable\. In Lumberyard Editor, it will automatically reload a shader when you modify it\. 
-+ For Lumberyard, copy the shader files to the `dev\Lumberyard\Shaders` directory\. 
++ In the Console, enter `r_reloadshaders 1.` This is only required in the game executable\. In Lumberyard Editor, it will automatically reload a shader when you modify it\.
++ For Lumberyard, copy the shader files to the `dev\Lumberyard\Shaders` directory\.

@@ -1,5 +1,5 @@
 ---
-description: ' Create a level as your first step in creating a &ALY; game. '
+description: ' Create a level as your first step in creating a Lumberyard game. '
 title: Creating a New Level
 ---
 # Creating a New Level {#level-create}

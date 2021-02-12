@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to register a component during application startup in &ALYlong;. '
+description: ' Learn how to register a component during application startup in Amazon Lumberyard. '
 title: Registering Your Component
 ---
 # Registering Your Component {#component-entity-system-pg-registering-your-component}
@@ -9,7 +9,7 @@ You register a component during application startup\. You implement the registra
 The following example module creates descriptors for the components that are declared within the module\.
 
 ```
-//MyModule.cpp 
+//MyModule.cpp
 
 MyModule::MyModule()
 {

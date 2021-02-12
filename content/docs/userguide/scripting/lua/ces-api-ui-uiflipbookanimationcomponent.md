@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIFlipbookAnimationComponent to animate the display of a range
-  of cells in a sprite sheet image in &ALYlong;. '
+  of cells in a sprite sheet image in Amazon Lumberyard. '
 title: UIFlipbookAnimationComponent
 ---
 # UIFlipbookAnimationComponent {#lua-scripting-ces-api-ui-uiflipbookanimationcomponent}
@@ -105,7 +105,7 @@ void SetCurrentFrame(AZ::u32 currentFrame)
 
 Returns the first frame that is displayed within an animation loop\.
 
-Applicable only when the **Loop Type** is set to anything other than **None**\. 
+Applicable only when the **Loop Type** is set to anything other than **None**\.
 
 **Syntax**
 
@@ -117,7 +117,7 @@ AZ::u32 GetLoopStartFrame()
 
 Sets the first frame that is displayed within an animation loop\.
 
-Applicable only when the **Loop Type** is set to anything other than **None**\. 
+Applicable only when the **Loop Type** is set to anything other than **None**\.
 
 **Syntax**
 

@@ -1,6 +1,6 @@
 ---
-description: ' Use the Curve Editor in &trackview-editor; to manage animations in
-  &ALYlong;. '
+description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to manage animations in
+  Amazon Lumberyard. '
 title: Using Animation Curves
 ---
 # Using Animation Curves {#cinematics-track-view-editor-animation-curves}
@@ -15,7 +15,7 @@ The **Curve Editor** displays animations as function curves\. Each track's curve
 
 1. Select a keyframe in the timeline to view it in the **Curve Editor**\.
 
-**Note**  
+**Note**
 You can have the Track View and **Curve Editor** open simultaneously if you prefer to access both tools\.
 
 A curve has the following three parts:
@@ -44,7 +44,7 @@ See the following tips for working in the **Curve Editor**:
 + To zoom in or out, scroll the mouse wheel
 + To pan the view, click and drag the middle mouse wheel
 + To select multiple spline keys, click and drag to select the keys
-+ 
++
 
 **To adjust a spline key**
 
@@ -55,7 +55,7 @@ See the following tips for working in the **Curve Editor**:
   1. Do one of the following:
      + Drag the spline key to a different point on the timeline\.
      + Use the toolbar buttons to select a preset: auto, zero, step, or linear\.
-+ 
++
 
 **To edit multiple elements at once**
 

@@ -1,6 +1,6 @@
 ---
 description: ' Add scale, rotation, and position modifiers to change the look of your
-  dynamic vegetation in &ALYlong;. '
+  dynamic vegetation in Amazon Lumberyard. '
 title: Adding Scale, Rotation, and Position Modifiers
 ---
 # Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}
@@ -32,7 +32,7 @@ A scale modifier varies the size of the vegetation\.
 
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values\.
 
-1. In the **Vegetation Scale Modifier** component's properties, under **Gradient**, next to **Gradient Entity Id**, click the target\.  
+1. In the **Vegetation Scale Modifier** component's properties, under **Gradient**, next to **Gradient Entity Id**, click the target\.
 ![\[In the Vegetation Scale Modifier component's properties, under Gradient, next to Gradient Entity Id, click the target.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-adding-scale-modifier-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**\.
@@ -57,7 +57,7 @@ A rotation modifier varies the rotation of the vegetation\.
 
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values\.
 
-1. In the **Vegetation Rotation Modifier** component's properties, under **Rotation Z**, **Gradient**, next to **Gradient Entity Id**, click the target\.  
+1. In the **Vegetation Rotation Modifier** component's properties, under **Rotation Z**, **Gradient**, next to **Gradient Entity Id**, click the target\.
 ![\[In the Vegetation Rotation Modifier component's properties, under Rotation Z, Gradient, next to Gradient Entity Id, click the target.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-adding-rotation-modifier-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**\.
@@ -76,7 +76,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
 
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values\.
 
-1. In the **Vegetation Position Modifier** component's properties, under **Position X**, **Gradient**, next to **Gradient Entity Id**, click the target\.  
+1. In the **Vegetation Position Modifier** component's properties, under **Position X**, **Gradient**, next to **Gradient Entity Id**, click the target\.
 ![\[In the Vegetation Position Modifier component's properties, under Position X, Gradient, next to Gradient Entity Id, click the target.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**\.
@@ -85,7 +85,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
 
    The result is a slight x\-axis variation in the ranges specified \(the default is \-0\.3 to 0\.3\)\. For greater variation, modify the **Range Min** and **Range Max** values\.
 
-1. In the **Vegetation Position Modifier** component's properties, under **Position Y**, **Gradient**, next to **Gradient Entity Id**, click the target\.  
+1. In the **Vegetation Position Modifier** component's properties, under **Position Y**, **Gradient**, next to **Gradient Entity Id**, click the target\.
 ![\[In the Vegetation Position Modifier component's properties, under Position Y, Gradient, next to Gradient Entity Id, click the target.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target-y.png)
 
 1. In the **Entity Outliner**, select **Gradient**\.
@@ -95,12 +95,12 @@ A position modifier shifts each instance of vegetation by an amount that the gra
    In this procedure, you pass the same gradient signal to both the x and y modifiers, resulting in the same offset for both\. This shifts all the vegetation in a common diagonal direction instead of varying the x from the y\.
 
    You can override this by providing some additional values in the **Position Y** properties\.
-**Note**  
+**Note**
 You can also overcome this issue by using a gradient modifier on your existing gradient or by creating a separate gradient and linking to it\.
 
-1. Under **Position Y**, expand the **Advanced** header and check **Enable Transform**\.  
+1. Under **Position Y**, expand the **Advanced** header and check **Enable Transform**\.
 ![\[Under Position Y, expand the Advanced header and check Enable Transform.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-transform.png)
 
-1. To produce a swizzling effect on the y\-axis, use the following values or a variation on them\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/dynamic-vegetation-procedures-adding-modifiers.html)
+1. To produce a swizzling effect on the y\-axis, use the following values or a variation on them\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/vegetation/procedures-adding-modifiers)

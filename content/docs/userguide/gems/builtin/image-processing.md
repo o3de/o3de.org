@@ -1,6 +1,6 @@
 ---
 description: ' Use the Image Processing gem to customize and process image files and
-  textures in &ALYlong;. '
+  textures in Amazon Lumberyard. '
 title: Image Processing
 ---
 # Image Processing {#gems-system-gem-image-processing}

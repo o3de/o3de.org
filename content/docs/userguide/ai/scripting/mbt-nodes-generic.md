@@ -1,5 +1,5 @@
 ---
-description: ' See the following generic nodes for the AI system in &ALYlong;. '
+description: ' See the following generic nodes for the AI system in Amazon Lumberyard. '
 title: Generic Nodes
 ---
 # Generic Nodes {#ai-scripting-mbt-nodes-generic}
@@ -8,11 +8,11 @@ These nodes provide the basic functionality of MBT\.
 
 ## Loop {#ai-scripting-mbt-nodes-generic-loop}
 
- Executes a single child node a specified number of times or until the child fails its execution\. 
+ Executes a single child node a specified number of times or until the child fails its execution\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-loop-parameters}
 
-**count**  
+**count**
 Maximum number of times the child node will be executed\. If left blank, it is assumed to be infinite and the node will continue running until failure\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-loop-success}
@@ -29,11 +29,11 @@ The node SUCCEEDS if the maximum number of repetitions is reached\. The node FAI
 
 ## LoopUntilSuccess {#ai-scripting-mbt-nodes-generic-loopuntilsuccess}
 
-Executes a child node a specified number of times or until the child node succeeds its execution\. 
+Executes a child node a specified number of times or until the child node succeeds its execution\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-loopuntilsuccess-parameters}
 
-**attemptCount**  
+**attemptCount**
 Maximum number of times the child node will be executed\. If left blank or set to <=0, it is assumed to be infinite and the node will continue running until success\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-loopuntilsuccess-success}
@@ -52,16 +52,16 @@ The node SUCCEEDS if the child SUCCEEDS\. The node FAILS if the maximum amount o
 
 Executes its child nodes in parallel\.
 
-**Note**  
+**Note**
 A maximum number of 32 child nodes is allowed\.
 When success and failure limits are reached at the same time, the node will succeed\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-parallel-parameters}
 
-**failureMode**  
+**failureMode**
 Method to use to evaluate when the node fails\. Acceptable values include "any" or "all"\. Default: "any"\.
 
-**successMode**  
+**successMode**
 Method to use to evaluate when the node succeeds\. Acceptable values include "any" or "all"\. Default: "all"\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-parallel-success}
@@ -110,7 +110,7 @@ The node executes the child nodes in sequential order and SUCCEEDS as soon as on
 
 Executes its child nodes one at a time in order\.
 
-**Note**  
+**Note**
 A maximum of 255 child nodes is allowed\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-sequence-parameters}
@@ -162,27 +162,27 @@ A State node has the following characteristics:
 + MUST have a BehaviorTree node\.
 + MAY have a Transitions element\.
 
-**Transitions**  
-Transitions elements are described inside a State node, and can contain the definitions of as many transitions as are needed\. The transitions elements are not MBT nodes\. If a transition specifies a destination state that doesn't exist, an error message will be displayed when parsing the MBT node\. 
+**Transitions**
+Transitions elements are described inside a State node, and can contain the definitions of as many transitions as are needed\. The transitions elements are not MBT nodes\. If a transition specifies a destination state that doesn't exist, an error message will be displayed when parsing the MBT node\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-state-parameters}
 
 `<State />` elements must include the following parameters:
 
-**name**  
+**name**
 Name of the state\. It must be unique within the scope of the StateMachine it is in\.
 
 `<Transition />` elements must include the following parameters:
 
-**onEvent**  
+**onEvent**
 Name of the event that may cause the transition to happen\. These events are of type AISignal\.
 
-**to**  
+**to**
 Name of the state to transition to\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-state-success}
 
-The node SUCCEEDS if the content of the BehaviorTree node SUCCEEDS\. 
+The node SUCCEEDS if the content of the BehaviorTree node SUCCEEDS\.
 
 The node FAILS if the content of the BehaviorTree node FAILS\.
 
@@ -201,7 +201,7 @@ The node FAILS if the content of the BehaviorTree node FAILS\.
 
 ## SuppressFailure {#ai-scripting-mbt-nodes-generic-suppressfailure}
 
-Owns and executes one child node\. This node will succeed regardless of whether the child node succeeds\. 
+Owns and executes one child node\. This node will succeed regardless of whether the child node succeeds\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-suppressfailure-parameters}
 
@@ -225,7 +225,7 @@ Fails once a certain amount of time has passed\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-timeout-parameters}
 
-**duration**  
+**duration**
 Amount of time \(in seconds\) before failure occurs\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-timeout-success}
@@ -244,15 +244,15 @@ Succeeds once a certain amount of time has passed\.
 
 ### Parameters {#ai-scripting-mbt-nodes-generic-wait-parameters}
 
-**duration**  
+**duration**
 Amount of time \(in seconds\) before the request succeeds\.
 
-**variation**  
-Maximum additional amount of time that may be randomly added to the value of `duration`, in the range \[0, `variation`\]\. Setting this value causes the wait time to have random variations between different executions of the node\. 
+**variation**
+Maximum additional amount of time that may be randomly added to the value of `duration`, in the range \[0, `variation`\]\. Setting this value causes the wait time to have random variations between different executions of the node\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-generic-wait-success}
 
-The node SUCCEEDS once it has run the duration specified \(plus random variation\)\. 
+The node SUCCEEDS once it has run the duration specified \(plus random variation\)\.
 
 ### Example {#ai-scripting-mbt-nodes-generic-wait-example}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Blend Two node in &ALYlong; &animation-editor; to blend two
+description: ' Use the Blend Two node in Amazon Lumberyard Animation Editor to blend two
   nodes that do not need additive blending. '
 title: Blend Two Node
 ---
@@ -19,10 +19,10 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
-1. Drag the **Blend Two** node into the animation graph\.  
+1. Drag the **Blend Two** node into the animation graph\.
 ![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two into the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-animgraphpalette-blendtwo.png)
 
-1.   
+1.
 ![\[Blend Two node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs-blendtwo.png)
 
    Connect nodes to the following inputs and output:

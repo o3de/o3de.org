@@ -1,6 +1,6 @@
 ---
 description: ' Keep these best practices in mind when you create and implement your
-  texture maps for displacement for &ALYlong;. '
+  texture maps for displacement for Amazon Lumberyard. '
 title: Displacement Mapping Best Practices
 ---
 # Displacement Mapping Best Practices {#mat-maps-displacement-best-practices}
@@ -9,10 +9,10 @@ For best results, use the following best practices when creating displacement ma
 
 **Content Creation Practices**
 + Place the displacement map in the alpha channel of your texture\. The RGB values are not used for this map type and can be left empty\.
-+ Use the suffix \_displ\. For example, `road.tif` would be `road_displ.tif`\. 
++ Use the suffix \_displ\. For example, `road.tif` would be `road_displ.tif`\.
 
 **Game Implementation Practices in Lumberyard**
-+ In Lumberyard Editor, set the performance to **High** or **Very High** for your target platform\. 
++ In Lumberyard Editor, set the performance to **High** or **Very High** for your target platform\.
 
 **To set the graphics performance for your target platform**
 

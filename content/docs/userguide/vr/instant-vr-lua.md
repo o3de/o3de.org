@@ -1,5 +1,5 @@
 ---
-description: ' View the InstantVR Lua script properties in &ALYlong;. '
+description: ' View the InstantVR Lua script properties in Amazon Lumberyard. '
 title: InstantVR Lua Script Properties
 ---
 # InstantVR Lua Script Properties {#virtual-reality-instant-vr-lua}
@@ -10,38 +10,38 @@ You can view **instantVR**'s assets in the **Entity Outliner**\. The **instantVR
 
 The `instantVR` Lua script has the following properties:
 
-**TeleportInputEventNameRight**  
+**TeleportInputEventNameRight**
 Name of the input event that triggers the right controller teleport\.
 
-**ControllerEntityRight**  
+**ControllerEntityRight**
 Name of the right controller entity\.
 
-**TeleportUseNavMesh**  
-If selected, teleport function uses the navigation area for validation\.  
-If you select **TeleportUseNavMesh** without selecting **TeleportUseTerrain**, then teleport ray cast uses only the nav mesh to determine the valid area\. If it finds no nav mesh, it displays an 'invalid' indicator on terrain\.  
+**TeleportUseNavMesh**
+If selected, teleport function uses the navigation area for validation\.
+If you select **TeleportUseNavMesh** without selecting **TeleportUseTerrain**, then teleport ray cast uses only the nav mesh to determine the valid area\. If it finds no nav mesh, it displays an 'invalid' indicator on terrain\.
 If both are selected, then teleport validation uses a ray cast to the terrain and to the navigation mesh\. If both beams hit terrain and nav mesh, then the teleport location is valid, otherwise it is invalid\.
 
-**TeleportEntityInvalid**  
+**TeleportEntityInvalid**
 Name of the entity that spawns the invalid teleport location entity\.
 
-**TeleportEntityValid**  
+**TeleportEntityValid**
 Name of the entity that spawns the valid teleport location entity\.
 
-**TeleportInputEventNameLeft**  
+**TeleportInputEventNameLeft**
 Name of the input event that triggers the left controller teleport\.
 
-**TeleportMaxDistance**  
+**TeleportMaxDistance**
 Maximum distance for teleporting\.
 
-**CameraEntity**  
+**CameraEntity**
 Name of the camera entity, which determines the transform of the HMD and controllers\.
 
-**TeleportUseTerrain**  
-If selected, the teleport function uses the terrain for validation\.  
-If you select **TeleportUseTerrain** without selecting **TeleportUseNavMesh**, then the teleport ray cast uses the terrain for validation only\. Teleport will be valid as long as it is in contact with terrain\.  
+**TeleportUseTerrain**
+If selected, the teleport function uses the terrain for validation\.
+If you select **TeleportUseTerrain** without selecting **TeleportUseNavMesh**, then the teleport ray cast uses the terrain for validation only\. Teleport will be valid as long as it is in contact with terrain\.
 If both are selected, then teleport validation uses a ray cast to the terrain and to the navigation mesh\. If both beams hit terrain and nav mesh, then the teleport location is valid, otherwise it is invalid\.
 
-**TeleportBeamSpawner**  
+**TeleportBeamSpawner**
 The name of the teleport beam arc entity along which to spawn entities, though this does not follow the ray cast line exactly\.
 
 To customize the `instantVR` Lua script, try the following modifications:

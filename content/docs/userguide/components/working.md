@@ -1,5 +1,5 @@
 ---
-description: ' Use the tools in &ALYlong;''s &component-system; to create entities,
+description: ' Use the tools in Amazon Lumberyard''s component entity system to create entities,
   add components to entities, remove and reorder components, find an entity, and edit
   component properties. '
 title: Working with Components

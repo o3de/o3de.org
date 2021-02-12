@@ -1,6 +1,6 @@
 ---
 description: ' Use remote procedure calls (RPCs) to send events or requests through
-  replicas in &ALYlong;. '
+  replicas in Amazon Lumberyard. '
 title: Remote Procedure Calls (RPCs)
 ---
 # Remote Procedure Calls \(RPCs\) {#network-replicas-remote-procedure-calls}
@@ -86,7 +86,7 @@ namespace GridMate
     {
     public:
         static const AZStd::size_t MarshalSize = Marshaler<AZ::Crc32>::MarshalSize + sizeof(AZ::u32);
- 
+
         void Marshal(WriteBuffer& wb, const MyClass& value) const
         {
             wb.Write(value.m_name);
@@ -137,9 +137,9 @@ void Foo(MyChunkType* myChunkInstance)
 RPCs have an optional `typetraits` parameter\. The following traits are expected in the `traits` class\.
 
 
-****  
+****
 
-| Trait | Default Value | Description | 
-| --- | --- | --- | 
-| s\_isReliable | true | Uses reliable transmission to send the RPC\. | 
-| s\_isPostAttached | true | Forces any dirty datasets to also be sent reliably in advance\. This is useful if the RPC relies on the data in the datasets to be up to date on the destination peer\. | 
+| Trait | Default Value | Description |
+| --- | --- | --- |
+| s\_isReliable | true | Uses reliable transmission to send the RPC\. |
+| s\_isPostAttached | true | Forces any dirty datasets to also be sent reliably in advance\. This is useful if the RPC relies on the data in the datasets to be up to date on the destination peer\. |

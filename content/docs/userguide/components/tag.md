@@ -1,5 +1,5 @@
 ---
-description: ' Use the Tag component to apply labels to entities in &ALYlong;. '
+description: ' Use the Tag component to apply labels to entities in Amazon Lumberyard. '
 title: Tag
 ---
 # Tag {#component-tag}
@@ -16,13 +16,13 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Handlers respond if they have the tag \(listening on the tag's channel\)\. Use `AZ::EbusAggregateResults` to handle more than the first responder\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 const `AZ::EntityId`
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ## EBuses - Request Bus Interface: TagRequestBus {#component-tag-ebusrequest-tagrequest}
@@ -35,85 +35,85 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Returns true if the entity has the tag\.
 
-**Parameters**  
+**Parameters**
 const `Tag&`
 
-**Return**  
+**Return**
 bool
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### AddTag {#tag-ebus-addtag}
 
 Adds the tag to the entity if it didn't already have it\.
 
-**Parameters**  
+**Parameters**
 const `Tag&`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### AddTags {#tag-ebus-addtags}
 
 Add a list of tags to the entity if it didn't already have them\.
 
-**Parameters**  
+**Parameters**
 const `Tags&`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 No
 
 ### RemoveTag {#tag-ebus-removetag}
 
 Removes a tag from the entity if it had it\.
 
-**Parameters**  
+**Parameters**
 const `Tag&`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### RemoveTags {#tag-ebus-removetags}
 
 Removes a list of tags from the entity if it had them\.
 
-**Parameters**  
+**Parameters**
 const `Tags&`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 No
 
 ### GetTags {#tag-ebus-gettags}
 
 Gets the list of tags on the entity\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 const `Tags&`
 
-**Scriptable**  
+**Scriptable**
 No
 
 The following is an example of script using the **Request Bus Interface**\.
 
 ```
 local enemies = TagGlobalRequestBus.Event.RequestTaggedEntities(Crc32("Enemy"));
- 
+
 local burning = TagComponentRequestBus.Event.HasTag(self.entityId, Crc32("Burning"));
 ```
 
@@ -127,24 +127,24 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 Notifies listeners about tags being added\.
 
-**Parameters**  
+**Parameters**
 const `Tag&` - Indicates the tag was added
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### OnTagRemoved {#tag-notbus-ontagremoved}
 
 Notifies listeners about tags being removed\.
 
-**Parameters**  
+**Parameters**
 const `Tag&` - Indicates the tag was removed
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes

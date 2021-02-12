@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lua scripting language to load and unload UI canvases in &ALYlong;. '
+description: ' Use the Lua scripting language to load and unload UI canvases in Amazon Lumberyard. '
 title: Loading Canvases in Lua
 ---
 # Loading Canvases in Lua {#ui-editor-loading-canvases-lua}

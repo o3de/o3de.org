@@ -1,17 +1,17 @@
 ---
-description: ' Use the Simple Jack Locomotion sample level to learn how the &ALY;
-  &animation-editor; uses actors, motion sets, and animation graphs to control character
+description: ' Use the Simple Jack Locomotion sample level to learn how the Lumberyard
+  Animation Editor uses actors, motion sets, and animation graphs to control character
   behavior. '
 title: Simple_JackLocomotion Sample
 ---
 # Simple\_JackLocomotion Sample {#animation-editor-jack-locomotion-sample}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 This sample level showcases Jack the robot in a basic environment and demonstrates how the **Animation Editor** uses actors, motion sets, and animation graphs to control character behavior\. Playable animations include idle, walk, run, and navigate\.
 

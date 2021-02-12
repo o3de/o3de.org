@@ -1,6 +1,6 @@
 ---
-description: ' This section describes the major &ALY; systems. '
-title: '&ALY; Systems'
+description: ' This section describes the major Lumberyard systems. '
+title: 'Lumberyard Systems'
 ---
 # Lumberyard Systems {#lumberyard-systems}
 
@@ -67,12 +67,12 @@ Lumberyard consists of the following major systems that help you develop levels 
    
 + [Creating and Customizing Project User Interfaces](/docs/userguide/ui/editor/intro.md)
 
-  With the **UI Editor**, you can create and customize various parts of the game user interface, such as images, text, buttons, menus, scroll boxes, and heads\-up displays \(HUDs\)\. 
+  With the **UI Editor**, you can create and customize various parts of the game user interface, such as images, text, buttons, menus, scroll boxes, and heads\-up displays \(HUDs\)\.
 
    
 + [Create virtual reality projects in Lumberyard](/docs/userguide/vr/_index.md)
 
-  Virtual reality \(VR\) is a technology that replicates the gaming environment and simulates a user's presence in it\. With virtual reality players, feel as if they are in the game world as they interact with the environment, characters, and objects\. Lumberyard's virtual reality system integrates the use of the Oculus Rift and HTC Vive head\-mounted displays \(HMD\) on PC gaming systems\. 
+  Virtual reality \(VR\) is a technology that replicates the gaming environment and simulates a user's presence in it\. With virtual reality players, feel as if they are in the game world as they interact with the environment, characters, and objects\. Lumberyard's virtual reality system integrates the use of the Oculus Rift and HTC Vive head\-mounted displays \(HMD\) on PC gaming systems\.
 
    
 
@@ -104,7 +104,7 @@ The following Lumberyard tools are outside of the main editor and are used for p
    
 + [Project Configurator](/docs/userguide/configurator/intro.md)
 
-  The Project Configurator is a standalone application that allows you to specify to the Waf build system which game projects and assets \(gems\) to include in a game build\. With it, you can create new projects, save active projects, configure advanced settings, and enable, disable, or create new gems\. 
+  The Project Configurator is a standalone application that allows you to specify to the Waf build system which game projects and assets \(gems\) to include in a game build\. With it, you can create new projects, save active projects, configure advanced settings, and enable, disable, or create new gems\.
 
    
 + [Profiling, Testing, and Debugging Game Projects](/docs/userguide/programming/testing/debugging-intro.md)

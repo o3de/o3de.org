@@ -1,20 +1,20 @@
 ---
-description: ' Use the &resource-compiler; image tool to manually select an image
-  processing preset in &ALYlong; and then save the settings to source control. '
-title: Using the &resource-compiler; Image Tool
+description: ' Use the Resource Compiler image tool to manually select an image
+  processing preset in Amazon Lumberyard and then save the settings to source control. '
+title: Using the Resource Compiler Image Tool
 ---
 # Using the Resource Compiler Image Tool {#asset-pipeline-images-using-resourcecompiler-image-tool}
 
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands\.
 
-**Note**  
+**Note**
 You can also use the Texture Settings Editor to manage your texture settings for image files\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
 
 **To install RC Shell Commands**
 
 1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
-1. On the **Install plugins** page, click **Install**\.  
+1. On the **Install plugins** page, click **Install**\.
 ![\[Click Install to install RC Shell Commands in Lumberyard Setup Assistant\]](/images/userguide/assets/pipeline/asset-pipeline-images-resourcecompiler-1.png)
 
 Once you install the RC Shell Commands, you can use the Resource Compiler image tool\.
@@ -36,5 +36,5 @@ The Resource Compiler image tool lists image processing presets defined in the `
 
 1. Click **Generate Output**\.
 
-   Your `imagefilename.exportsettings` file and the resulting `imagefilename.dds` output is saved in the same directory as your source image\.  
+   Your `imagefilename.exportsettings` file and the resulting `imagefilename.dds` output is saved in the same directory as your source image\.
 ![\[In the Resource Compiler image tool, select a preset and then click Generate Output to generate the .exportsettings file to check in.\]](/images/userguide/assets/pipeline/asset-pipeline-images-resourcecompiler.jpg)

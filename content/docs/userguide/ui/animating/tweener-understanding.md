@@ -1,5 +1,5 @@
 ---
-description: ' Understand how tweeners in &ALYlong; Scripted Entity Tweener system
+description: ' Understand how tweeners in Amazon Lumberyard Scripted Entity Tweener system
   interprets movements between two frames based on the tweener type. '
 title: Understanding Tweeners
 ---
@@ -15,6 +15,6 @@ Properties other than location can also use tweeners\. The following animation s
 
 ![\[Linear tweener for opacity (transparent to opaque) and bouncing tweener for scale (small to large)\]](/images/userguide/ui-animating-tweener-1.gif)
 
-Tweeners are highly customizable\. You can specify parameters to change properties such as duration, delay before starting, number of times to play, whether to go from the specified value to the current value or vice versa, and so on\. 
+Tweeners are highly customizable\. You can specify parameters to change properties such as duration, delay before starting, number of times to play, whether to go from the specified value to the current value or vice versa, and so on\.
 
-For available parameters and how to use them, see [Tweener Supported Components](/docs/userguide/ui/animating/tweener-components.md)\. You can also [create a timeline](/docs/userguide/ui/animating/tweener-timeline.md) to chain animations together with different tween types\. 
+For available parameters and how to use them, see [Tweener Supported Components](/docs/userguide/ui/animating/tweener-components.md)\. You can also [create a timeline](/docs/userguide/ui/animating/tweener-timeline.md) to chain animations together with different tween types\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Skybox Angle node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Skybox Angle node in the Amazon Lumberyard Script Canvas editor
   to rotate the skybox around the z-axis. '
 title: Set Skybox Angle
 ---
@@ -18,18 +18,18 @@ For more information, see [Creating Static Skyboxes](/docs/userguide/sky/skyboxe
 ## Inputs {#set-sky-box-angle-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Angle | Number |  Rotation angles in degrees\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Angle | Number |  Rotation angles in degrees\.  |
 
 ## Outputs {#set-sky-box-angle-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

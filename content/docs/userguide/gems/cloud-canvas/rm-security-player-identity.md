@@ -1,5 +1,5 @@
 ---
-description: ' Use &COG; identity pools to provide players with unique identities. '
+description: ' Use Amazon Cognito identity pools to provide players with unique identities. '
 title: Player Identity
 ---
 # Player Identity {#cloud-canvas-rm-security-player-identity}

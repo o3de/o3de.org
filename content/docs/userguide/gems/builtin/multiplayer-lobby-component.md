@@ -1,6 +1,6 @@
 ---
 description: ' Add the MultiplayerLobbyComponent to a component entity to manage game
-  sessions in &ALYlong;. '
+  sessions in Amazon Lumberyard. '
 title: The Multiplayer Lobby Component
 ---
 # The Multiplayer Lobby Component {#gems-system-gem-multiplayer-lobby-component}
@@ -23,19 +23,19 @@ The `MultiplayerLobbyComponent` supports all of Lumberyard's session services, i
 The `MultiplayerLobbyComponent` has configuration settings that you can use to customize the hosted sessions that the component creates\.
 
 
-****  
+****
 
-| Setting | Description | 
-| --- | --- | 
-| Max Players | The maximum number of players allowed to join the session\. | 
-| Port | The port on which the game session operates\. | 
-| Enable Disconnect Detection | Enables disconnect detection\. If a player's connection does not respond to inquiries from the session host within the specified timeout window, the player is disconnected from the session\. | 
-| Timeout | The timeout window, in milliseconds, that a client has to respond to inquiries from the session host before being disconnected, if disconnect detection is enabled\. | 
-| Default Map | The default value for the Map field of the display\. | 
-| Default Server Name | The default value for the Server Name field of the display\. | 
-| Default Matchmaking Config | The default value for the Matchmaking Config to use for GameLift\. | 
+| Setting | Description |
+| --- | --- |
+| Max Players | The maximum number of players allowed to join the session\. |
+| Port | The port on which the game session operates\. |
+| Enable Disconnect Detection | Enables disconnect detection\. If a player's connection does not respond to inquiries from the session host within the specified timeout window, the player is disconnected from the session\. |
+| Timeout | The timeout window, in milliseconds, that a client has to respond to inquiries from the session host before being disconnected, if disconnect detection is enabled\. |
+| Default Map | The default value for the Map field of the display\. |
+| Default Server Name | The default value for the Server Name field of the display\. |
+| Default Matchmaking Config | The default value for the Matchmaking Config to use for GameLift\. |
 
-**Note**  
+**Note**
 This component does not handle the initialization of encryption, but utilizes encryption if it is already enabled\. If you want to use encryption with the component, you must configure encryption before you use the component\.
 
 ## LAN Lobby Description {#gems-system-gem-multiplayer-lobby-component-description}

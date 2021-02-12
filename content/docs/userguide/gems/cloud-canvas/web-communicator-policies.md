@@ -1,13 +1,13 @@
 ---
 description: ' Learn about the policies that control user access to the Web Communicator
-  cloud gem and &IoT; in &ALYlong;. '
-title: Web Communicator Cloud Gem Authentication and &AWS; Policies
+  cloud gem and IoT in Amazon Lumberyard. '
+title: Web Communicator Cloud Gem Authentication and AWS Policies
 ---
 # Web Communicator Cloud Gem Authentication and AWS Policies {#cloud-canvas-cloud-gem-web-communicator-policies}
 
 The default Web Communicator authentication system uses authenticated Amazon Cognito users with AWS Signature Version 4\. For more information, see [Authenticating Requests \(AWS Signature Version 4\)](https://docs.aws.amazon.com/general/latest/gr/sig-v4-authenticating-requests.html) in the *AWS General Reference*\.
 
-**Note**  
+**Note**
 Lumberyard advises against implementing unauthenticated access\. If you surrender control over which users can connect to your [AWS IoT](https://aws.amazon.com/iot-core) network, you can incur unexpected costs\.
 
 Connection to AWS IoT requires two policies, which Web Communicator generates for you:

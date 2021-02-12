@@ -1,7 +1,7 @@
 ---
-description: ' Debug your &script-canvas; graphs in &ALYlong;''s visual scripting
+description: ' Debug your Script Canvas graphs in Amazon Lumberyard''s visual scripting
   tool. '
-title: '&script-canvas; Debugging'
+title: 'Script Canvas Debugging'
 ---
 # Script Canvas Debugging {#script-canvas-debugging}
 
@@ -9,10 +9,10 @@ Script Canvas supports live debugging of a Script Canvas graph running in\-game\
 
 **To open the Script Canvas debugger and choose a target**
 
-1. From the Script Canvas editor, choose **Tools**, **Debugging**\. The debugger panel opens at the bottom of the Script Canvas editor\.  
+1. From the Script Canvas editor, choose **Tools**, **Debugging**\. The debugger panel opens at the bottom of the Script Canvas editor\.
 ![\[Choose Tools, Debugging.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-1.png)
 
-1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target\. The default target is Lumberyard Editor, but you can use Script Canvas to debug the game running in standalone mode\. For more information, see [In\-Game Debugging](#script-canvas-debugging-in-game)\.  
+1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target\. The default target is Lumberyard Editor, but you can use Script Canvas to debug the game running in standalone mode\. For more information, see [In\-Game Debugging](#script-canvas-debugging-in-game)\.
 ![\[Choosing the debug target.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-2.png)
 
 ## Choosing Entities and Graphs to Debug {#script-canvas-debugging-choosing-entities-and-graphs-to-debug}
@@ -21,18 +21,18 @@ After you choose a debug target, you can choose the entities and graphs that you
 
 **To choose entities and graphs to debug**
 
-1. To see entities with Script Canvas graphs that are available for debugging, expand the items on the **Entities** tab\. The **Entities** tab displays the entities known to the debugger at edit time that have Script Canvas graphs\.  
+1. To see entities with Script Canvas graphs that are available for debugging, expand the items on the **Entities** tab\. The **Entities** tab displays the entities known to the debugger at edit time that have Script Canvas graphs\.
 ![\[Entities with Script Canvas graphs.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-3.png)
-**Note**  
+**Note**
 Running the same graph multiple times on a single entity is not supported\.
 
-1. To get a complete listing of all available Script Canvas graphs in the project, click the **Graphs** tab\. Each graph in the table shows all entities that are using that graph\. The **Graphs** tab is useful for debugging dynamically spawned scripts\. For more information, see [Debugging a Dynamically Spawned Graph](#script-canvas-debugging-debugging-a-dynamically-spawned-graph) later in this topic\.  
+1. To get a complete listing of all available Script Canvas graphs in the project, click the **Graphs** tab\. Each graph in the table shows all entities that are using that graph\. The **Graphs** tab is useful for debugging dynamically spawned scripts\. For more information, see [Debugging a Dynamically Spawned Graph](#script-canvas-debugging-debugging-a-dynamically-spawned-graph) later in this topic\.
 ![\[Graphs that are attached to entities.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-4.png)
 
-1. On the **Entities** tab or **Graphs** tab, select the check boxes for the entities or graphs that you want to debug\.  
+1. On the **Entities** tab or **Graphs** tab, select the check boxes for the entities or graphs that you want to debug\.
 ![\[Selecting entities to debug.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-5.png)
 
-1. To capture all instances of a selected graph, select **All Graph Instances**\.  
+1. To capture all instances of a selected graph, select **All Graph Instances**\.
 ![\[Selecting all instances of a graph.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-6.png)
 
 ## Configuring Debugger Options {#script-canvas-debugging-configuring}
@@ -51,7 +51,7 @@ Enable this option if you want the output from a specified target to be captured
 
 Enable this option to display the data as it is captured\. When disabled, the data is captured silently and displays only after the capture completes\.
 
-**Note**  
+**Note**
 When live updates are enabled and you capture a large amount of data, editor performance decreases noticeably\. For better performance, you should disable live updates, especially for longer captures\.
 
 ## Running the Debugger {#script-canvas-debugging-running-the-debugger}
@@ -60,12 +60,12 @@ After you have chosen the entities or graphs to debug, you are ready to run the 
 
 **To run the Script Canvas debugger**
 
-1. Click **Capture**\. The **Capture** button puts Lumberyard into gameplay mode automatically\.  
+1. Click **Capture**\. The **Capture** button puts Lumberyard into gameplay mode automatically\.
 ![\[The Script Canvas debugger Capture button.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-9.png)
-**Note**  
+**Note**
 If **Editor** is selected as the capture target, the game must be running for the debugger to return results\.
 
-   The Script Canvas debugger begins capturing data when the graph runs\. If live updates are enabled, the data appears in the debugger panel when the graph being debugged becomes active during gameplay\. Otherwise, the data appears after the capture completes\.  
+   The Script Canvas debugger begins capturing data when the graph runs\. If live updates are enabled, the data appears in the debugger panel when the graph being debugged becomes active during gameplay\. Otherwise, the data appears after the capture completes\.
 ![\[Data being captured in the Script Canvas debugger.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-10.png)
 
 1. After you have enough data, click **Capture** again to stop the data capture\.
@@ -76,28 +76,28 @@ The captured data is presented in a log that is sorted in order of processing\. 
 
 ![\[Captured data in the Script Canvas debugger.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-11.png)
 
-**Note**  
+**Note**
 Currently, only a single instance of captured data can be stored\. Previous data is lost when a new set of data is captured\.
 
 **To examine the captured data**
 
 1. To see the Script Canvas node that corresponds to a line in the log, click the line\.
 
-   Each line typically shows the node's **In** signal and **Out** signal\. If the **In** or **Out** signal is not present, the node is either the first or final node of a given execution line\. As shown in the following image, the **Set Location Rotation** node is the final node in the execution line, so an **Out** signal is not present\.  
+   Each line typically shows the node's **In** signal and **Out** signal\. If the **In** or **Out** signal is not present, the node is either the first or final node of a given execution line\. As shown in the following image, the **Set Location Rotation** node is the final node in the execution line, so an **Out** signal is not present\.
 ![\[Choosing a debugger line to show the corresponding node on a Script Canvas graph.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-12.png)
 
 1. Use the up or down arrow keys to move through the log messages in the debugger panel\. As you do so, the corresponding node to in Script Canvas graph is highlighted\.
 
-1. To examine the data that the node was using, expand the log message\.  
+1. To examine the data that the node was using, expand the log message\.
 ![\[Expanding a log message to reveal its data.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-13.png)
-**Note**  
+**Note**
 Some nodes send additional information that appears in the form of annotations\. For example, the **Print** node sends the full string that it displayed\.
 
 1. To expand all lines, click the ![\[Expand log messages.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-14.png) expand icon\.
 
 1. To collapse all lines, click the collapse ![\[Expand log messages.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-15.png) icon\.
 
-1. To search for a particular node name or names, use the **Search** box\.  
+1. To search for a particular node name or names, use the **Search** box\.
 ![\[Using search to find specific nodes in the Script Canvas debugger.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-16.png)
 
 ## Debugging a Dynamically Spawned Graph {#script-canvas-debugging-debugging-a-dynamically-spawned-graph}
@@ -117,12 +117,12 @@ For in\-game debugging, you use the Script Canvas debugger to connect to a runni
 **To debug a running game**
 
 1. Run `GridHub.exe` from the `Bin64vcxxx` directory that corresponds to the version of Visual Studio that you are using \(for example, `lumberyard_version\dev\Bin64vc141\GridHub.exe`\)\. GridHub is the network environment that provides connectivity between Lumberyard and its tools\. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
-**Note**  
+**Note**
 GridHub must be active for non\-editor targets to appear in the **Live** tab\.
 
 1. Run the launcher for your game \(for example, `lumberyard_version\dev\Bin64vc141\SamplesProjectLauncher.exe`\.
 
-1. On the **Live** tab of the Script Canvas debugger, choose the launcher from the list of debug targets\. When you choose the launcher as the debug target, Script Canvas execution is recorded for the graphs that you specify\.  
+1. On the **Live** tab of the Script Canvas debugger, choose the launcher from the list of debug targets\. When you choose the launcher as the debug target, Script Canvas execution is recorded for the graphs that you specify\.
 ![\[Choosing a launcher debug target.\]](/images/userguide/scripting/script-canvas/script-canvas-debugging-2.png)
 
 ## Notes {#script-canvas-debugging-notes}

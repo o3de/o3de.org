@@ -1,5 +1,5 @@
 ---
-description: ' Divide &ALY; texture layers into smaller sections to increase the resolution
+description: ' Divide Lumberyard texture layers into smaller sections to increase the resolution
   of heavily viewed areas. '
 title: Changing Terrain Tile Resolution
 ---
@@ -25,7 +25,7 @@ You first subdivide the texture layer, then change the individual tile resolutio
 
 1. In Lumberyard Editor, click **Game**, **Terrain**, **Export/Import Megaterrain Texture**\.
 
-1. In **Terrain Texture**, click a tile whose resolution you want to change\. Then click **Change tile resolution**\.  
+1. In **Terrain Texture**, click a tile whose resolution you want to change\. Then click **Change tile resolution**\.
 ![\[Image NOT FOUND\]](/images/userguide/terrain/terrain-texture-tiles-resolution.png)
 
 1. Choose a new resolution and then click **OK**\. Click **Close**\.

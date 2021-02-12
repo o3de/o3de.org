@@ -1,5 +1,5 @@
 ---
-description: ' Use the Depth of Field node in &ALYlong;''s &trackview-editor; to add
+description: ' Use the Depth of Field node in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor to add
   realism to scenes by limiting the area that is in focus. '
 title: Adding a Depth of Field Node
 ---
@@ -18,11 +18,11 @@ You can use the **Depth of Field** \(DOF\) node to add realism to scenes to simu
 1.  Double\-click the green marker, and under **Key Properties**, enter a value for **Value**\.
 
 
-**Depth Of Field Node Key Properties**  
+**Depth Of Field Node Key Properties**
 
-| Property | Description | 
-| --- | --- | 
-| Enable | Enables or disables depth of field effect\. | 
-| FocusDistance | Distance the focus is from the camera\. Positive values are in front of the camera while negative values are behind the camera\. | 
-| FocusRange | Distance toward and away from the camera until maximum blurriness is reached\. By default, this value is twice the FocusDistance value\. | 
-| BlurAmount | Maximum blurriness value\. | 
+| Property | Description |
+| --- | --- |
+| Enable | Enables or disables depth of field effect\. |
+| FocusDistance | Distance the focus is from the camera\. Positive values are in front of the camera while negative values are behind the camera\. |
+| FocusRange | Distance toward and away from the camera until maximum blurriness is reached\. By default, this value is twice the FocusDistance value\. |
+| BlurAmount | Maximum blurriness value\. |

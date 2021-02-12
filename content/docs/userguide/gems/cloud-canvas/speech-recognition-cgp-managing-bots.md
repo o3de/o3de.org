@@ -1,16 +1,16 @@
 ---
-description: ' Use the Speech Recognition Cloud Gem Portal to manage the &LEX; bots
-  for your game in &ALYlong;. '
+description: ' Use the Speech Recognition Cloud Gem Portal to manage the Amazon Lex bots
+  for your game in Amazon Lumberyard. '
 title: Managing Bots
 ---
 # Managing Bots {#cloud-canvas-cloud-gem-speech-recognition-cgp-managing-bots}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in preview release and is subject to change\. | 
+| This feature is in preview release and is subject to change\. |
 
 You use the **Bots** tab to manage your Amazon Lex bots\.
 
@@ -24,13 +24,13 @@ You use the **Bots** tab to manage your Amazon Lex bots\.
 
 1. On the **Cloud Gems** page, click **Speech Recognition**\.
 
-1. Click the **Bots** tab\.  
+1. Click the **Bots** tab\.
 ![\[Click Create Bot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-bots-tab.png)
 
 This example uses the sample bot located at `\dev\CloudGemSamples\Levels\CloudGemSpeechRecogintionSample\lex_test.json`\.
 
-**Note**  
- The misspelling of 'Recognition' in the path to the sample bot will be fixed in a future release\. 
+**Note**
+ The misspelling of 'Recognition' in the path to the sample bot will be fixed in a future release\.
 
 ## Creating a Bot {#cloud-canvas-cloud-gem-speech-recognition-cgp-creating-a-bot}
 
@@ -38,9 +38,9 @@ Click **Create Bot** on the Bots tab to create a bot\.
 
 ![\[Creating a bot\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-speech-recognition-cgp-2a.png)
 
-The **Bot name**, **Session timeout**, and **COPPA** settings are required\. 
+The **Bot name**, **Session timeout**, and **COPPA** settings are required\.
 
-**Note**  
+**Note**
 Although it is easier to create and edit bots with the Cloud Gem Portal, you can also use the Amazon Lex console at [https://console\.aws\.amazon\.com/lex/](https://console.aws.amazon.com/lex/)\. For more information, see [Create an Amazon Lex Bot \(Console\)](https://docs.aws.amazon.com/lex/latest/dg/gs-bp-create-bot.html)\. For technical information, see the [aws\-lex\-web\-ui/templates/](https://github.com/awslabs/aws-lex-web-ui/tree/master/templates) page on GitHub\.com\.
 
 ## Importing a Bot {#cloud-canvas-cloud-gem-speech-recognition-cgp-importing-a-bot}

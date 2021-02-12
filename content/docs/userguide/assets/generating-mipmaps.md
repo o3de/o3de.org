@@ -1,26 +1,26 @@
 ---
 description: ' Use mip maps to optimize images to be viewed at various distances while
-  reducing the time and processing power it takes to render them in &ALYlong;. '
+  reducing the time and processing power it takes to render them in Amazon Lumberyard. '
 title: Generating Mip Maps
 ---
 # Generating Mip Maps {#asset-pipeline-generating-mipmaps}
 
-[Mip maps](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#mip_map) are a sequence of optimized images made from one image\. Each image is lower in resolution than the previous image by a power of two\. Mip maps reduce the time and processing power it takes to render an image in a game\. Lower resolution mip maps are used when the viewing distance is great enough that the loss of detail is not noticeable\. Higher resolution mip maps are used when an object is close to the camera and needs to be displayed in detail\.
+[Mip maps](/docs/userguide/ly-glos-chap#mip_map) are a sequence of optimized images made from one image\. Each image is lower in resolution than the previous image by a power of two\. Mip maps reduce the time and processing power it takes to render an image in a game\. Lower resolution mip maps are used when the viewing distance is great enough that the loss of detail is not noticeable\. Higher resolution mip maps are used when an object is close to the camera and needs to be displayed in detail\.
 
-When you enable mip maps in Lumberyard, Resource Compiler automatically generates six mip maps for that image\. The largest mip map is the original size of your image, and each progressive mip map is smaller by a power of two\. 
+When you enable mip maps in Lumberyard, Resource Compiler automatically generates six mip maps for that image\. The largest mip map is the original size of your image, and each progressive mip map is smaller by a power of two\.
 
-**Example**  
-If your original image is 1024x1024, then you will have mip maps that are 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32\.   
+**Example**
+If your original image is 1024x1024, then you will have mip maps that are 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32\.
 
 ![\[For an image with a resolution of 1024x1024, the generated mip maps will be 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-1.png)
 
-**Example**  
-If your original image is 4096x4096, then you will have mip maps that are 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128\.  
+**Example**
+If your original image is 4096x4096, then you will have mip maps that are 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128\.
 
 ![\[For an image with a resolution of 4096x4096, the generated mip maps will be 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-2.png)
 
-**Note**  
-For most of the existing presets, mip maps are enabled by default\. If you create your own presets, you must enable mip maps\. 
+**Note**
+For most of the existing presets, mip maps are enabled by default\. If you create your own presets, you must enable mip maps\.
 
 If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**, **none \(0\)** appears\.
 
@@ -32,8 +32,8 @@ If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**
 
    For more information, see [Creating Image Processing Presets](/docs/userguide/assets/creating-image-processing-presets.md)\.
 
-1. Add `mipmaps=1` to the definition\.  
-**Example**  
+1. Add `mipmaps=1` to the definition\.
+**Example**
 
    ```
    ...
@@ -62,5 +62,5 @@ You can adjust the Alpha Test value for each mip map in the **MIP Control** tab 
 
 1. For each mip map, adjust the sliders or enter a number in the box\.
 
-1. Select **Maintain alphatest coverage** to maintain shape and opacity from a distance when working with certain types of objects, such as leaves on a tree\. If you don't select this option, the tree leaves may lose their silhouette in the lower resolution mip maps\.  
+1. Select **Maintain alphatest coverage** to maintain shape and opacity from a distance when working with certain types of objects, such as leaves on a tree\. If you don't select this option, the tree leaves may lose their silhouette in the lower resolution mip maps\.
 ![\[Select the MIP Control tab and adjust the sliders or enter a number to define the AlphaTest value for each mip map.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-alphatest.png)

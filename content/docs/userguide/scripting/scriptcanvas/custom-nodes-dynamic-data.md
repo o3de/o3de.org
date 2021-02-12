@@ -1,6 +1,6 @@
 ---
 description: ' Use dynamic data slots to enable a single node to process a variety
-  of data types in &script-canvas;, &ALYlong;''s visual scripting system. '
+  of data types in Script Canvas, Amazon Lumberyard''s visual scripting system. '
 title: Dynamic Data Slots
 ---
 # Dynamic Data Slots {#script-canvas-custom-nodes-dynamic-data}
@@ -21,13 +21,13 @@ ScriptCanvas_DynamicDataSlot(ScriptCanvas::DynamicDataType::Value,
 The `ScriptCanvas_DynamicDataSlot` tag includes the following code gen attributes:
 
 
-****  
+****
 
-| Attribute | Description | 
-| --- | --- | 
-| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information\. DynamicDataType has the following supported values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/script-canvas-custom-nodes-dynamic-data.html)  | 
-| DynamicGroup | Unifies a group of dynamically typed slots\. When one slot has a type, all slots in the group share the same type\. This attribute is useful for ensuring that passthrough values or operands all share a common type\. | 
-| RestrictedTypeContractTag | Restricts the data types that the dynamically typed slot accepts\. Takes an argument that is a list of supported data types\. | 
+| Attribute | Description |
+| --- | --- |
+| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information\. DynamicDataType has the following supported values: [\[See the AWS documentation website for more details\]](/docs/userguide/scripting/scriptcanvas/custom-nodes-dynamic-data)  |
+| DynamicGroup | Unifies a group of dynamically typed slots\. When one slot has a type, all slots in the group share the same type\. This attribute is useful for ensuring that passthrough values or operands all share a common type\. |
+| RestrictedTypeContractTag | Restricts the data types that the dynamically typed slot accepts\. Takes an argument that is a list of supported data types\. |
 
 ## Important Notes about Groups {#script-canvas-custom-nodes-dynamic-data-important-notes-about-groups}
 
@@ -37,7 +37,7 @@ For the purposes of contract restrictions, the grouped slots act as a single uni
 
 When dynamic types are connected, the receiving slot takes on the data type and restrictions of the connecting slot\.
 
-**Example**  
+**Example**
 
 ![\[Create a dynamically chained node.\]](/images/userguide/scripting/script-canvas/script-canvas-chained-dynamic-types.gif)
 
@@ -51,21 +51,21 @@ You can also add dynamic slots programmatically\. Use `DynamicDataSlotConfigurat
 SlotId MyNode::AddDynamicSlot(AZStd::string_view name, AZStd::string_view toolTip, ConnectionType connectionType)
 {
     DynamicDataSlotConfiguration slotConfiguration;
- 
+
     // Generic Slot Configuration
     slotConfiguration.m_name = name;
     slotConfiguration.m_toolTip = toolTip;
     slotConfiguration.SetConnectionType(connectionType);
     slotConfiguration.m_addUniqueSlotByNameAndType = false;
-      
+
     // Contract Descs provides a list of contracts that must be satisfied for a connection to be accepted to this slot.
     //slotConfiguration.m_contractDescs.push_back(TypeRestriction);
- 
+
     // DynamicDataSlot Specific Configurations
     slotConfiguration.m_dynamicGroup = "DynamicDataGroup";
     slotConfiguration.m_dynamicDataType = DynamicDataType::Value;
     ////
- 
+
     return AddSlot(slotConfiguration);
 }
 ```

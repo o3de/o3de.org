@@ -1,15 +1,15 @@
 ---
-description: ' Learn how to use blend spaces in the &animation-editor;. '
+description: ' Learn how to use blend spaces in the Animation Editor. '
 title: Creating and Visualizing Blend Spaces
 ---
 # Creating and Visualizing Blend Spaces {#animation-editor-blend-spaces}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 Blend spaces are a collection of sample motions that are organized spatially according to their coordinates\. The visual representation is a graph with xy\-axes for the coordinates\. The xy\-axes can represent values such as move speed, travel direction, turn angle, and so on\. Each motion is represented by a point \(white dot\) in the graph or blend space\.
 
@@ -51,12 +51,12 @@ The **Blend Space 2D** node has the following ports:
    + On the **Anim Graph** tab, in the blend tree view, right\-click the grid and then choose **Create Node**, **Blending**, **Blend Space 2D** or **Blend Space 1D**\.
    + In the **Anim Graph Palette**, on the **Blending** tab, drag the **Blend Space 2D** or **Blend Space 1D** icon into the blend tree view\.
 
-1. Double\-click the blend space node to go to the blend space view\. If you are using the **Blend Space 2D** node, your view should look as follows:  
+1. Double\-click the blend space node to go to the blend space view\. If you are using the **Blend Space 2D** node, your view should look as follows:
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/blend-space-2d-node-view.png)
 
 1. In the **Attributes** pane, specify values for the attributes of the blend space node\. These values are used to set up your blend space\.
-**Note**  
-You can undock the **Attributes** pane in order to see the attributes and values without scrolling\.  
+**Note**
+You can undock the **Attributes** pane in order to see the attributes and values without scrolling\.
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/animation-editor-attributes-pane.png)
    + To use provided values for the xy\-axes, do the following:
 
@@ -81,7 +81,7 @@ You can undock the **Attributes** pane in order to see the attributes and values
    + The coordinate value automatically calculates if you selected **Automatically calculate motion coordinates** for **Calculation method** and if you selected a motion characteristic for the **Evaluator**\.
    + You must enter coordinate values if you selected **Manually enter motion coordinates** for **Calculation method**\.
 
-1. After your motions are added to the blend space and the coordinate values are calculated, verify that your blend space view looks similar to the following:  
+1. After your motions are added to the blend space and the coordinate values are calculated, verify that your blend space view looks similar to the following:
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/animation-editor-blend-space-example.png)
 
 1. In the blend space view, do the following:

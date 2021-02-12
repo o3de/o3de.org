@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; HttpRequestor gem to make asynchronous HTTP/HTTPS
+description: ' Use the Amazon Lumberyard HttpRequestor gem to make asynchronous HTTP/HTTPS
   requests and return data through a call back function that you provide. '
 title: HttpRequestor Gem
 ---
@@ -7,7 +7,7 @@ title: HttpRequestor Gem
 
 You can use the HttpRequestor gem to make asynchronous HTTP/HTTPS requests and return data through a user\-provided call back function\. This gem uses the EBus for communication and provides all requests asynchronously\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
 
-**Note**  
+**Note**
 This feature is supported only on Windows and replaces `CryAction::HttpRequest`\.
 
 **Topics**
@@ -60,15 +60,15 @@ Each add request method requires the URI, a method and a callback\.
 #### Parameters {#http-requestor-gem-addrequest-parameters}
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] | 
-| method | Aws::Http::HttpMethod | The method type\. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH\. | 
-| callback |  | This function is called when the HTTP request is completed\. The response body and code are present in the callback\. | 
-| headers | HttpRequestor::Headers | The list of header fields for the HTTP request\. | 
-| body | AZStd::String | Optional body to send with the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] |
+| method | Aws::Http::HttpMethod | The method type\. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH\. |
+| callback |  | This function is called when the HTTP request is completed\. The response body and code are present in the callback\. |
+| headers | HttpRequestor::Headers | The list of header fields for the HTTP request\. |
+| body | AZStd::String | Optional body to send with the request\. |
 
 Return: No return value\.
 
@@ -83,12 +83,12 @@ void Callback(const Aws::Utils::Json::JsonValue& json, Aws::Http::HttpResponseCo
 #### Parameters {#http-requestor-gem-json-request-callback-parameters}
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| json | Aws::Utils::Json::JsonValue | The JSON object\. The life span of this object is valid only during the scope of the callback\. | 
-| responseCode | Aws::Http::HttpResponseCode | The HTTP response code\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| json | Aws::Utils::Json::JsonValue | The JSON object\. The life span of this object is valid only during the scope of the callback\. |
+| responseCode | Aws::Http::HttpResponseCode | The HTTP response code\. |
 
 Return: No return value\.
 
@@ -115,15 +115,15 @@ Each add text request method requires the URI, a method and a callback\.
 #### Parameters {#http-requestor-gem-addtextrequest-parameters}
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] | 
-| method | Aws::Http::HttpMethod | The method type\. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH\. | 
-| callback |  | This function is called when the HTTP request is completed\. The response body and code are present in the callback\. | 
-| headers | HttpRequestor::Headers | The list of header fields for the HTTP request\. | 
-| body | AZStd::String | Optional body to send with the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] |
+| method | Aws::Http::HttpMethod | The method type\. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH\. |
+| callback |  | This function is called when the HTTP request is completed\. The response body and code are present in the callback\. |
+| headers | HttpRequestor::Headers | The list of header fields for the HTTP request\. |
+| body | AZStd::String | Optional body to send with the request\. |
 
 Return: No return value\.
 
@@ -138,12 +138,12 @@ void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode respons
 #### Parameters {#http-requestor-gem-text-request-callback-parameters}
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| response | AZStd::string& | The text returned from the server\. The life span of this object is valid only during the scope of the callback\. | 
-| responseCode | Aws::Http::HttpResponseCode | The HTTP response code\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| response | AZStd::string& | The text returned from the server\. The life span of this object is valid only during the scope of the callback\. |
+| responseCode | Aws::Http::HttpResponseCode | The HTTP response code\. |
 
 Return: No return value\.
 

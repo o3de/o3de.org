@@ -1,5 +1,5 @@
 ---
-description: ' Use the Clone material node in the &script-canvas; editor in &ALYlong;
+description: ' Use the Clone material node in the Script Canvas editor in Amazon Lumberyard
   to create a copy of a material file. '
 title: Clone
 ---
@@ -11,7 +11,7 @@ Creates a copy of the specified material\. The material must already be loaded i
 
 In some cases, you might need to store the material to use later\. For more information, see **[Material Variables](/docs/userguide/scripting/scriptcanvas/variable-material-node.md)**\.
 
-**Warning**  
+**Warning**
 Don't trigger this node for every frame\. Each time the **In** event is received, a copy of the material is created\.
 
 **Contents**
@@ -21,19 +21,19 @@ Don't trigger this node for every frame\. Each time the **In** event is received
 ## Inputs {#material-clone-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material |  The material to be cloned\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material |  The material to be cloned\.  |
 
 ## Outputs {#material-clone-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Material | Material | The cloned material\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Material | Material | The cloned material\. |

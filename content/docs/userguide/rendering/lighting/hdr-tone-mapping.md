@@ -1,6 +1,6 @@
 ---
 description: ' Use HDR tone mapping settings to control the light and dark values
-  in your &ALY; scene. '
+  in your Lumberyard scene. '
 title: HDR Settings
 ---
 # HDR Settings {#enviro-lighting-hdr-tone-mapping}
@@ -16,8 +16,8 @@ Film curve parameters in the **Time of Day Editor** correspond to analogous para
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Time Of Day**\.
 
-1. Choose **HDR Settings**, and for **HDR**, adjust the values of the following settings\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/enviro-lighting-hdr-tone-mapping.html)
+1. Choose **HDR Settings**, and for **HDR**, adjust the values of the following settings\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/rendering/lighting/hdr-tone-mapping)
 
 1. Close the **Time of Day** editor\.

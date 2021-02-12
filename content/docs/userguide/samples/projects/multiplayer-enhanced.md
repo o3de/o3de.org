@@ -1,5 +1,5 @@
 ---
-description: ' Use the Multiplayer sample in &ALYlong; to learn how to build and structure
+description: ' Use the Multiplayer sample in Amazon Lumberyard to learn how to build and structure
   multiplayer games that use the GridMate networking library. '
 title: Multiplayer Sample
 ---
@@ -70,59 +70,59 @@ When destroyed, some asteroids spawn collectibles that award a short\-time power
 The following tables list controls for keyboards, controllers, and touch interfaces\.
 
 
-**Keyboard**  
+**Keyboard**
 
-| Key | Action | 
-| --- | --- | 
-| WASD keys | Move the ship relative to the screen \(W is always up, S is always down, and so forth\)\. | 
-| Arrow left, arrow right | Rotate the ship clockwise or counterclockwise\. | 
-| Spacebar | Fire the ship's weapon \(if applicable\)\. | 
-| Tab \(hold\) | Open the Player Stats window\. | 
-
-
-**Controller**  
-
-| Control | Action | 
-| --- | --- | 
-| Left joystick | Move the ship in absolute terms relative to the screen\. | 
-| Right joystick | Rotate the ship clockwise or counterclockwise\. | 
-| Right shoulder button | Fire the ship's weapon \(if applicable\)\. | 
-| Back button \(hold\) | Open the Player Stats window\. | 
+| Key | Action |
+| --- | --- |
+| WASD keys | Move the ship relative to the screen \(W is always up, S is always down, and so forth\)\. |
+| Arrow left, arrow right | Rotate the ship clockwise or counterclockwise\. |
+| Spacebar | Fire the ship's weapon \(if applicable\)\. |
+| Tab \(hold\) | Open the Player Stats window\. |
 
 
-**Touch interface**  
+**Controller**
 
-| Control | Action | 
-| --- | --- | 
-| Virtual joystick \(left side of screen, no visual indication\) | Move the ship in absolute terms relative to the screen\. | 
-| Virtual joystick \(right side of screen, no visual indication\) | Rotate the ship clockwise or counterclockwise\. | 
+| Control | Action |
+| --- | --- |
+| Left joystick | Move the ship in absolute terms relative to the screen\. |
+| Right joystick | Rotate the ship clockwise or counterclockwise\. |
+| Right shoulder button | Fire the ship's weapon \(if applicable\)\. |
+| Back button \(hold\) | Open the Player Stats window\. |
+
+
+**Touch interface**
+
+| Control | Action |
+| --- | --- |
+| Virtual joystick \(left side of screen, no visual indication\) | Move the ship in absolute terms relative to the screen\. |
+| Virtual joystick \(right side of screen, no visual indication\) | Rotate the ship clockwise or counterclockwise\. |
 
 **Notes**
 + As soon as you begin moving with either virtual joystick, the ship begins firing \(if applicable\)\.
-+ These controls can also be accessed by using the mouse \(click to touch\)\. 
++ These controls can also be accessed by using the mouse \(click to touch\)\.
 + If you fire manually, the automatic firing stops until the next input from one of the virtual joysticks\.
 
 ## **Game CVars** {#sample-project-multiplayer-enhanced-game-cvars}
 
 The following console variables can be used with the game\.
 
-**`mps_AISteeringDebug`**  
+**`mps_AISteeringDebug`**
 Specifies whether the debug drawing information for the bot is drawn\.
 
-**`mps_ControllerType number`**  
-Controls the type of `PlayerController` that the client uses to control the assigned ship\. The following table shows the possible values for *number*:    
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sample-project-multiplayer-enhanced.html)
+**`mps_ControllerType number`**
+Controls the type of `PlayerController` that the client uses to control the assigned ship\. The following table shows the possible values for *number*:
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/samples/projects/multiplayer-enhanced)
 
-**`mps_DrawBucketSystem`**  
+**`mps_DrawBucketSystem`**
 Specifies whether the debug information for the bucket system is drawn\.
 
-**`mps_SpawnTag`**  
-Controls what ship is spawned for a player when the player spawns a ship\. Possible values are shown in the following table\.    
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sample-project-multiplayer-enhanced.html)
+**`mps_SpawnTag`**
+Controls what ship is spawned for a player when the player spawns a ship\. Possible values are shown in the following table\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/samples/projects/multiplayer-enhanced)
 
-**`mps_UserName`**  
+**`mps_UserName`**
 Specifies the name for the client in game elements such as the scoreboard or action notification\.
 
 ## Creating a Dedicated Server {#sample-project-multiplayer-enhanced-creating-a-dedicated-server}
@@ -139,7 +139,7 @@ To create a dedicated server for the game, perform the following steps\.
    lmbr_waf configure
    ```
 
-1. Enter the following command which builds everything in the profile, for your version of Visual Studio: 
+1. Enter the following command which builds everything in the profile, for your version of Visual Studio:
 
    ```
    lmbr_waf build_win_x64_vs2017_profile -p all
@@ -159,13 +159,13 @@ To create a dedicated server for the game, perform the following steps\.
 
 The Multiplayer sample is currently supported on a variety of client and server platforms\.
 
-**Clients**  
+**Clients**
 The following playable client platforms are supported:
 + Windows \(Visual Studio 2017 or Visual Studio 2019\)
 + Android
 + iOS
 
-**Dedicated Server Platforms**  
+**Dedicated Server Platforms**
 The following dedicated server platforms are supported:
 + Windows \(Visual Studio 2017 or Visual Studio 2019\)
 + Linux \(Ubuntu\)
@@ -187,12 +187,12 @@ The following are some connection troubleshooting tips\.
 + When trying to host or join a session, you might receive one of the following error messages:
 
   ```
-  Invalid Secure Socket configuration given for hosting a session. 
+  Invalid Secure Socket configuration given for hosting a session.
   Ensure that a Public and Private key are being supplied.
   ```
 
   ```
-  Invalid Secure Socket configuration given for joining an encrypted session. 
+  Invalid Secure Socket configuration given for joining an encrypted session.
   Ensure that a Certificate Authority is being supplied.
   ```
 

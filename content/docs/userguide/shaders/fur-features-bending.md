@@ -1,5 +1,5 @@
 ---
-description: ' Use bending for fur materials in &ALYlong;. '
+description: ' Use bending for fur materials in Amazon Lumberyard. '
 title: Bending
 ---
 # Bending {#shader-ref-fur-features-bending}

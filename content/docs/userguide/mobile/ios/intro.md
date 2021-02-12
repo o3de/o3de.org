@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong; to build games for iOS devices. '
+description: ' Use Amazon Lumberyard to build games for iOS devices. '
 title: iOS Support
 ---
 # iOS Support {#ios-intro}
@@ -11,14 +11,14 @@ Lumberyard includes four iOS\-supported sample projects that you can use to lear
 Lumberyard has the following minimum requirements for iOS:
 
 
-****  
+****
 
-|  |  | 
+|  |  |
 | --- |--- |
-| CPU | ARM v8 or newer | 
-| GPU | A8 or newerSupports Metal | 
-| OS | iOS 13 or newer | 
-| Example devices | iPhone 6 and newer | 
+| CPU | ARM v8 or newer |
+| GPU | A8 or newerSupports Metal |
+| OS | iOS 13 or newer |
+| Example devices | iPhone 6 and newer |
 
 ## Prerequisites {#ios-prerequisites}
 
@@ -57,7 +57,7 @@ The Lumberyard build system can generate the following types of applications:
 + VFS app
 + Release app
 
-**Note**  
+**Note**
 Lumberyard Editor is currently supported on Windows only\. You must export each level of your game project prior to using Asset Processor for your assets\.
 
 ### Development App {#lumberyard-ios-app-anatomy-development-app}

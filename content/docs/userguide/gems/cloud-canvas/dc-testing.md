@@ -1,5 +1,5 @@
 ---
-description: ' Test the &cloud; Dynamic Content Cloud Gem. '
+description: ' Test the Cloud Canvas Dynamic Content Cloud Gem. '
 title: Testing the Dynamic Content System
 ---
 # Testing the Dynamic Content System {#cloud-canvas-cloud-gem-dc-testing}
@@ -41,7 +41,7 @@ To create data that is considered "new" for the purposes of the test, perform th
    + At a command line prompt, enter the following command:
 
    ```
-   lmbr_aws dynamic-content upload-manifest-content --manifest-path DynamicContentTest.json --staging-status PUBLIC 
+   lmbr_aws dynamic-content upload-manifest-content --manifest-path DynamicContentTest.json --staging-status PUBLIC
    ```
    + Use the packer tool to upload the manifest content\. The manifest file that packs up `gameproperties.csv` is `DynamicContentTest.json`\. Normally you should not have to alter `DynamicContentTest.json` for testing purposes\. However, if you want to use it to ensure that your test contains no old test data, configure it like this:
 
@@ -64,7 +64,7 @@ To create data that is considered "new" for the purposes of the test, perform th
    }
    ```
 
-   At this point, you have created and uploaded a `.pak` file that contains the current version of your `gameproperties.csv` file and your manifest\. 
+   At this point, you have created and uploaded a `.pak` file that contains the current version of your `gameproperties.csv` file and your manifest\.
 
 1. Stage the uploads as **PUBLIC**, which means that they are ready for download\. If you used the command line option in the previous step to upload your data, this was done for you with the `--staging-status PUBLIC` option\. If you used the packer tool to perform the upload, open the Cloud Gem Portal from your AWS menu, open your Dynamic Content Gem, and move the ***DynamicContentTest\.manifest\.pak*** file from the **Private **column to the **Public **column\.
 
@@ -76,7 +76,7 @@ After you have saved the `gameproperties.csv` file to reflect local data, you ca
 
 **To test the dynamic content system**
 
-1. Start the **DynamicContentTest** level\. When you start the level, you should see the most recent message that you entered in the game properties file \("LOCAL DATA" in step 6 of [Data Preparation](#cloud-canvas-cloud-gem-dc-testing-data-preparation)\)\. 
+1. Start the **DynamicContentTest** level\. When you start the level, you should see the most recent message that you entered in the game properties file \("LOCAL DATA" in step 6 of [Data Preparation](#cloud-canvas-cloud-gem-dc-testing-data-preparation)\)\.
 
 1. Click **Update**\. You should see the update in 3 to 10 seconds, depending on Lambda function latency\.
 

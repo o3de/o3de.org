@@ -1,5 +1,5 @@
 ---
-description: ' Configure settings for the PhysX system in &ALYlong;. '
+description: ' Configure settings for the PhysX system in Amazon Lumberyard. '
 title: Configuring the PhysX System
 ---
 # Configuring the PhysX System {#physx-configuration}

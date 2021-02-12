@@ -1,5 +1,5 @@
 ---
-description: ' Use the UICheckboxComponent to implement a UI check box in &ALYlong;. '
+description: ' Use the UICheckboxComponent to implement a UI check box in Amazon Lumberyard. '
 title: UICheckboxComponent
 ---
 # UICheckboxComponent {#lua-scripting-ces-api-ui-uicheckboxcomponent}
@@ -47,7 +47,7 @@ Returns the action triggered when the check box is cleared\.
 **Syntax**
 
 ```
-const AZStd::string & GetTurnOffActionName() 
+const AZStd::string & GetTurnOffActionName()
 ```
 
 ### GetTurnOnActionName {#lua-scripting-ces-api-ui-uicheckboxcomponent-uicheckboxbus-getturnonactionname}

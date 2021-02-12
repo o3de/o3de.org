@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIDynamicScrollBoxComponent to set up scrollbox content as
-  a horizontal or vertical list of elements in &ALYlong;. '
+  a horizontal or vertical list of elements in Amazon Lumberyard. '
 title: UIDynamicScrollBoxComponent
 ---
 # UIDynamicScrollBoxComponent {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent}
@@ -18,7 +18,7 @@ Returns the child element at the specified location index\.
 **Syntax**
 
 ```
-AZ::EntityId GetChildElementAtLocationIndex(int index) 
+AZ::EntityId GetChildElementAtLocationIndex(int index)
 ```
 
 ### GetLocationIndexOfChild {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-getlocationindexofchild}
@@ -28,7 +28,7 @@ Returns the location index of the specified child element\. Returns \-1 if not f
 **Syntax**
 
 ```
-int GetLocationIndexOfChild(AZ::EntityId childElement) 
+int GetLocationIndexOfChild(AZ::EntityId childElement)
 ```
 
 ### RefreshContent {#lua-scripting-ces-api-ui-uidynamicscrollboxcomponent-uidynamicscrollboxbus-refreshcontent}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Dynamic Cloud Gem manifest files, EBus events, and
-  service API in &ALYlong;. '
+  service API in Amazon Lumberyard. '
 title: Dynamic Content Engineering Details
 ---
 # Dynamic Content Engineering Details {#cloud-canvas-cloud-gem-dc-engineering}
@@ -16,12 +16,12 @@ The following is a simple example manifest for the `SamplesProject` `DontDie` sa
 ```
 "Files": [
 {
-"hash": "3bebdb5bdb8cff74642e5f7f3dc4e900", 
-"outputRoot": "@user@", 
-"bucketPrefix": "static-data", 
-"keyName": "gameproperties.csv", 
-"cacheRoot": "@assets@", 
-"platformType": "", 
+"hash": "3bebdb5bdb8cff74642e5f7f3dc4e900",
+"outputRoot": "@user@",
+"bucketPrefix": "static-data",
+"keyName": "gameproperties.csv",
+"cacheRoot": "@assets@",
+"platformType": "",
 "localFolder": "staticdata/csv"
 }
 ]
@@ -30,17 +30,17 @@ The following is a simple example manifest for the `SamplesProject` `DontDie` sa
 The following table describes the properties in the manifest file\.
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| hash | MD5 hash of the file\. | 
-| outputRoot | Base output directory\. | 
-| bucketPrefix | Prefix inside the bucket for the file | 
-| keyName | Name of the file key in the bucket, which will be appended to the beginning of the hash\. The final key name has the format bucketPrefix/keyName\. | 
-| cacheRoot | Root directory to search for copies of the outdated file asset\. | 
-| platformType | Windows \(pc\), macOS \(osx\_gl\), or Linux \(linux\)\. An empty value specifies all operating systems\. | 
-| localFolder | Directory to write locally within the outputRoot\. The full output has the format outputRoot/localFolder/keyName\. | 
+| Property | Description |
+| --- | --- |
+| hash | MD5 hash of the file\. |
+| outputRoot | Base output directory\. |
+| bucketPrefix | Prefix inside the bucket for the file |
+| keyName | Name of the file key in the bucket, which will be appended to the beginning of the hash\. The final key name has the format bucketPrefix/keyName\. |
+| cacheRoot | Root directory to search for copies of the outdated file asset\. |
+| platformType | Windows \(pc\), macOS \(osx\_gl\), or Linux \(linux\)\. An empty value specifies all operating systems\. |
+| localFolder | Directory to write locally within the outputRoot\. The full output has the format outputRoot/localFolder/keyName\. |
 
 ## EBus Events {#cloud-canvas-cloud-gem-dc-engineering-ebus-events}
 
@@ -49,7 +49,7 @@ The Dynamic Content Cloud Gem provides an EBus API and includes calls exposed to
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
       requestSuccess,
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestManifest, 
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestManifest,
       manifestName)
 ```
 
@@ -57,14 +57,14 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 `manifestName (char*)` - Name of the manifest file \(for example, `DynamicContentTest.json`\)\. The system handles `.pak` file and operating system naming conventions \(for example, `DynamicContentTest.shared.pak`\)\.
 
-**Requesting pak files without using manifest**  
+**Requesting pak files without using manifest**
 Use the following API calls to request pak files without using a manifest:
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatusList, 
-      uploadRequests, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatusList,
+      uploadRequests,
       autoDownload);
 ```
 
@@ -76,9 +76,9 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatus, 
-      fileName, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateFileStatus,
+      fileName,
       autoDownload);
 ```
 
@@ -90,14 +90,14 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 ### Versioning Support {#cloud-canvas-cloud-gem-dc-engineering-ebus-events-versioning}
 
-**Requesting pak files using versioned manifest**  
+**Requesting pak files using versioned manifest**
 Use the following API calls to request pak files using a manifest when versioning is enabled:
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedManifest, 
-      manifestName, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedManifest,
+      manifestName,
       versionId);
 ```
 
@@ -109,10 +109,10 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedFileStatus, 
-      fileName, 
-      outputFile, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::RequestVersionedFileStatus,
+      fileName,
+      outputFile,
       versionId);
 ```
 
@@ -124,14 +124,14 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 `versionId (char*)` - Version ID of the file\. Uses the current active \(public\) version if not specified\.
 
-**Requesting pak files without using manifest**  
+**Requesting pak files without using manifest**
 Use the following API calls to request files without using a manifest when versioning is enabled:
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatusList, 
-      requestMap, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatusList,
+      requestMap,
       autoDownload);
 ```
 
@@ -143,10 +143,10 @@ CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
 
 ```
 CloudCanvas::DynamicContent::DynamicContentRequestBus::BroadcastResult(
-      requestSuccess, 
-      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatus, 
-      fileName, 
-      autoDownload, 
+      requestSuccess,
+      &CloudCanvas::DynamicContent::DynamicContentRequestBus::Events::UpdateVersionedFileStatus,
+      fileName,
+      autoDownload,
       versionId);
 ```
 
@@ -183,25 +183,25 @@ The Dynamic Content Cloud Gem exposes API calls through Amazon API Gateway for b
 The following tables list the calls for the portal\.
 
 
-****  
+****
 
-| Portal API Call | Description | 
-| --- | --- | 
-| /service/status GET  | Returns the service's status\. | 
-| /portal/info/\{file\_name\} GET  | Return detailed information about a specific file\. This includes the file's name, staging status, staging start and end dates \(optional\), and parent \(optional\)\. | 
-| /portal/info/\{file\_name\} DELETE  | Request deletion of an existing item from the bucket and table\. | 
-| /portal/content GET  | Request the list of files to display in the web portal\. | 
-| /portal/content DELETE  | Request to deletion of all content from the bucket and staging table\. | 
-| /portal/content POST  | Request alteration of the staging settings on a provided list of files\. | 
+| Portal API Call | Description |
+| --- | --- |
+| /service/status GET  | Returns the service's status\. |
+| /portal/info/\{file\_name\} GET  | Return detailed information about a specific file\. This includes the file's name, staging status, staging start and end dates \(optional\), and parent \(optional\)\. |
+| /portal/info/\{file\_name\} DELETE  | Request deletion of an existing item from the bucket and table\. |
+| /portal/content GET  | Request the list of files to display in the web portal\. |
+| /portal/content DELETE  | Request to deletion of all content from the bucket and staging table\. |
+| /portal/content POST  | Request alteration of the staging settings on a provided list of files\. |
 
 The following table lists the calls for the client\.
 
 
-****  
+****
 
-| Client API Call | Description | 
-| --- | --- | 
-| /client/content POST | Request presigned URLs for a list of files, based on the provided version IDs\. The active version will be returned if no version ID is specified\. Returns the URLs or a failure message\. | 
+| Client API Call | Description |
+| --- | --- |
+| /client/content POST | Request presigned URLs for a list of files, based on the provided version IDs\. The active version will be returned if no version ID is specified\. Returns the URLs or a failure message\. |
 
 ## Using Amazon CloudFront {#cloud-canvas-cloud-gem-dc-engineering-cloudfront}
 
@@ -213,13 +213,13 @@ To enable the Amazon CloudFront feature, add deployment tag `content-distributio
 
 lmbr\_aws deployment create \-\-deployment \{deployment\_name\} \-\-tags content\-distribution
 
-To learn how to create a project stack and deployment stack using CloudCanvas command line, read [Using the Cloud Canvas Command Line](https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-command-line.html)\.
+To learn how to create a project stack and deployment stack using CloudCanvas command line, read [Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line)\.
 
 Using this deployment tag will add a few more AWS resources to your deployment stack including a Amazon CloudFront distribution and an S3 bucket\. All of the signed URLs from the DynamicContent gem will be created using Amazon CloudFront automatically after the feature is enabled\.
 
 ### Create and upload CloudFront key pairs {#cloud-canvas-cloud-gem-dc-engineering-cloudfront-upload}
 
-Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies-your trusted signers-must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\. 
+Each AWS account that you use to create Amazon CloudFront signed URLs or signed cookies-your trusted signers-must have its own Amazon CloudFront key pair, and the key pair must be active\. This is required for using Amazon CloudFront with the DynamicContent gem\. Read the AWS document [Creating Amazon CloudFront Key Pairs for Your Trusted Signers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html#private-content-creating-cloudfront-key-pairs) to learn how to create your own key pairs\.
 
 **Note that IAM users can't create Amazon CloudFront key pairs\. You must log in using root credentials to create key pairs\. To learn more about the root credentials, read [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)\.**
 

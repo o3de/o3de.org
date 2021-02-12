@@ -1,21 +1,21 @@
 ---
-description: ' Learn more about the AI Tactical Point System (TPS) in &ALYlong;. '
+description: ' Learn more about the AI Tactical Point System (TPS) in Amazon Lumberyard. '
 title: AI Tactical Point System
 ---
 # AI Tactical Point System {#ai-tactical-point-system}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 The Tactical Point System \(TPS\) provides the AI system with a powerful method of querying an AI agent's environment for places of interest\. It includes the GetHidespot functionality and expands on the "hide" goalop\.
 
-TPS is a structured query language over sets of points in the AI's world\. Using TPS, AI agents can ask intelligent questions about their environment and find relevant types of points, including hidespots, attack points, and navigation waypoints\. The TPS language is simple, powerful, and designed to be very readable\. 
+TPS is a structured query language over sets of points in the AI's world\. Using TPS, AI agents can ask intelligent questions about their environment and find relevant types of points, including hidespots, attack points, and navigation waypoints\. The TPS language is simple, powerful, and designed to be very readable\.
 
-For example, this query requests all points that match the following criteria: 
+For example, this query requests all points that match the following criteria:
 + Generate locations within 7 meters of my current location where I can hide from my attention target\.
 + Only accept places with excellent cover that I can get to before my attention target can\.
 + Prefer locations that are closest to me\.

@@ -1,15 +1,15 @@
 ---
-description: ' Learn about Lua API calls that you can use with &ALY;. '
+description: ' Learn about Lua API calls that you can use with Lumberyard. '
 title: Component Entity Lua API Reference
 ---
 # Component Entity Lua API Reference {#lua-api}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This documentation is preliminary and subject to change\.  | 
+| This documentation is preliminary and subject to change\.  |
 
 You can use the Lua API calls in this reference for scripting the component entity system in Lumberyard\. For a tutorial on writing Lua scripts in Lumberyard, see [Writing Lua Scripts](/docs/userguide/scripting/lua/intro.md)\. For Lua scripting functions that load and unload canvases in Lumberyard Editor, see the [UI Lua Reference](/docs/userguide/scripting/lua/ces-api-ui.md)\.
 
@@ -64,11 +64,11 @@ bool GetVariableValue(AZ::Crc32 variableNameCrc)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  variableNameCrc  |  AZ::Crc32  | The CRC\-32 checksum for the variable name\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  variableNameCrc  |  AZ::Crc32  | The CRC\-32 checksum for the variable name\. |
 
 **Returns:** `true` if successful; otherwise, false\.
 
@@ -87,12 +87,12 @@ void SetVariableValue(AZ::Crc32 variableNameCrc, bool newValue)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  variableNameCrc  |  AZ::Crc32  | The CRC\-32 checksum for the variable name\. | 
-|  newValue  |  bool  | The new value for the variable\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  variableNameCrc  |  AZ::Crc32  | The CRC\-32 checksum for the variable name\. |
+|  newValue  |  bool  | The new value for the variable\. |
 
 ## NavigationComponentRequestBus {#lua-api-navigationcomponentrequestbus}
 
@@ -109,11 +109,11 @@ PathfindRequest::NavigationRequestId FindPathToEntity(AZ::EntityId entityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  entityId  |  AZ::EntityId  | Request EntityId of the entity we want to navigate towards\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  entityId  |  AZ::EntityId  | Request EntityId of the entity we want to navigate towards\.  |
 
 **Returns:** A unique identifier to the pathfinding request\.
 
@@ -132,11 +132,11 @@ void Stop(PathfindRequest::NavigationRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request that is being cancelled\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request that is being cancelled\. |
 
 ## NavigationComponentNotificationBus {#lua-api-navigationcomponentnotificationbus}
 
@@ -153,11 +153,11 @@ void OnSearchingForPath(PathfindRequest::NavigationRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for the path that is being searched\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for the path that is being searched\. |
 
 ### OnTraversalStarted {#lua-api-navigationcomponentnotificationbus-ontraversalstarted}
 
@@ -170,11 +170,11 @@ void OnTraversalStarted(PathfindRequest::NavigationRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has started\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has started\. |
 
 ### OnTraversalInProgress {#lua-api-navigationcomponentnotificationbus-ontraversalinprogress}
 
@@ -187,12 +187,12 @@ void OnTraversalInProgress(PathfindRequest::NavigationRequestId requestId, float
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal is in progress\. | 
-|  distanceRemaining  |  float  | The remaining distance in the current path\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal is in progress\. |
+|  distanceRemaining  |  float  | The remaining distance in the current path\. |
 
 ### OnTraversalComplete {#lua-api-navigationcomponentnotificationbus-ontraversalcomplete}
 
@@ -205,11 +205,11 @@ void OnTraversalComplete(PathfindRequest::NavigationRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has finished\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal has finished\. |
 
 ### OnTraversalCancelled {#lua-api-navigationcomponentnotificationbus-ontraversalcancelled}
 
@@ -222,11 +222,11 @@ void OnTraversalCancelled(PathfindRequest::NavigationRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal was cancelled\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  PathfindRequest::NavigationRequestId  | ID of the request for which traversal was cancelled\. |
 
 ## NavigationSystemRequestBus {#lua-api-navigationsystembus}
 
@@ -243,26 +243,26 @@ virtual NavRayCastResult RayCast(const AZ::Vector3& begin, const AZ::Vector3& di
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| begin  |  Vector3  | The origin of the ray\. | 
-| direction | Vector3 | The direction for the ray to travel\. | 
-| maxDistance | float | The maximum distance the ray travels\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| begin  |  Vector3  | The origin of the ray\. |
+| direction | Vector3 | The direction for the ray to travel\. |
+| maxDistance | float | The maximum distance the ray travels\. |
 
 **Returns:** A `NavRayCastResult`\.
 
 `NavRayCastResult` has the following structure\.
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-| bool m\_collision  | Boolean | Returns true if there was a collision\. The default is false\. | 
-| m\_position | Vector3 | The position of the hit in world space\. The default is AZ::Vector3::CreateZero\(\)\. | 
-| m\_meshId | NavigationMeshId | The mesh ID of the navigation mesh hit\. This is callable from Lua script\. The default is 0\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+| bool m\_collision  | Boolean | Returns true if there was a collision\. The default is false\. |
+| m\_position | Vector3 | The position of the hit in world space\. The default is AZ::Vector3::CreateZero\(\)\. |
+| m\_meshId | NavigationMeshId | The mesh ID of the navigation mesh hit\. This is callable from Lua script\. The default is 0\. |
 
 ## AttachmentComponentRequestBus {#lua-api-attachmentcomponentrequestbus}
 
@@ -279,13 +279,13 @@ void Attach(AZ::EntityId targetId, const char* targetBoneName, const AZ::Transfo
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  targetId  |  AZ::EntityId  | Specifies the ID of the entity to attach to\. | 
-|  targetBoneName  |  char  | Specifies the bone on the target entity to attach to\. If the target bone is not found, then attach to the target entity's transform origin\. | 
-|  offset  |  AZ::Transform  | The attachment's offset from the target\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  targetId  |  AZ::EntityId  | Specifies the ID of the entity to attach to\. |
+|  targetBoneName  |  char  | Specifies the bone on the target entity to attach to\. If the target bone is not found, then attach to the target entity's transform origin\. |
+|  offset  |  AZ::Transform  | The attachment's offset from the target\. |
 
 ### Detach {#lua-api-attachmentcomponentrequestbus-detach}
 
@@ -308,11 +308,11 @@ void SetAttachmentOffset(const AZ::Transform& offset)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  offset  |  AZ::Transform  | The offset from the target\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  offset  |  AZ::Transform  | The offset from the target\. |
 
 ## AttachmentComponentNotificationBus {#lua-api-attachmentcomponentnotificationbus}
 
@@ -329,11 +329,11 @@ void OnAttached(AZ::EntityId targetId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  targetId  |  AZ::EntityId  | The target being attached to\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  targetId  |  AZ::EntityId  | The target being attached to\. |
 
 ### OnDetached {#lua-api-attachmentcomponentnotificationbus-ondetached}
 
@@ -346,11 +346,11 @@ void OnDetached(AZ::EntityId targetId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  targetId  |  AZ::EntityId  | The target being detached from\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  targetId  |  AZ::EntityId  | The target being detached from\. |
 
 ## CharacterAnimationRequestBus {#lua-api-characteranimationrequestbus}
 
@@ -367,12 +367,12 @@ void SetBlendParameter(AZ::u32 blendParameter, float value)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  blendParameter  |  AZ::u32  | Corresponds to EMotionParamID\. | 
-|  value  |  float  | The value to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  blendParameter  |  AZ::u32  | Corresponds to EMotionParamID\. |
+|  value  |  float  | The value to set\. |
 
 ### SetAnimationDrivenMotion {#lua-api-characteranimationrequestbus-setanimationdrivenmotion}
 
@@ -385,11 +385,11 @@ void SetAnimationDrivenMotion(bool useAnimDrivenMotion)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  useAnimDrivenMotion  |  bool  | Specify true to enable animation\-driven root motion; false to disable\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  useAnimDrivenMotion  |  bool  | Specify true to enable animation\-driven root motion; false to disable\. |
 
 ## MannequinRequestsBus {#lua-api-characteranimationrequestbus-mannequinrequestsbus}
 
@@ -406,14 +406,14 @@ FragmentRequestId QueueFragment(int priority, const char* fragmentName, const ch
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  priority  |  int  | Specifies priority\. A higher number means higher priority | 
-|  fragmentName  |  char  | Name of the fragment to be played\. | 
-|  fragTags  |  char  | Fragment tags to be applied\. | 
-|  isPersistent  |  bool  | Specifies persistence\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  priority  |  int  | Specifies priority\. A higher number means higher priority |
+|  fragmentName  |  char  | Name of the fragment to be played\. |
+|  fragTags  |  char  | Fragment tags to be applied\. |
+|  isPersistent  |  bool  | Specifies persistence\. |
 
 **Returns:** A request ID that can be used to identify and make modifications to the request\.
 
@@ -442,11 +442,11 @@ void ResumeAll(IActionController::EResumeFlags resumeFlag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  resumeFlag  |  IActionController::EResumeFlags  | Flag that indicates how the animations are to be resumed\. See the EResumeFlags enum for possible values\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  resumeFlag  |  IActionController::EResumeFlags  | Flag that indicates how the animations are to be resumed\. See the EResumeFlags enum for possible values\. |
 
 ```
 enum EResumeFlags
@@ -469,11 +469,11 @@ void SetTag(const char* tagName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tagName  |  char  | The name of the tag to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tagName  |  char  | The name of the tag to set\. |
 
 ### ClearTag {#lua-api-characteranimationrequestbus-cleartag}
 
@@ -486,11 +486,11 @@ void ClearTag(const char* tagName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tagName  |  char  | The name of the tag to be cleared\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tagName  |  char  | The name of the tag to be cleared\. |
 
 ### SetGroupTag {#lua-api-characteranimationrequestbus-setgrouptag}
 
@@ -503,12 +503,12 @@ void SetGroupTag(const char* groupName, const char* tagName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  groupName  |  char  | The name of the group\. | 
-|  tagName  |  char  | The name of the tag\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  groupName  |  char  | The name of the group\. |
+|  tagName  |  char  | The name of the tag\. |
 
 ### ClearGroup {#lua-api-characteranimationrequestbus-cleargroup}
 
@@ -521,11 +521,11 @@ void ClearGroup(const char* groupName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  groupName  |  char  | The name of the group\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  groupName  |  char  | The name of the group\. |
 
 ### SetScopeContext {#lua-api-characteranimationrequestbus-setscopecontext}
 
@@ -538,13 +538,13 @@ void SetScopeContext(const char* scopeContextName, const AZ::EntityId entityId, 
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  scopeContextName  |  char  | Name of the scope context that the animation database \(\.adb\) file is to be attached to\. | 
-|  entityId  |  AZ::EntityId  | Reference to an entity whose character instance will be bound to this scope context\. | 
-|  animationDatabaseName  |  char  | The path to the animation database file\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  scopeContextName  |  char  | Name of the scope context that the animation database \(\.adb\) file is to be attached to\. |
+|  entityId  |  AZ::EntityId  | Reference to an entity whose character instance will be bound to this scope context\. |
+|  animationDatabaseName  |  char  | The path to the animation database file\. |
 
 ### ClearScopeContext {#lua-api-characteranimationrequestbus-clearscopecontext}
 
@@ -557,11 +557,11 @@ void ClearScopeContext(const char* scopeContextName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  scopeContextName  |  char  | Name of the scope context that is to be cleared\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  scopeContextName  |  char  | Name of the scope context that is to be cleared\. |
 
 ### StopRequest {#lua-api-characteranimationrequestbus-stoprequest}
 
@@ -574,11 +574,11 @@ void StopRequest(FragmentRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | Specifies the ID of the request for which actions should be stopped\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | Specifies the ID of the request for which actions should be stopped\. |
 
 ### GetRequestStatus {#lua-api-characteranimationrequestbus-getrequeststatus}
 
@@ -591,11 +591,11 @@ IAction::EStatus GetRequestStatus(FragmentRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The ID of the request to retrieve status for\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The ID of the request to retrieve status for\. |
 
 **Returns:** The status of the request\.
 
@@ -614,11 +614,11 @@ void ForceFinishRequest(FragmentRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The ID of the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The ID of the request\. |
 
 ### SetRequestSpeedBias {#lua-api-characteranimationrequestbus-setrequestspeedbias}
 
@@ -631,12 +631,12 @@ void SetRequestSpeedBias(FragmentRequestId requestId, float speedBias)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The request ID\. | 
-|  speedBias  |  float  | The speed bias for this animation | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The request ID\. |
+|  speedBias  |  float  | The speed bias for this animation |
 
 ### GetRequestSpeedBias {#lua-api-characteranimationrequestbus-getrequestspeedbias}
 
@@ -649,11 +649,11 @@ float GetRequestSpeedBias(FragmentRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The ID of the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The ID of the request\. |
 
 **Returns:** The speed bias for the indicated request\.
 
@@ -672,12 +672,12 @@ void SetRequestAnimWeight(FragmentRequestId requestId, float animWeight)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The ID of the request\. | 
-|  animWeight  |  float  | The weight for the animation\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The ID of the request\. |
+|  animWeight  |  float  | The weight for the animation\. |
 
 ### GetRequestAnimWeight {#lua-api-characteranimationrequestbus-getrequestanimweight}
 
@@ -690,11 +690,11 @@ float GetRequestAnimWeight(FragmentRequestId requestId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requestId  |  FragmentRequestId  | The ID of the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requestId  |  FragmentRequestId  | The ID of the request\. |
 
 **Returns:** The animation weight for the indicated request\.
 
@@ -733,11 +733,11 @@ SimpleAnimationComponentRequests::Result StartAnimation(const AnimatedLayer& ani
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  animatedLayer  |  AnimatedLayer  | A layer configured with the animation that is to be played on it\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  animatedLayer  |  AnimatedLayer  | A layer configured with the animation that is to be played on it\. |
 
 **Returns:** A `Result` indicating whether the animation was started\.
 
@@ -756,12 +756,12 @@ Result StartAnimationByName(const char* name, AnimatedLayer::LayerId layerId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  name  |  char  | The name of the animation to play\. | 
-|  layerId  |  AnimatedLayer::LayerId  | The layer in which to play the animation | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  name  |  char  | The name of the animation to play\. |
+|  layerId  |  AnimatedLayer::LayerId  | The layer in which to play the animation |
 
 **Returns:** A `Result` indicating whether the animation was started\.
 
@@ -796,12 +796,12 @@ Result StopAnimationsOnLayer(AnimatedLayer::LayerId layerId, float blendOutTime)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  layerId  |  AnimatedLayer::LayerId  | Identifier for the layer that is to stop its animation \(0 \- AnimatedLayer::s\_maxActiveAnimatedLayers\) | 
-|  blendOutTime  |  float  | Time that the animations take to blend out\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  layerId  |  AnimatedLayer::LayerId  | Identifier for the layer that is to stop its animation \(0 \- AnimatedLayer::s\_maxActiveAnimatedLayers\) |
+|  blendOutTime  |  float  | Time that the animations take to blend out\. |
 
 **Returns:** A `Result` indicating whether the animation on the indicated layer was stopped\.
 
@@ -820,12 +820,12 @@ Result SetPlaybackSpeed(AnimatedLayer::LayerId layerId, float playbackSpeed)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  layerId  |  AnimatedLayer::LayerId  | Identifier for the layer whose speed should be changed\. | 
-|  playbackSpeed  |  float  | The playback speed\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  layerId  |  AnimatedLayer::LayerId  | Identifier for the layer whose speed should be changed\. |
+|  playbackSpeed  |  float  | The playback speed\. |
 
 **Returns:** A `Result` indicating whether the animation on the indicated layer was updated or not\. A failure likely indicated that no animation is playing on the specified layer\.
 
@@ -848,11 +848,11 @@ void OnAnimationStarted(const AnimatedLayer& animatedLayer)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  animatedLayer  |  AnimatedLayer  | Specifies the name and parameters of the animation that was started\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  animatedLayer  |  AnimatedLayer  | Specifies the name and parameters of the animation that was started\. |
 
 ### OnAnimationStopped {#lua-api-simpleanimationcomponentnotificationbus-onanimationstopped}
 
@@ -865,11 +865,11 @@ void OnAnimationStopped(const AnimatedLayer::LayerId animatedLayer)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  animatedLayer  |  AnimatedLayer::LayerId  | Specifies the name and parameters of the animation that was stopped\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  animatedLayer  |  AnimatedLayer::LayerId  | Specifies the name and parameters of the animation that was stopped\. |
 
 ## AudioEnvironmentComponentRequestBus {#lua-api-audioenvironmentcomponentrequestbus}
 
@@ -886,11 +886,11 @@ void SetAmount(float amount)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  amount  |  float  | The amount for the environment\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  amount  |  float  | The amount for the environment\. |
 
 ### SetEnvironmentAmount {#lua-api-audioenvironmentcomponentrequestbus-setenvironmentamount}
 
@@ -903,12 +903,12 @@ void SetEnvironmentAmount(const char* environmentName,float amount)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  environmentName  |  char  | The name of the environment\. | 
-|  amount  |  float  | The amount for the environment\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  environmentName  |  char  | The name of the environment\. |
+|  amount  |  float  | The amount for the environment\. |
 
 ## AudioListenerComponentRequestBus {#lua-api-audiolistenercomponentrequestbus}
 
@@ -925,11 +925,11 @@ void SetRotationEntity(const AZ::EntityId entityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  entityId  |  AZ::EntityId  | The ID of the entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  entityId  |  AZ::EntityId  | The ID of the entity\. |
 
 ### SetPositionEntity {#lua-api-audiolistenercomponentrequestbus-setpositionentity}
 
@@ -942,11 +942,11 @@ void SetPositionEntity(const AZ::EntityId entityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  entityId  |  AZ::EntityId  | The ID of the entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  entityId  |  AZ::EntityId  | The ID of the entity\. |
 
 ### SetFullTransformEntity {#lua-api-audiolistenercomponentrequestbus-setfulltransformentity}
 
@@ -959,11 +959,11 @@ void SetFullTransformEntity(const AZ::EntityId entityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  entityId  |  AZ::EntityId  | The ID of the entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  entityId  |  AZ::EntityId  | The ID of the entity\. |
 
 ## AudioRtpcComponentRequestBus {#lua-api-audiortpccomponentrequestbus}
 
@@ -980,11 +980,11 @@ void SetValue(float value)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  value  |  float  | The RTPC value to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  value  |  float  | The RTPC value to set\. |
 
 ### SetRtpcValue {#lua-api-audiortpccomponentrequestbus-setrtpcvalue}
 
@@ -997,12 +997,12 @@ void SetRtpcValue(const char* rtpcName, float value)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  rtpcName  |  char  | Specifies an RTPC name to use\. | 
-|  value  |  float  | Specifies a value for the RTPC name supplied\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  rtpcName  |  char  | Specifies an RTPC name to use\. |
+|  value  |  float  | Specifies a value for the RTPC name supplied\. |
 
 ## AudioSwitchComponentRequestBus {#lua-api-audioswitchcomponentrequestbus}
 
@@ -1019,11 +1019,11 @@ void SetState(const char* stateName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  stateName  |  char  | Specifies the name of the state to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  stateName  |  char  | Specifies the name of the state to set\. |
 
 ### SetSwitchState {#lua-api-audioswitchcomponentrequestbus-setswitchstate}
 
@@ -1036,12 +1036,12 @@ void SetSwitchState(const char* switchName, const char* stateName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  switchName  |  char  | The name of the switch to set\. | 
-|  stateName  |  char  | The name of the state to set on the specified switch\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  switchName  |  char  | The name of the switch to set\. |
+|  stateName  |  char  | The name of the state to set on the specified switch\. |
 
 ## AudioTriggerComponentRequestBus {#lua-api-audiotriggercomponentrequestbus}
 
@@ -1078,11 +1078,11 @@ void ExecuteTrigger(const char* triggerName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  triggerName  |  char  | Specifies the name of the trigger to execute\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  triggerName  |  char  | Specifies the name of the trigger to execute\. |
 
 ### KillTrigger {#lua-api-audiotriggercomponentrequestbus-killtrigger}
 
@@ -1095,11 +1095,11 @@ void KillTrigger(const char* triggerName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  triggerName  |  char  | Specifies the name of the trigger to remove\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  triggerName  |  char  | Specifies the name of the trigger to remove\. |
 
 ### KillAllTriggers {#lua-api-audiotriggercomponentrequestbus-killalltriggers}
 
@@ -1122,11 +1122,11 @@ void SetMovesWithEntity(bool shouldTrackEntity)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  shouldTrackEntity  |  bool  | Specify true to have the trigger track the entity\. Specify false to have the trigger not track the entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  shouldTrackEntity  |  bool  | Specify true to have the trigger track the entity\. Specify false to have the trigger not track the entity\. |
 
 ## AudioTriggerComponentNotificationBus {#lua-api-audiotriggercomponentnotificationbus}
 
@@ -1143,11 +1143,11 @@ void OnTriggerFinished(const Audio::TAudioControlID triggerID)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  triggerID  |  Audio::TAudioControlID  | The ID of the trigger\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  triggerID  |  Audio::TAudioControlID  | The ID of the trigger\. |
 
 ## FloatGameplayNotificationBus \(AZ::GameplayNotificationBus<float>\) {#lua-api-floatgameplaynotificationbus-}
 
@@ -1212,12 +1212,12 @@ void Move(const AZ::Vector3& velocity, int jump)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  velocity  |  AZ::Vector3  | Requested velocity \(direction and magnitude\)\. | 
-|  jump  |  int  | Controls how the value for the velocity parameter is applied within a Living Entity\. To change the velocity to the new value, specify 1\. To add the value to the current velocity, specify 2\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  velocity  |  AZ::Vector3  | Requested velocity \(direction and magnitude\)\. |
+|  jump  |  int  | Controls how the value for the velocity parameter is applied within a Living Entity\. To change the velocity to the new value, specify 1\. To add the value to the current velocity, specify 2\. |
 
 ## ConstraintComponentRequestBus {#lua-api-constraintcomponentrequestbus}
 
@@ -1234,12 +1234,12 @@ void SetConstraintEntities(const AZ::EntityId& owningEntity, const AZ::EntityId&
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  owningEntity  |  AZ::EntityId  | Specifies the ID of the entity that owns the constraint\. | 
-|  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. The target is invalid if constrained to world space\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  owningEntity  |  AZ::EntityId  | Specifies the ID of the entity that owns the constraint\. |
+|  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. The target is invalid if constrained to world space\. |
 
 ### SetConstraintEntitiesWithPartIds {#lua-api-constraintcomponentrequestbus-setconstraintentitieswithpartids}
 
@@ -1252,14 +1252,14 @@ void SetConstraintEntitiesWithPartIds(const AZ::EntityId& owningEntity, int owne
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  owningEntity  |  AZ::EntityId  | Specifies the ID of the entity that owns the constraint\. | 
-|  ownerPartId  |  int  | Specifies the ID of the owner part \(the bone ID\) for the constraint\. | 
-|  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. | 
-|  targetPartId  |  int  | Specifies the ID of the target part \(the bone ID\) for the constraint\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  owningEntity  |  AZ::EntityId  | Specifies the ID of the entity that owns the constraint\. |
+|  ownerPartId  |  int  | Specifies the ID of the owner part \(the bone ID\) for the constraint\. |
+|  targetEntity  |  AZ::EntityId  | Specifies the ID of the entity that is the target of the constraint\. |
+|  targetPartId  |  int  | Specifies the ID of the target part \(the bone ID\) for the constraint\. |
 
 ### EnableConstraint {#lua-api-constraintcomponentrequestbus-enableconstraint}
 
@@ -1289,7 +1289,7 @@ This EBus interface handles messages dispatched by the Constraint component\.
 
 This event fires when either the constraint owner or target changes\. The target is invalid if constrained to world space\.
 
-**Note**  
+**Note**
 This event also fires when `partId` values change\.
 
 **Syntax**
@@ -1299,14 +1299,14 @@ void OnConstraintEntitiesChanged(const AZ::EntityId& oldOwner, const AZ::EntityI
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  oldOwner  |  AZ::EntityId  | Specifies the ID of the entity that owned the constraint\. | 
-|  oldTarget  |  AZ::EntityId  | Specifies the ID of the entity that was the target of the constraint\. | 
-|  newOwner  |  AZ::EntityId  | Specifies the ID of the entity that is the new owner of the constraint\.  | 
-|  newTarget  |  AZ::EntityId  | Specifies the ID of the entity that is the new target of the constraint\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  oldOwner  |  AZ::EntityId  | Specifies the ID of the entity that owned the constraint\. |
+|  oldTarget  |  AZ::EntityId  | Specifies the ID of the entity that was the target of the constraint\. |
+|  newOwner  |  AZ::EntityId  | Specifies the ID of the entity that is the new owner of the constraint\.  |
+|  newTarget  |  AZ::EntityId  | Specifies the ID of the entity that is the new target of the constraint\.  |
 
 ### OnConstraintEnabled {#lua-api-constraintcomponentnotificationbus-onconstraintenabled}
 
@@ -1379,11 +1379,11 @@ void AddImpulse(const AZ::Vector3& impulse)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  impulse  |  AZ::Vector3  | Vector of the impulse\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  impulse  |  AZ::Vector3  | Vector of the impulse\. |
 
 ### AddAngularImpulse {#lua-api-physicscomponentrequestbus-addangularimpulse}
 
@@ -1396,12 +1396,12 @@ void AddAngularImpulse(const AZ::Vector3& /*impulse*/, const AZ::Vector3& worldS
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  impulse  |  AZ::Vector3  | Vector of the impulse\. | 
-|  worldSpacePivot  |  AZ::Vector3  | Vector of the world space pivot to apply to the entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  impulse  |  AZ::Vector3  | Vector of the impulse\. |
+|  worldSpacePivot  |  AZ::Vector3  | Vector of the world space pivot to apply to the entity\. |
 
 ### GetVelocity {#lua-api-physicscomponentrequestbus-getvelocity}
 
@@ -1430,11 +1430,11 @@ void SetVelocity(const AZ::Vector3& velocity)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  velocity  |  AZ::Vector3  | Specifies the velocity to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  velocity  |  AZ::Vector3  | Specifies the velocity to set\. |
 
 ### GetAcceleration {#lua-api-physicscomponentrequestbus-getacceleration}
 
@@ -1479,11 +1479,11 @@ void SetAngularVelocity(const AZ::Vector3& angularVelocity)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  angularVelocity  |  AZ::Vector3  | The angular velocity to set\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  angularVelocity  |  AZ::Vector3  | The angular velocity to set\. |
 
 ### GetAngularAcceleration {#lua-api-physicscomponentrequestbus-getangularacceleration}
 
@@ -1525,7 +1525,7 @@ This bus handles events emitted by a Physics component and by the Physics system
 
 Fires when an entity begins participating in the physics simulation\. If the entity is active when a handler connects to the bus, then `OnPhysicsEnabled`\(\) is immediately dispatched\.
 
-**Note**  
+**Note**
 If physics is enabled, `OnPhysicsEnabled` fires immediately upon connecting to the bus\.
 
 **Syntax**
@@ -1555,11 +1555,11 @@ void OnCollision(const Collision& collision)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  collision  |  Collision  | Contains information about the collision that occurred\. See the following Collision struct\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  collision  |  Collision  | Contains information about the collision that occurred\. See the following Collision struct\. |
 
 ```
 struct Collision
@@ -1593,15 +1593,15 @@ RayCastHit RayCast(const AZ::Vector3& begin, const AZ::Vector3& direction, float
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  begin  |  const AZ::Vector3&  | The origin of the ray | 
-|  direction  |  const AZ::Vector3&  | The direction for the ray to travel | 
-|  maxDistance  |  float  | The maximum distance the ray will travel | 
-|  maxHits  |  AZ::u32  | The maximum number of hits to return from the search\. | 
-|  query  |  AZ::u32  | The entity types to hit\. See the PhysicalEntityTypes enum that follows\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  begin  |  const AZ::Vector3&  | The origin of the ray |
+|  direction  |  const AZ::Vector3&  | The direction for the ray to travel |
+|  maxDistance  |  float  | The maximum distance the ray will travel |
+|  maxHits  |  AZ::u32  | The maximum number of hits to return from the search\. |
+|  query  |  AZ::u32  | The entity types to hit\. See the PhysicalEntityTypes enum that follows\. |
 
 **Returns:** A `RayCastHit` struct\. For details, see the code listing that follows\.
 
@@ -1618,7 +1618,7 @@ struct RayCastHit
    float m_distance = 0.0f;    // The distance from RayCast begin to the hit.
    AZ::Vector3 m_position;     // The position of the hit in world space.
    AZ::Vector3 m_normal;       // The normal of the surface hit.
-   AZ::EntityId m_entityId;    // The ID of the AZ::Entity hit, or 
+   AZ::EntityId m_entityId;    // The ID of the AZ::Entity hit, or
                                // AZ::InvalidEntityId if hit object is not an AZ::Entity.
 };
 ```
@@ -1662,11 +1662,11 @@ void SetVisibility(bool visible)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  visible  |  bool  | Specify true to make the decal visible, false to hide it\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  visible  |  bool  | Specify true to make the decal visible, false to hide it\. |
 
 ### Show {#lua-api-decalcomponentrequestbus-show}
 
@@ -1703,11 +1703,11 @@ void SetLensFlareState(State state)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  state  |  State  | Specify On to turn on the lens flare; specify Off to turn it off\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  state  |  State  | Specify On to turn on the lens flare; specify Off to turn it off\. |
 
 ### TurnOnLensFlare {#lua-api-lensflarecomponentrequestbus-turnonlensflare}
 
@@ -1778,11 +1778,11 @@ void SetLightState(State state)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  state  |  State  | Specify On to turn on the light; specify Off to turn it off\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  state  |  State  | Specify On to turn on the light; specify Off to turn it off\. |
 
 ### TurnOnLight {#lua-api-lightcomponentrequestbus-turnonlight}
 
@@ -1853,11 +1853,11 @@ void SetVisibility(bool visible)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  visible  |  bool  | Specify true to make the particle component visible; false to hide it\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  visible  |  bool  | Specify true to make the particle component visible; false to hide it\. |
 
 ### Show {#lua-api-particlecomponentrequestbus-show}
 
@@ -1890,12 +1890,12 @@ void SetupEmitter(const AZStd::string& emitterName, const ParticleEmitterSetting
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  emitterName  |  const AZStd::string&  | The name of the emitter to set up\. | 
-|  settings  |  const ParticleEmitterSettings&  | Contains particle emitter settings\. For more information, see ParticleComponent\.cpp\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  emitterName  |  const AZStd::string&  | The name of the emitter to set up\. |
+|  settings  |  const ParticleEmitterSettings&  | Contains particle emitter settings\. For more information, see ParticleComponent\.cpp\. |
 
 ## SimpleStateComponentRequestBus {#lua-api-simplestatecomponentrequestbus}
 
@@ -1912,11 +1912,11 @@ void SetState(const char* stateName)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  stateName  |  char  | The name of the state\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  stateName  |  char  | The name of the state\. |
 
 ### SetStateByIndex {#lua-api-simplestatecomponentrequestbus-setstatebyindex}
 
@@ -1929,11 +1929,11 @@ void SetStateByIndex(AZ::u32 stateIndex)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  stateIndex  |  AZ::u32  | The 0\-based index of the state\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  stateIndex  |  AZ::u32  | The 0\-based index of the state\. |
 
 ### SetToNextState {#lua-api-simplestatecomponentrequestbus-settonextstate}
 
@@ -2022,12 +2022,12 @@ void OnStateChanged(const char* oldState, const char* newState)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  oldState  |  char  | The name of the old state\. | 
-|  newState  |  char  | The name of the new state\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  oldState  |  char  | The name of the old state\. |
+|  newState  |  char  | The name of the new state\. |
 
 ## SpawnerComponentRequestBus {#lua-api-spawnercomponentrequestbus}
 
@@ -2060,11 +2060,11 @@ AzFramework::SliceInstantiationTicket SpawnRelative(const AZ::Transform& relativ
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  relative  |  AZ::Transform  | Relative offset from the entity's location\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  relative  |  AZ::Transform  | Relative offset from the entity's location\. |
 
 **Returns:** A slice instantiation ticket\.
 
@@ -2083,11 +2083,11 @@ AzFramework::SliceInstantiationTicket SpawnAbsolute(const AZ::Transform& world)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  world  | const AZ::Transform& | Specifies the world transform at which to spawn the selected slice\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  world  | const AZ::Transform& | Specifies the world transform at which to spawn the selected slice\. |
 
 **Returns:** A slice instantiation ticket\.
 
@@ -2110,11 +2110,11 @@ void OnSpawnBegin(const AzFramework::SliceInstantiationTicket& ticket)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. |
 
 ### OnSpawnEnd {#lua-api-spawnercomponentnotificationbus-onspawnend}
 
@@ -2127,11 +2127,11 @@ void OnSpawnEnd(const AzFramework::SliceInstantiationTicket& ticket)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. |
 
 ### OnEntitySpawned {#lua-api-spawnercomponentnotificationbus-onentityspawned}
 
@@ -2144,12 +2144,12 @@ void OnEntitySpawned(const AzFramework::SliceInstantiationTicket& ticket, const 
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. | 
-|  spawnedEntities  |  AZ::EntityId  | The ID of the spawned entity\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  ticket  |  AzFramework::SliceInstantiationTicket  | The slice instantiation ticket\. |
+|  spawnedEntities  |  AZ::EntityId  | The ID of the spawned entity\. |
 
 ## TagComponentRequestBus {#lua-api-tagcomponentrequestbus}
 
@@ -2166,11 +2166,11 @@ bool HasTag(const Tag&)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  Tag  | The tag to query for\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  Tag  | The tag to query for\. |
 
 **Returns:** `true` if the entity has the specified tag; `false` otherwise\.
 
@@ -2189,11 +2189,11 @@ void AddTag(const Tag&)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  Tag  |  Tag  | The tag to add\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  Tag  |  Tag  | The tag to add\. |
 
 ### AddTags {#lua-api-tagcomponentrequestbus-addtags}
 
@@ -2206,11 +2206,11 @@ void AddTags(const Tags& tags)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tags  |  Tags  | The list of tags to add\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tags  |  Tags  | The list of tags to add\. |
 
 ### RemoveTag {#lua-api-tagcomponentrequestbus-removetag}
 
@@ -2223,11 +2223,11 @@ void RemoveTag(const Tag&)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  Tag  | The tag to remove\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  Tag  | The tag to remove\. |
 
 ### RemoveTags {#lua-api-tagcomponentrequestbus-removetags}
 
@@ -2240,11 +2240,11 @@ void RemoveTags(const Tags& tags)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tags  |  Tags  | The list of tags to remove\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tags  |  Tags  | The list of tags to remove\. |
 
 ### GetTags {#lua-api-tagcomponentrequestbus-gettags}
 
@@ -2345,11 +2345,11 @@ void AddRequiredTag(const Tag& requiredTag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requiredTag  |  Tag  | The tag to add to the activation filtering criteria\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requiredTag  |  Tag  | The tag to add to the activation filtering criteria\. |
 
 ### RemoveRequiredTag {#lua-api-triggerarearequestsbus-removerequiredtag}
 
@@ -2362,11 +2362,11 @@ void RemoveRequiredTag(const Tag& requiredTag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  requiredTag  |  Tag  | The tag to remove from the activation filtering criteria\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  requiredTag  |  Tag  | The tag to remove from the activation filtering criteria\. |
 
 ### AddExcludedTag {#lua-api-triggerarearequestsbus-addexcludedtag}
 
@@ -2379,11 +2379,11 @@ void AddExcludedTag(const Tag& excludedTag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  excludedTag  |  Tag  | The excluded tag to add to the activation filtering criteria\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  excludedTag  |  Tag  | The excluded tag to add to the activation filtering criteria\. |
 
 ### RemoveExcludedTag {#lua-api-triggerarearequestsbus-removeexcludedtag}
 
@@ -2396,11 +2396,11 @@ void RemoveExcludedTag(const Tag& excludedTag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  excludedTag  |  Tag  | The excluded tag to remove from the activation filtering criteria\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  excludedTag  |  Tag  | The excluded tag to remove from the activation filtering criteria\. |
 
 ## TriggerAreaNotificationBus {#lua-api-triggerareanotificationbus}
 
@@ -2417,11 +2417,11 @@ void OnTriggerAreaEntered(AZ::EntityId enteringEntityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  enteringEntityId  |  AZ::EntityId  | The ID of the entity that entered the trigger area\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  enteringEntityId  |  AZ::EntityId  | The ID of the entity that entered the trigger area\. |
 
 ### OnTriggerAreaExited {#lua-api-triggerareanotificationbus-ontriggerareaexited}
 
@@ -2434,11 +2434,11 @@ void OnTriggerAreaExited(AZ::EntityId exitingEntityId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  exitingEntityId  |  AZ::EntityId  | The ID of the entity that exited the trigger area\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  exitingEntityId  |  AZ::EntityId  | The ID of the entity that exited the trigger area\. |
 
 ## TriggerAreaEntityNotificationBus {#lua-api-triggerareaentitynotificationbus}
 
@@ -2455,11 +2455,11 @@ void OnEntityEnteredTriggerArea(AZ::EntityId triggerId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  triggerId  |  AZ::EntityId  | The ID of the trigger that has been entered\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  triggerId  |  AZ::EntityId  | The ID of the trigger that has been entered\. |
 
 ### OnEntityExitedTriggerArea {#lua-api-triggerareaentitynotificationbus-onentityexitedtriggerarea}
 
@@ -2472,11 +2472,11 @@ void OnEntityExitedTriggerArea(AZ::EntityId triggerId)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  triggerId  |  AZ::EntityId  | The ID of the trigger that has been exited\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  triggerId  |  AZ::EntityId  | The ID of the trigger that has been exited\. |
 
 ## BoxShapeComponentRequestsBus {#lua-api-boxshapecomponentrequestsbus}
 
@@ -2507,11 +2507,11 @@ void SetBoxDimensions(AZ::Vector3 newDimensions)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newDimensions  |  AZ::Vector3  | Specifies dimensions along the X, Y, and Z axes\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newDimensions  |  AZ::Vector3  | Specifies dimensions along the X, Y, and Z axes\. |
 
 ## CapsuleShapeComponentRequestsBus {#lua-api-capsuleshapecomponentrequestsbus}
 
@@ -2544,11 +2544,11 @@ void SetHeight(float newHeight)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newHeight  |  float  | Specifies the new height of the capsule\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newHeight  |  float  | Specifies the new height of the capsule\. |
 
 ### SetRadius {#lua-api-capsuleshapecomponentrequestsbus-setradius}
 
@@ -2561,11 +2561,11 @@ void SetRadius(float newRadius)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newRadius  |  float  | Specifies the new radius of the capsule\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newRadius  |  float  | Specifies the new radius of the capsule\. |
 
 ## CylinderShapeComponentRequestsBus {#lua-api-cylindershapecomponentrequestsbus}
 
@@ -2598,11 +2598,11 @@ void SetHeight(float newHeight)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newHeight  |  float  | Specifies the height of the cylinder\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newHeight  |  float  | Specifies the height of the cylinder\. |
 
 ### SetRadius {#lua-api-cylindershapecomponentrequestsbus-setradius}
 
@@ -2615,11 +2615,11 @@ void SetRadius(float newRadius)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newRadius  |  float  | Specifies the radius of the cylinder\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newRadius  |  float  | Specifies the radius of the cylinder\. |
 
 ## ShapeComponentRequestsBus {#lua-api-shapecomponentrequestsbus}
 
@@ -2652,11 +2652,11 @@ bool IsPointInside(const AZ::Vector3& point)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  point  |  AZ::Vector3  | Specifies the coordinates of the point to be tested\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  point  |  AZ::Vector3  | Specifies the coordinates of the point to be tested\. |
 
 **Returns:** A `bool` value that indicates whether the point is inside or out\.
 
@@ -2675,11 +2675,11 @@ float DistanceFromPoint(const AZ::Vector3& point)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  point  |  AZ::Vector3  | Specifies the coordinates of the point from which to calculate distance\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  point  |  AZ::Vector3  | Specifies the coordinates of the point from which to calculate distance\.  |
 
 **Returns:** A float that indicates the distance the point is from the shape\.
 
@@ -2698,11 +2698,11 @@ float DistanceSquaredFromPoint(const AZ::Vector3& point)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  point  |  AZ::Vector3  | Specifies the coordinates of the point from which to calculate the squared distance\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  point  |  AZ::Vector3  | Specifies the coordinates of the point from which to calculate the squared distance\. |
 
 **Returns:** A float that contains the minimum squared distance the specified point is from the shape\.
 
@@ -2725,11 +2725,11 @@ void OnShapeChanged(ShapeChangeReasons changeReason)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  changeReason  |  ShapeChangeReasons  | Informs listeners of the reason for this shape change \(transform change, the shape dimensions being altered\.\) | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  changeReason  |  ShapeChangeReasons  | Informs listeners of the reason for this shape change \(transform change, the shape dimensions being altered\.\) |
 
 ## SphereShapeComponentRequestsBus {#lua-api-sphereshapecomponentrequestsbus}
 
@@ -2762,11 +2762,11 @@ void SetRadius(float newRadius)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  newRadius  |  float  | Specifies the radius of the sphere shape\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  newRadius  |  float  | Specifies the radius of the sphere shape\. |
 
 ## EntityBus {#lua-api-entitybus}
 
@@ -2796,7 +2796,7 @@ void OnEntityDeactivated(const AZ::EntityId&)
 
 Tick events are executed on the main game or component thread\.
 
-**Note**  
+**Note**
 Warning: Adding mutex to the tick bus degrades performance in most cases\.
 
 ### OnTick {#lua-api-tickbus-ontick}
@@ -2810,12 +2810,12 @@ void OnTick(float deltaTime, ScriptTimePoint time)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  deltaTime  |  float  | The latest time between ticks\. | 
-|  time  |  ScriptTimePoint  | The time at the current tick\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  deltaTime  |  float  | The latest time between ticks\. |
+|  time  |  ScriptTimePoint  | The time at the current tick\. |
 
 ## TickRequestBus {#lua-api-tickrequestbus}
 
@@ -2868,12 +2868,12 @@ void OnTransformChanged(const Transform& local, const Transform& world)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  local  |  Transform  | The local transform of the entity\. | 
-|  world  |  Transform  | The world transform\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  local  |  Transform  | The local transform of the entity\. |
+|  world  |  Transform  | The world transform\. |
 
 ### OnParentChanged {#lua-api-transformnotificationbus-onparentchanged}
 
@@ -2886,12 +2886,12 @@ void OnParentChanged(EntityId oldParent, EntityId newParent)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  oldParent  |  EntityId  | The entity ID of the old parent\. | 
-|  newParent  |  EntityId  | The entity ID of the new parent\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  oldParent  |  EntityId  | The entity ID of the old parent\. |
+|  newParent  |  EntityId  | The entity ID of the new parent\. |
 
 ## GameEntityContextRequestBus {#lua-api-gameentitycontextrequestbus}
 
@@ -2908,11 +2908,11 @@ void DestroyGameEntity(const AZ::EntityId& id)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. |
 
 ### DestroyGameEntityAndDescendants {#lua-api-gameentitycontextrequestbus-destroygameentityanddescendants}
 
@@ -2925,11 +2925,11 @@ void DestroyGameEntityAndDescendants(AZ::EntityId& id)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. The entity's descendants will also be destroyed\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  id  |  AZ::EntityId  | The ID of the entity to be destroyed\. The entity's descendants will also be destroyed\. |
 
 ### ActivateGameEntity {#lua-api-gameentitycontextrequestbus-activategameentity}
 
@@ -2942,11 +2942,11 @@ void ActivateGameEntity(AZ::EntityId& id)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  id  |  AZ::EntityId  | The ID of the entity to activate\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  id  |  AZ::EntityId  | The ID of the entity to activate\. |
 
 ### DeactivateGameEntity {#lua-api-gameentitycontextrequestbus-deactivategameentity}
 
@@ -2959,11 +2959,11 @@ void DeactivateGameEntity(AZ::EntityId& id)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  id  |  AZ::EntityId  | The ID of the entity to deactivate\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  id  |  AZ::EntityId  | The ID of the entity to deactivate\. |
 
 ### DestroySliceByEntity {#lua-api-gameentitycontextrequestbus-destroyslicebyentity}
 
@@ -2976,11 +2976,11 @@ bool DestroySliceByEntity(AZ::EntityId& id)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  id  |  AZ::EntityId  |  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  id  |  AZ::EntityId  |  |
 
 **Returns**: `true` if the slice instance was successfully destroyed\.
 
@@ -3003,11 +3003,11 @@ float RandomFloat()
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  AZStd::string  | The tag\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  AZStd::string  | The tag\. |
 
 **Returns:** A random value between \[0\.0f, 1\.0f\)\.
 
@@ -3026,11 +3026,11 @@ bool RandomBool(const AZStd::string& tag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  AZStd::string  | The tag\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  AZStd::string  | The tag\. |
 
 **Returns:** A random Boolean value\.
 
@@ -3049,11 +3049,11 @@ unsigned int RandomInt(const AZStd::string& tag)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  AZStd::string  | The tag\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  AZStd::string  | The tag\. |
 
 **Returns:** A random unsigned integer value\.
 
@@ -3072,13 +3072,13 @@ unsigned int RandomInRange(const AZStd::string& tag, unsigned int min, unsigned 
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  tag  |  AZStd::string  | The tag\. | 
-|  min  |  unsigned int  | The minimum value that can be returned\. | 
-|  max  |  unsigned int  | The maximum value that can be returned\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  tag  |  AZStd::string  | The tag\. |
+|  min  |  unsigned int  | The minimum value that can be returned\. |
+|  max  |  unsigned int  | The maximum value that can be returned\. |
 
 **Returns:** A random unsigned integer value within the specified range\.
 
@@ -3181,11 +3181,11 @@ void SetFov(float fov)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  fov  |  float  | The field of view in degrees\. Possible values are 0 < fov < 180\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  fov  |  float  | The field of view in degrees\. Possible values are 0 < fov < 180\. |
 
 ### SetNearClipDistance {#lua-api-camerarequestbus-setnearclipdistance}
 
@@ -3198,11 +3198,11 @@ void SetNearClipDistance(float nearClipDistance)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  nearClipDistance  |  float  | The distance from the camera in meters\. The value should be small, but greater than 0\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  nearClipDistance  |  float  | The distance from the camera in meters\. The value should be small, but greater than 0\. |
 
 ### SetFarClipDistance {#lua-api-camerarequestbus-setfarclipdistance}
 
@@ -3215,11 +3215,11 @@ void SetFarClipDistance(float farClipDistance)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  farClipDistance  |  float  | The distance from the camera in meters\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  farClipDistance  |  float  | The distance from the camera in meters\. |
 
 ### SetFrustumWidth {#lua-api-camerarequestbus-setfrustumwidth}
 
@@ -3232,11 +3232,11 @@ void SetFrustumWidth(float width)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  width  |  float  | The camera frustum's width\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  width  |  float  | The camera frustum's width\. |
 
 ### SetFrustumHeight {#lua-api-camerarequestbus-setfrustumheight}
 
@@ -3249,11 +3249,11 @@ void SetFrustumHeight(float height)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  height  |  float  | The camera frustum's height\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  height  |  float  | The camera frustum's height\. |
 
 ### MakeActiveView {#lua-api-camerarequestbus-makeactiveview}
 
@@ -3280,12 +3280,12 @@ void OnHttpRequestSuccess(int responseCode, AZStd::string responseBody)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  responseCode  |  int  | The response code\. | 
-|  responseBody  |  AZStd::string  | The body of the response\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  responseCode  |  int  | The response code\. |
+|  responseBody  |  AZStd::string  | The body of the response\. |
 
 ### OnHttpRequestFailure {#lua-api-httpclientcomponentnotificationbus-onhttprequestfailure}
 
@@ -3298,11 +3298,11 @@ void OnHttpRequestFailure(int responseCode)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  responseCode  |  int  | The response code\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  responseCode  |  int  | The response code\. |
 
 ## HttpClientComponentRequestBus {#lua-api-httpclientcomponentrequestbus}
 
@@ -3319,13 +3319,13 @@ void MakeHttpRequest(AZStd::string url, AZStd::string method, AZStd::string json
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  url  |  AZStd::string  | The request URL\. | 
-|  method  |  AZStd::string  | The HTTP request method\. | 
-|  jsonBody  |  AZStd::string  | The JSON body of the request\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  url  |  AZStd::string  | The request URL\. |
+|  method  |  AZStd::string  | The HTTP request method\. |
+|  jsonBody  |  AZStd::string  | The JSON body of the request\. |
 
 ## HMDDeviceRequestBus {#lua-api-hmddevicerequestbus}
 
@@ -3368,11 +3368,11 @@ void SetTrackingLevel(const AZ::VR::HMDTrackingLevel level)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  level  |  AZ::VR::HMDTrackingLevel  |  The tracking level to use with the current HMD\. Possible values: `kHead` \- The sensor reads as if the player is standing\. `kFloor` \- The sensor reads as if the player is seated or on the floor\.  | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  level  |  AZ::VR::HMDTrackingLevel  |  The tracking level to use with the current HMD\. Possible values: `kHead` \- The sensor reads as if the player is standing\. `kFloor` \- The sensor reads as if the player is seated or on the floor\.  |
 
 ### OutputHMDInfo {#lua-api-hmddevicerequestbus-outputhmdinfo}
 
@@ -3431,11 +3431,11 @@ TrackingState* GetTrackingState(ControllerIndex controllerIndex)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  controllerIndex  |  int  | Specify 0 for the left controller; 1 for the right controller\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  controllerIndex  |  int  | Specify 0 for the left controller; 1 for the right controller\. |
 
 **Returns:** A pointer to the `TrackingState` object for the connected controller\.
 
@@ -3454,11 +3454,11 @@ bool IsConnected(ControllerIndex controllerIndex)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  controllerIndex  |  int  | Specify 0 for the left controller; 1 for the right controller\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  controllerIndex  |  int  | Specify 0 for the left controller; 1 for the right controller\. |
 
 **Returns:** A Boolean that indicates whether the specified controller is connected\.
 
@@ -3511,11 +3511,11 @@ void EnableLooping(bool enable)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  enable  |  bool  | Specify true to loop; false to not loop\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  enable  |  bool  | Specify true to loop; false to not loop\. |
 
 ### IsPlaying {#lua-api-videoplaybackrequestbus-isplaying}
 
@@ -3544,11 +3544,11 @@ void SetPlaybackSpeed(float speedFactor)
 ```
 
 
-****  
+****
 
-| Parameter | Type | Description | 
-| --- | --- | --- | 
-|  speedFactor  |  float  | The speed modification factor to apply to playback speed\. For example, specify 0\.5f to play at half speed or 2\.0f to play at double speed\. | 
+| Parameter | Type | Description |
+| --- | --- | --- |
+|  speedFactor  |  float  | The speed modification factor to apply to playback speed\. For example, specify 0\.5f to play at half speed or 2\.0f to play at double speed\. |
 
 ## VideoPlaybackNotificationBus {#lua-api-videoplaybacknotificationbus}
 

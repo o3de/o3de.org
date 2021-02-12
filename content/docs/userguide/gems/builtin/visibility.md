@@ -1,6 +1,6 @@
 ---
 description: ' Enable the Visibility gem to add the Vis Area component to your game
-  project in &ALYlong;. '
+  project in Amazon Lumberyard. '
 title: Visibility
 ---
 # Visibility {#gems-system-gem-visibility}

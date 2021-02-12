@@ -1,13 +1,13 @@
 ---
-description: ' Use the &ALYlong; Compute Farm cloud gem to divide and conquer large-scale
-  tasks for processing on a fleet of &EC2; instances. '
+description: ' Use the Amazon Lumberyard Compute Farm cloud gem to divide and conquer large-scale
+  tasks for processing on a fleet of EC2 instances. '
 title: Compute Farm Cloud Gem
 ---
 # Compute Farm Cloud Gem {#cloud-canvas-cloud-gem-compute-farm}
 
 The Compute Farm cloud gem is a tool for large\-scale divide and conquer tasks that can be processed on a fleet of Amazon EC2 instances\. This cloud gem is particularly suited for heavy\-duty, computationally intensive Windows tasks like nav mesh generation, static lightmap baking, and terrain generation\. In general, the Compute Farm cloud gem is designed for tasks that can be highly parallelized with recursive subdivision\.
 
-The Compute Farm cloud gem has the following three major aspects: 
+The Compute Farm cloud gem has the following three major aspects:
 
 1. **Harness** - The brain of the cloud gem that orchestrates the task\. The harness is a Python script that runs on every Amazon EC2 instance\. The script continuously polls the [Amazon Simple Workflow Service \(SWF\)](https://aws.amazon.com/swf/) for decisions that need to be made and activities that must be run\. You can customize the harness for your own purposes\.
 

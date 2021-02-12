@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; component serialization versioning system to validate
+description: ' Use the Amazon Lumberyard component serialization versioning system to validate
   and update the serialized data of your components. '
 title: Versioning your Component Serialization
 ---
@@ -19,10 +19,10 @@ Successful conversion of serialized data to a newer version requires careful pla
 + [Upgrade Class Builders](#component-entity-system-versioning-builders)
 + [Deprecation](#component-entity-system-versioning-deprecation)
 
-**Important**  
+**Important**
 If you upgraded to Lumberyard v1\.23 or later from a previous version of Lumberyard, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
-**Important**  
+**Important**
 If you are using Lumberyard v1\.22 or earlier, be sure to read important information about [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
 
 ## Version Converters {#component-entity-system-versioning-converters}
@@ -67,8 +67,8 @@ if (rootElement.GetVersion() <= 1)
 	// This line of code:
 	//  using Events = AZStd::vector<EBusEventEntry>;
 	//  is changed to this:
-	//  using EventMap = AZStd::unordered_map<AZ::Crc32, EBusEventEntry>; 
-	auto ebusEventEntryElements = AZ::Utils::FindDescendantElements(serializeContext, rootElement, AZStd::vector<AZ::Crc32>{AZ_CRC("m_events", 0x191405b4), AZ_CRC("element", 0x41405e39)}); 
+	//  using EventMap = AZStd::unordered_map<AZ::Crc32, EBusEventEntry>;
+	auto ebusEventEntryElements = AZ::Utils::FindDescendantElements(serializeContext, rootElement, AZStd::vector<AZ::Crc32>{AZ_CRC("m_events", 0x191405b4), AZ_CRC("element", 0x41405e39)});
 	EBusEventHandler::EventMap eventMap;
 	for (AZ::SerializeContext::DataElementNode* ebusEventEntryElement : ebusEventEntryElements)
 	{
@@ -80,20 +80,20 @@ if (rootElement.GetVersion() <= 1)
 		AZ::Crc32 key = AZ::Crc32(eventEntry.m_eventName.c_str());
 		AZ_Assert(eventMap.find(key) == eventMap.end(), "Duplicated event found while converting EBusEventHandler from version 1 to 2.");
 		eventMap[key] = eventEntry;
-	} 
+	}
     // Remove the previous Events element.
-	rootElement.RemoveElementByName(AZ_CRC("m_events", 0x191405b4)); 
+	rootElement.RemoveElementByName(AZ_CRC("m_events", 0x191405b4));
     // Replace it with the new EventMap element.
 	if (rootElement.AddElementWithData(serializeContext, "m_eventMap", eventMap) == -1)
 	{
 		return false;
-	} 
+	}
 	return true;
 }
 ```
 
-**Note**  
-If you need to emit a warning or error when a conversion fails \(for example, for asset builds\), use the `AZ_Warning` or `AZ_Error` macro\. For related source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Debug\Trace.h`\. 
+**Note**
+If you need to emit a warning or error when a conversion fails \(for example, for asset builds\), use the `AZ_Warning` or `AZ_Error` macro\. For related source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Debug\Trace.h`\.
 
 ## Upgrade Class Builders {#component-entity-system-versioning-builders}
 
@@ -134,7 +134,7 @@ class ExampleClass
     ...
     DataStruct m_data;
 };
- 
+
 serializeContext->Class<ExampleClass>()
     ->Version(5)
     ->Field("StructData", &ExampleClass::m_data)
@@ -158,7 +158,7 @@ class ExampleClass
         ->Field("MyData", &ExampleClass::m_data);
     }
 };
- 
+
 // Serialization Context for Version 5:
 class ExampleClass
 {
@@ -189,13 +189,13 @@ class ExampleClass
         ->Field("MyData", &ExampleClass::m_data);
     }
 };
- 
+
 // Serialization Context for Version 5:
 struct MyData
 {
     int m_data;
 };
- 
+
 class ExampleClass
 {
     ...
@@ -214,9 +214,9 @@ class ExampleClass
 
 The following examples demonstrate more complex usage of class builders\.
 
-**Example : Multiple Upgrades in One Version**  
-Type changes take priority over name changes\. You can apply both in the same version upgrade, but the type change is applied first\. Therefore, always specify the *old* field name in the `TypeChange` when changing both a type and a name at the same time\.  
-In the following example, a `TypeChange` changes the type from `float` to `int`\. It is immediately followed by a `NameChange` that changes the serialized name from `"FloatData"` to `"IntData"`\.  
+**Example : Multiple Upgrades in One Version**
+Type changes take priority over name changes\. You can apply both in the same version upgrade, but the type change is applied first\. Therefore, always specify the *old* field name in the `TypeChange` when changing both a type and a name at the same time\.
+In the following example, a `TypeChange` changes the type from `float` to `int`\. It is immediately followed by a `NameChange` that changes the serialized name from `"FloatData"` to `"IntData"`\.
 
 ```
 // Serialization Context for Version 4:
@@ -231,7 +231,7 @@ class ExampleClass
             ->Field("FloatData", &ExampleClass::m_data);
     }
 };
- 
+
 // Serialization Context for Version 5:
 class ExampleClass
 {
@@ -248,9 +248,9 @@ class ExampleClass
 };
 ```
 
-**Example : Version Skipping**  
-A `TypeChange` can skip multiple versions\. Skipping versions should be used only when intermediate type changes contain conversions that could lose data\.  
-In the following example, using `ExampleClass`, the member variable `m_data` changes from a `float` in version 1 to an `int` in version 2\. Then in version 3, `m_data` changes back to a `float`\. Multiple `TypeChange` class builders are used to avoid losing the floating point precision when upgrading older overrides to version 3, while still providing the ability to fix data patches written using version 2 of `ExampleClass`\.  
+**Example : Version Skipping**
+A `TypeChange` can skip multiple versions\. Skipping versions should be used only when intermediate type changes contain conversions that could lose data\.
+In the following example, using `ExampleClass`, the member variable `m_data` changes from a `float` in version 1 to an `int` in version 2\. Then in version 3, `m_data` changes back to a `float`\. Multiple `TypeChange` class builders are used to avoid losing the floating point precision when upgrading older overrides to version 3, while still providing the ability to fix data patches written using version 2 of `ExampleClass`\.
 
 ```
 // Version 1 of ExampleClass:
@@ -265,7 +265,7 @@ class ExampleClass
             ->Field("Data", &ExampleClass::m_data);
     }
 };
- 
+
 // Version 2 of ExampleClass:
 class ExampleClass
 {
@@ -279,7 +279,7 @@ class ExampleClass
             ->TypeChange<float, int>("Data", 1, 2, [](float in)->int { return (int)in; });
     }
 };
- 
+
 // Version 3 of ExampleClass:
 class ExampleClass
 {
@@ -305,5 +305,5 @@ The serialization context also supports deprecation of a previously reflected cl
 The following example shows the use of the `ClassDeprecate` method\.
 
 ```
-serializeContext->ClassDeprecate("DeprecatedClass", "{893CA46E-6D1A-4D27-94F7-09E26DE5AE4B}"); 
+serializeContext->ClassDeprecate("DeprecatedClass", "{893CA46E-6D1A-4D27-94F7-09E26DE5AE4B}");
 ```

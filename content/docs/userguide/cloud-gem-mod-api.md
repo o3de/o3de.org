@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the API calls that the &ALYlong; Message of the Day Cloud
+description: ' Learn about the API calls that the Amazon Lumberyard Message of the Day Cloud
   Gem uses. '
 title: Cloud Gem Message of the Day API Calls
 ---

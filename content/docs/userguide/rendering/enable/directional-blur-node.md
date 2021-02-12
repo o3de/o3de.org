@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Directional Blur node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Directional Blur node in the Amazon Lumberyard Script Canvas
   editor to configure directional blur effects. '
 title: Enable Directional Blur
 ---
@@ -15,25 +15,25 @@ To disable the effect, see [Disable Directional Blur](/docs/userguide/rendering/
 
 ![\[enabledirectionalblur, directionalblurnode\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-directional-blur-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Directional Blur node to enable blur effects at a specific angle on the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-directional-blur-node-example.png)
 
 ## Inputs {#enable-directional-blur-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Direction | Vector2 | Indicates the direction and strength of the blur, in the screen space\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Direction | Vector2 | Indicates the direction and strength of the blur, in the screen space\. |
 
 ## Outputs {#enable-directional-blur-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

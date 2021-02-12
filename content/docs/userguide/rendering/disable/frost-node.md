@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Frost node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Frost node in the Amazon Lumberyard Script Canvas editor
   to disable frost effects. '
 title: Disable Frost
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Frost](/docs/userguide/rendering/enable/frost-
 ## Inputs {#disable-frost-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
 
 ## Outputs {#disable-frost-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

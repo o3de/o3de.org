@@ -1,7 +1,7 @@
 ---
-description: ' Use the Open and &AWS; Console or Permissions and &cloud; menus in
-  &ly-editor; to work with &cloud;. '
-title: '&cloud; Tools in &ly-editor;'
+description: ' Use the Open and AWS Console or Permissions and Cloud Canvas menus in
+  Lumberyard Editor to work with Cloud Canvas. '
+title: 'Cloud Canvas Tools in Lumberyard Editor'
 ---
 # Cloud Canvas Tools in Lumberyard Editor {#cloud-canvas-ui-intro}
 
@@ -11,7 +11,7 @@ The tools in Lumberyard Editor make it easy for you to connect your game to AWS\
 
 The **AWS** menu has the following options:
 +  **Credentials manager** - Select or manage one or more AWS profiles that provide credentials to access your AWS account\. For more information, see [Managing Cloud Canvas Profiles](/docs/userguide/gems/cloud-canvas/ui-credentials-manager.md)\.
-+  **Cloud Canvas** - Choose from among the following options:  
++  **Cloud Canvas** - Choose from among the following options:
 ![\[Cloud Canvas menu\]](/images/userguide/cloud_canvas/cloud-canvas-ui-aws-cloud-canvas.png)
   + **Select a Deployment** - Specify the set of AWS resources for the project that you want Lumberyard Editor to work with\. For more information, see [Making a Cloud Canvas Deployment Active](/docs/userguide/gems/cloud-canvas/ui-select-deployment.md)\.
   + **Cloud Canvas Resource Manager** - Define and manage the AWS resources for your Lumberyard project\. For a conceptual introduction to resource manager, see [Understanding Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview.md)\.
@@ -20,7 +20,7 @@ The **AWS** menu has the following options:
   + [https://merch.amazon.com/landing](https://merch.amazon.com/landing) - Create themed T\-shirts for your game\.
   +  [https://developer.amazon.com/mac-pc](https://developer.amazon.com/mac-pc) - Distribute your Windows and macOS applications to customers\.
 +  **GameLift** - Use the Amazon GameLift service to rapidly deploy and scale session\-based multiplayer games with no upfront costs\. For more information, see [Amazon GameLift](https://aws.amazon.com/gamelift/)\. The **GameLift** menu itself also has links to more information\.
-+  **Open AWS Console** - Get quick access to the main AWS Management Console and to the consoles for Amazon Cognito, DynamoDB, Amazon S3, and Lambda:  
++  **Open AWS Console** - Get quick access to the main AWS Management Console and to the consoles for Amazon Cognito, DynamoDB, Amazon S3, and Lambda:
 ![\[Open the AWS Management Console\]](/images/userguide/cloud_canvas/cloud-canvas-ui-open-aws-console.png)
 
   These links use your currently active AWS profile to connect to AWS\. You can use **Credentials Manager** to select which profile is active\.

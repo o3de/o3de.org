@@ -1,17 +1,17 @@
 ---
 description: ' Understand the anatomy of a slice and the slice data patch format in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Anatomy of a Slice
 ---
 # Anatomy of a Slice {#dynamic-slices-overview-anatomy}
 
-The following diagram illustrates an example slice A, which contains references to two other slices B and C\. Slice A has two instances each of B and C: 
+The following diagram illustrates an example slice A, which contains references to two other slices B and C\. Slice A has two instances each of B and C:
 
 ![\[Anatomy of an example slice\]](/images/userguide/component/dynamic-slices-anatomy.png)
 
-Each instance contains a data patch, which may be empty if no changes or overrides are present\. If the instantiation of slice B in slice A has been modified in comparison with the source asset B, the data patch contains the differences\. When slice A is instantiated again, it contains instances of slice B, but with the modifications applied\. Any nonoverridden fields propagate through the hierarchy\. If you change a property value in the slice B asset on disk, the instance of B contained in slice A will reflect that change - if the property for that instance has not already been overridden, as reflected in the instance's data patch\. 
+Each instance contains a data patch, which may be empty if no changes or overrides are present\. If the instantiation of slice B in slice A has been modified in comparison with the source asset B, the data patch contains the differences\. When slice A is instantiated again, it contains instances of slice B, but with the modifications applied\. Any nonoverridden fields propagate through the hierarchy\. If you change a property value in the slice B asset on disk, the instance of B contained in slice A will reflect that change - if the property for that instance has not already been overridden, as reflected in the instance's data patch\.
 
-In addition to references to other slices, slices can contain zero or more entities\. These entities are original to this slice and are not acquired through referenced slice instances\. A slice does not have to contain references to other slices\. A slice that contains only original entities \(as represented by the bottom box in the diagram\) and no references to other slices is called a *leaf slice*\. 
+In addition to references to other slices, slices can contain zero or more entities\. These entities are original to this slice and are not acquired through referenced slice instances\. A slice does not have to contain references to other slices\. A slice that contains only original entities \(as represented by the bottom box in the diagram\) and no references to other slices is called a *leaf slice*\.
 
 Slice files in a Lumberyard project have the extension `".slice"`\. They are stored in an XML format\.
 
@@ -38,7 +38,7 @@ Component names, data types, and version information are readily identifiable in
 </Class>
 ```
 
-**Note**  
+**Note**
 The Slice Upgrade Pipeline introduced in Lumberyard v1\.23 helps you convert your slices to this new format\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
 ### Hexadecimal Data Patch Format \(v1\.22 and earlier\) {#slice-data-patch-hexadecimal}

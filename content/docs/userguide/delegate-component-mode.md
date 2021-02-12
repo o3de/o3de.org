@@ -1,5 +1,5 @@
 ---
-description: ' Add a ComponentModeDelegate to your component in &ALYlong;. '
+description: ' Add a ComponentModeDelegate to your component in Amazon Lumberyard. '
 title: 'Step 2: Add a ComponentModeDelegate'
 ---
 # Step 2: Add a ComponentModeDelegate {#delegate-component-mode}
@@ -10,17 +10,17 @@ To add this feature to the **Point Light** component, you must update the compon
 
 1. Navigate to the `EditorPointLightComponent.h` file and open the file in a text editor\.
 
-1. Add the `ComponentModeDelegate`\.  
-**Example EditorPointLightComponent\.h**  
+1. Add the `ComponentModeDelegate`\.
+**Example EditorPointLightComponent\.h**
 
 ------
 #### [ Before ]
 
    ```
    #pragma once
-     
+
    #include "EditorLightComponent.h"
-     
+
    namespace LmbrCentral
    {
        /*!
@@ -32,11 +32,11 @@ To add this feature to the **Point Light** component, you must update the compon
        {
        public:
            AZ_COMPONENT(EditorPointLightComponent, "{00818135-138D-42AD-8657-FF3FD38D9E7A}", AzToolsFramework::Components::EditorComponentBase);
-     
+
            static void Reflect(AZ::ReflectContext* context);
-     
+
            void Init() override;
-     
+
        protected:
            const char* GetLightTypeText() const override
            {
@@ -53,13 +53,13 @@ To add this feature to the **Point Light** component, you must update the compon
 
    ```
    #pragma once
-     
+
    #include "EditorLightComponent.h"
-     
+
    // BEGIN ADD
    #include <AzToolsFramework/ComponentMode/ComponentModeDelegate.h>
    // END ADD
-     
+
    namespace LmbrCentral
    {
        /**
@@ -71,23 +71,23 @@ To add this feature to the **Point Light** component, you must update the compon
        {
        public:
            AZ_COMPONENT(EditorPointLightComponent, "{00818135-138D-42AD-8657-FF3FD38D9E7A}", AzToolsFramework::Components::EditorComponentBase);
-     
+
            static void Reflect(AZ::ReflectContext* context);
-     
+
            void Init() override;
            // BEGIN ADD
            void Activate() override;
            void Deactivate() override;
            // END ADD
-     
+
        protected:
            const char* GetLightTypeText() const override
            {
                return "Point Light";
            }
-     
+
            // BEGIN ADD
-           using ComponentModeDelegate = AzToolsFramework::ComponentModeFramework::ComponentModeDelegate;            
+           using ComponentModeDelegate = AzToolsFramework::ComponentModeFramework::ComponentModeDelegate;
            ComponentModeDelegate m_componentModeDelegate; ///< Responsible for detecting ComponentMode activation
                                                           ///< and creating a concrete ComponentMode(s).
            /// END ADD
@@ -107,7 +107,7 @@ Now that you've updated the `EditorPointLightComponent.h` file, you must make ch
 
 1. In a text editor, open the `EditorPointLightComponent.cpp` file\.
 
-1. Add an `#include` for the unwritten Component Mode and comment out the change\. This becomes the `EditorPointLightComponentMode.h` file\. 
+1. Add an `#include` for the unwritten Component Mode and comment out the change\. This becomes the `EditorPointLightComponentMode.h` file\.
 
    ```
    // #include "EditorPointLightComponentMode.h"
@@ -125,7 +125,7 @@ Now that you've updated the `EditorPointLightComponent.h` file, you must make ch
    ->DataElement(AZ::Edit::UIHandlers::Default, &EditorPointLightComponent::m_componentModeDelegate, "Component Mode", "Point Light Component Mode")
        ->Attribute(AZ::Edit::Attributes::Visibility, AZ::Edit::PropertyVisibility::ShowChildrenOnly)
    ```
-**Tip**  
+**Tip**
 The `Attribute` ensures that the **Edit** button appears inline without being nested inside the `ComponentModeDelegate` class/struct\.
 
 1. Inside the `Activate` call, add the following code\.
@@ -136,19 +136,19 @@ The `Attribute` ensures that the **Edit** button appears inline without being ne
            AZ::EntityComponentIdPair(GetEntityId(), GetId()), nullptr);
    ```
 
-   1. The helper function `ConnectWithSingleComponentMode` handles the most common case of adding a Component Mode\. This call wraps a more complex API where multiple Component Modes can be activated at the same time\. 
+   1. The helper function `ConnectWithSingleComponentMode` handles the most common case of adding a Component Mode\. This call wraps a more complex API where multiple Component Modes can be activated at the same time\.
 
       For example, see the `EditorTubeShapeComponent.h` file\.
 
    1. Specify the component type and Component Mode itself\.
-**Note**  
+**Note**
 The template parameters generalize connecting and instantiating Component Modes\. For more information, see the `CreateComponentModeBuilder.h` and its `AddComponentModes` function\.
 
-   1. Specify the `EntityId` that the component is attached to and the `ComponentId`\. 
-**Note**  
+   1. Specify the `EntityId` that the component is attached to and the `ComponentId`\.
+**Note**
 It's possible \(although not often used\) to address an EBus not only by the `EntityId` but by the `EntityId` and `ComponentId` pair\. A `ComponentId` isn't guaranteed to be unique on its own, but when it's combined with an `EntityId`, you can target a specific component attached to an entity\. This is useful when you have multiple components of the same type attached to a single entity\.
 
-   1. The final argument is a `nullptr`, which is an `EditorComponentSelectionRequestBus::Handler`\. To use this handler, the `EditorComponent` must implement the `EditorComponentSelectionRequestsBus`\. If the EBus was implemented, you can pass `'this'` here, but as you haven't implemented it yet, enter `nullptr` for now\. 
+   1. The final argument is a `nullptr`, which is an `EditorComponentSelectionRequestBus::Handler`\. To use this handler, the `EditorComponent` must implement the `EditorComponentSelectionRequestsBus`\. If the EBus was implemented, you can pass `'this'` here, but as you haven't implemented it yet, enter `nullptr` for now\.
 
       These changes enable you to double\-click in the viewport to select a component\. You implement the `EditorComponentSelectionRequestBus` in [Step 5: Handle Selection in the Viewport](/docs/userguide/handling-selection-viewport.md)\.
 
@@ -162,17 +162,17 @@ It's possible \(although not often used\) to address an EBus not only by the `En
 
    This change ensures that the `ComponentModeDelegate` disconnects from the various EBuses that are connected to in the `Activate` function\.
 
-**Example EditorPointLightComponent\.cpp**  
-Your code should look like the following\.  
+**Example EditorPointLightComponent\.cpp**
+Your code should look like the following\.
 
 ```
 #include "LmbrCentral_precompiled.h"
 #include "EditorPointLightComponent.h"
- 
+
 #include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <AzCore/RTTI/BehaviorContext.h>
- 
+
 namespace LmbrCentral
 {
     void EditorPointLightComponent::Reflect(AZ::ReflectContext* context)
@@ -182,7 +182,7 @@ namespace LmbrCentral
             serializeContext->Class<EditorPointLightComponent, EditorLightComponent>()
                 ->Version(1)
                 ;
- 
+
             if (AZ::EditContext* editContext = serializeContext->GetEditContext())
             {
                 editContext->Class<EditorPointLightComponent>(
@@ -198,13 +198,13 @@ namespace LmbrCentral
                         ;
             }
         }
-        
+
         if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
         {
             behaviorContext->Class<EditorPointLightComponent>()->RequestBus("EditorPointLightComponentBus");
         }
     }
- 
+
     void EditorPointLightComponent::Init()
     {
         SetLightType(EditorLightConfiguration::LightType::Point);
@@ -219,11 +219,11 @@ namespace LmbrCentral
 // BEGIN ADD
 // #include "EditorPointLightComponentMode.h"
 // END ADD
- 
+
 #include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <AzCore/RTTI/BehaviorContext.h>
- 
+
 namespace LmbrCentral
 {
     void EditorPointLightComponent::Reflect(AZ::ReflectContext* context)
@@ -236,7 +236,7 @@ namespace LmbrCentral
                 ->Field("ComponentMode", &EditorPointLightComponent::m_componentModeDelegate)
                 // END ADD
                 ;
- 
+
             if (AZ::EditContext* editContext = serializeContext->GetEditContext())
             {
                 editContext->Class<EditorPointLightComponent>(
@@ -256,19 +256,19 @@ namespace LmbrCentral
                         ;
             }
         }
-        
+
         if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
         {
             behaviorContext->Class<EditorPointLightComponent>()->RequestBus("EditorPointLightComponentBus");
         }
     }
- 
+
     void EditorPointLightComponent::Init()
     {
         SetLightType(EditorLightConfiguration::LightType::Point);
         EditorLightComponent::Init();
     }
- 
+
     // BEGIN ADD
     void EditorPointLightComponent::Activate()
     {

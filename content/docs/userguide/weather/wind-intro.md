@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic wind effects in your &ALY; level environment. '
+description: ' Create realistic wind effects in your Lumberyard level environment. '
 title: Adding Wind Effects
 ---
 # Adding Wind Effects {#weather-wind-intro}

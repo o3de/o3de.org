@@ -1,6 +1,6 @@
 ---
 description: ' Use the DefectReporterSample level to test the Defect Reporter cloud
-  gem in &ALYlong;. '
+  gem in Amazon Lumberyard. '
 title: Using the Defect Reporter Cloud Gem Sample Level
 ---
 # Using the Defect Reporter Cloud Gem Sample Level {#cloud-canvas-cloud-gem-defect-reporter-sample-level}
@@ -10,7 +10,7 @@ You can use the DefectReporterSample level that is included with Lumberyard to g
 ## Prerequisites {#cloud-canvas-cloud-gem-defect-reporter-sample-level-prerequisites}
 
 This tutorial assumes the following:
-+ You have used the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) to set **CloudGemDefectReportSample** as your default project\.
++ You have used the [Project Configurator](/docs/userguide/configurator/intro) to set **CloudGemDefectReportSample** as your default project\.
 + You used the Cloud Canvas Resource Manager or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A project stack for your project\.
   + A deployment for your project that has the **CloudGemDefectReporter** and **CloudGemMetric** cloud gems enabled\.
@@ -37,18 +37,18 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 
 1. Choose **DefectReporterSample**, and then click **Open**\.
 
-1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.  
+1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.
 ![\[DefectReporterSample level\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-1.png)
 
-1. To generate a defect report, press **F1**\. A status box in the lower left of the screen informs you that data collection is in progress\.  
+1. To generate a defect report, press **F1**\. A status box in the lower left of the screen informs you that data collection is in progress\.
 ![\[Report collection in progress in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-2.png)
 
-   Data collection takes a few moments\. When it is completed, the status box informs you that the report is available to view and annotate\.  
+   Data collection takes a few moments\. When it is completed, the status box informs you that the report is available to view and annotate\.
 ![\[Defect report available in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-3.png)
 
 1. Press **F1** to generate a few more reports\.
 
-1. To view and annotate the reports, click the status box or press **F5**\. This opens the Defect Report Editor\.  
+1. To view and annotate the reports, click the status box or press **F5**\. This opens the Defect Report Editor\.
 ![\[Defect Report Editor in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-4.png)
 
    The Defect Report Editor has the following fields:
@@ -59,15 +59,15 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 
    1. **Custom Field** - Provides an area to gather custom data\. You can create custom fields in the Cloud Gem Portal\. For more information, see [Creating Custom Data Collection Fields](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp#cloud-canvas-cloud-gem-defect-reporter-cgp-custom-data-collection-fields-creating)\.
 
-   1. **Error Message** - A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.  
+   1. **Error Message** - A text box in which you can enter information regarding the error\. The box can be empty or contain a relevant error message\. You can add your own comments to the box\. The box holds a maximum of 180 characters\.
 ![\[Box for contextual information about the error in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-5.png)
 
-   1.  **Screenshot** - Shows a screenshot of the level at the time that the error occurred\. 
+   1.  **Screenshot** - Shows a screenshot of the level at the time that the error occurred\.
 
-1. To switch reports, click the navigation arrows at the bottom of the editor\.  
+1. To switch reports, click the navigation arrows at the bottom of the editor\.
 ![\[Navigation arrows in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-6.png)
 
-1. To manage the reports, use the buttons under the screenshot\.  
+1. To manage the reports, use the buttons under the screenshot\.
 ![\[Deleting a report in the DefectReporterSample level.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-7.png)
 
    1. **Delete** - Deletes the report\.
@@ -80,7 +80,7 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 
 1. For this tutorial, click **Submit All** to submit the reports that you generated\.
 
-   The editor informs you of the success or failure of the operation\.   
+   The editor informs you of the success or failure of the operation\.
 ![\[Report sent successfully\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-defect-reporter-sample-level-9.png)
 
 1.  Click **Close** to close the Defect Report Editor\. When you have more than one issue but submit just one, the Defect Reporter remains open\.
@@ -88,7 +88,7 @@ After you submit the reports, you can view them in the [Using the Defect Reporte
 1. Press **ESC** to stop the sample level\.
 
 The reports are available in the Cloud Gem Portal in about 10 minutes\. To accelerate the process, do one of the following:
-+ 
++
 
 **To use the Game Metrics Cloud Gem Portal**
 
@@ -100,8 +100,8 @@ The reports are available in the Cloud Gem Portal in about 10 minutes\. To accel
 
   1. Wait until the area under the **Crawl** button shows the following message:
 
-     The AWS GLUE data crawler is READY\. 
-+ 
+     The AWS GLUE data crawler is READY\.
++
 
 **To use the `lmbr_aws` command and the Game Metrics Cloud Gem Portal**
 
@@ -119,6 +119,6 @@ The reports are available in the Cloud Gem Portal in about 10 minutes\. To accel
 
   1. Wait until the area under the **Crawl** button shows the following message:
 
-      The AWS GLUE data crawler is READY\. 
+      The AWS GLUE data crawler is READY\.
 
 To view and manage the reports, see the [Using the Defect Reporter Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/defect-reporter-cgp.md)\.

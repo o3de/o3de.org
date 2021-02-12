@@ -1,6 +1,6 @@
 ---
 description: ' Use the Behavior Tree component to load and run a behavior tree for
-  the attached entity in &ALYlong;. '
+  the attached entity in Amazon Lumberyard. '
 title: Behavior Tree
 ---
 # Behavior Tree {#component-behavior-tree}
@@ -11,10 +11,10 @@ Use the **Behavior Tree** component to load and run a [Modular Behavior Tree Nod
 
 The **Behavior Tree** component has the following properties:
 
-**Behavior tree asset**  
+**Behavior tree asset**
 Select an `XML` file that contains a behavior tree definition\.
 
-**Enabled initially**  
+**Enabled initially**
 When selected, the behavior tree is loaded and activated with the entity\.
 
 ## EBus Request Bus Interface {#component-behavior-tree-ebusrequest}
@@ -27,66 +27,66 @@ For more information about using the EBus interface, see [Working with the Event
 
 Starts an inactive behavior tree associated with this entity\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### StopBehaviorTree {#navigation-ebus-stopbehaviortree}
 
 Stops an active behavior tree associated with this entity\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### GetVariableNameCrcs {#navigation-ebus-getvariablenamecrcs}
 
 Gets a list of all `crc32s` of the variable names\.
 
-**Parameters**  
+**Parameters**
 None
 
-**Return**  
+**Return**
 `AZStd::vector<AZ::Crc32>`
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### GetVariableValue {#navigation-ebus-getvariablevalue}
 
 Gets the value associated with a variable\.
 
-**Parameters**  
+**Parameters**
 `AZ::Crc32 variableNameCrc`
 
-**Return**  
+**Return**
 `bool`
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetVariableValue {#navigation-ebus-setvariablevalue}
 
 Sets the value associated with a variable\.
 
-**Parameters**  
-`AZ::Crc32 variableNameCrc`  
+**Parameters**
+`AZ::Crc32 variableNameCrc`
 bool `newValue`
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 The following is an example of script using the **Request Bus Interface**\.
@@ -99,11 +99,11 @@ local behaviortreescript =
         Target = EntityId(),
     },
 }
-   
+
 function behaviortreescript:OnActivate()
     BehaviorTreeComponentRequestBus.Event.StartBehaviorTree(self.entityId)
     BehaviorTreeComponentRequestBus.Event.SetVariableValue(self.entityId, Crc32("HasTarget"), self.Properties.Target:IsValid())
 end
- 
+
 return behaviortreescript
 ```

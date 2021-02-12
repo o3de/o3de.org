@@ -1,13 +1,13 @@
 ---
-description: ' Debug PhysX issues for your game in &ALYlong;. '
+description: ' Debug PhysX issues for your game in Amazon Lumberyard. '
 title: Debugging PhysX
 ---
 # Debugging PhysX {#debugging-physx}
 
-The PhysX system has the following features that you can use to debug issues\. 
+The PhysX system has the following features that you can use to debug issues\.
 
-**Note**  
-You must first enable the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md) gem\. 
+**Note**
+You must first enable the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md) gem\.
 
 **Topics**
 + [PhysX Debug Console Variables](#debugging-physx-console-variables)
@@ -16,25 +16,25 @@ You must first enable the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug
 
 ## PhysX Debug Console Variables {#debugging-physx-console-variables}
 
-Enter the following console variables to debug your PhysX issues\. 
+Enter the following console variables to debug your PhysX issues\.
 
 Sets your preferences for debugging\. As a recommended best practice, enter this console variable command as your first step for debugging\.
 
-**Example**  
+**Example**
 
 ```
 physx_Debug 1
 ```
 
 You can specify the following values:
-+ `1` - Enable debug visualizations\. By default, this value enables the collision shapes and edges for your PhysX entities\. 
-+ `2` - Enables all configuration options\. This enables all the available visualization options\. 
-+ `3` - Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider#physics-asset-colliders)\. 
++ `1` - Enable debug visualizations\. By default, this value enables the collision shapes and edges for your PhysX entities\.
++ `2` - Enables all configuration options\. This enables all the available visualization options\.
++ `3` - Toggles the proximity based collider visualization\. This value applies only to mesh colliders\. See [Physics asset colliders](/docs/userguide/components/physx-collider#physics-asset-colliders)\.
 + `0` - Disables debug visualizations\.
 
 Toggles a visual culling box frame\.
 
-**Example**  
+**Example**
 
 ```
 physx_CullingBox 1
@@ -64,7 +64,7 @@ For more information, see [Using the Console Window](/docs/userguide/console-int
 
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface \(**ImGui**\) tool\.
 
-**Note**  
+**Note**
 You must enable the ImGui gem to access this tool\. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **To debug with the ImGui tool**
@@ -73,13 +73,13 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 
 1. Press the **Home** key to open the **ImGui** tool\. The **PhysX Debug** menu appears under the **Perspective** viewport\.
 
-1. Click **PhysX Debug**\.   
-**Example**    
+1. Click **PhysX Debug**\.
+**Example**
 ![\[PhysX Debug menu in gameplay mode.\]](/images/userguide/physx/physx-debugger-imgui-tool.png)
 
-1. You can make the following changes\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/debugging-physx.html)
+1. You can make the following changes\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/debugging/physx)
 
 ## Debug Options in the PhysX Configuration {#physx-debugging-configuration}
 

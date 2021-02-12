@@ -1,5 +1,5 @@
 ---
-description: ' Use the VR TV Room level in &ALYlong; to demonstrate a simple VR level
+description: ' Use the VR TV Room level in Amazon Lumberyard to demonstrate a simple VR level
   setup for playing 2D video, 3D video, and 360 video on a VR device. '
 title: VR TV Room Level
 ---
@@ -16,7 +16,7 @@ For more information about installing the project that includes the VR TV Room l
 
 ## Using Components in the VR TV Room Level {#sample-level-vr-tv-room-using-video-playback-script-canvas-components}
 
-You can use the **[Video Playback](/docs/userguide/components/videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\. 
+You can use the **[Video Playback](/docs/userguide/components/videoplayback.md)** component to assign a diffuse texture to the specified video\. You can then assign the material that uses the diffuse texture to any mesh\.
 
 ![\[Video Playback and Script Canvas components for the VR TV Room level.\]](/images/userguide/tv-room-level-video-playback-script-canvas-components-example.png)
 

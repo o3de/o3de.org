@@ -1,5 +1,5 @@
 ---
-description: ' Use Lua scripting in &ALYlong; to automate your game project. '
+description: ' Use Lua scripting in Amazon Lumberyard to automate your game project. '
 title: Writing Lua Scripts
 ---
 # Writing Lua Scripts {#lua-scripting-intro}
@@ -22,7 +22,7 @@ You can use Lua in Lumberyard to facilitate quick iteration of your game project
 ## Learning Lua {#lua-scripting-resources-general}
 
 For learning the Lua language itself, the [lua\.org](http://www.lua.org) website is a good place to start\.
-+ [Official Lua Documentation](http://www.lua.org/docs.html) - Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page\. 
++ [Official Lua Documentation](http://www.lua.org/docs.html) - Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page\.
 + [Programming in Lua](http://www.lua.org/pil/) - This text is a resource for getting started with Lua programming\.
 + [Lua 5\.1 Reference Manual](http://www.lua.org/manual/5.1/) - Provides a reference of all the functions that are available by default in Lua\.
 
@@ -30,6 +30,6 @@ For learning the Lua language itself, the [lua\.org](http://www.lua.org) website
 
 After you read through this tutorial on writing Lua scripts for the component entity system, learn more about using Lua in Lumberyard by consulting the following resources\.
 + For information on Lumberyard's built\-in Lua editor, see [Lua Editor](/docs/userguide/scripting/lua/editor-debugger.md)\.
-+ For sample Lua [scripts](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#scripts), see the Lumberyard `\dev\SamplesProject\Scripts` directory and its subdirectories\.
++ For sample Lua [scripts](/docs/userguide/ly-glos-chap#scripts), see the Lumberyard `\dev\SamplesProject\Scripts` directory and its subdirectories\.
 + For information about Lua API operations in Lumberyard, see the [Component Entity Lua API Reference](/docs/userguide/scripting/lua/api.md)\.
 + For information about the Lumberyard EBus, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.

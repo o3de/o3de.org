@@ -1,10 +1,10 @@
 ---
-description: ' Integrate with the modular behavior tree (MBT) system in &ALYlong;. '
+description: ' Integrate with the modular behavior tree (MBT) system in Amazon Lumberyard. '
 title: Integration with the Modular Behavior Tree System
 ---
 # Integration with the Modular Behavior Tree System {#ai-tactical-point-mbt}
 
-From inside the Modular Behavior Tree \(MBT\), the **<QueryTPS>** node can be used to call pre\-defined TPS queries by name\. The **<QueryTPS>** node will return either success or failure\. 
+From inside the Modular Behavior Tree \(MBT\), the **<QueryTPS>** node can be used to call pre\-defined TPS queries by name\. The **<QueryTPS>** node will return either success or failure\.
 
 The most common usage pattern involving the **<QueryTPS>** node is to use it in conjunction with the **<Move>** node inside a **<Sequence>** to determine the status of a specified position\. The example below illustrates a call to a pre\-defined TPS query called **SDKGrunt\_TargetPositionOnNavMesh**, with the expected inputs\. If the query succeeds, the AI agent will move to the queried position\.
 

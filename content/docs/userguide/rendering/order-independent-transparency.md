@@ -1,5 +1,5 @@
 ---
-description: ' Configure order-independent transparency (OIT) in &ALY; so that transparent
+description: ' Configure order-independent transparency (OIT) in Lumberyard so that transparent
   objects that are drawn out-of-order can display correctly. '
 title: Order-Independent Transparency
 ---
@@ -17,16 +17,16 @@ OIT is useful when creating the following:
 To further demonstrate, see the following images\.
 
 
-****  
+****
 
-|  |  |  |  | 
+|  |  |  |  |
 | --- |--- |--- |--- |
-| OIT is not needed in the following example\. Drawing object 1, then object 2, and finally object 3 works\. | OIT is needed in the following example\. Drawing object 1 and then object 2 will not work because certain pixels from object 1 must be in front of pixels from object 2 \(and vice versa\)\. | OIT is needed in the following example\. Object 2 is long and its center point is in front of object 1, but it must draw behind object 1\. | OIT is needed in the following example\. Certain parts of object 1 draw behind other parts of the object, and you cannot control which draws first\. | 
-|  ![\[Image NOT FOUND\]](/images/userguide/oit_not_needed.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_01.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_02.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_03.png)  | 
+| OIT is not needed in the following example\. Drawing object 1, then object 2, and finally object 3 works\. | OIT is needed in the following example\. Drawing object 1 and then object 2 will not work because certain pixels from object 1 must be in front of pixels from object 2 \(and vice versa\)\. | OIT is needed in the following example\. Object 2 is long and its center point is in front of object 1, but it must draw behind object 1\. | OIT is needed in the following example\. Certain parts of object 1 draw behind other parts of the object, and you cannot control which draws first\. |
+|  ![\[Image NOT FOUND\]](/images/userguide/oit_not_needed.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_01.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_02.png)  |  ![\[Image NOT FOUND\]](/images/userguide/oit_needed_03.png)  |
 
 ## Configuring Order\-Independent Transparency for Lumberyard {#configuring-order-independent-transparency-for-Amazon-Lumberyard}
 
-You can configure OIT with the console or create a level configuration file with this setting\. 
+You can configure OIT with the console or create a level configuration file with this setting\.
 
 Specify the value for `r_AlphaBlendLayerCount` to the number of transparency layers that OIT can solve\. A value of 1 is sufficient to solve most out\-of\-order transparency issues\.
 
@@ -46,6 +46,6 @@ OIT requires the following:
 
 1. With a text editor, open the `user_settings.options` file in the `lumberyard_version\dev\_WAF_` directory\.
 
-1. Under the `[Windows Options]` section, set `win_vs2017_winkit` to your version of the Windows 10 SDK \(for example, *10\.1\.17134\.12*\)\. 
+1. Under the `[Windows Options]` section, set `win_vs2017_winkit` to your version of the Windows 10 SDK \(for example, *10\.1\.17134\.12*\)\.
 
 1. Build your game project\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.

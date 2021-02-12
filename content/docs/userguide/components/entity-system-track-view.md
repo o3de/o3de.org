@@ -1,6 +1,6 @@
 ---
-description: ' Learn how to expose custom components and their properties to the &trackview-editor;
-  for animation in &ALYlong;. '
+description: ' Learn how to expose custom components and their properties to the <guilabel>Track View</guilabel> editor
+  for animation in Amazon Lumberyard. '
 title: Exposing Custom Components to Track View for Animation
 ---
 # Exposing Custom Components to Track View for Animation {#component-entity-system-track-view}
@@ -19,7 +19,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
 **To expose a custom component to Track View**
 
-1. 
+1.
 
 **Create getter and setter methods**
 
@@ -36,11 +36,11 @@ The following example assumes that a custom component called `ImaginaryTargetCom
        : public AZ::ComponentBus
    {
    public:
-   
+
        // EBusTraits overrides - Application is a singleton.
        // Only one component on an entity can implement the events.
        static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single;
-   
+
        // Getter/Setter methods for ImaginaryTargetPosition.
        virtual AZ::Vector3 GetImaginaryTargetPosition() = 0;
        virtual void SetImaginaryTargetPosition(const AZ::Vector3& newPosition) = 0;
@@ -48,7 +48,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    using ImaginaryTargetComponentRequestBus = AZ::EBus<ImaginaryTargetComponentRequests>;
    ```
 
-1. 
+1.
 
 **Implement handlers in your component**
 
@@ -59,30 +59,30 @@ The following example assumes that a custom component called `ImaginaryTargetCom
        : public AzToolsFramework::Components::EditorComponentBase
        , public LmbrCentral::ImaginaryTargetComponentRequestBus::Handler
    {
-   
+
    public:
        AZ_EDITOR_COMPONENT(ImaginaryTargetComponent, "{4491D282-C120-4B2E-BC63-AC86296956A2}");
-   
+
        ImaginaryTargetComponent() : m_imaginaryPosition(.0f) {};
-   
+
        // ImaginaryTargetComponentRequestBus::Handler implementation.
-   
+
        // Implementations for Getter/Setter methods for ImaginaryTargetPosition.
        // Presumably these would be used for something useful; this example just
        // stores and returns the value.
        AZ::Vector3 GetImaginaryTargetPosition() override { return m_imaginaryPosition; }
        void SetImaginaryTargetPosition(const AZ::Vector3& newPosition) override { m_imaginaryPosition = newPosition; }
-   
+
    protected:
        // Required Reflect function.
        static void Reflect(AZ::ReflectContext* context);
-   
+
    private:
        AZ::Vector3 m_imaginaryPosition;
    };
    ```
 
-1. 
+1.
 
 **Reflect your component**
 
@@ -92,13 +92,13 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    /*static*/ void ImaginaryTargetComponent::Reflect(AZ::ReflectContext* context)
    {
        AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context);
-       
+
        if (serializeContext)
        {
            serializeContext->Class<ImaginaryTargetComponent, AzToolsFramework::Components::EditorComponentBase>()
                ->Version(0)
                ->Field("ImaginaryPosition", &ImaginaryTargetComponent::m_imaginaryPosition);
-   
+
            AZ::EditContext* editContext = serializeContext->GetEditContext();
            if (editContext)
            {
@@ -110,7 +110,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
                    ;
            }
        }
-   
+
        AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context);
        if (behaviorContext)
        {
@@ -119,14 +119,14 @@ The following example assumes that a custom component called `ImaginaryTargetCom
                ->Event("GetImaginaryTargetPosition", &ImaginaryTargetComponentRequestBus::Events::GetImaginaryTargetPosition)
                ->Event("SetImaginaryTargetPosition", &ImaginaryTargetComponentRequestBus::Events::SetImaginaryTargetPosition)
                ->VirtualProperty("ImaginaryPosition", "GetImaginaryTargetPosition", "SetImaginaryTargetPosition");
-   
+
            // Attach the "ImaginaryTargetRequestBus" EBus that you reflected to the behavior context of the ImaginaryTargetComponent class.
            behaviorContext->Class<ImaginaryTargetComponent>()->RequestBus("ImaginaryTargetRequestBus");
-       }       
+       }
    }
    ```
 
-1. 
+1.
 
 **\(Optional\) Place Unit Attributes on Getters**
 
@@ -137,7 +137,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
        ->Attribute("Units", AZ::Edit::Attributes:: PropertyUnits8BitColor)
    ```
 
-   **Track View** then uses a color track for the property, as the following image shows\.  
+   **Track View** then uses a color track for the property, as the following image shows\.
 ![\[Color picker in Track View\]](/images/userguide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
    Other units can be found in the file `dev\Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. As of Lumberyard release 1\.8, these units are the following\.

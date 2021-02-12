@@ -1,18 +1,18 @@
 ---
-description: ' Learn how to use tags with animation graphs (AnimGraphs) in the &ALY;
-  &animation-editor;. '
+description: ' Learn how to use tags with animation graphs (AnimGraphs) in the Lumberyard
+  Animation Editor. '
 title: Using Tags with Animation Graphs
 ---
 # Using Tags with Animation Graphs {#animation-editor-using-tags}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-In the **Animation Editor**, you use tags to describe the current state of your character and control the transition between different states\. Tags are Boolean flags that are either active \(enabled\) or inactive \(disabled\)\. Some examples of tags are Happy, Holding Sword, and Left Leg Injured\. 
+In the **Animation Editor**, you use tags to describe the current state of your character and control the transition between different states\. Tags are Boolean flags that are either active \(enabled\) or inactive \(disabled\)\. Some examples of tags are Happy, Holding Sword, and Left Leg Injured\.
 
 ## Adding Tags {#animation-editor-adding-tags}
 
@@ -22,7 +22,7 @@ Tags are represented by animation graph parameters\. When you define a parameter
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. In the **Animation Editor**, in the **Parameters** pane, click the **\+** button\.  
+1. In the **Animation Editor**, in the **Parameters** pane, click the **\+** button\.
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-parameters-pane.png)
 
 1. In the **Create Parameter** dialog box, do the following:
@@ -33,7 +33,7 @@ Tags are represented by animation graph parameters\. When you define a parameter
 
    1. For **Description**, enter an optional description for your tag\.
 
-   1. For **Default**, select the check box to enable the tag\.  
+   1. For **Default**, select the check box to enable the tag\.
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-create-parameter-dialog-box.png)
 
 1. Click **Create**\.
@@ -50,7 +50,7 @@ Tag conditions have two attributes: test function and tags\.
 
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-tag-conditions-attributes.png)
 
-**Test Function**  
+**Test Function**
 Specifies the tag status to pass the condition\.
 
 You can choose from the following options:
@@ -59,12 +59,12 @@ You can choose from the following options:
 + **One or more tags active** - At least one tag must be active or the condition blocks the change\.
 + **No tag active** - All tags must be inactive or the condition blocks the change\.
 
-**Tags**  
+**Tags**
 Specifies the tags that the condition checks for\.
 
 To add a tag to a condition, select the transition line between your nodes\. In the **Attributes** pane, select the values that you want to use\.
 
 ![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-tag-conditions-values.png)
 
-**Note**  
+**Note**
 You can only choose from tags that are available in the **Parameters** pane\. For more information, see [Adding Tags](#animation-editor-adding-tags)\.

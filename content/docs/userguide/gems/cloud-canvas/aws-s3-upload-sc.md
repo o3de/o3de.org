@@ -1,6 +1,6 @@
 ---
-description: ' Use &script-canvas; to upload a file to &S3; in &ALYlong;. '
-title: Uploading a File to &S3; with &script-canvas;
+description: ' Use Script Canvas to upload a file to S3 in Amazon Lumberyard. '
+title: Uploading a File to S3 with Script Canvas
 ---
 # Uploading a File to Amazon S3 with Script Canvas {#cloud-canvas-cloud-gem-aws-s3-upload-sc}
 
@@ -28,9 +28,9 @@ The following procedure shows you how to create a Script Canvas graph that uploa
 
 1. Click **AWSBehaviorS3Upload**\. In **Node Inspector**, **AWSBehaviorS3Upload** **Variable** appears\. The default name of the variable is **Variable 1**\.
 
-1. In **Node Inspector**, expand **AWSBehaviorS3Upload** to show the input fields\. Type the values in the following table into the corresponding boxes\. `KeyName` is the name that the file will have on Amazon S3\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-cloud-gem-aws-s3-upload-sc.html)
+1. In **Node Inspector**, expand **AWSBehaviorS3Upload** to show the input fields\. Type the values in the following table into the corresponding boxes\. `KeyName` is the name that the file will have on Amazon S3\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/gems/cloud-canvas/aws-s3-upload-sc)
 
 1. From the **Variable Manager**, press **Shift** and drag **Variable 1 AWSBehaviorS3Upload** to the canvas to create the **Get Variable 1** node\. \(You can also drag **AWSBehaviorS3Upload** to the canvas and then select **Get Variable** from the drop\-down menu\.\)
 
@@ -60,7 +60,7 @@ Next, to see the success or failure of the operation, add **AWSBehaviorS3UploadN
 
 1. Connect the **Out** pins of the **AWSBehaviorS3UploadNotificationBus OnError** and **OnSuccess** nodes to the **In** pin of the **Print** node\.
 
-1. Connect the **String** pins of the **AWSBehaviorS3UploadNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:  
+1. Connect the **String** pins of the **AWSBehaviorS3UploadNotificationBus OnError** and **OnSuccess** nodes to the **Value** pin on the **Print** node\. Your canvas should look similar to the following image:
 ![\[A Script Canvas graph that uploads a file to Amazon S3\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-aws-s3-upload-sc-1.png)
 
 1. Save the canvas with a name like `MyS3UploadTest.scriptcanvas`\. The default file location is the `lumberyard_version\dev\project_name\scriptcanvas` directory\.
@@ -110,7 +110,7 @@ To verify that the file has been uploaded to Amazon S3, you can use the AWS Mana
 
    ```
    "CloudGemAWSScriptBehaviors.s3nodeexamples": {
-       "PhysicalResourceId": "cgsamples14-221-cgsamples14-221dep-s3nodeexamples-16ud5gt53zjx7", 
+       "PhysicalResourceId": "cgsamples14-221-cgsamples14-221dep-s3nodeexamples-16ud5gt53zjx7",
        "ResourceType": "AWS::S3::Bucket"
    ```
 

@@ -1,7 +1,7 @@
 ---
-description: ' Follow these guidelines to generate art assets and tune &ALYlong; performance
+description: ' Follow these guidelines to generate art assets and tune Amazon Lumberyard performance
   for mobile devices. '
-title: '&ALY; Performance Tuning Guidelines for Mobile Devices'
+title: 'Lumberyard Performance Tuning Guidelines for Mobile Devices'
 ---
 # Lumberyard Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
 
@@ -23,15 +23,15 @@ This section provides guidelines for geometry, lighting, cascade shadow maps, an
 Follow these guidelines when creating geometry for your mobile game:
 + Use fewer individual objects to significantly reduce the draw calls\. We recommend 750 or less draw calls on mobile devices\.
 + Use instances where appropriate\. To do so, create a slice in Lumberyard Editor and then instantiate multiple instances of that slice in the level\.
-+ Add support for geometry level of detail \([LOD](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#lod)\)\. Each LOD should be a 50% reduction of geometry\.
++ Add support for geometry level of detail \([LOD](/docs/userguide/ly-glos-chap#lod)\)\. Each LOD should be a 50% reduction of geometry\.
   + Group the high resolution LOD model under `_lod0_objectname`\.
   + Group the next LOD model under `_lod1_objectname_group`\.
   + Name the shadow proxy model as `shadowproxy`\.
   + Export the shadow proxy model with the shadow proxy material\.
-  + Group the shadow proxy model under the last LOD group\.  
-**Example**  
+  + Group the shadow proxy model under the last LOD group\.
+**Example**
 
-    The following is an LOD setup in Maya\.  
+    The following is an LOD setup in Maya\.
 ![\[Example level of detail (LOD) setup in Maya.\]](/images/userguide/mobile/geometry-level-of-detail-setup-example-maya.png)
   + Do the following to tune the LOD:
 
@@ -43,7 +43,7 @@ Follow these guidelines when creating geometry for your mobile game:
 + Restrict your poly count as follows for each camera view in the game:
   + For low\-end devices, use 300k or below\.
   + For higher\-end devices, use 700k or below if the CPU is the bottleneck\.
-**Note**  
+**Note**
 To determine the poly count, set **r\_DisplayInfo** to **1** in the Lumberyard Editor console\. The debug data on the top right of the screen will display the poly number for each frame of the scene\.
 + In the **Console** pane in Lumberyard Editor, set the console variable `r_stats` to **1** to print the number of draw calls and polygons that the current camera renders\.
 
@@ -61,10 +61,10 @@ Follow these guidelines when adding lighting to your mobile game:
 + Avoid overlapping light areas\.
 + Avoid overlapping environment probe areas\.
 + Avoid covering large areas with environment probes, which can introduce artifacts on the edge of the large areas\. For example, 1,000 x 1,000 is too large for an environment probe to cover\. We recommend dividing an area that size into four smaller areas\.
-+ Simulate bounced lighting with lights that don't cast shadows\. Global illumination cannot be used on mobile devices\.  
-**Example**  
++ Simulate bounced lighting with lights that don't cast shadows\. Global illumination cannot be used on mobile devices\.
+**Example**
 
-  The following scene uses non\-shadow casting lights to simulate global illumination \(GI\) bounce\.  
+  The following scene uses non\-shadow casting lights to simulate global illumination \(GI\) bounce\.
 ![\[Example scene that uses non-shadow casting lights to simulate global illumination (GI) bounce.\]](/images/userguide/mobile/lighting-global-illumination-simulation-example.png)
 
 ### Cascade Shadow Map Guidelines {#ios-android-performance-art-guidelines-cascade-shadow-maps}
@@ -72,8 +72,8 @@ Follow these guidelines when adding lighting to your mobile game:
 Lumberyard uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 + `e_ShadowsCascadesDebug` - Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
 
-**Example**  
-The following global shadow map \(GSM\) has the `e_ShadowsCascadesDebug` console variable set to **1**\.  
+**Example**
+The following global shadow map \(GSM\) has the `e_ShadowsCascadesDebug` console variable set to **1**\.
 
 ![\[Example of a global shadow map (GSM) with the e_ShadowsCascadesDebug console variable set to 1.\]](/images/userguide/mobile/global-shadow-map-example.png)
 
@@ -89,14 +89,14 @@ When you set console variables, try to balance reducing the size and number of c
 The following images demonstrate how the global shadow map \(GSM\) console variables affect the shadow cascade size and coverage distance\.
 
 
-****  
+****
 
-| 
-| 
-| **Example images for GSM impact on shadow cascade size and coverage distance** | 
+|
+|
+| **Example images for GSM impact on shadow cascade size and coverage distance** |
 | --- |
-| Set the e\_GsmRange console variable to 1 to reduce the size of the shadow cascade\. | Set the e\_GsmRangeStep console variable to 1\.5 to reduce the area that each consecutive cascade covers\. | Set the e\_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses\. | 
-|  ![\[Set the e_GsmRange console variable to 1 to reduce the size of the shadow cascade.\]](/images/userguide/mobile/global-shadow-map-e_GsmRange.png)  |  ![\[Set the e_GsmRangeStep console variable to 1.5 to reduce the area that each consecutive cascade covers.\]](/images/userguide/mobile/global-shadow-map-e_GsmRangeStep.png)  |  ![\[Set the e_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses.\]](/images/userguide/mobile/global-shadow-map-e_GsmNodLods.png)  | 
+| Set the e\_GsmRange console variable to 1 to reduce the size of the shadow cascade\. | Set the e\_GsmRangeStep console variable to 1\.5 to reduce the area that each consecutive cascade covers\. | Set the e\_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses\. |
+|  ![\[Set the e_GsmRange console variable to 1 to reduce the size of the shadow cascade.\]](/images/userguide/mobile/global-shadow-map-e_GsmRange.png)  |  ![\[Set the e_GsmRangeStep console variable to 1.5 to reduce the area that each consecutive cascade covers.\]](/images/userguide/mobile/global-shadow-map-e_GsmRangeStep.png)  |  ![\[Set the e_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses.\]](/images/userguide/mobile/global-shadow-map-e_GsmNodLods.png)  |
 
 ### Material Guidelines {#ios-android-performance-art-guidelines-materials}
 
@@ -131,15 +131,15 @@ You can also edit the configuration files in the **Graphics Settings** window in
 
    1. For the preferred configuration file, adjust the values for the various console variables\. For example, if you select **iOS**, console variables and values for each configuration file appear \(`ios_low.cfg`, `ios_medium.cfg`, `ios_high.cfg`, and `ios_veryhigh.cfg`\)\.
 
-   When you edit the console variables for the configuration file, the renderer displays onscreen how the level may look on a mobile device\.  
+   When you edit the console variables for the configuration file, the renderer displays onscreen how the level may look on a mobile device\.
 ![\[Example of the Graphics Settings window in Lumberyard Editor.\]](/images/userguide/mobile/graphics-settings-window-ios-example.png)
 
 ### Using android\_models\.xml and ios\_models\.xml Files {#ios-android-performance-engineering-guidelines-models-xml-files}
 
 Lumberyard uses two `.xml` files to determine which mobile devices use the low, medium, high, or very high configuration settings files\. You can find the `android_models.xml` and `ios_models.xml` files in the `/lumberyard_version/dev/Engine/Config/gpu` directory\.
 
-**Example android\_models\.xml file**  
-The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular expressions when you specify the device model number\. If a device model is listed more than once, the last instance is read and used with the corresponding configuration file\.  
+**Example android\_models\.xml file**
+The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular expressions when you specify the device model number\. If a device model is listed more than once, the last instance is read and used with the corresponding configuration file\.
 
 ```
 <DeviceList>
@@ -195,7 +195,7 @@ You can only enable or disable GMEM during engine startup\. You must add the `r_
 + `system_android_es3.cfg`
 + `system_ios_ios.cfg`
 
-**Note**  
+**Note**
 To prevent visual artifacts and performance issues, do not change the value of the `r_EnableGMEMPath` console variable during runtime\.
 
 ### Rendering Features and GMEM {#gpu-memory-setting-gmem-and-rendering-features}
@@ -235,7 +235,7 @@ Because mobile devices have a limited amount of memory, you should take the nece
 + Avoid using static allocations\. This will reduce the size of your executable code and allow for safer memory management at runtime\.
 + Provide downloads for region\-specific assets\. If your app uses localized content and you plan to deploy to multiple regions, consider dividing up your app and hosting the data for each region on Amazon S3\. You can then use the dynamic content system to download region\-specific assets\.
 
-**Android**  
+**Android**
 If you want to reduce the size of a large app, you can use the tools that are included with the Android NDK to examine your executable\. For example, you can use objdump or nm\. The nm tool can disassemble your binary files and show the size of each code segment\. The nm tool can also list symbols and detect if code is unexpectedly linked to your binary\.
 
 ## Particle Rendering Features and Performance {#ios-android-performance-particle-rendering-guidelines}

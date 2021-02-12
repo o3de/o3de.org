@@ -1,15 +1,15 @@
 ---
-description: ' View the &animation-editor; interface in &ALYlong;. '
-title: '&animation-editor; User Interface'
+description: ' View the Animation Editor interface in Amazon Lumberyard. '
+title: 'Animation Editor User Interface'
 ---
 # Animation Editor User Interface {#animation-editor-user-interface}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 **Topics**
 + [Opening Animation Editor](#opening-animation-editor-)

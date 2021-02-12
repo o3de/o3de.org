@@ -1,5 +1,5 @@
 ---
-description: ' Initialize the localization system in &ALYlong;. '
+description: ' Initialize the localization system in Amazon Lumberyard. '
 title: Localization Initialization
 ---
 # Localization Initialization {#localization-initialization}
@@ -20,7 +20,7 @@ void LoadLocalizationData()
     {
         ILocalizationManager* pLocMan = GetISystem()->GetLocalizationManager();
         if (pLocMan)
-        {            
+        {
             AZStd::string localizationXml("libs/localization/localization.xml");
             if (pLocMan->InitLocalizationData(localizationXml.c_str()))
             {
@@ -39,10 +39,10 @@ The code sample above does the following:
 
 The following two console variables, or CVars, affect the localization system:
 
-`g_language`  
+`g_language`
 The name of the current language that the game uses\. Is set to **English** by default\.
 
-`sys_localization_folder`  
+`sys_localization_folder`
 The directory used for finding localization assets\. This directory contains either language PAK files or 'loose' localized text XML files\.
 
 For example, in the Samples Project, the game config file, `/dev/SamplesProject/game.cfg`, sets `sys_localization_folder` to `Localization`\. In the game directory structure, this defines the location as `dev/SamplesProject/Localization`\.

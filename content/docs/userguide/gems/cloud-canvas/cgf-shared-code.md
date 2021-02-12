@@ -1,5 +1,5 @@
 ---
-description: ' Use shared code for your cloud gem framework in &ALYlong;. '
+description: ' Use shared code for your cloud gem framework in Amazon Lumberyard. '
 title: Using Shared Code
 ---
 # Using Shared Code {#cloud-canvas-cgf-shared-code}

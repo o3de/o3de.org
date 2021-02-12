@@ -1,6 +1,6 @@
 ---
 description: ' Work with the input enabled, states, navigation, and action properties
-  of the &ui-canvas-editor; in &ALY;. '
+  of the UI Editor in Lumberyard. '
 title: Properties for Interactive Components
 ---
 # Properties for Interactive Components {#ui-editor-components-interactive-properties}

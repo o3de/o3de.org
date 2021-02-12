@@ -1,17 +1,17 @@
 ---
-description: ' Use the &component-system; to create entities and add components to
-  them in &ALYlong;. '
+description: ' Use the component entity system to create entities and add components to
+  them in Amazon Lumberyard. '
 title: Working with component entities
 ---
 # Working with component entities {#component-intro}
 
-The component entity system provides a modular and intuitive construction of game elements\. The component entity system works at both the system level and the entity level\. It employs reflection, serialization, messaging using the event bus \(EBus\), fully cascading prefabs \(slices\), and the ability to drag\-and\-drop and edit entities and their components in Lumberyard Editor\. 
+The component entity system provides a modular and intuitive construction of game elements\. The component entity system works at both the system level and the entity level\. It employs reflection, serialization, messaging using the event bus \(EBus\), fully cascading prefabs \(slices\), and the ability to drag\-and\-drop and edit entities and their components in Lumberyard Editor\.
 
 Use the following Lumberyard Editor tools to improve the workflow for the component entity system\.
-+  [Entity Outliner](/docs/userguide/components/entity-outliner.md) 
-+  [Entity Inspector](/docs/userguide/components/entity-inspector.md) 
++  [Entity Outliner](/docs/userguide/components/entity-outliner.md)
++  [Entity Inspector](/docs/userguide/components/entity-inspector.md)
 
-**Note**  
+**Note**
 The component entity system replaces the \(now legacy\) [Object and Entity System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/entities-intro.html) in the *Amazon Lumberyard Legacy Reference*\.
 
 See the following topics to add components to entities and customize their properties in Lumberyard Editor\.

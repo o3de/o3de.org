@@ -1,5 +1,5 @@
 ---
-description: ' Modify a UI slice and push the changes in &ALYlong;''s &ui-canvas-editor;
+description: ' Modify a UI slice and push the changes in Amazon Lumberyard''s UI Editor
   . '
 title: Modifying a UI Slice and Pushing Changes
 ---
@@ -15,7 +15,7 @@ The following conventions apply when working with slices in the **UI Editor**:
 
 In the **Hierarchy** pane, elements that are part of a slice appear in blue\. Elements that appear in bold blue indicate that the element is the root of the slice\. Within the slice's root, elements that appear in italic indicate a child slice\.
 
-**Example**  
+**Example**
 + The element **Background** is not in a slice\.
 + **FontRenderingButton** is a root element and its child element, **Text**, is an element within `submenubutton.slice`\.
 

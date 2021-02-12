@@ -1,14 +1,14 @@
 ---
-description: ' Import a megaterrain texture, also known as a color map, into &ALYlong;. '
+description: ' Import a megaterrain texture, also known as a color map, into Amazon Lumberyard. '
 title: Importing a Megaterrain Texture
 ---
 # Importing a Megaterrain Texture {#terrain-import-color-megaterrain}
 
 A megaterrain texture, also known as a color map, is a texture that covers part of or the entire terrain\. This texture is visible from a distance and presents sweeping vistas\. As the camera moves closer to the terrain, the megaterrain texture is replaced by more detailed terrain textures\.
 
-Although you can import data for individual tiles, a more common workflow is to use a single megaterrain texture for the entire terrain\. 
+Although you can import data for individual tiles, a more common workflow is to use a single megaterrain texture for the entire terrain\.
 
-**Note**  
+**Note**
 Lumberyard doesn't match or fix tile edges\. Ensure that your tile data is authored so that adjacent tile edges match\. Otherwise, your level may render with visible seams\. Lumberyard supports the BMP image file type only for megatexture terrains\.
 
 

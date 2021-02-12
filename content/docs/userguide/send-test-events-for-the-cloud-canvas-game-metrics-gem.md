@@ -1,6 +1,6 @@
 ---
-description: ' Send game events with the Metrics Sample level in &ALYlong; and view
-  them in the &cgp;. '
+description: ' Send game events with the Metrics Sample level in Amazon Lumberyard and view
+  them in the Cloud Gem Portal. '
 title: Sending Test Metrics with the Metrics Sample Level
 ---
 # Sending Test Metrics with the Metrics Sample Level {#send-test-events-for-the-cloud-canvas-game-metrics-gem}
@@ -13,10 +13,10 @@ After you complete the [Prerequisites](/docs/userguide/gems/cloud-canvas/metrics
 
 1. In Lumberyard Editor, choose **File**, **Open**, select **MetricsSample**, and then click **Open**\.
 
-1. Press **Ctrl\+G** to enter game mode\.  
+1. Press **Ctrl\+G** to enter game mode\.
 ![\[Create gameplay events with the Metrics Sample level to send them to the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-metrics-sample-level.png)
 
-1. To move forward, strafe left, move backward, and strafe right, press the **W**, **A**, **S**, and **D** keys, respectively\. 
+1. To move forward, strafe left, move backward, and strafe right, press the **W**, **A**, **S**, and **D** keys, respectively\.
 
 1. Click **Send Position** to send the translation coordinates of the controllable entity directly to AWS\.
 
@@ -27,7 +27,7 @@ After you complete the [Prerequisites](/docs/userguide/gems/cloud-canvas/metrics
 1. For **Encryption**, select **Enabled** to send generated game events with encryption\.
 
 1. For **Compression**, select **Enabled** to compress game events\.
-**Note**  
+**Note**
 If you select this option, the time to process events in AWS can increase\. This can incur additional costs for your AWS account\.
 
 1. Press **Esc** to exit game mode\.
@@ -42,8 +42,8 @@ If you select this option, the time to process events in AWS can increase\. This
 
 On the **UICanvas** entity, the **Lua Script** component references the `metricsmainmenu.lua` file\.
 
-**Example Lua Script**  
-The following is a snippet of the `metricsmainmenu.lua` file\. The Lua script specifies the events to collect from the game\. You can find the Lua script in the `lumberyard_version\dev\CloudGemSamples\Scripts` directory\.  
+**Example Lua Script**
+The following is a snippet of the `metricsmainmenu.lua` file\. The Lua script specifies the events to collect from the game\. You can find the Lua script in the `lumberyard_version\dev\CloudGemSamples\Scripts` directory\.
 
 ```
 function MetricsMainMenu:SendPosition(disableBuffer)
@@ -68,12 +68,12 @@ function MetricsMainMenu:SendPosition(disableBuffer)
 	parameter_sensitive = CloudGemMetric_MetricsEventParameter()
 	parameter_sensitive:SetName(parameter_sensitive:GetSensitivityTypeName())
 	parameter_sensitive:SetVal(self.encrypt)
-	
+
 	parameter_compression = CloudGemMetric_MetricsEventParameter()
 	parameter_compression:SetName(parameter_compression:GetCompressionModeName())
 	parameter_compression:SetVal(self.compress)
-	
-	params = CloudGemMetric_EventParameterList() 
+
+	params = CloudGemMetric_EventParameterList()
 	params.parameters:push_back(parameter_sensitive)
 	params.parameters:push_back(parameter_compression)
 
@@ -92,8 +92,8 @@ function MetricsMainMenu:SendPosition(disableBuffer)
 end
 ```
 
-**Example C\+\+**  
-The following is a snippet of the `MetricManager.cpp` file\. The C\+\+ file specifies the events to collect from the game\. You can find the C\+\+ file in the `lumberyard_version\dev\v1\Code\Source` directory\.  
+**Example C\+\+**
+The following is a snippet of the `MetricManager.cpp` file\. The C\+\+ file specifies the events to collect from the game\. You can find the C\+\+ file in the `lumberyard_version\dev\v1\Code\Source` directory\.
 
 ```
     void MetricManager::SendStartEvents()
@@ -108,33 +108,33 @@ The following is a snippet of the `MetricManager.cpp` file\. The C\+\+ file spec
 When an event is registered from the game client, the following default attributes are appended to the event\.
 
 
-**Client Side Event Attributes**  
+**Client Side Event Attributes**
 
-| Attributes | Description | 
-| --- | --- | 
-|  `source`  |  Identifier of the service provider\. The default value is `cloudgemmetric`\.  | 
-|  `bldid`  |  Build identifier\. You can find this value from Lumberyard or as a parameter on the `registerEvent` function\.  | 
-|  `loc `  |  Locale in ISO 639\-1\.  | 
-| msgid  |  GUID that identifies the message batch of events\.  | 
-|  `pltf`   |  Platform identifier\.  | 
-|  `seqno`   |  Sequence number of the event\.  | 
-| tmutc |  Time stamp of the event in ISO 8601\.  | 
-|  `tzh`   |  Time zone hour of the offset of the player\.  | 
-|  `tzm`  |  Time zone minute of the offset of the player\.  | 
-|  `tzs`   |  Time zone sign of the offset of the player\.  | 
-|  `uid`   | Player ID\. | 
-|  `session_id`  |  Session identifier\.  | 
+| Attributes | Description |
+| --- | --- |
+|  `source`  |  Identifier of the service provider\. The default value is `cloudgemmetric`\.  |
+|  `bldid`  |  Build identifier\. You can find this value from Lumberyard or as a parameter on the `registerEvent` function\.  |
+|  `loc `  |  Locale in ISO 639\-1\.  |
+| msgid  |  GUID that identifies the message batch of events\.  |
+|  `pltf`   |  Platform identifier\.  |
+|  `seqno`   |  Sequence number of the event\.  |
+| tmutc |  Time stamp of the event in ISO 8601\.  |
+|  `tzh`   |  Time zone hour of the offset of the player\.  |
+|  `tzm`  |  Time zone minute of the offset of the player\.  |
+|  `tzs`   |  Time zone sign of the offset of the player\.  |
+|  `uid`   | Player ID\. |
+|  `session_id`  |  Session identifier\.  |
 
 
-**Server Side Event Attributes**  
+**Server Side Event Attributes**
 
-| Attributes | Description | 
-| --- | --- | 
-|  `uuid `  |  Unique metric identifer created by AWS when the event is received\.  | 
-| srv\_tmutc | The time stamp in UTC when the event was received\. | 
+| Attributes | Description |
+| --- | --- |
+|  `uuid `  |  Unique metric identifer created by AWS when the event is received\.  |
+| srv\_tmutc | The time stamp in UTC when the event was received\. |
 
-**Example**  
-The following is an event with the attributes\.  
+**Example**
+The following is an event with the attributes\.
 
 ```
 {

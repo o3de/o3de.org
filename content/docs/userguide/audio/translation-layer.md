@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the &ALYlong; audio translation layer. '
+description: ' Learn about the Amazon Lumberyard audio translation layer. '
 title: Audio Translation Layer
 ---
 # Audio Translation Layer {#audio-translation-layer}

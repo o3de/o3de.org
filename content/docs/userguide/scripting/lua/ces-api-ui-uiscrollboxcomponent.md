@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIScrollBoxComponent to control the characteristics of a scroll
-  box in &ALYlong;. '
+  box in Amazon Lumberyard. '
 title: UIScrollBoxComponent
 ---
 # UIScrollBoxComponent {#lua-scripting-ces-api-ui-uiscrollboxcomponent}
@@ -129,7 +129,7 @@ Returns the action triggered while the scroll box is being dragged\.
 **Syntax**
 
 ```
-AZStd::string& GetScrollOffsetChangingActionName() 
+AZStd::string& GetScrollOffsetChangingActionName()
 ```
 
 ### GetSnapGrid {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapgrid}
@@ -242,7 +242,7 @@ Sets whether the scroll box allows horizontal scrolling\.
 **Syntax**
 
 ```
-void SetIsHorizontalScrollingEnabled(bool isEnabled) 
+void SetIsHorizontalScrollingEnabled(bool isEnabled)
 ```
 
 ### SetIsScrollingConstrained {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setisscrollingconstrained}
@@ -312,7 +312,7 @@ Sets the snap mode for the scroll box\.
 **Syntax**
 
 ```
-void SetSnapMode(eUiScrollBoxSnapMode snapMode) 
+void SetSnapMode(eUiScrollBoxSnapMode snapMode)
 ```
 
 For possible values for `eUiScrollBoxSnapMode`, see [GetSnapMode](#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-getsnapmode)\.
@@ -324,7 +324,7 @@ Sets the vertical scroll bar element for the scroll box\.
 **Syntax**
 
 ```
-void SetVerticalScrollBarEntity(AZ::EntityId entityId) 
+void SetVerticalScrollBarEntity(AZ::EntityId entityId)
 ```
 
 ### SetVerticalScrollBarVisibility {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollboxbus-setverticalscrollbarvisibility}
@@ -372,7 +372,7 @@ Called when the scroll value \(0 \- 1\) has changed\.
 **Syntax**
 
 ```
-void OnScrollableValueChanged(AZ::Vector2 value) 
+void OnScrollableValueChanged(AZ::Vector2 value)
 ```
 
 ### OnScrollableValueChanging {#lua-scripting-ces-api-ui-uiscrollboxcomponent-uiscrollablenotificationbus-onscrollablevaluechanging}
@@ -382,5 +382,5 @@ Called when the scroll value \(0 \- 1\) is changing\.
 **Syntax**
 
 ```
-void OnScrollableValueChanging(AZ::Vector2 value) 
+void OnScrollableValueChanging(AZ::Vector2 value)
 ```

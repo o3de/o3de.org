@@ -1,6 +1,6 @@
 ---
-description: ' Learn about versioning of &LAM; code and custom resource instances
-  in &ALYlong;. '
+description: ' Learn about versioning of Lambda code and custom resource instances
+  in Amazon Lumberyard. '
 title: Versioning of Custom Resources
 ---
 # Versioning of Custom Resources {#cloud-canvas-cgf-adding-aws-resources-versioning}
@@ -15,8 +15,8 @@ When new custom resource code is deployed, it does not replace the older code\. 
 
 If necessary, you can override the locking of a custom resource to the version of the code with which it was created\. To specify a different Lambda function version for a custom resource instance's update and delete events, specify a value for `CustomResourceVersion` in the Cloud Canvas metadata that you have obtained from the [AWS Lambda console](https://console.aws.amazon.com/lambda/)\.
 
-**Example**  
-The following code specifies a value of `3` for `CustomResourceVersion`\.  
+**Example**
+The following code specifies a value of `3` for `CustomResourceVersion`\.
 
 ```
 "MyCustomResource": {
@@ -38,10 +38,10 @@ After you make this change, the specified version of the Lambda function will pr
 
 Removing the `CustomResourceVersion` metadata entry restores the default behavior of using the version that created the resource\. Therefore, if you want a custom resource to always use a newer version of a handler, you must always specify a value for `CustomResourceVersion`\.
 
-**Warning**  
+**Warning**
 Coercing a custom resource to process events with code different from the code that instantiated the resource exposes the resource group to risk of rollback failure\. You are responsible for determining the version of the Lambda function that you want your instance to use\. You can find the version from the AWS Lambda console\.
 
-**Note**  
+**Note**
 You can specify `$LATEST` as the value for `CustomResourceVersion`\. However, this replicates the unsafe behavior in previous versions of Lumberyard of using the most recent Lambda code version to process custom resource instance events\. This practice is not recommended for environments where failed stack updates cannot be tolerated\.
 
 ## Retention of Lambda Functions {#cloud-canvas-cgf-adding-aws-resources-versioning-retention-of-lambda-functions}
@@ -50,7 +50,7 @@ Prior to Lumberyard version 1\.16, if you deleted a type definition and then upd
 
 This behavior could result in rollback errors and a potentially unrecoverable stack when you tried to update instances of the resource type\. For this reason, Lambda functions associated with resource types now remain in your account indefinitely and are deleted only when the project is deleted\.
 
-**Note**  
+**Note**
 Lambda functions are deleted in AWS only when you run `lmbr_aws project delete`\. If you delete your project stack locally but not in AWS, the Lambda functions associated with your resource types will remain\. To delete them, you can use the AWS console or the [Cloud Canvas cleanup tool](/docs/userguide/gems/cloud-canvas/administration-aws-resource-cleanup#cloud-canvas-administration-aws-resource-cleanup-tool)\. Because the cleanup tool can be very destructive, use it with caution, and do not use it on production deployments\.
 
 ## Removing Unused Custom Resource Code {#cloud-canvas-cgf-adding-aws-resources-versioning-removing-unused-custom-resource-code}
@@ -75,7 +75,7 @@ Previously, the `PhysicalResourceId` that a custom resource handler returned was
 With the advent of versioning in Lumberyard 1\.16, custom resources embed their own version information in AWS CloudFormation's `PhysicalResourceId`\. If you are writing a Lambda function and need to extract the embedded ID from the AWS CloudFormation physical ID, use the `get_embedded_physical_id` function, as in the following example\.
 
 ```
-from cgf_utils import custom_resource_utils 
+from cgf_utils import custom_resource_utils
 actual_physical_id = custom_resource_utils.get_embedded_physical_id(stack_physical_id)
 ```
 

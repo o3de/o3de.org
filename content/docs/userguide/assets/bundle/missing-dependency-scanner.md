@@ -1,5 +1,5 @@
 ---
-description: ' Use the missing dependency scanner in &ALY; to identify missing asset
+description: ' Use the missing dependency scanner in Lumberyard to identify missing asset
   references. '
 title: Using the Missing Dependency Scanner
 ---
@@ -10,7 +10,7 @@ Use the `AssetProcessorBatch.exe` tool to scan your files for patterns that look
 The following command scans all files with the extension `.txt`\.
 
 ```
-AssetProcessorBatch.exe /dependencyScanPattern=%.txt 
+AssetProcessorBatch.exe /dependencyScanPattern=%.txt
 ```
 
 The command scans the **ProductName** column in the **Products** table in the asset database\. The scanner performs multiple passes so that it can present only results that are likely to be missing dependencies\. It scans for patterns like paths, asset IDs, and UUIDs that map to existing products in your game\. The results of the scan are stored in the **MissingProductDependencies** table of the asset database\.
@@ -54,16 +54,16 @@ The following procedures show you how to create an XML file that has a missing d
    AssetProcessor: Missing dependency: String "project.json" matches asset: {B076CDDC-14DF-50F4-A5E9-7518ABB3E851}:0
    ```
 
-   The following image shows sample asset database output\.  
+   The following image shows sample asset database output\.
 ![\[Sample output from an asset scan in the asset database.\]](/images/userguide/assetbundler/asset-bundler-missing-dependency-scanner-1.png)
 
 Next, create a schema to match this file and output, or *emit*, the dependency\.
 
 **To create a schema to emit the dependency**
 
-1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\. 
+1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\.
 
-1. In the **Asset Editor**, choose **File**, **New**, **XML Schema**\.  
+1. In the **Asset Editor**, choose **File**, **New**, **XML Schema**\.
 ![\[Creating a new schema file in the Asset Editor.\]](/images/userguide/assetbundler/asset-bundler-missing-dependency-scanner-2.png)
 
 1. For **Matching** Rules, click the plus \(**\+**\) icon to add a rule\.
@@ -86,7 +86,7 @@ Next, create a schema to match this file and output, or *emit*, the dependency\.
 
 1. Save the `missingdependency.xml` again to force it to reprocess\.
 
-1. Verify that the dependency now appears correctly in the asset database, as the following images show:  
+1. Verify that the dependency now appears correctly in the asset database, as the following images show:
 ![\[Dependency appearing correctly in the asset database.\]](/images/userguide/assetbundler/asset-bundler-missing-dependency-scanner-3.png)
 
 1. Run the missing dependency scanner again, using syntax, as shown in the following example:

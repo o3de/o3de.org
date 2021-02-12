@@ -1,7 +1,7 @@
 ---
 description: ' Create plants, trees, bushes, and other foliage with SpeedTree 8 for
-  &ALYlong;. '
-title: Using SpeedTree 8 for &ALY;
+  Amazon Lumberyard. '
+title: Using SpeedTree 8 for Lumberyard
 ---
 # Using SpeedTree 8 for Lumberyard {#vegetation-speedtree-lumberyard-intro}
 
@@ -15,7 +15,7 @@ The SpeedTree modeler exports Lumberyard meshes and materials into your game pro
 
 Download [SpeedTree 8 for Lumberyard](https://store.speedtree.com/product/speedtree-for-lumberyard)\.
 
-**Note**  
+**Note**
 You will need to create a SpeedTree account and activate your license in order to download SpeedTree 8 for Lumberyard\.
 
 View the [SpeedTree 8 documentation](http://docs8.speedtree.com/modeler/doku.php)\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Fur shader for real-time fur rendering in &ALYlong;. '
+description: ' Use the Fur shader for real-time fur rendering in Amazon Lumberyard. '
 title: Fur Shader
 ---
 # Fur Shader {#shader-ref-fur}

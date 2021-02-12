@@ -1,5 +1,5 @@
 ---
-description: ' See the following common AI Modular Behavior Tree (MBT) nodes in &ALYlong;. '
+description: ' See the following common AI Modular Behavior Tree (MBT) nodes in Amazon Lumberyard. '
 title: Common AI MBT Nodes
 ---
 # Common AI MBT Nodes {#ai-mbt-nodes-common}
@@ -14,8 +14,8 @@ This node plays an Mannequin animation fragment and waits until the animation fi
 + **name**: The name of the fragment to play\.
 
 **Behavior**
-+ **Success**: If the animation is correctly played or if no operation was needed\. 
-+ **Failure**: If an error occurs while trying to queue the request to play the specified fragment\. 
++ **Success**: If the animation is correctly played or if no operation was needed\.
++ **Failure**: If an error occurs while trying to queue the request to play the specified fragment\.
 
 **Example**
 
@@ -48,14 +48,14 @@ Used to move the agent from the current position to the specified destination\. 
 
 **Parameters**
 + **speed**: Movement speed, which can be any of the following: Walk, Run, or Sprint\.
-+ **stance**: Stance, which can be any of the following: Relaxed, Alerted, or Stand\. Default = Stand\. 
++ **stance**: Stance, which can be any of the following: Relaxed, Alerted, or Stand\. Default = Stand\.
 + **bodyOrientation**: Body orientation, which can be any of the following: FullyTowardsMovementDirection, FullyTowardsAimOrLook, or HalfwayTowardsAimOrLook\. Default = HalfwayTowardsAimOrLook\.
 + **moveToCover**: True if the agent is moving into cover; otherwise false\. Default = false\.
 + **turnTowardsMovementDirectionBeforeMoving**True if the agent should first turn into the direction of movement before actually moving; false if not\. Default = false\.
-+ **strafe**: True if the agent is allowed to strafe; false it not\. Default = false\. 
-+ **glanceInMovementDirection**: True if the agent is allowed to glance in the direction of movement; false if it should always look at its look\-at target\. Default = false\. 
-+ **to**: Movement destination, which can be one of the following: Target, Cover, RefPoint\. or LastOp\. 
-  + **Target**: The current attention target\. 
++ **strafe**: True if the agent is allowed to strafe; false it not\. Default = false\.
++ **glanceInMovementDirection**: True if the agent is allowed to glance in the direction of movement; false if it should always look at its look\-at target\. Default = false\.
++ **to**: Movement destination, which can be one of the following: Target, Cover, RefPoint\. or LastOp\.
+  + **Target**: The current attention target\.
   + **Cover**: The current cover position\.
   + **RefPoint**: The current reference position\.
   + **LastOp**: The position of the last successful position related operation\.
@@ -75,16 +75,16 @@ Used to move the agent from the current position to the specified destination\. 
   + **PanicSpread**: Fire randomly in the general direction of the target\.
   + **BurstDrawFire**: Fire in bursts, in an attempt to draw enemy fire\.
   + **MeleeForced**: Melee, without distance restrictions\.
-  + **BurstSnipe**: Fire in burst, aiming for a head\-shot\. 
+  + **BurstSnipe**: Fire in burst, aiming for a head\-shot\.
   + **AimSweep**: Keep aiming at the target, but not allowed to fire\.
   + **BurstOnce**: Fire a single burst\.
 + **avoidDangers**: 1 if dangers should be avoided while moving, 0 if they can be ignored\. Default = 1\.
 + **avoidGroupMates**: 1 if group mates should be avoided while moving, 0 if they can be ignored\. Default = 1\.
-+ **considerActorsAsPathObstacles**: 1 if any actor should be considered a path obstacle that the path\-finder should avoid, 0 if they can be ignored\. Default = 0\. 
-+ **lengthToTrimFromThePathEnd**: The resulting path\-finder path will be trimmed by the specified amount of distance\. Positive values will trim from the end of the path; negative values will trim from the start of the path\. Default = 0\.0\. 
++ **considerActorsAsPathObstacles**: 1 if any actor should be considered a path obstacle that the path\-finder should avoid, 0 if they can be ignored\. Default = 0\.
++ **lengthToTrimFromThePathEnd**: The resulting path\-finder path will be trimmed by the specified amount of distance\. Positive values will trim from the end of the path; negative values will trim from the start of the path\. Default = 0\.0\.
 
 **Behavior**
-+ **Success**: If the destination is reached\. 
++ **Success**: If the destination is reached\.
 + **Failure**: If the destination is deemed unreachable\.
 
 **Example**
@@ -98,8 +98,8 @@ Used to move the agent from the current position to the specified destination\. 
 This node performs a Tactical Position System query and waits for a result\.
 
 **Parameters**
-+ **name**: The name of the TPS query to use\. 
-+ **register**: Where to store result of the TPS query: RefPoint or Cover\. Default = Cover\. 
++ **name**: The name of the TPS query to use\.
++ **register**: Where to store result of the TPS query: RefPoint or Cover\. Default = Cover\.
 
 **Behavior**
 + **Success**: If the TPS returns a tactical position\.
@@ -164,7 +164,7 @@ This node succeeds if the time condition is satisfied\.
 
 **Behavior**
 + **Success**: If the time condition is true or the orNeverBeenSet parameter is true\.
-+ **Failure**: If the time stamp was not previously set\. 
++ **Failure**: If the time stamp was not previously set\.
 
 **Example**
 
@@ -206,7 +206,7 @@ This node executes the child node if the result from running a lua snippet is tr
 + **code**: The lua code to be executed\.
 
 **Behavior**
-+ **Failure**: If the lua code returns a value different from true\. Otherwise, the node returns the result of the execution of its child node\. 
++ **Failure**: If the lua code returns a value different from true\. Otherwise, the node returns the result of the execution of its child node\.
 
 **Example**
 
@@ -214,8 +214,8 @@ This node executes the child node if the result from running a lua snippet is tr
 <LuaGate code="return AI.GetGroupScopeUserCount(entity.id, 'DeadBodyInvestigator') == 0">
 ```
 
-**Warning**  
- The LuaGate node uses the legacy scripting context and does not work with the new component entity system\. 
+**Warning**
+ The LuaGate node uses the legacy scripting context and does not work with the new component entity system\.
 
 ## RandomGate node {#ai-mbt-nodes-randomgate}
 
@@ -301,7 +301,7 @@ This node requests the communication manager to play one of the agent's readabil
 
 **Behavior**
 + **Success**: If the timeout elapses or when the readability is complete if the node is set to wait until the communication is finished\.
-+ **Failure**: 
++ **Failure**:
 
 **Example**
 
@@ -379,7 +379,7 @@ The node succeeds immediately\.
 **Example**
 
 ```
-<Stance name="Crouch" allowedSlopeNormalDeviationFromUpInDegrees="30" 
+<Stance name="Crouch" allowedSlopeNormalDeviationFromUpInDegrees="30"
 stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
@@ -398,7 +398,7 @@ The node returns the result of the child's execution if the condition is true, o
 
 ```
 <IfCondition condition="TargetVisible">
-    <Communicate name="AttackNoise" channel="BattleChatter" expiry="2.0" 
+    <Communicate name="AttackNoise" channel="BattleChatter" expiry="2.0"
 waitUntilFinished="1" />
 </IfCondition>
 ```
@@ -435,14 +435,14 @@ The node returns the result of the child's execution\.
 **Example**
 
 ```
-<LuaWrapper onEnter="entity:EnableSearchModule()" 
+<LuaWrapper onEnter="entity:EnableSearchModule()"
 onExit="entity:DisableSearchModule()">
     <Animate name="AI_SearchLookAround" />
 </LuaWrapper>
 ```
 
-**Warning**  
- The LuaWrapper node uses the legacy scripting context and does not work with the new component entity system\. 
+**Warning**
+ The LuaWrapper node uses the legacy scripting context and does not work with the new component entity system\.
 
 ## ExecuteLua node {#ai-mbt-nodes-executelua}
 
@@ -461,8 +461,8 @@ The node always succeeds\.
 <ExecuteLua code="entity:SetEyeColor(entity.EyeColors.Relaxed)" />
 ```
 
-**Warning**  
- The ExecuteLua node uses the legacy scripting context and does not work with the new component entity system\. 
+**Warning**
+ The ExecuteLua node uses the legacy scripting context and does not work with the new component entity system\.
 
 ## AssertLua node {#ai-mbt-nodes-assertlua}
 
@@ -481,15 +481,15 @@ Succeeds if the Lua code returns value is true, otherwise it fails\.
 <AssertLua code="return entity:IsClosestToTargetInGroup()" />
 ```
 
-**Warning**  
- The AssertLua node uses the legacy scripting context and does not work with the new component entity system\. 
+**Warning**
+ The AssertLua node uses the legacy scripting context and does not work with the new component entity system\.
 
 ## GroupScope node {#ai-mbt-nodes-groupscope}
 
 This node tries to enter the agent in a group scope, which is limited by the specified amount of concurrent users\. If the node succeeds to do that, then the child node is executed\.
 
 **Parameters**
-+ **name**: The name of the group scope to be entered\. 
++ **name**: The name of the group scope to be entered\.
 + **allowedConcurrentUsers**: \(Optional\) The maximum number of simultaneous users of that can be in the specified group scope\.
 
 **Behavior**
@@ -546,7 +546,7 @@ This node updates the aim direction of the agent for when he is using a mounted 
 **Parameters**
 + **maxAngleRange**: \(Optional\) The maximum amount to deviate from the original position\.
 + **minSecondsBeweenUpdates**: \(Optional\) The minimum amount of delay between updates\.
-+ **useReferencePointForInitialDirectionAndPivotPosition**: 
++ **useReferencePointForInitialDirectionAndPivotPosition**:
 
 **Behavior**
 
@@ -555,13 +555,13 @@ The node does not succeed or fail\.
 **Example**
 
 ```
-<AimAroundWhileUsingAMachingGun minSecondsBeweenUpdates="2.5" maxAngleRange="30" 
+<AimAroundWhileUsingAMachingGun minSecondsBeweenUpdates="2.5" maxAngleRange="30"
 useReferencePointForInitialDirectionAndPivotPosition="1"/>
 ```
 
 ## ClearTargets node {#ai-mbt-nodes-cleartargets}
 
-This node clears the agent's targets information\. 
+This node clears the agent's targets information\.
 
 **Parameters**
 
@@ -605,7 +605,7 @@ This node teleports the character when the destination point and the source poin
 None\.
 
 **Behavior**
-+ **Success**: After the character is teleported\. 
++ **Success**: After the character is teleported\.
 
 **Example**
 
@@ -641,7 +641,7 @@ This node checks if the agent's attention target can be reached\.
 + **mode**: Defines the target to use: UseLiveTarget or UseAttentionTarget\.
 
 **Behavior**
-+ **Success**: If it can reach the target\. 
++ **Success**: If it can reach the target\.
 + **Failure**: If it cannot reach the target\.
 
 **Example**
@@ -725,8 +725,8 @@ This node sets the agent to shoot at a target or a location\.
 **Example**
 
 ```
-<Shoot at="Target" stance="Crouch" fireMode="Burst" duration="5" 
-allowedSlopeNormalDeviationFromUpInDegrees="30" 
+<Shoot at="Target" stance="Crouch" fireMode="Burst" duration="5"
+allowedSlopeNormalDeviationFromUpInDegrees="30"
 stanceToUseIfSlopeIsTooSteep="Stand" />
 ```
 
@@ -740,7 +740,7 @@ This node sets the agent to attempt a grenade throw\.
 
 **Behavior**
 + **Success**: If a grenade is thrown before it times out\.
-+ **Failure**: If a grenade is not thrown before it times out\. 
++ **Failure**: If a grenade is not thrown before it times out\.
 
 **Example**
 

@@ -1,10 +1,10 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to add comments to your script. '
+description: ' Use the Amazon Lumberyard Script Canvas editor to add comments to your script. '
 title: Commenting Nodes
 ---
 # Commenting Nodes {#script-canvas-block-commenting}
 
-You can add comments to your script to describe how it works\. 
+You can add comments to your script to describe how it works\.
 
 **Contents**
 + [Adding Comment Nodes](#adding-comment-nodes)
@@ -21,7 +21,7 @@ A **Comment** node is a floating block of text that you can move in the **Script
    + In the **Node Palette**, click **Utilities** and then click and drag the **Comment** node to your script\.
    + Right\-click your script and choose **Add Comment**\.
 
-1. Double\-click the node and then enter a description\.  
+1. Double\-click the node and then enter a description\.
 ![\[Use the Comment node to add useful notes about your script.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/comment-node.png)
 
 1. To delete a **Comment** node, do one of the following:
@@ -37,16 +37,16 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 1. In the **Script Canvas** editor, do one of the following:
    + In the **Node Palette**, click **Utilities** and then drag the **Block Comment** node to your script\.
    + Right\-click the canvas and choose **Create Block Comment**\.
-   + If you have a group of nodes together, right\-click the canvas and choose **Create Block Comment for Selection**\. 
+   + If you have a group of nodes together, right\-click the canvas and choose **Create Block Comment for Selection**\.
 
 1. For the **Block Comment** node, double\-click the header, and then enter a description\.
 
-1. Drag the corners of the node to resize it\. 
+1. Drag the corners of the node to resize it\.
 
-1. Drag your nodes into the **Block Comment** node or expand the **Block Comment** node to contain them\.  
-**Example**  
+1. Drag your nodes into the **Block Comment** node or expand the **Block Comment** node to contain them\.
+**Example**
 
-   The following **Block Comment** node contains other nodes as a group\.  
+   The following **Block Comment** node contains other nodes as a group\.
 ![\[Use the Block Comment node to organize the nodes in your script.\]](/images/shared/block-comment-node.png)
 
 1. To move your nodes together, drag the **Block Comment** node header\. All nodes inside the **Block Comment** node move together\.
@@ -54,7 +54,7 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 1. To delete the node, do one of the following:
    + Select the **Block Comment** node header and press **Delete**\.
    + Right\-click the header for the **Block Comment** node and choose **Delete Node**\.
-**Note**  
+**Note**
 Nodes inside the **Block Comment** node are not deleted\.
 
 ## Changing Comment Node Font Settings {#change-font-settings-for-comments}
@@ -65,11 +65,11 @@ You can change the font settings in comment nodes to label and organize your scr
 
 1. In the **Script Canvas** editor, choose **View**, **Node Inspector**\.
 
-1. Do one of the following: 
+1. Do one of the following:
    + For a **Comment** node, select the node\.
-   + For a **Block Comment** node, select the header\. 
+   + For a **Block Comment** node, select the header\.
 
-1. In the **Node Inspector**, you can make the following changes:  
+1. In the **Node Inspector**, you can make the following changes:
 ![\[Use the Node Inspector to change font settings for comment nodes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
    + **Comment** - Type the comment for the node\.
    + **Font Color** - Type a value or use the **Color Picker** to select a color\.

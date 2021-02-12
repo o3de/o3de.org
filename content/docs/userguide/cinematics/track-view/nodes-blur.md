@@ -1,11 +1,11 @@
 ---
 description: ' Add a Radial Blur node to blur the animation outward in a radial pattern
-  in &ALYlong;''s &trackview-editor;. '
+  in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
 title: Radial Blur Node
 ---
 # Radial Blur Node {#cinematics-track-view-nodes-blur}
 
-You can use the **Radial Blur** node to blur the animation radially outward from a center point\. 
+You can use the **Radial Blur** node to blur the animation radially outward from a center point\.
 
 **To add a Radial Blur node in the Track View**
 
@@ -17,14 +17,14 @@ You can use the **Radial Blur** node to blur the animation radially outward from
 
 1.  Double\-click the green marker, and under **Key Properties**, enter a value for **Value**\.
 
- 
 
 
-**Radial Blur Node Key Properties**  
 
-| Property | Description | 
-| --- | --- | 
-| Amount | Intensity of the blur effect\. Range is 0 to 1\. | 
-| ScreenPosX | X\-axis position of the effect's center\. The range is \-1 to 1, with 0\.5 being the center of the screen\. | 
-| ScreenPosY | Y\-axis position of the effect's center\. Range is \-1 to 1, with 0\.5 being the center of the screen\. | 
-| Blurring Radius | Size of the blur effect\. The range is 0 \(not visible\) to 1 \(covers the entire screen\)\. | 
+**Radial Blur Node Key Properties**
+
+| Property | Description |
+| --- | --- |
+| Amount | Intensity of the blur effect\. Range is 0 to 1\. |
+| ScreenPosX | X\-axis position of the effect's center\. The range is \-1 to 1, with 0\.5 being the center of the screen\. |
+| ScreenPosY | Y\-axis position of the effect's center\. Range is \-1 to 1, with 0\.5 being the center of the screen\. |
+| Blurring Radius | Size of the blur effect\. The range is 0 \(not visible\) to 1 \(covers the entire screen\)\. |

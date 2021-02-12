@@ -1,39 +1,39 @@
 ---
-description: ' Learn how &cloud; Resource Manager provisions your game''s connection
-  to &AWS;. '
-title: Understanding &cloud; Resource Manager
+description: ' Learn how Cloud Canvas Resource Manager provisions your game''s connection
+  to AWS. '
+title: Understanding Cloud Canvas Resource Manager
 ---
 # Understanding Cloud Canvas Resource Manager {#cloud-canvas-ui-rm-overview}
 
-Game development is an inherently local activity\. You have a local copy of your game code, assets, and other resources\. You build, test, and tweak over and over on your local computer\. 
+Game development is an inherently local activity\. You have a local copy of your game code, assets, and other resources\. You build, test, and tweak over and over on your local computer\.
 
- The cloud is different\. It is an alien environment\. You put resources "out there" that the game depends on\. But those resources don't live on your computer system\. The process of using and modifying the resources in the cloud isn't the same as for resources that are local\. 
+ The cloud is different\. It is an alien environment\. You put resources "out there" that the game depends on\. But those resources don't live on your computer system\. The process of using and modifying the resources in the cloud isn't the same as for resources that are local\.
 
- **Cloud Canvas Resource Manager** bridges this gap\. It lets you have local *descriptions* of the AWS resources in the cloud that your game needs and provides ways to create and interact with the actual instances of those resources in AWS\. Your resource could be a database table, a file storage bucket, or code that runs in response to an event\. 
+ **Cloud Canvas Resource Manager** bridges this gap\. It lets you have local *descriptions* of the AWS resources in the cloud that your game needs and provides ways to create and interact with the actual instances of those resources in AWS\. Your resource could be a database table, a file storage bucket, or code that runs in response to an event\.
 
 ![\[Resource Manager\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-and-cloud.jpg)
 
- For team projects, the source code and assets that you are using likely come from a source control system\. The changes you make are shared with other people who work on the project through that source control system\. Different people can be working at the same time with different versions \("branches"\) of the code and with different versions of assets without interfering with each other\. 
+ For team projects, the source code and assets that you are using likely come from a source control system\. The changes you make are shared with other people who work on the project through that source control system\. Different people can be working at the same time with different versions \("branches"\) of the code and with different versions of assets without interfering with each other\.
 
-When you develop a game that uses cloud resources in AWS, those resources may be shared by different people who work on the game at the same time\. Sometimes you need different versions of those resources to exist in the cloud\. You also want to ensure that the people developing the game use the version of the resources in the cloud that matches the version of the code and assets they are working with\. 
+When you develop a game that uses cloud resources in AWS, those resources may be shared by different people who work on the game at the same time\. Sometimes you need different versions of those resources to exist in the cloud\. You also want to ensure that the people developing the game use the version of the resources in the cloud that matches the version of the code and assets they are working with\.
 
 ![\[Resource Manager in a team environment\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-resource-manager-multiple-deployments.png)
 
- After the game is released, the players will use a production copy while your team uses another, private copy to work on bug fixes and new content\. 
+ After the game is released, the players will use a production copy while your team uses another, private copy to work on bug fixes and new content\.
 
- You'll also want to do the following: 
-+ Be sure that players cannot access the development versions of game resources 
-+ Prevent the development team from making changes that could break the released game 
-+ Protect player information like e\-mail addresses from unauthorized access by team members 
+ You'll also want to do the following:
++ Be sure that players cannot access the development versions of game resources
++ Prevent the development team from making changes that could break the released game
++ Protect player information like e\-mail addresses from unauthorized access by team members
 
- The **Cloud Canvas Resource Manager** provides the tools you need to do the following: 
-+ Maintain descriptions of the AWS resources that your game depends on 
-+ Create as many copies of the AWS resources as needed for your releases and development teams 
-+ Help you secure access to those resources 
+ The **Cloud Canvas Resource Manager** provides the tools you need to do the following:
++ Maintain descriptions of the AWS resources that your game depends on
++ Create as many copies of the AWS resources as needed for your releases and development teams
++ Help you secure access to those resources
 
 ## The Role of AWS CloudFormation {#cloud-canvas-ui-rm-overview-cfn}
 
- The **Cloud Canvas Resource Manager** integrates the use of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) into the Lumberyard game development environment\. With AWS CloudFormation you can maintain descriptions of the AWS resources you need in text file templates that you can check into your source control system\. These descriptions can be branched and merged along with the rest of your game code and assets\. When you need actual instances of the resources to be created in AWS, **Cloud Canvas ****Resource Manager** passes the descriptions to AWS CloudFormation, which uses the template files to create, update, or delete resources in AWS to match the descriptions\. 
+ The **Cloud Canvas Resource Manager** integrates the use of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) into the Lumberyard game development environment\. With AWS CloudFormation you can maintain descriptions of the AWS resources you need in text file templates that you can check into your source control system\. These descriptions can be branched and merged along with the rest of your game code and assets\. When you need actual instances of the resources to be created in AWS, **Cloud Canvas ****Resource Manager** passes the descriptions to AWS CloudFormation, which uses the template files to create, update, or delete resources in AWS to match the descriptions\.
 
 ![\[Resource Manager uses AWS CloudFormation to create resources in AWS\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-cfn-upload-all-resources.jpg)
 
@@ -41,13 +41,13 @@ You can use resource manager to organize your descriptions into any number of **
 
 With resource manager you can create as many ***deployments*** of the resources as you need\. You could have a deployment for the dev team, another for the QA team, and another for the released game, or any other arrangement that suits your needs\. Each deployment contains a complete and independent instance of all of the project's resources\. Deployments are implemented using AWS CloudFormation ***stack*** resources\. For details, see [Resource Deployments](/docs/userguide/gems/cloud-canvas/resource-deployments.md)\.
 
-You can choose the deployment that you want to work with in Lumberyard Editor\. For example, if you create a "QA" deployment and use it to test your game, Lumberyard Editor automatically maps the references to resources in your game code to the "QA" instance of those resources\. 
+You can choose the deployment that you want to work with in Lumberyard Editor\. For example, if you create a "QA" deployment and use it to test your game, Lumberyard Editor automatically maps the references to resources in your game code to the "QA" instance of those resources\.
 
 ![\[Choosing your deployment\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-overview-current-deployment.png)
 
  Similarly, you can also specify the deployment to be used for release builds of the game\. For details, see [Resource Mappings](/docs/userguide/gems/cloud-canvas/resource-mappings.md)\.
 
-Each deployment comes with an AWS managed policy and an AWS role that you can use to grant specific AWS users and groups access to that deployment\. For example, players are granted access to specific resources within a deployment\. For details, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\. 
+Each deployment comes with an AWS managed policy and an AWS role that you can use to grant specific AWS users and groups access to that deployment\. For example, players are granted access to specific resources within a deployment\. For details, see [Controlling Access to Resources](/docs/userguide/gems/cloud-canvas/setting-access-permissions.md)\.
 
 ### A Closer Look at AWS CloudFormation Stacks {#cloud-canvas-overview-rm-cfn-stacks}
 
@@ -63,7 +63,7 @@ So, if there are 3 deployments and 4 resource groups, you have a total of 12 res
 
 ## Cloud Canvas Resource Management {#cloud-canvas-core-concepts-resource-mgmt}
 
-In addition to communicating with Amazon Web Services, Cloud Canvas can also help you manage your resources\. Amazon Web Services can help create and manage any cloud resources that a game resource group needs\. Once you implement the resource group you can use Cloud Canvas deployments to manage the resources for development, test, and live versions of your game\. 
+In addition to communicating with Amazon Web Services, Cloud Canvas can also help you manage your resources\. Amazon Web Services can help create and manage any cloud resources that a game resource group needs\. Once you implement the resource group you can use Cloud Canvas deployments to manage the resources for development, test, and live versions of your game\.
 
 ### Defining the Resources {#cloud-canvas-core-concepts-resource-mgmt-defining}
 

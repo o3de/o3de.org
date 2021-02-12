@@ -1,5 +1,5 @@
 ---
-description: ' Debug AI navigation with console variables in &ALYlong;. '
+description: ' Debug AI navigation with console variables in Amazon Lumberyard. '
 title: Debugging AI Navigation
 ---
 # Debugging AI Navigation {#ai-nav-debug}
@@ -12,33 +12,33 @@ There are a number of console variables that can be used for agent navigation me
 
 When debugging Smart Object navigation, make sure that all entities have the right classes assigned, and that the correct actions are set to execute\.
 
-**ai\_DebugDrawNavigation**  
-General variable for AI navigation debugging\.  
+**ai\_DebugDrawNavigation**
+General variable for AI navigation debugging\.
 Values: `1` =displays mesh and contour \| `2` =also display triangles \| `3` =also display tiles and external links
 
-**ai\_DrawSmartObjects**  
-Displays Smart Objects\.  
+**ai\_DrawSmartObjects**
+Displays Smart Objects\.
 Values: `0` =hide \| `1` =show
 
-**ai\_debugMNMAgentType**  
+**ai\_debugMNMAgentType**
 Mesh agent type for which debugging information is displayed\.
 
-**ai\_MNMPathFinderQuota**  
-Path finding quota per frame\.  
+**ai\_MNMPathFinderQuota**
+Path finding quota per frame\.
 Units: seconds
 
-**ai\_MNMPathFinderDebug**  
-Displays pathfinder debugging statistics, including queue size, average and maximum number of A\* search steps, and average and maximum search time\.  
+**ai\_MNMPathFinderDebug**
+Displays pathfinder debugging statistics, including queue size, average and maximum number of A\* search steps, and average and maximum search time\.
 Values: `0` =hide \| `1` =show
 
-**ai\_MNMProfileMemory**  
-Displays memory statistics\.  
+**ai\_MNMProfileMemory**
+Displays memory statistics\.
 Values: `0` =hide \| `1` =show
 
-**ai\_DrawPath**  
+**ai\_DrawPath**
 Draw path\.
 
-**ai\_DrawPathFollower**  
+**ai\_DrawPathFollower**
 Draw path follower\.
 
 ## Debugging the Navigation Mesh {#ai-nav-debug-mesh}

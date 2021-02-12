@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables to tune cascade shadows in &ALYlong;. '
+description: ' Use console variables to tune cascade shadows in Amazon Lumberyard. '
 title: 'Tutorial: Using Console Variables to Tune Cascade Shadows'
 ---
 # Tutorial: Using Console Variables to Tune Cascade Shadows {#rendering-graphics-shadows-tuning}
@@ -71,7 +71,7 @@ This information is displayed in the viewport, as the following image shows\. Ar
 
 To create the highest quality shadows, start by maximizing the number of cascades and then scale back as needed\. To maximize the number of cascades, enter the `e_GsmLodsNum` console variable, which specifies the number of gradient shadow map levels of detail \(LOD\)\. The default is `5`\.
 
-**Note**  
+**Note**
 The default of `5` is true even when the `sys_spec_shadows` group console variable is set to its highest value \(`8`\)\.
 
 To increase the number of cascades to 7, enter the following command:
@@ -92,7 +92,7 @@ Cascade 5: Light Blue
 Cascade 6: Red Orange
 ```
 
-**Note**  
+**Note**
 The additional cascade numbers and corresponding colors are not listed in the upper left of the viewport but do appear on the terrain\.
 
 The light blue color shows that the shadow range has been extended much further into the distance\.

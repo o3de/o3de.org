@@ -1,12 +1,12 @@
 ---
-description: ' Create simulated objects that move with your character (actor) in &ALYlong;. '
+description: ' Create simulated objects that move with your character (actor) in Amazon Lumberyard. '
 title: Creating Simulated Objects
 ---
 # Creating Simulated Objects {#animation-editor-creating-simulated-objects}
 
 When you animate a character \(actor\), your actor might wear objects that move differently from the primary motion\. For example, if your actor runs and wears a backpack, the backpack might sway back and forth\. To create this dynamic movement, you create a simulated object\. A simulated object acts as a container for the bones on your actor\. In the **Animation Editor**, you can specify how loose objects, such as chains, backpacks, or long hair, move in relation to the actor\.
 
-**Note**  
+**Note**
 Simulated objects don't collide with ragdoll colliders or PhysX entities in the level\.
 
 In this procedure, you'll do the following:

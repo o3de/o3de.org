@@ -1,5 +1,5 @@
 ---
-description: ' Apply silhouette parallax occlusion mapping (SPOM) in &ALYlong;. '
+description: ' Apply silhouette parallax occlusion mapping (SPOM) in Amazon Lumberyard. '
 title: Applying Silhouette Parallax Occlusion Mapping (SPOM)
 ---
 # Applying Silhouette Parallax Occlusion Mapping \(SPOM\) {#mat-maps-parallax-spom}
@@ -12,7 +12,7 @@ To apply SPOM, complete the following procedure\.
 
 1. In the left tree, select the desired asset\.
 
-1. In the right pane, under **Shader Generation Params**, select **Parallax occlusion mapping with silhouette**\. 
+1. In the right pane, under **Shader Generation Params**, select **Parallax occlusion mapping with silhouette**\.
 
 1. Under **Shader Params**, adjust the values of the following parameters\.
 

@@ -1,6 +1,6 @@
 ---
 description: ' Add realistic trees, bushes, grasses, and other vegetation to your
-  &ALYlong; terrain. '
+  Amazon Lumberyard terrain. '
 title: Adding Vegetation
 ---
 # Adding Vegetation {#vegetation-intro}
@@ -27,7 +27,7 @@ Keep in mind the following best practices, recommendations, and guidelines when 
 + Do not exceed a diameter of 8 meters for grass patches\. This size provides a balance between performance and coverage\.
 + Grasses and small plants do not require specular or opacity texture maps\. For more information, see [Working with Textures](/docs/userguide/materials/texture-intro.md)\.
 + Set the **Opacity** texture at a much lower resolution than the other maps\.
-+ Use a **Glossiness** value of 8 or above for realistic results\. 
++ Use a **Glossiness** value of 8 or above for realistic results\.
 + Use the automerged method to apply wind bending effects to grass\.
 + Use a maximum of 72 bones per tree for touch bending\.
 
@@ -36,14 +36,14 @@ Keep in mind the following best practices, recommendations, and guidelines when 
 The following settings are recommended when creating vegetation in your DCC tool\.
 
 
-****  
+****
 
-| Vegetation | Polygon Range | Texture Size | Proxies | Material IDs | 
-| --- | --- | --- | --- | --- | 
-| Grass | 0\-300 | 512x512 | Bending | Grass, grass proxy | 
-| Bushes | 300\-600 | 1024x1024 | Bending, collision | Leaf, leaf proxy | 
-| Small Trees | 600\-1000 | \(2\) 1024x1024 | Bending, collision \*\* | Trunk, leaf, leaf proxy | 
-| Large Trees |  | \(2\) 1024x1024 | Bending, collision \*\*\* | Trunk, leaf, leaf proxy, trunk proxy | 
+| Vegetation | Polygon Range | Texture Size | Proxies | Material IDs |
+| --- | --- | --- | --- | --- |
+| Grass | 0\-300 | 512x512 | Bending | Grass, grass proxy |
+| Bushes | 300\-600 | 1024x1024 | Bending, collision | Leaf, leaf proxy |
+| Small Trees | 600\-1000 | \(2\) 1024x1024 | Bending, collision \*\* | Trunk, leaf, leaf proxy |
+| Large Trees |  | \(2\) 1024x1024 | Bending, collision \*\*\* | Trunk, leaf, leaf proxy, trunk proxy |
 
 \*\* Smaller breakable tree trunks are physicalized\.
 

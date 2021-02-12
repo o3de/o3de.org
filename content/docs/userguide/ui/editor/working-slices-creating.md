@@ -15,7 +15,7 @@ You don't need to select all of the elements to go into the new slice\. If you j
 1. Right\-click the parent entity and choose **Make New Slice from Selection**\.
 
 1. Save the slice with a descriptive name\.
-**Tip**  
+**Tip**
 Because you can create many slices for different purposes, we recommend that you name your slices meaningfully and organize them purposefully into directories and subdirectories\.
 
 If you want the slice to appear in the slice library **New**, **Element** menu, you must save it within the `UI/Slices/Library` directory\. This directory is either in the project root or within any enabled gems asset root\. Adding a slice to the slice library menu makes it easy and convenient to use as a common building block for your UI canvases\.

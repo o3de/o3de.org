@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the Blend Two Additive node in &ALYlong; &animation-editor;
+description: ' Learn how to use the Blend Two Additive node in Amazon Lumberyard Animation Editor
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---
@@ -9,7 +9,7 @@ The **Blend Two Additive** node blends a pose 2 input additively on top of a pos
 
 ![\[Blend Two Additive node.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)
 
-**Note**  
+**Note**
 This node functions similarly to the **Blend Two \(Legacy\)** node with **Additive** enabled\. The key difference is that the **Blend Two \(Legacy\)** node subtracts the bind pose when applying an additive blend\. Furthermore, **Blend Two Additive** expects pose 2 to be an additive pose\. This means that if you wanted **Blend Two Additive** to function like the **Blend Two \(Legacy\)** node, you must first subtract the bind pose from pose 2\.
 
 **To use the **Blend Two Additive** node**
@@ -22,10 +22,10 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
-1. Drag the **Blend Two Additive** node into the animation graph\.  
+1. Drag the **Blend Two Additive** node into the animation graph\.
 ![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two Additive into the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-animgraphpalette.png)
 
-1.   
+1.
 ![\[Blend Two Additive node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs.png)
 
    Connect nodes to the following inputs and output:

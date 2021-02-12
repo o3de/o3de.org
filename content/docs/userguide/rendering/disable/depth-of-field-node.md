@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Depth of Field node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Depth of Field node in the Amazon Lumberyard Script Canvas
   editor to disable the depth of field. '
 title: Disable Depth of Field
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Depth of Field](/docs/userguide/rendering/enab
 ## Inputs {#disable-depth-of-field-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
 
 ## Outputs {#disable-depth-of-field-note-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event |  Sends when the node is finished\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event |  Sends when the node is finished\.  |

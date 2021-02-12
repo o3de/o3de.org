@@ -1,5 +1,5 @@
 ---
-description: ' Use the Primitive Assets Gem in your &ALY; project to add primitive
+description: ' Use the Primitive Assets Gem in your Lumberyard project to add primitive
   objects with physics enabled. '
 title: Primitive Assets Gem
 ---

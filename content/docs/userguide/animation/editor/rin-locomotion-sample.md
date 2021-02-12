@@ -1,16 +1,16 @@
 ---
-description: ' Use the Rin Locomotion sample level to learn how the &ALY; &animation-editor;
+description: ' Use the Rin Locomotion sample level to learn how the Lumberyard Animation Editor
   uses actors, motion sets, and animation graphs to control character behavior. '
 title: Advanced_RinLocomotion Sample
 ---
 # Advanced\_RinLocomotion Sample {#animation-editor-rin-locomotion-sample}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 This sample level showcases the Rin character in a simplified environment and demonstrates how the **Animation Editor** uses actors, motion sets, and animation graphs to control character behavior\. Playable animations include idle, walk, run, turn, and multiple attacks\.
 

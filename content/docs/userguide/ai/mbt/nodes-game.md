@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the AI MBT nodes in &ALYlong;. '
+description: ' Learn more about the AI MBT nodes in Amazon Lumberyard. '
 title: Game AI Modular Behavior Tree (MBT) Nodes
 ---
 # Game AI Modular Behavior Tree \(MBT\) Nodes {#ai-mbt-nodes-game}
@@ -18,11 +18,11 @@ A melee attack is performed when the following conditions are satisfied:
 + **target**: The target of the melee\. This parameter could be set as `AttentionTarget` or a generic `RefPoint`\.
 + **cylinderRadius**: The radius of the cylinder used for the collision check of the hit\.
 + **hitType**: The type of hit that is sent to the game rules\. Default is `CGameRules::EHitType::Melee`\.
-+ **failIfTargetNotInNavigationMesh**: Determines whether the node should not try to melee a target that is outside the navigation mesh\. This will only cause the melee attack to not be performed \- the Melee node will still succeed\. 
++ **failIfTargetNotInNavigationMesh**: Determines whether the node should not try to melee a target that is outside the navigation mesh\. This will only cause the melee attack to not be performed \- the Melee node will still succeed\.
 + **materialEffect**: The material effect used when the melee attack hits the target\.
 
 **Behavior**
-+ **Success**: Occurs irregardless of the actual execution of the melee attack\. 
++ **Success**: Occurs irregardless of the actual execution of the melee attack\.
 
 **Example**
 
@@ -99,7 +99,7 @@ This node uses a feature of the physics system to inflate the capsule of the age
 
 **Parameters**
 + **radiusForAgentVsPlayer**: The radius use to calculate the collision between the agent and the player\.
-+ **radiusForAgentVsWorld**: The radius used to calculate the collision between the agent and the world\. 
++ **radiusForAgentVsWorld**: The radius used to calculate the collision between the agent and the world\.
 
 **Behavior**
 
@@ -113,7 +113,7 @@ The node never succeeds or fails but always runs\.
 
 ## ScorcherDeploy:RunWhileDeploying node {#ai-mbt-nodes-game-scorcherdeploying}
 
-This node and the following one are special decorator nodes that the Scorcher uses to deploy and undeploy as part of the shooting phase\. These two nodes rely on external Lua scripts and various signals to work properly\. In this way you don't have to explicitly expose more functionality from the AI system libraries\. 
+This node and the following one are special decorator nodes that the Scorcher uses to deploy and undeploy as part of the shooting phase\. These two nodes rely on external Lua scripts and various signals to work properly\. In this way you don't have to explicitly expose more functionality from the AI system libraries\.
 
 This node must contain exactly one child node that runs while the Scorcher is in the processes of deployment getting ready for an attack\. It can be used, for example, to control aiming before actually shooting\.
 
@@ -137,7 +137,7 @@ None\.
 
 **Behavior**
 + **Success**: If the child node succeeds\. This will make the parent node start the undeployment sequence\.
-+ **Failure**: If the child node fails\. 
++ **Failure**: If the child node fails\.
 
 **Example**
 
@@ -157,8 +157,8 @@ None\.
 Used to control the shooting of heavy mortar\. It tries to simplify and to centralize the check of the pre\-condition and the initialization of the weapon plus the re\-selection of the primary weapon\.
 
 **Parameters**
-+ **to**: \(Optional\) Defines the target of the shooting\. Possible values: Target or RefPoint\. Default is Target\. 
-+ **firemode**: \(Optional\) The Heavy X\-Pak \(or Mortar\) has two different firemodes\. Possible values: Charge or BurstMortar\. Default is Charge\. 
++ **to**: \(Optional\) Defines the target of the shooting\. Possible values: Target or RefPoint\. Default is Target\.
++ **firemode**: \(Optional\) The Heavy X\-Pak \(or Mortar\) has two different firemodes\. Possible values: Charge or BurstMortar\. Default is Charge\.
 + **timeout**: \(Optional\) Defines the maximum time the node can try to perform the shooting\. Default value is 5\.0 seconds\.
 + **aimingTimeBeforeShooting**: \(Optional\) Defines the time in which the Heavy will aim before starting the shooting\. Default is 1\.0 seconds\. This amount of time must be larger than the global timeout\.
 + **minAllowedDistanceFromTarget**: \(Optional\) Defines the minimum distance from the Target to allow shooting\. Default is 10\.0 m\.
@@ -178,7 +178,7 @@ Used to control the shooting of heavy mortar\. It tries to simplify and to centr
 Used to enter a squad scope, which is limited by the specified amount of concurrent users\. If the node succeeds to do that, then the child node is executed\.
 
 **Parameters**
-+ **name**: The name of the squad scope to enter\. 
++ **name**: The name of the squad scope to enter\.
 + **allowedConcurrentUsers**: \(Optional\) Number of allowed concurrent users in the specified scope\. Default value = 1\.
 
 **Behavior**
@@ -198,7 +198,7 @@ Used to enter a squad scope, which is limited by the specified amount of concurr
 Used to send an event only to the squad members\.
 
 **Parameters**
-+ **name**: Name of the event to be sent\. 
++ **name**: Name of the event to be sent\.
 
 **Behavior**
 
@@ -217,9 +217,9 @@ This node checks if a squad contains a specific amount of members and if so exec
 **Parameters**
 
 One of the following parameters must be specified\.
-+ **isGreaterThan**: \(Optional\) To succeed, checks if the number of members is greater than the specified number\. 
-+ **isLesserThan**: \(Optional\) To succeed, checks if the number of members is lesser than the specified number\. 
-+ **equals**: \(Optional\) To succeed, checks if the number of members is equal to the specified number\. 
++ **isGreaterThan**: \(Optional\) To succeed, checks if the number of members is greater than the specified number\.
++ **isLesserThan**: \(Optional\) To succeed, checks if the number of members is lesser than the specified number\.
++ **equals**: \(Optional\) To succeed, checks if the number of members is equal to the specified number\.
 
 **Behavior**
 + **Success**: If the number of members satisfies the specified condition\.

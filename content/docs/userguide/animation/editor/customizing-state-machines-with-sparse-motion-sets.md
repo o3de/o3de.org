@@ -1,20 +1,20 @@
 ---
-description: ' Use custom state machines to control motions in the &animation-editor;
-  for &ALYlong;. '
+description: ' Use custom state machines to control motions in the Animation Editor
+  for Amazon Lumberyard. '
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 # Customizing State Machine Routing with Sparse Motion Sets {#animation-editor-customizing-state-machines-with-sparse-motion-sets}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 You might run into a case where you have different characters that don't have the exact same motions as the character for which you created the animation graph\. Instead of duplicating large parts or creating new animation graphs for different characters, you can share the same animation graph for all your characters\.
 
-You can allow or deny transitions and routes to motion states in a state machine, based on the existence of the given motion entry\. 
+You can allow or deny transitions and routes to motion states in a state machine, based on the existence of the given motion entry\.
 
 **Topics**
 + [Sparse Motion Sets](#sparse-motion-sets)
@@ -37,9 +37,9 @@ When you choose an unassigned motion entry on a motion state in a state machine,
 
 A motion set can contain child motion sets that are stored in the same file\. Child motion sets inherit all motion entries from the parent\.
 
-In the following example, a hierarchical motion set has the **Human** motion at the root level\. The **Zombie** motion set is a child, which inherits from the parent **Human** motion set\. The **Zombie** motion set does not have a motion entry for `Jump`\. 
+In the following example, a hierarchical motion set has the **Human** motion at the root level\. The **Zombie** motion set is a child, which inherits from the parent **Human** motion set\. The **Zombie** motion set does not have a motion entry for `Jump`\.
 
-**Example : Hierarchical Motion Set**  
+**Example : Hierarchical Motion Set**
 
 **Human \(motion set\)**
 + \+ Idle - `GenericIdle.motion`
@@ -53,7 +53,7 @@ Because the parent motion set defines the `Jump` motion entry with a motion file
 
 If you don't want your zombie characters to jump, you can disable inheritance for that specified motion\. In the child motion set, you can create a new motion entry named `Jump` and then mark it as unassigned\. This way you can override the motion entry from the parent, by not assigning it for the child motion set\.
 
-**Example : Child Motion Set with Unassigned Jump Motion**  
+**Example : Child Motion Set with Unassigned Jump Motion**
 
 **Human \(motion set\)**
 + \+ Idle - `GenericIdle.motion`
@@ -72,7 +72,7 @@ For hierarchical motion sets, you can create a motion entry and unassign it to d
 
 Animation graphs can be shared across characters\. Two different characters that use the same animation graph can operate with two different motion sets\. For example, you can have a human character that uses the human motion set, and a zombie character that uses the **Zombie** motion set\. Both characters can use the same animation graph\.
 
-You can configure the state machine to avoid motion states that are unassigned\. In this example, you don't want the zombie to go into the **Jump** state, as this motion was unassigned for the zombie motion set\. 
+You can configure the state machine to avoid motion states that are unassigned\. In this example, you don't want the zombie to go into the **Jump** state, as this motion was unassigned for the zombie motion set\.
 
 **To configure the state machine to avoid motion sets**
 
@@ -82,8 +82,8 @@ You can configure the state machine to avoid motion states that are unassigned\.
 
 1. For **Motion**, select the **Jump** state\.
 
-1. For **Test Function**, select **Is Motion Assigned?**\.  
+1. For **Test Function**, select **Is Motion Assigned?**\.
 ![\[Add motion conditions so that some motion states are unassigned.\]](/images/userguide/actor-animation/animation-editor-motion-condition.png)
 
-   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition's traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.  
+   Because the **Zombie** motion set does not have a motion file assigned for `Jump`, the character can't transition from the idle to jump state\. The condition's traffic light appears red and blocks the transition\. This lets you control whether a character is allowed to go to specific motion state or not\.
 ![\[Customize state machines based on motion sets.\]](/images/userguide/actor-animation/animation-editor-sparse-motion-sets-02.png)

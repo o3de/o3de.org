@@ -1,11 +1,11 @@
 ---
 description: ' Use bundle mode to ensure that your asset bundles have the required
-  assets for your &ALY; game. '
+  assets for your Lumberyard game. '
 title: Using Bundle Mode to Test Bundles
 ---
 # Using Bundle Mode to Test Bundles {#asset-bundler-bundle-mode}
 
-Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\. 
+Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\.
 
 Using bundle mode involves two key tasks:
 + Turning on missing asset reporting for assets not in bundles\. This enables "bundle mode"\.
@@ -20,9 +20,9 @@ To enable bundle mode, use the `sys_report_files_not_found_in_paks` console vari
 The following list shows valid arguments for the `sys_report_files_not_found_in_paks` console variable\.
 
 ```
-0 = Disabled 
-1 = Log 
-2 = Warning 
+0 = Disabled
+1 = Log
+2 = Warning
 3 = Error
 <Every other value> = Error
 ```
@@ -69,10 +69,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 
    The `1` argument specifies that missing files are reported as log entries rather than warnings or errors\.
 
-1. Enter game mode\. A list of Missing from bundle errors displays\.  
+1. Enter game mode\. A list of Missing from bundle errors displays\.
 ![\[Missing from bundle errors in the console window.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-1.png)
 
-1. Enter the command `loadbundles` to load bundles for the level\.  
+1. Enter the command `loadbundles` to load bundles for the level\.
 ![\[Using the loadbundles command.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-2.png)
 
    There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/userguide/assets/bundle/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
@@ -83,10 +83,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    addseedpath levels\milestone2\level.pak
    ```
 
-1. Enter the `listknownassets` command\.  
+1. Enter the `listknownassets` command\.
 ![\[Listing known assets in the console.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-3.png)
 
-1. Examine the output\. In the following example, the output shows missing button assets\.  
+1. Examine the output\. In the following example, the output shows missing button assets\.
 ![\[Identifying missing assets in the output.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-4.png)
 
    In the case of the button assets, the bundle was packaged a while ago and must be repackaged\. However, other assets are also still missing\.
@@ -100,10 +100,10 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 1. Enter an `assetbundlerbatch assetlists` command, as shown in the following example\. Use the `--print` argument to check the output\. In the example, the single\-line command has been formatted for readability\.
 
    ```
-   assetbundlerbatch assetlists 
-         --addseed levels\milestone2\level.pak 
-         --addseed levels\milestone2\milestonecutscene.scriptevents 
-         --addseed levels\milestone2\hardcodedassetreference.luac 
+   assetbundlerbatch assetlists
+         --addseed levels\milestone2\level.pak
+         --addseed levels\milestone2\milestonecutscene.scriptevents
+         --addseed levels\milestone2\hardcodedassetreference.luac
          --print
    ```
 
@@ -112,11 +112,11 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 1. Enter the `assetbundlerbatch assetlists` command again to bundle the assets, but this time without the `--print` argument\. The example command is single\-line, but has been formatted for readability\.
 
    ```
-   assetbundlerbatch assetlists 
-         --addseed levels\milestone2\level.pak 
-         --addseed levels\milestone2\milestonecutscene.scriptevents 
-         --addseed levels\milestone2\hardcodedassetreference.luac 
-         --platform pc 
+   assetbundlerbatch assetlists
+         --addseed levels\milestone2\level.pak
+         --addseed levels\milestone2\milestonecutscene.scriptevents
+         --addseed levels\milestone2\hardcodedassetreference.luac
+         --platform pc
          --assetlistfile DemoLevelList.assetlist
    ```
 
@@ -130,9 +130,9 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 1. Enter an `assetbundlerbatch bundles` command, as shown in the following example\.
 
    ```
-   assetbundlerbatch bundles 
-         --assetlistfile DemoLevelList_pc.assetlist 
-         --platform pc 
+   assetbundlerbatch bundles
+         --assetlistfile DemoLevelList_pc.assetlist
+         --platform pc
          --outputbundlepath G:\P4\dev\DemoProject\Bundles\milestone2.pak
    ```
 
@@ -143,7 +143,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    Bundle ( G:\P4\dev\DemoProject\Bundles\milestone2_pc.pak ) created successfully!
    ```
 
-1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.  
+1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.
 ![\[All loaded assets are now in bundles.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-5.png)
 
    All the assets loaded when game mode was entered are now in bundles\.

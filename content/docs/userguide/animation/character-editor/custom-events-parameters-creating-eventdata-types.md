@@ -1,6 +1,6 @@
 ---
 description: ' Use EventData types to create custom parameters for motion events in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Creating EventData Types
 ---
 # Creating EventData Types {#char-animation-editor-custom-events-parameters-creating-eventdata-types}
@@ -23,7 +23,7 @@ The `EMotionFX::EventData` class describes a set of parameters and values that i
    {
    public:
        AZ_RTTI(LeftFootEvent, "{117454DC-0675-483E-843E-841C57A4354D}", EventDataSyncable);
-   
+
        LeftFootEvent() = default;
    ...
    ```
@@ -55,12 +55,12 @@ The `EMotionFX::EventData` class describes a set of parameters and values that i
    {
        AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context);
        if (!serializeContext) return;
-   
+
        serializeContext->Class<LeftFootEvent, EventDataSyncable>()->Version(1);
-   
+
        AZ::EditContext* editContext = serializeContext->GetEditContext();
        if (!editContext) return;
-   
+
        editContext->Class<LeftFootEvent>("LeftFootEvent", "")
            ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
                ->Attribute(AZ::Edit::Attributes::AutoExpand, true)
@@ -157,9 +157,9 @@ You can use `EMotionFX` to mirror motions programmatically\. When a motion is be
 For example, suppose that you use an `EventDataSyncable` subclass to mirror the gait of a horse\. You use an integer field to represent the feet of the horse with the following convention\.
 
 ```
-0=left rear 
-1=right rear 
-2=left front 
+0=left rear
+1=right rear
+2=left front
 3=right front
 ```
 

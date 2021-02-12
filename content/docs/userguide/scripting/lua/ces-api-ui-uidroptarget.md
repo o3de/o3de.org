@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIDropTargetComponent to make UI elements targets for drag
-  and drop behavior in &ALYlong;. '
+  and drop behavior in Amazon Lumberyard. '
 title: UIDropTargetComponent
 ---
 # UIDropTargetComponent {#lua-scripting-ces-api-ui-uidroptarget}
@@ -64,7 +64,7 @@ Sets the action triggered when a draggable component is dropped on this drop tar
 void SetOnDropAction(const AZStd::string& actionName)
 ```
 
-**Tip**  
+**Tip**
 A more flexible way to be notified when a drop occurs is to use the [UiDropTargetNotificationBus](#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus)\.
 
 ## UiDropTargetNotificationBus {#lua-scripting-ces-api-ui-uidroptarget-uidroptargetnotificationbus}

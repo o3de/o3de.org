@@ -1,5 +1,5 @@
 ---
-description: ' Upgrade the free version Wwise LTX to the full version for &ALYlong;. '
+description: ' Upgrade the free version Wwise LTX to the full version for Amazon Lumberyard. '
 title: Upgrading Wwise LTX to the Full Version
 ---
 # Upgrading Wwise LTX to the Full Version {#audio-wwise-upgrade}
@@ -11,7 +11,7 @@ To upgrade Wwise LTX to the full version of Wwise, follow the procedures in this
 + [Upgrading Your Project](#audio-wwise-upgrading-project)
 + [Upgrading Your Soundbanks](#audio-wwise-upgrading-soundbanks)
 
-After you upgrade the SDK, project, and soundbanks, you can open your game in Lumberyard to test your sounds\. 
+After you upgrade the SDK, project, and soundbanks, you can open your game in Lumberyard to test your sounds\.
 
 ## Upgrading the SDK {#audio-wwise-upgrading-sdk}
 
@@ -45,7 +45,7 @@ After you upgrade the SDK, project, and soundbanks, you can open your game in Lu
 
    1. On the **Install optional SDKs** page, verify that a green checkmark appears next to **Audiokinetic Wwise**\.
 
-1. Navigate to the `lumberyard_version\dev\Gems\AudioEngineWwise\Code` directory\. 
+1. Navigate to the `lumberyard_version\dev\Gems\AudioEngineWwise\Code` directory\.
 
 1. In a text editor, open the `wscript` file\.
 
@@ -61,10 +61,10 @@ After you successfully configure and build Lumberyard, you can upgrade the conte
 
 Follow this procedure to upgrade an existing Wwise LTX project to use the full version of Wwise\.
 
-**Prerequisites**  
+**Prerequisites**
 If your Wwise LTX project and soundbanks are under source control, you must check them out\. Check out the entire `lumberyard_version\dev\game_project\Sounds` directory\. After you upgrade your project, select the files that were created, and then revert any unmodified files before you submit them\.
 
-**Important**  
+**Important**
 During the upgrade process, read each message that Wwise displays\.
 
 **To upgrade your project**
@@ -77,15 +77,15 @@ During the upgrade process, read each message that Wwise displays\.
 
 1. If this is the first time running Wwise Authoring Tool for this version, an End\-User License Agreement \(EULA\) dialog appears\. Review and accept the EULA\.
 
-1. In the **Project Launcher** dialog, click **Open Other**, and open the `file_name.wproj` file for your game project\. 
+1. In the **Project Launcher** dialog, click **Open Other**, and open the `file_name.wproj` file for your game project\.
 
    You can find this file in the `lumberyard_version\dev\game_project\Sounds\wwise_project` directory\.
    + If a message appears stating that you are upgrading from an earlier version of Wwise, you must upgrade the Wwise project XML schema\. The message lists the files to be updated and highlights any files that are read\-only\.
    + The message also states that this action is a one\-way project upgrade\. This means that the upgraded project no longer loads with Wwise LTX\. You can back up of your Wwise LTX project before you click **Yes** in this message\.
-   + The **Project Load Log** message displays all the changes made\. You might see information about default work units that were missing and created when you upgraded\. 
-   + If your Wwise project is under source control, ensure that you add these `.wwu` files to your depot\. 
+   + The **Project Load Log** message displays all the changes made\. You might see information about default work units that were missing and created when you upgraded\.
+   + If your Wwise project is under source control, ensure that you add these `.wwu` files to your depot\.
 
-1. Close the message and save the Wwise project\. 
+1. Close the message and save the Wwise project\.
 
 Wwise LTX uses a single generic platform\. After upgrading to Wwise, you can edit the platforms for your project\.
 
@@ -93,7 +93,7 @@ Wwise LTX uses a single generic platform\. After upgrading to Wwise, you can edi
 
 After you upgrade the SDK and your project, you can rebuild your soundbanks\.
 
-**Note**  
+**Note**
 Wwise LTX uses a single **Generic** platform\. You can edit the platforms by going to **Project**, **Platform Manager**\. If you change the platforms, you must reopen your project\.
 
 **To upgrade your soundbanks**

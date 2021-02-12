@@ -1,17 +1,17 @@
 ---
-description: ' Use AI paths for navigation in &ALYlong;. '
+description: ' Use AI paths for navigation in Amazon Lumberyard. '
 title: Using AI Paths for Navigation
 ---
 # Using AI Paths for Navigation {#ai-nav-off-mesh-paths}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
-An AI path is a control object that is used to guide an AI agent from point to point along a specified route in a level\. AI paths are useful for AI agents that need to traverse between two navigation meshes\. 
+An AI path is a control object that is used to guide an AI agent from point to point along a specified route in a level\. AI paths are useful for AI agents that need to traverse between two navigation meshes\.
 
 **To create an AI Path**
 

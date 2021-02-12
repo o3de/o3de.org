@@ -1,5 +1,5 @@
 ---
-description: ' Learn programming details of &ALYlong;''s behavior context and its
+description: ' Learn programming details of Amazon Lumberyard''s behavior context and its
   reflection API. '
 title: Behavior Context in Depth
 ---
@@ -62,9 +62,9 @@ public:
     {
     public:
         AZ_TYPE_INFO(Inner, "...");
- 
+
         int m_member = 0;
-    }; 
+    };
 };
 
 void Outer::Reflect(AZ::ReflectContext* context)
@@ -81,7 +81,7 @@ void Outer::Reflect(AZ::ReflectContext* context)
 The following code shows a well formed nested class\.
 
 ```
-//Good nested class 
+//Good nested class
 class Outer
 {
 public:
@@ -133,18 +133,18 @@ behaviorContext.Property("globalReadOnlyProperty", &GlobalPropertyGetter, nullpt
 behaviorContext.Property("globalReadOnlyProperty", []() { return g_globalValue; }, nullptr); // Read only property with a Lambda function.
 behaviorContext.Property("globalReadOnlyProperty", BehaviorValueGetter(&g_globalValue), nullptr); // Read only property with a value and a helper macro.
 // Write only is the same as ReadOnly, but with the setter enabled and the getter set to nullptr. These properties are rare.
- 
+
 // Global Methods
 behaviorContext.Method("GlobalMethod",&GlobalMethod);
- 
+
 // Global Constants and Enums (implemented using properties). The functions are provided for clarity.
-behaviorContext.Constant("PI", []() { return 3.14f; }); 
+behaviorContext.Constant("PI", []() { return 3.14f; });
 behaviorContext.Constant("PI", BehaviorConstant(3.14f));
 behaviorContext.Enum<EnumIntValue>("EnumIntValue");
- 
+
 // Class - When you declare a class, if you want to reflect base class functionality, just use RTTI.
-behaviorContext.Class<MyClass>() // The name of the class comes from AzTypeInfo. In this case the name is "MyClass". 
-                                 // AzType information is a requirement for all classes used with reflection in 
+behaviorContext.Class<MyClass>() // The name of the class comes from AzTypeInfo. In this case the name is "MyClass".
+                                 // AzType information is a requirement for all classes used with reflection in
                                  // Lumberyard (including serialization and networking)
     ->Constructor<int>() // Optional additional constructors. You can have as many as needed.
     ->Constant("epsilon",BehaviorConstant(0.001f)) // Class constant. All features from the global versions apply.
@@ -152,40 +152,40 @@ behaviorContext.Class<MyClass>() // The name of the class comes from AzTypeInfo.
     ->Method("Method",&MyClass::Method)    // Class method. All features from the global versions apply.
     ->Property("data", &MyClass::GetData(), &MyClass::SetData) // Class features. All features from the global versions apply.
     ;
- 
+
 // EBus
 class MyEBusBehaviorHandler : public MyEBus::Handler, public AZ::BehaviorEBusHandler
 {
 public:
     AZ_EBUS_BEHAVIOR_BINDER(MyEBusBehaviorHandler ,"{19F5C8C8-4260-46B1-B624-997CD3F10CBD}", AZ::SystemAlloctor, // Name, TypeId and default allocator.
                                 OnEvent); // List of event names to handle and support for BehaviorContext.
- 
+
     void OnEvent(int a) override // This is an event listener like other EBus listeners.
     {
         Call(FN_OnEvent,a); // Forward the event to a behavior listener if there is one. FN_***EventName*** events are declared by the AZ_EBUS_BEHAVIOR_BINDER macro.
     }
 };
- 
+
 behaviorClass.EBus<MyEBus>("MyEBus") // EBuses are not required to have TypeInfo, so you must always provide a name.
-    ->Handler<MyEBusBehaviorHandler >() // Allow systems that use behavior context to create handlers for this EBus every time 
+    ->Handler<MyEBusBehaviorHandler >() // Allow systems that use behavior context to create handlers for this EBus every time
                                            // they must listen for events. If you reflect a bus without a handler, behavior context users can only send events.
-    ->Event("OnEvent",&amp;MyEBus::Events::OnEvent) // Allow behavior context system to send an "OnEvent" event. The code automatically generates
+    ->Event("OnEvent",&MyEBus::Events::OnEvent) // Allow behavior context system to send an "OnEvent" event. The code automatically generates
                                                    // Broadcast, Event, QueueBroadcast, QueueEvent, and QueueFunctions if the EBus configuration 
                                                    // supports them. You don't have to provide events; you can provide only a handler if 
                                                    // you don't have behavior context systems to send events.
     ;
- 
-// Properties, methods, classes and ebuses can have attributes. An attribute is a combination of a Crc32 ID and a value. The value 
+
+// Properties, methods, classes and ebuses can have attributes. An attribute is a combination of a Crc32 ID and a value. The value
 // can be a constant, a variable address, a global function, a class member function, or a class member variable address.
 behaviorClass.Method("GlobalMethod",&GlobalMethod)
     ->Attribute("ValueAttr",10)        // Value attribute.
     ->Attribute("MethodAttr", &SomeOtherGlobalMethod)
     ;
 // You add the same attributes to a property...
-behaviorClass.Property("GlobalProperty", BehaviorValueProperty(&g_globalValue)    
+behaviorClass.Property("GlobalProperty", BehaviorValueProperty(&g_globalValue)
     ->Attribute("MyAttr",20)
     ;
- 
+
 // or to a class or class method or property.
 behaviorClass.Class<MyClass>()
     ->Attribute("ClassAttr",100)

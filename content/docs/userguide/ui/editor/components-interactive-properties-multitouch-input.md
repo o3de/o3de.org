@@ -1,6 +1,6 @@
 ---
 description: ' The Multi-Touch Input Enabled setting determines whether the component
-  will handle multi-touch events in &ALY;. '
+  will handle multi-touch events in Lumberyard. '
 title: Multi-Touch Input Enabled
 ---
 # Multi\-Touch Input Enabled {#ui-editor-components-interactive-properties-multitouch-input}

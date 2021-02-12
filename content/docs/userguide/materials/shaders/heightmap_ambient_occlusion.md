@@ -1,16 +1,16 @@
 ---
-description: ' Enable height map ambient occlusion in your &ALY; level to efficiently
+description: ' Enable height map ambient occlusion in your Lumberyard level to efficiently
   determine the exposure of ambient light to each point in a scene. '
 title: Height Map Ambient Occlusion
 ---
 # Height Map Ambient Occlusion {#mat-shaders-heightmap_ambient_occlusion}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 Ambient occlusion \(AO\) is a technique used to calculate how exposed each point in a scene is to ambient lighting\. The lighting at each point is a function of other geometry in the scene\. For example, the interior of a building is more occluded and thus appears darker than the outside of the building that is more exposed\.
 

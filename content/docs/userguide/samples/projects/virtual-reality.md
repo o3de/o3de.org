@@ -1,6 +1,6 @@
 ---
 description: ' Use the virtual reality samples project to build VR applications for
-  any device for &ALYlong;. '
+  any device for Amazon Lumberyard. '
 title: Virtual Reality Samples Project
 ---
 # Virtual Reality Samples Project {#sample-project-virtual-reality}
@@ -18,7 +18,7 @@ The Virtual Reality Samples Project is a template that you can use to build virt
 1. Download the `vrproject.zip` package at [Lumberyard Downloads](https://aws.amazon.com/lumberyard/downloads/) and extract it in your Lumberyard directory, such as `lumberyard_version\`
 
 1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md) and on the **Summary** page, click **Configure project**\.
-**Note**  
+**Note**
 To ensure that the VR project launches, you must use Lumberyard Setup Assistant to open the Project Configurator\. Lumberyard Setup Assistant copies required SDKs from the `3rdParty` directory into the `dev\VirtualRealityProject` directory\.
 
 1. In the Project Configurator, select **VirtualRealityProject** and then click **Set as default**\.
@@ -27,9 +27,9 @@ To ensure that the VR project launches, you must use Lumberyard Setup Assistant 
 
 1. Open Lumberyard Setup Assistant\.
 
-1. Download the required SDKs to view video playback for the Virtual Reality Samples Project\. 
-**Important**  
-The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](/docs/userguide/components/videoplayback#component-videoplayback-setup)\. 
+1. Download the required SDKs to view video playback for the Virtual Reality Samples Project\.
+**Important**
+The video playback on the TV in the **VR\_TVRoom\_Sample** level must be enabled before you can view video playback\. For instructions on setting up video playback, see [Setting Up Video Playback](/docs/userguide/components/videoplayback#component-videoplayback-setup)\.
 
 1. Close Lumberyard Setup Assistant\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Learn about editor components in &ALYlong;. '
+description: ' Learn about editor components in Amazon Lumberyard. '
 title: Editor Components
 ---
 # Editor Components {#component-entity-system-pg-editor-components}
@@ -8,8 +8,8 @@ Some components in Lumberyard have separate `editor` and `runtime` versions\. Th
 
 `EditContext` reflection is fully supported in runtime components\. Edit time is the only time when editor components are active\. At run time, when Lumberyard processes a level or dynamic slice, it uses the runtime equivalents of editor components\. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience\.
 
-**Important**  
-Editor components are not required\. An editor component is necessary only if one of the following is true:  
+**Important**
+Editor components are not required\. An editor component is necessary only if one of the following is true:
 Your component must be fully active at edit time\. Edit time refers to standard editing mode; runtime components are used for the **AI/Physics** mode and gameplay \(**Ctrl\+G**\)\.
 You must add special tools functionality to your component that requires that you compile only into your editor binaries\.
 Your component provides functionality only in the editor and does not export a runtime component \(for example, if your component manages selection logic\)\.
@@ -21,45 +21,45 @@ The following code shows a sample editor component\.
 ```
 /* Include the following headers:
  * EditorComponentBase.h - the editor component base class. Derive from
- * this class to create a component to use in the editor that is the 
- * counterpart of the version of the component that is used during runtime. 
- * EntityDebugDisplayBus.h - provides a debug draw API to be used by components. 
- * EditorVisibilityBus.h - controls whether an entity is shown or hidden in the editor 
- * MyComponent.h - header file for the runtime version of the component. 
+ * this class to create a component to use in the editor that is the
+ * counterpart of the version of the component that is used during runtime.
+ * EntityDebugDisplayBus.h - provides a debug draw API to be used by components.
+ * EditorVisibilityBus.h - controls whether an entity is shown or hidden in the editor
+ * MyComponent.h - header file for the runtime version of the component.
 */
 #include <AzToolsFramework/ToolsComponents/EditorComponentBase.h>
 #include <AzToolsFramework/ToolsComponents/EditorVisibilityBus.h>
 #include <AzFramework/Entity/EntityDebugDisplayBus.h>
 #include <MyComponent.h>
 
-class MyEditorComponent 
+class MyEditorComponent
       : public AzToolsFramework::Components::EditorComponentBase
       , private AzFramework::EntityDebugDisplayEventBus::Handler
 {
 public:
       AZ_EDITOR_COMPONENT(MyEditorComponent, "{5034A7F3-63DB-4298-83AA-915AB23EFEA0}");
-      
+
       // Perform reflection for this component. The context parameter is the reflection context.
       static void Reflect(AZ::ReflectContext* context);
- 
+
       // AZ::Component interface implementation.
       void Init() override;
       void Activate() override;
       void Deactivate() override;
 
-    
+
       // AzFramework::EntityDebugDisplayEventBus implementation.
       void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFramework::DebugDisplayRequests& debugDisplay) override;
- 
+
       // Optional functions for defining provided and dependent services.
       static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
       static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
       static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
       static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
-      
+
       // Faciliate the translation of an editor component into a runtime component.
       void BuildGameEntity(AZ::Entity* gameEntity) override;
-      
+
 };
 ```
 
@@ -74,8 +74,8 @@ All editor components include the `AzToolsFramework::Components::EditorComponent
 ```
 #include <AzToolsFramework/ToolsComponents/EditorComponentBase.h>
 #include <AzFramework/Entity/EntityDebugDisplayBus.h>
-... 
-class MyComponent 
+...
+class MyComponent
       : public AzToolsFramework::Components::EditorComponentBase
       , private AzFramework::EntityDebugDisplayEventBus::Handler
 ```
@@ -94,8 +94,8 @@ A sample `AZ_EDITOR_COMPONENT` macro follows\.
 AZ_EDITOR_COMPONENT(MyEditorComponent, "{5034A7F3-63DB-4298-83AA-915AB23EFEA0}");
 ```
 
-**Note**  
-Some Lumberyard editor components specify `AzToolsFramework::Components::EditorComponentBase` as the base class but use the `AZ_COMPONENT` instead of the `AZ_EDITOR_COMPONENT` macro, as in the following example\.  
+**Note**
+Some Lumberyard editor components specify `AzToolsFramework::Components::EditorComponentBase` as the base class but use the `AZ_COMPONENT` instead of the `AZ_EDITOR_COMPONENT` macro, as in the following example\.
 
 ```
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);
@@ -112,12 +112,12 @@ void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFram
 ```
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| viewportInfo | Determines information such as camera position\. | 
-| debugDisplay | Contains the interface for debug draw or display commands\. | 
+| Parameter | Description |
+| --- | --- |
+| viewportInfo | Determines information such as camera position\. |
+| debugDisplay | Contains the interface for debug draw or display commands\. |
 
 lala
 

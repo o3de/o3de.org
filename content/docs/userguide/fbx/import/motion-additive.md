@@ -1,5 +1,5 @@
 ---
-description: ' Create additive animations in &ALYlong;. '
+description: ' Create additive animations in Amazon Lumberyard. '
 title: Creating Additive Animations
 ---
 # Creating Additive Animations {#char-fbx-importer-motion-additive}
@@ -10,7 +10,7 @@ Because additive animations preserve the underlying animation's style, they are 
 
 You can create additive animations in two ways:
 + At runtime, use the **Blend Two Additive** and **Pose Subtract** nodes\. For more information, see [Blend Two Additive Node](/docs/userguide/animation/editor/blending-blendtwoadditive.md) and [Pose Subtract Node](/docs/userguide/animation/editor/blending-posesubtract.md)\.
-+ At asset processing time, use the **Asset Browser** and FBX settings motion additive modifier to convert an existing animation into an additive animation\. This approach removes the generation of additive animations from runtime processing and improves runtime performance\. See the following procedure\. 
++ At asset processing time, use the **Asset Browser** and FBX settings motion additive modifier to convert an existing animation into an additive animation\. This approach removes the generation of additive animations from runtime processing and improves runtime performance\. See the following procedure\.
 
 **To convert a motion into an additive animation**
 
@@ -25,5 +25,5 @@ You can create additive animations in two ways:
 1. In the **Motion additive** section, for **Base frame**, specify the number of the frame that contains the reference pose that you want to subtract\.
 
    For example, if you're creating an additive animation for the idle state, the base frame can be the first frame of your idle motion\. If you're creating an additive aim blendspace, the base frame can be the frame that contains the center aim\.
-**Note**  
+**Note**
 The reference pose that you want to subtract must be in the FBX file that you selected\.

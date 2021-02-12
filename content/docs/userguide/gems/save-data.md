@@ -1,5 +1,5 @@
 ---
-description: ' Use the SaveData gem to save data in &ALYlong; for your game and game
+description: ' Use the SaveData gem to save data in Amazon Lumberyard for your game and game
   players. '
 title: SaveData Gem
 ---
@@ -100,7 +100,7 @@ public:
     float testFloat = 0.0f;
     int testInt = 0;
     bool testBool = false;
-}; 
+};
 
 void SaveObjectToPersistentStorage()
 {

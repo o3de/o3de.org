@@ -1,6 +1,6 @@
 ---
-description: ' Use the Blend Two (Legacy) node for backward compatibility in &ALYlong;
-  &animation-editor; to blend two nodes. '
+description: ' Use the Blend Two (Legacy) node for backward compatibility in Amazon Lumberyard
+  Animation Editor to blend two nodes. '
 title: Blend Two (Legacy) Node
 ---
 # Blend Two \(Legacy\) Node {#animation-editor-blending-blendtwolegacy}

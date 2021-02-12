@@ -1,6 +1,6 @@
 ---
-description: ' Use the Maya fur previsualization in &ALYlong;. '
-title: Maya &endash; Fur Previsualization
+description: ' Use the Maya fur previsualization in Amazon Lumberyard. '
+title: Maya – Fur Previsualization
 ---
 # Maya - Fur Previsualization {#shader-ref-fur-previzmaya}
 
@@ -14,18 +14,18 @@ title: Maya &endash; Fur Previsualization
 
    Find `cgfxShader.mll` in the list, and then verify that both **Loaded** and **Auto load** are selected\.
 
-   If you made any changes, restart Maya\.  
+   If you made any changes, restart Maya\.
 ![\[Example for setting the cgfxShader parameter.\]](/images/userguide/shaders/shader-ref-fur-15.png)
 
-1. Open the **Hypershade** editor by navigating to **Rendering Editors**, **Hypershade**\.  
+1. Open the **Hypershade** editor by navigating to **Rendering Editors**, **Hypershade**\.
 ![\[Example Hypershade editor.\]](/images/userguide/shaders/shader-ref-fur-16.png)
 
-1. Create a new material\. To do this, in the **Hypershade** window, navigate to **Create**, **Materials**, **Cgfx Shader**\.  
+1. Create a new material\. To do this, in the **Hypershade** window, navigate to **Create**, **Materials**, **Cgfx Shader**\.
 ![\[Example of creating a new material in the Hypershade editor.\]](/images/userguide/shaders/shader-ref-fur-17.png)
 
 1. In the **Property Editor**, click the folder icon next to the **CgFX File** text box\.
-**Note**  
-If the **Property Editor** is not visible, navigate to **Windows**, **Property Editor**\.  
+**Note**
+If the **Property Editor** is not visible, navigate to **Windows**, **Property Editor**\.
 ![\[Example of navigating to the .cgfx file.\]](/images/userguide/shaders/shader-ref-fur-18.png)
 
 1. Navigate to your Lumberyard install folder, and then select `dev\Tools\Maya\fx\Fur.cgfx`\.
@@ -34,7 +34,7 @@ If the **Property Editor** is not visible, navigate to **Windows**, **Property E
    + **Enable Fur Combing** \(disabled/unselected if you haven't prepared your mesh with vertex colors for fur combing\)
    + **Use Base Fur Diffuse Map** \(selected/enabled\)
    + **ColorSampler**
-   + **FurHeightmapSampler**  
+   + **FurHeightmapSampler**
 ![\[Example fur height map sampler parameters.\]](/images/userguide/shaders/shader-ref-fur-19.png)
 
 1. Select the mesh or sub\-mesh on which you want to visualize fur, and then right\-click hold on the CgFX shader material in **Hypershade**\. Select **Assign Material to Selection**\.
@@ -45,7 +45,7 @@ If the **Property Editor** is not visible, navigate to **Windows**, **Property E
 
 **To apply vertex colors on a mesh**
 
-1. Enable fur combing on the material\. To do this, on the **Fur\.cgfx Parameters**, select **Enable Fur Combing**\.  
+1. Enable fur combing on the material\. To do this, on the **Fur\.cgfx Parameters**, select **Enable Fur Combing**\.
 ![\[Example of enabling fur combing.\]](/images/userguide/shaders/shader-ref-fur-20.png)
 
 1. Open the **Paint Vertex Color Tool**\. To do this, click the square box next to **Color**, **Paint Vertex Color Tool**\.
@@ -64,6 +64,6 @@ If the **Property Editor** is not visible, navigate to **Windows**, **Property E
 
    1. In the **Color** section of the tool, select **RGB** as the **Channels**\.
 
-   1. Click the color swatch next to **Color value**\. Select the preferred direction\. 
+   1. Click the color swatch next to **Color value**\. Select the preferred direction\.
 
    1. Set other tool settings as needed, and apply fur scaling to your mesh\.

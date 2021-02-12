@@ -1,11 +1,11 @@
 ---
-description: ' Use any of &ALY;''s three bending effects to make vegetation bend naturally. '
+description: ' Use any of Lumberyard''s three bending effects to make vegetation bend naturally. '
 title: Adding Vegetation Bending Effects
 ---
 # Adding Vegetation Bending Effects {#vegetation-bending-intro}
 
 Lumberyard provides three methods for adding realistic bending motions to vegetation:
-+ **Touch \(Collision\) Bending** - bending effects for larger vegetation caused by players brushing against or colliding with branches 
++ **Touch \(Collision\) Bending** - bending effects for larger vegetation caused by players brushing against or colliding with branches
 + **Detail \(Wind\) Bending** - physically accurate wind effects for larger vegetation defined by using vertex colors and environment wind parameters
 + **Automerged \(Wind\) Bending** - physically accurate wind effects for grass defined by vegetation and environment wind parameters
 

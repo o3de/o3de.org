@@ -1,22 +1,22 @@
 ---
-description: ' Use Blast materials to set destruction properties in &ALYlong; with
+description: ' Use Blast materials to set destruction properties in Amazon Lumberyard with
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
 ---
 # Specify destruction properties with Blast materials {#nvidia-blast-materials}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is an [experimental](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#experimental) release and is subject to change\.  | 
+| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The chunks of blast assets are held together by bonds\. Blast materials determine what types of forces can damage the bonds, the minimum amount of force that can damage the bonds, and how much damage the bonds can sustain before breaking\. 
+The chunks of blast assets are held together by bonds\. Blast materials determine what types of forces can damage the bonds, the minimum amount of force that can damage the bonds, and how much damage the bonds can sustain before breaking\.
 
-**Important**  
-Blast materials are a critical component in creating realistic destructible entities\. Passive forces like gravity can have a cumulative damage effect on a blast asset, causing destruction to trigger when no obvious external force or collider has acted on the asset\.   
-Large\-scale destructible assets such as buildings have large chunks that require stronger bonds and higher damage thresholds to prevent premature triggering of destruction\. 
+**Important**
+Blast materials are a critical component in creating realistic destructible entities\. Passive forces like gravity can have a cumulative damage effect on a blast asset, causing destruction to trigger when no obvious external force or collider has acted on the asset\.
+Large\-scale destructible assets such as buildings have large chunks that require stronger bonds and higher damage thresholds to prevent premature triggering of destruction\.
 
 **Contents**
 + [Create Blast materials](#nvidia-blast-create-blast-material)
@@ -29,64 +29,64 @@ Blast materials are stored in a blast material library\. The blast material libr
 
 **To create a blast material**
 
-1. In the **Tools** menu, choose **Asset Editor**\. 
+1. In the **Tools** menu, choose **Asset Editor**\.
 
-1. In **Asset Editor**, choose **New** from the **File** menu, and select **Blast Material**\. A new **Blast Material** appears in the **Asset Editor**\. 
+1. In **Asset Editor**, choose **New** from the **File** menu, and select **Blast Material**\. A new **Blast Material** appears in the **Asset Editor**\.
 
-1. Set the **Material name** property\. This property is the identifier that you use to assign the blast material to a **Blast Family** component\. 
+1. Set the **Material name** property\. This property is the identifier that you use to assign the blast material to a **Blast Family** component\.
 
-1. Set the blast material properties\. For information, see [Blast material properties](#nvidia-blast-material-properties) below\. 
+1. Set the blast material properties\. For information, see [Blast material properties](#nvidia-blast-material-properties) below\.
 
-1. Additional Blast materials can be created by choosing the **\+** button in the upper right corner of the Blast material list\. 
+1. Additional Blast materials can be created by choosing the **\+** button in the upper right corner of the Blast material list\.
 
-1. Save the Blast material library\. In **Asset Editor**, in the **File** menu, choose **Save as**\. 
+1. Save the Blast material library\. In **Asset Editor**, in the **File** menu, choose **Save as**\.
 
-1. In the **Save as\.\.\.** window, navigate to an appropriate directory in your project, give the blast material library a name, and choose **Save**\. 
+1. In the **Save as\.\.\.** window, navigate to an appropriate directory in your project, give the blast material library a name, and choose **Save**\.
 
 ## NVIDIA Blast configuration {#nvidia-blast-configuration}
 
-The blast material library for the project is set in **Blast Configuration**\. 
+The blast material library for the project is set in **Blast Configuration**\.
 
 **To use Blast Configuration**
 
-1. From the **Tools** menu, choose **Blast Configuration**\.   
+1. From the **Tools** menu, choose **Blast Configuration**\.
 ![\[Blast configuration.\]](/images/userguide/physx/blast/ui-blast-configuration-1.27.png)
 
-1. Set the **Blast material library** for your project\. Choose the **Folder** button to the right of **Blast material library** and select the blast material library that you created\. 
+1. Set the **Blast material library** for your project\. Choose the **Folder** button to the right of **Blast material library** and select the blast material library that you created\.
 
-1. Set the **Stress solver iterations** property\. Stress damage is generated by impact forces\. This property sets the number of iterations that the stress solver computes per tick, for each **Blast Family** component\. Valid values range from **0** to **50000**\. 
+1. Set the **Stress solver iterations** property\. Stress damage is generated by impact forces\. This property sets the number of iterations that the stress solver computes per tick, for each **Blast Family** component\. Valid values range from **0** to **50000**\.
 
-You can now assign blast materials from the blast material library to **Blast Family** components\. 
+You can now assign blast materials from the blast material library to **Blast Family** components\.
 
 ## Blast material properties {#nvidia-blast-material-properties}
 
-Blast materials function on the concepts of *health* and *damage*\. Chunks are held together by bonds\. Each bond has some amount of health\. Damage to the bonds is dealt by *impulse forces* acting on the chunks\. Impulse forces generate damage in two ways: 
-+ **Vector damage** is generated by impulse forces such as a shock wave, wind, or gravity applied to the Blast entity\. 
-+ **Stress damage** is generated by impulse forces from impacts such as a projectile colliding with the Blast entity\. 
+Blast materials function on the concepts of *health* and *damage*\. Chunks are held together by bonds\. Each bond has some amount of health\. Damage to the bonds is dealt by *impulse forces* acting on the chunks\. Impulse forces generate damage in two ways:
++ **Vector damage** is generated by impulse forces such as a shock wave, wind, or gravity applied to the Blast entity\.
++ **Stress damage** is generated by impulse forces from impacts such as a projectile colliding with the Blast entity\.
 
 ![\[Blast material properties.\]](/images/userguide/physx/blast/ui-blast-material-1.27.png)
 
-**Material name**  
-The name of the material\. Use this identifier to select the material from the library for **Blast Family** components\. 
+**Material name**
+The name of the material\. Use this identifier to select the material from the library for **Blast Family** components\.
 
-**Health**  
-Each bond has a default health of **1\.0**\. The **Health** property is multiplied by the default bond health to set the health of all bonds in the Blast asset\.   
-Vector damage is subtracted from **Health**\. When **Health** reaches **0\.0**, the bond is destroyed\.   
-Stress damage treats **Health** as a threshold\. Damage is not applied unless the threshold is exceeded in a given tick\. 
+**Health**
+Each bond has a default health of **1\.0**\. The **Health** property is multiplied by the default bond health to set the health of all bonds in the Blast asset\.
+Vector damage is subtracted from **Health**\. When **Health** reaches **0\.0**, the bond is destroyed\.
+Stress damage treats **Health** as a threshold\. Damage is not applied unless the threshold is exceeded in a given tick\.
 
-**Force Divider**  
-Force Divider is a *hardness* divisor that keeps the scale of impulse forces in a reasonable range to limit stress damage\.   
-Vector damage is given as a scalar and is not affected by **Force Divider**\.   
-Stress damage calculations factor in the number of connected bonds, making the asset significantly harder to destroy\. Stress damage is computed as `StressDamage=ImpulseForce/(ForceDivider*ConnectedBonds)`\. 
+**Force Divider**
+Force Divider is a *hardness* divisor that keeps the scale of impulse forces in a reasonable range to limit stress damage\.
+Vector damage is given as a scalar and is not affected by **Force Divider**\.
+Stress damage calculations factor in the number of connected bonds, making the asset significantly harder to destroy\. Stress damage is computed as `StressDamage=ImpulseForce/(ForceDivider*ConnectedBonds)`\.
 
-**Minimum damage threshold**  
-The floor value for vector damage\. If the vector damage value is less than the minimum threshold value, then the damage is ignored\. If the vector damage value is greater than the minimum threshold value, then the vector damage value is checked against the **Maximum damage threshold**\. 
+**Minimum damage threshold**
+The floor value for vector damage\. If the vector damage value is less than the minimum threshold value, then the damage is ignored\. If the vector damage value is greater than the minimum threshold value, then the vector damage value is checked against the **Maximum damage threshold**\.
 
-**Maximum damage threshold**  
-The ceiling value for vector damage\. If the vector damage value is less than the maximum threshold value, then the damage is subtracted from **Health**\. If the vector damage value is greater than the maximum threshold value, then only the value of **Maximum damage threshold** is subtracted from **Health**\. 
+**Maximum damage threshold**
+The ceiling value for vector damage\. If the vector damage value is less than the maximum threshold value, then the damage is subtracted from **Health**\. If the vector damage value is greater than the maximum threshold value, then only the value of **Maximum damage threshold** is subtracted from **Health**\.
 
-**Stress linear factor**  
-A factor applied to linear forces during stress damage\. The default value is **1\.0**\. 
+**Stress linear factor**
+A factor applied to linear forces during stress damage\. The default value is **1\.0**\.
 
-**Stress angular factor**  
-A factor applied to angular forces during stress damage\. The default value is **1\.0**\. 
+**Stress angular factor**
+A factor applied to angular forces during stress damage\. The default value is **1\.0**\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Sun Latitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Sun Latitude node in the Amazon Lumberyard Script Canvas editor
   to set the sun latitude. '
 title: Set Sun Latitude
 ---
@@ -16,19 +16,19 @@ Sets the sun's latitude in the sky\.
 ## Inputs {#set-sun-latitude-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node | 
-| Latitude | Number |  Sun latitude value to specify\.  | 
-| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the sun position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node |
+| Latitude | Number |  Sun latitude value to specify\.  |
+| Force Update | Boolean |  Forces an immediate update of the entire sky\. Use this parameter to make sudden changes to the sun position\. For more information, see [Environment Nodes](/docs/userguide/scripting/scriptcanvas/environment-nodes.md)\.  |
 
 ## Outputs {#set-sun-latitude-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

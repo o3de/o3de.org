@@ -1,5 +1,5 @@
 ---
-description: ' Use environment nodes in the &ALYlong; &script-canvas; editor to configure
+description: ' Use environment nodes in the Amazon Lumberyard Script Canvas editor to configure
   sky effects. '
 title: Environment Nodes
 ---

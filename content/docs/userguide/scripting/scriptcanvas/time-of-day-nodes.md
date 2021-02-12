@@ -1,11 +1,11 @@
 ---
-description: ' Use Time of Day nodes in the &ALYlong; &script-canvas; editor to configure
+description: ' Use Time of Day nodes in the Amazon Lumberyard Script Canvas editor to configure
   the time of day in your level. '
 title: Time of Day Nodes
 ---
 # Time of Day Nodes {#script-canvas-time-of-day-nodes}
 
-You can use time of day nodes in the **Script Canvas** editor to set the current time, change the speed of time progression, and load predefined time of day configuration files\. 
+You can use time of day nodes in the **Script Canvas** editor to set the current time, change the speed of time progression, and load predefined time of day configuration files\.
 
 For more information about configuring time of day effects, see [Adding Sky Effects](/docs/userguide/sky/intro.md) and [Creating Time of Day Sky Effects](/docs/userguide/sky/tod-intro.md)\.
 

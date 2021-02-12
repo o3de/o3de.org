@@ -1,5 +1,5 @@
 ---
-description: ' Use interest manager to control large-scale networked worlds in &ALYlong;. '
+description: ' Use interest manager to control large-scale networked worlds in Amazon Lumberyard. '
 title: Using GridMate for Large-Scale Worlds
 ---
 # Using GridMate for Large\-Scale Worlds {#network-interest-manager-large-scale-worlds}
@@ -81,13 +81,13 @@ class MultiplayerSample
             // System Components
             RegisterSystemComponent<AzFramework::InterestManagerComponent>(); // enabling interest management
 			...
-        } 
+        }
 		template<class T>
         void RegisterSystemComponent()
         {
             m_descriptors.push_back(T::CreateDescriptor());
             m_systemComponents.push_back(azrtti_typeid<T>());
-        } 
+        }
         /**
          * Add required SystemComponents to the SystemEntity.
          */
@@ -116,9 +116,9 @@ void PlayerSpawnComponent::SpawnPlayerEntity()
             m_playerEntity->CreateComponent<GamePlayerNetInterest>();
             m_playerEntity->CreateComponent<AzFramework::NetBindingComponent>();
             m_playerEntity->Init();
-            m_playerEntity->Activate(); 
+            m_playerEntity->Activate();
             AZ::EntityBus::MultiHandler::BusConnect(m_playerEntity->GetId());
-        } 
+        }
        ...
     }
 }
@@ -131,7 +131,7 @@ void GamePlayerNetInterest::BindTargetEntity(const AZ::EntityId& entityId)
 {
 	...
     PeerId peerId = InvalidReplicaPeerId;
-    EBUS_EVENT_ID_RESULT(peerId, GetEntityId(), GamePlayerInterfaceBus, GetPeerId); // Find our own peer ID. 
+    EBUS_EVENT_ID_RESULT(peerId, GetEntityId(), GamePlayerInterfaceBus, GetPeerId); // Find our own peer ID.
     ProximityInterestHandler* proximityInterest = nullptr;
     EBUS_EVENT_RESULT(proximityInterest, AzFramework::InterestManagerRequestsBus, GetProximityInterest);
     if (proximityInterest)
@@ -149,7 +149,7 @@ void GamePlayerNetInterest::OnTick(float deltaTime, AZ::ScriptTimePoint time)
 {
     ...
     AZ::Transform worldTM;
-    EBUS_EVENT_ID_RESULT(worldTM, m_targetEntityId, AZ::TransformBus, GetWorldTM); 
+    EBUS_EVENT_ID_RESULT(worldTM, m_targetEntityId, AZ::TransformBus, GetWorldTM);
     // This updates your local proximity rules that define which entities you are interested in.
     m_proximityRule->Set(AZ::Aabb::CreateCenterRadius(worldTM.GetPosition(), m_interestRadius));
 }

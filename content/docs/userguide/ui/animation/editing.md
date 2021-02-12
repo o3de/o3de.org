@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s Animation Editor''s Node Pane, Track Editor, and Curve
+description: ' Use Lumberyard''s Animation Editor''s Node Pane, Track Editor, and Curve
   Editor to edit animation sequences. '
 title: Editing Animation Data
 ---
@@ -13,7 +13,7 @@ After you create your sequence\(s\) and record animation data to them, you can u
 You can use the toolbar to select a sequence to display and edit\.
 
 **To select an animation sequence to edit**
-+ In **Animation Editor**, click the arrow next to the name of the current sequence in the toolbar to display a list of active sequences available to edit\.  
++ In **Animation Editor**, click the arrow next to the name of the current sequence in the toolbar to display a list of active sequences available to edit\.
 ![\[Image NOT FOUND\]](/images/userguide/ui-animation-selecting.png)
 
 **Topics**

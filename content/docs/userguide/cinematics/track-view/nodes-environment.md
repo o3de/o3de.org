@@ -1,5 +1,5 @@
 ---
-description: ' Use the Environment node in &ALY;''s &trackview-editor; to set the
+description: ' Use the Environment node in Lumberyard''s <guilabel>Track View</guilabel> editor to set the
   sun''s longitude and latitude in a scene. '
 title: Environment Node
 ---
@@ -15,12 +15,12 @@ You can use the **Environment** node to set the sun's longitude and latitude in 
 
 1. To position a key, double\-click the preferred location on its highlighted row in the timeline\. Double\-click the green marker, and then under **Key Properties**, enter a value for **Value**\.
 
- 
 
 
-**Environment Node Key Properties**  
 
-| Property | Description | 
-| --- | --- | 
-| Sun Longitude | Sets the sun's longitude\. | 
-| Sun Latitude | Sets the sun's latitude\. | 
+**Environment Node Key Properties**
+
+| Property | Description |
+| --- | --- |
+| Sun Longitude | Sets the sun's longitude\. |
+| Sun Latitude | Sets the sun's latitude\. |

@@ -1,5 +1,5 @@
 ---
-description: ' See the modular behavior tree (MBT) node types for &ALYlong;. '
+description: ' See the modular behavior tree (MBT) node types for Amazon Lumberyard. '
 title: Modular Behavior Tree Node Reference
 ---
 # Modular Behavior Tree Node Reference {#ai-scripting-mbt-nodes}

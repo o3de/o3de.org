@@ -20,20 +20,20 @@ Breadcrumbs have several customization options\. The standard, horizontal layout
 
 ![\[component breadcrumbs anatomy\]](/images/tools-ui/component-breadcrumbs-anatomy.png)
 
-1.  **Path history navigation** 
+1.  **Path history navigation**
 
    \(Optional\) Enable users to navigate backwards and forwards in their history of breadcrumb paths selections\. For example, if you browse to, or choose, a new path in the list, then choose the **back** button, you will navigate back to the previous breadcrumb position\.
 
-1.  **Breadcrumb trail** 
+1.  **Breadcrumb trail**
 
    Shows the full path from root to tail\. Users can select any point in the path to set a new path\. Previously selected paths are automatically added to the navigational history\.
 
-1.  **Browse button** 
+1.  **Browse button**
 
-   \(Optional\) Technically not part of the breadcrumb\. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path\. You push the new path to your breadcrumbs widget in your browse button handler code\.  
+   \(Optional\) Technically not part of the breadcrumb\. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path\. You push the new path to your breadcrumbs widget in your browse button handler code\.
 ![\[component breadcrumbs truncation menu\]](/images/tools-ui/component-breadcrumbs-truncation-menu.png)
 
-1.  **Truncation menu** 
+1.  **Truncation menu**
 
    If the entire breadcrumb path cannot fit in the allotted space, the points on the path that don't fit are stacked in a dropdown menu\. Users can select these points from the truncation menu\.
 
@@ -45,7 +45,7 @@ The simplest breadcrumb example includes the **breadcrumbs** widget and an optio
 
 When passing a path QString into `pushPath`, use either forward slash \('/'\) or backward slash \('\\\\'\) as a path separator\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/BreadCrumbs.h>
@@ -76,7 +76,7 @@ In some scenarios, it's useful for users to be able to navigate back and forth i
 
 In the following example, `createBackForwardToolBar` provides the forward and backward navigation arrows, and a `NavigationButton::Browse` from AzQtComponents provides a file browser button\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/BreadCrumbs.h>
@@ -119,4 +119,4 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 ## C\+\+ API reference<a name="breadcrumbs-api-ref"></a>
 
 For details on the **breadcrumbs** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::BreadCrumbs](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_bread_crumbs.html) 
++  [AzQtComponents::BreadCrumbs](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_bread_crumbs.html)

@@ -1,7 +1,7 @@
 ---
 description: ' Use the Websockets Gem to add support for the WebSocket protocol to
-  your &ALYlong; project. '
-title: Websockets &gem;
+  your Amazon Lumberyard project. '
+title: Websockets Gem
 ---
 # Websockets Gem {#gem-websockets}
 
@@ -11,7 +11,7 @@ This gem is designed to work with any platform\-specific library that's needed\.
 
 The gem uses the **WebSocket protocol** to create clients that connect to existing WebSocket servers\. Using the gem bus system, you can create multiple WebSocket connections, and then send and receive messages\.
 
-**Websocket Requests Bus**  
+**Websocket Requests Bus**
 The Websocket Request bus provides the primary interface for working with the gem\. The follow functions are available:
 + **CreateClient** - Provides the unique instance connection that will be used with the rest of the buses\. It takes three arguments:
 
@@ -25,16 +25,16 @@ The Websocket Request bus provides the primary interface for working with the ge
 + **SendWebsocketMessageBinary** - Sends a binary stream to the targeted server\.
 + **CloseWebsocket** - The expectation for WebSocket connections is that the developer will close the WebSocket before the program is finished, allowing for a clean exit\. This system will handle this automatically if not performed, but it is recommended, especially if there is a case where multiple connections are being setup simultaneously, to avoid having sockets open unnecessarily\.
 
-**Tip**  
+**Tip**
 For an example of the usage of these functions, see the source for the Twitch Chat gem, which can be found in `dev\Gems\TwitchChatPlay\`\.
 
-**IWebsocketClient**  
+**IWebsocketClient**
 The IWebsocketClient class is an interface that sits at the base of the entire Websockets Gem\. It provides a direct interface to the individual connections to WebSockets for users who wish to avoid the bus system in cases where speed is paramount\. It provides all of the same functionality as the bus system once the connection has been created, with none of the overhead\.
 
-**SecureWebsocketClient vs WebsocketClient**  
+**SecureWebsocketClient vs WebsocketClient**
 The Websockets Gem provides a method to create both secure and normal WebSocket clients, with the default being secure WebSockets connections\. Secure WebSocket connections provide OpenSSL \(Transport Layer Security\) for protecting client\-server connections using the standard included in Lumberyard\.
 
-**OnMessage Function**  
+**OnMessage Function**
 Every WebSocket connection needs a message handler function to receive incoming messages from the server\. The `OnMessage` function interface provides a simple method for you to provide this handler function\. By providing a function pointer or lambda with the signature `void (AZ::string_view)`, you can have your own custom functions handle responses, as shown in the following example:
 
 ```

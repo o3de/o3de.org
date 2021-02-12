@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to add bookmarks to your script. '
-title: Adding Bookmarks for &script-canvas;
+description: ' Use the Amazon Lumberyard Script Canvas editor to add bookmarks to your script. '
+title: Adding Bookmarks for Script Canvas
 ---
 # Adding Bookmarks for Script Canvas {#script-canvas-bookmarks}
 
@@ -28,5 +28,5 @@ A bookmark is a shortcut that you can add to a specific location on your Script 
    + Select a bookmark and then click **Delete** to remove it\.
    + Assign up to nine keyboard shortcuts for your bookmarks\. To move to a bookmark that does not have an assigned keyboard shortcut, click the bookmark in the **Bookmarks** pane\.
    + Double\-click a shortcut and then select a new number\.
-**Note**  
+**Note**
 If you specify a number for a shortcut that a previous shortcut already uses \(for example, 5\), a dialog box appears\. If you want to replace the previous shortcut, click **Yes**\.

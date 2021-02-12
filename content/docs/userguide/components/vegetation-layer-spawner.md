@@ -1,6 +1,6 @@
 ---
 description: ' Use the Vegetation Layer Spawner component to define areas and rules
-  for procedurally placing dynamic vegetation or other static meshes in &ALYlong;. '
+  for procedurally placing dynamic vegetation or other static meshes in Amazon Lumberyard. '
 title: Vegetation Layer Spawner
 ---
 # Vegetation Layer Spawner {#component-vegetation-layer-spawner}

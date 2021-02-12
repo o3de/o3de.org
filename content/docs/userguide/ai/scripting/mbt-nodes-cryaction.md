@@ -1,6 +1,6 @@
 ---
-description: ' See the following &cryaction; nodes in &ALYlong;. '
-title: '&cryaction; Nodes'
+description: ' See the following CryAction nodes in Amazon Lumberyard. '
+title: 'CryAction Nodes'
 ---
 # CryAction Nodes {#ai-scripting-mbt-nodes-cryaction}
 
@@ -8,11 +8,11 @@ These nodes provide MBT functionality for CryAction features\.
 
 ## AnimateFragment {#ai-scripting-mbt-nodes-cryaction-animatefragment}
 
-Plays a Mannequin animation fragment and waits until the animation finishes\. 
+Plays a Mannequin animation fragment and waits until the animation finishes\.
 
 ### Parameters {#ai-scripting-mbt-nodes-cryaction-animatefragment-parameters}
 
-**name**  
+**name**
 Name of the animation to play\.
 
 ### Success/Failure {#ai-scripting-mbt-nodes-cryaction-animatefragment-success}

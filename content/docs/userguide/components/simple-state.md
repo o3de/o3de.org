@@ -1,5 +1,5 @@
 ---
-description: ' Use the Simple State component in &ALYlong; to provide a simple state
+description: ' Use the Simple State component in Amazon Lumberyard to provide a simple state
   machine. '
 title: Simple State
 ---
@@ -13,22 +13,22 @@ The **Simple State** component provides a simple state machine\. Each state is r
 
 The **Simple State** component has the following properties:
 
-**Initial state**  
+**Initial state**
 The active state when the simple state component is first activated\.
 
-**Reset on activate**  
+**Reset on activate**
 If selected, simple state returns to the configured initial state when activated, and not the state held before deactivating\.
 
-**States**  
+**States**
 The list of states on this simple state component\.
 
-**State \(\[0\], \[1\], \[2\], etc\)**  
+**State \(\[0\], \[1\], \[2\], etc\)**
 Includes a name for the state and a set of entities that are activated when the state is entered and deactivated when the state is exited\.
 
-**Name**  
+**Name**
 The name of this state\. Indicates the state to which to transition on the SetState API\.
 
-**Entities**  
+**Entities**
 List of the entities referenced by this state\.
 
 ## EBus Request Bus Interface {#component-simple-state-ebusrequest}
@@ -41,7 +41,7 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Sets the active state to the named state\.
 
-**Parameters**  
+**Parameters**
 `stateName`
 
 ## EBus Notification Bus Interface {#component-simple-state-ebusnotification}
@@ -54,8 +54,8 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Notifies that the state has changed from state `oldName` to state `newName`\.
 
-**Parameters**  
-`oldName`  
+**Parameters**
+`oldName`
 `newName`
 
 The following is an example of script using the **Request Bus Interface**\.
@@ -69,22 +69,22 @@ local simplestateexample =
         States = {"Houses", "Nope", "Lamps", "Tree", "HouseAndTree", "NoState"},
     }
 }
- 
+
 function simplestateexample:OnActivate()
-      
+
     self.TransitionCountDown = self.Properties.TransitionInterval
     self.StateIdx = 0
     self.tickBusHandler = TickBus.Connect(self)
     self.stateChangedHandler = SimpleStateComponentNotificationBus.Connect(self, self.entityId)
-      
+
     Debug.Log("SimpleStateComponent activated for entity: " .. tostring(self.entityId.id))
 end
- 
+
 function simplestateexample:OnDeactivate()
     self.tickBusHandler:Disconnect()
     self.stateChangedHandler:Disconnect()
 end
- 
+
 function simplestateexample:OnTick(deltaTime, timePoint)
     self.TransitionCountDown = self.TransitionCountDown - deltaTime
     if (self.TransitionCountDown < 0.0) then
@@ -93,10 +93,10 @@ function simplestateexample:OnTick(deltaTime, timePoint)
         self.TransitionCountDown = self.Properties.TransitionInterval
     end
 end
-  
+
 function simplestateexample:OnStateChanged(oldState, newState)
     Debug.Log("Old State: " .. (oldState or "NullState")  .. " => New State: " .. (newState or "NullState"))
 end
- 
+
 return simplestateexample
 ```

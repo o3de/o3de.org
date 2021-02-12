@@ -1,6 +1,6 @@
 ---
 description: ' Learn the implementation details for the Leaderboard Sample Level in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: Leaderboard Sample Level Implementation Details
 ---
 # Leaderboard Sample Level Implementation Details {#cloud-canvas-cloud-gem-leaderboard-implementation-details}

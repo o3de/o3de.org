@@ -1,12 +1,12 @@
 ---
-description: ' Specify resource types in &cloud; for &ALYlong;. '
+description: ' Specify resource types in Cloud Canvas for Amazon Lumberyard. '
 title: Resource Type Specification
 ---
 # Resource Type Specification {#cloud-canvas-cgf-adding-aws-resources-resource-type-specification}
 
 Resource types are specified in a Cloud Canvas `project-template.json` file\. For types that Cloud Canvas natively supports, the file is located at `Gems\CloudGemFramework\version\AWS\project-template.json`\. The existing resource is named `CoreResourceTypes`\.
 
-**Note**  
+**Note**
 You should not interact with this file\. You are not prevented from modifying this file to support new types or even change the support for existing types\. However, your changes are not received or usable by others with whom you share your gem\.
 
 The template file for new types that you want to add support for in your gem is located at `lumberyard_version\dev\Gems\gem_name\AWS\project_template.json`\.
@@ -44,7 +44,7 @@ Resources are specified in the template as follows:
     }
 }
  
-<definition> := 
+<definition> :=
     "<type-name>": {
         "PermissionMetadata": {
             "RestrictActions": [ "<action>", "<action>", ... ],
@@ -104,15 +104,15 @@ Resources are specified in the template as follows:
 Replace the following items in the template with your own values as required\.
 
 
-****  
+****
 
-| Item | Description | 
-| --- | --- | 
-| <resource-name> |  Specifies a custom name for the resource\. The name must be unique in the template\.  | 
-| <lambda-resource-name>  |  Specifies the name of a `Custom::LambdaConfiguration` element that you include to provide Lambda code for your types\. This entry is required if you specify either the `ArnFunction` or `HandlerFunction` entries\.  | 
-| <lambda-timeout> |  Specifies the timeout, in seconds, to apply to the specified `ArnFunction` or `HandlerFunction` entries\.  | 
-| <lambda‑directory‑name>  |  Specifies the name of a subdirectory to add to your gem's `\AWS\project-code\lambda-code` directory\. This subdirectory contains Lambda code that is required for the `ArnFunction` or `HandlerFunction` entries\.  | 
-| <type-name> |  Specifies a AWS CloudFormation type in the `AWS::` namespace or a custom type that is prefixed with `Custom::`\.  | 
+| Item | Description |
+| --- | --- |
+| <resource-name> |  Specifies a custom name for the resource\. The name must be unique in the template\.  |
+| <lambda-resource-name>  |  Specifies the name of a `Custom::LambdaConfiguration` element that you include to provide Lambda code for your types\. This entry is required if you specify either the `ArnFunction` or `HandlerFunction` entries\.  |
+| <lambda-timeout> |  Specifies the timeout, in seconds, to apply to the specified `ArnFunction` or `HandlerFunction` entries\.  |
+| <lambda‑directory‑name>  |  Specifies the name of a subdirectory to add to your gem's `\AWS\project-code\lambda-code` directory\. This subdirectory contains Lambda code that is required for the `ArnFunction` or `HandlerFunction` entries\.  |
+| <type-name> |  Specifies a AWS CloudFormation type in the `AWS::` namespace or a custom type that is prefixed with `Custom::`\.  |
 
 ## Elements in the Type Definition {#cloud-canvas-cgf-adding-aws-resources-elements-in-the-type-definition}
 
@@ -123,25 +123,25 @@ This section describes the other elements in a type definition\.
 Optional\. Contains the metadata configuration information for an instance of the type that controls permissions\.
 
 
-****  
+****
 
-| Item | Description | 
-| --- | --- | 
-| <action>  | Specifies an [IAM action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html) that instances of the resource type are permitted to have in the role that is created for them\. Wildcards are permitted\. | 
-| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. | 
+| Item | Description |
+| --- | --- |
+| <action>  | Specifies an [IAM action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actionsconditions.html) that instances of the resource type are permitted to have in the role that is created for them\. Wildcards are permitted\. |
+| <role‑mapping> | Specifies a default [Cloud Canvas role mapping](/docs/userguide/gems/cloud-canvas/built-in-roles-and-policies#cloud-canvas-rm-security-roles-policies-role-mapping-metadata) to apply to instances of this type\. |
 
 ### ArnFormat {#cloud-canvas-cgf-adding-aws-resources-arnformat}
 
 Required if `ArnFunction` is not specified\. Specifies the ARN for instances of the resource in the *<arn-format>* format string\. The following substitutions are allowed:
 
 
-****  
+****
 
-| Item | Description | 
-| --- | --- | 
-| <region> | Specifies the region of the AWS CloudFormation stack\. | 
-| <account-id>  | Specifies the AWS account ID\. | 
-| <resource‑name> | Specifies the physical resource ID of the resource instance\. | 
+| Item | Description |
+| --- | --- |
+| <region> | Specifies the region of the AWS CloudFormation stack\. |
+| <account-id>  | Specifies the AWS account ID\. |
+| <resource‑name> | Specifies the physical resource ID of the resource instance\. |
 
 The following example specifies the ARN for a Lambda function:
 
@@ -154,16 +154,16 @@ arn:aws:lambda:<region>:<account-id>:function:<resource-name>
 Required if `ArnFormat` is not specified\. Specifies a module and function to retrieve the ARN for the resource\.
 
 
-****  
+****
 
-| Item | Description | 
-| --- | --- | 
-| <function‑handler>  | Specifies a reference to a function in the string format: Module\.Function\. The module must be located in the resource\_types subdirectory of your gem's ServiceLambda directory\. | 
-| <policy> | Specifies an [IAM policy statement](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Statement) that specifies the permissions that the Lambda function requires to execute\. The HandlerPolicyStatement can be omitted if the Lambda function requires no permissions\. | 
+| Item | Description |
+| --- | --- |
+| <function‑handler>  | Specifies a reference to a function in the string format: Module\.Function\. The module must be located in the resource\_types subdirectory of your gem's ServiceLambda directory\. |
+| <policy> | Specifies an [IAM policy statement](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Statement) that specifies the permissions that the Lambda function requires to execute\. The HandlerPolicyStatement can be omitted if the Lambda function requires no permissions\. |
 
 `ArnFunction` is required by some resources that do not have an ARN that can be computed from the substitutions in `ArnFormat`, such as an Amazon SQS queue\. An Amazon SQS queue requires a call to the `GetQueueAttributes` API to obtain its ARN\. `ArnFunction` supports the same substitutions as `ArnFormat`\.
 
-**Note**  
+**Note**
 Be sure that you specify any required permissions for your function in the `HandlerPolicyStatement` element of the `PermissionMetadata` field\. These permissions are shared with the `HandlerFunction` if one exists\.
 
 ### HandlerFunction {#cloud-canvas-cgf-adding-aws-resources-handlerfunction}
@@ -171,12 +171,12 @@ Be sure that you specify any required permissions for your function in the `Hand
 Required if the type begins with `Custom::`\. Specifies a module and function that runs custom code in response to the `Create`, `Update,` and `Delete` events of the custom resource\.
 
 
-****  
+****
 
-| Item | Description | 
-| --- | --- | 
-| <function‑handler>  | Specifies a reference to a function in the string format: Module\.Function\. This module must be located in the resource\_types subdirectory of your gem's ServiceLambda directory\. | 
-| <policy>  | Specifies an [IAM policy statement](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Statement) that specifies the permissions that the Lambda function requires to execute\. The HandlerPolicyStatement can be omitted if the Lambda function requires no permissions\. | 
+| Item | Description |
+| --- | --- |
+| <function‑handler>  | Specifies a reference to a function in the string format: Module\.Function\. This module must be located in the resource\_types subdirectory of your gem's ServiceLambda directory\. |
+| <policy>  | Specifies an [IAM policy statement](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Statement) that specifies the permissions that the Lambda function requires to execute\. The HandlerPolicyStatement can be omitted if the Lambda function requires no permissions\. |
 
 Custom resources \(that is, entries in the `Resources` section of the form `"Type": "Custom::<name>"`\) should define their `ServiceToken` to point to the Cloud Canvas `ProjectResourceHandler`\. The `ProjectResourceHandler` dispatches the events to your module so that your custom code can run with the correct permissions\.
 

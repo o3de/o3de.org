@@ -1,5 +1,5 @@
 ---
-description: ' Use EnvState settings to define how sun shadows appear in your &ALYlong;
+description: ' Use EnvState settings to define how sun shadows appear in your Amazon Lumberyard
   level. '
 title: Setting Sun Shadow Settings
 ---

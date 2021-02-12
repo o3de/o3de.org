@@ -1,5 +1,5 @@
 ---
-description: ' Configure and build an iOS game application using the &ALY; build tools. '
+description: ' Configure and build an iOS game application using the Lumberyard build tools. '
 title: Building Your iOS App
 ---
 # Building Your iOS App {#ios-game-building}
@@ -87,7 +87,7 @@ When you build the engine and tools code for macOS or Windows, you initialize th
 1. Verify that you see the following in the comments from the build system:
 
    ```
-   mac config 
+   mac config
    [WAF] 'xcode_ios' finished successfully (3.610s)
    [WAF] 'xcode_mac' finished successfully (3.507s)
    ```
@@ -110,7 +110,7 @@ Lumberyard uses a versatile shader system to achieve high quality, realistic gra
 
 When a new shader is compiled, the game waits for the remote shader compiler to compile the binary shader permutation and then send it back to your device\. Once this occurs, the shader is cached on your device until you delete the app\. When you are ready to release your game, you must pack up and include all cached binary shaders\.
 
-**Note**  
+**Note**
 You can also run the remote shader compiler on an Amazon EC2 instance\. For information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
 ### Prerequisites {#ios-remote-shader-compiler-prerequisites}

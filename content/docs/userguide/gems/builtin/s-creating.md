@@ -1,5 +1,5 @@
 ---
-description: ' Create a gem for &ALYlong;. '
+description: ' Create a gem for Amazon Lumberyard. '
 title: Creating a Gem
 ---
 # Creating a Gem {#gems-system-gems-creating}

@@ -1,5 +1,5 @@
 ---
-description: ' Add a new terrain texture layer to your &ALY; environment. '
+description: ' Add a new terrain texture layer to your Lumberyard environment. '
 title: Adding a Terrain Texture Layer
 ---
 # Adding a Terrain Texture Layer {#terrain-texture-layers-add}

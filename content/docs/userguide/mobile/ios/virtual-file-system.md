@@ -1,5 +1,5 @@
 ---
-description: ' Use the virtual file system (VFS) to serve &ALYlong; files to iOS devices. '
+description: ' Use the virtual file system (VFS) to serve Amazon Lumberyard files to iOS devices. '
 title: Using Virtual File System with iOS
 ---
 # Using Virtual File System with iOS {#ios-virtual-file-system}
@@ -48,7 +48,7 @@ On your macOS computer, set up VFS to enable asset processing for iOS\.
       1. Set `ios_wait_for_connect` to **1**\.
 
       1. Set `white_list` to the IP address of your macOS computer\.
-**Note**  
+**Note**
 Be sure to update the existing entries\. Do not duplicate the entries\.
 
 1. Do the following to modify the system configuration file:
@@ -74,7 +74,7 @@ Be sure to update the existing entries\. Do not duplicate the entries\.
 1. Type the following: `./itnl --iport 22229 --lport 22229`
 
 1. Verify that Asset Processor displays one entry on the **Connections** tab with a status of **Connected**\.
-**Note**  
+**Note**
 If you receive a bind error message, please restart your macOS computer and try again\.
 
 ## Running the VFS Build {#ios-virtual-file-system-running-vfs-build}
@@ -100,5 +100,5 @@ Run the VFS build on your macOS computer\.
 1. Build and launch your game for iOS with Xcode\. For instructions, see [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
 
 1. Verify that Asset Processor displays an iOS connection on the **Connections** tab, and that your game runs on the device\.
-**Note**  
+**Note**
 If the device cannot be reached or you don't see a connection in Asset Processor, stop the game, disconnect and then reconnect the device, and start again from step 1\. If remote shader compilation is interrupted, you may see malformed shaders cached to your Windows computer\. The malformed shaders can cause issues with subsequent runs using VFS\. To resolve this issue, delete the `lumberyard_version\dev\Cache\game_project_name\ios\user\` directory on your Windows computer\. Then, restart the shader compiler\.

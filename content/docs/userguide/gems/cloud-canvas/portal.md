@@ -1,15 +1,15 @@
 ---
-description: ' Use a &cgp; to manage the data in &AWS; for your game. '
-title: '&cgp;'
+description: ' Use a Cloud Gem Portal to manage the data in AWS for your game. '
+title: 'Cloud Gem Portal'
 ---
 # Cloud Gem Portal {#cloud-canvas-cloud-gem-portal}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-|  The Cloud Gem Portal \(CGP\) is deprecated and will be removed in a future version of Lumberyard\.  | 
+|  The Cloud Gem Portal \(CGP\) is deprecated and will be removed in a future version of Lumberyard\.  |
 
 A [cloud gem](/docs/userguide/gems/cloud-canvas/overview-cloud-gems.md) is a gem in Lumberyard whose scripts and assets use AWS resources to implement cloud\-connected game features\. A cloud gem creates a Cloud Gem Portal \(CGP\) that you can use to manage the cloud data for your game\. For example, the [Leaderboard Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/leaderboard.md) can provide a way for a support person to remove fraudulent high scores\. The Cloud Gem Portal is hosted in your AWS account and is a website that you own\. The Cloud Gem Portal is part of the [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md) and can be customized\.
 

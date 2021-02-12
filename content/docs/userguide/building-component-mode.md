@@ -1,7 +1,7 @@
 ---
-description: ' You must build the editor so that your component with &CM; appears
-  in &ALYlong;. '
-title: 'Step 6: Building &CM;'
+description: ' You must build the editor so that your component with Component Mode appears
+  in Amazon Lumberyard. '
+title: 'Step 6: Building Component Mode'
 ---
 # Step 6: Building Component Mode {#building-component-mode}
 
@@ -13,8 +13,8 @@ In the following procedure, you must build the editor so that you can view your 
 
 1. In a text editor, open the `lmbrcentral_editor.waf_files.waf` file\.
 
-1. Navigate to the `"Source/Rendering":` section and add the files that you created for a Component Mode\.  
-**Example**  
+1. Navigate to the `"Source/Rendering":` section and add the files that you created for a Component Mode\.
+**Example**
 
    ```
    "Source/Rendering/EditorPointLightComponent.h",
@@ -41,7 +41,7 @@ In the following procedure, you must build the editor so that you can view your 
 
 1. In the viewport, create an entity, attach the **Point Light** component, and do one of the following:
    + Double\-click the entity
-   + In the **Entity Inspector**, choose **Edit**  
+   + In the **Entity Inspector**, choose **Edit**
 ![\[Component Mode appears in the Entity Inspector in Lumberyard.\]](/images/userguide/componentmode/programmers-guide-component-mode-2.png)
 
 1. Make changes to your component in the viewport\. You can select the manipulator on the **Point Light** component to adjust the radius of the light area\.

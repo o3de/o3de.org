@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Listener component to add a virtual microphone in the
-  &ALYlong; environment. '
+  Amazon Lumberyard environment. '
 title: Audio Listener
 ---
 # Audio Listener {#component-audio-listener}
@@ -11,16 +11,16 @@ With the **Audio Listener** component, you can place a virtual microphone in the
 
 The **Audio Listener** component has the following properties:
 
-**Rotation Entity**  
+**Rotation Entity**
 Link this property to an entity where the audio listener adopts the rotational part of the transform\. The current entity is used if a value is not specified\.
 
-**Position Entity**  
+**Position Entity**
 Link this property to an entity where the audio listener adopts the positional part of the transform\. The current entity is used if a value is not specified\.
 
-**Fixed Offset**  
+**Fixed Offset**
 Link this property to an entity where the audio listener adopts the offset part of the transform\. The current entity is used if a value is not specified\.
 
-**Listener Enabled**  
+**Listener Enabled**
 Controls the initial state of the listener\.
 
 ## Using the Audio Listener Component {#component-audio-listener-setup}
@@ -45,37 +45,37 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Specify the entity with the rotational part of the transform that the audio listener will adopt\.
 
-**Parameters**  
+**Parameters**
 `entityId` - Entity to use for the rotational part of the transform
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetPositionEntity {#audio-listener-ebus-setpositionentity}
 
 Specify the entity with the positional part of the transform that the audio listener will adopt\.
 
-**Parameters**  
+**Parameters**
 `entityId` - Entity to use for the positional part of the transform
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetFullTransformEntity {#audio-listener-ebus-setfulltransformentity}
 
 Specify the entity with the full transform that the audio listener will adopt\.
 
-**Parameters**  
+**Parameters**
 `entityId` - Entity to use for the transform
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 No

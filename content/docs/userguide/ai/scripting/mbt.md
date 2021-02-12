@@ -1,5 +1,5 @@
 ---
-description: ' Understand core concepts for the Modular Behavior Tree (MBT) in &ALYlong;. '
+description: ' Understand core concepts for the Modular Behavior Tree (MBT) in Amazon Lumberyard. '
 title: Modular Behavior Tree
 ---
 # Modular Behavior Tree {#ai-scripting-mbt}
@@ -8,22 +8,22 @@ Modular behavior tree \(MBT\) is a collection of concepts for authoring behavior
 
 ## Core Concepts {#ai-scripting-mbt-concepts}
 
-Conceptually, MBT is based on two key objects: the *node* and the *tree*\. 
+Conceptually, MBT is based on two key objects: the *node* and the *tree*\.
 
-**Node**  
-The node is the most fundamental concept; it is a building block that can be combined with others to build behaviors\. A node consists of a block of code that represents a simple task\. All nodes have the same interface: when processed, they carry out a task and either succeed or fail\.   
-Nodes can be standalone or may have child nodes, which are processed as part of the parent node processing\. When processed, the success of a parent node often \(but not always\) depends on the success of each child node\.   
-Nodes follow several common patterns, such as action, composite, and decorator nodes\. These common node patterns are more fully described in later in this topic\.  
+**Node**
+The node is the most fundamental concept; it is a building block that can be combined with others to build behaviors\. A node consists of a block of code that represents a simple task\. All nodes have the same interface: when processed, they carry out a task and either succeed or fail\.
+Nodes can be standalone or may have child nodes, which are processed as part of the parent node processing\. When processed, the success of a parent node often \(but not always\) depends on the success of each child node\.
+Nodes follow several common patterns, such as action, composite, and decorator nodes\. These common node patterns are more fully described in later in this topic\.
 Game developers can create the nodes needed for their game\. In addition, Lumberyard provides a set of standard nodes for general use\. These include nodes for tasks related to AI, animation, flying, and common game activities, as well as generic nodes useful when building behaviors, such as for timeouts and looping tasks\. These provided nodes are documented in the [Modular Behavior Tree Node Reference](/docs/userguide/ai/scripting/mbt-nodes.md)\.
 
-**Tree**  
-Behaviors are constructed by building trees of nodes\. These are a collection of individual tasks that when positioned as a root with branches that extend out into leaves define how an AI agent behaves in response to input\. 
+**Tree**
+Behaviors are constructed by building trees of nodes\. These are a collection of individual tasks that when positioned as a root with branches that extend out into leaves define how an AI agent behaves in response to input\.
 
 ## Common Node Patterns {#ai-scripting-mbt-common-node-patterns}
 
 ### Action Nodes {#ai-scripting-mbt-common-node-patterns-action}
 
-An action node represents some sort of simple action\. Action nodes might cause the AI agent to speak, play an animation, or move to a different location\. 
+An action node represents some sort of simple action\. Action nodes might cause the AI agent to speak, play an animation, or move to a different location\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_action_node.png)
 
@@ -31,19 +31,19 @@ An action node represents some sort of simple action\. Action nodes might cause 
 
 A composite node represents a series of actions to be performed in a certain order\. Composite nodes consist of a parent node and two or more child nodes\. Whether or not a child node is processed \(and in what order\) can depend on the success or failure of previously processed nodes\. Common composite patterns include sequential, selector, and parallel\.
 
-**Sequential node**  
-This composite pattern describes child nodes that are processed consecutively in a specified sequence\. All child nodes are processed regardless of whether the previous child node succeeded or failed\. For example, a sequential node might cause an AI monster to point at the player, roar, and then run toward the player\. In this pattern, each child node in the sequence must succeed for the next child node to start processing; if any child node fails, the parent node immediately fails and processing is stopped\.   
+**Sequential node**
+This composite pattern describes child nodes that are processed consecutively in a specified sequence\. All child nodes are processed regardless of whether the previous child node succeeded or failed\. For example, a sequential node might cause an AI monster to point at the player, roar, and then run toward the player\. In this pattern, each child node in the sequence must succeed for the next child node to start processing; if any child node fails, the parent node immediately fails and processing is stopped\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_sequence_node.png)
 
-**Selector node**  
-This composite pattern describes child nodes that are processed consecutively and in sequence only until one succeeds\. As soon as one child node succeeds, the parent node succeeds immediately and stops processing child nodes\. If all child nodes are attempted and all fail, the parent node fails\. This pattern is useful for setting up AI agents to try multiple different tactics, or for creating fallback behaviors to handle unexpected outcomes\.  
-Imagine, for example, that we want our AI monster to chase the player, but if it can't reach the player it should scream "Come and fight me, you coward\!" To implement this scenario, a selector parent node is set up with two children, one for each possible action\. The parent node first processes the "chase player" child node\. If it succeeds, then the selector node stops there\. However, if the "chase player node fails, then the parent node continues and processes the "taunt player" child node\.   
+**Selector node**
+This composite pattern describes child nodes that are processed consecutively and in sequence only until one succeeds\. As soon as one child node succeeds, the parent node succeeds immediately and stops processing child nodes\. If all child nodes are attempted and all fail, the parent node fails\. This pattern is useful for setting up AI agents to try multiple different tactics, or for creating fallback behaviors to handle unexpected outcomes\.
+Imagine, for example, that we want our AI monster to chase the player, but if it can't reach the player it should scream "Come and fight me, you coward\!" To implement this scenario, a selector parent node is set up with two children, one for each possible action\. The parent node first processes the "chase player" child node\. If it succeeds, then the selector node stops there\. However, if the "chase player node fails, then the parent node continues and processes the "taunt player" child node\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_selector_node.png)
 
-**Parallel node**  
-This composite pattern describes child nodes that are processed concurrently\. In this scenario, Imagine we want our AI monster to scream and chase the player at the same time rather than one after the other\.   
+**Parallel node**
+This composite pattern describes child nodes that are processed concurrently\. In this scenario, Imagine we want our AI monster to scream and chase the player at the same time rather than one after the other\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_parallel_node.png)
 
@@ -51,15 +51,15 @@ This composite pattern describes child nodes that are processed concurrently\. I
 
 A decorator node represents some sort of functionality that can be added to another node and behaves regardless of how the other node works or what it does\. Common decorator functionality includes looping and limiting concurrent functionality\.
 
-**Looping**  
-Looping functionality can be used to process any other node multiple times\. Rather than creating custom nodes every time you want to repeat a task, you can wrap any node in a parent loop decorator node\. By setting a parameter for the loop node, you can dictate the number of times the child nodes will be processed\. Each time the child node succeeds, the loop node count is updated and the child node is re\-processed\. Once the loop count meets the set parameter, the loop node succeeds\.  
+**Looping**
+Looping functionality can be used to process any other node multiple times\. Rather than creating custom nodes every time you want to repeat a task, you can wrap any node in a parent loop decorator node\. By setting a parameter for the loop node, you can dictate the number of times the child nodes will be processed\. Each time the child node succeeds, the loop node count is updated and the child node is re\-processed\. Once the loop count meets the set parameter, the loop node succeeds\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_loop_node.png)
 
-**Limiting concurrent users**  
-This functionality lets you specify how many users should be allowed to concurrently use a specified node\. It is a good way to ensure variations in behavior among a group of AI agents\. A typical scenario illustrating this function is as follows: The player is spotted by a group of three monsters\. You want one monster to sound an alarm while the others chase the player\.  
-Limiting concurrent users works with a selector node, which steps through a sequence of child nodes until one succeeds\. By wrapping one of a selector node's child nodes in a limit decorator node, you can cause the child node to fail due to concurrent users, which in turn causes the selector node to move to the next child\.   
-To handle the scenario described, the selector node would have two child nodes, "sound alarm" and "chase player"\. The "sound alarm" node is wrapped in a limit node, with the user limit set to 1\. Monster \#1 flows through the selector node to the limit node; as there is no one currently using the "sound alarm" node, the Monster \#1 takes this action\. The limit node records that one AI agent is processing the child node, so effectively locks the door to it\. Monsters \#2 and \#3 also flow through the selector node to the limit node, but because the limit node has reached its limit of user, it reports a failure\. Consequently, the selector node moves on to the next child node in the sequence, which is "chase player"\. So monsters \#2 and \#3 chase the player\.  
+**Limiting concurrent users**
+This functionality lets you specify how many users should be allowed to concurrently use a specified node\. It is a good way to ensure variations in behavior among a group of AI agents\. A typical scenario illustrating this function is as follows: The player is spotted by a group of three monsters\. You want one monster to sound an alarm while the others chase the player\.
+Limiting concurrent users works with a selector node, which steps through a sequence of child nodes until one succeeds\. By wrapping one of a selector node's child nodes in a limit decorator node, you can cause the child node to fail due to concurrent users, which in turn causes the selector node to move to the next child\.
+To handle the scenario described, the selector node would have two child nodes, "sound alarm" and "chase player"\. The "sound alarm" node is wrapped in a limit node, with the user limit set to 1\. Monster \#1 flows through the selector node to the limit node; as there is no one currently using the "sound alarm" node, the Monster \#1 takes this action\. The limit node records that one AI agent is processing the child node, so effectively locks the door to it\. Monsters \#2 and \#3 also flow through the selector node to the limit node, but because the limit node has reached its limit of user, it reports a failure\. Consequently, the selector node moves on to the next child node in the sequence, which is "chase player"\. So monsters \#2 and \#3 chase the player\.
 
 ![\[Image NOT FOUND\]](/images/userguide/ai/ai_scripting_mbt_limit_node.png)
 
@@ -67,7 +67,7 @@ To handle the scenario described, the selector node would have two child nodes, 
 
 Behavior trees are described using XML markup language\. Behavior trees are hot\-loaded every time the user jumps into the game in the editor\.
 
-The following XML example describes the behavior tree for a group of monsters\. In this example, only one monster at a time is allowed to chase the player\. The remaining monsters stand around and taunt the player\. 
+The following XML example describes the behavior tree for a group of monsters\. In this example, only one monster at a time is allowed to chase the player\. The remaining monsters stand around and taunt the player\.
 
 ```
 <BehaviorTree>
@@ -94,7 +94,7 @@ Memory is divided into two categories: configuration data and runtime data\. In 
 
 #### Configuration data {#ai-scripting-mbt-cpp-memory-model-configuration}
 
-When a behavior tree such as the following example is loaded, a behavior tree template is created that holds all the configuration data shown in the example\. This includes a sequence node with four children: two communicate nodes, an animate node, and a wait node\. The configuration data is the animation name, duration, etc\., and this data never changes\. 
+When a behavior tree such as the following example is loaded, a behavior tree template is created that holds all the configuration data shown in the example\. This includes a sequence node with four children: two communicate nodes, an animate node, and a wait node\. The configuration data is the animation name, duration, etc\., and this data never changes\.
 
 ```
 <Sequence>
@@ -121,7 +121,7 @@ MBT uses Boost smart pointers to pass around data safely and avoid raw pointers 
 
 ### Implementing an MBT Node {#ai-scripting-mbt-cpp-implementing-nodes}
 
-To implement a new MBT node in C\+\+, you'll need to do the following tasks: 
+To implement a new MBT node in C\+\+, you'll need to do the following tasks:
 + Create the node
 + Expose the node to the node factory
 + Set up error reporting for the node
@@ -135,34 +135,34 @@ The following code example illustrates a programmatic way to create a behavior t
 
 class MyNode : public BehaviorTree::Node
 {
-    typedef BehaviorTree::Node BaseClass; 
+    typedef BehaviorTree::Node BaseClass;
 
     public:
-    // Every instance of a node in a tree for an AI agent will have a 
-    // runtime data object. This data persists from when the node 
+    // Every instance of a node in a tree for an AI agent will have a
+    // runtime data object. This data persists from when the node
     // is visited until it is left.
     //
     // If this struct is left out, the code won't compile.
-    // This would contain variables like 'bestPostureID', 'shotsFired' etc. 
+    // This would contain variables like 'bestPostureID', 'shotsFired' etc.
     struct RuntimeData
     {
     };
- 
+
     MyNode() : m_speed(0.0f)
     {
     }
- 
+
     // This is where you'll load the configuration data from the XML file
     // into members of the node. They can only be written to during the loading phase
-    // and are conceptually immutable (read-only) once the game is running. 
+    // and are conceptually immutable (read-only) once the game is running.
     virtual LoadResult LoadFromXml(const XmlNodeRef& xml, const LoadContext& context)
     {
-        if (BaseClass::LoadFromXml(xml, context) == LoadFailure) 
+        if (BaseClass::LoadFromXml(xml, context) == LoadFailure)
             return LoadFailure;
-        xml->getAttr("speed", m_speed); 
+        xml->getAttr("speed", m_speed);
         return LoadSuccess;
     }
- 
+
 protected:
     // Called right before the first update
     virtual void OnInitialize(const UpdateContext& context)
@@ -172,43 +172,43 @@ protected:
         // Optional: access runtime data like this
         RuntimeData& runtimeData = GetRuntimeData<RuntimeData>(context);
     }
- 
+
     // Called when the node is terminated
     virtual void OnTerminate(const UpdateContext& context)
     {
         BaseClass::OnTerminate(context);
- 
+
         // Optional: access runtime data like this
         RuntimeData& runtimeData = GetRuntimeData<RuntimeData>(context);
     }
- 
+
     virtual Status Update(const UpdateContext& context)
     {
         // Perform your update code and report back whether the
         // node succeeded, failed or is running and needs more
         // time to carry out its task.
- 
+
         // Optional: access runtime data like this
-        RuntimeData& runtimeData = GetRuntimeData<RuntimeData>(context); 
+        RuntimeData& runtimeData = GetRuntimeData<RuntimeData>(context);
         return Success;
     }
- 
+
     // Handle any incoming events sent to this node
     virtual void HandleEvent(const EventContext& context, const Event& event)
     {
         // Optional: access runtime data like this
         RuntimeData& runtimeData = GetRuntimeData<RuntimeData>(context);
-    } 
+    }
 
 private:
     // Store any configuration data for the node right here.
     // This would be immutable things like 'maxSpeed', 'duration',
-    // 'threshold', 'impulsePower', 'soundName', etc. 
+    // 'threshold', 'impulsePower', 'soundName', etc.
     float m_speed;
 };
 
 // Generate an object specialized to create a node of your type upon
-// request by the node factory. The macro drops a global variable here. 
+// request by the node factory. The macro drops a global variable here.
 GenerateBehaviorTreeNodeCreator(MyNode);
 ```
 
@@ -231,7 +231,7 @@ ErrorReporter(*this, context).LogError("Failed to compile Lua code '%s'", code.c
 
 ### Variables {#ai-scripting-mbt-cpp-variables}
 
-Variables are statically declared in XML, with information about how they will change in response to signals from AI agents \(named text messages within the AI system\)\. 
+Variables are statically declared in XML, with information about how they will change in response to signals from AI agents \(named text messages within the AI system\)\.
 
 The following code snippet illustrates the use of variables to receive input from the AI system\. In this example, the AI agent takes action based on whether or not it can "see" the target\.
 
@@ -274,7 +274,7 @@ All Lua nodes provide access to the *entity* variable\.
       <Move to="Cover" />
   </LuaWrapper>
   ```
-+ `LuaGate` uses a bit of Lua code to control whether or not a child node should be run\. If the Lua code returns true, the child node is run and `LuaGate` returns the status of the child node \(success or failure\)\. If the code returns false or fails to execute, the child node is not run, and `LuaGate` returns failure\. 
++ `LuaGate` uses a bit of Lua code to control whether or not a child node should be run\. If the Lua code returns true, the child node is run and `LuaGate` returns the status of the child node \(success or failure\)\. If the code returns false or fails to execute, the child node is not run, and `LuaGate` returns failure\.
 
   ```
   <LuaGate code="return IsAppleGreen()">
@@ -293,9 +293,9 @@ All Lua nodes provide access to the *entity* variable\.
 
 ### Timestamps {#ai-scripting-mbt-cpp-timestamps}
 
-A timestamp identifies a point in time when an event happened\. A lot of AI behavior depends on tracking the timestamp of certain events and measuring the amount of time from those points\. For example, it can be useful to tie behavior to how long it's been since the AI agent was last shot at or hit, when it last saw the player, or how long it's been since moving to the current cover location\. 
+A timestamp identifies a point in time when an event happened\. A lot of AI behavior depends on tracking the timestamp of certain events and measuring the amount of time from those points\. For example, it can be useful to tie behavior to how long it's been since the AI agent was last shot at or hit, when it last saw the player, or how long it's been since moving to the current cover location\.
 
-Timestamps can be declared as mutually exclusive, that is, both timestamps can't have a value at the same time\. For instance, `TargetSpotted` and `TargetLost` can both have a value because the AI agent can't see a player and at the same time consider them lost\. With exclusive timestamps, when one timestamp has a value written to it, the other timestamp is automatically cleared\. 
+Timestamps can be declared as mutually exclusive, that is, both timestamps can't have a value at the same time\. For instance, `TargetSpotted` and `TargetLost` can both have a value because the AI agent can't see a player and at the same time consider them lost\. With exclusive timestamps, when one timestamp has a value written to it, the other timestamp is automatically cleared\.
 
 The following code snippet illustrates the use of timestamps\.
 
@@ -372,7 +372,7 @@ virtual void GetDebugTextForVisualizer(
 
 ### Logging and Tracing {#ai-scripting-mbt-debugging-tree-visualization-logging}
 
-Tracing log messages is a critical tool for diagnosing problems\. Lumberyard provides native support for logging, as shown in the following code snippet\. 
+Tracing log messages is a critical tool for diagnosing problems\. Lumberyard provides native support for logging, as shown in the following code snippet\.
 
 ```
 <Sequence>

@@ -1,5 +1,5 @@
 ---
-description: ' Use the HMD Gem to provide the frame for managing VR devices in &ALY;. '
+description: ' Use the HMD Gem to provide the frame for managing VR devices in Lumberyard. '
 title: HMD Framework Gem
 ---
 # HMD Framework Gem {#gems-system-gem-hmd}

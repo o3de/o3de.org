@@ -1,7 +1,7 @@
 ---
 description: ' Use the AZ::Event template class to subscribe to and publish messages
   across game components. '
-title: AZ::Event&lt;...&gt;
+title: AZ::Event<...>
 ---
 # AZ::Event<\.\.\.> {#az-event}
 
@@ -9,8 +9,8 @@ The `AZ::Event` template class is used to subscribe to and publish single value 
 
 `AZ::Event` is defined as a C\+\+ template \(`template <typename... Params>`\) in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Ebus\Event.h`
 
-**Important**  
-As of Amazon Lumberyard version 1\.24, `AZ::Event `limitations include the following:  
+**Important**
+As of Amazon Lumberyard version 1\.24, `AZ::Event `limitations include the following:
 The event system is single\-threaded only\. Handlers should `Connect()` and `Disconnect()` on the same thread that is dispatching events\.
 Handlers can be bound only to an existing event instance\. You can't bind to an event prior to its creation \(the way you can with an address by ID EBus\)\.
 A handler can be bound only to a single event\. You can't bind a single handler to more than one event\.
@@ -27,7 +27,7 @@ There is no event queuing\. A queue can be built as a modular handler wrapper, b
 + To connect to a `Handler` instance: `void Connect(Event<Params...>& event);`
 + To disconnect from a `Handler` instance: `void Disconnect();`
 
-**Example usage** 
+**Example usage**
 + To create an event for handling, declare an instance of `AZ::Event` with the following C\+\+ syntax:
 
   `AZ::Event<{type}> {name_of_event};`
@@ -49,7 +49,7 @@ When you declare the event and the handler in your header, you can connect to th
 // Declaration in your header
 AZ::Event<bool> isPlayerActive; // Declare the event
 AZ::Event<bool>::Handler playerActiveHandler([](bool value) {}); // Declare our handler
- 
+
 // Usage in your code
 handler.Connect(isPlayerActive); // Connect the handler to to our event
 // ...
@@ -65,7 +65,7 @@ class ExampleEventComponent
 public:
     using Event1Type = AZ::Event<const AZ::Vector3&>;
     using Event2Type = AZ::Event<float, float>;
- 
+
     void Tick()
     {
         // Update component state
@@ -73,20 +73,20 @@ public:
         {
             m_event1.Signal(value1);
         }
- 
+
         if (value2Changed)
         {
             m_event2.Signal(value2.x, value2.y);
         }
     }
- 
+
     void ConnectEvent1Handler(Event1Type::Handler& handler) { handler.Connect(m_event1); }
     void ConnectEvent2Handler(Event2Type::Handler& handler) { handler.Connect(m_event2); }
 private:
     Event1Type m_event1;
     Event2Type m_event2;
 };
- 
+
 class ExampleHandlerComponent
    : public AZ::Component
 {
@@ -96,7 +96,7 @@ public:
        , m_handler2([this](float value2x, float value2y) { this->m_value2x = value2x; this->m_value2y = value2y;})
     {
     }
- 
+
     void Activate()
     {
         ExampleEventComponent* eventComponent = GetEntity()->FindComponent<ExampleEventComponent>();
@@ -106,7 +106,7 @@ public:
             eventComponent->ConnectEvent2Handler(m_handler2);
         }
     }
- 
+
     void OnEvent1Invoked(int32_t value) { // do something with value }
 private:
     ExampleEventComponent::Event1Type::Handler m_handler1;
@@ -114,7 +114,7 @@ private:
 };
 ```
 
-**Performance**  
+**Performance**
 `AZ::Event` is roughly another 20% faster than even the lambda syntax for EBus, and over 40% faster than EBus's member function pointer model\. These performance deltas scale linearly with the number of handlers, so `AZ::Event` is 40% faster than using standard EBus member function pointers whether there's 1,000 handlers attached, or 1,000,000\.
 
 To compare the EBus handler implementation code against `AZ::Event`, here is an example of code used to signal a change to a single value using EBus\.
@@ -133,7 +133,7 @@ public:
     virtual void OnSignal(int32_t) = 0;
 };
 using EBusEventExampleBus = AZ::EBus<EBusEventExample>;
- 
+
 // Bus implementation
 class EBusEventExampleImpl
     : public EBusPerfBaselineBus::Handler
@@ -143,7 +143,7 @@ public:
     ~EBusEventExampleImpl() { EBusEventExampleBus::Handler::BusDisconnect(); }
     void OnSignal(int32_t) override {}
 };
- 
+
 // Usage
 EBusEventExampleImpl handler;
 EBusEventExampleBus::Broadcast(&EBusEventExample::OnSignal, 1);
@@ -155,7 +155,7 @@ And here is an example that performs the same work using `AZ::Event`\.
 // Single-value message handler implemented using AZ::Event
 AZ::Event<int32_t> event; // Declare the event
 AZ::Event<int32_t>::Handler handler([](int32_t value) {}); // Declare our handler
- 
+
 // Usage
 handler.Connect(event); // Connect the handler to our event
 event.Signal(1); // Signal an event, this will invoke our handler's lambda
@@ -167,7 +167,7 @@ Note the reduced lines of code, as well as the overall simpler code pattern\. Tr
 
 The `AZ::Event `system includes a number of unit tests and benchmarks to validate correct behavior and confirm the performance advantages over an equivalent EBus implementation\.
 
-To execute the unit tests, the following command\-line arguments can be provided to the `AzTestRunner`: 
+To execute the unit tests, the following command\-line arguments can be provided to the `AzTestRunner`:
 
 %INSTALL\-ROOT%\\dev\\Bin64vc141\.Test\\AzCoreTests\.dll AzRunBenchmarks \-\-pause\-on\-completion \-\-benchmark\_filter=BM\_EventPerf\*
 
@@ -194,7 +194,7 @@ You should see unit testing output like this\.
 [----------] 7 tests from EventTests (9 ms total)
 ```
 
-To execute the benchmarks, the following command\-line arguments can be provided to the `AzTestRunner`: 
+To execute the benchmarks, the following command\-line arguments can be provided to the `AzTestRunner`:
 
 %INSTALL\-ROOT%\\dev\\Bin64vc141\.Test\\AzCoreTests\.dll AzRunBenchmarks \-\-pause\-on\-completion \-\-benchmark\_filter=BM\_EventPerf\*
 

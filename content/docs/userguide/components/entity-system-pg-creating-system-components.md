@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create system components in &ALYlong;. '
+description: ' Learn how to create system components in Amazon Lumberyard. '
 title: Creating System Components
 ---
 # Creating System Components {#component-entity-system-pg-creating-system-components}
@@ -13,7 +13,7 @@ When you author system components, follow the best practices for component autho
 + [Reflection](/docs/userguide/components/entity-system-reflect-component.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/userguide/modules/system-entities-configuring.md)\.
 + The same [AZ::Component Functions](/docs/userguide/components/entity-system-create-component#component-entity-system-create-component-az-functions) for activation and deactivation\.
 
-**Important**  
+**Important**
 Just like game components, system components often provide request and notification buses\. However, because system components are global systems, they should not specify IDs for their buses like game components\. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components\.
 
 **Topics**
@@ -22,7 +22,7 @@ Just like game components, system components often provide request and notificat
 
 ## Creating a System Component in a Gem {#component-entity-system-pg-creating-system-components-gem}
 
-Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\. 
+Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\.
 
 When you create a system component as part of a gem, note the following requirements:
 + Your gem's `GetRequiredSystemComponents()` function must return the system component\.
@@ -56,7 +56,7 @@ namespace HttpRequestor
         virtual void AddRequest(const AZStd::string& URI, Aws::Http::HttpMethod method, const Callback& callback) = 0;
         virtual void AddRequestWithHeaders(const AZStd::string& URI, Aws::Http::HttpMethod method, const Headers & headers, const Callback& callback) = 0;
         virtual void AddRequestWithHeadersAndBody(const AZStd::string& URI, Aws::Http::HttpMethod method, const Headers & headers, const AZStd::string& body, const Callback& callback) = 0;
-        
+
         virtual void AddTextRequest(const AZStd::string& URI, Aws::Http::HttpMethod method, const TextCallback& callback) = 0;
         virtual void AddTextRequestWithHeaders(const AZStd::string& URI, Aws::Http::HttpMethod method, const Headers & headers, const TextCallback& callback) = 0;
         virtual void AddTextRequestWithHeadersAndBody(const AZStd::string& URI, Aws::Http::HttpMethod method, const Headers & headers, const AZStd::string& body, const TextCallback& callback) = 0;
@@ -66,7 +66,7 @@ namespace HttpRequestor
 } // namespace HttpRequestor
 ```
 
-**The HttpRequestorSystemComponent Class** 
+**The HttpRequestorSystemComponent Class**
 
 The following code shows the `HttpRequestorSystemComponent` class \(`HttpRequestorSystemComponent.h`\)\.
 
@@ -92,7 +92,7 @@ namespace HttpRequestor
         static void GetIncompatibleServices(AZ::ComponentDescriptor::DependencyArrayType& incompatible);
         static void GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required);
         static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);
-        
+
     protected:
         ////////////////////////////////////////////////////////////////////////
         // HttpRequestorRequestBus interface implementation
@@ -124,7 +124,7 @@ After you create the code for your component, add it to your project's system en
 
 **To define a component as a system component**
 
-1. Use the `GetRequiredSystemComponents()` function to add your component to the system entity for your project during application startup\. 
+1. Use the `GetRequiredSystemComponents()` function to add your component to the system entity for your project during application startup\.
 
    The following example is from `HttpRequestorModule.cpp`\.
 
@@ -133,7 +133,7 @@ After you create the code for your component, add it to your project's system en
    #include "HttpRequestor_precompiled.h"
    #include "HttpRequestorSystemComponent.h"
    #include <AzCore/Module/Module.h>
-   
+
    namespace HttpRequestor
    {
        class HttpRequestorModule
@@ -141,7 +141,7 @@ After you create the code for your component, add it to your project's system en
        {
        public:
            AZ_RTTI(HttpRequestorModule, "{FD411E40-AF83-4F6B-A5A3-F59AB71150BF}", AZ::Module);
-   
+
            HttpRequestorModule()
                : AZ::Module()
            {
@@ -150,7 +150,7 @@ After you create the code for your component, add it to your project's system en
                    HttpRequestorSystemComponent::CreateDescriptor(),
                });
            }
-   
+
            /**
             * Add required SystemComponents to the SystemEntity.
             */
@@ -165,22 +165,22 @@ After you create the code for your component, add it to your project's system en
    ...
    ```
 
-1. \(Optional\) Expose the system component to the [System Entity Editor](/docs/userguide/configurator/advanced#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\. 
+1. \(Optional\) Expose the system component to the [System Entity Editor](/docs/userguide/configurator/advanced#configurator-advanced-system-entity-editor)\. This enables game developers to configure the component's properties on a per\-project basis\. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`\.
 
    The following example is from `HttpRequestorSystemComponent.cpp`\.
 
    ```
    ...
    #include "HttpRequestor_precompiled.h"
-   
+
    #include <AzCore/Serialization/SerializeContext.h>
    #include <AzCore/Serialization/EditContext.h>
-   
+
    #include "HttpRequestorSystemComponent.h"
-   
+
    namespace HttpRequestor
    {
-   ...    
+   ...
        void HttpRequestorSystemComponent::Reflect(AZ::ReflectContext* context)
        {
            if (AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context))
@@ -188,7 +188,7 @@ After you create the code for your component, add it to your project's system en
                serialize->Class<HttpRequestorSystemComponent>()
                    ->Version(1)
                    ;
-               
+
                if (AZ::EditContext* ec = serialize->GetEditContext())
                {
                    ec->Class<HttpRequestorSystemComponent>("HttpRequestor", "Will make HTTP Rest calls")
@@ -204,9 +204,9 @@ After you create the code for your component, add it to your project's system en
    }
    ```
 
-   The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list\. The `Category` field specifies the group in which the component appears\. In this case, no category is specified, so the group is **Miscellaneous** by default\. 
+   The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list\. The `Category` field specifies the group in which the component appears\. In this case, no category is specified, so the group is **Miscellaneous** by default\.
 
-   The following image shows the result in the System Entity Editor\.  
+   The following image shows the result in the System Entity Editor\.
 ![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](/images/userguide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
 
-   For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](/docs/userguide/modules/system-entities-configuring.md)\. 
+   For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](/docs/userguide/modules/system-entities-configuring.md)\.

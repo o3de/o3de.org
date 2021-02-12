@@ -1,7 +1,7 @@
 ---
-description: ' Learn about the available types of &ALYlong; builds and when to use
+description: ' Learn about the available types of Amazon Lumberyard builds and when to use
   them during development. '
-title: Game Build Types in &ALYlong;
+title: Game Build Types in Amazon Lumberyard
 ---
 # Game Build Types in Amazon Lumberyard {#game-build-types}
 
@@ -28,4 +28,4 @@ Amazon Lumberyard lets you create different types of game builds for each step i
 + Removes all game developer and programmer features such as console usage, cheat commands, command line parsing, and batch mode processing\.
 + Combines everything into a single executable file instead of DLLs\.
 
-To learn how to perform each type of build and about build configuration, see [Waf Commands and Options](/docs/userguide/waf/commands.md) 
+To learn how to perform each type of build and about build configuration, see [Waf Commands and Options](/docs/userguide/waf/commands.md)

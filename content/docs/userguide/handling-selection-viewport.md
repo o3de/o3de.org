@@ -1,6 +1,6 @@
 ---
 description: ' Update your component so that it knows how to handle selection in the
-  &ALYlong; viewport. '
+  Amazon Lumberyard viewport. '
 title: 'Step 5: Handle Selection in the Viewport'
 ---
 # Step 5: Handle Selection in the Viewport {#handling-selection-viewport}
@@ -55,7 +55,7 @@ In the following procedure, make changes to your code so that you can enter Comp
        AzToolsFramework::EditorComponentSelectionRequestsBus::Handler::BusConnect(GetEntityId());
        ...
    }
-     
+
    void EditorPointLightComponent::Deactivate()
    {
        ...
@@ -66,27 +66,27 @@ In the following procedure, make changes to your code so that you can enter Comp
 
 1. Add the following changes to your code:
    + Add an implementation of `SupportsEditorRayIntersect` to return `true`\. By default, this function returns `false`\.
-   + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`\. 
+   + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`\.
 
    ```
    bool EditorPointLightComponent::SupportsEditorRayIntersect()
    {
        return true;
    }
-   
+
        AZ::u32 EditorPointLightComponent::GetBoundingBoxDisplayType()
    {
            return AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox;}
    ```
-**Note**  
+**Note**
 It's possible to instead return the `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay:BoundingBox` for debugging, but you shouldn't leave it enabled\.
 
    The next two functions show how to implement the picking and selection support\.
 
-1. Add the implementation for the `GetEditorSelectionBoundsViewport` function\. 
+1. Add the implementation for the `GetEditorSelectionBoundsViewport` function\.
 
-1. Create an AABB centered around the component covering its extents\. In this case, get the position in world space of the entity and create an AABB with the radius of the point light\. Because the point light is represented as a sphere, use the `GetPointMaxDistance` function\.  
-**Example**  
+1. Create an AABB centered around the component covering its extents\. In this case, get the position in world space of the entity and create an AABB with the radius of the point light\. Because the point light is represented as a sphere, use the `GetPointMaxDistance` function\.
+**Example**
 
    Your code should look like the following\.
 
@@ -97,21 +97,21 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
        AZ::Vector3 worldTranslation = AZ::Vector3::CreateZero();
        AZ::TransformBus::EventResult(
            worldTranslation, GetEntityId(), &AZ::TransformInterface::GetWorldTranslation);
-     
+
        return AZ::Aabb::CreateCenterRadius(worldTranslation, GetPointMaxDistance());
    }
    ```
 
-   In the next step, make changes to the `EditorSelectionIntersectRayViewport` function\.  
-**Example**  
+   In the next step, make changes to the `EditorSelectionIntersectRayViewport` function\.
+**Example**
 
    ```
    // top of file
    <AzToolsFramework/Picking/Manipulators/ManipulatorBounds.h>
-   
-   
+
+
    ...
-   
+
    bool EditorPointLightComponent::EditorSelectionIntersectRayViewport(
        const AzFramework::ViewportInfo& viewportInfo,
        const AZ::Vector3& src, const AZ::Vector3& dir, AZ::VectorFloat& distance)
@@ -119,14 +119,14 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
        AZ::Transform worldFromLocal = AZ::Transform::CreateIdentity();
        AZ::TransformBus::EventResult(
            worldFromLocal, GetEntityId(), &AZ::TransformInterface::GetWorldTM);
-     
+
        const float minorRadius = 0.1f;
        const float majorRadius = GetPointMaxDistance();
-     
+
        const AZ::Vector3 axes[] = {
            AZ::Vector3::CreateAxisX(), AZ::Vector3::CreateAxisY(), AZ::Vector3::CreateAxisZ()
        };
-     
+
        enum { AxisCount = 3 };
        float distances[AxisCount] = { FLT_MAX, FLT_MAX, FLT_MAX };
        bool intersection = false;
@@ -137,9 +137,9 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
                     src, dir, worldFromLocal.GetTranslation(), axes[axisIndex],
                     minorRadius, majorRadius, distances[axisIndex]);
        }
-     
+
        distance = AZ::GetMin(AZ::GetMin(distances[0], distances[1]), distances[2]);
-        
+
        return intersection;
    }
    ```
@@ -151,9 +151,9 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
    const float majorRadius = GetPointMaxDistance();
    ```
 
-1. You want a radius that is a reasonable size so that you can easily select it in the viewport\. The major radius is the distance from the center of the torus to the middle of the tube\. Because you have a ring for each axis, check that each one is using the `IntersectHollowCylinder` function, which basically approximates a torus\. 
+1. You want a radius that is a reasonable size so that you can easily select it in the viewport\. The major radius is the distance from the center of the torus to the middle of the tube\. Because you have a ring for each axis, check that each one is using the `IntersectHollowCylinder` function, which basically approximates a torus\.
 
-1. Test a ring for each axis and store the intersection distances to find the closest intersection\. 
+1. Test a ring for each axis and store the intersection distances to find the closest intersection\.
 
    ```
    {

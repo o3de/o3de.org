@@ -1,7 +1,7 @@
 ---
-description: ' Use &ALYlong;''s &ui-canvas-editor; to create and customize various
+description: ' Use Amazon Lumberyard''s UI Editor to create and customize various
   user interface elements and components such as menus, buttons, and heads-up displays. '
-title: Using the &ui-canvas-editor;
+title: Using the UI Editor
 ---
 # Using the UI Editor {#ui-editor-using}
 
@@ -21,7 +21,7 @@ The **UI Editor** consists of the following:
 
 1. **Animation Editor** - Tool for animating UI elements
 
-**Note**  
+**Note**
 You can tear away and redock the **Hierarchy** pane, the **Properties** pane, the **Animation Editor**, and sections of the toolbar to customize the **UI Editor**\.
 
 **To open the UI Editor**

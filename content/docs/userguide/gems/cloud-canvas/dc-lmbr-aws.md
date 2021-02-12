@@ -1,5 +1,5 @@
 ---
-description: ' Use the lmbr_aws CLI to manage dynamic content for your &ALYlong; game. '
+description: ' Use the lmbr_aws CLI to manage dynamic content for your Amazon Lumberyard game. '
 title: Using the Dynamic Content Command Line
 ---
 # Using the Dynamic Content Command Line {#cloud-canvas-cloud-gem-dc-lmbr-aws}
@@ -49,7 +49,7 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
   \(Optional\) Path and filename of the manifest file to use\. You can specify either a full path or a filename that exists in the folder `game\DynamicContent\Manifests\`\.
 
   Defaults to `game\DynamicContent\Manifests\default.json`\.
-+ `--output-root <default directory path>` 
++ `--output-root <default directory path>`
 
   \(Optional\) The path of the default directory to which to write\. The default is `@user@`\.
 + `--platform-type <OS_type>`
@@ -123,7 +123,7 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 Create a new manifest\.
 
 In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-common-arguments), this command accepts the following arguments:
-+ `--manifest-name <manifest_name>` 
++ `--manifest-name <manifest_name>`
 
   Name of the new manifest\.
 + `--manifest-path <manifest_path>`
@@ -216,7 +216,7 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
   \(Optional\) Version ID of the file\.
 
   Defaults to the latest version\.
-+ `--staging-status <PUBLIC|PRIVATE|WINDOW>` 
++ `--staging-status <PUBLIC|PRIVATE|WINDOW>`
 
   Use PUBLIC to make the file immediately public\. Use WINDOW with `start-date` and `end-date` to specify a range during which the file will be publicly available\.
 + `--start-date <start_date>`
@@ -231,7 +231,7 @@ In addition to the [Common Arguments](/docs/userguide/gems/cloud-canvas/command-
 
   Defaults to false\.
 
-**Warning**  
+**Warning**
 There is a risk of a race condition if the staging status of a file is updated while a new version of the same file with a different staging status is uploaded at the same time from a different machine\. The file could end up with an unexpected staging status in this case\. To avoid this issue, specify the version ID when using the `set-staging-status` command\.
 
 ### dynamic\-content show\-manifest {#cloud-canvas-cloud-gem-dc-lmbr-aws-extensions-show-manifest}

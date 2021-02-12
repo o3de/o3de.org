@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Character Controller component to implement basic character
-  interactions in &ALYlong;. '
+  interactions in Amazon Lumberyard. '
 title: PhysX Character Controller
 ---
 # PhysX Character Controller {#component-physx-character-controller}
@@ -33,25 +33,25 @@ You can configure the properties for the **PhysX Character Controller** componen
 The **PhysX Character Controller** has the following component properties\.
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-|  **Collision Layer**  |  Collision layer assigned to the controller\. The default is **Default**\.  | 
-|  **Collides With**  |  Collision layers that this character controller collides with\. Possible values are those that you define in the collision groups section of the PhysX configuration\.  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)  The collision filters determine whether dynamic objects collide with the controller\. A separate set of filters control what objects can impede the character from moving\. The movement filters are currently hard\-coded so that static objects obstruct character movement\.   | 
-| Material Library |  [PhysX material](/docs/userguide/nvidia/physx/materials.md) assigned to this character controller\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)  | 
-| Material Slot |  Specifies a material from the material library\. To select a material from the library, click the drop\-down list\. The default is the first value configured\.  If the material library is empty, this option does not appear and the default material values \(`0.5` and average for all parameters\) are used\.   | 
-|  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb\.   | 
-|  **[Step Height](#component-physx-character-controller-step-height)**  |  Height of steps in meters that the character controller can traverse\.   | 
-|  **Minimum Movement Distance**  |  Distance in meters below which the controller doesn't attempt to move\. Used to avoid jittering\.   | 
-|  **Collider Tag**  |  A tag string used to identify the collider associated with the character controller\.  | 
-|  **Slope Behavior**  |  Behavior of the controller on surfaces above the maximum slope\.  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html) The default is **Prevent Climbing**\.  | 
-| [Contact Offset](#component-physx-character-controller-contact-offset) |  Additional distance in meters beyond the controller that is monitored for potential contact\. Used for smoother contact resolution\.   | 
-| Scale |  Scales the size of the collider created in PhysX relative to the dimensions specified for the controller\. A value slightly smaller than `1` is recommended\.  The default is `0.8`\.  | 
-| [Shape](#component-physx-character-controller-shape) | Shape of the character controller\.You can specify the following values:[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/component-physx-character-controller.html)The default is Capsule\. | 
-| Height \(Capsule Only\) |  Height of the capsule in meters\.  | 
-| Radius \(Capsule Only\) |  Radius of the capsule in meters\.  | 
-| Dimensions \(Box Only\) |  The x, y, and z dimensions of the box in meters\.  | 
+| Property | Description |
+| --- | --- |
+|  **Collision Layer**  |  Collision layer assigned to the controller\. The default is **Default**\.  |
+|  **Collides With**  |  Collision layers that this character controller collides with\. Possible values are those that you define in the collision groups section of the PhysX configuration\.  You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)  The collision filters determine whether dynamic objects collide with the controller\. A separate set of filters control what objects can impede the character from moving\. The movement filters are currently hard\-coded so that static objects obstruct character movement\.   |
+| Material Library |  [PhysX material](/docs/userguide/nvidia/physx/materials.md) assigned to this character controller\. [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)  |
+| Material Slot |  Specifies a material from the material library\. To select a material from the library, click the drop\-down list\. The default is the first value configured\.  If the material library is empty, this option does not appear and the default material values \(`0.5` and average for all parameters\) are used\.   |
+|  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb\.   |
+|  **[Step Height](#component-physx-character-controller-step-height)**  |  Height of steps in meters that the character controller can traverse\.   |
+|  **Minimum Movement Distance**  |  Distance in meters below which the controller doesn't attempt to move\. Used to avoid jittering\.   |
+|  **Collider Tag**  |  A tag string used to identify the collider associated with the character controller\.  |
+|  **Slope Behavior**  |  Behavior of the controller on surfaces above the maximum slope\.  You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller) The default is **Prevent Climbing**\.  |
+| [Contact Offset](#component-physx-character-controller-contact-offset) |  Additional distance in meters beyond the controller that is monitored for potential contact\. Used for smoother contact resolution\.   |
+| Scale |  Scales the size of the collider created in PhysX relative to the dimensions specified for the controller\. A value slightly smaller than `1` is recommended\.  The default is `0.8`\.  |
+| [Shape](#component-physx-character-controller-shape) | Shape of the character controller\.You can specify the following values:[\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)The default is Capsule\. |
+| Height \(Capsule Only\) |  Height of the capsule in meters\.  |
+| Radius \(Capsule Only\) |  Radius of the capsule in meters\.  |
+| Dimensions \(Box Only\) |  The x, y, and z dimensions of the box in meters\.  |
 
 ### Maximum Slope Angle {#component-physx-character-controller-maximum-slope-angle}
 
@@ -61,8 +61,8 @@ The maximum slope angle is the largest slope that the character controller can c
 
 The maximum slope angle determines the step height that the controller can climb\.
 
-**Example**  
-Capsule controllers might be able to climb steps slightly higher than the step height because the curved bottom can slide upwards on steps\. Refer to the following image:  
+**Example**
+Capsule controllers might be able to climb steps slightly higher than the step height because the curved bottom can slide upwards on steps\. Refer to the following image:
 
 ![\[Step height determines the height of steps that the controller can climb.\]](/images/userguide/component/physx/component-physx-character-controller-6.png)
 
@@ -70,11 +70,11 @@ Capsule controllers might be able to climb steps slightly higher than the step h
 
 The contact offset is the distance padding between the collider shape and the contact surface\. The contact offset allows the simulation to provide smoother collision behavior\.
 
-**Note**  
+**Note**
 The contact offset is included in the calculation for the foot position\.
 
-**Example**  
-In the editor debug draw for the **PhysX Character Controller** component, the effect of the contact offset is represented by the wireframe that surrounds the solid shape of the collider, as in the following image\.  
+**Example**
+In the editor debug draw for the **PhysX Character Controller** component, the effect of the contact offset is represented by the wireframe that surrounds the solid shape of the collider, as in the following image\.
 
 ![\[Wireframe showing the contact offset for a PhysX Character Controller in the Lumberyard Editor viewport.\]](/images/userguide/component/physx/component-physx-character-controller-7.png)
 
@@ -88,7 +88,7 @@ Use the **Shape** property in the **Entity Inspector** to choose the desired sha
 
 ## Differences Between PhysX and Legacy Character Physics Components {#component-physx-character-controller-vs-legacy}
 
-Character controllers are usually **kinematic** or **dynamic**\. Dynamic character controllers are controlled through their velocity or by applying forces\. Kinematic character controllers are controlled directly by position\. Each controller type has advantages and disadvantages\. 
+Character controllers are usually **kinematic** or **dynamic**\. Dynamic character controllers are controlled through their velocity or by applying forces\. Kinematic character controllers are controlled directly by position\. Each controller type has advantages and disadvantages\.
 
 For more information, see [Character Controllers](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/3.3.4/Manual/CharacterControllers.html) in the NVIDIA documentation\.
 

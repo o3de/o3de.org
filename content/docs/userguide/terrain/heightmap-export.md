@@ -1,5 +1,5 @@
 ---
-description: ' Export a &ALY; terrain heightmap to one of eight popular image formats. '
+description: ' Export a Lumberyard terrain heightmap to one of eight popular image formats. '
 title: Exporting a Terrain Heightmap
 ---
 # Exporting a Terrain Heightmap {#terrain-heightmap-export}

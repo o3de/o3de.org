@@ -1,6 +1,6 @@
 ---
 description: ' Enable the Watervolume shader to render bodies of water such as lakes,
-  pools, and so on in &ALYlong;. '
+  pools, and so on in Amazon Lumberyard. '
 title: WaterVolume Shader
 ---
 # WaterVolume Shader {#shader-ref-watervolume}
@@ -12,85 +12,85 @@ The Watervolume shader is used for rendering volumetric bodies of water includin
 
 ## Shader Parameters {#shader-ref-watervolume-shader-parameters}
 
-**Detail normals scale**  
-Scales the detail bump normals intensity\.  
+**Detail normals scale**
+Scales the detail bump normals intensity\.
 Default value: 0\.5
 
-**Detail tiling**  
-Sets detail bump tilling\.  
+**Detail tiling**
+Sets detail bump tilling\.
 Default value: 2\.5
 
-**Env projection scale**  
-Controls the projection scale, or the tiling, of the specified environment map\.  
+**Env projection scale**
+Controls the projection scale, or the tiling, of the specified environment map\.
 Default value: 20
 
-**Env reflection amount**  
-Controls the reflection amount of the environment map\. Can be offset with Specular Color\.  
+**Env reflection amount**
+Controls the reflection amount of the environment map\. Can be offset with Specular Color\.
 Default value: 1
 
-**Flow map scale**  
-Controls the scale, or tiling, of the flow map texture\. Enable **Water flow map** in **Shader Generations Params** to use this property\.  
+**Flow map scale**
+Controls the scale, or tiling, of the flow map texture\. Enable **Water flow map** in **Shader Generations Params** to use this property\.
 Default value: 0
 
-**Flow speed**  
-Specifies the speed of the flow effect\. **Water flow** shader generation parameter must be enabled first\.  
+**Flow speed**
+Specifies the speed of the flow effect\. **Water flow** shader generation parameter must be enabled first\.
 Default value: 0
 
-**Foam amount**  
-Controls the amount of foam placed on the water surface\. **Foam** shader generation parameter must be enabled first\.  
+**Foam amount**
+Controls the amount of foam placed on the water surface\. **Foam** shader generation parameter must be enabled first\.
 Default value: 1
 
-**Foam soft intersection**  
-Controls how the foam behaves from contact areas\. Foam forms around intersecting objects and the terrain after it gets close to the surface\. **Foam** shader generation parameter must be enabled first\.   
+**Foam soft intersection**
+Controls how the foam behaves from contact areas\. Foam forms around intersecting objects and the terrain after it gets close to the surface\. **Foam** shader generation parameter must be enabled first\.
 Default value: 0\.75
 
-**Foam tiling**  
-Sets the tiling amount of the foam texture\. **Foam** shader generation parameter must be enabled first\.  
+**Foam tiling**
+Sets the tiling amount of the foam texture\. **Foam** shader generation parameter must be enabled first\.
 Default value: 12
 
-**Normals scale**  
-Controls the scale of the normals\. Don't confuse this parameter with Detail normals\.  
+**Normals scale**
+Controls the scale of the normals\. Don't confuse this parameter with Detail normals\.
 Default value: 1\.25
 
-**Rain ripples tiling**  
-Sets the tiling amount for the rain ripples texture\.  
+**Rain ripples tiling**
+Sets the tiling amount for the rain ripples texture\.
 Default value: 1
 
-**Realtime reflection amount**  
-Controls the reflection amount for the Realtime Reflection\.  
+**Realtime reflection amount**
+Controls the reflection amount for the Realtime Reflection\.
 Default value: 1
 
-**Soft intersection factor**  
-Similar to the Foam soft intersection but for the base water surface\.  
+**Soft intersection factor**
+Similar to the Foam soft intersection but for the base water surface\.
 Default value: 1
 
-**Tiling**  
-Changes the amount of texture map tilling on the water surface\.  
+**Tiling**
+Changes the amount of texture map tilling on the water surface\.
 Default value: 10
 
-**Vertex wave scale**  
-Sets strength of vertex displaced wave animation\.  
+**Vertex wave scale**
+Sets strength of vertex displaced wave animation\.
 Default value: 0\.125
 
 ## Shader Generation Parameters {#shader-ref-watervolume-shader-generation-parameters}
 
-**Realtime Reflection**  
+**Realtime Reflection**
 Enables approximate real\-time reflections\.
 
-**Water flow**  
+**Water flow**
 Enables water to flow along geometry UVs\.
 
-**Water flow map**  
+**Water flow map**
 Enables water flow along a flow map\.
 
-**Water flow map strength**  
+**Water flow map strength**
 Enables additional water flow strength controls, which requires the blue channel for strength\.
 
-**Sun specular**  
+**Sun specular**
 Enables water sunshine\.
 
-**Debug flow map**  
+**Debug flow map**
 Enables visualizing flow map\.
 
-**Foam**  
+**Foam**
 Enables foam\.

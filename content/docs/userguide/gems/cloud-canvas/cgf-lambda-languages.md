@@ -1,6 +1,6 @@
 ---
-description: ' Create &LAM; deployment packages to use with &cloud; in &ALYlong;. '
-title: '&LAM; Language Support in the Cloud Gem Framework'
+description: ' Create Lambda deployment packages to use with Cloud Canvas in Amazon Lumberyard. '
+title: 'Lambda Language Support in the Cloud Gem Framework'
 ---
 # Lambda Language Support in the Cloud Gem Framework {#cloud-canvas-cgf-lambda-languages}
 
@@ -22,18 +22,18 @@ Lumberyard has support for Lambda deployment packages that include Lambda functi
                    "DotnetLambda",
                    "GoLambda",
                    "NodeLambda"
-               ], 
+               ],
                "Properties": {
                    "ConfigurationBucket": {
                        "Ref": "ConfigurationBucket"
-                   }, 
+                   },
                    "ConfigurationKey": {
                        "Ref": "ConfigurationKey"
-                   }, 
+                   },
                    "ServiceToken": {
                        "Ref": "ProjectResourceHandler"
                    }
-               }, 
+               },
                "Type": "Custom::AccessControl"
            },
    [ … ]
@@ -107,9 +107,9 @@ Lumberyard has support for Lambda deployment packages that include Lambda functi
 When you create non\-Python Lambda functions for use with Cloud Canvas, note the following:
 + The Visual Studio tools for \.NET Lambda functions do not generate a Lambda function deployment package automatically\. For steps, see [\.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html) in the *AWS Lambda Developer Guide*\.
 + When you use the [Eclipse IDE](https://en.wikipedia.org/wiki/Eclipse_(software)) and [Apache Maven](https://en.wikipedia.org/wiki/Apache_Maven) to build a Java `.jar` package, Maven generates a `.jar` file named `project-SNAPSHOT.jar`\. The Cloud Canvas uploader supports this naming convention and the `project.jar` file\.
-+ Each runtime has its own format for the `Handler` property\. See the following table\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-cgf-lambda-languages.html)
++ Each runtime has its own format for the `Handler` property\. See the following table\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/gems/cloud-canvas/cgf-lambda-languages)
 
 ## Examples and Sample Level {#cloud-canvas-cgf-lambda-languages-examples-and-sample-level}
 
@@ -136,7 +136,7 @@ Running the sample requires the following prerequisites:
 
 1. Choose **LambdaLanguage**, and then click **Open**\.
 
-1. Click **Play Game** or press **Ctrl\+G** to switch to gameplay mode\. After a short pause, a message reports success, as seen in the following image\.  
+1. Click **Play Game** or press **Ctrl\+G** to switch to gameplay mode\. After a short pause, a message reports success, as seen in the following image\.
 ![\[Lambda functions in different languages report success in the LambdaLanguage sample level\]](/images/userguide/cloud_canvas/cloud-canvas-cgf-lambda-languages-1.png)
 
 ### Additional Resources {#cloud-canvas-cgf-lambda-languages-additional-resources}
@@ -144,11 +144,11 @@ Running the sample requires the following prerequisites:
 For information on how the sample applications were built, see the following topics in the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/)\.
 
 
-****  
+****
 
-| Sample Application | Resource Page | 
-| --- | --- | 
-| DotNetLambda | [AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-create-deployment-package-toolkit.html) and [\.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html) | 
-| GoLambda | [Creating a Deployment Package \(Go\)](https://docs.aws.amazon.com/lambda/latest/dg/lambda-go-how-to-create-deployment-package.html) | 
-| JavajarLambda | [Creating a \.jar Deployment Package Using Maven and Eclipse IDE \(Java\)](https://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-and-eclipse.html) | 
-| NodeLambda | [Creating a Deployment Package \(Node\.js\)](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-create-deployment-pkg.html) | 
+| Sample Application | Resource Page |
+| --- | --- |
+| DotNetLambda | [AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-create-deployment-package-toolkit.html) and [\.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/lambda-dotnet-coreclr-deployment-package.html) |
+| GoLambda | [Creating a Deployment Package \(Go\)](https://docs.aws.amazon.com/lambda/latest/dg/lambda-go-how-to-create-deployment-package.html) |
+| JavajarLambda | [Creating a \.jar Deployment Package Using Maven and Eclipse IDE \(Java\)](https://docs.aws.amazon.com/lambda/latest/dg/java-create-jar-pkg-maven-and-eclipse.html) |
+| NodeLambda | [Creating a Deployment Package \(Node\.js\)](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-create-deployment-pkg.html) |

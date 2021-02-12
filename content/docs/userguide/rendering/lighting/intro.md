@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s physically based lighting and shading models to light
+description: ' Use Lumberyard''s physically based lighting and shading models to light
   your environment. '
 title: Environment Lighting
 ---

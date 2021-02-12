@@ -1,13 +1,13 @@
 ---
-description: ' Follow these guidelines when using the &ALYlong; Infinite Ocean component. '
+description: ' Follow these guidelines when using the Amazon Lumberyard Infinite Ocean component. '
 title: Best Practices Working with the Infinite Ocean Component
 ---
 # Best Practices Working with the Infinite Ocean Component {#infinite-ocean-component-best-practices}
 
 See the following best practices when working with the **Infinite Ocean** component\.
-+ You can use the default parameters for the **Infinite Ocean** component and the `ocean_default.mtl` material to create a default ocean, but you can change the settings as needed\. 
-**Note**  
-Changing the `ocean_default.mlt` material affects any level that has an ocean that uses the material\. 
++ You can use the default parameters for the **Infinite Ocean** component and the `ocean_default.mtl` material to create a default ocean, but you can change the settings as needed\.
+**Note**
+Changing the `ocean_default.mlt` material affects any level that has an ocean that uses the material\.
 + You can change the colors that contribute to how the ocean appears\.
   + For the **Infinite Ocean** component, use the **Color** and **Near Fog Color** parameters\. For more information, see [Fog](/docs/userguide/components/ocean/properties#infinite-ocean-component-properties-fog)\.
   + For the water material \(`ocean_default.mlt`\), use the **Diffuse Color** and **Specular Color** parameters\. For more information, see [Water Shader Material for the Infinite Ocean Component](/docs/userguide/components/ocean/water-shader-material.md)\.
@@ -24,8 +24,8 @@ Changing the `ocean_default.mlt` material affects any level that has an ocean th
 
 1. In the Material Editor, customize the material settings for your current level\.
 
-**Tip**  
-For best performance, we recommend the following:  
+**Tip**
+For best performance, we recommend the following:
 If your level doesn't require sun reflection, disable these parameters\.
 If your level doesn't require foam, disable this parameter\.
-If you don't need caustic rendering, set the **Caustic Multiplier** parameter to `0` to disable it\. 
+If you don't need caustic rendering, set the **Caustic Multiplier** parameter to `0` to disable it\.

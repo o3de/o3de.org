@@ -1,5 +1,5 @@
 ---
-description: ' Use the Player Account Cloud Gem in &ALYlong; and &COG; to store player
+description: ' Use the Player Account Cloud Gem in Amazon Lumberyard and Amazon Cognito to store player
   account data. '
 title: Storing Data Associated with a Player Account
 ---
@@ -19,15 +19,15 @@ Each player account has a randomly generated account ID\. When you store data as
 
 A `PlayerName` field is provided in the `PlayerAccounts` table as an example of how to store player data for an account\. The Amazon Cognito user pool supports storing a variety of attributes and could also be used for storing player data\. However, this is not recommended if you configure the `PlayerAccess` identity pool to use more than one identity provider\. In such a scenario, some players might not have a user in the Amazon Cognito user pool\.
 
-**Warning**  
-Do not store the data for unauthenticated \(guest or anonymous\) players who are using an Amazon Cognito ID directly or indirectly on the server\. The reasons not to store this data are the following:  
-A person who knows the Amazon Cognito ID for an unauthenticated account can claim the identity by linking it to a user that the person controls\. The identity's original owner cannot recover the account if an original device is lost or the identity is stolen\. For more information on identity pools, see [Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html)\.  
+**Warning**
+Do not store the data for unauthenticated \(guest or anonymous\) players who are using an Amazon Cognito ID directly or indirectly on the server\. The reasons not to store this data are the following:
+A person who knows the Amazon Cognito ID for an unauthenticated account can claim the identity by linking it to a user that the person controls\. The identity's original owner cannot recover the account if an original device is lost or the identity is stolen\. For more information on identity pools, see [Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html)\.
  
-The local copy of the unauthenticated Amazon Cognito ID is overwritten with a new one when the player logs in and out\.  
+The local copy of the unauthenticated Amazon Cognito ID is overwritten with a new one when the player logs in and out\.
  
-The player has no way to recover an unauthenticated Amazon Cognito ID after it has been overwritten locally\. The identity still exists in the identity pool, but the identity and data associated with its Amazon Cognito ID effectively become orphaned\.  
+The player has no way to recover an unauthenticated Amazon Cognito ID after it has been overwritten locally\. The identity still exists in the identity pool, but the identity and data associated with its Amazon Cognito ID effectively become orphaned\.
  
-The buildup of orphaned identities can be misleading when trying to determine the actual number of players\.  
+The buildup of orphaned identities can be misleading when trying to determine the actual number of players\.
  
 If a player uses an unauthenticated identity and then creates a new account, the account ID from the unauthenticated identity does not carry over to the new account\.
 

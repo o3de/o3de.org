@@ -1,6 +1,6 @@
 ---
 description: ' Use the VR Box Garden level to learn how to set up a VR playspace,
-  basic VR gameplay, and controller tracking in &ALYlong;. '
+  basic VR gameplay, and controller tracking in Amazon Lumberyard. '
 title: VR Box Garden Level
 ---
 # VR Box Garden Level {#sample-level-vr-box-garden}
@@ -23,7 +23,7 @@ All slices for the VR Box Garden level are located in the `lumberyard_version\de
 The VR Box Garden level uses the following scripts:
 + `vrdevice_tracking` Lua script - Matches the in\-game movement and orientation of the controller entities with the physical controllers\.
 + `input_play_sound` Lua script - Plays a spawning sound when an input event is triggered\. The **Lua Script** component specifies the sound to play\.
-**Note**  
+**Note**
 To play sound correctly, you must add both the **[Audio Proxy](/docs/userguide/components/audio-proxy.md)** component and the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** component on the entity\.
 + Script Canvas graph - Spawns a projectile\. The **[Spawner](/docs/userguide/components/spawner.md)** component specifies the dynamic slice to spawn\. This graph is on the controller entity\. In the **Input Handler** node, the **Event Name** is the event that is defined in the **Input Configurator**\.
 

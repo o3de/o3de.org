@@ -1,15 +1,15 @@
 ---
-description: ' Use smart objects for AI agents to interact with other objects in &ALYlong;. '
+description: ' Use smart objects for AI agents to interact with other objects in Amazon Lumberyard. '
 title: Using Smart Objects for AI Navigation
 ---
 # Using Smart Objects for AI Navigation {#ai-nav-off-mesh-smart-objects}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 Smart Objects are an advanced type of AI Control Object that are used to interact with other objects using rules\. Smart Objects can be used for AI movements that would otherwise be impossible to navigate within a mesh\. Smart Objects can be used to have AI Agents duck, jump, rappel and kick down doors\.
 

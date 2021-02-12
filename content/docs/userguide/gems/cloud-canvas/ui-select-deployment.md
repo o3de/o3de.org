@@ -1,7 +1,7 @@
 ---
-description: ' Select and manage the deployments that you want &ly-editor; to work
-  with in &ALYlong;. '
-title: Making a &cloud; Deployment Active
+description: ' Select and manage the deployments that you want Lumberyard Editor to work
+  with in Amazon Lumberyard. '
+title: Making a Cloud Canvas Deployment Active
 ---
 # Making a Cloud Canvas Deployment Active {#cloud-canvas-ui-select-deployment}
 
@@ -9,8 +9,8 @@ You can select the deployment that you want Lumberyard Editor to consider active
 
 You can also select the deployment that you want to be active by default for all team members\.
 
-**Note**  
-To select a deployment, you must have initialized **Cloud Canvas ****Resource Manager** to work with your AWS account and created a deployment\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md) and [Create Deployment ](/docs/userguide/gems/cloud-canvas/ui-rm-deployments#cloud-canvas-ui-rm-create-deployment)\. 
+**Note**
+To select a deployment, you must have initialized **Cloud Canvas ****Resource Manager** to work with your AWS account and created a deployment\. For more information, see [Initializing Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-initialize.md) and [Create Deployment ](/docs/userguide/gems/cloud-canvas/ui-rm-deployments#cloud-canvas-ui-rm-create-deployment)\.
 
 ## Making a Deployment Active {#cloud-canvas-ui-select-deployment-active}
 
@@ -18,16 +18,16 @@ You have several ways to make a deployment active in **Cloud Canvas Resource Man
 
 **To make a deployment active**
 + To make a deployment active, do one of the following:
-  +  In Lumberyard Editor, click **AWS**, **Cloud Canvas**, **Select a deployment**\.   
+  +  In Lumberyard Editor, click **AWS**, **Cloud Canvas**, **Select a deployment**\.
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-select-deployment.png)
-  +  In the **Cloud Canvas Resource Manager** toolbar, click the name of the current deployment, or click **\(none\)** if none is configured:  
+  +  In the **Cloud Canvas Resource Manager** toolbar, click the name of the current deployment, or click **\(none\)** if none is configured:
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-current-deployment-none.png)
 
-    When prompted, choose the deployment that you want to make active:  
+    When prompted, choose the deployment that you want to make active:
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-select-deployment-dev.png)
 
     One or more of the deployments may be marked **protected**\. For more information, see [Using Protected Deployments ](/docs/userguide/gems/cloud-canvas/protected-deployments.md)\.
-  + In the **Cloud Canvas Resource Manager** navigation pane, right\-click the deployment that you want to make active, and then click **Make active deployment**:   
+  + In the **Cloud Canvas Resource Manager** navigation pane, right\-click the deployment that you want to make active, and then click **Make active deployment**:
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-select-deployment-rm-active.png)
 
 ## Making a Deployment the Default {#cloud-canvas-ui-select-deployment-default}
@@ -36,12 +36,12 @@ You can use the **Cloud Canvas Resource Manager** to make a deployment the defau
 
 **To make a deployment active by default for all team members**
 
-1.  In Lumberyard Editor, click **AWS**, **Cloud Canvas**, **Cloud Canvas Resource Manager**\.   
+1.  In Lumberyard Editor, click **AWS**, **Cloud Canvas**, **Cloud Canvas Resource Manager**\.
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-rm-open.png)
 
-1.  In the **Cloud Canvas configuration** navigation tree, expand **Administration \(advanced\)**, and then expand **Deployments**\. 
+1.  In the **Cloud Canvas configuration** navigation tree, expand **Administration \(advanced\)**, and then expand **Deployments**\.
 
-1. Right\-click the deployment that you want to make the default, and then click **Make default deployment**:  
+1. Right\-click the deployment that you want to make the default, and then click **Make default deployment**:
 ![\[Image NOT FOUND\]](/images/userguide/cloud_canvas/cloud-canvas-ui-select-deployment-rm-default.png)
 
 **To use the command line to make a deployment the default**

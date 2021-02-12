@@ -1,7 +1,7 @@
 ---
 description: ' How to configure the Perforce Plugin to use Perforce as the source
-  control solution to use with &ALY;. '
-title: Using the Perforce Plugin with &ALY;
+  control solution to use with Lumberyard. '
+title: Using the Perforce Plugin with Lumberyard
 ---
 # Using the Perforce Plugin with Lumberyard {#setting-up-lumberyard-perforce-plugin}
 
@@ -12,7 +12,7 @@ You can use the **Perforce Settings** dialog box to configure how Lumberyard con
 + **User** \(`P4USER`\)
 + **Workspace** \(`P4CLIENT`\)
 + **Charset** \(`P4CHARSET`\)
-**Note**  
+**Note**
 `P4_<P4PORT>_CHARSET` is also cached\. This value is used if it matches your current `P4PORT` value; otherwise, the value for `P4CHARSET` is used\. For example, if `P4PORT` is set to **my\.perforce\.server\.com:1666**, the value **P4\_my\.perforce\.server\.com:1666** would be used\.
 
 Certain values may not be modifiable if your Perforce connection settings are configured using a method that overrides the `p4 set` command\. The following connection methods may override the ability to modify a setting:
@@ -22,12 +22,12 @@ Certain values may not be modifiable if your Perforce connection settings are co
 **To use the Perforce plugin menu**
 
 1. In Lumberyard Editor, click the P4 icon in the bottom toolbar\.
-**Note**  
+**Note**
 Hover over the icon to display the connection status\.
 
 1. In the drop\-down menu, you can do the following:
    + Click **Enable** or **Disable** to toggle the plugin\. The **Enable** setting allows you to work online\. The **Disable** setting forces you to work offline\.
-**Note**  
+**Note**
 Changes are not tracked in offline mode\. If you work offline, you must manually reconcile your work when you reconnect to Perforce\.
    + Click **Settings** to view or modify your Perforce settings\.
 

@@ -1,19 +1,19 @@
 ---
-description: ' Prepare a &AGS; package to deploy your game servers using &AWS;. '
-title: Preparing the &AGSlong; Package
+description: ' Prepare a AGS package to deploy your game servers using AWS. '
+title: Preparing the Amazon Games Services Package
 ---
 # Preparing the Amazon GameLift Package {#linux-prepare-gamelift-package}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
- Lumberyard has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your Lumberyard game with GameLift, enable the [GameLift Gem](/docs/userguide/gems/builtin/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\. 
+ Lumberyard has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your Lumberyard game with GameLift, enable the [GameLift Gem](/docs/userguide/gems/builtin/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\.
 
- In the rest of this topic, you learn how to set up for creating your GameLift package and make a basic deployment\. 
+ In the rest of this topic, you learn how to set up for creating your GameLift package and make a basic deployment\.
 
 ## Prerequisites {#linux-prepare-gamelift-package-prerequisites}
 
@@ -25,7 +25,7 @@ Before packaging and pushing your GameLift server, make sure that you complete t
 
 ## Prepare the GameLift package {#linux-prepare-gamelift-package-bundle}
 
- The following instructions tell you how to package the **MultiplayerSample** project for a test deployment to GameLift\. When you're ready to deploy your game, edit the `MultiplayerSample_CreateGameLiftPackage.sh` script to use your project and its asset bundles\. 
+ The following instructions tell you how to package the **MultiplayerSample** project for a test deployment to GameLift\. When you're ready to deploy your game, edit the `MultiplayerSample_CreateGameLiftPackage.sh` script to use your project and its asset bundles\.
 
 1. On your Linux server, run the packaging script\.
 
@@ -42,8 +42,8 @@ Before packaging and pushing your GameLift server, make sure that you complete t
        --build-version "your build version" \
        --region us-west-2
    ```
-**Note**  
- If you want your servers to be hosted in a different AWS Region, replace the `us-west-2` argument value with the appropriate [region identifier](https://docs.aws.amazon.com/general/latest/gr/rande.html)\. 
+**Note**
+ If you want your servers to be hosted in a different AWS Region, replace the `us-west-2` argument value with the appropriate [region identifier](https://docs.aws.amazon.com/general/latest/gr/rande.html)\.
 
 ## Next steps {#linux-prepare-gamelift-package-next-steps}
 

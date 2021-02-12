@@ -1,22 +1,22 @@
 ---
 description: ' See the following AI Modular Behavior Tree (MBT) nodes for flying vehicles
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Helicopter AI MBT Nodes
 ---
 # Helicopter AI MBT Nodes {#ai-mbt-nodes-flying}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 The following flying vehicle AI Modular Behavior Tree nodes are supported\.
 
 ## Hover node {#ai-mbt-nodes-hover}
 
-Used to let a flying agent hover at its current position\. 
+Used to let a flying agent hover at its current position\.
 
 **Parameters**
 
@@ -37,7 +37,7 @@ This node never finishes by itself and will continue to hover the agent until it
 Used to let a flying agent shoot at its attention target, when possible from its current position\. If the secondary weapon system is used, then the node will only open fire if the weapons are deemed to be able to hit close enough to the target\. Otherwise normal firing rules are applied\.
 
 **Parameters**
-+ **useSecondaryWeapon**: 1 if the secondary weapon system should be used \(these are often rocket launchers\); 0 if not 
++ **useSecondaryWeapon**: 1 if the secondary weapon system should be used \(these are often rocket launchers\); 0 if not
 
   Default value: 0
 
@@ -64,10 +64,10 @@ Upon arrival, the `ArrivedCloseToPathEnd` and `ArrivedAtPathEnd` events are emit
 + **pathRadius**: The radius of the path in meters\. The agent will try to stay within this distance from the line segments of the path\.
 
   Default value: 1\.0
-+ **lookAheadDistance**: How far long the path, in meters, to look ahead for generating "attractor points" to fly to\. 
++ **lookAheadDistance**: How far long the path, in meters, to look ahead for generating "attractor points" to fly to\.
 
   Default value: 3\.0
-+ **decelerateDistance**: When nearing the end of the path, the agent will start to decelerate at the specified distance in meters\. 
++ **decelerateDistance**: When nearing the end of the path, the agent will start to decelerate at the specified distance in meters\.
 
   Default value: 10\.0
 + **maxStartDistanceAlongNonLoopingPath**: When linking up with a non\-looping path, this is the maximum distance in meters that the node is allowed to scan ahead to find the closest point to the path where to start at\. This can be useful, for example, to prevent the agent from snapping to the path at a position that is seemingly closer but is actually behind a wall after a U\-turn\.
@@ -76,10 +76,10 @@ Upon arrival, the `ArrivedCloseToPathEnd` and `ArrivedAtPathEnd` events are emit
 + **loopAlongPath**: 1 if the agent should follow the path in an endless loop; 0 if not\.
 
   Default value: 0
-+ **startPathFromClosestLocation**: 1 if the agent should start following the path at its closest position; 0 if it should start following it from the very first path waypoint\. 
++ **startPathFromClosestLocation**: 1 if the agent should start following the path at its closest position; 0 if it should start following it from the very first path waypoint\.
 
   Default value: 0
-+ **pathEndDistance**: The distance towards the end of the path at which the node should start sending some arrival notification events\. 
++ **pathEndDistance**: The distance towards the end of the path at which the node should start sending some arrival notification events\.
 
   Default value: 1\.0
 + **goToRefPoint**: 1 if the current reference point should be appended to the end of the path; 0 if not\.
@@ -96,16 +96,16 @@ Upon arrival, the `ArrivedCloseToPathEnd` and `ArrivedAtPathEnd` events are emit
 <Fly lookaheadDistance="25.0" pathRadius="10.0" decelerateDistance="20.0" pathEndDistance="1" desiredSpeed="15" maxStartDistanceAlongNonLoopingPath="30" loopAlongPath="0" goToRefPoint="1" startPathFromClosestLocation="1" />
 ```
 
- 
 
 
-**Outputs**  
 
-| When | Lua variable | Overridden XML tag | 
-| --- | --- | --- | 
-| Node activation | Helicopter\_Loop | loopAlongPath | 
-| Node activation | Helicopter\_StartFromClosestLocation | startPathFromClosestLocation | 
-| Each node tick | Helicopter\_Speed | desiredSpeed | 
+**Outputs**
+
+| When | Lua variable | Overridden XML tag |
+| --- | --- | --- |
+| Node activation | Helicopter\_Loop | loopAlongPath |
+| Node activation | Helicopter\_StartFromClosestLocation | startPathFromClosestLocation |
+| Each node tick | Helicopter\_Speed | desiredSpeed |
 
 ## FlyForceAttentionTarget node {#ai-mbt-nodes-flyforceattentiontarget}
 
@@ -148,7 +148,7 @@ This node never finishes by itself and keeps forcing agent to rotate its body to
 Used to wait until the agent is facing its attention target\.
 
 **Parameters**
-+ **toleranceDegrees**: The maximum allowed angle between the attention target and the forward direction of the agent, in the range of 0\.0 to 180\.0 degrees\. 
++ **toleranceDegrees**: The maximum allowed angle between the attention target and the forward direction of the agent, in the range of 0\.0 to 180\.0 degrees\.
 
   Default value: 20\.0
 
@@ -173,13 +173,13 @@ Used to control the shooting of a heavy mortar\. The precondition and initializa
 + **firemode**: \(Optional\) The Heavy X\-Pak \(or Mortar\) has two different firing modes\. Possible values are Charge and BurstMortar\.
 
   Default value: Charge
-+ **timeout**: \(Optional\) Defines the maximum time in seconds that the node can try to perform the shooting\. 
++ **timeout**: \(Optional\) Defines the maximum time in seconds that the node can try to perform the shooting\.
 
   Default value: 5\.0
-+ **aimingTimeBeforeShooting**: \(Optional\) Defines the time in seconds in which the heavy mortar will aim before starting the shooting\. This amount of time must be bigger than the global timeout\. 
++ **aimingTimeBeforeShooting**: \(Optional\) Defines the time in seconds in which the heavy mortar will aim before starting the shooting\. This amount of time must be bigger than the global timeout\.
 
   Default value: 1\.0
-+ **minAllowedDistanceFromTarget**: \(Optional\) Defines the minimum distance in meters from the Target to allow the shooting\. 
++ **minAllowedDistanceFromTarget**: \(Optional\) Defines the minimum distance in meters from the Target to allow the shooting\.
 
   Default value: 10\.0
 
@@ -195,11 +195,11 @@ Used to control the shooting of a heavy mortar\. The precondition and initializa
 
 ## SquadScope node {#ai-mbt-nodes-squadscope}
 
-Used to enter a squad scope, which is limited by the specified number of concurrent users\. If the node succeeds to do that, then the child node is executed\. 
+Used to enter a squad scope, which is limited by the specified number of concurrent users\. If the node succeeds to do that, then the child node is executed\.
 
 **Parameters**
 + **name**: The name of the squad scope to enter\.
-+ **allowedConcurrentUsers**: \(Optional\) Number of allowed concurrent users in the specified scope\. 
++ **allowedConcurrentUsers**: \(Optional\) Number of allowed concurrent users in the specified scope\.
 
   Default value: 1
 
@@ -243,7 +243,7 @@ Used to check if a squad contains a specific number of members and if so execute
 
 **Behavior**
 + **Success**: If the number of members in the squad satisfies the specified comparison\.
-+ **Failure**: the number of members in the squad does not satisfy the specified comparison\. 
++ **Failure**: the number of members in the squad does not satisfy the specified comparison\.
 
 **Example**
 

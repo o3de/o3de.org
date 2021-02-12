@@ -1,5 +1,5 @@
 ---
-description: ' Use arrays and key-value pair maps in &script-canvas;, &ALYlong;''s
+description: ' Use arrays and key-value pair maps in Script Canvas, Amazon Lumberyard''s
   visual scripting tool for gameplay creation. '
 title: Using Container Types (Arrays and Maps)
 ---
@@ -17,15 +17,15 @@ Arrays provide a dynamic continuous area of memory that can hold storage of a gi
    + Click **Create Variable**, and then click **Array**\.
 
    or
-   + In the **Variable Type** search box, type **Array**, and then click **Array**\.  
+   + In the **Variable Type** search box, type **Array**, and then click **Array**\.
 ![\[Creating an array variable in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-1.png)
 
-1. Enter information to create your array, and then click **Create**\.  
+1. Enter information to create your array, and then click **Create**\.
 ![\[Enter information to create your array.\]](/images/shared/shared-script-canvas-containers-2.png)
    + For **Variable Name**, enter the name for your array variable\.
    + For **Container Type**, use **Array**\.
    + For **Type**, choose the data type for the array\.
-   + \(Optional\) To pin the array to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the array appears in the list as **Array<*data\_type*>**\. This is useful when you reuse the same type frequently\.  
+   + \(Optional\) To pin the array to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the array appears in the list as **Array<*data\_type*>**\. This is useful when you reuse the same type frequently\.
 ![\[Array variable pinned to the variable list in Variable Manager.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-3.png)
 
 ### Array Pin Icons {#script-canvas-containers-array-pin-icons}
@@ -60,11 +60,11 @@ All pins have an **Out** pin except **For Each**, which has an **Each** pin that
 
 The pins on container operation are context\-sensitive\. Data input and output pins automatically take on the data type of the pin to which they are connected\.
 
-**Example**  
-In the following example, the array type is `string`\.  
+**Example**
+In the following example, the array type is `string`\.
 
 ![\[Connecting a Get container node to a container operation node.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-7.png)
-When you connect the **Array<String>** pin to the **Source** pin on the **Add Element at End** node, the following changes occur automatically:  
+When you connect the **Array<String>** pin to the **Source** pin on the **Add Element at End** node, the following changes occur automatically:
 + The **Source** pin changes to the `string` type\.
 + The **Add Element at End** node box expands to include a **String** text box where you can enter a string value\.
 + The pin icon and line colors change to the color of the data type that you are using \(in the case of this example, blue\)\.
@@ -90,16 +90,16 @@ Maps are containers of key\-value pairs\. Maps in the **Variable Manager** have 
    + Click **Create Variable**, and then click **Map**\.
 
    or
-   + In the **Variable Type** search box, type **Map**, and then click **Map**\.  
+   + In the **Variable Type** search box, type **Map**, and then click **Map**\.
 ![\[Creating a map variable in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-11.png)
 
-1. Enter information to create your map, and then click **Create**\.  
+1. Enter information to create your map, and then click **Create**\.
 ![\[Enter information to create a key-value pair map.\]](/images/shared/shared-script-canvas-containers-12.png)
    + For **Variable Name**, enter the name for your map variable\.
    + For **Container Type**, use **Map**\.
    + For **Key**, choose a data type for the key\.
    + For **Value**, choose a data type for the value\.
-   + \(Optional\) To pin the map to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the map appears in the list as **Map<*key\_data\_type*,*value\_data\_type*>**\. This is useful when you reuse the same key pair combination frequently\.  
+   + \(Optional\) To pin the map to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the map appears in the list as **Map<*key\_data\_type*,*value\_data\_type*>**\. This is useful when you reuse the same key pair combination frequently\.
 ![\[A map variable pinned to the variable list in the Variable Manager.\]](/images/userguide/scripting/script-canvas/script-canvas-containers-13.png)
 
 ### Map Pin Icons {#script-canvas-containers-map-pin-icons}

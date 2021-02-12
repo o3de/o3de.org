@@ -1,5 +1,5 @@
 ---
-description: ' Add a game project to the &ALYlong; Waf build system. '
+description: ' Add a game project to the Amazon Lumberyard Waf build system. '
 title: Adding a Game Project
 ---
 # Adding a Game Project {#waf-using-game-project}
@@ -11,8 +11,8 @@ You can also add a game project with the following steps:
 + Create a game module
 + Update the user settings to include the game
 
-**Note**  
-You can build your game project by creating a game project first \(see steps below\) and then creating a spec for just the game \(no modules, just basic spec values\):  
+**Note**
+You can build your game project by creating a game project first \(see steps below\) and then creating a spec for just the game \(no modules, just basic spec values\):
 
 ```
 {
@@ -62,7 +62,7 @@ Create a file with the following:
 
 ```
 SUBFOLDERS = ['GameSource']
-               
+
 def build(bld):
 bld.recurse(SUBFOLDERS)
 ```
@@ -74,7 +74,7 @@ Create a wscript in the GameSource folder to define the build configuration for 
 ```
 def build(bld):
               bld.CryEngineModule(
-               	 
+
                	        target      = 'MyGame',
                	        vs_filter   = 'Game/MyGame',
                	        file_list   = 'MyGame.waf_files',
@@ -92,7 +92,7 @@ All game projects first need a source file\. If you intend to use pre\-compiled 
 
 ### Create a waf\_files configuration file {#game-module-waf-files-configuration-file}
 
-You use the waf\_files configuration file to include the source files into the game module\. For this example you create a file called `MyGame.waf_files` and specify it for the project\. This file includes the four files you created from the previous step\. 
+You use the waf\_files configuration file to include the source files into the game module\. For this example you create a file called `MyGame.waf_files` and specify it for the project\. This file includes the four files you created from the previous step\.
 
 Create a waf\_files configuration file called `MyGame.waf_files` with the following:
 
@@ -118,15 +118,15 @@ The final step is to update enabled\_game\_projects to include or exclusively se
   [Game Projects]
   enabled_game_projects = MyGame
   ```
-+ Update game projects with the Lumberyard Waf GUI\. 
++ Update game projects with the Lumberyard Waf GUI\.
 
-  To run the GUI, in a command line window, navigate to the `lumberyard_version\dev\` directory and enter the following command: 
+  To run the GUI, in a command line window, navigate to the `lumberyard_version\dev\` directory and enter the following command:
 
   ```
   lmbr_waf show_option_dialog
   ```
 
-  Click **Game Projects** in the Lumberyard Waf window, and select your new project\. You can select more than one project\.  
+  Click **Game Projects** in the Lumberyard Waf window, and select your new project\. You can select more than one project\.
 ![\[Use the Lumberyard WAF GUI to select your new project.\]](/images/userguide/waf/waf-using-game-project-waf-gui.png)
 + Build the project with the following command for your version of Visual Studio\. Use `--enabled-game-projects=MyGame` to override every build command\. This does not include the project in the generated solution, but it sets specific game projects to build during the build commands\.
 

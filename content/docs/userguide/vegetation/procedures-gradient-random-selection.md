@@ -1,13 +1,13 @@
 ---
 description: ' Link gradient entities to vegetation entities to create random distribution
-  in &ALYlong; dynamic vegetation. '
+  in Amazon Lumberyard dynamic vegetation. '
 title: Using Gradients to Create Random Distribution
 ---
 # Using Gradients to Create Random Distribution {#dynamic-vegetation-procedures-gradient-random-selection}
 
 You can use gradients in different areas of Lumberyard, such as with audio and AI\. Gradients are particularly helpful in dynamic vegetation, where they create a realistically random look in the distribution of your vegetation\.
 
-You can achieve the appearance of random distribution by using gradients to create both random selection and random placement\. 
+You can achieve the appearance of random distribution by using gradients to create both random selection and random placement\.
 
 Before you can complete these procedures, you must first [create a vegetation layer](/docs/userguide/vegetation/procedures-create-vegetation-layer.md)\.
 

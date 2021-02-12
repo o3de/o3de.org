@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Time node in the &ALYlong; &script-canvas; editor to set
+description: ' Use the Set Time node in the Amazon Lumberyard Script Canvas editor to set
   the time of day system''s current time value. '
 title: Set Time
 ---
@@ -16,19 +16,19 @@ Sets a time value for the time of day system\. Time values are specified as deci
 ## Inputs {#set-time-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Time | Number |  Time of day in hours\. Default value: `0` Valid values: `0.0` to `24.0`  | 
-| Force Update | Boolean |  If `true`, the entire sky updates immediately in the current frame; otherwise, the sky is rendered across several frames\. Default value: `False`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Time | Number |  Time of day in hours\. Default value: `0` Valid values: `0.0` to `24.0`  |
+| Force Update | Boolean |  If `true`, the entire sky updates immediately in the current frame; otherwise, the sky is rendered across several frames\. Default value: `False`  |
 
 ## Outputs {#set-time-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

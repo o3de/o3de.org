@@ -1,6 +1,6 @@
 ---
 description: ' Use the UILayoutFitterComponent to implement the UI layout fitter in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: UILayoutFitterComponent
 ---
 # UILayoutFitterComponent {#lua-scripting-ces-api-ui-uilayoutfittercomponent}

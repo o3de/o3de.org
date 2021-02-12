@@ -1,6 +1,6 @@
 ---
-description: ' Learn more about the &AWS; features behind the Defect Reporter cloud
-  gem in &ALYlong;. '
+description: ' Learn more about the AWS features behind the Defect Reporter cloud
+  gem in Amazon Lumberyard. '
 title: Defect Reporter Implementation Details
 ---
 # Defect Reporter Implementation Details {#cloud-canvas-cloud-gem-defect-reporter-implementation-details}
@@ -30,7 +30,7 @@ The Defect Reporter cloud gem uses two kinds of S3 buckets:
 
 A service Lambda function writes to and communicates with the Amazon S3 attachment bucket\. The Lambda function generates presigned POST URLs so that players can report defects without requiring AWS credentials or direct permission to write to the S3 attachment bucket\.
 
-A sanitization Lambda function processes attachments to validate them as non\-malicious\. 
+A sanitization Lambda function processes attachments to validate them as non\-malicious\.
 
 For the source code, see the `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\AWS\lambda-code\SanitizationLambda\sanitization_lambda.py` file\.
 
@@ -48,7 +48,7 @@ Returns the service's status\. Useful for testing connectivity\.
 
 ### /service/upload POST {#cloud-canvas-cloud-gem-defect-reporter-implementation-details-serviceupload-post}
 
-Requests the number of encrypted presigned posts and the number of unencrypted presigned posts\. 
+Requests the number of encrypted presigned posts and the number of unencrypted presigned posts\.
 
 You can configure the maximum number of presigned posts that can be requested in the `lumberyard_version\dev\Gems\CloudGemDefectReporter\vN\AWS\common-code\Constant\defect_reporter_constants.py` file\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Sun Latitude node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Sun Latitude node in the Amazon Lumberyard Script Canvas editor
   to return the sun latitude. '
 title: Get Sun Latitude
 ---
@@ -16,18 +16,18 @@ Returns the sun's latitude in the sky\.
 ## Inputs {#get-sun-latitude-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#get-sun-latitude-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Latitude | Number | Current sun latitude\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Latitude | Number | Current sun latitude\. |

@@ -1,6 +1,6 @@
 ---
 description: ' Use the UiTransformBus to control positioning, scaling, rotation, anchor,
-  and offset settings for UI elements in &ALYlong;. '
+  and offset settings for UI elements in Amazon Lumberyard. '
 title: UITransform2dComponent
 ---
 # UITransform2dComponent {#lua-scripting-ces-api-ui-uitransform2dcomponent}
@@ -274,12 +274,12 @@ void SetAnchors(UiAnchors anchors, bool adjustOffsets, bool allowPush)
 For possible values for `UiAnchors`, see [GetAnchors](#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-getanchors)\.
 
 
-****  
+****
 
-| **Parameter** | **Description** | 
-| --- | --- | 
-| adjustOffsets | If true, the offsets are adjusted to keep the rectangle in the same position\. | 
-| allowPush | Only takes effect if the anchors are invalid\. If true, when an anchor is changed to overlap the anchor opposite it, the opposite anchor moves\. | 
+| **Parameter** | **Description** |
+| --- | --- |
+| adjustOffsets | If true, the offsets are adjusted to keep the rectangle in the same position\. |
+| allowPush | Only takes effect if the anchors are invalid\. If true, when an anchor is changed to overlap the anchor opposite it, the opposite anchor moves\. |
 
 ### SetOffsets {#lua-scripting-ces-api-ui-uitransform2dcomponent-uitransform2dbus-setoffsets}
 

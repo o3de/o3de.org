@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the user interface for motion sets in the &animation-editor;
+description: ' Learn more about the user interface for motion sets in the Animation Editor
   . '
 title: Motion Sets Interface
 ---

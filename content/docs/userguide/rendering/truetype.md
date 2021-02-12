@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about TrueType fonts in &ALYlong;. '
+description: ' Learn more about TrueType fonts in Amazon Lumberyard. '
 title: TrueType Fonts
 ---
 # TrueType Fonts {#graphics-rendering-truetype}
@@ -11,7 +11,7 @@ The output is not only to test the functionality but also to document how the fe
 ## Supported Features {#graphics-rendering-truetype-supported-features}
 
 CryFont supports the following features:
-+  Font shaders - Used to configure the appearance of fonts\. Multiple passes with configurable offset and color are supported to enable generation of shadows or outlines\. A sample font shader is shown in the following XML example\. 
++  Font shaders - Used to configure the appearance of fonts\. Multiple passes with configurable offset and color are supported to enable generation of shadows or outlines\. A sample font shader is shown in the following XML example\.
 
   ```
   <fontshader>
@@ -38,9 +38,9 @@ CryFont supports the following features:
 + Adjustable transparency
 + Color variations within a string - Use a value of **$0\.\.9** to set one of the 10 available colors\. Use **$$** to print the $ symbol, and **$o** to switch off the feature\.
 + Returns and tabs within a string
-+ Text alignment 
++ Text alignment
 + Computation of a string's width and height - Used internally to handle center and right alignment\.
-+ Font size variations - Bilinear filtering allows some blurring, but no mipmaps are used so this feature has limitations in minification\. 
++ Font size variations - Bilinear filtering allows some blurring, but no mipmaps are used so this feature has limitations in minification\.
 + Proportional and monospace fonts
 + Pixel\-perfect rendering with exact texel\-to\-pixel mapping for best quality\.
 
@@ -48,13 +48,13 @@ CryFont supports the following features:
 
 The following console commands provide information about font rendering\. For more information, see [Configuring Console Variables](/docs/userguide/console-intro#configuring-console-variables-cvars)\.
 
-**r\_DebugFontRendering**  
-Provides information on various font rendering features, useful for verifying function and documenting usage\.   
+**r\_DebugFontRendering**
+Provides information on various font rendering features, useful for verifying function and documenting usage\.
 + 0=off
 + 1=display
 
-**r\_DumpFontNames**  
+**r\_DumpFontNames**
 Logs a list of fonts currently loaded\.
 
-**r\_DumpFontTexture**  
+**r\_DumpFontTexture**
 Dumps the texture of a specified font to a bitmap file\. You can use `r_DumpFontTexture` to get the loaded font names\.

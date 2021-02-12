@@ -1,6 +1,6 @@
 ---
 description: ' Use virtual file system on non-PC platforms in order to live reload
-  assets in &ALYlong;.s '
+  assets in Amazon Lumberyard.s '
 title: Live Reloading and VFS
 ---
 # Live Reloading and VFS {#asset-pipeline-live-reloading}
@@ -21,6 +21,6 @@ The game runtimes and all tools can communicate with the Asset Processor through
 Not all asset types can live reload\. If you are developing new asset types, keep the following guidelines in mind:
 + When an asset loads, be prepared to substitute it for a temporary asset while it is compiling\.
 + If an asset is missing, query the status of the asset from the Asset Processor\. This can determine whether the asset really is missing or whether it is in the queue for processing\. Querying also moves the asset to the front of the queue for processing\.
-+ If your asset is essential and it cannot live reload, use the blocking synchronous asset build request to make it build immediately\. This moves the asset to the front of the queue and prevents the call from returning until the asset is compiled\. 
++ If your asset is essential and it cannot live reload, use the blocking synchronous asset build request to make it build immediately\. This moves the asset to the front of the queue and prevents the call from returning until the asset is compiled\.
 + Do not discard the original requested name when an asset is missing\.
 + Connect to the notification bus to learn when assets change and reload them when that happens\.

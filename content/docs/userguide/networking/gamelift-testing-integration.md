@@ -1,7 +1,7 @@
 ---
-description: ' Learn how to use &AGS; Local to test your &AGS; integration in your
-  &ALYlong; game projects. '
-title: Testing your &AGSlong; Integration
+description: ' Learn how to use AGS Local to test your AGS integration in your
+  Amazon Lumberyard game projects. '
+title: Testing your Amazon Games Services Integration
 ---
 # Testing your Amazon GameLift Integration {#network-gamelift-testing-integration}
 
@@ -18,7 +18,7 @@ The following example demonstrates how to test **MultiPlayerSample** on Windows\
    ```
    java -jar GameLiftLocal.jar -p 9080
    ```
-**Important**  
+**Important**
 Use the same port in the `gamelift_endpoint` cvar for the game client launcher\.
 
    When GameLift Local starts, you see logs indicating that two local websockets were started, one listening for your game server and one listening for your game client or the AWS CLI\. Logs continue to report activity on the two local servers, including communication to and from your game components\.
@@ -32,7 +32,7 @@ Use the same port in the `gamelift_endpoint` cvar for the game client launcher\.
    ```
 
    In the GameLift Local console, log messages indicate that your game server has connected to the GameLift Local service, initialized the GameLift Server SDK with `InitSDK()`, and called `ProcessReady()`\. If successful, you are now ready to host a game session\.
-**Tip**  
+**Tip**
 For details on these and other calls, see [GameLift interactions](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-sdk-interactions.html)\.
 
 1. **Start the MultiPlayerSample client\.**
@@ -42,5 +42,5 @@ For details on these and other calls, see [GameLift interactions](https://docs.a
    ```
    MultiplayerSampleLauncher.exe +sv_port 33435 +gamelift_fleet_id fleet-123 +gamelift_uselocalserver 1 +gamelift_endpoint 127.0.0.1:9080 +gamelift_aws_access_key any_string +gamelift_aws_secret_key any_string +gamelift_region us-west-2
    ```
-**Note**  
+**Note**
 Note that the `gamelift_uselocalserver` cvar is set to `1` to indicate the use of a local server, and the `gamelift_endpoint` cvar is set to the local endpoint with the same port used to start GameLift Local\. You do not need real AWS credentials when testing local; you can set the access key and secret key to any string\.

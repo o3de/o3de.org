@@ -1,6 +1,6 @@
 ---
 description: null
-title: Using the Game Metrics &cgp;
+title: Using the Game Metrics Cloud Gem Portal
 ---
 # Using the Game Metrics Cloud Gem Portal {#using-the-cloud-gem-metrics-portal}
 
@@ -10,7 +10,7 @@ After you send test events with the Metrics Sample level or the command line, yo
 
 1. In Lumberyard Editor, choose **AWS**, **Open Cloud Gem Portal**\.
 
-1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **Game Metrics**\.  
+1. In the **Cloud Gem Portal**, on the **Cloud Gems** page, choose **Game Metrics**\.
 ![\[Choose Game Metrics in the Cloud Gem Portal.\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem.png)
 
 1. Choose the game metric data that you want to view\. Metrics are automatically updated every five minutes\. You can view the following:
@@ -21,24 +21,24 @@ The **Overview** page shows information about your game events\.
 
 You can view the following metrics:
 
-**Incoming Game Events**  
-Number of game events that Amazon API Gateway receives from all the connected players\.   
+**Incoming Game Events**
+Number of game events that Amazon API Gateway receives from all the connected players\.
 
 ![\[Choose Game Events\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-2.png)
 
-**Event Bandwidth Consumed**  
-Events represented as bytes that Amazon API Gateway receives from the connected players\.  
+**Event Bandwidth Consumed**
+Events represented as bytes that Amazon API Gateway receives from the connected players\.
 
 ![\[Choose Event Bandwidth Consumed\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-3.png)
 
-**Event Duplication Error Rate**  
- Level of event duplication that occurs in the database\. This chart shows the Amazon Athena query to examine the data for any duplicates\. Typically, all events should be unique; there shouldn't be event duplicates\.  
+**Event Duplication Error Rate**
+ Level of event duplication that occurs in the database\. This chart shows the Amazon Athena query to examine the data for any duplicates\. Typically, all events should be unique; there shouldn't be event duplicates\.
 When you enable the gem for the first time, you may see some duplication in the first hour; however, the amoeba single file generator will remove the duplicates as it combines data files\.
 
 ![\[Choose Event Duplication Rate\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-4.png)
 
-**Time To Save Events to S3**  
-Time required for Lambda to aggregate the events in the FIFO consumer and then send the game events to the Amazon S3 bucket\. As more players join your game, this chart will show a gradual increase in time\.  
+**Time To Save Events to S3**
+Time required for Lambda to aggregate the events in the FIFO consumer and then send the game events to the Amazon S3 bucket\. As more players join your game, this chart will show a gradual increase in time\.
 
 ![\[Choose Time to Save Events To S3\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-5.png)
 
@@ -48,13 +48,13 @@ The **SQS** page shows the current health of your SQS resources\.
 
 You can view the following metrics:
 
-**Processed SQS Messages**  
-Number of SQS messages that are currently in the FIFO queue\.  
+**Processed SQS Messages**
+Number of SQS messages that are currently in the FIFO queue\.
 
 ![\[Choose Processed SQS Messages\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-6.png)
 
-**Time To Delete SQS Messages**  
-Time required for a FIFO consumer to delete all of the SQS messages after the consumer processes the messages from the FIFO queue\. Typically, this takes a few seconds\.  
+**Time To Delete SQS Messages**
+Time required for a FIFO consumer to delete all of the SQS messages after the consumer processes the messages from the FIFO queue\. Typically, this takes a few seconds\.
 
 ![\[Choose Time to Delete SQS Messages\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-7.png)
 
@@ -64,38 +64,38 @@ The **Lambda** page shows the current health of your Lambda resources\.
 
 You can view the following metrics:
 
-**Producer Lambda Invocations**  
-Number of invokes of the Lambda FIFO producer that actively handle incoming game requests\.  
+**Producer Lambda Invocations**
+Number of invokes of the Lambda FIFO producer that actively handle incoming game requests\.
 
 ![\[Choose Producer Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-8.png)
 
-**Producer Lambda Errors**  
-Rate of errors that currently occur while the Lambda FIFO producer processes incoming game requests\.  
+**Producer Lambda Errors**
+Rate of errors that currently occur while the Lambda FIFO producer processes incoming game requests\.
 
 ![\[Choose Producer Lambda Errors\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-9.png)
 
-**Consumer Lambda Invocations**  
-Number of FIFO consumers that process messages in the SQS queue\. By default, there are three consumers invoked for each SQS FIFO queue, which is triggered every five minutes\.  
+**Consumer Lambda Invocations**
+Number of FIFO consumers that process messages in the SQS queue\. By default, there are three consumers invoked for each SQS FIFO queue, which is triggered every five minutes\.
 
 ![\[Choose Consumer Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-10.png)
 
-**Consumer Lambda Duration**  
-Average time for the FIFO consumer Lambda to process the SQS queue\.  
+**Consumer Lambda Duration**
+Average time for the FIFO consumer Lambda to process the SQS queue\.
 
 ![\[Choose Consumer Lambda Duration\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-11.png)
 
-**Consumer Lambda Errors**  
-Error rate of the FIFO consumers\. Typically, this rate should be zero unless a persistent problem exists in the pipeline\.  
+**Consumer Lambda Errors**
+Error rate of the FIFO consumers\. Typically, this rate should be zero unless a persistent problem exists in the pipeline\.
 
 ![\[Choose Consumer Lambda Duration\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-12.png)
 
-**Amoeba Lambda Invocations**  
-Number of invokes of the amoeba single file generator that occur\.  
+**Amoeba Lambda Invocations**
+Number of invokes of the amoeba single file generator that occur\.
 
 ![\[Choose Amoeba Lambda Invocations\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-13.png)
 
-**Amoeba Errors**  
-Current error rate of the amoeba single file generators\.  
+**Amoeba Errors**
+Current error rate of the amoeba single file generators\.
 
 ![\[Choose Amoeba Errors\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-14.png)
 
@@ -105,13 +105,13 @@ The **DynamoDB** page shows the current health of your DynamoDB resources\.
 
 You can view the following metrics:
 
-**Reads Consumed/Provisioned**  
-Current DynamoDB read load for the metric pipeline\.  
+**Reads Consumed/Provisioned**
+Current DynamoDB read load for the metric pipeline\.
 
 ![\[Choose Reads Consumed/Provisioned\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-15.png)
 
-**Writes Consumed/Provisioned**  
-Current DynamoDB write load for the metric pipeline\.  
+**Writes Consumed/Provisioned**
+Current DynamoDB write load for the metric pipeline\.
 
 ![\[Choose Writes Consumed/Provisioned\]](/images/userguide/cloud_canvas/cloud-canvas-game-metrics-gem-16.png)
 
@@ -126,25 +126,25 @@ Based on the partition definition, an S3 key is returned\. The ordering of the p
 See the following pre\-defined partitions:
 
 
-****  
+****
 
-| Attribute | Type | Parts | Description | 
-| --- | --- | --- | --- | 
-|  **event**  | str | None |  Defines the event identifier for the metric submitted\.  | 
-|  **srv\_tmutc**  | datetime\.datetime\.utcfromtimestamp |  \.year, \.month, \.day, \.hour  |  Defines the serve time stamp \(UTC\)\. The tmutc attribute value will be added to a datetime\.datetime\.utcfromtimestamp and the parts evaluated against the type\. 
+| Attribute | Type | Parts | Description |
+| --- | --- | --- | --- |
+|  **event**  | str | None |  Defines the event identifier for the metric submitted\.  |
+|  **srv\_tmutc**  | datetime\.datetime\.utcfromtimestamp |  \.year, \.month, \.day, \.hour  |  Defines the serve time stamp \(UTC\)\. The tmutc attribute value will be added to a datetime\.datetime\.utcfromtimestamp and the parts evaluated against the type\.
 
-**Example**  
-Input:  
-tmutc: "2017\-10\-03T12:43:12\.111Z"  
-Output:  
-S3 Key: 2017/10/03/12  | 
-| source | str | None |  Defines the source of the data\. Typically, this is defined as `cloudgemmetric`\. However this can be other sources such as another cloud gem\.  | 
-|  **bldid**  | str | None |  Defines the build identifier for the metric submitted\.  | 
-|  **sensitivity**  | map | None |  Defines the encryption type for the metric\. This metric is taken from the parameter map that you specify\. Metrics without sensitivity do not have encryption\. Sensitive metrics use Amazon S3 native AES256 encryption\.  | 
-|  **schema\_hash**  | map | None |  Defines the schema to organize different schema types within one given metric type\.  | 
+**Example**
+Input:
+tmutc: "2017\-10\-03T12:43:12\.111Z"
+Output:
+S3 Key: 2017/10/03/12  |
+| source | str | None |  Defines the source of the data\. Typically, this is defined as `cloudgemmetric`\. However this can be other sources such as another cloud gem\.  |
+|  **bldid**  | str | None |  Defines the build identifier for the metric submitted\.  |
+|  **sensitivity**  | map | None |  Defines the encryption type for the metric\. This metric is taken from the parameter map that you specify\. Metrics without sensitivity do not have encryption\. Sensitive metrics use Amazon S3 native AES256 encryption\.  |
+|  **schema\_hash**  | map | None |  Defines the schema to organize different schema types within one given metric type\.  |
 
-**Example Input**  
-Partition definitions  
+**Example Input**
+Partition definitions
 
 ```
 [
@@ -153,19 +153,19 @@ Partition definitions
     {key:"event",type:"str",parts:[]},
 ]
 ```
-Request parameters  
+Request parameters
 
 ```
 ?sensitivity=Sensitive&compression=NoCompression
 ```
-Request payload  
+Request payload
 
 ```
-source         bldid   event        move loc msgid                                 pltf      seqno      tmutc        tzh tzm tzs uid 
+source         bldid   event        move loc msgid                                 pltf      seqno      tmutc        tzh tzm tzs uid
 cloudgemmetric 1.0.11  sessionStart D2   en  d7649fa5a9ff11e79a3b6480998557f4      win64      1         1.52451e+09   3   0  -   d7649fa1a9ff11e7914c6480998557f4
 ```
 
-**Example Output**  
+**Example Output**
 
 ```
 S3 key → p_event_name=sessionStart/p_server_timestamp_strftime=20180423190000/p_server_timestamp_year=2018/p_server_timestamp_month=4
@@ -198,33 +198,33 @@ On the **Filtering** page, you can create filters to specify which data you no l
 Event filtering supports two different types:
 
 
-****  
+****
 
-| Type | Description | 
-| --- | --- | 
-| All |  If an attribute is defined, then all *attribute\_name* on *event\_name* are filtered\. If an attribute isn't defined, then all *event\_name* are filtered\.  | 
-| Attribute |  If selected, an attribute array is required\. All *event\_name* with *attribute\_name* are filtered\.  | 
+| Type | Description |
+| --- | --- |
+| All |  If an attribute is defined, then all *attribute\_name* on *event\_name* are filtered\. If an attribute isn't defined, then all *event\_name* are filtered\.  |
+| Attribute |  If selected, an attribute array is required\. All *event\_name* with *attribute\_name* are filtered\.  |
 
-**Example 1**  
+**Example 1**
 
 ```
 [{ 'event': 'sessionStart', 'attributes': [], 'type': 'all' }]
 ```
 If **Event Name** is `sessionStart` and **Type** is **All**, then all `sessionStart` events are filtered\.
 
-**Example 2**  
+**Example 2**
 
 ```
 [{ 'event': 'sessionStart', 'attributes': ['move'], 'type': 'attribute' }]
 ```
-If **Event name** is `sessionStart`, **Type** is **Attribute**, and **Attributes** is `move`, only attributes called `move` on the `sessionStart` event are filtered\. 
+If **Event name** is `sessionStart`, **Type** is **Attribute**, and **Attributes** is `move`, only attributes called `move` on the `sessionStart` event are filtered\.
 
-**Example 3**  
+**Example 3**
 
 ```
 [{ 'event': 'sessionStart', 'attributes': ['move'], 'type': 'all' }]
 ```
-If **Event name** is `sessionStart`, **Type** is **All**, and **Attributes** is `move`, all events with the attributes called `move` are filtered\. 
+If **Event name** is `sessionStart`, **Type** is **All**, and **Attributes** is `move`, all events with the attributes called `move` are filtered\.
 
 **To create a filter**
 
@@ -261,43 +261,43 @@ On the **Settings** page, you can specify the parameters for the metric pipeline
 You can specify the following parameters for game clients\.
 
 
-**Game Client Parameters**  
+**Game Client Parameters**
 
-| Name | Description | Type | Valid Values | 
-| --- | --- | --- | --- | 
-| Flush To Local File |  Size, in bytes, of the memory buffer before sending the metrics in the memory buffer to a local file\.  | Integer |  `128` to `1048576` Default value: `204800`  | 
-|  **Flush To Local File**  |  Period of time, in seconds, before sending the metrics in the memory buffer to a local file\.  | Integer | 5 to 600Default value: `60` | 
-| Max Local File Size |  Maximum local file size, in MB, before all metrics are dropped\.  | Integer | 2 to 20Default value: `5` | 
-| Flush To AWS |  Period of time, in seconds, before flushing the local file to AWS\.  | Integer | 150 to 1800Default value: `300` | 
-| Max Payload Size |  Maximum size, in MB, of the payload that can be sent to AWS\.   | Integer | 2 to 9Default value: `5` | 
-|  **Prioritization Threshold**  |  Percentage threshold of the maximum file size in MB in which events are prioritized\. Events with lower priority are dropped as local disk space runs out\.  | Integer | 20 to 100Default value: `60` | 
+| Name | Description | Type | Valid Values |
+| --- | --- | --- | --- |
+| Flush To Local File |  Size, in bytes, of the memory buffer before sending the metrics in the memory buffer to a local file\.  | Integer |  `128` to `1048576` Default value: `204800`  |
+|  **Flush To Local File**  |  Period of time, in seconds, before sending the metrics in the memory buffer to a local file\.  | Integer | 5 to 600Default value: `60` |
+| Max Local File Size |  Maximum local file size, in MB, before all metrics are dropped\.  | Integer | 2 to 20Default value: `5` |
+| Flush To AWS |  Period of time, in seconds, before flushing the local file to AWS\.  | Integer | 150 to 1800Default value: `300` |
+| Max Payload Size |  Maximum size, in MB, of the payload that can be sent to AWS\.   | Integer | 2 to 9Default value: `5` |
+|  **Prioritization Threshold**  |  Percentage threshold of the maximum file size in MB in which events are prioritized\. Events with lower priority are dropped as local disk space runs out\.  | Integer | 20 to 100Default value: `60` |
 
 You can specify the following for AWS\.
 
 
-**AWS Backend Parameters**  
+**AWS Backend Parameters**
 
-| Name | Description | Type | Valid Values: | 
-| --- | --- | --- | --- | 
-| Growth Rate Trigger Percent |  SQS message growth rate threshold for when a new consumer is created\.  | Float |  `0` to `100` Default value: `0.05`  | 
-| CSV Parquet Compression Ratio |  Estimated compression ratio from CSV to parquet format\. This ratio is used for estimation purposes\.  | Integer | 1 to 50Default value: `13` | 
-| Backoff Max Seconds |  SQS queue message size threshold before a new consumer spawns automatically to help process the higher volume\.  | Integer |  `1` to `15` Default value: `5`  | 
-| Target Amoeba aggregation file size |  Target aggregation file size in MB\. The amoeba file generator attempts to generate S3 parquet files at this size\. The ideal file size is 128 MB\.  | Integer |  `1` to `256` Default value: `128`  | 
-| Number Of Initial Consumers |  Number of initial SQS consumers to trigger during each scheduled execution date\. The consumer Lambda self\-replicates when one of the following conditions are met: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/using-the-cloud-gem-metrics-portal.html)  | Integer | 1 to 10Default value: `3` | 
-| Backoff Base Seconds |  Initial backoff period, in seconds, for failed AWS requests\.  | Integer | 1 to 15Default value: `5` | 
-| Max In\-flight Messages |  Maximum allowable in\-flight messages \(number of messages being processed\) for any given SQS queue\. If a queue reaches this threshold, messages are not processed until the in\-flight number drops below the threshold\.  | Integer | 1000 to 15000Default value: `12000` | 
-| Frequency To Check SQS State |  Frequency in which to check the SQS state\. This requires querying the SQS service\.  The **Frequency To Check Spawning Threshold** parameter should be a multiple of this parameter\.  | Integer | 1 to 45Default value: `5` | 
-| Threshold Before Spawning New Consumer Lambda |  SQS queue size threshold before a new consumer is spawned automatically\.  | Integer |  `1000` to `15000` Default value: `3000`  | 
-| Frequency To Check Spawning Threshold |  Frequency in which to check the threshold for spawning a new consumer Lambda function\.  | Integer |  `1` to `30` Default value: `5`  | 
-| Backoff Max Trys |  Maximum number of attempts for failed AWS requests\.  | Integer | 1 to 15Default value: `5` | 
-| Max Message Retry |  Maximum number of attempts before a message logs as an error\. Messages that are processed multiple times are considered errors\.  | Integer | 1 to 15Default value: `10` | 
-| CSV Separator |  Separator that encodes the client CSV and decodes the SQS message payload\.  | String | ; | 
-| FIFO Limit Before New Queue |  Threshold for when a new SQS queue is generated\. The threshold is based on in\-flight messages\. SQS FIFO queues are limited to 20,000 in\-flight messages\.  | Integer |  `1000` to `15000` Default value: `3000`  | 
-| Memory Trigger |  Memory threshold, in percentage, for when to save to S3\.  | Integer |  `1` to `90` Default value: `75`  | 
-| Amoeba Memory Trigger |  Memory threshold, in percentage, when the amoeba single file generator should save to S3\.  | Integer |  `1` to `70` Default value: `60`  | 
-| Max Lambda Execution Time |  Maximum Lambda function execution time\. This is used as an internal timer to determine the processing windows for each step of the process: parsing SQS messages, saving to S3, and deleting messages\.  | Integer |  `1` to `275` Default value: `275`  | 
-| Aggregation Period |  Target aggregation window size\. This is the default aggregation window size\. This feature can be overridden based on contextual information that the telemetry data provides\.  | Integer |  `1` to `275` Default value: `220`  | 
-| Save Longitude/Latitude |  Saves longitude and latitude coordinates\.   **Longitude/Latitude** may be considered personally identifiable information in some countries\. This setting will be supported in a future release\. By default, this parameter is disabled\.   | Boolean | True - FalseDefault value: `False` | 
+| Name | Description | Type | Valid Values: |
+| --- | --- | --- | --- |
+| Growth Rate Trigger Percent |  SQS message growth rate threshold for when a new consumer is created\.  | Float |  `0` to `100` Default value: `0.05`  |
+| CSV Parquet Compression Ratio |  Estimated compression ratio from CSV to parquet format\. This ratio is used for estimation purposes\.  | Integer | 1 to 50Default value: `13` |
+| Backoff Max Seconds |  SQS queue message size threshold before a new consumer spawns automatically to help process the higher volume\.  | Integer |  `1` to `15` Default value: `5`  |
+| Target Amoeba aggregation file size |  Target aggregation file size in MB\. The amoeba file generator attempts to generate S3 parquet files at this size\. The ideal file size is 128 MB\.  | Integer |  `1` to `256` Default value: `128`  |
+| Number Of Initial Consumers |  Number of initial SQS consumers to trigger during each scheduled execution date\. The consumer Lambda self\-replicates when one of the following conditions are met: [\[See the AWS documentation website for more details\]](/docs/userguide/using-the-cloud-gem-metrics-portal)  | Integer | 1 to 10Default value: `3` |
+| Backoff Base Seconds |  Initial backoff period, in seconds, for failed AWS requests\.  | Integer | 1 to 15Default value: `5` |
+| Max In\-flight Messages |  Maximum allowable in\-flight messages \(number of messages being processed\) for any given SQS queue\. If a queue reaches this threshold, messages are not processed until the in\-flight number drops below the threshold\.  | Integer | 1000 to 15000Default value: `12000` |
+| Frequency To Check SQS State |  Frequency in which to check the SQS state\. This requires querying the SQS service\.  The **Frequency To Check Spawning Threshold** parameter should be a multiple of this parameter\.  | Integer | 1 to 45Default value: `5` |
+| Threshold Before Spawning New Consumer Lambda |  SQS queue size threshold before a new consumer is spawned automatically\.  | Integer |  `1000` to `15000` Default value: `3000`  |
+| Frequency To Check Spawning Threshold |  Frequency in which to check the threshold for spawning a new consumer Lambda function\.  | Integer |  `1` to `30` Default value: `5`  |
+| Backoff Max Trys |  Maximum number of attempts for failed AWS requests\.  | Integer | 1 to 15Default value: `5` |
+| Max Message Retry |  Maximum number of attempts before a message logs as an error\. Messages that are processed multiple times are considered errors\.  | Integer | 1 to 15Default value: `10` |
+| CSV Separator |  Separator that encodes the client CSV and decodes the SQS message payload\.  | String | ; |
+| FIFO Limit Before New Queue |  Threshold for when a new SQS queue is generated\. The threshold is based on in\-flight messages\. SQS FIFO queues are limited to 20,000 in\-flight messages\.  | Integer |  `1000` to `15000` Default value: `3000`  |
+| Memory Trigger |  Memory threshold, in percentage, for when to save to S3\.  | Integer |  `1` to `90` Default value: `75`  |
+| Amoeba Memory Trigger |  Memory threshold, in percentage, when the amoeba single file generator should save to S3\.  | Integer |  `1` to `70` Default value: `60`  |
+| Max Lambda Execution Time |  Maximum Lambda function execution time\. This is used as an internal timer to determine the processing windows for each step of the process: parsing SQS messages, saving to S3, and deleting messages\.  | Integer |  `1` to `275` Default value: `275`  |
+| Aggregation Period |  Target aggregation window size\. This is the default aggregation window size\. This feature can be overridden based on contextual information that the telemetry data provides\.  | Integer |  `1` to `275` Default value: `220`  |
+| Save Longitude/Latitude |  Saves longitude and latitude coordinates\.   **Longitude/Latitude** may be considered personally identifiable information in some countries\. This setting will be supported in a future release\. By default, this parameter is disabled\.   | Boolean | True - FalseDefault value: `False` |
 
 On the **Settings** page, you can do the following\.
 

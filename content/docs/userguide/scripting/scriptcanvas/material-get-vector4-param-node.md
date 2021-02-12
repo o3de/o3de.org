@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Param Vector4 node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Param Vector4 node in the Amazon Lumberyard Script Canvas editor
   to return a material parameter as a Vector4 value. '
 title: Get Param Vector4
 ---
@@ -16,20 +16,20 @@ Returns a material parameter as a **Vector4** value\.
 ## Inputs {#script-canvas-material-get-vector4-param-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material |  The material to query\.  | 
-| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material |  The material to query\.  |
+| Param Name | String |  The name of the material parameter to return\. For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  |
 
 ## Outputs {#script-canvas-material-get-vector4-param-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Vector4 | Vector4 | The queried value\. If the parameter is not found, the value is \(0, 0, 0, 0\)\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Vector4 | Vector4 | The queried value\. If the parameter is not found, the value is \(0, 0, 0, 0\)\. |

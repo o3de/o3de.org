@@ -1,6 +1,6 @@
 ---
 description: ' Learn about ways to help avoid losing data when serializing component
-  data in &ALYlong;. '
+  data in Amazon Lumberyard. '
 title: Avoiding Data Loss when Serializing Component Data
 ---
 # Avoiding Data Loss when Serializing Component Data {#best-practices-for-component-data-serialization}
@@ -11,7 +11,7 @@ There are ways that you can avoid data loss when serializing component data\. Th
 
 This section provides specific information and best practices for avoiding data loss in versions of Lumberyard up through and including v1\.22\. First, it describes what you need to keep in mind when using version converters, and how to help avoid subsequent data loss in your slice data patches\. Then, it provides a two\-step process for avoiding data loss and maintaining stability\.
 
-**Note**  
+**Note**
 In Lumberyard v1\.23, the issues described in the following topics were addressed with the introduction of the new slice file format and the NameChange and TypeChange class builders\. For more information about these class builders and how to upgrade your slice file format, see [Versioning your Component Serialization](/docs/userguide/components/entity-system-versioning.md)\.
 
 **Topics**
@@ -22,7 +22,7 @@ In Lumberyard v1\.23, the issues described in the following topics were addresse
 
 During development, components undergo significant changes\. Member variables are added, removed, renamed, and changed\. Consequentially, serialization of the component also changes\. When any change affects serialization, a version converter function can modify older data so that it can continue working with the new object state\.
 
-**Note**  
+**Note**
 Version converter functions work only when an entire class is supplied\.
 
 However, there are some scenarios where an entire class is not available\. For example, consider data patches in slice files, which represent the difference between two serializable objects\. These patches can be as small as a single serialized value or include entire classes\. In the cases where they don't have a full class worth of information, the information in a data patch cannot be run through a version converter function\. This means that when serialization of a component changes, any data patches stored in nested slices that apply to those components are no longer valid and cannot be recovered\.
@@ -68,7 +68,7 @@ public:
                 ->Field("BlendState", &BlendComponent::m_blendState);
         }
     }
- 
+
     ///// ONLY WORKS WITH A CLASS ELEMENT REPRESENTING THE ENTIRE BLEND COMPONENT TYPE /////
     bool VersionUpgrader(SerializeContext& context, DataElementNode& classElement)
     {
@@ -85,8 +85,8 @@ public:
                     classElement.AddElementWithData(context, "BlendState", newBlendValue);
                 }
             }
-             
-             
+
+
         }
     }
 private:
@@ -120,13 +120,13 @@ The following example shows the sequence of events that can cause the data loss 
 
 We recommend the following three\-step process to help avoid data loss and stability issues in Lumberyard v1\.22 and earlier:
 
-1. Do not change existing serialization fields\. If a change is required, add a new field\. This prevents earlier data patches from potentially causing crashes and lets you continue loading old assets\. When implementing a version converter, do not remove the old field\. Just read the old field and add a new one\. 
+1. Do not change existing serialization fields\. If a change is required, add a new field\. This prevents earlier data patches from potentially causing crashes and lets you continue loading old assets\. When implementing a version converter, do not remove the old field\. Just read the old field and add a new one\.
 
 1. In your component's Init function, perform the conversion again on the old data\. If the result differs from the data in the new field, it must have come from a data patch, and you can replace it\.
 
 1. Propagate all changes made to the value in the new field over to the old field\. This prevents the Init function from overwriting any future changes made to the new field's value when loading\.
 
-**Note**  
+**Note**
 If it is not possible to keep the two values in sync in step 3, then the only way to prevent further issues after following steps 1 and 2 is to load and resave all slices which contain the versioned component, and then remove the Init function and the old field\.
 
 The following example demonstrates these steps for preventing data loss by revising the earlier example of version 2 of the **BlendComponent **\.
@@ -148,8 +148,8 @@ public:
                 ->Field("NewBlendState", &BlendComponent::m_floatBlendState);
         }
     }
- 
- 
+
+
     void Init() override
     {
         ///// MIGRATE DATA PATCHES TO NEW DATA HERE /////
@@ -159,7 +159,7 @@ public:
             m_floatBlendState = newBlendState;
         }
     }
- 
+
     bool VersionUpgrader(SerializeContext& context, DataElementNode& classElement)
     {
         if(version < 2)

@@ -1,5 +1,5 @@
 ---
-description: ' Validate &script-canvas; node slots with node contracts in &ALYlong;. '
+description: ' Validate Script Canvas node slots with node contracts in Amazon Lumberyard. '
 title: Node Contracts
 ---
 # Node Contracts {#script-canvas-custom-nodes-node-contracts}

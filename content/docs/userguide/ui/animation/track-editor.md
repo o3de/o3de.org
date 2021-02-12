@@ -1,6 +1,6 @@
 ---
 description: ' Use the Animation Editor''s Track Editor to preview an animation, change
-  the timeline, and work with keys in &ALYlong;. '
+  the timeline, and work with keys in Amazon Lumberyard. '
 title: Using the Track Editor
 ---
 # Using the Track Editor {#ui-animation-track-editor}
@@ -55,21 +55,21 @@ Some of the toolbar functions require you to select multiple keys\.
 **To select multiple keys**
 + In the **Track Editor**, drag to select multiple keys\. The selected keys appear as white circles\.
 
-You can also use the Track Editor toolbar to select, move, and snap keys\. When moving keys, you can choose to snap them to other keys, to frames, or to second ticks\. 
+You can also use the Track Editor toolbar to select, move, and snap keys\. When moving keys, you can choose to snap them to other keys, to frames, or to second ticks\.
 
 
-**Working with Keys in the Track Editor Toolbar**  
+**Working with Keys in the Track Editor Toolbar**
 
-| Toolbar icon | Function | 
-| --- | --- | 
-| Go to previous key | Selects the key directly before the currently selected key\. | 
-| Go to next key | Selects the key directly after the currently selected key\. | 
-| Slide keys | Moves the currently selected key and slides all the keys after it to the new point on the timeline while maintaining the original spacing\. | 
-| Move keys | Moves the currently selected key\(s\) to the new point on the timeline without affecting other keys\. | 
-| Scale keys |  Functions only with multiple keys selected to increase or decrease the space between the selected keys proportionally\.  | 
-| Magnet Snapping | Snaps to keys in other tracks as you get close to them; allows you to place the key anywhere but indicates a red circle on the key you want to snap to\. | 
-| Frame Snapping | Snaps to frames\. | 
-| Tick Snapping | Snaps to second ticks\. | 
+| Toolbar icon | Function |
+| --- | --- |
+| Go to previous key | Selects the key directly before the currently selected key\. |
+| Go to next key | Selects the key directly after the currently selected key\. |
+| Slide keys | Moves the currently selected key and slides all the keys after it to the new point on the timeline while maintaining the original spacing\. |
+| Move keys | Moves the currently selected key\(s\) to the new point on the timeline without affecting other keys\. |
+| Scale keys |  Functions only with multiple keys selected to increase or decrease the space between the selected keys proportionally\.  |
+| Magnet Snapping | Snaps to keys in other tracks as you get close to them; allows you to place the key anywhere but indicates a red circle on the key you want to snap to\. |
+| Frame Snapping | Snaps to frames\. |
+| Tick Snapping | Snaps to second ticks\. |
 
 ## Moving the Play or Record Point in the Track Editor {#ui-animation-track-editor-play-record}
 
@@ -90,6 +90,6 @@ The **Track Editor** features a timeline along its top edge\. To preview your en
 
 1. Click the **Play** button to preview your animation in the time frame specified\.
 
-**Note**  
-When you preview an animation or move the playback position on the timeline, it moves the UI elements in the **UI Editor**\. This means that, if you then save the canvas, these UI elements will be saved in this position\.   
+**Note**
+When you preview an animation or move the playback position on the timeline, it moves the UI elements in the **UI Editor**\. This means that, if you then save the canvas, these UI elements will be saved in this position\.
 Reposition the timeline or preview a different sequence to position the UI elements at the positions in which you want them to load before you save the canvas\.

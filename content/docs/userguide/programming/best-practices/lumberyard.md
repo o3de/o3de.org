@@ -1,6 +1,6 @@
 ---
-description: ' Learn best practices for using the C++ programming language in &ALYlong;. '
-title: C++ Best Practices for &ALYlong;
+description: ' Learn best practices for using the C++ programming language in Amazon Lumberyard. '
+title: C++ Best Practices for Amazon Lumberyard
 ---
 # C\+\+ Best Practices for Amazon Lumberyard {#cpp-best-practices-lumberyard}
 

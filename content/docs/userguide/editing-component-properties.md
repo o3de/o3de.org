@@ -1,5 +1,5 @@
 ---
-description: ' Edit component properties that are attached to your entities in &ALYlong;. '
+description: ' Edit component properties that are attached to your entities in Amazon Lumberyard. '
 title: Editing Component Properties
 ---
 # Editing Component Properties {#editing-component-properties}
@@ -16,8 +16,8 @@ You can edit properties for your components such as changing the mesh asset file
 
 1. To edit multiple entities at the same time, select the entities that you want and make your changes\. The changes that you make to the first entity propagate to all selected entities\.
 
-**Note**  
-If your entity is part of a slice instance, any properties that you modify from the source slice asset appear in orange in the **Entity Inspector**\.   
+**Note**
+If your entity is part of a slice instance, any properties that you modify from the source slice asset appear in orange in the **Entity Inspector**\.
 To save a change to a slice, see [Modifying a Slice and Saving Changes](/docs/userguide/components/slice-push-changes.md)
 To revert an override, see [Reverting and Forcing Overrides](/docs/userguide/components/slice-override.md)
 For more information about slices, see [Working with Slices](/docs/userguide/components/slices.md)\.
@@ -32,7 +32,7 @@ In the **Entity Inspector**, you can copy an asset reference from one component 
 
 1. Choose **Copy asset reference**\.
 
-1. Select another component, right\-click the asset reference field, and choose **Paste asset reference**\.  
+1. Select another component, right\-click the asset reference field, and choose **Paste asset reference**\.
 ![\[Copy and paste asset references between components.\]](/images/userguide/component/component-entity-inspector-assetref.png)
 
 ## Creating Custom Component Help Topics {#component-entity-inspector-help}

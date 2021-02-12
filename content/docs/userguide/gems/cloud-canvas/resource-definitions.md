@@ -1,6 +1,6 @@
 ---
-description: ' Learn the resource definitions in &CFN; templates that determine which
-  &AWS; resources will be created for your game in &ALY;. '
+description: ' Learn the resource definitions in AWS Cloud Formation templates that determine which
+  AWS resources will be created for your game in Lumberyard. '
 title: Resource Definitions
 ---
 # Resource Definitions {#cloud-canvas-resource-definitions}
@@ -15,7 +15,7 @@ The default *\{game\}*`\AWS` directory contents are created by the `lmbr_aws` [p
 
 In addition, some user\-specific configuration data is kept in the `dev\Cache\{game}\{OS}\user\AWS` directory\. The contents of this directory should not be checked into the project's source control system\.
 
-The following shows the contents of these `AWS` directories\. 
+The following shows the contents of these `AWS` directories\.
 
 ```
 dev\{game}\AWS\
@@ -25,7 +25,7 @@ dev\{game}\AWS\
                 (Lambda function Code)
             resource-template.json
     local-project-settings.json
- 
+
 dev\Cache\{game}\{OS}\user\AWS\
     user-settings.json
 ```
@@ -40,7 +40,7 @@ The AWS resources used by the game are organized into separate resource groups\.
 
 The `lambda-function-code` subdirectory is present when a resource template defines [Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/) resources\. This directory can contain source files that implement those functions\. Lumberyard uploads the code from this directory when using the template to update the AWS CloudFormation stack\.
 
-**Note**  
+**Note**
 Use of the `lambda-function-code` directory is deprecated\. For more information, see [Lambda Code Directories](#cloud-canvas-resource-definitions-lambda-code-directory)\.
 
 #### resource\-template\.json {#cloud-canvas-resource-template}
@@ -60,16 +60,16 @@ The `dev\<project name>\AWS\local-project-settings.json` file contains a `Projec
 
 ```
 {
-    "ProjectStackId": "arn:aws:cloudformation:{aws-region}:{aws-access-id}:stack/CloudGemSamples/{uuid}", 
-    "DisabledResourceGroups": [], 
+    "ProjectStackId": "arn:aws:cloudformation:{aws-region}:{aws-access-id}:stack/CloudGemSamples/{uuid}",
+    "DisabledResourceGroups": [],
     "FrameworkVersion": "1.1.1"
 }
 ```
 
-**Note**  
+**Note**
 Prior to Lumberyard 1\.11, the `local-project-settings.json` file kept a list of *enabled* resource groups\. By default, all of a cloud gem's resource groups are enabled when the cloud gem is enabled\. Listing only the disabled resource groups makes it easier to identify them for debugging\. See [resource\-group disable](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-resource-group-disable)\.
 
-**Note**  
+**Note**
 As of Lumberyard 1\.8, the `project-settings.json` file is stored in the project's [Configuration Bucket](/docs/userguide/gems/cloud-canvas/resource-deployments#cloud-canvas-configuration-bucket)\. The bucket is defined by the project's AWS CloudFormation stack template\.
 
 ##### ProjectStackId Property {#cloud-canvas-local-project-settings-stackid-property}
@@ -80,12 +80,12 @@ The `ProjectStackId` property is set by the [project create](/docs/userguide/gem
 
 #### user\-settings\.json {#cloud-canvas-user-settings}
 
-The `user-settings.json` file contains user\-specific configuration data\. The file is created on the first run of the Cloud Canvas Resource Manager or the first time that `lmbr_aws` is run on a project\. 
+The `user-settings.json` file contains user\-specific configuration data\. The file is created on the first run of the Cloud Canvas Resource Manager or the first time that `lmbr_aws` is run on a project\.
 
-**File Location**  
+**File Location**
 The `user-settings.json` file is found at `dev\Cache\{game}\{OS}\user\AWS\user-settings.json`\. It is not in the `dev\{game}\AWS` directory along with the other files described in this section because it should not be checked into the project's source control system\.
 
-**Default AWS Profile**  
+**Default AWS Profile**
 The `DefaultProfile` section of the `user-settings.json` file contains the AWS profile that the `lmbr_aws` command uses for the project\. To set the profile for a Cloud Canvas project, use the following command:
 
 ```
@@ -162,7 +162,7 @@ To create extension files, you can use the `lmbr_aws` [project create\-extension
 + To create a `project-template-extensions.json` file, type:
 
   ```
-  lmbr-aws project create-extension-template --project 
+  lmbr-aws project create-extension-template --project
   ```
 + To create a `deployment-template-extensions.json` file, type:
 
@@ -183,7 +183,7 @@ The location and naming of code directories has changed in Lumberyard 1\.10\. Fo
 
 ### Lambda Code Directories {#cloud-canvas-resource-definitions-lambda-code-directory}
 
-Starting in Lumberyard 1\.10, we recommend that you put your Lambda code in `AWS\lambda-code\<lambda-name>` directories \(for example, `dev\Gems\CloudGemPlayerAccount\AWS\lambda-code`\) and your shared code in a `common-code` directory \(for example, `dev\Gems\CloudGemPlayerAccount\AWS\common-code`\)\. 
+Starting in Lumberyard 1\.10, we recommend that you put your Lambda code in `AWS\lambda-code\<lambda-name>` directories \(for example, `dev\Gems\CloudGemPlayerAccount\AWS\lambda-code`\) and your shared code in a `common-code` directory \(for example, `dev\Gems\CloudGemPlayerAccount\AWS\common-code`\)\.
 
 In versions of Lumberyard prior to 1\.10, the code for a resource group's Lambda functions was kept in an `AWS\lambda-function-code` directory\. As of Lumberyard 1\.10, the use of `AWS\lambda-function-code` and `AWS\<lambda-name>-lambda-code` directories is no longer recommended\. Support for them will be removed in a future release\. Instead, we recommend that you put your Lambda code in `AWS\lambda-code\<lambda-name>` directories\.
 

@@ -10,23 +10,23 @@ In addition to the shader parameters, the **Time of Day Editor**'s [**Cloud Shad
 
 ## Shader Parameters {#shader-ref-volumeobject-shader-parameters}
 
-Global Density  
-Defines how dense the clouds appear\.  
+Global Density
+Defines how dense the clouds appear\.
 Default value: `1`
 
 ## Shader Generation Parameters {#shader-ref-volumeobject-shader-generation-parameters}
 
-**Soft Intersections**  
+**Soft Intersections**
 Enhances transparency with opaque scene geometry\. Use this parameter sparingly due to increased pixel shading cost\.
 
-**Back Lighting**  
+**Back Lighting**
 Enables back lighting of volume objects\. The silhouette slightly glows when viewed against the sun\.
 
-**Jittering**  
+**Jittering**
 Enables jittering on volume objects\.
 
-**Soft Jittering**  
+**Soft Jittering**
 Softens the jittering effect on volume objects\.
 
-**Use TOD Settings**  
+**Use TOD Settings**
 Enables time of day \(TOD\) settings\.

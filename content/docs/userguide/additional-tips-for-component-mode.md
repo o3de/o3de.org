@@ -1,6 +1,6 @@
 ---
-description: ' See the following tips for working with a &CM; in &ALYlong;. '
-title: Tips for Working with &CM;
+description: ' See the following tips for working with a Component Mode in Amazon Lumberyard. '
+title: Tips for Working with Component Mode
 ---
 # Tips for Working with Component Mode {#additional-tips-for-component-mode}
 
@@ -25,7 +25,7 @@ If you want to add additional debug drawing while in Component Mode, you can imp
 
 This can be useful for additional drawing for an entity and its components\.
 
-**Note**  
+**Note**
 The `EntityDebugDisplayEventBus` is only addressed by `EntityId`\. You might encounter issues when working with multiple components of the same type on a given entity\.
 
 See the following example for the `.h` file\.

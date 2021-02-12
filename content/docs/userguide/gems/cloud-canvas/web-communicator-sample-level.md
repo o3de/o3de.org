@@ -1,6 +1,6 @@
 ---
 description: ' Use the CommunicatorSample level to test the Web Communicator cloud
-  gem in &ALYlong;. '
+  gem in Amazon Lumberyard. '
 title: Testing the Web Communicator Cloud Gem
 ---
 # Testing the Web Communicator Cloud Gem {#cloud-canvas-cloud-gem-web-communicator-sample-level}
@@ -10,8 +10,8 @@ To perform a simple test of the Web Communicator cloud gem, you can use the Comm
 ## Prerequisites {#cloud-canvas-cloud-gem-web-communicator-sample-level-prerequisites}
 
 This tutorial assumes the following:
-+ Your Lumberyard project has the Web Communicator and Player Account cloud gems enabled \(in the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html), choose **Cloud Gem Web Communicator** and **Cloud Gem Player Account**\)\.
-+ You used the [Cloud Canvas Resource Manager](https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-ui-rm-overview.html) or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following: 
++ Your Lumberyard project has the Web Communicator and Player Account cloud gems enabled \(in the [Project Configurator](/docs/userguide/configurator/intro), choose **Cloud Gem Web Communicator** and **Cloud Gem Player Account**\)\.
++ You used the [Cloud Canvas Resource Manager](/docs/userguide/gems/cloud-canvas/ui-rm-overview) or the [lmbr\_aws command line tool](/docs/userguide/gems/cloud-canvas/command-line.md) to create the following:
   + A [*project stack*](/docs/userguide/gems/cloud-canvas/ui-rm-project-stack.md) for your project\.
   + A [*deployment*](/docs/userguide/gems/cloud-canvas/ui-rm-deployments.md) for your project that includes the **CloudGemWebCommunicator** and **CloudGemPlayerAccount** resource groups\.
 + You have an email account for testing\.
@@ -36,7 +36,7 @@ In this step, you use the PlayerAccountSample level to create a player account a
 
 **To create a player account for the test**
 
-1. Follow [Testing the Player Account Cloud Gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/cloud-canvas-cloud-gem-player-account-testing.html) \(steps 1\-11\) to create a player account\. To verify the account, submit the verification code that is emailed to you\.
+1. Follow [Testing the Player Account Cloud Gem](/docs/userguide/gems/cloud-canvas/player-account-testing) \(steps 1\-11\) to create a player account\. To verify the account, submit the verification code that is emailed to you\.
 
 1. With the PlayerAccountSample level still running, sign in to the PlayerAccountSample level with the credentials that you created \(Testing the Player Account Cloud Gem step 12\)\.
 
@@ -52,25 +52,25 @@ In this step, register and connect a Websocket that can receive messages from AW
 
 1. In the **Open a Level** dialog box, choose **CommunicatorSample**, and then click **Open**\. If you are using a launcher and need to restart, your authenticated identity should be found on startup\.
 
-1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.  
+1. Press **Ctrl\+G** to start the level\. The sample level looks similar to the following image\.
 ![\[The CommunicatorSample level\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-1.png)
 
-1. Click **Register WebSocket**\.  
+1. Click **Register WebSocket**\.
 ![\[Registering a WebSocket\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-2.png)
 
-   The status changes to **Registered**\.  
+   The status changes to **Registered**\.
 ![\[Registered WebSocket\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-3.png)
 
-1. Click **Connect WebSocket**\.  
+1. Click **Connect WebSocket**\.
 ![\[Connecting a WebSocket\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-4.png)
 
-   The status changes to **Connected**\.  
+   The status changes to **Connected**\.
 ![\[Connected WebSocket\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-5.png)
 
-1. Click **Request List**\.  
+1. Click **Request List**\.
 ![\[Request channel list\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-6.png)
 
-   Your test channels are listed in the sample level user interface\.  
+   Your test channels are listed in the sample level user interface\.
 ![\[The list of communication channels\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-7.png)
 
 1. Leave the CommunicatorSample level running\.
@@ -91,12 +91,12 @@ In this step, you send a test from the message AWS IoT console to the Communicat
 
 1. Choose **Services**, **Internet of Things**, **IoT Core** to open the [AWS IoT](https://console.aws.amazon.com/iot/) console\.
 
-1. In the left navigation pane of AWS IoT console, choose **Test**\.  
+1. In the left navigation pane of AWS IoT console, choose **Test**\.
 ![\[Choose Test in the AWS IoT console.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-8.png)
 
-   
 
-1. Navigate to the **Publish** section at the bottom of the page\.  
+
+1. Navigate to the **Publish** section at the bottom of the page\.
 ![\[Publishing a test message in the AWS IoT console.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-9.png)
 
 1. In the **Publish** section, enter the following information:
@@ -116,5 +116,5 @@ In this step, you send a test from the message AWS IoT console to the Communicat
 
 1. Return to the CommunicatorSample level to see the results\. If you are on the same computer, press **Alt\+Tab** to return to Lumberyard Editor\.
 
-   The sample level shows the message that you sent from AWS IoT\.  
+   The sample level shows the message that you sent from AWS IoT\.
 ![\[Test message received in the CommunicatorSample level that is sent from the AWS IoT console.\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-web-communicator-sample-level-10.png)

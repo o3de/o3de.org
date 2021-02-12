@@ -1,6 +1,6 @@
 ---
 description: ' Use visual components (image or text) to give an element color and
-  texture, or text in &ALYlong;''s &ui-canvas-editor; . '
+  texture, or text in Amazon Lumberyard''s UI Editor . '
 title: Visual Components
 ---
 # Visual Components {#ui-editor-components-visual}

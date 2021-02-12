@@ -1,6 +1,6 @@
 ---
 description: ' Pin an entity''s inspector to have multiple entities available to edit
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Pinning an Entity's Inspector
 ---
 # Pinning an Entity's Inspector {#component-entity-inspector-pin}
@@ -23,12 +23,12 @@ You can pin an inspector from the **Entity Outliner** or the **Entity Inspector*
 
 1. Do one of the following:
 
-   1. In the **Entity Outliner**, right\-click the entity and then choose **Open pinned Inspector**\.  
+   1. In the **Entity Outliner**, right\-click the entity and then choose **Open pinned Inspector**\.
 ![\[In the Entity Outliner, choose Open pinned Inspector to pin an inspector for that entity.\]](/images/userguide/component/entity_system/component-entity-inspector-pin-1.png)
 
-   1. In the **Entity Inspector**, click the pin icon\.  
+   1. In the **Entity Inspector**, click the pin icon\.
 ![\[In the Entity Inspector, click the pin icon to pin an inspector for the entity.\]](/images/userguide/component/entity_system/component-entity-inspector-pin-2.png)
 
-1. In Lumberyard Editor, you can view the pinned entity inspectors\.  
-**Example**    
+1. In Lumberyard Editor, you can view the pinned entity inspectors\.
+**Example**
 ![\[Multiple pinned inspectors open in a level.\]](/images/userguide/component/entity_system/component-entity-inspector-pin.png)

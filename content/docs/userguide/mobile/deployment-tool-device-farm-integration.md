@@ -1,6 +1,6 @@
 ---
-description: ' Deploy your mobile apps to &ATPlong; for testing from &ALYlong;. '
-title: Using &ATPlong; in &ly-editor;
+description: ' Deploy your mobile apps to AWS Device Farm for testing from Amazon Lumberyard. '
+title: Using AWS Device Farm in Lumberyard Editor
 ---
 # Using AWS Device Farm in Lumberyard Editor {#ios-android-deployment-tool-device-farm-integration}
 
@@ -13,7 +13,7 @@ Starting in Lumberyard version 1\.20, you can use the Lumberyard Editor [Deploym
 ## Prerequisites {#ios-android-deployment-tool-device-farm-integration-prerequisites}
 
 To use Device Farm in Lumberyard Editor, you need the following requirements:
-+ The Cloud Gem Framework gem, enabled for your project in the Project Configurator\.  
++ The Cloud Gem Framework gem, enabled for your project in the Project Configurator\.
 ![\[The Cloud Gem Framework gem in Project Configurator.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-2.png)
 
   For information about using Project Configurator to enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
@@ -27,7 +27,7 @@ To use Device Farm in Lumberyard Editor, you need the following requirements:
     1. Follow the online instructions\.
 
        Part of the sign\-up procedure involves receiving a phone call and entering a verification code on the phone keypad\.
-  + For more information about access keys, see [How do I create an AWS access key?](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/)\. 
+  + For more information about access keys, see [How do I create an AWS access key?](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/)\.
   + For information about the AWS Free Tier, see the [AWS Free Tier](https://aws.amazon.com/free/) page\.
 + Device Farm requires that you have a shader compiler running on an Amazon Elastic Compute Cloud \(Amazon EC2\) instance\. For more information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
 
@@ -37,13 +37,13 @@ After you have a set of AWS credentials, use them to create a profile in Lumbery
 
 **To enter your credentials in Lumberyard Editor**
 
-1. In Lumberyard Editor, choose **AWS**, **Credentials manager**\.  
+1. In Lumberyard Editor, choose **AWS**, **Credentials manager**\.
 ![\[Open Credentials manager\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-3.png)
 
-1. In the **Credentials Manager** dialog box, click **Add profile**\.  
+1. In the **Credentials Manager** dialog box, click **Add profile**\.
 ![\[Click Add profile\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-4.png)
 
-1. In the **Add profile** dialog box, enter the required information\.  
+1. In the **Add profile** dialog box, enter the required information\.
 ![\[Enter profile information for your AWS account in Lumberyard Editor\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-5.png)
    + For **Profile name**, enter a name for the profile\.
    + For **AWS access key** and **AWS secret key**, enter the access key and secret key\.
@@ -70,7 +70,7 @@ After the new profile is selected in the **Credentials Manager**, you can use Lu
 
 ## Configuring a Deployment for AWS Device Farm {#ios-android-deployment-tool-device-farm-integration-configuring-a-deployment-for-aws-device-farm}
 
-After you have selected a valid AWS profile in Lumberyard Editor, you can use the [Deployment Tool](https://docs.aws.amazon.com/lumberyard/latest/userguide/android-game-building.html) to configure a deployment to AWS Device Farm\.
+After you have selected a valid AWS profile in Lumberyard Editor, you can use the [Deployment Tool](/docs/userguide/mobile/android/game-building) to configure a deployment to AWS Device Farm\.
 
 **To configure a deployment for AWS Device Farm\.**
 
@@ -78,14 +78,14 @@ After you have selected a valid AWS profile in Lumberyard Editor, you can use th
 
 1. In Lumberyard Editor, choose **File**, **Project Settings**, **Deploy to device**\.
 
-1. In **Deployment Tool**, under **Deploy**, click the **AWS Device Farm** tab\.  
+1. In **Deployment Tool**, under **Deploy**, click the **AWS Device Farm** tab\.
 ![\[AWS Device Farm features in the Deployment Tool.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-6.png)
 
-1. The following options are specific to Device Farm usage\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ios-android-deployment-tool-device-farm-integration.html)
+1. The following options are specific to Device Farm usage\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/mobile/deployment-tool-device-farm-integration)
 
-1. Adding a device pool opens the **Device Farm Device Pool** dialog box, which retrieves the latest list of supported devices from Device Farm\.  
+1. Adding a device pool opens the **Device Farm Device Pool** dialog box, which retrieves the latest list of supported devices from Device Farm\.
 ![\[Configuring a Device Farm device pool.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-7.png)
 
 1. For **Name**, enter a name for your device pool, and then select the devices that you want to test your application on\.
@@ -110,9 +110,9 @@ At this point, you are ready to build and deploy your app to Device Farm\.
 
    1. Schedule the test run on Device Farm\.
 
-1. After a test run is scheduled, you can track its status in the **Device Farm Log** section of the Deployment Tool\. Information from Device Farm is refreshed every 10 seconds\.  
+1. After a test run is scheduled, you can track its status in the **Device Farm Log** section of the Deployment Tool\. Information from Device Farm is refreshed every 10 seconds\.
 ![\[Using the Device Farm Log in the Deployment Tool.\]](/images/userguide/mobile/ios-android-deployment-tool-device-farm-integration-8.png)
-**Note**  
+**Note**
 The Device Farm test fails on some devices if the device does not respond to input quickly enough\. If this occurs, set `r_ShadersAsyncCompiling=1` in your `system_android_es3.cfg` file so that the main UI thread is blocked by shader loads and continues to respond\.
 
 1. To open a test run in the Device Farm console, right\-click the run, and choose **View details in AWS console**\.

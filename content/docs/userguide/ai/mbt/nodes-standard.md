@@ -1,5 +1,5 @@
 ---
-description: ' See the following standard Modular Behavior Tree (MBT) nodes in &ALYlong;. '
+description: ' See the following standard Modular Behavior Tree (MBT) nodes in Amazon Lumberyard. '
 title: Standard MBT Nodes
 ---
 # Standard MBT Nodes {#ai-mbt-nodes-standard}
@@ -50,7 +50,7 @@ The Parallel node run its children in parallel\. A maximum of 32 children are al
 
 **Parameters**
 + **failureMode **: The mode used to evaluate when the node fails\. Accepted values are any or all\. Default value = any\.
-+ **successMode**: The mode used to evaluate when the node succeeds\. Accepted values are any or all\. Default value = all\. 
++ **successMode**: The mode used to evaluate when the node succeeds\. Accepted values are any or all\. Default value = all\.
 
 **Behavior**
 + **Success**: If any or all children succeed\.
@@ -112,7 +112,7 @@ No parameters
 
 ## StateMachine node {#ai-mbt-nodes-generic-statemachine}
 
-The StateMachine is a composite node allowed to have one or more children\. The children of a StateMachine node must be of the type State\. 
+The StateMachine is a composite node allowed to have one or more children\. The children of a StateMachine node must be of the type State\.
 
 Only one child at any given time is allowed to be run and the first one defined is the first one to be run\.
 
@@ -123,7 +123,7 @@ The current status of a StateMachine node is the same as that of the child that 
 None
 
 **Behavior**
-+ **Success**: If the child State node succeeds 
++ **Success**: If the child State node succeeds
 + **Failure**: If the child State node fails
 
 **Example**
@@ -145,7 +145,7 @@ A State node runs the content of its BehaviorTree node and can transition to ano
 If a State node transitions into itself while running, it will first be terminated, re\-initialized, and then updated again\.
 
 **Parameters**
-+ **name **: The name of the state\. It must be unique for the scope of the StateMachine node\. 
++ **name **: The name of the state\. It must be unique for the scope of the StateMachine node\.
 
 **Behavior**
 + **Success**: If the BehaviorTree node succeeds

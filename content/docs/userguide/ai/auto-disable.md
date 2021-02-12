@@ -1,5 +1,5 @@
 ---
-description: ' Use the auto-disable feature in &ALYlong; to control updates. '
+description: ' Use the auto-disable feature in Amazon Lumberyard to control updates. '
 title: Auto-Disable
 ---
 # Auto\-Disable {#ai-auto-disable}

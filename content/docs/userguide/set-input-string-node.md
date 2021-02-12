@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Input String node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Input String node in the Amazon Lumberyard Script Canvas editor
   to set the value of a procedural material input parameter as a string or image. '
 title: Set Input String
 ---
@@ -18,20 +18,20 @@ If the input parameter is a `string` type, the node sets the text value that the
 ## Inputs {#set-input-string-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Procedural Material | Procedural material | The procedural material to modify\. | 
-| Input Name | String | The name of the input parameter to set\. | 
-| String | String | The new value to apply\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Procedural Material | Procedural material | The procedural material to modify\. |
+| Input Name | String | The name of the input parameter to set\. |
+| String | String | The new value to apply\. |
 
 ## Outputs {#set-input-string-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

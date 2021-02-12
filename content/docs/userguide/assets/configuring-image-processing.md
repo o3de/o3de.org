@@ -1,11 +1,11 @@
 ---
-description: ' Configure how &ALYlong; processes your images or textures to make them
+description: ' Configure how Amazon Lumberyard processes your images or textures to make them
   game-ready. '
 title: Configuring Image Processing
 ---
 # Configuring Image Processing {#asset-pipeline-configuring-image-processing}
 
-Images or textures are automatically processed by Asset Processor, which makes them ready for Lumberyard game creation\. When you place an image file anywhere within your Lumberyard directory, Asset Processor detects and converts the file to a game\-ready asset\. Lumberyard has several configuration files that specify settings for the conversion process, such as the colorspace to use, texture size, [whether to generate mip maps](/docs/userguide/assets/generating-mipmaps.md), and so on\. 
+Images or textures are automatically processed by Asset Processor, which makes them ready for Lumberyard game creation\. When you place an image file anywhere within your Lumberyard directory, Asset Processor detects and converts the file to a game\-ready asset\. Lumberyard has several configuration files that specify settings for the conversion process, such as the colorspace to use, texture size, [whether to generate mip maps](/docs/userguide/assets/generating-mipmaps.md), and so on\.
 
 You can [edit the configuration files](/docs/userguide/assets/creating-image-processing-presets#asset-pipeline-creating-presets-imagecompiler-rc) to create your own image processing presets\. To use these presets, you append existing or customized suffixes to your image file names\. Based on these file name suffixes, Asset Processor automatically uses the appropriate preset to convert the image\.
 

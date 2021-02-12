@@ -1,18 +1,18 @@
 ---
-description: ' Upgrade &ALYlong; with or without source control and upgrade your game
+description: ' Upgrade Amazon Lumberyard with or without source control and upgrade your game
   project. '
-title: Upgrading &ALY;
+title: Upgrading Lumberyard
 ---
 # Upgrading Lumberyard {#lumberyard-upgrading}
 
-If you have an existing version of Lumberyard installed on your computer, you have several options for upgrading: 
+If you have an existing version of Lumberyard installed on your computer, you have several options for upgrading:
 + Upgrade Lumberyard with an existing version in source control
 + Upgrade Lumberyard without an existing version in source control
 + Upgrade Lumberyard without source control
 
 We recommend using source control, which allows relationships to be created between the installed versions of Lumberyard and the changes you make to your projects, among other benefits like revision history\.
 
-**Note**  
+**Note**
 When choosing a source control solution, keep in mind that Lumberyard provides plugins and tools for working with Perforce\.
 
 **Topics**
@@ -88,7 +88,7 @@ Once you have upgraded Lumberyard, you can upgrade each of your game projects\.
 
 1. Copy your project's code \(located in the `lumberyard_version\dev\Code\project_name` directory\) and game folder \(located in the `lumberyard_version\dev\project_name` directory\) to the new Lumberyard directory\.
 
-1. Create a `project.json` file for your project with the following: 
+1. Create a `project.json` file for your project with the following:
 
    ```
    {
@@ -102,7 +102,7 @@ Once you have upgraded Lumberyard, you can upgrade each of your game projects\.
 
    Replace all instances of *project\_name* with your project's name\.
 
-   For example, if your project was called MyProject, the `project.json` file would include the following: 
+   For example, if your project was called MyProject, the `project.json` file would include the following:
 
    ```
    {
@@ -129,7 +129,7 @@ Once you have upgraded Lumberyard, you can upgrade each of your game projects\.
                            bld.Path('Code/CryEngine/CryAction')],
    ```
 
-1. In a command line window, locate the new `dev` directory and enter the following build command for your version of Visual Studio: 
+1. In a command line window, locate the new `dev` directory and enter the following build command for your version of Visual Studio:
 
    ```
    lmbr_waf build_win_x64_vs2017_profile -p all

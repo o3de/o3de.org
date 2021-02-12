@@ -1,12 +1,12 @@
 ---
-description: ' Use &ly-launcher; to install required third-party software, SDKs, and
+description: ' Use Lumberyard Setup Assistant to install required third-party software, SDKs, and
   plugins. '
-title: Running &ly-launcher;
+title: Running Lumberyard Setup Assistant
 ---
 # Running Lumberyard Setup Assistant {#lumberyard-launcher-using}
 
-**Note**  
-Before you run Lumberyard Setup Assistant, verify the following:  
+**Note**
+Before you run Lumberyard Setup Assistant, verify the following:
 `3rdParty.txt` file appears in the `lumberyard_version\3rdParty` directory
 `engineroot.txt` appears in the `lumberyard_version\dev` directory
  Lumberyard Setup Assistant requires these files to properly detect third\-party software and SDKs\.
@@ -29,8 +29,8 @@ Before you run Lumberyard Setup Assistant, verify the following:
    + **Compile the Lumberyard Editor and tools**\* - Compile Lumberyard tools to include any changes that you have made
    + **Compile for Android devices\***
    + **Setup for Linux Dedicated Server\***
-**Note**  
-In Lumberyard version 1\.23 and later, if you intend to create new projects, the following options must be selected:  
+**Note**
+In Lumberyard version 1\.23 and later, if you intend to create new projects, the following options must be selected:
 **Run your game project**
 **Run the Lumberyard Editor and tools** - Use Lumberyard Editor to create a game
 **Compile the game code**\* - Compile the game code to include any changes that you have made
@@ -41,12 +41,12 @@ In Lumberyard version 1\.23 and later, if you intend to create new projects, the
    You can also create, enable, and disable these capabilities from the command line\. For more information, see [Using Lumberyard Setup Assistant Batch](/docs/userguide/lumberyard-launcher-batch-using.md) and [Lmbr\.exe](/docs/userguide/lmbr-exe.md)\.
 
 1. Select **Visual Studio 2017** or **Visual Studio 2019**\.
-**Note**  
-We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.  
+**Note**
+We recommend that you select only *one* version of Visual Studio \- the one that you will use to compile your projects\. If both are enabled, you will be asked which compiler to use when you rebuild your project in Project Configurator\.
 ![\[Use Lumberyard Setup Assistant to configure Lumberyard, and install software and plugins.\]](/images/userguide/setup/ui-setup-assistant-1.24.png)
-**Note**  
+**Note**
 Selecting a version of Visual Studio here will enable it as a build platform and enable a Visual Studio solution to be generated for that version\. For more information about build settings specific to Visual Studio, see [Waf User Options and Settings](/docs/userguide/waf/user-options-and-settings.md)\.
-**Note**  
+**Note**
 For more information about installing and configuring Visual Studio for Lumberyard, see [Developer tools](/docs/userguide/setup/system-requirements#lumberyard-visual-studio-requirement)\.
 
 1. Click **Next**\.

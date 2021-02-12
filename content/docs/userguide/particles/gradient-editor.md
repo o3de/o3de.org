@@ -1,5 +1,5 @@
 ---
-description: ' Use the Gradient Editor in the &ALYlong; &particle-editor; to apply
+description: ' Use the Gradient Editor in the Amazon Lumberyard Particle Editor to apply
   color ranges to an emitter. '
 title: Using the Gradient Editor
 ---
@@ -15,7 +15,7 @@ Use the **Gradient Editor** to apply color ranges to an emitter and configure ad
 
 1. In the **Attributes** panel, under **Particles**, expand **Color**\.
 
-1. Click the color swatch for the **Strength Over Emitter Lifetime** or **Strength Over Particle Lifetime** parameter\.  
+1. Click the color swatch for the **Strength Over Emitter Lifetime** or **Strength Over Particle Lifetime** parameter\.
 ![\[Image NOT FOUND\]](/images/userguide/particles/particle-gradient-editor-2.png)
 
 ## Gradient Editor UI Options {#particle-gradient-editor-ui-options}

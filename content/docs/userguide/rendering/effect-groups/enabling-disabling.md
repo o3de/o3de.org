@@ -1,5 +1,5 @@
 ---
-description: ' Enable or disable effect groups with the &script-canvas; editor or
+description: ' Enable or disable effect groups with the Script Canvas editor or
   in Lua. '
 title: Enabling and Disabling Effect Groups
 ---
@@ -15,20 +15,20 @@ You can enable and disable effect groups with the **Script Canvas** editor or Lu
 
 1. In the **Script Canvas** editor, choose **File**, **New Script**\.
 
-1. Right\-click the canvas, search and then select the following nodes: 
+1. Right\-click the canvas, search and then select the following nodes:
    + **On Graph Start**
    + **[Enable Effect Group](/docs/userguide/rendering/enable/effect-group-node.md)** or **[Disable Effect Group](/docs/userguide/rendering/disable/effect-group-node.md)**
 
 1. For your script, do the following:
 
-   1. Select the **Out** pin for **On Graph Start** and drag to connect it to the **In** pin for the **Enable/Disable Effect Group** node\. 
+   1. Select the **Out** pin for **On Graph Start** and drag to connect it to the **In** pin for the **Enable/Disable Effect Group** node\.
 
-   1. For the **Group Name** parameter, enter the file path for the group \(for example, `Libs\PostEffectGroups\MyEffectGroup.xml`\)\.  
+   1. For the **Group Name** parameter, enter the file path for the group \(for example, `Libs\PostEffectGroups\MyEffectGroup.xml`\)\.
 ![\[Use the Enable Effect Group node in the Script Canvas editor.\]](/images/userguide/enable-effect-group-node-example-script.png)
 
-1. Save the script and attach it to an entity with the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\. 
+1. Save the script and attach it to an entity with the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\.
 
 1. Close the **Script Canvas** editor\.
 
-**Note**  
+**Note**
 You can manually enable or disable an effect group in Lumberyard Editor by running the Lua functions in the **Console** window\. To indicate a Lua command, prepend each command with the \# character\.

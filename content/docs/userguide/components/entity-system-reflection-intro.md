@@ -1,6 +1,6 @@
 ---
-description: ' Expose C++ code for scripting in &ALYlong;. '
-title: Reflecting &ALY; Classes, Methods, and EBus Interfaces
+description: ' Expose C++ code for scripting in Amazon Lumberyard. '
+title: Reflecting Lumberyard Classes, Methods, and EBus Interfaces
 ---
 # Reflecting Lumberyard Classes, Methods, and EBus Interfaces {#component-entity-system-reflection-intro}
 

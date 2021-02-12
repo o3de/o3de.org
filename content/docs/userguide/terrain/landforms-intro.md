@@ -1,6 +1,6 @@
 ---
 description: ' Use a variety of brushes to add realistic mountains, valleys, and other
-  landforms to your &ALY; terrain. '
+  landforms to your Lumberyard terrain. '
 title: Creating Landforms and Topography
 ---
 # Creating Landforms and Topography {#terrain-landforms-intro}

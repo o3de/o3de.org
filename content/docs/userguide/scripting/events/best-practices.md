@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for using script events in &ALYlong;. '
+description: ' Learn best practices for using script events in Amazon Lumberyard. '
 title: Script Events Best Practices
 ---
 # Script Events Best Practices {#script-events-best-practices}
@@ -18,7 +18,7 @@ To ensure that all entities that need to listen for and handle a given script ev
 
 Because Script Events are user\-created assets, problems can occur when an asset that is referenced in existing scripts or Script Canvas graphs changes\.
 
-**Note**  
+**Note**
 Script Canvas provides Script Event version validation\. When a Script Event asset is modified, Script Canvas updates the Script Event nodes that reference it\. If you open a graph that has a Script Event that has been modified, the graph is marked as modified\. To update the Script Event nodes to their latest versions, save the graph\.
 
 ## Use Script Events Instead of the Gameplay Notification Bus System {#script-events-gameplay-notification-bus-system-deprecation}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the scopes shader to render optical effects in &ALYlong;. '
+description: ' Use the scopes shader to render optical effects in Amazon Lumberyard. '
 title: Scopes Shader
 ---
 # Scopes Shader {#shader-ref-scopes}
@@ -8,69 +8,69 @@ The Scopes shader is used to render various optical effects for binoculars, tele
 
 ## Shader Parameters {#shader-ref-scopes-shader-parameters}
 
-**Fake glow amount**  
-Sets the amount of fake glow\.  
-This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.  
+**Fake glow amount**
+Sets the amount of fake glow\.
+This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.
 Default value: 0\.25
 
-**Fresnel Bias**  
-Sets the amount of fresnel bias\.  
-This parameter requires that the **Scope zoomed refraction** shader generation parameter is enabled\.  
+**Fresnel Bias**
+Sets the amount of fresnel bias\.
+This parameter requires that the **Scope zoomed refraction** shader generation parameter is enabled\.
 Default value: 1
 
-**Fresnel Scale**  
-Sets the fresnel scaling amount\.  
-This parameter requires that the **Scope zoomed refraction** shader generation parameter is enabled\.  
+**Fresnel Scale**
+Sets the fresnel scaling amount\.
+This parameter requires that the **Scope zoomed refraction** shader generation parameter is enabled\.
 Default value: 1
 
-**Hologram depth**  
-Sets the depth of the hologram\.  
-This parameter requires that the **Use halo sight depth** shader generation parameter is enabled\.  
+**Hologram depth**
+Sets the depth of the hologram\.
+This parameter requires that the **Use halo sight depth** shader generation parameter is enabled\.
 Default value: 2
 
-**Holographic noise scale**  
-Sets the holographic noise scale\.  
-This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.  
+**Holographic noise scale**
+Sets the holographic noise scale\.
+This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.
 Default value: 0
 
-**Noise bias**  
-Sets noise bias\.  
-This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.  
+**Noise bias**
+Sets noise bias\.
+This parameter requires that the **Reflex sight new** shader generation parameter is enabled\.
 Default value: 1
 
-**Noise scale**  
-Sets noise scale\.  
+**Noise scale**
+Sets noise scale\.
 Default value: 0\.75
 
-**Object space UV usage**  
-Sets the amount of usage of object space\.  
+**Object space UV usage**
+Sets the amount of usage of object space\.
 Default value: 0
 
-**Refraction Bump Scale**  
-Sets the amount of scaling for refraction bumpiness\.  
+**Refraction Bump Scale**
+Sets the amount of scaling for refraction bumpiness\.
 Default value: 0
 
-**Scope color multiplier**  
-Sets the scope color multiplier\.  
+**Scope color multiplier**
+Sets the scope color multiplier\.
 Default value: 160
 
-**Scope scale**  
-Sets scope scale\.  
+**Scope scale**
+Sets scope scale\.
 Default value: 4
 
 ## Shader Generation Parameters {#shader-ref-scopes-shader-generation-parameters}
 
-**Reflex sight**  
+**Reflex sight**
 Use for reflex\-style weapon sights\. When enabled, the **Diffuse** texture map slot under **Texture Maps** also becomes available\.
 
-**Reflex sight new**  
+**Reflex sight new**
 Use for the newer version reflex\-style weapon sights\. When enabled, the **Diffuse** texture map slot under **Texture Maps** also becomes available\.
 
-**Scope zoomed refraction**  
+**Scope zoomed refraction**
 Use to produce light refraction effects for zoomed\-in scopes\.
 
-**Use halo sight depth**  
+**Use halo sight depth**
 Used for holographic\-style weapon sights with a depth\-field modifier\.
 
-**Thermal vision scope**  
+**Thermal vision scope**
 Use to produce thermal color effects for night\-use scopes\.

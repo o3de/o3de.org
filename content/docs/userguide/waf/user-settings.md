@@ -1,11 +1,11 @@
 ---
-description: ' Add new user settings and define utility functions for your &ALYlong;
+description: ' Add new user settings and define utility functions for your Amazon Lumberyard
   Waf configuration. '
 title: Adding User Settings to Waf
 ---
 # Adding User Settings to Waf {#waf-user-settings}
 
-You can add a new user setting to the `default_settings.json` file in the `Waf` folder located at the root\. Use the standards established in this file and customize as needed\. After you have added a user setting, you need to add a minimum of three utility functions for the GUI and console to validate your new setting\. 
+You can add a new user setting to the `default_settings.json` file in the `Waf` folder located at the root\. Use the standards established in this file and customize as needed\. After you have added a user setting, you need to add a minimum of three utility functions for the GUI and console to validate your new setting\.
 
 To define utility functions, add the following to `default_settings.py`:
 + **Getter** - Retrieves the value of your new setting and performs necessary transformations
@@ -37,10 +37,10 @@ def enabled_game_projects(ctx, section_name, option_name, value):
     """ Configure all Game Projects enabled by user"""
     if ctx.options.execsolution or not ctx.is_option_true('ask_for_user_input'):
         return value
- 
+
     if LOADED_OPTIONS.get('enabled_game_projects', 'False') == 'False':
         return ''
- 
+
     info_str = ['Specify which game projects to include when compiling and generating project files.']
     info_str.append('Comma separated list of Game names, from the project.json root (SamplesProject, MultiplayerProject) for example')
     # GUI
@@ -84,17 +84,17 @@ def enabled_game_projects(ctx, section_name, option_name, value):
 In the example below, the function is simpler because it's a simple string entry and there are no enumerations like bool and no validation\.
 
 ```
-@register_attribute_callback   
+@register_attribute_callback
 def out_folder_linux64(ctx, section_name, option_name, value):
     """ Configure output folder for linux x64 """
     if not _is_user_input_allowed(ctx, option_name, value):
         Logs.info('\nUser Input disabled.\nUsing default value "%s" for option: "%s"' % (value, option_name))
         return value
-         
+
     # GUI / console mode
     if not ctx.is_option_true('console_mode'):
         return ctx.gui_get_attribute(section_name, option_name, value)
-         
+
     return _get_string_value(ctx, 'Linux x64 Output Folder', value)
 ```
 
@@ -159,6 +159,6 @@ def hint_enabled_game_projects(ctx, section_name, option_name, value):
     return (project_list, project_list, desc_list, "multi")
 ```
 
-You can also see how Waf uses hinting by engaging Waf in GUI mode and entering the following command: `lmbr_waf.bat show_option_dialog` 
+You can also see how Waf uses hinting by engaging Waf in GUI mode and entering the following command: `lmbr_waf.bat show_option_dialog`
 
 This displays an options dialog box that you can review to determine hinting\.

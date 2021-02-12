@@ -1,6 +1,6 @@
 ---
 description: ' Add mountains, valleys, lakes, rivers, roads, and other realistic terrain
-  elements to your &ALYlong; level. '
+  elements to your Amazon Lumberyard level. '
 title: Creating Terrain
 ---
 # Creating Terrain {#terrain-intro}

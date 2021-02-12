@@ -1,16 +1,16 @@
 ---
 description: ' Create template drivers that preprocess data from Clang and pass it
-  to Jinja2 output templates for use with &ALYlong;''s AZ Code Generator. '
+  to Jinja2 output templates for use with Amazon Lumberyard''s AZ Code Generator. '
 title: Template Drivers
 ---
 # Template Drivers {#az-code-gen-template-drivers}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
 Template drivers are Python scripts that process the intermediate JSON data and route it into the Jinja2 output templates\. The scripts preprocess the data from the Clang front end, execute the template rendering, and control where the generated output is written to disk\.
 
@@ -81,7 +81,7 @@ For an example of this method, see [Preprocessing Intermediate Data](#az-code-ge
 
 Override the `get_expected_tags` method to return a list of tags that must be found in any input file\. If the required tags are not present, this driver is skipped\.
 
-**Important**  
+**Important**
 This method is deprecated as of Lumberyard v1\.6\. After Lumberyard v1\.6, all scripts will be processed regardless of expected tags, and `get_expected_tags` will not be invoked\.
 
 **Syntax**
@@ -103,18 +103,18 @@ render_template_to_file(self, template_file, template_kwargs, output_file, shoul
 #### Parameters {#az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file-parameters}
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| template\_file | Specifies the path to a template relative to the directory that contains the template driver \.py file\. | 
-| template\_kwargs | Specifies a dictionary of key-value pairs to be passed to Jinja\. Generally this should be treated as a passthrough variable for the jinja\_args given to render\_templates, but you can add additional key-value pairs\. | 
-| output\_file | Specifies the target file for the rendered Jinja output\. The path is relative to the target output folder\. | 
-| should\_add\_to\_build | A Boolean value that specifies whether Waf should add this file to the C\+\+ build and linker\. The default is false\. | 
+| Parameter | Description |
+| --- | --- |
+| template\_file | Specifies the path to a template relative to the directory that contains the template driver \.py file\. |
+| template\_kwargs | Specifies a dictionary of key-value pairs to be passed to Jinja\. Generally this should be treated as a passthrough variable for the jinja\_args given to render\_templates, but you can add additional key-value pairs\. |
+| output\_file | Specifies the target file for the rendered Jinja output\. The path is relative to the target output folder\. |
+| should\_add\_to\_build | A Boolean value that specifies whether Waf should add this file to the C\+\+ build and linker\. The default is false\. |
 
 ### render\_templates {#az-code-gen-template-drivers-templatedriver-class-methods-render-templates}
 
-Override `render_templates` to invoke template rendering by calling `render_template_to_file`\. 
+Override `render_templates` to invoke template rendering by calling `render_template_to_file`\.
 
 **Syntax**
 
@@ -125,12 +125,12 @@ render_templates(self, input_file, **jinja_args)
 #### Parameters {#az-code-gen-template-drivers-templatedriver-class-methods-render-templates-parameters}
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| input\_file | The path relative to the input path that is used to invoke Clang\.  | 
-| jinja\_args | The raw data from the intermediate JSON object after the template driver performs preprocessing on the object\. | 
+| Parameter | Description |
+| --- | --- |
+| input\_file | The path relative to the input path that is used to invoke Clang\.  |
+| jinja\_args | The raw data from the intermediate JSON object after the template driver performs preprocessing on the object\. |
 
 ## Minimal Template Driver {#az-code-gen-template-drivers-minimal-template-driver}
 
@@ -151,7 +151,7 @@ The `az_code_gen` module is automatically provided by AZ Code Generator\. It con
 
 The `create_drivers` function simply forwards the Jinja environment that is used to render templates\. However, you can alter the function to perform other work when the driver is instantiated\.
 
-**Note**  
+**Note**
 The above bare\-bones implementation works but does not generate any output\.
 
 ## Rendering Templates {#az-code-gen-template-drivers-rendering-templates}
@@ -210,7 +210,7 @@ from az_code_gen.base import *
 class MyTemplateDriver(TemplateDriver):
     def render_templates(self, input_file, **jinja_args):
         self.render_template_to_file("MyTemplate.tpl", jinja_args, 'GeneratedCode.cpp')
- 
+
     def apply_transformations(self, obj):
         obj['my_custom_data'] = 42
 

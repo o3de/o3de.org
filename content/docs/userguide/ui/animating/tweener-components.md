@@ -1,5 +1,5 @@
 ---
-description: ' Learn which entity parameters that &ALYlong; supports in the Scripted
+description: ' Learn which entity parameters that Amazon Lumberyard supports in the Scripted
   Entity Tweener system. '
 title: Tweener Supported Components
 ---
@@ -7,12 +7,12 @@ title: Tweener Supported Components
 
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system\.
 
-You can see the list of supported entity parameters in the `lumberyard_version\dev\Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`\. 
+You can see the list of supported entity parameters in the `lumberyard_version\dev\Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`\.
 
 The following example shows the `self.animationParameterShortcuts` table that is inside of the `ScriptedEntityTweener.lua` file\.
 
 ```
-		self.animationParameterShortcuts =	
+		self.animationParameterShortcuts =
 		{
 			--UI Related
 			["opacity"] = {"UiFaderComponent", "Fade" },
@@ -53,7 +53,7 @@ The following example shows the `self.animationParameterShortcuts` table that is
 			["rotation"] = {"UiTransform2dComponent", "Rotation" },
 			["w"] = {"UiTransform2dComponent", "LocalWidth" },
 			["h"] = {"UiTransform2dComponent", "LocalHeight" },
-			
+
 			--3d transform
 			["3dposition"] = {"TransformComponent", "Position" },
 			["3drotation"] = {"TransformComponent", "Rotation" },

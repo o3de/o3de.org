@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the point generation and evaluation in &ALYlong;. '
+description: ' Learn more about the point generation and evaluation in Amazon Lumberyard. '
 title: Point Generation and Evaluation
 ---
 # Point Generation and Evaluation {#ai-tactical-point-generation-evaluation}
@@ -15,7 +15,7 @@ The following information are required to generate points:
 + A central or focal position around which to generate points\. This might be the current position of the puppet itself, an attention target, or some other given position\.
 + For some queries, the position of a secondary object, such as a target to hide from\.
 
-It is possible to specify multiple sets of point generation criteria\. For example, a query might request point generation around both the puppet and an attention target\. 
+It is possible to specify multiple sets of point generation criteria\. For example, a query might request point generation around both the puppet and an attention target\.
 
 ### Processing {#ai-tactical-point-generation-processing}
 
@@ -33,18 +33,18 @@ Based on the input, TPS begins generating points to evaluate\. All points fall i
 
 ### Output {#ai-tactical-point-generation-output}
 
-The result of a point generation query is a list of point objects\. Each point object includes the point's position and available metadata, such as any associated hide objects\. 
+The result of a point generation query is a list of point objects\. Each point object includes the point's position and available metadata, such as any associated hide objects\.
 
 ## Evaluating Points {#ai-tactical-point-evaluation}
 
-Once a generation query generates a set of points, they can be evaluated\. Point evaluation tries to establish the "fitness" of each point, that is, how well the point matches the specified criteria\. The goal is to choose either one good point, or the best *N* number of good points\. 
+Once a generation query generates a set of points, they can be evaluated\. Point evaluation tries to establish the "fitness" of each point, that is, how well the point matches the specified criteria\. The goal is to choose either one good point, or the best *N* number of good points\.
 
 ### Input {#ai-tactical-point-evaluation-input}
 
 The following elements are required to evaluate points:
 + List of candidate points from the point generator
 + Point evaluation criteria:
-  + Boolean - Condition criteria used to include or exclude a point independently of any other points 
+  + Boolean - Condition criteria used to include or exclude a point independently of any other points
   + Weight - Criteria that, combined, give a measure of fitness relative to other points \(those included by the boolean criteria\)
 
 ### Processing {#ai-tactical-point-evaluation-processing}
@@ -63,14 +63,14 @@ The order of evaluation has a non\-trivial and crucial impact on query efficienc
 
 ### Algorithmic Details {#ai-tactical-point-evaluation-algorithmic}
 
- It turns out that the system can go further with this by interleaving the final two steps and making evaluation order completely dynamic\. Unlike conditions \(booleans\), weights don't explicitly discount points from further evaluation\. However, by tracking the relative "fitness" of points during evaluation, we can still employ weights to dramatically reduce evaluations by employing two basic principles: 
+ It turns out that the system can go further with this by interleaving the final two steps and making evaluation order completely dynamic\. Unlike conditions \(booleans\), weights don't explicitly discount points from further evaluation\. However, by tracking the relative "fitness" of points during evaluation, we can still employ weights to dramatically reduce evaluations by employing two basic principles:
 + Evaluate points in order of their maximum possible fitness, to fully evaluate the optimal point as quickly as possible\.
-+ If, based on the initial weight evaluation, a point can be established as better than any other point, then immediately finish evaluating it against the remaining conditions\. If the point passes all condition criteria, then it is the optimal point and no other points need to be evaluated\. In addition, this point does not need to be evaluated on any remaining weights\. 
++ If, based on the initial weight evaluation, a point can be established as better than any other point, then immediately finish evaluating it against the remaining conditions\. If the point passes all condition criteria, then it is the optimal point and no other points need to be evaluated\. In addition, this point does not need to be evaluated on any remaining weights\.
 
-This implementation is based on a heap structure that orders points according to their maximum possible fitness and tracks the evaluation progress of each point separately\. Each weight evaluation collapses some of the uncertainty around the point, adjusting both the minimum and maximum possible fitness\. If the weight evaluation scored highly, the maximum will decrease a little and the minimum increase a lot; if it scored badly, the maximum will decrease a lot and the minimum increase a little\. 
+This implementation is based on a heap structure that orders points according to their maximum possible fitness and tracks the evaluation progress of each point separately\. Each weight evaluation collapses some of the uncertainty around the point, adjusting both the minimum and maximum possible fitness\. If the weight evaluation scored highly, the maximum will decrease a little and the minimum increase a lot; if it scored badly, the maximum will decrease a lot and the minimum increase a little\.
 
 In each iteration, the next most expensive evaluation is done on the point at the top of the heap, after which the point is re\-sort into place if necessary\. If all evaluations on a point have been completed and it still has the maximum possible fitness, then it must be the optimal point\. This approach tends towards evaluation of the optimal point with relatively few evaluations on all other points\.
 
 ### Output {#ai-tactical-point-evaluation-output}
 
-The result of point generation evaluation is a single point or group of *N* number of points, and the opportunity to request all metadata leading to its selection\. As a result, behaviors can adapt their style to reflect the nature the hidepoint received\. 
+The result of point generation evaluation is a single point or group of *N* number of points, and the opportunity to request all metadata leading to its selection\. As a result, behaviors can adapt their style to reflect the nature the hidepoint received\.

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use &cloud; Resource Manager effectively when programming
+description: ' Learn how to use Cloud Canvas Resource Manager effectively when programming
   your cloud-connected game project. '
 title: Resource Manager in Depth
 ---

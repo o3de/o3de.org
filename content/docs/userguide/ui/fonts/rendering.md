@@ -1,5 +1,5 @@
 ---
-description: ' Specify how fonts render in &ALYlong;''s UI system. '
+description: ' Specify how fonts render in Amazon Lumberyard''s UI system. '
 title: Configuring Font Rendering Quality
 ---
 # Configuring Font Rendering Quality {#ui-fonts-rendering}
@@ -14,7 +14,7 @@ Fonts are defined in XML by `*.font` files\. The XML in a `.font` file defines v
 
 ```
 <fontshader>
-    <font path="Vera.ttf" w="512" h="256"/>    
+    <font path="Vera.ttf" w="512" h="256"/>
     <effect name="default">
         <pass>
         </pass>
@@ -99,13 +99,13 @@ Knowing these calculations helps you determine the right font texture size for t
 1. After you have determined the appropriate font size for your purposes, use the following formula to determine the font texture width and height:
    + Texture width = Font size \* `widthslots`
    + Texture height = Font size \* `heightslots`
-**Note**  
+**Note**
 The default value for `widthslots` and `heightslots` is *16* and *8*, respectively, which gives 128 total character slots\. If you need to render more than 128 unique characters to the screen in a single frame-for example, if your game supports Chinese, Japanese, or Korean text- adjust these values accordingly\.
 
 1. Edit your font `.font` to use the calculated font texture size\.
 
-**Note**  
-   
+**Note**
+
 Font texture sizes don't necessarily need to be a power of 2: 128, 256, 512, 1024, 2048, and so on\. However, the width must be a multiple of `widthslots` \(the default value is 16\), and the height must be a multiple of `heightslots` \(the default value is 8\)\.
-You can have multiple font `.font` files that reference the same TTF/OTF file but have different font texture sizes\.  
+You can have multiple font `.font` files that reference the same TTF/OTF file but have different font texture sizes\.
 For example, you might have some caption text that needs to appear only at a small font size, but you have other screens \(perhaps a menu screen\) where you want the same look and feel by using the same font\. However, it needs to be larger and therefore needs a higher resolution font texture\. You can achieve this with separate `.font` files for each use case, with font texture settings adjusted for ideal rendering quality\.

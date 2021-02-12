@@ -1,16 +1,16 @@
 ---
-description: ' Use prefabs in &ALY;''s &ui-canvas-editor; to create or add preconfigured
+description: ' Use prefabs in Lumberyard''s UI Editor to create or add preconfigured
   elements to your canvas. '
 title: Using and Creating UI Prefabs
 ---
 # Using and Creating UI Prefabs {#ui-editor-prefabs}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This system has been deprecated and will be removed in a future release\. | 
+| This system has been deprecated and will be removed in a future release\. |
 
 In the **UI Editor**, prefabs are preconfigured UI elements and compound elements that you can add to a canvas\. You can also create custom prefabs\.
 
@@ -34,7 +34,7 @@ In the **UI Editor**, prefabs are preconfigured UI elements and compound element
 
    The new element appears in the **Hierarchy** pane and viewport\.
 
-   
+
 
 If you have created your own element or modified an existing prefab, you can save it as a custom prefab\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Param Vector node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Param Vector node in the Amazon Lumberyard Script Canvas editor
   to set a material parameter with a Vector4 value. '
 title: Set Param Vector4
 ---
@@ -16,20 +16,20 @@ Sets a material parameter with a **Vector4** value\.
 ## Inputs {#script-canvas-material-set-param-vector4-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material | Material |  The material to modify\.  | 
-| Param Name | String |  The name of the material parameter to set\.  For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  | 
-| Vector4 | Vector4 |  The new value to apply\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material | Material |  The material to modify\.  |
+| Param Name | String |  The name of the material parameter to set\.  For more information, see [Finding the Material Parameter Name](/docs/userguide/materials/param-names.md)\.  |
+| Vector4 | Vector4 |  The new value to apply\.  |
 
 ## Outputs {#script-canvas-material-set-param-vector4-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

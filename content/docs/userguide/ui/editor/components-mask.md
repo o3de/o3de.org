@@ -1,6 +1,6 @@
 ---
 description: ' Add the Mask component to an element to reveal parts of the child element
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: Mask
 ---
 # Mask {#ui-editor-components-mask}
@@ -59,7 +59,7 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/userguide/ui/edi
 
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**\.
 
-**To edit a Mask component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Mask** and specify the following parameters, as appropriate:    
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-components-mask.html)
+**To edit a Mask component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **Mask** and specify the following parameters, as appropriate:
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-mask)

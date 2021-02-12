@@ -1,7 +1,7 @@
 ---
-description: ' Add virtual reality to your &ALY; project to simulate a user''s presence
+description: ' Add virtual reality to your Lumberyard project to simulate a user''s presence
   in the gaming environment. '
-title: Create virtual reality projects in &ALY;
+title: Create virtual reality projects in Lumberyard
 ---
 # Create virtual reality projects in Lumberyard {#virtual-reality}
 
@@ -11,7 +11,7 @@ Lumberyard's [virtual reality](/docs/userguide/ly-glos-chap#virtual_reality) sys
 
 To activate Lumberyard's virtual reality support, add the appropriate [Virtual Reality Gem\(s\)](/docs/userguide/vr/configuring.md) in the Project Configurator and then [build your project](/docs/userguide/game-build-intro.md)\. By enabling the appropriate Virtual Reality Gem\(s\), your project becomes capable of working with the supported virtual reality device\(s\), after some additional configuration\.
 
-Use [console variables \(CVARs\)](/docs/userguide/vr/cvars.md) to activate and modify configurable features of the virtual reality system, such as resolution and performance specifications\. 
+Use [console variables \(CVARs\)](/docs/userguide/vr/cvars.md) to activate and modify configurable features of the virtual reality system, such as resolution and performance specifications\.
 
 You can use Script Canvas for gameplay scripting of the HMD device\.
 

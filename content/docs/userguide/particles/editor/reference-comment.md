@@ -1,5 +1,5 @@
 ---
-description: ' Use the Comment attribute in the &ALYlong; &particle-editor; to add
+description: ' Use the Comment attribute in the Amazon Lumberyard Particle Editor to add
   or edit comments about an emitter. '
 title: Comment Attribute
 ---

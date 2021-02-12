@@ -1,5 +1,5 @@
 ---
-description: ' Use question operations to manage the questions in your &ALY; &cloud;
+description: ' Use question operations to manage the questions in your Lumberyard Cloud Canvas
   in-game surveys. '
 title: Question Operations
 ---

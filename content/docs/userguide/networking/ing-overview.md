@@ -1,5 +1,5 @@
 ---
-description: ' Learn about &ALYlong;''s networking capabilities. '
+description: ' Learn about Amazon Lumberyard''s networking capabilities. '
 title: Overview
 ---
 # Overview {#networking-overview}

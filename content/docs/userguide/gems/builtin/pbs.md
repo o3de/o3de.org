@@ -1,5 +1,5 @@
 ---
-description: ' &ALY; '
+description: ' Lumberyard '
 title: Physically Based Shaders (PBS) Gem
 ---
 # Physically Based Shaders \(PBS\) Gem {#gems-system-gem-pbs}
@@ -18,12 +18,12 @@ The following procedure describes a very simple example work flow for applying a
 
 1. [Add](/docs/userguide/components/working-adding.md) a [Mesh](/docs/userguide/components/static-mesh#component-static-mesh-properties) component to your entity\.
 
-1. In the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md), in the **Mesh** component, next to the **Mesh Asset** property, click '**…**' to specify an asset\. 
+1. In the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md), in the **Mesh** component, next to the **Mesh Asset** property, click '**…**' to specify an asset\.
 
-   In the **Pick Static Mesh** dialog, browse to `\SamplesProject\Objects\Primitives`\. Pick one of the `.cgf` files in that directory\. Click **OK**\.  
+   In the **Pick Static Mesh** dialog, browse to `\SamplesProject\Objects\Primitives`\. Pick one of the `.cgf` files in that directory\. Click **OK**\.
 ![\[The file cylinder_001.cgf is selected in the Pick Static Mesh dialog\]](/images/userguide/gems/gems-system-gem-pbs-1.png)
 
-   The object that you picked now appears in your **Viewport**\.  
+   The object that you picked now appears in your **Viewport**\.
 ![\[The cylinder appears in the Viewport\]](/images/userguide/gems/gems-system-gem-pbs-2.png)
 
 1. Make sure your object is still selected\.
@@ -32,13 +32,13 @@ The following procedure describes a very simple example work flow for applying a
 
 1. In the **Material Editor**'s navigation pane, browse to `\Gems\PBSreferenceMaterials\Assets\materials\pbs_reference`\.
 
-   Select one of the `.mtl` files listed\.  
+   Select one of the `.mtl` files listed\.
 ![\[The file car_paint.mtl is selected in the Material Editor\]](/images/userguide/gems/gems-system-gem-pbs-3.png)
 
-1. In the **Material Editor**'s toolbar, click the **Assign Item to Selected Object** icon\.  
+1. In the **Material Editor**'s toolbar, click the **Assign Item to Selected Object** icon\.
 ![\[Click the Assign Item to Selected Objects icon in the toolbar\]](/images/userguide/gems/gems-system-gem-pbs-4.png)
 
    Close or move the **Material Editor** to see your **Viewport**\.
 
-   The assigned material is now applied to your object\.  
+   The assigned material is now applied to your object\.
 ![\[The assigned material is applied to the cylinder in the Viewport\]](/images/userguide/gems/gems-system-gem-pbs-5.png)

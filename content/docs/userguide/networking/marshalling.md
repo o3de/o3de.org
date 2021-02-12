@@ -1,5 +1,5 @@
 ---
-description: ' Learn how marshalers read and write data to and from buffers in a &ALYlong;
+description: ' Learn how marshalers read and write data to and from buffers in a Amazon Lumberyard
   GridMate network session. '
 title: Marshalling
 ---
@@ -104,46 +104,46 @@ GridMate includes the following predefined marshalers:
 ### Fundamental C\+\+ Types {#network-marshalling-predefined-marshalers-fundamental}
 
 
-****  
+****
 
-| **Floating point** | **Misc ** | **Unsigned ** | **Signed ** | 
-| --- | --- | --- | --- | 
-| `float` `double` | `char` `bool` `enum` \(specify marshaled size by inheriting `enum` from a type\) | `AZ::u8` `AZ::u16` `AZ::u32` `AZ::u64` | `AZ::s8` `AZ::s16` `AZ::s32` `AZ::s64` | 
+| **Floating point** | **Misc ** | **Unsigned ** | **Signed ** |
+| --- | --- | --- | --- |
+| `float` `double` | `char` `bool` `enum` \(specify marshaled size by inheriting `enum` from a type\) | `AZ::u8` `AZ::u16` `AZ::u32` `AZ::u64` | `AZ::s8` `AZ::s16` `AZ::s32` `AZ::s64` |
 
 ### Container Types {#network-marshalling-predefined-marshalers-container}
 
 
-****  
+****
 
-| **Sequence** | **Associative ** | **Explicit Marshalers ** | 
-| --- | --- | --- | 
-| `vector` `list` `string` | `map` `set` `unordered_map` `unordered_set` `multimap` `multiset`  | `ContainerMarshaler` `MapContainerMarshaler` \(Use these marshalers when the subtypes of the container require a non\-default marshaler\) | 
+| **Sequence** | **Associative ** | **Explicit Marshalers ** |
+| --- | --- | --- |
+| `vector` `list` `string` | `map` `set` `unordered_map` `unordered_set` `multimap` `multiset`  | `ContainerMarshaler` `MapContainerMarshaler` \(Use these marshalers when the subtypes of the container require a non\-default marshaler\) |
 
 ### Utility Types {#network-marshalling-predefined-marshalers-utility}
 
 
-****  
+****
 
-| **Name ** | **Description ** | 
-| --- | --- | 
-| ConversionMarshaler<SerializedType, OriginalType> | Performs static casts between SerializedType \(type on the wire\) and OriginalType \(type declared in user code\)\. | 
-| AZ::Crc32 | A CRC32 value\. | 
-| AZStd::bitset | A class for arbitrary flags\. | 
-| AZStd::pair | A std pair class\. Implicitly used by the map, unordered\_map, and multimap marshalers\. | 
-| AZ::Aabb | An axis aligned bounding box\. | 
-| AZStd::chrono::duration | A time duration in 32 bit milliseconds\. | 
-| GridMate::UnionDataSet | A type safe tagged union designed for network transmission\. | 
+| **Name ** | **Description ** |
+| --- | --- |
+| ConversionMarshaler<SerializedType, OriginalType> | Performs static casts between SerializedType \(type on the wire\) and OriginalType \(type declared in user code\)\. |
+| AZ::Crc32 | A CRC32 value\. |
+| AZStd::bitset | A class for arbitrary flags\. |
+| AZStd::pair | A std pair class\. Implicitly used by the map, unordered\_map, and multimap marshalers\. |
+| AZ::Aabb | An axis aligned bounding box\. |
+| AZStd::chrono::duration | A time duration in 32 bit milliseconds\. |
+| GridMate::UnionDataSet | A type safe tagged union designed for network transmission\. |
 
 ### Compression Types {#network-marshalling-predefined-marshalers-compression}
 
 
-****  
+****
 
-| **Name ** | **Description ** | 
-| --- | --- | 
-| Float16Marshaler | Compresses a float32 to float16\. | 
-| HalfMarshaler | Compresses a float to half precision\. | 
-| IntegerQuantizationMarshaler<Min, Max, Bytes> | Quantizes an integer in the range \[Min, Max\] to the number of bytes specified in Bytes\. | 
+| **Name ** | **Description ** |
+| --- | --- |
+| Float16Marshaler | Compresses a float32 to float16\. |
+| HalfMarshaler | Compresses a float to half precision\. |
+| IntegerQuantizationMarshaler<Min, Max, Bytes> | Quantizes an integer in the range \[Min, Max\] to the number of bytes specified in Bytes\. |
 
 ## Custom Marshalers {#network-marshalling-custom-marshalers}
 

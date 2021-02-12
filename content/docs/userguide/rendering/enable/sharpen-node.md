@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Sharpen node in the &ALYlong; &script-canvas; editor
+description: ' Use the Enable Sharpen node in the Amazon Lumberyard Script Canvas editor
   to configure the sharpen filter effect. '
 title: Enable Sharpen
 ---
@@ -15,25 +15,25 @@ To disable the effect, see [Disable Sharpen](/docs/userguide/rendering/disable/s
 
 ![\[enablesharpennode, enablesharpen\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-sharpen-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Sharpen node to sharpen the game details.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-sharpen-node-example.png)
 
 ## Inputs {#enable-sharpen-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| Amount | Number |  Amount of sharpening\. Default value: `1`  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| Amount | Number |  Amount of sharpening\. Default value: `1`  |
 
 ## Outputs {#enable-sharpen-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

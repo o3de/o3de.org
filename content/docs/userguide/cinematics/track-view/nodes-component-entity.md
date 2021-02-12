@@ -1,5 +1,5 @@
 ---
-description: ' Create a component entity node to add to a track in &ALYlong;''s &trackview-editor;. '
+description: ' Create a component entity node to add to a track in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
 title: Component Entities and Component Nodes
 ---
 # Component Entities and Component Nodes {#cinematics-track-view-nodes-component-entity}
@@ -9,16 +9,16 @@ title: Component Entities and Component Nodes
 + [Adding or Removing Components from a Component Entity](#cinematics-track-view-component-entity-add-remove-components)
 + [Animating Components on a Component Entity](#cinematics-track-view-animating-components-on-component-entities)
 
-In the Track View, *component entity nodes* function as containers for *component nodes*\. 
+In the Track View, *component entity nodes* function as containers for *component nodes*\.
 
-When you add an animation using the Track View, the animation track is applied to a component node\. Component entity nodes don't directly have tracks or key properties\. 
+When you add an animation using the Track View, the animation track is applied to a component node\. Component entity nodes don't directly have tracks or key properties\.
 
-**Example**  
-The component entity **GameObject** contains **Transform**, **Mesh**, and **Point Light** components\. When you add the **GameObject** component entity to a sequence in the Track View, you can see all the components in the node browser\. The component entity node is a reference to which components are animated in the sequence\.  
+**Example**
+The component entity **GameObject** contains **Transform**, **Mesh**, and **Point Light** components\. When you add the **GameObject** component entity to a sequence in the Track View, you can see all the components in the node browser\. The component entity node is a reference to which components are animated in the sequence\.
 
 ![\[Track View and the Entity Inspector with the same component entities.\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
 
-Component nodes that can be animated are nested as children under the associated entity node\. You can add animation tracks to any of these component nodes\. 
+Component nodes that can be animated are nested as children under the associated entity node\. You can add animation tracks to any of these component nodes\.
 
 **To add a track to an animation node**
 
@@ -34,9 +34,9 @@ For more information about adding node support to the Track View, see [Exposing 
 
 ## Naming and Identifying Component Entities {#cinematics-track-view-component-entity-name-components}
 
-Lumberyard uses entity IDs to identify component entities, which means that you can name your component entities as you want\. This includes reusing the same name for multiple entities\. In the Track View, if component entity nodes share the same name, a number is appended to the name\. This doesn't change the name of the component entity in the level, but it might be difficult to determine which entity to animate\. 
+Lumberyard uses entity IDs to identify component entities, which means that you can name your component entities as you want\. This includes reusing the same name for multiple entities\. In the Track View, if component entity nodes share the same name, a number is appended to the name\. This doesn't change the name of the component entity in the level, but it might be difficult to determine which entity to animate\.
 
-**Example**  
+**Example**
 
 ![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
@@ -44,14 +44,14 @@ If you have component entities with the same name \(for example, if they're mult
 
 ## Adding or Removing Components from a Component Entity {#cinematics-track-view-component-entity-add-remove-components}
 
-When you add a component to a component entity in Lumberyard Editor, the component is automatically added to any component entity nodes in the Track View\. When you remove a component, the component and any animation data are also removed from the Track View\. 
+When you add a component to a component entity in Lumberyard Editor, the component is automatically added to any component entity nodes in the Track View\. When you remove a component, the component and any animation data are also removed from the Track View\.
 
-**Important**  
+**Important**
 Be careful when removing components from component entities because it might affect your existing sequence\. For example, if you remove a **Simple Motion** component from an entity that is part of a sequence, the animation no longer references the specified animation\.
 
 ## Animating Components on a Component Entity {#cinematics-track-view-animating-components-on-component-entities}
 
-Component nodes that can be animated are nested as children under the associated component entity node\. You can add animation tracks to any of these component nodes\. 
+Component nodes that can be animated are nested as children under the associated component entity node\. You can add animation tracks to any of these component nodes\.
 
 **To add an animation track to a component node**
 
@@ -59,7 +59,7 @@ Component nodes that can be animated are nested as children under the associated
 
 1. In the node browser, right\-click the component node and choose **Add Track**, then choose the track that you want\.
 
-**Note**  
+**Note**
 Some components support only a limited number of tracks that can be animated in a sequence\. For more information for component\-specific properties, see the [Component Reference](/docs/userguide/components/components.md)\.
 Not all components can be animated in the Track View\. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/userguide/components/entity-system-track-view.md)\.
 

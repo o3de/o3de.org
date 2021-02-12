@@ -1,6 +1,6 @@
 ---
 description: ' Use the AZ test scanner tool to run unit tests that are built into
-  &ALY; libraries and executables. '
+  Lumberyard libraries and executables. '
 title: Using AZ Test Scanner
 ---
 # Using AZ Test Scanner {#testing-aztestscanner}
@@ -31,7 +31,7 @@ lmbr_waf.bat build_win_x64_vs2019_debug_test -p all
 lmbr_waf.bat build_win_x64_vs2019_profile_test -p all
 ```
 
-**Note**  
+**Note**
 Only Windows debug and profile builds are supported for testing\. Other platforms are not supported\. Release builds are not supported either\.
 
 For more information on writing tests, see [Writing Tests for AzTest](/docs/userguide/programming/testing/aztest-writing-tests.md)\.
@@ -41,7 +41,7 @@ For more information on writing tests, see [Writing Tests for AzTest](/docs/user
 A completed test build includes the file `AzTestRunner.exe` in the `\Bin64vc141.Test` folder\. Although you can use this to run tests, we recommend that you use the test scanner that uses `AzTestRunner.exe` in an automated manner\.
 
 You have two ways to use the scanner:
-+ Include the AZ test module in your Python path: `python -m aztest`\. 
++ Include the AZ test module in your Python path: `python -m aztest`\.
 + Use the `lmbr_test.cmd` script located in the Lumberyard `\dev` folder\. This automatically includes the AZ test module in your Python path and sends all script parameters to the module\.
 
 The following example uses the `lmbr_test.cmd` scripts\. The scanner has several options but only requires one parameter to operate: the build directory to scan\. You can use the following command to scan your entire test build:
@@ -51,7 +51,7 @@ The following example uses the `lmbr_test.cmd` scripts\. The scanner has several
 lmbr_test.cmd scan --dir Bin64vc141.Debug.Test
 ```
 
-**Note**  
+**Note**
 The default scan tests libraries only\. It does not attempt to test any executables it finds\. This is because executables that are not set up to run tests interrupt the scanner until you close the application\.
 
 The scanner produces three types of files\. All files are created in the current working directory from which the scanner is called:
@@ -68,29 +68,29 @@ The scanner runs only unit tests by default\. This is because unit tests are des
 lmbr_test.cmd scan --dir Bin64vc141.Debug.Test --only CrySystem.dll --integ
 ```
 
-**Note**  
+**Note**
 For best results, run integration tests on a single library or use an allow list \. Scanning the full build might take hours to complete\.
 
- 
 
 
-****  
 
-| Option | Required? | Description | 
-| --- | --- | --- | 
-| \-\-dir, \-d | Yes | The directory to scan for tests\. | 
-| \-\-runner\-path | No | Path to the AZ test runner executable \(the default is to look in the directory specified by \-\-dir\)\. | 
-| \-\-add\-path | No | Adds path to system path before running tests; used for resolving library or executable dependencies\. | 
-| \-\-output\-path | No | Sets the path for output folder prefix \(the default is \\dev\\TestResults \)\. | 
-| \-\-integ, \-i | No | If set, runs integration tests instead of unit tests\. | 
-| \-\-no\-timestamp | No | If set, removes the time stamp from output files\. | 
-| \-\-wait\-for\-debugger | No | If set, tells the AZ test runner executable to wait for a debugger to be attached before running tests\. | 
-| \-\-bootstrap\-config | No | Path to a JSON configuration file for bootstrapping applications required by libraries\. | 
-| \-\-limit, \-n | No | Sets a limit for the maximum number of modules to scan\. | 
-| \-\-only, \-o | No | Sets a filter to run tests on only the specified library or executable name\. | 
-| \-\-whitelist\-file | No | Path to a new line\-delimited file used as an inclusion list\. The new line\-delimited file allows for regular expressions when matching\. | 
-| \-\-blacklist\-file | No | Path to a new line\-delimited file used as an exclusion list\. The exclusion list takes precedence over the inclusion list\. The new line\-delimited file allows for regular expressions when matching\. | 
-| \-\-exe | No | If set, causes the scanner to call executables for testing\. \(The default is to test only libraries\.\) | 
+****
+
+| Option | Required? | Description |
+| --- | --- | --- |
+| \-\-dir, \-d | Yes | The directory to scan for tests\. |
+| \-\-runner\-path | No | Path to the AZ test runner executable \(the default is to look in the directory specified by \-\-dir\)\. |
+| \-\-add\-path | No | Adds path to system path before running tests; used for resolving library or executable dependencies\. |
+| \-\-output\-path | No | Sets the path for output folder prefix \(the default is \\dev\\TestResults \)\. |
+| \-\-integ, \-i | No | If set, runs integration tests instead of unit tests\. |
+| \-\-no\-timestamp | No | If set, removes the time stamp from output files\. |
+| \-\-wait\-for\-debugger | No | If set, tells the AZ test runner executable to wait for a debugger to be attached before running tests\. |
+| \-\-bootstrap\-config | No | Path to a JSON configuration file for bootstrapping applications required by libraries\. |
+| \-\-limit, \-n | No | Sets a limit for the maximum number of modules to scan\. |
+| \-\-only, \-o | No | Sets a filter to run tests on only the specified library or executable name\. |
+| \-\-whitelist\-file | No | Path to a new line\-delimited file used as an inclusion list\. The new line\-delimited file allows for regular expressions when matching\. |
+| \-\-blacklist\-file | No | Path to a new line\-delimited file used as an exclusion list\. The exclusion list takes precedence over the inclusion list\. The new line\-delimited file allows for regular expressions when matching\. |
+| \-\-exe | No | If set, causes the scanner to call executables for testing\. \(The default is to test only libraries\.\) |
 
 The scanner also accepts additional parameters that are passed to the testing framework\. For Lumberyard, GoogleTest, and GoogleMock for C\+\+ are used for unit testing\. You can enter parameters in the scanner command line as shown in the following example:
 
@@ -121,7 +121,7 @@ lmbr_waf.bat build_win_x64_vs2017_debug_test -p all --target CrySystem run_tests
 
 ### Including and excluding to filter tests {#testing-aztestscanner-include-exclude}
 
-The test scanner includes the ability to use include and exclude files to filter out libraries and executables that you do not want to test\. By default, all found tests are run\. In all cases, modules that are excluded are never tested even if they are part of the inclusion list\. 
+The test scanner includes the ability to use include and exclude files to filter out libraries and executables that you do not want to test\. By default, all found tests are run\. In all cases, modules that are excluded are never tested even if they are part of the inclusion list\.
 
 Both include and exclude lists use a new line\-delimited text file for defining what modules to scan\. Each line is treated as a regular expression for matching, allowing for easy filtering by modules with similar names or in the same directory\. Here is an example file:
 

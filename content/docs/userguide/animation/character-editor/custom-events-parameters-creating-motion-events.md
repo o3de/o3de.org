@@ -1,5 +1,5 @@
 ---
-description: ' Create motion events for your game project in &ALYlong;. '
+description: ' Create motion events for your game project in Amazon Lumberyard. '
 title: Creating Motion Events
 ---
 # Creating Motion Events {#char-animation-editor-custom-events-parameters-creating-motion-events}

@@ -1,10 +1,10 @@
 ---
-description: ' Add a Director (Scene) node in the &trackview-editor; in &ALYlong;. '
+description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Adding a Director (Scene) Node
 ---
 # Adding a Director \(Scene\) Node {#cinematics-adding-a-director-scene-node}
 
-To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\. 
+To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\.
 
 **To add a Director node in the Track View**
 
@@ -14,10 +14,10 @@ To determine what camera you want your sequence to use, you must add a [Director
 
 1. Do one of the following:
    + Right\-click your sequence and choose **Add Director \(Scene\) Node**\.
-   + Click the **Add Director Node** icon\.  
+   + Click the **Add Director Node** icon\.
 ![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-adding-director-node-1.png)
 
-By default, the **Camera** track appears on the **Director \(Scene\) Node** to control which camera is active for the sequence\. This is the only track that is needed to assign and switch between cameras\. 
+By default, the **Camera** track appears on the **Director \(Scene\) Node** to control which camera is active for the sequence\. This is the only track that is needed to assign and switch between cameras\.
 
 For more information about other tracks that you can add, see the [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md)\.
 

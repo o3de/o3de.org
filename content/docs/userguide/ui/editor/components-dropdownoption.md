@@ -1,6 +1,6 @@
 ---
 description: ' Use the DropdownOption component to make an element an option in a
-  drop-down menu in the &ALYlong; &ui-canvas-editor;. '
+  drop-down menu in the Amazon Lumberyard UI Editor. '
 title: DropdownOption
 ---
 # DropdownOption {#ui-editor-components-dropdownoption}
@@ -14,13 +14,13 @@ To see an in\-game example of a completed canvas with the **DropdownOption** com
 
 To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Dropdown` directory and open the `UsingUi.uicanvas` file\. This canvas features a drop\-down menu with a scroll box, image, check box, slider, and radio buttons\.
 
-**To edit a DropdownOption component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **DropdownOption** and do the following, as appropriate:    
-**Interactable**  
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
-**Elements, Owning Dropdown**  
-Select an element from the list that has the **DropdWown** component\. This is the element to be modified when this option is selected\.  
-**Elements, Text Element**  
-Select an element from the list that displays the text corresponding to this option\. This text is displayed on the owning drop\-down menu when this option is selected \(as long as the drop\-down menu has a **Text Element** configured\)\.  
-**Elements, Icon Element**  
+**To edit a DropdownOption component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **DropdownOption** and do the following, as appropriate:
+**Interactable**
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+**Elements, Owning Dropdown**
+Select an element from the list that has the **DropdWown** component\. This is the element to be modified when this option is selected\.
+**Elements, Text Element**
+Select an element from the list that displays the text corresponding to this option\. This text is displayed on the owning drop\-down menu when this option is selected \(as long as the drop\-down menu has a **Text Element** configured\)\.
+**Elements, Icon Element**
 Select an element from the list that displays the icon corresponding to this option\. This icon is displayed on the owning drop\-down menu when this option is selected \(as long as the drop\-down menu has an **Icon Element** configured\)\.

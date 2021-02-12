@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about demo and video capture in &ALYlong;. '
+description: ' Learn more about demo and video capture in Amazon Lumberyard. '
 title: Demo and Video Capture
 ---
 # Demo and Video Capture {#demo-video-capture-intro}

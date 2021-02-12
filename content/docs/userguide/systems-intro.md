@@ -1,7 +1,7 @@
 ---
-description: ' Use these AZ APIs to access infrastructure functionality in the &ALYlong;
+description: ' Use these AZ APIs to access infrastructure functionality in the Amazon Lumberyard
   engine from your game. '
-title: Working with &ALYlong; systems APIs
+title: Working with Amazon Lumberyard systems APIs
 ---
 # Working with Amazon Lumberyard systems APIs {#systems-intro}
 

@@ -1,6 +1,6 @@
 ---
-description: ' Debug &asset-processor; issues in &ALYlong; '
-title: Debugging &asset-processor;
+description: ' Debug Asset Processor issues in Amazon Lumberyard '
+title: Debugging Asset Processor
 ---
 # Debugging Asset Processor {#asset-processor-debugging}
 
@@ -16,17 +16,17 @@ Use the following options to help debug Asset Processor issues\.
 
 ## Viewing Asset Processor Log Files {#asset-processor-log-files}
 
-You can view logs for internal operations of Asset Processor\. If Asset Processor isn't processing or working as expected, use the information in the logs to debug the issue\. This doesn't include logs for the processing of individual assets\. 
+You can view logs for internal operations of Asset Processor\. If Asset Processor isn't processing or working as expected, use the information in the logs to debug the issue\. This doesn't include logs for the processing of individual assets\.
 
 **To view the Asset Processor log files**
 
 1. In Asset Processor, choose **Logs**\.
 
 1. In the **Logs** section, you can view the following:
-   + **Status** - The date and time stamp of the log 
+   + **Status** - The date and time stamp of the log
    + **Source** - Where the log came from \(for example, Asset Processor\)
-   + **Message** - The description of the log  
-**Example**    
+   + **Message** - The description of the log
+**Example**
 ![\[View logs in Asset Processor.\]](/images/userguide/asset_processor/logs.png)
 
 1. To create another log report, click **Add**\.
@@ -37,12 +37,12 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
    + **Show messages** - Displays messages about each log\.
    + **Show warnings** - Displays logs that have warnings\.
    + **Show errors** - Displays logs that have errors\.
-   + **Show debug** - Displays logs that have debug issues\.  
+   + **Show debug** - Displays logs that have debug issues\.
 ![\[Create a log tab in Asset Processor.\]](/images/userguide/asset_processor/create-logging-tab.png)
 
 1. Click **OK**\. Your log report appears as another tab in Asset Processor\.
 
-1. You can click **Copy all** and paste the raw logs into a text file\. 
+1. You can click **Copy all** and paste the raw logs into a text file\.
 
 1. You can also click **Open log files** to open `lumberyard_version\dev\Bin64vc141\logs\JobLogs` directory\.
 
@@ -64,7 +64,7 @@ You can restart Lumberyard Editor and Asset Processor\. Verify that only one ins
 
 You can also debug Asset Processor using Asset Builder\. This is a standalone AzToolsFramework application that lets you run BuilderSDK modules in isolation\. You can run AssetBuilder in debug mode to develop new features for a builder\. In debug mode, Asset Builder creates a test job or processes jobs for specified files\.
 
-**Note**  
+**Note**
 You must start Asset Processor before you can enter a `-debug` command\.
 
 **To debug Asset Processor using Asset Builder**
@@ -77,26 +77,26 @@ You must start Asset Processor before you can enter a `-debug` command\.
    AssetBuilder.exe -help
    ```
 
-1. You can use the following debug options\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/asset-processor-debugging.html)
+1. You can use the following debug options\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/assets/processing/debugging)
 
-**Example**  
-To debug a specified file, run the following command\.  
+**Example**
+To debug a specified file, run the following command\.
 
 ```
 AssetBuilder.exe -debug Objects\Tutorials\Fbx\shapes.fbx
 ```
 
-**Example**  
-To create a job without processing a specified file, run the following command\.  
+**Example**
+To create a job without processing a specified file, run the following command\.
 
 ```
 AssetBuilder.exe -debug_create "Objects\Tutorials\Fbx\shapes.fbx" -module "C:\lumbeyard_version\dev\Bin64vc141.Debug\Builders\ExampleBuilder.dll" -output "C:\lumbeyard_version\dev\Logs\Shapes\"
 ```
 
-**Example**  
-To process without creating a job for a specified file, run the following command\.  
+**Example**
+To process without creating a job for a specified file, run the following command\.
 
 ```
 AssetBuilder.exe -debug_process "Objects\Tutorials\Fbx\shapes.fbx"
@@ -132,14 +132,14 @@ Use the following procedure to debug in the following scenarios:
 
    The next time that you modify your source file, `AssetBuilder.exe` builds that asset\.
 
-**Tip**  
+**Tip**
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio\.
 
 ## Clearing the Cache {#clearing-asset-processor-cache}
 
 If you're a game artist and you're having issues running Asset Processor, this might be the result of a corrupt cache\. In this case, you can delete your `Cache` directory\. When you delete your cache, you can restart Asset Processor to rebuild all of your assets\.
 
-**Note**  
+**Note**
 If you're an engineer making new BuilderSDK\-based builders, we recommend that you don't delete your cache\.
 
 **To delete the Asset Processor cache**

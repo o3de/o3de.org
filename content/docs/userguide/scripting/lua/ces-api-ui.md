@@ -1,5 +1,5 @@
 ---
-description: ' Legacy script UI functionality in &ALYlong; using the Lua scripting
+description: ' Legacy script UI functionality in Amazon Lumberyard using the Lua scripting
   language. '
 title: UI Lua Reference
 ---

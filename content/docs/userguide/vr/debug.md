@@ -1,5 +1,5 @@
 ---
-description: ' Turn on debugging in &ALY; to display virtual reality debugging information
+description: ' Turn on debugging in Lumberyard to display virtual reality debugging information
   in a supported head-mounted display. '
 title: Debugging your Virtual Reality Project
 ---

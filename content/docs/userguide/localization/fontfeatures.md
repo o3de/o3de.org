@@ -1,5 +1,5 @@
 ---
-description: ' Understand font features for &ALYlong;''s localization system. '
+description: ' Understand font features for Amazon Lumberyard''s localization system. '
 title: Font Features
 ---
 # Font Features {#localization-fontfeatures}

@@ -35,14 +35,14 @@ To customize `.fbx` settings, find the asset in **Asset Browser**\. Right\-click
 When you export or copy image files to a directory in your current game project, Asset Processor detects the files\. Using these files as input, Lumberyard calculates default settings\. These settings specify how Asset Processor converts the files into the appropriate textures\.
 
 To customize the texture settings, find the image asset in **Asset Browser**\. Right\-click the asset and select **Edit Image Settings** to open **Texture Settings Editor**\. In **Texture Settings Editor**, you can choose from presets based on the texture type and specify settings for various platforms\. **Texture Settings Editor** displays a preview image of the texture so you can view the settings results\.
-+  `.bmp` 
-+  `.gif` 
-+  `.jpg` 
-+  `.jpeg` 
-+  `.png` 
-+  `.tga` 
-+  `.tif` 
-+  `.tiff` 
++  `.bmp`
++  `.gif`
++  `.jpg`
++  `.jpeg`
++  `.png`
++  `.tga`
++  `.tif`
++  `.tiff`
 
 ## Asset Editor<a name="tool-asset-editor"></a>
 

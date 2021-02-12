@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIInteractableComponent to control elements that respond to
-  user input in &ALYlong;. '
+  user input in Amazon Lumberyard. '
 title: UIInteractableComponent
 ---
 # UIInteractableComponent {#lua-scripting-ces-api-ui-uiinteractablecomponent}
@@ -48,7 +48,7 @@ Sets whether event handling is enabled\.
 **Syntax**
 
 ```
-void SetIsHandlingEvents (bool isHandlingEvents) 
+void SetIsHandlingEvents (bool isHandlingEvents)
 ```
 
 ## UiInteractableActionsBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractableactionsbus}
@@ -278,7 +278,7 @@ Sets the sprite path to be used for the specified target when the interactable e
 **Syntax**
 
 ```
-void SetStateSpritePathname(eUiInteractableState state, AZ::EntityId target, const AZStd::string& spritePath) 
+void SetStateSpritePathname(eUiInteractableState state, AZ::EntityId target, const AZStd::string& spritePath)
 ```
 
 ## UiInteractableNotificationBus {#lua-scripting-ces-api-ui-uiinteractablecomponent-uiinteractablenotificationbus}

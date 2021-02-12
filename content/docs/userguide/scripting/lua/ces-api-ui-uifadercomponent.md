@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIFaderComponent fader component to simultaneously adjust the
-  transparency of an element and its children in &ALYlong;. '
+  transparency of an element and its children in Amazon Lumberyard. '
 title: UIFaderComponent
 ---
 # UIFaderComponent {#lua-scripting-ces-api-ui-uifadercomponent}
@@ -22,12 +22,12 @@ void Fade(float targetValue, float speed)
 ```
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| targetValue | The value at which to end the fade \[0,1\]\. | 
-| speed | The speed of the fade animation in full fade amount per second; 0 means instant\. | 
+| Parameter | Description |
+| --- | --- |
+| targetValue | The value at which to end the fade \[0,1\]\. |
+| speed | The speed of the fade animation in full fade amount per second; 0 means instant\. |
 
 ### GetFadeValue {#lua-scripting-ces-api-ui-uifadercomponent-uifaderbus-getfadevalue}
 

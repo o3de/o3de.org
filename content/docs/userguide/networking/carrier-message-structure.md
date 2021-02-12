@@ -1,11 +1,11 @@
 ---
-description: ' Learn about the Carrier message structure in GridMate, &ALYlong;''s
+description: ' Learn about the Carrier message structure in GridMate, Amazon Lumberyard''s
   networking system. '
 title: Carrier Message Structure
 ---
 # Carrier Message Structure {#network-carrier-message-structure}
 
-This topic describes the message structure used by the `CarrierImpl` networking class found in the `Carrier.cpp` file in the GridMate source code\. 
+This topic describes the message structure used by the `CarrierImpl` networking class found in the `Carrier.cpp` file in the GridMate source code\.
 
 In the following sections, values in parentheses indicate the field's length in bits\. For fields with variable length, the value indicates the minimum length\.
 

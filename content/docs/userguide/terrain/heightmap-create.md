@@ -1,5 +1,5 @@
 ---
-description: ' Create a terrain heightmap in &ALY; by specifying the resolution and
+description: ' Create a terrain heightmap in Lumberyard by specifying the resolution and
   grid spacing to determine the heightmap size. '
 title: Creating a Terrain Heightmap
 ---
@@ -9,13 +9,13 @@ The first step in creating the heightmap using Lumberyard Editor is to specify t
 
 Meters per texel is the distance in meters between two vertices on the grid\. So a value of two means there is a grid point every two meters\. You can use larger values to create a larger terrain, but it is less detailed for the same heightmap resolution\.
 
-The following images show a terrain heightmap and the corresponding generated terrain\. 
+The following images show a terrain heightmap and the corresponding generated terrain\.
 
-**Example Terrain Heightmap**  
+**Example Terrain Heightmap**
 
 ![\[Create a terrain heightmap in Lumberyard\]](/images/userguide/terrain/terrain-heightmap-create.png)
 
-**Example Generated Terrain**  
+**Example Generated Terrain**
 
 ![\[\]](/images/userguide/terrain/terrain-heightmap-create-2.png)
 
@@ -38,20 +38,20 @@ If you want to create the highest quality terrain heightmap for a 2K world, use 
 
 1. In Terrain Editor, click **Tools**, **Generate Terrain**\.
 
-1. In **Generation**, adjust the following parameter values as needed\.  
-**Feature Size**  
-Determines the amount of land created\.  
-**Bumpiness/Noise \(Fade\)**  
-Determines the degree of bumpiness or deformation of the surface\.  
-**Slope Detail \(Passes\)**  
-Determines the number of times that effect is applied\.  
-**Seed \(Random Base\)**  
-Determines the degree of random variation for the heightmap\.  
-**Slope Smoothing \(Blur Passes\)**  
-Sets the number of times that smoothing is applied to the noise filter\.  
-**Cover \(Exp\. Substract\)**  
-  
-**Sharpness \(Exp\. Base\)**  
-Determines the sharpness of the surface\.  
-**Sharpness \(Freq\. Step\)**  
+1. In **Generation**, adjust the following parameter values as needed\.
+**Feature Size**
+Determines the amount of land created\.
+**Bumpiness/Noise \(Fade\)**
+Determines the degree of bumpiness or deformation of the surface\.
+**Slope Detail \(Passes\)**
+Determines the number of times that effect is applied\.
+**Seed \(Random Base\)**
+Determines the degree of random variation for the heightmap\.
+**Slope Smoothing \(Blur Passes\)**
+Sets the number of times that smoothing is applied to the noise filter\.
+**Cover \(Exp\. Substract\)**
+
+**Sharpness \(Exp\. Base\)**
+Determines the sharpness of the surface\.
+**Sharpness \(Freq\. Step\)**
 Determines the number of times that the sharpness filter is applied to the surface\.

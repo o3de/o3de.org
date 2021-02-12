@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Color Correction node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Color Correction node in the Amazon Lumberyard Script Canvas
   editor to set color correction parameters. '
 title: Enable Color Correction
 ---
@@ -17,33 +17,33 @@ To disable the effect, see [Disable Color Correction](/docs/userguide/rendering/
 
 ![\[enableeffectcorrection\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-color-correction-node.png)
 
-**Example**  
-In the following example, the **Saturation** value is `2.0`\.  
+**Example**
+In the following example, the **Saturation** value is `2.0`\.
 
 ![\[Use the Enable Color Correction node to change colors for your screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-color-correcton-node-example.png)
 
 ## Inputs {#enable-color-correction-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Cyan | Number | Adjusts cyan to enhance the color of the scene\. | 
-| Magenta | Number | Adjusts magenta to enhance color of the scene\. | 
-| Yellow | Number | Adjusts yellow to enhance color of the scene\. | 
-| Luminance | Number | Adjusts luminance to enhance the color of the scene\. | 
-| Brightness | Number | Adjusts brightness to enhance light and darkness of the scene\. | 
-| Contrast | Number | Adjusts contrast to enhance the bias of highlights and shadows of the scene\. | 
-| Saturation | Number | Adjusts saturation to enhance the color intensity of the scene\. | 
-| Hue | Number | Adjusts hue to enhance the color globally\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Cyan | Number | Adjusts cyan to enhance the color of the scene\. |
+| Magenta | Number | Adjusts magenta to enhance color of the scene\. |
+| Yellow | Number | Adjusts yellow to enhance color of the scene\. |
+| Luminance | Number | Adjusts luminance to enhance the color of the scene\. |
+| Brightness | Number | Adjusts brightness to enhance light and darkness of the scene\. |
+| Contrast | Number | Adjusts contrast to enhance the bias of highlights and shadows of the scene\. |
+| Saturation | Number | Adjusts saturation to enhance the color intensity of the scene\. |
+| Hue | Number | Adjusts hue to enhance the color globally\. |
 
 ## Outputs {#enable-color-correction-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

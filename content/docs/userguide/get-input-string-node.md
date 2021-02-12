@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Input String node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Input String node in the Amazon Lumberyard Script Canvas editor
   to return the value of a procedural material input parameter as a string or image. '
 title: Get Input String
 ---
@@ -18,20 +18,20 @@ If the input parameter is a `string` type, the node returns the text value\. If 
 ## Inputs {#get-input-string-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Procedural Material | Procedural material | The procedural material to query\. | 
-| Input Name | String | The name of the input parameter to return\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Procedural Material | Procedural material | The procedural material to query\. |
+| Input Name | String | The name of the input parameter to return\. |
 
 ## Outputs {#get-input-string-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| String | String | The value of the specified input parameter\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| String | String | The value of the specified input parameter\. |

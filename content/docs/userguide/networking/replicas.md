@@ -1,5 +1,5 @@
 ---
-description: ' Use replicas to synchronize game states in &ALYlong;. '
+description: ' Use replicas to synchronize game states in Amazon Lumberyard. '
 title: Replicas
 ---
 # Replicas {#network-replicas}

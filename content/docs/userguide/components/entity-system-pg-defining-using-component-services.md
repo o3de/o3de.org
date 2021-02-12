@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to define and use component services in &ALYlong;. '
+description: ' Learn how to define and use component services in Amazon Lumberyard. '
 title: Defining and Using Component Services
 ---
 # Defining and Using Component Services {#component-entity-system-pg-defining-using-component-services}

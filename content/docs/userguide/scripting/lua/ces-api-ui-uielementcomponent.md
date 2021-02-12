@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIElementComponent to provide functionality for UI elements
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: UIElementComponent
 ---
 # UIElementComponent {#lua-scripting-ces-api-ui-uielementcomponent}
@@ -78,7 +78,7 @@ Returns the index of the specified child element\.
 **Syntax**
 
 ```
-int GetIndexOfChildByEntityId(AZ::EntityId childId) 
+int GetIndexOfChildByEntityId(AZ::EntityId childId)
 ```
 
 ### GetName {#lua-scripting-ces-api-ui-uielementcomponent-getname}
@@ -133,21 +133,21 @@ bool IsEnabled()
 
 ### Reparent {#lua-scripting-ces-api-ui-uielementcomponent-reparent}
 
-Makes this element the child of a different parent\. The element is removed from its current parent and added as a child of the parent specified by `newParent`\. 
+Makes this element the child of a different parent\. The element is removed from its current parent and added as a child of the parent specified by `newParent`\.
 
 **Syntax**
 
 ```
-void Reparent(AZ::EntityId newParent, AZ::EntityId insertBefore) 
+void Reparent(AZ::EntityId newParent, AZ::EntityId insertBefore)
 ```
 
 
-****  
+****
 
-| Parameter | Description | 
-| --- | --- | 
-| newParent | Specifies the entity ID of the new parent element\. If newParent is invalid, the element becomes a top\-level element \(that is, the canvas becomes the parent\)\. | 
-| insertBefore | Child element of the new parent before which to insert this element\. If null, the element is put at the end of the child list\. | 
+| Parameter | Description |
+| --- | --- |
+| newParent | Specifies the entity ID of the new parent element\. If newParent is invalid, the element becomes a top\-level element \(that is, the canvas becomes the parent\)\. |
+| insertBefore | Child element of the new parent before which to insert this element\. If null, the element is put at the end of the child list\. |
 
 ### SetIsEnabled {#lua-scripting-ces-api-ui-uielementcomponent-setisenabled}
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Preview panel to view your particle effect in the &ALY; &particle-editor;. '
+description: ' Use the Preview panel to view your particle effect in the Lumberyard Particle Editor. '
 title: Using the Preview Panel
 ---
 # Using the Preview Panel {#particle-editor-preview-panel}
@@ -33,29 +33,29 @@ This panel has the following features:
 You can access the following **Preview** panel options in the main menu and context menu\.
 
 
-****  
+****
 
-| Option | Description | 
-| --- | --- | 
-| Import Mesh | Imports a game mesh to view\. | 
-| Play | Toggles playback\. | 
-| Pause | Pauses playback\. | 
-| Step forward | Steps forward one frame\. | 
-| Play loop | Toggles the playback from once to looping\. | 
-| Reset | Resets the playback to the beginning\. | 
-| Reset camera position | Resets the preview camera to the default position\. | 
-| Show/Hide overdraw | Toggles display of overdraw in the editor\. | 
-| Wireframe view | Toggles display of the particles wireframe\. | 
-| Show/Hide particle count | Toggles display of the particle count\. | 
-| Show/Hide bounding box | Toggles display of the emitter bounding box\. | 
-| Show/Hide gizmo | Toggles display of the preview window transform gizmo\. | 
-| Show/Hide playback controls | Toggles display of the preview playback controls\. | 
-| Show/Hide grid | Toggles display of the preview grid\. | 
-| Show/Hide emitter shape | Toggles display for the visualization of shape emitters and their relative coordinates\. | 
-| Background color | Opens the color picker for you to set the color of the preview background\. | 
-| Grid color | Opens the color picker for you to set the color of the preview grid\. | 
-| Reset colors | Resets the background and grid to the default colors\. | 
-| Move on spline | Displays a spline in the Preview panel for the emitter to move along\. This helps to preview the emitter motion\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-preview-panel.html)[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-preview-panel.html)[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/particle-editor-preview-panel.html) | 
-| Reset spline settings | Disables all spline settings\. | 
-| Reset to default | Resets the preview window to the default configuration\. | 
-| Close | Closes the Preview panel\. | 
+| Option | Description |
+| --- | --- |
+| Import Mesh | Imports a game mesh to view\. |
+| Play | Toggles playback\. |
+| Pause | Pauses playback\. |
+| Step forward | Steps forward one frame\. |
+| Play loop | Toggles the playback from once to looping\. |
+| Reset | Resets the playback to the beginning\. |
+| Reset camera position | Resets the preview camera to the default position\. |
+| Show/Hide overdraw | Toggles display of overdraw in the editor\. |
+| Wireframe view | Toggles display of the particles wireframe\. |
+| Show/Hide particle count | Toggles display of the particle count\. |
+| Show/Hide bounding box | Toggles display of the emitter bounding box\. |
+| Show/Hide gizmo | Toggles display of the preview window transform gizmo\. |
+| Show/Hide playback controls | Toggles display of the preview playback controls\. |
+| Show/Hide grid | Toggles display of the preview grid\. |
+| Show/Hide emitter shape | Toggles display for the visualization of shape emitters and their relative coordinates\. |
+| Background color | Opens the color picker for you to set the color of the preview background\. |
+| Grid color | Opens the color picker for you to set the color of the preview grid\. |
+| Reset colors | Resets the background and grid to the default colors\. |
+| Move on spline | Displays a spline in the Preview panel for the emitter to move along\. This helps to preview the emitter motion\. [\[See the AWS documentation website for more details\]](/docs/userguide/particles/editor/preview-panel)[\[See the AWS documentation website for more details\]](/docs/userguide/particles/editor/preview-panel)[\[See the AWS documentation website for more details\]](/docs/userguide/particles/editor/preview-panel) |
+| Reset spline settings | Disables all spline settings\. |
+| Reset to default | Resets the preview window to the default configuration\. |
+| Close | Closes the Preview panel\. |

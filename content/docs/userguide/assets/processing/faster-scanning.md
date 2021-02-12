@@ -1,7 +1,7 @@
 ---
-description: ' Use &asset-processor;''s Faster Scanning Mode to improve startup time
-  in &ALYlong;. '
-title: Enabling &asset-processor;'s Faster Scanning Mode
+description: ' Use Asset Processor''s Faster Scanning Mode to improve startup time
+  in Amazon Lumberyard. '
+title: Enabling Asset Processor's Faster Scanning Mode
 ---
 # Enabling Asset Processor's Faster Scanning Mode {#asset-processor-faster-scanning}
 
@@ -13,7 +13,7 @@ By default, **Faster Scanning Mode** is enabled\. You can enable or disable this
 
 1. Open [Asset Processor](/docs/userguide/assets/processor.md)\.
 
-1. Select **Tools** and clear **Faster Scanning Mode**\.   
+1. Select **Tools** and clear **Faster Scanning Mode**\.
 ![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/userguide/asset_processor/faster-scanning.png)
 
 **To perform a full scan**
@@ -27,7 +27,7 @@ AssetProcessorBatch.exe --zeroAnalysisMode
 
 When you enable the feature you can also use console mode `stdout` as well as open GUI log windows that indicate the effectiveness of **Faster Scanning Mode**\. The output message displays the number of files that required full analysis and the total number of files\.
 
-**Example**  
+**Example**
 
 ```
 ~~Debug~~5303 files reported from scanner.  2903 unchanged files skipped, 2400 files processed

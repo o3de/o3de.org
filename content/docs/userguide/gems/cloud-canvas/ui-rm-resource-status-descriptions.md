@@ -1,5 +1,5 @@
 ---
-description: ' Provides a description of the status codes that appear in &cloud; resource
+description: ' Provides a description of the status codes that appear in Cloud Canvas resource
   operations. '
 title: Understanding Resource Status Descriptions
 ---
@@ -7,7 +7,7 @@ title: Understanding Resource Status Descriptions
 
 The status of AWS resources is displayed in the **Cloud Canvas Resource Manager** in places such as the progress log\. The following list provides descriptions of common resource status codes\. To see the reason for the current status, you can pause your mouse on the status text in the resource manager\.
 
-**Create in progress** - The resource is in the process of being created in AWS\. 
+**Create in progress** - The resource is in the process of being created in AWS\.
 
 **Create complete** - The resource has been successfully created in AWS\.
 

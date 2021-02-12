@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Blur node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Disable Blur node in the Amazon Lumberyard Script Canvas editor to
   disable the blur (Gaussian blur) filter. '
 title: Disable Blur
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Blur](/docs/userguide/rendering/enable/blur-no
 ## Inputs {#disable-filter-blur-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#disable-blur-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

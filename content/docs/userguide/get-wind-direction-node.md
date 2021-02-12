@@ -1,5 +1,5 @@
 ---
-description: ' Use the Get Wind Direction node in the &ALYlong; &script-canvas; editor
+description: ' Use the Get Wind Direction node in the Amazon Lumberyard Script Canvas editor
   to return the global wind direction. '
 title: Get Wind Direction
 ---
@@ -16,18 +16,18 @@ Returns the direction of the global wind\. The length of the **Wind Direction** 
 ## Inputs {#get-wind-direction-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#get-wind-direction-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Wind Direction | Vector3 | Current global wind direction\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Wind Direction | Vector3 | Current global wind direction\. |

@@ -1,5 +1,5 @@
 ---
-description: ' Test the &ALY; Message of the Day Cloud Gem sample level. '
+description: ' Test the Lumberyard Message of the Day Cloud Gem sample level. '
 title: Testing the Message of the Day Sample Level
 ---
 # Testing the Message of the Day Sample Level {#cloud-canvas-cloud-gem-mod-testing}
@@ -14,7 +14,7 @@ A sample level for testing is located in the `\dev\CloudGemSamples\Levels\MsgOfT
 
 1. To display the messages in a specific order, set the priority field\. `0` signifies highest priority\.
 
-1. Press **Ctrl\+G** to start the level\. The test user interface appears\.  
+1. Press **Ctrl\+G** to start the level\. The test user interface appears\.
 ![\[Get messages\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-testing-get-messages.png)
 
 1. Click **Get Messages**\.

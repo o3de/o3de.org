@@ -1,5 +1,5 @@
 ---
-description: ' Use AZ::Console to set console variables and functors for your &ALY;
+description: ' Use AZ::Console to set console variables and functors for your Lumberyard
   game. '
 title: AZ::Console
 ---
@@ -9,10 +9,10 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 
 `AZ::Console` is defined in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Console\IConsole.h`
 
-**Note**  
-The console found inside `AzCore` is a console and cvar system intended to replace the legacy CryEngine console and cvar system\. This system is free of any CryEngine code, and depends only on `AzCore`\. 
+**Note**
+The console found inside `AzCore` is a console and cvar system intended to replace the legacy CryEngine console and cvar system\. This system is free of any CryEngine code, and depends only on `AzCore`\.
 
-`AZ::Console` features: 
+`AZ::Console` features:
 + ***Stubbed*** support for multiplayer \(as of v1\.24\)\. Lumberyard will eventually enable cvar replication across multiplayer instances using GridMate\.
 + Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds\.
 + Default support for several C\+\+ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\)\.
@@ -21,11 +21,11 @@ The console found inside `AzCore` is a console and cvar system intended to repla
 
 ![\[Image NOT FOUND\]](/images/userguide/az/az-console-1.png)
 
-**Important**  
-As of Amazon Lumberyard version 1\.24, AZ::Console does not support the following features present in the CryEngine console:  
+**Important**
+As of Amazon Lumberyard version 1\.24, AZ::Console does not support the following features present in the CryEngine console:
 Registration of cvars at runtime by name\. Formerly, you could register a CryEngine cvar using `IConsole->Register<String/Int/Float>()` and then retrieve the value of that cvar with `IConsole->GetCVar()`\. `AZ::Console` cvars must be declared at compile\-time using one of the macros in IConsole\.h\.
 Custom cvar/cfunc autocomplete callbacks\. Formerly, you could specify an autocomplete callback and attach it to a CryEngine cvar\. `AZ::Console` currently does not support this functionality\.
-Remote console support\. The CryEngine console allows remote access by opening a socket on a provided port, and then listening for console commands issued to that socket\. `AZ::Console` currently does not support this functionality\. 
+Remote console support\. The CryEngine console allows remote access by opening a socket on a provided port, and then listening for console commands issued to that socket\. `AZ::Console` currently does not support this functionality\.
 
 **Topics**
 + [Console variables \(cvars\)](#az-console-cvars)
@@ -38,11 +38,11 @@ Remote console support\. The CryEngine console allows remote access by opening a
 Declare a cvar using one of two macros from `IConsole.h:`
 
 ```
-AZ_CVAR(_TYPE, _NAME, _INIT, _CALLBACK, _FLAGS, _DESC) //Standard cvar macro, provides no external linkage.      
+AZ_CVAR(_TYPE, _NAME, _INIT, _CALLBACK, _FLAGS, _DESC) //Standard cvar macro, provides no external linkage.
 ```
 
 ```
-AZ_CVAR_EXTERNABLE(_TYPE, _NAME, _INIT, _CALLBACK, _FLAGS, _DESC) //Cvar macro that creates a console variable with external linkage.   
+AZ_CVAR_EXTERNABLE(_TYPE, _NAME, _INIT, _CALLBACK, _FLAGS, _DESC) //Cvar macro that creates a console variable with external linkage.
 ```
 
 Parameters:
@@ -50,12 +50,12 @@ Parameters:
 + **\_NAME**: The name of the cvar\.
 + **\_INIT**: The initial value to assign to the cvar\.
 + **\_CALLBACK**: An optional callback function invoked when a cvar changes value\. **Note:** These macros do not guarantee that this callback will be run on a specific thread\. The implementor of the callback handler is responsible for ensuring thread safety\.
-+ **\_FLAGS**: One or more `AZ::Console::FunctorFlags` that are used to mutate behavior\. Use the logical AND \(`&&`\) and OR \(`||`\) operators to combine flags\. If you do not have any flags to set, use `FunctorFlags::None`\. 
++ **\_FLAGS**: One or more `AZ::Console::FunctorFlags` that are used to mutate behavior\. Use the logical AND \(`&&`\) and OR \(`||`\) operators to combine flags\. If you do not have any flags to set, use `FunctorFlags::None`\.
 + **\_DESC**: String that provides a short description of the cvar for display\.
 
-To declare a new cvar in your code, include the `IConsole.h` header\. Then use one of the cvar macros \(such as `AZ_CVAR`\) to declare your new console variable in your own code \(\.cpp\) files\. 
+To declare a new cvar in your code, include the `IConsole.h` header\. Then use one of the cvar macros \(such as `AZ_CVAR`\) to declare your new console variable in your own code \(\.cpp\) files\.
 
-**Note**  
+**Note**
 AZ\_CVAR and AZ\_CVAR\_EXTERNABLE variables can be declared only in C\+\+ code \(\.cpp\) files\. AZ\_CVAR\_EXTERNED variables, however, can be declared in either C\+\+ code \(\.cpp\) or header \(\.h\) files\.
 
 Here are some examples\.
@@ -70,7 +70,7 @@ void OnConsoleResUpdate(const int32_t& a_NewWidth)
 {
     // Run update for new value
 }
- 
+
 AZ_CVAR(int32_t, sv_ConsoleWidth, 160, OnConsoleResUpdate, FunctorFlags::ReadOnly, "The width of the server console window");
 ```
 
@@ -88,21 +88,21 @@ These prefixes are useful to quickly limit the scope of autocomplete, and to see
 To make an existing console variable external \(extern\), use the `AZ_CVAR_EXTERNED` macro:
 
 ```
-AZ_CVAR_EXTERNED(_TYPE, _NAME)    
+AZ_CVAR_EXTERNED(_TYPE, _NAME)
 ```
 
 Make sure that the **\_TYPE **and **\_NAME** parameters match those of the previously defined cvar\.
 
 ## Console functors \(cfuncs\) {#az-console-cfuncs}
 
-Console functions allow you to register a command with the console that's not associated with a specific type or value\. In Lumberyard, they're purely a mechanism to allow a method to be invoked directly from the Lumberyard in\-game console\. 
+Console functions allow you to register a command with the console that's not associated with a specific type or value\. In Lumberyard, they're purely a mechanism to allow a method to be invoked directly from the Lumberyard in\-game console\.
 
 There are two types of cfuncs: one to invoke class member methods \(`AZ_CONSOLEFUNC`\), and one to invoke static methods \(`AZ_CONSOLEFREEFUNC`\)\.
 
 To declare a class member method cfunc, use the `AZ_CFUNC` macro from `IConsole.h`:
 
 ```
-AZ_CONSOLEFUNC(_CLASS, _FUNCTION, _INSTANCE, _FLAGS, _DESC)    
+AZ_CONSOLEFUNC(_CLASS, _FUNCTION, _INSTANCE, _FLAGS, _DESC)
 ```
 
 Parameters:
@@ -126,7 +126,7 @@ public:
 To declare a cfunc for a static method \(or other non\-member function\), use the `AZ_CONSOLEFREEFUNC` macro:
 
 ```
-AZ_CONSOLEFREEFUNC(_FUNCTION, _FLAGS, _DESC)   
+AZ_CONSOLEFREEFUNC(_FUNCTION, _FLAGS, _DESC)
 ```
 
 Parameters:
@@ -173,7 +173,7 @@ namespace AZ
     {
         template <>
         AZStd::string ValueToString<AZ::Vector3>(const AZ::Vector3& a_Value);
- 
+
         template <>
         bool StringSetToValue<AZ::Vector3>(AZ::Vector3& a_OutValue, const StringSet& a_Arguments);
     }

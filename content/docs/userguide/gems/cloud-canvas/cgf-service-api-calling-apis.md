@@ -1,6 +1,6 @@
 ---
 description: ' Use C++, the client component, a request job, or Lua to call your API
-  operations for &ALYlong;. '
+  operations for Amazon Lumberyard. '
 title: ' Calling a Game API'
 ---
 # Calling a Game API {#cloud-canvas-cgf-service-api-calling-apis}
@@ -26,7 +26,7 @@ The following example from the `CloudGemLeaderboard` service API shows a compone
 The example shows both methods\.
 
 ```
-// Sample API Caller 
+// Sample API Caller
 #include <AzCore/Component/Component.h>
 #include <AzCore/Component/Entity.h>
 #include <AzCore/Serialization/EditContext.h>
@@ -131,10 +131,10 @@ PutAdminMessagesRequestJob* job = PutAdminMessagesRequestJob::Create(
         responseHandler->HandlePutAdminMessagesError(job, m_entity);
     }
 );
-            
+
 job->parameters.msg = msg;
 job->parameters.msg_id = msg_id;
-            
+
 job->Start();
 ```
 
@@ -145,7 +145,7 @@ To learn about other ways to use the request job class, explore the `ServiceApiR
 The following code example shows how to call a service API from a Lua script\.
 
 ```
--- Service status getter 
+-- Service status getter
 local leaderboardstatusgetter = {
     Properties = {
     }

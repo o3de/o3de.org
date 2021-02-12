@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use &ALYlong;''s EBus from examples. '
+description: ' Learn how to use Amazon Lumberyard''s EBus from examples. '
 title: Usage and Examples
 ---
 # Usage and Examples {#ebus-usage-and-examples}
@@ -27,33 +27,33 @@ class ExampleInterface : public AZ::EBusTraits
 public:
     // ------------------ EBus Configuration -------------------
     // These override the defaults in EBusTraits.
- 
+
     // One handler per address is supported.
     static const AZ::EBusHandlerPolicy HandlerPolicy = AZ::EBusHandlerPolicy::Single;
- 
+
     // The EBus contains a single address.
     static const AZ::EBusAddressPolicy AddressPolicy = AZ::EBusAddressPolicy::Single;
     // ------------------------ Other -------------------------
- 
+
     virtual ~ExampleInterface() { };
- 
+
     // ------------------ Handler Interface -------------------
     // Handlers inherit from ExampleInterfaceBus::Handler
- 
+
     // Handlers are required to implement this because it's pure virtual.
     virtual void DoSomething() = 0;
- 
+
     // Handlers can override this, but are not required to.
     virtual void SomeMessage() { }
- 
+
     // Returns a value and has a parameter.
     virtual bool ReturnsValue(int x) = 0;
 };
- 
+
 using ExampleInterfaceBus = AZ::EBus<ExampleInterface>;
 ```
 
-**Tip**  
+**Tip**
 Use descriptive names in EBuses, and avoid overloaded functions\. Explicit and descriptive function names prevent future API name collisions when classes inherit your EBus interfaces\. Avoiding overloaded functions improves the experience of using your EBuses\. This is especially true from scripting environments such as Lua, in which descriptive names improve readability and clarity\. For more information, see [Components and EBuses: Best Practices](/docs/userguide/components/entity-system-pg-components-ebuses-best-practices.md)\.
 
 ## EBus Configuration Options {#ebus-usage-and-examples-config-options}
@@ -104,13 +104,13 @@ A handler of an EBus derives from `AZ::EBus<x>::Handler`\. For convenience this 
 
 ```
 #include "ExampleInterface.h"
- 
+
 // note: derives from bus handler, rather than directly from ExampleInterface
 class MyHandler : protected ExampleInterfaceBus::Handler
 {
 public:
    void Activate();
- 
+
 protected:
    // Implement the handler interface:
    void DoSomething() override; // note:  Override specified.
@@ -126,7 +126,7 @@ In order to actually connect to the EBus and start receiving events, your handle
 ```
 void MyHandler::Activate()
 {
-    // For a single EBus, this would be just BusConnect(). 
+    // For a single EBus, this would be just BusConnect().
     // For multiple EBuses, you must specify the EBus to connect to:
     ExampleInterfaceBus::Handler::BusConnect();
 }
@@ -134,7 +134,7 @@ void MyHandler::Activate()
 
 You can call `BusConnect()` at any time and from any thread\.
 
-If your EBus is addressed, connect to the EBus by passing the EBus ID to `BusConnect()`\. 
+If your EBus is addressed, connect to the EBus by passing the EBus ID to `BusConnect()`\.
 
 ```
 // connect to the EBus at address 5.
@@ -165,7 +165,7 @@ If your EBus is addressed, you can send events to a specific address ID\. Events
 ```
 // Broadcasts to ALL HANDLERS on this EBus regardless of address (even if the EBus has addresses)
 ExampleAddressBus::Broadcast(&ExampleAddressBus::Events::Test);
-  
+
 // Broadcasts only to handlers connected to address 5.
 ExampleAddressBus::Event(5, &ExampleAddressBus::Events::Test);
 ```
@@ -181,11 +181,11 @@ bool result = false;
 ExampleInterfaceBus::BroadcastResult(result, &ExampleInterfaceBus::Events::ReturnsValue, 2);
 ```
 
-In this example, if there are no handlers connected to the EBus, the `result` variable is not modified\. If one or more handlers are connected to the EBus, `operator=()` is called on the `result` variable for each handler\. 
+In this example, if there are no handlers connected to the EBus, the `result` variable is not modified\. If one or more handlers are connected to the EBus, `operator=()` is called on the `result` variable for each handler\.
 
 ## Return Values from Multiple Handlers {#ebus-usage-and-examples-multiple}
 
-In certain cases you might have to aggregate the return value of a function when there are multiple handlers\. For example, suppose you want to send a message to all handlers that asks whether any one handler objects to shutting down an application\. If any one handler returns true, you should stop the shutdown\. The following would not suffice: 
+In certain cases you might have to aggregate the return value of a function when there are multiple handlers\. For example, suppose you want to send a message to all handlers that asks whether any one handler objects to shutting down an application\. If any one handler returns true, you should stop the shutdown\. The following would not suffice:
 
 ```
 // Counterexample: returnValue contains only the result of the final handler.
@@ -199,21 +199,21 @@ Instead, you can create a class to collect your results that overrides `operator
 
 ```
 #include <AZCore/EBus/Results.h>
- 
+
 ...
 AZ::EBusAggregateResults<bool> results;
 SomeInterfaceBus::BroadcastResult(results, &SomeInterfaceBus::Events::DoesAnyoneObject);
- 
+
 // results now contains a vector of all results from all handlers.
- 
+
 // alternative:
 AZ::EBusLogicalResult<bool, AZStd::logical_or<bool>> response(false);
 SomeInterfaceBus::BroadcastResult(response, &SomeInterfaceBus::Events::DoesAnyoneObject);
- 
+
 // response now contains each result, using a logical OR operation. So all responses are OR'd with each other.
 ```
 
-**Note**  
+**Note**
 Additional building blocks \(for example, arithmetic results\) are available inside the `results.h` file\.
 
 ## Asynchronous/Queued Buses {#ebus-usage-and-examples-queued}

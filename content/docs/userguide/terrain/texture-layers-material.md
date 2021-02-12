@@ -1,5 +1,5 @@
 ---
-description: ' Assign materials to your texture layers in &ly-editor;. '
+description: ' Assign materials to your texture layers in Lumberyard Editor. '
 title: Applying a Texture Layer Material
 ---
 # Applying a Texture Layer Material {#terrain-texture-layers-material}

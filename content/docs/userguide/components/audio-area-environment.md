@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Area Environment component in &ALY; to apply an environment
+description: ' Use the Audio Area Environment component in Lumberyard to apply an environment
   effect to sounds that an entity triggers. '
 title: Audio Area Environment
 ---
@@ -11,16 +11,16 @@ Using the **Audio Area Environment** component, you can apply environment effect
 
 The **Audio Area Environment** component has the following properties:
 
-**Broad\-phase Trigger Area**  
-Link this property to an entity that includes a trigger area and shape\. This trigger area is used for broad\-phase checks\. The **Audio Area Environment** component tracks any entity that moves inside the trigger area\.  
+**Broad\-phase Trigger Area**
+Link this property to an entity that includes a trigger area and shape\. This trigger area is used for broad\-phase checks\. The **Audio Area Environment** component tracks any entity that moves inside the trigger area\.
 Default: None
 
-**Environment name**  
-The name of the [Audio Translation Layer \(ATL\)](/docs/userguide/audio/default-controls.md) environment to apply to entities in the area\.  
+**Environment name**
+The name of the [Audio Translation Layer \(ATL\)](/docs/userguide/audio/default-controls.md) environment to apply to entities in the area\.
 Default: None
 
-**Environment fade distance**  
-The distance around a shape where the environment amounts will fade based on an entity's distance from the shape\. Only positive, non\-zero values are valid\.  
+**Environment fade distance**
+The distance around a shape where the environment amounts will fade based on an entity's distance from the shape\. Only positive, non\-zero values are valid\.
 Default: 1\.0
 
 ## Using the Audio Area Environment Component {#component-audio-area-environment-setup}

@@ -1,5 +1,5 @@
 ---
-description: ' Specify permissions metadata for &cloud; resource definitions in &ALYlong;. '
+description: ' Specify permissions metadata for Cloud Canvas resource definitions in Amazon Lumberyard. '
 title: Permissions Metadata for Resource Definitions
 ---
 # Permissions Metadata for Resource Definitions {#permissions-metadata-for-resource-definitions}
@@ -8,7 +8,7 @@ To determine what permissions should go into a policy, the `Custom::AccessContro
 
 ```
 ...
-  
+
 "Messages": {
     "Type": "AWS::DynamoDB::Table",
     "Properties": {
@@ -40,8 +40,8 @@ To determine what permissions should go into a policy, the `Custom::AccessContro
         }
     }
 },
- 
- 
+
+
 "SayHello": {
     "Type": "AWS::Lambda::Function",
     "Properties": {
@@ -60,12 +60,12 @@ To determine what permissions should go into a policy, the `Custom::AccessContro
                 {
                     "AbstractRole": "Player",
                     "Action": "lambda:InvokeFunction"
-                }                       
+                }
             ]
         }
     }
 },
-  
+
 ...
 ```
 
@@ -74,9 +74,9 @@ You can use the `lmbr_aws` command line tool to manage permissions metadata on t
 ## Properties {#cloud-canvas-resource-definitions-permissions-metadata-properties}
 
 Each Cloud Canvas `Permission` metadata object can have the following properties\.
-+   
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/permissions-metadata-for-resource-definitions.html)
++
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/permissions-metadata-for-resource-definitions)
 
 ## See Also {#cloud-canvas-resource-definitions-permissions-metadata-see-also}
 

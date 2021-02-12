@@ -1,10 +1,10 @@
 ---
-description: ' Use the &ALYlong; &texture-settings; to work with texture assets. '
-title: '&texture-settings;'
+description: ' Use the Amazon Lumberyard <guilabel>Texture Settings Editor</guilabel> to work with texture assets. '
+title: '<guilabel>Texture Settings Editor</guilabel>'
 ---
 # Texture Settings Editor {#texture-settings-editor}
 
-You can use the Texture Settings Editor to edit the texture settings for individual images\. This is useful if you are customizing your images for different platforms, such as PC and Android\. For example, you can specify compression scheme, mipmap generation parameters, alpha map combinations, and so on for images\. When you edit your texture settings for an image, the Texture Settings Editor generates a `.imagesettings` file to save your settings\. 
+You can use the Texture Settings Editor to edit the texture settings for individual images\. This is useful if you are customizing your images for different platforms, such as PC and Android\. For example, you can specify compression scheme, mipmap generation parameters, alpha map combinations, and so on for images\. When you edit your texture settings for an image, the Texture Settings Editor generates a `.imagesettings` file to save your settings\.
 
 The Texture Settings Editor supports the following image formats:
 + `.bmp`
@@ -16,10 +16,10 @@ The Texture Settings Editor supports the following image formats:
 + `.tif`
 + `.tiff`
 
-**Note**  
+**Note**
 The Texture Settings Editor requires the [Image Processing](/docs/userguide/gems/builtin/image-processing.md) gem\. By default, this gem is enabled\.
 
-The Texture Settings Editor can also load the previous Resource Compiler \(RC\) generated `.exportsettings` file\. If you make any changes to this file, the Texture Settings Editor deletes this file and generates a new `.imagesettings` file\. If you have Perforce enabled, Perforce tracks the new or modified files\. 
+The Texture Settings Editor can also load the previous Resource Compiler \(RC\) generated `.exportsettings` file\. If you make any changes to this file, the Texture Settings Editor deletes this file and generates a new `.imagesettings` file\. If you have Perforce enabled, Perforce tracks the new or modified files\.
 
 You can find the default settings for the Texture Settings Editor in the `ImageBuilderDefaultPresets.settings` file\. You can modify the default settings file as needed\.
 
@@ -33,7 +33,7 @@ You can find the default settings for the Texture Settings Editor in the `ImageB
 
 1. In a text editor, make your changes and save\.
 
-**Note**  
+**Note**
 This file replaces the previous `rc.ini` file, which contains the predefined presets to generate textures for your game\. To migrate your settings from the `rc.ini` file, see [Migrate RC\.ini Settings to the Texture Settings Editor](#migrate-settings-from-rc-texture-settings-editor)\.
 
 **Topics**
@@ -50,7 +50,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
 
 1. In Lumberyard Editor, choose **Tools**, **Asset Browser**\.
 
-1. In the **Asset Browser**, navigate and select a source file, such as a `.tif` file\.  
+1. In the **Asset Browser**, navigate and select a source file, such as a `.tif` file\.
 ![\[Select and preview the source file in the Asset Browser.\]](/images/userguide/texture-pipeline-editor-1.png)
 
    You can preview the texture, its file size, dimensions, and select the drop\-down menu to preview the texture with the following channels:
@@ -58,7 +58,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
    + **Alpha**
    + **RGBA**
 
-1. To view more information, expand the arrow icon, and select the texture file that appears below the source file\.  
+1. To view more information, expand the arrow icon, and select the texture file that appears below the source file\.
 ![\[Select and preview the texture file in the Asset Browser.\]](/images/userguide/texture-pipeline-editor-2.png)
 
    See the following information about the texture:
@@ -71,7 +71,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
    + Color space
    + Image flag
 
-1. To open the Texture Settings Editor, right\-click the source file, and choose **Edit Texture Settings**\.  
+1. To open the Texture Settings Editor, right\-click the source file, and choose **Edit Texture Settings**\.
 ![\[Open the source file in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-3.png)
 
 1. In the Texture Settings Editor, you can view the following:
@@ -85,7 +85,7 @@ This file replaces the previous `rc.ini` file, which contains the predefined pre
    1. **[Mipmap Settings](#texture-mipmap-settings)** - Allows the adjustment of mipmap generation\.
 
 1. When finished, click **Apply** to save the current properties\. This exports a setting file named `imageName.imagesettings` next to the source file\.
-**Note**  
+**Note**
 If there is an existing legacy `.exportsettings` file associated with the texture file, the legacy file will be automatically deleted\.
 Click the **?** icon to open the texture documentation\.
 
@@ -121,13 +121,13 @@ In the preview panel, you can do the following:
 
 ![\[Set the texture presets for the file in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-5.png)
 + **Active preset** - Click the drop\-down menu to view the presets that you can assign to a texture\. The texture using the preset values automatically appears in the preview panel\. Texture properties are also updated\.
-**Note**  
-The Texture Settings Editor supports different presets that specify the options that are applied when an image asset is compiled\. When you open the Texture Settings Editor, it loads the main settings and presets from the game project folder at the following file:  
-`lumberyard_version\dev\game_project\Config\ImageBuilder\ImageBuilderPresets.settings`  
-If this file doesn't exist, the Texture Settings Editor loads the default settings from the following file:  
+**Note**
+The Texture Settings Editor supports different presets that specify the options that are applied when an image asset is compiled\. When you open the Texture Settings Editor, it loads the main settings and presets from the game project folder at the following file:
+`lumberyard_version\dev\game_project\Config\ImageBuilder\ImageBuilderPresets.settings`
+If this file doesn't exist, the Texture Settings Editor loads the default settings from the following file:
 `lumberyard_version\dev\Gems\ImageProcessing\Code\Source\ImageBuilderDefaultPresets.settings`
 + Click the reset icon to reset all texture properties to the default values of the current preset\.
-+ Click the info icon to display a pop\-up window for the current settings\.  
++ Click the info icon to display a pop\-up window for the current settings\.
 ![\[View the preset info for the texture in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-6.png)
 + **Active file conventions** - Name convention that the current preset setting supports\. For more information, see [Texture Map Types](/docs/userguide/materials/texture-types.md)\.
 + **Suppress spec reduction** - By default, when Lumberyard Editor switches from high to low specification, textures are automatically scaled down so that they can load into the graphics card memory\. However, you can set this setting, which overwrites all resolution reduction settings, so that the texture keep its original size throughout the different quality settings\. It's recommended that you set this setting for textures that have text\.
@@ -136,19 +136,19 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 
 ## Platform {#texture-platform-resolution}
 
- In the **Platform**, you can specify the following\. 
+ In the **Platform**, you can specify the following\.
 
 ![\[Set the platform settings in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-7.png)
 
 
-****  
+****
 
-| Setting | Description | 
-| --- | --- | 
-|  **Platform**  |  Lumberyard supports the following platforms: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
-|  **DownRes**  |  Specify the resolution for each platform\.  You can specify the following values: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
-|  **Size**  |  Compiled texture resolution calculated according to the **DownRes** value\.  | 
-| Format |  Compiled texture format on the platform\.  | 
+| Setting | Description |
+| --- | --- |
+|  **Platform**  |  Lumberyard supports the following platforms: [\[See the AWS documentation website for more details\]](/docs/userguide/texture-settings-editor)  |
+|  **DownRes**  |  Specify the resolution for each platform\.  You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/texture-settings-editor)  |
+|  **Size**  |  Compiled texture resolution calculated according to the **DownRes** value\.  |
+| Format |  Compiled texture format on the platform\.  |
 
 ## Mipmap Settings {#texture-mipmap-settings}
 
@@ -157,24 +157,24 @@ If this file doesn't exist, the Texture Settings Editor loads the default settin
 ![\[Set the Mipmap Settings in the Texture Settings Editor.\]](/images/userguide/texture-pipeline-editor-8.png)
 
 
-****  
+****
 
-| Mipmap Settings | Description | 
-| --- | --- | 
-|  **Enable**  | Enable or disables mipmap generation for the current texture\. | 
-|  **Maintain Alpha Coverage**  |  Specifies if the manual adjustment of alpha channel mipmaps is allowed or not\.  | 
-|  **Alpha Test Bias**  | Mipmap's alpha will be multiplied with a scale based on alpha coverage\.This value will be applied to the final results as an offset\.You can only set this setting if Maintain Alpha Coverage is set\. Valid values: `0` to `100` | 
-|  **Pixel Sampling Type**  |  Specifies how the pixel is generated when sampling mipmaps\. You can specify the following options: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
-|  **Filter Method**  |  Specifies the filter method used to process the mipmap\. You can specify the following options: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/texture-settings-editor.html)  | 
+| Mipmap Settings | Description |
+| --- | --- |
+|  **Enable**  | Enable or disables mipmap generation for the current texture\. |
+|  **Maintain Alpha Coverage**  |  Specifies if the manual adjustment of alpha channel mipmaps is allowed or not\.  |
+|  **Alpha Test Bias**  | Mipmap's alpha will be multiplied with a scale based on alpha coverage\.This value will be applied to the final results as an offset\.You can only set this setting if Maintain Alpha Coverage is set\. Valid values: `0` to `100` |
+|  **Pixel Sampling Type**  |  Specifies how the pixel is generated when sampling mipmaps\. You can specify the following options: [\[See the AWS documentation website for more details\]](/docs/userguide/texture-settings-editor)  |
+|  **Filter Method**  |  Specifies the filter method used to process the mipmap\. You can specify the following options: [\[See the AWS documentation website for more details\]](/docs/userguide/texture-settings-editor)  |
 
 ## Migrate RC\.ini Settings to the Texture Settings Editor {#migrate-settings-from-rc-texture-settings-editor}
 
-The Resource Compiler uses the `rc.ini` file to store your default texture presets\. In Lumberyard 1\.18, the Texture Settings Editor uses the `ImageBuilderDefaultPresets.settings` instead\. 
+The Resource Compiler uses the `rc.ini` file to store your default texture presets\. In Lumberyard 1\.18, the Texture Settings Editor uses the `ImageBuilderDefaultPresets.settings` instead\.
 
 If you want to transfer your settings from the Resource Compiler to the Texture Settings Editor, you must do this manually\.
 
-**Example**  
-In `rc.ini`, settings are ordered by preset, which contains the format for all devices\. For example, the `Albedo` preset is stored\.  
+**Example**
+In `rc.ini`, settings are ordered by preset, which contains the format for all devices\. For example, the `Albedo` preset is stored\.
 
 ```
 [Albedo]
@@ -188,8 +188,8 @@ mipmaps=1
 colorspace=sRGB,auto
 filemasks=*_diff*
 ```
-The `ImageBuilderDefaultPresets.settings` file is in a format that Lumberyard can serialize\.  
-The following example contains the `Albedo` preset for PC with only the relevant parts that match the settings used in `rc.ini`\. If you modify the PC `Albedo` preset, you should also make the change to other platforms\. This ensures that your changes take effect on all platforms\.  
+The `ImageBuilderDefaultPresets.settings` file is in a format that Lumberyard can serialize\.
+The following example contains the `Albedo` preset for PC with only the relevant parts that match the settings used in `rc.ini`\. If you modify the PC `Albedo` preset, you should also make the change to other platforms\. This ensures that your changes take effect on all platforms\.
 
 ```
 <ObjectStream version="3">

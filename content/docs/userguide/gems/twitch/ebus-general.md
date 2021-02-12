@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the general C++ API operations for Twitch that you can
-  use for your &ALY; game project. '
+  use for your Lumberyard game project. '
 title: General
 ---
 # General {#twitch-api-ebus-general}
@@ -17,16 +17,16 @@ The following is an example of how to use `SetApplicationID`:
 /*
 ** Set a string to hold our Twitch Application ID
 */
- 
+
 AZStd:string applicationID = "0123456789abcdef0123456789";
- 
+
 EBUS_EVENT(Twitch::TwitchRequestBus, SetApplicationID, applicationID);
 ```Parameters
 
-**twitchApplicationID**  
+**twitchApplicationID**
 The Twitch application ID that you obtain from Twitch when you create an application\.
 
-**Return**  
+**Return**
 No return value\.
 
 ## RequestUserID {#twitch-api-ebus-general-requestuserid}
@@ -65,14 +65,14 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**Return**  
+**Return**
 No return value\.UserIDNotify Callback
 
-**StringValue\-userID**  
-Value - The user ID, which returns in the format `AZStd::string`\.  
+**StringValue\-userID**
+Value - The user ID, which returns in the format `AZStd::string`\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestOAuthToken {#twitch-api-ebus-general-requestoauthtoken}
@@ -84,7 +84,7 @@ The following is an example of how to use `RequestOAuthToken`:
 ```
 ReceiptID receipt;
 EBUS_EVENT(Twitch::TwitchRequestBus, OAuthTokenNotify, receipt);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the OAuthTokenNotify callback.
 */
@@ -103,14 +103,14 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**Return**  
+**Return**
 No return value\.OAuthTokenNotify Callback
 
-**token \- ResultCode**  
-Value - The OAuth token, which returns in the format `AZStd::string`\.  
+**token \- ResultCode**
+Value - The OAuth token, which returns in the format `AZStd::string`\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestEntitlement {#twitch-api-ebus-general-requestentitlement}
@@ -122,7 +122,7 @@ The following is an example of how to use `RequestEntitlement`:
 ```
 ReceiptID receipt;
 EBUS_EVENT(Twitch::TwitchRequestBus, RequestEntitlement, receipt);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the RequestEntitlement callback.
 */
@@ -141,14 +141,14 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**Return**  
+**Return**
 No return value\.EntitlementNotify Callback
 
-**entitlement \- ResultCode**  
-Value - The entitlement ID, which may contain numbers, letters, and a hyphen\.  
+**entitlement \- ResultCode**
+Value - The entitlement ID, which may contain numbers, letters, and a hyphen\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## RequestProductCatalog {#twitch-api-ebus-general-requestproductcatalog}
@@ -160,7 +160,7 @@ The following is an example of how to use `RequestProductCatalog`:
 ```
 ReceiptID receipt;
 EBUS_EVENT(Twitch::TwitchRequestBus, RequestProductCatalog, receipt);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the RequestProductCatalog callback.
 */
@@ -174,7 +174,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 			cout << "RequestProductCatalog " << endl;
 			cout << "Request: " << productData.GetID() << endl;
 			cout << "Product List:" << endl;
-			
+
 			for(const auto & i: productData.Value.ProductList)
 			{
 				cout << "         Sku: " << i.Sku << endl;
@@ -184,9 +184,9 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 				cout << "SmallIconUrl: " << i.SmallIconUrl << endl;
 				cout << " ProductType: " << i.ProductType << endl;
 			}
- 
+
 			cout << "Unavailable Skus List:" << endl;
-			
+
 			for(const auto & i: productData.Value.UnavailableSkus)
 			{
 				cout << "Unavailable Sku: " << i << endl;
@@ -196,14 +196,14 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**Return**  
+**Return**
 No return value\.RequestProductCatalog Callback
 
-**productData \- ProductDataReturnValue**  
-Value - The product list, which includes the following data:  
+**productData \- ProductDataReturnValue**
+Value - The product list, which includes the following data:
 
 **ProductList \(ProductInfoList\)**
 + Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.
@@ -227,7 +227,7 @@ The following is an example of how to use `PurchaseProduct`:
 ReceiptID receipt;
 Twitch::FuelSku productSku = "<place product sku here>";
 EBUS_EVENT(Twitch::TwitchRequestBus, PurchaseProduct, receipt, productSku);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the PurchaseProduct callback.
 */
@@ -249,17 +249,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**productSku**  
+**productSku**
 The SKU to purchase, which returns in the format `Twitch::FuelSku`\.
 
-**Return**  
+**Return**
 No return value\.PurchaseProduct Callback
 
-**purchaseReceipt \- PurchaseReceiptReturnValue**  
-Value - The purchase receipt, which includes the following data:  
+**purchaseReceipt \- PurchaseReceiptReturnValue**
+Value - The purchase receipt, which includes the following data:
 + Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.
 + ReceiptId - The item's purchase ID, which returns in the format `AZStd::string`\.
 + PurchaseDate - The Linux serial date when the purchase was made\. The value returns in the format `AZ::u64`\.
@@ -277,7 +277,7 @@ The following is an example of how to use `GetPurchaseUpdates`:
 ReceiptID receipt;
 AZStd::string syncToken = "<empty for first call or sync token from previous call>";
 EBUS_EVENT(Twitch::TwitchRequestBus, GetPurchaseUpdates, receipt, syncToken);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing the GetPurchaseUpdates callback.
 */
@@ -292,7 +292,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 			cout << "  Request: " << purchaseUpdate.GetID() << endl;
 			cout << "SyncToken: " << purchaseUpdate.Value.SyncToken << endl;
 			cout << "Purchase Receipt List:" << endl;
-			
+
 			for(const auto & i: purchaseUpdate.Value.Products)
 			{
 				cout << "         Sku: " << i.Sku << endl;
@@ -306,17 +306,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**syncToken**  
+**syncToken**
 The sync token, which returns in the format `AZStd::string`\.
 
-**Return**  
+**Return**
 No return value\.PurchaseProduct Callback
 
-**purchaseReceipt \- PurchaseReceiptReturnValue**  
-Value - The purchase update, which includes the following data:  
+**purchaseReceipt \- PurchaseReceiptReturnValue**
+Value - The purchase update, which includes the following data:
 + SyncToken - An opaque string that you can use in your request when calling `GetPurchaseUpdates`\. The value returns in the format `AZStd::string`\.
 + Products - The purchase receipt list, which includes the following data:
   + Sku \(FuelSku\) - The item's SKU, which is a unique ID similar to a GUID\.

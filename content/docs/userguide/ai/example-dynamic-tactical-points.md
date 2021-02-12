@@ -1,6 +1,6 @@
 ---
 description: ' See the following example for individual AI for tactical points in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: 'Individual AI: Tactical Points'
 ---
 # Individual AI: Tactical Points {#ai-concepts-example-dynamic-tactical-points}
@@ -27,7 +27,7 @@ title: 'Individual AI: Tactical Points'
       },
   });
   ```
-+ Useful AI debug draw: 
++ Useful AI debug draw:
   + ai\_DebugTacticalPoints=1
   + ai\_StatsTarget=Grunt1
   + ai\_TacticalPointsDebugTime=10

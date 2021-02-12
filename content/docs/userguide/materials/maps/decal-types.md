@@ -1,5 +1,5 @@
 ---
-description: ' See the following decal projection types in &ALYlong;. '
+description: ' See the following decal projection types in Amazon Lumberyard. '
 title: Decal Projection Types
 ---
 # Decal Projection Types {#mat-maps-decal-types}

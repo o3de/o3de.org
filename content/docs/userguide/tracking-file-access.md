@@ -1,12 +1,12 @@
 ---
-description: ' Describes how track file access during game runtime in &ALYlong;. '
+description: ' Describes how track file access during game runtime in Amazon Lumberyard. '
 title: Tracking File Access
 ---
 # Tracking File Access {#tracking-file-access}
 
 It's possible to track invalid file reads that occur during game run time\. The error message `Invalid File Access` occurs when an attempt is made to read or open files from a thread that is not the streaming thread\. These file access operations can cause stalls that can be quite severe\.
 
-**Note**  
+**Note**
 Only access attempts from the main thread and render thread are logged\. This feature is disabled in RELEASE builds\.
 
 ## CVars {#tracking-file-access-cvars}
@@ -37,7 +37,7 @@ To add exceptions to file access tracking so that you can ignore files like `gam
 The files that you collect with `pak_LogInvalidFileAccess 2` must have their callstacks resolved\. To do this requires the following tools from the `XenonStackParse` folder of the `Tools` directory\.:
 + The `.pdb` files from the build
 + The `XenonStackParse` tool
-+ The `ProcessFileAccess.py` helper script 
++ The `ProcessFileAccess.py` helper script
 
 The directory structure for running `ProcessFileAccess.py` should resemble the following:
 

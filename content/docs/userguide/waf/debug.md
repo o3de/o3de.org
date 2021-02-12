@@ -1,12 +1,12 @@
 ---
-description: ' Learn how to debug and troubleshoot Waf in &ALYlong;. '
+description: ' Learn how to debug and troubleshoot Waf in Amazon Lumberyard. '
 title: Debugging Waf
 ---
 # Debugging Waf {#waf-debug}
 
 If you encounter issues that are not related to configuration, it is important to debug the internal Waf library\. For a Python callstack, you typically must debug in `\dev\Tools\Build\waf-version\waflib`\.
 
-Using PyCharm, an IDE for Python development, you can browse to a file where you are having problems, set a breakpoint, and click the bug icon to start debugging\. Execution time may be slower when running PyCharm\. 
+Using PyCharm, an IDE for Python development, you can browse to a file where you are having problems, set a breakpoint, and click the bug icon to start debugging\. Execution time may be slower when running PyCharm\.
 
 Opening the root directory creates file indexing\. You can use PyCharm to specify folders to exclude from the project structure, as shown in the example image\.
 

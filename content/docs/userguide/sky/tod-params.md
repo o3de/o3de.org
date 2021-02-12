@@ -1,6 +1,6 @@
 ---
-description: ' Use &lighting-tool; settings to create dawn and dusk effects for your
-  &ALYlong; environment. '
+description: ' Use Sun Trajectory Tool settings to create dawn and dusk effects for your
+  Amazon Lumberyard environment. '
 title: Setting Dawn and Dusk Effects
 ---
 # Setting Dawn and Dusk Effects {#sky-tod-params}
@@ -11,8 +11,8 @@ You can simulate the changing lighting effects that are caused by the sun moving
 
 1. In Lumberyard Editor, choose **Tools**, **Other**, **Sun Trajectory Tool**\.
 
-1. In the **Sun Trajectory Tool**, set the following properties and parameter values as needed\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sky-tod-params.html)
+1. In the **Sun Trajectory Tool**, set the following properties and parameter values as needed\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/sky/tod-params)
 
 1. Close the **Sun Trajectory Tool** editor\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the UISliderComponent to control the value of a slider in &ALYlong;. '
+description: ' Use the UISliderComponent to control the value of a slider in Amazon Lumberyard. '
 title: UISliderComponent
 ---
 # UISliderComponent {#lua-scripting-ces-api-ui-uislidercomponent}
@@ -87,7 +87,7 @@ Returns the action triggered when the value has finished changing\.
 **Syntax**
 
 ```
-const AZStd::string& GetValueChangedActionName() 
+const AZStd::string& GetValueChangedActionName()
 ```
 
 ### GetValueChangingActionName {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-getvaluechangingactionname}
@@ -97,7 +97,7 @@ Returns the name of the action triggered while the value is changing\.
 **Syntax**
 
 ```
-const AZStd::string& GetValueChangingActionName() 
+const AZStd::string& GetValueChangingActionName()
 ```
 
 ### SetFillEntity {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setfillentity}
@@ -117,7 +117,7 @@ Sets the manipulator element\.
 **Syntax**
 
 ```
-void SetManipulatorEntity(AZ::EntityId entityId) 
+void SetManipulatorEntity(AZ::EntityId entityId)
 ```
 
 ### SetMaxValue {#lua-scripting-ces-api-ui-uislidercomponent-uisliderbus-setmaxvalue}

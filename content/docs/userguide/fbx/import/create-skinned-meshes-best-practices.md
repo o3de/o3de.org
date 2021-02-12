@@ -1,6 +1,6 @@
 ---
 description: ' See the best practices for working with skinned meshes actors for the
-  &animation-editor; in &ALYlong;. '
+  Animation Editor in Amazon Lumberyard. '
 title: Creating Skinned Meshes for Actors
 ---
 # Creating Skinned Meshes for Actors {#char-fbx-importer-create-skinned-meshes-best-practices}
@@ -25,7 +25,7 @@ Observe the following best practices when you set up skin binding:
 + Delete the geometry history on your mesh before skinning the geometry to joints\.
 + When skinning your mesh, limit your maximum influences per vertex to four\. Lumberyard currently supports only four weight influences per vertex using the `.fbx` pipeline\.
 + Skin bind your mesh at the origin and in the same forward direction as the root joint\.
-+ Check the bind pose before exporting your skinned mesh\. For example, if the mesh moves after unbinding, you must reskin the mesh in order to prevent any errors in Lumberyard\. 
++ Check the bind pose before exporting your skinned mesh\. For example, if the mesh moves after unbinding, you must reskin the mesh in order to prevent any errors in Lumberyard\.
 + Ensure that your skinned mesh has one bind pose in your DCC before you export to an `.fbx` file\.
 + Do not include any static meshes with your skinned meshes\. Lumberyard cannot render unskinned meshes that are parented to bones\.
 
@@ -54,7 +54,7 @@ Do the following to reskin your mesh:
 1. Click **Skin**, **Bind Skin**\.
 
 1. In the **Bind Skin Options** dialog box, for **Bind to** choose **Selected joints**\. For **Bind method**, choose your preferred bind method\. For the **Skinning method**, choose **Dual quaternion** or **Linear**\. Click **Bind Skin** and then click **Close**\.
-**Note**  
+**Note**
 You must export and save your deformer weights in order to import the weight maps after reskinning\.
 
 **To reskin your mesh in 3ds Max**
@@ -80,7 +80,7 @@ You must export and save your deformer weights in order to import the weight map
 1. For **Modifier List**, choose **Skin**\.
 
 1. Under **Advanced Parameters**, click **Load** and choose the mesh envelope \(skin\) that you saved earlier\.
-**Note**  
+**Note**
 You must save your weights in order to load the weights after adding a new skin modifier\.
 
 1. In the **Load Envelopes** dialog box, click **Match by Name** to preserve the weights that you saved earlier\. Close the dialog box\.

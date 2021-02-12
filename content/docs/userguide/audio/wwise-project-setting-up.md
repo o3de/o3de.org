@@ -1,5 +1,5 @@
 ---
-description: ' Set up a Wwise project in &ALYlong;. '
+description: ' Set up a Wwise project in Amazon Lumberyard. '
 title: Setting up a Wwise Project
 ---
 # Setting up a Wwise Project {#audio-wwise-project-setting-up}
@@ -15,22 +15,22 @@ Lumberyard looks for the Wwise Soundbanks in the `lumberyard_version\dev\game_pr
 1. From the Start menu, open **Wwise Launcher**\.
 
 1. On the **WWISE** tab, click **Launch Wwise \(64\-bit\)**\.
-**Note**  
+**Note**
 If you have multiple versions of Wwise installed, open the version that you installed for Lumberyard\.
 
 1. In the **Project Launcher** dialog, click **New**\.
 
 1. In the **New Project** dialog, enter a **Name** for the project\.
-**Note**  
+**Note**
 Wwise uses the name of your project to create a directory with the same name\. However, you later rename the directory `wwise_project`\.
 
 1. For the **Location**, select the `lumberyard_version\dev\game_project\Sounds` directory\. If this directory doesn't exist, create it\.
 
 1. Review and adjust the remainder of the options and then click **OK**\.
 
-1. If you are using the full version of Wwise, the **License Manager** dialog appears\. Paste or import your license key if you have one and click **Save**\. 
+1. If you are using the full version of Wwise, the **License Manager** dialog appears\. Paste or import your license key if you have one and click **Save**\.
 
-   If you don't have your license key, click **Close**\. 
+   If you don't have your license key, click **Close**\.
 
 1. Exit Wwise\.
 
@@ -92,7 +92,7 @@ For information on how to map soundbanks to ATL preloads so that Lumberyard can 
    + **lose\_focus**
    + **mute\_all**
    + **unmute\_all**
-**Note**  
+**Note**
 The **get\_focus** and **unmute\_all** events unmute the Master Audio Bus\.
 The **lose\_focus** and **mute\_all** events mute the Master Audio Bus\.
 

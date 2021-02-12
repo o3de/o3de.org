@@ -1,6 +1,6 @@
 ---
 description: ' Use the Camera Rig component to add and remove behaviors to drive your
-  camera entity in &ALYlong;. '
+  camera entity in Amazon Lumberyard. '
 title: Camera Rig
 ---
 # Camera Rig {#component-camera-rig}
@@ -11,13 +11,13 @@ Use the **Camera Rig** component to add and remove behaviors to drive your camer
 
 The **Camera Rig** component has the following properties:
 
-[ **Target acquirers**](#target-acquirers)  
+[ **Target acquirers**](#target-acquirers)
 Array of behaviors that define how a camera selects a target\. The rig tries each acquirer in the order listed until one successfully finds a target\.
 
-[ **Look\-at behaviors**](#look-at-behaviors)  
+[ **Look\-at behaviors**](#look-at-behaviors)
 Array of behaviors that modify the look\-at target transform\. The rig runs each in order to generate a final target transform\.
 
-[ **Transform behaviors**](#transform-behaviors)  
+[ **Transform behaviors**](#transform-behaviors)
 Array of behaviors that modify the camera transform based on the look\-at target transform\. The rig runs each in order before setting the camera component's transform\.
 
 ## Target Acquirers {#target-acquirers}
@@ -30,13 +30,13 @@ Array of behaviors that modify the camera transform based on the look\-at target
 
 **AcquireByTag** has the following properties:
 
-**Target tag**  
+**Target tag**
 Find a target by tag\. If multiple entities are found, it uses the first to respond\.
 
-**Use Target Rotation**  
+**Use Target Rotation**
 If selected, uses the target's rotation when determining camera behavior\.
 
-**Use Target Position**  
+**Use Target Position**
 If selected, uses the target's position when determining camera behavior\.
 
 ### Acquire By Entity Id {#camera-target-component-acquirebyentityid}
@@ -45,13 +45,13 @@ If selected, uses the target's position when determining camera behavior\.
 
 **AcquireByEntityId** has the following properties:
 
-**Entity Target**  
+**Entity Target**
 Select a specific entity to use as the camera target
 
-**Use Target Rotation**  
+**Use Target Rotation**
 If selected, uses the target's rotation when determining camera behavior\.
 
-**Use Target Position**  
+**Use Target Position**
 If selected, uses the target's position when determining camera behavior\.
 
 ## Look\-at Behaviors {#look-at-behaviors}
@@ -66,10 +66,10 @@ Use **OffsetPosition** to change the position of the target's transform\. Positi
 
 **Look\-at Behaviors** has the following properties:
 
-**Positional Offset**  
+**Positional Offset**
 Vector displacement of the target transform's position\.
 
-**Offset Is Relative**  
+**Offset Is Relative**
 If selected, uses local coordinates\. If deselected, uses world\-basis vectors for the offset\.
 
 ### Rotate Camera Target {#rotate-camera-target}
@@ -80,16 +80,16 @@ Use **Rotate Camera Target** to rotate the target separately from its source tar
 
 ![\[Image NOT FOUND\]](/images/userguide/component/rotate-camera-look-at.png)
 
-**Axis of Rotation**  
+**Axis of Rotation**
 The target cardinal's axis around which the camera rotates\. Select the **X**, **Y**, or **Z** axis\.
 
-**Event Name**  
+**Event Name**
 Name of event that provides the values for the rotation\.
 
-**Invert Axis**  
+**Invert Axis**
 If selected, inverts the axis of rotation\.
 
-**Rotation Speed Scale**  
+**Rotation Speed Scale**
 Multiplier for new input values to scale the speed of rotation\.
 
 ### SlideAlongAxisBasedOnAngle {#slide-along-axis-based-on-angle}
@@ -100,25 +100,25 @@ Use **SlideAlongAxisBasedOnAngle** to modify the position of the look\-at target
 
 **SlideAlongAxisBasedOnAngle** has the following properties:
 
-**Axis to slide along**  
-Select an axis along which the target slides:  
+**Axis to slide along**
+Select an axis along which the target slides:
 + **Forwards and Backwards**
 + **Right and Left**
 + **Up and Down**
 
-**Angle Type**  
-Select an angle type on which to base the slide:  
+**Angle Type**
+Select an angle type on which to base the slide:
 + **Pitch**
 + **Yaw**
 + **Roll**
 
-**Vector Component to Ignore**  
+**Vector Component to Ignore**
 Select a vector component to ignore: **None**, **X**, **Y**, or **Z**\.
 
-**Max Positive Slide Distance**  
+**Max Positive Slide Distance**
 The maximum slide along the axis when the angle reaches 90 degrees\.
 
-**Max Negative Slide Distance**  
+**Max Negative Slide Distance**
 The maximum slide along the axis when the angle reaches \-90 degrees\.
 
 ## Transform Behaviors {#transform-behaviors}
@@ -137,13 +137,13 @@ The maximum slide along the axis when the angle reaches \-90 degrees\.
 
 **Follow Target from Angle** has the following properties:
 
-**Angle**  
+**Angle**
 Angle at which to follow the target\.
 
-**Rotation Type**  
+**Rotation Type**
 Rotation type of the angle for following the target: yaw, pitch, or roll\.
 
-**Distance from Target**  
+**Distance from Target**
 The distance in meters from which the camera follows the target\.
 
 ### FollowTargetFromDistance {#follow-target-from-distance}
@@ -154,25 +154,25 @@ The distance in meters from which the camera follows the target\.
 
 **FollowTargetFromDistance** has the following properties:
 
-**Follow Distance**  
+**Follow Distance**
 The distance in meters from which the camera follows the target\.
 
-**Minimum Follow Distance**  
+**Minimum Follow Distance**
 Minimum distance from which the camera follows the target\.
 
-**Maximum Follow Distance**  
+**Maximum Follow Distance**
 Maximum distance from which the camera follows the target\.
 
-**Zoom In Event Name**  
+**Zoom In Event Name**
 Event name that reduces the current follow distance, in effect zooming in\.
 
-**Zoom Out Event Name**  
+**Zoom Out Event Name**
 Event name that increases the current follow distance, in effect zooming out\.
 
-**Zoom Speed Scale**  
+**Zoom Speed Scale**
 Scale amount for the incoming zoom value\.
 
-**Player Index**  
+**Player Index**
 The index of the player \(device index\) that this feature supports\.
 
 ### Offset Position {#offset-camera-position}
@@ -183,10 +183,10 @@ The index of the player \(device index\) that this feature supports\.
 
 **Offset Position** has the following properties:
 
-**Offset**  
+**Offset**
 The vector offset in meters from the target\.
 
-**Is Offset Relative**  
+**Is Offset Relative**
 If selected, local basis vectors are used\. If deselected, worldbasis vectors are used\.
 
 ### Rotate {#camera-rig-rotate}
@@ -197,8 +197,8 @@ Use **Rotate** to rotate a camera about one of its axes \(**X**, **Y**, or **Z**
 
 **Rotate** has the following properties:
 
-**Angle**  
+**Angle**
 Angle in degrees to rotate the camera\.
 
-**Axis**  
+**Axis**
 Axis about which to rotate the camera\.

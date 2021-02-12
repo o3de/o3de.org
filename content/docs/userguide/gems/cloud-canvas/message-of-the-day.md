@@ -1,6 +1,6 @@
 ---
 description: ' Use the Message of the Day Cloud Gem to send scheduled messages to
-  the users of your &ALYlong; game. '
+  the users of your Amazon Lumberyard game. '
 title: Message Of The Day Cloud Gem Portal
 ---
 # Message Of The Day Cloud Gem Portal {#cloud-canvas-cloud-gem-message-of-the-day}
@@ -29,7 +29,7 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/u
 
 **To customize the Message of the Day Cloud Gem**
 
-1. In the Cloud Gem Portal, click **Message of the day**\.  
+1. In the Cloud Gem Portal, click **Message of the day**\.
 ![\[Message of the day\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-2.png)
 
 1. Click **Add Message of the Day** to create a new message\.
@@ -38,10 +38,10 @@ If you don't meet the prerequisites, follow the steps in [Enabling Gems](/docs/u
    + For **Message Content**, enter a message that to be displayed to the players of your game\.
    + For **Scheduling**, clear the **No Start** and/or **No End** check boxes and specify the **Start** and/or **End** time during which players see the message\. Currently, all times are in UTC\.** **The message is shown to players that have a game clock that is between -12 hours or \+12 hours of the set UTC time\.
    + To make the message permanent, specify both **No Start** and **No End**\.
-   + If you have more than one message, you can use the **Priority** option to specify the priority of each\. By default, 0 is the highest priority\. The game client determines how to use the priority value\. If you have only one active message, the priority has no effect\.  
+   + If you have more than one message, you can use the **Priority** option to specify the priority of each\. By default, 0 is the highest priority\. The game client determines how to use the priority value\. If you have only one active message, the priority has no effect\.
 ![\[Add message\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-3.png)
 
-1. Click **Save**\. The portal shows your new message in the **Active** category\.  
+1. Click **Save**\. The portal shows your new message in the **Active** category\.
 ![\[Message categories\]](/images/userguide/cloud_canvas/cloud-canvas-cloud-gem-mod-4.png)
 
    The message of the day dashboard has three categories: **Active Messages**, **Planned Messages**, and **Expired Messages**\.

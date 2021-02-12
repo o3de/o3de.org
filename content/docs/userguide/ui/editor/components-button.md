@@ -1,6 +1,6 @@
 ---
 description: ' Use a button component to make an element behave like a button in the
-  &ALY; &ui-canvas-editor;. '
+  Lumberyard UI Editor. '
 title: Button
 ---
 # Button {#ui-editor-components-button}
@@ -27,9 +27,9 @@ You can add a prebuilt **Button** element from the slice library\. When you do t
 **To add a Button element from the slice library**
 + In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **Button**\.
 
-**To edit a button component**  
-In the [**UI Editor**](/docs/userguide/ui/editor/using.md) **Properties** pane, expand **Button** and do the following, as appropriate:    
-****Interactable****  
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.  
-****Actions**, **Click****  
+**To edit a button component**
+In the [**UI Editor**](/docs/userguide/ui/editor/using.md) **Properties** pane, expand **Button** and do the following, as appropriate:
+****Interactable****
+See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+****Actions**, **Click****
 Enter a text string\. This string is sent as an action on the UI canvas when the button is clicked\.

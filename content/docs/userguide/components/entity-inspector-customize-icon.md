@@ -1,5 +1,5 @@
 ---
-description: ' Customize the component icon for an entity in &ALYlong;. '
+description: ' Customize the component icon for an entity in Amazon Lumberyard. '
 title: Customizing the Entity Icon
 ---
 # Customizing the Entity Icon {#component-entity-inspector-customize-icon}
@@ -12,7 +12,7 @@ You can also specify your own icon\.
 
 1. In the **Entity Inspector**, click the icon image at the top\.
 
-1. Choose **Set custom icon**\.  
+1. Choose **Set custom icon**\.
 ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/component-working-customize.png)
 
 1. Select an icon from your game project directory\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Mesh component to add visual geometry to entities in &ALYlong;. '
+description: ' Use the Mesh component to add visual geometry to entities in Amazon Lumberyard. '
 title: Mesh
 ---
 # Mesh {#component-static-mesh}
@@ -13,25 +13,25 @@ You can add the **Mesh** component to an entity to provide visual geometry on an
 The **Mesh** component has the following properties:
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| Visible |  Entity is visible\.  | 
-| Mesh asset |  Specifies the asset file for the mesh entity\.  | 
-| Material override |  Specifies an override material\.  | 
-| Opacity |  The entity's degree of transparency\.  | 
-| Max view distance |  Maximum distance from which this entity can be viewed\.  | 
-| View distance multiplier |  Adjusts the maximum view distance\. If set to `1.0`, then the default maximum view distance is used\. For example, `1.1` extends the default by 10%\.  | 
-| LOD distance ratio |  Sets the level of detail \(LOD\) ratio over distance\.  | 
-| Cast shadows |  Casts shadow maps\.  | 
-| Use VisAreas |  Allows vis areas to control the component's visibility\.  | 
+| Property | Description |
+| --- | --- |
+| Visible |  Entity is visible\.  |
+| Mesh asset |  Specifies the asset file for the mesh entity\.  |
+| Material override |  Specifies an override material\.  |
+| Opacity |  The entity's degree of transparency\.  |
+| Max view distance |  Maximum distance from which this entity can be viewed\.  |
+| View distance multiplier |  Adjusts the maximum view distance\. If set to `1.0`, then the default maximum view distance is used\. For example, `1.1` extends the default by 10%\.  |
+| LOD distance ratio |  Sets the level of detail \(LOD\) ratio over distance\.  |
+| Cast shadows |  Casts shadow maps\.  |
+| Use VisAreas |  Allows vis areas to control the component's visibility\.  |
 
 ### Advanced {#static-mesh-properties-advanced}
 
 The **Mesh** component has different advanced properties that depend on whether your mesh is static or dynamic\.
-+ A mesh is dynamic when the **Static** property is not set on the **Transform** component\. This is the default setting when you create an entity\. Dynamic meshes do not affect nav meshes\. 
-+ A mesh is static when the **Static** property is set on the **Transform** component\. You can use static objects for more optimal paths during rendering and processing\. We recommend that you create static meshes whenever possible\. A static mesh can move or deform only when the **Receive Wind** or **Deformable Mesh** properties are set\. 
++ A mesh is dynamic when the **Static** property is not set on the **Transform** component\. This is the default setting when you create an entity\. Dynamic meshes do not affect nav meshes\.
++ A mesh is static when the **Static** property is set on the **Transform** component\. You can use static objects for more optimal paths during rendering and processing\. We recommend that you create static meshes whenever possible\. A static mesh can move or deform only when the **Receive Wind** or **Deformable Mesh** properties are set\.
 
 For more information, see [Transform Component Properties](/docs/userguide/components/transform#component-transform-properties)\.
 
@@ -42,13 +42,13 @@ If your mesh is dynamic, the **Mesh** component has the following advanced prope
 ![\[Advanced Mesh component properties for a dynamic mesh in Lumberyard Editor\]](/images/userguide/component/component-mesh-component-properties-3.png)
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| Receive wind |  Affected by wind\.  | 
-| Accept decals |  Receives decals\.  | 
-| Deformable mesh |  Allows static mesh assets to deform that have specific dynamic data\. For example, you can have a mesh deform asset that is stationary\.  | 
+| Property | Description |
+| --- | --- |
+| Receive wind |  Affected by wind\.  |
+| Accept decals |  Receives decals\.  |
+| Deformable mesh |  Allows static mesh assets to deform that have specific dynamic data\. For example, you can have a mesh deform asset that is stationary\.  |
 
 #### Advanced Properties for Static Meshes {#static-mesh-advanced-properties}
 
@@ -57,18 +57,18 @@ If the mesh is static, the **Mesh** component has the following advanced propert
 ![\[Advanced Mesh component properties for a static mesh in Lumberyard Editor\]](/images/userguide/component/component-mesh-component-properties-2.png)
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| Rain occluder |  Blocks or stops dynamic raindrops\.  | 
-| Affect dynamic water |  Generates ripples in dynamic water\.  | 
-| Receive wind |  Affected by wind\.  | 
-| Accept decals |  Receives decals\.  | 
-| Affect navmesh |  Affects navmesh generation\.  | 
-| Visibility occluder |  Blocks visibility of other objects\.  | 
-| Deformable mesh |  Allows static mesh assets to deform that have specific dynamic data\. For example, you can have a mesh deform asset that is stationary\.  | 
-| Affects GI |  Affects global illumination results\.  | 
+| Property | Description |
+| --- | --- |
+| Rain occluder |  Blocks or stops dynamic raindrops\.  |
+| Affect dynamic water |  Generates ripples in dynamic water\.  |
+| Receive wind |  Affected by wind\.  |
+| Accept decals |  Receives decals\.  |
+| Affect navmesh |  Affects navmesh generation\.  |
+| Visibility occluder |  Blocks visibility of other objects\.  |
+| Deformable mesh |  Allows static mesh assets to deform that have specific dynamic data\. For example, you can have a mesh deform asset that is stationary\.  |
+| Affects GI |  Affects global illumination results\.  |
 
-**Note**  
+**Note**
 If you select the **Receive wind** or **Deformable mesh** settings, the entity's **Transform** component remains **Static**, but the mesh is considered dynamic\.

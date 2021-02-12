@@ -1,5 +1,5 @@
 ---
-description: ' Use the Load by Name node in the &ALYlong; &script-canvas; editor to
+description: ' Use the Load by Name node in the Amazon Lumberyard Script Canvas editor to
   find and return a material with the specified name. '
 title: Load by Name
 ---
@@ -18,19 +18,19 @@ In some cases, you might need to store the material to use later\. For more info
 ## Inputs {#material-load-by-name-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Material Name | String |  The path name of a material to find and load\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Material Name | String |  The path name of a material to find and load\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.  |
 
 ## Outputs {#material-load-by-name-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
-| Material | Material | The material that was found\. Returns Invalid if the material is not found\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
+| Material | Material | The material that was found\. Returns Invalid if the material is not found\. |

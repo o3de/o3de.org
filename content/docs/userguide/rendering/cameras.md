@@ -1,6 +1,6 @@
 ---
 description: ' Use rendering cameras and depth-of-field to define custom views and
-  realistic focus in your &ALYlong; level. '
+  realistic focus in your Amazon Lumberyard level. '
 title: Working with camera screen effects
 ---
 # Working with camera screen effects {#rendering-graphics-cameras}

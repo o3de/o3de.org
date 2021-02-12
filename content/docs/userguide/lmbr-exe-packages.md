@@ -1,5 +1,5 @@
 ---
-description: ' Use the lmbr packages command to download third party packages to &ALY;. '
+description: ' Use the lmbr packages command to download third party packages to Lumberyard. '
 title: Packages Commands
 ---
 # Packages Commands {#lmbr-exe-packages}
@@ -12,11 +12,11 @@ The `packages` module has dependencies on the `Engines` module\.
 
 Use the following command to download a resource packages from S3\.
 
-**download**  
+**download**
 
 ```
 lmbr packages download [name] [version] [platform] [uri] [destination] (-help)
-  
+
 - [name] (positional argument): The name of the package you want to download.
 - [version] (positional argument): the version of the package you want to download.
 - [platform] (positional argument): The platform of the package you want to download.

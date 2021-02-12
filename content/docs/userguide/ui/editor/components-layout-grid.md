@@ -1,5 +1,5 @@
 ---
-description: ' Use a layout grid component in the &ALYlong; &ui-canvas-editor; to
+description: ' Use a layout grid component in the Amazon Lumberyard UI Editor to
   organize child elements into a uniform grid. '
 title: LayoutGrid
 ---
@@ -20,20 +20,20 @@ You can add a prebuilt **Layout Grid** element from the slice library\. When you
 **To add a Layout Grid element from the slice library**
 + In the [**UI Editor**](/docs/userguide/ui/editor/using.md), choose **New**, **Element from Slice Library**, **LayoutGrid**\.
 
-**To edit a layout grid component**  
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **LayoutGrid** and do the following, as appropriate:    
-****Padding****  
-Type values in pixels, relative to the element's borders\.  
-****Spacing****  
-Type values in pixels to adjust spacing among elements\.  
-****Cell size****  
-Type values in pixels to specify the size of the child elements\.  
-****Order****  
- Do the following as appropriate:  
+**To edit a layout grid component**
+In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **LayoutGrid** and do the following, as appropriate:
+****Padding****
+Type values in pixels, relative to the element's borders\.
+****Spacing****
+Type values in pixels to adjust spacing among elements\.
+****Cell size****
+Type values in pixels to specify the size of the child elements\.
+****Order****
+ Do the following as appropriate:
 +  For **Horizontal**, select **Left\-to\-Right** or **Right\-to\-Left** to determine the order in which elements appear horizontally\.
 + For **Vertical**, select **Top\-to\-Bottom** or **Bottom\-to\-Top** to determine the order in which elements appear vertically\.
-+ For **Starting With**, select **Horizontal** or **Vertical** to determine whether elements appear horizontally or vertically first\.  
-****Child Alignment****  
-If the layout's children don't occupy all the available layout space, this setting determines how the children are aligned\.  
-For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally\.   
++ For **Starting With**, select **Horizontal** or **Vertical** to determine whether elements appear horizontally or vertically first\.
+****Child Alignment****
+If the layout's children don't occupy all the available layout space, this setting determines how the children are aligned\.
+For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally\.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically\.

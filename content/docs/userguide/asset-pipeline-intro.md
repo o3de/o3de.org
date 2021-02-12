@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALYlong; &asset-pipeline; to convert your source art and other
+description: ' Use the Amazon Lumberyard Asset Pipeline to convert your source art and other
   assets into game ready data. '
-title: Working with the &asset-pipeline; and asset files
+title: Working with the Asset Pipeline and asset files
 ---
 # Working with the Asset Pipeline and asset files {#asset-pipeline-intro}
 
@@ -9,7 +9,7 @@ The Asset Pipeline converts source art and other assets into OS\-specific, game 
 
 The Asset Processor \(AP\) is a service that runs in the background and monitors a configurable set of input directories for changes in files\. When it detects changes, it uses configurable rules to determine its next action\. The objective is to end up with game\-ready versions of all assets for each OS and each game directory in a location called the asset cache\. The asset cache is kept separate from your input directory and can be automatically rebuilt entirely from your source assets by the Asset Processor\.
 
-**Note**  
+**Note**
 The asset cache should not be added to your source control\.
 
 ![\[Understand the Asset Pipeline and how it processes files for your game project in Amazon Lumberyard.\]](/images/userguide/assets/pipeline/asset-pipeline-diagram.png)

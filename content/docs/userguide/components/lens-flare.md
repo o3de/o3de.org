@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lens Flare component in &ALYlong; to place a lens flare on
+description: ' Use the Lens Flare component in Amazon Lumberyard to place a lens flare on
   an entity. '
 title: Lens Flare
 ---
@@ -11,63 +11,63 @@ The **Lens Flare** component allows the placement of a lens flare on an entity\.
 
 The **Lens Flare** component has the following properties:
 
-**Visible**  
+**Visible**
 If selected, shows the lens flare\.
 
-**Library**  
+**Library**
 Select a lens flare library that has been authored by the **Lens Flare** editor\.
 
-**Lens flare**  
+**Lens flare**
 Select a lens flare from the available flares in the lens flare library\.Flare Settings
 
-**Minimum spec**  
-The minimum spec at which this lens flare is enabled\.  
+**Minimum spec**
+The minimum spec at which this lens flare is enabled\.
 Default: Low
 
-**FOV**  
-The field of view \(FOV\) in degrees around the lens flare\. Use **360** degrees to make the lens flare visible from all angles\.  
+**FOV**
+The field of view \(FOV\) in degrees around the lens flare\. Use **360** degrees to make the lens flare visible from all angles\.
 Default: 360
 
-**Size**  
+**Size**
 The size of the lens flare\.
 
-**Attach to sun**  
+**Attach to sun**
 If selected, attaches the lens flare to the sun \(as opposed to attaching to the entity\)\.
 
- **Ignore vis areas**   
+ **Ignore vis areas**
 If selected, lens flare ignores vis areas\.
 
- **Indoor only**   
+ **Indoor only**
 If selected, lens flare is rendered indoors only\.
 
- **On initially**   
+ **On initially**
 If selected, the lens flare is on when the scene starts\.
 
- **View distance multiplier**   
+ **View distance multiplier**
 Adjust the maximum view distance\. For example, **1\.0** would use the default and **1\.1** would be 10% further than the default\.Color Settings
 
- **Tint**   
+ **Tint**
 Color of the lens flare\.
 
- **Tint \[alpha\]**   
+ **Tint \[alpha\]**
 Alpha value that sets the flare's transparency\.
 
- **Brightness**   
+ **Brightness**
 Brightness of the lens flare\.Animation
 
- **Sync with light**   
+ **Sync with light**
 If selected, uses the animation settings of the provided light\. Select the light entity in the **Light** setting\.
 
- **Light**   
+ **Light**
 This setting appears when the **Sync with light** setting is selected\. Use the picker \(hand icon\) to select the light component you want to sync animation settings with\.
 
- **Style**   
+ **Style**
 Light animation curve ID \(style\) as it corresponds to values in `Light.cfx`\.
 
- **Speed**   
+ **Speed**
 Multiple of the base animation rate\.
 
- **Phase**   
+ **Phase**
 Animation start offset from **0** to **1**\. **0\.1** would be 10% into the animation\.
 
 ## EBus Request Bus Interface {#component-lensflare-ebusrequest}

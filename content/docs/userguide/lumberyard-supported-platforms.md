@@ -1,11 +1,11 @@
 ---
-description: ' Learn about the platforms supported by &ALYlong; for developing games
+description: ' Learn about the platforms supported by Amazon Lumberyard for developing games
   and simulations. '
 title: Supported platforms
 ---
 # Supported platforms {#lumberyard-supported-platforms}
 
-You can use Lumberyard to develop games for the following platforms: 
+You can use Lumberyard to develop games for the following platforms:
 + Microsoft Windows PC
 + Android
 + iOS

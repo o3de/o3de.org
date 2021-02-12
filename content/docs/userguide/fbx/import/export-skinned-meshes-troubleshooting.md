@@ -1,5 +1,5 @@
 ---
-description: ' You can troubleshoot your skinned meshes for &ALYlong;. '
+description: ' You can troubleshoot your skinned meshes for Amazon Lumberyard. '
 title: Troubleshooting Skinned Meshes
 ---
 # Troubleshooting Skinned Meshes {#char-fbx-importer-export-skinned-meshes-troubleshooting}

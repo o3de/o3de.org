@@ -1,5 +1,5 @@
 ---
-description: ' Employ artificial intelligence in &ALYlong;. '
+description: ' Employ artificial intelligence in Amazon Lumberyard. '
 title: Employing artificial intelligence
 ---
 # Employing artificial intelligence {#ai-intro}

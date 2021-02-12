@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALYlong;''s LmbrCentral gem to create cinematic sequences for
+description: ' Use Amazon Lumberyard''s LmbrCentral gem to create cinematic sequences for
   your games. '
 title: LmbrCentral Gem
 ---
@@ -9,5 +9,5 @@ The LmbrCentral gem contains required code and assets for running Lumberyard fea
 
 ![\[The LmbrCentral gem for Lumberyard.\]](/images/userguide/gems/gem-system-gem-lmbrcentral.png)
 
-**Note**  
+**Note**
 The LmbrCentral gem is required and enabled by default for Lumberyard projects\.

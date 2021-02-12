@@ -1,12 +1,12 @@
 ---
-description: ' See the following topics for working with cinematic cameras in &ALYlong;. '
+description: ' See the following topics for working with cinematic cameras in Amazon Lumberyard. '
 title: Adding a Camera
 ---
 # Adding a Camera {#cinematics-cameras-intro}
 
-You can add a camera to a sequence so that it presents the sequence from a particular point of view\. This helps you control what is being displayed in the animation and how\. 
+You can add a camera to a sequence so that it presents the sequence from a particular point of view\. This helps you control what is being displayed in the animation and how\.
 
-Some sequences may require multiple cameras to cut between for different shots\. You can use any number of component entity cameras as part of your sequence\. The [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md) helps you determine your active cameras for the sequence as well\. You can also set the depth of field \(DoF\) within the sequence to control the focus view of the camera for the sequence\. 
+Some sequences may require multiple cameras to cut between for different shots\. You can use any number of component entity cameras as part of your sequence\. The [Director \(Scene\) Node](/docs/userguide/cinematics/track-view/nodes-director.md) helps you determine your active cameras for the sequence as well\. You can also set the depth of field \(DoF\) within the sequence to control the focus view of the camera for the sequence\.
 
 See the following topics for working with cameras\.
 

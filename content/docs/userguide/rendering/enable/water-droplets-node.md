@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Water Droplet node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Water Droplet node in the Amazon Lumberyard Script Canvas
   editor to enable water droplets. '
 title: Enable Water Droplets
 ---
@@ -15,25 +15,25 @@ To disable the effect, see [Disable Water Droplets](/docs/userguide/rendering/di
 
 ![\[enablewaterdropletsnode, enablewaterdroplets\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/script-canvas-enable-water-droplets-node.png)
 
-**Example**  
+**Example**
 
 ![\[Use the Enable Water Droplets node to have water wash down the screen.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/enable-water-droplets-node-example.gif)
 
 ## Inputs {#enable-water-droplets-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Amount | Number | Amount of water\.Default value: `5` | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Amount | Number | Amount of water\.Default value: `5` |
 
 ## Outputs {#enable-water-droplets-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the effect starts\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the effect starts\. |

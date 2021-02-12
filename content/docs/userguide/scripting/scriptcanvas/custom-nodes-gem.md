@@ -1,6 +1,6 @@
 ---
-description: ' Create custom &script-canvas; nodes in a gem for &ALYlong;. '
-title: Creating Custom &script-canvas; Nodes in a Gem
+description: ' Create custom Script Canvas nodes in a gem for Amazon Lumberyard. '
+title: Creating Custom Script Canvas Nodes in a Gem
 ---
 # Creating Custom Script Canvas Nodes in a Gem {#script-canvas-custom-nodes-gem}
 
@@ -25,8 +25,8 @@ To have a gem support custom Script Canvas nodes, you must configure it to take 
                "VersionConstraints" : [">=0.1.0"],
                "_comment" : "ScriptCanvas"
            }
-       ], 
-   
+       ],
+
        "GemFormatVersion": 3,
        "Uuid": "09f4bedeee614358bc36788e77f97e51",
        "Name": "StartingPointInput",
@@ -49,7 +49,7 @@ To have a gem support custom Script Canvas nodes, you must configure it to take 
                "_comment" : "ScriptCanvas"
            }
    ```
-**Note**  
+**Note**
 To use this dependency, the Script Canvas Gem must be enabled in the Project Configurator when your gem is enabled\.
 
 1. Configure Waf to find the path to the `AzCodeGeneration` driver\. To see how to do this, you can follow the example of the Starting Point Input Gem's `.wscript` file\.
@@ -57,7 +57,7 @@ To use this dependency, the Script Canvas Gem must be enabled in the Project Con
    The following is the full text of the `.wscript` file\. Substeps are provided after the full text\.
 
    ```
-   def build(bld): 
+   def build(bld):
    ########################################################################################
    # Need to build a /dev relative path; otherwise, a gem/code relative path is used.
    ########################################################################################
@@ -65,7 +65,7 @@ To use this dependency, the Script Canvas Gem must be enabled in the Project Con
        driver_node = bld.path.find_or_declare('Gems/ScriptCanvas/Code/Include/ScriptCanvas/')
        gem_node = bld.path.find_or_declare('Gems/StartingPointInput/Code/')
        script_canvas_dir = driver_node.path_from(gem_node)
-   ######################################################################################## 
+   ########################################################################################
        AZ_CODEGEN_ARGS = az_code_gen = [{
                    'files'   : ['Source/InputNode.h',],
                    'scripts' : [os.path.join(script_canvas_dir, 'CodeGen/Drivers/ScriptCanvasNode.py')],
@@ -77,25 +77,25 @@ To use this dependency, the Script Canvas Gem must be enabled in the Project Con
                                    '-SuppressIncludeNotFoundError=false',
                                ],
                    'options' : ['PrintOutputRedirectionFile']
-               }] 
+               }]
        bld.DefineGem(
            use    = [ 'AzFramework', 'ScriptCanvas' ],
            includes = [ bld.Path('Code/CryEngine/CryAction'),
                         bld.Path('Code/CryEngine')
                          ],
-           export_includes = [bld.Path('Code/CryEngine')], 
+           export_includes = [bld.Path('Code/CryEngine')],
            # Suppressing level 1 warning C4351 on windows
            # new behavior: elements of array 'array' will be default initialized
            # https://msdn.microsoft.com/en-us/library/1ywe7hcy.aspx
            win_cxxflags = ['/wd4351'],
            features        = ['az_code_gen'],
-           win_defines = [], 
+           win_defines = [],
            file_list = [ 'startingpointinput.waf_files' ],
-           test_all_file_list  = ['startingpointinput_tests.waf_files'], 
-           az_code_gen = AZ_CODEGEN_ARGS, 
+           test_all_file_list  = ['startingpointinput_tests.waf_files'],
+           az_code_gen = AZ_CODEGEN_ARGS,
            ########################################
            # Editor Gem configuration
-           editor = dict( 
+           editor = dict(
                az_code_gen = AZ_CODEGEN_ARGS,
                file_list = [ 'startingpointinput_editor.waf_files' ],
            )

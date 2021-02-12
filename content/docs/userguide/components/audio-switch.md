@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Switch component to set up a default switch and switch
-  states for an entity in &ALY;. '
+  states for an entity in Lumberyard. '
 title: Audio Switch
 ---
 # Audio Switch {#component-audio-switch}
@@ -11,10 +11,10 @@ The **Audio Switch** component provides basic [Audio Translation Layer \(ATL\)](
 
 The Audio Switch component has the following properties:
 
-**Default Switch**  
+**Default Switch**
 Enter the name of the audio switch to use by default\. You can associate any audio switch with the entity\.
 
-**Default State**  
+**Default State**
 Enter the name of the audio switch state to use by default\. Use the [Audio Controls Editor](/docs/userguide/audio/atl-editor.md) to assign the state to the switch\. When this component is activated, the default switch is set to the default state\.
 
 ## EBus Request Bus Interface {#component-audio-switch-ebusrequest}
@@ -27,25 +27,25 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Sets the specified state of the default switch\.
 
-**Parameters**  
+**Parameters**
 `stateName` - Name of the state to set
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetSwitchState {#switch-audio-ebus-setswitchstate}
 
 Sets a specified switch to a specified state\.
 
-**Parameters**  
-`switchName` - Name of the switch to set  
+**Parameters**
+`switchName` - Name of the switch to set
 `stateName` - Name of the state to set
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Water Flow node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Water Flow node in the Amazon Lumberyard Script Canvas editor
   to disable water flow effects. '
 title: Disable Water Flow
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Water Flow](/docs/userguide/rendering/enable/w
 ## Inputs {#disable-water-flow-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-|  In  | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+|  In  | Event | Triggers the node\. |
 
 ## Outputs {#disable-water-flow-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

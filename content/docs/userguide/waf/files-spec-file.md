@@ -1,11 +1,11 @@
 ---
 description: ' Use Waf spec files to specify which modules to include in your build
-  configuration in &ALYlong;. '
+  configuration in Amazon Lumberyard. '
 title: Waf Spec Files (*.json)
 ---
 # Waf Spec Files \(\*\.json\) {#waf-files-spec-file}
 
-You use Waf spec files to specify which modules to include in a build configuration\. All settings are mandatory if not explicitly stated otherwise\. 
+You use Waf spec files to specify which modules to include in a build configuration\. All settings are mandatory if not explicitly stated otherwise\.
 
 A typical spec includes all modules that are required to build a game project\. Lumberyard includes the following with the engine SDK:
 + **`game_and_engine.json`** - Specs to build the sample game and engine
@@ -27,7 +27,7 @@ The following is an example `*.json` file that illustrates a spec file layout:
     "modules" :
     [
         "AzCore",
-        "AzFramework",        
+        "AzFramework",
         "AzToolsFramework",
         "GridMate",
         "LuaIDE",
@@ -36,7 +36,7 @@ The following is an example `*.json` file that illustrates a spec file layout:
 }
 ```
 
-**Note**  
+**Note**
 The `disable_game_projects` keyword does not compile the games specified in the `project.json` file\. The default value is false, which means the specs compile the game projects by default\.
 
 ## Platform\-specific Entry Values {#spec-file-entries}
@@ -45,21 +45,21 @@ You can apply the entry values in the table to targeted platforms and/or configu
 + **modules** - Includes in the build all modules defined by this key, regardless of platform and configuration\.
 + **win\_x64\_modules** - Includes in the win\_64 build all modules defined by this key, regardless of configuration\.
 
-Overlapping lists are combined into a single list based on the build command\. 
+Overlapping lists are combined into a single list based on the build command\.
 
 ## Spec File Format Specification {#spec-file-format}
 
 The general format of the JSON\-based spec file is a dictionary of keyword values\. The following table lists the possible keywords and their description\.
 
 
-****  
+****
 
-| Keyword Value | Description | 
-| --- | --- | 
-| comment | Additional comments to add to the spec file\. | 
-| configurations | The list of configurations that this spec supports\. In other words, the spec only builds the modules listed in the spec if the current configuration exists in the list of configurations\. This is an AND condition with the platforms value\. | 
-| description | Description of the spec file\. | 
-| disable\_game\_projects | Flag that indicates that no game projects \(as defined in project\.json\) are included in the build for this spec\. | 
-| platforms | The list of platforms that this spec supports\. In other words, the spec only builds the modules listed in the spec if the current target platform exists in this list of platforms\. | 
-| platform\_configuration\_defines | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/waf-files-spec-file.html) | 
-| visual\_studio\_name | Name of the generated Visual Studio solution that is used to distinguish this build spec from a build configuration\. | 
+| Keyword Value | Description |
+| --- | --- |
+| comment | Additional comments to add to the spec file\. |
+| configurations | The list of configurations that this spec supports\. In other words, the spec only builds the modules listed in the spec if the current configuration exists in the list of configurations\. This is an AND condition with the platforms value\. |
+| description | Description of the spec file\. |
+| disable\_game\_projects | Flag that indicates that no game projects \(as defined in project\.json\) are included in the build for this spec\. |
+| platforms | The list of platforms that this spec supports\. In other words, the spec only builds the modules listed in the spec if the current target platform exists in this list of platforms\. |
+| platform\_configuration\_defines | [\[See the AWS documentation website for more details\]](/docs/userguide/waf/files-spec-file) |
+| visual\_studio\_name | Name of the generated Visual Studio solution that is used to distinguish this build spec from a build configuration\. |

@@ -1,5 +1,5 @@
 ---
-description: ' Create a detached UI slice in &ALYlong;''s &ui-canvas-editor; . '
+description: ' Create a detached UI slice in Amazon Lumberyard''s UI Editor . '
 title: Creating a Detached UI Slice
 ---
 # Creating a Detached UI Slice {#ui-editor-working-slices-detached}
@@ -11,7 +11,7 @@ You can create a detached UI slice from an existing UI slice instance\. When you
 1. Select the root of a set of elements, or a root and one or more child entities\. The child entities within that root can be individual elements, slices, or a combination of both\.
 
 1. Right\-click the selection and choose **Make Detached Slice from Selected Entities**\.
-**Note**  
-If the any of the elements that you selected are slice instances, two options appear: **Make Detached Slice from Selected Entities** and **Make Cascaded Slice from Selected Slices & Entities**\. 
+**Note**
+If the any of the elements that you selected are slice instances, two options appear: **Make Detached Slice from Selected Entities** and **Make Cascaded Slice from Selected Slices & Entities**\.
 
 1. Save the slice with a descriptive name\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the cloud gem cross-communication feature in &ALYlong; to enable
+description: ' Use the cloud gem cross-communication feature in Amazon Lumberyard to enable
   a cloud gem to provide a service to other cloud gems on the backend. '
 title: Cross-Gem Communication
 ---
@@ -105,7 +105,7 @@ api\
     …
 ```
 
-**Note**  
+**Note**
 Currently, specifying the interface's `path` parameter inside the gem swagger file is not supported\. Specify the `path` parameter in the interface swagger definition file instead\.
 
 ## Using an Interface {#cloud-canvas-cgf-service-api-cross-gem-communication-using-an-interface}
@@ -135,9 +135,9 @@ Calling the API operations that your interface defines from AWS Lambda functions
 
    The `Optional` property specifies whether the specified interface must exist\. If `Optional` is `False` and no gem provides the specified interface, the deployment fails\.
 
-1. From your Lambda function code, get a client for the service\. To do this: 
+1. From your Lambda function code, get a client for the service\. To do this:
 
-   1. Use the `cgf_lambda_settings.get_service_url` function to get the service URL for the interface\. 
+   1. Use the `cgf_lambda_settings.get_service_url` function to get the service URL for the interface\.
 
    1. Pass the URL to the `cgf_service_client.for_url` function, as in the following example:
 

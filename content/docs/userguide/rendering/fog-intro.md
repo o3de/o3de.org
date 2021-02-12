@@ -1,5 +1,5 @@
 ---
-description: ' Use &ALY;''s standard fog system or voxel-based volumetric fog system
+description: ' Use Lumberyard''s standard fog system or voxel-based volumetric fog system
   to create fog for your game project. '
 title: Fog Systems
 ---

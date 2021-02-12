@@ -1,7 +1,7 @@
 ---
-description: ' Create third-party library configuration files for the &waf-system;
-  in &ALYlong;. '
-title: Creating Third-Party Library Configuration Files for &waf;
+description: ' Create third-party library configuration files for the Waf build system
+  in Amazon Lumberyard. '
+title: Creating Third-Party Library Configuration Files for Waf
 ---
 # Creating Third\-Party Library Configuration Files for Waf {#waf-third-party-library-configurations}
 
@@ -29,8 +29,8 @@ The third\-party identifiers provide an abstraction layer between the third\-par
 
 For example, assume you have two third\-party libraries, `StaticLibA` and `DynamicLibB`, that you want to link into test project `ProjectOne`\. Without the `uselib` system, the `wscript` file for `ProjectOne` would look like the following:
 
-**Example**  
-**`ProjectOne\wscript`**  
+**Example**
+**`ProjectOne\wscript`**
 
 ```
 def build(bld):
@@ -55,8 +55,8 @@ def build(bld):
 
 Instead, you could use the following third\-party configuration files for the two libraries, as in the following examples:
 
-**Example**  
-**`StaticLibA.json`**  
+**Example**
+**`StaticLibA.json`**
 
 ```
 {
@@ -81,8 +81,8 @@ Instead, you could use the following third\-party configuration files for the tw
 }
 ```
 
-**Example**  
-**`DynamicLibB.json`**  
+**Example**
+**`DynamicLibB.json`**
 
 ```
 {
@@ -119,8 +119,8 @@ Instead, you could use the following third\-party configuration files for the tw
 
 This now simplifies the `wscript` declaration for `ProjectOne` to the following:
 
-**Example**  
-**`ProjectOne\wscript`**  
+**Example**
+**`ProjectOne\wscript`**
 
 ```
 def build(bld):
@@ -141,15 +141,15 @@ Third\-party configuration files support the following library types:
 + [Static](#waf-third-party-library-configurations-static-libraries)
 + [Shared/Dynamic](#waf-third-party-library-configurations-shared-libraries)
 
-**Note**  
+**Note**
 For simplicity, the rest of this topic refers to shared/dynamic libraries as 'shared'\.
 
 ### Header\-only Libraries {#waf-third-party-library-configurations-header-only-libraries}
 
 Header\-only libraries provide only the include paths to the dependent project or module\. The following example third\-party library configuration file contains a definition for a header\-only library:
 
-**Example**  
-**`rapidxml.json`**  
+**Example**
+**`rapidxml.json`**
 
 ```
 {
@@ -171,8 +171,8 @@ This simple declaration specifies only the `includes` header path which is a sub
 
 Static third\-party library configuration files declare header include paths, library include paths, and library names for inclusion in a dependent project or module\. The following example third\-party library configuration file contains a declaration for a simple static library\.
 
-**Example**  
-**`lz4.json`**  
+**Example**
+**`lz4.json`**
 
 ```
 {
@@ -197,7 +197,7 @@ Static third\-party library configuration files declare header include paths, li
                 "lz4.lib"
             ]
         },
-        "win_x64_vs2019": "@win_x64_vs2017", 
+        "win_x64_vs2019": "@win_x64_vs2017",
         ...
 ```
 
@@ -209,8 +209,8 @@ In addition to the attributes described for header\-only library definition, the
 
 Shared libraries are more complex than static libraries\. Shared libraries must declare an include path, import library path, shared library path, shared library file names, and optionally, program database \(`.pdb`\) files\. The following example third\-party library configuration file contains a definition for a shared library\.
 
-**Example**  
-**`boostpython.json`**  
+**Example**
+**`boostpython.json`**
 
 ```
 {
@@ -252,15 +252,15 @@ Shared libraries are more complex than static libraries\. Shared libraries must 
 The following table describes the attributes for shared library configuration files\.
 
 
-****  
+****
 
-| Attribute | Description | 
-| --- | --- | 
-| importlibpath | Path to the import library that declares the exported symbols against which the dependent project or module links\. | 
-| sharedlibpath | Path to the binaries of the shared library \(the \.dll file\)\. | 
-| import | File names of the import libraries against which the dependent project or modules will link to get the exported symbols\. | 
-| shared | File names of the binaries of the shared libraries\. | 
-| pdb | File names of any pdbs that can be optionally copied over with the \.dll file\. | 
+| Attribute | Description |
+| --- | --- |
+| importlibpath | Path to the import library that declares the exported symbols against which the dependent project or module links\. |
+| sharedlibpath | Path to the binaries of the shared library \(the \.dll file\)\. |
+| import | File names of the import libraries against which the dependent project or modules will link to get the exported symbols\. |
+| shared | File names of the binaries of the shared libraries\. |
+| pdb | File names of any pdbs that can be optionally copied over with the \.dll file\. |
 
 Besides providing the paths for header inclusion and linking, Lumberyard Waf also copies the shared library and PDB files to the path where the dependent project or module is built\.
 
@@ -278,9 +278,9 @@ The same list of libraries might be needed in different platform sections of the
 
 You define an alias in the `aliases` node under the root node in the configuration file\. Add the name of the alias to the `aliases` node and a list of strings that the alias represents under the alias name\.
 
-In the following example, the `all_foo_lib_names` alias represents the libraries `foo_library_A` through `foo_library_D`\. The library names must not have any prefixes or extensions\. 
+In the following example, the `all_foo_lib_names` alias represents the libraries `foo_library_A` through `foo_library_D`\. The library names must not have any prefixes or extensions\.
 
-**Note**  
+**Note**
 For some platforms, the file name to library name convention is different\. For example, Linux\-based libraries prefix the file name with `lib`, but Windows\-based libraries do not\.
 
 In the `platform` section, the shared library definitions for `import`, `shared`, and `pdb` use the notation `${`*<ALIAS>*`}` to form the entries, where *<ALIAS>* is the name of the alias that was defined in the `aliases` section\.
@@ -427,40 +427,40 @@ The following example configuration file defines two third\-party identifiers th
 The following attributes are used in third\-party library definition files\.
 
 
-****  
+****
 
-| **Attribute** | **Type** | **Description** | 
-| --- | --- | --- | 
-| name | string/\[string\] | Name of the third\-party identifier\. The value for the identifier set here is represented in Lumberyard in all caps\. If the definition file defines multiple third\-party identifiers, the name attribute contains a list of names\. | 
-| source | string \(aliasable\) | Base directory upon which all library paths defined in the configuration file are based\. | 
-| description | string | Description for the third\-party definition\. | 
-| header\_only | Boolean | Flag that indicates that the file specifies a header\-only library definition\. | 
-| includes | \[string\] | List of include paths to apply to any dependent project or module\. | 
-| defines | \[string\] | List of additional defines to apply to any dependent project or module\. | 
-| engine\_configs | Boolean |  When `false`, specifies that the library's `debug` configuration maps to the `engine debug` configuration and that `release` maps to `profile`, `performance` and `release`\. The default is `false`\. When `true`, accepts custom rules for each engine configuration\. For example, if you want to use specific libraries for profile builds, you can specify values for `libpath_profile` and `lib_profile`\. To copy specific binaries per configuration, you can also use attributes like `copy_extra_debug`, `copy_extra_profile`, and `copy_extra_performance`\.  | 
-| lib\_required | Boolean | Flag that instructs the third\-party configuration file parser whether to verify the existence of the declared static library files on disk\. | 
-| shared\_required | Boolean | Flag that instructs the third\-party configuration file parser whether to verify the existence of the declared shared library files on disk\. | 
-| suppress\_warning | Boolean | Flag that disables warnings related to invalid third\-party configurations\. It is recommended that this flag be set to true for libraries that are optional\. | 
-| platform | \{ platform\_def \} | Dictionary of platform\-specific settings \(platform\_def\) that is keyed by the target platform name\. | 
-| linkflags | \[ string \] | List of linker flags to pass to the linker\. | 
-| libpath | \[ string \] | List of static library search paths to add to the consumers of this library\. The paths are relative to the location specified by the source attribute\. | 
-| lib | \[ string \] | List of full static library file names \(including file extensions\) to add to the consumers of this library\. The system validates the existence of the files by searching the locations defined in the libpath attribute\. | 
-| sharedlibpath | \[ string \] | List of paths that contain the shared libraries for this uselib definition\. The paths are relative to the location specified by the source attribute\. | 
-| shared | \[ string \] | List of the shared library file names for this uselib definition\. These shared libraries are copied to the output directory of the target of the consumer module\. | 
-| importlibpath | \[ string \] | Applies to Windows\-based platforms only\. A list of paths that contain import libraries for linking DLLs for this uselib definition\. The paths are relative to the location specified by the source attribute\. | 
-| import | \[ string \] | Applies to Windows\-based platforms only\. A list of import library file names that represent this uselib definition\. These libraries are used in the linker command\. | 
-| frameworkpath | \[ string \] | Applies to OSx\-based platforms only\. A list of framework paths that contain frameworks for this uselib definition\. The paths are relative to the location specified by the source attribute\. | 
-| framework | \[ string \] | Applies to OSx\-based platforms only\. A list of frameworks that represent this uselib definition\. | 
-| copy\_extra | \[ string \] | List of additional files to copy from the source to the target directory where the executables that consume this uselib definition reside\. Each item in the list is a colon\-delimited source\-destination pair in the format <source>:<destination>\. <source> specifies the source directory that contains the files relative to the location specified by the source attribute\. <destination> is the directory to which the files are copied relative to the destination directory of the consuming target executable\. | 
+| **Attribute** | **Type** | **Description** |
+| --- | --- | --- |
+| name | string/\[string\] | Name of the third\-party identifier\. The value for the identifier set here is represented in Lumberyard in all caps\. If the definition file defines multiple third\-party identifiers, the name attribute contains a list of names\. |
+| source | string \(aliasable\) | Base directory upon which all library paths defined in the configuration file are based\. |
+| description | string | Description for the third\-party definition\. |
+| header\_only | Boolean | Flag that indicates that the file specifies a header\-only library definition\. |
+| includes | \[string\] | List of include paths to apply to any dependent project or module\. |
+| defines | \[string\] | List of additional defines to apply to any dependent project or module\. |
+| engine\_configs | Boolean |  When `false`, specifies that the library's `debug` configuration maps to the `engine debug` configuration and that `release` maps to `profile`, `performance` and `release`\. The default is `false`\. When `true`, accepts custom rules for each engine configuration\. For example, if you want to use specific libraries for profile builds, you can specify values for `libpath_profile` and `lib_profile`\. To copy specific binaries per configuration, you can also use attributes like `copy_extra_debug`, `copy_extra_profile`, and `copy_extra_performance`\.  |
+| lib\_required | Boolean | Flag that instructs the third\-party configuration file parser whether to verify the existence of the declared static library files on disk\. |
+| shared\_required | Boolean | Flag that instructs the third\-party configuration file parser whether to verify the existence of the declared shared library files on disk\. |
+| suppress\_warning | Boolean | Flag that disables warnings related to invalid third\-party configurations\. It is recommended that this flag be set to true for libraries that are optional\. |
+| platform | \{ platform\_def \} | Dictionary of platform\-specific settings \(platform\_def\) that is keyed by the target platform name\. |
+| linkflags | \[ string \] | List of linker flags to pass to the linker\. |
+| libpath | \[ string \] | List of static library search paths to add to the consumers of this library\. The paths are relative to the location specified by the source attribute\. |
+| lib | \[ string \] | List of full static library file names \(including file extensions\) to add to the consumers of this library\. The system validates the existence of the files by searching the locations defined in the libpath attribute\. |
+| sharedlibpath | \[ string \] | List of paths that contain the shared libraries for this uselib definition\. The paths are relative to the location specified by the source attribute\. |
+| shared | \[ string \] | List of the shared library file names for this uselib definition\. These shared libraries are copied to the output directory of the target of the consumer module\. |
+| importlibpath | \[ string \] | Applies to Windows\-based platforms only\. A list of paths that contain import libraries for linking DLLs for this uselib definition\. The paths are relative to the location specified by the source attribute\. |
+| import | \[ string \] | Applies to Windows\-based platforms only\. A list of import library file names that represent this uselib definition\. These libraries are used in the linker command\. |
+| frameworkpath | \[ string \] | Applies to OSx\-based platforms only\. A list of framework paths that contain frameworks for this uselib definition\. The paths are relative to the location specified by the source attribute\. |
+| framework | \[ string \] | Applies to OSx\-based platforms only\. A list of frameworks that represent this uselib definition\. |
+| copy\_extra | \[ string \] | List of additional files to copy from the source to the target directory where the executables that consume this uselib definition reside\. Each item in the list is a colon\-delimited source\-destination pair in the format <source>:<destination>\. <source> specifies the source directory that contains the files relative to the location specified by the source attribute\. <destination> is the directory to which the files are copied relative to the destination directory of the consuming target executable\. |
 
 ## Special Reserved Words {#waf-third-party-library-configurations-special-reserved-words}
 
 The following special reserved words are used in third\-party library configuration files\.
 
 
-****  
+****
 
-| **Reserved Word** | **Description** | 
-| --- | --- | 
-| @GEM@ | Alias that represents the base directory of the gem\. This is used for third\-party configurations that reside within the gem\. | 
-| %LIBPATH\(<libname>\) |  Specifies a macro that resolves to the full path of *<libname>*\. *<libname>* must be defined within the scope of the platform for which the macro is used\. For example, if there is a library called `libmath.lib` whose absolute path is `C:\libs`, `%LIBPATH(libmath.lib)` resolves to `C:\libs\libmath.lib`\. This is useful for linker flags like `--force-load` *<libfullpath>* that can be added as a link flag parameter\. In the following example, `libtomcrypt` requires a force load on its library through its linker flags\. The definition that achieves this is as follows: <pre>...<br />"linkflags": [<br />    "-force_load",<br />    "%LIBPATH(libtomcrypt.a)"<br />]</pre>  | 
+| **Reserved Word** | **Description** |
+| --- | --- |
+| @GEM@ | Alias that represents the base directory of the gem\. This is used for third\-party configurations that reside within the gem\. |
+| %LIBPATH\(<libname>\) |  Specifies a macro that resolves to the full path of *<libname>*\. *<libname>* must be defined within the scope of the platform for which the macro is used\. For example, if there is a library called `libmath.lib` whose absolute path is `C:\libs`, `%LIBPATH(libmath.lib)` resolves to `C:\libs\libmath.lib`\. This is useful for linker flags like `--force-load` *<libfullpath>* that can be added as a link flag parameter\. In the following example, `libtomcrypt` requires a force load on its library through its linker flags\. The definition that achieves this is as follows: <pre>...<br />"linkflags": [<br />    "-force_load",<br />    "%LIBPATH(libtomcrypt.a)"<br />]</pre>  |

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Set Wind Direction node in the &ALYlong; &script-canvas; editor
+description: ' Use the Set Wind Direction node in the Amazon Lumberyard Script Canvas editor
   to set the wind direction. '
 title: Set Wind Direction
 ---
@@ -16,18 +16,18 @@ Sets the direction of the global wind\. The length of the **Wind Direction** vec
 ## Inputs {#set-wind-direction-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
-| Wind Direction | Vector3 | Wind direction to specify\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
+| Wind Direction | Vector3 | Wind direction to specify\. |
 
 ## Outputs {#set-wind-direction-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

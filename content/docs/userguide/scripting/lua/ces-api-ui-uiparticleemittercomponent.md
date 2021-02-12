@@ -1,5 +1,5 @@
 ---
-description: ' Use Lua scripting to control the UI particle emitter component in &ALYlong;. '
+description: ' Use Lua scripting to control the UI particle emitter component in Amazon Lumberyard. '
 title: UIParticleEmitterComponent
 ---
 # UIParticleEmitterComponent {#lua-scripting-ces-api-ui-uiparticleemittercomponent}
@@ -107,7 +107,7 @@ Sets, in particles per second, the current particle emitter emit rate\.
 **Syntax**
 
 ```
-void SetParticleEmitRate(float particleEmitRate) 
+void SetParticleEmitRate(float particleEmitRate)
 ```
 
 ### GetIsEmitOnActivate {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisemitonactivate}
@@ -300,7 +300,7 @@ Sets the distance that particles are emitted inside the emitter shape edge\.
 **Syntax**
 
 ```
-void SetInsideEmitDistance(float insideEmitDistance) 
+void SetInsideEmitDistance(float insideEmitDistance)
 ```
 
 ### GetOutsideEmitDistance {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getoutsideemitdistance}
@@ -320,7 +320,7 @@ Sets the distance that particles are emitted outside the emitter shape edge\.
 **Syntax**
 
 ```
-void SetOutsideEmitDistance(float outsideEmitDistance) 
+void SetOutsideEmitDistance(float outsideEmitDistance)
 ```
 
 ### GetParticleInitialDirectionType {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticleinitialdirectiontype}
@@ -392,7 +392,7 @@ Sets, in degrees, the variation in the emit angle\. For example, a variation val
 **Syntax**
 
 ```
-void SetEmitAngleVariation(float emitAngleVariation) 
+void SetEmitAngleVariation(float emitAngleVariation)
 ```
 
 ### GetIsParticleLifetimeInfinte {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisparticlelifetimeinfinte}
@@ -472,7 +472,7 @@ Sets the source location of the image to be used by the emitted particles\.
 **Syntax**
 
 ```
-void SetSpritePathname(AZStd::string spritePath) 
+void SetSpritePathname(AZStd::string spritePath)
 ```
 
 ### GetIsSpriteSheetAnimated {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getisspritesheetanimated}
@@ -552,7 +552,7 @@ Sets the sprite\-sheet index to be used for emitted particles\.
 **Syntax**
 
 ```
-void SetSpriteSheetCellIndex(int spriteSheetIndex) 
+void SetSpriteSheetCellIndex(int spriteSheetIndex)
 ```
 
 ### GetSpriteSheetCellEndIndex {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getspritesheetcellendindex}
@@ -632,7 +632,7 @@ Sets the pivot for the particles in a range from \(0,0\) at the top left to \(1,
 **Syntax**
 
 ```
-void SetParticlePivot(AZ::Vector2 particlePivot) 
+void SetParticlePivot(AZ::Vector2 particlePivot)
 ```
 
 ### GetParticleSize {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlesize}
@@ -818,7 +818,7 @@ Returns the variation in the particle initial velocity\. Applicable only when th
 **Syntax**
 
 ```
-AZ::Vector2 GetParticleInitialVelocityVariation() 
+AZ::Vector2 GetParticleInitialVelocityVariation()
 ```
 
 ### SetParticleInitialVelocityVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setparticleinitialvelocityvariation}
@@ -918,7 +918,7 @@ Returns whether the particle is initially oriented so that its top points toward
 **Syntax**
 
 ```
-bool GetIsParticleInitialRotationFromInitialVelocity() 
+bool GetIsParticleInitialRotationFromInitialVelocity()
 ```
 
 ### SetIsParticleInitialRotationFromInitialVelocity {#lua-scripting-ces-api-ui-uiparticleemittercomponent-setisparticleinitialrotationfrominitialvelocity}
@@ -988,7 +988,7 @@ Sets, in degrees clockwise per second, the rotation speed of the emitted particl
 **Syntax**
 
 ```
-void SetParticleRotationSpeed(float rotationSpeed) 
+void SetParticleRotationSpeed(float rotationSpeed)
 ```
 
 ### GetParticleRotationSpeedVariation {#lua-scripting-ces-api-ui-uiparticleemittercomponent-getparticlerotationspeedvariation}

@@ -1,7 +1,7 @@
 ---
-description: ' Use the &ALYlong; tools in &cloud; to create connected gaming experiences
-  using AWS resources like &DDBlong; tables, &LAMlong; functions, or &S3; buckets. '
-title: Implementing Connected Features with &cloud;
+description: ' Use the Amazon Lumberyard tools in Cloud Canvas to create connected gaming experiences
+  using AWS resources like Amazon DynamoDB tables, AWS Lambda functions, or S3 buckets. '
+title: Implementing Connected Features with Cloud Canvas
 ---
 # Implementing Connected Features with Cloud Canvas {#cloud-canvas-intro}
 
@@ -28,10 +28,10 @@ With Cloud Canvas, you can add a cloud\-connected feature to your game in as lit
 ## Features {#cloud-canvas-overview-features}
 
 Cloud Canvas offers a wide range of helpful features:
-+ [Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) that provide cloud\-connected features such as Message of the Day, Leaderboards, and Dynamic Content\. These cloud gems can be used in a few clicks as is, or as samples to fuel your custom developments and ideas\. 
++ [Cloud gems](/docs/userguide/gems/cloud-canvas/s-intro.md) that provide cloud\-connected features such as Message of the Day, Leaderboards, and Dynamic Content\. These cloud gems can be used in a few clicks as is, or as samples to fuel your custom developments and ideas\.
 + The [Cloud Gem Framework](/docs/userguide/gems/cloud-canvas/framework-intro.md), on top of which cloud gems are built, allows you to add pre\-packaged, cloud\-connected features in a few clicks\. You can use the Cloud Gem Framework to [build your own cloud gems](/docs/userguide/gems/cloud-canvas/cgf-getting-started-create-gem.md)\.
 + Tools to enable a team to build a game with cloud\-connected features\.
-+ A [CloudGemAWSScriptBehaviors](/docs/userguide/gems/cloud-canvas/cgf-aws-behavior-context-reflections.md) gem that exposes AWS services such as Amazon S3, Amazon Cognito, AWS Lambda, and HTTP utilities to script\. 
++ A [CloudGemAWSScriptBehaviors](/docs/userguide/gems/cloud-canvas/cgf-aws-behavior-context-reflections.md) gem that exposes AWS services such as Amazon S3, Amazon Cognito, AWS Lambda, and HTTP utilities to script\.
 + Tools to manage AWS resources and permissions that determine how game developers and players access them\.
 + Management of AWS deployments so that development, test, and live resources are maintained separately\.
 + Methods for players to be authenticated \(anonymous and authenticated\)\. Players can be authenticated from a variety of devices and access their game data by logging in with an Amazon, Facebook, or Google account\.
@@ -43,20 +43,20 @@ Consider the many ways you can use Amazon Web Services for connected games:
 + Trigger events in real time and queue data for background processing: [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/) and [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/)
 + Execute custom game logic in the cloud without having to set up or manage servers: [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/)
 + Employ a daily gift system that tracks player visits and rewards frequent visits: [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/), [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/)
-+ Present a message of the day or news ticker that provides updates on in\-game events: [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) 
++ Present a message of the day or news ticker that provides updates on in\-game events: [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/)
 
 For tutorials on Cloud Canvas, see [Tutorial: Getting Started with Cloud Canvas](/docs/userguide/gems/cloud-canvas/tutorial.md) and [Lumberyard Tutorials](https://gamedev.amazon.com/forums/tutorials)\.
 
 ## Tools {#cloud-canvas-overview-tools}
 
  You can access Cloud Canvas functionality by using any of the following:
-+  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** - A web application that makes backend administration and management accessible to everyone\. 
++  **[Cloud Gem Portal](/docs/userguide/gems/cloud-canvas/portal.md)** - A web application that makes backend administration and management accessible to everyone\.
 +  **Cloud Canvas C\+\+ APIs** - For software development\.
-+ **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** - For managing resource groups, mappings, deployments, and projects\. 
-+  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** - For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\. 
++ **[Using the Cloud Canvas Command Line](/docs/userguide/gems/cloud-canvas/command-line.md)** - For managing resource groups, mappings, deployments, and projects\.
++  **[Cloud Canvas Tools in Lumberyard Editor](/docs/userguide/gems/cloud-canvas/ui-intro.md)** - For managing AWS resources, deployments, and credentials, and for navigating directly to the AWS consoles supported by Cloud Canvas\.
 
 ## Knowledge Prerequisites {#cloud-canvas-overview-prereq-knowledge}
 
 You need the following to take advantage of Cloud Canvas:
-+ **An understanding of [AWS CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)** - Cloud Canvas uses the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) service to create and manage AWS resources\. Our goal is for Cloud Canvas to minimize what you need to know about AWS CloudFormation and AWS in general\. 
-+ **Familiarity with [JSON](http://www.json.org/)** - Cloud Canvas leverages JSON for storing configuration data, including AWS CloudFormation Templates\. Currently, you'll need to be familiar with this text format to work with the Cloud Canvas resource management system\. A JSON tutorial can be found [here](http://www.w3resource.com/JSON/introduction.php)\. 
++ **An understanding of [AWS CloudFormation Templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)** - Cloud Canvas uses the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) service to create and manage AWS resources\. Our goal is for Cloud Canvas to minimize what you need to know about AWS CloudFormation and AWS in general\.
++ **Familiarity with [JSON](http://www.json.org/)** - Cloud Canvas leverages JSON for storing configuration data, including AWS CloudFormation Templates\. Currently, you'll need to be familiar with this text format to work with the Cloud Canvas resource management system\. A JSON tutorial can be found [here](http://www.w3resource.com/JSON/introduction.php)\.

@@ -1,29 +1,29 @@
 ---
-description: ' Use the &VIM; to interact with entities in the &ALYlong; viewport.
-  Learn about the differences between the new &VIM; and the old interaction model. '
-title: Working with the &VIM;
+description: ' Use the Viewport Interaction Model to interact with entities in the Amazon Lumberyard viewport.
+  Learn about the differences between the new Viewport Interaction Model and the old interaction model. '
+title: Working with the Viewport Interaction Model
 ---
 # Working with the Viewport Interaction Model {#working-with-viewport-interaction-model}
 
-****  
+****
 This feature is experimental and is missing some core functionality\.
 
 The new Viewport Interaction Model replaces the old interaction model in the viewport\. This feature combines free and local selection so that you can more easily select, move, and modify entities in the viewport\. With the Viewport Interaction Model, you can create custom reference spaces to move your entities\. With custom reference spaces, you can move your selected entities in relation to the reference that you specified\. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way\. Gizmos are deprecated\.
 
 The Viewport Interaction Model provides the following benefits:
 + Improves the ability to select your preferred entity, especially for nested hierarchies or levels that have many entities\.
-+ Prevents you from accidentally deselecting an entity\. The entity that you select is locked for editing\. 
++ Prevents you from accidentally deselecting an entity\. The entity that you select is locked for editing\.
 + Adds keyboard and mouse actions that you can apply to your selected entities\. For example, you can freely switch between local, parent, and world space to make changes to your selected entities\.
 + Establishes an editing pattern that matches the Component Mode feature\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.
 
 See the following concepts for the Viewport Interaction Model:
 
-**Manipulator**  
-With manipulators, you can edit component properties directly in the viewport instead of the **Entity Inspector**\.  
-For more information, see [Using Manipulators](/docs/userguide/components/manipulators-using.md)\. 
+**Manipulator**
+With manipulators, you can edit component properties directly in the viewport instead of the **Entity Inspector**\.
+For more information, see [Using Manipulators](/docs/userguide/components/manipulators-using.md)\.
 
-**Custom Reference Target**  
-When you select an entity, you can specify whether to move that entity in relation to another entity\. 
+**Custom Reference Target**
+When you select an entity, you can specify whether to move that entity in relation to another entity\.
 
 ## Viewport Interaction Model Limitations {#viewport-interaction-model-limits}
 

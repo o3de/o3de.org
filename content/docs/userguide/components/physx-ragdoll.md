@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Ragdoll component to create a physical representation
-  of a character in the &ALYlong; &animation-editor; . '
+  of a character in the Amazon Lumberyard Animation Editor . '
 title: PhysX Ragdoll
 ---
 # PhysX Ragdoll {#component-physx-ragdoll}
@@ -28,12 +28,12 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 ![\[PhysX Ragdoll component properties.\]](/images/userguide/component/physx/ui-physx-ragdoll-component-properties-1.27.png)
 
 
-****  
+****
 
-| Property | Description | 
-| --- | --- | 
-| Position Iteration Count |  Specifies the number of iterations to use for joint stability and accuracy\.  A higher iteration count produces more realistic behavior but decreases performance\.  A lower iteration count may result in unrealistic behavior, such as joints separating and parts of the ragdoll intersecting with the terrain\. Default: `16` Valid values: `1` to `255`  | 
-| Velocity Iteration Count |  Specifies the number of iterations to use for resolving collisions, such as restitution \(bounciness\) and rigid body intersection\.  A higher iteration count resolves collisions based on the material settings but decreases performance\.  Use a lower iteration count to reduce the restitution for your ragdoll\. Default: `8` Valid values: `1` to `255`  | 
-| Enable Joint Projection |  If set, joint projection preserves joint constraints in demanding situations, such as parts of the ragdoll moving energetically\. This setting may improve physical plausibility\. Enabled by default\.  | 
-| Joint Projection Linear Tolerance |  The maximum linear deviation that the PhysX system allows in each joint\. Values less than `0.001` meters are not recommended due to jittering\.  To edit this property, you must set the **Enable Joint Projection** property\. Default: `0.001`  | 
-| Joint Projection Angular Tolerance |  Maximum angular deviation that the PhysX system allows in each joint\. Values less than `1` degree are not recommended due to jittering\.  To edit this property, you must set the **Enable Joint Projection** property\. Default: `1`  | 
+| Property | Description |
+| --- | --- |
+| Position Iteration Count |  Specifies the number of iterations to use for joint stability and accuracy\.  A higher iteration count produces more realistic behavior but decreases performance\.  A lower iteration count may result in unrealistic behavior, such as joints separating and parts of the ragdoll intersecting with the terrain\. Default: `16` Valid values: `1` to `255`  |
+| Velocity Iteration Count |  Specifies the number of iterations to use for resolving collisions, such as restitution \(bounciness\) and rigid body intersection\.  A higher iteration count resolves collisions based on the material settings but decreases performance\.  Use a lower iteration count to reduce the restitution for your ragdoll\. Default: `8` Valid values: `1` to `255`  |
+| Enable Joint Projection |  If set, joint projection preserves joint constraints in demanding situations, such as parts of the ragdoll moving energetically\. This setting may improve physical plausibility\. Enabled by default\.  |
+| Joint Projection Linear Tolerance |  The maximum linear deviation that the PhysX system allows in each joint\. Values less than `0.001` meters are not recommended due to jittering\.  To edit this property, you must set the **Enable Joint Projection** property\. Default: `0.001`  |
+| Joint Projection Angular Tolerance |  Maximum angular deviation that the PhysX system allows in each joint\. Values less than `1` degree are not recommended due to jittering\.  To edit this property, you must set the **Enable Joint Projection** property\. Default: `1`  |

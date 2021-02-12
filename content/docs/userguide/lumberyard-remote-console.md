@@ -1,26 +1,26 @@
 ---
-description: ' Use console commands to modify and configure the &ALYlong; runtime
+description: ' Use console commands to modify and configure the Amazon Lumberyard runtime
   application. '
-title: '&remote-console;'
+title: 'Universal Remote Console'
 ---
 # Universal Remote Console {#lumberyard-remote-console}
 
 You can use **Console** commands to modify and configure the Lumberyard runtime application\. On a PC, the **Console** is available from Lumberyard Editor or the game\. But for mobile platforms you must use a separate Windows\-based application called the Universal Remote Console\. With the Universal Remote Console you can use the IP address of the machine running the Lumberyard game to connect to a remote instance of Lumberyard\.
 
-Universal Remote Console requires the use of a PC and works with both Android and iOS\. Your mobile device and the PC will need to be on the same network and your firewall should be configured to allow traffic through port 4600\. 
+Universal Remote Console requires the use of a PC and works with both Android and iOS\. Your mobile device and the PC will need to be on the same network and your firewall should be configured to allow traffic through port 4600\.
 
 **To start the Universal Remote Console**
 
-1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`  
+1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`
 ![\[Image NOT FOUND\]](/images/userguide/remote-console.png)
 
-1. To see output from the Lumberyard logging system, click the **Full Log** tab\. 
+1. To see output from the Lumberyard logging system, click the **Full Log** tab\.
 
 **To connect to a Lumberyard game on a mobile device**
 
-1. In the `system_platform_asset.cfg` file, enter the console variable `log_RemoteConsoleAllowedAddresses=[IP address]`, where IP address is the address of the computer that the remote console is running on\. 
+1. In the `system_platform_asset.cfg` file, enter the console variable `log_RemoteConsoleAllowedAddresses=[IP address]`, where IP address is the address of the computer that the remote console is running on\.
 
-   For Android, use the `system_android_es.cfg` file\. 
+   For Android, use the `system_android_es.cfg` file\.
 
    For iOS, use the `system_ios_ios.cfg` file\.
 
@@ -41,11 +41,11 @@ If your network allows you to assign fixed IP addresses per device, you can edit
 ```
 <Targets>
 <Target name="PC" ip="localhost" port="4600"/>
-<Target name="Android" ip="192.168.1.247" port="4600"/> 
+<Target name="Android" ip="192.168.1.247" port="4600"/>
 </Targets>
 ```
 
-This lets you select from a list of devices instead of entering the IP address each time\. Once successfully connected, the status indicator in the lower right corner will turn green\. 
+This lets you select from a list of devices instead of entering the IP address each time\. Once successfully connected, the status indicator in the lower right corner will turn green\.
 
 ## Issuing Commands {#lumberyard-remote-console-commands}
 

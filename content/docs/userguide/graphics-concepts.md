@@ -1,5 +1,5 @@
 ---
-description: ' Learn the following primary concepts about working with &ALY;''s graphic
+description: ' Learn the following primary concepts about working with Lumberyard''s graphic
   tools. '
 title: Concepts
 ---
@@ -19,28 +19,28 @@ In Lumberyard, these image files can be imported from `.tif`, `.jpg`, `.png`, `.
 
 Lumberyard uses textures to help define what the surface of an object looks like\. You can layer textures on top of each other to define different aspects of the material's appearance\. Lumberyard uses the following types of texture maps\. These are the most common types you'll use with the default [Illum](/docs/userguide/shaders/illum.md) shader\.
 
-[Diffuse](/docs/userguide/materials/maps/diffuse.md)  
+[Diffuse](/docs/userguide/materials/maps/diffuse.md)
 Defines the base color of the material\. For example, this could be a detailed image of a marble surface or wood grain\. Defining a diffuse texture is optional; if you need a uniform color, you can instead define a diffuse color or tint\.
 
-[Normal](/docs/userguide/materials/maps/normal-intro.md)  
+[Normal](/docs/userguide/materials/maps/normal-intro.md)
 Simulates bumps on the surface of the material\. Using a normal map can make a low\-polygon mesh look like it has high\-resolution geometry\. Normal maps do not change the actual geometry of the surface to which it's mapped but only simulate variances in height\. For example, a rock wall with a normal map applied might look like it has holes and projections that respond to light and shadows when the viewer faces it directly\. But when viewed from the side, its silhouette appears as a flat surface\.
 
-Specular  
+Specular
 Defines a surface's shininess and the color of its reflective highlights\. A high value pixel \(for example, white or light colors\) renders a material as more shiny, such as metal details\. A lower value pixel \(for example, black, gray, or other dark colors\) renders a less reflective surface, such as leather\.
 
-[Detail](/docs/userguide/materials/maps/detail-intro.md)  
+[Detail](/docs/userguide/materials/maps/detail-intro.md)
 Provides additional detail for close\-up viewing\. This map is typically a small image that is tiled many times across a larger surface\. This level of detail would appear only at a close range; from a distance, the object still retains its normal level of detail\. For example, a boulder can gain extra details such as scratches and dents or a porous surface when viewed at close range\. Human skin can appear smooth from a distance but show pores and imperfections when viewed up close\. To use, enable **Detail Mapping** under **Shader Generation Params**\.
 
-[Heightmap](/docs/userguide/materials/maps/displacement-intro.md)  
-Specifies height or elevation in a grayscale image that uses 256 shades\. Black and white represent the lowest and highest elevations, respectively\. High\-quality [32\-bit heightmaps](/docs/userguide/terrain/heightmap-import.md) are recommended for large terrain areas\. An important difference between heightmaps and normal mapping is that a heightmap changes the actual geometry of the surface to which you apply it\. This is crucial, for example, if you apply a heightmap to a terrain, as objects and players need to respond to the changes in elevation\. In Lumberyard, the heightmap setting in the **Material Editor** can be applied as offset bump map, [POM](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#pom), silhouette POM, and displacement mapping\.
+[Heightmap](/docs/userguide/materials/maps/displacement-intro.md)
+Specifies height or elevation in a grayscale image that uses 256 shades\. Black and white represent the lowest and highest elevations, respectively\. High\-quality [32\-bit heightmaps](/docs/userguide/terrain/heightmap-import.md) are recommended for large terrain areas\. An important difference between heightmaps and normal mapping is that a heightmap changes the actual geometry of the surface to which you apply it\. This is crucial, for example, if you apply a heightmap to a terrain, as objects and players need to respond to the changes in elevation\. In Lumberyard, the heightmap setting in the **Material Editor** can be applied as offset bump map, [POM](/docs/userguide/ly-glos-chap#pom), silhouette POM, and displacement mapping\.
 
-Emittance Multiplier  
+Emittance Multiplier
 Multiplies the emissive color with RGB texture\.
 
-[Decal Opacity](/docs/userguide/materials/maps/decal-intro.md)  
+[Decal Opacity](/docs/userguide/materials/maps/decal-intro.md)
 Alpha mask used for decal entities\. To use, enable **Decal** under **Shader Generation Params**\.
 
-Emittance  
+Emittance
 Multiplies the emissive color with RGB texture\. Emissive alpha mask is contained in alpha channel\.
 
 ## Shaders {#graphics-concepts-shaders}

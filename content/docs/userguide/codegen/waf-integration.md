@@ -1,16 +1,16 @@
 ---
 description: ' Learn how AZ Code Generator is integrated with the Waf build system
-  in &ALYlong;. '
+  in Amazon Lumberyard. '
 title: 'AZ Code Generator Integration with Waf '
 ---
 # AZ Code Generator Integration with Waf {#az-code-gen-waf-integration}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| AZ Code Generator is in preview release and is subject to change\. | 
+| AZ Code Generator is in preview release and is subject to change\. |
 
 AZ Code Generator is fully accessible for any Waf target as the feature `az_code_gen`\. The `dev\Tools\Build\waf-<version_number>\lmbrwaflib\az_code_generator.py` file contains the core of the Waf integration code\. It includes the `az_code_gen` feature that can be used by any `wscript` file\.
 
@@ -84,11 +84,11 @@ The following example shows several input file specifications\.
 'files' : [bld.srcnode.find_or_declare('Code/Framework/AzCore/Tests/CodeGen.h')],
 
 'files' : [
-# Pass both MyClass.h and MyClass.cpp at the same time to code generator to get more 
+# Pass both MyClass.h and MyClass.cpp at the same time to code generator to get more
 # information about MyClass than just the header. Note the nested lists.
-    ['MyClass.h', 'MyClass.cpp'] 
+    ['MyClass.h', 'MyClass.cpp']
 ]
- 
+
 'files' : [
     # Any and all variations are allowed, but because lists provide only one layer of grouping,
     # lists are allowed only at the top level.
@@ -105,9 +105,9 @@ To specify template drivers to use for each code generation pass, provide a list
 
 ```
 'scripts' : [
-    '../../../Framework/AzFramework/CodeGen/AzClassCpp.py', 
-    '../../../Framework/AzFramework/CodeGen/AzEBusInline.py', 
-    '../../../Framework/AzFramework/CodeGen/AzReflectionCpp.py', 
+    '../../../Framework/AzFramework/CodeGen/AzClassCpp.py',
+    '../../../Framework/AzFramework/CodeGen/AzEBusInline.py',
+    '../../../Framework/AzFramework/CodeGen/AzReflectionCpp.py',
     '../../../Framework/AzFramework/CodeGen/AzClassInline.py'
 ],
 ```

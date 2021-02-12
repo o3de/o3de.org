@@ -1,6 +1,6 @@
 ---
 description: ' Use the Game Effect System Gem to create and manage the visual effects
-  of the Lightning Arc Gem for your &ALY; game project. '
+  of the Lightning Arc Gem for your Lumberyard game project. '
 title: GameEffect Gem
 ---
 # GameEffect Gem {#gems-system-gem-game-effect}

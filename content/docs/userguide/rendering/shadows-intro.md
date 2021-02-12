@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to minimize the performance impact of rendering shadows in
-  &ALY;. '
+  Lumberyard. '
 title: Environment Shadows
 ---
 # Environment Shadows {#rendering-graphics-shadows-intro}

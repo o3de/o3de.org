@@ -1,7 +1,7 @@
 ---
-description: ' Use the &script-canvas; Basic Sample to learn basic gameplay functions
-  in &ALYlong;. '
-title: '&script-canvas; Basic Sample'
+description: ' Use the Script Canvas Basic Sample to learn basic gameplay functions
+  in Amazon Lumberyard. '
+title: 'Script Canvas Basic Sample'
 ---
 # Script Canvas Basic Sample {#script-canvas-basic-sample}
 
@@ -29,7 +29,7 @@ The Script Canvas Basic Sample contains a collection of five Script Canvas scrip
    + `projectile.scriptcanvas`
    + `togglelight.scriptcanvas`
 
-**To play the game**  
+**To play the game**
 Do the following:
 + To start the level, press **Ctrl\+G**\.
 + To control the tank, do the following:

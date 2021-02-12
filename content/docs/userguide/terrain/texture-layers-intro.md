@@ -1,7 +1,7 @@
 ---
 description: ' Use terrain texture layers and paint them to create your environment
-  level in the &ly-editor;. '
-title: Using &terrain-textures;
+  level in the Lumberyard Editor. '
+title: Using Terrain Texture Layers
 ---
 # Using Terrain Texture Layers {#terrain-texture-layers-intro}
 

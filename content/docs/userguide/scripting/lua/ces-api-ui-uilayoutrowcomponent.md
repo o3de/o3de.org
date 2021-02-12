@@ -1,6 +1,6 @@
 ---
 description: ' Use the UILayoutRowComponent to control the grid layout of rows in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: UILayoutRowComponent
 ---
 # UILayoutRowComponent {#lua-scripting-ces-api-ui-uilayoutrowcomponent}

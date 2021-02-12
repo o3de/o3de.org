@@ -1,6 +1,6 @@
 ---
 description: ' Use the Twitch Metastream feature to customize game streams with overlays
-  of statistics and events for &ALYlong;. '
+  of statistics and events for Amazon Lumberyard. '
 title: Metastream Gem
 ---
 # Metastream Gem {#gems-system-gem-metastream}
@@ -24,7 +24,7 @@ To enable broadcasters to use Twitch Metastream, you must do the following:
 
 1. Add a single line of code for each event you want broadcasters to access\.
 
-**Note**  
+**Note**
 Twitch Metastream is supported on Windows only\.
 
 ## Adding the Metastream Gem {#gems-system-add-metastream-gem}
@@ -35,17 +35,17 @@ To enable the Metastream gem, see [Enabling Gems](/docs/userguide/gems/using-pro
 
 ## Setting Options for the HTTP Server {#gems-system-metastream-http-server-options}
 
-After you enable Metastream, an HTTP server is embedded into the game client and serves as the access point for exposed data\. You can set the following options for the HTTP server\. 
+After you enable Metastream, an HTTP server is embedded into the game client and serves as the access point for exposed data\. You can set the following options for the HTTP server\.
 
-**`metastream_enabled`**  
+**`metastream_enabled`**
 Read\-only console variable \(CVAR\) that describes the current state of the embedded HTTP server\. `0` = disabled\. `1` = enabled\.
 
-**`metastream_serverOptions`**  
-Sets the options for the embedded HTTP server\. Options are a set of semicolon separated `key=value` pairs\.   
-If a key value requires a semi\-colon character ';' or the equal character '=' you may use the `$semi` macro or `$equ`\.  
-The embedded HTTP server is based on CivetWeb\. You can find the full list of options that can be set at:  
-[https://github\.com/civetweb/civetweb/blob/master/docs/UserManual\.md](https://github.com/civetweb/civetweb/blob/master/docs/UserManual.md)  
-For security reasons, the following CivetWeb options are ignored:  
+**`metastream_serverOptions`**
+Sets the options for the embedded HTTP server\. Options are a set of semicolon separated `key=value` pairs\.
+If a key value requires a semi\-colon character ';' or the equal character '=' you may use the `$semi` macro or `$equ`\.
+The embedded HTTP server is based on CivetWeb\. You can find the full list of options that can be set at:
+[https://github\.com/civetweb/civetweb/blob/master/docs/UserManual\.md](https://github.com/civetweb/civetweb/blob/master/docs/UserManual.md)
+For security reasons, the following CivetWeb options are ignored:
 + `enable_directory_listing`
 + `cgi_interpreter`
 + `run_as_user`
@@ -55,10 +55,10 @@ Files that you place inside the document root will be served by the HTTP server\
 
 You can also use the following console commands:
 
-`metastream_start`  
+`metastream_start`
 Starts the embedded HTTP server
 
-`metastream_stop`  
+`metastream_stop`
 Stops the embedded HTTP server
 
 ## Exposing Data through Metastream {#gems-system-metastream-expose-data}
@@ -84,7 +84,7 @@ The Metastream Gem uses the following API to stop the HTTP server:
 Metastream::MetastreamRequestBus::Broadcast(&Metastream::MetastreamRequests::StopHTTPServer);
 ```
 
-If the server is not running, attempting to stop the server has no effect\. 
+If the server is not running, attempting to stop the server has no effect\.
 
 #### Exposing Data {#gems-system-metastream-exposing-data}
 
@@ -107,19 +107,19 @@ void MetastreamRequests::AddObjectToCache(const char* table, const char* key, co
 
 Definitions for the parameters listed:
 
-`table`  
+`table`
 Name of the table\.
 
-`key`  
+`key`
 Name of the key\.
 
-`value`  
+`value`
 The value to add\. If the value exists, it is updated\. If the value type is bool, it is represented in the `JSON` doc as `true` or `false`\. Signed, unsigned, and double types are represented as JSON numbers; strings are UTF8 and will be escaped, if necessary\.
 
-`arrayName`  
+`arrayName`
 The name of the array to add\. If no array exists, then empty array is added\. The array is deleted after it is added to the cache\.
 
-`objectName`  
+`objectName`
 The name of the object to add\. If no object exists, then a NULL object is added\. The object is deleted after it is added to the cache\.
 
 None of the above returns any values\.
@@ -140,22 +140,22 @@ void MetastreamRequests::AddObjectToArray(const char* table, const char* destArr
 
 Definitions for the parameters listed:
 
-`table`  
+`table`
 Name of the table\.
 
-`arrayName`  
+`arrayName`
 The name of the array to add\. If no array exists, then an empty array is added\. The array is deleted after it is added to the cache\.
 
-`value`  
+`value`
 The value to add to the array\. If value type is bool, it is represented in the JSON doc as `true` or `false`\. Signed, unsigned, and double types are represented as JSON numbers; strings are UTF8 and will be escaped, if necessary\.
 
-`arrayName`  
+`arrayName`
 The name of the array to add to\. If no array exists, one is created\.
 
-`destArrayName`  
+`destArrayName`
 The name of destination array to add to\. If no array exists, one is created\.
 
-`sourceObjectName`  
+`sourceObjectName`
 The name of the object to add to the array\. If no object exists, then a NULL object is added\. The object is deleted after it is added to the cache\.
 
 None of the above returns any values\.
@@ -177,35 +177,35 @@ void MetastreamRequests::AddSigned64ToObject(const char* table, const char* obje
 
 Definitions for the parameters listed:
 
-`table`  
+`table`
 Name of the table\.
 
-`key`  
+`key`
 Name of the key\.
 
-`objectName`  
+`objectName`
 The name of the object to add\. If no object exists, then one is created\.
 
-`value`  
+`value`
 The value to add\. If the value exists, it is updated\. If value type is bool, it is represented in the JSON doc as `true` or `false`\. Signed, unsigned, and double types are represented as JSON numbers; strings are UTF8 and will be escaped, if necessary\.
 
-`srcArrayName`  
+`srcArrayName`
 The name of the array to add to\. If no array exists, one is created\. The array is deleted after it is added to the object\.
 
-`sourceObjectName`  
+`sourceObjectName`
 The name of the object to add\. If no object exists, then a NULL object is added\. The object is deleted after it is added to the cache\.
 
 None of the above returns any values\.
 
 #### Examples {#metastream-cplusplus-examples}
 
-The following example shows how to use the Metastream C\+\+ API in a project: 
+The following example shows how to use the Metastream C\+\+ API in a project:
 
 ```
 Metastream::MetastreamRequestBus::Broadcast(&Metastream::MetastreamRequestBus::Events::AddToCache, table, key, value);
 ```
 
-**Note**  
+**Note**
 Any value that is added to the cache should be JSON compliant\. For information, see the [JSON RFC](https://tools.ietf.org/html/rfc7159)\.
 
 The following example shows how to reflect the system information\. Basically all of the info is added to a object name, `sysInfo`, and this object is then added to the cache as `systeminfo`\.
@@ -216,23 +216,23 @@ Compound object:
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddUnsigned64ToObject,
     kDataBaseName.c_str(), "sysInfo",  "drivespace", GetFreeDriveSpace());
-    
+
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddUnsigned64ToObject,
     kDataBaseName.c_str(),  "sysInfo",  "memoryload", GetMemoryLoad());
-    
+
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddDoubleToObject,
     kDataBaseName.c_str(),  "sysInfo",  "cpuloadsystem", GetCPULoadSystem());
-    
+
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddDoubleToObject,
     kDataBaseName.c_str(),  "sysInfo",  "cpuloadprocess", GetCPULoadProcess());
-    
+
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddUnsigned64ToObject,
     kDataBaseName.c_str(),  "sysInfo",  "tickcount", GetTickCount64());
-    
+
 Metastream::MetastreamRequestBus::Broadcast(
     &Metastream::MetastreamRequestBus::Events::AddObjectToCache,
     kDataBaseName.c_str(),  "systeminfo",  "sysInfo");
@@ -255,10 +255,10 @@ MetastreamRequestBus.Broadcast.AddBoolToCache(table, key, value);        -- wher
 MetastreamRequestBus.Broadcast.AddDoubleToCache(table, key, value);      -- where value is a double
 MetastreamRequestBus.Broadcast.AddUnsigned64ToCache(table, key, value);  -- where value is an unsigned 64-bit number
 MetastreamRequestBus.Broadcast.AddSigned64ToCache(table, key, value);    -- where value is a signed 64-bit number
-  
+
 MetastreamRequestBus.Broadcast.AddArrayToCache(table, key, arrayName);   -- where arrayName is the name of a temporary array (see below)
 MetastreamRequestBus.Broadcast.AddObjectToCache(table, key, objectName); -- where objectName is the name of a temporary object (see below)
-  
+
 -- Adding to a temporary Array:
 MetastreamRequestBus.Broadcast.AddStringToArray(table, arrayName, value);
 MetastreamRequestBus.Broadcast.AddBoolToArray(table, arrayName, value);
@@ -266,7 +266,7 @@ MetastreamRequestBus.Broadcast.AddDoubleToArray(table, arrayName, value);
 MetastreamRequestBus.Broadcast.AddUnsigned64ToArray(table, arrayName, value);
 MetastreamRequestBus.Broadcast.AddSigned64ToArray(table, arrayName, value);
 MetastreamRequestBus.Broadcast.AddObjectToArray(table, arrayName, objectName);
-  
+
 -- Adding to a temporary Object:
 MetastreamRequestBus.Broadcast.AddStringToObject(table, objectName, key, value);
 MetastreamRequestBus.Broadcast.AddBoolToObject(table, objectName, key, value);
@@ -281,30 +281,30 @@ MetastreamRequestBus.Broadcast.AddObjectToObject(table, objectName, key, objectN
 
 You can access game data that has been exposed through Metastream by using the HTTP API Get requests\. You can then use JavaScript to work with the data\.
 
-**`http://localhost:port/pathToFile`**  
-Serves a file from the document root\. File types include HTML, JS, CSS, images, sounds, resources, or assets\.  
+**`http://localhost:port/pathToFile`**
+Serves a file from the document root\. File types include HTML, JS, CSS, images, sounds, resources, or assets\.
 The data path is reserved for Metastream data\. Files that are saved to the `document_root/data/` directory will not be accessible\.
 
-**`http://localhost:port/data`**  
+**`http://localhost:port/data`**
 Returns a list of available Metastream tables that contain `key=value` pairs\.
 
-**`http://localhost:port/data?table=table_name`**  
-Returns a list of all Metastream keys in the specified table\.  
+**`http://localhost:port/data?table=table_name`**
+Returns a list of all Metastream keys in the specified table\.
 You can retrieve multiple key\-value pairs in a single request by listing the keys in a comma\-separated list\. For example, `http://localhost:8082/data?table=sample&key=key1,key2,key3`
 
-**`http://localhost:port/data?table=table_name&key=key_name`**  
-Returns the value for the specified key in the specified table\.  
-Multiple `key=value` pairs can be retrieved in a single request by listing the desired keys separated by commas\. For example, http://localhost:*8082*/data?table=*sample*&key=*key1,key2,key3*\.  
+**`http://localhost:port/data?table=table_name&key=key_name`**
+Returns the value for the specified key in the specified table\.
+Multiple `key=value` pairs can be retrieved in a single request by listing the desired keys separated by commas\. For example, http://localhost:*8082*/data?table=*sample*&key=*key1,key2,key3*\.
 To list all keys and their values for a table: http://localhost:*8082*/data?table=*sample*&key=\*
 
 Data requests are returned in the following format:
 
 
-****  
+****
 
-| Request | Return | 
-| --- | --- | 
-| /data | \{ "tables": \[ "table1", "table2", \.\.\. \] \} | 
-| /data?table=table\_name | \{ "keys": \[ "key1", "key2", \.\.\. \] \} | 
-| /data?table=table\_name&key=key\_name | \{ "key\_name": value \} | 
-| /data?table=table\_name&key=keys\_list | <pre>{<br />  "key1": value1,<br />  "key2": value2,<br />  ...<br />}</pre> | 
+| Request | Return |
+| --- | --- |
+| /data | \{ "tables": \[ "table1", "table2", \.\.\. \] \} |
+| /data?table=table\_name | \{ "keys": \[ "key1", "key2", \.\.\. \] \} |
+| /data?table=table\_name&key=key\_name | \{ "key\_name": value \} |
+| /data?table=table\_name&key=keys\_list | <pre>{<br />  "key1": value1,<br />  "key2": value2,<br />  ...<br />}</pre> |

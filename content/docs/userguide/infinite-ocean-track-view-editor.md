@@ -1,5 +1,5 @@
 ---
-description: ' Use the &ALYlong; Infinite Ocean component with the &trackview-editor;. '
+description: ' Use the Amazon Lumberyard Infinite Ocean component with the <guilabel>Track View</guilabel> editor. '
 title: Infinite Ocean Component with the Track View Editor
 ---
 # Infinite Ocean Component with the Track View Editor {#infinite-ocean-track-view-editor}
@@ -8,7 +8,7 @@ You can add the **Infinite Ocean** component to an entity sequence in the Track 
 
 ![\[Configure the Infinite Ocean component in the Track View.\]](/images/userguide/component/infiniteocean/infinite-ocean-component-17.png)
 
-**Note**  
+**Note**
 Some **Infinite Ocean** component parameters are not available in the Track View\. The **Wind Speed** and **Wind Direction** parameters are not supported at this time\.
 
 For more information, see [Using the Track View Editor](/docs/userguide/cinematics/track-view/editor.md)\.

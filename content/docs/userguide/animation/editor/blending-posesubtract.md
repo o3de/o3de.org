@@ -1,5 +1,5 @@
 ---
-description: ' Use the Pose Subtract node in &ALYlong; &animation-editor; to subtract
+description: ' Use the Pose Subtract node in Amazon Lumberyard Animation Editor to subtract
   one pose from another. '
 title: Pose Subtract Node
 ---
@@ -7,8 +7,8 @@ title: Pose Subtract Node
 
 The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**\. The output of a **Pose Subtract** node is the delta between them \(**Pose 1** - **Pose 2**\)\.
 
-**Note**  
-With the **Pose Subtract** node, you can generate an additive pose\. You can then supply it to the **Blend Two Additive** node at runtime without manually generating it from a [DCC](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#dcc)\. The output of the **Pose Subtract** node cannot be used as an input to the **Blend Two \(Legacy\)** node\. This is because **Blend Two \(Legacy\)** does not expect a pose that is already a delta or additive pose, but expects a bind pose\.
+**Note**
+With the **Pose Subtract** node, you can generate an additive pose\. You can then supply it to the **Blend Two Additive** node at runtime without manually generating it from a [DCC](/docs/userguide/ly-glos-chap#dcc)\. The output of the **Pose Subtract** node cannot be used as an input to the **Blend Two \(Legacy\)** node\. This is because **Blend Two \(Legacy\)** does not expect a pose that is already a delta or additive pose, but expects a bind pose\.
 
 **To use the **Pose Subtract** node**
 
@@ -20,10 +20,10 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
-1. Drag the **Pose Subtract** node into the animation graph\.  
+1. Drag the **Pose Subtract** node into the animation graph\.
 ![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Pose Subtract into the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-animgraphpalette-posesubtract.png)
 
-1.   
+1.
 ![\[Pose Subtract node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs-posesubtract.png)
 
    Connect nodes to the following inputs and output:

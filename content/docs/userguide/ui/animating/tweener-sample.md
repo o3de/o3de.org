@@ -1,5 +1,5 @@
 ---
-description: ' Open the Scripted Entity Tweener sample level in &ALYlong; to see tweeners
+description: ' Open the Scripted Entity Tweener sample level in Amazon Lumberyard to see tweeners
   in action. '
 title: Tweener Sample Level
 ---
@@ -9,17 +9,17 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 
 **To see example Scripted Entity Tweeners in action**
 
-1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.  
+1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.
 ![\[Example level that uses Scripted Entity Tweener.\]](/images/userguide/ui-animating-tweener-level.png)
 
-1. To switch to gameplay mode, press **Ctrl\+G**\. The header, list items, earth, stars, and spaceship use tweeners for their animation\.  
+1. To switch to gameplay mode, press **Ctrl\+G**\. The header, list items, earth, stars, and spaceship use tweeners for their animation\.
 ![\[Animated demonstration of the Sample Level for Tweeners\]](/images/userguide/ui-animating-tweener-uisample.gif)
 
 1. Press **Esc** to exit\.
 
 **To view the sample UI canvas**
 
-1. Open the [**UI Editor**](/docs/userguide/ui/editor/using.md)\. 
+1. Open the [**UI Editor**](/docs/userguide/ui/editor/using.md)\.
 
 1. Choose **File**, **Open Canvas**\.
 
@@ -29,7 +29,7 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 
 1. In the **Hierarchy** pane, select **MenuSample**\.
 
-1. In the **Properties** pane, under the **Lua Script** component, for **Script**, click the **\{ \}** icon\. This opens the `samplescreenanimation` script in the **Lua Editor**\.  
+1. In the **Properties** pane, under the **Lua Script** component, for **Script**, click the **\{ \}** icon\. This opens the `samplescreenanimation` script in the **Lua Editor**\.
 ![\[Select the Lua script for the sample tweener code.\]](/images/userguide/ui-animating-tweener-sample-1.png)
 
 1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](/docs/userguide/ui/animating/tweener-parameters.md)\.

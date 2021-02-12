@@ -1,5 +1,5 @@
 ---
-description: ' Use Waf files to specify the files to include in your &ALYlong; game
+description: ' Use Waf files to specify the files to include in your Amazon Lumberyard game
   build. '
 title: Waf File Lists (*.waf_files)
 ---
@@ -104,13 +104,13 @@ The source file definitions support limited [ant pattern\-based file matching](h
 The example showcases the following globbing patterns:
 
 
-****  
+****
 
-| Globbing Pattern | Description | 
-| --- | --- | 
-| \*\.cpp | Add all files with the \.cpp extension in the current directory only\. | 
-| Single/\*\.cpp | Add all files with the \.cpp extension in the Source directory only\. | 
-| Nested/\*\*/\*\.cpp | Recursively add all files with the \.cpp extension in the Source directory\. | 
+| Globbing Pattern | Description |
+| --- | --- |
+| \*\.cpp | Add all files with the \.cpp extension in the current directory only\. |
+| Single/\*\.cpp | Add all files with the \.cpp extension in the Source directory only\. |
+| Nested/\*\*/\*\.cpp | Recursively add all files with the \.cpp extension in the Source directory\. |
 
 ### Custom Globbing Rules {#waf-files-filelist-file-globbing-custom-rules}
 

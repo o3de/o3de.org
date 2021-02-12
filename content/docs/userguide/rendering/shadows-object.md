@@ -1,6 +1,6 @@
 ---
 description: ' For better shadow quality, use object shadows to assign custom shadow
-  maps to selected objects in &ALYlong;. '
+  maps to selected objects in Amazon Lumberyard. '
 title: Object Shadows
 ---
 # Object Shadows {#rendering-graphics-shadows-object}

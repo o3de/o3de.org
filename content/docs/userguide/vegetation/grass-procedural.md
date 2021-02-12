@@ -1,20 +1,20 @@
 ---
 description: ' Paint with a texture layer to quickly add grass to a large area of
-  your &ALY; terrain. '
+  your Lumberyard terrain. '
 title: 'Painting to Add Grass '
 ---
 # Painting to Add Grass {#vegetation-grass-procedural}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This topic references tools and features that are [legacy](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](https://docs.aws.amazon.com/lumberyard/latest/userguide/gems-system-cryentity-removal-gem.html) using the [Project Configurator](https://docs.aws.amazon.com/lumberyard/latest/userguide/configurator-intro.html) or the [command line](https://docs.aws.amazon.com/lumberyard/latest/userguide/lmbr-exe.html)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. | 
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 You can drag the mouse to quickly paint all terrain in your level with grass\. This method of placing vegetation is controlled by the texture layer that the vegetation object is associated with\. Painted vegetation is visible wherever the texture layer appears\. This is a quick way to automatically cover a huge area with grass\.
 
-**Note**  
+**Note**
 Painting a level with grass consumes 8 MB of memory cache\.
 
 **To add grass by painting**

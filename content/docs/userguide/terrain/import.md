@@ -1,5 +1,5 @@
 ---
-description: ' Import or export terrain areas into your &ALY; level to save time and
+description: ' Import or export terrain areas into your Lumberyard level to save time and
   work. '
 title: Importing and Exporting Terrain Blocks
 ---

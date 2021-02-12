@@ -1,6 +1,6 @@
 ---
 description: ' Use the Speech Recognition Cloud Gem Portal API to manage bots, intents,
-  and slots in &ALYlong;. '
+  and slots in Amazon Lumberyard. '
 title: Speech Recognition Cloud Gem Portal API
 ---
 # Speech Recognition Cloud Gem Portal API {#cloud-canvas-cloud-gem-speech-recognition-api-cgp}

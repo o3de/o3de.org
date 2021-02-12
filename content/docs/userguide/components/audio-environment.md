@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Environment component to set up a default environment
-  for an entity in &ALYlong;. '
+  for an entity in Amazon Lumberyard. '
 title: Audio Environment
 ---
 # Audio Environment {#component-audio-environment}
@@ -13,7 +13,7 @@ The **Audio Environment** component provides access to features of the [Audio Tr
 
 The **Audio Environment** component has the following property:
 
-**Default Environment**  
+**Default Environment**
 Enter the name of the audio environment to use by default when setting amounts\.
 
 ## EBus Request Bus Interface {#component-audio-environ-ebusrequest}
@@ -26,25 +26,25 @@ For more information about using the Event Bus \(EBus\) interface, see [Working 
 
 Sets the amount of environmental **'send'** to apply to the default environment, if set\.
 
-**Parameters**  
+**Parameters**
 `amount` - Float value of the amount to set
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes
 
 ### SetEnvironmentAmount {#environ-audio-ebus-setenvironmentamount}
 
 Sets the amount of environmental **'send'** to apply to the specified environment\.
 
-**Parameters**  
-`environmentName` - Name of ATL Environment to set an amount on  
+**Parameters**
+`environmentName` - Name of ATL Environment to set an amount on
 `amount` - Float value of the amount to set
 
-**Return**  
+**Return**
 None
 
-**Scriptable**  
+**Scriptable**
 Yes

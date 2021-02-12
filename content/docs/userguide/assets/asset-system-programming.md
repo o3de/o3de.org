@@ -1,13 +1,13 @@
 ---
-description: ' Understand the workflow of &ALYlong;''s runtime asset system and learn
+description: ' Understand the workflow of Amazon Lumberyard''s runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
-title: Programming the &ALY; AZCore Runtime Asset System
+title: Programming the Lumberyard AZCore Runtime Asset System
 ---
 # Programming the Lumberyard AZCore Runtime Asset System {#asset-pipeline-asset-system-programming}
 
 The Lumberyard Editor and Lumberyard runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.
 
-**Note**  
+**Note**
 For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
 
 ## Asset System Classes {#asset-pipeline-asset-system-programming-asset-system-classes}
@@ -27,17 +27,17 @@ An `AssetData` class represents the data of an asset that is loaded in memory\. 
 The following Lumberyard classes derive from `AssetData`:
 
 
-****  
+****
 
-| AssetData Class | Source Code Location | 
-| --- | --- | 
-| ScriptAsset | lumberyard\_version\\dev\\Code\\FrameworkNoteBeg\\AzCore\\AzCore\\Script\\ScriptAsset\.h | 
-| SliceAsset | lumberyard\_version\\dev\\Code\\Framework\\AzCore\\AzCore\\Slice\\SliceAsset\.h | 
-| MeshAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\MeshAsset\.h | 
-| ParticleAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset\.h | 
+| AssetData Class | Source Code Location |
+| --- | --- |
+| ScriptAsset | lumberyard\_version\\dev\\Code\\FrameworkNoteBeg\\AzCore\\AzCore\\Script\\ScriptAsset\.h |
+| SliceAsset | lumberyard\_version\\dev\\Code\\Framework\\AzCore\\AzCore\\Slice\\SliceAsset\.h |
+| MeshAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\MeshAsset\.h |
+| ParticleAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset\.h |
 
-**Note**  
-Adding your own asset type to Lumberyard includes the following high\-level steps:  
+**Note**
+Adding your own asset type to Lumberyard includes the following high\-level steps:
 Derive your type from `AssetData`\.
 Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID\.
 Add the member fields or structs that store your data in memory at run time\.
@@ -60,8 +60,8 @@ The following options are possible:
 + The class queues the load of your asset data\.
 + The class waits for you to load the data explicitly\.
 
-**Note**  
-A loaded asset remains loaded as long as an active `Asset<T>` points to it\. The asset manager does not reference count the asset\. The asset is unloaded when the last system with a reference to the `Asset<T>` drops its reference and the reference count on the asset goes to `0`\. 
+**Note**
+A loaded asset remains loaded as long as an active `Asset<T>` points to it\. The asset manager does not reference count the asset\. The asset is unloaded when the last system with a reference to the `Asset<T>` drops its reference and the reference count on the asset goes to `0`\.
 
 #### Integration with UI Property Grids {#asset-pipeline-asset-system-programming-integration-with-ui-property-grids}
 
@@ -88,11 +88,11 @@ Note the following points:
 The following code example uses `AssetManager` to load a script asset\.
 
 ```
-m_scriptAsset = AZ::Data::AssetManager::Instance().GetAsset<AZ::ScriptAsset>(assetIdToLoad); 
+m_scriptAsset = AZ::Data::AssetManager::Instance().GetAsset<AZ::ScriptAsset>(assetIdToLoad);
 AZ::Data::AssetBus::Handler::BusConnect(m_scriptAsset.GetId());
 ```
 
-In the example, `m_scriptAsset` is a field of type `Asset<ScriptAsset>`\. 
+In the example, `m_scriptAsset` is a field of type `Asset<ScriptAsset>`\.
 
 For related code, see `lumberyard_version\dev\Code\Framework\AzToolsFramework\AzToolsFramework\ToolsComponents\ScriptEditorComponent.cpp`\.
 
@@ -108,7 +108,7 @@ An asset can change on disk after the asset has been loaded \(and therefore has 
 The following code shows a component that has a member variable of type `Asset<T>` that handles live reloading\. First, the component connects to the bus to monitor for asset reloading events\.
 
 ```
-// Connect to the asset bus at the address of my currently assigned asset. 
+// Connect to the asset bus at the address of my currently assigned asset.
 // This notifies me when the script reloads.
 Data::AssetBus::Handler::BusConnect(m_script.GetId());
 ```
@@ -119,9 +119,9 @@ When the `AssetManager` notifies that a new script has been reloaded, the code f
 void ScriptComponent::OnAssetReloaded(AZ::Data::Asset<AZ::Data::AssetData> asset)
 {
     // Clean up any pointers to the old AssetData.
-    UnloadScript(); 
-    m_script = asset;  // This assignment increments the reference count of the new asset. 
-                         // The old asset reference count decrements. 
+    UnloadScript();
+    m_script = asset;  // This assignment increments the reference count of the new asset.
+                         // The old asset reference count decrements.
     // Re-establish state into the new AssetData.
     LoadScript();
 }
@@ -150,8 +150,8 @@ To receive notifications about assets that change on disk, connect to the `Asset
 
 The `AssetCatalogRequestBus` contains other functions that look up asset dependencies, enumerate assets, and perform other low\-level tasks\. In most cases you do not have to use these functions directly\.
 
-**Note**  
-You do not have to use the asset catalog directly unless you write low\-level code that performs custom file processing\. If you use the higher level systems like `Asset<T>`, `AssetData`, and `AssetManager`, these classes communicate with the catalog for you\. 
+**Note**
+You do not have to use the asset catalog directly unless you write low\-level code that performs custom file processing\. If you use the higher level systems like `Asset<T>`, `AssetData`, and `AssetManager`, these classes communicate with the catalog for you\.
 
 To look up asset file information manually, you can pass an `AssetId` to the `AssetCatalog`\. `AssetCatalog` returns a struct that contains the file's type, size, canonical name, and location\.
 

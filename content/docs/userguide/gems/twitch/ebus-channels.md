@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Channels C++ API operations for Twitch that you can
-  use for your &ALY; game project. '
+  use for your Lumberyard game project. '
 title: Channels
 ---
 # Channels {#twitch-api-ebus-channels}
@@ -16,7 +16,7 @@ The following is an example of how to use `GetChannel`:
 ```
 ReceiptID receipt;
 EBUS_EVENT(Twitch::TwitchRequestBus, GetChannel, receipt);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing GetChannel.
 */
@@ -28,7 +28,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const ChannelInfo & info(result.Value);
 			cout << "Get Channel info" << endl;
- 
+
 			cout << "                NumFollowers: " << AZstd::to_string(info.NumFollowers) << endl;
 	        cout << "                    NumViews: " << AZstd::to_string(info.NumViews) << endl;
     	    cout << "            NumItemsRecieved: " << AZstd::to_string(info.NumItemsRecieved) << endl;
@@ -55,14 +55,14 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**Return**  
+**Return**
 No return value\.GetChannel Callback
 
-**result \- ChannelInfoValue**  
-Value - The channel information, which includes the following data:  
+**result \- ChannelInfoValue**
+Value - The channel information, which includes the following data:
 + NumFollowers - The number of followers for the channel\.
 + NumItemsReceived - The number of fields received in this struct\.
 + Partner - If true, the channel is a partner channel\.
@@ -96,7 +96,7 @@ The following is an example of how to use `GetChannelID`:
 ReceiptID receipt;
 AZStd::string channelID;	// Must be a valid channel id
 EBUS_EVENT(Twitch::TwitchRequestBus, GetChannelbyID, receipt, channelID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing GetChannelbyID.
 */
@@ -108,7 +108,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const ChannelInfo & info(result.Value);
 			cout << "Get Channel id info" << endl;
- 
+
 			cout << "                NumFollowers: " << AZstd::to_string(info.NumFollowers) << endl;
 	        cout << "                    NumViews: " << AZstd::to_string(info.NumViews) << endl;
     	    cout << "            NumItemsRecieved: " << AZstd::to_string(info.NumItemsRecieved) << endl;
@@ -133,17 +133,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.GetChannelbyID Callback
 
-**result \- ChannelInfoValue**  
-Value - The channel information, which includes the following data:  
+**result \- ChannelInfoValue**
+Value - The channel information, which includes the following data:
 + NumFollowers - The number of followers for the channel\.
 + NumItemsReceived - The number of fields received in this struct\.
 + Partner - If true, the channel is a partner channel\.
@@ -178,7 +178,7 @@ updateInfo.ChannelFeedEnabled.SetValue(true);	// enable feed
 updateInfo.Delay.SetValue(15);					// set delay to 15 seconds
 updateInfo.Status.SetValue("Starting game soon!");// Tell everyone the game is about to start
 EBUS_EVENT(Twitch::TwitchRequestBus, UpdateChannel, receipt, updateInfo);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing UpdateChannel.
 */
@@ -190,7 +190,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const ChannelInfo & info(result.Value);
 			cout << "Update Channel info" << endl;
- 
+
 			cout << "                NumFollowers: " << AZstd::to_string(info.NumFollowers) << endl;
 	        cout << "                    NumViews: " << AZstd::to_string(info.NumViews) << endl;
     	    cout << "            NumItemsRecieved: " << AZstd::to_string(info.NumItemsRecieved) << endl;
@@ -215,17 +215,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**updateInfo**  
+**updateInfo**
 The elements to update\. You must update at least one item for the call to succeed\. If unsuccessful, the call returns `ResultCode::TwitchChannelNoUpdatesToMake`\.
 
-**Return**  
+**Return**
 No return value\.UpdateChannel Callback
 
-**result \- ChannelInfoValue**  
-Value - The channel information, which includes the following data:  
+**result \- ChannelInfoValue**
+Value - The channel information, which includes the following data:
 + NumFollowers - The number of followers for the channel\.
 + NumItemsReceived - The number of fields received in this struct\.
 + Partner - If true, the channel is a partner channel\.
@@ -257,7 +257,7 @@ The following is an example of how to use `GetChannelEditors`:
 ReceiptID receipt;
 AZStd::string channelID;		// must be a valid channel id
 EBUS_EVENT(Twitch::TwitchRequestBus, GetChannelEditors, receipt, channelID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing GetChannelEditors.
 */
@@ -284,17 +284,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.GetChannelEditors Callback
 
-**result \- UserInfoListValue**  
-Value - The user information list, which includes the following data:  
+**result \- UserInfoListValue**
+Value - The user information list, which includes the following data:
 + ID - The Twitch user ID, which returns in the format `AZStd::string`\.
 + Bio - The user's description, if provided\. This value returns in the format `AZStd::string`\.
 + CreatedDate - The date the user was created, which displays in the ISO 8601 format\.
@@ -333,7 +333,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 			const FollowerResult & info(result.Value);
 			cout << "   Total: " << AZStd::to_string(info.Total) << endl;
 			cout << "  Cursor: " << info.Cursor << endl;
- 
+
             for(const auto & i: info.Followers)
 			{
 				cout << "        Notifications: " << i.Notifications ? "Yes" : "No" << endl;
@@ -352,23 +352,23 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**offset**  
+**offset**
 The object offset to use when paginating results\. When initially called, the value must be 0\. Subsequent calls require you to pass the `total` member value from the `FollowerResult` struct in the callback\. If the `cursor` parameter is an empty string, this value is ignored\.
 
-**cursor**  
+**cursor**
 Used to retrieve the next block of data\. When initially called, an empty string is used\. Subsequent calls require you to pass the `cursor` value from the `FollowerResult` struct in the callback\.
 
-**Return**  
+**Return**
 No return value\.GetChannelFollowers Callback
 
-**result \- FollowerResultValue**  
-Value - The result of the FollowerResult call, which includes the following data:  
+**result \- FollowerResultValue**
+Value - The result of the FollowerResult call, which includes the following data:
 + Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
 + Cursor - If empty, there are no more results\. Otherwise, you can request the next block of followers by passing this value with the offset\.
 + Followers - The list of followers, which includes the following data:
@@ -407,7 +407,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		if(result.Result == Twitch::ResultCode::Success)
 		{
 			const TeamInfoList& teamList(result.Value);
-			 
+
             for(const auto & i: teamList)
 			{
                 cout << "    Team ID: " << i.ID << endl;
@@ -425,17 +425,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.GetChannelFollowers Callback
 
-**result \- ChannelTeamValue**  
-Value - The team information list, which includes the following data:  
+**result \- ChannelTeamValue**
+Value - The team information list, which includes the following data:
 + ID - The Twitch team ID\.
 + Background - The URL for the team's background\.
 + Banner - The URL for the team's banner\.
@@ -472,7 +472,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const Subscription & info(result.Value);
 			cout << "   Total: " << AZStd::to_string(info.Total) << endl;
- 
+
             for(const auto & i: info.Followers)
 			{
 				cout << "                   ID: " << i.ID << endl;
@@ -491,20 +491,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**offset**  
+**offset**
 The object offset to use when paginating results\. When initially called, the value must be 0\. Subsequent calls require you to pass the `total` member value from the `Subscription` struct in the callback\.
 
-**Return**  
+**Return**
 No return value\.GetChannelSubscribers Callback
 
-**result \- SubscriberValue**  
-Value - The result of the `Subscription` call, which includes the following data:  
+**result \- SubscriberValue**
+Value - The result of the `Subscription` call, which includes the following data:
 + Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
 + Subscribers - The list of subscribers, which includes the following data:
   + ID - The Twitch subscriber ID\.
@@ -558,20 +558,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**userID**  
+**userID**
 The Twitch user ID for whom to verify the subscription status\.
 
-**Return**  
+**Return**
 No return value\.CheckChannelSubscriptionbyUser Callback
 
-**result \- SubscriberValue**  
-Value - The subscriber's information, which includes the following data:  
+**result \- SubscriberValue**
+Value - The subscriber's information, which includes the following data:
 + ID - The Twitch subscriber ID\.
 + CreatedDate - The date the user subscribed to the channel, which displays in the ISO 8601 format\.
 + User - The user's information, which includes the following data:
@@ -612,7 +612,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const VideoReturn& info(result.Value);
 			cout << "   Total: " << AZStd::to_string(info.Total) << endl;
- 
+
             for(const auto & i: info.Videos)
 			{
 				cout << "                   ID: " << i.ID << endl;
@@ -626,23 +626,23 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**broadcastType**  
+**broadcastType**
 Valid values for the broadcast type are: Default, Archive, Highlight, Upload, ArchiveAndHighlight, ArchiveAndUpload, ArchiveAndHighlightAndUpload, or HightlightAndUpload\.
 
-**offset**  
+**offset**
 The object offset to use when paginating results\. When initially called, the value must be 0\. Subsequent calls require you to pass the `total` member value from the `Subscription` struct in the callback\.
 
-**Return**  
+**Return**
 No return value\.GetChannelSubscribers Callback
 
-**result \- VideoReturnValue**  
-Value - The result of the `VideoReturn` call, which includes the following data:  
+**result \- VideoReturnValue**
+Value - The result of the `VideoReturn` call, which includes the following data:
 + Total - The total number of results returned\. You can request more results by passing this value as the offset in the next call\.
 + Videos - The video information list, which includes the following data:
   + Length - The video duration, in seconds\.
@@ -677,12 +677,12 @@ Value - The result of the `VideoReturn` call, which includes the following data:
     + Medium
     + Small
     + Template
-  + Thumbnails - The image thumbnail information, including size, how the thumbnail was created \(Type\), and the URL for the thumbnail \(Url\): 
+  + Thumbnails - The image thumbnail information, including size, how the thumbnail was created \(Type\), and the URL for the thumbnail \(Url\):
     + Large
     + Medium
     + Small
     + Template
-  + Resolutions - The video resolution information, which includes the following data: 
+  + Resolutions - The video resolution information, which includes the following data:
     + Chunked - For example, 1920 x 1080\.
     + High - For example, 1280 x 720\.
     + Medium - For example, 852 x 480\.
@@ -729,20 +729,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**length**  
+**length**
 Valid values for the commercial length are: T30Seconds, T60Seconds, T90Seconds, T120Seconds, T150Seconds, or T180Seconds\.
 
-**Return**  
+**Return**
 No return value\.StartChannelCommercial Callback
 
-**result \- StartChannelCommercialValue**  
-Value - The result of the `StartChannelCommercialResult` call, which includes the following data:  
+**result \- StartChannelCommercialValue**
+Value - The result of the `StartChannelCommercialResult` call, which includes the following data:
 + Duration - The commercial duration, in seconds\.
 + RetryAfter - The wait time, in seconds, before calling the API again\.
 + Message - Optional message or error description\.
@@ -758,7 +758,7 @@ The following is an example of how to use `ResetChannelStreamKey`:
 ReceiptID receipt;
 AZStd::string channelID;			// this must be a valid channel id.
 EBUS_EVENT(Twitch::TwitchRequestBus, ResetChannelStreamKey, receipt, channelID);
- 
+
 /*
 ** Portion of the TwitchNotifications class showing ResetChannelStreamKey
 */
@@ -770,7 +770,7 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 		{
 			const ChannelInfo & info(result.Value);
 			cout << "Reset Channel Stream Key" << endl;
- 
+
 			cout << "                NumFollowers: " << AZstd::to_string(info.NumFollowers) << endl;
 	        cout << "                    NumViews: " << AZstd::to_string(info.NumViews) << endl;
     	    cout << "            NumItemsRecieved: " << AZstd::to_string(info.NumItemsRecieved) << endl;
@@ -797,17 +797,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.ResetChannelStreamKey Callback
 
-**result \- ChannelInfoValue**  
-Value - The channel information, which includes the following data:  
+**result \- ChannelInfoValue**
+Value - The channel information, which includes the following data:
 + NumFollowers - The number of followers for the channel\.
 + NumItemsReceived - The number of fields received in this struct\.
 + Partner - If true, the channel is a partner channel\.
@@ -873,17 +873,17 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.GetChannelCommunity Callback
 
-**result \- CommunityInfoValue**  
-Value - The community information, which includes the following data:  
+**result \- CommunityInfoValue**
+Value - The community information, which includes the following data:
 + ID - The identifier for the community\.
 + AvatarImageURL - The URL for the avatar image, if provided\.
 + CoverImageURL - The URL for the cover image, if provided\.
@@ -929,20 +929,20 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**communityID**  
+**communityID**
 The Twitch community ID\.
 
-**Return**  
+**Return**
 No return value\.SetChannelCommunity Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.
 
 ## DeleteChannelfromCommunity {#twitch-api-ebus-channels-deletechannelfromcommunity}
@@ -976,15 +976,15 @@ class TwitchNotifications : public Twitch::TwitchNotifyBus
 }
 ```Parameters
 
-**receipt**  
+**receipt**
 The receipt for the call, which returns in the format `Twitch::ReceiptID`\.
 
-**channelID**  
+**channelID**
 The Twitch channel ID\.
 
-**Return**  
+**Return**
 No return value\.DeleteChannelfromCommunity Callback
 
-**result \- Int64Value**  
-Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.  
+**result \- Int64Value**
+Value - The HTTP response code for this call\. If successful, the value should be 204 \(No Content\)\.
 Result - One of the result code values, which returns in the format `Twitch::ResultCode`\.

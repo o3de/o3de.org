@@ -1,6 +1,6 @@
 ---
 description: ' Use the UiBasics Gem to add basic UI prefabs and textures to your UI
-  canvas when you use the &ALY; &ui-canvas-editor;. '
+  canvas when you use the Lumberyard UI Editor. '
 title: UiBasics Gem
 ---
 # UiBasics Gem {#gems-system-gem-uibasics}

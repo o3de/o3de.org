@@ -1,5 +1,5 @@
 ---
-description: ' Learn about using scripts in &ALYlong; to synchronize game state. '
+description: ' Learn about using scripts in Amazon Lumberyard to synchronize game state. '
 title: Synchronizing Game State Using Scripts
 ---
 # Synchronizing Game State Using Scripts {#network-synchronizing-game-state-using-scripts}

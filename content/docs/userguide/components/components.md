@@ -1,14 +1,14 @@
 ---
 description: ' Choose components to add to your entities and enhance your level with
-  &ALYlong;''s &component-system;. '
+  Amazon Lumberyard''s component entity system. '
 title: Component Reference
 ---
 # Component Reference {#component-components}
 
-You can use the **Entity Inspector** to add the following components to you entities\. 
+You can use the **Entity Inspector** to add the following components to you entities\.
 
-**Note**  
-Some components are only available through gems\. For example, you must enable the [Rain](/docs/userguide/gems/builtin/rain.md) gem for your project, so that the **[Rain](/docs/userguide/components/rain.md)** component is available\.  
+**Note**
+Some components are only available through gems\. For example, you must enable the [Rain](/docs/userguide/gems/builtin/rain.md) gem for your project, so that the **[Rain](/docs/userguide/components/rain.md)** component is available\.
 For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
 
 ## AI {#component-entity-AI}
@@ -20,7 +20,7 @@ For more information, see [Add modular features and assets with Gems](/docs/user
 ## Animation {#component-entity-animation}
 + [Actor](/docs/userguide/components/actor.md)
 + [AnimGraph](/docs/userguide/components/animgraph.md)
-+  [Anim Graph Net Sync](/docs/userguide/components/animgraph-netsync.md) 
++  [Anim Graph Net Sync](/docs/userguide/components/animgraph-netsync.md)
 + [Attachment](/docs/userguide/components/attachment.md)
 + [Simple Motion](/docs/userguide/components/simple-motion.md)
 
@@ -43,14 +43,14 @@ For more information, see [Add modular features and assets with Gems](/docs/user
 
 ## Environment {#component-entity-environment}
 + [Fog Volume](/docs/userguide/components/fog-volume.md)
-+  [Infinite Ocean](/docs/userguide/components/infinite-ocean.md) 
++  [Infinite Ocean](/docs/userguide/components/infinite-ocean.md)
 + [Lightning](/docs/userguide/components/lightning.md)
 + [Lighting Arc](/docs/userguide/components/lightning-arc.md)
 + [Rain](/docs/userguide/components/rain.md)
 + [Sky Cloud](/docs/userguide/components/sky-cloud.md)
-+  [Sky Highlight](/docs/userguide/components/sky-highlight.md) 
++  [Sky Highlight](/docs/userguide/components/sky-highlight.md)
 + [Snow](/docs/userguide/components/snow.md)
-+  [Water Volume](/docs/userguide/components/water-volume.md) 
++  [Water Volume](/docs/userguide/components/water-volume.md)
 
 ## Gameplay {#component-entity-gameplay}
 + [Input](/docs/userguide/components/input.md)
@@ -103,7 +103,7 @@ The components for the legacy physics system are not compatible with the PhysX s
 
 ## Scripting {#component-entity-scripting}
 + [Lua Script](/docs/userguide/components/lua-script.md)
-+  [Script Canvas](/docs/userguide/components/script-canvas.md) 
++  [Script Canvas](/docs/userguide/components/script-canvas.md)
 + [Trigger Area](/docs/userguide/components/triggerarea.md)
 
 ## Shape {#component-entity-shape}
@@ -113,10 +113,10 @@ The components for the legacy physics system are not compatible with the PhysX s
 + [Cylinder Shape](/docs/userguide/components/shapes.md)
 + [Polygon Prism Shape](/docs/userguide/components/polygon-prism.md)
 + [Sphere Shape](/docs/userguide/components/shapes.md)
-+  [Spline](/docs/userguide/components/spline.md) 
-+  [Tube Shape](/docs/userguide/components/tube-shape.md) 
-+  [White Box component](/docs/userguide/components/white-box.md) 
-+  [White Box Collider component](/docs/userguide/components/white-box-collider.md) 
++  [Spline](/docs/userguide/components/spline.md)
++  [Tube Shape](/docs/userguide/components/tube-shape.md)
++  [White Box component](/docs/userguide/components/white-box.md)
++  [White Box Collider component](/docs/userguide/components/white-box-collider.md)
 
 ## Terrain {#component-entity-terrain}
 + [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md)

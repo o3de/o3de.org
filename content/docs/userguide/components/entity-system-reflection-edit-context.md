@@ -1,6 +1,6 @@
 ---
-description: ' Use the edit context to expose parameters for editing in &ALYlong;''s
-  &ly-editor;. '
+description: ' Use the edit context to expose parameters for editing in Amazon Lumberyard''s
+  Lumberyard Editor. '
 title: Edit Context
 ---
 # Edit Context {#component-entity-system-reflection-edit-context}
@@ -24,7 +24,7 @@ An `EditContext` consists of `ClassElements` and `DataElements`\.
 
 ## Attributes {#component-entity-system-reflection-edit-context-attributes}
 
-You can use the `EditContext` to add arbitrary attributes to class and data elements\. 
+You can use the `EditContext` to add arbitrary attributes to class and data elements\.
 
 Attributes are template based\. As such, they can be of any type, including functions, as in the following example\.
 
@@ -35,7 +35,7 @@ editContext->Class<EditorLightComponent>(
 		->Attribute(AZ::Edit::Attributes::AutoExpand, true)
 		->Attribute(AZ::Edit::Attributes::NameLabelOverride, &EditorLightComponent::GetLightTypeText)
 	->DataElement(AZ::Edit::UIHandlers::Default, &EditorLightComponent::m_configuration, "Settings", "Light configuration")
-		->Attribute(AZ::Edit::Attributes::Visibility, AZ_CRC("PropertyVisibility_ShowChildrenOnly", 0xef428f20)) 
+		->Attribute(AZ::Edit::Attributes::Visibility, AZ_CRC("PropertyVisibility_ShowChildrenOnly", 0xef428f20))
 
     ->ClassElement(AZ::Edit::ClassElements::Group, "Cubemap generation")
 	    ->Attribute(AZ::Edit::Attributes::Visibility, &EditorLightComponent::IsProbe)

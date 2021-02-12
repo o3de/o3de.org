@@ -1,5 +1,5 @@
 ---
-description: ' Enable the UI system localization feature in &ALYlong;. '
+description: ' Enable the UI system localization feature in Amazon Lumberyard. '
 title: UI System Localization Features
 ---
 # UI System Localization Features {#localization-ui}

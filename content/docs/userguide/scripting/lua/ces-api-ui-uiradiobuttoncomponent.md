@@ -1,5 +1,5 @@
 ---
-description: ' Use UiRadioButtonComponent to implement a UI radio button in &ALYlong;. '
+description: ' Use UiRadioButtonComponent to implement a UI radio button in Amazon Lumberyard. '
 title: UiRadioButtonComponent
 ---
 # UiRadioButtonComponent {#lua-scripting-ces-api-ui-uiradiobuttoncomponent}
@@ -72,7 +72,7 @@ void SetUncheckedEntity(AZ::EntityId entityId)
 
 ### GetTurnOnActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-getturnonactionname}
 
-Returns the name of the action that is triggered when the radio button is selected\. 
+Returns the name of the action that is triggered when the radio button is selected\.
 
 **Syntax**
 
@@ -97,7 +97,7 @@ Returns the action triggered when the radio button is cleared\.
 **Syntax**
 
 ```
-const AZStd::string & GetTurnOffActionName() 
+const AZStd::string & GetTurnOffActionName()
 ```
 
 ### SetTurnOffActionName {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonbus-setturnoffactionname}
@@ -132,7 +132,7 @@ void SetChangedActionName(const AZStd::string& actionName)
 
 ## UiRadioButtonCommunicationBus {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus}
 
-Allows communication between the radio button group and a radio button\. 
+Allows communication between the radio button group and a radio button\.
 
 ### SetState {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttoncommunicationbus-setstate}
 
@@ -156,7 +156,7 @@ void SetGroup(AZ:EntityId group)
 
 ## UiRadioButtonNotificationBus {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus}
 
-Services notifications for the `UiRadioButtonComponent`\. 
+Services notifications for the `UiRadioButtonComponent`\.
 
 ### OnRadioButtonStateChange {#lua-scripting-ces-api-ui-uiradiobuttoncomponent-uiradiobuttonnotificationbus-onradiobuttonstatechange}
 

@@ -1,17 +1,17 @@
 ---
-description: ' Use the Cloud Gem Framework to run &AWS; API jobs. '
+description: ' Use the Cloud Gem Framework to run AWS API jobs. '
 title: 'Running AWS API Jobs Using the Cloud Gem Framework '
 ---
 # Running AWS API Jobs Using the Cloud Gem Framework {#cloud-canvas-cgf-aws-api-jobs}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| The Cloud Gem Framework and this documentation are in preview release and are subject to change\. | 
+| The Cloud Gem Framework and this documentation are in preview release and are subject to change\. |
 
-The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AWS API call by using the Lumberyard job execution system\. This allows the operation to be performed on background threads that are managed by the job system\. 
+The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AWS API call by using the Lumberyard job execution system\. This allows the operation to be performed on background threads that are managed by the job system\.
 
 **To use AWS API Jobs in your project**
 
@@ -54,11 +54,11 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
 
       ```
       SUBFOLDERS = []
-      
+
       def build(bld):
-      
+
           import lumberyard_sdks
-      
+
           bld.DefineGem(
               includes = [bld.Path('Code/SDKs/AWSNativeSDK/include')],
               file_list = ['cloudcanvassample.waf_files'],
@@ -68,11 +68,11 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
               linux_lib = ['curl'],
               ios_lib = ['curl'],
               appletv_lib = ['curl'],
-              
+
               ios_framework = [ 'security' ],
               appletv_framework = [ 'security' ]
           )
-      
+
           bld.recurse(SUBFOLDERS)
       ```
 
@@ -80,7 +80,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
 
    ```
    #include <CloudGemFramework/AwsApiRequestJob.h>
-   
+
    #pragma warning(disable: 4355) // <future> includes ppltasks.h which throws a C4355 warning: 'this' used in base member initializer list
    #include <aws/lambda/LambdaClient.h>
    #include <aws/lambda/model/InvokeRequest.h>
@@ -94,7 +94,7 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
 
    ```
    using LambdaInvokeRequestJob = AWS_API_REQUEST_JOB(Lambda, Invoke);
-   
+
    auto job = LambdaInvokeRequestJob::Create(
        [](LambdaInvokeRequestJob* job) // OnSuccess handler - runs on job thread
        {
@@ -108,12 +108,12 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
            AZ_Printf("Example", "Was error %s", job->error.GetMessageA().c_str());
        }
    );
-   
+
    AZStd::string content = "...";
-   
+
    std::shared_ptr<Aws::StringStream> stream = std::make_shared<Aws::StringStream>();
    *stream << content.c_str();
-   
+
    job->request.SetFunctionName("...");
    job->request.SetBody(stream);
    job->Start();
@@ -123,10 +123,10 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
 
    ```
    #include <CloudCanvasCommon/CloudCanvasCommonBus.h>
-    
+
    AZStd::string functionName;
    EBUS_EVENT_RESULT(functionName, CloudCanvasCommon::CloudCanvasCommonRequestBus, GetLogicalToPhysicalResourceMapping, "RESOURCE-GROUP.RESOURCE");
-   
+
    job->request.SetFunctionName(functionName.c_str());
    ```
 
@@ -134,13 +134,13 @@ The Cloud Gem Framework Gem provides C\+\+ classes that can execute any C\+\+ AW
 
    ```
    #include <aws/core/auth/AWSCredentialsProvider.h>
-   
+
    LambdaInvokeRequestJob::Config config(LambdaInvokeRequestJob::GetDefaultConfig());
    const char* accessKey = "...";
    const char* secretKey = "...";
    config.credentialsProvider = std::make_shared<Aws::Auth::SimpleAWSCredentialsProvider>(accessKey, secretKey);
    config.requestTimeoutMs = 20000;
-   
+
    auto job = LambdaInvokeRequestJob::Create(
        ..., // OnSuccess handler
        ..., // OnError handler

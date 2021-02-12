@@ -1,5 +1,5 @@
 ---
-description: ' Define how the sun appears in the daytime in &ALYlong;. '
+description: ' Define how the sun appears in the daytime in Amazon Lumberyard. '
 title: Setting Sun Parameters and Console Variables
 ---
 # Setting Sun Parameters and Console Variables {#sky-day-sun-params}
@@ -20,6 +20,6 @@ You can define how the sun renders in the daytime sky\.
 
 1. In Lumberyard Editor, in the **Console** pane, click the icon in the bottom left\.
 
-1. In the **Console Variables** window, search for and set the following console variables to control the sun's rendering behavior\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.  
-****    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sky-day-sun-params.html)
+1. In the **Console Variables** window, search for and set the following console variables to control the sun's rendering behavior\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
+****
+[\[See the AWS documentation website for more details\]](/docs/userguide/sky/day-sun-params)

@@ -1,5 +1,5 @@
 ---
-description: ' Assign shadow proxies in &ALY;''s &material-editor; to reduce shadow
+description: ' Assign shadow proxies in Lumberyard''s Material Editor to reduce shadow
   performance problems with minimal visual differences. '
 title: Shadow Proxies
 ---

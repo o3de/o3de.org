@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the Waf file system that &ALY; uses, including Waf
+description: ' Learn more about the Waf file system that Lumberyard uses, including Waf
   module files, Waf file lists, and project and compilation files. '
 title: Waf File System
 ---
@@ -7,7 +7,7 @@ title: Waf File System
 
 You can find global configurations and project specs in the `_WAF_` directory at the root project path\. Three subfolders represent settings specific to the following build systems: `android`, `apple`, and `msbuild`\. Defined specs are located in the `specs` directory\.
 
-In addition to the configurations specified in the `_WAF_` directory, you can find other Waf settings in the `waf_branch_spec.py` file in the root directory\. You can modify this file if you need to include support for additional platforms or configurations\. 
+In addition to the configurations specified in the `_WAF_` directory, you can find other Waf settings in the `waf_branch_spec.py` file in the root directory\. You can modify this file if you need to include support for additional platforms or configurations\.
 
 The Waf build file system can be grouped into three categories:
 + Waf Module files \(wscript\)

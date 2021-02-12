@@ -1,5 +1,5 @@
 ---
-description: ' Record time demos for player input and camera movement in &ALYlong;. '
+description: ' Record time demos for player input and camera movement in Amazon Lumberyard. '
 title: Recording Time Demos
 ---
 # Recording Time Demos {#recording-time-demos}
@@ -8,7 +8,7 @@ title: Recording Time Demos
 
 Lumberyard Editor can record and play back player input and camera movement\.
 
-**Note**  
+**Note**
 Recording of some player actions such as vehicle movement are not supported\.
 
 To use the feature, you must start game mode in Lumberyard Editor and then record in it\. To start game mode, press **Ctrl\+G** after a level has fully loaded, or load the level in pure\-game mode\.
@@ -26,14 +26,14 @@ Recorded/Played Tris ratio: 0.99
 ## Recording Controls {#recordingtimedemos-recordingcontrols}
 
 
-**Optional Title**  
+**Optional Title**
 
-| Command | Keystroke | Console Commands | 
-| --- | --- | --- | 
-| Start Recording | Ctrl \+ PrintScreen | record | 
-| End Recording | Ctrl \+ Break | stoprecording | 
-| Start Playback | Shift \+ PrintScreen | demo | 
-| Stop Playback | Ctrl \+ Break | stopdemo | 
+| Command | Keystroke | Console Commands |
+| --- | --- | --- |
+| Start Recording | Ctrl \+ PrintScreen | record |
+| End Recording | Ctrl \+ Break | stoprecording |
+| Start Playback | Shift \+ PrintScreen | demo |
+| Stop Playback | Ctrl \+ Break | stopdemo |
 
 ## Related Console Variables {#recordingtimedemos-relatedconsolevariables}
 + `stopdemo` - Stops playing a time demo\.

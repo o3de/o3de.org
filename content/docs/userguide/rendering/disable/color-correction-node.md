@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Color Correction node in the &ALYlong; &script-canvas;
+description: ' Use the Disable Color Correction node in the Amazon Lumberyard Script Canvas
   editor to disable color correction parameters. '
 title: Disable Color Correction
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Color Correction](/docs/userguide/rendering/en
 ## Inputs {#disable-color-correction-node-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event | Triggers the node\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event | Triggers the node\. |
 
 ## Outputs {#disable-color-correction-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

@@ -1,6 +1,6 @@
 ---
-description: ' Use &CFN; template parameters to customize your &cloud; Resource Manager
-  resource groups in &ALYlong;. '
+description: ' Use AWS Cloud Formation template parameters to customize your Cloud Canvas Resource Manager
+  resource groups in Amazon Lumberyard. '
 title: Resource Manager Resource Group Parameters
 ---
 # Resource Manager Resource Group Parameters {#cloud-canvas-resource-group-parameters}
@@ -30,10 +30,10 @@ You can specify parameter values for a specific deployment or for all deployment
 The following table shows the `lmbr_aws` commands for listing, setting, and clearing parameter values\. Your project must be initialized \(that is, a project stack must have been created\) before you can list, set, or clear parameter values\. For usage details, visit the corresponding links in the table\.
 
 
-****  
+****
 
-| `lmbr_aws` command  | Description  | 
-| --- | --- | 
-| [parameter list](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-list) | Lists the parameters currently configured for your project\. | 
-| [parameter set](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-set) | Sets parameter configuration for your project\. | 
-| [parameter clear](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-clear) | Clears the specified parameter configuration for your project\. | 
+| `lmbr_aws` command  | Description  |
+| --- | --- |
+| [parameter list](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-list) | Lists the parameters currently configured for your project\. |
+| [parameter set](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-set) | Sets parameter configuration for your project\. |
+| [parameter clear](/docs/userguide/gems/cloud-canvas/command-line#cloud-canvas-command-line-parameter-clear) | Clears the specified parameter configuration for your project\. |

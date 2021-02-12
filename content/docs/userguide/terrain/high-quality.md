@@ -1,5 +1,5 @@
 ---
-description: ' Create a &ALYlong; terrain that features 2k height and 16k megaterrain
+description: ' Create a Amazon Lumberyard terrain that features 2k height and 16k megaterrain
   color. '
 title: Creating High Quality Terrain
 ---
@@ -23,7 +23,7 @@ After you create a level, you can refine your terrain to use 2k height and 16k c
 
 1. Click **Change tile resolution**, select **2048x2048**, and then click **OK**\.
 
-   Your result should look like the following\. You can now import and export high quality textures\.  
+   Your result should look like the following\. You can now import and export high quality textures\.
 ![\[Terrain texture that has been refined to a resolution of 16384x16384 with a 2k tile resolution.\]](/images/userguide/terrain/terrain-high-quality.png)
-**Tip**  
+**Tip**
 You can verify that your texture is in 16k color\. Export and then open the texture file in a DCC such as Photoshop\.

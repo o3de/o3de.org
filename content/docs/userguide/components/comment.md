@@ -1,5 +1,5 @@
 ---
-description: ' Use the Comment component in &ALYlong; to add text comments for component
+description: ' Use the Comment component in Amazon Lumberyard to add text comments for component
   entities. '
 title: Comment
 ---
@@ -16,13 +16,13 @@ The **Comment** component allows you to add long\-form text comments for compone
 
 The **Comment** component has the following property:
 
-**Comment text box**  
-Stores the user comment for the component entity\.  
+**Comment text box**
+Stores the user comment for the component entity\.
 Default: None
 
 ## Using the Comment Component {#component-comment-setup}
 
-You can use this feature by adding the component to an entity in your level\. 
+You can use this feature by adding the component to an entity in your level\.
 
 **To use the Comment component**
 

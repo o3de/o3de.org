@@ -1,6 +1,6 @@
 ---
 description: ' Use the ParticleImposter shader to create particle effects not affected
-  by light in &ALYlong;. '
+  by light in Amazon Lumberyard. '
 title: ParticleImposter Shader
 ---
 # ParticleImposter Shader {#shader-ref-particleimposter}

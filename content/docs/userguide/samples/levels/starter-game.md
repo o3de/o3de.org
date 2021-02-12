@@ -1,6 +1,6 @@
 ---
 description: ' Use the Starter Game sample and its free character, game, and environment
-  assets to build your own gameplay space in &ALYlong;. '
+  assets to build your own gameplay space in Amazon Lumberyard. '
 title: Starter Game Sample
 ---
 # Starter Game Sample {#sample-level-starter-game}
@@ -36,9 +36,9 @@ All reusable assets and scripts have been placed into the following Asset Gems, 
 
 1. To start the game, press **Ctrl\+G**\.
 
-1. Use the following keyboard keys and mouse controls:    
-[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/sample-level-starter-game.html)
+1. Use the following keyboard keys and mouse controls:
+[\[See the AWS documentation website for more details\]](/docs/userguide/samples/levels/starter-game)
 
    If you're running Starter Game in the editor and Valena dies, press **Esc** to exit the game\.
-**Note**  
+**Note**
 To toggle debugging information on and off in the viewport when you're in gameplay mode, press the tilde \(**\~**\) key\. For more information, see [Using Console Debug Views](/docs/userguide/debugging/intro#debugging-debug-views)\.

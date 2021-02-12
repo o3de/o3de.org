@@ -1,5 +1,5 @@
 ---
-description: ' Use the Enable Visual Artifacts node in the &ALYlong; &script-canvas;
+description: ' Use the Enable Visual Artifacts node in the Amazon Lumberyard Script Canvas
   editor to enable visual artifact filters such as an old television. '
 title: Enable Visual Artifacts
 ---
@@ -18,29 +18,29 @@ To disable the effect, see [Disable Visual Artifacts](/docs/userguide/rendering/
 ## Inputs {#enable-visual-artifacts-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
-| VSync | Number | Amount of vsync \(vertical sync\) visible\. | 
-| VSync Frequency | Number | Frequency of the vertical sync\. | 
-| Interlacing | Number | Amount of interlacing visible\. | 
-| Interlacing Tiling | Number | Amount of interlacing tiling\. | 
-| Interlacing Rotation | Number | Amount of interlacing rotation\. | 
-| Sync Wave Phase | Number | Sync wave phase\. | 
-| Sync Wave Frequency | Number | Sync wave frequency\. | 
-| Sync Wave Amplitude | Number | Sync wave amplitude\. | 
-| Chroma Shift | Number | Chromatic shift\. | 
-| Grain | Number | Amount of image grain\. | 
-| Color Tint | Number | Amount of color tinting\.  | 
-| Texture Name | String  | Visual artifacts mask texture\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
+| VSync | Number | Amount of vsync \(vertical sync\) visible\. |
+| VSync Frequency | Number | Frequency of the vertical sync\. |
+| Interlacing | Number | Amount of interlacing visible\. |
+| Interlacing Tiling | Number | Amount of interlacing tiling\. |
+| Interlacing Rotation | Number | Amount of interlacing rotation\. |
+| Sync Wave Phase | Number | Sync wave phase\. |
+| Sync Wave Frequency | Number | Sync wave frequency\. |
+| Sync Wave Amplitude | Number | Sync wave amplitude\. |
+| Chroma Shift | Number | Chromatic shift\. |
+| Grain | Number | Amount of image grain\. |
+| Color Tint | Number | Amount of color tinting\.  |
+| Texture Name | String  | Visual artifacts mask texture\. |
 
 ## Outputs {#enable-visual-artifacts-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |

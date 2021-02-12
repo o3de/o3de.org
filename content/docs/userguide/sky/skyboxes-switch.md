@@ -1,6 +1,6 @@
 ---
-description: ' Use the &ALYlong; &script-canvas; editor to switch the skybox. '
-title: Switching Skyboxes with the &script-canvas; Editor
+description: ' Use the Amazon Lumberyard Script Canvas editor to switch the skybox. '
+title: Switching Skyboxes with the Script Canvas Editor
 ---
 # Switching Skyboxes with the Script Canvas Editor {#sky-skyboxes-switch}
 
@@ -12,23 +12,23 @@ You can use the **Script Canvas** editor to create a script that switches the sk
 
 1. In the **Script Canvas** editor, choose **File**, **New Script**\.
 
-1. Right\-click the canvas, search and then select the following nodes: 
+1. Right\-click the canvas, search and then select the following nodes:
    + **On Graph Start**
    + **[Load by Name](/docs/userguide/materials/load-by-name-node.md)**
    + **[Set Skybox Material](/docs/userguide/set-sky-box-material.md)**
 
 1. For your script, do the following:
 
-   1. Select the **Out** pin for **On Graph Start** and drag to connect it to the **In** pin for **Load By Name**\. 
+   1. Select the **Out** pin for **On Graph Start** and drag to connect it to the **In** pin for **Load By Name**\.
 
    1. For the **Material Name** parameter, specify the path to the material to use for the skybox\. For more information, see [Finding the Material Name](/docs/userguide/finding-materials-by-name.md)\.
 
    1. Select the **Out** pin for **Load By Name** and drag to connect it to the **In** pin for **Set Skybox Material**\.
 
-   1. Select the **Material** pin for **Load By Name** and drag to connect it to the **Material** pin for **Set Skybox Material**\.  
-**Example**    
+   1. Select the **Material** pin for **Load By Name** and drag to connect it to the **Material** pin for **Set Skybox Material**\.
+**Example**
 ![\[Switch the skybox material with the Script Canvas editor.\]](/images/userguide/sky/scriptcanvasnodes/set-skybox-material-example-script.png)
 
-1. Save the script and attach it to an entity with the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\. 
+1. Save the script and attach it to an entity with the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\.
 
 1. Close the **Script Canvas** editor\.

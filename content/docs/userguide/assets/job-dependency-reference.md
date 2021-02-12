@@ -1,6 +1,6 @@
 ---
-description: ' Use job dependencies using the Asset Builder SDK in &ALYlong;. '
-title: Job Dependency for &asset-pipeline;
+description: ' Use job dependencies using the Asset Builder SDK in Amazon Lumberyard. '
+title: Job Dependency for Asset Pipeline
 ---
 # Job Dependency for Asset Pipeline {#asset-pipeline-job-dependency-reference}
 
@@ -12,7 +12,7 @@ For each asset builder that registered a particular source asset type:
 
 1. The `CreateJobs` operation is invoked, which is where you can declare job dependencies\.
 
-1. The `ProcessJob` operation is invoked, which is where your source files are processed into game\-ready assets\. 
+1. The `ProcessJob` operation is invoked, which is where your source files are processed into game\-ready assets\.
 
 A job is uniquely identified by a tuple that contains the following:
 + **Job key** - The key that the builder emits for that kind of job in its own `CreateJobs` function\.
@@ -25,50 +25,50 @@ Use the job dependency feature to specify dependencies on jobs, and tell Asset P
 
 1. When another job completes the processing\. This is called *order job dependency*\.
 
-**Example 1: Fingerprint Job Dependency**  
-A fingerprint job dependency means that Asset Processor must process the job if the fingerprint of another job changes\. You can specify any number of fingerprint job dependencies\.  
+**Example 1: Fingerprint Job Dependency**
+A fingerprint job dependency means that Asset Processor must process the job if the fingerprint of another job changes\. You can specify any number of fingerprint job dependencies\.
 For **Job A**, specify a fingerprint on **Job B**\. So if the fingerprint of **Job B** changes, Asset Processor must reprocess **Job A**\.
 
-**Example 2: Order Job Dependency**  
-An order job dependency means that Asset Processor must process the job only when all other order dependency jobs specified by this job are processed\. You can specify any number of order job dependencies\.   
+**Example 2: Order Job Dependency**
+An order job dependency means that Asset Processor must process the job only when all other order dependency jobs specified by this job are processed\. You can specify any number of order job dependencies\.
 **Job A** has a specified order job dependency on **Job B**\. This means that Asset Processor must process **Job B** first and then **Job A**\.
 
-**Example**  
-You might want a builder that operates on the output of the image compilation set of `example.tif` on the platform `pc`\. If so, find the job key of that job \(for example, "RC Image"\) and declare a dependency, like the following: `("RC Image," "pc", "example.tif")`  
+**Example**
+You might want a builder that operates on the output of the image compilation set of `example.tif` on the platform `pc`\. If so, find the job key of that job \(for example, "RC Image"\) and declare a dependency, like the following: `("RC Image," "pc", "example.tif")`
 
 ```
 enum class JobDependencyType : AZ::u32
     {
         //!  Asset Processor should process the dependent job, if there is a change to the fingerprint of the job that it depends on.
         Fingerprint,
- 
+
         //! The dependent job should only run after Asset Processor processes the job it depends on.
         Order,
     };
- 
+
 //! Job dependency information that the builder will send to Asset Processor.
     struct JobDependency
     {
         AZ_CLASS_ALLOCATOR(JobDependency, AZ::SystemAllocator, 0);
         AZ_TYPE_INFO(JobDependency, "{93A9D915-8C9E-4588-8D86-578C01EEA388}");
- 
+
         SourceFileDependency m_sourceFile;
         AZStd::string m_jobKey;
         AZStd::string m_platformIdentifier;
         JobDependencyType m_type;
- 
+
         JobDependency() = default;
- 
+
         JobDependency(const AZStd::string& jobKey, const AZStd::string& platformIdentifier, const JobDependencyType& type, const SourceFileDependency& sourceFile);
- 
+
         static void Reflect(AZ::ReflectContext* context);
     };
 ```
 
 For example code, see the CustomAssetExample gem\. For source files related to builders, see the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder\CustomAssetExampleBuilderWorker.cpp` file\.
 
-**Example**  
-To declare a job dependency inside a builder, see the following code example\.  
+**Example**
+To declare a job dependency inside a builder, see the following code example\.
 
 ```
 for (const AssetBuilderSDK::PlatformInfo& platformInfo : request.m_enabledPlatforms)
@@ -85,5 +85,5 @@ for (const AssetBuilderSDK::PlatformInfo& platformInfo : request.m_enabledPlatfo
  }
 ```
 
-**Note**  
+**Note**
 If Asset Processor detects a cyclic job dependency, it displays a warning message and then processes the first job to unblock the remaining jobs\.

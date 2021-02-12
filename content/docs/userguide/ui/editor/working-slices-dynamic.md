@@ -1,12 +1,12 @@
 ---
-description: ' Flag dynamic slices in &ALYlong;''s &ui-canvas-editor; . '
+description: ' Flag dynamic slices in Amazon Lumberyard''s UI Editor . '
 title: Flagging Dynamic Slices
 ---
 # Flagging Dynamic Slices {#ui-editor-working-slices-dynamic}
 
 A slice flagged as a dynamic slice can be used like any other slice, but it can also be instantiated at runtime\.
 
-You can flag a slice as dynamic in the **Asset Browser**\. 
+You can flag a slice as dynamic in the **Asset Browser**\.
 
 **To flag a slice as dynamic**
 + Right\-click the `.slice` file and choose **Set Dynamic Slice**\.

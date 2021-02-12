@@ -1,5 +1,5 @@
 ---
-description: Use a Text component in &ALYlong;'s &ui-canvas-editor; to add a text
+description: Use a Text component in Amazon Lumberyard's UI Editor to add a text
   string to a UI element.
 title: Text
 ---
@@ -24,24 +24,24 @@ You can open the following canvases:
 + `ImageMarkup.uicanvas` - Example of embedding images in text
 + `OverflowWrap.uicanvas` - Examples of different wrap and overflow options
 
-Use the **Properties** pane of the [UI Editor](https://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-using.html) to configure the following settings for the **Text** component\.
+Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Text** component\.
 
 
-**Text Settings**  
+**Text Settings**
 
-| Name | Description | 
-| --- | --- | 
-| Text |  Enter the preferred text string and press **Enter**\. You can also apply [text styling markup](#ui-editor-component-text-styling-markup)\.  | 
-| Enable markup |  If selected, the text string is parsed for markup tags\. For more information, see [Text Markup](#ui-editor-component-text-styling-markup)\.  | 
-| Color |  Click the color swatch to select a different color\.  | 
-| Alpha |  Use the slider to choose an alpha value between **0** and **1**\.  | 
-| Font path |  Click the button and select a font `.font` file\. For more information, see [Adding New Fonts](/docs/userguide/ui/fonts/adding-fonts.md)\.  | 
-| Font size |  Enter a font size and press **Enter**\.  | 
-| Font effect |  Select an effect from the list\. The available font effects are dictated by the font `.font` file\.  | 
-| Horizontal text alignment |  Select **Left**, **Center**, or **Right** to align the text with the element's left and right borders\.  | 
-| Vertical text alignment |  Select **Top**, **Center**, or **Bottom** to align the text with the element's top and bottom borders\.  | 
-| Overflow mode |  Select **Overflow** to allow the text to display beyond the edges of the element\. Select **Clip text** to hide, or clip, any text that flows beyond the element's edges\.  | 
-| Wrap text |  Select **No wrap** to prevent text from wrapping to subsequent lines\. Select **Wrap text** to allow text to be broken into separate lines\.  | 
+| Name | Description |
+| --- | --- |
+| Text |  Enter the preferred text string and press **Enter**\. You can also apply [text styling markup](#ui-editor-component-text-styling-markup)\.  |
+| Enable markup |  If selected, the text string is parsed for markup tags\. For more information, see [Text Markup](#ui-editor-component-text-styling-markup)\.  |
+| Color |  Click the color swatch to select a different color\.  |
+| Alpha |  Use the slider to choose an alpha value between **0** and **1**\.  |
+| Font path |  Click the button and select a font `.font` file\. For more information, see [Adding New Fonts](/docs/userguide/ui/fonts/adding-fonts.md)\.  |
+| Font size |  Enter a font size and press **Enter**\.  |
+| Font effect |  Select an effect from the list\. The available font effects are dictated by the font `.font` file\.  |
+| Horizontal text alignment |  Select **Left**, **Center**, or **Right** to align the text with the element's left and right borders\.  |
+| Vertical text alignment |  Select **Top**, **Center**, or **Bottom** to align the text with the element's top and bottom borders\.  |
+| Overflow mode |  Select **Overflow** to allow the text to display beyond the edges of the element\. Select **Clip text** to hide, or clip, any text that flows beyond the element's edges\.  |
+| Wrap text |  Select **No wrap** to prevent text from wrapping to subsequent lines\. Select **Wrap text** to allow text to be broken into separate lines\.  |
 
 ## Text Markup {#ui-editor-component-text-styling-markup}
 
@@ -61,18 +61,18 @@ To use the text styling markup feature, you must use a font family `*.fontfamily
 
 ### Styling Tags and Attributes {#ui-editor-component-text-attributes}
 
-**Example**  
-You can use the following tags and attributes when styling text with markup:    
-**Bold** tag: <b>  
+**Example**
+You can use the following tags and attributes when styling text with markup:
+**Bold** tag: <b>
 
-![\[Example that uses a Text component to add bold in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-bold.png)  
-**Italic** tag: <i>  
+![\[Example that uses a Text component to add bold in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-bold.png)
+**Italic** tag: <i>
 
-![\[Example that uses a Text component to add italics in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-italic.png)  
-**Font color** tag: <font color>  
+![\[Example that uses a Text component to add italics in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-italic.png)
+**Font color** tag: <font color>
 
-![\[Example that uses a Text component to add font color in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-red.png)  
-**Font face** tag: <font face>  
+![\[Example that uses a Text component to add font color in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-red.png)
+**Font face** tag: <font face>
 
 ![\[Example that uses a Text component to add different fonts in the UI Editor.\]](/images/userguide/game_ui_editor/this-text-font.png)
 
@@ -80,7 +80,7 @@ You can use the following tags and attributes when styling text with markup:
 
 Use the `<img>` tag to embed an image in text\.
 
-**Example**  
+**Example**
 
 ```
 <img src="images/icons/button" vAlign="center" height="fontHeight" scale="1.5" yOffset="5" xPadding="6"/>
@@ -91,15 +91,15 @@ Use the `<img>` tag to embed an image in text\.
 Use the following attributes to customize your image\. Only the `src` attribute is required\. All other attributes are optional\.
 
 
-****  
+****
 
-| Attribute | Example | Description | 
-| --- | --- | --- | 
-| src | src="images/icons/button" |  Asset path of the texture to display\.  | 
-| vAlign | vAlign="center" |  Alignment of image in the text area\. The text area refers to the total height of the largest glyph in the font\. If you don't specify this attribute, the default alignment is `baseline`\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-components-text.html)  | 
-| height | height="100" |  Sets the image height and adjusts its width to preserve the aspect ratio\. If you don't specify this attribute, the default alignment is `fontAscent`\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/ui-editor-components-text.html)  | 
-| scale | scale="0\.8" | Scales the image by the specified scale factor\. If not specified, this attribute defaults to 1\.0\. | 
-| yOffset | yOffset="\-3" |  Offsets the image vertically by the specified float value in pixels\. If not specified, this attribute defaults to `0`\.  | 
-| xPadding | xPadding="6" |  Adds equal spacing before and after the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\.  | 
-| lPadding | lPadding="10" |  Adds spacing to the left of the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\.  | 
-| rPadding | rPadding="2" |  Adds spacing to the right of the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\. | 
+| Attribute | Example | Description |
+| --- | --- | --- |
+| src | src="images/icons/button" |  Asset path of the texture to display\.  |
+| vAlign | vAlign="center" |  Alignment of image in the text area\. The text area refers to the total height of the largest glyph in the font\. If you don't specify this attribute, the default alignment is `baseline`\. [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-text)  |
+| height | height="100" |  Sets the image height and adjusts its width to preserve the aspect ratio\. If you don't specify this attribute, the default alignment is `fontAscent`\. [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-text)  |
+| scale | scale="0\.8" | Scales the image by the specified scale factor\. If not specified, this attribute defaults to 1\.0\. |
+| yOffset | yOffset="\-3" |  Offsets the image vertically by the specified float value in pixels\. If not specified, this attribute defaults to `0`\.  |
+| xPadding | xPadding="6" |  Adds equal spacing before and after the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\.  |
+| lPadding | lPadding="10" |  Adds spacing to the left of the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\.  |
+| rPadding | rPadding="2" |  Adds spacing to the right of the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\. |

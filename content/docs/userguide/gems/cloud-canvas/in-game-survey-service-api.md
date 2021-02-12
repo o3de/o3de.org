@@ -1,5 +1,5 @@
 ---
-description: ' Learn to use the &cloud; In-Game Survey Cloud Gem API in &ALYlong;. '
+description: ' Learn to use the Cloud Canvas In-Game Survey Cloud Gem API in Amazon Lumberyard. '
 title: In-Game Survey Cloud Gem Service API Reference
 ---
 # In\-Game Survey Cloud Gem Service API Reference {#cloud-canvas-cloud-gem-in-game-survey-service-api}

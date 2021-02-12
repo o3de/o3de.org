@@ -1,5 +1,5 @@
 ---
-description: ' Add weight information to &ALY; terrain maps by importing splat maps
+description: ' Add weight information to Lumberyard terrain maps by importing splat maps
   created in a DCC tool. '
 title: Importing Splat Maps
 ---
@@ -25,5 +25,5 @@ All splat map operations in Lumberyard are done using the **Terrain Texture Laye
 
 1. In **Lumberyard Editor**, choose **Game**, **Terrain**, **Generate Terrain Texture**\.
 
-**Note**  
+**Note**
 You cannot apply masking to an imported splat map\.

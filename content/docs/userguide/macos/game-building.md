@@ -1,15 +1,15 @@
 ---
-description: ' Build a macOS game using the &ALY; build tools. '
+description: ' Build a macOS game using the Lumberyard build tools. '
 title: Building macOS Games
 ---
 # Building macOS Games {#osx-game-building}
 
 
-****  
+****
 
-|  | 
+|  |
 | --- |
-| This feature is in [preview](https://docs.aws.amazon.com/lumberyard/latest/userguide/ly-glos-chap.html#preview) release and is subject to change\.  | 
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 Before you can run your game on a macOS computer, you must ensure the shader compiler \(located in the `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile` directory\) is running on your PC\. For more information, see [Building Shaders for macOS Games](/docs/userguide/macos/shaders-building.md)\.
 
@@ -18,7 +18,7 @@ Before you can run your game on a macOS computer, you must ensure the shader com
 1. On your Mac, in a Terminal window, navigate to the root directory of your Lumberyard installation \(`lumberyard_version/dev`\)\.
 
 1. To generate an Xcode project and prepare the Lumberyard build system to build your app, run the following command: `sh lmbr_waf.sh configure xcode_mac`
-**Note**  
+**Note**
 Metal is the default renderer\.
 
 1. Do one of the following to build your game:

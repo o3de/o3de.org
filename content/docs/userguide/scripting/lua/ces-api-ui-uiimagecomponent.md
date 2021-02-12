@@ -1,6 +1,6 @@
 ---
 description: ' Use the UIImageComponent to control sprites, images, and textures in
-  &ALYlong;. '
+  Amazon Lumberyard. '
 title: UIImageComponent
 ---
 # UIImageComponent {#lua-scripting-ces-api-ui-uiimagecomponent}
@@ -48,7 +48,7 @@ Sets the source location of the image to be displayed by the element\.
 **Syntax**
 
 ```
-void SetSpritePathname(AZStd::string spritePath) 
+void SetSpritePathname(AZStd::string spritePath)
 ```
 
 ### GetRenderTargetName {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-getrendertargetname}
@@ -238,7 +238,7 @@ enum eUiFillCornerOrigin
 
 ### SetCornerFillOrigin {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-setcornerfillorigin}
 
-Sets the **Corner Fill** origin of the image\. 
+Sets the **Corner Fill** origin of the image\.
 
 **Syntax**
 
@@ -289,7 +289,7 @@ Returns whether the image is radially filled clockwise\.
 **Syntax**
 
 ```
-bool GetFillClockwise() 
+bool GetFillClockwise()
 ```
 
 ### SetFillClockwise {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-setfillclockwise}
@@ -299,7 +299,7 @@ Sets whether the image is radially filled clockwise\.
 **Syntax**
 
 ```
-void SetFillClockwise(bool fillClockwise) 
+void SetFillClockwise(bool fillClockwise)
 ```
 
 ### GetFillCenter {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-getfillcenter}
@@ -309,7 +309,7 @@ Returns whether the center of a sliced image is filled\.
 **Syntax**
 
 ```
-bool GetFillCenter() 
+bool GetFillCenter()
 ```
 
 ### SetFillCenter {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-setfillcenter}
@@ -344,7 +344,7 @@ AZ::u32 GetSpriteSheetCellIndex()
 
 ### GetSpriteSheetCellCount {#lua-scripting-ces-api-ui-uiimagecomponent-uiimagebus-getspritesheetcellcount}
 
-Returns the number of cells in the sprite sheet\. 
+Returns the number of cells in the sprite sheet\.
 
 If no image file is associated with this component, returns `0`\.
 
@@ -382,7 +382,7 @@ void SetSpriteSheetCellAlias(AZ::u32 index, AZStd::string alias)
 
 Given a string alias that corresponds to an alias of a cell within the sprite sheet image of the component, return that cells index value\.
 
-**Note**  
+**Note**
 This returns only the first matching cell in the sprite sheet that matches the given string\. Other cells in the sprite sheet that have the same alias are not considered after the first match is found\.
 
 **Syntax**

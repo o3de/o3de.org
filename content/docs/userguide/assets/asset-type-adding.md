@@ -1,6 +1,6 @@
 ---
-description: ' Add a custom asset type to &ALYlong;. '
-title: Adding an Asset Type to &ALY;
+description: ' Add a custom asset type to Amazon Lumberyard. '
+title: Adding an Asset Type to Lumberyard
 ---
 # Adding an Asset Type to Lumberyard {#asset-pipeline-asset-type-adding}
 
@@ -16,13 +16,13 @@ For an overview of the Lumberyard asset system, see [Programming the Lumberyard 
 
 ## Overview {#asset-pipeline-asset-type-adding-overview-of-steps}
 
-At a high level, adding an asset type to Lumberyard involves three steps: 
+At a high level, adding an asset type to Lumberyard involves three steps:
 
 1. Registering the asset with the asset pipeline\.
 
 1. Enabling the Lumberyard engine to load and stream the asset\.
 
-1. Optionally customizing your asset's interaction with the Lumberyard Editor UI and the **Asset Browser**\. 
+1. Optionally customizing your asset's interaction with the Lumberyard Editor UI and the **Asset Browser**\.
 
 After this overview, each step is covered in more detail\. Not all of the steps are required\. The steps are arranged in order of increasing integration with the Lumberyard asset pipeline and editor\.
 
@@ -112,14 +112,14 @@ For custom\-built assets, you can write a BuilderSDK builder or a Scene API plug
 When you write a BuilderSDK builder to create the asset, it should fill in the product info `struct` for each asset that it creates\. The product info `struct` includes the following fields:
 
 
-****  
+****
 
-| Field | Description | 
-| --- | --- | 
-| Filename | The name of the asset file\. | 
-| Asset type | The UUID of the class that you derived from Az::AssetData\. | 
-| SubID | Any u32 integer that disambiguates different outputs from the same source\. If your source files produce only one product, you can use 0\. | 
-| Legacy SubIDs | SubIDs for backward compatibility\. | 
+| Field | Description |
+| --- | --- |
+| Filename | The name of the asset file\. |
+| Asset type | The UUID of the class that you derived from Az::AssetData\. |
+| SubID | Any u32 integer that disambiguates different outputs from the same source\. If your source files produce only one product, you can use 0\. |
+| Legacy SubIDs | SubIDs for backward compatibility\. |
 
 For more information and examples, see the [Asset Builder API](/docs/userguide/asset-builder-custom.md)\.
 
@@ -161,7 +161,7 @@ An `AssetData`\-derived class contains the asset data that is shared among insta
 
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type\. Only one such handler generally exists for each type of asset\. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class\. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads\.
 
-**Note**  
+**Note**
 You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a Lumberyard Game](/docs/userguide/components/entity-system-pg-gems-code.md)\.
 
 #### Using the Generic Asset Handler for Structured Data {#asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data}
@@ -176,20 +176,20 @@ If you have a custom asset \(like bytes or custom formats\), you must write your
 
 ```
 // AZ::Data::AssetHandler
-// CreateAsset is almost always implemented in the form: 
+// CreateAsset is almost always implemented in the form:
 // return aznew (your assetData class type)(id)
-AZ::Data::AssetPtr CreateAsset(const AZ::Data::AssetId& id, const AZ::Data::AssetType& type) override; 
+AZ::Data::AssetPtr CreateAsset(const AZ::Data::AssetId& id, const AZ::Data::AssetType& type) override;
 
 // LoadAssetData is the main loading function. The stream that you are given is
 // already attached to the file and ready to read into the 'asset' variable.
-bool LoadAssetData(const AZ::Data::Asset<AZ::Data::AssetData>& asset, AZ::IO::GenericStream* stream, const AZ::Data::AssetFilterCB& assetLoadFilterCB) override; 
+bool LoadAssetData(const AZ::Data::Asset<AZ::Data::AssetData>& asset, AZ::IO::GenericStream* stream, const AZ::Data::AssetFilterCB& assetLoadFilterCB) override;
 
-// The following functions are for legacy compatibility. Most implementations of the functions 
+// The following functions are for legacy compatibility. Most implementations of the functions
 // simply wrap the file in a GenericStream and pass it to the LoadAssetData function above.
-bool LoadAssetData(const AZ::Data::Asset<AZ::Data::AssetData>& asset, const char* assetPath, const AZ::Data::AssetFilterCB& assetLoadFilterCB) override; 
+bool LoadAssetData(const AZ::Data::Asset<AZ::Data::AssetData>& asset, const char* assetPath, const AZ::Data::AssetFilterCB& assetLoadFilterCB) override;
 
 // Destroy your asset in case you need to do cleanup. DestroyAsset usually just calls delete.
-void DestroyAsset(AZ::Data::AssetPtr ptr) override;  
+void DestroyAsset(AZ::Data::AssetPtr ptr) override;
 
 // The AZ_RTTI type UUID(s) of your AssetData-derived classes.
 void GetHandledAssetTypes(AZStd::vector<AZ::Data::AssetType>& assetTypes) override;
@@ -205,7 +205,7 @@ After you create your handler, install the class that you derived from `AssetHan
 1. Create an instance of the handler class in your component\.
 
 1. Call `RegisterHandler` on the asset manager instance\. For an example, see the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Script\ScriptSystemComponent.*` files\.
-**Note**  
+**Note**
 Your component does not have to be a system component, but the component must exist to handle load request calls\.
 
 #### Example Asset Handlers {#asset-pipeline-asset-type-adding-example-asset-handlers}
@@ -227,7 +227,7 @@ Typically, you implement the registration code inside your handler in a `Registe
 ```
 AZ::Data::AssetCatalogRequestBus::Broadcast(&AZ::Data::AssetCatalogRequests::EnableCatalogForAsset, AZ::AzTypeInfo<AssetType>::Uuid());
 
-AZ::Data::AssetCatalogRequestBus::Broadcast(&AZ::Data::AssetCatalogRequests::AddExtension, m_extension.c_str()); // The extension of your type. 
+AZ::Data::AssetCatalogRequestBus::Broadcast(&AZ::Data::AssetCatalogRequests::AddExtension, m_extension.c_str()); // The extension of your type.
 
 // Register your handler.
 AZ_Assert(AZ::Data::AssetManager::IsReady(), "AssetManager isn't ready!");
@@ -265,19 +265,19 @@ In addition to deriving your asset handler from `Az::Data::AssetHandler`, you ca
 ```
 // AZ::AssetTypeInfoBus::Handler
 // Return the AZ_RTTI typeid of your AssetData.
-AZ::Data::AssetType GetAssetType() const override; 
+AZ::Data::AssetType GetAssetType() const override;
 
 // Get a friendly display name for the Asset Browser and GUI.
-const char* GetAssetTypeDisplayName() const override;    
+const char* GetAssetTypeDisplayName() const override;
 
 // Get a friendly group name ("textures", "Meshes"...) for Asset Browser filtering.
-const char* GetGroup() const override; 
+const char* GetGroup() const override;
 
 // Get the name of the icon image file to use in the Asset Browser.
 // For example, "Editor\Icons\Components\StaticMesh.png".
-const char* GetBrowserIcon() const override;             
-                                                          
-// Specify the AZ_RTTI type of an editor component for GetComponentTypeId. 
+const char* GetBrowserIcon() const override;
+
+// Specify the AZ_RTTI type of an editor component for GetComponentTypeId.
 // After doing so, dragging this asset type to the viewport will:
 // 1) Spawn an entity with the component
 // 2) Assign the asset to the component for you.
@@ -295,7 +295,7 @@ To customize how your asset type interacts with the **Asset Browser** and viewpo
 
 1. Default file open behavior\.
 
-**Note**  
+**Note**
 Because a double\-click is a request to open a file, when you override file open behavior, you also override double\-click behavior\.
 
 ### 2\. Customizing Drag\-and\-Drop Behavior {#asset-pipeline-asset-type-adding-customizing-drag-and-drop-behavior}
@@ -305,7 +305,7 @@ To customize the default drag\-and\-drop behavior, you can edit the existing cod
 To customize the default drag\-and\-drop behavior, create code that listens on the `DragAndDropEventsBus`, as in the following example\.
 
 ```
-AzQtComponents::DragAndDropEventsBus::Handler::BusConnect(AzQtComponents::DragAndDropContexts::EditorViewport);       
+AzQtComponents::DragAndDropEventsBus::Handler::BusConnect(AzQtComponents::DragAndDropContexts::EditorViewport);
 ```
 
 Your component now recieves the `DragEnter`, `DragMove`, `DragLeave`, and `Drop` events shown in the following code\.
@@ -320,14 +320,14 @@ Drop(QDropEvent* event, AzQtComponents::DragAndDropContextBase& context)
 The events are described in the following table\.
 
 
-****  
+****
 
-| Event | Description | 
-| --- | --- | 
-| DragEnter | Called when your item is dragged over the viewport\. | 
-| DragMove | Called repeatedly after your item accepts the event\. | 
-| DragLeave | Called when the item leaves the viewport, provided DragEnter accepted the event earlier\. | 
-| Drop | Called if the game developer drops the item into the viewport\. | 
+| Event | Description |
+| --- | --- |
+| DragEnter | Called when your item is dragged over the viewport\. |
+| DragMove | Called repeatedly after your item accepts the event\. |
+| DragLeave | Called when the item leaves the viewport, provided DragEnter accepted the event earlier\. |
+| Drop | Called if the game developer drops the item into the viewport\. |
 
 For more information, see `lumberyard_version\dev\Code\Framework\AzQtComponents\AzQtComponents\Buses\DragAndDrop.h` and `lumberyard_version\dev\Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.h`\.
 
@@ -394,12 +394,12 @@ The following code shows how to add source file openers\.
 ```
 void AssetBrowserContextProvider::AddSourceFileOpeners(const char* fullSourceFileName, const AZ::Uuid& sourceUUID, AzToolsFramework::AssetBrowser::SourceFileOpenerList& openers)
     {
-        using namespace AzToolsFramework; 
+        using namespace AzToolsFramework;
         // Get the details of the source file based on its UUID.
-        if (const SourceAssetBrowserEntry* source = SourceAssetBrowserEntry::GetSourceByAssetId(sourceUUID))  
+        if (const SourceAssetBrowserEntry* source = SourceAssetBrowserEntry::GetSourceByAssetId(sourceUUID))
         {
             // Specify actions to take when the source file is not handled.
-            if (!HandlesSource(source)) 
+            if (!HandlesSource(source))
             {
                 return;
             }
@@ -409,7 +409,7 @@ void AssetBrowserContextProvider::AddSourceFileOpeners(const char* fullSourceFil
         openers.push_back({ "Lumberyard_FBX_Settings_Edit", "Edit Settings...", QIcon(), [this](const char* fullSourceFileNameInCallback, const AZ::Uuid& /*sourceUUID*/)
         {
             // sourceName must be an AZStd::string.
-            AZStd::string sourceName(fullSourceFileNameInCallback); 
+            AZStd::string sourceName(fullSourceFileNameInCallback);
             AssetImporterPlugin::GetInstance()->EditImportSettings(sourceName);
         } });
     }

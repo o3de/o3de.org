@@ -1,6 +1,6 @@
 ---
-description: ' Use gems to add C++ code to a game project in &ALYlong;. '
-title: Adding C++ Code to a &ALY; Game with Gems
+description: ' Use gems to add C++ code to a game project in Amazon Lumberyard. '
+title: Adding C++ Code to a Lumberyard Game with Gems
 ---
 # Adding C\+\+ Code to a Lumberyard Game with Gems {#component-entity-system-pg-gems-code}
 
@@ -31,26 +31,26 @@ Creating a gem is straightforward\. To create or enable a gem for your game proj
 The `\dev\Gems\<gem name>\Code` subdirectory has the following items that Lumberyard creates by default:
 
 
-****  
+****
 
-| **Item** | **Location** | 
-| --- | --- | 
-| An empty [EBus](/docs/userguide/programming/ebus/intro.md) include file that is named after the gem\. | \\Include\\<gem name>\\<gem name>Bus\.h | 
-| The AZ module for the gem | \\Source\\<gem name>Module\.cpp | 
-| The default systems component files |  `\Source\<gem name>SystemComponent.h` `\Source\<gem name>SystemComponent.cpp`  | 
-| Standard precompiled header files |  `\Source\StdAfx.h` `\Source\StdAfx.cpp`  | 
-| Skeleton unit test source file | \\Tests\\<gem name>Test\.cpp | 
+| **Item** | **Location** |
+| --- | --- |
+| An empty [EBus](/docs/userguide/programming/ebus/intro.md) include file that is named after the gem\. | \\Include\\<gem name>\\<gem name>Bus\.h |
+| The AZ module for the gem | \\Source\\<gem name>Module\.cpp |
+| The default systems component files |  `\Source\<gem name>SystemComponent.h` `\Source\<gem name>SystemComponent.cpp`  |
+| Standard precompiled header files |  `\Source\StdAfx.h` `\Source\StdAfx.cpp`  |
+| Skeleton unit test source file | \\Tests\\<gem name>Test\.cpp |
 
 Lumberyard also creates certain [Waf](/docs/userguide/waf/intro.md)-related files in the `\dev\Gems\<gem name>\Code` subdirectory\. These files specify the source code content and how the gem is defined and built\.
 
 
-****  
+****
 
-| **Item** | **Location** | 
-| --- | --- | 
-| Manifest file for the Waf build of the gem | <gem name>\.waf\_files | 
-| Manifest file that lists additional files to for test configuration builds \(for example, Tests/<gem name>Test\.cpp\) | <gem name>\_tests\.waf\_files | 
-| Waf build script file that defines the gem | wscript | 
+| **Item** | **Location** |
+| --- | --- |
+| Manifest file for the Waf build of the gem | <gem name>\.waf\_files |
+| Manifest file that lists additional files to for test configuration builds \(for example, Tests/<gem name>Test\.cpp\) | <gem name>\_tests\.waf\_files |
+| Waf build script file that defines the gem | wscript |
 
 The manifest file that manages the source code uses the Lumberyard Waf `waf_files` schema to define the source files, their Microsoft Visual Studio filter, and [uber](/docs/userguide/waf/uber-files.md) file grouping\. The default `<gem name>.waf_files` that the Project Configurator generates looks like the following:
 
@@ -178,7 +178,7 @@ def build(bld):
         file_list.append('twitch.waf_files')
     else:
         file_list.append('lmbraws_unsupported.waf_files')
-        
+
     bld.DefineGem(
         use         =   [   'HttpRequestor',
                             'LmbrAWS'
@@ -187,7 +187,7 @@ def build(bld):
                             'AWS_CPP_SDK_CORE'
                         ],
         includes    =   [],
-        
+
         file_list   = file_list,
         win_file_list = ['twitch_win.waf_files']
     )
@@ -209,5 +209,5 @@ def build(bld):
 
 For more information, see [Adding Third\-Party Libraries](/docs/userguide/waf/adding-third-party-libraries.md) and [Creating Third\-Party Library Configuration Files for Waf](/docs/userguide/waf/third-party-library-configurations.md)\.
 
-**Note**  
+**Note**
 Because the recursive nature of `use` can lead to linker errors, especially duplicate symbol errors, `uselib` is a better choice\.

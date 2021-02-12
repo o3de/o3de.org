@@ -1,6 +1,6 @@
 ---
-description: ' Enable gems to your &ALYlong; project for functionality and assets. '
-title: Gems Available in &ALY;
+description: ' Enable gems to your Amazon Lumberyard project for functionality and assets. '
+title: Gems Available in Lumberyard
 ---
 # Gems Available in Lumberyard {#gems-system-ref}
 

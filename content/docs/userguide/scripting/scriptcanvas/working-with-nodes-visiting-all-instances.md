@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to navigate &script-canvas; graphs in &ALYlong; to visit
+description: ' Learn how to navigate Script Canvas graphs in Amazon Lumberyard to visit
   all nodes. '
 title: Navigating Graphs
 ---
@@ -17,5 +17,5 @@ If you want to visit all nodes of the same type on a graph - for example, to che
 
 1. To scroll to the left, starting at the rightmost node occurence, press **F7**\.
 
-1. To return to the beginning or end of the cycle, press **F7** or **F8** again\.  
+1. To return to the beginning or end of the cycle, press **F7** or **F8** again\.
 ![\[Visiting all instances of a node in a graph in the Script Canvas editor.\]](/images/userguide/scripting/script-canvas/script-canvas-working-with-nodes-22.gif)

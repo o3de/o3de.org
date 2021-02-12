@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the shader rendering pipeline in &ALYlong;. '
+description: ' Learn more about the shader rendering pipeline in Amazon Lumberyard. '
 title: Shader Rendering Pipeline
 ---
 # Shader Rendering Pipeline {#mat-shaders-custom-dev-pipeline}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Disable Rain Drops node in the &ALYlong; &script-canvas; editor
+description: ' Use the Disable Rain Drops node in the Amazon Lumberyard Script Canvas editor
   to disable raindrops. '
 title: Disable Rain Drops
 ---
@@ -18,17 +18,17 @@ To enable the effect, see [Enable Rain Drops](/docs/userguide/rendering/enable/r
 ## Inputs {#disable-rain-drops-note-input}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| In | Event |  Triggers the node\.  | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| In | Event |  Triggers the node\.  |
 
 ## Outputs {#disable-rain-drops-node-output}
 
 
-****  
+****
 
-| Pin | Type | Description | 
-| --- | --- | --- | 
-| Out | Event | Sends when the node is finished\. | 
+| Pin | Type | Description |
+| --- | --- | --- |
+| Out | Event | Sends when the node is finished\. |
