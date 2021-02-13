@@ -1,6 +1,6 @@
 # Installing Atom
 
-Atom is integrated into the built-in BaseViewer application and the O3DE game engine, or it can be built from source. You can build Atom from source and explore BaseViewer on all supported platforms: PC, Android, Mac, and iOS. The O3DE game engine is only supported on PC. 
+Atom is integrated into the built-in **BaseViewer** application and the **Open 3D Engine (O3DE)**, Atom's source code is also available to build from source. You can build Atom from source and explore BaseViewer on all supported platforms: PC, Android, Mac, and iOS. The O3DE game engine is only supported on PC. 
 
 ## Download Atom
 Download the Atom package from the ___ . *[WRITER NOTE: Atom is only released internally for now]* This package is for all supported platforms: PC, Android, Mac, and iOS. 
