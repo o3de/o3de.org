@@ -18,7 +18,7 @@ The Atom package includes the following files:
 * *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip*
 
 
-When extracting *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*, you should rename the extracted root folder to something short to avoid path length limitations. For example "C:\Spectra" as the root folder name and location is common practice. 
+When extracting *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*, it's recommended to rename the extracted root folder to something short to avoid path length limitations. For example, "C:\AtomBuild" as the root folder name and location is common practice. 
 
 *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip* contains everything required to build Lumberyard and Atom from source, but it does not include pre-built binaries. The supplemental zip file *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip* includes pre-built binaries for Windows that can be used to run BaseViewer and the Lumberyard Editor without building from source. All other platforms (Mac, iOS, and Android) require being built from source.
 
