@@ -60,7 +60,7 @@ Lumberyard consists of the following major systems that help you develop levels 
   Lumberyard's physically based rendering \(PBR\) shaders use real\-world physical rules and properties to describe how incoming light interacts with objects\. This means that object materials look more convincing under different lighting conditions\.
 
    
-+ [Twitch ChatPlay System](/docs/userguide/gems/builtin/chatplay/intro.md)
++ [Twitch ChatPlay System](/docs/user-guide/features/gems/chatplay/intro.md)
 
   The Twitch ChatPlay Gem provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world's leading social video platform and community for gamers\. Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.
 
@@ -77,7 +77,7 @@ Lumberyard consists of the following major systems that help you develop levels 
    
 
 The following Lumberyard tools are outside of the main editor and are used for project and game development:
-+ [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)
++ [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)
 
   The Asset Pipeline converts source art and other assets into platform\-specific, game ready data\.
 
@@ -92,12 +92,12 @@ The following Lumberyard tools are outside of the main editor and are used for p
   You can use Lumberyard to build your games for Android devices such as the NVIDIA Shield, Samsung Galaxy Note 5, and Motorola Nexus 6, and iOS devices that use the A8 GPUs or later\. See [Apple's GPU list](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/HardwareGPUInformation/HardwareGPUInformation.html) for a list of these devices\.
 
    
-+ [Create macOS projects in Lumberyard](/docs/userguide/macos/intro.md)
++ [Create macOS projects in Lumberyard](/docs/user-guide/features/platforms/macos/intro.md)
 
   You can use Lumberyard to build macOS applications\.
 
    
-+ [Creating Lumberyard Executables for Linux](/docs/userguide/linux/intro.md)
++ [Creating Lumberyard Executables for Linux](/docs/user-guide/features/platforms/linux/intro.md)
 
   Lumberyard supports compiling and deploying the Windows client for a multiplayer project on a Linux dedicated server\.
 

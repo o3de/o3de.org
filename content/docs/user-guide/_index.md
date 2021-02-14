@@ -14,7 +14,7 @@ Interested? Want to get started?
 + [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Amazon Lumberyard forums](https://forums.awsgametech.com/)
 
-![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/userguide/starter-game-introduction-1.25.png)
+![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
 
 Image from Starter Game\. For more sample projects and levels, see [Using Lumberyard sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 
@@ -35,7 +35,7 @@ For more information, see the following topics:
 
 With the Lumberyard's Asset Processor, you can quickly get assets into the engine\. Save a file \(for example, from Maya or Photoshop\) into a directory, and the Asset Processor automatically processes that file from source art into game\-ready assets\. If you edit an asset, Lumberyard detects the change and automatically updates it in the background\.
 
-For more information, see [Using Asset Processor](/docs/userguide/assets/processor.md)\.
+For more information, see [Using Asset Processor](/docs/user-guide/features/assets/processor.md)\.
 
 ### Component Entities {#lumberyard-aaa-engine-component-entities}
 
@@ -105,7 +105,7 @@ Lumberyard is integrated with Twitch so that you can build games that engage wit
 
 The Twitch ChatPlay feature within Lumberyard helps you build gameplay that interacts in real time with Twitch viewers\. For example, you can build a game where viewers can vote on game outcomes, gift power\-ups to their favorite players, or change the level based on the number of viewers watching the player\.
 
-For more information, see [Twitch ChatPlay System](/docs/userguide/gems/builtin/chatplay/intro.md)\.
+For more information, see [Twitch ChatPlay System](/docs/user-guide/features/gems/chatplay/intro.md)\.
 
 ## Free with Source {#lumberyard-aws-source}
 

@@ -33,15 +33,15 @@ Some file tags have designated uses within Lumberyard\. Various tools may requir
 1. Choose **File**, **Open**, and select either `exclude.filetag` or `include.filetag` from the `Engine` directory\.
 
 1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**\+**' button to add a new child element\.
-![\[Start a new file tag rule by adding a new element to the File Tag Map.\]](/images/userguide/assetbundler/asset-bundler-filetag-new-element.png)
+![\[Start a new file tag rule by adding a new element to the File Tag Map.\]](/images/user-guide/assetbundler/asset-bundler-filetag-new-element.png)
 
 1. Enter the desired file matching pattern in the **New Key** field\.
-![\[Specify the desired file matching pattern.\]](/images/userguide/assetbundler/asset-bundler-filetag-new-key.png)
+![\[Specify the desired file matching pattern.\]](/images/user-guide/assetbundler/asset-bundler-filetag-new-key.png)
 
 1. Open your new file pattern key from the list and select the appropriate **File Pattern** type\.
 
 1. Add one or more **File Tags** to associate with your new file pattern\.
-![\[Complete the new file tag rule by selecting a File Pattern type and entering one or more File Tags.\]](/images/userguide/assetbundler/asset-bundler-filetag-example.png)
+![\[Complete the new file tag rule by selecting a File Pattern type and entering one or more File Tags.\]](/images/user-guide/assetbundler/asset-bundler-filetag-example.png)
 
 1. Select **File**, **Save** to save your new file tag rule\.
 

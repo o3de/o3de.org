@@ -60,7 +60,7 @@ return SpawnerScriptSample
 
 ## Noncomponent Notifications {#lua-scripting-ces-non-component-notifications}
 
-Some event buses that are available to Lua are not associated with components\. For example, the system's [tick bus](/docs/userguide/components/entity-system-pg-tick-bus.md) is not a component bus and does not require an entity ID\. It provides both the amount of time that has passed since the last engine tick and the current time point\. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler\. The handler receives notifications from the system whenever the engine ticks\.
+Some event buses that are available to Lua are not associated with components\. For example, the system's [tick bus](/docs/user-guide/features/engine/ebus/tick.md) is not a component bus and does not require an entity ID\. It provides both the amount of time that has passed since the last engine tick and the current time point\. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler\. The handler receives notifications from the system whenever the engine ticks\.
 
 The following example shows how to register with the tick bus\.
 

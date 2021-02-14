@@ -13,17 +13,17 @@ title: Creating Lumberyard Executables for Linux
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 Lumberyard supports compiling a Windows client for a multiplayer project and connecting to a Linux dedicated server\. You must do the following to ensure that the Windows client works properly on a Linux dedicated server:
-+ [Compile the assets on a Windows computer](/docs/userguide/assets/bundle/tutorial-release.md)
-+ [Compile the server executable for use on a Linux computer](/docs/userguide/linux/build-lumberyard-executable.md)
++ [Compile the assets on a Windows computer](/docs/user-guide/tutorials/packaging/tutorial-release.md)
++ [Compile the server executable for use on a Linux computer](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)
 + [Compile a Windows client to use to connect to the Linux server](/docs/userguide/game-build-intro.md)
 
 When these tasks are complete, you can deploy assets to either a Linux server or Windows client\.
 
 **Topics**
 + [Prerequisites](#linux-prerequisites)
-+ [Deploy a Lumberyard multiplayer project's server on Linux](/docs/userguide/linux/build-lumberyard-executable.md)
-+ [Testing the Windows Client to Linux Server Connection](/docs/userguide/linux/test-windows-client-linux-server-connection.md)
-+ [Preparing the Amazon GameLift Package](/docs/userguide/linux/prepare-gamelift-package.md)
++ [Deploy a Lumberyard multiplayer project's server on Linux](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)
++ [Testing the Windows Client to Linux Server Connection](/docs/user-guide/features/platforms/linux/test-windows-client-linux-server-connection.md)
++ [Preparing the Amazon GameLift Package](/docs/user-guide/features/platforms/linux/prepare-gamelift-package.md)
 
 ## Prerequisites {#linux-prerequisites}
 

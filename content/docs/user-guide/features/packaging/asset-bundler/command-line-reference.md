@@ -38,7 +38,7 @@ title: 'Lumberyard Asset Bundler Command-Line Tool Reference'
 **Note**
  All example commands in this reference are executed from the `dev\` folder of a project and assume a build produced with Visual Studio 2017 on Windows\. The executable path and path separators will be different on other platforms\.
 
-See the [Asset Bundler Concepts and Terms](/docs/userguide/assets/bundle/concepts.md) or [Glossary](/docs/userguide/ly-glos-chap.md) for definitions of terms used in this reference\.
+See the [Asset Bundler Concepts and Terms](/docs/user-guide/features/packaging/asset-bundler/concepts.md) or [Glossary](/docs/user-guide/appendix/glossary.md) for definitions of terms used in this reference\.
 
 ## General Use {#asset-bundler-command-line-reference-general}
 
@@ -282,7 +282,7 @@ Bin64vc141\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist -
 
 ## Comparison rules \- `comparisonRules` {#asset-bundler-command-line-reference-comparisonrules}
 
-The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md)\.
+The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
 
 ### Options {#asset-bundler-command-line-reference-comparisonrules-options}
 
@@ -299,7 +299,7 @@ The `comparisonRules` command is used to generate comparison rules files\. Compa
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md)\.
+ For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
  The `intersectionCount` comparison type can't be combined with any other comparison type as part of a rule list\.
 *Type:* Multi\-value argument
 *Required:* Yes
@@ -335,7 +335,7 @@ Bin64vc141\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilt
 
 ## Comparisons \- `compare` {#asset-bundler-command-line-reference-compare}
 
- The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md) for details on comparison operations\.
+ The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for details on comparison operations\.
 
 ### Options {#asset-bundler-command-line-reference-compare-options}
 
@@ -353,7 +353,7 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md)\.
+ For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
  The `intersectionCount` comparison type can't be combined with any other comparison type\.
 *Type:* Multi\-value argument
 *Required:* Yes
@@ -381,7 +381,7 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 *Required:* No
 
 **\-\-output**
- The output files for the result of each performed comparison\. Output files can be a file, or a variable passed from another comparison\. Variables start with the `$` character\. For more about variables, see [Amazon Lumberyard Asset List Comparison Operations](/docs/userguide/assets/bundle/list-operations.md)\.
+ The output files for the result of each performed comparison\. Output files can be a file, or a variable passed from another comparison\. Variables start with the `$` character\. For more about variables, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
 *Type:* Multi\-value argument\. The number of parameters for the `--output` argument must match the number of parameters to the `--comparisonType` argument\.
 *Required:* No
 

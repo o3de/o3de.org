@@ -23,10 +23,10 @@ Lumberyard supports the following image file types:
 
 The following diagram represents the general workflow for converting images\.
 
-![\[General workflow for converting images in Lumberyard\]](/images/userguide/assets/pipeline/asset-pipeline-images.png)
+![\[General workflow for converting images in Lumberyard\]](/images/user-guide/assets/pipeline/asset-pipeline-images.png)
 
 **Topics**
-+ [Creating Image Processing Presets](/docs/userguide/assets/creating-image-processing-presets.md)
-+ [Using Image Naming Conventions](/docs/userguide/assets/using-image-naming-conventions.md)
++ [Creating Image Processing Presets](/docs/user-guide/features/assets/creating-image-processing-presets.md)
++ [Using Image Naming Conventions](/docs/user-guide/features/assets/using-image-naming-conventions.md)
 + [Using the Resource Compiler Image Tool](/docs/userguide/assets/images-using-resourcecompiler-image-tool.md)
 + [Generating Mip Maps](/docs/userguide/assets/generating-mipmaps.md)

@@ -16,10 +16,10 @@ Lumberyard provides the following suite of applications, editors, and tools for 
 [Animation Editor](/docs/userguide/char-intro.md)
 Manages character animations, attachments, and physics simulations along with blendspace and animation layering\.
 
-[Asset Browser](/docs/userguide/asset-browser-intro.md)
+[Asset Browser](/docs/user-guide/features/editor/asset-browser.md)
 Displays all game assets available for use\.
 
-[Asset Processor](/docs/userguide/assets/processor.md)
+[Asset Processor](/docs/user-guide/features/assets/processor.md)
 Runs in the background when you launch Lumberyard Editor, monitoring input directories for changes in source files and automatically generating platform\-specific game assets as they change\.
 
 [Audio Controls Editor](/docs/userguide/audio/atl-editor.md)
@@ -34,10 +34,10 @@ Runs editor commands and lists available console variables\.
 [Database View](/docs/userguide/level-database-view.md)
 Displays various object libraries such as entities, particles, and prefabs\.
 
-[Entity Inspector](/docs/userguide/components/entity-inspector.md)
+[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)
 Displays the ID and name for component entity system objects\.
 
-[Entity Outliner](/docs/userguide/components/entity-outliner.md)
+[Entity Outliner](/docs/user-guide/features/editor/entity-outliner.md)
 Displays all component entities used for a level\.
 
 [FBX Settings](/docs/userguide/fbx/intro.md)
@@ -79,7 +79,7 @@ Creates and simulates explosions, fire, sparks, and other visual effects\.
 [Project Configurator](/docs/userguide/configurator/intro.md)
 Standalone application used to tell the Waf build system which Gems to include in the game build\.
 
-[Resource Compiler](/docs/userguide/assets/processor.md)
+[Resource Compiler](/docs/user-guide/features/assets/processor.md)
 Compresses and processes source game asset files and creates package files\.
 
 [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)

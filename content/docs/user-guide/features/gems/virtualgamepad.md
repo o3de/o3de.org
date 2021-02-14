@@ -33,13 +33,13 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 1. For each component, select an **Input Channel**\.
 
-![\[Input Channel selection for the VirtualGamepadButton\]](/images/userguide/gems/gems-system-gem-virtualgamepad-2.png)
+![\[Input Channel selection for the VirtualGamepadButton\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
 
 For more information about input in Lumberyard, see [Input in Amazon Lumberyard](/docs/userguide/input-intro.md)\.
 
 To modify the list of available virtual gamepad input channels, use the Project Configurator to edit the virtual gamepad's system component \. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
-![\[Use the Project Configurator to modify the list of available virtual gamepad input channels.\]](/images/userguide/gems/gems-system-gem-virtualgamepad-3.png)
+![\[Use the Project Configurator to modify the list of available virtual gamepad input channels.\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-3.png)
 
 ## Virtual Gamepad Component Properties {#gems-system-gem-virtualgamepad-properties}
 
@@ -48,12 +48,12 @@ The Virtual Gamepad gem features two components that you can use to customize in
 ****VirtualGamepadButton****
 **VirtualGamepadButton** has one property, **Input Channel**\. Select the appropriate input\.
 
-![\[Input Channel selection for the VirtualGamepadButton.\]](/images/userguide/gems/gems-system-gem-virtualgamepad-properties-1.png)
+![\[Input Channel selection for the VirtualGamepadButton.\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-properties-1.png)
 
 ****VirtualGamepadThumbstick****
 **VirtualGamepadThumbstick** has the following properties:
 
-![\[VirutalGamepadThumbStick component properties\]](/images/userguide/gems/gems-system-gem-virtualgamepad-properties-2.png)
+![\[VirutalGamepadThumbStick component properties\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-properties-2.png)
 ****
 [\[See the AWS documentation website for more details\]](/docs/userguide/gems/builtin/virtualgamepad)
 

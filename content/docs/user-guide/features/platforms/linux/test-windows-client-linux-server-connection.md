@@ -12,12 +12,12 @@ title: Testing the Windows Client to Linux Server Connection
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-After you've [built the Windows client and Linux server](/docs/userguide/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\.
+After you've [built the Windows client and Linux server](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\.
 
 ## Prerequisites {#linux-test-windows-client-linux-server-connection-prerequisites}
 
 To test your server setup, complete the following tasks\.
-+ Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](/docs/userguide/linux/build-lumberyard-executable.md)\.
++ Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)\.
 + Get the *public* IP address \(not DNS name\) of your Linux server\.
 + Get the *public* IP address of your client machine\.
 +  Allow outbound TCP connections on Windows 10 to your Linux server on port `4600`, and outbound UDP connections on port `33435`\. If you're not familiar with how to configure Windows firewall to allow outbound connections, see the [Microsoft Windows Firewall documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)\.
@@ -61,10 +61,10 @@ When the server is running, launch the remote console and set up the server to s
 1. Launch the Remote Console on your Windows 10 machine, located at `lumberyard_install_dir\dev\Tools\RemoteConsole\RemoteConsole.exe`\.
 
 1. In the Remote Console, Select **Targets > PC**, and then edit the **Targets > Custom IP** setting to be the IP address for your Linux server\.
-![\[The upper half of the Remote Console window. The menu bar displays the tabs "Tools","Toggles", "Sliders", "Targets", "Generic", "WF1", "MacrosOther", "GamePlays", "Maps". The "Targets" menu is surrounded by a red box. The Targets dropdown lists platforms "PC", "Xenia", "Provo" followed by a text input field for "Custom IP". The "PC" dropdown item is surrounded by a red box. The "Custom IP" text input field is surrounded by a red box.\]](/images/userguide/platforms/linux/remote-console-ipaddr.png)
+![\[The upper half of the Remote Console window. The menu bar displays the tabs "Tools","Toggles", "Sliders", "Targets", "Generic", "WF1", "MacrosOther", "GamePlays", "Maps". The "Targets" menu is surrounded by a red box. The Targets dropdown lists platforms "PC", "Xenia", "Provo" followed by a text input field for "Custom IP". The "PC" dropdown item is surrounded by a red box. The "Custom IP" text input field is surrounded by a red box.\]](/images/user-guide/platforms/linux/remote-console-ipaddr.png)
 
     If the connection to the dedicated server is successful, you see a green status light and the word **Connected** in the lower right corner of the window\. Make sure that the IP address and port, located in the lower left of the window, match up with the location of your server\. If you had an instance of the client already running, the remote console will attempt to connect to it first\.
-![\[The status bar for the Remote Console Window. On the far left is the text "Target: PC" followed by an obfuscated host and the port "4600". On the far right is "Status:", a green circle indicator, and the word "Connected".\]](/images/userguide/platforms/linux/remote-console-connected.png)
+![\[The status bar for the Remote Console Window. On the far left is the text "Target: PC" followed by an obfuscated host and the port "4600". On the far right is "Status:", a green circle indicator, and the word "Connected".\]](/images/user-guide/platforms/linux/remote-console-connected.png)
 
 1. In the command line located at the bottom of the window, send commands to the server to start the multiplayer session and load a map\.
 

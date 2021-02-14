@@ -64,9 +64,9 @@ Lumberyard Editor is currently supported on Windows only\. You must export each 
 
 You will use a Development app throughout most of your development cycle\. Your app must connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor\. Asset Processor generates the Development app executable and its assets, which can be loose files or PAK files\.
 
-![\[The Development app contains the Lumberyard executable and assets.\]](/images/userguide/mobile/ios/ios_development_app.png)
+![\[The Development app contains the Lumberyard executable and assets.\]](/images/user-guide/mobile/ios/ios_development_app.png)
 
-![\[The Development app connects to the remote shader compiler.\]](/images/userguide/mobile/ios/ios_development_scenario_01.png)
+![\[The Development app connects to the remote shader compiler.\]](/images/user-guide/mobile/ios/ios_development_scenario_01.png)
 
 ### VFS App {#lumberyard-ios-app-anatomy-vfs-app}
 
@@ -74,25 +74,25 @@ You can use the VFS app with the Virtual Filing System \(VFS\)\. While similar t
 
 Your app must also connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor on startup\. You can optionally choose to direct traffic to and from the Remote Compiler through Asset Processor\.
 
-![\[The Virtual Filing System (VFS) app contains the Lumberyard executable, bootstrap.cfg file, and the game.xml file.\]](/images/userguide/mobile/ios/ios_vfs_app.png)
+![\[The Virtual Filing System (VFS) app contains the Lumberyard executable, bootstrap.cfg file, and the game.xml file.\]](/images/user-guide/mobile/ios/ios_vfs_app.png)
 
-![\[The VFS app connects to the Asset Processor on startup.\]](/images/userguide/mobile/ios/ios_development_scenario_02.png)
+![\[The VFS app connects to the Asset Processor on startup.\]](/images/user-guide/mobile/ios/ios_development_scenario_02.png)
 
 ### Release App {#lumberyard-ios-app-anatomy-release-app}
 
 The Release app contains the executable and all binaries and assets that are required for your app to run\. The assets and shaders must be PAK files because the app will not connect to the Remote Shader Compiler or Asset Processor\.
 
-![\[The Release app contains the Lumberyard binaries, asset .pak files, and shader .pak files.\]](/images/userguide/mobile/ios/ios_release_app.png)
+![\[The Release app contains the Lumberyard binaries, asset .pak files, and shader .pak files.\]](/images/user-guide/mobile/ios/ios_release_app.png)
 
 **Topics**
 + [Prerequisites](#ios-prerequisites)
 + [Lumberyard Binaries](#ios-support-lumberyard-binaries)
 + [Anatomy of a Lumberyard iOS App](#ios-support-lumberyard-ios-app-anatomy)
-+ [Quick Start: Running the Samples Project on iOS Devices](/docs/userguide/mobile/ios/quick-start.md)
-+ [Building Your iOS App](/docs/userguide/mobile/ios/game-building.md)
-+ [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)
-+ [Using Virtual File System with iOS](/docs/userguide/mobile/ios/virtual-file-system.md)
++ [Quick Start: Running the Samples Project on iOS Devices](/docs/user-guide/features/platforms/ios/quick-start.md)
++ [Building Your iOS App](/docs/user-guide/features/platforms/ios/game-building.md)
++ [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)
++ [Using Virtual File System with iOS](/docs/user-guide/features/platforms/ios/virtual-file-system.md)
 + [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)
-+ [Sharing Assets Between Windows and macOS](/docs/userguide/mobile/ios/sharing-assets-between-mac-pc.md)
-+ [Add iOS Frameworks to a Lumberyard project](/docs/userguide/mobile/ios/custom-frameworks.md)
-+ [iOS Debugging and Troubleshooting](/docs/userguide/mobile/ios/debugging-troubleshooting.md)
++ [Sharing Assets Between Windows and macOS](/docs/user-guide/features/platforms/ios/sharing-assets-between-mac-pc.md)
++ [Add iOS Frameworks to a Lumberyard project](/docs/user-guide/features/platforms/ios/custom-frameworks.md)
++ [iOS Debugging and Troubleshooting](/docs/user-guide/features/platforms/ios/debugging-troubleshooting.md)

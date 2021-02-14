@@ -10,12 +10,12 @@ title: 'Lumberyard Android support'
 + [Minimum device requirements](#android-minimum-requirements)
 + [Prerequisites](#android-prerequisites)
 + [Video tutorial](#android-setting-up-environment-video)
-+ [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md)
-+ [Configure Lumberyard projects for Android](/docs/userguide/mobile/android/configure-project.md)
-+ [Build and deploy your project for Android](/docs/userguide/mobile/android/build-deploy.md)
-+ [Releasing Lumberyard projects for Android](/docs/userguide/mobile/android/deploy-release.md)
-+ [Troubleshooting Lumberyard issues on Android](/docs/userguide/mobile/android/troubleshooting.md)
-+ [Reference for Android](/docs/userguide/mobile/android/reference.md)
++ [Set up your environment to develop for Android with Lumberyard](/docs/user-guide/features/platforms/android/setting-up-environment.md)
++ [Configure Lumberyard projects for Android](/docs/user-guide/features/platforms/android/configure-project.md)
++ [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)
++ [Releasing Lumberyard projects for Android](/docs/user-guide/features/platforms/android/deploy-release.md)
++ [Troubleshooting Lumberyard issues on Android](/docs/user-guide/features/platforms/android/troubleshooting.md)
++ [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)
 
 ## Minimum device requirements {#android-minimum-requirements}
 
@@ -34,7 +34,7 @@ title: 'Lumberyard Android support'
 
 ## Prerequisites {#android-prerequisites}
 
- To get started with your Lumberyard project on Android, you need the following software installed, in addition to Lumberyard\. If you need to, [download Lumberyard now](/docs/userguide/setup/downloading-lumberyard.md)\. Lumberyard can be configured for Android development either when you install it, or after you set up your Android tools\. See [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md) for more information\.
+ To get started with your Lumberyard project on Android, you need the following software installed, in addition to Lumberyard\. If you need to, [download Lumberyard now](/docs/userguide/setup/downloading-lumberyard.md)\. Lumberyard can be configured for Android development either when you install it, or after you set up your Android tools\. See [Set up your environment to develop for Android with Lumberyard](/docs/user-guide/features/platforms/android/setting-up-environment.md) for more information\.
 +  An Android development environment\. This can be either Android Studio or the standalone command line tools\. For developers not already familiar with working with Android, we recommend Android Studio, which includes the command\-line tools\. [Download Android developer tools](https://developer.android.com/studio/#downloads)\.
 +
 
@@ -50,7 +50,7 @@ title: 'Lumberyard Android support'
 **Important**
  Google requires that new apps submitted to the Google Play Store are built against an SDK version that is no more than one year old\. To make sure that you meet this requirement, build against the latest available Android SDK and check for updated versions before any submission to the Google Play Store\.
 
-   For instructions on installing the Android SDK and NDK, see the [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [Command\-line `sdkmanager`](https://developer.android.com/studio/command-line/sdkmanager) documentation on the Android developer site\. For information on the packages required as part of the Android SDK install, see [Set up your environment to develop for Android with Lumberyard](/docs/userguide/mobile/android/setting-up-environment.md)\.
+   For instructions on installing the Android SDK and NDK, see the [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [Command\-line `sdkmanager`](https://developer.android.com/studio/command-line/sdkmanager) documentation on the Android developer site\. For information on the packages required as part of the Android SDK install, see [Set up your environment to develop for Android with Lumberyard](/docs/user-guide/features/platforms/android/setting-up-environment.md)\.
 
 ## Video tutorial {#android-setting-up-environment-video}
 

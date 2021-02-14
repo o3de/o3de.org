@@ -5,7 +5,7 @@ title: Add modular features and assets with gems
 ---
 # Add modular features and assets with Gems {#gems-system-gems}
 
-Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in Lumberyard, see [Gems Available in Lumberyard](/docs/userguide/gems/ref.md)\.
+Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in Lumberyard, see [Gems Available in Lumberyard](/docs/user-guide/features/gems/list.md)\.
 
 Lumberyard features two types of Gems:
 + **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
@@ -24,6 +24,6 @@ You can enable Gems with the [Project Configurator](/docs/userguide/configurator
 
 **Topics**
 + [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)
-+ [Creating a Gem](/docs/userguide/gems/builtin/s-creating.md)
++ [Creating a Gem](/docs/user-guide/features/engine/gems/_index.md)
 + [Programming with Gems](/docs/userguide/gems/_index.md)
-+ [Gems Available in Lumberyard](/docs/userguide/gems/ref.md)
++ [Gems Available in Lumberyard](/docs/user-guide/features/gems/list.md)

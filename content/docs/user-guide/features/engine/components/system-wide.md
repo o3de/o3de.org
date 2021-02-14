@@ -22,7 +22,7 @@ Just like game components, system components often provide request and notificat
 
 ## Creating a System Component in a Gem {#component-entity-system-pg-creating-system-components-gem}
 
-Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/userguide/modules/gems.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\.
+Lumberyard enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/user-guide/features/engine/gems/structure.md)\. Most Lumberyard games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\.
 
 When you create a system component as part of a gem, note the following requirements:
 + Your gem's `GetRequiredSystemComponents()` function must return the system component\.
@@ -207,6 +207,6 @@ After you create the code for your component, add it to your project's system en
    The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list\. The `Category` field specifies the group in which the component appears\. In this case, no category is specified, so the group is **Miscellaneous** by default\.
 
    The following image shows the result in the System Entity Editor\.
-![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](/images/userguide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
+![\[The HttpRequestor system component appears in the System Entity Editor Add Component menu\]](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
 
    For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](/docs/user-guide/editor/add-system-entity.md)\.
