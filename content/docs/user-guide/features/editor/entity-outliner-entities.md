@@ -18,13 +18,13 @@ When you create entities or instantiate slices, they appear at the bottom of the
 **To reorder entities in the Entity Outliner**
 
 1. To move an entity, right\-click an entity and choose **Move up** or **Move down**\.
-![\[Move an entity up and down the Entity Outliner.\]](/images/userguide/component/entity_system/component-entity-outliner-reorder.png)
+![\[Move an entity up and down the Entity Outliner.\]](/images/user-guide/component/entity_system/component-entity-outliner-reorder.png)
 
 1. You can also drag and drop one or more entities into the preferred order\. Select and drag the entity until a white line appears in your preferred location\.
-![\[Drag and drop to reorder an entity.\]](/images/userguide/component/entity_system/component-entity-outliner-reorder-drag-drop.png)
+![\[Drag and drop to reorder an entity.\]](/images/user-guide/component/entity_system/component-entity-outliner-reorder-drag-drop.png)
 
 1. To make an entity the child of another entity, select and drag the entity to its intended parent\. A white box appears around the parent entity\.
-![\[Drag and drop to parent an entity.\]](/images/userguide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
+![\[Drag and drop to parent an entity.\]](/images/user-guide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
 
 ## Hiding and Showing Entities {#component-entity-outliner-hiding}
 
@@ -35,7 +35,7 @@ You can hide entities so that they don't appear in the viewport, so that the vie
 1. In the **Entity Outliner**, click the eye icon next to the entity\. The crossed\-out eye icon indicates that the entity doesn't appear in the viewport\.
 
 1. To show the entity, click the icon again\.
-![\[Hide and show entities in the viewport.\]](/images/userguide/component/entity_system/component-entity-outliner-hiding.png)
+![\[Hide and show entities in the viewport.\]](/images/user-guide/component/entity_system/component-entity-outliner-hiding.png)
 
 ## Locking Entities {#component-entity-outliner-locking}
 
@@ -44,7 +44,7 @@ You can lock entities so that they can't be selected in the viewport, so that yo
 **To lock entities**
 
 1. In the **Entity Outliner**, click the lock icon next to the entity\. The icon appears white when the entity is locked\.
-![\[Lock entities in the Entity Outliner so that that can't be selected in the viewport.\]](/images/userguide/component/entity_system/component-entity-outliner-locking.png)
+![\[Lock entities in the Entity Outliner so that that can't be selected in the viewport.\]](/images/user-guide/component/entity_system/component-entity-outliner-locking.png)
 
 1. To unlock the entity, click the lock icon again\.
 

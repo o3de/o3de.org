@@ -54,7 +54,7 @@ using ExampleInterfaceBus = AZ::EBus<ExampleInterface>;
 ```
 
 **Tip**
-Use descriptive names in EBuses, and avoid overloaded functions\. Explicit and descriptive function names prevent future API name collisions when classes inherit your EBus interfaces\. Avoiding overloaded functions improves the experience of using your EBuses\. This is especially true from scripting environments such as Lua, in which descriptive names improve readability and clarity\. For more information, see [Components and EBuses: Best Practices](/docs/userguide/components/entity-system-pg-components-ebuses-best-practices.md)\.
+Use descriptive names in EBuses, and avoid overloaded functions\. Explicit and descriptive function names prevent future API name collisions when classes inherit your EBus interfaces\. Avoiding overloaded functions improves the experience of using your EBuses\. This is especially true from scripting environments such as Lua, in which descriptive names improve readability and clarity\. For more information, see [Components and EBuses: Best Practices](/docs/user-guide/features/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)\.
 
 ## EBus Configuration Options {#ebus-usage-and-examples-config-options}
 

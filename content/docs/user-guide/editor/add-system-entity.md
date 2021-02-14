@@ -5,7 +5,7 @@ title: Configuring System Entities
 ---
 # Configuring System Entities {#az-module-system-entities-configuring}
 
-A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/userguide/components/entity-inspector.md)**\.
+A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
 
 **To configure system entities**
 
@@ -16,7 +16,7 @@ A single *system entity* lives at the heart of every Lumberyard application\. Th
 1. In the Project Configurator, select your project\.
 
 1. Click **Advanced Settings**\.
-![\[Click Advanced Settings in the Project Configurator.\]](/images/userguide/modules/az-module-system-entities-advanced-settings.png)
+![\[Click Advanced Settings in the Project Configurator.\]](/images/user-guide/modules/az-module-system-entities-advanced-settings.png)
 
    The first time that you use the System Entity Editor, it performs the following tasks\.
 
@@ -27,34 +27,34 @@ A single *system entity* lives at the heart of every Lumberyard application\. Th
    1. Adds the missing system components to the configuration\.
 
    1. Displays the list in the **Added required components** dialog box\. The following image shows an example\.
-![\[Added required components in the System Entity Editor.\]](/images/userguide/modules/az-module-system-entities-added-required-components.png)
+![\[Added required components in the System Entity Editor.\]](/images/user-guide/modules/az-module-system-entities-added-required-components.png)
 **Note**
 Some system components are optional, and some are required\. Both the Lumberyard engine and the gems that your project uses can require certain components\.
 
 1. In the **Added required components** dialog box, click **OK**\.
 
 1. The **Project** option shows the project that you selected\. Use the drop\-down menu to select a different project to edit\.
-![\[Choose a project in the System Entity Editor\]](/images/userguide/modules/az-module-system-entities-choose-project.png)
+![\[Choose a project in the System Entity Editor\]](/images/user-guide/modules/az-module-system-entities-choose-project.png)
 
 1. For the **Configuration** option, choose **Game** if you want to make changes to the system entity for the `Game` \(launcher\), or **Editor** to modify the system entity for the `Editor`\.
-![\[Choose the Game system entity or the Editor system entity\]](/images/userguide/modules/az-module-system-entities-choose-game-or-editor.png)
+![\[Choose the Game system entity or the Editor system entity\]](/images/user-guide/modules/az-module-system-entities-choose-game-or-editor.png)
 
    The **System Entity** tab lists any components that have already been added\.
-![\[Added components for the system entity.\]](/images/userguide/modules/az-module-system-entities-tab-added-components.png)
+![\[Added components for the system entity.\]](/images/user-guide/modules/az-module-system-entities-tab-added-components.png)
 
 1. To add a component to the system entity, click **Add Component**\.
-![\[Click Add Component to add a component to the system entity\]](/images/userguide/modules/az-module-system-entities-add-component.png)
+![\[Click Add Component to add a component to the system entity\]](/images/user-guide/modules/az-module-system-entities-add-component.png)
 
 1. To see more information about a component before you add it, pause your pointer over the name\.
-![\[For a brief description of the component, see its tooltip\]](/images/userguide/modules/az-module-system-entities-add-component-tool-tip.png)
+![\[For a brief description of the component, see its tooltip\]](/images/user-guide/modules/az-module-system-entities-add-component-tool-tip.png)
 
 1. To add the component to the system entity, select the component, and then click **Save**\. The component appears in the list of components for the system entity\.
 
 1. To delete, disable, or change a component's position, right\-click the component and choose the corresponding action\.
-![\[Right-click a component to delete, disable, or move it.\]](/images/userguide/modules/az-module-system-entities-context-menu.png)
+![\[Right-click a component to delete, disable, or move it.\]](/images/user-guide/modules/az-module-system-entities-context-menu.png)
 
 1. To configure system memory options, choose the **Memory Settings** tab\.
-![\[System memory settings in the System Entity Editor,\]](/images/userguide/modules/az-module-system-entities-system-memory-settings.png)
+![\[System memory settings in the System Entity Editor,\]](/images/user-guide/modules/az-module-system-entities-system-memory-settings.png)
 
 1. Click **Save** to save your changes to disk\. The changes that you make on the **System Entity** and **Memory Settings** tabs are saved to a `Game.xml` or `Editor.xml` application descriptor file\.
 

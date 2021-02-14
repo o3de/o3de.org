@@ -70,12 +70,12 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    The `1` argument specifies that missing files are reported as log entries rather than warnings or errors\.
 
 1. Enter game mode\. A list of Missing from bundle errors displays\.
-![\[Missing from bundle errors in the console window.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-1.png)
+![\[Missing from bundle errors in the console window.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-1.png)
 
 1. Enter the command `loadbundles` to load bundles for the level\.
-![\[Using the loadbundles command.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-2.png)
+![\[Using the loadbundles command.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
 
-   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/userguide/assets/bundle/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
+   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/user-guide/features/packaging/asset-bundler/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
 
 1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle\.
 
@@ -84,16 +84,16 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `listknownassets` command\.
-![\[Listing known assets in the console.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-3.png)
+![\[Listing known assets in the console.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-3.png)
 
 1. Examine the output\. In the following example, the output shows missing button assets\.
-![\[Identifying missing assets in the output.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-4.png)
+![\[Identifying missing assets in the output.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-4.png)
 
    In the case of the button assets, the bundle was packaged a while ago and must be repackaged\. However, other assets are also still missing\.
 
 1. Add the missing assets to the seed list for the level\.
 
-1. Run the [bundling commands](/docs/userguide/assets/bundle/command-line-reference.md) for the level\.
+1. Run the [bundling commands](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md) for the level\.
 
 1. Drop the bundles into the `Bundles` directory\.
 
@@ -144,6 +144,6 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    ```
 
 1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.
-![\[All loaded assets are now in bundles.\]](/images/userguide/assetbundler/asset-bundler-bundle-mode-5.png)
+![\[All loaded assets are now in bundles.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-5.png)
 
    All the assets loaded when game mode was entered are now in bundles\.

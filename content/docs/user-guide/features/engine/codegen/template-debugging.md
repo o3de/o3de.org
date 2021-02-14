@@ -32,4 +32,4 @@ Because template drivers are run from the AZ Code Generator executable using Pyt
 
 After you have completed the preceding steps, you should be able to launch your debugger and set breakpoints in your driver script\.
 
-For complete AZ Code Generator parameter information, see [AZ Code Generator Parameters](/docs/userguide/codegen/parameters.md)\.
+For complete AZ Code Generator parameter information, see [AZ Code Generator Parameters](/docs/user-guide/features/engine/codegen/parameters.md)\.

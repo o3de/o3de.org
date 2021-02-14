@@ -7,7 +7,7 @@ title: SaveData Gem
 
 The SaveData gem encapsulates all the functionality in Lumberyard for saving game and individual user data under a single platform\-agnostic set of API operations\.
 
-![\[The SaveData gem in Project Configurator.\]](/images/userguide/gems-system-save-data-1.png)
+![\[The SaveData gem in Project Configurator.\]](/images/user-guide/gems-system-save-data-1.png)
 
 To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
@@ -16,7 +16,7 @@ The SaveData gem uses the [Event Bus \(EBus\)](/docs/user-guide/features/engine/
 ## Making Requests to Save Data {#gems-system-save-data-requests}
 
 When making requests to save or load data using the `SaveDataRequestBus`, keep the following points in mind:
-+ The SaveData gem is responsible only for saving and loading generic data buffers\. Your game must serialize or deserialize data using a data format, such as JSON or XML, that you deem appropriate\. However, convenience functions are provided that save or load an object that has been reflected using an [`AZ::SerializeContext`](/docs/userguide/components/entity-system-reflection-serialization-context.md)\.
++ The SaveData gem is responsible only for saving and loading generic data buffers\. Your game must serialize or deserialize data using a data format, such as JSON or XML, that you deem appropriate\. However, convenience functions are provided that save or load an object that has been reflected using an [`AZ::SerializeContext`](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md)\.
 + Each save data buffer must be uniquely identified by a string\. On most operating systems and devices, this string is the name of the file to which the data buffer is written\.
 
 ### Saving Data for Local User IDs {#gems-system-save-data-local-user-ids}

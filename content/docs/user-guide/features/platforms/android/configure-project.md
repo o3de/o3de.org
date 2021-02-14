@@ -5,9 +5,9 @@ title: Configure Lumberyard projects for Android
 ---
 # Configure Lumberyard projects for Android {#android-configure-project}
 
- In addition to the [system\-wide configuration requirements](/docs/userguide/mobile/android/setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\.
+ In addition to the [system\-wide configuration requirements](/docs/user-guide/features/platforms/android/setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\.
 
- This section covers the basics of configuring your project so that you can work with Android\. For all of the available settings, see [Reference for Android](/docs/userguide/mobile/android/reference.md)\.
+ This section covers the basics of configuring your project so that you can work with Android\. For all of the available settings, see [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)\.
 
 **Important**
  Because project settings impact how your application communicates with some services on the Asset Processor host and modify the Android manifest, changing any settings for your project will require a rebuild\.

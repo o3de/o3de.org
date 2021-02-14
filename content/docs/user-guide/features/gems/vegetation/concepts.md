@@ -17,7 +17,7 @@ The dynamic vegetation system operates around the following ideas:
 **Example**
 The following image shows grass excluded from the river and road surfaces, and pebble clusters included only on road surfaces\.
 
-![\[Grass is excluded from the river and road surfaces, and pebble clusters appear only on road surfaces.\]](/images/userguide/vegetation/dynamic/dynamic-vegetation-concepts-lilies.png)
+![\[Grass is excluded from the river and road surfaces, and pebble clusters appear only on road surfaces.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-concepts-lilies.png)
 
 You can customize your vegetation in the following ways:
 + Assign priorities to your vegetation areas\. Priorities determine the order in which the vegetation system fills the areas\.
