@@ -31,7 +31,7 @@ e:\dev\Code\CryEngine\Cry3DEngine\Particle.cpp(1289): (68792) 'void __cdecl CPar
 
 `sys_asserts=2` opens a dialog box like the following:
 
-![\[Assert dialog box\]](/images/userguide/debugging-using-asserts-1.png)
+![\[Assert dialog box\]](/images/user-guide/debugging-using-asserts-1.png)
 
 The following table describes the options for the **Assert** dialog box\.
 
@@ -61,13 +61,13 @@ sys_asserts=2
 
 You can set the `sys_asserts` console variable at runtime in the console window\. The following image shows an example\.
 
-![\[Setting the sys_asserts console variable at runtime.\]](/images/userguide/debugging-using-asserts-2.png)
+![\[Setting the sys_asserts console variable at runtime.\]](/images/user-guide/debugging-using-asserts-2.png)
 
 ## Setting the Assert Level for Mobile Devices {#debugging-using-asserts-mobile-devices}
 
 When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/userguide/lumberyard-remote-console.md) to set the assert level in the command\-line window of the application\.
 
-![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/userguide/debugging-using-asserts-3.png)
+![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/user-guide/debugging-using-asserts-3.png)
 
 ## **Setting an Assert in Source Code** {#debugging-using-asserts-setting-in-source-code}
 
@@ -77,4 +77,4 @@ To add an assert in source code, use the `AZ_Assert` macro\.
 AZ_Assert(m_useCount >= 0, "AssetData has been deleted")
 ```
 
-For more information, see [Tracing](/docs/userguide/programming/best-practices/lumberyard-tracing.md)\.
+For more information, see [Tracing](/docs/user-guide/features/engine/debugging/tracing.md)\.

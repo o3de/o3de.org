@@ -10,8 +10,8 @@ title: Developing for Android and iOS with Lumberyard
  Take a deep dive into the Android and iOS documentation to learn about the requirements and configuration to get started with these platforms\. When you're up and running, look through the rest of the topics in this section to finish generic setup and take the next steps to make your Lumberyard project a great experience on mobile\.
 
 **Topics**
-+ [Lumberyard Android support](/docs/userguide/mobile/android/intro.md)
-+ [iOS Support](/docs/userguide/mobile/ios/intro.md)
++ [Lumberyard Android support](/docs/user-guide/features/platforms/android/_index.md)
++ [iOS Support](/docs/user-guide/features/platforms/ios/intro.md)
 + [Design Considerations for Creating Mobile Games Using Lumberyard](/docs/userguide/mobile/design-considerations.md)
 + [Lumberyard Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)
 + [Modifying Project Settings for Mobile Device Games](/docs/user-guide/features/editor/mobile-settings.md)

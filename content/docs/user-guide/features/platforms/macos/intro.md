@@ -16,12 +16,12 @@ You can use Lumberyard to build macOS applications\. Lumberyard includes four ma
 **Topics**
 + [Prerequisites](#osx-prerequisites)
 + [Setting Up Your Mac](#osx-setting-up)
-+ [Building macOS Games](/docs/userguide/macos/game-building.md)
-+ [Building Game Assets for macOS Games](/docs/userguide/macos/assets-building.md)
-+ [Building Shaders for macOS Games](/docs/userguide/macos/shaders-building.md)
-+ [Running macOS Games](/docs/userguide/macos/game-deploying.md)
-+ [macOS Debugging and Troubleshooting](/docs/userguide/macos/debugging-troubleshooting.md)
-+ [Creating a Project for Your macOS Games](/docs/userguide/macos/game-creating.md)
++ [Building macOS Games](/docs/user-guide/features/platforms/macos/game-building.md)
++ [Building Game Assets for macOS Games](/docs/user-guide/features/platforms/macos/assets-building.md)
++ [Building Shaders for macOS Games](/docs/user-guide/features/platforms/macos/shaders-building.md)
++ [Running macOS Games](/docs/user-guide/features/platforms/macos/game-deploying.md)
++ [macOS Debugging and Troubleshooting](/docs/user-guide/features/platforms/macos/debugging-troubleshooting.md)
++ [Creating a Project for Your macOS Games](/docs/user-guide/features/platforms/macos/game-creating.md)
 
 ## Prerequisites {#osx-prerequisites}
 

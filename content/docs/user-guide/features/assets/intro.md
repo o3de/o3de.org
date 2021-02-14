@@ -14,10 +14,10 @@ Learn how to manage, process, and package the assets for your Lumberyard game\. 
 
 | Topic Area | Description |
 | --- | --- |
-| [Asset Pipeline](/docs/userguide/assets/intro.md) | Learn about the Lumberyard asset pipeline and asset builders\. Asset builders convert your raw art, shaders, and other materials into game\-ready formats that can be imported straight into the Lumberyard editor\. |
-| [Asset Processor](/docs/userguide/assets/processor.md) | Learn how the Lumberyard Asset Processor tool manages and stores asset dependencies\. |
-| [Custom Asset Builders](/docs/userguide/assets/asset-system-programming.md) | Learn how to create customer asset builders that support new or non\-standard formats\. |
-| [Asset Browser](/docs/userguide/asset-browser-intro.md) | Learn how the Lumberyard Asset Browser tool is used to view and interact with your game project assets\. |
-| [Asset Bundler](/docs/userguide/assets/bundle/intro.md) | Learn how the Lumberyard Asset Bundler can be used to manage and package your game assets for delivery\. |
+| [Asset Pipeline](/docs/user-guide/features/assets/intro.md) | Learn about the Lumberyard asset pipeline and asset builders\. Asset builders convert your raw art, shaders, and other materials into game\-ready formats that can be imported straight into the Lumberyard editor\. |
+| [Asset Processor](/docs/user-guide/features/assets/processor.md) | Learn how the Lumberyard Asset Processor tool manages and stores asset dependencies\. |
+| [Custom Asset Builders](/docs/user-guide/features/assets/asset-system-programming.md) | Learn how to create customer asset builders that support new or non\-standard formats\. |
+| [Asset Browser](/docs/user-guide/features/editor/asset-browser.md) | Learn how the Lumberyard Asset Browser tool is used to view and interact with your game project assets\. |
+| [Asset Bundler](/docs/user-guide/features/packaging/asset-bundler/intro.md) | Learn how the Lumberyard Asset Bundler can be used to manage and package your game assets for delivery\. |
 | [FBX Settings](/docs/userguide/fbx/intro.md) | Learn how to use FBX Settings to export meshes, actors, motions and PhysX meshes for Lumberyard\. |
-| [Python Asset Builder](/docs/userguide/assets/process/python/intro.md) | Learn how to create custom asset builders with Python\. |
+| [Python Asset Builder](/docs/user-guide/features/assets/builder/intro.md) | Learn how to create custom asset builders with Python\. |

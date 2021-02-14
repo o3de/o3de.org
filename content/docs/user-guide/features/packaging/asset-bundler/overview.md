@@ -13,7 +13,7 @@ The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of
 To use the Asset Bundler, your game project must meet the following criteria:
 + You have Lumberyard version 1\.22 or later installed\.
 + You have game project in Lumberyard version 1\.22 or later\. This is the project that you want to generate asset bundles for\.
-+ The assets that you are bundling have been processed by the [Asset Processor](/docs/userguide/assets/processor.md)\.
++ The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/features/assets/processor.md)\.
 + You have Visual Studio 2017 or Visual Studio 2019 \(any edition\) installed and configured for C\+\+ development\.
 
 ## Why use the Asset Bundler? {#related-services}
@@ -38,17 +38,17 @@ Generating a platform\-specific \(for an iOS\-specific release, or a console\-sp
 
    The following diagram illustrates the relationships and process for bundling assets with the Asset Bundler\.
 
-![\[The steps used in the general process for bundling assets with Lumberyard.\]](/images/userguide/assetbundler/asset-bundler-overview.png)
+![\[The steps used in the general process for bundling assets with Lumberyard.\]](/images/user-guide/assetbundler/asset-bundler-overview.png)
 
 In this example, the seeds are the assets Level1\.pak and Level2\.pak\. These `.pak` files reference Lumberyard slice files, which reference the entity meshes they contain, which in turn reference the material and texture files for those entities\.
 
 With those product dependency relationships in place, the Asset Bundler examines the hierarchies of each seed and generates an asset list\. Asset lists, along with the bundle settings file that you create, are used to assemble the final bundle as a `.pak` file with all of the dependent assets\. Any assets not associated with a seed are not included in the final release bundle\.
 
-The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch Lumberyard\. You can also run it from the command line with the `AssetBundlerBatch` command\. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/userguide/assets/bundle/command-line-reference.md)\.
+The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch Lumberyard\. You can also run it from the command line with the `AssetBundlerBatch` command\. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
 
 To get started using the Asset Bundler, read the following tutorials:
-+ [Work with Asset Bundling and the Lumberyard Starter Game](/docs/userguide/assets/bundle/tutorial-release.md)\. This tutorial uses the Starter Game packaged with Lumberyard and walks you through the general asset bundling process\.
-+ [Creating Basic Asset Bundles](/docs/userguide/assets/bundle/tutorial-release.md)\. This tutorial covers the most simple case for asset bundling and release, using a single seed\. Once you've worked through this topic, read the extended tutorials for [multiple packages](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md) and [delta patches](/docs/userguide/assets/bundle/tutorial-content-patches.md)\.
++ [Work with Asset Bundling and the Lumberyard Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release.md)\. This tutorial uses the Starter Game packaged with Lumberyard and walks you through the general asset bundling process\.
++ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release.md)\. This tutorial covers the most simple case for asset bundling and release, using a single seed\. Once you've worked through this topic, read the extended tutorials for [multiple packages](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md) and [delta patches](/docs/user-guide/tutorials/packaging/tutorial-content-patches.md)\.
 
 ## Why define product dependencies? {#why-use-product-dependencies}
 
@@ -60,7 +60,7 @@ There are two types of asset dependencies:
 
 In these topics, we are referring to *product dependencies* unless otherwise indicated\.
 
-The Asset Bundler also lets you exclude content that you don't want to release using the [asset list comparison feature](/docs/userguide/assets/bundle/list-operations.md)\.
+The Asset Bundler also lets you exclude content that you don't want to release using the [asset list comparison feature](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
 
 ## How product asset dependencies are used by Lumberyard {#how-Lumberyard-uses-dependencies}
 
@@ -68,29 +68,29 @@ Product dependencies generate asset lists from seed lists\. This simplifies the 
 
 For example, you have a game that has one level for your release build\. Your game contains a single tree\. You also have a separate test level that you don't need to ship, which contains a single rock\.
 
-![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/userguide/assetbundler/asset-bundler-simple-game-files.png)
+![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/user-guide/assetbundler/asset-bundler-simple-game-files.png)
 
 In the asset bundling workflow in versions of Lumberyard prior to version 1\.22, each file had to be tracked and added to the game package\. This was generally done by specifying wildcards\. It worked for simple builds\. However, this process became hard to use when a game was split into multiple bundles\. The multiple bundles accomodated content being downloaded on demand, or the hard upper limit on package size because of platform package restrictions\. It also became difficult to safely manage excluded content, such as when your game project had assets that could not appear in your release build\.
 
 Based on the file layout in the previous example, here's a simple diagram of the workflow in Lumberyard versions prior to 1\.22:
 
-![\[A diagram of the legacy asset bundling workflow in Lumberyard.\]](/images/userguide/assetbundler/legacy-asset-bundler-flowchart-simple.png)
+![\[A diagram of the legacy asset bundling workflow in Lumberyard.\]](/images/user-guide/assetbundler/legacy-asset-bundler-flowchart-simple.png)
 
 For more complex game projects, the asset bundling workflow can look more like this:
 
-![\[A diagram showing a more complex workflow for legacy asset bundling.\]](/images/userguide/assetbundler/legacy-asset-bundler-flowchart.png)
+![\[A diagram showing a more complex workflow for legacy asset bundling.\]](/images/user-guide/assetbundler/legacy-asset-bundler-flowchart.png)
 
 The bundling workflow in Lumberyard version 1\.22 has fewer steps, fewer loopbacks, and less complex steps than prior versions\.
 
 The following example shows a basic workflow for a simple game with assets that emits dependencies correctly\.
 
-![\[New Asset Bundler dependency workflow.\]](/images/userguide/assetbundler/new-asset-bundler-flowchart-simple.png)
+![\[New Asset Bundler dependency workflow.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart-simple.png)
 
 For more complex game projects, with file loads implemented in C\+\+ and custom asset builders, the asset bundling workflow can look more like this:
 
-![\[New Asset Bundler workflow for complex projects.\]](/images/userguide/assetbundler/new-asset-bundler-flowchart.png)
+![\[New Asset Bundler workflow for complex projects.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart.png)
 
-In the previous bundling method, it was necessary to learn how each asset worked to find asset references in Lumberyard's tools\. With the new asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/userguide/assets/bundle/assets-verifying.md)\. You also have opportunities earlier in development to verify that you are bundling the correct assets\. This is unlike the previous method that offered verification tools only for a bundled release build\.
+In the previous bundling method, it was necessary to learn how each asset worked to find asset references in Lumberyard's tools\. With the new asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/features/packaging/asset-bundler/assets-verifying.md)\. You also have opportunities earlier in development to verify that you are bundling the correct assets\. This is unlike the previous method that offered verification tools only for a bundled release build\.
 
 ## Asset Builders and the Asset Bundler {#asset-bundler-and-asset-builders}
 
@@ -100,7 +100,7 @@ Lumberyard ships with Asset Builders for many common asset types\. The Asset Bun
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats\. When the Asset Builder for the images run, they create the dependency tree for the performance\-oriented image formats generated from the more general\-use portable image formats, and define them as dependent on the respective portable image format\. If you create the performance\-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler\.
 
-In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/userguide/assets/asset-type-adding.md) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
+In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/features/assets/asset-type-adding.md) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in Lumberyard\. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your Lumberyard installation root\.
 
@@ -143,9 +143,9 @@ The following table provides some examples of the artifacts generated and used i
 |  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The asset bundles generated for each release\. | Keep track of your game content's packaged asset bundles, to use in your game's releases\. You can store your game's packaged content in source control, but this is not optimal, because these are large, binary files\. We recommend that you use a separate storage solution, like Amazon S3\. |
 
 ## Additional Resources {#asset-bundler-overview-resources}
-+ [Asset Bundler Concepts and Terms](/docs/userguide/assets/bundle/concepts.md)
-+ [Work with Asset Bundling and the Lumberyard Starter Game](/docs/userguide/assets/bundle/tutorial-release.md)
-+ [Creating Basic Asset Bundles](/docs/userguide/assets/bundle/tutorial-release.md)
-+ [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)
-+ [Creating Content Patch Bundles](/docs/userguide/assets/bundle/tutorial-content-patches.md)
++ [Asset Bundler Concepts and Terms](/docs/user-guide/features/packaging/asset-bundler/concepts.md)
++ [Work with Asset Bundling and the Lumberyard Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release.md)
++ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release.md)
++ [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)
++ [Creating Content Patch Bundles](/docs/user-guide/tutorials/packaging/tutorial-content-patches.md)
 + [Migrating to the New Asset Bundler](/docs/userguide/assets/bundle/migrating.md)

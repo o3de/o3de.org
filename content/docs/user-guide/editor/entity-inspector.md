@@ -19,16 +19,16 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
    + **Status** - Active status of the entity\. When the level starts, the entity can be active, inactive, or active but only in editor mode\.
    + **Entity ID** - If this entity ID is called out in messages, errors, or asserts, you can find the entity by searching for it in the **Entity Outliner**\.
    + Components attached to the entity appear below\.
-![\[Find entities and its attached components in the Entity Inspector.\]](/images/userguide/component/entity_system/component-entity-inspector.png)
+![\[Find entities and its attached components in the Entity Inspector.\]](/images/user-guide/component/entity_system/component-entity-inspector.png)
 
 Use the **Entity Inspector** to do the following:
 + [Add components to entities](/docs/userguide/components/working-adding.md)
 + [Modify component properties](/docs/userguide/editing-component-properties.md)
 + [Remove, copy, cut, and paste components](/docs/userguide/creating-adding-components.md)
-+ [Set the entity status](/docs/userguide/components/entity-inspector-status.md)
-+ [Customize the entity icon](/docs/userguide/components/entity-inspector-customize-icon.md)
-+ [Pin an entity's inspector](/docs/userguide/components/entity-inspector-pin.md)
++ [Set the entity status](/docs/user-guide/editor/entity-inspector-status.md)
++ [Customize the entity icon](/docs/user-guide/editor/entity-inspector-customize-icon.md)
++ [Pin an entity's inspector](/docs/user-guide/editor/entity-inspector-pin.md)
 + [Create your own help topic for your custom component](/docs/userguide/editing-component-properties#component-entity-inspector-help)
 
 **Note**
-For a list and descriptions of available components, see [Component Reference](/docs/userguide/components/components.md)\. You can also click the **Help** icon ![\[Image NOT FOUND\]](/images/userguide/component/entity_system/entity-inspector-help.png) in the header of each component to open a help topic\.
+For a list and descriptions of available components, see [Component Reference](/docs/userguide/components/components.md)\. You can also click the **Help** icon ![\[Image NOT FOUND\]](/images/user-guide/component/entity_system/entity-inspector-help.png) in the header of each component to open a help topic\.

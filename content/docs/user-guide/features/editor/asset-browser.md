@@ -12,7 +12,7 @@ The **Asset Browser** shows all files inside your watch folders that are specifi
 **To open the Asset Browser**
 
 1. From Lumberyard Editor, choose **Tools**, **Asset Browser**\.
-![\[Search and view assets in your game project with the Asset Browser.\]](/images/userguide/asset_browser_preview.png)
+![\[Search and view assets in your game project with the Asset Browser.\]](/images/user-guide/asset_browser_preview.png)
 
 1. Dock the **Asset Browser** window in Lumberyard Editor as needed\.
 
@@ -21,11 +21,11 @@ The **Asset Browser** displays source assets along with their products\. For exa
 **Example**
 The `WombearActor.fbx` file has two products, an actor and mesh\.
 
-![\[A WombearActor.fbx source file with two products.\]](/images/userguide/asset-browser-intro-1.png)
+![\[A WombearActor.fbx source file with two products.\]](/images/user-guide/asset-browser-intro-1.png)
 
 Files that are unprocessed or not usable in Lumberyard Editor appear gray\.
 
-![\[Ignored or unprocessed files are grayed out in the Asset Browser.\]](/images/userguide/asset-browser-grayed-out-files.png)
+![\[Ignored or unprocessed files are grayed out in the Asset Browser.\]](/images/user-guide/asset-browser-grayed-out-files.png)
 
 With the **Asset Browser**, you can do the following:
 
@@ -47,19 +47,19 @@ When you drag an asset from the **Asset Browser** into the viewport, Lumberyard 
 **Example**
 You can drag the `brokenrobot05.cgf` file to the viewport, which creates a new entity, adds a **[Mesh](/docs/userguide/components/static-mesh.md)** component, and assigns the asset into the **Mesh asset** property in the **Entity Inspector**\.
 
-![\[Dragging an asset from the Asset Browser into the viewport automatically creates an entity and assigns a Mesh asset.\]](/images/userguide/asset-browser-intro-2.png)
+![\[Dragging an asset from the Asset Browser into the viewport automatically creates an entity and assigns a Mesh asset.\]](/images/user-guide/asset-browser-intro-2.png)
 
 **Example**
 You can select multiple entities in the **Entity Outliner** and then select and drag an asset into the **Entity Inspector**\. This adds the **Mesh** component and the associated mesh asset to the selected entities\.
 
-![\[Animation showing a boulder mesh asset dragged into the Entity Inspector while three empty entities are selected in the Entity Outliner. Three boulders appear in the viewport.\]](/images/userguide/asset-browser-intro-4.gif)
+![\[Animation showing a boulder mesh asset dragged into the Entity Inspector while three empty entities are selected in the Entity Outliner. Three boulders appear in the viewport.\]](/images/user-guide/asset-browser-intro-4.gif)
 
 You can also drag the appropriate file type into a component property's field\.
 
 **Example**
 You can drag an asset file \(`.cfg`\) into the **Material asset** field on the **Mesh** component\. The boulder in the viewport displays the new asset\.
 
-![\[Animation showing a material dragged from the Asset Browser into the Entity Inspector. The material is dropped onto the Mesh component's Material override field.\]](/images/userguide/asset-browser-intro-3.gif)
+![\[Animation showing a material dragged from the Asset Browser into the Entity Inspector. The material is dropped onto the Mesh component's Material override field.\]](/images/user-guide/asset-browser-intro-3.gif)
 
 ## Context Menu Operations {#asset-browser-intro-right-click-context}
 
@@ -73,12 +73,12 @@ In the **Asset Browser**, right\-click an asset to display a context menu\. The 
 **Note**
 You can also open some files in their respective Lumberyard tool, such as the **Lua Editor** for `.lua` files\.
 
-![\[Right-click context menu for assets in the Asset Browser\]](/images/userguide/asset-browser-intro-right-click-context.png)
+![\[Right-click context menu for assets in the Asset Browser\]](/images/user-guide/asset-browser-intro-right-click-context.png)
 
 **FBX Files**
 Some files, such as `.fbx` files, have an additional **Edit Settings** option, which opens the **FBX Settings** tool\. For more information, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
-![\[Right-click context menu for an .fbx file in the Asset Browser.\]](/images/userguide/asset-browser-intro-right-click-context-fbx-tool.png)
+![\[Right-click context menu for an .fbx file in the Asset Browser.\]](/images/user-guide/asset-browser-intro-right-click-context-fbx-tool.png)
 
 **Slices**
 The following additional options appear for slices:
@@ -88,7 +88,7 @@ The following additional options appear for slices:
 **Example**
 
   The following image shows the **Slice Relationship View** for the **Maze\_Decor\_Interior** slice from the Starter Game\. For more information, see [Working with Slices](/docs/userguide/components/slices.md)\.
-![\[Slice Relationship View dialog box.\]](/images/userguide/slice-relationship-view.png)
+![\[Slice Relationship View dialog box.\]](/images/user-guide/slice-relationship-view.png)
 
 **Source Control**
 If source control is enabled, the following additional options appear:
@@ -96,13 +96,13 @@ If source control is enabled, the following additional options appear:
 + **Undo Check Out** - Undo check out for the file\.
 + **Get Latest Version** - Get the latest version of the file\.
 + **Add To Source Control** - Add the file to source control\.
-![\[Right-click context menu in the Asset Browser with source control enabled.\]](/images/userguide/asset-browser-intro-right-click-context-1.png)
+![\[Right-click context menu in the Asset Browser with source control enabled.\]](/images/user-guide/asset-browser-intro-right-click-context-1.png)
 
 ## Finding a Slice in the Asset Browser from the Viewport {#asset-browser-intro-viewport}
 
 In the viewport, right\-click the slice or slice entity and choose **Find slice in Asset Browser**\. The **Asset Browser** navigates to the corresponding slice\.
 
-![\[Right-click the context menu in the viewport to locate a slice in the Asset Browser .\]](/images/userguide/asset-browser-intro-viewport.png)
+![\[Right-click the context menu in the viewport to locate a slice in the Asset Browser .\]](/images/user-guide/asset-browser-intro-viewport.png)
 
 ## Filtering {#asset-browser-intro-filtering}
 
@@ -113,12 +113,12 @@ You can filter what appears in the **Asset Browser** by file name, asset type, o
 1. In the **Asset Browser**, choose the filter icon in the upper right\.
 
 1. Select one or more asset types\.
-![\[Filter assets by type in the Asset Browser.\]](/images/userguide/asset-browser-filter-by-types.png)
+![\[Filter assets by type in the Asset Browser.\]](/images/user-guide/asset-browser-filter-by-types.png)
 
 1. To filter by file name, type search terms into the search bar\.
 
    The filtering process is dynamic, which means that search results update as you type\.
-![\[Type search terms into the Asset Browser's search bar.\]](/images/userguide/asset-browser-intro-filtering-1.png)
+![\[Type search terms into the Asset Browser's search bar.\]](/images/user-guide/asset-browser-intro-filtering-1.png)
 
 1. To reset your selection, in the **Filter by** drop\-down menu, click **Reset** or **Clear**\.
 

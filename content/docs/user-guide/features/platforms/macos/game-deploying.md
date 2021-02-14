@@ -11,7 +11,7 @@ title: Running macOS Games
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Before you can run your game on a macOS computer, you must ensure the shader compiler \(located in the `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile` directory\) is running on your PC\. For more information, see [Building Shaders for macOS Games](/docs/userguide/macos/shaders-building.md)\.
+Before you can run your game on a macOS computer, you must ensure the shader compiler \(located in the `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile` directory\) is running on your PC\. For more information, see [Building Shaders for macOS Games](/docs/user-guide/features/platforms/macos/shaders-building.md)\.
 
 **To run your game on a macOS computer**
 
@@ -29,4 +29,4 @@ Before you can run your game on a macOS computer, you must ensure the shader com
    + Switch between cameras by selecting the buttons in the lower right corner of the screen\.
    + Move Rin in the Character Controller view by using the mouse or keyboard \(**WASD**\)\.
    + Jump in the Character Controller view by pressing the **Space** key\.
-![\[Image NOT FOUND\]](/images/userguide/platforms/macos/advanced-rin-locomotion-mobile.jpg)
+![\[Image NOT FOUND\]](/images/user-guide/platforms/macos/advanced-rin-locomotion-mobile.jpg)

@@ -8,7 +8,7 @@ title: Programming the Lumberyard AZCore Runtime Asset System
 The Lumberyard Editor and Lumberyard runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.
 
 **Note**
-For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/userguide/assets/intro.md)\.
+For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
 
 ## Asset System Classes {#asset-pipeline-asset-system-programming-asset-system-classes}
 
@@ -41,7 +41,7 @@ Adding your own asset type to Lumberyard includes the following high\-level step
 Derive your type from `AssetData`\.
 Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID\.
 Add the member fields or structs that store your data in memory at run time\.
-For more information, see [Adding an Asset Type to Lumberyard](/docs/userguide/assets/asset-type-adding.md)\.
+For more information, see [Adding an Asset Type to Lumberyard](/docs/user-guide/features/assets/asset-type-adding.md)\.
 
 ### AZ::Data::Asset<T> Templated Class {#asset-pipeline-asset-system-programming-azdataassett-templated-class}
 
@@ -157,7 +157,7 @@ To look up asset file information manually, you can pass an `AssetId` to the `As
 
 ### AZ::Data::AssetHandler Derived Classes {#asset-pipeline-asset-system-programming-azdataassethandler-derived-classes}
 
-When you [create a new type of asset](/docs/userguide/assets/asset-type-adding.md), you also create an `AssetHandler` for the new asset type\. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it\. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in\-memory representation of `AssetData`\.
+When you [create a new type of asset](/docs/user-guide/features/assets/asset-type-adding.md), you also create an `AssetHandler` for the new asset type\. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it\. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in\-memory representation of `AssetData`\.
 
 To create a handler for a specific asset type, derive from the `AssetHandler` class and register an instance of the handler with the asset manager\. Because asset handling functions can be called from multiple threads, the handlers must be thread\-safe\. The handler can block the calling thread while the asset is loading\.
 

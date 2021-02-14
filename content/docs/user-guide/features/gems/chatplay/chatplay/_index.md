@@ -25,4 +25,4 @@ Keep this token safe and **do not share** this publicly\! this is essentially yo
 
    For more information about **Twitch IRC** and authentication, see the [Twitch documentation](https://dev.twitch.tv/docs/irc/guide)\.
 
-You are now ready to use the gem\. For details on how to implement Twitch ChatPlay in your game, see [Intro to ChatPlay](/docs/userguide/gems/builtin/chatplay/intro.md)\.
+You are now ready to use the gem\. For details on how to implement Twitch ChatPlay in your game, see [Intro to ChatPlay](/docs/user-guide/features/gems/chatplay/intro.md)\.

@@ -6,7 +6,7 @@ title: Adding an Asset Type to Lumberyard
 
 When you develop a game, you might need to add a new kind of asset to Lumberyard\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to Lumberyard\.
 
-For an overview of the Lumberyard asset system, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/userguide/assets/asset-system-programming.md)\.
+For an overview of the Lumberyard asset system, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/user-guide/features/assets/asset-system-programming.md)\.
 
 **Topics**
 + [Overview](#asset-pipeline-asset-type-adding-overview-of-steps)
@@ -101,7 +101,7 @@ productAssetType={511562BE-65A5-4538-A5F1-AC685366243E}
 version=1
 ```
 
-For more information, see [Configuring the Asset Pipeline](/docs/userguide/assets/configuring.md)\.
+For more information, see [Configuring the Asset Pipeline](/docs/user-guide/features/assets/configuring.md)\.
 
 ### Custom\-Built Assets {#asset-pipeline-asset-type-adding-custom-built-assets}
 

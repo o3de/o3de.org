@@ -14,7 +14,7 @@ This topic assumes that you have:
 + Lumberyard installed on a Windows computer
 + Remote Shader Compiler running on your Windows or macOS computer
 
-For more information about creating iOS apps, see [iOS Support](/docs/userguide/mobile/ios/intro.md)\.
+For more information about creating iOS apps, see [iOS Support](/docs/user-guide/features/platforms/ios/intro.md)\.
 
 **To run the Samples Project on an iOS device**
 
@@ -57,7 +57,7 @@ For more information about creating iOS apps, see [iOS Support](/docs/userguide/
       + On macOS: `lumberyard_version\dev\BinMac64\`
 
    1. In Asset Processor, verify that the **Status** is **Idle**\.
-![\[Idle status in Asset Processor.\]](/images/userguide/mobile/ios/asset-processor-status-idle.png)
+![\[Idle status in Asset Processor.\]](/images/user-guide/mobile/ios/asset-processor-status-idle.png)
 
 1. In a command line or Terminal window, do the following:
 

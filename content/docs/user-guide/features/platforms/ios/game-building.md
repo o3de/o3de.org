@@ -157,7 +157,7 @@ You must modify certain configuration files to allow your iOS app to connect to 
 Configure and build various targets of your app, depending on your mode of development\. You can create a debug, profile, or release build\.
 + Debug - Allows you to see your code running under a debugger\. This build is slowest to run\.
 + Profile - Allows you to debug your code, though some code may be optimized and difficult to trace\. This build runs faster on your iOS device\.
-+ Release - Includes all required asset and shader `.pak` files for a release version of your iOS game\. This build runs the fastest; however, special steps are required to generate the build\. For more information, see [Creating a Release App](/docs/userguide/mobile/ios/creating-release-app.md)\.
++ Release - Includes all required asset and shader `.pak` files for a release version of your iOS game\. This build runs the fastest; however, special steps are required to generate the build\. For more information, see [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)\.
 
 When you build code from a command line, you must take an additional step to run your app on an iOS device\. You use Xcode to open the `LumberyardiOSSDK.xcodeproj` project that is generated in the `lumberyard_version/dev/Solutions/` directory\. Then you select your device, follow the standard procedure to build and run on the device, set breakpoints, and inspect variables\.
 

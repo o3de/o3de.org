@@ -17,14 +17,14 @@ title: Build and bundle assets for release in Lumberyard
 To complete the procedures in this tutorial, you need the following:
 + Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
-+ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/userguide/assets/bundle/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
++ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/features/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
 ## Configure Lumberyard to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
 
 1. Open the Amazon Lumberyard Project Configurator\.
 
 1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.
-![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/userguide/assetbundler/asset-bundler-project-configurator-1.25.png)
+![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/user-guide/assetbundler/asset-bundler-project-configurator-1.25.png)
 
 1. Open a command prompt and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
 
@@ -179,7 +179,7 @@ If your content bundles are correct, the starter game will load and be playable\
 
 If objects are displayed but textures are missing, it probably means you forgot to export the level before packaging assets or didn't add the `level.pak` file as a seed\. You could also be missing some shaders \- run through the level and build the shader package again\.
 
-If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](/docs/userguide/assets/bundle/assets-resolving.md) and [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)\.
+If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](/docs/user-guide/features/packaging/asset-bundler/assets-resolving.md) and [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)\.
 
 **Note**
 When you run the release build, it creates a `User` subdirectory under your release build directory\. Be sure to delete this directory before shipping the release build\.
@@ -187,7 +187,7 @@ When you run the release build, it creates a `User` subdirectory under your rele
 ## Next Steps {#asset-bundler-tutorial-release-next-steps}
 
 Now that you've learned the basics of bundling assets for release, go on to further reading:
-+ Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/userguide/assets/bundle/tutorial-multiple-bundles.md)\.
-+ Explore the asset bundler functionality\. See [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/userguide/assets/bundle/command-line-reference.md)\.
-+ Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/userguide/assets/bundle/missing-dependency-scanner.md)
++ Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)\.
++ Explore the asset bundler functionality\. See [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
++ Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md)
 + To ask questions about the Asset Bundler and get support, see [the Amazon Lumberyard forums](https://forums.awsgametech.com/)\.
