@@ -129,7 +129,7 @@ For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
     
     `python.exe "AtomBuild\\dev\\cmake\\Tools\\generate_android_project.py" --dev-root "AtomBuild\\dev" --build-dir "arm" --third-party-path "AtomBuild\\3rdParty" --android-ndk-path "C:\\android-ndk-r21d" --android-sdk-path "C:\\Android\\Sdk" --android-ndk-version "21" --android-sdk-version 29 -g "BaseViewer" --include-apk-assets --asset-mode "LOOSE" --asset-type "es3" --signconfig-store-file "C:\\ly-android.keystore" --signconfig-store-password "android" --signconfig-key-alias android_key --signconfig-key-password android --gradle-install-path "C:\\gradle-5.6.4\\bin" --ninja-install-path "C:\\ninja-win" --cmake-install-path "C:\\CMake3-17-0\\bin"`  
         
-    *Note: the android build directory (--build_dir) is "arm" to stay within the file path limit.*
+    *Note: The Android build directory (--build_dir) value is "arm" to stay within the file path limit.*
 
 6. Navigate to the Android build folder and run *gradlew.bat assembleProfile* to build the profile target.
    
@@ -157,7 +157,7 @@ For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
 
 3. Open Terminal and navigate to the folder *../dev/*.
    
-4. Make sure you have proper permissions by running the following command in the Terminal: `chmod +x Tools/Python/python3.sh`
+4. Make sure that you have proper permissions by running the following command in the Terminal: `chmod +x Tools/Python/python3.sh`
    
 5. Create a folder named “mac_xcode” in the folder *../dev/* if it does not already exist.
    
