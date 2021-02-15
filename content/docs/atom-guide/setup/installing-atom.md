@@ -10,8 +10,10 @@ O3DE uses the Atom renderer. You can test out Atom features in the provided Atom
 [WRITER NOTE: TODO. Add links]
 For more information on using Atom in O3DE, see the AtomTest project in the O3DE section, and _Working with Atom in O3DE_. -->
 
-## Download Atom
-Download the Atom package from the ___ . *[WRITER NOTE: Atom is only released internally for now]* This package is for all supported platforms: PC, Android, Mac, and iOS. 
+## What's in the Atom package?
+<!-- Download the Atom package from the ___ . This package is for all supported platforms: PC, Android, Mac, and iOS.  
+
+*[WRITER NOTE: Atom is only released internally for now. Customers have received Atom packages seperately. These instructions will change once Atom is public,]*-->
 
 The Atom package includes the following files: 
 * *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*
