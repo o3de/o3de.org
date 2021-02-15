@@ -1,5 +1,5 @@
 ---
-description: ' Create custom events and parameters for use in Open 3D Engine''s Animation Editor. '
+description: ' Create custom events and parameters for use in Amazon Lumberyard''s Animation Editor. '
 title: Creating Custom Motion Events and Parameters Using C++
 ---
 # Creating Custom Motion Events and Parameters Using C\+\+ {#char-animation-editor-custom-events-parameters}
@@ -15,5 +15,5 @@ In Animation Editor, users can perform the following tasks with the events and p
 + Save the event and parameter information in an XML file that can be reloaded
 
 **Topics**
-+ [Creating Motion Events](/docs/user-guide/features/visualization/animation/character-editor/custom-events-parameters-creating-motion-events.md)
-+ [Creating EventData Types](/docs/user-guide/features/visualization/animation/character-editor/custom-events-parameters-creating-eventdata-types.md)
++ [Creating Motion Events](/docs/userguide/animation/character-editor/custom-events-parameters-creating-motion-events.md)
++ [Creating EventData Types](/docs/userguide/animation/character-editor/custom-events-parameters-creating-eventdata-types.md)

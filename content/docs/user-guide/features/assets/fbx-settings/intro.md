@@ -1,6 +1,6 @@
 ---
 description: ' Use FBX Settings to customize how static meshes, actors, PhysX colliders,
-  and motions stored in .fbx files are exported for Open 3D Engine. '
+  and motions stored in .fbx files are exported for Amazon Lumberyard. '
 title: Customize FBX asset export with FBX Settings
 ---
 # Customize FBX asset export with FBX Settings {#fbx-intro}
@@ -12,17 +12,17 @@ title: Customize FBX asset export with FBX Settings
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Meshes, actors, PhysX colliders, and motions created in third\-party content creation tools must be exported to a runtime format for your project\. To export your assets to O3DE, save the assets from your content application as `.fbx` files\. Then, place the `.fbx` files in one of the asset directories of your project\. O3DE uses `.fbx` as an intermediate file format because most modeling and animation applications can read and create `.fbx` files\.
+Meshes, actors, PhysX colliders, and motions created in third\-party content creation tools must be exported to a runtime format for your project\. To export your assets to Lumberyard, save the assets from your content application as `.fbx` files\. Then, place the `.fbx` files in one of the asset directories of your project\. Lumberyard uses `.fbx` as an intermediate file format because most modeling and animation applications can read and create `.fbx` files\.
 
 **Topics**
 + [FBX Settings introduction](#fbx-settings-intro)
-+ [FBX Settings export properties](/docs/user-guide/features/assets/fbx-settings/properties.md)
-+ [FBX Settings mesh export](/docs/user-guide/features/assets/fbx-settings/mesh-export.md)
-+ [FBX Settings actor export](/docs/user-guide/features/assets/fbx-settings/actor-export.md)
-+ [FBX Settings motion export](/docs/user-guide/features/assets/fbx-settings/motion-export.md)
-+ [FBX Settings PhysX export](/docs/user-guide/features/assets/fbx-settings/physx-export.md)
-+ [Multiple UV sets for meshes and actors](/docs/user-guide/features/assets/fbx-settings/multiple-uv-sets.md)
-+ [FBX soft naming conventions](/docs/user-guide/features/assets/fbx-settings/settings-soft-naming.md)
++ [FBX Settings export properties](/docs/userguide/fbx/properties.md)
++ [FBX Settings mesh export](/docs/userguide/fbx/mesh-export.md)
++ [FBX Settings actor export](/docs/userguide/fbx/actor-export.md)
++ [FBX Settings motion export](/docs/userguide/fbx/motion-export.md)
++ [FBX Settings PhysX export](/docs/userguide/fbx/physx-export.md)
++ [Multiple UV sets for meshes and actors](/docs/userguide/fbx/multiple-uv-sets.md)
++ [FBX soft naming conventions](/docs/userguide/fbx/settings-soft-naming.md)
 
 ## FBX Settings introduction {#fbx-settings-intro}
 

@@ -1,6 +1,6 @@
 ---
 description: ' Install Houdini plug-ins to create destruction assets for simulations
-  in Open 3D Engine with NVIDIA Blast. '
+  in Amazon Lumberyard with NVIDIA Blast. '
 title: Install SideFX Houdini plug-ins for NVIDIA Blast
 ---
 # Install SideFX Houdini plug\-ins for NVIDIA Blast {#nvidia-blast-install-houdini-plugin}
@@ -15,7 +15,7 @@ title: Install SideFX Houdini plug-ins for NVIDIA Blast
  To create NVIDIA Blast assets, you must install a set of plug\-ins and Houdini Digital Assets for SideFX Houdini\.
 
 **Note**
-NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
+NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
 **Contents**
@@ -75,4 +75,4 @@ The NVIDIA Blast installation for Houdini includes a tool shelf that you can ena
 
 1. From the **Shelf list** choose **Fracture tools for Blast** to add the shelf to the **Toolbar**\.
 
-![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-shelf-enable.png)
+![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/userguide/physx/blast/ui-blast-houdini-shelf-enable.png)

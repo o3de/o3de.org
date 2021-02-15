@@ -1,6 +1,6 @@
 ---
 description: ' Update your component so that it knows how to handle selection in the
-  Open 3D Engine viewport. '
+  Amazon Lumberyard viewport. '
 title: 'Step 5: Handle Selection in the Viewport'
 ---
 # Step 5: Handle Selection in the Viewport {#handling-selection-viewport}

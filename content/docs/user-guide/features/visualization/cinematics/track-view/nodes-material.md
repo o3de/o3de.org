@@ -1,5 +1,5 @@
 ---
-description: ' Use material nodes in O3DE Editor''s <guilabel>Track View</guilabel> editor to animate
+description: ' Use material nodes in Lumberyard Editor''s <guilabel>Track View</guilabel> editor to animate
   commonly used material properties. '
 title: Material Node
 ---
@@ -16,12 +16,12 @@ A recommended workflow is to select the material inside the **Material Editor** 
 
 **To add a Material node in the Track View**
 
-1. In O3DE Editor, choose **Tools**, **Material Editor**\.
+1. In Lumberyard Editor, choose **Tools**, **Material Editor**\.
 
 1. Navigate to the material that you want to animate\.
 
 1. Right\-click the selected material and choose **Copy Path to Clipboard**\. If the material is in a material group, select the group and copy the group name to the clipboard\.
-![\[Copy the material name path in the Material Editor.\]](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
+![\[Copy the material name path in the Material Editor.\]](/images/userguide/cinematics/cinematics-track-view-nodes-material-4.png)
 
 1. Choose **Tools**, **Track View**\.
 

@@ -1,12 +1,12 @@
 ---
-description: ' Control the playhead in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
+description: ' Control the playhead in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Controlling the Playhead
 ---
 # Controlling the Playhead {#cinematics-controlling-the-playhead}
 
 The Track View's **Play** toolbar contains the main controls for controlling the playhead for the sequence timeline\.
 
-![\[Control the playhead in the Track View.\]](/images/user-guide/cinematics/cinematics-track-view-editor-play-toolbar.png)
+![\[Control the playhead in the Track View.\]](/images/userguide/cinematics/cinematics-track-view-editor-play-toolbar.png)
 
 The **Play** toolbar has the following controls\.
 
@@ -20,7 +20,7 @@ The **Play** toolbar has the following controls\.
 |  **Stop**  |  Stops the playhead\. Click the drop\-down menu to specify the default **Stop** or **Stop with Hard Reset**, which returns the playhead to the start of the sequence\.  |
 |  **Pause**  |  During play mode, holds the playhead at the current point in the timeline\. When selected again, the sequence resumes playing\.  |
 |  **Go to end of sequence**  |  Playhead is moved to the **Out** marker of the sequence\.  For more information, see [Setting the In and Out Markers](#setting-the-in-out-markers)\.  |
-|  **Start Animation Recording**  |  Also known as record mode, you can manipulate objects within the level and the animation keys are automatically added to the sequence\.  For more information, see [Using Record Mode](/docs/user-guide/features/visualization/cinematics/using-record-mode.md)\.  |
+|  **Start Animation Recording**  |  Also known as record mode, you can manipulate objects within the level and the animation keys are automatically added to the sequence\.  For more information, see [Using Record Mode](/docs/userguide/cinematics/using-record-mode.md)\.  |
 |  **Start Auto Recording**  |  When selected, also activates record mode\. The playhead automatically moves in the timeline based on the setting specified in the drop\-down menu\.  The default is **1 sec**\. Other options include **1/2 sec**, **1/5 sec**, **1/10 sec**, **1/25** sec, **1/50** sec, and **1/100** sec\.  |
 | Loop |  During play mode, when the playhead reaches the **End** marker it returns to the **In** marker of the sequence and continues playing the sequence again\.  |
 |  **Playhead Location**  |  Shows information about the playhead's current location in the timeline and the assigned frame rate\.  |
@@ -38,7 +38,7 @@ The **In** and **Out** markers are small red triangles at the top of the sequenc
 
 For example, if a sequence is 300 frames long, and you right\-click at the 50 frame tick, the **In** marker will move to that spot\. If you right\-click at the 200 frame tick, the **Out** marker will move to that spot\.
 
-![\[Set the in and out markers in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-timeline.png)
+![\[Set the in and out markers in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-timeline.png)
 
 **Note**
 When you move the **In** and **Out** markers, this will apply the updated range to the **Go to start of sequence**, **Play**, **Go to end of Sequence**, and **Loop** settings\. For example, if you change the **In** marker to the two second mark, the **Go to start of sequence** icon will now move the playhead to the two second mark\.

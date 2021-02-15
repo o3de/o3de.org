@@ -1,6 +1,6 @@
 ---
 description: ' Add per vertex properties to fine tune your NVIDIA Cloth simulations
-  in Open 3D Engine. '
+  in Amazon Lumberyard. '
 title: Per vertex properties for cloth
 ---
 # Per vertex properties for cloth {#nvidia-cloth-vertex-data}
@@ -20,12 +20,12 @@ An **Inverse Mass** value of **0\.0** excludes the vertex from the cloth simulat
 Per cloth particle mass is calculated as `VertexMass = 1.0/InverseMass`\. For example, if the **Inverse Mass** value in the color channel is **0\.3**, then the resulting cloth particle mass value is `3.33`\. The smaller the **Inverse Mass** value, the greater the cloth particle mass\.
 
 **Motion Constraints**
-**Motion constraints** limit the movement of a simulated cloth particle to an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\. For a detailed explanation of **Motion Constraints**, see [Cloth simulation constraints](/docs/user-guide/features/interactivity/physics/nvidia-cloth/constraints.md)\.
+**Motion constraints** limit the movement of a simulated cloth particle to an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\. For a detailed explanation of **Motion Constraints**, see [Cloth simulation constraints](/docs/userguide/nvidia/cloth/constraints.md)\.
 The **Motion Constraints** per vertex property calculates the radius of the sphere\. **Motion Constraints** have a value range of **0\.0** to **1\.0**\.
 A **Motion Constraints** value of **0\.0** constrains the cloth particle to the corresponding unsimulated vertex\.
 
 **Backstop**
-**Backstop** prevents a simulated cloth particle from entering an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\. There are two **Backstop** properties that you can define per vertex, **Backstop Offset** and **Backstop Radius**\. For a detailed explanation of **Backstop**, see [Cloth simulation constraints](/docs/user-guide/features/interactivity/physics/nvidia-cloth/constraints.md)\.
+**Backstop** prevents a simulated cloth particle from entering an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\. There are two **Backstop** properties that you can define per vertex, **Backstop Offset** and **Backstop Radius**\. For a detailed explanation of **Backstop**, see [Cloth simulation constraints](/docs/userguide/nvidia/cloth/constraints.md)\.
 
 **Backstop Offset**
 **Backstop Offset** defines the backstop sphere's offset along the normal of the corresponding unsimulated vertex\. The **Backstop Offset** value range, **0\.0** to **1\.0**, is remapped to a range between **\-1\.0** and **1\.0**\.

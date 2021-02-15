@@ -1,5 +1,5 @@
 ---
-description: ' Use Record mode for a sequence in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
+description: ' Use Record mode for a sequence in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Using Record Mode
 ---
 # Using Record Mode {#cinematics-using-record-mode}
@@ -37,10 +37,10 @@ The following example uses the **Transform** component, but the same idea applie
 1. In a level, you have a component entity that is part of a sequence\.
 
 1. By default, the **Transform** component on the component entity already has tracks in the sequence for the **Position** and **Rotation** properties\.
-![\[Position and Rotation properties in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-1.png)
+![\[Position and Rotation properties in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-1.png)
 
 1. To maintain the current position and rotation of the game object, add animation keys for both tracks at `0` on the timeline\.
-![\[Create animation keys in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-2.png)
+![\[Create animation keys in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-2.png)
 
 1. Select and drag the playhead to a different location on the timeline\. This example moves the playhead to `1` second\.
 
@@ -53,7 +53,7 @@ The following example uses the **Transform** component, but the same idea applie
 1. Use the **Transform** tool to move the entity farther back into the level\. You can also enter different values in the **Transform** component properties\.
 
 1. View the timeline for the sequence\. New keys appear on the **Position** track at `1` second\.
-![\[View the newly added key in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-3.png)
+![\[View the newly added key in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-3.png)
 
 1. Move the playhead to where you want to set another animation key and then adjust the property values again\.
 
@@ -65,10 +65,10 @@ The following example shows how you can add animation keys automatically in the 
 1. In a level, you have a component entity with the **Camera** component that is part of your sequence\.
 
 1. By default, the **Transform** component on the component entity has tracks in the sequence for the **Position** and **Rotation** properties\.
-![\[Rotation and Position tracks in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-4.png)
+![\[Rotation and Position tracks in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-4.png)
 
 1. To maintain the current position and rotation of the game object, specify the animation keys on both tracks at `0` on the timeline\.
-![\[Create animation keys in the timeline for a sequence for a camera entity.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-5.png)
+![\[Create animation keys in the timeline for a sequence for a camera entity.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-5.png)
 
 1. Move the playhead to a different location on the timeline\.
 
@@ -79,7 +79,7 @@ The following example shows how you can add animation keys automatically in the 
 1. In the left\-corner of the viewport window, right\-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence\. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***\.
 
 1. While you are viewing from the perspective of the camera, when you move in the level, the camera will move as well\. This includes any rotations\. In record mode, this adds animation keys at the current playhead location\.
-![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)
+![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/userguide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)
 
 1. Move the playhead when you need to set another animation key in the timeline and then move the camera view around in the level\.
 

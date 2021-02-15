@@ -1,5 +1,5 @@
 ---
-description: ' Capture image frames in Open 3D Engine with render output, a capture track,
+description: ' Capture image frames in Amazon Lumberyard with render output, a capture track,
   or console variables. '
 title: Capturing Image Frames
 ---
@@ -18,7 +18,7 @@ You can use the **Render Output** tool in the Track View to capture image frames
 
 **To capture image frames using Render Output**
 
-1. In O3DE Editor, choose **Tools**, **Track View**\.
+1. In Lumberyard Editor, choose **Tools**, **Track View**\.
 
 1. In the Track View, click **Tools**, **Render Output**\.
 
@@ -31,7 +31,7 @@ You may need to adjust the aspect ratio for captured image frames\.
 
 **To change the aspect ratio for image frame captures**
 
-1. In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
+1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
 
 1. In **Preferences**, click **Viewports**\.
 
@@ -43,7 +43,7 @@ You can capture image frames when a sequence is played in game mode\.
 
 **To capture image frames using a capture track**
 
-1. In O3DE Editor, choose **Tools**, **Track View**\.
+1. In Lumberyard Editor, choose **Tools**, **Track View**\.
 
 1. In the Track View, right\-click the **Director** node and choose **Add Track**, **Capture**\.
 
@@ -55,7 +55,7 @@ You can capture image frames when a sequence is played in game mode\.
 
 ## Capturing Image Frames with Console Variables {#cinematics-image-capture-cvar}
 
-Capture image frames with the following console variables\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
+Capture image frames with the following console variables\. For more information, see [Using the Console Window](/docs/userguide/console-intro.md)\.
 
 
 **Capture Image Frames Console Variables**

@@ -1,5 +1,5 @@
 ---
-description: ' Use visual debugging on destruction simulations in Open 3D Engine with NVIDIA
+description: ' Use visual debugging on destruction simulations in Amazon Lumberyard with NVIDIA
   Blast. '
 title: NVIDIA Blast visual debugger
 ---
@@ -28,4 +28,4 @@ title: NVIDIA Blast visual debugger
 
 In the below example, as the rabbit drops, the bonds between the fractured chunks are shown as green lines\. On impact, the bonds change to orange as they weaken and red when they break\.
 
-![\[Debug visualization for NVIDIA Blast.\]](/images/user-guide/physx/blast/anim-nvidia-blast-debug.gif)
+![\[Debug visualization for NVIDIA Blast.\]](/images/userguide/physx/blast/anim-nvidia-blast-debug.gif)

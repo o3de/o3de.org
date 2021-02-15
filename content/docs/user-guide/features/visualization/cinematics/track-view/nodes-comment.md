@@ -1,5 +1,5 @@
 ---
-description: ' Use the Comment node in O3DE''s <guilabel>Track View</guilabel> editor to add comments
+description: ' Use the Comment node in Lumberyard''s <guilabel>Track View</guilabel> editor to add comments
   to your track view sequence. '
 title: Comment Node
 ---

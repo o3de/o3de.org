@@ -1,5 +1,5 @@
 ---
-description: ' Motion constraints for NVIDIA Cloth in Open 3D Engine. '
+description: ' Motion constraints for NVIDIA Cloth in Amazon Lumberyard. '
 title: Cloth simulation constraints
 ---
 # Cloth simulation constraints {#nvidia-cloth-constraints}
@@ -11,7 +11,7 @@ title: Cloth simulation constraints
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Constraints limit the movement of cloth particles to prevent mesh penetration and create more predictable results from cloth simulation\. Open 3D Engine has two types of cloth constraints: **Motion constraints** and **Backstop**\.
+Constraints limit the movement of cloth particles to prevent mesh penetration and create more predictable results from cloth simulation\. Amazon Lumberyard has two types of cloth constraints: **Motion constraints** and **Backstop**\.
 
 **Motion constraints** \- Constrains a simulated cloth particle within an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\.
 
@@ -29,7 +29,7 @@ If no vertex color stream is present, then a default value of **1\.0** is used f
 
  The diagram below visualizes Motion constraints\.
 
-![\[Motion constraint diagram for cloth simulation\]](/images/user-guide/physx/cloth/cloth-motion-constraints-diagram.png)
+![\[Motion constraint diagram for cloth simulation\]](/images/userguide/physx/cloth/cloth-motion-constraints-diagram.png)
 
 ## Backstop {#cloth-backstop-diagram}
 
@@ -49,4 +49,4 @@ The Backstop Radius vertex color channel has values in the range of **0\.0** to 
 
  The diagram below visualizes Backstop\.
 
-![\[Backstop diagram for cloth simulation\]](/images/user-guide/physx/cloth/cloth-backstop-diagram.png)
+![\[Backstop diagram for cloth simulation\]](/images/userguide/physx/cloth/cloth-backstop-diagram.png)

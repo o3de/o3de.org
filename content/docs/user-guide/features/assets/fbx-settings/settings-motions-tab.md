@@ -16,7 +16,7 @@ You can process animation sequences from a single `.fbx` file as **Motions**\. E
 **Important**
 Animation in your `.fbx` should be *baked*, that is, each animated channel should be keyed at every frame\. Third\-party animation applications might use functions and simulations to interpolate between keyframes and the results are not exported from your `.fbx` file unless the animation is baked into the animation channels\.
 
-For more information, see [Animation Editor File Types](/docs/user-guide/features/visualization/animation/character-editor/file-types.md)\.
+For more information, see [Animation Editor File Types](/docs/userguide/animation/character-editor/file-types.md)\.
 
 **Contents**
 + [Motions tab properties](#fbx-settings-motions-tab-properties)
@@ -29,7 +29,7 @@ For more information, see [Animation Editor File Types](/docs/user-guide/feature
 
 ## Motions tab properties {#fbx-settings-motions-tab-properties}
 
-![\[The FBX Settings Motions tab.\]](/images/user-guide/fbx/ui-fbx-settings-motions-tab-1.25.png)
+![\[The FBX Settings Motions tab.\]](/images/userguide/fbx/ui-fbx-settings-motions-tab-1.25.png)
 
 ****Add another motion****
 Add an animation to export as a `.motion` from the `.fbx` file\.
@@ -51,7 +51,7 @@ Modifiers add specialized options for processing assets\. Choose the **Add Modif
 
 ## Additive motion modifier {#w31aac15b9c11c15c15}
 
-![\[The FBX Settings Motion tab Additive motion modifier.\]](/images/user-guide/fbx/ui-fbx-settings-motion-modifier-additive-motion-1.25.png)
+![\[The FBX Settings Motion tab Additive motion modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-additive-motion-1.25.png)
 
 Export the animation as an additive motion\. Additive motions can be layered on top of base motions without affecting the base motion functionality\.
 
@@ -62,13 +62,13 @@ For more information, see
 
 ## Comment modifier {#w31aac15b9c11c15c17}
 
-![\[The FBX Settings Motion tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
+![\[The FBX Settings Motion tab Comment modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\.
 
 ## Compression Settings modifier {#w31aac15b9c11c15c19}
 
-![\[The FBX Settings Motions tab Compression settings modifier.\]](/images/user-guide/fbx/ui-fbx-settings-motion-modifier-compression-settings-1.25.png)
+![\[The FBX Settings Motions tab Compression settings modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-compression-settings-1.25.png)
 
 Reduce asset size by compressing animation\. The **Compression settings** modifier sets tolerances for keyframe values on each transform type\. If the change in a keyframe's value from the preceding keyframe is smaller than the tolerance value set in this modifier, the keyframe is removed\.
 
@@ -83,13 +83,13 @@ Specify the maximum error tolerance allowed in scale\. Valid values range from a
 
 ## Coordinate system change modifier {#w31aac15b9c11c15c21}
 
-![\[The FBX Settings Motions tab Coordinate system change modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
+![\[The FBX Settings Motions tab Coordinate system change modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
 
 Modify the coordinate system of the motion\. Third\-party content creation applications and game engines use varying coordinate systems with content applications often rotating the direction of the forward axis\. The **Facing direction** property can be set to rotate the motion 180 degrees around its up axis to account for this difference\. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged\.
 
 ## Motion range modifier {#w31aac15b9c11c15c23}
 
-![\[The FBX Settings Motions tab Motion range modifier.\]](/images/user-guide/fbx/ui-fbx-settings-motion-modifier-motion-range-1.25.png)
+![\[The FBX Settings Motions tab Motion range modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-motion-range-1.25.png)
 
 Set the range of the animation to be exported from the `.fbx` file\.
 
@@ -101,6 +101,6 @@ Specify the end keyframe of the animation to export\.
 
 ## Scale motion modifier {#w31aac15b9c11c15c25}
 
-![\[The FBX Settings Motions tab Scale motion modifier.\]](/images/user-guide/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
+![\[The FBX Settings Motions tab Scale motion modifier.\]](/images/userguide/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
 
-The **Scale factor** modifier sets a uniform scale for the **Motion**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than O3DE\.
+The **Scale factor** modifier sets a uniform scale for the **Motion**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than Lumberyard\.

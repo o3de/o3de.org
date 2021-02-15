@@ -1,6 +1,6 @@
 ---
 description: ' Create sequences for animations using the <guilabel>Track View</guilabel> editor''s toolbars
-  in Open 3D Engine. '
+  in Amazon Lumberyard. '
 title: Track View Editor Toolbars
 ---
 # Track View Editor Toolbars {#cinematics-track-view-editor-toolbars}
@@ -17,9 +17,9 @@ See the following main sections of the Track View:
 
 1. ****Curve Editor**** - Pane for controlling keys and their interpolation for all sequence nodes\. The ****Curve Editor**** provides more control over easing in or out of curves, setting some curves to be linear, and so on, depending on your animation requirements\.
 
-   For more information, see [Using Animation Curves](/docs/user-guide/features/visualization/cinematics/track-view/editor-animation-curves.md)\.
+   For more information, see [Using Animation Curves](/docs/userguide/cinematics/track-view/editor-animation-curves.md)\.
 
 **Note**
 You can pause over buttons in the Track View to view their descriptions\.
 
-![\[Track View toolbar.\]](/images/user-guide/cinematics/cinematics-trackview-editor.png)
+![\[Track View toolbar.\]](/images/userguide/cinematics/cinematics-trackview-editor.png)

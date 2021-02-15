@@ -1,12 +1,12 @@
 ---
-description: ' Configure global settings for the PhysX system in Open 3D Engine. '
+description: ' Configure global settings for the PhysX system in Amazon Lumberyard. '
 title: Global Configuration
 ---
 # Global Configuration {#physx-configuration-global}
 
 On the **Global Configuration** tab, you can configure world settings and editor settings\.
 
-![\[PhysX Global Configuration tab\]](/images/user-guide/physx/physx-configuration-1.png)
+![\[PhysX Global Configuration tab\]](/images/userguide/physx/physx-configuration-1.png)
 
 ## World Configuration {#physx-configuration-global-world}
 
@@ -18,7 +18,7 @@ The following table describes the settings for **World Configuration**\.
 | Property | Description |
 | --- | --- |
 |  **Max Time Step** `m_maxTimeStep`  |  Specifies the largest time step that the simulation can process\. This setting prevents instability in the simulation if `m_fixedTimeStep` is not set\. It also prevents the simulation from taking too long\. If the time between frames is greater than `m_maxTimeStep`, the time is limited to this value\. Specify small increments\.  The default is `0.05` \(1/20th of a second\)\.  |
-|  **Fixed Time Step** `m_fixedTimeStep`  |  Controls the frequency of the interval at which O3DE does the simulation\. The default is `0.017` \(1/60th of a second\)\.    A lower value results in a more accurate simulation, but at a higher runtime cost\.   Higher values can cause results that are less stable\.   If this value is set to `0`, the simulation does not use the fixed time and uses the time between frames, which can vary\.   If the frame time is greater than this value, O3DE splits the time to the number of steps yielded by the following calculation: <pre>frame_time/m_fixedTimeStep</pre>     |
+|  **Fixed Time Step** `m_fixedTimeStep`  |  Controls the frequency of the interval at which Lumberyard does the simulation\. The default is `0.017` \(1/60th of a second\)\.    A lower value results in a more accurate simulation, but at a higher runtime cost\.   Higher values can cause results that are less stable\.   If this value is set to `0`, the simulation does not use the fixed time and uses the time between frames, which can vary\.   If the frame time is greater than this value, Lumberyard splits the time to the number of steps yielded by the following calculation: <pre>frame_time/m_fixedTimeStep</pre>     |
 | Gravity |  Gravity vector in the world\.  The default **X**, **Y**, and **Z** values are `0.0`, `0.0`, and `-9.81`\.  |
 | Raycast Buffer Size |  Maximum number of hits that can be returned from a raycast query\.  The default is `32`\.  |
 | Shapecast Buffer Size |  Maximum number of hits that can be returned from a shapecast query\.  The default is `32`\.  |
@@ -28,7 +28,7 @@ The following table describes the settings for **World Configuration**\.
 
 ## Editor Configuration {#physx-configuration-global-editor}
 
-The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/user-guide/features/components/physx-rigid-body-physics.md) component\.
+The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md) component\.
 
 
 ****
@@ -39,4 +39,4 @@ The following options relate to the **Debug Draw COM** \(center of mass\) option
 | Debug Draw Center of Mass Color  |  The color of the debug draw circle that represents the center of mass\. To specify a color, enter its RGB values in the text box\. The color of the icon next to the text box shows the color that you entered\. The default values are `255`, `0`, `0` \(red\)\.  |
 
 **Note**
-These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/features/gems/physx-debug.md) gem\.
+These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md) gem\.

@@ -4,15 +4,15 @@ title: 'Animation Editor File Types'
 ---
 # Animation Editor File Types {#char-animation-editor-file-types}
 
-When you import `.fbx` files from your DCC to O3DE Editor, Asset Processor creates files that you use in the **Animation Editor**\. The following example shows how the file types are created and modified\. For more information about processing files for character and animations, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
+When you import `.fbx` files from your DCC to Lumberyard Editor, Asset Processor creates files that you use in the **Animation Editor**\. The following example shows how the file types are created and modified\. For more information about processing files for character and animations, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
 
-![\[See an overview of how Animation Editor files are created and processed in O3DE.\]](/images/user-guide/actor-animation/animation-editor-asset-processor-files.png)
+![\[See an overview of how Animation Editor files are created and processed in Lumberyard.\]](/images/userguide/actor-animation/animation-editor-asset-processor-files.png)
 
 The following are file types used in the **Animation Editor**:
 
 ## Files Types {#file-types-created-from-asset-processor}
 
-When you import `.fbx` files into O3DE, Asset Processor generates the following file types used for the **Animation Editor**:
+When you import `.fbx` files into Lumberyard, Asset Processor generates the following file types used for the **Animation Editor**:
 + `.actor` files are created when the `.fbx` file has at least one bone\. You want to use your character's skinned mesh as your `.actor` file\. The `.actor` file is the character that displays the animation\.
 + `.motion` files are created when the `.fbx` file with a bone has at least one keyframe\. If your `.fbx` file has animation keyframes, a `.motion` file is created\. Your `.motion` files contain the animations that are added to your motion set before you build your animation graph\.
 + `.mtl` files are created when the `.fbx` file has at least one material, which is the case for most DCC tools\. If you make changes to the material in the **Material Editor**, the `.mtl` file is no longer a child of the `.fbx` file and the `.mtl` file is a sibling in the source directory of the `.fbx` file\. You can make other changes to the `.mtl` file with a text editor or the **Material Editor**\.

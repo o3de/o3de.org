@@ -1,5 +1,5 @@
 ---
-description: ' Programming notes for PhysX worlds in Open 3D Engine. '
+description: ' Programming notes for PhysX worlds in Amazon Lumberyard. '
 title: PhysX World Programming Notes
 ---
 # PhysX World Programming Notes {#physx-configuration-physx-world-programming-notes}

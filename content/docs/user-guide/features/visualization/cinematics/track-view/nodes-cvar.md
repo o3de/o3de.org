@@ -1,6 +1,6 @@
 ---
 description: ' Use the console variable node to use and animate console variables
-  in a track view sequence of a O3DE game. '
+  in a track view sequence of a Lumberyard game. '
 title: Console Variable Node
 ---
 # Console Variable Node {#cinematics-track-view-nodes-cvar}
@@ -11,7 +11,7 @@ Use the **Console Variable** node to use and animate console variables in a trac
 
 1. In the Track View, right\-click either the sequence \(top node\) or the **Director** node in the tree as applicable, and then click **Add Console Variable**\. Type a name for it and click **OK**\.
 
-1. At the bottom of **O3DE Editor**, right\-click the text box in the **Console** window, which opens up the **Console Variables** window that displays a list of all available console variables\.
+1. At the bottom of **Lumberyard Editor**, right\-click the text box in the **Console** window, which opens up the **Console Variables** window that displays a list of all available console variables\.
 
 1. Pause on the desired console variable to get a tool tip that gives a description and valid values to use\.
 

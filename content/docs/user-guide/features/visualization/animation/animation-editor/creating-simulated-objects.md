@@ -1,5 +1,5 @@
 ---
-description: ' Create simulated objects that move with your character (actor) in Open 3D Engine. '
+description: ' Create simulated objects that move with your character (actor) in Amazon Lumberyard. '
 title: Creating Simulated Objects
 ---
 # Creating Simulated Objects {#animation-editor-creating-simulated-objects}
@@ -32,8 +32,8 @@ For more information, see [Step 1: Creating a Motion Set](/docs/userguide/animat
 
 **Topics**
 + [Prerequisites](#prerequisites-for-creating-simulated-objects)
-+ [Setting Up a Simulated Object](/docs/user-guide/features/visualization/animation/set-up-a-simulated-object.md)
-+ [Setting Up the Simulated Object Anim Graph Node](/docs/user-guide/features/visualization/animation/set-up-simulated-object-anim-graph-node.md)
-+ [Setting Up Simulated Object Colliders](/docs/user-guide/features/visualization/animation/set-up-simulated-object-collider.md)
-+ [Using Debug Mode to Refine the Simulation](/docs/user-guide/features/visualization/animation/refine-simulationg-using-debug-mode.md)
-+ [Using Parameters to Adjust the Animation During Runtime](/docs/user-guide/features/visualization/animation/use-parameters-to-adjust-animation-during-runtime.md)
++ [Setting Up a Simulated Object](/docs/userguide/set-up-a-simulated-object.md)
++ [Setting Up the Simulated Object Anim Graph Node](/docs/userguide/set-up-simulated-object-anim-graph-node.md)
++ [Setting Up Simulated Object Colliders](/docs/userguide/set-up-simulated-object-collider.md)
++ [Using Debug Mode to Refine the Simulation](/docs/userguide/refine-simulationg-using-debug-mode.md)
++ [Using Parameters to Adjust the Animation During Runtime](/docs/userguide/use-parameters-to-adjust-animation-during-runtime.md)

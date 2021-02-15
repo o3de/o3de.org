@@ -1,5 +1,5 @@
 ---
-description: ' Use the Rin Locomotion sample level to learn how the O3DE Animation Editor
+description: ' Use the Rin Locomotion sample level to learn how the Lumberyard Animation Editor
   uses actors, motion sets, and animation graphs to control character behavior. '
 title: Advanced_RinLocomotion Sample
 ---
@@ -16,7 +16,7 @@ This sample level showcases the Rin character in a simplified environment and de
 
 The Advanced\_RinLocomotion sample level is located in the `\dev\SamplesProject\Samples\Advanced_RinLocomotion` directory\. The assets are located in the `\dev\SamplesProject\AnimationSamples\Advanced_RinLocomotion` directory\.
 
-Once the sample level is open, in the **Perspective** viewport in O3DE Editor, use the following keyboard keys and mouse controls:
+Once the sample level is open, in the **Perspective** viewport in Lumberyard Editor, use the following keyboard keys and mouse controls:
 + To start the level, press **Ctrl\+G**\.
 + To move forward, left, backward, and right, press the **W**, **A**, **S**, and **D** keys, respectively\.
 + To look around, move the pointer\.
@@ -33,8 +33,8 @@ You can also use a controller connected to your computer:
 + To zoom out the camera, press the left trigger\.
 + To snap the camera to the back of the character, press the right joystick\.
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-01.png)
+![\[Image NOT FOUND\]](/images/userguide/actor-animation/advanced-rin-locomotion-sample-01.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-02.png)
+![\[Image NOT FOUND\]](/images/userguide/actor-animation/advanced-rin-locomotion-sample-02.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-03.png)
+![\[Image NOT FOUND\]](/images/userguide/actor-animation/advanced-rin-locomotion-sample-03.png)

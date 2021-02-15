@@ -1,5 +1,5 @@
 ---
-description: ' Create dynamic joint constraints between entities in Open 3D Engine with
+description: ' Create dynamic joint constraints between entities in Amazon Lumberyard with
   PhysX joints. '
 title: Dynamic joints with PhysX
 ---
@@ -9,7 +9,7 @@ PhysX joint components constrain the position and orientation of one PhysX rigid
 
 The example image below is a simple demonstration of the three joint types\. In each example, the blue sphere is the follower rigid body\. The joints are centered on their respective follower rigid bodies\. The red sphere is the leader rigid body\. For clarity, the ball joint and hinge joint follower rigid bodies are set to fixed positions, but they can be dynamic rigid bodies like the fixed joint example\. Also note that the joints can be offset from the follower rigid body using the **Local Position** and **Local Rotation** properties of the joint component\.
 
-![\[PhysX Joints example\]](/images/user-guide/physx/physx/anim-joints-example.gif)
+![\[PhysX Joints example\]](/images/userguide/physx/physx/anim-joints-example.gif)
 
 **Contents**
 + [PhysX joint types](#physx-joint-types)
@@ -28,9 +28,9 @@ The example image below is a simple demonstration of the three joint types\. In 
 ## PhysX joint types {#physx-joint-types}
 
 See the linked component reference below for information on the three PhysX joint types:
-+ [ PhysX Ball Joint component reference ](/docs/user-guide/features/components/physx-ball-joint.md) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes\.
-+ [ PhysX Fixed Joint component reference ](/docs/user-guide/features/components/physx-fixed-joint.md) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis\.
-+ [ PhysX Hinge Joint component reference ](/docs/user-guide/features/components/physx-hinge-joint.md) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis\.
++ [ PhysX Ball Joint component reference ](/docs/userguide/components/physx-ball-joint.md) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes\.
++ [ PhysX Fixed Joint component reference ](/docs/userguide/components/physx-fixed-joint.md) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis\.
++ [ PhysX Hinge Joint component reference ](/docs/userguide/components/physx-hinge-joint.md) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis\.
 
 ## PhysX joint setup {#physx-joint-setup}
 
@@ -75,7 +75,7 @@ Joint components have an **Edit** button that enables component edit mode\. In c
 
 **Applies to:** All Joints
 
-![\[PhysX joint position mode\]](/images/user-guide/physx/physx/ui-physx-joint-position-mode-1.27.png)
+![\[PhysX joint position mode\]](/images/userguide/physx/physx/ui-physx-joint-position-mode-1.27.png)
 
 Position mode displays a translate gizmo that you can click and drag to adjust the **Local Position** of the joint relative to the entity transform\.
 
@@ -83,7 +83,7 @@ Position mode displays a translate gizmo that you can click and drag to adjust t
 
 **Applies to:** All Joints
 
-![\[PhysX joint rotation mode\]](/images/user-guide/physx/physx/ui-physx-joint-rotation-mode-1.27.png)
+![\[PhysX joint rotation mode\]](/images/userguide/physx/physx/ui-physx-joint-rotation-mode-1.27.png)
 
 Rotation mode displays a rotation gizmo that you can click and drag on any axis to adjust the **Local Rotation** of the joint relative to the entity transform\.
 
@@ -91,7 +91,7 @@ Rotation mode displays a rotation gizmo that you can click and drag on any axis 
 
 **Applies to:** Ball Joint and Hinge Joint
 
-![\[PhysX joint snap position mode\]](/images/user-guide/physx/physx/ui-physx-joint-snap-position-mode-1.27.png)
+![\[PhysX joint snap position mode\]](/images/userguide/physx/physx/ui-physx-joint-snap-position-mode-1.27.png)
 
 Snap position mode displays a highlight bounding box and target when you hover over an entity\. Click the entity to snap the joint **Local Position** to the highlighted entity's position\. If **Select Lead on Snap** is enabled in the joint properties, the entity will be assigned to the joint's **Lead Entity** property\. Any entity can be selected except the follower entity\.
 
@@ -99,7 +99,7 @@ Snap position mode displays a highlight bounding box and target when you hover o
 
 **Applies to:** Ball Joint
 
-![\[PhysX joint snap rotation mode\]](/images/user-guide/physx/physx/ui-physx-joint-snap-rotation-mode-1.27.png)
+![\[PhysX joint snap rotation mode\]](/images/userguide/physx/physx/ui-physx-joint-snap-rotation-mode-1.27.png)
 
 Snap rotation mode displays a highlight bounding box and target when you hover over an entity\. Click the entity to snap the joint **Local Rotation** to the highlighted entity's rotation\. Any entity can be selected except the leader entity\.
 
@@ -107,7 +107,7 @@ Snap rotation mode displays a highlight bounding box and target when you hover o
 
 **Applies to:** All Joints
 
-![\[PhysX joint maximum force and maximum torque modes\]](/images/user-guide/physx/physx/ui-physx-joint-breakable-properties-mode-1.27.png)
+![\[PhysX joint maximum force and maximum torque modes\]](/images/userguide/physx/physx/ui-physx-joint-breakable-properties-mode-1.27.png)
 
 Maximum force and maximum torque modes display a gray box that you can click and drag to adjust the **Maximum Force** and **Maximum Torque** properties\. The maximum force and maximum torque modes and properties are available only when the **Breakable** property is enabled for the joint\.
 
@@ -115,7 +115,7 @@ Maximum force and maximum torque modes display a gray box that you can click and
 
 **Applies to:** Ball Joint
 
-![\[PhysX joint swing limits mode\]](/images/user-guide/physx/physx/ui-physx-joint-swing-limit-mode-1.27.png)
+![\[PhysX joint swing limits mode\]](/images/userguide/physx/physx/ui-physx-joint-swing-limit-mode-1.27.png)
 
 Swing limits mode displays a ring gizmo at the local root of the joint that you can use to rotate the swing limits on the joint's x\-axis, and a scale gizmo that you can use to scale the swing limits uniformly or non\-uniformly on the joint's y\- and z\-axes\. Swing limits mode is available only when the **Limits** property is enabled for the ball joint component\.
 
@@ -123,7 +123,7 @@ Swing limits mode displays a ring gizmo at the local root of the joint that you 
 
 **Applies to:** Hinge Joint
 
-![\[PhysX joint twist limits mode\]](/images/user-guide/physx/physx/ui-physx-joint-twist-limit-mode-1.27.png)
+![\[PhysX joint twist limits mode\]](/images/userguide/physx/physx/ui-physx-joint-twist-limit-mode-1.27.png)
 
 Twist limits mode displays two ring gizmos that you can click and drag to adjust the **Positive angular limit** and **Negative angular limit** properties\. The red ring adjusts the positive limit and the green ring adjusts the negative limit\. Twist limits mode is available only when the **Limits** property is enabled for the hinge joint component\.
 
@@ -131,7 +131,7 @@ Twist limits mode displays two ring gizmos that you can click and drag to adjust
 
 **Applies to:** Ball Joint and Hinge Joint
 
-![\[PhysX joint stiffness and damping modes\]](/images/user-guide/physx/physx/ui-physx-joint-soft-limit-properties-mode-1.27.png)
+![\[PhysX joint stiffness and damping modes\]](/images/userguide/physx/physx/ui-physx-joint-soft-limit-properties-mode-1.27.png)
 
 Stiffness and damping modes display a gray box that you can click and drag to adjust the **Stiffness** and **Damping** properties\. The stiffness and damping modes and properties are available only when the **Soft limit** property is enabled for the joint\.
 

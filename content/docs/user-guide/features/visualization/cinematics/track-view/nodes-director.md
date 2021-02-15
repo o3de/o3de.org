@@ -1,5 +1,5 @@
 ---
-description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
+description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
 title: Director (Scene) Node
 ---
 # Director \(Scene\) Node {#cinematics-track-view-nodes-director}
@@ -8,16 +8,16 @@ The **Director \(Scene\)** node includes a camera track that specifies the activ
 
 **To add a Director node in the Track View**
 
-1. In O3DE Editor, choose **Tools**, **Track View**\.
+1. In Lumberyard Editor, choose **Tools**, **Track View**\.
 
-1. In the Track View, click the **Add Sequence** ![\[Image NOT FOUND\]](/images/user-guide/cinematics/cinematics_add_sequence_icon.png) icon\.
+1. In the Track View, click the **Add Sequence** ![\[Image NOT FOUND\]](/images/userguide/cinematics/cinematics_add_sequence_icon.png) icon\.
 
 1. In the **Add New Sequence** dialog box, enter a name for your sequence and click **OK**\.
 
 1. Right\-click your sequence and choose **Add Director \(Scene\) Node**\.
 
 1. Right\-click the **Director** node and click **Add Track**\.
-![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/user-guide/cinematics/cinematics-trackview-nodes-director.png)
+![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/userguide/cinematics/cinematics-trackview-nodes-director.png)
 
 1. Select the track and double\-click to position the key on its highlighted row in the timeline\.
 

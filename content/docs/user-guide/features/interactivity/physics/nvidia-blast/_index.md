@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Blast gem to simulate destruction in your Open 3D Engine
+description: ' Use the NVIDIA Blast gem to simulate destruction in your Amazon Lumberyard
   project. '
 title: NVIDIA Blast gem
 ---
@@ -12,13 +12,13 @@ title: NVIDIA Blast gem
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fidelity destruction simulation in Open 3D Engine\.
+The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fidelity destruction simulation in Amazon Lumberyard\.
 
 **Note**
-NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
+NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
-For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/intro.md)\.
+For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/intro.md)\.
 
 **Contents**
 + [Functionality provided by the NVIDIA Blast gem](#nvidia-blast-functionality)
@@ -29,7 +29,7 @@ For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA B
 The NVIDIA Blast gem provides the following:
 + **Blast Family Mesh Data** component that adds NVIDIA Blast meshes to an entity\.
 + **Blast Family** component that enables NVIDIA Blast simulation for an entity\.
-+ **Blast Configuration** editor available in the **Tools** menu in O3DE Editor\.
++ **Blast Configuration** editor available in the **Tools** menu in Lumberyard Editor\.
 + **Blast Materials** to set physical properties for NVIDIA Blast assets available in **Asset Editor**\.
 + **Blast Script Canvas** nodes to script destruction simulation\.
 + Plug\-ins and Houdini Digital Assets for SideFX Houdini to fracture geometry and export NVIDIA Blast assets\.
@@ -44,7 +44,7 @@ To enable the NVIDIA Blast gem, do the following:
    + **LmbrCentral**
    + **PhysX**
 **Important**
-Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/user-guide/features/assets/builder/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
+Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/userguide/assets/process/python/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
 
 1. Configure your project\. Use the following command\.
 

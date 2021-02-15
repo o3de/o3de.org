@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Open 3D Engine
+description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Amazon Lumberyard
   project. '
 title: NVIDIA Cloth gem
 ---
@@ -12,9 +12,9 @@ title: NVIDIA Cloth gem
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Open 3D Engine\.
+Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Amazon Lumberyard\.
 
-For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
+For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/userguide/nvidia/cloth/intro.md)\.
 
 ## Functionality provided by the NVIDIA Cloth gem {#nvidia-cloth-functionality}
 
@@ -30,7 +30,7 @@ The NVIDIA Cloth gem provides the following:
 To enable the NVIDIA Cloth gem, do the following:
 
 **Note**
-By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU accelerated simulation for NVIDIA Cloth, follow the installation instructions here: [GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/features/interactivity/physics/nvidia-cloth/gpu.md)
+By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU accelerated simulation for NVIDIA Cloth, follow the installation instructions here: [GPU cloth simulation with NVIDIA CUDA](/docs/userguide/nvidia/cloth/gpu.md)
 
 1. Use [Project Configurator](/docs/userguide/configurator/projects.md) to add the **NVIDIA Cloth** gem to your project\. The **NVIDIA Cloth** gem requires the following gems as dependencies:
    + **LmbrCentral**
@@ -48,4 +48,4 @@ By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU acce
    lmbr_waf build_win_x64_vs2019_profile -p all --progress
    ```
 
-For more information on gems, see the [Gems system documentation](/docs/user-guide/features/gems/_index.md)\.
+For more information on gems, see the [Gems system documentation](/docs/userguide/gems/builtin/s.md)\.

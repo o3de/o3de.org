@@ -1,5 +1,5 @@
 ---
-description: ' Use the Shadows Setup node in Open 3D Engine''s <guilabel>Track View</guilabel> editor to add
+description: ' Use the Shadows Setup node in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor to add
   or remove sun shadow maps over several frames. '
 title: Shadows Setup Node
 ---

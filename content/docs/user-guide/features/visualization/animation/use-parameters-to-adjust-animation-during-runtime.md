@@ -1,6 +1,6 @@
 ---
 description: ' Set up parameters to customize the animation of the simulated object
-  in Open 3D Engine. '
+  in Amazon Lumberyard. '
 title: Using Parameters to Adjust the Animation During Runtime
 ---
 # Using Parameters to Adjust the Animation During Runtime {#use-parameters-to-adjust-animation-during-runtime}
@@ -25,7 +25,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
 **Example**
 
    Your parameter should look like the following\.
-![\[Create a stiffness parameter.\]](/images/user-guide/actor-animation/simulated-objects-25.png)
+![\[Create a stiffness parameter.\]](/images/userguide/actor-animation/simulated-objects-25.png)
 
 1. Click **Create**\.
 
@@ -37,7 +37,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
 **Example**
 
    Your parameters should look like the following\.
-![\[Create your parameters for your anim graph.\]](/images/user-guide/actor-animation/simulated-objects-26.png)
+![\[Create your parameters for your anim graph.\]](/images/userguide/actor-animation/simulated-objects-26.png)
 
 1. In the **Anim Graph** grid, right\-click and choose **Create Node**, **Sources**, **Parameters**\.
 
@@ -45,7 +45,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
 **Example**
 
    Your graph should look like the following\.
-![\[Connect the Parameters0 node to the SimulationObject0 node.\]](/images/user-guide/actor-animation/simulated-objects-27.png)
+![\[Connect the Parameters0 node to the SimulationObject0 node.\]](/images/userguide/actor-animation/simulated-objects-27.png)
 
 1. Pay the anim graph and adjust the sliders for the **Parameters** to view your changes\.
 

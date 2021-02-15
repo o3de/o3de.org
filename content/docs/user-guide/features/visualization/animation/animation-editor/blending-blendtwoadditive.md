@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the Blend Two Additive node in Open 3D Engine Animation Editor
+description: ' Learn how to use the Blend Two Additive node in Amazon Lumberyard Animation Editor
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---
@@ -7,26 +7,26 @@ title: Blend Two Additive Node
 
 The **Blend Two Additive** node blends a pose 2 input additively on top of a pose 1 input\.
 
-![\[Blend Two Additive node.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)
+![\[Blend Two Additive node.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)
 
 **Note**
 This node functions similarly to the **Blend Two \(Legacy\)** node with **Additive** enabled\. The key difference is that the **Blend Two \(Legacy\)** node subtracts the bind pose when applying an additive blend\. Furthermore, **Blend Two Additive** expects pose 2 to be an additive pose\. This means that if you wanted **Blend Two Additive** to function like the **Blend Two \(Legacy\)** node, you must first subtract the bind pose from pose 2\.
 
 **To use the **Blend Two Additive** node**
 
-1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
+1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
+1. Create a [blend tree](/docs/userguide/animation/editor/creating-blend-trees.md)\.
 
 1. Double\-click the blend tree node that you created\.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
 1. Drag the **Blend Two Additive** node into the animation graph\.
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two Additive into the animation graph.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-animgraphpalette.png)
+![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two Additive into the animation graph.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-animgraphpalette.png)
 
 1.
-![\[Blend Two Additive node on the animation graph with inputs and outputs exposed.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-inoutputs.png)
+![\[Blend Two Additive node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/char-animation-editor-blendposes-inoutputs.png)
 
    Connect nodes to the following inputs and output:
    + **Pose 1** - The base pose\.
