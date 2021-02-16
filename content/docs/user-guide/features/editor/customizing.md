@@ -1,9 +1,9 @@
 ---
-description: ' Customize O3DE Editor by docking windows and toolbars, customizing
-  toolbars and menus, and updating editor settings and global preferences for Open 3D Engine. '
-title: Customizing O3DE Editor
+description: ' Customize Lumberyard Editor by docking windows and toolbars, customizing
+  toolbars and menus, and updating editor settings and global preferences for Amazon Lumberyard. '
+title: Customizing Lumberyard Editor
 ---
-# Customizing O3DE Editor {#lumberyard-editor-customizing}
+# Customizing Lumberyard Editor {#lumberyard-editor-customizing}
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings\.
 
@@ -22,22 +22,38 @@ When you drag a window or toolbar over an interface element or the edges of the 
 **To split a row or column**
 To split a row or column, drop the window or toolbar on a docking target\.
 
+<<<<<<< HEAD
 ![\[Split the column into two panes\]](/images/user-guide/lumberyard-editor-customize-splitting-column.gif)
+=======
+![\[Split the column into two panes\]](/images/userguide/lumberyard-editor-customize-splitting-column.gif)
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 **To dock a window or toolbar as a tab**
 To dock a window or toolbar as a tab, drop it on the docking target in the middle of a pane\.
 
+<<<<<<< HEAD
 ![\[Dock the window into a tabbed view\]](/images/user-guide/lumberyard-editor-customize-docking-tabs.gif)
+=======
+![\[Dock the window into a tabbed view\]](/images/userguide/lumberyard-editor-customize-docking-tabs.gif)
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 **To dock a window or toolbar to the editor window**
 To dock a window or toolbar to the editor window, drop it on the outer docking target\. This creates a new column next to the existing column\.
 
+<<<<<<< HEAD
 ![\[Dock the window to the editor window and create a new column\]](/images/user-guide/lumberyard-editor-customize-docking-to-editor-window.gif)
+=======
+![\[Dock the window to the editor window and create a new column\]](/images/userguide/lumberyard-editor-customize-docking-to-editor-window.gif)
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 **To undock a window or toolbar**
 To undock a window or toolbar, drag the title bar and move the selection window away\. Avoid the docking targets to prevent from accidentally redocking the window\. To help prevent accidental docking, a brief delay occurs before a docking target becomes active\. You can also undock a window by right\-clicking the title bar and choosing **Undock**\.
 
+<<<<<<< HEAD
 ![\[Undock the window from the tabbed view\]](/images/user-guide/lumberyard-editor-customize-undocking-tabs.gif)
+=======
+![\[Undock the window from the tabbed view\]](/images/userguide/lumberyard-editor-customize-undocking-tabs.gif)
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 **To prevent a window from docking**
 To prevent a window from docking, press and hold **Ctrl** while moving the window\.
@@ -54,15 +70,23 @@ You can also give toolbars and menus your own personal touch\.
 1.  Right\-click the top toolbar and choose **Customize**\.
 
 1. In the **Customize** window, for **Toolbars**, create, rename, and delete any custom toolbars and menus, or reset them to the default settings\.
+<<<<<<< HEAD
 ![\[Toolbars tab in the Customize window\]](/images/user-guide/editor-customizing-toolbars.png)
 
 1. In the **Commands** tab, drag and drop menu commands to any menu category\.
 ![\[Commands tab in the Customize window\]](/images/user-guide/editor-customizing-commands.png)
+=======
+![\[Toolbars tab in the Customize window\]](/images/userguide/editor-customizing-toolbars.png)
+
+1. In the **Commands** tab, drag and drop menu commands to any menu category\.
+![\[Commands tab in the Customize window\]](/images/userguide/editor-customizing-commands.png)
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 ## Changing Preferences {#lumberyard-editor-customizing-preferences}
 
 You can change the default settings to customize the look and functionality of the editor\.
 
+<<<<<<< HEAD
 **To customize the look and features of O3DE Editor**
 + In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
 ![\[General Settings tab in the Preferences window\]](/images/user-guide/editor-preferences.png)
@@ -70,6 +94,15 @@ You can change the default settings to customize the look and functionality of t
 ### General Settings {#lumberyard-editor-customizing-preferences-general}
 
 You can change the general O3DE Editor settings and file settings\.
+=======
+**To customize the look and features of Lumberyard Editor**
++ In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
+![\[General Settings tab in the Preferences window\]](/images/userguide/editor-preferences.png)
+
+### General Settings {#lumberyard-editor-customizing-preferences-general}
+
+You can change the general Lumberyard Editor settings and file settings\.
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 
 **General Settings**
@@ -87,18 +120,30 @@ You can change the general O3DE Editor settings and file settings\.
 | Show Time in Console |  Displays the time in the console window\.  |
 | Toolbar Icon Size |  Adjusts the toolbar icon size\.  Default: `16` \(32 pixels\)\.  |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices\.  |
+<<<<<<< HEAD
 |  **Enable UI 2\.0 \(EXPERIMENTAL\)**  |  Enables the updated user interface \(UI\) in O3DE Editor\.  |
 |  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as \.fbx files\. |
 |  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode\.  |
 |  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in O3DE Editor\.  |
 |  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/features/editor/viewport/working-with-viewport-interaction-model.md)\.  |
+=======
+|  **Enable UI 2\.0 \(EXPERIMENTAL\)**  |  Enables the updated user interface \(UI\) in Lumberyard Editor\.  |
+|  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as \.fbx files\. |
+|  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode\.  |
+|  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in Lumberyard Editor\.  |
+|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/userguide/working-with-viewport-interaction-model.md)\.  |
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 
 
 **Messaging**
 
 | Parameter | Description |
 | --- | --- |
+<<<<<<< HEAD
 | Show Welcome to O3DE at startup |  Displays the **Welcome to O3DE** dialog box at startup\.  |
+=======
+| Show Welcome to Lumberyard at startup |  Displays the **Welcome to Lumberyard** dialog box at startup\.  |
+>>>>>>> d30bd1e5 (Missed this file in the audit move)
 |  **Show Error: Circular dependency**  |  Shows an error message when adding a slice instance to a target would create cyclic asset dependency\. All other overrides to slices will be saved\.  |
 
 
