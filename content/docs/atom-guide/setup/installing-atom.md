@@ -10,20 +10,6 @@ O3DE uses the Atom renderer. You can test out Atom features in the provided Atom
 [WRITER NOTE: TODO. Add links]
 For more information on using Atom in O3DE, see the AtomTest project in the O3DE section, and _Working with Atom in O3DE_. -->
 
-## What's in the Atom package?
-<!-- Download the Atom package from the ___ . This package is for all supported platforms: PC, Android, Mac, and iOS.  
-
-*[WRITER NOTE: Atom is only released internally for now. Customers have received Atom packages seperately. These instructions will change once Atom is public,]*-->
-
-The Atom package includes the following files: 
-* *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*
-* *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip*
-
-
-When extracting *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*, it's recommended to rename the extracted root folder to something short to avoid path length limitations. For example, "C:\AtomBuild" as the root folder name and location is common practice. 
-
-*Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip* contains everything required to build Lumberyard and Atom from source, but it does not include pre-built binaries. The supplemental zip file *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip* includes pre-built binaries for Windows that can be used to run BaseViewer and the Lumberyard Editor without building from source. Other platforms (Mac, iOS, and Android) require being built from source.
-
 ## Required Software
 Download the required software for your platform before installing Atom.
 
@@ -35,19 +21,16 @@ Download the required software for your platform before installing Atom.
 * You have installed the latest version of **Xcode**.
 * You have installed **CMake** and synced to all required 3rd party libraries.
 
-For installing VS 2019, see [Visual Studio 2019 for Atom](../setup/installing-vs2019.md).
+<!-- For installing VS 2019, see [Visual Studio 2019 for Atom](../setup/installing-vs2019.md).
 For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
+ -->
 
 ## PC
 ### Running Baseviewer
-
-1. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip* and navigate to the folder *../dev/*.
    
-2. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip* and copy the folder *windows_vs2019* to the folder *../dev/*.
+1. Open the file *../dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
    
-3. Open the file *bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
-   
-4. Launch BaseViewer by running *BaseViewerStandalone.exe* from the folder *../dev/windows_vs2019/bin/profile/*.  
+2. Launch BaseViewer by running *BaseViewerStandalone.exe* from the folder *../dev/windows_vs2019/bin/profile/*.  
 
     If this is your first time launching *BaseViewerStandalone.exe*, the Asset Processor application will open and begin processing assets for BaseViewer. Verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".
     
@@ -55,59 +38,49 @@ For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
 
     *Note: If you encounter the "Negotiation Failed" dialog, click OK and the Asset Processor should work normally.*
 
-5. Allow the Asset Processor to finish building any required assets. You can open the Asset Processor from the system tray to check the build progress. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
+3. Allow the Asset Processor to finish building any required assets. You can open the Asset Processor from the system tray to check the build progress. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
    
     The Asset Processor will take a few minutes the first time you launch BaseViewer. Subsequent launches will take less time because they use the cached built data.
     
     *Note: Avoid running a sample in BaseViewer while the Asset Processor is still building. The application might crash.*
 
-6. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
+4. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
    
-7. If BaseViewer isn’t open, run *BaseViewerStandalone.exe* again to open the BaseViewer window. 
+5. If BaseViewer isn’t open, run *BaseViewerStandalone.exe* again to open the BaseViewer window. 
    
 
-### Running O3DE
+### Running Open 3D Engine (O3DE)
 
-1. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip* and navigate to the folder *../dev/*.
-   
-2. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_prebuilt-XX.zip* and copy the folder *windows_vs2019* to the folder *../dev/*.
+1. Open the file *../dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=AtomTest`
 
-3. Open the file *bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=AtomTest`
-
-4. Launch the Lumberyard Editor application by running *Editor.exe* from the folder *../dev/windows_vs2019/bin/profile/*. 
+2. Launch the O3DE Editor application by running *Editor.exe* from the folder *../dev/windows_vs2019/bin/profile/*. 
    
    If this is your first time in the Editor, the Asset Processor application will open and begin processing assets for the Editor. (You can verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".) 
    
    If not, all assets have already been processed and the Editor will open as usual. 
 
-5. Allow the Asset Processor to finish building any required assets. You can open the Asset Processor from the system tray to check the build progress. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
+3. Allow the Asset Processor to finish building any required assets. You can open the Asset Processor from the system tray to check the build progress. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
    
     The Asset Processor will take a few minutes the first time you launch the Editor. Subsequent launches will take less time because they use the cached built data.
 
     *Note: Avoid opening a level in the Editor while the Asset Processor is still building. The application might crash.*
 
-<!-- 6. The login to O3DE window should open automatically and you can log into your Amazon account. (An Amazon account is required to use O3DE.)  
-
-7. After logging in to your Amazon account, the Lumberyard Editor will open. 
-   
-[WRITER NOTE: Is this true for O3DE?]-->
-
-6. Open an existing level or create a new level. 
+4. Open an existing level or create a new level. 
 
 ### Building From Source (VS 2019)
 
-1. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip*.
+1. Open a command prompt and navigate to the folder *../dev/*.
    
-2. Open a command prompt and navigate to the folder *../dev/*.
+2. Create a folder named “windows_vs2019” in the folder *../dev/* if it does not already exist.
    
-3. Create a folder named “windows_vs2019” in the folder *../dev/* if it does not already exist.
-   
-4. Prepare Atom’s build system using CMake. Navigate to the folder *../dev/windows_vs2019* and run the following command:  
-    `cmake .. -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLY_3RDPARTY_PATH=<extracted zip location>\3rdParty\ -DLY_PROJECTS="AtomTest;BaseViewer"`
+3. Prepare Atom’s build system using CMake. Navigate to the folder *../dev/windows_vs2019* and run the following command:  
+    `cmake .. -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLY_3RDPARTY_PATH=<atom-build>\3rdParty\ -DLY_PROJECTS="AtomTest;BaseViewer"`
 
-5. When CMake finishes building, open *Lumberyard.sln*. If it’s your first time to open the Lumberyard solution, it will default to the Debug configuration. It is highly recommended you use the Profile configuration instead.
+    *Note: Replace `<atom-build>` with your path to the Atom build folder.*
+
+4. When CMake finishes building, open the Open3D solution. If it’s your first time to open the O3DE solution, it will default to the Debug configuration. It is highly recommended you use the Profile configuration instead.
    
-6. In the _Lumberyard.sln_ file, you can build the *BaseViewer* or the *Editor* application. 
+5. In the O3DE solution, you can build the *BaseViewer* or the *Editor* application. 
    
     1. To build *BaseViewer*, right click on BaseViewerStandalone project and select "Build". Set this project as your startup project and run. 
     
@@ -148,39 +121,42 @@ For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
    
 3. Check the APK manually. Navigate to the folder *../\<android-build-directory>/app/build/outputs/apk/profile/* . Rename “app-profile.apk” to “app-profile.zip” to unzip it and check that all the files are inside. 
 
+*Note: Replace `<android-build-directory>` with your path to the Android build folder.* 
+
 
 
 
 ## Mac
 ### Building and Running Baseviewer
-1. Unzip *Spectra_Atom_Staging-lumberyard-0.0-XXXXXXX-cmake_atom_all-XX.zip* and navigate to the folder *../dev/*.
    
-2. Open the file *bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
+1. Open the file *../dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
 
-3. Open Terminal and navigate to the folder *../dev/*.
+2. Open Terminal and navigate to the folder *../dev/*.
    
-4. Make sure that you have proper permissions by running the following command in the Terminal: `chmod +x Tools/Python/python3.sh`
+3. Make sure that you have proper permissions by running the following command in the Terminal: `chmod +x Tools/Python/python3.sh`
    
-5. Create a folder named “mac_xcode” in the folder *../dev/* if it does not already exist.
+4. Create a folder named “mac_xcode” in the folder *../dev/* if it does not already exist.
    
-6. Set Atom’s build folder using CMake by running the following command: 
-    `cmake . -B <extracted zip location>/dev/mac_xcode -G "Xcode" -DLY_3RDPARTY_PATH=<extracted zip location>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
+*Note: For the commands in the steps below, replace `<atom-build>` with your path to the Atom build folder.*
 
-7. Build Atom using CMake by running the following command: `cmake --build <extracted zip location>/dev/mac_xcode --target BaseViewerStandalone --config profile`
+5. Set Atom’s build folder using CMake by running the following command: 
+    `cmake . -B <atom-build>/dev/mac_xcode -G "Xcode" -DLY_3RDPARTY_PATH=<atom-build>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
 
-8. Launch the Asset Processor to build required assets by running *AssetProcessor* from the folder *../dev/mac_xcode/bin/profile/*.
+6. Build Atom using CMake by running the following command: `cmake --build <atom-build>/dev/mac_xcode --target BaseViewerStandalone --config profile`
+
+7. Launch the Asset Processor to build required assets by running *AssetProcessor* from the folder *../dev/mac_xcode/bin/profile/*.
     
     *Note: You are prompted to allow multiple files without a known publisher through the Mac OS "Security and Privacy" control panel. This is due to code signing issues on Mac that will be addressed in future versions.*
 
-9.  Allow the Asset Processor to finish building any required assets. It might take a few minutes to build.   
+8.  Allow the Asset Processor to finish building any required assets. It might take a few minutes to build.   
     
     *Note: You might encounter a few shader errors — this is a known issue and can be safely ignored.*  
 
     *Note: Avoid running a sample in BaseViewer while the Asset Processor is still building. The application might crash.*
 
-10. Run *BaseViewerStandalone* from the folder *../dev/mac_xcode/bin/profile/*. 
+9.  Run *BaseViewerStandalone* from the folder *../dev/mac_xcode/bin/profile/*. 
     
-11. Test out the various RHI, RPI, and Feature samples.  
+10. Test out the various RHI, RPI, and Feature samples.  
     
     *Note: There are some known issues on the Mac platform with certain samples.*
 
@@ -196,14 +172,16 @@ For installing CMake, see [CMake for Atom](../setup/installing-cmake.md).
    
 3. Navigate to the folder *../dev/mac_xcode/bin/profile/* and run *AssetProcessor*. This opens the Asset Processor application and builds the required iOS assets.
    
-4. Create a new folder named "gems" in the folder `../dev/Cache/BaseViewer/ios/`. 
+4. Create a new folder named "gems" in the folder *../dev/Cache/BaseViewer/ios/*. 
    
-5. Create a new folder named “ios_xcode” in the folder `../dev/`, if it does not already exist.
+5. Create a new folder named “ios_xcode” in the folder *../dev/* if it does not already exist.
    
 6. Set Atom’s build folder using CMake by running the following command:
-     `cmake -B <extracted zip location>/dev/ios_xcode -G "Xcode" -DCMAKE_TOOLCHAIN_FILE=cmake/Platform/iOS/Toolchain_ios.cmake -DLY_MONOLITHIC_GAME=1 -DLY_3RDPARTY_PATH=<extracted zip location>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
+     `cmake -B <atom-build>/dev/ios_xcode -G "Xcode" -DCMAKE_TOOLCHAIN_FILE=cmake/Platform/iOS/Toolchain_ios.cmake -DLY_MONOLITHIC_GAME=1 -DLY_3RDPARTY_PATH=<atom-build>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
 
-7. Open the generated Xcode solution located in the folder *../dev/mac_xcode*, which you can use to build and deploy to your device.
+    *Note: Replace `<atom-build>` with your path to the Atom build folder.*
+
+7. Open the generated Xcode solution located in the folder *../dev/mac_xcode* and use to build and deploy to your device.
    
 8. Test out the various RHI, RPI, and Feature samples.  
 
