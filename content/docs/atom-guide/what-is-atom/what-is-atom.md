@@ -11,7 +11,7 @@ Atom also has the following advantages:
 ## Rendering pipeline
 
 
-![Atom Architecture](../../../../static/images/atom-guide/what-is-atom/atom-architecture.svg)
+![Atom Architecture](/static/images/atom-guide/what-is-atom/atom-architecture.svg)
 
 Atom’s rendering pipeline is split into several core systems, each communicating with one another to use the power of the GPU to process and display graphics onto the screen. The architecture of the rendering pipeline includes the Rendering Hardware Interface (RHI), the Render Pipeline Interface (RPI), and the graphics features. 
 
