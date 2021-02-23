@@ -49,7 +49,7 @@ For more information, see the following topics:
 
 Artists can use Lumberyard to create believable characters and high\-fidelity performances\. Lumberyard's character tool, Animation Editor, combines animation, attachments, and physics simulations with blend shape, blend space, and animation layering\.
 
-For more information, see [Create and animate characters](/docs/userguide/char-intro.md)\.
+For more information, see [Create and animate characters](/docs/user-guide/features/visualization/animation/char-intro.md)\.
 
 ### Robust Networking {#lumberyard-aaa-engine-networking}
 
@@ -71,7 +71,7 @@ For more information, see [Add modular features and assets with Gems](/docs/user
 
 Lumberyard includes a version of Audiokinetic's advanced, feature\-rich sound engine\. Sound designers and composers can author rich soundscapes for your games\.
 
-For more information, see [Adding Audio and Sound Effects](/docs/userguide/audio/intro.md)\.
+For more information, see [Adding Audio and Sound Effects](/docs/user-guide/features/interactivity/audio/intro.md)\.
 
 ## Integrated with AWS {#lumberyard-aws-integration}
 

@@ -10,17 +10,17 @@ Lumberyard consists of the following major systems that help you develop levels 
   Artificial Intelligence \(AI\) is a technology or system that endows seemingly intelligent actions and behaviors to an agent or character, called the AI agent\. An AI agent is a game entity that uses information to make decisions in pursuit of one or more goals\.
 
    
-+ [Adding Audio and Sound Effects](/docs/userguide/audio/intro.md)
++ [Adding Audio and Sound Effects](/docs/user-guide/features/interactivity/audio/intro.md)
 
   The audio translation layer \(ATL\) provides an interface between Lumberyard and third\-party audio middleware so you can change your audio implementation without affecting the game logic\.
 
    
-+ [Create and animate characters](/docs/userguide/char-intro.md)
++ [Create and animate characters](/docs/user-guide/features/visualization/animation/char-intro.md)
 
   The character animation system combines skeletal\-based deformation of meshes with morph\-based vertex deformation to facilitate complex animation\. You can create realistic character movements by playing and blending animation sequences, controlling facial expressions, and applying damage effects\. Characters can play scripted movements, employ AI navigation\.
 
    
-+ [Create cinematic sequences](/docs/userguide/cinematics/intro.md)
++ [Create cinematic sequences](/docs/user-guide/features/visualization/cinematics/intro.md)
 
   Cinematics are interactive movie animations\. You can use Lumberyard to add cutscenes to your game\. You can also add scripted events so that a sequence of objects, animations, and sounds are triggered in the game\. The players can view these from their own \(first person\) or another's \(third person\) perspective\.
 
@@ -50,7 +50,7 @@ Lumberyard consists of the following major systems that help you develop levels 
   The particle effects system simulates explosions, fire, smoke, sparks, water spray, fog, snow, rain, and other effects\.
 
    
-+ [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)
++ [Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)
 
   Create game logic and behaviors with Lumberyard's new visual scripting environment\.
 
@@ -65,7 +65,7 @@ Lumberyard consists of the following major systems that help you develop levels 
   The Twitch ChatPlay Gem provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world's leading social video platform and community for gamers\. Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.
 
    
-+ [Creating and Customizing Project User Interfaces](/docs/userguide/ui/editor/intro.md)
++ [Creating and Customizing Project User Interfaces](/docs/user-guide/features/interactivity/user-interface/editor/intro.md)
 
   With the **UI Editor**, you can create and customize various parts of the game user interface, such as images, text, buttons, menus, scroll boxes, and heads\-up displays \(HUDs\)\.
 
