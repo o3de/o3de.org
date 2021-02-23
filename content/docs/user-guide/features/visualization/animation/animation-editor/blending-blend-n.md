@@ -7,26 +7,26 @@ title: Blend N Node
 
 The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter to determine which inputs to use and their weights\. You can specify any type of parameter into the **Weight** input of a **Blend N** node\.
 
-![\[The Blend N node properties.\]](/images/userguide/actor-animation/animation-editor-blending-blendn.png)
+![\[The Blend N node properties.\]](/images/user-guide/actor-animation/animation-editor-blending-blendn.png)
 
 **To use the **Blend N** node**
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. Create a [blend tree](/docs/userguide/animation/editor/creating-blend-trees.md)\.
+1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
 
 1. Double\-click the blend tree node that you created\.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab\.
 
 1. Drag the **Blend N** node into the animation graph\.
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend N into the animation graph.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-select.png)
+![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend N into the animation graph.\]](/images/user-guide/actor-animation/animation-editor-blending-blendn-select.png)
 
 1. Connect nodes to the following inputs and output:
    + **Pose 0 to 9** - Pose inputs\. Connect one or more inputs\.
    + **Weight** - Input that determines which pose inputs to use and their weights\.
    + **Output Pose** - Result of the blended poses\.
-![\[Blend N node on the animation graph with inputs and outputs exposed.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-inoutputs.png)
+![\[Blend N node on the animation graph with inputs and outputs exposed.\]](/images/user-guide/actor-animation/animation-editor-blending-blendn-inoutputs.png)
 
 1. Select the **Blend N** node\.
 
@@ -34,11 +34,11 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 **Example**
 
    If you have three poses, You must specify values in ascending order\. The first pose should have the lowest value and the last pose must have the highest\.
-![\[Example of ascending order for Max weight trigger values.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-example.png)
+![\[Example of ascending order for Max weight trigger values.\]](/images/user-guide/actor-animation/animation-editor-blending-blendn-example.png)
 
 If you enter a series of values in an invalid order, the value box turns red and displays a warning\.
 
-![\[Example of ascending order for Max weight trigger values.\]](/images/userguide/actor-animation/animation-editor-blending-blendn-error.png)
+![\[Example of ascending order for Max weight trigger values.\]](/images/user-guide/actor-animation/animation-editor-blending-blendn-error.png)
 
 You can use the **Evenly Distribute** feature to automatically calculate an even distribution of weights\.
 

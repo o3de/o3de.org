@@ -12,7 +12,7 @@ You can open the **Script Canvas** editor from Lumberyard Editor\.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas\.
 
-![\[Use the Script Canvas editor in Lumberyard to create connections for nodes.\]](/images/userguide/scripting/script-canvas/script-canvas-user-interface.png)
+![\[Use the Script Canvas editor in Lumberyard to create connections for nodes.\]](/images/user-guide/scripting/script-canvas/script-canvas-user-interface.png)
 
 In the **Script Canvas** editor, you can do the following:
 
@@ -40,7 +40,7 @@ In the **Script Canvas** editor, you can do the following:
 **Script Canvas** editor has the following additional menus and tools\.
 
 **Bookmarks**
-View and modify your saved bookmarks\. You can use bookmarks to save locations on your script and then use keyboard shortcuts to move to that location\. For more information, see [Adding Bookmarks for Script Canvas](/docs/userguide/scripting/scriptcanvas/bookmarks.md)\.
+View and modify your saved bookmarks\. You can use bookmarks to save locations on your script and then use keyboard shortcuts to move to that location\. For more information, see [Adding Bookmarks for Script Canvas](/docs/user-guide/features/scripting/script-canvas/bookmarks.md)\.
 
 **Comments**
-You can create floating blocks of text on the Script Canvas editor canvas\. For more information, see [Commenting Nodes](/docs/userguide/scripting/scriptcanvas/block-commenting.md)\.
+You can create floating blocks of text on the Script Canvas editor canvas\. For more information, see [Commenting Nodes](/docs/user-guide/features/scripting/script-canvas/block-commenting.md)\.

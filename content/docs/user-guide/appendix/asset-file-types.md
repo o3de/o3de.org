@@ -50,7 +50,7 @@ The following files are used for the **Material Editor**\. For more information,
 
 **Animation File Types**
 
-The following file types are used for the **Animation Editor**\. For more information, see [Animation Editor File Types](/docs/userguide/animation/character-editor/file-types.md)\.
+The following file types are used for the **Animation Editor**\. For more information, see [Animation Editor File Types](/docs/user-guide/features/visualization/animation/character-editor/file-types.md)\.
 
 
 ****
@@ -65,7 +65,7 @@ The following file types are used for the **Animation Editor**\. For more inform
 
 **Audio Asset File Types**
 
-The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](/docs/userguide/audio/intro.md)\.
+The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](/docs/user-guide/features/interactivity/audio/intro.md)\.
 
 
 ****

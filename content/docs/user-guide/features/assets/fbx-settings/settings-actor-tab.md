@@ -28,7 +28,7 @@ Actors are assets with at least one bone and can contain one or more skinned mes
 
 ## Actors tab properties {#fbx-settings-actors-tab-properties}
 
-![\[The FBX Settings Actors tab.\]](/images/userguide/fbx/ui-fbx-settings-actors-tab-1.25.png)
+![\[The FBX Settings Actors tab.\]](/images/user-guide/fbx/ui-fbx-settings-actors-tab-1.25.png)
 
 ****Add another actor****
 Add an **Actor group** to process\. Each **Actor group** produces a `.actor` file\.
@@ -58,20 +58,20 @@ Some modifiers are not be available unless the gem that provides the modifier is
 
 ## Cloth modifier {#w31aac15b9c11c13c11}
 
-![\[The FBX Settings Actors tab Cloth modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-cloth-1.27.png)
+![\[The FBX Settings Actors tab Cloth modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cloth-1.27.png)
 
 Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 
 **Note**
 Each mesh in the **Actor group** to simulate as cloth requires its own **Cloth** modifier\.
 
-For more information, see [Simulate cloth with NVIDIA Cloth](/docs/userguide/nvidia/cloth/intro.md)\.
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
 
 ****Select Cloth Mesh****
 Select the mesh to have cloth data applied and simulate as a cloth object\.
 
 **Note**
-For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md)\.
+For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/vertex-data.md)\.
 
 ****Inverse Masses****
 Select a vertex color stream to apply per vertex inverse mass data for cloth simulation\. If no vertex color stream is selected, an inverse mass value of **1\.0** is assigned to all vertices in the cloth mesh\.
@@ -96,19 +96,19 @@ Select the channel in the vertex color stream that contains backstop radius data
 
 ## Comment modifier {#w31aac15b9c11c13c13}
 
-![\[The FBX Settings Actors tab Comment modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
+![\[The FBX Settings Actors tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\.
 
 ## Coordinate system change modifier {#w31aac15b9c11c13c15}
 
-![\[The FBX Settings Actors tab Coordinate system change modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
+![\[The FBX Settings Actors tab Coordinate system change modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change-1.25.png)
 
 Modify the coordinate system of the actor\. Third\-party content creation applications use varying coordinate systems with content applications often rotating the direction of the forward axis\. The **Facing direction** property can be set to rotate the actor 180 degrees around its up axis to account for this difference\. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged\.
 
 ## Level of Detail modifier {#w31aac15b9c11c13c17}
 
-![\[The FBX Settings Actor tab Level of Detail modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-lod-1.25.png)
+![\[The FBX Settings Actor tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-lod-1.25.png)
 
 The **Level of detail** \(LoD\) modifier is added to the **Actor group** automatically when LoDs are found in the `.fbx` file\. Choose the **Hierarchy** button to verify or modify the meshes and bones assigned to each LoD\. Actors support up to 6 levels of detail including the base level of detail \[`0`\]\.
 
@@ -125,11 +125,11 @@ When you author the actor in your 3D application, you must add `_lod0`, `_lod1`,
 **Important**
 The meshes for the highest level of detail, \[`0`\], and the corresponding skeleton are assigned in the **Select base meshes** and **Select root bone** properties of the **Actor group** automatically\. Meshes labeled `_lod1` through `_lod5` and their skeleton hierarchies are assigned to corresponding LoDs in the **Level of Detail** modifier\.
 
-For more information, see [Using Actor LODs to Optimize Game Performance](/docs/userguide/using-actor-LODs-optimize-game-performance.md)\.
+For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/features/visualization/animation/using-actor-LODs-optimize-game-performance.md)\.
 
 ## Material modifier {#w31aac15b9c11c13c19}
 
-![\[The FBX Settings Actors tab Material modifier.\]](/images/userguide/fbx/ui-fbx-settings-mesh-modifier-material-1.25.png)
+![\[The FBX Settings Actors tab Material modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-material-1.25.png)
 
  The **Material** modifier helps automatically manage the contents of the `.mtl` file that corresponds to the **Actor group** when actor assets are updated\.
 
@@ -145,7 +145,7 @@ When enabled, removes materials that are present in the `.mtl` file that are not
 
 ## Mesh modifier {#w31aac15b9c11c13c21}
 
-![\[The FBX Settings Actors tab Mesh modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-mesh-1.25.png)
+![\[The FBX Settings Actors tab Mesh modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-mesh-1.25.png)
 
 Set a vertex color stream and its precision for the Actor's visible render mesh\.
 
@@ -159,13 +159,13 @@ Vertex color streams contain four channels: red, green, blue, and alpha\. Settin
 
 ## Scale actor modifier {#w31aac15b9c11c13c23}
 
-![\[The FBX Settings Actors tab Scale actor modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-scale-actor-1.25.png)
+![\[The FBX Settings Actors tab Scale actor modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-scale-actor-1.25.png)
 
 The **Scale factor** modifier sets a uniform scale for the **Actor group**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than Lumberyard\.
 
 ## Skeleton optimization modifier {#w31aac15b9c11c13c25}
 
-![\[The FBX Settings Actors tab Skeleton optimization modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-skeleton-optimization-1.25.png)
+![\[The FBX Settings Actors tab Skeleton optimization modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-skeleton-optimization-1.25.png)
 
 The **Skeleton optimization** modifier automatically optimizes Actor skeletons for client and server scenarios\.
 
@@ -180,7 +180,7 @@ Choose the **Hierarchy** button to select bones that should not be optimized out
 
 ## Skin modifier {#w31aac15b9c11c13c27}
 
-![\[The FBX Settings Actors tab Skin modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-skin-1.25.png)
+![\[The FBX Settings Actors tab Skin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-skin-1.25.png)
 
 The **Skin** modifier sets the maximum bones and minimum weight per vertex\.
 
@@ -192,7 +192,7 @@ The minimum bone weight per vertex\. Weight values beneath this threshold are ig
 
 ## Tangents modifier {#w31aac15b9c11c13c29}
 
-![\[The FBX Settings Actors tab Tangents modifier.\]](/images/userguide/fbx/ui-fbx-settings-actor-modifier-tangents-1.25.png)
+![\[The FBX Settings Actors tab Tangents modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-tangents-1.25.png)
 
 The **Tangents** modifier generates or exports tangents and bitangents from your `.fbx` file\. You should use the same tangent space you use to generate normal maps to achieve the desired appearance in Lumberyard\.
 

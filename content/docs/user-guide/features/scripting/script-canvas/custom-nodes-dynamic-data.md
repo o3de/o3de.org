@@ -39,7 +39,7 @@ When dynamic types are connected, the receiving slot takes on the data type and 
 
 **Example**
 
-![\[Create a dynamically chained node.\]](/images/userguide/scripting/script-canvas/script-canvas-chained-dynamic-types.gif)
+![\[Create a dynamically chained node.\]](/images/user-guide/scripting/script-canvas/script-canvas-chained-dynamic-types.gif)
 
 Like dynamic groups, any pair of dynamically typed nodes that are linked share the same restrictions\. This includes any restrictions from the node group\. Additionally, the slots are usually in the most unrestricted state as possible\. Unless a display type gives a set of dynamically typed slots a type, the slots remain untyped\.
 

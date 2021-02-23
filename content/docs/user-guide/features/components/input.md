@@ -9,16 +9,16 @@ You can use the **Input** component to bind raw input to events in your game\. T
 For example, you can add the **Input** component to an entity and specify in the `.inputbindings` file that when you press the keyboard spacebar, the entity rotates\.
 
 **Note**
-To work with inputs, you must enable the [Input Management Framework](/docs/userguide/gems/builtin/input.md) and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gems\. For more information, see [Add modular features and assets with Gems](/docs/userguide/gems/builtin/s.md)\.
+To work with inputs, you must enable the [Input Management Framework](/docs/user-guide/features/gems/input.md) and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gems\. For more information, see [Add modular features and assets with Gems](/docs/user-guide/features/gems/_index.md)\.
 
 **Topics**
 + [Input Properties](#component-input-configuration-properties)
-+ [Working with the Input Component](/docs/userguide/working-with-the-input-component.md)
-+ [Input Component EBus Interface](/docs/userguide/components/input-event-bus-interface.md)
++ [Working with the Input Component](/docs/user-guide/features/interactivity/input/working-with-the-input-component.md)
++ [Input Component EBus Interface](/docs/user-guide/features/components/input-event-bus-interface.md)
 
 ## Input Properties {#component-input-configuration-properties}
 
-![\[\]](/images/userguide/component/input-component-properties.png)
+![\[\]](/images/user-guide/component/input-component-properties.png)
 
 The **Input** component has the following properties\.
 

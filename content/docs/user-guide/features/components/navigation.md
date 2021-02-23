@@ -7,7 +7,7 @@ title: Navigation
 
 The **Navigation** component provides path\-finding and path\-following functionality for AI movement, typically on a navigation mesh\.
 
-![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/userguide/component/component-navigation-path.png)
+![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/user-guide/component/component-navigation-path.png)
 
 **Topics**
 + [Navigation Component Properties](#component-navigation-properties)
@@ -19,11 +19,11 @@ The **Navigation** component provides path\-finding and path\-following function
 
 The **Navigation** component has the following properties:
 
-![\[Navigation component properties\]](/images/userguide/component/component-navigation-properties.png)
+![\[Navigation component properties\]](/images/user-guide/component/component-navigation-properties.png)
 
 **Agent Type**
-Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/userguide/components/nav-area.md) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.
-To define an agent type on your navigation area, see the **[Navigation Area](/docs/userguide/components/nav-area.md)** component\.
+Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/user-guide/features/components/nav-area.md) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.
+To define an agent type on your navigation area, see the **[Navigation Area](/docs/user-guide/features/components/nav-area.md)** component\.
 
 **Agent Speed**
 Sets the speed of the agent while navigating when using the Transform or Physics movement methods\.
@@ -56,7 +56,7 @@ Default value: `false`
 
 Use the following request functions with the `NavigationComponentRequestBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### FindPath {#navigation-ebus-findpath}
 
@@ -166,7 +166,7 @@ Yes
 
 Use the following notification functions with the `NavigationComponentNotificationBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### OnSearchingForPath {#navigation-ebus-onsearchingforpath}
 

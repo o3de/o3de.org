@@ -18,7 +18,7 @@ The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fi
 NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
-For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/intro.md)\.
+For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/intro.md)\.
 
 **Contents**
 + [Functionality provided by the NVIDIA Blast gem](#nvidia-blast-functionality)
@@ -44,7 +44,7 @@ To enable the NVIDIA Blast gem, do the following:
    + **LmbrCentral**
    + **PhysX**
 **Important**
-Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/userguide/assets/process/python/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
+Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/user-guide/features/assets/builder/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
 
 1. Configure your project\. Use the following command\.
 

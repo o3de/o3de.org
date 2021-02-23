@@ -14,7 +14,7 @@ title: Simulate cloth with NVIDIA Cloth
 
  With **NVIDIA Cloth** in Amazon Lumberyard you can create realistic cloth simulations for entities that contain **Actor** or **Mesh** components\. The **NVIDIA Cloth** gem provides a component you can use to simulate cloth on any mesh that has been processed with a **Cloth** modifier applied in **FBX Settings**\.
 
-To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/userguide/nvidia/cloth/_index.md)\.
+To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/features/interactivity/physics/nvidia-cloth/_index.md)\.
 
 ## NVIDIA Cloth features {#nvidia-cloth-features}
 
@@ -32,19 +32,19 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/userguide/n
 
 ## Using NVIDIA Cloth {#nvidia-cloth-topics}
 
-[Cloth component](/docs/userguide/components/cloth.md) \- Cloth component reference\.
+[Cloth component](/docs/user-guide/features/components/cloth.md) \- Cloth component reference\.
 
-[Cloth for Mesh components](/docs/userguide/nvidia/cloth/meshes.md) \- Create cloth for entities containing **Mesh** components\.
+[Cloth for Mesh components](/docs/user-guide/features/interactivity/physics/nvidia-cloth/meshes.md) \- Create cloth for entities containing **Mesh** components\.
 
-[Cloth for Actor components](/docs/userguide/nvidia/cloth/actors.md) \- Create cloth for entities containing **Actor** components\.
+[Cloth for Actor components](/docs/user-guide/features/interactivity/physics/nvidia-cloth/actors.md) \- Create cloth for entities containing **Actor** components\.
 
-[Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md) \- Use per vertex properties to define the **Inverse mass**, **Motion constraints**, and **Backstop** to create higher quality and more predictable cloth simulations\.
+[Per vertex properties for cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/vertex-data.md) \- Use per vertex properties to define the **Inverse mass**, **Motion constraints**, and **Backstop** to create higher quality and more predictable cloth simulations\.
 
-[Cloth simulation constraints](/docs/userguide/nvidia/cloth/constraints.md) \- An overview of how **Motion constraints** and **Backstop** work to improve the results of cloth simulations\.
+[Cloth simulation constraints](/docs/user-guide/features/interactivity/physics/nvidia-cloth/constraints.md) \- An overview of how **Motion constraints** and **Backstop** work to improve the results of cloth simulations\.
 
-[Cloth visual debugger](/docs/userguide/nvidia/cloth/debugging.md) \- Enable the visual debugger for cloth simulations\.
+[Cloth visual debugger](/docs/user-guide/features/interactivity/physics/nvidia-cloth/debugging.md) \- Enable the visual debugger for cloth simulations\.
 
-[GPU cloth simulation with NVIDIA CUDA](/docs/userguide/nvidia/cloth/gpu.md) \- Install NVIDIA CUDA to enable GPU acceleration for NVIDIA Cloth\.
+[GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/features/interactivity/physics/nvidia-cloth/gpu.md) \- Install NVIDIA CUDA to enable GPU acceleration for NVIDIA Cloth\.
 
 ## NVIDIA Cloth references {#component-cloth-references}
 

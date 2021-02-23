@@ -8,7 +8,7 @@ With the **PhysX Fixed Joint** component, you can create a dynamic fixed joint t
 
 ## PhysX Fixed Joint component properties {#component-physx-fixed-joint-properties}
 
-![\[Properties of the PhysX Fixed Joint component\]](/images/userguide/physx/physx/ui-physx-fixed-joint-component-1.27.png)
+![\[Properties of the PhysX Fixed Joint component\]](/images/user-guide/physx/physx/ui-physx-fixed-joint-component-1.27.png)
 
 **Local Position**
 Specify the position of the joint relative to the entity transform\.

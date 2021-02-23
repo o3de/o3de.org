@@ -10,7 +10,7 @@ Use the **Tag** component to apply one or more labels, or tags, to an entity suc
 
 Use the following request function with the **TagGlobalRequestBus** EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### RequestTaggedEntities {#tag-ebus-requestraggedentities}
 
@@ -29,7 +29,7 @@ Yes
 
 Use the following request functions with the **TagRequestBus** EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### HasTag {#tag-ebus-hastag}
 
@@ -121,7 +121,7 @@ local burning = TagComponentRequestBus.Event.HasTag(self.entityId, Crc32("Burnin
 
 Use the following request functions with the **TagComponentNotificationsBus** notification bus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### OnTagAdded {#tag-notbus-ontagadded}
 

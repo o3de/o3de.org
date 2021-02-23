@@ -36,7 +36,7 @@ Entities are never allowed to be in a state in which one of their component depe
 + [Editor Components](/docs/user-guide/features/engine/components/entity-system-pg-editor-components.md)
 + [Creating System Components](/docs/user-guide/features/engine/components/system-wide.md)
 + [Programmer's Guide to Component Mode](/docs/user-guide/tutorials/engine/components/_index.md)
-+ [Components and EBuses](/docs/userguide/components/entity-system-pg-components-and-ebuses.md)
++ [Components and EBuses](/docs/user-guide/features/engine/components/ebus-integration.md)
 + [Tick Bus and Components](/docs/user-guide/features/engine/ebus/tick.md)
 + [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)
 + [Components and EBuses: Best Practices](/docs/user-guide/features/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)

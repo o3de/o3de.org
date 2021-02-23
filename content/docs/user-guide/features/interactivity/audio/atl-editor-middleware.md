@@ -16,12 +16,12 @@ The controls in the **Wwise Controls** pane are middleware\-specific\.
 **To create connections between ATL controls and middleware\-specific controls**
 + In the **Wwise Controls** pane, select and drag a control to the **Connected Controls** area of the **Inspector** pane\.
 
-![\[Drag the selected control to the Connected Controls area of the Inspector pane.\]](/images/userguide/audio/audio-atl-editor-connected.png)
+![\[Drag the selected control to the Connected Controls area of the Inspector pane.\]](/images/user-guide/audio/audio-atl-editor-connected.png)
 
 **To create a control**
 
 1. In the **Wwise Controls** pane, select and drag a middleware control to the **ATL Controls** pane\.
-![\[Drag a middleware control directly into the ATL Controls pane to create a new control.\]](/images/userguide/audio/audio-atl-editor-new.png)
+![\[Drag a middleware control directly into the ATL Controls pane to create a new control.\]](/images/user-guide/audio/audio-atl-editor-new.png)
 
    This creates a new control, which shares the same name of the middleware control\. The middleware control and the ATL control are also automatically connected\.
 

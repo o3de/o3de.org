@@ -13,9 +13,9 @@ title: 'Animation Editor User Interface'
 
 **Topics**
 + [Opening Animation Editor](#opening-animation-editor-)
-+ [Anim Graph Interface](/docs/userguide/animation/editor/animation-graph-user-interface.md)
-+ [Motion Sets Interface](/docs/userguide/animation/editor/motion-set-user-interface.md)
-+ [Motions Interface](/docs/userguide/animation/editor/motions-user-interface.md)
++ [Anim Graph Interface](/docs/user-guide/features/visualization/animation/animation-editor/animation-graph-user-interface.md)
++ [Motion Sets Interface](/docs/user-guide/features/visualization/animation/animation-editor/motion-set-user-interface.md)
++ [Motions Interface](/docs/user-guide/features/visualization/animation/animation-editor/motions-user-interface.md)
 
 ## Opening Animation Editor {#opening-animation-editor-}
 
@@ -24,7 +24,7 @@ You can open the **Animation Editor** from Lumberyard Editor\.
 **To open the Animation Editor**
 + From Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](/images/userguide/actor-animation/animation-editor-jack-user-interface.png)
+![\[View the user interface for the Animation Editor in Lumberyard Editor.\]](/images/user-guide/actor-animation/animation-editor-jack-user-interface.png)
 
 On the **Animation Editor**, you can do the following:
 

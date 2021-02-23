@@ -29,7 +29,7 @@ When you select a group of entities, the Viewport Interaction Model follows the 
 **Example**
 
    In the following example, three entities are selected\. Because there is no common parent of the group, the manipulator defaults to world space\. The entities now move in relation to the parent \(the manipulator\)\.
-![\[Manipulate a group of entities using world space in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-6.gif)
+![\[Manipulate a group of entities using world space in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-6.gif)
 
 1. Press and hold **Ctrl** and **Alt** and click a target entity\. This selects a reference space\.
 
@@ -43,28 +43,28 @@ When you select a group of entities, the Viewport Interaction Model follows the 
 **Example**
 
    In the following example, you can select a group of entities and move the manipulator in the viewport to create a custom reference space\.
-![\[Move a manipulator to create a custom reference space in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-8.gif)
+![\[Move a manipulator to create a custom reference space in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-8.gif)
 
 1. Select child entities of the same parent entity and use the manipulator to change them\. When you select a group of entities that share the same parent, the manipulator defaults its orientation to the parent\.
 **Example**
 
    In the following example, two child entities \(the tires\) are selected\. The manipulator rotates the child entities in relation to its parent \(the car\)\.
-![\[Manipulate child entities from a parent entity in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-9.gif)
+![\[Manipulate child entities from a parent entity in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-9.gif)
 
 1. Press and hold **Alt** while modifying a group of selected entities\. This enables you to control changes to the entities in local space\. You can quickly iterate and modify your entities and view the changes in the viewport\.
 **Example**
 
    In the following example, you can press and hold **Alt** during translation\. This moves each entity in their own local space\.
-![\[Modify each entity in their own local space during translation in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-10.gif)
+![\[Modify each entity in their own local space during translation in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-10.gif)
 
 1. Select child entities from different parent entities and press and hold **Alt**\. You can modify multiple entities at the same time, even if they have different parents\.
 **Example**
 
    In the following example, child entities from different parents are selected\. The manipulator modifies the child entities at the same time\.
-![\[Modify child entities from different parents in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-11.gif)
+![\[Modify child entities from different parents in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-11.gif)
 
 1. Press and release **Alt** to dynamically change the reference space\.
 **Example**
 
    In the following example, the manipulator changes the scale for the selected entities, switching from world to local space\.
-![\[Switch from world to local space while modifying entities in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-12.gif)
+![\[Switch from world to local space while modifying entities in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-12.gif)

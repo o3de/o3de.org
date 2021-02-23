@@ -9,8 +9,8 @@ title: Previewing Canvases
 You can preview your game UI canvas to visualize how it might look at different screen resolutions and to see how the interactive elements change states\.
 
 **Topics**
-+ [Setting Canvas Size in Preview](/docs/userguide/ui/editor/previewing-setting-size.md)
-+ [Previewing Canvas Behavior](/docs/userguide/ui/editor/previewing-behavior.md)
++ [Setting Canvas Size in Preview](/docs/user-guide/features/interactivity/user-interface/editor/previewing-setting-size.md)
++ [Previewing Canvas Behavior](/docs/user-guide/features/interactivity/user-interface/editor/previewing-behavior.md)
 
 The **UI Editor** **Preview** consists of the following:
 
@@ -22,7 +22,7 @@ The **UI Editor** **Preview** consists of the following:
 
 1. [**Action Log**](/docs/userguide/ui/editor/previewing-behavior#action-log) - Record of actions triggered by the canvas's interactable elements\. Close this pane to increase the viewport size\. Use the **View** menu to restore it\.
 
-![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-preview-overview.png)
+![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-preview-overview.png)
 
 **To open UI canvas **Preview****
 

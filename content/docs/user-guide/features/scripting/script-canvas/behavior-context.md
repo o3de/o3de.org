@@ -11,15 +11,15 @@ title: 'Script Canvas and the Behavior Context'
 + [Displaying EBus Event Parameter Names in Script Canvas Nodes](#script-canvas-behavior-context-parameter-names)
 + [Common Programming Problems](#script-canvas-behavior-context-common-programming-problems)
 
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context\. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/userguide/components/entity-system-pg-intro.md) and [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md)\.
+You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context\. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/features/engine/components/_index.md) and [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md)\.
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Amazon Lumberyard\.
 
-![\[Script Canvas code architecture\]](/images/userguide/scripting/script-canvas/script-canvas-code-architecture-1.png)
+![\[Script Canvas code architecture\]](/images/user-guide/scripting/script-canvas/script-canvas-code-architecture-1.png)
 
 The core Script Canvas code is built as a static library that is linked into the dependent gem and editor gem\. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph\. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs\.
 
-Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/userguide/programming/ebus/intro.md) that are available in Lua\. When you use the behavior context, you do not need to write any Script Canvas-specific code\. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment\.
+Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/features/engine/ebus/_index.md) that are available in Lua\. When you use the behavior context, you do not need to write any Script Canvas-specific code\. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment\.
 
 The behavior context for Script Canvas includes the following benefits:
 + Functionality exposed through the behavior context is also available in Lua \(and any other scripting solution bound to the behavior context\)\.
@@ -62,11 +62,11 @@ behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestB
 
 When Script Canvas examines the behavior context, it finds these bindings and automatically generates the corresponding nodes for you\.
 
-![\[Light component nodes in Script Canvas\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-1.png)
+![\[Light component nodes in Script Canvas\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-1.png)
 
 You use EBuses to communicate with an entity's components\. To do so, you need an address\. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`\. For this reason, all nodes from a component EBus have an entry slot for an `EntityID`\. The presence of `Self` in the `EntityID` field refers to the `EntityID` of the entity that owns the Script Canvas graph\. However, this ID can be assigned to another entity, or even changed to an invalid entity ID\.
 
-![\[Self EntityID\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-2.png)
+![\[Self EntityID\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-2.png)
 
 The other bus that the Light component reflects to the behavior context is `LightComponentNotificationBus`\. The following source code is also in the file `dev\Gems\LmbrCentral\Code\Source\Rendering\LightComponent.cpp`\.
 
@@ -101,7 +101,7 @@ public:
 
 Script Canvas has a node that gives you access to all the events for EBus\. You can handle the events that you are interested in\.
 
-![\[Light notification bus\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-3.png)
+![\[Light notification bus\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-3.png)
 
 ## Objects: The PhysicsComponent Example {#script-canvas-behavior-context-physicscomponent}
 
@@ -129,11 +129,11 @@ During the preview release of Script Canvas, properties must provide both getter
 
 Most object variables are set as a result of an event\. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event\.
 
-![\[Collision variable\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-4.png)
+![\[Collision variable\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-4.png)
 
 You can use the following graph to set the collision variable:
 
-![\[Setting the Collision variable\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-5.png)
+![\[Setting the Collision variable\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-5.png)
 
 ## Displaying EBus Event Parameter Names in Script Canvas Nodes {#script-canvas-behavior-context-parameter-names}
 
@@ -141,7 +141,7 @@ To display parameter names correctly for your EBus events, ensure that you speci
 
 If you do not specify names for the parameters, they are given default display names like "1", "2", or "3", as in the following image:
 
-![\[Default parameter names displayed\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
+![\[Default parameter names displayed\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-1.png)
 
 The following code produced the event node in the image:
 
@@ -171,7 +171,7 @@ if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(reflectContext))
 
 In the node palette window, the parameter names appear as specified:
 
-![\[Specified parameter names displayed\]](/images/userguide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
+![\[Specified parameter names displayed\]](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-parameter-names-2.png)
 
 **Alternate Syntax**
 You can also use the following alternate syntax to create parameter override instances before passing them to the `Event` function:
@@ -254,4 +254,4 @@ This is caused by an oversight that is easy to make: newly implemented EBus hand
 MyBus::BusConnect()
 ```
 
-Depending on the type of bus, you might have to specify an ID to connect to\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+Depending on the type of bus, you might have to specify an ID to connect to\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.

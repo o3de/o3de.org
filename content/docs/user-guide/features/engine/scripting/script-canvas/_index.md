@@ -8,11 +8,11 @@ Script Canvas uses the [behavior context](/docs/userguide/components/entity-syst
 
 If your gem provides custom Script Canvas nodes, you must specify a dependency on the Script Canvas Gem and configure Waf appropriately to compile the nodes\. Functionality that you reflect through the behavior context requires no dependency on the Script Canvas Gem\.
 
-Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ Code Generator](/docs/userguide/codegen/intro.md) and boilerplate code\. This reduces complexity and lets you focus on implementing the behavior of the node\.
+Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ Code Generator](/docs/user-guide/features/engine/codegen/intro.md) and boilerplate code\. This reduces complexity and lets you focus on implementing the behavior of the node\.
 
 The following diagram shows the AZ Code Generator process for Script Canvas\.
 
-![\[AZ Code Generator and Script Canvas\]](/images/userguide/scripting/script-canvas/script-canvas-custom-nodes-1.png)
+![\[AZ Code Generator and Script Canvas\]](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-1.png)
 
 In **Step 1**, AZ Code Generator processes `MyNode.h` and looks for code generation tags \(source code location: `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\)\. After processing, AZ Code Generator creates a file called `MyNode.generated.h`\.
 
@@ -27,8 +27,8 @@ You must include `MyNode.generated.cpp` the in `MyNode.cpp` file\. This ensures 
 In **Step 3**, AZ Code Generator is finished and the build process continues as normal\. `MyNode.cpp` is compiled and succeeds provided all the generated files are correct\.
 
 **Topics**
-+ [Script Canvas Tags for AZ Code Generator](/docs/userguide/scripting/scriptcanvas/custom-nodes-az-code-generator-tags.md)
-+ [Dynamic Data Slots](/docs/userguide/scripting/scriptcanvas/custom-nodes-dynamic-data.md)
++ [Script Canvas Tags for AZ Code Generator](/docs/user-guide/features/engine/scripting/script-canvas/tags.md)
++ [Dynamic Data Slots](/docs/user-guide/features/scripting/script-canvas/custom-nodes-dynamic-data.md)
 + [Extendable Nodes](/docs/user-guide/features/engine/scripting/script-canvas/extensions.md)
 + [Implementing Node Behavior](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior.md)
 + [Creating Custom Script Canvas Nodes in a Gem](/docs/userguide/scripting/scriptcanvas/custom-nodes-gem.md)

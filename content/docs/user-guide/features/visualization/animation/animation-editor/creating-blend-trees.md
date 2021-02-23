@@ -24,13 +24,13 @@ A blend tree is a collection of nodes with input and output ports that are color
 1. Click the **Save** icon\. Navigate to the directory where you want to save your animation graph\. Type a name for your file and then click **Save**\.
 
 1. In the center pane, on the **Anim Graph** tab, right\-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**\.
-![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-blend-tree-node.png)
+![\[Image NOT FOUND\]](/images/user-guide/actor-animation/anim-graph-blend-tree-node.png)
 
    Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph\.
-![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-palette-blend-tree-node.png)
+![\[Image NOT FOUND\]](/images/user-guide/actor-animation/anim-graph-palette-blend-tree-node.png)
 
 1. Double\-click the blend tree node that you created\. When you double\-click the node, a new link appears above the animation graph with the node name\. The **Final Node** also appears\.
-![\[Image NOT FOUND\]](/images/userguide/actor-animation/anim-graph-node-path.png)
+![\[Image NOT FOUND\]](/images/user-guide/actor-animation/anim-graph-node-path.png)
 
 1. Do the following to add nodes and connections:
 
@@ -51,5 +51,5 @@ A blend tree is a collection of nodes with input and output ports that are color
       + Yellow - The connection curve turns yellow in transition states, such as when you drag a connection between ports\.
 
 **Topics**
-+ [Creating and Visualizing Blend Spaces](/docs/userguide/animation/editor/blend-spaces.md)
-+ [Blending Poses with Blend Nodes](/docs/userguide/animation/editor/blending-poses.md)
++ [Creating and Visualizing Blend Spaces](/docs/user-guide/features/visualization/animation/animation-editor/blend-spaces.md)
++ [Blending Poses with Blend Nodes](/docs/user-guide/features/visualization/animation/animation-editor/blending-poses.md)

@@ -19,7 +19,7 @@ As a best practice, verify that your bundles contain their required assets durin
 
 ## When You Start {#asset-bundler-assets-verifying-as-you-start}
 
-As you start building your game, ensure that you create the references to assets that your product requires at runtime\. For information about how to emit product dependencies for your custom asset types, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md) page\.
+As you start building your game, ensure that you create the references to assets that your product requires at runtime\. For information about how to emit product dependencies for your custom asset types, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md) page\.
 
 ## While You Develop Your Game {#asset-bundler-assets-verifying-as-you-develop-your-game}
 

@@ -23,7 +23,7 @@ To gather data to make these determinations, you can use the Lumberyard Editor c
    ```
 
 1. In the last column in the display of draw call information, note the values under **XTex**\. The **XTex** column shows the number of draw calls when the shader supported maximum of 16 textures is reached\. To reduce the number of draw calls, use a texture atlas\.
-![\[Location of the XTex column in the draw call information output.\]](/images/userguide/game_ui_editor/ui-editor-texture-atlases-8.png)
+![\[Location of the XTex column in the draw call information output.\]](/images/user-guide/game_ui_editor/ui-editor-texture-atlases-8.png)
 
 1. In the Lumberyard Editor console, enter the `ui_ReportDrawCalls` console command\. This command outputs a report of the draw calls for all active canvases into a text file\.
 
@@ -51,4 +51,4 @@ To gather data to make these determinations, you can use the Lumberyard Editor c
 
      Because this limits the number of textures in a texture atlas, having the UI load multiple separate texture atlases is a good practice\.
 
-For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](/docs/userguide/ui/editor/debugging-ui-canvases.md)\.
+For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](/docs/user-guide/features/interactivity/user-interface/editor/debugging-ui-canvases.md)\.
