@@ -9,9 +9,9 @@ Add shape components to entities that have other components that require shapes\
 
 For example, add shape components to your entities to create volumes for the following:
 + Create a trigger volume using the**[Trigger Area](/docs/userguide/components/triggerarea.md)** component\. Entities that enter the volume trigger an action\.
-+ Create a collision volume using the **[PhysX Collider](/docs/userguide/components/physx-collider.md)** component\. Entities that collide with the collision volume respond to the impact, such as slowing down or bouncing back\.
-+ Define reverb or echo effects using the **[Audio Environment](/docs/userguide/components/audio-environment.md)** component\.
-+ Create an audio area using the **[Audio Trigger](/docs/userguide/components/audio-trigger.md)** component so that a specific sound plays in that area of the level\.
++ Create a collision volume using the **[PhysX Collider](/docs/user-guide/features/components/physx-collider.md)** component\. Entities that collide with the collision volume respond to the impact, such as slowing down or bouncing back\.
++ Define reverb or echo effects using the **[Audio Environment](/docs/user-guide/features/components/audio-environment.md)** component\.
++ Create an audio area using the **[Audio Trigger](/docs/user-guide/features/components/audio-trigger.md)** component so that a specific sound plays in that area of the level\.
 
 **Note**
 You can add only one shape component to an entity\. If you need more than one shape on an entity, create child entities\.
@@ -34,10 +34,10 @@ The **Shape** component includes the following shapes and properties:
 
 As a best practice, when you scale a shape, adjust the shape component's properties, such as its **Dimensions**, **Height**, and **Radius**\.
 
-![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/userguide/component/component-shape-scaling-2.png)
+![\[Scale a Box Shape by adjusting its Dimensions values. Scale a Cylinder Shape by adjusting its Height and Radius values.\]](/images/user-guide/component/component-shape-scaling-2.png)
 
 **Tip**
-Modify the shape component's properties instead using the [Scale tool](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/userguide/components/transform.md)** component\.
+Modify the shape component's properties instead using the [Scale tool](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode), which changes the entity's **[Transform](/docs/user-guide/features/components/transform.md)** component\.
 
 **Example**
 See the following examples for the different scaling:
@@ -48,12 +48,12 @@ See the following examples for the different scaling:
 
 1. In uniform normalized scaling, all of the scale values are `1`\.
 
-![\[Nonuniform scaling (1), where X, Y, and Z have different values. Uniform scaling (2), where X, Y, and Z values are the same (in this case, 4). Uniform normalized scaling (3), where X, Y, and Z values are all 1.\]](/images/userguide/component/component-shape-scaling-1.png)
+![\[Nonuniform scaling (1), where X, Y, and Z have different values. Uniform scaling (2), where X, Y, and Z values are the same (in this case, 4). Uniform normalized scaling (3), where X, Y, and Z values are all 1.\]](/images/user-guide/component/component-shape-scaling-1.png)
 If an entity has been scaled nonuniformly, rendering and intersection tests use the largest component of the scale vector\. Although this can work, the best practice is to keep a uniform and, ideally, normalized \(`1`, `1`, `1`\) transform scale, as shown in the third example\.
 
 ## Box Shape Component Properties {#box-shape-component-properties}
 
-![\[The box shape component properties in Lumberyard Editor.\]](/images/userguide/component/box-shape-component-properties.png)
+![\[The box shape component properties in Lumberyard Editor.\]](/images/user-guide/component/box-shape-component-properties.png)
 
 The **Box Shape** component has the following properties\.
 
@@ -65,16 +65,16 @@ The **Box Shape** component has the following properties\.
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
 | Game View |  Renders the box shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl\+G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
-| Dimensions |  Defines dimensions of the shape along all three axes in local space\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Dimensions |  Defines dimensions of the shape along all three axes in local space\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 |  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. |
 
 The **Box Shape** component also has its own Component Mode with several linear manipulators for each axis\.
 
-![\[Box Shape component in the viewport.\]](/images/userguide/component/component-box-shape.png)
+![\[Box Shape component in the viewport.\]](/images/user-guide/component/component-box-shape.png)
 
 ## Capsule Shape Component Properties {#capsule-shape-component-properties}
 
-![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/userguide/component/capsule-shape-component-properties.png)
+![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/capsule-shape-component-properties.png)
 
 The **Capsule Shape**component has the following properties\.
 
@@ -86,12 +86,12 @@ The **Capsule Shape**component has the following properties\.
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
 | Game View |  Renders the shape in game mode\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
-| Height |  The end\-to\-end height of the capsule, including the cylinder and both caps\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
-| Radius |  The radius of the capsule\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Height |  The end\-to\-end height of the capsule, including the cylinder and both caps\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Radius |  The radius of the capsule\. If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Compound Shape Component Properties {#compound-shape-component-properties}
 
-![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/userguide/component/compound-shape-component-properties.png)
+![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/compound-shape-component-properties.png)
 
 With the **Compound Shape** component, you can combine shapes to create a complex object to generate a physics collider, trigger shape, or any other application of shapes\. The individual shapes might or might not be children of the entity with the **Compound Shape** component\.
 
@@ -111,7 +111,7 @@ See the following **Compound Shape** properties\.
 
 ## Cylinder Shape Component Properties {#cylinder-shape-component-properties}
 
-![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/userguide/component/cylinder-shape-component-properties.png)
+![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/cylinder-shape-component-properties.png)
 
 The **Cylinder Shape** component has the following properties\.
 
@@ -123,12 +123,12 @@ The **Cylinder Shape** component has the following properties\.
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
 | Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
-| Height |  The height of the cylinder\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
-| Radius |  The radius of the cylinder\. If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Height |  The height of the cylinder\. If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Radius |  The radius of the cylinder\. If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Disk Shape Component Properties {#disk-shape-component-properties}
 
-![\[See the disk shape component properties in Lumberyard Editor.\]](/images/userguide/component/disk-shape-component-properties.png)
+![\[See the disk shape component properties in Lumberyard Editor.\]](/images/user-guide/component/disk-shape-component-properties.png)
 
 See the following **Disk Shape** properties\.
 
@@ -140,11 +140,11 @@ See the following **Disk Shape** properties\.
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
 | Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
-| Radius |  The radius of the disk\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Radius |  The radius of the disk\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Sphere Shape Component Properties {#sphere-shape-component-properties}
 
-![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/userguide/component/sphere-shape-component-properties.png)
+![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/user-guide/component/sphere-shape-component-properties.png)
 
 See the following **Sphere Shape** properties\.
 
@@ -156,7 +156,7 @@ See the following **Sphere Shape** properties\.
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
 | Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
-| Radius |  The radius of the sphere\.  If the **[Transform](/docs/userguide/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
+| Radius |  The radius of the sphere\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Request EBus Interface {#shape-component-ebuses}
 
@@ -164,7 +164,7 @@ All shape components provide access to two separate request buses\. The first bu
 
 Use the following request functions with the event bus interface to communicate with other components in your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### ShapeComponentRequestsBus {#component-shape-ebus-request}
 

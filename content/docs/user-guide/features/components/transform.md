@@ -55,7 +55,7 @@ Scale interpolation is not supported in the **Transform** component\.
 
 **TransformBus** is the request bus for the **Transform** component\. An entity's transform is the translation, rotation, and scale information\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
@@ -539,7 +539,7 @@ Boolean
 
 **TransformNotificationBus** is the notification bus for the **Transform** component\. Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### OnTransformChanged {#on-transform-changed}
 

@@ -49,7 +49,7 @@ Default value: `False`
 
 Use the following request functions with the **Spawner** component EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 A `SliceInstantiationTicket` is the ID for the slice that spawns\. You can use this ID with the **Spawner** component to interact with the entities that came from the spawned slice\. For example, you can use the [DestroySpawnedSlice](#spawner-ebus-destroy-spawned-slice) function to destroy all entities from that spawned slice\.
 
@@ -227,7 +227,7 @@ Yes
 
 Use the following EBus notification functions with the **Spawner** component to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### OnSpawned {#spawner-ebus-onspawned}
 

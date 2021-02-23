@@ -96,7 +96,7 @@ In the previous bundling method, it was necessary to learn how each asset worked
 
 An Asset Builder is a standalone application that primarily translates intermediate assets to a platform\-native asset format\. An Asset Builder also provides dependency tracking and tasks related to managing asset metadata\.
 
-Lumberyard ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/userguide/asset-builder-custom.md) to support proper asset management and bundling with Lumberyard\.
+Lumberyard ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/user-guide/tutorials/assets/custom-builder.md) to support proper asset management and bundling with Lumberyard\.
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats\. When the Asset Builder for the images run, they create the dependency tree for the performance\-oriented image formats generated from the more general\-use portable image formats, and define them as dependent on the respective portable image format\. If you create the performance\-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler\.
 
@@ -104,7 +104,7 @@ In addition to processing your asset, Asset Builders also determine any product 
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in Lumberyard\. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your Lumberyard installation root\.
 
-For more information, see the [the Asset Builder documentation](/docs/userguide/asset-builder-custom.md)\.
+For more information, see the [the Asset Builder documentation](/docs/user-guide/tutorials/assets/custom-builder.md)\.
 
 ## Define dependencies in your Asset Builder {#asset-builder-define-dependencies}
 

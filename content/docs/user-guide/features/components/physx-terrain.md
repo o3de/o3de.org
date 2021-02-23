@@ -9,7 +9,7 @@ The PhysX Terrain component and associated documentation are legacy features ret
 
 The **PhysX Terrain** component exports and saves the terrain as an asset that loads at runtime\. The **PhysX Terrain** component is required for games in which physics interacts with the terrain\. For example, you can create a terrain collider so that your entities can interact with it, such as a barrel that falls to the ground and then rolls to a stop\.
 
-For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
+For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/features/interactivity/physics/nvidia-physx/intro.md)\.
 
 
 
@@ -19,15 +19,15 @@ For more information about using PhysX components, see [Simulating physics behav
 
 ## PhysX Terrain Component Properties {#physx-terrain-component-properties}
 
-![\[PhysX Terrain component properties.\]](/images/userguide/component/physx/ui-phsx-terrain-component-properties-1.27.png)
+![\[PhysX Terrain component properties.\]](/images/user-guide/component/physx/ui-phsx-terrain-component-properties-1.27.png)
 
 
 | Property | Description |
 | --- | --- |
-| Collision Layer |  Specifies on which **Collision Layer** the terrain exists\. You can configure **Collision Layer** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/userguide/nvidia/physx/configuration.md)\.  |
-| Collision Group |  Specifies the group of layers in which the terrain collides\. You can configure **Collision Group** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/userguide/nvidia/physx/configuration.md)\.  |
+| Collision Layer |  Specifies on which **Collision Layer** the terrain exists\. You can configure **Collision Layer** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration.md)\.  |
+| Collision Group |  Specifies the group of layers in which the terrain collides\. You can configure **Collision Group** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration.md)\.  |
 | HeightField Asset |  A read\-only parameter that specifies the height field asset that contains the terrain\. This property can't be changed\.  |
-| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in Lumberyard Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/userguide/nvidia/physx/configuration-debugger.md)\.  |
+| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in Lumberyard Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.  |
 
 ## Creating a PhysX Terrain Collider {#creating-physx-terrain-collider}
 

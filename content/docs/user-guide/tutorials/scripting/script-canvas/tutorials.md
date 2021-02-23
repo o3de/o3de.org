@@ -14,6 +14,6 @@ Use the following **Script Canvas** tutorials to learn about the Lumberyard visu
 
 **Topics**
 + [Prerequisites](#prerequisites-for-script-canvas-tutorial)
-+ [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md)
-+ [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/userguide/scripting/scriptcanvas/tutorial-trigger-areas.md)
-+ [Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions](/docs/userguide/scripting/scriptcanvas/tutorial-collisions-targets.md)
++ [Script Canvas Tutorial: Creating a Controllable Entity](/docs/user-guide/tutorials/scripting/script-canvas/tutorial-controllable-character.md)
++ [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/user-guide/tutorials/scripting/script-canvas/tutorial-trigger-areas.md)
++ [Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions](/docs/user-guide/tutorials/scripting/script-canvas/tutorial-collisions-targets.md)

@@ -16,7 +16,7 @@ When you add an animation using the Track View, the animation track is applied t
 **Example**
 The component entity **GameObject** contains **Transform**, **Mesh**, and **Point Light** components\. When you add the **GameObject** component entity to a sequence in the Track View, you can see all the components in the node browser\. The component entity node is a reference to which components are animated in the sequence\.
 
-![\[Track View and the Entity Inspector with the same component entities.\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
+![\[Track View and the Entity Inspector with the same component entities.\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
 
 Component nodes that can be animated are nested as children under the associated entity node\. You can add animation tracks to any of these component nodes\.
 
@@ -28,9 +28,9 @@ Component nodes that can be animated are nested as children under the associated
 
 Not all components can be animated in the Track View\. For example, you can add the **Visibility** track only for the **Mesh** component\. The **Point Light** component has multiple tracks that you can add to the sequence\. In the following example, the **Color**, **DiffuseMultiplier**, and **Visible** tracks are added to the sequence\.
 
-![\[Add tracks from component entity nodes\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
+![\[Add tracks from component entity nodes\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
 
-For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/userguide/components/entity-system-track-view.md)\.
+For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)\.
 
 ## Naming and Identifying Component Entities {#cinematics-track-view-component-entity-name-components}
 
@@ -38,7 +38,7 @@ Lumberyard uses entity IDs to identify component entities, which means that you 
 
 **Example**
 
-![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/userguide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
+![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
 If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing\. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md)\.
 
@@ -61,8 +61,8 @@ Component nodes that can be animated are nested as children under the associated
 
 **Note**
 Some components support only a limited number of tracks that can be animated in a sequence\. For more information for component\-specific properties, see the [Component Reference](/docs/userguide/components/components.md)\.
-Not all components can be animated in the Track View\. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/userguide/components/entity-system-track-view.md)\.
+Not all components can be animated in the Track View\. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)\.
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline\. In keyframes, you specify where in the timeline you want to animate the property and edit its properties\.
 
-For more information, see [Adding and Removing Animation Keys on Tracks](/docs/userguide/adding-removing-animation-keys-on-tracks.md)\.
+For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/features/visualization/cinematics/adding-removing-animation-keys-on-tracks.md)\.

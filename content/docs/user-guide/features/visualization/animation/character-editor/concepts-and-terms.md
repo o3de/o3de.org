@@ -144,7 +144,7 @@ Each transition condition is controlled by a set of parameters\. Your Lumberyard
 
 You can set this up in a game level by adding an **Actor** and an **Animation** component to an entity with the **Entity Inspector**\.
 
-For more information, see [Animation Editor Components](/docs/userguide/animation/character-editor/components.md)\.
+For more information, see [Animation Editor Components](/docs/user-guide/features/visualization/animation/character-editor/components.md)\.
 
 ### Adding Parameters to an Animation Graph {#adding-parameters-to-an-animation-graph}
 
@@ -176,7 +176,7 @@ You can add parameters to an animation graph in the **Parameters** pane\.
 
 You can name parameter types to identify the purpose of the control\. For example, you can name parameters such as `movement_speed`, `movement_direction`, `jumping` and `attacking`\. As an artist and game designer, you can specify the parameters that best control your animation graph\.
 
-![\[Create parameters for an animation graph in the Animation Editor.\]](/images/userguide/actor-animation/animation-editor-parameters-pane.png)
+![\[Create parameters for an animation graph in the Animation Editor.\]](/images/user-guide/actor-animation/animation-editor-parameters-pane.png)
 
 ### Adding a Parameter Node to a Blend Tree {#adding-a-parameter-node-to-your-blend-tree}
 
@@ -188,11 +188,11 @@ After you create your parameters in the **Parameter** pane, you can add a parame
 
 1. In the **Attributes** pane, click **select parameter** and specify the parameter that you want\.
 
-![\[Select your parameter in your animation graph in the Animation Editor.\]](/images/userguide/actor-animation/animation-editor-attributes-pane-02.png)
+![\[Select your parameter in your animation graph in the Animation Editor.\]](/images/user-guide/actor-animation/animation-editor-attributes-pane-02.png)
 
 You can rename parameter nodes and specify them to provide input to other nodes\. In the following example, the **speed\_parameter** node provides input to the blend tree\.
 
-![\[Use parameter nodes in the Animation Editor to specify parameter types and values for your animation graph.\]](/images/userguide/actor-animation/animation-editor-blend-tree.png)
+![\[Use parameter nodes in the Animation Editor to specify parameter types and values for your animation graph.\]](/images/user-guide/actor-animation/animation-editor-blend-tree.png)
 
 ## About Motion Sets {#understanding-motion-sets}
 

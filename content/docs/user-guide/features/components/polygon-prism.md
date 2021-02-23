@@ -24,7 +24,7 @@ The **Polygon Prism Shape** component supports only simple polygons\. It can't h
 
 ## Polygon Prism Shape Component Properties {#component-polygon-prism-properties}
 
-![\[The Polygon Prism Shape component properties in Lumberyard Editor.\]](/images/userguide/component/polygon-prism-component-properties.png)
+![\[The Polygon Prism Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/polygon-prism-component-properties.png)
 
 The **Polygon Prism Shape** component has the following properties\.
 
@@ -41,7 +41,7 @@ The **Polygon Prism Shape** component has the following properties\.
 
 By default, when you add the **Polygon Prism Shape** component to an entity, the component has four vertices\.
 
-![\[Default Polygon Prism Shape component with four vertices.\]](/images/userguide/component/polygon-prism-shape-component-1.png)
+![\[Default Polygon Prism Shape component with four vertices.\]](/images/user-guide/component/polygon-prism-shape-component-1.png)
 
 ## Working with Polygon Prism Components {#working-with-polygon-prism-components}
 
@@ -52,7 +52,7 @@ Each vertex has one planar and two linear manipulators\. Combined, these are cal
   + In the **Polygon Prism Shape** component property window, change the vertex values\.
   + Select a vertex\. In the translation manipulator, click and drag the green or red arrow to a position\.
 
-![\[Select a vertex and a translation manipulator appears.\]](/images/userguide/component/polygon-prism-shape-component-2.png)
+![\[Select a vertex and a translation manipulator appears.\]](/images/user-guide/component/polygon-prism-shape-component-2.png)
 
 **Note**
 The manipulators follow the grid snap setting that you can configure in the Lumberyard Editor toolbar\.
@@ -62,14 +62,14 @@ You can use the blue arrow in the center of the volume to change the height\. {#
 **To change the height of the polygon prism**
 + Drag the blue arrow to change the height of the polygon prism\.
 
-![\[Change the height of the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-3.png)
+![\[Change the height of the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-3.png)
 
 **Note**
 If the entity is scaled, the manipulators continue to behave correctly, but the scaling must be uniform so that the x, y, and z scale values match\.
 
 **To select multiple vertices**
 + Press **Shift** and select the vertices\. Selected vertices appear yellow\.
-![\[Select multiple vertices for the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-4.png)
+![\[Select multiple vertices for the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-4.png)
 
 **Note**
 Currently, you can't click and draw a box around the vertices to select them\.
@@ -87,26 +87,26 @@ You can also add vertices to the polygon prism\.
 **To add a vertex to the polygon prism**
 
 1. Pause on a line and hold **Ctrl**\. A preview appears where you can add a vertex\.
-![\[Add vertices to the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-5.png)
+![\[Add vertices to the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-5.png)
 
 1. Click to add the vertex to the polygon prism\.
-![\[A yellow box appears when you add the vertex to the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-6.png)
+![\[A yellow box appears when you add the vertex to the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-6.png)
 
 You can also delete vertices from the polygon prism\.
 
 **To delete a vertex from a polygon prism**
 
 1. Hold **Alt** and pause on a vertex\. The vertex appears gray\.
-![\[Delete a vertex from the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-7.png)
+![\[Delete a vertex from the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-7.png)
 
 1. Click the vertex to remove it from the polygon prism\. You can also select a vertex and press **Delete**\.
-![\[The vertex is removed from the polygon prism.\]](/images/userguide/component/polygon-prism-shape-component-8.png)
+![\[The vertex is removed from the polygon prism.\]](/images/user-guide/component/polygon-prism-shape-component-8.png)
 
 ## EBus Request Bus Interface {#component-polygon-prism-ebus-request}
 
-Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game\. The **Polygon Prism Shape** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/userguide/components/vertex-container.md)\.
+Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game\. The **Polygon Prism Shape** component also uses `VertexContainer` functions\. For more information, see [Vertex Containers](/docs/user-guide/features/components/vertex-container.md)\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 
 ****

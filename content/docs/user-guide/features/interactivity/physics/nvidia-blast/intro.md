@@ -13,7 +13,7 @@ title: Simulated destruction with NVIDIA Blast
 
  With **NVIDIA Blast** in Amazon Lumberyard, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
 
-To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/userguide/nvidia/blast/_index.md)\.
+To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/features/interactivity/physics/nvidia-blast/_index.md)\.
 
 **Note**
 NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
@@ -34,25 +34,25 @@ These are the features that NVIDIA Blast provides:
 
 See the following topics for detailed information about NVIDIA Blast\.
 
-[Blast Family component](/docs/userguide/components/blast-family.md) \- Blast Family component reference\.
+[Blast Family component](/docs/user-guide/features/components/blast-family.md) \- Blast Family component reference\.
 
-[Blast Family Mesh Data component](/docs/userguide/components/blast-family-mesh-data.md) \- Blast Family Mesh Data component reference\.
+[Blast Family Mesh Data component](/docs/user-guide/features/components/blast-family-mesh-data.md) \- Blast Family Mesh Data component reference\.
 
 [Install NVIDIA Blast plug\-ins](/docs/userguide/nvidia/blast/install-houdini-plugin#nvidia-blast-plugin-install) \- Install the NVIDIA Blast plug\-ins and Houdini Digital Assets\.
 
-[Create assets for NVIDIA Blast](/docs/userguide/nvidia/blast/create-blast-asset.md) \- Fracture meshes in Houdini and export assets for NVIDIA Blast\.
+[Create assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/create-blast-asset.md) \- Fracture meshes in Houdini and export assets for NVIDIA Blast\.
 
-[Processing assets for NVIDIA Blast](/docs/userguide/nvidia/blast/process-blast-asset.md) \- Process NVIDIA Blast assets for Lumberyard\.
+[Processing assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/process-blast-asset.md) \- Process NVIDIA Blast assets for Lumberyard\.
 
-[Simulate destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/simulate.md) \- Create entities with NVIDIA Blast assets and simulate destruction\.
+[Simulate destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/simulate.md) \- Create entities with NVIDIA Blast assets and simulate destruction\.
 
-[Partial destruction with NVIDIA Blast](/docs/userguide/nvidia/blast/static-chunks.md) \- Use attributes to create partial destruction\.
+[Partial destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/static-chunks.md) \- Use attributes to create partial destruction\.
 
-[Specify destruction properties with Blast materials](/docs/userguide/nvidia/blast/materials.md) \- Use a blast material to define the force required to trigger destruction\.
+[Specify destruction properties with Blast materials](/docs/user-guide/features/interactivity/physics/nvidia-blast/materials.md) \- Use a blast material to define the force required to trigger destruction\.
 
-[NVIDIA Blast visual debugger](/docs/userguide/nvidia/blast/debug.md) \- Use the visual debugger for NVIDIA Blast\.
+[NVIDIA Blast visual debugger](/docs/user-guide/features/interactivity/physics/nvidia-blast/debug.md) \- Use the visual debugger for NVIDIA Blast\.
 
-[Script Canvas nodes for NVIDIA Blast](/docs/userguide/nvidia/blast/script-canvas.md) \- Script destruction simulation in Script Canvas\.
+[Script Canvas nodes for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/script-canvas.md) \- Script destruction simulation in Script Canvas\.
 
 ## NVIDIA Blast references {#nvidia-blast-references}
 

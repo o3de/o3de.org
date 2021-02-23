@@ -10,7 +10,7 @@ This tutorial builds on what you learned in the previous two tutorials\. In the 
 
 **Example**
 
-![\[Example Script Canvas graph with collision targets.\]](/images/userguide/scripting/script-canvas/target.gif)
+![\[Example Script Canvas graph with collision targets.\]](/images/user-guide/scripting/script-canvas/target.gif)
 
 This involves several tasks:
 + Spawn entities
@@ -19,7 +19,7 @@ This involves several tasks:
 + Add tag filtering
 
 ## Prerequisites {#script-canvas-tutorial-collisions-target-prerequisites}
-+ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/userguide/scripting/scriptcanvas/tutorial-controllable-character.md) and [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/userguide/scripting/scriptcanvas/tutorial-trigger-areas.md)\.
++ Complete the [Script Canvas Tutorial: Creating a Controllable Entity](/docs/user-guide/tutorials/scripting/script-canvas/tutorial-controllable-character.md) and [Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables](/docs/user-guide/tutorials/scripting/script-canvas/tutorial-trigger-areas.md)\.
 
 **Topics**
 + [Prerequisites](#script-canvas-tutorial-collisions-target-prerequisites)
@@ -34,7 +34,7 @@ This involves several tasks:
 
 ## Step 1: Set Up a Projectile Entity {#script-canvas-tutorial-collisions-targets-step-one}
 
-To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Script Canvas](/docs/userguide/components/script-canvas.md)** components\.
+To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** components\.
 
 **To create a projectile entity**
 
@@ -45,12 +45,12 @@ To create a projectile entity, create an entity and then add the **[Mesh](/docs/
    1. For **Name**, enter **Projectile**\.
 
    1. In the **Transform** component, for **Scale**, set **X** to **0\.25**, **Y** to **0\.25**, and **Z** to **0\.25**\.
-![\[Transform properties for the Projectile entity.\]](/images/userguide/scripting/script-canvas/script-canvas-projectile-transform-properties.png)
+![\[Transform properties for the Projectile entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-projectile-transform-properties.png)
 
    1. Click **Add Component** and then choose the **Mesh** component\.
 
    1. In the **Mesh** component, for **Mesh asset**, click the browse \(**\.\.\.**\) button, select the `\SamplesProject\Objects\default\primitive_sphere.cgf` file, and then click **OK**\.
-![\[Select the mesh asset for the projectile entity.\]](/images/userguide/scripting/script-canvas/pick-static-mesh-window-primitive-sphere.png)
+![\[Select the mesh asset for the projectile entity.\]](/images/user-guide/scripting/script-canvas/pick-static-mesh-window-primitive-sphere.png)
 
 1. In the **Entity Inspector**, click **Add Component** and then choose the following components:
    +  **Rigid Body Physics**
@@ -66,11 +66,11 @@ To create a projectile entity, create an entity and then add the **[Mesh](/docs/
 1. In the **Save As** dialog box, for **File name**, enter **projectile** and then click **Save**\.
 
 1. In the **Script Canvas** component, for **Script Canvas Asset**, click the browse \(**\.\.\.**\) button, select the `projectile.scriptcanvas` file, and then click **OK**\.
-![\[Select the Script Canvas graph file for the entity.\]](/images/userguide/scripting/script-canvas/script-canvas-pick-script-canvas-window.png)
+![\[Select the Script Canvas graph file for the entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-pick-script-canvas-window.png)
 
 1. Verify that the **Projectile** entity looks like the following\.
 **Example**
-![\[The components and properties for the Projectile entity.\]](/images/userguide/scripting/script-canvas/script-canvas-entity-projectile.png)
+![\[The components and properties for the Projectile entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-entity-projectile.png)
 
 ## Step 2: Create a Script to Propel the Projectile Forward {#script-canvas-tutorial-collisions-targets-step-two}
 
@@ -89,7 +89,7 @@ Now that you've set up a projectile, you can create a script to propel the proje
 1.  From **Entity**, **Transform**, drag the **Get Forward** node to the graph\.
 
 1. From **On Graph Start**, drag the **Out** pin to connect it to the **In** pin of the **Get Forward** node\.
-![\[Get Forward node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-on-graph-start-get-forward-connection.png)
+![\[Get Forward node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-on-graph-start-get-forward-connection.png)
 
 1. In the **Get Forward** node, for **Scale**, enter **200**\.
 
@@ -98,33 +98,33 @@ Now that you've set up a projectile, you can create a script to propel the proje
 1. From **Get Forward**, drag the **Out** pin to connect it to the **In** pin of the **Set Velocity** node\.
 
 1. From** Get Forward**, drag the **Forward** pin to the **Velocity** pin of the **Set Velocity** node\.
-![\[Set Velocity node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-get-forward-set-velocity-connection.png)
+![\[Set Velocity node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-get-forward-set-velocity-connection.png)
 
 1. To set a lifetime for the projectile, do the following:
 
    1. In the **Node Palette**, enter **delay** in the search box\.
-![\[Delay node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-delay-node.png)
+![\[Delay node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-delay-node.png)
 
    1. Under **Timing**, drag **Delay** from the **Node Palette** to the graph\.
 
    1. From **On Graph Start**, drag the **Out** pin to connect it to the **In** pin of the **Delay** node\.
 
    1. In the **Delay** node, for **Time**, enter **1\.0**\.
-![\[Connect the On Graph Start node to the Delay node.\]](/images/userguide/scripting/script-canvas/script-canvas-delay-node-properties-connections.png)
+![\[Connect the On Graph Start node to the Delay node.\]](/images/user-guide/scripting/script-canvas/script-canvas-delay-node-properties-connections.png)
 
 1. To destroy the projectile after the set time, do the following:
 
    1. In the **Node Palette**, enter **destroy** in the search box\.
 
    1. Under **Entity**, **Game Entity**, drag **Destroy Game Entity and Descendants** from the **Node Palette** to the graph\.
-![\[Use the Destroy Game Entity and Descendents node to destroy entities that are generated.\]](/images/userguide/scripting/script-canvas/script-canvas-game-entity-destroy-game-entity-descendants-node.png)
+![\[Use the Destroy Game Entity and Descendents node to destroy entities that are generated.\]](/images/user-guide/scripting/script-canvas/script-canvas-game-entity-destroy-game-entity-descendants-node.png)
 
    1. From **Delay**, drag the **Out** pin to connect it to the **In** pin of the **Destroy Game Entity and Descendants** node\.
-![\[Connect the Delay node to the Destroy Game Entity and Descendents node.\]](/images/userguide/scripting/script-canvas/script-canvas-destroy-gem-entity-descendents-node-properties-connections.png)
+![\[Connect the Delay node to the Destroy Game Entity and Descendents node.\]](/images/user-guide/scripting/script-canvas/script-canvas-destroy-gem-entity-descendents-node-properties-connections.png)
 
    1. Verify that your `projectile.scriptcanvas` graph looks like the following\.
 **Example**
-![\[Example script for the projectile entity in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-projectile-script-example.png)
+![\[Example script for the projectile entity in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-projectile-script-example.png)
 
 1. In the **Script Canvas** editor, choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 
@@ -141,10 +141,10 @@ Now that you've created a projectile script, you can save the projectile entity 
 1. To enable the projectile to spawn, do the following:
 
    1. In the **Asset Browser**, navigate to the `projectile.slice` file that you just created\.
-![\[Select the projectile.slice file in the Asset Browser.\]](/images/userguide/scripting/script-canvas/script-canvas-asset-browser-projectile-slice-file.png)
+![\[Select the projectile.slice file in the Asset Browser.\]](/images/user-guide/scripting/script-canvas/script-canvas-asset-browser-projectile-slice-file.png)
 
    1. Right\-click `projectile.slice` and choose **Set Dynamic Slice**\. Scripts that run on a dynamic slice will properly remap source entity assignments to the entity that the graph runs on\.
-![\[Set the projectile.slice file as a dynamic slice in the Asset Browser.\]](/images/userguide/scripting/script-canvas/script-canvas-projectile-dynamic-slice.png)
+![\[Set the projectile.slice file as a dynamic slice in the Asset Browser.\]](/images/user-guide/scripting/script-canvas/script-canvas-projectile-dynamic-slice.png)
 
 1. In the **Entity Outliner**, right\-click **Projectile** and then click **Delete**\. Because you will spawn the projectile entity dynamically from your player script, you no longer need the entity in your scene\.
 
@@ -160,13 +160,13 @@ Now that you've created a slice, you can set up your **Player** entity to spawn 
 
 1. In the **Transform** component, for the **Translate Y** property, enter **1\.0**\. This sets the spawn point 1 meter in front of the parent entity\.
 
-1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](/docs/userguide/components/spawner.md)** component\.
+1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](/docs/user-guide/features/components/spawner.md)** component\.
 
 1. In the **Spawner** component, for **Dynamic slice**, click the browse \(**\.\.\.**\) icon, select the `projectile.slice` file, and then click **OK**\.
-![\[Select the projectile.slice for the Spawner component.\]](/images/userguide/scripting/script-canvas/script-canvas-pick-dynamic-slice-window.png)
+![\[Select the projectile.slice for the Spawner component.\]](/images/user-guide/scripting/script-canvas/script-canvas-pick-dynamic-slice-window.png)
 
 1. Verify that the **spawner** entity looks like the following\.
-![\[The components and properties for the spawner entity.\]](/images/userguide/scripting/script-canvas/script-canvas-entity-spawner.png)
+![\[The components and properties for the spawner entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-entity-spawner.png)
 
 ## Step 5: Set Up the Input Binding for the Projectile {#script-canvas-tutorial-collisions-targets-step-five}
 
@@ -176,7 +176,7 @@ Now that you've added the **Spawner** component, you can set up the input bindin
 
 1. In Lumberyard Editor, in the **Entity Outliner**, select the **Player** entity\.
 
-1. In the **Entity Inspector**, under **Input**, click the **Input Bindings Editor** icon ![\[Image NOT FOUND\]](/images/userguide/scripting/script-canvas/input-bindings-editor-icon.png)\.
+1. In the **Entity Inspector**, under **Input**, click the **Input Bindings Editor** icon ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/input-bindings-editor-icon.png)\.
 
 1. In the **Edit Asset** window, do the following:
 
@@ -193,7 +193,7 @@ Now that you've added the **Spawner** component, you can set up the input bindin
    1. For **Input Name**, choose **keyboard\_key\_edit\_space**\.
 
    1. Verify that your settings appear as shown in the following\.
-![\[Example inputbindings for the entity.\]](/images/userguide/scripting/script-canvas/player-inputbindings-editor-shoot.png)
+![\[Example inputbindings for the entity.\]](/images/user-guide/scripting/script-canvas/player-inputbindings-editor-shoot.png)
 
    1. In the **Edit Asset** window, choose **File**, **Save**\.
 
@@ -214,17 +214,17 @@ Now that you've set up the input binding, you can add logic to the **Player** sc
    1. Under **Gameplay**, **Input**, drag **Input Handler** from the **Node Palette** to the graph\. **Input Handler** is an event node\. When an event occurs, the event node sends a message to the script\.
 
    1. For **Event Name**, enter **shoot**\.
-![\[Input Handler node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-input-handler-node.png)
+![\[Input Handler node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-input-handler-node.png)
 
 1. Do the following to control the firing rate for the shoot event:
 
    1. In the **Node Palette**, enter **once** in the search box\.
 
    1. Under **Logic**, drag **Once** from the **Node Palette** to the graph\.
-![\[Once node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-once-node.png)
+![\[Once node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-once-node.png)
 
    1. From **Input Handler**, drag the **Held** pin to connect it to the **In** pin of the **Once** node\.
-![\[Once node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-input-handler-once-connection.png)
+![\[Once node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-input-handler-once-connection.png)
 
    1. In the **Node Palette**, enter **spawn** in the search box\.
 
@@ -233,12 +233,12 @@ Now that you've set up the input binding, you can add logic to the **Player** sc
    1. From **Once**, drag the **Out** pin to connect it to the **In** pin of the **Spawn** node\.
 
    1. In the **Spawn** node, for **Source**, enter the name of the child entity with the **Spawner** component attached from [Step 4](#script-canvas-tutorial-collisions-targets-step-four)\.
-![\[Connect the Once node to the Spawn node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-once-spawn-connection.png)
+![\[Connect the Once node to the Spawn node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-once-spawn-connection.png)
 
    1. In the **Node Palette**, enter **delay** in the search box\.
 
    1. Under **Timing**, drag **Delay** from the **Node Palette** to the graph\.
-![\[Delay node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-delay-node.png)
+![\[Delay node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-delay-node.png)
 
    1. From **Spawn**, drag the **Out** pin to connect it to the **In** pin of the **Delay** node\.
 
@@ -250,7 +250,7 @@ Node execution always flows from the left side to the right side of a node\. For
 
 1. Verify that your `player.scriptcanvas` graph looks like the following\.
 **Example**
-![\[Example script for the spawned entities.\]](/images/userguide/scripting/script-canvas/script-canvas-spawn-delay-connection-properties.png)
+![\[Example script for the spawned entities.\]](/images/user-guide/scripting/script-canvas/script-canvas-spawn-delay-connection-properties.png)
 
 1. Choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 
@@ -275,12 +275,12 @@ Now that the **Player** entity shoots projectiles, you can add a **Target** enti
 1. In Lumberyard Editor, create an entity: Right\-click in the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
 
 1. In the **Entity Inspector**, for **Name**, enter **Target**\.
-![\[Create an entity named Target.\]](/images/userguide/scripting/script-canvas/script-canvas-entity-inspector-name-target.png)
+![\[Create an entity named Target.\]](/images/user-guide/scripting/script-canvas/script-canvas-entity-inspector-name-target.png)
 
 1. Click **Add Component** and then choose the **Mesh** component\.
 
 1. In the **Mesh** component, for **Mesh asset**, click the browse \(**\.\.\.**\) button, select the `\SamplesProject\Objects\default`\\`primitive_cylinder.cgf` file, and then click **OK**\.
-![\[Assign a mesh asset to the Target entity.\]](/images/userguide/scripting/script-canvas/script-canvas-pick-static-mesh-primitive-cylinder.png)
+![\[Assign a mesh asset to the Target entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-pick-static-mesh-primitive-cylinder.png)
 
 1. Click **Add Component** and choose the following components:
    + **Static Physics**
@@ -288,11 +288,11 @@ Now that the **Player** entity shoots projectiles, you can add a **Target** enti
    + **Tag**
 
 1. In the **Tag** component, click **\+** to add a tag and for **\[0\]**, enter **Target**\.
-![\[Tag component attached to the Target entity.\]](/images/userguide/scripting/script-canvas/script-canvas-tag-component-properties.png)
+![\[Tag component attached to the Target entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-tag-component-properties.png)
 
 1. Verify that your **Target** entity appears like the following\.
 **Example**
-![\[Example components attached to the Target entity.\]](/images/userguide/scripting/script-canvas/script-canvas-target-entity-component-properties.png)
+![\[Example components attached to the Target entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-target-entity-component-properties.png)
 
 ## Step 8: Add Logic to the Projectile to Destroy Target Entities {#script-canvas-tutorial-collisions-targets-step-eight}
 
@@ -307,13 +307,13 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
    1. In the **Node Palette**, enter **collision** in the search box\.
 
    1. Under **Physics**, **Physics Component**, drag **On Collision** from the **Node Palette** to the graph\. This node has a special data enter called collision\.
-![\[On Collision node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-physics-on-collision-component.png)
+![\[On Collision node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-physics-on-collision-component.png)
 
 1. Do the following to add a **Set hit** node:
 
    1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\. You can use variables to store and modify persistent values in your graph\.
 
-      For more information, see [Managing Script Canvas Variables](/docs/userguide/scripting/scriptcanvas/managing-variables.md)\.
+      For more information, see [Managing Script Canvas Variables](/docs/user-guide/features/scripting/script-canvas/managing-variables.md)\.
 
    1. Select **Collision**, double\-click **Variable 1** and then rename the variable to **hit**\.
 
@@ -322,7 +322,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
 1. Select the **Out** pin for **On Collision** and drag to connect it to the **In** pin for the **Set hit** node\.
 
 1. From **On Collision**, drag the **Collision** pin to connect it to the **Collision** pin of the **Set hit** node\.
-![\[Connect the On Collision node to the Set hit variable node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-set-hit-collision-connections.png)
+![\[Connect the On Collision node to the Set hit variable node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-set-hit-collision-connections.png)
 
 1. Do the following to add tags:
 
@@ -333,12 +333,12 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
    1. From **Set hit**, drag the **Out** pin to connect it to the **In** pin of the **Create CRC32** node\.
 
    1. In the **Create CRC32** node, for **String**, enter **Target**\.
-![\[Connect the Set hit node to the Create CRC32 node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-crc32-set-hit-connection.png)
+![\[Connect the Set hit node to the Create CRC32 node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-crc32-set-hit-connection.png)
 
    1. In the **Node Palette**, enter **tag** in the search box\.
 
    1. Under **Gameplay**, **Tag**, drag **Has Tag** from the **Node Palette** to the graph\.
-![\[Has Tag node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-has-tag-node.png)
+![\[Has Tag node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-has-tag-node.png)
 
    1. From **Create CRC32**, drag the **CRC32** pin to connect it to the **Tag** pin of the **Has Tag** node\.
 
@@ -351,7 +351,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
    1. From **Create CRC32**, drag the **Out** pin to connect it to the **In** pin of the **Get hit** node\.
 
    1. From **Get hit**, drag the **Out** pin to the **In** pin of the **Has Tag** node\.
-![\[Connect the Get hit variable node to the Has Tag node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-get-hit-has-tag-connection.png)
+![\[Connect the Get hit variable node to the Has Tag node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-get-hit-has-tag-connection.png)
 
 1. Do the following to add the **If** node:
 
@@ -362,14 +362,14 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
    1.  From **Has Tag**, drag the **Out** pin to connect it to the **In** pin of the **If** node\.
 
    1. From **Has Tag**, drag the **Result** pin to connect it to the **Condition** pin for the **If** node\.
-![\[Connect the Has Tag node in to the If node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-has-tag-if-nodes-connection.png)
+![\[Connect the Has Tag node in to the If node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-has-tag-if-nodes-connection.png)
 
 1. Do the following to add a destroy node:
 
    1. In the **Node Palette**, enter **destroy** in the search box\.
 
    1. Under **Entity**, **Game Entity**, drag **Destroy Game Entity and Descendants** from the **Node Palette** to the graph\.
-![\[Destroy Game Entity and Descendants node in Script Canvas.\]](/images/userguide/scripting/script-canvas/script-canvas-destroy-game-entity-descendants-node.png)
+![\[Destroy Game Entity and Descendants node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-destroy-game-entity-descendants-node.png)
 
    1. From **If**, drag the **True** pin to connect it to the **In** pin of the **Destroy Game Entity and Descendants** node\.
 
@@ -377,7 +377,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
 
    1. Verify that your `projectile.scriptcanvas` graph looks like the following\.
 **Example**
-![\[Example Script Canvas graph for the projectile entity.\]](/images/userguide/scripting/script-canvas/script-canvas-projectile-script-example-2.png)
+![\[Example Script Canvas graph for the projectile entity.\]](/images/user-guide/scripting/script-canvas/script-canvas-projectile-script-example-2.png)
 
 1. In the **Script Canvas** editor, choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 

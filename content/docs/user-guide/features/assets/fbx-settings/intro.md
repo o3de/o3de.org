@@ -16,13 +16,13 @@ Meshes, actors, PhysX colliders, and motions created in third\-party content cre
 
 **Topics**
 + [FBX Settings introduction](#fbx-settings-intro)
-+ [FBX Settings export properties](/docs/userguide/fbx/properties.md)
-+ [FBX Settings mesh export](/docs/userguide/fbx/mesh-export.md)
-+ [FBX Settings actor export](/docs/userguide/fbx/actor-export.md)
-+ [FBX Settings motion export](/docs/userguide/fbx/motion-export.md)
-+ [FBX Settings PhysX export](/docs/userguide/fbx/physx-export.md)
-+ [Multiple UV sets for meshes and actors](/docs/userguide/fbx/multiple-uv-sets.md)
-+ [FBX soft naming conventions](/docs/userguide/fbx/settings-soft-naming.md)
++ [FBX Settings export properties](/docs/user-guide/features/assets/fbx-settings/properties.md)
++ [FBX Settings mesh export](/docs/user-guide/features/assets/fbx-settings/mesh-export.md)
++ [FBX Settings actor export](/docs/user-guide/features/assets/fbx-settings/actor-export.md)
++ [FBX Settings motion export](/docs/user-guide/features/assets/fbx-settings/motion-export.md)
++ [FBX Settings PhysX export](/docs/user-guide/features/assets/fbx-settings/physx-export.md)
++ [Multiple UV sets for meshes and actors](/docs/user-guide/features/assets/fbx-settings/multiple-uv-sets.md)
++ [FBX soft naming conventions](/docs/user-guide/features/assets/fbx-settings/settings-soft-naming.md)
 
 ## FBX Settings introduction {#fbx-settings-intro}
 

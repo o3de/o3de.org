@@ -13,7 +13,7 @@ title: 'Lumberyard Editors and Tools'
 
 Lumberyard provides the following suite of applications, editors, and tools for game development\.
 
-[Animation Editor](/docs/userguide/char-intro.md)
+[Animation Editor](/docs/user-guide/features/visualization/animation/char-intro.md)
 Manages character animations, attachments, and physics simulations along with blendspace and animation layering\.
 
 [Asset Browser](/docs/user-guide/features/editor/asset-browser.md)
@@ -22,7 +22,7 @@ Displays all game assets available for use\.
 [Asset Processor](/docs/user-guide/features/assets/processor.md)
 Runs in the background when you launch Lumberyard Editor, monitoring input directories for changes in source files and automatically generating platform\-specific game assets as they change\.
 
-[Audio Controls Editor](/docs/userguide/audio/atl-editor.md)
+[Audio Controls Editor](/docs/user-guide/features/interactivity/audio/atl-editor.md)
 Manages audio translation layer \(ATL\) controls and events for the audio system\.
 
 [Animation Editor](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-editor.html) \(Legacy\)
@@ -40,10 +40,10 @@ Displays the ID and name for component entity system objects\.
 [Entity Outliner](/docs/user-guide/features/editor/entity-outliner.md)
 Displays all component entities used for a level\.
 
-[FBX Settings](/docs/userguide/fbx/intro.md)
+[FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)
 Imports single static meshes and materials from FBX\.
 
-[Layers](/docs/userguide/components/entity-outliner-layers.md)
+[Layers](/docs/user-guide/features/editor/layers.md)
 Organizes level data into discrete files\.
 
 Lens Flare Editor
@@ -82,7 +82,7 @@ Standalone application used to tell the Waf build system which Gems to include i
 [Resource Compiler](/docs/user-guide/features/assets/processor.md)
 Compresses and processes source game asset files and creates package files\.
 
-[Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)
+[Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)
 Create game logic and behaviors with Lumberyard's new visual scripting environment\.
 
 Script Terminal
@@ -103,11 +103,11 @@ Creates and paints terrain texture layers in your level\.
 [Time of Day Editor](/docs/userguide/sky/intro.md)
 Creates and manages day-night cycles and other dynamic sky effects\.
 
-[Track View Editor](/docs/userguide/cinematics/track-view/editor.md)
+[Track View Editor](/docs/user-guide/features/visualization/cinematics/track-view/editor.md)
 Creates and manages cinematic scenes and sequences; consists of the Track View and **Curves Editor**\.
 
-[UI Editor](/docs/userguide/ui/editor/intro.md)
+[UI Editor](/docs/user-guide/features/interactivity/user-interface/editor/intro.md)
 Creates, manages, and simulates user interface elements for your game, such as menus and heads\-up displays \(HUD\)\.
 
-[Universal Remote Console](/docs/userguide/lumberyard-remote-console.md)
+[Universal Remote Console](/docs/user-guide/features/engine/remote-console.md)
 Used to connect to a remote instance of Lumberyard running on mobile devices\.
