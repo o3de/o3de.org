@@ -19,7 +19,7 @@ These topics are for game developers who have experience with C\+\+ programming 
 | [Systems APIs](/docs/userguide/systems-intro.md) | Learn about the AZ C\+\+ APIs used for console variables, event notifications, and simple pub/sub messaging within your game project\. Note: These systems APIs were introduced with Lumberyard 1\.24 and focus on a simplified model for in\-game messaging and events\. |
 | [Event Bus](/docs/user-guide/features/engine/ebus/_index.md) \(EBus\) | Learn about EBus, the messaging infrastructure for notifications and messaging\.  |
 | [AZ Code Generator](/docs/user-guide/features/engine/codegen/intro.md) | Learn about AZ Code Generator, a utility for generating source code \(or any data or text\) from specially tagged source code\. |
-| [Input](/docs/userguide/input-intro.md) | Documentation on incorporating different control devices and configurations for your Lumberyard game\. |
+| [Input](/docs/user-guide/features/interactivity/input/input-intro.md) | Documentation on incorporating different control devices and configurations for your Lumberyard game\. |
 | [AI](/docs/userguide/ai/intro.md) | Learn how to add AI systems to your game that provide different actor and character behaviors\. |
 | [Memory management](/docs/user-guide/features/engine/memory/allocators.md) | Learn how Lumberyard allocates and manages memory resources for games, as well as memory debugging and overrun detection\. |
 | [Profiling, testing, and debugging](/docs/userguide/programming/testing/debugging-intro.md) | Learn about Lumberyard tools that are used for testing builds, profiling performance, and debugging various issues that may be encountered\. |
