@@ -1,7 +1,6 @@
 # SRG Resource Declaration
 As a rule of thumb, every resource declaration that is valid in HLSL is also valid in an AZSL ShaderResourceGroup. The following is a complete list of resources allowed in an SRG, which is also defined in the file srg-declaration.azsl. 
 
-Note: The file srg-declaration.azsl can be found in the folder ../3rdPartySource/AZSLc/Overhaul/tests/Syntax/. This file is tested recurringly and remains up-to-date. 
 
 [TODO: Insert Constant declarations here]
 
@@ -16,8 +15,7 @@ Every variable of a *predefined type*, such as `float4` or `uint`, or a *user-de
 
 *Note: User-defined types include data views (textures, SRVs, UAVs), but such types cannot be used as SRG constants.*
 
-SRG constants from a single SRG are packed into a single CBV and managed internally. The user can map data by using SetConstant(...) on the runtime with the reflected ID per constant, but doesn't have access to the data view directly.
-<!-- *[NOTE TO DEVS: Can you elaborate the above?]* -->
+SRG constants from a single SRG are packed into a single Constant Buffer View and managed internally. The user can map data by using SetConstant(...) on the runtime with the reflected ID per constant, but doesn't have access to the data view directly.
 
 The following example demonstrates how to map constant data to SRGs. 
 ```cpp
@@ -38,3 +36,25 @@ float4 GetDiffuseColor()
 }
 ```
 
+### API Usage Example
+In the shader code shown above there's an SRG named "PerMaterial", and it contains a constant property named "m_diffuseColor" of type "float4". Here is a code snippet to set the value of "PerMaterial::m_diffuseColor" (Error checking not shown for the sake of simplicity):
+```cpp
+
+//////////////////////////////////////////////////
+ // Initialization
+ //////////////////////////////////////////////////
+ // Do this once per shader initialization.
+ const Data::Asset<ShaderResourceGroupAsset>& perMaterialSrgAsset = shader->FindShaderResourceGroupAsset(AZ::Name("PerMaterial"));
+ 
+ // Find the reflected ID of "m_diffuseColor", and store it in "diffuseColorInputIndex".
+ AZ::RHI::ShaderInputConstantIndex diffuseColorInputIndex = m_perMaterialSrgAsset->GetLayout()->FindShaderInputConstantIndex(AZ::Name("m_diffuseColor"));
+ 
+ // Create an instance of the SRG.
+ Data::Instance<ShaderResourceGroup> perMaterialSrg = AZ::RPI::ShaderResourceGroup::Create(perMaterialSrgAsset);
+ 
+ ...
+ ////////////////////////////////////////////////
+ // Update the SRG constant at runtime as needed.
+ ////////////////////////////////////////////////
+perMaterialSrg->SetConstant(diffuseColorInputIndex , Vector4(1.0f, 0.0f, 0.0f, 0.0f));
+```
