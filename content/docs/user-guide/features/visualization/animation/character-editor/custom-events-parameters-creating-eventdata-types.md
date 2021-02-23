@@ -43,7 +43,7 @@ The `EMotionFX::EventData` class describes a set of parameters and values that i
 
    For more information about the `Equal` function, see [More About the Equal Function](#char-animation-editor-custom-events-parameters-the-equal-function)\.
 
-1. Implement the `Reflect` method to reflect the type to the [Serialization Context](/docs/userguide/components/entity-system-reflection-serialization-context.md) and [Edit Context](/docs/userguide/components/entity-system-reflection-edit-context.md) contexts\.
+1. Implement the `Reflect` method to reflect the type to the [Serialization Context](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md) and [Edit Context](/docs/user-guide/features/engine/components/edit-context.md) contexts\.
 
    When you reflect the event to the edit context, add the `Creatable` attribute to `ClassElement`\. This makes the `EventData` type visible in the Animation Editor's **Motion Events** tab so that users can select it\.
 

@@ -9,7 +9,7 @@ You can use the **RadioButton** component to make an element behave like a radio
 
 Use this component in conjunction with the **RadioButtonGroup** component\. The **RadioButtonGroup** component handles selecting and clearing the radio buttons in the group and makes sure that only one radio button is ever selected\.
 
-![\[Image NOT FOUND\]](/images/userguide/game_ui_editor/ui-editor-components-radiobutton.png)
+![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-radiobutton.png)
 
 To see in\-game examples of completed canvases with the **RadioButton** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**\. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game\.
 
@@ -18,9 +18,9 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 + `RadioButton.uicanvas` - Examples of different behaviors and default settings
 
 **To edit a radio button component**
-In the **Properties** pane of the [**UI Editor**](/docs/userguide/ui/editor/using.md), expand **RadioButton** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), expand **RadioButton** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/userguide/ui/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+See [Properties](/docs/user-guide/features/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings\.
 **Elements**, **On**
 Select an element from the list to specify the entity that appears when the radio button state is on \(selected\)\.
 **Elements**, **Off**

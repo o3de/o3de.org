@@ -19,9 +19,9 @@ Use this feature for objects such as moving platforms, doors, or anything that d
 **Note**
 You should always add the **PhysX Rigid Body** component to the top level of an entity hierarchy\. If you add the component to a child entity, this can cause conflicts with the entity's world transform and result in undefined behavior\.
 
-The **PhysX Rigid Body** components requires the [PhysX](/docs/userguide/gems/builtin/physx.md) gem\.
+The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/features/gems/physx.md) gem\.
 
-For more information, see [Simulating physics behavior with the PhysX system](/docs/userguide/nvidia/physx/intro.md)\.
+For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/features/interactivity/physics/nvidia-physx/intro.md)\.
 
 **Topics**
 + [PhysX Rigid Body component properties](#component-physx-rigid-body-physics-properties)
@@ -29,7 +29,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 
 ## PhysX Rigid Body component properties {#component-physx-rigid-body-physics-properties}
 
-![\[PhysX Rigid Body component properties.\]](/images/userguide/component/physx/component-physx-rigid-body-1.27.png)
+![\[PhysX Rigid Body component properties.\]](/images/user-guide/component/physx/component-physx-rigid-body-1.27.png)
 
 The **PhysX Rigid Body** component has the following properties\.
 
@@ -119,12 +119,12 @@ A PhysX entity that is dynamic can move and collide with other entities\.
 
 1. Add the **PhysX Rigid Body** component to the entity\.
 
-1. Create another entity for your PhysX terrain\. For more information, see the **[PhysX Terrain](/docs/userguide/components/physx-terrain.md)** component\.
+1. Create another entity for your PhysX terrain\. For more information, see the **[PhysX Terrain](/docs/user-guide/features/components/physx-terrain.md)** component\.
 
 1. Press **Ctrl\+G** to enter gameplay mode\.
 **Example**
 
    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached\. Because the object is dynamic, it falls and then collides with the **PhysX Terrain** component\.
-![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/userguide/shared/physx-creating-dynamic-object-1.gif)
+![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
 **Note**
-For the **[Transform](/docs/userguide/components/transform.md)** component, clear the **Static** property\. This ensures that the mesh moves with the physics simulation\.
+For the **[Transform](/docs/user-guide/features/components/transform.md)** component, clear the **Static** property\. This ensures that the mesh moves with the physics simulation\.

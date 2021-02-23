@@ -19,6 +19,6 @@ Amazon Lumberyard provides a set of tools for intelligently bundling assets and 
 | [Verifying Asset Bundles](/docs/user-guide/features/packaging/asset-bundler/assets-verifying.md) | Learn about the tools and processes for managing and verifying your game project's assets\. |
 | [Tagging Asset Files](/docs/user-guide/features/packaging/asset-bundler/file-tagging.md) | Learn how to add and support tags for your asset files\. |
 | [Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) | Learn about the features of AssetBundlerBatch used to create and compare asset lists for delivery of your game project\. |
-| [Default dependencies](/docs/userguide/assets/bundle/default-dependencies.md) | Learn about default dependency files and how to edit them\. |
+| [Default dependencies](/docs/user-guide/features/packaging/asset-bundler/default-dependencies.md) | Learn about default dependency files and how to edit them\. |
 | [Asset Bundler Concepts and Terms](/docs/user-guide/features/packaging/asset-bundler/concepts.md) | Look up the concepts and terminology used in asset bundling\. |
 | [Asset Bundler Command Line Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md) | Browse the full reference for commands and options used by the AssetBundlerBatch tool\. |

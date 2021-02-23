@@ -9,7 +9,7 @@ Lumberyard's memory management system determines how memory is allocated\. In Lu
 Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
 **Note**
-For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](/docs/userguide/programming/best-practices/lumberyard-memory-management.md)\.
+For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](/docs/user-guide/features/engine/memory-management.md)\.
 
 **Topics**
 + [Manually Allocating Memory](#memory-allocators-manually-allocating-memory)
@@ -35,7 +35,7 @@ Lumberyard uses the following memory allocation functions\. You can find the sou
 
 The following diagram illustrates the hierarchy of AZ memory allocators\.
 
-![\[AZ memory allocator hierarchy\]](/images/userguide/memory-allocators-1.png)
+![\[AZ memory allocator hierarchy\]](/images/user-guide/memory-allocators-1.png)
 + **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap\. `OSAllocator` is booted as early as possible in `main()`, and removed last, right before returning\. If you don't create `OSAllocator`, the `SystemAllocator` creates it when needed\.
 
   `OSAllocator` uses system calls to allocate memory\. The calls are not recorded or tracked\. Other allocators use `OSAllocator` to obtain memory from the operating system\. Drillers and memory tracking tools can use `OSAllocator` for data debugging\.
@@ -97,7 +97,7 @@ AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 
 ### Child Allocator Example {#memory-allocators-creating-a-child-allocator-example}
 
- The following code example adds a custom allocator for the [Script Canvas gem](/docs/userguide/gems/builtin/script-canvas.md)\.
+ The following code example adds a custom allocator for the [Script Canvas gem](/docs/user-guide/features/gems/script-canvas.md)\.
 
 **Example**
 

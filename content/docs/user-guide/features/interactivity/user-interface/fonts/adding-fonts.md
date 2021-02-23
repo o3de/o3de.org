@@ -24,4 +24,4 @@ For each new font to add, you need the following files:
    <font path="yourFont.ttf" w="512" h="256"/>
    ```
 
-After the Asset Processor has processed your font assets, you can select your font by [loading the font `.font` file](/docs/userguide/ui/editor/components-text.md) in the **UI Editor** for any text component\.
+After the Asset Processor has processed your font assets, you can select your font by [loading the font `.font` file](/docs/user-guide/features/interactivity/user-interface/editor/components-text.md) in the **UI Editor** for any text component\.

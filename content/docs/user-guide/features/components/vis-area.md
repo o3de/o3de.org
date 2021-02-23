@@ -17,10 +17,10 @@ You can also add a **[Portal](/docs/userguide/components/portal.md)** component 
 
 Visible areas are only dynamic during editing\. If you modify the **VisArea** component or move the entity that the **VisArea** component is attached to at runtime, the area that the **VisArea** component defines isn't affected\. Also, the **VisArea** component doesn't work if it's spawned as part of a dynamic slice\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 **Note**
-You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.md)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\.
+You can't modify the **[OccluderArea](/docs/user-guide/features/components/occluder-area.md)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\.
 
 **Topics**
 + [VisArea Component Properties](#component-vis-area-properties)
@@ -28,7 +28,7 @@ You can't modify the **[OccluderArea](/docs/userguide/components/occluder-area.m
 
 ## VisArea Component Properties {#component-vis-area-properties}
 
-![\[The VisArea component properties in Lumberyard Editor.\]](/images/userguide/component/vis-area-component-properties.png)
+![\[The VisArea component properties in Lumberyard Editor.\]](/images/user-guide/component/vis-area-component-properties.png)
 
 The **VisArea** component has the following properties\.
 
@@ -50,24 +50,24 @@ The **VisArea** component has the following properties\.
 The following example shows two boxes\. One box is inside the visible area, and one is outside\. From outside the visible area, the inside box isn't visible\. The **DisplayFilled** option is enabled so that the visible area appears orange\.
 You can see the shadow of the box inside the visible area because the **AffectedBySun** option is enabled\.
 
-![\[The VisArea component hides one box from another.\]](/images/userguide/component/component-visarea.png)
+![\[The VisArea component hides one box from another.\]](/images/user-guide/component/component-visarea.png)
 
 **Example 2**
 In the same example, the **DisplayFilled** option is disabled in the visible area\.
 
-![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/userguide/component/component-visarea-2.png)
+![\[Use the VisArea component to create a shape to display and hide objects.\]](/images/user-guide/component/component-visarea-2.png)
 
 **Example 3**
 In the following example, you can see the box inside the visible area, but you can't see the box outside the visible area\.
 You can see the ocean inside the visible area because the **OceanIsVisible** option is enabled\.
 
-![\[The VisArea component displays an ocean in the visible area.\]](/images/userguide/component/component-visarea-1.png)
+![\[The VisArea component displays an ocean in the visible area.\]](/images/user-guide/component/component-visarea-1.png)
 
 **Example : Non\-Planar Legacy Vertices**
 If you're familiar with the legacy visible areas, you might be used to seeing the legacy visualization\. In the legacy system, if you raise one vertex of the visible area higher than the other vertices, the legacy visualization displays the visible area incorrectly\.
 The following example is the legacy visualization for a visible area\. One vertex appears higher than the others\.
 
-![\[Legacy non-planar visible area visualization.\]](/images/userguide/component/component-visarea-3.png)
+![\[Legacy non-planar visible area visualization.\]](/images/user-guide/component/component-visarea-3.png)
 
 **Example : Planar Vertices with VisArea Component**
 The following is an example of the **VisArea** component with the same vertices\.

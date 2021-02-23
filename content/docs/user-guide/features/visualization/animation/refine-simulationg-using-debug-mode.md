@@ -12,17 +12,17 @@ In the following procedure, use the debug mode to refine the simulated object's 
 **Example**
 
    Use the speed slider to reduce the speed of the animation\. Note that the tassel moves through the neck and arm of the actor\.
-![\[Slow down the animation to see how the simulated object moves with the actor.\]](/images/userguide/actor-animation/simulated-objects-21.gif)
+![\[Slow down the animation to see how the simulated object moves with the actor.\]](/images/user-guide/actor-animation/simulated-objects-21.gif)
 
 1. In the **SimulatedObject0** node, click the right\-corner box\. This enables debug rendering for the node\.
 **Example**
-![\[Enable debug mode for the simulated object in the anim graph.\]](/images/userguide/actor-animation/simulated-objects-19.gif)
+![\[Enable debug mode for the simulated object in the anim graph.\]](/images/user-guide/actor-animation/simulated-objects-19.gif)
 
 1. In debug mode, you can do the following\.
 
-   1. To turn off the simulated object colliders, click the ![\[Image NOT FOUND\]](/images/userguide/actor-animation/simulated-objects-20.png) icon\.
+   1. To turn off the simulated object colliders, click the ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/simulated-objects-20.png) icon\.
 
-   1. To turn off joint collision radius, click the ![\[Image NOT FOUND\]](/images/userguide/actor-animation/simulated-objects-5.png) icon\.
+   1. To turn off joint collision radius, click the ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/simulated-objects-5.png) icon\.
 **Example**
 
    In debug mode, the following appear in the render window:
@@ -31,7 +31,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
    + Joint collision radius - The size of the collision radius on a joint\. The radius appears in dark gray\.
 
     In the render window, you can click the first icon to toggle the actor geometry and see only simulated objects\.
-![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](/images/userguide/actor-animation/simulated-objects-22.gif)
+![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](/images/user-guide/actor-animation/simulated-objects-22.gif)
 
 1. To fix the simulated object \(tassel\) movement, do the following\.
 

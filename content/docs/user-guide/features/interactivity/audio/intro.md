@@ -14,8 +14,8 @@ For more information, see [Setting up Wwise LTX](/docs/userguide/audio/wwise-usi
 Wwise is an industry standard audio middleware, but the full\-featured software is not free\. For licensing and pricing details, see [http://www\.audiokinetic\.com/pricing](http://www.audiokinetic.com/pricing)\.
 
 **Topics**
-+ [Audio System Overview](/docs/userguide/audio/architecture.md)
-+ [Audio Translation Layer](/docs/userguide/audio/translation-layer.md)
++ [Audio System Overview](/docs/user-guide/features/interactivity/audio/architecture.md)
++ [Audio Translation Layer](/docs/user-guide/features/interactivity/audio/translation-layer.md)
 + [Audiokinetic Wwise](/docs/userguide/audio/wwise.md)
-+ [Audio Components](/docs/userguide/audio/components.md)
-+ [Audio Console Variables](/docs/userguide/audio/console-commands.md)
++ [Audio Components](/docs/user-guide/features/interactivity/audio/components.md)
++ [Audio Console Variables](/docs/user-guide/features/interactivity/audio/console-commands.md)

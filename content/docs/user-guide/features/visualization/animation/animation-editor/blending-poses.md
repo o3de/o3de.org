@@ -15,11 +15,11 @@ title: Blending Poses with Blend Nodes
 You can use **Blend** nodes in animation graphs to create an animation that blends two input poses\.
 
 **Animation Editor** has the following types of blend nodes, each of which blend poses in different manners:
-+ [Blend N Node](/docs/userguide/animation/editor/blending-blend-n.md)
-+ [Blend Two Additive Node](/docs/userguide/animation/editor/blending-blendtwoadditive.md)
-+ [Pose Subtract Node](/docs/userguide/animation/editor/blending-posesubtract.md)
-+ [Blend Two Node](/docs/userguide/animation/editor/blending-blendtwo.md)
-+ [Blend Two \(Legacy\) Node](/docs/userguide/animation/editor/blending-blendtwolegacy.md)
++ [Blend N Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-blend-n.md)
++ [Blend Two Additive Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-blendtwoadditive.md)
++ [Pose Subtract Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-posesubtract.md)
++ [Blend Two Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-blendtwo.md)
++ [Blend Two \(Legacy\) Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-blendtwolegacy.md)
 
 ## Blend Node Attributes {#animation-editor-blending-attributes}
 
@@ -29,7 +29,7 @@ The blend nodes feature a set of attributes that control different aspects of ho
 
 The **Sync Mode** attribute determines the method of synchronizing motion clips to keep the feet synchronized\.
 
-![\[Blend node attributes: Sync Mode.\]](/images/userguide/actor-animation/animation-editor-blending-attributes-1.png)
+![\[Blend node attributes: Sync Mode.\]](/images/user-guide/actor-animation/animation-editor-blending-attributes-1.png)
 
 
 ****
@@ -58,7 +58,7 @@ The **Event Filter Mode** attribute determines which node's events are emitted\.
 
 The **Extraction Mode** attribute controls how the motion extraction behaves when blending\. For example, for transitions inside state machines, you can use this node to ensure that a 180 degree turn completes\.
 
-![\[Blend node attributes: Extraction Mode.\]](/images/userguide/actor-animation/animation-editor-blending-attributes-3.png)
+![\[Blend node attributes: Extraction Mode.\]](/images/user-guide/actor-animation/animation-editor-blending-attributes-3.png)
 
 
 ****

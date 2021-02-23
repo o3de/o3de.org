@@ -17,7 +17,7 @@ To use script events, you must enable the **Script Events** gem in your project\
 
 **Topics**
 + [Prerequisites](#script-events-prerequisites)
-+ [Creating Script Events in Script Canvas](/docs/userguide/scripting/events/creating-in-script-canvas.md)
-+ [Using Script Events in Script Canvas](/docs/userguide/scripting/events/using-in-script-canvas.md)
-+ [Using Script Events in Lua](/docs/userguide/scripting/events/lua.md)
-+ [Script Events Best Practices](/docs/userguide/scripting/events/best-practices.md)
++ [Creating Script Events in Script Canvas](/docs/user-guide/features/scripting/script-events/creating-in-script-canvas.md)
++ [Using Script Events in Script Canvas](/docs/user-guide/features/scripting/script-events/using-in-script-canvas.md)
++ [Using Script Events in Lua](/docs/user-guide/features/scripting/script-events/lua.md)
++ [Script Events Best Practices](/docs/user-guide/features/scripting/script-events/best-practices.md)

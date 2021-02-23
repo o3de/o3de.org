@@ -12,10 +12,10 @@ For more information about component entity system slices, see [Working with Sli
 
 
 **Topics**
-+ [Creating a UI Slice](/docs/userguide/ui/editor/working-slices-creating.md)
-+ [Instantiating a UI Slice](/docs/userguide/ui/editor/working-slices-instantiating.md)
-+ [Creating a Cascaded UI Slice](/docs/userguide/ui/editor/working-slices-cascaded.md)
-+ [Creating a Detached UI Slice](/docs/userguide/ui/editor/working-slices-detached.md)
-+ [Modifying a UI Slice and Pushing Changes](/docs/userguide/ui/editor/working-slices-modifying.md)
-+ [Editing Slices in a New Tab](/docs/userguide/ui/editor/working-slices-newtab.md)
-+ [Flagging Dynamic Slices](/docs/userguide/ui/editor/working-slices-dynamic.md)
++ [Creating a UI Slice](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-creating.md)
++ [Instantiating a UI Slice](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-instantiating.md)
++ [Creating a Cascaded UI Slice](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-cascaded.md)
++ [Creating a Detached UI Slice](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-detached.md)
++ [Modifying a UI Slice and Pushing Changes](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-modifying.md)
++ [Editing Slices in a New Tab](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-newtab.md)
++ [Flagging Dynamic Slices](/docs/user-guide/features/interactivity/user-interface/editor/working-slices-dynamic.md)

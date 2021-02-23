@@ -12,17 +12,17 @@ title: Cloth for Mesh components
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/userguide/nvidia/cloth/_index.md) documentation\.
+To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/features/interactivity/physics/nvidia-cloth/_index.md) documentation\.
 
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into Lumberyard from an `.fbx` file\. The mesh asset should have the following:
 + A cloth mesh that will be simulated and rendered in Lumberyard\.
-  + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application\. For more information see [Per vertex properties for cloth](/docs/userguide/nvidia/cloth/vertex-data.md)\.
+  + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application\. For more information see [Per vertex properties for cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/vertex-data.md)\.
 + **Optional** \- Any other static mesh\. For example, if you create a flag to be simulated as cloth, then you can include a mesh for the flag pole\.
 
 **Note**
 Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Environment/`\.
 
-For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/userguide/fbx/mesh-export.md)
+For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/features/assets/fbx-settings/mesh-export.md)
 
 ## Add Cloth to Mesh components {#cloth-mesh-setup}
 
@@ -37,7 +37,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 1. Set the cloth data of the mesh asset\.
 
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.
-![\[Amazon Lumberyard cloth component mesh node select.\]](/images/userguide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
+![\[Amazon Lumberyard cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
 
    1. In the **FBX Settings** window, on the **Meshes** tab, and choose **Add Modifier**, **Cloth**\.
 
@@ -50,19 +50,19 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
       1. When applicable, select the vertex color stream and channel that include the **Motion Constraints** data\. If data is not provided, then cloth defaults to a motion constraint value of 1\.0 for all vertices\.
 
       1. When applicable, select the vertex color streams and channels that includes the **Backstop Offset** and **Backstop Radius** data\. If data is not provided, then no backstop constraints will be applied in the simulation\.
-![\[Amazon Lumberyard cloth modifier setup.\]](/images/userguide/physx/cloth/ui-cloth-modifier-mesh-setup-1.27.png)
+![\[Amazon Lumberyard cloth modifier setup.\]](/images/user-guide/physx/cloth/ui-cloth-modifier-mesh-setup-1.27.png)
 
    1. Choose the **Update** button\. **Asset Processor** then updates the asset and includes the cloth data\.
 
 1. Configure the cloth component\.
 
    1. Select the cloth mesh node from the drop\-down list\.
-![\[Amazon Lumberyard cloth component.\]](/images/userguide/physx/cloth/ui-cloth-component-select-mesh-1.27.png)
+![\[Amazon Lumberyard cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-mesh-1.27.png)
 
-   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/userguide/components/cloth.md)\.
+   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/features/components/cloth.md)\.
 
 ## View the Cloth Simulation {#view-cloth-simulation}
 
 In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\.
 
-![\[Amazon Lumberyard cloth simulation with the NVIDIA Cloth gem.\]](/images/userguide/physx/cloth/anim-mesh-cloth.gif)
+![\[Amazon Lumberyard cloth simulation with the NVIDIA Cloth gem.\]](/images/user-guide/physx/cloth/anim-mesh-cloth.gif)

@@ -22,7 +22,7 @@ A **Comment** node is a floating block of text that you can move in the **Script
    + Right\-click your script and choose **Add Comment**\.
 
 1. Double\-click the node and then enter a description\.
-![\[Use the Comment node to add useful notes about your script.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/comment-node.png)
+![\[Use the Comment node to add useful notes about your script.\]](/images/user-guide/scripting/script-canvas/scriptcanvasnodes/comment-node.png)
 
 1. To delete a **Comment** node, do one of the following:
    + Select the node and press **Delete**\.
@@ -70,7 +70,7 @@ You can change the font settings in comment nodes to label and organize your scr
    + For a **Block Comment** node, select the header\.
 
 1. In the **Node Inspector**, you can make the following changes:
-![\[Use the Node Inspector to change font settings for comment nodes.\]](/images/userguide/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
+![\[Use the Node Inspector to change font settings for comment nodes.\]](/images/user-guide/scripting/script-canvas/scriptcanvasnodes/block-comment-nodes-font-settings.png)
    + **Comment** - Type the comment for the node\.
    + **Font Color** - Type a value or use the **Color Picker** to select a color\.
    + **Font Family** - Type a font family name, such as Arial\.

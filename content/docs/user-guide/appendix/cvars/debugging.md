@@ -13,7 +13,7 @@ title: Debugging Issues
 
 Lumberyard provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
 + [Character skeleton debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-model-debugging.html) - Use the `p_draw_helpers` console variable to debug character skeleton issues\.
-+ [Cinematics debugging](/docs/userguide/cinematics/debugging.md) - Debug cinematics issues\.
++ [Cinematics debugging](/docs/user-guide/features/visualization/cinematics/debugging.md) - Debug cinematics issues\.
 + [Mannequin debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/mannequin-debugging-intro.html) - Debug Mannequin system issues\.
 + [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles\.
 + [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects\.
