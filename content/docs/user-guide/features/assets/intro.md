@@ -19,5 +19,5 @@ Learn how to manage, process, and package the assets for your Lumberyard game\. 
 | [Custom Asset Builders](/docs/user-guide/features/assets/asset-system-programming.md) | Learn how to create customer asset builders that support new or non\-standard formats\. |
 | [Asset Browser](/docs/user-guide/features/editor/asset-browser.md) | Learn how the Lumberyard Asset Browser tool is used to view and interact with your game project assets\. |
 | [Asset Bundler](/docs/user-guide/features/packaging/asset-bundler/intro.md) | Learn how the Lumberyard Asset Bundler can be used to manage and package your game assets for delivery\. |
-| [FBX Settings](/docs/userguide/fbx/intro.md) | Learn how to use FBX Settings to export meshes, actors, motions and PhysX meshes for Lumberyard\. |
+| [FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md) | Learn how to use FBX Settings to export meshes, actors, motions and PhysX meshes for Lumberyard\. |
 | [Python Asset Builder](/docs/user-guide/features/assets/builder/intro.md) | Learn how to create custom asset builders with Python\. |
