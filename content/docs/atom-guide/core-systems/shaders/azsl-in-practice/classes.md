@@ -1,85 +1,7 @@
-# Limitations
-  - Ambiguity
-  - One Definition Rule
-  - Class Method Scope vs. Symbols
-    - Deported Method Definition
-    - Methods in-class definition 
-  - Function Overloading
-  - Scopes of Partial SRGs
-  - Combined UDT definitions and immediate usage
-  - Incomplete Validation
-  - Mangling Scheme
+# Classes
+A class can have object-oriented features and methods. Classes can also inherit multiple interfaces and class-to-class inheritance is allowed. 
 
-## Ambiguity
-Ambiguity is not tolerated. Unlike C++ and Java, where an equivalently named symbol is considered the "same" accross different parent. In AZSL this situation is forbidden.
-
-Example: 
-```cpp
-interface I
-{
-    void F();
-};
- 
-interface J
-{
-    void F();
-};
- 
-class C : I, J
-{
-    void F();
-};
-```
-
-Results in a compilation error. 
-    (,) : Semantic error #34: Found multiple symbols hidden by /C/F() in bases of /C. First was /J/F(), now also found in /I.
-
-## One Definition Rule
-AZSLc will enforce One Definition Rule (ODR) through hard errors, on any declarative segment. 
-
-Example:
-```cpp
-void G()
-{
-    int i, i;
-}
-```
-
-This will give the following output. 
-    /tmp/tmp-8761qOeVI0uo89CU(3,) : Semantic error #32: ODR (One Definition Rule) violation. Redeclaration of Variable i in /G()/ first seen line 3
-
-## Unnamed scopes
-Prior to AZSLc version 1.7, *unnamed blocks*, which are wrapped with curly braces, and *structured programming blocks*, such as `if` and `while`, did not introduce scopes. It would lead to an ODR violation warning. 
-
-The following shows an example of an unnamed scope
-```cpp
-void G()
-{
-    int i;
-
-    {              // unnamed scope
-        int i;
-    }
-}
-```
-
-AZSLc version 1.7 introduces support for such constructs. The following shows two variables as denoted by the --dumpsym output. The block received a unique internal name of `$bk0` which effectively separates both `int i;` identities, 
-
-```cpp
-Symbol '/G()/i':
-  kind: Variable
-  line: 8
-  type:
-    core: {name: "?int", validity: found, tclass: Scalar, underlying_scalar: int}
-Symbol '/G()/$bk0/i':
-  kind: Variable
-  line: 10
-  type:
-    core: {name: "?int", validity: found, tclass: Scalar, underlying_scalar: int}
-```
-
-
-## Class method scope vs. late symbols
+## Late symbols in the class method scope
 In the class method scope, you should not reference symbols that are declared later in the class because the symbols will not be linked properly. 
 
 ### Incorrect way
@@ -237,9 +159,10 @@ register(b0);
 ```
 In this instance, DXC complains with `8:19: error: no member named 'SRG_SRGConstantBuffer' in the global namespace`. To resolve this, add `static` in front of `int v;`. This results in a silent success built in both AZSLc and DXC. 
 
-## Deported method definition
+
+## Deported Method Definition
 <!-- [WRITER NOTE: Reword] -->
-Instead, it is recommended to work around that problem by using deported definitions. Sometimes called out-of-class definitions.
+Instead, it is recommended to work around the late symbols problem by using deported definitions. Sometimes called out-of-class definitions.
 Example:
 
 ```cpp
@@ -295,3 +218,38 @@ void (::SRG_S::CB::M)()
 `v` is left un-mutated because this time around, AZSLc understood it was referring to the one within CB, and not the one within SRG. Don't mind the parenthesis, it's an HLSL/C++ syntax inconvenience to separate the nested identifiers that compose the class fully qualified name, from the return type.
 
 Note: AZSLc will emit fully qualified name wherever it has a procedural emission routine. Mostly any declarative construct. As opposed to a token pass through routine*, such as variable initializer expressions and function bodies.
+
+
+### Method Definition Overqualification
+<!-- [WRITER NOTE: Reword] -->
+Nethod in-class definition overqualification is tolerated, if pre-declared. In AZSL, you are allowed to redundantly qualify method definitions (not declarations)
+Example:
+```cpp
+class A
+{
+    // declare
+    void M();
+    // define
+    void A::M() {}  // overqualification is tolerated
+};
+```
+
+But if you over-qualify the early declaration in line 4; then the compiler will complain with:
+
+    /tmp/tmp-19052HwyLl3Bez6II(4,12) : Semantic error #6: voidA::M() is overly qualified. In-class declarations spawn new identifiers, and don't have to refer to existing symbols.
+
+Likewise, if you collapse both declaration & definition into one statement, the compiler will complain with:
+    /tmp/tmp-19052HwyLl3Bez6II(3,4) : Semantic error #4: class /A doesn't have a declaration for M()
+
+That's the difference between the introduction of a new symbol, which requires a unqualified identifier; with the reference to an existing symbol, which may be qualified.
+
+#### Member Initializers
+<!-- [WRITER NOTE: Reword] -->
+In C++11 struct/class members can bear their initializer expression immediately on the in-class declaration line. But in HLSL and AZSL since there are no constructors, this construct is ill-formed.
+Example:
+```cpp
+class C
+{
+    int member = 3;  // #EC 43 default member init not supported
+};
+```

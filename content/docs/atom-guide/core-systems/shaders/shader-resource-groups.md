@@ -4,7 +4,7 @@ In AZSL, uniform constants and shader resources are declared through **Shader Re
 ### SRG Binding Model
 Logically, SRGs follow this ideal binding model: 
 
-![SRG Binding Model](../../../../../../static/images/atom-guide/core-systems/rpi/srg-binding-model.png)
+![SRG Binding Model](/static/images/atom-guide/core-systems/shaders/srg-binding-model.png)
 
 *[NOTE TO DEVS: Is this still an accurate model? Can we explain what's happening in the binding model?]*
 
