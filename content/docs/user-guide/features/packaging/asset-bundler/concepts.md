@@ -49,7 +49,7 @@ The root folder concept is inherited from CryEngine\. When a Lumberyard applicat
 For more information, see [Programming with Gems](/docs/userguide/gems/_index.md)\.
 
 **Runtime**
-A standalone game is referred to as the runtime\. It can be run through a platform\-specific launcher, such as a console, or in the Lumberyard Editor\. A runtime uses the Lumberyard asset system to access only those product assets that were bundled with the game\.
+A standalone game is referred to as the runtime\. It can be run through a platform\-specific launcher or in the Lumberyard Editor\. A runtime uses the Lumberyard asset system to access only those product assets that were bundled with the game\.
 
 **Scan Folder**
 Scan folders are scanned for assets during game runtime\. A set of scan folders are designated in the `AssetProcessorPlatformConfig.ini` file\. Scan folders are defined when the Asset Processor starts\. They cannot be added, removed, or renamed during runtime\.

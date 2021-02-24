@@ -53,7 +53,7 @@ For more information, see [Create and animate characters](/docs/user-guide/featu
 
 ### Robust Networking {#lumberyard-aaa-engine-networking}
 
-Lumberyard introduces GridMate, a robust and flexible networking solution designed for efficient bandwidth usage and low\-latency communications\. You can synchronize objects over the network with GridMate's replica framework\. GridMate's session management can be integrated with major online console services and helps you handle peer\-to\-peer and client-server topologies with host migration\.
+Lumberyard introduces GridMate, a robust and flexible networking solution designed for efficient bandwidth usage and low\-latency communications\. You can synchronize objects over the network with GridMate's replica framework\. GridMate's session management can be integrated with other multiplayer services and helps you handle peer\-to\-peer and client-server topologies with host migration\.
 
 For more information, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\.
 
