@@ -10,13 +10,9 @@ Asset Processor is a utility that runs in the background to detect changes to yo
 As part of Asset Processing, the Asset Processor generates and stores product and source dependencies \. In this context, a dependency defines how a one product or source asset depends on another asset\. A given asset may have 0 or more dependencies, and these dependencies are used by features such as the [Asset Bundler](/docs/user-guide/features/packaging/asset-bundler/intro.md) in order to determine which assets must be included when you bundle your game for release\.
 
 **Topics**
-+ [Modifying the Asset Processor Configuration File](#asset-pipeline-processor-config)
-+ [Using the Asset Processor Batch Program](#asset-pipeline-processor-batch-processing)
-+ [Asset Processor Interface](/docs/user-guide/features/assets/processor-ui.md)
-+ [Enabling Asset Processor's Faster Scanning Mode](/docs/user-guide/features/assets/faster-scanning.md)
-+ [Importing Assets into Lumberyard](/docs/userguide/assets/importing.md)
-+ [Using Resource Compiler](/docs/userguide/assets/rc.md)
-+ [Debugging Asset Processor](/docs/user-guide/features/assets/debugging.md)
+- [Using Asset Processor {#asset-pipeline-processor}](#using-asset-processor-asset-pipeline-processor)
+  - [Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}](#modifying-the-asset-processor-configuration-file-asset-pipeline-processor-config)
+  - [Using the Asset Processor Batch Program {#asset-pipeline-processor-batch-processing}](#using-the-asset-processor-batch-program-asset-pipeline-processor-batch-processing)
 
 Asset Processor enables games to run on other platforms without deploying assets to that platform\. Instead, the assets are accessed from the asset cache on a connected Windows or macOS system\. With Asset Processor, you can also run games that use someone else's assets\.
 
@@ -40,7 +36,7 @@ You don't need to close Asset Processor when you get the latest updates from sou
 
 However, if you aren't using the game or Lumberyard Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar\.
 
-Asset Processor can also serve files directly to running console games so that the assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/user-guide/features/assets/live-reloading.md)\.
+Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/user-guide/features/assets/live-reloading.md)\.
 
 ## Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}
 

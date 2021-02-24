@@ -12,7 +12,7 @@ You can use the video memory profiler \(VRAM profiler\) to determine which resou
 
  The VRAM profiler records the amount of video memory used by a game, including how many memory deallocations and allocations occurred during the capture\. This latter information is useful in tracking down rendering performance bottlenecks\.
 
- You can also use the memory usage information from VRAM profiler to determine your game's minimum PC GPU \(graphics processing unit\) memory requirements, or to determine whether your game will run out of memory on a console or mobile device\.
+ You can also use the memory usage information from VRAM profiler to determine your game's minimum memory and GPU.
 
 **Topics**
 + [Notes](#profiler-vram-limitations)
