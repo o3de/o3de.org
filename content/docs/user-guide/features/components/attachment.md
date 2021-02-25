@@ -9,7 +9,7 @@ The **Attachment** component lets an entity attach to a bone on the skeleton of 
 
 ## Attachment Component Properties {#component-attachment-properties}
 
-![\[Attachment component properties.\]](/images/userguide/component/attachment-component-properties.png)
+![\[Attachment component properties.\]](/images/user-guide/component/attachment-component-properties.png)
 
 The **Attachment** component has the following properties\.
 
@@ -30,7 +30,7 @@ The **Attachment** component has the following properties\.
 
 Use the following request functions with the event bus \(EBus\) interface to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 
 ****
@@ -45,7 +45,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 
 ****

@@ -22,22 +22,22 @@ When you drag a window or toolbar over an interface element or the edges of the 
 **To split a row or column**
 To split a row or column, drop the window or toolbar on a docking target\.
 
-![\[Split the column into two panes\]](/images/userguide/lumberyard-editor-customize-splitting-column.gif)
+![\[Split the column into two panes\]](/images/user-guide/lumberyard-editor-customize-splitting-column.gif)
 
 **To dock a window or toolbar as a tab**
 To dock a window or toolbar as a tab, drop it on the docking target in the middle of a pane\.
 
-![\[Dock the window into a tabbed view\]](/images/userguide/lumberyard-editor-customize-docking-tabs.gif)
+![\[Dock the window into a tabbed view\]](/images/user-guide/lumberyard-editor-customize-docking-tabs.gif)
 
 **To dock a window or toolbar to the editor window**
 To dock a window or toolbar to the editor window, drop it on the outer docking target\. This creates a new column next to the existing column\.
 
-![\[Dock the window to the editor window and create a new column\]](/images/userguide/lumberyard-editor-customize-docking-to-editor-window.gif)
+![\[Dock the window to the editor window and create a new column\]](/images/user-guide/lumberyard-editor-customize-docking-to-editor-window.gif)
 
 **To undock a window or toolbar**
 To undock a window or toolbar, drag the title bar and move the selection window away\. Avoid the docking targets to prevent from accidentally redocking the window\. To help prevent accidental docking, a brief delay occurs before a docking target becomes active\. You can also undock a window by right\-clicking the title bar and choosing **Undock**\.
 
-![\[Undock the window from the tabbed view\]](/images/userguide/lumberyard-editor-customize-undocking-tabs.gif)
+![\[Undock the window from the tabbed view\]](/images/user-guide/lumberyard-editor-customize-undocking-tabs.gif)
 
 **To prevent a window from docking**
 To prevent a window from docking, press and hold **Ctrl** while moving the window\.
@@ -54,10 +54,10 @@ You can also give toolbars and menus your own personal touch\.
 1.  Right\-click the top toolbar and choose **Customize**\.
 
 1. In the **Customize** window, for **Toolbars**, create, rename, and delete any custom toolbars and menus, or reset them to the default settings\.
-![\[Toolbars tab in the Customize window\]](/images/userguide/editor-customizing-toolbars.png)
+![\[Toolbars tab in the Customize window\]](/images/user-guide/editor-customizing-toolbars.png)
 
 1. In the **Commands** tab, drag and drop menu commands to any menu category\.
-![\[Commands tab in the Customize window\]](/images/userguide/editor-customizing-commands.png)
+![\[Commands tab in the Customize window\]](/images/user-guide/editor-customizing-commands.png)
 
 ## Changing Preferences {#lumberyard-editor-customizing-preferences}
 
@@ -65,7 +65,7 @@ You can change the default settings to customize the look and functionality of t
 
 **To customize the look and features of Lumberyard Editor**
 + In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
-![\[General Settings tab in the Preferences window\]](/images/userguide/editor-preferences.png)
+![\[General Settings tab in the Preferences window\]](/images/user-guide/editor-preferences.png)
 
 ### General Settings {#lumberyard-editor-customizing-preferences-general}
 
@@ -91,7 +91,7 @@ You can change the general Lumberyard Editor settings and file settings\.
 |  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as \.fbx files\. |
 |  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode\.  |
 |  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in Lumberyard Editor\.  |
-|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/userguide/working-with-viewport-interaction-model.md)\.  |
+|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/features/editor/viewport/working-with-viewport-interaction-model.md)\.  |
 
 
 **Messaging**

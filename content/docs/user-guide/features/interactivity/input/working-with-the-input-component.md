@@ -25,8 +25,8 @@ Follow these steps to create an `.inputbindings` file\.
 
 1. In the **Entity Inspector**, click **Add Component**, and add the **Input** component\.
 
-1. In the [**Entity Inspector**](/docs/userguide/components/entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![\[Image NOT FOUND\]](/images/userguide/component/component-input-edit-icon.png) to open the **Asset Editor**\.
-![\[\]](/images/userguide/component/input-component-properties-1.png)
+1. In the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![\[Image NOT FOUND\]](/images/user-guide/component/component-input-edit-icon.png) to open the **Asset Editor**\.
+![\[\]](/images/user-guide/component/input-component-properties-1.png)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Input Bindings**\.
 
@@ -39,10 +39,10 @@ After you create your `.inputbindings` file, you can add input event groups for 
 **To add an input event group**
 
 1. In the **Asset Editor**, for your `.inputbindings` file, click the **\+** icon\.
-![\[\]](/images/userguide/component/input-component-properties-2.png)
+![\[\]](/images/user-guide/component/input-component-properties-2.png)
 
 1. For **Event Name**, enter a name for your event, such as *Action*\.
-![\[\]](/images/userguide/component/input-component-properties-3.png)
+![\[\]](/images/user-guide/component/input-component-properties-3.png)
 
 ## Creating Event Generators {#event-generators}
 
@@ -60,7 +60,7 @@ After you create your input event group, you can add event generators to the gro
 **Example**
 
    The following `.inputbindings` file specifies a keyboard for the device type and the spacebar for the input name\.
-![\[Input bindings configuration example in the Asset Editor.\]](/images/userguide/component/input-configuration-properties-2.png)
+![\[Input bindings configuration example in the Asset Editor.\]](/images/user-guide/component/input-configuration-properties-2.png)
 
 1. Save your `.inputbindings` file\.
 
@@ -72,29 +72,29 @@ After you create an `.inputbindings` file and specify your input events, you can
 
 ### Using a Script Canvas Graph for Input {#component-script-canvas-input}
 
-You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/userguide/scripting/scriptcanvas/intro.md)\.
+You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)\.
 
 **To use a Script Canvas graph for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/userguide/components/script-canvas.md)** component\.
+1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** component\.
 
 1. In the **Script Canvas** component, for **Script Canvas Asset**, specify a Script Canvas graph like the following\.
 **Example Script Canvas Graph**
 
    In the following graph, the **Input Handler** node maps the **Event Name** `Action` to the `.inputbindings` file\.
-![\[Example Script Canvas graph for the Input component.\]](/images/userguide/component/input-configuration-script-canvas-example.png)
+![\[Example Script Canvas graph for the Input component.\]](/images/user-guide/component/input-configuration-script-canvas-example.png)
 
 ### Using a Lua Script for Input {#component-input-lua-script}
 
-You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/userguide/scripting/lua/intro.md)\.
+You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/features/scripting/lua/_index.md)\.
 
 **To add a Lua script for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/userguide/components/lua-script.md)** component\.
+1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/features/components/lua-script.md)** component\.
 
 1. In the **Lua Script** component, specify a Lua script file like the following\.
 **Example Lua Script**
@@ -153,6 +153,6 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. Press the keyboard spacebar so that your entity rotates on the local z\-axis\.
 **Example**
-![\[Input bindings configuration example in the Asset Editor.\]](/images/userguide/component/input-configuration-example-gamemode.gif)
+![\[Input bindings configuration example in the Asset Editor.\]](/images/user-guide/component/input-configuration-example-gamemode.gif)
 
 1.  To exit gameplay mode, press **Esc**

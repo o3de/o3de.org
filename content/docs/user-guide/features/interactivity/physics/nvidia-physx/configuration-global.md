@@ -6,7 +6,7 @@ title: Global Configuration
 
 On the **Global Configuration** tab, you can configure world settings and editor settings\.
 
-![\[PhysX Global Configuration tab\]](/images/userguide/physx/physx-configuration-1.png)
+![\[PhysX Global Configuration tab\]](/images/user-guide/physx/physx-configuration-1.png)
 
 ## World Configuration {#physx-configuration-global-world}
 
@@ -28,7 +28,7 @@ The following table describes the settings for **World Configuration**\.
 
 ## Editor Configuration {#physx-configuration-global-editor}
 
-The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/userguide/components/physx-rigid-body-physics.md) component\.
+The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/user-guide/features/components/physx-rigid-body-physics.md) component\.
 
 
 ****
@@ -39,4 +39,4 @@ The following options relate to the **Debug Draw COM** \(center of mass\) option
 | Debug Draw Center of Mass Color  |  The color of the debug draw circle that represents the center of mass\. To specify a color, enter its RGB values in the text box\. The color of the icon next to the text box shows the color that you entered\. The default values are `255`, `0`, `0` \(red\)\.  |
 
 **Note**
-These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/userguide/gems/builtin/physx-debug.md) gem\.
+These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/features/gems/physx-debug.md) gem\.

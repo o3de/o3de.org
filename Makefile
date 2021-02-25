@@ -20,3 +20,8 @@ preview-build:
 
 open:
 	open https://cncf-hugo-starter.netlify.com
+
+clean:
+	rm -rf resources
+	rm -rf public
+

@@ -7,13 +7,13 @@ title: ATL Controls
 
 The game uses Audio Translation Layer \(ATL\) controls to communicate with the audio middleware\. ATL controls are mapped to various data authored in the middleware's authoring tool\. This abstraction layer provides you the flexibility to change mappings quickly without updating the game's integration of controls\.
 
-To see the list of audio control types, see [ATL Controls Pane](/docs/userguide/audio/atl-editor-atl-controls.md)\.
+To see the list of audio control types, see [ATL Controls Pane](/docs/user-guide/features/interactivity/audio/atl-editor-atl-controls.md)\.
 
 ## ATL Default Controls {#audio-controls-default}
 
 The **Audio Controls Editor** automatically creates the following ATL controls by default\. You can find the controls in the `default_controls` folder\.
 
-![\[ATL controls that the Audio Controls Editor automatically creates by default.\]](/images/userguide/audio/audio-atl-editor-default.png)
+![\[ATL controls that the Audio Controls Editor automatically creates by default.\]](/images/user-guide/audio/audio-atl-editor-default.png)
 
 
 **Default ATL Controls**

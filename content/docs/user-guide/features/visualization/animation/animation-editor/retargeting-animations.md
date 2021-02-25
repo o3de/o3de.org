@@ -47,16 +47,16 @@ If you do not see the **Motion range** modifier, be sure that your `.fbx` file h
 If you receive an error, check the number of keyframes in your motion, and update the **End frame**\.
 
    The frame settings are shown in the following example:
-![\[Specify the motion range keyframe for your actor's motion in the Lumberyard Animation Editor\]](/images/userguide/actor-animation/retarget-animations-fbx-settings-motion-range-modifier.png)
+![\[Specify the motion range keyframe for your actor's motion in the Lumberyard Animation Editor\]](/images/user-guide/actor-animation/retarget-animations-fbx-settings-motion-range-modifier.png)
 
 1. Repeat steps 1 to 5 for all of the motions that you want to retarget\.
 
 1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
 
-1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/userguide/animation/editor/animation-graph-user-interface.md)\.
+1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/user-guide/features/visualization/animation/animation-editor/animation-graph-user-interface.md)\.
 
 1. In the right pane, on the **Attributes** tab, select the **Retarget** check box\.
-![\[Select the Retarget check box for your animation graph in the Lumberyard Animation Editor\]](/images/userguide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
+![\[Select the Retarget check box for your animation graph in the Lumberyard Animation Editor\]](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
 **Note**
 You can also toggle the retarget feature on the **Motion**, **Blend Space 1D**, and **Blend Space 2D** nodes\.
 

@@ -29,7 +29,7 @@ If no vertex color stream is present, then a default value of **1\.0** is used f
 
  The diagram below visualizes Motion constraints\.
 
-![\[Motion constraint diagram for cloth simulation\]](/images/userguide/physx/cloth/cloth-motion-constraints-diagram.png)
+![\[Motion constraint diagram for cloth simulation\]](/images/user-guide/physx/cloth/cloth-motion-constraints-diagram.png)
 
 ## Backstop {#cloth-backstop-diagram}
 
@@ -49,4 +49,4 @@ The Backstop Radius vertex color channel has values in the range of **0\.0** to 
 
  The diagram below visualizes Backstop\.
 
-![\[Backstop diagram for cloth simulation\]](/images/userguide/physx/cloth/cloth-backstop-diagram.png)
+![\[Backstop diagram for cloth simulation\]](/images/user-guide/physx/cloth/cloth-backstop-diagram.png)

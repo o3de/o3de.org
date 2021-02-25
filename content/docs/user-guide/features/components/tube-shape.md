@@ -26,7 +26,7 @@ The **Tube Shape** component requires the **[Spline](/docs/userguide/components/
 
 ## Tube Shape Properties {#tube-shape-properties}
 
-![\[The Tube Shape component and its properties in Lumberyard Editor.\]](/images/userguide/component/component-tube-shape.png)
+![\[The Tube Shape component and its properties in Lumberyard Editor.\]](/images/user-guide/component/component-tube-shape.png)
 
 The **Tube Shape** component has the following properties\.
 
@@ -44,7 +44,7 @@ The **Tube Shape** component has the following properties\.
 
 ## EBus Request Bus Interface {#tube-shape-ebus-request-bus-interface}
 
-You can use the event bus \(EBus\) interface to communicate with other components in your game\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+You can use the event bus \(EBus\) interface to communicate with other components in your game\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 
 ****

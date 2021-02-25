@@ -17,4 +17,4 @@ Currently, this is a global toggle and doesn't support mixed use cases, such as 
 **Example**
 
    In the following example, the selected entities pivot around the manipulator\.
-![\[Modify entities using pivot mode in Lumberyard.\]](/images/userguide/viewportinteractionmodel/viewport-selection-model-16.gif)
+![\[Modify entities using pivot mode in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-16.gif)

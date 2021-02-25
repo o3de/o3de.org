@@ -7,7 +7,7 @@ title: Inspector Pane
 
 In the **Inspector** pane, you can edit the properties of the control that you selected in the **ATL Controls** pane\. You can modify the control's **Name**, select a **Scope**, and modify the **Connected Controls**\.
 
-![\[Modify controls in the Inspector pane of the Audio Controls Editor.\]](/images/userguide/audio/audio-atl-editor-inspector.png)
+![\[Modify controls in the Inspector pane of the Audio Controls Editor.\]](/images/user-guide/audio/audio-atl-editor-inspector.png)
 
  The following table describes the properties that you can modify in the **Inspector** pane\.
 

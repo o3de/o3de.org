@@ -5,7 +5,7 @@ title: Audio Rtpc
 ---
 # Audio Rtpc {#component-audio-rtpc}
 
-The **Audio RTPC** component provides basic [Real\-Time Parameter Control \(RTPC\)](/docs/userguide/audio/default-controls.md) functionality\. An RTPC is a named variable that the audio system can interpret in many different ways\. It allows game developers to set the value from the game at run time to produce real\-time tweaking of sounds\.
+The **Audio RTPC** component provides basic [Real\-Time Parameter Control \(RTPC\)](/docs/user-guide/features/interactivity/audio/default-controls.md) functionality\. An RTPC is a named variable that the audio system can interpret in many different ways\. It allows game developers to set the value from the game at run time to produce real\-time tweaking of sounds\.
 
 ## Audio RTPC Component Properties {#component-audio-rtpc-properties}
 
@@ -18,7 +18,7 @@ Enter the name of the audio RTPC to use by default\. You can associate any RTPC 
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/userguide/programming/ebus/intro.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 ### SetValue {#rtpc-audio-ebus-setvalue}
 

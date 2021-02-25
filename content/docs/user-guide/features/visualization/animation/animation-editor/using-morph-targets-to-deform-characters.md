@@ -21,7 +21,7 @@ In the **Animation Editor**, you can use morph targets with one of the following
 ## Prerequisites {#animation-editor-morph-targets-prerequisites}
 
 To use morph targets in the **Animation Editor**, you must do the following:
-+ Prepare your asset for `.fbx` export\. For more information, see [Customize FBX asset export with FBX Settings](/docs/userguide/fbx/intro.md)\.
++ Prepare your asset for `.fbx` export\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
 + Create and animate morph targets on your character in your DCC tool \(for example, Maya\)\.
 + Export the character as an `.fbx` file\.
 
@@ -42,17 +42,17 @@ You can also change how morph targets are imported\.
 **To change how morph targets are imported**
 
 1. In the **Asset Browser**, right\-click your `.fbx` file and choose **Edit Settings**\.
-![\[Choose the Edit Settings option for your .fbx file in the Asset Browser.\]](/images/userguide/actor-animation/asset-browser-fbx-file-edit-settings.png)
+![\[Choose the Edit Settings option for your .fbx file in the Asset Browser.\]](/images/user-guide/actor-animation/asset-browser-fbx-file-edit-settings.png)
 
 1. In the **FBX Settings** window, click the **Actors** tab\.
 
    A modifier appears to indicate that morph targets will be imported\.
 
 1. Click the button next to the **Select morph targets** field\.
-![\[Click the Select morph targets button on the Actors tab in the FBX Settings window.\]](/images/userguide/actor-animation/fbx-settings-select-morph-targets-button.png)
+![\[Click the Select morph targets button on the Actors tab in the FBX Settings window.\]](/images/user-guide/actor-animation/fbx-settings-select-morph-targets-button.png)
 
 1. In the **Select nodes** window, select the morph targets that you want to import, and then click **Select**\.
-![\[Select the morph targets to import in the Select nodes window.\]](/images/userguide/actor-animation/morph-targets-select-nodes-window.png)
+![\[Select the morph targets to import in the Select nodes window.\]](/images/user-guide/actor-animation/morph-targets-select-nodes-window.png)
 
 1. In the **FBX Settings** window, click **Update** to save your changes\.
 
@@ -63,7 +63,7 @@ You can also change how morph targets are imported\.
 1. In the **FBX Settings** window, click the **Motions** tab\.
 **Note**
 If you have morph target animations in your `.fbx` file, a modifier appears to indicate that morph target motions will be imported\. You can remove the modifier if you do not want the morph target motions in your `.motion` file\.
-![\[Motions tab in the FBX Settings window.\]](/images/userguide/actor-animation/fbx-settings-motions-tab.png)
+![\[Motions tab in the FBX Settings window.\]](/images/user-guide/actor-animation/fbx-settings-motions-tab.png)
 
 1. Click **Update** to save your changes\.
 
@@ -78,7 +78,7 @@ When you open your actor file in the **Animation Editor**, all morph targets and
 1. In the **Animation Editor**, choose **File**, **Open Actor**\.
 
 1. In the **Pick EMotion FX Actor** window, select an actor to import and then click **OK**\.
-![\[Choose an actor to import in the Pick EMotion FX Actor window.\]](/images/userguide/actor-animation/animation-editor-pick-emotionfx-actor-dialog-box.png)
+![\[Choose an actor to import in the Pick EMotion FX Actor window.\]](/images/user-guide/actor-animation/animation-editor-pick-emotionfx-actor-dialog-box.png)
 
 ## Previewing Morph Targets on Actors {#animation-editor-previewing-morph-targets-on-actors}
 
@@ -97,10 +97,10 @@ You can preview the morph targets on an actor\.
       If enabled, the morph target sliders will override the morph target motions on your actor\.
 
    1. Move the sliders next to the morph target name to see the actor's mesh deform\.
-![\[Preview morph target shapes on your actor in the Morph Targets window.\]](/images/userguide/actor-animation/animation-editor-morph-targets-window-example-2.gif)
+![\[Preview morph target shapes on your actor in the Morph Targets window.\]](/images/user-guide/actor-animation/animation-editor-morph-targets-window-example-2.gif)
 
    1. Click **Edit** next to the morph target to adjust the range of the slider as needed\. The default range is `0` to `1`\.
-![\[Adjust the minimum and maximum value range for the morph target.\]](/images/userguide/actor-animation/edit-morph-target-window.png)
+![\[Adjust the minimum and maximum value range for the morph target.\]](/images/user-guide/actor-animation/edit-morph-target-window.png)
 
 1. When you're done previewing the morph targets, clear the **Select All** check box and close the **Morph Targets** window\.
 
@@ -113,19 +113,19 @@ Creating a motion node with morph targets is similar to other methods of motion 
 1. In the **Animation Editor**, on the **Motion Sets** tab, under **Motion Set Management**, do one of the following:
    + Click the **\+** icon to create a motion set\.
    + Click the folder icon to open the **Pick EMotion FX Motion Set** window and select a motion set to import\. Click **OK**\.
-![\[Choose a motion set to import in the Pick EMotion FX Motion Set window.\]](/images/userguide/actor-animation/animation-editor-pick-emotionfx-motion-set-dialog-box.png)
+![\[Choose a motion set to import in the Pick EMotion FX Motion Set window.\]](/images/user-guide/actor-animation/animation-editor-pick-emotionfx-motion-set-dialog-box.png)
 
 1. In the **Anim Graphs** pane, click the **\+** icon to create an animation graph\.
-![\[Create an animation graph in the Anim Graphs pane.\]](/images/userguide/actor-animation/anim-graphs-resource-management-new-animation-graph.png)
+![\[Create an animation graph in the Anim Graphs pane.\]](/images/user-guide/actor-animation/anim-graphs-resource-management-new-animation-graph.png)
 
 1. Drag the **Motion** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph\.
-![\[Drag the Motion node to the animation graph.\]](/images/userguide/actor-animation/anim-graph-motion-node-example.gif)
+![\[Drag the Motion node to the animation graph.\]](/images/user-guide/actor-animation/anim-graph-motion-node-example.gif)
 
 1. In the animation graph, select the **Motion** node that you added\.
-![\[Anim Graph tab in the middle pane of the Animation Editor.\]](/images/userguide/actor-animation/anim-graph-motion-node-selected.png)
+![\[Anim Graph tab in the middle pane of the Animation Editor.\]](/images/user-guide/actor-animation/anim-graph-motion-node-selected.png)
 
 1. In the **Attributes** pane, click **Select motions**\.
-![\[Select motions button in the Attributes pane of the Animation Editor.\]](/images/userguide/actor-animation/attributes-pane-select-motions-button.png)
+![\[Select motions button in the Attributes pane of the Animation Editor.\]](/images/user-guide/actor-animation/attributes-pane-select-motions-button.png)
 
 1. In the **Motion Selection** window, select the motion with the morph targets that you want to import and then click **OK**\.
 
@@ -138,7 +138,7 @@ As an alternative to creating a motion node with morph targets, you can use a **
 1. In the **Animation Editor**, drag the **Blend Tree** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph\.
 
 1. In the animation graph, double\-click the **Blend Tree** node\. You should see a **Final Node** node and additional nodes in the **Anim Graph Palette**\.
-![\[Blend Tree node and additional nodes in the Anim Graph Palette.\]](/images/userguide/actor-animation/anim-graph-blendtree-node-finalnode.png)
+![\[Blend Tree node and additional nodes in the Anim Graph Palette.\]](/images/user-guide/actor-animation/anim-graph-blendtree-node-finalnode.png)
 
 1. Drag the **Morph Target** node from the **Blending** tab in the **Anim Graph Palette** to the animation graph\.
 
@@ -153,7 +153,7 @@ As an alternative to creating a motion node with morph targets, you can use a **
    1. Drag the **Parameters** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph\.
 
    1. In the **Parameters** pane, click the **\+** icon to create a parameter\.
-![\[Parameters pane in the Animation Editor.\]](/images/userguide/actor-animation/anim-graph-parameters-pane.png)
+![\[Parameters pane in the Animation Editor.\]](/images/user-guide/actor-animation/anim-graph-parameters-pane.png)
 
    1. In the **Create Parameter** window, do the following:
 
@@ -162,27 +162,27 @@ As an alternative to creating a motion node with morph targets, you can use a **
       1. For **Minimum** and **Maximum**, use the default values\.
 
       1. Click **Create**\.
-![\[Create Parameter window in the Animation Editor.\]](/images/userguide/actor-animation/anim-graph-create-parameter-dialog-box.png)
+![\[Create Parameter window in the Animation Editor.\]](/images/user-guide/actor-animation/anim-graph-create-parameter-dialog-box.png)
 
    1. In the animation graph, do the following:
 
       1. Connect the **Parameter** for the **Parameter** node to the **Morph Weight** for the **Morph Target** node\.
 
       1. Connect the **Output Pose** for the **Morph Target** node to the **Input Pose** for the **Final Node** node\.
-![\[Example animation graph that shows the connection between the Parameter node, Morph Target node, and Final Node node.\]](/images/userguide/actor-animation/anim-graph-parameters-morph-target-connection.png)
+![\[Example animation graph that shows the connection between the Parameter node, Morph Target node, and Final Node node.\]](/images/user-guide/actor-animation/anim-graph-parameters-morph-target-connection.png)
 
 1. In the animation graph, select the **Morph Target** node if it's not already selected\.
 
 1. In the **Attributes** pane, click **select morph targets**\.
-![\[Click the select morph targets button in the Attributes pane.\]](/images/userguide/actor-animation/attributes-pane-select-morph-targets-button.png)
+![\[Click the select morph targets button in the Attributes pane.\]](/images/user-guide/actor-animation/attributes-pane-select-morph-targets-button.png)
 
 1. In the **Morph target selection** window, select the morph target that you want to import and then click **OK**\.
-![\[Morph target selection window to import a morph target.\]](/images/userguide/actor-animation/morph-target-selection-window.png)
+![\[Morph target selection window to import a morph target.\]](/images/user-guide/actor-animation/morph-target-selection-window.png)
 
    The morph target is updated in the **Morph Target** node in the animation graph and in the **Attributes** pane\.
-![\[Morph target updated in the Morph Target node and Attributes pane.\]](/images/userguide/actor-animation/animation-graph-attributes-pane-morph-target-set.png)
+![\[Morph target updated in the Morph Target node and Attributes pane.\]](/images/user-guide/actor-animation/animation-graph-attributes-pane-morph-target-set.png)
 
 1. In the **Anim Graphs** pane, activate the animation graph by double\-clicking the name\.
 
 1. In the **Parameters** pane, move the slider to play the animation\.
-![\[Move the parameter slider to play the morph target animation.\]](/images/userguide/actor-animation/morph-target-animation-parameter-slider.gif)
+![\[Move the parameter slider to play the morph target animation.\]](/images/user-guide/actor-animation/morph-target-animation-parameter-slider.gif)

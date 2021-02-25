@@ -9,6 +9,6 @@ The topics in this section provide practical knowledge about common tasks associ
 
 **Topics**
 + [Adding Scripts to Entities](/docs/userguide/scripting/scriptcanvas/adding-scripts.md)
-+ [Script Canvas Best Practices](/docs/userguide/scripting/scriptcanvas/best-practices.md)
-+ [Script Canvas Errors and Troubleshooting](/docs/userguide/scripting/scriptcanvas/errors-and-troubleshooting.md)
-+ [Script Canvas Debugging](/docs/userguide/scripting/scriptcanvas/debugging.md)
++ [Script Canvas Best Practices](/docs/user-guide/features/scripting/script-canvas/best-practices.md)
++ [Script Canvas Errors and Troubleshooting](/docs/user-guide/features/scripting/script-canvas/errors-and-troubleshooting.md)
++ [Script Canvas Debugging](/docs/user-guide/features/scripting/script-canvas/debugging.md)
