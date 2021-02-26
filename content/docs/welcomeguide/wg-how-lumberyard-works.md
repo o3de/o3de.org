@@ -5,7 +5,7 @@ title: How Amazon Lumberyard works
 ---
 # How Amazon Lumberyard works<a name="wg-how-lumberyard-works"></a>
 
-Amazon Lumberyard provides a complete, end\-to\-end environment for developing and delivering games and simulations, and supports a wide variety of platforms, including consoles, mobile devices, virtual reality, and Microsoft Windows PCs\. Since it's such a large development environment with so many different features and tools, it can be intimidating to new users, especially for those who don't have a traditional developer background\. This topic covers the various parts of Lumberyard at a high level and the common ways you can work with it depending on your role or task as a new or experienced game developer or designer\.
+Amazon Lumberyard provides a complete, end\-to\-end environment for developing and delivering games and simulations, and supports a wide variety of platforms. Since it's such a large development environment with so many different features and tools, it can be intimidating to new users, especially for those who don't have a traditional developer background\. This topic covers the various parts of Lumberyard at a high level and the common ways you can work with it depending on your role or task as a new or experienced game developer or designer\.
 
 Lumberyard has several tools, editors, and systems that work together to help you assemble a game\. Central to this is the "Lumberyard game engine", which provides the following:
 + Graphics rendering and output

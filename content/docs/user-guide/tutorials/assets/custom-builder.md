@@ -145,7 +145,7 @@ For more information about declaring, enabling, or disabling platforms, see [Con
 
 The following functions are available in the Asset Builder SDK\. For source code, see `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK\AssetBuilderSDK.*`
 + `HasPlatform(const char* platformIdentifier)` - For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.
-+ `HasPlatformWithTag(const char* platformTag)` - For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(for example, "mobile" or "console"\)\.
++ `HasPlatformWithTag(const char* platformTag)` - For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(i.e. "mobile"\)\.
 
 ### E\. Implement the Callback for ProcessJobFunction {#asset-builder-custom-create-builder-class-processjob-callback}
 
