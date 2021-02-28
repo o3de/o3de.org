@@ -1,4 +1,7 @@
+<!-- [WRITER NOTE: Don't review. Section is incomplete. More information is necessary.] -->
+
 # Partial SRGs
+[TODO] What are partial SRGs? When do you use them?
 
 ## Scopes of partial SRG
 <!-- [WRITER NOTE: Reword] -->

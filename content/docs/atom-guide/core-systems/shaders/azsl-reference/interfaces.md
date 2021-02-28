@@ -1,27 +1,52 @@
 # Interfaces
-`interface` keyword is supported in AZSL since `class` is supported in the form of a contract imposition system. It works as an inheritance-like scheme on classes to force implementation of methods. Multiple interfaces can be inherited by using commas, like in C++. 
+Similar to HLSL, AZSL supports interfaces, which function similarly to abstract base classes in C++. They are defined using the `interface` keyword and must contain only method declarations (no variables or properties). Classes that inherit from an interface must define all inherited members. Just like in C++, a class can inherit multiple interfaces by using separating commas. 
 
-Example: 
+The following code sample demonstrates how to define and use interfaces. 
 ```cpp
-interface I
+interface X
 {
-    void F();
+    void Foo();
+};
+
+interface Y
+{
+    void Bar();
 };
  
-class C : I
+class A : X     // class A inherits interface X
 {
+    Foo();
+};
+
+class B : X, Y  // class B inherits interface X and Y
+{
+    Foo();
+    Bar();
 };
 ```
 
-This example results in the compilation error
-    (6,0) : Semantic error #18: class /C does not redefine /I/F()
+In contrast, the following code sample leads to a compilation error because a class must define all the methods declared in its inherited interface. 
+```cpp
+interface X
+{
+    void Foo();
+};
 
-*Note: `interface` may only bear method declarations. Definitions, variables, and properties are not allowed. *
+class A : X     // not ok - class A does not define Foo()
+{    
+};
+```
+
+AZSLc outputs the following compilation error.
+```
+(,) : Semantic error #34: Found multiple symbols hidden by /C/F() in bases of /C. First was /J/F(), now also found in /I.
+```
+
 
 ## Ambiguity is not supported
-Ambiguity is not tolerated. Unlike C++ and Java, where an equivalently named symbol is considered the "same" accross different parent. In AZSL this situation is forbidden.
+In AZSL, ambiguity is not tolerated. Ambiguity occurs when a class inherits from multiple interfaces which define a function with the same name. This behavior is opposed to that in C++ and Java, where ambiguity can be resolved. 
 
-Example: 
+The following code sample leads to a compilation error due to multiple inheritance ambiguity with interfaces.
 ```cpp
 interface I
 {
@@ -33,20 +58,22 @@ interface J
     void F();
 };
  
-class C : I, J
+class C : I, J 
 {
-    void F();
+    void F();   // not ok - multiple inheritance ambiguity
 };
 ```
 
-Results in a compilation error.
+AZSLc outputs the following compilation error.
+```
+(,) : Semantic error #34: Found multiple symbols hidden by /C/F() in bases of /C. First was /J/F(), now also found in /I.
+```
 
-    (,) : Semantic error #34: Found multiple symbols hidden by /C/F() in bases of /C. First was /J/F(), now also found in /I.
 
 ## Using keyword `override`
-It is recommended to use the `override` keyword on concrete method declarations that are meant to override a base. 
+A class can declare a virtual function that overrides an inherited interface's virtual function. You can do this by using the `override` keyword, though it is not necessary to. This is unlike C++, where the `override` keyword is mandatory. However, it is recommended to use the `override` keyword to allow clearer error reporting. 
 
-Example: 
+The following code sample leads to a compilation error because method `g` is declared as `override`, though there is no base method `g` to override. 
 ```cpp
 interface Interf
 {
@@ -56,8 +83,10 @@ interface Interf
 class C : Interf
 {
     void f() override;
+    void g() override;  // not ok - no base method g() exists
 };
 ```
-
-Unlike in C++, it is not mandatory to use the `override` keyword. However, using the `override` keyword allows clearer error reporting. If you add the line `void g() override;` in `class C`, AZSLc will generate the following error: 
-    Semantic error #22: method /C/g() has override specifier but is not found in any base
+AZSLc outputs the following compilation error.
+```
+Semantic error #22: method /C/g() has override specifier but is not found in any base
+```
