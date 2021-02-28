@@ -1,9 +1,9 @@
 # Platform Specific Shader Code
-
-AZSLc is a cross-platform compatible compiler. There are several ways to introduce platform specific code in AZSL. 
+AZSLc is a cross-platform compatible compiler, but there are several ways to introduce platform specific code in AZSL. 
+[NOTE FOR DEVS: What are some common use cases for using compiler]
 
 ## AZSL Headers
-There is a header for each graphics API per platform. When the shader code for the respective platform is compiled, the header files are added to each AZSL shader file (*.azsl*). By specifying static constants, functions, and interface, you can customize the behavior of the shader code per platform. The constants should not alter the behavior of SRG Layouts, input assembly, output merger, and other commonly shared data. 
+There is a header file for each graphics API per platform. When the shader code for the respective platform is compiled, the header files are added to each AZSL shader file (*.azsl*). By specifying static constants, functions, and interfaces, you can customize the behavior of the shader code per platform. The constants should not alter the behavior of SRG Layouts, input assembly, output merger, and other commonly shared data. 
 
 *Note: Header files for each platform can be found in their respective folders in ../dev/Gems/Atom/Asset/Shader/Code/AZSL/Platform/.*
 
@@ -11,6 +11,8 @@ Another header, AzslcHeader.azsli, is provided when compiling SRG Layouts and ot
 
 *Note: AzslcHeader.azsli can be found in the folder ../dev/Gems/Atom/Asset/Shader/Code/AZSL/Platform/Common/.*
 
+<!-- 
+What do these examples show? Why are they helpful in this section?
 Example from AzslcHeader.h
 ```cpp
 // The default azsl debug color is the Amazon's orange
@@ -23,7 +25,7 @@ Example from AzslcHeader_Vulkan.h
 ```cpp
 // When compiling for Vulkan, the azsl debug color will be Vulkan's crimson red
 static const float4 s_AzslDebugColor = float4(165.0 / 255.0, 30.0 / 255.0, 36.0 / 255.0, 1);
-```
+``` -->
 
 ## Attributes
 Platform specific code can also be introduced using attributes. Attributes are filtered by their namespace and only attributes with the matching namespace or without any namespace are processed and re-emitted.
