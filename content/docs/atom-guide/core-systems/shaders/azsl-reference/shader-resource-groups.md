@@ -10,7 +10,7 @@ Logically, SRGs follow this ideal binding model:
 
 
 ### SRG Definition Requirements
-When defining an SRG, you must declare its uniform constants and shader resources. You must also define and/or specify the semantic the SRG is built off of. The SRG semantic provides meta-data to the SRG that is used by the AssetBuilder. 
+When defining an SRG, you must declare its uniform constants and shader resources. You must also define and/or specify the semantic the SRG is built off of. The SRG semantic provides meta-data to the SRG that is used by the Atom Asset Builder. 
 
 #### Defining an SRG Semantic
 A **Shader Resource Group (SRG) semantic** is a struct declared using the keyword `ShaderResourceGroupSemantic`. The semantic defines `FrequencyId`, which corresponds to the frequency which the SRG changes. It also defines `ShaderVariantFallback`, which is a fallback value for the support of shader variants. `ShaderVariantFallback` must be defined in a single SRG and is only necessary when the shader contains options. 
@@ -126,7 +126,7 @@ Atom is built in with the following SRG semantics.
 
 
 ### SRG Semantics (ShaderResourceGroupSemantic)
-An SRG Semantic provides meta-data for the SRG that is reflected for the AssetBuilder. SRG semantics contain the attributes, **FrequencyId** and **ShaderVariantFallback**. 
+An SRG Semantic provides meta-data for the SRG that is reflected to the Atom Asset Builder. SRG semantics contain the attributes, **FrequencyId** and **ShaderVariantFallback**. 
 #### FrequencyId
 The `FrequencyId` attribute contains a value that indicates a specific frequency in which that SRG changes. A lower value indicates higher priority, while a higher value indicates lower priority. Logically, each SRG is a shader resource data mapped per frequency. For example, once every time the scene changes (PerScene), the view changes (PerView), the material changes (PerMaterial), and the geometry changes (PerObject). 
 #### **ShaderVariantFallback**

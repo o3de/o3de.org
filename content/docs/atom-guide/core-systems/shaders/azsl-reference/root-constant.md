@@ -1,5 +1,5 @@
 # Root Signatures
-Root Signatures are a means of passing data to shaders. Root signatures can be defined in AZSL in a similar way to HLSL. (See the [Direct3D HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3d12/specifying-root-signatures-in-hlsl) documentation on specifying root signatures in HLSL). 
+Root Signatures are a means of passing data to shaders. Root signatures can be defined in AZSL in a similar way to HLSL. (See the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3d12/specifying-root-signatures-in-hlsl) documentation on specifying root signatures in HLSL). 
 
 ## `rootconstant`
 In AZSL, root signatures can also be accessed using the keyword `rootconstant`. This is not to be confused by the *RootConstants* clause in HLSL. `rootconstant` is a type qualifier, so it can be used on variable declarations. However, it can only be used in the global scope. This contradicts how root constants are treated in Shader Resource Groups, but this approach is meant to demonstrate their independence towards descriptor tables, constant buffers, or register space. Variables that are `rootconstant` can be passed as specialization constants on Vulkan and Metal. 
