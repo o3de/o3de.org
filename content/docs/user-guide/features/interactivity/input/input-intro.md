@@ -71,10 +71,10 @@ The base class is designed so that you can inherit from it to implement new type
 | --- | --- |
 | Mouse | Windows, macOS |
 | Keyboard | Windows and macOS |
-| Gamepad | Windows, macOS, iOS, Android, consoles |
+| Gamepad | Windows, macOS, iOS, Android |
 | Touch | iOS, Android |
 | Motion | iOS, Android |
-| Virtual keyboard | iOS, Android, consoles |
+| Virtual keyboard | iOS, Android |
 | Virtual reality controller | Oculus, OpenVR |
 
 This core set of input devices are managed by the `AzFramework::InputSystemComponent`\. You can use this component to configure the type and number of input devices that your application creates at startup\.

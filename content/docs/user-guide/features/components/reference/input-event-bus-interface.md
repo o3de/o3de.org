@@ -93,7 +93,7 @@ local foo
 {
     Properties =
     {
-        Context {default = "", description = "A context to push onto the input stack. Like console, or UI, or turret, under water, etc."},
+        Context {default = "", description = "A context to push onto the input stack."},
     }
 }
 

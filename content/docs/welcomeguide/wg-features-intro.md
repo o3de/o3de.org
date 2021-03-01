@@ -36,12 +36,9 @@ You can use Lumberyard to develop games for the following platforms:
 + Android
 + iOS
 + macOS
-+ Play​Station
-+ X​box
 + Linux \(dedicated server only\)
 
 Some platforms have additional requirements\.
-+ For console support, see the [X​box for game developers](http://www.xbox.com/en-US/developers) and [Play​Station Partners](https://www.playstation.com/en-us/develop/) portals\.
 + For mobile devices, see [Creating Android and iOS projects](/docs/userguide/mobile/support-intro) in the [User guide](https://docs.aws.amazon.com/lumberyard/latest/userguide)\.
 + For macOS, see [Creating macOS projects](https://docs.aws.amazon.com/lumberyard/latest/userguide/osx-intro.html) in the [User guide](https://docs.aws.amazon.com/lumberyard/latest/userguide)\.
 + For Linux dedicated servers, see [Creating Lumberyard Executables for Linux](https://docs.aws.amazon.com/lumberyard/latest/userguide/linux-intro.html) in the [User guide](https://docs.aws.amazon.com/lumberyard/latest/userguide)\.

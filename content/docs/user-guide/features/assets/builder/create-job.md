@@ -8,9 +8,10 @@ title: Create jobs with Python Asset Builder
 When you create a job with the Python Asset Builder, the callback for `OnCreateJobsRequest` will be called with a `CreateJobsRequest` in a tuple\. The callback will return a `CreateJobsResponse` as the response using the data inside the request\.
 
 **Contents**
-+ [CreateJobsRequest](#python-asset-builder-create-jobs-request)
-+ [CreateJobsResponse](#python-asset-builder-create-jobs-response)
-+ [Example: Create jobs](#python-asset-builder-create-jobs-example)
+- [Create jobs with Python Asset Builder {#python-asset-builder-create-job}](#create-jobs-with-python-asset-builder-python-asset-builder-create-job)
+  - [CreateJobsRequest {#python-asset-builder-create-jobs-request}](#createjobsrequest-python-asset-builder-create-jobs-request)
+  - [CreateJobsResponse {#python-asset-builder-create-jobs-response}](#createjobsresponse-python-asset-builder-create-jobs-response)
+  - [Example: Create jobs {#python-asset-builder-create-jobs-example}](#example-create-jobs-python-asset-builder-create-jobs-example)
 
 ## CreateJobsRequest {#python-asset-builder-create-jobs-request}
 
@@ -36,7 +37,7 @@ This structure indicates the platform that has been enabled for the project\.
 ```
 class azlmbr.asset.builder.PlatformInfo
 - identifier (str) The ID of the platform such as 'pc' or 'ios'
-- tags (set of string) The tags such as "console" or "tools" on that platform
+- tags (set of strings) The tags available for the platform
 ```
 
 ## CreateJobsResponse {#python-asset-builder-create-jobs-response}

@@ -26,7 +26,7 @@ By using the Asset Bundler, because you have smaller release packages, less risk
 
 ## How do I use the Asset Bundler? {#related-services}
 
-Generating a platform\-specific \(for an iOS\-specific release, or a console\-specific one\) asset bundle using the Asset Bundler follows these general steps:
+Generating a platform\-specific asset bundle using the Asset Bundler follows these steps:
 
 1. **Define your seeds**\. A *seed* is generally a top\-level asset, such as a `.pak` file that contains an entire game or game level\. You must have one or more seeds defined in a seed list\. A seed list is a file with the suffix `.seed`\.
 

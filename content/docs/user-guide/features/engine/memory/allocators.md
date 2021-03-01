@@ -4,7 +4,7 @@ title: Using Memory Allocators in Lumberyard
 ---
 # Using Memory Allocators in Lumberyard {#memory-allocators}
 
-Lumberyard's memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile and console applications, where memory resources are usually more constrained than in PC environments\.
+Lumberyard's memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile platforms, where memory resources are usually more constrained than in PC environments\.
 
 Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
@@ -12,16 +12,16 @@ Lumberyard supports all the best known memory allocation schemes\. You can use L
 For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](/docs/user-guide/features/engine/memory-management.md)\.
 
 **Topics**
-+ [Manually Allocating Memory](#memory-allocators-manually-allocating-memory)
-+ [AZ Memory Allocators](#memory-allocators-az-memory-allocators)
-+ [Applying Allocators to Your Classes](#memory-allocators-applying-allocators-to-your-classes)
-+ [AZ Allocator Schemas](#memory-allocators-az-allocator-schemas)
-+ [Creating an Allocator](#memory-allocators-creating-an-allocator)
-+ [Static Initialization](#memory-allocators-static-initialization)
-+ [Legacy Memory Management](#memory-allocators-legacy-memory-management)
-+ [Code Example: Automatic Unreflection of Module Classes](/docs/userguide/programming/memory/allocators-example-auto-unreflect.md)
-+ [HPHA Memory Debugging](/docs/user-guide/features/engine/memory/debugging.md)
-+ [Overrun Detection](/docs/user-guide/features/engine/memory/overrun-detection.md)
+- [Using Memory Allocators in Lumberyard {#memory-allocators}](#using-memory-allocators-in-lumberyard-memory-allocators)
+  - [Manually Allocating Memory {#memory-allocators-manually-allocating-memory}](#manually-allocating-memory-memory-allocators-manually-allocating-memory)
+  - [AZ Memory Allocators {#memory-allocators-az-memory-allocators}](#az-memory-allocators-memory-allocators-az-memory-allocators)
+  - [Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}](#applying-allocators-to-your-classes-memory-allocators-applying-allocators-to-your-classes)
+  - [AZ Allocator Schemas {#memory-allocators-az-allocator-schemas}](#az-allocator-schemas-memory-allocators-az-allocator-schemas)
+  - [Creating an Allocator {#memory-allocators-creating-an-allocator}](#creating-an-allocator-memory-allocators-creating-an-allocator)
+    - [Using Your Own Allocators from Containers {#memory-allocators-using-your-own-allocators-from-containers}](#using-your-own-allocators-from-containers-memory-allocators-using-your-own-allocators-from-containers)
+    - [Child Allocator Example {#memory-allocators-creating-a-child-allocator-example}](#child-allocator-example-memory-allocators-creating-a-child-allocator-example)
+  - [Static Initialization {#memory-allocators-static-initialization}](#static-initialization-memory-allocators-static-initialization)
+  - [Legacy Memory Management {#memory-allocators-legacy-memory-management}](#legacy-memory-management-memory-allocators-legacy-memory-management)
 
 ## Manually Allocating Memory {#memory-allocators-manually-allocating-memory}
 

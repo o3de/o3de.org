@@ -24,6 +24,6 @@ You can enable Gems with the [Project Configurator](/docs/userguide/configurator
 
 **Topics**
 + [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)
-+ [Creating a Gem](/docs/user-guide/features/engine/gems/_index.md)
++ [Creating a Gem](/docs/user-guide/features/gems/development/creating/intro.md)
 + [Programming with Gems](/docs/userguide/gems/_index.md)
 + [Gems Available in Lumberyard](/docs/user-guide/features/gems/list.md)

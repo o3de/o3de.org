@@ -8,7 +8,7 @@ Lumberyard provides Lua scripts with several functions to make debugging easier\
 
 ## Logging to the Console {#lua-scripting-ces-logging-to-the-console}
 
-To print text to Lumberyard Editor and the game console, use the `Debug.Log()` function\.
+To print text to Lumberyard Editor and the console, use the `Debug.Log()` function\.
 
 The following example shows the use of the `Debug.Log()` function\.
 
