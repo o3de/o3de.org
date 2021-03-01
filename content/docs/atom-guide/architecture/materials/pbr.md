@@ -1,1 +1,0 @@
-# Physically-based Rendering (PBR)

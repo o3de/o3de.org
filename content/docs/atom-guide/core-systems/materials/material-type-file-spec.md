@@ -1,5 +1,5 @@
 # Material Type File Specification
-Material type files (*.materialtype*) are in written JSON format and contain the following elements.
+Material type files (`*.materialtype`) are in written JSON format and contain the following elements.
 
 <!-- ### **description**  
 An attribute describing the material for user understanding.
@@ -12,7 +12,7 @@ An attribute describing the material for user understanding.
 
 [DEV NOTE (according to @santorac): Currently not hooked up to anything. In the future, will move into the top-level section of the .materialtype file.] -->
 
-* **groups**: A list of property groups that will appear in the Inspector window of the Material Editor. Each group contains the following:
+* **groups**: A list of property groups that appear in the **Inspector** window of the Material Editor. Each group contains the following:
   * **id**: An identifier for this group that is unique to this material type. The value must be formatted in C-style. 
   * **displayName**: The given name of this group that will appear in the Material Editor. 
   * **description**: The given description of this group that will appear as tooltips in the Material Editor.
@@ -37,7 +37,7 @@ An attribute describing the material for user understanding.
 ### **shaders**  
 An array of references to shader files (*.shader*). Each reference contains the attribute `file`. 
 
-* **file**: The path to the shader file. The path may be relative to the asset root or to the material type file.
+* **file**: The path to the shader file. The path must be relative to the asset root or to the material type file.
 * **tag**: A unique name for this shader item that can be used to reference the shader from other places in the material type definition. It must be a C-Style identifier.
 
 In this example, we reference the ShadowMap and DepthPass shaders. 
