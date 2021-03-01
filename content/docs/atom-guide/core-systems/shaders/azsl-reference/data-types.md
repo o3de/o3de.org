@@ -1,5 +1,5 @@
 # Types
-This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For more information on HLSL see the [Direct3D HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl) documentation. 
+This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For more information on HLSL see the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl) documentation. 
 
 ## Arrays
 Arrays are commonly used in shaders to hold buffers or textures. Arrays inside Shader Resource Groups (SRGs) must have an array dimension of an expression that can be resolved at build time. It must be a direct integer literal, or an identifier with a literal initializer, or an identifier that is initialized as a copy to another identifier with a literal initializer. This limitation only applies to fields within SRGs. In other cases, AZSLc will preserve array specifiers verbatim when outputting HLSL. As long as DXC supports a particular array specifier expression, it will work in AZSL too. 

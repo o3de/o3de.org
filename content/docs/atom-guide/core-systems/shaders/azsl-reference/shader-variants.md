@@ -1,17 +1,19 @@
 # Shader Variants and the Options Keyword
 ## Shader Variants
-A shader source file can have multiple variants, which are permutations of the same shader. Each shader has at least one variant, a **root variant**. In a root variant, all the options are dynamic. A shader variant is optimized for performance, where one or more options are baked with static values and static branches. The option variables are reflected to the AssetBuilder and participate in variant permutation building. 
+A shader source file can have multiple variants, which are permutations of the same shader. Each shader has at least one variant, a **root variant**. In a root variant, all the options are dynamic. A shader variant is optimized for performance, where one or more options are baked with static values and static branches. They are reflected to the Atom Asset Builder and participate in variant permutation building.
 
-[
-    WRITER NOTE: 
-- What does it mean for options to be "dynamc"?
+<!-- @csantora Using "Atom Asset Builder" based on your previous comment in Materials PR. I want to make sure it is applicable here too. Yes/no/maybe? -->
+
+<!-- [
+    NOTE FOR DEVS:
+- What does it mean for options to be "dynamic"?
 - How are shader variants optimized?
-]
-
-Variants are defined using the `option` type qualifier.
-In the top level declaration scope, you can define variables as either `static const` or `option` qualified, but not as uniforms. 
+] --> 
 
 ## Options Type Qualifier
+Variants are defined using the `option` type qualifier.
+In the top level declaration scope, you can define variables as either `static const` or `option` qualified, but not as uniforms.
+
 The `option` type qualifier must be of type *enum*, *bool*, or *int*. An *int* option requires a *range* attribute to specify the minimum and maximum range of values. *Float* and *struct* options are not supported. 
 
 ```glsl

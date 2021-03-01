@@ -9,3 +9,4 @@ weight: 300
 # Shaders Section
 - [Shader System](shader-system.md)
 - [AZSL Reference](azsl-reference/_index.md)
+- [Debugging Shaders](debugging-shaders.md)
