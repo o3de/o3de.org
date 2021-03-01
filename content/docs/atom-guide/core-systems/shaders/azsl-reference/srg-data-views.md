@@ -1,6 +1,6 @@
 <!-- [WRITER NOTE: This page needs more information and more work.] -->
 # SRG Data Views
-Data views include *constant buffer view*, *shader resource view* (textures and buffers), and *unordered access view* (textures and buffers). Every SRG binds to a user-supplied data view. The following lists points regarding how data views are processed:
+Data views include *constant buffer view*, *shader resource view* (textures and buffers), and *unordered access view* (textures and buffers). Every SRG binds to a user-supplied data view. Here are a couple of points regarding how data views are processed:
 - AZSLc does not manage the data's layout, creation, or destruction.
 - ConstantBuffer views follow very strict layout rules which differ per API. 
 - AZSLc does not enforce specific packing rules because it doesn't manage external CBVs. 

@@ -1,5 +1,5 @@
 # AZSL Reference
-This section covers notable features in the AZSL grammar. It does not cover the AZSL grammar to its full extent because AZSL is an extension of HLSL (see the [Direct3D HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl) documentation). As a rule of thumb, all rules that apply to HLSL are the same for AZSL. The main exception to this is AZSL's Shader Resource Group (SRG), which encapsulates shader resource data. Other differences between the AZSL and HLSL grammar, as well as grammar specific to SRGs are listed in the following pages. 
+This section covers notable features in the AZSL grammar. It does not cover the AZSL grammar to its full extent because AZSL is an extension of HLSL (see the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl) documentation). As a rule of thumb, all rules that apply to HLSL are the same for AZSL. The main exception to this is AZSL's Shader Resource Group (SRG), which encapsulates shader resource data. Other differences between the AZSL and HLSL grammar, as well as grammar specific to SRGs are listed in the following pages. 
 
 <!-- 
 - Show how to do it in HLSL (very basic, don't teach hlsl, juts do this for spotting the difference)
