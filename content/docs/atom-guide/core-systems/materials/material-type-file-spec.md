@@ -1,17 +1,13 @@
-# Material Type File Specification
+---
+title: "Material Type File Specification"
+description: "Material type files (`*.materialtype`) are in written JSON format."
+date: 2021-03-04
+toc: true
+---
+
 Material type files (`*.materialtype`) are in written JSON format and contain the following elements.
 
-<!-- ### **description**  
-An attribute describing the material for user understanding.
-
-[DEV NOTE (according to @santorac): This field is not currently used by any of our tools, but in the future we may display it to the user. For example, in the Material Editor when creating a new material and browsing the available material types.] -->
-
 ### **propertyLayout**  
-
-<!-- * **version**: A number that is used for backwards compatibility with material files via the material's `propertyLayoutVersion` number. 
-
-[DEV NOTE (according to @santorac): Currently not hooked up to anything. In the future, will move into the top-level section of the .materialtype file.] -->
-
 * **groups**: A list of property groups that appear in the **Inspector** window of the Material Editor. Each group contains the following:
   * **id**: An identifier for this group that is unique to this material type. The value must be formatted in C-style. 
   * **displayName**: The given name of this group that will appear in the Material Editor. 
@@ -35,7 +31,7 @@ An attribute describing the material for user understanding.
 
 
 ### **shaders**  
-An array of references to shader files (*.shader*). Each reference contains the attribute `file`. 
+An array of references to shader files (*.shader*). Each reference contains the following values. 
 
 * **file**: The path to the shader file. The path must be relative to the asset root or to the material type file.
 * **tag**: A unique name for this shader item that can be used to reference the shader from other places in the material type definition. It must be a C-Style identifier.
@@ -58,10 +54,8 @@ In this example, we reference the ShadowMap and DepthPass shaders.
 An array of material functors. Each one reads material property values, performs some logic or calculations, and sets shader inputs accordingly. These can be defined in Lua or C++. Each functor data contains the following:
 * **type**: The name of the functor type. This will be "Lua" for custom Lua script functors, or the name of specialized functor type (defined in C++).
 <!-- [Future work] See [TBD link] for a list of available functor types. -->
-* **args**: An object containing key/value pairs of all the arguments to send to this functor. The attributes vary depending on functor type. For 'Lua' functors, there is a single 'file' argument which references the lua file. 
+* **args**: An object containing key/value pairs of all the arguments to send to this functor. The attributes vary depending on functor type. For 'Lua' functors, there is a single 'file' argument that references the Lua file. 
 <!-- [Future work] See [TBD link] for a list of available functor types and their expected arguments. -->
-
-<!-- [DEV NOTE (according to @santorac): We need docs on each of our functor types, what they do, and what inputs they expect.] -->
 
 ### **uvNameMap** *(optional)*
 This array lists default identifiers for mesh UV streams. 
