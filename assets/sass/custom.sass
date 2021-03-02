@@ -64,7 +64,15 @@
 
 // Custom
 
-$font-family-headers: "Fira Sans" 
+
+// Variables 
+
+$font-family-headers: "Open Sans" 
+$o3de-black: #000
+$o3de-white: #fff
+$o3de-lightblue: #D2EDFF
+
+// General 
 
 .breadcrumb 
   li
@@ -98,3 +106,31 @@ nav
     padding-left: 0
     ul
       padding-left: 1.5rem
+
+// layouts/partials/navbar.html 
+
+.main-navbar 
+  background-color: $o3de-black
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+
+.navbar-dark .navbar-nav .nav-link
+    color: $o3de-white
+    &:hover 
+      color: $o3de-lightblue
+
+.navbar-logo
+  max-height: 36px
+
+// layouts/partials/hero.html
+
+//scales the header proportionally
+.scalable
+  min-height: 582px
+  height: 70vh
+
+
+.hero 
+  background-image: url('/img/home/hero.jpg')
+  background-size: 100%
+  height: 100%
+  //min-height: 582px
