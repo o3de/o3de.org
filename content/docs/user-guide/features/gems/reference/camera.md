@@ -1,6 +1,6 @@
 ---
 description: ' Use the Camera Framework Gem to build complex camera systems for your
-  Lumberyard game project. '
+  O3DE game project. '
 title: Camera Framework Gem
 ---
 # Camera Framework Gem {#gems-system-gem-camera}

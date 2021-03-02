@@ -1,13 +1,13 @@
 ---
-description: ' Learn how to use the Lumberyard UI 2.0 styled dock widget with the
-  dock main window component, to enable fancy docking in Lumberyard tools and gems. '
-title: Lumberyard UI styled dock widget
+description: ' Learn how to use the O3DE UI 2.0 styled dock widget with the
+  dock main window component, to enable fancy docking in O3DE tools and gems. '
+title: O3DE UI styled dock widget
 ---
-# Lumberyard UI styled dock widget<a name="uidev-styled-dock-component"></a>
+# O3DE UI styled dock widget<a name="uidev-styled-dock-component"></a>
 
-Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in Lumberyard called "fancy docking", which provides users with a variety of options for arranging their window layout\.
+Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in O3DE called "fancy docking", which provides users with a variety of options for arranging their window layout\.
 
-Fancy docking provides four docking drop zones around the edge of a target, and one in the center that's used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing Lumberyard Editor](/docs/userguide/editor/customizing)\.
+Fancy docking provides four docking drop zones around the edge of a target, and one in the center that's used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing O3DE Editor](/docs/userguide/editor/customizing)\.
 
 ![\[component fancy docking editor\]](/images/tools-ui/component-fancy-docking-editor.gif)
 
@@ -25,7 +25,7 @@ Fancy docking can use up to five styled dock widgets added to a `DockMainWindow`
 
 1.  Construct a `AzQtComponents::StyledDockWidget` for the center and add it to the main window\.
 
-For the complete working example pictured in the preceding image, be sure to look at the **Styled Dock Widget** page in the [Lumberyard Qt control gallery tool](uidev-control-gallery.md), and browse the source code for that page\. This can be found in your Lumberyard dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp`\.
+For the complete working example pictured in the preceding image, be sure to look at the **Styled Dock Widget** page in the [O3DE Qt control gallery tool](uidev-control-gallery.md), and browse the source code for that page\. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp`\.
 
 The following code shows a simplistic example of the styled dock widget\.
 
@@ -69,7 +69,7 @@ mainWindow->setCentralWidget(centralWidget);
 
 ## C\+\+ API reference<a name="styled-dock-api-ref"></a>
 
-For details on the **styled dock** API and other components related to fancy docking, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **styled dock** API and other components related to fancy docking, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::StyledDockWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_styled_dock_widget.html)
 +  [AzQtComponents::DockMainWindow](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_dock_main_window.html)
 +  [AzQtComponents::FancyDocking](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_fancy_docking.html)

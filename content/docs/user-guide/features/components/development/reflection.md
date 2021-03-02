@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to reflect Lumberyard components in C++. '
+description: ' Learn how to reflect O3DE components in C++. '
 title: Reflecting a Component for Serialization and Editing
 ---
 # Reflecting a Component for Serialization and Editing {#component-entity-system-reflect-component}
@@ -92,16 +92,16 @@ if (edit)
 }
 ```
 
-Lumberyard has reflection contexts for different purposes, including the following:
+O3DE has reflection contexts for different purposes, including the following:
 + [Serialization Context](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md) - Contains reflection data for serialization and construction of objects\.
-+ [Edit Context](/docs/user-guide/features/engine/components/edit-context.md) - Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
++ [Edit Context](/docs/user-guide/features/engine/components/edit-context.md) - Contains reflection data for visual editing of objects, as in O3DE Editor\.
 + [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md), or other external sources\.
 + `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation\.
 
 **Note**
  This topic covers only `SerializeContext` and `EditContext`\.
 
-All of Lumberyard's reflection API operations are designed to be simple, human readable, and human writable, with no forced dependency on code generation\.
+All of O3DE's reflection API operations are designed to be simple, human readable, and human writable, with no forced dependency on code generation\.
 
 A component's `Reflect()` function is invoked automatically for all relevant contexts\.
 
@@ -140,11 +140,11 @@ The preceding example reflects two primitive types-a float, and a string-as well
 **Note**
 The example omits the reflection code for `SomeClassThatSomeoneHasReflected`\. However, you need only reflect the class\. After that, you can freely reflect members or containers of that class in other classes\.
 
-For C\+\+ API reference documentation on the serialize context, see the [SerializeContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_serialize_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the serialize context, see the [SerializeContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_serialize_context.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## Editing {#component-entity-system-reflect-component-editing}
 
-When you run Lumberyard tools such as Lumberyard Editor, an `EditContext` and a `SerializeContext` are provided\. You can use the robust facilities in these contexts to expose your fields to content creators\.
+When you run O3DE tools such as O3DE Editor, an `EditContext` and a `SerializeContext` are provided\. You can use the robust facilities in these contexts to expose your fields to content creators\.
 
 The following code demonstrates basic edit context reflection:
 
@@ -181,7 +181,7 @@ The `AZ::Edit::UIHandlers::Slider` UI handler expects `AZ::Edit::Attributes::Min
 **Note**
 The property system supports external UI handlers, so you can implement your own UI handlers in your own modules\. You can customize the behavior of the field, the `Qt` control that it uses, and the attributes that it observes\.
 
-For C\+\+ API reference documentation on the edit context, see the [EditContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_edit_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the edit context, see the [EditContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_edit_context.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## Attributes {#component-entity-system-reflect-component-attributes}
 

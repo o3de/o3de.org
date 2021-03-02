@@ -1,6 +1,6 @@
 ---
 description: ' Use Dynamic Vegetation to place natural-looking vegetation and customize
-  where and how it grows in Amazon Lumberyard. '
+  where and how it grows in Open 3D Engine. '
 title: Dynamic vegetation
 ---
 # Dynamic vegetation {#dynamic-vegetation-intro}
@@ -29,7 +29,7 @@ Dynamic vegetation differs from static vegetation in the following ways\.
 
 |  | Dynamic Vegetation | Static Vegetation |
 | --- | --- | --- |
-| World size | Limited only by Lumberyard maximum world size | Maximum of 2K-4K |
+| World size | Limited only by O3DE maximum world size | Maximum of 2K-4K |
 | Templates | Slices | Not templatable |
 | Saved as | Procedural mechanisms | Static placement data |
 | Generated | In\-game just\-in\-time placement | As level data |
@@ -47,7 +47,7 @@ Using gradient signals with modifier components \(such as positional jitter\) or
 Enables surfaces such as terrain or meshes to emit signals, or tags, that communicate its surface type\. Using a vegetation surface mask filter, you can choose to grow vegetation on a particular surface by using an inclusion list or block it from growing by using an exclusion list\. You could also recapture the tags as a gradient signal by using the **Surface Mask Gradient** component\.
 
 **FastNoise gem \(optional\)**
-Provides an expressive **FastNoise Gradient** component that generates many procedural noise variations\. In the Lumberyard **Entity Inspector**, the **FastNoise Gradient** component appears in the **Gradient** category\. You use it like any other gradient component\.
+Provides an expressive **FastNoise Gradient** component that generates many procedural noise variations\. In the O3DE **Entity Inspector**, the **FastNoise Gradient** component appears in the **Gradient** category\. You use it like any other gradient component\.
 
 **Topics**
 + [Dynamic Vegetation Concepts](/docs/user-guide/features/gems/vegetation/concepts.md)

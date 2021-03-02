@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Switch component to set up a default switch and switch
-  states for an entity in Lumberyard. '
+  states for an entity in O3DE. '
 title: Audio Switch
 ---
 # Audio Switch {#component-audio-switch}

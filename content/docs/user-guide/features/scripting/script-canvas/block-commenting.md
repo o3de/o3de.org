@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Script Canvas editor to add comments to your script. '
+description: ' Use the Open 3D Engine Script Canvas editor to add comments to your script. '
 title: Commenting Nodes
 ---
 # Commenting Nodes {#script-canvas-block-commenting}

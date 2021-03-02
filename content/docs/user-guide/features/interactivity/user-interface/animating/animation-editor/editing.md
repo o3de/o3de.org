@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard''s Animation Editor''s Node Pane, Track Editor, and Curve
+description: ' Use O3DE''s Animation Editor''s Node Pane, Track Editor, and Curve
   Editor to edit animation sequences. '
 title: Editing Animation Data
 ---

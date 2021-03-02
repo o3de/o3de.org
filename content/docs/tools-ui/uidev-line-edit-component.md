@@ -1,11 +1,11 @@
 ---
-description: ' Use the Lumberyard UI 2.0 line edit component to capture free-form
+description: ' Use the O3DE UI 2.0 line edit component to capture free-form
   text from the user. '
-title: Lumberyard UI line edit component
+title: O3DE UI line edit component
 ---
-# Lumberyard UI line edit component<a name="uidev-line-edit-component"></a>
+# O3DE UI line edit component<a name="uidev-line-edit-component"></a>
 
-The **line edit** component is one of several types of input boxes offered by the Qt and Lumberyard UI libraries\. Use the line edit component to enable users to enter free\-form text\. Be mindful of the length of text intended for a field, and always pair with a useful, clear label\.
+The **line edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries\. Use the line edit component to enable users to enter free\-form text\. Be mindful of the length of text intended for a field, and always pair with a useful, clear label\.
 
 ## Anatomy of the line edit widget<a name="line-edit-anatomy"></a>
 
@@ -177,7 +177,7 @@ lineEdit->setEnabled(false);
 
 ## C\+\+ API reference<a name="line-edit-api-ref"></a>
 
-For details on the **line edit** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **line edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::LineEdit](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_line_edit.html)
 
 Relevant Qt documentation includes the following topics:

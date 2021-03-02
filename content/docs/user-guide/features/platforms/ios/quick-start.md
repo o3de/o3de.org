@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to run the Amazon Lumberyard Samples Project on your iOS device from
+description: ' Learn how to run the Open 3D Engine Samples Project on your iOS device from
   a macOS computer. '
 title: 'Quick Start: Running the Samples Project on iOS Devices'
 ---
@@ -9,16 +9,16 @@ You can use this quick start to learn how to run the [Samples Project](/docs/use
 
 This topic assumes that you have:
 + Xcode installed on your macOS computer
-+ Lumberyard installed on your macOS computer
++ O3DE installed on your macOS computer
 + An iOS device connected to your computer with a USB cable
-+ Lumberyard installed on a Windows computer
++ O3DE installed on a Windows computer
 + Remote Shader Compiler running on your Windows or macOS computer
 
 For more information about creating iOS apps, see [iOS Support](/docs/user-guide/features/platforms/ios/intro.md)\.
 
 **To run the Samples Project on an iOS device**
 
-1. Use Lumberyard Setup Assistant to install the required third\-party software and SDKs for iOS\.
+1. Use O3DE Setup Assistant to install the required third\-party software and SDKs for iOS\.
 
    1. On your macOS computer, navigate to the `lumberyard_version\dev\Tools\LmbrSetup\Mac\` directory and double\-click `SetupAssistant.exe`\.
 
@@ -26,13 +26,13 @@ For more information about creating iOS apps, see [iOS Support](/docs/user-guide
 
    1. On the **Get Started** page, select the following:
       + **Run your game project**
-      + **Run the Lumberyard Editor and tools**
+      + **Run the O3DE Editor and tools**
       + **Compile the game code**
       + **Compile the engine and asset pipeline**
-      + **Compile the Lumberyard Editor and tools**
+      + **Compile the O3DE Editor and tools**
       + **Compile for iOS devices**
 
-   1. Complete the Lumberyard Setup Assistant wizard\. For more information, see [Running Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
+   1. Complete the O3DE Setup Assistant wizard\. For more information, see [Running O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. Configure Asset Processor for iOS\.
 
@@ -77,6 +77,6 @@ For more information about creating iOS apps, see [iOS Support](/docs/user-guide
 
 1. Build and deploy the code\.
 
-   1. Navigate to the `lumberyard_version\dev\Solutions\` directory and open the `LumberyardiOSSDK.xcodeproj` file\.
+   1. Navigate to the `lumberyard_version\dev\Solutions\` directory and open the `O3DEiOSSDK.xcodeproj` file\.
 
    1. Click **Run** to build and deploy the code to your iOS device\.

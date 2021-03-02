@@ -1,5 +1,5 @@
 ---
-description: ' Use the Screen Fader node to fade the screen in and out in a Amazon Lumberyard
+description: ' Use the Screen Fader node to fade the screen in and out in a Open 3D Engine
   track view sequence. '
 title: Screen Fader Node
 ---

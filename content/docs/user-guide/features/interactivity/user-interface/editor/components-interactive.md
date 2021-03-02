@@ -1,5 +1,5 @@
 ---
-description: ' Use interactive components in the Amazon Lumberyard UI Editor. '
+description: ' Use interactive components in the Open 3D Engine UI Editor. '
 title: Interactive Components
 ---
 # Interactive Components {#ui-editor-components-interactive}

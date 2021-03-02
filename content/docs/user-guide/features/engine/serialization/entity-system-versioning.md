@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard component serialization versioning system to validate
+description: ' Use the Open 3D Engine component serialization versioning system to validate
   and update the serialized data of your components. '
 title: Versioning your Component Serialization
 ---
@@ -20,10 +20,10 @@ Successful conversion of serialized data to a newer version requires careful pla
 + [Deprecation](#component-entity-system-versioning-deprecation)
 
 **Important**
-If you upgraded to Lumberyard v1\.23 or later from a previous version of Lumberyard, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
+If you upgraded to O3DE v1\.23 or later from a previous version of O3DE, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
 
 **Important**
-If you are using Lumberyard v1\.22 or earlier, be sure to read important information about [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
+If you are using O3DE v1\.22 or earlier, be sure to read important information about [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
 
 ## Version Converters {#component-entity-system-versioning-converters}
 
@@ -38,7 +38,7 @@ serializeContext->Class<EditorEntitySortComponent, EditorComponentBase>()
 
 Version converters operate directly on the serialized data\.
 
-To facilitate the creation of version converters, Lumberyard provides helper functions and examples such as the following:
+To facilitate the creation of version converters, O3DE provides helper functions and examples such as the following:
 + To locate a specific element to manipulate, you can use the `AZ::Utils::FindDescendantElements` helper function\.
 + To access serialized data and manipulate it, you can use the public functions in the `DataElementNode` class \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.h`\)\.
 + For version converter examples, see the AZ core serialization unit test in the `dev\Code\Framework\AzCore\Tests\Serialization.cpp` file\.

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Actor component to add an actor file to your entity in Amazon Lumberyard. '
+description: ' Use the Actor component to add an actor file to your entity in Open 3D Engine. '
 title: Actor
 ---
 # Actor {#component-actor}
@@ -11,7 +11,7 @@ title: Actor
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-You can use the **Actor** component to create characters for your game\. After you import your character files from your DCC tool into Lumberyard, you can create an entity and add the **Actor** component to it\. For example, you must use an **Actor** component to create a controllable character for your game\.
+You can use the **Actor** component to create characters for your game\. After you import your character files from your DCC tool into O3DE, you can create an entity and add the **Actor** component to it\. For example, you must use an **Actor** component to create a controllable character for your game\.
 
 For the **Actor** component to work properly, you must also add one of the following:
 + **[Simple Motion](/docs/user-guide/features/components/simple-motion.md)** component - Uses a single motion for your actor\.

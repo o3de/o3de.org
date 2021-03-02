@@ -2,7 +2,7 @@
 title: Deadlink
 ---
 
-Hello, you've reched a dead link in the documentation. Sorry for the inconvenience! We've retired an old page from Lumberyard 1.x 
+Hello, you've reched a dead link in the documentation. Sorry for the inconvenience! We've retired an old page from O3DE 1.x 
 and haven't come up with a suitable replacement for Open 3D Engine yet. In order to get this resolved, please file a
 [GitHub Issue](https://github.com/o3de/o3de.org/issues). Make sure you:
 

@@ -1,9 +1,9 @@
 ---
-description: ' Learn how to apply the Lumberyard UI 2.0 toggle switch style to a checkbox
-  component in Lumberyard gems and tools. '
-title: Lumberyard UI toggle switch component
+description: ' Learn how to apply the O3DE UI 2.0 toggle switch style to a checkbox
+  component in O3DE gems and tools. '
+title: O3DE UI toggle switch component
 ---
-# Lumberyard UI toggle switch component<a name="uidev-toggle-switch-component"></a>
+# O3DE UI toggle switch component<a name="uidev-toggle-switch-component"></a>
 
 Use a toggle switch to enable users to quickly switch between two states with a minimum of effort\. The state will be clearly reflected back to them and persisted across sessions\.
 
@@ -51,7 +51,7 @@ toggleSwitch->setEnabled(false);
 
 ## C\+\+ API reference<a name="toggle-switch-api-ref"></a>
 
-For details on the **checkbox** API used to style a toggle switch, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **checkbox** API used to style a toggle switch, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::CheckBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_check_box.html)
 
 Relevant Qt documentation includes the following topics:

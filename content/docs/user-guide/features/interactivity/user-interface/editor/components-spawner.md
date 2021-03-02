@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard UISpawner component to spawn a runtime dynamic slice
+description: ' Use the Open 3D Engine UISpawner component to spawn a runtime dynamic slice
   at an entity''s location with an optional offset. '
 title: UISpawner Component
 ---
@@ -45,7 +45,7 @@ You can also view the example canvases in the **UI Editor**\.
 
 **To view the canvases**
 
-1. In Lumberyard Editor, choose **Tools**, **UI Editor**\.
+1. In O3DE Editor, choose **Tools**, **UI Editor**\.
 
 1. Navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Spawner` directory\.
 

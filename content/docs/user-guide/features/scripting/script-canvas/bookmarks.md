@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Script Canvas editor to add bookmarks to your script. '
+description: ' Use the Open 3D Engine Script Canvas editor to add bookmarks to your script. '
 title: Adding Bookmarks for Script Canvas
 ---
 # Adding Bookmarks for Script Canvas {#script-canvas-bookmarks}

@@ -1,14 +1,14 @@
 ---
-description: ' List of Lumberyard materials that are allowed to be redistributed in
-  Lumberyard projects. '
-title: Lumberyard redistributables
+description: ' List of O3DE materials that are allowed to be redistributed in
+  O3DE projects. '
+title: O3DE redistributables
 ---
-# Lumberyard redistributables<a name="legal-lumberyard-redistributables"></a>
+# O3DE redistributables<a name="legal-lumberyard-redistributables"></a>
 
-For purposes of the [Lumberyard Service Terms](https://aws.amazon.com/service-terms/), the Lumberyard materials in the directories listed below are designated as "Lumberyard Redistributables\." Unless subdirectories of a directory are specified, all files in the directory listed are deemed Lumberyard Redistributables\.
+For purposes of the [O3DE Service Terms](https://aws.amazon.com/service-terms/), the O3DE materials in the directories listed below are designated as "O3DE Redistributables\." Unless subdirectories of a directory are specified, all files in the directory listed are deemed O3DE Redistributables\.
 
 **Note**
-Restrictions on use and distribution of the Lumberyard materials, including in source code form, are specified in the [Service Terms](https://aws.amazon.com/service-terms/)\.
+Restrictions on use and distribution of the O3DE materials, including in source code form, are specified in the [Service Terms](https://aws.amazon.com/service-terms/)\.
 +  `\3rdParty\GameLift`
 +  `\dev_WAF_`
 +  `\dev\Bin64`

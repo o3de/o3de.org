@@ -1,17 +1,17 @@
 ---
 description: ' Learn more about the hardware, operating system, and software requirements
-  for installing Amazon Lumberyard. '
+  for installing Open 3D Engine. '
 title: System requirements
 ---
 # System requirements {#setting-up-system-requirements}
 
-Lumberyard has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\. If you have already installed Lumberyard, you can use Lumberyard Setup Assistant to see the requirements for the tools and features that you want for your Lumberyard development environment\. Lumberyard Setup Assistant provides information about installing third\-party software and SDKs on your computer\. For more information, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
+O3DE has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\. If you have already installed O3DE, you can use O3DE Setup Assistant to see the requirements for the tools and features that you want for your O3DE development environment\. O3DE Setup Assistant provides information about installing third\-party software and SDKs on your computer\. For more information, see [Using O3DE Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 
  If your system is capable of running a modern real\-time 3D game with good performance you should be set, however, review these detailed requirements to be certain\.
 
-Lumberyard requires Windows 10\.
+O3DE requires Windows 10\.
 
-**Lumberyard minimum hardware requirements:**
+**O3DE minimum hardware requirements:**
 + 3 GHz quad\-core processor
 + 8 GB RAM
 + 2 GB VRAM DirectX 11 or later compatible video card
@@ -23,25 +23,25 @@ Lumberyard requires Windows 10\.
 **Note**
 If you select options to build the engine, editor, or tools in **Setup Assistant**, 14 GB RAM is required for compilation\.
 Some advanced graphics features require a DirectX 12 or later compatible video card\.
-Required free disk space is dependent on the options that you select when installing Lumberyard\.
+Required free disk space is dependent on the options that you select when installing O3DE\.
 
 ## Developer tools {#lumberyard-visual-studio-requirement}
 
-You can use the Lumberyard Editor and tools without installing additional software\. To create new projects or use advanced development features in Lumberyard, you need a developer environment that includes Microsoft Visual Studio\. The following versions are supported:
+You can use the O3DE Editor and tools without installing additional software\. To create new projects or use advanced development features in O3DE, you need a developer environment that includes Microsoft Visual Studio\. The following versions are supported:
 +  \(Recommended\) Microsoft Visual Studio 2019 version **16\.2\.4** thru version **16\.8\.x**\.
 +  Microsoft Visual Studio 2017 version **15\.9\.14** thru version **15\.9\.x**\.
 
 **Note**
-The definitive source for the minimum version of Visual Studio for any particular release of Lumberyard is set in the file `dev\_WAF_\settings\platforms\platform.win_x64_vs2019.json`\. Look for the `vswhere-args` settings\. The minimum version is the first value in the `default_value` range\.
+The definitive source for the minimum version of Visual Studio for any particular release of O3DE is set in the file `dev\_WAF_\settings\platforms\platform.win_x64_vs2019.json`\. Look for the `vswhere-args` settings\. The minimum version is the first value in the `default_value` range\.
 
 Microsoft offers Visual Studio Community edition free to individual developers\. For more information and to download and install Visual Studio Community, visit the [ Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal\.
 
 **Visual Studio 2017 and 2019 required features**
-The default Visual Studio installation might not include all of the features that are required by Lumberyard\. Ensure that the following Visual Studio features are enabled:
+The default Visual Studio installation might not include all of the features that are required by O3DE\. Ensure that the following Visual Studio features are enabled:
 
 1. Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you've already installed Visual Studio\.
 
-1. If you've installed Visual Studio, choose **More \- Modify** on the version of Visual Studio you'll use with Lumberyard\.
+1. If you've installed Visual Studio, choose **More \- Modify** on the version of Visual Studio you'll use with O3DE\.
 
 1. On the **Workloads** tab:
    + Select **Game development with C\+\+**\.
@@ -57,21 +57,21 @@ The default Visual Studio installation might not include all of the features tha
 Incredibuild users: Installing, reinstalling, or upgrading Visual Studio may cause the Incredibuild Agent to lose its settings or require an update\. After modifying Visual Studio, be sure to confirm your Incredibuild Agent is active\. For instructions on configuring the agent properly, see [Compiling with IncrediBuild](/docs/userguide/waf/extensions#waf-extensions-incredibuild)\.
 
 **Note**
-Beginning with Visual Studio 2017, Microsoft now releases updates on a more frequent cadence \(in some cases weekly\)\. Lumberyard is tested with the latest version of Visual Studio available during the release cycle\.
+Beginning with Visual Studio 2017, Microsoft now releases updates on a more frequent cadence \(in some cases weekly\)\. O3DE is tested with the latest version of Visual Studio available during the release cycle\.
 
 ## Visual C\+\+ redistributable packages {#visual-studio-redistributable-requirements}
 
-**Lumberyard Installer** will attempt to download and install the required Visual C\+\+ Redistributable packages during the installation process\. Under some circumstances, the installation of these redistributable packages may fail\. If you receive a missing Visual C\+\+ runtime `.dll` error while running Lumberyard Installer, Lumberyard Setup Assistant, or Project Configurator, do the following:
+**O3DE Installer** will attempt to download and install the required Visual C\+\+ Redistributable packages during the installation process\. Under some circumstances, the installation of these redistributable packages may fail\. If you receive a missing Visual C\+\+ runtime `.dll` error while running O3DE Installer, O3DE Setup Assistant, or Project Configurator, do the following:
 
 1. Check that the Visual C\+\+ redistributable installers for Visual Studio 2012 and Visual Studio 2019 have been successfully downloaded\. The installers are located in the corresponding **Visual Studio** directories in the `lumberyard_version\dev\Tools\Redistributables\` directory\.
 
-1. If the Visual C\+\+ redistributable installers for Visual Studio 2012 and Visual Studio 2019 have not been downloaded by Lumberyard Installer, manually download the installers from Microsoft\.
+1. If the Visual C\+\+ redistributable installers for Visual Studio 2012 and Visual Studio 2019 have not been downloaded by O3DE Installer, manually download the installers from Microsoft\.
    + [ Visual C\+\+ Redistributable for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
    + [ Visual C\+\+ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
 
 1. Run both Visual C\+\+ redistributable installers\.
 
-1. Retry the Lumberyard installation after the Visual Studio redistributables have successfully installed\.
+1. Retry the O3DE installation after the Visual Studio redistributables have successfully installed\.
 
 **Note**
 The Visual C\+\+ Redistributable for Visual Studio 2019 also contains redistributables for Visual Studio 2015 and 2017\.

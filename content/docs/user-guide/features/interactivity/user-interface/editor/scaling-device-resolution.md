@@ -1,6 +1,6 @@
 ---
 description: ' Build UIs that display on multiple screen resolutions using the Scale
-  to Device property in the Amazon Lumberyard UI Editor. '
+  to Device property in the Open 3D Engine UI Editor. '
 title: Scaling to Device Resolutions
 ---
 # Scaling to Device Resolutions {#ui-editor-scaling-device-resolution}

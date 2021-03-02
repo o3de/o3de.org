@@ -1,11 +1,11 @@
 ---
 description: ' Use the sliced image type to intelligently resize parts of your game
-  UI in Amazon Lumberyard''s UI Editor . '
+  UI in Open 3D Engine''s UI Editor . '
 title: Sliced Image Type
 ---
 # Sliced Image Type {#ui-editor-component-9-sliced}
 
-Lumberyard uses slice resizing to resize certain images intelligently\. For example, using regular resizing to widen the following image results in distortion of the corners and edges\.
+O3DE uses slice resizing to resize certain images intelligently\. For example, using regular resizing to widen the following image results in distortion of the corners and edges\.
 
 ![\[Image with corner detail.\]](/images/user-guide/game_ui_editor/ui-editor-component-9-sliced-1.png)
 

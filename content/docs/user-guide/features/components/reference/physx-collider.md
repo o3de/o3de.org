@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Collider component to define where collision detection
-  and response occur in Amazon Lumberyard. '
+  and response occur in Open 3D Engine. '
 title: PhysX Collider
 ---
 # PhysX Collider {#component-physx-collider}

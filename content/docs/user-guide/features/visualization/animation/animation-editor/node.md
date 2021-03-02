@@ -1,6 +1,6 @@
 ---
 description: ' See the following Animation Editor nodes when creating your animation
-  graph in Amazon Lumberyard. '
+  graph in Open 3D Engine. '
 title: 'Animation Editor Nodes'
 ---
 # Animation Editor Nodes {#animation-editor-node}

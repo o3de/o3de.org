@@ -1,5 +1,5 @@
 ---
-description: ' Learn about best practices for components and EBuses in Amazon Lumberyard. '
+description: ' Learn about best practices for components and EBuses in Open 3D Engine. '
 title: 'Components and EBuses: Best Practices'
 ---
 # Components and EBuses: Best Practices {#component-entity-system-pg-components-ebuses-best-practices}
@@ -50,7 +50,7 @@ virtual void OnEnabled() = 0;
 
 ## Avoid Using Type Definitions for Serialized Data {#component-entity-system-pg-components-ebuses-best-practices-avoid-typedef-for-serialized-data}
 
-An instructive example from Lumberyard shows the importance of using classes instead of type definitions for serialized data\. Formerly, `EntityId` used the type definition `uint32_t`\. When the decision was made to change this to 64\-bit, upgrade functions had to be written for every class that contained an `EntityId`\. If `EntityId` had been a class, a single upgrade function could have been written for the class, and no further work would have been required\. Obviously, this principle does not apply to primitive types like `bool`, `float`, `int`, and `string`\. However, if you have a specific type that is serialized and might change in the future, implement it as a reflected class\. This provides a single context where you can easily make the conversion for the class or type\.
+An instructive example from O3DE shows the importance of using classes instead of type definitions for serialized data\. Formerly, `EntityId` used the type definition `uint32_t`\. When the decision was made to change this to 64\-bit, upgrade functions had to be written for every class that contained an `EntityId`\. If `EntityId` had been a class, a single upgrade function could have been written for the class, and no further work would have been required\. Obviously, this principle does not apply to primitive types like `bool`, `float`, `int`, and `string`\. However, if you have a specific type that is serialized and might change in the future, implement it as a reflected class\. This provides a single context where you can easily make the conversion for the class or type\.
 
 ## EBus Results {#component-entity-system-pg-components-ebuses-best-practices-ebus-results}
 
@@ -87,7 +87,7 @@ If a component is monitoring the `OnTransformChanged` event and sets your transf
 ## Making Functions Public or Protected {#component-entity-system-pg-components-ebuses-best-practices-public-protected}
 
 Consider the following when deciding to make functions public or private\.
-+ Make your bus functions `public` if they constitute the public interface for your class\. While it's discouraged, Lumberyard does not prevent users from getting direct pointers to components and calling functions directly\. To avoid this, make sure that your useful functions are public\. For example, `MyComponent` should probably implement functions from `MyComponentRequestBus` publicly\.
++ Make your bus functions `public` if they constitute the public interface for your class\. While it's discouraged, O3DE does not prevent users from getting direct pointers to components and calling functions directly\. To avoid this, make sure that your useful functions are public\. For example, `MyComponent` should probably implement functions from `MyComponentRequestBus` publicly\.
 + Make your bus functions `protected` if they contain the private workings of your class\. For example, your component's reaction to the `TransformNotificationBus::OnTransformChanged` event would likely be a private implementation detail\.
 
 ## Additional Resources {#component-entity-system-pg-components-ebuses-best-practices-additional-resources}
@@ -96,4 +96,4 @@ For more information on components and EBuses, consult the following resources\.
 + For examples of EBus usage, see [Usage and Examples](/docs/user-guide/samples/ebus/examples.md)\.
 + For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/features/engine/ebus/design.md)\.
 + For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md)\.
-+ For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
++ For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.

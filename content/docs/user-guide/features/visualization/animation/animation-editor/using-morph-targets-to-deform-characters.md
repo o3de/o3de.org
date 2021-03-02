@@ -1,5 +1,5 @@
 ---
-description: ' Use morph targets to deform characters in the Amazon Lumberyard Animation Editor
+description: ' Use morph targets to deform characters in the Open 3D Engine Animation Editor
   . '
 title: Using Morph Targets to Deform Characters
 ---
@@ -35,7 +35,7 @@ To use morph targets in the **Animation Editor**, you must do the following:
 
 ## Importing Morph Targets {#animation-editor-importing-morph-targets}
 
-When you import an `.fbx` file into Lumberyard, all morph targets and morph target motions in that file are imported as part of the actor\. This allows you to open your actor file in the **Animation Editor** without additional steps\.
+When you import an `.fbx` file into O3DE, all morph targets and morph target motions in that file are imported as part of the actor\. This allows you to open your actor file in the **Animation Editor** without additional steps\.
 
 You can also change how morph targets are imported\.
 
@@ -73,7 +73,7 @@ When you open your actor file in the **Animation Editor**, all morph targets and
 
 **To open an actor file**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, choose **File**, **Open Actor**\.
 
@@ -86,7 +86,7 @@ You can preview the morph targets on an actor\.
 
 **To preview morph targets**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, choose **View**, **Morph Targets**\.
 

@@ -1,6 +1,6 @@
 ---
 description: ' The States group of properties defines the appearance of the interactive
-  element and its child UI elements in Lumberyard. '
+  element and its child UI elements in O3DE. '
 title: States
 ---
 # States {#ui-editor-components-interactive-properties-states}

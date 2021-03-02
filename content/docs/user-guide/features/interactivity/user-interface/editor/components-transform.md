@@ -1,5 +1,5 @@
 ---
-description: ' Amazon Lumberyard''s UI Editor . '
+description: ' Open 3D Engine''s UI Editor . '
 title: Transform2D Component
 ---
 # Transform2D Component {#ui-editor-components-transform}

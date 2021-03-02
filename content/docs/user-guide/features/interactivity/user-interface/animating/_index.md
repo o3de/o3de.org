@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard''s Scripted Entity Tweener gem or the UI System''s Animation
+description: ' Use O3DE''s Scripted Entity Tweener gem or the UI System''s Animation
   Editor to animate game UI elements. '
 title: Animating the UI
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Enable the Gestures gem for your game project to detect common gesture-based
-  input actions in Amazon Lumberyard. '
+  input actions in Open 3D Engine. '
 title: Gestures Gem
 ---
 # Gestures Gem {#gems-system-gem-gestures}
@@ -69,4 +69,4 @@ function GestureExample:OnDeactivate()
 end
 ```
 
-For more information, see [Input in Amazon Lumberyard](/docs/user-guide/features/interactivity/input/input-intro.md)\.
+For more information, see [Input in Open 3D Engine](/docs/user-guide/features/interactivity/input/input-intro.md)\.

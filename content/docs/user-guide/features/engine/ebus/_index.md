@@ -1,19 +1,19 @@
 ---
 description: ' Use event buses to dispatch messages safely and efficiently in your
-  gaming application for Amazon Lumberyard. '
+  gaming application for Open 3D Engine. '
 title: Working with the Event Bus (EBus) system
 ---
 # Working with the Event Bus \(EBus\) system {#ebus-intro}
 
-Event buses \(EBuses\) are a general\-purpose communication system that Lumberyard uses to dispatch notifications and receive requests\. EBuses are configurable and support many different use cases\.
+Event buses \(EBuses\) are a general\-purpose communication system that O3DE uses to dispatch notifications and receive requests\. EBuses are configurable and support many different use cases\.
 
-To interact with the engine or other components in Lumberyard, include the component or system's EBus or API header in your code\. Then make calls to the exposed EBuses\. With this approach you can replace engine-level system APIs with implementations that you define in a gem\. For example, you could replace Lumberyard's audio system with your own EBus handler\. This would give you complete control over audio without having to recompile the engine\.
+To interact with the engine or other components in O3DE, include the component or system's EBus or API header in your code\. Then make calls to the exposed EBuses\. With this approach you can replace engine-level system APIs with implementations that you define in a gem\. For example, you could replace O3DE's audio system with your own EBus handler\. This would give you complete control over audio without having to recompile the engine\.
 
 For examples of EBus usage, see [Usage and Examples](/docs/user-guide/samples/ebus/examples.md)\.
 
 For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/features/engine/ebus/design.md)\.
 
-For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## How Components Use EBuses {#event-bus-intro-how-components-use-ebuses}
 

@@ -1,16 +1,16 @@
 ---
 description: ' Create asset bundles that can be distributed to patch and update a
-  live Lumberyard game, while also making a new distribution for later downloads. '
-title: Create content patches with Lumberyard
+  live O3DE game, while also making a new distribution for later downloads. '
+title: Create content patches with O3DE
 ---
-# Create content patches with Lumberyard {#asset-bundler-tutorial-content-patches}
+# Create content patches with O3DE {#asset-bundler-tutorial-content-patches}
 
 
 ****
 
 |  |
 | --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of Lumberyard 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
+| This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
 
 This tutorial demonstrates a bundling process designed to simulate a patch update to existing content\. In this tutorial, you create a set of bundles that simulates a content patch\. These bundles include the patch itself, and a new version of the software to distribute with the patch already in place\. The update bundle contains only content that changed since the first set of bundles was created\. This topic covers:
 + Modifying an asset reference to reference a new asset that was not bundled previously\.
@@ -19,7 +19,7 @@ This tutorial demonstrates a bundling process designed to simulate a patch updat
 
 ## Prerequisites {#asset-bundler-tutorial-content-patches-prerequisites}
 
-To complete this tutorial, you should have completed the [Build and bundle assets for release in Lumberyard](/docs/user-guide/tutorials/packaging/tutorial-release.md) and [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md) tutorials\. You should have:
+To complete this tutorial, you should have completed the [Build and bundle assets for release in O3DE](/docs/user-guide/tutorials/packaging/tutorial-release.md) and [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md) tutorials\. You should have:
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
 + The `startergame_pc.assetlist` file used to generate the starter game content bundle\.
 + The `dlc_level2.seed` seed list file used to generate the asset list for the level content bundle\.
@@ -35,9 +35,9 @@ For this tutorial you'll modify the `level2` level created in the previous tutor
 1. Search for the term *primitive* in the search bar\. The **Primitive Assets** gem should appear in the results list\. Select the checkbox to include it as part of the Starter Game, and then select **Save**\.
 ![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](/images/user-guide/assetbundler/tutorial-content-patches/02.png)
 **Note**
-The **Primitive Assets** gem is an asset\-only gem, so you aren't required to recompile any code for your game\. If you were adding a gem with a code component, you would also need to rebuild both the **profile** and **release** portions of your game and distribute the new binaries as part of the patch\. See the [Build and bundle assets for release in Lumberyard](/docs/user-guide/tutorials/packaging/tutorial-release.md) for build instructions and where the release binaries need to be located\.
+The **Primitive Assets** gem is an asset\-only gem, so you aren't required to recompile any code for your game\. If you were adding a gem with a code component, you would also need to rebuild both the **profile** and **release** portions of your game and distribute the new binaries as part of the patch\. See the [Build and bundle assets for release in O3DE](/docs/user-guide/tutorials/packaging/tutorial-release.md) for build instructions and where the release binaries need to be located\.
 
-1. Open the Lumberyard Editor and then open `level2` that you created in the [previous tutorial\.](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)
+1. Open the O3DE Editor and then open `level2` that you created in the [previous tutorial\.](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)
 
 1. Create a new entity in the level and assign it the `_box_1x1.fbx` mesh\.
 
@@ -53,16 +53,16 @@ The **Primitive Assets** gem is an asset\-only gem, so you aren't required to re
 
 1. Export the level by selecting **Game** > **Export to engine** \(Ctrl\-E\) from the main menu\.
 
-1. Close the Lumberyard Editor\.
+1. Close the O3DE Editor\.
 
 ## Recreate the project bundles {#asset-bundler-tutorial-content-patches-recreate-bundles}
 
  In this step you'll version your old asset lists, generate new asset lists based on the changes to the level, and create two content packs: One for distributing to existing versions of the game as a patch, and one for directly downloading the latest version\.
 
 **Note**
- For most game updates, only the content of your game assets will change\. When upgrading to a new version of Lumberyard and pushing an update, you should regenerate all of the existing content to ensure it's properly updated, including the engine assets and auxiliary content\.
+ For most game updates, only the content of your game assets will change\. When upgrading to a new version of O3DE and pushing an update, you should regenerate all of the existing content to ensure it's properly updated, including the engine assets and auxiliary content\.
 
-1. Open a console and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
+1. Open a console and navigate to the O3DE root directory at `lumberyard_dir\dev`\.
 
 1. Add a version identifier to the existing `dlc_level2_all_pc.assetlist` asset list:
 
@@ -116,7 +116,7 @@ Now you're ready to simulate two scenarios: users who have v1 of your game but u
 
 ### Simulate the v1 to v2 patch experience {#asset-bundler-tutorial-content-patches-simulating-the-v1-to-v2-patch-experience}
 
-1. Open a console and navigate to the Lumberyard root directory\.
+1. Open a console and navigate to the O3DE root directory\.
 
 1. Copy the content patch to your release:
 
@@ -156,7 +156,7 @@ Now you're ready to simulate two scenarios: users who have v1 of your game but u
 
 ## Conclusion {#asset-bundler-tutorial-content-patches-conclusion}
 
-You've learned how to generate a content patch to apply to an existing game\. Now you know the general steps for distributing additional content and patches for your Lumberyard game:
+You've learned how to generate a content patch to apply to an existing game\. Now you know the general steps for distributing additional content and patches for your O3DE game:
 + Create a complete asset list using your newly created or updated content as a seed\.
 + Take the *complement* of this asset list from the original game assets and engine assets, to get only the assets needed by your new content\.
 + When you patch existing content, take the *delta* of the patch asset list against the asset list for the content you're applying the patch to\.

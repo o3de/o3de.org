@@ -1,11 +1,11 @@
 ---
 description: ' Use script events to enable entities to communicate with each other
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Script Events
 ---
 # Using Script Events {#script-events}
 
-Scripting in Lumberyard is designed around event driven paradigms\. Rather than directly accessing information from a given entity or one of its components, you use events to send and receive information and take action in a decoupled environment\.
+Scripting in O3DE is designed around event driven paradigms\. Rather than directly accessing information from a given entity or one of its components, you use events to send and receive information and take action in a decoupled environment\.
 
 Like entities and components, scripts can use events to communicate with each other\. These events are called script events\.
 

@@ -1,11 +1,11 @@
 ---
 description: ' Learn the basic procedures to create realistic-looking dynamic vegetation
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Dynamic Vegetation Procedures
 ---
 # Dynamic Vegetation Procedures {#dynamic-vegetation-procedures}
 
-Creating realistic dynamic vegetation in Lumberyard starts with a few basic procedures that you can follow up with endless customizations\.
+Creating realistic dynamic vegetation in O3DE starts with a few basic procedures that you can follow up with endless customizations\.
 
 You can perform these procedures in the order that they appear, which presents a basic workflow\. Or you can pick and choose the procedures that you need\. The examples in these procedures use assets in the Starter Game project\.
 

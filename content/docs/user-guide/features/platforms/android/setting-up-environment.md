@@ -1,38 +1,38 @@
 ---
-description: ' Set up your Amazon Lumberyard environment to build your project for Android. '
-title: Set up your environment to develop for Android with Lumberyard
+description: ' Set up your Open 3D Engine environment to build your project for Android. '
+title: Set up your environment to develop for Android with O3DE
 ---
-# Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}
+# Set up your environment to develop for Android with O3DE {#android-setting-up-environment}
 
- This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
+ This section walks you through the steps needed to get your development environment and Open 3D Engine projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
 
 **Topics**
-- [Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}](#set-up-your-environment-to-develop-for-android-with-lumberyard)
-  - [Lumberyard environment setup {#android-setting-up-environment-steps}](#lumberyard-environment-setup)
+- [Set up your environment to develop for Android with O3DE {#android-setting-up-environment}](#set-up-your-environment-to-develop-for-android-with-lumberyard)
+  - [O3DE environment setup {#android-setting-up-environment-steps}](#lumberyard-environment-setup)
   - [Add Android tools to `PATH` {#android-setting-up-path}](#add-android-tools-to-path)
   - [Build system setup {#android-setting-build-system}](#build-system-setup)
   - [Next steps {#android-setting-up-next-steps}](#next-steps)
 
-## Lumberyard environment setup {#android-setting-up-environment-steps}
+## O3DE environment setup {#android-setting-up-environment-steps}
 
- After you've [installed the prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites), configure your Lumberyard installation to allow Android builds\.
+ After you've [installed the prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites), configure your O3DE installation to allow Android builds\.
 
 **To allow Android builds**
 
-1.  Start the Lumberyard Setup Assistant\. If you're installing Lumberyard for the first time, Setup Assistant starts automatically\. Otherwise, launch it from `lumberyard_install_dir\dev\Tools\LmbrSetup\Win\SetupAssistant.exe`\.
+1.  Start the O3DE Setup Assistant\. If you're installing O3DE for the first time, Setup Assistant starts automatically\. Otherwise, launch it from `lumberyard_install_dir\dev\Tools\LmbrSetup\Win\SetupAssistant.exe`\.
 
 1.
 
-   Using Setup Assistant, select the following capabilities for your Lumberyard configuration:
+   Using Setup Assistant, select the following capabilities for your O3DE configuration:
    + **Run your game project**
-   + **Run the Lumberyard Editor and tools**
+   + **Run the O3DE Editor and tools**
    + **Compile the game code**
-   + **Compile the Lumberyard Editor and tools**
+   + **Compile the O3DE Editor and tools**
    + **Compile for Android Devices**
 
    After selecting these capabilities, select **Next** to continue with configuration in the Setup Assistant\.
 
-1.  Provide the paths to the Android Studio installation, and the `ndk-build.cmd` and `adb.exe` Android tools commands\. These paths are used to determine the location of all of the Android build tools that Lumberyard uses\. If you performed a default install of Android Studio and its tools, Setup Assistant should have already detected the installation paths\.
+1.  Provide the paths to the Android Studio installation, and the `ndk-build.cmd` and `adb.exe` Android tools commands\. These paths are used to determine the location of all of the Android build tools that O3DE uses\. If you performed a default install of Android Studio and its tools, Setup Assistant should have already detected the installation paths\.
 
     If you used another install location, or Setup Assistant couldn't find your Android install, provide the paths to the appropriate tools\. You can also select the **Browse** button to use Windows Explorer to navigate to the required files\.
 
@@ -51,7 +51,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
    When each Android tool is marked with a green checkmark icon, you can close the Setup Assistant\.
 
-1.  Check that the API level for the Android SDK you're using is correctly set in the Lumberyard build settings\.
+1.  Check that the API level for the Android SDK you're using is correctly set in the O3DE build settings\.
 
    1. Open the file `lumberyard_install_dir\dev\_WAF_\android\android_settings.json` in a text editor\.
 
@@ -72,16 +72,16 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
       }
       ```
 
-1. Configure the Lumberyard build system\.
+1. Configure the O3DE build system\.
 
    1. Open a Windows command prompt and navigate to `lumberyard_install_dir\dev`\.
 
    1. Run **lmbr\_waf configure**\.
 
-    At this point, if you're missing any of the required packages or tools, or if Lumberyard needs additional configuration, `lmbr_waf configure` will report an error telling you what you need to install or edit to get your build working\. Use either [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [https://developer.android.com/studio/command-line/sdkmanager](https://developer.android.com/studio/command-line/sdkmanager) to install any missing packages or SDKs\.
+    At this point, if you're missing any of the required packages or tools, or if O3DE needs additional configuration, `lmbr_waf configure` will report an error telling you what you need to install or edit to get your build working\. Use either [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [https://developer.android.com/studio/command-line/sdkmanager](https://developer.android.com/studio/command-line/sdkmanager) to install any missing packages or SDKs\.
 
 **Important**
- At this point, **don't** rebuild your game or engine\. Wait until after you configure your project for Android, so that the Lumberyard tools will pick up those changes\.
+ At this point, **don't** rebuild your game or engine\. Wait until after you configure your project for Android, so that the O3DE tools will pick up those changes\.
 
 ## Add Android tools to `PATH` {#android-setting-up-path}
 
@@ -95,7 +95,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
 ## Build system setup {#android-setting-build-system}
 
- Now that you have Android support enabled in Lumberyard, you need to configure the build system to recognize your project and produce Android \(`es3`\) assets\.
+ Now that you have Android support enabled in O3DE, you need to configure the build system to recognize your project and produce Android \(`es3`\) assets\.
 
 1. Open the file `lumberyard_install_dir\dev\_WAF_\user_settings.options` in a text editor\.
 
@@ -125,7 +125,7 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 1. Start the Asset Processor to compile any existing assets for use on Android\.
 
    1. Check to see if the Asset Processor is running\. Open the Windows system tray and look for the Asset Processor icon\.
-![\[The expanded Windows system tray. The icon for the Lumberyard Asset Processor is surrounded by a colored box.\]](/images/user-guide/platforms/android/ap-tray-icon.png)
+![\[The expanded Windows system tray. The icon for the O3DE Asset Processor is surrounded by a colored box.\]](/images/user-guide/platforms/android/ap-tray-icon.png)
 
    1. If the Asset Processor is running, double\-click the icon in the tray to bring up the Asset Processor window\.
 
@@ -135,6 +135,6 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 
 ## Next steps {#android-setting-up-next-steps}
 
-Now that you have your Lumberyard environment configured for Android, configure, build, and deploy your project to a device to test\.
-+ [Configure Lumberyard projects for Android](/docs/user-guide/features/platforms/android/configure-project.md)
+Now that you have your O3DE environment configured for Android, configure, build, and deploy your project to a device to test\.
++ [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md)
 + [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)

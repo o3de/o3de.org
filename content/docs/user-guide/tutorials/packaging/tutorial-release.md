@@ -1,10 +1,10 @@
 ---
-description: ' Bundle assets and release your Amazon Lumberyard project. '
-title: Build and bundle assets for release in Lumberyard
+description: ' Bundle assets and release your Open 3D Engine project. '
+title: Build and bundle assets for release in O3DE
 ---
-# Build and bundle assets for release in Lumberyard {#asset-bundler-tutorial-release}
+# Build and bundle assets for release in O3DE {#asset-bundler-tutorial-release}
 
- This tutorial guides you through the process of building the code and assets to release a Lumberyard project, using the [Starter Game sample project](/docs/userguide/samples/levels/starter-game.md)\. You'll learn how to:
+ This tutorial guides you through the process of building the code and assets to release a O3DE project, using the [Starter Game sample project](/docs/userguide/samples/levels/starter-game.md)\. You'll learn how to:
 + Create a release build of your game's executable\.
 + Set up the directory structure of a release build\.
 + Compile shaders and generate shader paks\.
@@ -15,18 +15,18 @@ title: Build and bundle assets for release in Lumberyard
 ## Prerequisites {#asset-bundler-tutorial-release-prerequisites}
 
 To complete the procedures in this tutorial, you need the following:
-+ Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
++ Open 3D Engine\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/features/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
-## Configure Lumberyard to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
+## Configure O3DE to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
 
-1. Open the Amazon Lumberyard Project Configurator\.
+1. Open the Open 3D Engine Project Configurator\.
 
 1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.
 ![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/user-guide/assetbundler/asset-bundler-project-configurator-1.25.png)
 
-1. Open a command prompt and navigate to the Lumberyard root directory at `lumberyard_dir\dev`\.
+1. Open a command prompt and navigate to the O3DE root directory at `lumberyard_dir\dev`\.
 
 1. Configure the build system for Starter Game and generate configuration files:
 
@@ -36,7 +36,7 @@ To complete the procedures in this tutorial, you need the following:
 
 ## Create a release build {#asset-bundler-tutorial-release-create-release}
 
-1. Open a command prompt and navigate to the Lumberyard install root directory\.
+1. Open a command prompt and navigate to the O3DE install root directory\.
 
 1. Create a profile build using the **all** build spec\. Depending on your hardware, this can take a while\.
 
@@ -54,7 +54,7 @@ To complete the procedures in this tutorial, you need the following:
 
 ## Create a directory structure for the game release {#asset-bundler-tutorial-release-build-directory}
 
-1. Open a command prompt and navigate to the Lumberyard install root directory\.
+1. Open a command prompt and navigate to the O3DE install root directory\.
 
 1. Create a directory for your game release\. The following command creates the release directory `C:\Users\username\StarterGameRelease`:
 
@@ -62,7 +62,7 @@ To complete the procedures in this tutorial, you need the following:
    mkdir %USERPROFILE%\StarterGameRelease
    ```
 **Note**
- You can create this directory anywhere you want, but the rest of this tutorial assumes the release directory is in this location\. It's not recommended that you create this directory anywhere inside of your Lumberyard install\. If you do, detecting missing assets and diagnosing bundle problems becomes more difficult\.
+ You can create this directory anywhere you want, but the rest of this tutorial assumes the release directory is in this location\. It's not recommended that you create this directory anywhere inside of your O3DE install\. If you do, detecting missing assets and diagnosing bundle problems becomes more difficult\.
 
 1. Create a subdirectory that will contain the game binaries and libraries:
 
@@ -88,7 +88,7 @@ To complete the procedures in this tutorial, you need the following:
 
 ## Export level data {#asset-bundler-tutorial-release-export-level}
 
-1. Open the Lumberyard Editor and load the Starter Game level by selecting **File** > **Open Level** \(Ctrl\+O\) and selecting the **SinglePlayer** level\.
+1. Open the O3DE Editor and load the Starter Game level by selecting **File** > **Open Level** \(Ctrl\+O\) and selecting the **SinglePlayer** level\.
 
 1. Select **Game** > **Play Game** \(Ctrl\+G\) from the Editor's main menu to enter Game mode\. Roam through the level to load the shader assets\. Make sure that you view as much of the level as possible, in order to load them all\.
 
@@ -106,7 +106,7 @@ To complete the procedures in this tutorial, you need the following:
    CrySCompileServer.exe
    ```
 
-1. Open a second command prompt and navigate to the Lumberyard install root directory\.
+1. Open a second command prompt and navigate to the O3DE install root directory\.
 
 1. Compile and package the shaders:
 
@@ -138,7 +138,7 @@ To complete the procedures in this tutorial, you need the following:
 
 ## Generate game asset bundles {#asset-bundler-tutorial-release-generate-bundles}
 
-1. Open a command prompt and navigate to the Lumberyard install root directory\.
+1. Open a command prompt and navigate to the O3DE install root directory\.
 
 1. Bundle assets needed by the game engine:
 
@@ -188,6 +188,6 @@ When you run the release build, it creates a `User` subdirectory under your rele
 
 Now that you've learned the basics of bundling assets for release, go on to further reading:
 + Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)\.
-+ Explore the asset bundler functionality\. See [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
++ Explore the asset bundler functionality\. See [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
 + Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md)
-+ To ask questions about the Asset Bundler and get support, see [the Amazon Lumberyard forums](https://forums.awsgametech.com/)\.
++ To ask questions about the Asset Bundler and get support, see [the Open 3D Engine forums](https://forums.awsgametech.com/)\.

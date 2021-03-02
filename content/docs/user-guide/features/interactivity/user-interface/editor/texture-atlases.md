@@ -1,6 +1,6 @@
 ---
 description: ' Use texture atlases on UI canvases for quicker rendering of textures
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Texture Atlases
 ---
 # Using Texture Atlases {#ui-editor-texture-atlases}
@@ -23,7 +23,7 @@ The principle advantages of texture atlases are the following:
 + Enhanced compression\. Although source textures whose dimensions aren't multiples of four aren't compressed, texture atlases are always compressed\.
 + Forced preloading of texture groups\. When the canvas loads, it also loads its texture atlases\.
 
-To see examples of texture atlases, open the **UITextureAtlasSample** level in the Lumberyard SamplesProject\.
+To see examples of texture atlases, open the **UITextureAtlasSample** level in the O3DE SamplesProject\.
 
 **Topics**
 + [Characteristics](#ui-editor-texture-atlases-characteristics)

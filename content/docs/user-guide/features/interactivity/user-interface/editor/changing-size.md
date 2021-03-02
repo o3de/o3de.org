@@ -1,6 +1,6 @@
 ---
 description: ' Change your game UI canvas size to visualize how your canvas might
-  look on other displays and devices of varying resolutions in Amazon Lumberyard. '
+  look on other displays and devices of varying resolutions in Open 3D Engine. '
 title: Changing the Canvas Size
 ---
 # Changing the Canvas Size {#ui-editor-changing-size}
@@ -17,4 +17,4 @@ Change your game UI canvas size to visualize how your canvas might look on other
 
 **Tip**
 You can customize the list of canvas sizes that appear in the list by modifying a `JSON` file stored locally on your machine\. In Windows, the canvas size presets file is located in the following directory:
-`C:\Users\<UserName>\AppData\Local\Amazon\Lumberyard\size_presets.json`
+`C:\Users\<UserName>\AppData\Local\Amazon\O3DE\size_presets.json`

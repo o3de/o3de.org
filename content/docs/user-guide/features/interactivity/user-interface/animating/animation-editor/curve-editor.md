@@ -1,5 +1,5 @@
 ---
-description: ' Use the Curve Editor in Amazon Lumberyard''s UI Animation editor to change
+description: ' Use the Curve Editor in Open 3D Engine''s UI Animation editor to change
   the way floating point values vary over time. '
 title: Using the Curve Editor in the UI Animation Editor.
 ---

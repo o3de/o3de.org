@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to add and connect Script Canvas nodes in Amazon Lumberyard. '
+description: ' Learn how to add and connect Script Canvas nodes in Open 3D Engine. '
 title: Adding and Connecting Nodes
 ---
 # Adding and Connecting Nodes {#script-canvas-working-with-nodes-adding-and-connecting}

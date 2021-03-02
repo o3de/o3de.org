@@ -1,11 +1,11 @@
 ---
-description: ' Use the Lumberyard UI 2.0 browse edit component to enable users to
+description: ' Use the O3DE UI 2.0 browse edit component to enable users to
   choose one or more values from a list or directory. '
-title: Lumberyard UI browse edit component
+title: O3DE UI browse edit component
 ---
-# Lumberyard UI browse edit component<a name="uidev-browse-edit-component"></a>
+# O3DE UI browse edit component<a name="uidev-browse-edit-component"></a>
 
-The **browse edit** component is one of several types of input boxes offered by the Qt and Lumberyard UI libraries\. Use the browse edit component to enable users to choose one or more values from a selection window\. Typical uses include selecting a file from a directory, or one or more items from a list \- for example: choosing motions from a collection of animation assets\. The selection window is opened using either a button along the right edge, or a double\-click in the input box\. Chosen values can be cleared using the clear button, if this button has been enabled\.
+The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries\. Use the browse edit component to enable users to choose one or more values from a selection window\. Typical uses include selecting a file from a directory, or one or more items from a list \- for example: choosing motions from a collection of animation assets\. The selection window is opened using either a button along the right edge, or a double\-click in the input box\. Chosen values can be cleared using the clear button, if this button has been enabled\.
 
 **Note**
 Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a predefined list of items to select, and a user only needs to select one value from the list\.
@@ -34,7 +34,7 @@ Generally when using the **browse edit** component, you set the input box to be 
 
    \(Optional\) The **browse edit** input box has an attached button\. The default button uses a folder icon, but you can specify a different icon\. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal\.
 **Note**
-When using a custom icon not provided by Lumberyard, the icon should be a multiple of 16 x 16 and should only be in SVG format\.
+When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format\.
 
 1.  **Tooltip**
 
@@ -95,7 +95,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 The following example shows how to replace the default button icon with your own, and how to add placeholder text that appears when the value is empty\.
 
 **Note**
-When using a custom icon not provided by Lumberyard, the icon should be a multiple of 16 x 16 and should only be in SVG format\.
+When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format\.
 
  **Example**
 
@@ -186,7 +186,7 @@ browseEdit->setEnabled(false);
 
 ## C\+\+ API reference<a name="browse-edit-api-ref"></a>
 
-For details on the **browse edit** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **browse edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::BrowseEdit](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_browse_edit.html)
 
 ## Related links<a name="browse-edit-related-links"></a>

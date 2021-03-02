@@ -1,10 +1,10 @@
 ---
-description: ' Create a gem for Amazon Lumberyard. '
+description: ' Create a gem for Open 3D Engine. '
 title: Creating a Gem
 ---
 # Creating a Gem {#gems-system-gems-creating}
 
-You can create your own gems by packaging your assets into the Lumberyard gem format\. This makes your package distributable, shareable between projects, and easy for game developers to enable or disable as needed\.
+You can create your own gems by packaging your assets into the O3DE gem format\. This makes your package distributable, shareable between projects, and easy for game developers to enable or disable as needed\.
 
 Creating your gem involves placing code, assets, and several other special files into the correct directory structure\. This chapter describes the creating a gem procedure in detail\.
 

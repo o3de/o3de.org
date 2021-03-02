@@ -1,6 +1,6 @@
 ---
 description: ' Add scale, rotation, and position modifiers to change the look of your
-  dynamic vegetation in Amazon Lumberyard. '
+  dynamic vegetation in Open 3D Engine. '
 title: Adding Scale, Rotation, and Position Modifiers
 ---
 # Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}

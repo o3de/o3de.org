@@ -1,5 +1,5 @@
 ---
-description: ' Create a controllable character with Script Canvas, Amazon Lumberyard''s
+description: ' Create a controllable character with Script Canvas, Open 3D Engine''s
   visual scripting system. '
 title: 'Script Canvas Tutorial: Creating a Controllable Entity'
 ---
@@ -38,7 +38,7 @@ Before you create a sphere that you can control with keyboard input, you need to
 
 **To create a level**
 
-1. In Lumberyard Editor, choose **File**, **New**\.
+1. In O3DE Editor, choose **File**, **New**\.
 
 1. In the **New Level** dialog box, enter **firstscriptcanvas** and then click **OK**\.
 
@@ -50,7 +50,7 @@ To create a sphere that you can control with keyboard input, you create an entit
 
 **To create a controllable entity**
 
-1. In Lumberyard Editor, right\-click in the **Perspective** viewport and choose **Create entity**\.
+1. In O3DE Editor, right\-click in the **Perspective** viewport and choose **Create entity**\.
 
 1. In the **Entity Inspector**, do the following:
 
@@ -123,7 +123,7 @@ Now that you set up a sphere with physics and input mapping, you can create your
 
 **To create an input script**
 
-1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
 1. In the **Script Canvas** editor, choose **File**, **New Script**\.
 
@@ -166,7 +166,7 @@ The tutorial's keyboard input doesn't work in a remote desktop session\.
 
 **To assign and test your script**
 
-1. In Lumberyard Editor, select the **Player** entity that you created\.
+1. In O3DE Editor, select the **Player** entity that you created\.
 
 1. In the **Entity Inspector**, click **Add Component**, and then choose the **Script Canvas** component\.
 
@@ -176,7 +176,7 @@ The tutorial's keyboard input doesn't work in a remote desktop session\.
 
 1. Press **Ctrl\+G** to enter game mode\.
 
-1. To trigger your input event, press **W** and then press **S**\. The **Console** pane in Lumberyard Editor outputs the value of the input event when the `move_y` event is triggered\. In this case, the **Console** pane outputs `1` when you press **W** and outputs `-1` when you press **S**\.
+1. To trigger your input event, press **W** and then press **S**\. The **Console** pane in O3DE Editor outputs the value of the input event when the `move_y` event is triggered\. In this case, the **Console** pane outputs `1` when you press **W** and outputs `-1` when you press **S**\.
 ![\[Console pane outputs 1 when you press W.\]](/images/user-guide/scripting/script-canvas/script-canvas-console-test-input-event.png)
 
 1. When you are done testing your script, press **Esc**\.
@@ -219,7 +219,7 @@ Now that you've successfully created your first script, you can add nodes to mov
 
 1. Save your graph\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to enter game mode and test your script\.
+1. In O3DE Editor, press **Ctrl\+G** to enter game mode and test your script\.
 
 1. To move the sphere forward, press **W**\. To move the sphere backwards, press **S**\.
 
@@ -257,7 +257,7 @@ To disconnect a connection, drag it to an empty part of the canvas\. To delete a
 
 1. Save your graph\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to enter game mode and test your script\.
+1. In O3DE Editor, press **Ctrl\+G** to enter game mode and test your script\.
 
 1. Do the following:
 

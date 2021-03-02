@@ -1,6 +1,6 @@
 ---
 description: ' Use dynamic data slots to enable a single node to process a variety
-  of data types in Script Canvas, Amazon Lumberyard''s visual scripting system. '
+  of data types in Script Canvas, Open 3D Engine''s visual scripting system. '
 title: Dynamic Data Slots
 ---
 # Dynamic Data Slots {#script-canvas-custom-nodes-dynamic-data}

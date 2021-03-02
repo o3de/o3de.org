@@ -1,5 +1,5 @@
 ---
-description: ' The Amazon Lumberyard Cloth component. '
+description: ' The Open 3D Engine Cloth component. '
 title: Cloth component
 ---
 # Cloth component {#component-cloth}

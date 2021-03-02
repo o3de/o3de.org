@@ -1,6 +1,6 @@
 ---
 description: ' Use a scroll box component to present content, such as images or text,
-  within a scrollable area in Lumberyard''s UI Editor. '
+  within a scrollable area in O3DE''s UI Editor. '
 title: ScrollBox
 ---
 # ScrollBox {#ui-editor-components-scrollbox}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Listener component to add a virtual microphone in the
-  Amazon Lumberyard environment. '
+  Open 3D Engine environment. '
 title: Audio Listener
 ---
 # Audio Listener {#component-audio-listener}
@@ -29,7 +29,7 @@ Only one audio listener is supported in a game\. You can add the **Audio Listene
 
 **To set up the Audio Listener component**
 
-1. In Lumberyard Editor, right\-click the viewport in your level, and click **Create new component entity**\.
+1. In O3DE Editor, right\-click the viewport in your level, and click **Create new component entity**\.
 
 1. Click **Tools**, **Entity Inspector**\. Be sure that your new component entity is selected in the viewport\.
 

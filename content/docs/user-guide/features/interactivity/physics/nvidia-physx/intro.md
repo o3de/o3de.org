@@ -1,14 +1,14 @@
 ---
-description: ' Use Amazon Lumberyard''s PhysX system to create realistic physical effects
+description: ' Use Open 3D Engine''s PhysX system to create realistic physical effects
   such as collision detection and rigid body dynamics simulation. '
 title: Simulating physics behavior with the PhysX system
 ---
 # Simulating physics behavior with the PhysX system {#physx-intro}
 
-Lumberyard's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation\. To use the PhysX system, install the [PhysX SDK](https://developer.nvidia.com/gameworks-physx-overview) using the [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
+O3DE's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation\. To use the PhysX system, install the [PhysX SDK](https://developer.nvidia.com/gameworks-physx-overview) using the [O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 **Note**
- Lumberyard's PhysX system does not interact with [Physics \(Legacy\)](/docs/userguide/components/components#component-entity-physics-legacy) component entities or the legacy [Physics](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/physics-intro.html)\.
+ O3DE's PhysX system does not interact with [Physics \(Legacy\)](/docs/userguide/components/components#component-entity-physics-legacy) component entities or the legacy [Physics](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/physics-intro.html)\.
 
 **Topics**
 + [PhysX Gems](#physx-intro-gems)
@@ -29,7 +29,7 @@ Lumberyard's PhysX system acts upon entities to create realistic physical effect
 ## PhysX Gems {#physx-intro-gems}
 
 The PhysX system uses the following gems, which you can [enable](/docs/userguide/gems/using-project-configurator.md) in the Project Configurator:
-+ **[PhysX](/docs/user-guide/features/gems/physx.md)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into Lumberyard\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\.
++ **[PhysX](/docs/user-guide/features/gems/physx.md)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into O3DE\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\.
 
   For more information, see [PhysX](/docs/user-guide/features/gems/physx.md)\.
 + **[PhysX Characters](/docs/user-guide/features/gems/physx-characters.md)** - Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/user-guide/features/gems/physx.md) gem\.
@@ -53,7 +53,7 @@ The **PhysX Characters** gem has the following components:
 
 ## PhysX Configuration {#physx-intro-configuration}
 
-Use the **PhysX Configuration** window in Lumberyard Editor to configure global settings, collision layers, collision groups, and PhysX Visual Debugger settings\.
+Use the **PhysX Configuration** window in O3DE Editor to configure global settings, collision layers, collision groups, and PhysX Visual Debugger settings\.
 
 For more information, see [Configuring the PhysX System](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration.md)\.
 
@@ -66,11 +66,11 @@ For more information, see [Physics materials](/docs/user-guide/features/interact
 ## PhysX Debugging {#physx-intro-debugging}
 
 To verify the implementation of interactions in the simulated world, the following tools are available\.
-+ **PhysX Debug gem** - The PhysX Debug gem is recommended if you are a developer or technical artist\. You can use this tool to view the physics world in real time in Lumberyard Editor's editor mode or game mode\. To activate the tool, you use console commands or an immediate mode graphical user interface \(ImGui\)\. The tool displays PhysX debug lines within the editor and game modes\.
++ **PhysX Debug gem** - The PhysX Debug gem is recommended if you are a developer or technical artist\. You can use this tool to view the physics world in real time in O3DE Editor's editor mode or game mode\. To activate the tool, you use console commands or an immediate mode graphical user interface \(ImGui\)\. The tool displays PhysX debug lines within the editor and game modes\.
 
   For more information, see [PhysX Debug](/docs/user-guide/features/gems/physx-debug.md)\.
-+ **PhysX Visual Debugger** - The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. Lumberyard can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\.
++ **PhysX Visual Debugger** - The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. O3DE can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\.
 
-  For information on configuring Lumberyard's connection to PVD, see [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
+  For information on configuring O3DE's connection to PVD, see [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
 
 For more information, see [Debugging PhysX](/docs/user-guide/features/interactivity/physics/debugging.md)\.

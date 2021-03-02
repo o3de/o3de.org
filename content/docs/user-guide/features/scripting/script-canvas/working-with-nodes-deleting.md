@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to delete Script Canvas nodes in Amazon Lumberyard. '
+description: ' Learn how to delete Script Canvas nodes in Open 3D Engine. '
 title: Deleting Nodes
 ---
 # Deleting Nodes {#script-canvas-working-with-nodes-deleting}

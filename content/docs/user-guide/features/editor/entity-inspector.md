@@ -1,6 +1,6 @@
 ---
 description: ' Use the Entity Inspector to add components to entities and modify
-  their properties in Amazon Lumberyard. '
+  their properties in Open 3D Engine. '
 title: Entity Inspector
 ---
 # Entity Inspector {#component-entity-inspector}
@@ -9,7 +9,7 @@ The **Entity Inspector** manages all the components for each entity\. Select an 
 
 **To open the Entity Inspector**
 
-1. In Lumberyard Editor, choose **Tools**, **Entity Inspector**\.
+1. In O3DE Editor, choose **Tools**, **Entity Inspector**\.
 
 1. Select an entity in the viewport or the **Entity Outliner**\.
 

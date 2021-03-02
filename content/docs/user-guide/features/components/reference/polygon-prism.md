@@ -1,5 +1,5 @@
 ---
-description: ' Use the Polygon Prism Shape component to define a volume in Amazon Lumberyard. '
+description: ' Use the Polygon Prism Shape component to define a volume in Open 3D Engine. '
 title: Polygon Prism Shape
 ---
 # Polygon Prism Shape {#component-polygon-prism}
@@ -24,7 +24,7 @@ The **Polygon Prism Shape** component supports only simple polygons\. It can't h
 
 ## Polygon Prism Shape Component Properties {#component-polygon-prism-properties}
 
-![\[The Polygon Prism Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/polygon-prism-component-properties.png)
+![\[The Polygon Prism Shape component properties in O3DE Editor.\]](/images/user-guide/component/polygon-prism-component-properties.png)
 
 The **Polygon Prism Shape** component has the following properties\.
 
@@ -34,7 +34,7 @@ The **Polygon Prism Shape** component has the following properties\.
 | Name | Description |
 | --- | --- |
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
-| Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
+| Game View |  Renders the shape in game mode in O3DE Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
 | Height |  The height of the polygon prism shape, in meters\.  |
 |  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. |
@@ -55,7 +55,7 @@ Each vertex has one planar and two linear manipulators\. Combined, these are cal
 ![\[Select a vertex and a translation manipulator appears.\]](/images/user-guide/component/polygon-prism-shape-component-2.png)
 
 **Note**
-The manipulators follow the grid snap setting that you can configure in the Lumberyard Editor toolbar\.
+The manipulators follow the grid snap setting that you can configure in the O3DE Editor toolbar\.
 
 You can use the blue arrow in the center of the volume to change the height\. {#component-polygon-prism-height-adjustment}
 

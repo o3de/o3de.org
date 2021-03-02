@@ -11,7 +11,7 @@ title: Preparing the Amazon Games Services Package
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
- Lumberyard has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your Lumberyard game with GameLift, enable the [GameLift Gem](/docs/user-guide/features/gems/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\.
+ O3DE has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your O3DE game with GameLift, enable the [GameLift Gem](/docs/user-guide/features/gems/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\.
 
  In the rest of this topic, you learn how to set up for creating your GameLift package and make a basic deployment\.
 

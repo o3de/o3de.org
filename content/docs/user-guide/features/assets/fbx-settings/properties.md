@@ -1,6 +1,6 @@
 ---
 description: ' Modify the export properties of your .fbx files with FBX Settings in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: FBX Settings export properties
 ---
 # FBX Settings export properties {#fbx-properties}
@@ -32,7 +32,7 @@ Your `.fbx` files can contain any number of assets\. You can create a single `.f
 
 ## Modify FBX Settings {#fbx-properties-modify}
 
-1. In **Lumberyard Editor**, in **Asset Browser**, select the `.fbx` file to modify\.
+1. In **O3DE Editor**, in **Asset Browser**, select the `.fbx` file to modify\.
 **Tip**
 Enter **fbx** into **Asset Browser**'s search bar to find `.fbx` files\.
 

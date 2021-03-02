@@ -1,9 +1,9 @@
 ---
-description: ' Learn about the Lumberyard UI 2.0 style of sliders, including the slider
+description: ' Learn about the O3DE UI 2.0 style of sliders, including the slider
   and slider combo components. '
-title: Lumberyard UI sliders
+title: O3DE UI sliders
 ---
-# Lumberyard UI sliders<a name="uidev-sliders-component"></a>
+# O3DE UI sliders<a name="uidev-sliders-component"></a>
 
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.
 
@@ -102,7 +102,7 @@ sliderDoubleCombo->setRange(-1.0, 100.0);
 
 ## C\+\+ API reference<a name="sliders-api-ref"></a>
 
-For details on the **slider** API's, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **slider** API's, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 
  **Slider:**
 +  [AzQtComponents::Slider](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider.html)
