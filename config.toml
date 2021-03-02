@@ -15,7 +15,7 @@ repositoryUrl = "https://github.com/cncf/hugo-netlify-starter"
 contentDir = "/content/"
 
 [params.logos]
-navbar = "cncf-color.png"
+navbar = "o3de-color.png"
 
 [[params.social]]
 name = "Twitter"
@@ -24,7 +24,7 @@ url = "https://twitter.com/CloudNativeFdn"
 icon = "fab fa-twitter"
 
 [[params.fonts]]
-name = "Fira Sans"
+name = "Open Sans"
 sizes = [300, 400, 600, 700]
 type = "sans_serif"
 
@@ -34,7 +34,7 @@ sizes = [300, 400, 600, 700]
 type = "monospace"
 
 [[params.fonts]]
-name = "Fire Sans"
+name = "Open Sans"
 sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
