@@ -9,7 +9,7 @@ Materials and material types are stored as data items in JSON files. The Atom Ma
 
 ## Physically based Rendering in Atom
 
-**Physically based rendering (PBR)** is a rendering technique that accurately describes a material by using real-world properties, such as metallic quality, roughness, and glossiness. Atom supports PBR and features PBR material types such as StandardPBR, EnhancedPBR, and other variations. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types. We provide built-in material types focused on PBR rendering, but users can author their own material types to suit their needs.
+**Physically based rendering (PBR)** is a rendering technique that simulates realistic interaction between materials and light. Atom supports PBR and features PBR material types such as StandardPBR, EnhancedPBR, and other variations. These follow industry standard workflows using metallic and roughness properties. Atom's material system is also capable of rendering non-photo-realistic techniques and special effects through alternate material types. We provide built-in material types focused on PBR rendering, but users can author their own material types to suit their needs.
 
 A full list of material types in Atom is listed in [Material Types in Atom](#material-types-in-atom).
 
