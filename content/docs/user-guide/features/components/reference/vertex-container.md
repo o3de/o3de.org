@@ -2,54 +2,44 @@
 description: ' Use vertex containers in Open 3D Engine to access, update, and remove vertices. '
 title: Vertex Containers
 ---
-# Vertex Containers {#component-vertex-container}
 
-`VertexContainer` is a concrete type and an interface that is used by several O3DE component buses\. It is implemented directly by the **[Polygon Prism Shape](/docs/user-guide/features/components/polygon-prism.md)** component and the **[Spline](/docs/userguide/components/spline.md)** component and used indirectly by the **[Navigation Area](/docs/user-guide/features/components/nav-area.md)** component\.
+`VertexContainer` is a concrete type and an interface that is used by several Lumberyard component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) component and the [Spline](/docs/user-guide/features/components/reference/shape/spline.md) component, and used indirectly by the [Navigation Area](/docs/user-guide/features/components/reference/nav-area.md) component.
 
-## Vertex Container Interface {#component-vertex-container-vertex-container-interface}
+## Vertex Container Interface ##
 
-A vertex container provides the ability to access, modify, add, and remove vertices\. A vertex container has several interfaces that build upon one another\.
+A vertex container provides the ability to access, modify, add, and remove vertices. A vertex container has several interfaces that build upon one another, including the following:
 
-These include the following interfaces:
+### FixedVertices Interface ###
 
-**Contents**
-+ [FixedVertices Interface](#component-vertex-container-the-fixedvertices-interface)
-+ [VariableVertices Interface](#component-vertex-container-the-variablevertices-interface)
-+ [VertexContainerInterface](#component-vertex-container-the-vertexcontainerinterface)
+`FixedVertices` supports `GetVertex` and `UpdateVertex` functions for vertices in a container and a `Size` function that returns the number of vertices in the container.
 
-### FixedVertices Interface {#component-vertex-container-the-fixedvertices-interface}
+Because the number of vertices is fixed, vertices cannot be added or removed. You can implement this interface with an array or `AZStd::fixed_vector`.
 
-The simplest interface is `FixedVertices`\. `FixedVertices` supports `GetVertex` and `UpdateVertex` functions for vertices in a container and a `Size` function that returns the number of vertices in the container\.
+### VariableVertices Interface ###
 
-Because the number of vertices is fixed, vertices cannot be added or removed\. You can implement this interface with an array or `AZStd::fixed_vector`\.
+The `VariableVertices` interface supports all the functionality of `FixedVertices`, but also provides `AddVertex`, `InsertVertex`, and `RemoveVertex` functions. `VariableVertices` also provides a utility function called `Empty` that checks whether a container has any elements or is empty.
 
-### VariableVertices Interface {#component-vertex-container-the-variablevertices-interface}
+To implement the `VariableVertices` interface, you can use either an `AZStd::vector` or a `VertexContainer`.
 
-The `VariableVertices` interface supports all the functionality of `FixedVertices`, but also provides `AddVertex`, `InsertVertex`, and `RemoveVertex` functions\. `VariableVertices` also provides a utility function called `Empty` that checks whether a container has any elements or is empty\.
+### VertexContainerInterface ###
 
-To implement the `VariableVertices` interface, you can use either an `AZStd::vector` or a `VertexContainer`\.
+The `VertexContainerInterface` provides an interface to all functionality provided by the previous two interfaces and the `VertexContainer` type. For convenience, the `VertexContainerInterface` also provides `SetVertices` and `ClearVertices` functions that can update all vertices or remove all vertices in one operation. The `SetVertices` function takes a `vertices` parameter that contains a list of all vertices to be stored.
 
-### VertexContainerInterface {#component-vertex-container-the-vertexcontainerinterface}
+> **Note:** A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere \(a `VertexContainer` is not a view\).
 
-The `VertexContainerInterface` provides an interface to all functionality provided by the previous two interfaces and the `VertexContainer` type\. For convenience, the `VertexContainerInterface` also provides `SetVertices` and `ClearVertices` functions that can update all vertices or remove all vertices in one operation\. The `SetVertices` function takes a `vertices` parameter that contains a list of all vertices to be stored\.
+The `VertexContainerInterface` is implemented by the Spline component and Polygon Prism Shape component EBuses. The Navigation Area component also uses the interface through its dependence on the Polygon Prism Shape component. Each of these components uses the `VertexContainer` type internally to manage its vertices.
 
-**Note**
-A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere \(a `VertexContainer` is not a view\)\.
+For more information about the interfaces in the `VertexContainerInterface`, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainerInterface.h` file.
 
-As mentioned, the `VertexContainerInterface` is implemented by the **Spline** component and **Polygon Prism** component EBuses\. The **Navigation Area** component also uses the interface through its dependence on the **Polygon Prism Shape** component\. Each of these components uses the `VertexContainer` type internally to manage its vertices\.
+For more information about the `VertexContainer` type, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainer.h` file.
 
-For more information about the interfaces in the `VertexContainerInterface`, see the code and code comments in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Math\VertexContainerInterface.h` file\.
+> **Note:** The `VertexContainer` can store `Vector2` or `Vector3` types. The vector type is determined at compile time when the type is created. This is useful for certain components that do not allow points to be modified on the Z \(vertical\) axis and treat points just in two dimensions. The Polygon Prism Shape component uses the `Vector2` type.
 
-For more information about the `VertexContainer` type, see the code and code comments in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Math\VertexContainer.h` file\.
+## EBus Request Bus Interface Example ##
 
-**Note**
-The `VertexContainer` can store `Vector2` or `Vector3` types\. The vector type is determined at compile time when the type is created\. This is useful for certain components that do not allow points to be modified on the `Z` \(vertical\) axis and treat points just in two dimensions\. The **Polygon Prism** component uses the `Vector2` type\.
+The following is an example of a Lua script that uses the `RequestBus` interface.
 
-## EBus Request Bus Interface Example {#component-vertex-container-ebus-request-bus-interface-example}
-
-The following is an example of a Lua script that uses the `RequestBus` interface\.
-
-```
+```lua
 local firstVertex = <type_with_vertex_container>.vertexContainer[1];
 local lastVertex = <type_with_vertex_container>.vertexContainer[spline.vertexContainer:size()];
 
