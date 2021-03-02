@@ -1,8 +1,7 @@
 ---
 description: null
-title: null
+title: Glossary
 ---
-#  {#ly-glos-chap}
 
 # Glossary {#ly-glos-chap}
 
