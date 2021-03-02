@@ -1,7 +1,7 @@
 ---
 description: ' Learn how to create and reflect components in C++ using the Lumberyard Component
   Entity System. '
-title: Programmer's Guide to Entities and Components
+title: Component development
 ---
 # Programmer's Guide to Entities and Components {#component-entity-system-pg-intro}
 
