@@ -5,7 +5,7 @@ title: Tube Shape component
 
 The **Tube Shape** component creates an enclosed cylindrical volume with a 1 meter diameter, that is fit to a Spline, and is displayed with a transparent color. The dimensions of the tube can be edited with the **Radius** and **Variable Radius** properties, and by editing the Spline component. The Tube Shape component is not a mesh but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
 
-**Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbrcentral.md)
+**Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
 
 **Dependencies:** [Spline component](/docs/user-guide/features/components/reference/shape/spline.md)
 

@@ -5,7 +5,7 @@ title: Quad Shape component
 
 The **Quad Shape** component creates a 1 square meter plane oriented on the local Z axis that is displayed with a transparent color. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
 
-**Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbrcentral.md)
+**Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
 
 ## Properties ##
 
