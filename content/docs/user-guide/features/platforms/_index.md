@@ -1,7 +1,7 @@
 ---
 description: ' Learn about the platforms supported by Amazon Lumberyard for developing games
   and simulations. '
-title: Supported platforms
+title: Platform development
 ---
 # Supported platforms {#lumberyard-supported-platforms}
 

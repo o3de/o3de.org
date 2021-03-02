@@ -1,7 +1,7 @@
 ---
 description: ' The following topics will guide you through programming with and for
   Lumberyard. '
-title: Programming in Lumberyard
+title: Engine programmer's reference
 ---
 # Programming in Lumberyard {#programming-intro}
 
