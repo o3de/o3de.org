@@ -60,7 +60,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## SplineComponentRequestBus ##
 
-Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/vertex-container.md) for more information.
+Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/shape/vertex-container.md) for more information.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|

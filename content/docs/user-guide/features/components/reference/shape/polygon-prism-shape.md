@@ -35,7 +35,7 @@ The **Polygon Prism Shape** component creates a cuboid volume that is 4 meters w
 
 ## PolygonPrismShapeComponentRequestBus ##
 
-Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Polygon Prism Shape component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/vertex-container.md) for more information.
+Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Polygon Prism Shape component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/shape/vertex-container.md) for more information.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
