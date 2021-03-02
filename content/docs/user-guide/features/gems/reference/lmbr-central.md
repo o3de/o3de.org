@@ -1,13 +1,19 @@
 ---
-description: ' Use Amazon Lumberyard''s LmbrCentral gem to create cinematic sequences for
-  your games. '
-title: LmbrCentral Gem
+description: ' Open 3D Engine (O3DE) Lmbr Central Gem reference. '
+title: Lmbr Central Gem
 ---
-# LmbrCentral Gem {#gems-system-gem-lmbr-central}
 
-The LmbrCentral gem contains required code and assets for running Lumberyard features, such as animation, audio, Lumberyard Editor, rendering, scripting, and so on\.
+The Lmbr Central gem contains required code and assets for running Open 3D Engine Editor. Lmbr Central provides basic functionality and many components for O3DE including the following:
 
-![\[The LmbrCentral gem for Lumberyard.\]](/images/user-guide/gems/gem-system-gem-lmbrcentral.png)
+* Shape components
+* Comment component
+* Spawner components
+* Simple State component
+* Asset Types
+* AI components
+* Audio components
+* Asset Builders
+* Look At component
+* Tag component
 
-**Note**
-The LmbrCentral gem is required and enabled by default for Lumberyard projects\.
+> **Note:** The Lmbr Central gem is required for all O3DE projects.
