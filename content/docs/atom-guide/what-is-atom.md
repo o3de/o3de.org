@@ -3,15 +3,13 @@
 Atom is a modular, data-driven, and multi-threaded rendering engine. With Atom, you can create content using the latest rendering technology. Atom supports modern rendering pipelines such as Forward+ and Deferred rendering. Its rendering pipeline is fully data driven, enabling developers to modify or replace key components with minimal code change. Atom’s multi-threading support allows rendering features to run parallel on both the CPU and GPU, taking advantage of all computing resources. Atom is built on multiple industry-standard 3D graphics APIs and features a modular design that makes it easy to expand support for additional platforms. 
 
 Atom also has the following advantages: 
-
-* Its high-level rendering features are separated from its low-level API, allowing developers to add or customize rendering features without touching low-level code.
-* It is optimized with a cluster forward+ shading model. Each process of the shading model is componentized into discrete passes, allowing flexibility to adopt future shading models.
-* Its modular design separates key aspects of the renderer into discrete units, allowing developers to move to a different shading model such as a full physically based or toon-based shading model. 
+* High-level APIs wrapping platform-dependent implementations. Developers can add or customize features without having to touch low-level code or understand platform graphics libraries.
+* Optimized cluster forward+ shading model. Each process of the shading model is componentized into discrete passes, allowing flexibility to adopt future shading models.
+* Modular design. The renderer's structure is separated into discrete units, allowing developers to move to a different shading model such as a full physically based or toon-based shading model. 
 
 ## Rendering pipeline
 
-
-![Atom Architecture](/static/images/atom-guide/what-is-atom/atom-architecture.svg)
+![Atom Architecture](images/atom-guide/what-is-atom/atom-architecture.svg)
 
 Atom’s rendering pipeline is split into several core systems, each communicating with one another to use the power of the GPU to process and display graphics onto the screen. The architecture of the rendering pipeline includes the Rendering Hardware Interface (RHI), the Render Pipeline Interface (RPI), and the graphics features. 
 
