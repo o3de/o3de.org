@@ -43,7 +43,7 @@ Even after an entity has been created and its components have been activated, vi
 | Events | OnMemberJoined, OnMemberLeaving |
 | File | Session\.h |
 
-You can use the `SessionEventBus` to detect when a member joins or leaves a network session\. For documentation on this EBus, see [Reacting to Session Events](/docs/userguide/networking/session-service-events.md) in the [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\.
+You can use the `SessionEventBus` to detect when a member joins or leaves a network session\. For documentation on this EBus, see [Reacting to Session Events](/docs/userguide/networking/session-service-events.md) in the [Using O3DE Networking](/docs/userguide/networking/intro.md)\.
 
 ## Get and Set Physics Characteristics {#ebuses-tasks-handlers-physics-characteristics}
 

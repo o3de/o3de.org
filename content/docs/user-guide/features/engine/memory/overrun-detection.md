@@ -4,17 +4,17 @@ title: Overrun Detection
 ---
 # Overrun Detection {#memory-management-overrun-detection}
 
-Overrun detection is an experimental feature available starting in Lumberyard version 1\.21\. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.
+Overrun detection is an experimental feature available starting in O3DE version 1\.21\. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.
 
 **Note**
-Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap)\. However, it can be used with the Lumberyard memory allocators and does not require recompiling\.
+Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap)\. However, it can be used with the O3DE memory allocators and does not require recompiling\.
 
 ## Prerequisites and Limitations {#memory-management-overrun-detection-prerequisites-and-limitations}
 
-The following are the prerequisites and limitations for using the Lumberyard overrun detection feature:
+The following are the prerequisites and limitations for using the O3DE overrun detection feature:
 + You must build and run your project for Windows PC in a Debug or Profile build\.
 + Overrun detection is available only on platforms that use the Windows API\.
-+ Only allocations that go through the [Lumberyard allocators](/docs/user-guide/features/engine/memory/allocators.md) benefit from overrun detection\. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the Lumberyard allocators\.
++ Only allocations that go through the [O3DE allocators](/docs/user-guide/features/engine/memory/allocators.md) benefit from overrun detection\. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the O3DE allocators\.
 
 ## When to Enable Overrun Detection {#memory-management-overrun-detection-when-to-enable}
 

@@ -17,7 +17,7 @@ A node in Script Canvas consists of a title bar, inputs, and outputs\.
 
 ## Inputs, Outputs, and Connection Types {#script-canvas-pins-and-connections}
 
-Lumberyard has two main pin and connection types\. Some inputs and outputs determine the flow of logic and order of execution\. Other inputs and outputs pass data from one node to the next\.
+O3DE has two main pin and connection types\. Some inputs and outputs determine the flow of logic and order of execution\. Other inputs and outputs pass data from one node to the next\.
 
 **Logic inputs, outputs, and connections**
 The execution of a script is driven by triangular inputs and outputs on every node\. These connections determine the order of execution\. A **Script Canvas** script runs when the entity that is attached to the script is activated\. Nodes are connected from the inputs on their left side\. After they finish running, they activate nodes that are connected to their outputs on the right side\.
@@ -55,7 +55,7 @@ For more information about creating variable references, see [Adding Variable Re
 
 ## Event Nodes {#script-canvas-nodes-understanding-event-nodes}
 
-In Lumberyard's [Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes\.
+In O3DE's [Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes\.
 
 ### Sender Nodes {#script-canvas-nodes-understanding-sender-nodes}
 
@@ -96,7 +96,7 @@ The following example creates a receiver node for a Light event\.
 
    The **Source** pin of the receiver node refers to the entity from which the event is received\. The default is **Self**, which means the node receives Light events for the same entity that the Script Canvas component is on\. You can change the target to any entity in the game world\.
 
-   In Lumberyard v1\.24 and later, you can also specify the target using a [variable reference](/docs/user-guide/features/scripting/script-canvas/adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
+   In O3DE v1\.24 and later, you can also specify the target using a [variable reference](/docs/user-guide/features/scripting/script-canvas/adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
 
 1. Click **Add/Remove Events**\.
 

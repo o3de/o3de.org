@@ -35,7 +35,7 @@ Serialization into JSON is done with the `static AZ::JsonSerialization::Store()`
 + `allocator` - The memory allocator used by RapidJSON\.
 +  `object` - The object to serialize, as anonymous data\.
 + `defaultObject` \- An object providing the values to treat as the defaults during serialization\. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized\. If a null pointer is passed as the default object, a temporary default may be created during serialization\.
-+ `objectType` \- The UUID registered with the Lumberyard runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\.
++ `objectType` \- The UUID registered with the O3DE runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\.
 + `settings` - Configuration for how to treat the serialization\. If not provided, the default settings are used, except that default values will be stored in the output provided `defaultObject` is not null\.
 
 ### `AZ::JsonSerializerSettings` {#serialization-json-serialize-store-settings}
@@ -102,7 +102,7 @@ Deserialization from JSON into an object is done with the `static AZ::JsonSerial
 
  `static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Load(void* object, const AZ::Uuid& objectType, const rapidjson::Value& root, AZ::JsonDeserializerSettings settings = AZ::JsonDeserializerSettings{});`
 + `object` \- A pointer to memory allocated as an object matching the type registered for `objectType`\.
-+ `objectType` \- The UUID registered with the Lumberyard runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\.
++ `objectType` \- The UUID registered with the O3DE runtime representing the class for the provided `object`\. The class represented by this UUID must be registered with the provided serialization context\.
 + `root` \- The root of the JSON tree to deserialize from\. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to the type identified by `objectType`\.
 + `settings` \- Configuration for how to treat deserialization\.
 

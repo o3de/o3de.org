@@ -1,6 +1,6 @@
 ---
 description: ' Use bundle mode to ensure that your asset bundles have the required
-  assets for your Lumberyard game. '
+  assets for your O3DE game. '
 title: Using Bundle Mode to Test Bundles
 ---
 # Using Bundle Mode to Test Bundles {#asset-bundler-bundle-mode}
@@ -52,7 +52,7 @@ You can also enable the console variable at runtime by using the console \(**\~*
 Bundle mode has two commands:
 + **loadbundles** *<bundle\_directory>* *<extension>* - Loads all the bundles from the specified directory into the game\. If no arguments are supplied, the directory defaults to `Bundles` and the extension to `.pak`\.
 
-  For example, if you run the Starter Game project and enter the command `loadbundles` without arguments, Lumberyard loads all source files in the `lumberyard_version\dev\StarterGame\Bundles` directory that have the extension `.pak`\.
+  For example, if you run the Starter Game project and enter the command `loadbundles` without arguments, O3DE loads all source files in the `lumberyard_version\dev\StarterGame\Bundles` directory that have the extension `.pak`\.
 + **unloadbundles** - Unload any bundle that was loaded through the `loadbundles` command\.
 
 ## Using Bundle Mode Example {#asset-bundler-bundle-mode-using-bundle-mode-example}

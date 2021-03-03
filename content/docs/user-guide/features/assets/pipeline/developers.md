@@ -9,7 +9,7 @@ Consult this section if you are a game engineer who needs to port older game cod
 
 ## File Path Aliases versus Asset IDs {#asset-pipeline-developers-asset-names}
 
-All files accessed for the game runtime go through an interface that supports aliasing of file paths by name\. For example, the alias `@ROOT@` refers to the root directory where the `bootstrap.cfg` file is located\. If you need to open a file in the root directory, do not go to the root directory or use the current working directory\. Instead, use the file name, such as `@root@/filename.cfg`\. The various Lumberyard subsystems correctly resolve the alias\.
+All files accessed for the game runtime go through an interface that supports aliasing of file paths by name\. For example, the alias `@ROOT@` refers to the root directory where the `bootstrap.cfg` file is located\. If you need to open a file in the root directory, do not go to the root directory or use the current working directory\. Instead, use the file name, such as `@root@/filename.cfg`\. The various O3DE subsystems correctly resolve the alias\.
 
 Other aliases available include the following:
 + `@log@` - For storing forensic data, such as crashes, logs, traces, performance drops, and unit test output\.

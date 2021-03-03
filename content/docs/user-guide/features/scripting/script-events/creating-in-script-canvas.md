@@ -4,11 +4,11 @@ title: Creating Script Events in Script Canvas
 ---
 # Creating Script Events in Script Canvas {#script-events-creating-in-script-canvas}
 
-In Lumberyard Editor, you can create script events by using the Asset Editor\.
+In O3DE Editor, you can create script events by using the Asset Editor\.
 
 **To create a script event**
 
-1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\.
+1. In O3DE Editor, choose **Tools**, **Asset Editor**\.
 ![\[Choose Tools, Asset Editor.\]](/images/user-guide/script-canvas-script-events-1.png)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Script Events**\.
@@ -27,4 +27,4 @@ In Lumberyard Editor, you can create script events by using the Asset Editor\.
 
 1. In the **Save As** dialog box, enter a file name for your `.scriptevents` file, and click **Save**\.
 **Note**
-To ensure that the script event asset saved correctly, check the bottom of the Asset Editor for the message "`file_name.scriptevents` \- Asset loaded\!" message \. If you see the error message Failed to save asset due to validation error, check the Lumberyard Editor **Console** window or the `lumberyard_version\dev\Cache\project_name\pc\user\log\Editor.log` file for more information\.
+To ensure that the script event asset saved correctly, check the bottom of the Asset Editor for the message "`file_name.scriptevents` \- Asset loaded\!" message \. If you see the error message Failed to save asset due to validation error, check the O3DE Editor **Console** window or the `lumberyard_version\dev\Cache\project_name\pc\user\log\Editor.log` file for more information\.

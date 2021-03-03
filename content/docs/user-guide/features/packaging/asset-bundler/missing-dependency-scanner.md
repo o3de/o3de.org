@@ -1,5 +1,5 @@
 ---
-description: ' Use the missing dependency scanner in Lumberyard to identify missing asset
+description: ' Use the missing dependency scanner in O3DE to identify missing asset
   references. '
 title: Using the Missing Dependency Scanner
 ---
@@ -61,7 +61,7 @@ Next, create a schema to match this file and output, or *emit*, the dependency\.
 
 **To create a schema to emit the dependency**
 
-1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\.
+1. In O3DE Editor, choose **Tools**, **Asset Editor**\.
 
 1. In the **Asset Editor**, choose **File**, **New**, **XML Schema**\.
 ![\[Creating a new schema file in the Asset Editor.\]](/images/user-guide/assetbundler/asset-bundler-missing-dependency-scanner-2.png)

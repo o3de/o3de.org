@@ -12,7 +12,7 @@ title: Building Shaders for macOS Games
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Lumberyard uses a versatile shader system to achieve high quality, realistic graphics\. Because the shader compilation pipeline depends on the Windows\-specific HLSL optimizer, you must connect to a shader compiler on your PC when running a game on macOS during development\. This compiles the subset of shaders required by your game, on demand\.
+O3DE uses a versatile shader system to achieve high quality, realistic graphics\. Because the shader compilation pipeline depends on the Windows\-specific HLSL optimizer, you must connect to a shader compiler on your PC when running a game on macOS during development\. This compiles the subset of shaders required by your game, on demand\.
 
 **Note**
 You must connect your PC and macOS computer to the same network and configure any firewalls to allow traffic through port 61453\.

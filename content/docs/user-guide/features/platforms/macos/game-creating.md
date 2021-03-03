@@ -1,5 +1,5 @@
 ---
-description: ' Create a project for your macOS applications using Lumberyard tools. '
+description: ' Create a project for your macOS applications using O3DE tools. '
 title: Creating a Project for Your macOS Games
 ---
 # Creating a Project for Your macOS Games {#osx-game-creating}
@@ -11,14 +11,14 @@ title: Creating a Project for Your macOS Games
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-The topics in [Create macOS projects in Lumberyard](/docs/user-guide/features/platforms/macos/intro.md) demonstrate how to use the Samples Project that is included with Lumberyard to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
+The topics in [Create macOS projects in O3DE](/docs/user-guide/features/platforms/macos/intro.md) demonstrate how to use the Samples Project that is included with O3DE to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
 
 **Note**
-Ensure you have the prerequisites \(see [Create macOS projects in Lumberyard](/docs/user-guide/features/platforms/macos/intro.md)\) and your Mac is properly set up to compile for macOS computers\.
+Ensure you have the prerequisites \(see [Create macOS projects in O3DE](/docs/user-guide/features/platforms/macos/intro.md)\) and your Mac is properly set up to compile for macOS computers\.
 
 **To create a project for your macOS game**
 
-1. On your PC, use the Project Configurator to create a new project\. For information, see [Creating Lumberyard projects](/docs/userguide/configurator/intro.md)\.
+1. On your PC, use the Project Configurator to create a new project\. For information, see [Creating O3DE projects](/docs/userguide/configurator/intro.md)\.
 
 1. Submit the new project into your revision control system and then check out the project onto your Mac\.
 

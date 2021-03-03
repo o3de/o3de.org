@@ -1,10 +1,10 @@
 ---
-description: ' Learn how to create Lumberyard components in C++. '
+description: ' Learn how to create O3DE components in C++. '
 title: Creating a Component
 ---
 # Creating a Component {#component-entity-system-create-component}
 
-A component in Lumberyard is a simple class that inherits from Lumberyard's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create Lumberyard components programmatically\. For information about adding and customizing the components available in Lumberyard Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
+A component in O3DE is a simple class that inherits from O3DE's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create O3DE components programmatically\. For information about adding and customizing the components available in O3DE Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
 
 ## Component Example {#component-entity-system-create-component-example}
 
@@ -75,7 +75,7 @@ Activate\(\)   {#component-entity-system-create-component-az-activate}
 \(Required\) Called when the owning entity is being activated\. The system calls your component's `Activate()` function only if all dependent or required services are present\. Your `Activate` function is always called after any components that it depends on\. In addition, the component makeup of an entity never changes while the entity is active\. Consequently, it is safe to cache pointers or references to other components on the entity when performance is critical\.
 Deactivate\(\)   {#component-entity-system-create-component-az-deactivate}
 \(Required\) Called when the owning entity is being deactivated\. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on\. As a best practice, make sure your component returns to a minimal footprint when it is deactivated\. In general, deactivation should be symmetric to activation\.
-Destruction does not necessarily follow deactivation\. An entity can be deactivated and then activated again without being destroyed, so ensure that your components support this efficiently\. However, when you do destroy your entity, Lumberyard ensures that your `Deactivate()` function is called first\. Components must be authored with this in mind\.
+Destruction does not necessarily follow deactivation\. An entity can be deactivated and then activated again without being destroyed, so ensure that your components support this efficiently\. However, when you do destroy your entity, O3DE ensures that your `Deactivate()` function is called first\. Components must be authored with this in mind\.
 
 Reflect\(\)
 \(Required\) All components are AZ reflected classes\. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:

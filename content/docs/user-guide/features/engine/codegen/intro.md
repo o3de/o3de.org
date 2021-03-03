@@ -132,7 +132,7 @@ For complete syntax of the intermediate JSON data object, see [Intermediate JSON
 
 ## AZ Code Generator and Python {#az-code-gen-intro-python}
 
-AZ Code Generator depends on Python 3\.7 or later to run template drivers and render [Jinja](http://jinja.pocoo.org/) templates\. The Python C API is used to extend Python with methods in the `azcg_extension` module that permit template drivers to report dependencies, errors, and useful informational output\. In Windows, Python 3\.7 is included in the Lumberyard `dev/Tools/Python` directory\. On macOS, AZ Code Generator uses the version of Python that is included with the operating system\.
+AZ Code Generator depends on Python 3\.7 or later to run template drivers and render [Jinja](http://jinja.pocoo.org/) templates\. The Python C API is used to extend Python with methods in the `azcg_extension` module that permit template drivers to report dependencies, errors, and useful informational output\. In Windows, Python 3\.7 is included in the O3DE `dev/Tools/Python` directory\. On macOS, AZ Code Generator uses the version of Python that is included with the operating system\.
 
 **Note**
 To debug Python C API calls when using AZ Code Generator, you must download [CPython](https://www.python.org/downloads/)\. Then make a build for your intended debug OS\.
@@ -141,7 +141,7 @@ To debug Python C API calls when using AZ Code Generator, you must download [CPy
 
 You can use template drivers written in Python to alter the intermediate data structure before passing it to the template engine\. After preprocessing, the template driver might direct the Jinja2 template engine to render one or many templates, depending on the generated code that you want\.
 
-AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the Lumberyard `3rdParty\jinja2` directory\. Lumberyard also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/user-guide/features/engine/codegen/templates.md)\.
+AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the O3DE `3rdParty\jinja2` directory\. O3DE also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/user-guide/features/engine/codegen/templates.md)\.
 
 ## Generated Files {#az-code-gen-intro-generated-files}
 

@@ -38,7 +38,7 @@ To create a projectile entity, create an entity and then add the **[Mesh](/docs/
 
 **To create a projectile entity**
 
-1. In Lumberyard Editor, right\-click in the **Perspective** viewport near your sphere and choose **Create entity**\.
+1. In O3DE Editor, right\-click in the **Perspective** viewport near your sphere and choose **Create entity**\.
 
 1. In the **Entity Inspector**, do the following:
 
@@ -57,7 +57,7 @@ To create a projectile entity, create an entity and then add the **[Mesh](/docs/
    + **Mesh Collider**
    + **Script Canvas**
 
-1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
 1. In the **Script Canvas** editor, choose **File**, **New Script**\.
 
@@ -134,7 +134,7 @@ Now that you've created a projectile script, you can save the projectile entity 
 
 **To save the projectile entity as a slice**
 
-1. In Lumberyard Editor, in the **Entity Outliner**, right\-click **Projectile** and choose **Create slice**\.
+1. In O3DE Editor, in the **Entity Outliner**, right\-click **Projectile** and choose **Create slice**\.
 
 1. In the **Save As** dialog box, for **File name**, enter **projectile** and then click **Save**\.
 
@@ -154,7 +154,7 @@ Now that you've created a slice, you can set up your **Player** entity to spawn 
 
 **To set up the player entity to spawn the slice**
 
-1. In Lumberyard Editor, in the **Entity Outliner**, right\-click the **Player** entity and choose **Create child entity**\.
+1. In O3DE Editor, in the **Entity Outliner**, right\-click the **Player** entity and choose **Create child entity**\.
 
 1. Enter a name for the child entity such as *spawner*\.
 
@@ -174,7 +174,7 @@ Now that you've added the **Spawner** component, you can set up the input bindin
 
 **To set up the projectile input binding**
 
-1. In Lumberyard Editor, in the **Entity Outliner**, select the **Player** entity\.
+1. In O3DE Editor, in the **Entity Outliner**, select the **Player** entity\.
 
 1. In the **Entity Inspector**, under **Input**, click the **Input Bindings Editor** icon ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/input-bindings-editor-icon.png)\.
 
@@ -203,7 +203,7 @@ Now that you've set up the input binding, you can add logic to the **Player** sc
 
 **To add logic to the player script**
 
-1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
 1. In the **Script Canvas** editor, choose **File**, **Open**\. Select `player.scriptcanvas` and then click **Open**\.
 
@@ -254,7 +254,7 @@ Node execution always flows from the left side to the right side of a node\. For
 
 1. Choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to enter game mode and test your script\.
+1. In O3DE Editor, press **Ctrl\+G** to enter game mode and test your script\.
 
 1. Do the following:
    + To move the sphere forward, press **W**\.
@@ -272,7 +272,7 @@ Now that the **Player** entity shoots projectiles, you can add a **Target** enti
 
 **To create a target entity**
 
-1. In Lumberyard Editor, create an entity: Right\-click in the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
+1. In O3DE Editor, create an entity: Right\-click in the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
 
 1. In the **Entity Inspector**, for **Name**, enter **Target**\.
 ![\[Create an entity named Target.\]](/images/user-guide/scripting/script-canvas/script-canvas-entity-inspector-name-target.png)
@@ -381,7 +381,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
 
 1. In the **Script Canvas** editor, choose **File**, **Save**\. You can also press **Ctrl\+S**\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to enter game mode and test your script\.
+1. In O3DE Editor, press **Ctrl\+G** to enter game mode and test your script\.
 
 1. To aim and shoot at the target, do the following:
    + To move the sphere forward, press **W**\.

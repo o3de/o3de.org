@@ -1,10 +1,10 @@
 ---
 description: ' An introduction to the Open 3D Engine UI 2.0 component library. '
-title: Lumberyard UI component library
+title: O3DE UI component library
 ---
-# Lumberyard UI component library<a name="uidev-component-intro"></a>
+# O3DE UI component library<a name="uidev-component-intro"></a>
 
-In the Lumberyard UI component library, you will find an explanation of each UI component \(i\.e\. widget\), along with guidelines for their usage\. Typically, each page contains the following information:
+In the O3DE UI component library, you will find an explanation of each UI component \(i\.e\. widget\), along with guidelines for their usage\. Typically, each page contains the following information:
 + Use cases
 + Screenshots and explanations of component features
 + Usage guidelines
@@ -34,4 +34,4 @@ In the Lumberyard UI component library, you will find an explanation of each UI 
 + [Toggle switch](uidev-toggle-switch-component.md)
 + [Tree view](uidev-tree-view-component.md)
 
-Additionally, a complete guide to the C\+\+ API can be found in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\.
+Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\.

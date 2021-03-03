@@ -22,7 +22,7 @@ title: FBX Settings mesh export
 
 1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\.
 
-   Alternatively, choose **Import** from the **File** menu in Lumberyard Editor to copy or move the `.fbx` file into your project\.
+   Alternatively, choose **Import** from the **File** menu in O3DE Editor to copy or move the `.fbx` file into your project\.
 
 1. Locate the `.fbx` in **Asset Browser**\.
 
@@ -50,7 +50,7 @@ When you close **FBX Settings** after making changes, you might see a pop\-up wi
 
   If the combined mesh has more than 65,536 vertices, make the following changes in the **FBX Settings** tool:
 
-  1. In Lumberyard Editor, in the **Asset Browser**, right\-click the `.fbx` file and choose **Edit Settings**\.
+  1. In O3DE Editor, in the **Asset Browser**, right\-click the `.fbx` file and choose **Edit Settings**\.
 
   1. In the **FBX Settings** tool, on the **Meshes** tab, click **Add Modifier** and then choose **Mesh \(Advanced\)**\.
 

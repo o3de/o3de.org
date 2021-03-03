@@ -5,7 +5,7 @@ title: Transform
 ---
 # Transform {#component-transform}
 
-The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world\. When you create an entity in Lumberyard Editor, the **Transform** component is automatically added\. The translation is the coordinate location \(x, y, and z axes\) of the entity\. The rotation is the degree in which the entity is rotated around its center\. The scale is the dimension of the entity in comparison to its original size\.
+The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world\. When you create an entity in O3DE Editor, the **Transform** component is automatically added\. The translation is the coordinate location \(x, y, and z axes\) of the entity\. The rotation is the degree in which the entity is rotated around its center\. The scale is the dimension of the entity in comparison to its original size\.
 
 *World space* refers to the entity's absolute translation, rotation, and scale in the level\. If a child is attached to a parent entity, *local space* refers to the entity's translation, rotation, and scale relative to its parent entity\.
 
@@ -33,7 +33,7 @@ The local scale\.
 Configures transform behavior when the parent entity activates\.
 
 **Static**
-Entities that can't be moved at run time\. Some systems in Lumberyard treat static entities differently than movable entities \(for example, the renderer can optimize static entities, making them less resource intensive to draw\)\.
+Entities that can't be moved at run time\. Some systems in O3DE treat static entities differently than movable entities \(for example, the renderer can optimize static entities, making them less resource intensive to draw\)\.
 
 ### Network Sync {#component-transform-properties-network-sync}
 

@@ -7,7 +7,7 @@ title: Generating Mip Maps
 
 [Mip maps](/docs/userguide/ly-glos-chap#mip_map) are a sequence of optimized images made from one image\. Each image is lower in resolution than the previous image by a power of two\. Mip maps reduce the time and processing power it takes to render an image in a game\. Lower resolution mip maps are used when the viewing distance is great enough that the loss of detail is not noticeable\. Higher resolution mip maps are used when an object is close to the camera and needs to be displayed in detail\.
 
-When you enable mip maps in Lumberyard, Resource Compiler automatically generates six mip maps for that image\. The largest mip map is the original size of your image, and each progressive mip map is smaller by a power of two\.
+When you enable mip maps in O3DE, Resource Compiler automatically generates six mip maps for that image\. The largest mip map is the original size of your image, and each progressive mip map is smaller by a power of two\.
 
 **Example**
 If your original image is 1024x1024, then you will have mip maps that are 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32\.

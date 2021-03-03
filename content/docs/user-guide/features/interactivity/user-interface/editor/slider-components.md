@@ -1,5 +1,5 @@
 ---
-description: ' Use a slider component to make an element behave like a slider in Lumberyard''s
+description: ' Use a slider component to make an element behave like a slider in O3DE''s
   UI Editor. '
 title: Slider
 ---

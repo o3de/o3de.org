@@ -1,15 +1,15 @@
 ---
-description: ' Learn how to use the Lumberyard UI 2.0 filtered search widget to give
-  users advanced search options in your Lumberyard tools and gems. '
-title: Lumberyard UI filtered search widget
+description: ' Learn how to use the O3DE UI 2.0 filtered search widget to give
+  users advanced search options in your O3DE tools and gems. '
+title: O3DE UI filtered search widget
 ---
-# Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
+# O3DE UI filtered search widget<a name="uidev-filtered-search-component"></a>
 
-Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they're looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
+Use the **filtered search** widget to give users advanced search options in your O3DE UI tools\. You can see this interface in action in O3DE tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they're looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
 
 ## Anatomy of the filtered search widget<a name="filtered-search-anatomy"></a>
 
-Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we're looking for all entities with Script Canvas components\.
+Entity Outliner in the O3DE Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we're looking for all entities with Script Canvas components\.
 
 ![\[component filtered search anatomy\]](/images/tools-ui/component-filtered-search-anatomy.png)
 
@@ -116,5 +116,5 @@ filteredSearchWidget->setTextFilterFillsWidth(false);
 
 ## C\+\+ API reference<a name="filtered-search-api-ref"></a>
 
-For details on the **filtered search** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **filtered search** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::FilteredSearchWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_filtered_search_widget.html)

@@ -24,7 +24,7 @@ You can use the video memory profiler \(VRAM profiler\) to determine which resou
 The VRAM profiler has the following attributes:
 + The VRAM profiler has no graph view or tree view\.
 + The only supported export format is `.csv`\. For steps on saving Profiler data to a `.csv` file, see [Exporting Data](/docs/userguide/debugging/profiling/using#profiler-exporting-data)\.
-+ Lumberyard uses a variety of memory pooling schemes, so the actual allocated amount of VRAM is slightly more than what is reported\.
++ O3DE uses a variety of memory pooling schemes, so the actual allocated amount of VRAM is slightly more than what is reported\.
 
 ## Understanding the Captured Data {#profiler-vram-understanding-captured-data}
 

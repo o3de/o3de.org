@@ -47,7 +47,7 @@ Run the installation again and choose a **Custom Installation** this time, only 
 Update the graphics card driver to the latest version and retry installation\.
 If you are using a laptop, then the manufacturer's drivers for the graphics card might not be compatible with CUDA\. Check the manufacturer's website for the latest drivers\.
 
-1. Click the **refresh** button at the top\-right corner of **Lumberyard Setup Assistant**\. If the NVIDIA CUDA Toolkit is detected, then it appears as **Installed**\.
+1. Click the **refresh** button at the top\-right corner of **O3DE Setup Assistant**\. If the NVIDIA CUDA Toolkit is detected, then it appears as **Installed**\.
 
 ## Enable NVIDIA CUDA for cloth simulation {#lumberyard-cuda-enable}
 
@@ -77,7 +77,7 @@ Open a new command prompt and navigate to `lumberyard_version\dev\` to run the c
 
     `cloth_EnableCUDA = 1`
 
-1. Run Lumberyard Editor\. This also runs the Asset Processor in the background\.
+1. Run O3DE Editor\. This also runs the Asset Processor in the background\.
 
 1. Verify that the NVIDIA Cloth Gem is running cloth simulation on the GPU by looking for the following line in the game log or in the editor console output:
 
@@ -89,4 +89,4 @@ End users do not require the NVIDIA CUDA Toolkit to be installed on their PC in 
 
 Cloth simulations automatically run on the GPU, if a GPU that is compatible with CUDA is present\. If an NVIDIA CUDA compatible GPU is not available, then the simulation defaults to running on the CPU\.
 
-For more information about release builds, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
+For more information about release builds, see [Building O3DE projects](/docs/userguide/game-build-intro.md)\.

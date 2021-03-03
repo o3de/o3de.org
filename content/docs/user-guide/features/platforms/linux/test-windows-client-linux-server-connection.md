@@ -17,7 +17,7 @@ After you've [built the Windows client and Linux server](/docs/user-guide/featur
 ## Prerequisites {#linux-test-windows-client-linux-server-connection-prerequisites}
 
 To test your server setup, complete the following tasks\.
-+ Complete the steps in [Deploy a Lumberyard multiplayer project's server on Linux](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)\.
++ Complete the steps in [Deploy a O3DE multiplayer project's server on Linux](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)\.
 + Get the *public* IP address \(not DNS name\) of your Linux server\.
 + Get the *public* IP address of your client machine\.
 +  Allow outbound TCP connections on Windows 10 to your Linux server on port `4600`, and outbound UDP connections on port `33435`\. If you're not familiar with how to configure Windows firewall to allow outbound connections, see the [Microsoft Windows Firewall documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)\.
@@ -46,7 +46,7 @@ Before starting the client and after configuring the server to accept connection
    sys_game_folder=MultiplayerSample
    ```
 **Note**
- You might see `^M` characters at the end of every line in the `bootstrap.cfg` file\. This indicates that the file uses Windows\-style line endings rather than Linux\-style ones\. This doesn't affect the ability of the Lumberyard dedicated server from loading the bootstrap file correctly, and you don't need to worry about preserving the line ending type when you edit the file\.
+ You might see `^M` characters at the end of every line in the `bootstrap.cfg` file\. This indicates that the file uses Windows\-style line endings rather than Linux\-style ones\. This doesn't affect the ability of the O3DE dedicated server from loading the bootstrap file correctly, and you don't need to worry about preserving the line ending type when you edit the file\.
 
 1. Start the server\.
 

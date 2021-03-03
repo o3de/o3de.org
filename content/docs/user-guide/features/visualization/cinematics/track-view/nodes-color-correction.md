@@ -1,6 +1,6 @@
 ---
-description: ' Use the Color Correction node in Lumberyard''s <guilabel>Track View</guilabel> editor to change
-  the CMYK, brightness, contrast, saturation, and hue in a scene in Lumberyard. '
+description: ' Use the Color Correction node in O3DE''s <guilabel>Track View</guilabel> editor to change
+  the CMYK, brightness, contrast, saturation, and hue in a scene in O3DE. '
 title: Color Correction Node
 ---
 # Color Correction Node {#cinematics-track-view-nodes-color-correction}

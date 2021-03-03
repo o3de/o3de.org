@@ -1,11 +1,11 @@
 ---
-description: ' Use AZ::Console to set console variables and functors for your Lumberyard
+description: ' Use AZ::Console to set console variables and functors for your O3DE
   game. '
 title: AZ::Console
 ---
 # AZ::Console {#az-console}
 
-The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in\-game variables and processes\. Use the macros defined in this class to set the console variables \(cvars\) and functors \(cfuncs\) for your game, and then access them through the Lumberyard console\.
+The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in\-game variables and processes\. Use the macros defined in this class to set the console variables \(cvars\) and functors \(cfuncs\) for your game, and then access them through the O3DE console\.
 
 `AZ::Console` is defined in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Console\IConsole.h`
 
@@ -13,7 +13,7 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 The console found inside `AzCore` is a console and cvar system intended to replace the legacy CryEngine console and cvar system\. This system is free of any CryEngine code, and depends only on `AzCore`\.
 
 `AZ::Console` features:
-+ ***Stubbed*** support for multiplayer \(as of v1\.24\)\. Lumberyard will eventually enable cvar replication across multiplayer instances using GridMate\.
++ ***Stubbed*** support for multiplayer \(as of v1\.24\)\. O3DE will eventually enable cvar replication across multiplayer instances using GridMate\.
 + Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds\.
 + Default support for several C\+\+ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\)\.
 + Flexible and expandable type support\. You can add support for new cvar types without altering the console code directly\.
@@ -95,7 +95,7 @@ Make sure that the **\_TYPE **and **\_NAME** parameters match those of the previ
 
 ## Console functors \(cfuncs\) {#az-console-cfuncs}
 
-Console functions allow you to register a command with the console that's not associated with a specific type or value\. In Lumberyard, they're purely a mechanism to allow a method to be invoked directly from the Lumberyard in\-game console\.
+Console functions allow you to register a command with the console that's not associated with a specific type or value\. In O3DE, they're purely a mechanism to allow a method to be invoked directly from the O3DE in\-game console\.
 
 There are two types of cfuncs: one to invoke class member methods \(`AZ_CONSOLEFUNC`\), and one to invoke static methods \(`AZ_CONSOLEFREEFUNC`\)\.
 

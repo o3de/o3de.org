@@ -14,7 +14,7 @@ title: Cloth for Actor components
 
 To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/features/interactivity/physics/nvidia-cloth/_index.md) documentation\.
 
-You can create cloth assets for entities with **Actor** components in the content creation application of your choice and import them into Lumberyard from an `.fbx` file\. The actor asset should have the following:
+You can create cloth assets for entities with **Actor** components in the content creation application of your choice and import them into O3DE from an `.fbx` file\. The actor asset should have the following:
 
 **Actor mesh**
 One or more meshes that visually represent the actor, skinned to a skeleton, that will **not** be simulated as cloth\.
@@ -39,7 +39,7 @@ For imformation on exporting actor assets, see [FBX Settings actor export](/docs
 
 Create cloth by adding the **Cloth** component to an entity that has an **Actor** component, and then setting the properties of the **Cloth** component\.
 
-1. In Lumberyard Editor, add a new entity to the level\.
+1. In O3DE Editor, add a new entity to the level\.
 
 1. Add an **Actor** component to the entity, and reference the actor asset and material\.
 
@@ -82,6 +82,6 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 ## View the Cloth Simulation {#view-cloth-simulation}
 
-In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\.
+In O3DE Editor, press Ctrl\+G or press the **Play** button to run your project\.
 
 ![\[Open 3D Engine cloth simulation with the NVIDIA Cloth gem.\]](/images/user-guide/physx/cloth/anim-actor-cloth.gif)

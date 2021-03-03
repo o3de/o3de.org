@@ -1,10 +1,10 @@
 ---
-description: ' Use console variables to control the Lumberyard audio system. '
+description: ' Use console variables to control the O3DE audio system. '
 title: Audio Console Variables
 ---
 # Audio Console Variables {#audio-console-commands}
 
-The following console variables can be used with the Lumberyard Audio system\.
+The following console variables can be used with the O3DE Audio system\.
 
 **s\_ATLPoolSize**
 Specifies in KB the size of the memory pool to be used by the audio translation layer \(ATL\)\.

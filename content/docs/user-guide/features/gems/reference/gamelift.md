@@ -7,11 +7,11 @@ title: 'AGS Gem'
 
 Amazon GameLift is an AWS service for deploying, operating, and scaling session\-based multiplayer games\. With Amazon GameLift, you can quickly scale high\-performance game servers up and down to meet player demand without any additional engineering effort or upfront costs\.
 
-The GameLift Gem provides a framework to extend Lumberyard networking \(GridMate\) to work with GameLift resources via GameLift server and client API's\.
+The GameLift Gem provides a framework to extend O3DE networking \(GridMate\) to work with GameLift resources via GameLift server and client API's\.
 
 ## Getting Started {#gems-system-gem-gamelift-getting-started}
 
-To use the Amazon GameLift service with your Lumberyard project, you simply enable the GameLift Gem using Project Configurator\.
+To use the Amazon GameLift service with your O3DE project, you simply enable the GameLift Gem using Project Configurator\.
 
 You will want to familiarize yourself with GameLift concepts found in the [Amazon GameLift Developer Guide](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. GameLift resources like fleet, queue, matchmaking rule, and config need to be deployed prior to running your game on GameLift\. For more details, refer to the [GameLift CLI](https://docs.aws.amazon.com/cli/latest/reference/gamelift)\.
 

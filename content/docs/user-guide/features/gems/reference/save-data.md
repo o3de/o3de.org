@@ -5,13 +5,13 @@ title: SaveData Gem
 ---
 # SaveData Gem {#gems-system-save-data}
 
-The SaveData gem encapsulates all the functionality in Lumberyard for saving game and individual user data under a single platform\-agnostic set of API operations\.
+The SaveData gem encapsulates all the functionality in O3DE for saving game and individual user data under a single platform\-agnostic set of API operations\.
 
 ![\[The SaveData gem in Project Configurator.\]](/images/user-guide/gems-system-save-data-1.png)
 
 To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-The SaveData gem uses the [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md), Lumberyard's general\-purpose communication system for dispatching notifications and receiving requests\. To make requests related to saving or loading persistent user data, use the SaveData gem's `SaveDataRequests` bus\. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus\.
+The SaveData gem uses the [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md), O3DE's general\-purpose communication system for dispatching notifications and receiving requests\. To make requests related to saving or loading persistent user data, use the SaveData gem's `SaveDataRequests` bus\. To listen for notifications related to saving persistent user data, use the `SaveDataNotifications` bus\.
 
 ## Making Requests to Save Data {#gems-system-save-data-requests}
 

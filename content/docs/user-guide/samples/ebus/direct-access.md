@@ -151,7 +151,7 @@ Anyone who can include the header can send messages to the EBus at any time\. Us
 ExampleInterfaceBus::Broadcast(&ExampleInterfaceBus::Events::DoSomething);
 ```
 
-EBuses also support a macro\-based syntax\. This syntax is being phased out, but uses of it can still be found in Lumberyard source code\. The macro syntax for the previous example is as follows\.
+EBuses also support a macro\-based syntax\. This syntax is being phased out, but uses of it can still be found in O3DE source code\. The macro syntax for the previous example is as follows\.
 
 ```
 #include "ExampleInterface.h"

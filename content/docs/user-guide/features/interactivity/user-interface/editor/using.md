@@ -25,7 +25,7 @@ The **UI Editor** consists of the following:
 You can tear away and redock the **Hierarchy** pane, the **Properties** pane, the **Animation Editor**, and sections of the toolbar to customize the **UI Editor**\.
 
 **To open the UI Editor**
-+ In Lumberyard Editor, choose **Tools** and then **UI Editor**\.
++ In O3DE Editor, choose **Tools** and then **UI Editor**\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-using1.png)
 

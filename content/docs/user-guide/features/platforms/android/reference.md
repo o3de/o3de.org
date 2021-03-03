@@ -4,7 +4,7 @@ title: Reference for Android
 ---
 # Reference for Android {#android-reference}
 
- This section is a reference for commands and build settings used by Lumberyard when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\.
+ This section is a reference for commands and build settings used by O3DE when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\.
 + [Waf Commands and Options](/docs/userguide/waf/commands.md)
 + [Waf Project Settings](/docs/userguide/waf/project-settings.md)
 
@@ -13,7 +13,7 @@ title: Reference for Android
 + [Waf settings](#android-waf-settings)
 + [Android build configuration file](#android-specific-settings)
 + [Other command\-line arguments](#android-command-line-args)
-+ [Lumberyard project settings for Android](#android-reference-project-settings)
++ [O3DE project settings for Android](#android-reference-project-settings)
 
 ## Build command reference {#android-reference-build}
 
@@ -31,7 +31,7 @@ lmbr_waf deploy_android_armv8_clang_debug -p game_and_engine
 ### Commands {#android-waf-commands}
 
 **build**
-Build the currently selected Lumberyard project\.
+Build the currently selected O3DE project\.
 
 **deploy**
 Manually deploy to a connected device\.
@@ -85,12 +85,12 @@ Disables debugging and strips debug symbols in the final build\.
 | Attribute \(config file\) | Parameter \(command line\) | Description | Default |
 | --- | --- | --- | --- |
 | android\_studio\_project\_folder | \-\-android\-studio\-project\-folder | Name of the directory in which the generated Android Studio project should be stored\. | Solutions |
-| android\_studio\_project\_name | \-\-android\-studio\-project\-name | Name of the root Android project directory and Android Studio project name\. | LumberyardAndroidSDK |
+| android\_studio\_project\_name | \-\-android\-studio\-project\-name | Name of the root Android project directory and Android Studio project name\. | O3DEAndroidSDK |
 | generate\_android\_projects\_automatically | \-\-generate\-android\-projects\-automatically | Automatically generates Android Studio projects\. | True |
 
 ## Android build configuration file {#android-specific-settings}
 
- Lumberyard stores some settings for the Android platform in an independent file, `lumberyard_install_dir\dev\_WAF_\android\android_settings.json`\. This file contains a JSON dictionary of build setting names and their values\.
+ O3DE stores some settings for the Android platform in an independent file, `lumberyard_install_dir\dev\_WAF_\android\android_settings.json`\. This file contains a JSON dictionary of build setting names and their values\.
 
 **Important**
  After making any changes to the Android settings, run `lmbr_waf configure`\. Taking this action causes your changes to be imported to the generated Android Studio project and its manifest information\.
@@ -134,10 +134,10 @@ Override the Android SDK version used in the Java compilation\. Only works durin
 Override the Android NDK platform version used in the native compilation\. Only works during configure\.
 
 `--dev-store-pass`
- The password for the development keystore\. Lumberyard ships with a store with the password `Lumberyard` by default\. This default password is used in the Development environment if this command\-line argument is missing\.
+ The password for the development keystore\. O3DE ships with a store with the password `O3DE` by default\. This default password is used in the Development environment if this command\-line argument is missing\.
 
 `--dev-key-pass`
- The password for the development key\. Lumberyard ships with a self\-signed key with the password `Lumberyard` in its default key store\. This default password is used in the Development environment if this command\-line argument is missing\.
+ The password for the development key\. O3DE ships with a self\-signed key with the password `O3DE` in its default key store\. This default password is used in the Development environment if this command\-line argument is missing\.
 
 `--distro-store-pass`
 The password for the distribution keystore\. This argument is required when using the Distribution environment\.
@@ -148,9 +148,9 @@ The password for the distribution key\. This argument is required when using the
 `--deploy-android-attempt-libs-only`
  Push only the changed native libraries\. If `deploy_android_executable` is enabled, it takes precedence if the executable was modified\. This option is ignored if `deploy_android_clean_device` is enabled\. This argument only works when deploying to a rooted device\.
 
-## Lumberyard project settings for Android {#android-reference-project-settings}
+## O3DE project settings for Android {#android-reference-project-settings}
 
- As part of every Lumberyard project, there is a settings file that describes the application and per\-project build settings\. This file is located at `lumberyard_install_dir/dev/project-name/project.json`\. Within the JSON dictionary contained in this file is the key `android_settings`, with a value of a JSON dictionary that contains the settings used by your project when building and deploying for Android\.
+ As part of every O3DE project, there is a settings file that describes the application and per\-project build settings\. This file is located at `lumberyard_install_dir/dev/project-name/project.json`\. Within the JSON dictionary contained in this file is the key `android_settings`, with a value of a JSON dictionary that contains the settings used by your project when building and deploying for Android\.
 
 **`package_name`**
  Android application package identifier\. Used for generating the project\-specific Java activity class and as part of `AndroidManifest.xml`\. The identifier must be in reverse domain name format\.

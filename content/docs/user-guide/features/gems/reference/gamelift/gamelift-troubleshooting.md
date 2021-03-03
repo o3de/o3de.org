@@ -20,14 +20,14 @@ As a first step, sign in to the Amazon GameLift console and check the fleet's ev
 If your process is failing on launch, then the most likely cause is that you failed to package or install all of the server's dependencies\. On Windows, this typically means missing dynamic link libraries \(DLLs\)\. Check the following:
 + Check your `install.bat` or `install.sh` output\. Ensure that the script installed what was required to run on GameLift\.
 **Note**
-For Windows fleets, debug builds of the dedicated server will fail on launch, since they require debug Visual Studio Redistributables which Lumberyard cannot provide\. Consider using profile builds instead on GameLift\.
+For Windows fleets, debug builds of the dedicated server will fail on launch, since they require debug Visual Studio Redistributables which O3DE cannot provide\. Consider using profile builds instead on GameLift\.
 **Note**
 For Linux fleets, look at the `MultiplayerSample_CreateGameLiftPackage.sh` script to see how to generate an `install.sh` for use on Amazon Linux 2\.
 + Remote into the fleet and ensure that the `bootstrap.cfg` is correct\. Many failures can be caused by a misconfigured bootstrap\. Try manually running the process to discover what might be missing on launch\.
 + If you are using Windows to prepare packages for Linux development, ensure that the box marked **Setup for Linux Dedicated Server** is selected in the Setup Assistant, otherwise GameLift integration files can be missing\. This is a requirement for using `MultiplayerSample_LinuxPacker.bat`, for example\.
 
 **Crashing process**
-If your process is crashing, then remote into the fleet and check the server logs to discover the source of the crash\. Lumberyard logs to either `C:\Game\user\log` \(Windows\) or `/local/game/user/log` \(Linux\)\.
+If your process is crashing, then remote into the fleet and check the server logs to discover the source of the crash\. O3DE logs to either `C:\Game\user\log` \(Windows\) or `/local/game/user/log` \(Linux\)\.
 
 **Not responding to GameLift callbacks**
 Ensure that your process is responding to callbacks from GameLift, especially the health check callback\. If your process is not responding, then ensure your Amazon EC2 instance is not CPU\-bound or memory\-bound, which might cause the server to be unstable or slow to respond\. Try reducing the number of concurrent servers per instance, or try a larger EC2 instance\.

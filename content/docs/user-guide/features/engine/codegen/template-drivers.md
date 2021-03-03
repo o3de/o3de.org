@@ -82,7 +82,7 @@ For an example of this method, see [Preprocessing Intermediate Data](#az-code-ge
 Override the `get_expected_tags` method to return a list of tags that must be found in any input file\. If the required tags are not present, this driver is skipped\.
 
 **Important**
-This method is deprecated as of Lumberyard v1\.6\. After Lumberyard v1\.6, all scripts will be processed regardless of expected tags, and `get_expected_tags` will not be invoked\.
+This method is deprecated as of O3DE v1\.6\. After O3DE v1\.6, all scripts will be processed regardless of expected tags, and `get_expected_tags` will not be invoked\.
 
 **Syntax**
 

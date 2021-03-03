@@ -9,7 +9,7 @@ The **UI Editor** uses the concept of a canvas as an invisible backdrop for your
 
 **To create a UI canvas**
 
-1. In Lumberyard Editor, click **Tools**, **UI Editor**\.
+1. In O3DE Editor, click **Tools**, **UI Editor**\.
 
    The **UI Editor** automatically creates an empty canvas\.
 

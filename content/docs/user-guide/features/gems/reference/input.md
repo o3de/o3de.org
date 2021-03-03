@@ -12,7 +12,7 @@ title: Input Management Framework Gem
 | --- |
 |  The Input Management Framework Gem is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-The Input Management Framework gem provides a framework for managing cross\-platform game input such as keyboard, controller, and touch in Lumberyard with the component entity system\.
+The Input Management Framework gem provides a framework for managing cross\-platform game input such as keyboard, controller, and touch in O3DE with the component entity system\.
 
 ![\[Enable the Input Management Framework gem for the Input component.\]](/images/user-guide/gems/input-management-framework-gem.png)
 

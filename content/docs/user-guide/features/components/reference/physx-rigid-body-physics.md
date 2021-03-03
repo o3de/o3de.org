@@ -9,7 +9,7 @@ The **PhysX Rigid Body** component defines the entity as a rigid object that is 
 You can specify two main modes for a **PhysX Rigid Body** component\.
 
 **Dynamic**
-Dynamic rigid bodies will be fully simulated by Lumberyard and respond to collision events with other rigid bodies\. Lumberyard will apply forces to two dynamic objects that collide, which results in a realistic physics simulation\. The simulation will also apply a gravity force to rigid bodies in dynamic mode\. You can disable this feature for each rigid body on the component\. Dynamic rigid bodies should be used for semi\-realistic solid objects that are effected by gravity and other forces\.
+Dynamic rigid bodies will be fully simulated by O3DE and respond to collision events with other rigid bodies\. O3DE will apply forces to two dynamic objects that collide, which results in a realistic physics simulation\. The simulation will also apply a gravity force to rigid bodies in dynamic mode\. You can disable this feature for each rigid body on the component\. Dynamic rigid bodies should be used for semi\-realistic solid objects that are effected by gravity and other forces\.
 Dynamic is the default\.
 
 **Kinematic**

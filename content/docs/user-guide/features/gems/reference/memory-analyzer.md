@@ -44,7 +44,7 @@ To use the **Asset Memory Analyzer**, enable asset scope tracking, configure and
 
 To view live asset memory allocation, enable the **ImGUI** overlay during gameplay and choose **Asset Memory Analyzer** in the **ImGUI** window\.
 
-1. In the Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\.
+1. In the O3DE Editor, press Ctrl\+G or press the **Play** button to run your project\.
 
 1. Press the Home key to open the ImGUI overlay window\.
 
@@ -80,7 +80,7 @@ Due to the limitations of the `CSV` format, only a top\-level overview of assets
 
 ## View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}
 
-`JSON` snapshots can be viewed in a browser with a web viewer provided with Lumberyard\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\.
+`JSON` snapshots can be viewed in a browser with a web viewer provided with O3DE\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\.
 
 ![\[The Asset Memory Viewer displaying a JSON snapshot in a browser.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-D-1.22.png)
 
@@ -196,7 +196,7 @@ class MyEvents : public AZ::EBusTraits
 };
 ```
 
-Some Lumberyard EBuses use this feature, such as the **TickBus**\. If you find others that should use it, please add them\! You should not default to using this `EventProcessingPolicy` if it is not applicable\.
+Some O3DE EBuses use this feature, such as the **TickBus**\. If you find others that should use it, please add them\! You should not default to using this `EventProcessingPolicy` if it is not applicable\.
 
 Instrumentation does create some overhead which can negatively affect your project's performance\.
 

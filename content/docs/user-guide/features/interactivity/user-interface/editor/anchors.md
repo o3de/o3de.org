@@ -1,6 +1,6 @@
 ---
 description: ' Use the Transform2D''s anchors and offset settings to set a UI element''s
-  position and size relative to its parent''s edges in Lumberyard. '
+  position and size relative to its parent''s edges in O3DE. '
 title: Managing UI Anchors and Offsets
 ---
 # Managing UI Anchors and Offsets {#ui-editor-anchors}

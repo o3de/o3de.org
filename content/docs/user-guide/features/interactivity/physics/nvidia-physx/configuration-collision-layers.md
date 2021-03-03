@@ -17,7 +17,7 @@ The layers that you define are specific to your game\. When a collider is create
 
 **To create a collision layer**
 
-1. In Lumberyard Editor, choose **Tools**, **PhysX Configuration**\.
+1. In O3DE Editor, choose **Tools**, **PhysX Configuration**\.
 
 1. Click the **Layers** tab\.
 
@@ -26,7 +26,7 @@ The layers that you define are specific to your game\. When a collider is create
 
 **To assign a collision layer to a collider**
 
-1. In the Lumberyard Editor viewport, create an entity and select it\.
+1. In the O3DE Editor viewport, create an entity and select it\.
 
 1. In the **Entity Inspector**, add a **PhysX Collider** component to the entity\.
 

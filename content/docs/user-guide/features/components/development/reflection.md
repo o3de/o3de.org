@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to reflect Lumberyard components in C++. '
+description: ' Learn how to reflect O3DE components in C++. '
 title: Reflecting a Component for Serialization and Editing
 ---
 # Reflecting a Component for Serialization and Editing {#component-entity-system-reflect-component}
@@ -92,16 +92,16 @@ if (edit)
 }
 ```
 
-Lumberyard has reflection contexts for different purposes, including the following:
+O3DE has reflection contexts for different purposes, including the following:
 + [Serialization Context](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md) - Contains reflection data for serialization and construction of objects\.
-+ [Edit Context](/docs/user-guide/features/engine/components/edit-context.md) - Contains reflection data for visual editing of objects, as in Lumberyard Editor\.
++ [Edit Context](/docs/user-guide/features/engine/components/edit-context.md) - Contains reflection data for visual editing of objects, as in O3DE Editor\.
 + [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md), or other external sources\.
 + `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation\.
 
 **Note**
  This topic covers only `SerializeContext` and `EditContext`\.
 
-All of Lumberyard's reflection API operations are designed to be simple, human readable, and human writable, with no forced dependency on code generation\.
+All of O3DE's reflection API operations are designed to be simple, human readable, and human writable, with no forced dependency on code generation\.
 
 A component's `Reflect()` function is invoked automatically for all relevant contexts\.
 
@@ -144,7 +144,7 @@ For C\+\+ API reference documentation on the serialize context, see the [Seriali
 
 ## Editing {#component-entity-system-reflect-component-editing}
 
-When you run Lumberyard tools such as Lumberyard Editor, an `EditContext` and a `SerializeContext` are provided\. You can use the robust facilities in these contexts to expose your fields to content creators\.
+When you run O3DE tools such as O3DE Editor, an `EditContext` and a `SerializeContext` are provided\. You can use the robust facilities in these contexts to expose your fields to content creators\.
 
 The following code demonstrates basic edit context reflection:
 

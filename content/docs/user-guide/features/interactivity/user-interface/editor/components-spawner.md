@@ -45,7 +45,7 @@ You can also view the example canvases in the **UI Editor**\.
 
 **To view the canvases**
 
-1. In Lumberyard Editor, choose **Tools**, **UI Editor**\.
+1. In O3DE Editor, choose **Tools**, **UI Editor**\.
 
 1. Navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Spawner` directory\.
 

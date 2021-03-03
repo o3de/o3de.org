@@ -1,12 +1,12 @@
 ---
 description: ' Learn about the asset data file types that Open 3D Engine supports. '
-title: 'Lumberyard Asset File Types'
+title: 'O3DE Asset File Types'
 ---
-# Lumberyard Asset File Types {#lumberyard-file-types}
+# O3DE Asset File Types {#lumberyard-file-types}
 
-See the following tables for supported asset data file types in Lumberyard\.
+See the following tables for supported asset data file types in O3DE\.
 
-Lumberyard supports the `.xml` file format and the following image file formats:
+O3DE supports the `.xml` file format and the following image file formats:
 + `.bmp`
 + `.jpg`
 + `.pgm`
@@ -27,13 +27,13 @@ The following file formats are used for static geometry:
 | --- | --- | --- |
 | \*\.cgf \(Static Geometry File\) | DCC tool | Contains static geometry data, such as grouped triangles, tangent spaces, vertex colors, physics data, and spherical harmonics data\. |
 | \*\.chr \(Character Asset File\) | DCC tool | The base character used for animations\. |
-| \*\.cdf \(Character Definition File\) | Lumberyard | Defines the base character and associated attachments\. This file is created with Geppetto and contains a reference to the \.chr file\. |
+| \*\.cdf \(Character Definition File\) | O3DE | Defines the base character and associated attachments\. This file is created with Geppetto and contains a reference to the \.chr file\. |
 | \*skin \(Character Skinned Render Mesh\) | DCC tool | Contains skinned character data, including the mesh, vertex weighting, vertex colors, and morph targets\. |
 | \*\.fbx \(Filmbox File\) | DCC Tool | Contains mesh, material, camera, and animation data\. Provides interoperability between DCC tools\. |
-| \*\.scenesettings \(Scene Settings File\) | Lumberyard | Contains configuration and rules settings from an \.fbx file\.  |
+| \*\.scenesettings \(Scene Settings File\) | O3DE | Contains configuration and rules settings from an \.fbx file\.  |
 | \*\.abc \(Alembic Cache File\) | DCC tool | Contains non\-procedural, application\-independent set of baked geometric data such as baked meshes and their materials\.  |
-| \*\.cax \(CAD/CAE Exchange File\) | Lumberyard | Contains compressed game assets read from the \.abc file and streamed in\-game on demand from disk\.  |
-| \*\.trb \(Terrain Block File\) | Lumberyard | Contains terrain data and associated level objects such as water and vegetation\.  |
+| \*\.cax \(CAD/CAE Exchange File\) | O3DE | Contains compressed game assets read from the \.abc file and streamed in\-game on demand from disk\.  |
+| \*\.trb \(Terrain Block File\) | O3DE | Contains terrain data and associated level objects such as water and vegetation\.  |
 
 **Material and Texture File Types**
 
@@ -59,9 +59,9 @@ The following file types are used for the **Animation Editor**\. For more inform
 | --- | --- | --- |
 | \*\.actor \(Actor File\) | DCC tool | A character with at least one bone\.  |
 | \*\.motion \(Motion File\) | DCC tool | Individual animation clips for a character, such as walk, run, and so on\. |
-| \*\.motionset \(Motion Set File\) | Lumberyard | Contains a list of motion files for a character\. For example, you can create a motion set named Run\.motionset that contains the run\.motion, sprint\.motion, and jog\.motion files\. |
-| \*\.animgraph \(Animation Graph File\) | Lumberyard | Contains the state machines, transitions, conditions, blend trees, and so on\. |
-| \*\.assetinfo \(Asset Info File\) | Lumberyard | Contains the configuration and settings for the \.actor and \.motion files\. Animation Editor and the FBX Settings tool can create this file\.  |
+| \*\.motionset \(Motion Set File\) | O3DE | Contains a list of motion files for a character\. For example, you can create a motion set named Run\.motionset that contains the run\.motion, sprint\.motion, and jog\.motion files\. |
+| \*\.animgraph \(Animation Graph File\) | O3DE | Contains the state machines, transitions, conditions, blend trees, and so on\. |
+| \*\.assetinfo \(Asset Info File\) | O3DE | Contains the configuration and settings for the \.actor and \.motion files\. Animation Editor and the FBX Settings tool can create this file\.  |
 
 **Audio Asset File Types**
 
