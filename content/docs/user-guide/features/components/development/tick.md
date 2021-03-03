@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the tick bus in Amazon Lumberyard. '
+description: ' Learn how to use the tick bus in Open 3D Engine. '
 title: Tick Bus and Components
 ---
 # Tick Bus and Components {#component-entity-system-pg-tick-bus}

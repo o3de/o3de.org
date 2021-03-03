@@ -1,5 +1,5 @@
 ---
-description: ' Understand the workflow of Amazon Lumberyard''s runtime asset system and learn
+description: ' Understand the workflow of Open 3D Engine''s runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
 title: Programming the Lumberyard AZCore Runtime Asset System
 ---

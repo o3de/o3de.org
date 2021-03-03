@@ -1,5 +1,5 @@
 ---
-description: ' Configure how Amazon Lumberyard processes your images or textures to make them
+description: ' Configure how Open 3D Engine processes your images or textures to make them
   game-ready. '
 title: Configuring Image Processing
 ---

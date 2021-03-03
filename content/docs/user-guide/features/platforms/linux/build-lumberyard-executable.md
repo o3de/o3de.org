@@ -1,5 +1,5 @@
 ---
-description: ' Build, deploy, and run an Amazon Lumberyard multiplayer project''s dedicated
+description: ' Build, deploy, and run an Open 3D Engine multiplayer project''s dedicated
   server to a host running Linux. '
 title: Deploy a Lumberyard multiplayer project's server on Linux
 ---

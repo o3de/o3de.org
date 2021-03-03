@@ -1,6 +1,6 @@
 ---
 description: ' Use the Animation Editor ''s math nodes to perform math operations
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Math Nodes
 ---
 # Using Math Nodes {#animation-editor-math-nodes}

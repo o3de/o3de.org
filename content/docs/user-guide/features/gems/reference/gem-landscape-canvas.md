@@ -1,5 +1,5 @@
 ---
-description: ' Use Landscape Canvas Gem to author dynamic vegetation Amazon Lumberyard
+description: ' Use Landscape Canvas Gem to author dynamic vegetation Open 3D Engine
   project. '
 title: 'Landscape Canvas Gem'
 ---

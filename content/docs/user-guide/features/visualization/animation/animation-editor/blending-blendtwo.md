@@ -1,5 +1,5 @@
 ---
-description: ' Use the Blend Two node in Amazon Lumberyard Animation Editor to blend two
+description: ' Use the Blend Two node in Open 3D Engine Animation Editor to blend two
   nodes that do not need additive blending. '
 title: Blend Two Node
 ---

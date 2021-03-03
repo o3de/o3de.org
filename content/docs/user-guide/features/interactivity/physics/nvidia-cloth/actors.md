@@ -1,6 +1,6 @@
 ---
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Actor components
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Cloth for Actor components
 ---
 # Cloth for Actor components {#nvidia-cloth-actors}
@@ -50,7 +50,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 1. Set the cloth data of the actor asset\.
 
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.
-![\[Amazon Lumberyard cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
+![\[Open 3D Engine cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
 
    1. In the **FBX Settings** window, on the **Actors** tab, and choose **Add Modifier**, **Cloth**\.
 
@@ -63,14 +63,14 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
       1. When applicable, select the vertex color stream and channel that include the **Motion Constraints** data\. If data is not provided, then cloth defaults to a motion constraint value of 1\.0 for all vertices\.
 
       1. When applicable, select the vertex color streams and channels that includes the **Backstop Offset** and **Backstop Radius** data\. If data is not provided, then no backstop constraints will be applied in the simulation\.
-![\[Amazon Lumberyard cloth modifier setup.\]](/images/user-guide/physx/cloth/ui-cloth-modifier-actor-setup-1.27.png)
+![\[Open 3D Engine cloth modifier setup.\]](/images/user-guide/physx/cloth/ui-cloth-modifier-actor-setup-1.27.png)
 
    1. Choose the **Update** button\. **Asset Processor** then updates the asset and includes the cloth data\.
 
 1. Configure the cloth component\.
 
    1. Select the cloth mesh node from the drop\-down list\.
-![\[Amazon Lumberyard cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-actor-1.27.png)
+![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-actor-1.27.png)
 
    1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/features/components/cloth.md)\.
 
@@ -84,4 +84,4 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 In Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\.
 
-![\[Amazon Lumberyard cloth simulation with the NVIDIA Cloth gem.\]](/images/user-guide/physx/cloth/anim-actor-cloth.gif)
+![\[Open 3D Engine cloth simulation with the NVIDIA Cloth gem.\]](/images/user-guide/physx/cloth/anim-actor-cloth.gif)

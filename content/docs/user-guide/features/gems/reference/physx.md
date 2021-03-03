@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX gem to create realistic physical effects such as collision
-  detection and rigid body dynamics simulation in your Amazon Lumberyard level. '
+  detection and rigid body dynamics simulation in your Open 3D Engine level. '
 title: PhysX
 ---
 # PhysX {#gems-system-gem-physx}

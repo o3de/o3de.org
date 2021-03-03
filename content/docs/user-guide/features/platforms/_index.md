@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the platforms supported by Amazon Lumberyard for developing games
+description: ' Learn about the platforms supported by Open 3D Engine for developing games
   and simulations. '
 title: Platform development
 ---

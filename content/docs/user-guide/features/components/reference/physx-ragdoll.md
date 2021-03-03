@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Ragdoll component to create a physical representation
-  of a character in the Amazon Lumberyard Animation Editor . '
+  of a character in the Open 3D Engine Animation Editor . '
 title: PhysX Ragdoll
 ---
 # PhysX Ragdoll {#component-physx-ragdoll}

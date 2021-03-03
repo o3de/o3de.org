@@ -1,4 +1,4 @@
-# Amazon Lumberyard Welcome Guide
+# Open 3D Engine Welcome Guide
 
 -----
 *****Copyright &copy;  *****
@@ -8,18 +8,18 @@
 
 -----
 ## Contents
-+ [Welcome to Amazon Lumberyard](wg-welcome.md)
++ [Welcome to Open 3D Engine](wg-welcome.md)
 + [Lumberyard features](wg-features-intro.md)
-+ [How Amazon Lumberyard works](wg-how-lumberyard-works.md)
-+ [Setting up Amazon Lumberyard](wg-setup-intro.md)
-   + [Amazon Lumberyard system requirements](wg-requirements.md)
-   + [Installing Amazon Lumberyard](wg-install.md)
-   + [Configuring your Amazon Lumberyard environment with Setup Assistant](wg-setup-assistant.md)
++ [How Open 3D Engine works](wg-how-lumberyard-works.md)
++ [Setting up Open 3D Engine](wg-setup-intro.md)
+   + [Open 3D Engine system requirements](wg-requirements.md)
+   + [Installing Open 3D Engine](wg-install.md)
+   + [Configuring your Open 3D Engine environment with Setup Assistant](wg-setup-assistant.md)
    + [Manage Lumberyard projects with Project Configurator](wg-project-configurator.md)
-+ [Create with Amazon Lumberyard](wg-create-intro.md)
++ [Create with Open 3D Engine](wg-create-intro.md)
    + [Introduction to the Lumberyard Editor](wg-editor.md)
-   + [Tools available in Amazon Lumberyard](wg-tools.md)
-+ [Get started with Amazon Lumberyard](wg-getstarted.md)
+   + [Tools available in Open 3D Engine](wg-tools.md)
++ [Get started with Open 3D Engine](wg-getstarted.md)
    + [Tutorial One: Create a level](tutor-ch01-create-a-level.md)
    + [Tutorial Two: Create an entity with White Box](tutor-ch02-create-an-entity.md)
    + [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)

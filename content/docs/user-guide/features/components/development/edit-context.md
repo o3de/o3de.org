@@ -1,5 +1,5 @@
 ---
-description: ' Use the edit context to expose parameters for editing in Amazon Lumberyard''s
+description: ' Use the edit context to expose parameters for editing in Open 3D Engine''s
   Lumberyard Editor. '
 title: Edit Context
 ---

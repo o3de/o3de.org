@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the Blend Two Additive node in Amazon Lumberyard Animation Editor
+description: ' Learn how to use the Blend Two Additive node in Open 3D Engine Animation Editor
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---

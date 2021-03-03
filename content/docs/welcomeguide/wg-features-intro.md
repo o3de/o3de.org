@@ -1,5 +1,5 @@
 ---
-description: ' Features overview for Amazon Lumberyard. '
+description: ' Features overview for Open 3D Engine. '
 title: Lumberyard features
 ---
 # Lumberyard features<a name="wg-features-intro"></a>

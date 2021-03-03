@@ -1,5 +1,5 @@
 ---
-description: ' Export PhysX colliders from .fbx files with FBX Settings to Amazon Lumberyard. '
+description: ' Export PhysX colliders from .fbx files with FBX Settings to Open 3D Engine. '
 title: FBX Settings PhysX export
 ---
 # FBX Settings PhysX export {#fbx-physx-export}

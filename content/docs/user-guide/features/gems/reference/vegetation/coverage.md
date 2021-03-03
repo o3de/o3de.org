@@ -1,5 +1,5 @@
 ---
-description: ' Expand your vegetation to cover your level in Amazon Lumberyard. '
+description: ' Expand your vegetation to cover your level in Open 3D Engine. '
 title: Expanding Vegetation Coverage
 ---
 # Expanding Vegetation Coverage {#dynamic-vegetation-procedures-coverage}

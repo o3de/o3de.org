@@ -1,17 +1,17 @@
 ---
-description: ' Build a simple game to familiarize yourself with Amazon Lumberyard. '
-title: Get started with Amazon Lumberyard
+description: ' Build a simple game to familiarize yourself with Open 3D Engine. '
+title: Get started with Open 3D Engine
 ---
-# Get started with Amazon Lumberyard<a name="wg-getstarted"></a>
+# Get started with Open 3D Engine<a name="wg-getstarted"></a>
 
 
 |  |
 | --- |
 |  This **Get started** guide is a work in progress and is undergoing continual improvement\. Please leave feedback using the **Feedback** link at the top of the web page\. More tutorials are coming soon\!  |
 
-Often times, the best way to learn is *to do*\. Amazon Lumberyard was designed and created to help you make games, not read docs, so let's make your first game\!
+Often times, the best way to learn is *to do*\. Open 3D Engine was designed and created to help you make games, not read docs, so let's make your first game\!
 
-We've designed a very simple game that can be built in a few hours with Amazon Lumberyard\. As you work through the tutorials in order, you'll learn about the different features and workflows in Lumberyard, and build comfort with the Lumberyard Editor interface\.
+We've designed a very simple game that can be built in a few hours with Open 3D Engine\. As you work through the tutorials in order, you'll learn about the different features and workflows in Lumberyard, and build comfort with the Lumberyard Editor interface\.
 
 At the end, you'll have a simple packaged version of a game you can share\. It won't win any awards, but you'll understand the myriad features of Lumberyard, from slices and components to physics to scripting to input and audio support\.
 
@@ -20,10 +20,10 @@ If you don't want to read at all, check out [the video playlist for this tutoria
 
 ## Prerequisites<a name="getstarted-prereqs"></a>
 
-Have you installed and configured Amazon Lumberyard yet? Nope?
+Have you installed and configured Open 3D Engine yet? Nope?
 
 To get started "getting started", you will need the following on your local computer:
-+ Amazon Lumberyard 1\.27 or greater
++ Open 3D Engine 1\.27 or greater
 + Visual Studio 2017 \(version 15\.9\.27\+\) or 2019 \(version 16\.7\.3\+\), including the Community Edition
 + The **WelcomeGuideTutorials** game project\.
 + A basic understanding of the concepts used in developing 3D games
@@ -52,7 +52,7 @@ The asset package [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.clo
   +  `\Slices` - Contains the assembled slices \(prefabs\) for the chicken and other assets used in the tutorials\.
   +  `\Textures` - Contains the texture images used in the tutorials\.
 
-Open the ZIP file and place the folder and its contents under the \\dev directory in your Amazon Lumberyard installation path\. \(For example, C:\\Program Files\\Amazon Lumberyard\\dev\.\) We provided levels for each "chapter" of the larger tutorial series, so you can just pick a chapter you're interested in, load the *final* level for the preceding chapter, and start there\. Or, you can start from chapter 1 and build each level on your own\. Your time; your call\!
+Open the ZIP file and place the folder and its contents under the \\dev directory in your Open 3D Engine installation path\. \(For example, C:\\Program Files\\Open 3D Engine\\dev\.\) We provided levels for each "chapter" of the larger tutorial series, so you can just pick a chapter you're interested in, load the *final* level for the preceding chapter, and start there\. Or, you can start from chapter 1 and build each level on your own\. Your time; your call\!
 
 ## About the tutorial game<a name="about-the-tutorial-game"></a>
 
@@ -63,7 +63,7 @@ In this series of tutorials, you'll develop a game we called "Flyin' the Coop"\.
 ## Chapters<a name="chapters"></a>
 
 
-**Get started with Amazon Lumberyard tutorial chapters**
+**Get started with Open 3D Engine tutorial chapters**
 
 | Chapter | Description |
 | --- | --- |

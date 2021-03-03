@@ -1,5 +1,5 @@
 ---
-description: ' Configure debugging for the PhysX system in Amazon Lumberyard. '
+description: ' Configure debugging for the PhysX system in Open 3D Engine. '
 title: Debugger Configuration
 ---
 # Debugger Configuration {#physx-configuration-debugger}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn which entity parameters that Amazon Lumberyard supports in the Scripted
+description: ' Learn which entity parameters that Open 3D Engine supports in the Scripted
   Entity Tweener system. '
 title: Tweener Supported Components
 ---

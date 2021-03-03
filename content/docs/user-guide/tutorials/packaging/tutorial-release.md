@@ -1,5 +1,5 @@
 ---
-description: ' Bundle assets and release your Amazon Lumberyard project. '
+description: ' Bundle assets and release your Open 3D Engine project. '
 title: Build and bundle assets for release in Lumberyard
 ---
 # Build and bundle assets for release in Lumberyard {#asset-bundler-tutorial-release}
@@ -15,13 +15,13 @@ title: Build and bundle assets for release in Lumberyard
 ## Prerequisites {#asset-bundler-tutorial-release-prerequisites}
 
 To complete the procedures in this tutorial, you need the following:
-+ Amazon Lumberyard\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
++ Open 3D Engine\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/features/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
 ## Configure Lumberyard to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
 
-1. Open the Amazon Lumberyard Project Configurator\.
+1. Open the Open 3D Engine Project Configurator\.
 
 1. Select **Starter Game** and then select **Set as default** in the upper\-right corner of the Project Configurator screen\.
 ![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/user-guide/assetbundler/asset-bundler-project-configurator-1.25.png)
@@ -190,4 +190,4 @@ Now that you've learned the basics of bundling assets for release, go on to furt
 + Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)\.
 + Explore the asset bundler functionality\. See [Lumberyard Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
 + Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md)
-+ To ask questions about the Asset Bundler and get support, see [the Amazon Lumberyard forums](https://forums.awsgametech.com/)\.
++ To ask questions about the Asset Bundler and get support, see [the Open 3D Engine forums](https://forums.awsgametech.com/)\.

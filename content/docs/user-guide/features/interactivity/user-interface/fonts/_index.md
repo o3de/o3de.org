@@ -1,5 +1,5 @@
 ---
-description: ' Add new fonts to Amazon Lumberyard''s UI Editor by saving the font
+description: ' Add new fonts to Open 3D Engine''s UI Editor by saving the font
   asset to your game project and creating a font XML file that describes the asset. '
 title: Implementing New Fonts
 ---

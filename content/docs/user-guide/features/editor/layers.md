@@ -1,5 +1,5 @@
 ---
-description: ' Manage your entities with the Entity Outliner in Amazon Lumberyard. '
+description: ' Manage your entities with the Entity Outliner in Open 3D Engine. '
 title: Working with Layers
 ---
 # Working with Layers {#component-entity-outliner-layers}

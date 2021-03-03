@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic destruction simulations in Amazon Lumberyard with NVIDIA Blast. '
+description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
 title: Simulated destruction with NVIDIA Blast
 ---
 # Simulated destruction with NVIDIA Blast {#nvidia-blast-intro}
@@ -11,7 +11,7 @@ title: Simulated destruction with NVIDIA Blast
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
- With **NVIDIA Blast** in Amazon Lumberyard, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
+ With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/features/interactivity/physics/nvidia-blast/_index.md)\.
 

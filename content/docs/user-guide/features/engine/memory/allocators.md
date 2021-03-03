@@ -1,5 +1,5 @@
 ---
-description: ' Allocate and track memory in Amazon Lumberyard. '
+description: ' Allocate and track memory in Open 3D Engine. '
 title: Using Memory Allocators in Lumberyard
 ---
 # Using Memory Allocators in Lumberyard {#memory-allocators}

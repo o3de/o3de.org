@@ -1,10 +1,10 @@
 ---
-description: ' The Amazon Lumberyard Asset Bundler is a tool that you use to package and
+description: ' The Open 3D Engine Asset Bundler is a tool that you use to package and
   deploy the actual assets that are used in your game. This tool also provides timelier
   and more efficient content updates and patches. '
-title: What is the Amazon Lumberyard Asset Bundler?
+title: What is the Open 3D Engine Asset Bundler?
 ---
-# What is the Amazon Lumberyard Asset Bundler? {#asset-bundler-overview}
+# What is the Open 3D Engine Asset Bundler? {#asset-bundler-overview}
 
 The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of specific file formats generated and used by the tool\.
 

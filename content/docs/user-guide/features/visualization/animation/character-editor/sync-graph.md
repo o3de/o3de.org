@@ -1,6 +1,6 @@
 ---
 description: ' Use synchronized animation graphs to synchronize animation between
-  actors in Amazon Lumberyard. '
+  actors in Open 3D Engine. '
 title: 'Synchronizing Animation Graphs: Example'
 ---
 # Synchronizing Animation Graphs: Example {#char-animation-editor-sync-graph}

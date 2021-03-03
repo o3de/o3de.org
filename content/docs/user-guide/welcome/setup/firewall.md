@@ -1,5 +1,5 @@
 ---
-description: ' Enable a LAN firewall to protect your Amazon Lumberyard environment '
+description: ' Enable a LAN firewall to protect your Open 3D Engine environment '
 title: Enabling a Firewall
 ---
 # Enabling a Firewall {#setting-up-firewall}

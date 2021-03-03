@@ -1,6 +1,6 @@
 ---
 description: ' Create a sphere that shoots projectiles at a target with Script Canvas,
-  Amazon Lumberyard''s visual scripting system. '
+  Open 3D Engine''s visual scripting system. '
 title: 'Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting
   Collisions'
 ---

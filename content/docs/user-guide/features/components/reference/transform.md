@@ -1,6 +1,6 @@
 ---
 description: ' Use the Transform component to move, rotate, and scale an entity in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Transform
 ---
 # Transform {#component-transform}

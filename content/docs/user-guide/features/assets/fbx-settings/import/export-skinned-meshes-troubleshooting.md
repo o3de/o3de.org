@@ -1,5 +1,5 @@
 ---
-description: ' You can troubleshoot your skinned meshes for Amazon Lumberyard. '
+description: ' You can troubleshoot your skinned meshes for Open 3D Engine. '
 title: Troubleshooting Skinned Meshes
 ---
 # Troubleshooting Skinned Meshes {#char-fbx-importer-export-skinned-meshes-troubleshooting}

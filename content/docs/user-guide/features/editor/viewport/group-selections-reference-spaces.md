@@ -1,5 +1,5 @@
 ---
-description: ' Use group selection and reference spaces in Amazon Lumberyard. '
+description: ' Use group selection and reference spaces in Open 3D Engine. '
 title: Using Group Selections and Reference Spaces
 ---
 # Using Group Selections and Reference Spaces {#group-selections-reference-spaces}

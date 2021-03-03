@@ -1,5 +1,5 @@
 ---
-description: ' Create a gem for Amazon Lumberyard. '
+description: ' Create a gem for Open 3D Engine. '
 title: Creating a Gem
 ---
 # Creating a Gem {#gems-system-gems-creating}

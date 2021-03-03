@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for containers in Amazon Lumberyard. '
+description: ' Learn best practices for containers in Open 3D Engine. '
 title: Use AzCore Standard Containers
 ---
 # Use AzCore Standard Containers {#cpp-best-practices-lumberyard-use-azcore-standard-containers}

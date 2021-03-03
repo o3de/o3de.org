@@ -1,6 +1,6 @@
 ---
 description: ' Configure the Asset Pipeline to customize the processing of assets
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Configuring the Asset Pipeline
 ---
 # Configuring the Asset Pipeline {#asset-pipeline-configuring}

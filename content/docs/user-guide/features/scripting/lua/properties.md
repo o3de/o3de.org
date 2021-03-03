@@ -1,6 +1,6 @@
 ---
 description: ' Specify the properties of a Lua script component that appear in Lumberyard Editor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Properties Table
 ---
 # Properties Table {#lua-scripting-ces-properties}

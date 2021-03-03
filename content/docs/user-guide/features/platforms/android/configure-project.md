@@ -1,11 +1,11 @@
 ---
-description: ' Configure your Amazon Lumberyard project to compile assets for Android and
+description: ' Configure your Open 3D Engine project to compile assets for Android and
   correctly declare which device resources it uses. '
 title: Configure Lumberyard projects for Android
 ---
 # Configure Lumberyard projects for Android {#android-configure-project}
 
- In addition to the [system\-wide configuration requirements](/docs/user-guide/features/platforms/android/setting-up-environment.md) to build for Android, Amazon Lumberyard requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\.
+ In addition to the [system\-wide configuration requirements](/docs/user-guide/features/platforms/android/setting-up-environment.md) to build for Android, Open 3D Engine requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\.
 
  This section covers the basics of configuring your project so that you can work with Android\. For all of the available settings, see [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)\.
 

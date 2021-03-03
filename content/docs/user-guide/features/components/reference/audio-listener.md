@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Listener component to add a virtual microphone in the
-  Amazon Lumberyard environment. '
+  Open 3D Engine environment. '
 title: Audio Listener
 ---
 # Audio Listener {#component-audio-listener}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the Jinja2 templates that AZ Code Generator uses to generate
-  code in Amazon Lumberyard. '
+  code in Open 3D Engine. '
 title: Code Generation Templates
 ---
 # Code Generation Templates {#az-code-gen-templates}

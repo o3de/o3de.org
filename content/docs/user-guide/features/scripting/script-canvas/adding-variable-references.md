@@ -1,5 +1,5 @@
 ---
-description: ' Create variable references on the data pins of Amazon Lumberyard Script Canvas
+description: ' Create variable references on the data pins of Open 3D Engine Script Canvas
   nodes as a shortcut to getting or setting a variable''s value. '
 title: Adding Variable References in Script Canvas Nodes
 ---

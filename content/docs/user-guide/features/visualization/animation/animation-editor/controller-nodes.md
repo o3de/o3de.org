@@ -1,5 +1,5 @@
 ---
-description: ' See the following controller nodes in Amazon Lumberyard. '
+description: ' See the following controller nodes in Open 3D Engine. '
 title: Controller Nodes
 ---
 # Controller Nodes {#animation-editor-controller-nodes}

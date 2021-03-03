@@ -1,6 +1,6 @@
 ---
 description: ' Learn about the relationship between Script Canvas and the behavior
-  context in Amazon Lumberyard. '
+  context in Open 3D Engine. '
 title: 'Script Canvas and the Behavior Context'
 ---
 # Script Canvas and the Behavior Context {#script-canvas-behavior-context}
@@ -13,7 +13,7 @@ title: 'Script Canvas and the Behavior Context'
 
 You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context\. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/features/engine/components/_index.md) and [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md)\.
 
-The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Amazon Lumberyard\.
+The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine\.
 
 ![\[Script Canvas code architecture\]](/images/user-guide/scripting/script-canvas/script-canvas-code-architecture-1.png)
 

@@ -1,6 +1,6 @@
 ---
 description: ' Use Scripted Entity Tweener''s timeline abilities to chain animations
-  together and exert fine control over them in Amazon Lumberyard. '
+  together and exert fine control over them in Open 3D Engine. '
 title: Tweener Timeline
 ---
 # Tweener Timeline {#ui-animating-tweener-timeline}

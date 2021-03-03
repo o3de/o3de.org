@@ -1,5 +1,5 @@
 ---
-description: ' Use the Script Canvas gem to enable the use of Amazon Lumberyard''s Script Canvas
+description: ' Use the Script Canvas gem to enable the use of Open 3D Engine''s Script Canvas
   editor. '
 title: 'Script Canvas Gem'
 ---

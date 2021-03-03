@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard to compile a dedicated Linux server for a multiplayer
+description: ' Use Open 3D Engine to compile a dedicated Linux server for a multiplayer
   game, prepare your server for game hosting, and integrate with AGS. '
 title: Creating Lumberyard Executables for Linux
 ---

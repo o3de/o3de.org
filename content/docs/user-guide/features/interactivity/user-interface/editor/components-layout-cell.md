@@ -1,6 +1,6 @@
 ---
 description: ' Add a layout cell component to a child of the layout row or column
-  in the Amazon Lumberyard UI Editor to specify the child''s minimum size, target
+  in the Open 3D Engine UI Editor to specify the child''s minimum size, target
   size, or extra ratio size. '
 title: LayoutCell
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Simple State component in Amazon Lumberyard to provide a simple state
+description: ' Use the Simple State component in Open 3D Engine to provide a simple state
   machine. '
 title: Simple State
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Use multiple skin attachments for an Actor component in Amazon Lumberyard to
+description: ' Use multiple skin attachments for an Actor component in Open 3D Engine to
   create interchangeable parts of your character, such as a hat and belt. '
 title: Using Multiple Skin Attachments for an Actor
 ---
@@ -25,7 +25,7 @@ Whether you use a single FBX file or multiple FBX files, you create an actor for
 
 For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
 
-To download the assets used in the following sections, see [Amazon Lumberyard Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the Lumberyard characters file\.
+To download the assets used in the following sections, see [Open 3D Engine Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the Lumberyard characters file\.
 
 ## Using a Single FBX File {#component-actor-single-fbx}
 

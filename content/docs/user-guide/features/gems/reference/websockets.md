@@ -1,6 +1,6 @@
 ---
 description: ' Use the Websockets Gem to add support for the WebSocket protocol to
-  your Amazon Lumberyard project. '
+  your Open 3D Engine project. '
 title: Websockets Gem
 ---
 # Websockets Gem {#gem-websockets}

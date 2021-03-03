@@ -1,6 +1,6 @@
 ---
 description: ' Customize Lumberyard Editor by docking windows and toolbars, customizing
-  toolbars and menus, and updating editor settings and global preferences for Amazon Lumberyard. '
+  toolbars and menus, and updating editor settings and global preferences for Open 3D Engine. '
 title: Customizing Lumberyard Editor
 ---
 # Customizing Lumberyard Editor {#lumberyard-editor-customizing}

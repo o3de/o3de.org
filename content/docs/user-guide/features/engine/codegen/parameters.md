@@ -1,5 +1,5 @@
 ---
-description: ' Learn the parameters for Amazon Lumberyard''s AZ Code Generator. '
+description: ' Learn the parameters for Open 3D Engine''s AZ Code Generator. '
 title: AZ Code Generator Parameters
 ---
 # AZ Code Generator Parameters {#az-code-gen-parameters}

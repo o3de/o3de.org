@@ -1,6 +1,6 @@
 ---
 description: ' Use the serialization context to provide persistence for C++ objects
-  or Lumberyard types in Amazon Lumberyard. '
+  or Lumberyard types in Open 3D Engine. '
 title: Serialization Context
 ---
 # Serialization Context {#component-entity-system-reflection-serialization-context}

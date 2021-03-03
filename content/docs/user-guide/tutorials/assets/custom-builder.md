@@ -1,6 +1,6 @@
 ---
 description: ' Create an asset builder to process your custom asset type source files
-  into game-ready files in Amazon Lumberyard. '
+  into game-ready files in Open 3D Engine. '
 title: Creating a Custom Asset Builder
 ---
 # Creating a Custom Asset Builder {#asset-builder-custom}

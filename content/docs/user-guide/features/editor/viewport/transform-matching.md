@@ -1,5 +1,5 @@
 ---
-description: ' Match the transform properties for entities in Amazon Lumberyard. '
+description: ' Match the transform properties for entities in Open 3D Engine. '
 title: Matching the Transform
 ---
 # Matching the Transform {#transform-matching}

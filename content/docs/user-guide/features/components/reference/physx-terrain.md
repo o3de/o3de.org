@@ -1,5 +1,5 @@
 ---
-description: ' Use the PhysX Terrain component to create a physics collider in Amazon Lumberyard. '
+description: ' Use the PhysX Terrain component to create a physics collider in Open 3D Engine. '
 title: PhysX Terrain
 ---
 # PhysX Terrain {#component-physx-terrain}

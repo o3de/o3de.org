@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to align Script Canvas nodes in Amazon Lumberyard. '
+description: ' Learn how to align Script Canvas nodes in Open 3D Engine. '
 title: Aligning Nodes
 ---
 # Aligning Nodes {#script-canvas-working-with-nodes-aligning}

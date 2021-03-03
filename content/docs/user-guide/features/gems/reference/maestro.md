@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s Maestro gem to create cinematic sequences for your
+description: ' Use Open 3D Engine''s Maestro gem to create cinematic sequences for your
   games. '
 title: Maestro Gem
 ---

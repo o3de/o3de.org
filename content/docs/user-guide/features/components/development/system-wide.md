@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create system components in Amazon Lumberyard. '
+description: ' Learn how to create system components in Open 3D Engine. '
 title: Creating System Components
 ---
 # Creating System Components {#component-entity-system-pg-creating-system-components}

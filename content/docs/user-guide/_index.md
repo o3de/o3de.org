@@ -1,20 +1,20 @@
 ---
-description: ' Amazon Lumberyard is a free, cross-platform, cloud-connected game engine that
+description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
 title: What is Lumberyard?
 ---
 # What is Lumberyard? {#lumberyard-intro}
 
-Amazon Lumberyard is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With Lumberyard, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
+Open 3D Engine is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With Lumberyard, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
 
 Lumberyard offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
 
 Interested? Want to get started?
 + [Download the latest version of the Lumberyard beta](https://aws.amazon.com/lumberyard/downloads/)
 + [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
-+ [Sign up for and participate in the Amazon Lumberyard forums](https://forums.awsgametech.com/)
++ [Sign up for and participate in the Open 3D Engine forums](https://forums.awsgametech.com/)
 
-![\[Learn more about Lumberyard's systems and features in the Amazon Lumberyard User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
+![\[Learn more about Lumberyard's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
 
 Image from Starter Game\. For more sample projects and levels, see [Using Lumberyard sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 

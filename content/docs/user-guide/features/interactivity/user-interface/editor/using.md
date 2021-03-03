@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s UI Editor to create and customize various
+description: ' Use Open 3D Engine''s UI Editor to create and customize various
   user interface elements and components such as menus, buttons, and heads-up displays. '
 title: Using the UI Editor
 ---

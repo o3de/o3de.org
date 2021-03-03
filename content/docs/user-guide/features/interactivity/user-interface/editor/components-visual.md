@@ -1,6 +1,6 @@
 ---
 description: ' Use visual components (image or text) to give an element color and
-  texture, or text in Amazon Lumberyard''s UI Editor . '
+  texture, or text in Open 3D Engine''s UI Editor . '
 title: Visual Components
 ---
 # Visual Components {#ui-editor-components-visual}

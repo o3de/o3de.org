@@ -1,5 +1,5 @@
 ---
-description: ' Configure global settings for the PhysX system in Amazon Lumberyard. '
+description: ' Configure global settings for the PhysX system in Open 3D Engine. '
 title: Global Configuration
 ---
 # Global Configuration {#physx-configuration-global}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn about dynamic vegetation concepts and ideas in Amazon Lumberyard. '
+description: ' Learn about dynamic vegetation concepts and ideas in Open 3D Engine. '
 title: Dynamic Vegetation Concepts
 ---
 # Dynamic Vegetation Concepts {#dynamic-vegetation-concepts}

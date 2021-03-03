@@ -1,6 +1,6 @@
 ---
 description: ' Use texture atlases on UI canvases for quicker rendering of textures
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Texture Atlases
 ---
 # Using Texture Atlases {#ui-editor-texture-atlases}

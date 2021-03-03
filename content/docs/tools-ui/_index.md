@@ -1,4 +1,4 @@
-# Amazon Lumberyard UI Extensions Guide
+# Open 3D Engine UI Extensions Guide
 
 -----
 *****Copyright &copy;  *****

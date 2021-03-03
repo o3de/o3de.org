@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to blend poses using blend nodes in the Amazon Lumberyard Animation Editor
+description: ' Learn how to blend poses using blend nodes in the Open 3D Engine Animation Editor
   . '
 title: Blending Poses with Blend Nodes
 ---

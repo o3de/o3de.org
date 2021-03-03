@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s Scene Processing gem to specify the default settings
+description: ' Use Open 3D Engine''s Scene Processing gem to specify the default settings
   for processing scene files like .fbx for your games. '
 title: Scene Processing Gem
 ---

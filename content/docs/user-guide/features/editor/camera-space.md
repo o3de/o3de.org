@@ -1,5 +1,5 @@
 ---
-description: ' Manage the camera space for viewing your entities in Amazon Lumberyard. '
+description: ' Manage the camera space for viewing your entities in Open 3D Engine. '
 title: Using the Camera Space
 ---
 # Using the Camera Space {#camera-space}

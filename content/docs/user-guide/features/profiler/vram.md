@@ -1,5 +1,5 @@
 ---
-description: ' Use the VRAM profiler in Amazon Lumberyard to determine which resources are
+description: ' Use the VRAM profiler in Open 3D Engine to determine which resources are
   contributing most to runtime video memory usage in your game. '
 title: Using Profiler for VRAM
 ---

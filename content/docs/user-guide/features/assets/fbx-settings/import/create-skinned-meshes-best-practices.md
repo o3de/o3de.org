@@ -1,6 +1,6 @@
 ---
 description: ' See the best practices for working with skinned meshes actors for the
-  Animation Editor in Amazon Lumberyard. '
+  Animation Editor in Open 3D Engine. '
 title: Creating Skinned Meshes for Actors
 ---
 # Creating Skinned Meshes for Actors {#char-fbx-importer-create-skinned-meshes-best-practices}

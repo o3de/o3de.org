@@ -1,6 +1,6 @@
 ---
 description: ' Reference external anim graphs to streamline node-based animation in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Referencing External Anim Graphs
 ---
 # Referencing External Anim Graphs {#referencing-character-animation-editor-anim-graph}

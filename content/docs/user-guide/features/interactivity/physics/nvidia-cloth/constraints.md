@@ -1,5 +1,5 @@
 ---
-description: ' Motion constraints for NVIDIA Cloth in Amazon Lumberyard. '
+description: ' Motion constraints for NVIDIA Cloth in Open 3D Engine. '
 title: Cloth simulation constraints
 ---
 # Cloth simulation constraints {#nvidia-cloth-constraints}
@@ -11,7 +11,7 @@ title: Cloth simulation constraints
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Constraints limit the movement of cloth particles to prevent mesh penetration and create more predictable results from cloth simulation\. Amazon Lumberyard has two types of cloth constraints: **Motion constraints** and **Backstop**\.
+Constraints limit the movement of cloth particles to prevent mesh penetration and create more predictable results from cloth simulation\. Open 3D Engine has two types of cloth constraints: **Motion constraints** and **Backstop**\.
 
 **Motion constraints** \- Constrains a simulated cloth particle within an area defined by a sphere\. The sphere's position is relative to the corresponding unsimulated vertex position\.
 

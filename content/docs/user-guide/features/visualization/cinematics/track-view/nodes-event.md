@@ -1,6 +1,6 @@
 ---
 description: ' Use the event node to trigger and send values to Script Canvas in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Event Node
 ---
 # Event Node {#cinematics-track-view-nodes-event}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Polygon Prism Shape component to define a volume in Amazon Lumberyard. '
+description: ' Use the Polygon Prism Shape component to define a volume in Open 3D Engine. '
 title: Polygon Prism Shape
 ---
 # Polygon Prism Shape {#component-polygon-prism}

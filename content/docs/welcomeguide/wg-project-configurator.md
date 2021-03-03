@@ -1,11 +1,11 @@
 ---
-description: ' Learn about the Amazon Lumberyard Project Configurator and basic project
+description: ' Learn about the Open 3D Engine Project Configurator and basic project
   management. '
 title: Manage Lumberyard projects with Project Configurator
 ---
 # Manage Lumberyard projects with Project Configurator<a name="wg-project-configurator"></a>
 
-Project Configurator configures and manages your Lumberyard projects\. If you're continuing from [Configuring your Amazon Lumberyard environment with Setup Assistant](wg-setup-assistant.md), Project Configurator should be running on your desktop\. Project Configurator can also be launched from the Start Menu or desktop shortcuts\.
+Project Configurator configures and manages your Lumberyard projects\. If you're continuing from [Configuring your Open 3D Engine environment with Setup Assistant](wg-setup-assistant.md), Project Configurator should be running on your desktop\. Project Configurator can also be launched from the Start Menu or desktop shortcuts\.
 
 With Project Configurator, you can:
 + Set a default project\.
