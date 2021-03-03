@@ -1,5 +1,5 @@
 # Structs
-Structs are a user-defined type and are used in a similar way as classes. They are defined by the keyword `struct`. Unlike classes, structs must be POD ([plain old data](http://wiki.c2.com/?PlainOldData)); they do not contain a constructor, destructor, or virtual member functions. Due to these limitations, structs offer better performance. One common use case for structs in AZSL is to group shader inputs and outputs. 
+Structs are a user-defined type and are used in a similar way as classes. They are defined by the keyword `struct`. Unlike classes, structs must be POD ([plain old data); they do not contain a constructor, destructor, or virtual member functions. Due to these limitations, structs offer better performance. One common use case for structs in AZSL is to group shader inputs and outputs. 
 
 <!-- [NOTE TO DEVS: Do you have another concrete example for when structs are useful?] -->
 
