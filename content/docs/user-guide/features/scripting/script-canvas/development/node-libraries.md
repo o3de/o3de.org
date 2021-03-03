@@ -1,5 +1,5 @@
 ---
-description: ' Create your custom Script Canvas node libraries in Amazon Lumberyard. '
+description: ' Create your custom Script Canvas node libraries in Open 3D Engine. '
 title: Node Libraries
 ---
 # Node Libraries {#script-canvas-custom-nodes-node-libraries}

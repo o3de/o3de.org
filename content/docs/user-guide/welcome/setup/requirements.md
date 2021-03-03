@@ -1,6 +1,6 @@
 ---
 description: ' Learn more about the hardware, operating system, and software requirements
-  for installing Amazon Lumberyard. '
+  for installing Open 3D Engine. '
 title: System requirements
 ---
 # System requirements {#setting-up-system-requirements}

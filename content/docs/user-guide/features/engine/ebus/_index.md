@@ -1,6 +1,6 @@
 ---
 description: ' Use event buses to dispatch messages safely and efficiently in your
-  gaming application for Amazon Lumberyard. '
+  gaming application for Open 3D Engine. '
 title: Working with the Event Bus (EBus) system
 ---
 # Working with the Event Bus \(EBus\) system {#ebus-intro}
@@ -13,7 +13,7 @@ For examples of EBus usage, see [Usage and Examples](/docs/user-guide/samples/eb
 
 For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/features/engine/ebus/design.md)\.
 
-For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## How Components Use EBuses {#event-bus-intro-how-components-use-ebuses}
 

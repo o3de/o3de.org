@@ -1,6 +1,6 @@
 ---
 description: ' Add per vertex properties to fine tune your NVIDIA Cloth simulations
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Per vertex properties for cloth
 ---
 # Per vertex properties for cloth {#nvidia-cloth-vertex-data}

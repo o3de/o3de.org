@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to control session workflow when using the Amazon Games Services Gem
-  for Amazon Lumberyard. '
+  for Open 3D Engine. '
 title: 'AGS Gem'
 ---
 # GameLift Gem {#gems-system-gem-gamelift}

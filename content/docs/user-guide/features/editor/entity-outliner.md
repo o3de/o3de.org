@@ -1,5 +1,5 @@
 ---
-description: ' Manage your entities with the Entity Outliner in Amazon Lumberyard. '
+description: ' Manage your entities with the Entity Outliner in Open 3D Engine. '
 title: 'Entity Outliner'
 ---
 # Entity Outliner {#component-entity-outliner}

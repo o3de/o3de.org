@@ -1,5 +1,5 @@
 ---
-description: ' Use the toolbar in Amazon Lumberyard''s UI Editor to manipulate your
+description: ' Use the toolbar in Open 3D Engine''s UI Editor to manipulate your
   game UI elements. '
 title: Toolbar
 ---

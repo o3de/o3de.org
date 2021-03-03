@@ -1,5 +1,5 @@
 ---
-description: ' Use Asset Processor in Amazon Lumberyard to detect and process new or modified
+description: ' Use Asset Processor in Open 3D Engine to detect and process new or modified
   asset files. '
 title: Using Asset Processor
 ---

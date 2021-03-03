@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to create trigger areas to open and close doors using Script Canvas,
-  Amazon Lumberyard''s visual scripting system. '
+  Open 3D Engine''s visual scripting system. '
 title: 'Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and
   Variables'
 ---

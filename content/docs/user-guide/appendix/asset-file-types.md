@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the asset data file types that Amazon Lumberyard supports. '
+description: ' Learn about the asset data file types that Open 3D Engine supports. '
 title: 'Lumberyard Asset File Types'
 ---
 # Lumberyard Asset File Types {#lumberyard-file-types}

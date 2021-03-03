@@ -1,5 +1,5 @@
 ---
-description: " Learn how to work with Amazon Lumberyard\u2019s component entity system\
+description: " Learn how to work with Open 3D Engine\u2019s component entity system\
   \ and sketch 3D objects with White Box. "
 title: 'Tutorial Two: Create an entity with White Box'
 ---

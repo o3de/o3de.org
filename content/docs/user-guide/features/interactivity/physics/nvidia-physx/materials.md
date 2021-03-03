@@ -1,6 +1,6 @@
 ---
 description: ' Use Physics materials to customize how an object reacts when it hits
-  a surface in your Amazon Lumberyard project. '
+  a surface in your Open 3D Engine project. '
 title: Physics materials
 ---
 # Physics materials {#physx-materials}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the ChatPlay Gem to trigger events based on Twitch chat activity
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: ChatPlay Gem
 ---
 # ChatPlay Gem {#gems-system-gem-chatplay}

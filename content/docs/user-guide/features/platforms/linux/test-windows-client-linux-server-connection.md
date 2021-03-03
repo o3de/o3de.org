@@ -1,6 +1,6 @@
 ---
 description: ' Test the connection between the Windows client and the Linux server
-  for Amazon Lumberyard. '
+  for Open 3D Engine. '
 title: Testing the Windows Client to Linux Server Connection
 ---
 # Testing the Windows Client to Linux Server Connection {#linux-test-windows-client-linux-server-connection}

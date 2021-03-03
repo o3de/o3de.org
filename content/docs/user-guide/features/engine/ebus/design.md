@@ -1,5 +1,5 @@
 ---
-description: ' Learn detailed information about EBuses in Amazon Lumberyard. '
+description: ' Learn detailed information about EBuses in Open 3D Engine. '
 title: Event Buses in Depth
 ---
 # Event Buses in Depth {#ebus-in-depth}

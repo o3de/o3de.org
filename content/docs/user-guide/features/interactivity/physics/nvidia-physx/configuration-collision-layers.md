@@ -1,5 +1,5 @@
 ---
-description: ' Create collision layers for the PhysX system in Amazon Lumberyard. '
+description: ' Create collision layers for the PhysX system in Open 3D Engine. '
 title: Collision Layers
 ---
 # Collision Layers {#physx-configuration-collision-layers}

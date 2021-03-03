@@ -1,10 +1,10 @@
 ---
-description: ' Set up your Amazon Lumberyard environment to build your project for Android. '
+description: ' Set up your Open 3D Engine environment to build your project for Android. '
 title: Set up your environment to develop for Android with Lumberyard
 ---
 # Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}
 
- This section walks you through the steps needed to get your development environment and Amazon Lumberyard projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
+ This section walks you through the steps needed to get your development environment and Open 3D Engine projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure Lumberyard projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
 
 **Topics**
 - [Set up your environment to develop for Android with Lumberyard {#android-setting-up-environment}](#set-up-your-environment-to-develop-for-android-with-lumberyard)

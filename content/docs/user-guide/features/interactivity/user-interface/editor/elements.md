@@ -1,5 +1,5 @@
 ---
-description: ' Use the UI Editor in Amazon Lumberyard to manage UI elements like
+description: ' Use the UI Editor in Open 3D Engine to manage UI elements like
   strings, text input fields, images, buttons or containers. '
 title: UI Elements
 ---

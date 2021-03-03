@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s AZ Code Generator to generate source code (such as
+description: ' Use Open 3D Engine''s AZ Code Generator to generate source code (such as
   boilerplate code) from specially tagged source code. '
 title: Automating boilerplate with AZ Code Generator
 ---

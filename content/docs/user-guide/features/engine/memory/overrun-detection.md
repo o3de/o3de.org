@@ -1,5 +1,5 @@
 ---
-description: ' Use overrun detection to detect illegal memory writes in Amazon Lumberyard. '
+description: ' Use overrun detection to detect illegal memory writes in Open 3D Engine. '
 title: Overrun Detection
 ---
 # Overrun Detection {#memory-management-overrun-detection}

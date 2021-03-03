@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lua Editor to author, debug, and edit Lua scripts in Amazon Lumberyard. '
+description: ' Use the Lua Editor to author, debug, and edit Lua scripts in Open 3D Engine. '
 title: Lua Editor
 ---
 # Lua Editor {#lua-editor-debugger}

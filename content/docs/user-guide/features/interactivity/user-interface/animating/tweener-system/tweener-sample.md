@@ -1,5 +1,5 @@
 ---
-description: ' Open the Scripted Entity Tweener sample level in Amazon Lumberyard to see tweeners
+description: ' Open the Scripted Entity Tweener sample level in Open 3D Engine to see tweeners
   in action. '
 title: Tweener Sample Level
 ---

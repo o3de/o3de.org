@@ -1,5 +1,5 @@
 ---
-description: ' Amazon Lumberyard FBX Settings Meshes tab export properties and modifiers. '
+description: ' Open 3D Engine FBX Settings Meshes tab export properties and modifiers. '
 title: FBX Settings Meshes tab
 ---
 # FBX Settings Meshes tab {#fbx-settings-meshes-tab}

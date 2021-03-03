@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Blast gem to simulate destruction in your Amazon Lumberyard
+description: ' Use the NVIDIA Blast gem to simulate destruction in your Open 3D Engine
   project. '
 title: NVIDIA Blast gem
 ---
@@ -12,7 +12,7 @@ title: NVIDIA Blast gem
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fidelity destruction simulation in Amazon Lumberyard\.
+The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fidelity destruction simulation in Open 3D Engine\.
 
 **Note**
 NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.

@@ -25,7 +25,7 @@ This tutorial requires completing [Build and bundle assets for release in Lumber
 + A bundled release of Starter Game located at `%USERPROFILE%\StarterGameRelease`
 + The `startergame_pc.assetlist` and `engine_pc.assetlist` asset list files used to generate the starter game asset bundles\.
 
-It's also useful to be familiar with the [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for this tutorial\.
+It's also useful to be familiar with the [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for this tutorial\.
 
 ## Create a second level {#asset-bundler-tutorial-multiple-bundles-create-a-second-level}
 
@@ -80,7 +80,7 @@ It's also useful to be familiar with the [Amazon Lumberyard Asset List Compariso
        --output dlc_level2.assetlist
    ```
 **Important**
- The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` - not the other way around\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for all of the details\.
+ The ordering of `--firstAssetFile` and `--secondAssetFile` here is required\. The compliment comparison works by taking content located in `secondAssetFile` which isn't referenced in `firstAssetFile` - not the other way around\. See [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for all of the details\.
 
 1. Get the *complement* of the assets between `engine_pc.assetlist` from the previous tutorial and l`dlc_level2_pc.assetlist`\. This removes engine\-specific content from the `level2` assets\.
 

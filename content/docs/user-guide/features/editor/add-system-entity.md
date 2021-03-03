@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use Amazon Lumberyard''s Project Configurator to configure the
+description: ' Learn how to use Open 3D Engine''s Project Configurator to configure the
   system entity. '
 title: Configuring System Entities
 ---

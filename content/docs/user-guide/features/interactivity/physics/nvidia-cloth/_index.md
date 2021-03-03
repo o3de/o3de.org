@@ -1,5 +1,5 @@
 ---
-description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Amazon Lumberyard
+description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Open 3D Engine
   project. '
 title: NVIDIA Cloth gem
 ---
@@ -12,7 +12,7 @@ title: NVIDIA Cloth gem
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Amazon Lumberyard\.
+Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Open 3D Engine\.
 
 For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
 

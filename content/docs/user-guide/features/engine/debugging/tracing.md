@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for debug tracing in Amazon Lumberyard. '
+description: ' Learn best practices for debug tracing in Open 3D Engine. '
 title: Tracing
 ---
 # Tracing {#cpp-best-practices-lumberyard-tracing}

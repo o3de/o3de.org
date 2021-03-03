@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to disconnect Script Canvas nodes in Amazon Lumberyard. '
+description: ' Learn how to disconnect Script Canvas nodes in Open 3D Engine. '
 title: Disconnecting Nodes
 ---
 # Disconnecting Nodes {#script-canvas-working-with-nodes-disconnecting}

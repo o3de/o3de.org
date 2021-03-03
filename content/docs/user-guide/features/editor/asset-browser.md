@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Asset Browser to quickly view and access your game
+description: ' Use the Open 3D Engine Asset Browser to quickly view and access your game
   project assets. '
 title: 'Asset Browser'
 ---

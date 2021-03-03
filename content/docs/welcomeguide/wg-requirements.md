@@ -1,8 +1,8 @@
 ---
-description: ' View the system requirements for Amazon Lumberyard. '
-title: Amazon Lumberyard system requirements
+description: ' View the system requirements for Open 3D Engine. '
+title: Open 3D Engine system requirements
 ---
-# Amazon Lumberyard system requirements<a name="wg-requirements"></a>
+# Open 3D Engine system requirements<a name="wg-requirements"></a>
 
 Lumberyard has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\.
 

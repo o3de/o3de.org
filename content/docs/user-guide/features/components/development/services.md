@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to define and use component services in Amazon Lumberyard. '
+description: ' Learn how to define and use component services in Open 3D Engine. '
 title: Defining and Using Component Services
 ---
 # Defining and Using Component Services {#component-entity-system-pg-defining-using-component-services}

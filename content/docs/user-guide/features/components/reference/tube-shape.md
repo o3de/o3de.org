@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Tube Shape component to create tube-like volumes. '
+description: ' Use the Open 3D Engine Tube Shape component to create tube-like volumes. '
 title: Tube Shape
 ---
 # Tube Shape {#component-tube-shape}

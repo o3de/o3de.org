@@ -1,6 +1,6 @@
 ---
 description: ' Enable the Visibility gem to add the Vis Area component to your game
-  project in Amazon Lumberyard. '
+  project in Open 3D Engine. '
 title: Visibility
 ---
 # Visibility {#gems-system-gem-visibility}

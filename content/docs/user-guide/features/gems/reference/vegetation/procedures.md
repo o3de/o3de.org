@@ -1,6 +1,6 @@
 ---
 description: ' Learn the basic procedures to create realistic-looking dynamic vegetation
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Dynamic Vegetation Procedures
 ---
 # Dynamic Vegetation Procedures {#dynamic-vegetation-procedures}

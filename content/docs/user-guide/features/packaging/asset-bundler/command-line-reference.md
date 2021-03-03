@@ -1,5 +1,5 @@
 ---
-description: ' Command reference for the Amazon Lumberyard Asset Bundler command-line tool
+description: ' Command reference for the Open 3D Engine Asset Bundler command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '
 title: 'Lumberyard Asset Bundler Command-Line Tool Reference'
@@ -31,7 +31,7 @@ title: 'Lumberyard Asset Bundler Command-Line Tool Reference'
   + [Options](#asset-bundler-command-line-reference-bundleseed-options)
   + [Examples](#asset-bundler-command-line-reference-bundleseed-examples)
 
- The Amazon Lumberyard Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`\. This tool manages seed lists, asset lists, comparisons, and asset bundles\. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor\. Before running the Asset Bundler, make sure that you:
+ The Open 3D Engine Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`\. This tool manages seed lists, asset lists, comparisons, and asset bundles\. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor\. Before running the Asset Bundler, make sure that you:
 +  Enable each platform assets should be bundled for\. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project\.
 + Run the Asset Processor to ensure that assets and their metadata are up to date\.
 
@@ -282,7 +282,7 @@ Bin64vc141\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist -
 
 ## Comparison rules \- `comparisonRules` {#asset-bundler-command-line-reference-comparisonrules}
 
-The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
+The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
 
 ### Options {#asset-bundler-command-line-reference-comparisonrules-options}
 
@@ -299,7 +299,7 @@ The `comparisonRules` command is used to generate comparison rules files\. Compa
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
+ For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
  The `intersectionCount` comparison type can't be combined with any other comparison type as part of a rule list\.
 *Type:* Multi\-value argument
 *Required:* Yes
@@ -335,7 +335,7 @@ Bin64vc141\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilt
 
 ## Comparisons \- `compare` {#asset-bundler-command-line-reference-compare}
 
- The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for details on comparison operations\.
+ The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md) for details on comparison operations\.
 
 ### Options {#asset-bundler-command-line-reference-compare-options}
 
@@ -353,7 +353,7 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
+ For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
  The `intersectionCount` comparison type can't be combined with any other comparison type\.
 *Type:* Multi\-value argument
 *Required:* Yes
@@ -381,7 +381,7 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 *Required:* No
 
 **\-\-output**
- The output files for the result of each performed comparison\. Output files can be a file, or a variable passed from another comparison\. Variables start with the `$` character\. For more about variables, see [Amazon Lumberyard Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
+ The output files for the result of each performed comparison\. Output files can be a file, or a variable passed from another comparison\. Variables start with the `$` character\. For more about variables, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
 *Type:* Multi\-value argument\. The number of parameters for the `--output` argument must match the number of parameters to the `--comparisonType` argument\.
 *Required:* No
 

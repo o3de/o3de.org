@@ -1,6 +1,6 @@
 ---
 description: ' Create scenes in a track view sequence in the <guilabel>Track View</guilabel> editor in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Populating a Scene
 ---
 # Populating a Scene {#cinematics-populating-a-scene}

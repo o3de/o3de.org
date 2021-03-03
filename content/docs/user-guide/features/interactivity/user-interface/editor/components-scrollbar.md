@@ -1,5 +1,5 @@
 ---
-description: ' Use a scroll bar component to add a scroll bar in the Amazon Lumberyard UI Editor. '
+description: ' Use a scroll bar component to add a scroll bar in the Open 3D Engine UI Editor. '
 title: ScrollBar
 ---
 # ScrollBar {#ui-editor-components-scrollbar}

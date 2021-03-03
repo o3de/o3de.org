@@ -1,5 +1,5 @@
 ---
-description: ' Follow these guidelines to generate art assets and tune Amazon Lumberyard performance
+description: ' Follow these guidelines to generate art assets and tune Open 3D Engine performance
   for mobile devices. '
 title: 'Lumberyard Performance Tuning Guidelines for Mobile Devices'
 ---

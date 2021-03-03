@@ -1,5 +1,5 @@
 ---
-description: ' Create an animation graph and simulate your PhysX ragdoll in the Amazon Lumberyard
+description: ' Create an animation graph and simulate your PhysX ragdoll in the Open 3D Engine
   Animation Editor . '
 title: Creating and Simulating a PhysX Ragdoll
 ---

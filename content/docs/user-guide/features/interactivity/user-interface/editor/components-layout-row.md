@@ -1,5 +1,5 @@
 ---
-description: ' Use a layout row component in the Amazon Lumberyard UI Editor to organize
+description: ' Use a layout row component in the Open 3D Engine UI Editor to organize
   child elements into a row. '
 title: LayoutRow
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Set up actor entities with multiple or a single FBX file in Amazon Lumberyard. '
+description: ' Set up actor entities with multiple or a single FBX file in Open 3D Engine. '
 title: Setting Up Actor Entities
 ---
 # Setting Up Actor Entities {#component-actor-component-entity-setup}

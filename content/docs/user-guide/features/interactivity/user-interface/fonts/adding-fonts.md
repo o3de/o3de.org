@@ -1,5 +1,5 @@
 ---
-description: Add new font assets to your Amazon Lumberyard game UI.
+description: Add new font assets to your Open 3D Engine game UI.
 title: Adding New Fonts
 ---
 # Adding New Fonts {#ui-fonts-adding-fonts}

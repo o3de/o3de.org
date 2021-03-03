@@ -1,5 +1,5 @@
 ---
-description: ' Learn more about the PhysX Rigid Body component in Amazon Lumberyard. '
+description: ' Learn more about the PhysX Rigid Body component in Open 3D Engine. '
 title: PhysX Rigid Body
 ---
 # PhysX Rigid Body {#component-physx-rigid-body-physics}

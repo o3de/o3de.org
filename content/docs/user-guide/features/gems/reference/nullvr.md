@@ -1,5 +1,5 @@
 ---
-description: ' Use the NullVR Gem in Amazon Lumberyard to run your level through the HMD Framework
+description: ' Use the NullVR Gem in Open 3D Engine to run your level through the HMD Framework
   without having a VR device connected. This gem is useful for VR graphics debugging. '
 title: NullVR Gem
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Export actors from .fbx files with FBX Settings to Amazon Lumberyard. '
+description: ' Export actors from .fbx files with FBX Settings to Open 3D Engine. '
 title: FBX Settings actor export
 ---
 # FBX Settings actor export {#fbx-actor-export}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn the functions of each area of the Asset Processor interface
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: 'Asset Processor Interface'
 ---
 # Asset Processor Interface {#asset-pipeline-processor-ui}

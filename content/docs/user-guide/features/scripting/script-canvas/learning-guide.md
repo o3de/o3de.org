@@ -1,7 +1,7 @@
 ---
 description: ' Take a tour of Script Canvas and begin learning the basics of how
   to use the visual editor using the topics available in the Learning Guide, including
-  tutorials and a guide to the sample levels included with Amazon Lumberyard. '
+  tutorials and a guide to the sample levels included with Open 3D Engine. '
 title: Learning Guide
 ---
 # Learning Guide {#script-canvas-learning-guide}

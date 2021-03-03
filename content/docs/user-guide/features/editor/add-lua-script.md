@@ -1,6 +1,6 @@
 ---
 description: ' Use the Lua Script component to add script functionality to your game
-  entities in Amazon Lumberyard. '
+  entities in Open 3D Engine. '
 title: Adding Lua Scripts to Component Entities
 ---
 # Adding Lua Scripts to Component Entities {#lua-scripting-intro-add-script-to-component}

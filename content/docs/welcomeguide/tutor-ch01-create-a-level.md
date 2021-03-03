@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create a simple level with terrain in Amazon Lumberyard. '
+description: ' Learn how to create a simple level with terrain in Open 3D Engine. '
 title: 'Tutorial One: Create a level'
 ---
 # Tutorial One: Create a level<a name="tutor-ch01-create-a-level"></a>

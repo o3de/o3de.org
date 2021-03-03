@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Random Timed Spawner component to spawn a specified
+description: ' Use the Open 3D Engine Random Timed Spawner component to spawn a specified
   dynamic slice at a given interval. '
 title: Random Timed Spawner
 ---

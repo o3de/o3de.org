@@ -1,6 +1,6 @@
 ---
 description: ' Learn keyboard and mouse shortcuts for the Script Canvas editor in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: 'Script Canvas Editor Shortcuts'
 ---
 # Script Canvas Editor Shortcuts {#script-canvas-shortcuts}

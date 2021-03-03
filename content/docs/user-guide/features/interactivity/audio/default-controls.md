@@ -1,6 +1,6 @@
 ---
 description: ' Create sound effects for your game project with the Audio Controls Editor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: ATL Controls
 ---
 # ATL Controls {#audio-default-controls}

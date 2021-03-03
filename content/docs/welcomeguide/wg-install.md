@@ -1,8 +1,8 @@
 ---
-description: ' Learn how to install Amazon Lumberyard. '
-title: Installing Amazon Lumberyard
+description: ' Learn how to install Open 3D Engine. '
+title: Installing Open 3D Engine
 ---
-# Installing Amazon Lumberyard<a name="wg-install"></a>
+# Installing Open 3D Engine<a name="wg-install"></a>
 
 Download the latest [Lumberyard Installer](https://d1a5h15s88ekwk.cloudfront.net/latest/installer/LumberyardInstaller.exe)\.
 

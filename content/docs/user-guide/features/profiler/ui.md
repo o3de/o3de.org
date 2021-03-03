@@ -1,5 +1,5 @@
 ---
-description: ' Learn the basics of the Amazon Lumberyard Profiler diagnostics tool. '
+description: ' Learn the basics of the Open 3D Engine Profiler diagnostics tool. '
 title: Profiler Tutorial
 ---
 # Profiler Tutorial {#profiler-using}

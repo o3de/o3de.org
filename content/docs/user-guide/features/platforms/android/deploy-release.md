@@ -1,5 +1,5 @@
 ---
-description: ' Prepare Amazon Lumberyard projects for release and distribution on the Google
+description: ' Prepare Open 3D Engine projects for release and distribution on the Google
   Play Store. '
 title: Releasing Lumberyard projects for Android
 ---

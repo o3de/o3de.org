@@ -1,5 +1,5 @@
 ---
-description: ' Add iOS Framework libraries to your Amazon Lumberyard Gems. '
+description: ' Add iOS Framework libraries to your Open 3D Engine Gems. '
 title: Add iOS Frameworks to a Lumberyard project
 ---
 # Add iOS Frameworks to a Lumberyard project {#ios-custom-frameworks}

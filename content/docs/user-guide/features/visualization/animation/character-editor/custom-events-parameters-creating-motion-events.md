@@ -1,5 +1,5 @@
 ---
-description: ' Create motion events for your game project in Amazon Lumberyard. '
+description: ' Create motion events for your game project in Open 3D Engine. '
 title: Creating Motion Events
 ---
 # Creating Motion Events {#char-animation-editor-custom-events-parameters-creating-motion-events}

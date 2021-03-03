@@ -1,6 +1,6 @@
 ---
 description: ' Create a canvas in the UI Editor to use as an invisible backdrop
-  for your game user interface elements in Amazon Lumberyard. '
+  for your game user interface elements in Open 3D Engine. '
 title: Working with UI Canvases
 ---
 # Working with UI Canvases {#ui-editor-creating-canvases}

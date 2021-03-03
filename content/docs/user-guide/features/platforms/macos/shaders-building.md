@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s remote shader compiler to build shaders for your macOS
+description: ' Use Open 3D Engine''s remote shader compiler to build shaders for your macOS
   games. '
 title: Building Shaders for macOS Games
 ---

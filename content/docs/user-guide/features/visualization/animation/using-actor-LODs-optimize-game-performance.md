@@ -1,5 +1,5 @@
 ---
-description: ' Use levels of detail (LODs) to optimize game performance in Amazon Lumberyard. '
+description: ' Use levels of detail (LODs) to optimize game performance in Open 3D Engine. '
 title: Using Actor LODs to Optimize Game Performance
 ---
 # Using Actor LODs to Optimize Game Performance {#using-actor-LODs-optimize-game-performance}

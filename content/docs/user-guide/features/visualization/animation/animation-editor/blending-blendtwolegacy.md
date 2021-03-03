@@ -1,5 +1,5 @@
 ---
-description: ' Use the Blend Two (Legacy) node for backward compatibility in Amazon Lumberyard
+description: ' Use the Blend Two (Legacy) node for backward compatibility in Open 3D Engine
   Animation Editor to blend two nodes. '
 title: Blend Two (Legacy) Node
 ---

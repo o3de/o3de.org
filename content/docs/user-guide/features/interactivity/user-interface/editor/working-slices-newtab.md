@@ -1,5 +1,5 @@
 ---
-description: ' Edit a UI slice in a new tab in Amazon Lumberyard''s UI Editor . '
+description: ' Edit a UI slice in a new tab in Open 3D Engine''s UI Editor . '
 title: Editing Slices in a New Tab
 ---
 # Editing Slices in a New Tab {#ui-editor-working-slices-newtab}

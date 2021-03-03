@@ -1,5 +1,5 @@
 ---
-description: ' Prepare your Amazon Lumberyard iOS games for store deployment (distribution)
+description: ' Prepare your Open 3D Engine iOS games for store deployment (distribution)
   by packing the assets and cached binary shaders. '
 title: Creating a Release App
 ---

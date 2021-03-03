@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Controls Editor in Amazon Lumberyard to create sound effects
+description: ' Use the Audio Controls Editor in Open 3D Engine to create sound effects
   for your game project. '
 title: Using the Audio Controls Editor
 ---

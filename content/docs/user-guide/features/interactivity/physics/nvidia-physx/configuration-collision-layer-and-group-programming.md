@@ -1,5 +1,5 @@
 ---
-description: ' Create layers and groups programatically in Amazon Lumberyard. '
+description: ' Create layers and groups programatically in Open 3D Engine. '
 title: Creating Collision Layers and Groups Programmatically
 ---
 # Creating Collision Layers and Groups Programmatically {#physx-configuration-collision-layer-and-group-programming}

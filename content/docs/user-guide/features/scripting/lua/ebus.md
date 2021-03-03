@@ -1,6 +1,6 @@
 ---
 description: ' Write Lua scripts that use the EBus to communicate between components
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using EBuses in Lua
 ---
 # Using EBuses in Lua {#lua-scripting-ces-using-ebuses}

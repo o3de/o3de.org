@@ -1,5 +1,5 @@
 ---
-description: ' Use shape components in Amazon Lumberyard to provide shape facilities for trigger
+description: ' Use shape components in Open 3D Engine to provide shape facilities for trigger
   volumes, collision volumes, audio area ambiances, and audio areas. '
 title: 'Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound'
 ---

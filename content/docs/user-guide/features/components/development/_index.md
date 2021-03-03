@@ -9,7 +9,7 @@ This guide provides engine and game programmers with examples and best practices
 
 For information on using the component entity system in Lumberyard Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
 
-For C\+\+ API reference documentation on the component entity system, see the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the component entity system, see the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 Lumberyard uses a lightweight entity/component model called the component entity system for both game objects and systems\. Lumberyard entities are simply an ID and a container of components\. They have no functionality associated with them\. Lumberyard's component model is granular: It expects each component to provide independent functionality\. It expects game objects to be made up of one or more entities with many components attached to each entity\. Lumberyard components communicate with each other using a messaging system called EBuses\. Lumberyard expects you to use EBuses instead of holding references to other entities or their components\.
 

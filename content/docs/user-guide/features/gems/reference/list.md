@@ -1,5 +1,5 @@
 ---
-description: ' Enable gems to your Amazon Lumberyard project for functionality and assets. '
+description: ' Enable gems to your Open 3D Engine project for functionality and assets. '
 title: Gems Available in Lumberyard
 ---
 # Gems Available in Lumberyard {#gems-system-ref}

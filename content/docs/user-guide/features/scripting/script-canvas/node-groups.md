@@ -1,6 +1,6 @@
 ---
 description: ' Group Script Canvas nodes for improved manageability of your visual
-  scripts in Amazon Lumberyard. '
+  scripts in Open 3D Engine. '
 title: Grouping Nodes
 ---
 # Grouping Nodes {#script-canvas-node-groups}

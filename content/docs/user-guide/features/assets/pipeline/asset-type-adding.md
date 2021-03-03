@@ -1,5 +1,5 @@
 ---
-description: ' Add a custom asset type to Amazon Lumberyard. '
+description: ' Add a custom asset type to Open 3D Engine. '
 title: Adding an Asset Type to Lumberyard
 ---
 # Adding an Asset Type to Lumberyard {#asset-pipeline-asset-type-adding}

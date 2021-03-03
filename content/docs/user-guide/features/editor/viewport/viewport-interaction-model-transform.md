@@ -1,5 +1,5 @@
 ---
-description: ' Modify the transform for entities using the Viewport Interaction Model in Amazon Lumberyard. '
+description: ' Modify the transform for entities using the Viewport Interaction Model in Open 3D Engine. '
 title: Modifying the Transform
 ---
 # Modifying the Transform {#viewport-interaction-model-transform}

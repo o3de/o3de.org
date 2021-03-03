@@ -1,11 +1,11 @@
 ---
 description: ' Understand the different ways you can participate in AAA-game development
-  with Amazon Lumberyard as a technical artist, game designer, or game programmer. '
-title: Create with Amazon Lumberyard
+  with Open 3D Engine as a technical artist, game designer, or game programmer. '
+title: Create with Open 3D Engine
 ---
-# Create with Amazon Lumberyard<a name="wg-create-intro"></a>
+# Create with Open 3D Engine<a name="wg-create-intro"></a>
 
-Previously in this guide, we covered [How Amazon Lumberyard works](wg-how-lumberyard-works.md) and [Setting up Amazon Lumberyard](wg-setup-intro.md)\.
+Previously in this guide, we covered [How Open 3D Engine works](wg-how-lumberyard-works.md) and [Setting up Open 3D Engine](wg-setup-intro.md)\.
 
 Now, let's get started creating your game\! In this topic, we provide an overview of creating a game with Lumberyard, and help you identify where to focus your learning, based on your role in game development\. If you're proficient in all roles, read everything\!
 
@@ -47,7 +47,7 @@ Tools you might use that are associated to specific components include:
 
 \.\.\.and many more\.
 
-Some tools can be opened directly from their associated component\. Others require you to open them from the **Tools** menu in Lumberyard Editor\. For a tour of Lumberyard Editor, see [Introduction to the Lumberyard Editor](wg-editor.md)\. For an overview of the tools provided with Lumberyard, see the following topic on [Tools available in Amazon Lumberyard](wg-tools.md)\.
+Some tools can be opened directly from their associated component\. Others require you to open them from the **Tools** menu in Lumberyard Editor\. For a tour of Lumberyard Editor, see [Introduction to the Lumberyard Editor](wg-editor.md)\. For an overview of the tools provided with Lumberyard, see the following topic on [Tools available in Open 3D Engine](wg-tools.md)\.
 
 The modular nature of Lumberyard means there are additional assets, components, and tools that you can add by enabling Gems in Project Configurator\. Lumberyard comes with a library of Gems\. Gems can include new code, new assets, or both\! You can even write your own\. In fact, this is what a game's C\+\+ programmers will often spend their time doing, to help create the gameplay that makes your game unique\.
 
@@ -63,7 +63,7 @@ You'll use the Project Configurator tool to set the project that you're working 
 
 Then, launch the Lumberyard Editor, open one of the sample levels in the Sample Project, and start exploring\! We suggest following along with one of these written or video tutorials:
 +  [Learn Lumberyard in 20 Minutes](https://www.youtube.com/watch?v=E1NgI8urJ7o)
-+  [Set Up Amazon Lumberyard](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-setting-up.html) series
++  [Set Up Open 3D Engine](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-setting-up.html) series
 +  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
 +  [Basics of Motion](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-game-engine-101.html) series
 

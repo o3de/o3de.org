@@ -1,6 +1,6 @@
 ---
 description: ' Use the Project Settings Tool to modify project settings for mobile device games in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Modifying Project Settings for Mobile Device Games
 ---
 # Modifying Project Settings for Mobile Device Games {#mobile-project-settings-tool}
