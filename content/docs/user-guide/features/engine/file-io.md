@@ -1,18 +1,18 @@
 ---
-description: ' Directly access files for special use cases like streaming in Amazon Lumberyard. '
-title: Raw File Access in Lumberyard
+description: ' Directly access files for special use cases like streaming in Open 3D Engine. '
+title: Raw File Access in O3DE
 ---
-# Raw File Access in Lumberyard {#file-access-direct}
+# Raw File Access in O3DE {#file-access-direct}
 
-This topic describes how to directly access files in Lumberyard for special use cases\. However, it's recommended that you use the Lumberyard Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
+This topic describes how to directly access files in O3DE for special use cases\. However, it's recommended that you use the O3DE Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
 
-When you write an `AssetHandler`\-derived class to load assets in Lumberyard, runtime file handling is automatic\. However, some cases might require lower levels of file access at run time\. Scenarios that might require low\-level file access include:
+When you write an `AssetHandler`\-derived class to load assets in O3DE, runtime file handling is automatic\. However, some cases might require lower levels of file access at run time\. Scenarios that might require low\-level file access include:
 + Loading raw configuration files from the deployment root during startup before `.pak` files are mounted and available\.
 + Direct access to the files in a `.pak` file\.
 + Direct access to files at arbitrary locations on disk\.
 + Streaming file formats \(for example, audio or video\) that do not load the entire file but play it back\. This approach commonly uses middleware to play back or capture audio, video, or vertex data\. Most such systems require that you implement file hooks to perform operations like `read`, `seek`, `tell`, `open`, and `close`\. In these cases, direct file access might be easier than treating the files as assets and performing operations on them with `AZ::Data` systems\.
 + Other legacy systems or middleware that require direct file access for which `AZ::DataAsset` systems cannot be used\. However, note that it is possible to write a file access shim that describes how to access files for most middleware\.
-+ Loading raw source files from locations other than the asset cache\. Loading source files from locations other than the asset cache is possible only for tools inside Lumberyard Editor\. Only the asset cache ships with your game, so loading raw source files from locations other than the asset cache at run time is not possible\.
++ Loading raw source files from locations other than the asset cache\. Loading source files from locations other than the asset cache is possible only for tools inside O3DE Editor\. Only the asset cache ships with your game, so loading raw source files from locations other than the asset cache at run time is not possible\.
 
 The few cases where you need to work directly with files are covered by a small number of classes in the `AZ::IO` namespace such as `FileIOBase` and `FileIOStream.`
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use Blast materials to set destruction properties in Amazon Lumberyard with
+description: ' Use Blast materials to set destruction properties in Open 3D Engine with
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
 ---

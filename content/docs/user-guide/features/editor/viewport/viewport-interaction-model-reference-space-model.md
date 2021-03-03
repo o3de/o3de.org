@@ -1,5 +1,5 @@
 ---
-description: ' Create reference spaces to modify your entities in Amazon Lumberyard. '
+description: ' Create reference spaces to modify your entities in Open 3D Engine. '
 title: Reference Space Model
 ---
 # Reference Space Model {#viewport-interaction-model-reference-space-model}
@@ -31,7 +31,7 @@ Parent space is the transform that the parent entity has in the hierarchy\. If a
 **Example**
 
    In the following example, the entity moves in world space because the car does not have a parent\. When you select the child entity \(the tire\), the manipulator switches to the parent space of that entity \(the car\)\.
-![\[Switch between local and parent space in the viewport in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
+![\[Switch between local and parent space in the viewport in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
 
    The following are shortcuts to work with the reference space mode\.
 ****
@@ -51,7 +51,7 @@ You can adjust the manipulator independent of the entity to create a custom refe
 **Example**
 
    In the following example, the excavator entity becomes a reference space for the car\. When the manipulator moves the car, the car moves in relation to the reference space\.
-![\[Create a custom reference using another entity as a target in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-4.gif)
+![\[Create a custom reference using another entity as a target in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-4.gif)
 
 1. Use the manipulator to modify the entity\.
 

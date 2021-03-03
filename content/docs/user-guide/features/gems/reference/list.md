@@ -1,10 +1,10 @@
 ---
-description: ' Enable gems to your Amazon Lumberyard project for functionality and assets. '
-title: Gems Available in Lumberyard
+description: ' Enable gems to your Open 3D Engine project for functionality and assets. '
+title: Gems Available in O3DE
 ---
-# Gems Available in Lumberyard {#gems-system-ref}
+# Gems Available in O3DE {#gems-system-ref}
 
-Lumberyard ships with the following Gems that are ready to be enabled:
+O3DE ships with the following Gems that are ready to be enabled:
 
 **Topics**
 + [Asset Memory Analyzer Gem](/docs/user-guide/features/gems/memory-analyzer.md)

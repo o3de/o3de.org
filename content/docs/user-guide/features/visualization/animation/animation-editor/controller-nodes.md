@@ -1,5 +1,5 @@
 ---
-description: ' See the following controller nodes in Amazon Lumberyard. '
+description: ' See the following controller nodes in Open 3D Engine. '
 title: Controller Nodes
 ---
 # Controller Nodes {#animation-editor-controller-nodes}
@@ -16,7 +16,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 
 **To create a Get Transform node**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **\+** icon to create one\.
 
@@ -51,7 +51,7 @@ The **Set Transform** node sets the transform from a selected joint, including t
 
 **To create a Set Transform node**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **\+** icon to create one\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Learn best engineering practices for Script Canvas in Amazon Lumberyard. '
+description: ' Learn best engineering practices for Script Canvas in Open 3D Engine. '
 title: 'Script Canvas Best Practices'
 ---
 # Script Canvas Best Practices {#script-canvas-best-practices}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the game states in the GameState Samples gem to control the flow
-  of your game in Amazon Lumberyard. '
+  of your game in Open 3D Engine. '
 title: GameState Samples Gem
 ---
 # GameState Samples Gem {#gems-system-gem-game-state-samples}

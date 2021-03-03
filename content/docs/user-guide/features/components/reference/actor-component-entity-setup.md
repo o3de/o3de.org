@@ -1,5 +1,5 @@
 ---
-description: ' Set up actor entities with multiple or a single FBX file in Amazon Lumberyard. '
+description: ' Set up actor entities with multiple or a single FBX file in Open 3D Engine. '
 title: Setting Up Actor Entities
 ---
 # Setting Up Actor Entities {#component-actor-component-entity-setup}
@@ -11,7 +11,7 @@ After you set up your skinned meshes as actors, you can create your actor entiti
 1. From the **Asset Browser**, select and drag the main actor file and the attachment actor files into the viewport\.
 ![\[From the Asset Browser, drag the main actor file and its attachment actor files into the viewport.\]](/images/user-guide/component/component-actor-component-entity-setup-1.png)
 
-   Lumberyard automatically adds each file as its own actor component entity\.
+   O3DE automatically adds each file as its own actor component entity\.
 ![\[Drag each actor file to the viewport results in three separate actor entities in the Entity Outliner.\]](/images/user-guide/component/component-actor-component-entity-setup-2.png)
 
 1. In the **Entity Outliner**, click and drag the attachment entities to the main entity; this parents the attachment actor entities to the main actor entity\.

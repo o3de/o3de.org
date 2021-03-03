@@ -1,12 +1,12 @@
 ---
-description: ' Register objects int the Lumberyard engine for JSON or XML serialization. '
+description: ' Register objects int the O3DE engine for JSON or XML serialization. '
 title: Register objects for serialization
 ---
 # Register objects for serialization {#serialization-register-objects}
 
- Serialization in Lumberyard is done by registering classes with a *serialization context*, which takes information about the provided class and uses reflection mechanisms to determine which class members to emit and their types\. Serialization is controlled through the `AZ::SerializeContext` class, declared in `AZCore/Serialization/SerializeContext.h` as part of the `AzCore` library\.
+ Serialization in O3DE is done by registering classes with a *serialization context*, which takes information about the provided class and uses reflection mechanisms to determine which class members to emit and their types\. Serialization is controlled through the `AZ::SerializeContext` class, declared in `AZCore/Serialization/SerializeContext.h` as part of the `AzCore` library\.
 
- Serialization requires access to an `AZ::ReflectContext` instance that can be safely cast to a `AZ::SerializeContext` object through the AzCore reflection system\. There's a globally managed serialization context within the Lumberyard engine that you can retrieve through the `AZComponentApplicationBus`\.
+ Serialization requires access to an `AZ::ReflectContext` instance that can be safely cast to a `AZ::SerializeContext` object through the AzCore reflection system\. There's a globally managed serialization context within the O3DE engine that you can retrieve through the `AZComponentApplicationBus`\.
 
 ```
 AZ::SerializeContext* serializeContext = nullptr;
@@ -39,7 +39,7 @@ Create a field from a base class member\. This can be used if you want to serial
 + `address` \- The address of the field to store, as a pointer to member or offset from the start of an instance of `BaseType`\. If a pointer to member is used, all type information is inferred\.
 
 **Example Registering a class for serialization**
-The following is an example from the Lumberyard Asset Processor code, demonstrating how a class can be registered for serialization\.
+The following is an example from the O3DE Asset Processor code, demonstrating how a class can be registered for serialization\.
 
 ```
 if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context))

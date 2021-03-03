@@ -1,5 +1,5 @@
 ---
-description: ' Control the playhead in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
+description: ' Control the playhead in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Controlling the Playhead
 ---
 # Controlling the Playhead {#cinematics-controlling-the-playhead}

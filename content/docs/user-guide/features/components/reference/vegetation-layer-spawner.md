@@ -1,11 +1,11 @@
 ---
 description: ' Use the Vegetation Layer Spawner component to define areas and rules
-  for procedurally placing dynamic vegetation or other static meshes in Amazon Lumberyard. '
+  for procedurally placing dynamic vegetation or other static meshes in Open 3D Engine. '
 title: Vegetation Layer Spawner
 ---
 # Vegetation Layer Spawner {#component-vegetation-layer-spawner}
 
-Use the **Vegetation Layer Spawner** component to define areas and rules for procedurally placing dynamic vegetation or other static meshes in your Lumberyard level\.
+Use the **Vegetation Layer Spawner** component to define areas and rules for procedurally placing dynamic vegetation or other static meshes in your O3DE level\.
 
 To use the **Vegetation Layer Spawner** component, you must enable the **Vegetation** gem\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Set the status for an entity while working in the editor for Amazon Lumberyard. '
+description: ' Set the status for an entity while working in the editor for Open 3D Engine. '
 title: Setting an Entity Status
 ---
 # Setting an Entity Status {#component-entity-inspector-status}

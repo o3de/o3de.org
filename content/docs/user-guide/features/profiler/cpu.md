@@ -1,5 +1,5 @@
 ---
-description: ' Use the CPU profiler in Amazon Lumberyard to examine CPU usage in your game
+description: ' Use the CPU profiler in Open 3D Engine to examine CPU usage in your game
   application. '
 title: Using the Profiler for CPU Usage
 ---

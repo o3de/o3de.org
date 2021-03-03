@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use script events in Lua in Amazon Lumberyard. '
+description: ' Learn how to use script events in Lua in Open 3D Engine. '
 title: Using Script Events in Lua
 ---
 # Using Script Events in Lua {#script-events-lua}

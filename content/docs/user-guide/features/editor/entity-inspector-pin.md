@@ -1,6 +1,6 @@
 ---
 description: ' Pin an entity''s inspector to have multiple entities available to edit
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Pinning an Entity's Inspector
 ---
 # Pinning an Entity's Inspector {#component-entity-inspector-pin}
@@ -10,7 +10,7 @@ You can pin an entity's inspector to keep it open and visible even when you sele
 A pinned inspector has the following features:
 + Always shows the pinned entity even when you select a different entity\.
 + Functions like the main **Entity Inspector** window\.
-+ Closes when you open a different level or exit Lumberyard\.
++ Closes when you open a different level or exit O3DE\.
 + If you convert a loose entity to a slice, the pinned inspector points to the new slice entity that corresponds to the previously loose entity\.
 + Persists when entering and exiting game mode\.
 + Updates all pinned inspectors for a particular entity when you modify that entity\.
@@ -29,6 +29,6 @@ You can pin an inspector from the **Entity Outliner** or the **Entity Inspector*
    1. In the **Entity Inspector**, click the pin icon\.
 ![\[In the Entity Inspector, click the pin icon to pin an inspector for the entity.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin-2.png)
 
-1. In Lumberyard Editor, you can view the pinned entity inspectors\.
+1. In O3DE Editor, you can view the pinned entity inspectors\.
 **Example**
 ![\[Multiple pinned inspectors open in a level.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin.png)

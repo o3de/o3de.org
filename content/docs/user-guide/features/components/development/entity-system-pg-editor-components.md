@@ -1,12 +1,12 @@
 ---
-description: ' Learn about editor components in Amazon Lumberyard. '
+description: ' Learn about editor components in Open 3D Engine. '
 title: Editor Components
 ---
 # Editor Components {#component-entity-system-pg-editor-components}
 
-Some components in Lumberyard have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. Lumberyard uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.
+Some components in O3DE have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. O3DE uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.
 
-`EditContext` reflection is fully supported in runtime components\. Edit time is the only time when editor components are active\. At run time, when Lumberyard processes a level or dynamic slice, it uses the runtime equivalents of editor components\. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience\.
+`EditContext` reflection is fully supported in runtime components\. Edit time is the only time when editor components are active\. At run time, when O3DE processes a level or dynamic slice, it uses the runtime equivalents of editor components\. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience\.
 
 **Important**
 Editor components are not required\. An editor component is necessary only if one of the following is true:
@@ -95,7 +95,7 @@ AZ_EDITOR_COMPONENT(MyEditorComponent, "{5034A7F3-63DB-4298-83AA-915AB23EFEA0}")
 ```
 
 **Note**
-Some Lumberyard editor components specify `AzToolsFramework::Components::EditorComponentBase` as the base class but use the `AZ_COMPONENT` instead of the `AZ_EDITOR_COMPONENT` macro, as in the following example\.
+Some O3DE editor components specify `AzToolsFramework::Components::EditorComponentBase` as the base class but use the `AZ_COMPONENT` instead of the `AZ_EDITOR_COMPONENT` macro, as in the following example\.
 
 ```
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Comment component in Amazon Lumberyard to add text comments for component
+description: ' Use the Comment component in Open 3D Engine to add text comments for component
   entities. '
 title: Comment
 ---
@@ -26,7 +26,7 @@ You can use this feature by adding the component to an entity in your level\.
 
 **To use the Comment component**
 
-1. In Lumberyard Editor, right\-click the viewport in your level, and click **Create entity**\.
+1. In O3DE Editor, right\-click the viewport in your level, and click **Create entity**\.
 
 1. In the **Entity Inspector**, click **Add Component**\.
 

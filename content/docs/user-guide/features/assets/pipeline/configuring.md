@@ -1,6 +1,6 @@
 ---
 description: ' Configure the Asset Pipeline to customize the processing of assets
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Configuring the Asset Pipeline
 ---
 # Configuring the Asset Pipeline {#asset-pipeline-configuring}
@@ -8,7 +8,7 @@ title: Configuring the Asset Pipeline
 **Important**
 The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline\. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`\. These modules are self configuring\. For instructions and examples on how to write builders that process your own asset types, see the [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md)\. We recommend that you do not rely on the old `rc.exe` pipeline, although it's still available if you have legacy code\.
 
-You can configure the Lumberyard asset pipeline by editing the `\dev\AssetProcessorPlatformConfig.ini` file that `rc.exe` program uses\. You can add your own asset types to it by modifying the sections of the file described in this document\. When you check in your changes to the config file, the version of the assets on your collaborators' computers is updated automatically\. This removes the need for you to manually refresh the cache on each coworker's computer\.
+You can configure the O3DE asset pipeline by editing the `\dev\AssetProcessorPlatformConfig.ini` file that `rc.exe` program uses\. You can add your own asset types to it by modifying the sections of the file described in this document\. When you check in your changes to the config file, the version of the assets on your collaborators' computers is updated automatically\. This removes the need for you to manually refresh the cache on each coworker's computer\.
 
 The `AssetProcessorPlatformConfig.ini` consists of six sections\. The `.ini` file uses standard Qt/Windows `.ini` file formatting rules\. Comments are preceded by a semicolon, and named sections are designated by square brackets\.
 
@@ -74,7 +74,7 @@ If an entry for a game operating system that you want is not in the list, you ca
 
 If you are using the `rc.exe` pipeline, specified operating systems are passed as parameters to the `rc.exe` program\.
 
-The operating system that Lumberyard runs on is enabled by default, so you can leave that line commented out\. For example, if Lumberyard runs on Mac, you can leave the `osx_gl=enabled` line commented out\.
+The operating system that O3DE runs on is enabled by default, so you can leave that line commented out\. For example, if O3DE runs on Mac, you can leave the `osx_gl=enabled` line commented out\.
 
 If you run `AssetProcessor.exe` or `AssetProcessorBatch.exe` on a build server, you can use the following command line parameter to specify which operating systems to enable: `/platforms=comma-separated-list`
 
@@ -211,7 +211,7 @@ The following table describes each parameter and its options\.
 | \(tagname\)=\(params\) | Specifies tag\-specific parameters, which are generally better than platform\-specific parameters\. For example, the following statement causes all platforms to use the default parameters when processing `.tiff` files\. However, a platform with the `server` tag is skipped\.<pre>[RC tif]<br />pattern=.*\\.tiff? <br />server=skip</pre> |
 | lockSource | The following statement passes `/p=pc` to invocations of the `rc.exe` program: `server=/p=pc`\. This allows the program to process assets \(such as textures\) as if it were the PC, even on the server\. The default behavior is to pass /p=server, which the rc\.exe program may not understand\.  The `lockSource` parameter is useful for dealing with applications that hold onto a file and then slowly stream data into it\. For example, if a program creates very large files over a long period of time, you can set `lockSource=true` to avoid processing an asset until the other application releases it\. Use of this parameter is relatively rare and is generally expensive, so you should avoid using it unless absolutely required\. |
 | priority | Specifies job priority\. A larger number gives a job greater priority in the queue\. Normally, you should assign a larger number to assets that are likely to be needed from the start or that affect gameplay\. This ensures that they get compiled sooner\.  `params` `copy` jobs have an default priority of 1\.  |
-| critical | Can be `true` or `false`\. Critical jobs cause the editor splash screen to continue displaying and pause the startup of the runtime until every critical job has been completed\. Marking jobs as critical ensures they are complete before the editor is allowed to start\. You can specify entire types of assets as critical\. This can be useful for files that are used during startup, cause bad behavior if they are not ready during bootstrap, or cannot be reloaded live\.  Because critical jobs can delay the startup of the editor for the first time, not having critical jobs is always the preferred choice\. Alternative approaches include:   Making the editor or runtime capable of reloading the asset live after it is compiled\.   Making a call to compile the asset on demand using the asset system bus\. You can use the public function `CompileAssetSync` to do this\. See the Lumberyard source code for examples\.     `params` `copy` jobs are critical by default\.  |
+| critical | Can be `true` or `false`\. Critical jobs cause the editor splash screen to continue displaying and pause the startup of the runtime until every critical job has been completed\. Marking jobs as critical ensures they are complete before the editor is allowed to start\. You can specify entire types of assets as critical\. This can be useful for files that are used during startup, cause bad behavior if they are not ready during bootstrap, or cannot be reloaded live\.  Because critical jobs can delay the startup of the editor for the first time, not having critical jobs is always the preferred choice\. Alternative approaches include:   Making the editor or runtime capable of reloading the asset live after it is compiled\.   Making a call to compile the asset on demand using the asset system bus\. You can use the public function `CompileAssetSync` to do this\. See the O3DE source code for examples\.     `params` `copy` jobs are critical by default\.  |
 | version | An arbitrary versioning number\. The default is 0\. Changing the version number invalidates the assets specified and causes them to be rebuilt\. The `version` parameter provides a convenient way to cause a rebuild of all assets of a particular kind\. For example, you might make changes to the compiler that builds a particular kind of asset\. Then, when you check in your changes to the `.ini` file, local assets of workers receiving the update are rebuilt for them automatically\. |
 
 The following example specifies how `.tiff` files are to be processed\.

@@ -1,6 +1,6 @@
 ---
 description: ' Use the <guilabel>Track View</guilabel> editor to create and manage cinematic sequences
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using the Track View Editor
 ---
 # Using the Track View Editor {#cinematics-track-view-editor}
@@ -12,7 +12,7 @@ If you want to generate cutscenes for games or create a script to trigger an ani
 **To create a sequence in the Track View**
 
 1. Do one of the following:
-   + In Lumberyard Editor, choose **Tools**, **Track View**\.
+   + In O3DE Editor, choose **Tools**, **Track View**\.
    + Press **T**\.
 
 1. To create a sequence, do one of the following:

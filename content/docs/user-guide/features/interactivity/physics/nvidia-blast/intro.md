@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic destruction simulations in Amazon Lumberyard with NVIDIA Blast. '
+description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
 title: Simulated destruction with NVIDIA Blast
 ---
 # Simulated destruction with NVIDIA Blast {#nvidia-blast-intro}
@@ -11,12 +11,12 @@ title: Simulated destruction with NVIDIA Blast
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
- With **NVIDIA Blast** in Amazon Lumberyard, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
+ With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/features/interactivity/physics/nvidia-blast/_index.md)\.
 
 **Note**
-NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
+NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
 ## NVIDIA Blast features {#nvidia-blast-features}
@@ -42,7 +42,7 @@ See the following topics for detailed information about NVIDIA Blast\.
 
 [Create assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/create-blast-asset.md) \- Fracture meshes in Houdini and export assets for NVIDIA Blast\.
 
-[Processing assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/process-blast-asset.md) \- Process NVIDIA Blast assets for Lumberyard\.
+[Processing assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/process-blast-asset.md) \- Process NVIDIA Blast assets for O3DE\.
 
 [Simulate destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/simulate.md) \- Create entities with NVIDIA Blast assets and simulate destruction\.
 

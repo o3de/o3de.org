@@ -1,6 +1,6 @@
 ---
 description: ' Use the White Box component to quickly sketch geometry for entities
-  and levels in Amazon Lumberyard. '
+  and levels in Open 3D Engine. '
 title: 'White Box component'
 ---
 # White Box component {#component-white-box}
@@ -12,11 +12,11 @@ title: 'White Box component'
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The **White Box** component is a tool you can use to sketch 3D proxy meshes in Lumberyard Editor\. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity\.
+The **White Box** component is a tool you can use to sketch 3D proxy meshes in O3DE Editor\. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity\.
 
 ![\[White Box component interface.\]](/images/user-guide/component/whitebox/white-box-A-1.25.gif)
 
-Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in Lumberyard Editor before investing the time and effort into building finished models for your entity\. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components\. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets\.
+Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in O3DE Editor before investing the time and effort into building finished models for your entity\. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components\. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets\.
 
 **Topics**
 + [White Box properties](#component-white-box-properties)
@@ -60,7 +60,7 @@ Export the mesh to a `.obj` file\. The `.obj` file can be loaded into a 3D model
 
 ## White Box edit mode {#component-white-box-edit-mode}
 
-In edit mode, you can quickly sketch meshes for your entities in Lumberyard Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\.
+In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\.
 
 ### Move {#component-white-box-edit-move}
 

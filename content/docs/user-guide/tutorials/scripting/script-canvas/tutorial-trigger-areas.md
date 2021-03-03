@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to create trigger areas to open and close doors using Script Canvas,
-  Amazon Lumberyard''s visual scripting system. '
+  Open 3D Engine''s visual scripting system. '
 title: 'Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and
   Variables'
 ---
@@ -31,7 +31,7 @@ To create a door and trigger area, create an entity with child entities and then
 
 **To create a door and trigger area**
 
-1. In Lumberyard Editor, right\-click the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
+1. In O3DE Editor, right\-click the **Perspective** viewport near your controllable sphere and choose **Create entity**\.
 ![\[Create an entity in the Perspective viewport.\]](/images/user-guide/scripting/script-canvas/perspective-viewport-choose-create-entity.png)
 
 1. In the **Entity Inspector**, for **Name**, enter **Door Group**\.
@@ -74,7 +74,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. Click **Add Component** and then choose the **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** component\.
 
-   1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+   1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
    1. In the **Script Canvas** editor, choose **File**, **New Script**\.
 
@@ -98,7 +98,7 @@ Now that you've set up your door and trigger area, you can create a script that 
 
 1. In the **Node Palette**, enter **trigger** in the search box and under **Gameplay**, **Trigger Area**, drag **On Area Entered** to the canvas\.
 **Note**
-With this event node you can easily use the Lumberyard EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+With this event node you can easily use the O3DE EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 1. In the **Trigger Area** node, click **Add/Remove Events** and then select the **On Area Exited** check box\. This exposes the entered and exited events from the **Trigger Area** EBus\.
 ![\[Add the Trigger Area node in Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/trigger-area-node-add-remove-events.png)
@@ -222,7 +222,7 @@ When multiple connections enter a single logic pin, the node is executed each ti
 
 1. Save your graph\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to enter game mode and test your script\.
+1. In O3DE Editor, press **Ctrl\+G** to enter game mode and test your script\.
 
 1. To move the sphere forward into the door trigger area and slide open the door, press the **W**, **A**, **D** keys\.
 

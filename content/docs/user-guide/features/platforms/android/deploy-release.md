@@ -1,9 +1,9 @@
 ---
-description: ' Prepare Amazon Lumberyard projects for release and distribution on the Google
+description: ' Prepare Open 3D Engine projects for release and distribution on the Google
   Play Store. '
-title: Releasing Lumberyard projects for Android
+title: Releasing O3DE projects for Android
 ---
-# Releasing Lumberyard projects for Android {#android-deploy-release}
+# Releasing O3DE projects for Android {#android-deploy-release}
 
  Setting up to release for Android can be a complicated process because of the number of steps involved, and the restrictions that are required for publishing on the Google Play Store\. For the full and up to date list of requirements, see the [Play Store publishing documentation](https://developer.android.com/studio/publish#publishing-prepare)\. In this topic you'll walk through additional steps needed for distribution, configure to submit an application larger than 100Mb to the Google Play Store, and build your release binaries\.
 
@@ -14,7 +14,7 @@ title: Releasing Lumberyard projects for Android
 
 ## Configure your signing key {#using-your-signing-key}
 
- As part of submission to the Google Play Store, you're required to sign your application\. The [Android signing documentation](https://developer.android.com/studio/publish/app-signing)discusses setting up your key signing in detail, as well as steps involved in uploading your signing key and signed application to Google Play\. As part of building your APK, the Lumberyard build system takes care of doing the signing for you\.
+ As part of submission to the Google Play Store, you're required to sign your application\. The [Android signing documentation](https://developer.android.com/studio/publish/app-signing)discusses setting up your key signing in detail, as well as steps involved in uploading your signing key and signed application to Google Play\. As part of building your APK, the O3DE build system takes care of doing the signing for you\.
 
  In order to set up key signing, you'll need to [generate an upload key](https://developer.android.com/studio/publish/app-signing#generate-key)\.
 
@@ -52,10 +52,10 @@ title: Releasing Lumberyard projects for Android
 ## Create expansion files \(OBBs\) {#android-create-expansion}
 
 **Warning**
- In Lumberyard version v1\.21 and later, the resource compiler job which builds OBB files does not ship with the Lumberyard installer\. [Download the Android\_MakeObb job file](https://d3bqhfbip4ze4a.cloudfront.net/RCJob_Generic_Android_MakeObb.xml) and place it in the `lumberyard_install_dir/dev/Code/Tools/RC/Config/rc` directory before continuing\.
- The `MakeObb` job uses the old Lumberyard asset management system, where the project\-specific resources you include and exclude from the OBB expansions are defined as part of the job\.
+ In O3DE version v1\.21 and later, the resource compiler job which builds OBB files does not ship with the O3DE installer\. [Download the Android\_MakeObb job file](https://d3bqhfbip4ze4a.cloudfront.net/RCJob_Generic_Android_MakeObb.xml) and place it in the `lumberyard_install_dir/dev/Code/Tools/RC/Config/rc` directory before continuing\.
+ The `MakeObb` job uses the old O3DE asset management system, where the project\-specific resources you include and exclude from the OBB expansions are defined as part of the job\.
 
- The Google Play Store has limitations on how applications can be distributed\. Android application packages \(APKs\) are limited to 100MB in size\. To ship larger applications, you should use either [dynamic content delivery](/docs/userguide/gems/cloud-canvas/dc-manager.md) or Android expansion files\. The Lumberyard engine has support for downloading, checking, and extracting expansion files \- all you have to do is create them\. Google Play allows for uploading two separate OBB files, `main` and `patch`, which have a size limit of 2\.0Gb each\.
+ The Google Play Store has limitations on how applications can be distributed\. Android application packages \(APKs\) are limited to 100MB in size\. To ship larger applications, you should use either [dynamic content delivery](/docs/userguide/gems/cloud-canvas/dc-manager.md) or Android expansion files\. The O3DE engine has support for downloading, checking, and extracting expansion files \- all you have to do is create them\. Google Play allows for uploading two separate OBB files, `main` and `patch`, which have a size limit of 2\.0Gb each\.
 
  How you package your application is an important part of releasing to the Google Play Store\. Before continuing in this section, we recommend that you read the [Android Developer documentation for APK expansions](https://developer.android.com/google/play/expansion-files)\.
 

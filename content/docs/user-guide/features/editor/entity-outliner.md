@@ -1,5 +1,5 @@
 ---
-description: ' Manage your entities with the Entity Outliner in Amazon Lumberyard. '
+description: ' Manage your entities with the Entity Outliner in Open 3D Engine. '
 title: 'Entity Outliner'
 ---
 # Entity Outliner {#component-entity-outliner}
@@ -8,7 +8,7 @@ The **Entity Outliner** shows all the entities and slices in the level\. You can
 
 **To open the Entity Outliner**
 
-1. In Lumberyard Editor, choose **Tools**, **Entity Outliner**\.
+1. In O3DE Editor, choose **Tools**, **Entity Outliner**\.
 
 1. In the **Entity Outliner**, you can create, select, search, and filter for entities\.
 ![\[Use the Entity Outliner to view all the entities in your level.\]](/images/shared/shared-component-entity-outliner-1.png)

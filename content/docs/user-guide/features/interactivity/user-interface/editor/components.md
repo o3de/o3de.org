@@ -1,5 +1,5 @@
 ---
-description: ' Give a UI element additional properties by adding components in Amazon Lumberyard''s
+description: ' Give a UI element additional properties by adding components in Open 3D Engine''s
   UI Editor . '
 title: UI Components
 ---

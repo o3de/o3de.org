@@ -1,10 +1,10 @@
 ---
-description: ' Use vertex containers in Amazon Lumberyard to access, update, and remove vertices. '
+description: ' Use vertex containers in Open 3D Engine to access, update, and remove vertices. '
 title: Vertex Containers
 ---
 # Vertex Containers {#component-vertex-container}
 
-`VertexContainer` is a concrete type and an interface that is used by several Lumberyard component buses\. It is implemented directly by the **[Polygon Prism Shape](/docs/user-guide/features/components/polygon-prism.md)** component and the **[Spline](/docs/userguide/components/spline.md)** component and used indirectly by the **[Navigation Area](/docs/user-guide/features/components/nav-area.md)** component\.
+`VertexContainer` is a concrete type and an interface that is used by several O3DE component buses\. It is implemented directly by the **[Polygon Prism Shape](/docs/user-guide/features/components/polygon-prism.md)** component and the **[Spline](/docs/userguide/components/spline.md)** component and used indirectly by the **[Navigation Area](/docs/user-guide/features/components/nav-area.md)** component\.
 
 ## Vertex Container Interface {#component-vertex-container-vertex-container-interface}
 

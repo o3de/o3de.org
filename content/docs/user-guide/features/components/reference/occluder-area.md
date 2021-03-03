@@ -1,6 +1,6 @@
 ---
 description: ' Use the OccluderArea component to create a custom shaped occlusion
-  plane with four vertices in Amazon Lumberyard. '
+  plane with four vertices in Open 3D Engine. '
 title: OccluderArea
 ---
 # OccluderArea {#component-occluder-area}
@@ -12,7 +12,7 @@ title: OccluderArea
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-You can use the **OccluderArea** component to create a custom\-shaped occlusion plane with four vertices\. This is useful if you don't want Lumberyard to render everything that is behind the **OccluderArea** component\. This can result in better performance in areas where automatic occlusion doesn't work well\. For example, if you have many objects behind a wall, you can add an occluder area behind the wall so that those objects don't appear\.
+You can use the **OccluderArea** component to create a custom\-shaped occlusion plane with four vertices\. This is useful if you don't want O3DE to render everything that is behind the **OccluderArea** component\. This can result in better performance in areas where automatic occlusion doesn't work well\. For example, if you have many objects behind a wall, you can add an occluder area behind the wall so that those objects don't appear\.
 
 **Note**
 You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](/docs/user-guide/features/components/vis-area.md)** components at runtime\.
@@ -23,7 +23,7 @@ You can't modify the **[OccluderArea](#component-occluder-area)**, **[Portal](/d
 
 ## OccluderArea Component Properties {#component-occluder-area-properties}
 
-![\[The Occluder Area component properties in Lumberyard Editor.\]](/images/user-guide/component/occluder-area-component-properties.png)
+![\[The Occluder Area component properties in O3DE Editor.\]](/images/user-guide/component/occluder-area-component-properties.png)
 
 The **OccluderArea** component has the following properties\.
 
@@ -32,7 +32,7 @@ The **OccluderArea** component has the following properties\.
 
 | Name | Description |
 | --- | --- |
-|  **DisplayFilled**  |  Displays the occluder area as a filled volume in the Lumberyard Editor viewport\.  |
+|  **DisplayFilled**  |  Displays the occluder area as a filled volume in the O3DE Editor viewport\.  |
 |  **CullDistRatio**  |  A multiplier on the range where the culling effect stops\.   |
 | UseInIndoors |  The occluder area works inside visible areas\.  |
 | DoubleSide |  Specifies whether the occluder area works from both sides\.  |

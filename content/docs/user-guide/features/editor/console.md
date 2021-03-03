@@ -1,11 +1,11 @@
 ---
-description: ' Use the console window in Lumberyard Editor to update the value for console
+description: ' Use the console window in O3DE Editor to update the value for console
   variables or type commands. '
 title: Using the Console Window
 ---
 # Using the Console Window {#console-intro}
 
-In Lumberyard Editor, the console window shows a running list of all editor commands, processes, and output\. For example, when you delete an entity, the console shows the action and the output\. You can use the console to enter or modify console variables \(CVARs\)\. Console variables are a type of variable that you can manipulate in Lumberyard Editor\.
+In O3DE Editor, the console window shows a running list of all editor commands, processes, and output\. For example, when you delete an entity, the console shows the action and the output\. You can use the console to enter or modify console variables \(CVARs\)\. Console variables are a type of variable that you can manipulate in O3DE Editor\.
 
 **Topics**
 + [Viewing the Console Window](#viewing-the-console-window)
@@ -20,7 +20,7 @@ You can enter commands directly in the console window or search and edit console
 
 **To view the console window**
 
-1. In Lumberyard Editor, choose **Tools**, **Console**\.
+1. In O3DE Editor, choose **Tools**, **Console**\.
 
 1. Click the **X** icon in the left corner to open the **Console Variables** window\. The **Console Variables** window lists all available console variables\.
 ![\[View all available console variables in the console window.\]](/images/shared/console-x-window.png)

@@ -1,5 +1,5 @@
 ---
-description: ' Enable Auto Activate for interactive elements in Lumberyard UI Editor
+description: ' Enable Auto Activate for interactive elements in O3DE UI Editor
   to set an element to activate automatically. '
 title: Auto Activate
 ---

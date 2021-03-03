@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to add a camera that follows a moving player character in
-  Lumberyard. '
+  O3DE. '
 title: 'Tutorial Six: Add a camera'
 ---
 # Tutorial Six: Add a camera<a name="tutor-ch06-add-a-camera"></a>
@@ -12,18 +12,18 @@ If you like, you can follow this chapter in video \(4:41 minutes\) form:
 
 [![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/Cg2uDaix7fA?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/Cg2uDaix7fA?rel=0)
 
-Begin this tutorial either with the level you created in [Tutorial Five: Handling player input through Script Canvas](tutor-ch05-player-input.md), or by opening `ch05_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
+Begin this tutorial either with the level you created in [Tutorial Five: Handling player input through Script Canvas](tutor-ch05-player-input.md), or by opening `ch05_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in O3DE, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
-![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
+1.  This tutorial is written for the default **O3DE Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
+![\[O3DE select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Use the navigation controls to line up the **Perspective** view roughly behind and above the chicken\. The exact view is not important\. The camera you create in this tutorial automatically provides a consistent view\.
-![\[Lumberyard line up the camera in perspective view\]](/images/welcomeguide/ui-line-up-view-1.26.png)
+![\[O3DE line up the camera in perspective view\]](/images/welcomeguide/ui-line-up-view-1.26.png)
 
 1.  Right\-click in the viewport to open the context menu and select **Create camera entity from view**\. A new entity is added to the level containing a transform and a **Camera** component\. The default settings for the camera component are suitable for this tutorial\.
 
    Zoom out and adjust your view with the **S** key and right mouse button to get a view of the camera entity\. The camera entity displays the camera's frustum as a yellow wire frame\. The frustum represents the field of view of the camera\. Enter play mode and **Perspective** snaps to the camera entity's view\. Press Escape to exit play mode\.
-![\[Lumberyard create a camera entity from view\]](/images/welcomeguide/ui-create-camera-from-view-1.26.png)
+![\[O3DE create a camera entity from view\]](/images/welcomeguide/ui-create-camera-from-view-1.26.png)
 
 1.  Rename the camera entity\. Select the camera entity by clicking its name in **Entity Outliner** or by clicking the camera in **Perspective**\. Name the entity `player_camera`\.
 
@@ -32,7 +32,7 @@ Begin this tutorial either with the level you created in [Tutorial Five: Handlin
 1.  Open **Script Canvas** by expanding the **Tools** menu and choosing **Script Canvas**\.
 
 1.  In **Script Canvas**, expand the **File** menu, and choose **Open**\. In the `ScriptCanvas` directory, select `ch06_chicken_camera.scriptcanvas`\.
-![\[Lumberyard follow camera Script Canvas\]](/images/welcomeguide/ui-chicken-camera-script-canvas-1.26.png)
+![\[O3DE follow camera Script Canvas\]](/images/welcomeguide/ui-chicken-camera-script-canvas-1.26.png)
 
    Before continuing, take a moment to examine the script and understand its function\.
 
@@ -49,17 +49,17 @@ Begin this tutorial either with the level you created in [Tutorial Five: Handlin
 1.  The `ch06_chicken_camera.scriptcanvas` is functionally complete, but needs to reference the `player_chicken` entity to get the location and orientation of the chicken\. You might notice that some nodes, such as the **Get World Translation** and **Get Forward** nodes in the first node group, have input pins labeled **Source** and **Entity ID**\. These inputs are set to `Self` when they are placed in a graph, which means they will get the required data from the entity that the script is attached to\. These inputs can reference other entities in the level, however\.
 
    Find the **Get World Translation** node in the first node group, click the target button to the right of **Source**, then click the `player_chicken` entity in **Perspective**\. This references the chicken entity in the **Get World Translation** node and allows the camera script to get the chicken's position in the world\.
-![\[Lumberyard Script Canvas link entity\]](/images/welcomeguide/ui-script-canvas-link-entity-a-1.26.png)
+![\[O3DE Script Canvas link entity\]](/images/welcomeguide/ui-script-canvas-link-entity-a-1.26.png)
 
 1.  Find the **Get Forward** node in the first node group, click the target button to the right of **EntityID**, then click the `player_chicken` entity in **Perspective**\. This allows the camera script to get the chicken's orientation\.
-![\[Lumberyard Script Canvas link entity\]](/images/welcomeguide/ui-script-canvas-link-entity-b-1.26.png)
+![\[O3DE Script Canvas link entity\]](/images/welcomeguide/ui-script-canvas-link-entity-b-1.26.png)
 
 1.  Press **Control \+ S** to save the `ch06_chicken_camera.scriptcanvas`, and close the **Script Canvas** window\.
 
 1.  Assign the `ch06_chicken_camera.scriptcanvas` to the **Script Canvas** component you added to the `player_camera` entity\. Select the camera by clicking it in **Perspective**\. In **Entity Inspector**, in the **Script Canvas** component, click the **Hierarchy** icon to the right of **Script Canvas Asset**, expand the **ScriptCanvas** directory and choose `ch06_chicken_camera.scriptcanvas`\.
 
 1.  Test the camera\. Press the **Play** button or **Control \+ G** and move the chicken\. The camera should follow behind the chicken\.
-![\[Lumberyard follow camera\]](/images/welcomeguide/anim-follow-camera-1.26.gif)
+![\[O3DE follow camera\]](/images/welcomeguide/anim-follow-camera-1.26.gif)
 
 For extra credit, try changing the **Field of View** of the camera component to see its effect\. Try to change the camera script canvas to create a side\-scrolling like camera view\.
 

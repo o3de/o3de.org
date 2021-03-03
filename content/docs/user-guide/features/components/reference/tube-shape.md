@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Tube Shape component to create tube-like volumes. '
+description: ' Use the Open 3D Engine Tube Shape component to create tube-like volumes. '
 title: Tube Shape
 ---
 # Tube Shape {#component-tube-shape}
@@ -22,11 +22,11 @@ The **Tube Shape** component requires the **[Spline](/docs/userguide/components/
 
 **Example Tube Shape Component**
 
-![\[Example Tube Shape component in Lumberyard Editor.\]](/images/shared/shared-component-tube-shape-example.png)
+![\[Example Tube Shape component in O3DE Editor.\]](/images/shared/shared-component-tube-shape-example.png)
 
 ## Tube Shape Properties {#tube-shape-properties}
 
-![\[The Tube Shape component and its properties in Lumberyard Editor.\]](/images/user-guide/component/component-tube-shape.png)
+![\[The Tube Shape component and its properties in O3DE Editor.\]](/images/user-guide/component/component-tube-shape.png)
 
 The **Tube Shape** component has the following properties\.
 

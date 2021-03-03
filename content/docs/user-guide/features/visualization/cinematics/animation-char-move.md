@@ -1,5 +1,5 @@
 ---
-description: ' Move an entity in a scene Amazon Lumberyard. '
+description: ' Move an entity in a scene Open 3D Engine. '
 title: Moving an Entity in a Scene
 ---
 # Moving an Entity in a Scene {#cinematics-animation-char-move}
@@ -10,7 +10,7 @@ You can use the Track View to move or rotate any entity in a scene\.
 
 1. In the Track View, add the character to the desired sequence, then click the red record button\.
 
-1. In the Lumberyard viewport, click the character, then move or rotate as desired\. This automatically updates keys at the current position of the slider in the track view sequence timeline slider\.
+1. In the O3DE viewport, click the character, then move or rotate as desired\. This automatically updates keys at the current position of the slider in the track view sequence timeline slider\.
 
 1. Double\-click the key to access **Key Properties**, then adjust values as needed\.
 

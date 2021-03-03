@@ -1,14 +1,14 @@
 ---
-description: ' Use the Lumberyard UI 2.0 breadcrumbs component as a navigational tool
+description: ' Use the O3DE UI 2.0 breadcrumbs component as a navigational tool
   to show users where they are along a hierarchical path. Breadcrumbs also enable
   users to jump to a different point in the path. '
-title: Lumberyard UI breadcrumb navigation component
+title: O3DE UI breadcrumb navigation component
 ---
-# Lumberyard UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
+# O3DE UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
 
 Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user's current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
 
-For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the Lumberyard **Animation Editor**\.
+For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the O3DE **Animation Editor**\.
 
 ![\[component breadcrumbs navigation example\]](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
 
@@ -118,5 +118,5 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 
 ## C\+\+ API reference<a name="breadcrumbs-api-ref"></a>
 
-For details on the **breadcrumbs** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **breadcrumbs** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::BreadCrumbs](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_bread_crumbs.html)
